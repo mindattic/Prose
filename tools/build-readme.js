@@ -10,7 +10,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SRC  = path.join(ROOT, 'README.md');
-const OUT  = path.join(ROOT, 'docs', 'README.htm');
+const OUT  = path.join(ROOT, 'README.htm');
 
 // ─── Dependency check ─────────────────────────────────────────────────────────
 let markedLib;

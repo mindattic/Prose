@@ -1,1132 +1,2080 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prose — Engineering Reference</title>
+<meta name="description" content="Full engineering reference for the Prose literary fiction engine.">
+<meta name="generated" content="2026-08-14">
 <style>
-  :root {
-    --bg: #1a1a2e;
-    --surface: #16213e;
-    --surface2: #0f3460;
-    --accent: #e94560;
-    --accent2: #53c0f0;
-    --text: #e0e0e0;
-    --muted: #9a9ab0;
-    --code-bg: #0d0d1a;
-    --border: #2a2a4a;
-    --table-head: #1e1e38;
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { font-size: 16px; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    line-height: 1.65;
-    padding: 0 1rem;
-  }
-  .layout {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    max-width: 1400px;
-    margin: 0 auto;
-    gap: 0;
-    min-height: 100vh;
-  }
-  nav {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
-    padding: 2rem 1rem 2rem 0;
-    border-right: 1px solid var(--border);
-    scrollbar-width: thin;
-    scrollbar-color: var(--border) transparent;
-  }
-  nav h2 {
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 0.75rem;
-    margin-top: 1.5rem;
-  }
-  nav h2:first-child { margin-top: 0; }
-  nav a {
-    display: block;
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 0.82rem;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    transition: color 0.15s, background 0.15s;
-  }
-  nav a:hover { color: var(--text); background: var(--surface); }
-  main {
-    padding: 2.5rem 2.5rem 4rem 2.5rem;
-    min-width: 0;
-  }
-  h1 {
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--accent);
-    letter-spacing: -0.02em;
-    margin-bottom: 0.4rem;
-  }
-  .tagline {
-    color: var(--muted);
-    font-size: 1.05rem;
-    margin-bottom: 1.2rem;
-  }
-  .live-link {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 0.3rem 0.8rem;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-bottom: 2rem;
-    letter-spacing: 0.04em;
-  }
-  .live-link:hover { opacity: 0.85; }
-  hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent2);
-    margin-top: 2.5rem;
-    margin-bottom: 0.8rem;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid var(--border);
-  }
-  h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text);
-    margin-top: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-  h4 {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-top: 1.4rem;
-    margin-bottom: 0.4rem;
-  }
-  p { margin-bottom: 1rem; }
-  a { color: var(--accent2); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  code {
-    font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
-    font-size: 0.82em;
-    background: var(--code-bg);
-    color: #a8d8ff;
-    padding: 0.15em 0.4em;
-    border-radius: 3px;
-    border: 1px solid var(--border);
-  }
-  pre {
-    background: var(--code-bg);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--accent);
-    border-radius: 6px;
-    padding: 1.1rem 1.3rem;
-    overflow-x: auto;
-    margin: 1rem 0 1.5rem 0;
-    font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
-    font-size: 0.82rem;
-    line-height: 1.55;
-    color: #c5d8f0;
-  }
-  pre code {
-    background: none;
-    border: none;
-    padding: 0;
-    font-size: inherit;
-    color: inherit;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0 1.5rem 0;
-    font-size: 0.875rem;
-    background: var(--surface);
-    border-radius: 6px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-  }
-  thead { background: var(--table-head); }
-  thead th {
-    text-align: left;
-    padding: 0.6rem 0.9rem;
-    color: var(--accent2);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--border);
-  }
-  tbody tr { border-bottom: 1px solid var(--border); }
-  tbody tr:last-child { border-bottom: none; }
-  tbody tr:hover { background: rgba(83, 192, 240, 0.04); }
-  td {
-    padding: 0.5rem 0.9rem;
-    vertical-align: top;
-    color: var(--text);
-  }
-  .callout {
-    background: var(--surface2);
-    border-left: 3px solid var(--accent);
-    border-radius: 4px;
-    padding: 0.9rem 1.1rem;
-    margin: 1rem 0 1.5rem 0;
-    font-size: 0.9rem;
-  }
-  .callout p { margin-bottom: 0; }
-  .arch {
-    background: var(--code-bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 1.2rem 1.4rem;
-    font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
-    font-size: 0.78rem;
-    line-height: 1.6;
-    color: #c5d8f0;
-    white-space: pre;
-    overflow-x: auto;
-    margin: 1rem 0 1.5rem 0;
-  }
-  .tier-draft  { color: #6ec6ff; }
-  .tier-std    { color: #a8ff78; }
-  .tier-deep   { color: var(--accent); }
-  .subsystem-label {
-    display: inline-block;
-    background: var(--surface2);
-    color: var(--accent2);
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.15rem 0.6rem;
-    border-radius: 20px;
-    margin-right: 0.4rem;
-  }
-  ul, ol { padding-left: 1.4rem; margin-bottom: 1rem; }
-  li { margin-bottom: 0.3rem; }
+:root{
+  --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;
+  --border:#30363d;
+  --text:#e6edf3;--muted:#8b949e;
+  --h1:#58a6ff;--h2:#79c0ff;--h3:#d2a8ff;
+  --link:#58a6ff;--code:#f0f6fc;
+  --sidebar-w:272px;--content-max:900px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  background:var(--bg);color:var(--text);font-size:15px;line-height:1.8
+}
+#layout{display:flex;min-height:100vh}
+
+/* ── Sidebar ──────────────────────────────────── */
+#sidebar{
+  width:var(--sidebar-w);flex-shrink:0;
+  position:sticky;top:0;height:100vh;overflow-y:auto;
+  background:var(--bg2);border-right:1px solid var(--border);
+  padding:1.5rem 0
+}
+#sidebar::-webkit-scrollbar{width:4px}
+#sidebar::-webkit-scrollbar-track{background:transparent}
+#sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+#toc-inner{padding:0 .75rem}
+.toc-title{
+  display:block;font-size:.68rem;font-weight:700;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.1em;padding:.1rem .5rem .9rem
+}
+.toc-a{
+  display:block;padding:.22rem .5rem;font-size:.79rem;color:var(--muted);
+  border-radius:4px;text-decoration:none;line-height:1.35;margin-bottom:1px;
+  transition:color .15s,background .15s
+}
+.toc-a:hover{color:var(--text);background:rgba(255,255,255,.05)}
+.toc-a.active{color:var(--h1);background:rgba(88,166,255,.12);font-weight:500}
+.toc-a.is-h3{padding-left:1.25rem;font-size:.75rem}
+.toc-sep{
+  border:none;border-top:1px solid var(--border);margin:.6rem .5rem
+}
+
+/* ── Main content ─────────────────────────────── */
+#content{
+  flex:1;min-width:0;
+  max-width:calc(var(--sidebar-w) + var(--content-max));
+  padding:2.5rem 3.5rem 5rem
+}
+
+h1{color:var(--h1);font-size:2rem;font-weight:700;
+   border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:1.25rem}
+h2{color:var(--h2);font-size:1.35rem;font-weight:600;
+   margin-top:2.75rem;margin-bottom:.75rem;
+   border-bottom:1px solid var(--border);padding-bottom:.3rem}
+h3{color:var(--h3);font-size:1.05rem;font-weight:600;
+   margin-top:1.5rem;margin-bottom:.4rem}
+h4{color:var(--text);font-size:.95rem;font-weight:600;margin-top:1rem}
+
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+
+p{margin:.7rem 0}
+
+ul,ol{padding-left:1.75rem;margin:.4rem 0}
+li{margin:.2rem 0}
+li>ul,li>ol{margin:.1rem 0}
+
+hr{border:none;border-top:1px solid var(--border);margin:2.25rem 0}
+
+blockquote{
+  border-left:3px solid var(--h1);background:var(--bg2);
+  color:var(--muted);padding:.65rem 1rem;margin:1rem 0;
+  border-radius:0 4px 4px 0;font-style:italic
+}
+blockquote p{margin:0}
+
+/* ── Code ─────────────────────────────────────── */
+code{
+  background:var(--bg2);color:var(--code);
+  padding:.15em .45em;border-radius:4px;
+  font-size:.84em;
+  font-family:'Cascadia Code','Fira Code','Consolas','SF Mono',monospace
+}
+pre{
+  background:var(--bg2);border:1px solid var(--border);
+  border-radius:6px;padding:1rem 1.25rem;overflow-x:auto;
+  margin:1rem 0;position:relative
+}
+pre code{
+  background:none;padding:0;font-size:.84rem;
+  line-height:1.65;color:var(--code)
+}
+
+/* ── Tables ───────────────────────────────────── */
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.875rem}
+thead th{
+  background:var(--bg3);color:var(--h2);font-weight:600;
+  text-align:left;padding:.5rem .75rem;border:1px solid var(--border)
+}
+tbody td{padding:.4rem .75rem;border:1px solid var(--border);vertical-align:top}
+tbody tr:hover{background:rgba(255,255,255,.025)}
+
+/* ── Copy button ──────────────────────────────── */
+.cpbtn{
+  position:absolute;top:.5rem;right:.5rem;
+  background:var(--bg3);color:var(--muted);
+  border:1px solid var(--border);border-radius:4px;
+  padding:.15rem .55rem;font-size:.71rem;font-family:inherit;
+  cursor:pointer;opacity:0;transition:opacity .15s,color .15s;line-height:1.5
+}
+pre:hover .cpbtn{opacity:1}
+.cpbtn:hover{color:var(--text)}
+.cpbtn.ok{color:#7ee787}
+
+/* ── Responsive ───────────────────────────────── */
+@media(max-width:820px){
+  #sidebar{display:none}
+  #content{padding:1.5rem 1.25rem 3.5rem}
+}
 </style>
 </head>
 <body>
-<div class="layout">
-
-<nav>
-  <h2>Overview</h2>
-  <a href="#what">What Prose Is</a>
-  <a href="#architecture">Architecture</a>
-  <a href="#prose-engine">Prose Engine Pipeline</a>
-
-  <h2>Developer</h2>
-  <a href="#cli">CLI Reference</a>
-  <a href="#database">Database</a>
-  <a href="#running">Running Locally</a>
-  <a href="#gpu">GPU Entity Scoring</a>
-  <a href="#code-style">Code Style Rules</a>
-
-  <h2>Engine</h2>
-  <a href="#workflow">Seed to Published</a>
-  <a href="#subsystems">Subsystems</a>
-  <a href="#cost">Cost Tiering</a>
-
-  <h2>Surfaces</h2>
-  <a href="#ui">UI Surface</a>
-  <a href="#mcp">MCP Surface</a>
-
-  <h2>Ops</h2>
-  <a href="#stack">Stack at a Glance</a>
-  <a href="#repo">Repository Layout</a>
-  <a href="#migrations">Migrations</a>
-  <a href="#deploy">Deploying to Azure</a>
-  <a href="#tests">Tests</a>
-  <a href="#status">Status</a>
-</nav>
-
-<main>
-
-<h1>Prose</h1>
-<p class="tagline">A literary fiction engine for a cyberpunk century.</p>
-<a class="live-link" href="https://prose.azurewebsites.net/" target="_blank">prose.azurewebsites.net &rarr;</a>
-
-<div class="callout">
-  <p><a href="docs/BIBLE.md">docs/BIBLE.md</a> is the architecture bible (Codex L0). <a href="docs/AMENDMENTS.md">docs/AMENDMENTS.md</a> is the append-only change log (an amendment wins over the bible). <a href="docs/USER_STORIES.md">docs/USER_STORIES.md</a> is the goal table with acceptance tests. <a href="docs/rfc/">docs/rfc/</a> holds design notes.</p>
-</div>
-
+<div id="layout">
+  <nav id="sidebar" aria-label="Table of contents">
+    <div id="toc-inner"></div>
+  </nav>
+  <main id="content">
+<h1 id="prose">Prose</h1>
+<p><strong>A canon-grounded, voice-disciplined story-generation engine for a cyberpunk century — and every other universe stood up alongside it.</strong></p>
+<blockquote>
+<p><strong>This README is the engineering tour — exhaustive, current, and stored in the database.</strong>
+Full detail on specific subsystems lives in the generated Codex docs it links to throughout:
+<a href="docs/BIBLE.md">docs/BIBLE.md</a> (engine invariants + the Architectural Decision Register),
+<a href="docs/ARCHITECTURE.md">docs/ARCHITECTURE.md</a>, <a href="docs/ENGINE.md">docs/ENGINE.md</a>,
+<a href="docs/CRAFT_SCIENCES.md">docs/CRAFT_SCIENCES.md</a> (the craft science behind the prose),
+<a href="docs/LOGIC.md">docs/LOGIC.md</a> + <a href="docs/READER-QA.md">docs/READER-QA.md</a> (the QA methodology),
+<a href="docs/USER_STORIES.md">docs/USER_STORIES.md</a> (the goal table), <a href="docs/MCP_TOOLS.md">docs/MCP_TOOLS.md</a>
+(the full tool reference), <a href="docs/schema.md">docs/schema.md</a> (the full DB schema), and
+<a href="docs/rfc/">docs/rfc/</a> (design notes). This document is the synthesis across all of them —
+see <a href="#about-this-document">About This Document</a> for how it is stored, kept current, and regenerated.</p>
+</blockquote>
 <hr>
-
-<h2 id="what">What Prose Is</h2>
-
-<p>Prose is a C#/.NET 10 Blazor Server application &mdash; web-only, fully responsive &mdash; that takes a one-line seed to a published, reader-reviewed, canon-consistent audiobook and manuscript. It is the authoring stack for <em>Bushido Coda</em> and a hundred stories beyond it, set in the GLMZ: a 500-kilometer vertical megacity stacked along the western shore of Lake Michigan in 2225, where ferrocement waves rise a hundred stories above the lake and CorpoNations hold sovereignty the old nations could not.</p>
-
-<p>Canon is a database, not a folder of files. SQL Server holds 12,000+ named entities &mdash; characters, places, factions, CorpoNations, weapons, biotech, nano, documents &mdash; bound by a directional graph of relationships, vector embeddings, and a two-axis time model. On top sits the writing surface: a Strand to Beat hierarchy spanning 36 strands and 2,443+ beats with an outline-first workflow, a multi-provider review pipeline (Legion-backed, 11 LLM providers), storytelling-science analysis, a deterministic continuity suite, and an export pipeline (Word / EPUB / PDF / Markdown / audiobook). A reader-review panel of synthetic personas measures reception from data, not vibes. For agentic authoring, an MCP server exposes the entire canon to Claude so the model can call the world directly. The human approves canon and voice changes; the engine writes.</p>
-
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#what-prose-is">What Prose Is</a></li>
+<li><a href="#history--four-epochs">History — Four Epochs</a></li>
+<li><a href="#architecture-at-a-glance">Architecture at a Glance</a></li>
+<li><a href="#the-science--what-prose-actually-uses">The Science — What Prose Actually Uses</a></li>
+<li><a href="#prose-generation-pipeline">Prose Generation Pipeline</a></li>
+<li><a href="#quality-verification--logic-sweeps-not-votes">Quality Verification — Logic Sweeps, Not Votes</a></li>
+<li><a href="#cli-reference">CLI Reference</a></li>
+<li><a href="#mcp-reference">MCP Reference</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#universes">Universes</a></li>
+<li><a href="#the-subsystems">The Subsystems</a></li>
+<li><a href="#cost-tiering">Cost Tiering</a></li>
+<li><a href="#running-locally">Running Locally</a></li>
+<li><a href="#repository-layout">Repository Layout</a></li>
+<li><a href="#database-migrations">Database Migrations</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#tests">Tests</a></li>
+<li><a href="#patent-disclosures">Patent Disclosures</a></li>
+<li><a href="#code-style-rules">Code Style Rules</a></li>
+<li><a href="#status">Status</a></li>
+<li><a href="#about-this-document">About This Document</a></li>
+</ul>
 <hr>
-
-<h2 id="architecture">Architecture Overview</h2>
-
-<div class="arch">CLI (dotnet run --project v3/Prose.Blazor -- &lt;args&gt;)
-  |
-  v
-Blazor Server host  (v3/Prose.Blazor/)
-  |  Web UI (Razor components) + ~118 CLI handlers in Program.cs
-  |
-  v
-Core services  (v3/Prose.Core/)
-  |  ~214 services: prose generation, review, continuity, export, embeddings
-  |  EF Core -> SQL Server (LocalDB in dev, Azure SQL in prod)
-  |
-  v
-Database  (SQL Server)
-  |  12,000+ entities . 36 strands . 2,443+ beats . vector embeddings
-  |  System-versioned (temporal) Beats + Strands tables
-  |  EntityStateEvents ledger . Edges graph . ContinuityClaims
-
-MCP server  (v3/Prose.Mcp/ -- separate host)
-  |  195+ tools across 23 tool-class files
-  +-- Exposes entire canon to Claude Desktop / Claude Code / any MCP client</div>
-
+<h2 id="what-prose-is">What Prose Is</h2>
+<p>Prose is a <strong>command-line-only</strong> .NET 10 story-generation engine that takes a one-line seed to a
+published, canon-consistent manuscript and audiobook — in any registered Universe, not just one.
+The flagship Universe is <strong>GLMZ</strong> (Great Lakes Metropolitan Zone, 2226, cyberpunk; home of the
+<em>Bushido Coda</em>), running alongside six others on the same engine (see <a href="#universes">Universes</a>).
+Canon is a <strong>database</strong>, not a folder of files: SQL Server holds tens of thousands of named
+entities — characters, places, factions, CorpoNations, weapons, biotech, nanotech, in-world
+documents — bound by a directional relationship graph, vector embeddings, and a temporal
+(system-versioned) history on every canon table. On top of that sits a typed content tree (series
+→ book → chapter, all one polymorphic <code>Nodes</code> table) holding beats: the atomic unit of story
+function. Generation runs through one router (<code>ProseWriterRouter</code>) that assembles a wide
+enrichment context per beat before handing off to the LLM. Quality is enforced by a <strong>Logic
+Sweep</strong> (six-dimension continuity audit) and <strong>Reader-Proxy QA</strong> (comprehension probes + craft
+checklist + gripe jury) — not by a persona-vote score gate; those were retired (SS-A44,
+2026-08-03) once the team judged that a 0–100 number told you less than a named, fixable finding
+does. There is no web UI. The entire surface is the <code>prose</code> CLI and an MCP server — Claude
+(Desktop, Code, or any MCP client) is a first-class author of canon calls, with a human approving
+canon and voice changes rather than hand-authoring them line by line.</p>
 <hr>
-
-<h2 id="prose-engine">Prose Engine Pipeline</h2>
-
-<p><code>ProseWriterRouter</code> is the sole entry point for beat prose generation (SS-A16). Call it &mdash; never <code>BeatGeneratorService</code> directly.</p>
-
-<pre><code>ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)</code></pre>
-
-<h3>Context enrichment chain</h3>
-
+<h2 id="history-four-epochs">History — Four Epochs</h2>
+<p>The repository&#39;s own commit history <em>is</em> the most reliable design-history document — 1,000+
+commits since 2026-03-25, none of it lost, all of it groupable into four epochs. This section is
+the condensed narrative; the <em>reasoning</em> behind each major structural decision is recorded
+permanently in <a href="docs/BIBLE.md#SS-%C2%A714">docs/BIBLE.md §14, the Architectural Decision Register</a> —
+read that for the &quot;why,&quot; this section is the &quot;when and what.&quot;</p>
+<h3 id="epoch-1-streetsamurai-worldbuilding-scripts-2026-03-2026-05">Epoch 1 — StreetSamurai worldbuilding scripts (2026-03 – 2026-05)</h3>
+<p>The project began as <strong>StreetSamurai</strong>: a folder of Python scripts (<code>duo_writer.py</code>,
+<code>duo_writer_lit.py</code>) and hand-written Markdown worldbuilding documents — a &quot;6-facet psychology
+system,&quot; an &quot;Essence Network,&quot; a cyberpunk setting called <strong>Meridian City</strong>. Early commits show a
+RAG canon engine built on ChromaDB + NetworkX with substring-based grounding. Nearly everything
+from this epoch has since been replaced or retired: the Facet system (100% eradicated per
+<a href="docs/BIBLE.md#SS-%C2%A76">docs/BIBLE.md §6</a>), ChromaDB/NetworkX substring grounding (replaced by SQL +
+OpenAI embeddings), and Meridian City itself (renamed to <strong>GLMZ</strong>). Nothing from this epoch is
+load-bearing today except the seed of the idea: a canon-grounded engine that writes in one voice.</p>
+<h3 id="epoch-2-the-sql-engine-and-the-blazor-ui-2026-05-2026-07">Epoch 2 — The SQL engine and the Blazor UI (2026-05 – 2026-07)</h3>
+<p>The real architecture emerged: canon moved into SQL Server as the sole source of truth
+(<a href="docs/BIBLE.md#SS-%C2%A75">SS-LAW-1</a>), a typed <strong>Node</strong> tree replaced ad-hoc story formats, and a
+Blazor Server web application (<strong>StreetSamurai.Writer</strong> + <strong>StreetSamurai.Codex</strong>, later renamed)
+gave the author a writing surface, canon encyclopedia, and world-health dashboards in the browser.
+A standalone CLI was extracted (<code>StreetSamurai.Cli</code>), and a Model Context Protocol server
+(<code>Prose.Mcp</code>) was added so Claude could call the same canon directly. <code>StoryDirectorService</code> (an
+autonomous &quot;Surprise Me&quot; planning loop) and an <code>Operator</code>/CoWriter chat cluster were built as a
+second, higher-autonomy generation path alongside the router.</p>
+<h3 id="epoch-3-streetsamurai-prose-universes-multiply-2026-07-2026-08-12">Epoch 3 — StreetSamurai → Prose, universes multiply (2026-07 – 2026-08-12)</h3>
+<p>The whole codebase, namespace, and connection string were renamed <strong>StreetSamurai → Prose</strong>
+(<code>8f3fa03a0</code>, <code>71e214e51</code>). <code>StoryNode</code> became <code>BookNode</code> (SS-A43) as the Node hierarchy gained
+formal chapter/beat typing. What began as a single GLMZ universe grew into a genuinely
+multi-universe engine: <strong>SCRY</strong> (fantasy/steampunk) stood up alongside GLMZ, then a citation-grounded
+nonfiction line (<strong>GSPL → SOURCE → NONFICTION</strong>, renamed twice as its scope widened beyond the
+Gospels), <strong>EPIC → FICTION</strong>, <strong>HORROR</strong>, and <strong>EROTICA</strong> (the sixth, added <code>f74d26f46</code>) — with
+<strong>GOSPEL</strong> later splitting out as its own registered universe. &quot;Dynamic Prose Context&quot; was renamed
+<strong>Dynamic Context Memory (DCM)</strong> and formalized into the five-pass, four-layer retrieval system
+documented in <code>CLAUDE.md</code> and <a href="docs/ARCHITECTURE.md">docs/ARCHITECTURE.md</a>. The 0–100 score-gate
+review panels (≥82%/≥85%) that had driven &quot;is this book done&quot; for months were retired in favor of
+the Logic Sweep + Reader-Proxy QA methodology (SS-A44, 2026-08-03) — see
+<a href="#quality-verification--logic-sweeps-not-votes">Quality Verification</a>.</p>
+<h3 id="epoch-4-command-line-only-2026-08-13-present">Epoch 4 — Command-line only (2026-08-13 → present)</h3>
+<p>In a single large commit (<code>ed22bd4f6</code>, 2026-08-13), the author made Prose <strong>command-line-only</strong>:
+both Blazor UIs (<code>Prose.Writer</code>, <code>Prose.Codex</code>) and their UI-only support libraries (<code>Prose.Shared</code>,
+<code>Prose.UiUx</code>) were deleted outright, along with the disconnected <code>StoryDirectorService</code>
+&quot;Surprise Me&quot; pipeline and the <code>Operator</code>/CoWriter chat cluster (confirmed zero real callers by
+dependency trace). The same commit made universe scoping <strong>fail closed</strong> instead of silently
+defaulting to &quot;everything&quot; (closing the exact gap behind a cross-universe content-leak incident),
+and extended self-healing repair (<code>BeatRepairService.SelfHealAsync</code>) to the expensive Full-tier
+audits (SWAIN, DRAMATIC-Q, VERIFY), so a failing check now attempts a real targeted rewrite before
+ever filing a Finding. <strong>This is the current architecture</strong>: <code>Prose.Cli</code> + <code>Prose.Mcp</code> are the
+entire user-facing surface. See <a href="#deployment">Deployment</a> for what this means for the still-wired
+Azure App Service pipeline, and <a href="#tests">Tests</a> for what it means for the Cypress suite — both
+predate this epoch and reference the deleted UI; neither has been reconciled yet.</p>
+<hr>
+<h2 id="architecture-at-a-glance">Architecture at a Glance</h2>
+<pre><code>prose CLI  (dotnet run --project v3/Prose.Cli -- &lt;args&gt;)          Prose.Mcp  (MCP server)
+        │  263 dispatched --flag handlers, v3/Prose.Cli/Program.cs      │  273 [McpServerTool] methods,
+        │  + v3/Prose.Cli/Cli/ (226 handler files)                      │  43 tool families, v3/Prose.Mcp/Tools*.cs
+        └──────────────────────────┬───────────────────────────────────┘
+                                    ▼
+                    Core services  (v3/Prose.Core/)
+                    │  309 services directly under Services/, 351 including
+                    │  Services/Audit, /CoverImage, /Local, /Operator (KDP-automation
+                    │  tool-calling only), /VideoGen — see The Subsystems below
+                    │  EF Core → SQL Server (LocalDB in dev, Azure SQL in prod)
+                    ▼
+                    Database  (SQL Server)
+                    │  261 base tables + 168 system-versioned _History tables
+                    │  (262 FKs, 278 PKs) — see docs/schema.md
+                    │  Vector embeddings · directional Edges graph · EntityStateEvents ledger
+                    │  ContinuityClaims · Findings inbox · MarkdownFiles (this doc lives here too)
+</code></pre>
+<p>There is <strong>no web application</strong> in this diagram — see <a href="#epoch-4--command-line-only-2026-08-13--present">Epoch 4</a>.
+Two satellite projects sit beside the CLI/MCP core, each solving a narrow problem the main engine
+doesn&#39;t:</p>
 <table>
-  <thead>
-    <tr>
-      <th>Service</th>
-      <th>What it injects</th>
-      <th>Activation condition</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>BeatModeDetector</code></td>
-      <td>Classifies beat as Combat / Narrative / EmotionalClimax / Dialogue / Transition / Revelation</td>
-      <td>Keyword scan on <code>BeatGoal</code></td>
-    </tr>
-    <tr>
-      <td><code>PacingService</code></td>
-      <td>BREATHE / FLOW / TIGHTEN / STRIKE / SETTLE prose rhythm</td>
-      <td>Position in strand + BeatGoal keywords; Combat forces STRIKE</td>
-    </tr>
-    <tr>
-      <td><code>StoryMethodologyService</code></td>
-      <td>Save the Cat structural role (Opening Image &rarr; Final Image) + Scene-Sequel type</td>
-      <td>Position in strand</td>
-    </tr>
-    <tr>
-      <td><code>PlantPayoffService</code></td>
-      <td>Active plant/payoff pairs seeded into context</td>
-      <td><code>BeatContext.StrandId != Guid.Empty</code></td>
-    </tr>
-    <tr>
-      <td><code>BookAuditService</code></td>
-      <td>Gateway or Sequel commandments (7 each, auto-detected from <code>PreviousStrandId</code>)</td>
-      <td><code>BeatContext.StrandId != Guid.Empty</code></td>
-    </tr>
-    <tr>
-      <td><code>CombatProseGuidance</code></td>
-      <td>Verbs-first, fragment sentences, no emotion-naming, Dissociated Observer examples</td>
-      <td><code>BeatMode.Combat</code></td>
-    </tr>
-    <tr>
-      <td><code>SceneContextBuilder</code></td>
-      <td>Ambient sensory palette from carried/worn gear</td>
-      <td><code>BeatContext.Location</code> is set</td>
-    </tr>
-    <tr>
-      <td><code>DialogueService</code></td>
-      <td>Per-character voice registers</td>
-      <td><code>BeatMode.Dialogue</code> or <code>EmotionalClimax</code>; <code>CharactersInScene</code> set</td>
-    </tr>
-    <tr>
-      <td><code>EmotionalDepthService</code></td>
-      <td>Prior examination findings injected as generation constraints</td>
-      <td>Feedback loop from prior beat scores</td>
-    </tr>
-    <tr>
-      <td><code>TensionEscalationService</code></td>
-      <td>Warns when consecutive non-escalating beats detected</td>
-      <td>Beat sequence analysis</td>
-    </tr>
-    <tr>
-      <td><code>ReaderKnowledgeService</code></td>
-      <td>Current reader knowledge state for dramatic irony management</td>
-      <td>Always</td>
-    </tr>
-    <tr>
-      <td><code>ConsequenceService</code></td>
-      <td>Character gear, cyberware, and status constraints &mdash; zero LLM cost</td>
-      <td><code>CharactersInScene.Count &gt; 0</code></td>
-    </tr>
-    <tr>
-      <td><code>ConsequenceEngine</code></td>
-      <td>Cross-story persistent consequences (contract outcomes, faction burns)</td>
-      <td><code>CharactersInScene.Count &gt; 0</code></td>
-    </tr>
-    <tr>
-      <td><code>AmbientAnomalyService</code></td>
-      <td>New Weird ambient background detail tagged to scene location (60% chance gate)</td>
-      <td><code>BeatContext.Location</code> is set</td>
-    </tr>
-    <tr>
-      <td><code>WorldStateAtBeatService</code></td>
-      <td>Live temporal entity state snapshot from <code>EntityStateEvents</code> (drifted, not canon baseline)</td>
-      <td><code>beatId != Guid.Empty</code></td>
-    </tr>
-    <tr>
-      <td><code>NarrativeSummaryService</code></td>
-      <td>Rolling compressed scene memory &mdash; last 10 beats for long-strand coherence</td>
-      <td><code>BeatContext.StrandId != Guid.Empty</code></td>
-    </tr>
-    <tr>
-      <td><code>WorkflowMonitorService</code></td>
-      <td>Logs per-beat service coverage to <code>BeatServiceLog</code></td>
-      <td>Always</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Entry points</h3>
-
-<table>
-  <thead>
-    <tr><th>Path</th><th>When to use</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)</code></td>
-      <td>All beat writing from UI + CLI</td>
-    </tr>
-    <tr>
-      <td><code>CombatSceneWriter.WriteCombatSceneAsync(request)</code></td>
-      <td>Explicit multi-exchange combat setpiece (numExchanges &gt; 1, full loadout tracking)</td>
-    </tr>
-    <tr>
-      <td><code>BeatGeneratorService.GenerateBeatAsync(context)</code></td>
-      <td>Legacy path &mdash; direct generation without coverage logging</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Beat writing workflow</h3>
+<thead>
+<tr>
+<th>Project</th>
+<th>Type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Prose.KdpPublish</code></td>
+<td>WPF + WebView2 desktop app</td>
+<td>Automates the Amazon KDP publishing workflow (browser automation via an internal tool-calling &quot;Operator&quot; — <code>AnthropicToolClient</code>/<code>OpenAiToolCallingLlm</code> + <code>KdpTools/</code> — unrelated to the deleted prose-writing Operator from Epoch 2)</td>
+</tr>
+<tr>
+<td><code>Prose.LlmCli</code> (<code>prose-llm</code>)</td>
+<td>Standalone console app, <strong>no</strong> <code>Prose.Core</code> reference</td>
+<td>Generic multi-provider LLM CLI escape hatch — works even if <code>Prose.Core</code>/the DB/EF migrations are broken, since its only dependency is <code>MindAttic.Legion</code> + <code>MindAttic.Vault</code>. The last-resort fallback tier in <code>LlmRouter</code>&#39;s chain, and a manual terminal tool during an outage</td>
+</tr>
+</tbody></table>
+<p>A handful of small one-off maintenance console apps also live under <code>v3/</code> (<code>PromoteEsperanza</code>,
+<code>PurgeOldNames</code>, <code>RunRepair</code>, <code>SyncSableProse</code>, <code>WriteSableOrigin</code>) — narrow, single-purpose data
+migration utilities, not part of the standing architecture.</p>
+<h3 id="data-layer-principles-ss-law-1-through-ss-law-15">Data layer principles (<a href="docs/BIBLE.md#SS-%C2%A75">SS-LAW-1</a> through <a href="docs/BIBLE.md#SS-%C2%A75">SS-LAW-15</a>)</h3>
 <ol>
-  <li>Assemble <code>BeatContext</code> (X-Ray context via <code>SceneContextAssembler</code>, <code>StrandId</code> always set)</li>
-  <li>Call <code>ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)</code></li>
-  <li>After writing, run <code>prose --examine-emotion --slug &lt;slug&gt;</code> (8-dimension emotional scoring)</li>
-  <li>After enough beats scored, run <code>prose --update-register-exemplars --slug &lt;slug&gt;</code></li>
-  <li>After strand complete, run <code>prose --story-audit --slug &lt;slug&gt;</code></li>
-  <li>After strand complete, run <code>prose --plant-audit --slug &lt;slug&gt;</code></li>
+<li><strong>SQL is the only canon store.</strong> <code>.md</code>/<code>.json</code> files are documentation or export mirrors —
+never the live read path. <code>engine_data/*.json</code> is a seed/export mirror, not canon.</li>
+<li><strong>System-versioned (temporal) tables</strong> on <code>Beats</code>, <code>Nodes</code>, and their history twins — every
+edit is rewindable via <code>FOR SYSTEM_TIME ALL</code>, which is what voice-harvest mines to find which
+edits correlated with quality improvements.</li>
+<li><strong>Static vs. dynamic split</strong> — identity facts (name, height, ancestry) live on canonical
+entity tables; story-state (location, ammo, life status) lives in the append-only
+<code>EntityStateEvents</code> ledger. No denormalized &quot;convenience copies.&quot;</li>
+<li><strong>One format: everything is a tree of Nodes over Beats</strong> — <code>SeriesNode → BookNode → ChapterNode</code> on a single <code>Nodes</code> table (table-per-hierarchy, SS-A43), riding <code>ParentNodeId</code>.
+No parallel format tables per content type.</li>
+<li><strong>Every row belongs to exactly one Universe</strong> (<a href="docs/BIBLE.md#SS-%C2%A75">SS-LAW-15</a>) — enforced
+structurally via an EF Core global query filter keyed on <code>IUniverseContext</code>, not by convention
+(a per-query <code>WHERE UniverseId = @u</code> clause that any developer could forget). An entity needed
+in two universes gets two rows — never a shared row, never an M:M bridge.</li>
+<li><strong>Propose-then-approve</strong> — no service auto-commits a canon or voice-rule change. Voice harvest,
+continuity claims, and generated docs all land as proposals the author reviews.</li>
 </ol>
-
-<h3>Coverage monitoring</h3>
-<pre><code>prose --workflow-status --slug &lt;slug&gt;   # per-strand service coverage matrix + gaps
-prose --workflow-status --all           # global utilization across all strands</code></pre>
-<p>MCP equivalents: <code>workflow_status</code>, <code>workflow_status_global</code>, <code>workflow_beat_modes</code></p>
-
 <hr>
-
-<h2 id="cli">CLI Reference</h2>
-
-<p>The alias <code>ss</code> expands to:</p>
-
-<pre><code>dotnet run --project v3/Prose.Blazor -- &lt;args&gt;</code></pre>
-
-<p>All ~118 handlers are dispatched from <code>v3/Prose.Blazor/Program.cs</code>.</p>
-
-<h3>Key commands</h3>
-
+<h2 id="the-science-what-prose-actually-uses">The Science — What Prose Actually Uses</h2>
+<p>Prose&#39;s craft rules are not invented in a vacuum — they cite specific, checkable sources. The full
+annotated bibliography (who, what, why, and where it&#39;s wired into the engine) lives in
+<a href="docs/CRAFT_SCIENCES.md">docs/CRAFT_SCIENCES.md</a>; this is the condensed map:</p>
 <table>
-  <thead>
-    <tr><th>Command</th><th>What it does</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>prose --review-strand --slug &lt;slug&gt; [--effort draft|standard|deep]</code></td>
-      <td>Multi-persona scored review; targets &ge;82% standalone, &ge;85% cumulative</td>
-    </tr>
-    <tr>
-      <td><code>prose --examine-emotion --slug &lt;slug&gt;</code></td>
-      <td>8-dimension per-beat emotional scoring (0&ndash;4 per dimension)</td>
-    </tr>
-    <tr>
-      <td><code>prose --story-audit --slug &lt;slug&gt;</code></td>
-      <td>Audits gateway/sequel commandments for the strand</td>
-    </tr>
-    <tr>
-      <td><code>prose --plant-audit --slug &lt;slug&gt;</code></td>
-      <td>Checks for orphaned plants (planted but never paid off)</td>
-    </tr>
-    <tr>
-      <td><code>prose --publish [--slug &lt;slug&gt;]</code></td>
-      <td>Exports docx + EPUB + PDF + audio manuscript .txt; prunes stale versions; lands in <code>{Title}/V{N}/</code></td>
-    </tr>
-    <tr>
-      <td><code>prose --workflow-status --slug &lt;slug&gt;</code></td>
-      <td>Per-strand service coverage matrix showing which pipeline services fired</td>
-    </tr>
-    <tr>
-      <td><code>prose --workflow-status --all</code></td>
-      <td>Global utilization matrix across all strands</td>
-    </tr>
-    <tr>
-      <td><code>prose --generate-cover --strand-code CODE --generator NAME --prompt "TEXT"</code></td>
-      <td>AI cover generation via ChatGPT / Gemini / Ideogram / Flux; stores prompt in <code>CoverImagePrompts</code>, asset in <code>Assets</code></td>
-    </tr>
-    <tr>
-      <td><code>prose --import-cover --file PATH [--strand-code CODE] [--type TYPE]</code></td>
-      <td>Import a local image into the cover asset library</td>
-    </tr>
-    <tr>
-      <td><code>prose --audit-strand [--deep] [--model haiku]</code></td>
-      <td>Repeatable full-QA orchestrator &mdash; structural + prose + continuity</td>
-    </tr>
-    <tr>
-      <td><code>prose --diagnose-strand --slug &lt;slug&gt;</code></td>
-      <td>12-check structural pre-flight without full review cost</td>
-    </tr>
-    <tr>
-      <td><code>prose --reflow-strand --slug &lt;slug&gt;</code></td>
-      <td>Bounded copy-edit: fixes paragraph breaks, question marks, dialogue attribution without rewriting</td>
-    </tr>
-    <tr>
-      <td><code>prose --check-fidelity --slug &lt;slug&gt;</code></td>
-      <td>Cosine-similarity check of prose vs. strand bible/synopsis</td>
-    </tr>
-    <tr>
-      <td><code>prose --check-prose --slug &lt;slug&gt;</code></td>
-      <td>Regex linter for banned prose patterns (pseudo-profound, cliche, on-the-nose)</td>
-    </tr>
-    <tr>
-      <td><code>prose --timeline-check --slug &lt;slug&gt;</code></td>
-      <td>Deterministic dead-character-acting + wound-regression checks</td>
-    </tr>
-    <tr>
-      <td><code>prose --narrative-science --slug &lt;slug&gt;</code></td>
-      <td>Sacred-flaw / five-act / scene-engagement analysis</td>
-    </tr>
-    <tr>
-      <td><code>prose --continuity --slug &lt;slug&gt;</code></td>
-      <td>Extract and validate continuity claims against live entity state</td>
-    </tr>
-    <tr>
-      <td><code>prose --backfill-coverage --slug &lt;slug&gt;</code></td>
-      <td>Non-destructive: logs router coverage for existing beats from synopsis without regenerating</td>
-    </tr>
-    <tr>
-      <td><code>prose --doc-context --slug &lt;slug&gt; [--goal "TEXT"]</code></td>
-      <td>Dry-run the Doc Context Stack &mdash; shows which docs would load for a beat</td>
-    </tr>
-    <tr>
-      <td><code>prose --sync-markdown</code></td>
-      <td>Sync Codex .md files from disk to DB (auto-classifies into always/strand/topic tiers)</td>
-    </tr>
-    <tr>
-      <td><code>prose --rebuild-graph</code></td>
-      <td>Rebuild in-memory entity relationship graph from SQL</td>
-    </tr>
-    <tr>
-      <td><code>prose --reembed</code></td>
-      <td>Re-embed all entities via OpenAI text-embedding-3-small</td>
-    </tr>
-    <tr>
-      <td><code>prose --review-entity --id &lt;guid&gt;</code></td>
-      <td>Legion-persona quality review of a single canon entity</td>
-    </tr>
-    <tr>
-      <td><code>prose --add-character / --add-place / --add-corponation</code></td>
-      <td>Seed a new typed entity into the DB</td>
-    </tr>
-    <tr>
-      <td><code>prose --migrate-sql</code></td>
-      <td>Apply pending hand-written T-SQL schema migrations</td>
-    </tr>
-    <tr>
-      <td><code>prose --universe &lt;id&gt;</code></td>
-      <td>Set the active universe scope (GLMZ / Fantasy) for subsequent commands</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>Local / rented-GPU prose generation</h3>
-
-<p>Route <code>--expand-beat</code> to any OpenAI-compatible endpoint without mutating <code>appsettings.json</code>:</p>
-
-<pre><code>prose --expand-beat --slug &lt;slug&gt; `
+<thead>
+<tr>
+<th>Source</th>
+<th>What Prose takes from it</th>
+<th>Where it&#39;s wired in</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Dwight Swain</strong> — <em>Techniques of the Selling Writer</em></td>
+<td>Scene/Sequel structure (Goal→Conflict→Disaster / Reaction→Dilemma→Decision) as a beat-classification doctrine</td>
+<td><code>SwainAuditService</code>, <code>swain_audit</code>/<code>swain_repair</code> MCP + CLI (SS-A47)</td>
+</tr>
+<tr>
+<td><strong>Will Storr</strong> — <em>The Science of Storytelling</em></td>
+<td>Sacred-flaw theory of control, dramatic-question tracking, the antihero-empathy mechanism</td>
+<td><code>NarrativeScienceService</code> — <code>analyze_sacred_flaw</code>, <code>check_dramatic_question</code>, <code>check_antihero_empathy</code></td>
+</tr>
+<tr>
+<td><strong>Rudolf Flesch</strong> — Flesch Reading Ease / Flesch-Kincaid Grade Level</td>
+<td>Deterministic readability scoring, no LLM cost</td>
+<td><code>WritingQualityService</code> and related deterministic checks</td>
+</tr>
+<tr>
+<td><strong>McKee / Truby / Vogler</strong></td>
+<td>Controlling idea, dramatic premise discipline</td>
+<td>Structural blueprint&#39;s thematic/controlling-idea slice</td>
+</tr>
+<tr>
+<td><strong>Chekhov&#39;s Gun</strong></td>
+<td>Setup-and-payoff as a trackable, auditable ledger (not a metaphor)</td>
+<td><code>PlantPayoffService</code>, <code>chekhov_audit</code>, plant/payoff orphan detection</td>
+</tr>
+<tr>
+<td><strong>StoryScope</strong> (empirical AI-fiction detection research)</td>
+<td>Nine structural anti-tell countermeasures committed <em>before</em> prose is written — escalation curve, event-type variety, resolution mode, moral polarity, subplot carrier</td>
+<td><code>StructuralBlueprintService</code>, <code>storyscope_audit</code> — see Patent Disclosure SS-DISC-002</td>
+</tr>
+<tr>
+<td><strong>The six-dimension Logic Sweep</strong> (in-house)</td>
+<td>Causality, knowledge-states, timeline, plant/payoff, orphan references, bible agreement</td>
+<td><a href="docs/LOGIC.md">docs/LOGIC.md</a> — the default QA methodology, SS-A44</td>
+</tr>
+<tr>
+<td><strong>&quot;Signs of AI writing&quot;</strong> (Wikipedia&#39;s crowd-sourced tell catalogue)</td>
+<td>The banned-mannerism list — pseudo-profundity, rule-of-three overuse, hedge-stacking</td>
+<td><a href="docs/CRAFT.md">docs/CRAFT.md §8</a></td>
+</tr>
+<tr>
+<td><strong>Stephen King</strong> — <em>On Writing</em></td>
+<td>Craft anti-patterns: adverb discipline, &quot;kill your darlings,&quot; voice over exposition</td>
+<td>Woven through <a href="docs/CRAFT.md">docs/CRAFT.md</a></td>
+</tr>
+</tbody></table>
+<p>Two companion doctrine documents sit beside the science: <a href="docs/CRAFT.md">docs/CRAFT.md</a> (10
+sections of universal DON&#39;Ts — camera/scene architecture, sentence/voice discipline, dialogue,
+interiority, banned mannerisms, POV clarity) and <a href="docs/DELIGHT.md">docs/DELIGHT.md</a> (14 DOs —
+the positive doctrine, reverse-engineered from the top-decile beats and reader praise ballots:
+open on a sensory fact that&#39;s already a clue, pay the cost on-page and keep it as a number, let
+mundane heroism win, vary the moves rather than stamping the same one). CRAFT.md is the floor;
+DELIGHT.md is what separates competent from unforgettable. Both are hand-edited directly and
+DB-backed via <code>CanonDocumentSections</code> (<code>set_canon_section</code> / <code>generate_canon_md</code>).</p>
+<hr>
+<h2 id="prose-generation-pipeline">Prose Generation Pipeline</h2>
+<p><code>ProseWriterRouter</code> is the <strong>sole entry point</strong> for beat prose generation (SS-A16). Call it — never
+<code>BeatGeneratorService</code> directly.</p>
+<pre><code>ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)
+</code></pre>
+<p>The router assembles a wide enrichment context before handing off to generation:</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>What it injects</th>
+<th>Activation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>BeatModeDetector</code></td>
+<td>Classifies the beat as Combat / Narrative / EmotionalClimax / Dialogue / Transition / Revelation</td>
+<td>Keyword scan on <code>BeatGoal</code></td>
+</tr>
+<tr>
+<td><code>PacingService</code></td>
+<td>BREATHE / FLOW / TIGHTEN / STRIKE / SETTLE prose rhythm</td>
+<td>Position + keywords; Combat forces STRIKE</td>
+</tr>
+<tr>
+<td><code>StoryMethodologyService</code></td>
+<td>Save the Cat structural role (Opening Image → Final Image) + Scene/Sequel type</td>
+<td>Position in book</td>
+</tr>
+<tr>
+<td><code>DelightProseGuidance</code></td>
+<td>The 2–3 reader-loved moves matching this beat&#39;s mode (<a href="docs/DELIGHT.md">docs/DELIGHT.md</a>)</td>
+<td>All beat modes</td>
+</tr>
+<tr>
+<td><code>CombatProseGuidance</code></td>
+<td>Verbs-first, fragment sentences, no emotion-naming, dissociated-observer examples</td>
+<td><code>BeatMode.Combat</code></td>
+</tr>
+<tr>
+<td><code>SceneContextBuilder</code></td>
+<td>Ambient sensory grounding</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>DialogueService</code></td>
+<td>Per-character voice/subtext profile injection</td>
+<td>Dialogue / EmotionalClimax modes</td>
+</tr>
+<tr>
+<td><code>SceneContextAssembler</code> (+ <code>WoundLedgerService</code>)</td>
+<td>Per-entity X-Ray: voice/psychology/wound/behavior profile of everyone on-page</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>ContinuityService</code></td>
+<td>Canonical/confirmed fact constraints for on-page characters</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>TensionEscalationService</code></td>
+<td>Warns when beats have stagnated at low intensity</td>
+<td><code>beatIndex &gt; 2</code></td>
+</tr>
+<tr>
+<td><code>ReaderKnowledgeService</code></td>
+<td>Dramatic-irony bookkeeping — what the reader currently knows</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>ConsequenceService</code> / <code>ConsequenceEngine</code></td>
+<td>Gear/cyberware/status constraints + cross-book persistent consequences</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>AmbientAnomalyService</code></td>
+<td>Location-tagged background New Weird detail</td>
+<td>~60% gate</td>
+</tr>
+<tr>
+<td><code>WorldStateAtBeatService</code></td>
+<td>Temporal entity-state snapshot (drift from canon baseline)</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>NarrativeSummaryService</code></td>
+<td>Rolling compressed memory of prior beats</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>ChapterSummaryService</code></td>
+<td>DB-backed prior-chapter memory</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>OpenThreadsService</code></td>
+<td>Unresolved promises/plants/questions</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>BookStateLedgerService</code></td>
+<td>Arc-level named state (crises, dramatic questions, alliances)</td>
+<td>Long books</td>
+</tr>
+<tr>
+<td><code>StoryScienceService</code></td>
+<td>King + Storr craft laws: sacred-flaw consistency, status dynamics, curiosity gap, causal chains, sensory specificity</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>StructuralBlueprintService</code></td>
+<td>Per-beat StoryScope anti-tell slice — subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode</td>
+<td>Node has a blueprint (<code>--generate-blueprint</code>)</td>
+</tr>
+<tr>
+<td><code>NarrativeChartService</code></td>
+<td>Offscreen/parallel character activity (world continuity)</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>WorldGraphService</code></td>
+<td>Entity pre-check — flags invented proper nouns not in canon</td>
+<td>Always</td>
+</tr>
+<tr>
+<td><code>PlantPayoffService</code></td>
+<td>Active plant/payoff pairs for the book</td>
+<td><code>NodeId != Guid.Empty</code></td>
+</tr>
+<tr>
+<td><code>BookAuditService</code></td>
+<td>Gateway or Sequel commandments (7 each, auto-detected from <code>PreviousNodeId</code>)</td>
+<td><code>NodeId != Guid.Empty</code></td>
+</tr>
+<tr>
+<td><code>LibertyReportService</code> / <code>SemanticFidelityService</code> / <code>CanonGroundingService</code></td>
+<td>Rule-of-Cool check, Goodhart intent-drift check, canon-grounding scaffold</td>
+<td>Always (findings loop back into later beats)</td>
+</tr>
+</tbody></table>
+<p><code>EmotionalDepthService</code> (the 8-dimension Want/Need/Wound rubric) is <strong>not</strong> called directly by the
+router — it runs via <code>--examine-emotion</code> / the DEEP tier of <code>book_health</code>, and its findings become
+live guidance one beat later through the generic findings-loop-back mechanism.</p>
+<h4 id="entry-points">Entry points</h4>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>When to use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)</code></td>
+<td>All beat writing — the only sanctioned path</td>
+</tr>
+<tr>
+<td><code>CombatSceneWriter.WriteCombatSceneAsync(request)</code></td>
+<td>Explicit multi-exchange combat setpiece (loadout/ammo/bio-battery tracking)</td>
+</tr>
+<tr>
+<td><code>BeatGeneratorService.GenerateBeatAsync(context)</code></td>
+<td>Legacy direct path — no coverage logging, not used for new code</td>
+</tr>
+</tbody></table>
+<p>Two paths from Epoch 2 <strong>no longer exist</strong> and are not fallbacks for anything: <code>StoryDirectorService</code>
+(the &quot;Surprise Me&quot; autonomous pipeline) and the <code>Write.razor</code> legacy UI path — both deleted with
+the Blazor UIs in Epoch 4.</p>
+<h4 id="beat-writing-workflow">Beat writing workflow</h4>
+<ol>
+<li>Assemble <code>BeatContext</code> (X-Ray context via <code>SceneContextAssembler</code>, <code>NodeId</code> always set).</li>
+<li>Call <code>ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)</code>.</li>
+<li><code>prose --examine-emotion --slug &lt;slug&gt;</code> — 8-dimension emotional scoring.</li>
+<li><code>prose --book-audit --slug &lt;slug&gt;</code> — gateway/sequel commandments once the book is complete.</li>
+<li><code>prose --plant-audit --slug &lt;slug&gt;</code> — orphaned-plant check.</li>
+<li><code>prose --storyscope-audit --slug &lt;slug&gt;</code> — verifies the structural anti-tells held (monotonic
+escalation, varied event types, no moral gloss, no epilogue, subplot executed). BLOCKER
+findings are fixed with minimal splices, then re-audited.</li>
+</ol>
+<h4 id="coverage-monitoring">Coverage monitoring</h4>
+<pre><code class="language-powershell">prose --workflow-status --slug &lt;slug&gt;   # per-book service coverage matrix + gaps
+prose --workflow-status --all           # global utilization across all books
+</code></pre>
+<p>MCP equivalents: <code>workflow_status</code>, <code>workflow_status_global</code>, <code>workflow_beat_modes</code>.</p>
+<hr>
+<h2 id="quality-verification-logic-sweeps-not-votes">Quality Verification — Logic Sweeps, Not Votes</h2>
+<p><strong>The 0–100 score gates (≥82% standalone / ≥85% cumulative) are retired</strong> (author ruling,
+2026-08-03: <em>&quot;remove scores; they mean nothing&quot;</em> — SS-A44). Nothing writes new <code>Node.Score</code> values
+except an explicitly requested legacy panel run. Publish-readiness is now: <strong>Logic Sweep clean at
+BLOCKER + zero open High/BLOCKER Reader-Proxy QA findings.</strong></p>
+<h3 id="the-logic-sweep-docslogicmd-canonical-runbook-logic-sweep">The Logic Sweep (<a href="docs/LOGIC.md">docs/LOGIC.md</a>, canonical runbook <code>/logic-sweep</code>)</h3>
+<p>Agents read a book end-to-end (enabled beats only) and audit six dimensions:</p>
+<ol>
+<li><strong>Causality chain</strong> — every event has an established cause; every decision, a motivation.</li>
+<li><strong>Knowledge states</strong> — who knows what, and when they learned it.</li>
+<li><strong>Timeline</strong> — the book&#39;s internal clock, reconstructed and checked for impossibilities.</li>
+<li><strong>Plant/payoff ledger</strong> — two-way: every plant pays off, every payoff was planted.</li>
+<li><strong>Orphan references</strong> — nothing references removed/disabled/merged content.</li>
+<li><strong>Bible agreement</strong> — prose and the book&#39;s <code>NodeBible</code> tell the same story; whichever is wrong
+gets fixed in the same change (prose wins on facts, the bible wins on locks).</li>
+</ol>
+<p>Findings triage <strong>BLOCKER / MODERATE / MINOR</strong> and are fixed with minimal splices — &quot;fix what a
+finding names; if you can&#39;t name the failure, leave the beat alone.&quot;</p>
+<h3 id="reader-proxy-qa-docsreader-qamd-reader-qa">Reader-Proxy QA (<a href="docs/READER-QA.md">docs/READER-QA.md</a>, <code>/reader-qa</code>)</h3>
+<p>Four findings-only instruments, hash-gated so unchanged content re-runs free:</p>
+<ol>
+<li><strong>Comprehension probes</strong> — Haiku answers reader-level questions, diffed against a Sonnet
+synopsis, Sonnet-arbitrated → <code>ComprehensionDefect</code> findings.</li>
+<li><strong>Craft/delight checklist</strong> (<code>--craft-checklist</code>) — hash-gated binary checklist against
+CRAFT.md/DELIGHT.md doctrine.</li>
+<li><strong>Cross-family pairwise duels</strong> (<code>--duel</code>) — every splice compared across LLM families,
+SS-A44-gated.</li>
+<li><strong>Gripe jury</strong> (<code>--reader-qa --gripe-pass</code>) — a findings-only jury pass, no scores.</li>
+</ol>
+<p>None of these are votes. The old dual-review machinery (<code>--review-node</code> panels, Legion votes,
+<code>RunSampledReviewAsync</code>) is <strong>quarantined behind the SS-A44 gate</strong> — it runs only on explicit
+user request (<code>--allow-votes</code> / <code>allowVotes:true</code>); the engine&#39;s default is OFF.</p>
+<hr>
+<h2 id="cli-reference">CLI Reference</h2>
+<p>The canonical invocation <code>prose</code> expands to <code>dotnet run --project v3/Prose.Cli -- &lt;args&gt;</code>. <strong>263
+distinct <code>--flag</code> handlers</strong> are dispatched from <code>v3/Prose.Cli/Program.cs</code>, backed by <strong>226 handler
+files</strong> under <code>v3/Prose.Cli/Cli/</code>. What follows is a categorized tour, not an exhaustive
+line-by-line dump — <code>Program.cs</code> is the exhaustive source, and the CLI has no built-in
+<code>--help</code> listing every flag; grep <code>Program.cs</code> for the authoritative, always-current list.</p>
+<h3 id="generation-amp-editing">Generation &amp; editing</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prose --write-node --slug &lt;slug&gt;</code> / <code>--expand-beat --slug &lt;slug&gt;</code></td>
+<td>Expand a beat via the full <code>ProseWriterRouter</code> pipeline</td>
+</tr>
+<tr>
+<td><code>prose --edit-book --slug &lt;slug&gt;</code></td>
+<td>Review-weighted auto-editor pass</td>
+</tr>
+<tr>
+<td><code>prose --reflow-book --slug &lt;slug&gt;</code></td>
+<td>Bounded copy-edit: paragraph breaks, question marks, dialogue attribution — never a rewrite</td>
+</tr>
+<tr>
+<td><code>prose --rebeat-book --slug &lt;slug&gt;</code></td>
+<td>Regenerate a book&#39;s beat spine</td>
+</tr>
+<tr>
+<td><code>prose --insert-beat</code> / <code>--split-beat</code> / <code>--join-beat</code> / <code>--move-beat</code></td>
+<td>Beat-level structural surgery</td>
+</tr>
+<tr>
+<td><code>prose --draft-combat-scene</code></td>
+<td>Multi-exchange combat setpiece via <code>CombatSceneWriter</code></td>
+</tr>
+</tbody></table>
+<h3 id="structure-amp-bible">Structure &amp; bible</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prose --create-node</code> / <code>--create-chapter</code></td>
+<td>Book/chapter node creation (SS-A43 typed tree)</td>
+</tr>
+<tr>
+<td><code>prose --set-book-bible --slug &lt;slug&gt;</code></td>
+<td>Write the hand-authored <code>NodeBible</code> sections</td>
+</tr>
+<tr>
+<td><code>prose --set-structural-blueprint --slug &lt;slug&gt; --file &lt;path.json&gt;</code></td>
+<td>Manually author the StoryScope blueprint (no LLM call) when the provider is unavailable</td>
+</tr>
+<tr>
+<td><code>prose --generate-blueprint --slug &lt;slug&gt;</code></td>
+<td>LLM-generated structural blueprint (9 anti-tell dimensions)</td>
+</tr>
+<tr>
+<td><code>prose --generate-node-doc --slug &lt;slug&gt;</code></td>
+<td>Regenerate <code>docs/nodes/&lt;CODE&gt;.md</code> from <code>NodeBible</code></td>
+</tr>
+<tr>
+<td><code>prose --generate-canon-md --type &lt;type&gt;</code></td>
+<td>Regenerate one Codex canon doc from <code>CanonDocumentSections</code></td>
+</tr>
+<tr>
+<td><code>prose --sync-markdown</code></td>
+<td>Sync hand-authored <code>.md</code> files (Codex docs, this README, Claude memory) into the <code>MarkdownFiles</code> DB table</td>
+</tr>
+</tbody></table>
+<h3 id="quality-amp-audit">Quality &amp; audit</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prose --logic-sweep --slug &lt;slug&gt;</code></td>
+<td>The default QA methodology — six-dimension continuity sweep, no votes</td>
+</tr>
+<tr>
+<td><code>prose --reader-qa --slug &lt;slug&gt; [--gripe-pass]</code></td>
+<td>Reader-Proxy QA — comprehension, craft checklist, gripe jury</td>
+</tr>
+<tr>
+<td><code>prose --craft-checklist --slug &lt;slug&gt;</code></td>
+<td>Hash-gated binary craft/delight checklist</td>
+</tr>
+<tr>
+<td><code>prose --duel --slug &lt;slug&gt;</code></td>
+<td>Cross-provider pairwise splice duels</td>
+</tr>
+<tr>
+<td><code>prose --diagnose-book --slug &lt;slug&gt;</code></td>
+<td>12-check structural pre-flight, cheap</td>
+</tr>
+<tr>
+<td><code>prose --audit-book [--full] [--deep] [--model haiku]</code></td>
+<td>Repeatable full-QA orchestrator — every audit tool in one pass</td>
+</tr>
+<tr>
+<td><code>prose --book-audit --slug &lt;slug&gt;</code></td>
+<td>Gateway/sequel commandment audit</td>
+</tr>
+<tr>
+<td><code>prose --plant-audit --slug &lt;slug&gt;</code></td>
+<td>Orphaned plant/payoff detection</td>
+</tr>
+<tr>
+<td><code>prose --chekhov-audit --slug &lt;slug&gt;</code></td>
+<td>Setup-and-payoff ledger check</td>
+</tr>
+<tr>
+<td><code>prose --swain-audit [--all] --slug &lt;slug&gt;</code> / <code>--swain-repair</code></td>
+<td>Scene/Sequel doctrine classification + auto-splice repair</td>
+</tr>
+<tr>
+<td><code>prose --storyscope-audit --slug &lt;slug&gt;</code></td>
+<td>Verifies the structural anti-tells (escalation, event variety, ending style) held</td>
+</tr>
+<tr>
+<td><code>prose --timeline-check --slug &lt;slug&gt;</code> / <code>--timeline --slug &lt;slug&gt;</code></td>
+<td>Deterministic dead-character-acting + wound-regression checks</td>
+</tr>
+<tr>
+<td><code>prose --check-canon --slug &lt;slug&gt;</code></td>
+<td>Chunked semantic + LLM canon-rule violation sweep</td>
+</tr>
+<tr>
+<td><code>prose --check-fidelity --slug &lt;slug&gt;</code></td>
+<td>Cosine-similarity prose-vs-bible/synopsis drift check</td>
+</tr>
+<tr>
+<td><code>prose --altitude-audit --slug &lt;slug&gt;</code></td>
+<td>10,000↔100 ft drift check (book vs. chapter-synopsis agreement)</td>
+</tr>
+<tr>
+<td><code>prose --examine-emotion --slug &lt;slug&gt;</code></td>
+<td>8-dimension per-beat emotional scoring</td>
+</tr>
+<tr>
+<td><code>prose --verify-beat --slug &lt;slug&gt;</code> / <code>--verify-book --slug &lt;slug&gt;</code></td>
+<td>Post-generation verification passes</td>
+</tr>
+<tr>
+<td><code>prose --verify-quote</code> / <code>--verify-quotes-batch</code></td>
+<td>Quote-grounding verification</td>
+</tr>
+<tr>
+<td><code>prose --graph-health</code></td>
+<td>Entity relationship graph integrity check</td>
+</tr>
+<tr>
+<td><code>prose --coordinate</code> / <code>--coverage</code> / <code>--backfill-coverage</code></td>
+<td>Cross-service coverage bookkeeping (non-destructive logging for existing beats)</td>
+</tr>
+<tr>
+<td><code>prose --fix-cross-universe-contamination</code></td>
+<td>Repairs cross-universe roster/POV leaks (the fail-closed scoping fix from Epoch 4)</td>
+</tr>
+<tr>
+<td><code>prose --review-book</code> / <code>--review-node</code> / <code>--review-entity</code></td>
+<td><strong>Quarantined legacy vote panels</strong> — SS-A44-gated, explicit request only</td>
+</tr>
+</tbody></table>
+<h3 id="canon-amp-world">Canon &amp; world</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prose --add-character</code> / <code>--add-place</code> / <code>--add-corponation</code> / …</td>
+<td>Seed a new typed entity</td>
+</tr>
+<tr>
+<td><code>prose --generate-glossary</code> / <code>--generate-book-glossary</code></td>
+<td>Per-universe / per-book glossary generation</td>
+</tr>
+<tr>
+<td><code>prose --validate-nouns --slug &lt;slug&gt;</code></td>
+<td>Deterministic deprecated-noun scan (<code>NounConsistencyService</code>)</td>
+</tr>
+<tr>
+<td><code>prose --harvest-voice[-all]</code></td>
+<td>Mine winning-book edits into proposed voice-rule changes</td>
+</tr>
+<tr>
+<td><code>prose --universe &lt;id&gt;</code></td>
+<td>Set the active universe scope for subsequent commands (fail-closed as of Epoch 4)</td>
+</tr>
+<tr>
+<td><code>prose --rebuild-graph</code></td>
+<td>Rebuild the in-memory entity relationship graph from SQL</td>
+</tr>
+<tr>
+<td><code>prose --reembed</code></td>
+<td>Re-embed all entities via OpenAI <code>text-embedding-3-small</code></td>
+</tr>
+</tbody></table>
+<h3 id="export-amp-publish">Export &amp; publish</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prose --export-node [--slug &lt;slug&gt;]</code></td>
+<td>docx + EPUB + PDF + audio manuscript <code>.txt</code>; prunes stale versions; lands in <code>{Title}/V{N}/</code></td>
+</tr>
+<tr>
+<td><code>prose --export-audio</code> / <code>--export-mp3</code> / <code>--prepare-audible</code></td>
+<td>Audiobook export pipeline</td>
+</tr>
+<tr>
+<td><code>prose --export-event-list</code> / <code>--export-synopsis</code></td>
+<td>Structured event list / synopsis export</td>
+</tr>
+<tr>
+<td><code>prose --narrate-node</code></td>
+<td>ElevenLabs TTS narration pass</td>
+</tr>
+<tr>
+<td><code>prose --generate-cover --book-code &lt;CODE&gt; --generator &lt;name&gt; --prompt &quot;&lt;text&gt;&quot;</code></td>
+<td>AI cover generation (ChatGPT / Gemini / Ideogram / Flux)</td>
+</tr>
+</tbody></table>
+<h3 id="infrastructure">Infrastructure</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prose --migrate-sql --schema</code></td>
+<td>Bootstrap/upgrade the DB schema — creates from nothing, applies all EF Core migrations, enables temporal versioning. Idempotent.</td>
+</tr>
+<tr>
+<td><code>prose --seed &lt;name&gt;</code></td>
+<td>Apply a registered raw-T-SQL seed script (see <code>SqlSeedService.Seeds</code>)</td>
+</tr>
+</tbody></table>
+<h3 id="local-rented-gpu-prose-generation">Local / rented-GPU prose generation</h3>
+<p>Route generation to any OpenAI-compatible endpoint (e.g. Ollama on a rented GPU) without mutating
+<code>appsettings.json</code>:</p>
+<pre><code class="language-powershell">prose --expand-beat --slug &lt;slug&gt; `
    --local-url  https://&lt;runpod-pod-id&gt;-11434.proxy.runpod.net/v1/chat/completions `
-   --local-model qwen2.5-32b-writer</code></pre>
-
-<p>Flags: <code>--local</code> (use stored <code>LocalLlmBaseUrl</code>), <code>--local-url &lt;url&gt;</code> (override endpoint), <code>--local-model &lt;tag&gt;</code> (override model), <code>--local-key &lt;key&gt;</code> (override bearer token). All overrides are ephemeral &mdash; they never mutate <code>appsettings.json</code>.</p>
-
+   --local-model qwen2.5-32b-writer
+</code></pre>
+<p>Flags: <code>--local</code> (use stored <code>LocalLlmBaseUrl</code>), <code>--local-url &lt;url&gt;</code>, <code>--local-model &lt;tag&gt;</code>,
+<code>--local-key &lt;key&gt;</code>. All overrides are ephemeral. The full enrichment pipeline applies regardless
+of endpoint.</p>
 <hr>
-
-<h2 id="database">Database</h2>
-
-<h3>Connection</h3>
-
-<pre><code>Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;</code></pre>
-
-<p>Windows Authentication &mdash; no <code>-U</code>/<code>-P</code> needed. Same as <code>appsettings.json</code> &rarr; <code>ConnectionStrings:Prose</code>.</p>
-
-<h3>Direct queries (read-only lookups)</h3>
-
-<p>For strand lists, scores, entity counts, and other read-only lookups, query the DB directly &mdash; returns in under a second:</p>
-
-<pre><code>sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "SELECT Name, Score FROM Strands WHERE IsCanon = 1 ORDER BY Score DESC"</code></pre>
-
-<div class="callout">
-  <p>Only use <code>dotnet run --project v3/Prose.Blazor -- &lt;args&gt;</code> when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.</p>
-</div>
-
-<h3>Schema reference</h3>
-
-<p>The DB schema is documented at <code>docs/schema.md</code> (222 tables), generated by <code>tools/gen-schema.ps1</code>. Regen after any migration.</p>
-
-<h3>Key tables</h3>
-
-<table>
-  <thead>
-    <tr><th>Table</th><th>Role</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><code>Entities</code></td><td>Universal spine &mdash; one row per entity: <code>Id, Name, Slug, EntityType, Description, IsActive, UniverseId</code></td></tr>
-    <tr><td><code>Beats</code> / <code>Beats_History</code></td><td>System-versioned (temporal) prose beats &mdash; every edit rewindable via <code>FOR SYSTEM_TIME ALL</code></td></tr>
-    <tr><td><code>Strands</code> / <code>Strands_History</code></td><td>System-versioned strand metadata + score</td></tr>
-    <tr><td><code>EntityEmbeddings</code></td><td>1536-d vectors (OpenAI text-embedding-3-small); cosine via <code>VECTOR_DISTANCE</code></td></tr>
-    <tr><td><code>Edges</code></td><td>Typed directed relationships (<code>carries</code>, <code>wields</code>, <code>member_of</code>, <code>located_at</code>, &hellip;) with validity windows</td></tr>
-    <tr><td><code>EntityStateEvents</code></td><td>Append-only in-world story-time ledger: <code>(entity, predicate, value, beatId, storyTime)</code></td></tr>
-    <tr><td><code>ContinuityClaims</code></td><td>Extracted <code>(entity, predicate, object)</code> claims from prose</td></tr>
-    <tr><td><code>Findings</code></td><td>Autonomous quality findings inbox &mdash; approve or dismiss before any prose edit</td></tr>
-    <tr><td><code>VoiceChangeLog</code></td><td>Proposed voice-rule changes harvested from winning strands</td></tr>
-    <tr><td><code>PlantPayoffs</code></td><td>Plant/payoff pair registry with <code>Hidden</code>/<code>Visible</code>/<code>Meta</code> transparency</td></tr>
-    <tr><td><code>BeatServiceLog</code></td><td>Per-beat service coverage log (which pipeline services fired)</td></tr>
-    <tr><td><code>Assets</code> / <code>CoverImagePrompts</code></td><td>Cover image library + generation prompt history</td></tr>
-  </tbody>
-</table>
-
-<h3>Connection string resolution order</h3>
-<ol>
-  <li>Environment variable <code>ConnectionStrings__Prose</code></li>
-  <li><code>appsettings.json</code> &rarr; <code>ConnectionStrings:Prose</code></li>
-  <li>LocalDB fallback (dev default)</li>
-</ol>
-
-<hr>
-
-<h2 id="running">Running Locally</h2>
-
-<p>Prerequisites: .NET 10 SDK, SQL Server LocalDB, at least one LLM provider API key wired through <code>MindAttic.Vault</code>.</p>
-
-<pre><code>cd v3
-dotnet restore
-dotnet run --project ApplyMigrations   # apply schema + seed data
-
-dotnet run --project Prose.Blazor
-# -> https://localhost:7103/</code></pre>
-
-<p>Run the MCP server as its own host:</p>
-
-<pre><code>dotnet build Prose.Mcp/Prose.Mcp.csproj -c Release
-dotnet run --project Prose.Mcp --no-build --configuration Release</code></pre>
-
+<h2 id="mcp-reference">MCP Reference</h2>
+<p><code>Prose.Mcp</code> exposes <strong>273 <code>[McpServerTool]</code> methods across 43 tool families</strong> — reflection-generated
+into <a href="docs/MCP_TOOLS.md">docs/MCP_TOOLS.md</a> and re-exported on demand:</p>
+<pre><code class="language-powershell">dotnet run --project v3/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
+</code></pre>
 <p>Register in Claude Code:</p>
+<pre><code>claude mcp add prose dotnet run --project &lt;path-to-your-clone&gt;/v3/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release
+</code></pre>
+<p>All tools are surfaced to a client as <code>mcp__prose__&lt;name&gt;</code>; most return a JSON string; the canon
+behind every call is the SQL database, scoped to the active Universe. Full family table:</p>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Tools</th>
+<th>Family</th>
+<th>Tools</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Node</td>
+<td>38</td>
+<td>Encyclopedia</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Config</td>
+<td>14</td>
+<td>Quality</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Canon</td>
+<td>9</td>
+<td>Survey</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Canon Doc</td>
+<td>7</td>
+<td>Gear Entity Crud</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Lore Triple</td>
+<td>7</td>
+<td>Edit Session</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Findings</td>
+<td>6</td>
+<td>Planning</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Plant Payoff</td>
+<td>6</td>
+<td>Story</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Voice</td>
+<td>6</td>
+<td>Context</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Core Entity Crud</td>
+<td>5</td>
+<td>Universe</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Verification</td>
+<td>5</td>
+<td>World Entity Crud</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Beat Event List</td>
+<td>3</td>
+<td>Beat Lens</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Bible</td>
+<td>3</td>
+<td>Chekhov Audit</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Combat</td>
+<td>1</td>
+<td>Book Health</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Book Audit</td>
+<td>2</td>
+<td>Book Logic</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Continuity</td>
+<td>2</td>
+<td>Repository</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Species</td>
+<td>2</td>
+<td>Data Integrity</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Entity Context</td>
+<td>4</td>
+<td>Glossary</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Narrative Science</td>
+<td>4</td>
+<td>Scene</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Noun Consistency</td>
+<td>3</td>
+<td>Reader Qa</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Story Scope</td>
+<td>3</td>
+<td>Swain</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Workflow Monitor</td>
+<td>3</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>Representative tools by family (the full per-tool reference with parameter schemas and
+descriptions is <a href="docs/MCP_TOOLS.md">docs/MCP_TOOLS.md</a>):</p>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Sample tools</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Node</td>
+<td><code>insert_beat</code>, <code>split_beat</code>, <code>join_beat</code>, <code>delete_beat</code>, <code>rebeat_book</code>, <code>reflow_book</code>, <code>export_node</code>, <code>narrate_book</code>, <code>get_book_spine</code></td>
+</tr>
+<tr>
+<td>Encyclopedia</td>
+<td>Read-only getters/listers for characters, places, factions, weapons, ammo, cyberware, equipment, apparel, pharmaceuticals, genemods, automata, archetypes, quotes, documents</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td><code>validate_canon_text</code>, <code>review_book</code>, <code>diagnose_book</code>, <code>scan_book_violations</code>, <code>check_prose</code>, <code>check_semantic_fidelity</code>, <code>findings_stats</code></td>
+</tr>
+<tr>
+<td>Config</td>
+<td><code>sync_markdown_files</code>, <code>recall_markdown_files</code>, <code>restore_markdown_file</code>, <code>doc_context_prepare</code>, <code>doc_context_status</code></td>
+</tr>
+<tr>
+<td>Canon Doc</td>
+<td><code>set_canon_section</code>, <code>generate_canon_md</code>, <code>get_canon_document</code>, <code>list_canon_sections</code></td>
+</tr>
+<tr>
+<td>Lore Triple</td>
+<td>Continuity-claim extraction; list/resolve/apply contradictions; <code>append_book_amendment</code></td>
+</tr>
+<tr>
+<td>Swain</td>
+<td><code>swain_audit</code>, <code>swain_audit_all</code>, <code>swain_repair</code></td>
+</tr>
+<tr>
+<td>Story Scope</td>
+<td><code>storyscope_audit</code>, structural-blueprint access</td>
+</tr>
+<tr>
+<td>World Entity Crud / Gear Entity Crud</td>
+<td><code>create_character</code>, <code>create_place</code>, <code>create_faction</code>, <code>create_weapon</code>, <code>create_cyberware</code>, …</td>
+</tr>
+</tbody></table>
+<h3 id="agentic-authoring-is-the-mcp-surface-itself">Agentic authoring is the MCP surface itself</h3>
+<p>There is <strong>no internal &quot;Operator&quot; service for prose authoring</strong> — that path (<code>WriterOperatorService</code>,
+the Epoch-2 <code>Operator</code>/CoWriter chat cluster) was deleted in Epoch 4. The <code>Services/Operator/</code>
+folder that still exists under <code>Prose.Core</code> is unrelated: it&#39;s KDP-publish browser-automation
+tool-calling (<code>AnthropicToolClient</code>, <code>KdpToolRegistry</code>, <code>KdpTools/</code>) consumed only by
+<code>Prose.KdpPublish</code>. Agentic authoring today means Claude — via this MCP server — calling the
+canon directly, with the human approving canon and voice changes rather than authoring them.</p>
+<hr>
+<h2 id="database">Database</h2>
+<h3 id="connection">Connection</h3>
+<pre><code>Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;
+</code></pre>
+<p>Windows Authentication — no <code>-U</code>/<code>-P</code> needed. Same as <code>appsettings.json</code> → <code>ConnectionStrings:Prose</code>.</p>
+<h3 id="direct-queries-read-only-lookups">Direct queries (read-only lookups)</h3>
+<p>For book lists, scores, entity counts, and other read-only lookups, query the DB directly:</p>
+<pre><code class="language-powershell">sqlcmd -S &quot;(localdb)\MSSQLLocalDB&quot; -d Prose -Q &quot;SELECT Name, Score FROM Nodes WHERE IsCanon = 1 ORDER BY Score DESC&quot;
+</code></pre>
+<p>Only use <code>dotnet run --project v3/Prose.Cli -- &lt;args&gt;</code> when the CLI&#39;s business logic is actually
+needed (write operations, generation, publish, audit). Never use it just to answer a lookup
+question.</p>
+<h3 id="schema-reference">Schema reference</h3>
+<p>The DB schema is documented at <a href="docs/schema.md">docs/schema.md</a> — <strong>261 base tables</strong> (262 FKs,
+278 PKs) plus <strong>168 system-versioned <code>_History</code> tables</strong>, generated by <code>tools/gen-schema.ps1</code>.
+Regenerate after any migration.</p>
+<h3 id="key-tables">Key tables</h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Entities</code></td>
+<td>Universal spine — one row per entity: <code>Id, Name, Slug, EntityType, Description, IsActive, UniverseId</code></td>
+</tr>
+<tr>
+<td><code>Nodes</code> / <code>Nodes_History</code></td>
+<td>System-versioned typed content tree (series/book/chapter) + score</td>
+</tr>
+<tr>
+<td><code>Beats</code> / <code>Beats_History</code></td>
+<td>System-versioned prose beats — every edit rewindable</td>
+</tr>
+<tr>
+<td><code>BeatNodes</code></td>
+<td>Joins Beats to Nodes (<code>NodeId, BeatId, SortKey, IsEnabled</code>) — the current book↔beat relationship; supersedes the retired <code>Beats.NodeId</code></td>
+</tr>
+<tr>
+<td><code>EntityEmbeddings</code></td>
+<td>1536-d vectors (OpenAI <code>text-embedding-3-small</code>); cosine via <code>VECTOR_DISTANCE</code></td>
+</tr>
+<tr>
+<td><code>Edges</code></td>
+<td>Typed directed relationships (<code>carries</code>, <code>wields</code>, <code>member_of</code>, <code>located_at</code>, …) with validity windows</td>
+</tr>
+<tr>
+<td><code>EntityStateEvents</code></td>
+<td>Append-only in-world story-time ledger: <code>(entity, predicate, value, beatId, storyTime)</code></td>
+</tr>
+<tr>
+<td><code>ContinuityClaims</code></td>
+<td>Extracted <code>(entity, predicate, object)</code> claims from prose</td>
+</tr>
+<tr>
+<td><code>Findings</code></td>
+<td>Autonomous quality findings inbox — approve, dismiss, or apply before editing a beat</td>
+</tr>
+<tr>
+<td><code>CanonDocumentSections</code></td>
+<td>Hand-authored canon sections that generate to <code>docs/BIBLE.md</code>, <code>docs/WORLD.md</code>, <code>docs/GLMZ.md</code>, <code>docs/SCRY.md</code>, etc. via <code>generate_canon_md</code></td>
+</tr>
+<tr>
+<td><code>MarkdownFiles</code></td>
+<td>System-versioned mirror of every <code>.md</code> file the toolchain depends on (Codex docs, root <code>README.md</code>, Claude memory) — see <a href="#about-this-document">About This Document</a></td>
+</tr>
+<tr>
+<td><code>Universe</code> / <code>UniverseProfiles</code></td>
+<td>The 7 registered universes and their per-universe profile settings</td>
+</tr>
+<tr>
+<td><code>ReaderKnowledgeFacts</code></td>
+<td>Dramatic-irony bookkeeping (moved out of <code>Findings</code> in Epoch 4 — it was misusing that table as permanent working state)</td>
+</tr>
+<tr>
+<td><code>PlantPayoffs</code></td>
+<td>Plant/payoff pair registry with <code>Hidden</code>/<code>Visible</code>/<code>Meta</code> transparency</td>
+</tr>
+<tr>
+<td><code>GlossaryTerms</code></td>
+<td>Universe-scoped glossary terms, filtered live to what a book&#39;s prose actually uses</td>
+</tr>
+<tr>
+<td><code>Assets</code> / <code>CoverImagePrompts</code></td>
+<td>Cover image library + generation prompt history</td>
+</tr>
+</tbody></table>
+<h3 id="connection-string-resolution-order">Connection string resolution order</h3>
+<ol>
+<li>Environment variable <code>ConnectionStrings__Prose</code></li>
+<li><code>appsettings.json</code> → <code>ConnectionStrings:Prose</code></li>
+<li>LocalDB fallback (dev default)</li>
+</ol>
+<hr>
+<h2 id="universes">Universes</h2>
+<p>Every canon and story row belongs to exactly one Universe (<a href="docs/BIBLE.md#SS-%C2%A75">SS-LAW-15</a>).
+Seven are currently registered:</p>
+<table>
+<thead>
+<tr>
+<th>Universe</th>
+<th>Slug</th>
+<th>Genre</th>
+<th>World-facts doc</th>
+<th>Craft-layer doc</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>GLMZ</strong></td>
+<td><code>glmz</code></td>
+<td>Cyberpunk, 2226, the flagship (<em>Bushido Coda</em>)</td>
+<td><a href="docs/BIBLE.md">docs/BIBLE.md</a> / <a href="docs/WORLD.md">docs/WORLD.md</a></td>
+<td><a href="docs/GLMZ.md">docs/GLMZ.md</a></td>
+</tr>
+<tr>
+<td><strong>SCRY</strong></td>
+<td><code>scry</code></td>
+<td>Fantasy/steampunk (The Entos / The Caul)</td>
+<td><a href="docs/universes/ENTOS.md">docs/universes/ENTOS.md</a></td>
+<td><a href="docs/SCRY.md">docs/SCRY.md</a></td>
+</tr>
+<tr>
+<td><strong>NONFICTION</strong></td>
+<td><code>nonfiction</code></td>
+<td>Citation-grounded nonfiction (formerly GSPL, then SOURCE)</td>
+<td>—</td>
+<td><a href="docs/NONFICTION.md">docs/NONFICTION.md</a></td>
+</tr>
+<tr>
+<td><strong>HORROR</strong></td>
+<td><code>horror</code></td>
+<td>Ambiguous/analog horror</td>
+<td>—</td>
+<td><a href="docs/HORROR.md">docs/HORROR.md</a></td>
+</tr>
+<tr>
+<td><strong>EROTICA</strong></td>
+<td><code>erotica</code></td>
+<td>Sixth universe added 2026-08-04</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>GOSPEL</strong></td>
+<td><code>gospel</code></td>
+<td>Split out from NONFICTION; New Testament claims-cataloguing campaign</td>
+<td><a href="docs/gospel/">docs/gospel/</a></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>FICTION</strong></td>
+<td><code>fiction</code></td>
+<td>General literary fiction (formerly EPIC)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<p>Universe scoping is <strong>fail-closed</strong> as of Epoch 4: an unset or invalid universe scope blocks
+generation rather than silently defaulting to &quot;every universe&quot; — the fix that closed a
+cross-universe content-leak incident (<code>--fix-cross-universe-contamination</code> repairs any residue).
+Switch scope with <code>prose --universe &lt;id&gt;</code> (CLI, per-process) or MCP <code>switch_universe</code>
+(per-session) — two processes or sessions can target different universes simultaneously.</p>
+<hr>
+<h2 id="the-subsystems">The Subsystems</h2>
+<p><strong>309 services</strong> live directly under <code>v3/Prose.Core/Services/</code> (351 including the <code>Audit/</code>,
+<code>CoverImage/</code>, <code>Local/</code>, <code>Operator/</code>, and <code>VideoGen/</code> subfolders), grouped here by role.</p>
+<h3 id="1-canon-amp-data-layer">1. Canon &amp; data layer</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>BookRepository</code> / <code>ChapterRepository</code> / <code>SeriesRepository</code> / <code>UserRepository</code></td>
+<td>CRUD repositories for their entity types</td>
+</tr>
+<tr>
+<td><code>RepositoryDefinitionService</code></td>
+<td>Runtime-defined custom entity repositories (slug, icon, route)</td>
+</tr>
+<tr>
+<td><code>BookOutlineService</code></td>
+<td>Builds ordered chapter/beat outlines for a book</td>
+</tr>
+<tr>
+<td><code>LoreService</code></td>
+<td>Canonical lore lookup for prompt grounding</td>
+</tr>
+<tr>
+<td><code>CanonGroundingService</code></td>
+<td>Injects grounded entity dossiers into LLM prompts</td>
+</tr>
+<tr>
+<td><code>CanonRetrievalService</code></td>
+<td>RAG-style semantic + graph lookup for context assembly</td>
+</tr>
+<tr>
+<td><code>WorldStateLedger</code></td>
+<td>Append-only event log powering state-at-beat queries</td>
+</tr>
+<tr>
+<td><code>DataConsistencyService</code></td>
+<td>Audits FK and relational integrity across entity tables</td>
+</tr>
+<tr>
+<td><code>SqlSeedService</code></td>
+<td>Applies canonical SQL seeds from C#</td>
+</tr>
+<tr>
+<td><code>CanonExportService</code> / <code>ExportService</code></td>
+<td>Export canonical entity data to JSON/zip</td>
+</tr>
+</tbody></table>
+<h3 id="2-embeddings-amp-semantic-retrieval">2. Embeddings &amp; semantic retrieval</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>EmbeddingService</code></td>
+<td>OpenAI <code>text-embedding-3-small</code> vector store; SHA-256 drift detection; cosine NN search. Use <code>FindSimilarAsync</code> — never substring matching</td>
+</tr>
+<tr>
+<td><code>SemanticIndexService</code></td>
+<td>Low-level embedding index management</td>
+</tr>
+<tr>
+<td><code>GlobalSearchService</code> / <code>GlobalSearchWarmupService</code></td>
+<td>Combined full-text + semantic search; background preheater</td>
+</tr>
+<tr>
+<td><code>SemanticFidelityService</code></td>
+<td>Goodhart-drift check — cosine similarity of beat prose vs. book bible/synopsis</td>
+</tr>
+<tr>
+<td><code>KnowledgeMapService</code></td>
+<td>Clusters entities by embedding similarity</td>
+</tr>
+<tr>
+<td><code>ThematicIndexService</code></td>
+<td>Tags/indexes beats and books by theme for retrieval</td>
+</tr>
+</tbody></table>
+<h3 id="3-prose-generation">3. Prose generation</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ProseWriterRouter</code></td>
+<td>Sole prose entry point (SS-A16) — see <a href="#prose-generation-pipeline">Prose Generation Pipeline</a></td>
+</tr>
+<tr>
+<td><code>DocContextService</code> / <code>DocContextStack</code></td>
+<td>Dynamic Context Memory — five-pass, four-layer retrieval; see <code>CLAUDE.md</code>&#39;s DCM section</td>
+</tr>
+<tr>
+<td><code>BeatModeDetector</code></td>
+<td>Classifies beat mode</td>
+</tr>
+<tr>
+<td><code>CombatProseGuidance</code></td>
+<td>Combat-prose laws</td>
+</tr>
+<tr>
+<td><code>BeatGeneratorService</code></td>
+<td>Core generation — expert-persona panel votes on the best next beat; tier-locked HIGH</td>
+</tr>
+<tr>
+<td><code>BeatPromptBuilder</code></td>
+<td>Constructs beat prompts with canon context, voice rules, world state</td>
+</tr>
+<tr>
+<td><code>CombatSceneWriter</code></td>
+<td>Canon-aware combat prose — loadouts, ammo, bio-battery, terrain</td>
+</tr>
+<tr>
+<td><code>DialogueService</code></td>
+<td>Dialogue in per-character voice registers</td>
+</tr>
+<tr>
+<td><code>NodeBibleService</code></td>
+<td>Manages per-book bibles (authorial spine, beat plan, synopsis)</td>
+</tr>
+<tr>
+<td><code>OutlineService</code> / <code>StoryMethodologyService</code></td>
+<td>Seed-to-outline generation; five-act/scene-anatomy frameworks</td>
+</tr>
+<tr>
+<td><code>NpcGenerator</code> / <code>DynamicPlaceGenerator</code> / <code>ContractGenerator</code></td>
+<td>Procedural NPCs, places, in-world documents grounded in canon</td>
+</tr>
+<tr>
+<td><code>BeatRepairService</code></td>
+<td>Self-healing targeted rewrite — attempted before any Full-tier audit files a Finding (Epoch 4)</td>
+</tr>
+</tbody></table>
+<h3 id="4-review-amp-quality">4. Review &amp; quality</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>NodeReviewService</code></td>
+<td>Legacy quorum-vote review path — SS-A44-quarantined, explicit request only</td>
+</tr>
+<tr>
+<td><code>ReviewEffortProfile</code></td>
+<td>RFC 0009 cost tier (draft / standard / deep)</td>
+</tr>
+<tr>
+<td><code>StructuralDiagnosticService</code></td>
+<td>Structural pre-flight checks</td>
+</tr>
+<tr>
+<td><code>WritingQualityService</code></td>
+<td>Deterministic heuristic pass (no LLM): first-line strength, tension delta, motif reuse, voice-cadence drift</td>
+</tr>
+<tr>
+<td><code>EmotionalDepthService</code></td>
+<td>8-dimension emotional examination at beat level (SS-A15)</td>
+</tr>
+<tr>
+<td><code>FindingsService</code> / <code>FindingApplyService</code></td>
+<td>Findings inbox CRUD + applying an approved fix directly to <code>Beat.Text</code> (fixed in Epoch 4 — previously matched a pseudo-path that never existed on disk)</td>
+</tr>
+<tr>
+<td><code>BookAuditService</code></td>
+<td>Gateway/Sequel commandment auditing</td>
+</tr>
+<tr>
+<td><code>PlantPayoffService</code></td>
+<td>Plant/payoff registry; orphan-audit on completion</td>
+</tr>
+<tr>
+<td><code>SwainAuditService</code></td>
+<td>Scene/Sequel doctrine classification + auto-repair (SS-A47)</td>
+</tr>
+</tbody></table>
+<h3 id="5-storytelling-science">5. Storytelling science</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>NarrativeScienceService</code></td>
+<td>Sacred-flaw/theory-of-control, dramatic-question, five-act mapping, antihero-empathy (Storr framework)</td>
+</tr>
+<tr>
+<td><code>ArcTrackerService</code></td>
+<td>Per-book five-act position and beat-level progression</td>
+</tr>
+<tr>
+<td><code>PacingService</code></td>
+<td>Flags over-stayed, under-stayed, or non-escalating emotional registers</td>
+</tr>
+<tr>
+<td><code>StructuralBlueprintService</code></td>
+<td>StoryScope&#39;s 9 anti-tell structural dimensions, committed pre-prose</td>
+</tr>
+</tbody></table>
+<h3 id="6-continuity-amp-world-modelling">6. Continuity &amp; world-modelling</h3>
+<p>Mostly deterministic (DB-only, no LLM cost).</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+<th>LLM?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>EntityRelationshipService</code></td>
+<td>BFS Edge-graph relationship trees for scene context</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ProsePatternGuard</code></td>
+<td>Regex linter for banned patterns</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>AmbientDetailInjector</code></td>
+<td>Sensory palette from carried/worn gear</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>WorldStateAtBeatService</code></td>
+<td>Point-in-time world-state snapshot from the ledger</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>GearCarryEnforcer</code></td>
+<td>Detects gear-use verbs and checks the carry graph allows them</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>BehavioralInvariantEnforcer</code></td>
+<td>Checks prose against a character&#39;s registered behavioral rules</td>
+<td>Yes (1/char)</td>
+</tr>
+<tr>
+<td><code>WeaponAmmoCompatibilityService</code></td>
+<td>Validates weapon+ammo pairs</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>TimelineConsistencyService</code></td>
+<td>Deterministic dead-character-acting + wound-regression checks</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>LocationContradictionService</code></td>
+<td>Detects a character in two places at once</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>CanonContradictionService</code></td>
+<td>Chunked semantic + LLM canon-rule sweep</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>WorldConsistencyService</code></td>
+<td>Prose scan for world-rule violations</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>SceneContextAssembler</code></td>
+<td>X-Ray scene assembly — entity mentions → dossiers → voice + behavioral context</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>WorldGraphService</code></td>
+<td>In-memory adjacency graph over all entities/edges</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ContinuityExtractionService</code></td>
+<td>Multi-provider extraction of <code>(entity, predicate, object)</code> claims</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>ContinuityValidatorService</code></td>
+<td>Validates claims vs. live entity state</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td><code>NounConsistencyService</code></td>
+<td>Deterministic deprecated/renamed-noun scan across enabled beats (<code>--validate-nouns</code>)</td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h3 id="7-voice-amp-persona">7. Voice &amp; persona</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>VoiceHarvestService</code></td>
+<td>Mines author edits + directives from winning books into proposed voice rules</td>
+</tr>
+<tr>
+<td><code>ExpertPersonaService</code> / <code>ExpertPersonaCatalog</code></td>
+<td>Reusable expert-persona pool; genre experts, craft specialists</td>
+</tr>
+<tr>
+<td><code>NamePoolService</code></td>
+<td>Culturally diverse name pools (Ubiquitous Diaspora rule)</td>
+</tr>
+</tbody></table>
+<h3 id="8-memory-amp-editorial-lessons">8. Memory &amp; editorial lessons</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ProseLessonStore</code></td>
+<td>SQL-backed store of author rulings, scoped global/node/beat; injected into review prompts</td>
+</tr>
+<tr>
+<td><code>ActionConfigService</code></td>
+<td>Per-action LLM tier registry; <code>ChapterBeatWriter</code>/<code>Expander</code> locked at HIGH</td>
+</tr>
+<tr>
+<td><code>SettingsKvStore</code> / <code>SettingsService</code></td>
+<td>SQL-backed key-value config; app-wide settings façade</td>
+</tr>
+<tr>
+<td><code>MarkdownFileService</code></td>
+<td>Syncs hand-authored <code>.md</code> files (Codex docs, root README, Claude memory) into <code>MarkdownFiles</code>, system-versioned</td>
+</tr>
+</tbody></table>
+<h3 id="9-export-amp-publish">9. Export &amp; publish</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ManuscriptExportService</code></td>
+<td>All-in-one export — EPUB 3 + PDF (QuestPDF, 6&quot;×9&quot; KDP trim) + Markdown</td>
+</tr>
+<tr>
+<td><code>DocxExportService</code></td>
+<td>KDP-ready Word <code>.docx</code> via OpenXml</td>
+</tr>
+<tr>
+<td><code>BookExportService</code></td>
+<td>Book-level EPUB 3 + PDF</td>
+</tr>
+<tr>
+<td><code>NodeMarkdownExporter</code></td>
+<td>Ordered beats → markdown with stable content fingerprint</td>
+</tr>
+<tr>
+<td><code>ElevenLabsTtsService</code></td>
+<td>ElevenLabs TTS narration; tiered fallback</td>
+</tr>
+<tr>
+<td><code>LocalTts</code> / <code>PiperTtsService</code> / <code>WindowsTtsService</code></td>
+<td>Local TTS fallbacks — see the <code>tools/chatterbox</code>/<code>tools/kokoro</code> note in <a href="#repository-layout">Repository Layout</a></td>
+</tr>
+</tbody></table>
+<h3 id="10-llm-providers-amp-routing">10. LLM providers &amp; routing</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>MultiLlmService</code></td>
+<td>Multi-provider fan-out via <code>MindAttic.Legion</code> (Claude, OpenAI, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere)</td>
+</tr>
+<tr>
+<td><code>LlmRouter</code></td>
+<td>Routes each request to the right provider/tier from <code>ActionConfig</code></td>
+</tr>
+<tr>
+<td><code>AssignTiersService</code></td>
+<td>Assigns Haiku/Sonnet/Opus class to actions per settings</td>
+</tr>
+</tbody></table>
+<p>See <a href="docs/PROVIDERS.md">docs/PROVIDERS.md</a> for the checked-in table of which services depend on
+which external provider (Anthropic-only, OpenAI-only, or both).</p>
+<hr>
+<h2 id="cost-tiering">Cost Tiering</h2>
+<p>RFC 0009. Spend scales to a task&#39;s importance — see
+<a href="docs/rfc/0009-cost-tiered-storytelling-engine.md">docs/rfc/0009-cost-tiered-storytelling-engine.md</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Tier (<code>--effort</code>)</th>
+<th>LLM calls</th>
+<th>Models</th>
+<th>Used for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>draft</code></td>
+<td>~6 (−84%)</td>
+<td>cheapest per provider (Haiku / Flash-Lite / Nano)</td>
+<td>mid-draft spot checks; per-beat iteration</td>
+</tr>
+<tr>
+<td><code>standard</code></td>
+<td>~15 (−60%)</td>
+<td>mid-tier defaults</td>
+<td>the per-book QA pass</td>
+</tr>
+<tr>
+<td><code>deep</code></td>
+<td>~37 (baseline)</td>
+<td>mid-tier defaults + full diagnosis + prose critique</td>
+<td>the flagship / cumulative pass</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="running-locally">Running Locally</h2>
+<p>Prerequisites: .NET 10 SDK, SQL Server LocalDB, at least one LLM provider API key wired through
+<code>MindAttic.Vault</code>.</p>
+<p>One-time, right after cloning — wires up the repo&#39;s git hooks (<code>.githooks/</code>), not picked up
+automatically by a fresh clone:</p>
+<pre><code class="language-powershell">git config core.hooksPath .githooks
+</code></pre>
+<p>Without this, <code>pre-commit</code>&#39;s live-LLM-key gate and <code>post-commit</code>&#39;s markdown-sync simply never
+fire — no error, they just silently don&#39;t run.</p>
+<pre><code class="language-powershell">cd v3
+dotnet restore
 
-<pre><code>claude mcp add prose dotnet run --project D:/Projects/MindAttic/Prose/v3/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release</code></pre>
+# Schema (creates the DB from nothing + applies all EF Core migrations + enables
+# temporal SYSTEM_VERSIONING). Idempotent; safe to re-run.
+dotnet run --project Prose.Cli -- --migrate-sql --schema
 
+# Optional: a handful of older, pre-EF-migration schema deltas and small data
+# inserts still live as raw .sql under Prose.Core/Data/Sql/, run via
+# `prose --seed &lt;name&gt;` (see SqlSeedService.Seeds for registered names).
+</code></pre>
+<p>There is no web host to start — the CLI and the MCP server are the entire surface:</p>
+<pre><code class="language-powershell"># CLI is invoked per-command, not a long-running process:
+dotnet run --project Prose.Cli -- --workflow-status --all
+
+# MCP server:
+dotnet build Prose.Mcp/Prose.Mcp.csproj -c Release
+dotnet run --project Prose.Mcp --no-build --configuration Release
+</code></pre>
+<p>The <code>Prose.KdpPublish</code> desktop app (WPF, requires Windows) and <code>Prose.LlmCli</code> (<code>prose-llm</code>,
+cross-platform) are run independently — see <a href="#architecture-at-a-glance">Architecture at a Glance</a>.</p>
+<p>Run tests:</p>
+<pre><code class="language-powershell">dotnet test v3/Prose.UnitTests   # NUnit + bUnit, 185 test files
+</code></pre>
+<blockquote>
+<p>The Cypress suite (<code>npx cypress run</code>) predates Epoch 4 and exercises routes on the now-deleted
+Blazor UI — see <a href="#tests">Tests</a>.</p>
+</blockquote>
+<h3 id="environment-variables">Environment variables</h3>
+<p>All optional — the app starts and most features work without any of them (credentials fall back
+through <code>MindAttic.Vault</code> / DB-stored settings). Set only what a feature you&#39;re using needs.</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Variables</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LLM providers</td>
+<td><code>PROSE_CLAUDE_API_KEY</code>, <code>PROSE_OPENAI_API_KEY</code>, <code>PROSE_GEMINI_API_KEY</code>, <code>PROSE_DEEPSEEK_API_KEY</code>, <code>PROSE_MISTRAL_API_KEY</code>, <code>PROSE_GROK_API_KEY</code>, <code>PROSE_GROQ_API_KEY</code>, <code>PROSE_TOGETHER_API_KEY</code>, <code>PROSE_OPENROUTER_API_KEY</code>, <code>PROSE_FIREWORKS_API_KEY</code>, <code>PROSE_COHERE_API_KEY</code></td>
+</tr>
+<tr>
+<td>Audio / media gen</td>
+<td><code>PROSE_ELEVENLABS_API_KEY</code>, <code>PROSE_IDEOGRAM_API_KEY</code>, <code>PROSE_FAL_API_KEY</code>, <code>PROSE_STABILITY_API_KEY</code>, <code>PROSE_KLING_API_KEY</code>, <code>PROSE_RUNWAY_API_KEY</code></td>
+</tr>
+<tr>
+<td>Maps</td>
+<td><code>PROSE_MAP_APP_ID</code>, <code>PROSE_MAP_API_KEY</code>, <code>PROSE_GOOGLE_MAPS_API_KEY</code></td>
+</tr>
+<tr>
+<td>SMTP</td>
+<td><code>PROSE_SMTP_HOST</code>, <code>PROSE_SMTP_PORT</code>, <code>PROSE_SMTP_USERNAME</code>, <code>PROSE_SMTP_PASSWORD</code>, <code>PROSE_SMTP_FROM</code></td>
+</tr>
+<tr>
+<td>Data paths</td>
+<td><code>PROSE_DATA_ROOT</code>, <code>PROSE_MUTABLE_DATA_ROOT</code> — override where canon/exports live</td>
+</tr>
+<tr>
+<td>Universe scope</td>
+<td><code>PROSE_UNIVERSE</code> — default universe slug for CLI commands that need one</td>
+</tr>
+<tr>
+<td>Local TTS</td>
+<td><code>PROSE_PYTHON</code>, <code>PROSE_ENG_SCRIPT</code>, <code>PROSE_ENG_VOICE</code>, <code>PROSE_CA_BUNDLE</code>, <code>PROSE_PIPER_EXE</code>, <code>PROSE_PIPER_MODEL</code> — see the <code>tools/chatterbox</code>/<code>tools/kokoro</code> note below; local TTS setup is currently incomplete</td>
+</tr>
+</tbody></table>
+<p><code>RunPod</code>/GPU routing uses different variables — see <a href="#the-subsystems">The Subsystems</a> → LLM providers.</p>
 <p>After editing any <code>docs/*</code> Codex file:</p>
-
-<pre><code>pwsh tools/codex.ps1 digest
-pwsh tools/codex.ps1 doctor   # must pass</code></pre>
-
+<pre><code class="language-powershell">powershell -File tools/codex.ps1 digest
+powershell -File tools/codex.ps1 doctor   # must pass
+</code></pre>
 <hr>
-
-<h2 id="gpu">GPU Entity Scoring</h2>
-
-<p>The engine supports routing prose generation to any OpenAI-compatible endpoint &mdash; including Ollama running on a rented GPU (RunPod, vast.ai) &mdash; for cost-effective parallel writing experiments or high-throughput beat generation.</p>
-
-<h3>RunPod setup</h3>
-<ol>
-  <li>Deploy an <code>ollama/ollama:latest</code> pod with port 11434 exposed and <code>OLLAMA_HOST=0.0.0.0</code> set in the environment.</li>
-  <li>Pull and tag your model via the web terminal (e.g. <code>ollama pull qwen2.5:32b-instruct-q4_k_m</code>).</li>
-  <li>Use the proxy URL in <code>--expand-beat</code>:</li>
-</ol>
-
-<pre><code>prose --expand-beat --slug &lt;slug&gt; `
-   --local-url  https://&lt;runpod-pod-id&gt;-11434.proxy.runpod.net/v1/chat/completions `
-   --local-model qwen2.5:32b-instruct</code></pre>
-
-<p>An L40S 48 GB at ~$1/hr handles <code>qwen2.5:32b-instruct</code> (Q4_K_M) comfortably with 32k context.</p>
-
-<h3>Entity review scoring</h3>
-
-<p><code>EntityRatingService</code> and <code>EntityReviewService</code> run Legion-persona quality voting on canon entities (10 ballots per entity across the ~10,532 entity corpus). Trigger via:</p>
-
-<pre><code>prose --review-entity --id &lt;entity-guid&gt;</code></pre>
-
-<p>MCP equivalent: the <code>Tools.Quality.cs</code> family (<code>review_strand</code>, <code>scan_chapter_quality</code>, <code>check_prose</code>).</p>
-
-<h3>NxR parallel-writing experiment</h3>
-
-<p>The first documented parallel-writing experiment (NxR strand) ran Claude Opus vs. Qwen2.5:32b on the same strand bible with the <code>--local-url</code> / <code>--local-model</code> flags. Both writers received identical X-Ray context, BeatModeDetector classification, PacingService rhythm, and story-bible injection. See <code>docs/strands/NxR.md &sect;9</code>.</p>
-
-<hr>
-
-<h2 id="code-style">Code Style Rules</h2>
-
-<p>From <code>CLAUDE.md</code> &mdash; enforced across the codebase:</p>
-
-<table>
-  <thead>
-    <tr><th>Rule</th><th>Detail</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Private field naming</td>
-      <td><code>camelCase</code> without underscore prefix. <code>count</code>, not <code>_count</code>.</td>
-    </tr>
-    <tr>
-      <td>Data files</td>
-      <td>JSON only. No Python scripts, no YAML, no new Markdown files (Codex <code>docs/*.md</code> are the exception).</td>
-    </tr>
-    <tr>
-      <td>Host model</td>
-      <td>Blazor Server. Web-only. No MAUI host.</td>
-    </tr>
-    <tr>
-      <td>EF Core null-conditional</td>
-      <td><code>?.</code> and <code>?[]</code> are <strong>not allowed inside EF Core expression-tree lambdas</strong> (CS8072). Project the scalar before the terminal operator: <code>g.OrderByDescending(h =&gt; h.RecordedAt).Select(h =&gt; h.MeanScore).FirstOrDefault()</code>, not <code>g.OrderByDescending(...).FirstOrDefault()?.MeanScore ?? 0</code>.</td>
-    </tr>
-    <tr>
-      <td>QUANTA symbol</td>
-      <td><code>&#x3A6;</code> is the QUANTA currency symbol &mdash; never "phi", never the Greek letter.</td>
-    </tr>
-    <tr>
-      <td>Iowan Behemoths</td>
-      <td>Autonomous machines, not synthetic life. They are not alive.</td>
-    </tr>
-    <tr>
-      <td>Character heritage</td>
-      <td>Default to mixed heritage from unexpected global combinations (Ubiquitous Diaspora).</td>
-    </tr>
-    <tr>
-      <td>Versioning</td>
-      <td>Whole-number only: <code>1.0.0</code>, <code>2.0.0</code>, <code>3.0.0</code>. No semver-style minor/patch bumps.</td>
-    </tr>
-    <tr>
-      <td>Prose entry point</td>
-      <td>All beat writing goes through <code>ProseWriterRouter.WriteAsync</code>. Never call <code>BeatGeneratorService</code> directly from new code.</td>
-    </tr>
-    <tr>
-      <td>Canon storage</td>
-      <td>Canon facts go into SQL Server. Never write new entity data into <code>engine_data/*.json</code> files or Markdown.</td>
-    </tr>
-    <tr>
-      <td>CorpoNation spelling</td>
-      <td>Conjoined capitals in prose and UI. Code identifiers unchanged.</td>
-    </tr>
-    <tr>
-      <td>E.L.F. spelling</td>
-      <td>Always <code>E.L.F.</code> with periods. Gloss on first mention in prose.</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h2 id="workflow">How it works: seed to published</h2>
-
-<p>Every strand or book follows this sequence. Prose is <strong>never</strong> written before steps 1 and 2 are complete.</p>
-
-<ol>
-  <li><strong>Docs first.</strong> Append world facts to <code>docs/AMENDMENTS.md</code>; add story entry to <code>docs/USER_STORIES.md</code>; run <code>pwsh tools/codex.ps1 doctor</code>. A fact lives in exactly one Codex layer, cited by stable <code>{#SS-&hellip;}</code> id.</li>
-  <li><strong>Entity seeding.</strong> Every named character, CorpoNation, place, and weapon is seeded into SQL before any prose is generated (<code>SqlSeedService</code>, typed repositories, or MCP <code>create_*</code> tools).</li>
-  <li><strong>Book structure.</strong> Create a book-level strand (<code>kind=book</code>) plus chapter sub-strands (<code>kind=chapter</code>) parented to the book; the 14-beat authorial spine becomes the book strand's <code>seed</code> text.</li>
-  <li><strong>Prose draft.</strong> <code>ProseWriterRouter</code> is the entry point. It classifies beat mode, assigns pacing rhythm, injects structural role, loads active plant/payoff pairs, audits gateway/sequel commandments, and routes to <code>BeatGeneratorService</code> while logging coverage. Each beat's prompt is grounded by an X-Ray context block (<code>SceneContextAssembler</code>).</li>
-  <li><strong>Reflow.</strong> A bounded copy-edit pass fixes paragraph breaks, question punctuation, and dialogue attribution without rewriting prose (<code>ProseReflowService</code>).</li>
-  <li><strong>Review (dual, mandatory).</strong> A structural pre-flight runs first (<code>StructuralDiagnosticService</code>), then N Legion personas cast scored ballots (<code>StrandReviewService</code>). Per-strand standalone must clear &ge;82%; cumulative prefix must hold &ge;85%.</li>
-  <li><strong>Continuity scan.</strong> Claims extracted from prose validated against live entity state. Deterministic checks catch timeline and location impossibilities.</li>
-  <li><strong>Export.</strong> KDP-ready Word <code>.docx</code>, EPUB 3, PDF, and Markdown land in a <code>{Title}/V{N}/</code> subdirectory; optionally a one-pass audiobook (<code>ElevenLabsTtsService</code>).</li>
-</ol>
-
-<hr>
-
-<h2 id="subsystems">The Subsystems</h2>
-
-<p>~214 services in <code>v3/Prose.Core/Services/</code>, grouped by subsystem.</p>
-
-<h3><span class="subsystem-label">1</span> Canon &amp; data layer</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>BookRepository</code> / <code>ChapterRepository</code> / <code>SeriesRepository</code></td><td>CRUD repositories for their entity types</td></tr>
-    <tr><td><code>RepositoryDefinitionService</code></td><td>Runtime-defined custom entity repositories (slug, icon, route)</td></tr>
-    <tr><td><code>BookOutlineService</code></td><td>Builds ordered chapter/beat outlines for a book</td></tr>
-    <tr><td><code>LoreService</code></td><td>Canonical lore lookup &mdash; pulls character/world facts for prompt grounding</td></tr>
-    <tr><td><code>CanonGroundingService</code></td><td>Injects grounded entity dossiers into LLM prompts</td></tr>
-    <tr><td><code>CanonRetrievalService</code></td><td>RAG-style semantic + graph lookup over canon for context assembly</td></tr>
-    <tr><td><code>WorldStateLedger</code></td><td>Append-only event log powering state-at-beat queries</td></tr>
-    <tr><td><code>DataConsistencyService</code></td><td>Audits FK and relational integrity across entity tables</td></tr>
-    <tr><td><code>SqlSeedService</code></td><td>Applies canonical SQL seeds from C#</td></tr>
-    <tr><td><code>CanonExportService</code> / <code>ExportService</code></td><td>Export canonical entity data to JSON/zip</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">2</span> Embeddings &amp; semantic retrieval</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>EmbeddingService</code></td><td>OpenAI text-embedding-3-small vector store; SHA-256 drift detection; cosine NN search over ~10k entities. Use <code>FindSimilarAsync(text, k, types?)</code> &mdash; never substring matching</td></tr>
-    <tr><td><code>SemanticIndexService</code></td><td>Low-level embedding index management (upsert, prune, re-index)</td></tr>
-    <tr><td><code>GlobalSearchService</code> / <code>GlobalSearchWarmupService</code></td><td>Combined full-text + semantic search; background preheater</td></tr>
-    <tr><td><code>SemanticFidelityService</code></td><td>Goodhart-drift check &mdash; cosine similarity of beat prose vs. strand bible/synopsis</td></tr>
-    <tr><td><code>KnowledgeMapService</code></td><td>Clusters entities by embedding similarity into knowledge maps</td></tr>
-    <tr><td><code>ThematicIndexService</code></td><td>Tags/indexes beats and strands by theme for retrieval</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">3</span> Prose generation</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>ProseWriterRouter</code></td><td><strong>Sole prose entry point (SS-A16)</strong> &mdash; coordinates all services and logs per-strand coverage</td></tr>
-    <tr><td><code>DocContextService</code> / <code>DocContextStack</code></td><td>Doc Context Stack &mdash; rotating cast of pertinent canon .md files; gated by <code>SettingsService.DocContextEnabled</code> (default off)</td></tr>
-    <tr><td><code>BeatModeDetector</code></td><td>Classifies each beat as Combat / Narrative / EmotionalClimax / Dialogue / Transition / Revelation</td></tr>
-    <tr><td><code>CombatProseGuidance</code></td><td>Injects combat-prose laws: verbs-first, fragments, no emotion-naming, Dissociated Observer</td></tr>
-    <tr><td><code>BeatGeneratorService</code></td><td><strong>Core generation</strong> &mdash; panel of expert personas votes on the best next beat; LLM expands to prose. Tier-locked HIGH</td></tr>
-    <tr><td><code>BeatPromptBuilder</code></td><td>Constructs beat prompts with canon context, voice rules, world state</td></tr>
-    <tr><td><code>CombatSceneWriter</code></td><td>Canon-aware combat prose &mdash; tracks loadouts, ammo, bio-battery, terrain</td></tr>
-    <tr><td><code>DialogueService</code></td><td>Dialogue in per-character voice registers</td></tr>
-    <tr><td><code>StrandBibleService</code></td><td>Generates/manages per-strand bibles (authorial spine, beat plan, synopsis)</td></tr>
-    <tr><td><code>OutlineService</code> / <code>StoryMethodologyService</code></td><td>Generate outlines from a seed; embed five-act / scene-anatomy frameworks into prompts</td></tr>
-    <tr><td><code>StoryDirectorService</code></td><td>Top-level autonomous loop: plan &rarr; generate &rarr; assess &rarr; continue</td></tr>
-    <tr><td><code>NpcGenerator</code> / <code>DynamicPlaceGenerator</code> / <code>ContractGenerator</code></td><td>Procedural NPCs, places, and in-world contract documents grounded in canon</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">4</span> Review &amp; quality</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>StrandReviewService</code></td><td><strong>Primary review path</strong> &mdash; N distinct Legion personas each cast a scored reader ballot; synthesizes an aggregate; round-robins across trusted-4 providers (Claude, OpenAI, Gemini, DeepSeek)</td></tr>
-    <tr><td><code>ReviewEffortProfile</code></td><td>RFC 0009 cost tier (draft / standard / deep) &mdash; scales ballot count, prose upgrades, diagnosis, and per-call model selection</td></tr>
-    <tr><td><code>ReviewClusterer</code></td><td>Clusters ballots into Pareto / contested / seam groupings</td></tr>
-    <tr><td><code>StructuralDiagnosticService</code></td><td>12 parallel structural pre-flight checks before ballots burn</td></tr>
-    <tr><td><code>WritingQualityService</code></td><td><strong>Deterministic</strong> heuristic pass (no LLM): first-line strength, tension delta, motif reuse, voice cadence drift</td></tr>
-    <tr><td><code>EmotionalDepthService</code></td><td>8-dimension emotional examination at beat level (0&ndash;4 per dimension): stakes, interiority, vulnerability, subtext, conflict physicality, reader engagement, thematic resonance, emotional surprise (SS-A15)</td></tr>
-    <tr><td><code>FindingsService</code></td><td>Inbox for all autonomous findings &mdash; CRUD + status tracking</td></tr>
-    <tr><td><code>FindingApplyService</code></td><td>Applies a single approved finding (before/after) to a beat</td></tr>
-    <tr><td><code>BookAuditService</code></td><td>Gateway or Sequel commandment auditing (7 commandments each)</td></tr>
-    <tr><td><code>PlantPayoffService</code></td><td>Plant/payoff pair registry; seeds active plants into prose context; orphan-audit on strand completion</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">5</span> Storytelling science</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>NarrativeScienceService</code></td><td>Sacred-flaw / theory-of-control analysis, dramatic-question check, 6-point scene-engagement audit, five-act structure map, antihero-empathy check (Will Storr framework)</td></tr>
-    <tr><td><code>ArcTrackerService</code></td><td>Tracks per-strand five-act position and beat-level progression</td></tr>
-    <tr><td><code>PacingService</code></td><td>Flags beats that over-stay, under-stay, or repeat an emotional register without escalation</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">6</span> Continuity &amp; world-modelling</h3>
-<p>Mostly deterministic (DB-only, no LLM cost). Split into pre-generation injectors and post-generation validators.</p>
-<table>
-  <thead><tr><th>Service</th><th>Role</th><th>LLM?</th></tr></thead>
-  <tbody>
-    <tr><td><code>EntityRelationshipService</code></td><td>BFS Edge-graph relationship trees for scene context</td><td>No</td></tr>
-    <tr><td><code>ProsePatternGuard</code></td><td>Regex linter for banned patterns (pseudo-profound, cliche, on-the-nose, italicized dialogue)</td><td>No</td></tr>
-    <tr><td><code>AmbientDetailInjector</code></td><td>Builds sensory palette from carried/worn gear for pre-gen injection</td><td>No</td></tr>
-    <tr><td><code>WorldStateAtBeatService</code></td><td>Point-in-time world-state snapshot from the ledger</td><td>No</td></tr>
-    <tr><td><code>GearCarryEnforcer</code></td><td>Post-gen: detects gear-use verbs and checks the carry graph allows them</td><td>No</td></tr>
-    <tr><td><code>BehavioralInvariantEnforcer</code></td><td>Post-gen: checks prose against a character's registered behavioral rules</td><td>Yes (1/char)</td></tr>
-    <tr><td><code>WeaponAmmoCompatibilityService</code></td><td>Validates weapon+ammo pairs; canonical name+GUID constants</td><td>No</td></tr>
-    <tr><td><code>TimelineConsistencyService</code></td><td>Deterministic dead-character-acting + wound-regression checks</td><td>No</td></tr>
-    <tr><td><code>LocationContradictionService</code></td><td>Detects a character in two places at once across beats</td><td>No</td></tr>
-    <tr><td><code>CanonContradictionService</code></td><td>Chunked semantic + LLM sweep for canon rule violations</td><td>Yes</td></tr>
-    <tr><td><code>WorldConsistencyService</code></td><td>Prose scan for world-rule violations (city police, Behemoth-as-alive, &hellip;)</td><td>Yes</td></tr>
-    <tr><td><code>SceneContextAssembler</code></td><td>X-Ray scene assembly &mdash; entity mentions &rarr; dossiers &rarr; voice + behavioral + science context block</td><td>No</td></tr>
-    <tr><td><code>WorldGraphService</code></td><td>In-memory adjacency graph over all entities/edges; rebuilt from SQL</td><td>No</td></tr>
-    <tr><td><code>ContinuityExtractionService</code></td><td>LLM+Quorum extraction of <code>(entity, predicate, object)</code> claims from prose</td><td>Yes</td></tr>
-    <tr><td><code>ContinuityValidatorService</code></td><td>Validate claims vs. live entity state</td><td>Mixed</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">7</span> Voice &amp; persona</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>VoiceHarvestService</code></td><td>Mines author edits + directives from winning strands (&ge;80%) into proposed voice rules</td></tr>
-    <tr><td><code>ExpertPersonaService</code></td><td>Manages the reusable expert-persona pool; <code>SelectPertinentAsync</code> picks top-N for a scene</td></tr>
-    <tr><td><code>ExpertPersonaCatalog</code></td><td>Curated starter personas &mdash; genre experts, craft specialists, die-hard cyberpunk readers</td></tr>
-    <tr><td><code>NamePoolService</code></td><td>Culturally diverse name pools (Ubiquitous Diaspora rule)</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">8</span> Memory &amp; editorial lessons</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>ProseLessonStore</code></td><td>SQL-backed store of author rulings scoped global/strand/beat; injected into review prompts so reviewers stop penalizing beats already ruled to be doing their job</td></tr>
-    <tr><td><code>ActionConfigService</code></td><td>Per-action LLM tier registry; enforces <code>ChapterBeatWriter</code>/<code>Expander</code> locked at HIGH</td></tr>
-    <tr><td><code>SettingsKvStore</code> / <code>SettingsService</code></td><td>SQL-backed key-value config; app-wide settings facade (models, keys, tone targets, review knobs)</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">9</span> Export &amp; publish</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>ManuscriptExportService</code></td><td>All-in-one strand export &mdash; EPUB 3 + PDF (QuestPDF, 6"&times;9" KDP trim) + Markdown into one <code>{Title}/V{N}/</code> dir</td></tr>
-    <tr><td><code>DocxExportService</code></td><td>KDP-ready Word .docx (title page, chapter headers, justified serif) via OpenXml</td></tr>
-    <tr><td><code>BookExportService</code></td><td>Book-level EPUB 3 (Calibre-compatible) + PDF</td></tr>
-    <tr><td><code>StrandMarkdownExporter</code></td><td>Ordered beats &rarr; markdown with stable content fingerprint; mirrors <code>engine/data/exports/</code></td></tr>
-    <tr><td><code>ElevenLabsTtsService</code></td><td>ElevenLabs TTS (v2/v3 channels) for narration; tiered fallback</td></tr>
-    <tr><td><code>LocalTts</code> / <code>PiperTtsService</code> / <code>WindowsTtsService</code></td><td>Local TTS fallbacks (SAPI / Piper)</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">10</span> LLM providers &amp; routing</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>MultiLlmService</code></td><td>11-provider fan-out &mdash; Claude, ChatGPT, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere via <code>MindAttic.Legion</code></td></tr>
-    <tr><td><code>LlmRouter</code></td><td>Routes each request to the right provider/tier from <code>ActionConfig</code></td></tr>
-    <tr><td><code>AssignTiersService</code></td><td>Assigns Haiku/Sonnet/Opus class to actions per settings</td></tr>
-  </tbody>
-</table>
-
-<h3><span class="subsystem-label">11</span> Agentic authoring: Operator + MCP</h3>
-<table>
-  <thead><tr><th>Service</th><th>Role</th></tr></thead>
-  <tbody>
-    <tr><td><code>WriterOperatorService</code></td><td>Orchestrates the agentic tool-use loop (hardcoded Opus-class)</td></tr>
-    <tr><td><code>AnthropicToolClient</code></td><td>Anthropic-native tool-call client</td></tr>
-    <tr><td><code>ValidateCanonTool</code>, <code>DraftCombatSceneTool</code>, <code>QueryWorldGraphTool</code>, &hellip;</td><td>Individual operator tools &mdash; each maps to a Core service</td></tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h2 id="cost">Cost Tiering</h2>
-
-<p>RFC 0009. Spend scales to a task's importance. See <a href="docs/rfc/0009-cost-tiered-storytelling-engine.md">docs/rfc/0009-cost-tiered-storytelling-engine.md</a>.</p>
-
-<table>
-  <thead>
-    <tr><th>Tier (<code>--effort</code>)</th><th>LLM calls</th><th>Models</th><th>Used for</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="tier-draft"><code>draft</code></td>
-      <td>~6 (&minus;84%)</td>
-      <td>cheapest per provider (Haiku / Flash-Lite / Nano)</td>
-      <td>mid-draft spot checks; per-beat iteration &mdash; not a gate</td>
-    </tr>
-    <tr>
-      <td class="tier-std"><code>standard</code></td>
-      <td>~15 (&minus;60%)</td>
-      <td>mid-tier defaults</td>
-      <td>the per-strand standalone gate (&ge;82%)</td>
-    </tr>
-    <tr>
-      <td class="tier-deep"><code>deep</code></td>
-      <td>~37 (baseline)</td>
-      <td>mid-tier defaults + full diagnosis + prose critique</td>
-      <td>the cumulative / publish gate (&ge;85%), flagship</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h2 id="ui">The UI Surface</h2>
-
-<p>Live at <a href="https://prose.azurewebsites.net/">prose.azurewebsites.net</a> &middot; local dev at <code>https://localhost:7103/</code></p>
-
-<h3>Writing &amp; story management</h3>
-<table>
-  <thead><tr><th>Route</th><th>Page</th><th>What it does</th></tr></thead>
-  <tbody>
-    <tr><td><code>/writer</code></td><td>Writer</td><td>Strand picker &mdash; the launch pad for writing</td></tr>
-    <tr><td><code>/write/{BookId}/{ChapterId}</code></td><td>Write</td><td>Beat-level prose editor &mdash; write, expand, reflow, review beats in one screen</td></tr>
-    <tr><td><code>/strand/{IdOrSlug}</code></td><td>Strand</td><td>Single strand workbench &mdash; beats list, status, review scores, export controls</td></tr>
-    <tr><td><code>/strands</code></td><td>Strands</td><td>Full strand index grouped by kind</td></tr>
-    <tr><td><code>/books</code></td><td>Books</td><td>Bookshelf &mdash; list, create, manage all books</td></tr>
-    <tr><td><code>/books/{BookId}/outline</code></td><td>Book Outline Editor</td><td>LLM co-writer for building and editing a book's chapter outline</td></tr>
-    <tr><td><code>/series</code></td><td>Series Shelf</td><td>Series listing and management</td></tr>
-  </tbody>
-</table>
-
-<h3>Quality &amp; findings</h3>
-<table>
-  <thead><tr><th>Route</th><th>Page</th><th>What it does</th></tr></thead>
-  <tbody>
-    <tr><td><code>/findings</code></td><td>Findings</td><td>Triage inbox &mdash; every autonomous quality finding; approve, dismiss, or apply</td></tr>
-    <tr><td><code>/continuity</code></td><td>Continuity</td><td>Atomic entity claims; find and resolve prose contradictions</td></tr>
-    <tr><td><code>/voice</code></td><td>Voice Log</td><td>Voice-harvest proposals &mdash; approve or reject rule candidates</td></tr>
-    <tr><td><code>/world-health</code></td><td>World Health</td><td>Live consistency scanner for the world model</td></tr>
-  </tbody>
-</table>
-
-<h3>Canon encyclopedia</h3>
-<table>
-  <thead><tr><th>Route</th><th>Entity type</th></tr></thead>
-  <tbody>
-    <tr><td><code>/characters</code></td><td>Characters</td></tr>
-    <tr><td><code>/corps</code></td><td>CorpoNations</td></tr>
-    <tr><td><code>/factions</code></td><td>Factions</td></tr>
-    <tr><td><code>/weaponry</code></td><td>Weapons</td></tr>
-    <tr><td><code>/cyberware</code></td><td>Cyberware implants</td></tr>
-    <tr><td><code>/technology</code></td><td>Technologies</td></tr>
-    <tr><td><code>/pharmaceuticals</code></td><td>Pharmaceuticals</td></tr>
-    <tr><td><code>/automata</code></td><td>Automata and machines</td></tr>
-  </tbody>
-</table>
-
-<h3>World visualization</h3>
-<table>
-  <thead><tr><th>Route</th><th>Page</th><th>What it does</th></tr></thead>
-  <tbody>
-    <tr><td><code>/graph</code></td><td>World Graph (2D)</td><td>Interactive 2D entity relationship graph with filters</td></tr>
-    <tr><td><code>/graph-3d</code></td><td>World Graph (3D)</td><td>WebGL 3D relationship graph</td></tr>
-    <tr><td><code>/atlas</code></td><td>System Atlas</td><td>Visual architecture diagram of the writing engine</td></tr>
-    <tr><td><code>/map</code></td><td>Map View</td><td>Interactive GLMZ geographic district map</td></tr>
-    <tr><td><code>/timeline</code></td><td>Timeline</td><td>Story-time event timeline with contradiction scan</td></tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h2 id="mcp">The MCP Surface</h2>
-
-<p><code>Prose.Mcp</code> exposes <strong>195+ <code>[McpServerTool]</code> methods</strong> across 23 tool-class files. The complete per-tool reference is <a href="docs/MCP_TOOLS.md">docs/MCP_TOOLS.md</a>, generated by reflection and auto-regenerated by the pre-commit hook.</p>
-
-<pre><code>dotnet run --project v3/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md</code></pre>
-
-<table>
-  <thead><tr><th>File</th><th>Tool family</th></tr></thead>
-  <tbody>
-    <tr><td><code>Tools.cs</code></td><td>Primary canon lookup &mdash; characters, places, factions, CorpoNations, literary rules</td></tr>
-    <tr><td><code>Tools.Strands.cs</code></td><td>Strand + beat CRUD &mdash; insert / split / delete / join / rebeat / reflow / publish / narrate / spine</td></tr>
-    <tr><td><code>Tools.Encyclopedia.cs</code></td><td>Read-only encyclopedia &mdash; weapons, ammo, equipment, tech, cyberware, apparel, pharma, automata, archetypes, quotes, documents</td></tr>
-    <tr><td><code>Tools.EntityCrud.cs</code></td><td>Create/upsert all typed entity kinds</td></tr>
-    <tr><td><code>Tools.WorldModelling.cs</code></td><td>7 prose-continuity services + entity tree, world-state-at-beat, post-beat validation, timeline consistency, prose lessons</td></tr>
-    <tr><td><code>Tools.Quality.cs</code></td><td><code>validate_canon_text</code>, <code>review_strand</code>, <code>diagnose_strand</code>, <code>scan_strand_violations</code>, <code>check_prose</code>, <code>check_semantic_fidelity</code>, findings stats</td></tr>
-    <tr><td><code>Tools.NarrativeScience.cs</code></td><td><code>analyze_sacred_flaw</code>, <code>check_dramatic_question</code>, <code>map_five_act_structure</code>, <code>check_antihero_empathy</code></td></tr>
-    <tr><td><code>Tools.Voice.cs</code></td><td><code>harvest_voice(_all)</code>, voice-proposal list/apply/reject, <code>get_tone_bible</code></td></tr>
-    <tr><td><code>Tools.Findings.cs</code></td><td><code>list_findings</code>, <code>set_finding_status</code>, <code>apply_finding</code>, <code>findings_stats</code></td></tr>
-    <tr><td><code>Tools.Scene.cs</code></td><td><code>assemble_scene_context</code>, wound ledger, <code>get_character_loadout</code></td></tr>
-    <tr><td><code>Tools.Combat.cs</code></td><td><code>draft_combat_scene</code>, <code>get_director_context</code>, <code>get_world_state_at_beat</code></td></tr>
-    <tr><td><code>Tools.PlantPayoff.cs</code></td><td><code>register_plant_payoff</code>, <code>link_plant_beat</code>, <code>link_payoff_beat</code>, <code>audit_plant_payoffs</code></td></tr>
-    <tr><td><code>Tools.StoryAudit.cs</code></td><td><code>audit_story_commandments</code>, <code>get_strand_spine</code></td></tr>
-    <tr><td><code>Tools.WorkflowMonitor.cs</code></td><td><code>workflow_status</code>, <code>workflow_status_global</code>, <code>workflow_beat_modes</code></td></tr>
-    <tr><td><code>Tools.EntityContext.cs</code></td><td><code>get_entity_context</code>, <code>scan_entity_context</code>, <code>list_entity_stale_beats</code></td></tr>
-    <tr><td><code>Tools.LoreTriples.cs</code></td><td>Continuity-claim extraction; list/resolve/apply contradictions; <code>append_strand_amendment</code></td></tr>
-    <tr><td><code>Tools.Config.cs</code></td><td>Markdown-file sync/restore, <code>RecallMarkdownFiles</code>, <code>DocContextPrepare</code> / <code>DocContextStatus</code></td></tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h2 id="stack">Stack at a Glance</h2>
-
-<table>
-  <thead><tr><th>Layer</th><th>Technology</th></tr></thead>
-  <tbody>
-    <tr><td>Host</td><td>Blazor Server (.NET 10), cookie auth, role-gated builds</td></tr>
-    <tr><td>Canon</td><td>SQL Server with vector indexes, <code>FOR SYSTEM_TIME</code> audit, directional Edges graph</td></tr>
-    <tr><td>Writing surface</td><td><code>/strand/{id}</code> &mdash; writer + recorder + listener on one screen</td></tr>
-    <tr><td>Embeddings</td><td><code>EmbeddingService</code>, ~10k entities cached, drift-detected</td></tr>
-    <tr><td>Generation</td><td>Multi-provider Quorum via <code>MindAttic.Legion</code> &mdash; 11 LLM providers, scored evaluation</td></tr>
-    <tr><td>Review</td><td><code>StrandReviewService</code> + <code>StructuralDiagnosticService</code> + <code>WritingQualityService</code> + continuity suite, cost-tiered (RFC 0009)</td></tr>
-    <tr><td>Storytelling science</td><td><code>NarrativeScienceService</code> (Will Storr framework), injected into prose context</td></tr>
-    <tr><td>Export</td><td>Word / EPUB / PDF / Markdown / HTML via <code>DocxExportService</code> + <code>ManuscriptExportService</code></td></tr>
-    <tr><td>Audio</td><td>ElevenLabs TTS; local alternatives via Kokoro or Chatterbox (<code>tools/</code>)</td></tr>
-    <tr><td>Agents</td><td><code>Prose.Mcp</code> &mdash; MCP server exposing canon to Claude clients</td></tr>
-    <tr><td>Credentials</td><td>Cloud-native resolution via <code>MindAttic.Vault</code></td></tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h2 id="repo">Repository Layout</h2>
-
+<h2 id="repository-layout">Repository Layout</h2>
 <pre><code>Prose/
-├── v3/                          # Active engine
+├── v3/                          # Active engine — command-line only (Epoch 4)
 │   ├── Prose.slnx
-│   ├── Prose.Shared/    # POCOs, enums, DTOs
 │   ├── Prose.Core/      # Canon services, generation, embeddings, review, continuity
-│   │   ├── Services/            # ~214 services
-│   │   ├── Services/Operator/   # Agentic writer tool-use loop
-│   │   └── Data/                # EF entities, DbContext, Sql/ migration scripts
-│   ├── Prose.Blazor/    # Blazor Server host -- live site + ~118 CLI handlers
-│   ├── Prose.Mcp/       # Model Context Protocol server (~195+ tools)
-│   ├── Prose.UnitTests/ # NUnit + bUnit tests
-│   └── ApplyMigrations/         # One-shot EF Core migration runner
+│   │   ├── Services/            # 309 services directly here, 351 incl. subfolders
+│   │   ├── Services/Operator/   # KDP browser-automation tool-calling (NOT prose authoring)
+│   │   └── Data/                # EF entities, DbContext, Migrations/, Sql/ raw-T-SQL scripts
+│   ├── Prose.Cli/       # Standalone CLI — 263 dispatched handlers, incl. --migrate-sql
+│   ├── Prose.Mcp/       # MCP server — 273 tools across 43 families
+│   ├── Prose.KdpPublish/# WPF + WebView2 desktop app — KDP publish automation
+│   ├── Prose.LlmCli/    # prose-llm — generic multi-provider LLM CLI escape hatch
+│   ├── Prose.UnitTests/ # NUnit + bUnit tests (185 files)
+│   └── PromoteEsperanza/, PurgeOldNames/, RunRepair/, SyncSableProse/, WriteSableOrigin/
+│                          # one-off data-migration console utilities
 ├── tools/
-│   ├── codex.ps1                # Codex digest + doctor
+│   ├── codex.ps1                # Codex digest + doctor (run after editing docs/*)
+│   ├── build-readme.js          # Converts this README to a standalone .htm (npm run docs)
+│   ├── gen-schema.ps1           # Regenerates docs/schema.md from the live DB
 │   ├── check-contradictions.js  # Legion-Quorum chapter-vs-canon sweep
-│   ├── chatterbox/              # Free local TTS (MIT)
-│   └── kokoro/                  # Free local TTS (Apache-2.0)
-├── docs/                        # Codex docs -- BIBLE.md, AMENDMENTS.md, USER_STORIES.md, rfc/
+│   ├── chatterbox/              # Free local TTS via Resemble AI Chatterbox (MIT) — see note below
+│   └── kokoro/                  # Free local TTS via Kokoro-82M (Apache-2.0) — see note below
+├── docs/                        # Codex docs — BIBLE.md, USER_STORIES.md, rfc/, universes/
+├── html/                        # Standalone patent-disclosures.htm
 ├── engine_data/                 # Canon entity seed/export mirror (SQL is the live read path)
-└── cypress/                     # Cypress end-to-end tests</code></pre>
-
+└── cypress/                     # Cypress e2e tests — currently orphaned, see Tests
+</code></pre>
+<blockquote>
+<p><strong><code>tools/chatterbox</code> and <code>tools/kokoro</code>:</strong> both directories contain only a committed Python
+<code>.venv/</code> with no <code>requirements.txt</code> and no setup script — and that <code>.venv</code> is itself broken (its
+activation scripts hardcode a pre-rename path from before the StreetSamurai → Prose rename).
+Local TTS via these tools needs a from-scratch Python environment rebuilt by hand; ElevenLabs TTS
+(cloud) works out of the box. Flagged for cleanup, not yet fixed.</p>
+</blockquote>
 <hr>
-
-<h2 id="migrations">Database Migrations</h2>
-
-<p>Raw T-SQL files live under <code>v3/Prose.Core/Data/Sql/</code>. All scripts are idempotent.</p>
-
-<pre><code>dotnet run --project v3/ApplyMigrations</code></pre>
-
+<h2 id="database-migrations">Database Migrations</h2>
+<p>Raw T-SQL files live under <code>v3/Prose.Core/Data/Sql/</code>. Most are historical, pre-EF-migration schema
+deltas superseded by <code>v3/Prose.Core/Migrations/</code> — run individually via <code>prose --seed &lt;name&gt;</code>
+(see <code>SqlSeedService.Seeds</code> for registered names) only if a specific older environment needs them.
+A few small data-only scripts (e.g. universe seed inserts) are not yet registered anywhere and
+would need to be applied by hand with <code>sqlcmd</code> if a fresh DB is missing rows you expect.</p>
+<pre><code class="language-powershell">dotnet run --project v3/Prose.Cli -- --migrate-sql --schema
+</code></pre>
 <hr>
-
-<h2 id="deploy">Deploying to Azure</h2>
-
-<p>Live site: <strong>prose.azurewebsites.net</strong> on Azure App Service against Azure SQL (Serverless GP). CI/CD runs <code>build &rarr; migrate &rarr; deploy</code> on every push to master via GitHub Actions. Full provisioning guide: <a href="infra/README.md">infra/README.md</a>.</p>
-
+<h2 id="deployment">Deployment</h2>
+<p><strong>This section documents the current, as-found state — including a break introduced by Epoch 4
+that has not yet been reconciled.</strong></p>
+<p><code>.github/workflows/azure-deploy.yml</code> runs a four-stage pipeline on every push to <code>master</code>: build →
+test → migrate → deploy, targeting an Azure App Service named <code>mindattic-prose</code> (the <code>prose</code>
+hostname was already taken on <code>*.azurewebsites.net</code>) against Azure SQL Database with OIDC/managed-identity
+auth — no passwords anywhere. Full provisioning guide: <a href="infra/README.md"><code>infra/README.md</code></a>.</p>
+<p><strong>The build/publish/deploy steps still target <code>v3/Prose.Codex/Prose.Codex.csproj</code> — a project
+Epoch 4 deleted.</strong> The next push to <code>master</code> will fail at <code>dotnet restore v3/Prose.Codex/Prose.Codex.csproj</code>. The <code>migrate</code> job (schema bootstrap against Azure SQL via
+<code>Prose.Cli --migrate-sql --schema</code>) is unaffected and would still succeed on its own. This is a
+known, currently-live gap — not yet decided whether the pipeline should deploy the MCP server,
+deploy nothing web-facing and become build+test+migrate only, or be retired in favor of a
+different distribution model now that there&#39;s no browser surface to serve.</p>
 <hr>
-
 <h2 id="tests">Tests</h2>
-
-<pre><code>dotnet test v3/Prose.UnitTests   # NUnit + bUnit
-
-npx cypress run     # headless e2e
-npx cypress open    # interactive</code></pre>
-
+<pre><code class="language-powershell">dotnet test v3/Prose.UnitTests   # NUnit + bUnit, 185 test files
+</code></pre>
+<p>CI is DB-independent by design: <code>TestDbFactory</code> backs most tests with in-memory SQLite; the
+handful that legitimately need a live SQL connection (<code>InterfaceRegistrationTests</code>,
+<code>WorldValidationTests</code>) skip gracefully when one isn&#39;t reachable.</p>
+<pre><code class="language-powershell">npx cypress run     # headless e2e
+npx cypress open    # interactive
+</code></pre>
+<p><strong>The Cypress suite (<code>cypress/e2e/</code>: <code>navigation.cy.js</code>, <code>book-routes.cy.js</code>, <code>ai-panels.cy.js</code>,
+<code>strand-smoke.cy.js</code>, <code>strand-ux.cy.js</code>) exercises Blazor UI routes that no longer exist</strong> — it
+predates Epoch 4 and has not been updated or removed since the UI was deleted. Running it against
+the current codebase will fail or hang waiting for a server that is never started.</p>
 <hr>
-
+<h2 id="patent-disclosures">Patent Disclosures</h2>
+<p>Ten invention disclosures documenting novel systems in the Prose engine. All are pre-filing
+confidential documents; formal claim drafting to be conducted by qualified patent counsel.</p>
+<p>Full disclosures (standalone HTML, open in any browser): <strong><a href="html/patent-disclosures.htm"><code>html/patent-disclosures.htm</code></a></strong></p>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Title</th>
+<th>Core Novelty</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SS-DISC-001</td>
+<td><strong>Dynamic Context Memory</strong></td>
+<td>Ephemeral .md files materialized from DB, evicted after N beats without access; five-pass retrieval pipeline with tiered LRU stack</td>
+</tr>
+<tr>
+<td>SS-DISC-002</td>
+<td><strong>Structural Blueprint System</strong></td>
+<td>Nine structural dimensions committed before prose via mandatory outlier-seeking; internal-understanding resolution excluded as forbidden value</td>
+</tr>
+<tr>
+<td>SS-DISC-003</td>
+<td><strong>Multi-Provider Expert Persona Quorum Review</strong></td>
+<td>Round-robin LLM providers, two-tier ballots, Big Five psychometric shaping, audience segment clustering</td>
+</tr>
+<tr>
+<td>SS-DISC-004</td>
+<td><strong>Plant/Payoff Lifecycle Registry</strong></td>
+<td>Three-status lifecycle (planned/seeded/paid-off) with independent transparency certification and three-category orphan audit</td>
+</tr>
+<tr>
+<td>SS-DISC-005</td>
+<td><strong>Beat-Mode Classification with Prose Rhythm Assignment</strong></td>
+<td>Priority-ordered keyword quorum (6 modes) followed by fractional-position rhythm assignment (5 modes) with injected prohibition-bearing directives</td>
+</tr>
+<tr>
+<td>SS-DISC-006</td>
+<td><strong>Voice Rule Harvest from Editorial History</strong></td>
+<td>Three-source evidence mining (edit diffs + directives + prose) into staged change log with commit-before-mutate application; score-threshold auto-trigger</td>
+</tr>
+<tr>
+<td>SS-DISC-007</td>
+<td><strong>Eight-Dimension Emotional Rubric Scoring</strong></td>
+<td>Parallel LLM scoring on 0–4 universal scale; two blocking dimensions; register-adaptive criteria; per-beat curve</td>
+</tr>
+<tr>
+<td>SS-DISC-008</td>
+<td><strong>Multi-Provider Continuity Claim Extraction</strong></td>
+<td>Snippet-validated (entity, predicate, object) triples; voter quorum gating; three-outcome upsert (NEW / CONFIRMED / CONTRADICTED)</td>
+</tr>
+<tr>
+<td>SS-DISC-009</td>
+<td><strong>Gateway/Sequel Regime Detection</strong></td>
+<td>Auto-detection from predecessor book presence; parallel commandment evaluation enriched with live plant/payoff data; universe-conditional injection</td>
+</tr>
+<tr>
+<td>SS-DISC-010</td>
+<td><strong>Deterministic Deprecated-Noun Enforcement</strong></td>
+<td>Universe-scoped rename registry; whole-word boundary scan; chapter-child traversal; zero LLM inference</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="code-style-rules">Code Style Rules</h2>
+<p>From <code>CLAUDE.md</code> — enforced across the codebase:</p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Private field naming</strong></td>
+<td><code>camelCase</code> without underscore prefix. <code>count</code>, not <code>_count</code>.</td>
+</tr>
+<tr>
+<td><strong>Data files</strong></td>
+<td>JSON only. No Python scripts, no YAML, no new Markdown files (Codex <code>docs/*.md</code> and this README are the sole exceptions).</td>
+</tr>
+<tr>
+<td><strong>Host model</strong></td>
+<td>Command-line only as of Epoch 4 — <code>Prose.Cli</code> + <code>Prose.Mcp</code>. No web host, no MAUI host.</td>
+</tr>
+<tr>
+<td><strong>EF Core null-conditional</strong></td>
+<td><code>?.</code>/<code>?[]</code> are not allowed inside EF Core expression-tree lambdas (CS8072). Project the scalar before the terminal operator: <code>g.OrderByDescending(h =&gt; h.CreatedAt).Select(h =&gt; h.Score).FirstOrDefault()</code>, not <code>...FirstOrDefault()?.Score ?? 0</code>.</td>
+</tr>
+<tr>
+<td><strong>QUANTA symbol</strong></td>
+<td><code>Φ</code> is the QUANTA currency symbol — never &quot;phi&quot;, never the Greek letter. Precedes the number: <code>Φ100</code>.</td>
+</tr>
+<tr>
+<td><strong>Iowan Behemoths</strong></td>
+<td>Autonomous machines, not synthetic life. Not alive.</td>
+</tr>
+<tr>
+<td><strong>Character heritage</strong></td>
+<td>Default to mixed heritage from unexpected global combinations (Ubiquitous Diaspora).</td>
+</tr>
+<tr>
+<td><strong>Versioning</strong></td>
+<td>Whole-number only: <code>1.0.0</code>, <code>2.0.0</code>, <code>3.0.0</code>. No semver-style minor/patch bumps.</td>
+</tr>
+<tr>
+<td><strong>Prose entry point</strong></td>
+<td>All beat writing goes through <code>ProseWriterRouter.WriteAsync</code>. Never call <code>BeatGeneratorService</code> directly from new code.</td>
+</tr>
+<tr>
+<td><strong>Canon storage</strong></td>
+<td>Canon facts go into SQL Server. Never write new entity data into <code>engine_data/*.json</code> files or Markdown.</td>
+</tr>
+<tr>
+<td><strong>CorpoNation spelling</strong></td>
+<td>Conjoined capitals in prose and UI copy (e.g. <code>MitsuDyne</code>, <code>AgroCore</code>). Code identifiers unchanged.</td>
+</tr>
+<tr>
+<td><strong>E.L.F. spelling</strong></td>
+<td>Always <code>E.L.F.</code> with periods. Glossed once per book via <code>GlossaryTerms</code>, never in-voice (<a href="docs/BIBLE.md#SS-%C2%A75">SS-LAW-20</a>).</td>
+</tr>
+<tr>
+<td><strong>Score gates</strong></td>
+<td>Retired (SS-A44). Publish-readiness = Logic Sweep clean at BLOCKER + zero open High/BLOCKER Reader-Proxy QA findings — not a number.</td>
+</tr>
+</tbody></table>
+<hr>
 <h2 id="status">Status</h2>
+<p>In active development. <strong>Command-line only</strong> since 2026-08-13 (Epoch 4) — no live website.</p>
+<ul>
+<li><strong>7 registered universes:</strong> GLMZ, SCRY, NONFICTION, HORROR, EROTICA, GOSPEL, FICTION.</li>
+<li><strong>DB:</strong> 261 base tables + 168 system-versioned history tables (<code>docs/schema.md</code>, 2026-08-14).</li>
+<li><strong>MCP:</strong> 273 tools across 43 families (<code>docs/MCP_TOOLS.md</code>, 2026-08-14).</li>
+<li><strong>CLI:</strong> 263 dispatched <code>--flag</code> handlers across 226 handler files.</li>
+<li><strong>Core services:</strong> 309 directly under <code>Services/</code>, 351 including subfolders.</li>
+<li><strong>Tests:</strong> 185 unit test files (NUnit + bUnit); Cypress suite currently orphaned (see <a href="#tests">Tests</a>).</li>
+<li><strong>Commit history:</strong> 1,000+ commits since 2026-03-25 (StreetSamurai) → 2026-08-14 (Prose, command-line only).</li>
+<li><strong>Status index</strong> (<code>docs/USER_STORIES.md</code>, via <code>codex.ps1 digest</code>): done 172 · partial 8 · planned 27 · cut 4.</li>
+</ul>
+<p><strong>Known open gaps, discovered while writing this document — not yet fixed:</strong></p>
+<ol>
+<li>The Azure deploy pipeline (<code>.github/workflows/azure-deploy.yml</code>) still targets the deleted
+<code>Prose.Codex</code> project (see <a href="#deployment">Deployment</a>) — the next push to <code>master</code> will fail CI.</li>
+<li>The Cypress e2e suite exercises deleted Blazor UI routes (see <a href="#tests">Tests</a>).</li>
+<li><code>docs/BIBLE.md §3</code> and <code>CLAUDE.md</code>&#39;s Code Style section still assert &quot;Web-only project (Blazor
+Server). No MAUI host.&quot; — true through Epoch 3, false since Epoch 4&#39;s command-line-only pivot.</li>
+<li><code>v3/README.md</code> and <code>v3/Prose.Mcp/README.md</code> still describe the deleted <code>Prose.Shared</code>,
+<code>Prose.Writer</code>, <code>Prose.Codex</code> projects and a stale, pre-273-tool MCP tool-group table.</li>
+</ol>
+<hr>
+<h2 id="about-this-document">About This Document</h2>
+<p>This README is the one Markdown file the repo&#39;s &quot;no Markdown except README&quot; rule allows outside
+<code>docs/</code> — and it is not just a file on disk. <code>MarkdownFileService.DiscoverFiles()</code> special-cases
+the project root the same way it special-cases <code>CLAUDE.md</code>, so <code>README.md</code> is synced into the
+<strong><code>MarkdownFiles</code></strong> database table (system-versioned — every past version is recoverable by
+timestamp) whenever markdown sync runs:</p>
+<pre><code class="language-powershell">prose --sync-markdown
+</code></pre>
+<p>MCP equivalents: <code>sync_markdown_files</code> to push the current file into the DB, <code>recall_markdown_files</code>
+to read it back without touching disk, <code>restore_markdown_file</code> to roll back to an earlier synced
+version if this file is ever lost or corrupted on disk. This is the same mechanism already used for
+<code>docs/CRAFT.md</code>, <code>docs/USER_STORIES.md</code>, and every other hand-authored Codex doc — README.md gets
+no special-case code path beyond the one that already existed for it.</p>
+<p><strong>A standalone, self-contained HTML build</strong> is generated from this file by <code>tools/build-readme.js</code>
+(dependency: <code>marked</code>, <code>npm install</code> once):</p>
+<pre><code class="language-powershell">npm run docs                          # writes README.htm — same directory as this file
+# or directly:
+node --use-system-ca tools/build-readme.js
+</code></pre>
+<p>The output is a single <code>.htm</code> file with all CSS/JS inlined (dark theme, sidebar table of contents
+built from this file&#39;s <code>##</code>/<code>###</code> headings, scroll-spy, copy-to-clipboard on code blocks) —
+opens directly in any browser, no server required, and is both human-readable and easy for an LLM
+to parse back into structured sections via its heading IDs.</p>
+<p><strong>To regenerate this document after the codebase changes:</strong></p>
+<ol>
+<li>Re-run the counting commands used to build it (MCP: <code>dotnet run --project v3/Prose.Mcp -- export-tools docs/MCP_TOOLS.md</code>; schema: <code>powershell -File tools/gen-schema.ps1</code>; CLI/service
+counts: grep <code>Program.cs</code> and <code>Services/</code> as shown in each section above).</li>
+<li>Update the affected sections and the <a href="#status">Status</a> counts.</li>
+<li><code>npm run docs</code> to rebuild <code>README.htm</code>.</li>
+<li><code>prose --sync-markdown</code> to push the new content into the <code>MarkdownFiles</code> DB table.</li>
+</ol>
 
-<p>In active development. Live site running, working bookshelf.</p>
-
-<p><strong>Strands complete (&ge;82% standalone):</strong> BCODA (88.8% cumulative, 16 chapters), ATTE (89.2%), VATD (88.1%), DWIACE (90.95%), SPRW (87.0%), SRZR (86.6%), TEST (86.7%), MxG (86.4%), UNDR (83.2%). MNEMO in progress (84.0%).</p>
-
-<p><strong>DB:</strong> 12,629 entities &middot; 2,443+ beats &middot; 36 strands across 2 universes (GLMZ + Fantasy/Steampunk).</p>
-
-<p><strong>MCP:</strong> 195+ tools across 23 tool-class files.</p>
-
-</main>
+  </main>
 </div>
+<script>
+(function(){
+  'use strict';
+  var inner   = document.getElementById('toc-inner');
+  var content = document.getElementById('content');
+  if(!inner||!content) return;
+
+  // ── Build TOC from h2 / h3 ─────────────────
+  var headings = Array.from(content.querySelectorAll('h2,h3'));
+  if(headings.length){
+    var title = document.createElement('span');
+    title.className = 'toc-title';
+    title.textContent = 'Contents';
+    inner.appendChild(title);
+
+    headings.forEach(function(h){
+      var a = document.createElement('a');
+      a.href      = '#'+h.id;
+      a.textContent = h.textContent.replace(/[#¶]/g,'').trim();
+      a.className = 'toc-a'+(h.tagName==='H3'?' is-h3':'');
+      if(h.tagName==='H2' && inner.children.length>1){
+        // light separator before each h2 group
+        var sep=document.createElement('hr');
+        sep.className='toc-sep';
+        inner.appendChild(sep);
+      }
+      inner.appendChild(a);
+    });
+  }
+
+  // ── Scroll spy via IntersectionObserver ────
+  var tocLinks = inner.querySelectorAll('.toc-a');
+  if(tocLinks.length && 'IntersectionObserver' in window){
+    var idMap={};
+    tocLinks.forEach(function(l){idMap[decodeURIComponent(l.getAttribute('href').slice(1))]=l;});
+    var active=null;
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          if(active)active.classList.remove('active');
+          active=idMap[e.target.id]||null;
+          if(active){
+            active.classList.add('active');
+            // scroll toc item into view if out of sidebar bounds
+            var sidebar=document.getElementById('sidebar');
+            if(sidebar){
+              var ar=active.getBoundingClientRect();
+              var sr=sidebar.getBoundingClientRect();
+              if(ar.top<sr.top||ar.bottom>sr.bottom)
+                active.scrollIntoView({block:'nearest'});
+            }
+          }
+        }
+      });
+    },{rootMargin:'-8% 0px -78% 0px',threshold:0});
+    headings.forEach(function(h){obs.observe(h);});
+  }
+
+  // ── Copy-to-clipboard buttons on code blocks
+  content.querySelectorAll('pre').forEach(function(pre){
+    var btn=document.createElement('button');
+    btn.className='cpbtn';
+    btn.textContent='copy';
+    btn.setAttribute('aria-label','Copy code');
+    btn.addEventListener('click',function(){
+      var text=(pre.querySelector('code')||pre).textContent;
+      if(!navigator.clipboard){return;}
+      navigator.clipboard.writeText(text).then(function(){
+        btn.textContent='copied!';btn.classList.add('ok');
+        setTimeout(function(){btn.textContent='copy';btn.classList.remove('ok');},1800);
+      }).catch(function(){});
+    });
+    pre.appendChild(btn);
+  });
+}());
+</script>
 </body>
 </html>
