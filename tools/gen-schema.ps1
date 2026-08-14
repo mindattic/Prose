@@ -75,7 +75,7 @@ $tables = $cols.Rows | Group-Object TABLE_NAME | Sort-Object Name
 $sb = New-Object System.Text.StringBuilder
 function W($s) { [void]$sb.AppendLine($s) }
 
-$today = '2026-06-28'
+$today = Get-Date -Format 'yyyy-MM-dd'
 $baseCount = $tables.Count
 $histCount = (Query "SELECT COUNT(*) AS C FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME LIKE '%[_]History'").Rows[0].C
 
