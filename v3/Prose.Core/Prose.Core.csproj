@@ -19,7 +19,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.10" />
     <!-- Direct override: Microsoft.Data.Sqlite 10.0.9 floors SQLitePCLRaw.bundle_e_sqlite3 at
          2.1.11, which is vulnerable to CVE-2025-6965 (CVSS 9.8, a SQLite aggregate-term memory
          corruption bug fixed upstream in SQLite 3.50.2). Pinning a direct reference to a patched
