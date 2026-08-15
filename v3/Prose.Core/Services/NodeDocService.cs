@@ -119,8 +119,17 @@ public class NodeDocService
 
         var docText = doc.ToString().TrimEnd() + "\n";
 
-        // Save to DB
-        node.NodeBible = docText;
+        // Save to DB — NodeBible stays PURE hand-authored content, never the merged blob.
+        // Previously this wrote the full docText (frontmatter + hand-authored + blueprint +
+        // beat spine) back into Nodes.NodeBible, so the column named "the bible" stopped
+        // meaning only the bible after the first regenerate — any code or person reading
+        // NodeBible directly got a blend under a name that promised one of its three
+        // ingredients. The merged view belongs only on the disk mirror (docs/nodes/{CODE}.md)
+        // and MarkdownFiles, which is what DocContextService actually injects at generation
+        // time anyway. ExtractHandAuthored still strips a legacy marker/blueprint/spine tail
+        // from any NodeBible value saved before this fix, so every book self-heals back to a
+        // pure bible the next time its doc is regenerated.
+        node.NodeBible = handAuthored.TrimEnd() + "\n";
         node.NodeBibleGeneratedAt = now;
         node.UpdatedAt = now;
         await db.SaveChangesAsync(ct);

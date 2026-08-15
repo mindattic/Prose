@@ -104,8 +104,14 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
         }
 
         // Health check: structural blueprint
+        // Blueprints are always keyed by the book's own NodeId (StructuralBlueprintService.
+        // GenerateAndSaveAsync/RetrofitAsync/SetManualAsync/GetAsync all take the book-level
+        // node, one row per book) — never by a leaf chapter/collection id. scopeIds above is
+        // leaf descendants ONLY, so for any book with real chapter structure (the book itself
+        // isn't a leaf) that Contains() check could never match, reporting a false "not found"
+        // even when a blueprint exists. Check the book's own id directly instead.
         var hasBlueprint = await db.NodeStructuralBlueprints.AsNoTracking()
-            .AnyAsync(b => scopeIds.Contains(b.NodeId), ct);
+            .AnyAsync(b => b.NodeId == nodeId, ct);
         if (!hasBlueprint)
             gaps.Add($"StructuralBlueprint: not found — run 'prose --generate-blueprint --slug {node?.Slug ?? "?"}'");
 

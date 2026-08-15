@@ -6,7 +6,7 @@ layer: craft
 status: live
 tier: topic
 triggers: character, cast, protagonist, antagonist, relationship, interpersonal, dialogue, motive, arc, growth, behavior, pov, depth
-updated: 2026-08-12
+updated: 2026-08-14
 ---
 
 <!-- GENERATED — do not hand-edit. Regenerate with: prose --generate-canon-md --type CharacterDoctrine -->
@@ -383,6 +383,17 @@ Prose that violates a rule is either an **error to fix** or an **authored arc to
 (§10) — never an accident left on the page. `check_behavior` is the gate.
 
 ---
+**A bible is only as coherent as the story it describes (author ruling, 2026-08-14).** Internal
+consistency of facts is not enough â€” a bible "makes sense" exactly when every character's actions
+in the story it governs are logical *to that character*, given their established psychometry,
+motivations, stressors, and circumstances **at that moment**. When auditing or editing a book
+against its bible (or when the bible and the live prose disagree), do not stop at "does this
+match the bible's stated facts" â€” trace whether the character's choice actually follows from who
+they are and what they are under, right there. A character acting for plot convenience instead of
+their own Drive/Obstacle/behavioral rules is a causality defect (see docs/LOGIC.md's Causality
+Chain dimension), not a lore error, and it is fixed the same way: trace the action back to the
+character's real state, then rewrite the choice (or the bible) to match â€” never paper over it by
+asserting the bible is right just because it's the bible.
 
 ## §10 — Growth Is a Vector, Not Noise {#SS-CHAR-§10}
 

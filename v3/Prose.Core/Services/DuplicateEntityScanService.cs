@@ -1,3 +1,4 @@
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 
@@ -165,6 +166,168 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
 
     internal static string Normalize(string name) =>
         string.Join(' ', name.Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries)).ToLowerInvariant();
+
+    // ── merge (AutoCorrect auto-fix surface, 2026-08-14) ──────────────────────
+
+    public sealed record EntityMergeResult(Guid WinnerId, Guid LoserId, int RowsRelinked, int RowsDeletedForCollision, List<RowMutationUndo> UndoLog);
+
+    /// <summary>
+    /// Merges <paramref name="loserId"/> into <paramref name="winnerId"/>: every discoverable
+    /// foreign-key reference to the loser is repointed at the winner, then the loser Entity row is
+    /// soft-disabled (<c>IsActive=false</c>, <c>ArchivedAt=now</c>) — never physically deleted, so
+    /// undo is always possible and the loser row itself stays inspectable.
+    ///
+    /// "Discoverable" = every column across the live schema matching this service's own
+    /// duplicate-candidate naming pattern (<c>%EntityId%</c>), confirmed against the live DB
+    /// 2026-08-14: ~25 tables, excluding SQL Server's automatic <c>_History</c> shadow tables for
+    /// still-system-versioned tables (can't be written directly) and the <c>Entities</c> table
+    /// itself. Schema-metadata-driven, not a hand-maintained list — a future same-pattern column is
+    /// covered automatically. This IS a naming-convention match, not a semantic guarantee: a column
+    /// referencing <c>Entities.Id</c> under a differently-named column (e.g. bare "CharacterId")
+    /// would be missed. None are known to exist as of this writing. Tables whose primary key isn't
+    /// a single column are skipped (logged as a warning by the caller inspecting the result), not
+    /// guessed at.
+    ///
+    /// A few of these tables enforce a 1:1 relationship with an Entity (e.g. <c>EntityEmbeddings</c>
+    /// — one cached vector per entity); relinking would collide with the winner's own existing row.
+    /// Detected via a unique-constraint violation on the relink UPDATE and handled by deleting the
+    /// loser's row in that table instead (its full content is still captured in the undo log).
+    /// </summary>
+    public async Task<EntityMergeResult> MergeAsync(Guid winnerId, Guid loserId, CancellationToken ct = default)
+    {
+        if (winnerId == loserId) throw new ArgumentException("Cannot merge an entity into itself.");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var loserRow = await db.Entities.AsNoTracking().FirstOrDefaultAsync(e => e.Id == loserId, ct)
+            ?? throw new InvalidOperationException($"Loser entity {loserId} not found.");
+        if (!await db.Entities.AsNoTracking().AnyAsync(e => e.Id == winnerId, ct))
+            throw new InvalidOperationException($"Winner entity {winnerId} not found.");
+
+        var fkColumns = await DiscoverEntityForeignKeysAsync(db, ct);
+        var undoLog = new List<RowMutationUndo>();
+        int relinked = 0, deletedForCollision = 0;
+
+        await using var tx = await db.Database.BeginTransactionAsync(ct);
+
+        foreach (var (table, column, pkColumn) in fkColumns)
+        {
+            List<string> touchedPks;
+            try
+            {
+                touchedPks = await RelinkAndCaptureAsync(db, table, column, pkColumn, winnerId, loserId, ct);
+            }
+            catch (SqlException ex) when (IsUniqueConstraintViolation(ex))
+            {
+                var deleted = await DeleteAndCaptureAsync(db, table, column, pkColumn, loserId, ct);
+                undoLog.AddRange(deleted);
+                deletedForCollision += deleted.Count;
+                continue;
+            }
+
+            foreach (var pk in touchedPks)
+                undoLog.Add(new RowMutationUndo("update", table, pkColumn, pk,
+                    new Dictionary<string, string?> { [column] = loserId.ToString() }));
+            relinked += touchedPks.Count;
+        }
+
+        // Soft-disable the loser last, capturing its prior state so undo restores it exactly.
+        undoLog.Add(new RowMutationUndo("update", "Entities", "Id", loserId.ToString(),
+            new Dictionary<string, string?>
+            {
+                ["IsActive"] = loserRow.IsActive ? "1" : "0",
+                ["ArchivedAt"] = loserRow.ArchivedAt?.ToString("o"),
+            }));
+        await db.Database.ExecuteSqlInterpolatedAsync(
+            $"UPDATE [dbo].[Entities] SET [IsActive] = 0, [ArchivedAt] = SYSUTCDATETIME() WHERE [Id] = {loserId}", ct);
+
+        await tx.CommitAsync(ct);
+        return new EntityMergeResult(winnerId, loserId, relinked, deletedForCollision, undoLog);
+    }
+
+    private static bool IsUniqueConstraintViolation(SqlException ex) =>
+        ex.Errors.Cast<SqlError>().Any(e => e.Number is 2601 or 2627);
+
+    /// <summary>Two-step schema discovery (deliberately not one clever query): first every
+    /// candidate (table, column) pair matching the naming pattern, then — per distinct table
+    /// found — its primary key columns, keeping only tables with exactly ONE pk column. A
+    /// composite-key table is skipped rather than guessed at.</summary>
+    private static async Task<List<(string Table, string Column, string PkColumn)>> DiscoverEntityForeignKeysAsync(
+        ProseDbContext db, CancellationToken ct)
+    {
+        var candidates = await db.Database.SqlQueryRaw<FkColumnRow>("""
+            SELECT t.name AS TableName, c.name AS ColumnName
+            FROM sys.columns c
+            JOIN sys.tables t ON c.object_id = t.object_id
+            WHERE c.name LIKE '%EntityId%'
+              AND t.name NOT LIKE '%\_History' ESCAPE '\'
+              AND t.name <> 'Entities'
+            """).ToListAsync(ct);
+
+        if (candidates.Count == 0) return [];
+
+        var pkRows = await db.Database.SqlQueryRaw<PkColumnRow>("""
+            SELECT t.name AS TableName, ic.name AS PkColumn
+            FROM sys.indexes i
+            JOIN sys.tables t ON t.object_id = i.object_id
+            JOIN sys.index_columns icx ON icx.object_id = i.object_id AND icx.index_id = i.index_id
+            JOIN sys.columns ic ON ic.object_id = icx.object_id AND ic.column_id = icx.column_id
+            WHERE i.is_primary_key = 1
+            """).ToListAsync(ct);
+
+        var pkByTable = pkRows.GroupBy(r => r.TableName)
+            .Where(g => g.Count() == 1)
+            .ToDictionary(g => g.Key, g => g.First().PkColumn);
+
+        return candidates
+            .Where(c => pkByTable.ContainsKey(c.TableName))
+            .Select(c => (c.TableName, c.ColumnName, pkByTable[c.TableName]))
+            .ToList();
+    }
+
+    private sealed class FkColumnRow { public string TableName { get; set; } = ""; public string ColumnName { get; set; } = ""; }
+    private sealed class PkColumnRow { public string TableName { get; set; } = ""; public string PkColumn { get; set; } = ""; }
+
+    private static async Task<List<string>> RelinkAndCaptureAsync(
+        ProseDbContext db, string table, string column, string pkColumn, Guid winnerId, Guid loserId, CancellationToken ct)
+    {
+        var sql = $"""
+            UPDATE [dbo].[{table}]
+            SET [{column}] = @winner
+            OUTPUT CONVERT(nvarchar(64), inserted.[{pkColumn}])
+            WHERE [{column}] = @loser
+            """;
+        var pars = new object[] { new SqlParameter("@winner", winnerId), new SqlParameter("@loser", loserId) };
+        return await db.Database.SqlQueryRaw<string>(sql, pars).ToListAsync(ct);
+    }
+
+    /// <summary>Captures every column of each matching row as JSON (for undo re-insert), then
+    /// deletes them. Used only for the rare 1:1-collision case (see MergeAsync doc comment).</summary>
+    private static async Task<List<RowMutationUndo>> DeleteAndCaptureAsync(
+        ProseDbContext db, string table, string column, string pkColumn, Guid loserId, CancellationToken ct)
+    {
+        var rowsJson = await db.Database.SqlQueryRaw<string>($"""
+            SELECT (SELECT * FROM [dbo].[{table}] r2 WHERE r2.[{pkColumn}] = r1.[{pkColumn}] FOR JSON AUTO, WITHOUT_ARRAY_WRAPPER)
+            FROM [dbo].[{table}] r1
+            WHERE r1.[{column}] = @loser
+            """, [new SqlParameter("@loser", loserId)]).ToListAsync(ct);
+
+        var result = new List<RowMutationUndo>();
+        foreach (var json in rowsJson)
+        {
+            var dict = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, object?>>(json)
+                ?? throw new InvalidOperationException($"Could not parse captured row JSON for {table}.");
+            var pkValue = dict[pkColumn]?.ToString()
+                ?? throw new InvalidOperationException($"Row missing PK {pkColumn} in {table}.");
+            var columns = dict.ToDictionary(kv => kv.Key, kv => kv.Value?.ToString());
+            result.Add(new RowMutationUndo("delete", table, pkColumn, pkValue, columns));
+        }
+
+        await db.Database.ExecuteSqlRawAsync(
+            $"DELETE FROM [dbo].[{table}] WHERE [{column}] = @loser", [new SqlParameter("@loser", loserId)], ct);
+
+        return result;
+    }
 
     private static string Snippet(string description) =>
         description.Length <= 120 ? description : description[..120].TrimEnd() + "…";

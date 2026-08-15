@@ -17,6 +17,37 @@ See global rules in ~/.claude/CLAUDE.md. The rate-limit-monitor skill enforces:
 - Write a handoff summary to memory so the next session can resume seamlessly
 - Tell the user to take a break and come back after cooldown
 
+## Structural Hierarchy (HARD RULE, no exceptions)
+
+**Book → Chapter → Beat. That is the entire hierarchy.** Every beat belongs to exactly one
+chapter (via `BeatNodes`); every chapter belongs directly to exactly one book (`Nodes.ParentNodeId`
+points at a `Kind='book'` node). **No chapter may ever have another chapter as a child.** A
+"chapter containing chapters" is always a bug, not an intentional container/wrapper/anthology
+structure — there is no such thing as a section, part, or act node in this schema. If content
+needs sub-grouping (an anthology arc, a multi-job sequence, a "Ghost Period"-style era), split it
+into more top-level chapters under the same book, in sequence, never nest one chapter under
+another.
+
+**Verification query (run this after any structural edit, and periodically as a corpus health
+check):**
+```sql
+SELECT p.Title AS ParentChapter, bk.Title AS BookTitle, COUNT(c.Id) AS NumChildChapters
+FROM Nodes c JOIN Nodes p ON c.ParentNodeId = p.Id
+LEFT JOIN Nodes bk ON p.ParentNodeId = bk.Id
+WHERE p.Kind = 'chapter' AND c.Kind = 'chapter'
+GROUP BY p.Title, p.Id, bk.Title
+```
+Any row returned is a violation and must be fixed by reparenting the child chapters directly to
+the book (giving them proper sequential SortKeys/titles in the live reading order), never by
+leaving them nested. **Discovered corpus-wide 2026-08-14** — BCODA had 15 chapters improperly
+nested under "Chapter 22 — Ghost Period" (155 orphaned beats, ~30% of the book, never read or
+audited in any prior sweep); Ballast, It Came From Iowa, and Read the Room each had an entire
+book's real chapter list nested under a redundant "Chapter 1" wrapper sharing the book's own
+title (an import artifact). All four were reparented as part of this fix. Always run a full
+recursive descendant walk (`WITH descendants AS (...)`) rather than a single-level
+`ParentNodeId = <book>` query when counting/reading a book's chapters — a flat query silently
+misses anything nested deeper, exactly as it did here.
+
 ## Database Access
 
 For **read-only lookups** (node lists, scores, entity counts, etc.), query the local DB directly — returns in under a second:

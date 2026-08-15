@@ -32,7 +32,23 @@ public static class CostGateCli
         var estimate  = await estimator.EstimateAsync(commandName);
 
         if (args.Contains("--no-confirm") || estimate.Estimated < threshold)
+        {
+            LlmActionContext.Current = commandName;
             return (true, estimate);
+        }
+
+        if (Console.IsInputRedirected)
+        {
+            // Console.ReadKey throws InvalidOperationException on redirected stdin (any
+            // non-interactive invocation: CI, an agent harness, a pipe). Fail closed instead of
+            // crashing — refuse to proceed rather than silently running an unconfirmed
+            // above-threshold command.
+            Console.Error.WriteLine();
+            Console.Error.WriteLine($"  Command  : {commandName}");
+            Console.Error.WriteLine($"  Est cost : ${estimate.Estimated:F3}  ({estimate.Confidence})");
+            Console.Error.WriteLine("  Input is redirected (non-interactive) — refusing to proceed without --no-confirm.");
+            return (false, estimate);
+        }
 
         Console.WriteLine();
         Console.WriteLine($"  Command  : {commandName}");
@@ -41,7 +57,9 @@ public static class CostGateCli
         var key = Console.ReadKey(intercept: false);
         Console.WriteLine();
 
-        return (key.KeyChar is 'y' or 'Y', estimate);
+        var proceed = key.KeyChar is 'y' or 'Y';
+        if (proceed) LlmActionContext.Current = commandName;
+        return (proceed, estimate);
     }
 
     public static double SnapshotCost(IServiceProvider sp)
@@ -78,6 +96,10 @@ public static class CostGateCli
         {
             // [SS-CostGate-001] RecordActualAsync failed — check CommandCostEstimatorService and DB connectivity.
             Console.Error.WriteLine($"[CostGate] Warning: failed to record actual cost — {ex.Message}");
+        }
+        finally
+        {
+            LlmActionContext.Current = null;
         }
     }
 }

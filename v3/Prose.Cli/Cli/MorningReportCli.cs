@@ -36,6 +36,28 @@ public static class MorningReportCli
 
         var sections = new List<string>();
 
+        // ── 0. AutoCorrect nightly run ───────────────────────────────────────
+        Console.WriteLine("§0  AutoCorrect Nightly Run");
+        Console.WriteLine(new string('─', 60));
+        var ledger = sp.GetRequiredService<Prose.Core.Services.SelfHealLedgerService>();
+        var recentRuns = (await ledger.ListRunsAsync(limit: 20))
+            .Where(r => r.FirstAppliedAt >= since).ToList();
+        if (recentRuns.Count == 0)
+        {
+            Console.WriteLine("    (no AutoCorrect run in this window — `prose --auto-correct-nightly` may not have run yet)");
+        }
+        else
+        {
+            foreach (var r in recentRuns)
+            {
+                Console.WriteLine($"    Run {r.RunId}  {r.FirstAppliedAt:u}  {r.TotalActions} fix(es) applied ({r.UndoneActions} undone)  [{string.Join(", ", r.ActionTypes)}]");
+                if (r.TotalActions > r.UndoneActions)
+                    Console.WriteLine($"      To undo: prose --auto-correct-undo --run-id {r.RunId}");
+            }
+        }
+        sections.Add(BuildAutoCorrectHtml(recentRuns));
+        Console.WriteLine();
+
         // ── 1. Cross-book contradictions ───────────────────────────────────
         Console.WriteLine("§1  Cross-Book Contradictions");
         Console.WriteLine(new string('─', 60));
@@ -213,9 +235,20 @@ public static class MorningReportCli
         return $"<table><thead><tr><th>Near-Duplicate Pairs</th></tr></thead><tbody>{string.Join("", rows)}</tbody></table>";
     }
 
+    private static string BuildAutoCorrectHtml(IReadOnlyList<Prose.Core.Services.SelfHealRunSummary> runs)
+    {
+        if (runs.Count == 0) return "<p>(no AutoCorrect run in this window)</p>";
+        var rows = runs.Select(r =>
+            $"<tr><td>{r.RunId}</td><td>{r.FirstAppliedAt:u}</td><td>{r.TotalActions}</td><td>{r.UndoneActions}</td>" +
+            $"<td>{Esc(string.Join(", ", r.ActionTypes))}</td></tr>");
+        return "<table><thead><tr><th>Run</th><th>Started</th><th>Fixes</th><th>Undone</th><th>Types</th></tr></thead>" +
+               $"<tbody>{string.Join("", rows)}</tbody></table>";
+    }
+
     private static string BuildFullHtml(List<string> sections, double hours, DateTime since)
     {
         var titles = new[] {
+            "§0 AutoCorrect Nightly Run",
             "§1 Cross-Book Contradictions", "§2 New Findings",
             "§3 Prose Metrics Outliers", "§4 Near-Duplicate Alerts",
             "§5 Score Correlation Model", "§6 Book Score Leaderboard"

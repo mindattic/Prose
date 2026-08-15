@@ -6,6 +6,7 @@
   <Project Path="../../MindAttic.Authentication/src/MindAttic.Authentication/MindAttic.Authentication.csproj" />
   <Project Path="Prose.Cli/Prose.Cli.csproj" />
   <Project Path="Prose.Core/Prose.Core.csproj" />
+  <Project Path="Prose.LlmCli/Prose.LlmCli.csproj" />
   <Project Path="Prose.Mcp/Prose.Mcp.csproj" />
   <Project Path="Prose.UnitTests/Prose.UnitTests.csproj" />
 </Solution>

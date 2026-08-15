@@ -1,13 +1,19 @@
 {
   "title": "GLMZ \u2014 Master Glossary",
-  "generatedAt": "2026-08-12T14:51:50.8559764Z",
-  "termCount": 67,
+  "generatedAt": "2026-08-14T08:27:28.1185257Z",
+  "termCount": 81,
   "terms": [
     {
       "term": "AAMA",
       "fullForm": "Anomalous Activity Monitoring Authority",
       "definition": "The civil authority that classifies schisms -- dimensional anomalies pressing into 3D space -- Class-1 through Class-5 by intensity. A Class-3-or-higher site requires an AAMA permit to enter.",
       "category": "Bureaucracy"
+    },
+    {
+      "term": "Air Tax",
+      "fullForm": null,
+      "definition": "The toll line marking where a district\u0027s altitude -- and the tax levied for the privilege of occupying it -- steps up. Used colloquially as a spatial marker (\u0022below the Air Tax line\u0022) for where the paid-for tiers of a structure end and the unmetered lower floors begin.",
+      "category": "Economy"
     },
     {
       "term": "AR",
@@ -70,6 +76,12 @@
       "category": "Weapon"
     },
     {
+      "term": "CDW",
+      "fullForm": null,
+      "definition": "A submachine gun manufacturer/model line common among crews operating in GLMZ\u0027s lower zones.",
+      "category": "Weapons"
+    },
+    {
       "term": "Channeler",
       "fullForm": null,
       "definition": "A gray-zone operator class: session-injection into networked frames and direct AI negotiation. One of three recognized operator classes in GLMZ, alongside Ghost and Splicer.",
@@ -124,16 +136,34 @@
       "category": "AI \u0026 Substrate"
     },
     {
+      "term": "Eigenlift",
+      "fullForm": null,
+      "definition": "The only aerostatic lift technology in GLMZ \u2014 towers and platforms that hold structures aloft over the city\u0027s lower zones. Not anti-gravity; a mechanically-grounded lift system.",
+      "category": "Tech"
+    },
+    {
       "term": "Eigenstate",
       "fullForm": null,
       "definition": "Borrowed from the physics term for the fixed, definite state a quantum system settles into once observed. In GLMZ tech-speak, the compressed, stable form a mind takes during an eigenstate conscience transfer (ECT) -- see Ghost.",
       "category": null
     },
     {
+      "term": "Fenris Ballistics",
+      "fullForm": null,
+      "definition": "A firearms manufacturer whose \u0022Howl\u0022 line (including the FB-7 Wolfpack shotgun) shares its wolf branding with the band Fenris \u2014 a coincidence the band has spent four years explaining away.",
+      "category": "Weapons"
+    },
+    {
       "term": "ferrocrete",
       "fullForm": null,
       "definition": "A 22nd-century composite that bonds materials previously incapable of structural union, enabling the load tolerances behind GLMZ\u0027s mile-high towers.",
       "category": "Tech"
+    },
+    {
+      "term": "Ferrogate",
+      "fullForm": null,
+      "definition": "A corporate entity/brand visible on jackets and civic infrastructure in the GLMZ towers; encountered as a logo on a corpo tourist\u0027s jacket.",
+      "category": "CorpoNation"
     },
     {
       "term": "genetic strays",
@@ -146,6 +176,12 @@
       "fullForm": null,
       "definition": "The infrastructure authority\u0027s official measurement term for a Schism, still used on permits.",
       "category": "Anomaly"
+    },
+    {
+      "term": "GG-9",
+      "fullForm": null,
+      "definition": "A weapon model designation referenced in Steppin\u0027 Razor\u0027s Halcyon combat encounters.",
+      "category": "Weapons"
     },
     {
       "term": "Ghost",
@@ -184,6 +220,12 @@
       "category": "World Physics"
     },
     {
+      "term": "IdentiScan",
+      "fullForm": null,
+      "definition": "A cyberware/AR identity-resolution overlay that cross-references a face against public records and known-associate data (going deeper and slower than a simple Carrion lien check) and renders the result as text in the user\u0027s field of vision.",
+      "category": "Tech"
+    },
+    {
       "term": "Iowan Behemoths",
       "fullForm": null,
       "definition": "Large autonomous machines classified as non-sentient Automaton-class entities -- never alive, never synthetic life, never anthropomorphized despite sometimes uncanny behavior.",
@@ -194,6 +236,12 @@
       "fullForm": "Incident Review Board",
       "definition": "The body with jurisdiction over corporate/operational incident accountability hearings -- reviews petitions and motions following events like unauthorized breaches or civilian casualties (e.g., the Cortland incident in Testament).",
       "category": "Enforcement"
+    },
+    {
+      "term": "Loop, The",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
     },
     {
       "term": "Lotus Syndicate",
@@ -214,10 +262,22 @@
       "category": null
     },
     {
+      "term": "MO-556",
+      "fullForm": null,
+      "definition": "A weapon model designation referenced in Steppin\u0027 Razor\u0027s Halcyon combat encounters.",
+      "category": "Weapons"
+    },
+    {
       "term": "NCID",
       "fullForm": "Neuretic Crime Investigation Division",
       "definition": "Halcyon Civil Security\u0027s investigative field arm -- street name RaNCID. The neuretics-crime enforcement monopoly: illegal ghosting (ECT), unauthorized neural surveillance, black ice deployment, neuretics assault. Halcyon\u0027s administrative control of augmentation certification gives NCID forensic access no other body can match.",
       "category": "Enforcement"
+    },
+    {
+      "term": "Network, The",
+      "fullForm": null,
+      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "category": "Tech"
     },
     {
       "term": "neuretics",
@@ -280,10 +340,22 @@
       "category": "Ability"
     },
     {
+      "term": "Pulse, The",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
       "term": "RaNCID",
       "fullForm": null,
       "definition": "Street nickname for Halcyon Civil Security\u0027s Neuretic Crime Investigation Division (NCID).",
       "category": "Enforcement"
+    },
+    {
+      "term": "Ringo",
+      "fullForm": null,
+      "definition": "A brand of coin-operated public information kiosk common on Gray Zone streets -- market feeds, news tickers, and civic notices, charged per query.",
+      "category": "Tech"
     },
     {
       "term": "Schism",
@@ -302,6 +374,12 @@
       "fullForm": null,
       "definition": "Kyle Mercer\u0027s matte-black, mono-edged katana with a carbon-nanotube blade -- no powers, no glow, no charge state, just an exceptionally kept sword.",
       "category": "Weapon"
+    },
+    {
+      "term": "Spine, The",
+      "fullForm": null,
+      "definition": "The western lakeshore corridor territory of GLMZ.",
+      "category": "Geography"
     },
     {
       "term": "Splicer",
@@ -346,34 +424,16 @@
       "category": "Anomaly"
     },
     {
-      "term": "the Loop",
+      "term": "TESSERA",
       "fullForm": null,
-      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
-      "category": "Geography"
+      "definition": "The Consensus civic net: logs registered faces and verifies real addresses. A TESSERA Docent unit is an unattended kiosk that displays live registration status.",
+      "category": "System"
     },
     {
-      "term": "the Network",
+      "term": "Thread, The",
       "fullForm": null,
-      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
-      "category": "Tech"
-    },
-    {
-      "term": "the Pulse",
-      "fullForm": null,
-      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "definition": "A long-haul aerial transit line visible climbing out of the haze on the horizon, running lights on, indifferent to the ground below it.",
       "category": "Transportation"
-    },
-    {
-      "term": "the Spine",
-      "fullForm": null,
-      "definition": "The western lakeshore corridor territory of GLMZ.",
-      "category": "Geography"
-    },
-    {
-      "term": "the Veil",
-      "fullForm": null,
-      "definition": "The boundary between archology-tier corporate city and the gray zone beneath it. Above it: brand holograms, AR traffic control, the full Hyper Reality commercial layer. Below it: none of that infrastructure exists, and augmented characters notice the absence before anything else.",
-      "category": null
     },
     {
       "term": "Threshold Event",
@@ -388,10 +448,34 @@
       "category": "Anomaly"
     },
     {
+      "term": "UBC",
+      "fullForm": "Universal Basic Credit",
+      "definition": "The base subsistence allotment issued to every citizen regardless of employment -- distinct from quanta (\u03A6) earned or spent on top of it. For most Gray Zone residents, UBC is the entire floor of their income.",
+      "category": "Economy"
+    },
+    {
       "term": "Ubiquitous Diaspora",
       "fullForm": null,
       "definition": "The generations-long global mixing of ancestry that makes unexpected heritage combinations the GLMZ default.",
       "category": "Culture"
+    },
+    {
+      "term": "Veil, The",
+      "fullForm": null,
+      "definition": "The boundary between archology-tier corporate city and the gray zone beneath it. Above it: brand holograms, AR traffic control, the full Hyper Reality commercial layer. Below it: none of that infrastructure exists, and augmented characters notice the absence before anything else.",
+      "category": null
+    },
+    {
+      "term": "Veltrin",
+      "fullForm": null,
+      "definition": "A common sidearm manufacturer whose pistols see wide street-level use across GLMZ\u0027s Zone 4 and similar gray-zone territory.",
+      "category": "Weapons"
+    },
+    {
+      "term": "Volume, The",
+      "fullForm": null,
+      "definition": "The rendered AR/Hyper Reality overlay laid across a cityscape -- altitude-tiered, so it renders richer and more saturated the higher up (and wealthier) the district, and thins to a flat, degraded feed at Gray Zone level.",
+      "category": "Tech"
     },
     {
       "term": "Waxwing Neuromedia",

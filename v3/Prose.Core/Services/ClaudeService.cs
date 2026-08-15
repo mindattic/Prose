@@ -26,7 +26,29 @@ public class ClaudeService : ILlmService
     public Task<bool> IsConfiguredAsync()
         => Task.FromResult(legion.IsProviderConfigured(settings.ActiveLlmProvider));
 
+    /// <summary>Forced-provider-id variant, used by <see cref="LlmRouter"/>'s per-variant adapters.</summary>
+    public Task<bool> IsConfiguredAsync(string providerId)
+        => Task.FromResult(legion.IsProviderConfigured(providerId));
+
+    public Task<string> GenerateAsync(
+        string system,
+        string user,
+        double temperature = 0.8,
+        int maxTokens = 4096,
+        string? model = null,
+        CancellationToken ct = default)
+        => GenerateAsync(
+            settings.ActiveLlmProvider is "claude-api" or "claude-team" ? settings.ActiveLlmProvider : "claude-team",
+            system, user, temperature, maxTokens, model, ct);
+
+    /// <summary>
+    /// Same as <see cref="GenerateAsync(string,string,double,int,string?,CancellationToken)"/>
+    /// but with the Claude variant (claude-api vs claude-team) forced by the caller instead of
+    /// read from <see cref="SettingsService.ActiveLlmProvider"/> — used by <see cref="LlmRouter"/>
+    /// so the two variants can be tried as independent fallback-chain tiers.
+    /// </summary>
     public async Task<string> GenerateAsync(
+        string providerId,
         string system,
         string user,
         double temperature = 0.8,
@@ -35,9 +57,6 @@ public class ClaudeService : ILlmService
         CancellationToken ct = default)
     {
         var activeModel = model ?? settings.Model;
-        var providerId = settings.ActiveLlmProvider is "claude-api" or "claude-team"
-            ? settings.ActiveLlmProvider
-            : "claude-team";
 
         if (providerId == "claude-api" && string.IsNullOrWhiteSpace(settings.ApiKey))
         {
@@ -75,7 +94,21 @@ public class ClaudeService : ILlmService
         }
     }
 
+    public Task<string> GenerateWithCachedPrefixAsync(
+        string cachedPrefix,
+        string dynamicSystem,
+        string user,
+        double temperature = 0.8,
+        int maxTokens = 4096,
+        string? model = null,
+        CancellationToken ct = default)
+        => GenerateWithCachedPrefixAsync(
+            settings.ActiveLlmProvider is "claude-api" or "claude-team" ? settings.ActiveLlmProvider : "claude-team",
+            cachedPrefix, dynamicSystem, user, temperature, maxTokens, model, ct);
+
+    /// <summary>Forced-provider-id variant — see the non-cached overload's remarks.</summary>
     public async Task<string> GenerateWithCachedPrefixAsync(
+        string providerId,
         string cachedPrefix,
         string dynamicSystem,
         string user,
@@ -85,9 +118,6 @@ public class ClaudeService : ILlmService
         CancellationToken ct = default)
     {
         var activeModel = model ?? settings.Model;
-        var providerId = settings.ActiveLlmProvider is "claude-api" or "claude-team"
-            ? settings.ActiveLlmProvider
-            : "claude-team";
 
         if (providerId == "claude-api" && string.IsNullOrWhiteSpace(settings.ApiKey))
             throw new InvalidOperationException("API key not configured.");

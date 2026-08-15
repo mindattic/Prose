@@ -25,6 +25,27 @@ public class BeatRepairService(
 {
     private const int MaxSceneSoFarChars = 6000;
 
+    /// <summary>Below this size, a beat is a normal single-scene beat — a repair replacing it
+    /// with a differently-sized rewrite is ordinary prose variance, not data loss.</summary>
+    private const int MinGuardedBeatLength = 2000;
+
+    /// <summary>A repair on a beat at/above <see cref="MinGuardedBeatLength"/> must keep at
+    /// least this fraction of the original length.</summary>
+    private const double MinSafeRepairRatio = 0.5;
+
+    /// <summary>
+    /// 2026-08-13 VIGL incident: <see cref="ProseWriterRouter"/> generates one normal-sized
+    /// scene regardless of how large the beat being "repaired" actually is. On a book whose
+    /// beats had been consolidated to chapter-scale (tens of thousands of chars), self-heal
+    /// silently replaced three chapters with ~4,000-char fresh scenes — 26% of the novel lost
+    /// in one automated pass, recovered only because a backup epub happened to exist. Refuse
+    /// any repair that would shrink a substantial beat by more than half; the caller treats a
+    /// null return as "repair failed," which correctly leaves the beat untouched and lets the
+    /// underlying finding surface for a human instead of being silently destroyed.
+    /// </summary>
+    internal static bool IsUnsafeShrink(int currentLength, int repairedLength) =>
+        currentLength >= MinGuardedBeatLength && repairedLength < currentLength * MinSafeRepairRatio;
+
     public async Task<string?> RepairAsync(
         Guid beatId, Guid nodeId,
         IReadOnlyList<LensIssue> blockers,
@@ -128,7 +149,18 @@ public class BeatRepairService(
             // Route through ProseWriterRouter so the repaired beat gets the full 27-service
             // enrichment (entity context, continuity, world state, blueprints, etc.).
             var repaired = await router.WriteAsync(ctx, beatId, beatIndex, totalBeats, ct: ct);
-            return string.IsNullOrWhiteSpace(repaired) ? null : repaired.Trim();
+            if (string.IsNullOrWhiteSpace(repaired)) return null;
+            repaired = repaired.Trim();
+
+            if (currentText != null && IsUnsafeShrink(currentText.Length, repaired.Length))
+            {
+                log.LogWarning(
+                    "[BeatRepairService] Refusing repair for beat {BeatId}: would shrink {Before}→{After} chars ({Ratio:P0} of original) — treating as failed repair, beat left unchanged.",
+                    beatId, currentText.Length, repaired.Length, (double)repaired.Length / currentText.Length);
+                return null;
+            }
+
+            return repaired;
         }
         catch (Exception ex)
         {

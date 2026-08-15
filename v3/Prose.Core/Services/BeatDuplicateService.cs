@@ -144,7 +144,7 @@ public class BeatDuplicateService(
                 SELECT bn.BeatId, bn.NodeId,
                        ROW_NUMBER() OVER (PARTITION BY bn.NodeId ORDER BY bn.SortKey) AS Pos
                 FROM BeatNodes bn
-                WHERE bn.NodeId IN ({idList}) AND true = 1
+                WHERE bn.NodeId IN ({idList})
             )
             SELECT
                 s1.BeatId AS BeatIdA, s2.BeatId AS BeatIdB,

@@ -1,8 +1,14 @@
 {
   "title": "Magenta \u0026 Gunmetal \u2014 Glossary",
-  "generatedAt": "2026-08-12T14:53:05.4509835Z",
-  "termCount": 16,
+  "generatedAt": "2026-08-14T08:28:07.2170551Z",
+  "termCount": 36,
   "terms": [
+    {
+      "term": "AR",
+      "fullForm": "Augmented Reality",
+      "definition": "Displayed content layered over physical sight -- distinct from full Hyper Reality, which has no physical counterpart at all. AR overlays annotate or decorate what\u0027s actually there; Hyper Reality substitutes for it entirely.",
+      "category": null
+    },
     {
       "term": "Archology",
       "fullForm": null,
@@ -10,10 +16,34 @@
       "category": null
     },
     {
+      "term": "ArcSec",
+      "fullForm": "Arcturus Military Command (Arcturus Defense Solutions)",
+      "definition": "The physical-security monopoly chartered under the Meridian Compact: sovereign perimeter defense, PMC contracting, corporate military, autonomous weapons. Does not compete with Halcyon/NCID\u0027s neuretics-crime jurisdiction.",
+      "category": "Enforcement"
+    },
+    {
       "term": "Arcturus",
       "fullForm": "Arcturus Defense Solutions",
       "definition": "The CorpoNation holding GLMZ\u0027s physical-security monopoly, operating under the name ArcSec: sovereign perimeter defense, PMC contracting, corporate military, autonomous weapons.",
       "category": null
+    },
+    {
+      "term": "Automaton",
+      "fullForm": null,
+      "definition": "A non-sentient machine -- built, not born, and not alive, however convincingly it behaves. The category GLMZ law and custom draw a hard line against confusing with an E.L.F., which is alive.",
+      "category": null
+    },
+    {
+      "term": "Black Ice",
+      "fullForm": null,
+      "definition": "A category of neuretics-crime NCID investigates: defensive countermeasures embedded in a data system, deployed against an intruding Channeler, Ghost, or Splicer. Exact mechanics aren\u0027t spelled out on the page beyond the term itself -- but deploying it is a crime, not a legitimate defense.",
+      "category": null
+    },
+    {
+      "term": "Channeler",
+      "fullForm": null,
+      "definition": "A gray-zone operator class: session-injection into networked frames and direct AI negotiation. One of three recognized operator classes in GLMZ, alongside Ghost and Splicer.",
+      "category": "Operator Classes"
     },
     {
       "term": "CorpoNation",
@@ -28,6 +58,18 @@
       "category": "Anomaly"
     },
     {
+      "term": "E.L.F.",
+      "fullForm": "Emergent Life Form",
+      "definition": "A category of AI life that evolved spontaneously from the Substrate\u0027s molecular complexity -- genuinely alive, animal-intelligence, not built. Distinct from an Automaton, which is a non-sentient machine and not alive.",
+      "category": "AI \u0026 Substrate"
+    },
+    {
+      "term": "Eigenstate",
+      "fullForm": null,
+      "definition": "Borrowed from the physics term for the fixed, definite state a quantum system settles into once observed. In GLMZ tech-speak, the compressed, stable form a mind takes during an eigenstate conscience transfer (ECT) -- see Ghost.",
+      "category": null
+    },
+    {
       "term": "Ghost",
       "fullForm": "eigenstate conscience transfer (ECT)",
       "definition": "An operator class: inhabiting any machine with coherent circuitry via eigenstate conscience transfer. The body left behind during a ghost is called a Husk. Casual verb use: \u0022ghosting\u0022 (lowercase) -- e.g. \u0022she ghosted the stoplight green.\u0022",
@@ -40,10 +82,52 @@
       "category": "Geography"
     },
     {
+      "term": "Gray Zone",
+      "fullForm": null,
+      "definition": "Corridor territory outside CorpoNation law and enforcement reach -- where civic code exists on paper and goes universally unenforced. The commercial Hyper Reality layer thins or vanishes entirely below \u0022the Veil,\u0022 the boundary between archology-tier city and the gray zone underneath it.",
+      "category": "Geography"
+    },
+    {
+      "term": "Halcyon",
+      "fullForm": "Halcyon Civil Security",
+      "definition": "The CorpoNation holding GLMZ\u0027s neuretics-crime enforcement monopoly. Administers augmentation certification and maintenance across the corridor -- which is what gives its investigative arm, NCID, forensic access no other body can match.",
+      "category": null
+    },
+    {
       "term": "Husk",
       "fullForm": null,
       "definition": "The body at rest while its owner is ghosting -- occupying another machine via eigenstate conscience transfer.",
       "category": "Operator Classes"
+    },
+    {
+      "term": "Hyper Reality",
+      "fullForm": null,
+      "definition": "Anything seen, heard, or felt through neuretic augmentation with no physical counterpart. Not a metaphor -- a literal layer archology infrastructure is built to project into (AR-optimized surfaces, holographic signage, ambient brand effects). Unaugmented characters live permanently in the blank physical substrate underneath it.",
+      "category": "World Physics"
+    },
+    {
+      "term": "Loop, The",
+      "fullForm": null,
+      "definition": "GLMZ\u0027s wealthiest, highest-status territory -- prestige tier 5 in the city\u0027s informal territory hierarchy.",
+      "category": "Geography"
+    },
+    {
+      "term": "Meridian Compact",
+      "fullForm": null,
+      "definition": "The charter under which GLMZ\u0027s two enforcement monopolies -- ArcSec (physical) and Halcyon/NCID (neuretics-crime) -- split jurisdiction and agree not to compete on each other\u0027s terrain.",
+      "category": null
+    },
+    {
+      "term": "NCID",
+      "fullForm": "Neuretic Crime Investigation Division",
+      "definition": "Halcyon Civil Security\u0027s investigative field arm -- street name RaNCID. The neuretics-crime enforcement monopoly: illegal ghosting (ECT), unauthorized neural surveillance, black ice deployment, neuretics assault. Halcyon\u0027s administrative control of augmentation certification gives NCID forensic access no other body can match.",
+      "category": "Enforcement"
+    },
+    {
+      "term": "Network, The",
+      "fullForm": null,
+      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "category": "Tech"
     },
     {
       "term": "neuretics",
@@ -58,6 +142,30 @@
       "category": null
     },
     {
+      "term": "PMC",
+      "fullForm": "Private Military Contractor",
+      "definition": "A for-hire military/security company. ArcSec\u0027s contracting model draws on PMC-style hired forces alongside its own standing corporate military.",
+      "category": null
+    },
+    {
+      "term": "Pulse, The",
+      "fullForm": null,
+      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "category": "Transportation"
+    },
+    {
+      "term": "RaNCID",
+      "fullForm": null,
+      "definition": "Street nickname for Halcyon Civil Security\u0027s Neuretic Crime Investigation Division (NCID).",
+      "category": "Enforcement"
+    },
+    {
+      "term": "Schism",
+      "fullForm": null,
+      "definition": "Official term for the geometry-breaking anomalies scattered across GLMZ -- a hum at 19Hz from no direction, a block that takes eleven steps when geometry says nine. Classified Class-1 through Class-5 by intensity by the Anomalous Activity Monitoring Authority; what they actually are remains an open question, even to the people whose job is to classify them.",
+      "category": "World Physics"
+    },
+    {
       "term": "Seam",
       "fullForm": null,
       "definition": "The narrow, contested corridor where two CorpoNations\u0027 jurisdictions meet and neither fully governs -- named for the literal seam between two claimed territories. Worked, patrolled, and claimed by whoever keeps showing up.",
@@ -70,28 +178,40 @@
       "category": "Weapon"
     },
     {
+      "term": "Spine, The",
+      "fullForm": null,
+      "definition": "The western lakeshore corridor territory of GLMZ.",
+      "category": "Geography"
+    },
+    {
+      "term": "Splicer",
+      "fullForm": null,
+      "definition": "An operator class built on hardware/software attack surface: credential work and physical build, rather than direct AI negotiation (Channeler) or inhabiting machines (Ghost).",
+      "category": "Operator Classes"
+    },
+    {
       "term": "Substrate",
       "fullForm": null,
       "definition": "The physical/computational medium neuretics and much of GLMZ\u0027s infrastructure run on -- dense enough that AI life (see E.L.F.) has been known to emerge spontaneously from its molecular complexity.",
       "category": null
     },
     {
-      "term": "the Network",
+      "term": "Supermind",
       "fullForm": null,
-      "definition": "The ambient, proprioceptive information field neuretic-augmented people sense the way they sense balance -- the substrate Superminds run civic systems through.",
+      "definition": "One of roughly two dozen city-scale AIs running GLMZ\u0027s civic systems, discussed the way weather is discussed -- by name, possessively, never explained.",
       "category": "Tech"
     },
     {
-      "term": "the Pulse",
+      "term": "Thread, The",
       "fullForm": null,
-      "definition": "Global magnetic vacuum-tube transit network running at Mach 6; passenger pods are called \u0022slugs.\u0022 Chicago is the world hub.",
+      "definition": "A long-haul aerial transit line visible climbing out of the haze on the horizon, running lights on, indifferent to the ground below it.",
       "category": "Transportation"
     },
     {
-      "term": "the Spine",
+      "term": "Veil, The",
       "fullForm": null,
-      "definition": "The western lakeshore corridor territory of GLMZ.",
-      "category": "Geography"
+      "definition": "The boundary between archology-tier corporate city and the gray zone beneath it. Above it: brand holograms, AR traffic control, the full Hyper Reality commercial layer. Below it: none of that infrastructure exists, and augmented characters notice the absence before anything else.",
+      "category": null
     },
     {
       "term": "Waxwing Neuromedia",

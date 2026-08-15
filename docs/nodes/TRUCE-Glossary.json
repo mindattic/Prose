@@ -1,8 +1,44 @@
 {
   "title": "Three Day Truce \u2014 Glossary",
-  "generatedAt": "2026-08-12T14:53:09.4846665Z",
-  "termCount": 18,
+  "generatedAt": "2026-08-14T08:28:10.2570706Z",
+  "termCount": 47,
   "terms": [
+    {
+      "term": "Age of Scrying",
+      "fullForm": null,
+      "definition": "The calendar era from Year 1 (the discovery of Scrying) to Year 1312, ending with the Bolide; its first three centuries are separately remembered as the Age of Innocence, before Piercing existed.",
+      "category": "Calendar"
+    },
+    {
+      "term": "Amnios",
+      "fullForm": null,
+      "definition": "The womb of an impossibly large biological creature -- the Expectant -- inside which every Sphere (including Entos and Sphere 31/Earth) floats as a single cell in a dense cluster, separated from its neighbors by thin films of Amnios fluid.",
+      "category": "Cosmology"
+    },
+    {
+      "term": "Anima Core",
+      "fullForm": null,
+      "definition": "The component that makes a Shell or machine inhabitable by a Relayed mind -- without one, a Shell is just metal. Installed in Myrmidon Shells, Templar Station terminals, airship turrets and navigation systems, and certain war-beast constructs.",
+      "category": null
+    },
+    {
+      "term": "AoV",
+      "fullForm": "Age of Vigil",
+      "definition": "Entos\u0027s calendar epoch counted from the Bolide/Fall of Sinter (1312 absolute = 0 AoV). The current story year, 1371, is 59 AoV. Pre-Bolide dates belong to the preceding Age of Scrying.",
+      "category": "Calendar"
+    },
+    {
+      "term": "Bolide, The",
+      "fullForm": null,
+      "definition": "The impact that struck Sinter in 1312 absolute (0 AoV) -- the event Entos\u0027s calendar counts forward from. Source of the Cavity, the Ichor, and the quarantine line the Vigil holds at the Pass.",
+      "category": null
+    },
+    {
+      "term": "Canon",
+      "fullForm": "senior Liturgy rank",
+      "definition": "A senior Liturgy office above Lector: interprets doctrine, oversees Lector assignments, and adjudicates the most complex worthiness cases escalated from the field.",
+      "category": "Title"
+    },
     {
       "term": "Catalyst",
       "fullForm": "Gifted matter class; Xerum 525 primary",
@@ -10,10 +46,46 @@
       "category": "Tech \u0026 Substances"
     },
     {
+      "term": "Cavity, The",
+      "fullForm": "the Sinter Cavity",
+      "definition": "The crater-like descent site within the Sinter quarantine region, where cluster-stage organisms complete and Sinterkin detach. \u0022Sinter\u0022 names the wider quarantined region; \u0022the Cavity\u0022 is the pit itself.",
+      "category": null
+    },
+    {
       "term": "Champion",
       "fullForm": null,
       "definition": "A soldier Transmuted so far past ordinary House rank structure that they are identified by name rather than designation. No House owns or commands a Champion -- only courts them.",
       "category": "Title"
+    },
+    {
+      "term": "cluster-stage organism",
+      "fullForm": "unformed Sinterkin",
+      "definition": "The pre-birth stage of a Sinterkin: an unfinished body pressed against the wet interior wall of the Sinter Cavity, joints and features still incomplete, that eventually detaches and falls to the cavity floor before it first moves.",
+      "category": "Ecology"
+    },
+    {
+      "term": "Compact, The",
+      "fullForm": null,
+      "definition": "The series of operational agreements -- beginning as an eleven-line truce between three exhausted Basin institutions -- that ended the Blood Century and formalized the transition from warring tribes into the Houses.",
+      "category": "History"
+    },
+    {
+      "term": "Eirene\u0027s Gate",
+      "fullForm": null,
+      "definition": "The primary Vigil checkpoint on the Entos-side bank of the Pass, named for Eirene, the last Champion of the vanished House Sinter, who died at that location in Year 1314.",
+      "category": "Geography"
+    },
+    {
+      "term": "Entos",
+      "fullForm": null,
+      "definition": "The Sphere -- one cell among many adrift in the Amnios -- where every story in this setting takes place. Feudal, Liturgy-administered, and still counting its years from the Bolide.",
+      "category": null
+    },
+    {
+      "term": "Expectant, The",
+      "fullForm": null,
+      "definition": "The vast organism whose body the Amnios and every Sphere inside it belong to -- worshipped by the Liturgy as the source of all Gifted matter, and the entity its doctrine holds gifted humanity the Catalyst in the first place.",
+      "category": "Cosmology"
     },
     {
       "term": "Gifted",
@@ -40,6 +112,36 @@
       "category": "Creatures"
     },
     {
+      "term": "Keeper, The",
+      "fullForm": null,
+      "definition": "The person who runs a House\u0027s Scrying installation -- the technical authority whose control of the apparatus determines what the House can manufacture.",
+      "category": "Title"
+    },
+    {
+      "term": "Lector",
+      "fullForm": null,
+      "definition": "A Liturgy field practitioner who travels between Houses administering the Gifted Ceremony, distributing Relics, and independently assessing worthiness -- a judgment no House can override.",
+      "category": "Title"
+    },
+    {
+      "term": "Liturgy, The",
+      "fullForm": null,
+      "definition": "The religious-scientific sect that administers the Gifted Ceremony and exists outside House politics, predating the current Houses. Does not fight wars or take territory; its doctrine and rites are the foundation the Houses\u0027 own legitimacy is built on.",
+      "category": "Institutions"
+    },
+    {
+      "term": "Loera",
+      "fullForm": "House Loera \u2014 the Cutting Seat",
+      "definition": "The western cliff-coast House of the Entos, styled \u0022the Cutting Seat\u0022 and headed by Imara Loera, \u0022the Unwitnessed.\u0022 Loera governs by charter rather than by parade: covert companies, corsair hulls, and licensed tradecraft crews \u2014 the Blink Thieves\u0027 trade among them \u2014 all operate under Cutting Seat charters, and the head of House is by design the person the record never catches. Because Loera issues its own service kit, \u0022Loera\u0022 functions in the prose as a tradecraft signature rather than a place name: Loera boot-prints (the narrow heel and non-standard toe-cap of the coast tanneries) mark a wearer as Loera service rather than a contractor, and Loera hulls do not change custody mid-crossing whatever harbour they finally put in at.",
+      "category": "Houses"
+    },
+    {
+      "term": "Myrmidon",
+      "fullForm": null,
+      "definition": "A Shell (a Liturgy-built android construct) with a human mind Relayed into it and operating it -- the mind always Pierced from another Sphere, never Entos-born, never Transmutation-eligible. Death is permanent: if a Myrmidon\u0027s Shell is destroyed while its mind is still inside, the mind is gone -- no shell-cycle, no return.",
+      "category": "Military"
+    },
+    {
       "term": "Ocipheus",
       "fullForm": null,
       "definition": "The House of the island nation (Britain analog); seat of the Canon Immaculate and the oldest continuously documented Scrying installation in Entos, staffed by the longest-tenured vigil operators in any House.",
@@ -52,10 +154,58 @@
       "category": "Faction"
     },
     {
+      "term": "Pass, The",
+      "fullForm": null,
+      "definition": "The narrow strait (the Bosphorus analog) separating Entos\u0027s eastern boundary from the quarantined Sinter territory -- the only practical crossing between the two, held by fortified towers, naval patrols, and Eirene\u0027s Gate.",
+      "category": "Geography"
+    },
+    {
+      "term": "Piercing",
+      "fullForm": null,
+      "definition": "The harder, rarer act of reaching through a Sphere\u0027s membrane and drawing something out of another Sphere -- a rupture, not a stretch, that leaves scar tissue behind.",
+      "category": "Magic System"
+    },
+    {
+      "term": "Prisoner, The",
+      "fullForm": null,
+      "definition": "Entos\u0027s other central, unsolved mystery alongside the Expectant -- an entity or presence of unknown nature, intent, or even reality, whose possible relationship to the Expectant is deliberately never confirmed in-world.",
+      "category": "Cosmology"
+    },
+    {
+      "term": "Received Tongue",
+      "fullForm": "also called Liturgin",
+      "definition": "The Liturgy\u0027s dead, Scried language, used for writs, rites, and rank-names -- commoners call it High Speech, cathedral-talk, or the Silence-tongue. Rendered on Templar Station terminal screens as \u0022Liturgin.\u0022",
+      "category": "Language"
+    },
+    {
+      "term": "Relay",
+      "fullForm": null,
+      "definition": "A living Myrmidon moving its mind from its current Anima-Core-bearing Shell or machine into another one -- another Myrmidon Shell, a Templar Station terminal, an airship turret, a war-beast left standing on a battlefield. Requires a clear line of sight AND close range -- roughly a mile, the distance at which the destination\u0027s detail is visible, not just its silhouette; past that, even with sightline, the Anima Core signature is too faint to lock onto. The vacated Shell goes inert, not dead. Never a way to survive death: if the Shell a mind occupies is destroyed before it Relays out, that mind is gone, same as any other death.",
+      "category": null
+    },
+    {
+      "term": "Relic",
+      "fullForm": null,
+      "definition": "A physical object wrought from Gifted matter and distributed by the Liturgy to the loyal. Unlike Scried technology, no Relic has ever been manufactured or reverse-engineered, and each has one narrow, consistent function; a Relic goes cold and inert in a disloyal carrier\u0027s hands.",
+      "category": "Artifact"
+    },
+    {
+      "term": "Scrying",
+      "fullForm": null,
+      "definition": "Pulling two adjacent cell walls (Spheres) tight against each other so a practitioner can look through -- without rupturing or damaging either membrane.",
+      "category": "Magic System"
+    },
+    {
       "term": "Shell",
       "fullForm": null,
       "definition": "An android construct built by the Liturgy, carrying an Anima Core. Uninhabited, it is just a Shell -- inert, no different from any other piece of equipment. The moment a mind Relays into it, it is a Myrmidon.",
       "category": null
+    },
+    {
+      "term": "Silence, The",
+      "fullForm": null,
+      "definition": "The Liturgy\u0027s highest governing body. It never appears publicly, speaks only through Canon-level intermediaries, and its decisions are final and unexplained.",
+      "category": "Institution"
     },
     {
       "term": "Sinter",
@@ -76,28 +226,34 @@
       "category": "Creatures"
     },
     {
-      "term": "the Keeper",
+      "term": "Sphere",
       "fullForm": null,
-      "definition": "The person who runs a House\u0027s Scrying installation -- the technical authority whose control of the apparatus determines what the House can manufacture.",
-      "category": "Title"
+      "definition": "What the Liturgy calls each of the countless worlds floating in the Amnios, Entos among them -- a single cell in a vast biological cluster. Scrying looks between two Spheres without damaging either membrane; Piercing tears through one to take something out.",
+      "category": null
     },
     {
-      "term": "the Liturgy",
+      "term": "Templar",
       "fullForm": null,
-      "definition": "The religious-scientific sect that administers the Gifted Ceremony and exists outside House politics, predating the current Houses. Does not fight wars or take territory; its doctrine and rites are the foundation the Houses\u0027 own legitimacy is built on.",
+      "definition": "The Liturgy\u0027s own guard order, founded generations before the current Houses existed to argue with the Liturgy -- its \u0022Vatican Guard.\u0022 An \u0022Infused Templar\u0022 has undergone the Gifted Ceremony, which is what opens a sealed Templar Station. Rank tracks the number of Gifted infusions a Templar carries.",
       "category": "Institutions"
     },
     {
-      "term": "the Pass",
+      "term": "Templar Station",
       "fullForm": null,
-      "definition": "The narrow strait (the Bosphorus analog) separating Entos\u0027s eastern boundary from the quarantined Sinter territory -- the only practical crossing between the two, held by fortified towers, naval patrols, and Eirene\u0027s Gate.",
+      "definition": "A sealed, self-contained structure at Vigil/Templar checkpoints across Entos -- locals describe them as impenetrable geometric eggs. Opens only for an Infused Templar. Holds supplies and a permanent relay terminal carrying Logs between Stations, rendered in the Received Tongue.",
+      "category": null
+    },
+    {
+      "term": "thin-membrane site",
+      "fullForm": null,
+      "definition": "A location where the boundary between Spheres is thin enough to make Scrying -- and sometimes Piercing -- practical. Such sites carry incursion risk and unease, and a minority of people can perceive things at the boundary that no apparatus captures.",
       "category": "Geography"
     },
     {
-      "term": "the Silence",
-      "fullForm": null,
-      "definition": "The Liturgy\u0027s highest governing body. It never appears publicly, speaks only through Canon-level intermediaries, and its decisions are final and unexplained.",
-      "category": "Institution"
+      "term": "Transmutation",
+      "fullForm": "the Gifted Ceremony",
+      "definition": "The Liturgy\u0027s rite of infusing a person with Catalyst-class Gifted matter (chiefly Xerum 525), producing controlled physical ascendance over years of guided doses; framed as sacred and consented to, though the first infusion is only 80% survivable. Soldiers in the field call it simply \u0022the dose\u0022 or \u0022being seen.\u0022",
+      "category": "Cosmology"
     },
     {
       "term": "Verlaine",
@@ -106,10 +262,28 @@
       "category": "Faction"
     },
     {
+      "term": "vigil operator",
+      "fullForm": "vigil watcher",
+      "definition": "A long-tenured practitioner stationed for decades at a thin-membrane site to monitor boundary behavior -- distinct from the Vigil holy-warrior order despite the shared word. Some privately describe the membrane as something that \u0022breathes\u0022 and responds to them personally, an observation never entered into any formal record.",
+      "category": "Role"
+    },
+    {
+      "term": "Vigil, The",
+      "fullForm": null,
+      "definition": "The order that holds the quarantine line at the Pass, watching the Sinter border so whatever comes out of it doesn\u0027t reach the rest of Entos.",
+      "category": null
+    },
+    {
       "term": "Warrior King",
       "fullForm": null,
       "definition": "A House\u0027s most experienced military commander -- a rank accumulated through decades of campaigns rather than inherited by blood.",
       "category": "Title"
+    },
+    {
+      "term": "Xerum 525",
+      "fullForm": "Red Mercury (alt. House name)",
+      "definition": "The primary, most-studied Catalyst used in the Gifted Ceremony. Administered correctly by a certified Lector it produces ascendance; administered wrong, or without sanction, it produces catastrophic uncontrolled mutation instead.",
+      "category": "Substance"
     }
   ]
 }

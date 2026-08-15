@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>prose-llm</AssemblyName>
+    <RootNamespace>Prose.LlmCli</RootNamespace>
+    <!--
+      Deliberately NOT a ProjectReference on Prose.Core: this is the manual, last-resort
+      escape hatch for the Multi-LLM Master Switch-Over plan. It must keep working even if
+      Prose.Core/the DB/EF Core migrations are broken during an outage, so its only
+      dependency is MindAttic.Legion (the multi-provider wire client) plus MindAttic.Vault
+      for the same shared credential store Prose.Core itself reads from
+      (%APPDATA%/MindAttic/LLM/) — so keys already configured for Prose just work here too,
+      with zero extra setup.
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MindAttic.Legion" Version="23.0.0" />
+    <PackageReference Include="MindAttic.Vault" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

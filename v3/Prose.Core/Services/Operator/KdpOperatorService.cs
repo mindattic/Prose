@@ -1,7 +1,5 @@
 using System.Runtime.CompilerServices;
 using System.Text.Json;
-using System.Text.Json.Nodes;
-using MindAttic.Legion;
 using Microsoft.Extensions.Logging;
 using Prose.Core.Services;
 
@@ -9,19 +7,25 @@ namespace Prose.Core.Services.Operator;
 
 /// <summary>
 /// Drives one book through the KDP republish flow: find it on the bookshelf, upload the new
-/// manuscript, save/continue, publish, confirm, record. Same Anthropic tool-use loop shape as
-/// <see cref="WriterOperatorService"/> (same client, same event stream), scoped to ONE book per
-/// call rather than an ongoing chat — each book gets a fresh conversation (no history carried
-/// over from the previous book) so a stumble on book N can't drag book N+1's context down with
-/// it. The caller (task #7) loops this over every checked book in sequence.
+/// manuscript, save/continue, publish, confirm, record. Same tool-use loop shape as
+/// <see cref="WriterOperatorService"/> (same event stream), scoped to ONE book per call rather
+/// than an ongoing chat — each book gets a fresh conversation (no history carried over from the
+/// previous book) so a stumble on book N can't drag book N+1's context down with it. The caller
+/// (task #7) loops this over every checked book in sequence.
+///
+/// Drives the loop through <see cref="IToolCallingLlm"/>, not any one vendor's client directly
+/// (Multi-LLM Master Switch-Over plan) — <see cref="toolCallingProviders"/> is tried in
+/// preference order (Claude first) and the first one with usable credentials handles the whole
+/// book. The KDP browser session (<see cref="IKdpBrowser"/>) lives in-process inside
+/// Prose.KdpPublish, so unlike prose-generation this can't fail over to a separate CLI process —
+/// but it CAN fail over to a different vendor's tool-calling API while staying in-process.
 /// </summary>
 public class KdpOperatorService
 {
-    private readonly AnthropicToolClient client;
+    private readonly IReadOnlyList<IToolCallingLlm> toolCallingProviders;
     private readonly KdpToolRegistry tools;
     private readonly ILogger<KdpOperatorService> log;
 
-    private const string Model = "claude-opus-4-7";
     private const int MaxTokens = 4096;
     // Was 40 — confirmed live (2026-08-03 full sweep) too tight: several books genuinely
     // completed the entire republish (manuscript check, checkboxes, Save and Continue,
@@ -33,9 +37,9 @@ public class KdpOperatorService
     private const int MaxToolIterations = 60;
     private const int MaxToolIterationsNewListing = 80;
 
-    public KdpOperatorService(AnthropicToolClient client, KdpToolRegistry tools, ILogger<KdpOperatorService> log)
+    public KdpOperatorService(IReadOnlyList<IToolCallingLlm> toolCallingProviders, KdpToolRegistry tools, ILogger<KdpOperatorService> log)
     {
-        this.client = client;
+        this.toolCallingProviders = toolCallingProviders;
         this.tools = tools;
         this.log = log;
     }
@@ -45,13 +49,26 @@ public class KdpOperatorService
         KdpOperatorContext ctx,
         [EnumeratorCancellation] CancellationToken cancel = default)
     {
-        var apiKey = MindAtticCredentialStore.GetKey("claude-api");
-        if (string.IsNullOrWhiteSpace(apiKey))
+        // Try each tool-calling provider in preference order (Claude first) and use whichever
+        // one actually has usable credentials right now — the Multi-LLM Master Switch-Over
+        // fallback philosophy applied to the tool-calling loop, not just prose generation.
+        IToolCallingLlm? llm = null;
+        foreach (var candidate in toolCallingProviders)
+        {
+            if (await candidate.IsConfiguredAsync())
+            {
+                llm = candidate;
+                break;
+            }
+        }
+        if (llm is null)
         {
             yield return new OperatorEvent.Error(
-                "No Anthropic API key configured. Add a 'claude-api' provider key in Settings.");
+                "No tool-calling LLM provider is configured (tried: " +
+                string.Join(", ", toolCallingProviders.Select(p => p.Name)) + ").");
             yield break;
         }
+        log.LogInformation("KdpOperatorService: using {Provider} for {Code}", llm.Name, book.Code);
 
         // Hard gate, enforced here (not just in the UI's RunSelectedAsync) so it can never be
         // bypassed by any other caller — see KdpManifestEntry.MeetsHardPublishGate for the single
@@ -108,71 +125,55 @@ public class KdpOperatorService
             }
         }
 
-        var history = new JsonArray
+        var history = new List<ToolLoopMessage>
         {
-            new JsonObject
-            {
-                ["role"] = "user",
-                ["content"] = new JsonArray
-                {
-                    new JsonObject
-                    {
-                        ["type"] = "text",
-                        ["text"] = isNewListing
-                            ? BuildNewListingUserMessage(book, manuscriptPath, coverPath!)
-                            : BuildUserMessage(book, manuscriptPath),
-                    },
-                },
-            },
+            new ToolLoopMessage.UserText(isNewListing
+                ? BuildNewListingUserMessage(book, manuscriptPath, coverPath!)
+                : BuildUserMessage(book, manuscriptPath)),
         };
 
         var system = isNewListing ? BuildNewListingSystemPrompt() : BuildSystemPrompt();
-        var toolsArray = tools.BuildToolsArray();
+        var toolDefs = tools.BuildToolDefinitions();
         var maxIterations = isNewListing ? MaxToolIterationsNewListing : MaxToolIterations;
 
         for (int iter = 0; iter < maxIterations; iter++)
         {
             cancel.ThrowIfCancellationRequested();
 
-            AnthropicTurnResponse? turn = null;
+            ToolTurnResult? turn = null;
             string? callError = null;
             try
             {
-                turn = await client.CreateAsync(apiKey, Model, system, CloneArray(history), toolsArray, MaxTokens, cancel);
+                turn = await llm.CreateTurnAsync(system, history, toolDefs, MaxTokens, cancel);
             }
             catch (Exception ex) when (ex is not OperationCanceledException)
             {
-                log.LogError(ex, "Anthropic call failed for {Code}", book.Code);
+                log.LogError(ex, "{Provider} call failed for {Code}", llm.Name, book.Code);
                 callError = ex.Message;
             }
             if (turn == null)
             {
-                yield return new OperatorEvent.Error(callError ?? "Anthropic call returned null.");
+                yield return new OperatorEvent.Error(callError ?? $"{llm.Name} call returned null.");
                 yield break;
             }
 
-            history.Add(new JsonObject { ["role"] = "assistant", ["content"] = CloneArray(turn.Content) });
+            history.Add(new ToolLoopMessage.AssistantTurn(turn.Parts));
 
-            var toolResults = new JsonArray();
+            var toolResults = new List<ToolResultPart>();
             var sawToolUse = false;
 
-            foreach (var block in turn.Content)
+            foreach (var part in turn.Parts)
             {
-                if (block is null) continue;
-                var type = block["type"]?.GetValue<string>();
-                if (type == "text")
+                if (part is AssistantPart.Text textPart)
                 {
-                    var text = block["text"]?.GetValue<string>() ?? "";
-                    if (!string.IsNullOrEmpty(text))
-                        yield return new OperatorEvent.AssistantText(text);
+                    if (!string.IsNullOrEmpty(textPart.Value))
+                        yield return new OperatorEvent.AssistantText(textPart.Value);
                 }
-                else if (type == "tool_use")
+                else if (part is AssistantPart.ToolCall call)
                 {
                     sawToolUse = true;
-                    var id = block["id"]?.GetValue<string>() ?? "";
-                    var name = block["name"]?.GetValue<string>() ?? "";
-                    var input = block["input"];
-                    var argsJson = input?.ToJsonString() ?? "{}";
+                    var name = call.Name;
+                    var argsJson = call.ArgumentsJson;
 
                     yield return new OperatorEvent.ToolStarted(name, argsJson);
 
@@ -202,19 +203,13 @@ public class KdpOperatorService
                     if (!isError && name == "mark_published")
                         TryWritePublishMarker(book, manuscriptPath, resultJson);
 
-                    toolResults.Add(new JsonObject
-                    {
-                        ["type"] = "tool_result",
-                        ["tool_use_id"] = id,
-                        ["content"] = resultJson,
-                        ["is_error"] = isError,
-                    });
+                    toolResults.Add(new ToolResultPart(call.Id, resultJson, isError));
                 }
             }
 
             if (!sawToolUse) yield break;
 
-            history.Add(new JsonObject { ["role"] = "user", ["content"] = toolResults });
+            history.Add(new ToolLoopMessage.ToolResults(toolResults));
         }
 
         yield return new OperatorEvent.Error(
@@ -579,12 +574,5 @@ public class KdpOperatorService
             File.WriteAllText(Path.Combine(book.FolderPath, ".publish"), JsonSerializer.Serialize(marker));
         }
         catch { /* best-effort — see remarks */ }
-    }
-
-    private static JsonArray CloneArray(JsonArray src)
-    {
-        var dst = new JsonArray();
-        foreach (var node in src) dst.Add(node?.DeepClone());
-        return dst;
     }
 }

@@ -40,6 +40,19 @@ public class CanonRetrievalService
     public sealed record CanonHit(Guid Id, string Name, string Type, double Similarity, string? Description);
 
     /// <summary>
+    /// Entity.Status values that mean "this row is no longer live canon". They stay in the
+    /// table (audit, restore, redirect) but must never be presented to an LLM as established
+    /// truth: a merged/superseded row's Description is bookkeeping, not world fact
+    /// ("Superseded duplicate; merged into Chen Lin (chen_lin / …)"), and feeding it to the
+    /// contradiction checker produced a guaranteed false CANON-CONTRADICTION on every audit
+    /// ("Mrs. Chen is documented as a superseded duplicate … she should not appear as an active
+    /// character in current prose") for a name that is in fact a live alias of the canonical
+    /// row. Deny-list rather than allow-list so a new status defaults to visible.
+    /// </summary>
+    private static readonly string[] DeadStatuses =
+        ["archived", "merged", "superseded-duplicate", "retired"];
+
+    /// <summary>
     /// Retrieve the top entities (across all types unless <paramref name="onlyTypes"/>
     /// is given) most relevant to <paramref name="queryText"/>, best-first, with a
     /// one-line description pulled from the canonical Entity row.
@@ -68,6 +81,7 @@ public class CanonRetrievalService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var infoById = await db.Entities.AsNoTracking()
             .Where(e => ids.Contains(e.Id))
+            .Where(e => e.IsActive && !DeadStatuses.Contains(e.Status))
             .Select(e => new { e.Id, e.Description, e.OriginNodeId })
             .ToDictionaryAsync(x => x.Id, x => x, ct);
 

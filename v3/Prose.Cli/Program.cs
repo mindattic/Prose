@@ -558,7 +558,9 @@ if (args.Contains("--generate-canon-md"))
 
 // CLI mode: assemble the unified Book Context Document for a node.
 // Merges hand-authored NodeBible + Structural Blueprint + Beat Spine into one document,
-// writes to Nodes.NodeBible (DB) and docs/nodes/{CODE}.md (read-only disk mirror).
+// writes the merged view to docs/nodes/{CODE}.md (read-only disk mirror) only. Nodes.NodeBible
+// itself stays pure hand-authored content (fixed 2026-08-14 — it used to get the merged blob
+// written back, so the column named "the bible" stopped meaning only the bible).
 //   prose --generate-node-doc --slug <slug>
 //   prose --generate-node-doc --all
 if (args.Contains("--generate-node-doc"))
@@ -1494,6 +1496,45 @@ if (args.Contains("--reimport-node"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await ReimportNodeCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: snapshot a book's entire current live prose into ArchivedBooks — a
+// pre-edit backup, read-only against the live content. See ArchiveBookCli class doc.
+//   prose --archive-book (--id ... | --slug ...) [--reason "..."] --universe <u>
+if (args.Contains("--archive-book"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ArchiveBookCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: the nightly AutoCorrect pass — pure ML/deterministic, zero LLM calls. Invoked by
+// the Windows Task Scheduler task registered by scripts/register-autocorrect-task.ps1 at 2:00 AM
+// Central every night. See AutoCorrectOrchestratorService for the pipeline.
+//   prose --auto-correct-nightly [--universe <slug>] [--dry-run] [--json]
+if (args.Contains("--auto-correct-nightly"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await AutoCorrectNightlyCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: rewind a nightly AutoCorrect run (or the last N logged actions) via the undo ledger.
+//   prose --auto-correct-undo (--run-id <guid> | --last-n <N>)
+if (args.Contains("--auto-correct-undo"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await AutoCorrectUndoCli.RunUndoAsync(args, sp);
+    return;
+}
+
+// CLI mode: list recent AutoCorrect runs and their undo state.
+//   prose --auto-correct-status [--list-runs]
+if (args.Contains("--auto-correct-status"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await AutoCorrectUndoCli.RunStatusAsync(args, sp);
     return;
 }
 

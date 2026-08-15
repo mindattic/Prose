@@ -377,6 +377,13 @@ public class SettingsService : IDisposable
     }
     public string OpenAiModel { get => data.OpenAiModel; set { data.OpenAiModel = value; ScheduleSave(); } }
     public string ActiveLlmProvider { get => data.ActiveLlmProvider; set { data.ActiveLlmProvider = value; ScheduleSave(); } }
+    /// <summary>
+    /// CSV, priority order. When the active provider (<see cref="ActiveLlmProvider"/> or a
+    /// per-call override) fails, <see cref="LlmRouter"/> walks this list and tries the next
+    /// entry instead of throwing — so a Claude outage degrades to another backend
+    /// automatically. Ids not present in LlmRouter's provider map are skipped.
+    /// </summary>
+    public string ActiveLlmProviderChain { get => data.ActiveLlmProviderChain; set { data.ActiveLlmProviderChain = value; ScheduleSave(); } }
     public int EditorFontSize { get => data.EditorFontSize; set { data.EditorFontSize = value; ScheduleSave(); } }
     public int AutoSaveIntervalMs { get => data.AutoSaveIntervalMs; set { data.AutoSaveIntervalMs = value; ScheduleSave(); } }
     public string GeminiApiKey
@@ -394,6 +401,18 @@ public class SettingsService : IDisposable
         get => ResolveApiKey("PROSE_MISTRAL_API_KEY", "mistral", data.MistralApiKey);
         set { MindAtticCredentialStore.SetKey("mistral", value); data.MistralApiKey = value; ScheduleSave(); }
     }
+    public string KimiApiKey
+    {
+        get => ResolveApiKey("PROSE_KIMI_API_KEY", "kimi", data.KimiApiKey);
+        set { MindAtticCredentialStore.SetKey("kimi", value); data.KimiApiKey = value; ScheduleSave(); }
+    }
+    public string KimiModel { get => data.KimiModel; set { data.KimiModel = value; ScheduleSave(); } }
+    public string PerplexityApiKey
+    {
+        get => ResolveApiKey("PROSE_PERPLEXITY_API_KEY", "perplexity", data.PerplexityApiKey);
+        set { MindAtticCredentialStore.SetKey("perplexity", value); data.PerplexityApiKey = value; ScheduleSave(); }
+    }
+    public string PerplexityModel { get => data.PerplexityModel; set { data.PerplexityModel = value; ScheduleSave(); } }
     public string GrokApiKey
     {
         get => ResolveApiKey("PROSE_GROK_API_KEY", "xai", data.GrokApiKey);
@@ -747,6 +766,8 @@ public class SettingsService : IDisposable
         MindAtticCredentialStore.SetKey("runway",      data.RunwayApiKey);
         MindAtticCredentialStore.SetKey("deepseek",    data.DeepSeekApiKey);
         MindAtticCredentialStore.SetKey("mistral",     data.MistralApiKey);
+        MindAtticCredentialStore.SetKey("kimi",        data.KimiApiKey);
+        MindAtticCredentialStore.SetKey("perplexity",  data.PerplexityApiKey);
         MindAtticCredentialStore.SetKey("xai",         data.GrokApiKey);
         MindAtticCredentialStore.SetKey("groq",        data.GroqApiKey);
         MindAtticCredentialStore.SetKey("together",    data.TogetherApiKey);
@@ -795,6 +816,8 @@ public class SettingsService : IDisposable
         MigrateIfMissing("runway",      data.RunwayApiKey);
         MigrateIfMissing("deepseek",    data.DeepSeekApiKey);
         MigrateIfMissing("mistral",     data.MistralApiKey);
+        MigrateIfMissing("kimi",        data.KimiApiKey);
+        MigrateIfMissing("perplexity",  data.PerplexityApiKey);
         MigrateIfMissing("xai",         data.GrokApiKey);
         MigrateIfMissing("groq",        data.GroqApiKey);
         MigrateIfMissing("together",    data.TogetherApiKey);
@@ -955,11 +978,17 @@ public class SettingsService : IDisposable
         public string OpenAiApiKey { get; set; } = "";
         public string OpenAiModel { get; set; } = "gpt-4.1-mini";
         public string ActiveLlmProvider { get; set; } = "claude-api";
+        public string ActiveLlmProviderChain { get; set; } =
+            "claude-team,claude-api,codex-cli,openai,gemini-cli,gemini,kimi,deepseek,mistral,perplexity";
         public int EditorFontSize { get; set; } = 14;
         public int AutoSaveIntervalMs { get; set; } = 2000;
         public string GeminiApiKey { get; set; } = "";
         public string DeepSeekApiKey { get; set; } = "";
         public string MistralApiKey { get; set; } = "";
+        public string KimiApiKey { get; set; } = "";
+        public string KimiModel { get; set; } = "kimi-k2.6";
+        public string PerplexityApiKey { get; set; } = "";
+        public string PerplexityModel { get; set; } = "sonar";
         public string GrokApiKey { get; set; } = "";
         public string GroqApiKey { get; set; } = "";
         public string TogetherApiKey { get; set; } = "";

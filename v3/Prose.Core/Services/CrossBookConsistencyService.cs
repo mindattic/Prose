@@ -58,7 +58,8 @@ public class CrossBookConsistencyService
                     .Select(og =>
                     {
                         var books = og.Select(c => c.BookSlug!).Distinct().OrderBy(s => s).ToList();
-                        return new ObjectVariant(og.First().Object, books, og.Count());
+                        var uids = og.Select(c => c.ClaimUid).ToList();
+                        return new ObjectVariant(og.First().Object, books, og.Count(), uids);
                     })
                     .OrderByDescending(v => v.ClaimCount)
                     .ToList();
@@ -78,10 +79,16 @@ public class CrossBookConsistencyService
                     MajorityObject: majority.Object,
                     MajorityBooks:  majority.Books,
                     MajorityCount:  majority.ClaimCount,
+                    MajorityClaimUids: majority.ClaimUids,
                     MinorityObject: minority.Object,
                     MinorityBooks:  minority.Books,
                     MinorityCount:  minority.ClaimCount,
-                    IsCrossBook:    isCrossBook
+                    MinorityClaimUids: minority.ClaimUids,
+                    IsCrossBook:    isCrossBook,
+                    // Exactly two distinct claimed values for this entity+predicate — a clean
+                    // either/or. Three or more distinct values is genuinely ambiguous (which is
+                    // the "real" minority to reject?) and must stay flag-only for a human.
+                    VariantCount: byObject.Count
                 );
             })
             .Where(c => c.IsCrossBook)
@@ -107,12 +114,16 @@ public record CrossBookConflict(
     string MajorityObject,
     IReadOnlyList<string> MajorityBooks,
     int MajorityCount,
+    IReadOnlyList<string> MajorityClaimUids,
     string MinorityObject,
     IReadOnlyList<string> MinorityBooks,
     int MinorityCount,
-    bool IsCrossBook);
+    IReadOnlyList<string> MinorityClaimUids,
+    bool IsCrossBook,
+    int VariantCount);
 
 internal record ObjectVariant(
     string Object,
     IReadOnlyList<string> Books,
-    int ClaimCount);
+    int ClaimCount,
+    IReadOnlyList<string> ClaimUids);

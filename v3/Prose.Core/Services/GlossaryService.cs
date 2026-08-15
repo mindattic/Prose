@@ -172,10 +172,14 @@ public class GlossaryService(
     /// <summary>Plural-insensitive: a headword and its regular "-s" plural are one entry
     /// regardless of which form was authored (e.g. "neuretic" and "neuretics" both match a
     /// single "neuretics" row, or a single "neuretic" row) — strip a trailing "s" from the
-    /// headword down to its stem, then allow an optional trailing "s" back on the match.</summary>
+    /// headword down to its stem, then allow an optional trailing "s" back on the match.
+    /// Also strips a trailing ", The" (back-of-book alphabetization convention, e.g.
+    /// "Liturgy, The") before stemming, since prose never contains that literal inverted
+    /// form — the bare headword ("Liturgy") still matches inside "the Liturgy" text.</summary>
     static bool AppearsInText(string term, string text)
     {
-        var stem = term.Length > 2 && term.EndsWith("s", StringComparison.OrdinalIgnoreCase) ? term[..^1] : term;
+        var head = term.EndsWith(", The", StringComparison.OrdinalIgnoreCase) ? term[..^5].TrimEnd() : term;
+        var stem = head.Length > 2 && head.EndsWith("s", StringComparison.OrdinalIgnoreCase) ? head[..^1] : head;
         return Regex.IsMatch(text, $@"(?<![A-Za-z0-9]){Regex.Escape(stem)}s?(?![A-Za-z0-9])", RegexOptions.IgnoreCase);
     }
 

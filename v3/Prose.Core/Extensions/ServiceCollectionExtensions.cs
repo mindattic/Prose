@@ -614,6 +614,15 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ClaudeService>();
         services.AddSingleton<OpenAiService>();
         services.AddSingleton<LocalLlmService>();
+        services.AddSingleton<GeminiService>();
+        services.AddSingleton<DeepSeekService>();
+        services.AddSingleton<MistralService>();
+        services.AddSingleton<KimiService>();
+        services.AddSingleton<PerplexityService>();
+        // CLI-shelling providers ride a subscription login (Codex/Gemini CLI's own OAuth
+        // session) instead of a metered API key — see docs/PROVIDERS.md.
+        services.AddSingleton<CodexCliService>();
+        services.AddSingleton<GeminiCliService>();
         services.AddSingleton<DallEService>();
         services.AddSingleton<TokenLedger>();
 
@@ -654,10 +663,18 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<ClaudeService>(),
             sp.GetRequiredService<OpenAiService>(),
             sp.GetRequiredService<LocalLlmService>(),
+            sp.GetRequiredService<GeminiService>(),
+            sp.GetRequiredService<DeepSeekService>(),
+            sp.GetRequiredService<MistralService>(),
+            sp.GetRequiredService<KimiService>(),
+            sp.GetRequiredService<PerplexityService>(),
+            sp.GetRequiredService<CodexCliService>(),
+            sp.GetRequiredService<GeminiCliService>(),
             sp.GetRequiredService<SettingsService>(),
             sp.GetRequiredService<LegionClient>(),
             sp.GetRequiredService<LastPromptStore>(),
             sp.GetRequiredService<TokenLedger>(),
+            sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),
             sp.GetRequiredService<ILogger<LlmRouter>>()));
         services.AddSingleton<ILlmService>(sp => sp.GetRequiredService<LlmRouter>());
 
@@ -741,6 +758,17 @@ public static class ServiceCollectionExtensions
         // its only entry points were WriteStory.razor/BookOutlineEditor.razor, both part of the
         // StoryDirectorService "Surprise Me" pipeline, confirmed unused.
         services.AddHttpClient<Services.Operator.AnthropicToolClient>(c => c.Timeout = TimeSpan.FromMinutes(15));
+        services.AddSingleton<Services.Operator.AnthropicToolCallingLlm>();
+
+        // Multi-LLM Master Switch-Over: the KDP operator's tool-calling loop tries each of
+        // these, in order, and uses whichever one has usable credentials right now — Claude
+        // first, OpenAI as the fallback tier (see IToolCallingLlm remarks).
+        services.AddHttpClient<Services.Operator.OpenAiToolCallingLlm>(c => c.Timeout = TimeSpan.FromMinutes(15));
+        services.AddSingleton<IReadOnlyList<Services.Operator.IToolCallingLlm>>(sp =>
+        [
+            sp.GetRequiredService<Services.Operator.AnthropicToolCallingLlm>(),
+            sp.GetRequiredService<Services.Operator.OpenAiToolCallingLlm>(),
+        ]);
 
         // Media asset storage (local disk dev; swap to AddMediaAzure<ProseDbContext> in prod).
         services.AddMedia<ProseDbContext>();
@@ -1074,6 +1102,15 @@ public static class ServiceCollectionExtensions
         // disambiguation (e.g. TEST's two "Boris Johan(s)sen" Bear rows, found 2026-08-10).
         // Available via `prose --duplicate-entity-scan --universe <slug>`.
         services.AddSingleton<DuplicateEntityScanService>();
+
+        // AutoCorrect nightly pass (pure ML/deterministic, no LLM): whole-book pre-edit
+        // snapshots, a per-action undo ledger, per-universe statistical baselines, and the
+        // orchestrator that ties existing detectors to a whitelisted set of auto-fixes.
+        // Available via `prose --auto-correct-nightly` / `prose --auto-correct-undo`.
+        services.AddSingleton<BookArchiveService>();
+        services.AddSingleton<SelfHealLedgerService>();
+        services.AddSingleton<UniverseProfileService>();
+        services.AddSingleton<AutoCorrectOrchestratorService>();
 
         // Deterministic noun consistency scan — no LLM; flags deprecated/renamed
         // noun references in beat prose (e.g. old drone name "VacCell" → "Nit").

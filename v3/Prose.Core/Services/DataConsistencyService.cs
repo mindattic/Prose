@@ -711,6 +711,99 @@ public class DataConsistencyService
         return result;
     }
 
+    public sealed record LedgeredFixResult(int Count, List<RowMutationUndo> Undo);
+
+    /// <summary>
+    /// Ledger-aware twin of <see cref="ApplyDeterministicFixesAsync"/> for
+    /// <see cref="AutoCorrectOrchestratorService"/> — same three fixes, same SQL, but every row
+    /// touched is captured via an inline <c>OUTPUT</c> clause (the prior value for updates, the
+    /// full row for deletes) so <see cref="SelfHealLedgerService"/> can undo it later.
+    /// </summary>
+    public async Task<Dictionary<string, LedgeredFixResult>> ApplyDeterministicFixesWithLedgerAsync(
+        IReadOnlyCollection<string> codes, CancellationToken ct = default)
+    {
+        var result = new Dictionary<string, LedgeredFixResult>();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        if (codes.Contains("ESE-DANGLING"))
+        {
+            var deleted = await db.Database.SqlQueryRaw<EseDeletedRow>("""
+                DELETE FROM [dbo].[EntityStateEvents]
+                OUTPUT deleted.Id, deleted.UniverseId, deleted.EntityId, deleted.AspectKey, deleted.Verb,
+                       deleted.OldValue, deleted.NewValue, deleted.Delta, deleted.AtStoryTime,
+                       deleted.ChapterId, deleted.BeatGuid, deleted.Source, deleted.Confidence, deleted.Snippet
+                WHERE EntityId NOT IN (SELECT Id FROM [dbo].[Entities]);
+                """).ToListAsync(ct);
+
+            var undo = deleted.Select(r => new RowMutationUndo("delete", "EntityStateEvents", "Id", r.Id.ToString(),
+                new Dictionary<string, string?>
+                {
+                    ["UniverseId"] = r.UniverseId.ToString(), ["EntityId"] = r.EntityId.ToString(),
+                    ["AspectKey"] = r.AspectKey, ["Verb"] = r.Verb, ["OldValue"] = r.OldValue, ["NewValue"] = r.NewValue,
+                    ["Delta"] = r.Delta?.ToString(), ["AtStoryTime"] = r.AtStoryTime.ToString("o"),
+                    ["ChapterId"] = r.ChapterId?.ToString(), ["BeatGuid"] = r.BeatGuid?.ToString(),
+                    ["Source"] = r.Source, ["Confidence"] = r.Confidence?.ToString(), ["Snippet"] = r.Snippet,
+                })).ToList();
+            result["ESE-DANGLING"] = new LedgeredFixResult(deleted.Count, undo);
+        }
+
+        if (codes.Contains("CHAR-AFFIL-ALIAS-DRIFT"))
+        {
+            var changed = await db.Database.SqlQueryRaw<AliasDriftRow>("""
+                UPDATE ca SET ca.Alias = f.Name
+                OUTPUT deleted.Id, deleted.Alias AS OldAlias
+                FROM [dbo].[CharacterAffiliations] ca
+                JOIN [dbo].[Factions] f ON f.Id = ca.FactionId
+                WHERE ca.Alias <> f.Name;
+                """).ToListAsync(ct);
+
+            var undo = changed.Select(r => new RowMutationUndo("update", "CharacterAffiliations", "Id", r.Id.ToString(),
+                new Dictionary<string, string?> { ["Alias"] = r.OldAlias })).ToList();
+            result["CHAR-AFFIL-ALIAS-DRIFT"] = new LedgeredFixResult(changed.Count, undo);
+        }
+
+        if (codes.Contains("CHAR-HOMETURF-ALIAS-DRIFT"))
+        {
+            var changed = await db.Database.SqlQueryRaw<AliasDriftRow>("""
+                UPDATE cht SET cht.Alias = p.Name
+                OUTPUT deleted.Id, deleted.Alias AS OldAlias
+                FROM [dbo].[CharacterHomeTurfs] cht
+                JOIN [dbo].[Places] p ON p.Id = cht.PlaceId
+                WHERE cht.Alias <> p.Name;
+                """).ToListAsync(ct);
+
+            var undo = changed.Select(r => new RowMutationUndo("update", "CharacterHomeTurfs", "Id", r.Id.ToString(),
+                new Dictionary<string, string?> { ["Alias"] = r.OldAlias })).ToList();
+            result["CHAR-HOMETURF-ALIAS-DRIFT"] = new LedgeredFixResult(changed.Count, undo);
+        }
+
+        return result;
+    }
+
+    private sealed class EseDeletedRow
+    {
+        public long Id { get; set; }
+        public Guid UniverseId { get; set; }
+        public Guid EntityId { get; set; }
+        public string AspectKey { get; set; } = "";
+        public string Verb { get; set; } = "";
+        public string? OldValue { get; set; }
+        public string? NewValue { get; set; }
+        public double? Delta { get; set; }
+        public DateTime AtStoryTime { get; set; }
+        public Guid? ChapterId { get; set; }
+        public Guid? BeatGuid { get; set; }
+        public string Source { get; set; } = "";
+        public double? Confidence { get; set; }
+        public string? Snippet { get; set; }
+    }
+
+    private sealed class AliasDriftRow
+    {
+        public long Id { get; set; }
+        public string OldAlias { get; set; } = "";
+    }
+
     // ── projection helpers (for SqlQueryRaw) ──────────────────────────────────
 
     private sealed class DanglingEdgeRow

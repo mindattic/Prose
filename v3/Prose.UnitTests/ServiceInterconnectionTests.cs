@@ -66,6 +66,81 @@ public class LlmRouterCaptureTests
         Assert.That(snap.Count, Is.EqualTo(1));
         Assert.That(snap[0].Response, Does.Contain("boom"));
     }
+
+    [Test]
+    public async Task GenerateAsync_FallsBackToNextProviderInChain_WhenPrimaryFails()
+    {
+        var store = new LastPromptStore();
+        var providers = new Dictionary<string, ILlmService>
+        {
+            ["claude-api"] = new StubLlm(throwMessage: "claude-api down"),
+            ["claude-team"] = new StubLlm(throwMessage: "claude-team also down"),
+            ["openai"] = new StubLlm("OPENAI-RESPONSE"),
+        };
+        var router = new LlmRouter(
+            providers,
+            activeProvider: () => "claude-api",
+            fallbackChain: () => ["claude-team", "openai"],
+            prompts: store,
+            log: NullLogger<LlmRouter>.Instance);
+
+        var response = await router.GenerateAsync("sys", "usr");
+
+        Assert.That(response, Is.EqualTo("OPENAI-RESPONSE"));
+        var snap = store.Snapshot();
+        // Newest-first: openai (success), claude-team (error), claude-api (error).
+        Assert.That(snap.Count, Is.EqualTo(3));
+        Assert.That(snap[0].Provider, Is.EqualTo("openai"));
+        Assert.That(snap[0].Response, Is.EqualTo("OPENAI-RESPONSE"));
+        Assert.That(snap[1].Provider, Is.EqualTo("claude-team"));
+        Assert.That(snap[1].Response, Does.Contain("claude-team also down"));
+        Assert.That(snap[2].Provider, Is.EqualTo("claude-api"));
+        Assert.That(snap[2].Response, Does.Contain("claude-api down"));
+    }
+
+    [Test]
+    public void GenerateAsync_ThrowsAggregateException_WhenEveryProviderInChainFails()
+    {
+        var store = new LastPromptStore();
+        var providers = new Dictionary<string, ILlmService>
+        {
+            ["claude-api"] = new StubLlm(throwMessage: "claude-api down"),
+            ["openai"] = new StubLlm(throwMessage: "openai down"),
+        };
+        var router = new LlmRouter(
+            providers,
+            activeProvider: () => "claude-api",
+            fallbackChain: () => ["openai"],
+            prompts: store,
+            log: NullLogger<LlmRouter>.Instance);
+
+        Assert.That(async () => await router.GenerateAsync("sys", "usr"),
+            Throws.InstanceOf<AggregateException>()
+                .With.Property("InnerExceptions").Count.EqualTo(2));
+    }
+
+    [Test]
+    public async Task GenerateAsync_SkipsUnregisteredChainEntries_AndStillFallsThrough()
+    {
+        var store = new LastPromptStore();
+        var providers = new Dictionary<string, ILlmService>
+        {
+            ["claude-api"] = new StubLlm(throwMessage: "down"),
+            ["gemini"] = new StubLlm("GEMINI-RESPONSE"),
+            // "kimi" deliberately absent from the map — simulates a chain entry for a
+            // provider not configured/registered in this process; must be skipped, not throw.
+        };
+        var router = new LlmRouter(
+            providers,
+            activeProvider: () => "claude-api",
+            fallbackChain: () => ["kimi", "gemini"],
+            prompts: store,
+            log: NullLogger<LlmRouter>.Instance);
+
+        var response = await router.GenerateAsync("sys", "usr");
+
+        Assert.That(response, Is.EqualTo("GEMINI-RESPONSE"));
+    }
 }
 
 [TestFixture]

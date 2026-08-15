@@ -70,6 +70,17 @@ public class MarkdownFileService
         if (File.Exists(globalRule))
             yield return new(globalRule, "claude-user", "CLAUDE.md", "project-rule-global");
 
+        // Project-level README.md — the one Markdown file the repo rule allows outside docs/
+        // ("no Markdown except README"). Hand-authored engineering reference; discovered here
+        // (same repo-root special case as CLAUDE.md above) so it survives disk loss, is
+        // recoverable by timestamp, and can be recalled by Claude Code / MCP tools without
+        // re-reading the file from disk. Falls through ClassifyFile's generic "topic" branch
+        // with filename-seeded triggers ("readme") — inert for prose generation, since beat
+        // text never contains that word, so it never pollutes the DCM working set.
+        var projectReadme = Path.Combine(projectRoot, "README.md");
+        if (File.Exists(projectReadme))
+            yield return new(projectReadme, "project", "README.md", "project-readme");
+
         // Codex docs: docs/*.md
         var docsDir = Path.Combine(projectRoot, "docs");
         if (Directory.Exists(docsDir))

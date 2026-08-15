@@ -12,6 +12,7 @@ public enum ProseViolationCategory
     AiVocabulary,
     AiDefaultName,
     AiStructuralTic,
+    PunctuationStyle,
 }
 
 public class ProseViolation
@@ -241,6 +242,16 @@ public class ProsePatternGuard(SettingsService? settings = null)
         CheckPatternPairs(text, OnTheNose, ProseViolationCategory.OnTheNose, violations);
         CheckPatterns(text, CurrencyFormat, ProseViolationCategory.CurrencyFormat, violations);
         CheckItalicDialogue(text, violations);
+        // Not gated behind AiTellChecksEnabled — unlike the Wikipedia AI-tell catalog (judged
+        // net-negative for prose quality, author ruling 2026-08-12), a spaced hyphen standing in
+        // for the house em-dash convention is a plain copy-editing correctness issue, independent
+        // of that call. Caught live 2026-08-14: a corpus-wide grammar/order pass on BCODA/VIGL
+        // found the SAME " - " -for-em-dash substitution recurring across a dozen-plus separately
+        // inserted/edited beats in both books — the exact "inserted beats drift from the
+        // established convention" failure mode docs/ENGINE.md already documents for factual state,
+        // just applied to punctuation instead. Catching it at write time is cheaper than a
+        // book-wide manual sweep after the fact.
+        CheckDashStyleConsistency(text, violations);
         // AI-tell checks are about the AUTHOR's own prose style — never applicable to a
         // verbatim quotation of someone else's words. Found via real-corpus validation
         // (2026-08-09): every "delve" instance in a nonfiction chapter was the same authentic
@@ -359,6 +370,36 @@ public class ProsePatternGuard(SettingsService? settings = null)
     // technique twice" and start being a beat that leans on the construction as connective
     // tissue throughout.
     private const int MinEmDashCountToFlag = 5;
+
+    // A hyphen with a space on both sides is essentially never correct English narrative
+    // punctuation — it is either a typo for the house em-dash convention (—) or a leftover
+    // from a draft pass that didn't get normalized. Flagging every instance rather than a
+    // density threshold: unlike em-dash overuse (a frequency/style judgment), a single spaced
+    // hyphen sitting next to em-dashes elsewhere in the same manuscript is a binary consistency
+    // defect, not a matter of degree.
+    private static readonly Regex SpacedHyphen = new(@"(?<=\S) - (?=\S)", RegexOptions.Compiled);
+
+    private static void CheckDashStyleConsistency(string text, List<ProseViolation> violations)
+    {
+        foreach (Match m in SpacedHyphen.Matches(text))
+        {
+            violations.Add(new ProseViolation
+            {
+                Category = ProseViolationCategory.PunctuationStyle,
+                Match = SnippetAroundOffset(text, m.Index, 20),
+                CharOffset = m.Index,
+                Rule = "spaced hyphen ( - ) used where house style uses an em dash (—) for interruptive asides",
+                Suggestion = "Replace the spaced hyphen with — (no surrounding spaces)",
+            });
+        }
+    }
+
+    private static string SnippetAroundOffset(string text, int index, int radius)
+    {
+        var start = Math.Max(0, index - radius);
+        var end = Math.Min(text.Length, index + radius);
+        return text[start..end];
+    }
 
     private static void CheckEmDashDensity(string text, List<ProseViolation> violations)
     {

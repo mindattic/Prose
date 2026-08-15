@@ -33,6 +33,7 @@ public static class ProviderStatusCli
         var isLive = args.Contains("--live");
 
         var llm = services.GetRequiredService<ILlmService>();
+        var router = services.GetService<LlmRouter>();
         var embeddings = services.GetService<EmbeddingService>();
 
         var results = new List<ProviderCheck>();
@@ -77,6 +78,41 @@ public static class ProviderStatusCli
             catch (Exception ex)
             {
                 results.Add(new ProviderCheck("OpenAI (EmbeddingService)", "configured but failing", ex.Message));
+            }
+        }
+
+        // Full fallback-chain roster (RFC: Multi-LLM master switch-over). Config-only by
+        // default — GetProvidersAsync() only checks credential presence per provider; pass
+        // --live to also fire one real generation through the whole chain (primary + every
+        // configured fallback), most expensive check in this command, so it's opt-in only.
+        if (router != null)
+        {
+            foreach (var p in await router.GetProvidersAsync())
+            {
+                var label = $"{p.Name} [{p.Id}]" + (p.IsActive ? " (primary)" : "");
+                if (!p.IsConfigured)
+                {
+                    results.Add(new ProviderCheck(label, "not configured", null));
+                }
+                else if (!isLive)
+                {
+                    results.Add(new ProviderCheck(label, "configured", null));
+                }
+                else
+                {
+                    try
+                    {
+                        // GenerateViaAsync (not GenerateAsync) — calls exactly this provider,
+                        // no fallback, so a failing provider can't be masked by the chain
+                        // quietly succeeding through a different one.
+                        await router.GenerateViaAsync(p.Id, "Reply with one word.", "Say: ok", temperature: 0, maxTokens: 5);
+                        results.Add(new ProviderCheck(label, "reachable", null));
+                    }
+                    catch (Exception ex)
+                    {
+                        results.Add(new ProviderCheck(label, "configured but failing", ex.Message));
+                    }
+                }
             }
         }
 

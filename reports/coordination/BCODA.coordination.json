@@ -2,8 +2,8 @@
   "nodeCode": "BCODA",
   "slug": "bushido_coda",
   "title": "Bushido Coda",
-  "generatedAtUtc": "2026-08-12 18:14:53Z",
-  "totalBeats": 502,
+  "generatedAtUtc": "2026-08-14 00:23:36Z",
+  "totalBeats": 505,
   "covered": 369,
   "chapterGranular": true,
   "bookScope": {
@@ -17,8 +17,8 @@
     "ConstructionCapacity": 25
   },
   "flagCounts": {
-    "MISSING_MEANING": 15,
-    "NO_CONSTRUCTION": 129
+    "MISSING_MEANING": 18,
+    "NO_CONSTRUCTION": 132
   },
   "beats": [
     {
@@ -720,7 +720,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 490,
+      "ProseLength": 2321,
       "Flags": [],
       "Covered": true
     },
@@ -752,7 +752,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 3767,
+      "ProseLength": 3801,
       "Flags": [],
       "Covered": true
     },
@@ -3055,7 +3055,7 @@
       "EventType": "crisis",
       "RevelationMode": "retroactive",
       "BeatTags": [],
-      "ProseLength": 1063,
+      "ProseLength": 1052,
       "Flags": [],
       "Covered": true
     },
@@ -3071,7 +3071,7 @@
       "EventType": "crisis",
       "RevelationMode": "retroactive",
       "BeatTags": [],
-      "ProseLength": 2025,
+      "ProseLength": 1533,
       "Flags": [],
       "Covered": true
     },
@@ -4930,7 +4930,7 @@
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 2531,
+      "ProseLength": 2561,
       "Flags": [],
       "Covered": true
     },
@@ -5481,7 +5481,7 @@
       "EventType": "revelation",
       "RevelationMode": "none",
       "BeatTags": [],
-      "ProseLength": 905,
+      "ProseLength": 906,
       "Flags": [],
       "Covered": true
     },
@@ -7454,6 +7454,20 @@
       "Covered": false
     },
     {
+      "BeatId": "019f4f03-0000-7000-8000-000000000001",
+      "Number": 5210,
+      "Chapter": "Chapter 23 \u2014 Brain Burn",
+      "ChapterIndex": 36,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2678,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
       "BeatId": "019f4f03-0000-7000-8000-000000000002",
       "Number": 5211,
       "Chapter": "Chapter 23 \u2014 Brain Burn",
@@ -7463,6 +7477,34 @@
       "BeatTags": [],
       "ProseLength": 2040,
       "Flags": [
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f4f03-0000-7000-8000-000000000003",
+      "Number": 5212,
+      "Chapter": "Chapter 23 \u2014 Brain Burn",
+      "ChapterIndex": 36,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2524,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f4f03-0000-7000-8000-000000000004",
+      "Number": 5213,
+      "Chapter": "Chapter 23 \u2014 Brain Burn",
+      "ChapterIndex": 36,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2251,
+      "Flags": [
+        "MISSING_MEANING",
         "NO_CONSTRUCTION"
       ],
       "Covered": false

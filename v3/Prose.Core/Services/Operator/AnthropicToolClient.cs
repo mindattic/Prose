@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
@@ -21,6 +22,14 @@ public class AnthropicToolClient
     private readonly ILogger<AnthropicToolClient> log;
     private const string Endpoint = "https://api.anthropic.com/v1/messages";
     private const string AnthropicVersion = "2023-06-01";
+
+    // Rate limits (429) and transient capacity errors (529 overloaded) are retried with
+    // backoff rather than failing the whole book immediately — the OAuth credential pool
+    // (shared with an active Claude Code session) legitimately contends for the same
+    // account's rate-limit budget, and a short wait is often enough to clear it.
+    private const int MaxRetries = 5;
+    private static readonly TimeSpan BaseDelay = TimeSpan.FromSeconds(5);
+    private static readonly TimeSpan MaxDelay = TimeSpan.FromSeconds(60);
 
     public AnthropicToolClient(HttpClient http, ILogger<AnthropicToolClient> log)
     {
@@ -54,29 +63,63 @@ public class AnthropicToolClient
         };
         if (tools.Count > 0) body["tools"] = tools.DeepClone();
 
-        using var req = new HttpRequestMessage(HttpMethod.Post, Endpoint)
+        for (int attempt = 0; ; attempt++)
         {
-            Content = JsonContent.Create(body),
-        };
-        req.Headers.Add("x-api-key", apiKey);
-        req.Headers.Add("anthropic-version", AnthropicVersion);
-        req.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            using var req = new HttpRequestMessage(HttpMethod.Post, Endpoint)
+            {
+                Content = JsonContent.Create(body),
+            };
+            // OAuth access tokens (Claude Code CLI's Team session, prefix "sk-ant-oat")
+            // authenticate via Authorization: Bearer; raw pay-per-token API keys use
+            // x-api-key. Same convention as MindAttic.Legion's LegionClient.AddClaudeAuth —
+            // kept in sync manually since that helper is internal to the Legion package.
+            if (apiKey.StartsWith("sk-ant-oat", StringComparison.OrdinalIgnoreCase))
+                req.Headers.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
+            else
+                req.Headers.Add("x-api-key", apiKey);
+            req.Headers.Add("anthropic-version", AnthropicVersion);
+            req.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-        using var resp = await http.SendAsync(req, ct);
-        var raw = await resp.Content.ReadAsStringAsync(ct);
+            using var resp = await http.SendAsync(req, ct);
+            var raw = await resp.Content.ReadAsStringAsync(ct);
 
-        if (!resp.IsSuccessStatusCode)
-        {
-            log.LogWarning("Anthropic {Status}: {Body}", (int)resp.StatusCode, raw);
-            throw new InvalidOperationException(
-                $"Anthropic API {(int)resp.StatusCode}: {Truncate(raw, 500)}");
+            if (!resp.IsSuccessStatusCode)
+            {
+                var retryable = resp.StatusCode == System.Net.HttpStatusCode.TooManyRequests
+                    || (int)resp.StatusCode == 529; // Anthropic's "overloaded_error"
+                if (retryable && attempt < MaxRetries)
+                {
+                    var delay = ResolveRetryDelay(resp, attempt);
+                    log.LogWarning(
+                        "Anthropic {Status} (attempt {Attempt}/{Max}) — retrying in {Delay}s: {Body}",
+                        (int)resp.StatusCode, attempt + 1, MaxRetries, delay.TotalSeconds, Truncate(raw, 200));
+                    await Task.Delay(delay, ct);
+                    continue;
+                }
+                log.LogWarning("Anthropic {Status}: {Body}", (int)resp.StatusCode, raw);
+                throw new InvalidOperationException(
+                    $"Anthropic API {(int)resp.StatusCode}: {Truncate(raw, 500)}");
+            }
+
+            var doc = JsonNode.Parse(raw)
+                ?? throw new InvalidOperationException("Anthropic response was null JSON");
+            var content = doc["content"] as JsonArray ?? new JsonArray();
+            var stopReason = doc["stop_reason"]?.GetValue<string>() ?? "";
+            return new AnthropicTurnResponse(content, stopReason);
         }
+    }
 
-        var doc = JsonNode.Parse(raw)
-            ?? throw new InvalidOperationException("Anthropic response was null JSON");
-        var content = doc["content"] as JsonArray ?? new JsonArray();
-        var stopReason = doc["stop_reason"]?.GetValue<string>() ?? "";
-        return new AnthropicTurnResponse(content, stopReason);
+    /// <summary>Honors a numeric Retry-After header (seconds) when Anthropic sends one;
+    /// otherwise exponential backoff from <see cref="BaseDelay"/>, capped at <see cref="MaxDelay"/>.</summary>
+    private static TimeSpan ResolveRetryDelay(HttpResponseMessage resp, int attempt)
+    {
+        if (resp.Headers.RetryAfter?.Delta is { } delta) return delta;
+        if (resp.Headers.TryGetValues("retry-after", out var values)
+            && double.TryParse(values.FirstOrDefault(), out var secs))
+            return TimeSpan.FromSeconds(secs);
+
+        var backoff = TimeSpan.FromSeconds(BaseDelay.TotalSeconds * Math.Pow(2, attempt));
+        return backoff > MaxDelay ? MaxDelay : backoff;
     }
 
     private static string Truncate(string s, int max) =>

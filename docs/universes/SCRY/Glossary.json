@@ -1,7 +1,7 @@
 {
   "title": "SCRY \u2014 Master Glossary",
-  "generatedAt": "2026-08-12T14:51:54.868348Z",
-  "termCount": 65,
+  "generatedAt": "2026-08-14T08:27:30.6080848Z",
+  "termCount": 66,
   "terms": [
     {
       "term": "Age of Scrying",
@@ -46,6 +46,12 @@
       "category": "Afterlife"
     },
     {
+      "term": "Bolide, The",
+      "fullForm": null,
+      "definition": "The impact that struck Sinter in 1312 absolute (0 AoV) -- the event Entos\u0027s calendar counts forward from. Source of the Cavity, the Ichor, and the quarantine line the Vigil holds at the Pass.",
+      "category": null
+    },
+    {
       "term": "Canon",
       "fullForm": "senior Liturgy rank",
       "definition": "A senior Liturgy office above Lector: interprets doctrine, oversees Lector assignments, and adjudicates the most complex worthiness cases escalated from the field.",
@@ -56,6 +62,12 @@
       "fullForm": "Gifted matter class; Xerum 525 primary",
       "definition": "Infusion of alien Gifted matter into a living person, producing controlled physical change over time -- not consciousness transfer. The body is changed; the person who entered the procedure is the same person afterward, altered rather than replaced. Xerum 525 (\u0022Red Mercury\u0022) is the primary, most-studied Catalyst; field slang is \u0022the dose.\u0022",
       "category": "Tech \u0026 Substances"
+    },
+    {
+      "term": "Cavity, The",
+      "fullForm": "the Sinter Cavity",
+      "definition": "The crater-like descent site within the Sinter quarantine region, where cluster-stage organisms complete and Sinterkin detach. \u0022Sinter\u0022 names the wider quarantined region; \u0022the Cavity\u0022 is the pit itself.",
+      "category": null
     },
     {
       "term": "Champion",
@@ -76,6 +88,12 @@
       "category": "Custom"
     },
     {
+      "term": "Compact, The",
+      "fullForm": null,
+      "definition": "The series of operational agreements -- beginning as an eleven-line truce between three exhausted Basin institutions -- that ended the Blood Century and formalized the transition from warring tribes into the Houses.",
+      "category": "History"
+    },
+    {
       "term": "Eaters of Monsters",
       "fullForm": null,
       "definition": "Fjorheim wildmen who conduct self-directed, unsanctioned Transmutation outside Liturgy control, hunting Wall-breach creatures for the effect their meat produces -- three generations of empirical practice, founded after their predecessors were publicly executed for the same act.",
@@ -92,6 +110,12 @@
       "fullForm": null,
       "definition": "The Sphere -- one cell among many adrift in the Amnios -- where every story in this setting takes place. Feudal, Liturgy-administered, and still counting its years from the Bolide.",
       "category": null
+    },
+    {
+      "term": "Expectant, The",
+      "fullForm": null,
+      "definition": "The vast organism whose body the Amnios and every Sphere inside it belong to -- worshipped by the Liturgy as the source of all Gifted matter, and the entity its doctrine holds gifted humanity the Catalyst in the first place.",
+      "category": "Cosmology"
     },
     {
       "term": "Flood",
@@ -130,6 +154,12 @@
       "category": "Creatures"
     },
     {
+      "term": "Keeper, The",
+      "fullForm": null,
+      "definition": "The person who runs a House\u0027s Scrying installation -- the technical authority whose control of the apparatus determines what the House can manufacture.",
+      "category": "Title"
+    },
+    {
       "term": "Knight",
       "fullForm": "Dame (female form); formal Transmutation rank",
       "definition": "The formal rank earned through multiple Gifted-Ceremony infusions and distinguished service, marking visibly ascendant physical change; the female form is \u0022Dame.\u0022 Continued infusion can carry a Knight toward Paladin and, rarely, Champion status.",
@@ -140,6 +170,24 @@
       "fullForm": null,
       "definition": "A Liturgy field practitioner who travels between Houses administering the Gifted Ceremony, distributing Relics, and independently assessing worthiness -- a judgment no House can override.",
       "category": "Title"
+    },
+    {
+      "term": "Liturgy, The",
+      "fullForm": null,
+      "definition": "The religious-scientific sect that administers the Gifted Ceremony and exists outside House politics, predating the current Houses. Does not fight wars or take territory; its doctrine and rites are the foundation the Houses\u0027 own legitimacy is built on.",
+      "category": "Institutions"
+    },
+    {
+      "term": "Living War, The",
+      "fullForm": null,
+      "definition": "The thousand-year, two-front war that defines Entos: Houses fighting Houses over Scrying territory and coalition advantage, and all Houses fighting the native monsters the war disturbs. No one alive remembers how or why it began.",
+      "category": "History"
+    },
+    {
+      "term": "Loera",
+      "fullForm": "House Loera \u2014 the Cutting Seat",
+      "definition": "The western cliff-coast House of the Entos, styled \u0022the Cutting Seat\u0022 and headed by Imara Loera, \u0022the Unwitnessed.\u0022 Loera governs by charter rather than by parade: covert companies, corsair hulls, and licensed tradecraft crews \u2014 the Blink Thieves\u0027 trade among them \u2014 all operate under Cutting Seat charters, and the head of House is by design the person the record never catches. Because Loera issues its own service kit, \u0022Loera\u0022 functions in the prose as a tradecraft signature rather than a place name: Loera boot-prints (the narrow heel and non-standard toe-cap of the coast tanneries) mark a wearer as Loera service rather than a contractor, and Loera hulls do not change custody mid-crossing whatever harbour they finally put in at.",
+      "category": "Houses"
     },
     {
       "term": "M-101",
@@ -158,6 +206,12 @@
       "fullForm": null,
       "definition": "A Shell (a Liturgy-built android construct) with a human mind Relayed into it and operating it -- the mind always Pierced from another Sphere, never Entos-born, never Transmutation-eligible. Death is permanent: if a Myrmidon\u0027s Shell is destroyed while its mind is still inside, the mind is gone -- no shell-cycle, no return.",
       "category": "Military"
+    },
+    {
+      "term": "Oathless, The",
+      "fullForm": null,
+      "definition": "People outside House structure -- deserters and civilians who never swore, or broke, a House oath. Hunted by the Houses as unlicensed combatants, they scavenge Scried equipment from battlefields and have the highest rate of eating Monster Meat.",
+      "category": "Faction"
     },
     {
       "term": "Ocipheus",
@@ -196,10 +250,22 @@
       "category": "Faction"
     },
     {
+      "term": "Pass, The",
+      "fullForm": null,
+      "definition": "The narrow strait (the Bosphorus analog) separating Entos\u0027s eastern boundary from the quarantined Sinter territory -- the only practical crossing between the two, held by fortified towers, naval patrols, and Eirene\u0027s Gate.",
+      "category": "Geography"
+    },
+    {
       "term": "Piercing",
       "fullForm": null,
       "definition": "The harder, rarer act of reaching through a Sphere\u0027s membrane and drawing something out of another Sphere -- a rupture, not a stretch, that leaves scar tissue behind.",
       "category": "Magic System"
+    },
+    {
+      "term": "Prisoner, The",
+      "fullForm": null,
+      "definition": "Entos\u0027s other central, unsolved mystery alongside the Expectant -- an entity or presence of unknown nature, intent, or even reality, whose possible relationship to the Expectant is deliberately never confirmed in-world.",
+      "category": "Cosmology"
     },
     {
       "term": "Received Tongue",
@@ -232,10 +298,22 @@
       "category": "Technology"
     },
     {
+      "term": "Second Discovery, The",
+      "fullForm": null,
+      "definition": "The first Piercing, in Year 331, which ended the Age of Innocence by turning membrane-work from pure observation into taking.",
+      "category": "History"
+    },
+    {
       "term": "Shell",
       "fullForm": null,
       "definition": "An android construct built by the Liturgy, carrying an Anima Core. Uninhabited, it is just a Shell -- inert, no different from any other piece of equipment. The moment a mind Relays into it, it is a Myrmidon.",
       "category": null
+    },
+    {
+      "term": "Silence, The",
+      "fullForm": null,
+      "definition": "The Liturgy\u0027s highest governing body. It never appears publicly, speaks only through Canon-level intermediaries, and its decisions are final and unexplained.",
+      "category": "Institution"
     },
     {
       "term": "Sinter",
@@ -274,84 +352,6 @@
       "category": null
     },
     {
-      "term": "the Bolide",
-      "fullForm": null,
-      "definition": "The impact that struck Sinter in 1312 absolute (0 AoV) -- the event Entos\u0027s calendar counts forward from. Source of the Cavity, the Ichor, and the quarantine line the Vigil holds at the Pass.",
-      "category": null
-    },
-    {
-      "term": "the Cavity",
-      "fullForm": "the Sinter Cavity",
-      "definition": "The crater-like descent site within the Sinter quarantine region, where cluster-stage organisms complete and Sinterkin detach. \u0022Sinter\u0022 names the wider quarantined region; \u0022the Cavity\u0022 is the pit itself.",
-      "category": null
-    },
-    {
-      "term": "the Compact",
-      "fullForm": null,
-      "definition": "The series of operational agreements -- beginning as an eleven-line truce between three exhausted Basin institutions -- that ended the Blood Century and formalized the transition from warring tribes into the Houses.",
-      "category": "History"
-    },
-    {
-      "term": "the Expectant",
-      "fullForm": null,
-      "definition": "The vast organism whose body the Amnios and every Sphere inside it belong to -- worshipped by the Liturgy as the source of all Gifted matter, and the entity its doctrine holds gifted humanity the Catalyst in the first place.",
-      "category": "Cosmology"
-    },
-    {
-      "term": "the Keeper",
-      "fullForm": null,
-      "definition": "The person who runs a House\u0027s Scrying installation -- the technical authority whose control of the apparatus determines what the House can manufacture.",
-      "category": "Title"
-    },
-    {
-      "term": "the Liturgy",
-      "fullForm": null,
-      "definition": "The religious-scientific sect that administers the Gifted Ceremony and exists outside House politics, predating the current Houses. Does not fight wars or take territory; its doctrine and rites are the foundation the Houses\u0027 own legitimacy is built on.",
-      "category": "Institutions"
-    },
-    {
-      "term": "the Living War",
-      "fullForm": null,
-      "definition": "The thousand-year, two-front war that defines Entos: Houses fighting Houses over Scrying territory and coalition advantage, and all Houses fighting the native monsters the war disturbs. No one alive remembers how or why it began.",
-      "category": "History"
-    },
-    {
-      "term": "the Oathless",
-      "fullForm": null,
-      "definition": "People outside House structure -- deserters and civilians who never swore, or broke, a House oath. Hunted by the Houses as unlicensed combatants, they scavenge Scried equipment from battlefields and have the highest rate of eating Monster Meat.",
-      "category": "Faction"
-    },
-    {
-      "term": "the Pass",
-      "fullForm": null,
-      "definition": "The narrow strait (the Bosphorus analog) separating Entos\u0027s eastern boundary from the quarantined Sinter territory -- the only practical crossing between the two, held by fortified towers, naval patrols, and Eirene\u0027s Gate.",
-      "category": "Geography"
-    },
-    {
-      "term": "the Prisoner",
-      "fullForm": null,
-      "definition": "Entos\u0027s other central, unsolved mystery alongside the Expectant -- an entity or presence of unknown nature, intent, or even reality, whose possible relationship to the Expectant is deliberately never confirmed in-world.",
-      "category": "Cosmology"
-    },
-    {
-      "term": "the Second Discovery",
-      "fullForm": null,
-      "definition": "The first Piercing, in Year 331, which ended the Age of Innocence by turning membrane-work from pure observation into taking.",
-      "category": "History"
-    },
-    {
-      "term": "the Silence",
-      "fullForm": null,
-      "definition": "The Liturgy\u0027s highest governing body. It never appears publicly, speaks only through Canon-level intermediaries, and its decisions are final and unexplained.",
-      "category": "Institution"
-    },
-    {
-      "term": "the Vigil",
-      "fullForm": null,
-      "definition": "The order that holds the quarantine line at the Pass, watching the Sinter border so whatever comes out of it doesn\u0027t reach the rest of Entos.",
-      "category": null
-    },
-    {
       "term": "thin-membrane site",
       "fullForm": null,
       "definition": "A location where the boundary between Spheres is thin enough to make Scrying -- and sometimes Piercing -- practical. Such sites carry incursion risk and unease, and a minority of people can perceive things at the boundary that no apparatus captures.",
@@ -374,6 +374,12 @@
       "fullForm": "vigil watcher",
       "definition": "A long-tenured practitioner stationed for decades at a thin-membrane site to monitor boundary behavior -- distinct from the Vigil holy-warrior order despite the shared word. Some privately describe the membrane as something that \u0022breathes\u0022 and responds to them personally, an observation never entered into any formal record.",
       "category": "Role"
+    },
+    {
+      "term": "Vigil, The",
+      "fullForm": null,
+      "definition": "The order that holds the quarantine line at the Pass, watching the Sinter border so whatever comes out of it doesn\u0027t reach the rest of Entos.",
+      "category": null
     },
     {
       "term": "Warrior King",

@@ -10,20 +10,12 @@ namespace Prose.Core.Services;
 ///
 /// Token counts are estimated from text length (chars / 4) because the Legion
 /// transport returns plain text and does not surface Anthropic usage objects.
-/// Costs use the same per-model pricing table as <see cref="ReviewCostEstimator"/>.
+/// Costs use <see cref="ReviewCostEstimator.GetRatesFor"/> — the single shared pricing
+/// table also used by review-cost estimation and LlmRouter's LlmCallHistory rows, so
+/// this ledger and the durable DB history never disagree on what a model costs.
 /// </summary>
 public sealed class TokenLedger
 {
-    private record ModelPricing(string Label, double InputPerMtok, double OutputPerMtok);
-
-    private static readonly Dictionary<string, ModelPricing> Pricing =
-        new(StringComparer.OrdinalIgnoreCase)
-        {
-            [LlmModels.Haiku]  = new("Haiku 4.5",   0.80,  4.00),
-            [LlmModels.Sonnet] = new("Sonnet 4.6",  3.00, 15.00),
-            [LlmModels.Opus]   = new("Opus 4.8",   15.00, 75.00),
-        };
-
     /// <summary>One recorded LLM call.</summary>
     public sealed record LedgerEntry(
         DateTimeOffset At,
@@ -52,12 +44,16 @@ public sealed class TokenLedger
         var inputTok  = Math.Max(1, (inputText.Length  + 3) / 4);
         var outputTok = Math.Max(1, (outputText.Length + 3) / 4);
 
-        var pricing = Pricing.TryGetValue(model, out var p)
-            ? p
-            : Pricing[LlmModels.Haiku];
-
-        var inputCost  = inputTok  / 1_000_000.0 * pricing.InputPerMtok;
-        var outputCost = outputTok / 1_000_000.0 * pricing.OutputPerMtok;
+        // Subscription-riding CLI providers (Codex CLI, Gemini CLI) have no per-token
+        // metered cost to Prose at all — pricing them at another model's rate would be a
+        // phantom charge.
+        double inputCost = 0, outputCost = 0;
+        if (provider is not ("codex-cli" or "gemini-cli"))
+        {
+            var rates = ReviewCostEstimator.GetRatesFor(model);
+            inputCost  = inputTok  / 1_000_000.0 * rates.InputPerMtok;
+            outputCost = outputTok / 1_000_000.0 * rates.OutputPerMtok;
+        }
 
         entries.Add(new LedgerEntry(
             At:          DateTimeOffset.UtcNow,
@@ -76,9 +72,13 @@ public sealed class TokenLedger
     /// </summary>
     public void RecordActual(string provider, string model, int inputTokens, int outputTokens)
     {
-        var pricing = Pricing.TryGetValue(model, out var p)
-            ? p
-            : Pricing[LlmModels.Haiku];
+        double inputCost = 0, outputCost = 0;
+        if (provider is not ("codex-cli" or "gemini-cli"))
+        {
+            var rates = ReviewCostEstimator.GetRatesFor(model);
+            inputCost  = Math.Max(1, inputTokens)  / 1_000_000.0 * rates.InputPerMtok;
+            outputCost = Math.Max(1, outputTokens) / 1_000_000.0 * rates.OutputPerMtok;
+        }
 
         entries.Add(new LedgerEntry(
             At:          DateTimeOffset.UtcNow,
@@ -86,8 +86,8 @@ public sealed class TokenLedger
             Model:       model,
             InputTokens:  Math.Max(1, inputTokens),
             OutputTokens: Math.Max(1, outputTokens),
-            InputCost:    Math.Max(1, inputTokens)  / 1_000_000.0 * pricing.InputPerMtok,
-            OutputCost:   Math.Max(1, outputTokens) / 1_000_000.0 * pricing.OutputPerMtok));
+            InputCost:    inputCost,
+            OutputCost:   outputCost));
     }
 
     /// <summary>Returns a snapshot of all recorded entries, oldest first.</summary>
@@ -110,7 +110,7 @@ public sealed class TokenLedger
                     g => g.Key,
                     g => new ModelSummary(
                         Model:        g.Key,
-                        Label:        Pricing.TryGetValue(g.Key, out var pr) ? pr.Label : g.Key,
+                        Label:        ReviewCostEstimator.IsKnown(g.Key) ? ReviewCostEstimator.GetRatesFor(g.Key).Label : g.Key,
                         CallCount:    g.Count(),
                         InputTokens:  g.Sum(e => e.InputTokens),
                         OutputTokens: g.Sum(e => e.OutputTokens),

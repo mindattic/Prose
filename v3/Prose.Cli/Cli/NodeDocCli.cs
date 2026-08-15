@@ -9,8 +9,9 @@ namespace Prose.Cli;
 /// <c>prose --generate-node-doc</c> — assemble the unified Story Context Document for a node.
 ///
 /// Merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine
-/// from the DB, writes the result to both <c>Nodes.NodeBible</c> and
-/// <c>docs/nodes/{CODE}.md</c>.  The disk file is a generated read-only mirror.
+/// from the DB, writes the merged result to <c>docs/nodes/{CODE}.md</c> only — the disk
+/// file is a generated read-only mirror. <c>Nodes.NodeBible</c> itself is left holding
+/// pure hand-authored content (fixed 2026-08-14).
 ///
 /// Args:
 ///   --slug &lt;slug&gt;   Target node by slug or NodeCode. Required unless --all is set.

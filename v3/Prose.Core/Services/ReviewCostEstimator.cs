@@ -28,6 +28,15 @@ public static class ReviewCostEstimator
             ["claude-sonnet-4-6"]         = new("Sonnet 4.6",  3.00,  3.75, 0.30, 15.00),
             ["claude-sonnet-5"]           = new("Sonnet 5",    3.00,  3.75, 0.30, 15.00),
             ["claude-opus-4-8"]           = new("Opus 4.8",   15.00, 18.75, 1.50, 75.00),
+            // Non-Anthropic default models for the Multi-LLM Master Switch-Over fallback
+            // chain — approximate public rates as of 2026-08, no cache-write/read tiers
+            // for these providers (input rate reused for both). Verify against each
+            // vendor's current pricing page before trusting for large-scale spend.
+            ["gpt-4.1-mini"]              = new("GPT-4.1 mini", 0.40, 0.40, 0.40, 1.60),
+            ["gemini-2.5-flash"]          = new("Gemini 2.5 Flash", 0.30, 0.30, 0.30, 2.50),
+            ["deepseek-chat"]             = new("DeepSeek Chat", 0.28, 0.28, 0.28, 0.42),
+            ["mistral-large-latest"]      = new("Mistral Large", 2.00, 2.00, 2.00, 6.00),
+            ["sonar"]                     = new("Perplexity Sonar", 1.00, 1.00, 1.00, 1.00),
         };
 
     /// <summary>Register pricing for a model at runtime — used by
@@ -44,6 +53,17 @@ public static class ReviewCostEstimator
     /// <summary>True when the model has a real pricing row (estimates for unknown
     /// models fall back to Haiku rates and are labeled as such in the table).</summary>
     public static bool IsKnown(string model) => KnownPricing.ContainsKey(model);
+
+    /// <summary>
+    /// Public per-Mtok input/output rates for a model — the single shared pricing source
+    /// for both review-cost estimation and <see cref="TokenLedger"/>'s per-call cost
+    /// tracking, so the two never disagree on what a model costs.
+    /// </summary>
+    public static (string Label, double InputPerMtok, double OutputPerMtok) GetRatesFor(string model)
+    {
+        var p = PricingFor(model);
+        return (p.Label, p.InputPerMtok, p.OutputPerMtok);
+    }
 
     private static ModelPricing PricingFor(string model) =>
         KnownPricing.TryGetValue(model, out var p)
