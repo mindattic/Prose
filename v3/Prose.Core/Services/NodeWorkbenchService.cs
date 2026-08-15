@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Interfaces;
+using Prose.Core.Services.Audit;
 
 namespace Prose.Core.Services;
 
@@ -59,7 +60,9 @@ public class NodeWorkbenchService
         EntityRamificationService? ramification = null,
         PostBeatValidationService? postBeatValidator = null,
         SemanticFidelityService? semanticFidelity = null,
-        EditSessionService? editSession = null)
+        EditSessionService? editSession = null,
+        BlastRadiusService? blastRadius = null,
+        LogicSweepService? logicSweep = null)
     {
         this.dbFactory = dbFactory;
         this.tts = tts;
@@ -71,12 +74,16 @@ public class NodeWorkbenchService
         this.postBeatValidator = postBeatValidator;
         this.semanticFidelity = semanticFidelity;
         this.editSession = editSession;
+        this.blastRadius = blastRadius;
+        this.logicSweep = logicSweep;
     }
 
     private readonly EntityRamificationService? ramification;
     private readonly PostBeatValidationService? postBeatValidator;
     private readonly SemanticFidelityService? semanticFidelity;
     private readonly EditSessionService? editSession;
+    private readonly BlastRadiusService? blastRadius;
+    private readonly LogicSweepService? logicSweep;
 
     // ── Reads ────────────────────────────────────────────────────────────
 
@@ -295,6 +302,48 @@ public class NodeWorkbenchService
                     () => semanticFidelity.CheckBeatIntentDriftAsync(number, slug2, trimmed, synopsis),
                     CancellationToken.None)
                 .ContinueWith(t => log.LogError(t.Exception, "CheckBeatIntentDriftAsync background task failed"),
+                    TaskContinuationOptions.OnlyOnFaulted);
+        }
+
+        // Fire-and-forget: blast-radius mini re-check (2026-08-14). Every prose edit — not just
+        // an automated fix pass — is exactly where VIGL's regressions came from this session (the
+        // Ocipheus mis-fix, the Ch18 over-correction), so this runs for every save through this
+        // one write path, not a special "fix mode" flag. Resolves the containing BookNode by
+        // walking ParentNodeId up from the beat's direct chapter node while `db` is still open —
+        // the background task below gets its own contexts via blastRadius/logicSweep's own
+        // dbFactory, since `db` is disposed once this method returns.
+        Guid? bookNodeId = null;
+        if (blastRadius != null && logicSweep != null)
+        {
+            var directNodeId = await db.BeatNodes.AsNoTracking()
+                .Where(bn => bn.BeatId == beatId)
+                .Select(bn => bn.NodeId)
+                .FirstOrDefaultAsync(ct);
+            if (directNodeId != Guid.Empty)
+            {
+                var walkId = directNodeId;
+                for (var depth = 0; depth < 10; depth++)
+                {
+                    var parent = await db.Nodes.AsNoTracking()
+                        .Where(n => n.Id == walkId)
+                        .Select(n => n.ParentNodeId)
+                        .FirstOrDefaultAsync(ct);
+                    if (parent == null) { bookNodeId = walkId; break; }
+                    walkId = parent.Value;
+                }
+            }
+        }
+
+        if (blastRadius != null && logicSweep != null && bookNodeId.HasValue)
+        {
+            var bnId = bookNodeId.Value;
+            _ = Task.Run(async () =>
+                {
+                    var radiusIds = await blastRadius.GetBlastRadiusBeatIdsAsync(beatId, ct: CancellationToken.None);
+                    if (radiusIds.Count > 0)
+                        await logicSweep.RunNarrowAsync(bnId, radiusIds, beatId, CancellationToken.None);
+                }, CancellationToken.None)
+                .ContinueWith(t => log.LogError(t.Exception, "Blast-radius RunNarrowAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
         }
     }

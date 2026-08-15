@@ -26,6 +26,7 @@ public class CanonContradictionService
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly NodeWorkbenchService workbench;
     private readonly CanonRetrievalService retrieval;
+    private readonly EmbeddingService embeddings;
     private readonly ILlmService llm;
     private readonly FindingsService findings;
     private readonly ILogger<CanonContradictionService> log;
@@ -36,6 +37,7 @@ public class CanonContradictionService
         IDbContextFactory<ProseDbContext> dbFactory,
         NodeWorkbenchService workbench,
         CanonRetrievalService retrieval,
+        EmbeddingService embeddings,
         ILlmService llm,
         FindingsService findings,
         ILogger<CanonContradictionService> log)
@@ -43,6 +45,7 @@ public class CanonContradictionService
         this.dbFactory = dbFactory;
         this.workbench = workbench;
         this.retrieval = retrieval;
+        this.embeddings = embeddings;
         this.llm = llm;
         this.findings = findings;
         this.log = log;
@@ -66,6 +69,29 @@ public class CanonContradictionService
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
         var prose = string.Join("\n\n", ordered.Select(o => (o.Beat.Text ?? "").Trim()).Where(t => t.Length > 0));
         if (prose.Length == 0) return new CheckResult(node.Slug, 0, []);
+
+        // 2026-08-14 fix: EmbeddingService.EnsureFreshAsync had zero call sites anywhere in the
+        // codebase — nothing re-embedded an entity's canon vector after its Description changed
+        // (e.g. via set_book_bible-driven corrections), so FindSimilarAsync's top-k ranking could
+        // keep weighing a book-specific entity by a stale vector indefinitely; only a manual
+        // `prose --reembed` ever closed the gap. Refresh is hash-gated (no-op unless the source
+        // text actually changed) and scoped to just this book's own entities (OriginNodeId ==
+        // nodeId) — cheap and bounded, not a corpus-wide sweep — so check-canon never audits a
+        // book against its own stale vectors again.
+        var bookEntities = await db.Entities.AsNoTracking()
+            .Where(e => e.OriginNodeId == nodeId && e.IsActive)
+            .Select(e => new { e.Id, e.Name, e.EntityType, e.Description })
+            .ToListAsync(ct);
+        foreach (var e in bookEntities)
+        {
+            try
+            {
+                var sourceText = EmbeddingService.BuildSourceText(
+                    new Data.Entities.Entity { Id = e.Id, Name = e.Name, EntityType = e.EntityType, Description = e.Description });
+                await embeddings.EnsureFreshAsync(e.Id, sourceText, ct);
+            }
+            catch (Exception ex) { log.LogWarning(ex, "EnsureFreshAsync failed for entity {EntityId} ({Name})", e.Id, e.Name); }
+        }
 
         var all = new List<Contradiction>();
         int chunks = 0;
@@ -102,6 +128,33 @@ public class CanonContradictionService
                 log.LogWarning(ex, "Contradiction detection failed for a chunk of {Slug}", node.Slug);
                 continue;
             }
+
+            // 2026-08-14 fix: top-24 embedding retrieval with no type filter can surface a
+            // DIFFERENT same-book entity's canon doc for a chunk that's actually about someone
+            // else (two characters with heavily overlapping vocabulary — e.g. both "Vigil,"
+            // "Templar," a tenure length — rank close together). Nothing previously stopped the
+            // LLM from attributing one entity's documented fact to a different entity actually
+            // named in the prose. Mechanical, not another LLM judgment call: if a contradiction
+            // names an Entity and gives a Snippet, that entity's name must actually appear in the
+            // snippet it's supposedly drawn from — same grounding principle as
+            // BeatVerificationService.VerifyQuoteGroundingAsync. A snippet that doesn't mention
+            // the named entity at all is a strong signal the LLM cited the wrong person's canon.
+            var grounded = new List<Contradiction>(found.Count);
+            var droppedForMisattribution = 0;
+            foreach (var c in found)
+            {
+                if (!string.IsNullOrWhiteSpace(c.Snippet) && !string.IsNullOrWhiteSpace(c.Entity)
+                    && c.Entity != "(unnamed)" && !IsEntityGroundedInSnippet(c.Entity, c.Snippet))
+                {
+                    droppedForMisattribution++;
+                    log.LogWarning(
+                        "Dropped a CANON-CONTRADICTION candidate for {Slug}: entity \"{Entity}\" does not appear in its own cited snippet \"{Snippet}\" — likely cross-entity misattribution.",
+                        node.Slug, c.Entity, c.Snippet);
+                    continue;
+                }
+                grounded.Add(c);
+            }
+            found = grounded;
 
             // Bounded self-correction: for high-severity hits with a located
             // snippet, generate a canon-honoring rewrite of just that span and
@@ -222,6 +275,19 @@ public class CanonContradictionService
             return string.IsNullOrWhiteSpace(rewrite) ? null : rewrite;
         }
         catch (Exception ex) { log.LogWarning(ex, "Span rewrite failed"); return null; }
+    }
+
+    /// <summary>Mechanical check (no LLM): does the named entity actually appear in the snippet
+    /// the model cited as evidence for the contradiction against it? Checks the full name first,
+    /// then falls back to the first word (handles "Vega" matching a snippet that only ever wrote
+    /// "Vega Marrow" or vice versa). A snippet that never mentions the entity at all is the
+    /// signature of cross-entity misattribution, not a naming-format mismatch.</summary>
+    internal static bool IsEntityGroundedInSnippet(string entity, string snippet)
+    {
+        if (snippet.Contains(entity, StringComparison.OrdinalIgnoreCase)) return true;
+        var firstWord = entity.Split(' ', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault();
+        return !string.IsNullOrWhiteSpace(firstWord) && firstWord.Length >= 3
+            && snippet.Contains(firstWord, StringComparison.OrdinalIgnoreCase);
     }
 
     /// <summary>Throws (InvalidOperationException / JsonException) when no JSON array can be

@@ -29,8 +29,23 @@ namespace Prose.Core.Services.Audit;
 public class LogicSweepService(
     AuditRunner auditRunner,
     PlantPayoffService plantPayoffs,
-    IDbContextFactory<ProseDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory,
+    FindingsService findingsSvc)
 {
+    /// <summary>Consecutive clean (zero-finding) rounds required before a book is considered
+    /// converged. 2, not 1 — a single clean round could just be the sample variance any one
+    /// LLM-judgment sweep carries; two in a row is real signal that nothing further is
+    /// surfacing, not that this particular read happened not to notice anything.</summary>
+    public const int DefaultRequiredDryRounds = 2;
+
+    /// <summary>Safety cap on total rounds before "not converging" is escalated as its own
+    /// finding instead of looping forever. Matches the project's own "if you can't name the
+    /// failure, leave the beat alone" doctrine — repeated fixing that keeps finding NEW things
+    /// without ever reaching two clean rounds in a row is itself a signal (the underlying
+    /// section likely needs a structural rewrite, not another fix pass), not something to hide
+    /// behind an unbounded loop.</summary>
+    public const int DefaultMaxTotalRounds = 8;
+
     public async Task<LogicSweepReport> RunAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -90,6 +105,194 @@ public class LogicSweepService(
             "LOGICSWEEP", $"node:{node.Slug}", FindingCategory.Contradiction, rules, ctx, ct: ct);
 
         return new LogicSweepReport(nodeId, node.Slug, node.Title, beats.Count, verdicts);
+    }
+
+    /// <summary>
+    /// Blast-radius mini re-check (2026-08-14) — the same five whole-book-agnostic dimensions as
+    /// <see cref="RunAsync"/> (causality, knowledge states, timeline, plant/payoff, orphan refs,
+    /// bible agreement), but scoped to a caller-supplied beat-ID subset instead of the whole
+    /// book's prose. Exists so a fix pass (an --edit-beat, or the /logic-sweep skill's own Step 5)
+    /// can verify its own side effects against its immediate neighbors in the SAME turn, instead
+    /// of waiting for the next independent full-book sweep round to catch a regression it
+    /// introduced — VIGL hit this repeatedly this session (the Ocipheus mis-fix, the Ch18 "two
+    /// places at once" over-correction), each surviving multiple sweep rounds before being caught.
+    /// Pair with <see cref="BlastRadiusService.GetBlastRadiusBeatIdsAsync"/> for the beat-ID set.
+    ///
+    /// <see cref="InsertedBeatDriftRule"/> is deliberately excluded — its "late-inserted beat"
+    /// signal is computed from the WHOLE book's BeatNodes.SortKey grid (see FindInserted's
+    /// remarks), which a cross-chapter blast-radius subset doesn't carry meaningfully.
+    ///
+    /// Findings are filed under a scope key distinct from the full sweep's ("beat:{anchorBeatId}:
+    /// blast" vs. "node:{slug}") so this narrow check's delete-then-recreate lifecycle never
+    /// collides with or purges the full-book sweep's own findings.
+    /// </summary>
+    public async Task<LogicSweepReport> RunNarrowAsync(
+        Guid nodeId, IReadOnlyList<Guid> beatIds, Guid anchorBeatId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+
+        if (beatIds.Count == 0)
+            return new LogicSweepReport(nodeId, node.Slug, node.Title, 0, []);
+
+        var beatRows = await db.Beats.AsNoTracking()
+            .Where(b => beatIds.Contains(b.Id) && b.Text != null && b.Text != "")
+            .Select(b => new { b.Id, b.Number, b.Text })
+            .ToListAsync(ct);
+        if (beatRows.Count == 0)
+            return new LogicSweepReport(nodeId, node.Slug, node.Title, 0, []);
+
+        // Ordered by Number (a stable, book-wide reading-order proxy) — SortKey isn't meaningful
+        // across a cross-chapter blast-radius set the way it is within a single chapter.
+        var beats = beatRows.OrderBy(b => b.Number)
+            .Select((b, i) => new AuditBeat(b.Id, b.Number, b.Text, i)).ToList();
+        var prose = string.Join("\n\n", beats.Select(b => $"[Beat #{b.Number}]\n{b.Text}"));
+
+        var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
+        var extra = new Dictionary<string, object?>
+        {
+            ["bible"]            = node.NodeBible,
+            ["plants"]           = plants,
+            ["disabledSnippets"] = new List<string>(),
+        };
+        var ctx = new AuditContext(nodeId, node.UniverseId, AuditProseUtils.ClampProse(prose), beats, extra);
+
+        IReadOnlyList<IAuditRule> rules =
+        [
+            new CausalityChainRule(),
+            new KnowledgeStatesRule(),
+            new TimelineRule(),
+            new PlantPayoffRule(),
+            new OrphanReferencesRule(),
+            new BibleAgreementRule(),
+        ];
+
+        var scopeKey = $"beat:{anchorBeatId:N}:blast";
+        var verdicts = await auditRunner.RunAsync(
+            "LOGICSWEEP-BLAST", scopeKey, FindingCategory.Contradiction, rules, ctx, ct: ct);
+
+        return new LogicSweepReport(nodeId, node.Slug, node.Title, beats.Count, verdicts);
+    }
+
+    // ── Loop-until-dry convergence (2026-08-14) ─────────────────────────────────────
+
+    /// <summary>
+    /// Runs ONE sweep round as part of a "loop-until-dry" convergence campaign, tracking state
+    /// in <see cref="NodeConvergenceState"/> so the campaign survives across sessions — this is
+    /// what replaces "run the sweep N times regardless of what it found" (the user's own
+    /// stated pattern this fix responds to: 5 rounds run, a 6th independent run still finding
+    /// something new) with an actual convergence criterion.
+    ///
+    /// This is deliberately ONE round per call, not an internal while-loop: fixing a finding
+    /// happens OUTSIDE this service (a human, the /logic-sweep skill's own fix-pass step, or an
+    /// orchestrating agent) between rounds, so there is nothing for a tight in-process loop to
+    /// wait on — calling this repeatedly across turns/sessions, with a fix pass in between, IS
+    /// the loop.
+    ///
+    /// <b>The three outcomes:</b>
+    /// <list type="bullet">
+    /// <item><b>Skipped</b> — the book's content fingerprint hasn't changed since the last
+    /// recorded round AND the required consecutive-dry-round count was already reached. No LLM
+    /// calls made; report "already converged, nothing to do."</item>
+    /// <item><b>Converged</b> — this round (plus however many immediately preceding it) reached
+    /// <paramref name="requiredDryRounds"/> consecutive clean (zero-finding) rounds.</item>
+    /// <item><b>Safety cap hit</b> — <paramref name="maxTotalRounds"/> rounds have run without
+    /// converging. Filed as its own LOGICSWEEP-CONVERGENCE finding (escalate, don't loop
+    /// forever) and the round counter resets so the next attempt — presumably after a
+    /// structural rewrite of the offending section, not just another fix pass — gets a fresh
+    /// budget.</item>
+    /// </list>
+    ///
+    /// A round that finds anything (a "dirty" round) resets <c>ConsecutiveDryRounds</c> to 0
+    /// even if the book's content hasn't otherwise changed — matching BlastRadiusService's own
+    /// rationale that a fix pass is itself a source of risk, so convergence must be re-earned
+    /// after every round that touched something, not just after the sweep happens to run clean
+    /// once.
+    /// </summary>
+    public async Task<ConvergenceRoundResult> RunConvergenceRoundAsync(
+        Guid nodeId, int requiredDryRounds = DefaultRequiredDryRounds, int maxTotalRounds = DefaultMaxTotalRounds,
+        CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+
+        var fingerprint = await ComputeBookFingerprintAsync(db, nodeId, ct);
+        var state = await db.NodeConvergenceStates.FirstOrDefaultAsync(s => s.NodeId == nodeId, ct);
+
+        if (state != null && state.LastBookFingerprint == fingerprint && state.ConsecutiveDryRounds >= requiredDryRounds)
+        {
+            return new ConvergenceRoundResult(nodeId, node.Slug, Skipped: true, Converged: true, HitSafetyCap: false,
+                state.ConsecutiveDryRounds, state.TotalRoundsRun, null,
+                $"Already converged ({state.ConsecutiveDryRounds} consecutive dry rounds) and nothing has changed since the last round — skipping.");
+        }
+
+        // A book whose content changed since the last recorded state must re-earn convergence:
+        // "converged" was a claim about the OLD text, not this one.
+        var contentChanged = state == null || state.LastBookFingerprint != fingerprint;
+        var consecutiveDry = contentChanged ? 0 : state!.ConsecutiveDryRounds;
+        var totalRounds = (state?.TotalRoundsRun ?? 0) + 1;
+
+        var report = await RunAsync(nodeId, ct);
+        consecutiveDry = report.Findings.Count == 0 ? consecutiveDry + 1 : 0;
+        var newFingerprint = await ComputeBookFingerprintAsync(db, nodeId, ct);
+
+        var converged = consecutiveDry >= requiredDryRounds;
+        var hitCap = !converged && totalRounds >= maxTotalRounds;
+
+        if (state == null)
+        {
+            state = new NodeConvergenceState { NodeId = nodeId };
+            db.NodeConvergenceStates.Add(state);
+        }
+        // Hitting the cap resets BOTH counters — the next attempt (presumably after a
+        // structural rewrite, per the escalation finding below) gets a clean budget rather than
+        // immediately re-tripping the same cap on its very next round.
+        state.ConsecutiveDryRounds = hitCap ? 0 : consecutiveDry;
+        state.TotalRoundsRun       = hitCap ? 0 : totalRounds;
+        state.LastBookFingerprint  = newFingerprint;
+        state.LastRoundAt          = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+
+        findingsSvc.DeleteBySummaryPrefix($"node:{node.Slug}", "LOGICSWEEP-CONVERGENCE ");
+        if (hitCap)
+        {
+            findingsSvc.Upsert($"node:{node.Slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.Medium,
+                $"LOGICSWEEP-CONVERGENCE [not-converging]: {totalRounds} sweep rounds run without reaching " +
+                $"{requiredDryRounds} consecutive clean rounds — this book keeps surfacing new findings faster " +
+                "than fix passes resolve them. Likely needs a structural rewrite of the offending section, not another fix pass.",
+                snippet: null,
+                suggestedFix: "Read the accumulated findings for a common thread (one scene, one character arc, one plot thread) and rewrite that section directly, rather than patching individual findings one at a time.");
+        }
+
+        var message = converged
+            ? $"Converged after {totalRounds} total round(s) — {requiredDryRounds} consecutive clean rounds reached."
+            : hitCap
+                ? $"Safety cap hit at {totalRounds} rounds without converging — filed as its own finding. Round counters reset."
+                : $"Round {totalRounds}: {report.Findings.Count} finding(s) this round, {consecutiveDry}/{requiredDryRounds} consecutive dry rounds so far.";
+
+        return new ConvergenceRoundResult(nodeId, node.Slug, Skipped: false, converged, hitCap,
+            consecutiveDry, totalRounds, report, message);
+    }
+
+    /// <summary>Book-wide content fingerprint: <see cref="Beat.ComputeHash"/> over the
+    /// concatenation of every enabled beat's own ComputeHash, in the SAME order (leaf-descendant
+    /// walk, ordered by BeatNodes.SortKey) <see cref="RunAsync"/> itself reads them in — any
+    /// beat text change anywhere in the book changes this fingerprint. Computed from live
+    /// Beat.Text directly rather than trusting the stored Beat.TextHash column, which can be
+    /// null or stale for a beat that predates the stamping mechanism.</summary>
+    private static async Task<string> ComputeBookFingerprintAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
+    {
+        var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var texts = await db.BeatNodes.AsNoTracking()
+            .Where(bn => nodeIds.Contains(bn.NodeId) && true && bn.Beat != null
+                      && bn.Beat!.Text != null && bn.Beat.Text != "")
+            .OrderBy(bn => bn.SortKey)
+            .Select(bn => bn.Beat!.Text)
+            .ToListAsync(ct);
+        var combined = string.Join("|", texts.Select(Beat.ComputeHash));
+        return Beat.ComputeHash(combined);
     }
 
     // ── Shared JSON-array parsing for all six dimensions ──────────────────────────
@@ -458,3 +661,9 @@ public record LogicSweepReport(
     public int MinorCount     => Findings.Count(f => f.Severity == "MINOR");
     public bool Clean         => Findings.Count == 0;
 }
+
+/// <summary>One round of a loop-until-dry convergence campaign — see
+/// <see cref="LogicSweepService.RunConvergenceRoundAsync"/>.</summary>
+public record ConvergenceRoundResult(
+    Guid NodeId, string NodeSlug, bool Skipped, bool Converged, bool HitSafetyCap,
+    int ConsecutiveDryRounds, int TotalRoundsRun, LogicSweepReport? Report, string Message);

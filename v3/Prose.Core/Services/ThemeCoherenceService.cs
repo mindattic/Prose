@@ -67,8 +67,19 @@ public class ThemeCoherenceService(
         var closing = beats.Count > BookendBeatCount
             ? beats.Skip(Math.Max(0, beats.Count - BookendBeatCount)).ToList()
             : [];
+        // 2026-08-14 fix: opening+closing alone (the original 4-beat sample) is structurally
+        // blind to a book whose theme is built or complicated in the middle — the normal place
+        // for that to happen on any book long enough to have one. Adds a midpoint sample so the
+        // model has at least some mid-book signal; still one LLM call, not a per-beat scan.
+        var midpointStart = beats.Count / 2 - BookendBeatCount / 2;
+        var midpoint = beats.Count > BookendBeatCount * 3
+            ? beats.Skip(Math.Max(BookendBeatCount, midpointStart)).Take(BookendBeatCount).ToList()
+            : [];
 
         var openingText = string.Join("\n---\n", opening.Select(b => $"[Beat {b.Number}]\n{Truncate(b.Text!, 1500)}"));
+        var midpointText = midpoint.Count > 0
+            ? string.Join("\n---\n", midpoint.Select(b => $"[Beat {b.Number}]\n{Truncate(b.Text!, 1500)}"))
+            : "(book too short for a distinct midpoint sample)";
         var closingText = closing.Count > 0
             ? string.Join("\n---\n", closing.Select(b => $"[Beat {b.Number}]\n{Truncate(b.Text!, 1500)}"))
             : "(book has fewer than " + (BookendBeatCount + 1) + " written beats — opening and closing overlap)";
@@ -112,18 +123,25 @@ public class ThemeCoherenceService(
             OPENING BEATS:
             {openingText}
 
+            MIDPOINT BEATS (where a theme is often complicated or tested, not just posed/answered):
+            {midpointText}
+
             CLOSING BEATS:
             {closingText}
             """;
 
         var raw = await llm.GenerateAsync(system, user, temperature: 0.4, maxTokens: 900, ct: ct);
-        var result = ParseJson<ThemeCoherenceResult>(raw) ?? new ThemeCoherenceResult
-        {
-            NodeSlug = node.Slug ?? "",
-            Confidence = "low",
-            Error = "(parse error)",
-            RawResponse = raw,
-        };
+        // Throw rather than fabricate a stub result (2026-08-14 fix). The old fallback left
+        // EndingEngagesOpening at its bool default (true) — harmless against the one caller that
+        // already checks `Error != null` first and returns before reading it, but a live footgun
+        // for any other caller, and it did nothing for the more likely partial-parse case: valid
+        // JSON that simply omits ending_engages_opening would deserialize clean, Error would stay
+        // null, and EndingEngagesOpening would silently read "true" with no error signal at all.
+        // EndingEngagesOpening is now nullable (see model) so a missing field is visibly null,
+        // not a fabricated pass, and a total parse failure surfaces as a thrown exception the
+        // caller files as its own [incomplete] finding instead of silently returning nothing.
+        var result = ParseJson<ThemeCoherenceResult>(raw)
+            ?? throw new InvalidOperationException($"Could not parse theme-coherence response: {raw[..Math.Min(200, raw.Length)]}");
         result.NodeSlug = node.Slug ?? "";
         return result;
     }
@@ -154,7 +172,11 @@ public class ThemeCoherenceResult
     [JsonPropertyName("theme_stated_as_commentary")]public bool   ThemeStatedAsCommentary  { get; set; }
     [JsonPropertyName("commentary_quote")]          public string CommentaryQuote          { get; set; } = "";
     [JsonPropertyName("commentary_beat_number")]    public int?   CommentaryBeatNumber     { get; set; }
-    [JsonPropertyName("ending_engages_opening")]    public bool   EndingEngagesOpening     { get; set; } = true;
+    // Nullable, no default (2026-08-14 fix): a bool default of true meant a syntactically valid
+    // JSON response that simply omitted this field would silently deserialize as "yes, engages" —
+    // no parse error, no thrown exception, indistinguishable from a real judgment. Null now means
+    // "the model didn't say" rather than "the model said yes."
+    [JsonPropertyName("ending_engages_opening")]    public bool?  EndingEngagesOpening     { get; set; }
     [JsonPropertyName("diagnosis")]                 public string Diagnosis               { get; set; } = "";
     [JsonIgnore]                                    public string NodeSlug                { get; set; } = "";
     [JsonIgnore]                                    public string? Error                  { get; set; }

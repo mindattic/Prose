@@ -34,9 +34,10 @@ public class BookAuditChapterAssemblyTests
         paths = new TestPathProviderWithRoot(tempRoot);
         dbFactory = TestDbFactory.For(paths, "nodes");
         llm = new CapturingLlmService();
-        var auditRunner = new AuditRunner(llm, new FindingsService(dbFactory, paths));
+        var findingsSvc = new FindingsService(dbFactory, paths);
+        var auditRunner = new AuditRunner(llm, findingsSvc);
         var glossary = new GlossaryService(dbFactory, paths, NullLogger<GlossaryService>.Instance);
-        svc = new BookAuditService(auditRunner, new PlantPayoffService(dbFactory), glossary, dbFactory);
+        svc = new BookAuditService(auditRunner, new PlantPayoffService(dbFactory), glossary, findingsSvc, dbFactory);
     }
 
     [TearDown]
@@ -102,9 +103,10 @@ public class BookAuditChapterAssemblyTests
         // MODERATE, which the old status mapping treated as a non-blocking "warn". A book
         // could be reported publish-ready with zero of its commandments actually checked.
         var throwingLlm = new ThrowingLlmService();
-        var auditRunner = new AuditRunner(throwingLlm, new FindingsService(dbFactory, paths));
+        var throwingFindingsSvc = new FindingsService(dbFactory, paths);
+        var auditRunner = new AuditRunner(throwingLlm, throwingFindingsSvc);
         var glossary = new GlossaryService(dbFactory, paths, NullLogger<GlossaryService>.Instance);
-        var throwingSvc = new BookAuditService(auditRunner, new PlantPayoffService(dbFactory), glossary, dbFactory);
+        var throwingSvc = new BookAuditService(auditRunner, new PlantPayoffService(dbFactory), glossary, throwingFindingsSvc, dbFactory);
 
         var bookId = await SeedNodeWithBeatAsync("book", "Some prose.");
 

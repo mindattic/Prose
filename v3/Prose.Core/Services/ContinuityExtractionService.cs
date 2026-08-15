@@ -2,7 +2,6 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MindAttic.Legion;
 using Prose.Core.Data;
 using Prose.Core.Interfaces;
 using Prose.Core.Models;
@@ -16,15 +15,20 @@ namespace Prose.Core.Services;
 /// for upsert. Contradictions are surfaced automatically (same predicate,
 /// different object on the same entity).
 ///
-/// Backed by Legion's <see cref="LlmVotingService"/> Quorum vote: every active
-/// LLM provider becomes a voter, and only candidates whose snippet exists in
-/// the source prose survive. This gives multi-model agreement on what's
-/// actually being asserted.
+/// 2026-08-14: de-Legion'd — was backed by Legion's <c>LlmVotingService</c>
+/// Quorum vote (every active LLM provider as a voter). That vote's only
+/// externally-visible product beyond the candidate list was a corroboration
+/// count nothing downstream actually consumed, and Quorum/panel voting is
+/// project-wide quarantined by SS-A44 ("no votes/panels unless explicitly
+/// requested"). Now a single <see cref="ILlmService"/> call, same pattern as
+/// NarrativeScienceService/ThemeCoherenceService. Snippet-in-prose grounding
+/// (every fact must be an exact substring quote) is unchanged and is the real
+/// quality gate, not the vote.
 /// </summary>
 public class ContinuityExtractionService
 {
     private readonly ContinuityService store;
-    private readonly LlmVotingService voting;
+    private readonly ILlmService llm;
     private readonly IChapterRepository chapters;
     private readonly CharacterRepository peopleRepo;
     private readonly DistrictRepository placesRepo;
@@ -35,7 +39,7 @@ public class ContinuityExtractionService
 
     public ContinuityExtractionService(
         ContinuityService store,
-        LlmVotingService voting,
+        ILlmService llm,
         IChapterRepository chapters,
         CharacterRepository peopleRepo,
         DistrictRepository placesRepo,
@@ -45,7 +49,7 @@ public class ContinuityExtractionService
         ILogger<ContinuityExtractionService> log)
     {
         this.store           = store;
-        this.voting          = voting;
+        this.llm             = llm;
         this.chapters        = chapters;
         this.peopleRepo      = peopleRepo;
         this.placesRepo      = placesRepo;
@@ -80,9 +84,7 @@ public class ContinuityExtractionService
     /// </param>
     public async Task<ContinuityExtractionResult> ExtractFromChapterAsync(
         string chapterId,
-        Quorum quorum = Quorum.Plurality,
         int maxTokens = 4096,
-        int minVoters = 1,
         string? bookSlug = null,
         CancellationToken ct = default)
     {
@@ -95,75 +97,155 @@ public class ContinuityExtractionService
         log.LogInformation("[continuity] Extracting from chapter {Num}: {Title} ({Chars} chars)",
             chapter.Number, chapter.Title, prose.Length);
 
-        var context =
-            "=== CHAPTER PROSE (extract facts from this) ===\n" +
-            $"Chapter {chapter.Number}: {chapter.Title}\n\n" +
-            prose;
+        var contextHeader = "=== CHAPTER PROSE (extract facts from this) ===\n" +
+            $"Chapter {chapter.Number}: {chapter.Title}\n";
 
-        var voteRequest = new VoteRequest
+        return await ExtractClaimsFromProseAsync(
+            prose, contextHeader, chapter.Id, chapter.Number, chapter.Title, bookSlug, maxTokens, ct);
+    }
+
+    /// <summary>
+    /// Extract continuity claims from every chapter in a book. Sequential to
+    /// keep cost predictable; long-running.
+    /// </summary>
+    public async Task<List<ContinuityExtractionResult>> ExtractFromBookAsync(
+        Book book,
+        int maxTokens = 4096,
+        CancellationToken ct = default)
+    {
+        var results = new List<ContinuityExtractionResult>();
+        foreach (var cid in book.ChapterIds ?? new())
         {
-            Question  = ExtractionQuestion,
-            Context   = context,
-            MaxTokens = maxTokens,
-            SynthesizeNarrative = false,
-        };
-        var vote = await voting.VoteAsync(voteRequest, quorum, ct);
+            ct.ThrowIfCancellationRequested();
+            try
+            {
+                var r = await ExtractFromChapterAsync(cid, maxTokens, bookSlug: null, ct);
+                results.Add(r);
+            }
+            catch (Exception ex)
+            {
+                log.LogError(ex, "[continuity] Chapter {Cid} extraction failed", cid);
+                results.Add(new ContinuityExtractionResult { ChapterId = cid, Error = ex.Message });
+            }
+        }
+        return results;
+    }
 
-        log.LogInformation("[continuity] Vote complete — {Successful}/{Total} voters returned",
-            vote.SuccessfulVoters, vote.IndividualVotes.Count);
+    /// <summary>
+    /// Extract continuity claims from every leaf chapter under a modern SS-A43 BookNode
+    /// (<c>Nodes</c>/<c>BeatNodes</c>/<c>Beats</c>) — the counterpart to
+    /// <see cref="ExtractFromBookAsync"/>, which only knows the legacy
+    /// <see cref="IBookRepository"/>/<see cref="IChapterRepository"/> model. Every book created
+    /// under the locked New Story Workflow pipeline (VIGL included) lives here, not there, so
+    /// this is the method a BookHealthService-style per-node caller needs. Every claim is
+    /// tagged with the book node's own Slug so <see cref="ContinuityService.GetContradictionGroups"/>
+    /// can be scoped to just this book.
+    /// </summary>
+    public async Task<List<ContinuityExtractionResult>> ExtractFromBookNodeAsync(
+        Guid nodeId, int maxTokens = 4096, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        var bookSlug = node.Slug;
 
-        // Collect candidates
+        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var chapterNodes = await db.Nodes.AsNoTracking()
+            .Where(n => leafIds.Contains(n.Id))
+            .OrderBy(n => n.SortKey)
+            .Select(n => new { n.Id, n.Title })
+            .ToListAsync(ct);
+
+        var results = new List<ContinuityExtractionResult>();
+        var chapterNumber = 0;
+        foreach (var chNode in chapterNodes)
+        {
+            ct.ThrowIfCancellationRequested();
+            chapterNumber++;
+
+            var prose = string.Join("\n\n", (await db.BeatNodes.AsNoTracking()
+                    .Where(bn => bn.NodeId == chNode.Id)
+                    .Include(bn => bn.Beat)
+                    .ToListAsync(ct))
+                .OrderBy(bn => bn.SortKey)
+                .Select(bn => bn.Beat!.Text)
+                .Where(t => !string.IsNullOrWhiteSpace(t)));
+
+            if (string.IsNullOrWhiteSpace(prose))
+            {
+                results.Add(new ContinuityExtractionResult
+                {
+                    ChapterId = chNode.Id.ToString(), ChapterNumber = chapterNumber,
+                    ChapterTitle = chNode.Title ?? "", Error = "no prose",
+                });
+                continue;
+            }
+
+            try
+            {
+                log.LogInformation("[continuity] Extracting from node chapter {Num}: {Title} ({Chars} chars)",
+                    chapterNumber, chNode.Title, prose.Length);
+                var contextHeader = "=== CHAPTER PROSE (extract facts from this) ===\n" +
+                    $"Chapter {chapterNumber}: {chNode.Title}\n";
+                var r = await ExtractClaimsFromProseAsync(
+                    prose, contextHeader, chNode.Id.ToString(), chapterNumber, chNode.Title, bookSlug, maxTokens, ct);
+                results.Add(r);
+            }
+            catch (Exception ex)
+            {
+                log.LogError(ex, "[continuity] Node chapter {ChapterId} extraction failed", chNode.Id);
+                results.Add(new ContinuityExtractionResult
+                {
+                    ChapterId = chNode.Id.ToString(), ChapterNumber = chapterNumber,
+                    ChapterTitle = chNode.Title ?? "", Error = ex.Message,
+                });
+            }
+        }
+        return results;
+    }
+
+    /// <summary>Shared body for "extract atomic claims from one block of prose, upsert each" —
+    /// used by both the legacy IChapterRepository path (<see cref="ExtractFromChapterAsync"/>)
+    /// and the SS-A43 Nodes path (<see cref="ExtractFromBookNodeAsync"/>) so the extraction
+    /// prompt, JSON parsing, snippet-grounding, and upsert logic exist exactly once.</summary>
+    private async Task<ContinuityExtractionResult> ExtractClaimsFromProseAsync(
+        string prose, string contextHeader, string sourceChapterId, int? sourceChapterNumber,
+        string? sourceChapterTitle, string? bookSlug, int maxTokens, CancellationToken ct)
+    {
+        var context = contextHeader + "\n" + prose;
+        var raw = await llm.GenerateAsync(ExtractionQuestion, context, temperature: 0.1, maxTokens: maxTokens, ct: ct);
+
         var allCandidates = new List<RawCandidate>();
-        foreach (var v in vote.IndividualVotes)
+        var arr = ExtractJsonArrayFromText(raw);
+        if (arr != null)
         {
-            if (v.IsError) continue;
-            var combined = (v.Decision ?? "") + "\n" + (v.Reasoning ?? "");
-            var arr = ExtractJsonArrayFromText(combined);
-            if (arr == null) continue;
             foreach (var el in arr.Value.EnumerateArray())
             {
                 if (el.ValueKind != JsonValueKind.Object) continue;
-                var c = ParseCandidate(el, v.ProviderId);
+                var c = ParseCandidate(el, "single");
                 if (c != null) allCandidates.Add(c);
             }
         }
 
-        // Validate snippets exist in prose
         var validated = allCandidates
             .Where(c => prose.Contains(c.Snippet, StringComparison.Ordinal)
                      || prose.Contains(c.Snippet, StringComparison.OrdinalIgnoreCase))
             .ToList();
 
-        // Group by (entity_name, predicate, object) → union of voters
+        // Dedup by (entity_name, predicate, object) — a single response can still repeat
+        // itself; store.Upsert is idempotent either way, this just avoids double-counting.
         var grouped = validated
             .GroupBy(c => $"{Normalize(c.EntityName)}|{Normalize(c.Predicate)}|{Normalize(c.Object)}")
-            .Select(g =>
-            {
-                var first = g.FirstOrDefault();
-                return first == null ? null : new GroupedCandidate
-                {
-                    EntityName = first.EntityName,
-                    Predicate  = first.Predicate,
-                    Object     = first.Object,
-                    Snippet    = first.Snippet,
-                    Voice      = first.Voice,
-                    Confidence = first.Confidence,
-                    Voters     = g.Select(x => x.Voter).Distinct().ToList(),
-                };
-            })
-            .Where(g => g != null)
-            .Select(g => g!)
-            .Where(g => g.Voters.Count >= minVoters)
+            .Select(g => g.First())
             .ToList();
 
-        // Resolve entity → upsert
         var diff = new ContinuityExtractionResult
         {
-            ChapterId           = chapter.Id,
-            ChapterNumber       = chapter.Number ?? 0,
-            ChapterTitle        = chapter.Title,
-            VotersSuccessful    = vote.SuccessfulVoters,
-            VotersTotal         = vote.IndividualVotes.Count,
+            ChapterId           = sourceChapterId,
+            ChapterNumber       = sourceChapterNumber ?? 0,
+            ChapterTitle        = sourceChapterTitle ?? "",
+            VotersSuccessful    = 1,
+            VotersTotal         = 1,
             CandidatesProposed  = allCandidates.Count,
             CandidatesValidated = grouped.Count,
         };
@@ -185,13 +267,13 @@ public class ContinuityExtractionService
                 Predicate           = cand.Predicate,
                 Object              = cand.Object,
                 SourceType          = "prose",
-                SourceChapterId     = chapter.Id,
-                SourceChapterNumber = chapter.Number,
-                SourceChapterTitle  = chapter.Title,
+                SourceChapterId     = sourceChapterId,
+                SourceChapterNumber = sourceChapterNumber,
+                SourceChapterTitle  = sourceChapterTitle,
                 Snippet             = cand.Snippet,
                 Voice               = cand.Voice,
                 Confidence          = cand.Confidence,
-                ExtractedBy         = cand.Voters,
+                ExtractedBy         = new List<string> { cand.Voter },
                 BookSlug            = bookSlug,
             };
             var r = store.Upsert(claim);
@@ -207,44 +289,14 @@ public class ContinuityExtractionService
     }
 
     /// <summary>
-    /// Extract continuity claims from every chapter in a book. Sequential to
-    /// keep cost predictable; long-running.
-    /// </summary>
-    public async Task<List<ContinuityExtractionResult>> ExtractFromBookAsync(
-        Book book,
-        Quorum quorum = Quorum.Plurality,
-        int maxTokens = 4096,
-        int minVoters = 1,
-        CancellationToken ct = default)
-    {
-        var results = new List<ContinuityExtractionResult>();
-        foreach (var cid in book.ChapterIds ?? new())
-        {
-            ct.ThrowIfCancellationRequested();
-            try
-            {
-                var r = await ExtractFromChapterAsync(cid, quorum, maxTokens, minVoters, bookSlug: null, ct);
-                results.Add(r);
-            }
-            catch (Exception ex)
-            {
-                log.LogError(ex, "[continuity] Chapter {Cid} extraction failed", cid);
-                results.Add(new ContinuityExtractionResult { ChapterId = cid, Error = ex.Message });
-            }
-        }
-        return results;
-    }
-
-    /// <summary>
     /// Flatten a structured entity record into atomic claims. Loads the
     /// canonical <c>Records.Json</c> blob for the given EntityId from SQL.
     /// Trivial scalar fields (e.g. "role": "fixer") are emitted directly;
     /// prose fields (description, personality) are run through the same
-    /// Legion vote as chapter prose so we extract atomic claims from them too.
+    /// single-call extraction as chapter prose so we extract atomic claims from them too.
     /// </summary>
     public async Task<ContinuityExtractionResult> ExtractFromEntityRecordAsync(
         Guid entityId,
-        Quorum quorum = Quorum.Plurality,
         int maxTokens = 2048,
         CancellationToken ct = default)
     {
@@ -314,7 +366,7 @@ public class ContinuityExtractionService
             }
         }
 
-        // 2) Prose fields (description, personality, ideology, narrative_function …) get the Legion pass.
+        // 2) Prose fields (description, personality, ideology, narrative_function …) get the LLM pass.
         var proseSections = new List<(string field, string text)>();
         foreach (var prop in root.EnumerateObject())
         {
@@ -335,29 +387,19 @@ public class ContinuityExtractionService
         }
         var ctxText = ctxBuilder.ToString();
 
-        var voteRequest = new VoteRequest
-        {
-            Question  = ExtractionQuestion,
-            Context   = ctxText,
-            MaxTokens = maxTokens,
-            SynthesizeNarrative = false,
-        };
-        var vote = await voting.VoteAsync(voteRequest, quorum, ct);
+        var raw = await llm.GenerateAsync(ExtractionQuestion, ctxText, temperature: 0.1, maxTokens: maxTokens, ct: ct);
 
         // The "snippet must exist in prose" check uses the combined prose
         // section text as the substrate.
         var prose = string.Join("\n", proseSections.Select(s => s.text));
 
-        foreach (var v in vote.IndividualVotes)
+        var arr = ExtractJsonArrayFromText(raw);
+        if (arr != null)
         {
-            if (v.IsError) continue;
-            var combined = (v.Decision ?? "") + "\n" + (v.Reasoning ?? "");
-            var arr = ExtractJsonArrayFromText(combined);
-            if (arr == null) continue;
             foreach (var el in arr.Value.EnumerateArray())
             {
                 if (el.ValueKind != JsonValueKind.Object) continue;
-                var c = ParseCandidate(el, v.ProviderId);
+                var c = ParseCandidate(el, "single");
                 if (c == null) continue;
                 if (!prose.Contains(c.Snippet, StringComparison.OrdinalIgnoreCase)) continue;
 
@@ -384,8 +426,8 @@ public class ContinuityExtractionService
                 }
             }
         }
-        result.VotersSuccessful = vote.SuccessfulVoters;
-        result.VotersTotal      = vote.IndividualVotes.Count;
+        result.VotersSuccessful = 1;
+        result.VotersTotal      = 1;
         return result;
     }
 
@@ -513,17 +555,6 @@ public class ContinuityExtractionService
         public string Voice      { get; set; } = "";
         public string Confidence { get; set; } = "";
         public string Voter      { get; set; } = "";
-    }
-
-    private class GroupedCandidate
-    {
-        public string EntityName { get; set; } = "";
-        public string Predicate  { get; set; } = "";
-        public string Object     { get; set; } = "";
-        public string Snippet    { get; set; } = "";
-        public string Voice      { get; set; } = "";
-        public string Confidence { get; set; } = "";
-        public List<string> Voters { get; set; } = new();
     }
 }
 

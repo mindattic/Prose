@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prose.Core.Data;
 
@@ -11,9 +12,11 @@ using Prose.Core.Data;
 namespace Prose.Core.Migrations
 {
     [DbContext(typeof(ProseDbContext))]
-    partial class ProseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260814080655_AddLlmCallHistory")]
+    partial class AddLlmCallHistory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -7513,38 +7516,6 @@ namespace Prose.Core.Migrations
                     b.ToTable("NodeChapterSummaries");
                 });
 
-            modelBuilder.Entity("Prose.Core.Data.Entities.NodeConvergenceState", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ConsecutiveDryRounds")
-                        .HasColumnType("int");
-
-                    b.Property<string>("LastBookFingerprint")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<DateTime?>("LastRoundAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("NodeId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("TotalRoundsRun")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NodeId")
-                        .IsUnique();
-
-                    b.ToTable("NodeConvergenceStates");
-                });
-
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeKeyword", b =>
                 {
                     b.Property<Guid>("Id")
@@ -12457,17 +12428,6 @@ namespace Prose.Core.Migrations
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeChapterSummary", b =>
-                {
-                    b.HasOne("Prose.Core.Data.Entities.Node", "Node")
-                        .WithMany()
-                        .HasForeignKey("NodeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Node");
-                });
-
-            modelBuilder.Entity("Prose.Core.Data.Entities.NodeConvergenceState", b =>
                 {
                     b.HasOne("Prose.Core.Data.Entities.Node", "Node")
                         .WithMany()

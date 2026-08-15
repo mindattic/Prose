@@ -27,8 +27,12 @@ public class BookAuditService(
     AuditRunner auditRunner,
     PlantPayoffService plantPayoffs,
     GlossaryService glossary,
+    FindingsService findingsSvc,
     IDbContextFactory<ProseDbContext> dbFactory)
 {
+    // AuditProseUtils.ClampProse's own threshold — kept here too so this service can tell
+    // whether the commandments it's about to run will actually see the whole manuscript.
+    const int ClampThreshold = 100_000;
     // GLMZ universe ID — used to append universe-specific commandments
     static readonly Guid GlmzUniverseId = new("0197E9C9-0001-7000-8000-000000000001");
 
@@ -232,6 +236,21 @@ public class BookAuditService(
             previousTitle = prev != null ? $"{prev.Title} ({prev.Slug})" : node.PreviousNodeId.ToString();
         }
 
+        // 2026-08-14 fix: ClampProse silently caps at 100k chars (head 50k + tail 50k, middle
+        // elided) with no warning surfaced anywhere. On a book VIGL's size (~700k chars), several
+        // commandments — especially "reward re-reading"/"reward the long memory," which judge
+        // whether the book pays off its OWN middle — were evaluating roughly the first and last
+        // ~8 chapters only and calling it a full-book verdict, with GatewayReady/SequelReady
+        // reading exactly the same as a genuinely complete run. File it as its own low-severity
+        // finding rather than a silent gap, same pattern as every other "[incomplete]"-style
+        // signal in this codebase.
+        var truncated = prose.Length > ClampThreshold;
+        findingsSvc.DeleteBySummaryPrefix($"node:{node.Slug}", $"{(isSequel ? "SEQUEL" : "BOOKAUDIT")} [truncated]");
+        if (truncated)
+            findingsSvc.Upsert($"node:{node.Slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                $"{(isSequel ? "SEQUEL" : "BOOKAUDIT")} [truncated]: manuscript is {prose.Length:N0} chars — commandments were evaluated against only the first/last 50,000 chars each (~{ClampThreshold / 100_000.0:0.#}00k of {prose.Length:N0}), not the full book. Treat commandments that judge mid-book payoff (reread/long-memory reward) as advisory only.",
+                snippet: null, suggestedFix: null);
+
         return new BookAuditReport(
             NodeSlug:      node.Slug,
             NodeTitle:     node.Title,
@@ -242,7 +261,8 @@ public class BookAuditService(
             BlockingCount:   checks.Count(c => c.Status is "fail" or "error"),
             AdvisoryCount:   checks.Count(c => c.Status == "warn"),
             PlantCount:      plants.Count,
-            OrphanedPlants:  plants.Count(p => p.PlantBeatId != null && p.PayoffBeatId == null));
+            OrphanedPlants:  plants.Count(p => p.PlantBeatId != null && p.PayoffBeatId == null),
+            Truncated:       truncated);
     }
 
     // ── Internal ─────────────────────────────────────────────────────────────
@@ -350,4 +370,5 @@ public record BookAuditReport(
     int                BlockingCount,
     int                AdvisoryCount,
     int                PlantCount,
-    int                OrphanedPlants);
+    int                OrphanedPlants,
+    bool               Truncated = false); // true when the manuscript exceeded ClampProse's 100k-char cap

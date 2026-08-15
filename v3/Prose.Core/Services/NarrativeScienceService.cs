@@ -89,12 +89,14 @@ public class NarrativeScienceService(
             """;
 
         var raw = await llm.GenerateAsync(system, user, temperature: 0.5, maxTokens: 800, ct: ct);
-        return ParseJson<SacredFlawAnalysis>(raw) ?? new SacredFlawAnalysis
-        {
-            TheoryOfControl = "(parse error)",
-            Confidence = "low",
-            RawResponse = raw,
-        };
+        // Throw rather than fabricate a "(parse error)" TheoryOfControl (2026-08-14 fix) — the
+        // caller (BookHealthService.SacredFlawAsync) used to file a real SACRED-FLAW finding off
+        // this fallback ("no theory of control identified"), distinguishable from a genuine
+        // low-confidence read only by literal string match on Diagnosis. Same fix class as
+        // CheckDramaticQuestionAsync (2026-08-09) — brought into line rather than left as the
+        // one sibling that never got it.
+        return ParseJson<SacredFlawAnalysis>(raw)
+            ?? throw new InvalidOperationException($"Could not parse sacred-flaw response: {raw[..Math.Min(200, raw.Length)]}");
     }
 
     // ── Dramatic Question ─────────────────────────────────────────────────────
@@ -221,12 +223,13 @@ public class NarrativeScienceService(
             """;
 
         var raw = await llm.GenerateAsync(system, user, temperature: 0.4, maxTokens: 1200, ct: ct);
-        var result = ParseJson<FiveActMap>(raw) ?? new FiveActMap
-        {
-            NodeSlug = node.Slug ?? "",
-            Error = "(parse error)",
-            RawResponse = raw,
-        };
+        // Throw rather than return a "(parse error)" Error stub (2026-08-14 fix) — the caller
+        // (BookHealthService.FiveActMapAsync) used to just check `map.Error != null` and silently
+        // return without filing anything, so "clean five-act structure" and "the LLM call never
+        // produced one" looked identical from the Findings list. Same fix class as
+        // CheckDramaticQuestionAsync (2026-08-09).
+        var result = ParseJson<FiveActMap>(raw)
+            ?? throw new InvalidOperationException($"Could not parse five-act response: {raw[..Math.Min(200, raw.Length)]}");
         result.NodeSlug = node.Slug ?? "";
         result.BeatCount = beats.Count;
         return result;
@@ -281,12 +284,12 @@ public class NarrativeScienceService(
             """;
 
         var raw = await llm.GenerateAsync(system, user, temperature: 0.4, maxTokens: 700, ct: ct);
-        return ParseJson<AntiheroEmpathyResult>(raw) ?? new AntiheroEmpathyResult
-        {
-            EmpathyScore = 0,
-            Diagnosis = "(parse error)",
-            RawResponse = raw,
-        };
+        // Throw rather than fabricate EmpathyScore=0 (2026-08-14 fix) — a real 0/10 antihero-
+        // empathy verdict and an LLM parse failure were previously identical to any caller reading
+        // empathy_score without also cross-checking Diagnosis for the literal string "(parse
+        // error)". Same fix class as CheckDramaticQuestionAsync (2026-08-09).
+        return ParseJson<AntiheroEmpathyResult>(raw)
+            ?? throw new InvalidOperationException($"Could not parse antihero-empathy response: {raw[..Math.Min(200, raw.Length)]}");
     }
 
     // ── Helpers ───────────────────────────────────────────────────────────────

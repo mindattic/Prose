@@ -91,6 +91,49 @@ public class BookLogicTools(
         }
     }
 
+    [McpServerTool, Description("Run ONE round of a loop-until-dry logic-sweep convergence campaign (2026-08-14) — " +
+        "replaces 'run the sweep N times regardless of what it found' with an actual convergence criterion: " +
+        "stops after 2 consecutive rounds that found nothing new, persisted across sessions in NodeConvergenceStates. " +
+        "Call this again after each fix pass. Returns skipped=true (already converged, nothing changed, no LLM call " +
+        "made) or converged=true (2 consecutive clean rounds reached) or hit_safety_cap=true (8 rounds without " +
+        "converging — filed as its own finding; the book likely needs a structural rewrite, not another fix pass). " +
+        "Accepts node id (GUID) or slug.")]
+    public async Task<string> logic_sweep_until_dry(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
+        [Description("Consecutive clean rounds required to call it converged. Default 2.")] int requiredDryRounds = LogicSweepService.DefaultRequiredDryRounds,
+        [Description("Safety cap on total rounds before escalating 'not converging' as its own finding. Default 8.")] int maxTotalRounds = LogicSweepService.DefaultMaxTotalRounds)
+    {
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+
+        try
+        {
+            var round = await logicSweepService.RunConvergenceRoundAsync(nodeId.Value, requiredDryRounds, maxTotalRounds);
+            return JsonSerializer.Serialize(new
+            {
+                node_id                = round.NodeId,
+                skipped                = round.Skipped,
+                converged              = round.Converged,
+                hit_safety_cap         = round.HitSafetyCap,
+                consecutive_dry_rounds = round.ConsecutiveDryRounds,
+                total_rounds_run       = round.TotalRoundsRun,
+                message                = round.Message,
+                findings_this_round    = round.Report?.Findings.Select(f => new
+                {
+                    dimension = f.RuleKey,
+                    severity  = f.Severity,
+                    evidence  = f.Evidence,
+                    fix       = f.Fix,
+                }),
+            }, JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = ex.Message }, JsonOpts);
+        }
+    }
+
     // ── helpers ───────────────────────────────────────────────────────────────
 
     async Task<Guid?> ResolveNodeAsync(string idOrSlug)

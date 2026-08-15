@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**273 tools** across **43 tool families.**
+**274 tools** across **43 tool families.**
 
 ## Families
 
@@ -22,7 +22,7 @@
 | [Bible](#bible) | 3 |
 | [Book Audit](#book-audit) | 2 |
 | [Book Health](#book-health) | 1 |
-| [Book Logic](#book-logic) | 2 |
+| [Book Logic](#book-logic) | 3 |
 | [Canon](#canon) | 9 |
 | [Canon Doc](#canon-doc) | 7 |
 | [Chekhov Audit](#chekhov-audit) | 1 |
@@ -167,6 +167,14 @@ Run the full book-health battery and return one Structural Integrity Index (SII,
 Run docs/LOGIC.md's six-dimension logic sweep on a node: causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references, bible agreement. This is a single LLM call per dimension over the whole node's prose — a coarse, automatable gate, NOT a replacement for the full /logic-sweep Claude Code skill on a large book (that skill splits the book across range-scoped subagents, verifies quotes, and does a separate fix + re-verify pass). Findings persist to the Findings table and auto-heal on re-run. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+
+### `logic_sweep_until_dry`
+
+Run ONE round of a loop-until-dry logic-sweep convergence campaign (2026-08-14) — replaces 'run the sweep N times regardless of what it found' with an actual convergence criterion: stops after 2 consecutive rounds that found nothing new, persisted across sessions in NodeConvergenceStates. Call this again after each fix pass. Returns skipped=true (already converged, nothing changed, no LLM call made) or converged=true (2 consecutive clean rounds reached) or hit_safety_cap=true (8 rounds without converging — filed as its own finding; the book likely needs a structural rewrite, not another fix pass). Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
+- `requiredDryRounds` (int, optional) — Consecutive clean rounds required to call it converged. Default 2.
+- `maxTotalRounds` (int, optional) — Safety cap on total rounds before escalating 'not converging' as its own finding. Default 8.
 
 ### `write_outline`
 
@@ -1072,22 +1080,18 @@ Apply a CANONICAL or CONFIRMED claim to its entity record file. Legion's panel p
 Extract continuity claims from every chapter in a book (sequential — long-running). Returns per-chapter results plus aggregate counts.
 
 - `bookId` (string, required) — Book id (32-char hex).
-- `quorum` (string, optional) — Quorum: plurality | simplemajority | twothirds | unanimous. Default plurality.
-- `maxTokens` (int, optional) — Max tokens per voter response. Default 4096.
-- `minVoters` (int, optional) — Minimum voters that must propose a claim for it to be stored. Default 1.
+- `maxTokens` (int, optional) — Max tokens for the extraction response, per chapter. Default 4096.
 
 ### `extract_continuity_from_chapter`
 
-Extract atomic continuity claims (entity, predicate, object triples) from a chapter's prose via Legion Quorum. Each triple's snippet is validated against the source prose; survivors are upserted into the unified continuity store. Same-(entity,predicate) with different `object` auto-flags a contradiction. Returns: new / confirmed / contradicted counts. ok=true when no new contradictions surfaced.
+Extract atomic continuity claims (entity, predicate, object triples) from a chapter's prose. Each triple's snippet is validated against the source prose; survivors are upserted into the unified continuity store. Same-(entity,predicate) with different `object` auto-flags a contradiction. Returns: new / confirmed / contradicted counts. ok=true when no new contradictions surfaced.
 
 - `chapterId` (string, required) — Chapter id (32-char hex).
-- `quorum` (string, optional) — Quorum: plurality | simplemajority | twothirds | unanimous. Default plurality.
-- `maxTokens` (int, optional) — Max tokens per voter response. Default 4096.
-- `minVoters` (int, optional) — Minimum voters that must propose a claim for it to be stored. Default 1.
+- `maxTokens` (int, optional) — Max tokens for the extraction response. Default 4096.
 
 ### `extract_continuity_from_entity_record`
 
-Extract continuity claims from a single entity record by EntityId (canonical Records.Json blob in SQL). Top-level scalar fields become direct claims; prose fields (description, personality, ideology…) go through the same Legion Quorum vote as chapter prose.
+Extract continuity claims from a single entity record by EntityId (canonical Records.Json blob in SQL). Top-level scalar fields become direct claims; prose fields (description, personality, ideology…) go through the same single-call extraction as chapter prose.
 
 - `entityId` (string, required) — EntityId (guid, hyphenated or 32-char hex) of the canon entity to extract from.
 

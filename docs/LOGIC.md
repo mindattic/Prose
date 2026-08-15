@@ -27,6 +27,16 @@ Scope the sweep to what changed plus its blast radius (the touched beats, their 
 every beat that references their content). A full-story sweep is required when structure
 changed (merges, disables, re-ordering) — those create orphans far from the edit site.
 
+**Blast radius is now automatic, not just a scoping instruction (2026-08-14).**
+`BlastRadiusService.GetBlastRadiusBeatIdsAsync` operationalizes the phrase above: same-chapter
+beats within a small SortKey window, UNION every beat anywhere in the book sharing an entity
+presence with the edited one. `NodeWorkbenchService.UpdateBeatTextAsync` — the one write path
+under every beat edit, manual or automated — fires `LogicSweepService.RunNarrowAsync` against
+that set after every save, filed under its own `beat:{id}:blast` scope so it never collides with
+a full sweep's findings. This exists because a fix pass can contradict its own neighbors and the
+regression survives undetected until the NEXT independent full sweep — sometimes several rounds
+and days later. Checking the blast radius in the same turn as the edit closes that gap.
+
 ## 2. What it reads {#SS-LOGIC-2}
 
 The LIVE story only: enabled beats in reading order —
@@ -57,6 +67,23 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
    ledger, and roster stated in prose must reconcile — build the actual ledger and walk it.
    (Catches: a population count that never summed across six chapters; a closing line whose
    components added to 28 while it said thirty-one.)
+
+   **Hard numeric facts (ages, tenures, career/duration lengths) have a dedicated ledger,
+   separate from this per-sweep arithmetic check (2026-08-14).** `ContinuityService` stores each
+   as an atomic (entity, predicate, object) claim and auto-flags a `CONTRADICTED` pair when the
+   same predicate gets a genuinely different value later — but numeric-aware, not bare string
+   equality: "fifty" and "50" collapse into the same claim; only an actual arithmetic
+   discrepancy ("fifty" vs "fifty-nine") contradicts. This is what a repeated LLM re-derivation
+   of the same fact across sweep rounds used to get wrong (VIGL: a character's career length
+   drifted between "fifty" and "sixty" years across several rounds before the arithmetic was
+   walked and settled) — checking against one stored ground truth instead of re-deriving it from
+   prose every time is what makes the fact stop drifting. Every distinct real-world clock MUST
+   use its own predicate key (`career_length_years` ≠ `zone_age_years`) — two different clocks
+   must never be compared to each other even when the same entity/beat mentions both. Wired into
+   the automated battery as the `fact-ledger` check (`BookHealthService`, DEEP tier), filing
+   `FACT-LEDGER` findings; the extraction pass (`prose --continuity extract --node <slug>`) must
+   be run at least once per book to populate it — an empty ledger reads as `[not-extracted]`, not
+   silently clean.
 5. **Orphan references.** Nothing enabled references removed/disabled/merged content — hunt
    with greps for distinctive phrases from every disabled beat. Highest-risk after structural
    edits. Also inverse-orphans: metadata stranded on disabled beats (chapter-start flags,
@@ -154,3 +181,30 @@ findings filed as `OutlineDrift`); 100↔10 ft and 10↔10 ft = the logic sweep 
 model applies to entities: book-level (which books), chapter-level (which chapters),
 beat-level (which scenes, and how — acting / listening / mentioned / discussed) via
 `vw_EntityBookAppearances` / `vw_EntityChapterAppearances` / `BeatEntityPresence`.
+
+## 9. When is a book actually complete? {#SS-LOGIC-9}
+
+Added 2026-08-14 in direct response to an observed failure mode: five independent sweep rounds
+run on a book, and a sixth still found a new continuity error. "Run the sweep N times" was never
+a real stopping criterion — a single-shot LLM sweep is a sample of what a fresh read notices, not
+a proof nothing is wrong, and a fix pass introduces new regressions about as often as it removes
+old ones. A book is publish-ready only when ALL FIVE of the following hold simultaneously —
+this replaces the older, looser "logic sweep clean at BLOCKER" language everywhere it appears:
+
+1. Zero open BLOCKER/MODERATE logic-sweep findings (§3–4, unchanged).
+2. Zero open `CONTRADICTED` `ContinuityClaims` for the book (the fact ledger, §3.4 above).
+3. **Two consecutive independent sweep rounds found zero NEW findings** — convergence, not a
+   fixed round count. `prose --logic-sweep --slug <slug> --until-dry` runs one round of this
+   campaign and reports whether to keep going or stop; state persists in
+   `NodeConvergenceStates` across sessions via a book-content fingerprint, so a repeat call with
+   nothing changed since the last dry round skips without spending another LLM call.
+4. Every fix applied since the last dry round passed its own blast-radius mechanical re-check
+   (§1) with no new contradiction.
+5. Zero open High/BLOCKER Reader-Proxy QA findings (docs/READER-QA.md, unchanged).
+
+**The safety valve.** If a book hits a round-count cap (default 8) without ever reaching 2
+consecutive dry rounds, that is itself surfaced as a `LOGICSWEEP-CONVERGENCE [not-converging]`
+finding — the section keeps surfacing new problems faster than fix passes resolve them, which
+usually means it needs a structural rewrite, not another one-clause splice. This is the same
+"if you can't name the failure, leave the beat alone" doctrine from §4, applied to the campaign
+as a whole rather than one finding: escalate instead of looping forever.

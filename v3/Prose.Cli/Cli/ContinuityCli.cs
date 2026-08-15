@@ -16,8 +16,9 @@ namespace Prose.Cli;
 ///   prose --continuity resolve --a &lt;uid&gt; --b &lt;uid&gt; --winner A|B|custom [--object "..."] [--note "..."]
 ///                                                    Resolve a contradiction.
 ///   prose --continuity entity &lt;name&gt;                    Dump every claim about one entity.
-///   prose --continuity extract --chapter &lt;chapterId&gt;    Extract claims from one chapter's prose via Legion Quorum.
-///   prose --continuity extract --book &lt;bookId&gt;          Extract claims from every chapter in a book.
+///   prose --continuity extract --chapter &lt;chapterId&gt;    Extract claims from one chapter's prose (legacy Book/Chapter model).
+///   prose --continuity extract --book &lt;bookId&gt;          Extract claims from every chapter in a book (legacy Book/Chapter model).
+///   prose --continuity extract --node &lt;nodeIdOrSlug&gt;    Extract claims from every leaf chapter under a modern SS-A43 BookNode.
 ///   prose --continuity extract --entity &lt;guid&gt;          Extract claims from one entity's Records.Json blob (by EntityId).
 ///   prose --continuity apply --claim &lt;uid&gt;              Apply a CANONICAL claim back to its entity record (Legion picks the field).
 ///
@@ -133,15 +134,16 @@ public static class ContinuityCli
         var bookRepo  = services.GetRequiredService<IBookRepository>();
         var chapterId = ArgValue(args, "--chapter");
         var bookId    = ArgValue(args, "--book");
+        var nodeRef   = ArgValue(args, "--node");
         var entityRef = ArgValue(args, "--entity");
 
         if (!string.IsNullOrEmpty(chapterId))
         {
-            Console.WriteLine($"[continuity] Extracting from chapter {chapterId} (Legion vote — this may take a minute)…");
+            Console.WriteLine($"[continuity] Extracting from chapter {chapterId} (this may take a minute)…");
             try
             {
                 var r = await ext.ExtractFromChapterAsync(chapterId);
-                Console.WriteLine($"[continuity] ch.{r.ChapterNumber} {r.ChapterTitle} — voters {r.VotersSuccessful}/{r.VotersTotal}, candidates {r.CandidatesProposed}, validated {r.CandidatesValidated}");
+                Console.WriteLine($"[continuity] ch.{r.ChapterNumber} {r.ChapterTitle} — candidates {r.CandidatesProposed}, validated {r.CandidatesValidated}");
                 Console.WriteLine($"[continuity] {r.NewClaims} new, {r.ConfirmedClaims} confirmed, {r.ContradictedClaims} contradicted, {r.UnknownEntities.Count} unknown entity references");
                 if (r.UnknownEntities.Count > 0) Console.WriteLine("[continuity] unknown: " + string.Join(", ", r.UnknownEntities));
                 return r.ContradictedClaims > 0 ? 1 : 0;
@@ -152,12 +154,34 @@ public static class ContinuityCli
         {
             var book = bookRepo.LoadBook(bookId);
             if (book == null) return Fail($"book not found: {bookId}");
-            Console.WriteLine($"[continuity] Extracting from book \"{book.Title}\" — {book.ChapterIds?.Count ?? 0} chapters (Legion vote per chapter — minutes)…");
+            Console.WriteLine($"[continuity] Extracting from book \"{book.Title}\" — {book.ChapterIds?.Count ?? 0} chapters (minutes)…");
             try
             {
                 var rs = await ext.ExtractFromBookAsync(book);
                 int n = rs.Sum(r => r.NewClaims), cf = rs.Sum(r => r.ConfirmedClaims), ct = rs.Sum(r => r.ContradictedClaims);
                 Console.WriteLine($"[continuity] Done. {n} new, {cf} confirmed, {ct} contradicted across {rs.Count} chapters.");
+                return ct > 0 ? 1 : 0;
+            }
+            catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
+        }
+        if (!string.IsNullOrEmpty(nodeRef))
+        {
+            var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+            await using var db = await dbFactory.CreateDbContextAsync();
+            Guid nodeId;
+            if (!Guid.TryParse(nodeRef, out nodeId))
+            {
+                var found = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == nodeRef);
+                if (found == null) return Fail($"node not found: {nodeRef}");
+                nodeId = found.Id;
+            }
+            Console.WriteLine($"[continuity] Extracting from BookNode {nodeRef} — every leaf chapter (minutes)…");
+            try
+            {
+                var rs = await ext.ExtractFromBookNodeAsync(nodeId);
+                int n = rs.Sum(r => r.NewClaims), cf = rs.Sum(r => r.ConfirmedClaims), ct = rs.Sum(r => r.ContradictedClaims);
+                var failed = rs.Count(r => r.Error != null);
+                Console.WriteLine($"[continuity] Done. {n} new, {cf} confirmed, {ct} contradicted across {rs.Count} chapters ({failed} failed).");
                 return ct > 0 ? 1 : 0;
             }
             catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
@@ -178,7 +202,7 @@ public static class ContinuityCli
             }
             catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
         }
-        return Fail("extract requires one of: --chapter <id> | --book <id> | --entity <guid>");
+        return Fail("extract requires one of: --chapter <id> | --book <id> | --node <nodeIdOrSlug> | --entity <guid>");
     }
 
     static async Task<int> CmdApply(string[] args, IServiceProvider services)
@@ -427,6 +451,7 @@ public static class ContinuityCli
               prose --continuity entity <name>
               prose --continuity extract --chapter <chapterId>
               prose --continuity extract --book <bookId>
+              prose --continuity extract --node <nodeIdOrSlug>
               prose --continuity extract --entity <path-to-entity-json>
               prose --continuity apply --claim <claimUid>
               prose --continuity sweep [--book <id>] [--skip-records] [--skip-prose] [--skip-resolve] [--skip-apply] [--dry-run]

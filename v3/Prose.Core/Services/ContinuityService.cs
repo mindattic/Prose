@@ -38,7 +38,7 @@ public class ContinuityService
     /// </summary>
     public static string ComputeClaimUid(string entityId, string predicate, string objectValue)
     {
-        var normalized = $"{entityId}|{Normalize(predicate)}|{Normalize(objectValue)}";
+        var normalized = $"{entityId}|{Normalize(predicate)}|{NormalizeObjectForUid(predicate, objectValue)}";
         var bytes = SHA1.HashData(Encoding.UTF8.GetBytes(normalized));
         var hex = Convert.ToHexString(bytes).ToLowerInvariant();
         return "claim-" + hex[..16];
@@ -46,6 +46,97 @@ public class ContinuityService
 
     private static string Normalize(string s)
         => string.IsNullOrEmpty(s) ? "" : System.Text.RegularExpressions.Regex.Replace(s.ToLowerInvariant(), @"\s+", " ").Trim();
+
+    // ── Numeric-safe fact comparison (2026-08-14) ───────────────────────────
+    //
+    // ContinuityClaims' contradiction check used to be bare string equality
+    // (Object.ToLower().Trim() != ...), so "fifty" vs "50" registered as a false
+    // CONTRADICTED pair even though they're the same value — this is exactly the
+    // arithmetic-drift bug class this session hit repeatedly on VIGL (a career
+    // length re-derived by an LLM read differently across sweep rounds: "fifty"
+    // one round, "50" another, both correct, flagged as contradicting each other).
+    //
+    // Gated by an explicit allowlist, NOT auto-detected on every predicate — so
+    // location/relationship/every other claim type is completely untouched by
+    // this change. Distinct real-world clocks (e.g. a character's career length
+    // vs. a separate catastrophe's age-in-years) must use DISTINCT predicate keys;
+    // this normalization only makes "fifty" == "50" for the SAME predicate, it
+    // does not and must not relate two different predicates to each other.
+    private static readonly HashSet<string> NumericPredicates = new(StringComparer.Ordinal)
+    {
+        "age", "tenure_years", "career_length_years", "zone_age_years", "duration_years", "years",
+    };
+
+    private static readonly Dictionary<string, int> NumberWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["zero"] = 0, ["one"] = 1, ["two"] = 2, ["three"] = 3, ["four"] = 4, ["five"] = 5,
+        ["six"] = 6, ["seven"] = 7, ["eight"] = 8, ["nine"] = 9, ["ten"] = 10,
+        ["eleven"] = 11, ["twelve"] = 12, ["thirteen"] = 13, ["fourteen"] = 14, ["fifteen"] = 15,
+        ["sixteen"] = 16, ["seventeen"] = 17, ["eighteen"] = 18, ["nineteen"] = 19,
+        ["twenty"] = 20, ["thirty"] = 30, ["forty"] = 40, ["fifty"] = 50,
+        ["sixty"] = 60, ["seventy"] = 70, ["eighty"] = 80, ["ninety"] = 90,
+    };
+
+    private static readonly string[] NumericUnitSuffixes =
+        [" years old", " years", " year", " yrs", " yr"];
+
+    /// <summary>
+    /// Parses digit forms ("50"), number-words ("fifty"), and compound number-words
+    /// ("fifty-nine" / "fifty nine") in the 0-99 range this project's ages/tenures need.
+    /// Strips a trailing unit word ("years old", "years", "yr") first so a snippet-grounded
+    /// extraction like "fifty-nine years" still parses. Not a general NLP number parser —
+    /// scoped exactly to what continuity claims about ages/tenures actually look like.
+    /// </summary>
+    internal static bool TryParseNumericValue(string? raw, out int value)
+    {
+        value = 0;
+        if (string.IsNullOrWhiteSpace(raw)) return false;
+        var s = raw.Trim().ToLowerInvariant();
+        foreach (var unit in NumericUnitSuffixes)
+        {
+            if (s.EndsWith(unit, StringComparison.Ordinal)) { s = s[..^unit.Length].Trim(); break; }
+        }
+
+        if (int.TryParse(s, out value)) return true;
+
+        var parts = s.Replace('-', ' ').Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        if (parts.Length == 1 && NumberWords.TryGetValue(parts[0], out var single))
+        {
+            value = single;
+            return true;
+        }
+        if (parts.Length == 2
+            && NumberWords.TryGetValue(parts[0], out var tens) && tens is >= 20 and <= 90
+            && NumberWords.TryGetValue(parts[1], out var ones) && ones is >= 1 and <= 9)
+        {
+            value = tens + ones;
+            return true;
+        }
+        return false;
+    }
+
+    /// <summary>
+    /// True when two claim Object values represent the same fact. For predicates in
+    /// <see cref="NumericPredicates"/>, compares parsed numeric value when both sides parse
+    /// (so "fifty" == "50"); falls back to the original ToLower/Trim string-equality semantics
+    /// otherwise — non-numeric predicates and unparseable numeric-predicate values behave
+    /// exactly as before this change.
+    /// </summary>
+    internal static bool ObjectsMatch(string predicate, string a, string b)
+    {
+        if (NumericPredicates.Contains(Normalize(predicate))
+            && TryParseNumericValue(a, out var na) && TryParseNumericValue(b, out var nb))
+            return na == nb;
+        return string.Equals((a ?? "").Trim(), (b ?? "").Trim(), StringComparison.OrdinalIgnoreCase);
+    }
+
+    /// <summary>Canonical string form of an Object value for hashing/uid purposes — the parsed
+    /// integer for a numeric predicate (so "fifty" and "50" collapse to one claim instead of
+    /// two that then falsely contradict each other), else the same Normalize used elsewhere.</summary>
+    private static string NormalizeObjectForUid(string predicate, string objectValue)
+        => NumericPredicates.Contains(Normalize(predicate)) && TryParseNumericValue(objectValue, out var n)
+            ? n.ToString(System.Globalization.CultureInfo.InvariantCulture)
+            : Normalize(objectValue);
 
     // ── Upsert ──────────────────────────────────────────────────────────────
 
@@ -92,13 +183,22 @@ public class ContinuityService
         // exactly the one thing a new, silently-drifting extraction must be checked against —
         // excluding it meant a post-resolution contradiction was inserted as plain "NEW" and
         // never surfaced anywhere, defeating the point of resolving it in the first place.
+        //
+        // 2026-08-14: the object-mismatch test moved out of SQL and into ObjectsMatch (client-side,
+        // after materializing the candidate set) so numeric-predicate parsing ("fifty" == "50")
+        // can apply — that comparison isn't EF-translatable. The candidate set is bounded (all
+        // live claims for one entity+predicate, typically a handful of rows), so this is cheap.
+        // Any row with the SAME raw object as incoming would already have matched ComputeClaimUid
+        // and been handled by the `existing` branch above, so every row here is guaranteed to
+        // have a different raw object — this only changes HOW the mismatch is judged, not which
+        // rows are candidates.
         var conflict = db.ContinuityClaims
             .Where(c => c.EntityId == incoming.EntityId
                      && c.Predicate == incoming.Predicate
-                     && c.Object.ToLower().Trim() != incoming.Object.ToLower().Trim()
                      && c.Status != "REJECTED" && c.Status != "SUPERSEDED")
             .OrderByDescending(c => c.Status == "CANONICAL" ? 1 : 0).ThenByDescending(c => c.LastConfirmedAt)
-            .FirstOrDefault();
+            .ToList()
+            .FirstOrDefault(c => !ObjectsMatch(incoming.Predicate, c.Object, incoming.Object));
 
         incoming.Status          = conflict != null ? "CONTRADICTED" : "NEW";
         incoming.FirstAssertedAt = now;
@@ -160,6 +260,16 @@ public class ContinuityService
             .ToList();
     }
 
+    /// <summary>Whether any claim has ever been extracted and tagged with this book's slug —
+    /// lets a per-book caller (BookHealthService's fact-ledger check) distinguish "extracted and
+    /// clean" from "never extracted," the same honest-gap distinction SacredFlawAsync's
+    /// no-pov-data finding already makes for a different check.</summary>
+    public bool HasAnyClaimsForBook(string bookSlug)
+    {
+        using var db = dbFactory.CreateDbContext();
+        return db.ContinuityClaims.AsNoTracking().Any(c => c.BookSlug == bookSlug);
+    }
+
     /// <summary>
     /// Count of CONTRADICTED claims still awaiting resolution. Used by the
     /// inbox badge in the top nav so users see how many contradictions are
@@ -193,7 +303,16 @@ public class ContinuityService
         return pairs;
     }
 
-    public List<ContradictionGroup> GetContradictionGroups()
+    /// <param name="bookSlug">When provided, restricts the sweep to (entity, predicate) keys
+    /// where at least one live claim carries this <see cref="ContinuityClaim.BookSlug"/> — lets a
+    /// per-book caller (e.g. BookHealthService's fact-ledger check) see only its own book's
+    /// contradictions instead of the whole corpus. Null (default) preserves the original
+    /// corpus-wide behavior for existing callers (the /continuity UI, ContinuityLongSweepService).
+    /// Entity-record-sourced claims never carry a BookSlug, so a bookSlug-filtered call can still
+    /// surface a contradiction between a prose claim (tagged) and an entity-record claim
+    /// (untagged) as long as the prose side matches — the group isn't restricted away entirely,
+    /// just which keys get considered.</param>
+    public List<ContradictionGroup> GetContradictionGroups(string? bookSlug = null)
     {
         using var db = dbFactory.CreateDbContext();
         // CANONICAL included: a new claim contradicting an already-resolved fact is exactly
@@ -206,6 +325,21 @@ public class ContinuityService
             .Select(g => new { g.Key.EntityId, g.Key.Predicate, Variants = g.Select(x => x.Object).Distinct().Count() })
             .Where(g => g.Variants > 1)
             .ToList();
+
+        if (!string.IsNullOrEmpty(bookSlug))
+        {
+            // Restrict to keys that have at least one claim tagged with this book's slug.
+            // Resolved as a separate query and intersected client-side — EF can't translate
+            // Contains() over a client-side HashSet of composite keys.
+            var bookKeys = db.ContinuityClaims.AsNoTracking()
+                .Where(c => live.Contains(c.Status) && c.BookSlug == bookSlug)
+                .Select(c => new { c.EntityId, c.Predicate })
+                .Distinct()
+                .ToList()
+                .Select(k => (k.EntityId, k.Predicate))
+                .ToHashSet();
+            keys = keys.Where(k => bookKeys.Contains((k.EntityId, k.Predicate))).ToList();
+        }
 
         var groups = new List<ContradictionGroup>();
         foreach (var k in keys)

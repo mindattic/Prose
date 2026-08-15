@@ -28,6 +28,12 @@ or reviews from this skill** — if the user wants a score, they will say so exp
    last sweep (compare `Beats.UpdatedAt` / `NodeBeats` changes against the book's most recent
    `audit-outlines-*/logic/<CODE>.md` date; when in doubt, include it). Small edit → scoped sweep
    (touched beats + blast radius); structural change (merge/disable/reorder) → full-book sweep.
+   **Blast radius now runs automatically on every beat save (2026-08-14)** — `NodeWorkbenchService.
+   UpdateBeatTextAsync` fires a narrow `LogicSweepService.RunNarrowAsync` over
+   `BlastRadiusService`'s beat set after every edit, filed under its own `beat:{id}:blast` scope.
+   This step's manual scoping is about the FULL SWEEP's own coverage, not a substitute for that —
+   the auto-check catches a fix's own regressions in the same turn; this step still decides how
+   much of the book a human/agent-driven sweep round reads.
 
 2. **AUDIT (report-only agents, one per 1–2 books, Sonnet).** Each agent reads the book
    end-to-end and reports on the six dimensions of `docs/LOGIC.md` §3:
@@ -72,3 +78,23 @@ or reviews from this skill** — if the user wants a score, they will say so exp
 7. **CLOSE.** Write/refresh `audit-outlines-<today>/logic/<CODE>.md` verdicts and, for
    multi-book sweeps, a `CORPUS-REPORT.md`. Summarize per book: verdict, findings by
    severity, fixes applied, anything deferred.
+
+8. **CONVERGENCE (docs/LOGIC.md §9) — replaces "run it again."** Do not decide "is this book
+   done" by running a fixed number of rounds — that was never a real stopping criterion (five
+   rounds run, a sixth still finds something new is the exact failure mode this step exists to
+   fix). After step 6/7 completes for a round, call
+   `prose --logic-sweep --slug <slug> --until-dry` (one round of the persisted convergence
+   campaign; MCP: `logic_sweep_until_dry`). It reports one of three things:
+   - **skipped** — already converged, nothing changed since the last dry round. Nothing to do.
+   - **not yet converged** — run another AUDIT→TRIAGE→FIX→VERIFY cycle (steps 2–6) on what it
+     found, then call `--until-dry` again. A round that finds nothing resets the count toward
+     convergence; a round that finds something (including a NEW regression from the last fix
+     pass) resets the streak back to zero — that's intentional, not a bug.
+   - **hit_safety_cap** — 8 rounds without ever reaching 2 consecutive clean rounds. Filed as its
+     own finding (`LOGICSWEEP-CONVERGENCE [not-converging]`). Stop patching individual findings
+     and read them for a common thread — this book needs a structural rewrite of the offending
+     section, not another one-clause splice.
+   A book is publish-ready only when this step reports **converged** AND the fact ledger
+   (`prose --continuity extract --node <slug>` once, then check for open `CONTRADICTED` claims)
+   has no open contradictions AND Reader-Proxy QA has zero open High/BLOCKER findings — the full
+   five-point gate in docs/LOGIC.md §9, not this step alone.

@@ -69,6 +69,7 @@ public static class BookAuditCli
                 advisory_count  = report.AdvisoryCount,
                 plant_count     = report.PlantCount,
                 orphaned_plants = report.OrphanedPlants,
+                truncated       = report.Truncated,
                 checks          = report.Checks,
             }, new JsonSerializerOptions { WriteIndented = true }));
             return report.BlockingCount > 0 ? 2 : report.AdvisoryCount > 0 ? 1 : 0;
@@ -80,6 +81,8 @@ public static class BookAuditCli
         if (report.PreviousNode != null)
             Console.WriteLine($"Sequel to: {report.PreviousNode}");
         Console.WriteLine($"Plants:  {report.PlantCount} registered ({report.OrphanedPlants} orphaned)");
+        if (report.Truncated)
+            Console.WriteLine("⚠️  Manuscript exceeds 100,000 chars — commandments were evaluated against the first/last ~50,000 chars only, not the whole book. Treat mid-book-payoff commandments as advisory.");
         Console.WriteLine();
 
         static string Icon(string status) => status switch

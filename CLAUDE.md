@@ -526,8 +526,16 @@ hash-cached: unchanged content re-runs free.
 **The 0–100 score gates are RETIRED (author ruling 2026-08-03: "remove scores; they mean
 nothing").** The ≥82/≥85 gates no longer exist; dashboards show open findings instead of
 `Node.Score`; nothing writes new scores except an explicitly requested legacy panel run.
-Publish-readiness = logic sweep clean at BLOCKER + zero open High/BLOCKER Reader-Proxy QA
-findings.
+**Publish-readiness (docs/LOGIC.md §9, 2026-08-14) is now a five-point convergence gate, not a
+single "clean at BLOCKER" snapshot** — a fixed number of sweep rounds was never a real stopping
+criterion (five rounds run, a sixth independent round still finding something new was the
+observed failure this replaces). A book is complete only when ALL of: (1) zero open
+BLOCKER/MODERATE logic-sweep findings, (2) zero open `CONTRADICTED` fact-ledger claims
+(`ContinuityService`, numeric-safe), (3) two consecutive independent sweep rounds found zero new
+findings — check via `prose --logic-sweep --slug <slug> --until-dry`, not a manual round count,
+(4) every fix since the last dry round passed its own automatic blast-radius re-check
+(`BlastRadiusService` + `LogicSweepService.RunNarrowAsync`, fires on every beat save), (5) zero
+open High/BLOCKER Reader-Proxy QA findings.
 
 The old dual-review machinery (`--review-node` panels, Legion votes, `RunSampledReviewAsync`)
 is quarantined behind the SS-A44 gate — **on explicit user request only**. The 1024-persona

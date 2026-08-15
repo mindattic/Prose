@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prose.Core.Data;
 
@@ -11,9 +12,11 @@ using Prose.Core.Data;
 namespace Prose.Core.Migrations
 {
     [DbContext(typeof(ProseDbContext))]
-    partial class ProseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260814070152_AddSelfHealActionsAndUniverseProfiles")]
+    partial class AddSelfHealActionsAndUniverseProfiles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -6578,56 +6581,6 @@ namespace Prose.Core.Migrations
                     b.ToTable("LibertyReports");
                 });
 
-            modelBuilder.Entity("Prose.Core.Data.Entities.LlmCallHistory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Action")
-                        .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<DateTime>("At")
-                        .HasColumnType("datetime2");
-
-                    b.Property<double>("Cost")
-                        .HasColumnType("float");
-
-                    b.Property<string>("ErrorMessage")
-                        .HasMaxLength(512)
-                        .HasColumnType("nvarchar(512)");
-
-                    b.Property<int>("FallbackHopIndex")
-                        .HasColumnType("int");
-
-                    b.Property<int>("InputTokens")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Model")
-                        .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
-                    b.Property<int>("OutputTokens")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ProviderId")
-                        .IsRequired()
-                        .HasMaxLength(32)
-                        .HasColumnType("nvarchar(32)");
-
-                    b.Property<bool>("Success")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("LlmCallHistories");
-                });
-
             modelBuilder.Entity("Prose.Core.Data.Entities.MarkdownFile", b =>
                 {
                     b.Property<Guid>("Id")
@@ -7511,38 +7464,6 @@ namespace Prose.Core.Migrations
                         .IsUnique();
 
                     b.ToTable("NodeChapterSummaries");
-                });
-
-            modelBuilder.Entity("Prose.Core.Data.Entities.NodeConvergenceState", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ConsecutiveDryRounds")
-                        .HasColumnType("int");
-
-                    b.Property<string>("LastBookFingerprint")
-                        .HasMaxLength(64)
-                        .HasColumnType("nvarchar(64)");
-
-                    b.Property<DateTime?>("LastRoundAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid>("NodeId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("TotalRoundsRun")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NodeId")
-                        .IsUnique();
-
-                    b.ToTable("NodeConvergenceStates");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeKeyword", b =>
@@ -12457,17 +12378,6 @@ namespace Prose.Core.Migrations
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeChapterSummary", b =>
-                {
-                    b.HasOne("Prose.Core.Data.Entities.Node", "Node")
-                        .WithMany()
-                        .HasForeignKey("NodeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Node");
-                });
-
-            modelBuilder.Entity("Prose.Core.Data.Entities.NodeConvergenceState", b =>
                 {
                     b.HasOne("Prose.Core.Data.Entities.Node", "Node")
                         .WithMany()

@@ -1,6 +1,5 @@
 using System.ComponentModel;
 using System.Text.Json;
-using MindAttic.Legion;
 using ModelContextProtocol.Server;
 using Prose.Core.Interfaces;
 using Prose.Core.Services;
@@ -46,30 +45,25 @@ public class LoreTripleTools
 
     /// <summary>
     /// Extract atomic continuity claims (entity, predicate, object triples) from a
-    /// chapter's prose via Legion Quorum. Each triple's snippet is validated against
+    /// chapter's prose. Each triple's snippet is validated against
     /// the source prose; survivors are upserted into the unified continuity store.
     /// Same-(entity,predicate) with different `object` auto-flags a contradiction.
     /// Returns: new / confirmed / contradicted counts.
     /// </summary>
     [McpServerTool, Description(
-        "Extract atomic continuity claims (entity, predicate, object triples) from a chapter's prose " +
-        "via Legion Quorum. Each triple's snippet is validated against the source prose; survivors are " +
+        "Extract atomic continuity claims (entity, predicate, object triples) from a chapter's prose. " +
+        "Each triple's snippet is validated against the source prose; survivors are " +
         "upserted into the unified continuity store. Same-(entity,predicate) with different `object` " +
         "auto-flags a contradiction. Returns: new / confirmed / contradicted counts. ok=true when no new contradictions surfaced.")]
     public async Task<string> ExtractContinuityFromChapter(
         [Description("Chapter id (32-char hex).")]
             string chapterId,
-        [Description("Quorum: plurality | simplemajority | twothirds | unanimous. Default plurality.")]
-            string quorum = "plurality",
-        [Description("Max tokens per voter response. Default 4096.")]
-            int maxTokens = 4096,
-        [Description("Minimum voters that must propose a claim for it to be stored. Default 1.")]
-            int minVoters = 1)
+        [Description("Max tokens for the extraction response. Default 4096.")]
+            int maxTokens = 4096)
     {
         try
         {
-            var q = ParseQuorum(quorum);
-            var r = await extraction.ExtractFromChapterAsync(chapterId, q, maxTokens, minVoters);
+            var r = await extraction.ExtractFromChapterAsync(chapterId, maxTokens);
             var ok = r.ContradictedClaims == 0;
             return JsonSerializer.Serialize(new
             {
@@ -94,19 +88,14 @@ public class LoreTripleTools
     public async Task<string> ExtractContinuityFromBook(
         [Description("Book id (32-char hex).")]
             string bookId,
-        [Description("Quorum: plurality | simplemajority | twothirds | unanimous. Default plurality.")]
-            string quorum = "plurality",
-        [Description("Max tokens per voter response. Default 4096.")]
-            int maxTokens = 4096,
-        [Description("Minimum voters that must propose a claim for it to be stored. Default 1.")]
-            int minVoters = 1)
+        [Description("Max tokens for the extraction response, per chapter. Default 4096.")]
+            int maxTokens = 4096)
     {
         try
         {
             var book = books.LoadBook(bookId);
             if (book == null) return JsonSerializer.Serialize(new { error = "book_not_found", bookId }, CanonTools.JsonOpts);
-            var q = ParseQuorum(quorum);
-            var rs = await extraction.ExtractFromBookAsync(book, q, maxTokens, minVoters);
+            var rs = await extraction.ExtractFromBookAsync(book, maxTokens);
             var totals = new
             {
                 @new          = rs.Sum(r => r.NewClaims),
@@ -130,12 +119,12 @@ public class LoreTripleTools
     /// <summary>
     /// Extract continuity claims from a single entity record. Top-level scalar
     /// fields become direct claims; prose fields (description, personality,
-    /// ideology…) go through the same Legion Quorum vote as chapter prose.
+    /// ideology…) go through the same single-call extraction as chapter prose.
     /// </summary>
     [McpServerTool, Description(
         "Extract continuity claims from a single entity record by EntityId (canonical Records.Json blob in SQL). " +
         "Top-level scalar fields become direct claims; prose fields (description, personality, ideology…) " +
-        "go through the same Legion Quorum vote as chapter prose.")]
+        "go through the same single-call extraction as chapter prose.")]
     public async Task<string> ExtractContinuityFromEntityRecord(
         [Description("EntityId (guid, hyphenated or 32-char hex) of the canon entity to extract from.")]
             string entityId)
@@ -249,11 +238,4 @@ public class LoreTripleTools
         }
     }
 
-    private static Quorum ParseQuorum(string q) => (q ?? "").ToLowerInvariant() switch
-    {
-        "simplemajority" => Quorum.SimpleMajority,
-        "twothirds"      => Quorum.TwoThirds,
-        "unanimous"      => Quorum.Unanimous,
-        _                => Quorum.Plurality,
-    };
 }

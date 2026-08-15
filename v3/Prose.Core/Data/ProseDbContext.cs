@@ -165,12 +165,18 @@ public class ProseDbContext : DbContext
     public DbSet<NodeReviewSummary>   NodeReviewSummaries  => Set<NodeReviewSummary>();
     // Append-only score timeline — one row per RecomputeScoresAsync call.
     public DbSet<NodeScoreHistory>    NodeScoreHistories   => Set<NodeScoreHistory>();
+    // Logic-sweep loop-until-dry convergence state — one row per book node.
+    public DbSet<NodeConvergenceState> NodeConvergenceStates => Set<NodeConvergenceState>();
     // Per-node narrative spine: amendment log + version pins (bridge).
     public DbSet<NodeAmendment>       NodeAmendments       => Set<NodeAmendment>();
     public DbSet<NodeSpineVersion>    NodeSpineVersions    => Set<NodeSpineVersion>();
     // Full-manuscript snapshots — the sole historical record now that Beats/Nodes/
     // BeatNodes are no longer system-versioned. See ArchivedBook.cs.
     public DbSet<ArchivedBook>        ArchivedBooks        => Set<ArchivedBook>();
+    // AutoCorrect nightly pass: per-action undo ledger + per-universe statistical baselines.
+    // See SelfHealAction.cs / UniverseProfile.cs.
+    public DbSet<SelfHealAction>      SelfHealActions      => Set<SelfHealAction>();
+    public DbSet<UniverseProfile>     UniverseProfiles     => Set<UniverseProfile>();
     // Amazon KDP / storefront search keywords (up to 7 per node).
     public DbSet<NodeKeyword>         NodeKeywords         => Set<NodeKeyword>();
     // Autonomous pipeline — chapter summaries + open threads + plot-state ledger.
@@ -439,6 +445,10 @@ public class ProseDbContext : DbContext
     // Cost tracking — append-only log of CLI command cost history.
     // Populated by CostGateCli.RecordActualAsync; queried by CommandCostEstimatorService to self-calibrate.
     public DbSet<CommandCostHistory>     CommandCostHistories    => Set<CommandCostHistory>();
+
+    // Multi-LLM master switch-over — per-provider-call audit trail (one row per fallback
+    // hop, success or failure). Populated by LlmRouter; see docs/PROVIDERS.md.
+    public DbSet<LlmCallHistory>          LlmCallHistories        => Set<LlmCallHistory>();
 
     // Injectable context overrides — user-managed pin/exclude list for DocContextStack.
     // Managed by UserContextService; applied by DocContextService.PrepareForNodeAsync.
@@ -909,6 +919,14 @@ public class ProseDbContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.ContentHash).HasMaxLength(64);
             e.HasIndex(x => new { x.NodeId, x.RecordedAt });
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<NodeConvergenceState>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.LastBookFingerprint).HasMaxLength(64);
+            e.HasIndex(x => x.NodeId).IsUnique();
             e.HasOne(x => x.Node).WithMany()
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });
@@ -2557,6 +2575,28 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Markdown).IsRequired();
             e.HasIndex(x => x.NodeId);
             e.HasIndex(x => new { x.NodeId, x.CreatedAt });
+        });
+
+        // ── SelfHealAction ───────────────────────────────────────────────────
+        b.Entity<SelfHealAction>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.ActionType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.TargetTable).HasMaxLength(128).IsRequired();
+            e.Property(x => x.TargetId).HasMaxLength(64).IsRequired();
+            e.Property(x => x.BeforeStateJson).IsRequired();
+            e.Property(x => x.Summary).HasMaxLength(1000).IsRequired();
+            e.HasIndex(x => new { x.RunId, x.Sequence });
+            e.HasIndex(x => x.NodeId);
+        });
+
+        // ── UniverseProfile ──────────────────────────────────────────────────
+        b.Entity<UniverseProfile>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.MetricKey).HasMaxLength(200).IsRequired();
+            e.Property(x => x.ValueJson).IsRequired();
+            e.HasIndex(x => new { x.UniverseId, x.MetricKey }).IsUnique();
         });
 
         // ── NodeKeyword ────────────────────────────────────────────────────

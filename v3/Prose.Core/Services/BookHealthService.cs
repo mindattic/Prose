@@ -76,6 +76,7 @@ public class BookHealthService(
     SanityScanService sanityScan,
     BeatRepairService beatRepair,
     NodeWorkbenchService workbench,
+    ContinuityService continuity,
     ILogger<BookHealthService> log)
 {
     // ── SII formula constants ───────────────────────────────────────────────────────
@@ -138,6 +139,7 @@ public class BookHealthService(
             await RunCheckAsync(checks, "reader-qa", async () => { await comprehensionProbe.RunAsync(nodeId, force: false, ct); });
             await RunCheckAsync(checks, "behavior-check", () => BehaviorCheckAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "theme-coherence", () => ThemeCoherenceAsync(nodeId, slug, ct));
+            await RunCheckAsync(checks, "fact-ledger", () => FactLedgerAsync(slug, ct));
         }
 
         // ── FULL tier — heaviest multi-call audits, cost scales with book length ────
@@ -616,10 +618,28 @@ public class BookHealthService(
     }
 
     /// <summary>NarrativeScienceService's five-act map returns structural gaps but never files
-    /// Findings. One LLM call per book — cheap, always run in FULL.</summary>
+    /// Findings. One LLM call per book — cheap, always run in FULL.
+    /// MapFiveActStructureAsync now throws on LLM/parse failure (2026-08-14 fix) instead of
+    /// returning a "(parse error)" Error stub — this used to be checked and silently swallowed
+    /// (`if (map.Error != null) return;`), so a failed run and a genuinely gap-free book both
+    /// produced zero FIVEACT findings, indistinguishable from each other. Now files a distinct
+    /// [incomplete] finding on failure, same pattern as DramaticQuestionAsync.</summary>
     private async Task FiveActMapAsync(Guid nodeId, string slug, CancellationToken ct)
     {
-        var map = await narrativeScience.MapFiveActStructureAsync(nodeId, ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "FIVEACT [incomplete]");
+        FiveActMap map;
+        try
+        {
+            map = await narrativeScience.MapFiveActStructureAsync(nodeId, ct);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "MapFiveActStructureAsync failed for node {NodeId}", nodeId);
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                $"FIVEACT [incomplete]: five-act structure map could not be generated (LLM/parse error) — re-run once resolved.",
+                snippet: null, suggestedFix: null);
+            return;
+        }
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "FIVEACT ");
         if (map.Error != null) return;
         foreach (var gap in map.StructuralGaps)
@@ -775,19 +795,40 @@ public class BookHealthService(
         }
         // "SACRED-FLAW " also matches (and clears) a stale "SACRED-FLAW [no-pov-data]" rollup
         // from a prior run, since that summary starts with this same prefix.
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SACRED-FLAW [incomplete]");
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SACRED-FLAW ");
+        var failedCharCount = 0;
         foreach (var pov in povRows.DistinctBy(p => p.EntityId))
         {
-            var result = await narrativeScience.AnalyzeSacredFlawAsync(pov.EntityId, scaffold: false, ct);
+            SacredFlawAnalysis result;
+            try
+            {
+                // AnalyzeSacredFlawAsync now throws on LLM/parse failure (2026-08-14 fix) instead
+                // of returning a "(parse error)" TheoryOfControl — that fallback used to be filed
+                // here as a real SACRED-FLAW finding ("no theory of control identified"),
+                // distinguishable from a genuine low-confidence read only by string-matching
+                // Diagnosis. Catch per-character so one failure doesn't lose the others.
+                result = await narrativeScience.AnalyzeSacredFlawAsync(pov.EntityId, scaffold: false, ct);
+            }
+            catch (Exception ex)
+            {
+                failedCharCount++;
+                log.LogWarning(ex, "AnalyzeSacredFlawAsync failed for character {EntityId}", pov.EntityId);
+                continue;
+            }
             if (string.Equals(result.Confidence, "high", StringComparison.OrdinalIgnoreCase)) continue;
-            var sev = string.IsNullOrWhiteSpace(result.TheoryOfControl) || result.Diagnosis == "(parse error)"
-                ? FindingSeverity.Medium : FindingSeverity.Low;
+            var sev = string.IsNullOrWhiteSpace(result.TheoryOfControl) ? FindingSeverity.Medium : FindingSeverity.Low;
             findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, sev,
                 $"SACRED-FLAW {pov.EntityName}: confidence={result.Confidence} — " +
                 $"{(string.IsNullOrWhiteSpace(result.TheoryOfControl) ? "no theory of control identified" : result.TheoryOfControl)}",
                 snippet: null,
                 suggestedFix: "Ground this POV character's flaw via create_character (PsychologySecret / core_fears / core_desires / blind_spots) so future beats have a firm theory-of-control to dramatize.");
         }
+
+        if (failedCharCount > 0)
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                $"SACRED-FLAW [incomplete]: {failedCharCount} character(s) could not be evaluated (LLM/parse errors) — re-run once resolved.",
+                snippet: null, suggestedFix: null);
     }
 
     private sealed record PresenceRow(Guid BeatId, Guid EntityId, string EntityName);
@@ -892,7 +933,24 @@ public class BookHealthService(
     /// own merits (Low) — many legitimately good books end ambiguously on purpose.</summary>
     private async Task ThemeCoherenceAsync(Guid nodeId, string slug, CancellationToken ct)
     {
-        var result = await themeCoherence.AnalyzeAsync(nodeId, ct);
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "THEME [incomplete]");
+        ThemeCoherenceResult result;
+        try
+        {
+            // AnalyzeAsync now throws on total LLM/parse failure (2026-08-14 fix) instead of
+            // returning a stub with Error set — this caller used to just check `Error != null`
+            // and silently return, filing nothing, so a failed run and a genuinely clean book
+            // were indistinguishable from the Findings list.
+            result = await themeCoherence.AnalyzeAsync(nodeId, ct);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "ThemeCoherenceService.AnalyzeAsync failed for node {NodeId}", nodeId);
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                "THEME [incomplete]: controlling-idea analysis could not be generated (LLM/parse error) — re-run once resolved.",
+                snippet: null, suggestedFix: null);
+            return;
+        }
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "THEME ");
         if (result.Error != null) return;
 
@@ -909,10 +967,58 @@ public class BookHealthService(
                 $"THEME [unclear]: no coherent controlling idea identifiable from Seed/Bible/bookend beats — {result.Diagnosis}",
                 snippet: null, suggestedFix: "State the book's controlling idea in the NodeBible via set_book_bible so future beats have a claim to dramatize.");
 
-        if (!result.EndingEngagesOpening)
+        // EndingEngagesOpening is now nullable (2026-08-14 fix) — null means the model didn't
+        // answer the question (e.g. omitted the field), which is NOT the same as "no, it
+        // doesn't engage." Only file the finding on an explicit false.
+        if (result.EndingEngagesOpening == false)
             findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.Low,
                 $"THEME [ending-drift]: closing beats don't appear to engage the opening's value-question (\"{result.ControllingIdea}\") — {result.Diagnosis}",
                 snippet: null, suggestedFix: null);
+    }
+
+    /// <summary>Wires ContinuityService's ledger of atomic (entity, predicate, object) claims —
+    /// fully built (Upsert, contradiction detection, resolution lifecycle) but never called from
+    /// the automated battery before this fix — into a per-book Finding. Numeric predicates
+    /// (ages, tenures, etc.) are compared arithmetic-safely by ContinuityService.ObjectsMatch
+    /// (2026-08-14 fix), so re-derived phrasing across sweep rounds ("fifty" vs "50") no longer
+    /// manufactures the false contradiction that VIGL hit repeatedly this session — only a
+    /// genuine numeric discrepancy (fifty vs sixty) still surfaces here.
+    /// This check's coverage is bounded by whether ContinuityExtractionService has ever been run
+    /// for this book (nothing runs it automatically per beat save yet) — HasAnyClaimsForBook
+    /// distinguishes "extracted and clean" from "never extracted," same honest-gap pattern as
+    /// SacredFlawAsync's no-pov-data finding.</summary>
+    private Task FactLedgerAsync(string slug, CancellationToken ct)
+    {
+        ct.ThrowIfCancellationRequested();
+
+        // Read before touching Findings — a read failure here (e.g. DB connectivity) should
+        // propagate to RunCheckAsync's own try/catch and leave prior Findings untouched, same
+        // "never purge on a failed read" discipline as every other check in this file.
+        var hasClaims = continuity.HasAnyClaimsForBook(slug);
+        var groups = hasClaims ? continuity.GetContradictionGroups(slug) : [];
+
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "FACT-LEDGER ");
+
+        if (!hasClaims)
+        {
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                "FACT-LEDGER [not-extracted]: no continuity claims tagged for this book — the fact ledger has " +
+                "never been populated here, not because no hard facts needed tracking.",
+                snippet: null,
+                suggestedFix: "Run prose --continuity extract --book <slug> (or the MCP ExtractContinuityFromBook tool) to backfill the ledger.");
+            return Task.CompletedTask;
+        }
+
+        foreach (var g in groups)
+        {
+            var variants = string.Join(" vs. ", g.Claims.Select(c =>
+                $"\"{c.Object}\" ({c.SourceType}{(c.SourceChapterNumber.HasValue ? $", ch.{c.SourceChapterNumber}" : "")})"));
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Contradiction, FindingSeverity.Medium,
+                $"FACT-LEDGER [{g.EntityName}.{g.Predicate}]: conflicting values — {variants}",
+                snippet: null,
+                suggestedFix: "Resolve via the /continuity UI (or ContinuityService.Resolve/MakeCanonical) — pick the load-bearing value, or supply a custom one if neither is right.");
+        }
+        return Task.CompletedTask;
     }
 
     private const int MinPovBeatsForVoiceFingerprint = 6;

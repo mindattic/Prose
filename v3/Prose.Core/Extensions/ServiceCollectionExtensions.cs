@@ -494,7 +494,9 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<NodeWorkbenchService>>(),
             sp.GetService<SettingsService>(),
             sp.GetRequiredService<EntityRamificationService>(),
-            sp.GetRequiredService<PostBeatValidationService>()));
+            sp.GetRequiredService<PostBeatValidationService>(),
+            blastRadius: sp.GetRequiredService<BlastRadiusService>(),
+            logicSweep: sp.GetRequiredService<Prose.Core.Services.Audit.LogicSweepService>()));
         services.AddSingleton<WritingQualityService>();
         services.AddSingleton(sp => new MotifService(
             sp.GetRequiredService<SettingsKvStore>(),
@@ -1097,6 +1099,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BibleSyncService>();
         services.AddSingleton<BlueprintSyncService>();
         services.AddSingleton<BeatCoordinationService>();
+        services.AddSingleton<BlastRadiusService>();
         services.AddSingleton<MeaningBackfillService>();
         services.AddSingleton<BeatEventSummaryService>();
         services.AddSingleton<EntityContextStack>();

@@ -46,6 +46,7 @@ public class BookAuditTools(
                 advisory_count   = report.AdvisoryCount,
                 plant_count      = report.PlantCount,
                 orphaned_plants  = report.OrphanedPlants,
+                truncated        = report.Truncated,
                 checks           = report.Checks.Select(c => new
                 {
                     key      = c.Key,

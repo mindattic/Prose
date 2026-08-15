@@ -128,7 +128,16 @@ public static class NarrativeScienceCli
         }
 
         Console.WriteLine($"Analyzing sacred flaw for character {characterArg}…");
-        var result = await svc.AnalyzeSacredFlawAsync(charId.Value, scaffold);
+        SacredFlawAnalysis result;
+        try
+        {
+            result = await svc.AnalyzeSacredFlawAsync(charId.Value, scaffold);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"sacred-flaw FAILED: {ex.Message}");
+            return 1;
+        }
 
         if (persist)
         {
@@ -323,7 +332,16 @@ public static class NarrativeScienceCli
         if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
         Console.WriteLine($"Mapping five-act structure for '{nodeSlug}'…");
-        var result = await svc.MapFiveActStructureAsync(node.Id);
+        FiveActMap result;
+        try
+        {
+            result = await svc.MapFiveActStructureAsync(node.Id);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"five-act FAILED: {ex.Message}");
+            return 1;
+        }
 
         if (result.Error != null)
         {
