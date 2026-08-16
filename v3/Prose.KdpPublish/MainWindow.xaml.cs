@@ -242,8 +242,38 @@ public partial class MainWindow : Window
         // json becomes a JS string ARGUMENT here — encode it as a JS string literal (the page's
         // onManifest does JSON.parse on it), not inline it as a JS object literal.
         var jsArg = JsonSerializer.Serialize(json);
-        await ControlPanel.CoreWebView2.ExecuteScriptAsync($"window.ssPanel.onManifest({jsArg})");
+        await TryExecuteScriptAsync(ControlPanel.CoreWebView2, $"window.ssPanel.onManifest({jsArg})");
         await PostLogAsync($"Loaded manifest — {lastManifest.Count} tracked, {lastManifest.Count(e => e.NeedsRepublish)} outdated.");
+    }
+
+    /// <summary>
+    /// A hung/orphaned WebView2 browser process (e.g. left behind by a previously force-killed
+    /// run — the failure mode that motivated this) can make <c>ExecuteScriptAsync</c> block
+    /// forever with zero exception and zero log output, silently freezing an entire automated
+    /// run behind a "Running..." button that never clears. Every UI-update call on the run path
+    /// goes through this instead of a raw <c>ExecuteScriptAsync</c> so a stuck script call can
+    /// never again block progress or hide what happened — it degrades to a console warning and
+    /// lets the caller continue.
+    /// </summary>
+    private static async Task<bool> TryExecuteScriptAsync(CoreWebView2 webView, string script, int timeoutMs = 8000)
+    {
+        try
+        {
+            var scriptTask = webView.ExecuteScriptAsync(script);
+            var winner = await Task.WhenAny(scriptTask, Task.Delay(timeoutMs));
+            if (winner != scriptTask)
+            {
+                Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] ⚠ WebView2 ExecuteScriptAsync timed out after {timeoutMs}ms — continuing without UI update (panel display only; the run itself is unaffected).");
+                return false;
+            }
+            await scriptTask; // observe/propagate a real script exception, if any
+            return true;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] ⚠ WebView2 ExecuteScriptAsync failed: {ex.Message}");
+            return false;
+        }
     }
 
     /// <summary>
@@ -376,18 +406,21 @@ public partial class MainWindow : Window
     {
         var stamped = $"[{DateTime.Now:HH:mm:ss}] {line}";
         Console.WriteLine(stamped);
-        var jsArg = JsonSerializer.Serialize(stamped);
-        await ControlPanel.CoreWebView2.ExecuteScriptAsync($"window.ssPanel.onLog({jsArg})");
 
-        // Mirror every line to the durable DB table + .log file (see KdpRunLogService) so a
-        // terminal session with no view into this window's own UI can follow along during a
-        // run and query it afterward — best-effort, never allowed to block or throw here.
+        // Durable mirror FIRST, before touching the UI at all — a terminal/DB query must be able
+        // to follow a run even if the WebView2 panel update below hangs or fails (see
+        // TryExecuteScriptAsync remarks). Previously this ran only after the UI update returned,
+        // so a stuck ExecuteScriptAsync call silently swallowed the durable log entry too, not
+        // just the on-screen line.
         if (currentRunId is Guid rid && runLog != null)
             _ = runLog.LogAsync(rid, line);
+
+        var jsArg = JsonSerializer.Serialize(stamped);
+        await TryExecuteScriptAsync(ControlPanel.CoreWebView2, $"window.ssPanel.onLog({jsArg})");
     }
 
     private async Task SetRunningAsync(bool running)
-        => await ControlPanel.CoreWebView2.ExecuteScriptAsync($"window.ssPanel.onRunState({(running ? "true" : "false")})");
+        => await TryExecuteScriptAsync(ControlPanel.CoreWebView2, $"window.ssPanel.onRunState({(running ? "true" : "false")})");
 
     private static string FormatEvent(string code, OperatorEvent evt) => evt switch
     {

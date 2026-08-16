@@ -484,6 +484,49 @@ updated: 2026-08-08
 
 **Endpoint reached when** the prod-ship + F7 + F8 are green and F10 demonstrates the flywheel.
 
+## Epic P — SCRY/Fantasy Books in progress {#epic-p}
+
+> Full KDP-paperback-length books set in the SCRY/Fantasy (Entos) universe. Bible-first →
+> chapter-by-chapter workflow; each book gets a book-level node + chapter sub-nodes + beats.
+> Parallel to Epic H (GLMZ Books in progress) — split out 2026-08-15 because VIGL had no home in
+> this document despite being the SCRY universe's flagship novel.
+
+- **SS-US-P1 ✅** As the author, *Vigil's End* (VIGL, `vigil-s-end-019f5767`) is the SCRY/Fantasy
+  universe's flagship novel, written first per the Universe Bedrock Mandate (see
+  [docs/nodes/VIGL.md](nodes/VIGL.md)): a five-POV rotating-close-third novel (Lyra, Declan/M-101,
+  Vega, Wren, Orim) in which a seventeen-year Vigil Templar pursues a stolen memory-relic across
+  Entos, discovers what the Liturgy actually is, and refuses the Canon's writ in the Sinter
+  quarantine zone. *Acceptance: book structure seeded + full prose drafted + fact ledger clean +
+  logic-sweep verified + exported. (verified by `--archive-book`: 25 leaf nodes / 318 beats /
+  132,504 words; `dotnet test v3/Prose.UnitTests`: 2034/2034 passing; exported VIGL V47.docx/epub/
+  pdf/txt/md 2026-08-15, mojibake check passed.)*
+  - **P1a ✅** Book node + 25 chapter sub-nodes seeded, 318 beats (~132,504 words), SortKey
+    100–3000 per chapter. *(structural fix 2026-08-14: all 25 chapters had been silently
+    reparented under a mislabeled orphan node — `prose --archive-book` reported 1 leaf/25 phantom
+    beats instead of the real 318; reparented to the real book node via `--reparent-node`,
+    verified `--archive-book` now reports 25 leaf nodes / 318 beats / 132,504 words.)*
+  - **P1b ✅** Full five-POV prose drafted to Opus-polish standard across all 25 chapters,
+    including the 2026-07-29/30 Ending Redesign (no Sanctorin confrontation, the vitrified-hand/
+    Orbis Omnividens sequence, the Sinter Constrictor's three-strike arc) and six same-day
+    verification passes (2026-08-14, items 17-22 in the bible) that caught and fixed real
+    continuity drift (numeric locks, a stale checkpoint-suspension justification, a genuine
+    structural node-parenting bug) without touching any locked story decision.
+  - **P1c ✅** 2026-08-14 convergence session: `--continuity extract` fact ledger populated
+    (75 claims), both surfaced contradictions resolved as false positives after direct
+    verification against the real beat text (Vega's occupation = Scribe; Pallor's geography
+    already consistent with existing ENTOS.md canon) — see
+    `project_vigl_convergence_run_2026_08_14` (Claude memory). Along the way, fixed 3 real bugs
+    with regression tests: `ContinuityService.Resolve` UID-collision crash, `ContinuityService.
+    Resolve` dropping `BookSlug` on custom resolutions, and `LogicSweepService` accepting
+    hallucinated beat citations for content elided by `AuditProseUtils.ClampProse` on an
+    oversized book (3 layered fixes: elided-range warning, double-quote verification, then
+    single-quote + short-fragment verification once each gap surfaced against a real finding).
+    `--logic-sweep --until-dry` findings dropped 45→20→16→10 across rounds 4-8 before hitting the
+    tool's own 8-round safety cap; zero real prose defects found across the whole session.
+    *(verified by `dotnet test v3/Prose.UnitTests`: 2034/2034 passing.)*
+  - **P1d ✅** Exported: *VIGL V47.docx/epub/pdf/txt/md* → `R:\Desktop\EPub\MindAttic\SCRY\VIGL\`;
+    mojibake check passed; description + keywords + DCM-viz written. *(2026-08-15.)*
+
 ## Epic I — Feedback Loops Integration {#epic-i}
 
 > Each loop in [BIBLE.md §11](BIBLE.md#SS-§11) must be wired end-to-end: not just "the service

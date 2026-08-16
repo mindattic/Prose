@@ -194,8 +194,20 @@ public static class BeatCli
         {
             await using var db = await dbFactory.CreateDbContextAsync();
             var sb = await db.BeatNodes.AsNoTracking().FirstOrDefaultAsync(x => x.BeatId == beatId);
-            if (sb == null) { Console.Error.WriteLine($"[beat delete] Beat {beatId} not found in any node."); return 1; }
-            nodeId = sb.NodeId;
+            if (sb == null)
+            {
+                // No BeatNodes row anywhere for this beat — it may still be a real, fully
+                // orphaned row (e.g. a superseded draft never linked to any chapter). Confirm
+                // the beat itself exists, then pass Guid.Empty through so DeleteBeatAsync's
+                // zero-anywhere branch can remove the dangling row directly.
+                var exists = await db.Beats.AsNoTracking().AnyAsync(b => b.Id == beatId);
+                if (!exists) { Console.Error.WriteLine($"[beat delete] Beat {beatId} not found."); return 1; }
+                nodeId = Guid.Empty;
+            }
+            else
+            {
+                nodeId = sb.NodeId;
+            }
         }
 
         await workbench.DeleteBeatAsync(nodeId, beatId);

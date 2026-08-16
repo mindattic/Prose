@@ -22,7 +22,11 @@
 - [Architecture at a Glance](#architecture-at-a-glance)
 - [The Science — What Prose Actually Uses](#the-science--what-prose-actually-uses)
 - [Prose Generation Pipeline](#prose-generation-pipeline)
+- [World Graph and Interconnectivity](#world-graph-and-interconnectivity)
+- [Has this book ever actually been read?](#has-this-book-ever-actually-been-read-booksequentialreads)
+- [Corrupted currency/dash/diacritic characters](#corrupted-currencydashdiacritic-characters-textintegrityservice)
 - [Quality Verification — Logic Sweeps, Not Votes](#quality-verification--logic-sweeps-not-votes)
+- [Book Completeness — Convergence Gate & Self-Healing](#book-completeness--convergence-gate--self-healing)
 - [CLI Reference](#cli-reference)
 - [MCP Reference](#mcp-reference)
 - [Database](#database)
@@ -129,22 +133,27 @@ predate this epoch and reference the deleted UI; neither has been reconciled yet
 
 ```
 prose CLI  (dotnet run --project v3/Prose.Cli -- <args>)          Prose.Mcp  (MCP server)
-        │  263 dispatched --flag handlers, v3/Prose.Cli/Program.cs      │  273 [McpServerTool] methods,
-        │  + v3/Prose.Cli/Cli/ (226 handler files)                      │  43 tool families, v3/Prose.Mcp/Tools*.cs
+        │  265 dispatched --flag handlers, v3/Prose.Cli/Program.cs      │  322 [McpServerTool] methods,
+        │  + v3/Prose.Cli/Cli/ (227 handler files)                      │  ~40 tool families, v3/Prose.Mcp/Tools*.cs
         └──────────────────────────┬───────────────────────────────────┘
                                     ▼
                     Core services  (v3/Prose.Core/)
-                    │  309 services directly under Services/, 351 including
+                    │  311 services directly under Services/, 353 including
                     │  Services/Audit, /CoverImage, /Local, /Operator (KDP-automation
                     │  tool-calling only), /VideoGen — see The Subsystems below
                     │  EF Core → SQL Server (LocalDB in dev, Azure SQL in prod)
                     ▼
                     Database  (SQL Server)
-                    │  261 base tables + 168 system-versioned _History tables
-                    │  (262 FKs, 278 PKs) — see docs/schema.md
+                    │  263 base tables + 168 system-versioned _History tables
+                    │  (264 FKs, 263 PKs) — see docs/schema.md
                     │  Vector embeddings · directional Edges graph · EntityStateEvents ledger
-                    │  ContinuityClaims · Findings inbox · MarkdownFiles (this doc lives here too)
+                    │  ContinuityClaims fact ledger · LlmCallHistories · Findings inbox
+                    │  MarkdownFiles (this doc lives here too)
 ```
+
+*(Counts verified live 2026-08-15 — see [Status](#status). The MCP tool-family table further
+down predates the jump from 273→322 tools; regenerate via `--export-tools` before trusting the
+per-family breakdown.)*
 
 There is **no web application** in this diagram — see [Epoch 4](#epoch-4--command-line-only-2026-08-13--present).
 Two satellite projects sit beside the CLI/MCP core, each solving a narrow problem the main engine
@@ -152,8 +161,8 @@ doesn't:
 
 | Project | Type | Purpose |
 |---|---|---|
-| `Prose.KdpPublish` | WPF + WebView2 desktop app | Automates the Amazon KDP publishing workflow (browser automation via an internal tool-calling "Operator" — `AnthropicToolClient`/`OpenAiToolCallingLlm` + `KdpTools/` — unrelated to the deleted prose-writing Operator from Epoch 2) |
-| `Prose.LlmCli` (`prose-llm`) | Standalone console app, **no** `Prose.Core` reference | Generic multi-provider LLM CLI escape hatch — works even if `Prose.Core`/the DB/EF migrations are broken, since its only dependency is `MindAttic.Legion` + `MindAttic.Vault`. The last-resort fallback tier in `LlmRouter`'s chain, and a manual terminal tool during an outage |
+| `Prose.KdpPublish` | WPF + WebView2 desktop app | Automates the Amazon KDP publishing workflow via `KdpOperatorService`'s tool-calling loop over `IToolCallingLlm` (`v3/Prose.Core/Services/Operator/`) — a provider-neutral agentic contract implemented by `AnthropicToolCallingLlm` (tried first) and `OpenAiToolCallingLlm` (in-process fallback), so the tool loop/prompts never change when the vendor does; tools live in `KdpTools/` (`FindAndOpenBookTool`, `UploadManuscriptTool`, `SetPriceTool`, `SelectCategoriesTool`, `MarkPublishedTool`, …). Unrelated to the deleted prose-writing Operator from Epoch 2 |
+| `Prose.LlmCli` (`prose-llm`) | Standalone console app, **no** `Prose.Core` reference | Generic multi-provider LLM CLI escape hatch over `MindAttic.Legion`'s `LegionClient` — works even if `Prose.Core`/the DB/EF migrations are broken, since its only dependencies are `MindAttic.Legion` + `MindAttic.Vault`. Syntax: `prose-llm --provider <id> --prompt <text\|@file\|-> [--system <text>] [--temperature <n>] [--max-tokens <n>] [--model <id>] [--json]`; speaks every provider Legion knows (broader than `LlmRouter`'s set — adds cohere/xai/groq/together/openrouter/fireworks). The last-resort fallback tier in `LlmRouter`'s chain, and a manual terminal tool during an outage |
 
 A handful of small one-off maintenance console apps also live under `v3/` (`PromoteEsperanza`,
 `PurgeOldNames`, `RunRepair`, `SyncSableProse`, `WriteSableOrigin`) — narrow, single-purpose data
@@ -287,12 +296,282 @@ MCP equivalents: `workflow_status`, `workflow_status_global`, `workflow_beat_mod
 
 ---
 
+## World Graph and Interconnectivity
+
+`WorldGraphService` (`v3/Prose.Core/Services/WorldGraphService.cs`) builds an in-memory
+[QuikGraph](https://github.com/KeraLua/QuikGraph) `AdjacencyGraph<string, WorldEdge>` over every
+entity in the active universe. Per [SS-LAW-1](docs/BIBLE.md#SS-§5) and
+[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) §2a, **it is never the store of record** — a pure
+in-memory projection rebuilt from SQL on `Rebuild()`/`EnsureLoaded()`, registered as a DI
+singleton that loads synchronously at first resolution and then self-refreshes in the background
+on an epoch-based staleness check (`UniverseScope.Epoch`).
+
+**How it's populated.** Bespoke builders (`BuildCharacters`, `BuildFactions`, `BuildWeaponry`, …)
+each read one typed table and turn scalar fields into a `WorldNode` (`Id = Slugify(Name)` — a
+string, not the entity's real `Guid`) and relationship-shaped fields (`Affiliation`, `Territory`,
+`KnownUsers`, …) into `WorldEdge`s, reading each entity type's own relationship bridge tables
+(`CharacterRelationships`, `WeaponKnownUsers`, `CyberwareItemKnownUsers`, …) fresh every rebuild.
+A catch-all `BuildRemainingEntities()` nodes everything the bespoke builders miss (cyberware,
+ammunition, materials, ~21 other types) so nothing is graph-invisible. **It does not read from
+the JSON graph snapshots** (`engine/data/graph/*.json`) — those are an output cache only,
+written by `--rebuild-graph`, never an input.
+
+There is a second, separate SQL-backed relationship representation: the generic `Edge` entity
+(`v3/Prose.Core/Data/Entities/Edge.cs`) — polymorphic `SourceId`/`TargetId` into the universal
+`Entities` table, bi-temporal validity, a free-string `RelationType`. Its own doc comment states
+the intent (and [RFC 0007](docs/rfc/0007-fully-relational-canon.md) §1b names the same goal): it
+should eventually **replace** the per-type bridge tables as the graph's actual read path, with a
+standing "edge-completeness audit" flagging prose-implied relationships that never got projected
+into a real edge. As of today, `WorldGraphService` does not read `Edge` rows yet — the per-type
+tables are still the live source. Fixing a `WeaponKnownUsers`/`CharacterRelationships` row (as
+several fixes this session did) directly improves the next `--rebuild-graph`'s output; writing to
+`Edge` today does not, until that migration lands.
+
+### Diagnosing real gaps vs. flavor texture
+
+`prose --graph-health --universe <slug>` (`GraphHealthCli.cs`) runs `GraphHealthService.Analyze()`
+— pure string heuristics, zero LLM cost — and reports orphaned nodes (0 edges), weakly-connected
+nodes (exactly 1 edge), and suspicious names (sentence fragments mis-parsed as if they were named
+entities, e.g. "The Provost of the University of the Great Lakes Meridian" showing up as a
+character node).
+
+A raw run against GLMZ found 13,033 total nodes, 789 orphaned, 8,660 weakly connected (66% of the
+entire graph), 487 suspicious names — numbers that sound alarming until you account for **most
+orphaned/weakly-connected entities being intentional flavor texture**: hundreds of guns, drugs,
+apparel items, and NPCs seeded so the world has depth and a deep roster to draw from if a future
+scene needs one, but that never appear on the page. Force-connecting or deleting those would be
+solving a problem that doesn't exist. The real gap is the much smaller subset that **does** appear
+in shipped prose (per the `BeatEntityPresence` table) but isn't properly linked — that's where
+continuity/richness value is actually being left on the table.
+
+`--used-in-prose-only` filters the report to just that actionable subset (best-effort join:
+`WorldNode.Id` slug → `Entities.Slug`/`(EntityType, Name)` → `Entities.Id` → any
+`BeatEntityPresence` row). On the same GLMZ run: of 789 orphans, **103** are actually referenced
+in prose; of 8,660 weakly-connected, **103** are. The real interconnectivity gap is ~206 entities,
+not "thousands" — including named, prose-significant BCODA characters (Femi, Casper Vey) that
+turned out to have zero or one edge despite heavy on-page presence, confirming the filter finds
+real signal, not just noise reduction.
+
+This is the same principle Dynamic Context Memory (DCM) applies to per-beat prompt assembly,
+applied to the graph: only what's actually in play needs full connectivity now; everything else
+stays in reserve, available the moment it's actually used, not before.
+
+**Open direction (not yet built):** a live, windowed "Dynamic Entity Memory" companion to DCM —
+load an entity (and what it implies, e.g. a carried weapon via an `owned_by`/`carries` edge riding
+its owner's presence rather than needing its own per-beat tracking) into a small working-set graph
+when it's used, evict it after N beats of non-use exactly like DCM's `EvictAfterActions` rule, and
+optionally bind a working-set snapshot to a specific beat for a "what was live at this moment in
+the story" visualization. Would keep the *live* graph small and fast rather than walking all
+13,033 nodes on every query. Proposed 2026-08-15; not scoped or built yet.
+
+### Dynamic Edge State — any relationship that's only true for part of the story
+
+This is not a possession-tracking feature. `Edges.RelationType` is a free string — the live
+graph already carries `owns`, `carries`, `knows`, `protected`, `manufactures`, `located_at`, and
+more (see `WorldGraphService`'s bespoke builders). **Any edge between any two entities can have a
+story-time validity window** — an alliance forming and later breaking, trust earned and then
+burned, a faction membership held and then renounced, a location being accessible and later
+sealed, a secret known and then exposed to someone else, a debt owed and then paid. Possession
+("Kyle owns his motorcycle until it's destroyed, doesn't own it until a rebuilt version is
+revealed later, then does again") is just the first worked example, chosen because it was
+concrete and verifiable — not the boundary of what the mechanism covers. This isn't hypothetical
+design work: the machinery already existed in the engine and, as of 2026-08-15, is wired up,
+bug-fixed, and verified against that one real example.
+
+**Three separate temporal-relationship systems exist in this codebase.** Don't rebuild a fourth
+without checking which of these already covers the need:
+
+1. **`Edges`** (SQL, `v3/Prose.Core/Data/Entities/Edge.cs`) — `SourceId`/`TargetId`/`RelationType`
+   with real `DateTime? StoryValidFrom`/`StoryValidUntil`. System-versioned temporal table. This
+   is the one that's live and wired in (below).
+2. **`EntityStateEvents`** (SQL) — an append-only ledger for quantity/status facts (`AspectKey`/
+   `Verb`/`OldValue`/`NewValue`, keyed to a real `BeatGuid`), e.g. ammo counts, a weapon's
+   condition, a character's designation. A different mechanism from `Edges` for a different kind
+   of fact — don't model "owns" as a state event or a possession count as an edge.
+3. **`WorldEdge`/`EvolveRelationship`** (in-memory, `WorldGraphService.cs`) — string-keyed
+   story-points (`"chapter:3"`, not `DateTime`) via `GetEdgesAt`/`IsEdgeValidAt`. Fully-working
+   query methods, but the only writer is an MCP-only LLM-extraction tool, it's never read by
+   `ProseWriterRouter`, and **it doesn't survive `Rebuild()`** — every rebuild wipes it back to
+   timeless edges from the static per-type tables. Effectively orphaned. Left untouched by this
+   pass; documented here so it isn't mistaken for dead code and deleted, or rediscovered as new.
+
+**`WorldStateAtBeatService.SnapshotAsync(beatId, storyTime, entityIds)`** is the live one —
+confirmed called from `ProseWriterRouter.cs` and `BeatGeneratorService.cs`, not diagnostic-only.
+It queries both `Edges` and `EntityStateEvents` for "what's true at this point in the story" using
+exactly this filter shape:
+
+```csharp
+InvalidatedAt == null
+&& (StoryValidFrom == null || StoryValidFrom <= t)
+&& (StoryValidUntil == null || StoryValidUntil > t)
+```
+
+**The gap found before today:** of 2,875 `Edges` rows, 912 had `StoryValidFrom` set and **zero**
+had `StoryValidUntil` — nothing had ever recorded a relationship *ending*. Of 9,366
+`EntityStateEvents` rows, only 67 (0.7%) had a real `BeatGuid` — most were bulk-seeded with
+`AtStoryTime` set to the dev-seeding timestamp, not an in-fiction story position. A system
+genuinely wired into every beat of generation was silently contributing almost nothing.
+
+**Two real bugs found and fixed while verifying the first worked example** (Kyle's motorcycle —
+see `docs/nodes/BCODA.md`; two `Edges` rows, `RelationType = "owns"`, one period ending at the
+Relay Station's destruction, one starting at the birthday reveal of the rebuilt "Mk. 2," open
+-ended per the book's own deliberate ambivalence about its final loss in Ch40):
+
+- `ProseWriterRouter.cs` called `SnapshotAsync(beatId, ct: ct)` with no `entityIds` — despite the
+  method's own docstring warning the unscoped path is "expensive on large DBs — scope in
+  production." **Fixed**: it now resolves `context.CharactersInScene` (names) to `Entities.Id`
+  and passes them, so live generation gets a small, relevant snapshot instead of a full-universe
+  one, consistent with DCM's narrow-scope-by-construction principle.
+- `WorldStateAtBeatService.SnapshotAsync`'s `Edges` query capped at `.Take(500)` with **no
+  `ORDER BY`** before it. SQL Server's unordered `TOP` returns whatever the scan reaches first —
+  for a table with more matching rows than the cap, newly-inserted rows (highest `Id`) are
+  essentially always excluded. This is exactly why the motorcycle's two new edges were invisible
+  to every query until fixed, despite being written correctly. **Fixed**: added
+  `OrderByDescending(e => e.StoryValidFrom != null).ThenByDescending(e => e.StoryValidFrom)`
+  before the `Take(500)`, so real temporal facts sort ahead of the always-on "timeless" majority
+  rather than depending on undefined scan order.
+
+Verified end-to-end with `prose --world-state --beat <id> --story-time <date> --universe glmz`
+at three points: before the destruction beat (owns the original bike), between destruction and
+the reveal (owns neither — the edge is correctly absent), after the reveal (condition=rebuilt,
+designation="MK. 2," ownership edge reactivated on the same entity). This is the reference
+example for populating `Edges`/`EntityStateEvents` correctly going forward — **no corpus-wide
+backfill was attempted**; that's a separate, much larger content decision once more of the corpus
+needs it.
+
+### Has this book ever actually been read? (`BookSequentialReads`)
+
+A structural fix and a content read are different operations, and it's easy to do the first and
+assume the second happened. BCODA had 15 chapters (Ch23-37, 155 beats, ~30% of the book) nested
+under a mislabeled "Chapter 22 — Ghost Period" wrapper node until 2026-08-14, when the schema was
+corrected (`Nodes.ParentNodeId` reparented). But **nobody had ever read what was inside those
+chapters** — every prior sweep queried only one `ParentNodeId` level deep and silently missed
+them. The first genuine read (2026-08-15) found a real spoiler-duplicate beat that had sat there,
+live, since before the fix (see the Dynamic Edge State section above for that story). A
+corpus-wide check the same day found **zero of the 22 books in this corpus had ever had a
+verified sequential read** — this wasn't a BCODA-specific gap.
+
+`SequentialReadTrackingService` (`v3/Prose.Core/Services/SequentialReadTrackingService.cs`) +
+the `BookSequentialReads` table now make "has this book actually been read front-to-back" a
+tracked, queryable fact instead of an assumption. The freshness check is self-invalidating by
+construction: `ComputeBeatSequenceHashAsync` walks the book's full chapter/beat sequence **fresh
+every time** via a recursive descendant walk (never a flat `ParentNodeId=book` query — see
+CLAUDE.md's HARD RULE on this, which exists for exactly this reason), and hashes it. Any future
+reparenting, beat insertion, disable, or reorder changes the hash automatically, so a book flips
+from `Current` to `Stale` on its own — no invalidation trigger, no one has to remember to mark
+anything.
+
+```
+prose --sequential-read-status --slug <slug> | --all [--json]
+prose --sequential-read-record --slug <slug> --read-by <name> [--stages N] [--summary "text"]
+```
+
+BCODA is, as of 2026-08-15, the first of the 22 books with a recorded `Current` status — a
+genuine 7-stage sequential read (each stage carrying forward accumulated story-state for the next
+to check seams against, not independent parallel chunks) that found and fixed two real BLOCKERs
+(a Mrs. Chen relationship-timeline contradiction; a weapon-draw claim contradicting an earlier
+firefight) plus several bible-citation corrections, and confirmed the book reads coherently start
+to finish. By the end of that day's corpus sweep, 5 of 37 books across all universes were
+`Current` (BCODA, Ballast, It Came From Iowa, Read the Room, Sparrow) — the other 32, including
+VIGL, which shares the identical wrapper-chapter bug, had no such record yet.
+
+### Corrupted currency/dash/diacritic characters (`TextIntegrityService`)
+
+Found 2026-08-15 while sequential-reading Ballast: 8 instances of Φ (the QUANTA currency symbol)
+silently corrupted to U+FFFD (the Unicode replacement character) in `Nodes.NodeBible`. A
+corpus-wide follow-up scan found 18 more across five other books' bibles (Pixel, Sparrow, The Way
+Up, The Way Down, Vultures at the Door) — and not just Φ: em-dashes and accented Latin letters
+(Alarcón, Mamá También, crèche) had been silently mangled to the same U+FFFD the same way. All 26
+were fixed.
+
+**Extended the same day, second corruption class found:** while sequential-reading Between the
+Lines, a DIFFERENT garbage codepoint turned up — stray low-range ASCII control characters
+(codepoints 1–31, excluding tab/LF/CR) sitting where an em-dash or section symbol (§) had been
+lost, invisible in most terminals so they render as blank/zero-width and easy to mistake for a
+missing space rather than a missing character. `TextIntegrityService`'s detector was narrowed to
+U+FFFD only, so it missed this class entirely. Broadened the scanner to flag both signatures in
+one pass, then re-ran corpus-wide: **97 more instances** across 11 more books (Pixel, Read the
+Room, Ballast, Bushido Coda, The Way Up, Sparrow, The Way Down, It Came From Iowa, Critical Mass,
+Steppin' Razor, Vultures at the Door) — all corrupted em-dashes/section-symbols, all in
+`Nodes.NodeBible`, all codepoint 26 (ASCII SUB) except Between the Lines' codepoint-21 (NAK)
+section-symbol instances. 95 auto-fixed via `--fix`, 2 needed manual review (an em-dash next to a
+newline instead of a space, missed by the auto-heuristic's strict both-sides-space check). A
+corpus-wide re-scan confirms **0 remaining** as of this writing, across BOTH signatures.
+
+**Root cause of why this went undetected for so long:** SQL Server's `REPLACE`/`CHARINDEX` gave
+**false negatives** for U+FFFD under this DB's collation — `CHARINDEX(NCHAR(65533), text)`
+returned 0 even when a direct `UNICODE(SUBSTRING(text, pos, 1))` at that exact position confirmed
+65533. Any ad-hoc SQL check written the "obvious" way would silently miss real corruption.
+`TextIntegrityService` (`v3/Prose.Core/Services/TextIntegrityService.cs`) never uses those SQL
+functions for detection — it pulls text into memory via EF Core and does a plain C# char
+comparison against BOTH known corruption signatures (U+FFFD, and any control char below 32 other
+than tab/LF/CR), which has no collation involved and cannot have the same bug. It scans with
+`IgnoreQueryFilters()` so one call sees every `Beats.Text` and every book's `Nodes.NodeBible`
+across all universes, never scoped to whatever `--universe` the process happened to start with.
+**If a third garbage-codepoint signature ever turns up, extend the detector again — don't hand-fix
+the one instance and move on; that's exactly how the control-char class sat undetected this long.**
+
+```
+prose --check-text-integrity [--fix] [--json]
+```
+
+`--fix` auto-repairs three unambiguous patterns: U+FFFD immediately followed by a digit → Φ (this
+project's Φ-precedes-the-number currency convention); a stray control char between two spaces →
+em-dash; a stray control char immediately before a digit → section symbol (§N). Everything else —
+a foreign proper noun, a definitional "`Φ` = QUANTA" line, an em-dash sitting next to a newline
+instead of a space — needs the corrected character inferred from context and fixed by hand; the
+tool reports these for review rather than guessing.
+
+**Two workarounds discovered while fixing this by hand — written down so they are never
+rediscovered the hard way again:**
+
+1. **`TextIntegrityFinding.Position` is 0-indexed (C# convention); SQL `STUFF`/`SUBSTRING` are
+   1-indexed.** `ApplyFixAsync` correctly adds 1 internally. But when a position is hand-copied
+   from the CLI's printed report into a manual SQL script (bypassing the service), forgetting that
+   +1 silently repairs the character **before** the real corruption, leaves the actual bad
+   character untouched, and clobbers whatever legitimate character used to sit one position
+   earlier. This happened for every manual fix attempted in this session before it was caught —
+   always re-derive the position from a fresh `UNICODE(SUBSTRING(...))` check against the live
+   row, never trust a hand-copied "Position:" number without adding 1 first.
+2. **A literal `--` (or other multi-character ASCII sequence) typed into a `sqlcmd -Q "..."`
+   string argument passed through bash is not reliable.** In this session it arrived in the
+   database as a single ASCII SUB control character (0x1A / codepoint 26), not two hyphens — some
+   layer of the bash → sqlcmd argument-passing chain collapsed or reinterpreted it. Any character
+   or short sequence that isn't a plain ASCII letter/digit — em-dashes, curly quotes, accented
+   letters, and apparently even a doubled hyphen — should be constructed with `NCHAR(<codepoint>)`
+   in the SQL itself, or written via the `Write` tool to a `.sql` file and run with `sqlcmd -i`,
+   never typed as a literal special character (or look-alike ASCII substitute) inside a `-Q`
+   argument. **Confirmed, not just theorized:** the 97-instance control-char corruption found the
+   same day was this exact codepoint (26, ASCII SUB) sitting in place of em-dashes across 11
+   books' bibles — this workaround describes the live mechanism that produced most of that
+   corpus-wide corruption, not a one-off.
+
+### The "unreachable service" anti-pattern
+
+On 2026-08-09 a sweep found five real, working, fully-tested services with **zero CLI or MCP
+invocation path** — built, never wired to anything a human or agent could actually call, quietly
+rotting: `DataConsistencyService` (previously reachable only from the Blazor `/integrity` admin
+page — itself removed in Epoch 4), `GraphHealthService` (this section), six `DataScanUtility`
+subclasses (`FixPhiService`, `FixIdentityCorruptionService`, `TagWeaponLethalityService`,
+`TagNormalizerService`, `AssignTiersService`, `CrossReferenceService` — these additionally had no
+dry-run capability at all before the fix), and `NodeWorkbenchService.MoveBeatAsync` (fractional
+-SortKey beat reordering, previously Blazor-drag-and-drop-only). Each got a thin CLI wrapper
+(`DataConsistencyCli.cs`, `GraphHealthCli.cs`, `DataScanCli.cs`, `MoveBeatCli.cs`) and nothing
+else changed — the services were already correct. **If you build a new service, wire an
+invocation path (CLI flag or MCP tool) before moving on**, or it's the natural sixth example.
+
+---
+
 ## Quality Verification — Logic Sweeps, Not Votes
 
 **The 0–100 score gates (≥82% standalone / ≥85% cumulative) are retired** (author ruling,
 2026-08-03: *"remove scores; they mean nothing"* — SS-A44). Nothing writes new `Node.Score` values
-except an explicitly requested legacy panel run. Publish-readiness is now: **Logic Sweep clean at
-BLOCKER + zero open High/BLOCKER Reader-Proxy QA findings.**
+except an explicitly requested legacy panel run. Publish-readiness is **not** a single "clean at
+BLOCKER" snapshot — a fixed sweep-round count was never a real stopping criterion (five rounds
+clean, then a sixth independent round finding something new was the observed failure this
+replaced). It's a five-point convergence gate, [docs/LOGIC.md §9](docs/LOGIC.md#SS-LOGIC-9) — see
+[Book Completeness](#book-completeness--convergence-gate--self-healing) for the mechanics behind
+each point.
 
 ### The Logic Sweep ([docs/LOGIC.md](docs/LOGIC.md), canonical runbook `/logic-sweep`)
 
@@ -327,11 +606,120 @@ user request (`--allow-votes` / `allowVotes:true`); the engine's default is OFF.
 
 ---
 
+## Book Completeness — Convergence Gate & Self-Healing
+
+Two pieces of infrastructure added 2026-08-14/15 that answer "is this book actually done" and
+"can obviously-safe fixes apply themselves" without a human re-reading every finding by hand. A
+third, related piece — has a book ever genuinely been read front-to-back, as opposed to swept in
+scoped chunks — lives in [its own section above](#has-this-book-ever-actually-been-read-booksequentialreads)
+under World Graph; the fact-ledger/blast-radius/loop-until-dry machinery below is what makes a
+*sweep* trustworthy, and the sequential-read tracker is what confirms a *human or agent* actually
+looked at the result.
+
+### The five-point convergence gate ([docs/LOGIC.md §9](docs/LOGIC.md#SS-LOGIC-9))
+
+A book is publish-ready only when **all five** hold — not a fixed round count, not a single clean
+snapshot:
+
+1. **Zero open BLOCKER/MODERATE logic-sweep findings.**
+2. **Zero open `CONTRADICTED` fact-ledger claims.** The "fact ledger" is `ContinuityService` /
+   the `ContinuityClaims` table (`v3/Prose.Core/Services/ContinuityService.cs`) — `Upsert` checks
+   an incoming `(EntityId, Predicate, Object)` claim against any other live claim on the same
+   `(EntityId, Predicate)`; a mismatch files the *incoming* claim as `CONTRADICTED` (a `CANONICAL`
+   existing claim is never demoted). **Numeric-safe** (fixed 2026-08-14 after a real VIGL false
+   positive — a career length drifted "fifty"→"sixty" across sweep rounds and got flagged as a
+   contradiction it wasn't): predicates on an explicit allowlist (`age`, `tenure_years`,
+   `career_length_years`, `zone_age_years`, `duration_years`, `years`) are parsed as integers
+   (digits, number-words, compound words like "fifty-nine", unit suffixes stripped) and compared
+   arithmetically instead of by string equality; claim UIDs normalize the same way so "fifty" and
+   "50" collapse into one claim rather than two that then falsely contradict each other.
+   Non-numeric predicates still use plain string equality. `prose --continuity extract --slug
+   <slug>` populates the ledger from prose (multi-provider `(entity, predicate, object)`
+   extraction via `ContinuityExtractionService`); `prose --continuity <list|resolve|apply>`
+   manages open contradictions.
+3. **Two consecutive independent sweep rounds find zero new findings** — checked mechanically via
+   `prose --logic-sweep --slug <slug> --until-dry [--required-dry N] [--max-rounds N]`
+   (`LogicSweepCli.cs`; defaults 2 required dry rounds, 8-round safety cap), never a manually
+   counted round number. Each CLI invocation runs exactly **one round**
+   (`LogicSweepService.RunConvergenceRoundAsync`); state persists per-book in
+   `NodeConvergenceStates` (`ConsecutiveDryRounds`, `TotalRoundsRun`, `LastBookFingerprint` — a
+   hash over every enabled beat's text in `SortKey` order, `LastRoundAt`). If the book's
+   fingerprint hasn't changed and the dry-round count already meets the requirement, the round is
+   skipped with zero LLM cost. Any edit since the last round resets `ConsecutiveDryRounds` to 0 —
+   convergence has to be *re-earned*, not just remembered. Hitting the round cap without
+   converging resets both counters and files a `LOGICSWEEP-CONVERGENCE [not-converging]` finding
+   instead of looping forever — an escalation, not a silent giveup. MCP: `logic_sweep_until_dry`.
+4. **Every fix since the last dry round passed its own blast-radius re-check.**
+   `BlastRadiusService.GetBlastRadiusBeatIdsAsync(beatId, chapterWindow: 3)` returns the edited
+   beat, its same-chapter neighbors within 3 positions either side, and every other beat *anywhere
+   in the book* that shares a `BeatEntityPresence` row with it (a character, place, or object
+   mentioned in both). This fires automatically and asynchronously (fire-and-forget, exceptions
+   logged not surfaced) from `NodeWorkbenchService.UpdateBeatTextAsync` — the single write path
+   under every beat edit, manual or automated — which hands the resulting beat-ID set to
+   `LogicSweepService.RunNarrowAsync(nodeId, beatIds, anchorBeatId)`: the same five sweep
+   dimensions as a full run (everything but the whole-book-context `InsertedBeatDriftRule`),
+   scoped to just that subset, filed under a distinct `"beat:{anchor}:blast"` finding key so it
+   never collides with full-sweep findings. Every beat save gets a mini-sweep of its own
+   consequences for free, without waiting for the next full pass.
+5. **Zero open High/BLOCKER Reader-Proxy QA findings.**
+
+### AutoCorrect — the nightly self-heal pass (pure ML/deterministic, zero LLM calls)
+
+`AutoCorrectOrchestratorService` (`v3/Prose.Core/Services/AutoCorrectOrchestratorService.cs`)
+runs per-universe, nightly: refresh statistical baselines
+(`UniverseProfileService.RefreshDensityBaselinesAsync` — mean/stdev over Flesch reading-ease,
+Flesch-Kincaid grade, type-token ratio, dialogue proportion, and words-per-sentence, from at least
+5 scored beats, upserted into `UniverseProfiles`), snapshot every book's live prose as a safety net
+(`BookArchiveService.ArchiveAsync(nodeId, "autocorrect-pre-run")` → `ArchivedBooks`, same service
+behind manual `prose --archive-book (--id | --slug) [--reason "..."]`), then re-run the existing
+detectors (`SanityScanService`, `NightlyHealthService`, `BeatDuplicateService`) to refresh Findings.
+
+Only **three narrow categories** ever auto-apply — everything else stays a Finding for a human to
+approve:
+
+1. Duplicate character/faction/place entities with **exactly 2 candidates** →
+   `DuplicateEntityScanService.MergeAsync` (capped at 20 merges/universe/run; 3+ candidates are
+   too ambiguous and stay flag-only).
+2. Three specific deterministic drift patterns (`ESE-DANGLING`,
+   `CHAR-AFFIL-ALIAS-DRIFT`, `CHAR-HOMETURF-ALIAS-DRIFT`) →
+   `DataConsistencyService.ApplyDeterministicFixesWithLedgerAsync`.
+3. Cross-book continuity contradictions with a clean 2-variant majority → `ContinuityService.Resolve`.
+
+Near-duplicate **beats** are deliberately excluded even though they looked whitelist-eligible —
+`BeatDuplicateService`'s own doc comment calls it "a candidate generator, not a verdict";
+auto-deleting risks destroying an intentional callback. Every applied mutation is logged before
+commit via `SelfHealLedgerService.LogAsync` (`SelfHealActions` table — `Op`/`Table`/`PkColumn`/
+`PkValue`/prior column values per row, enough to reverse it) so a run can be undone:
+
+```
+prose --auto-correct-nightly [--universe <slug>] [--dry-run] [--json]
+prose --auto-correct-undo (--run-id <guid> | --last-n <N>)
+prose --auto-correct-status [--list-runs]
+```
+
+`--dry-run` runs every detector and logs `"[dry-run] would ..."` notes without mutating anything.
+Scheduling is external — `scripts/register-autocorrect-task.ps1` registers a Windows Task
+Scheduler job (`ProseAutoCorrectNightly`, daily 3:00 AM local, `StartWhenAvailable` so a missed
+night on a non-24/7 machine catches up) that generates and runs `scripts/run-autocorrect-nightly.ps1`.
+**As of 2026-08-15 the scheduled task still runs in `--dry-run`** — the plan is to drop that flag
+once a few mornings of `prose --morning-report` output look trustworthy, a config change that
+doesn't require re-registering the task. No MCP tool exists yet for AutoCorrect, blast-radius, or
+undo — CLI-only for now.
+
+**A caveat worth knowing before typing a long `--reason`:** `BookArchiveService.ArchiveAsync`
+inserts into `ArchivedBooks.Reason`, mapped `nvarchar(40)` — neither the CLI handler nor the
+service truncates or validates the string first, so `--archive-book --reason "<41+ characters>"`
+fails at `SaveChangesAsync` with a SQL truncation error rather than a clean message. Not a risk for
+the nightly pass itself (it always passes the fixed, 20-character `"autocorrect-pre-run"`), only
+for manual invocations with a long custom reason.
+
+---
+
 ## CLI Reference
 
-The canonical invocation `prose` expands to `dotnet run --project v3/Prose.Cli -- <args>`. **263
-distinct `--flag` handlers** are dispatched from `v3/Prose.Cli/Program.cs`, backed by **226 handler
-files** under `v3/Prose.Cli/Cli/`. What follows is a categorized tour, not an exhaustive
+The canonical invocation `prose` expands to `dotnet run --project v3/Prose.Cli -- <args>`. **265
+distinct `--flag` handlers** are dispatched from `v3/Prose.Cli/Program.cs`, backed by **227 handler
+files** under `v3/Prose.Cli/Cli/` (2026-08-15 count). What follows is a categorized tour, not an exhaustive
 line-by-line dump — `Program.cs` is the exhaustive source, and the CLI has no built-in
 `--help` listing every flag; grep `Program.cs` for the authoritative, always-current list.
 
@@ -362,7 +750,11 @@ line-by-line dump — `Program.cs` is the exhaustive source, and the CLI has no 
 
 | Command | What it does |
 |---|---|
-| `prose --logic-sweep --slug <slug>` | The default QA methodology — six-dimension continuity sweep, no votes |
+| `prose --logic-sweep --slug <slug> [--until-dry [--required-dry N] [--max-rounds N]]` | The default QA methodology — six-dimension continuity sweep, no votes; `--until-dry` runs one convergence round per invocation until 2 consecutive dry rounds or an 8-round safety cap (see [Book Completeness](#book-completeness--convergence-gate--self-healing)) |
+| `prose --continuity extract --slug <slug>` / `--continuity <list\|resolve\|apply>` | Fact-ledger extraction + contradiction management (`ContinuityService`/`ContinuityClaims`, numeric-safe comparisons) |
+| `prose --sequential-read-status --slug <slug>` / `--all [--json]` / `--sequential-read-record --slug <slug> --read-by <name> [--stages N] [--summary "text"]` | Has this book ever been read front-to-back, and is that record still current? (see [Has this book ever actually been read?](#has-this-book-ever-actually-been-read-booksequentialreads)) |
+| `prose --archive-book (--id <guid> \| --slug <slug>) [--reason "<text, ≤40 chars>"]` | Whole-book prose snapshot to `ArchivedBooks` — the safety net behind AutoCorrect and manual "before I touch this" backups |
+| `prose --auto-correct-nightly [--universe <slug>] [--dry-run] [--json]` / `--auto-correct-undo (--run-id <guid> \| --last-n <N>)` / `--auto-correct-status [--list-runs]` | Nightly self-heal pass — 3 whitelisted deterministic auto-fixes, everything else stays a Finding; every mutation undoable (see [Book Completeness](#book-completeness--convergence-gate--self-healing)) |
 | `prose --reader-qa --slug <slug> [--gripe-pass]` | Reader-Proxy QA — comprehension, craft checklist, gripe jury |
 | `prose --craft-checklist --slug <slug>` | Hash-gated binary craft/delight checklist |
 | `prose --duel --slug <slug>` | Cross-provider pairwise splice duels |
@@ -380,7 +772,7 @@ line-by-line dump — `Program.cs` is the exhaustive source, and the CLI has no 
 | `prose --examine-emotion --slug <slug>` | 8-dimension per-beat emotional scoring |
 | `prose --verify-beat --slug <slug>` / `--verify-book --slug <slug>` | Post-generation verification passes |
 | `prose --verify-quote` / `--verify-quotes-batch` | Quote-grounding verification |
-| `prose --graph-health` | Entity relationship graph integrity check |
+| `prose --graph-health --universe <slug> [--used-in-prose-only]` | Entity relationship graph integrity check — orphans, weak links, junk names; `--used-in-prose-only` filters to entities that actually appear in shipped prose (see [World Graph and Interconnectivity](#world-graph-and-interconnectivity)) |
 | `prose --coordinate` / `--coverage` / `--backfill-coverage` | Cross-service coverage bookkeeping (non-destructive logging for existing beats) |
 | `prose --fix-cross-universe-contamination` | Repairs cross-universe roster/POV leaks (the fail-closed scoping fix from Epoch 4) |
 | `prose --review-book` / `--review-node` / `--review-entity` | **Quarantined legacy vote panels** — SS-A44-gated, explicit request only |
@@ -493,9 +885,11 @@ descriptions is [docs/MCP_TOOLS.md](docs/MCP_TOOLS.md)):
 There is **no internal "Operator" service for prose authoring** — that path (`WriterOperatorService`,
 the Epoch-2 `Operator`/CoWriter chat cluster) was deleted in Epoch 4. The `Services/Operator/`
 folder that still exists under `Prose.Core` is unrelated: it's KDP-publish browser-automation
-tool-calling (`AnthropicToolClient`, `KdpToolRegistry`, `KdpTools/`) consumed only by
-`Prose.KdpPublish`. Agentic authoring today means Claude — via this MCP server — calling the
-canon directly, with the human approving canon and voice changes rather than authoring them.
+tool-calling (`IToolCallingLlm`, `KdpToolRegistry`, `KdpTools/`) consumed only by
+`Prose.KdpPublish` — see [Architecture at a Glance](#architecture-at-a-glance) for the
+Claude-first/OpenAI-fallback shape of that abstraction. Agentic authoring today means Claude — via
+this MCP server — calling the canon directly, with the human approving canon and voice changes
+rather than authoring them.
 
 ---
 
@@ -523,15 +917,22 @@ question.
 
 ### Schema reference
 
-The DB schema is documented at [docs/schema.md](docs/schema.md) — **261 base tables** (262 FKs,
-278 PKs) plus **168 system-versioned `_History` tables**, generated by `tools/gen-schema.ps1`.
-Regenerate after any migration.
+The DB schema is documented at [docs/schema.md](docs/schema.md) — **263 base tables** (264 FKs,
+263 PKs, live-queried 2026-08-15) plus **168 system-versioned `_History` tables**, generated by
+`tools/gen-schema.ps1`. Regenerate after any migration — `docs/schema.md`'s snapshot (2026-08-14)
+already covers `ArchivedBooks`, `SelfHealActions`, `UniverseProfiles`, and `LlmCallHistories`, but
+predates `BookSequentialReads` and `NodeConvergenceStates` (both created 2026-08-15, see
+[Key tables](#key-tables) below), so a re-run is due.
 
 ### Content census (2026-08-14, live query)
 
 **37 books**, 485 chapters, 2 series (`Nodes.Kind`). **13,653 total beat rows** in `Beats`;
 **12,032** are linked into a live book's spine via `BeatNodes` (the rest — 1,621 — currently
-belong to no book). `BeatNodes` presence *is* the enable signal now: migration
+belong to no book). **Re-verified live 2026-08-15: 37 books, 482 chapters, 13,648 beats, 12,015
+linked** — the small drops since 2026-08-14 are real content work (duplicate/orphaned beats found
+and removed during that day's sequential-read passes — see
+[Has this book ever actually been read?](#has-this-book-ever-actually-been-read-booksequentialreads)),
+not drift or measurement error. `BeatNodes` presence *is* the enable signal now: migration
 `20260813053520_DropBeatNodeIsEnabled` (same day as [Epoch 4](#epoch-4--command-line-only-2026-08-13--present))
 dropped the `IsEnabled` boolean column outright — a beat is "enabled" by having a `BeatNodes` row,
 disabled by not having one. **`CLAUDE.md`'s "Key schema facts for queries" section still cites
@@ -550,7 +951,12 @@ rows. Added to [Status](#status)'s known-gaps list.
 | `EntityEmbeddings` | 1536-d vectors (OpenAI `text-embedding-3-small`); cosine via `VECTOR_DISTANCE` |
 | `Edges` | Typed directed relationships (`carries`, `wields`, `member_of`, `located_at`, …) with validity windows |
 | `EntityStateEvents` | Append-only in-world story-time ledger: `(entity, predicate, value, beatId, storyTime)` |
-| `ContinuityClaims` | Extracted `(entity, predicate, object)` claims from prose |
+| `ContinuityClaims` | The fact ledger — extracted `(entity, predicate, object)` claims from prose; `Status` ∈ `NEW/CONFIRMED/CONTRADICTED/CANONICAL/REJECTED/SUPERSEDED`, numeric-safe comparison on an allowlisted predicate set (see [Book Completeness](#book-completeness--convergence-gate--self-healing)) |
+| `NodeConvergenceStates` | Per-book logic-sweep convergence state for `--logic-sweep --until-dry` — consecutive dry-round count, total rounds run, a fingerprint hash over the enabled beat sequence |
+| `BookSequentialReads` | Records a genuine front-to-back read of a book — self-invalidating via a beat-sequence hash (see [Has this book ever actually been read?](#has-this-book-ever-actually-been-read-booksequentialreads)) |
+| `ArchivedBooks` | Whole-book prose snapshots from `prose --archive-book` / the AutoCorrect pre-run safety net |
+| `SelfHealActions` | Per-mutation undo ledger for AutoCorrect's whitelisted auto-fixes — reversible via `prose --auto-correct-undo` |
+| `LlmCallHistories` | Every `LlmRouter` fallback-chain hop (provider, model, success, hop index, token estimate, cost) |
 | `Findings` | Autonomous quality findings inbox — approve, dismiss, or apply before editing a beat |
 | `CanonDocumentSections` | Hand-authored canon sections that generate to `docs/BIBLE.md`, `docs/WORLD.md`, `docs/GLMZ.md`, `docs/SCRY.md`, etc. via `generate_canon_md` |
 | `MarkdownFiles` | System-versioned mirror of every `.md` file the toolchain depends on (Codex docs, root `README.md`, Claude memory) — see [About This Document](#about-this-document) |
@@ -680,7 +1086,7 @@ Mostly deterministic (DB-only, no LLM cost).
 | `CanonContradictionService` | Chunked semantic + LLM canon-rule sweep | Yes |
 | `WorldConsistencyService` | Prose scan for world-rule violations | Yes |
 | `SceneContextAssembler` | X-Ray scene assembly — entity mentions → dossiers → voice + behavioral context | No |
-| `WorldGraphService` | In-memory adjacency graph over all entities/edges | No |
+| `WorldGraphService` | In-memory adjacency graph over all entities/edges — see [World Graph and Interconnectivity](#world-graph-and-interconnectivity) | No |
 | `ContinuityExtractionService` | Multi-provider extraction of `(entity, predicate, object)` claims | Yes |
 | `ContinuityValidatorService` | Validates claims vs. live entity state | Mixed |
 | `NounConsistencyService` | Deterministic deprecated/renamed-noun scan across enabled beats (`--validate-nouns`) | No |
@@ -717,12 +1123,20 @@ Mostly deterministic (DB-only, no LLM cost).
 
 | Service | Role |
 |---|---|
-| `MultiLlmService` | Multi-provider fan-out via `MindAttic.Legion` (Claude, OpenAI, Gemini, DeepSeek, Mistral, Grok, Groq, Together, OpenRouter, Fireworks, Cohere) |
-| `LlmRouter` | Routes each request to the right provider/tier from `ActionConfig` |
+| `LlmRouter` | The live fallback chain (also an `ILlmService` itself): tries the primary provider (`SettingsService.ActiveLlmProvider`, default `claude-api`), then walks `ActiveLlmProviderChain` in configured order, de-duplicated. **Any** exception on a hop (auth, quota, rate-limit, network — not typed/discriminated) triggers the next hop; no fallback on success. Every hop, success or failure, is logged to `LlmCallHistories` (provider, model, hop index, token estimate, cost) |
+| `ClaudeService` / `OpenAiService` / `GeminiService` / `DeepSeekService` / `MistralService` / `KimiService` / `PerplexityService` | Metered API-key providers, each a thin `ILlmService` HTTP client over its vendor's completions endpoint |
+| `CodexCliService` / `GeminiCliService` | "CLI-shelling" providers — same `ILlmService` interface, but shell out to the `codex`/`gemini` CLI binary (`Process.Start`, prompt piped via stdin, JSONL parsed from stdout) and ride an existing subscription OAuth session (`codex login`) instead of a metered API key. Always costed at $0 in `LlmCallHistories` |
+| `MultiLlmService` | Multi-provider fan-out via `MindAttic.Legion` (broader provider set than `LlmRouter`'s: adds Grok, Groq, Together, OpenRouter, Fireworks, Cohere) |
 | `AssignTiersService` | Assigns Haiku/Sonnet/Opus class to actions per settings |
 
-See [docs/PROVIDERS.md](docs/PROVIDERS.md) for the checked-in table of which services depend on
-which external provider (Anthropic-only, OpenAI-only, or both).
+`--set-llm-provider claude-api|claude-team` (`SetLlmProviderCli.cs`) is the only CLI surface for
+switching providers, and **only accepts those two Claude variants** — it was not extended when
+Gemini/DeepSeek/Mistral/Kimi/Perplexity/the CLI-shelling providers were added, so switching to any
+of them today means editing `ActiveLlmProviderChain` directly. No MCP tool exposes provider
+selection or queries `LlmCallHistories`. See [docs/PROVIDERS.md](docs/PROVIDERS.md) for the
+checked-in table of which services depend on which external provider — **written before this
+provider expansion, so it still only describes the Anthropic/OpenAI-only/both split** and needs a
+pass to cover Gemini/DeepSeek/Mistral/Kimi/Perplexity/the CLI-shelling pair.
 
 ---
 
@@ -797,7 +1211,7 @@ through `MindAttic.Vault` / DB-stored settings). Set only what a feature you're 
 
 | Group | Variables |
 |---|---|
-| LLM providers | `PROSE_CLAUDE_API_KEY`, `PROSE_OPENAI_API_KEY`, `PROSE_GEMINI_API_KEY`, `PROSE_DEEPSEEK_API_KEY`, `PROSE_MISTRAL_API_KEY`, `PROSE_GROK_API_KEY`, `PROSE_GROQ_API_KEY`, `PROSE_TOGETHER_API_KEY`, `PROSE_OPENROUTER_API_KEY`, `PROSE_FIREWORKS_API_KEY`, `PROSE_COHERE_API_KEY` |
+| LLM providers | `PROSE_CLAUDE_API_KEY`, `PROSE_OPENAI_API_KEY`, `PROSE_GEMINI_API_KEY`, `PROSE_DEEPSEEK_API_KEY`, `PROSE_MISTRAL_API_KEY`, `PROSE_KIMI_API_KEY`, `PROSE_PERPLEXITY_API_KEY`, `PROSE_GROK_API_KEY`, `PROSE_GROQ_API_KEY`, `PROSE_TOGETHER_API_KEY`, `PROSE_OPENROUTER_API_KEY`, `PROSE_FIREWORKS_API_KEY`, `PROSE_COHERE_API_KEY` — `CodexCliService`/`GeminiCliService` need none of these; they ride an existing `codex login`/`gemini` CLI OAuth session instead |
 | Audio / media gen | `PROSE_ELEVENLABS_API_KEY`, `PROSE_IDEOGRAM_API_KEY`, `PROSE_FAL_API_KEY`, `PROSE_STABILITY_API_KEY`, `PROSE_KLING_API_KEY`, `PROSE_RUNWAY_API_KEY` |
 | Maps | `PROSE_MAP_APP_ID`, `PROSE_MAP_API_KEY`, `PROSE_GOOGLE_MAPS_API_KEY` |
 | SMTP | `PROSE_SMTP_HOST`, `PROSE_SMTP_PORT`, `PROSE_SMTP_USERNAME`, `PROSE_SMTP_PASSWORD`, `PROSE_SMTP_FROM` |
@@ -851,6 +1265,42 @@ Prose/
 > activation scripts hardcode a pre-rename path from before the StreetSamurai → Prose rename).
 > Local TTS via these tools needs a from-scratch Python environment rebuilt by hand; ElevenLabs TTS
 > (cloud) works out of the box. Flagged for cleanup, not yet fixed.
+
+> **`v3/python/`:** no Python source remains — only a `__pycache__/` leftover and two cached
+> SQLite artifacts (`lore-triples.db`, `truth.db`, the larger one >500MB) from a since-deleted SPO
+> (Subject-Predicate-Object) triple-extraction pipeline. The `.py` scripts and their own README are
+> gone; only their output cache survives. Orphaned cruft, not a live subsystem — safe to delete,
+> not yet done.
+
+---
+
+## Key Dependencies
+
+Verified against the live `.csproj` files (2026-08-15). Includes the `MindAttic.*` NuGet packages
+(external sibling projects, e.g. `MindAttic.Legion`, `MindAttic.Vault`) alongside third-party ones.
+
+| Package | Project | Purpose |
+|---|---|---|
+| `Markdig` 1.1.2 | Prose.Core | Markdown → HTML rendering |
+| `QuikGraph` / `QuikGraph.Serialization` 2.5.0 | Prose.Core | In-memory directed relationship graph (World Graph) |
+| `System.Speech` 10.0.9 | Prose.Core | Windows SAPI TTS fallback |
+| `Microsoft.Extensions.Http` 10.0.9 | Prose.Core | HttpClient factory |
+| `Azure.Identity` 1.21.0 / `Azure.Storage.Blobs` 12.29.1 | Prose.Core | Blob storage (cover images, exports) via OIDC/managed identity — no passwords |
+| `DocumentFormat.OpenXml` 3.3.0 | Prose.Core | DOCX manuscript export |
+| `QuestPDF` 2026.5.0 | Prose.Core | PDF export |
+| `Microsoft.EntityFrameworkCore.SqlServer` / `.Sqlite` / `.Design` 10.0.9 | Prose.Core, Prose.Cli | EF Core against SQL Server (live) and SQLite (`TestDbFactory`) |
+| `Serilog` 4.3.1 + `.Extensions.Logging` / `.Sinks.File` | Prose.Core | Structured logging |
+| `BCrypt.Net-Next` 4.0.3 | Prose.Core | Password hashing utility (no current call sites found — verify before relying on it) |
+| `MindAttic.Legion` 23.0.0 | Prose.Core, Prose.LlmCli | Multi-provider LLM quorum/persona review engine (external MindAttic package) |
+| `MindAttic.Vault` 1.0.0 | Prose.Core, Prose.LlmCli | Secrets/credential vault |
+| `MindAttic.Authentication` 2.0.0 | Prose.Core | Auth |
+| `MindAttic.Media` / `.Azure` 1.0.0 | Prose.Core | Media handling |
+| `ModelContextProtocol` (floating `*`) | Prose.Mcp | MCP server SDK |
+| `Microsoft.Extensions.Hosting` 10.0.5 (Mcp) / 10.0.0 (Cli) | Prose.Mcp, Prose.Cli | Generic host |
+| `Microsoft.Extensions.Logging.Console` 10.0.0 | Prose.Cli | Console logging provider |
+
+`Prose.KdpPublish` (WPF + WebView2 desktop app, not in `Prose.slnx`) has its own dependency set not
+audited here — see the project's own `.csproj` if working on it directly.
 
 ---
 
@@ -959,15 +1409,31 @@ From `CLAUDE.md` — enforced across the codebase:
 In active development. **Command-line only** since 2026-08-13 (Epoch 4) — no live website.
 
 - **7 registered universes:** GLMZ, SCRY, NONFICTION, HORROR, EROTICA, GOSPEL, FICTION.
-- **DB:** 261 base tables + 168 system-versioned history tables (`docs/schema.md`, 2026-08-14).
-- **MCP:** 273 tools across 43 families (`docs/MCP_TOOLS.md`, 2026-08-14).
-- **CLI:** 263 dispatched `--flag` handlers across 226 handler files.
-- **Core services:** 309 directly under `Services/`, 351 including subfolders.
-- **Content:** 37 books, 485 chapters, 2 series; 13,653 total beats, 12,032 linked into a live book
+- **DB:** 263 base tables + 168 system-versioned history tables (264 FKs, 263 PKs; live-queried
+  2026-08-15 — `docs/schema.md` itself is dated 2026-08-14 and needs a re-run, see
+  [Schema reference](#schema-reference)).
+- **MCP:** 322 `[McpServerTool]` methods across 40 files under `v3/Prose.Mcp/` (live-counted
+  2026-08-15 — `docs/MCP_TOOLS.md` and the per-family breakdown table in
+  [MCP Reference](#mcp-reference) predate this jump from 273/43; regenerate via `--export-tools`).
+- **CLI:** 265 dispatched `--flag` handlers across 227 handler files (live-counted 2026-08-15).
+- **Core services:** 311 directly under `Services/`, 353 including subfolders (live-counted 2026-08-15).
+- **Content:** 37 books, 482 chapters, 2 series; 13,648 total beats, 12,015 linked into a live book
   spine via `BeatNodes` (see [Content census](#content-census-2026-08-14-live-query)).
-- **Tests:** 185 unit test files (NUnit + bUnit); Cypress suite currently orphaned (see [Tests](#tests)).
+- **Tests:** 189 unit test files (NUnit + bUnit; live-counted 2026-08-15); Cypress suite currently
+  orphaned (see [Tests](#tests)).
 - **Commit history:** 1,000+ commits since 2026-03-25 (StreetSamurai) → 2026-08-14 (Prose, command-line only).
 - **Status index** (`docs/USER_STORIES.md`, via `codex.ps1 digest`): done 172 · partial 8 · planned 27 · cut 4.
+- **New since 2026-08-14, not yet reflected anywhere except this document:** the five-point
+  book-completeness convergence gate (fact ledger, blast-radius auto-check, loop-until-dry sweep),
+  sequential-read tracking (`BookSequentialReads`), and the AutoCorrect nightly self-heal pass
+  (currently running in `--dry-run` only) — see
+  [Book Completeness](#book-completeness--convergence-gate--self-healing) and
+  [Has this book ever actually been read?](#has-this-book-ever-actually-been-read-booksequentialreads).
+  A multi-LLM provider expansion (Gemini/DeepSeek/Mistral/Kimi/Perplexity + CLI-shelling
+  Codex/Gemini providers) and a provider-neutral Operator tool-calling abstraction
+  (`IToolCallingLlm`) for the KDP publish automation also landed — see
+  [10. LLM providers & routing](#10-llm-providers--routing) and
+  [Architecture at a Glance](#architecture-at-a-glance).
 
 **Known open gaps, discovered while writing this document — not yet fixed:**
 
@@ -976,14 +1442,40 @@ In active development. **Command-line only** since 2026-08-13 (Epoch 4) — no l
 2. The Cypress e2e suite exercises deleted Blazor UI routes (see [Tests](#tests)).
 3. `docs/BIBLE.md §3` and `CLAUDE.md`'s Code Style section still assert "Web-only project (Blazor
    Server). No MAUI host." — true through Epoch 3, false since Epoch 4's command-line-only pivot.
-4. `v3/README.md` and `v3/Prose.Mcp/README.md` still describe the deleted `Prose.Shared`,
-   `Prose.Writer`, `Prose.Codex` projects and a stale, pre-273-tool MCP tool-group table.
+4. `v3/Prose.Mcp/README.md` still describes the deleted `Prose.Shared`/`Prose.Writer`/`Prose.Codex`
+   projects and a stale, pre-273-tool MCP tool-group table. (`v3/README.md` itself was folded into
+   this document and reduced to a stub in this pass — no longer a separate source of drift.)
 5. `CLAUDE.md`'s "Key schema facts for queries" section still cites `BeatNodes(NodeId, BeatId,
    SortKey, IsEnabled)` — migration `20260813053520_DropBeatNodeIsEnabled` (Epoch 4, same day)
    dropped that column; see [Content census](#content-census-2026-08-14-live-query).
 6. `tools/gen-schema.ps1` hardcoded its "Snapshot date" to `2026-06-28` regardless of when it
    actually ran — fixed in this pass (now `Get-Date`), so `docs/schema.md` no longer lies about
    its own freshness.
+7. `docs/PROVIDERS.md` predates the multi-LLM provider expansion — still only documents the
+   Anthropic/OpenAI-only/both split, with no mention of Gemini/DeepSeek/Mistral/Kimi/Perplexity,
+   the CLI-shelling providers, or `LlmCallHistories` (see
+   [10. LLM providers & routing](#10-llm-providers--routing)).
+8. `--set-llm-provider` only accepts `claude-api`/`claude-team` — it was never extended to the
+   new providers, so switching to Gemini/DeepSeek/Mistral/Kimi/Perplexity/a CLI-shelling provider
+   as the active default requires editing `ActiveLlmProviderChain` directly; no CLI or MCP surface
+   does it today.
+9. `prose --archive-book --reason "<text>"` (and the `BookArchiveService.ArchiveAsync` call
+   behind it) does not validate or truncate the reason string before insert, while
+   `ArchivedBooks.Reason` is `nvarchar(40)` — a reason over 40 characters fails at
+   `SaveChangesAsync` with a raw SQL truncation error instead of a clean message. Not a risk for
+   the nightly AutoCorrect pass itself (it always passes the fixed 20-character
+   `"autocorrect-pre-run"`), only for manual invocations with a long custom reason.
+10. The AutoCorrect nightly pass (`ProseAutoCorrectNightly` scheduled task) is live but still runs
+    with `--dry-run` — it detects and logs, but does not yet apply, its three whitelisted auto-fix
+    categories in production. Promoting it to live writes is a config edit
+    (`scripts/run-autocorrect-nightly.ps1`), not a code change, once a few mornings' `--dry-run`
+    output has been reviewed via `prose --morning-report`.
+11. `BookSequentialReads` was created via a raw T-SQL script
+    (`v3/Prose.Core/Data/Sql/create_book_sequential_reads_20260815.sql`, applied directly to the
+    live dev DB) rather than an EF Core migration, and is not registered in `SqlSeedService.Seeds`
+    — a fresh clone/environment needs that script run by hand with `sqlcmd` before
+    `--sequential-read-status`/`--sequential-read-record` will work. No MCP tool exists for
+    sequential-read tracking, AutoCorrect, or blast-radius re-checks yet — all three are CLI-only.
 
 ---
 

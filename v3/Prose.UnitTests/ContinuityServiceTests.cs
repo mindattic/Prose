@@ -96,6 +96,47 @@ public class ContinuityServiceTests
     }
 
     [Test]
+    public void Resolve_CustomObjectMatchesOneSideVerbatim_DoesNotThrowAndPicksThatSide()
+    {
+        // 2026-08-14 VIGL session bug: Resolve(winner: "custom") hashes the custom object into
+        // a ClaimUid via ComputeClaimUid(entityId, predicate, object). If the caller's custom
+        // text is identical to one of the two contested claims' Object (a natural thing to pass
+        // when you just mean "this side is right"), the hash collides with that claim's own
+        // already-tracked ClaimUid and EF throws attaching a "new" row under the same key.
+        var entityId = Guid.NewGuid().ToString("N");
+        var a = svc.Upsert(MakeClaim(entityId, "occupation", "notary")).Claim;
+        var b = svc.Upsert(MakeClaim(entityId, "occupation", "Scribe")).Claim;
+        Assert.That(b.Status, Is.EqualTo("CONTRADICTED"));
+
+        ResolveResult result = null!;
+        Assert.DoesNotThrow(() => result = svc.Resolve(a.ClaimUid, b.ClaimUid, "custom", "Scribe", "author call"));
+        Assert.That(result.Winner.ClaimUid, Is.EqualTo(b.ClaimUid));
+        Assert.That(result.Winner.Status, Is.EqualTo("CANONICAL"));
+        Assert.That(result.Loser.Status, Is.EqualTo("REJECTED"));
+    }
+
+    [Test]
+    public void Resolve_CustomWinner_CopiesBookSlugFromContestedClaims()
+    {
+        // 2026-08-14 VIGL session bug: the custom-resolution row didn't copy BookSlug from
+        // either contested claim, so a freshly-resolved CANONICAL fact silently fell out of
+        // every book-scoped query (e.g. "open contradictions for VIGL") even though it plainly
+        // belongs to that book — caught when the real Pallor location resolution came back with
+        // BookSlug=NULL despite both contested claims being scoped to vigil-s-end-019f5767.
+        var entityId = Guid.NewGuid().ToString("N");
+        var a = MakeClaim(entityId, "location_type", "country");
+        a.BookSlug = "vigil-s-end-019f5767";
+        var aResult = svc.Upsert(a).Claim;
+        var b = MakeClaim(entityId, "location_type", "fjord garrison with cold coast");
+        b.BookSlug = "vigil-s-end-019f5767";
+        var bResult = svc.Upsert(b).Claim;
+
+        var result = svc.Resolve(aResult.ClaimUid, bResult.ClaimUid, "custom", "a merged description", "test");
+
+        Assert.That(result.Winner.BookSlug, Is.EqualTo("vigil-s-end-019f5767"));
+    }
+
+    [Test]
     public void Upsert_GenuinelyDifferentNumericFact_Contradicts()
     {
         var entityId = Guid.NewGuid().ToString("N");

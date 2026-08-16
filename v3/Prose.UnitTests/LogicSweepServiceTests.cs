@@ -160,4 +160,138 @@ public class LogicSweepServiceTests
         Assert.That(report.Clean, Is.True);
         Assert.That(report.BlockerCount, Is.EqualTo(0));
     }
+
+    // ── Hallucinated-citation guard (2026-08-14 VIGL session) ──────────────────
+    //
+    // AuditProseUtils.ClampProse (used by every whole-book LLM audit rule) elides the entire
+    // middle of an oversized book's concatenated prose, keeping only the first+last 50k chars.
+    // Confirmed on VIGL's real until-dry sweep: the model can still cite a beat number whose
+    // actual text fell in that elided middle and fabricate a plausible-sounding quote for it —
+    // ParseFindingsArray resolved beat_number against the FULL beat list regardless of what the
+    // model was actually shown, so the fabrication got a real BeatId and looked like a genuine
+    // finding. QuotedEvidenceAppearsInBeat is the fix: reject a finding whose quoted evidence
+    // doesn't appear anywhere in the beat it's attributed to.
+
+    [Test]
+    public void ParseFindingsArray_QuotedEvidenceNotInCitedBeat_FindingIsDropped()
+    {
+        // Beat #2's real text is "Beat two text." — a quote that doesn't exist there at all is
+        // exactly the VIGL beat-#5656 bug: a citation for content the model never saw.
+        var raw = """[{"beat_number":2,"severity":"blocker","evidence":"Doyle says \"this line does not exist in beat two\" here","fix":null}]""";
+        var results = LogicSweepService.ParseFindingsArray("causality", "Causality chain", raw, Beats);
+        Assert.That(results, Is.Empty);
+    }
+
+    [Test]
+    public void ParseFindingsArray_QuotedEvidenceMatchesCitedBeat_FindingIsKept()
+    {
+        var raw = """[{"beat_number":2,"severity":"blocker","evidence":"beat says \"Beat two text.\" with no setup","fix":null}]""";
+        var results = LogicSweepService.ParseFindingsArray("causality", "Causality chain", raw, Beats);
+        Assert.That(results, Has.Count.EqualTo(1));
+    }
+
+    [Test]
+    public void ParseFindingsArray_UnquotedParaphrasedEvidence_NeverRejected()
+    {
+        // A finding that paraphrases rather than quotes verbatim has nothing to verify against —
+        // must not be false-rejected just because it contains no quotation marks.
+        var raw = """[{"beat_number":2,"severity":"blocker","evidence":"this contradicts what beat one established","fix":null}]""";
+        var results = LogicSweepService.ParseFindingsArray("causality", "Causality chain", raw, Beats);
+        Assert.That(results, Has.Count.EqualTo(1));
+    }
+
+    [TestCase("Beat two text.", "beat two text", true)] // whitespace/case-insensitive match
+    [TestCase("Beat two text.", "fabricated line never in the beat", false)]
+    public void QuotedEvidenceAppearsInBeat_MatchesCaseAndWhitespaceInsensitively(string beatText, string quoted, bool expected)
+    {
+        var evidence = $"the text reads \"{quoted}\" plainly";
+        Assert.That(LogicSweepService.QuotedEvidenceAppearsInBeat(evidence, beatText), Is.EqualTo(expected));
+    }
+
+    [Test]
+    public void QuotedEvidenceAppearsInBeat_NoQuotesInEvidence_ReturnsTrue()
+    {
+        Assert.That(LogicSweepService.QuotedEvidenceAppearsInBeat("no quotes here at all", "Beat two text."), Is.True);
+    }
+
+    [Test]
+    public void QuotedEvidenceAppearsInBeat_SingleQuotedFabrication_IsCaught()
+    {
+        // 2026-08-14 real VIGL round-5 bug: the model attributed a whole invented scene to
+        // beat #14657 using single quotes throughout ('worked her fingers back into the seam',
+        // 'let the smaller lens come free of the larger one') — none of which exist in that
+        // beat's real text (which is actually about Orim kneeling and saying "Home"). The
+        // double-quote-only check let this straight through; single-quote detection must catch it.
+        var evidence = "Lyra 'worked her fingers back into the seam' and 'let the smaller lens come free of the larger one' at the crater";
+        var realBeatText = "Not far past where the hand had been, Orim stopped. He knelt where the glass gave way. \"Home,\" he said.";
+        Assert.That(LogicSweepService.QuotedEvidenceAppearsInBeat(evidence, realBeatText), Is.False);
+    }
+
+    [Test]
+    public void QuotedEvidenceAppearsInBeat_ShortMisattributedFragments_AreCaught()
+    {
+        // 2026-08-14 real VIGL round-7 bug: the model misattributed beat #5590's real text
+        // ("what it authorized did not exist") to a fabricated "beat #5603" (Doyle's Amnios-drift
+        // scene, which never mentions instruments or authorization at all), quoting only short
+        // fragments ('authorized', 'did not exist' — 10/14 chars) that the original 15-char
+        // floor didn't check. Both must now be caught against beat #5603's real, unrelated text.
+        var evidence = "describes Vega reading a property-recovery instrument that 'authorized' something that 'did not exist'";
+        var beat5603RealText = "There is a spark, and the spark is aware that it is a spark and not a man, suspended in something warm and gold.";
+        Assert.That(LogicSweepService.QuotedEvidenceAppearsInBeat(evidence, beat5603RealText), Is.False);
+    }
+
+    [Test]
+    public void QuotedEvidenceAppearsInBeat_SingleQuotedRealText_IsAccepted()
+    {
+        var evidence = "the beat states 'Beat two text' plainly";
+        Assert.That(LogicSweepService.QuotedEvidenceAppearsInBeat(evidence, "Beat two text."), Is.True);
+    }
+
+    [TestCase("Doyle's shell and Orim's rod are both mentioned in passing")]
+    [TestCase("she wasn't expecting that and hadn't planned for it either")]
+    public void QuotedEvidenceAppearsInBeat_PossessivesAndContractions_NeverMistakenForQuotes(string evidence)
+    {
+        // Mid-word apostrophes ("Orim's", "wasn't") must never be treated as a pair of quote
+        // marks bounding some accidental substring — that would reject valid findings whose
+        // evidence merely happens to contain two possessives/contractions in the same sentence.
+        Assert.That(LogicSweepService.QuotedEvidenceAppearsInBeat(evidence, "Beat two text."), Is.True);
+    }
+
+    // ── BuildClampedProse ───────────────────────────────────────────────────────
+
+    [Test]
+    public void BuildClampedProse_UnderThreshold_ReturnsFullConcatenationUnchanged()
+    {
+        var result = LogicSweepService.BuildClampedProse(Beats);
+        Assert.That(result, Does.Contain("Beat one text."));
+        Assert.That(result, Does.Contain("Beat three text."));
+        Assert.That(result, Does.Not.Contain("elided"));
+    }
+
+    [Test]
+    public void BuildClampedProse_OverThreshold_NamesTheElidedBeatRangeAndWarnsAgainstCitingIt()
+    {
+        // 200 beats of ~1000 chars each (~200k total) forces the clamp; beats roughly in the
+        // middle third should land in the elided gap and get named in the placeholder.
+        var beats = Enumerable.Range(1, 200)
+            .Select(n => new AuditBeat(Guid.NewGuid(), n, new string('x', 900) + $" beat{n}"))
+            .ToList();
+
+        var result = LogicSweepService.BuildClampedProse(beats);
+
+        Assert.That(result, Does.Contain("[Beat #1]"), "head should be visible");
+        Assert.That(result, Does.Contain("[Beat #200]"), "tail should be visible");
+        Assert.That(result, Does.Contain("elided"));
+        Assert.That(result, Does.Contain("Do NOT report a finding citing any beat number in that range"));
+
+        // The named elided range must actually bracket beat #100 (the book's middle) — the
+        // instruction is useless if it doesn't cover the beats the model is most likely to
+        // fabricate a citation for.
+        var match = System.Text.RegularExpressions.Regex.Match(result, @"beats #(\d+)-#(\d+)");
+        Assert.That(match.Success, Is.True, "elision note should name a beat-number range");
+        var lo = int.Parse(match.Groups[1].Value);
+        var hi = int.Parse(match.Groups[2].Value);
+        Assert.That(lo, Is.LessThan(100));
+        Assert.That(hi, Is.GreaterThan(100));
+    }
 }

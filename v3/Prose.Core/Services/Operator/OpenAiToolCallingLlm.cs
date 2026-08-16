@@ -28,8 +28,13 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
 
     public string Name => "OpenAI";
 
-    public OpenAiToolCallingLlm(HttpClient http, ILogger<OpenAiToolCallingLlm> log, string model = "gpt-4.1")
-        : this(http, log, () => MindAtticCredentialStore.GetKey("openai"), model) { }
+    public OpenAiToolCallingLlm(HttpClient http, ILogger<OpenAiToolCallingLlm> log)
+    {
+        this.http = http;
+        this.log = log;
+        this.resolveApiKey = () => MindAtticCredentialStore.GetKey("openai");
+        this.model = "gpt-4.1";
+    }
 
     /// <summary>Test-friendly constructor — injects the API-key resolver instead of reading the
     /// real shared credential store.</summary>

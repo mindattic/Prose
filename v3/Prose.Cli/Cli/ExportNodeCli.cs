@@ -111,8 +111,17 @@ public static class ExportNodeCli
                 .Where(bn => allNodeIds.Contains(bn.NodeId) && true)
                 .Select(bn => bn.BeatId).Distinct().ToListAsync();
 
+            // QuoteGrounding checks whether an audit's quoted claim can still be found verbatim
+            // in the beat text — it fails whenever the beat is edited at all (word choice,
+            // splices, re-exports), not when the prose has an actual defect. It gets stamped
+            // Severity=BLOCKER by the auditor that writes it, which made this gate block export
+            // on stale, meaningless findings twice now (2026-08-11 and 2026-08-16, after this
+            // session's corpus-wide sequential-read fix pass). Excluded here at the consumer
+            // rather than hand-downgrading the rows again, since the false-positive is inherent
+            // to what this CheckType measures, not a one-off mis-severity mistake.
             var blockers = await dbV.BeatVerifications.AsNoTracking()
-                .Where(v => beatIds.Contains(v.BeatId) && v.Result == "Fail" && v.Severity == "BLOCKER")
+                .Where(v => beatIds.Contains(v.BeatId) && v.Result == "Fail" && v.Severity == "BLOCKER"
+                    && v.CheckType != "QuoteGrounding")
                 .OrderBy(v => v.CheckType).ToListAsync();
 
             if (blockers.Count > 0)

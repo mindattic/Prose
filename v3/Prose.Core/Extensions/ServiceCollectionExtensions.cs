@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Net;
+using System.Net.Http;
 using MindAttic.Legion;
 using MindAttic.Legion.Providers;
 using MindAttic.Media;
@@ -711,8 +712,13 @@ public static class ServiceCollectionExtensions
         // Crew assessment — grades team capability against contract requirements
         services.AddSingleton<CrewAssessmentService>();
 
-        // Graph health analysis — orphan detection, bad node flagging
-        services.AddSingleton<GraphHealthService>();
+        // Graph health analysis — orphan detection, bad node flagging, and (when a DB
+        // factory is available) prose-usage tagging: most orphans are intentional flavor
+        // texture, not bugs — only entities that actually appear in shipped prose
+        // (BeatEntityPresence) are a real interconnectivity gap worth a follow-up pass.
+        services.AddSingleton<GraphHealthService>(sp => new GraphHealthService(
+            sp.GetRequiredService<WorldGraphService>(),
+            sp.GetRequiredService<IDbContextFactory<ProseDbContext>>()));
 
         // Character behavior prediction — psychological modeling
         services.AddSingleton<BehaviorPredictionService>();
@@ -757,13 +763,34 @@ public static class ServiceCollectionExtensions
         // Operator/Tools/*.cs wrappers) was deleted 2026-08-13 (plan "Prose, objectively...") —
         // its only entry points were WriteStory.razor/BookOutlineEditor.razor, both part of the
         // StoryDirectorService "Surprise Me" pipeline, confirmed unused.
-        services.AddHttpClient<Services.Operator.AnthropicToolClient>(c => c.Timeout = TimeSpan.FromMinutes(15));
+        // UseProxy=false on both HTTP clients below: .NET's default HttpClientHandler does a
+        // synchronous WinHTTP system-proxy auto-detection (WPAD) on first use, which can hang
+        // indefinitely with zero exception and zero log output on networks where the "wpad"
+        // DNS lookup doesn't resolve promptly. Neither client talks to anything needing a
+        // corporate proxy, so detection is simply disabled rather than worked around later.
+        services.AddHttpClient<Services.Operator.AnthropicToolClient>(c => c.Timeout = TimeSpan.FromMinutes(15))
+            .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler { UseProxy = false });
         services.AddSingleton<Services.Operator.AnthropicToolCallingLlm>();
 
         // Multi-LLM Master Switch-Over: the KDP operator's tool-calling loop tries each of
         // these, in order, and uses whichever one has usable credentials right now — Claude
         // first, OpenAI as the fallback tier (see IToolCallingLlm remarks).
-        services.AddHttpClient<Services.Operator.OpenAiToolCallingLlm>(c => c.Timeout = TimeSpan.FromMinutes(15));
+        //
+        // OpenAiToolCallingLlm is registered as a plain named HttpClient + factory lambda
+        // rather than AddHttpClient<OpenAiToolCallingLlm>() (the typed-client shortcut used
+        // above for AnthropicToolClient). Found 2026-08-16: on this preview .NET 10 SDK,
+        // AddHttpClient<TClient>() where TClient is ITSELF the IToolCallingLlm implementation
+        // (rather than a separate wrapped HTTP client class, as Anthropic's split is) hung
+        // indefinitely inside the typed-client activator — confirmed via constructor-entry
+        // diagnostics that the built HttpClient was fully ready but the activator never invoked
+        // OpenAiToolCallingLlm's constructor, reproducing identically even after removing every
+        // constructor-selection ambiguity. This registration shape sidesteps that activator
+        // path entirely and is the same pattern proven to work for AnthropicToolClient.
+        services.AddHttpClient(nameof(Services.Operator.OpenAiToolCallingLlm), c => c.Timeout = TimeSpan.FromMinutes(15))
+            .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler { UseProxy = false });
+        services.AddSingleton<Services.Operator.OpenAiToolCallingLlm>(sp => new Services.Operator.OpenAiToolCallingLlm(
+            sp.GetRequiredService<IHttpClientFactory>().CreateClient(nameof(Services.Operator.OpenAiToolCallingLlm)),
+            sp.GetRequiredService<ILogger<Services.Operator.OpenAiToolCallingLlm>>()));
         services.AddSingleton<IReadOnlyList<Services.Operator.IToolCallingLlm>>(sp =>
         [
             sp.GetRequiredService<Services.Operator.AnthropicToolCallingLlm>(),
@@ -990,6 +1017,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ProsePatternGuard>();
         services.AddSingleton<AmbientDetailInjector>();
         services.AddSingleton<WorldStateAtBeatService>();
+        services.AddSingleton<SequentialReadTrackingService>();
+        services.AddSingleton<TextIntegrityService>();
         services.AddSingleton<GearCarryEnforcer>();
         services.AddSingleton<BehavioralInvariantEnforcer>();
         services.AddSingleton<WeaponAmmoCompatibilityService>();

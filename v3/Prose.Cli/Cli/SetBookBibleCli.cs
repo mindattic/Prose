@@ -44,6 +44,7 @@ public static class SetBookBibleCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var nodeDoc = services.GetRequiredService<NodeDocService>();
         var markdownFiles = services.GetRequiredService<MarkdownFileService>();
+        var canonDocs = services.GetRequiredService<CanonDocumentService>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
         var node = await db.Nodes.FirstOrDefaultAsync(n => n.Slug == slug);
@@ -53,10 +54,13 @@ public static class SetBookBibleCli
             return 1;
         }
 
-        node.NodeBible = string.IsNullOrEmpty(bibleText) ? null : bibleText;
-        node.NodeBibleGeneratedAt = DateTime.UtcNow;
-        node.UpdatedAt = DateTime.UtcNow;
-        await db.SaveChangesAsync();
+        // Route through CanonDocumentService.SetNodeBibleSectionAsync (sectionType "Full") rather
+        // than writing Nodes.NodeBible directly — that method keeps NodeBibleSections' "Full" row
+        // in lockstep with Nodes.NodeBible. Writing only the latter left NodeBibleSections stale,
+        // and MarkdownFileService.SyncFromCanonDbAsync (phase 2 of `--sync-markdown`) unconditionally
+        // overwrites MarkdownFiles from that stale row — silently reverting this write the next
+        // time someone ran a full markdown sync. Found and root-caused 2026-08-14.
+        await canonDocs.SetNodeBibleSectionAsync(node.Id, "Full", bibleText);
 
         var genResult = await nodeDoc.GenerateAsync(node.Id);
         var syncResult = await markdownFiles.SyncAllAsync();

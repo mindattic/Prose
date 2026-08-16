@@ -354,12 +354,29 @@ public class ProseWriterRouter(
         }
 
         // World state at beat: live entity state snapshot from EntityStateEvents (temporal, drifted from canon).
+        // Scoped to CharactersInScene when possible — SnapshotAsync's own docstring warns the
+        // unscoped path is "expensive on large DBs"; it also caps Edges/EntityStateEvents at
+        // Take(500)/Take(2000) with no meaningful ORDER BY for the unscoped case, so leaving this
+        // unscoped silently drops rows once either table exceeds the cap (found 2026-08-15 while
+        // verifying the motorcycle Dynamic Edge State backfill — see README "World Graph and
+        // Interconnectivity").
         var worldStateContext = context.WorldStateContext;
         if (string.IsNullOrEmpty(worldStateContext) && worldStateAtBeat != null && beatId != Guid.Empty)
         {
             try
             {
-                var snapshot = await worldStateAtBeat.SnapshotAsync(beatId, ct: ct);
+                IEnumerable<Guid>? sceneEntityIds = null;
+                if (context.CharactersInScene.Count > 0 && dbFactory != null)
+                {
+                    await using var namesDb = await dbFactory.CreateDbContextAsync(ct);
+                    var names = context.CharactersInScene.Select(n => n.Trim()).Where(n => n.Length > 0).ToList();
+                    sceneEntityIds = await namesDb.Entities.AsNoTracking()
+                        .Where(e => names.Contains(e.Name))
+                        .Select(e => e.Id)
+                        .ToListAsync(ct);
+                }
+
+                var snapshot = await worldStateAtBeat.SnapshotAsync(beatId, entityIds: sceneEntityIds, ct: ct);
                 worldStateContext = snapshot.FormatAsContextBlock();
             }
             catch (Exception ex) { log.LogWarning(ex, "[ProseWriterRouter] {Service} failed, continuing", nameof(WorldStateAtBeatService)); }

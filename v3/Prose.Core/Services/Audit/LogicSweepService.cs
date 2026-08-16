@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
@@ -68,7 +69,6 @@ public class LogicSweepService(
             return new LogicSweepReport(nodeId, node.Slug, node.Title, 0, []);
 
         var beats = beatRows.Select(b => new AuditBeat(b.Id, b.Number, b.Text, b.SortKey)).ToList();
-        var prose = string.Join("\n\n", beats.Select(b => $"[Beat #{b.Number}]\n{b.Text}"));
 
         // A few distinctive disabled-beat snippets so OrphanReferencesRule can spot a live beat
         // still referencing something a cut beat established — an approximation of the skill's
@@ -88,7 +88,7 @@ public class LogicSweepService(
             ["plants"]            = plants,
             ["disabledSnippets"]  = disabledSnippets,
         };
-        var ctx = new AuditContext(nodeId, node.UniverseId, AuditProseUtils.ClampProse(prose), beats, extra);
+        var ctx = new AuditContext(nodeId, node.UniverseId, BuildClampedProse(beats), beats, extra);
 
         IReadOnlyList<IAuditRule> rules =
         [
@@ -147,7 +147,6 @@ public class LogicSweepService(
         // across a cross-chapter blast-radius set the way it is within a single chapter.
         var beats = beatRows.OrderBy(b => b.Number)
             .Select((b, i) => new AuditBeat(b.Id, b.Number, b.Text, i)).ToList();
-        var prose = string.Join("\n\n", beats.Select(b => $"[Beat #{b.Number}]\n{b.Text}"));
 
         var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
         var extra = new Dictionary<string, object?>
@@ -156,7 +155,7 @@ public class LogicSweepService(
             ["plants"]           = plants,
             ["disabledSnippets"] = new List<string>(),
         };
-        var ctx = new AuditContext(nodeId, node.UniverseId, AuditProseUtils.ClampProse(prose), beats, extra);
+        var ctx = new AuditContext(nodeId, node.UniverseId, BuildClampedProse(beats), beats, extra);
 
         IReadOnlyList<IAuditRule> rules =
         [
@@ -299,6 +298,35 @@ public class LogicSweepService(
 
     /// <summary>Every dimension asks for the same finding shape — a JSON array of
     /// {beat_number, severity, evidence, fix} — so there is one parser instead of six.</summary>
+    /// <summary>Beat-number-aware alternative to <see cref="AuditProseUtils.ClampProse"/> for an
+    /// oversized book: keeps the same head+tail 50k-char scheme, but names the actual elided
+    /// beat-number range in the placeholder and tells the model not to cite any beat inside it.
+    /// A model handed "[... middle elided ...]" with no further detail has no way to know which
+    /// "[Beat #N]" headers it never received, and — confirmed on VIGL's 2026-08-14 sweep —
+    /// sometimes fabricates a plausible-sounding quote for one rather than staying silent. This
+    /// is the prevention half of the fix; <see cref="QuotedEvidenceAppearsInBeat"/> is the
+    /// post-hoc catch for whatever gets through anyway.</summary>
+    internal static string BuildClampedProse(IReadOnlyList<AuditBeat> beats)
+    {
+        var full = string.Join("\n\n", beats.Select(b => $"[Beat #{b.Number}]\n{b.Text}"));
+        if (full.Length <= 100_000) return full;
+
+        var head = full[..50_000];
+        var tail = full[^50_000..];
+        var visible = beats.Where(b => head.Contains($"[Beat #{b.Number}]") || tail.Contains($"[Beat #{b.Number}]"))
+            .Select(b => b.Number).ToHashSet();
+        var elided = beats.Select(b => b.Number).Where(n => !visible.Contains(n)).ToList();
+        var rangeNote = elided.Count == 0
+            ? "an unspecified range of beats"
+            : $"beats #{elided.Min()}-#{elided.Max()} ({elided.Count} beats)";
+
+        return head
+            + $"\n\n[... middle of the manuscript elided for length: {rangeNote} were NOT shown to "
+            + "you. Do NOT report a finding citing any beat number in that range - you cannot see "
+            + "its actual text, and any quote you attribute to it would be fabricated. ...]\n\n"
+            + tail;
+    }
+
     internal static IReadOnlyList<AuditVerdict> ParseFindingsArray(
         string ruleKey, string title, string raw, IReadOnlyList<AuditBeat> beats)
     {
@@ -322,13 +350,26 @@ public class LogicSweepService(
                     var beatNumber = f.TryGetProperty("beat_number", out var bn)
                         && bn.ValueKind == JsonValueKind.Number
                         && bn.TryGetInt32(out var n) ? n : (int?)null;
-                    var location = beatNumber.HasValue
-                        ? beats.FirstOrDefault(b => b.Number == beatNumber.Value)?.Id.ToString()
+                    var citedBeat = beatNumber.HasValue
+                        ? beats.FirstOrDefault(b => b.Number == beatNumber.Value)
                         : null;
+                    var location = citedBeat?.Id.ToString();
                     var severity = f.TryGetProperty("severity", out var sv) ? sv.GetString()?.ToUpperInvariant() : null;
                     severity = severity is "BLOCKER" or "MODERATE" or "MINOR" or "DEVIATION" ? severity : "MODERATE";
                     var evidence = f.TryGetProperty("evidence", out var ev) ? ev.GetString() ?? "" : "";
                     if (evidence.Length == 0) continue; // don't persist an empty/malformed entry
+                    // 2026-08-14 VIGL session bug: ClampProse (AuditProseUtils) keeps only the
+                    // first+last 50k chars of an oversized book's concatenated prose, eliding the
+                    // whole middle — but this lookup resolves beat_number against the FULL,
+                    // unclamped `beats` list, so a model can cite a beat whose real text it never
+                    // saw and still get a valid BeatId back, making a fabricated quote
+                    // indistinguishable from a real finding (confirmed: beat #5656 was cited with
+                    // a quote that does not exist anywhere in that beat's actual Text). Guard: if
+                    // the evidence double-quotes specific text, at least one quoted phrase must
+                    // actually appear in the cited beat, or the finding is a hallucinated citation
+                    // and gets dropped rather than persisted as a false finding.
+                    if (citedBeat != null && !QuotedEvidenceAppearsInBeat(evidence, citedBeat.Text))
+                        continue;
                     var fix = f.TryGetProperty("fix", out var fx) ? fx.GetString() : null;
                     var evidenceWithBeat = beatNumber.HasValue ? $"Beat #{beatNumber}: {evidence}" : evidence;
                     results.Add(new AuditVerdict(ruleKey, title, severity, evidenceWithBeat, location, fix));
@@ -342,6 +383,39 @@ public class LogicSweepService(
             return results;
         }
         catch { return []; }
+    }
+
+    /// <summary>True if the evidence contains no quoted text (nothing to verify — a paraphrased
+    /// finding is never rejected by this check), OR at least one quoted phrase of meaningful
+    /// length actually appears in the cited beat's real text. False means every quote in the
+    /// evidence is fabricated — the model cited a beat number but the specific words it
+    /// attributed to that beat don't exist there, the signature of a beat whose text fell inside
+    /// <see cref="AuditProseUtils.ClampProse"/>'s elided middle.
+    ///
+    /// Checks BOTH double- and single-quoted spans (2026-08-14 gap fix — a real VIGL round-5
+    /// finding fabricated a whole scene for beat #14657 using single quotes throughout,
+    /// e.g. 'worked her fingers back into the seam', and the double-quote-only version of this
+    /// check let it straight through). The single-quote pattern requires non-word boundaries on
+    /// both sides (<c>(?&lt;!\w)'...'(?!\w)</c>) specifically so it does NOT treat a possessive or
+    /// contraction apostrophe — "Orim's", "wasn't" — as a quotation mark.
+    ///
+    /// Minimum quote length is 8 chars, not 15 (2026-08-14, second gap fix same day): a round-7
+    /// finding misattributed beat #5590's real text to a fabricated "beat #5603" using only
+    /// short quoted fragments ('authorized', 'did not exist' — 10 and 14 chars) that the
+    /// original 15-char floor let through unverified. 8 is still long enough that a coincidental
+    /// substring match across unrelated beats stays unlikely, while catching short-fragment
+    /// misattribution like this one.</summary>
+    internal static bool QuotedEvidenceAppearsInBeat(string evidence, string beatText)
+    {
+        var doubleQuoted = Regex.Matches(evidence, "\"([^\"]{8,})\"").Select(m => m.Groups[1].Value);
+        var singleQuoted = Regex.Matches(evidence, @"(?<!\w)'([^']{8,})'(?!\w)").Select(m => m.Groups[1].Value);
+        var quotes = doubleQuoted.Concat(singleQuoted)
+            .Select(q => Regex.Replace(q, @"\s+", " ").Trim())
+            .Where(q => q.Length > 0)
+            .ToList();
+        if (quotes.Count == 0) return true;
+        var normalizedBeat = Regex.Replace(beatText, @"\s+", " ");
+        return quotes.Any(q => normalizedBeat.Contains(q, StringComparison.OrdinalIgnoreCase));
     }
 
     // ── The six dimensions ────────────────────────────────────────────────────────

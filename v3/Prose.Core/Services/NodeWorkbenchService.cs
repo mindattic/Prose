@@ -1542,7 +1542,26 @@ public class NodeWorkbenchService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var junction = await db.BeatNodes
             .FirstOrDefaultAsync(sb => sb.NodeId == nodeId && sb.BeatId == beatId, ct);
-        if (junction == null) return;
+        if (junction == null)
+        {
+            // No junction for this (nodeId, beatId) pair. If the beat has zero BeatNodes
+            // rows anywhere, it's already fully orphaned (e.g. a superseded draft that was
+            // never linked to any chapter) rather than just not linked to THIS node — safe
+            // to remove the dangling Beats row directly, since there's no junction left to
+            // unlink first. Found 2026-08-15: a read-through QA pass surfaced beats with no
+            // BeatNodes row anywhere, and this method previously had no path to clean them up.
+            var referencedAnywhere = await db.BeatNodes.AnyAsync(bn => bn.BeatId == beatId, ct);
+            if (!referencedAnywhere)
+            {
+                var orphan = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
+                if (orphan != null)
+                {
+                    db.Beats.Remove(orphan);
+                    await db.SaveChangesAsync(ct);
+                }
+            }
+            return;
+        }
 
         db.BeatNodes.Remove(junction);
         var stillReferenced = await db.BeatNodes.AnyAsync(bn => bn.BeatId == beatId && bn.NodeId != nodeId, ct);

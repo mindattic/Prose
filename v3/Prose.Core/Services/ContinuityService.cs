@@ -481,17 +481,39 @@ public class ContinuityService
             return new ResolveResult { Winner = win, Loser = lose };
         }
 
+        // A custom object that happens to normalize to the same text as one of the two
+        // contested claims hashes to that claim's own ClaimUid (ComputeClaimUid is a pure
+        // function of entity+predicate+object). Inserting a "new" row under that UID would
+        // collide with the already-tracked `a`/`b` entity and throw. Treat it as picking
+        // that side outright instead of fabricating a duplicate.
+        var customUid = ComputeClaimUid(a.EntityId, a.Predicate, customObject);
+        if (customUid == a.ClaimUid || customUid == b.ClaimUid)
+        {
+            var win  = customUid == a.ClaimUid ? a : b;
+            var lose = win == a ? b : a;
+            ApplyStatus(win,  "CANONICAL", now, note);
+            ApplyStatus(lose, "REJECTED",  now, note);
+            db.SaveChanges();
+            tx.Commit();
+            return new ResolveResult { Winner = win, Loser = lose };
+        }
+
         ApplyStatus(a, "REJECTED", now, note);
         ApplyStatus(b, "REJECTED", now, note);
 
         var custom = new ContinuityClaim
         {
-            ClaimUid        = ComputeClaimUid(a.EntityId, a.Predicate, customObject),
+            ClaimUid        = customUid,
             EntityId        = a.EntityId,
             EntityName      = a.EntityName,
             EntityKind      = a.EntityKind,
             Predicate       = a.Predicate,
             Object          = customObject,
+            // 2026-08-14: BookSlug wasn't copied from either contested claim, so a resolved
+            // CANONICAL fact silently fell out of every book-scoped query (e.g. "open
+            // contradictions for VIGL") even though it clearly belongs to that book — caught
+            // when the Pallor resolution's own CANONICAL row came back with BookSlug=NULL.
+            BookSlug        = a.BookSlug ?? b.BookSlug,
             SourceType      = "writer_assertion",
             Snippet         = $"Writer-asserted resolution of {a.Predicate} contradiction.",
             Voice           = "writer",

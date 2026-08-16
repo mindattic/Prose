@@ -133,6 +133,7 @@ public class ProseDbContext : DbContext
     public DbSet<Record>          Records          => Set<Record>();
     public DbSet<EntityProperty>  EntityProperties => Set<EntityProperty>();
     public DbSet<Edge>            Edges            => Set<Edge>();
+    public DbSet<BookSequentialRead> BookSequentialReads => Set<BookSequentialRead>();
     public DbSet<Taxonomy>        Taxonomies       => Set<Taxonomy>();
     public DbSet<EntityTaxonomy>  EntityTaxonomies => Set<EntityTaxonomy>();
     public DbSet<Tag>             Tags             => Set<Tag>();
@@ -1149,6 +1150,17 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => new { x.TargetId, x.RelationType })
                 .HasDatabaseName("IX_Edges_Target_Current")
                 .HasFilter("[StoryValidUntil] IS NULL");
+        });
+
+        // ── BookSequentialRead (has-this-book-ever-been-read-front-to-back tracking) ──
+        b.Entity<BookSequentialRead>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.BeatSequenceHash).HasMaxLength(64).IsFixedLength().IsRequired();
+            e.Property(x => x.ReadBy).HasMaxLength(200).IsRequired();
+            e.HasIndex(x => new { x.NodeId, x.ReadAt });
+            e.HasIndex(x => x.UniverseId);
+            e.HasQueryFilter(x => ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId);
         });
 
         // ── Taxonomy ─────────────────────────────────────────────────────────

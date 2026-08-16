@@ -78,10 +78,11 @@ public class KdpManifestService
 
         // Broaden beyond DB-tracked rows: include every book folder actually present on disk
         // under each universe's export directory, even if it has neither PublicationStatus nor
-        // PublishUrl set (WIP / not yet published — e.g. PXL, LDGR, IxS). These fall through to
-        // "WorkInProgress" / NeedsRepublish=false via the same per-node logic below (no
-        // PublishUrl means the "live but no baseline" branch never fires), so a checklist
-        // consumer (KdpPublish) can show every known book, not just the ones already live.
+        // PublishUrl set (not yet published — e.g. PXL, LDGR, IxS). These fall through to
+        // "WorkInProgress" (hard gate unmet) or "Unpublished" (gate met, never published) via the
+        // same per-node logic below (no PublishUrl means the "live but no baseline" branch never
+        // fires), so a checklist consumer (KdpPublish) can show every known book, not just the
+        // ones already live.
         var existingCodes = nodes.Select(n => n.NodeCode).Where(c => c != null).ToHashSet();
         var existingIds = nodes.Select(n => n.Id).ToHashSet();
         var discoveredCodes = new HashSet<string>();
@@ -317,9 +318,18 @@ public class KdpManifestService
             if (!(hasPublishUrl && n.KdpPublishedAt == null))
             {
                 stale = !isIncomplete && hasPublishUrl && hasNewerVersionThanPublished;
+                // "Unpublished" (distinct from "WorkInProgress"): the hard gate is fully met —
+                // .publish marker, cover, description, a genuinely newer .epub — but the book has
+                // never gone live (no PublishUrl). This used to fall back to the DB's
+                // PublicationStatus column, defaulting to "WorkInProgress" when that column was
+                // null (true for most rows — it was never backfilled, see remarks above) — which
+                // wrongly implied the book still had missing prerequisites when it was actually
+                // ready and simply hadn't been run yet. Only used when PublicationStatus isn't
+                // already set to something meaningful (e.g. a legacy "Published" row whose
+                // PublishUrl was never captured — see JOAN/NEPH/PXL/QRT/TWD/TWU/VIGL).
                 effectiveStatus = isIncomplete
                     ? "WorkInProgress"
-                    : stale ? "Outdated" : (hasPublishUrl ? "Published" : (n.PublicationStatus ?? "WorkInProgress"));
+                    : stale ? "Outdated" : (hasPublishUrl ? "Published" : (n.PublicationStatus ?? "Unpublished"));
             }
 
             entries.Add(new KdpManifestEntry(

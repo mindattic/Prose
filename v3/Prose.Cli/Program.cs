@@ -78,6 +78,10 @@ if (UniverseBootstrap.RequestedSlug == null
         // Pure arithmetic against BookHealthService's tier shapes — touches no DB row at all
         // (see EstimateCostCli).
         "--estimate-cost",
+        // Corpus-wide corruption scan: TextIntegrityService.ScanAsync uses IgnoreQueryFilters
+        // deliberately — a data-integrity scan must see every universe in one pass, never scoped
+        // to whatever --universe happened to be passed (see TextIntegrityService's doc comment).
+        "--check-text-integrity",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -1666,6 +1670,23 @@ if (args.Contains("--world-state"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await WorldStateCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --sequential-read-status --slug <slug> | --all [--json]
+// prose --sequential-read-record --slug <slug> --read-by <name> [--stages N] [--summary "text"]
+if (args.Contains("--sequential-read-status") || args.Contains("--sequential-read-record"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SequentialReadCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --check-text-integrity [--fix] [--json]
+if (args.Contains("--check-text-integrity"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await TextIntegrityCli.RunAsync(args, sp);
     return;
 }
 

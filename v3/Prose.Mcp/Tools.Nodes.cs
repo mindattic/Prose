@@ -35,6 +35,7 @@ public class NodeTools
     private readonly CoverImageService coverImages;
     private readonly CoverTitleCompositorService titleCompositor;
     private readonly Prose.Core.Interfaces.IPathProvider paths;
+    private readonly CanonDocumentService canonDocs;
 
     public NodeTools(
         NodeWorkbenchService workbench,
@@ -51,7 +52,8 @@ public class NodeTools
         CoverPromptService coverPrompts,
         CoverImageService coverImages,
         CoverTitleCompositorService titleCompositor,
-        Prose.Core.Interfaces.IPathProvider paths)
+        Prose.Core.Interfaces.IPathProvider paths,
+        CanonDocumentService canonDocs)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
@@ -68,6 +70,7 @@ public class NodeTools
         this.coverImages = coverImages;
         this.titleCompositor = titleCompositor;
         this.paths = paths;
+        this.canonDocs = canonDocs;
     }
 
     [McpServerTool, Description("Create a SeriesNode — the top-level grouping (saga / anthology) that BookNodes hang under. Never holds beats. Returns the new id, slug, and URL.")]
@@ -658,14 +661,15 @@ public class NodeTools
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
-        await using var db = await dbFactory.CreateDbContextAsync();
-        var row = await db.Nodes.FindAsync(node.Id)
-            ?? throw new InvalidOperationException($"Node {node.Id} missing.");
-
-        row.NodeBible = string.IsNullOrEmpty(bibleText) ? null : bibleText;
-        row.NodeBibleGeneratedAt = DateTime.UtcNow;
-        row.UpdatedAt = DateTime.UtcNow;
-        await db.SaveChangesAsync();
+        // Route through CanonDocumentService.SetNodeBibleSectionAsync (sectionType "Full") rather
+        // than writing Nodes.NodeBible directly — that method keeps NodeBibleSections' "Full" row
+        // in lockstep with Nodes.NodeBible. Writing only the latter (as this method used to) left
+        // NodeBibleSections stale for any node not also touched via SetBookBibleSection, and
+        // MarkdownFileService.SyncFromCanonDbAsync (phase 2 of `--sync-markdown`) unconditionally
+        // overwrites MarkdownFiles from that stale row — silently reverting a bible edit the very
+        // next time someone ran a full markdown sync. Found and root-caused 2026-08-14 after it
+        // reverted a hand-authored bible fix mid-session.
+        await canonDocs.SetNodeBibleSectionAsync(node.Id, "Full", bibleText);
 
         // Cascade immediately — same reasoning as GenerateBookBible/SetCanonSection: propagation
         // is part of the write, not a follow-up step the caller has to remember.

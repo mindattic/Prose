@@ -147,7 +147,17 @@ public class WorldStateAtBeatService
         if (scopeIds is { Count: > 0 })
             edgesQ = edgesQ.Where(e => scopeIds.Contains(e.SourceId) || scopeIds.Contains(e.TargetId));
 
-        var edges = await edgesQ.Take(500).ToListAsync(ct);
+        // Deterministic ordering before the cap: edges with a real StoryValidFrom (i.e. actual
+        // temporal facts, not the always-on "timeless" majority) sort first, most recent first.
+        // Without this, SQL Server's unordered TOP silently drops whichever rows its scan happens
+        // to reach last — including newly-inserted temporal edges — once the table exceeds 500
+        // matching rows (confirmed 2026-08-15: the motorcycle ownership edges were invisible to
+        // every query until this ordering was added, despite being correctly written to Edges).
+        var edges = await edgesQ
+            .OrderByDescending(e => e.StoryValidFrom != null)
+            .ThenByDescending(e => e.StoryValidFrom)
+            .Take(500)
+            .ToListAsync(ct);
 
         // Resolve names for edge endpoints
         var edgeEntityIds = edges.SelectMany(e => new[] { e.SourceId, e.TargetId }).Distinct().ToList();
