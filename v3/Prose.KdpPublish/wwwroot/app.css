@@ -180,6 +180,7 @@ html, body {
 .ss-status-flagged { background: #FFF3D6; color: #8A5300; }
 .ss-status-warn { background: #FDECEA; color: #C40000; }
 .ss-status-wip { background: #EDEDED; color: #565959; }
+.ss-status-publishing { background: #E7F0FD; color: #0868B0; }
 
 .ss-start {
     margin: 8px 9px; padding: 8px; background: #FFD814; color: #0F1111; border: 1px solid #FCD200;

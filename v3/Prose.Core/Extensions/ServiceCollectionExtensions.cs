@@ -809,6 +809,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.GetPageStatusTool>();
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.SyncSubtitleTool>();
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.MarkPublishedTool>();
+        services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.MarkPublishingDetectedTool>();
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.LogNoteTool>();
         // First-time-publish (new-listing) tools — a book with no ASIN/KdpTitleId yet.
         services.AddSingleton<Services.Operator.IKdpTool, Services.Operator.KdpTools.CreateNewListingTool>();

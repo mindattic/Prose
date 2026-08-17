@@ -247,9 +247,11 @@ public class KdpOperatorService
            known_title_id. If it returns found:false with likelyPublishing:true, the book's row
            exists but has no edit link — KDP hides that "..." options menu while an edition is
            already mid-publish. This is a normal, temporary, real state, not an error: call
-           log_note saying so and STOP, don't retry or invent another cause. If it returns
-           found:false with no likelyPublishing, the book genuinely isn't on the bookshelf under
-           that title — call log_note explaining that and STOP; do not guess or invent a match.
+           mark_publishing_detected with the book's slug (see below) so the sidebar reflects it,
+           then call log_note saying so and STOP — don't retry or invent another cause. If it
+           returns found:false with no likelyPublishing, the book genuinely isn't on the
+           bookshelf under that title — call log_note explaining that and STOP; do not guess or
+           invent a match.
 
         1a. If you were given a Subtitle above (not the "none" placeholder), call sync_subtitle
             with it now, before anything else. This detours to the Details step and back — that's

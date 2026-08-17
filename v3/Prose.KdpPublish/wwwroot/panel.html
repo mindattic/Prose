@@ -60,6 +60,7 @@
             function post(msg) { window.chrome.webview.postMessage(msg); }
 
             function statusClass(e) {
+                if (e.publicationStatus === 'Publishing') return 'publishing';
                 if (e.needsRepublish) return 'flagged';
                 if (e.publicationStatus === 'Published') return 'ok';
                 if (e.publicationStatus === 'WorkInProgress') return 'wip';
@@ -70,6 +71,7 @@
                 if (cls === 'ok') return '✓ ';
                 if (cls === 'flagged') return '⟳ ';
                 if (cls === 'wip') return '⚠ ';
+                if (cls === 'publishing') return '⏳ ';
                 return '';
             }
 
@@ -240,6 +242,7 @@
                         // ready-to-go new book (like a freshly-marked JOAN) is picked up without
                         // the user having to hunt for it in a long per-universe list.
                         selected = new Set(entries.filter(function (e) {
+                            if (e.publicationStatus === 'Publishing') return false;
                             return e.needsRepublish || (e.readyToPublish && e.publicationStatus !== 'Published');
                         }).map(function (e) { return e.code; }));
                         everLoaded = true;

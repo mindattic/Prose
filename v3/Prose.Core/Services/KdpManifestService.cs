@@ -30,6 +30,12 @@ public class KdpManifestService
     internal static readonly Regex VersionFileRx = new(@"^(?<code>.+) V(?<ver>\d+)\.(?<ext>docx|epub)$", RegexOptions.IgnoreCase);
     private static readonly JsonSerializerOptions MarkerJsonOpts = new() { PropertyNameCaseInsensitive = true };
 
+    /// <summary>How long a <see cref="PublishMarker.PublishingDetectedAtUtc"/> timestamp is
+    /// trusted before falling back to the normal stale/Outdated computation. KDP's own
+    /// "Live - Updates publishing" window is documented at up to ~72 hours; this adds margin
+    /// so a slow republish doesn't flap back to "Outdated" while Amazon is still processing it.</summary>
+    public static readonly TimeSpan PublishingDetectedWindow = TimeSpan.FromHours(96);
+
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly SettingsService settings;
     private readonly SettingsKvStore kv;
@@ -330,6 +336,21 @@ public class KdpManifestService
                 effectiveStatus = isIncomplete
                     ? "WorkInProgress"
                     : stale ? "Outdated" : (hasPublishUrl ? "Published" : (n.PublicationStatus ?? "Unpublished"));
+
+                // KDP can be mid-publish on its own side (the "Live - Updates publishing" window,
+                // up to ~72 hours after a recent republish) even though our local marker still
+                // names the previous version as last-confirmed — that's a real, temporary,
+                // non-actionable state on Amazon's end, not a republish waiting on us.
+                // mark_publishing_detected (called by find_and_open_book's likelyPublishing
+                // signal) records when this was last observed; while that timestamp is recent,
+                // report "Publishing" instead of "Outdated" and don't flag it for a redundant run.
+                if (stale && publishMarker?.PublishingDetectedAtUtc is string detectedRaw
+                    && DateTime.TryParse(detectedRaw, null, System.Globalization.DateTimeStyles.RoundtripKind, out var detectedAt)
+                    && DateTime.UtcNow - detectedAt < PublishingDetectedWindow)
+                {
+                    effectiveStatus = "Publishing";
+                    stale = false;
+                }
             }
 
             entries.Add(new KdpManifestEntry(
@@ -443,7 +464,14 @@ public record PublishMarker(
     string? File,
     string? Asin,
     string? PublishedAtUtc,
-    int? Version = null
+    int? Version = null,
+    /// <summary>Set by <c>mark_publishing_detected</c> when <c>find_and_open_book</c> observes
+    /// KDP hiding the edit-content link (the "Live - Updates publishing" window that can last up
+    /// to ~72 hours after a recent republish). <see cref="KdpManifestService"/> reports
+    /// "Publishing" instead of "Outdated" while this timestamp is recent — see
+    /// <see cref="KdpManifestService.PublishingDetectedWindow"/>. Overwritten with null the next
+    /// time <c>mark_published</c> refreshes the marker after a genuine confirmed publish.</summary>
+    string? PublishingDetectedAtUtc = null
 );
 
 /// <summary>

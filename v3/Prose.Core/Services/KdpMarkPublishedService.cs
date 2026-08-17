@@ -133,6 +133,46 @@ public class KdpMarkPublishedService
     }
 
     /// <summary>
+    /// Records that <c>find_and_open_book</c> observed KDP hiding a book's edit-content link —
+    /// the "Live - Updates publishing" state, up to ~72 hours after a recent republish. Merges
+    /// <c>PublishingDetectedAtUtc = now</c> into the book's existing <c>.publish</c> marker
+    /// (preserving whatever publish history it already recorded) so <see cref="KdpManifestService"/>
+    /// reports "Publishing" instead of "Outdated" while the timestamp stays fresh. A no-op if the
+    /// book's export folder doesn't exist yet — there is nothing to annotate.
+    /// </summary>
+    public async Task<bool> MarkPublishingDetectedAsync(string slug, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug, ct);
+        if (node == null) return false;
+
+        var universeSlug = await db.Set<Prose.Core.Data.Entities.Universe>().AsNoTracking()
+            .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct) ?? "glmz";
+        var baseDir = settings.GetExportDirectory(universeSlug);
+        string nodeDir;
+        try { (nodeDir, _) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct); }
+        catch { nodeDir = Path.Combine(baseDir, node.NodeCode ?? node.Slug); }
+        if (!Directory.Exists(nodeDir)) return false;
+
+        var markerPath = Path.Combine(nodeDir, ".publish");
+        var existing = File.Exists(markerPath)
+            ? TryDeserializeMarker(await File.ReadAllTextAsync(markerPath, ct))
+            : null;
+
+        var updated = (existing ?? new PublishMarker(null, null, null))
+            with { PublishingDetectedAtUtc = DateTime.UtcNow.ToString("O") };
+        await File.WriteAllTextAsync(markerPath,
+            JsonSerializer.Serialize(updated, new JsonSerializerOptions { WriteIndented = true }), ct);
+        return true;
+    }
+
+    private static PublishMarker? TryDeserializeMarker(string raw)
+    {
+        try { return JsonSerializer.Deserialize<PublishMarker>(raw, new JsonSerializerOptions { PropertyNameCaseInsensitive = true }); }
+        catch { return null; }
+    }
+
+    /// <summary>
     /// The "Mark Unpublished" panel action: clears <c>PublicationStatus</c> and
     /// <c>KdpPublishedAt</c> for the given NodeCodes so <see cref="KdpManifestService"/> stops
     /// treating them as already current (falls into the "Unknown (no baseline)" / stale branch
