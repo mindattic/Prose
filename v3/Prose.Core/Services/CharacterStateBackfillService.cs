@@ -75,7 +75,7 @@ public class CharacterStateBackfillService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var characters = await db.Characters.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive),
+            .Join(db.Entities.AsNoTracking(),
                 ch => ch.Id, e => e.Id,
                 (ch, e) => new { Character = ch, ModifiedAt = e.ModifiedAt })
             .ToListAsync(ct);

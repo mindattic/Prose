@@ -44,7 +44,8 @@ public static class LogicSweepCli
         var svc = services.GetRequiredService<LogicSweepService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
         if (node == null)
         {
             Console.Error.WriteLine($"Node '{slug}' not found.");

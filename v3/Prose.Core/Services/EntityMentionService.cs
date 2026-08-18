@@ -71,7 +71,7 @@ public class EntityMentionService(IDbContextFactory<ProseDbContext> dbFactory)
         }
 
         var bySlug = await db.Entities.AsNoTracking()
-            .Where(e => e.Slug == idOrSlug && e.IsActive)
+            .Where(e => e.Slug == idOrSlug)
             .Select(e => new { e.Id, e.Name })
             .FirstOrDefaultAsync(ct);
         return bySlug == null ? null : (bySlug.Id, bySlug.Name);

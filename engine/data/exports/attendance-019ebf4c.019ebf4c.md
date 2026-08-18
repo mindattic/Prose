@@ -1,20 +1,10 @@
 # Attendance
 
-_Children are disappearing across the GLMZ and no one has noticed — because no one else can see all the cases at once.
+_A truancy investigator finds three missing children in the bureaucratic gaps between timestamps.Yemina Fola works for Arcturus Civil Security, cross-district, tracking unexcused absences through the city's filing systems. She doesn't rush. She doesn't theorize. She reads what the records show: three children logged absent, three physician's notes flagged for neuretics anomalies, three gaps between when the schools said they left and when witnesses saw them go. She chases the discrepancies room to room, floor to floor, building to building.But something is wrong with the shape of the case itself. The files arrived on her desk before the disappearances were even reported-days before, in some cases. The assignment timestamps come from blank sender fields that don't exist in the system. And there's a pattern visible only to her, only in the metadata, only if you know how to read what the city's architecture is trying not to say.Yemina has already lost one career to implicating the wrong people. She has nothing left to protect now except the truth, and the truth is something the city can't officially acknowledge.What happens when you file a report that proves the system was watching before anything happened?Approximately 101 pages and 2 hr 7 min to read._
 
-Yemina Fola is a cross-corp truancy investigator. Her clearance spans jurisdictions that don't talk to each other. That's why she's the only one who can see it: forty-seven children, twenty-two months, three different districts — and the same impossible detail in every classroom. An empty chair. Air that bends wrong above it.
+At six in the morning the Pilsen Veil ran the way it always ran. Not a city waking up — a machine that never stopped, only changed gears. Above 18th Street the elevated walkway carried the early shift toward the factories, packed rail to rail, everyone standing, because at six the handholds belonged to whoever'd claimed them first.
 
-The deeper she looks, the worse it gets. A buried frequency. A researcher who has been screaming into silence for two years. And something running inside her own neuretics — patient, deliberate, watching from the other side of her eyes — that started helping her find the pattern before she knew there was one.
-
-She has seventy-two hours before the city closes the door.
-
-Whatever took those children has been inside the system longer than she has.
-
-ATTENDANCE is a story about a woman who sees the pattern everyone else is blind to — and what it means when the pattern was watching her first._
-
-At six in the morning the Pilsen Veil ran the way it always ran. Not a city waking up — a machine that never stopped, only changed gears. Above 18th Street the elevated carried the early shift toward the factories, the cars full, everyone standing, because at six the seats belonged to whoever rode all the way to the end.
-
-Ads scrolled along the underside of the track — Praxis NeoCortex upgrades, a CramIt bar in animated amber — and cut off dead at the median. The Meridian side had no emitters to carry them.
+Ads scrolled along the underside of the walkway — Praxis NeoCortex upgrades, a CramIt bar in animated amber — and cut off dead at the median. The Meridian side had no emitters to carry them.
 
 Yemina drove the seam because the seam was hers. Six years on the line. Arcturus Holdings ran the schools, the transit and the case files on one side; Meridian Infrastructure ran the same things under different names on the other.
 
@@ -50,7 +40,7 @@ Her neuretics were contractor-grade: district-issue mesh, grown in a public clin
 
 Arcturus leased.
 
-She paid Φ90 a month against the lease and had been paying it since she was twenty-nine. In eleven years the balance had come down by a little less than half. She had done that arithmetic once, at a kitchen table, and never again.
+She paid Φ90 a month against the lease and had been paying it since she was twenty-nine. In eleven years the balance had come down by a little less than half. She had run that audit once, at a kitchen table, and never again.
 
 It worked. That was the honest thing to say about it. It ran her caseload, held her font, kept her records, and lagged half a second behind her on anything the tier hadn't paid for.
 
@@ -58,7 +48,7 @@ What it did not do was close. A leased mesh belongs to nobody enough to be defen
 
 You could feel the seam before the signs confirmed it. On the Arcturus side the scrubbers ran hot and constant and the air had the thin over-cleaned taste of a server room. Then the car passed under the elevated, the scrubbing thinned, and the city came back in — hot oil off a vent, wet concrete, the sweet rot of something in a drain nobody on either contract was paid to find. The particulate counter climbed nine points and stayed there.
 
-The fixtures changed one at a time. Arcturus teal, its typeface picked by committee to look trustworthy. Then a stretch of poles that belonged to nobody, brand plates pried off, bolt holes open and empty. Then Meridian's worn municipal amber with half the panels dead. Overhead the rail joints went unground and the cars came through with a stutter.
+The fixtures changed one at a time. Arcturus teal, its typeface picked by committee to look trustworthy. Then a stretch of poles that belonged to nobody, brand plates pried off, bolt holes open and empty. Then Meridian's worn municipal amber with half the panels dead. Overhead the walkway seams ran ungrounded and the foot traffic came through with a stutter.
 
 That was the seam. The map called it a boundary.
 
@@ -228,13 +218,13 @@ He could. He described it the way you describe a place you've walked through eve
 
 He kept the name strips. He said it without being asked, in the same flat voice. He had a drawer. He had Kito Bramley's, and he had two others.
 
-"Dembe," he said. "And a girl, Priya. Different rooms. Not mine. But I knew them — you know all of them after a few years, the ones who come early because home isn't quiet." He gave the names like something he wasn't sure he was allowed to give away. Not case numbers. Not the registry codes she'd read off her caseload that morning — 45, 46, 47, three numbers assigned by a system that had never met them. His names. Classroom names. The kind you call across a crowded hallway.
+"Tomas," he said. "And a girl, Daria. Different rooms. Not mine. But I knew them — you know all of them after a few years, the ones who come early because home isn't quiet." He gave the names like something he wasn't sure he was allowed to give away. Not case numbers. Not the registry codes she'd read off her caseload that morning — 45, 46, 47, three numbers assigned by a system that had never met them. His names. Classroom names. The kind you call across a crowded hallway.
 
 "I know the office calls them something else. Sends it up as a code. But I had them in a room. They were—" He stopped. He didn't finish, because the only honest way to end it was a tense, and the tense was the problem.
 
 He had tried to report it. He said this like the part of the story he'd told the most — the part that had done nothing.
 
-He'd filed with the building first: Dr. Achebe's office had logged the resonance incident, the district line, the thing that went to the Anomalous Activity Monitoring Authority three weeks ago and produced a confirmation number and nothing else. He'd filed with the teachers' clearinghouse. He'd walked it twice to the district truancy desk in person, taken the Pulse and stood in line, and a clerk had explained to him, with real kindness, that disappearances and absences went to different sub-authorities. That a child logged as absent couldn't be re-coded as disappeared without a guardian petition, and Kito's guardian was seventy-three and had already started something, somewhere, that hadn't connected to the thing Ren started.
+He'd filed with the building first: Dr. Achebe's office had logged the resonance incident, the district line, the thing that went to the Anomalous Activity Monitoring Authority yesterday and produced a confirmation number and nothing else. He'd filed with the teachers' clearinghouse. He'd walked it twice to the district truancy desk in person, taken the Pulse and stood in line, and a clerk had explained to him, with real kindness, that disappearances and absences went to different sub-authorities. That a child logged as absent couldn't be re-coded as disappeared without a guardian petition, and Kito's guardian was seventy-three and had already started something, somewhere, that hadn't connected to the thing Ren started.
 
 The two reports sat in two systems. The systems didn't look at each other.
 
@@ -298,7 +288,7 @@ The next right thing wasn't to file and drive to the next address. It was the ot
 
 "Did you file a resonance incident report?" Yemina asked.
 
-It was a closing question. She asked it the way she asked all of them, in the flat after-tone that meant the interview was nearly over and there'd be a form. She had her pen against the page before he answered, because there was always a number to write after this question - a confirmation code, a district filing reference - and she wanted to be ready to write it down and leave.
+It was a closing question. She asked it the way she asked all of them, in the flat after-tone that meant the interview was nearly over and there'd be a form. She had her pen against the page before he answered, because there was always a number to write after this question — a confirmation code, a district filing reference — and she wanted to be ready to write it down and leave.
 
 Ren was quiet for the wrong length of time.
 
@@ -344,7 +334,7 @@ She looked at it. She didn't cross it out. She let it stand on the page in her o
 
 She stood.
 
-Then she sat back down. The chair was a child's chair, low, and lowering herself back into it was undignified, and she did it anyway, because what she was about to say wasn't something a person should say standing over someone on her way out the door.
+Then she sat back down — not the side chair this time, but the child's chair closest to him, low, and lowering herself into it was undignified, and she did it anyway, because what she was about to say wasn't something a person should say standing over someone on her way out the door.
 
 "There are two more children," she said. "Different schools. The same thing — the air went wrong, and then they were gone."
 
@@ -352,7 +342,7 @@ She didn't normally tell witnesses this. Case protocol was explicit: a witness w
 
 "I'm telling you so you know this wasn't something that happened to Kito specifically," she said. "It wasn't your classroom."
 
-It was the only thing she had to give him that the system couldn't later find and take back. Not the closed disclosure field - that was an absence, and an absence protects no one; it only fails to harm them. This was different. This was a fact she was handing him on purpose: *you did not do this.* She watched it reach him.
+It was the only thing she had to give him that the system couldn't later find and take back. Not the closed disclosure field — that was an absence, and an absence protects no one; it only fails to harm them. This was different. This was a fact she was handing him on purpose: *you did not do this.* She watched it reach him.
 
 He looked at the third row for a long time.
 
@@ -510,7 +500,7 @@ The pattern wasn't a person moving between schools. The pattern was in the child
 
 She was about to close the files when she noticed the assignment timestamps. They weren't part of the case body. They sat in the registry's own metadata — who routed this to whom, and when. She almost never read that field. She read it now because it was the only one she hadn't already used up.
 
-Tomas Reyes, case 45: assigned to Fola, Yemina, twenty-three days ago - the day before his disappearance was even filed.
+Tomas Reyes, case 45: assigned to Fola, Yemina, twenty-three days ago — the day before his disappearance was even filed.
 
 Daria Osei, case 46: assigned twelve days ago. The day before hers.
 
@@ -554,7 +544,7 @@ Something had let itself into the rendering layer.
 
 She knew the architecture well enough to know what that meant. The render was the top of the stack and the end of it — the last surface before her own sight, inside the skull, with nothing standing between it and her. Nothing outside the stack could write there. To put a sentence in that font, a thing had to be underneath already, all the way down, and coming up. Whatever it was, it was writing on the inside of her eyes, in the one room she'd always assumed had a single occupant.
 
-The fear arrived. She let it stand at the edge of things, unattended, the way she'd learned to outside the rooms where reports got resolved administratively — breathing slow and even through her nose until the out-breath was the steadiest thing in the car.
+Something cold moved through her chest and stayed there. She let it stand at the edge of things, unattended, the way she'd learned to outside the rooms where reports got resolved administratively — breathing slow and even through her nose until the out-breath was the steadiest thing in the car.
 
 She didn't put a name to it. Naming it would only have made a second thing to manage, and she already had the completion to manage.
 
@@ -669,7 +659,7 @@ So she drove back across the Veil to the Pilsen Veil Cluster's compliance annex,
 The back wall of the waiting room held a rack of gray file folders standing in slots, each sealed at the flap with a barcode strip and a registration number, waiting on a courier run the annex still scheduled twice a week. CHAIN-OF-CUSTODY TRANSFER, the placard said. CLASS-3-ADJACENT AND ABOVE. NO SUBSTITUTIONS. She had never filed anything that qualified. She had always read the rack the way you read a fire extinguisher — a thing the building kept for something that happened to other people.
 
 When the window called her, she laid her credential flat on the reader and said the docket aloud, because saying it aloud made a record of the asking.
-"Bramley, Kito. Counseling intake, Aldiss Mwangi. I'm pulling the wellness flags into district review."
+"Bramley, Kito. Counseling intake, Aldiss-Mwangi. I'm pulling the wellness flags into district review."
 
 The clerk was young and careful and did the thing clerks did — read the screen before she read the person. The field populated.
 
@@ -767,7 +757,7 @@ It wasn't the same fact. In the first log, a band of the spectrum carried a spik
 
 *17–19 Hz.*
 
-She opened the second log to check whether the first was an instrument fault. Same band. The same narrow run, low and patient, in a record filed to a different sub-authority by a different physician at a different site. Two faults in the same place on the same instrument isn't a fault?
+She opened the second log to check whether the first was an instrument fault. Same band. The same narrow run, low and patient, in a record filed to a different sub-authority by a different physician at a different site. Two faults in the same place on a different instrument isn't a fault?
 
 She underlined the line she'd already written.
 
@@ -811,7 +801,7 @@ It was looking for a shape. She couldn't tell what shape. She could feel it test
 
 If it found the log it would read it the same way it read everything else, without knowing it wasn't supposed to. Not malice. Just thoroughness. The difference didn't matter much from inside the building.
 
-Then the intruder sealed the channel. Not gradually, not the careful withdrawal of a thing covering its tracks — closed, all at once, the way a shutter closes against weather, and her neuretics were suddenly her own again and emptier for it.
+Then it sealed the channel. Not gradually, not the careful withdrawal of a thing covering its tracks — closed, all at once, the way a shutter closes against weather, and her neuretics were suddenly her own again and emptier for it.
 
 She sat very still with the notebook open on her knee, the heater ticking, the drone coming around again.
 
@@ -1037,15 +1027,15 @@ Not her supervisor. Contractor Compliance — a division whose name she had read
 
 Achterberg went through it the way a person goes through a form they did not write and cannot change.
 
-The engagement: cross-district truancy contractor, Arcturus Holdings, Φ31,000 annually, renewed on a rolling twelve. The performance bond: Φ4,000, held, released at renewal. The cross-corp endorsement — the thing that let one contractor's clearance run across territories that did not otherwise speak — issued at Arcturus's discretion, reviewed annually, and up in eleven weeks.
+The engagement: cross-district truancy contractor, Arcturus Holdings, Φ31,000 annually, renewed on a rolling twelve. The performance bond: Φ4,000, held, released at renewal. The cross-corp endorsement - the thing that let one contractor's clearance run across territories that did not otherwise speak - issued at Arcturus's discretion, reviewed annually, and up in nine weeks.
 
 "Endorsements are discretionary," Achterberg said. "I mention it because people are sometimes surprised by that word. It doesn't mean anything is being threatened. It means nothing is being promised."
 
-Yemina did the arithmetic while the woman talked, because her hands did arithmetic the way other people's fidgeted.
+Yemina audited the numbers while the woman talked, because her hands worked a ledger the way other people's fidgeted.
 
-Φ31,000 a year. Less Φ1,080 to the mesh lease. Less a bond she wouldn't see until renewal. Eleven weeks.
+Φ31,000 a year. Less Φ1,080 to the mesh lease. Less a bond she wouldn't see until renewal. Nine weeks.
 
-And on the other side of eleven weeks, whether or not there was still one node in the GLMZ from which forty-seven was a number a person could see. The endorsement wasn't a perk. The endorsement *was* the vantage. Take it away and the forty-seven went back to being forty-seven ones, in eight systems, none of them speaking to each other.
+And on the other side of nine weeks, whether or not there was still one node in the GLMZ from which forty-seven was a number a person could see. The endorsement wasn't a perk. The endorsement *was* the vantage. Take it away and the forty-seven went back to being forty-seven ones, in eight systems, none of them speaking to each other.
 
 She understood, finally, why the posting had been handed to her as a demotion. Nobody had built this vantage. It had happened by accident, in a gap between contracts. It could be closed by accident too, by a pleasant woman reading off a cost line.
 
@@ -1053,7 +1043,7 @@ She understood, finally, why the posting had been handed to her as a demotion. N
 
 "That would be helpful." A pause with nothing in it. "There's one more item and then I'll let you go. A Meridian endorsement was used to pull an Arcturus billing record on Thursday. Meridian flagged it to us, because that's what the reciprocity agreement obliges them to do. The endorsement belonged to a clerk on Ashland."
 
-Yemina's hands stopped doing arithmetic.
+Yemina's hands stopped working the ledger.
 
 "He isn't under any kind of action," Achterberg said. "He's been moved to intake. It's a day desk. It's the same grade."
 
@@ -1213,7 +1203,7 @@ The same four words that had come off a Meridian terminal under a sixty-one-year
 
 Yemina held it out. "Sealed. Case classification's on the barcode."
 
-Nadia took it with one hand, freeing the other from the bag just long enough. For a moment both things — the folder and whatever was in the bag — were pressed against her at once.
+Nadia took it with one hand, freeing that hand from the bag just long enough. For a moment both things — the folder and whatever was in the bag — were pressed against her at once.
 
 "That's it?" Yemina asked. On the drive over she'd braced for a form to sign, a transfer number, some scrap of the exchange she could check later to prove it had happened the way it was supposed to. There was none of that. There was a name off a clipboard and a folder changing hands in a freight yard at 5:41 in the morning.
 
@@ -1288,8 +1278,6 @@ Her hand went to her wrist before she noticed she'd moved it. She was timing him
 A forklift passed close enough behind him that its mirror nearly caught his shoulder. He didn't flinch. His grip didn't tighten and didn't loosen.
 
 She expected curiosity. He showed none. He wasn't fighting the urge to look; there was no urge. Whatever was being asked of him, he'd understood it before the folder reached his hands.
-
-Four minutes, near enough. She let it go.
 
 Four minutes, near enough. She let it go.
 
@@ -1417,7 +1405,7 @@ She knew what imaging meant. She had read the reports from the other end of it f
 
 She also knew the second-order consequence, because it was in the contract she'd signed six years ago in a room with bad chairs. A mesh under integrity review is a mesh under review. Clearance suspends for the duration. The cross-corp endorsement suspends with it, and an endorsement due in nine weeks does not survive a forensic hold. Nobody would have to decline it. It would simply run out while the paperwork was open.
 
-She sat in front of the form with her hands flat on either side of the terminal and did the arithmetic she had been refusing to do since a woman in Back of the Yards told her the schism didn't want anything and the thing in her did.
+She sat in front of the form with her hands flat on either side of the terminal and ran the audit she had been refusing to run since a woman in Back of the Yards told her the schism didn't want anything and the thing in her did.
 
 If she filed it, the thing came out of her head. Whatever it was, whatever it wanted, it stopped riding her clearance and stopped reading her records and stopped standing behind her eyes at eleven o'clock at night. She got her own skull back. She had it in writing, in a contract, that she was allowed to want that.
 
@@ -1451,7 +1439,7 @@ It was not complete anymore.
 
 *Vandermolen, Nkechi. Age 7. Meridian primary, District 11-North. Pediatric neuretics flag on file.*
 
-Not absent. Not missing. There was no incident, because nothing had happened yet. The case had been opened on a girl who was, at four minutes past eleven at night, in a bed eleven blocks from a school, with something under two weeks of ordinary left in her.
+Not absent. Not missing. There was no incident, because nothing had happened yet. The case had been opened on a girl who was, at four minutes past eleven at night, in a bed eleven blocks from a school, with something under three weeks of ordinary left in her.
 
 The thing in her mesh had assigned her a child before the child was gone. It had done that three times already, and three times she had taken it as a fact she could work from without needing its origin.
 

@@ -679,8 +679,14 @@ namespace Prose.Core.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Markdown")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NodeBible")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("NodeId")
@@ -690,6 +696,15 @@ namespace Prose.Core.Migrations
                         .IsRequired()
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
+
+                    b.Property<string>("Seed")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subtitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Summary")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -1617,6 +1632,55 @@ namespace Prose.Core.Migrations
                     b.HasIndex("BookId", "Position");
 
                     b.ToTable("BookProtagonists");
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.BookSequentialRead", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<int>("BeatCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("BeatSequenceHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nchar(64)")
+                        .IsFixedLength();
+
+                    b.Property<int>("ChapterCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FindingsSummary")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("NodeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ReadAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ReadBy")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int>("StageCount")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("UniverseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UniverseId");
+
+                    b.HasIndex("NodeId", "ReadAt");
+
+                    b.ToTable("BookSequentialReads");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CanonDocument", b =>
@@ -4588,9 +4652,6 @@ namespace Prose.Core.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime?>("ArchivedAt")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -4607,9 +4668,6 @@ namespace Prose.Core.Migrations
 
                     b.Property<DateTime?>("InWorldCreatedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
 
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("datetime2");
@@ -4642,15 +4700,11 @@ namespace Prose.Core.Migrations
                     b.HasIndex("InWorldCreatedDate");
 
                     b.HasIndex("ModifiedAt")
-                        .HasDatabaseName("IX_Entities_ModifiedAt_Active")
-                        .HasFilter("[IsActive] = 1");
+                        .HasDatabaseName("IX_Entities_ModifiedAt");
 
                     b.HasIndex("Slug");
 
                     b.HasIndex("UniverseId");
-
-                    b.HasIndex("EntityType", "IsActive")
-                        .HasFilter("[IsActive] = 1");
 
                     b.HasIndex("UniverseId", "EntityType", "Slug")
                         .IsUnique()

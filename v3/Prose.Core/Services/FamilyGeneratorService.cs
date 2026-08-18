@@ -484,7 +484,6 @@ public class FamilyGeneratorService
     {
         var sample = await db.Records.AsNoTracking()
             .Where(r => r.Entity!.EntityType == "character"
-                     && r.Entity.IsActive
                      && r.EntityId != subjectId)
             .Select(r => r.Json)
             .Take(2000)
@@ -632,7 +631,6 @@ public class FamilyGeneratorService
             Status      = "canon",
             CreatedAt   = DateTime.UtcNow,
             ModifiedAt  = DateTime.UtcNow,
-            IsActive    = true,
         });
         db.Records.Add(new Data.Entities.Record
         {

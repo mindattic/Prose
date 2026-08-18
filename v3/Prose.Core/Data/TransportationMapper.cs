@@ -34,7 +34,7 @@ public static class TransportationMapper
     public static List<TransportationData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Transportations.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "transportation"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "transportation"),
                 t => t.Id, e => e.Id,
                 (t, e) => new { t.Id, Name = e.Name, t.Category, t.Manufacturer, t.Rating, t.VoteCount })
             .ToList();
@@ -76,7 +76,7 @@ public static class TransportationMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "transportation")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "transportation" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "transportation"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -246,7 +246,7 @@ public static class TransportationMapper
         };
 
         var transportEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "transportation" && e.IsActive)
+            .Where(e => e.EntityType == "transportation")
             .Select(e => e.Id)
             .ToHashSet();
 

@@ -32,7 +32,7 @@ public static class SyntheticMapper
     public static List<SyntheticLifeData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.SyntheticLives.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "synthetic"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "synthetic"),
                 s => s.Id, e => e.Id,
                 (s, e) => new { s.Id, s.Name, s.Classification, s.Rating, s.VoteCount })
             .ToList();
@@ -73,7 +73,7 @@ public static class SyntheticMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "synthetic")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "synthetic" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "synthetic"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -272,7 +272,7 @@ public static class SyntheticMapper
 
         var entityIds = db.Entities.AsNoTracking()
             .Where(e => e.EntityType == "synthetic")
-            .Select(e => new { e.Id, e.Name, e.IsActive })
+            .Select(e => new { e.Id, e.Name })
             .ToList();
 
         if (entityIds.Count == 0) return 0;
@@ -319,7 +319,7 @@ public static class SyntheticMapper
         }
 
         // Minimal rows for active entities with no blob and no relational row
-        foreach (var e in entityIds.Where(e => e.IsActive && !blobEntityIds.Contains(e.Id) && !existingRelational.Contains(e.Id)))
+        foreach (var e in entityIds.Where(e => !blobEntityIds.Contains(e.Id) && !existingRelational.Contains(e.Id)))
         {
             try
             {
@@ -346,11 +346,11 @@ public static class SyntheticMapper
     {
         if (string.IsNullOrWhiteSpace(alias)) return null;
         var e = db.Entities.AsNoTracking()
-            .FirstOrDefault(x => x.Name == alias && x.IsActive);
+            .FirstOrDefault(x => x.Name == alias);
         if (e != null) return e.Id;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(alias);
         e = db.Entities.AsNoTracking()
-            .FirstOrDefault(x => x.Slug == slug && x.IsActive);
+            .FirstOrDefault(x => x.Slug == slug);
         return e?.Id;
     }
 }

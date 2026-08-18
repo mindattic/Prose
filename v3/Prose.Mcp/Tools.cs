@@ -309,7 +309,8 @@ public class ContextTools
         if (nodeId == null) return Error("node_not_found", nodeIdOrSlug);
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId);
         if (node == null) return Error("node_not_found", nodeIdOrSlug);
 
         // Recurses past any nested Collection (2026-08-09 fix).
@@ -346,10 +347,12 @@ public class ContextTools
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(idOrSlug, out var guid))
         {
-            var byId = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == guid);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == guid);
             if (byId != null) return byId.Id;
         }
-        var bySlug = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var bySlug = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug);
         return bySlug?.Id;
     }
 

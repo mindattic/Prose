@@ -47,7 +47,8 @@ public static class SequentialReadCli
                 Console.Error.WriteLine("Usage: prose --sequential-read-record --slug <slug> --read-by <name> [--stages N] [--summary \"text\"] --universe <u>");
                 return 2;
             }
-            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug);
             if (node is null) { Console.Error.WriteLine($"[sequential-read] No node found with slug '{slug}'."); return 1; }
 
             await tracker.RecordReadAsync(node.Id, readBy, stages, summary);
@@ -92,7 +93,8 @@ public static class SequentialReadCli
             return 2;
         }
 
-        var single = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var single = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug);
         if (single is null) { Console.Error.WriteLine($"[sequential-read] No node found with slug '{slug}'."); return 1; }
 
         var report = await tracker.GetStatusAsync(single.Id);

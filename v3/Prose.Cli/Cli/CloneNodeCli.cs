@@ -47,9 +47,11 @@ public static class CloneNodeCli
         // ── Resolve source node ─────────────────────────────────────────────
         Node? source;
         if (!string.IsNullOrWhiteSpace(slug))
-            source = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
         else if (Guid.TryParse(id, out var g))
-            source = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
         else
             source = await db.Nodes.AsNoTracking()
                 .Where(s => s.Id.ToString().StartsWith(id!.ToLower()))

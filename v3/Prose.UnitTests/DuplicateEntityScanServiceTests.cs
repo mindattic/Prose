@@ -31,7 +31,7 @@ public class DuplicateEntityScanServiceTests
         Directory.CreateDirectory(tempRoot);
         paths = new TestPathProviderWithRoot(tempRoot);
         dbFactory = TestDbFactory.For(paths, "dup-entity");
-        svc = new DuplicateEntityScanService(dbFactory);
+        svc = new DuplicateEntityScanService(dbFactory, new FakeLlmService());
         universeId = Guid.CreateVersion7();
     }
 
@@ -42,7 +42,7 @@ public class DuplicateEntityScanServiceTests
         try { Directory.Delete(tempRoot, recursive: true); } catch { }
     }
 
-    private async Task<Guid> SeedCharacterAsync(string name, Guid? originNodeId = null, bool isActive = true, string? description = null)
+    private async Task<Guid> SeedCharacterAsync(string name, Guid? originNodeId = null, string? description = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var id = Guid.CreateVersion7();
@@ -60,7 +60,6 @@ public class DuplicateEntityScanServiceTests
             Name = name,
             Slug = slug,
             OriginNodeId = originNodeId,
-            IsActive = isActive,
             Description = description,
         });
         await db.SaveChangesAsync();
@@ -183,22 +182,16 @@ public class DuplicateEntityScanServiceTests
         Assert.That(characterGroups[0].Candidates.Select(c => c.Name), Has.All.EqualTo("Renko Moss"));
     }
 
-    [Test]
-    public async Task RetiredCandidate_StillReported_WithIsActiveFalse()
-    {
-        // A soft-retired duplicate (this session's own resolution pattern for the real Bear
-        // bug) must still show up in the scan — retiring isn't the same as fixing the root
-        // duplication, and a future session should still be able to see the history.
-        await SeedCharacterAsync("Boris Johansen", isActive: false, description: "[RETIRED] orphaned draft");
-        await SeedCharacterAsync("Boris Johanssen");
-
-        var groups = await svc.ScanAsync(universeId);
-
-        Assert.That(groups, Has.Count.EqualTo(1));
-        var retired = groups[0].Candidates.Single(c => c.Name == "Boris Johansen");
-        Assert.That(retired.IsActive, Is.False);
-        Assert.That(retired.DescriptionSnippet, Does.Contain("RETIRED"));
-    }
+    // "RetiredCandidate_StillReported_WithIsActiveFalse" removed (temporal-hygiene pass,
+    // 2026-08-17): its premise — a soft-retired duplicate stays visible to future scans — no
+    // longer holds now that MergeAsync hard-deletes the loser row (existence in the live table
+    // is the only signal of "current"; a merged-away duplicate simply isn't there to report).
+    // MergeAsync's real SQL-Server-only mechanics (sys.foreign_keys, FOR JSON AUTO, OUTPUT
+    // inserted.*) can't run against this fixture's SQLite in-memory provider — this file's
+    // other tests only ever exercised ScanAsync, never MergeAsync, for that reason. The
+    // merge-hard-deletes-and-is-recoverable behavior is verified as a live smoke test against
+    // real SQL Server LocalDB instead (see Phase -1b sequencing step 2 in the corpus-trust-
+    // recovery plan), not as an automated unit test in this harness.
 
     [Test]
     public async Task SingleEntity_NoDuplicate()

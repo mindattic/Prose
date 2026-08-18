@@ -79,7 +79,7 @@ public class WorldValidationTests
     {
         using var db = factory.CreateDbContext();
         var dupes = db.Entities.AsNoTracking()
-            .Where(e => e.IsActive && !ExemptFromCollisionCheck.Contains(e.EntityType))
+            .Where(e => !ExemptFromCollisionCheck.Contains(e.EntityType))
             .GroupBy(e => new { e.EntityType, Name = e.Name.ToLower() })
             .Where(g => g.Count() > 1)
             .Select(g => new { g.Key.EntityType, g.Key.Name, Count = g.Count() })
@@ -145,7 +145,6 @@ public class WorldValidationTests
 
         using var db = factory.CreateDbContext();
         var rows = db.Entities.AsNoTracking()
-            .Where(e => e.IsActive)
             .Select(e => new { e.Name, e.Description })
             .ToList();
 

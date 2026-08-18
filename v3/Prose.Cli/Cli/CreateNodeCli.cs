@@ -93,7 +93,8 @@ public static class CreateNodeCli
         if (string.IsNullOrWhiteSpace(slugOrId)) return null;
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(slugOrId, out var gid))
-            return await db.Nodes.AsNoTracking().AnyAsync(s => s.Id == gid) ? gid : null;
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            return await db.Nodes.IgnoreQueryFilters().AsNoTracking().AnyAsync(s => s.Id == gid) ? gid : null;
         var hit = await db.Nodes.AsNoTracking()
             .Where(s => s.Slug == slugOrId).Select(s => (Guid?)s.Id).FirstOrDefaultAsync();
         return hit;

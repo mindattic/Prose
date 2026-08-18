@@ -59,7 +59,7 @@ public class DataRepairServiceTests
             Name       = name ?? "Test Entity",
             Slug       = $"test-entity-{id:N}",
             Status     = "canon",
-            IsActive   = true,
+            
             CreatedAt  = DateTime.UtcNow,
             ModifiedAt = DateTime.UtcNow,
         });

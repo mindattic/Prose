@@ -31,7 +31,7 @@ public static class PsionicMapper
     public static List<PsionicData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Psionics.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "psionic"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "psionic"),
                 p => p.Id, e => e.Id,
                 (p, e) => new { p.Id, Name = e.Name, p.Classification, p.Rating, p.VoteCount })
             .ToList();
@@ -72,7 +72,7 @@ public static class PsionicMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "psionic")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "psionic" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "psionic"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -327,8 +327,7 @@ public static class PsionicMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive
-                && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

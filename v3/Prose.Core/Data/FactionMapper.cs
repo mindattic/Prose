@@ -37,7 +37,7 @@ public static class FactionMapper
     public static List<FactionData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Factions.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "faction"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "faction"),
                 f => f.Id, e => e.Id,
                 (f, e) => new { Id = f.Id, Name = e.Name, f.Rating, f.VoteCount })
             .ToList();
@@ -77,7 +77,7 @@ public static class FactionMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "faction")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "faction" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "faction"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -319,7 +319,7 @@ public static class FactionMapper
 
         // Fetch all faction Record rows in one shot.
         var factionEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "faction" && e.IsActive)
+            .Where(e => e.EntityType == "faction")
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -373,8 +373,7 @@ public static class FactionMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive
-                && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

@@ -60,7 +60,7 @@ public class FamilyTieService
             .Where(e => e.TargetId == childId
                      && e.RelationType == ParentOf
                      && e.StoryValidUntil == null)
-            .Join(db.Entities.AsNoTracking().Where(en => en.IsActive),
+            .Join(db.Entities.AsNoTracking(),
                 e  => e.SourceId,
                 en => en.Id,
                 (e, en) => en)
@@ -74,7 +74,7 @@ public class FamilyTieService
             .Where(e => e.SourceId == parentId
                      && e.RelationType == ParentOf
                      && e.StoryValidUntil == null)
-            .Join(db.Entities.AsNoTracking().Where(en => en.IsActive),
+            .Join(db.Entities.AsNoTracking(),
                 e  => e.TargetId,
                 en => en.Id,
                 (e, en) => en)
@@ -107,7 +107,7 @@ public class FamilyTieService
             .Where(e => e.SourceId == characterId
                      && e.RelationType == SiblingOf
                      && e.StoryValidUntil == null)
-            .Join(db.Entities.AsNoTracking().Where(en => en.IsActive),
+            .Join(db.Entities.AsNoTracking(),
                 e  => e.TargetId,
                 en => en.Id,
                 (e, en) => en)
@@ -140,7 +140,7 @@ public class FamilyTieService
             .Where(e => e.SourceId == characterId
                      && e.RelationType == SpouseOf
                      && e.StoryValidUntil == null)
-            .Join(db.Entities.AsNoTracking().Where(en => en.IsActive),
+            .Join(db.Entities.AsNoTracking(),
                 e  => e.TargetId,
                 en => en.Id,
                 (e, en) => en)
@@ -231,7 +231,6 @@ public class FamilyTieService
         var like = $"%{query.Trim()}%";
         return await db.Entities.AsNoTracking()
             .Where(e => e.EntityType == "character"
-                     && e.IsActive
                      && e.Id != excludeId
                      && EF.Functions.Like(e.Name, like))
             .OrderBy(e => e.Name.Length)   // shorter name = better match

@@ -224,7 +224,7 @@ public class PsionicRelationalParityTests
                 Name       = src.Name,
                 Slug       = WorldGraphService.Slugify(src.Name),
                 Status     = "canon",
-                IsActive   = true,
+                
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             });

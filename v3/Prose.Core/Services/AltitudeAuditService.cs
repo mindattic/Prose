@@ -39,7 +39,9 @@ public sealed class AltitudeAuditService(
         string blueprintHeadline;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var node = await db.Nodes.AsNoTracking().Where(n => n.Id == storyNodeId)
+            // IgnoreQueryFilters(): explicit storyNodeId, not an ambient scope (same bug class
+            // found and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == storyNodeId)
                 .Select(n => new { n.Slug, n.NodeCode, n.Title, n.NodeBible })
                 .FirstOrDefaultAsync(ct);
             if (node == null) return null;

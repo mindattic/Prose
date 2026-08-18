@@ -38,7 +38,7 @@ public static class CharacterMapper
     public static List<CharacterData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Characters.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "character"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "character"),
                 ch => ch.Id, e => e.Id,
                 (ch, e) => new { Id = ch.Id, Name = e.Name, Role = ch.Role, LifeStatus = ch.LifeStatus, Rating = ch.Rating, VoteCount = ch.VoteCount })
             .ToList();
@@ -78,7 +78,7 @@ public static class CharacterMapper
 
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "character")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -156,7 +156,7 @@ public static class CharacterMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "character")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "character"))
             .Select(e => e.Id)
             .ToHashSet();
         if (ids.Count == 0) return new();
@@ -1099,8 +1099,7 @@ public static class CharacterMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive
-                && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

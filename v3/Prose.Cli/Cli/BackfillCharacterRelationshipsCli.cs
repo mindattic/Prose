@@ -46,8 +46,7 @@ public static class BackfillCharacterRelationshipsCli
 
             var slug = WorldGraphService.Slugify(row.TargetName);
             var candidates = await db.Entities.AsNoTracking().IgnoreQueryFilters()
-                .Where(e => e.UniverseId == row.OwnerUniverseId && e.IsActive
-                    && (e.Name == row.TargetName || e.Slug == slug))
+                .Where(e => e.UniverseId == row.OwnerUniverseId && (e.Name == row.TargetName || e.Slug == slug))
                 .Select(e => e.Id)
                 .ToListAsync();
 
@@ -95,28 +94,28 @@ public static class BackfillCharacterRelationshipsCli
     {
         var charHit = await db.Characters.AsNoTracking().IgnoreQueryFilters()
             .Where(c => c.Aliases.Any(a => a.Value == name))
-            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId && e.IsActive),
+            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId),
                 c => c.Id, e => e.Id, (c, e) => e.Id)
             .ToListAsync();
         if (charHit.Count > 0) return charHit;
 
         var placeHit = await db.Places.AsNoTracking().IgnoreQueryFilters()
             .Where(p => p.Aliases.Any(a => a.Value == name))
-            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId && e.IsActive),
+            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId),
                 p => p.Id, e => e.Id, (p, e) => e.Id)
             .ToListAsync();
         if (placeHit.Count > 0) return placeHit;
 
         var factionHit = await db.Factions.AsNoTracking().IgnoreQueryFilters()
             .Where(f => f.Aliases.Any(a => a.Value == name))
-            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId && e.IsActive),
+            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId),
                 f => f.Id, e => e.Id, (f, e) => e.Id)
             .ToListAsync();
         if (factionHit.Count > 0) return factionHit;
 
         return await db.Weapons.AsNoTracking().IgnoreQueryFilters()
             .Where(w => w.Aliases.Any(a => a.Value == name))
-            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId && e.IsActive),
+            .Join(db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.UniverseId == universeId),
                 w => w.Id, e => e.Id, (w, e) => e.Id)
             .ToListAsync();
     }

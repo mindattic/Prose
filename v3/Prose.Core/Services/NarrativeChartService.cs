@@ -169,7 +169,7 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
                 .FirstOrDefaultAsync(ct);
             var allGoalsLower = string.Join(" ", beatRows.Select(b => b.Description ?? "")).ToLowerInvariant();
             var entityChars = await db.Entities.AsNoTracking()
-                .Where(e => e.IsActive && e.UniverseId == universeId
+                .Where(e => e.UniverseId == universeId
                          && (e.EntityType == "character" || e.EntityType == "person"))
                 .Select(e => e.Name)
                 .ToListAsync(ct);

@@ -74,7 +74,8 @@ public static class BookTokCli
             var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
             var paths     = services.GetRequiredService<IPathProvider>();
             await using var db = await dbFactory.CreateDbContextAsync();
-            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
             if (node == null)
             {
                 Console.Error.WriteLine($"[booktok] Node '{slug}' not found.");
@@ -130,7 +131,8 @@ public static class BookTokCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var paths     = services.GetRequiredService<IPathProvider>();
         await using var db = await dbFactory.CreateDbContextAsync();
-        var row = await db.Nodes.FirstOrDefaultAsync(n => n.Slug == slug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var row = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug);
         if (row == null) return;
 
         row.BookTokVideoPath        = Path.GetRelativePath(paths.MediaDir, finalVideoPath);

@@ -205,7 +205,7 @@ public class NewsRelationalParityTests
                 Name       = src.Headline,
                 Slug       = WorldGraphService.Slugify(src.Headline),
                 Status     = "canon",
-                IsActive   = true,
+                
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             });

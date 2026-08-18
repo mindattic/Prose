@@ -41,7 +41,7 @@ public class RepositoryDefinitionService
     public int CountInCurrentUniverse(string slug)
     {
         using var db = dbFactory.CreateDbContext();
-        return db.Entities.AsNoTracking().Count(e => e.EntityType == slug && e.IsActive);
+        return db.Entities.AsNoTracking().Count(e => e.EntityType == slug);
     }
 
     /// <summary>

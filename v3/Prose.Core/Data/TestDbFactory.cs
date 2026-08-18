@@ -159,7 +159,6 @@ public static class TestDbFactory
                             Description = description,
                             CreatedAt = DateTime.UtcNow,
                             ModifiedAt = DateTime.UtcNow,
-                            IsActive = true,
                         });
                         db.Records.Add(new Entities.Record { EntityId = id, Json = raw, UpdatedAt = DateTime.UtcNow });
 

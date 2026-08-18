@@ -34,7 +34,7 @@ public static class GenemodMapper
     public static List<GenemodData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Genemods.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "genemod"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "genemod"),
                 g => g.Id, e => e.Id,
                 (g, e) => new { g.Id, Name = e.Name, g.Category, g.Rating, g.VoteCount })
             .ToList();
@@ -75,7 +75,7 @@ public static class GenemodMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "genemod")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "genemod" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "genemod"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -253,7 +253,7 @@ public static class GenemodMapper
         };
 
         var genemodEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "genemod" && e.IsActive)
+            .Where(e => e.EntityType == "genemod")
             .Select(e => e.Id)
             .ToHashSet();
 

@@ -16,7 +16,7 @@ namespace Prose.Core.Services;
 // services independently parsed the same CRAFT.md §8 rules, and the checklist's per-beat,
 // hash-cached implementation is the more complete one. No historical backlog existed under
 // CraftAudit at the time of the merge, so the value was removed rather than kept for history.
-public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, SemanticDrift, StructuralFailure, Liberty, Causality, Interpersonal, AffectBehavior, Xray, BookAudit, StoryScope, Craft, Other }
+public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, SemanticDrift, StructuralFailure, Liberty, Causality, Interpersonal, AffectBehavior, Xray, BookAudit, StoryScope, Craft, EntityDrift, Other }
 public enum FindingSeverity { Low, Medium, High }
 public enum FindingStatus   { New, Triaged, Applied, Dismissed }
 

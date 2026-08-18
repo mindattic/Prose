@@ -42,7 +42,7 @@ public class WeaponAmmoLinkerService
 
         // Load all ammunition entities: id + name + short description.
         var ammoList = await db.Entities
-            .Where(e => e.EntityType == "ammunition" && e.IsActive)
+            .Where(e => e.EntityType == "ammunition")
             .Select(e => new { e.Id, e.Name, e.Description, e.UniverseId })
             .ToListAsync(ct);
 
@@ -66,7 +66,7 @@ public class WeaponAmmoLinkerService
             .ToListAsync(ct);
 
         var weapons = await db.Entities
-            .Where(w => w.EntityType == "weapon" && w.IsActive && !linkedWeaponIds.Contains(w.Id))
+            .Where(w => w.EntityType == "weapon" && !linkedWeaponIds.Contains(w.Id))
             .Select(w => new { w.Id, w.Name, w.Description, w.UniverseId })
             .ToListAsync(ct);
 

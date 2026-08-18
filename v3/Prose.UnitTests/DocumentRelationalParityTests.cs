@@ -187,7 +187,7 @@ public class DocumentRelationalParityTests
                 Name       = src.FileName,
                 Slug       = WorldGraphService.Slugify(src.FileName),
                 Status     = "canon",
-                IsActive   = true,
+                
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             });

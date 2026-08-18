@@ -65,8 +65,13 @@ public static class NarrationText
     /// </summary>
     public static string Clean(string raw)
     {
+        // 0. Strip inline entity-GUID tags (corpus-trust-recovery Phase 1a) — an ElevenLabs/local
+        // TTS voice would otherwise literally speak the tag markup aloud, a real listener-facing
+        // regression, not just tooling noise.
+        var s = BeatMarkup.StripEntityTags(raw);
+
         // 1. Strip beat markers (<!-- beat:N:id -->)
-        var s = beatMarker.Replace(raw, "");
+        s = beatMarker.Replace(s, "");
 
         // 2. Strip markdown headings
         s = markdownHeading.Replace(s, "");

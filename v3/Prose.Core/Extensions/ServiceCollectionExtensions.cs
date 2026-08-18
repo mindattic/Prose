@@ -454,9 +454,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<IBookRepository>(sp => new BookRepository(
             sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<BookRepository>>()));
-        services.AddSingleton<ISeriesRepository>(sp => new SeriesRepository(
-            sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<SeriesRepository>>()));
         services.AddSingleton<WorldStateService>(sp =>
         {
             var ws = new WorldStateService(
@@ -494,7 +491,6 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<IAudioStore>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<NodeWorkbenchService>>(),
             sp.GetService<SettingsService>(),
-            sp.GetRequiredService<EntityRamificationService>(),
             sp.GetRequiredService<PostBeatValidationService>(),
             blastRadius: sp.GetRequiredService<BlastRadiusService>(),
             logicSweep: sp.GetRequiredService<Prose.Core.Services.Audit.LogicSweepService>()));
@@ -644,6 +640,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CoverPromptService>();
         services.AddSingleton<CoverTitleCompositorService>();
         services.AddSingleton<CoverImageService>();
+        services.AddSingleton<BookEntityReconciliationService>();
 
         // BookTok video providers (kling/runway/sora) — same named-client + singleton +
         // AddSingleton<TInterface> pattern as the cover-image providers above.

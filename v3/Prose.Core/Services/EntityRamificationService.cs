@@ -141,7 +141,7 @@ public class EntityRamificationService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         var entities = await db.Entities
-            .Where(e => e.IsActive && e.Name != "")
+            .Where(e => e.Name != "")
             .Select(e => new { e.Id, e.Name, e.EntityType })
             .ToListAsync(ct);
 

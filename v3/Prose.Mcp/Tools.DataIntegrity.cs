@@ -170,7 +170,6 @@ public class DataIntegrityTools(
                     id = c.Id,
                     name = c.Name,
                     originNodeId = c.OriginNodeId,
-                    isActive = c.IsActive,
                     descriptionSnippet = c.DescriptionSnippet,
                     mentionCount = c.MentionCount,
                 }),

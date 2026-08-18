@@ -46,7 +46,7 @@ public class SelfHealLedgerServiceTests
         var runId = Guid.NewGuid();
         var mutations = new List<RowMutationUndo>
         {
-            new("update", "Entities", "Id", Guid.NewGuid().ToString(), new Dictionary<string, string?> { ["IsActive"] = "1" }),
+            new("delete", "Entities", "Id", Guid.NewGuid().ToString(), new Dictionary<string, string?> { ["Name"] = "Test Merged Entity", ["EntityType"] = "character" }),
         };
 
         var actionId = await svc.LogAsync(runId, sequence: 1, nodeId: null, "entity-merge", mutations, "test merge");
@@ -57,7 +57,7 @@ public class SelfHealLedgerServiceTests
         Assert.That(row.ActionType, Is.EqualTo("entity-merge"));
         Assert.That(row.TargetTable, Is.EqualTo("Entities"));
         Assert.That(row.UndoneAt, Is.Null);
-        Assert.That(row.BeforeStateJson, Does.Contain("IsActive"));
+        Assert.That(row.BeforeStateJson, Does.Contain("EntityType"));
     }
 
     [Test]

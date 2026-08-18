@@ -42,7 +42,7 @@ public class ContinuityApplyServiceLocateRecordTests
         db.Entities.Add(new Entity
         {
             Id = id, EntityType = entityType, Name = name, Slug = name.ToLowerInvariant(),
-            Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow, IsActive = true,
+            Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow, 
         });
         db.Records.Add(new Record { EntityId = id, Json = "{}", UpdatedAt = DateTime.UtcNow });
         await db.SaveChangesAsync();

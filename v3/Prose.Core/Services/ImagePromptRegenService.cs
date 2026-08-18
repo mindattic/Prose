@@ -58,7 +58,7 @@ public class ImagePromptRegenService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var ids = await db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "character" && e.IsActive)
+            .Where(e => e.EntityType == "character")
             .Select(e => e.Id)
             .ToListAsync(ct);
 
@@ -230,7 +230,7 @@ public class ImagePromptRegenService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var ids = await db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "character" && e.IsActive)
+            .Where(e => e.EntityType == "character")
             .Select(e => e.Id)
             .ToListAsync(ct);
 

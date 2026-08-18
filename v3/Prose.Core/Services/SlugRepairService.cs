@@ -108,7 +108,6 @@ public class SlugRepairService(
         ProseDbContext db, bool apply, List<SlugChange> changes, List<string> warnings, CancellationToken ct)
     {
         var rows = await db.Entities.IgnoreQueryFilters()
-            .Where(e => e.IsActive)
             .OrderBy(e => e.CreatedAt)
             .ToListAsync(ct);
 

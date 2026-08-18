@@ -73,7 +73,7 @@ public class DocContextEntityDocCollisionTests
         db.Entities.Add(new Entity
         {
             Id = entityId, EntityType = "character", Name = slug, Slug = slug,
-            UniverseId = universeId, IsActive = true, OriginNodeId = originNodeId,
+            UniverseId = universeId,  OriginNodeId = originNodeId,
         });
         db.MarkdownFiles.Add(new MarkdownFile
         {

@@ -29,7 +29,7 @@ public static class EquipmentMapper
     public static List<EquipmentData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.EquipmentItems.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "equipment"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "equipment"),
                 eq => eq.Id, e => e.Id,
                 (eq, e) => new { eq.Id, Name = e.Name, eq.Category, eq.Rating, eq.VoteCount })
             .ToList();
@@ -70,7 +70,7 @@ public static class EquipmentMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "equipment")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "equipment" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "equipment"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -321,7 +321,7 @@ public static class EquipmentMapper
 
         // Minimal rows for blob-free ACTIVE entities that have no relational row yet.
         var activeEquipIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "equipment" && e.IsActive)
+            .Where(e => e.EntityType == "equipment")
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -360,8 +360,7 @@ public static class EquipmentMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive
-                && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

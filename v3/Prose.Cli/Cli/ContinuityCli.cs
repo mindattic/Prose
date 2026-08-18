@@ -171,7 +171,8 @@ public static class ContinuityCli
             Guid nodeId;
             if (!Guid.TryParse(nodeRef, out nodeId))
             {
-                var found = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == nodeRef);
+                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+                var found = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == nodeRef);
                 if (found == null) return Fail($"node not found: {nodeRef}");
                 nodeId = found.Id;
             }
@@ -292,7 +293,7 @@ public static class ContinuityCli
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             recordEntities = await db.Entities.AsNoTracking()
-                .Where(e => e.IsActive && entityKinds.Contains(e.EntityType))
+                .Where(e => entityKinds.Contains(e.EntityType))
                 .Select(e => new ValueTuple<Guid, string, string>(e.Id, e.Name, e.EntityType))
                 .ToListAsync();
         }

@@ -30,7 +30,7 @@ public static class PharmaceuticalMapper
     public static List<PharmaceuticalData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Pharmaceuticals.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "pharmaceutical"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "pharmaceutical"),
                 p => p.Id, e => e.Id,
                 (p, e) => new { p.Id, Name = e.Name, p.Category, p.Rating, p.VoteCount })
             .ToList();
@@ -71,7 +71,7 @@ public static class PharmaceuticalMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "pharmaceutical")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "pharmaceutical" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "pharmaceutical"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -293,7 +293,7 @@ public static class PharmaceuticalMapper
 
         // Minimal rows for blob-free ACTIVE entities.
         var activePharmaIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "pharmaceutical" && e.IsActive)
+            .Where(e => e.EntityType == "pharmaceutical")
             .Select(e => e.Id)
             .ToHashSet();
 

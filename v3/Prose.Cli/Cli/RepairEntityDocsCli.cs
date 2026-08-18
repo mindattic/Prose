@@ -40,7 +40,6 @@ public static class RepairEntityDocsCli
             .ToListAsync();
 
         var entities = await db.Entities.AsNoTracking().IgnoreQueryFilters()
-            .Where(e => e.IsActive)
             .Select(e => new { e.Slug, e.UniverseId })
             .ToListAsync();
 

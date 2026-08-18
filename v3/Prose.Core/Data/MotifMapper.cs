@@ -30,7 +30,7 @@ public static class MotifMapper
     public static List<MotifData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Motifs.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "motif"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "motif"),
                 m => m.Id, e => e.Id,
                 (m, e) => new { m.Id, Name = e.Name, m.Description })
             .ToList();
@@ -51,7 +51,7 @@ public static class MotifMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "motif")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "motif" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "motif"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -182,7 +182,7 @@ public static class MotifMapper
         };
 
         var motifEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "motif" && e.IsActive)
+            .Where(e => e.EntityType == "motif")
             .Select(e => e.Id)
             .ToHashSet();
 

@@ -92,7 +92,7 @@ public class EpisodeSeedService
     {
         var query = db.Entities
             .AsNoTracking()
-            .Where(e => e.EntityType == entityType && e.IsActive);
+            .Where(e => e.EntityType == entityType);
         if (!string.IsNullOrEmpty(excludeName))
             query = query.Where(e => e.Name != excludeName);
 

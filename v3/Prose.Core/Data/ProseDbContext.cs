@@ -1078,18 +1078,13 @@ public class ProseDbContext : DbContext
                 .IsUnique().HasDatabaseName("UX_Entities_Universe_Type_Slug");
             e.HasIndex(x => x.Slug);
             e.HasIndex(x => x.EntityType);
-            // Filtered index — most pages query active rows only; archived rows
-            // are still indexed by Slug + Type for restore flows.
-            e.HasIndex(x => new { x.EntityType, x.IsActive })
-                .HasFilter("[IsActive] = 1");
             // 23rd-century in-world creation date — supports "what was canon as of 2256-04-15".
             e.HasIndex(x => x.InWorldCreatedDate);
-            // "Recently modified" lists on dashboard / world-health / activity
-            // feeds order by ModifiedAt — filter on active so archived churn
-            // doesn't pollute the hot path.
+            // "Recently modified" lists on dashboard / world-health / activity feeds order by
+            // ModifiedAt. No filter needed — existence in the live table is the only signal of
+            // "current" (temporal-hygiene rule), so every indexed row is already current.
             e.HasIndex(x => x.ModifiedAt)
-                .HasDatabaseName("IX_Entities_ModifiedAt_Active")
-                .HasFilter("[IsActive] = 1");
+                .HasDatabaseName("IX_Entities_ModifiedAt");
             e.HasIndex(x => x.UniverseId);
             // Universe scoping (SS-LAW-15) — the single point that transitively scopes EVERY
             // entity type: EfRepository reads via Records→Entity, and the character read paths
@@ -1414,8 +1409,9 @@ public class ProseDbContext : DbContext
                 .WithMany()
                 .HasForeignKey(x => x.GearEntityId)
                 // NoAction avoids the multi-cascade-path conflict (this row
-                // already cascades from Characters → Entities). Entities are
-                // archived (IsActive=0), not deleted, so cleanup isn't needed.
+                // already cascades from Characters → Entities). Deleting a gear
+                // Entity still referenced here is blocked (EntityDeleteGuard)
+                // until the gear-ownership row is relinked or removed.
                 .OnDelete(DeleteBehavior.NoAction);
             e.HasIndex(x => new { x.CharacterId, x.Bucket, x.Position });
             // "Who owns weapon X" lookups need this; resolves to a real entity
@@ -1546,8 +1542,9 @@ public class ProseDbContext : DbContext
             e.HasOne(x => x.Character).WithMany(x => x.HomeTurfs)
                 .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
             // Restrict on the Place side: deleting a Place that's still referenced
-            // by a character would silently break the character's record. The
-            // archive flow (Entity.IsActive=false) is the right way to retire a place.
+            // by a character would silently break the character's record — blocked
+            // (EntityDeleteGuard) until the character's home-turf row is relinked
+            // or removed first.
             e.HasOne(x => x.Place).WithMany()
                 .HasForeignKey(x => x.PlaceId).OnDelete(DeleteBehavior.Restrict);
             e.HasIndex(x => new { x.CharacterId, x.Position });
@@ -2878,15 +2875,27 @@ public class ProseDbContext : DbContext
         "FlyoverEntities", "FlyoverEntityAliases", "FlyoverEntityKnownLocations", "FlyoverEntityStoryHooks",
         "Books", "BookProtagonists", "BookChapterOrder",
         "Chapters", "ChapterCharacters", "ChapterBeats",
-        // Beat / Node / BeatNode are deliberately NOT versioned. They used to be
-        // (see the RemoveBeatTemporalVersioning migration for the teardown) —
-        // that history mechanism is what let disabled-but-undeleted beats pile up
-        // across every past revision with no forcing function to reconcile them,
-        // which is exactly the "which beats are real" mess that made VIGL and
-        // BCODA unreadable. The policy now: a Beat/BeatNode row exists only if
-        // it is the live, current content. Superseded prose is captured once, in
-        // full, as an ArchivedBook markdown snapshot (see ArchivedBook), then the
-        // old rows are actually deleted — not versioned, not soft-disabled.
+        // Beat / Node / BeatNode — RE-ENABLED (2026-08-17). They were versioned once,
+        // then torn down (see the RemoveBeatTemporalVersioning migration) because
+        // BeatNodes.IsEnabled (an app-level soft-delete flag) disagreed with which row
+        // the temporal system considered "current," and some query paths JOINed
+        // BeatNodes_History back into live results to "fill in" rows the live table had
+        // marked disabled — resurrecting stale/disabled data into what was supposed to
+        // be a live view. That is the actual, narrow root cause, not "temporal tables
+        // are unsafe." It's already structurally fixed: IsEnabled was dropped from
+        // BeatNodes entirely (20260813053520_DropBeatNodeIsEnabled.cs) — existence in
+        // the live table is now the ONLY signal of "current." Two hard rules govern
+        // every table in this list, enforced by TemporalHygieneCli
+        // (`prose --check-temporal-hygiene`), not just documented here:
+        //   1. No IsEnabled/IsActive/IsDeleted-style status-flag column, ever, on any
+        //      table in this set. A row's presence in the live table IS the fact of
+        //      being current; nothing else may compete to assert that.
+        //   2. No application query (LINQ or raw SQL) ever joins a live table to its
+        //      own `{Table}_History` shadow. History exists solely for deliberate,
+        //      explicit `FOR SYSTEM_TIME AS OF` rewind/forensic lookups (see
+        //      WorldStateService.GetAtTimeAsync, MarkdownFileService's --as-of path) —
+        //      never unioned/joined into an ordinary "give me the current picture" query.
+        "Nodes", "Beats", "BeatNodes",
         "ContinuityClaims",
         "EntityStateEvents",
         "WeaponSpecs",
@@ -2902,6 +2911,13 @@ public class ProseDbContext : DbContext
         // recovered by timestamp.
         "NodeAmendments",
         "NodeSpineVersions",
+        // Canon docs (DCM static hierarchy layers 1-2, BIBLE.md/WORLD.md/GLMZ.md/SCRY.md source
+        // of truth) — edited via set_canon_section MCP. Found ungoverned 2026-08-17: MarkdownFiles
+        // (the downstream generated .md MIRROR of these rows) was already temporal, but the
+        // actual source-of-truth rows themselves were not — a canon-doc edit had no recoverable
+        // history at all, only its later-materialized mirror did. No status-flag columns present.
+        "CanonDocuments",
+        "CanonDocumentSections",
     };
 
     /// <summary>

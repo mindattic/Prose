@@ -375,7 +375,8 @@ public static class RunCorpusCli
         // Re-read to get the final title (bible generation may update it)
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Id == nodeId);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Id == nodeId);
             var title = s?.Title ?? working;
             var finalSlug = s?.Slug ?? slug;
             Console.WriteLine($"[run-corpus]   created: \"{title}\" ({finalSlug})");

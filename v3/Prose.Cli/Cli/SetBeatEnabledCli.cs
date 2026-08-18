@@ -58,7 +58,8 @@ public static class SetBeatEnabledCli
         Guid nodeId;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
             if (node == null) { Console.Error.WriteLine($"[set-beat-enabled] Node '{slug}' not found."); return 1; }
             nodeId = node.Id;
         }

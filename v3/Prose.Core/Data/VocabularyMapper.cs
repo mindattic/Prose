@@ -25,7 +25,7 @@ public static class VocabularyMapper
     public static List<VocabularyData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.VocabularyEntries.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "vocabulary"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "vocabulary"),
                 v => v.Id, e => e.Id,
                 (v, e) => new { v.Id, Name = e.Name, v.Category, v.Tier })
             .ToList();
@@ -61,7 +61,7 @@ public static class VocabularyMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "vocabulary")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "vocabulary" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "vocabulary"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -179,7 +179,7 @@ public static class VocabularyMapper
         };
 
         var vocabEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "vocabulary" && e.IsActive)
+            .Where(e => e.EntityType == "vocabulary")
             .Select(e => e.Id)
             .ToHashSet();
 

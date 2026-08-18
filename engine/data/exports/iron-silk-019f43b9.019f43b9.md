@@ -1,24 +1,28 @@
 # Iron & Silk
 
-_Three jobs. One source. One plan forty years in the making.
+_The crew that stopped a body-bank harvest thought they were done. They were wrong.
 
-When Rook's crew burned a body-bank in the GLMZ, they thought they were settling a debt. They were not. The registry they found in the wreckage — twenty-one names, blood-typed and archived — isn't a list of victims. It's a supply chain. And someone has been filling it for four decades.
+Months after burning Helix Biosystems, Rook and her team scattered into the Gray Zone's deep cover. But three separate jobs—a stolen data sculpture, a witness extraction, a civic-grid sabotage—converge on the same target: the Purification Protocol, a forty-year-old registry that the Lotus Syndicate has been quietly perfecting. Combined with a backdoor into the GLMZ's infrastructure, that registry becomes the blueprint for a systematic campaign to erase everyone the Syndicate deems impure. Not a weapon. A plan. Nearly complete.
 
-The job is stopping a genocide hidden inside the only institution that keeps medicine moving through the Gray Zone. Rook and Ekow Ato have nine days, two cover identities, a forty-year-old grudge that doesn't belong to either of them, and no play that doesn't cost something that can't be replaced.
+The crew reassembles to stop it. But the Lotus Syndicate is not a corporation you can burn down. It is the parallel government that keeps the Gray Zone alive—free clinics, protected markets, community order. Dismantle it and you starve the people who depend on it. Leave it alone and you enable a systematic purge running across two decades.
 
-The people at the end of that list are already scheduled.
+For the first time, Rook's arithmetic does not have a clean answer. Someone pays. The question is who—and whether saving thirty-two lives from a harvest means anything if you can't stop the forty-year machine that was always meant to replace them.
 
-IRON & SILK is a story about a supply chain that runs on people — and the two operatives who have nine days to close it._
+Approximately 301 pages and 6 hr 16 min to read._
 
-## Quiet Work
+The building manager was forty minutes behind schedule. She hadn't planned for forty free minutes.
 
-The building manager was forty minutes behind schedule. That was a gift, and Rook hadn't planned for gifts.
+She'd planned for the opposite: a twelve-minute window in the back stairwell, six minutes at the Level 9 panel, a clean exit through the Level 2 loading dock.
 
-She'd planned for the opposite: a twelve-minute window in the back stairwell, six minutes at the Level 9 panel, a clean exit through the Level 2 loading dock. Five minutes of margin per stage. Now she had forty free minutes because somebody was arguing about a materials delivery at the service entrance, and she spent them standing still in a maintenance alcove on Level 11 while the building ran itself without noticing her.
+Five minutes of margin per stage.
+
+Now she had forty free minutes because somebody was arguing about a materials delivery at the service entrance, and she spent them standing still in a maintenance alcove on Level 11 while the building ran itself without noticing her.
 
 The alcove smelled of thermal paste and stale air. The filter unit hadn't been serviced in a while.
 
-Z3 buildings all wore the same two faces. Marble and glass in the lobby. Copper rail fittings in the stairwells that clients could see. Then, past the access doors: cheap insulation wrap, three grades below what the permit out front promised, and conduit runs patched so many times you couldn't find the original work under the repairs. It wasn't a secret. It just wasn't the face the building showed.
+Z3 buildings all wore the same two faces. Marble and glass in the lobby. Copper rail fittings in the stairwells that clients could see. Then, past the access doors: cheap insulation wrap, three grades below what the permit out front promised, and conduit runs patched so many times you couldn't find the original work under the repairs.
+
+It wasn't a secret. It just wasn't the face the building showed.
 
 The rail on the landing below her was structural steel. The primer coat had never cured right, and rust was coming through at the weld joints in orange streaks. The iron wouldn't stay covered.
 
@@ -30,7 +34,7 @@ She didn't find him threatening. She found him professional. He left at eighteen
 
 The Level 9 panel was Civic-grade hardware in a private commercial building, which shouldn't have been possible. Civic panels belonged in public infrastructure — water nodes, neuretics relays, grid substations. They needed a higher-clearance threading key than commercial gear did. Somebody had installed one here because they wanted to believe their vault was safer than standard. They weren't wrong. They were just wrong about how much safer.
 
-Rook had bought the threading key two days ago from a gray-market broker Vox used. The handoff took forty-two seconds. She hadn't asked where he'd sourced it, and he hadn't offered.
+She had bought the threading key two days ago from a gray-market broker Vox used. The handoff took forty-two seconds. She hadn't asked where he'd sourced it, and he hadn't offered.
 
 The client's files were exactly where they should be: a five-year paper trail routing a materials buy through three shell companies, ending in money the client didn't want the civic auditors to see under their name. She copied the whole thing onto a half-centimeter wafer, reset the access log to how she'd found it, and was back in the stairwell by nineteen forty-four. Four minutes inside her buffer. Clean.
 
@@ -54,19 +58,29 @@ She didn't count it. She hadn't counted a payment like that in three months. It 
 
 Then she went to the diner.
 
----
+It was the third time. Third diner, third window over the same water, and she hadn't planned any of them. It had happened once, then again, and now the path was worn enough that she took it without meaning to.
 
-It was the third time. Third diner, third window over the same water, and she hadn't planned any of them. It had happened once, then again, and now the path was worn enough that she took it without deciding to.
+The booth was wood, the edge worn smooth where hands caught it on the way in.
 
-The booth was wood, the edge worn smooth where hands caught it on the way in. She took the seat with a view of both doors. Lately she'd started noticing when she made choices like that — the choice, and then herself making it. She wasn't sure what to do with the gap between the two. It seemed worth keeping.
+She took the seat with a view of both doors.
+
+Lately she'd started noticing when she made choices like that — the choice, and then herself making it.
+
+She wasn't sure what to do with the gap between the two.
+
+It seemed worth keeping.
 
 She ordered something hot without reading the menu. The server was young and good at his job, there when she needed him and gone when she didn't. He brought the food, filled her water, and left her to the window.
 
-The window was single-pane, no coating, the old kind that fogged at the corners and softened the lake into something that looked painted. The place could have afforded better glass. Some upgrades just never happened. It didn't matter. The lake was the lake through any window.
+The window was single-pane, no coating, the old kind that fogged at the corners and softened the lake into something that looked painted. The place could have afforded better glass. Some upgrades just never happened.
 
 She was fine.
 
-She'd kept a count since she was nineteen. It started as money — rates, hours, what was owed, what came in. In the zones you counted or you didn't last. Over the years the count picked up other things without her deciding: jobs, places, faces, rooms where things had gone one way instead of another. After Tidewell it started including names. Not as debt. Just names, present, going somewhere.
+She'd kept a count since she was nineteen. It started as money — rates, hours, what was owed, what came in. In the zones you counted or you didn't last.
+
+Over the years the count picked up other things without her deciding: jobs, places, faces, rooms where things had gone one way instead of another.
+
+After Tidewell it started including names. Not as debt. Just names, present, going somewhere.
 
 After Crimson the count had stopped running backward. It still ran. But now it ran forward, into time she hadn't reached yet. That was new, and she was still learning what it asked of her. She wasn't in a hurry about it.
 
@@ -90,9 +104,11 @@ The count ran forward. The lake was the same. She didn't know yet what tomorrow'
 
 Ferris reached her at seven the next morning, which was early for Ferris. She opened the channel anyway.
 
-Ferris worked out of Z3, a mid-tier fixer with good relationships in the collector and procurement markets. Clean, by the standards that mattered: nobody Rook knew had a grievance against them, and nobody she trusted had caught them side-dealing. She'd taken four jobs through Ferris in two years. All four paid what was agreed and closed without trouble. That made Ferris excellent. The early call was still unusual.
+Ferris worked out of Z3, a mid-tier fixer with good relationships in the collector and procurement markets. Clean, by the standards that mattered: nobody Rook knew had a grievance against them, and nobody she trusted had caught them side-dealing.
 
-"Art recovery," Ferris said. They gave briefs the same way every time — level, unhurried, facts in the order that made sense rather than the order that sounded dramatic. "A sculpture. A piece called Headcount, at a Z3 collector's market — the freight depot conversion on Meridian north. Stolen from the original buyer seven weeks ago by a consignment courier, who then went to ground. It surfaced twice on secondary market feeds before it landed where it is now. Anonymous client. Twelve thousand."
+She'd taken four jobs through Ferris in two years. All four paid what was agreed and closed without trouble. That made Ferris excellent. The early call was still unusual.
+
+"Art recovery," Ferris said. They gave briefs the same way every time — level, unhurried, facts in the order that made sense rather than the order that sounded dramatic. "A sculpture. A piece called Headcount, at a Z3 collector's market — the freight depot conversion on Meridian north. Stolen from the original buyer seven weeks ago by a consignment courier, who then went to ground. It surfaced twice on secondary market feeds before it landed where it is now. Anonymous client. Φ12,000."
 
 Rook was in her Z5 flat, forty minutes awake, coffee in hand. The morning light came through the east window at an angle that made her squint to read anything. She didn't move out of it. Moving took effort she'd rather spend elsewhere.
 
@@ -102,19 +118,21 @@ Rook was in her Z5 flat, forty minutes awake, coffee in hand. The morning light 
 
 "Valuable to who?"
 
-"Anonymous."  Ferris kept a hard line between what they knew and what they were cleared to say, and they kept it the same way every time. That was why she trusted them.
+"Anonymous." Ferris kept a hard line between what they knew and what they were cleared to say, and they kept it the same way every time. That was why she trusted them.
 
-"Twelve thousand for a courier recovery," she said.
+"Φ12,000 for a courier recovery," she said.
 
-"Twelve thousand," Ferris confirmed.
+"Φ12,000," Ferris confirmed.
 
-That was real money for a job described as simple. A courier recovery — find the piece, take it, deliver it — ran four to six thousand, depending on the security and the timeline. Twelve was more than double the top of that range. The overpay told her something. Either the client had money to burn and was buying speed and certainty, or the client had a specific reason to want someone whose work left no mess. Probably both.
+That was real money for a job described as simple. A courier recovery — find the piece, take it, deliver it — ran four to six thousand, depending on the security and the timeline. Twelve was double the top of that range. The overpay told her something. Either the client had money to burn and was buying speed and certainty, or the client had a specific reason to want someone whose work left no mess. Probably both.
 
-"Two prior locations," she said.
+"Two prior locations," she said. "Z6 secondary market, then a Z4 holding facility. Both confirmed at the time. The piece moved each time before the client's earlier recovery attempts finished."
 
-"Z6 secondary market, then a Z4 holding facility. Both confirmed at the time. The piece moved each time before the client's earlier recovery attempts finished." Ferris was quiet a moment. "You'd be the third attempt."
+Ferris was quiet a moment. "You'd be the third attempt."
 
-She turned that over. Two failed attempts meant either the piece was being actively moved by a seller who knew he was being traced, or the earlier crews had been slow and had spooked the holder into relocating. The current spot argued for the second. A Z3 freight depot wasn't where you stashed something you were flipping fast. It was where you displayed it and waited for buyers to come to you, on your terms, at your price. The collector had the sculpture and was holding out for a better offer.
+She turned that over. Two failed attempts meant either the piece was being actively moved by a seller who knew he was being traced, or the earlier crews had been slow and had spooked the holder into relocating. The current spot argued for the second.
+
+A Z3 freight depot wasn't where you stashed something you were flipping fast. It was where you displayed it and waited for buyers to come to you, on your terms, at your price. The collector had the sculpture and was holding out for a better offer.
 
 "Timeline," she said.
 
@@ -124,7 +142,7 @@ She turned that over. Two failed attempts meant either the piece was being activ
 
 "The physical piece, intact, to a Z3 drop point. Coordinates on signing. No need to pull the data layer — the piece carries everything."
 
-There it was. Don't extract the data. Return the housing. The data and the housing were the same object; you couldn't have one without the other. She let that sit.
+There it was. Don't extract the data. Return the housing. She let that sit.
 
 "Any engagement rules on personnel?" she asked.
 
@@ -132,37 +150,41 @@ There it was. Don't extract the data. Return the housing. The data and the housi
 
 She set her coffee down. The light had shifted a little as the sun climbed, and she could read the far corner of the room now without moving. Some friction solved itself if you waited.
 
-Simple work for good money. That sentence was true. It was also the sentence that came right before the jobs you studied hard afterward.
+"Simple work for good money." That sentence was true. It was also the sentence that came right before the jobs you studied hard afterward.
 
 What snagged wasn't the money or the anonymous client or the two failed attempts, though all three were worth noting. It was the data layer. Ferris had called it standard — artist-registration, provenance, certificate. That was the right vocabulary for documented art. Most pieces above a certain value carried that layer. There was no obvious reason to read the description as anything but accurate.
 
-Except nobody paid twelve thousand and made three attempts for a provenance chain.
+"Except nobody paid Φ12,000 and made three attempts for a provenance chain."
 
-The data layer was something else. She didn't know what. She'd find out when she was looking at it, and not before. Guessing from the outside was counting without the numbers.
+The data layer was something else. She didn't know what. She'd find out when she was looking at it, and not before.
 
 "Send the contract," she said.
 
-The file hit her neuretics queue in ninety seconds. She read it twice: standard recovery terms, Z3 drop coordinates, payment in two tranches — six thousand on signing, six thousand on delivery of the intact piece. A damage clause. A confidentiality clause covering the client's identity. All expected.
+The file hit her neuretics queue in ninety seconds. She read it twice: standard recovery terms, Z3 drop coordinates, payment in two tranches - Φ6,000 on signing, Φ6,000 on delivery of the intact piece. A damage clause. A confidentiality clause covering the client's identity. All expected.
 
-She signed. The first six thousand cleared at seven forty-one.
+She signed. The first Φ6,000 cleared at seven forty-one.
 
 She sat with her coffee another five minutes and let the job take its shape. She had the brief, the money, and a location: a north-end Z3 freight depot that had been something real and functional before the conversion market repurposed it into a venue whose bones were more interesting than whatever it now held.
 
-The collector wasn't moving. That was the first useful fact. The second was that two crews had confirmed the location and failed to close, which meant the collector had security and knew he was exposed. A professional display floor — cameras, staff, infrastructure. You didn't hit this as an extraction. You walked in as a buyer.
+The collector wasn't moving. That was the first useful fact. The second was that two crews had confirmed the location and failed to close, which meant the collector had security and knew he was exposed.
+
+A professional display floor — cameras, staff, infrastructure. You didn't hit this as an extraction. You walked in as a buyer.
 
 Which meant she needed Lace. And at least one more body on the perimeter. Which meant she was making calls today.
 
 She sent Ferris a short acknowledgment — *Confirmed. Beginning site assessment* — and closed the channel.
 
----
+Three hours later she was in a Z4 public records archive, pulling the permit history on the freight depot. The building had changed hands twice in five years. It ran now as mixed commercial: dealer showrooms on the lower two floors, private collection storage above.
 
-Three hours later she was in a Z4 public records archive, pulling the permit history on the freight depot. The building had changed hands twice in five years. It ran now as mixed commercial: dealer showrooms on the lower two floors, private collection storage above. One public entrance off the main street. A freight lane on the east face for large deliveries. A civic maintenance conduit under the north foundation that, per the record, hadn't been serviced in eight years.
+One public entrance off the main street. A freight lane on the east face for large deliveries. A civic maintenance conduit under the north foundation that, per the record, hadn't been serviced in eight years.
 
 The conduit was worth remembering. Unused infrastructure had uses.
 
 She paid for a coffee she didn't drink and walked out into the Z4 midday crowd. The lake showed to the south through a gap between two low-rise blocks, their facades still wearing the dark, iron-heavy finish of the era when Z4 was the edge of what Z3 would become. A cargo barge worked the far channel, small enough that distance flattened it to a mark on the water.
 
-She wasn't going to understand what she was really looking at until she had it in her hands. That was fine. Most jobs worked that way — the brief gave you the surface, the job gave you what was under it, and doing the work with enough care meant the gap didn't catch you off guard. It hadn't caught her off guard in a while. She meant to keep that record.
+She wasn't going to understand what she was really looking at until she had it in her hands. That was fine. Most jobs worked that way — the brief gave you the surface, the job gave you what was under it, and doing the work with enough care meant the gap didn't catch you off guard.
+
+It hadn't caught her off guard in a while. She meant to keep that record.
 
 She pulled up Lace's contact and thought about how to frame the ask. Art recovery, Z3 collector's market, buyer's cover. She'd offer the standard split for a two-person job of this size.
 
@@ -170,17 +192,27 @@ She sent the message and started toward the transit node.
 
 The Headcount sculpture. The data layer called the value. An anonymous client who'd made three attempts rather than write off the loss.
 
-She'd find out what it was. That was, in the end, the only way to find out what it was.
+She'd find out what it was.
 
 She walked the building first, because on foot was the right way to read this kind of target, and because she was already in Z3 with no reason to leave.
 
-The freight depot sat at the north end of the old logistics district, a block off the main arterial, filling most of a corner lot. Four stories, heavy-beam construction from the mid-2140s, the exterior stone still wearing the dark, iron-heavy finish of that decade — a building that had known exactly what it was before anyone tried to make it something else. The conversion had bolted a glass-and-composite entrance pavilion onto the street face and left the rest more or less alone. The bones showed.
+The freight depot sat at the north end of the old logistics district, a block off the main arterial, filling most of a corner lot. Four stories, heavy-beam construction from the mid-2140s, the exterior stone still wearing the dark, iron-heavy finish of that decade — a building that had known exactly what it was before anyone tried to make it something else. The conversion had bolted a glass-and-composite entrance pavilion onto the street face and left the rest more or less alone. The bones showed. That was the point.
 
-She walked the block twice at a normal pace. On the first pass she counted four exterior cameras — two on the pavilion, one at the corner, one at the freight lane. On the second pass she caught a fifth on the east face, mounted at an angle that broke standard coverage geometry. Whoever placed it understood that standard geometry left standard blind spots.
+She walked the block twice at a normal pace. On the first pass she counted four exterior cameras — two on the pavilion, one at the corner, one at the freight lane.
+
+On the second pass she caught a fifth on the east face, mounted at an angle that broke standard coverage geometry.
+
+Whoever placed it understood that standard geometry left standard blind spots.
 
 The fifth camera changed the math on the perimeter.
 
-She found a coffee point across the street, ordered something small, and watched the entrance for twenty minutes. Three buyers in and out — two clearly Z3 collectors, one from the Z4 bracket, all alone, all carrying nothing. Security at the door was one man in professional-civilian clothes that announced security without performing it: no uniform, no visible hardware, just the attentiveness of a man paid to be attentive. Through the glass she could see a second staffer at a reception desk.
+She found a coffee point across the street, ordered something small, and watched the entrance for twenty minutes.
+
+Three buyers in and out — two clearly Z3 collectors, one from the Z4 bracket, all alone, all carrying nothing.
+
+Security at the door was one man in professional-civilian clothes that announced security without performing it: no uniform, no visible hardware, just the attentiveness of a man paid to be attentive.
+
+Through the glass she could see a second staffer at a reception desk.
 
 Two visible. Probably more not.
 
@@ -188,9 +220,13 @@ She counted up what the job needed, and it came to four people.
 
 She'd already messaged Lace. The job needed a buyer — someone who could walk in as a legitimate client with provenance papers and real interest in the Headcount piece, and move through that floor without drawing the attention an extraction team drew. Lace could do that in her sleep.
 
-It needed Vox. The camera network, the collector's background, the piece's market history, whoever had already made offers — all of that was intelligence work to do before anyone walked in. Going in blind on a piece two crews had already chased was the kind of mistake she had no interest in making.
+It needed Vox. The camera network, the collector's background, the piece's market history, whoever had already made offers — all of that was intelligence work to do before anyone walked in.
 
-It needed Scout on the exterior. The fifth camera made the perimeter too complex for one watcher, and Scout could work the building's systems from outside. A security feed that suddenly ran a thirty-second loop at a bad moment was hard for most guards to catch fast. It bought time.
+Going in blind on a piece two crews had already chased was the kind of mistake she had no interest in making.
+
+It needed Scout on the exterior. The fifth camera made the perimeter too complex for one watcher, and Scout could work the building's systems from outside.
+
+A security feed that suddenly ran a thirty-second loop at a bad moment was hard for most guards to catch fast. It bought time.
 
 And it needed Boiler on the freight lane. Not because the lane was likely to be an exit. Because if the job went sideways, having Boiler positioned to manage the outside meant options. Options weren't the same as knowing what would happen. Options were what you built instead of knowing.
 
@@ -200,11 +236,13 @@ She finished the coffee and admitted the job had stopped being simple the moment
 
 She walked away from the coffee point and pulled up Scout's contact.
 
-Scout answered on the second pulse. "Working," she said, which was how Scout answered mid-task, and she always answered.
+Scout answered on the second pulse.
+
+"Working," she said, which was how Scout answered mid-task, and she always answered.
 
 "Z3 job," Rook said. "Art recovery. I need exterior threading and perimeter on a four-story freight conversion. The camera network on the east face has a non-standard placement."
 
-"When?"
+"When?" asked Scout.
 
 "Not yet. Assembly first. Two days minimum before I'm in the building."
 
@@ -212,7 +250,9 @@ Scout answered on the second pulse. "Working," she said, which was how Scout ans
 
 "Lace inside. Vox on intel. Probably Boiler on the freight lane."
 
-A pause. "Full crew."
+A pause.
+
+"Full crew."
 
 "The job needs it."
 
@@ -220,19 +260,25 @@ A pause. "Full crew."
 
 Rook closed the channel.
 
-She was three blocks from the transit node. She walked without hurry, turning the crew over as a problem — assignments, comms, exits, what each person needed to be able to do their part. Ordinary assembly work. The same work she'd done before every crew job for seven years.
+She was three blocks from the transit node. She walked without hurry, turning the crew over as a problem — assignments, comms, exits, what each person needed to be able to do their part.
+
+Ordinary assembly work. The same work she'd done before every crew job for seven years.
 
 The tally had come together fast — Lace, Vox, Scout, Boiler — each name arriving with its job already attached, the crew arranging itself in her head without hesitation. That was familiarity with their skills. Nothing more. She wasn't glad to be calling them. She was noting a requirement and meeting it.
-
----
 
 She sent Vox a short message and got a reply eleven minutes later: *Working. Send the target particulars.*
 
 She sent them: the address, the camera count including the odd fifth, the two confirmed staff positions, the piece's market history from Ferris. Vox would have more within a few hours — the collector's background, current market feeds, any Thorn activity in the Z3 north end that might complicate things.
 
-The Thorn thought was automatic. Old Harbor was Z6, and the Thorns were Old Harbor's enforcement, but their reach ran through Z5 and Z6 and into the buffer zones. If the collector's market touched Lotus-adjacent networks — distribution, debt, supply — there might be ambient Thorn interest in the building that had nothing to do with Headcount and everything to do with making a clean job less clean. She left the thought there. Vox would know or would find out.
+The Thorn thought was automatic. Old Harbor was Z6, and the Thorns were Old Harbor's enforcement, but their reach ran through Z5 and Z6 and into the buffer zones. If the collector's market touched Lotus-adjacent networks — distribution, debt, supply — there might be ambient Thorn interest in the building that had nothing to do with Headcount and everything to do with making a clean job less clean.
 
-She messaged Boiler. He took longer than the others. He was on a renovation contract in Z5/Z6 that he'd mentioned three weeks back, with the brief specificity he used for things he wanted her to know were legitimate. She hadn't asked for more. He had a right to renovation contracts. That she kept wondering how it was going was her business, not his.
+She left the thought there. Vox would know or would find out.
+
+She messaged Boiler. He took longer than the others.
+
+He was on a renovation contract in Z5/Z6 that he'd mentioned three weeks back, with the brief specificity he used for things he wanted her to know were legitimate.
+
+She hadn't asked for more. He had a right to renovation contracts. That she kept wondering how it was going was her business, not his.
 
 His reply came at fourteen forty: *Good timing. Looking for something to do this week. Send the brief.*
 
@@ -244,7 +290,7 @@ The lake wind again. The same one she'd turned her collar against the night befo
 
 She had a target, a contract, and the outline of a crew. The briefing needed Vox's intelligence before it was complete. Two days was probably right; she'd told Scout two days and would hold to it.
 
-What she didn't have was a read on the anonymous client. Twelve thousand and three attempts for a piece with a data layer called standard. The framing bothered her the way a detail bothers you when it's accurate and incomplete at the same time — not a lie, not the truth.
+What she didn't have was a read on the anonymous client. Φ12,000 and three attempts for a piece with a data layer called standard. The framing bothered her the way a detail bothers you when it's accurate and incomplete at the same time — not a lie, not the truth.
 
 She'd have the piece in her hands when they took it. She could look at the data layer then. Before delivery.
 
@@ -258,27 +304,141 @@ She stood and joined the platform queue. The boarding light was green. Three sto
 
 She sent Lace a follow-up: *Full crew. Market approach. Two days. I'll send the building schematic tonight.*
 
-Lace's reply was a single word. She'd expected that. Lace used exactly as many words as a thing required, and when it required few she sent few.
+Lace's reply was a single word. She'd expected that.
 
-Four people. A Z3 collector's market with a strange camera on the east face. An anonymous client with deep pockets and two failures. A sculpture called Headcount with a data layer worth three attempts at twelve thousand each.
+Four people. A Z3 collector's market with a strange camera on the east face. An anonymous client with deep pockets and two failures. A sculpture called Headcount with a data layer worth three attempts at Φ12,000 each.
 
 The job wasn't what the brief said it was. That was a hypothesis. She'd test it.
 
 She boarded and took a window seat. Three stops to home. The number and the job didn't sit flush, and they wouldn't until the piece was in her hands. She could wait for that part. She was good at waiting for the part that told her what she was actually holding.
 
-## Vox at Four
+Rook had been here enough to know the room's logic. Vox left some cable runs bolted down and some coiled and ready. She sorted her gear by a system that wasn't organizational in any normal sense but was, Rook had decided, organizational in a personal one. The room made sense to Vox and to nobody else.
 
-Rook had been here enough to know the room's logic. Vox left some cable runs bolted down and some coiled and ready. She sorted her gear by a system that wasn't organizational in any normal sense but was, Rook had decided, organizational in a personal one. The room made sense to Vox and to nobody else.\n\nShe arrived at nine the next morning. Vox let her in without ceremony and went back to her chair, which faced a bank of screens running four live feeds at once. Data streams of some kind. From the door Rook couldn't read the content, only that there were four of them, each updating at its own rhythm.\n\n"The collector," Vox said, before Rook had even sat down, "is Yusuf Tran-Okonkwo. Z3 collector for eleven years. Legitimate market activity — he registers purchases, files provenance chains, pays the civic fees serious collectors pay to keep their standing. About thirty pieces, mostly GLMZ work from the last twenty years. Mid-market, good taste, no major flags." She slid one feed aside and opened another. "The piece moved through a Z4 primary dealer eight weeks ago. Sixty-two hundred, close to market for its category. The courier who stole it worked for a Z4 logistics firm that's since let her go — which is how you handle a theft you don't want to file civic paper on."\n\nRook took the visitor's chair, the one Vox kept positioned for a single correct guest and never moved. "The courier's gone to ground."\n\n"Completely. I found one secondary feed that might be her, selling on a Z6 market three weeks ago, but I can't confirm it. May not matter. The piece is with Tran-Okonkwo and has been for four weeks. So the courier sold it to him, or to someone who sold it to him." She scrolled. "He knows it was stolen. He bought it anyway. That's a civic violation he's not going to report."\n\n"Which is why the client can't use official channels."\n\n"One reason." Vox looked up for the first time since Rook came in. The graze on her left forearm had been healed for two months now — the skin closed, a narrow strip of new tissue lighter than the old. She moved her arm the same as always, no favoring it. The wound was gone. "What I can tell you is that Headcount doesn't show up anywhere public as a data-art piece. It's registered with the civic arts authentication system as a physical-digital hybrid in standard provenance format. No marker for embedded data beyond the usual certificate."\n\n"But."\n\n"But the full certificate chain references a data schema I don't recognize as an art-attribution standard. I ran it against the civic grid's published schema library. It matches civic demographic registry format. Population data. Migration, residency, heritage cross-sections."\n\nThe room went quiet. The four feeds ran their separate rhythms.\n\n"Who produces that schema?" Rook asked.\n\n"The civic grid, for official census work. A few approved research institutions can request access. And anyone with gray-market access to the schema library." Vox's voice was level. She hadn't performed the calm; she'd arrived at it through the work. "I can't tell you from outside the piece what the data is or where it came from. You'll have to open the data layer for that."\n\n"The client wants the piece intact," Rook said.\n\n"I know. I'm telling you what it is. Whether you open it before delivery is your call."\n\nShe took that in. She'd been right that the brief was incomplete, and now she could see the shape of the gap without yet knowing what it pointed at. Demographic data in a civic registry schema, hidden inside an art piece called Headcount. Anonymous client. Twelve thousand.\n\n"Any Thorn activity near the building?" she asked.\n\n"Nothing specific. Z3 north-end Thorn presence is low — the Lotus doesn't have real market interests up there, and the Thorns follow the money. You might catch ambient presence near the Z4 border, but nothing that should touch a clean acquisition." Vox paused, and this pause was lighter than the last. "The east-face camera is a Meridian HD-7. Good hardware. Scout should be able to thread the feed without much trouble. The model has a known handshake delay — half a second on forced reconnect."\n\n"How do you know the model?"\n\n"It's in the building permit files. They listed the security hardware in the installation filing." Vox allowed herself something that was almost a smile. "The Z3 permit office doesn't classify that."\n\nRook glanced at the four feeds. "You've been running at four for three months."\n\nVox looked at the screens. "Yes."\n\n"Not rebuilding to six."\n\n"No." She said it plainly, letting it be a fact and not a statement about anything larger.\n\n"Why four?"\n\nVox was quiet a moment — not reluctant, just choosing the words for something she'd already thought all the way through. "When I rebuilt the network after Crimson, I could have gone to six. The contacts were there. The capacity was recoverable." She looked at the four streams. "But at four channels, I was reading things I hadn't been reading at six. The narrower the band, the more you see inside it. At six you're covering ground. At four you're reading it."\n\nRook waited.\n\n"I could have gone back to six. I chose not to. Four isn't a limit I'm working around. It's a method I'm working with." She looked back at Rook. "The graze wasn't the reason. The graze was when I decided. The decision isn't the same as the reason."\n\nRook kept that. The line between the decision and the reason, between the accident that opened the door and the choice made once it was open. She didn't say so. Three months ago they hadn't been able to have a conversation that moved like this — that got somewhere, knew it had, and moved on. After Tidewell there'd been a friction between them she'd never fully named: not mistrust, not a grudge, more a gap between how each of them worked that needed translating, and neither had been doing the translating well. She didn't know when it had cleared. She only knew it had.\n\nThe conversation was easy now. She'd missed it without noticing she missed it, and now that it was back she was careful of it, the sideways way she was careful of most things that mattered.\n\n"Camera schedule on the entry pavilion?" she asked.\n\n"Standard twelve-minute rotation. There's a handoff between the pavilion camera and the corner unit that opens a four-second gap at the northeast angle, on a predictable interval." Vox sent the file to Rook's neuretics. "Scout can work with that."\n\n"I'll have her cross-reference." Rook stood. "I need the collector's buying pattern. How long he holds pieces before selling."\n\n"He holds one to three weeks, then lists on the secondary market. He's had Headcount four weeks. So he's waiting — either for a specific buyer, or for the price to come to him." Vox pulled up another file. "There's been one inquiry through a Z3 dealer network in the last ten days. I don't have the buyer's identity. It was flagged to Tran-Okonkwo through a private channel."\n\n"Someone else is interested."\n\n"Someone else has expressed interest. Whether they follow through is another thing. But the piece is live, and Tran-Okonkwo isn't holding out of sentiment."\n\nThe window was closing. A collector with a pending inquiry and a piece he'd sat on for four weeks might close before the crew was ready. She revised her timeline: two days was the outer edge now, not the estimate. She'd have to compress.\n\n"I'll confirm the crew briefing tomorrow," she said. "Can you have the full building layout by tonight?"\n\n"I have it now." Vox transferred a second file. "The permit records included structural schematics. Not real-time, but the building hasn't changed much in three years."\n\nRook paused at the door. The four feeds ran behind Vox's shoulder, each carrying its own signal at its own rate — knowing four things deeply instead of six things thinly.\n\n"Thank you," she said.\n\nVox had already turned back to the screens. "Send me the crew schedule when you have it."\n\nRook let herself out.\n\nIn the corridor she turned the Headcount data over as she walked. Fifteen years was the kind of span that built a full population picture — migration over long cycles, debt accumulating and clearing, heritage cross-sections pulled from neuretics registrations and civic filings. That wasn't data you embedded in an art piece to prove where it came from. That was data you embedded in an art piece to hide it somewhere nobody would look.\n\nAnd the anonymous client wanted it back.\n\nShe reached the stairwell and started down. The concrete held the building's cold, the iron-aggregate chill of old construction, the smell of fifty years of other people passing through. She kept her pace steady.\n\nShe'd look at the data layer. She'd decide about delivery after that.\n\nTwo days. Probably less.
+She arrived at nine the next morning. Vox let her in without ceremony and went back to her chair, which faced a bank of screens running four live feeds at once. Data streams of some kind. From the door Rook couldn't read the content, only that there were four of them, each updating at its own rhythm.
 
-The Gray Zone Data Cooperative had the second floor of a Z5/Z6 buffer building that used to be a civic records store. Somewhere in the last thirty years it had turned into the kind of mixed-use space the buffer zones grew when they'd been stable long enough for people to build things that weren't only for survival. The outside was standard ferrocement wave — dense, gray, textured, not pretending to be anything but load-bearing.
+"The collector," Vox said, before Rook had even sat down, "is Yusuf Tran-Okonkwo. Z3 collector for eleven years. Legitimate market activity — he registers purchases, files provenance chains, pays the civic fees serious collectors pay to keep their standing. About thirty pieces, mostly GLMZ work from the last twenty years. Mid-market, good taste, no major flags." She slid one feed aside and opened another. "The piece moved through a Z4 primary dealer eight weeks ago. Sixty-two hundred, close to market for its category. The courier who stole it worked for a Z4 logistics firm that's since let her go — which is how you handle a theft you don't want to file civic paper on."
 
-The ground floor was a community market. Rook walked through it: produce, household goods, repair stalls, the packed feel of a market that served regulars, not passing traffic. The prices were on physical signs. That was a buffer-zone habit rooted in the neuretics gap — not everyone here had mesh, not everyone's mesh was current, and a market that posted prices only in the Pulse registry was telling part of its own community it didn't fully exist.
+Rook took the visitor's chair, the one Vox kept positioned for a single correct guest and never moved.
 
+"The courier's gone to ground."
 
+"Completely. I found one secondary feed that might be her, selling on a Z6 market three weeks ago, but I can't confirm it. May not matter. The piece is with Tran-Okonkwo and has been for four weeks. So the courier sold it to him, or to someone who sold it to him." She scrolled. "He knows it was stolen. He bought it anyway. That's a civic violation he's not going to report."
+
+"Which is why the client can't use official channels?"
+
+"One reason." Vox looked up for the first time since Rook came in. The graze on her left forearm had been healed for two months now — the skin closed, a narrow strip of new tissue lighter than the old. She moved her arm the same as always, no favoring it. The wound was gone. "What I can tell you is that Headcount doesn't show up anywhere public as a data-art piece. It's registered with the civic arts authentication system as a physical-digital hybrid in standard provenance format. No marker for embedded data beyond the usual certificate."
+
+"But?"
+
+"But the full certificate chain references a data schema I don't recognize as an art-attribution standard. I ran it against the civic grid's published schema library. It matches civic demographic registry format. Population data. Migration, residency, heritage cross-sections."
+
+The room went quiet. The four feeds ran their separate rhythms.
+
+"Who produces that schema?" Rook asked.
+
+"The civic grid, for official census work. A few approved research institutions can request access. And anyone with gray-market access to the schema library." Vox's voice was level. She hadn't performed the calm; she'd arrived at it through the work. "I can't tell you from outside the piece what the data is or where it came from. You'll have to open the data layer for that."
+
+"The client wants the piece intact," Rook said.
+
+"I know. I'm telling you what it is. Whether you open it before delivery is your call."
+
+She took that in. She'd been right that the brief was incomplete, and now she could see the shape of the gap without yet knowing what it pointed at.
+
+Demographic data in a civic registry schema, hidden inside an art piece called Headcount. Anonymous client. Φ12,000.
+
+"Any Thorn activity near the building?" she asked.
+
+"Nothing specific. Z3 north-end Thorn presence is low — the Lotus doesn't have real market interests up there, and the Thorns follow the money. You might catch ambient presence near the Z4 border, but nothing that should touch a clean acquisition." Vox paused, and this pause was lighter than the last. "The east-face camera is a Meridian HD-7. Good hardware. Scout should be able to thread the feed without much trouble. The model has a known handshake delay — half a second on forced reconnect."
+
+"How do you know the model?" Rook asked.
+
+"It's in the building permit files. They listed the security hardware in the installation filing." Vox allowed herself something that was almost a smile. "The Z3 permit office doesn't classify that."
+
+Rook glanced at the four feeds.
+
+"You've been running at four for three months."
+
+Vox looked at the screens.
+
+"Yes."
+
+"Not rebuilding to six."
+
+"No." She said it plainly, letting it be a fact and not a statement about anything larger.
+
+"Why four?" Rook asked.
+
+Vox was quiet a moment — not reluctant, just choosing the words for something she'd already thought all the way through.
+
+"When I rebuilt the network after Crimson, I could have gone to six. The contacts were there. The capacity was recoverable." She looked at the four streams. "But at four channels, I was reading things I hadn't been reading at six. The narrower the band, the more you see inside it. At six you're covering ground. At four you're reading it."
+
+Rook waited.
+
+"I could have gone back to six. I chose not to. Four isn't a limit I'm working around. It's a method I'm working with." She looked back at Rook. "The graze wasn't the reason. The graze was when I decided. The decision isn't the same as the reason."
+
+Rook kept that. The line between the decision and the reason, between the accident that opened the door and the choice made once it was open. She didn't say so.
+
+Three months ago they hadn't been able to have a conversation that moved like this — that got somewhere, knew it had, and moved on. After Tidewell there'd been a friction between them she'd never fully named: not mistrust, not a grudge, more a gap between how each of them worked that needed translating, and neither had been doing the translating well. She didn't know when it had cleared. She only knew it had.
+
+The conversation was easy now. She'd missed it without noticing she missed it, and now that it was back she was careful of it, the sideways way she was careful of most things that mattered.
+
+"Camera schedule on the entry pavilion?" she asked.
+
+"Standard twelve-minute rotation. There's a handoff between the pavilion camera and the corner unit that opens a four-second gap at the northeast angle, on a predictable interval." Vox sent the file to Rook's neuretics. "Scout can work with that."
+
+"I'll have her cross-reference." Rook stood. "I need the collector's buying pattern. How long he holds pieces before selling?"
+
+"He holds one to three weeks, then lists on the secondary market. He's had Headcount four weeks. So he's waiting — either for a specific buyer, or for the price to come to him." Vox pulled up another file. "There's been one inquiry through a Z3 dealer network in the last ten days. I don't have the buyer's identity. It was flagged to Tran-Okonkwo through a private channel."
+
+"Someone else is interested."
+
+"Someone else has expressed interest. Whether they follow through is another thing. But the piece is live, and Tran-Okonkwo isn't holding out of sentiment."
+
+The window was closing. A collector with a pending inquiry and a piece he'd sat on for four weeks might close before the crew was ready. She revised her timeline: two days was the outer edge now, not the estimate. She'd have to compress.
+
+"I'll confirm the crew briefing tomorrow," she said. "Can you have the full building layout by tonight?"
+
+"I have it now." Vox transferred a second file. "The permit records included structural schematics. Not real-time, but the building hasn't changed much in three years."
+
+Rook paused at the door. The four feeds ran behind Vox's shoulder, each carrying its own signal at its own rate — knowing four things deeply instead of six things thinly.
+
+"Thank you," she said.
+
+Vox had already turned back to the screens.
+
+"Send me the crew schedule when you have it."
+
+Rook let herself out.
+
+In the corridor she turned the Headcount data over as she walked.
+
+Fifteen years was the kind of span that built a full population picture — migration over long cycles, debt accumulating and clearing, heritage cross-sections pulled from neuretics registrations and civic filings.
+
+That wasn't data you embedded in an art piece to prove where it came from. That was data you embedded in an art piece to hide it somewhere nobody would look.
+
+And the anonymous client wanted it back.
+
+She reached the stairwell and started down. The concrete held the building's cold, the iron-aggregate chill of old construction, the smell of fifty years of other people passing through. She kept her pace steady.
+
+She'd look at the data layer. She'd decide about delivery after that.
+
+Two days. Probably less.
+
+The Gray Zone Data Cooperative had the second floor of a Z5/Z6 buffer building that used to be a civic records store. Somewhere in the last thirty years it had turned into the kind of mixed-use space the buffer zones grew when they'd been stable long enough for people to build things that weren't only for survival.
+
+The outside was standard ferrocement wave — dense, gray, textured.
+
+The ground floor was a community market. Rook walked through it: produce, household goods, repair stalls, the packed feel of a market that served regulars, not passing traffic.
+
+The prices were on physical signs. That was a buffer-zone habit rooted in the neuretics gap — not everyone here had mesh, not everyone's mesh was current, and a market that posted prices only in the Pulse registry was telling part of its own community it didn't fully exist.
 
 The second floor was quieter, with the particular quiet of people doing work that took sustained attention. A hallway ran the length of it, rooms off either side: a legal consultation in one, health records filing in another, and at the end, a room with the door open where Scout sat at a temporary workstation. Three cable runs stretched from her setup to access points on the wall. A half-assembled crawler lay on the table beside her.
 
-Scout looked up. "The building packet was solid," she said, by way of hello. "The east camera's a Meridian HD-7. I can loop the reconnect handshake."
+Scout looked up.
+
+"The building packet was solid," she said, by way of hello.
+
+"The east camera's a Meridian HD-7. I can loop the reconnect handshake."
 
 "Vox confirmed the model," Rook said, stepping in.
 
@@ -288,7 +448,7 @@ The room had the feel of a space Scout had used for weeks but never claimed — 
 
 "Three weeks on this contract. The cooperative needs a full audit of their data threading. They've been running Z4 commercial threading on a Z5 civic budget, so the protocols don't match, and there are seven years of undocumented workarounds." Scout turned a crawler component over, checking a joint. "I'm documenting the workarounds first, so we know what's actually holding the system up before I touch anything."
 
-"What's holding it up?"
+"What's holding it up?" Rook asked.
 
 "Good judgment and maintained ignorance. The cooperative's threading admin keeps it running because he's never had to explain it to anyone. That's also why it's fragile." She set the component down. "Explaining the problem collapses the state."
 
@@ -297,21 +457,25 @@ On the secondary workstation — her personal unit, not the cooperative's — a 
 *Remi Diallo & Gerald*
 *Structural Data*
 
-Two lines. The name as a partnership, the ampersand carrying equal weight on both sides. Gerald in the same font, the same size. Not a footnote, not a title, not a qualifier. An equal partner on the card.
+Two lines. The name as a partnership, the ampersand carrying equal weight on both sides. Gerald in the same font, the same size. Not a footnote, not a title, not a qualifier.
 
 Rook looked at it for two seconds. She didn't ask.
 
 Scout hadn't said anything and didn't.
 
-Rook moved back to the job. "I need to compress the timeline. Vox found a pending inquiry on the piece. If the collector closes before we're set, we lose the window."
+Rook moved back to the job.
 
-"How much compression?"
+"I need to compress the timeline. Vox found a pending inquiry on the piece. If the collector closes before we're set, we lose the window."
+
+"How much compression?" Scout asked.
 
 "One day instead of two. Briefing tomorrow, operation the day after."
 
-Scout took it as a parameter, not a worry. "Then I need the full camera topology by tonight. And I need to know if there are secondary threading access points — utility conduits, maintenance crawlways. The freight lane has a civic conduit under the north foundation that hasn't been serviced in eight years."
+Scout took it as a parameter, not a worry.
 
-"I saw that in the permit history."
+"Then I need the full camera topology by tonight. And I need to know if there are secondary threading access points — utility conduits, maintenance crawlways. The freight lane has a civic conduit under the north foundation that hasn't been serviced in eight years."
+
+"I saw that in the permit history," Rook said.
 
 "There's usually leftover threading infrastructure in an old conduit — abandoned civic hardware from whatever the building was before. I can use it as a second way into the network if the east camera's the only exterior access. Two independent paths instead of one."
 
@@ -327,7 +491,7 @@ Scout opened it on the secondary display and scanned it the way she read technic
 
 Rook thought again, briefly, about the card — the way it faced outward instead of being filed or pocketed. She didn't ask.
 
-"Cover on the freight lane?" Rook said.
+"Cover on the freight lane?" Rook asked.
 
 "Maintenance contractor. I've got current credentials from a Z5 civic contractor registration I keep up." Scout was still on the schematic. "I'll bring the crawler case as a prop. A maintenance tech with a crawler case in a freight lane is nothing."
 
@@ -341,7 +505,9 @@ They'd split the positions without her having to mediate. She didn't comment. It
 
 "She has her own. She messaged me last night. She already knows the collector's market format — she's been in three Z3 venues in the last two months."
 
-Rook took that in. Lace kept current with the environments and people that kept her skills sharp, whether or not a specific job was coming. She'd been in Z3 collector's markets lately not because she knew about this job but because staying current was the practice.
+Rook took that in. Lace kept current with the environments and people that kept her skills sharp, whether or not a specific job was coming.
+
+She'd been in Z3 collector's markets lately not because she knew about this job but because staying current was the practice.
 
 "Who's running external comms?" Scout asked.
 
@@ -349,7 +515,9 @@ Rook took that in. Lace kept current with the environments and people that kept 
 
 Scout nodded. The right structure, and they both knew it: Vox as the external channel, watching the approach and anything developing from outside, relaying as needed. Four people, four functions.
 
-The room was quiet except for the push of the ventilation and the cooperative's threading working through the walls, documented and undocumented. Down the corridor a door opened and closed. Voices, then quiet again.
+The room was quiet except for the push of the ventilation and the cooperative's threading working through the walls, documented and undocumented.
+
+Down the corridor a door opened and closed. Voices, then quiet again.
 
 Then Scout's hands went still on the crawler.
 
@@ -357,11 +525,13 @@ Then Scout's hands went still on the crawler.
 
 "He's documenting the whole system with you. He'd know it was you."
 
-"He'd know it was me tonight, on a system I'm auditing, running a live access on a dormant conduit two days before an operation happens forty meters away." Her tone stayed flat, but she didn't look away from the map. "The state collapses. Not the network — the story. The reason I've been here three weeks is that nobody has to explain the workarounds. The second I trip that spine, someone has to. And the explanation for why I touched it doesn't exist yet, because on your timeline I don't have time to build one." She let the display sit between them. "Two paths in, or a cover that survives contact. On one day, I can't guarantee both. You compress, you pick which one I give up."
+"He'd know it was me tonight, on a system I'm auditing, running a live access on a dormant conduit two days before an operation happens forty meters away?" Her tone stayed flat, but she didn't look away from the map. "The state collapses. Not the network — the story. The reason I've been here three weeks is that nobody has to explain the workarounds. The second I trip that spine, someone has to. And the explanation for why I touched it doesn't exist yet, because on your timeline I don't have time to build one." She let the display sit between them. "Two paths in, or a cover that survives contact. On one day, I can't guarantee both. You compress, you pick which one I give up."
 
 Rook looked at the amber node and didn't answer right away.
 
-Scout had gone back to the half-assembled crawler, working the joint she'd been on when Rook arrived. Her hands moved with the economy of someone who'd done this so many times the routine took no attention, which freed the attention to go elsewhere. She was good at running two things at once. Present in the room, present in the task, and — Rook suspected — some part of her running on a thread somewhere else entirely. Not evasion. Just how Scout was built.
+Scout had gone back to the half-assembled crawler, working the joint she'd been on when Rook arrived. Her hands moved with the economy of someone who'd done this so many times the routine took no attention, which freed the attention to go elsewhere.
+
+She was good at running two things at once. Present in the room, present in the task, and — Rook suspected — some part of her running on a thread somewhere else entirely. Not evasion. Just how Scout was built.
 
 The card at the corner of the desk, turned toward the door.
 
@@ -371,7 +541,7 @@ Rook left it alone.
 
 "Tonight," Scout said, not looking up. "Or early tomorrow. I need to run a few test accesses on the building's HVAC to confirm the conduit threading is live."
 
-"You can do that from here?"
+"You can do that from here?" Rook asked.
 
 "I can do that from anywhere." Plain fact, the same register as everything else.
 
@@ -379,7 +549,11 @@ Rook had known Scout four years, and some things about how she worked she'd stop
 
 She said goodbye and left.
 
-In the corridor she passed the health records office, the door still cracked, someone inside speaking quietly in a language she didn't quite catch. The cooperative ran several kinds of real work off this floor — legal, data, health — services that weren't reliably available from the civic grid at this zone level. Scout was doing legitimate work here. That wasn't incidental.
+In the corridor she passed the health records office, the door still cracked, someone inside speaking quietly in a language she didn't quite catch.
+
+The cooperative ran several kinds of real work off this floor — legal, data, health — services that weren't reliably available from the civic grid at this zone level.
+
+Scout was doing legitimate work here. That wasn't incidental.
 
 She went down to the ground floor and back through the market. The produce stalls were busier now — a late-morning rush, people buying before the midday prices climbed. The physical price signs. The neuretics gap. The market serving the people who were actually there.
 
@@ -391,13 +565,19 @@ Briefing tomorrow. Operation the day after.
 
 She did not ask.
 
-Adaeze Nnodu-Park ran the Z5/Z6 Legal Cooperative out of the same building where Scout was doing her data audit, which was how Rook knew the building before she had a reason to. The cooperative had run for twelve years — long enough, in the buffer zones, to count as institutional weight. Adaeze's name showed up across three dozen civic disputes, fourteen challenges to Lotus debt structures, and two formal Civic Bureau petitions that had gone nowhere and been filed anyway, because putting a thing on the record wasn't the same as expecting the Bureau to act on it. She was, by every measure Rook could apply, someone who existed to push back on things without much hope of winning.
+Adaeze Nnodu-Park ran the Z5/Z6 Legal Cooperative out of the same building where Scout was doing her data audit, which was how Rook knew the building before she had a reason to.
+
+The cooperative had run for twelve years — long enough, in the buffer zones, to count as institutional weight. Adaeze's name showed up across three dozen civic disputes, fourteen challenges to Lotus debt structures, and two formal Civic Bureau petitions that had gone nowhere and been filed anyway, because putting a thing on the record wasn't the same as expecting the Bureau to act on it.
+
+She was, by every measure Rook could apply, someone who existed to push back on things without much hope of winning.
 
 The referral had come as a short message: *Ekow Ato. Former NGRA. Twelve years independent operations, Z5/Z6 adjacent. The Lotus footprint from inside. He is useful and I trust him within his parameters. I would not refer him if the parameters were not broad enough for what you need.*
 
 The word *parameters* was Adaeze being precise about what she was and wasn't saying. Useful within broad parameters wasn't a guarantee. It was a careful assessment from someone whose assessments Rook had no reason to discount.
 
-She met Ekow in a Z5 public space — a large transit waiting area near the south station, high ceilings, civic bench seating, the usual mid-morning crowd. He was already there. She picked him out before she saw his face.
+She met Ekow in a Z5 public space — a large transit waiting area near the south station, high ceilings, civic bench seating, the usual mid-morning crowd.
+
+He was already there. She picked him out before she saw his face.
 
 He was large — not in a way that took effort to fill space, but in a way that made space arrange itself around him without his doing anything. Seated, he was very still, and it wasn't the stillness of rest. It was the stillness of a body with a lot of force in it choosing, for now, not to use any. His hands rested on his knees. He watched the departure board with a genuinely neutral face.
 
@@ -413,11 +593,11 @@ He turned and looked at her then, the look of a man confirming an assessment he'
 
 "Adaeze briefed me on the job," he said. "Z3 collector's market. Art recovery. Anonymous client."
 
-"You have questions about the client."
+"You have questions about the client?"
 
 "I'll have questions when there are answers." He looked back at the board. "She said you needed someone who knew the Z5/Z6 Lotus presence."
 
-"The Z3 job may have Lotus-adjacent elements. I don't have confirmation yet. What I have is a sculpture with an embedded civic demographic registry schema, that the anonymous client paid twelve thousand to recover."
+"The Z3 job may have Lotus-adjacent elements. I don't have confirmation yet. What I have is a sculpture with an embedded civic demographic registry schema, that the anonymous client paid Φ12,000 to recover."
 
 Ekow was quiet a moment. "Demographic registry schema."
 
@@ -429,7 +609,7 @@ A short pause. Nothing moved in his face or his posture. But the pause had weigh
 
 "I know."
 
-"And you're going ahead because you need to see the data layer to know which."
+"And you're going ahead because you need to see the data layer to know which?"
 
 "Yes."
 
@@ -437,9 +617,15 @@ He nodded once. Apparently that was enough.
 
 "What do you need from me?" he asked.
 
-She laid out the configuration: Lace inside as a buyer, Vox on external intelligence, Scout threading the east camera from the freight lane, Boiler on the street perimeter. What she needed from him was the Z5/Z6 layer — the Lotus territory, the patrol patterns, the debt-network nodes that might connect to the collector's market through supply chains she hadn't traced. Any ambient Lotus activity in the Z3 north that Vox's channels might not have current data on. And, she told him, if the job grew past art recovery — if the data layer and the client turned out to be what she suspected — she'd need someone who could support operations in Z5/Z6 with intimate knowledge of the Lotus footprint.
+She laid out the configuration: Lace inside as a buyer, Vox on external intelligence, Scout threading the east camera from the freight lane, Boiler on the street perimeter.
 
-"How intimate," he said.
+What she needed from him was the Z5/Z6 layer — the Lotus territory, the patrol patterns, the debt-network nodes that might connect to the collector's market through supply chains she hadn't traced.
+
+Any ambient Lotus activity in the Z3 north that Vox's channels might not have current data on?
+
+And, she told him, if the job grew past art recovery — if the data layer and the client turned out to be what she suspected — she'd need someone who could support operations in Z5/Z6 with intimate knowledge of the Lotus footprint.
+
+"How intimate?" he asked.
 
 "The way you know the rooms of a house you've worked in for a long time."
 
@@ -461,7 +647,7 @@ She saw it and didn't ask.
 
 "All right." He looked at the board. "I'm in for the Z3 job. Whatever comes after, I'll decide when I'm looking at it."
 
-Her read on him was simple enough. Reliable, inside the frame he set for his reliability — and the frame was broad, broader than most, tested over twelve years in conditions that tested it at the foundations, and it had held. That wasn't the reliability of a man who'd never been tested. It was the rarer kind.
+Her read on him was simple enough. Reliable, inside the frame he set for his reliability — and the frame was broad, broader than most, tested over twelve years in conditions that tested it at the foundations, and it had held.
 
 He was also dangerous. Not to her — she read no threat off him, and her read was good. But as a fact of what he was: an NGRA background, twelve years of Lotus work, a combat frame built to tolerances she couldn't fully read from outside. The dangerous part and the reliable part were the same part. That wasn't a comfort. It was information.
 
@@ -469,11 +655,11 @@ He was reading her on the same scale. He hadn't said so, but the economy of his 
 
 "Briefing tomorrow afternoon," she said. "Full crew. I'll send the location."
 
-He took it with a nod. "Timeline on the data-layer decision?"
+He took it with a nod. "Timeline on the data-layer decision?" he asked.
 
 "After the acquisition. Before delivery."
 
-"And if the data is what you think it is?"
+"And if the data is what you think it is?" he asked.
 
 "Then I tell you what I found and we make the next decision together."
 
@@ -483,7 +669,7 @@ They sat another thirty seconds in a silence that was working silence, not awkwa
 
 He stood first. Six-plus feet, the stillness carrying into the motion. He stood the way he'd sat, without the drama a man his size could have made if he'd wanted to. He wasn't performing anything. He was moving.
 
-"I'll see the building schematic tonight," he said.
+"I'll see the building schematic tonight?" he said.
 
 "It's in your queue."
 
@@ -497,33 +683,199 @@ She didn't know what was in the accounting. She didn't need to know today.
 
 She stood and joined the transit flow.
 
-The building held the specific afternoon quiet of a working space where the work is real — not performance, not waiting, just active problem-solving in a medium that didn't allow shortcuts. She walked out through the east wing and looked at the ceiling joints, the 2178 pour overhead and the settlement visible if you knew how to look for it.
+Twenty minutes across Z4 got her to the cooperative building Boiler was renovating. The building held the specific afternoon quiet of a working space where the work was real — not performance, not waiting, just active problem-solving in a medium that didn't allow shortcuts.
 
-She stopped at the north stairwell, where the settlement she'd traced in the ceiling ran down into the corner joint Boiler had shown her. And she saw what she hadn't seen from the scaffold: the freight-lane geometry she'd just handed him ran the operation's escape path straight along the outside of this east wall. The same wall with the failure mode. The same wall that released under repeated dynamic stress at the right frequency. If the Z3 job went loud on the building side — if a personnel problem put sustained force against this structure while the freight corridor was running its schedule — Boiler would be holding a perimeter along the exact seam he'd spent six months learning could let go.
+She walked out through the east wing and looked at the ceiling joints, the 2178 pour overhead and the settlement visible if you knew how to look for it.
+
+She stopped at the north stairwell, where the settlement she'd traced in the ceiling ran down into the corner joint Boiler had shown her. And she saw what she hadn't seen from the scaffold: the freight-lane geometry she'd just handed him ran the operation's escape path straight along the outside of this east wall.
+
+The same wall with the failure mode. The same wall that released under repeated dynamic stress at the right frequency. If the Z3 job went loud on the building side — if a personnel problem put sustained force against this structure while the freight corridor was running its schedule — Boiler would be holding a perimeter along the exact seam he'd spent six months learning could let go.
 
 She could pull him back to the pure street angle and lose the one operator who could read whether the wall would hold under load. Or she could leave him on the geometry as briefed and put her structural specialist in the one position where his own diagnosis worked against him. She'd given him the job smoothly because it was the right job. She hadn't checked it against the thing he'd just taught her.
 
-She stood in the stairwell a moment longer, the settlement running down the corner past her hand, and made herself hold the problem instead of the answer. She would re-walk the freight lane before the briefing. If the geometry sat this close to the failure seam, the escape path changed, and she'd rebuild it before she asked anyone to stand on it.
+She stood in the stairwell a moment longer, the settlement running down the corner past her hand, and made herself hold the problem instead of the answer.
 
- She hadn't known there was a word for it until Boiler pressed her hand to a wall.
+She would re-walk the freight lane before the briefing. If the geometry sat this close to the failure seam, the escape path changed, and she'd rebuild it before she asked anyone to stand on it.
+
+She hadn't known there was a word for it until Boiler pressed her hand to a wall.
 
 On her way out through the ground floor, someone was setting out chairs for a class that met in the evening — dragging them into rows across a floor built to take the weight of a full room, a plain grid of them waiting to be sat in.
 
-## The Market Run
+From the street, the freight depot looked like someone had decided the best way to make industrial bones interesting was to not cover them. The original structure was intact: the loading-bay arches, the iron overhead crane track still running the length of the upper floor, the exposed cable conduit on the ceiling left in place as an aesthetic choice. The glass-and-composite entrance pavilion was the only addition that announced any change. The bones showed, and the bones were the point.
 
-From the street, the freight depot looked like someone had decided the best way to make industrial bones interesting was to not cover them. The original structure was intact: the loading-bay arches, the iron overhead crane track still running the length of the upper floor, the exposed cable conduit on the ceiling left in place as an aesthetic choice. The glass-and-composite entrance pavilion was the only addition that announced any change. The bones showed, and the bones were the point.\n\nRook was across the street, thirty meters south of the entrance, at a public seating node outside a transit stop. She had a sight line to the pavilion and none to the east face, which was Scout's. She wasn't in the building. The job didn't need her in the building.\n\n"Positions," she said, sub-vocal, into the team channel.\n\nBoiler confirmed from the street perimeter, north of the entrance at the block corner. Ekow confirmed from the south approach, covering the secondary route a fast exit might use. Scout confirmed from the freight lane — she'd been in place twenty minutes already and had threaded the east camera loop into the building's security network. The half-second reconnect window in the Meridian HD-7 handshake. She'd tested the loop twice without tripping any alert.\n\n"Building security's running the standard twelve-minute rotation," Scout said. "Two staff inside. The one at the entrance checked provenance on the last two buyers and logged it, so they're registering today's traffic. I've got the building's internal logging feed — they're not pushing to external civic storage. It's local only."\n\n"Local only means no civic record," Vox said, running her four channels from her Z4 workspace. "Tran-Okonkwo isn't filing a public transaction record for today's sales."\n\n"He's keeping the provenance internal," Rook said.\n\n"Yes. Consistent with a stolen acquisition. He knows what he has and knows the paper trail isn't in his favor, so he runs a private record he controls."\n\nRook took that in. "Lace."\n\n"Ready." She'd been ready twenty minutes, in the transit node bathroom, running a last check on her cover — the documentation she'd built over the past day, the buyer identity, the provenance chain for a collection with a verifiable history and a specific taste in mid-market Z3/Z4 hybrid art that made interest in a piece like Headcount both plausible and credible.\n\n"You're clear to enter," Rook said.\n\nShe watched Lace come out of the transit node and walk toward the pavilion with the quality she took on when she was being someone else — a slightly different gait, a different way of carrying her coat, the small adjustments that made a different person's relationship to public space. Not theater. Inhabitation. Lace didn't play a buyer; she became the buyer she'd built. That mattered, because collectors and their staff read the people they dealt with, and performers got read.\n\nThe entrance staff checked her documents. A brief exchange — Rook couldn't hear it at this distance, but she could read the body language: documents presented, examined with due attention, a question, Lace's unhurried reply. The staff returned the documents. Lace went in.\n\n"I'm in," Lace said. "Two staff on the floor — one at the entrance, one at the far end on the upper displays. Dealer format, pieces in curated groups, the serious work upstairs. I can see the central installation from here. Four pieces under exhibition lighting."\n\n"Is Headcount one of them?"\n\nA pause. "Yes." A different quality in the pause than anything before it. "It's a significant installation. I understand why someone wanted it back."\n\nRook waited.\n\n"Ceramic composite housing," Lace said. "About half a meter long, maybe thirty centimeters tall. Dark glaze, high finish. The surface has been worked — small embedded markings running the length of it in a repeating pattern that looks typographic but isn't any standard character set. The data layer's probably accessible from the south face; there's a reading node housing at the base, the port kind you use for embedded provenance." Another pause. "It's on its own plinth, under independent lighting. Not grouped with the others. The lighting is the statement: it's the primary piece, and the rest are context."\n\n"Tran-Okonkwo?"\n\n"I see him. Talking with the other staff member upstairs. He'll come down."\n\nRook watched the entrance. The iron crane track showed through the pavilion glass — the original industrial element crossing the upper space, the market laid out beneath it as if the track were decoration instead of a machine for moving heavy loads through a space built for heavy loads. The bones showed. They were doing something different now.\n\n"He's coming down," Lace said.\n\nThe job shifted into its sharper register. Everything before had been positioning. This was the work. Rook turned her attention to the exits and her own sight lines and let Lace work.\n\n---\n\nBy Lace's sub-vocal relay, Yusuf Tran-Okonkwo was about fifty, a Z3 collector in bearing and manner, fully aware he held something people wanted. He greeted her with the warmth of a dealer who knew what he had and was therefore in no hurry — friendly, professional, willing to give the conversation all the time it wanted, because time wasn't his constraint.\n\n"You're here for the Headcount piece," he said. Not a question.\n\n"I saw the inquiry go through the Z3 dealer network," Lace said. She wasn't pretending she'd come for something else; pretending was what collectors read as evasion. She was honest about her interest and careful about her position. "It fits a specific gap in the collection I'm building."\n\n"And what is the collection you're building?"\n\nShe laid it out — the buyer identity, the aesthetic direction, the three pieces she'd acquired in the past eight months that set the frame. She'd done the work completely enough that the explanation needed no performance. The collection existed in her documentation and in her prepared mind, each piece cross-referenced, the rationale real enough to survive any question he could ask.\n\nTran-Okonkwo listened with his full attention. He was reading her. She let him.\n\n"What's your budget?" he asked.\n\n"What's your ask?"\n\nA small smile. This wasn't a new dance. "I paid sixty-two hundred. It's appreciated since. The inquiry this week came in at nine thousand. I haven't answered it."\n\n"Nine thousand is the current market ceiling for a piece of this category at this point in the artist's career," Lace said. "I can offer eighty-five hundred, with clean civic provenance documentation."\n\n"The documentation is the interesting part," he said. "The piece came to me through informal channels."\n\n"I know where it came from," Lace said. "The documentation I provide would be clean. That's not a problem for the collection I'm building."\n\nHe considered her. "You know where it came from and you want it anyway."\n\n"The piece is worth having. The provenance gap is a solvable administrative issue."\n\nHe walked to the plinth. The Headcount sculpture was exactly what Lace had described: ceramic composite, worked surface, the almost-typographic markings running the dark glaze. Under the dedicated lighting it had a presence — not decorative, not ambient. Something you looked at instead of past.\n\nRook couldn't see it from outside. She was reading it through Lace's relay and through what wasn't being said on the channel.\n\n"The piece isn't for eighty-five," Tran-Okonkwo said, looking at the sculpture rather than at Lace. "I have a buyer at nine thousand who wants it for institutional display. You're offering above standard market value in this format, which tells me something about what you think it actually is. The institutional buyer isn't interested in that." He turned to her. "I am. But not at a discount, to someone who already knows the value."\n\n"What's your number?" Lace asked.\n\n"Twelve thousand."\n\nThe team channel went quiet.\n\n"He knows," Boiler said, sub-vocal, to Rook rather than the full channel.\n\n"He doesn't know what it is," Rook said. "He knows it's worth more than market."\n\n"That's enough," Ekow said.\n\nLace was silent a moment, which meant she was working the problem, not that she'd run out of moves. She hadn't run out of moves. She was choosing one.\n\n"I need to confirm with the collection," she told Tran-Okonkwo. "Twelve is above the single-acquisition ceiling I have authorization for. Let me make a call."\n\n"Of course." He moved toward his colleague upstairs. A polite, professional withdrawal. The art market ran on the expectation of consultation.\n\n"He's walking away," Lace confirmed. "I have maybe four minutes before he wants an answer."\n\nRook weighed it. The operation budget hadn't been built for a twelve-thousand acquisition. The whole Ferris contract was twelve thousand. Spending the full payout on the piece left the crew zero margin and zero return for the risk. There were other options. She went through them.\n\n"Scout. The reading node at the base of the plinth. Can you pull the data layer remotely?"\n\n"Not without physical contact with the node, or a threading point inside the installation space. I'd need to be in the building."\n\n"Vox. The local logging system. Can you reach Tran-Okonkwo's transaction records?"\n\n"I have the local log feed Scout threaded earlier. What do you need?"\n\n"His current pending offers. Anything logged in the last seventy-two hours."\n\nA brief pause. "The nine-thousand offer is logged — a Z3 institutional buyer, filed this morning, no deadline. There's a second offer forty hours ago, eight thousand, private buyer, no identity beyond a Z4 address." Another pause. "And a third entry from four days ago. It's not an offer. It's a notation. Three words: 'Worth the wait.'"\n\nThe channel was quiet.\n\n"Worth the wait," Rook said.\n\n"Yes."\n\nHe wasn't waiting for a twelve-thousand buyer. He was waiting for the buyer who would tell him what the piece was. The price was a filter. He'd sell to whoever proved they knew what they were really buying.\n\n"Lace," Rook said. "He wants to know someone else knows what it is. Give him that without giving him the data."\n\nA pause. "That's a very specific instruction."\n\n"I know. You can do it."\n\n"I know I can do it," Lace said, flat. "I'm just saying it was specific."\n\nRook watched the building. The iron crane track above the glass. The heavy loads the building had been built to carry, repurposed now to carry something else, the track still running its original path above the changed floor.\n\n"He's coming back," Lace said.\n\nRook heard Lace shift her approach — not in words, there were no words on the channel while the conversation happened, but in the spacing of the transmissions, the economy of someone who'd moved into a register she was very good at.\n\n"The collection I'm building," Lace told Tran-Okonkwo, "isn't about individual pieces. It's about what the pieces stand in for. What they hold that isn't visible on the surface."\n\nA moment.\n\n"Tell me what you think this holds," he said.\n\n"I think it holds fifteen years of something the artist was paid to make invisible," Lace said. "I think the title isn't ironic."\n\nFour seconds of silence in the building, audible as the absence of Lace's transmission.\n\n"Twelve thousand," Tran-Okonkwo said. "And you take it tonight."\n\n"We'll take it now," Lace said.
+Rook was across the street, thirty meters south of the entrance, at a public seating node outside a transit stop.
+
+She had a sight line to the pavilion and none to the east face, which was Scout's.
+
+She wasn't in the building.
+
+The job didn't need her in the building.
+
+"Positions," she said, sub-vocal, into the team channel.
+
+Boiler confirmed from the street perimeter, north of the entrance at the block corner.
+
+Ekow confirmed from the south approach, covering the secondary route a fast exit might use.
+
+Scout confirmed from the freight lane — she'd been in place twenty minutes already and had threaded the east camera loop into the building's security network. The half-second reconnect window in the Meridian HD-7 handshake. She'd tested the loop twice without tripping any alert.
+
+"Building security's running the standard twelve-minute rotation," Scout said. "Two staff inside. The one at the entrance checked provenance on the last two buyers and logged it, so they're registering today's traffic. I've got the building's internal logging feed — they're not pushing to external civic storage. It's local only."
+
+"Local only means no civic record," Vox said, running her four channels from her Z4 workspace. "Tran-Okonkwo isn't filing a public transaction record for today's sales."
+
+"He's keeping the provenance internal," Rook said.
+
+"Yes. Consistent with a stolen acquisition. He knows what he has and knows the paper trail isn't in his favor, so he runs a private record he controls."
+
+Rook took that in. "Lace."
+
+"Ready." She'd been ready twenty minutes, in the transit node bathroom, running a last check on her cover — the documentation she'd built over the past day, the buyer identity, the provenance chain for a collection with a verifiable history and a specific taste in mid-market Z3/Z4 hybrid art that made interest in a piece like Headcount both plausible and credible.
+
+"You're clear to enter," Rook said.
+
+She watched Lace come out of the transit node and walk toward the pavilion with the quality she took on when she was being someone else — a slightly different gait, a different way of carrying her coat, the small adjustments that made for a different person's relationship to public space. Not theater. Inhabitation. Lace didn't play a buyer; she became the buyer she'd built. That mattered, because collectors and their staff read the people they dealt with, and performers got read.
+
+The entrance staff checked her documents. A brief exchange — Rook couldn't hear it at this distance, but she could read the body language: documents presented, examined with due attention, a question, Lace's unhurried reply.
+
+The staff returned the documents. Lace went in.
+
+"I'm in," Lace said. "Two staff on the floor — one at the entrance, one at the far end on the upper displays. Dealer format, pieces in curated groups, the serious work upstairs. I can see the central installation from here. Four pieces under exhibition lighting."
+
+"Is Headcount one of them?" asked Rook.
+
+A pause. "Yes." A different quality in the pause than anything before it. "It's a significant installation. I understand why someone wanted it back."
+
+Rook waited.
+
+"Ceramic composite housing," Lace said. "About half a meter long, maybe thirty centimeters tall. Dark glaze, high finish. The surface has been worked — small embedded markings running the length of it in a repeating pattern that looks typographic but isn't any standard character set. The data layer's probably accessible from the south face; there's a reading node housing at the base, the port kind you use for embedded provenance." Another pause. "It's on its own plinth, under independent lighting. Not grouped with the others. The lighting is the statement: it's the primary piece, and the rest are context."
+
+"Tran-Okonkwo?" asked Rook.
+
+"I see him. Talking with the other staff member upstairs. He'll come down."
+
+Rook watched the entrance. The iron crane track showed through the pavilion glass — the original industrial element crossing the upper space, the market laid out beneath it as if the track were decoration instead of a machine for moving heavy loads through a space built for heavy loads. The bones showed. They were doing something different now.
+
+"He's coming down," Lace said.
+
+The job shifted into its sharper register. Everything before had been positioning. This was the work. Rook turned her attention to the exits and her own sight lines and let Lace work.
+
+By Lace's sub-vocal relay, Yusuf Tran-Okonkwo was about fifty, a Z3 collector in bearing and manner, fully aware he held something people wanted. He greeted her with the warmth of a dealer who knew what he had and was therefore in no hurry — friendly, professional, willing to give the conversation all the time it wanted, because time wasn't his constraint.
+
+"You're here for the Headcount piece," he said. Not a question.
+
+"I saw the inquiry go through the Z3 dealer network," Lace said. She wasn't pretending she'd come for something else; pretending was what collectors read as evasion. She was honest about her interest and careful about her position. "It fits a specific gap in the collection I'm building."
+
+"And what is the collection you're building?" he asked.
+
+She laid it out — the buyer identity, the aesthetic direction, the three pieces she'd acquired in the past eight months that set the frame. She'd done the work completely enough that the explanation needed no performance. The collection existed in her documentation and in her prepared mind, each piece cross-referenced, the rationale real enough to survive any question he could ask.
+
+Tran-Okonkwo listened with his full attention. He was reading her. She let him.
+
+"What's your budget?" he asked.
+
+"What's your ask?" asked Lace.
+
+A small smile. This wasn't a new dance. "I paid sixty-two hundred. It's appreciated since. The inquiry this week came in at nine thousand. I haven't answered it."
+
+"Nine thousand is the current market ceiling for a piece of this category at this point in the artist's career," Lace said. "I can offer eighty-five hundred, with clean civic provenance documentation."
+
+"The documentation is the interesting part," he said. "The piece came to me through informal channels."
+
+"I know where it came from," Lace said. "The documentation I provide would be clean. That's not a problem for the collection I'm building."
+
+He considered her. "You know where it came from and you want it anyway."
+
+"The piece is worth having. The provenance gap is a solvable administrative issue."
+
+He walked to the plinth. The Headcount sculpture was exactly what Lace had described: ceramic composite, worked surface, the almost-typographic markings running the dark glaze. Under the dedicated lighting it had a presence — not decorative, not ambient. Something you looked at instead of past.
+
+Rook couldn't see it from outside. She was reading it through Lace's relay and through what wasn't being said on the channel.
+
+"The piece isn't for eighty-five," Tran-Okonkwo said, looking at the sculpture rather than at Lace. "I have a buyer at nine thousand who wants it for institutional display. You're offering above standard market value in this format, which tells me something about what you think it actually is. The institutional buyer isn't interested in that." He turned to her. "I am. But not at a discount, to someone who already knows the value."
+
+"What's your number?" asked Lace.
+
+"Φ12,000."
+
+The team channel went quiet.
+
+"He knows," Boiler said, sub-vocal, to Rook rather than the full channel.
+
+"He doesn't know what it is," Rook said. "He knows it's worth more than market."
+
+"That's enough," Ekow said.
+
+Lace was silent a moment, which meant she was working the problem, not that she'd run out of moves. She was choosing one.
+
+"I need to confirm with the collection," she told Tran-Okonkwo. "Twelve is above the single-acquisition ceiling I have authorization for. Let me make a call."
+
+"Of course." He moved toward his colleague upstairs. A polite, professional withdrawal. The art market ran on the expectation of consultation.
+
+"He's walking away," Lace confirmed. "I have maybe four minutes before he wants an answer?"
+
+Rook weighed it. The operation budget hadn't been built for a Φ12,000 acquisition. The whole Ferris contract was Φ12,000, and only the signing tranche had cleared; covering the gap meant drawing against the crew's operating reserve — money they'd need back before the next job. Spending the full payout on the piece left the crew zero margin and zero return for the risk. There were other options. She went through them.
+
+"Scout. The reading node at the base of the plinth. Can you pull the data layer remotely?" asked Rook.
+
+"Not without physical contact with the node, or a threading point inside the installation space. I'd need to be in the building."
+
+"Vox. The local logging system. Can you reach Tran-Okonkwo's transaction records?" asked Rook.
+
+"I have the local log feed Scout threaded earlier. What do you need?" asked Vox.
+
+"His current pending offers. Anything logged in the last seventy-two hours."
+
+A brief pause. "The nine-thousand offer is logged — a Z3 institutional buyer, filed this morning, no deadline. There's a second offer forty hours ago, eight thousand, private buyer, no identity beyond a Z4 address." Another pause. "And a third entry from four days ago. It's not an offer. It's a notation. Three words: 'Worth the wait.'"
+
+The channel was quiet.
+
+"Worth the wait," Rook said.
+
+"Yes."
+
+He wasn't waiting for a twelve-thousand buyer. He was waiting for the buyer who would tell him what the piece was. The price was a filter. He'd sell to whoever proved they knew what they were really buying.
+
+"Lace," Rook said. "He wants to know someone else knows what it is. Give him that without giving him the data."
+
+A pause. "That's a very specific instruction?"
+
+"I know. You can do it."
+
+"I know I can do it," Lace said, flat. "I'm just saying it was specific."
+
+Rook watched the building. The iron crane track above the glass. The heavy loads the building had been built to carry, repurposed now to carry something else, the track still running its original path above the changed floor.
+
+"He's coming back," Lace said.
+
+Rook heard Lace shift her approach — not in words, there were no words on the channel while the conversation happened, but in the spacing of the transmissions, the economy of someone who'd moved into a register she was very good at.
+
+"The collection I'm building," Lace told Tran-Okonkwo, "isn't about individual pieces. It's about what the pieces stand in for. What they hold that isn't visible on the surface."
+
+A moment.
+
+"Tell me what you think this holds," he asked.
+
+"I think it holds fifteen years of something the artist was paid to make invisible," Lace said. "I think the title isn't ironic."
+
+Four seconds of silence in the building, audible as the absence of Lace's transmission.
+
+"Φ12,000," Tran-Okonkwo said. "And you take it tonight."
+
+"We'll take it now," Lace said.
 
 The transaction took eleven minutes. Rook counted them from the seating node across the street, watching the pavilion glass and letting the team channel run at low priority while the extraction settled into shape.
 
-Tran-Okonkwo provided packaging. That was expected: a collector's market at his tier supplied transport as part of the sale, both because the pieces were valuable enough to warrant it and because packing the piece meant the seller controlled the exit. What came out of the storage room behind the upper level was a handled transport case — rigid composite, foam interior, sealed latch hardware. The kind of case that said its contents were worth carrying carefully without saying what they were.
+Tran-Okonkwo provided packaging. That was expected: a collector's market at his tier supplied transport as part of the sale, both because the pieces were valuable enough to warrant it and because packing the piece meant the seller controlled the exit.
+
+What came out of the storage room behind the upper level was a handled transport case — rigid composite, foam interior, sealed latch hardware. The kind of case that said its contents were worth carrying carefully without saying what they were.
 
 "He's handling the case himself," Lace said over the channel, sub-vocal, her voice close in Rook's ear. "The other staffer's logging the transaction. Tran-Okonkwo is packing the piece personally. He's careful."
 
-"He should be careful," Ekow said from the south approach. His voice on the channel had the same quality as his voice in person: direct, uninflected, the fewest syllables that carried the meaning. "He paid sixty-two hundred for it."
+"He should be careful?" Ekow asked from the south approach. His voice on the channel had the same quality as his voice in person: direct, uninflected, the fewest syllables that carried the meaning. "He paid sixty-two hundred for it."
 
-"He's selling it for twelve thousand," Boiler said from the north perimeter. "He's not careful about the money. He's careful about the object."
+"He's selling it for Φ12,000," Boiler said from the north perimeter. "He's not careful about the money. He's careful about the object."
 
-Boiler was right. Tran-Okonkwo had been attentive to the sculpture in a way that wasn't the attentiveness of a man protecting an investment. When the deal reached its resolution he'd walked to the plinth and looked at the piece a moment before he named his number. That wasn't a seller doing margins. That was a man who understood, at some level, that the object had a quality his math was only next to.
+Boiler was right. Tran-Okonkwo had been attentive to the sculpture in a way that wasn't the attentiveness of a man protecting an investment. When the deal reached its resolution he'd walked to the plinth and looked at the piece a moment before he named his number.
 
 *Worth the wait,* he'd written four days ago. He'd been waiting for someone who knew what they were buying.
 
@@ -573,17 +925,15 @@ Clean.
 
 She got in.
 
-The vehicle was sealed courier — enclosed cargo compartment, no external markings beyond the commercial registration. Lace had set the transport case in the interior rack. Three-point latch, closed.
+The vehicle was sealed courier - enclosed cargo compartment, no external markings beyond the commercial registration. Lace had set the transport case in the interior rack. Three-point latch, closed.
 
-"Twelve thousand for something we're not delivering," Boiler said, looking at the case.
+"Φ12,000 for something we're not delivering," Boiler said, looking at the case.
 
 "We haven't decided that yet," Rook said.
 
-Boiler looked at her briefly. The look said he'd already decided, and believed she had too, and that what she'd said wasn't a decision — it was an acknowledgment that they'd have the conversation properly, with Vox, once the data layer was open. He didn't press it. He looked back at the case.
+Boiler looked at her briefly. The look said he'd already decided, and believed she had too, and that what she'd said wasn't a decision - it was an acknowledgment that they'd have the conversation properly, with Vox, once the data layer was open. He didn't press it. He looked back at the case.
 
 The vehicle entered traffic.
-
----
 
 Park Gi-su had the time to the minute: fourteen forty-seven.
 
@@ -623,8 +973,6 @@ The vehicle turned south at the fourth block.
 
 South. He let the query build the rest.
 
----
-
 Rook watched the city through the courier's narrow viewport and let the delivery question sit where it belonged: open, no answer, waiting on information.
 
 The transport case sat in the rack across from her. Three-point latch, closed. The ceramic housing held whatever fifteen years of Gray Zone demographics looked like in civic registry schema. She'd know in twelve minutes.
@@ -633,27 +981,31 @@ The transport case sat in the rack across from her. Three-point latch, closed. T
 
 "Good," Rook said.
 
-She was aware, at the edge of the thing she wasn't letting herself think about yet, that the delivery question had already shifted. Not because she'd decided not to deliver. Because Vox had named the schema, and Ekow had gone quiet in a specific way when she'd repeated it, and the brief said twelve thousand for a courier recovery — and she'd worked this city long enough to know nobody paid twelve thousand for a provenance chain.
+She was aware, at the edge of the thing she wasn't letting herself think about yet, that the delivery question had already shifted. Not because she'd decided not to deliver. Because Vox had named the schema, and Ekow had gone quiet in a specific way when she'd repeated it, and the brief said Φ12,000 for a courier recovery - and she'd worked this city long enough to know nobody paid Φ12,000 for a provenance chain.
 
 Whatever was in the sculpture was the point.
 
 She looked at the case and waited to find out what the point was.
 
-The safe house was a Z4 commercial unit on the second floor of a converted warehouse, leased under a holding company Vox had kept alive for two years. Three rooms: an operational workspace, a secondary with basic facilities, and a storage room with a lock that took two separate key sequences. The workspace had a bank of screens, a cleared table, good light, and the specific air of a room used regularly and kept carefully — not comfortable, not institutional, the exact absence of both.
+The safe house was a Z4 commercial unit on the second floor of a converted warehouse, leased under a holding company Vox had kept alive for two years. Three rooms: an operational workspace, a secondary with basic facilities, and a storage room with a lock that took two separate key sequences.
 
-They arrived in sequence, seven minutes apart. Vox was already there when Rook came in last; she arrived first when a data operation was the next task. The screens were running. Four channels, streams active.
+The workspace had a bank of screens, a cleared table, good light, and the specific air of a room used regularly and kept carefully — not comfortable, not institutional, the exact absence of both.
+
+Scout and Ekow arrived a few minutes apart, having taken separate routes; Rook, Lace, and Boiler came in together from the courier; she arrived first when a data operation was the next task. The screens were running. Four channels, streams active.
 
 The transport case sat on the cleared table. Lace had carried it in and set it down without ceremony. Three-point latch, closed.
 
 "Reading interface first," Vox said, which was both a briefing and just the order of operations. She examined the case exterior, then opened it.
 
-The Headcount sculpture was exactly what Lace and the brief had said: ceramic composite, half a meter long, high-gloss dark glaze, the surface worked with the almost-typographic markings running in bands along its length. Under the clean work lighting it looked less dramatic than it would have under the exhibition lights. More factual. 
+The Headcount sculpture was exactly what Lace and the brief had said: ceramic composite, half a meter long, high-gloss dark glaze, the surface worked with the almost-typographic markings running in bands along its length. Under the clean work lighting it looked less dramatic than it would have under the exhibition lights. More factual.
 
-Vox examined the south face. The reading node at the base: a port cluster in standard provenance format, recessed a half-centimeter into the ceramic, under a dust cap she removed with a thumbnail and set on the table. The port was clean. Good maintenance. Someone had cared for this object.
+Vox examined the south face. The reading node at the base: a port cluster in standard provenance format, recessed a half-centimeter into the ceramic, under a dust cap she removed with a thumbnail and set on the table.
+
+The port was clean. Good maintenance. Someone had cared for this object.
 
 "The data architecture," Vox said, setting up her threading cable, "will tell us whether this is a flat file or an active schema. The provenance chain referenced a civic registry format, but that's the outer wrapper. What it wraps decides how you pull it."
 
-"Translation," Lace said. She was leaning against the secondary workstation, arms crossed, watching.
+"Translation?" Lace asked. She was leaning against the secondary workstation, arms crossed, watching.
 
 "Either it's a document or it's a database." Vox connected the interface to the port. "A document you read once. A database you query."
 
@@ -667,9 +1019,11 @@ Vox went quiet for eleven seconds. That wasn't a normal length of quiet for Vox 
 
 "Fifteen years," she said.
 
-"Of what," Rook said.
+"Of what," Rook asked.
 
-"Migration patterns. Residency histories. Debt ledger cross-references. Heritage documentation filings." Her voice was level; she'd arrived there through the work. "The whole Gray Zone. All twelve zones plus the buffer zones. Population movement, integration rates, financial dependency, ethnographic heritage cross-sections mapped to residency registration." She paused. "The heritage data is the significant part. It's coded to the civic grid's legacy classification schema — the framework they used before the Meridian Charter harmonized the identity system in 2208. That schema hasn't been used for official civic work in eighteen years."
+"Migration patterns. Residency histories. Debt ledger cross-references. Heritage documentation filings." Her voice was level; she'd arrived there through the work. "The whole Gray Zone. All twelve zones plus the buffer zones. Population movement, integration rates, financial dependency, ethnographic heritage cross-sections mapped to residency registration."
+
+She paused. "The heritage data is the significant part. It's coded to the civic grid's legacy classification schema — the framework they used before the Meridian Charter harmonized the identity system in 2208. That schema hasn't been used for official civic work in eighteen years."
 
 The room was quiet.
 
@@ -689,7 +1043,9 @@ Scout was sitting on the edge of the secondary workstation, legs crossed, watchi
 
 "Tran-Okonkwo bought it from a secondary courier," Ekow said. "He didn't know what it was — he knew it was worth more than market, but not the specific value. So whoever stole it from the original courier didn't know either, or they wouldn't have sold it at secondary-market prices."
 
-Rook was running the chain backward. The sculpture had surfaced at the Z6 secondary market first, then a Z4 holding facility, then Tran-Okonkwo's. Each move was someone who didn't know what they had, selling to someone who also didn't, the value building in the object while nobody in the chain understood why — until Tran-Okonkwo looked at it long enough to understand it was worth waiting for. And the anonymous client had made two recovery attempts before this one. Two failures in three months. The urgency wasn't market pressure. It was operational.
+Rook was running the chain backward. The sculpture had surfaced at the Z6 secondary market first, then a Z4 holding facility, then Tran-Okonkwo's. Each move was someone who didn't know what they had, selling to someone who also didn't, the value building in the object while nobody in the chain understood why — until Tran-Okonkwo looked at it long enough to understand it was worth waiting for.
+
+And the anonymous client had made two recovery attempts before this one. Two failures in three months. The urgency wasn't market pressure. It was operational.
 
 "Headcount," Vox said. "The title."
 
@@ -701,7 +1057,7 @@ The display showed the heritage cross-section in schematic form: Z6, the buffer 
 
 Data woven through the civic grid so quietly, for so long, that it had ended up dressed as art. Somebody had been patient. Fifteen years of patience had made this.
 
-Rook thought about the anonymous client. Twelve thousand. Three attempts. Urgent enough to use an outside operator instead of an inside resource. She thought about what an organization with fifteen years of this data and an urgent need to get it back was planning to do with it.
+Rook thought about the anonymous client. Φ12,000. Three attempts. Urgent enough to use an outside operator instead of an inside resource. She thought about what an organization with fifteen years of this data and an urgent need to get it back was planning to do with it.
 
 And she thought about Ekow's silence when she'd named the schema at the transit station. The weight behind the pause that had resolved into briefing language without naming itself.
 
@@ -711,7 +1067,7 @@ And she thought about Ekow's silence when she'd named the schema at the transit 
 
 "We do," Rook said.
 
-She looked at the case. The sculpture in its foam cradle. Twelve thousand quanta of the anonymous client's property, already copied, data layer open. The Ferris contract specified the physical piece, intact, to a Z3 drop point. It didn't say anything about examining the data layer first. It didn't say what happened if examining it changed the delivery.
+She looked at the case. The sculpture in its foam cradle. Φ12,000 of the anonymous client's property, already copied, data layer open. The Ferris contract specified the physical piece, intact, to a Z3 drop point. It didn't say anything about examining the data layer first. It didn't say what happened if examining it changed the delivery.
 
 "We're not delivering it tonight," she said.
 
@@ -719,23 +1075,31 @@ Nobody argued.
 
 "Ferris will need an explanation," Lace said.
 
-"Ferris gets an explanation when I have one worth giving." Rook looked at the display. The heritage cross-section maps. Fifteen years of the Gray Zone's people, counted and sorted and held in ceramic dressed as art. "What else does the data connect to? What would you specifically need this data for?"
+"Ferris gets an explanation when I have one worth giving." Rook looked at the display. The heritage cross-section maps. Fifteen years of the Gray Zone's people, counted and sorted and held in ceramic dressed as art.
 
-Vox was already running it. "The heritage cross-sections are the key. Migration patterns alone are civic planning data — the Gray Zone authority uses that routinely. Debt distributions are financial profiling, standard market intelligence. But heritage mapping at this resolution, kept against a retired schema for fifteen years..." She paused. "You'd need this for targeting. Population segmentation. Knowing where specific heritage classifications are concentrated, how they move, and what they owe."
+"What else does the data connect to? What would you specifically need this data for?"
+
+Vox was already running it. "The heritage cross-sections are the key. Migration patterns alone are civic planning data — the Gray Zone authority uses that routinely. Debt distributions are financial profiling, standard market intelligence. But heritage mapping at this resolution, kept against a retired schema for fifteen years..."
+
+She paused. "You'd need this for targeting. Population segmentation. Knowing where specific heritage classifications are concentrated, how they move, and what they owe."
 
 The room held the shape of that for a moment.
 
-Boiler said it out loud. "That's not a census. That's a target list."
+Boiler said it out loud. "That's not a census. That's a target list?"
 
 "Yes," Rook said.
 
-She looked at the copied data on isolated storage, the original sculpture in its case, the twelve thousand sitting in the contract account, and the client's drop coordinates waiting in a file she was going to leave unopened tonight.
+She looked at the copied data on isolated storage, the original sculpture in its case, the Φ6,000 sitting in the contract account, and the client's drop coordinates waiting in a file she was going to leave unopened tonight.
 
-The twelve thousand had been the point for about four hours. Then Vox had opened the data layer, and it stopped being the point, and what replaced it was the question of who had built a target list over fifteen years and what they meant to do with it now that it was nearly complete.
+The Φ12,000 had been the point for about four hours. Then Vox had opened the data layer, and it stopped being the point, and what replaced it was the question of who had built a target list over fifteen years and what they meant to do with it now that it was nearly complete.
 
 That question didn't have a drop point. It needed a different approach entirely.
 
-She lifted the sculpture from its cradle, turned it once in her hands — the worked surface, the almost-language markings, the ceramic weight of it — and set it carefully back. It was evidence now. It was also, she was beginning to understand, only one part of a plan that wasn't finished.
+She lifted the sculpture from its cradle, turned it once in her hands — the worked surface, the almost-language markings, the ceramic weight of it — and set it carefully back.
+
+It was evidence now.
+
+It was also, she was beginning to understand, only one part of a plan that wasn't finished.
 
 "We sit on the sculpture," she said. "Vox stays on the data. Tomorrow we find out who built this — and what they still need to complete it."
 
@@ -743,9 +1107,9 @@ She looked at Ekow. He was looking at the display. The heritage cross-sections. 
 
 He said nothing. His right hand was very still at his side.
 
-## Adaeze Nnodu-Park
+Three days after the market run, Adaeze called them in. Adaeze Nnodu-Park's office was exactly the kind of room twelve years of fighting produced: functional, dense with ongoing work, papers in sorted stacks on the second desk, civic filing architecture on the primary system, and the particular smell of a room lived in by someone who didn't stop.
 
-Adaeze Nnodu-Park's office was exactly the kind of room twelve years of fighting produced: functional, dense with ongoing work, papers in sorted stacks on the second desk, civic filing architecture on the primary system, and the particular smell of a room lived in by someone who didn't stop. A community legal cooperative that had run twelve years had a certain material reality, and the office wore it — the evidence of cases filed, cases lost, and cases that had produced a record even when they produced nothing else.
+A community legal cooperative that had run twelve years had a certain material reality, and the office wore it — the evidence of cases filed, cases lost, and cases that had produced a record even when they produced nothing else.
 
 She was behind the primary desk when they came in. Early fifties, large frame, the deliberateness of someone who'd learned to move through contested spaces without performing the contest. She looked at Ekow first, Rook second.
 
@@ -783,7 +1147,7 @@ Adaeze stopped speaking.
 
 The building was quiet around the office the way buffer-zone buildings were quiet in the afternoon — not silent, community work coming up through the floors, the renovation Boiler was running on the east wing, the legal consultation two doors down. Overhead, the faint percussion of structural work: load-bearing interventions, the sound of someone doing something meant to last.
 
-"The Purification Protocol," Rook said. "What specifically."
+"The Purification Protocol," Rook said. "What specifically?"
 
 "Nari can explain what the document contained," Adaeze said. "I have her summary. The Protocol is a systematic population management initiative targeting non-eligible heritage classifications in the Z6 buffer zone. Phased displacement over a twenty-year timeline. Three operational components required for Phase 1."
 
@@ -793,7 +1157,7 @@ Rook waited.
 
 She didn't say the thing Rook was already thinking. She went on.
 
-"Neuretics registration access. A way to identify and log every registered neuretics user in the Z6 network by heritage classification, in real time. And a deployment window — thirty days from the moment the first two components are in place." She looked at Rook directly. "Nari's summary describes those requirements from the document she read seven years ago. The document she has is the authorization record. It has the Stems' signatures."
+"Neuretics registration access. A way to identify and log every registered neuretics user in the Z6 network by heritage classification, in real time. And a deployment window — thirty days from the moment the first two components are in place." She looked at Rook directly. "Nari's summary describes those requirements from the document she read fifteen years ago. The document she has is the authorization record. It has the Stems' signatures."
 
 Ekow hadn't spoken since they came in. He stood near the door — the position he took in every room. He'd been watching Adaeze's face while she spoke, and now he wasn't watching anything, his eyes on a middle distance with nothing in it.
 
@@ -801,13 +1165,15 @@ Ekow hadn't spoken since they came in. He stood near the door — the position h
 
 "Yes," Adaeze said.
 
-"You got that from pattern analysis, or from inside the schedule."
+"You got that from pattern analysis, or from inside the schedule?"
 
 She paused fractionally. "Pattern analysis. I don't have inside access to the Thorn operational queue."
 
 He nodded. The nod wasn't about her answer. He was checking something he already knew, running the operational logic he'd been inside of against what she was telling him from outside it. His hands rested at his sides.
 
-"The Thorns use a three-stage contact protocol for a casting-out extraction," he said. Not to Adaeze. To the room. "First, surveillance confirmation of the current address — they'll have finished that before the clock starts. Then a route feasibility assessment: they map the extraction path from her building and identify alternates. Four to six hours. Then contact deployment — a two-person entry team, assigned before the feasibility assessment is even complete." He paused. "If the pattern analysis read the surveillance confirmation as the start of the twelve-hour window, we're at the end of the route assessment stage. Maybe into early contact deployment."
+"The Thorns use a three-stage contact protocol for a casting-out extraction," he said. Not to Adaeze. To the room.
+
+"First, surveillance confirmation of the current address — they'll have finished that before the clock starts. Then a route feasibility assessment: they map the extraction path from her building and identify alternates. Four to six hours. Then contact deployment — a two-person entry team, assigned before the feasibility assessment is even complete." He paused. "If the pattern analysis read the surveillance confirmation as the start of the twelve-hour window, we're at the end of the route assessment stage. Maybe into early contact deployment."
 
 The room was quieter.
 
@@ -815,9 +1181,13 @@ Adaeze looked at him. Her expression hadn't changed much, but her attention had 
 
 "Yes," Ekow said. No elaboration, no apology.
 
-Rook was watching his face. He met Adaeze's gaze with the stillness he brought to everything — the practiced containment of a man who'd sat in rooms where this kind of decision got made, and listened, and known the operational standard from the inside, and hadn't been in a position to use that knowledge until now. She was aware, at the edge of her operational thinking, of what it meant that he could describe the Thorns' three-stage protocol this precisely. She set it aside. She'd come back to it.
+Rook was watching his face. He met Adaeze's gaze with the stillness he brought to everything — the practiced containment of a man who'd sat in rooms where this kind of decision got made, and listened, and known the operational standard from the inside, and hadn't been in a position to use that knowledge until now.
 
-"Where is Nari now," Rook said.
+She was aware, at the edge of her operational thinking, of what it meant that he could describe the Thorns' three-stage protocol this precisely.
+
+She set it aside. She'd come back to it.
+
+"Where is Nari now?" Rook asked.
 
 "Her Z6 residential address. She hasn't moved since I spoke with her this morning — moving on her own draws Thorn attention faster than holding position. She has a route I outlined, but she doesn't use it unless I confirm."
 
@@ -827,9 +1197,9 @@ Rook was watching his face. He met Adaeze's gaze with the stillness he brought t
 
 "I know." Rook looked at the desk. The civic filing on the primary system, the sorted stacks on the second desk. Twelve years of fighting Lotus debt structures through institutional channels, two Civic Bureau petitions that had gone nowhere and been filed anyway. The cooperative had survived. Adaeze was still here. Today she'd called in something extra-institutional, which meant the institutional channels had run as far as they were going to run.
 
-"What does Nari know about the Protocol beyond the authorization vote?" Rook said.
+"What does Nari know about the Protocol beyond the authorization vote?" Rook asked.
 
-"She knows what the document contained. She knows who authorized it. She knows the operational timeline as it stood seven years ago, which may have moved a lot since." Adaeze held her gaze. "She waited fifteen years to use this. She'll tell you what you need to know when she trusts you enough to tell you."
+"She knows what the document contained. She knows who authorized it. She knows the operational timeline as it stood fifteen years ago, which may have moved a lot since." Adaeze held her gaze. "She waited fifteen years to use this. She'll tell you what you need to know when she trusts you enough to tell you."
 
 "She'll trust us enough when we've gotten her clear," Rook said.
 
@@ -843,7 +1213,9 @@ He looked at her directly. "I've used it," he said. "I know where the Thorn cove
 
 The room absorbed it.
 
-"We'll need current Thorn positions in Z6," Rook said — to the team, to Vox on the channel. "The extraction route walked again before we move. And I want to know what the twelve-hour window looks like from the route feasibility stage Ekow just described." She looked at Adaeze. "Tell Nari we're coming. Don't give her a time. Tell her tonight."
+"We'll need current Thorn positions in Z6," Rook said — to the team, to Vox on the channel. "The extraction route walked again before we move. And I want to know what the twelve-hour window looks like from the route feasibility stage Ekow just described."
+
+She looked at Adaeze. "Tell Nari we're coming. Don't give her a time. Tell her tonight."
 
 Adaeze nodded — the nod she used when she'd been doing what could be done with the resources she had, a new resource had just arrived, and the calculation had shifted from uncertain to possible. A careful nod. She wasn't a person who performed relief.
 
@@ -859,7 +1231,11 @@ Not standard. Rook had expected him to pull routing data from mesh or ask for Vo
 
 He spread it on the cleared table. The transport case had been moved to the storage room. The workstation ran Vox's isolated copy of the Headcount data. The map took the center of the surface.
 
-"Z6 and the buffer south," he said, setting his hands at two points to establish the geography. His hands were large and still on the page, the reinforced bone of his combat frame showing in how they rested — not weight, exactly, but density. "Nari's residential block is here, Z6 eastern sector, four blocks from the buffer boundary." His finger moved east, then traced a corridor. "The Thorn primary patrol covers this — the arterial and the two cross-streets around it. The cycle runs a forty-minute rotation in the evening, dropping to twenty-five minutes between twenty-two hundred and zero two hundred, when the pedestrian density drops and the activity window opens."
+"Z6 and the buffer south," he said, setting his hands at two points to establish the geography. His hands were large and still on the page, the reinforced bone of his combat frame showing in how they rested — not weight, exactly, but density.
+
+"Nari's residential block is here, Z6 eastern sector, four blocks from the buffer boundary." His finger moved east, then traced a corridor.
+
+"The Thorn primary patrol covers this — the arterial and the two cross-streets around it. The cycle runs a forty-minute rotation in the evening, dropping to twenty-five minutes between twenty-two hundred and zero two hundred, when the pedestrian density drops and the activity window opens."
 
 Rook looked at the map. The annotations: blue marks at regular intervals she read, after a moment, as surveillance node positions. Blue brackets around three blocks — safe-house designations. Small asterisks at five points she couldn't immediately place.
 
@@ -889,11 +1265,11 @@ Scout was already keying something into her mesh.
 
 Lace had been quiet since they entered the safe house, standing at the edge of the map's orbit with the expression she wore while running an assessment she hadn't finished. She looked at the annotations — the years of precise blue marking, the dead zones and patrol rotations and safe-house designations — and her assessment resolved into something she was going to say.
 
-"How long have you had this map," she said.
+"How long have you had this map?" she asked.
 
 "Six years," Ekow said. "Continuously updated."
 
-"Six years of updating an operational map of the Lotus Z6 enforcement infrastructure." She said it flat, the way she said any fact. "You kept this current while you were running contract jobs for them."
+"Six years of updating an operational map of the Lotus Z6 enforcement infrastructure?" She said it flat, the way she said any fact. "You kept this current while you were running contract jobs for them."
 
 "Yes," he said.
 
@@ -911,7 +1287,7 @@ Lace held his gaze three seconds. Then she looked back at the map. "The dead zon
 
 "With the right threading sequence, yes." He pointed to the position. "The building has a maintenance access on the north face that connects to the crawlway junction here. That junction is the original 2180s installation — standard access protocol. If the contact team comes from the Thorn staging facility, they'll approach from the west on the arterial. That takes them away from this access point entirely. Your ingress is separate from theirs."
 
-"How long from the staging facility to her building on their standard route," Rook said.
+"How long from the staging facility to her building on their standard route?" Rook asked.
 
 "Nine minutes walking. Fourteen if they run surveillance protocol instead of a direct approach."
 
@@ -933,7 +1309,11 @@ Nobody said it.
 
 Vox said it, from the workstation, in the flat register she used when a number refused to reconcile.
 
-"The map's eighteen months stale." She hadn't looked up. "Date stamp. But you said the staging facility went active four days ago, and the rotation dropped to twenty-five-minute cycles — that's a current revision detail." Now she did look up. "The Headcount source structure. I'm reading the acquisition metadata on the query I isolated. There's a Z6 infrastructure pull four days old, keyed to a maintenance-office credential." A beat. "Ekow's credential. His contract access. You've been updating this map through the same channel we're extracting Nari across — which means the moment we move, the log shows your credential touched Z6 mapping data days before an unauthorized ingress in the exact sector."
+"The map's eighteen months stale." She hadn't looked up. "Date stamp. But you said the staging facility went active four days ago, and the rotation dropped to twenty-five-minute cycles — that's a current revision detail?"
+
+Now she did look up. "The Headcount source structure. I'm reading the acquisition metadata on the query I isolated. There's a Z6 infrastructure pull four days old, keyed to a maintenance-office credential."
+
+A beat. "Ekow's credential. His contract access. You've been updating this map through the same channel we're extracting Nari across — which means the moment we move, the log shows your credential touched Z6 mapping data days before an unauthorized ingress in the exact sector?"
 
 The room's silence changed quality.
 
@@ -957,7 +1337,9 @@ He said, instead: "The load paths in that sector are going to be complicated."
 
 Rook heard it and let it sit.
 
-"Tonight," she said. "We need the extraction route walked before twenty-two hundred. Ekow, take Scout on the route confirmation. I want current surveillance positions verified against the map, and I want to know which dead zones are still reliable at the hour we'll be using them." A beat. "Vox — before anything else, I need to know whether that acquisition timestamp can be scrubbed or buried, or whether we plan around it. If it can't move, the route moves."
+"Tonight," she said. "We need the extraction route walked before twenty-two hundred. Ekow, take Scout on the route confirmation. I want current surveillance positions verified against the map, and I want to know which dead zones are still reliable at the hour we'll be using them."
+
+A beat. "Vox — before anything else, I need to know whether that acquisition timestamp can be scrubbed or buried, or whether we plan around it. If it can't move, the route moves."
 
 "Yes," Ekow said.
 
@@ -975,21 +1357,23 @@ She looked at the spot on the cleared table where the map had been.
 
 Six years of private accounting. Now this room's. The same load. Different shoulders under it. And a trail underneath it, six years deep, with one name on every line.
 
-Adaeze was still explaining the Civic Bureau's silence when Rook said, "Yes."
+Adaeze was still naming the Purification Protocol's vote count when Rook said, "Yes."
 
-She caught up to it afterward, not during. She had agreed somewhere in the middle of the brief and only noticed it once it was done. Adaeze had been three-quarters through. The Civic Bureau had filed nothing, answered nothing, left Nari's disclosure request sitting in a queue. The Thorns had a contact schedule. Twelve hours. A document with six signatures. Rook had said yes before Adaeze reached the part about what she was actually asking the crew to do.
+She caught up to it afterward, not during. She had agreed somewhere in the middle of the brief and only noticed it once it was done. Adaeze had been three-quarters through. The Civic Bureau had filed nothing, answered nothing, left Nari's disclosure request sitting in a queue. The Thorns had a contact schedule. Twelve hours. A document with seven signatures. Rook had said yes before Adaeze reached the part about what she was actually asking the crew to do.
 
 Adaeze had paused at the word. Not surprised. She had simply heard the decision land before the pitch was finished, and she kept going anyway, because the rest was worth having. Rook listened to it as a person who had already agreed and was learning, now, the exact shape of what she had agreed to.
 
 None of the rest changed her answer.
 
-She sat with that an hour later at the safe house table. Ekow's marked-up map lay under her hands. Vox was running the Headcount query on four channels. The crew was arranged around the cleared room the way they arranged themselves when they were working, not when they were relaxed. 
-
----
+She sat with that an hour later at the safe house table. Ekow's marked-up map lay under her hands. Vox was running the Headcount query on four channels. The crew was arranged around the cleared room the way they arranged themselves when they were working, not when they were relaxed.
 
 Two threads.
 
-The sculpture sat in the storage room, its data layer copied, the physical piece held. The anonymous client's drop coordinates sat unopened in her neuretics queue. She had checked them twice, confirmed the format, and decided not to read the full coordinates until she made the call on delivery. She had made it. They weren't delivering, not until she knew who the client was. That was Thread 1: hold the asset, find the source, decide.
+The sculpture sat in the storage room, its data layer copied, the physical piece held. The anonymous client's drop coordinates sat unopened in her neuretics queue. She had checked them twice, confirmed the format, and decided not to read the full coordinates until she made the call on delivery.
+
+She had made it.
+
+They weren't delivering, not until she knew who the client was. That was Thread 1: hold the asset, find the source, decide.
 
 The extraction was Thread 2. Get Nari clear before the Thorn team finished their route work. Get the document out with her. Then decide what to do with that too.
 
@@ -999,11 +1383,11 @@ She walked it through out loud. Ekow on the extraction route — the Z6 knowledg
 
 Six people, two jobs, one source they didn't yet know they shared.
 
-"The sculpture client," Lace said. She was looking at the ceiling, the way she did when she was turning something over. "Anonymous. Twelve thousand. Three tries before us. They waited long enough for the piece to move twice." A pause. "They knew it existed and they knew it was in the secondary market. They didn't know exactly where for three months. That's a strange gap for someone who wants a thing badly enough to pay Φ12,000."
+"The sculpture client," Lace said. She was looking at the ceiling, the way she did when she was turning something over. "Anonymous. Φ12,000. Three tries before us. They waited long enough for the piece to move twice." A pause. "They knew it existed and they knew it was in the secondary market. They didn't know exactly where for three months. That's a strange gap for someone who wants a thing badly enough to pay Φ12,000."
 
 "They lost the chain of custody when the courier went to ground," Vox said. "The piece hit the gray market without them knowing. They tracked it through the public feeds, and public feeds run slow."
 
-"Why would anyone with the money for a Φ12,000 recovery not have direct eyes on the Z6 secondary market," Lace said. She wasn't asking anyone. She was asking the situation.
+"Why would anyone with the money for a Φ12,000 recovery not have direct eyes on the Z6 secondary market?" Lace asked. She wasn't asking anyone. She was asking the situation.
 
 Ekow was quiet.
 
@@ -1013,7 +1397,9 @@ Ekow was quiet.
 
 She said it without looking at Ekow. Nobody looked at Ekow.
 
-The room put it together in silence, which was faster. The anonymous client for Headcount: Φ12,000, three tries, fifteen years of Gray Zone demographics filed in heritage-classification format. Ekow going quiet when she first named that format at the transit station. Adaeze's brief, and the Protocol's first requirement — a demographic baseline.
+The room put it together in silence, which was faster.
+
+The anonymous client for Headcount: Φ12,000, three tries, fifteen years of Gray Zone demographics filed in heritage-classification format. Ekow going quiet when she first named that format at the transit station. Adaeze's brief, and the Protocol's first requirement — a demographic baseline.
 
 The two threads led to one source. Nobody had said it as a confirmed fact. It wasn't on the board yet. But you could see the shape of it, the way you can see a crack that the paint hasn't reached — not the fault itself, just where the wall has been carrying it.
 
@@ -1021,11 +1407,13 @@ The two threads led to one source. Nobody had said it as a confirmed fact. It wa
 
 "Working on it," Vox said. "The contract wall through Ferris is solid. But whoever set up the drop used a commercial staging address, and those have lease records. It takes time."
 
-"How much."
+"How much?" Rook asked.
 
 "Half a day. Less if the trail's shallow."
 
-She nodded. Half a day was enough to finish the extraction if it ran clean. If they had the name by the time Nari was out, they'd hold both threads at once. What to do with two threads that led to the same source was a question for after they'd confirmed the source. One problem at a time.
+She nodded. Half a day was enough to finish the extraction if it ran clean. If they had the name by the time Nari was out, they'd hold both threads at once.
+
+What to do with two threads that led to the same source was a question for after they'd confirmed the source. One problem at a time.
 
 "If we're right," Boiler said, carefully, "then the client wants both what we're holding and Nari kept quiet."
 
@@ -1041,19 +1429,21 @@ He took that in. "So this isn't two jobs with one source. This is us working aga
 
 Boiler looked at the ceiling a moment, then back down. "All right," he said — his way of telling you he'd worked it through and accepted the answer without needing it to be a nicer answer than it was.
 
-Lace unfolded her arms. "The twelve thousand is gone."
+Lace unfolded her arms. "The Φ12,000 is gone."
 
-"The twelve thousand was never the point," Rook said.
+"The Φ12,000 was never the point," Rook said.
 
 "I know. I'm saying it for the record." A pause. "What does the client do when we don't deliver?"
 
 "They go to Ferris. Ferris tells them the delivery's delayed. The contract language gives us enough slack for that hold. They won't lean on Ferris right away — they'll wait. And while they wait, the extraction finishes and Nari's documents start moving through disclosure."
 
-"And if they connect us to the extraction before her documents are filed."
+"And if they connect us to the extraction before her documents are filed?" Lace asked.
 
 "They might," Rook said. "We'll be faster."
 
-Lace held that a moment. Then she nodded — not Boiler's structural all right, but something closer to her own. The nod of a woman who had spent years living inside other people's positions and had just found, in this one, a reason to live inside her own.
+Lace held that a moment. Then she nodded — not Boiler's structural all right, but something closer to her own.
+
+The nod of a woman who had spent years living inside other people's positions and had just found, in this one, a reason to live inside her own.
 
 Rook looked around the table. Six people who hadn't been in the same room three weeks ago, now sitting around it in the shape of a crew that had already committed.
 
@@ -1078,8 +1468,6 @@ She looked up from wherever she'd been.
 Lace smiled — the small real one, the one she didn't put on for anyone. "I'll know before you do," she said.
 
 "Yes," Rook said. "You probably will."
-
-## Old Harbor
 
 She turned north. Nari's building was two blocks ahead.
 
@@ -1107,13 +1495,19 @@ The easy exit had just become the only exit, and it was behind them.
 
 They moved toward the stairwell.
 
-Then Scout's voice broke the channel, low and fast. "Hold. Movement on the entry floor. Two — no, three. Not residents. They came in slow and split the moment they cleared the door. That's a search pattern."
+Then Scout's voice broke the channel, low and fast.
 
-Rook stopped. Behind her, Nari stopped too — no question, no gasp, just the stillness of a person who had rehearsed every version of this except the one where someone was already coming.
+"Hold. Movement on the entry floor. Two — no, three. Not residents. They came in slow and split the moment they cleared the door. That's a search pattern."
+
+Rook stopped.
+
+Behind her, Nari stopped too — no question, no gasp, just the stillness of a person who had rehearsed every version of this except the one where someone was already coming.
 
 "Lace," Rook said. "The exit route."
 
-A beat too long. "The east crawlway's compromised. There's a second team staged at the maintenance access — they were sitting on it before we got here. Boss, they didn't follow us in. They were already waiting for the route."
+A beat too long.
+
+"The east crawlway's compromised. There's a second team staged at the maintenance access — they were sitting on it before we got here. Boss, they didn't follow us in. They were already waiting for the route."
 
 Rook's stomach went cold and flat. Someone had known. Not the address — the route. The one Scout had confirmed. The one they'd loaded.
 
@@ -1123,19 +1517,29 @@ Rook's stomach went cold and flat. Someone had known. Not the address — the ro
 
 Three years of readiness, a bag packed and a name filed and a chair pointed at the door — and none of it had planned for the door being watched from the other side.
 
-Nari spoke, level as ever, the voice she'd used for *Emre died twelve years ago*. "They found me. Or they found you coming for me." A pause. "It doesn't matter which. We can't use the door, and we can't use the crawlway."
+Nari spoke, level as ever, the voice she'd used for *Emre died twelve years ago*.
+
+"They found me. Or they found you coming for me."
+
+A pause.
+
+"It doesn't matter which. We can't use the door, and we can't use the crawlway."
 
 "No," Rook said. "We can't."
 
 The primary route was gone.
 
-Behind them, the photograph stayed on the shelf — a man and a woman at a table, an ordinary Tuesday. The apartment door was closed. The room was as it had been, except for the missing bag by the door. 
+Behind them, the photograph stayed on the shelf — a man and a woman at a table, an ordinary Tuesday. The apartment door was closed. The room was as it had been, except for the missing bag by the door.
 
 The approach pattern hit Vox's channel at twenty-three forty-seven.
 
 Rook felt the shift before Vox spoke — the way four-channel intelligence tightened when one channel found something and the others made room. The channel narrowed. Then Vox.
 
-"Thorn contact signature. Three blocks west, moving east on the arterial. Two-person contact team, surveillance protocol." Two seconds while she ran the route. "ETA to Nari's building is sixteen minutes if they stay on the arterial. Twelve if they take the cross-street cutoff."
+"Thorn contact signature. Three blocks west, moving east on the arterial. Two-person contact team, surveillance protocol."
+
+Two seconds while she ran the route.
+
+"ETA to Nari's building is sixteen minutes if they stay on the arterial. Twelve if they take the cross-street cutoff."
 
 Rook looked at Ekow.
 
@@ -1157,13 +1561,13 @@ The margin was thin.
 
 "West stairwell," he said, one floor down. "I can hear the ground-floor door if it opens."
 
-"If they reach the entrance before we're clear."
+"If they reach the entrance before we're clear?"
 
 "I know," he said. Nothing more. He didn't need more.
 
 Ekow was already moving toward the stairwell. Not running — the building was asleep, and running woke people, and woken people cost minutes they didn't have. He moved at the pace that covers ground without announcing it.
 
-"East service corridor," he said, turning briefly, voice low. "Off the east stairwell, out to the maintenance access on the north face. If they come in the main entrance, the east corridor takes us clear of their line entirely. Four doors from here."
+"East service corridor," he said, turning briefly, voice low. "Off the east stairwell, out to the maintenance access on the north face. If they come in the main entrance, the east corridor takes us clear of their line entirely. Three doors from here."
 
 "Scout," Rook said.
 
@@ -1281,11 +1685,15 @@ Forty-five seconds was enough.
 
 The maintenance staircase opened behind a door in the east face of the Old Harbor waterfront building — a door you had to know was there before the lock mattered. Ekow found it by hand in the dark. He had come once in daylight to set his bearings, but every use after that had been at night, and the panel was built for night: flush with the ferrocement, the recessed handle invisible until you put your palm on the right stretch of wall and felt the inset.
 
-The sequence was mechanical. Depress, rotate left, depress. No electronics. Old enough to predate the Syndicate's current access system, put in when the waterfront went up, back when the maintenance crews got one code and the people running the supply lines got another — the crews weren't meant to know what the lines carried. Nobody had ever updated the assumption because nobody had needed to. It worked.
+The sequence was mechanical. Depress, rotate left, depress. No electronics. Old enough to predate the Syndicate's current access system, put in when the waterfront went up, back when the maintenance crews got one code and the people running the supply lines got another — the crews weren't meant to know what the lines carried.
+
+Nobody had ever updated the assumption because nobody had needed to. It worked.
 
 He had used this door eleven times. In his other life. Going the other way.
 
-The staircase was fifteen steps down, narrow, ferrocement on both sides, close enough that his shoulders knew the walls without touching them. The smell of the canal reached them thirty meters before the canal did — enclosed water, old infrastructure, not clean but honest. Scout's forward crawler ran point, its amber indicator the only light, the floor showing in a narrow ring and nothing past it.
+The staircase was fifteen steps down, narrow, ferrocement on both sides, close enough that his shoulders knew the walls without touching them. The smell of the canal reached them thirty meters before the canal did — enclosed water, old infrastructure, not clean but honest.
+
+Scout's forward crawler ran point, its amber indicator the only light, the floor showing in a narrow ring and nothing past it.
 
 Rook counted the steps. Fifteen down. The landing.
 
@@ -1295,7 +1703,9 @@ At intervals, iron cable housings jutted from the embankment wall into the walkw
 
 Boiler ducked once at a junction where the housings cut the clearance. He found the crouch on the second step and held it.
 
-The diesel reached them at a hundred and fifty meters — old engine and enclosed water. The dock showed at the corridor's end: covered, the roof four meters above the waterline, in good repair because it saw regular use. Iron mooring cleats. Iron chain guides. The hardware of a place built to move things quietly, and it had been moving them quietly for twelve years.
+The diesel reached them at a hundred and fifty meters — old engine and enclosed water.
+
+The dock showed at the corridor's end: covered, the roof four meters above the waterline, in good repair because it saw regular use. Iron mooring cleats. Iron chain guides. The hardware of a place built to move things quietly, and it had been moving them quietly for twelve years.
 
 The boat was twelve meters, hull low, a maintenance-vessel build that read on the harbor grid as exactly what it claimed. GLMZ Harbor Services registration, a maintenance code, standard ID. The engine was old enough to hear and serviced enough to be steady — kept running because it was useful. The same logic the Syndicate ran on the community above them.
 
@@ -1303,7 +1713,9 @@ The operator stood at the mooring line. A woman in her fifties, weathered the wa
 
 Only at Ekow. She handed him the line and went to the controls without a word. The whole transaction was a look and a rope.
 
-Rook set the crew by position — Boiler at the stern, Vox and Lace amidships, Scout at the starboard rail where her crawlers could reach the hull and the harbor perimeter. Rook took the port midship and watched Nari board last, stepping from dock to hull with the steady movement of a body doing its task while the mind is somewhere else entirely.
+Rook set the crew by position — Boiler at the stern, Vox and Lace amidships, Scout at the starboard rail where her crawlers could reach the hull and the harbor perimeter.
+
+Rook took the port midship and watched Nari board last, stepping from dock to hull with the steady movement of a body doing its task while the mind is somewhere else entirely.
 
 Nari looked at the harbor.
 
@@ -1317,7 +1729,13 @@ The boat moved east.
 
 The silence came with it. Not arranged — the natural quiet of a crew after a job that had run from orderly to pressured to controlled in twelve minutes and was now done. Nobody had anything to add. Faking relief would have been a lie, and the crew didn't trade in those. The extraction was finished. The witness was aboard. Whatever needed working through would get worked through later, somewhere that allowed it.
 
-Scout ran her crawlers along the hull, their lights showing at the waterline. Boiler watched the way they'd come. Vox had something low-priority on a thread, not surfaced. Lace read the western shoreline the way she read any place she was getting ready to wear.
+Scout ran her crawlers along the hull, their lights showing at the waterline.
+
+Boiler watched the way they'd come.
+
+Vox had something low-priority on a thread, not surfaced.
+
+Lace read the western shoreline the way she read any place she was getting ready to wear.
 
 Ekow stood at the bow and did not turn around.
 
@@ -1327,17 +1745,29 @@ Some of what he had moved through this corridor was on the list. Not all of it �
 
 None of it could be taken back.
 
-At the ten-minute mark the operator's hand came off the throttle and settled on a channel display Ekow couldn't read from the bow. The engine note dropped. He turned then — the first time he'd turned all crossing — and saw what she'd seen: a second hull, low and dark, holding station across the outer channel where nothing was scheduled to be at this hour. Harbor Services didn't patrol the outer approach at zero-hundred. Nothing did. The boat that was there had no running lights and no reason, and it sat directly on the standard channel line the operator had been about to take.
+At the ten-minute mark the operator's hand came off the throttle and settled on a channel display Ekow couldn't read from the bow. The engine note dropped.
 
-"Perimeter contact, starboard bow," Scout said, low, her crawler feed already on it. "Stationary. No registration broadcast."
+He turned then — the first time he'd turned all crossing — and saw what she'd seen: a second hull, low and dark, holding station across the outer channel where nothing was scheduled to be at this hour.
 
-The operator looked at Ekow. Not at Rook — at Ekow. The look asked a question the rope hadn't: the channel was hers, but the choice of whether to hold the standard line or break for the slow inner cut was his, because he was the only one aboard who'd run this water enough to know what the inner cut cost. The standard channel put them past the dark hull at forty meters, inside whatever it was watching for. The inner cut added distance and time and ran them shallow, over grating and old pilings that the harbor's shape had been keeping a secret for four decades — the kind of secret that stopped being one the moment a hull scraped it.
+Harbor Services didn't patrol the outer approach at zero-hundred. Nothing did. The boat that was there had no running lights and no reason, and it sat directly on the standard channel line the operator had been about to take.
+
+"Perimeter contact, starboard bow," Scout said, low, her crawler feed already on it.
+
+"Stationary. No registration broadcast."
+
+The operator looked at Ekow. Not at Rook — at Ekow. The look asked a question the rope hadn't: the channel was hers, but the choice of whether to hold the standard line or break for the slow inner cut was his, because he was the only one aboard who'd run this water enough to know what the inner cut cost.
+
+The standard channel put them past the dark hull at forty meters, inside whatever it was watching for. The inner cut added distance and time and ran them shallow, over grating and old pilings that the harbor's shape had been keeping a secret for four decades — the kind of secret that stopped being one the moment a hull scraped it.
 
 Ekow held the moment longer than he wanted to. He knew the crossing took thirty-two minutes. He had never once had to decide anything about it.
 
-He put his hand flat on the rail and gave the operator the inner cut — two fingers angled off the standard line, the signal a maintenance crew used when a scheduled slot was fouled. The operator took it without expression and brought the bow around, and the engine dropped again, and the boat that had carried this route toward the Lotus for twelve years went slow and shallow over water that had never been asked to hide anyone before.
+He put his hand flat on the rail and gave the operator the inner cut — two fingers angled off the standard line, the signal a maintenance crew used when a scheduled slot was fouled.
 
-The boat ran the inner harbor in twenty-two minutes and the outer in ten more. Thirty-two, exactly, the number the harbor's shape produced at maintenance speed on the standard channel.
+The operator took it without expression and brought the bow around, and the engine dropped again, and the boat that had carried this route toward the Lotus for twelve years went slow and shallow over water that had never been asked to hide anyone before.
+
+The boat ran the inner harbor in twenty-two minutes and the outer in fourteen more.
+
+Thirty-six, not the thirty-two the standard channel would have made it.
 
 Nari didn't move from the rail for twenty-eight of them. She watched the water — the surface under the hull, the wake opening behind them and closing again as if the boat had never passed. Not working through it. Just watching, present somewhere without being anywhere in particular.
 
@@ -1349,7 +1779,9 @@ She looked at him, and he didn't turn, and after a while she looked back at the 
 
 Rook watched it and let it be.
 
-The Z3 shoreline came up ahead. A commercial waterway access: covered berth, an overnight maintenance slot, the contact Vox had set two hours before. The operator brought the hull in with the same economy she'd used leaving, and held the line while the crew stepped off in the order they'd boarded — Rook first, then Nari, then the others.
+The Z3 shoreline came up ahead. A commercial waterway access: covered berth, an overnight maintenance slot, the contact Vox had set two hours before.
+
+The operator brought the hull in with the same economy she'd used leaving, and held the line while the crew stepped off in the order they'd boarded — Rook first, then Nari, then the others.
 
 Ekow came off last.
 
@@ -1361,47 +1793,62 @@ He took his hand out. He turned from the harbor and walked toward the transit no
 
 Rook had seen it from thirty meters. She looked away when he turned.
 
-"Vehicle's staged," Vox said, in the channel. "Z3 commercial registration, covered cargo, overnight route."
+"Vehicle's staged," Vox said, in the channel.
+
+"Z3 commercial registration, covered cargo, overnight route."
 
 "We have it," Rook said.
 
 The vehicle sat at the edge of the transit node, sealed compartment, the driver's face belonging to someone paid not to know what was in back. The crew loaded in. The door sealed. The vehicle moved north.
 
-Old Harbor was behind them. The canal corridor closed. The dock was already logging the boat's departure as routine — a harbor services vessel finishing its overnight run, heading back to its mooring, nothing to note. The Syndicate's supply line, run for twelve years to carry cargo toward the Lotus, had spent thirty-two minutes carrying one person away from them. Only the direction was different.
+Old Harbor was behind them. The canal corridor closed. The dock was already logging the boat's departure as routine — a harbor services vessel finishing its overnight run, heading back to its mooring, nothing to note.
 
-Nari sat with the bag in her lap, her hands on the strap, her eyes on the ceiling of the compartment. She had been ready for three years for the night she'd board a boat at zero-hundred and cross the harbor. She had packed carefully. She had imagined the leaving, the crossing, the moment of it.
+The Syndicate's supply line, run for twelve years to carry cargo toward the Lotus, had spent thirty-two minutes carrying one person away from them. Only the direction was different.
+
+Nari sat with the bag in her lap, her hands on the strap, her eyes on the ceiling of the compartment.
+
+She had been ready for three years for the night she'd board a boat at zero-hundred and cross the harbor.
+
+She had packed carefully. She had imagined the leaving, the crossing, the moment of it.
 
 She had not imagined the silence. You couldn't pack for that.
 
-The vehicle ran north through the Z3 arterial. Eleven minutes to the safe house. The GLMZ ran on around them at zero-one-thirty, doing what it always did — keeping the infrastructure up, keeping the services running, not asking who they were for.
+The vehicle ran north through the Z3 arterial. Eleven minutes to the safe house.
+
+The GLMZ ran on around them at zero-one-thirty, doing what it always did — keeping the infrastructure up, keeping the services running, not asking who they were for.
 
 The silence held the whole eleven minutes.
 
 Nobody broke it. There was nothing to add.
 
-## The Protocol Named
-
 At 0712, Nari said: "The administrative authorization has Seul-ki's direct signature."
 
 Vox's pen stopped.
 
-"That's not possible," she said. It came out of her before the crew's rule reasserted itself, and it landed hard in the room's careful quiet. "I've read the Phase 0 authorization chain off the Headcount metadata. Twice. The signature block terminates at the Stem level. There's no Root-level mark on it. If Seul-ki signed, the data doesn't show it — which means either the data's been scrubbed, or the signature you're describing lives on a document I can't see and can't corroborate."
+"That's not possible," she said. It came out of her before the crew's rule reasserted itself, and it landed hard in the room's careful quiet.
+
+"I've read the Phase 0 authorization chain off the Headcount metadata. Twice. The signature block terminates at the Stem level. There's no Root-level mark on it. If Seul-ki signed, the data doesn't show it — which means either the data's been scrubbed, or the signature you're describing lives on a document I can't see and can't corroborate."
 
 Nari held very still. The composure she'd carried all night stood at a new angle — not shaken, but confronted with a thing she hadn't accounted for.
 
 "I saw it," she said. "The active version, 2211. Her mark was on the founding document's authorization page."
 
-"Founding document, 2211," Vox said. "Not the Phase 0 deployment order. Those are eleven years apart. You're joining two things across eleven years from memory and one signature you saw once." She set the pen down flat. "I'm not saying you're wrong. I'm saying the transcript now has a seam in it — the load-bearing name, the one that makes the whole thing prosecutable, rests on a record nobody can produce and metadata that actively contradicts it. If we build the operation on Seul-ki and the seam gives, we've built it on nothing."
+"Founding document, 2211," Vox said. "Not the Phase 0 deployment order. Those are eleven years apart. You're joining two things across eleven years from memory and one signature you saw once."
+
+She set the pen down flat. "I'm not saying you're wrong. I'm saying the transcript now has a seam in it — the load-bearing name, the one that makes the whole thing prosecutable, rests on a record nobody can produce and metadata that actively contradicts it. If we build the operation on Seul-ki and the seam gives, we've built it on nothing."
 
 The room, which had spent the night deciding not to interrupt, sat with the fact that interruption had finally been owed — and had come at the worst possible place, at the center Nari had saved for last.
 
 Rook looked at the fourteen pages. Thirteen of them held. The fourteenth held the name that mattered, and now the fourteenth held a hole.
 
 She said it in the same level voice as it was owed.
-
 "Then we don't have it," she said.
 
-She said the Root's name flat, without emphasis, nothing added to make it more than a name. It was the name of the person who had signed off on the Phase 0 deployment and the founding document, who had run the Lotus Syndicate for thirty years. She named her last, not first, because she was the center, and you save the center for last.
+She said the Root's name flat, without emphasis, nothing added to make it more than a name.
+
+It was the name of the person who had signed off on the Phase 0 deployment and the founding document, who had run the Lotus Syndicate for forty years.
+
+She named her last, not first, because she was the center, and you save the center for last.
 
 Rook wrote it down. Then, beside it, she wrote a second word, smaller: *unconfirmed.*
 
@@ -1425,7 +1872,9 @@ She let it sit.
 
 "Fifteen years," Ekow said. He said it like a man who had already run the sum and gotten the same answer again.
 
-"The oldest entry is dated two months after the Charter retired the field," Vox said. "The sculpture starts the day the public record stops." She moved to the second sheet. "That's what the founding document calls the demographic baseline — a registry that can exist without authorization, because it's built around a field the official record no longer admits it keeps."
+"The oldest entry is dated two months after the Charter retired the field," Vox said. "The sculpture starts the day the public record stops."
+
+She moved to the second sheet. "That's what the founding document calls the demographic baseline — a registry that can exist without authorization, because it's built around a field the official record no longer admits it keeps."
 
 Scout said, "The sculpture was built for this."
 
@@ -1433,7 +1882,7 @@ Scout said, "The sculpture was built for this."
 
 She looked at the four sheets. "The commission went to the Gray Horizon Collective in 2213 — a Z4 art and civic documentation group. It wouldn't have looked strange to them. The brief specified the data format: civic-grid schema, structured data built into a physical sculpture, public installation in a Z3 collector's market."
 
-"Publicly visible," Rook said.
+"Publicly visible?" Rook asked.
 
 "A public installation muddies the ownership question," Vox said. "If the data is public — if anyone can read the sculpture's data layer — it isn't a private registry. It's a public artwork with accessible data. The Charter's privacy provisions don't touch public artworks the way they touch private databases." A pause. "The sculpture is both. Publicly available, privately useful. The data is there for anyone who can read it. The only people who can read it the way it's meant to be read are the people who commissioned it."
 
@@ -1447,7 +1896,7 @@ She moved to the third sheet.
 
 "Second component: neuretics registry access." She had an extract from the Z6 test cluster's admin logs — gray-market, from an archive she wasn't going to name. "Phase 0. Six months. The 200,000 Z6 records now in Lotus hands. Confirmed by Nari and by the log signature." She pointed to a line. "It ran through a Civic Systems Engineer. Grade 4. The access needed a Grade 4's credentials — the neuretics infrastructure is Grade 4 minimum for direct registry queries, per the Charter's technical rules."
 
-"They coerced someone," Rook said.
+"They coerced someone?" Rook asked.
 
 "That's the read," Vox said. "The test deployment needed a Grade 4 engineer's cooperation over and over, for six months. That's not a single breach. Someone inside the infrastructure was feeding it." She pointed to the fourth sheet. "The deployment window. The generation update. Thirty days out. During the update, Article 14 review is suspended. If the full registry backdoor — not the test cluster, the full grid — is in Lotus hands before the update starts, they run the complete Phase 1 query set during the window, and the results are delivered before review comes back online."
 
@@ -1465,17 +1914,23 @@ Vox's jaw set. "The signature isn't inference. The same credential runs the same
 
 "And if the archive you won't name is the arrangement?" Lace said. "Gray-market logs are cheap to write. You built three components off two of them. If the second's cooked, the whole shape is cooked, and we've been reading a story someone wanted us to read since the Z3 market."
 
-The four sheets sat between them, and for a moment nobody moved to defend either one. It was Boiler who broke it, quietly — not taking Lace's side, taking the crack she'd opened. "If it's a plant, it's a plant that predicted us taking the sculpture. That's a lot of engineering for a story." But he said it slow, and it didn't close the question. It widened it.
+The four sheets sat between them, and for a moment nobody moved to defend either one.
 
-Vox looked at her own analysis differently for the first time in eleven hours — not at whether it connected, but at whether it could be made to connect by someone who wanted it to. She didn't have the answer. That was the disaster: the shape held, and she could no longer be sure the shape was hers.
+It was Boiler who broke it, quietly — not taking Lace's side, taking the crack she'd opened. "If it's a plant, it's a plant that predicted us taking the sculpture. That's a lot of engineering for a story." But he said it slow, and it didn't close the question. It widened it.
 
-"Who organized the collection?" Ekow said.
+Vox looked at her own analysis differently for the first time in eleven hours — not at whether it connected, but at whether it could be made to connect by someone who wanted it to.
+
+She didn't have the answer.
+
+That was the disaster: the shape held, and she could no longer be sure the shape was hers.
+
+"Who organized the collection?" Ekow asked.
 
 "The brief came from a Z5 cultural development foundation," Vox said. "Established 2212 — one year before the commission. Three directors on the incorporation papers. Two have no other affiliations. The third is a former Stem assistant."
 
 Nobody asked her to confirm the link. It was confirmed.
 
-"How long did we have the sculpture before the Thorn team flagged us," Scout said.
+"How long did we have the sculpture before the Thorn team flagged us?" Scout asked.
 
 "Park was watching it for three weeks before we arrived," Vox said. "He clocked our entry and exit. He didn't move."
 
@@ -1517,7 +1972,9 @@ The Headcount sculpture sat in the sealed cargo case in the corner. The first co
 
 The lines were drawn. Vox had drawn them. The crew had watched them connect — and Lace had put a finger on one of them and asked whether it had been drawn for them to find.
 
-Rook stood at the table with the four sheets in front of her, the crew seated, and looked at the window a moment. Not through it — the basement window showed the Z3 street at ankle height, the late-afternoon traffic passing in fragments of shoes and wheels. She wasn't seeing the street. She was seeing the shape of the thing.
+Rook stood at the table with the four sheets in front of her, the crew seated, and looked at the window a moment. Not through it — the basement window showed the Z3 street at ankle height, the late-afternoon traffic passing in fragments of shoes and wheels.
+
+She wasn't seeing the street. She was seeing the shape of the thing.
 
 Then she turned to the crew.
 
@@ -1563,13 +2020,17 @@ Rook looked at the table.
 
 She let the last part sit.
 
-"The Syndicate runs eleven clinics in Z5 and Z6," she said. "The free clinics. Seven community markets across the Z4-through-Z7 corridor. A debt structure that is the mechanism of leverage and the mechanism of keeping about forty thousand people in the buffer zone housed — people who couldn't hold their addresses without the Lotus's debt restructuring. The community building Boiler's been working depends on Lotus load-bearing investment." She looked at him. "Tell them."
+"The Syndicate runs eleven clinics in Z5 and Z6," she said. "The free clinics. Seven community markets across the Z4-through-Z7 corridor. A debt structure that is the mechanism of leverage and the mechanism of keeping about forty thousand people in the buffer zone housed — people who couldn't hold their addresses without the Lotus's debt restructuring. The community building Boiler's been working depends on Lotus load-bearing investment."
+
+She looked at him. "Tell them."
 
 He didn't hesitate. "The community center in Z5/Z6 has a load-path dependency on the market integration from 2209," he said. "The market columns are structural supports for the housing above. The housing above holds the center's upper-floor operations — the childcare cooperative, the adult education rooms, the space one of the free clinics uses as a medical intake satellite. If the market infrastructure fails — if the funding that maintains the columns stops, if the maintenance access that keeps the joints working is pulled — the housing above is compromised within two to three years." He said it with his structural precision. "It's not a dramatic collapse. It's a slow failure. The building becomes unusable before it becomes dangerous. But it becomes unusable."
 
 The room took it.
 
-"The Syndicate is load-bearing," Rook said. "For the physical infrastructure. For the health services. For the debt structures that let people keep their homes. For a community that grew up around real services — not because of a conspiracy, because the services were there and they were real. The load-bearing wasn't an accident. It was the design. But the design doesn't change the weight." She looked at the table. "You can't pull the load-bearing element without the structure it holds coming down."
+"The Syndicate is load-bearing," Rook said. "For the physical infrastructure. For the health services. For the debt structures that let people keep their homes. For a community that grew up around real services — not because of a conspiracy, because the services were there and they were real. The load-bearing wasn't an accident. It was the design. But the design doesn't change the weight."
+
+She looked at the table. "You can't pull the load-bearing element without the structure it holds coming down."
 
 "Unless you provide an alternative load path," Boiler said.
 
@@ -1583,7 +2044,9 @@ The room understood.
 
 "I've been looking," Vox said. "Nothing yet. I'll keep looking."
 
-"Three threads, one source, one plan," Rook said. "The source is the Lotus Syndicate. The plan is the Protocol. The question isn't how to destroy the Syndicate — destroying it pulls the load-bearing element with no replacement, which collapses the buffer zone, which is harm to the same people the Protocol wants to harm. The question is how to make the Protocol impossible to run without wrecking the thing it's buried inside."
+"Three threads, one source, one plan," Rook said.
+
+"The source is the Lotus Syndicate. The plan is the Protocol. The question isn't how to destroy the Syndicate — destroying it pulls the load-bearing element with no replacement, which collapses the buffer zone, which is harm to the same people the Protocol wants to harm. The question is how to make the Protocol impossible to run without wrecking the thing it's buried inside."
 
 "Separate the silk from the iron," Lace said.
 
@@ -1603,7 +2066,9 @@ He looked at the table. He was thinking about something he didn't say — the lo
 
 Rook didn't push.
 
-"No one commits to either option now," she said. "We don't have all three threads. What we do now is find the third one. Everything else follows from that." She looked at the crew. "The Φ12,000 isn't what we're working for. Everybody knows that. It was a door. We walked through it. We're in the room now. What we do in the room is going to take a minute to get right."
+"No one commits to either option now," she said. "We don't have all three threads. What we do now is find the third one. Everything else follows from that."
+
+She looked at the crew. "The Φ12,000 isn't what we're working for. Everybody knows that. It was a door. We walked through it. We're in the room now. What we do in the room is going to take a minute to get right."
 
 Nobody argued.
 
@@ -1615,7 +2080,7 @@ Lace said, "How long do we have at this address?"
 
 "She comes with us. She stays until we have a resolution. Her testimony is evidence only as long as she's alive to give it." She said it plainly, the same as everything else. "She knows that. We discussed it."
 
-Scout said, "The board goes analog when we move."
+Scout said, "The board goes analog when we move?"
 
 "Already planned," Rook said.
 
@@ -1649,13 +2114,11 @@ In the cargo case in the corner, the Headcount sculpture waited. In the sleeping
 
 Twenty-nine days.
 
-## Priya's Signal
-
 The secondary safe house was a Z3 building that had been a textile cooperative until 2219 and a mixed-use building with a short commercial lease on the ground floor ever since. They'd been here four days. The operational board hung on the east wall — paper, Rook's handwriting, the four-color notation Vox used for her channel analysis.
 
 Rook had been standing at the board.
 
-She had been looking at the third column for an hour. It had one entry: neuretics registry access — coerced Grade 4 CSE — unlocated. Not blank. Waiting. A thing that was out there somewhere and hadn't been found.
+She had been looking at the third column for an hour. It had one entry: neuretics registry access — coerced Grade 4 engineer — unlocated. Not blank. Waiting. A thing that was out there somewhere and hadn't been found.
 
 At 0317, Vox looked up from the equipment table.
 
@@ -1683,7 +2146,7 @@ They looked at each other across the table.
 
 "The signal's encrypted," Vox said. "It's a standard distress structure on the guild frequency — not a message, a contact request. It says: I'm here, I have something, I need someone who can receive it on a channel the people I have a problem with aren't watching. The problem itself isn't in the signal. The signal is just a hand raised in a room that isn't supposed to have anyone in it."
 
-"Who does the guild channel route to," Rook said.
+"Who does the guild channel route to?" Rook asked.
 
 "Seven endpoints," Vox said. "Three are the guild's own administrative body — first contact for normal situations. Two are GLMZ civic oversight contacts, for escalations that need outside validation. Two are unaffiliated technical contacts — people the guild has decided can be trusted with problem reports the official channels can't touch." A pause. "One of those unaffiliated contacts is a gray-market technical broker that's been running in Z4 for eleven years. His relay touches my secondary monitoring thread on the Z4 band."
 
@@ -1705,7 +2168,7 @@ Rook looked at the signal.
 
 She had been turning the coerced engineer over all night, behind every other piece of analysis. The person who'd been feeding the Phase 0 access for six months and was presumably now being asked for the full grid. The person with the credentials, the access, and the pressure of an organization that had been patient for six months and was running out of patience as the window came up. The person who, out of options in the official channels, had gone to the one channel that exists because official channels fail.
 
-"What's the signal's encoding," she said.
+"What's the signal's encoding?" she asked.
 
 Vox pointed to a notation. "Guild standard, 2221 revision. The certificate hash is current — she renewed her guild membership this year. The Z8 origin node is on the third-tier access ring, the maintenance tier, not the administrative tier. Grade 4 engineers use it for routine checks, but it's not a front-facing access point. She's not sending from her work terminal." A pause. "She's sending from somewhere inside the infrastructure that won't show on the standard access log."
 
@@ -1713,15 +2176,15 @@ Vox pointed to a notation. "Guild standard, 2221 revision. The certificate hash 
 
 "She knows the logging system well enough to find a node that doesn't produce a logged entry," Vox said. "Which means she went looking for that node. Which means she's been planning this contact long enough to do the research."
 
-"How long before we have to answer."
+"How long before we have to answer?" Rook asked.
 
 "There's a protocol timeout," Vox said. "Standard guild rule: no response within forty-eight hours of first transmission, and it closes. She sent the first one two days ago. She has about eight hours before the window shuts." Vox looked at the interface. "She'll know it closed. She won't know whether the relay heard her."
 
-"And after that?"
+"And after that?" Rook asked.
 
 "I don't know. She can re-open it with a new transmission, but each one generates a new certificate hash and the old attempt doesn't carry forward. She'd be starting over. And each re-open is more exposure — more signals, more hashes, more chances for whoever's watching her to notice she's been reaching outside the official network."
 
-Rook looked at the third column. neuretics registry access — coerced Grade 4 CSE — unlocated.
+Rook looked at the third column. neuretics registry access — coerced Grade 4 engineer — unlocated.
 
 "Eight hours," she said.
 
@@ -1765,7 +2228,11 @@ Someone had been waiting for someone to see the hand.
 
 At 0612, Rook told Vox to open the channel.
 
-Vox built the response relay — one-way from the Z4 gray-market node, bounced through the thread that touched the guild frequency, shaped to look like a generic reply from the unaffiliated broker rather than a direct call-back. The message was short: Signal received. Channel secure. Standby. Nine words. Enough to show the relay was live. Not enough to say who was on the other end.
+Vox built the response relay — one-way from the Z4 gray-market node, bounced through the thread that touched the guild frequency, shaped to look like a generic reply from the unaffiliated broker rather than a direct call-back.
+
+The message was short: Signal received. Channel secure. Standby.
+
+Five words. Enough to show the relay was live. Not enough to say who was on the other end.
 
 Priya's answer came back in eleven minutes.
 
@@ -1777,7 +2244,9 @@ Eleven minutes was fast. Fast enough that she'd been sitting at the terminal wit
 
 The channel audio came through Vox's equipment at low volume — not broadcast, audible to the crew at the table without carrying. A voice: South Indian with Scottish inflections, the GLMZ vowel shifts of twenty years in the city laid over something older underneath. Measured. Not calm — measured the way people are measured when they're frightened and have decided the fear won't be in charge of what happens next.
 
-"This is Priya Ramanujan-Cross," the voice said. "I'm a Grade 4 Civic Systems Engineer on the Z8 neuretics registration infrastructure. I've been under coercion for six months by an organization I'll name once the channel is confirmed secure. I need help. I don't know who I'm talking to. I need to talk to someone anyway." Two seconds. "Please confirm the channel."
+"This is Priya Ramanujan-Cross," the voice said. "I'm a Grade 4 Civic Systems Engineer on the Z8 neuretics registration infrastructure. I've been under coercion for six months by an organization I'll name once the channel is confirmed secure. I need help. I don't know who I'm talking to. I need to talk to someone anyway."
+
+Two seconds. "Please confirm the channel?"
 
 Vox muted. She looked at Rook.
 
@@ -1795,15 +2264,17 @@ She started with the approach — first contact from a Lotus representative six 
 
 The first four weeks were legitimate. She ran the audit and filed the report. The report identified seventeen nodes in the Z6 test cluster that met the pilot's compatibility criteria.
 
-"I found out later the report was being used as the targeting document for the Phase 0 access," she said. "After I filed it, the representative came back with a follow-on — maintain the access channel to those seventeen nodes over six months for the pilot's monitoring." A pause. "I agreed. The monitoring looked routine. The audit had been routine. I thought the follow-on was the same."
+"I found out later the report was being used as the targeting document for the Phase 0 access," she said. "After I filed it, the representative came back with a follow-on — maintain the access channel to those seventeen nodes over six months for the pilot's monitoring."
 
-"When did you understand it wasn't," Rook said.
+A pause. "I agreed. The monitoring looked routine. The audit had been routine. I thought the follow-on was the same."
+
+"When did you understand it wasn't?" Rook asked.
 
 "Week seven," she said. "I ran a routine check on the node access logs and found query patterns that didn't match a health pilot. The queries were pulling heritage classification data. Not health data. The heritage field." Another pause. "I queried the registry to see what that field held. It held heritage entries the Meridian Charter retired from the public census in 2211. They were still in the infrastructure database. I didn't know that before I ran the query. I suspect most Grade 4 engineers don't."
 
-"What did you do," Rook said.
+"What did you do?" Rook asked.
 
-"I contacted the representative. I said the query patterns didn't match the stated scope. They told me the scope had been updated — that the monitoring now included heritage data for the pilot's community composition analysis." She said it with the flatness of someone describing a lie she'd recognized as a lie and hadn't been able to name at the time. "I asked for documentation. They produced it. It looked correct — the right signatures, the right formatting, the right authorization chain." A pause. "It was fabricated. I know that now. I didn't then."
+"I contacted the representative. I said the query patterns didn't match the stated scope. He told me the scope had been updated — that the monitoring now included heritage data for the pilot's community composition analysis." She said it with the flatness of someone describing a lie she'd recognized as a lie and hadn't been able to name at the time. "I asked for documentation. He produced it. It looked correct — the right signatures, the right formatting, the right authorization chain." A pause. "It was fabricated. I know that now. I didn't then."
 
 The escalation came at week twelve. The representative came to her in person — not sub-vocal, in her apartment. He named the organization. He showed her what they had: her query history, her node maintenance records, her involvement in the Phase 0 deployment. He gave her two options. Keep providing the access and keep the same consulting fee. Or the access history goes to the GLMZ Civic Bureau as evidence she had knowingly taken part in an unauthorized registry operation.
 
@@ -1815,19 +2286,19 @@ The escalation came at week twelve. The representative came to her in person —
 
 The room was very quiet.
 
-"How complete is the backdoor," Rook said.
+"How complete is the backdoor?" Rook asked.
 
 "Ninety percent," she said. "The final deployment key has to go into the Z8 primary infrastructure node. I've been delaying it. Producing technical reasons — compatibility testing, security review. I've run out of reasons. The deployment window — I know about the generation update, I maintain the update infrastructure, I know what the window means. The representative contacted me eight days ago. They need the final key in eleven days."
 
-"Three days before the update window opens," Rook said.
+"Fifteen days before the update window opens," Rook said.
 
-"Three days," she confirmed.
+"Fifteen days," she confirmed.
 
 Eleven days. Not thirty. Eleven.
 
 Rook looked at Vox. Vox had already noted the change on the analysis paper — the timeline that wasn't thirty days for Priya but eleven, the window before the key had to go in. After the key was in, the backdoor was live. After it was live, the Syndicate had the full grid, and whatever happened during the generation update would happen whether anyone stopped it or not.
 
-"Who else knows what you've told me," Rook said.
+"Who else knows what you've told me?" Rook asked.
 
 A pause slightly longer than the others. "No one official. I tried to file a report with the Civic Bureau in month three. I prepared the documentation. I went to the office. I sat in the waiting area." Another pause. "The representative called me while I was sitting there. He told me he knew where I was. He told me the documentation I'd prepared would be logged in the Bureau's evidence archive, which they had access to. He told me what would happen to it." A pause. "I left."
 
@@ -1835,7 +2306,7 @@ A pause slightly longer than the others. "No one official. I tried to file a rep
 
 "My supervisor knows something's wrong with my schedule," she said. "I've been running unauthorized maintenance windows — using them to build the backdoor without logging the access properly. He's noticed the discrepancy. He hasn't filed anything. I think he's hoping it resolves." A pause. "It won't resolve the way he's hoping."
 
-"Anyone outside work," Rook said.
+"Anyone outside work?" Rook asked.
 
 "No," she said. "I've been carrying this alone."
 
@@ -1843,11 +2314,13 @@ The third question and three answers. How long: six months. How complete: ninety
 
 None of the answers were good.
 
-Rook looked at the board. The third column. neuretics registry access — coerced Grade 4 CSE — unlocated.
+Rook looked at the board. The third column. neuretics registry access — coerced Grade 4 engineer — unlocated.
 
 She took the paper from her pocket. Priya Ramanujan-Cross. Grade 4. Z8. She held it and looked at the board, and the two were the same thing now.
 
-"I'm going to tell you what we are," she said, into the channel. "We're not the oversight system. We're not the Bureau. We're not going to file a report that ends up in an archive the Syndicate can reach." She said it one sentence at a time, the register exact. "We're a team that's been working this problem from a different angle for the past few weeks. We have the Lotus Syndicate's demographic baseline. We have the testimony of a witness to the Protocol's authorization vote. We need the third component. You're the third component."
+"I'm going to tell you what we are," she said, into the channel. "We're not the oversight system. We're not the Bureau. We're not going to file a report that ends up in an archive the Syndicate can reach."
+
+She said it one sentence at a time, the register exact. "We're a team that's been working this problem from a different angle for the past few weeks. We have the Lotus Syndicate's demographic baseline. We have the testimony of a witness to the Protocol's authorization vote. We need the third component. You're the third component."
 
 Silence on the channel.
 
@@ -1863,13 +2336,15 @@ A longer silence. Six seconds. Seven.
 
 Another silence. "I thought I was the only one who —" She stopped. Started again. "I thought no one outside the organization knew."
 
-"We know," Rook said. "We've known for a few weeks. We've been looking for you for less time than that." She kept her voice even, not warm — even. The register of someone telling the truth and not trying to sell it as more than the truth. "What we need from you is specific: the backdoor architecture, the deployment pathway, and the eleven days you still have before the key insertion. What we're going to offer in return is a way out of the coercion that doesn't mean going back to the Civic Bureau with documentation that vanishes into an archive the Syndicate controls."
+"We know," Rook said. "We've known for a few weeks. We've been looking for you for less time than that." She kept her voice even, not warm — even. The register of someone telling the truth and not trying to sell it as more than the truth.
 
-"What way out," she said.
+"What we need from you is specific: the backdoor architecture, the deployment pathway, and the eleven days you still have before the key insertion. What we're going to offer in return is a way out of the coercion that doesn't mean going back to the Civic Bureau with documentation that vanishes into an archive the Syndicate controls."
+
+"What way out?" she asked.
 
 "We're going to take the Protocol apart from the outside," Rook said. "When that's done, the coercion has no source anymore. The organization loses its leverage, because the thing they're using you to build stops being worth anything." A pause. "I'm not going to pretend the next eleven days are comfortable. You're going to have to keep looking cooperative to the Syndicate's representative while we work the other threads. If you break contact now, they speed up the timeline. We can't have that."
 
-"You want me to keep pretending," she said. The density again — the injustice audible under the control.
+"You want me to keep pretending?" she said. The density again — the injustice audible under the control.
 
 "For eleven days," Rook said. "After that, I'm going to give you the chance to put what you know on the record with someone who can't be bought."
 
@@ -1881,7 +2356,7 @@ Silence. Eight seconds. Nine.
 
 Another silence. Shorter.
 
-"What do you need from me," she said.
+"What do you need from me?" she asked.
 
 Rook told her. The backdoor architecture: complete technical documentation of what she'd built, how it interfaced with the Z8 primary node, what the final deployment key looked like and what its insertion required. The deployment pathway: the access window the Syndicate expected her to use, the timing, the authorization chain. The representative: how they made contact, on what channel, and what the escalation looked like.
 
@@ -1893,7 +2368,7 @@ At the forty-minute mark, Priya said, "Is that enough?"
 
 "Yes," Rook said.
 
-"Will it work," she said. Not rhetorical. A real question, from someone who'd carried a thing alone for six months and just handed it over and wasn't sure the person on the other end could hold it.
+"Will it work?" she asked. Not rhetorical. A real question, from someone who'd carried a thing alone for six months and just handed it over and wasn't sure the person on the other end could hold it.
 
 "I don't know yet," Rook said. "I'm not going to tell you it'll work when I don't know. What I can tell you is we have more pieces than we had this morning, and this morning we had more than a week ago, and we're working on it."
 
@@ -1909,7 +2384,7 @@ Rook looked at the board. The third column: no longer blank.
 
 "Good," Rook said.
 
-"When will I hear from you again."
+"When will I hear from you again?"
 
 "Within forty-eight hours," Rook said. "The channel stays open. If anything changes on your end — the timeline moves, the representative contacts you outside the scheduled window, anything — send the signal. We'll respond."
 
@@ -1917,7 +2392,9 @@ Rook looked at the board. The third column: no longer blank.
 
 The channel closed.
 
-The room was quiet a moment. Vox had five pages of documentation — the backdoor architecture, the deployment pathway, the representative's contact chain. Five pages on the third component, produced by the person who'd been building it alone for six months in a Z8 building where her supervisor was pretending not to notice the logs.
+The room was quiet a moment.
+
+Vox had five pages of documentation — the backdoor architecture, the deployment pathway, the representative's contact chain. Five pages on the third component, produced by the person who'd been building it alone for six months in a Z8 building where her supervisor was pretending not to notice the logs.
 
 Rook stood.
 
@@ -1931,7 +2408,7 @@ Ekow looked up from the pattern review at the secondary table. He'd listened to 
 
 "The representative," he said. "The contact description she gave. The channel protocol." He looked at the notes. "That's a Thorn administrative contact. Not Park's direct chain — the administrative tier, the Stems' operational staff." A pause. "I know the protocol. I've used it from the other side."
 
-"Can you identify the representative," Rook said.
+"Can you identify the representative?" Rook asked.
 
 "From the channel description and the timing, probably," he said. "I'll need an hour."
 
@@ -1955,15 +2432,15 @@ Ekow had identified the Thorn administrative representative in forty minutes ins
 
 She looked at it from across the room.
 
-The surface was a section of the old textile cooperative's layout board — two meters by one, pinned at the corners, solid enough to write on with real force. No electronics, no network. Paper and ink and information organized by hand, living only here, visible only to the people in this room.
+The surface was a section of the old textile cooperative's layout board - two meters by one, pinned at the corners, solid enough to write on with real force. No electronics, no network. Paper and ink and information organized by hand, living only here, visible only to the people in this room.
 
 Three columns.
 
-The first ran down the left under THREAD ONE. The Headcount sculpture. Gray Horizon Collective commission, 2213. Commissioned by a Z5 cultural development foundation — front entity, Lotus administrative origin. Civic-grid schema Version 4.2, infrastructure, not public. Heritage classification field. Z4-Z7 corridor, fifteen years: 2211-2226. Coverage starts at the Charter's heritage-field retirement. In our possession: Z3 secondary safe house, sealed cargo case. Below it, in a different ink: Protocol requirement 1 of 3: demographic baseline. STATUS: SECURED.
+The first ran down the left under THREAD ONE. The Headcount sculpture. Gray Horizon Collective commission, 2213. Commissioned by a Z5 cultural development foundation - front entity, Lotus administrative origin. Civic-grid schema Version 4.2, infrastructure, not public. Heritage classification field. Z4-Z7 corridor, fifteen years: 2211-2226. Coverage starts at the Charter's heritage-field retirement. In our possession: Z3 secondary safe house, sealed cargo case. Below it, in a different ink: Protocol requirement 1 of 3: demographic baseline. STATUS: SECURED.
 
 The second ran down the middle under THREAD TWO. Lee Nari, alias Jin Mirae. Former Lotus Stem adjutant to Jang Yong-su, 2204-2211. Cast out 2211. Witnessed the Protocol authorization vote: 7-2 Stem majority, Root authorization, Seul-ki's direct signature. Testified to the founding document provisions, the Phase 0 personnel, the Phase 1 timeline, the vote record, the Root's identity. Currently in the safe house. Below it: Protocol evidence complete. Testimony of the authorization vote. Root identified: Yim Seul-ki, 73, thirty years as Syndicate head. STATUS: SECURED.
 
-The third ran down the right under THREAD THREE. Priya Ramanujan-Cross. Grade 4, Z8 Civic Infrastructure Division, Neuretics Registration Systems. Coercion begun six months ago through a Thorn administrative contact — Lotus, Stems tier, identity established. Phase 0: test cluster access, six months, 200,000 Z6 records. Phase 1 backdoor: full-grid query access, 90% complete, final deployment key pending. Key insertion deadline: 11 days. Deployment window: Z8 primary node, maintenance access, Thorn scheduling. Below it: Protocol requirement 2 of 3: neuretics registry access. STATUS: ACTIVE, NOT YET DEPLOYED.
+The third ran down the right under THREAD THREE. Priya Ramanujan-Cross. Grade 4, Z8 Civic Infrastructure Division, Neuretics Registration Systems. Coercion begun six months ago through a Thorn administrative contact - Lotus, Stems tier, identity established. Phase 0: test cluster access, six months, 200,000 Z6 records. Phase 1 backdoor: full-grid query access, 90% complete, final deployment key pending. Key insertion deadline: 11 days. Deployment window: Z8 primary node, maintenance access, Thorn scheduling. Below it: Protocol requirement 3 of 3: neuretics registry access. STATUS: ACTIVE, NOT YET DEPLOYED.
 
 Under all three columns, running the width of the board, Rook had written two lines. DEPLOYMENT WINDOW: 26 days (generation update begins). KEY INSERTION DEADLINE: 11 days.
 
@@ -1981,7 +2458,7 @@ Scout got up first and stood in front of it. She read it for two minutes without
 
 "From the minute we took the Ferris contract," Rook said. "The sculpture was already the demographic baseline. The anonymous client was already the Lotus. We recovered their first component for them, took their money, and then found out what we were holding." She looked at the board. "At which point we were in it regardless."
 
-"Do they know that we know," Scout said.
+"Do they know that we know?" Scout asked.
 
 "Park knows we have the sculpture and the witness. He doesn't know about Priya. He may not know the witness in detail — he knows we extracted her, not what she gave us." Rook pointed at the second column. "Nari's testimony is ours, but it isn't visible to them yet. The Priya contact went through the guild relay, which isn't on the Syndicate's network. The third column is the one piece of this board they can't see."
 
@@ -1989,17 +2466,17 @@ Boiler stood and came to the board beside Scout. He was reading the first column
 
 He looked at Z4-Z7 corridor, 15 years and was quiet a moment.
 
-"The debt distribution data," he said. "In the schema — it covers the Z5/Z6 buffer zone."
+"The debt distribution data," he said. "In the schema — it covers the Z5/Z6 buffer zone?"
 
 "Yes," Vox said, from the table.
 
-"My building," he said. "The community center. The renovation. The households in it. The childcare cooperative." He said it without drama, the way an engineer names a structural fact. "The people in those households are in the Phase 1 displacement set."
+"My building," he said. "The community center. The renovation. The households in it. The childcare cooperative." He said it without drama, the way an engineer names a structural fact. "The people in those households are in the Phase 1 displacement set?"
 
 "Yes," Vox said.
 
 He looked at the column a long time. He was running the same calculation he'd been running since Old Harbor — the welded market columns, the load-bearing dependency. But now it had names in it. Not abstract community members. The specific households he'd been working alongside for three months, the cooperative members he'd eaten lunch with on the scaffold, the people whose floor he was getting to stop tilting.
 
-"The alternative load path," he said.
+"The alternative load path?" he asked.
 
 "We're working on it," Rook said.
 
@@ -2015,7 +2492,7 @@ Lace came to the board last. She didn't read the columns in order — she moved 
 
 "Yes," Rook said.
 
-"Which means the person who designed it has been running it for forty years," Lace said. "The Root."
+"Which means the person who designed it has been running it for forty years?" Lace asked. "The Root."
 
 She said it flat, as an observation. The board showed the timeline. The timeline showed one hand across four decades. Forty years wasn't an organizational project. Forty years was a person.
 
@@ -2041,19 +2518,19 @@ She looked at the key insertion deadline, then the deployment window. She did he
 
 "Eleven to the key insertion," Rook said. "Twenty-six to the generation update. The key insertion is the deadline that matters."
 
-Nari stood at the board, reading Yim Seul-ki, 73, thirty years. She had known that name for twenty-two years, since before her adjutant role, before she understood what the Syndicate was. She had known it the way Z6 residents knew the Syndicate's health mark — a fact of the environment, present before they arrived, organizing the space around it.
+Nari stood at the board, reading Yim Seul-ki, 73, thirty years. She had known that name for twenty-two years, since before her adjutant role, before she understood what the Syndicate was. She had known it the way Z6 residents knew the Syndicate's health mark - a fact of the environment, present before they arrived, organizing the space around it.
 
 "She's been running this since before I was born," Nari said.
 
 Nobody answered. It wasn't a question.
 
-She looked at the board another moment. Then she said, "What does the plan look like from here."
+She looked at the board another moment. Then she said, "What does the plan look like from here?"
 
 Rook had been looking at the board for two hours and hadn't produced the plan yet, because the plan needed something she didn't have — not information, she had that, but the design of how to use it in a way that produced the outcome instead of the failure. What she had was: all three threads in hand, eleven days, a target who'd been running this for forty years with an organization behind her.
 
 "We find the alternative load path," she said. "The community infrastructure that has to survive the Syndicate coming apart. We find the person inside the Syndicate with enough authority and enough reason to make a decision the rest of it can't reverse. And we give that person a choice that's worse for them than the alternative."
 
-"What's the alternative," Scout said.
+"What's the alternative?" Scout asked.
 
 "The documentation," Rook said. "All three threads. The Headcount data, the Nari testimony, the backdoor architecture. Simultaneously — to the GLMZ Civic Bureau, the Z5/Z6 Legal Cooperative, and a public disclosure archive Vox will build." She pointed at the board. "If the Root dismantles the Protocol publicly and funds the community transition, the documentation stays private. If she doesn't —"
 
@@ -2067,7 +2544,7 @@ Lace was reading the board with the attention of someone working out what the pl
 
 "She'll be right," Rook said. "That's what makes the conversation hard. The argument has to get past the correct argument to the wrong conclusion."
 
-"And the wrong conclusion is," Lace said.
+"And the wrong conclusion is?" Lace asked.
 
 "That the correct argument justifies the Protocol," Rook said. "It doesn't. Forty years of community service does not authorize the systematic displacement of the people who depended on it. You don't get to build the load and then use the load as the reason to take the community apart." She looked at the board. "But she's going to make the argument, and it's going to be real, and the answer to it has to be exact."
 
@@ -2075,13 +2552,15 @@ The board was on the wall. Three columns. One plan. One clock.
 
 Eleven days.
 
-"We move on all three threads at once," Rook said. "Extract Priya from the watched building — she can't stay in place for eleven days without the timeline accelerating when the representative loses patience. Find the entry point to the inner sanctum. Build the disclosure infrastructure so it's ready to trigger if the conversation goes wrong." She looked at the crew. "Ekow has the Thorn pattern analysis. That's the entry mechanism."
+"We move on all three threads at once," Rook said. "Extract Priya from the watched building — she can't stay in place for eleven days without the timeline accelerating when the representative loses patience. Find the entry point to the inner sanctum. Build the disclosure infrastructure so it's ready to trigger if the conversation goes wrong."
+
+She looked at the crew. "Ekow has the Thorn pattern analysis. That's the entry mechanism."
 
 He looked up from the secondary table. He'd been waiting for this part with the patience of a man who knew how to open a door he'd spent twelve years using from the other side.
 
 "The inner sanctum has two ways in," he said. "The authorized entry — Stem members, Root staff, Thorn senior command. And the authorized absence — an administrative deployment authorization, a credential I've used eleven times to move inside the Syndicate's infrastructure without Stem-tier verification. The credential is mine. It hasn't been revoked, because I'm not flagged as a defector. I'm flagged as an overdue deployment. That's a different status."
 
-"How long before overdue escalates to flagged," Rook said.
+"How long before overdue escalates to flagged?" Rook asked.
 
 "Three days," he said. "After that the status moves and the credential fails."
 
@@ -2101,21 +2580,29 @@ One client. One source. One plan.
 
 One crew.
 
-## Altitude
+Lace had the credentials on the third identity she'd been running for six weeks: Axiom Heritage Acquisitions, a Z4 consultancy with aeroplex access at the Spine. Grade 4 aeroplex clearance. A Level 14 office registration. The set had been built for exactly this — a job that needed legitimate presence at 480 meters, presence that read as membership, not access.
 
-Lace had the credentials on the third identity she'd been running for six weeks: Axiom Heritage Acquisitions, a Z4 consultancy with aeroplex access at the Spine. Grade 4 aeroplex clearance. A Level 14 office registration. The set had been built for exactly this — a job that needed legitimate presence at 480 meters, presence that read as membership, not access. The kind of presence where being at altitude is unremarkable because altitude is where you work.
+The kind of presence where being at altitude is unremarkable because altitude is where you work.
 
-The VTOL seated six. The crew boarded as a consulting team starting an early aeroplex session — the kind of group that used a maintenance-registered VTOL instead of a commercial Spine transit, because consulting firms watched their access costs and the maintenance rate ran sixty percent below commercial. It was unremarkable.
+The VTOL seated six. The crew boarded as a consulting team starting an early aeroplex session — the kind of group that used a maintenance-registered VTOL instead of a commercial Spine transit, because consulting firms watched their access costs and the maintenance rate ran sixty percent below commercial. It was unremarkable. That was the point.
 
-Nari wasn't on the VTOL. She stayed at the Z3 safe house, Gerald on the exterior, Scout's threading presence in place before Rook reached the rooftop. Scout's body was at the Spine ops center. She had said, "I'll be here." And she was in two places at once before Rook reached the roof.
+Nari wasn't on the VTOL. She stayed at the Z3 safe house, Gerald on the exterior, Scout's threading presence in place before Rook reached the rooftop. Scout's body was at the Spine ops center.
+
+She had said, "I'll be here." And she was in two places at once before Rook reached the roof.
 
 The VTOL rose.
 
-Rook had ridden aerostatic transports before. The Eigenlift's acceleration, the absence of vibration, the altitude arriving not as pressure but as a slow change in what the ports showed. The Z3 street pulled back. The blocks became patterns. The city turned from a place of people and transactions into a thing seen from above — infrastructure and density. At two hundred meters it was a texture. At three hundred, a map. At four hundred, a fact.
+Rook had ridden aerostatic transports before. The Eigenlift's acceleration, the absence of vibration, the altitude arriving not as pressure but as a slow change in what the ports showed.
 
-Lace watched the view with the ease of a person who'd seen it — not because she liked altitude, but because she'd worn identities that came here, for whom the ascent was the ordinary start of a working day. The ease was professional. It wasn't hers.
+The Z3 street pulled back. The blocks became patterns. The city turned from a place of people and transactions into a thing seen from above — infrastructure and density. At two hundred meters it was a texture. At three hundred, a map. At four hundred, a fact.
 
-She caught Rook's eye. "The Spine's observation decks are on levels three and seven," she said. "Level three is the public amenity tier. Level seven needs resident credentials. Axiom covers both."
+Lace watched the view with the ease of a person who'd seen it — not because she liked altitude, but because she'd worn identities that came here, for whom the ascent was the ordinary start of a working day.
+
+The ease was professional. It wasn't hers.
+
+She caught Rook's eye.
+
+"The Spine's observation decks are on levels three and seven," she said. "Level three is the public amenity tier. Level seven needs resident credentials. Axiom covers both."
 
 "We'll need level seven," Rook said. "For the sightline to the Z8 infrastructure district."
 
@@ -2123,9 +2610,15 @@ She caught Rook's eye. "The Spine's observation decks are on levels three and se
 
 The hum continued. The altitude kept arriving.
 
-At 480 meters, the VTOL set down on the Level 3 pad — the guest and commercial tier, the way in for anyone who belonged at the Spine without living there. The surface was a pale composite that read as finished, not industrial, that took foot traffic without showing it. 
+At 480 meters, the VTOL set down on the Level 3 pad — the guest and commercial tier, the way in for anyone who belonged at the Spine without living there.
 
-Lace ran the level-seven access confirmation on the descent and it came back wrong. Not denied — worse. Axiom's level-seven window had been rescheduled, the terminal reported, pending a resident-sponsor reverification the consultancy hadn't triggered and couldn't have. The reverification was a manual review. It would attach a name, a live human at a desk on Level 14, to the Axiom identity forty-eight hours before they needed the identity to stay invisible. She could take the review — and burn six weeks of build the moment a reviewer pulled the sponsor thread. Or she could route around it, which meant getting to the Level 7 deck without the credential that was supposed to be the whole reason she'd built this set. The sightline to the Z8 infrastructure district lived on Level 7. Everything downstream assumed they'd stand there.
+The surface was a pale composite that read as finished, not industrial, that took foot traffic without showing it.
+
+Lace ran the level-seven access confirmation on the descent and it came back wrong. Not denied — worse. Axiom's level-seven window had been rescheduled, the terminal reported, pending a resident-sponsor reverification the consultancy hadn't triggered and couldn't have.
+
+The reverification was a manual review. It would attach a name, a live human at a desk on Level 14, to the Axiom identity forty-eight hours before they needed the identity to stay invisible. She could take the review — and burn six weeks of build the moment a reviewer pulled the sponsor thread. Or she could route around it, which meant getting to the Level 7 deck without the credential that was supposed to be the whole reason she'd built this set.
+
+The sightline to the Z8 infrastructure district lived on Level 7. Everything downstream assumed they'd stand there.
 
 "We have a problem," she said, and her voice had the flatness it took on when a problem was hers to solve and expensive either way.
 
@@ -2133,9 +2626,21 @@ The Spine was silk at 480 meters. Not the material — the feel of it. Smooth su
 
 Boiler walked the Level 3 corridor without comment, which was his comment. He was reading the structure — the iron under the silk. The Spine's skeleton was a multi-column platform anchored on a deep-pile foundation network that had taken fifteen years to build, one of the GLMZ's real engineering achievements. He read it in the surface, in the column spacing, in the way the load moved through the architecture.
 
-"Sixty-year structure," he said quietly, to Rook. "The original platform went up in 2166. Levels three through twelve, 2198 to 2211. The Level 13 and 14 residential additions, 2219." He was building the biography of the thing he stood in. "The foundation work is exceptional. The load distribution is clean." A pause. "Expensive to maintain. The maintenance contract would be the single largest cost on the aeroplex's budget."
+"Sixty-year structure," he said quietly, to Rook. "The original platform went up in 2166. Levels three through twelve, 2198 to 2211. The Level 13 and 14 residential additions, 2219."
 
-"I know," Lace said, two steps ahead. "Axiom's lease renewal included a maintenance surcharge addendum. That's how I know the Spine's Level 14 maintenance schedule." She didn't look back. "And it's how I get us to Level 7 without the sponsor review. The maintenance schedule routes through the service core — the deck's maintenance-access door reads a facilities credential, not a resident one. I have that one clean. We go up as a maintenance walkthrough, not as residents." A beat. "It puts us on the deck late and it puts us there wrong. If anyone's on Level 7 who knows what a maintenance walkthrough looks like, we're four people in the wrong clothes." She said it and kept walking, because it was the only door that didn't cost them the whole identity, and she'd already decided to take it.
+He was building the biography of the thing he stood in.
+
+"The foundation work is exceptional. The load distribution is clean."
+
+A pause.
+
+"Expensive to maintain. The maintenance contract would be the single largest cost on the aeroplex's budget."
+
+"I know," Lace said, two steps ahead. "Axiom's lease renewal included a maintenance surcharge addendum. That's how I know the Spine's Level 14 maintenance schedule." She didn't look back.
+
+"And it's how I get us to Level 7 without the sponsor review. The maintenance schedule routes through the service core — the deck's maintenance-access door reads a facilities credential, not a resident one. I have that one clean. We go up as a maintenance walkthrough, not as residents." A beat.
+
+"It puts us on the deck late and it puts us there wrong. If anyone's on Level 7 who knows what a maintenance walkthrough looks like, we're four people in the wrong clothes." She said it and kept walking, because it was the only door that didn't cost them the whole identity, and she'd already decided to take it.
 
 Rook followed her to the observation deck.
 
@@ -2145,7 +2650,9 @@ The deck had benches, planters, a climate envelope. Three other residents were o
 
 Ekow stopped at the threshold.
 
-He stopped the way you stop when you meet something you hadn't prepared for right. Not surprise — he'd been briefed on the altitude, he knew 480 meters as a number, he'd seen the Spine from below many times. The number had been abstract. The threshold wasn't.
+He stopped the way you stop when you meet something you hadn't prepared for right. Not surprise — he'd been briefed on the altitude, he knew 480 meters as a number, he'd seen the Spine from below many times.
+
+The number had been abstract. The threshold wasn't.
 
 He stepped onto the terrace and walked to the south rail. He stood there.
 
@@ -2177,7 +2684,9 @@ She stood beside him and didn't speak. She looked at the same view. She had grow
 
 "I know," she said.
 
-"From here," he said, "it looks like—" He stopped.
+"From here," he said, "it looks like—"
+
+He stopped.
 
 She waited.
 
@@ -2185,23 +2694,37 @@ She waited.
 
 Vox had the gear unpacked in eleven minutes.
 
-The bench ran three meters along the north wall — room for the documentation, the relay hardware, and the second screen she read the threaded feeds on. The closet sealed clean. The access panel took the Axiom credentials. No windows. That was why they had leased this suite: no sightline in meant no sightline out.
+The bench ran three meters along the north wall — room for the documentation, the relay hardware, and the second screen she read the threaded feeds on.
 
-She ran the channel check first. Four frequencies, one after another. The gray-market relay through the Z4 node. The bounce off the guild's mutual-aid band. The direct line to Priya's neuretics address. And the fourth, the thread she kept running under everything else. She had worked six channels once. She had come back to four and stopped, because at six she caught more than she could read, and at four she heard exactly what she was listening for. Each channel came back in its own second. The fourth came back clean, last.
+The closet sealed clean. The access panel took the Axiom credentials. No windows. That was why they had leased this suite: no sightline in meant no sightline out.
+
+She ran the channel check first. Four frequencies, one after another. The gray-market relay through the Z4 node. The bounce off the guild's mutual-aid band. The direct line to Priya's neuretics address. And the fourth, the thread she kept running under everything else.
+
+She had worked six channels once. She had come back to four and stopped, because at six she caught more than she could read, and at four she heard exactly what she was listening for.
+
+Each channel came back in its own second. The fourth came back clean, last.
 
 She moved to the crawlers.
 
-Scout had both units on the closet floor, passive. Maintenance hardware, shaped like the ventilation inspectors the Spine's building management ran through its corridors on a schedule. Nothing about them stood out in a corridor full of equipment doing routine work.
+Scout had both units on the closet floor, passive. Maintenance hardware, shaped like the ventilation inspectors the Spine's building management ran through its corridors on a schedule.
+
+Nothing about them stood out in a corridor full of equipment doing routine work.
 
 Scout was already threading. Rook could read it in her posture — the slight distance that meant part of her sat three hundred and forty meters down, where Gerald held the Z3 safe house while her body sat in a Level 14 office chair. Two places at once, neither fully here. The dual presence had been running since the VTOL boarded at 0600. The cost of it showed at the edges of Scout's stillness. Nothing dramatic. A beam under steady load, carrying it in the way it held rather than in any crack.
 
-"Gerald has the safe house," Scout said, in the flat voice she used while threading. "Spine crawlers passive at the closet. I'm into the Level 12 junction. Boiler's Grade 3 key reads as valid maintenance." A pause while two places moved at once. "Forty-five minutes to the Level 11 cluster at maintenance speed. I'll have eyes on the housing before the extraction opens."
+"Gerald has the safe house," Scout said, in the flat voice she used while threading. "Spine crawlers passive at the closet. I'm into the Level 12 junction. Boiler's Grade 3 key reads as valid maintenance."
+
+A pause while two places moved at once.
+
+"Forty-five minutes to the Level 11 cluster at maintenance speed. I'll have eyes on the housing before the extraction opens."
 
 Ekow stood at the closet threshold, not working. Present the way he was present before his part went live. The Spine's infrastructure was the Syndicate's infrastructure, and twelve years inside it had given him a read on the place no floor plan could. If the building shifted in a way the channels wouldn't catch, he would feel it first.
 
 Vox opened Priya's channel at 0840.
 
-The handshake took ninety seconds — the encryption, the bounce, the confirmation that the line was clean both ways. Then the voice. South Indian under Scottish, twenty years of GLMZ vowels over both. Measured. Not calm. A woman who had decided the fear was not going to run the conversation.
+The handshake took ninety seconds — the encryption, the bounce, the confirmation that the line was clean both ways.
+
+Then the voice. South Indian under Scottish, twenty years of GLMZ vowels over both. Measured. Not calm. A woman who had decided the fear was not going to run the conversation.
 
 "Channel's live," Vox said.
 
@@ -2211,11 +2734,17 @@ The handshake took ninety seconds — the encryption, the bounce, the confirmati
 
 Priya gave it to her.
 
-Six levels, by Charter design. The rules for neuretics registration forbade putting the grid in one place, so it was scattered on purpose. Any break-in had to crack six locations at once, which made a remote attack more trouble than it was worth. For an engineer who had maintained it six years, none of this was on paper. It was somewhere she had been. She named it the way you name the rooms of a house you clean. Nine, read-only admin. Ten, the query routing that wouldn't take a firmware write. Eleven, the registration cluster that ran the rest. Twelve and thirteen, residential access, walled off. Fourteen, the management interface where her own access lived. She did not simplify. She talked to Vox as the one other person who could follow.
+Six levels, by Charter design. The rules for neuretics registration forbade putting the grid in one place, so it was scattered on purpose. Any break-in had to crack six locations at once, which made a remote attack more trouble than it was worth. For an engineer who had maintained it six years, none of this was on paper.
+
+It was somewhere she had been. She named it the way you name the rooms of a house you clean.
+
+Nine, read-only admin. Ten, the query routing that wouldn't take a firmware write. Eleven, the registration cluster that ran the rest. Twelve and thirteen, residential access, walled off. Fourteen, the management interface where her own access lived.
+
+She did not simplify. She talked to Vox as the one other person who could follow.
 
 "Eleven is the insertion point," she said. "The firmware's already in place — dormant, running as an overlay across all six levels. The Z6 cluster proved the design works. What the full deployment needs is the coordination node to wake the pieces and bind them into one system." A beat. "Without the key, it's six dead parts. The key goes into eleven, the coordination function comes up, and all six come online as one machine."
 
-"Physical presence," Vox said.
+"Physical presence?" Vox asked.
 
 "Charter security for cluster nodes. A firmware write needs a biometric at the housing — a write-once hardware lock. Remote install is blocked by design." A pause. "I'm the only cluster authorization in the system. The token they handed me at month three is the key. It's been on me ever since."
 
@@ -2225,19 +2754,23 @@ On the second screen, Scout's marker crossed from the Level 12 junction into the
 
 "It doesn't. That's the point of the distribution — no single node carries enough to be worth a backup. Eleven is the only place the six of them speak to each other." A short breath. "Which is why it's the only place to stop them speaking."
 
-"And the rollback," Vox said.
+"And the rollback?" Vox asked.
 
 "Same node. Same hand on the same panel." She read it out flat — a safeguard turned against the thing it was built to protect. "The Charter makes every firmware ship a documented shutdown path or it fails the audit. The backdoor had to pass as a real update, so it carries one. Fourteen minutes from the coordination node. I ran it in the Phase 0 test environment. It works."
 
-"The Z6 test cluster," Vox said.
+"The Z6 test cluster?" Vox asked.
 
 Two seconds of quiet. The quiet of someone who had been waiting for the question.
 
-"The test cluster is the part I can't fix," Priya said. "It went live eleven days ago. Three nodes in the Z6 buffer zone — the same three I flagged in the original audit. I thought it was validation. Seven days in, the firmware copies itself to the offline backup registers, and the rollback doesn't touch the backups. It was written for a test meant to be reverted after a few days, not one left running eleven." She said it plainly, not as an apology. "A rollback at eleven kills the full grid deployment. It does not reach those backups. The two hundred thousand Z6 records have been queried since the day the cluster went live. That data is already gone. The rollback doesn't bring it back."
+"The test cluster is the part I can't fix," Priya said. "It went live eleven days ago. Three nodes in the Z6 buffer zone — the same three I flagged as most vulnerable, out of seventeen candidates, in the original audit. I thought it was validation. Seven days in, the firmware copies itself to the offline backup registers, and the rollback doesn't touch the backups. It was written for a test meant to be reverted after a few days, not one left running eleven."
+
+She said it plainly, not as an apology. "A rollback at eleven kills the full grid deployment. It does not reach those backups. The two hundred thousand Z6 records have been queried since the day the cluster went live. That data is already gone. The rollback doesn't bring it back."
 
 The room held it.
 
-Rook had carried this as a maybe for three days. Vox had found it in the architecture before they had a name for the engineer. Hearing it from the woman who built the thing did not add anything. It changed the weight. Two hundred thousand people in the Z6 buffer zone, live for eleven days, three weeks before the crew took its first job. Heritage, civic identity, access levels, all of it in Lotus hands, none of it coming back.
+Rook had carried this as a maybe for three days. Vox had found it in the architecture before they had a name for the engineer. Hearing it from the woman who built the thing did not add anything. It changed the weight.
+
+Two hundred thousand people in the Z6 buffer zone, live for eleven days, three weeks before the crew took its first job. Heritage, civic identity, access levels, all of it in Lotus hands, none of it coming back.
 
 "The rollback still stops the full grid," Vox said.
 
@@ -2247,13 +2780,17 @@ Rook had carried this as a maybe for three days. Vox had found it in the archite
 
 Nobody argued. Two hundred thousand already lost did not make two-point-three million nothing.
 
-The channel went on. Vox worked the topology node by node, and Priya answered each question out of six years of maintenance. Where every junction sat. Which nodes ran redundant sensor paths. Which stretches of corridor ran the cable conduit close enough to a maintenance panel that a body moving there read as scheduled work. She named the junction boxes by their tags. She knew which hatch stuck in humidity and which one the building had re-seated in 2223. She knew the place the way you know something you have kept working through three software generations and two audits, until the knowing stops feeling like expertise and settles into the low background of a thing you are responsible for.
+The channel went on. Vox worked the topology node by node, and Priya answered each question out of six years of maintenance.
+
+Where every junction sat. Which nodes ran redundant sensor paths. Which stretches of corridor ran the cable conduit close enough to a maintenance panel that a body moving there read as scheduled work. She named the junction boxes by their tags. She knew which hatch stuck in humidity and which one the building had re-seated in 2223. She knew the place the way you know something you have kept working through three software generations and two audits, until the knowing stops feeling like expertise and settles into the low background of a thing you are responsible for.
 
 At 0932, Scout said: "Eyes on the Level 11 cluster."
 
 The feed came up small in the corner of the second screen — the view from a crawler holding above the access panel. Iron corridor. Conduit runs, a load-bearing column, the matte gray the silk levels were built to hide. The crawler's amber work-light threw the housing into flat relief and left the corridor beyond it dark.
 
-The housing was two meters wide, one tall, mounted on the north wall, conduit on both sides. Clean. Well kept. The external array showed green across every function — the firmware dormant, doing exactly what it was built to do in the last seconds before someone told it otherwise. On the left panel, mid-height, the firmware slot: a recessed door with a physical lock. The piece that turned six dead parts into the Lotus's copy of the city's registry.
+The housing was two meters wide, one tall, mounted on the north wall, conduit on both sides. Clean. Well kept. The external array showed green across every function — the firmware dormant, doing exactly what it was built to do in the last seconds before someone told it otherwise.
+
+On the left panel, mid-height, the firmware slot: a recessed door with a physical lock. The piece that turned six dead parts into the Lotus's copy of the city's registry.
 
 "I see the slot," Rook said.
 
@@ -2291,13 +2828,17 @@ She looked at the feed one more time. The green array. The conduit running east 
 
 "Three hours," she said.
 
-The clock was the entry credential. Three days out, it failed, and the Spine closed to them for good. Three hours in, they would have Priya at the housing and fourteen minutes to keep two-point-three million registrations from becoming a query the Lotus could run whenever it wanted.
+The clock was the entry credential. Three days out, it failed, and the Spine closed to them for good.
+
+Three hours in, they would have Priya at the housing and fourteen minutes to keep two-point-three million registrations from becoming a query the Lotus could run whenever it wanted.
 
 The topology was mapped. The route was set. The crawlers were in place.
 
 They went to work.
 
-The Spine's Level 12 residential corridor ran east-west, sixty meters between the Eigenlift bank and the suite entrances at the far end. It was the spine of the residential tier — the throughway every Level 12 resident used, the stretch building management watched for anyone who didn't belong, the line between the aeroplex's semi-public levels and its private interior.
+The Spine's Level 12 residential corridor ran east-west, sixty meters between the Eigenlift bank and the suite entrances at the far end.
+
+It was the spine of the residential tier — the throughway every Level 12 resident used, the stretch building management watched for anyone who didn't belong, the line between the aeroplex's semi-public levels and its private interior.
 
 Lace arrived at 0855 and spent the first four minutes doing nothing in particular.
 
@@ -2313,7 +2854,7 @@ From the Level 14 operations center, Rook heard the channel shift — the small 
 
 "Building management coordinator," Lace said, barely above a breath — the level she used when she needed the channel open but in the background. "West end. Admin staff, Level 12 through 14."
 
-"Go," Rook said.
+"Go?" Rook asked.
 
 The channel went to monitoring — open but passive. Rook worked from the audio and from what she knew about how Lace ran a room.
 
@@ -2341,9 +2882,13 @@ He was not checking whether she belonged. He was finishing a task in a place whe
 
 The Lotus's community care worked the same way. The clinic visit, the market credit, the debt consultation — every one an exchange where being in the community had already confirmed you belonged. The Lotus's staff did not check. The community had produced the answer. You were there; therefore you were someone the Lotus served; therefore its services were open to you. The care was the thing that made you belong, and belonging was the credential, and the Lotus decided what belonging meant.
 
-Forty years of it. Forty years of building the care so thoroughly that it became the air, so that the presence of Lotus services in a neighborhood was itself the sign that the neighborhood was theirs. The clinics and the markets and the legal cooperative were not separate from the debt offices and the enforcement arm. They were the same credential running on different channels. You could not be there without belonging, and belonging was whatever the Lotus decided it meant.
+Forty years of it. Forty years of building the care so thoroughly that it became the air, so that the presence of Lotus services in a neighborhood was itself the sign that the neighborhood was theirs.
 
-She ran the same trick. She had been running it at the individual level — one identity, one room, one exchange — for fifteen years. What she had never done was build a whole dependent community around it. That was the difference. The Lotus had industrialized the thing she did by hand, and added the part that made it coercive instead of merely a con: the dependency. The communities needed the clinics. The clinics needed the communities to belong to the Lotus. The belonging was a leash.
+The clinics and the markets and the legal cooperative were not separate from the debt offices and the enforcement arm. They were the same credential running on different channels. You could not be there without belonging, and belonging was whatever the Lotus decided it meant.
+
+She ran the same trick. She had been running it at the individual level — one identity, one room, one exchange — for fifteen years.
+
+What she had never done was build a whole dependent community around it. That was the difference. The Lotus had industrialized the thing she did by hand, and added the part that made it coercive instead of merely a con: the dependency. The communities needed the clinics. The clinics needed the communities to belong to the Lotus. The belonging was a leash.
 
 She ran it for a single job. They had run it for forty years. Somewhere in that distance was a line she had never crossed. She had known the line was there without ever looking straight at it.
 
@@ -2379,7 +2924,9 @@ She stepped into the car and felt its climb take hold — a low, steady note, so
 
 She was thinking about the difference between a single job and an institution. About the dependency. About the forty years. The Lotus's care was not a lie wearing a true face. It was a true face that had agreed to run a machine under its skin. The communities needed the clinics. The clinics needed the communities. Both needs were real. The thing underneath — the Protocol, the blood-purity doctrine, the displacement plan — was also real. Silk and iron in the same body, serving the same forty-year end.
 
-She was good at this. She had always told herself there was a difference between what she did and what the Lotus did. She had just spent twelve minutes confirming the difference was scale.
+She was good at this. She had always told herself there was a difference between what she did and what the Lotus did.
+
+She had just spent twelve minutes confirming the difference was scale.
 
 She stepped out on Level 14 and walked back toward the operations center. She would decide what to do with the thought later. For now there was a rollback to run and Priya to pull out and a clock that did not leave room for standing in corridors thinking about it.
 
@@ -2387,7 +2934,9 @@ She had always been good at setting things aside.
 
 She pushed open the operations center door.
 
-Vox had been running passive monitoring across four channels while Scout's crawlers worked the utility corridors and Lace cleared the Level 12 window. Passive was not nothing. It was four channels at once, each thread reading a different band of the environment, building a picture no single channel could. She had worked six channels once. Coming back to four had taught her that width mattered less than knowing what you were listening for. At six she had sometimes caught more than she could read. At four she heard what she was after.
+Vox had been running passive monitoring across four channels while Scout's crawlers worked the utility corridors and Lace cleared the Level 12 window. Passive was not nothing. It was four channels at once, each thread reading a different band of the environment, building a picture no single channel could.
+
+She had worked six channels once. Coming back to four had taught her that width mattered less than knowing what you were listening for. At six she had sometimes caught more than she could read. At four she heard what she was after.
 
 At 0941, the fourth channel returned something that stopped the other three.
 
@@ -2405,7 +2954,7 @@ The room did not change. The equipment kept running. Scout's threading posture h
 
 "The logs carry an authentication pattern I've seen in three previous Lotus enforcement operations." She was already pulling the pattern from the second channel's archive. "It's not a unique ID — the enforcement arm doesn't operate under registered credentials. But the pattern holds: the query structure, the handshake timing, the access level requested. I've cross-referenced it against what I documented at the Old Harbor extraction and the Adaeze briefing." She set the documentation on the bench. "This is Park's operational channel. The Thorns have been running active queries against the Phase 0 cluster."
 
-"Since when," Rook said.
+"Since when?" Rook asked.
 
 "Earliest entry I can reach is eight days ago." She pulled the log summary. "Continuous. Regular intervals — an ongoing analysis operation, not a one-time pull. They've been running the Phase 0 data as a live asset for at least eight days."
 
@@ -2415,7 +2964,7 @@ Ekow came off the closet threshold and stood behind Vox's bench. He read the sum
 
 "He has the full Z6 neuretics registry for the buffer zone," Vox said. "Heritage classification, civic identity, access levels. Cross-referenced with the Headcount baseline — which the Lotus got when Ferris commissioned the sculpture — he has a complete picture of the Z6 population. Who has neuretics, what their heritage reads as, what their access level is, where they live." She pointed at the query pattern. "These aren't exploratory queries. They're targeted. He's pulling specific record sets — small groups, defined by overlapping criteria. This is targeting work."
 
-"He's picking displacement targets," Rook said.
+"He's picking displacement targets?" Rook asked.
 
 "The Phase 0 data gives him everything he needs to start targeted displacement in the Z6 buffer zone," Vox said. "Not the full Protocol. But enough to move in one zone without waiting for the full grid. He doesn't need full grid access to begin Z6. He already has Z6."
 
@@ -2427,7 +2976,7 @@ Ekow was still looking at the log. He turned it over twice before he spoke.
 
 "He followed the sculpture from the collector's market. He followed us to Nari. That's what he wanted — not to stop the crew's investigation. To find the witness. He needed to know what she'd said and to whom, and following us gave him that." He tapped the log. "He's known since Old Harbor that Nari was out, that she'd talked, and that someone outside the Syndicate had all three threads. That was the exposure. He set it aside and moved to the response." A pause. "He doesn't need to stop us anymore. If we stop the Protocol, Phase 0 is already live. If we expose the Protocol, Phase 0 is already live. Exposure closes the door on Phase 1. It doesn't close the door on what he's already running."
 
-"How long has he been building toward Z6," Rook said.
+"How long has he been building toward Z6?" Rook asked.
 
 Ekow thought about it. Three or four seconds — the time to pull a specific fact out of twelve years inside the Syndicate.
 
@@ -2455,15 +3004,25 @@ While they were stopping the larger plan, the smaller one had been running for e
 
 "Phase 0 is already deployed. The data's in Lotus hands. The rollback doesn't retrieve it. Stopping what Park is doing with it means taking apart the operation he's using it in." She paused. "Which means taking apart the Protocol's authorization chain. Which means the Root."
 
-The conclusion had been in the analysis for three days. It was not new. But the urgency had changed. Three days ago it was: the full Protocol goes live in eleven days, the Root is the chain, the Root is the target. Now it was: the Root is the chain for an operation already running. Not eleven days out. Running now. Eight days into its operational phase, with Boiler's community sector in the targeting set.
+The conclusion had been in the analysis for three days. It was not new. But the urgency had changed. Three days ago it was: the full Protocol goes live in eleven days, the Root is the chain, the Root is the target.
 
-"We run the rollback on schedule," Rook said. "We get Priya to the node at 1200. We stop Phase 1. That's the operation we're in the middle of, and we finish it." She looked at the logs. "After the rollback, the full-grid capability is gone. Park still has Phase 0. The Root is still the chain. We go to her with what we have and give her the same choice: dismantle the Protocol publicly, including Phase 0, and fund the community transition — or the documentation goes to three disclosure points at once." She tapped the log. "We add this to the package. The Phase 0 operations prove the Protocol is active now. Not forty years of planning. Ongoing operations, eight days running, with target data we can show."
+Now it was: the Root is the chain for an operation already running. Not eleven days out. Running now. Eight days into its operational phase, with Boiler's community sector in the targeting set.
+
+"We run the rollback on schedule," Rook said. "We get Priya to the node at 1200. We stop Phase 1. That's the operation we're in the middle of, and we finish it."
+
+She looked at the logs. "After the rollback, the full-grid capability is gone. Park still has Phase 0. The Root is still the chain. We go to her with what we have and give her the same choice: dismantle the Protocol publicly, including Phase 0, and fund the community transition — or the documentation goes to three disclosure points at once."
+
+She tapped the log. "We add this to the package. The Phase 0 operations prove the Protocol is active now. Not forty years of planning. Ongoing operations, eight days running, with target data we can show."
 
 "He'll know we've read the access logs," Ekow said.
 
 "He knows we're in the Spine already. He's known since the collector's market. He's been running his operation in parallel with ours because stopping ours was never the point. He's been solving a different problem." She looked at Ekow. "What's his timeline on Z6?"
 
-"The administrative phase runs two to four weeks before physical operations begin," Ekow said. "Eight days in, he's mid-phase on the first wave of targets. If we move on the Root inside the next seventy-two hours, before the first wave finishes the administrative phase, we can still interrupt the Z6 operation before anyone's touched physically." He said it with the precision of a man who had worked inside this mechanism. "After the first wave completes that phase, some of those people have already lost their tenancy records or had their civic access modified, and the damage doesn't reverse cleanly even if the operation stops."
+"The administrative phase runs two to four weeks before physical operations begin," Ekow said. "Eight days in, he's mid-phase on the first wave of targets. If we move on the Root inside the next seventy-two hours, before the first wave finishes the administrative phase, we can still interrupt the Z6 operation before anyone's touched physically."
+
+He said it with the precision of a man who had worked inside this mechanism.
+
+"After the first wave completes that phase, some of those people have already lost their tenancy records or had their civic access modified, and the damage doesn't reverse cleanly even if the operation stops."
 
 Seventy-two hours. Sixty-six of them were Ekow's entry credential window.
 
@@ -2481,17 +3040,15 @@ She did not say what they were moving toward. Everyone in the room already knew.
 
 Vox added the access log to the operational documentation. The fourth entry in the Phase 0 section, below the topology and the rollback architecture and the Z6 data summary: *Thorn-signature access, active, 8 days. Z6 buffer zone, targeted record sets. Displacement operations, administrative phase, in progress.*
 
-Out the north-face window, the GLMZ's administrative district stood at the same altitude as the operations center — the Zone 8 civic towers that held the city's registration and authorization systems, running their morning exactly as designed. Level 11 was forty meters below and three hundred horizontal meters away. In forty minutes, Priya would be at the Eigenlift bank on Level 9 with a go-bag she had kept packed for three months.
+Somewhere past the sealed north wall, the GLMZ's administrative district stood at the same altitude as the operations center — the Zone 8 civic towers that held the city's registration and authorization systems, running their morning exactly as designed. Level 11 was forty meters below and three hundred horizontal meters away. In forty minutes, Priya would be at the Eigenlift bank on Level 9 with a go-bag she had kept packed for three months.
 
 The clock was the entry credential. The clock was also, now, the first wave of Z6 displacement running eight days into its administrative phase. Both clocks were running. The crew had time on both if they moved now.
 
 "Let's move," Rook said.
 
-## Priya's Extraction
-
 The knock on Priya Ramanujan-Cross's Level 9 door came at 1158.
 
-Two minutes early. Ekow had run the Level 9 approach through the maintenance stairwell from Level 7 and shaved the transit against the floor plan. Two minutes early was inside tolerance, and early to an extraction beat late to one.
+Two minutes early. Ekow had run the Level 9 approach through the maintenance stairwell from Level 7 and shaved the transit against the floor plan. Two minutes early was inside tolerance, and early to an extraction beats late to one.
 
 He knocked once, two beats, pause, one beat. The pattern Rook had relayed to Priya that morning.
 
@@ -2533,9 +3090,11 @@ Priya said, "I know."
 
 "They'll escalate in ninety seconds," Vox said. "From the contact method she described — they try twice, then they call it a breach, and the breach triggers the enforcement arm."
 
-"How fast does the enforcement arm respond," Ekow said.
+"How fast does the enforcement arm respond?" Ekow asked.
 
-"Closest Thorn deployment to the Spine is Level 6," Vox said. "A three-person team, the Syndicate's aeroplex-authorized presence. If they get a breach notice on the Phase 0 key timeline, they are not going to Priya's Level 9 unit." A one-second pause. "They're going to the Level 11 node. They're going to lock it before she can run the rollback."
+"Closest Thorn deployment to the Spine is Level 6," Vox said. "A three-person team, the Syndicate's aeroplex-authorized presence. If they get a breach notice on the Phase 0 key timeline, they are not going to Priya's Level 9 unit."
+
+A one-second pause. "They're going to the Level 11 node. They're going to lock it before she can run the rollback."
 
 The corridor was seventy meters to the stairwell. They were twenty in.
 
@@ -2553,7 +3112,7 @@ The channel carried Priya's controlled breathing. Not panicked — controlled, t
 
 "Two-meter clearance," she said. "Six flights from Level 9 to Level 11. The Level 11 landing has the utility access panel — Grade 3 key for the outer panel, then cluster biometric for the inner door." Her voice was steady. "The inner door puts us in the Level 11 utility corridor. The housing is forty meters east."
 
-"Grade 3 key," Boiler said.
+"Grade 3 key?" Boiler asked.
 
 "I have it."
 
@@ -2571,7 +3130,7 @@ The same Level 6 suite where the Thorn team was stationed.
 
 "Flag's up," Vox said. "Level 11 utility corridor anomaly. Building management's routing the review request to Level 6 admin."
 
-"That gives them a conflict," Ekow said.
+"That gives them a conflict?" Ekow asked.
 
 "The team gets the review request and the breach notice at the same time," Vox said. "The breach is a Syndicate internal channel. The review is an aeroplex admin channel. Moving on the breach means moving through the aeroplex in an operational capacity with no admin cover — and the aeroplex security will flag three people moving toward the utility infrastructure as anomalous if there's no admin reason for it." A pause. "They have to decide which channel to answer first."
 
@@ -2593,7 +3152,7 @@ Ekow was behind Priya. He was not watching the stairs. He was listening — the 
 
 "The enforcement team's in the Eigenlift," Vox said. "They chose the Syndicate channel. Moving."
 
-"Transit time," Rook said.
+"Transit time?" Rook asked.
 
 "Forty seconds to Level 11. Car monitoring puts them at Level 7 now. They'll reach Level 11 in —" A pause. "Twenty-eight seconds."
 
@@ -2611,11 +3170,13 @@ Priya stepped past him and put her hand on the reader.
 
 A two-second read. The indicator shifted from amber to green. The door opened.
 
-The Level 11 utility corridor lay in front of them. Iron corridor, conduit runs, column sections, matte-gray surface, work lighting. The housing forty meters east, exactly as it had looked on the feed: sealed gray panel, external array, the firmware slot at mid-height on the left panel. Green across all functions. Running correctly.
+The Level 11 utility corridor lay in front of them. Iron corridor, conduit runs, column sections, matte-gray surface, work lighting.
+
+The housing forty meters east, exactly as it had looked on the feed: sealed gray panel, external array, the firmware slot at mid-height on the left panel. Green across all functions. Running correctly.
 
 "They're in the Level 11 Eigenlift lobby," Vox said.
 
-"How far to the corridor entrance from the lobby," Rook said.
+"How far to the corridor entrance from the lobby?" Rook asked.
 
 "Eighteen meters. Scout's crawler is at the access panel."
 
@@ -2681,17 +3242,25 @@ Phase two: distributed shutdown signal. The coordination node broadcasting the s
 
 Phase three: query routing suspension. The firmware's query architecture going into a holding state — not terminated yet, suspended while the rollback confirmed system integrity. The array shifted from amber pulse to steady amber. Steady amber was correct. It meant the suspension was holding across all six levels and the components were coherent, not failing one at a time.
 
-She kept her eyes on the array and her hand on the token. The token did two jobs at once: authorizing the rollback and anchoring the coordination node's shutdown command. Pull it before Phase six and the rollback halted half-done. She kept her hand on it.
+She kept her eyes on the array and her hand on the token.
+
+The token did two jobs at once: authorizing the rollback and anchoring the coordination node's shutdown command. Pull it before Phase six and the rollback halted half-done.
+
+She kept her hand on it.
 
 In the corridor, forty meters west, the three Thorns had not moved since Ekow spoke.
 
-They stood in a line across the corridor's width — not blocking, not advancing, the way enforcement personnel stand when a situation has moved outside their expected parameters. They were used to arriving first. The crawler had cost them twenty-two seconds, and those seconds had put the rollback into Phase one before they reached the housing, and Phase one was not reversible without Priya's authorization. They knew it. Ekow had told them, but they had known it before he spoke — the Syndicate had operated inside the Charter's security provisions for years, and knowing the provisions was part of the job.
+They stood in a line across the corridor's width — not blocking, not advancing, the way enforcement personnel stand when a situation has moved outside their expected parameters. They were used to arriving first. The crawler had cost them twenty-two seconds, and those seconds had put the rollback into Phase one before they reached the housing, and Phase one was not reversible without Priya's authorization.
+
+They knew it. Ekow had told them, but they had known it before he spoke — the Syndicate had operated inside the Charter's security provisions for years, and knowing the provisions was part of the job.
 
 They had three options. Physically pull Priya off the housing — which would halt the rollback and require assaulting a Grade 4 engineer in a Sky People aeroplex where the security system logged the corridor. Wait and let it complete — in which case the full grid deployment was gone and their mission had failed. Or escalate: call Park's channel and wait for a decision.
 
 The lead Thorn had been in the neuretics channel since entering the corridor. Not speaking. Receiving.
 
-Ekow watched him. He had worked inside the enforcement arm for twelve years and knew what receiving a command decision looked like from outside — the small focus change, the face of a man taking in new instructions and adjusting to them. The lead Thorn's face ran through it for six seconds.
+Ekow watched him. He had worked inside the enforcement arm for twelve years and knew what receiving a command decision looked like from outside — the small focus change, the face of a man taking in new instructions and adjusting to them.
+
+The lead Thorn's face ran through it for six seconds.
 
 Then he looked at Ekow and said: "We wait."
 
@@ -2711,7 +3280,9 @@ Four minutes, twenty seconds.
 
 In the Level 14 operations center, Rook watched Vox's screens and the feed from Scout's crawler at the east hatch. The crawler's camera showed the housing from the east — the back of Priya's head, the token in the slot, the array running through the deactivation in steady amber. The three Thorns were small figures at the corridor's west end in the wide-angle feed. They were standing still.
 
-Lace was back in the operations center. She had returned from Level 12 at 1205 and taken the secondary bench without being asked, watching the building management channels for any escalation of the coordinator's inspection request or any anomalous logs routing to Level 6 admin. Nothing so far. The system was processing the request as filed — the Level 11 noise investigation, scheduled for forty-eight hours, no anomaly flags except the two crawlers that had tripped the diagnostics.
+Lace was back in the operations center. She had returned from Level 12 at 1205 and taken the secondary bench without being asked, watching the building management channels for any escalation of the coordinator's inspection request or any anomalous logs routing to Level 6 admin.
+
+Nothing so far. The system was processing the request as filed — the Level 11 noise investigation, scheduled for forty-eight hours, no anomaly flags except the two crawlers that had tripped the diagnostics.
 
 Scout's body at the operations center bench was exactly as it had been since 0900. She was running three locations at once: Gerald on the Z3 safe house exterior, the crawler at the east hatch, the crawler at the west chokepoint near the three Thorns. Three threads. The cost of it showed at the edges of her focus — the way a structural element under sustained load shows it in a subtle deformation rather than a visible break. She was holding. The holding was costing.
 
@@ -2747,7 +3318,9 @@ Rook looked at the screen.
 
 Vox had been running the test cluster check in parallel since the Phase four deactivation began, pulling the Z6 node status from the monitoring channel. She had the results.
 
-"The three Z6 test nodes did not roll back," she said. Same register she used for any operational fact. "The firmware's been on the test cluster eleven days. The backup register propagation happened at day seven. The shutdown signal reached the primary firmware layer on all three Z6 nodes and executed correctly. The backup registers on those nodes are isolated — the coordination node's shutdown command doesn't address them, because they're offline backups, not part of the live firmware network." She paused. "The backups are still holding the Phase 0 deployment. Heritage classification, civic identity, access levels — the full Phase 0 data set for the two hundred thousand Z6 users is still in the backup registers on three test nodes in the buffer zone."
+"The three Z6 test nodes did not roll back," she said. Same register she used for any operational fact. "The firmware's been on the test cluster eleven days. The backup register propagation happened at day seven. The shutdown signal reached the primary firmware layer on all three Z6 nodes and executed correctly. The backup registers on those nodes are isolated — the coordination node's shutdown command doesn't address them, because they're offline backups, not part of the live firmware network."
+
+She paused. "The backups are still holding the Phase 0 deployment. Heritage classification, civic identity, access levels — the full Phase 0 data set for the two hundred thousand Z6 users is still in the backup registers on three test nodes in the buffer zone."
 
 The three Thorns at the west end had heard it. They were forty meters away, and Vox's voice was on the operational channel, which was not broadcast — but Priya's voice had been audible in the corridor throughout, and some of what had been said had carried.
 
@@ -2787,17 +3360,137 @@ They moved back to the maintenance access door, Boiler leading, the Grade 3 key 
 
 They went down.
 
-Nobody spoke for a few minutes.\n\nThis was not unusual after an operation cleared its primary phase. The silence had a specific quality — not avoidance, not withdrawal. Six people who had run a complex technical job for three hours, letting the operational register exhale before the assessment began. The timeline had gone from compressed to open. \n\nRook let it run for four minutes.\n\nThen she said: "Assessment."\n\nVox had the documentation in front of her. She had been updating it on the transit back from Level 11 — the key entries, not all of it. She read from the key entries.\n\n"Full GLMZ civic grid rollback: complete. All six levels clean. The distributed backdoor is deactivated across the whole neuretics registration infrastructure. The 2.3 million registered users have clean records — no query access for unauthorized systems, no heritage data available to them." She paused for the break the documentation gave her. "The Z6 test cluster: partial. The three test nodes running Phase 0 have shut down the primary firmware layer. The backup registers kept the deployment. The two hundred thousand Z6 records — heritage, civic identity, access levels — are still in those backups and still reachable by whatever pathway the Syndicate set up for Phase 0."\n\nPriya was looking at the operations center wall. She had been looking at it since she sat down. Not at the documentation, not at the equipment — at a point on the wall, the right distance for working something through without looking at anything.\n\n"The rollback did what it was capable of doing," Rook said.\n\n"Yes," Vox said.\n\n"The Phase 0 data." Rook looked at the documentation. She was working through what the surviving data set meant as an operational asset rather than as a number. "What can the Syndicate do with two hundred thousand Z6 records and fifteen years of demographic baseline?"\n\n"Build a complete displacement targeting package for the Z6 buffer zone," Vox said. "Without the full grid — without Phase 1 — they can't run a systematic GLMZ-wide operation. The full Protocol needed the complete registry for the whole zone system. Without it, anything using Phase 0 data is bounded to Z6 and the communities whose records are in the test cluster." She pointed at the access log analysis. "The Headcount baseline covers the Z4-to-Z7 corridor, but the densest coverage is the Z5/Z6 buffer zone. The Phase 0 records are Z6. Where those two data sets overlap, you get a complete population picture of the Z6 buffer zone."\n\n"Complete enough to run displacement," Rook said.\n\n"Complete enough to run targeted displacement," Vox said. The distinction mattered. "Not large-scale simultaneous operations. Targeted ones — specific households, specific blocks, the specific population that meets the Protocol's criteria. The heritage data tells them who isn't Lotus-eligible. The civic identity and access data tells them what leverage works on each person. The demographic baseline tells them where the concentrations are and how to work through the population in sequence without setting off a coordinated community response." She paused. "It's slower than Phase 1 would have been. It doesn't scale past Z6. But in Z6, with the data they have, it's operational."\n\nEkow had been at the secondary bench through the assessment, looking at the access log summary — the eight-day Thorn history in the Z6 query records.\n\n"The first wave of administrative targets," he said. "Displacement starts administrative — debt enforcement, lease pressure, access modification. Eight days in, the first wave is somewhere between identification and early pressure. The administrative phase runs two to four weeks. If we don't break the authorization chain before that wave finishes it, some of those records become damage instead of threat." He put the log down. "I said seventy-two hours in the ops center. That was accurate. It still is. Sixty-six haven't elapsed yet."\n\nSixty-six hours. Two days, plus. Ekow's entry credential bound one end. The first wave's completion bound the other. Both were running the same direction.\n\nLace was at the secondary bench with the Level 12 documentation — the noise complaint, the coordinator log, the cover that had given Scout's crawlers their maintenance envelope. She was looking at it with a quality Rook recognized: someone who had finished a technical job cleanly and was now working something the job had exposed. Not about the job. About its frame.\n\nShe said, without looking up: "What we did today stops the larger plan and leaves the smaller one running."\n\n"Yes," Rook said.\n\n"The smaller plan is still Phase 0 of the same project."\n\n"Yes."\n\n"So the rollback was necessary and not sufficient." She said it as a structural observation — an intervention that had fixed one load path and left another intact. "The authorization chain is still running. The Root is still running it. We took the technical mechanism for Phase 1 away from her. We didn't take the authorization for Phase 0, because we don't have a technical mechanism that touches authorization. We have documentation."\n\n"Yes," Rook said.\n\nLace looked at the sheet. "So the documentation is the remaining mechanism."\n\n"Yes."\n\nPriya had turned from the wall. She was looking at the assessment now — at Rook and Vox and the documentation on the bench. "I have a report," she said. "I've been preparing a formal report of the coercion operation, the backdoor architecture, the Phase 0 deployment. Six months of documented evidence." She said it with the care of someone describing a tool they had kept sharp a long time without knowing when they could use it. "When you said you'd give me the chance to put what I know on the record with someone who can't be bought — that's what I have."\n\n"It's part of the package," Rook said.\n\n"What is the package," Priya said.\n\nRook looked at the board.\n\nNot the physical board from the Z3 safe house — that was three hundred meters below, in a secondary room, still on the east wall. She was looking at its structure in her head: three columns, the timeline, one client and one source and one plan. What the package had been when the board was new, and what it was now.\n\n"The Headcount sculpture," she said. "The demographic baseline, the civic-grid schema, the fifteen-year heritage data, the Protocol component structure. Fifteen years of covert population documentation. That's the origin evidence — the planning, the data collection, the proof the Protocol's foundations go back forty years." She listed it in the order she would present it. "Nari's testimony. The authorization vote, the Stem majority, the Root's signature on the founding document. Witnessed evidence that the Protocol was formally authorized at the top of the Syndicate. And who authorized it." A pause. "The backdoor architecture and deployment evidence. Your documentation, Priya — the coercion, the engineering, the Phase 0 record. Technical proof the Protocol is active." She looked at the access log. "The Phase 0 operational records. Eight days of Thorn logs in the Z6 cluster. Active displacement targeting, running now, with specific record sets we can demonstrate."\n\nShe let it sit.\n\n"Together, that's a forty-year planning record, a formal authorization document, a technical implementation record, and current active operations," she said. "Four layers of evidence. Not one of them circumstantial." She looked at the crew. "That's the package."\n\n"Disclosure destinations," Vox said.\n\n"Three simultaneous points," Rook said. "The GLMZ Civic Bureau — the Phase 0 deployment is a Meridian Charter security violation, which falls under Bureau jurisdiction no matter what the Syndicate has in their admin network. The disclosure comes with Priya's report, which is a filed document from an authorized engineer, which the Bureau can't route into the Syndicate's access archive the way they could bury an informal complaint." She looked at Priya. "You said the Bureau's archive was compromised."\n\n"They have access to the informal complaint archive," Priya said. "Formal engineer report filings go through a separate technical system the admin staff don't have write permissions for. I know the architecture." She paused. "I maintain it."\n\n"Good," Rook said. "Second point: Adaeze Nnodu-Park's Legal Cooperative. Twelve years of case files on Lotus debt structures and community leverage. The Protocol documentation gives those files a forty-year context that changes their legal weight." She nodded at the Nari notes. "Nari can add testimony." She looked at the last section. "Third: a public archive. Vox stands up a disclosure repository the community networks, journalism channels, and any Z6 community organization can reach. All three at once. Timed to release twenty-four hours after the Root is given the choice."\n\n"If she chooses wrong," Lace said.\n\n"If she chooses wrong, it goes to three points at once and the Syndicate loses the community trust that makes the silk work," Rook said. "The authorization mechanism fails whether or not the Syndicate dismantles the Protocol. The silk needs community trust. Community trust needs the Syndicate not to be in the public record as a forty-year displacement program." She looked at the documentation. "That's the incentive."\n\nBoiler, who had been at the secondary bench and had not spoken since the assessment began, said: "The clinics."\n\nRook looked at him.\n\n"If the Syndicate fractures — if the Root chooses wrong and the documentation goes public and the community trust collapses — the clinics don't automatically keep running," he said. Not a political objection. A structural problem: a load that had to be redistributed before a change could be made safely. "The community building I've been working on — the cooperative in the Z5/Z6 corridor. The people in that building depend on the Lotus clinic on the market level. If the clinic loses funding because the Syndicate fractures, the building stays standing but the services it's built around don't." He paused. "The load path needs an alternative."\n\n"The right choice," Rook said. "If the Root chooses right, she funds the community transition. The clinics keep running under independent governance. The debt structures get wound down over a negotiated period. The services survive the fracture because she pays for the transition." She looked at Boiler. "That's the alternative load path. It only exists if she chooses it."\n\n"And if she doesn't," he said.\n\n"Then we do the assessment afterward," Rook said. "The way you assess after a failure — you find what held and you build from there." She held his gaze. "But the documentation is going to say what the Lotus is. The communities are going to learn what the silk has been running on. That changes the load no matter what the Root chooses. The question is whether the transition has funding."\n\nBoiler thought about it — the weight of community dependence, the load path of the Lotus services, the alternative that had to exist before the current structure could be safely changed.\n\n"If she funds it," he said, "is there someone who knows how to build the alternative structure?"\n\n"Yes," Rook said. "We're going to find out who that is."\n\nHe nodded once and went back to the floor plan in his notebook.\n\nThe operations center was quiet. The documentation was on the bench. The assessment was complete.\n\nPhase 1 was stopped. Phase 0 was running. The Root was the remaining target. The entry credential window was forty-three hours.\n\n"We need to get back to the safe house," Rook said. "Nari's been there long enough."\n\nShe started breaking down the operations center. The equipment came off the bench and into the cases. The documentation went into the sealed carry. The second screen went dark. In forty minutes, the Axiom Heritage Acquisitions lease on Level 14 would show no activity and the room would be a data compliance suite again, exactly as listed.\n\nRook took the documentation package and held it. Four layers of evidence. The origin, the authorization, the implementation, the active operations. One package that described a forty-year plan whole, from its founding document to its current phase.\n\nShe put it in the carry case.\n\nThe Eigenlift would take them to the VTOL pad. The VTOL would take them down to the Z3 surface, below the Gray Zone's observation altitude. Down there the texture wasn't texture anymore. It was neighborhoods. The distribution wasn't distribution. It was people. The document wasn't a document. It was the specific households in the Z6 corridor, eight days of displacement targeting already on their records.\n\nThey went down.
+Nobody spoke for a few minutes.
 
-## The Intelligence Picture
+This was not unusual after an operation cleared its primary phase. The silence had a specific quality — not avoidance, not withdrawal. Six people who had run a complex technical job for three hours, letting the operational register exhale before the assessment began. The timeline had gone from compressed to open.
+
+Rook let it run for four minutes.
+
+Then she said: "Assessment."
+
+Vox had the documentation in front of her. She had been updating it on the transit back from Level 11 — the key entries, not all of it. She read from the key entries.
+
+"Full GLMZ civic grid rollback: complete. All six levels clean. The distributed backdoor is deactivated across the whole neuretics registration infrastructure. The 2.3 million registered users have clean records — no query access for unauthorized systems, no heritage data available to them." She paused for the break the documentation gave her. "The Z6 test cluster: partial. The three test nodes running Phase 0 have shut down the primary firmware layer. The backup registers kept the deployment. The two hundred thousand Z6 records — heritage, civic identity, access levels — are still in those backups and still reachable by whatever pathway the Syndicate set up for Phase 0."
+
+Priya was looking at the operations center wall. She had been looking at it since she sat down. Not at the documentation, not at the equipment — at a point on the wall, the right distance for working something through without looking at anything.
+
+"The rollback did what it was capable of doing," Rook said.
+
+"Yes," Vox said.
+
+"The Phase 0 data." Rook looked at the documentation. She was working through what the surviving data set meant as an operational asset rather than as a number. "What can the Syndicate do with two hundred thousand Z6 records and fifteen years of demographic baseline?"
+
+"Build a complete displacement targeting package for the Z6 buffer zone," Vox said. "Without the full grid — without Phase 1 — they can't run a systematic GLMZ-wide operation. The full Protocol needed the complete registry for the whole zone system. Without it, anything using Phase 0 data is bounded to Z6 and the communities whose records are in the test cluster." She pointed at the access log analysis. "The Headcount baseline covers the Z4-to-Z7 corridor, but the densest coverage is the Z5/Z6 buffer zone. The Phase 0 records are Z6. Where those two data sets overlap, you get a complete population picture of the Z6 buffer zone."
+
+"Complete enough to run displacement?" Rook asked.
+
+"Complete enough to run targeted displacement," Vox said. The distinction mattered. "Not large-scale simultaneous operations. Targeted ones — specific households, specific blocks, the specific population that meets the Protocol's criteria. The heritage data tells them who isn't Lotus-eligible. The civic identity and access data tells them what leverage works on each person. The demographic baseline tells them where the concentrations are and how to work through the population in sequence without setting off a coordinated community response." She paused. "It's slower than Phase 1 would have been. It doesn't scale past Z6. But in Z6, with the data they have, it's operational."
+
+Ekow had been at the secondary bench through the assessment, looking at the access log summary — the eight-day Thorn history in the Z6 query records.
+
+"The first wave of administrative targets," he said. "Displacement starts administrative — debt enforcement, lease pressure, access modification. Eight days in, the first wave is somewhere between identification and early pressure. The administrative phase runs two to four weeks. If we don't break the authorization chain before that wave finishes it, some of those records become damage instead of threat." He put the log down. "I said seventy-two hours in the ops center. That was accurate. It still is. Sixty-six haven't elapsed yet."
+
+Sixty-six hours. Two days, plus. Ekow's entry credential bound one end. The first wave's completion bound the other. Both were running the same direction.
+
+Lace was at the secondary bench with the Level 12 documentation — the noise complaint, the coordinator log, the cover that had given Scout's crawlers their maintenance envelope. She was looking at it with a quality Rook recognized: someone who had finished a technical job cleanly and was now working something the job had exposed. Not about the job. About its frame.
+
+She said, without looking up: "What we did today stops the larger plan and leaves the smaller one running."
+
+"Yes," Rook said.
+
+"The smaller plan is still Phase 0 of the same project."
+
+"Yes."
+
+She said it as a structural observation — an intervention that had fixed one load path and left another intact. "The authorization chain is still running. The Root is still running it. We took the technical mechanism for Phase 1 away from her. We didn't take the authorization for Phase 0, because we don't have a technical mechanism that touches authorization. We have documentation."
+
+"Yes," Rook said.
+
+Lace looked at the sheet. "So the documentation is the remaining mechanism?"
+
+"Yes."
+
+Priya had turned from the wall. She was looking at the assessment now — at Rook and Vox and the documentation on the bench. "I have a report," she said. "I've been preparing a formal report of the coercion operation, the backdoor architecture, the Phase 0 deployment. Six months of documented evidence." She said it with the care of someone describing a tool they had kept sharp a long time without knowing when they could use it. "When you said you'd give me the chance to put what I know on the record with someone who can't be bought — that's what I have."
+
+"It's part of the package," Rook said.
+
+"What is the package?" Priya asked.
+
+Rook looked at the board.
+
+Not the physical board from the Z3 safe house — that was three hundred meters below, in a secondary room, still on the east wall. She was looking at its structure in her head: three columns, the timeline, one client and one source and one plan. What the package had been when the board was new, and what it was now.
+
+"The Headcount sculpture," she said. "The demographic baseline, the civic-grid schema, the fifteen-year heritage data, the Protocol component structure. Fifteen years of covert population documentation. That's the origin evidence — the planning, the data collection, the proof the Protocol's foundations go back forty years." She listed it in the order she would present it. "Nari's testimony. The authorization vote, the Stem majority, the Root's signature on the founding document. Witnessed evidence that the Protocol was formally authorized at the top of the Syndicate. And who authorized it." A pause. "The backdoor architecture and deployment evidence. Your documentation, Priya — the coercion, the engineering, the Phase 0 record. Technical proof the Protocol is active." She looked at the access log. "The Phase 0 operational records. Eight days of Thorn logs in the Z6 cluster. Active displacement targeting, running now, with specific record sets we can demonstrate."
+
+She let it sit.
+
+"Together, that's a forty-year planning record, a formal authorization document, a technical implementation record, and current active operations," she said. "Four layers of evidence. Not one of them circumstantial." She looked at the crew. "That's the package."
+
+"Disclosure destinations," Vox said.
+
+"Three simultaneous points," Rook said. "The GLMZ Civic Bureau — the Phase 0 deployment is a Meridian Charter security violation, which falls under Bureau jurisdiction no matter what the Syndicate has in their admin network. The disclosure comes with Priya's report, which is a filed document from an authorized engineer, which the Bureau can't route into the Syndicate's access archive the way they could bury an informal complaint." She looked at Priya. "You said the Bureau's archive was compromised?"
+
+"They have access to the informal complaint archive," Priya said. "Formal engineer report filings go through a separate technical system the admin staff don't have write permissions for. I know the architecture." She paused. "I maintain it."
+
+"Good," Rook said. "Second point: Adaeze Nnodu-Park's Legal Cooperative. Twelve years of case files on Lotus debt structures and community leverage. The Protocol documentation gives those files a forty-year context that changes their legal weight." She nodded at the Nari notes. "Nari can add testimony." She looked at the last section. "Third: a public archive. Vox stands up a disclosure repository the community networks, journalism channels, and any Z6 community organization can reach. All three at once. Timed to release twenty-four hours after the Root is given the choice."
+
+"If she chooses wrong," Lace said.
+
+"If she chooses wrong, it goes to three points at once and the Syndicate loses the community trust that makes the silk work," Rook said. "The authorization mechanism fails whether or not the Syndicate dismantles the Protocol. The silk needs community trust. Community trust needs the Syndicate not to be in the public record as a forty-year displacement program."
+
+She looked at the documentation. "That's the incentive."
+
+Boiler, who had been at the secondary bench and had not spoken since the assessment began, said: "The clinics."
+
+Rook looked at him.
+
+"If the Syndicate fractures — if the Root chooses wrong and the documentation goes public and the community trust collapses — the clinics don't automatically keep running?" he asked.
+
+Not a political objection. A structural problem: a load that had to be redistributed before a change could be made safely.
+
+"The community building I've been working on — the cooperative in the Z5/Z6 corridor. The people in that building depend on the Lotus clinic on the market level. If the clinic loses funding because the Syndicate fractures, the building stays standing but the services it's built around don't." He paused. "The load path needs an alternative."
+
+"The right choice," Rook said. "If the Root chooses right, she funds the community transition. The clinics keep running under independent governance. The debt structures get wound down over a negotiated period. The services survive the fracture because she pays for the transition." She looked at Boiler. "That's the alternative load path. It only exists if she chooses it."
+
+"And if she doesn't?" he asked.
+
+"Then we do the assessment afterward," Rook said. "The way you assess after a failure — you find what held and you build from there." She held his gaze. "But the documentation is going to say what the Lotus is. The communities are going to learn what the silk has been running on. That changes the load no matter what the Root chooses. The question is whether the transition has funding."
+
+Boiler thought about it — the weight of community dependence, the load path of the Lotus services, the alternative that had to exist before the current structure could be safely changed.
+
+"If she funds it," he asked, "is there someone who knows how to build the alternative structure?"
+
+"Yes," Rook said. "We're going to find out who that is."
+
+He nodded once and went back to the floor plan in his notebook.
+
+The operations center was quiet. The documentation was on the bench. The assessment was complete.
+
+Phase 1 was stopped. Phase 0 was running. The Root was the remaining target. Six hours had bled off the count since the last check. The entry credential window was seventy-two hours.
+
+"We need to get back to the safe house," Rook said. "Nari's been there long enough."
+
+She started breaking down the operations center. The equipment came off the bench and into the cases. The documentation went into the sealed carry. The second screen went dark. In forty minutes, the Axiom Heritage Acquisitions lease on Level 14 would show no activity and the room would be a data compliance suite again, exactly as listed.
+
+Rook took the documentation package and held it. Four layers of evidence. The origin, the authorization, the implementation, the active operations. One package that described a forty-year plan whole, from its founding document to its current phase.
+
+She put it in the carry case.
+
+The Eigenlift would take them to the VTOL pad. The VTOL would take them down to the Z3 surface, below the Gray Zone's observation altitude.
+
+Down there the texture wasn't texture anymore. It was neighborhoods. The distribution wasn't distribution. It was people. The document wasn't a document. It was the specific households in the Z6 corridor, eight days of displacement targeting already on their records.
+
+They went down.
 
 Forty-eight hours after the Spine operation, the Z3 safe house had the feel of a place where several kinds of waiting were happening at once.
 
 Nari had been there six days. She had settled into the secondary sleeping room with the efficiency of a person who had lived in provisional spaces for fifteen years and knew how to keep a small footprint livable. Her things were organized. Her space was clean. She had been reading the material the crew left in the main room — not the operational papers, those were sealed in the carry case, but the background: the Meridian Charter provisions, the Z6 community service index. She read it the way she had read the Protocol's founding document twenty-two years ago. Completely. No skipped sections. Context before conclusion.
 
-Priya had arrived the night of the Spine operation. She had taken the secondary bench in the main room, set her go-bag under it, and spent the first four hours doing what Rook had come to recognize in a technical person who had survived a crisis: running the engineering analysis before the feeling could start. She produced, over the first night, a complete written analysis of the rollback, the Phase 0 backup limitation, and her recommendations for the formal report. Typed on the bench terminal. Twelve pages. Technically complete.
+Priya had arrived the night of the Spine operation. She had taken the secondary bench in the main room, set her go-bag under it, and spent the first four hours doing what Rook had come to recognize in a technical person who had survived a crisis: running the engineering analysis before the feeling could start.
 
-When Rook looked at it at 0600 the next morning, it was technically complete and it had a handwritten line at the bottom in Priya's careful script: *I know this is what I can do. I know it wasn't enough by itself. I know why we're still here.*
+She produced, over the first night, a complete written analysis of the rollback, the Phase 0 backup limitation, and her recommendations for the formal report. Typed on the bench terminal. Twelve pages. Technically complete.
+
+When Rook looked at it at 0600 the next morning, it was technically complete and it had a handwritten line at the bottom in Priya's careful script: *I know why we're still here.*
 
 The terminal still had the analysis open when Vox began the presentation forty-eight hours after the operation.
 
@@ -2805,15 +3498,21 @@ The crew was in the main room. The board was on the east wall — not the three-
 
 Vox stood at the bench with her documentation.
 
-"I've been running the Protocol's organizational signature analysis since the first day here," she said. "The founding document Nari gave us — the authorization vote, the Root's signature, the timeline — that's the anchor. Every operational decision in the Protocol's forty-year history that I can trace through Lotus records runs through the same signature." She had the analysis on the bench, six pages of cross-referenced data. "It's not a document signature. It's a decision pattern. How an organization makes decisions is specific to who's making them — the timing relative to when information arrives, the chain a decision travels before it's actioned, the language in the directive. These are consistent. Consistent the way a person's handwriting is consistent."
+"I've been running the Protocol's organizational signature analysis since the first day here," she said. "The founding document Nari gave us — the authorization vote, the Root's signature, the timeline — that's the anchor. Every operational decision in the Protocol's forty-year history that I can trace through Lotus records runs through the same signature."
+
+She had the analysis on the bench, six pages of cross-referenced data. "It's not a document signature. It's a decision pattern. How an organization makes decisions is specific to who's making them — the timing relative to when information arrives, the chain a decision travels before it's actioned, the language in the directive. These are consistent. Consistent the way a person's handwriting is consistent."
 
 Nari was at the secondary bench, watching Vox's documentation with the close attention of a person who had spent fifteen years building a mental archive and was now watching pieces of it confirmed from outside.
 
 "Tell me the decision cadence," Nari said.
 
-Vox looked at the analysis. "The Protocol's major decisions — each new phase, each big resource commitment, each expansion of the coercion — were all made on the same timing. Not a calendar schedule. A response-to-information timing. When new demographic data came in, the decision to use it was made within forty-eight to seventy-two hours. Not the same day. Forty-eight to seventy-two, consistently. That's how long one person takes to review new information, weigh it against a long-running plan, and decide how to fold it in." She pointed at the analysis. "A committee takes longer. A committee has to schedule, meet, discuss. Forty-eight to seventy-two hours is the cadence of one person thinking."
+Vox looked at the analysis. "The Protocol's major decisions — each new phase, each big resource commitment, each expansion of the coercion — were all made on the same timing. Not a calendar schedule. A response-to-information timing. When new demographic data came in, the decision to use it was made within forty-eight to seventy-two hours. Not the same day. Forty-eight to seventy-two, consistently. That's how long one person takes to review new information, weigh it against a long-running plan, and decide how to fold it in."
 
-"That matches what I saw as an adjutant," Nari said. "Authorization requests from the Protocol working group went to the Root directly. Not through the Stems council. The Stems had formal authority over major strategy, but the Protocol was sequenced outside their calendar — the authorizations were bilateral, Root and the working group, with the Stems told after the fact." She paused. "At the time I thought it was unusual. In the fifteen years since, I've understood it differently. The Stems were kept at a distance because the Stems were the oversight. The Protocol was run outside the oversight."
+She pointed at the analysis. "A committee takes longer. A committee has to schedule, meet, discuss. Forty-eight to seventy-two hours is the cadence of one person thinking."
+
+"That matches what I saw as an adjutant," Nari said. "Authorization requests from the Protocol working group went to the Root directly. Not through the Stems council. The Stems had formal authority over major strategy, but the Protocol was sequenced outside their calendar — the authorizations were bilateral, Root and the working group, with the Stems told after the fact."
+
+She paused. "At the time I thought it was unusual. In the fifteen years since, I've understood it differently. The Stems were kept at a distance because the Stems were the oversight. The Protocol was run outside the oversight."
 
 "For forty years," Rook said.
 
@@ -2821,9 +3520,11 @@ Vox looked at the analysis. "The Protocol's major decisions — each new phase, 
 
 Ekow had been quiet since the meeting began, in the way he was quiet when he was building a parallel analysis in the background. He said: "The working group."
 
-"I can identify seven people from the founding document's signatory list and the operational records," Vox said. "Six are dead. Three within ten years of the founding document. The others over the following decades." She looked at the analysis. "The working group was made of people who were old when they founded it. The average age at founding was sixty-one. The person who started the project was the youngest of them."
+"I can identify seven people from the founding document's signatory list and the operational records," Vox said. "Six are dead. Three within ten years of the founding document. The others over the following decades."
 
-"How old at founding," Rook said.
+She looked at the analysis. "The working group was made of people who were old when they founded it. The average age at founding was sixty-one. The person who started the project was the youngest of them."
+
+"How old at founding?" Rook asked.
 
 "Thirty-three."
 
@@ -2843,7 +3544,9 @@ Vox walked them through it.
 
 The organizational signature had been necessary because the founding document identified the Root by title, not by name — official documentation always did. Nari had known the identity from direct observation. But identifying her from the documentary record meant building the signature from indirect evidence: the decision cadence, the shape of the authorization chain, the recurring formulations in operational directives across four decades.
 
-Vox had cross-referenced the signature against the Syndicate's public records — the clinic administration papers, the community market board minutes, the legal cooperative filings. All public, because the silk required public-facing documentation. The community services were real; their records were real; and a person who ran both the services and the Protocol for forty years left the same signature in both.
+Vox had cross-referenced the signature against the Syndicate's public records — the clinic administration papers, the community market board minutes, the legal cooperative filings.
+
+All public, because the silk required public-facing documentation. The community services were real; their records were real; and a person who ran both the services and the Protocol for forty years left the same signature in both.
 
 "The authorization language in the clinic minutes matches the language in the Protocol directives," Vox said. "Not the content — the structure. The order information is acknowledged in, the conditional framing when a constraint is flagged, the way the authorization closes once a decision's been made. It's not a unique formulation. But it's consistent. The same person writing in two different registers — community care and operational enforcement — leaves the same structural signature under both."
 
@@ -2855,13 +3558,21 @@ Nari looked at both for three seconds.
 
 "Yes," she said. "That's the same hand."
 
-Lace had been studying the clinic authorization since Vox set it down — reading the architecture of a social performance, the mechanism beneath the content. The thing that made the care documentation feel like care and the Protocol documentation feel like something else, even though the same person wrote both in the same period under the same signature.
+Lace had been studying the clinic authorization since Vox set it down — reading the architecture of a social performance, the mechanism beneath the content.
 
-"She writes the care documents in full sentences," Lace said. "Active subject. The community receives, the clinic provides, the cooperative serves. The service is in front." She pointed at the Protocol document. "The enforcement documents use the passive. The population is identified. The process is initiated. The outcome is achieved. The subject is gone." She put them down. "She knows the difference. She writes it on purpose."
+The thing that made the care documentation feel like care and the Protocol documentation feel like something else, even though the same person wrote both in the same period under the same signature.
 
-"What does that tell you," Rook said.
+"She writes the care documents in full sentences," Lace said. "Active subject. The community receives, the clinic provides, the cooperative serves. The service is in front."
 
-"That she's not lying to herself about what the two documents are," Lace said. "She's not using the same language for both because she's convinced herself they're the same thing. She knows they're different. She writes them differently on purpose." A pause. "The silk isn't deception. It's a deliberate choice to run two registers at once, knowing exactly what each one is."
+She pointed at the Protocol document. "The enforcement documents use the passive. The population is identified. The process is initiated. The outcome is achieved. The subject is gone."
+
+She put them down. "She knows the difference. She writes it on purpose."
+
+"What does that tell you?" Rook asked.
+
+"That she's not lying to herself about what the two documents are," Lace said. "She's not using the same language for both because she's convinced herself they're the same thing. She knows they're different. She writes them differently on purpose."
+
+A pause. "The silk isn't deception. It's a deliberate choice to run two registers at once, knowing exactly what each one is."
 
 The room held it.
 
@@ -2873,7 +3584,11 @@ Priya said: "Does it change the conversation you're going to have with her?"
 
 Rook thought about it. A precise question, from someone who understood that the shape of a conversation matters as much as its content — that the same fact lands differently on a person deceiving themselves than on a person who knows exactly what they've done.
 
-"It changes where the conversation has to go," Rook said. "If she were deceiving herself, the file would open a gap between her self-image and the evidence. If she's not — if she's run both registers deliberately for forty years — there's no gap to open. She already knows the gap. She's been living in it." She looked at the documentation. "So the conversation can't use the file as a revelation. It has to use it as a confirmation." A pause. "What you've always known about yourself is on the record now. That's different from: here's something you didn't know."
+"It changes where the conversation has to go," Rook said. "If she were deceiving herself, the file would open a gap between her self-image and the evidence. If she's not — if she's run both registers deliberately for forty years — there's no gap to open. She already knows the gap. She's been living in it."
+
+She looked at the documentation. "So the conversation can't use the file as a revelation. It has to use it as a confirmation."
+
+A pause. "What you've always known about yourself is on the record now. That's different from: here's something you didn't know."
 
 Nari was looking at the board, tracking the presentation like someone confirming things she had known for fifteen years and watching them finally acquire the documentary weight she had never been able to give them alone.
 
@@ -2881,7 +3596,11 @@ Nari was looking at the board, tracking the presentation like someone confirming
 
 "I know," Rook said.
 
-"She's going to say that without the Syndicate, the communities collapse. She's going to say it because it's partly true." She paused. "I was in the room when she made it before. Not to an outsider — to the working group. When the displacement timeline was being discussed and one of them raised community disruption. She said: the Protocol is not a disruption to the community. The Protocol is the Syndicate's act of self-preservation, and without the Syndicate there is no community." Nari paused. "She believed it. I know what it looks like when she says something she doesn't believe. It doesn't look like that."
+"She's going to say that without the Syndicate, the communities collapse. She's going to say it because it's partly true." She paused.
+
+"I was in the room when she made it before. Not to an outsider — to the working group. When the displacement timeline was being discussed and one of them raised community disruption. She said: the Protocol is not a disruption to the community. The Protocol is the Syndicate's act of self-preservation, and without the Syndicate there is no community." Nari paused.
+
+"She believed it. I know what it looks like when she says something she doesn't believe. It doesn't look like that."
 
 "She's right about part of it," Rook said.
 
@@ -2889,11 +3608,15 @@ Nari was looking at the board, tracking the presentation like someone confirming
 
 "Yes," Rook said.
 
-The room understood it without more. The Syndicate's services were real services that real communities depended on. The argument that removing the Syndicate without an alternative would harm the communities was correct. Where it failed was the conclusion — that the correct premise justified the Protocol. The load was real; the existing structure couldn't be pulled without an alternative; none of that authorized displacing the communities the structure was supposed to be carrying.
+The room understood it without more. The Syndicate's services were real services that real communities depended on. The argument that removing the Syndicate without an alternative would harm the communities was correct. Where it failed was the conclusion — that the correct premise justified the Protocol.
 
-"The documentation package," Rook said. "Vox, where are we on the disclosure infrastructure."
+The load was real; the existing structure couldn't be pulled without an alternative; none of that authorized displacing the communities the structure was supposed to be carrying.
 
-"The public archive is up," Vox said. "Three-node distributed repository, reachable through the gray-market network, cross-accessible from the Z5/Z6 community information network. Forty-eight-hour conditional release — if it isn't actively suspended by the authorized key, the documentation goes public after forty-eight hours." She pointed at the secure drive on the bench. "The full package is ready to load. Civic Bureau filing, Legal Cooperative supplement, public archive — all three on the trigger."
+"The documentation package," Rook said. "Vox, where are we on the disclosure infrastructure?"
+
+"The public archive is up," Vox said. "Three-node distributed repository, reachable through the gray-market network, cross-accessible from the Z5/Z6 community information network. Forty-eight-hour conditional release — if it isn't actively suspended by the authorized key, the documentation goes public after forty-eight hours."
+
+She pointed at the secure drive on the bench. "The full package is ready to load. Civic Bureau filing, Legal Cooperative supplement, public archive — all three on the trigger."
 
 "We need to talk to Adaeze," Rook said.
 
@@ -2903,19 +3626,25 @@ Rook looked at the board. The single column. The four sections. The complete pic
 
 There was a person behind this. There had always been a person. Forty years of one person's continuous, deliberate work — the clinics and the markets and the legal cooperative and the Purification Protocol, all of it at once, one integrated project, signed in two registers the same hand kept up with full awareness of what each was for.
 
-Seventy-three years old. Thirty years as the Root. Forty running the Protocol and the silk together.
+Seventy-three years old. Forty years as the Root, running the Protocol and the silk together.
 
-"How much of the Spine operation does she know about," Rook said.
+"How much of the Spine operation does she know about?" Rook asked.
 
-"The rollback is in the civic grid's system log," Vox said. "Any authorized administrator can see it. The Root has authorized access to the grid's administrative records — the Protocol's original design gave the Root visibility into the infrastructure it was using. She'll have seen the rollback entry within twenty-four hours." She paused. "She knows the full grid deployment is gone."
+"The rollback is in the civic grid's system log," Vox said. "Any authorized administrator can see it. The Root has authorized access to the grid's administrative records — the Protocol's original design gave the Root visibility into the infrastructure it was using. She'll have seen the rollback entry within twenty-four hours."
+
+She paused. "She knows the full grid deployment is gone."
 
 "She knows Phase 0 is still running," Ekow said.
 
-"She'll assume it," Rook said. "She knows the test cluster timeline. She knows what went live eleven days ago. She knows what the rollback can and can't reach." She looked at the documentation. "She knows what we have and what we don't."
+"She'll assume it," Rook said. "She knows the test cluster timeline. She knows what went live eleven days ago. She knows what the rollback can and can't reach."
+
+She looked at the documentation. "She knows what we have and what we don't."
 
 "She knows we're coming," Ekow said.
 
-"She's known since Old Harbor," Rook said. "That's not news. The question is whether she's had forty-eight hours to decide what she's going to say when we get there." She looked at the crew. "She has."
+"She's known since Old Harbor," Rook said. "That's not news. The question is whether she's had forty-eight hours to decide what she's going to say when we get there."
+
+She looked at the crew. "She has."
 
 The safe house was quiet. Nari at the secondary bench, the founding document she had carried in memory for fifteen years now visible on paper in Vox's analysis. Priya at the primary bench with her twelve pages and the handwritten line. The board on the east wall, four sections, one continuous plan.
 
@@ -2935,7 +3664,7 @@ Vox set the last document on the bench.
 
 "Yim Seul-ki," she said.
 
- Not a revelation — the analysis had been pointing at the shape of the person for an hour, and everyone in the room had tracked the shape. But the shape was not the name. The name was a different order of thing.
+Not a revelation — the analysis had been pointing at the shape of the person for an hour, and everyone in the room had tracked the shape. But the shape was not the name. The name was a different order of thing.
 
 Ekow's hands went still on the table.
 
@@ -2951,11 +3680,13 @@ Ekow was silent a long time.
 
 Not performance. He had known the name. He had known it the way everyone who had worked inside the Syndicate's operational structure knew it — the name at the top of the authorization chain, the presence behind every directive that moved through the system. He had seen it on paperwork. He had heard it in briefings as the authority the briefing ultimately answered to. It was a given of the environment he worked in.
 
-He had not known it as the answer to a question: who designed the plan to displace the Z6 communities you walked through for twelve years and called the place you worked.
+He had not known it as the answer to a question: who designed the plan to displace the Z6 communities you walked through for twelve years and called the place you worked?
 
 That took time to work through.
 
-"The woman who built the clinics," he said. His voice was even — the specific evenness of a large man who had learned his voice had consequences and held it as a discipline, so that when something moved through him that he did not intend to show, it did not show there. "Every debt collection route I ran in Z6 — every enforcement operation — I ran it through the same neighborhood where her clinics are. The health workers with the Syndicate mark on their coats. The market columns." He looked at the document. "I knew her name from authorization paperwork. Grade-two directives sometimes have her signature at the bottom of the chain. I've held paper with her name on it." He paused. "I never asked whether the name at the bottom of the chain and the woman who built the clinics were the same plan."
+"The woman who built the clinics," he said. His voice was even — the specific evenness of a large man who had learned his voice had consequences and held it as a discipline, so that when something moved through him that he did not intend to show, it did not show there. "Every debt collection route I ran in Z6 — every enforcement operation — I ran it through the same neighborhood where her clinics are. The health workers with the Syndicate mark on their coats. The market columns."
+
+He looked at the document. "I knew her name from authorization paperwork. Grade-two directives sometimes have her signature at the bottom of the chain. I've held paper with her name on it." He paused. "I never asked whether the name at the bottom of the chain and the woman who built the clinics were the same plan."
 
 "They were always the same plan," Nari said.
 
@@ -3027,7 +3758,7 @@ Rook looked at the documentation. The four sections. The name at the top of the 
 
 "The sentence is: you know she built this for you," she said. "Not as an accusation. As a plain statement of what we're going to show her."
 
-Nari was quiet a moment. "What do you mean."
+Nari was quiet a moment. "What do you mean?"
 
 "I'll know when we get there," Rook said.
 
@@ -3037,7 +3768,7 @@ Yim Seul-ki. Seventy-three years old. The clinics and the markets and the legal 
 
 Tomorrow they would be in the same room with her.
 
-The crew held the name. Ekow held it with the twelve years it carried and the pen in his hand and the notation he had made. Nari held it with fifteen years and a bag that had been packed since before Emre was an accident.
+The crew held the name. Ekow held it with the twelve years it carried and the pen in his hand and the notation he had made. Nari held it with fifteen years and a bag that had been packed since before Emre's death was ruled an accident.
 
 The name sat on the bench.
 
@@ -3053,11 +3784,17 @@ Forty-seven documents in two days. Eight from the founding period. The rest were
 
 The rest of the crew did the pre-op work the sanctum entry required.
 
-Ekow had the Thorn access documentation spread out — the overdue deployment credential, the authorization language that would carry him through the sanctum checkpoint, the security profile for entry. He had been inside the Z5 community center's administrative structure twice in his Lotus years, and he built the entry brief from that. 
+Ekow had the Thorn access documentation spread out — the overdue deployment credential, the authorization language that would carry him through the sanctum checkpoint, the security profile for entry. He had been inside the Z5 community center's administrative structure twice in his Lotus years, and he built the entry brief from that.
 
-Lace was at the secondary bench with the identity materials. The face she was building was the closest to her own she had used in years — the sanctum ran on community care institutionalized as authority, and the face that read most naturally there was one that had spent real time in such places. Not performing belonging. Having enough of the real version that the performance disappeared. She did. She had been in enough of those rooms over the years.
+Lace was at the secondary bench with the identity materials. The face she was building was the closest to her own she had used in years — the sanctum ran on community care institutionalized as authority, and the face that read most naturally there was one that had spent real time in such places.
 
-Scout was running a perimeter survey of the center's exterior — a crawler through the block's civic infrastructure, the utility conduit and transit routing that gave her the approach and the external access points. Gerald held the Z3 safe house at the same time. Two locations as baseline, her normal since Old Harbor, and she was building toward three: the sanctum's internal cameras, once she threaded the entry.
+Not performing belonging. Having enough of the real version that the performance disappeared.
+
+She did. She had been in enough of those rooms over the years.
+
+Scout was running a perimeter survey of the center's exterior — a crawler through the block's civic infrastructure, the utility conduit and transit routing that gave her the approach and the external access points.
+
+Scout held the Z3 safe house at the same time. Two locations as baseline, her normal since Old Harbor, and she was building toward three: the sanctum's internal cameras, once she threaded the entry.
 
 Boiler had the center's structural plans out — the public architectural record, the original permit and the three renovation cycles since. He read the building the way he read them all: load paths, modification points, the places where the design had changed and left signatures the surface hid.
 
@@ -3067,11 +3804,11 @@ He did not say that was what he was thinking about. He did not need to.
 
 At 1840, Vox said, "I have the founding documents organized." She pointed at the stack. "Eight primary, rated for disclosure priority. The first four are the core: the founding document itself — the operational framework with the Root's authorization signature — the Stem membership records from the vote, the Phase 0 technical spec with its authorization chain, and the forty-year timeline with the development milestones."
 
-"Secondary," Rook said.
+"Secondary?" Rook asked.
 
 "Supplementary," Vox said. "The community-service authorizations carrying the same signature — those prove the two projects ran as one. The infrastructure chain through the civic-grid charter updates Priya flagged. And two miscellaneous items from the founding archive."
 
-"The second miscellaneous item."
+"The second miscellaneous item?"
 
 "Administrative process documentation," Vox said. "The founding archive files by date and document type. The miscellaneous folder holds items logged but never assigned to a category — received and not processed." She pulled it and set it on the bench without emphasis. "A heritage verification pull request. Form HV-7 — the Syndicate's heritage classification audit, used when someone in the structure requests a review for administrative purposes. There's a name on the subject line."
 
@@ -3103,7 +3840,9 @@ Vox moved the form to the supplementary section and went on through the archive.
 
 "The date," she said. "On the HV-7. Read against the Phase 0 authorization." She pulled the two files up side by side, and the founding archive she had spent two days building rearranged itself around them. "The pull request predates the Root's signature. Eleven days. She requested a heritage classification audit on herself, and then eleven days later she signed the framework into effect." She was quiet a second. "The form isn't unfinished because someone abandoned it. It stops at the first section because the second section is the outcome — and the outcome is the Protocol. She asked the machine what it would find in her, and instead of waiting for the answer she became the thing that would answer it."
 
-That reframed everything downstream of it. The forty-seven documents were not a chain of authorizations built by a woman certain of her own place in the structure. They were the work of someone who had already flagged herself as a candidate for the classification the deployment would run — and moved the machine forward regardless.
+That reframed everything downstream of it. The forty-seven documents were not a chain of authorizations built by a woman certain of her own place in the structure.
+
+They were the work of someone who had already flagged herself as a candidate for the classification the deployment would run — and moved the machine forward regardless.
 
 "That's not supplementary," Rook said.
 
@@ -3113,11 +3852,11 @@ Nobody said the reordering was small. It sat in the middle of the bench, two day
 
 The safe house was quiet. There was work to do before tomorrow, and now less of it was settled than had been an hour ago.
 
-## The Plan
-
 The night before, the safe house had gone quiet the way it went quiet when the planning was finished.
 
-There was a difference between the quiet of a crew still working a problem and the quiet of a crew that had done the work and was waiting on the morning. The first ran on calculation in the background. The second was closer to rest — not ease, but the stillness of people who had reduced every variable they could and were waiting for 0530, when the work stopped being preparation and became the job.
+There was a difference between the quiet of a crew still working a problem and the quiet of a crew that had done the work and was waiting on the morning.
+
+The first ran on calculation in the background. The second was closer to rest — not ease, but the stillness of people who had reduced every variable they could and were waiting for 0530, when the work stopped being preparation and became the job.
 
 Rook had not slept past 0400. She had not tried.
 
@@ -3125,7 +3864,9 @@ By 0415 she was at the bench in the main room, the operational feed running on t
 
 The Z5 community center at 7 Velos Street had been civic-foundation-listed since 2198 and a Lotus node for twenty of its twenty-eight years. The Syndicate had chosen it the way it chose all its community-zone infrastructure: the ordinary was more secure than the secured. A secured facility was a target. It cost resources and left signatures. A building with an honest charitable mission cost none of that — food security on Tuesdays and Fridays, youth education every weekday morning, legal advisory three mornings a week, all of it real, all of it staffed by people who believed in the work, all of it on Syndicate grants processed through the same structure that ran the free clinics.
 
-The Syndicate had built the care. Twenty-eight years had made it genuine.  The volunteers were genuine, the attorneys were genuine, the families were real families with real needs — and the sub-level council room had been running beneath all of it since 2206. The silk did not stop being silk because it was also real care. The care did not stop being real because it was also the silk's foundation. The building held both, the way the woman who built it held both, and had for forty years.
+The Syndicate had built the care. Twenty-eight years had made it genuine. The volunteers were genuine, the attorneys were genuine, the families were real families with real needs — and the sub-level council room had been running beneath all of it since 2206.
+
+The building held both, the way the woman who built it held both, and had for forty years.
 
 She ran the timing sequence until it was clean, put it down, and waited for the crew to move.
 
@@ -3133,19 +3874,25 @@ At 0515, Lace left.
 
 She had done the calibration the evening before — not the full ritual; this face did not need it. Three years of wear on a face close enough to her own that the maintenance was mostly monitoring. Her real bone structure beneath it, her geography at a small remove, worn long enough in enough institutional rooms that it had built its own presence. Not performing membership. Having enough of the real version.
 
-She had come out of it with the face set, looked at Rook, and said, without any particular register — not resignation, not relief: "When this is done, I'm going to take some time off from all of them."
+She had come out of it with the face set, looked at Rook, and said, without any particular register — not resignation, not relief:
+
+"When this is done, I'm going to take some time off from all of them."
 
 Not the face she was wearing. All of them.
 
-Rook said, "I know."
+Rook said,
+"I know."
 
-She had not known where the certainty came from. She understood it later at the bench. Every job since MxG, she had watched Lace build the practitioner's distance — the slight remove that kept the construction from becoming the person. Lace had that distance with every face she carried. The distance was the discipline.
+She had not known where the certainty came from. She understood it later at the bench. Every job since the Lake Platform, she had watched Lace build the practitioner's distance - the slight remove that kept the construction from becoming the person. Lace had that distance with every face she carried. The distance was the discipline.
 
 It was not there this morning. In the face that was almost her own, it was not there.
 
-That was what the room required. The sanctum ran on detecting performance — it had to; authenticity was its primary security layer. A face performing membership would be seen. A face with real weight behind it would move through clean. The face closest to Lace's own was the one with the most weight. She had made that call and built the plan on it, and three nights ago she had told Rook she would deliver the crew's message not through a relay from outside but in the room, in front of the Stems, in the most exposed position available, so the authorization could not be quietly reshuffled after the crew walked out.
+That was what the room required. The sanctum ran on detecting performance — it had to; authenticity was its primary security layer. A face performing membership would be seen. A face with real weight behind it would move through clean. The face closest to Lace's own was the one with the most weight.
 
-Rook had heard it and said, "Then I'm outside."
+She had made that call and built the plan on it, and three nights ago she had told Rook she would deliver the crew's message not through a relay from outside but in the room, in front of the Stems, in the most exposed position available, so the authorization could not be quietly reshuffled after the crew walked out.
+
+Rook had heard it and said,
+"Then I'm outside."
 
 "Yes," Lace had said. "You're the clock."
 
@@ -3159,13 +3906,19 @@ Not irony. The operational logic of a man with one credential and a job that put
 
 Scout reached the service entrance at 0600, Gerald active in the external camera hardware. The business card was in her kit the way it always was — *Remi Diallo & Gerald, Structural Data*, both names equal — and she made nothing of it. Both names were doing the work the card described.
 
-Vox's eigenlift was in position by 0610. Four channels live on the center's external traffic and the Thorn patrol allocation for the Z5 sector, run with the precision she had built since losing the fifth channel and deciding not to rebuild it. Four channels, tightly held, running everything the plan needed.
+Vox's eigenlift was in position by 0610.
+
+Four channels live on the center's external traffic and the Thorn patrol allocation for the Z5 sector, run with the precision she had built since losing the fifth channel and deciding not to rebuild it.
+
+Four channels, tightly held, running everything the plan needed.
 
 Rook took the maintenance deck at 43 Velos at 0620. One block east, roof access, line-of-sight on the center's east elevation, the feed on the transport's surface.
 
 She watched the building do its morning.
 
-A real morning. The food volunteers arrived at 0628. The youth room lit at 0631. Three Z5 families came for the early legal session and were met at the public entrance by a cooperative attorney — a woman in her early fifties with a document case who greeted all three families by name, who had been doing this eleven years and had no idea what ran in the sub-level beneath her sessions. The mission statement was accurate. The center was real. Below the food staging and the youth program and the legal sessions, in the original concrete core, in the council room that had been there since before the charitable foundation, a woman who had built the clinics and built the Protocol sat at the center of a table with forty years of documentation in front of her.
+A real morning. The food volunteers arrived at 0628. The youth room lit at 0631. Three Z5 families came for the early legal session and were met at the public entrance by a cooperative attorney — a woman in her early fifties with a document case who greeted all three families by name, who had been doing this eleven years and had no idea what ran in the sub-level beneath her sessions.
+
+The mission statement was accurate. The center was real. Below the food staging and the youth program and the legal sessions, in the original concrete core, in the council room that had been there since before the charitable foundation, a woman who had built the clinics and built the Protocol sat at the center of a table with forty years of documentation in front of her.
 
 Rook had inferred it. Not confirmed — Scout's camera access reached only the corridors and anteroom, not the council room. But the inference held. The Root had known from the civic-grid log that the Spine rollback succeeded. She had known it forty-seven hours ago. Her decision cadence ran forty-eight to seventy-two. She had had time to set the room. And she was not a woman who had informal corridor conversations about documents that represented forty years of her work.
 
@@ -3181,7 +3934,9 @@ She set the room.
 
 "You're in the core," he said. "The core holds today."
 
-She had been thinking in load-bearing terms since Boiler first used the vocabulary three weeks ago in the Z3 safe house — what holds and what releases under pressure, the core and the additions, the parts you could modify without compromising the whole. Operational language, and something else at the same time. Whatever happens in there, the room holds it.
+She had been thinking in load-bearing terms since Boiler first used the vocabulary three weeks ago in the Z3 safe house — what holds and what releases under pressure, the core and the additions, the parts you could modify without compromising the whole. Operational language, and something else at the same time.
+
+Whatever happens in there, the room holds it.
 
 At 0737, Scout's status pulse came through the secondary channel — both threads active, physical position stable, dual confirmed. Her voice, when it came, had the fractional texture of a person spread across two locations. Not stressed. Different.
 
@@ -3207,7 +3962,9 @@ He had let the crew move through Old Harbor. He had let Nari move through three 
 
 "No," Rook said. "He's here to be in the room when it happens."
 
-A man who had enforced the Protocol's infrastructure for eight years and had decided, somewhere in the forty-seven hours since the rollback hit the grid log, that his authorization for this particular morning was not enforcement. She did not know what he had decided it was. She had a hypothesis she was not going to test by inference.
+A man who had enforced the Protocol's infrastructure for eight years and had decided, somewhere in the forty-seven hours since the rollback hit the grid log, that his authorization for this particular morning was not enforcement.
+
+She did not know what he had decided it was. She had a hypothesis she was not going to test by inference.
 
 "Continue approach," she said. "Ekow, entry. Lace, hold at the anteroom until Ekow's through the checkpoint. Joint advance to the inner door at 0745."
 
@@ -3257,13 +4014,19 @@ The operator confirmed the credential, logged the entry, and pointed him to the 
 
 He moved into the building.
 
-The foyer had the wear of a space used continuously for a long time — not the overdone cleanliness of a front, but the cleanliness of a place with people in it every day doing real work. The bulletin boards carried current schedules, some with handwritten notes. The waiting-area chairs sat with the slight imprecision of chairs moved and replaced by people focused on the work, not the arrangement.
+The foyer had the wear of a space used continuously for a long time — not the overdone cleanliness of a front, but the cleanliness of a place with people in it every day doing real work.
+
+The bulletin boards carried current schedules, some with handwritten notes.
+
+The waiting-area chairs sat with the slight imprecision of chairs moved and replaced by people focused on the work, not the arrangement.
 
 He read all of it with the flat efficiency of a man who had been reading operational environments for twenty-four years and knew the fastest read came from the quality of the ordinary, not from hunting anomalies in it.
 
 He moved down the corridor.
 
-The outer rooms held display cases from the youth programs — photographs, progress reports, student work in the youth cooperative's standard frames. A corkboard of photographs from the legal sessions: the families, the attorneys, the careful body language of people in difficult situations being helped by someone who could not fix everything but was trying to fix what could be fixed. Names and dates, back eleven years.
+The outer rooms held display cases from the youth programs — photographs, progress reports, student work in the youth cooperative's standard frames.
+
+A corkboard of photographs from the legal sessions: the families, the attorneys, the careful body language of people in difficult situations being helped by someone who could not fix everything but was trying to fix what could be fixed. Names and dates, back eleven years.
 
 He had passed cases like these before. He had passed this building's cases, on the two Z5 reviews that had brought him to the administrative level but not the sub-level, reading them as evidence of the building's genuine function — one more confirmation on the way to a target.
 
@@ -3273,13 +4036,21 @@ Not because the timeline required it. Seven minutes to the session opening, four
 
 He stopped at the corkboard for thirty seconds.
 
-The photographs showed what they showed: real people, real sessions, real legal work for families in situations they had not chosen. The attorneys were absent from most of them — the photographs were of the families. One attorney appeared in the corner of an image from four years back, a woman in her late forties with a document case, not looking at the camera because she was looking at the family she was explaining something to.
+The photographs showed what they showed: real people, real sessions, real legal work for families in situations they had not chosen.
 
-He looked at the family. A woman in her mid-thirties with a child, maybe seven. The woman's posture was that of someone receiving information that was not what she had hoped for but was real information, delivered by someone who was not going to pretend it was better than it was. The child was not looking at the attorney or the mother. The child was looking at something off to the left of the frame that had nothing to do with the session.
+The attorneys were absent from most of them — the photographs were of the families.
+
+One attorney appeared in the corner of an image from four years back, a woman in her late forties with a document case, not looking at the camera because she was looking at the family she was explaining something to.
+
+He looked at the family. A woman in her mid-thirties with a child, maybe seven. The woman's posture was that of someone receiving information that was not what she had hoped for but was real information, delivered by someone who was not going to pretend it was better than it was.
+
+The child was not looking at the attorney or the mother. The child was looking at something off to the left of the frame that had nothing to do with the session.
 
 He put the image away and went on.
 
-The sub-level checkpoint was the deeper verification — a staffed desk with a secondary reader that ran the credential against a thirty-day return-flag database. Eleven days past clean. The operator ran the cycle and cleared him in twenty-two seconds.
+The sub-level checkpoint was the deeper verification — a staffed desk with a secondary reader that ran the credential against a thirty-day return-flag database. Eleven days past clean.
+
+The operator ran the cycle and cleared him in twenty-two seconds.
 
 He entered the anteroom.
 
@@ -3291,9 +4062,11 @@ Not hesitation — the stillness of a man entering a space and finding something
 
 Park was in the standard Thorn configuration: compact, the economy of a man who had done this long enough that the performance had dropped away and left function. The close-range deterrent sat in passive standby — present, not active. The reinforced joint actuators in his arms and legs were audible only if you were close and listening, a faint metallic undertone under the room's quiet. Iron beneath the plain clothes.
 
-His face showed nothing specific. It was the face Ekow had read at a distance for eight years and closely for three weeks, and it was the face of a man who had made his decision — not the one Ekow was about to watch him make in the next two hours, but the preliminary one, the one that required him to be in this anteroom rather than somewhere else, and who had nothing left to perform about it, because performance was for decisions still under negotiation.
+His face showed nothing specific. It was the face Ekow had read at a distance for eight years and closely for three weeks, and it was the face of a man who had made his decision — not the one Ekow was about to watch him make in the next two hours, but the preliminary one, the one that required him to be in this anteroom rather than somewhere else. He had nothing left to perform about it, because performance was for decisions still under negotiation.
 
-Park looked at him. Ekow looked at Park.
+Park looked at him.
+
+Ekow looked at Park.
 
 He had read Park's work through its aftermath: the debt routes Ekow ran had been shaped by Thorn decisions Park authorized, and the signatures — the timing, the scope, the compression of enforcement pressure — were legible to him the way one practitioner reads another. He had known the work before he knew the face. Now the face was three meters away in the anteroom of the building they had both come to on the same morning for the same purpose.
 
@@ -3309,7 +4082,9 @@ Park was the Thorns. Ekow was the outsider dogs. Both instruments of the same au
 
 He had, on three occasions, run operations that put the final outcome of the target in his hands — whether the target continued or did not. All three times he had made the decision cleanly, done what such things required, and moved on. All three times the authorization was correct by the Syndicate's standards. All three times the authorization had been Yim Seul-ki's.
 
-He had run those for her. Run them well. He had not known, running them, that the chain ran through the same woman who had built the clinic where two of his three targets had received care the year before the operations. The plan was designed to keep those pieces apart — the silk on one surface, the iron on another, run by one mind that knew both.
+He had run those for her. Run them well. He had not known, running them, that the chain ran through the same woman who had built the clinic where two of his three targets had received care the year before the operations.
+
+The plan was designed to keep those pieces apart — the silk on one surface, the iron on another, run by one mind that knew both.
 
 He had found out three weeks ago. He had not finished finding out since.
 
@@ -3317,11 +4092,15 @@ Lace came through the checkpoint. She moved through the anteroom with the ease o
 
 Park watched her go. His face did not change. He returned his orientation to the anteroom entrance.
 
-Ekow read Park's posture for the sign that would tell him whether the man had reached a decision or was still reaching it. Settled. Not tense, not performing calm — settled, the way a large structure is settled: not because no forces act on it, but because the forces have been absorbed and it is holding its load.
+Ekow read Park's posture for the sign that would tell him whether the man had reached a decision or was still reaching it.
+
+Settled. Not tense, not performing calm — settled, the way a large structure is settled: not because no forces act on it, but because the forces have been absorbed and it is holding its load.
 
 Park had reached his decision. Ekow did not know what it was. He knew it had been reached.
 
-At 0744, the inner door's lock disengaged — not manually, the council session's automated access, the building's system triggering the scheduled opening. A small sound in a quiet anteroom.
+At 0744, the inner door's lock disengaged — not manually, the council session's automated access, the building's system triggering the scheduled opening.
+
+A small sound in a quiet anteroom.
 
 Ekow looked at the door. Park looked at the door.
 
@@ -3339,17 +4118,21 @@ He went in. Park went in behind him.
 
 Neither of them spoke.
 
-Gerald had been in the building for twenty-six minutes before Scout went in.
+Gerald had been in the building for twenty-six minutes before Scout went active on the link.
 
 This was the distinction the business card had always described and that had never, until this morning, been precisely true. *Remi Diallo & Gerald, Structural Data.* Same size, same weight, neither name smaller. Scout had carried it for three years the way she carried a thing that was true the way technical precision is true — accurate at one level, waiting for the conditions under which the full meaning went operational.
 
 This morning was those conditions.
 
-Gerald was in the camera network, threaded through the center's external hardware via the utility conduit at the service entrance's northeast corner — sixteen centimeters of standard civil infrastructure, external sensor cabling alongside the temperature monitoring and the egress lighting, an access port at the junction that was not locked because nobody locked conduit against someone threading an NSB crawler through it. Twenty-six minutes in: the anteroom, the sub-level corridor, the council-level corridor, the approach on all three street faces.
+Gerald was in the camera network, threaded through the center's external hardware via the utility conduit at the service entrance's northeast corner - sixteen centimeters of standard civil infrastructure, external sensor cabling alongside the temperature monitoring and the egress lighting, an access port at the junction that was not locked because nobody locked conduit against someone threading a Ghost's crawler through it.
+
+Twenty-six minutes in: the anteroom, the sub-level corridor, the council-level corridor, the approach on all three street faces.
 
 He had done all of it while Scout stood at the service entrance in her body, holding the physical position. And she had felt all of it.
 
-That was dual-presence in practice: felt, not reviewed. The crawler's movements through the conduit arrived in her body as pressure and temperature, as if the conduit walls were against her own arms. The camera feed ran as a second field of vision she had to hold apart from the one her physical eyes were working in the Z5 street. Two visual fields at once, both real, both consuming load.
+That was dual-presence in practice: felt, not reviewed. The crawler's movements through the conduit arrived in her body as pressure and temperature, as if the conduit walls were against her own arms.
+
+The camera feed ran as a second field of vision she had to hold apart from the one her physical eyes were working in the Z5 street. Two visual fields at once, both real, both consuming load.
 
 The briefing had been precise about the cost. She had stated it herself: ninety minutes of dual before the body thread's response time began to lag. Her longest sustained dual in a year of training had been eighty-two minutes. Ninety was a guess.
 
@@ -3363,9 +4146,13 @@ She noticed it at minute thirty-seven. She held the notice as information, not a
 
 She ran the perimeter.
 
-Gerald moved through the coverage in a set pattern — council corridor, anteroom, sub-level access, public entrance, exterior faces — the sequence she had set to leave no critical zone dark longer than ninety seconds. She ran it standing at the service entrance with the three-hundred-millisecond lag in her hands and the visual field doubled.
+Gerald moved through the coverage in a set pattern — council corridor, anteroom, sub-level access, public entrance, exterior faces — the sequence she had set to leave no critical zone dark longer than ninety seconds.
 
-In three years of using the card at the data cooperative, no one had asked why it said *Remi Diallo & Gerald* and not *Remi Diallo*. The cooperative's clients were used to identifiers that were specific in ways they did not need to understand. The card said what it said; the work got done. She had understood for two years that the second name was a forward description — accurate for something not yet active. Remi Diallo was here. Gerald was wherever the threading was. This morning it was true for the first time.
+She ran it standing at the service entrance with the three-hundred-millisecond lag in her hands and the visual field doubled.
+
+In three years of using the card at the data cooperative, no one had asked why it said *Remi Diallo & Gerald* and not *Remi Diallo*. The cooperative's clients were used to identifiers that were specific in ways they did not need to understand. The card said what it said; the work got done.
+
+She had understood for two years that the second name was a forward description — accurate for something not yet active. Remi Diallo was here. Gerald was wherever the threading was. This morning it was true for the first time.
 
 At minute forty-four, Vox's channel came up.
 
@@ -3373,7 +4160,7 @@ At minute forty-four, Vox's channel came up.
 
 "Council level is quiet," Scout said. Her voice had the fractional texture the dual state produced — not stressed, present in both places at once. "Anteroom has two bodies — Park and a Stem who came through at 0749. Sub-level access is clear."
 
-"The inner door," Rook said.
+"The inner door?" Rook asked.
 
 "Closed. No exterior camera into the chamber. I have the corridor and the approach. Anyone comes through the inner door, I have it in the corridor."
 
@@ -3383,25 +4170,42 @@ At minute forty-four, Vox's channel came up.
 
 She kept it. She was not Remi Diallo using Gerald as a tool. She was both, in the way the card had always described.
 
-Through the corridor camera she held the approach to the door at an angle that gave her the full length and the anteroom exit. If the inner door opened — if Lace or Ekow needed the flag, if Park moved — she had it at three hundred forty milliseconds. Inside every parameter.
+Through the corridor camera she held the approach to the door at an angle that gave her the full length and the anteroom exit.
 
-In her body, at the service entrance, the Z5 morning ran on. A resident walked past with a bag from the community market — three blocks north, the Z5/Z6 boundary, a Lotus infrastructure node staffed by people who gave genuine service, the silk running the way it always ran in the corridor. Real service. Real need. Both. The resident walked past Scout without a glance and continued up the Velos arterial toward the residential cluster Boiler's renovation project was in.
+If the inner door opened — if Lace or Ekow needed the flag, if Park moved — she had it at three hundred forty milliseconds. Inside every parameter.
+
+In her body, at the service entrance, the Z5 morning ran on.
+
+A resident walked past with a bag from the community market — three blocks north, the Z5/Z6 boundary, a Lotus infrastructure node staffed by people who gave genuine service, the silk running the way it always ran in the corridor.
+
+Real service. Real need. Both.
+
+The resident walked past Scout without a glance and continued up the Velos arterial toward the residential cluster Boiler's renovation project was in.
 
 She was aware of the resident, the bag, the cluster, the way she was aware of everything in the Z5 morning: cleanly, from a body standing at the service entrance while also threading a camera network twenty meters away. Two present at once. Both real.
 
-At minute sixty-three, Rook said, "Movement on the council-level corridor."
+""At minute sixty-three," Rook said. "Movement on the council-level corridor."
 
-"I have it," Scout said. The feed was at three hundred forty milliseconds, and the movement was a Stem leaving the anteroom — not toward the inner door, toward the corridor access. "One body, moving away from the chamber, toward sub-level access. Not an exit. Heading for the documentation alcove on the north end."
+"I have it," Scout said.
+
+The feed was at three hundred forty milliseconds, and the movement was a Stem leaving the anteroom — not toward the inner door, toward the corridor access.
+
+"One body, moving away from the chamber, toward sub-level access. Not an exit. Heading for the documentation alcove on the north end."
 
 "Track it."
 
-She tracked it. The Stem reached the alcove, pulled something from storage, returned toward the anteroom. Administrative movement. "Return to anteroom. Not an exit."
+She tracked it. The Stem reached the alcove, pulled something from storage, returned toward the anteroom. Administrative movement.
+"Return to anteroom. Not an exit."
 
 "Understood."
 
-She kept the pattern running. Sixty-seven. Sixty-eight. The lag in her hands steady at three hundred forty. Twenty-two minutes of full-capacity window left, and the critical phase was the one running now, while the conversation in the chamber was in progress.
+She kept the pattern running. Sixty-seven. Sixty-eight. The lag in her hands steady at three hundred forty.
 
-She held it. The body was tired the way the body is always tired at the sixty-eighth minute of a held position. She managed it. Kept the hands stable, the presence unremarkable. Gerald ran the coverage — corridor, anteroom, sub-level access, exterior. Clean. No anomalies.
+Twenty-two minutes of full-capacity window left, and the critical phase was the one running now, while the conversation in the chamber was in progress.
+
+She held it. The body was tired the way the body is always tired at the sixty-eighth minute of a held position. She managed it. Kept the hands stable, the presence unremarkable.
+
+Gerald ran the coverage — corridor, anteroom, sub-level access, exterior. Clean. No anomalies.
 
 Both of them, in the building and at the entrance to it, working the job the card had always said they worked.
 
@@ -3433,7 +4237,7 @@ Then a voice Rook hadn't heard before. Old, precise, the cadence of someone who 
 
 "Yes," Lace said. "I know."
 
-"You have a question about the authorization."
+"You have a question about the authorization?"
 
 "I have something to show the room. Before you confirm the authorization, I want the room to see what it's authorizing. Not as an objection. As a matter of record. So the record is complete."
 
@@ -3443,7 +4247,13 @@ Rook checked the clock. 0752 and forty seconds. Thorn patrol rotation sixteen mi
 
 The old voice said, "Continue."
 
-Rook knew that voice now. The same conditional phrasing — as a matter of record, so the record is complete — ran through the founding document, the community-care paperwork, the civic-grid compliance updates. One signature across forty years. She was hearing it live. She was hearing Yim Seul-ki give Lace permission to speak.
+Rook knew that voice now. The same conditional phrasing — as a matter of record, so the record is complete — ran through the founding document, the community-care paperwork, the civic-grid compliance updates.
+
+One signature across forty years.
+
+She was hearing it live.
+
+She was hearing Yim Seul-ki give Lace permission to speak.
 
 A woman who had been expecting the crew since Old Harbor. Who had moved the documents to this chamber. Who had set the room. Who had just heard a stranger ask to show the council what it was about to approve, and answered: continue. Not because she was caught off guard. Because she had chosen this room for it.
 
@@ -3477,21 +4287,33 @@ The old voice again. The room had been turning toward the Root since Lace stoppe
 
 Rook's hands went still on the transport's surface.
 
-"The Thorns flagged your crew at the Z3 market. Not because we were watching the sculpture — it had sat in independent custody eleven months, a documentation asset, valuable but idle. They flagged you for the recovery method. It was specific enough to say your next job would need extraction capacity in the Z6 buffer zone." A pause. "We had a defector whose extraction window was ninety-six hours from the day the sculpture was taken."
+"The Thorns flagged your crew at the Z3 market. Not because we were watching the sculpture — it had sat in independent custody eleven months, a documentation asset, valuable but idle. They flagged you for the recovery method. It was specific enough to say your next job would need extraction capacity in the Z6 buffer zone."
+
+A pause.
+
+"We had a defector whose extraction window was ninety-six hours from the day the sculpture was taken."
 
 It landed with the weight of something that rearranges what came before it.
 
-Rook had read the Z3 flag at the time as the Syndicate guarding its data — Thorns watching an unknown near their asset. She'd read it wrong. They hadn't been watching the sculpture. They'd read the method, because the method told them who was working the Z6 buffer with the reach to run a parallel extraction. The sculpture was a marker. From the moment the crew touched it, the Thorns had been tracing the thread back toward Lee Nari.
+Rook had read the Z3 flag at the time as the Syndicate guarding its data — Thorns watching an unknown near their asset. She'd read it wrong.
+
+They hadn't been watching the sculpture. They'd read the method, because the method told them who was working the Z6 buffer with the reach to run a parallel extraction.
+
+The sculpture was a marker. From the moment the crew touched it, the Thorns had been tracing the thread back toward Lee Nari.
 
 "He knew about Nari's window," she said. Not to anyone.
 
 "He has always known about Lee Nari," Seul-ki said in the channel — not to Rook, still speaking to the chamber. "The Thorns had her Z6 location within eighteen months of her leaving. The window your crew raced was the Thorns' own deployment window. The same window, from the same intelligence."
 
-"The Thorns did not close it," she went on, "because I gave no order. I had known for some time that a thread existed which, if followed, would arrive at this room. I decided that when it arrived, I would be here." A slight pause. "I did not decide to help the thread. I decided not to stop it."
+"The Thorns did not close it," she went on, "because I gave no order. I had known for some time that a thread existed which, if followed, would arrive at this room. I decided that when it arrived, I would be here." A slight pause.
+
+"I did not decide to help the thread. I decided not to stop it."
 
 The chamber was silent.
 
-Rook held the channel. She thought about a woman who had built the clinics and built the machine that would come for her, and run it forty years — who had sat in her office forty-eight hours after the rollback hit the grid log and decided that when the end came, she would be in the right room. She had not sent the Thorns to stop the crew. She had set the room instead.
+Rook held the channel. She thought about a woman who had built the clinics and built the machine that would come for her, and run it forty years — who had sat in her office forty-seven hours after the rollback hit the grid log and decided that when the end came, she would be in the right room.
+
+She had not sent the Thorns to stop the crew. She had set the room instead.
 
 "Then we're in the right place," Lace said.
 
@@ -3499,9 +4321,11 @@ Rook held the channel. She thought about a woman who had built the clinics and b
 
 A chair sound. Lace, sitting.
 
-Rook heard footsteps — measured, unhurried, the economy of a woman who had been crossing rooms like this for a very long time. Moving from the center of the table toward the east end, toward the side entrance Boiler's plans had marked in the east wall.
+Rook heard footsteps — measured, unhurried, the economy of a woman who had been crossing rooms like this for a very long time.
 
-Then Seul-ki's voice, closer, at the edge of the channel: "Tell the crew's operational lead I'd like to speak with her directly. The anteroom credential will accept a visitor."
+Moving from the center of the table toward the east end, toward the side entrance Boiler's plans had marked in the east wall.
+
+"Then Seul-ki's voice, closer, at the edge of the channel: "Tell the crew's operational lead I'd like to speak with her directly. The anteroom credential will accept a visitor."
 
 "She's one block out," Lace said.
 
@@ -3515,15 +4339,15 @@ She held for three more seconds.
 
 Then she came inside.
 
-## Yim Seul-ki
+The council chamber's east entrance was the side door Boiler had found in the plans — smaller than the main entrance, not ceremonial, added in some renovation because the room needed a way in that wasn't the council door.
 
-The council chamber's east entrance was the side door Boiler had found in the plans — smaller than the main entrance, not ceremonial, added in some renovation because the room needed a way in that wasn't the council door. It opened onto a short corridor to the sub-level's storage and offices, which reached the surface by a separate stairwell. A practical door.
+It opened onto a short corridor to the sub-level's storage and offices, which reached the surface by a separate stairwell. A practical door.
 
 Seul-ki was waiting at it when Rook came through.
 
-Rook had expected the visual weight of thirty years running an institution. What she found was a woman of seventy-three — compact, contained, with the solidity that very old people in hard physical work sometimes keep. Not large.  Her face had done a great deal of work for a long time and was still doing it.
+Rook had expected the visual weight of forty years running an institution. What she found was a woman of seventy-three - compact, contained, with the solidity that very old people in hard physical work sometimes keep. Not large. Her face had done a great deal of work for a long time and was still doing it.
 
-She wore the plain register of a community institution: good quality, unremarkable. The small Lotus mark on her lapel, the same mark the food volunteers wore, worn the way you wear a thing you stopped choosing thirty years ago.
+She wore the plain register of a community institution: good quality, unremarkable. The small Lotus mark on her lapel, the same mark the food volunteers wore, worn the way you wear a thing you stopped choosing forty years ago.
 
 Her eyes were on Rook from the door.
 
@@ -3535,7 +4359,9 @@ A moment. Not a standoff. An acknowledgment — two people in the right room, at
 
 "Walk with me," Seul-ki said.
 
-They went to the east wall, where two chairs had been set at a slight angle — not across a table, the arrangement of people about to have a conversation rather than a negotiation. Seul-ki sat. Rook sat.
+They went to the east wall, where two chairs had been set at a slight angle — not across a table, the arrangement of people about to have a conversation rather than a negotiation.
+
+Seul-ki sat. Rook sat.
 
 The main space was behind them. Lace at the table. The Stems talking low, in the contained voices of people handling an institutional shock with institutional discipline. Ekow and Park at the edges. None of them were going to interrupt this.
 
@@ -3553,11 +4379,11 @@ Seul-ki folded her hands in her lap.
 
 "I'm not dismantling the Syndicate," Rook said.
 
-A slight pause. "No. You're dismantling the Protocol."
+A slight pause. "No. You're dismantling the Protocol?"
 
 "Yes."
 
-"And you believe the two come apart."
+"And you believe the two come apart?"
 
 "They were always separate. You chose to run them together."
 
@@ -3607,13 +4433,13 @@ Seul-ki looked at her, and the texture of the look changed. Still fully present.
 
 "That's true," Rook said.
 
-"Then you see the problem I've been trying to solve."
+"Then you see the problem I've been trying to solve?"
 
 "I see the problem you've been trying to solve. And I see that the solution you built targets two hundred thousand people in Z6 who've used your clinics for twenty years. I want to ask you something."
 
 Seul-ki waited.
 
-"Of the two hundred thousand in the Phase 0 data," Rook said, "how many have children in the youth programs at the community centers? How many are active patients in the Z5/Z6 clinics? How many are in the food distribution's active accounts?"
+"Of the two hundred thousand in the Phase 0 data," Rook asked, "how many have children in the youth programs at the community centers? How many are active patients in the Z5/Z6 clinics? How many are in the food distribution's active accounts?"
 
 Seul-ki said nothing.
 
@@ -3623,7 +4449,7 @@ The chamber was quiet behind them. The Stems had stopped talking.
 
 Seul-ki looked at Rook. Not with defeat — with the stillness of a person who, for the first time in a conversation she'd been running in her own head for years, had met a question she had no prepared answer for. Because the honest answer was one she'd been avoiding for forty years, and the avoidance had held because no one had ever asked it this exactly.
 
-"What happens to them," Rook said, "if the Protocol proceeds. Not in theory. The specific households. The four hundred and twelve ongoing treatment plans. The families in the youth programs. What happens to them?"
+"What happens to them," Rook said, "if the Protocol proceeds? Not in theory. The specific households. The four hundred and twelve ongoing treatment plans. The families in the youth programs. What happens to them?"
 
 Seul-ki said nothing for a long time.
 
@@ -3647,9 +4473,9 @@ Seul-ki looked at her hands.
 
 "Sit with me," she said, "for a moment."
 
-Rook sat.
+Rook stayed.
 
-They sat.
+They stayed like that.
 
 The sitting wasn't surrender. It was the pause of a person who had followed a long argument to a result she couldn't step around — not because it was wrong, but because it made her look at a thing she had managed for forty years instead of examined.
 
@@ -3665,23 +4491,23 @@ She described it plainly. HV-7, the Syndicate's heritage classification audit, u
 
 She read the name.
 
-Seul-ki was looking at the east wall. Her shoulders dropped, very slightly — not a collapse, a settling, the small descent of a body that had been braced against a weight for forty-one years and had just been told the weight was here. Not at Rook. At the wall. At the 2171 concrete that had held this building's load for fifty-five years.
+Seul-ki was looking at the east wall. Her shoulders dropped, very slightly — not a collapse, a settling. Not at Rook. At the wall. At the 2171 concrete that had held this building's load for fifty-five years.
 
 Rook waited. The wait wasn't tactical. She wasn't giving Seul-ki room to find a position. She was giving her time because the thing deserved time.
 
-She had decided three nights ago not to use the file as a weapon, and the decision held. Using it as a weapon assumed shame was a lever — that a woman who had carried this for forty-one years hadn't already built the walls a pointed accusation would break against. And the file wasn't about hypocrisy anyway. It was about something more exact.
+She had decided three nights ago not to use the file as a weapon, and the decision held. Using it as a weapon assumed shame was a lever — that a woman who had carried this for forty years hadn't already built the walls a pointed accusation would break against. And the file wasn't about hypocrisy anyway. It was about something more exact.
 
 "You know you don't meet your own standard," Rook said.
 
 Seul-ki said nothing.
 
-"You've always known. Since you were thirty-two, or whatever age you were when you pulled the form — you've known the thing you were building would come for you if it came for anyone. You built it anyway. You ran it forty years. You've been the thing that runs it and the thing it runs toward, at once, your whole adult life." She paused. "I'm not saying it to damage you. I'm saying it because it's what's on the record, and the record should say it."
+"You've always known. Since you were thirty-two, or whatever age you were when you pulled the form - you've known the thing you were building would come for you if it came for anyone. You built it anyway. You ran it forty years. You've been the thing that runs it and the thing it runs toward, at once, your whole adult life." She paused. "I'm not saying it to damage you. I'm saying it because it's what's on the record, and the record should say it."
 
 Seul-ki turned her head and looked at her.
 
-"The record," she said.
+"The record?" she asked.
 
-"The documentation package. The form's in it, the same way the founding document and the Stem vote records and the Phase 0 data are in it. One document among the rest. It goes to the three disclosure points in forty-eight hours with everything else, unless we reach an agreement in the next two hours." She held her eyes. "I'm not holding it back. I'm not offering to leave it out in exchange for something. It's part of the complete record, and the complete record is what gets disclosed."
+"The documentation package. The form's in it, the same way the founding document and the Stem vote records and the Phase 0 data are in it. One document among the rest. It goes to the three disclosure points in forty-eight hours with everything else." She held her eyes. "I'm not holding it back. I'm not offering to leave it out in exchange for something. It's part of the complete record, and the complete record is what gets disclosed."
 
 Seul-ki looked at her for a long moment.
 
@@ -3689,11 +4515,11 @@ Seul-ki looked at her for a long moment.
 
 "Yes."
 
-"You understand the form represents a decision I made forty-one years ago. I found the information. I understood what it meant. I chose to continue. Not to abandon the project. Not to rebuild it. To continue it as designed." The silk in her voice hadn't shifted — not performing calm, living in it. "I did not pretend to myself the form didn't exist. I put it in the archive. I recorded it as received. I wrote no note explaining why it went no further, because I did not want to write down the reason." A pause. "The reason was mine to carry."
+"You understand the form represents a decision I made forty years ago. I found the information. I understood what it meant. I chose to continue. Not to abandon the project. Not to rebuild it. To continue it as designed." The silk in her voice hadn't shifted — not performing calm, living in it. "I did not pretend to myself the form didn't exist. I put it in the archive. I recorded it as received. I wrote no note explaining why it went no further, because I did not want to write down the reason." A pause. "The reason was mine to carry."
 
 "You carried it," Rook said.
 
-"I carried it. I carry it now. Every year of the forty-one since I opened the file." She looked at the wall. "Everyone who builds something in the GLMZ has a price they don't talk about. The zone takes a price from everything that survives in it. The people who built the markets paid. The attorneys paid. The nurses paid. You've paid prices you haven't examined, because you haven't been doing this long enough to have examined them all." She looked at Rook. "The form is my price. Paid forty-one years ago, and every year since."
+"I carried it. I carry it now. Every year of the forty since I opened the file." She looked at the wall. "Everyone who builds something in the GLMZ has a price they don't talk about. The zone takes a price from everything that survives in it. The people who built the markets paid. The attorneys paid. The nurses paid. You've paid prices you haven't examined, because you haven't been doing this long enough to have examined them all." She looked at Rook. "The form is my price. Paid forty years ago, and every year since."
 
 "That's not what this is," Rook said.
 
@@ -3707,7 +4533,9 @@ She let it sit a beat.
 
 The concrete was in front of them, holding its load the way it had for fifty-five years.
 
-Seul-ki looked at the wall for a long time. Rook didn't fill the silence. Her own hands were folded in her lap, and the folding had the automatic quality of a body organizing itself around something not comfortable to hold. None of what Rook had said was new to Seul-ki — that was the point. She had lived beside all of it for forty-one years. What was new was that it was outside her now: in the room, on the record, in a package going to three disclosure points in forty-eight hours.
+Seul-ki looked at the wall for a long time. Rook didn't fill the silence. Her own hands were folded in her lap, and the folding had the automatic quality of a body organizing itself around something not comfortable to hold.
+
+None of what Rook had said was new to Seul-ki — that was the point. She had lived beside all of it for forty years. What was new was that it was outside her now: in the room, on the record, in a package going to three disclosure points in forty-eight hours.
 
 "That's true," Seul-ki said. The voice was the same. The silk. But there was something under the evenness now — not broken, settled, the way a thing held at tension for a very long time settles when it's finally let down.
 
@@ -3731,7 +4559,7 @@ Seul-ki was quiet a moment. "Yes," she said. "I have."
 
 Above them, the food distribution was still running. The youth room still lit. The advisory sessions still going, the cooperative attorney with families who'd walked in carrying situations they hadn't chosen. Twenty-eight years of the building doing its work. And below it, in the original core built to last seventy years, two women in chairs set at a slight angle, forty years of institutional history between them, the record of it on a drive in a carry case in Vox's hands two blocks north.
 
-"What do you need from me," Seul-ki said. Direct, no preamble — the question of someone who had moved through the argument and the silence to where the practical question begins. Not surrender. Movement.
+"What do you need from me?" Seul-ki asked. Direct, no preamble — the question of someone who had moved through the argument and the silence to where the practical question begins. Not surrender. Movement.
 
 "I need you to hear the choice," Rook said.
 
@@ -3741,11 +4569,17 @@ Rook told her.
 
 Rook told her the choice.
 
-She laid it out the way she laid out any operation: in sequence, dependencies named, without the framing that invites an argument about the framing instead of the content. The choice was the choice. It didn't need force.
+She laid it out the way she laid out any operation: in sequence, dependencies named, without the framing that invites an argument about the framing instead of the content.
 
-"The documentation package is on a forty-eight-hour conditional release," she said. "Distributed — three nodes, different locations, no single point of failure. If the release isn't suspended by the authorized key before the trigger resolves, the full package goes to three disclosure points at once." She named them. "The GLMZ Civic Bureau's charter compliance division. Adaeze Nnodu-Park's Z5/Z6 Legal Cooperative. And a public archive on the Gray Zone's community information network. The same moment, all three. There's no version where the Civic Bureau gets it and the public archive doesn't."
+The choice was the choice. It didn't need force.
 
-Three different kinds of recipient — civic regulator, civil legal, and public — that couldn't be coordinated away before the information became record. A single disclosure could be challenged, delayed, buried by an institution of the Syndicate's weight. Three at once could not.
+"The documentation package is on a forty-eight-hour conditional release," she said. "Distributed — three nodes, different locations, no single point of failure. If the release isn't suspended by the authorized key before the trigger resolves, the full package goes to three disclosure points at once."
+
+She named them. "The GLMZ Civic Bureau's charter compliance division. Adaeze Nnodu-Park's Z5/Z6 Legal Cooperative. And a public archive on the Gray Zone's community information network. The same moment, all three. There's no version where the Civic Bureau gets it and the public archive doesn't."
+
+Three different kinds of recipient — civic regulator, civil legal, and public — that couldn't be coordinated away before the information became record.
+
+A single disclosure could be challenged, delayed, buried by an institution of the Syndicate's weight. Three at once could not.
 
 Seul-ki listened with the full attention she'd given everything. She had not looked away.
 
@@ -3765,9 +4599,13 @@ Seul-ki said nothing.
 
 "Second: the Syndicate funds the transition infrastructure for the communities its services currently serve. Not the communities the Protocol was protecting — all of them. The Z5/Z6 corridor, the buffer zones, everyone who depends on the clinics and markets and debt advisory and food distribution. The funding builds an alternative that doesn't depend on the Syndicate's continued operation or goodwill." She paused. "Not symbolic. Real enough that Adaeze's cooperative can stand up the alternative — clinics, distribution, legal support — on a timeline that prevents a coverage gap in the transition. The cooperative administers it. Not the Syndicate."
 
-The Stems were listening. She was aware of it — that the room had been listening since she began, that the Stems were hearing the terms at the same time as the Root, and that this was not an accident. They had spent forty years outside the Protocol's authorization chain. They were inside it now.
+The Stems were listening. She was aware of it — that the room had been listening since she began, that the Stems were hearing the terms at the same time as the Root, and that this was not an accident.
 
-"Third: the funding sustains the alternative for at least five years. Not a one-time transfer. A structured endowment that produces operating revenue on a timeline that doesn't force those institutions into other Syndicate relationships to survive." She looked at Seul-ki. "The Syndicate works with the Legal Cooperative to audit the endowment structure. The audit is public."
+They had spent forty years outside the Protocol's authorization chain. They were inside it now.
+
+"Third: the funding sustains the alternative for at least five years. Not a one-time transfer. A structured endowment that produces operating revenue on a timeline that doesn't force those institutions into other Syndicate relationships to survive." She looked at Seul-ki.
+
+"The Syndicate works with the Legal Cooperative to audit the endowment structure. The audit is public."
 
 She said, "That is the choice."
 
@@ -3789,7 +4627,7 @@ Seul-ki sat with it a long time. Not performing thought. Thinking — the slow, 
 
 "That's a question for the Syndicate's counsel and Adaeze's cooperative to work out together," Rook said. "I'm not here to structure the transfer. I'm here to tell you what the alternative to disclosure is. The structuring is the Syndicate's work."
 
-"Within forty-eight hours."
+"Within forty-eight hours?"
 
 "The first commitment inside forty-eight hours. The full transfer is a longer timeline. But the commitment — the public acknowledgment, the formal termination, the preliminary endowment agreement — has to be real and documentable inside the window." She paused. "Adaeze's cooperative administers it because they've done this work in the zone for twelve years and can tell whether the commitment is real. They'll know if it isn't."
 
@@ -3815,7 +4653,7 @@ Another silence.
 
 "I know."
 
-"It would damage it. Fracture it. The hardliners go dark. The pragmatists distance themselves publicly. There would be a period of institutional chaos, and the communities that depend on the services would be exposed during it." She looked at Rook. "The disclosure causes the coverage gap you're asking me to fund an endowment to prevent."
+"It would damage it. Fracture it. The hardliners go dark. The pragmatists distance themselves publicly. There would be a period of institutional chaos, and the communities that depend on the services would be exposed during it." She looked at Rook. "The disclosure causes the coverage gap you're asking me to fund an endowment to prevent?"
 
 "Yes," Rook said. "The disclosure causes the harm. The agreement funds the infrastructure to prevent it. The choice exists because one path causes the harm and one prevents it. That's not an accident."
 
@@ -3839,13 +4677,13 @@ She looked at them a long time.
 
 She stood — not with difficulty, with the deliberate movement of a body managing more than the room could see. She straightened her coat. She looked at Rook.
 
-"You came a long way, from Z3 to here."
+"You came a long way, from Z3 to here?"
 
 "We started following the thread. It took us where it took us."
 
 "Yes," Seul-ki said. "Threads do that."
 
-She turned toward the council table. The Stems were watching her. She did not look at them the way she had for thirty years. She looked at them the way you look at people who have just heard something about you they can't unknow, and who are going to have to decide what they do with it.
+She turned toward the council table. The Stems were watching her. She did not look at them the way she had for forty years. She looked at them the way you look at people who have just heard something about you they can't unknow, and who are going to have to decide what they do with it.
 
 She walked to the head of the table.
 
@@ -3855,11 +4693,22 @@ She had the time the trigger allowed.
 
 Ekow had held the perimeter for two hours and seven minutes.
 
-East wall, left of the side entrance, line of sight on the whole chamber — the council table, the main entrance, the two chairs at the east end where Rook and Seul-ki had sat for the last hour and forty. He'd taken the position when the session began. He'd left it once, at the forty-minute mark, when a Stem rose and he tracked the movement until it turned out to be nothing. He had done this standing work for twelve years in rooms less serious than this one. The standing was not the cost.
+East wall, left of the side entrance, line of sight on the whole chamber — the council table, the main entrance, the two chairs at the east end where Rook and Seul-ki had sat for the last hour and forty.
+
+He'd taken the position when the session began.
+
+He'd left it once, at the forty-minute mark, when a Stem rose and he tracked the movement until it turned out to be nothing.
+
+He had done this standing work for twelve years in rooms less serious than this one. The standing was not the cost.
 
 The content was.
 
-He had heard all of it. The argument about the services. Rook agreeing. The Z8 capacity numbers, the Phase 1 budget, the question about the two hundred thousand people, and the silence after it. "You know you don't meet your own standard." "Everyone who builds something in the GLMZ has a price they don't talk about." "That's not what this is." The choice offered, the window named, Seul-ki: "I will need time."
+He had heard all of it. The argument about the services. Rook agreeing. The Z8 capacity numbers, the Phase 1 budget, the question about the two hundred thousand people, and the silence after it.
+"You know you don't meet your own standard."
+"Everyone who builds something in the GLMZ has a price they don't talk about."
+"That's not what this is."
+The choice offered, the window named, Seul-ki:
+"I will need time."
 
 He'd held all of it flat, nothing showing, the work done inside. He'd learned that in NGRA fieldwork and kept it through twelve years in Z5 and Z6.
 
@@ -3873,17 +4722,29 @@ His orders were what they had always been: protect the Protocol. The Protocol wa
 
 He had not moved.
 
-Ekow had a guess. He'd been building it since the anteroom, since the two of them looked at each other and neither man drew. He'd built it out of eight years of reading Park's work from the other side of the same ground: the closure windows Park let pass, the authorization requests that came back deferred instead of confirmed, the pattern where the last action after Park's big operations was always the most cautious one on the table. He had never tested the guess. It wasn't something you tested from a distance.
+Ekow had a guess. He'd been building it since the anteroom, since the two of them looked at each other and neither man drew. He'd built it out of eight years of reading Park's work from the other side of the same ground: the closure windows Park let pass, the authorization requests that came back deferred instead of confirmed, the pattern where the last action after Park's big operations was always the most cautious one on the table.
+
+He had never tested the guess. It wasn't something you tested from a distance.
 
 He was testing it now, from twelve feet.
 
-The guess was this. Park Gi-su had spent eight years shutting the door on right and wrong, because shutting it was the only way to do the job. And he'd done the job, and the door held, because he was good at keeping it shut. And somewhere in the last forty-eight hours — the rollback in the grid log, the early arrival at the center, Rook describing what happened to the two hundred thousand — the door had stopped holding. Not opened. Stopped holding.
+The guess was this.
 
-Seul-ki came back to the head of the table. She stood and looked at the Stems. The Stems looked at her. Thirty years in this room had given them a way to mark a moment that needed acknowledging without resolving — mostly silence, and the deference a council gives a leader when the decision is not theirs.
+Park Gi-su had spent eight years shutting the door on right and wrong, because shutting it was the only way to do the job. And he'd done the job, and the door held, because he was good at keeping it shut.
+
+And somewhere in the last forty-eight hours — the rollback in the grid log, the early arrival at the center, Rook describing what happened to the two hundred thousand — the door had stopped holding.
+
+Not opened. Stopped holding.
+
+Seul-ki came back to the head of the table. She stood and looked at the Stems. The Stems looked at her. Forty years in this room had given them a way to mark a moment that needed acknowledging without resolving - mostly silence, and the deference a council gives a leader when the decision is not theirs.
 
 She had given no direction. She had said I will need time, walked back to the table, and not spoken since.
 
-With no authorized direction, Park's orders were clear. Protect the Protocol. Three crew in the room, two more outside, the full package in Vox's hands two blocks north. The authorized move was to close the threat. He had the numbers. He had the authority. He had eight years of orders telling him what the Root's silence left to his own judgment.
+With no authorized direction, Park's orders were clear.
+
+Protect the Protocol.
+
+Three crew in the room, two more outside, the full package in Vox's hands two blocks north. The authorized move was to close the threat. He had the numbers. He had the authority. He had eight years of orders telling him what the Root's silence left to his own judgment.
 
 Ekow watched him.
 
@@ -3909,11 +4770,13 @@ The chamber was quiet. The Stems were looking at the main entrance. Lace was loo
 
 Ekow was looking at the door, and he understood what had happened with the exactness of a man who had spent twelve years reading other people's operational decisions after the fact.
 
-Park had not switched sides. In four minutes he had taken his own authorization apart and found what it rested on: deciding is above my authorization. And he'd seen that this wasn't a fact about the limits of his authority. It was the flaw the whole thing stood on. The thing that held the structure up was the same thing that made it unable to answer the question the room had just asked. Every closure he had made in eight years, every deferred outcome, every window he'd told himself was authorized caution — those were decisions. He had been deciding the whole time, while telling himself deciding was above him.
+Park had not switched sides. In four minutes he had taken his own authorization apart and found what it rested on: deciding is above my authorization. And he'd seen that this wasn't a fact about the limits of his authority.
+
+It was the flaw the whole thing stood on. The thing that held the structure up was the same thing that made it unable to answer the question the room had just asked. Every closure he had made in eight years, every deferred outcome, every window he'd told himself was authorized caution — those were decisions. He had been deciding the whole time, while telling himself deciding was above him.
 
 What he decided in the last four minutes was that he was not going to decide this one. Not because the action was tactically wrong. Because the action was the exact thing the room had been describing for two hours, and he was not going to be it. That was not switching sides. That was standing down.
 
-He had walked out without looking at Ekow because looking at Ekow was a thing between them that was not going to be settled in this room on this morning. Twelve years of parallel work in the same territory, on opposite sides of the same institution. The debt routes Ekow had run through neighborhoods where Park ran enforcement. The jobs both men had done because the jobs had to be done. The account was not settled. It existed. Park had walked out while it existed.
+He had walked out without looking at Ekow because looking at Ekow was a thing between them that was not going to be settled in this room on this morning. Eight years of parallel work in the same territory, on opposite sides of the same institution. The debt routes Ekow had run through neighborhoods where Park ran enforcement. The jobs both men had done because the jobs had to be done. The account was not settled. It existed. Park had walked out while it existed.
 
 Ekow held the perimeter another seven seconds. Then he left it and crossed to where Rook stood.
 
@@ -3923,13 +4786,13 @@ The documentation was on the table. The window was running. The choice had been 
 
 He stood with the crew.
 
-## Forty-Eight Hours
-
 The crew had scattered to their holding positions.
 
-Priya was at a residence the Legal Cooperative kept — functional, secure, run by people who had done witness-protection work in the Z5/Z6 corridor for twelve years without turning operational. Rook respected that discipline. 
+Priya was at a residence the Legal Cooperative kept — functional, secure, run by people who had done witness-protection work in the Z5/Z6 corridor for twelve years without turning operational.
 
-Nari was at a location Ekow had arranged. He hadn't shared the address. Rook hadn't asked. She had trusted Ekow's arrangements since hour two of their first briefing — which was — and three weeks in the same building hadn't changed the read.
+Rook respected that discipline.
+
+Nari was at a location Ekow had arranged. He hadn't shared the address. Rook hadn't asked. She had trusted Ekow's arrangements since hour two of their first briefing, — which was — and three weeks in the same building hadn't changed the read.
 
 Lace had gone to ground in Z3. She needed time after a long impersonation run. Time when her own face was her own face, when the work of holding a character could stop. The crew didn't ask about it. Asking made it harder, not easier.
 
@@ -3949,7 +4812,9 @@ She waited.
 
 The information moved through Vox's four channels like something large shifting its weight.
 
-Hour nine: the hardliners went dark. Not all at once. Independent actors don't go dark together — they go as each one's nerve breaks, and the order tells you where each one sits in the chain. Three Stem-adjacent cell leaders whose signatures had run through the Z5/Z6 gray market for years: gone. Two senior Thorn officers below Park's command, who had been running tight-band relay between themselves: stopped. Vox sent the identifications by operational signature, no names, data without comment. Four channels, tightly held.
+Hour nine: the hardliners went dark. Not all at once. Independent actors don't go dark together — they go as each one's nerve breaks, and the order tells you where each one sits in the chain.
+
+Three Stem-adjacent cell leaders whose signatures had run through the Z5/Z6 gray market for years: gone. Two senior Thorn officers below Park's command, who had been running tight-band relay between themselves: stopped. Vox sent the identifications by operational signature, no names, data without comment. Four channels, tightly held.
 
 Hour eleven, Ekow's report, short and exact: Old Harbor northeast delivery routes stopped. Collection circuit at minimum tempo. Two community market managers had contacted the Legal Cooperative about organizational-change procedures. Thorn presence unchanged, passive. No closure indicators. The machine was running on old inertia. Nobody had given it a new direction.
 
@@ -3959,9 +4824,15 @@ Two more filings by hour eighteen. Three organizations that had run under Lotus 
 
 She watched an institution fracture the way big institutions do. Not with an explosion. With the quiet, self-interested movement of parts that had been holding position because the weight told them to, and had just learned, over twenty hours, that the weight was going somewhere new. Not conscience. Navigation.
 
-The Stems were arguing. Vox's partial read at hour twenty-two showed a council running with no direction from above — lateral traffic at high frequency, short messages, an institutional body trying to reach consensus without authorization. They had heard the documentation, the conversation, the terms. For twenty-two hours they had sat with it, and the Root had not told them what she'd decided. She was making them find their own direction. Rook thought it was deliberate. Seul-ki had run this institution for thirty years. She understood what it took to build a council that could survive without her.
+The Stems were arguing. Vox's partial read at hour twenty-two showed a council running with no direction from above — lateral traffic at high frequency, short messages, an institutional body trying to reach consensus without authorization. They had heard the documentation, the conversation, the terms. For twenty-two hours they had sat with it, and the Root had not told them what she'd decided.
 
-At hour twenty-four, Rook walked to the diner three blocks away. She ordered something hot in a bowl and sat at the window. The lake was the gray-green of flat overcast, the light even across the water. She ate and thought about Priya Ramanujan-Cross — thirty-five, six months under coercion, in a cooperative safe house waiting to learn what the window had produced. Priya's formal report was already on the Bureau's record. The cooperative's legal office had filed it before the window opened, so the window's outcome couldn't bury it whichever way it broke. It named the registry backdoor, the Syndicate's role in the grid architecture, the coercion. It existed now.
+She was making them find their own direction. Rook thought it was deliberate. Seul-ki had run this institution for thirty years. She understood what it took to build a council that could survive without her.
+
+At hour twenty-four, Rook walked to the diner three blocks away. She ordered something hot in a bowl and sat at the window. The lake was the gray-green of flat overcast, the light even across the water.
+
+She ate and thought about Priya Ramanujan-Cross — thirty-five, six months under coercion, in a cooperative safe house waiting to learn what the window had produced.
+
+Priya's formal report was already on the Bureau's record. The cooperative's legal office had filed it before the window opened, so the window's outcome couldn't bury it whichever way it broke. It named the registry backdoor, the Syndicate's role in the grid architecture, the coercion. It existed now.
 
 At hour thirty-one, Ekow reported the Thorn tempo drop. Not stood down. Paused. The evening enforcement window in Old Harbor northeast hadn't run. The collection circuit had stalled. The markets kept normal schedules.
 
@@ -3971,7 +4842,9 @@ Hour thirty-eight: seven organizations in formal governance restructuring. The f
 
 Hour forty-one: Vox's quiet summary of the whole picture. An institution shifting its weight along fault lines that had been there for years — the window lighting them up the way a stress test lights the load paths in a structure.
 
-Rook read it once, put it down, and looked at the lake. She thought about Seul-ki at the head of the table with the twelve Stems watching her. About the form in the miscellaneous folder — her own hand, her own name, stopped before completion — on the record now with everything else. About what it costs to carry a thing for forty-one years and then have it outside you, in a package, in the hands of people you can't control.
+Rook read it once, put it down, and looked at the lake.
+
+She thought about Seul-ki at the head of the table with the twelve Stems watching her. About the form in the miscellaneous folder — her own hand, her own name, stopped before completion — on the record now with everything else. About what it costs to carry a thing for forty years and then have it outside you, in a package, in the hands of people you can't control.
 
 She thought about Park Gi-su, who had walked out the main entrance and not surfaced in any traffic Ekow could read. Four minutes to settle it. A door that had stopped holding. She kept his location an open question. The most dangerous people were not the hostile ones. They were the ones in the middle of changing.
 
@@ -3979,15 +4852,23 @@ At hour forty-six, Adaeze's message came through. Three words: "She called me."
 
 Then the longer message. Rook read it twice.
 
-Seul-ki had called the Legal Cooperative directly. The institutional register — thirty years of precision, formal and contained, the voice of a person making a documented commitment. The Protocol was dissolved, effective immediately. The Syndicate was prepared to enter the endowment agreement on the stated terms. The transition funding was real money.
+Seul-ki had called the Legal Cooperative directly. The institutional register — forty years of precision, formal and contained, the voice of a person making a documented commitment. The Protocol was dissolved, effective immediately. The Syndicate was prepared to enter the endowment agreement on the stated terms. The transition funding was real money.
 
-Adaeze had flagged the phrase: "She said 'real money' specifically and without prompting." Real money meant an amount. A structure. It meant Seul-ki knew the person she was speaking to had been in this work long enough to tell a gesture from a commitment, and that she was not offering a gesture. She had asked for a meeting within seventy-two hours to begin the documentation.
+Adaeze had flagged the phrase: "She said 'real money' specifically and without prompting." Real money meant an amount. A structure. It meant Seul-ki knew the person she was speaking to had been in this work long enough to tell a gesture from a commitment, and that she was not offering a gesture.
+
+She had asked for a meeting within seventy-two hours to begin the documentation.
 
 She had not called the crew. She had called Adaeze. Which was correct. The crew was the pressure that had made the choice necessary. The choice belonged to Seul-ki, and its consequences belonged to the person who would administer them — the woman who had fought the Syndicate's debt structures for twelve years, now the endowment's administering entity. Adaeze had not remarked on the symmetry. Rook suspected she had been thinking about it for at least a day.
 
-Rook sent the suspension messages to the three disclosure nodes. The trigger did not resolve. The package stayed in Vox's hands — the forty-year archive sealed, sitting in a carry case in a Z3 safe house, without the destination it had been built to reach.
+Rook sent the suspension messages to the three disclosure nodes.
 
-She sat with what it meant. Then, carefully, with what it didn't mean, because that was just as exact. The Protocol was dissolved. The Syndicate was not — wounded, fractured, reorganizing, the hardliners dark in channels she couldn't read, the pragmatists filing paperwork, the Stems still arguing in the language of a council that had never had to make its own direction. The Phase 0 data still existed — two hundred thousand registered neuretics in a targeting cluster not fully reversed, still in Lotus hands, with no Phase 1 to use it, but present. The Bureau had Priya's report and was not ready to act on it.
+The trigger did not resolve.
+
+The package stayed in Vox's hands — the forty-year archive sealed, sitting in a carry case in a Z3 safe house, without the destination it had been built to reach.
+
+She sat with what it meant. Then, carefully, with what it didn't mean, because that was just as exact.
+
+The Protocol was dissolved. The Syndicate was not — wounded, fractured, reorganizing, the hardliners dark in channels she couldn't read, the pragmatists filing paperwork, the Stems still arguing in the language of a council that had never had to make its own direction. The Phase 0 data still existed — two hundred thousand registered neuretics in a targeting cluster not fully reversed, still in Lotus hands, with no Phase 1 to use it, but present. The Bureau had Priya's report and was not ready to act on it.
 
 The clinics were running. The debt structures were the debt structures. The work ahead was the work ahead.
 
@@ -4009,25 +4890,35 @@ She knew what he would say. She didn't need to send it.
 
 The lake at hour forty-six was the same lake it had been at hour one. The Protocol was not.
 
-She sat at the window until the gray-green shifted to the dull brass of afternoon. Then she found something to eat, and then she slept.
+She sat at the window until the gray-green shifted to the dull brass of afternoon.
+
+Then she found something to eat, and then she slept.
 
 Three days after the dissolution announcement, the Gray Zone looked the same.
 
 That was the point. Taking apart the Protocol had not taken apart everything the Protocol ran alongside. What she'd known as an abstraction walking into the council chamber, she knew now as texture.
 
-The Z6 morning clinic opened at 0700. She got there at 0650 and stood at the transport node across the street — one of Ekow's old gray-market drop points — and watched. The health worker who unlocked the door had done it many times: key, turn, door, the inside lights coming up. The Lotus mark on her lapel was small, the same one the food volunteers wore, worn like a thing she'd stopped seeing years ago.
+The Z6 morning clinic opened at 0700. She got there at 0650 and stood at the transport node across the street — one of Ekow's old gray-market drop points — and watched.
 
-The waiting area filled. Families, individuals, the morning traffic of a community that used this clinic because it was theirs and had been for years. Every mix the Diaspora made, children three and four generations past any single origin. Some of them were in the Phase 0 data — in the targeting cluster the Protocol had been built to displace, flagged by block, by debt, by heritage read, marked for the slow machine of eviction and accident and managed transition that would have moved them to a zone that could not hold them.
+The health worker who unlocked the door had done it many times: key, turn, door, the inside lights coming up. The Lotus mark on her lapel was small, the same one the food volunteers wore, worn like a thing she'd stopped seeing years ago.
+
+The waiting area filled. Families, individuals, the morning traffic of a community that used this clinic because it was theirs and had been for years.
+
+Every mix the Diaspora made, children three and four generations past any single origin. Some of them were in the Phase 0 data — in the targeting cluster the Protocol had been built to displace, flagged by block, by debt, by heritage read, marked for the slow machine of eviction and accident and managed transition that would have moved them to a zone that could not hold them.
 
 A woman came in carrying a child, maybe two years old, asleep against her shoulder. She took a seat by the window and shifted the child's weight the way you do without thinking after enough months of carrying. She was in the data. So was the child.
 
-They were not being displaced. The clinic was running. Something in Rook's chest set down a weight it had been holding since the boat out of Old Harbor.
+They were not being displaced. The clinic was running. Rook let her shoulders down.
 
-The endowment did part of this. The preliminary agreement committed to current service levels through the transition, so the clinics stayed open under Syndicate management while the cooperative built the alternative. That would take years. Adaeze had sent a timeline two days out, with a note at the bottom: "The real work is now. This is what twelve years of fighting the debt structures was for." The timeline was real. It was also long.
+The endowment did part of this. The preliminary agreement committed to current service levels through the transition, so the clinics stayed open under Syndicate management while the cooperative built the alternative. That would take years.
+
+Adaeze had sent a timeline two days out, with a note at the bottom: "The real work is now. This is what twelve years of fighting the debt structures was for." The timeline was real. It was also long.
 
 Rook moved through the buffer zone the way she'd learned to over three weeks — not operating, present, reading a neighborhood by being in it. Old Harbor's northeastern quarter. The market. The collector circuit Ekow had mapped on a whiteboard in the Z3 safe house, routes she knew now by their junctions, the corners where the tempo changed.
 
-The circuit was running reduced. Not stopped. The collector nodes that had kept a standard cadence before the window now moved with the lower energy of a system waiting for clarity. The accounts were still the accounts. Adaeze's files had thirty-seven active clients in the zone, and those thirty-seven were still in their debt situations, because a dissolution announcement was not a restructuring of anyone's individual loan. That was the other work — the years of building an alternative that could carry the clinics and the distribution and the legal advisory without a gap. Adaeze's cooperative had the funding, the mandate, and twelve years of knowing what the communities actually needed. That was a different knowledge from the Syndicate's. Adaeze had been building toward the community running itself, not toward managing it.
+The circuit was running reduced. Not stopped. The collector nodes that had kept a standard cadence before the window now moved with the lower energy of a system waiting for clarity. The accounts were still the accounts. Adaeze's files had thirty-seven active clients in the zone, and those thirty-seven were still in their debt situations, because a dissolution announcement was not a restructuring of anyone's individual loan.
+
+That was the other work — the years of building an alternative that could carry the clinics and the distribution and the legal advisory without a gap. Adaeze's cooperative had the funding, the mandate, and twelve years of knowing what the communities actually needed. That was a different knowledge from the Syndicate's. Adaeze had been building toward the community running itself, not toward managing it.
 
 The market was open. She walked through — food, household goods, repair stalls, the range a community market carried where the civic grid's commercial coverage didn't reach. She bought something at a stall she'd used twice. Not because she needed it. Because the woman there knew her as a repeat face, and Rook didn't want to drop the presence just because the operation's formal parts were done.
 
@@ -4047,7 +4938,9 @@ The woman nodded once and went back to the produce, the market's rhythm closing 
 
 The Thorns were present and paused. Two at the market's eastern entrance, the same position they'd held every morning she'd been here, with the manner of people holding a stand-down and waiting for what came after. The hardware was still there under the administrative-mark surface — the reinforced joint actuators, the close-range deterrent, the iron frame the community-service exterior had been built over, not instead of. The pause wasn't the absence of any of it. It was a hold, pending a direction from an authorization chain still working out what direction meant and who had the standing to give it.
 
-Park Gi-su had not contacted the crew. She hadn't expected him to. What he'd done in that room was a resolution, not an opening. Ekow's reads on the Z5/Z6 traffic had not turned up a Park signature in three days. He'd walked out the main entrance and gone somewhere neither of them could see. She kept the variable open.
+Park Gi-su had not contacted the crew. She hadn't expected him to. What he'd done in that room was a resolution, not an opening.
+
+Ekow's reads on the Z5/Z6 traffic had not turned up a Park signature in three days. He'd walked out the main entrance and gone somewhere neither of them could see. She kept the variable open.
 
 In the afternoon she went to the Civic Bureau's Z5 satellite office — a ground-floor unit on the administrative block, the same block as the planning permits and the infrastructure records and the compliance files, a zone administration that had been cataloguing for years. She didn't go in. She sat at the cafe on the corner and looked at the front of the building: standard institutional construction, built to say it was what it was and would still be there in fifty years.
 
@@ -4055,21 +4948,29 @@ Priya's report was inside it. The cooperative's legal office had filed it before
 
 The report existed. It was in the Bureau's record.
 
-The Bureau had flagged the Z6 test-deployment data three days ago. Not acted on it — no case, no compliance order, none of the steps that would mean confronting an institution of the Syndicate's civic weight with documented evidence of a violation. They had flagged it. Evidence in a potential regulatory case. A notation: this exists, we've filed it for future consideration. That was what the Bureau did with things it wasn't ready to act on. Twelve years of Adaeze's charter complaints sat in the same file system, noted and filed. The record knew what was in it. The Bureau noted and waited.
+The Bureau had flagged the Z6 test-deployment data three days ago. Not acted on it — no case, no compliance order, none of the steps that would mean confronting an institution of the Syndicate's civic weight with documented evidence of a violation. They had flagged it.
 
-In twelve months, or twenty-four, or some window none of them could see from here — if the endowment held, and the cooperative built the alternative, and the zone's politics shifted enough that the Bureau judged it could move without the cost being too high — the flag would matter. The report would matter. The forty-year archive in the cooperative's custody would matter.
+Evidence in a potential regulatory case. A notation: this exists, we've filed it for future consideration. That was what the Bureau did with things it wasn't ready to act on. Twelve years of Adaeze's charter complaints sat in the same file system, noted and filed. The record knew what was in it. The Bureau noted and waited.
+
+In twelve months, or twenty-four, or some window none of them could see from here — if the endowment held, and the cooperative built the alternative, and the zone's politics shifted enough that the Bureau judged it could move without the cost being too high — the flag would matter.
+
+The report would matter. The forty-year archive in the cooperative's custody would matter.
 
 For now, the flag existed. The woman with the sleeping child still had her clinic. That was what it had bought, so far: not safety. A delay long enough to build something in. It was not enough. It was more than the zone had had a week ago.
 
-The crew dispersed on the morning of the fourth day.
+The crew dispersed on the morning of the fifth day.
 
-Not a formal dispersal. No debrief scheduled, no moment where the operation was officially closed, no ceremony — the crew didn't work that way and never had, across any of the operations that had brought them to this Z3 safe house. They had been together four days since the council chamber. They'd held the space through the forty-eight-hour window and the three days after. Now the holding was finished, and they left in the order in which they had things to go back to.
+Not a formal dispersal. No debrief scheduled, no moment where the operation was officially closed, no ceremony — the crew didn't work that way and never had, across any of the operations that had brought them to this Z3 safe house.
+
+They had been together five days since the council chamber. They'd held the space through the forty-eight-hour window and the three days after. Now the holding was finished, and they left in the order in which they had things to go back to.
 
 Lace was first, two hours after sunrise. She moved with the ease of a person returning to her own life — or to the version of it that existed between operations. The line between the performance and the real had dissolved for her years ago, somewhere under other people's faces. She touched Rook's arm at the door, briefly, and was gone.
 
 Vox said, to the room, "Four channels. If you need me." A statement about her operational status. And, Rook understood, about herself — the number held as a discipline, not a limit. Then she was gone too.
 
-Scout had left the night before, back to Z1 and Gerald and the structural-data work that was her current life, or her current cover, or the thing that had become both. She'd sent one message before going: "Good run." Two words was enough.
+Scout had left the night before, back to Z1 and Gerald and the structural-data work that was her current life, or her current cover, or the thing that had become both.
+
+She'd sent one message before going: "Good run." Two words was enough.
 
 Boiler was last before Ekow.
 
@@ -4091,11 +4992,13 @@ She thought about it for a real moment. About the Protocol dissolved and the end
 
 "Ask me in a year," she said.
 
-He nodded. "That's okay," he said — both a verdict on her answer and the answer to his question. He set down his glass, found his coat, and at the door he turned. "The building in Z5 is coming along. If you want to see it sometime." Not quite an invitation. A statement that the future existed and had things in it. Then he was gone.
+He nodded. "That's okay," he said — both a verdict on her answer and the answer to his question. He set down his glass, found his coat, and at the door he turned. "The building in Z5 is coming along. If you want to see it sometime?" Not quite an invitation. A statement that the future existed and had things in it. Then he was gone.
 
 The safe house was quiet.
 
-Ekow was still in the main room. She'd known he was — she'd been aware of him the way you're aware of a large, still object in a familiar space. Not intrusive. Just occupying the room, with a stillness very few people had naturally and that he'd built through years of work that required it. He stood at the table where the physical board had been, where the three threads had been mapped and remapped in the third week until they came clear as a plan. The board was gone. The table was clean. He wasn't doing anything with it. He stood beside it like a man who'd worked in a room a long time and wasn't quite ready to stop being in it.
+Ekow was still in the main room. She'd known he was — she'd been aware of him the way you're aware of a large, still object in a familiar space. Not intrusive. Just occupying the room, with a stillness very few people had naturally and that he'd built through years of work that required it.
+
+He stood at the table where the physical board had been, where the three threads had been mapped and remapped in the third week until they came clear as a plan. The board was gone. The table was clean. He wasn't doing anything with it. He stood beside it like a man who'd worked in a room a long time and wasn't quite ready to stop being in it.
 
 She came in and sat. He looked at her a moment. Then he sat.
 
@@ -4105,7 +5008,7 @@ He reached into his coat.
 
 She had noticed the gesture twice before, because reading a person's hands was automatic for her, the same reflex that tracked exits and positions. The first time was the first briefing, when he'd taken patrol routes down in a paper notebook instead of his neuretics — a choice, and she'd read it as one. The second was at the stern of the boat during the Z6 extraction, in the dark, the operation still running, moving water around them, when his hand had gone to the place on his coat where the notebook sat and had not quite touched it. A man checking that something he carried was still there.
 
-Now he set the notebook on the table between them. He did not open it.
+"Now he set the notebook on the table between them. He did not open it.
 
 "I have a list," he said.
 
@@ -4137,7 +5040,9 @@ He said the name.
 
 Quiet, precise, the name given the same weight as any operational designation — which was also the weight of a name he had been saying inside himself for twelve years and was now saying out loud.
 
-"I know this doesn't change it," Ekow said. "I know the name on a record outside the Lotus doesn't give him back to the people he was building the collective for. I know you writing it down isn't justice — it's record-keeping, and record-keeping isn't justice, and I'm not confused about the difference." He looked at her for the first time since he'd started. "I know all of that. I'm asking you to write down the name."
+"I know this doesn't change it," Ekow said. "I know the name on a record outside the Lotus doesn't give him back to the people he was building the collective for. I know you writing it down isn't justice — it's record-keeping, and record-keeping isn't justice, and I'm not confused about the difference."
+
+He looked at her for the first time since he'd started. "I know all of that. I'm asking you to write down the name."
 
 She reached across the table and took the notebook. He did not stop her. He did not look away.
 
@@ -4147,11 +5052,15 @@ She looked at it. Then she wrote: Community organizer. Debt-relief collective.
 
 She closed it and put it on the table between them.
 
-He looked at what she'd put in front of him. His face was the face it had always been — flat, contained, all the work done inside — except something in the containment had shifted. The way a structure shifts when a load it has carried a long time is redistributed rather than removed. Still there. Carried differently.
+He looked at what she'd put in front of him. His face was the face it had always been — flat, contained, all the work done inside — except something in the containment had shifted.
+
+The way a structure shifts when a load it has carried a long time is redistributed rather than removed. Still there. Carried differently.
 
 He picked up the notebook and put it back in his coat.
 
-They sat a moment in the quiet that follows something said and written that can't be unsaid or unwritten. Not comfortable, and not meant to be — comfort wasn't what had been asked for, and offering it would have been wrong.
+They sat a moment in the quiet that follows something said and written that can't be unsaid or unwritten.
+
+Not comfortable, and not meant to be — comfort wasn't what had been asked for, and offering it would have been wrong.
 
 "Adaeze's cooperative has done case work in Z6 for twelve years," she said. "Early debt-relief organizing, from twelve years back — she may have files on the collective. She may have his name already." She looked at him. "Might be worth asking her, at some point. When the moment's right."
 
@@ -4163,7 +5072,9 @@ She stood.
 
 They walked out together. On the Z3 street the morning traffic was running — people moving with the patterns of a day beginning, eigenlift transports gliding quietly in the middle altitude lanes, the gray-green of the lake showing between two buildings at the far end.
 
-He did not go south. He did not go toward Old Harbor, toward the Z5/Z6 Lotus circuit, toward the collector nodes or the Thorn routes or the gray-market drop points he'd mapped on a whiteboard three weeks ago and navigated from memory for twelve years before that. He went north, toward the Z1 transit hub — which is where you go when you're going somewhere that is not Lotus territory.
+He did not go south. He did not go toward Old Harbor, toward the Z5/Z6 Lotus circuit, toward the collector nodes or the Thorn routes or the gray-market drop points he'd mapped on a whiteboard three weeks ago and navigated from memory for twelve years before that.
+
+He went north, toward the Z1 transit hub — which is where you go when you're going somewhere that is not Lotus territory.
 
 She watched him go a moment.
 
@@ -4171,13 +5082,13 @@ He was in the crew. Neither of them had said it. It had been said by the directi
 
 She turned in her own direction.
 
-## The Diner, Again
-
 This was the fourth time.
 
-The diner was in Z3, two blocks from the transit node — the kind of neighborhood place that had been in one spot long enough to run on habit. The same morning server working the route with the ease of years. The same working-crowd tables near the front. The same southeast window where the angle gave you the longest view down to the lake. She had ordered something in a cup and something on a plate, and she sat at the window. The lake was brass now instead of gray-green, the sun finally through the overcast.
+The diner was in Z3, two blocks from the transit node — the kind of neighborhood place that had been in one spot long enough to run on habit. The same morning server working the route with the ease of years. The same working-crowd tables near the front. The same southeast window where the angle gave you the longest view down to the lake.
 
-She was not counting money. The operation had paid what it agreed to pay, the money was in accounts, and the money was not the thing that needed counting.
+She had ordered something in a cup and something on a plate, and she sat at the window. The lake was brass now instead of gray-green, the sun finally through the overcast.
+
+The operation had paid what it agreed to pay. That wasn't the count.
 
 She was not counting survivors. Everyone on her side had come through. Lace gone north in Z3. Vox at her four channels. Scout back in Z1 with Gerald. Boiler in his building. Ekow going north toward the transit hub instead of south toward Old Harbor. Priya in the cooperative's residence. Nari in Ekow's arrangement. She had counted this in the forty-eight hours, and it held.
 
@@ -4187,11 +5098,17 @@ She was counting forward. That was the new count. The imprecise one — the coun
 
 She started with the Z6 registry.
 
-Two hundred thousand registered neuretics in the Phase 0 cluster. Not a round number the way invented numbers are round — a real count, the slice the three live nodes had captured before Vox and Priya rolled back the rest.  Families in the food distribution's active accounts. Patients in the clinic's four hundred and twelve treatment plans. Children in the youth rooms. People who had built lives in the buffer zone the way you build them there — using what was there, trusting institutions that had stood twenty-eight years, because the civic alternative was fourteen-percent coverage in Z8.
+Two hundred thousand registered neuretics in the Phase 0 cluster. Not a round number the way invented numbers are round — a real count, the slice the three live nodes had captured before Vox and Priya rolled back the rest.
 
-The data still existed. The Protocol was dissolved, and the authorization chain that would have pushed the data toward displacement was cut. But a targeting dataset does not disappear because the plan that built it is gone. It sat in a Bureau filing as evidence in a potential case. It sat in the package in Vox's possession. It sat in the Lotus archive somewhere, held by the hardliners who had gone dark in channels she couldn't read. 
+Families in the food distribution's active accounts. Patients in the clinic's four hundred and twelve treatment plans. Children in the youth rooms. People who had built lives in the buffer zone the way you build them there — using what was there, trusting institutions that had stood twenty-eight years, because the civic alternative was fourteen-percent coverage in Z8.
 
-The Bureau would need time. Adaeze had told her three days ago she couldn't predict the timeline. "Years, maybe," she'd said, with the tiredness of someone who'd watched the Bureau not act on things for twelve years. "Or a new administration finds it useful. Or someone in there who's been waiting for something like this decides it's the moment. You can't predict it. You file it correctly, keep it visible, and make it hard to bury."
+The data still existed. The Protocol was dissolved, and the authorization chain that would have pushed the data toward displacement was cut. But a targeting dataset does not disappear because the plan that built it is gone. It sat in a Bureau filing as evidence in a potential case. It sat in the package in Vox's possession. It sat in the Lotus archive somewhere, held by the hardliners who had gone dark in channels she couldn't read.
+
+The Bureau would need time. Adaeze had told her three days ago she couldn't predict the timeline.
+
+"Years, maybe," she'd said, with the tiredness of someone who'd watched the Bureau not act on things for twelve years.
+
+"Or a new administration finds it useful. Or someone in there who's been waiting for something like this decides it's the moment. You can't predict it. You file it correctly, keep it visible, and make it hard to bury."
 
 What the endowment could do was fund the alternative. What the alternative could do, if Adaeze's cooperative had the time to build it right, was give the buffer-zone communities a path that didn't depend on the Syndicate's goodwill. Over years. Not all the way, not fast. But enough that the next time someone came to the zone with a choice, the choice would carry different stakes.
 
@@ -4199,19 +5116,25 @@ She listed what she knew and named what she didn't. She knew the endowment amoun
 
 She did not know what the hardliners were planning in the dark channels. She did not know whether Park would stay dark or come back into the chain in some new shape. She did not know whether the Stems would settle toward a Syndicate that honored the dissolution or one that reinterpreted it in five years, in ten, when different people sat at different tables. She did not know whether the Bureau would act in two years or twenty. She did not know what Priya's six months had cost her in ways not yet visible.
 
-The count would not reach a number. She could sit at this window the rest of her career and never arrive at the completeness the third count had given her. This one didn't close. You maintained it. That was what it meant for the count to face forward: not the precision of adding up what was fixed, but the willingness to hold an unfinished count without forcing it to resolve. She did not know how many of the two hundred thousand would still be in the buffer zone in twenty years. She couldn't. The not-knowing was the condition of the count, not a failure of it.
+The count would not reach a number. She could sit at this window the rest of her career and never arrive at the completeness the third count had given her. This one didn't close. You maintained it. That was what it meant for the count to face forward: not the precision of adding up what was fixed, but the willingness to hold an unfinished count without forcing it to resolve.
+
+She did not know how many of the two hundred thousand would still be in the buffer zone in twenty years. She couldn't. The not-knowing was the condition of the count, not a failure of it.
 
 She could live with that. She thought she could.
 
 And then the question sharpened into the only two shapes it came in, and neither was comfortable. She could walk away clean — the operation was done, the money paid, the crew scattered and safe, and every reason to disappear into the next job was a good one. Or she could stay bound to a thing that didn't close, tie herself to a dataset she couldn't destroy and an outcome she couldn't force, spend years she'd never account for keeping something visible that anyone with sense would let sink. Walking away was survival. Staying was a debt with no end date and no receipt.
 
-She chose the debt. Not the whole zone — she couldn't carry two hundred thousand and she wasn't going to pretend she could. But the dataset. She would keep the thing hard to bury, the way Adaeze had said: she'd be the person who checked, quarter after quarter, that the Bureau filing hadn't quietly gone missing, that Vox's package still existed, that the hardliners' archive hadn't moved without someone noticing. One task. A standing appointment with an unfinished count. She'd start by calling Adaeze this afternoon and telling her to expect it — that there would be someone watching the shelf the file sat on, for as long as the file sat there.
+She chose the debt. Not the whole zone — she couldn't carry two hundred thousand and she wasn't going to pretend she could. But the dataset. She would keep the thing hard to bury, the way Adaeze had said: she'd be the person who checked, quarter after quarter, that the Bureau filing hadn't quietly gone missing, that Vox's package still existed, that the hardliners' archive hadn't moved without someone noticing.
+
+One task. A standing appointment with an unfinished count. She'd start by calling Adaeze this afternoon and telling her to expect it — that there would be someone watching the shelf the file sat on, for as long as the file sat there.
 
 The lake was there at the end of the street's angle, brass in the late-morning light. It had been there the first time and the second and the third. A body of water in the middle of a zone of 4.2 million, the thing the GLMZ had been built around and over and with, here before the zone and here after. She looked at it the way she always looked at it from windows, and did not ask it to mean anything.
 
 She thought about the crew. Lace in Z3 with her own face. Vox at four channels, the number she'd decided was enough and which was enough. Scout and Gerald at the desk in Z1, the business card sitting in a pile on the cooperative's front counter, waiting for the next person to pick it up and not know what they held. Boiler in his building in Z5, checking the load on walls that had stood thirty years and needed help to stand thirty more. Ekow going north.
 
-She thought about Adaeze — twelve years of case files, real money now, and the mandate to build something that hadn't existed before. She thought about Priya, who had filed a report that might matter in two years or twenty, and who had to work out what to do with the next six months in a zone that had given her no home for what she knew.
+She thought about Adaeze — twelve years of case files, real money now, and the mandate to build something that hadn't existed before.
+
+She thought about Priya, who had filed a report that might matter in two years or twenty, and who had to work out what to do with the next six months in a zone that had given her no home for what she knew.
 
 The count went on. The lake was the same.
 
@@ -4219,9 +5142,11 @@ She stayed at the table longer than she needed to. Not waiting for the count to 
 
 She was still at the window when the call came in.
 
-Adaeze Nnodu-Park's voice arrived in the channel with the quality of a person several hours into a long day with more hours ahead, working inside her energy without drama. Twelve years of fighting institutional debt structures did something to how a person met the long day. She moved through them like familiar ground — not easily, because it wasn't easy, but knowing where the obstacles were.
+Adaeze Nnodu-Park's voice arrived in the channel with the quality of a person several hours into a long day with more hours ahead, working inside her energy without drama.
 
-"I have a question," Adaeze said.
+Twelve years of fighting institutional debt structures did something to how a person met the long day. She moved through them like familiar ground — not easily, because it wasn't easy, but knowing where the obstacles were.
+
+"I have a question," Adaeze asked.
 
 "Ask."
 
@@ -4237,7 +5162,11 @@ The words landed in Rook's chest before they reached her head — the involuntar
 
 "Load calculations," she said.
 
-"The endowment can fund the construction," Adaeze said. "What I don't have is the person who can look at a Z6 community center that's run under Syndicate management for twenty years and understand which walls are load-bearing and which are decorative, and what the difference means for moving the building's functions from one management structure to another without the roof coming down." Technical and figurative at once — she'd been doing both for twelve years and had stopped telling them apart. "You build alongside a failing structure until it chooses the alternative. You don't demolish it first. You don't wait for it to collapse. You build the alternative while the old thing still stands, and you make it sound enough that people can move into it when the moment comes."
+"The endowment can fund the construction," Adaeze said. "What I don't have is the person who can look at a Z6 community center that's run under Syndicate management for twenty years and understand which walls are load-bearing and which are decorative, and what the difference means for moving the building's functions from one management structure to another without the roof coming down."
+
+Technical and figurative at once — she'd been doing both for twelve years and had stopped telling them apart.
+
+"You build alongside a failing structure until it chooses the alternative. You don't demolish it first. You don't wait for it to collapse. You build the alternative while the old thing still stands, and you make it sound enough that people can move into it when the moment comes."
 
 Rook was looking at the lake.
 
@@ -4247,21 +5176,33 @@ She was thinking about a Z5 community building. A renovation contract. The parti
 
 "I mean it specifically. Someone who's been thinking about this exact structural problem in a Z5/Z6 building for the last three weeks, with opinions based on actual engineering rather than theory." A pause. "I don't know who that is. I'm asking if you do."
 
-Rook thought about Boiler at the safe-house table. Ask me in a year. The assessment — okay versus fine, the structure doing its work versus the load carried by hand. The building in Z5 is coming along. If you want to see it sometime. A statement that the future existed and had things in it.
+Rook thought about Boiler at the safe-house table. Ask me in a year. The assessment — okay versus fine, the structure doing its work versus the load carried by hand.
 
-She thought about his arc through the operation. Not what he'd been asked to do — manage weaknesses for the crew's purposes — but what he'd actually been doing for three weeks alongside it. The real renovation. The community building. The thing he'd been paying attention to longer than any of this. He'd been asked to help bring something down, and he'd done it, and the whole time he'd been thinking about what held, and what needed holding, and what you had to build before you took the load off a structure people depended on.
+The building in Z5 is coming along. If you want to see it sometime.
+
+A statement that the future existed and had things in it.
+
+She thought about his arc through the operation. Not what he'd been asked to do — manage weaknesses for the crew's purposes — but what he'd actually been doing for three weeks alongside it.
+
+The real renovation. The community building. The thing he'd been paying attention to longer than any of this.
+
+He'd been asked to help bring something down, and he'd done it, and the whole time he'd been thinking about what held, and what needed holding, and what you had to build before you took the load off a structure people depended on.
 
 "I might know someone," she said.
 
 "I thought you might."
 
-There was a quality to it that was not quite warmth and not quite professional satisfaction. A woman who'd worked alone for twelve years and had, in the last week, worked beside people whose skills she didn't have, and was finding those skills reached further than the job she'd called them in for. The person who understood demolition was also the person who understood renovation.
+There was a quality to it that was not quite warmth and not quite professional satisfaction. A woman who'd worked alone for twelve years and had, in the last week, worked beside people whose skills she didn't have, and was finding those skills reached further than the job she'd called them in for.
+
+The person who understood demolition was also the person who understood renovation.
 
 "What does the work look like?" Rook asked.
 
 "Long. Years, not weeks. The infrastructure gets built in phases — you can't move the clinic out of Syndicate management until you have an alternative clinic that can carry the patient load. You can't move the food distribution until you have logistics to replace the warehousing agreements. Each phase finished before the next, because the people depending on the current structure can't live in a gap." The patience of someone who understood the limit as a human problem, not an engineering one. "You don't put people in a gap. You build the structure first, then you move the load."
 
-Rook looked at the lake and thought about what that work meant. The slow, non-operational building of infrastructure over years. No forty-eight-hour window. No trigger. No crew in position. No clean moment of completion. Boiler's natural register: the cheerful, patient, methodical attention to what a structure needed. He'd been saying it for three weeks. She'd been hearing it as operational intelligence. It had been both.
+Rook looked at the lake and thought about what that work meant. The slow, non-operational building of infrastructure over years. No forty-eight-hour window. No trigger. No crew in position. No clean moment of completion.
+
+Boiler's natural register: the cheerful, patient, methodical attention to what a structure needed. He'd been saying it for three weeks. She'd been hearing it as operational intelligence. It had been both.
 
 "I'll get back to you," she said.
 
@@ -4269,11 +5210,13 @@ Rook looked at the lake and thought about what that work meant. The slow, non-op
 
 "One more thing," Adaeze said.
 
-"What."
+"What?"
 
 "The work isn't operational. It won't look like what you've been doing. The person I need has to be around for the long work, not just the acute problem. I want to be sure whoever you have in mind understands that." A pause. "I've had enough experience with people who are excellent at the acute problem and find the long work incompatible with who they are."
 
-Rook thought about Boiler with his renovation plans, genuinely cheerful, the energy of a person doing the thing they were built for. Three weeks of legitimate contract work running beside an operation that also asked him to think about demolition — both done with the same care, and only one of them looking like home.
+Rook thought about Boiler with his renovation plans, genuinely cheerful, the energy of a person doing the thing they were built for.
+
+Three weeks of legitimate contract work running beside an operation that also asked him to think about demolition — both done with the same care, and only one of them looking like home.
 
 "This person," she said, "is not going to have a problem with the long work."
 
@@ -4305,7 +5248,9 @@ Boiler answered on the second pulse, which was how he always answered — not at
 
 "Ask."
 
-"Adaeze Nnodu-Park. Z5/Z6 Legal Cooperative." She said it directly, the way she said things she'd decided on. "She has the transition funding from the dissolution agreement. She's building the alternative community infrastructure — clinics, food distribution, legal support. The pathway that doesn't depend on the Syndicate. She needs someone who understands load calculations and what structures can hold. Not the legal structure. The buildings. The relationship between a community center's structural capacity and what it can support." A pause. "She specifically needs someone who's been thinking about Z5/Z6 community buildings for the last three weeks."
+"Adaeze Nnodu-Park. Z5/Z6 Legal Cooperative." She said it directly, the way she said things she'd decided on. "She has the transition funding from the dissolution agreement. She's building the alternative community infrastructure — clinics, food distribution, legal support. The pathway that doesn't depend on the Syndicate. She needs someone who understands load calculations and what structures can hold. Not the legal structure. The buildings. The relationship between a community center's structural capacity and what it can support."
+
+A pause. "She specifically needs someone who's been thinking about Z5/Z6 community buildings for the last three weeks."
 
 The channel was quiet a moment. Not a surprised quiet. A thinking quiet — a man who'd been coming at something from one direction now facing it from the front.
 
@@ -4343,7 +5288,9 @@ The call ended.
 
 She sat a moment. Then she opened the cooperative's secure channel and sent Adaeze a contact address with a single line: "His name is Boiler. He'll know what you mean."
 
-The response was immediate, which was unusual — Adaeze did not usually respond immediately. The immediacy meant she'd been waiting. Which meant she'd already read the situation and read Rook, and known Rook would know who this was, and would call them and send an address within the hour. Twelve years of fighting the Syndicate's debt structures. You learn to read the situation in front of you.
+The response was immediate, which was unusual — Adaeze did not usually respond immediately. The immediacy meant she'd been waiting. Which meant she'd already read the situation and read Rook, and known Rook would know who this was, and would call them and send an address within the hour.
+
+Twelve years of fighting the Syndicate's debt structures. You learn to read the situation in front of you.
 
 Adaeze's response was: "Thank you."
 
@@ -4351,9 +5298,17 @@ Two words. The same weight as Boiler's two words: Good run. The weight of a lot 
 
 Rook put the channel down.
 
-The diner was still around her. The window was still the window. She had sat at a window over this lake four times now, across four operations that had never planned themselves into a series and had become one anyway. The first time she'd counted exact change. The second, who came through. The third, names. This time the count had no number.
+The diner was still around her. The window was still the window. She had sat at a window over this lake four times now, across four operations that had never planned themselves into a series and had become one anyway.
 
-She had given Adaeze one contact address. One thing in the forward count she could mark done. One structure to be built. One name sent toward the long work. The rest of the count ran on past the marking — the Z6 registry, the endowment, the Bureau flag, the hardliners in dark channels, the Stems arguing, Park somewhere in the city between one thing and the next, Priya rebuilding the shape of a life, Nari in Ekow's arrangement, Ekow going north. Variables she couldn't control. A count to keep, not to close.
+The first time she'd counted exact change.
+
+The second, who came through.
+
+The third, names.
+
+This time the count had no number.
+
+She had given Adaeze one contact address. One thing in the forward count she could mark done. One structure to be built. One name sent toward the long work. The rest of the count ran on past the marking — the Z6 registry, the endowment, the Bureau flag, the hardliners in dark channels, the Stems arguing, Park somewhere in the city between one thing and the next, Priya rebuilding the shape of a life, Nari in Ekow's arrangement, Ekow going north, the other two Helix facilities — the body-banks like the one Rook's crew had cracked — still out there, still someone else's problem. Variables she couldn't control. A count to keep, not to close.
 
 Outside, the Z3 morning had gone to afternoon. The light shifted the way GLMZ afternoons did when the overcast came back after a brief clearing, the brass going to gray-green again, the water settling into the color it was most of the time. The lake had been there before the zone and would be there after it.
 

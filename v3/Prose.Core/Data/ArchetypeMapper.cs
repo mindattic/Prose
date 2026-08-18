@@ -33,7 +33,7 @@ public static class ArchetypeMapper
     public static List<ArchetypeData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Archetypes.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "archetype"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "archetype"),
                 a => a.Id, e => e.Id,
                 (a, e) => new { a.Id, Name = e.Name, a.Category })
             .ToList();
@@ -72,7 +72,7 @@ public static class ArchetypeMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "archetype")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "archetype" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "archetype"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -270,7 +270,7 @@ public static class ArchetypeMapper
         };
 
         var archetypeEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "archetype" && e.IsActive)
+            .Where(e => e.EntityType == "archetype")
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -318,8 +318,7 @@ public static class ArchetypeMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive
-                && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

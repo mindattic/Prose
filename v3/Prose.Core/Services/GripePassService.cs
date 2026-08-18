@@ -55,7 +55,9 @@ public sealed class GripePassService(
     public async Task<GripeRunResult> RunAsync(Guid nodeId, int readers = 4, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var slug = node.Slug ?? nodeId.ToString("N");
 
@@ -93,7 +95,7 @@ public sealed class GripePassService(
 
         // ── 2. deterministic quote-grounding: hallucinated quotes die free ────────
         int groundingKills = 0;
-        var groundingBeats = ordered.Select(b => (b.Id, b.Text)).ToList();
+        var groundingBeats = ordered.Select(b => (b.Id, BeatMarkup.StripEntityTags(b.Text))).ToList();
         var grounded = new List<(ReviewLlmTransport.JurySeat Seat, RawComplaint C, Guid BeatId, string BeatText)>();
         foreach (var (seat, c) in raw)
         {

@@ -35,7 +35,7 @@ public static class MaterialMapper
     public static List<MaterialData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Materials.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "material"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "material"),
                 m => m.Id, e => e.Id,
                 (m, e) => new { m.Id, Name = e.Name, m.Category, m.Rating, m.VoteCount })
             .ToList();
@@ -76,7 +76,7 @@ public static class MaterialMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "material")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "material" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "material"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -252,7 +252,7 @@ public static class MaterialMapper
         };
 
         var materialEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "material" && e.IsActive)
+            .Where(e => e.EntityType == "material")
             .Select(e => e.Id)
             .ToHashSet();
 

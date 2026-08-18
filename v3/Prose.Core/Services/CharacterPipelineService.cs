@@ -460,7 +460,7 @@ public class CharacterPipelineService : PipelineServiceBase
         var types = entityTypes.ToHashSet(StringComparer.OrdinalIgnoreCase);
         using var db = dbFactory.CreateDbContext();
         return db.Entities.AsNoTracking()
-            .Where(e => e.IsActive && types.Contains(e.EntityType))
+            .Where(e => types.Contains(e.EntityType))
             .Select(e => e.Id)
             .ToList();
     }

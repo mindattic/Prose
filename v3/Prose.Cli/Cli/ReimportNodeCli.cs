@@ -171,6 +171,11 @@ public static class ReimportNodeCli
             Markdown = snapshotMd.ToString().TrimEnd() + "\n",
             BeatCount = oldLinks.Count,
             WordCount = oldWordCount,
+            Description = node.Description,
+            NodeBible = node.NodeBible,
+            Summary = node.Summary,
+            Seed = node.Seed,
+            Subtitle = node.Subtitle,
             CreatedAt = DateTime.UtcNow,
         });
 

@@ -7,14 +7,21 @@ namespace Prose.Core.Services;
 public sealed record BookArchiveResult(Guid ArchivedBookId, int LeafNodeCount, int BeatCount, int WordCount);
 
 /// <summary>
-/// Snapshots a book's ENTIRE current live prose into one <see cref="ArchivedBook"/> row — a
-/// pre-edit backup. Extracted from <c>ArchiveBookCli</c> (manual `--archive-book`) so
+/// Snapshots a book's ENTIRE current live prose, plus the Node's own content fields
+/// (Description, NodeBible, Summary, Seed, Subtitle), into one <see cref="ArchivedBook"/> row —
+/// a pre-edit backup. Extracted from <c>ArchiveBookCli</c> (manual `--archive-book`) so
 /// <see cref="AutoCorrectOrchestratorService"/> can call the exact same, tested logic before it
 /// touches a book, without going through the CLI. Read-only against Beats/Nodes/BeatNodes: never
 /// deletes or modifies existing content, only adds a snapshot row. Beats/Nodes/BeatNodes are no
 /// longer system-versioned and there is no soft-delete anymore
 /// (<see cref="NodeWorkbenchService.DeleteBeatAsync"/>), so this snapshot is the only way to
 /// recover prior content later if something downstream goes wrong.
+///
+/// Any future feature that bulk-overwrites a Node's content field(s) (e.g. a description
+/// generator, a bible-rewrite tool) should call <see cref="ArchiveAsync"/> with a
+/// reason describing the operation (e.g. "pre-description-regen") before making the change —
+/// the same convention <see cref="AutoCorrectOrchestratorService"/> already follows. This is not
+/// enforced automatically; there is currently no such caller.
 /// </summary>
 public class BookArchiveService(IDbContextFactory<ProseDbContext> dbFactory)
 {
@@ -22,7 +29,11 @@ public class BookArchiveService(IDbContextFactory<ProseDbContext> dbFactory)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+        // IgnoreQueryFilters(): the caller passes an explicit nodeId, not an ambient scope — a
+        // book in a universe other than whatever the ambient default happens to be would otherwise
+        // silently 404 here even though the id is correct. Found live 2026-08-17: 14 of 36 books
+        // failed a corpus-wide `--archive-book --all` this way before this fix.
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"[BookArchiveService] Node {nodeId} not found.");
 
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
@@ -61,6 +72,11 @@ public class BookArchiveService(IDbContextFactory<ProseDbContext> dbFactory)
             Markdown = snapshotMd.ToString().TrimEnd() + "\n",
             BeatCount = beatCount,
             WordCount = wordCount,
+            Description = node.Description,
+            NodeBible = node.NodeBible,
+            Summary = node.Summary,
+            Seed = node.Seed,
+            Subtitle = node.Subtitle,
             CreatedAt = DateTime.UtcNow,
         };
         db.ArchivedBooks.Add(archived);

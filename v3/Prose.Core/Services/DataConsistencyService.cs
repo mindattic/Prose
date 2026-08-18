@@ -119,7 +119,7 @@ public class DataConsistencyService
     private async Task<Finding> SlugCollisionsAsync(ProseDbContext db, CancellationToken ct)
     {
         var groups = await db.Entities.AsNoTracking()
-            .Where(e => e.IsActive && e.Slug != "")
+            .Where(e => e.Slug != "")
             .GroupBy(e => new { e.EntityType, e.Slug })
             .Where(g => g.Count() > 1)
             .Select(g => new { g.Key.EntityType, g.Key.Slug, Count = g.Count() })
@@ -133,7 +133,7 @@ public class DataConsistencyService
             .ToList();
 
         long count = await db.Entities.AsNoTracking()
-            .Where(e => e.IsActive && e.Slug != "")
+            .Where(e => e.Slug != "")
             .GroupBy(e => new { e.EntityType, e.Slug })
             .Where(g => g.Count() > 1)
             .CountAsync(ct);
@@ -167,7 +167,6 @@ public class DataConsistencyService
     private async Task<Finding> MissingRecordRowsAsync(ProseDbContext db, CancellationToken ct)
     {
         var rows = await db.Entities.AsNoTracking()
-            .Where(e => e.IsActive)
             .GroupJoin(db.Set<Data.Entities.Record>(),
                 e => e.Id, r => r.EntityId,
                 (e, rs) => new { e.Id, e.EntityType, e.Name, HasRecord = rs.Any(r => r.Json != "") })
@@ -176,7 +175,6 @@ public class DataConsistencyService
             .ToListAsync(ct);
 
         long count = await db.Entities.AsNoTracking()
-            .Where(e => e.IsActive)
             .GroupJoin(db.Set<Data.Entities.Record>(),
                 e => e.Id, r => r.EntityId,
                 (e, rs) => new { HasRecord = rs.Any(r => r.Json != "") })
@@ -233,26 +231,27 @@ public class DataConsistencyService
                 SELECT COUNT_BIG(*) AS Value
                 FROM [dbo].[{table}] s
                 LEFT JOIN [dbo].[Entities] e ON e.Id = s.Id
-                WHERE e.Id IS NULL OR e.IsActive = 0
+                WHERE e.Id IS NULL
                 """).FirstOrDefaultAsync(ct);
             if (n > 0)
             {
                 total += n;
                 if (samples.Count < SampleLimit)
-                    samples.Add(new SampleRow(table, $"{n} orphans (no active Entity row)"));
+                    samples.Add(new SampleRow(table, $"{n} orphans (no Entity row)"));
             }
         }
 
         return new Finding(
             Code: "ENT-ORPHAN-SUBTYPE",
-            Title: "Subtype rows pointing to missing/archived Entities",
-            Description: "TPT subtype rows whose parent Entities row is gone or marked inactive. " +
-                         "These won't appear in dictionary listings but still occupy storage and " +
-                         "can be picked up by raw joins.",
+            Title: "Subtype rows pointing to missing Entities",
+            Description: "TPT subtype rows whose parent Entities row is gone. Every subtype table has " +
+                         "a Cascade FK to Entities, so this should now be structurally impossible going " +
+                         "forward (temporal-hygiene rule) — a hit here means a pre-existing orphan from " +
+                         "before that FK was reliably enforced, or a row inserted bypassing EF.",
             DriftCount: total,
             Samples: samples,
             Severity: total == 0 ? "info" : "warn",
-            FixHint: total > 0 ? "Either restore the parent (set IsActive=1) or DELETE the orphan subtype row." : null);
+            FixHint: total > 0 ? "Restore the parent from Entities_History (prose --restore-entity), or DELETE the orphan subtype row." : null);
     }
 
     /// <summary>

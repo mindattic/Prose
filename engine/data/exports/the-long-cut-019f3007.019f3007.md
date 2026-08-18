@@ -12,35 +12,55 @@ The button is already armed. The clock has been running since Renata walked in.
 
 THE LONG CUT is a story about being chosen by someone who spent two years deciding — and what you owe a stranger who trusted you with everything they built._
 
-## Opening Image
+The last stitch is a 2-0 Prolene. Jude Adeyemi sets it the way she sets all of them: the needle square to the wound edge, the bite even, the pull the same the whole length of the cut. Her hands do it without asking the rest of her.
 
-The last stitch is a 2-0 Prolene. Jude Adeyemi sets it the way she sets all of them: the needle square to the wound edge, the bite even, the pull the same the whole length of the cut. Her hands do it without asking the rest of her. The clock above the supply shelf reads 0311. She has been on her feet nineteen hours.
+The clock above the supply shelf reads 0311. She has been on her feet nineteen hours.
 
-The lights drop to half, hold four seconds, then catch again. She doesn't look up. The power stabilizer on the wall has been failing for three weeks, and she knows its moods the way you know a friend's bad shoulder. It will hold until morning. So will the man on her table.
+The lights drop to half, hold four seconds, then catch again. She doesn't look up. The power stabilizer on the wall has been failing for three weeks, and she knows its moods. It will hold until morning. So will the man on her table.
 
-His name is Rudeboi. Twenty-two, West African and Korean, a courier for the NREN relay — a person-to-person package network, no corpo registry. He took a punch blade to the lower left chest over what he called a package dispute. The blade nicked an artery near the heart and let about 380 milliliters of blood into a space with no use for it. She drained the blood, tied off the bleeder, flushed the cavity, and now she is closing. He'll be sore for six weeks. He'll need physical therapy he won't get. He'll be fine.
+His name is Rudeboi. Twenty-two, West African and Korean, a courier for the NREN relay — a person-to-person package network, no corpo registry. He took a punch blade to the lower left chest over what he called a package dispute. The blade nicked an artery near the heart and let about 380 milliliters of blood into a space with no use for it.
 
-He was awake when he came in, which is not always true with a wound like this. He said two things: his name, and that he had no money. She told him to lie down. She told Femi — awake, the way Femi tends to be when she needs him — to start the prep. Twenty minutes after Rudeboi reached the door, she had his chest open. A little over two hours later she closed it. This is the work down here. You open the chest, you close the chest, you count the sponges. The corpo clinics don't run night hours in the Low, and the nearest real emergency ward is forty minutes and three checkpoint stops away.
+She drained the blood, tied off the bleeder, flushed the cavity, and now she is closing. He'll be sore for six weeks. He'll need physical therapy he won't get. He'll be fine.
 
-She works her way up the closure. Her back aches in a hard band across the base of the spine, the ache of standing bent too long. She notes it and keeps her hands moving.
+He was awake when he came in, which is not always true with a wound like this. He said two things: his name, and that he had no money. She told him to lie down. She told Femi — awake, the way Femi tends to be when she needs him — to start the prep.
 
-The Unit is quiet at this hour. Two patients sleep in the ward behind the partition: an old woman with a chest infection she can't afford to have treated right, and a teenager whose eye socket she set yesterday. Both stable. The kid had asked if it would scar. She told him yes. He said okay, in the voice of someone who has decided to be okay with it.
+Twenty minutes after Rudeboi reached the door, she had his chest open. A little over two hours later she closed it.
 
-Outside, the Gray Zone keeps its own hours. Austin at 0311 is never silent, but it runs low and scattered — the recycler drones on their routes above, the hum of the building's backup grid, once or twice a voice drifting up from the street with the strange clearness voices have at night. No ad-glare this deep; the commercial overlay dies at thirty meters, and the Unit sits at twenty-eight. She reads the street's sound the way she reads a patient's breathing: the usual is background, a change is a signal. Nothing changes.
+This is the work down here. You open the chest, you close the chest, you count the sponges. The corpo clinics don't run night hours in the Low, and the nearest real emergency ward is forty minutes and three checkpoint stops away.
 
-She finishes the deep layer and moves to the skin. Buried stitches, then a running line, no knots showing. The work is clean. She checks the tray: two suture packs left, a partial box for the skin, three pairs of gloves after this. The supply run is overdue.
+She works her way up the closure. Her back aches in a hard band across the base of the spine, the ache of standing bent too long. She ignores it and keeps her hands moving.
+
+The Unit is quiet at this hour. Two patients sleep in the ward behind the partition: an old woman with a chest infection she can't afford to have treated right, and a teenager whose eye socket she set yesterday. Both stable. The kid had asked if it would scar.
+
+She told him yes.
+
+He said okay, in the voice of someone who has decided to be okay with it.
+
+Outside, the Gray Zone keeps its own hours. Austin at 0311 is never silent, but it runs low and scattered — the recycler drones on their routes above, the hum of the building's backup grid, once or twice a voice drifting up from the street with the strange clearness voices have at night.
+
+No ad-glare this deep; the commercial overlay dies at thirty meters, and the Unit sits at twenty-eight. She reads the street's sound the way she reads a patient's breathing: the usual is background, a change is a signal. Nothing changes.
+
+She finishes the deep layer and moves to the skin. Buried stitches, then a running line, no knots showing. The work is clean.
+
+She checks the tray: two suture packs left, a partial box for the skin, three pairs of gloves after this. The supply run is overdue.
 
 She doesn't have money for the supply run. Rudeboi's case brings in nothing. The chest-infection case brings in nothing. In the general account she has Φ208 — enough for rent to the end of the month and about half of what supplies cost.
 
 The Unit has run like this for seven years. When she opened it, she figured it would fail inside two years. She figured the same thing again last quarter. It is in its seventh year. The numbers say one thing and the clinic keeps saying another, so she has stopped doing the sums. The sums don't count the things that actually keep the doors open: the Bloom Quarter collective letting a bill slide, the surplus sales over in West Town, Femi's knack for finding exactly what she needs for less than she expects to pay.
 
-She pulls off her gloves, drops them in the bin, and counts the tray before she has decided to. Four needles used, four left. Six sponges used, four left. All the instruments there. She has counted since she was a young field surgeon, when she learned that counting is what keeps you from leaving something inside a person. The count runs on its own now. She trusts it more than she trusts herself.
+She pulls off her gloves, drops them in the bin, and counts the tray before she has decided to.
+
+Four needles used, four left. Six sponges used, four left. All the instruments there. She has counted since she was a young field surgeon, when she learned that counting is what keeps you from leaving something inside a person. The count runs on its own now. She trusts it more than she trusts herself.
 
 Rudeboi is breathing, slow and even, a man back on the right side of the line. She strips the drapes, bags them, and starts breaking down the field.
 
-No one is here to help. Femi is asleep in the back; she doesn't wake him for cases she can handle alone. He is seventeen. He came to her three years ago with a badly set broken arm and stayed because she asked if he could count and he said he could count anything. He'll be up at six and start the morning without being told. She has never asked why he does this. The answer runs back to a mother who isn't around anymore, and that is a door she doesn't have the strength to open tonight.
+No one is here to help. Femi is asleep in the back; she doesn't wake him for cases she can handle alone. He is seventeen. He came to her three years ago with a badly set broken arm and stayed because she asked if he could count and he said he could count anything.
 
-What she knows about Femi is simple. He is steady, the way a person is steady when he has decided steadiness will keep him safe. He knows the tunnels under Austin better than anyone she's met. He has never taken a single Q from the cash box without asking. She doesn't know where he learned any of it, and she hasn't asked. Asking is a claim, and she doesn't make claims on people who haven't offered.
+He'll be up at six and start the morning without being told. She has never asked why he does this. The answer runs back to a mother who isn't around anymore, and that is a door she doesn't have the strength to open tonight.
+
+What she knows about Femi is simple. He is steady, the way a person is steady when he has decided steadiness will keep him safe. He knows the tunnels under Austin better than anyone she's met. He has never taken a single Q from the cash box without asking.
+
+She doesn't know where he learned any of it, and she hasn't asked. Asking is a claim, and she doesn't make claims on people who haven't offered.
 
 She mops the floor around the table with dilute antiseptic. The chlorine smell rises, thin and sharp. The work is dull and she does it without complaint, because complaint costs energy and energy is a thing she spends with care. The table will be clean. The room will be ready for the next one.
 
@@ -48,55 +68,113 @@ By 0347 the suite is reset. She writes Rudeboi's notes by hand in the paper char
 
 She sends him no bill. In three years she has sent maybe twelve invoices; four got paid. So she stopped sending them. She takes payment when it's offered and doesn't ask when it isn't. This isn't generosity — generosity needs a surplus. It's just what she has decided the job requires.
 
-She kills the suite light. She makes not-quite-coffee in the office — water through the filter twice, the last packet of the powder that tastes about forty percent like coffee and does about sixty percent of coffee's job — and sits down with the invoices, Chit's two-day-old message, and the Φ43 in the petty cash box. The message is eight words: "When you have a moment. -C." She knows what it's about; she always knows when the message is that short. She hasn't answered, because answering means making a decision, and she makes decisions when she has enough to decide on, not before. What she needs, before morning, is a number that works: some combination of the invoices and the petty cash and whatever Chit's message is actually offering that adds up to keeping the Unit open through next month. She needs to find it tonight, while the building is quiet and no one is bleeding, because tomorrow there will be someone bleeding. She spreads the invoices flat, opens Chit's message, and sets the Φ43 on the desk where she can see it. She is going to find a way to make the numbers work. That is the goal. That is the only goal. Everything else — the supply run, the stabilizer, Femi's future, the question of whether any of this is sustainable — lives on the other side of that number, and she will get to it when she gets there.
+She kills the suite light. She makes not-quite-coffee in the office — water through the filter twice, the last packet of the powder that tastes about forty percent like coffee and does about sixty percent of coffee's job — and sits down with the invoices, Chit's two-day-old message, and the Φ43 in the petty cash box.
 
-She works the invoices three times, in three orders, and gets three versions of the same answer. The receivables that might come in — a fraction of them, on a good month — plus the Φ208, plus the Φ43, land short of next month's supplies and rent together by a margin no arrangement of the columns can close. She reopens Chit's message and reads it again, and this time the eight words sit differently. When you have a moment is not a favor being offered; it is a favor being called. Chit doesn't send for a moment of her time. Chit sends when the collective needs the debt moved from the slide-it column into a number, and the only reason to raise that now, at the end of a short month, is that the collective's own margin has finally run out. The one line she has been treating as the loose slack in the budget is the line about to tighten. There is no combination. The number she came here to find isn't in the invoices, isn't in the box, and isn't in the message — it was never on the desk at all, and every source she counted on to cover the gap is the gap.
+The message is eight words: "When you have a moment. -C." She knows what it's about; she always knows when the message is that short. She hasn't answered, because answering means making a decision, and she makes decisions when she has enough to decide on, not before.
+
+What she needs, before morning, is a number that works: some combination of the invoices and the petty cash and whatever Chit's message is actually offering that adds up to keeping the Unit open through next month. She needs to find it tonight, while the building is quiet and no one is bleeding, because tomorrow there will be someone bleeding.
+
+She spreads the invoices flat, opens Chit's message, and sets the Φ43 on the desk where she can see it. She is going to find a way to make the numbers work. That is the goal. That is the only goal.
+
+She works the invoices three times, in three orders, and gets three versions of the same answer. The receivables that might come in — a fraction of them, on a good month — plus the Φ208, plus the Φ43, land short of next month's supplies and rent together by a margin no arrangement of the columns can close.
+
+She reopens Chit's message and reads it again, and this time the eight words sit differently. When you have a moment is a summons, not a courtesy. Chit doesn't send for a moment of her time; he sends when the collective's own margin has finally run out, at the end of a short month, and the debt she's been sliding into that column needs to become a number.
+
+The one line she has been treating as the loose slack in the budget is the line about to tighten. There is no combination. The number she came here to find isn't in the invoices, isn't in the box, and isn't in the message — it was never on the desk at all, and every source she counted on to cover the gap is the gap.
 
 The invoices won't settle tonight. The message won't answer itself. The Φ43 is the Φ43.
 
 By 0412 she is asleep at the desk.
 
-The boy watches her hands the way kids watch grown-ups who are good at a thing — not scared, just taking in what a skilled adult looks like up close. She doesn't explain what she's doing. If he wants to know, he can ask.
+Femi comes through the dispensary door at half past six with a boy at his heel — nine, maybe ten, the kind of quiet a kid learns when adults are deciding things. The boy's right arm is wrapped in what looks like medical gauze done wrong.
 
-She reaches for the antibiotics — and stops. The strip in her fingers is short. She counts the foil blisters through the plastic: nine tablets where the course needs fourteen. She checks the back cabinet for a second strip. There isn't one. There is a gap on the shelf where the second strip should be, and next to the gap a box of saline that expired last week, and behind that the general shape of a supply chain that has been quietly starving for two months. She stands there with nine tablets in her hand and a wound she has just reopened and closed, and the arithmetic is simple and bad: she can start this boy on a course she cannot finish, or she can send an infected nine-year-old back to Garfield with nothing, and neither of those is treatment. She stretches the dose in her head — longer intervals, lower load — and knows it's the kind of compromise that either works or teaches the infection to survive it. There's no third strip to conjure. She goes with the nine and the wider spacing and doesn't let it show on her face, because the girl is watching for the catch and this is the catch, and there's no version of the truth that helps either of them right now.
+"We getting paid for this?" Femi asks.
 
-Femi watches from the door. He's useful in these moments because he has learned to hold still.
+She's already moving to the exam table. "Prep the kit."
 
-The supply invoice from the Bloom Quarter medical collective sits in the drawer under her desk. She put it there two weeks ago, because looking at it doesn't change the number and not looking at it doesn't change the number either. The number is Φ412 — six trauma patches, two field kits, antiseptic, suture restocks, the usual list for a place that runs on Gray Zone margins. Between the general account and the petty cash box she has Φ263. She can't close that gap this week.
+"I'm just asking."
 
-She has been closing gaps like it for seven years, so she has a set of workarounds, and the workarounds cost something to keep running, which is part of why she is looking at the drawer instead of the invoice. One workaround is the NREN — the courier co-op, person to person, no corpo registry, partial payment fine when the Qs run short. Three of last month's deliveries came in on its Austin circuit. The drivers know her freight code.
+"Kit. Gloves in the second drawer."
+
+He opens the drawer, finds the gloves, sets them on the table without comment. The boy watches her hands the way kids watch grown-ups who are good at a thing — not scared, just taking in what a skilled adult looks like up close. She unwraps the gauze. Someone else's work: three sutures on a laceration that needed five, and the wound has been telling that story for two days.
+
+"We getting paid or not?" Femi asks, from beside the drawer.
+
+"The job isn't the payment."
+
+He looks at her. "What does that mean?"
+
+She doesn't explain it. She's already irrigating the site, and the boy's jaw has gone tight in the particular way of a kid who has decided he is not going to make a sound and means it. She concentrates on the work.
+
+She reaches for the antibiotics — and stops. The strip in her fingers is short. She counts the foil blisters through the plastic: nine tablets where the course needs fourteen. She checks the back cabinet for a second strip. There isn't one.
+
+There is a gap on the shelf where the second strip should be, and next to the gap a box of saline that expired last week, and behind that the general shape of a supply chain that has been quietly starving for two months.
+
+She stands there with nine tablets in her hand and a wound she has just reopened and closed: enough to start this boy on a course she cannot finish, or enough to send an infected nine-year-old back to Garfield with nothing, and neither of those is treatment.
+
+She stretches the dose in her head — longer intervals, lower load — and knows it's the kind of compromise that either works or teaches the infection to survive it. There's no third strip to conjure.
+
+She goes with the nine and the wider spacing and doesn't let it show on her face, because the boy is watching for the catch and this is the catch, and there's no version of the truth that helps either of them right now.
+
+Femi watches from the door. He has not pressed the question again. She suspects he's decided she didn't understand it.
+
+The supply invoice from the Bloom Quarter medical collective sits in the drawer under her desk. She put it there two weeks ago, because looking at it doesn't change the number and not looking at it doesn't change the number either. The number is Φ412 — six trauma patches, two field kits, antiseptic, suture restocks, the usual list for a place that runs on Gray Zone margins. Between the general account and the petty cash box she has Φ251. She can't close that gap this week.
+
+She has been closing gaps like it for seven years, so she has a set of workarounds, and the workarounds cost something to keep running, which is part of why she is looking at the drawer instead of the invoice.
+
+One workaround is the NREN — the courier co-op, person to person, no corpo registry, partial payment fine when the Qs run short.
+
+Three of last month's deliveries came in on its Austin circuit. The drivers know her freight code.
 
 Chit's message is two days old. She hasn't answered it because she knows what it's about: a job. Something that needs her hands and pays in numbers that would close the gap several times over. She has taken three of these jobs in seven years. Each one paid well. Each one left something behind that took her months to work through. Not guilt, exactly — more the weight of having used her skills for a thing she didn't build them for.
 
 She hasn't answered because she is working out whether she can afford to take a job right now. Which is really working out whether she can afford not to.
 
-Rudeboi is awake. She checks him at the nine-hour mark: heart rate 72, blood pressure where it should be for a man a day past surgery, oxygen 97 on room air. The dressing is clean. He asks for water; she says yes and Femi brings it. He asks when he can leave. Three days, minimum, she tells him.
+Rudeboi is awake. She checks him at the nine-hour mark: heart rate 72, blood pressure where it should be for a man a day past surgery, oxygen 97 on room air. The dressing is clean. He asks for water; she says yes and Femi brings it.
+
+"When can I leave?" he asks.
+
+"Three days, minimum," she tells him.
 
 "I don't have three days," he says.
 
-"The repair needs seventy-two hours to seal," she says. "You can leave in three days, or you can leave sooner and risk a second bleed."
+"The repair needs seventy-two hours to seal," she says. "You can leave in three days, or you can leave sooner and risk a second bleed?"
 
-He weighs it like a man adding up a bill. He's somewhere in his forties, long-term Gray Zone, the kind who has been doing this math his whole life. "Can I make calls?"
+He weighs it like a man adding up a bill. He's twenty-two, long-term Gray Zone already, the kind who's been doing this math his whole life.
+
+"Can I make calls?" he asks.
 
 "Yes."
 
-She leaves him to it. Passing the doorway ten minutes later, she sees his jaw moving the small way it moves on a neuretic line — the silent, in-skull comms everyone runs down here. She catches a fragment: "—NREN's still holding the package, junction twelve, needs to clear before 0800—" She keeps walking.
+She leaves him to it. Passing the doorway ten minutes later, she sees his jaw moving the small way it moves on a neuretic line — the silent, in-skull comms everyone runs down here.
 
-The chest-infection patient — Augustina, sixty-four, long-time Austin — is at 38.1, down from 38.8 yesterday. The antibiotic is working. She adjusts the dose and notes it. Augustina has done everything asked of her and only repeated one question three times: is it serious. Each time Stash gives the same answer — it was, it's less so now, and it won't be serious at all in five days if she finishes the course.
+She catches a fragment: "—NREN's still holding the package, junction twelve, needs to clear before 0800—"
+
+She keeps walking.
+
+The chest-infection patient — Augustina, sixty-four, long-time Austin — is at 38.1, down from 38.8 yesterday. The antibiotic is working. She adjusts the dose and notes it. Augustina has done everything asked of her and only repeated one question three times.
+
+"Is it serious?" she asks.
+
+Each time, she runs the antibiotic strip's remaining count before she answers — the arithmetic of whether there's enough left if this flares again — and gives her the same answer anyway: it was, it's less so now, and it won't be serious at all in five days if she finishes the course.
 
 The kid with the eye-socket fracture — Marco, sixteen — is doing exactly what she told him not to. His eyes are twitching in short, quick jumps, the strain of someone running an AR display close to his face. She stands in the doorway until he notices her.
 
-"What?" he says.
+"What?" he asks.
 
 "Your eye socket. Two fractures. Every close-up session loads the muscle that's holding it together." She waits. "Watch something at full distance. Point it at the ceiling. Different strain entirely."
 
 He says okay. She gives it four minutes before he forgets.
 
-She finishes rounds by 0930. Four patients, all stable. The Unit runs past the capacity it was built for, because it wasn't built for any capacity — it grew. Seven years ago it was a two-room space she used for consults while she did corpo contract work. The contract work ended when she decided she was done with it. The consult space became the whole thing. She added the ward partition in year two, the second exam table in year four.
+She finishes rounds by 0930. Four patients, all stable. The Unit runs past the capacity it was built for, because it wasn't built for any capacity — it grew.
 
-The shelf behind her desk she built herself out of ferrocement offcuts: reference texts, a locked box for controlled drugs, a backup power relay. The gear is all secondhand and all of it works. The old ultrasound sulks in cold weather, and cold weather in the Low is common, but sulking isn't the same as broken and she has learned its quirks by living with them.
+Seven years ago it was a two-room space she used for consults while she did corpo contract work. The contract work ended when she decided she was done with it. The consult space became the whole thing. She added the ward partition in year two, the second exam table in year four.
 
-Outside, the Gray Zone runs. Austin and Garfield blur together at this border. The Low — the ungoverned band — starts thirty meters up, and the Unit sits at twenty-eight. Corpo authority reaches to thirty meters; the NSB, Halcyon's security bureau, doesn't take interest below thirty-five. Between twenty-eight and thirty-five is a gap nobody has claimed and nobody has asked about. She works in it. No one has told her to stop.
+The shelf behind her desk she built herself out of ferrocement offcuts: reference texts, a locked box for controlled drugs, a backup power relay. The gear is all secondhand and all of it works.
+
+The old ultrasound sulks in cold weather, and cold weather in the Low is common, but sulking isn't the same as broken and she has learned its quirks by living with them.
+
+Outside, the Gray Zone runs. Austin and Garfield blur together at this border. The Low — the ungoverned band — starts thirty meters up, and the Unit sits at twenty-eight. Corpo authority reaches to thirty meters; the NCID — Halcyon's Neuretic Crime Investigation Division — doesn't take interest below thirty-five. Between twenty-eight and thirty-five is a gap nobody has claimed and nobody has asked about. She works in it. No one has told her to stop.
 
 At 1100 she answers Chit. He picks up on the second tone. She can hear him shift in his chair, the sound of a man who has been waiting.
 
@@ -104,21 +182,25 @@ At 1100 she answers Chit. He picks up on the second tone. She can hear him shift
 
 "I know. I've been busy."
 
-"Are you busy now?"
+"Are you busy now?" he asks.
 
-She looks at the invoice number. She looks at the account balance. She looks at the gap between them. "What is it?" she asks.
+She looks at the invoice number. She looks at the account balance. She looks at the gap between them.
 
-He takes a breath. "Not over the line. In person."
+"What is it?" she asks.
+
+He takes a breath.
+
+"Not over the line. In person."
 
 "I'll let you know," she says.
 
-She doesn't let him know by the end of the day. She checks her patients, changes dressings again, writes her notes. She makes not-quite-coffee and stands in the door of the surgical suite, looking at the clean table and the neat tray and the small world she has built here, which runs on Φ43 and a theory about the work.
+She doesn't let him know by the end of the day. She checks her patients, changes dressings again, writes her notes.
+
+She makes not-quite-coffee and stands in the door of the surgical suite, looking at the clean table and the neat tray and the small world she has built here, which runs on Φ43 and a theory about the work.
 
 By 2300 she has decided she won't call Chit tonight.
 
 By 2340, a woman staggers through the front door, and the decision stops mattering.
-
-## Catalyst
 
 She hears the door before she sees the woman.
 
@@ -134,13 +216,15 @@ Stash has seen people come in late because they couldn't afford to come early. T
 
 "In here," Stash says, and takes her by the arm, and the woman lets herself be steered to the exam table.
 
-Her name, she says, is Renata. She says it plainly, like someone who has decided to say it. No corpo affiliation. No ID. She repeats a number — 412.7 — twice, in the same flat tone as her name, as if saying it twice makes it stick. Then she does something Stash doesn't expect: she reaches up and takes Stash's wrist, not hard, just firm, and says her full name.
+Her name, she says, is Renata. She says it plainly, like someone who has decided to say it. No corpo affiliation. No ID. She repeats a number — 412.7 — twice, in the same flat tone as her name. Then she does something Stash doesn't expect: she reaches up and takes Stash's wrist, not hard, just firm, and says her full name.
 
 "Jude Adeyemi," Renata says.
 
 Her grip loosens. Her eyes close. She isn't dead — the labored breathing goes on — but she's out.
 
-Stash stands one second with the woman's hand loose on the table. One second is all she gives herself for the fact of being known — her whole name, said right, the full thing that even people who know her cut down to Stash. Then she starts working.
+Stash stands one second with the woman's hand loose on the table. One second is all she gives herself for the fact of being known — her whole name, said right, the full thing that even people who know her cut down to Stash.
+
+Then she starts working.
 
 She calls for Femi. He's in the doorway in under thirty seconds, which means he was already awake, which means he heard the door too.
 
@@ -150,7 +234,11 @@ She calls for Femi. He's in the doorway in under thirty seconds, which means he 
 
 "Prep the chest set."
 
-He goes. She clips the pulse ox to Renata's finger: 89 percent. Low enough to need help, high enough that she still has a moment to think instead of just react. She listens to the chest. The lower left is muffled. The right is clear. The bleeding is contained, not pouring free, or the numbers would already look worse.
+He goes.
+
+She clips the pulse ox to Renata's finger: 89 percent. Low enough to need help, high enough that she still has a moment to think instead of just react. She listens to the chest.
+
+The lower left is muffled. The right is clear. The bleeding is contained, not pouring free, or the numbers would already look worse.
 
 She puts in a wide IV line, draws blood she won't have time to test, hangs a bag. Renata is still breathing. Pressure 98 over 62 — low, but not the kind of low that ends things in the next minute.
 
@@ -174,7 +262,9 @@ She begins.
 
 The bleeding is in the lower left lobe, in the back segment. She knows that by the end of the first hour.
 
-She has Renata intubated and under by 0015. The pulse ox climbs to 94 percent — acceptable, the kind of acceptable that lets her keep moving without stopping to feel anything. The portable X-ray, secondhand but good enough for emergencies, confirms it: the lower left lobe has filled in. Not a collapsed lung. A bleed. The lobe is bleeding into itself, slow and steady and getting worse.
+She has Renata intubated and under by 0015. The pulse ox climbs to 94 percent — acceptable, the kind of acceptable that lets her keep moving without stopping to feel anything.
+
+The portable X-ray, secondhand but good enough for emergencies, confirms it: the lower left lobe has filled in. Not a collapsed lung. A bleed. The lobe is bleeding into itself, slow and steady and getting worse.
 
 She has done this operation twice before. Once in a corpo surgical suite with a full team and an attending at her shoulder who told her she had good hands. Once in the back of a salvage truck in the Lawndale tunnels, with two zip ties for retractors and a pocket light taped to a salvager's forehead. Tonight sits between the two: a clean room, decent light, working tools, no backup. She has done worse with less.
 
@@ -184,9 +274,11 @@ Left side, between the fifth and sixth ribs. The anatomy is exactly what she exp
 
 She works.
 
-The Unit is very quiet. The corridor is quiet. The Low beyond it is quiet. Femi stands at the door, watching the monitor she angled so he could read it. He doesn't speak. When she needs something she says its name, and he finds it on the tray and puts it in her hand, and she takes it without looking. This is how they work the cases that need everything she has. He learned it without being taught. She noticed it the third or fourth time and understood it for what it was — a kind of smarts that shows up in what a person does, not what they say.
+The Unit is very quiet. The corridor is quiet. The Low beyond it is quiet.
 
-The bleeder is controlled by 0158. She repairs the vessel with fine suture, four careful stitches, each one placed like a person who knows there is no fixing it if she gets it wrong. No attending to ask. No team to catch a mistake. Just her hands, the thread, the vessel, and the choice she made to stay steady and keep going.
+Femi stands at the door, watching the monitor she angled so he could read it. He doesn't speak. When she needs something she says its name, and he finds it on the tray and puts it in her hand, and she takes it without looking. This is how they work the cases that need everything she has. He learned it without being taught. She noticed it the third or fourth time and understood it for what it was.
+
+The bleeder is controlled by 0158. She repairs the vessel with fine suture, four careful stitches, each one placed. No attending to ask. No team to catch a mistake. Just her hands, the thread, the vessel, and the choice she made to stay steady and keep going.
 
 She ties each stitch and tests it. The bleeding stops.
 
@@ -196,7 +288,9 @@ By 0412 Renata is closed, on oxygen, breathing on her own. The drain is putting 
 
 Stash pulls off her gloves and stands at the foot of the table.
 
-Right now, she is good at this. She did her job and it worked and the woman on the table is alive because Stash was here and knew what to do. For the last four hours she hasn't thought about the number 412.7, or her full name said from the table, or the missing ID. She has thought about drain output and tissue and stitches holding. She has thought about the work, which is the one thing that reliably takes up all of her.
+Right now, she is good at this. She did her job and it worked and the woman on the table is alive because Stash was here and knew what to do.
+
+For the last four hours she hasn't thought about the number 412.7, or her full name said from the table, or the missing ID. She has thought about drain output and tissue and stitches holding. She has thought about the work, which is the one thing that reliably takes up all of her.
 
 She counts the used supplies. She writes the notes. She sets out fresh gloves. She starts watching the drain.
 
@@ -204,7 +298,9 @@ She does not think about Renata's chest. She does not think about what those fin
 
 At 0500 she lets herself have a sip of water. Femi is asleep in the chair by the door. She doesn't wake him.
 
-By 0600 Renata's temperature is 37.4, her pressure is steady, and the left side sounds better. By 0600, Stash lets herself believe this one will live.
+By 0600 Renata's temperature is 37.4, her pressure is steady, and the left side sounds better.
+
+By 0600, Stash lets herself believe this one will live.
 
 She sits down. She watches the woman breathe, the drain ticking into its bag. She waits.
 
@@ -212,13 +308,17 @@ She is very tired.
 
 At 0612 the monitor gives one high tone and Renata's pressure drops.
 
-The top number falls from 108 to 72 in eleven seconds. Stash is on her feet before the second alarm. The chest drain isn't putting out the volume a fresh bleed would cause — its output is steady, unchanged. The heart rhythm on the monitor is fast but regular, not the ragged line of a heart failing on its own. The oxygen reads 93 and dropping.
+The top number falls from 108 to 72 in eleven seconds. Stash is on her feet before the second alarm. The chest drain isn't putting out the volume a fresh bleed would cause — its output is steady, unchanged.
+
+The heart rhythm on the monitor is fast but regular, not the ragged line of a heart failing on its own. The oxygen reads 93 and dropping.
 
 She pulls back the drape and opens the dressing.
 
 The wound is closed. The skin is intact — no split, no swelling underneath. And then she sees it: the surface of the wound moves.
 
-It isn't the closure failing. It isn't a clot shifting. It is something small and mechanical, going off inside the chest, at a spot that is not the vessel she repaired and not the drain site and not anywhere in the body that produces a sound like that on its own. She knows the pattern because she has seen it once before, in a different part of her life, and once you have seen it you don't mistake it: a device firing. Surgically placed. A small contained charge.
+It isn't the closure failing. It isn't a clot shifting. It is something small and mechanical, going off inside the chest, at a spot that is not the vessel she repaired and not the drain site and not anywhere in the body that produces a sound like that on its own.
+
+She knows the pattern because she has seen it once before, in a different part of her life, and once you have seen it you don't mistake it: a device firing. Surgically placed. A small contained charge.
 
 She opens the dressing all the way. She runs her hands over the chest wall, careful and complete, because the training says to, because the training keeps going even when everything the training assumed has fallen away, because her hands keep moving when the rest of her hasn't caught up.
 
@@ -226,15 +326,19 @@ Renata stops breathing at 0614.
 
 Stash runs a code for eight minutes.
 
-Femi is awake — she doesn't know when, somewhere in the eleven seconds between the first alarm and the table — and he takes over compressions when her arms give out and she takes the airway. They work in the silence of two people who both know they are performing a ritual, not saving a life, and that the ritual has to be finished anyway, because stopping short of eight minutes is its own kind of failure, one worse than the one already here.
+Femi is awake — she doesn't know when, somewhere in the eleven seconds between the first alarm and the table — and he takes over compressions when her arms give out and she takes the airway.
+
+They work in the silence of two people who both know they are performing a ritual, not saving a life, and that the ritual has to be finished anyway, because stopping short of eight minutes is its own kind of failure, one worse than the one already here.
 
 She calls it at 0622.
 
-She steps back from the table. She pulls off her gloves and drops them in the bin. She goes to the sink and washes her hands. Her hands don't need washing. The washing is just something to do with them while the rest of her works slower.
+She steps back from the table. She pulls off her gloves and drops them in the bin. She goes to the sink and washes her hands.
 
 Femi says nothing. She says nothing. The monitor is still alarming; she reaches over and silences it. The room goes quiet.
 
-Then she does the exam she should have done at the start, before the bleeding pulled all her attention — the head-to-belly check she is trained to do on every trauma patient whose injury she doesn't fully understand. She runs her hands down the chest wall, methodical, starting at the collarbone and working toward the diaphragm.
+Then she does the exam she should have done at the start, before the bleeding pulled all her attention — the head-to-belly check she is trained to do on every trauma patient whose injury she doesn't fully understand.
+
+She runs her hands down the chest wall, methodical, starting at the collarbone and working toward the diaphragm.
 
 In the upper left chest, out past the second rib, she finds a foreign body.
 
@@ -244,11 +348,17 @@ Nine centimeters long. About two across. A hard composite shell, smooth except f
 
 She holds it three seconds.
 
-She thinks about the woman's hand on the table, the fingers working at the fabric, reaching under the collarbone. She thinks about the number said twice, flat, the same as the name. She thinks about the name itself — not a guess, not a title, the whole of it, said like the most important thing to get on the record before the time ran out.
+She thinks about the woman's hand on the table, the fingers working at the fabric, reaching under the collarbone.
+
+She thinks about the number said twice, flat, the same as the name.
+
+She thinks about the name itself — not a guess, not a title, the whole of it, said like the most important thing to get on the record before the time ran out.
 
 She sets the device in the specimen container on the tray. She seals it. She puts it on the shelf.
 
-She writes in Renata's chart: time of death, 0622. Cause: undetermined cardiac event. She writes it that way because it is the most honest thing she can put down right now, because anything more exact would take a decision she isn't ready to make in the next thirty seconds, and the chart is not where that decision belongs.
+She writes in Renata's chart: time of death, 0622. Cause: undetermined cardiac event.
+
+She writes it that way because it is the most honest thing she can put down right now, because anything more exact would take a decision she isn't ready to make in the next thirty seconds, and the chart is not where that decision belongs.
 
 She doesn't write the word device. She doesn't write the number.
 
@@ -264,11 +374,13 @@ She opens it again. She calls him. It's 0641.
 
 He picks up at once.
 
-## Renata's Body
-
 The recyclers come at 0800.
 
-She called them at 0730, inside the window for an unclaimed body in the Gray Zone — twenty-four hours from confirmed death. She didn't wait the full day because she wanted the body gone before Femi got back from the errand she'd sent him on at 0650. She'd told him to go to the Bloom Quarter collective, ask about pushing back the payment deadline, and not come back until he had an answer. It's a twenty-minute trip. She gave him extra reasons to stay out — a supply list to check, prices to compare. He'll be gone two hours, maybe three.
+She called them at 0730, inside the window for an unclaimed body in the Gray Zone — twenty-four hours from confirmed death.
+
+She didn't wait the full day because she wanted the body gone before Femi got back from the errand she'd sent him on at 0650. She'd told him to go to the Bloom Quarter collective, ask about pushing back the payment deadline, and not come back until he had an answer.
+
+It's a twenty-minute trip. She gave him extra reasons to stay out — a supply list to check, prices to compare. He'll be gone two hours, maybe three.
 
 She called the recycler service in the gap between the end of the code and the start of morning rounds, the hour when the night's emergency turns into the night's paperwork. The rate for an unclaimed body is Φ40, which she has. She pays it.
 
@@ -280,21 +392,29 @@ The service is two people, a man and a woman, both in the gray coveralls of a li
 
 He marks his form. The woman wheels the container toward the table, where Renata still lies under the drape.
 
-Stash fills out her own form: unclaimed woman, roughly fifty to fifty-five, no ID, cause of death undetermined cardiac event. She signs it with her license number. The form goes into the recycler's system. A copy goes to the Gray Zone health registry — a database run by a collective in Woodlawn that does the job an official records office would do, if the Gray Zone had one. Nobody will look into it. Nobody has the people to look into it.
+Stash fills out her own form: unclaimed woman, roughly fifty to fifty-five, no ID, cause of death undetermined cardiac event. She signs it with her license number.
+
+The form goes into the recycler's system. A copy goes to the Gray Zone health registry — a database run by a collective in Woodlawn that does the job an official records office would do, if the Gray Zone had one.
+
+Nobody will look into it. Nobody has the people to look into it.
 
 She watches them take the body.
 
 The table is empty by 0815. She strips and replaces the drapes. She cleans the table, careful and complete, the way she would after any case. She counts the instruments from the code. She clears the used lines. She resets the room.
 
-By 0850 the suite looks the way it looked at 2300 last night. That is the point. The reset is the point. The next patient will come — they always come — and she can't run this room as a place of grief.
+By 0850 the suite looks the way it looked at 2300 last night. That is the point.
+
+The reset is the point. The next patient will come — they always come — and she can't run this room as a place of grief.
 
 She stands in the doorway a moment, looking at the clean table. She thinks about a woman who spent eleven years learning how not to be stopped. She thinks about what it takes to walk into a clinic at midnight knowing the thing in your chest has a nine-percent chance of killing you, and to decide that the nine percent is yours to carry.
 
-She thinks: I wasn't ready for her. She thinks: she counted on that.
-
 Then she goes back in and checks her patients.
 
-Rudeboi is unchanged — heart rate 72, pressure fine, oxygen 97. He has accepted the three-day timeline, grudgingly. He's on his comms when she comes in and doesn't look up. Augustina is at 38.1, down from 38.8; the antibiotic is working. She adjusts the dose and notes it. Marco is running his neuretics again, eyes tracking side to side. She tells him to rest his eyes. He says okay. She gives it four minutes.
+Rudeboi is unchanged — heart rate 72, pressure fine, oxygen 97. He has accepted the three-day timeline, grudgingly. He's on his comms when she comes in and doesn't look up.
+
+Augustina is at 38.1, down from 38.8; the antibiotic is working. She adjusts the dose and notes it.
+
+Marco is running his neuretics again, eyes tracking side to side. She tells him to rest his eyes. He says okay. She gives it four minutes.
 
 She writes the notes. She updates the charts. She checks the supply count Femi left on the desk in his neat hand, two small notes in the margin.
 
@@ -316,19 +436,23 @@ By 1400 she has decided to call Chit and tell him to come tonight, not tomorrow.
 
 "Tonight," she says.
 
-A pause. "What changed?"
+A pause.
+
+"What changed?" he asks.
 
 "The device is still broadcasting," she says.
 
-Another pause, longer. "Tonight," he says.
+Another pause, longer.
+
+"Tonight," he says.
 
 She examines it in the locked office, door shut, lights up.
 
-She has taken it out of the container and set it on the exam mat. She studies it the way she studies any device she needs to understand before she touches it much — from above, from the sides, at the two contact points. The vibration she felt inside the chest doesn't carry in the room. She can only feel it, two fingers on the shell. It's steady and even. It hasn't changed in the hours since she bagged it. Whatever it's doing, it's doing it without pause.
+She has taken it out of the container and set it on the exam mat. She studies it — from above, from the sides, at the two contact points. The vibration she felt inside the chest doesn't carry in the room. She can only feel it, two fingers on the shell. It's steady and even. It hasn't changed in the hours since she bagged it. Whatever it's doing, it's doing it without pause.
 
 The shell is a composite she doesn't know by sight but knows by type: medical-grade hard casing, the kind used for implants built in real corpo facilities with real quality control. Not consumer. Not salvage. Not something thrown together in a back room. The surface is smooth except for the two contact points, which are where it would join with living tissue — which means it was made to sit inside a body.
 
-The branding is on the end face, small and clean: Nova-7. Sable Industries MedTech. 2210.
+The branding is on the end face, small and clean: Nova-7. Sable Industries MedTech. 2216.
 
 She sets it down. She picks it up again.
 
@@ -342,7 +466,9 @@ She has held Nova devices before. Not the Nova-7 — that model is two years new
 
 She has never seen one in the chest.
 
-The chest is not where a Nova goes. The line is documented for the skull, for just under the skin, for a ring around the heart. Deep in the chest cavity, against the sac around the heart, in the space between the lung lobes — that isn't in any guide she has ever read. And it's a bad place for a device that has to broadcast: the heartbeat shakes it, the anchoring has to hold to tissue that moves with every breath, and putting it there means opening the whole chest, which is not a small thing to do to a person.
+The chest is not where a Nova goes. The line is documented for the skull, for just under the skin, for a ring around the heart. Deep in the chest cavity, against the sac around the heart, in the space between the lung lobes — that isn't in any guide she has ever read.
+
+And it's a bad place for a device that has to broadcast: the heartbeat shakes it, the anchoring has to hold to tissue that moves with every breath, and putting it there means opening the whole chest, which is not a small thing to do to a person.
 
 So someone put this in Renata's chest on purpose. Someone with access to a surgical suite and a surgeon willing to do it. Someone who chose the chest exactly because it's the last place you'd look during a routine exam.
 
@@ -350,7 +476,9 @@ Or not someone. Renata herself. Renata, who said the number before she went unde
 
 Stash puts the device back on the mat.
 
-She sits in the locked office and thinks about 412.7. She has run it through the Gray Zone frequency registry: nothing. She has run it through the public medical database and found one note — dead channel, former Austin medical monitoring network, shut down 2219. That network was the Gray Zone's old attempt at a shared emergency-response system, before the corpos. It ran on four frequencies. 412.7 was the last one assigned before they pulled the plug.
+She sits in the locked office and thinks about 412.7. She has run it through the Gray Zone frequency registry: nothing. She has run it through the public medical database and found one note — dead channel, former Austin medical monitoring network, shut down 2219.
+
+That network was the Gray Zone's old attempt at a shared emergency-response system, before the corpos. It ran on four frequencies. 412.7 was the last one assigned before they pulled the plug.
 
 So the device is broadcasting on a dead channel, to a receiver that officially doesn't exist, one it was built to reach before the channel died.
 
@@ -362,31 +490,53 @@ She picks up her handset and calls Chit. It's 1600. He picks up.
 
 "It's a Nova-7. Sable Industries MedTech. Placed in the chest. Broadcasting on a dead medical channel."
 
-A silence. She hears him shift in his chair. "What frequency?"
+A silence. She hears him shift in his chair.
+
+"What frequency?" he asks.
 
 "412.7."
 
-Another silence. Then: "Don't open it at the Unit."
+Another silence. Then:
+
+"Don't open it at the Unit," he says.
 
 "I wasn't planning to."
 
-"Yes you were," he says.
+"Yes you were?" he asks.
 
 She looks at the device on the mat. She puts it back in the container and seals it.
 
 "Come tonight," she says.
 
-She sits with her options for three hours before Chit comes. Not because she can't see them — because she can, clearly, and every one of them is bad.
+She sits with her options for three hours before Chit arrives.
 
-Option one: the NSB. She has the device and a death report already filed. She calls Halcyon's security bureau, tells them what she found, hands over the container. She doesn't know what the device holds. The NSB will know what to do with whatever it holds — which is either a comfort or a threat, depending on what's on it, and she doesn't know what's on it. The way this one fails: the device holds something the NSB would rather bury. She gives it to them. It disappears. A woman spent eleven years building a thing and walked into her clinic at midnight, and it disappears.
+Not because she can't see them — because she can, clearly, and every one of them is bad.
 
-Option two: Scalpel Division. Scalpel is Sable's security arm — asset recovery, data protection. She knows them by reputation: efficient, professional, not cruel. If this is Sable's device, Scalpel will know it's Sable's and come to collect. The question is whether they already know it exists and are looking, or don't know and would only learn of it because she told them. The way this one fails: they were already looking, they're now looking for whoever has it, and she has just handed them the address.
+Option one: the NCID. She has the device and a death report already filed. She calls Halcyon's security bureau, tells them what she found, hands over the container.
 
-Option three: dump it. But the device is broadcasting, and a broadcast can be traced if someone is hunting the signal. To dump it safely she'd need a spot where the signal reads as coming from that spot and not from her — and she'd have to carry an active broadcaster across the Gray Zone to get there, which is the exact situation that turns her into the thing they're tracking. The way this one fails: whoever is listening already has a rough fix on her building, so moving only confirms it, and now she's moving with the very thing they want.
+She doesn't know what the device holds. The NCID will know what to do with whatever it holds — which is either a comfort or a threat, depending on what's on it, and she doesn't know what's on it.
 
-Option four: open it. She doesn't have the tools to crack a medical-grade shell without wrecking what's inside. She doesn't know what's inside. Destroying an active broadcaster might even count as a data crime under two of the three corpo jurisdictions here. And she'd still know nothing.
+The way this one fails: the device holds something the NCID would rather bury. She gives it to them. It disappears. A woman spent eleven years building a thing and walked into her clinic at midnight, and it disappears.
 
-She counts the options over the way she counts a supply tray. None of them is clean. Every one has a failure she can name. She keeps circling back to the fact that Renata knew her name — and keeps setting it aside, because she doesn't have enough yet to know what it means, and she has trained herself not to move on half a picture.
+Option two: Scalpel Division. Scalpel is Sable's security arm — asset recovery, data protection. She knows them by reputation: efficient, professional, not cruel. If this is Sable's device, Scalpel will know it's Sable's and come to collect.
+
+The question is whether they already know it exists and are looking, or don't know and would only learn of it because she told them.
+
+The way this one fails: they were already looking, they're now looking for whoever has it, and she has just handed them the address.
+
+Option three: dump it. But the device is broadcasting, and a broadcast can be traced if someone is hunting the signal.
+
+To dump it safely she'd need a spot where the signal reads as coming from that spot and not from her — and she'd have to carry an active broadcaster across the Gray Zone to get there, which is the exact situation that turns her into the thing they're tracking.
+
+The way this one fails: whoever is listening already has a rough fix on her building, so moving only confirms it, and now she's moving with the very thing they want.
+
+Option four: open it. She doesn't have the tools to crack a medical-grade shell without wrecking what's inside. She doesn't know what's inside. Destroying an active broadcaster might even count as a data crime under two of the three corpo jurisdictions here.
+
+And she'd still know nothing.
+
+She counts the options over. None of them is clean. Every one has a failure she can name.
+
+She keeps circling back to the fact that Renata knew her name — and keeps setting it aside, because she doesn't have enough yet to know what it means, and she has trained herself not to move on half a picture.
 
 Chit arrives at 2230. He knocks the way he knocks when he wants her to know it's him: twice, pause, once. She opens the door.
 
@@ -424,7 +574,7 @@ She waits.
 
 "We agree we want to know," she says. "We don't agree on anything else yet."
 
-He looks at the device. He looks at her. "You've been sitting here three hours deciding whether to call the NSB."
+He looks at the device. He looks at her. "You've been sitting here three hours deciding whether to call the NCID."
 
 "I've been sitting here three hours deciding whether to call anyone."
 
@@ -470,8 +620,6 @@ He looks at her. He looks at the locked drawer, which she has never told him abo
 
 He nods. "I'll be here," he says.
 
-## Getting Femi Out
-
 She tells Femi at 0630 the next morning.
 
 She tells him there's a ventilation problem in the surgical suite — a crack in the upper wall she found last night — and she needs him to go to a supplier in Bloom Quarter for a repair quote, and while he's there to check on the payment extension and get the terms in writing, and that she's low again on the surgical adhesive he found yesterday, so he might try the other supplier in West Town if he has time.
@@ -484,15 +632,25 @@ He takes the money, looks at it, looks at her. Not suspicious. It's the look of 
 
 "I'm doing the morning rounds," she says. "Go before the Bloom Quarter corridor gets busy."
 
-He goes. He takes the list and the money and the careful look, and she watches him cross the Low walkway and turn the corner. Something pulls tight under her breastbone and stays there, and she holds the doorway thirty seconds after he's gone, waiting for it to ease.
+He goes. He takes the list and the money and the careful look, and she watches him cross the Low walkway and turn the corner.
+
+Something pulls tight under her breastbone and stays there, and she holds the doorway thirty seconds after he's gone, waiting for it to ease.
 
 She has been lying to him for eight hours. There is no ventilation problem. The crack in the upper wall is a different, smaller one she found in October and left alone because it wasn't urgent. The errand list will keep him moving through Bloom Quarter and West Town for four hours, maybe six if the extension needs real paperwork.
 
-He would argue, if she told him. He'd say he doesn't want protecting, and he'd be right. He came here at fourteen with a badly set broken arm and stayed because she asked if he could count and he said yes, and in three years he has never once needed protecting.
+He would argue, if she told him. He'd say he doesn't want protecting, and he'd be right.
 
-She is protecting him anyway. It doesn't follow the logic she uses everywhere else, and she has stopped expecting it to. She goes back inside and checks her patients.
+He came here at fourteen with a badly set broken arm and stayed because she asked if he could count and he said yes, and in three years he has never once needed protecting.
 
-Rudeboi is healing well. He'll go home tomorrow; she has already lined up a follow-up with a contact in Bloom Quarter. Augustina is at 37.4, headed for normal — two more days. Marco's eye socket is stable. She told him this morning he could go home and he asked to stay one more day, and she said yes, because he's sixteen and she suspects home is a harder thing for him than for most. She has said yes to that before, for the same reason, and she doesn't pick the reason apart any further.
+She is protecting him anyway. It doesn't follow the logic she uses everywhere else, and she has stopped expecting it to.
+
+She goes back inside and checks her patients.
+
+Rudeboi is healing well. He'll go home tomorrow; she has already lined up a follow-up with a contact in Bloom Quarter. Augustina is at 37.4, headed for normal — two more days. Marco's eye socket is stable.
+
+She told Rudeboi this morning he could go home and he asked to stay one more day, and she said yes, because he's sixteen and she suspects home is a harder thing for him than for most.
+
+She has said yes to that before, for the same reason, and she doesn't pick the reason apart any further.
 
 She writes the notes. She updates the charts. She checks the supply count Femi left on the desk in his neat hand, one note in the margin: adhesive — 2 units remaining.
 
@@ -502,7 +660,7 @@ She calls Chit at 0800.
 
 "I'm coming now," she says.
 
-"How are you getting here?"
+"How are you getting here?" he asks.
 
 "Walking. The Low route."
 
@@ -510,9 +668,11 @@ A pause. "Good," he says. "Come to the freight entrance."
 
 She tells Augustina she'll be back by afternoon. She tells Marco she'll have Femi check on him. She locks the front panel and moves through the walkway toward the freight elevator down to the Low proper — the ungoverned corridor below thirty meters, where the only rule is the one people keep for themselves.
 
-The Low at 0800 is its own world. Not underground — thirty meters up is a long way from underground — but starved of light the way everything below the corpo line is. The buildings overhead kill the direct sun, and what reaches this level comes sideways through the gaps and the vent slats, partial and never enough. The Gray Zone has run on backup lighting for seventy years. The light is orange and functional, the color of what it costs. She has walked through it so many times the orange is just the color of the air.
+The Low at 0800 is its own world. Not underground — thirty meters up is a long way from underground — but starved of light the way everything below the corpo line is. The buildings overhead kill the direct sun, and what reaches this level comes sideways through the gaps and the vent slats, partial and never enough.
 
-The bag knocks against her hip with the weight of the container. The device is broadcasting. It has been broadcasting since Renata arrived and hasn't stopped, and for a second she wonders whether moving with it narrows the fix for whoever is listening. She lets the thought go. A receiver that has held the signal for thirty-seven hours already has her sector; her walking pace won't sharpen it.
+The Gray Zone has run on backup lighting for seventy years. The light is orange and functional, the color of what it costs. She has walked through it so many times the orange is just the color of the air.
+
+The bag knocks against her hip with the weight of the container. The device is broadcasting. It has been broadcasting since Renata arrived and hasn't stopped, and for a second she wonders whether moving with it narrows the fix for whoever is listening. She lets the thought go. A receiver that has held the signal for eight hours already has her sector; her walking pace won't sharpen it.
 
 She doesn't think about what Chit will find when he opens it. She thinks about the route, the ferrocement overhead, the morning light through the slats. She thinks about Femi at the collective with a list and Φ100. She thinks about Rudeboi's repair holding.
 
@@ -520,7 +680,11 @@ She does not think about Renata.
 
 She walks.
 
-Chit's workspace is two floors below street level in an Austin building that officially houses a data reconciliation firm. The firm is real — three employees, a legitimate license, quarterly reports for two Gray Zone cooperatives and a mid-tier building collective. Chit is not on the license. His room behind the firm's server bay is on no registry, no building record, no maintenance list. That's on purpose. The firm's three employees were chosen for their ability to not notice things.
+Chit's workspace is two floors below street level in an Austin building that officially houses a data reconciliation firm. The firm is real — three employees, a legitimate license, quarterly reports for two Gray Zone cooperatives and a mid-tier building collective.
+
+Chit is not on the license. His room behind the firm's server bay is on no registry, no building record, no maintenance list. That's on purpose.
+
+The firm's three employees were chosen for their ability to not notice things.
 
 He's there when she arrives. He has his gear laid out on the workbench: the frequency analyzer, a scrambler stack she recognizes as commercial signal isolation, and a third device she doesn't know. He names it before she can ask — a directional receiver.
 
@@ -550,7 +714,9 @@ She nods.
 
 "No," she says.
 
-He opens his signal-isolation kit and starts building a partial shield around the bench — not enough to block the broadcast, because blocking it might trip some secondary function he doesn't understand yet, but enough to dampen it and buy time before a tracker finds the source. She watches him work. He has the same kind of focus good surgeons have: complete, no performance in it, the state of someone who has learned the work takes all of them and decided to give it.
+He opens his signal-isolation kit and starts building a partial shield around the bench — not enough to block the broadcast, because blocking it might trip some secondary function he doesn't understand yet, but enough to dampen it and buy time before a tracker finds the source.
+
+She watches him work. He has the same kind of focus good surgeons have: complete, no performance in it, the state of someone who has learned the work takes all of them and decided to give it.
 
 "I need a day to crack the first layer," he says. "Financial grade. My tools will handle it."
 
@@ -560,7 +726,7 @@ He opens his signal-isolation kit and starts building a partial shield around th
 
 She is quiet a moment. "Her name was Renata Emmei?"
 
-He looks at her. "You didn't know her name."
+He looks at her. "You didn't know her name?"
 
 "She told me her first name. She was unconscious before she said the rest."
 
@@ -600,7 +766,9 @@ She picks up a sheet of paper from the table — a printout, held in both hands,
 
 She holds the paper up to the camera for a moment. It isn't readable at this resolution. She sets it down.
 
-"I requested the intake records for the R&D cohort," she says. "I received a summary. Four hundred and twenty-eight subjects. Austin relocation camp residents. Enrolled between March 2211 and August 2213." She pauses. "The consent was filed as 'wartime medical protocol under Block War Emergency Provision 7.' Provision 7 allows treatment without normal informed consent in active conflict zones. Austin was a relocation camp. It was not an active conflict zone in 2211."
+"I requested the intake records for the R&D cohort," she says. "I received a summary. Four hundred and twenty-eight subjects. Austin relocation camp residents. Enrolled between March 2211 and August 2213."
+
+She pauses. "The consent was filed as 'wartime medical protocol under Block War Emergency Provision 7.' Provision 7 allows treatment without normal informed consent in active conflict zones. Austin was a relocation camp. It was not an active conflict zone in 2211."
 
 She sets the paper down.
 
@@ -608,7 +776,9 @@ She sets the paper down.
 
 Stash sits at Chit's workbench, watching it play on his screen. Chit sits beside her. Neither of them has said a word since it started.
 
-"I brought my findings to my division supervisor," Renata goes on. "He told me the Provision 7 paperwork was in order and legal had reviewed the program. I brought them to the division head. She told me the program was outside my mandate and I should get back to my assigned work." She picks the paper up and sets it down again, the gesture of someone holding a thing they have nowhere to put. "I brought them to the Sable corporate ethics board. Fourteen days later I received a written reply thanking me for my diligence and informing me the matter had been reviewed and found in compliance with all applicable regulations."
+"I brought my findings to my division supervisor," Renata goes on. "He told me the Provision 7 paperwork was in order and legal had reviewed the program. I brought them to the division head. She told me the program was outside my mandate and I should get back to my assigned work."
+
+She picks the paper up and sets it down again, the gesture of someone holding a thing they have nowhere to put. "I brought them to the Sable corporate ethics board. Fourteen days later I received a written reply thanking me for my diligence and informing me the matter had been reviewed and found in compliance with all applicable regulations."
 
 She looks at the camera. Her expression hasn't changed the whole time.
 
@@ -660,7 +830,9 @@ He tells her the neuretics governor protocol is not a secret. It's in the licens
 
 "And the governor runs on trial data."
 
-"Every drug and implant approval runs on trial data," he says. "The question has always been where Sable's data came from. The public file is just a summary -- subject count, outcomes, confidence levels. The original records were supposedly destroyed in the 2218 data migration, when Sable moved everything to the new cloud." He pauses. "That's a lie."
+"Every drug and implant approval runs on trial data," he says. "The question has always been where Sable's data came from. The public file is just a summary — subject count, outcomes, confidence levels. The original records were supposedly destroyed in the 2218 data migration, when Sable moved everything to the new cloud."
+
+He pauses. "That's a lie."
 
 "You knew this."
 
@@ -672,19 +844,21 @@ He tells her the neuretics governor protocol is not a secret. It's in the licens
 
 "MidNorth Medical uses the governor protocol."
 
-"MidNorth licenses it and resells it inside their neuretics maintenance package," he says. "If the data under the governor gets documented publicly as non-consensual experiments on relocation camp residents, MidNorth has a license problem. An insurance problem. A charter problem." He looks at her straight. "They wanted the data destroyed. That's what they hired me to find. I passed, the job went to someone else, and that someone has been working under Scalpel's authority since 2224."
+"MidNorth licenses it and resells it inside their neuretics maintenance package," he says. "If the data under the governor gets documented publicly as non-consensual experiments on relocation camp residents, MidNorth has a license problem. An insurance problem. A charter problem."
+
+He looks at her straight. "They wanted the data destroyed. That's what they hired me to find. I passed, the job went to someone else, and that someone has been working under Scalpel's authority since 2224."
 
 Stash is quiet.
 
-"If the governor protocol gets suspended," she says, "the twelve hundred people whose neuretics need it --"
+"If the governor protocol gets suspended," she says, "the twelve hundred people whose neuretics need it—"
 
-"Would have to be managed some other way, or risk cascade failure," he says. "Yes. That's the problem." He's watching her now. "The twelve hundred who depend on the governor are alive and living their lives. The four hundred and twenty-eight who supplied the original data are dead. The choice made in 2211 -- by people now sitting behind institutional distance and legal cover -- leaves you with a situation where the right answer isn't obvious."
+"Would have to be managed some other way, or risk cascade failure," he says. "Yes. That's the problem." He's watching her now. "The twelve hundred who depend on the governor are alive and living their lives. The sixty-seven who didn't survive supplying that data are dead. The choice made in 2211 — by people now sitting behind institutional distance and legal cover — leaves you with a situation where the right answer isn't obvious."
 
 She looks at her hands. They're very still.
 
-"What's the data worth?" she asks. "In money. What would someone pay for it."
+"What's the data worth?" she asks. "In money. What would someone pay for it?"
 
-He answers like a man who has already worked out the figure. "The right buyer? Hundreds of thousands in quanta. A legal collective with the right case. A journalist with the right outlet. A rival corpo trying to void MidNorth's license." He pauses. "Also MidNorth, who'd pay to bury it. Also Scalpel, who'd pay to recover it. Also -- in a different sense -- the families of the four hundred and twenty-eight, who were never told what happened, and who may not even be findable." He holds her eye. "Which number matters?"
+He answers like a man who has already worked out the figure. "The right buyer? Hundreds of thousands in quanta. A legal collective with the right case. A journalist with the right outlet. A rival corpo trying to void MidNorth's license." He pauses. "Also MidNorth, who'd pay to bury it. Also Scalpel, who'd pay to recover it. Also — in a different sense — the families of the four hundred and twenty-eight, who were never told what happened, and who may not even be findable." He holds her eye. "Which number matters?"
 
 She looks up. "It's not money," she says.
 
@@ -694,15 +868,15 @@ She looks up. "It's not money," she says.
 
 "Not yet," he says, not unkindly. "You will, when we've opened the rest."
 
-She watches him work. The device sits in its case between them, still broadcasting to a receiver that's still listening. She puts her hands in her lap and waits for the rest.
+She watches him work. The device sits in its case between them, still broadcasting to a receiver that's still listening.
 
-## Chapter 5 - Fun and Games
+She puts her hands in her lap and waits for the rest.
 
 The second layer takes six hours.
 
 Chit works in silence. He's done this kind of work for decades, and the focus doesn't cost him anything anymore -- it's just where he goes when the problem is in front of him. He uses a decryption framework he built himself. Not because the commercial ones are weak, but because a tool you built yourself has no back doors you didn't put there. He explained that to her years ago, the first time she watched him work. She got it right away. It's one of the reasons they've lasted eleven years.
 
-She's done her part of this before too: sitting at the edge of his focus, present without needing anything from him. She's good at it. It's the same skill as waiting in a quiet recovery room while a body decides which way it's going to go -- being still and awake at the same time. She reads the frequency analyzer. She reads the scrambler status. She checks the signal strength against the range number she worked out on the first day. It matches. She makes tea she doesn't drink.
+She's done her part of this before too: sitting at the edge of his focus, present without needing anything from him. She's good at it. She reads the frequency analyzer. She reads the scrambler status. She checks the signal strength against the range number she worked out on the first day. It matches. She makes tea she doesn't drink.
 
 The device is still broadcasting. Chit has a directional receiver tracking where the signal goes, and it's finding an answer: somewhere out there, a receiver answers back. A handshake. Too faint to pin down, strong enough to prove someone is catching every word.
 
@@ -718,19 +892,29 @@ The device is still broadcasting. Chit has a directional receiver tracking where
 
 "Then whoever runs that receiver has probably already been told the signal moved," he says. "They know it left the source in Austin where they expected it. They don't know where it is now." He looks up. "We have a window. I don't know how big."
 
-She watches the analyzer. The trace holds steady, a thin green line that doesn't waver. The device does the one thing it was built to do, over and over, without tiring, without stopping to ask whether it should.
+She watches the analyzer. The trace holds steady, a thin green line that doesn't waver.
 
 She thinks about Renata building it. Not the wiring -- she can't reconstruct that from what she can see -- but the choice. Deciding to build a thing that broadcasts forever, that can't be stopped once it starts unless you destroy it, that needs the right person to carry it to the right room. Eleven years carrying it in a hollow cut into her chest. Eleven years breathing around it.
 
-She thinks about the grip on her wrist. The way Renata said her name before she went under. That's how you say a name when the last thing that matters, before you lose time, is the record: I found you on purpose. This was not chance. You are the one.
+She thinks about the grip on her wrist. The way Renata said her name before she went under.
 
-She knows that kind of signal. She uses it herself -- in surgery, when she needs Femi to move without a reason, or when a patient is going under and has to hear one thing first. The short message, for when there's no time for sentences. Renata had four words left and spent them making sure the surgeon knew she wasn't random. You don't improvise that. She decided long ago what she'd say if it came down to four words. Then it came down to four words, and she said them.
+That's how you say a name when the last thing that matters, before you lose time, is the record: I found you on purpose. This was not chance. You are the one.
+
+She knows that kind of signal. She uses it herself -- in surgery, when she needs Femi to move without a reason, or when a patient is going under and has to hear one thing first. The short message, for when there's no time for sentences. Renata had four words left and spent them making sure the surgeon knew she wasn't random. You don't improvise that.
+
+She decided long ago what she'd say if it came down to four words. Then it came down to four words, and she said them.
 
 She sets the analyzer down and checks Femi's messages. Two of them. The collective has confirmed the extension in writing. He's found surgical adhesive at West Town for Φ2 under his old source. He asks if he should head back.
 
-She looks at the question. She pictures Femi in West Town, working his supply list, sending her prices from somewhere that isn't this room.
+She looks at the question.
 
-Here is the dilemma, laid out in two bad shapes. Bring him back, and there are two of them tied to a room that broadcasts to a receiver they can't find -- two people the window closes on instead of one, and a second name for anyone who eventually comes to check why the signal stopped. Leave him out there, and she keeps her only pair of hands somewhere she can't reach if this goes wrong in the next hour, alone with whatever the third layer turns out to be.
+She pictures Femi in West Town, working his supply list, sending her prices from somewhere that isn't this room.
+
+Here is the dilemma, laid out in two bad shapes.
+
+Bring him back, and there are two of them tied to a room that broadcasts to a receiver they can't find -- two people the window closes on instead of one, and a second name for anyone who eventually comes to check why the signal stopped.
+
+Leave him out there, and she keeps her only pair of hands somewhere she can't reach if this goes wrong in the next hour, alone with whatever the third layer turns out to be.
 
 She weighs it the way she weighs a body on the table: not by which outcome she wants, but by which one she can still fix if she's wrong. She can call Femi back in twenty minutes if she needs him. She can't un-call him once he's in the room. So she keeps the reversible option. She'll finish the decryption with Chit, keep Femi clear of the room and moving on the supply list, and pull him in only if the layers give her something that needs a second person -- and the moment they do, she moves them all, tonight, before anyone reconciles a stopped signal with an address.
 
@@ -738,7 +922,9 @@ She tells him to take his time. He sends back one word: okay.
 
 She goes back to watching the analyzer.
 
-The signal holds. The handshake keeps confirming receipt. Whatever's in the layers still to come, it's already going out to someone she can't name. She sits with that -- the thing is already partway done; even if she stopped now, it has already reached a receiver she can't find -- and waits for Chit.
+The signal holds. The handshake keeps confirming receipt. Whatever's in the layers still to come, it's already going out to someone she can't name.
+
+She sits with that -- the thing is already partway done; even if she stopped now, it has already reached a receiver she can't find -- and waits for Chit.
 
 He finishes at 1842.
 
@@ -746,33 +932,47 @@ He finishes at 1842.
 
 She refills his water. He doesn't look up. She goes back to the screen.
 
-The second fragment is from 2219. Eleven months after the first.
-
 Renata is somewhere new. The wall behind her is plain white ferrocement, not the wood-textured material from before. She's thinner. The work shirt is the same gray, but worn now in a way it wasn't. She looks like someone who's been moving.
 
-"Eleven months," she says, no preamble. "Four locations in eleven months. I'm in Woodlawn now. I'll stay about three weeks, then move again." She pauses. "I'm recording this because the device isn't finished, and I want a record of where I am in the work."
+"Eleven months," she says, no preamble. "Four locations in eleven months. I'm in Woodlawn now. I'll stay about three weeks, then move again."
+
+She pauses. "I'm recording this because the device isn't finished, and I want a record of where I am in the work."
 
 She sets both hands on the table, the same as the first fragment.
 
-"The housing is sourced," she says. "Nova-7 casing. I got two through a surplus medical supplier in West Town. The encryption is in progress -- a financial-grade cipher I learned in my compliance work. I'm building it myself, because anything pre-made has a history I can't trust." She pauses. "The data is encoded. All of it. The budget documents, the intake records for the R&D cohort, the outcome logs -- everything I could reach before I left Sable in 2214, everything I photographed and digitized over five years. Fourteen point three gigabytes. Compressed and encrypted, it fits on the Nova-7 module with room to spare."
+"The housing is sourced," she says. "Nova-7 casing. I got two through a surplus medical supplier in West Town. The encryption is in progress -- a financial-grade cipher I learned in my compliance work. I'm building it myself, because anything pre-made has a history I can't trust."
+
+She pauses. "The data is encoded. All of it. The budget documents, the intake records for the R&D cohort, the outcome logs -- everything I could reach before I left Sable in 2214, everything I photographed and digitized over five years. Fourteen point three gigabytes. Compressed and encrypted, it fits on the Nova-7 module with room to spare."
 
 She pauses longer.
 
-"I've been trying to find the right person for three years," she says. "Not the right outlet. I know the outlet -- the Gray Zone medical network's emergency broadcast, the dead channels nobody watches anymore. I mean the right person to carry it to the right room." She looks at the camera. "I found Jude Adeyemi in an anonymized personnel roster, through a compliance records query. Her contract reference number is in the Austin R&D cohort documents. She performed post-operative follow-up on thirty-one of the four hundred and twenty-eight subjects during the 2211 contract."
+"I've been trying to find the right person for three years," she says. "Not the right outlet. I know the outlet -- the Gray Zone medical network's emergency broadcast, the dead channels nobody watches anymore. I mean the right person to carry it to the right room."
+
+She looks at the camera. "I found her in an anonymized personnel roster, through a compliance records query. Her contract reference number is in the Austin R&D cohort documents. She performed post-operative follow-up on thirty-one of the four hundred and twenty-eight subjects during the 2211 contract."
 
 She doesn't say the name. She reads the contract reference number the way she read the budget lines in the first fragment: flat, exact, no weight on it.
 
-"I've been researching her for eight months," she says. "She left Sable in 2214. She opened her own clinic in Austin in 2216. It runs below the corpo threshold. Ungoverned. She treats Gray Zone residents who have nowhere else to go. Her sliding scale slides to zero more often than not." She pauses. "She's very good at what she does. I've read the accounts." Another pause. "I haven't decided what to do with this yet. I'm recording it as a record of where the decision stands."
+"I've been researching her for eight months," she says. "She did one contract for them, in 2211. She opened her own clinic in Austin in 2210. It runs below the corpo threshold. Ungoverned. She treats Gray Zone residents who have nowhere else to go. Her sliding scale slides to zero more often than not."
+
+She pauses. "She's very good at what she does. I've read the accounts."
+
+Another pause. "I haven't decided what to do with this yet. I'm recording it as a record of where the decision stands."
 
 She looks at the camera.
 
-"The decision has two parts," she says. "The first is whether the tie between her and the cohort means she shouldn't get this. The second is whether it means she should." She's quiet. "I haven't settled it. I'm recording this so that if something happens to me first, there's proof I was trying."
+"The decision has two parts," she says. "The first is whether the tie between her and the cohort means she shouldn't get this. The second is whether it means she should."
+
+She's quiet.
+
+"I haven't settled it. I'm recording this so that if something happens to me first, there's proof I was trying."
 
 She reaches forward. The frame goes dark.
 
-Chit stops the playback. The second layer keeps running in the background, the progress bar crawling in the corner.
+Chit stops the playback. The third layer keeps running in the background, the progress bar crawling in the corner.
 
-Neither of them speaks for a moment. Then Stash says it, because saying it is the only way to learn how it sits: "In 2211 I did post-op follow-up on patients I was told were Block War injuries, admitted under emergency wartime protocol. I documented the outcomes. I signed the forms. I never read the intake documents -- contractors at my level didn't get access to them." She pauses. "I signed their forms for five years."
+Neither of them speaks for a moment. Then Stash says it, because saying it is the only way to learn how it sits: "In 2211 I did post-op follow-up on patients I was told were Block War injuries, admitted under emergency wartime protocol. I documented the outcomes. I signed the forms. I never read the intake documents -- contractors at my level didn't get access to them."
+
+She pauses. "I signed their forms for five years."
 
 Chit lets it sit before he answers.
 
@@ -782,11 +982,13 @@ Chit lets it sit before he answers.
 
 "It's six months, not five years. Use the number that's true."
 
-She nods once, slow, and doesn't use it, not yet. The progress bar crawls in the corner. Three layers left, and the worst of them still shut.
+She nods once, slow, and doesn't use it, not yet. The progress bar crawls in the corner. Four layers left, and the worst of them still shut.
 
 The alert comes from the handset camera feed.
 
-She has three cameras on the Unit: one at the entrance panel, one at the freight access, one at the walkway junction above. When she's away, she watches them on her handset -- the way she watches a patient's vitals when she can't be in the room. Checking, then going back to the other work.
+She has cameras on the Unit: one at the entrance panel, one at the freight access, one at the walkway junction above, one in the office, one on the ward.
+
+When she's away, she watches them on her handset. Checking, then going back to the other work.
 
 She checks now, at 1847, because she's starting to feel the pull of having left her patients in an empty clinic too long. Two inpatients. And Femi, who she told to go home and hasn't heard from.
 
@@ -794,9 +996,11 @@ The entrance-panel camera shows two people in gray operational wear. Not corp co
 
 She shows Chit the feed.
 
-He looks at it for three seconds. "Scalpel Division," he says. "That scanner's a Sable Industries MedTech entry model. Scalpel uses them for asset recovery."
+He looks at it for three seconds.
 
-"They have entry authority in Austin?"
+"Scalpel Division," he says. "That scanner's a Sable Industries MedTech entry model. Scalpel uses them for asset recovery."
+
+"They have entry authority in Austin?" she asks.
 
 "A commercial entry warrant, probably. Lets them into any commercial space in Austin's business corridor." He looks at her. "We're three blocks away."
 
@@ -804,11 +1008,21 @@ He looks at it for three seconds. "Scalpel Division," he says. "That scanner's a
 
 She's on the office camera now. The drawer she keeps locked stands open, the charts gone. The operative works fast -- pulling, scanning, stacking. Nothing broken. Professional. A records search.
 
-The ward feed shows Rudeboi still in his bed, watching. An operative says something to him. He doesn't answer. The operative takes the chart from the foot of the bed and adds it to the stack. Rudeboi has been in Austin long enough to know that answering people in gray is rarely the right move.
+The ward feed shows Rudeboi still in his bed, watching. An operative says something to him. He doesn't answer.
 
-Marco's bed is empty. The feed shows no sign of where he went. He was supposed to stay until she got back. She doesn't know if he walked out on his own or if something happened, and she can't call the clinic to find out -- that's a clinic she can't admit to being away from right now. She messages Femi: *Are you at the clinic?* He answers in under two minutes: *No, still at West Town. Why?* She doesn't explain. She watches.
+The operative takes the chart from the foot of the bed and adds it to the stack. Rudeboi has been in Austin long enough to know that answering people in gray is rarely the right move.
 
-The operatives work through the clinic. They open every drawer and cabinet and locked box -- they have a tool that opens the boxes without damage. They read every chart. They take the patient files and leave everything that isn't a record: the equipment, the supply stock, all of it. They came for one thing, didn't find it, and the files are the closest they got.
+Marco's bed is empty. The feed shows no sign of where he went. He was supposed to stay until she got back. She doesn't know if he walked out on his own or if something happened, and she can't call the clinic to find out -- that's a clinic she can't admit to being away from right now.
+
+She messages Femi: *Are you at the clinic?*
+
+He answers in under two minutes: *No, still at West Town. Why?*
+
+She doesn't explain. She watches.
+
+The operatives work through the clinic. They open every drawer and cabinet and locked box -- they have a tool that opens the boxes without damage. They read every chart.
+
+They take the patient files and leave everything that isn't a record: the equipment, the supply stock, all of it. They came for one thing, didn't find it, and the files are the closest they got.
 
 They close the entrance panel on the way out. The whole thing takes eleven minutes.
 
@@ -818,7 +1032,7 @@ Stash sits on the stool by Chit's workbench and watches the two of them walk bac
 
 "Take it," he says.
 
-She sits with the feed. Her empty clinic. The restocked shelves, the clean surgical suite, the ward with two patients and one empty bed. The files are gone. She built them over seven years -- every patient who ever came through the Unit, their names and complaints and treatments and outcomes. Seven years of work.
+She sits with the feed. Her empty clinic. The restocked shelves, the clean surgical suite, the ward with one patient and one empty bed. The files are gone. She built them over seven years -- every patient who ever came through the Unit, their names and complaints and treatments and outcomes. Seven years of work.
 
 The breath catches in the middle. She doesn't call it grief. She calls it a pressure deficit in the chest, which is the same thing, and it passes in about forty seconds, which is about as long as she lets these things run.
 
@@ -826,9 +1040,9 @@ The breath catches in the middle. She doesn't call it grief. She calls it a pres
 
 "Which means they were looking for the device, found nothing, and took the records as a consolation," Chit says. "The device wasn't at the clinic. They know that now."
 
-"And they'll decide whoever filed the death report has it."
+"And they'll decide whoever filed the death report has it," she says.
 
-"Yes." He pauses. "What do you need from me?"
+"Yes." He pauses. "What do you need from me?" he asks.
 
 She looks at the feed one more time. The Unit, quiet. Two patients. An empty bed where a boy was supposed to be. Then she closes the feed and turns the handset face-down on the bench, so the empty room isn't watching her while she works.
 
@@ -838,7 +1052,9 @@ He names it while she watches the third layer decrypt.
 
 "I want a percentage," he says, not looking up. "Of whatever this data is worth when it goes public."
 
-She's quiet a moment. "I told you it's not money."
+She's quiet a moment.
+
+"I told you it's not money."
 
 "I know. And I know you believe that." He types. The framework has been running four hours, working the third layer without hurry. "But when this goes public -- and it will, because that's what she built it for -- there's going to be a legal process. Settlements, license reviews, civil suits. In that process the data has a value you can put a number on. I want a percentage of the value your decision creates."
 
@@ -870,25 +1086,29 @@ She almost smiles. Not quite. It's the look she saves for something absurd that 
 
 "Probably not," he agrees. "But we'll know when it's done."
 
-The third layer finishes. He pulls up the index and they both look: subject intake logs, column after column of patient identifiers, dates, procedure codes, and a neat column of attending-physician initials she finds at once and can't look away from. Four hundred and twenty-eight rows. She scans down to the dates she knows -- March 2211, September 2211. The initials in the attending column are A.A.
+The third layer finishes. He pulls up the index and they both look: subject intake logs, column after column of patient identifiers, dates, procedure codes, and a neat column of attending-physician initials she finds at once and can't look away from.
+
+Four hundred and twenty-eight rows.
+
+She scans down to the dates she knows -- March 2211, September 2211. The initials in the attending column are J.A.
 
 She stops scanning.
 
 It isn't surprise. She's known since the second fragment -- since Renata read her contract reference number in the same flat tone she used for budget lines -- that her initials would be in here. She carried it through the last two layers without letting herself look straight at it.
 
-Now it's on the screen. A.A., the March dates, the six-month span. She looks at it a long moment, and she is thirty-nine years old, and she has been a Sable Industries contractor for exactly as long as the records say.
+Now it's on the screen. J.A., the March dates, the six-month span. She looks at it a long moment, and she is thirty-nine years old, and she has been a Sable Industries contractor for exactly as long as the records say.
 
 "There I am," she says.
 
-Chit doesn't tell her it isn't her fault. He's read enough records to know the initials don't care whose fault it is. "Four layers left," he says. "You want the rest tonight, or you want to stop."
+Chit doesn't tell her it isn't her fault. He's read enough records to know the initials don't care whose fault it is.
+
+"Four layers left," he says. "You want the rest tonight, or you want to stop?"
 
 "Tonight."
 
 "Then I'll want water in an hour, and quiet the rest of it."
 
 He starts the fourth layer. She gives him the quiet, which is the one thing in the room she still knows how to hand someone.
-
-## Decryption Progress
 
 By the time the fourth and fifth layers fall, Stash has been awake for thirty-one hours.
 
@@ -914,9 +1134,11 @@ The living are called successful vectors. The living are why the data is valuabl
 
 The dead are called non-responsive. The dead are the sixty-seven reasons the data is dangerous.
 
-In the post-op follow-up column, for March through September 2211, the practitioner code is A.A.
+In the post-op follow-up column, for March through September 2211, the practitioner code is J.A.
 
-Stash reads the records with her hands flat on the workbench. She reads all of them -- the intake dates, the procedure codes, the outcome notes. She reads the subject identifiers, which are strings of letters and numbers, not names. The records hide the practitioners and expose the subjects, which is the reverse of every ethics rule she knows, and it tells her everything about how this trial got approved. She reads the codes, and she knows what each one stands for, and she sits with it the way she sits with any hard clinical finding: without flinching, without pouring emotion into the data.
+Stash reads the records with her hands flat on the workbench. She reads all of them -- the intake dates, the procedure codes, the outcome notes. She reads the subject identifiers, which are strings of letters and numbers, not names.
+
+The records hide the practitioners and expose the subjects, which is the reverse of every ethics rule she knows, and it tells her everything about how this trial got approved. She reads the codes, and she knows what each one stands for, and she sits with it the way she sits with any hard clinical finding: without flinching, without pouring emotion into the data.
 
 She reads her own practitioner code thirty-one times.
 
@@ -932,7 +1154,7 @@ She finishes at 0340. She closes the index and puts her hands in her lap. Her ha
 
 She looks at the housing with the device inside. Still broadcasting. Still patient. The green trace steady.
 
-"Two more layers," he says. "One's the full trial data -- financial summaries, budget reconciliation, the whole picture. The other's the fragments. Renata's diary. Five more of them."
+"Two more layers," he says. "One's the full trial data -- financial summaries, budget reconciliation, the whole picture. The other's the fragments. Renata's diary. Four more of them."
 
 "She recorded six," Stash says. "We've seen two."
 
@@ -948,13 +1170,15 @@ He goes back to the screen. She watches the green trace hold, and doesn't look a
 
 Her handset rings at 0917 the next morning. She doesn't know the number. She almost lets it go.
 
-She hasn't slept. Chit's spare chair isn't built for sleeping, which is why she chose it -- upright, she won't drift off, and if she doesn't sleep she won't have to answer for what she dreams. It seems like a fair trade. Chit is across the room in his own chair, actually asleep, shoes still on, chin dropped to his chest at the angle of a man who nodded off in the middle of meaning to stay awake.
+She hasn't slept. Chit's spare chair isn't built for sleeping, which is why she chose it -- upright, she won't drift off, and if she doesn't sleep she won't have to answer for what she dreams. It seems like a fair trade.
+
+Chit is across the room in his own chair, actually asleep, shoes still on, chin dropped to his chest at the angle of a man who nodded off in the middle of meaning to stay awake.
 
 The device sits in its housing on the table, still broadcasting. She's watched the frequency counter for most of the night. Not because it needs watching. Because it gives her eyes something to do.
 
 When the handset rings, she looks at it for four full seconds. Then she picks up.
 
-"Dr. Adeyemi," the voice says. A woman, middle-aged. A Northern European accent with something more layered under it -- East African, she decides after a moment. Finnish on top, Somali beneath. "My name is Lydia Roth. I'm with the NSB Field Division in GLMZ. I'm calling about a death report you filed two days ago."
+"Dr. Adeyemi," the voice says. A woman, middle-aged. A Northern European accent with something more layered under it -- East African, she decides after a moment. Finnish on top, Somali beneath. "My name is Lydia Roth. I'm with the NCID Field Division in GLMZ. I'm calling about a death report you filed two days ago."
 
 The room is very quiet. The frequency counter ticks. Chit doesn't stir.
 
@@ -964,19 +1188,19 @@ The room is very quiet. The frequency counter ticks. Chit doesn't stir.
 
 Stash is quiet a moment. She sets down Chit's cold not-quite-coffee. A call like this normally passes through four levels of protocol before it reaches a field agent's direct line. This one came straight to her handset -- her personal number, which isn't in the clinic's official filings.
 
-"What do you mean by that?" she says.
+"What do you mean by that?" she asks.
 
-"I mean you filed a death report and took a patient file and one unidentified item out of your clinic before two authorized operatives showed up to do a standard asset recovery," Lydia says. "And those operatives aren't NSB. They're contracted security, private. And right now this is two tracks that haven't coordinated with each other. In my experience, that goes better when at least one party can see both tracks."
+"I mean you filed a death report and took a patient file and one unidentified item out of your clinic before two authorized operatives showed up to do a standard asset recovery," Lydia says. "And those operatives aren't NCID. They're contracted security, private. And right now this is two tracks that haven't coordinated with each other. In my experience, that goes better when at least one party can see both tracks."
 
 Stash looks at Chit, still asleep.
 
 She turns the word *authorized* over. There's a legal frame under which contracted private security counts as authorized. Lydia chose it on purpose -- to see how Stash reacts to it.
 
-"What do you want to talk about?" she says.
+"What do you want to talk about?" she asks.
 
 "In person," Lydia says. "I'll give you a location. Come without the device."
 
-"What makes you think I have a device?"
+"What makes you think I have a device?" she asks.
 
 A pause. Not an uncertain one. The pause of someone deciding how much to say and landing on: enough. "Because the patient was Renata Emmei, and I've been looking for Renata Emmei for fourteen months, and the device she carried is what I've been looking for." Another pause. "I know what's on it, Dr. Adeyemi. Come without it."
 
@@ -984,19 +1208,19 @@ The frequency counter ticks. The device broadcasts into the dead channel.
 
 She looks at the housing. She looks at Chit, asleep with his shoes on. She looks at the window, where the gray Austin morning comes through the ventilation slats -- the permanent half-dark of the ungoverned corridor below thirty meters, where the sun only reaches at midsummer noon.
 
-Lydia said two tracks that haven't coordinated. She didn't say NSB and Scalpel. A field agent calling a surgeon at 0917 -- before any team, any door, any authorized paperwork -- isn't standard asset recovery. It's something Lydia hasn't cleared with the people running the standard one.
+Lydia said two tracks that haven't coordinated. She didn't say NCID and Scalpel. A field agent calling a surgeon at 0917 -- before any team, any door, any authorized paperwork -- isn't standard asset recovery. It's something Lydia hasn't cleared with the people running the standard one.
 
 "Give me the location," she says.
 
-She writes it on the inside of her left forearm, the way she marks anything she can't afford to forget: one small line, where she'll see it when she holds the handset. She converts the zone-grid to a building she knows and works out that she can walk it through the Low in forty minutes.
+She writes it on the inside of her left forearm, the way she marks anything she can't afford to forget: one small line, where she'll see it when she holds the handset.
+
+She converts the zone-grid to a building she knows and works out that she can walk it through the Low in forty minutes.
 
 She doesn't wake Chit. She leaves him a note: meeting. back in two hours.
 
 She puts on her jacket. She slings the medical bag over her shoulder, the device inside it. Lydia told her to come without the device. She's going with it, because Lydia doesn't get to tell her how to carry her own tools.
 
 She goes.
-
-The third fragment is from 2221. Two years after the second.
 
 Renata sits in near-darkness. The camera catches a little ambient light from somewhere off-frame -- a ventilation slot, maybe, or a narrow window. The wall behind her is bare. She's on what looks like a crate, not a chair. She's thinner than in the second fragment. She looks like someone who's been moving a long time and has stopped for now and doesn't know what to do with the quiet.
 
@@ -1008,7 +1232,9 @@ She doesn't say which room.
 
 She puts her hands on her knees and looks at the camera.
 
-"The question is whether the tie between her and the cohort records means she shouldn't receive this," she says. "Whether it's cruel to put this in front of someone the same institution used. Whether it's unfair to make her the one who discloses it when she's also part of what's being disclosed." She pauses. "I've spent a long time on it. I haven't settled it."
+"The question is whether the tie between her and the cohort records means she shouldn't receive this," she says. "Whether it's cruel to put this in front of someone the same institution used. Whether it's unfair to make her the one who discloses it when she's also part of what's being disclosed."
+
+She pauses. "I've spent a long time on it. I haven't settled it."
 
 She's quiet a moment.
 
@@ -1046,7 +1272,7 @@ She sits with it. The device is still broadcasting. She's stopped looking at it.
 
 Stash nods, slow, and goes still.
 
-"The meeting with the NSB agent," she says. "What should I say?"
+"The meeting with the NCID agent," she says. "What should I say?"
 
 "Tell me what you're thinking first," he says.
 
@@ -1060,7 +1286,7 @@ He nods. "Go," he says. "Go, listen, and tell me everything she says."
 
 Lydia Roth picks a Tier 2 food hall near the Austin/Garfield seam. Two exits. The noise of thirty tables and a kitchen feeding three cooperatives' worth of people at lunch. No corporate presence -- just the Waxwing Neuromedia menu board over the counter, civic blue, cycling its lunch list in a flat government font through a dying emitter, one frame in three flickering to a ghost. It's the kind of place a careful person picks for a meeting they want to be able to walk away from clean.
 
-A Ferrogate CI-4 sits at the service access on the way in, plain matte gray -- contractor plates, no corporate livery. Lydia is at a table near the back when Stash comes in. Fifty, maybe. Finnish-Somali, Stash guesses, from the high cheekbones and pale skin and dark eyes she's seen in the border-corridor mix. Her civilian clothes are cut too well to be civilian -- the NSB never quite gets what plain clothes look like when they're bought on a government allowance. There's coffee in front of her. She doesn't stand when Stash sits.
+A Ferrogate CI-4 sits at the service access on the way in, plain matte gray -- contractor plates, no corporate livery. Lydia is at a table near the back when Stash comes in. Fifty, maybe. Finnish-Somali, Stash guesses, from the high cheekbones and pale skin and dark eyes she's seen in the border-corridor mix. Her civilian clothes are cut too well to be civilian -- the NCID never quite gets what plain clothes look like when they're bought on a government allowance. There's coffee in front of her. She doesn't stand when Stash sits.
 
 "Dr. Adeyemi," she says.
 
@@ -1070,7 +1296,7 @@ Lydia takes the directness and seems to approve of it. "I want to understand wha
 
 "Tell me what I don't know."
 
-"The neuretics governor protocol. The Sable Industries trial data. You know what's in it."
+"The neuretics governor protocol. The Sable Industries trial data. You know what's in it?"
 
 "Yes."
 
@@ -1096,15 +1322,15 @@ Stash looks at her. "Versus sixty-seven people who died in the trial."
 
 Stash is quiet. She looks at Lydia the way she looks at a clinical finding: holding it, not reacting, letting it settle.
 
-"And what happens to the four hundred and twenty-eight," she says.
+"And what happens to the sixty-seven," she says.
 
 "They're already documented. The documentation goes into a secure archive."
 
-"And nobody reads it."
+"And nobody reads it?"
 
 Lydia is quiet.
 
-"What happens to that archive the next time Sable needs a trial cohort?" Stash says. "What stops this from happening again?"
+"What happens to that archive the next time Sable needs a trial cohort?" Stash asks. "What stops this from happening again?"
 
 Lydia takes a moment. "The protocol exists and is licensed," she says. "There's no need for a second trial."
 
@@ -1114,7 +1340,7 @@ Lydia picks up her coffee.
 
 "It's a precedent," Stash says. "A documented one -- that the corp can run a hidden trial on relocation camp residents under Emergency Provision 7, and the worst that happens is an archive. That precedent doesn't expire." She pauses. "And the families of the four hundred and twenty-eight were never told."
 
-Lydia sets the coffee down. "What I'm offering you is this," she says carefully. "The four hundred and twenty-eight can't be made less dead. The twelve hundred can be made less at risk."
+Lydia sets the coffee down. "What I'm offering you is this," she says carefully. "The sixty-seven can't be made less dead. The twelve hundred can be made less at risk."
 
 Stash looks at her the way she reads a patient who's presented her with half the picture: accurate, incomplete, not enough to decide on.
 
@@ -1124,11 +1350,9 @@ Stash looks at her the way she reads a patient who's presented her with half the
 
 Stash stands. She puts Φ20 on the table for the coffee she didn't order. She looks at Lydia one more time.
 
-"The four hundred and twenty-eight had names," she says. "They weren't a data set."
+"The sixty-seven had names," she says. "They weren't a data set."
 
 She walks out. Lydia doesn't follow. The food hall goes on around her.
-
-## The Last Encryption Layer Falls
 
 The last layer falls at 0214.
 
@@ -1144,7 +1368,7 @@ She knows what she's going to find. She's known since the second fragment, and s
 
 It takes four minutes to index the full record. When it's done, Chit sorts it by Post-Op Follow-Up. He doesn't tell her to look away. He doesn't ask if she's ready. He sorts it, and the column fills, and the third row from the top of the 2211 cohort reads: Adeyemi, J., Sable MedTech Contractor.
 
-She reads it. She puts the tablet down. She picks it up. She reads it again.
+She reads it once. Then she takes out her own chart pen, and beside the entry, in the same small precise hand she uses on every patient record, she writes the date, and initials it: J.A.
 
 The row is dated 2211-03-14. A thirty-four-year-old woman, Gray Zone Austin resident. Intake March 14, 2211. Procedure code NI-R03 -- a neural integration procedure. Post-op follow-up on March 21, March 28, April 4. Her initials after each date. Her initials, in the record of a procedure she followed up on, was told was a Block War injury, signed the forms for, went home from, and never thought about again -- because junior field surgeons on short rotations didn't think about the forms they signed. They signed the forms. They did the follow-up. They did their jobs.
 
@@ -1164,7 +1388,7 @@ She sets the tablet down, puts both hands flat on the bench, and doesn't move.
 
 He goes quiet. He gives her the minute.
 
-She sits with her hands flat and the index open and her initials in the column, and the weight of it isn't the weight she expected. She thought it would feel like guilt. It doesn't. Guilt would be easier. This is like looking at a photograph of yourself somewhere you don't remember being, doing something you don't remember doing, inside something you never knew you were part of.
+She sits with her hands flat and the index open and her initials in the column, and the weight of it isn't the weight she expected. She thought it would feel like guilt. It doesn't. Guilt would be easier.
 
 She was twenty-three. She signed the forms. She did the follow-up. She believed the forms.
 
@@ -1198,21 +1422,27 @@ She doesn't sit idle. She picks up the tablet and opens the financial summary.
 
 It's a hundred and twelve pages. She doesn't read all of them. She reads the executive section, the budget reconciliation tables, and the outcome summary, which Renata annotated in the margins with exact cross-references to the supporting documents. The notes are in Renata's handwriting -- small and neat, the hand of someone trained to get information down accurately in tight spaces on physical forms.
 
-Budget line fifteen: Advanced Neurological Integration -- R&D Cohort. Total spend, 2209 to 2213: Φ407,000. Broken out by quarter, by procedure code, by outcome category. Category A is the largest -- the successful integrations, the ones who became the foundation for the licensed governor protocol. Category C is the smallest: sixty-seven subjects, biological matter disposal at standard facility rates. The cost per subject in Category C is Φ43.
+"Budget line fifteen: Advanced Neurological Integration -- R&D Cohort. Total spend, 2209 to 2213: Φ407,000. Broken out by quarter, by procedure code, by outcome category. Category A is the largest -- the successful integrations, the ones who became the foundation for the licensed governor protocol. Category C is the smallest: sixty-seven subjects, biological matter disposal at standard facility rates. The cost per subject in Category C is Φ43."
 
 She reads the number twice. Φ43 a person. The same number she keeps in the petty cash box.
 
 She notices the coincidence. She sets the tablet down.
 
-The provenance chain is complete. Renata built it from the original budget authorizations -- signed by six separate Sable executives -- through the Emergency Provision 7 filing with the GLMZ Wartime Medical Authority, filed in 2211 when Austin was a relocation camp and not an active conflict zone, filed by an attorney whose firm represented Sable in three other matters that same year. Then through the intake records for all four hundred and twenty-eight subjects, the outcome records, the follow-up notations, and the final budget reconciliation when the program closed in 2213. Every step documented. Every document cross-referenced. Eleven years building a chain with no missing links.
+The provenance chain is complete. Renata built it from the original budget authorizations -- signed by six separate Sable executives -- through the Emergency Provision 7 filing with the GLMZ Wartime Medical Authority, filed in 2211 when Austin was a relocation camp and not an active conflict zone, filed by an attorney whose firm represented Sable in three other matters that same year.
+
+Then through the intake records for all four hundred and twenty-eight subjects, the outcome records, the follow-up notations, and the final budget reconciliation when the program closed in 2213. Every step documented. Every document cross-referenced. Eleven years building a chain with no missing links.
 
 It's thorough enough to make her chest tighten. Not because the care surprises her. Because it means Renata knew that any gap she left would be the reason the record got thrown out.
 
-She sits. She breathes. She doesn't look at the column with her initials. She looks at the wall across from the bench and lets the finding settle into the place where she keeps the things she can't do anything about yet, and she waits for Chit to finish.
+She sits. She breathes. She doesn't look at the column with her initials.
+
+She looks at the wall across from the bench and lets the finding settle into the place where she keeps the things she can't do anything about yet, and she waits for Chit to finish.
 
 She tells him at 0330, once the financial summary is indexed and they're both looking at it.
 
-She tells him the way she tells patients hard things -- no softening, no false hope, but no dropping a finding on someone and leaving them alone with it either. Her initials are in the records. She gives him the date range. She gives him the procedure code and what it means.
+She tells him the way she tells patients hard things -- no softening, no false hope, but no dropping a finding on someone and leaving them alone with it either. Her initials are in the records.
+
+She gives him the date range. She gives him the procedure code and what it means.
 
 He doesn't look surprised. He looks like a man who suspected and didn't say so.
 
@@ -1240,7 +1470,9 @@ She knows this. She's said versions of it to herself for the past hour. It's tru
 
 "Nothing," he says. "And everything." A pause. "It changes what you're deciding. You're not just deciding what to do with someone else's evidence. You're deciding what to do with something that has your name in it."
 
-She looks at the financial summary -- the whole provenance chain, Sable Industries MedTech, the Austin Relocation Camp, the Emergency Provision filing, the budget reconciliation Renata spent five years assembling into one complete record. She looks at the size of the thing in her hands.
+She looks at the financial summary -- the whole provenance chain, Sable Industries MedTech, the Austin Relocation Camp, the Emergency Provision filing, the budget reconciliation Renata spent five years assembling into one complete record.
+
+She looks at the size of the thing in her hands.
 
 She doesn't break down. There's a moment -- she feels it as a tightening behind the sternum, a shift in pressure -- where breaking down would be the natural thing, after thirty-one follow-up cases and her initials and a woman who spent eleven years building a device to hand her this. She lets it pass.
 
@@ -1252,7 +1484,7 @@ Chit is quiet.
 
 "All of it," she says. "Renata's fragments, the full record, the financial summary, the provenance chain." She sets the tablet down. "I don't have to understand every page tonight. I know enough."
 
-"You know how to broadcast it?"
+"You know how to broadcast it?" he asks.
 
 "You said the dead medical channel can reach forty nodes at once from the right transmitter. Renata knew about the channel. That's why she used the frequency." She looks at him. "There's a right transmitter somewhere. I need to know where."
 
@@ -1276,13 +1508,15 @@ She lies still and lets the decision settle in beside the finding, and she waits
 
 At 0800 Chit shows her the plan, and she understands why Renata chose the frequency.
 
-The Austin medical monitoring network went up in 2219 -- she has the history from his research -- a joint project between four Gray Zone health collectives. Forty monitoring nodes spread across Austin, Garfield, and the corridors between them. The nodes talked over four dedicated frequencies. 412.7 MHz was the last one assigned. The network was shut down in 2219, when the funding dried up and the corpos wouldn't take on the running costs. The forty nodes are still physically there. Seven years now in administrative decommissioned status -- not pulled out, not repurposed, just switched off and left.
+The Austin medical monitoring network went up in 2212 -- she has the history from his research -- a joint project between four Gray Zone health collectives. Forty monitoring nodes spread across Austin, Garfield, and the corridors between them. The nodes talked over four dedicated frequencies. 412.7 MHz was the last one assigned. The network was shut down in 2219, when the funding dried up and the corpos wouldn't take on the running costs. The forty nodes are still physically there. Seven years now in administrative decommissioned status -- not pulled out, not repurposed, just switched off and left.
 
 "Administrative decommissioned means the funding stopped, the oversight stopped, and somebody filed a closure report," Chit says. "It doesn't mean the hardware stopped."
 
-The hub -- the transmitter that fed all forty nodes -- is the old Austin monitoring station at the north end of the Austin axis. It's inside the Scalpel search perimeter, the one they set up after they picked up the van's signal.
+"The hub -- the transmitter that fed all forty nodes -- is the old Austin monitoring station at the north end of the Austin axis. It's inside the Scalpel search perimeter, the one they set up after they picked up the van's signal.
 
-"From the hub, one broadcast on 412.7 hits all forty nodes at once," he says. "Every node rebroadcasts on its local frequency. The data drops into every connected device inside a two-kilometer radius of each node." He looks at her. "Forty nodes covering all of Austin and most of Garfield. Every handset, every screen, every receiver in that footprint."
+"From the hub, one broadcast on 412.7 hits all forty nodes at once," he says. "Every node rebroadcasts on its local frequency. The data drops into every connected device inside a two-kilometer radius of each node."
+
+He looks at her. "Forty nodes covering all of Austin and most of Garfield. Every handset, every screen, every receiver in that footprint."
 
 She's looking at the map -- the station icon at the north end, sitting inside the red zone Chit shaded for the Scalpel perimeter.
 
@@ -1294,11 +1528,17 @@ She looks at the map, the transmitter icon, the red around it.
 
 "Then that's where we go," she says.
 
-He nods and starts laying out the route: the tunnel access, the checkpoints Scalpel has set, the NSB patrol pattern he's reconstructed from the receiver data. He built all of this while she slept. He hasn't slept.
+He nods and starts laying out the route: the tunnel access, the checkpoints Scalpel has set, the NCID patrol pattern he's reconstructed from the receiver data.
+
+He built all of this while she slept.
+
+He hasn't slept.
 
 She looks at the map and the route and listens to him run through the variables, and for one hour it feels doable. It feels like a problem with a solution -- a clinical case with a protocol. The perimeter has gaps. The tunnels get them in. The device plugs into the transmitter. The transmitter reaches the nodes.
 
-For one hour she can see all the way to the end: the station, the coupling port, the controller reading *Transmission initiated*, the counter running, the data going out to forty nodes. She sees it the way she can sometimes see a repair before the first cut -- the whole sequence laid out, step by step, finished in her head while her hands are still outside the chest.
+For one hour she can see all the way to the end: the station, the coupling port, the controller reading *Transmission initiated*, the counter running, the data going out to forty nodes.
+
+She sees it the way she can sometimes see a repair before the first cut -- the whole sequence laid out, step by step, finished in her head while her hands are still outside the chest.
 
 It's a clinical habit. It's also wishful thinking.
 
@@ -1328,15 +1568,15 @@ He looks at her. He doesn't argue. "Tonight," he says. "We need to be in positio
 
 She nods. She picks up her handset.
 
-## Triangulation
-
 She should have run the signal check on the first day. She runs it now.
 
 It's 1400. They plan to move in fourteen hours. Chit is asleep. The scrambler stack sits in front of her and the frequency analyzer is running, so she checks the device's outgoing signal -- the broadcast range, the power, the shape of the dispersion. Take the system apart, list what it does, then decide how to handle it. It's the only way she knows how to work.
 
 The problem is in the dispersion pattern.
 
-The Nova-7 was built to be found. It broadcasts wide, a monitoring device announcing itself to any receiver in range. Under the skin, where it's meant to sit, that broad face points out through the body's surface. In Renata's chest it points sideways -- and the scrambler stack only ever caught part of it. She works the numbers on paper, with a pen, before she wakes him, because she wants to be sure before she says it out loud: the leak clears the building, and a narrowband receiver fed three days of it doesn't just know someone is broadcasting. It knows the address. This one.
+The Nova-7 was built to be found. It broadcasts wide, a monitoring device announcing itself to any receiver in range. Under the skin, where it's meant to sit, that broad face points out through the body's surface. In Renata's chest it points sideways -- and the scrambler stack only ever caught part of it.
+
+She works the numbers on paper, with a pen, before she wakes him, because she wants to be sure before she says it out loud: the leak clears the building, and a narrowband receiver fed three days of it doesn't just know someone is broadcasting. It knows the address. This one.
 
 She looks at the paper a long moment.
 
@@ -1350,9 +1590,9 @@ He reads the analysis in forty seconds.
 
 "How long have we been trackable to this spot?" she asks.
 
-"Since we got here. Three days." He's already moving, packing the equipment fast and clean, the way a man packs when he's had to clear out of a room in a hurry before. "We move now. Not tonight. Now."
+"Since we got here. Three days." He's already moving, packing the equipment fast and clean. "We move now. Not tonight. Now."
 
-"We can't reach the monitoring station in daylight."
+"We can't reach the monitoring station in daylight?"
 
 "I know. We're not going to the station. We're going to the tunnels. Deep enough down, the ferrocement scatters the signal -- narrowband tracking dies at anything under two kilometers." He keeps packing. "But we have to get there before they finish the last step and pin us."
 
@@ -1362,15 +1602,21 @@ She packs the device. She's careful with it, wraps it in the dampening cloth fro
 
 "I don't know. Assume not much."
 
-They leave at 1427. She takes the medical bag with the device inside. Chit takes the decryption gear and the frequency analyzer. They go out the freight access into the Austin freight corridor, twenty-six meters up -- below the line where corpo jurisdiction starts, which is why people who need to move unseen have always moved here.
+They leave at 1427. She takes the medical bag with the device inside. Chit takes the decryption gear.
 
-They walk. They don't run. Running draws eyes in the corridor at mid-afternoon, and being seen is the one thing they can't afford. They walk like people headed somewhere ordinary, and she carries the bag against her hip and feels the device in it, steady, still broadcasting.
+They go out the freight access into the Austin freight corridor, twenty-six meters up -- below the line where corpo jurisdiction starts, which is why people who need to move unseen have always moved here.
+
+They walk. They don't run. Running draws eyes in the corridor at mid-afternoon, and being seen is the one thing they can't afford.
+
+They walk like people headed somewhere ordinary, and she carries the bag against her hip and feels the device in it, steady, still broadcasting.
 
 At 1441, a hundred and forty meters from the tunnel access, her handset catches the Scalpel operational frequency. She's been listening to it on a passive scan since the second day. She doesn't stop walking. She listens. Twelve seconds to confirm it: breach team, target fixed to the building, coming in from the south.
 
 She looks at Chit. He heard it too. His face doesn't change.
 
-They reach the tunnel access at the northern freight junction at 1443, and then she hears the first breach charge back toward Chit's building. One block. They made it by one block -- three days of prep, the triangulation math she ran fourteen hours too late, and the fact that she walks fast when she has to.
+They reach the tunnel access at the northern freight junction at 1443, and then she hears the first breach charge back toward Chit's building.
+
+One block. They made it by one block -- three days of prep, the triangulation math she ran fourteen hours too late, and the fact that she walks fast when she has to.
 
 She does not stop walking.
 
@@ -1378,13 +1624,23 @@ She watches it in the tunnel, on Chit's screen, while he works on hiding the sig
 
 The timestamp reads 2223-04-07. For the first time in the fragments, Renata is in daylight.
 
-She's sitting in a chair near a window, real light coming through the frame -- not a ventilation slot this time, an actual window. A low gray-zone building in a district Stash doesn't know. Renata looks less thin than in the third fragment. She looks tired, but settled tired, not sharp. Like someone who has finally stopped moving and sat down, and found that sitting down didn't bring the relief she expected. Her hair is shorter than before. Her hands rest on her knees.
+She's sitting in a chair near a window, real light coming through the frame -- not a ventilation slot this time, an actual window.
 
-"I found the clinic records," she says. She doesn't say whose. Stash knows whose. "I spent six months with them before I could decide whether to move forward."
+A low gray-zone building in a district Stash doesn't know. Renata looks less thin than in the third fragment. She looks tired, but settled tired, not sharp. Her hair is shorter than before. Her hands rest on her knees.
+
+"I found the clinic records," she says. She doesn't say whose. Stash knows whose.
+
+"I spent six months with them before I could decide whether to move forward."
 
 She pauses.
 
-"I already knew about her contract. I knew about the 2211 rotation. What I didn't know was who she became afterward. I didn't know about the clinic. I didn't know she stopped contract work in 2214 -- the same year I left. I didn't know she went back to the Gray Zones." She pauses again. "The clinic records aren't public. I got them through a health cooperative database she's listed with as a provider. There's no patient information in them. Just her licensing, her continuing education credits, her equipment certifications, and the collective endorsements she's earned." A pause. "Seven endorsements in six years. The endorsement form asks members to describe the practitioner's relationship to the community. The words they used, I have never once read in a corporate medical review." Another pause. "I read them several times."
+"I already knew about her contract. I knew about the 2211 rotation. What I didn't know was who she became afterward. I didn't know about the clinic. I didn't know she stopped contract work in 2214 -- the same year I left. I didn't know she went back to the Gray Zones." She pauses again.
+
+"The clinic records aren't public. I got them through a health cooperative database she's listed with as a provider. There's no patient information in them. Just her licensing, her continuing education credits, her equipment certifications, and the collective endorsements she's earned." A pause.
+
+"Seven endorsements in six years. The endorsement form asks members to describe the practitioner's relationship to the community. The words they used, I have never once read in a corporate medical review." Another pause.
+
+"I read them several times."
 
 She looks at the camera.
 
@@ -1392,15 +1648,23 @@ She looks at the camera.
 
 She's quiet for a moment.
 
-"I still don't know if it matters. I mean that honestly. I don't know whether the question of whether she knew has any bearing on whether I have the right to ask her to carry this. I've thought about it for six months and I don't have an answer." A pause. "What I do know is that she can carry it. Whatever it costs her -- and it will cost her, I know what's in the records -- she can do it. That's not the same as knowing it's right to ask." She pauses. "I'm not sure it's right. I'm going to do it anyway."
+"I still don't know if it matters. I mean that honestly. I don't know whether the question of whether she knew has any bearing on whether I have the right to ask her to carry this. I've thought about it for six months and I don't have an answer." A pause.
+
+"What I do know is that she can carry it. Whatever it costs her -- and it will cost her, I know what's in the records -- she can do it. That's not the same as knowing it's right to ask." She pauses.
+
+"I'm not sure it's right. I'm going to do it anyway."
 
 She looks at the camera for a long moment.
 
-"She lives in a two-room unit above the clinic," she says. "I walked past the building four times before I stopped. I didn't go in." Another pause. "I'm not ready yet. I'm going to be ready."
+"She lives in a two-room unit above the clinic," she says. "I walked past the building four times before I stopped. I didn't go in."
+
+Another pause. "I'm not ready yet. I'm going to be ready."
 
 She reaches forward. The frame goes dark.
 
-Stash closes the screen. The tunnel is low and cold and smells of old ferrocement and water. She doesn't say anything.
+Stash closes the screen. The tunnel is low and cold and smells of old ferrocement and water.
+
+She doesn't say anything.
 
 Chit has the signal damped under ten percent, using a setup that makes him hold one component in place by hand. He's holding it. He doesn't say anything either.
 
@@ -1424,7 +1688,7 @@ They reach the maintenance junction at 1621. They've been there thirty-nine minu
 
 Before they went under, he set a passive camera at the freight tunnel entrance -- a small commercial lens dressed up as building hardware, tied to his neuretics. The alert means motion. He pulls up the feed.
 
-Four people in Scalpel operational gray. Behind them, one man not in gray: dark jacket, moving without a wasted motion, holding himself in like a man who conserves everything, even the space he takes up. He isn't large. The authority in him has nothing to do with size.
+Four people in Scalpel operational gray. Behind them, one man not in gray: dark jacket, moving without a wasted motion. He isn't large.
 
 "That's Brauer," Chit says. He says it the way he says a name from his files -- flat, like the name explains itself.
 
@@ -1440,11 +1704,15 @@ But Chit's van is parked two blocks from the freight entrance. She realizes it t
 
 "Yes."
 
-On the feed, Brauer's team works the surface, scanning the freight corridor, not the tunnel. The van is on the surface. Brauer moves like a man who's done this before in worse conditions -- no wasted gestures, never checking behind him, because he's already accounted for whatever is behind him. He looks forward, where the work is. One operative runs a scanner off his left hip, sweeping it across the building faces as they go.
+On the feed, Brauer's team works the surface, scanning the freight corridor, not the tunnel. The van is on the surface. Brauer moves like a man who's done this before in worse conditions -- no wasted gestures, never checking behind him, because he's already accounted for whatever is behind him.
+
+He looks forward, where the work is. One operative runs a scanner off his left hip, sweeping it across the building faces as they go.
 
 They find the van at 1714. It's methodical: one man on the scanner, three setting a perimeter, Brauer at the back. The scanner reads the van's shell, then the interior through the glass, and then they open it and climb in.
 
-Chit watches them take the frequency analyzer he left inside. The equipment case he left inside. He watches Brauer stand at the open door, look at what's left, and look out toward the freight junction. He watches his own gear disappear with the face of a man taking an acceptable loss. Not the one he wanted. The one he can live with.
+Chit watches them take the frequency analyzer he left inside. The equipment case he left inside. He watches Brauer stand at the open door, look at what's left, and look out toward the freight junction.
+
+He watches his own gear disappear with the face of a man taking an acceptable loss. Not the one he wanted. The one he can live with.
 
 Then the team turns toward the freight tunnel entrance.
 
@@ -1458,7 +1726,9 @@ Then the team turns toward the freight tunnel entrance.
 
 She picks up the medical bag and follows. Their steps are careful on the wet ferrocement. Somewhere behind them, faint, she can hear the Scalpel team entering the freight tunnel at the eastern mouth.
 
-At the head of the west corridor he stops and puts her in front of him. "West exit, then a ladder, four meters up, comes out in Garfield. Take the left where it forks. Go." She doesn't argue. There's no time, and his voice leaves no room.
+At the head of the west corridor he stops and puts her in front of him. "West exit, then a ladder, four meters up, comes out in Garfield. Take the left where it forks. Go." She doesn't argue.
+
+There's no time, and his voice leaves no room.
 
 She goes. Fifty meters. A junction she's never been through. The left fork. A forty-meter straight run, and at the end a ladder climbing four meters to a surface hatch.
 
@@ -1480,45 +1750,65 @@ The west exit was the right call. Knowing that changes nothing about the rest.
 
 She goes.
 
-## Running
+The first clinic she ever worked in is a ground-floor unit in Austin, behind the ferrocement wave that marks the old Block War line.
 
-The first clinic she ever worked in is a ground-floor unit in Austin, behind the ferrocement wave that marks the old Block War line. It's been empty since 2218. She knows because she's been paying the building authority a courtesy fee on it for three years -- Φ40 a year, to a processing address at the Austin building cooperative -- for reasons she has never made herself look at straight.
+It's been empty since 2218.
 
-It's locked with a standard key system, and she has the key. She's had it since she stopped working here in 2215. No one asked for it back. She didn't ask whether she should return it. Three years ago she started paying the fee, and now the key opens a two-room unit that has sat empty for seven years.
+She knows because she's been paying the building authority a courtesy fee on it for three years -- Φ40 a year, to a processing address at the Austin building cooperative -- for reasons she has never made herself look at straight.
+
+It's locked with a standard key system, and she has the key. She's had it since she stopped working here in 2218. No one asked for it back. She didn't ask whether she should return it. Three years ago she started paying the fee, and now the key opens a two-room unit that has sat empty for seven years.
 
 Inside it's dark. It smells of old ferrocement and the flat non-smell of a room with no air moving through it. The AR layer died years ago -- the Waxwing markers and the supply-drawer tags went dark when the lease lapsed in 2218, and the overlay panels are blank rectangles with red status lights. The exam room still has its table; it was too heavy to be worth moving. The shelving units are still on the wall. The drawers are empty. The floor is clean.
 
 She sits on the exam table.
 
-It's 1842. She's been moving for four hours. Chit was taken at 1645 and she didn't go back for him, and now she's in an empty clinic she pays Φ40 a year to keep a key to, for reasons that are getting clearer than they have ever been. She's alone. The device is in the medical bag beside her on the table.
+It's 1842. She's been moving for four hours. Chit was taken at 1645 and she didn't go back for him, and now she's in an empty clinic she pays Φ40 a year to keep a key to. She's alone. The device is in the medical bag beside her on the table.
 
-She thinks about why she kept the key. She's turned it over for three years and never landed anywhere: she kept it because giving it back would have meant admitting she was done with this part of her life, and she wasn't ready to admit that, so she held the key and paid the fee and called it keeping an option open. This is the first time she's used the option. It took a night she could never have pictured to make the option worth anything.
+She thinks about why she kept the key. She's turned it over for three years and never landed anywhere: she kept it because giving it back would have meant admitting she was done with this part of her life, and she wasn't ready to admit that, so she held the key and paid the fee and called it keeping an option open.
+
+This is the first time she's used the option. It took a night she could never have pictured to make the option worth anything.
 
 She's cold. Her hands are steady -- she checks this on purpose, the way she always does when she's afraid, because her hands are her one real tool and their state matters. Her breathing is even. Keeping it even costs a small effort she doesn't usually have to spend.
 
-She's afraid in the full, systematic way she has been exactly twice before: once in a surgery that outran everything she had, and once on a night in Bloom Quarter five years ago that she doesn't talk about. It has the same shape both times -- a complete, clear read on the danger, on how little she can do about it, and the flat fact that she has to keep going anyway.
+She's afraid in the full, systematic way she has been exactly twice before: once in a surgery that outran everything she had, and once on a night in Bloom Quarter five years ago that she doesn't talk about.
+
+It has the same shape both times -- a complete, clear read on the danger, on how little she can do about it, and the flat fact that she has to keep going anyway.
 
 She opens the medical bag and counts what's in it. She always counts when she's scared.
 
 One modified containment unit, holding the device. One field surgical kit: scalpel, forceps, suture, local anesthetic, irrigation, gloves. One handset, battery at 23%, no charger. Φ43 in chips. One pen.
 
-She looks at the list. Φ43, a pen, a handset at 23%, a surgical kit, and the most dangerous piece of medical evidence in GLMZ. This is what she has. She needs to broadcast the thing, and she can't do it from here.
+She looks at the list. Φ43, a pen, a handset at 23%, a surgical kit, and the most dangerous piece of medical evidence in GLMZ. This is what she has.
 
-She opens Chit's contact. She sends a message instead of calling -- a call costs battery, and if he's in a room with Scalpel, a call is worse than silence: *Are you safe? Can you call?*
+She needs to broadcast the thing, and she can't do it from here.
+
+She opens Chit's contact. She sends a message instead of calling -- a call costs battery, and if he's in a room with Scalpel, a call is worse than silence:
+
+*Are you safe? Can you call?*
 
 No answer.
 
-She sends the same to Femi: *Still at the clinic?*
+She sends the same to Femi:
+
+*Still at the clinic?*
 
 Three minutes.
 
 *Yes. What happened? I saw the Scalpel sweep on the Garfield feeds. Are you ok?*
 
-She stares at it. Femi has been watching the Garfield feeds. He didn't go where she sent him. She thinks about ordering him out of this -- go somewhere safe, stay clear of whatever comes next. Then she thinks about what her orders have produced so far. He was already in the maintenance tunnel when she got there. He's been in the tunnels since. He has the building authority contacts and the power pack.
+She stares at it. Femi has been watching the Garfield feeds. He didn't go where she sent him.
 
-She sends: *Don't go anywhere. I'll explain tomorrow.*
+She thinks about ordering him out of this -- go somewhere safe, stay clear of whatever comes next. Then she thinks about what her orders have produced so far.
 
-His answer is immediate: *Ok.*
+He was already in the maintenance tunnel when she got there. He's been in the tunnels since. He has the building authority contacts and the power pack.
+
+She sends:
+
+*Don't go anywhere. I'll explain tomorrow.*
+
+His answer is immediate:
+
+*Ok.*
 
 She puts the handset down. She sits in the dark exam room, very afraid, and there's no one here to see it -- which means she doesn't have to perform being calm, only stay calm. That's easier and harder at once.
 
@@ -1526,7 +1816,9 @@ She sits with it for eleven minutes. She breathes. She counts the shelf edges in
 
 Then: the monitoring station. She has to get there, with the device. She can't do it alone, and she can't do it on Φ43 and a pen.
 
-She looks at Femi's last message. *Ok.*
+She looks at Femi's last message.
+
+*Ok.*
 
 She closes her eyes for a moment.
 
@@ -1534,15 +1826,17 @@ Then she picks up the handset.
 
 Lydia calls at 2013.
 
-She almost doesn't pick up. She's been in the empty clinic ninety minutes and her handset is at 14%. She's been treating the battery as a fixed amount she has to spend on purpose, so every call is a cost she weighs first. A call from an NSB number, tonight, could go several ways, and only some of them help her.
+She almost doesn't pick up. She's been in the empty clinic ninety minutes and her handset is at 14%. She's been treating the battery as a fixed amount she has to spend on purpose, so every call is a cost she weighs first.
+
+A call from an NCID number, tonight, could go several ways, and only some of them help her.
 
 She answers.
 
 "Dr. Adeyemi," Lydia says. "I know Chit was taken."
 
-Stash says nothing. The clinic is dark. She's in the exam room she worked in for twelve years, in the chair beside the table that stayed because it was too heavy to move, and the window shows the Austin north grid the way it always has: ferrocement, infrastructure, the faint light of the Low.
+Stash says nothing. The clinic is dark. She's in the exam room she worked in for twelve years, on the table that stayed because it was too heavy to move, and the window shows the Austin north grid the way it always has: ferrocement, infrastructure, the faint light of the Low.
 
-"Scalpel took him. Not NSB," Lydia says. "Scalpel and NSB are running separately on this. Different orders, no coordination." A pause. "That matters, because it means I know things about the Scalpel operation that Scalpel doesn't know I know. And I know things about your situation that Scalpel is still trying to work out."
+"Scalpel took him. Not NCID," Lydia says. "Scalpel and NCID are running separately on this. Different orders, no coordination." A pause. "That matters, because it means I know things about the Scalpel operation that Scalpel doesn't know I know. And I know things about your situation that Scalpel is still trying to work out."
 
 "Why are you telling me this?"
 
@@ -1570,7 +1864,7 @@ Stash is quiet. She thinks about Lydia's math: 1,200 alive because of the govern
 
 Neither of them speaks. Outside, the Austin north grid holds its quiet: machine sounds, nothing human.
 
-"The monitoring station," Stash says. "How do I get in?"
+"The monitoring station," Stash asks. "How do I get in?"
 
 "Commercial key system. Standard Austin building cooperative lock. I don't have the override. Someone who works Gray Zone infrastructure might."
 
@@ -1580,7 +1874,7 @@ She thinks about Femi. His tunnel contacts. The building authority codes those c
 
 "I know." A pause. "I won't be there when you arrive. I can't be -- not officially, not without leaving a record that ties me to this. But I'll know you went." A pause. "I want you to know that."
 
-Stash sits with it: an NSB agent wanting her to know they'll know she went, when what she's about to do is the exact thing the NSB has been working to stop.
+Stash sits with it: an NCID agent wanting her to know they'll know she went, when what she's about to do is the exact thing the NCID has been working to stop.
 
 "I understand," she says.
 
@@ -1594,27 +1888,55 @@ She picks up the handset.
 
 She plays it at 0034, in the maintenance junction under the Austin freight corridor, while Femi sleeps against the wall with his jacket over his face.
 
-She hasn't told him what's on the device. She told him she has to reach the monitoring station at the north end of Austin, that she needs the tunnel route and the building authority code, and that she can't do it alone. She didn't tell him why. He asked once, thirty minutes into the freight tunnel. She said she'd explain when it was done. He said okay, and he hasn't asked again.
+She hasn't told him what's on the device. She told him she has to reach the monitoring station at the north end of Austin, that she needs the tunnel route and the building authority code, and that she can't do it alone. She didn't tell him why.
+
+He asked once, thirty minutes into the freight tunnel. She said she'd explain when it was done. He said okay, and he hasn't asked again.
 
 He's asleep now. She's been awake forty-one hours. She holds the device in its damped case, turns the screen to its lowest brightness, and watches Fragment Five in the dark.
 
 Renata, 2224. The timestamp reads 2224-11-03.
 
-She looks like herself -- not the 2218 version, not the 2221 version, but the woman who walked into the Unit. The same gray in her hair, the same short cut. Thinner than in the 2223 fragment, but not by much. She's at a table again, in a bare room, with the same stillness in her body she has in all of them.
+She looks like herself -- not the 2218 version, not the 2221 version, but the woman who walked into the Unit. The same gray in her hair, the same short cut. Thinner than in the 2223 fragment, but not by much.
+
+She's at a table again, in a bare room, with the same stillness in her body she has in all of them.
 
 "I've stopped doubting," she says. "I want to record that, because the earlier fragments show the doubt, and I don't want the doubt to be the last thing."
 
 She pauses.
 
-"I know about the killswitch. I've known since 2221. It's a standard feature on Nova-7 courier units -- a contained charge, meant to destroy the data if a Sable Medical security signal reaches the housing. I've disabled the part that destroys the data. I have not disabled the charge itself." She pauses. "The charge fires when the housing picks up a Sable security signal. In a clinical setting, with the equipment Sable uses to manage its devices, that signal is unavoidable." Another pause. "I'm going to a clinic Sable doesn't manage. The equipment there won't put out a Sable signal. The charge should not fire."
+"I know about the killswitch. I've known since 2221. It's a standard feature on Nova-7 courier units -- a contained charge, meant to destroy the data if a Sable Medical security signal reaches the housing. I've disabled the part that destroys the data. I have not disabled the charge itself."
+
+She pauses.
+
+"The charge fires when the housing picks up a Sable security signal. In a clinical setting, with the equipment Sable uses to manage its devices, that signal is unavoidable."
+
+Another pause.
+
+"I'm going to a clinic Sable doesn't manage. The equipment there won't put out a Sable signal. The charge should not fire."
 
 She looks at the camera.
 
-"Should not," she says. "I've run the analysis six times. I'm ninety-one percent sure the charge won't fire if I reach the right clinic. I'm nine percent unsure." She's quiet a moment. "I've decided ninety-one percent is enough. And I've decided the nine percent is a risk I'm accepting, not one I'm placing on someone else." A pause. "The charge fires inside the chest. The surgeon at the clinic won't be in the blast radius. It's contained." Another pause. "I've done the math."
+"Should not," she says. "I've run the analysis six times. I'm ninety-one percent sure the charge won't fire if I reach the right clinic. I'm nine percent unsure."
+
+She's quiet a moment.
+
+"I've decided ninety-one percent is enough. And I've decided the nine percent is a risk I'm accepting, not one I'm placing on someone else."
+
+A pause.
+
+"The charge fires inside the chest. The surgeon at the clinic won't be in the blast radius. It's contained."
+
+Another pause.
+
+"I've done the math."
 
 She looks at the camera for a long moment.
 
-"I'm not doing this because I'm brave," she says. "I'm doing it because I've run out of alternatives, and because I'm right. Both of those are true. I haven't made some peace with how this ends. I'm doing it because it's the right thing, and I have no better option, and I've decided those reasons together are enough." She pauses. "I hope they're enough."
+"I'm not doing this because I'm brave," she says. "I'm doing it because I've run out of alternatives, and because I'm right. Both of those are true. I haven't made some peace with how this ends. I'm doing it because it's the right thing, and I have no better option, and I've decided those reasons together are enough."
+
+She pauses.
+
+"I hope they're enough."
 
 She looks into the camera. Something in her face shifts -- not fear. Closer to acknowledgment. The look of someone who has faced the whole of what she's about to do head-on instead of sideways.
 
@@ -1624,11 +1946,13 @@ Then she smiles. It's small, and it's real, and it isn't a performance.
 
 Stash closes the screen.
 
-She sits in the junction with the device in her hands and Femi asleep against the wall and one more fragment she hasn't watched yet. She thinks about a woman who ran the numbers six times, decided nine percent was a risk worth taking, and walked into her clinic with a hemorrhage, a plan, and Φ43 worth of time.
+She sits in the junction with the device in her hands and Femi asleep against the wall and one more fragment she hasn't watched yet.
+
+She thinks about a woman who ran the numbers six times, decided nine percent was a risk worth taking, and walked into her clinic with a hemorrhage, a plan, and Φ43 worth of time.
 
 She thinks about the smile. She hadn't expected it. The first four fragments were clinical and precise -- a person recording a process she didn't expect to enjoy. The smile is something else. It's the face of someone who has gotten this far -- eight years of work, six years of doubt, the device finished and tested -- and who, at the last, let herself feel that she was about to do something right.
 
-"I'm right," she'd said, and smiled. And she was. Nine percent unsure, ninety-one percent right, and she walked through the door.
+"I'm right," she'd said, and smiled. And she was right to try. Nine percent unsure, ninety-one percent right, and she walked through the door.
 
 Stash puts the device back in the containment. She closes her eyes. She doesn't sleep. She breathes the cold ferrocement air and thinks about being twenty-three and signing the forms they handed her, and being thirty-nine in a tunnel with one fragment left -- two facts a woman spent eleven years making sure would connect.
 
@@ -1638,13 +1962,15 @@ She closes her eyes and breathes and waits.
 
 She sent him home, and he didn't go.
 
-She knows because he's awake at 0112, sitting up against the wall with his jacket folded under him, watching her in the low light. He has the look of someone who's been awake a while, sitting with what he already knows, waiting for the conversation they're about to have.
+She knows because he's awake at 0112, sitting up against the wall with his jacket folded under him, watching her in the low light.
+
+He has the look of someone who's been awake a while, sitting with what he already knows, waiting for the conversation they're about to have.
 
 "You were playing something," he says.
 
 "A video."
 
-He nods. He doesn't ask what video. He doesn't ask why she's in a tunnel at one in the morning with a medical bag and a surgical kit and a handset running off a power pack. He doesn't ask because he's been down here four days and he's already read the situation.
+He nods. He doesn't ask what video. He doesn't ask why she's in a tunnel at one in the morning with a medical bag and a surgical kit and a handset she's rationing down to nothing. He doesn't ask because he's been down here four days and he's already read the situation.
 
 She looks at him. Seventeen years old. He was supposed to be on a supply run to Bloom Quarter. Instead he's against a ferrocement wall in the sub-Low at one in the morning, the static discharge rod laid across his knees at the angle of someone who set it there on purpose and knows what it's for.
 
@@ -1654,19 +1980,33 @@ She looks at him. Seventeen years old. He was supposed to be on a supply run to 
 
 "Before that."
 
-He looks at her steadily -- the way he looks at a supply count that won't reconcile, patient, not stopping until the numbers come right. "I went to the tunnels. After you sent me off. I've been watching the exterior camera on my handset. You gave me feed access six months ago. I don't think you remembered."
+He looks at her steadily -- the way he looks at a supply count that won't reconcile, patient, not stopping until the numbers come right.
+
+"I went to the tunnels. After you sent me off. I've been watching the exterior camera on my handset. You gave me feed access six months ago. I don't think you remembered."
 
 She didn't. She gave it to him in case he had to get into the Unit while she was operating. She wrote the code down, handed it over, and never thought about it again.
 
-"I saw the Scalpel sweep," he says. "Then you messaged me to stay at the clinic, so I went to the clinic. Rudeboi was gone. Augustina and Marco were there. Marco helped me with the inventory and I waited." A pause. "Then Lydia's name came up on the Garfield feeds -- tied to an NSB field action in Austin. So I figured I should find you."
+"I saw the Scalpel sweep," he says. "Then you messaged me to stay at the clinic, so I went to the clinic. Rudeboi was gone. Augustina and Marco were there. Marco helped me with the inventory and I waited."
+
+A pause.
+
+"Then Lydia's name came up on the Garfield feeds -- tied to an NCID field action in Austin. So I figured I should find you."
 
 "How did you find me?"
 
-"You told me about this clinic once. That you started here, that it was your first one, that the building still had your key because nobody asked for it back. I figured if you were in Austin and in trouble and on your own, this is where you'd go." A pause. "You were here."
+"You told me about this clinic once. That you started here, that it was your first one, that the building still had your key because nobody asked for it back. I figured if you were in Austin and in trouble and on your own, this is where you'd go."
 
-She sits with that. How accurately he reads her. Three years of paying attention -- including the things she says without meaning to, the details that leak out of a person who doesn't know she's being watched. He knew her well enough to know where she'd go when she was alone and cornered. He went there.
+A pause.
 
-She thinks about the supply list she handed him. The Φ100. The careful lie about the ventilation crack. She'd told herself that protecting him meant keeping him away, that keeping him away meant lying to him, and that the lie was right because he's seventeen and she's the adult here.
+"You were here."
+
+She sits with that. How accurately he reads her. Three years of paying attention -- including the things she says without meaning to, the details that leak out of a person who doesn't know she's being watched.
+
+He knew her well enough to know where she'd go when she was alone and cornered. He went there.
+
+She thinks about the supply list she handed him. The Φ100. The careful lie about the ventilation crack.
+
+She'd told herself that protecting him meant keeping him away, that keeping him away meant lying to him, and that the lie was right because he's seventeen and she's the adult here.
 
 She looks at him: seventeen, awake in the sub-Low at 0112 with a discharge rod, a power pack, and four days' worth of tunnel map in his head. She thinks about what "the adult here" means when the adult's plan can't be finished without the seventeen-year-old's skill.
 
@@ -1674,13 +2014,15 @@ She looks at him: seventeen, awake in the sub-Low at 0112 with a discharge rod, 
 
 "What do you need?" He says it the way he says it in the surgical suite -- clear, direct, no show, just the offer of whatever he's got.
 
-"I need to reach the monitoring station at the north end of the Austin axis. Tonight. I've got about two hours and twenty minutes before Scalpel corrects its perimeter to where I actually am."
+"I need to reach the monitoring station at the north end of the Austin axis. Tonight. I've got less than an hour before Scalpel corrects its perimeter to where I actually am."
 
 "What's at the monitoring station?"
 
 "The right transmitter. For the device I'm carrying. If I get it there, it broadcasts everything on it to forty nodes at once. Forty nodes covering all of Austin and most of Garfield."
 
-He nods slowly. "What's on the device?"
+He nods slowly.
+
+"What's on the device?"
 
 She looks at him. The records. The four hundred and twenty-eight. The sixty-seven marked NR. Her own initials in the post-op follow-up column. Renata looking into the camera, saying her name.
 
@@ -1690,11 +2032,15 @@ He takes that in. He accepts it.
 
 "The monitoring station's an Austin building cooperative property," he says. "Standard key system. My contacts use the building authority emergency access codes for the cooperative buildings." He pulls out his handset. "I can get the code."
 
-She lets out a breath. "How long?"
+She lets out a breath.
+
+"How long?"
 
 "Twenty minutes to send it. Maybe forty for an answer." He's already typing. "We can move while we wait."
 
-She stands and picks up the medical bag. "I'll explain all of it when it's done."
+She stands and picks up the medical bag.
+
+"I'll explain all of it when it's done."
 
 "I know."
 
@@ -1704,27 +2050,41 @@ He looks up.
 
 "You should know it's not safe. The next three hours are genuinely not safe. I want you to understand that before we move."
 
-He looks at her a moment. "I know. I've been in the tunnels four days. I understand not safe." He stands and picks up the rod and the pack. "You're a better field surgeon than me. I'm better in the tunnels than you. Together we're better at this than either of us alone."
+He looks at her a moment.
+
+"I know. I've been in the tunnels four days. I understand not safe." He stands and picks up the rod and the pack. "You're a better field surgeon than me. I'm better in the tunnels than you. Together we're better at this than either of us alone."
 
 He says it like a clinical finding that happens to be correct.
 
-She nods once. "Then let's go," she says.
+She nods once.
 
-## Chit's Call
+"Then let's go," she says.
 
 Her handset buzzes at 0227.
 
-She's thirty minutes into the route to the monitoring station, working through a stretch of half-collapsed ferrocement Femi has crossed eleven times and she's crossing for the first time. She checks the display. Chit.
+She's thirty minutes into the route to the monitoring station, working through a stretch of half-collapsed ferrocement Femi has crossed eleven times and she's crossing for the first time. She checks the display.
 
-She puts it to her ear. The tunnel is quiet enough that her own breathing is the loudest thing in it. Overhead the ferrocement drips at odd intervals -- a slow mineral seep that's been working through the stone for years, leaving pale streaks down the dark walls. A few meters ahead, Femi has stopped and is watching her from the shadow, close enough to hear without seeming to.
+Chit.
+
+She puts it to her ear. The tunnel is quiet enough that her own breathing is the loudest thing in it. Overhead the ferrocement drips at odd intervals -- a slow mineral seep that's been working through the stone for years, leaving pale streaks down the dark walls.
+
+A few meters ahead, Femi has stopped and is watching her from the shadow, close enough to hear without seeming to.
 
 Chit doesn't say hello. He gives her coordinates.
 
-He uses the zone-grid notation Gray Zone people use to share a location -- good to about fifty meters in the Austin grid. He says it once, precise, and then he names the old Austin community clinic to the south. His voice is level. There's no stress in it she can read, nothing to tell her whether the room around him has changed, whether he's alone, whether someone is listening.
+He uses the zone-grid notation Gray Zone people use to share a location -- good to about fifty meters in the Austin grid.
 
-She knows the place he's named. She also knows the coordinates are wrong by four blocks -- because she was standing at the real spot three hours ago, and it is not where he's saying. The clinic he names closed in 2219; Renata mentioned it once, in passing, as somewhere she'd worked before the relocation camps.
+He says it once, precise, and then he names the old Austin community clinic to the south.
 
-He's feeding Scalpel a false location. And he's telling her he's doing it. He's using a reference anyone outside Austin would take as accurate, and that she can hear as false only because she was there. He's built it so she has to catch both things at once -- the lie and the message inside the lie -- and give away neither.
+His voice is level. There's no stress in it she can read, nothing to tell her whether the room around him has changed, whether he's alone, whether someone is listening.
+
+She knows the place he's named. She also knows the coordinates are wrong by four blocks -- because she was standing at the real spot three hours ago, and it is not where he's saying.
+
+The clinic he names closed in 2222; Renata mentioned it once, in passing, as somewhere she'd worked before the relocation camps.
+
+He's feeding Scalpel a false location. And he's telling her he's doing it. He's using a reference anyone outside Austin would take as accurate, and that she can hear as false only because she was there.
+
+He's built it so she has to catch both things at once -- the lie and the message inside the lie -- and give away neither.
 
 "Got it," she says.
 
@@ -1742,13 +2102,21 @@ She thinks about the cost of it. Scalpel has him in a room. They have reasons to
 
 He did it without asking her. Knowing she couldn't thank him for it, couldn't plan it with him, couldn't do anything but spend the time he'd bought.
 
-Eleven years she's worked with Chit, and in eleven years she has never asked him to do anything that would put him in front of people with leverage. She was careful about that, on purpose. The work they did together stayed at a level where the cost landed on her. He's just stepped outside that level.
+Eleven years she's worked with Chit, and in eleven years she has never asked him to do anything that would put him in front of people with leverage. She was careful about that, on purpose.
 
-At 0241 her handset buzzes again. Femi, ahead of her, reading a response on his own handset, turns back. "Code came through," he says. "Austin building cooperative emergency access. Six digits."
+The work they did together stayed at a level where the cost landed on her. He's just stepped outside that level.
+
+At 0241 her handset buzzes again. Femi, ahead of her, reading a response on his own handset, turns back.
+
+"Code came through," he says.
+
+"Austin building cooperative emergency access. Six digits."
 
 She nods. Six digits. She has it.
 
-She thinks about Renata, in a fragment recorded in 2221, calling the tunnel access her second way out. Renata knew this route was here -- not the code, which has rotated many times since, but the route itself, the cooperative building, the fact that someone with the right contacts could pull a six-digit key. Eleven years of preparation built the device in her bag, and the monitoring station was always where it was meant to go.
+She thinks about Renata, in a fragment recorded in 2221, calling the tunnel access her second way out. Renata knew this route was here -- not the code, which has rotated many times since, but the route itself, the cooperative building, the fact that someone with the right contacts could pull a six-digit key.
+
+Eleven years of preparation built the device in her bag, and the monitoring station was always where it was meant to go.
 
 They keep moving.
 
@@ -1764,15 +2132,19 @@ He looks at her. "That adds twenty minutes."
 
 He doesn't ask why. He takes the junction east. It's one of the things about him she hasn't given enough credit until this week: he'll follow a direction without needing the reason first.
 
-The service junction comes out under a loading corridor at ground level. There's a freight elevator there, locked out of service for seven years. She knows the override -- she learned it when the elevator still ran, in 2218, her last year here. She enters it. The doors open.
+The service junction comes out under a loading corridor at ground level. There's a freight elevator there, locked out of service for three years. She knows the override -- she learned it when the elevator still ran, in 2222, her last year here.
+
+She enters it. The doors open.
 
 She goes up alone. She tells Femi to wait at the junction. What she's about to do, she needs to do without explaining it to anyone.
 
-The clinic is on the third floor. The building was mixed residential-commercial until the 2214 rezoning pushed the commercial tenants down to the lower floors. The clinic took the third floor because the space was there and the lease was cheap, and because the exam room windows showed a slice of the Austin west grid that, on clear days, took in the Lake far to the north. The room faces west. She used to notice the light.
+The clinic is on the third floor. The building was mixed residential-commercial until the 2214 rezoning pushed the commercial tenants down to the lower floors. The clinic took the third floor because the space was there and the lease was cheap, and because the exam room windows showed a slice of the Austin west grid that, on clear days, took in the Lake far to the north.
+
+The room faces west. She used to notice the light.
 
 The elevator door opens into what used to be the back of the clinic's supply room. It's empty; it's been empty since 2222. She crosses it into the main space.
 
-Seven years. The exam table is still here -- the same as the table in the first clinic she went to tonight, and for the same reason: too heavy to move. The shelving units on the wall are the ones she put up in 2212. The drawers are the same. The light fixtures are still mounted, though the power's been off two years.
+Three years. The exam table is still here -- the same as the table in the first clinic she went to tonight, and for the same reason: too heavy to move. The shelving units on the wall are the ones she put up in 2212. The drawers are the same. The light fixtures are still mounted, though the power's been off three years.
 
 She turns on her handset light.
 
@@ -1784,21 +2156,29 @@ Against the wall, under the corner shelving, there's a physical storage drive in
 
 She picks it up. The case is dusty. The seal is intact.
 
-She hears the Scalpel team at the same moment the exterior camera alert fires on her handset -- a sound she hasn't heard in four days and knows instantly. They're at street level, coming up in the freight elevator.
+She hears the Scalpel team at the same moment the exterior camera alert fires on her handset -- a sound she hasn't heard in four days and knows instantly.
+
+They're at street level, coming up in the freight elevator.
 
 She looks at the drive.
 
-Twelve years of names. People who came here when they had nowhere else and were seen by someone who would see them. The records are on this drive and nowhere else -- the cloud backup she meant to build never got built, because building it took money she didn't have. This is the only copy.
+Twelve years of names. People who came here when they had nowhere else and were seen by someone who would see them.
+
+The records are on this drive and nowhere else -- the cloud backup she meant to build never got built, because building it took money she didn't have. This is the only copy.
 
 She looks at the drive. She looks at the door to the supply room.
 
 She puts it down.
 
-She doesn't let herself look at the whole of the choice -- looking would cost time she doesn't have. The records can't help the dead. The broadcast might help the ones still walking around not knowing what was done to them. She can carry one thing.
+She doesn't let herself look at the whole of the choice -- looking would cost time she doesn't have.
 
-She goes back through the supply room and down the service stairs beside the elevator shaft, four flights in the dark, her light off so the Scalpel team won't catch it on the elevator camera. She finds the loading corridor by touch. She finds the junction by the sound of Femi's careful breathing.
+The records can't help the dead. The broadcast might help the ones still walking around not knowing what was done to them. She can carry one thing.
 
-"What happened?" he says.
+She goes back through the supply room and down the service stairs beside the elevator shaft, four flights in the dark, her light off so the Scalpel team won't catch it on the elevator camera.
+
+She finds the loading corridor by touch. She finds the junction by the sound of Femi's careful breathing.
+
+"What happened?" he asks.
 
 She's winded from the stairs. She takes a moment. "I left something behind," she says. "Come on."
 
@@ -1808,7 +2188,9 @@ She walks.
 
 Femi finds her at 0341, seven minutes after she stops in the tunnel access corridor four kilometers from the monitoring station.
 
-She stopped because her handset is at 4% and she can't spend the light anymore. This stretch of tunnel is dark in a way that needs either a light or a guide, and she has neither. She's sitting on the floor with her back against the wall and the medical bag in her lap, doing the thing she does when the situation is bigger than what she's carrying. She counts what she has.
+She stops because her handset is at 4% and she can't spend the light anymore. This stretch of tunnel is dark in a way that needs either a light or a guide, and she has neither.
+
+She's sitting on the floor with her back against the wall and the medical bag in her lap, doing the thing she does when the situation is bigger than what she's carrying. She counts what she has.
 
 Device in its containment. Field surgical kit. Φ43. Handset at 4%. One pen. She goes down the list the way she goes down a supply count -- what's here, what's missing, what the missing costs. The device. The kit. The money. The pen. A code for a station four kilometers off. And Femi, somewhere in these tunnels, who refused to go to Bloom Quarter.
 
@@ -1826,7 +2208,7 @@ He sits down beside her. He has the power pack. He plugs her handset in without 
 
 She looks at the tunnel wall. At the ring of light. At the cable running into her handset.
 
-She left twelve years of names in that building because she could only carry one thing. It was the right call. Right isn't the same as easy to carry.
+She left twelve years of names in that building because she could only carry one thing. It was the right call.
 
 Her hands are shaking, and it isn't the cold. There's nothing she can do about Chit, or the records, or what's already in motion. There's only the tunnel she's in and the tools in the bag.
 
@@ -1884,11 +2266,17 @@ At 15% she stands up.
 
 "Let's go," she says.
 
-## Femi Charges the Phone
-
 At 17% she opens the partial copy.
 
-She pulled it before the van move -- copied the layers she could reach onto her handset while Chit worked the outer encryption. A backup she made without telling him. Always keep a copy you control. It's incomplete: the first three fragments in full, the intake log index, the header of the financial summary, and the Fragment Six file. Not the whole trial record. Enough.
+She pulled it before the van move -- copied the layers she could reach onto her handset while Chit worked the outer encryption.
+
+A backup she made without telling him.
+
+Always keep a copy you control.
+
+It's incomplete: the first three fragments in full, the intake log index, the header of the financial summary, and the Fragment Six file.
+
+Not the whole trial record. Enough.
 
 By the time Femi shows her the six-digit code from his building authority contact, the handset is at 22%. He reads it to her twice. She memorizes it. At 26%, she has about thirty minutes of battery left.
 
@@ -1906,11 +2294,23 @@ Stash doesn't move.
 
 She pauses.
 
-"I found your name in the records," she says. "Not the way you might think -- not as a subject, not as someone who was harmed. As a post-op practitioner. You were twenty-three. A junior contractor on a six-month rotation. You did follow-up on thirty-one of the subjects during the 2211 contract." She pauses. "You did your job. You believed what they told you. You signed the forms they handed you." A pause. "I'm not recording this to tell you what happened in 2211. You'll understand that from the records. I'm recording this to tell you why I chose you."
+"I found your name in the records," she says. "Not the way you might think -- not as a subject, not as someone who was harmed. As a post-op practitioner. You were twenty-three. A junior contractor on a six-month rotation. You did follow-up on thirty-one of the subjects during the 2211 contract."
+
+She pauses. "You did your job. You believed what they told you. You signed the forms they handed you."
+
+A pause. "I'm not recording this to tell you what happened in 2211. You'll understand that from the records. I'm recording this to tell you why I chose you."
 
 She looks at the camera.
 
-"I spent two years deciding whether your name in those records ruled you out. I kept coming back to the same place: your name is there not because you did something wrong but because you were there. They put you in the same position they put the subjects in -- they used what you were good at without telling you what it was really for. You were a tool of the same operation that made those records." A pause. "I'm not asking you to fix it because you owe it. You don't owe it. I'm asking because you can. That difference matters." Another pause. "It matters to me that you understand the difference. That you go into this knowing I understand what I'm asking."
+"I spent two years deciding whether your name in those records ruled you out. I kept coming back to the same place: your name is there not because you did something wrong but because you were there. They put you in the same position they put the subjects in -- they used what you were good at without telling you what it was really for. You were a tool of the same operation that made those records."
+
+A pause.
+
+"I'm not asking you to fix it because you owe it. You don't owe it. I'm asking because you can. That difference matters."
+
+Another pause.
+
+"It matters to me that you understand the difference. That you go into this knowing I understand what I'm asking."
 
 She pauses.
 
@@ -1938,9 +2338,17 @@ They go.
 
 She closes the screen.
 
-She sits in the tunnel, and she doesn't cry, and she doesn't speak. The cold has worked into the small of her back. The air smells of wet ferrocement. Femi waits beside her. He's learned that some moments need the witness to stay still, and he's a good witness.
+She sits in the tunnel, and she doesn't cry, and she doesn't speak. The cold has worked into the small of her back. The air smells of wet ferrocement.
 
-She has to say the part she hasn't said to anyone, or it will sit in her chest like fluid that needs draining. "My name is in the records, Femi. The ones she was carrying. My initials, in the post-op follow-up column. Thirty-one subjects." A pause. "I was twenty-three. I didn't know what the follow-up was for. I signed the forms. I did the work. But my name is in there."
+Femi waits beside her. He's learned that some moments need the witness to stay still, and he's a good witness.
+
+She has to say the part she hasn't said to anyone, or it will sit in her chest.
+
+"My name is in the records, Femi. The ones she was carrying. My initials, in the post-op follow-up column. Thirty-one subjects."
+
+A pause.
+
+"I was twenty-three. I didn't know what the follow-up was for. I signed the forms. I did the work. But my name is in there."
 
 He looks at her. She watches him take it in, weigh it, decide.
 
@@ -1964,11 +2372,15 @@ She looks at the dark handset -- the station at the north end of Austin, forty n
 
 "Okay," he says. He picks up his pack and leads her down the last of the tunnel.
 
-She follows, the device against her hip in the bag, its faint hum steady through the canvas. There's a next thing. She does it.
+She follows, the device against her hip in the bag, its faint hum steady through the canvas.
+
+There's a next thing. She does it.
 
 The verdict sits between them, and neither of them picks it up again.
 
-She has never asked Femi why he does this -- why he stays, why he came into a tunnel four days deep for a woman who sent him the other way. She has known the answer since the compound fracture three years ago. He doesn't help because he owes her, and he doesn't stay because he has nowhere else. He stays because the work matters and he has decided she is the one doing it.
+She has never asked Femi why he does this -- why he stays, why he came into a tunnel four days deep for a woman who sent him the other way.
+
+She has known the answer since the compound fracture three years ago. He doesn't help because he owes her, and he doesn't stay because he has nowhere else. He stays because the work matters and he has decided she is the one doing it.
 
 For four days she'd tried to keep him clear of this. The people hunting the device work at a level a seventeen-year-old cannot survive. He did not go to the Bloom Quarter collective when she sent him. He went to the tunnels and got there before she did. She has stopped arguing with it.
 
@@ -1978,7 +2390,7 @@ She moves them both to the part she can act on.
 
 "I know," Femi says. "I've been in that station. Three years ago, helping a building authority team run the decommissioning inventory."
 
-She looks at him. "You've been inside."
+She looks at him. "You've been inside?"
 
 "Yes." A pause. "It wasn't fully decommissioned. Just closed on paper. The hardware is still there."
 
@@ -1988,27 +2400,31 @@ She looks at him. "You've been inside."
 
 "Can you help me bring the station up?"
 
-He thinks. Thirty seconds — the pause she has learned to read as real and not performed. "I can find it. I don't know how to bring it up. That's your part."
+He thinks. Thirty seconds -- the pause she has learned to read as real and not performed. "I can find it. I don't know how to bring it up. That's your part."
 
 "That's my part," she agrees.
 
-The tunnel is the same in every direction. Cold, damp, the low hum of the infrastructure under every below-grade space in the Gray Zone. The station is four kilometers off. The Scalpel perimeter sits between them and it. The NSB patrol sits between the perimeter and them.
+The tunnel is the same in every direction. Cold, damp, the low hum of the infrastructure under every below-grade space in the Gray Zone.
+
+The station is four kilometers off. The Scalpel perimeter sits between them and it. The NCID patrol sits between the perimeter and them.
 
 "I can get us to the service entrance through the tunnels," he says. "I know three checkpoints in their perimeter. Around two. Under one."
 
 "The under-one is a crawlspace," she says.
 
-"Yes." He looks at her. "You've done crawlspaces."
+"Yes." He looks at her. "You've done crawlspaces?"
 
-She has. Three of them in seven years, each for a patient she couldn't reach any other way. Not recently, and not under an active perimeter. But a crawlspace is a crawlspace. Elbows and knees, and you do not let yourself think about the ceiling on your back — the moment you start thinking about it, you have started something you can't stop. She knows the dimensions.
+She has. Three of them in seven years, each for a patient she couldn't reach any other way. Not recently, and not under an active perimeter.
+
+But a crawlspace is a crawlspace. Elbows and knees, and you do not let yourself think about the ceiling on your back -- the moment you start thinking about it, you have started something you can't stop.
+
+She knows the dimensions.
 
 "All right," she says.
 
 "All right," he says.
 
 They go.
-
-## The Plan
 
 They map the route on Femi's handset while hers charges to forty percent.
 
@@ -2024,7 +2440,7 @@ The freight tunnel from the junction to the north Austin service corridor: two h
 
 Utility access, north side. She holds it the way she holds a landmark before an incision.
 
-Past the junction, two more blocks of corridor to the NSB patrol route. It runs perpendicular, on a twelve-minute cycle. She asks how confident he is.
+Past the junction, two more blocks of corridor to the NCID patrol route. It runs perpendicular, on a twelve-minute cycle. She asks how confident he is.
 
 "Ninety percent. It hasn't varied more than two minutes in four days."
 
@@ -2038,14 +2454,15 @@ Ninety percent on a twelve-minute window with two minutes of slack is workable. 
 
 "Scouting," he says. Nothing else. No sign that walking an active checkpoint's blind spot twice is a strange thing for a seventeen-year-old to have done. She lets it stand next to everything else she is learning about him.
 
-Three Scalpel checkpoints. One NSB patrol. The patrol is predictable because NSB runs to protocol and Femi has watched it for four days. The Scalpel checkpoints move, but they anchor to infrastructure nodes, and the nodes in Austin are in cooperative records his contacts can reach.
+Three Scalpel checkpoints. One NCID patrol. The patrol is predictable because NCID runs to protocol and Femi has watched it for four days.
+
+The Scalpel checkpoints move, but they anchor to infrastructure nodes, and the nodes in Austin are in cooperative records his contacts can reach.
 
 She asks if he has a weapon. It is a variable in the plan, not something she expects to use.
 
 He shows her the static discharge rod. Twenty-five centimeters, Gray Zone standard for tunnel work: contact discharge to fifty thousand volts, enough to drop a person for about three minutes.
 
 She shows him the bone saw.
-
 He stares at it.
 
 "Different context," she says.
@@ -2054,7 +2471,9 @@ He stares at it.
 
 She puts the saw back in the field kit.
 
-The route takes twenty minutes to confirm, segment by segment, timing by timing. She checks that the building authority code is for the station's street-level door, not the basement hatch — the hatch is a physical lock with a separate key neither of them has.
+The route takes twenty minutes to confirm, segment by segment, timing by timing.
+
+She checks that the building authority code is for the station's street-level door, not the basement hatch — the hatch is a physical lock with a separate key neither of them has.
 
 "The street side has exposure," he says. "Thirty meters of open corridor. No cover."
 
@@ -2068,7 +2487,9 @@ The route takes twenty minutes to confirm, segment by segment, timing by timing.
 
 It is 0417. Forty-three minutes.
 
-She closes her eyes. She does not sleep. She holds the state she has learned over seven years in the Unit — not sleep, not full alertness, just the low idle of someone waiting for a known event. The decision is already made. The next forty-three minutes are only the gap between deciding and doing, and she knows how to sit in that gap.
+She closes her eyes. She does not sleep. She holds the state she has learned over seven years in the Unit — not sleep, not full alertness, just the low idle of someone waiting for a known event.
+
+The decision is already made. The next forty-three minutes are only the gap between deciding and doing, and she knows how to sit in that gap.
 
 Across from her, Femi settles into the same state, his breathing slow and even.
 
@@ -2084,7 +2505,7 @@ At 0458 she opens her eyes and picks up the medical bag.
 
 The tunnels take two hours and seven minutes.
 
-Femi does not explain his choices as he makes them. He moves and she follows. When he pauses, she pauses. When he changes direction, she changes direction. She does not ask why until they reach the service crawlspace under the NSB patrol route, and then she can see why.
+Femi does not explain his choices as he makes them. He moves and she follows. When he pauses, she pauses. When he changes direction, she changes direction. She does not ask why until they reach the service crawlspace under the NCID patrol route, and then she can see why.
 
 The crawlspace runs parallel to the surface conduit above. It is tight enough that she has to strip off the medical bag, push it ahead of her, and pull herself along by pressing her elbows into the ferrocement. Mineral seep has run through here long enough to leave the surface slick. She does not think about what she is pressing her elbows into.
 
@@ -2092,7 +2513,7 @@ She has been in tighter spaces. Not with an active patrol overhead, but the spac
 
 He goes first. He is through in ninety seconds. She follows. It takes her three minutes and twenty seconds — longer than she would like, shorter than she feared. She comes out with ferrocement dust on her forearms and the bag intact. The bag is the part that matters.
 
-"You've done this route before," she says.
+"You've done this route before?" she asks.
 
 "Twice." He takes the bag while she stands, gives it back when she is up. "I know the one after it too."
 
@@ -2104,29 +2525,29 @@ She tells Femi. He stops and thinks for thirty seconds. She waits. His pauses ho
 
 "East," he says. "If they're shifting east, they're chasing something in the east sector. Which means they're not watching the north sector."
 
-"How sure?"
+"How sure?" she asks.
 
 "Seventy percent."
 
 She nods. She has made surgical calls on worse.
 
-The second Scalpel checkpoint is at the junction below the Austin north freight corridor, staffed the way Femi said: two operatives facing south, watching the main approach and not the service access on the east wall. They go through the service access. The operatives do not turn.
+The second Scalpel checkpoint is at the junction below the Austin north freight corridor, staffed the way Femi said: two operatives facing south, watching the main approach and not the service access on the west wall.
 
-The NSB patrol is exactly where Femi said it would be.
+They go through the service access. The operatives do not turn.
+
+The NCID patrol is exactly where Femi said it would be.
 
 He takes her through the crawlspace again. She knows the technique now — bag ahead, elbows, out the other side. The patrol is above them and then behind them. She cannot hear it from here.
 
 Two hundred meters to the station's service entrance.
 
-By the last stretch she has stopped correcting for it: Femi knows this network in a way she does not. She has been treating him as a capable assistant, and he is, in the clinic — but the clinic is one room in one building, and the tunnels are his. He did not go to the Bloom Quarter collective when she sent him. He went to the tunnels, scouted the checkpoints, and timed the patrols, unasked, because she needed an answer. He came back with the answer she actually needed. Four days down here before she arrived, learning the ground she is now crossing on his knowledge.
+By the last stretch she has stopped correcting for it: Femi knows this network in a way she does not. She has been treating him as a capable assistant, and he is, in the clinic — but the clinic is one room in one building, and the tunnels are his.
+
+He did not go to the Bloom Quarter collective when she sent him. He went to the tunnels, scouted the checkpoints, and timed the patrols, unasked, because she needed an answer. He came back with the answer she actually needed. Four days down here before she arrived, learning the ground she is now crossing on his knowledge.
 
 They walk the final two hundred meters in the gray pre-dawn of the Austin service corridor. Above the roofline to the south, the Thread's pods hang low, drifting down slow as water droplets. They move like people going somewhere on purpose, not in a hurry.
 
 The monitoring station is at the end of the corridor. The door is at street level.
-
-She enters the code. It works on the second try.
-
-The door opens.
 
 The door is where Femi said it would be, flush in the corridor wall, cold to the touch. She keys in the code his contact gave them — the building authority emergency override, which skips the primary code and runs on the secondary channel. Nothing. She keys it again. The lock disengages, and she lets herself notice, for one second, that it took two tries. That is the kind of small error fatigue makes.
 
@@ -2136,15 +2557,21 @@ Inside, the dark is total. It smells of dust and cold metal. Femi thumbs the tor
 
 The entrance corridor runs low and narrow to the main equipment room forty meters on. Even in the beam she can read the scale of it: rack-mounted units down both walls, cable runs bundled along the ceiling, all of it laid out by people who built it to last. The backup relay on the west wall still pulls low power off the building main — standby draws a trickle, and nobody ever closed the utility account. Somebody has kept paying, all these years, for a room the world forgot.
 
-Seven years of settled dust lies on every flat surface, even and undisturbed. Nobody has been in here since the doors closed.
-
-## Bringing the Station Up
+Seven years of settled dust lies on every flat surface, even and undisturbed. No one but the inventory crew has been in here since the doors closed.
 
 The station has been on standby for seven years, and it comes up in under three minutes.
 
-She works the physical controls in the right order. She read the Gray Zone cooperative documentation the way she reads anything she might need in an emergency: all of it, once, on the assumption that the reading will matter before she expects it to. Fourteen years of emergency medicine in ungoverned spaces will teach you that. The manual is never at hand when it counts, and the only reading you have is the reading you already did.
+She works the physical controls in the right order. She read the Gray Zone cooperative documentation the way she reads anything she might need in an emergency: all of it, once, on the assumption that the reading will matter before she expects it to.
 
-Main power relay: the rack hums. The cooling fans engage, and the sound changes the room, filling the dead silence with a steady mechanical push that feels almost like a welcome. Indicator lights cross the rack from amber to green. Frequency module: 412.7 MHz comes up on the display — the last assigned frequency, the dead channel, the numbers Renata said twice in a flat voice on the exam table. Broadcast amplifier: output at one hundred percent. Coupling system: the port array lights green.
+Fourteen years of emergency medicine in ungoverned spaces will teach you that.
+
+The manual is never at hand when it counts, and the only reading you have is the reading you already did.
+
+Main power relay: the rack hums. The cooling fans engage, and the sound changes the room. Indicator lights cross the rack from amber to green.
+
+Frequency module: 412.7 MHz comes up on the display — the last assigned frequency, the dead channel, the numbers Renata said twice in a flat voice on the exam table.
+
+Broadcast amplifier: output at one hundred percent. Coupling system: the port array lights green.
 
 The station is operational. Seven years on standby, and it came up.
 
@@ -2156,7 +2583,9 @@ It is warm in her hand. It has been warm since the first time she held it — bo
 
 She breathes. She climbs the stool to the coupling port.
 
-The Nova-7's contacts line up with the port exactly. She does not have to adjust the angle. It seats and connects in one motion, because Renata built it to seat and connect with this port, in this room, on this frequency. The fit is the clearest record she has of the years Renata spent — not a thing thrown together under pressure, but a thing built slowly to meet one exact thing in one exact place.
+The Nova-7's contacts line up with the port exactly. She does not have to adjust the angle. It seats and connects in one motion, because Renata built it to seat and connect with this port, in this room, on this frequency.
+
+The fit is the clearest record she has of the years Renata spent — not a thing thrown together under pressure.
 
 The coupling indicator goes from green to white. The controller shows the handshake: device connected, package identified, 14.3 gigabytes, forty-node broadcast loaded.
 
@@ -2184,11 +2613,15 @@ The door at the far end of the room opens.
 
 Commander Brauer comes in last.
 
-The breach is clean: two operatives through the street-level door, two through an access she did not know was there — a service hatch in the east wall, behind a false panel Femi says later he knew about but did not know was in use. The four of them take positions in under eight seconds. Gray operational wear, no insignia, the gear of people who came for one thing and are moving toward it.
+The breach is clean: two operatives through the street-level door, two through an access she did not know was there — a service hatch in the east wall, behind a false panel Femi says later he knew about but did not know was in use. The four of them take positions in under eight seconds.
 
-Brauer comes through the street door last. He is not large — medium height, a quiet weight that does not need size. Former NGRA, from the bearing. Military, from the way he reads a room: left to right, threat by sector, faces second. The Cascade suppressor rides on his right hip. He looks at Stash, then the panel, then Femi, then back to Stash, and the order tells her what he thinks: the transmitter is the asset, the surgeon is the variable, the boy is secondary.
+Gray operational wear, no insignia, the gear of people who came for one thing and are moving toward it.
 
-"Dr. Adeyemi." Same tone Lydia used on the line — neutral, no threat stated because the threat is already in the room. "Stop the transmission."
+Brauer comes through the street door last. He is not large — medium height, a quiet weight that does not need size. Former NGRA, from the bearing. Military, from the way he reads a room: left to right, threat by sector, faces second. The Cascade suppressor rides on his right hip. She clocks it and dismisses it in the same breath — it disrupts a neural mesh, and the Nova-7 doesn't have one, physical broadcast only. Wrong tool for this problem. He looks at Stash, then the panel, then Femi, then back to Stash, and the order tells her what he thinks: the transmitter is the asset, the surgeon is the variable, the boy is secondary.
+
+"Dr. Adeyemi." Same tone Lydia used on the line — neutral, no threat stated because the threat is already in the room.
+
+"Stop the transmission."
 
 "I can't stop it," Stash says.
 
@@ -2198,7 +2631,9 @@ Brauer weighs the statement for about two seconds. Then he moves toward the pane
 
 He is going to pull the relay.
 
-Stash stands. She steps between him and the panel. She has the bone saw in her hand — field kit, thirty centimeters, carbide-tipped, rated for dense bone. She holds it the way she holds it in a surgical suite: not as a threat, as a tool. Right hand, working grip, elbow bent to the angle that gives control on a downstroke. This is not theater. It is how she holds this instrument when she uses it for what it is for.
+Stash stands. She steps between him and the panel. She has the bone saw in her hand — field kit, thirty centimeters, carbide-tipped, rated for dense bone. She holds it the way she holds it in a surgical suite: not as a threat, as a tool. Right hand, working grip, elbow bent to the angle that gives control on a downstroke.
+
+This is not theater. It is how she holds this instrument when she uses it for what it is for.
 
 Brauer stops. He looks at the saw. He looks at her hand. He looks at the space between her and the panel. She is a surgeon, not a fighter. The saw is a tool, not a weapon. She is smaller than he is, and the panel is farther from him than she is — but the simple path is around her, not through her. She can see him reach that read, and she knows it is right.
 
@@ -2218,7 +2653,9 @@ Brauer turns to him. He is seventeen and slight, and he is holding the static di
 
 Brauer looks at the rod. He looks at the panel. He looks at the counter. He looks at Stash.
 
-"The data is already being received," Stash says. "A partial transmission to forty nodes can be recovered. A full one is complete. In four minutes, whether this happened stops being a question." A pause. "In four minutes, it happened."
+"The data is already being received," Stash says.
+
+"A partial transmission to forty nodes can be recovered. A full one is complete. In four minutes, whether this happened stops being a question." A pause. "In four minutes, it happened."
 
 Brauer looks at the switch. He looks at the counter.
 
@@ -2230,11 +2667,15 @@ She watches his hand the way she watches a patient in a critical stretch, for th
 
 Three minutes and twenty-four.
 
-"You already know what's on it," Stash says. "You've known for at least fourteen months. That's how long Lydia's been looking."
+"You already know what's on it," Stash says.
+
+"You've known for at least fourteen months. That's how long Lydia's been looking."
 
 His expression does not change. He is watching the counter.
 
-"Pull the relay and it's a partial record," she says. "Four hundred and twenty-eight names cut off in the middle. Sixty-seven budget lines. A chain of custody with a hole in it. That's an allegation. It goes into the network and lives there as a rumor forever." A pause. "Complete, it's a record."
+"Pull the relay and it's a partial record," she says.
+
+"Four hundred and twenty-eight names cut off in the middle. Sixty-seven budget lines. A chain of custody with a hole in it. That's an allegation. It goes into the network and lives there as a rumor forever." A pause. "Complete, it's a record."
 
 Three minutes and two seconds.
 
@@ -2246,7 +2687,9 @@ Two minutes forty-seven.
 
 Brauer takes his hand off the relay.
 
-He does not say anything. He steps back one pace, stands with his hands at his sides, and looks at the counter. Then he turns to one of his operatives and gives a very small nod — the nod of a man who has read a situation and decided to accept it.
+He does not say anything. He steps back one pace, stands with his hands at his sides, and looks at the counter.
+
+Then he turns to one of his operatives and gives a very small nod — the nod of a man who has read a situation and decided to accept it.
 
 Stash breathes.
 
@@ -2254,21 +2697,31 @@ She looks at the counter. She waits.
 
 The tunnel access door opens at 0541.
 
-She does not know there is a tunnel access door until it opens. It is in the south wall of the equipment room, a maintenance access she did not clock during the startup because she was focused on the transmitter panel and not the room's edges. She marks the miss without judging it. She was on the task, the task was essential, and tunnel doors in dead monitoring stations are not the first thing you look for when you are four minutes from the end of a broadcast.
+She does not know there is a tunnel access door until it opens. It is in the south wall of the equipment room, a maintenance access she did not clock during the startup because she was focused on the transmitter panel and not the room's edges. She marks the miss without judging it.
+
+She was on the task, the task was essential, and tunnel doors in dead monitoring stations are not the first thing you look for when you are four minutes from the end of a broadcast.
 
 Three people come through.
 
-The two in front are NSB field agents, in gray operational clothing, carrying the gear of people who have been briefed and are walking into it ready. They are calm and professional and they set their positions without being told, which is what people do when they have done this before. The third is Lydia Roth, in the dark jacket she wore to the food hall, and she looks exactly as she did then: composed, rational, dangerous in the way of someone who ran all her calculations in advance and has come to watch the result.
+The two in front are NCID field agents, in gray operational clothing, carrying the gear of people who have been briefed and are walking into it ready. They are calm and professional and they set their positions without being told, which is what people do when they have done this before.
+
+The third is Lydia Roth, in the dark jacket she wore to the food hall, and she looks exactly as she did then: composed, rational, dangerous in the way of someone who ran all her calculations in advance and has come to watch the result.
 
 She looks at Brauer.
 
 Brauer looks at her.
 
-In ninety seconds the room has become something nobody in it was briefed for. Scalpel did not know NSB was coming. NSB did not know Scalpel was here. Two teams, two directions, two sets of correct intelligence, and now one room with two orders that cannot both be followed and a broadcast running.
+In twenty seconds the room has become something nobody in it was briefed for.
+
+Scalpel did not know NCID was coming.
+
+NCID did not know Scalpel was here.
+
+Two teams, two directions, two sets of correct intelligence, and now one room with two orders that cannot both be followed and a broadcast running.
 
 Brauer's four operatives are at the room's corners. Lydia's two agents are at the tunnel access. Brauer has his hand near the power relay. Lydia stands in the center. Femi is against the north wall with the discharge rod. Stash is three meters from the panel, close enough to read the counter.
 
-Two minutes and forty-eight seconds.
+Two minutes and twenty-eight seconds.
 
 Lydia does not speak to Stash. She does not speak to Femi. She speaks to Brauer, two professionals with no time for the wrapping.
 
@@ -2286,7 +2739,9 @@ Brauer says nothing.
 
 "That is my instruction," Lydia says. "Let it finish."
 
-For a second, two, Brauer's hand stays on the relay and nothing in the room is certain. Then he looks at the counter, and at Lydia, and something in his face settles: two enforcement arms in one room with orders that do not match, and someone who outranks him standing in the middle of it.
+For a second, two, Brauer's hand stays on the relay and nothing in the room is certain.
+
+Then he looks at the counter, and at Lydia, and something in his face settles: two enforcement arms in one room with orders that do not match, and someone who outranks him standing in the middle of it.
 
 Two minutes and twelve seconds.
 
@@ -2316,7 +2771,7 @@ She turns around.
 
 Lydia is standing three meters away, looking at her. She does not say anything about what happened. She takes Stash in the way someone measures a result — not a verdict, not a judgment, just what occurred against what was possible.
 
-"Is it done?" Femi says, from the north wall.
+"Is it done?" Femi asks, from the north wall.
 
 "Yes," Stash says.
 
@@ -2330,11 +2785,17 @@ After.
 
 "No."
 
-She checks Femi. He is not hurt — leaning against the north wall with his jacket over his arm, pale the way a person goes pale after a thing that ran past the edge of their plan and let them out the far side. She marks the pallor to deal with after the room. He is seventeen.
+She checks Femi. He is not hurt — leaning against the north wall with his jacket over his arm, pale the way a person goes pale after a thing that ran past the edge of their plan and let them out the far side.
+
+She marks the pallor to deal with after the room. He is seventeen.
 
 She looks at the panel. *Transmission complete. Signal confirmed.* She reads it twice. Then she takes the device off the panel.
 
-Warm and dark and spent. Its battery was sized for one broadcast and no more — she knows this from the fifth fragment, from Renata laying out the nine-percent calculation, from the way the whole thing needed exactly enough and no retry. Eleven minutes emptied it. What is left in her palm is a dead shell that carried fourteen point three gigabytes to forty nodes, and the nodes are taking it in now, across Austin and Garfield, at the same moment.
+Warm and dark and spent. Its battery was sized for one broadcast and no more — she knows this from the fifth fragment, from Renata laying out the nine-percent calculation, from the way the whole thing needed exactly enough and no retry.
+
+Eleven minutes emptied it.
+
+What is left in her palm is a dead shell that carried fourteen point three gigabytes to forty nodes, and the nodes are taking it in now, across Austin and Garfield, at the same moment.
 
 "Is this going to hold up?" she asks Lydia. "What was transmitted. Legally."
 
@@ -2358,7 +2819,9 @@ She has been watching for this since the tunnel, the sign that the night has not
 
 "That's fine," she says. "It's enough."
 
-He gives her the bottle. She drinks half and hands it back. He drinks the rest. She is very tired. Forty-seven hours awake. Cold. She has Φ43, a bone saw, a dead device, a field kit, and Femi — seventeen, four days in the tunnels, still on his feet.
+He gives her the bottle. She drinks half and hands it back. He drinks the rest.
+
+She is very tired. Forty-seven hours awake. Cold. She has Φ43, a bone saw, a dead device, a field kit, and Femi — seventeen, four days in the tunnels, still on his feet.
 
 She sits back down on the stool.
 
@@ -2372,33 +2835,45 @@ Lydia is quiet a moment. "I'll see what I can do." It is not a promise. It is an
 
 "That's all I'm asking."
 
-She sits. She holds the device, warm and dark, and looks at the panel that says *Transmission complete*, and she does not reach for relief. What comes instead is the quiet after a long surgery done right, the patient alive under the lights: not triumph, just the fact of a thing finished.
+She sits. She holds the device, warm and dark, and looks at the panel that says *Transmission complete*, and she does not reach for relief.
+
+What comes instead is the quiet after a long surgery done right, the patient alive under the lights: not triumph, just the fact of a thing finished.
 
 Renata asked her to do a thing. She has done it.
 
 It is done.
 
-## Lydia's Deposition
-
 Lydia asks for a voluntary statement at 0900.
 
-At 0600 Stash told her she needed four hours. Lydia waited. In those hours Stash took Femi to a Garfield clinic she knows by reputation -- competent, well-stocked -- and spent Φ43 and her credentials getting them both looked at and fed: a NanoSeal strip over the cut on Femi's eyebrow, a Saltline pouch each. Then she sent him to the Unit with a message for Augustina and Marco, and went back to the station, which is a crime scene now, to wait for 0900.
+At 0600 Stash told her she needed four hours. Lydia waited.
 
-The room is different in daylight. The forensic team has been and gone. The panel still stands with its quiet lights and its empty coupling port. Lydia sits at a fold-out table in the office off the equipment floor -- two chairs, a writing surface, nothing else. Stash sits across from her.
+In those hours Stash took Femi to a Garfield clinic she knows by reputation — competent, well-stocked — and spent Φ43 and her credentials getting them both looked at and fed: a NanoSeal strip over the cut on Femi's eyebrow, a Saltline pouch each. Then she sent him to the Unit with a message for Augustina and Marco, and went back to the station, which is a crime scene now, to wait for 0900.
+
+The room is different in daylight. The forensic team has been and gone. The panel still stands with its quiet lights and its empty coupling port. Lydia sits at a fold-out table in the office off the equipment floor — two chairs, a writing surface, nothing else.
+
+Stash sits across from her.
 
 "Your account of the device," Lydia says. "In your own words. You're not required to give it, and you can stop at any time."
 
 "I know."
 
-She gives it in sequence, the way she orders clinical notes: Renata's arrival, the surgery, the device, the death report the way she filed it, the three days of decryption and what they produced. She doesn't leave out the offer Chit turned down four months earlier. She doesn't leave out the dispersion error that put them in the tunnels two days early. She describes Chit feeding Scalpel false coordinates at 0227, plainly, because he earned having it said plainly. "That was his decision," she says. "I wasn't consulted."
+She gives it in sequence, the way she orders clinical notes: Renata's arrival, the surgery, the device, the death report the way she filed it, the three days of decryption and what they produced. She doesn't leave out the offer Chit turned down four months earlier. She doesn't leave out the dispersion error that put them in the tunnels two days early. She describes Chit feeding Scalpel false coordinates at 0227, plainly, because he earned having it said plainly.
 
-Then she reaches the part she came here to put on the record on purpose. She doesn't soften it and she doesn't inflate it. Junior field surgeon, Sable contract, 2211. Post-op follow-up on thirty-one subjects she was told were Block War injuries admitted under wartime protocol. She signed the forms she was handed. She never read the intake documents; contractors at her level didn't get them. She lays it down flat, her hands folded on the table and staying folded, and lets Lydia write it.
+"That was his decision," she says. "I wasn't consulted."
+
+Then she reaches the part she came here to put on the record on purpose. She doesn't soften it and she doesn't inflate it.
+
+Junior field surgeon, Sable contract, 2211. Post-op follow-up on thirty-one subjects she was told were Block War injuries admitted under wartime protocol. She signed the forms she was handed. She never read the intake documents; contractors at her level didn't get them.
+
+She lays it down flat, her hands folded on the table and staying folded, and lets Lydia write it.
 
 Lydia writes it and doesn't read it back. She doesn't say it exonerates you. She doesn't say it puts you at risk. She writes down a fact for a record, and leaves the pen uncapped.
 
-"Is there a way to have my 2211 role formally reviewed," Stash says. "On the record."
+"Is there a way to have my 2211 role formally reviewed?" Stash asks. "On the record."
 
-Lydia looks up. "The NSB doesn't handle contractor accountability. The GLMZ medical licensing board does. If the trial data opens a review of the Austin program, the board has standing over the contractor roles."
+Lydia looks up.
+
+"The NCID doesn't handle contractor accountability. The GLMZ medical licensing board does. If the trial data opens a review of the Austin program, the board has standing over the contractor roles."
 
 "Including mine."
 
@@ -2406,17 +2881,23 @@ Lydia looks up. "The NSB doesn't handle contractor accountability. The GLMZ medi
 
 "I want the review."
 
-Lydia sets the pen down. "You understand what you're asking. If the data authenticates and the process opens, and you've put your own hand up, you're in the chain of it. By name. There's no version of that I can keep off you."
+Lydia sets the pen down.
+
+"You understand what you're asking. If the data authenticates and the process opens, and you've put your own hand up, you're in the chain of it. By name. There's no version of that I can keep off you."
 
 "I was in the chain in 2211 without choosing it," Stash says. "I want to be in it now because I did."
 
-Lydia holds her eyes a moment, then writes it -- the same clean hand, no comment.
+Lydia holds her eyes a moment, then writes it — the same clean hand, no comment.
 
-"One more. On record. Why the broadcast? You could have put the device in NSB custody at several points in the past six days."
+"One more. On record. Why the broadcast? You could have put the device in NCID custody at several points in the past six days."
 
 Stash looks at the coupling port, still showing its small green readiness light with nothing plugged into it.
 
-"Because a device in your custody is buried evidence," she says. "A broadcast is a fact. Renata didn't build a thing to be filed. She built it to go off." A pause. "I didn't want to hold a fact. I wanted to release it."
+"Because a device in your custody is buried evidence," she says. "A broadcast is a fact. Renata didn't build a thing to be filed. She built it to go off."
+
+A pause.
+
+"I didn't want to hold a fact. I wanted to release it."
 
 Lydia writes the last of it and caps the pen.
 
@@ -2426,45 +2907,61 @@ Lydia writes the last of it and caps the pen.
 
 "I know."
 
-They stand. Across the fold-out table they take each other's measure one more time -- the food hall, the numbers, the offer of immunity, the call at 2013 that Lydia couldn't explain.
+They stand. Across the fold-out table they take each other's measure one more time — the food hall, the numbers, the offer of immunity, the call at 2013 that Lydia couldn't explain.
 
 "Agent Roth. Thank you. For the call."
 
-Lydia doesn't make it smaller. "You're welcome," she says, and lets it stand.
+Lydia doesn't make it smaller.
+
+"You're welcome," she says, and lets it stand.
 
 Stash picks up the medical bag with the dead device in it and walks out past the panel that already did the one thing she came here to make it do.
 
 She does not watch it happen live. She watches it after, in the new space, on a handset Femi borrowed from the Garfield clinic when hers died.
 
-By 1400 three Gray Zone data brokers confirm they have the full package and mirror it to external nodes. The copies are redundant — the data sits in at least six separate places by 1400, and pulling it now would mean suppressing six repositories at once, which no single actor can do. The data is in the network.
+By 1400 three Gray Zone data brokers confirm they have the full package and mirror it to external nodes.
 
-By 1600 a legal collective in the Loop fringe files for an emergency review of MidNorth Medical's operating license. She knows them; they consulted pro bono for the Unit twice in seven years. The filing is public. It cites the trial data. It names Sable Industries MedTech, the Austin Relocation Camp Surgical Program, and Emergency Provision 7. It names Renata Emmei as the source. It does not name Stash.
+The copies are redundant — the data sits in at least six separate places by 1400, and pulling it now would mean suppressing six repositories at once, which no single actor can do. The data is in the network.
+
+By 1600 a legal collective in the Loop fringe files for an emergency review of MidNorth Medical's operating license. She knows them; they consulted pro bono for the Unit twice in seven years.
+
+The filing is public. It cites the trial data. It names Sable Industries MedTech, the Austin Relocation Camp Surgical Program, and Emergency Provision 7. It names Renata Emmei as the source. It does not name Stash.
 
 By 1700 two more legal groups file on the same package. One goes after the GLMZ Wartime Medical Authority for the Provision 7 authorization. One goes after the six Sable executives who signed the original budgets. All three filings are public record.
 
-By 1800 two medical journalists pick up the NSB angle as a separate story: NSB field operations against a Scalpel asset-recovery team in the ungoverned Low, outcome unclear. It runs alongside the trial-data story, not inside it. The NSB will be investigated by the NSB and by reporters who have waited for exactly this kind of opening.
+By 1800 two medical journalists pick up the NCID angle as a separate story: NCID field operations against a Scalpel asset-recovery team in the ungoverned Low, outcome unclear.
 
-The governor protocol goes under review. Not suspended — the licensing board says it stays authorized while the process runs, which means the twelve hundred people who depend on it still get it, which means the calculation Lydia laid out on the food-hall table still holds. The outcome Stash produced is not clean.
+It runs alongside the trial-data story, not inside it. The NCID will be investigated by the NCID and by reporters who have waited for exactly this kind of opening.
+
+The governor protocol goes under review. Not suspended — the licensing board says it stays authorized while the process runs, which means the twelve hundred people who depend on it still get it, which means the calculation Lydia laid out on the food-hall table still holds.
+
+The outcome Stash produced is not clean.
 
 She knew it would not be clean.
 
-She reads the updates in the new space — a sub-level unit in West Town one of Femi's contacts offered for now, two rooms, working heat, a live water line. She reads without comment. What she feels is what she has felt since 0600: the flat quiet of a thing completed, which is not the relief she was told to expect.
+She reads the updates in the new space — a sub-level unit in West Town one of Femi's contacts offered for now, two rooms, working heat, a live water line.
 
-The board's statement is four paragraphs of institutional language, an obligation nobody asked for. It acknowledges the filing. It confirms the review will open. It says the protocol stays authorized during the review. It does not use the words Sable Industries or Austin or four hundred and twenty-eight. It says "the relevant program" twice. Careful language, formal process, machinery that moves slowly. She knew that when she pressed the coupling home at the station. She did not press it for the machinery. She pressed it because Renata built the thing and it needed pressing.
+She reads without comment. What she feels is what she has felt since 0600: the flat quiet of a thing completed, which is not the relief she was told to expect.
+
+The board's statement is four paragraphs of institutional language. It acknowledges the filing. It confirms the review will open. It says the protocol stays authorized during the review. It does not use the words Sable Industries or Austin or four hundred and twenty-eight. It says "the relevant program" twice. Careful language, formal process, machinery that moves slowly.
+
+She knew that when she pressed the coupling home at the station. She did not press it for the machinery. She pressed it because Renata built the thing and it needed pressing.
 
 The data is authenticated. The Loop fringe collective confirms the chain from Renata's encryption to the original Sable document set. Intact. Renata built it correctly.
 
-Chit is out by 1900. She does not know how; he does not explain. He calls from an unknown number at 1903. He says he is out. He needs twenty-four hours. He will explain the coordinates when she is ready to hear it. She says she already understood the explanation. He says okay and hangs up.
+Chit is out by 1900. She does not know how; he does not explain. He calls from an unknown number at 1903. He says he is out. He needs twenty-four hours. He will explain the coordinates when she is ready to hear it.
+
+She says she already understood the explanation. He says okay and hangs up.
 
 She sets the handset on the bare ferrocement floor.
 
 She sits in the middle of the empty room and looks at the walls. Bare ferrocement, floor and walls, no history in the space, no shape of anyone who sat here before. She thinks about the Unit — Augustina, stable and nearly recovered; Marco, fine, gone home; Rudeboi, home yesterday. She thinks about the files Scalpel took, that Lydia is working on. She thinks about four hundred and twenty-eight people whose names she does not know, whose identifier codes she read in a data index at 0214 on a Tuesday.
 
-She thinks about Renata Emmei, who spent eleven years on a calculation, decided nine percent was enough, and was right.
+She thinks about Renata Emmei, who spent eleven years on a calculation, decided nine percent was enough, and was right to try.
 
 She does not try to resolve it. It will not resolve. What happened in 2211 happened. What happened at the station will keep happening, in courts and journals and license reviews, for years. What she did in the tunnel and the station happened, and she is not sorry.
 
-She has Φ43, no files, no clinic, and a handset at twenty-three percent.
+She has Φ0, no files, no clinic, and a handset at twenty-three percent.
 
 She picks it up. She calls Femi.
 
@@ -2494,7 +2991,9 @@ The knock is twice, a pause, once.
 
 She does not look up. "It's open," she says.
 
-Chit comes in. Same jacket he wore six days ago, which is fine, which needs no comment. He takes in the room: the salvaged exam table, the two ward beds, the shelves, the locked cabinet, the ultrasound in the corner. He looks at Femi on the far wall with a brush and a bucket and the focus of someone doing a thing that does not want interrupting.
+Chit comes in. Same jacket he wore three weeks ago, which is fine, which needs no comment. He takes in the room: the salvaged exam table, the two ward beds, the shelves, the locked cabinet, the ultrasound in the corner.
+
+He looks at Femi on the far wall with a brush and a bucket and the focus of someone doing a thing that does not want interrupting.
 
 Femi is painting a name on the wall.
 
@@ -2516,7 +3015,9 @@ She is reshelving the irrigation supplies. She does not look up. "I told you I c
 
 "I know that too."
 
-He is quiet a moment longer than he should be. Then: "The chain held. The challenge didn't go after the chain." He takes his hands out of his pockets. "They subpoenaed the reconstructed files. The ones Lydia's office returned. They're arguing the reconstruction is proof — that if the originals could be rebuilt from the endorsement records, then the endorsement records name every practitioner who signed. Including the one who was twenty-three."
+He is quiet a moment longer than he should be. Then: "The chain held. The challenge didn't go after the chain." He takes his hands out of his pockets.
+
+"They subpoenaed the reconstructed files. The ones Lydia's office returned. They're arguing the reconstruction is proof — that if the originals could be rebuilt from the endorsement records, then the endorsement records name every practitioner who signed. Including the one who was twenty-three."
 
 She stops shelving. She holds the bottle of irrigant she was about to set down.
 

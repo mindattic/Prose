@@ -81,7 +81,7 @@ public class CanonRetrievalService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var infoById = await db.Entities.AsNoTracking()
             .Where(e => ids.Contains(e.Id))
-            .Where(e => e.IsActive && !DeadStatuses.Contains(e.Status))
+            .Where(e => !DeadStatuses.Contains(e.Status))
             .Select(e => new { e.Id, e.Description, e.OriginNodeId })
             .ToDictionaryAsync(x => x.Id, x => x, ct);
 

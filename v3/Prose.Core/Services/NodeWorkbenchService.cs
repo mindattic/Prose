@@ -57,7 +57,6 @@ public class NodeWorkbenchService
         IAudioStore audioStore,
         ILogger<NodeWorkbenchService> log,
         SettingsService? settings = null,
-        EntityRamificationService? ramification = null,
         PostBeatValidationService? postBeatValidator = null,
         SemanticFidelityService? semanticFidelity = null,
         EditSessionService? editSession = null,
@@ -70,7 +69,6 @@ public class NodeWorkbenchService
         this.audioStore = audioStore;
         this.settings = settings;
         this.log = log;
-        this.ramification = ramification;
         this.postBeatValidator = postBeatValidator;
         this.semanticFidelity = semanticFidelity;
         this.editSession = editSession;
@@ -78,7 +76,6 @@ public class NodeWorkbenchService
         this.logicSweep = logicSweep;
     }
 
-    private readonly EntityRamificationService? ramification;
     private readonly PostBeatValidationService? postBeatValidator;
     private readonly SemanticFidelityService? semanticFidelity;
     private readonly EditSessionService? editSession;
@@ -122,7 +119,15 @@ public class NodeWorkbenchService
             acc.Add(new OrderedBeat(d.Beat, nodeId, d.SortKey, true));
 
         // Then child nodes in SortKey order — skip book-kind nodes (draft buckets).
-        var children = await db.Nodes
+        // IgnoreQueryFilters(): nodeId is an already-resolved explicit id, not an ambient scope —
+        // without this, any book outside whatever universe the ambient default happens to resolve
+        // to gets every chapter silently dropped here, so GetOrderedBeatsAsync (the single most
+        // heavily-used "get this book's beats in reading order" method in the codebase) returns
+        // only beats directly on the root node and none of its chapters. Found live 2026-08-17 via
+        // a corpus-wide export validation pass: several non-default-universe books (M-101/SCRY,
+        // TRUCE, etc.) showed zero content in every export path (same bug class as
+        // BookArchiveService.ArchiveAsync, fixed earlier the same day).
+        var children = await db.Nodes.IgnoreQueryFilters()
             .Where(s => s.ParentNodeId == nodeId && s.Kind != "book")
             .OrderBy(s => s.SortKey)
             .Select(s => s.Id)
@@ -234,7 +239,53 @@ public class NodeWorkbenchService
 
         var priorVersion = beat.Version;
         var priorHash    = beat.TextHash;
-        var trimmed = TextSanitizerService.Sanitize((newText ?? "").Trim());
+
+        // Resolve the containing book (+ its universe) once, up front — needed both to scope the
+        // entity-mention scanner's candidate list (corpus-trust-recovery Phase 1a) and, further
+        // down, for the blast-radius mini re-check. Walk ParentNodeId up from the beat's direct
+        // chapter node to the book root while `db` is still open.
+        Guid? bookNodeId = null;
+        var directNodeId = await db.BeatNodes.AsNoTracking()
+            .Where(bn => bn.BeatId == beatId)
+            .Select(bn => bn.NodeId)
+            .FirstOrDefaultAsync(ct);
+        if (directNodeId != Guid.Empty)
+        {
+            var walkId = directNodeId;
+            for (var depth = 0; depth < 10; depth++)
+            {
+                var parent = await db.Nodes.AsNoTracking()
+                    .Where(n => n.Id == walkId)
+                    .Select(n => n.ParentNodeId)
+                    .FirstOrDefaultAsync(ct);
+                if (parent == null) { bookNodeId = walkId; break; }
+                walkId = parent.Value;
+            }
+        }
+        // IgnoreQueryFilters(): explicit bookNodeId, not an ambient scope — without this, saving a
+        // beat on any non-ambient-universe book resolves universeId to Guid.Empty, which silently
+        // SKIPS entity-GUID tagging entirely for that save (candidates short-circuits to [] below
+        // when universeId == Guid.Empty). Found live 2026-08-17 during a corpus-wide export
+        // validation pass (same bug class as BookArchiveService.ArchiveAsync/WalkAsync) — this is
+        // the single most consequential instance of the pattern, since it silently defeats this
+        // session's whole entity-tagging feature for any save that doesn't happen to have a
+        // matching ambient --universe.
+        var universeId = bookNodeId.HasValue
+            ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == bookNodeId.Value).Select(n => n.UniverseId).FirstOrDefaultAsync(ct)
+            : Guid.Empty;
+
+        // Inline entity-GUID tagging (corpus-trust-recovery Phase 1a): strip any tags already
+        // present first (idempotency — re-derive from current entity data on every save rather
+        // than trust stale tags a caller might hand back unmodified), then re-scan+re-tag from
+        // scratch. This is a deliberate design property, not an oversight: a rename never leaves
+        // a stale tag sitting in prose past the next edit.
+        var plainText = BeatMarkup.StripEntityTags(TextSanitizerService.Sanitize((newText ?? "").Trim()));
+        var candidates = universeId != Guid.Empty
+            ? await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId, ct)
+            : [];
+        var mentionMatches = EntityMentionScanner.Scan(plainText, candidates);
+        var trimmed = EntityMentionScanner.ApplyTags(plainText, mentionMatches);
+
         if (beat.Text == trimmed) return; // no-op — don't bump UpdatedAt for nothing
 
         beat.Text          = trimmed;
@@ -269,12 +320,13 @@ public class NodeWorkbenchService
                 .ContinueWith(t => log.LogError(t.Exception, "EditSession.TryLogBeatAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
 
-        // Fire-and-forget: re-index which entities this beat mentions so
-        // future entity saves can propagate EntityStale to this beat.
-        if (ramification != null)
-            _ = Task.Run(() => ramification.IndexBeatMentionsAsync(beatId, trimmed), CancellationToken.None)
-                .ContinueWith(t => log.LogError(t.Exception, "IndexBeatMentionsAsync background task failed"),
-                    TaskContinuationOptions.OnlyOnFaulted);
+        // Fire-and-forget: derive BeatEntityMentions from the tags just placed above — exact,
+        // not inferred (replaces the old EntityRamificationService.IndexBeatMentionsAsync name/
+        // alias re-scan for beats saved through this path; that scan remains intact and still
+        // used by --scan-entity-mentions for any beat not yet re-saved/tagged).
+        _ = Task.Run(() => EntityMentionScanner.DeriveAndSaveMentionsAsync(dbFactory, beatId, trimmed, CancellationToken.None), CancellationToken.None)
+            .ContinueWith(t => log.LogError(t.Exception, "EntityMentionScanner.DeriveAndSaveMentionsAsync background task failed"),
+                TaskContinuationOptions.OnlyOnFaulted);
 
         // Fire-and-forget: auto-engage prose quality checks. Resolve slug
         // here while the db context is still open; the validator only needs
@@ -288,8 +340,13 @@ public class NodeWorkbenchService
                 .FirstOrDefaultAsync(ct);
         }
 
+        // Both validators get the STRIPPED text — pattern/regex checks and any LLM-facing intent
+        // check should see plain prose, not entity markup (see Phase 1a's confirmed LogicSweep/
+        // Embedding findings for why raw tags are unsafe to feed into text-matching/LLM prompts).
+        var strippedForAnalysis = BeatMarkup.StripEntityTags(trimmed);
+
         if (postBeatValidator != null && beatSlug != null)
-            _ = Task.Run(() => postBeatValidator.QuickValidateAsync(beatSlug, trimmed, beatId), CancellationToken.None)
+            _ = Task.Run(() => postBeatValidator.QuickValidateAsync(beatSlug, strippedForAnalysis, beatId), CancellationToken.None)
                 .ContinueWith(t => log.LogError(t.Exception, "QuickValidateAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
 
@@ -299,7 +356,7 @@ public class NodeWorkbenchService
             var slug2    = beatSlug;
             var synopsis = beat.Description!;
             _ = Task.Run(
-                    () => semanticFidelity.CheckBeatIntentDriftAsync(number, slug2, trimmed, synopsis),
+                    () => semanticFidelity.CheckBeatIntentDriftAsync(number, slug2, strippedForAnalysis, synopsis),
                     CancellationToken.None)
                 .ContinueWith(t => log.LogError(t.Exception, "CheckBeatIntentDriftAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
@@ -308,32 +365,10 @@ public class NodeWorkbenchService
         // Fire-and-forget: blast-radius mini re-check (2026-08-14). Every prose edit — not just
         // an automated fix pass — is exactly where VIGL's regressions came from this session (the
         // Ocipheus mis-fix, the Ch18 over-correction), so this runs for every save through this
-        // one write path, not a special "fix mode" flag. Resolves the containing BookNode by
-        // walking ParentNodeId up from the beat's direct chapter node while `db` is still open —
-        // the background task below gets its own contexts via blastRadius/logicSweep's own
-        // dbFactory, since `db` is disposed once this method returns.
-        Guid? bookNodeId = null;
-        if (blastRadius != null && logicSweep != null)
-        {
-            var directNodeId = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.BeatId == beatId)
-                .Select(bn => bn.NodeId)
-                .FirstOrDefaultAsync(ct);
-            if (directNodeId != Guid.Empty)
-            {
-                var walkId = directNodeId;
-                for (var depth = 0; depth < 10; depth++)
-                {
-                    var parent = await db.Nodes.AsNoTracking()
-                        .Where(n => n.Id == walkId)
-                        .Select(n => n.ParentNodeId)
-                        .FirstOrDefaultAsync(ct);
-                    if (parent == null) { bookNodeId = walkId; break; }
-                    walkId = parent.Value;
-                }
-            }
-        }
-
+        // one write path, not a special "fix mode" flag. bookNodeId was already resolved above
+        // (also used to scope the entity-mention scanner) — the background task below gets its
+        // own contexts via blastRadius/logicSweep's own dbFactory, since `db` is disposed once
+        // this method returns.
         if (blastRadius != null && logicSweep != null && bookNodeId.HasValue)
         {
             var bnId = bookNodeId.Value;
@@ -386,16 +421,24 @@ public class NodeWorkbenchService
             throw new ArgumentException("A title for the duplicate is required.", nameof(newTitle));
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var source = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == sourceId, ct)
+        // IgnoreQueryFilters(): explicit sourceId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == sourceId, ct)
             ?? throw new InvalidOperationException($"Node {sourceId} not found.");
 
         // Serializable so the sibling-max read + inserts can't race a concurrent
         // create/duplicate under the same parent (mirrors ImportNodeCli).
         await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
 
+        // IgnoreQueryFilters() + explicit UniverseId: "siblings" means same parent AND same
+        // universe as `source`, not whatever the ambient scope happens to be — a blanket
+        // IgnoreQueryFilters() alone would wrongly mix every universe's root nodes together for
+        // the ParentNodeId==null case (same bug class found and fixed in
+        // BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17, but the fix here needs the extra
+        // UniverseId filter since there's no single explicit id to fall back on).
         var siblingMaxSort = source.ParentNodeId.HasValue
-            ? await db.Nodes.Where(s => s.ParentNodeId == source.ParentNodeId).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0
-            : await db.Nodes.Where(s => s.ParentNodeId == null).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
+            ? await db.Nodes.IgnoreQueryFilters().Where(s => s.ParentNodeId == source.ParentNodeId && s.UniverseId == source.UniverseId).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0
+            : await db.Nodes.IgnoreQueryFilters().Where(s => s.ParentNodeId == null && s.UniverseId == source.UniverseId).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
 
         // One contiguous block of Beat.Number values, allocated as we walk the tree.
         var nextNumber = new[] { (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1 };
@@ -415,7 +458,9 @@ public class NodeWorkbenchService
         ProseDbContext db, Guid srcNodeId, string? titleOverride,
         Guid? newParentId, double sortKey, int[] nextNumber, CancellationToken ct)
     {
-        var src = await db.Nodes.AsNoTracking().FirstAsync(s => s.Id == srcNodeId, ct);
+        // IgnoreQueryFilters(): explicit srcNodeId, not an ambient scope (same bug class found
+        // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var src = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstAsync(s => s.Id == srcNodeId, ct);
         var newId = Guid.CreateVersion7();
         var title = titleOverride ?? src.Title;
         var slug = $"{Slugify(title)}-{newId.ToString("N")[..8]}";
@@ -470,7 +515,9 @@ public class NodeWorkbenchService
         }
 
         // Recurse into child nodes, preserving their order.
-        var children = await db.Nodes.AsNoTracking()
+        // IgnoreQueryFilters(): explicit srcNodeId, not an ambient scope (same bug class found
+        // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var children = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(s => s.ParentNodeId == srcNodeId)
             .OrderBy(s => s.SortKey)
             .Select(s => new { s.Id, s.SortKey })
@@ -649,7 +696,9 @@ public class NodeWorkbenchService
     public async Task<(int Children, int Beats)> SplitIntoCollectionAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var parent = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var parent = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         // Guard: refuse to split a node that is ALREADY a Collection (has child
@@ -756,7 +805,9 @@ public class NodeWorkbenchService
     public async Task<(Guid ChapterId, string Slug, int Beats)?> WrapInSingleChapterAsync(Guid storyId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var story = await db.Nodes.FirstOrDefaultAsync(s => s.Id == storyId, ct)
+        // IgnoreQueryFilters(): explicit storyId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var story = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == storyId, ct)
             ?? throw new InvalidOperationException($"Node {storyId} not found.");
 
         var existingChildren = await db.Nodes.CountAsync(s => s.ParentNodeId == storyId, ct);
@@ -796,7 +847,9 @@ public class NodeWorkbenchService
     public async Task<bool> SetCanonAsync(Guid nodeId, bool canon, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct);
         if (node == null) return false;
         node.IsCanon = canon;
         node.CanonAt = canon ? DateTime.UtcNow : null;
@@ -1318,7 +1371,9 @@ public class NodeWorkbenchService
     public async Task<int> MaterializeChapterFromHtmlAsync(Guid chapterNodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == chapterNodeId, ct)
+        // IgnoreQueryFilters(): explicit chapterNodeId, not an ambient scope (same bug class
+        // found and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == chapterNodeId, ct)
             ?? throw new InvalidOperationException($"Node {chapterNodeId} not found.");
 
         var existingCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == chapterNodeId && true, ct);
@@ -1655,7 +1710,9 @@ public class NodeWorkbenchService
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+            // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found
+            // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
                 ?? throw new InvalidOperationException($"Node {nodeId} not found.");
             node.Status = "narrating";
             await db.SaveChangesAsync(ct);
@@ -1914,7 +1971,9 @@ public class NodeWorkbenchService
     {
         ArgumentNullException.ThrowIfNull(dials);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         node.VoiceId         = dials.VoiceId;
@@ -1942,7 +2001,9 @@ public class NodeWorkbenchService
     public async Task<bool> NarrateBeatAsync(Guid nodeId, Guid beatId, bool force = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var ordered = await GetOrderedBeatsAsync(nodeId, ct);
@@ -2056,7 +2117,9 @@ public class NodeWorkbenchService
                 "TTS is not configured (no ElevenLabs API key). For a free local narrator, pass --tts piper|kokoro|chatterbox.");
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var ordered = (await GetOrderedBeatsAsync(nodeId, ct))
@@ -2179,10 +2242,14 @@ public class NodeWorkbenchService
                         // v2 stitches on prior request-ids; v3 does NOT (it would disjoint) —
                         // text conditioning (previous/next) is safe for both.
                         IList<string>? stitch = !isV3 && prevReqIds.Count > 0 ? prevReqIds : null;
+                        // Cross-segment boundary reads go straight to Beat.Text (chunks[] is
+                        // already NarrationText.Clean-ed via AssembleSegmentText, but a neighboring
+                        // segment's own text isn't until cleaned here) — must clean before Tail/Head
+                        // or ElevenLabs conditioning would see raw markdown/beat-markers/entity tags.
                         var prevText = ci > 0 ? Tail(chunks[ci - 1])
-                                     : si > 0 ? Tail(segments[si - 1][^1].Beat.Text) : null;
+                                     : si > 0 ? Tail(NarrationText.Clean(segments[si - 1][^1].Beat.Text ?? "")) : null;
                         var nextText = ci < chunks.Count - 1 ? Head(chunks[ci + 1])
-                                     : si < segments.Count - 1 ? Head(segments[si + 1][0].Beat.Text) : null;
+                                     : si < segments.Count - 1 ? Head(NarrationText.Clean(segments[si + 1][0].Beat.Text ?? "")) : null;
 
                         // Fetch at the best format the tier allows (pcm_44100 lossless →
                         // mp3_192 → mp3_128) and resolve to PCM so the silence-gap assembly
@@ -2355,7 +2422,9 @@ public class NodeWorkbenchService
     public async Task<string?> ExportCombinedAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var ordered = (await GetOrderedBeatsAsync(nodeId, ct))
@@ -3063,7 +3132,7 @@ public class NodeWorkbenchService
         var prevParts = new List<string>();
         for (int i = targetIndex - 1; i >= 0; i--)
         {
-            var t = ordered[i].Beat.Text;
+            var t = BeatMarkup.StripEntityTags(ordered[i].Beat.Text);
             if (string.IsNullOrEmpty(t)) continue;
             if (prevBuf.Length + t.Length > contextChars) break;
             prevBuf.Append(t).Append('\n');
@@ -3073,7 +3142,7 @@ public class NodeWorkbenchService
 
         for (int i = targetIndex + 1; i < ordered.Count; i++)
         {
-            var t = ordered[i].Beat.Text;
+            var t = BeatMarkup.StripEntityTags(ordered[i].Beat.Text);
             if (string.IsNullOrEmpty(t)) continue;
             if (nextBuf.Length + t.Length > contextChars) break;
             nextBuf.Append(t).Append('\n');

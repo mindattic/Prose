@@ -29,7 +29,7 @@ public static class CorponationMapper
     public static List<CorponationData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Corponations.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "corponation"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "corponation"),
                 c => c.Id, e => e.Id,
                 (c, e) => new { c.Id, Name = e.Name, c.Sector, c.Tier, c.Rating, c.VoteCount })
             .ToList();
@@ -69,7 +69,7 @@ public static class CorponationMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "corponation")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "corponation" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "corponation"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -284,7 +284,7 @@ public static class CorponationMapper
 
         // Minimal rows for blob-free ACTIVE entities that have no relational row yet.
         var activeCorpIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "corponation" && e.IsActive)
+            .Where(e => e.EntityType == "corponation")
             .Select(e => e.Id)
             .ToHashSet();
 

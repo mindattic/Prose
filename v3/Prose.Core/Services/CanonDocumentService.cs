@@ -188,7 +188,9 @@ public class CanonDocumentService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.FirstOrDefaultAsync(n => n.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
         if (node == null)
             return new UpsertResult(false, null, "node_not_found", $"Node {nodeId} not found.");
 

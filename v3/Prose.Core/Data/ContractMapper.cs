@@ -31,7 +31,7 @@ public static class ContractMapper
     public static List<ContractData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Contracts.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "contract"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "contract"),
                 c => c.Id, e => e.Id,
                 (c, e) => new { c.Id, Name = e.Name, c.Category, c.Rating, c.VoteCount })
             .ToList();
@@ -68,7 +68,7 @@ public static class ContractMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "contract")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "contract" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "contract"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -290,7 +290,7 @@ public static class ContractMapper
         };
 
         var contractEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "contract" && e.IsActive)
+            .Where(e => e.EntityType == "contract")
             .Select(e => e.Id)
             .ToHashSet();
 

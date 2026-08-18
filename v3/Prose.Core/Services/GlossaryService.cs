@@ -195,9 +195,15 @@ public class GlossaryService(
             .Include(bn => bn.Beat)
             .ToListAsync(ct);
 
+        // Strip inline entity-GUID tags (corpus-trust-recovery Phase 1a) — mandatory, not
+        // optional polish: AppearsInText's regex could otherwise match inside a tag's own
+        // guid="..." attribute text. This does not by itself close the original "Silence"
+        // ambiguity (a glossary term colliding with an ordinary word) — GlossaryTerm has no FK to
+        // Entities.Id today, so keying term-inclusion off a specific entity's tag presence would
+        // need a separate, larger schema change; logged, not built here.
         return string.Join("\n\n", beatNodes
             .Where(bn => true)
-            .Select(bn => bn.Beat!.Text)
+            .Select(bn => BeatMarkup.StripEntityTags(bn.Beat!.Text))
             .Where(t => !string.IsNullOrWhiteSpace(t)));
     }
 

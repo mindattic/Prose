@@ -53,7 +53,8 @@ public static class TimelineCli
             node = await db.Nodes.AsNoTracking()
                 .FirstOrDefaultAsync(s => s.NodeCode == code.ToUpperInvariant());
         else if (!string.IsNullOrWhiteSpace(slug))
-            node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
         else
             node = await db.Nodes.AsNoTracking()
                 .FirstOrDefaultAsync(s => s.Id.ToString().Replace("-", "").StartsWith(id!.Replace("-", "")));

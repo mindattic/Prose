@@ -64,7 +64,9 @@ public class NodeDocService
     public async Task<NodeDocResult> GenerateAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var nodeCode = (node.NodeCode ?? node.Slug).ToUpperInvariant();

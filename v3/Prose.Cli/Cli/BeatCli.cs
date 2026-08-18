@@ -337,7 +337,8 @@ public static class BeatCli
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(idOrSlug, out var g))
         {
-            var byId = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
             if (byId != null) return byId.Id;
         }
         var bySlug = await db.Nodes.AsNoTracking()

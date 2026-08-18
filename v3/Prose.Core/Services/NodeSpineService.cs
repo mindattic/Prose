@@ -38,7 +38,9 @@ public class NodeSpineService
     public async Task ScaffoldAsync(Guid nodeId, string title, bool bibleAlreadySet, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(x => x.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == nodeId, ct);
         if (node == null) return;
 
         bool changed = false;
@@ -69,7 +71,9 @@ public class NodeSpineService
     public async Task<SpineDto?> GetSpineAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(x => x.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == nodeId, ct);
         if (node == null) return null;
 
         var amendments = await db.NodeAmendments
@@ -97,7 +101,9 @@ public class NodeSpineService
     public async Task SetUserStoriesAsync(Guid nodeId, string content, string updatedBy, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(x => x.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == nodeId, ct);
         if (node == null) throw new InvalidOperationException($"Node {nodeId} not found.");
 
         node.NodeUserStories = content;
@@ -159,7 +165,9 @@ public class NodeSpineService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(x => x.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == nodeId, ct);
         if (node == null) throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var amendmentCount = await db.NodeAmendments
@@ -223,7 +231,9 @@ public class NodeSpineService
     public async Task<(bool drifted, string reason)> CheckDriftAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(x => x.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == nodeId, ct);
         if (node == null) return (false, "node not found");
 
         var latestPin = await db.NodeSpineVersions

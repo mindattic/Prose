@@ -142,7 +142,7 @@ public class CharacterRepository : EfRepository<CharacterData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "character" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "character" && e.Slug == slug);
         if (entity == null) return null;
         return CharacterMapper.LoadOne(db, entity.Id);
     }
@@ -169,7 +169,7 @@ public class CharacterRepository : EfRepository<CharacterData>
 
         using var db = dbFactory.CreateDbContext();
 
-        // Universal Entity row (Name / Slug / Status / IsActive). Same logic
+        // Universal Entity row (Name / Slug / Status). Same logic
         // EfRepository.Save uses, kept here so the relational path doesn't
         // depend on the JSON-blob path being correct.
         var name = item.Name ?? "";
@@ -378,7 +378,7 @@ public class CorponationRepository : EfRepository<CorponationData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "corponation" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "corponation" && e.Slug == slug);
         if (entity == null) return null;
         return CorponationMapper.LoadOne(db, entity.Id);
     }
@@ -537,7 +537,7 @@ public class DistrictRepository : EfRepository<DistrictData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "place" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "place" && e.Slug == slug);
         if (entity == null) return null;
         return PlaceMapper.LoadOne(db, entity.Id);
     }
@@ -706,7 +706,7 @@ public class FactionRepository : EfRepository<FactionData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "faction" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "faction" && e.Slug == slug);
         if (entity == null) return null;
         return FactionMapper.LoadOne(db, entity.Id);
     }
@@ -868,7 +868,7 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "document" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "document" && e.Slug == slug);
         if (entity == null) return null;
         return DocumentMapper.LoadOne(db, entity.Id);
     }
@@ -1027,7 +1027,7 @@ public class MotifRepository : EfRepository<MotifData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "motif" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "motif" && e.Slug == slug);
         if (entity == null) return null;
         return MotifMapper.LoadOne(db, entity.Id);
     }
@@ -1186,7 +1186,7 @@ public class WeaponryRepository : EfRepository<WeaponryData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "weapon" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "weapon" && e.Slug == slug);
         if (entity == null) return null;
         return WeaponMapper.LoadOne(db, entity.Id);
     }
@@ -1346,7 +1346,7 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "ammunition" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "ammunition" && e.Slug == slug);
         if (entity == null) return null;
         return AmmunitionMapper.LoadOne(db, entity.Id);
     }
@@ -1505,7 +1505,7 @@ public class EquipmentRepository : EfRepository<EquipmentData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "equipment" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "equipment" && e.Slug == slug);
         if (entity == null) return null;
         return EquipmentMapper.LoadOne(db, entity.Id);
     }
@@ -1664,7 +1664,7 @@ public class TechnologyRepository : EfRepository<TechnologyData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "technology" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "technology" && e.Slug == slug);
         if (entity == null) return null;
         return TechnologyMapper.LoadOne(db, entity.Id);
     }
@@ -1823,7 +1823,7 @@ public class CyberwareRepository : EfRepository<CyberwareData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "cyberware" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "cyberware" && e.Slug == slug);
         if (entity == null) return null;
         return CyberwareMapper.LoadOne(db, entity.Id);
     }
@@ -1983,7 +1983,7 @@ public class VocabularyRepository : EfRepository<VocabularyData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "vocabulary" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "vocabulary" && e.Slug == slug);
         if (entity == null) return null;
         return VocabularyMapper.LoadOne(db, entity.Id);
     }
@@ -2143,7 +2143,7 @@ public class GenemodRepository : EfRepository<GenemodData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "genemod" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "genemod" && e.Slug == slug);
         if (entity == null) return null;
         return GenemodMapper.LoadOne(db, entity.Id);
     }
@@ -2303,7 +2303,7 @@ public class TransportationRepository : EfRepository<TransportationData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "transportation" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "transportation" && e.Slug == slug);
         if (entity == null) return null;
         return TransportationMapper.LoadOne(db, entity.Id);
     }
@@ -2464,7 +2464,7 @@ public class ContractRepository : EfRepository<ContractData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "contract" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "contract" && e.Slug == slug);
         if (entity == null) return null;
         return ContractMapper.LoadOne(db, entity.Id);
     }
@@ -2626,7 +2626,7 @@ public class AutomatonRepository : EfRepository<AutomatonData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "automaton" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "automaton" && e.Slug == slug);
         if (entity == null) return null;
         return AutomatonMapper.LoadOne(db, entity.Id);
     }
@@ -2785,7 +2785,7 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "subsidiary" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "subsidiary" && e.Slug == slug);
         if (entity == null) return null;
         return SubsidiaryMapper.LoadOne(db, entity.Id);
     }
@@ -2945,7 +2945,7 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "entertainment" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "entertainment" && e.Slug == slug);
         if (entity == null) return null;
         return EntertainmentMapper.LoadOne(db, entity.Id);
     }
@@ -3105,7 +3105,7 @@ public class ApparelRepository : EfRepository<ApparelData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "apparel" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "apparel" && e.Slug == slug);
         if (entity == null) return null;
         return ApparelMapper.LoadOne(db, entity.Id);
     }
@@ -3265,7 +3265,7 @@ public class NewsRepository : EfRepository<NewsData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "news" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "news" && e.Slug == slug);
         if (entity == null) return null;
         return NewsMapper.LoadOne(db, entity.Id);
     }
@@ -3425,7 +3425,7 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "archetype" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "archetype" && e.Slug == slug);
         if (entity == null) return null;
         return ArchetypeMapper.LoadOne(db, entity.Id);
     }
@@ -3585,7 +3585,7 @@ public class MaterialRepository : EfRepository<MaterialData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "material" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "material" && e.Slug == slug);
         if (entity == null) return null;
         return MaterialMapper.LoadOne(db, entity.Id);
     }
@@ -3744,7 +3744,7 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "pharmaceutical" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "pharmaceutical" && e.Slug == slug);
         if (entity == null) return null;
         return PharmaceuticalMapper.LoadOne(db, entity.Id);
     }
@@ -3903,7 +3903,7 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "consumer_good" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "consumer_good" && e.Slug == slug);
         if (entity == null) return null;
         return ConsumerGoodMapper.LoadOne(db, entity.Id);
     }
@@ -4063,7 +4063,7 @@ public class QuoteRepository : EfRepository<QuoteData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "quote" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "quote" && e.Slug == slug);
         if (entity == null) return null;
         return QuoteMapper.LoadOne(db, entity.Id);
     }
@@ -4253,7 +4253,7 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "lab_specimen" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "lab_specimen" && e.Slug == slug);
         if (entity == null) return null;
         return LabSpecimenMapper.LoadOne(db, entity.Id);
     }
@@ -4411,7 +4411,7 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "flyover_entity" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "flyover_entity" && e.Slug == slug);
         if (entity == null) return null;
         return FlyoverEntityMapper.LoadOne(db, entity.Id);
     }
@@ -4569,7 +4569,7 @@ public class PsionicRepository : EfRepository<PsionicData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "psionic" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "psionic" && e.Slug == slug);
         if (entity == null) return null;
         return PsionicMapper.LoadOne(db, entity.Id);
     }
@@ -4767,7 +4767,7 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
         if (string.IsNullOrWhiteSpace(slug)) return null;
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.AsNoTracking()
-            .FirstOrDefault(e => e.EntityType == "synthetic" && e.IsActive && e.Slug == slug);
+            .FirstOrDefault(e => e.EntityType == "synthetic" && e.Slug == slug);
         if (entity == null) return null;
         return SyntheticMapper.LoadOne(db, entity.Id);
     }

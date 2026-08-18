@@ -52,7 +52,8 @@ public static class ProseCheckCli
         }
         else
         {
-            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
             if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
             // Recurses past any nested Collection (2026-08-09 fix). Per-beat pattern checks

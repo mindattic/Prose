@@ -144,10 +144,12 @@ public class VoiceTools
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(idOrSlug, out var guid))
         {
-            var byId = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
             if (byId != null) return byId.Id;
         }
-        var bySlug = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var bySlug = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug);
         return bySlug?.Id;
     }
 

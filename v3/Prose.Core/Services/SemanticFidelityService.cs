@@ -420,7 +420,9 @@ public class SemanticFidelityService
         if (string.IsNullOrWhiteSpace(synopsis) || string.IsNullOrWhiteSpace(beatText)) return;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beatNumber = await db.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Number).FirstOrDefaultAsync(ct);
-        var nodeSlug = await db.Nodes.AsNoTracking().Where(n => n.Id == nodeId).Select(n => n.Slug).FirstOrDefaultAsync(ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var nodeSlug = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == nodeId).Select(n => n.Slug).FirstOrDefaultAsync(ct);
         if (string.IsNullOrEmpty(nodeSlug)) return;
         await CheckBeatIntentDriftAsync(beatNumber, nodeSlug, beatText, synopsis, ct);
     }

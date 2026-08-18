@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.Sqlite;
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging.Abstractions;
 using Prose.Core.Data;
@@ -105,7 +105,7 @@ public class TimelineConsistencyServiceTests
         db.Entities.Add(new Entity
         {
             Id = entityId, Name = "Marko Tan", EntityType = "character",
-            IsActive = true, UniverseId = Universe.GlmzId,
+             UniverseId = Universe.GlmzId,
         });
         db.BeatEntityMentions.Add(new BeatEntityMention
         {
@@ -131,7 +131,7 @@ public class TimelineConsistencyServiceTests
         db.Entities.Add(new Entity
         {
             Id = entityId, Name = "Nadia Rao", EntityType = "character",
-            IsActive = true, UniverseId = Universe.GlmzId,
+             UniverseId = Universe.GlmzId,
         });
 
         var deathTime = new DateTime(2225, 3, 15, 10, 0, 0, DateTimeKind.Utc);
@@ -194,7 +194,7 @@ public class TimelineConsistencyServiceTests
         db.Entities.Add(new Entity
         {
             Id = entityId, Name = "Felix Dang", EntityType = "character",
-            IsActive = true, UniverseId = Universe.GlmzId,
+             UniverseId = Universe.GlmzId,
         });
         db.EntityStateEvents.Add(new EntityStateEvent
         {
@@ -232,7 +232,7 @@ public class TimelineConsistencyServiceTests
         db.Entities.Add(new Entity
         {
             Id = entityId, Name = "Bear", EntityType = "character",
-            IsActive = true, UniverseId = Universe.GlmzId,
+             UniverseId = Universe.GlmzId,
         });
         db.BeatEntityMentions.Add(new BeatEntityMention
         {

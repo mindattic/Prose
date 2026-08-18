@@ -30,7 +30,7 @@ public static class CyberwareMapper
     public static List<CyberwareData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.CyberwareItems.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "cyberware"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "cyberware"),
                 c => c.Id, e => e.Id,
                 (c, e) => new { c.Id, Name = e.Name, c.Category, c.Rating, c.VoteCount })
             .ToList();
@@ -71,7 +71,7 @@ public static class CyberwareMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "cyberware")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "cyberware" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "cyberware"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -310,7 +310,7 @@ public static class CyberwareMapper
 
         // Minimal rows for blob-free ACTIVE entities.
         var activeCwIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "cyberware" && e.IsActive)
+            .Where(e => e.EntityType == "cyberware")
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -349,7 +349,7 @@ public static class CyberwareMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

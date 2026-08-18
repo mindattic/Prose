@@ -28,7 +28,7 @@ public static class ConsumerGoodMapper
     public static List<ConsumerGoodData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.ConsumerGoods.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "consumer_good"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "consumer_good"),
                 cg => cg.Id, e => e.Id,
                 (cg, e) => new { cg.Id, Name = e.Name, cg.Category, cg.Rating, cg.VoteCount })
             .ToList();
@@ -69,7 +69,7 @@ public static class ConsumerGoodMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "consumer_good")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "consumer_good" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "consumer_good"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -277,7 +277,7 @@ public static class ConsumerGoodMapper
 
         // Minimal rows for blob-free ACTIVE entities.
         var activeCgIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "consumer_good" && e.IsActive)
+            .Where(e => e.EntityType == "consumer_good")
             .Select(e => e.Id)
             .ToHashSet();
 

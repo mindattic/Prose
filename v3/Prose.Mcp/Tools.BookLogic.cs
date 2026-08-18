@@ -140,7 +140,8 @@ public class BookLogicTools(
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(idOrSlug, out var g))
-            return (await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == g))?.Id;
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            return (await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g))?.Id;
         return (await db.Nodes.AsNoTracking()
             .FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug))?.Id;
     }

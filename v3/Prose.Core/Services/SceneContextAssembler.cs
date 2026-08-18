@@ -412,7 +412,7 @@ public class SceneContextAssembler(
                 if (neighborIds.Count > 0)
                 {
                     var neighbors = await db.Set<Entity>().AsNoTracking()
-                        .Where(en => neighborIds.Contains(en.Id) && en.IsActive && en.Status != "archived")
+                        .Where(en => neighborIds.Contains(en.Id) && en.Status != "archived")
                         .ToListAsync(ct);
                     neighbors.RemoveAll(n => ExcludedTypes.Contains(n.EntityType));
                     foreach (var n in neighbors)
@@ -498,7 +498,7 @@ public class SceneContextAssembler(
             await using var db = await dbFactory.CreateDbContextAsync(ct);
 
             var entities = await db.Set<Entity>().AsNoTracking()
-                .Where(e => e.IsActive && e.Status != "archived" && e.Name.Length >= 3)
+                .Where(e => e.Status != "archived" && e.Name.Length >= 3)
                 .Select(e => new { e.Id, e.Name, e.EntityType, e.OriginNodeId })
                 .ToListAsync(ct);
             foreach (var e in entities)

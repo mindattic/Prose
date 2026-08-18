@@ -101,7 +101,9 @@ public class BeatRebuildService
         string slug, title;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Id == nodeId, ct);
+            // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found
+            // and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Id == nodeId, ct);
             if (s == null) return new(nodeId, "", "", false, 0, 0, 0, false, null, "Node not found.");
             slug = s.Slug; title = s.Title;
         }
@@ -374,7 +376,10 @@ public class BeatRebuildService
             sortKey += 100.0;
         }
 
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17). Stays tracked (no AsNoTracking) —
+        // UpdatedAt below needs to persist.
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct);
         if (node != null) node.UpdatedAt = DateTime.UtcNow;
 
         await db.SaveChangesAsync(ct);

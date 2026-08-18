@@ -29,7 +29,7 @@ public static class TechnologyMapper
     public static List<TechnologyData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Technologies.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "technology"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "technology"),
                 t => t.Id, e => e.Id,
                 (t, e) => new { t.Id, Name = e.Name, t.Rating, t.VoteCount })
             .ToList();
@@ -69,7 +69,7 @@ public static class TechnologyMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "technology")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "technology" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "technology"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -315,7 +315,7 @@ public static class TechnologyMapper
 
         // Minimal rows for blob-free ACTIVE entities.
         var activeTechIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "technology" && e.IsActive)
+            .Where(e => e.EntityType == "technology")
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -355,7 +355,7 @@ public static class TechnologyMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.IsActive && (e.Name == name || e.Slug == slug))
+            .Where(e => (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }
@@ -365,7 +365,7 @@ public static class TechnologyMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

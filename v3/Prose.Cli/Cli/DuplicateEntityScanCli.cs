@@ -60,7 +60,6 @@ public static class DuplicateEntityScanCli
                         id = c.Id,
                         name = c.Name,
                         origin_node_id = c.OriginNodeId,
-                        is_active = c.IsActive,
                         description_snippet = c.DescriptionSnippet,
                         mention_count = c.MentionCount,
                     }),
@@ -83,9 +82,8 @@ public static class DuplicateEntityScanCli
             Console.WriteLine($"⚠️  {g.MatchedOn}");
             foreach (var c in g.Candidates)
             {
-                var active = c.IsActive ? "active" : "RETIRED";
                 var scope = c.OriginNodeId is { } id ? $"scoped to {id}" : "universe-wide (unscoped)";
-                Console.WriteLine($"   - {c.Name}  [{active}, {scope}, {c.MentionCount} beat mention(s)]  id={c.Id}");
+                Console.WriteLine($"   - {c.Name}  [{scope}, {c.MentionCount} beat mention(s)]  id={c.Id}");
                 if (c.DescriptionSnippet != null)
                     Console.WriteLine($"     \"{c.DescriptionSnippet}\"");
             }

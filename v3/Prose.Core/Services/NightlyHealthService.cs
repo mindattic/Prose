@@ -290,13 +290,15 @@ public class NightlyHealthService
     private async Task<List<BookMeta>> ResolveBooksAsync(string? slug, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var query = db.Nodes.OfType<BookNode>().AsNoTracking();
+        // IgnoreQueryFilters() unconditionally: "analysing all non-WIP books" is meant to sweep
+        // every universe's books, not whichever universe happens to be ambient in this process —
+        // and an explicit --slug target is exactly as much an explicit identifier as an id, so it
+        // must bypass ambient scope too (found live 2026-08-17: the single-slug branch was missing
+        // this, the same bug class as BookArchiveService.ArchiveAsync/WalkAsync — a slug for a
+        // non-ambient-universe book would silently resolve to zero books).
+        var query = db.Nodes.OfType<BookNode>().AsNoTracking().IgnoreQueryFilters();
         if (slug != null)
             query = query.Where(n => n.Slug == slug);
-        else
-            // "analysing all non-WIP books" is meant to sweep every universe's books, not
-            // whichever universe happens to be ambient in this process.
-            query = query.IgnoreQueryFilters();
         return await query
             .OrderBy(n => n.SortKey)
             .Select(n => new BookMeta(n.Id, n.Slug, n.NodeCode))
@@ -332,7 +334,11 @@ public class NightlyHealthService
         foreach (var d in direct)
             acc.Add(new OrderedBeatMeta(d.Id, d.Number, d.Title, d.Text, d.Score));
 
-        var children = await db.Nodes
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — same bug class found and
+        // fixed in NodeWorkbenchService.WalkAsync (its own independent copy of this exact
+        // tree-walk idiom), 2026-08-17: without this, every chapter of a non-ambient-universe book
+        // is silently invisible to this health-check walk.
+        var children = await db.Nodes.IgnoreQueryFilters()
             .Where(n => n.ParentNodeId == nodeId)
             .OrderBy(n => n.SortKey)
             .Select(n => n.Id)

@@ -30,7 +30,7 @@ public static class FlyoverEntityMapper
     public static List<FlyoverEntityData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.FlyoverEntities.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "flyover_entity"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "flyover_entity"),
                 f => f.Id, e => e.Id,
                 (f, e) => new { f.Id, Name = e.Name, f.Classification, f.ThreatLevel, f.Rating, f.VoteCount })
             .ToList();
@@ -72,7 +72,7 @@ public static class FlyoverEntityMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "flyover_entity")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "flyover_entity" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "flyover_entity"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -250,7 +250,7 @@ public static class FlyoverEntityMapper
         };
 
         var flyoverEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "flyover_entity" && e.IsActive)
+            .Where(e => e.EntityType == "flyover_entity")
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -327,8 +327,7 @@ public static class FlyoverEntityMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive
-                && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

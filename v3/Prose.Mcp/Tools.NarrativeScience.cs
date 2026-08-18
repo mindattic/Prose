@@ -104,7 +104,8 @@ public class NarrativeScienceTools(
             nodeId = g;
         else
         {
-            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
             if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
             nodeId = s.Id;
         }

@@ -51,8 +51,10 @@ public static class RebeatNodeCli
             else
             {
                 Node? node;
-                if (!string.IsNullOrWhiteSpace(slug)) node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
-                else if (Guid.TryParse(id, out var g)) node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
+                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+                if (!string.IsNullOrWhiteSpace(slug)) node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
+                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+                else if (Guid.TryParse(id, out var g)) node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
                 else node = await db.Nodes.AsNoTracking().Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
                 { { Count: 1 } m => m[0], _ => null };
                 if (node == null) { Console.Error.WriteLine("[rebeat] Node not found (or id prefix ambiguous)."); return 1; }

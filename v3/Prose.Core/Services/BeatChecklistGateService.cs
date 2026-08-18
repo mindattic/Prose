@@ -91,7 +91,9 @@ public sealed class BeatChecklistGateService(
     public async Task<ChecklistRunResult> RunAsync(Guid nodeId, bool force = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/NodeWorkbenchService.WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         // Book nodes hold the live manuscript on chapter children (same convention
@@ -141,7 +143,11 @@ public sealed class BeatChecklistGateService(
             }
 
             var povVoiceHint = await verificationContext.GetPovVoiceHintAsync(beat.Id, povVoiceCache, ct);
-            var (verdict, parseFailed) = await EvaluateBeatAsync(beat.Id, beat.Number, beat.Text, donts, moves, povVoiceHint, ct);
+            // TextHash above deliberately stays keyed to the raw (tagged) Beat.Text — it must match
+            // how NodeWorkbenchService.UpdateBeatTextAsync computed it at save time. The LLM grader
+            // and tic-scanner below need the reader-facing plain text instead, so strip here.
+            var cleanText = BeatMarkup.StripEntityTags(beat.Text);
+            var (verdict, parseFailed) = await EvaluateBeatAsync(beat.Id, beat.Number, cleanText, donts, moves, povVoiceHint, ct);
             evaluated++;
             if (parseFailed) notEvaluated.Add(beat.Number);
 
@@ -186,7 +192,7 @@ public sealed class BeatChecklistGateService(
         // ── deterministic corpus-rate checks (ported from CraftRuleAuditService,
         // 2026-08-08 — a per-mannerism LLM rule over a whole-node blob can't see a rate
         // defect like "298 italics across 91 beats"; these two count instead of ask) ──
-        var auditBeats = beats.Select(b => new AuditBeat(b.Id, b.Number, b.Text, b.SortKey)).ToList();
+        var auditBeats = beats.Select(b => new AuditBeat(b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), b.SortKey)).ToList();
         var detCtx = new AuditContext(nodeId, node.UniverseId, "", auditBeats, new Dictionary<string, object?>());
         var interiorityVerdicts = await new InteriorityDensityRule().EvaluateAsync(detCtx, ct);
         var retiredTicVerdicts = await new RetiredTicRule().EvaluateAsync(detCtx, ct);

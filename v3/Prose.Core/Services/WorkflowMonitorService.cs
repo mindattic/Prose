@@ -147,7 +147,7 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
         // IgnoreQueryFilters(): this is a global corpus-wide check by design (every universe's
         // embedding coverage), not scoped to whichever universe happens to be ambient.
         return await db.Entities.AsNoTracking().IgnoreQueryFilters()
-            .Where(e => e.IsActive && !db.EntityEmbeddings.Any(em => em.EntityId == e.Id))
+            .Where(e => !db.EntityEmbeddings.Any(em => em.EntityId == e.Id))
             .CountAsync(ct);
     }
 

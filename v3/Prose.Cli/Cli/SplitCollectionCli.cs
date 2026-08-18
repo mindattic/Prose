@@ -38,8 +38,10 @@ public static class SplitCollectionCli
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             Node? s;
-            if (!string.IsNullOrWhiteSpace(slug)) s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == slug);
-            else if (Guid.TryParse(id, out var g)) s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Id == g);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            if (!string.IsNullOrWhiteSpace(slug)) s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == slug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            else if (Guid.TryParse(id, out var g)) s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Id == g);
             else s = await db.Nodes.AsNoTracking().Where(x => x.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
             { { Count: 1 } m => m[0], _ => null };
             if (s == null) { Console.Error.WriteLine("[split-collection] Node not found (or id prefix ambiguous)."); return 1; }

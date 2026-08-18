@@ -106,8 +106,9 @@ public class AmmunitionLinkerService
                 -- ON DELETE NO ACTION because CharacterBelongingsGear already
                 -- cascades from Characters → Entities; a second cascade path
                 -- through Entities here would trip SQL Server error 1785.
-                -- Entities are archived (IsActive=0), not hard-deleted, so
-                -- the FK is purely for join integrity.
+                -- Deleting a gear Entity still referenced here is blocked
+                -- (EntityDeleteGuard) until the gear-ownership row is relinked
+                -- or removed — no soft-disable flag involved.
                 ALTER TABLE [dbo].[CharacterBelongingsGear]
                     ADD CONSTRAINT [FK_CharacterBelongingsGear_Entities_GearEntityId]
                         FOREIGN KEY ([GearEntityId]) REFERENCES [dbo].[Entities]([Id]) ON DELETE NO ACTION;
@@ -189,7 +190,7 @@ public class AmmunitionLinkerService
         if (!string.IsNullOrWhiteSpace(kylePrimary))
         {
             var silenceId = await db.Entities.AsNoTracking()
-                .Where(e => e.IsActive && e.EntityType == "weapon" && e.Name == kylePrimary)
+                .Where(e => e.EntityType == "weapon" && e.Name == kylePrimary)
                 .Select(e => (Guid?)e.Id)
                 .FirstOrDefaultAsync(ct);
             if (silenceId.HasValue)
@@ -225,7 +226,7 @@ public class AmmunitionLinkerService
 
         // Pull existing ammo names so the LLM can reuse rather than inventing.
         var existingAmmoCatalog = await db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "ammunition" && e.IsActive)
+            .Where(e => e.EntityType == "ammunition")
             .Select(e => e.Name)
             .ToListAsync(ct);
 
@@ -359,7 +360,6 @@ public class AmmunitionLinkerService
             Description = description,
             CreatedAt   = DateTime.UtcNow,
             ModifiedAt  = DateTime.UtcNow,
-            IsActive    = true,
         });
         // Subtype row — Ammunition table has its own columns; minimal row is fine.
         db.Ammunitions.Add(new Ammunition { Id = id, Name = name });

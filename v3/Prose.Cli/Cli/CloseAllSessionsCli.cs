@@ -51,7 +51,8 @@ public static class CloseAllSessionsCli
                     continue;
                 }
 
-                var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == session.NodeId);
+                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+                var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == session.NodeId);
                 if (node == null)
                 {
                     // Node was deleted after this session opened — nothing left to sync

@@ -20,6 +20,13 @@ namespace Prose.Core.Services;
 /// rows for queryable beat scans, and a canonical
 /// <see cref="Prose.Core.Data.Entities.Record"/> JSON blob that round-trips
 /// the full <see cref="Models.Chapter"/> domain object.
+///
+/// No status flag (temporal-hygiene rule): a chapter's existence in the live
+/// <c>Chapters</c>/<c>Entities</c> tables IS the fact of it being current.
+/// <see cref="DeleteChapter"/> hard-deletes both rows in one transaction — <c>Chapters</c>
+/// has no database FK to <c>Entities</c> (unlike every typed subtype), so both must be
+/// deleted explicitly or the <c>Chapters</c>/<c>ChapterCharacters</c>/<c>ChapterBeats</c>
+/// rows would silently orphan. Recoverable via <c>Entities_History</c> (system-versioned).
 /// </summary>
 public class ChapterRepository : IChapterRepository
 {
@@ -52,7 +59,7 @@ public class ChapterRepository : IChapterRepository
         using var db = dbFactory.CreateDbContext();
         var jsons = db.Records
             .AsNoTracking()
-            .Where(r => r.Entity!.EntityType == "chapter" && r.Entity.IsActive)
+            .Where(r => r.Entity!.EntityType == "chapter")
             .OrderByDescending(r => r.UpdatedAt)
             .Select(r => r.Json)
             .ToList();
@@ -104,7 +111,6 @@ public class ChapterRepository : IChapterRepository
                 Description = chapter.Synopsis,
                 CreatedAt   = chapter.Created == default ? DateTime.UtcNow : chapter.Created,
                 ModifiedAt  = DateTime.UtcNow,
-                IsActive    = true,
             };
             db.Entities.Add(entity);
         }
@@ -114,8 +120,6 @@ public class ChapterRepository : IChapterRepository
             entity.Slug        = WorldGraphService.Slugify(chapter.Title);
             entity.Description = chapter.Synopsis;
             entity.ModifiedAt  = DateTime.UtcNow;
-            entity.IsActive    = true;
-            entity.ArchivedAt  = null;
             entity.Status      = string.IsNullOrEmpty(chapter.Status) ? entity.Status : chapter.Status;
         }
 
@@ -171,18 +175,30 @@ public class ChapterRepository : IChapterRepository
         catch (Exception ex) { log.LogWarning(ex, "OnChapterSaved subscriber threw for chapter {Id}", chapter.Id); }
     }
 
+    /// <summary>
+    /// Hard-deletes the chapter — no status flag; existence in the live table is the only
+    /// signal of "current." <c>Chapters</c> has no database FK to <c>Entities</c> (unlike every
+    /// typed subtype), so the <c>Chapters</c> row is deleted explicitly first (its own declared
+    /// Cascade FKs take <c>ChapterCharacters</c>/<c>ChapterBeats</c> with it), then the
+    /// <c>Entities</c> row — in one transaction. Recoverable via <c>Entities_History</c>
+    /// (system-versioned) or <c>prose --restore-entity</c>.
+    /// </summary>
     public void DeleteChapter(string id)
     {
         if (string.IsNullOrEmpty(id)) return;
         var guid = ParseGuid(id);
         using var db = dbFactory.CreateDbContext();
-        var entity = db.Entities.FirstOrDefault(e => e.Id == guid);
+        using var tx = db.Database.BeginTransaction();
+
+        var entity = db.Entities.FirstOrDefault(e => e.Id == guid && e.EntityType == "chapter");
         if (entity == null) return;
-        entity.IsActive   = false;
-        entity.Status     = "archived";
-        entity.ArchivedAt = DateTime.UtcNow;
-        entity.ModifiedAt = DateTime.UtcNow;
+
+        var chapter = db.Chapters.FirstOrDefault(c => c.Id == guid);
+        if (chapter != null) db.Chapters.Remove(chapter);
+        db.Entities.Remove(entity);
+
         db.SaveChanges();
+        tx.Commit();
     }
 
     private static Guid? ResolveCharacterIdByName(ProseDbContext db, string name)
@@ -190,7 +206,7 @@ public class ChapterRepository : IChapterRepository
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == "character" && e.IsActive
+            .Where(e => e.EntityType == "character"
                 && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();

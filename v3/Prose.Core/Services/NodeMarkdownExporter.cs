@@ -42,7 +42,10 @@ public class NodeMarkdownExporter
     public async Task<NodeExport> ExportAsync(Guid nodeId, bool numberBeats = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
+        // universe the ambient default resolves to would otherwise 404 here even with a correct id
+        // (same bug class found and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
@@ -70,7 +73,7 @@ public class NodeMarkdownExporter
                 md.AppendLine($"## {beat.Title.Trim()}");
                 md.AppendLine();
             }
-            var text = (beat.Text ?? "").Trim();
+            var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
             if (text.Length == 0) continue;
             n++;
             if (numberBeats) md.AppendLine($"[Beat {n}]");
@@ -105,7 +108,10 @@ public class NodeMarkdownExporter
         ExportSegmentsAsync(Guid nodeId, int targetChars = 90000, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
+        // universe the ambient default resolves to would otherwise 404 here even with a correct id
+        // (same bug class found and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
@@ -115,7 +121,7 @@ public class NodeMarkdownExporter
         var n = 0;
         foreach (var ob in ordered)
         {
-            var text = (ob.Beat.Text ?? "").Trim();
+            var text = BeatMarkup.StripEntityTags(ob.Beat.Text).Trim();
             if (text.Length == 0) continue;
             n++;
             var chStart = ob.Beat.IsChapterStart;

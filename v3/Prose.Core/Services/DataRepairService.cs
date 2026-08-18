@@ -62,7 +62,7 @@ public class DataRepairService : PipelineServiceBase
     {
         using var db = dbFactory.CreateDbContext();
         return db.Entities.AsNoTracking()
-            .Where(e => e.IsActive && e.EntityType == entityType)
+            .Where(e => e.EntityType == entityType)
             .Select(e => new ValueTuple<Guid, string>(e.Id, e.Name))
             .ToList()
             .Select(t => new EntityRow(t.Item1, t.Item2))
@@ -441,7 +441,7 @@ public class DataRepairService : PipelineServiceBase
         var index = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
         using var db = dbFactory.CreateDbContext();
         var names = db.Entities.AsNoTracking()
-            .Where(e => e.IsActive && entityTypes.Contains(e.EntityType))
+            .Where(e => entityTypes.Contains(e.EntityType))
             .Select(e => e.Name)
             .Where(n => !string.IsNullOrEmpty(n) && n.Length >= 4)
             .ToList();

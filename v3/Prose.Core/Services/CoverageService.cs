@@ -42,7 +42,6 @@ public class CoverageService
                    SUM(CASE WHEN emb.EntityId IS NOT NULL THEN 1 ELSE 0 END) AS Embedded
             FROM dbo.Entities ent
             LEFT JOIN dbo.EntityEmbeddings emb ON emb.EntityId = ent.Id
-            WHERE ent.IsActive = 1
             GROUP BY ent.EntityType
             ORDER BY COUNT(*) DESC
             """).ToListAsync(ct);
@@ -54,7 +53,7 @@ public class CoverageService
                    COUNT(DISTINCT e.Id) AS InNodeCount
             FROM dbo.Entities e
             INNER JOIN dbo.EntityStateEvents ese ON ese.EntityId = e.Id
-            WHERE e.IsActive = 1 AND ese.BeatGuid IS NOT NULL
+            WHERE ese.BeatGuid IS NOT NULL
             GROUP BY e.EntityType
             """).ToListAsync(ct);
 

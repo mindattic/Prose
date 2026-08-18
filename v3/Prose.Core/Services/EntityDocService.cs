@@ -54,7 +54,7 @@ public sealed class EntityDocService(
         // generation the ids come from SceneContextAssembler, which is already universe-scoped, so
         // nothing widens there.
         var entity = await db.Entities.AsNoTracking().IgnoreQueryFilters()
-            .Where(e => e.Id == entityId && e.IsActive)
+            .Where(e => e.Id == entityId)
             .FirstOrDefaultAsync(ct);
         if (entity == null) return false;
 

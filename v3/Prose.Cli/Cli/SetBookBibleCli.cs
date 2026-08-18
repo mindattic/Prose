@@ -47,7 +47,8 @@ public static class SetBookBibleCli
         var canonDocs = services.GetRequiredService<CanonDocumentService>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.FirstOrDefaultAsync(n => n.Slug == slug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug);
         if (node == null)
         {
             Console.Error.WriteLine($"[set-book-bible] No node found with slug '{slug}'.");

@@ -145,7 +145,9 @@ public class ContinuityExtractionService
         Guid nodeId, int maxTokens = 4096, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var bookSlug = node.Slug;
 
@@ -163,12 +165,16 @@ public class ContinuityExtractionService
             ct.ThrowIfCancellationRequested();
             chapterNumber++;
 
+            // Stripped, not raw — the LLM prompt built from `prose` below and this method's own
+            // exact-substring "snippet must exist in prose" grounding check both need to see the
+            // same plain text a reader would; a stray <entity guid="..."> tag straddling a quoted
+            // span would otherwise break Contains() and silently discard a true claim.
             var prose = string.Join("\n\n", (await db.BeatNodes.AsNoTracking()
                     .Where(bn => bn.NodeId == chNode.Id)
                     .Include(bn => bn.Beat)
                     .ToListAsync(ct))
                 .OrderBy(bn => bn.SortKey)
-                .Select(bn => bn.Beat!.Text)
+                .Select(bn => BeatMarkup.StripEntityTags(bn.Beat!.Text))
                 .Where(t => !string.IsNullOrWhiteSpace(t)));
 
             if (string.IsNullOrWhiteSpace(prose))
@@ -479,7 +485,7 @@ public class ContinuityExtractionService
         var lower = clean.ToLowerInvariant();
         var rawLower = rawName.Trim().ToLowerInvariant();
         var hit = ctx.Entities.AsNoTracking()
-            .Where(e => e.IsActive && (e.Name.ToLower() == lower || e.Name.ToLower() == rawLower))
+            .Where(e => (e.Name.ToLower() == lower || e.Name.ToLower() == rawLower))
             .Select(e => new { e.Id, e.Name, e.EntityType })
             .FirstOrDefault();
         if (hit != null) return (hit.Id.ToString("N"), hit.Name, InferKindFromEntityType(hit.EntityType));

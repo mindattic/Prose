@@ -78,7 +78,8 @@ public static class BeatDuelCli
             if (owner != null)
             {
                 var story = owner.Node.ParentNodeId.HasValue
-                    ? await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == owner.Node.ParentNodeId.Value)
+                    // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+                    ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == owner.Node.ParentNodeId.Value)
                     : owner.Node;
                 if (story != null)
                 {

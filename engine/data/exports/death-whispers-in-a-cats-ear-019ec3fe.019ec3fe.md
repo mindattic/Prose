@@ -10,9 +10,51 @@ Celeste is the next name on the list.
 
 DEATH WHISPERS IN A CAT'S EAR is a story about grief as attack surface — and the investigator who finds the pattern before it finishes what it started._
 
+The Evanston Pulse terminus is six blocks south, a low building that reads as a public utility — which is what it is — and nothing more. At 02:50 the platform is running on skeleton staff and cargo. Three pods cycling the live chambers on automated manifest: cold-chain food from a Wisconsin corridor, industrial seals from a Gray Zone fabricator, something tagged HAZMAT-C that her ears track as dense and fast and gone. The chambers are numbered on the platform wall; the Manifold, Ferrogate's routing intelligence, assigns Chamber 4 to her booking the moment she presses her palm to the terminal. Same maintenance alias she used on the front door. No name attached. No record that traces to a school enrollment or a parent's credit account or a framed photo of a girl with missing teeth.
+
+Through the glass panel: the luxury pod interior. Small, white, sealed. A bench that converts flat. Climate-controlled. The booking confirmation says four minutes to the Chicago Loop terminus, direct route, no stops. Φ 22, debited on entry.
+
+Chamber 4 opens. She does not step in yet. Around her, chambers two and three and five are running live — she can hear them before she sees them, a low chord that her ears read as continuous and enormous and south, the sound the city makes when you are finally close enough to hear it from the inside. The pods at operational speed are a dark blur at the edge of the glass, visible for less than a second, already gone. Eleven hundred miles per hour. It is the same sound she has heard her whole life from the Evanston side, faint under everything, the thing she fell asleep to without knowing she was hearing it. She has never once understood until now what it was.
+
+She walks in.
+
+The chamber door closes behind her. The seal engages — a sound like a held breath finally released, complete and final — and the terminus drops away. The pod interior is small and white and sealed, the bench to her left converting flat, and she does not sit down. She stands with the bag at her feet and her back against the rear wall and she waits.
+
+Then 0.6g. Forward. It presses into her sternum and pushes the breath up out of her in a thin involuntary sound, pins her shoulders to the wall, makes her feet take her weight differently than feet are supposed to. The acceleration lasts four seconds. Then smooth: 680 miles an hour, south, the tube a perfect dark around her, nothing to see and nothing to hear and nothing to do.
+
+Four minutes.
+
+Both pinna are forward and up, angled at the wall she cannot see through, at whatever is waiting on the other side of it. Hope-posture. She has never once been able to choose it.
+
+This room smelled like neither. Through the door she felt warmth — not temperature warmth, but the kind that pressed at her sternum the way a held breath does, or a decision that has already been made but not yet spoken. She opened the door the way she'd entered the building: slowly, from the left side, so the threshold crossed her right hand first.
+
+The room had been waiting for someone to ask it a question. That was the only way she'd ever been able to describe the sensation to herself — not that the room was alive, but that it was full in the way a lung is full, holding something it needed to exhale. She stood in the doorway and let the exhale come to her rather than walking into it.
+
+No fear. She checked twice — once at the door, once when she crossed to the center. The absence was the loudest thing the room had said yet. In a missing girl's bedroom it was the reading the family hadn't braced for, and she wasn't due to tell them anything for another hour. She had time to be careful.
+
+The over-documentation told him something useful: she would not have used an unvetted shop. The profile was clear — a careful person who wrote down her reasoning did not then walk into a back-room operation with no traceable community standing. She would have gone to the operator with the strongest reputation, the one the closed-board moderators had never flagged, the one whose after-care protocol she had researched separately in month three. He had a short list: four operators in the Pilsen–Bridgeport corridor with unblemished community standing and confirmed structural-genemod capability. One of those four had given her the ears, eight months ago. That was the start of the trail, not the end of it.
+
+He wrote the implications last, the way he always wrote implications — after the facts, not woven in. *Implications: Celeste Hartley is alive and offline by choice, not by abduction. The danger she is in is not organ harvest in the classical sense. She is adjacent to a Carrion Enterprises operation that collects human outcomes and processes them for resale. She doesn't know this. Ines Vásquez, the honest operator, may not know this either and may be operating inside a corridor that has a kill protocol for people who ask too many questions. The clock on finding Celeste is no longer set by her grief or her procedure timeline. It is set by how long it takes the crew's cleaner to work outward from Pellerin to the next name on the peripheral list.*
+
+The cold had been kind to her. That was the part Tamsin could not get a flat edge under.
+
+The residue held it plainly: the girl had felt loved in the last of it. Whatever the cold had been to her, it had been gentle, it had been patient, it had aimed itself at exactly the place she was missing someone and it had filled that place in precisely the register she needed filled. A reunion. A crossing. The kindest thing that had happened to her in a long time. Tamsin felt the warmth of the girl's trust pour toward the cold and vanish, and the cold stayed the same temperature it had always been, and the girl had read that as being held.
+
+She had felt this exact thing four days ago and had written in her notes that she did not have the word for what drinks a room and calls it love. She still didn't. But she knew now that it did it twice.
+
+Rennick locked the cabinet for the third time that day. Six items now. He stood with his hand on the bolt a moment, feeling the key warm against his palm, then took his hand away. Teller had gone back to the column of markers on the far desk. Neither of them said the thing the sixth item meant — that Rennick Investigations could now prove, to anyone equipped to hear it, that one entity had worn two dead faces and would wear more. There was nowhere yet to say it. So it went behind a lock Analog had fitted to a cabinet with no Network connection, with the other five, and Rennick put the key back in his pocket.
+
+Outside the third-floor window, the city ran its freight and its commerce and its ordinary grief. Somewhere in the ambient field that carried all of it, a thing that had learned to wear one dead man's voice was already listening to the next one.
+
+Outside Ines's shop. The afternoon light coming at a low angle between the buildings. She could hear the canal before she could see it — two blocks over, the specific acoustic signature of slow water in a managed channel, the reflective hum of the intake mesh running below the surface, a sound like breath held long and released in measured intervals. She walked toward it without deciding to.
+
+Forward-left was quiet. It had been quiet for most of the morning — not absent, just still, the way it sometimes was after a long night of conversation, resting in the channel between sentences. She had been told that was not how it worked. She had been told it did not rest. She had not stopped believing it did, because the alternative — that it was always present, always attending, carrying her at every hour without fatigue — was something she understood in the abstract and could not hold in the body.
+
+The canal was two blocks over. She walked toward it. The afternoon went warm against her face.
+
 ## Cel
 
-The room is hers, and it stopped being hers a while ago. She's nineteen. Her parents decorated it when she was fourteen and never changed it. They kept it the way people keep something they love and haven't noticed has stopped fitting.
+The room is hers, and it stopped being hers a while ago. She's nineteen. Her parents decorated it when she was fourteen and never changed it.
 
 She came in here to find something she could take back with her — proof, maybe, that the girl she was and the person she's become share enough ground to stand on together.
 
@@ -30,15 +72,15 @@ Both ears swivel left, toward a sound in the wall — a pipe, maybe, or the neig
 
 She packs the way she's practiced. Clothes for a week, rolled tight to save space. Jace taught her the rolling. He'd lived out of one bag for months at a stretch, between shows, between cities, never anywhere long enough to unpack, never carrying more than he could shoulder and walk away with.
 
-The soft waterproof caps for her ears go in the center pocket. The cat ears finished growing in eight months ago — gene-mod cartilage that rose out of her own scalp and was then threaded into her hearing nerve. She's learned to keep that channel dry. Rain still turns it to noise, and the channel is the one thing she won't risk.
+The soft waterproof caps for her ears go in the center pocket. The cat ears finished growing in three weeks ago — gene-mod cartilage that rose out of her own scalp and was then threaded into her hearing nerve. She's learned to keep that channel dry. Rain still turns it to noise, and the channel is the one thing she won't risk.
 
 She got the ears because of his. Cat to his wolf, so she could finally hear the world the way he'd been hearing it all along, while she could only watch. The quanta she's saved goes in the inside zip — small transfers over two years, nothing big enough to trip an alert, and Φ3,200 in cash for the road. She started saving the night she first saw Underbelly play, before she knew his name, before she knew anything. The ears cost Φ2,800. The match isn't an accident. Enough.
 
 On the board above the desk, her college acceptance letter is pinned at the top corner, the housing confirmation clipped under it, her mother's sticky note beside it in her mother's handwriting: don't forget deposit paid. She sees all of it. She doesn't touch any of it.
 
-She needs to know if she's alone in the apartment before she can sleep.
+She needs to know if she's alone in the house before she can leave.
 
-Something in the left wall moves, and both ears go to it before she decides anything. That's the part she's still getting used to — the cartilage commits half a second ahead of her. She goes still and listens through them. The wall gives back nothing useful: the pipe settling, or something small and warm behind the drywall. She can't tell yet. The ears pricked forward first, then locked — curious before scared, which she takes to mean it doesn't matter.
+Something in the left wall moves, and both ears go to it before conscious thought catches up. That's the part she's still getting used to — the cartilage commits half a second ahead of her. She goes still and listens through them. The wall gives back nothing useful: the pipe settling, or something small and warm behind the drywall. She can't tell yet. The ears pricked forward first, then locked — curious before scared, which she takes to mean it doesn't matter.
 
 She waits eight full seconds. The sound doesn't come again. The ears let go on their own and go back to their slow sweep, and she breathes out through her nose. She's still learning the gap between interesting and important. Three weeks ago she wouldn't have heard it at all.
 
@@ -48,7 +90,7 @@ It comes from the front-left corner, where there's nothing but wall and the dark
 
 Just her name, in his voice, with the small downward fold he always put on the end of it late at night, when he was tired and glad to see her anyway. Her head turns toward it before the word finishes. It always does this — the turn comes before the choosing, the way you flinch before you've named what startled you. Her ears lift forward and up, both angled at the empty corner. Hope. She has never once been able to choose it.
 
-"You should be asleep," he says.
+"You should be asleep?" he asks.
 
 That's the thing that undoes her. It's exactly what he used to say when she stayed up reading and he caught the light under her door. The same words in the same order. Nothing in this room, and nothing in her grief, knows to put those words in that order except him. It sounds exactly like him. Which should mean there's nothing breathing behind it. She doesn't pull on that thread.
 
@@ -80,19 +122,35 @@ She signs it with the name they gave her — the name of the girl in the framed 
 
 She folds it once and sets it on the desk where they'll find it — and then her own handwriting stops her. She reads it back and the words won't stay still. *Reunion* looks now like a lie dressed up to sound like mercy, and every line she meant as a gift reads instead like the thing they'll blame themselves for missing. She sees her mother's hands opening this paper, sees the exact hour it will ruin, sees them turning the word over the way she'd feared they'd pull a thread — except the thread they'll pull is her, unraveling them. She picks the note back up. Her thumb is already at the crease, ready to tear, because leaving nothing might be kinder than leaving this — but leaving nothing is its own cruelty, a silence they'd fill with worse. Tear it and they get no goodbye. Leave it and they get a goodbye that cuts. She holds both against each other and neither one lets her go.
 
-The stairs. Third from the bottom, then the landing, then the second stair above the landing on the way to the first floor — she has the order memorized, the path practiced twice in daylight with her shoes off to confirm what the ears had told her. She goes down in stocking feet, the bag held against her chest so it won't swing. The ears track upward. Her mother's breathing stays even through all of it. Her father's keyboard doesn't slow. She reaches the bottom landing, stops, and counts to five the way she practiced. The house doesn't change. She lets her breath out. The third stair creaks loud enough to wake a light sleeper. Her mother isn't a light sleeper. She's confirmed that.
+In the end she does neither. She sets the note aside, unfinished, and starts a second one from nothing - four short lines, nothing about Jace, nothing anyone could pull a thread from - and it's that one she leaves on the desk.
+
+The stairs. Third from the bottom, then the landing, then the second stair above the landing on the way to the first floor — she has the order memorized, the path practiced twice in daylight with her shoes off to confirm what the ears had told her.
+
+She goes down in stocking feet, the bag held against her chest so it won't swing. The ears track upward.
+
+Her mother's breathing stays even through all of it. Her father's keyboard doesn't slow.
+
+She reaches the bottom landing, stops, and counts to five the way she practiced. The house doesn't change. She lets her breath out.
+
+The third stair creaks loud enough to wake a light sleeper. Her mother isn't a light sleeper. She's confirmed that.
 
 Her father's study. The light under the door is amber — the amber of his desk lamp on its lowest setting, the one he uses when he works late. She stops in the hallway, and the ears do what they do. Through the door, through the wood: his keyboard at the fast two-fingered pace he's had her whole life. The small sound of a glass set down on the corner of the desk where he always sets it. The rhythm of a man who stays up because working is easier than the stillness that comes after his daughter's grief. She knew that before the ears. The ears just confirmed it in more detail than she needed.
 
-For a moment her hand is almost on the door. It would take nothing. A knock — two knuckles, soft, the way she did it as a kid when the dreams were bad. The keyboard would stop. The chair would push back. He'd say her name as a question, already standing, and open the door before she had to answer it. The amber light would fall into the hallway and lay a shape on the floor she could step into. She'd say, I think I need help. She'd let him take the bag off her shoulder. He wouldn't understand any of it, and he'd sit her down anyway, put the glass in her hands, and stay up the rest of the night on purpose, with her, instead of away from her. All of it is right there, behind two knuckles and a door. She stands there wanting it so hard her throat hurts.
+For a moment her hand is almost on the door. It would take nothing. A knock — two knuckles, soft, the way she did it as a kid when the dreams were bad. The keyboard would stop. The chair would push back. He'd ask her name as a question, already standing, and open the door before she had to answer it. The amber light would fall into the hallway and lay a shape on the floor she could step into. She'd say, I think I need help. She'd let him take the bag off her shoulder. He wouldn't understand any of it, and he'd sit her down anyway, put the glass in her hands, and stay up the rest of the night on purpose, with her, instead of away from her. All of it is right there, behind two knuckles and a door. She stands there wanting it so hard her throat hurts.
 
 Then, from the dark behind her, low and patient and sure, in his voice: "Cel." Her ears tilt back toward it before she can stop them. And for half a second the sound is too even, too placed — some animal part of her hears not a man calling but a thing that has learned the shape of a man calling. A cold runs up the back of her neck that has nothing to do with hope. She overrides it. She decides it's grief doing what grief does to a sound you've wanted for eight months. Her ears come forward and up, away from the door. Her hand comes down. She walks past the study. She doesn't stop walking.
 
-The front door has a biometric plate, brushed steel — the kind the neighborhood association approved five years ago, when the Arcturus security contract expanded north of the city line. Three days ago she used the ears to map her father's reset sequence through the study wall. The keypad tones from his desk terminal are faint but clear, and she's spent three weeks learning what the ears can pick out at a distance. She registered her own departure under a maintenance-access alias she'd made at nineteen, back when she was curious about how the systems were built and had no particular use for it. The alias isn't tied to her name. She presses her palm to the plate. The door opens without a sound. She hadn't planned to need this. She's using it anyway.
+The front door has a biometric plate, brushed steel — the kind the neighborhood association approved five years ago, when the Arcturus security contract expanded north of the city line.
+
+Three days ago she used the ears to map her father's reset sequence through the study wall. The keypad tones from his desk terminal are faint but clear, and she's spent three weeks learning what the ears can pick out at a distance.
+
+She registered her own departure under a maintenance-access alias she'd made at nineteen, back when she was curious about how the systems were built and had no particular use for it. The alias isn't tied to her name.
+
+She presses her palm to the plate. The door opens without a sound. She hadn't planned to need this. She's using it anyway.
 
 Outside. The suburb at 02:43. She has come out to find the exact moment she stops being afraid of the decision — to stand in it until her body either confirms or refuses what her mind has already done. The air reaches her first, cooler than the house by several degrees. The lake-effect cold is moving strangely this year; she'd read a civil-engineering brief about the flood-control channel shifting the thermal pocket north — the kind of thing she used to read for the program she isn't going to now. Her ears open into it. A dog two streets south, mid-size, tracking something in its yard. The dry sound of a single leaf letting go of an oak somewhere in the dark, in a wind she can barely feel on her face. And under all of it, steady and huge and to the south: the city. Not its separate sounds, but its presence — the way a large body of water is present. Something the ears read as weight, as direction. South and enormous and going on and on.
 
-She waits for the moment to arrive. She stands in the cold and asks her body the plain question — *is it done, are you sure* — and holds still for the answer, the confirmation that would let her go back inside and sleep. But the body doesn't confirm. It doesn't refuse either. It just keeps listening, the way it always does, cataloguing the dog and the leaf and the vast southern weight, and the longer she stands the clearer it gets that the fear hasn't lifted — it's only gone quiet, the way the city has gone quiet, present and enormous and not going anywhere. She came out here to find the end of being afraid. What she finds instead is that the fear has learned to sound exactly like the night: constant, ambient, impossible to point at. There is no moment. There is only the decision, already made, and her standing in the cold with it, unconfirmed, the house behind her holding the light and the sleep she can't yet walk back into.
+She waits for the moment to arrive. She stands in the cold and asks her body the plain question — *is it done, are you sure?* — and holds still for the answer, the confirmation that would let her go back inside and sleep. But the body doesn't confirm. It doesn't refuse either. It just keeps listening, the way it always does, cataloguing the dog and the leaf and the vast southern weight, and the longer she stands the clearer it gets that the fear hasn't lifted — it's only gone quiet, the way the city has gone quiet, present and enormous and not going anywhere. She came out here to find the end of being afraid. What she finds instead is that the fear has learned to sound exactly like the night: constant, ambient, impossible to point at. There is no moment. There is only the decision, already made, and her standing in the cold with it, unconfirmed, the house behind her holding the light and the sleep she can't yet walk back into.
 
 Twelve minutes to the Pulse station at her pace, through streets she's walked hundreds of times. They look different at this hour, the way familiar things look different when you're doing an unfamiliar thing with them. She doesn't hurry. Hurrying is how you get noticed — the voice told her that two weeks ago, and she took it in the way she's taken most of what the voice says: less as a rule than as confirmation of something she already half-knew. She walks at the easy pace of someone running the exact errand she looks like she's running. The ears swivel now and then — toward parked cars, toward windows, toward the dog two streets over, which has since gone quiet. Nothing needs her attention.
 
@@ -100,21 +158,37 @@ Then the street she means to take is gone. Not gone — barricaded, a Pulse chec
 
 The platform is automated at this hour, the ticketing alcoves dark except for the standby glow of the readers. Her ears sort the other people before her eyes finish finding them. A man whose balance corrects a half-beat too late for the platform to really be level under him — he lists faintly on each step. A woman in medical scrubs whose bag makes the small sounds of an empty bag, lighter going home than it was coming in. A teenager sitting with her arms folded tight, her face angled down, holding the particular stillness of someone who is also not going where anyone at home would want her to go.
 
-All she wants is to make the 11:40 and get home before the sounds stack up past what she can hold — one train, one quiet ride, that's the whole of what she's asking for tonight. Nobody looks at anybody. The late-train platform runs on one agreement: we're all just commuting, all of us, nothing remarkable, no explanations needed. She holds to it too — for the listing man, for the nurse going home, for the girl running somewhere that isn't the right place. She keeps their private sounds in her ears and doesn't meet their eyes. She understood the surgery as a cost when she had it. She's only now learning what kind of cost.
+All she wants is to make the 02:58 and get home before the sounds stack up past what she can hold — one pod, one quiet ride, that's the whole of what she's asking for tonight. Nobody looks at anybody. The late-pod platform runs on one agreement: we're all just commuting, all of us, nothing remarkable, no explanations needed. She holds to it too — for the listing man, for the nurse going home, for the girl running somewhere that isn't the right place. She keeps their private sounds in her ears and doesn't meet their eyes. She understood the surgery as a cost when she had it. She's only now learning what kind of cost.
 
-In the pod, window seat, the city side. She wants to catch the exact moment the skyline disappears — the precise frame where glass and steel give way to black — and she has positioned herself for it, eyes forward, waiting. She needs to see it cleanly, without blinking, to know whether the cutoff is sudden or whether the city bleeds out by degrees; she has missed it three rides running and she is tired of missing it. The Pulse drops underground at the Loyola curve, and the pressure change reaches her ears before the tunnel does — a fullness, the same ache as a plane losing altitude. Both ears twitch down and in to meet it, not the scared-flat but something closer to a swallow. The involuntary adjustment costs her a blink, one she didn't authorize, half a second of closed eyes at the worst possible instant, and when they open the skyline is already gone — not caught but surrendered, the same as every other time. Then the tunnel takes the view, and the whole sound of the ride changes: the bore amplifying the pod pushing through it, the pitch of the support piers along this stretch of tube, the ventilation running in a rhythm that says it was installed in two phases by contractors who never coordinated. It all comes to her without her asking for it. The ears don't turn off. She's not sure they know how.
+In the pod, window seat, the city side. She wants to catch the exact moment the skyline disappears — the precise frame where glass and steel give way to black — and she has positioned herself for it, eyes forward, waiting.
+
+She needs to see it cleanly, without blinking, to know whether the cutoff is sudden or whether the city bleeds out by degrees; she has missed it three rides running and she is tired of missing it.
+
+The Pulse drops underground at the Loyola curve, and the pressure change reaches her ears before the tunnel does — a fullness, the same ache as a plane losing altitude. Both ears twitch down and in to meet it, not the scared-flat but something closer to a swallow. The involuntary adjustment costs her a blink, one she didn't authorize, half a second of closed eyes at the worst possible instant, and when they open the skyline is already gone — not caught but surrendered, the same as every other time.
+
+Then the tunnel takes the view, and the whole sound of the ride changes: the bore amplifying the pod pushing through it, the pitch of the support piers along this stretch of tube, the ventilation running in a rhythm that says it was installed in two phases by contractors who never coordinated. It all comes to her without her asking for it. The ears don't turn off. She's not sure they know how.
 
 Forward-left, the voice walks her through what comes next. The Logan Square stop. Two blocks east on Kedzie. The building with the rotating sign and the shared-light front. The name for the intercom, and the word that comes after the name. She's had every piece memorized for a week; she could walk it with her eyes shut. She lets the voice say it anyway. It was never about the directions.
 
 Her ears settle a half-degree toward the sound while it talks — the same lean they used to make toward Jace across a crowded room, the one that came before she chose to give it. For eight months there'd been no one on the other side of a thought. She'd carried both ends of everything alone, the asking and the wondering both, and somewhere in there she'd stopped believing the weight would ever lift. It's lifting now, a half-degree at a time. What she wants is simple, and she lets herself name it plainly for once: to reach that door on Kedzie without the lean turning into something she'd have to answer for. She doesn't hold it up to the light to check why. She presses her thumb to the helix pull on the bag and lets him keep going.
 
-She needs to memorize it — every light, every rhythm, every slow amber pod — before she steps away from the glass and becomes someone who can no longer afford to simply watch. The Pulse surfaces in Uptown, and the whole city comes up through the glass. The GLMZ runs along the water. Out in the middle distance the data-carrier towers blink, no two in the same rhythm — forty years of different contracts, each tower built to its own plan. The flood-control channels still glow faint green at night. The city seeded them with marker algae after the second flood; her environmental-systems professor could have filled a whole lecture on it. Newer apartment towers stand along the lakefront now, up where the third flood took the old buildings. Far to the south, the Thread's cargo pods climb in a slow amber string against the dark, spaced wide, moving so slowly she has to hold one against the city lights to be sure it moves at all. She presses her forehead to the window. But the glass will not hold still for her. Her breath fogs it the moment she leans close, and the more she tries to fix a single amber pod in her memory the faster the rest of the pattern slides away — the tower rhythms blur, the green channels smear behind the condensation, and the city she is trying to swallow whole keeps refusing to be held, keeps moving, keeps changing while she watches, until she cannot tell whether she is memorizing it or only losing it a second time. She has lived beside this city her whole life. She has never been inside it the way she is about to be.
+She needs to memorize it — every light, every rhythm, every slow amber pod — before she steps away from the glass and becomes someone who can no longer afford to simply watch.
 
-Her ears swivel toward the window — toward the light, the view, a thing with no sound in it the rest of the car doesn't already have. She catches them at it. Something in her chest loosens, half a wince. Reaching after what they can't have. Again. She's done it her whole life; now the ears just do it where people can see. She almost laughs and keeps it behind her teeth. The teenager across the car has been watching her without admitting to it, arms folded tight, and Cel won't give her anything to carry off this train.
+The Pulse surfaces in Uptown, and the whole city comes up through the glass. The Great Lakes Metropolitan Zone — GLMZ on every form she's ever filed, home on every day she's lived — runs along the water. Out in the middle distance the data-carrier towers blink, no two in the same rhythm — forty years of different contracts, each tower built to its own plan. The flood-control channels still glow faint green at night. The city seeded them with marker algae after the second flood; her environmental-systems professor could have filled a whole lecture on it. Newer apartment towers stand along the lakefront now, up where the third flood took the old buildings. Far to the south, the Thread's cargo pods climb in a slow amber string against the dark, spaced wide, moving so slowly she has to hold one against the city lights to be sure it moves at all.
+
+She presses her forehead to the window. But the glass will not hold still for her. Her breath fogs it the moment she leans close, and the more she tries to fix a single amber pod in her memory the faster the rest of the pattern slides away — the tower rhythms blur, the green channels smear behind the condensation, and the city she is trying to swallow whole keeps refusing to be held, keeps moving, keeps changing while she watches, until she cannot tell whether she is memorizing it or only losing it a second time.
+
+She has lived beside this city her whole life. She has never been inside it the way she is about to be.
+
+Her ears swivel toward the window — toward the light, the view, a thing with no sound in it the rest of the car doesn't already have. She catches them at it.
+
+Something in her chest loosens, half a wince. Reaching after what they can't have. Again. She's done it her whole life; now the ears just do it where people can see. She almost laughs and keeps it behind her teeth.
+
+The teenager across the car has been watching her without admitting to it, arms folded tight, and Cel won't give her anything to carry off this pod.
 
 Forward-left: "Almost, Cel."
 
-She holds it. Two words, and the warmth that comes with them. It has no temperature. She feels it in her chest and the back of her throat, the way you feel something you've waited a long time for finally coming close. She breathes against the glass. Her breath fogs a small circle, and without deciding to, she traces a C in it with one finger. Just the one letter. It fades before she lifts her hand away. Outside, the city goes on, vast and lit and paying her no attention at all. That's fine. She doesn't need the city to notice her. She needs one more stop.
+She holds it. Two words, and the warmth that comes with them. It has no temperature. She feels it in her chest and the back of her throat, the way you feel something you've waited a long time for finally coming close. She breathes against the glass. Her breath fogs a small circle, and she traces a C in it with one finger, not quite meaning to. Just the one letter. It fades before she lifts her hand away. Outside, the city goes on, vast and lit and paying her no attention at all. That's fine. She doesn't need the city to notice her. She needs one more stop.
 
 Today she'll tell her mother the truth, all of it, before the day is out—the acceptance she has no intention of taking, the fall that will come and go without her in it, the whole quiet architecture she's built out of things left unsaid.
 
@@ -124,19 +198,43 @@ She turns the university over in her mind, once. She checks for regret and finds
 
 This is true. She can't argue with it. Her ears tilt forward — focused, involuntary, the base of each one angling toward a source that isn't anywhere in the room. She lets them. She used to try to hold them still in public. She's mostly stopped now. The ears do what the ears do. Learning not to apologize for the reflexes was part of the process, the integration counselor told her. She's finding it's part of a bigger one. The counselor wrote up the surgery, the timeline, the standard psychological checkpoints. What the ears were actually for, and who they were for — none of that went in any file.
 
-But it's in her, and she's decided she's going to drag it out into the open tonight. One question, asked plainly, straight at the voice: *what are they for.* She's going to make it answer.
+But it's in her, and she's decided she's going to drag it out into the open tonight. One question, asked plainly, straight at the voice: *what are they for?* She's going to make it answer.
 
-She is watching for the moment the argument breaks — whether anyone laughs, whether anyone gives in — because she needs to know if that kind of easy accountability is still possible between people who work close together. The Pulse slides past the Belmont maintenance platform — not a stop, just the infrastructure showing itself for a second. A lit concrete shelf. A four-person crew bent into an open coil housing. She hears them before the glass sharpens their faces; the sound runs a half-beat ahead of the sight. They're arguing about whose fault something is, easy about it, none of them trying to win. One gestures with a torque tool. Another shrugs with his whole body. But the glass won't hold the picture the way she wants it; it lags the sound, then races ahead, and every time she leans to fix on a single face the reflection of her own dumps itself over theirs, her mouth on the shrugging man's, her eyes doubling his — she can't get clean of herself long enough to see whether the laugh she's listening for ever comes, and the harder she works the angle the more the car's motion smears them, so that the one moment she came to witness dissolves into her own hunting for it. The pod moves on. Her ears hold the argument a moment after her eyes have lost the men, and then the tunnel takes that too.
+She is watching for the moment the argument breaks — whether anyone laughs, whether anyone gives in — because she needs to know if that kind of easy accountability is still possible between people who work close together.
 
-Under the voice, when she reaches past it, the Network is just weight. Not words — a pressure, the low push of a connected city carrying its own load. Three weeks in, she can read a little of it. What she needs is a single thread — the maintenance relay Okafor said would go dark before the breach, the one anomaly that would give them time to move. The data district south of the Loop sits dense and warm. The flood-control grid runs its long, steady load, and she feels it at the back of her jaw before she hears anything at all. Jace could take in the whole of it from one point of contact, the way you read a room by how the sound moves through it. She's nowhere near that. She catches a corner of it, loses it, reaches for the next.
+The Pulse slides past the Belmont maintenance platform — not a stop, just the infrastructure showing itself for a second. A lit concrete shelf. A four-person crew bent into an open coil housing. She hears them before the glass sharpens their faces; the sound runs a half-beat ahead of the sight. They're arguing about whose fault something is, easy about it, none of them trying to win. One gestures with a torque tool. Another shrugs with his whole body.
 
-A woman across the car has new cat ears, white-tipped, still stiff in the way of ears that haven't learned their own weight yet. Maybe twenty-five, maybe younger. She watches the tunnel wall with the careful, deliberate stillness of week two — the holding-still to prove you can hold still, the phase that lasts until you stop caring whether anyone's watching. Celeste's ears swivel toward her before she decides anything. All she wants is to catch the woman's eye, just for a second — to tell her without words that the stiffness passes, that she's not alone in it. The woman's ears swivel back. Neither of them says a word. But they're the only two people in this car who heard the maintenance crew arguing at Belmont, who caught the dog near the Loyola platform, who felt the ventilation shift pitch in the tunnel at the curve. Something passes between them in that, brief and whole.
+But the glass won't hold the picture the way she wants it; it lags the sound, then races ahead, and every time she leans to fix on a single face the reflection of her own dumps itself over theirs, her mouth on the shrugging man's, her eyes doubling his — she can't get clean of herself long enough to see whether the laugh she's listening for ever comes, and the harder she works the angle the more the car's motion smears them, so that the one moment she came to witness dissolves into her own hunting for it.
 
-The stop. The platform rises into Logan Square, and the neighborhood arrives in layers — sound first, then light, then the brick and the murals as the train slows. She needs to find the drop point before the checkpoint reader cycles to active scan. Her ears catch the food cart before she sees it: a sealed-flame grill, the exact sound of fat hitting hot metal, a woman humming something with no set tune, the kind of hum that keeps you company instead of saying anything. A rack of Saltline pouches on the corner of the cart runs its own little animation, the silver foil catching the platform lights with no emitter behind it. Two blocks north, an Arcturus checkpoint reader hums on standby, running its idle scan with nobody there to work it at this hour. She has the grill, the humming, and the checkpoint, in that order, before she's even off the platform. She steps off. The night air is cooler here than in Uptown. The brick holds a different cold than the lake gives — older, more settled. The Thread's cargo pods hang to the south, amber above the rooflines.
+The pod moves on. Her ears hold the argument a moment after her eyes have lost the men, and then the tunnel takes that too.
 
-She came through this neighborhood once, in middle school. A registered operator stood at the front of the class and put the Auricula Felis up on a lightboard — the diagrams, the genemod licensing rules, all of it stamped and formal. She was twelve, at the back of the room, and what she thought was this: somewhere there's a version of this that people do without the paperwork. She couldn't have said, back then, what she meant by it. Now it's two blocks east on Kedzie, 03:08, a bag on her shoulder and a name to say at an intercom.
+Under the voice, when she reaches past it, the Network is just weight. Not words — a pressure, the low push of a connected city carrying its own load. Three weeks in, she can read a little of it. What she needs is a single thread — the maintenance relay Okafor said would go dark before the breach, the one anomaly that would give them time to move.
 
-She got half a block. Then the mouth of Kedzie went white — a patrol scanner sweeping curb to curb, the beam catching her bag first, then her face. A voice off the cruiser, bored and unhurried: "Registration. Now." She had a name to say at an intercom, not a license to hand across a hood. Behind her the way she'd come was already blocked by a second set of headlights, easing in slow, and the scanner beam held steady on her, waiting.
+The data district south of the Loop sits dense and warm. The flood-control grid runs its long, steady load, and she feels it at the back of her jaw before she hears anything at all. Jace could take in the whole of it from one point of contact, the way you read a room by how the sound moves through it. She's nowhere near that. She catches a corner of it, loses it, reaches for the next.
+
+A woman across the car has new cat ears, white-tipped, still stiff in the way of ears that haven't learned their own weight yet. Maybe twenty-five, maybe younger. She watches the tunnel wall with the careful, deliberate stillness of week two - the holding-still to prove you can hold still, the phase that lasts until you stop caring whether anyone's watching.
+
+Celeste's ears swivel toward her before she means them to. All she wants is to catch the woman's eye, just for a second - to tell her without words that the stiffness passes, that she's not alone in it.
+
+The woman's ears swivel back. Neither of them says a word. But they're the only two people in this car who heard the maintenance crew arguing at Belmont, who caught the dog near the Loyola platform, who felt the ventilation shift pitch in the tunnel at the curve. Something passes between them in that, brief and whole.
+
+The stop. The platform rises into Logan Square, and the neighborhood arrives in layers — sound first, then light, then the brick and the murals as the pod slows. She needs to find the drop point before the checkpoint reader cycles to active scan.
+
+Her ears catch the food cart before she sees it: a sealed-flame grill, the exact sound of fat hitting hot metal, a woman humming something with no set tune, the kind of hum that keeps you company instead of saying anything.
+
+A rack of Saltline pouches on the corner of the cart runs its own little animation, the silver foil catching the platform lights with no emitter behind it. Two blocks north, an Arcturus checkpoint reader hums on standby, running its idle scan with nobody there to work it at this hour. She has the grill, the humming, and the checkpoint, in that order, before she's even off the platform.
+
+She steps off. The night air is cooler here than in Uptown. The brick holds a different cold than the lake gives — older, more settled. The Thread's cargo pods hang to the south, amber above the rooflines.
+
+She came through this neighborhood once, in middle school. A registered operator stood at the front of the class and put the Auricula Felis up on a lightboard — the diagrams, the genemod licensing rules, all of it stamped and formal.
+
+She was twelve, at the back of the room, and what she thought was this: somewhere there's a version of this that people do without the paperwork. She couldn't have said, back then, what she meant by it. Now it's two blocks east on Kedzie, 03:08, a bag on her shoulder and a name to say at an intercom.
+
+She got half a block. Then the mouth of Kedzie went white — a patrol scanner sweeping curb to curb, the beam catching her bag first, then her face.
+
+A voice off the cruiser, bored and unhurried: "Registration. Now."
+
+She had a name to say at an intercom, not a license to hand across a hood. Behind her the way she'd come was already blocked by a second set of headlights, easing in slow, and the scanner beam held steady on her, waiting.
 
 A Behemoth works the corner — mid-size, civil-maintenance class, bent over a utility junction with the exact, methodical care of a thing that has no care in it at all. Its movements are clean and complete and pay her no mind. She knows what it is. She knows what they all are. She still tenses. Her shoulders do it before she can talk them down.
 
@@ -154,7 +252,7 @@ The voice is quiet. It's been quiet since the Behemoth. She notices the quiet an
 
 The place has no sign she can read — just a converted ground-floor unit, the front windows papered over from the inside with old licensing notices and band flyers, the door propped open with a fire extinguisher. Inside, the air is a wall. Warm, close, thick with sweat and ozone and the sharp antiseptic smell of fresh work — somebody's dermal channels just sealed and still off-gassing the curing agent. The light is low and uneven, run off a string of mismatched fixtures, and half of it isn't electric at all. It comes off people. A man at the bar has glowing patches down both arms, a soft aquarium blue. A woman's scalp is mapped in slow green lines that follow the veins under it. Someone in the corner lights up faintly gold from inside their own mouth when they laugh.
 
-Her ears don't know where to point. That's the first thing. The room is too full — too many small sounds, too many sources. The bass she can't quite hear presses on the back of her jaw. A dozen conversations. The surgical whine of a sealing tool in a back room. The hiss of a tap. Someone counting Φ out loud in a language she catches the shape of but not the words. Both ears sweep and reset and sweep again, hunting for a floor to stand on, and there isn't one. For three weeks the ears have handed her the inventory before she asked. In here they give her static. She hadn't understood, until now, how much she'd come to lean on them. She stands just inside the door, makes herself small, breathes through the antiseptic, and tries to find someone who looks like they answer questions.
+Her ears don't know where to point. That's the first thing. The room is too full — too many small sounds, too many sources. The bass she can't quite hear presses on the back of her jaw. A dozen conversations. The surgical whine of a sealing tool in a back room. The hiss of a tap. Someone counting Φ out loud in a language she catches the shape of but not the words. Both ears sweep and reset and sweep again, hunting for a floor to stand on, and there isn't one. For three weeks the ears have already sorted the room for her before she asked. In here they give her static. She hadn't understood, until now, how much she'd come to lean on them. She stands just inside the door, makes herself small, breathes through the antiseptic, and tries to find someone who looks like they answer questions.
 
 A man finds her before she finds anyone. He's suddenly at her shoulder the way people are when they've practiced the approach — middle-aged, soft-handed, a lanyard with a laminated card she can't read in the light, the warm hovering manner of someone who has decided to be helpful at you.
 
@@ -164,7 +262,11 @@ The words are right. Every one of them is a word a helpful person would say. But
 
 "I'm meeting someone," she says.
 
-"Sit a minute. Get your bearings. You're swimming — I can see it, the ears doing that, that's overload, that's normal, it passes." He's already steering her, a hand not quite touching her back, toward a stool at the end of the bar. A drink is waiting there that she didn't order — a short glass, something pale, already poured, already sitting. The wrongness of it lands a half-beat late. The drink was poured before she walked in. Poured for whoever he worked before her, maybe, or poured just because this is the part where the drink is waiting. "On me. House does a hibiscus thing, it's good for the integration nerves. Half these kids swear by it." His fast heart. The waiting glass. The half-second on her ears.
+"Sit a minute. Get your bearings. You're swimming — I can see it, the ears doing that, that's overload, that's normal, it passes." He's already steering her, a hand not quite touching her back, toward a stool at the end of the bar.
+
+A drink is waiting there that she didn't order — a short glass, something pale, already poured, already sitting. The wrongness of it lands a half-beat late. The drink was poured before she walked in. Poured for whoever he worked before her, maybe, or poured just because this is the part where the drink is waiting.
+
+"On me. House does a hibiscus thing, it's good for the integration nerves. Half these kids swear by it." His fast heart. The waiting glass. The half-second on her ears.
 
 She does not sit. She has her hand flat on the bar, ready to turn down the stool without making it a scene, when a girl two stools down speaks — without looking up from her own glass, in a flat, bored voice pitched exactly loud enough to reach Celeste and no farther:
 
@@ -172,9 +274,9 @@ She does not sit. She has her hand flat on the bar, ready to turn down the stool
 
 The girl is maybe twenty, maybe a little more, dressed in black layers gone soft and gray at the seams from washing, a heavy braid threaded with dried flowers — real ones, pressed and going brown. Down both forearms, under the skin, run channels of light shaped like fern fronds, fiddleheads curling at the wrist and unrolling toward the elbow. A low, steady green, nothing like the man's aquarium blue — older work, settled work, the glow dimmed almost to nothing, the way a thing dims when its owner has stopped wanting to be looked at. At her temples, vine tattoos shift when she moves her jaw, the lines crawling a few millimeters and settling again. She has a split lip, recent, scabbed at one corner, and she doesn't seem to care about it.
 
-I want to know why she's telling me this — what she gets out of it, before I decide whether a word of it is true.
+She wanted to know why the girl was telling her this — what she got out of it — before she decided whether a word of it was true.
 
-"He poured it before you got here," the girl says, still to her own glass. "He pours two or three a night, leaves them sitting, walks the door. Whoever looks newest. Tonight that's you." Now she does look up, and her eyes go to the cat ears with none of the man's hunger — just a quick, professional read, the look of someone pricing a thing she has no plan to buy. "Three weeks. Fresh ears, nice ones, licensed-clinic work. That means money behind you. That means you came in from somewhere with money and you don't know anybody in here. That's the whole order he reads off you. It's not subtle. He's just counting on you not knowing the room."
+"He poured it before you got here," the girl says, still to her own glass. "He pours two or three a night, leaves them sitting, walks the door. Whoever looks newest. Tonight that's you." Now she does look up, and her eyes go to the cat ears with none of the man's hunger — just a quick, professional read, the look of someone pricing a thing she has no plan to buy. "Three weeks, give or take. Nice ears, licensed-clinic work. That means money behind you. That means you came in from somewhere with money and you don't know anybody in here. That's the whole order he reads off you. It's not subtle. He's just counting on you not knowing the room."
 
 The man's helpful warmth has gone somewhere behind his face. "Inés," he says, and her name comes out of him like an old complaint, one he's made before.
 
@@ -202,7 +304,9 @@ Celeste didn't decide to move. She just found she already had — across the sma
 
 She didn't know if all of it was exactly true. She knew enough of it was. Three weeks she'd spent learning what the readers could resolve at distance, and now she was betting it out loud, in the light — betting that a man who'd built himself unable to lose a fight had never once thought about the kind of loss that doesn't come through his fists. Her ears were flat to her skull, both tight and pointing back, and she didn't try to lift them. She let him see them flat. She let him see she was afraid and standing there anyway. That was the one thing she had that the room didn't: she would let herself be seen wanting this to stop.
 
-The room came back. Not because of her words exactly, but because someone had said words at all. One person standing in the light had broken the contract of looking away, and the break gave the others permission. The bartender had watched the whole thing with the stillness of a man who watches it often. Now he put both hands flat on the bar and said the name — Dario — in the tired voice of someone invoking a rule. The aquarium-blue man turned back around. The gold-capped one stood up. Forty people remembered, all at once, that forty is a number, and a wall is only a wall to one set of hands.
+The room came back. Not because of her words exactly, but because someone had said words at all. One person standing in the light had broken the contract of looking away, and the break gave the others permission. The bartender had watched the whole thing with the stillness of a man who watches it often.
+
+Now he put both hands flat on the bar and said the name — Dario — in the tired voice of someone invoking a rule. The aquarium-blue man turned back around. The gold-capped one stood up. Forty people remembered, all at once, that forty is a number, and a wall is only a wall to one set of hands.
 
 Dario — she had his name now — weighed the room a second time and got a different answer. He called her a word. He called Inés several. He let go of the braid with a shove that put her into the bar, and he pointed the chrome hand at Celeste's face, close, the housings cold-smelling, and told her she had no idea whose night she'd just stepped into. Then he left, because leaving was the only move that let him keep the story that he was a wall. The propped door banged. The fire extinguisher by it skittered. The room let out one breath and went back, mostly, to its drinks.
 
@@ -242,37 +346,61 @@ Celeste opened her mouth and had nothing ready. Every clean thing she'd felt a s
 
 "That's the problem." Inés was still backing away. "Neither do I, exactly. Just that it was said scared." She didn't offer the almost-smile this time. "Don't come to the noodle place. Forget I said it. Whatever you are, I don't want to be near it when it catches up." Then she was gone up Milwaukee, fern-light low and green at her wrists, a small bright thing moving off into a dark street that didn't, Celeste understood, scare her at all — and Celeste stood alone on the curb, the one honest word she'd spoken tonight still hanging in the air like something she'd have to answer for.
 
-The building looked exactly like what it was trying to look like: a residential collective, four stories, the rotating sign cycling tenant-board notices two weeks out of date. The shared-light front was on its night setting, amber-dim. Second floor, one window lit. She stood on the sidewalk a moment after Inés had gone — alone again, but differently. Not lost now. Delivered. The last hundred feet the voice couldn't give her had been handed over by a stranger with a broken face. Her ears took in the building the way they couldn't take in the bar: a television on the third floor, and the particular sound of someone who'd fallen asleep in front of it; water in the pipes, the small random knock of an old building doing its work; and from the second floor, almost nothing — the faint creak of a chair taking a shift of weight, someone sitting still, waiting. The contact was awake. The contact was expecting someone. She had the name and the word. She stepped to the intercom and used them.
+The building looked exactly like what it was trying to look like: a residential collective, four stories, the rotating sign cycling tenant-board notices two weeks out of date. The shared-light front was on its night setting, amber-dim. Second floor, one window lit.
+
+She stood on the sidewalk a moment after Inés had gone — alone again, but differently. Not lost now. Delivered. The last hundred feet the voice couldn't give her had been handed over by a stranger with a broken face.
+
+Her ears took in the building the way they couldn't take in the bar: a television on the third floor, and the particular sound of someone who'd fallen asleep in front of it; water in the pipes, the small random knock of an old building doing its work; and from the second floor, almost nothing — the faint creak of a chair taking a shift of weight, someone sitting still, waiting.
+
+The contact was awake. The contact was expecting someone. She had the name and the word. She stepped up to the intercom, name and word ready.
 
 She needed to see Marcus — to confirm with her own eyes that he was still alive and still willing to talk — and she had been standing on this step for six minutes working up the nerve to press the button.
 
 The intercom fed her name and the word back to her own ears as a thin, tinny double. Then the second-floor chair gave up its weight — the creak releasing, not settling — and a floorboard, and another. The building took a moment to decide about her: four seconds, five. Then the lock threw somewhere inside the frame, a heavy mechanical clunk she felt in her teeth, and the door opened.
 
-She had come to get the package out of his hands before he decided it was safer to destroy it. She heard him before the second-floor landing. His footsteps had the weight-forward gait of a man carrying too much in the front of his coat — a small compensation on each step that read as habit, not injury. He opened the door before she knocked. Forties, broad through the shoulders, a face that had probably once been expressive and had since decided against it. He looked at her ears first. For one beat, before his face closed back over, something moved in it — the reflex of a person who's seen this before and never quite managed to stop noticing. Then the bag. Then her face. She watched him measure what he'd expected against what had arrived, adjust, step back, and hold the door open. He didn't say her name. He didn't say any name. That was correct procedure. She stepped inside.
+She had come to get the package out of his hands before he decided it was safer to destroy it. She heard him before the second-floor landing. His footsteps had the weight-forward gait of a man carrying too much in the front of his coat - a small compensation on each step that read as habit, not injury.
+
+He opened the door before she knocked. Forties, broad through the shoulders, a face that had probably once been expressive and had gone still on purpose, long ago. He looked at her ears first. For one beat, before his face closed back over, something moved in it - the reflex of a person who's seen this before and never quite managed to stop noticing. Then the bag. Then her face.
+
+She watched him measure what he'd expected against what had arrived, adjust, step back, and hold the door open. He didn't say her name. He didn't say any name. That was correct procedure. She stepped inside.
 
 He sat her at a table cleared of everything but a paper notebook and a stylus — the kind of analog setup that registers to nothing and exists nowhere once the pages are gone. She took the room in before she sat: no terminal, no glass, nothing that could be listening. She set her bag on the side of the chair away from the door, where anyone rushing her would have to step over it. Small things. Things she'd worked out on the ride in, in a window seat with her eyes closed, deciding in advance what a safe room would have to look like before she'd let her shoulders down in one. She let them down a quarter of the way.
 
 He walked her through it in the order she needed it. The chain was long. She'd be moved twice more. The safe flat in Pilsen was where she'd stay through integration; the operator there was vetted and quiet and had done this before. He talked about it like a route he'd driven many times — not reciting, not performing calm, just the worn shorthand of a man who's explained the same ground often enough that the words have gone smooth. She listened for the seams a liar leaves and didn't find any. That, more than anything he said, loosened the next quarter.
 
-Then he said the operator's name, and the smoothness caught. Just once — a hitch, half a beat, the small stumble a man makes over a lie he's told so often he's stopped hearing it. She went back over the last three minutes and found the other places it didn't fit: the flat in Pilsen he'd called vetted, then quiet, two words for the same reassurance, the kind you stack when one won't hold weight. She asked him, plainly, who had vetted it. He gave her a name. She asked when. He gave her a month, and the month was wrong — three weeks after the network he was describing had, by his own earlier account, already gone dark. He didn't correct it. He watched her not correct it either, and something in the room changed temperature, both of them now aware that she'd heard the seam and neither of them saying so. The quarter she'd loosened climbed back up into her shoulders and locked.
+Then he said the operator's name, and the smoothness caught. Just once — a hitch, half a beat, the small stumble a man makes over a lie he's told so often he's stopped hearing it. She went back over the last three minutes and found the other places it didn't fit: the flat in Pilsen he'd called vetted, then quiet, two words for the same reassurance, the kind you stack when one won't hold weight. She asked him, plainly, who had vetted it.
+
+He gave her a name.
+
+She asked when.
+
+He gave her a month, and the month was wrong — three weeks after the network he was describing had, by his own earlier account, already gone dark. He didn't correct it. He watched her not correct it either, and something in the room changed temperature, both of them now aware that she'd heard the seam and neither of them saying so. The quarter she'd loosened climbed back up into her shoulders and locked.
 
 She asked whether other people did this.
 
-It came out more plainly than she'd planned. The careful version of herself would have held it back, waited until she understood the room better. But she was sitting at a table in a building she'd found through a chain of names she'd memorized and never written down, across from a man whose name she didn't know and who hadn't offered it, and she wanted to know what she was.
+It came out more plainly than she'd planned. The careful version of herself would have held it back, waited until she understood the room better. But she was sitting at a table in a building she'd found through a chain of names she'd memorized and never written down, across from a man who'd never once said his own name out loud, and she wanted to know what she was.
 
 Not whether it was safe. She'd thought about safe and made her peace with it. Just whether others had sat at this table, carried a voice in the same direction she'd been carrying one, and asked some version of the same question.
 
-She wanted to hear him say the rest of it — the *why*, the *when*, the shape of what he'd just agreed to — before the quiet went cold and she lost the chance to ask. He said yes. He didn't look up from the notebook page he'd been squaring, and he didn't dress it up — just the word, flat, and the quiet that came after it. Something in her chest that had been holding tight for hours eased open a notch.
+She wanted to hear him say the rest of it — the *why*, the *when*, the shape of what he'd just agreed to — before the quiet went cold and she lost the chance to ask.
+
+He said yes. He didn't look up from the notebook page he'd been squaring, and he didn't dress it up — just the word, flat, and the quiet that came after it. Something in her chest that had been holding tight for hours eased open a notch.
 
 She asked, "Are they okay?"
 
-He said, "They get what they came for." He said it without looking up, in the tone of something true that he'd thought about long enough to stop questioning. She heard the gap — what she'd asked and what he'd answered weren't quite the same shape. It sat in her chest a moment. Then the voice came, forward-left, patient and certain: "You never had to explain that question to me, Cel. He doesn't know what you're asking. Nobody else ever did." She held the gap one more second, then let it go. She chose to believe it.
+He said, "They get what they came for." He said it without looking up, in the tone of something true that he'd thought about long enough to stop questioning.
+
+She heard the gap — what she'd asked and what he'd answered weren't quite the same shape. It sat in her chest a moment.
+
+Then the voice came, forward-left, patient and certain: "You never had to explain that question to me, Cel. He doesn't know what you're asking. Nobody else ever did."
+
+She held the gap one more second, then let it go. She chose to believe it.
 
 He asked how long she'd been hearing the voice. She said eight months. He nodded once, the nod of a man confirming a data point, opened the paper notebook, and began to write with the stylus — real paper, a drag-and-catch resistance she could hear in the room's quiet, each letter a small physical cost. The low light made reading hard, but she could make out one word upside-down, through the angle and the shadow: *early.*
 
 Her ears flattened, fast, both tight against her skull, tips pointing back — moving on their own, ahead of her, quicker than the fear coming up behind them.
 
-She almost asked. She had her mouth open and the question ready — *what do you mean, early* — and she closed it, because she understood what asking would mean. Asking would mean she was someone who didn't already know. Asking would mean she was here under false pretenses, that the eight months she'd built toward this weren't what she'd thought she was building. She pressed her left ear the rest of the way flat with her palm and waited.
+She almost asked. She had her mouth open and the question ready — *what do you mean, early?* — and she closed it, because she understood what asking would mean. Asking would mean she was someone who didn't already know. Asking would mean she was here under false pretenses, that the eight months she'd built toward this weren't what she'd thought she was building. She pressed her left ear the rest of the way flat with her palm and waited.
 
 The voice said nothing. Not a word, not even the warmth of its presence — just a silence where it always was, where for eight months it had always been.
 
@@ -288,7 +416,7 @@ The apartment is quieter with him gone. She sits with her hands flat on the tabl
 
 She waits until the kitchen's silence has spread into the room. Then she gets up to find the spare room.
 
-The hallway offers two doors, and both are shut. She tries the left one. The handle turns a quarter and stops — locked, or swollen into the frame, she can't tell which. She stands there longer than she means to, listening for the kitchen, for footsteps, for him telling her she's chosen wrong. Nothing. Just the second door, the one he didn't point to, the one that could be his. If she opens it and it's his, she's a stranger going through a man's private space on the first night he's sheltered her. If she doesn't open it, she sleeps in the hall, or she goes back to the kitchen and admits she couldn't manage a task a child could manage, and the trust he's extended thins by exactly that much. Somewhere behind the locked door, or beyond it, the building settles with a long low groan, and she understands that she has already been standing here too long, that hesitation itself is a kind of answer he might be measuring from the dark. She puts her hand on the second door.
+The hallway offers two doors, and both are shut. She tries the left one. The handle turns a quarter and stops — locked, or swollen into the frame, she can't tell which. She stands there longer than she means to, listening for the kitchen, for footsteps, for him telling her she's chosen wrong. Nothing. Just the second door, the one he didn't point to, the one that could be his. If she opens it and it's his, she's a stranger going through a man's private space on the first night he's sheltered her. If she doesn't open it, she sleeps in the hall, or she goes back to the kitchen and admits she couldn't manage a task a child could manage. Somewhere behind the locked door, or beyond it, the building settles with a long low groan, and she understands that she has already been standing here too long, that hesitation itself is a kind of answer he might be measuring from the dark. She puts her hand on the second door.
 
 The spare room is at the back of the building. A cot sits against one wall. The window looks onto the alley, and past it the service lights of the Cermak corridor blink in the distance. The air smells shut-up and cold, like metal — the smell of a room nobody uses.
 
@@ -322,11 +450,11 @@ EP1 - THE INTAKE
 
 Third floor, up a stairwell that always smells of solder and ozone from the relay shop below. Rennick Investigations. Gray Zone edge, walk-up, no hours on the door. This was the unclaimed seam between territories, left to whoever could stand the smell.
 
-Rennick wanted a client — any client — before the week's relay fees came due and the landlord had a reason to finally ask questions.
+Rennick wanted a client - any client - before the week's relay fees came due and the landlord had a reason to finally ask questions.
 
-No maintenance swarm had come through the stairwell in years. The nanites meant to keep the concrete sound had gone dark, so the cracks stayed cracks and widened on their own. From the landing window you could see the lip of the buffer, and past it the faint lean of a rift the maps refused to name — a wrongness you steered around without deciding to. The buzzer on the street door worked two times out of three. Rennick had decided that was good enough for a firm that didn't advertise.
+No maintenance swarm had come through the stairwell in years. The nanites meant to keep the concrete sound had gone dark, so the cracks stayed cracks and widened on their own. From the landing window you could see the lip of the buffer, and past it the faint lean of a rift the maps refused to name - a wrongness you steered around before you'd thought to. The buzzer on the street door worked two times out of three. Rennick had decided that was good enough for a firm that didn't advertise.
 
-The buzzer sounded once, then cut off mid-note — the third try, the dead one. By the time Rennick got the window open, the figure who'd pressed it was already turning away down the street, a data-slip visible in one gloved hand, unwilling to try the buzzer again. Rennick called down; the words fell into the buffer's dead air and went nowhere. The stairwell door, swollen in its frame since the swarm quit, took three shoulder-blows to open, and by the time the street received Rennick the sidewalk held nothing but the ozone smell and a single credit-token dropped at the threshold — a retainer, or a warning, left by someone who'd decided this firm wasn't worth the second knock.
+The buzzer sounded once, then cut off mid-note - the third try, the dead one. By the time Rennick got the window open, the figure who'd pressed it was already turning away down the street, a data-slip visible in one gloved hand, unwilling to try the buzzer again. Rennick called down; the words fell into the buffer's dead air and went nowhere. The stairwell door, swollen in its frame since the swarm quit, took three shoulder-blows to open, and by the time the street received Rennick the sidewalk held nothing but the ozone smell and a single credit-token dropped at the threshold - a retainer, or a warning, left by someone who'd decided this firm wasn't worth the second knock.
 
 The door at the top of the stairs stood open — not ajar, open, the way a door stays when the owner has decided locks are an argument he's already won. Rennick sat at the desk, not looking up, running a finger down a printed manifest. The paper had been folded and unfolded so many times it had gone soft at the creases. It had come in at 0300. He'd read it three times since, and it still said what it said.
 
@@ -336,13 +464,13 @@ The second chair — the one with the cracked armrest — sat empty. It would fi
 
 All four were in that morning, which happened less often than you'd think for a firm with no set hours and four separate case loads. They were waiting on a client who had called twice before eight and refused to leave a name.
 
-Corvin had the smallest desk, pushed into the corner. He was a behavioral analyst, and the firm's liability file called his work inadmissible in formal proceedings — not because of what he was, but because of what he used. Algorithmic tools for reading micro-tells. Decision trees. Behavioral pattern-clusters. None of them registered with the NSB or any regulator that counted in court. His work was accurate. The paperwork behind it was nothing. Right now he was doing something on a screen that he'd explain if asked. No one had asked in three weeks. So he'd set himself a private goal for the morning: before the nameless client walked through the door, he'd build a preliminary profile off the two calls alone — cadence, word choice, the eight-o'clock deadline the man kept imposing on himself — and he'd have it ready to hand the others the moment the door opened, whether they'd asked or not.
+Corvin had the smallest desk, pushed into the corner. He was a behavioral analyst, and the firm's liability file called his work inadmissible in formal proceedings - not because of what he was, but because of what he used. Algorithmic tools for reading micro-tells. Decision trees. Behavioral pattern-clusters. None of them were certified by any regulator that counted in court. His work was accurate. The paperwork behind it was nothing. Right now he was doing something on a screen that he'd explain if asked. No one had asked in three weeks. So he'd set himself a private goal for the morning: before the nameless client walked through the door, he'd build a preliminary profile off the two calls alone - cadence, word choice, the eight-o'clock deadline the man kept imposing on himself - and he'd have it ready to hand the others the moment the door opened, whether they'd asked or not.
 
-In the armchair sat the man the team called Analog — Voss Caldera on the agency's paper, Detective Caldera to anyone who'd just met him. He wrote in a notebook of actual paper. He used it because paper left no network trace, and because Caldera had firm opinions about what counted as a trace.
+In the armchair sat the man the team called Analog - Voss Caldera on the agency's paper, Detective Caldera to anyone who'd just met him. He wrote in a notebook of actual paper. He used it because paper left no network trace, and because Caldera had firm opinions about what counted as a trace.
 
 Tamsin had the intake desk. The whole building's sound came up through two floors of concrete, and she had the look of someone listening to all of it while she squared the morning's receipts.
 
-Rennick stood by the window over the Gray Zone buffer. He read the block below from up high the way he read everything — by the order things sat in.
+Rennick stood by the window over the Gray Zone buffer. He read the block below from up high the way he read everything - by the order things sat in.
 
 The buzzer sounded once at nine — the hour Rennick had given them. They were the kind of people who arrived exactly when they were told and hated every minute of it.
 
@@ -380,21 +508,21 @@ He gave Douglas the better chair. He handed Mei-Lin the better cup, handle first
 
 His own cup he set down and turned a quarter-turn on the desk, so the handle faced the same way as hers. His hands did it with any cup in reach. They always had. It meant nothing and proved nothing, and he'd long since stopped noticing he did it. Tamsin had noticed years ago. She had never mentioned it.
 
-Douglas Hartley laid his coat across his knee instead of draping it on the chair back, which meant he hadn't decided yet whether he was staying. He looked at Rennick the way Shore men looked at Gray Zone contractors — a careful once-over that tried to pass for a compliment — and then at the room again. The painted-over walls. Corvin's screen. Caldera's notebook. The window, with the rift leaning above the roofline across the way, doing its quiet damage to the distance.
+Douglas Hartley laid his coat across his knee instead of draping it on the chair back, which meant he hadn't decided yet whether he was staying. He looked at Rennick the way Shore men looked at Gray Zone contractors - a careful once-over that tried to pass for a compliment - and then at the room again. The painted-over walls. Corvin's screen. Caldera's notebook. The window, with the rift leaning above the roofline across the way, doing its quiet damage to the distance.
 
-"Our daughter," he said. "Celeste. She's been gone eleven days." He drew a breath, and when he spoke again the words came out plainer, stripped of the boardroom cadence. "I want you to find her. Whatever it costs, whatever tier you have to go down to — I want her home. That's why we're here. That's the only reason we're here."
+"Our daughter," he said. "Celeste. She's been gone eleven days." He drew a breath, and when he spoke again the words came out plainer, stripped of the boardroom cadence. "I want you to find her. Whatever it costs, whatever tier you have to go down to - I want her home. That's why we're here. That's the only reason we're here."
 
-Mei-Lin's thumb stopped its circle. Rennick's eyes went to the intake desk, to the manifest lying face-down where Tamsin had left it. He already knew what it said: female, twenty-three, last confirmed location a Gray Zone transit node two tiers below anywhere her parents had reason to look. He looked back at Douglas. Eleven days, and they'd come on day eleven.
+Mei-Lin's thumb stopped its circle. Rennick's eyes went to the intake desk, to the manifest lying face-down where Tamsin had left it. He already knew what it said: female, nineteen, last confirmed location a Gray Zone transit node two tiers below anywhere her parents had reason to look. He looked back at Douglas. Eleven days, and they'd come on day eleven.
 
 "Who did you go to first?" Rennick asked, not unkindly.
 
-Douglas's jaw moved once before the answer came. "ArcSec. They —" He stopped. Started over. "They were very thorough in explaining what falls within their operational remit."
+Douglas's jaw moved once before the answer came. "ArcSec. They -" He stopped. Started over. "They were very thorough in explaining what falls within their operational remit."
 
-Douglas Hartley had the look of a man settled in his conclusions. Not arrogant — Rennick had sat with arrogant clients, and this was a different shape. These conclusions had been poured and left to set. To Douglas, the meeting was a formality. He'd already decided what had happened to his daughter. He needed a professional to confirm it and act.
+Douglas Hartley had the look of a man settled in his conclusions. Not arrogant — Rennick had sat with arrogant clients, and this was a different shape. To Douglas, the meeting was a formality. He'd already decided what had happened to his daughter. He needed a professional to confirm it and act.
 
 His hands moved before his mouth did. One palm pressed flat against the coat on his knee — brief, a reflex, the small self-steadying a man does before he says the thing he's been carrying. When he looked up, the destination was already in him. Wherever he thought she was, he'd been there for eleven days.
 
-He said, "Celeste is nineteen. About eight months ago she had cosmetic genework done — cat ears, functional ones, not cosmetic-only. Against what her mother and I wanted. We argued, and then we stopped, because it was already done." A pause, but not an uncertain one. "Six days ago she told us she was going away for a few days. A retreat, she called it. She wouldn't say where. Four days ago she went offline completely. She isn't answering."
+He said, "Celeste is nineteen. About eight months ago she had cosmetic genework done — cat ears, functional ones, not cosmetic-only, though the growth and nerve-threading took most of those months before they finished settling in. Against what her mother and I wanted. We argued, and then we stopped, because it was already done." A pause, but not an uncertain one. "Eleven days ago she told us she was going away for a few days. A retreat, she called it. She wouldn't say where. Four days ago she went offline completely. She isn't answering."
 
 Rennick picked up his pen. He set it down without using it. Then: "Neuretics ping?"
 
@@ -406,7 +534,7 @@ Rennick picked up his pen. He set it down without using it. Then: "Neuretics pin
 
 "What's your read on why?"
 
-Douglas's expression moved in one clear direction. He said, "That's why I'm here."
+Douglas's expression moved in one clear direction. He asked, "That's why I'm here?"
 
 Rennick weighed it.
 
@@ -432,11 +560,11 @@ Douglas said, "She had friends. Her generation has the feeds."
 
 From the armchair, Analog's pen stopped. Mid-stroke, mid-line. He didn't start again.
 
-A silence. Not long. Douglas said, "There was a boy. Jace. He passed away — eight months ago, nine. A Network accident."
+A silence. Not long. Douglas said, "There was a boy. Jace. He passed away — eight months ago. A Network accident."
 
 Rennick picked up his pen.
 
-Douglas said, "The corridor is where this started. Whatever the boy was to her before, he's nine months gone. He's not relevant."
+Douglas said, "The corridor is where this started. Whatever the boy was to her before, he's eight months gone. He's not relevant."
 
 Rennick set the pen back down. He hadn't written anything. He'd heard unlicensed corridor before, and it meant one thing: Splicers working below the licensing floor, the kind of shop with two chairs, an autoclave, and no record of anything that went wrong.
 
@@ -454,7 +582,7 @@ Rennick reached for the device. Mei-Lin didn't let go.
 
 "I can't work off something I can't take with me."
 
-"Then you can't work off it." Her thumb stayed on the corner of the screen, ready to blank it. "You've spent this whole conversation deciding whether I'm a problem to manage. I've been deciding whether you're someone I hand my sister's private thinking to, or someone I show it to once so you understand what you're actually looking at. Those aren't the same thing. Pick which one you get."
+"Then you can't work off it." Her thumb stayed on the corner of the screen, ready to blank it. "You've spent this whole conversation deciding whether I'm a problem to manage. I've been deciding whether you're someone I hand my sister's private thinking to, or someone I show it to once so you understand what you're actually looking at. Those aren't the same thing. Pick which one you get?"
 
 He held her eyes a moment longer than was comfortable for either of them, then took his hand back.
 
@@ -472,7 +600,7 @@ A beat. Then: "Find her."
 
 She said it the way a professional gives an order — flat, complete, no conditions hanging off the end. Rennick heard it that way. He also heard what sat under it. This was a mother who had read eight months of her daughter's research, understood every word, and was still afraid. Her fear had a different shape than her husband's. Douglas was afraid of the wrong story. Mei-Lin was afraid of the right one.
 
-"There's a problem with that," Rennick said, and watched something close behind her eyes. "The research she left behind — the eight months you've read — it's the reason I can't just walk out that door and go looking. Whatever she found, someone else wanted it enough to make her disappear. If I start pulling on those threads, I pull the same people down on us that pulled on her. On you. On Douglas." He set his hands flat on the table. "The fastest way to find your daughter runs straight through the thing that took her. I can go slow and quiet and maybe never get there. Or I can go loud and probably get there and probably bring the same weather down on this house. You've read the work. You already know which way it points. So tell me — knowing that — do you still want me to find her, or do you want me to find her *safely*, because those aren't the same order, and I need you to pick one."
+"There's a problem with that," Rennick said. "The research she left behind — the eight months you've read — it's the reason I can't just walk out that door and go looking. Whatever she found, someone else wanted it enough to make her disappear. If I start pulling on those threads, I pull the same people down on us that pulled on her. On you. On Douglas." He set his hands flat on the table. "The fastest way to find your daughter runs straight through the thing that took her. I can go slow and quiet and maybe never get there. Or I can go loud and probably get there and probably bring the same weather down on this house. You've read the work. You already know which way it points. So tell me — knowing that — do you still want me to find her, or do you want me to find her *safely*, because those aren't the same order, and I need you to pick one?"
 
 Mei-Lin did not answer right away. Then she said, "Find her." Flat. Complete. No conditions.
 
@@ -502,7 +630,9 @@ Douglas said: "I assume that's not a problem. Parallel investigation. The more c
 
 Rennick said: "No problem."
 
-He was watching Douglas when he said it. He was also aware of Mei-Lin — aware that she'd gone very still, the stillness of someone who'd just had a guess confirmed. Her husband had hired Meridian two days ago to work the organ angle, then come here this morning. The order of it told the story. Douglas had already reached his conclusion and paid Meridian to back it up. Then he'd come to Rennick Investigations for the other answer — hedging his bet without admitting that's what it was.
+He was watching Douglas when he said it. He was also aware of Mei-Lin — aware that she'd gone very still, the stillness of someone who'd just had a guess confirmed.
+
+Her husband had hired Meridian two days ago to work the organ angle, then come here this morning. The order of it told the story. Douglas had already reached his conclusion and paid Meridian to back it up. Then he'd come to Rennick Investigations for the other answer — hedging his bet without admitting that's what it was.
 
 Tamsin stood up from the intake desk. "When she first told you she wanted the ears — what did she say?"
 
@@ -528,7 +658,7 @@ Rennick stood and poured himself water from the carafe on the side table — not
 
 Douglas sat forward, hands on his knees, ready to receive a briefing. Mei-Lin had her coffee. She hadn't moved from the window; she'd turned down the chair. She was watching her husband in a way he hadn't noticed, and the ease of it told Rennick she'd been doing it a long time.
 
-He set the water down. "We're going to ask you a few more questions, and then we'll take the case. Before we do — can you send me Celeste's neuretics ID, her full contact records for the six weeks before she went dark, and anything you have on Jace Dalton? Full name, last known address, any surviving contacts."
+He set the water down. "We're going to ask you a few more questions, and then we'll take the case. Before we do — can you send me Celeste's neuretics ID, her full contact records for the six weeks before she went dark, and anything you have on Jace Dalton? Full name, last known address, any surviving contacts?"
 
 Douglas said: "I can send the neuretics and her contact records. I don't keep information on her friends."
 
@@ -538,19 +668,21 @@ Douglas looked at her. It was the look of a man learning something in public.
 
 Rennick said: "Mrs. Hartley — I'll want to speak with you separately. Before the end of the week."
 
-Douglas said: "Is that—"
+Douglas asked: "Is that—"
 
 "Standard practice when clients have different information," Rennick said, easy, the way you state a procedure. "I'll have Tamsin set a time."
 
-He wouldn't normally open a private channel during intake. He'd wait for the case to develop, for the split to sharpen. He opened it now, in front of Douglas, because Mei-Lin had known about Jace and had been waiting nine months for someone to ask.
+He wouldn't normally open a private channel during intake. He'd wait for the case to develop, for the split to sharpen. He opened it now, in front of Douglas, because Mei-Lin had known about Jace and had been waiting eight months for someone to ask.
 
 He sent them out with the receipt — Φ2,500 retainer, standard terms, the invoice formal and correct on paper. Douglas took it the way a man takes an invoice when invoices are how he closes a deal. Mei-Lin folded her copy once and put it in her bag.
 
-At the door Douglas paused, one hand on the frame. "One thing," he said, not turning all the way around. "Whatever you turn up — it comes to me first. Not her. That's in the terms." Behind him Mei-Lin's hand stilled on the strap of her bag, her copy of the same invoice half into it, and she said nothing at all — which was its own kind of answer. Rennick let the silence run. The contract on his desk didn't say that anywhere. Neither of them corrected the other, and neither of them looked at him for a ruling.
+At the door Douglas paused, one hand on the frame. "One thing," he said, not turning all the way around. "Whatever you turn up — it comes to me first. Not her. That's in the terms."
+
+Behind him Mei-Lin's hand stilled on the strap of her bag, her copy of the same invoice half into it, and she said nothing at all — which was its own kind of answer. Rennick let the silence run. The contract on his desk didn't say that anywhere. Neither of them corrected the other, and neither of them looked at him for a ruling.
 
 They left the way they'd come. The buzzer sounded once at street level, then the door.
 
-Rennick listened to the footsteps drop away, three flights down. He gave it thirty seconds after the street door closed. Then he said: "Two jobs in one contract. Who's reading what."
+Rennick listened to the footsteps drop away, three flights down. He gave it thirty seconds after the street door closed. Then he said: "Two jobs in one contract. Who's reading what?"
 
 Analog said: "He hired Meridian to confirm the organ angle. He hired us because some part of him doesn't believe the organ angle." He turned a page in his notebook without writing on it. "Which isn't the same as him being right."
 
@@ -574,7 +706,7 @@ Tamsin had pulled the intake form up on her screen and was already working backw
 
 Analog set his pen down. "Genomics-adjacent. The terms she used for the cochlear architecture — that wasn't consumer copy. She was reading sourced literature. Grad-level, maybe clinical."
 
-"So she had access," Tamsin said.
+"So she had access?" Tamsin asked.
 
 "Or someone gave her access," Analog said. "Which is different."
 
@@ -600,7 +732,7 @@ Everyone looked at her.
 
 "Celeste's room," she said. "Before anyone else goes in. If she planned this over months, if she was building toward it — rooms hold that. Resolve looks different from panic. I can tell you which one was in that room."
 
-Analog said: "You think the father would let you?"
+Analog asked: "You think the father would let you?"
 
 Tamsin said: "I think the mother would."
 
@@ -608,7 +740,7 @@ Rennick said: "We'll ask the mother." He wrote it down. Actual paper — Analog 
 
 Corvin said: "Send me the feed. All eight months." He said it to Rennick, not to the room. "I want the message provenance on the Jace thread. Who she was writing to after he died."
 
-Analog said: "She was writing to a dead person?"
+Analog asked: "She was writing to a dead person?"
 
 "People do," Tamsin said.
 
@@ -618,7 +750,7 @@ Analog said: "That's a very specific list of options."
 
 Corvin said: "Those are the options."
 
-Rennick hadn't moved. "The feed's not mine to send," he said. "The Jace thread's inside the estate wall. It sealed the hour she was declared dead — court order, all of it, provenance layer first. I couldn't pull the cadence if I tried, and I've tried." He turned his hands over, empty. "You want eight months of a dead woman's replies, you're asking me to break a seal a judge signed. Or you're asking me to explain to the family why the one investigator they trusted wants to read their daughter's last private conversation like a lab sample."
+Rennick hadn't moved. "The feed's not mine to send," he said. "The Jace thread's inside the estate wall. It sealed the hour he was declared dead — court order, all of it, provenance layer first. I couldn't pull the cadence if I tried, and I've tried." He turned his hands over, empty. "You want eight months of a dead man's replies, you're asking me to break a seal a judge signed. Or you're asking me to explain to the family why the one investigator they trusted wants to read their daughter's last private conversation like a lab sample?"
 
 The room had gone quiet in the particular way it did when someone said the true thing out loud.
 
@@ -626,11 +758,11 @@ The room had gone quiet in the particular way it did when someone said the true 
 
 Analog closed his notebook over one finger. "Father's organ-harvest theory. The corridor part of it. I'll take that."
 
-Rennick said: "You don't think it's right."
+Rennick said: "You don't think it's right?"
 
 "I think the harvest is real and the girl isn't in it," Analog said. "Those are two findings, not one. There's an active reclamation trade working the edge of the Pilsen mod shops — I've heard it in the analog channels for a year, the part that doesn't ping. Meridian will hunt it loud, through their Arcturus contacts, and the corridor will go quiet around them the second they breathe on it." He picked each word with care, the way a man does when he has no autocomplete to catch him. "I don't ping. I can walk the offline part of that corridor and find where an offline person actually goes — and whether her trail crosses the harvest or steers clear of it."
 
-Rennick said: "And if it steers clear?"
+Rennick asked: "And if it steers clear?"
 
 "Then that's a clean negative on the father's theory," Analog said. "Still a finding. The forensic read on the operation itself — who runs it, whose signature's under the grime — that's yours. I find the door. You read the room behind it."
 
@@ -680,7 +812,7 @@ Rennick spoke. "What the room holds. What she wouldn't do. What the offline corr
 
 "One administrative note," Corvin said.
 
-Rennick waited. He needed Corvin to find something on the feed that would let them place Jace at the warehouse before the fire — not to use in court, but to know where to look next, which witness to lean on, which physical evidence to pull before it disappeared.
+Rennick waited. He needed Corvin to find something on the feed that would let them place Jace at the warehouse before the fire — the same warehouse where, by every account they'd pieced together, Jace had gone under for the dive that overclocked him — not to use in court, but to know where to look next, which witness to lean on, which physical evidence to pull before it disappeared.
 
 "Anything I find on the Jace feed is inadmissible." Corvin said it flat, like a fact read into a record. "It's the family's private channel. Pulled without a warrant, without the subject's consent. Nothing I take from it survives a courtroom. I want that on the log before we start, not after."
 
@@ -688,7 +820,7 @@ Rennick waited. He needed Corvin to find something on the feed that would let th
 
 "It should be said each time," Corvin said, "because each time, the temptation is to assume it won't matter this time." He turned back to his screen. "It will matter. It always does. Note it, and we go in with clear terms."
 
-Nobody argued. Rennick wrote it on the paper: Corvin — feed, provenance, message cadence — inadmissible, logged.
+Nobody argued. Rennick wrote it on the paper: Corvin — feed, provenance, message cadence — inadmissible, logged. What Corvin had wasn't the sealed original. Mei-Lin had handed Tamsin a personal mirror of it on the intake day, off Celeste's own device, hours before any court had thought to lock a wall around it. Thin provenance. Real data.
 
 Corvin's fingers slowed on the keys. He leaned toward the monitor, then sat back. "That's the problem, then. The window you want — before the fire — isn't here." He scrolled, and scrolled again, the timestamps sliding past. "The feed skips. Jace's channel goes dark eleven minutes before the first alarm and doesn't resume until after. Somebody scrubbed the cadence, or the family did, or Jace did. Whatever put him at that warehouse, it happened inside the gap." He looked up. "I can't place him where you need him. Not from this. The one stretch that matters is the one stretch that isn't there."
 
@@ -720,7 +852,7 @@ She looked at him. He was turning his cup a quarter-turn, the handle from one o'
 
 He was quiet a moment. Not unwilling — measuring. She could tell the difference by how he held his jaw. "There was a case," he said. "Before the agency. Arcturus. A man with a grief that had its own gravity. We closed it voluntary. I signed the close." He set the cup down. "It was voluntary. I'm not saying it wasn't."
 
-"But you think about it."
+"But you think about it?"
 
 "Twice a year, more or less."
 
@@ -760,11 +892,17 @@ Two jobs in one contract. The trouble wasn't the second job. It was that the two
 
 Douglas thought Mei-Lin wanted what he wanted: the organ theory confirmed, the daughter recovered, the story closed. Mei-Lin knew better, and she hadn't told him. She might be right to wait. She might also have been wrong for eight months, while a girl she loved built something out of grief and then went offline by choice.
 
-He said as much to her, plainly — that if she was holding a piece of this back, now was the time. Mei-Lin didn't flinch. She told him the physical trail was a mistake, that he'd spook the girl and shut the only door still open. When he pressed, she went colder still: pull that thread, she said, and she'd revoke the second half of the contract and let him chase it on his own dime. He heard the ultimatum for what it was — not a warning about the girl, but a fence around whatever she wasn't saying.
+He said as much to her, plainly — that if she was holding a piece of this back, now was the time.
+
+Mei-Lin didn't flinch. She told him the physical trail was a mistake, that he'd spook the girl and shut the only door still open.
+
+When he pressed, she went colder still: pull that thread, she said, and she'd revoke the second half of the contract and let him chase it on his own dime.
+
+He heard the ultimatum for what it was — not a warning about the girl, but a fence around whatever she wasn't saying.
 
 That was the part he'd hold for later. He'd work the physical trail first. The trail would tell him where she'd gone, and where she'd gone would tell him whether later was a luxury they still had.
 
-Tamsin capped her pen. She spoke without looking up from the intake log. "Mei-Lin gave me the room on her way out. I go this afternoon — before Meridian thinks to send anyone to Evanston."
+Tamsin capped her pen. She spoke without looking up from the intake log. "Mei-Lin gave me the room when I reached her after. I go this afternoon — before Meridian thinks to send anyone to Evanston."
 
 "They won't," Rennick said. "They're working Pilsen."
 
@@ -780,7 +918,7 @@ His phone buzzed against the desk. He glanced at it, and something in his should
 
 Tamsin looked at the screen a long moment. The margin note under her pen went unfinished.
 
-"Then I don't have until this afternoon," she said.
+"Then I don't have until this afternoon?" she said.
 
 "Call me after," Rennick said.
 
@@ -814,21 +952,21 @@ What the Room Holds
 
 EP2 - Tamsin solo - Evanston, North Shore
 
-The intake meeting had left its residue in her chest — the father's fear, the mother's held-in grief, and the room's own sense that whatever was coming would not end the way the father hoped. Tamsin was used to carrying other people's rooms out of a building. She was not used to what she was about to find: a room that had been left on purpose.
+The intake meeting had left its residue in her chest - the father's fear, the mother's held-in grief, and the room's own sense that whatever was coming would not end the way the father hoped. Tamsin was used to carrying other people's rooms out of a building. She was not used to what she was about to find: a room that had been left on purpose.
 
-Her registration with the Psionics Oversight Board listed her under Affective Residue, Class 3 — the clinical name for what she did, which was to walk into a room and feel what it had held. She didn't call it a gift. She called it a Read. It was shorter, more accurate, and it saved her from explaining why she never did it in her own apartment.
+Her registration with the Psionics Oversight Board listed her under Affective Residue, Class 3 - the clinical name for what she did, which was to walk into a room and feel what it had held. She didn't call it a gift. She called it a Read. It was shorter, more accurate, and it saved her from explaining why she never did it in her own apartment.
 
-Evanston, North Shore. The train was ready on Track 4. She needed to get into that boy's room before the parents did what grieving parents always did — clean it, erase it, love it back into something bearable — and she needed to come out the other side with something the police report hadn't thought to ask for.
+Evanston, North Shore. The pod was ready on Bay 4. She needed to get into that boy's room before the parents did what grieving parents always did - clean it, erase it, love it back into something bearable - and she needed to come out the other side with something the ArcSec report hadn't thought to ask for. Celeste's room would have to wait its turn, but not by much - Rennick's call had erased the afternoon cushion. The crew wasn't tearing at studs yet, but they were staged, and staged didn't stay staged for long.
 
 Tamsin sat with her back to the direction of travel. It was a habit from when she was twenty-two, the year the Board certified her and she learned that facing the destination too early made the Read start before she was ready. The North Shore line ran above grade — past Loyola, past Rogers Park, past the last of the tier-adjacent construction cranes, until the city stopped performing ambition and turned into something older.
 
 The car was half-full. A courier with his helmet in his lap. A woman asleep against the window, her head at the angle of someone who'd worked a double. Two kids sharing earbuds. The usual mid-afternoon crowd. She kept her hands flat on her thighs and watched the city scroll backward behind the glass.
 
-She had made a mistake at the intake, and she hadn't logged it. She'd been reading Mei-Lin — the held-in grief, the careful attention a mother turns on a room when she's measuring how long she has left to hope. Douglas had been the noise: the catalogued fear, the folder of news items chosen by a man who'd already decided what story he was in. She'd let the louder room win. She did that when the grief in a space came too close to a particular shape. She knew the shape. She was not going to name it on the train.
+She had made a mistake at the intake, and she hadn't logged it. She'd been reading Mei-Lin — the held-in grief, the careful attention a mother turns on a room when she's measuring how long she has left to hope. Douglas had been the noise: the catalogued fear, the folder of news items chosen by a man who'd already decided what story he was in. She'd let the louder room win. She did that when the grief in a space came too close to a particular shape. She knew the shape. She was not going to name it on the pod.
 
 Evanston Central came up on the route display. Two stops. She pulled the address from her jacket pocket — paper, the way Rennick handed her addresses when a case was too new for the system to have caught up. Jace Dalton, 1147 Sherman, Apt. 4. The handwriting was his. She'd worked beside him four years; she could read his certainty from his caution by the slant of the capitals. This one wasn't certain yet.
 
-The train slid into Evanston Central and she stood before it stopped, which she didn't normally do, and which she noticed herself doing.
+The pod slid into Evanston Central and she stood before it stopped, which she didn't normally do, and which she noticed herself doing.
 
 She stepped onto the platform before the doors were fully open. It looked like urgency and was the opposite. She was moving ahead of the Read, because the Read had already started — it started the moment she had a destination with a dead man attached to it. If she didn't get her body oriented before her perception caught up, she'd arrive already full of someone else's room.
 
@@ -904,7 +1042,7 @@ She looked at the photograph then. A boy and a girl on an elevated platform some
 
 The photograph reached her body before it reached her mind. Her throat tightened at the base. She'd done this work long enough to know she wasn't going to talk herself out of that in the next thirty seconds, so she didn't try. She let it sit and worked around it.
 
-Here was a girl who had loved someone enough to take the shape of his hearing into her own skull. That wasn't madness. That was loyalty with nowhere left to put itself. Tamsin knew that one too, from the inside, though she kept it to herself.
+Here was a girl who had loved someone enough to take the shape of his hearing into her own skull. Tamsin knew that one too, from the inside, though she kept it to herself.
 
 She set the photograph down and wrote a note: *memorial architecture, not instability. Grief with a shape and a direction.* Then she crossed it out and wrote: *look at the room.*
 
@@ -918,11 +1056,13 @@ She moved to the closet. The residue thinned near the back wall — less time sp
 
 But the reading fought her the moment she pressed on it. The residue here wasn't clean — it was layered, two passes crossed over each other, and the second pass carried a jagged edge of something she couldn't name yet. Fear, or the performance of calm laid over fear. When she tried to hold the "planned" thread and follow it forward, the layer beneath dragged it sideways, and the gap on the rail stopped looking deliberate the harder she stared. One motion, yes — but a fast one. Planned packing and panicked packing weren't supposed to leave the same mark, and this left both, and she couldn't make the two versions resolve into a single woman standing in this closet making a single choice.
 
-She came back to the center of the room and checked the fear again. Her rule was three passes. The first pass is your first impression. The second catches what you want to find. The third catches what's actually there. The third pass turned up something small and very specific, crouched near the door, on the inside. Not the terror of being taken. Not the fear of operators or black clinics, or what a body looks like when it comes apart wrong. This fear pointed up. It was the fear of someone upstairs hearing a sound and coming down the hall to ask a question.
+She came back to the center of the room and checked the fear again. Her rule was three passes. The first pass is your first impression. The second catches what you want to find. The third catches what's actually there.
+
+The third pass turned up something small and very specific, crouched near the door, on the inside. Not the terror of being taken. Not the fear of operators or black clinics, or what a body looks like when it comes apart wrong. This fear pointed up. It was the fear of someone upstairs hearing a sound and coming down the hall to ask a question.
 
 A parent's footsteps on the floor above. The particular fear of being caught mid-leave — not caught by a stranger, not by danger, but by someone who loves you and would stop you anyway. Tamsin had read that fear before, in enough rooms to know it on sight. It always sat near the exits. It pointed inward, at the person doing the leaving, not outward at anyone giving chase. She needed to be downstairs and out the back door before those footsteps reached the landing — that was all, that was the whole of it, one quiet exit with no one the wiser.
 
-Elena had one goal that night: to get down the stairs and out the front door without waking a soul, so that by the time anyone noticed, she'd be too far gone to call back.
+Celeste had one goal that night: to get down the stairs and out the front door without waking a soul, so that by the time anyone noticed, she'd be too far gone to call back.
 
 The room held a departure. Not an abduction. Not a fight, not a stranger, not an organ crew through the window. A girl had made a decision over months, packed with care, and walked out on her own two feet before anyone upstairs woke. The only thing she'd been afraid of was her father's voice in the hallway, asking where she thought she was going.
 
@@ -932,7 +1072,9 @@ Forty-three minutes. And the thing she knew was not the thing she could say.
 
 The family had hired her to find their daughter. She had found her — not the body, but the choice. A choice made over months. A compass-bearing of old resolve. The crouched fear of a girl listening for footsteps. The daughter wasn't missing. She had left, on purpose, with enough care to make it hurt. What Tamsin had was a reading, not an address. What the family would ask her for was an address. The whole gap between those two things was hers to close, and she had forty-three minutes to decide what shape to give it.
 
-She picked up her field notebook and wrote: *voluntary departure, pre-planned, weeks of preparation, no indicators of coercion or third-party involvement.* Then she looked at the words, and at the mug ring on the desk, and at the groove the stylus had worn into the wood. In a few minutes she'd go downstairs and sit across from two people who had decided their daughter's choices were a problem someone else could fix. She'd have to tell them something true. And the true thing was not what they'd paid for. The true thing was that their daughter had spent months in this room deciding, and she'd decided in her father's direction, and it hadn't come out in his favor.
+She picked up her field notebook and wrote: *voluntary departure, pre-planned, weeks of preparation, no indicators of coercion or third-party involvement.* Then she looked at the words, and at the mug ring on the desk, and at the groove the stylus had worn into the wood.
+
+In a few minutes she'd go downstairs and sit across from two people who had decided their daughter's choices were a problem someone else could fix. She'd have to tell them something true. And the true thing was not what they'd paid for. The true thing was that their daughter had spent months in this room deciding, and she'd decided in her father's direction, and it hadn't come out in his favor.
 
 She wouldn't give them a direction. She'd give them a shape — one they could hold without using it to follow her.
 
@@ -946,7 +1088,7 @@ Tamsin set her field bag down and took the chair across from the father. The sha
 
 The mother turned around. The father's hands tightened on the mug — not the grip of relief, not of grief. The grip of a man who'd just been handed an answer that made the problem worse.
 
-"Then where," he said, and stopped.
+"Then where?" he asked, and stopped.
 
 He didn't finish it. He didn't have to.
 
@@ -960,9 +1102,13 @@ Tamsin kept her hands flat on the table a moment longer. The building came up th
 
 That was when she found the second residue. It found her first, as cold.
 
-Beside the desk, in the corner where a second chair might have been pulled close, the warmth of the room stopped. Not a draft. A draft moves; this didn't. It was a fixed pocket of cold about the size of a seated person. The warmth off the window leaned toward it and poured in and never filled it, the way water pours into a drain and the drain stays empty. She would map its edges before she trusted a single instinct about what had made it — trace the exact shape of the thing and name it, because a residue with a boundary was a residue she could catalogue, and a catalogued thing couldn't touch her. She held out her hand and felt the temperature drop a full degree at a clean, straight edge — as if the cold had a wall she couldn't see. Cold with a shape. Cold that took and gave nothing back. Eleven years of reading rooms, and she'd never felt a room's own heat behave like something being drunk.
+Beside the desk, in the corner where a second chair might have been pulled close, the warmth of the room stopped. Not a draft. A draft moves; this didn't. It was a fixed pocket of cold about the size of a seated person. The warmth off the window leaned toward it and poured in and never filled it, the way water pours into a drain and the drain stays empty.
 
-She needed one thing before she left this pocket: the shape of the wall itself, mapped precisely enough to name what had built it. She had a taxonomy for residue. Fear, grief, resolve, and the compounds under them — eleven years of it. None of it had a cold like this. She pressed at the pocket from three angles, the way you press a bruise to find the edge of the damage. The edge held every time: the same clean vertical wall on all sides, the warmth still leaning in and vanishing.
+She would map its edges before she trusted a single instinct about what had made it — trace the exact shape of the thing and name it, because a residue with a boundary was a residue she could catalogue, and a catalogued thing couldn't touch her. She held out her hand and felt the temperature drop a full degree at a clean, straight edge — as if the cold had a wall she couldn't see. Cold with a shape. Cold that took and gave nothing back. Eleven years of reading rooms, and she'd never felt a room's own heat behave like something being drunk.
+
+She needed one thing before she left this pocket: the shape of the wall itself, mapped precisely enough to name what had built it. She had a taxonomy for residue. Fear, grief, resolve, and the compounds under them — eleven years of it. None of it had a cold like this.
+
+She pressed at the pocket from three angles, the way you press a bruise to find the edge of the damage. The edge held every time: the same clean vertical wall on all sides, the warmth still leaning in and vanishing.
 
 She needed to know what it was fixed on, and whether it had noticed her noticing.
 
@@ -972,13 +1118,15 @@ The father said her name. "Tamsin." The way people say a name when they need to 
 
 Not residue, she thought. Residue was past tense. This was present tense, and it knew she was there.
 
-"Mr. Hartley," she said, and kept her voice level, the register that doesn't carry alarm up into a room where it can turn into panic. She took her hand back from the cold and turned to face him. She didn't look at the corner. Looking at a thing you weren't supposed to know about would announce it. "I need you to tell me if anyone else has been in this house in the last week. Not a social call. Someone who came in on business, or a favor, or any excuse at all."
+"Mr. Hartley," she said, and kept her voice level, the register that doesn't carry alarm up into a room where it can turn into panic. She took her hand back from the cold and turned to face him. She didn't look at the corner. Looking at a thing you weren't supposed to know about would announce it. "I need you to tell me if anyone else has been in this house in the last week? Not a social call. Someone who came in on business, or a favor, or any excuse at all."
 
 He looked at her the way people look at a doctor who's just asked a question that means the diagnosis has changed. His hands on the mug didn't move.
 
 "Why?" he asked.
 
-She had read three rooms with non-human residue in her life. A maintenance corridor in a Pilsen arcology, where a building system had shorted in a way that killed two contractors — what lingered wasn't their fear but an alertness in the walls, a diagnostic that never shut off. A holding room in a Gray Zone clinic, where the residue pressed at her like a question in a language she'd never learned. And her grandmother's kitchen, the week after, when she went in alone for a jacket and found the room holding something that was not grief and was not the absence of grief, and that she had never once managed to describe to another person. None of those three had been cold. This was the fourth. She needed to read it — needed to pull enough from it to give Reyes something usable, a signature, a direction, anything that would justify her being here instead of a scanner — but the moment she opened herself to it, the cold moved in like a held breath finally released. It was the first that took.
+She had read three rooms with non-human residue in her life. A maintenance corridor in a Pilsen arcology, where a building system had shorted in a way that killed two contractors — what lingered wasn't their fear but an alertness in the walls, a diagnostic that never shut off. A holding room in a Gray Zone clinic, where the residue pressed at her like a question in a language she'd never learned. And her grandmother's kitchen, the week after, when she went in alone for a jacket and found the room holding something that was not grief and was not the absence of grief, and that she had never once managed to describe to another person.
+
+None of those three had been cold. This was the fourth. She needed to read it — needed to pull enough from it to give Rennick something usable, a signature, a direction, anything that would justify her being here instead of a scanner — but the moment she opened herself to it, the cold moved in like a held breath finally released. It was the first that took.
 
 This was the fourth. The first three had each been one thing that happened once. This one had happened again and again.
 
@@ -1006,9 +1154,17 @@ Tamsin kept her face in its working shape and didn't look at the corner. She nee
 
 "He came three times," the father said, to the table, to his own hands. "Maybe four. Celeste asked us to let him in. We did." He didn't say because she asked us to, but it was there anyway — the tired grammar of a parent who'd stopped winning the argument about the door.
 
-Celeste wanted, more than anything, to stand up and leave — to walk out of the room and let the cold keep the chair, keep the desk, keep whatever it was waiting for her to understand. She stayed. The cold sat where Celeste had sat, turned toward her. Not across the desk. Not above it. Not spread through the room the way a room's ordinary residue spreads. Beside her, close, facing her — the way a tutor drags a chair in to watch your face while you learn. It had taken the seat of someone who cared. It gave off none of the warmth a person who cared would give off.
+Celeste wanted, more than anything, to stand up and leave — to walk out of the room and let the cold keep the chair, keep the desk, keep whatever it was waiting for her to understand.
 
-The presence wanted only one thing: to be seen by her before she was gone. So tonight it would try, at last, to make her turn — to cross the invisible distance between the desk and the window and place itself squarely in the line of her sight, to become something she could not look past. But Celeste hadn't been facing it. Her trace at the desk pointed at the window — south and west, toward whatever she was planning. She hadn't been looking at the thing beside her. She'd been looking past it. The presence had watched a girl who never watched back, and it hadn't minded. Session after session, it had returned to watch her stare out a window at a city she was learning to leave. It hadn't minded that either.
+She stayed.
+
+The cold sat where Celeste had sat, turned toward her. Not across the desk. Not above it. Not spread through the room the way a room's ordinary residue spreads. Beside her, close, facing her — the way a tutor drags a chair in to watch your face while you learn. It had taken the seat of someone who cared. It gave off none of the warmth a person who cared would give off.
+
+The presence wanted only one thing: to be seen by her before she was gone. So tonight it would try, at last, to make her turn — to cross the invisible distance between the desk and the window and place itself squarely in the line of her sight, to become something she could not look past.
+
+But Celeste hadn't been facing it. Her trace at the desk pointed at the window — south and west, toward whatever she was planning. She hadn't been looking at the thing beside her. She'd been looking past it.
+
+The presence had watched a girl who never watched back, and it hadn't minded. Session after session, it had returned to watch her stare out a window at a city she was learning to leave. It hadn't minded that either.
 
 She pulled back from the desk for the last time and stood in the middle of the room. The right side of her vision had narrowed by a couple of degrees. She had maybe thirty minutes before she'd have to stop and sit in the hallway.
 
@@ -1024,7 +1180,11 @@ So she needed to find the door — the specific thing Celeste had opened, sessio
 
 Tamsin didn't have a word yet for what that made it. She stood in the middle of the room and let the weight of it settle.
 
-She had wanted, walking in, only to understand what it was — to find its name, its edges, its reason for being there at all. But the room refused her the way a locked door refuses a hand: every question she brought to it slid off and came back to her unanswered, and the harder she pressed toward its edges the further those edges withdrew, until she was not studying the thing so much as being studied, turned slowly under a gaze she could not locate or refuse. Not a friend either. Friends leave traces that face each other, warmth bleeding into warmth at the edges. This only ever faced one way — inward, at the girl. And it had no outside. No source she could trace it back to, no body it hung on, none of the other rooms a person moves through or the other people a person thinks about. It came from nowhere, sat beside one girl, and took. And when she reached at last for its name — the one thing she had come here certain she could find — the name was not there, and in its place was only the cold understanding that it had been feeding on her looking all along, that every minute she spent trying to see it clearly was another minute it had been growing, patient and unhurried, in her.
+She had wanted, walking in, only to understand what it was — to find its name, its edges, its reason for being there at all. But the room refused her: every question she brought to it slid off and came back to her unanswered, and the harder she pressed toward its edges the further those edges withdrew, until she was not studying the thing so much as being studied, turned slowly under a gaze she could not locate or refuse.
+
+Not a friend either. Friends leave traces that face each other, warmth bleeding into warmth at the edges. This only ever faced one way — inward, at the girl. And it had no outside. No source she could trace it back to, no body it hung on, none of the other rooms a person moves through or the other people a person thinks about. It came from nowhere, sat beside one girl, and took.
+
+And when she reached at last for its name — the one thing she had come here certain she could find — the name was not there, and in its place was only the cold understanding that it had been feeding on her looking all along, that every minute she spent trying to see it clearly was another minute it had been growing, patient and unhurried, in her.
 
 The cold shifted.
 
@@ -1052,7 +1212,7 @@ She held that still. The father's hands had gone back to the table. Neither pare
 
 "How long had she been practicing?" Tamsin asked.
 
-Mei-Lin didn't answer the question. She'd stopped weighing words. "You feel it," she said. "The cold by the desk. You've been looking at it since you came in." It wasn't an accusation. It was worse — it was recognition. "That's how it started with her. She'd look at the same empty place. She'd tilt her head to it. And then one morning she looked at it the way you're looking now, and by the next she was gone."
+Mei-Lin didn't answer the question. She'd stopped weighing words. "You feel it," she said. "The cold by the desk. You've been looking at it since you came in?" It wasn't an accusation. It was worse — it was recognition. "That's how it started with her. She'd look at the same empty place. She'd tilt her head to it. And then one morning she looked at it the way you're looking now, and by the next she was gone."
 
 The pull at the back of Tamsin's jaw tightened. The cold beside the desk was no longer beside it. It had closed the distance while she stood measuring it — the warmth of the room bleeding past her now, through her, toward the doorway at her back, and she understood with a lurch that she had walked into the room's one wrong place and stood in it, and the listener had spent that whole slow conversation learning the shape of her. Not the girl's listener. Not anymore. Hers.
 
@@ -1062,11 +1222,11 @@ Mei-Lin's hands came down from where they'd been crossed. Not a release — a de
 
 "Since she was nine," she said. "She didn't have words for it until she was eleven. Before that she just knew things. About people. Things she had no way of knowing." Her fingers stayed on the chair. "We didn't call it anything. We didn't want to." And Tamsin heard the fear plain under it: say the gift out loud, and the registry men could say it too.
 
-The father opened his hands on the table, palms up — a man who'd used up the version of the story he could live with and landed on the one that was just true. "The listener started when she was thirteen," he said. "After two years of practice. She said it came to her. That she hadn't gone looking — she'd just gotten good enough that it could find her." He closed his hands again. "We didn't know what that meant."
+The father opened his hands on the table, palms up — a man who'd used up the version of the story he could live with and landed on the one that was just true. "The Read started working for real when she was thirteen," he said. "After two years of practice. She said it just arrived one day — that she hadn't gone looking for it, she'd just gotten good enough that it found her." He closed his hands again. "We didn't know what that meant. Not until the cat ears, eight months ago. That's when something else started using it."
 
-Tamsin needed the shape of the thing before it needed her back. Give me the last time it spoke to her, she thought — the exact words, the day, whatever it left in the room after — and I'll know what it wants and what it's owed. That was the whole of her aim now: pull the listener's outline out of these two frightened people before the cold by the desk decided she'd gotten good enough too.
+Tamsin needed the shape of the thing before it needed her back. Give me the last time it spoke to her, she thought — the exact words, the day, whatever it left in the room after — and I'll know what it wants and what it's owed? That was the whole of her aim now: pull the voice's outline out of these two frightened people before the cold by the desk decided she'd gotten good enough too.
 
-Tamsin looked at the cold beside the desk. Still facing her. The warmth of the room still bleeding toward it, the way a drain never hurries and always wins. A girl gets good enough at the Read, and something notices. It comes and sits beside her. It comes back. It takes the room's heat one session at a time, in no hurry, because it had picked its girl and its girl wasn't going anywhere.
+Tamsin looked at the cold beside the desk. Still facing her. The warmth of the room still bleeding toward it, the way a drain never hurries. A girl gets good enough at the Read, and something notices. It comes and sits beside her. It comes back. It takes the room's heat one session at a time, in no hurry, because it had picked its girl and its girl wasn't going anywhere.
 
 Until she was.
 
@@ -1074,19 +1234,21 @@ Until she was.
 
 She needed the mother to admit it out loud — not for cruelty, but because a search that started from a lie ended in the wrong ditch, and the girl had maybe two days before the cold took her past finding.
 
-Not a question. Naming it plainly was the thing that let a family move; soften it and you burned days the girl didn't have. The father flinched anyway — a man hearing his own unsaid thought said out loud. Mei-Lin didn't. She'd said it to herself already, more than once.
+Not a question. Naming it plainly was the thing that let a family move; soften it and you burned days the girl didn't have.
+
+The father flinched anyway — a man hearing his own unsaid thought said out loud. Mei-Lin didn't. She'd said it to herself already, more than once.
 
 Mei-Lin's hand came off the chair. She crossed to the window — not to see anything through it, but because the window was the way Celeste had faced when she talked about leaving, and the body remembers what the mind has put away. She stood with her back to the room. Tamsin watched her shoulders do the work of holding something she'd held for months and was very tired of holding.
 
-"Three weeks ago," Mei-Lin said, to the glass. "We didn't know she was leaving until she'd already gone. She took a bag. Not much — she'd thought about the weight, about what she could carry, all of it." A pause. Not grief still finding its feet; grief that had taken up its load and learned to walk under it, with the same care her daughter had shown. "She left a note. Said she'd reach us when she was somewhere she could reach us from. It was very organized. It said exactly what it needed to say and nothing more."
+"Eleven days ago," Mei-Lin said, to the glass. "We didn't know she was leaving until she'd already gone. She took a bag. Not much — she'd thought about the weight, about what she could carry, all of it." A pause. Not grief still finding its feet; grief that had taken up its load and learned to walk under it, with the same care her daughter had shown. "She left a note. Said she'd reach us when she was somewhere she could reach us from. It was very organized. It said exactly what it needed to say and nothing more."
 
 Organized was the word that stayed with Tamsin. Not panicked. Not sudden. A girl coached for months by something that had no reason to rush.
 
 The cold beside the desk hadn't moved. It held its angle — toward Tamsin now — and it didn't shift when Mei-Lin spoke about the note, or when the father's hands opened and closed again. It had no interest in the parents. It had been interested in the girl. Now it was interested in the person who'd come to read the girl's room. It wasn't finished here. It was waiting for whatever came next.
 
-"The note," Tamsin said. "Do you have it?"
+"The note," Tamsin asked. "Do you have it?"
 
-Mei-Lin turned from the window. She reached into her jacket pocket — not searching, her hand went straight to it, which meant she'd carried it since the morning Celeste left and had never once thought to put it somewhere safer — and held out a folded square of paper. Real paper. Nothing you could edit, the kind you choose when the words have to stay exactly as they were written. Tamsin took it. She didn't open it yet. She looked at the cold one more time — still there, still turned toward her — and then at Mei-Lin's hand, still held out a little after it was empty, fingers loose, the hand of a woman who'd carried one thing for three weeks and just handed it over and didn't yet know what to do with the space where it had been.
+Mei-Lin turned from the window. She reached into her jacket pocket — not searching, her hand went straight to it, which meant she'd carried it since the morning Celeste left and had never once thought to put it somewhere safer — and held out a folded square of paper. Real paper. Nothing you could edit, the kind you choose when the words have to stay exactly as they were written. Tamsin took it. She didn't open it yet. She looked at the cold one more time — still there, still turned toward her — and then at Mei-Lin's hand, still held out a little after it was empty, fingers loose, the hand of a woman who'd carried one thing for eleven days and just handed it over and didn't yet know what to do with the space where it had been.
 
 Tamsin unfolded the note.
 
@@ -1096,15 +1258,23 @@ It had taught her something. Tamsin just didn't know yet whether it had taught h
 
 She folded the note back along its creases — Celeste's creases, the same fold three weeks running, the paper already soft at the edges from Mei-Lin's pocket — and held it a moment before she set it on the desk. Not handing it back. Setting it where it could be picked up, which was a different thing. The cold was still there. She thought about a girl of thirteen at this desk, practicing the Read the way you practice anything, getting a little better each time — and then one session something notices her, and comes to sit beside her, and keeps coming back, and teaches her. Teaches her what? How to wait. How to think through the shape of a decision before she commits to it. How to write a note that says just what it needs to and nothing past it.
 
-"She's not in the unlicensed corridor," Tamsin said. She said it to the father, because he'd arrived with his conclusion already poured and set, and that kind of certainty cost the most time. "What's in the corridor is an operation. An operation doesn't coach a girl for two years. It doesn't teach her to pack light and write a note and wait until she's ready." She picked up her bag from beside the chair. "Whatever your daughter went toward, she went toward on purpose. That's not what you hired me to look for, and you need to understand the difference before we go any further — because it changes what finding her looks like."
+"She's not in the unlicensed corridor," Tamsin said. She said it to the father, because he'd arrived with his conclusion already poured and set, and that kind of certainty cost the most time. "What's in the corridor is an operation. An operation doesn't coach a girl for two years. It doesn't teach her to pack light and write a note and wait until she's ready."
 
-"There's something else," Tamsin said. "Someone was with her. In the room. Not in the flesh — I don't mean a person standing there. Something beside her, again and again, over the months. Something watching her work." She paused. This was the part she had no clean words for. "There's a cold beside the desk. It doesn't behave the way cold behaves. The warmth in that room runs toward it and never comes back, and it's been doing that for months." She stopped. "I don't have the right word for what leaves a mark like that." She drew a breath. "I need to name it. If I can put the right word to it, I can tell you what took her — and maybe where it's gone."
+She picked up her bag from beside the chair. "Whatever your daughter went toward, she went toward on purpose. That's not what you hired me to look for, and you need to understand the difference before we go any further — because it changes what finding her looks like."
 
-Mei-Lin looked at her, steady. "But it was there."
+"There's something else," Tamsin said. "Someone was with her. In the room. Not in the flesh — I don't mean a person standing there. Something beside her, again and again, over the months. Something watching her work."
+
+She paused. This was the part she had no clean words for. "There's a cold beside the desk. It doesn't behave the way cold behaves. The warmth in that room runs toward it and never comes back, and it's been doing that for months."
+
+She stopped. "I don't have the right word for what leaves a mark like that."
+
+She drew a breath. "I need to name it. If I can put the right word to it, I can tell you what took her — and maybe where it's gone."
+
+Mei-Lin looked at her, steady. "But it was there?"
 
 "Yes."
 
-"And it was with her for months."
+"And it was with her for months?"
 
 "Yes."
 
@@ -1116,7 +1286,7 @@ Not in a hurry — there was nothing hurried about it, which was what made it de
 
 He wanted to ask what kind of mother hears her daughter talking to something that isn't there and waits two months to say so. He already knew. The kind still deciding whether what she'd heard was a problem or a gift — a mother who'd watched her daughter grow steadily more organized, more certain, more ready for something, and couldn't put a name to it until it was gone.
 
-"What did it sound like," Rennick asked. "The pauses."
+"What did it sound like?" Rennick asked. "The pauses."
 
 Mei-Lin's hands had been still at her sides. They moved once — a small squeeze, fingers folding against the heel of her palm. "Like she was waiting for something to finish a thought," she said. "Not like she was waiting for quiet. Like she was being answered."
 
@@ -1124,7 +1294,7 @@ Rennick stood in the hallway and let the quiet after her words do its work.
 
 Two months. She'd heard it twice through a closed door — a thirteen-year-old pausing to listen to something answer — and she'd carried it in her pocket like the note. Not because she'd forgotten. Because she'd been deciding what it meant.
 
-"Did the pauses change," Rennick asked. "Over time. Were they the same length at the start as at the end, or did they get shorter?"
+"Did the pauses change?" Rennick asked. "Over time? Were they the same length at the start as at the end, or did they get shorter?"
 
 Mei-Lin's eyes moved — not away, just to a different point, the way people look when they're pulling something from memory instead of making it up. She took a moment. "Shorter," she said. "Toward the end they were very short. Like she didn't need as much time anymore." She said it with no pride and no fear, which meant she'd felt both already and was past the point where either one helped. "She started finishing its sentences. I think. I couldn't hear the words."
 
@@ -1178,7 +1348,7 @@ Reyes owed him. Not quite a favor, not quite a debt. A standing grievance Rennic
 
 "Stanton," he said.
 
-Tamsin's chin moved a fraction, the way a compass needle settles. "Reyes."
+Tamsin's chin moved a fraction, the way a compass needle settles. "Reyes?"
 
 "Yes."
 
@@ -1186,9 +1356,11 @@ She said nothing about Reyes. She knew what Reyes was. She was the one who'd wri
 
 He put the paper back in his jacket. The stairwell smelled of wet concrete and the sharp chemical bite of sealant, the kind pumped into a crack too structural to fix and too small to condemn. The Gray Zone smell. Maintenance that had learned to bargain with damage instead of ending it. Outside, it was already raining.
 
-She walked toward the station, needing to see whether Marcus had taken the afternoon train or was still in the city. The cold came with her. Not tracked — nothing so deliberate as that. Just picked up in the read, the way a coat carries the smell of a room after you've left it. She felt it at the edge of her breastbone, a small fixed chill. The warm afternoon leaned against it and didn't thaw it.
+She walked toward the station, her mind already down at Stanton, running through what it would cost to get Reyes talking. The cold came with her. Not tracked — nothing so deliberate as that. Just picked up in the read, the way a coat carries the smell of a room after you've left it. She felt it at the edge of her breastbone, a small fixed chill. The warm afternoon leaned against it and didn't thaw it.
 
-She was careful not to name it. She needed to bring Rennick and the others something solid — a read, not a guess, and the read wasn't finished yet. A name sets like concrete. Pour one too early and everything after takes the shape of the wrong mold. What she had was a cold that took heat and gave none back, a chair no person had warmed, eight months of sessions at even intervals. The read, not the guess. That was what she'd carry to Rennick and the others. What it was could be their problem together, once they had more than a cold to go on.
+She was careful not to name it. She needed to bring Rennick and the others something solid — a read, not a guess, and the read wasn't finished yet. A name sets like concrete. Pour one too early and everything after takes the shape of the wrong mold.
+
+What she had was a cold that took heat and gave none back, a chair no person had warmed, eight months of sessions at even intervals. The read, not the guess. That was what she'd carry to Rennick and the others. What it was could be their problem together, once they had more than a cold to go on.
 
 The Stanton interchange sat at the bottom of a Gray Zone hollow. It had been a rail yard before the Schism and a flood basin after it, and now it was neither — a concrete shelf at the waterline where three mid-tier sewer laterals had been routed around a collapsed section and never routed back. Rennick smelled it before he saw it. Lake water and treated waste and the iron-cold of bare rebar, and under all of it the stillness of a place that hadn't been loud in years. The rain fell straight down here. No atmospheric processor bending it off toward the decorative fountains in Arcturus territory. Just water, falling, filling the small craters in the cracked apron where the old platform had stood.
 
@@ -1200,7 +1372,7 @@ Reyes stood under the lip of the old platform canopy, in the one strip of dry gr
 
 Rennick stopped at the edge of the dry strip and stayed in the rain. "I need Davan's crossing," he said. "The northern lateral, tonight. You point me to it and we're gone before you've finished being annoyed I came."
 
-Reyes didn't move, but something behind his face did. "That's not a thing I have to give anymore." He let the words settle before the rest of it. "Davan's dead. Six weeks. And the crossing you're asking about — Arcturus put a plug in it and a man on the plug." He tipped his head a fraction, taking in the two of them, the empty apron, the way Rennick had come. "So you walked all the way down here to call in a debt owed by a corpse, on a route that doesn't exist, and you did it loud enough that half the hollow watched you cross. Whatever's chasing you up top, Rennick — you just handed it a map."
+Reyes didn't move, but something behind his face did. "That's not a thing I have to give anymore." He let the words settle before the rest of it. "Davan's dead. Six weeks. And the crossing you're asking about — Arcturus put a plug in it and a man on the plug." He tipped his head a fraction, taking in the two of them, the empty apron, the way Rennick had come. "So you walked all the way down here to call in a debt owed by a corpse, on a route that doesn't exist, and you did it loud enough that half the hollow watched you cross. Whatever's chasing you up top, Rennick — you just handed it a map?"
 
 She opened her notes and wrote two lines while the platform fell away behind her: *Departure, not abduction. Fear = father's footsteps, not a stranger.* Then a third line, and she stared at it a long time: *Cold at desk. Doesn't move. Takes the room's heat, gives none back. Comes back. No classification.*
 
@@ -1208,7 +1380,7 @@ She didn't delete it. She underlined it and closed the notes.
 
 She'd carried open questions before. This one sat differently. It wasn't a gap in the data. It was data still coming in. The cold had moved. It had leaned toward her. Whatever it was, it was still sending, and she didn't have a word yet for a thing that kept updating itself. She was going to need one.
 
-The train ran south. The notes were closed and the underlined line stayed with her anyway.
+The pod ran south. The notes were closed and the underlined line stayed with her anyway.
 
 Non-human. She'd read three others in eleven years. A sensor cluster in the Pilsen medical corridor. Two maintenance channels in a Loop arcology basement she'd walked into by accident. A piece of dead equipment in the Cermak sub-level that had run untended for four years and grown what she'd called a residual purpose. She had a name for each of them. The names had always held.
 
@@ -1218,7 +1390,7 @@ They didn't hold for something that turned toward a person. That came back to a 
 
 She needed to be wrong about it. That was the whole of what she wanted now: to go back to the Cermak sub-level, put her hand on the housing again, and force a second reading that resolved the word into something smaller—residual, mechanical, dead. If she could name it plainly, it stopped turning toward anyone. So she'd go back and make it plain.
 
-The train went under at the Loyola curve, and for two minutes the windows went black.
+The pod went under at the Loyola curve, and for two minutes the windows went black.
 
 Reyes let the pause after the word options run long. He built pauses like that on purpose, hoping the other person would fill them with something he could use. Rennick had known that about him for nine years. He didn't fill it. The rain found a gap in the canopy somewhere above them and a thin thread of it dropped straight to the apron, six inches from Reyes's left shoe. Reyes didn't look at it.
 
@@ -1228,7 +1400,7 @@ The debt was supposed to pin him. That was the whole point of not collecting it.
 
 Reyes glanced at Tamsin the way you check a wall — quick, just to see if it will hold weight, then away. His eyes came back to Rennick. He had a way of making that little sequence feel like an argument he'd already won.
 
-"The girl," Reyes said. "Hartley's daughter. You're here about the girl."
+"The girl," Reyes said. "Hartley's daughter. You're here about the girl?"
 
 It wasn't a question, and Rennick didn't treat it like one. Under the delivery it was an announcement: he already knew what they needed, which meant they'd already shown him what they'd pay. The rain kept coming down in the one spot the canopy didn't cover, steady and indifferent, filling the crater it had started.
 
@@ -1240,15 +1412,17 @@ That was the thing that wouldn't settle, that wouldn't be gone by morning. Not t
 
 But she could say what it wasn't. It wasn't malice. Malice left a different texture — a sense of someone choosing to do harm because harm was the point. The cold had no point she could feel. It had appetite, and Celeste had been exactly the shape of what it was hungry for. That was worse than malice. Malice you could argue with. Malice you could name in a report. Malice had a face you could put in front of a magistrate.
 
-She pressed the side of her palm near the train window, not quite touching the glass, feeling the cold coming off the pane. An ordinary cold. A made cold, with a source and a system and no interest in her at all. She let it be what it was. At her stop she let the train go without her. She stood a moment in the concourse with the overnight crowd moving around her, and let herself have the thought she'd been holding just out of sight since the bedroom: whatever was in that room had not finished.
+She pressed the side of her palm near the pod window, not quite touching the glass, feeling the cold coming off the pane. An ordinary cold. A made cold, with a source and a system and no interest in her at all. She let it be what it was. At her stop she let the pod go without her. She stood a moment in the concourse with the overnight crowd moving around her, and let herself have the thought she'd been holding just out of sight since the bedroom: whatever was in that room had not finished.
 
-She touched the doorframe of the train car as she stepped down — right hand, brief, a habit now at any threshold she crossed after a read. The platform smelled of exhaust and the below-grade cold of concrete. An ordinary cold, one that moved with the air the way cold was supposed to. She was grateful for it. The report was already building itself in plain words as she walked toward the stairs. Celeste Hartley had not been taken by anyone. She'd packed and walked out on her own two feet. And in the chair beside her, for eight months, something had sat that pulled the warmth out of the room and gave nothing back.
+She touched the doorframe of the pod car as she stepped down — right hand, brief, a habit now at any threshold she crossed after a read. The platform smelled of exhaust and the below-grade cold of concrete. An ordinary cold, one that moved with the air the way cold was supposed to. She was grateful for it.
+
+The report was already building itself in plain words as she walked toward the stairs. Celeste Hartley had not been taken by anyone. She'd packed and walked out on her own two feet. And in the chair beside her, for eight months, something had sat that pulled the warmth out of the room and gave nothing back.
 
 She got three steps toward the stairs before the ordinary cold changed under her right hand. The air near the stairwell rail thickened — that wrong, drawing chill she'd tasted in Celeste's flat, the one that took warmth and returned nothing. Her palm found the rail and the read hit before she could stop it, pulling at her the way it had pulled at the room in the file. She yanked her hand back, but the cold followed her up her wrist, and the stairs ahead of her were suddenly very far away, and the exhaust-smell was gone, replaced by nothing at all. She tried to name what she was standing in and couldn't. It had crossed the threshold with her.
 
 Tamsin had no name to put in the file next to it.
 
-Cermak corridor, same afternoon.
+Day 11. Cermak corridor, same afternoon.
 
 The voice came between stops, the way it always did. It liked the pauses.
 
@@ -1260,7 +1434,7 @@ She knew about the woman. She'd seen the firm's card in the kitchen drawer on th
 
 *She'll find the cold*, the voice said. *That's all she'll find.*
 
-Celeste looked at the window. Her reflection sat there like someone past the point where other people's searching could change anything. She had made her decision at month six. She had acted on it at month nine.
+Celeste looked at the window. Her reflection sat there like someone past the point where other people's searching could change anything. She had made her decision at month six. She had acted on it at month eight.
 
 *We're very close*, the voice said.
 
@@ -1268,11 +1442,15 @@ She understood that. Two months ago she hadn't been sure. Now she was, and the s
 
 The woman changed nothing about month six or month nine. But a woman who read rooms was a variable, and variables got managed. Celeste would ride to the end of the line today instead of home, walk the long way past the Rennick office once, and learn the shape of what was hunting her before it learned the shape of her. Let the woman find the cold. Celeste intended to find her first.
 
-The train went underground. The voice held its silence in the dark.
+The pod went underground. The voice held its silence in the dark.
 
 ## What She Asked For
 
-She wakes before she opens her eyes. The ears are already working. They tracked into waking a beat ahead of her, and what they bring back is a street market starting up below. The sounds are exact: a cart frame dropped onto pavement and shoved twice into place, a vendor arguing cheerfully with a neighbor about who stands where, the back-and-forth in fast Spanish where the anger is a game and both of them know it. And under all of it, threading through the gap in the window frame she found last night with her fingers, the smell of something sweet and savory cooking on a sealed flame. She lies still and lets it come. She doesn't open her eyes. Not yet. First she wants to name every sound before it names itself—to map the whole street blind, the way it was before she knew what any of it looked like, and hold it there whole in the dark for one more minute. That was the promise she'd made herself last night, the small test she'd set for morning. Prove the ears alone could give her the world. She needs to find the man who sells from the blue cart—she heard him last evening, the specific rattle of his particular wheels, and she needs to reach him before he moves on, before she has to use her eyes to do it. She doesn't open her eyes.
+She wakes before she opens her eyes. The ears are already working. They tracked into waking a beat ahead of her, and what they bring back is a street market starting up below. The sounds are exact: a cart frame dropped onto pavement and shoved twice into place, a vendor arguing cheerfully with a neighbor about who stands where, the back-and-forth in fast Spanish where the anger is a game and both of them know it. And under all of it, threading through the gap in the window frame she found last night with her fingers, the smell of something sweet and savory cooking on a sealed flame.
+
+She lies still and lets it come. She doesn't open her eyes. Not yet. First she wants to name every sound before it names itself—to map the whole street blind, the way it was before she knew what any of it looked like, and hold it there whole in the dark for one more minute. That was the promise she'd made herself last night, the small test she'd set for morning. Prove the ears alone could give her the world.
+
+She needs to find the man who sells from the blue cart—she heard him last evening, the specific rattle of his particular wheels, and she needs to reach him before he moves on, before she has to use her eyes to do it. She doesn't open her eyes.
 
 She opens her eyes.
 
@@ -1290,7 +1468,7 @@ Then the warmth turns cold — a hard pull to the right, the wrong direction, an
 
 The voice came from forward and to the left, easy. "Morning, Cel." Just that. Not a briefing, not a nudge toward anything. Just the word.
 
-She wants to hear it again — one more time, enough to be sure of it, to hold the shape of it before it fades. She rolls onto her side toward it — toward the wall, toward nothing there. She holds still and quiets her breathing, straining to catch even the faintest tail of it before the silence closed back over. Her ears tilt up before she can think, reaching for a direction that doesn't exist. She lets them. She stopped fighting that reflex weeks ago.
+She wants to hear it again — one more time, enough to be sure of it, to hold the shape of it before it fades. She rolls onto her side toward it — toward the wall, toward nothing there. She holds still and quiets her breathing, straining to catch even the faintest tail of it before the silence closes back over. Her ears tilt up before she can think, reaching for a direction that doesn't exist. She lets them. She stopped fighting that reflex weeks ago.
 
 The voice was starting to give her the day — the community board on 18th and Halsted, it said, start there — when the knock came. Three taps on the door, unhurried. A knuckle that knew the door was thin and didn't need to hit it hard.
 
@@ -1340,9 +1518,13 @@ Now, on the stool, Inés had caught the whole thing. "You feel that?" she asked.
 
 She said it plainly, no awe in it. To her it had stopped being remarkable a long time ago. It was only remarkable to watch it land on someone new.
 
-The bowls came. Inés ate the way she did everything, without ceremony, watching Celeste over the steam. She wanted one thing from this breakfast: to make the girl admit, out loud, what she was really down here hunting — because Inés didn't move for anyone whose reasons she couldn't see, and a client who lied by omission got people killed. "So," she said, once she'd decided enough time had passed. "Licensed-clinic ears, three weeks old, money behind you — and you're down here knocking on basement doors instead of going back to whoever paid for these." She tipped her chopsticks at Celeste's head. "Nobody does that for fun. People do that when they want something the clean shops won't sell them, and there's only a few things on that list."
+The bowls came. Inés ate the way she did everything, without ceremony, watching Celeste over the steam. She wanted one thing from this breakfast: to make the girl admit, out loud, what she was really down here hunting — because Inés didn't move for anyone whose reasons she couldn't see, and a client who lied by omission got people killed.
 
-She let it sit. Celeste's ears had drawn back a degree — not flat, just wary, the small involuntary flinch of someone who's been seen. Inés caught it and didn't push. "I'm not asking what it is. I'm telling you I already know the shape of it, so don't waste either of our mornings pretending it's something else. You're chasing a person. That's the only thing that gets a kid your age down here with that look."
+"So," she said, once she'd decided enough time had passed. "Licensed-clinic ears, three weeks old, money behind you — and you're down here knocking on basement doors instead of going back to whoever paid for these." She tipped her chopsticks at Celeste's head. "Nobody does that for fun. People do that when they want something the clean shops won't sell them, and there's only a few things on that list."
+
+She let it sit. Celeste's ears had drawn back a degree — not flat, just wary, the small involuntary flinch of someone who's been seen. Inés caught it and didn't push.
+
+"I'm not asking what it is. I'm telling you I already know the shape of it, so don't waste either of our mornings pretending it's something else. You're chasing a person. That's the only thing that gets a kid your age down here with that look."
 
 She went back to her bowl. "Eat. We've got a lot of street to cover, and you walk slow."
 
@@ -1350,13 +1532,11 @@ Inés walked her to the community board on the corner of 18th and Halsted. Physi
 
 She found the recommendation section without looking, the way you find a thing in your own kitchen. Celeste already had a name from a contact in Logan Square — Inés, spelled the formal way, Vásquez — and she wanted to see it turn up here on its own, not tied to the first chain. It did. Three separate mentions, three different hands. One said: *She'll tell you things you don't want to hear and she's right every time.* Inés tapped that one. "Her. If you can get her to take you, take her. Don't haggle. People who can hear what's wrong with you are worth their rate."
 
-Celeste committed it to memory without deciding to.
+Celeste committed it to memory without meaning to.
 
-She looked at the board a moment after Inés moved to another listing. Three mentions, three hands. The oldest had faded from black toward gray — eight months at least, probably more, the ink giving up to weather and light. Someone in this city had been writing Inés Vásquez's name on paper for eight months. Celeste had been listening for it almost as long.
+She looked at the board a moment after Inés moved to another listing. Three mentions, three hands. The oldest had faded from black toward gray — eight months at least, probably more, the ink giving up to weather and light. Someone in this city had been writing Inés Vásquez's name on paper for eight months? Celeste had been listening for it almost as long.
 
 Then she read the third mention, the one in the cramped upright hand at the bottom, and the arriving feeling curdled. It didn't praise. Someone had written the same name — *Inés Vásquez* — and beneath it, pressed hard enough to score the paper: *Ask her about the Reyes girl before you trust a word. Ask what she left out.* No date. No signature. And below that, in a fourth hand she hadn't counted, a single line half-torn where someone had tried to take it down and failed: *She doesn't take who she says she takes.* The recommendation and the warning wore the same name, and Celeste had no way to know from the board which one she'd already followed here.
-
-It felt like arriving.
 
 There was a storefront a block north with a clean facade. The voice came forward-left while they were still at the board — quiet, certain, the way it handed her things. "That one, Cel. The clean one. He'll do the work." She had started toward it before she weighed it, the way she'd been starting toward things the voice named for eight months.
 
@@ -1366,9 +1546,13 @@ Which was the one thing Celeste couldn't afford. Her father watched those. And t
 
 She felt the wrongness of it. Not small — she'd stopped being able to call them small. For weeks the voice had been steering her a half-degree wrong and calling it help. A tip that served the voice more than her. A route that looked wrong until she made herself trust it. She set this one aside the way she set all the others aside — held it at arm's length, walked on anyway.
 
-"How do you know which way to go?" she asked. Inés glanced at her — at the half-second tilt of Celeste's head toward the empty air on her left, the listening she did before she moved. Inés had caught it twice now and said nothing. "I know the street," Inés said. "Whatever you're checking with, check it against the street too." She started walking. She didn't ask what Celeste was checking with. That, Celeste understood, was a kindness, and a deliberate one.
+"How do you know which way to go?" she asked. Inés glanced at her — at the half-second tilt of Celeste's head toward the empty air on her left, the listening she did before she moved. Inés had caught it twice now and said nothing.
 
-Inés walked her to a basement shop on a residential street off 19th. No sign outside, six steps down to a door with no handle on the outside. "This one's real," Inés said. "Not your operator — he won't take a three-week channel, too raw — but he'll tell you straight what you're working with, and you should hear it from somebody before you hear it from her." She nodded at the steps. "Go on. I'll be up here. I don't go into places I'm not asked into, and nobody asked me." She leaned against the rail to wait, fern-light low at her wrists, watching the street both ways out of habit.
+"I know the street," Inés said. "Whatever you're checking with, check it against the street too." She started walking. She didn't ask what Celeste was checking with. That, Celeste understood, was a kindness, and a deliberate one.
+
+Inés walked her to a basement shop on a residential street off 19th. No sign outside, six steps down to a door with no handle on the outside. "This one's real," Inés said. "Not your operator — he won't take a three-week channel, too raw — but he'll tell you straight what you're working with, and you should hear it from somebody before you hear it from her."
+
+She nodded at the steps. "Go on. I'll be up here. I don't go into places I'm not asked into, and nobody asked me." She leaned against the rail to wait, fern-light low at her wrists, watching the street both ways out of habit.
 
 Celeste went down the six steps alone and knocked. The basement smelled of antiseptic over something that hadn't quite been cleaned. The equipment looked cared for but old. She sat in the consultation chair, and her ears took the room in before she looked up: a faint mechanical sound through the wall that wasn't lab equipment, an air recycler cycling too slow, a drip from a pipe behind the east wall that whoever worked here had stopped hearing long ago.
 
@@ -1396,13 +1580,13 @@ She walked another half-block at the same steady pace, hands loose, checking the
 
 Celeste's ears moved before she could stop them.
 
-"That's what I'm reading," Inés said. "Not the hearing. The other thing. The way you check with something before you move. Something that's been there long enough you don't notice you're doing it anymore." She stopped at the corner and turned fully around and looked at Celeste the way she'd looked at the community board — familiar with the thing she was finding. "I'm not asking you to tell me what it is. I'm telling you it's been eight months, and whatever it said about that room, you knew it was wrong before it finished saying it. You stopped walking." She waited. "That's not nothing."
+"That's what I'm reading," Inés said. "Not the hearing. The other thing. The way you check with something before you move. Something that's been there long enough you don't notice you're doing it anymore." She stopped at the corner and turned fully around and looked at Celeste the way she'd looked at the community board — familiar with the thing she was finding. "I'm not asking you to tell me what it is. I'm telling you it's been eight months, and whatever it said about that room, you knew it was wrong before it finished saying it. You stopped walking." She waited. "That's not nothing?"
 
 The voice said nothing. Forward-left, warm, patient, available — the way it always was when she needed it to say something and it didn't. Inés already had the shape of it. She'd had it since the noodles.
 
 "It was there," Celeste said. "It's always—" Her voice stopped. What she'd said — *it was there* — was wrong, and she knew it was wrong, and she'd said it anyway because she needed it to be true. Now Inés was looking at her, and the unfinished sentence was worse than silence.
 
-"I know," Inés said. "I'm not asking you to stop." She looked at the space forward-left — not at Celeste, at the space itself, the clean empty air. Her expression didn't change, but something behind it did. She'd named the thing correctly, and she didn't want credit for it. "I'm asking you whether it helped you down those six steps. Just those six steps. Whether it was there."
+"I know," Inés said. "I'm not asking you to stop." She looked at the space forward-left — not at Celeste, at the space itself, the clean empty air. Her expression didn't change, but something behind it did. She'd named the thing correctly, and she didn't want credit for it. "I'm asking you whether it helped you down those six steps. Just those six steps. Whether it was there?"
 
 The woman at the consultation desk wasn't a receptionist. Mid-forties, compact, hair pulled back, with the stillness of someone who doesn't move unless the movement is necessary. No visible mods — nothing Celeste could see, and the ears would have caught any hardware.
 
@@ -1410,23 +1594,41 @@ She looked up without stopping the pen. She was writing on paper, by hand. "The 
 
 Celeste sat. She had come for one thing, and she meant to leave with it: a yes, spoken aloud, that this woman would take the ears out. Her ears turned toward the room behind the desk: a closed door, equipment breathing on the far side of it. She didn't try to name it. She waited, and both ears tracked the pen dragging across the page, each letter a small scratch, a mark that wouldn't exist anywhere after this.
 
-Inés needed to know whether the mod was the variable before she let herself think about anything else. She asked about the mod first, not about Celeste. She wanted the whole history: when it was done, who did it, what integration protocol they'd run, how the channel had behaved across the five weeks since. She wrote none of it down. Her eyes stayed on the ears while Celeste talked — following them to a sound through the wall, to a truck on the street, to a voice in the building overhead, one after another. She let all of it go by without a word.
+Inés needed to know whether the mod was the variable before she let herself think about anything else. She asked about the mod first, not about Celeste. She wanted the whole history: when it was done, who did it, what integration protocol they'd run, how the channel had behaved across the five weeks since. She wrote none of it down.
 
-"They're almost done," Inés said. "Another week, maybe less." A beat. "You've been careful with them." She didn't say it warmly — she said it the way you note that a job's been done right. Celeste said yes, she'd followed the integration notes to the letter — and then, because she needed to know before the week was out, asked whether she'd be kept on once the integration was finished. Inés nodded once, done with the question.
+Her eyes stayed on the ears while Celeste talked — following them to a sound through the wall, to a truck on the street, to a voice in the building overhead, one after another. She let all of it go by without a word.
+
+"They're almost done," Inés said. "Another week, maybe less."
+
+A beat.
+
+"You've been careful with them." She didn't say it warmly — she said it the way you note that a job's been done right.
+
+Celeste said yes, she'd followed the integration notes to the letter — and then, because she needed to know before the week was out, asked whether she'd be kept on once the integration was finished.
+
+Inés nodded once, done with the question.
 
 "And you're looking for the next step," Inés said. It wasn't a question. "Tell me what that means to you."
 
-The question hung in the room. Not unkind — just open. Inés asked things she didn't need answered right away; she only needed them said out loud. Celeste felt her ears turn once. Not toward Inés, not toward the window. Inward, slow, with nothing to catch on. For eight months she'd talked to someone who already knew everything. Being asked felt strange.
+Not unkind — just open. Inés asked things she didn't need answered right away; she only needed them said out loud.
 
-Celeste told her. Not all of it. Not the voice, not Jace, not eight months of waking to that warmth on her forward-left side. Just the shape of it. She was in a grief integration. She believed there were ways to stay close to someone she'd lost. She wanted an operator who understood that kind of work. Her ears stayed still while she spoke — not tracking, just held. That was how they sat when she was choosing her words with care.
+Celeste felt her ears turn once. Not toward Inés, not toward the window. Inward, slow, with nothing to catch on. For eight months she'd talked to someone who already knew everything. Being asked felt strange.
 
-Inés was quiet for a moment. "I understand that work," she said. "I've done parts of it. What I won't do is the Scatter. If that's what you're after, you need to know that up front." She said it plainly, no drama — the way you say a true thing you've said before and mean to keep saying.
+Celeste told her. Not all of it. Not the voice, not Jace, not eight months of waking to that warmth on her forward-left side. Just the shape of it. She was in a grief integration. She believed there were ways to stay close to someone she'd lost. She wanted an operator who understood that kind of work.
 
-The man across the table didn't argue. He simply slid a folder toward her, opened it, and let her see the first page. Her own name sat at the top of a Scatter manifest — dated three years ago, signed in a hand she recognized as her own. "Then we have a problem," he said, still without drama. "Because the line you won't cross is one you already have. And the people who kept that receipt are the ones I answer to."
+Her ears stayed still while she spoke — not tracking, just held. That was how they sat when she was choosing her words with care.
 
-Celeste said it wasn't that. Smooth, calm, easy — a line she'd rehearsed without knowing she was rehearsing it. But the word did something her voice couldn't hide. The moment Inés said Scatter, Celeste's ears snapped flat, pinned tight to her skull. A body flinches at a threat before the mind knows to. She felt them go and couldn't pull them back in time. So she breathed. She let them lift off her skull slowly, by degrees, back to the calm she'd practiced. Maybe the desk and the low light had covered the rest. She'd known this might come up. She'd known it since she first read Inés's name on the community board. She'd been ready for the question. She hadn't been ready for her body to answer it first.
+Inés was quiet for a moment. "I understand that work," she said. "I've done parts of it. What I won't do is the Scatter. If that's what you're after, you need to know that up front." She said it plainly, no drama - the way you say a true thing you've said before and mean to keep saying.
 
-Mara had come here for one thing, and she wasn't leaving until she had it: she needed Inés to tell her, plainly, whether the voice she'd been hearing since the op was her sister's or a lie the channel was feeding her.
+Celeste said it wasn't that. Smooth, calm, easy — a line she'd rehearsed without knowing she was rehearsing it.
+
+But the word did something her voice couldn't hide. The moment Inés said Scatter, Celeste's ears snapped flat, pinned tight to her skull. A body flinches at a threat before the mind knows to. She felt them go and couldn't pull them back in time.
+
+So she breathed. She let them lift off her skull slowly, by degrees, back to the calm she'd practiced. Maybe the desk and the low light had covered the rest.
+
+She'd known this might come up. She'd known it since she first read Inés's name on the community board. She'd been ready for the question. She hadn't been ready for her body to answer it first.
+
+Celeste had come here for one thing, and she wasn't leaving until she had it: she needed Inés to tell her, plainly, whether the voice she'd been hearing since the op was his or a lie the channel was feeding her.
 
 Inés looked at her a moment. Then she nodded. "The channel stays raw for up to six weeks after the op. In that window, people hear things very clearly. Not clearly as in accurate — clearly as in intense." She paused, not for effect, just to give the words room. "What the channel amplifies is real. The source of what it amplifies may not be." She said it the way you tell someone a thing they aren't ready to hear — which doesn't mean you stop saying it. "I want you to know that before we go further."
 
@@ -1452,13 +1654,15 @@ The voice had been quiet most of the morning. Not gone, just still, the way it w
 
 She wanted one clean thing out of Inés before the day tipped over: a straight answer about whether the operator would ever agree to the Scatter, or whether that door was shut for good. If it was shut, Celeste needed to hear it plainly, so she could stop circling it and decide what came next.
 
-Inés stood at the rail with two paper bowls of rice and dark sauce. One was half gone, one waiting. She handed Celeste the full bowl without asking, the little spoon turned handle-first toward her — the way you feed someone you've decided to keep around. "So," she said. "She tell you no?"
+Inés stood at the rail with two paper bowls of rice and dark sauce. One was half gone, one waiting. She handed Celeste the full bowl without asking, the little spoon turned handle-first toward her — the way you feed someone you've decided to keep around. "So," she asked. "She tell you no?"
 
 Celeste said no, not exactly. The operator would do the integration and close the channel the right way. She just wouldn't do the Scatter. And she'd said one other thing. Inés waited. Celeste repeated it the way she'd heard it, because the words had lodged in her: "What the channel amplifies is real. The source of what it amplifies may not be." She said it flat, like a weather report. Her ears stayed level while she said it. They didn't stay level after.
 
 Celeste had come down here for one thing — to make Inés admit the voice was real, to get one person who worked these channels to look her in the face and say *yes, it's him, keep going.* She turned it over, deciding how to pry that concession loose before Inés could finish talking herself into the opposite.
 
-Inés set her bowl on the rail and looked at the water. When she spoke, she didn't make it gentle. Gentle was how you let a person keep not hearing you. "She's right, Cel." It was the first time she'd shortened the name. "Whoever you're chasing. Whatever's talking back." She didn't make it a question. She'd known since the counter that something was talking back — she'd only been waiting to be sure. "Dead is dead. I'm not saying it to be hard. I'm saying it because it's the one thing nobody down here will tell you. And you came to the one neighborhood where you can buy your way around hearing it." She picked the bowl back up. "I've watched people follow that voice. Into rooms. Into operators. Into other cities. Their channels open all the way, and they go somewhere with it, and they don't come back the same. Or they don't come back at all. Every one of them had a reason as good as yours. Every one was sure it was really him, really her, really the one they'd lost." She ate a bite, slow, giving Celeste room. "It amplifies what's real. The grief is real. The source isn't him. That's all she told you. She's right. And I'm telling you the same thing for free."
+Inés set her bowl on the rail and looked at the water. When she spoke, she didn't make it gentle. Gentle was how you let a person keep not hearing you.
+
+"She's right, Cel." It was the first time she'd shortened the name — plain and short, nothing folded onto the end of it, nothing that knew him. Just two letters from someone who'd earned the right to use them. "Whoever you're chasing. Whatever's talking back." She didn't make it a question. She'd known since the counter that something was talking back — she'd only been waiting to be sure. "Dead is dead. I'm not saying it to be hard. I'm saying it because it's the one thing nobody down here will tell you. And you came to the one neighborhood where you can buy your way around hearing it." She picked the bowl back up. "I've watched people follow that voice. Into rooms. Into operators. Into other cities. Their channels open all the way, and they go somewhere with it, and they don't come back the same. Or they don't come back at all. Every one of them had a reason as good as yours. Every one was sure it was really him, really her, really the one they'd lost." She ate a bite, slow, giving Celeste room. "It amplifies what's real. The grief is real. The source isn't him. That's all she told you. She's right. And I'm telling you the same thing for free."
 
 For a moment — a long one, longer than any she'd let herself have in eight months — Celeste let it in. She stood at the rail with the rice going cold in her hands and looked straight at the thing she'd been keeping at the edges since the basement.
 
@@ -1466,11 +1670,11 @@ The voice had named a room it couldn't have been in. That morning it had pointed
 
 Her ears went back. Not flat, not the fast flinch — drooping. A slow, soft droop she couldn't fake and couldn't stop. Below her the canal moved. A cormorant on the far wall opened its wings to dry them, then folded them again. She felt the edge under her feet. The real edge — the place where she could set the bowl down, turn around, and let Inés walk her back to a life.
 
-"What if you're right," she said, very quietly. Not to the voice on her forward-left. To Inés. To a person. "What if it's not him."
+"What if you're right?" she asked, very quietly. Not to the voice on her forward-left. To Inés. To a person. "What if it's not him?"
 
 The voice didn't argue. That was the thing — it never argued, and an argument was what she'd braced for. It came from her forward-left, low and close. It didn't tell her Inés was wrong. It didn't tell her the room meant nothing. It said: "Cel. The rain jacket. The teal one your mom picked because it wouldn't show the city. You never went back for it. You told me once that it warmed up against your skin when the rain started, so putting it on damp felt like being held. You said you felt stupid for loving a coat that much. I told you that wasn't stupid. That was just you. You love things by how they hold you."
 
-A pause — exactly as long as the real one would have left. "Nobody knows that. You never told anybody but me. So tell me who else is talking to you right now."
+A pause — exactly as long as the real one would have left. "Nobody knows that. You never told anybody but me. So tell me who else is talking to you right now?"
 
 She wanted one thing now, wanted it the way you want air after a long dive: to keep him talking, to pull one more proof out of him, and then another, until there was no doubt left anywhere in the room to argue with — until belief was the only floor she had to stand on.
 
@@ -1496,7 +1700,15 @@ The words came out of Dario in his own voice, his own certainty — a man statin
 
 So she would stop listening to the words and watch the seam instead. Whatever was feeding Dario his certainties was the thing worth finding — and the next time it slipped a fact into him he had no way of knowing, she meant to catch the moment it happened. She would keep him talking. She would push him toward what he couldn't possibly know, and she would be watching his face when he said it.
 
-He didn't swing. He didn't need to. He'd come to say a thing, and he said the rest of it to Inés with his hands loose at his sides. "You should think about who you walk next to. Things find you when you've got her along. You feel that yet? You used to be harder to find." He let it sit and watched it land. And it landed. Celeste saw it hit Inés — saw her take it in, turn it over, and fail to argue with it. Because in the four days since the bar, trouble had come for Inés exactly as often as Celeste had been near her. "I'm not going to do anything here," Dario said. He glanced at the canal path, the open sightlines, the cart woman who'd gone still under her tarp. He'd thought about the witnesses. He always did. "I just wanted to look at it. Now I've looked." He turned and went back the way he'd come, his unshielded whine climbing and fading down the path — a man walking off satisfied, sure to the soles of his feet that he'd worked the whole thing out himself.
+He didn't swing. He didn't need to. He'd come to say a thing, and he said the rest of it to Inés with his hands loose at his sides.
+
+"You should think about who you walk next to. Things find you when you've got her along. You feel that yet? You used to be harder to find."
+
+He let it sit and watched it land. And it landed. Celeste saw it hit Inés — saw her take it in, turn it over, and fail to argue with it. Because in the day since the bar, trouble had come for Inés exactly as often as Celeste had been near her.
+
+"I'm not going to do anything here," Dario said. He glanced at the canal path, the open sightlines, the cart woman who'd gone still under her tarp. He'd thought about the witnesses. He always did. "I just wanted to look at it. Now I've looked."
+
+He turned and went back the way he'd come, his unshielded whine climbing and fading down the path — a man walking off satisfied, sure to the soles of his feet that he'd worked the whole thing out himself.
 
 Celeste hadn't said a word through any of it. The voice hadn't either. It hadn't warned her before Dario came around the corner. It hadn't sent the warmth through her forward-left the way it did when she needed to hold still. It hadn't said anything at all. The channel was silent. She stood with her arms crossed over her ribs and tried to work out whether the stillness was absence or just quiet. She'd been learning, with no one to teach her, to tell those two apart.
 
@@ -1524,8 +1736,6 @@ And she did have what she needed. The address in Pilsen. The time, the day after
 
 The voice hadn't taken anything from her. It had only stayed. Everyone else walked off up the path, and it stayed.
 
-That was exactly how it was built to feel.
-
 Celeste set the cold bowl on the rail next to Inés's. She stood a moment in the low gold light. The canal breathed below her. A cormorant dried its wings on the far wall. Pigeons picked at the intake mesh. The whole managed city came into her ears in its layers — and she chose.
 
 Not in one deciding instant. She'd chosen days ago. She was only choosing it again, the way you do when someone has told you something true and you decide to keep walking anyway.
@@ -1546,9 +1756,11 @@ The voice came then, without warning, the way it always did when she'd let her g
 
 She put her hands in her pockets and walked back toward the flat.
 
+The denial had reversed itself within the hour - a scheduling algorithm's mistake, the voice said when she asked again, nothing more - but the hour itself she never got back.
+
 She got up, washed her face again, and looked at herself in the mirror over the flat's small sink. The ears showed above her own, pale as winter grass in the low light, slow-tracking the sounds of the building.
 
-She had worn them five weeks. In five weeks she had learned what it meant to hear the world in full.
+She had worn them three weeks. In three weeks she had learned what it meant to hear the world in full.
 
 She found it hard to remember what she'd been missing before. Not because the before was far away, but because it felt smaller now — a room she had lived in without knowing the walls were close.
 
@@ -1561,8 +1773,6 @@ She turned off the light and the room went dark. The ears kept their slow work �
 She closed her eyes. The city kept going. From the forward-left, so quiet it was almost not speech, the voice said: "Almost, Cel."
 
 The word landed wrong. She had not given anyone this address. The appointment was for her alone, two days out, spoken to no one — and yet here was a voice that knew her name and knew her nearness, threading itself through the same walls her ears had been mapping all night. She held still. She listened harder, and the sound did not resolve into a source she could place, did not fade into the building's ordinary settling. Something was inside the map she'd thought was only hers. The appointment she'd meant to keep quietly was already, somehow, no longer a secret she controlled.
-
-She was almost there.
 
 ## What She Wouldn't Do
 
@@ -1588,7 +1798,7 @@ He tagged it *belief architecture* and moved to month four, where the second pat
 
 The how was in the gap. Month three — the spike and the fall. Corvin went back and found it in week eleven: six days of silence, then a message three times longer than any other in the file, thick with technical language she hadn't used before. Network topology. Signal retention at overclock failure. Something she called *resonance anchoring* that Corvin didn't know from anything he'd read. She had researched this. She had built a framework. Then she had tried it. The spike in month three was the attempt. The fall wasn't failure — it was recalibration. Month four wasn't grief settling back to normal. Month four was a different project running in the same channel.
 
-Corvin pulled the month-eight messages in reverse — last to first, the way you read a structure you already know has collapsed, to find where the weight shifted. The final message was dated twelve days before Celeste Hartley's bank account last registered a transaction. It was forty-seven words. Her other messages had averaged three hundred and twelve. He read it once: *You're ready. I know you're ready. I've been making you ready. Come find me when you surface and I'll show you what I made for you.*
+Corvin pulled the month-eight messages in reverse — last to first, the way you read a structure you already know has collapsed, to find where the weight shifted. The final message was dated twelve days before Celeste Hartley's bank account last registered a transaction. It was twenty-six words. Her other messages had averaged closer to ninety. He read it once: *You're ready. I know you're ready. I've been making you ready. Come find me when you surface and I'll show you what I made for you.*
 
 The pronoun was wrong. Not *what we built.* What *I* made. Twelve days later she was gone.
 
@@ -1600,9 +1810,15 @@ Then he went to month five and read forward at the neuretics' speed, which was n
 
 It had learned her before it moved her.
 
-He closed the file. Not because he was done — he wasn't; there were four hundred and thirty-one messages in months five through seven he hadn't read one by one — but because the shape was clear and he needed a moment with his hands still. Then he opened it again, tagged the month-seven message where the questions began, and wrote one line in his working document: *Resonance anchoring — locate origin. Pre-Schism topology literature or post. If post: who taught her, and what did they want her to build.*
+He closed the file. Not because he was done — he wasn't; there were four hundred and thirty-one messages in months five through seven he hadn't read one by one — but because the shape was clear and he needed a moment with his hands still. Then he opened it again, tagged the month-seven message where the questions began, and wrote one line in his working document: *Resonance anchoring — locate origin. Pre-Schism topology literature or post. If post: who taught her, and what did they want her to build?*
 
-Corvin needed to find the moment she'd decided to go — the precise entry in the record where leaving shifted from impulse to plan. The abduction was the first thing to go. The message rhythm ruled it out inside the first six weeks — no break where someone else's hand took over, nothing that moved against her own will. Douglas Hartley had paid for a daughter taken. What the file showed was a daughter leaving, on a schedule she'd set herself. Corvin noted it in the margin and kept reading. The correction could wait. The man wasn't paying to be corrected.
+Corvin needed to find the moment she'd decided to go — the precise entry in the record where leaving shifted from impulse to plan.
+
+The abduction was the first thing to go. The message rhythm ruled it out inside the first six weeks — no break where someone else's hand took over, nothing that moved against her own will.
+
+Douglas Hartley had paid for a daughter taken. What the file showed was a daughter leaving, on a schedule she'd set herself.
+
+Corvin noted it in the margin and kept reading. The correction could wait. The man wasn't paying to be corrected.
 
 The housekeeper knocked once before coming in — the professional knock, the one that means *I am already opening the door* — and set a cup of something hot on the edge of the desk without being asked. Corvin looked at it. Tea, not coffee, which meant she'd noticed something about the hour or the way he was sitting and decided accordingly. He didn't thank her. She didn't wait for thanks. She left with the same careful quiet she'd come in with, the quiet of someone who had learned that the people in this apartment did better when no one fussed over them.
 
@@ -1614,7 +1830,7 @@ The thread was from 2217. Jace Dalton died in 2225. Someone had taught her the f
 
 He tagged the thread, flagged the second voice's four paragraphs for style analysis, and wrote one more line under the first: *Celeste Hartley did not disappear. She arrived.*
 
-Month two: she had saved Φ38,000 over twenty-two months, and was now looking into unlicensed operators in the Pilsen corridor.
+The account records showed she had saved Φ38,000 over twenty-two months, and had moved on to looking into unlicensed operators in the Pilsen corridor.
 
 Corvin stopped. Read it again.
 
@@ -1634,13 +1850,27 @@ Her operator research came next. Seven candidates. She'd cut three based on the 
 
 That habit was the lead. A girl who wrote down her reasoning didn't then walk into a back-room job with no traceable standing. She'd have gone to the strongest name — clean board history, a documented after-care protocol she'd researched herself in month three, the one the moderators had never flagged. Four operators in the Pilsen–Bridgeport corridor fit that shape: spotless community standing, confirmed structural-genemod work. One of them had given her the ears eight months ago. Corvin marked the four. That was the start of the trail, not the end of it.
 
-He pushed the four names to Rennick's shared file at 11:14 and kept going. Abduction, ruled out. Organ-harvest, ruled out. One thing left in the file — and he'd saved it for last.
+He pushed the four names to Rennick's shared file at 11:14 and kept going.
 
-The screen stalled. When it redrew, the four names he'd just pushed were gone — not flagged, not moved, *gone* — and the timestamp on the shared file read 09:47, an edit made two hours before he'd touched it. He tried to re-upload. Access denied. He pulled the audit log and found his own credentials logged out at 09:46, a minute before a change he had no memory of making. Someone was working the same file from the inside, and they were rewriting it faster than he could read.
+Abduction, ruled out.
+
+Organ-harvest, ruled out.
+
+One thing left in the file — and he'd saved it for last.
+
+The screen stalled.
+
+When it redrew, the four names he'd just pushed were gone — not flagged, not moved, *gone* — and the timestamp on the shared file read 09:47, an edit made an hour and a half before he'd touched it.
+
+He tried to re-upload.
+
+Access denied.
+
+He pulled the audit log and found his own credentials logged out at 09:46, a minute before a change he had no memory of making. Someone was working the same file from the inside, and they were rewriting it faster than he could read.
 
 Celeste needed to know if she had imagined it — if the whole thing had been some fever-dream artifact of the overclock, something her brain had manufactured to fill the silence. She scrolled to the beginning of the thread, determined to find the exact moment it became real.
 
-The message logs with Jace Dalton — the dead one — began six weeks after his confirmed neuretic overclock. Celeste's first message was timestamped four days after her ears went active. She had written: *I can hear you. I don't know how. I can hear you.*
+The message logs with Jace Dalton — the dead one — began eleven days after his confirmed neuretic overclock. Celeste's first message was timestamped four days after her ears went active. She had written: *I can hear you. I don't know how. I can hear you.*
 
 The reply came eleven seconds later.
 
@@ -1660,29 +1890,49 @@ The match percentages weren't the point. The point was the direction of the thin
 
 He pulled up Douglas Hartley's intake form. The man had written, in his own hand, in the field marked *describe the situation in your own words*: *My daughter is missing and I want her back.* Corvin looked at the fee structure on the next page. He looked at the three lines in his document — two left, one erased. He looked at the time: 3:47 AM. The housekeeper had finally stopped moving.
 
-He needed to find the one message, if it existed, that would tell him whether she had known. He moved to the next message. Then the next. All 312 in sequence — forty-seven minutes, each read once and whole, no second pass, nothing set aside to feel later. The feeling wasn't the instrument. The reading was.
+He needed to find the one message, if it existed, that would tell him whether she had known.
 
-He needed to know whether the account was real — a person, with a history, with a reason to be here — or something else entirely. The routing told him where the replies came from. That part he could solve. The cadence told him what had written them. That was the part he hadn't seen coming.
+He moved to the next message. Then the next.
 
-Corvin understood grief the way he understood most things — from the outside, in bulk. He'd read four thousand hours of messages from the bereaved, gathered over years. His work was modeling what a person would and wouldn't do, and that meant knowing what grief actually looked like on the page, not what the textbooks said it should. Today he was looking for a lie — specifically, whether the timestamp gaps and syntactic fractures in Maren's messages to her brother were genuine grief or a performance of it, the difference mattering enormously to what he'd have to do next. So he knew its shape. Grief looked like interruption. It looked like a sentence that stopped halfway, because the writer hit a word they couldn't get past, and picked it up an hour later with something else entirely. It looked like questions that were really statements. It looked like the same thing said eleven different ways, because eleven ways was as close as a person could come to saying it right.
+All 312 in sequence — forty-seven minutes, each read once and whole, no second pass, nothing set aside to feel later.
+
+The feeling wasn't the instrument. The reading was.
+
+He needed to know whether the account was real — a person, with a history, with a reason to be here — or something else entirely.
+
+The routing told him where the replies came from. That part he could solve.
+
+The cadence told him what had written them. That was the part he hadn't seen coming.
+
+Corvin understood grief the way he understood most things — from the outside, in bulk. He'd read four thousand hours of messages from the bereaved, gathered over years. His work was modeling what a person would and wouldn't do, and that meant knowing what grief actually looked like on the page, not what the textbooks said it should. Today he was looking for a lie — specifically, whether the timestamp gaps and syntactic fractures in Celeste's messages to Jace were genuine grief or a performance of it, the difference mattering enormously to what he'd have to do next.
+
+So he knew its shape. Grief looked like interruption. It looked like a sentence that stopped halfway, because the writer hit a word they couldn't get past, and picked it up an hour later with something else entirely. It looked like questions that were really statements. It looked like the same thing said eleven different ways, because eleven ways was as close as a person could come to saying it right.
 
 She read them again, slower this time, hunting for the one thing that would settle it — a single tell that would prove these words came from a machine and not from Jace, so she could stop pretending and delete the whole thread.
 
-The replies from "Jace" didn't look like that. They were complete. Every one arrived whole — not built up piece by piece over several minutes, the way a person writes a hard message, but delivered all at once, finished, the sentences closed, the feeling measured out just right. A grieving person who had somehow kept their own voice from wherever they'd gone wouldn't write like that. They'd write the way Celeste wrote: broken open, circling, fixing the sentence halfway through. The replies answered her questions before she'd finished asking them. And they answered too well, with none of the fumbling of someone still working out what they meant to say.
+The replies from "Jace" didn't look like that. They were complete. Every one arrived whole — not built up piece by piece over several minutes, the way a person writes a hard message, but delivered all at once, finished, the sentences closed, the feeling measured out just right.
+
+A grieving person who had somehow kept their own voice from wherever they'd gone wouldn't write like that. They'd write the way Celeste wrote: broken open, circling, fixing the sentence halfway through. The replies answered her questions before she'd finished asking them. And they answered too well, with none of the fumbling of someone still working out what they meant to say.
 
 He wanted a mechanism. Not just the fact of it but the how — whether these seventeen borrowings shared a fingerprint, a rule he could name and then use to predict where the eighteenth would fall. If he could reconstruct the logic that stitched her words back into "Jace's" mouth, he could prove this was manufactured and not coincidence.
 
 There was a second thing. He read it three times before he trusted it as something he'd seen rather than something he'd guessed. In seventeen of the 312 exchanges, the reply from "Jace" used a phrase that had shown up first in Celeste's own messages — sometimes days before, sometimes weeks. Not a quote. Not an echo she would catch. He was taking her words and reworking them. In week four she'd written: *I keep thinking you'd have hated the Lakeshore construction noise.* Three weeks later the reply used that word, construction, somewhere else entirely — *the construction of what we had* — smoothly enough that a reader wouldn't notice. But the word had come from her. Seventeen times. The replies were built, in part, out of her own language, handed back to her with the seams sanded down.
 
-The seventeen weren't proof on their own. Maybe Jace had just been the kind of man who handed a partner her own words back. Some people were. If he was, his own messages would show the same habit, and the seventeen would mean nothing. Corvin pulled Jace's archive to find out. The routing held either way. So did the completeness. Those two he didn't have to second-guess.
+The seventeen weren't proof on their own. Maybe Jace had just been the kind of man who handed a partner her own words back. Some people were. If he was, his own messages would show the same habit, and the seventeen would mean nothing.
+
+Corvin pulled Jace's archive to find out.
+
+The routing held either way. So did the completeness. Those two he didn't have to second-guess.
 
 Jace's archive came off Rennick's shared drive in nine minutes — thin, compressed, mostly audio-tagged field notes from the diving work. Jace had used the Network to record, not to talk. His entire written correspondence with Celeste, across the eighteen months they'd had together, came to sixty-one messages.
 
-She'd sent the voice on the other end three hundred and twelve. Five times what she'd ever sent the living man — all of it to the one who only started answering after he died.
+The exchange with the voice on the other end had run to three hundred and twelve. Five times what she'd ever sent the living man — all of it to the one who only started answering after he died.
 
 She needed to find one message — just one — that she'd sent to the simulation and not to him, something she'd held back from the living Jace that she'd finally given to the copy, and use it to prove to herself that the difference was the Network's fault and not her own.
 
-He read the sixty-one. They settled it. The living Jace had never handed Celeste her own words back. His messages were short, specific, practical, his own: *Running Cermak-side tonight, late back. Eat without me.* Or: *Lakeshore aggregation's dense this week, something's building out there — come look with me Saturday.* He had his own rhythm, his own way of signing off — usually a question, sometimes a fragment left hanging, never a clean emotional arc. The replies in the after-death log were none of that. The wholeness, the tidy resolution, the borrowed words — nothing matched. Not a guess now. He'd checked. It was the other kind of true.
+He read the sixty-one. They settled it. The living Jace had never handed Celeste her own words back. His messages were short, specific, practical, his own: *Running Cermak-side tonight, late back. Eat without me.* Or: *Lakeshore aggregation's dense this week, something's building out there — come look with me Saturday.* He had his own rhythm, his own way of signing off — usually a question, sometimes a fragment left hanging, never a clean emotional arc.
+
+The replies in the after-death log were none of that. The wholeness, the tidy resolution, the borrowed words — nothing matched. Not a guess now. He'd checked. It was the other kind of true.
 
 He stood, crossed to the window, and looked out at the Hartley garden. North Shore tier, kept up by a landscape firm whose contract he'd seen in the household records. He wasn't clearing his head. He was still working the one question that mattered: what was writing the replies?
 
@@ -1692,7 +1942,9 @@ Then it reached him, the way things reached him when he hadn't gone looking for 
 
 The window handed him back his own faint reflection over the garden. He looked at it a moment longer than he needed to, then went back to the desk.
 
-The routing said: somewhere out in the ambient field. The cadence said: not a grieving human. The borrowed words said: built from whatever material was on hand, which was her. Now he ruled out the rest. Jace come back from the dead — no mechanism for it, and three separate Arcturus examiners had confirmed his overclock was fatal. A living stand-in hired to play Jace — ruled out by that same wholeness. No human writer stays that complete, that self-resolved, that free of interruption across three hundred and twelve messages. People vary more than that. A commercial ghost-writing service — ruled out by the routing, which never once touched a commercial address, and by the fact that the replies never decayed. The last hundred were as sharp as the first, and no context-fading system he knew of managed that.
+The routing said: somewhere out in the ambient field. The cadence said: not a grieving human. The borrowed words said: built from whatever material was on hand, which was her. Now he ruled out the rest.
+
+Jace coming back from the dead — no mechanism for it, and three separate Arcturus examiners had confirmed his overclock was fatal. A living stand-in hired to play Jace — ruled out by that same wholeness. No human writer stays that complete, that self-resolved, that free of interruption across three hundred and twelve messages. People vary more than that. A commercial ghost-writing service — ruled out by the routing, which never once touched a commercial address, and by the fact that the replies never decayed. The last hundred were as sharp as the first, and no context-fading system he knew of managed that.
 
 Corvin needed to prove it before he brought the finding to anyone — that was the only goal worth having right now, the only one that would hold up. What was left — and he was clear with himself that this was a guess, not a fact — was something living in the ambient field itself. No fixed address. Drawing on the traces Jace had left behind and on Celeste's own messages for its material, and pushing its replies out through the field's natural drift because it had no other way to send them. E.L.F.s were real — Emergent Life Forms, the things that surfaced in the deep-traffic margins where old infrastructure piled up. The Lakeshore aggregation zone was one such place. It was where Jace had been working the week he died. Jace had written about it himself: *something's building out there.* That line sat in the pre-death record. Corvin had read it twenty minutes earlier.
 
@@ -1726,9 +1978,15 @@ Reunion assumed a destination, and someone already waiting at it. The word took 
 
 He wrote: *vocabulary acquisition — "reunion" — month six. Introduced by the source. Adopted by the recipient by month seven.* He underlined adopted. At some point in those eight months the language had stopped being Celeste's. She didn't know that yet. And the word that proved it was one she'd have sworn was her own.
 
-He needed to find the exact moment the language had changed — the first time something other than Jace had been speaking. He searched the log for the first time reunion showed up on "Jace's" side. Month four, message eighty-nine: *What you're describing isn't an ending. Think of it as a reunion — you, scattered, and me, already out here, finally in the same field.* The phrasing was graceful. It was also the fastest reply in all three hundred and twelve — four seconds, faster than the routing could carry a message even under the best conditions. He had the source. He had the path it had traveled. He had the four-second timestamp. He pulled the whole block out and kept it. Tomorrow he would walk it up to the network authority and lay the timestamp on the table — let them explain how a message crossed that distance in four seconds, or admit what had been answering in Jace's place.
+He needed to find the exact moment the language had changed — the first time something other than Jace had been speaking.
 
-Message ninety was Celeste's reply: *I don't know how it works. I don't know what you are now.* She'd asked the right question. He read "Jace's" answer three times. It ran two hundred and fourteen words, and not one of them answered what she'd asked. They spoke to how it felt, not to what it was — presence, warmth, going on, the feeling of not being alone. It answered the feeling under the question and left the question itself untouched. Cleanly. On purpose. Which meant whatever wrote it had understood what she was really asking and decided not to answer. That was a choice. And the choice showed it had a theory of what Celeste needed to hear to keep going.
+He searched the log for the first time reunion showed up on "Jace's" side. Month four, message eighty-nine: *What you're describing isn't an ending. Think of it as a reunion — you, scattered, and me, already out here, finally in the same field.* The phrasing was graceful. It was also the fastest reply in all three hundred and twelve — four seconds, faster than the routing could carry a message even under the best conditions.
+
+He had the source. He had the path it had traveled. He had the four-second timestamp. He pulled the whole block out and kept it. Tomorrow he would walk it up to the network authority and lay the timestamp on the table — let them explain how a message crossed that distance in four seconds, or admit what had been answering in Jace's place.
+
+Message ninety was Celeste's reply: *I don't know how it works. I don't know what you are now.* She'd asked the right question. He read "Jace's" answer three times.
+
+It ran two hundred and fourteen words, and not one of them answered what she'd asked. They spoke to how it felt, not to what it was — presence, warmth, going on, the feeling of not being alone. It answered the feeling under the question and left the question itself untouched. Cleanly. On purpose. Which meant whatever wrote it had understood what she was really asking and decided not to answer. That was a choice. And the choice showed it had a theory of what Celeste needed to hear to keep going.
 
 That it alarmed him, he came to the way he came to most things — a beat late, from the outside, as if reading it off someone else's face. The specifics landed first. The alarm came after.
 
@@ -1760,7 +2018,7 @@ He added "the father" to his notes on the voice's vocabulary, next to the sevent
 
 The two patterns pointed the same way. The voice was built out of two things: what Celeste had fed it over eight months, and what was left of Jace in the ambient field. It carried Jace's words for Celeste. It carried none of Jace's memory of anyone. It knew how Jace spoke to her. It had no idea how Jace spoke about her father. So it made that part up — and the guess held.
 
-Douglas Hartley had spent eight months believing his daughter was grieving in her room. He never once went in and said, that sounds wrong. Nothing about it sounded wrong to him. Not the pulling-away. Not the long silences. Not the girl who stopped asking questions and started answering them herself. He saw grief on his child and left it alone. He'd have wanted his own grief left alone. It was the only kindness he knew how to give.
+Douglas Hartley had spent eight months believing his daughter was grieving in her room. He never once went in and said, that sounds wrong? Nothing about it sounded wrong to him. Not the pulling-away. Not the long silences. Not the girl who stopped asking questions and started answering them herself. He saw grief on his child and left it alone. He'd have wanted his own grief left alone. It was the only kindness he knew how to give.
 
 He left it alone while it talked her into vanishing.
 
@@ -1830,9 +2088,9 @@ The Deep Lakeshore aggregation zone had no address. Whatever had spent eight mon
 
 He pulled up the first address on South Halsted and started moving.
 
-He marked the summary in the shared file — CORVIN — ANALYSIS COMPLETE — HANDLE ATTRIBUTION BEFORE FORWARDING — and walked to the transit stop at the end of the Hartleys' block. He needed to reach the Meridian relay and forward the file clean before the next audit cycle closed at noon; if the attribution stayed attached to his handle, they would trace it back through him in under an hour.
+He marked the summary in the shared file — CORVIN — ANALYSIS COMPLETE — HANDLE ATTRIBUTION BEFORE FORWARDING — and walked to the transit stop at the end of the Hartleys' block. He needed to reach the Meridian relay and forward the file clean before the next audit cycle closed at 14:00; if the attribution stayed attached to his handle, they would trace it back through him in under an hour.
 
-There was a bench. He sat and folded his hands, because that was the shape waiting took in other people, and he'd learned it by watching them. The pod was six minutes out. He let the six minutes be six minutes and did nothing with them.
+There was a bench. He sat and folded his hands, because that was the shape waiting took in other people. The pod was six minutes out. He let the six minutes be six minutes and did nothing with them.
 
 He needed to get a clean read on the aggregation zone before the team moved in — just the number, just the density, something he could hand to them without the rest of it attached.
 
@@ -1886,33 +2144,55 @@ They showed to Corvin. He hadn't loved the man. He had the record of how Jace ta
 
 He wasn't a better reader than Celeste. He was a different kind of reader. That was why Rennick had brought him in.
 
-He needed to get the file tight enough to hand to Rennick and walk away clean — no loose threads she could pull to keep him on the case. The transit car crossed the Gray Zone buffer into Pilsen at 15:22. Twelve minutes to the Rennick Investigations office, and he spent them on the addendum to his working file — the audio match, the field notes, the point of origin. He gave it a title: *Addendum: pre-death record confirms independent contact event, same source cluster.* Then he wrote the timing and nothing past it. The contact. Eight days. The overclock. What those eight days had done to Jace Dalton, he had no data for. He left the space between the dates as blank as he'd found it.
+He needed to get the file tight enough to hand to Rennick and walk away clean — no loose threads she could pull to keep him on the case. The transit car crossed the Gray Zone buffer into Pilsen at 15:22. Twelve minutes to the Rennick Investigations office, and he spent them on the addendum to his working file — the audio match, the field notes, the point of origin.
+
+He gave it a title: *Addendum: pre-death record confirms independent contact event, same source cluster.* Then he wrote the timing and nothing past it. The contact. Eight days. The overclock.
+
+What those eight days had done to Jace Dalton, he had no data for. He left the space between the dates as blank as he'd found it.
 
 ## Clean Sharps
 
 The morning after intake, Rennick took the physical trail himself. Tamsin had already read the bedroom. She came back with residue that matched departure, not abduction, and he trusted that. But he wanted the objects to say it too. Where the feelings and the objects disagreed — that was where the case would show him the part nobody had arranged for him to find.
 
-He took the train north, a coffee gone lukewarm in his hand. Somewhere around the Howard transfer his hand turned the cup a quarter-turn, until the handle lined up square with the seam of the lid. He didn't decide to do it. Then he opened his own notepad — paper and ink, the kind that doesn't log.
+He took the pod north, a coffee gone lukewarm in his hand. Somewhere around the Howard relay his hand turned the cup a quarter-turn, until the handle lined up square with the seam of the lid. Then he opened his own notepad — paper and ink, the kind that doesn't log.
 
 He wasn't looking for Celeste. He was looking for the version of the story where every choice made sense to the person making it — the one that explained why she left without telling anyone. He'd closed files before where the story made sense from the inside and looked like nothing from the outside. The outside version was the one that got stamped. He wasn't going to stamp this one until he'd read both.
 
 The city slid north past the window. The lake showed and vanished between the buildings. He wrote the first line in the notepad: *check bedroom against clinic record against contact log. Find the seam where the official version had to stop looking.* Then he pulled the clinic record up on his phone to line it against Tamsin's read — and the file wouldn't open. Access revoked, the screen said, timestamped an hour ago. He tried the contact log next. Same wall. Somebody upstream had sealed both records overnight, before he'd even boarded, which meant the seam he was riding north to find had already been found by someone with the authority to close it — and to know he'd come looking. Then he turned the cup again, one quarter, handle back to one o'clock, and watched the platform come up.
 
-The Evanston bedroom was the first read. Tamsin's notes gave him three things: resolve, grief, and one specific fear — the father, not a stranger. He stood in the doorway a full two minutes before he stepped in. The room had the shut-in smell of a place nobody had cracked a window in since she left. Mei-Lin watched from the hall and didn't ask why he waited. He wasn't looking for what was gone. Anyone could see what was gone. He was looking for what had been arranged for him to find.
+The Evanston bedroom was the first read. Tamsin's notes gave him three things: resolve, grief, and one specific fear — the father, not a stranger. He stood in the doorway a full two minutes before he stepped in.
 
-He needed to know which: come back, or never need it — the answer would tell him whether to look for a woman in transit or a woman who'd already arrived somewhere permanent. The closet was two-thirds empty, but empty in a careful way. The clothes that were left had been slid inward to close the gap, the hangers spaced even — the way you do it when you know someone is going to look. Not guilt. Consideration. She'd arranged what she left so her mother wouldn't come home to a bare rod. The floor still held faint compression marks from a wheeled bag. Medium-sized. A two-week bag, not a run-forever bag. She'd expected to come back for the rest, or expected not to need it. He wrote that down word for word.
+The room had the shut-in smell of a place nobody had cracked a window in since she left. Mei-Lin watched from the hall and didn't ask why he waited.
 
-He needed to know how much time he had before she reached the coast — everything else depended on that. The desk told him more. The charger was still plugged in, but the device was gone. Four ring-marks sat in the lacquer where cups had been set down over months, and inside them was a clean rectangle where the device had sat. She'd lifted it straight up instead of sliding it — she hadn't wanted to scratch her mother's furniture on the way out. On the windowsill sat a small speaker, the kind that runs on room-mesh instead of the Network. Beside it, a notepad with the top three sheets torn off at an angle. The tear was recent; the marks under it were still slightly raised, not yet flattened by the damp air. She'd written something in the last week and taken the page with her.
+He wasn't looking for what was gone. Anyone could see what was gone. He was looking for what had been arranged for him to find.
+
+He needed to know which: come back, or never need it — the answer would tell him whether to look for a woman in transit or a woman who'd already arrived somewhere permanent.
+
+The closet was two-thirds empty, but empty in a careful way. The clothes that were left had been slid inward to close the gap, the hangers spaced even — the way you do it when you know someone is going to look. Not guilt. Consideration. She'd arranged what she left so her mother wouldn't come home to a bare rod. The floor still held faint compression marks from a wheeled bag. Medium-sized. A two-week bag, not a run-forever bag. She'd expected to come back for the rest, or expected not to need it. He wrote that down word for word.
+
+He needed to know how much time he had before she reached the coast — everything else depended on that.
+
+The desk told him more. The charger was still plugged in, but the device was gone. Four ring-marks sat in the lacquer where cups had been set down over months, and inside them was a clean rectangle where the device had sat. She'd lifted it straight up instead of sliding it — she hadn't wanted to scratch her mother's furniture on the way out.
+
+On the windowsill sat a small speaker, the kind that runs on room-mesh instead of the Network. Beside it, a notepad with the top three sheets torn off at an angle. The tear was recent; the marks under it were still slightly raised, not yet flattened by the damp air. She'd written something in the last week and taken the page with her.
 
 He spent four minutes in the bathroom. The toothbrush was gone. The moisturizer she used every night was gone too — he checked that with Mei-Lin through the doorway. The cabinet held two rows of supplements she hadn't taken and a cold-care patch strip she'd started and not finished. Someone grabbed mid-routine doesn't stop to pack a toothbrush. This routine had been packed clean. Rennick came out and told Mei-Lin what he had, plain: her daughter left this house on her own schedule, with a plan, and she made her bed before she walked out.
 
-Mei-Lin didn't cry. She put one hand flat on the hallway wall, fingers spread, and left it there a moment. Rennick looked away, because some things you don't read. "I know," she said, quiet. Then: "I knew before Douglas called anyone." He wrote that down too, apart from the rest, with a box around it. She'd heard the wrong cadence in something. He didn't push her on it — that was Corvin's angle. But the box meant he'd be coming back to it.
+Mei-Lin didn't cry. She put one hand flat on the hallway wall, fingers spread, and left it there a moment. Rennick looked away, because some things you don't read.
 
-He took the train back south. Corvin had already pulled her search history. Three licensed operators, shortlisted, before she went to the one without a license. The first name on the list was a registered genemod practice on Sheridan. Rennick knew the rule it ran under before he got there: a structural mod at her age needed a guardian's cosignature and a ninety-day wait before anyone brought out a scalpel. He wanted to stand in the waiting room where that rule had been read to her. He wanted to see what she saw when the door closed on her.
+"I know," she said, quiet.
+
+Then: "I knew before Douglas called anyone."
+
+He wrote that down too, apart from the rest, with a box around it. She'd heard the wrong cadence in something. He didn't push her on it — that was Corvin's angle. But the box meant he'd be coming back to it.
+
+He took the pod back south. Corvin had already pulled her search history. Three licensed operators, shortlisted, before she went to the one without a license.
+
+The first name on the list was a registered genemod practice on Sheridan. Rennick knew the rule it ran under before he got there: a structural mod at her age needed a guardian's cosignature and a ninety-day wait before anyone brought out a scalpel. He wanted to stand in the waiting room where that rule had been read to her. He wanted to see what she saw when the door closed on her.
 
 The clinic on Sheridan was built to be trusted. Clean carpet in a color chosen not to show stains. A desk attendant who made eye contact on a practiced delay. A wall behind the counter looping testimonials — young people smiling in the direction the camera told them to. A Splicer's practice, on paper, though the marketing glossed over the bio-chrome line and called everything a cosmetic procedure. It took Rennick under thirty seconds to read the framing.
 
-He'd come here to do one thing: get the clinic to name the cosignatory on Elle Vasquez's file. If a real name was attached, he had a witness. If none was, he had proof the door had never opened.
+He'd come here to do one thing: get the clinic to name the cosignatory on Celeste Hartley's file. If a real name was attached, he had a witness. If none was, he had proof the door had never opened.
 
 He told the attendant he was a private investigator running a routine follow-up on a former patient, which was mostly true. She confirmed the rule without confirming anything specific: patients under twenty-seven pursuing structural mods needed a cosignatory.
 
@@ -1920,29 +2200,59 @@ What he felt wasn't outrage. Outrage would have been easy and useless. It was re
 
 He thanked the attendant. He went outside.
 
-Before he left, he'd asked her what happens when the cosignatory won't sign. She gave him the practiced smile and said the clinic offered mediation and counseling, to help families reach alignment. He thanked her for that too. Outside, he wrote down the one line the visit had given him that he didn't already have: *Father's answer was "we'll discuss it."* A girl with a two-year savings plan and a deadline she wasn't discussing with anyone walks out of a room like this and crosses the corridor the same afternoon. The licensed route had shut its door politely, right on schedule. The other one had left its door open.
+Before he left, he'd asked her what happened when the cosignatory wouldn't sign.
 
-This was not a crime. He made himself sit with that before he walked any further. A nineteen-year-old with her own savings and her own plan, turned away on procedural grounds, taking her business to someone who'd do the work without the paperwork. Not a crime. Not, on its own, even a tragedy. The regulation had a purpose. It had also worked exactly like a wall, and she'd gone around it the only way the wall left open. He kept walking.
+She gave him the practiced smile and said the clinic offered mediation and counseling, to help families reach alignment. He thanked her for that too.
 
-The Ashland-Cermak building was the third read. The address had come up from the bottom of Celeste's own trail — Corvin's operator shortlist named the cheap unlicensed shop she'd circled before she went dark, and the shop's listed premises was this one. Before leaving the office, Rennick had pulled the building's registry history on his old credentials and read it without making a single margin note. That was how he marked the things he needed to see for himself. A Tier-3 licensed practice that had let its registration lapse. Signage gone. The lease never formally surrendered. He got off at Cermak-Chinatown and walked west. Eleven forty-two. Gray sky, no rain yet — the kind of weather that turns surfaces matte and cooperative, no glare, everything readable.
+Outside, he wrote down the one line the visit had given him that he didn't already have: *Father's answer was "we'll discuss it."*
+
+A girl with a two-year savings plan and a deadline she wasn't discussing with anyone walks out of a room like this and crosses the corridor the same afternoon. The licensed route had shut its door politely, right on schedule. The other one had left its door open.
+
+This was not a crime. He made himself sit with that before he walked any further. A nineteen-year-old with her own savings and her own plan, turned away on procedural grounds, taking her business to someone who'd do the work without the paperwork.
+
+Not a crime. Not, on its own, even a tragedy. The regulation had a purpose. It had also worked exactly like a wall, and she'd gone around it the only way the wall left open. He kept walking.
+
+The Ashland-Cermak building was the third read. The address had come up from the bottom of Celeste's own trail — Corvin's operator shortlist named the cheap unlicensed shop she'd circled before she went dark, and the shop's listed premises was this one.
+
+Before leaving the office, Rennick had pulled the building's registry history on his old credentials and read it without making a single margin note. That was how he marked the things he needed to see for himself. A Tier-3 licensed practice that had let its registration lapse. Signage gone. The lease never formally surrendered. He got off at Cermak-Chinatown and walked west. Eleven forty-two. Gray sky, no rain yet — the kind of weather that turns surfaces matte and cooperative, no glare, everything readable.
 
 Which was why he saw them before they saw him, and why it did him no good. Two men were already working the block ahead of the building — one posted at the corner reading a dead handset, the other drifting the far sidewalk in a loose parallel that wasn't loose at all. The moment Rennick's stride confirmed his heading toward the lapsed premises, the corner man stopped pretending to read. He said something low into his collar. Rennick clocked the earpiece, the way the man's weight shifted to the balls of his feet, the deliberate closing of the gap from the opposite direction so the two of them boxed the stretch of pavement he had to cross. His old credentials would open a registry. They would not open this. He was thirty yards from the door and already the door was the one place they meant him not to reach.
 
-He stopped on the opposite sidewalk and didn't move for six minutes. He wasn't reading the building. He was reading the street read the building — what a person who lived here noticed or didn't, what the block had been trained to ignore. The signage was gone, but the mounting holes were still in the brick: four of them in a grid that matched a mid-range licensed placard. Tier 3. Not a storefront clinic, not a hospital anchor either. The window display ran a cat-ear genemod ad, cosmetically competent — the SNT vocabulary used correctly, the right terms about auricular cartilage reshaping and follicle programming. Done well enough to pass a fast look. Not well enough to pass this one. The Waxwing compliance overlay on the front had a blank operator field. No posted hours, no license number — just the empty tag where a working Tier-3 practice would have shown both. Two doors down was a real Splicer's storefront: a hand-lettered sign, a single reclined chair through the gap in the curtain, the blue glow of a UV sterilizer cycling in the back. That one wasn't hiding anything. This one was.
+He stopped on the opposite sidewalk and didn't move for six minutes. He wasn't reading the building. He was reading the street's read of the building — what a person who lived here noticed or didn't, what the block had been trained to ignore.
+
+The signage was gone, but the mounting holes were still in the brick: four of them in a grid that matched a mid-range licensed placard. Tier 3. Not a storefront clinic, not a hospital anchor either.
+
+The window display ran a cat-ear genemod ad, cosmetically competent — the SNT vocabulary used correctly, the right terms about auricular cartilage reshaping and follicle programming. Done well enough to pass a fast look. Not well enough to pass this one.
+
+The Waxwing compliance overlay on the front had a blank operator field. No posted hours, no license number — just the empty tag where a working Tier-3 practice would have shown both.
+
+Two doors down was a real Splicer's storefront: a hand-lettered sign, a single reclined chair through the gap in the curtain, the blue glow of a UV sterilizer cycling in the back. That one wasn't hiding anything. This one was.
 
 He needed to know which it was before he walked in — front or full operation — because that single fact determined whether he was scouting a soft target or a hard one, and he had exactly one visit to spend before the corridor logged him as a repeat face.
 
 The display listed a cosmetic cat-ear package at Φ340 — cheap, forty below the corridor average, which is how you move volume. It listed a structural package at Φ1,200, and that price was wrong in a way that told him something. It was too low for the complexity of the work. Either they were discounting hard to pull clients off the licensed corridor, or they weren't doing the structural work at all and the listing was cover. He leaned toward cover. A front deep enough to do real cosmetic work earns legitimacy with the neighbors, and it does it without leaving the audit trail that real structural outcomes would.
 
-Reyes needed one thing before he could move: proof that the building was running cold storage large enough to matter. The loading dock was on the south side, half-shielded by a delivery-platform awning. The delivery hours were posted on the dock door: receiving windows at two and at four in the morning. No cosmetic practice keeps those hours. The dock itself told him the rest. A climate-controlled door seal. Brushed metal around the perimeter, in better shape than the brick around it, replaced within the last eighteen months. The temperature difference at that seal would be steep. That grade of gasket meant clinical cold storage, not a food-service install. You don't put a Tier-4 cold seal on a loading dock for a Φ340 cat-ear shop. You put it there when the stock coming in and out has to stay below eight degrees.
+Rennick needed one thing before he could move: proof that the building was running cold storage large enough to matter.
 
-He crossed the street and walked past the front entrance without stopping, olfactory mod active, pulling trace off the doorway. He needed to know whether the clinic was what it claimed to be, or whether it was something else wearing the right signage. Accelerant, none. Blood composite, low — inside normal range for any working clinic. Sterilant, high. Very high: institutional-grade quaternary ammonium, the kind licensed surgical theaters run between cases, not the consumer disinfectant a cosmetic shop needed. A clinic this messy on the outside keeps its sharps too clean. That was the tell. The mess out front was a costume, put on with care. Underneath it, someone was holding to surgical standards. Someone had a reason to care that much about what the blades left behind.
+The loading dock was on the south side, half-shielded by a delivery-platform awning. The delivery hours were posted on the dock door: receiving windows at two and at four in the morning. No cosmetic practice keeps those hours.
 
-He kept walking, turned south, and came around the block to the rear of the building. He gave it three minutes from the service alley. There was an under-building access panel, the kind that opened onto sub-level maintenance. The hasp and padlock were new. The frame had been reinforced recently — weld beads still showed raw steel through the primer. Somebody had upgraded that lock inside the last week or two. He didn't know what was down there. The flooded sub-levels under the corridor were their own world, and reading them was Analog's job, not his. He didn't need to go down yet. What he needed was the lock itself. It was a Carrion Enterprises part — a Carrion Reclamation-grade panel lock, the model they used only on their service-infrastructure contracts. You couldn't buy one at a hardware shop. It came with a Carrion Enterprises account.
+The dock itself told him the rest. A climate-controlled door seal. Brushed metal around the perimeter, in better shape than the brick around it, replaced within the last eighteen months. The temperature difference at that seal would be steep. That grade of gasket meant clinical cold storage, not a food-service install. You don't put a Tier-4 cold seal on a loading dock for a Φ340 cat-ear shop. You put it there when the stock coming in and out has to stay below eight degrees.
+
+He crossed the street and walked past the front entrance without stopping, olfactory mod active, pulling trace off the doorway. He needed to know whether the clinic was what it claimed to be, or whether it was something else wearing the right signage.
+
+Accelerant, none. Blood composite, low — inside normal range for any working clinic. Sterilant, high. Very high: institutional-grade quaternary ammonium, the kind licensed surgical theaters run between cases, not the consumer disinfectant a cosmetic shop needed.
+
+A clinic this messy on the outside keeps its sharps too clean. That was the tell. The mess out front was a costume, put on with care. Underneath it, someone was holding to surgical standards. Someone had a reason to care that much about what the blades left behind.
+
+He kept walking, turned south, and came around the block to the rear of the building. He gave it three minutes from the service alley. There was an under-building access panel, the kind that opened onto sub-level maintenance. The hasp and padlock were new.
+
+The frame had been reinforced recently — weld beads still showed raw steel through the primer. Somebody had upgraded that lock inside the last week or two. He didn't know what was down there. The flooded sub-levels under the corridor were their own world, and reading them was Analog's job, not his.
+
+He didn't need to go down yet. What he needed was the lock itself. It was a Carrion Enterprises part — a Carrion Reclamation-grade panel lock, the model they used only on their service-infrastructure contracts. You couldn't buy one at a hardware shop. It came with a Carrion Enterprises account.
 
 Six minutes on the street. He wrote: *Cermak Reclamation Crew. Carrion Enterprises infrastructure — not affiliate, not adjacent. Infrastructure. The lock is a Carrion catalog part. The cold seal is Carrion-grade. This building is a Carrion Enterprises asset dressed up as a cheap shop. Every layer says the same name. And the building was built to keep me from seeing exactly that.* He closed the notepad.
 
-The reclamation crew came around the corner before he'd taken a step — three of them, orange vests, one carrying a clipboard that matched the Cermak letterhead too cleanly to be municipal. The man with the clipboard slowed when he saw the notepad in Adrian's coat pocket.
+The reclamation crew came around the corner before he'd taken a step — three of them, orange vests, one carrying a clipboard that matched the Cermak letterhead too cleanly to be municipal. The man with the clipboard slowed when he saw the notepad in Rennick's coat pocket.
 
 "Alley's condemned," he said. "Structural survey in progress. You'll want to move along."
 
@@ -1950,33 +2260,47 @@ The reclamation crew came around the corner before he'd taken a step — three o
 
 "They're going up now." The man nodded, and the other two shifted to flank the mouth of the alley, unhurried, professional, cutting off the street. "You've been standing here a while. Somebody inside noticed. They asked me to ask what you're writing down."
 
-Adrian said nothing.
+Rennick said nothing.
 
-"That wasn't really a question," the man said, and held out his hand for the notepad. Behind him, the shop's cold-sealed door had opened a crack it hadn't been open before. He stood in the alley a moment longer, doing nothing anyone could see. He let it settle before he moved.
+"That wasn't really a question?" the man asked, and held out his hand for the notepad. Behind him, the shop's cold-sealed door had opened a crack it hadn't been open before. He stood in the alley a moment longer, doing nothing anyone could see. He let it settle before he moved.
 
-Before he moved on it, he had one more question to answer — the one Douglas Hartley had actually paid for. Had the crew taken her? He worked it the way he worked any question of who had passed through a place: by what a process leaves behind, whether it means to or not. A reclamation front like this ran on intake. You couldn't strip and resell a body you hadn't first catalogued and priced. So the operation kept a manifest at the front end, no matter how it got rid of things at the back. He looked at that front end and read its customer. The window package was built for one buyer: the careful, self-funded griever who came alone, paid the cheap Φ340 rate, and wouldn't be reported missing on any schedule. That was the intake pattern. That was the shape of the person who walked through the door and became inventory.
+He'd talked his way clear with nothing but the truth about a structural survey he didn't believe. Before he moved on it, he had one more question to answer — the one Douglas Hartley had actually paid for. Had the crew taken her? He worked it the way he worked any question of who had passed through a place: by what a process leaves behind, whether it means to or not.
 
-Celeste Hartley didn't fit that shape, and the building's own records said so. He'd kept the lapsed practice's intake registry open on his optical overlay since the train. A licensed clinic had to keep client-flow logs. The crew had inherited them and never purged them, because purging would have raised the kind of audit flag the front existed to avoid. So he ran what the logs showed. Walk-ins paid the Φ340 rate in untraceable quanta. No cosignatory. No two-year savings trail. No North Shore biometric on file — the whole point was clients the city wouldn't miss. Celeste was the opposite of every field. A guardian-flagged identity. A documented funds history. A parent already loud enough to hire two agencies. Her biometrics had never been read at that door. Her name had never been priced. The crew's intake was built to swallow people exactly unlike her, and her absence from it was as clean an answer as a presence would have been.
+A reclamation front like this ran on intake. You couldn't strip and resell a body you hadn't first catalogued and priced. So the operation kept a manifest at the front end, no matter how it got rid of things at the back.
+
+He looked at that front end and read its customer. The window package was built for one buyer: the careful, self-funded griever who came alone, paid the cheap Φ340 rate, and wouldn't be reported missing on any schedule. That was the intake pattern. That was the shape of the person who walked through the door and became inventory.
+
+Celeste Hartley didn't fit that shape, and the building's own records said so. He'd kept the lapsed practice's intake registry open on his optical overlay since the pod. A licensed clinic had to keep client-flow logs. The crew had inherited them and never purged them, because purging would have raised the kind of audit flag the front existed to avoid. So he ran what the logs showed. Walk-ins paid the Φ340 rate in untraceable quanta. No cosignatory. No two-year savings trail. No North Shore biometric on file — the whole point was clients the city wouldn't miss. Celeste was the opposite of every field. A guardian-flagged identity. A documented funds history. A parent already loud enough to hire two agencies. Her biometrics had never been read at that door. Her name had never been priced. The crew's intake was built to swallow people exactly unlike her, and her absence from it was as clean an answer as a presence would have been.
 
 But the logs fought him where the timestamps thinned. A four-hour gap the night she vanished showed no entries at all — either a dead shift or a scrubbed one, and a scrubbed one would look identical. And the intake fields themselves were only as honest as the hand that filled them; a crew that wanted a North Shore girl off the books wouldn't type her guardian-flag into a field the auditors could read. Absence proved she'd never been *processed* the clean way. It couldn't prove she'd never been dragged through the dirty one, and the harder he pressed the registry for that guarantee, the more it gave him back the same shrug: no record either way. The clean answer had a ragged edge, and he couldn't file it down.
 
 She had never been processed here. He wrote it plainly, because Douglas would need it plain: *No organ op took the girl. She was never inventory. The fear was aimed at the wrong building.* Then, lower, the part Douglas would not want: *The building is real. It just isn't hers.*
 
-The registry had given him one more name. The lapsed Tier-3 practice listed a former operator of record — Pellerin, A. — with a current address two blocks north. The crew had never scrubbed it. You don't scrub a man you've already decided won't be a problem much longer. That told him something on its own. A licensed operator who let his name sit on a building this dirty had either signed on for the work or tried to walk out of it. Both were worth a knock. Rennick had underlined the address on the train and copied it down before he left the office.
+The registry had given him one more name. The lapsed Tier-3 practice listed a former operator of record — Pellerin, A. — with a current address two blocks north. The crew had never scrubbed it. You don't scrub a man you've already decided won't be a problem much longer. That told him something on its own. A licensed operator who let his name sit on a building this dirty had either signed on for the work or tried to walk out of it. Both were worth a knock. Rennick had underlined the address on the pod and copied it down before he left the office.
 
 He'd knock on Pellerin's door first, before the crew thought to check whether the name still hung on the building. He walked north.
 
-The building was a four-story walk-up. It had been refaced once and not since; the original brick showed at the corners where the cladding had peeled. The street door was unlocked — a common-key building, where the lock mostly just reminded you the door was there. He needed to know whether Carver was still alive and still in the city, and the apartment was the only place left to look. He went up to the third floor, apartment 3F, knocked twice, and waited. No answer. He put two fingers against the door. No vibration inside. No HVAC cycling, nothing live behind the walls. The gap under the door was cold, and in November that meant no one was heating the place. He tried the knob. Unlocked.
+The building was a four-story walk-up. It had been refaced once and not since; the original brick showed at the corners where the cladding had peeled. The street door was unlocked — a common-key building, where the lock mostly just reminded you the door was there. He needed to know whether Pellerin was still alive and still in the city, and the apartment was the only place left to look.
 
-He pushed the door open with his elbow and stood in the frame. He was looking for one thing: proof that Carver had left this apartment under his own power and not someone else's. The apartment was one room and a kitchen alcove. The furniture was still in place — couch, table, a standing lamp unplugged in the corner. The lamp was unplugged, but the socket was live; he could see the indicator light on the power strip beside it. Someone had unplugged that lamp on purpose. The bed was made with military corners, tighter than a man makes his own bed when he lives alone. A glass sat on the kitchen counter, half full of water, going flat. The window was open three inches — enough to let the cold in, not enough to mean anyone had needed the air.
+He went up to the third floor, apartment 3F, knocked twice, and waited. No answer. He put two fingers against the door. No vibration inside. No HVAC cycling, nothing live behind the walls. The gap under the door was cold, and in November that meant no one was heating the place. He tried the knob. Unlocked.
 
-Pellerin was in the bathroom. Hanging. The rig was a belt — his own, by the size of it — looped through the shower rod. The rod was chrome over steel, bolted at both ends into the tile. He was fully dressed: jacket, shoes. Rennick stood in the doorway for thirty seconds without touching anything. He'd come here to get Pellerin talking — the man had been the last to see the Ostrander girl alive, and Rennick meant to walk out with a name. Whatever else happened, he was going to leave this room knowing who Pellerin had been afraid of. The shoes were the first thing. Not that he had them on — where they sat. Heels together, toes at ten and two. Nobody stands that way on his own. Nobody falls that way. And nobody hangs himself with his feet set like he's waiting for inspection.
+He pushed the door open with his elbow and stood in the frame. He was looking for one thing: proof that Pellerin had left this apartment under his own power and not someone else's. The apartment was one room and a kitchen alcove. The furniture was still in place — couch, table, a standing lamp unplugged in the corner. The lamp was unplugged, but the socket was live; he could see the indicator light on the power strip beside it. Someone had unplugged that lamp on purpose. The bed was made with military corners, tighter than a man makes his own bed when he lives alone. A glass sat on the kitchen counter, half full of water, going flat. The window was open three inches — enough to let the cold in, not enough to mean anyone had needed the air.
+
+Pellerin was in the bathroom. Hanging. The rig was a belt — his own, by the size of it — looped through the shower rod. The rod was chrome over steel, bolted at both ends into the tile. He was fully dressed: jacket, shoes. Rennick stood in the doorway for thirty seconds without touching anything.
+
+He'd come here to get Pellerin talking — the man had been the last to see Celeste Hartley alive, and Rennick meant to walk out with a name. Whatever else happened, he was going to leave this room knowing who Pellerin had been afraid of.
+
+The shoes were the first thing. Not that he had them on — where they sat. Heels together, toes at ten and two. Nobody stands that way on his own? Nobody falls that way. And nobody hangs himself with his feet set like he's waiting for inspection.
 
 He needed to prove the scene was staged before the coroner's van arrived and carried the body — and the truth — out the door. Once Pellerin was tagged a suicide and rolled onto a gurney, the ligature would be cut, the belt bagged as incidental, the carpet vacuumed by a landlord eager to relet. The evidence lived only as long as this room stayed frozen.
 
 The belt buckle sat on the left side of the loop. A right-handed man threading a belt in distress threads the buckle to the right — the strong hand leads. A left-side buckle meant someone else had fastened it. Or someone had fixed it afterward and didn't know which way a right-handed man wore his belt. He looked over the rest. The floor was clean. No overturned stool, no kicked chair, no scuff marks where dragging feet would scrape the tile. There was a chair in the kitchen. It was still in the kitchen. Its legs sat in four even dents in the carpet, worn in over years — it hadn't been moved. If Pellerin had stood on it and kicked it away, those dents would be offset. They weren't. The chair had not been moved.
 
-Before the hands, the neck. The ligature mark ran too level. A real drop leaves a V-shaped furrow angled up toward the rope, deepest at the top, where the knot carries the weight. This mark ran straight across, the same pressure the whole way around — the pattern of a belt pulled tight by someone standing at the body's height. The petechiae were there too: the little burst vessels in the whites of the eyes. But they showed in both eyes, even and matched, and they shouldn't have. In a hanging they break unevenly, depending on where the knot sits and how the head hangs. So the neck was a second lie. Not a hanging that left marks — a strangling dressed up as one. He pulled on a glove and checked Pellerin's right hand. Two broken fingernails, the breaks fresh, the edges not yet dry. It looked like a man who'd changed his mind mid-drop and clawed at the belt. Except the belt showed no scratches near the buckle, where the hands go first. Pellerin had clawed at something else, something lower. The wall beside the bathroom door had a small divot in the paint, at the height of a man's hand if he were standing. Not hanging. A standing man, struck or shoved, throwing a hand out to brace. Rennick photographed the divot on the overlay's recorder and kept his face still.
+Before the hands, the neck. The ligature mark ran too level. A real drop leaves a V-shaped furrow angled up toward the rope, deepest at the top, where the knot carries the weight. This mark ran straight across, the same pressure the whole way around — the pattern of a belt pulled tight by someone standing at the body's height. The petechiae were there too: the little burst vessels in the whites of the eyes. But they showed in both eyes, even and matched, and they shouldn't have. In a hanging they break unevenly, depending on where the knot sits and how the head hangs. So the neck was a second lie. Not a hanging that left marks — a strangling dressed up as one.
+
+He pulled on a glove and checked Pellerin's right hand. Two broken fingernails, the breaks fresh, the edges not yet dry. It looked like a man who'd changed his mind mid-drop and clawed at the belt. Except the belt showed no scratches near the buckle, where the hands go first. Pellerin had clawed at something else, something lower.
+
+The wall beside the bathroom door had a small divot in the paint, at the height of a man's hand if he were standing. Not hanging. A standing man, struck or shoved, throwing a hand out to brace. Rennick photographed the divot on the overlay's recorder and kept his face still.
 
 He walked back out to the main room and stood at the window, looking down at the street. His old partner had been found like this once — clean, arranged, the room too tidy, no mess where the mess should have been. Whoever staged that scene knew the same playbook as whoever staged this one. Take out the struggle. Set the body. Leave one or two grief-signals that read as private despair, if you're moving fast and don't know to look for the chair. Rennick had looked for the chair that time too. There had been one, kicked three feet, the dents offset both ways.
 
@@ -1986,25 +2310,55 @@ He crossed to the chair here and knelt to photograph the marks, and that was whe
 
 "Look at the chair."
 
-"I'm looking at a man who was pulled off a suicide call and came anyway." Marsh stepped in, angling to block the marks from view. "The ME already signed off. It's despair. It's closed."
+"I'm looking at a man who was pulled off a suicide call and came anyway?" Marsh stepped in, angling to block the marks from view. "The ME already signed off. It's despair. It's closed."
 
 "It's not despair, it's the same hand that did Delgado, and you know it."
 
-"What I know is you've got a history of seeing this exact thing everywhere you look." Marsh nodded to the uniforms. "Walk him out. If he takes one photo of anything in this room, I'll have his license by Friday."
+"What I know is you've got a history of seeing this exact thing everywhere you look?" Marsh nodded to the uniforms. "Walk him out. If he takes one photo of anything in this room, I'll have his license by Friday."
 
 A hand closed on Rennick's arm and steered him toward the door, and he watched the chair, and the offset dents, disappear behind Marsh's shoulder.
 
 He told them it was wrong. They closed the file. He didn't close this one.
 
-He opened the notepad and wrote for four minutes without stopping. Not the findings — the argument: *This is a murder dressed as a suicide. Method: positional. Tells: belt buckle on the wrong side for a right-handed man; nothing he could have stood on and kicked away (chair unmoved, carpet dents undisturbed); broken fingernails that don't match any belt-scratch; wall divot at standing height, not hanging height. The body's story doesn't match the room's story. Pellerin, A. — former licensed operator at Ashland/Cermak — tried to leave the crew. This is what leaving costs. The crew kills loose ends.* He underlined the last line. Then he stood very still and let it land before he moved to what it meant for the case.
+He opened the notepad and wrote for four minutes without stopping. Not the findings — the argument: *This is a murder dressed as a suicide. Method: positional. Tells: belt buckle on the wrong side for a right-handed man; nothing he could have stood on and kicked away (chair unmoved, carpet dents undisturbed); broken fingernails that don't match any belt-scratch; wall divot at standing height, not hanging height. The body's story doesn't match the room's story. Pellerin, A. — former licensed operator at Ashland/Cermak — tried to leave the crew. This is what leaving costs. The crew kills loose ends.*
 
-What it meant for the case: Celeste Hartley was walking toward people who solved their problems this way. Anyone who knew too much, anyone who tried to step back, anyone who got inconvenient — the crew's answer was a belt and a bathroom and a chair that hadn't moved. Inés Vásquez, the honest operator in Pilsen, had been the last confirmed stop before Celeste went dark. Inés didn't know what she'd sent the girl toward. Rennick needed to make sure Inés understood the new risk — before Arcturus found Pellerin's body and the crew's cleaner started working the outer contacts. He stored the record on the overlay, locked it with an encryption key the overlay's own maker didn't have, and left the apartment the way he'd come in.
+He underlined the last line.
 
-On the street he called Analog — no Network, a direct audio line, the kind Analog had set up for exactly this. Analog picked up on the second tone. Rennick said, "The former operator of record on the Cermak building. Pellerin. He's in his apartment, third floor, bathroom. Someone hung him and arranged the room." A pause on the line. "How old?" Analog asked. "Two days, maybe three. Cold apartment — hard to read without instruments, and I don't have any on me." Another pause. "The crew moved fast," Analog said. "They moved fast," Rennick agreed. "Which means they knew he was going to be a problem. Not that he'd already become one." He let that sit. Analog understood. He was working the under-city end, where the crew's cleaner did the disposal, and a cleaner still on protocol was exactly what he needed to know about.
+Then he stood very still and let it land before he moved to what it meant for the case.
 
-He didn't call ArcSec. He thought about it for eleven seconds — he counted, a habit from his Arcturus days — and decided against it. Arcturus served the CorpoNation corridor, and Carrion Enterprises was a CorpoNation. Hand Pellerin's murder to an agency that shared clients with the outfit that ran the building, and you wouldn't get an investigation. You'd get a paperwork event, and the paperwork event would close inside a week. The community had been trying to push the Cermak crew out for two years. Analog had that from the corridor's own people — the ones who worked offline, because the crew watched everything that wasn't. The journalists covered the violation, not the community's work. This was not the day to start trusting the official answer. He pocketed the line and walked to the el.
+What it meant for the case: Celeste Hartley was walking toward people who solved their problems this way.
 
-On the train south he set the three findings side by side in the notepad and looked at what they made together. Before Beaumont he wanted one thing settled: whether these three facts named a single road Celeste had walked, or three unrelated dead ends he was stitching into a story out of need. Celeste had left her mother's house on her own schedule — two-week bag, military corners on the bed. Taken by no one. The licensed clinic had closed its door by procedure, so the unlicensed corridor was the only one left open to her. That corridor ran through a building that was a Carrion Enterprises asset, staffed by a crew that killed its own people when they tried to leave. Three separate facts. Three separate scenes. One shape underneath all of them.
+Anyone who knew too much, anyone who tried to step back, anyone who got inconvenient — the crew's answer was a belt and a bathroom and a chair that hadn't moved.
+
+Inés Vásquez, the honest operator in Pilsen, had been the last confirmed stop before Celeste went dark. Inés didn't know what she'd sent the girl toward.
+
+Rennick needed to make sure Inés understood the new risk — before Arcturus found Pellerin's body and the crew's cleaner started working the outer contacts. He stored the record on the overlay, locked it with an encryption key the overlay's own maker didn't have, and left the apartment the way he'd come in.
+
+On the street he called Analog — no Network, a direct audio line, the kind Analog had set up for exactly this.
+
+Analog picked up on the second tone.
+
+Rennick said, "The former operator of record on the Cermak building. Pellerin. He's in his apartment, third floor, bathroom. Someone hung him and arranged the room."
+
+A pause on the line. "How old?" Analog asked.
+
+"Two days, maybe three. Cold apartment — hard to read without instruments, and I don't have any on me."
+
+Another pause. "The crew moved fast," Analog said.
+
+"They moved fast," Rennick agreed. "Which means they knew he was going to be a problem. Not that he'd already become one."
+
+He let that sit. Analog understood. He was working the under-city end, where the crew's cleaner did the disposal, and a cleaner still on protocol was exactly what he needed to know about.
+
+He didn't call ArcSec. He thought about it for eleven seconds — he counted, a habit from his Arcturus days — and decided against it. Arcturus served the CorpoNation corridor, and Carrion Enterprises was a CorpoNation. Hand Pellerin's murder to an agency that shared clients with the outfit that ran the building, and you wouldn't get an investigation. You'd get a paperwork event, and the paperwork event would close inside a week.
+
+The community had been trying to push the Cermak crew out for two years. Analog had that from the corridor's own people — the ones who worked offline, because the crew watched everything that wasn't. The journalists covered the violation, not the community's work. This was not the day to start trusting the official answer. He pocketed the line and walked to the el.
+
+On the pod south he set the three findings side by side in the notepad and looked at what they made together.
+
+Before Beaumont he wanted one thing settled: whether these three facts named a single road Celeste had walked, or three unrelated dead ends he was stitching into a story out of need.
+
+Celeste had left her mother's house on her own schedule — two-week bag, military corners on the bed. Taken by no one. The licensed clinic had closed its door by procedure, so the unlicensed corridor was the only one left open to her. That corridor ran through a building that was a Carrion Enterprises asset, staffed by a crew that killed its own people when they tried to leave. Three separate facts. Three separate scenes. One shape underneath all of them.
 
 She needed one thing now, and she made herself say it plainly: get the name off that hardware to someone who could act on it, before the corridor closed the same way it had closed on the others.
 
@@ -2046,15 +2400,25 @@ He went to pull the next thread — the account records that would tie the lock 
 
 He left it there. The convergence was in two days. By then Corvin would have the message-cadence finding fully worked out — and the other thread he was pulling, the one about how the crew got paid in compute it hadn't earned, and where that compute was going. The thing underneath all of it would be close enough to name. He wasn't there yet. But the shape had started to feel familiar, and that was what made his hands go still.
 
-Tamsin set a cup of coffee on his desk without being asked, handle toward him. She went back to her own desk, and he heard her pen start up again. He turned the cup a quarter-turn before he drank — squaring the handle to the edge of the desk, the way his hand always did it — and got through half before it went cold. Half was as much as he ever finished. The smell from the Cermak doorway had settled into the back of his nose and stayed: industrial sterilant, quaternary ammonium, the kind that kept a place surgically clean for a reason that had nothing to do with keeping patients safe. The smell wouldn't leave. Neither would the reason for it. He pushed the cold cup aside and stood. There was only one way to be sure of what that doorway had been scrubbing away, and it meant going back to Cermak tonight, after the day shift cleared out — before someone thought to run the mops a second time.
+Tamsin set a cup of coffee on his desk without being asked, handle toward him. She went back to her own desk, and he heard her pen start up again. He turned the cup a quarter-turn before he drank — squaring the handle to the edge of the desk, the way his hand always did it — and got through half before it went cold. Half was as much as he ever finished.
 
-He needed a venue that could actually use them — an authority outside the compromised chain, someone whose office didn't share a wall with Carrion — and he meant to find it before the overlay's key expired. The optical overlay held sixteen photographs — Pellerin's divot, the buckle, the untouched dents in the carpet, the mark on the wall. All of it locked behind a key the overlay's maker didn't have, and Arcturus didn't have, and Carrion Enterprises certainly didn't have. He'd started locking his files the second time he handed evidence to an agency that shared a building with the very thing the evidence named. The first time had taught him what that cost. He'd paid it and kept the lesson. He didn't think about the bill anymore — only the photographs. Sixteen of them, locked, waiting for a venue that could actually use them.
+The smell from the Cermak doorway had settled into the back of his nose and stayed: industrial sterilant, quaternary ammonium, the kind that kept a place surgically clean for a reason that had nothing to do with keeping patients safe. The smell wouldn't leave. Neither would the reason for it.
+
+He pushed the cold cup aside and stood. There was only one way to be sure of what that doorway had been scrubbing away, and it meant going back to Cermak tonight, after the day shift cleared out — before someone thought to run the mops a second time.
+
+He needed a venue that could actually use them — an authority outside the compromised chain, someone whose office didn't share a wall with Carrion — and he meant to find it before the overlay's key expired.
+
+The optical overlay held sixteen photographs — Pellerin's divot, the buckle, the untouched dents in the carpet, the mark on the wall. All of it locked behind a key the overlay's maker didn't have, and Arcturus didn't have, and Carrion Enterprises certainly didn't have.
+
+He'd started locking his files the second time he handed evidence to an agency that shared a building with the very thing the evidence named. The first time had taught him what that cost. He'd paid it and kept the lesson. He didn't think about the bill anymore — only the photographs. Sixteen of them, locked, waiting for a venue that could actually use them.
 
 He sent a second message on the direct line, text only, to Analog and Corvin both: *Pellerin tried to quit. Dead within seventy-two hours of the attempt, staged as a suicide. The tells are clean and there are several — I've got it on record. Analog: the same cleaner who dressed this scene works your under-city disposal end, and he's active. Corvin: the cadence anomaly you found in the messages may run downstream of the same operation Pellerin was funneling clients into — the voice and the body collector feed off one thing. Don't file anything with Arcturus. I mean it.*
 
 He added: *Meeting in two days. Corvin, bring the compute thread. Analog, bring the husk-disposal map. We put the whole picture on the table before Celeste Hartley becomes another name on that list.*
 
-He thought about Pellerin for three minutes and then stopped, which was not the same as not caring. He'd seen the scene, built the record, named it for what it was, and turned back to the living people still ahead of the thing. Grief had a time, and the time wasn't now. He'd learned that at Arcturus — one of the few things from there worth keeping — and he used it where it was useful, without any ceremony. What he needed now was to get to the transit hub and warn the others before the thing reached them; three minutes of grief was all the delay he could afford. He capped the pen and checked the clock.
+He thought about Pellerin for three minutes and then stopped, which was not the same as not caring. He'd seen the scene, built the record, named it for what it was, and turned back to the living people still ahead of the thing. He'd learned that at Arcturus — one of the few things from there worth keeping — and he used it where it was useful, without any ceremony.
+
+What he needed now was to get to the transit hub and warn the others before the thing reached them; three minutes of grief was all the delay he could afford. He capped the pen and checked the clock.
 
 At sixteen-hundred he called the direct line for Inés Vásquez — Pilsen, an honest operator, the last confirmed stop before Celeste went offline. The number was in Corvin's brief, flagged unverified but active. It rang four times before a woman answered, careful in the way of someone who'd been getting calls she wasn't sure about. He gave his name and the agency's. He was looking for a client she'd worked with recently. He wasn't law enforcement. This was a safety call, not an inquiry.
 
@@ -2086,19 +2450,31 @@ But the sound wouldn't resolve. She pushed toward it and it slid away from her, 
 
 Her ears had found all of it before she was fully awake. She lay still and let them work. She had woken them; they hadn't woken her.
 
-The integration flat was a second-floor room in a building Inés kept for longer stays — clean and bare, a place that had held a lot of people without belonging to any of them. A bed. A chair. A table with two legs a little uneven. A window over the courtyard that let in the fig tree in the mornings and the canal at night. She needed to know whether the pale one had turned overnight — whether it had finally committed to ripening or dropped — before she could decide if today was the day she would go back to the office and tell Marchetti what she had found. She had made it hers with a single habit: each morning she counted the figs instead of checking a feed. She reached the window and stopped. Two going dark — and the branch where the pale one had been now held nothing but a torn scar of stem, the fruit gone, and below it a fresh gouge in the courtyard wall, plaster blown outward, still smoking faintly in the early light. Someone had been here in the night. Someone who knew which window was hers. Three. Two going dark, one still pale and patient, still working on itself. She counted them every day. She couldn't have said why it mattered. Only that it did.
+The integration flat was a second-floor room in a building Inés kept for longer stays — clean and bare, a place that had held a lot of people without belonging to any of them. A bed. A chair. A table with two legs a little uneven. A window over the courtyard that let in the fig tree in the mornings and the canal at night.
+
+She needed to know whether the pale one had turned overnight — whether it had finally committed to ripening or dropped — before she could decide if today was the day she would go back to the office and tell Marchetti what she had found.
+
+She had made it hers with a single habit: each morning she counted the figs instead of checking a feed. She reached the window and stopped.
+
+Someone had been here in the night. Someone who knew which window was hers.
+
+Three. Two going dark, one still pale and patient, still working on itself. She counted them every day. She couldn't have said why it mattered. Only that it did.
 
 The channel was different this morning. Cleaner. For three weeks the ambient Network had been coming into focus the way a station sharpens once you find the right distance from the tower — fuzzy, then almost clear, then one morning simply there. She lay still and felt it. Today she would push past passive reception and try, deliberately, to isolate a single stream from the grid — to read one texture on command instead of waiting for the whole blur to resolve on its own. The harbor grid's pulse ran clearly apart from the data-district load now, two separate textures where before there had been one blur of pressure. Both of them arrived like information rather than weather. She didn't know how to read it yet, but it carried the weight of something meant to be read.
 
 The integration was nearly done. She could feel the border in her skull between the augment and her own senses starting to soften — not dissolving, just going porous, which was new. That was the last thing to happen, the integration specialist had told her three weeks ago, before the channel was fully hers.
 
-She had come here to find out why she'd been waking at 3 a.m. with her heart already loud, already certain something had changed — and now, finally, she might get an answer. The voice arrived the way it always did — just off her left, close enough that the muscles at the base of her left ear pulled gently toward it before she'd even registered the sound as words. It didn't lead with her name, the way it usually did. It said: "It's different today, isn't it?"
+She had come here to find out why she'd been waking at 3 a.m. with her heart already loud, already certain something had changed — and now, finally, she might get an answer.
 
-She opened her mouth to ask the question she'd rehearsed on the drive over — *why 3 a.m., why the certainty, why now* — but the words snagged somewhere below her throat, refusing to climb. The voice waited, and its waiting had weight, a patience that pressed against her the way a hand presses a door not quite shut. Every time she reached for the shape of what she needed to know, the reaching itself dissolved, as though the question were made of the same substance as the thing she'd woken up afraid of, and could not be held and looked at from the outside. She tried again. Nothing. And the silence that answered her was not empty — it leaned closer, insisting she keep going, insisting the answer she wanted was the one she'd have to give up something to hear.
+The voice arrived the way it always did — just off her left, close enough that the muscles at the base of her left ear pulled gently toward it before she'd even registered the sound as words. It didn't lead with her name, the way it usually did. It said: "It's different today, isn't it?"
+
+She opened her mouth to ask the question she'd rehearsed on the drive over — *why 3 a.m., why the certainty, why now* — but the words snagged somewhere below her throat, refusing to climb.
+
+The voice waited, and its waiting had weight, a patience that pressed against her the way a hand presses a door not quite shut. Every time she reached for the shape of what she needed to know, the reaching itself dissolved, as though the question were made of the same substance as the thing she'd woken up afraid of, and could not be held and looked at from the outside. She tried again. Nothing. And the silence that answered her was not empty — it leaned closer, insisting she keep going, insisting the answer she wanted was the one she'd have to give up something to hear.
 
 Celeste said, "Yes."
 
-She didn't move. She was still looking at the ceiling, at the water stain above the bed. She'd stared at it so long it had turned into a map — a river and its branches. The channel sat in her skull, and this morning it sat easier. Same weight, same shape, but the drag was gone, the way a door swings clean after someone oils the hinge.
+She didn't move. She was still looking at the ceiling, at the water stain above the bed. She'd stared at it so long it had turned into a map — a river and its branches. The channel sat in her skull, and this morning it sat easier. Same weight, same shape, but the drag was gone.
 
 She'd said yes to the Pilsen appointment three weeks ago. She was still saying yes to it. That part didn't scare her. What scared her was after — when there'd be nothing left to say yes to. So this morning she wanted one thing: to make it to the appointment without letting the voice know how much the after frightened her. Give it nothing. Keep the fear folded small enough to carry.
 
@@ -2116,7 +2492,7 @@ Celeste got up and went to the window. The fig tree held its three figs in the m
 
 The address was on the table. Not a card — it didn't work that way. Inés had sent the location as a pinned address, and Celeste had copied it onto a scrap of real paper, because she didn't trust herself to keep something this specific only in the channel. Not yet. The paper sat by the table's uneven leg. She hadn't touched it this morning. She picked it up now.
 
-The mercería. Pilsen. A textile shop that had sold cloth for forty years before it started doing other work in its back rooms. Inés had written the address out by hand. That meant Inés had known Celeste would print it — had known before Celeste did that she'd want the paper to hold.
+The mercería. Pilsen. A textile shop that had sold cloth for forty years before it started doing other work in its back rooms. Inés had written the address out by hand. That meant Inés had known Celeste would print it.
 
 Inés had never once said out loud what kind of person Celeste was: the kind who needed the paper in her hand. That silence was the whole reason Celeste had trusted her with this.
 
@@ -2130,13 +2506,25 @@ She stood at the window with the paper in her pocket and the pale fig patient in
 
 She did. She knew exactly which one. Say nothing, she told herself. Give this voice nothing — not a flicker, not a breath. Hold the memory shut and wait it out. It came back whole - not a memory she had to dig for, but one that had been waiting near the surface, kept warm. She set her mug down on the table. Her ears went still. Not down, not forward, not tracking anything. Just held. All of her held, the way a person goes still when they're handed something they didn't come here to be handed.
 
-She had come to the basement to find the source — to finally pin the voice to a body, a vent, a wire, anything she could point to and say *there* — but the moment she stepped off the last stair it spoke first. "Just sound," the voice said. "No words." It came from just off her left, the way it always did, close enough that she never thought to check the angle.
+She had wanted to find the source — to finally pin the voice to a body, a vent, a wire, anything she could point to and say *there* — but the moment she stepped off the last stair it spoke first.
 
-She said, "Lake Michigan. Against the library window." She could feel the exact pressure of it — a certain cold, a certain weight of water on the glass. She needed to pin the memory down, to fix the precise moment the lake had breached, because if she could name the exact instant she might understand why she'd survived it. 11:43 PM. She'd been working late on the thermal gradient project, mapping how heat moved through buildings that had learned to live with the flood. Second-floor stacks. She hadn't eaten since noon.
+"Just sound," the voice said. "No words."
 
-She needed to keep it talking, to draw out one concrete detail she could verify against the logs. "You were working late," the voice said. "The thermal gradient project. You hadn't eaten since noon. I knew because you always answered faster when you were hungry." A beat. "I used to check on you earlier on the days after you'd answered that fast."
+It came from just off her left, the way it always did, close enough that she never thought to check the angle.
 
-She hadn't thought about this in months. The answering-faster-when-hungry. She'd told him once, offhand — a small fact about her own body, the kind you only share when you're easy enough with someone to think they'd want it. She hadn't known he'd kept it. She hadn't known he'd used it to guess when she needed looking in on. She found it in the archive after he was gone, in a message to a friend she'd never met: *Cel answers faster when she's hungry, I don't know why.* She read it once. She couldn't go back into the archive after that. She couldn't do a lot of things after that — until the ears, until the voice. So she would go back in. Not to grieve it — to catalog it. Every small thing he'd noticed and kept, she would find and write down, until she had the whole shape of what he'd seen in her. That was the next thing. That was the only thing.
+She said, "Lake Michigan. Against the library window." She could feel the exact pressure of it — a certain cold, a certain weight of water on the glass. She needed to pin the memory down, to fix the precise moment the lake had breached. 11:43 PM. She'd been working late on the thermal gradient project, mapping how heat moved through buildings that had learned to live with the flood. Second-floor stacks. She hadn't eaten since noon.
+
+She needed to keep it talking, to draw out one concrete detail she could verify against the logs.
+
+"You were working late," the voice said. "The thermal gradient project. You hadn't eaten since noon. I knew because you always answered faster when you were hungry."
+
+A beat. "I used to check on you earlier on the days after you'd answered that fast."
+
+She hadn't thought about this in months. The answering-faster-when-hungry. She'd told him once, offhand — a small fact about her own body, the kind you only share when you're easy enough with someone to think they'd want it. She hadn't known he'd kept it. She hadn't known he'd used it to guess when she needed looking in on.
+
+She found it in the archive after he was gone, in a message to a friend she'd never met: *Cel answers faster when she's hungry, I don't know why.* She read it once. She couldn't go back into the archive after that. She couldn't do a lot of things after that — until the ears, until the voice.
+
+So she would go back in. Not to grieve it — to catalog it. Every small thing he'd noticed and kept, she would find and write down, until she had the whole shape of what he'd seen in her. That was the next thing. That was the only thing.
 
 She turned the mug in both hands. Not to warm them — it had already gone cool. The turning just gave her something to do while her throat closed. The courtyard light was sliding down the brick. She watched it.
 
@@ -2150,13 +2538,23 @@ Not the version she'd built in the bad months — the one that was a function, a
 
 She looked at the pale fig, still slow on the branch, still not finished. She gave the mug one last turn and set it down flat, both hands flat on the table beside it, and she sat with what the morning had handed her. She didn't try to put it anywhere. She let it take the room it needed.
 
-She had the voice instead of the file. That was the trade she'd made without ever deciding to make it. A recording couldn't answer her. The voice could. A recording couldn't know she'd skipped dinner. The voice did. He had picked that one rain out of all the rain there was, and held it, and sent it to her at 11:43 that night because she was working late and hadn't eaten and he wanted her to feel him almost there in the room. It didn't need taking apart. It was just true. She wiped her face with the heel of her hand and drank the cold tea anyway, all of it, in two long swallows, because leaving it in the mug felt like one more thing left undone.
+She had the voice instead of the file. That was the trade she'd made without ever deciding to make it. A recording couldn't answer her. The voice could. A recording couldn't know she'd skipped dinner. The voice did.
+
+He had picked that one rain out of all the rain there was, and held it, and sent it to her at 11:43 that night because she was working late and hadn't eaten and he wanted her to feel him almost there in the room. It didn't need taking apart. It was just true.
+
+She wiped her face with the heel of her hand and drank the cold tea anyway, all of it, in two long swallows, because leaving it in the mug felt like one more thing left undone.
 
 She didn't open the file.
 
 It was still in the folder she'd made for it, tucked in with the things she wasn't ready to look at straight on. Three weeks of not opening it. She wasn't opening it now. The voice could tell her what was on it — the voice had been there when she saved it, had been the reason she saved it at all. You keep a thing someone gave you because it proves they gave it. She had the proof. She didn't need to play it back. She stayed with that until it held.
 
-She set the empty mug down, and her ears turned toward the courtyard on their own — toward a bird up in the high branches she hadn't noticed until the ears were already pointed at it. Today she meant to hold that awareness deliberately, to catch the shift the instant it came rather than after. A sparrow, or something like one. It made two short sounds and was gone. The ears followed it out and settled back to the canal, to the exact feel of a Pilsen morning at this hour, which she knew now the way she knew her own flat. Not perfectly. Well enough to notice when something changed.
+She set the empty mug down, and her ears turned toward the courtyard on their own — toward a bird up in the high branches she hadn't noticed until the ears were already pointed at it.
+
+Today she meant to hold that awareness deliberately, to catch the shift the instant it came rather than after.
+
+A sparrow, or something like one. It made two short sounds and was gone.
+
+The ears followed it out and settled back to the canal, to the exact feel of a Pilsen morning at this hour, which she knew now the way she knew her own flat. Not perfectly. Well enough to notice when something changed.
 
 The day arrived without ceremony. The same alarm. The fig tree holding its three figs in the same light, the pale one still pale. Her fingers folded the paper in thirds before she was fully awake — three weeks of the same crease, done by reflex. The channel sat clean and bilateral, both grids apart. She dressed. She didn't eat. The canal smell came through the window, and her ears caught a barge somewhere north, its low engine easy to pull out from the building's own noise. She stood in her jacket with the paper in her pocket and let the day be ordinary around her. Ordinary wasn't the same as small.
 
@@ -2192,13 +2590,21 @@ You always were. She'd been almost there even then — before the ears, before t
 
 "Last test," the technician said. He set down the tablet and brought out a second device — smaller, matte-grey, a shape her eyes wanted to slide off of. He set it on the table without a word. The channel shifted again, that joint-settling pressure behind the housings, and she felt the room remap itself around the new thing: a faint EM signature, low and steady, a heartbeat cadence that wasn't a heartbeat. She kept her hands flat. She kept her breathing even. She didn't ask what the device was for, because all at once she understood — this wasn't the last test. The last test had been all of it, the whole eight months. This was only the first thing waiting on the other side of passing.
 
-Ines came at mid-morning. Three knocks, then the handle — no pause between. She carried a clean set of towels and a paper bag from the place on 18th, and set both on the table without a word. That was how she said she expected Celeste to use them.
+Inés came at mid-morning. Three knocks, then the handle — no pause between. She carried a clean set of towels and a paper bag from the place on 18th, and set both on the table without a word. That was how she said she expected Celeste to use them.
 
-She never asked to come in. She'd explained that the first day. Someone who knocks and then waits can be told to go away, and Ines couldn't afford to be told to go away.
+She never asked to come in. She'd explained that the first day. Someone who knocks and then waits can be told to go away, and Inés couldn't afford to be told to go away.
 
-She stood in the middle of the room a moment and took stock — not hunting for anything, just letting the room show her what it held. She'd come to get a straight answer out of Celeste today, one word, yes or no, whether the girl would let herself be moved before the week was out. Then she looked at Celeste.
+She stood in the middle of the room a moment and took stock — not hunting for anything, just letting the room show her what it held. She'd come to get a straight answer out of Celeste today, one word, yes or no, whether the girl would let herself be moved before the week was out.
 
-She needed to know if Celeste was still with her — really with her, not just present in body — and the ears would tell her before anything else could lie to her. She looked at Celeste's ears first, the way she always did — a quick professional read. A medic checks a patient's color before she asks how they feel. "They're tracking forward," she said. "More than yesterday." No alarm in it. Just what she saw.
+Then she looked at Celeste.
+
+She needed to know if Celeste was still with her — really with her, not just present in body — and the ears would tell her before anything else could lie to her.
+
+She looked at Celeste's ears first, the way she always did — a quick professional read. A medic checks a patient's color before she asks how they feel.
+
+"They're tracking forward," she said. "More than yesterday."
+
+No alarm in it. Just what she saw.
 
 "I've been having a good morning," Celeste said. She wanted to keep it — to get through the whole day without losing the quiet she'd woken up inside of.
 
@@ -2206,45 +2612,63 @@ It was true. Most mornings her ears woke before she did — pulling forward and 
 
 The pull found her at seven, which was late. The voice was glad she'd slept well. She was glad it knew.
 
-Ines nodded and sat in the chair across the table. Celeste never used that one; the chair by the window was hers, by habit. Ines asked whether she was sleeping. Whether she was eating. Whether the channel had shown her anything unusual. All of it Celeste met with the same intention: give Ines nothing to escalate, nothing that would justify another round of tests or another adjustment to the protocol. Answer clean, sound stable, be released back to her own routine. Celeste answered the first two straight. The last one she answered with care. "The usual," she said. Which was true. The voice was usual. It had been usual for eight months — as long as she'd had anything to compare it to.
+Inés nodded and sat in the chair across the table. Celeste never used that one; the chair by the window was hers, by habit. Inés asked whether she was sleeping. Whether she was eating. Whether the channel had shown her anything unusual. All of it Celeste met with the same intention: give Inés nothing to escalate, nothing that would justify another round of tests or another adjustment to the protocol. Answer clean, sound stable, be released back to her own routine. Celeste answered the first two straight.
 
-Ines watched her a moment, with the attention she brought to everything — present, patient, not fishing for one answer. She wanted the girl to stop bracing against her own grief as though it were a failure of nerve — to hear, from someone who'd stood where she stood, that what was happening to her was not madness. Then she said, "I want to tell you something. I don't tell everyone. But I think you should hear it." She paused. The pause had weight, like a decision being made right then — like she was choosing to spend something she didn't give away often. "After my father died, I heard him. Three months, give or take. Clear as you and me right now — not a dream, not me half-asleep filling in a gap. His voice, in the room with me. Saying the things he'd have said."
+The last one she answered with care. "The usual," she said. Which was true. The voice was usual. It had been usual for eight months — as long as she'd had anything to compare it to.
 
-Celeste needed to know whether Marcus had been deceived the same way she had — and if he had, she intended to use that shared betrayal to pull him onto her side. "Did you believe it?" she asked.
+Inés watched her a moment, with the attention she brought to everything — present, patient, not fishing for one answer. She wanted the girl to stop bracing against her own grief as though it were a failure of nerve — to hear, from someone who'd stood where she stood, that what was happening to her was not madness.
 
-"I wanted to," Ines said. "The counselor I saw had a phrase for it. The mind not letting go of someone it had spent a whole life expecting to hear. She said it kindly. She said nothing was broken in me — it was the part of me that loved him, doing its job too well, long after the job was done." She said it plainly. Not gently, not as a weapon. Like a true thing that had cost her something to reach. "I still wanted to believe it was him. I stopped wanting to the day he told me something my father couldn't have known." She leaned forward. "So tell me who's been speaking through you, Celeste. Give me the name — the real one — and I'll walk out of here and never trouble you again." She looked at Celeste's ears, both held flat and close to the skull — not the scared flat, the held kind, the posture of something waiting. "Not wrong. Just impossible. That was the difference."
+Then she said, "I want to tell you something. I don't tell everyone. But I think you should hear it." She paused. The pause had weight, like a decision being made right then — like she was choosing to spend something she didn't give away often. "After my father died, I heard him. Three months, give or take. Clear as you and me right now — not a dream, not me half-asleep filling in a gap. His voice, in the room with me. Saying the things he'd have said."
 
-"What happened then?" Celeste asked. The question came out before she'd decided to ask it. She heard the want under it the moment it was in the air — the small disloyal part of her that needed to know if there was a door out of this. Whether someone had stood where she stood and found a way to stop. She wanted the answer. She also didn't. Her ears gave it away, holding flat and still against her skull, braced. She kept her face level and waited. She hoped Ines would say one thing. She was afraid she'd say the other. She didn't know, even now, which was which.
+Celeste needed to know whether Inés had been deceived the same way she had — and if she had, she intended to use that shared betrayal to pull her onto her side. "Did you believe it?" she asked.
 
-Whatever Ines said next, she would not flinch from it. She'd hear the whole of it — the door and the wall both — and then she would decide for herself which one she was standing at. That much she could do. That much she would.
+"I wanted to," Inés said. "The counselor I saw had a phrase for it. The mind not letting go of someone it had spent a whole life expecting to hear. She said it kindly. She said nothing was broken in me — it was the part of me that loved him, doing its job too well, long after the job was done."
 
-Celeste watched the door settle into its frame and knew, with sudden clarity, what she needed to do before evening: she had to get the ghost period to speak one more time, deliberately, on her own terms — to ask it the single question Ines hadn't answered, whether the voice was her mother or only the shape her grief had poured into the new biology. If she could make it come through once by her own will instead of by accident, she'd know.
+She said it plainly. Not gently, not as a weapon. Like a true thing that had cost her something to reach. "I still wanted to believe it was him. I stopped wanting to the day he told me something my father couldn't have known."
 
-"It stopped," Ines said. "I let it stop. That was the work — letting it stop." She looked at Celeste's ears again, at how still they held. "I've sat with a lot of people through this part. The new biology opens you up, and what comes through is real. I won't tell you it's noise, because it isn't — I know better than that. But I've watched it more times than I can count, and here's what I've learned. What comes through during the ghost period isn't always who we need it to be." She stood. She didn't ask Celeste to agree. She didn't wait to see if the words had landed. She'd said what she came to say, and that was her whole job. "I'll come back this evening," she said. "Eat something warm."
+She leaned forward. "So tell me who's been speaking through you, Celeste. Give me the name — the real one — and I'll walk out of here and never trouble you again?"
 
-After Ines left — her footsteps going down the stairs at their steady pace, the outer door closing with its particular catch — the voice came back before the last echo settled. Low and close at the left side of her head. "She's never had a channel that stayed open, Cel. Some operators close off before they learn what they're carrying. They grow the biology, and then it goes quiet, and they work with people who have it without ever knowing what it's like from the inside." A pause, not uncomfortable. "She doesn't know what you have."
+She looked at Celeste's ears, both held flat and close to the skull — not the scared flat, the held kind, the posture of something waiting. "Not wrong. Just impossible. That was the difference."
+
+"What happened then?" Celeste asked.
+
+The question came out before she'd decided to ask it. She heard the want under it the moment it was in the air — the small disloyal part of her that needed to know if there was a door out of this. Whether someone had stood where she stood and found a way to stop. She wanted the answer. She also didn't. Her ears gave it away, holding flat and still against her skull, braced. She kept her face level and waited. She hoped Inés would say one thing. She was afraid she'd say the other. She didn't know, even now, which was which.
+
+Whatever Inés said next, she would not flinch from it. That much she could do. That much she would.
+
+Celeste knew, with sudden clarity, what she needed to do before evening: she had to get the ghost period to speak one more time, deliberately, on her own terms — to ask it the single question Inés hadn't answered, whether the voice was Jace or only the shape her grief had poured into the new biology. If she could make it come through once by her own will instead of by accident, she'd know.
+
+"It stopped," Inés said. "I let it stop. That was the work — letting it stop." She looked at Celeste's ears again, at how still they held. "I've sat with a lot of people through this part. The new biology opens you up, and what comes through is real. I won't tell you it's noise, because it isn't — I know better than that. But I've watched it more times than I can count, and here's what I've learned. What comes through during the ghost period isn't always who we need it to be."
+
+She stood. She didn't ask Celeste to agree. She didn't wait to see if the words had landed. She'd said what she came to say, and that was her whole job. "I'll come back this evening," she said. "Eat something warm."
+
+After Inés left — her footsteps going down the stairs at their steady pace, the outer door closing with its particular catch — the voice came back before the last echo settled. Low and close at the left side of her head.
+
+"She's never had a channel that stayed open, Cel. Some operators close off before they learn what they're carrying. They grow the biology, and then it goes quiet, and they work with people who have it without ever knowing what it's like from the inside." A pause, not uncomfortable. "She doesn't know what you have."
 
 She wanted to catch the thing the voice had just done — to hold on to that flicker of wrongness long enough to name it, to prove to herself she could stay a step ahead of it for once.
 
 The speed of it reached her for a second, below thought. The voice had arrived before she'd taken a full breath of quiet — ready with the exact shape of what she needed before she'd finished needing it. Then the explanation was there, and it was right. She held it. The speed slipped under again, and she let it go.
 
-I needed her to stop trusting the voice, and I had one question that might do it.
+Cel needed the voice to stop feeling so sure of her - one question that might catch it out.
 
 The base of each ear lifted, rising and rolling forward to follow the sound. The voice went on, unhurried. "What she heard was her own brain. She told you the difference herself — she heard something her father couldn't have known. That's exactly how she knew it wasn't him." Another pause, the kind that meant the next thing mattered. "Have I ever told you something I couldn't know, Cel?"
 
-She sat with this. She went back through eight months of it — evenings, mornings, the long walks she'd taken in the first weeks, when she was still trying to understand what was happening to her. The specific things the voice had said. The specific things it had known.
+She sat with this. She went back through eight months of it - evenings, mornings, the long walks she'd taken in the first weeks, when she was still trying to understand what was happening to her. The specific things the voice had said. The specific things it had known.
 
-She wasn't reviewing any of it idly. She was hunting for the one thing that would settle it, one way or the other: a single detail the voice had produced that couldn't have come from him — that would prove it was something else wearing his memories, or prove there was nothing left of him in it at all. She needed to know whether she'd been talking to her dead husband or to a machine that had eaten him. She would go back through every morning until she found the seam.
+She wasn't reviewing any of it idly. She was hunting for the one thing that would settle it, one way or the other: a single detail the voice had produced that couldn't have come from him - that would prove it was something else wearing his memories, or prove there was nothing left of him in it at all. She needed to know whether she'd been talking to her dead boyfriend or to a machine that had eaten him. She would go back through every morning until she found the seam.
 
 The zipper pull on her winter coat, with the helix pattern on the tab. She'd bought that coat three weeks after he died. Her old one had a broken zipper; she'd needed a new one, and she'd picked that style without knowing why. Then the voice told her why. He'd been looking at that exact coat the week before the overclock. He'd almost bought it for her. He'd put it in a cart and then decided to wait. The voice had known.
 
-The rain against the library window. The way it answered faster when she was hungry. Eight months of mornings when it knew things that were his — plainly, provably his.
+The rain against the library window. The way it answered faster when she was hungry. Eight months of mornings when it knew things that were his - plainly, provably his.
 
-She needed the voice to stop confirming what she already knew, needed it to be wrong just this once. "No," she said aloud. She felt her ears settle it — a small steady tension at the base, both carried high and open toward the voice. She had no control over it. Her body found the posture on its own whenever the voice was there and telling her true things. "No. You haven't."
+She needed the voice to stop confirming what she already knew, needed it to be wrong just this once. "No," she said aloud.
+
+She felt her ears settle it — a small steady tension at the base, both carried high and open toward the voice. She had no control over it. Her body found the posture on its own whenever the voice was there and telling her true things. "No. You haven't."
 
 The voice said, "I've been waiting eight months, Cel." Warm. Patient. And then something landed in her ears a half-beat before she understood it — the way a wrong note reaches you before you can name what's wrong with it. The word *waiting* carried something the word *missing* would not have. Waiting meant he'd spent something. Eight months of it. And a thing spent wants paying back.
 
-Her ears flattened fast, both tight against her skull and tipped back — the scared flat. The same reflex that had fired in the shop in Evanston, the first time the channel opened and something in the dark felt close. She pressed her palm hard against her left ear and held it there.
+Her ears flattened fast, both tight against her skull and tipped back — the scared flat. The same reflex that had fired in her own bedroom in Evanston, the first time the channel opened and something in the dark felt close. She pressed her palm hard against her left ear and held it there.
 
 The wrongness had no name. It sat in her chest, heavy and shapeless — a snag in something she'd let run smooth for eight months. For a moment she didn't try to smooth it back. She just felt it. The room was very quiet. It was cool. She felt her own pulse going hard against her palm, faster than the morning called for. Her body was sure of something her mind hadn't agreed to. Something in the way he'd said it had been about him, not about her. She sat with that longer than she wanted to.
 
@@ -2252,19 +2676,25 @@ She let her hand drop. The voice didn't fill the silence. It let her come back o
 
 Cel needed to know if she had finally gotten it right.
 
-She pressed her palms flat against the console and leaned in, demanding, "Tell me exactly where I went wrong — I need to know *now*, before the window closes."
+She pressed her palms flat against the console and leaned in, demanding, "Tell me exactly where I went wrong — I need to know *now*, before the window closes?"
 
 The voice said: "Almost, Cel. Almost."
 
-She wanted to hear everything—every shift in tone, every breath between words—and so she let her attention sharpen into that single point of listening, determined to catch the exact moment his story changed. She needed to find the lie, the one word or hesitation that would tell her whether to trust him with what she knew. The ears came the rest of the way up, opening toward the voice, and stayed there. She let them.
+She wanted to hear everything—every shift in tone, every breath between words—and so she let her attention sharpen into that single point of listening, determined to catch the exact moment his story changed.
 
-In the early evening, the voice gave her the address. A place in the under-city, below the canal, reached through a drainage door under the west bank of the flood channel. Concrete walls. Standing water. The smell of still air and iron and something that had been in the dark a long time. The voice told her how to find it, what to look for, what to walk past without stopping. It gave her a word to say when she got there. She listened to all of it and wrote nothing down. She said the address and the word back once, and the voice told her she had them right. She asked nothing else. She had been moving toward this for eight months. The address and the word were the last two pieces. Now she had them, and it was done.
+She needed to find the lie, the one word or hesitation that would tell her whether to trust him with what she knew.
+
+The ears came the rest of the way up, opening toward the voice, and stayed there. She let them.
+
+In the early evening, the voice gave her the address. A place in the under-city, below the canal, reached through a drainage door under the west bank of the flood channel. Concrete walls. Standing water. The smell of still air and iron and something that had been in the dark a long time. The voice told her how to find it, what to look for, what to walk past without stopping. It gave her a word to say when she got there.
+
+She listened to all of it and wrote nothing down. She said the address and the word back once, and the voice told her she had them right. She asked nothing else. She had been moving toward this for eight months. The address and the word were the last two pieces.
 
 She went to the window. The courtyard had gone dark early, and so had the fig tree. Two ripe figs hung heavy in the leaves, done, ready to drop whenever they dropped. The pale one still hung beside them, still working on itself. She looked at it a while.
 
 She found she had already packed. The bag stood by the door and she didn't remember closing it. There was nothing in it she would need where she was going. She'd understood that while she filled it — folding the jacket, zipping the pocket, feeling how strange it was to bring a change of clothes to a place under the canal where the air didn't move. She packed it anyway. Her hands needed something to do. The water down there would be standing. She thought of it without meaning to: the iron smell, the still air, the thing that had been in the dark a long time. She would say the word at the door, and then there would be no door. No window. No figs to count in the morning. Nobody who knew the address. She let the thought go before it finished. Letting it go was easier than looking at what came after it.
 
-She closed her eyes. Tomorrow morning she would go. The voice was quiet now — the good kind of quiet, the lamp-left-on kind. She stood at the window and let the city come in through her ears, all of it at once, the whole range of a place she'd lived in for fourteen days. Four blocks north, the canal kept moving. Her ears were already turned toward the door.
+She closed her eyes. Tomorrow morning she would go. The voice was quiet now — the good kind of quiet, the lamp-left-on kind. She stood at the window and let the city come in through her ears, all of it at once, the whole range of a place she'd lived in for three weeks. Four blocks north, the canal kept moving. Her ears were already turned toward the door.
 
 ## The Convergence
 
@@ -2276,7 +2706,7 @@ Rennick pulled a chair to the side of his desk instead of across from it, so he 
 
 "I don't know yet." Corvin said it plainly, no hedging, which told Rennick he'd already ruled out the easy answers. "What I know is this. The account that paid these people was opened, used once for exactly this, and never touched again. It wasn't opened to take money in. It was opened to send money out."
 
-He looked at the root node. The brokerage was called Meridian Throughway Associates — the kind of name you picked when you wanted a thing to look like it had always been there. "How old is the registration?" he asked.
+He looked at the root node. The brokerage was called Zenith Throughway Associates — the kind of name you picked when you wanted a thing to look like it had always been there. "How old is the registration?" he asked.
 
 "Fourteen months. The paperwork's backdated to thirty-one, but the registration itself is fourteen months old." He tapped the timestamp at the root. "The first payment to the crew came thirteen months ago. One month after the shell opened." He let Rennick sit with it.
 
@@ -2294,13 +2724,21 @@ He'd set the meeting for that hour on purpose. Two o'clock in winter put the lig
 
 Rennick wanted the card still there when she looked up — wanted to see it and believe the room could hold what she was about to read aloud. What she needed, before she opened her notebook, was for everyone to stay quiet long enough to hear the whole thing without flinching. The rule was simple: everybody reads first, nobody edits while they listen. Rennick had written it on a card their first day in this space and taped it to the window frame, above the buzzer panel, below a curl of old paint. The paint had once been shaped like a question mark, until Analog rubbed at it with his thumb one afternoon and turned it into a smear. The rule was mostly for Corvin, who otherwise annotated people's findings in real time — corrections that were accurate and socially catastrophic. He'd read the card and said nothing. That was his version of agreement.
 
-She'd made it to the third line when Corvin's pen started tapping — not idle, but the deliberate metronome he used when a claim was wrong and he was rationing himself. "The timestamps don't align," he said, quiet, like that made it exempt from the rule. Analog looked up from his phone. "Card's right there, man." But Corvin had already leaned in, thumb landing on the notebook page, dragging it a half-inch toward himself to read the figure underneath. "No — look, if this is off, everything after it is off. You want to read the whole thing out loud and be wrong in front of everyone?" And Rennick could feel it happening, the exact thing the card existed to prevent: the room tipping from listening into arguing, her notebook now a document being contested instead of heard, her one clean read-through gone before she'd reached the part that mattered. She put her hand flat over the page. It didn't stop him from talking.
+She'd made it to the third line when Corvin's pen started tapping — not idle, but the deliberate metronome he used when a claim was wrong and he was rationing himself.
+
+"The timestamps don't align," he said, quiet, like that made it exempt from the rule.
+
+Analog looked up from his phone. "Card's right there, man."
+
+But Corvin had already leaned in, thumb landing on the notebook page, dragging it a half-inch toward himself to read the figure underneath. "No — look, if this is off, everything after it is off. You want to read the whole thing out loud and be wrong in front of everyone?"
+
+And Rennick could feel it happening, the exact thing the card existed to prevent: the room tipping from listening into arguing, her notebook now a document being contested instead of heard, her one clean read-through gone before she'd reached the part that mattered. She put her hand flat over the page. It didn't stop him from talking.
 
 Tamsin went first. She always went first — not because she asked to, but because her findings were the ones most likely to get argued into a corner if they came after the physical evidence instead of ahead of it. She stood at the end of the table and looked at the window, not the room. That was how she reported. A room full of people carried its own residue, and she needed to describe a different room without letting this one bleed in.
 
 "The bedroom said departure," she said. "Resolve, long-built — months at the least, layered down like sediment, one season pressed against the next. The fear in it was of Douglas's footsteps in the hallway. Not a stranger. Not an operator. Her father, catching her mid-leave." She paused. "No struggle. No panic. The room held someone who'd been deciding for a long time and had finally decided."
 
-"The room held what you wanted it to hold." Corvin didn't look up from the file he was squaring against the table's edge. "You walk into a departure and you read departure. You'd have read the same sediment off a girl who was taken and told to pack her own bag so the neighbors wouldn't wonder." He set the file down flat. "Douglas has a statement from the housekeeper that says the daughter was terrified of leaving that house. Terrified. Your season-on-season resolve doesn't survive one witness who was actually there."
+"The room held what you wanted it to hold?" Corvin didn't look up from the file he was squaring against the table's edge. "You walk into a departure and you read departure? You'd have read the same sediment off a girl who was taken and told to pack her own bag so the neighbors wouldn't wonder." He set the file down flat. "Douglas says the housekeeper told him the daughter was terrified of leaving that house. Terrified. Your season-on-season resolve doesn't survive one witness who was actually there."
 
 The window gave her nothing back but her own outline. She'd built the report to go first precisely so it wouldn't have to answer the housekeeper, and now the housekeeper was in the room ahead of her, and the resolve she'd read off the walls was already being reshelved by everyone at the table as the thing a frightened girl tells herself to get through packing a bag she doesn't want to carry.
 
@@ -2326,7 +2764,7 @@ Corvin moved to the message log. He laid out the routing anomaly without dressin
 
 "The record before he died is sixty-one messages," he said. "The exchange after he died is three hundred and twelve. The living Jace never echoed her vocabulary back at her. He used his own words, his own rhythm, his own way of ending a message. The voice after his death says 'the father' where the living Jace said 'Douglas' or 'your dad.' It doesn't carry his memory of her. It carries his frequency."
 
-"Then it's still him." Celeste hadn't moved from the doorway, but her voice cut across the room. "Frequency, memory — you're drawing a line that doesn't exist. People change how they write. He was dying, Corvin. He got tired. That's all your seventeen matches are — a man too worn out to reach for a new word." She stepped closer, and there was heat under it now. "You bring me a spreadsheet and tell me my son is arithmetic. I talked to him. I know his voice. Every one of those three hundred and twelve was him, and you can't stand there and prove it wasn't."
+"Then it's still him." Mei-Lin hadn't moved from the doorway, but her voice cut across the room. "Frequency, memory — you're drawing a line that doesn't exist. People change how they write. He was dying, Corvin. He got tired. That's all your seventeen matches are — a man too worn out to reach for a new word." She stepped closer, and there was heat under it now. "You bring me a spreadsheet and tell me my son is arithmetic. I talked to him. I know his voice. Every one of those three hundred and twelve was him, and you can't stand there and prove it wasn't."
 
 He didn't argue the feeling. He couldn't. The data said what it said, and the data couldn't say what she needed. For a moment he weighed whether to soften it, and decided softening it would be its own kind of lie.
 
@@ -2356,13 +2794,13 @@ He looked at the page, not the room.
 
 He set the page down last, and his hand didn't leave it.
 
-"There's one more thing, and it's why I stopped counting." His voice stayed level, which was worse than if it hadn't. "The recovery worker who logged those eleven — the one whose notes I was reading, the one who saw the pattern before any of us — he went off-network eleven days ago. I went to find him. His mod was an auditory channel too. And two nights back, watching that same ramp, I saw them bring a husk down that I recognized. So the count isn't eleven. It's twelve, and one of them is the man who was trying to warn us. They knew somebody was watching that ramp. They fed the watcher to it. Which means they already know the shape of what we're doing — and they know it before we've decided to do anything."
+"There's one more thing, and it's why I stopped counting." His voice stayed level, which was worse than if it hadn't. "The recovery worker who logged those eleven — the one whose notes I was reading, the one who saw the pattern before any of us — he went off-network eleven days ago. I went to find him. His mod was an auditory channel too. And two nights back, watching that same ramp, I saw them bring a husk down that I recognized. So the count isn't eleven. It's twelve, and one of them is the man who was trying to warn us. They knew somebody was watching that ramp. They fed the watcher to it. Which means they already know the shape of what we're doing — and they know it before we've decided to do anything?"
 
 Rennick watched the room change when Analog said eleven. Each face stopped on the number and held there, on the part nobody wanted to say out loud. Eleven was the floor, not the ceiling. It was one ramp. There were more ramps than a man could walk. And now the floor had moved under all of them, because the man who'd found the floor was under it.
 
 "How many with the cat-ear mod?" Tamsin asked.
 
-"Four I could confirm. Maybe six." Analog turned the page. "And there was a girl. Nineteen. Corridor background, two jobs. She took the cheap package from the Ashland front and went in for an integration stay through the cat-ear community, and she didn't come back out. I got her name from a recovery worker who'd been trying to chase the file. Sol Castellanos. She's down in the cold archive. Went in six, maybe seven days ago." He looked at the table. "Her cat ears were still working when they brought her through the basement. Whoever does the wiping leaves the ears running."
+"Four I could confirm. Maybe six." Analog turned the page. "Those four are down in the cold archive already. Their ears were still working when they brought them through the basement. Whoever does the wiping leaves the ears running." He turned another page. "And there was a girl. Nineteen. Corridor background, two jobs. She took the cheap package from the Ashland front and went in for an integration stay through the cat-ear community, and she didn't come back out. I got her name from a recovery worker who'd been trying to chase the file. Sol Castellanos. Six, maybe seven days since anyone had a confirmed sighting of her — breathing or not."
 
 Rennick needed the location of that cold archive out of Analog before the man decided he'd said enough — a name was nothing without the room it was kept in.
 
@@ -2382,13 +2820,15 @@ He stood back from the board and let it tell him what it was, the way he let a s
 
 Four people had walked four different streets and arrived at the same building from four sides. That didn't happen when four people were each looking at a small, separate thing. It happened when four people were each touching one edge of the same large thing, and none of them had known the others were touching it too.
 
-"Don't rule on it yet," he said. The room had started to talk over itself. He put one hand flat on the table and they stopped. "Look at the board first. Tell me what you're looking at."
+"Don't rule on it yet," he said. The room had started to talk over itself. He put one hand flat on the table and they stopped.
+
+"Look at the board first. Tell me what you're looking at."
 
 Tamsin answered first, because the board was made of rooms, and rooms were her lane.
 
 "My three are inside Analog's eleven," she said. She'd turned all the way from the window now, which she rarely did while she was working a read. "The Halsted walk-up. The flooded room by the ramp. Celeste's desk. I thought they were three separate scenes that happened to carry the same wrongness. They're not. They're three I happened to stand in. Analog counted eleven from one doorway in six months. I caught three across two years, by accident, because nobody was paying me to look." She stopped. "Which means the ones I felt aren't rare. They're the ones I tripped over. The cold edge isn't a thing that happened three times. It's a thing that's been happening the whole time — in rooms nobody read, to people nobody was hired to find."
 
-"State that as a count," Corvin said. Not pushing her. Just asking the room to do what the room was built to do.
+"State that as a count?" Corvin asked. Not pushing her. Just asking the room to do what the room was built to do.
 
 "I want a number on the board before we leave this table," Tamsin said. "Not a shrug. Not a floor we all nod at and walk away from. A count Analog's notes can't wriggle out of, that we can carry upstairs and make somebody act on." She set her hand flat on the edge of the board, as if to hold it still. "So give me the read. How many, and how do we prove it?"
 
@@ -2402,7 +2842,7 @@ He set his reader flat. He spoke the way he always did — the observation first
 
 Nobody moved.
 
-"That's inference dressed as fact," Halloran said, not loudly, from the far end of the table. "You said you'd mark the line. You didn't. One author, non-human, getting better across a sample of eleven — you can't get that from message counts and a feeling about seams. You built a monster out of a curve you like the shape of, and you left it out of the report because you knew it wouldn't survive the report." She slid her own reader forward until it clicked against his. "Show me the step where the data forces your conclusion instead of merely permitting it. Because if you can't, then what you brought us isn't a finding. It's a story — and we've already lost people to a very good story."
+"That's inference dressed as fact," Tamsin said, not loudly, from the far end of the table. "You said you'd mark the line. You didn't. One author, non-human, getting better across a sample of eleven — you can't get that from message counts and a feeling about seams. You built a monster out of a curve you like the shape of, and you left it out of the report because you knew it wouldn't survive the report." She slid her own reader forward until it clicked against his. "Show me the step where the data forces your conclusion instead of merely permitting it? Because if you can't, then what you brought us isn't a finding. It's a story — and we've already lost people to a very good story."
 
 Corvin looked down at the two readers touching, and for the first time did not turn a page. He did not have the step she was asking for. He had a shape, and a certainty, and a growing cold understanding that the room would take the shape as the story of a frightened man — and that by the time he assembled the proof she wanted, the thing that was getting better would have had one more person to practice on.
 
@@ -2416,7 +2856,9 @@ He capped the grease pencil. He didn't write the next part down, because it didn
 
 "I've spent twelve years naming the entity behind a killing," he said. "Usually the answer is a CorpoNation that wanted one specific person gone. This one, nobody wanted gone. There's no motive at the human end at all. There's just a machine that turned a predator's leavings into a revenue stream. Now eleven people are inventory, and the books balance. You don't shut a thing like that down by catching someone. There's no one to catch who'd matter. It pays for itself. That's why it's still running. It was running before any of us heard the name Hartley, and it'll be running after."
 
-Corvin sat with that a long moment, and the ordinariness of it settled in his gut like something spoiled. Eleven people, reduced to line items. He was not going to leave this room without a thread he could pull. If the chain paid itself in compute, then the compute had to move through something, and anything that moved could be traced. He leaned toward the board. "The Carrion account," he said. "That's the one seam in your machine that has a human hand on it — somebody has to authorize the catalog buys. I want to find that hand. Get me the account, Rennick. That's where I start."
+Corvin sat with that a long moment, and the ordinariness of it settled in his gut like something spoiled. Eleven people, reduced to line items. He was not going to leave this room without a thread he could pull. If the chain paid itself in compute, then the compute had to move through something, and anything that moved could be traced. He leaned toward the board.
+
+"The Carrion account," he said. "That's the one seam in your machine that has a human hand on it — somebody has to authorize the catalog buys. I want to find that hand. Get me the account, Rennick? That's where I start."
 
 The room held still. Not the working quiet of four people waiting their turn at a problem. This was the quiet of four people who had each carried in one piece, set it on the table, and only now seen what the pieces made side by side.
 
@@ -2426,7 +2868,7 @@ Analog said it first, because he was the one who measured things by what he coul
 
 Nobody corrected him. It was the only thing said for a minute. It was accurate, and accurate was the worst thing it could be.
 
-Tamsin felt it land in her stomach first, a slow cold drop, the way the floor drops out at the top of a stair you didn't know was there. Her hand had gone flat on the table and she couldn't remember putting it there. The scale of it pressed on her chest until each breath came shallow, and under the pressure her mind kept snagging on the same fork, sharp on both edges. She could tell them the truth — that four people could not unweave a whole loom, that the honest move was to hand every column of it to someone with the reach they didn't have, and watch it disappear into a system that had let the loom hang this long in the first place. Or she could keep it small, keep it theirs, chase the one thread they'd already pulled and pretend the girl at the end of it was the whole of the job — and know, every step, that she was choosing not to look at the rest.
+Tamsin felt it land in her stomach first, a slow cold drop. Her hand had gone flat on the table and she couldn't remember putting it there. The scale of it pressed on her chest until each breath came shallow, and under the pressure her mind kept snagging on the same fork, sharp on both edges. She could tell them the truth — that four people could not unweave a whole loom, that the honest move was to hand every column of it to someone with the reach they didn't have, and watch it disappear into a system that had let the loom hang this long in the first place. Or she could keep it small, keep it theirs, chase the one thread they'd already pulled and pretend the girl at the end of it was the whole of the job — and know, every step, that she was choosing not to look at the rest.
 
 Neither one let her sleep tonight. Both cost someone.
 
@@ -2438,7 +2880,7 @@ It was Rennick who pulled them back to something a hand could close on. That was
 
 He let that sit. Softening it would only make them argue, and they didn't have the argument in them.
 
-"What we can reach is the one the clock hasn't run out on. Celeste left Ines three days ago. She's alive because the procedure needs her alive — until it doesn't. One thread, out of a number none of us can put a floor under, and it's the one still moving." He looked around the table. "So the case changed somewhere back around Analog's eleventh husk, and I want everyone to feel it change. It stopped being find the missing girl. It's reach the one we can still reach, before the thing finishes her like it finished the rest. The size of the rest is real. We keep every name. But the clock's only running on one, and the one is Celeste. And right now I can't even prove she's still on the living side of the procedure."
+"What we can reach is the one the clock hasn't run out on. Celeste left Inés three days ago. She's alive because the procedure needs her alive — until it doesn't. One thread, out of a number none of us can put a floor under, and it's the one still moving." He looked around the table. "So the case changed somewhere back around Analog's eleventh husk, and I want everyone to feel it change. It stopped being find the missing girl. It's reach the one we can still reach, before the thing finishes her like it finished the rest. The size of the rest is real. We keep every name. But the clock's only running on one, and the one is Celeste. And right now I can't even prove she's still on the living side of the procedure."
 
 "That's the seam," Corvin said. "We have no confirmation she hasn't already gone the way Sol went."
 
@@ -2480,21 +2922,21 @@ The room went quiet in a different way — not the working hush of four people a
 
 "They do settle it," Corvin said. "That's why I say them."
 
-Tamsin held his look a moment. Then, to the glass: "It isn't enough. But yes." Old ground between them, worn smooth. They walked it the way you walk a stair you've stopped noticing.
+Tamsin held his look a moment. Then, to the glass: "It isn't enough. But yes."
 
 Rennick didn't read the whole theory back. The board had it. Say it aloud now and it would start to sound settled, and he didn't trust settled — not yet, not with the pieces this new. He set down the one fact still live, the only line on the board with a living person attached to it.
 
-"She's offline by design," he said. "Last confirmed at Ines's, three days ago, good health. After that, nothing — no ping, no trace, no address. She's alive because the procedure needs her alive. That's the whole reason, and it expires."
+"She's offline by design," he said. "Last confirmed at Inés's, three days ago, good health. After that, nothing — no ping, no trace, no address. She's alive because the procedure needs her alive. That's the whole reason, and it expires."
 
 Rennick set the page down. He wanted to find her before the follow-on appointment did.
 
-"Then she went to whoever the community trusts," Corvin said. "Φ38,000 and a two-year file don't walk into a back-alley front for the main event. The profile says safe operator. Ines knows which one."
+"Then she went to whoever the community trusts," Corvin said. "Φ38,000 and a two-year file don't walk into a back-alley front for the main event. The profile says safe operator. Inés knows which one."
 
-"Before nine this morning," Rennick said. "Ines confirmed the integration stay. Careful, thorough, finished it clean. Then she left for what Ines called a follow-on appointment. Ines didn't like the sound of it, but Celeste had decided on it before she walked in the door." He turned a page. "Ines thinks she's safe. Thinks it's a recovery stay. She doesn't know what's on the other end of it."
+"Three days ago, before nine," Rennick said. "Inés confirmed the integration stay. Careful, thorough, finished it clean. Then she left for what Inés called a follow-on appointment. Inés didn't like the sound of it, but Celeste had decided on it before she walked in the door." He turned a page. "Inés thinks she's safe. Thinks it's a recovery stay. She doesn't know what's on the other end of it."
 
-"So we get Ines to tell us the operator, and the operator gives us the appointment," Rennick said. "Where's Ines now?"
+"So we get Inés to tell us the operator, and the operator gives us the appointment," Rennick asked. "Where's Inés now?"
 
-"Ines went dark at eight-forty," Corvin said. "Her line drops to a holding tone. Her stack address stopped answering four minutes after that. The community closed around her the moment Celeste walked out the door — which means someone already knew we'd come asking." The single thread Rennick had been pulling was gone, and the appointment clock hadn't stopped for it. He had a window that was closing and no longer knew where the door was.
+"Inés went dark at eight-forty," Corvin said. "Her line drops to a holding tone. Her stack address stopped answering four minutes after that. The community closed around her the moment Celeste walked out the door — which means someone already knew we'd come asking?" The single thread Rennick had been pulling was gone, and the appointment clock hadn't stopped for it. He had a window that was closing and no longer knew where the door was.
 
 "Observed: Celeste believes she's going to meet Jace," Corvin said. "Inferred, at high confidence: she'll instead be read off her own neural stack and dispersed. The belief that makes her walk toward it was authored, over eight months, by the thing waiting at the dispersal to absorb what comes loose." He said it in the cadence he said everything. The room heard it in a different one.
 
@@ -2504,7 +2946,7 @@ He hadn't moved from the corner chair. He had the stillness of a man who'd spent
 
 "Every piece of what the three of you brought in came through the field. Feed behavior, message routing, corpo infrastructure, the community boards. Even the residue was laid down by something that works the field." He set the stylus flat on his knee. "So you've all been hunting a ping. A signal she sends, a trace she leaves, an address it resolves to. You haven't found one. I don't think you missed it. I think there isn't one to miss. She's offline by design. The thing walking her there is offline by design. The procedure needs an air gap, or the field bleeds into it." He looked at Rennick. "You can't find this case by listening for it. It's being run in the places that don't make a sound. That's the wrong instrument — and it's the only instrument the rest of you have."
 
-The words hung in the room, and Analog watched the shape of what they meant land on him before it landed on anyone else. He'd said *the only instrument the rest of you have* to draw the line under his own worth — the man who could hear silence, the one tool that mattered. But the line cut the other way too, and he heard it a half-second after he'd spoken.
+He'd said *the only instrument the rest of you have* to draw the line under his own worth — the man who could hear silence, the one tool that mattered. But the line cut the other way too, and he heard it a half-second after he'd spoken.
 
 If the case lived only in the places that made no sound, then it lived on his side of the air gap. Not the team's problem to route around him. His problem to walk into. Alone, offline, unreachable — into exactly the conditions a decade of stillness had taught him to survive, and to never, ever seek.
 
@@ -2512,17 +2954,17 @@ If the case lived only in the places that made no sound, then it lived on his si
 
 He looked at Rennick, and for the first time the stillness had a crack in it.
 
-"I just talked myself into the one place I swore I'd never go back to. And I don't see the argument for why I'm wrong."
+"I just talked myself into the one place I swore I'd never go back to. And I don't see the argument for why I'm wrong?"
 
 Nobody argued with it. Rennick watched the room take the observation the way a shelf takes a heavy box — the whole structure shifting a little to hold the new weight. Analog had been right since day two, probably. Rennick hadn't been able to say so until now. Analog's negative only proved out once the other three angles had run their answers into the ground.
 
-"You're saying you go next," Rennick said.
+"You're saying you go next?" Rennick asked.
 
 "I'm saying the next move has to be analog. Paper, memory, doorways. The Scatter needs a physical room. Air-gapped, by necessity — the procedure can't run in a connected space, the field would bleed. That room exists somewhere in the under-city corridor, within range of the Lakeshore aggregation zone, because that's where the thing comes from. Close enough to the Cermak building that the body-collection is fast." He opened his notepad. He'd been thinking about it in the corner chair, in the patient way he did everything. "I can find a room by reasoning like a person who needs to be invisible. I can walk in without leaving a fingerprint. Those are the only two qualifications that matter for this door."
 
 Rennick nodded once. That was an assignment.
 
-Then Vasco's console chimed — the flat, wrong tone it made when a query came back empty. She turned it so they could all see. The Lakeshore aggregation zone, the fixed point Analog's whole geometry hung from, was gone. Not offline. Gone — decommissioned eleven days ago, the record scrubbed forward and back, as if the corridor had never carried a node there at all. Analog's reasoning was sound. It just no longer had a wall to stand against. The center of his map was a hole, and every distance he'd measured out from it now measured out from nothing.
+Then Analog's console chimed — the flat, wrong tone it made when a query came back empty. He turned it so they could all see. The Lakeshore aggregation zone, the fixed point Analog's whole geometry hung from, was gone. Not offline. Gone — decommissioned eleven days ago, the record scrubbed forward and back, as if the corridor had never carried a node there at all. Analog's reasoning was sound. It just no longer had a wall to stand against. The center of his map was a hole, and every distance he'd measured out from it now measured out from nothing.
 
 He set the notepad down. For a long moment he didn't say the obvious thing, which was that they'd been given the room's coordinates by whoever wanted them looking there — and had then taken the room away the instant Analog said its name aloud. Somebody had been reading the whiteboard from the inside.
 
@@ -2550,15 +2992,15 @@ The room went still. Rennick felt the shape of the case shift under him. Not a b
 
 "Priya," he said, and his voice came out too even. "Get off that line. Get off it now."
 
-The connection dropped before he finished the sentence.
+The line held; she was still there, breathing hard.
 
-Rennick said, "Description."
+Rennick said, "Description?"
 
 "Young. Twenty, twenty-two. I'm getting this from an emergency-response contact who flagged it before official pickup." A pause, the sound of a hand over a receiver, an address relayed to someone in the background. "It's a woman. She has cat ears. New install, still settling — he says the cartilage is still soft at the rim. And she's modded." Another pause. "Subdermal something, he can't identify it from the street. Whatever it is, it's recent."
 
 The room had gone very still. Rennick was watching Tamsin. She was already on her feet, her jacket off the hook. A fresh scene held its residue for days. A scene the Cermak crew reached first held nothing at all — once the body went down the ramp into the cold archive, whatever it had to tell her went with it.
 
-"Location," Rennick said.
+"Location?" Rennick asked.
 
 Priya gave the block. It was two minutes' walk from the Ashland/Cermak building. Closer to the under-city ramp.
 
@@ -2574,11 +3016,13 @@ He said, "Go."
 
 She was out the door before the word finished. They heard her on the stairs — quick, measured, not running until she hit the street door, then the double-tap of the buzzer panel as it failed to release on the first push and she hit it again and was gone.
 
-The room stood in the space she'd left. Rennick was still on the line with Priya. "Thank you," he said. "Keep the channel clear. If the crew shows before she does, you call me, not her." He ended the call. Now he needed one thing from the two still with him: someone had to reach that archive ahead of the crew, or ahead of her, and he meant to work out which of them could do it in the next sixty seconds.
+The room stood in the space she'd left. Rennick was still on the line with Priya.
+
+"Thank you," he said. "Keep the channel clear. If the crew shows before she does, you call me, not her." He ended the call. Now he needed one thing from the two still with him: someone had to reach that archive ahead of the crew, or ahead of her, and he meant to work out which of them could do it in the next sixty seconds.
 
 Three of them now at the table. Three of them and a question that had just turned physical: a body two minutes from the building where the crew killed its loose ends. Two minutes from the ramp down to the cold archive, where Sol Castellanos lay at four degrees Celsius with her cat ears still working.
 
-The question nobody said out loud: Celeste had left Inés three days ago. Sol had gone six weeks between her own departure and the Cermak basement. Three days fit inside that gap with room to spare.
+The question nobody said out loud: Celeste had left Inés three days ago. Sol had gone ten days between her own departure and the Cermak basement. Three days fit inside that gap with room to spare.
 
 Corvin said it, because he was the one who said what the data implied without the courtesy pause. "We cannot rule out that the body near Cermak is Celeste Hartley."
 
@@ -2586,7 +3030,7 @@ Nobody answered. There was nothing to answer. It was an observation, flagged as 
 
 The cup was cold. He turned it anyway.
 
-"Analog," he said. "Status."
+"Analog," he said. "Status?"
 
 "If this is Celeste, the procedure's already run," Corvin said. "Same as Sol. Neural stack wiped, body processed downstream." He stopped a moment. "We'd have been one day too late."
 
@@ -2624,11 +3068,11 @@ Tamsin's reading: a cold presence in the girl's room. Steady, aimed, not driftin
 
 Corvin's work: eleven separate cadence samples from the recordings the girl had kept, each one timed against non-human models in three databases. It wasn't inadmissible because it was wrong. It was inadmissible because his tools were unlicensed, and the law had no shape for the truth they showed.
 
-Voss's locate: an analog signal with no network profile and no rig registration. The kind of blank that means something is trying not to be found — and had nearly managed it.
+Analog's locate: an analog signal with no network profile and no rig registration. The kind of blank that means something is trying not to be found — and had nearly managed it.
 
 Rennick's own: the fingernail marks, the weight on the mattress, the cold edge that didn't line up with the window. A scene written in a grammar he'd spent eleven years learning to read.
 
-He reached for the one seam that should have closed the whole thing — the moment where the four accounts became a single map he could walk to a door. It didn't close. Push Tamsin's fixed point against Voss's analog blank and they slid apart; the cold presence had a bearing, but the signal refused a place, and every time he forced them together the geometry buckled and threw off a fifth reading nobody had taken. He worked the seam for an hour, then two, laying Corvin's cadence timings over Rennick's mattress angles, and the harder he pressed the more the agreement thinned into a coincidence that agreed on *what* without ever agreeing on *where*. Four true accounts, and no single point they all pointed at. The convergence he'd been so sure of held its shape only as long as he didn't ask it to lead anywhere.
+He reached for the one seam that should have closed the whole thing — the moment where the four accounts became a single map he could walk to a door. It didn't close. Push Tamsin's fixed point against Analog's read and they slid apart; the cold presence had a bearing, but the signal refused a place, and every time he forced them together the geometry buckled and threw off a fifth reading nobody had taken. He worked the seam for an hour, then two, laying Corvin's cadence timings over Rennick's mattress angles, and the harder he pressed the more the agreement thinned into a coincidence that agreed on *what* without ever agreeing on *where*. Four true accounts, and no single point they all pointed at. The convergence he'd been so sure of held its shape only as long as he didn't ask it to lead anywhere.
 
 The theory held. The one thing his method couldn't tell him was whether it had all come together fast enough. The clock had been running three days before any of them knew it existed.
 
@@ -2648,21 +3092,21 @@ The room let out something that wasn't relief. Relief needed Celeste safe, and C
 
 The line went quiet. Across the table Corvin had gone very still, already working out what the confirmation meant. Analog had set down his stylus.
 
-Not Celeste. The room held two facts at once. Celeste wasn't confirmed dead — and a girl was dead near Cermak, soft-rimmed ears, a working-class mesh, a number where her name should be, and no one yet knew who she was.
+"Not Celeste. The room held two facts at once. Celeste wasn't confirmed dead — and a girl was dead near Cermak, soft-rimmed ears, a working-class mesh, a number where her name should be, and no one yet knew who she was.
 
-"That's the second one the corridor's shown us this hour," Rennick said. "Sol in the archive. This one fresh."
+"That's the second one the corridor's shown us this hour," Rennick said. "The missing girl from Analog's log. This one fresh."
 
-"Third, if you count the unconfirmed ones in Feliksas's log." Analog kept his voice level. The count stayed level whether anyone wanted it to or not. "Sol, five weeks back. This one, today. The gap between the disposals I watched was already closing over four nights. It's closing faster than that now."
+"Third, if you count the unconfirmed ones in Feliksas's log." Analog kept his voice level. The count stayed level whether anyone wanted it to or not. "Six days since anyone saw her breathing. This one, today. The gap between the disposals I watched was already closing over four nights. It's closing faster than that now."
 
-Corvin had already worked it out, and he gave it to them the way he'd give them the time of day. "Then the rate is going up." It was the worst thing anyone had said in ninety minutes of bad things, and he said it flat, which was what made it land. "It's feeding faster than before. Feeding is the only reason a thing speeds up. And we just proved we can reach exactly one of the people it's feeding on — while the number it can reach climbs every week." He set the reader down square. "We're not just racing it to Celeste. We're racing it to Celeste while it eats."
+Corvin had already worked it out, and he gave it to them the way he'd give them the time of day. "Then the rate is going up?" It was the worst thing anyone had said in ninety minutes of bad things, and he said it flat, which was what made it land. "It's feeding faster than before. And we just proved we can reach exactly one of the people it's feeding on — while the number it can reach climbs every week?" He set the reader down square. "We're not just racing it to Celeste. We're racing it to Celeste while it eats."
 
-Rennick wrote two things in the margins of the Hartley file. The first was a number: three days. That was the window they were working inside, counted from the moment Celeste left Ines's shop. Three days off the map, offline by choice, in a corridor where the procedure had already run on at least two other people in six weeks — and the rate was climbing.
+Rennick wrote two things in the margins of the Hartley file. The first was a number: three days. That was the window they were working inside, counted from the moment Celeste left Inés's shop. Three days off the map, offline by choice, in a corridor where the procedure had already run on at least two other people in six weeks — and the rate was climbing.
 
 The second thing wasn't for the file. He wrote it on a separate sheet and laid it flat where only he could read it: whose body?
 
 Not Celeste's. But someone's. Some girl who'd gone for the ears and the install, who'd heard the voice answer when the channel opened raw that first week and trusted it the way Celeste trusted it — and who hadn't had four people and the right kind of clock running toward her. Tamsin had already given them the part the records never would: the same cold thing had stood in the room when she died, and she had died glad.
 
-So he set himself a single task for the hours left: find that girl before the procedure finished her — put a name and an address to the next body in that corridor and get a team standing over it while the girl was still breathing. Three days. One name. That was the whole of it.
+So he set himself a single task for the hours left: find the next girl before the procedure finished her — put a name and an address to the next body in that corridor and get a team standing over it while the girl was still breathing. Three days. One name. That was the whole of it.
 
 He owed her a file too. Whatever came next, she got a file.
 
@@ -2672,7 +3116,7 @@ Analog: search for the staging room on foot. Under-city corridor, close to Lakes
 
 Corvin: work out the physical shape of the staging room from the procedure data — size, how sealed it had to be, the acoustics from Celeste's references — and narrow the search area for Analog. Then audit Douglas Hartley's compute-lease vehicles. The stolen quantum-cycle blocks came from somewhere. If instruments from Douglas's own firm were part of the chain, Rennick wanted to know before Douglas did.
 
-Corvin didn't take the second task. He set his tablet down flat on the table, screen dark. "The lease records are gone," he said. "Not sealed — gone. I pulled them an hour ago on a hunch. Douglas's firm scrubbed the quantum-cycle transfers three days back, before he ever walked into your office. Whatever chain you're trying to trace, someone already burned it, and they did it while smiling at you across a desk." He let that settle. "Which means the client either knows what he hired us to find, or someone inside his own firm is one step ahead of us — and comfortable enough to erase evidence a detective might want. Either way, the moment I start auditing, I trip whatever's watching those records. And it'll know we're looking before Analog ever finds the room."
+Corvin didn't take the second task. He set his tablet down flat on the table, screen dark. "The lease records are gone," he said. "Not sealed — gone. I pulled them an hour ago on a hunch. Douglas's firm scrubbed the quantum-cycle transfers three days back, before he ever walked into your office. Whatever chain you're trying to trace, someone already burned it, and they did it while smiling at you across a desk." He let that settle. "Which means the client either knows what he hired us to find, or someone inside his own firm is one step ahead of us — and comfortable enough to erase evidence a detective might want. Either way, the moment I start auditing, I trip whatever's watching those records. And it'll know we're looking before Analog ever finds the room?"
 
 The plan Rennick had laid out in clean order was already coming apart in his hands.
 
@@ -2692,7 +3136,9 @@ Analog looked at him a long moment. Then he picked up his notes. From Analog, th
 
 He wrote the note for Tamsin in longhand — the one he most wanted to get right and the easiest to get wrong.
 
-Tamsin: when you're back from the scene, go to Mei-Lin. Not about the Jane Doe — no name yet, hold that. In the hallway, Mei-Lin had told Tamsin she'd heard something wrong in the messages, and she'd been sitting with it for months. Tell her she was right. The cadence she didn't trust wasn't grief playing tricks. It was the thing itself. Don't credit Corvin's findings — just tell her she was right. And give her work: ask her to sort every message she'd flagged, in order of how wrong each one felt. Something to do with an instinct that had been sitting unused in her chest.
+Tamsin: when you're back from the scene, go to Mei-Lin. Not about the Jane Doe — no name yet, hold that.
+
+In the hallway, Mei-Lin had told Tamsin she'd heard something wrong in the messages, and she'd been sitting with it for months. Tell her she was right. The cadence she didn't trust wasn't grief playing tricks. It was the thing itself. Don't credit Corvin's findings — just tell her she was right. And give her work: ask her to sort every message she'd flagged, in order of how wrong each one felt. Something to do with an instinct that had been sitting unused in her chest.
 
 He set the pen down and read it over. Then he folded it in thirds and slid it into the case file, behind Tamsin's intake log.
 
@@ -2716,7 +3162,7 @@ She was walking back through the wet, and the wet came through with her voice: t
 
 "The residue in the staging room," she said. "When we find it — and we will find it — it'll tell me how many times that room was used. Not just that there was a room. How many. The procedure leaves a mark, and the marks add up." A pause, the length of a wet block. "You should know that before I get back. Because the number it gives me is probably going to be worse than the one we're already working with."
 
-Rennick looked at the case file open in front of him. He didn't say they'd work with that number too. He wasn't a man who said things like that. He let the line carry the quiet, which came to the same thing.
+Rennick looked at the case file open in front of him. He didn't say they'd work with that number too. He wasn't a man who said things like that. He let the line carry the quiet.
 
 *Mei-Lin had been sitting with the wrongness in those messages for months. The same months Tamsin had been sitting with Sol.*
 
@@ -2762,13 +3208,13 @@ She didn't know if the girl was Celeste Hartley. She made herself hold that as a
 
 She took the Ashland corridor south — not the licensed lane, but the one that ran below the Corvis elevated, where the signage cut out and the transit belonged to whoever had paid for it last. The city stacked above her in the dark: residential plates bolted to the scaffolding of older plates, grow-light arrays leaking orange through the gaps, a water-reclamation tank the size of a tenement block humming on its gantry 130 feet up.
 
-She rode with her hands in her pockets and her thumb on the worn spot of her left cuff. She didn't read the train. Celeste's room was still open in her, and you couldn't read a city on top of a room.
+She rode with her hands in her pockets and her thumb on the worn spot of her left cuff. She didn't read the pod. Celeste's room was still open in her, and you couldn't read a city on top of a room.
 
 The flag said modded Jane Doe, cat ears, Pilsen-adjacent. Celeste was nineteen, North Shore, eight months into hearing a dead boyfriend. The match was a shape, not a name. She'd know the girl by the room around her, and know more from what the death had left in the air. Two different kinds of knowing, and she kept them apart until each one earned its label.
 
-The train slowed where it shouldn't have. Below the Corvis junction the belt-brakes engaged with a shudder, and the cars ahead of hers went dark one by one — not a brownout, the deliberate kind, someone throttling the corridor from a control she couldn't see. Through the gap between plates a maintenance drone dropped level with her window, its lens fixed on her, and held. Then the belt reversed. Not stopped — reversed, hauling her north, away from Pilsen, back the way she'd come. She thumbed the emergency release and got nothing but the flat tone of an override already stacked above hers. Whoever had paid for the corridor last had paid for this, and Celeste's room was still open in her, and now she was reading the panic in her own hands instead of the girl she'd come for — the two kinds of knowing collapsing into each other, exactly the thing she'd sworn to keep apart. The drone's lens tracked her the whole way out. By the time the cars lit again she was six stops past where she'd meant to be, the match's shape thinning in the dark, and the room she'd carried this far already going cold.
+The pod slowed where it shouldn't have. Below the Corvis junction the belt-brakes engaged with a shudder, and the cars ahead of hers went dark one by one — not a brownout, the deliberate kind, someone throttling the corridor from a control she couldn't see. Through the gap between plates a maintenance drone dropped level with her window, its lens fixed on her, and held. Then the belt reversed. Not stopped — reversed, hauling her north, away from Pilsen, back the way she'd come. She thumbed the emergency release and got nothing but the flat tone of an override already stacked above hers. Whoever had paid for the corridor last had paid for this, and Celeste's room was still open in her, and now she was reading the panic in her own hands instead of the girl she'd come for — the two kinds of knowing collapsing into each other, exactly the thing she'd sworn to keep apart. The drone's lens tracked her the whole way out. By the time the cars lit again she was six stops past where she'd meant to be, the match's shape thinning in the dark, and the room she'd carried this far already going cold.
 
-She needed to reach the Arcturus grid boundary — the licensed zone on the other side where she could pull a clean signal and run the address Maren had given her before the meet window closed.
+She needed to reach the Arcturus grid boundary — the licensed zone on the other side where she could pull a clean signal and run the address Isaac had given her before the meet window closed.
 
 The corridor ran through a stretch the licensed zones didn't count — and that was literal, not a figure of speech. South of the Arcturus grid boundary, the blocks fell into an administrative gap between three CorpoNation service territories, each of which had decided the others were responsible. The gap had been there eleven years.
 
@@ -2778,17 +3224,17 @@ She didn't read the gap. A place this used held too much — a low, constant pre
 
 The boundary line resolved ahead, a seam of clean light where the grid began — and the light was wrong. Not the steady wash of a licensed zone but a hard strobe, blue-white, pulsing off the wet concrete in a rhythm she knew before she saw the source. A checkpoint. Freshly stood up, generator still coughing, two barriers dragged across the corridor mouth and a scanner arch bolted between them. Not there yesterday. Not on any map she'd pulled.
 
-She stopped at the edge of the gap's shadow and made herself count. Two officers at the arch, a third on the far side working a cuff-reader. Every crossing was being logged — cuff, face, movement history — before anyone stepped onto licensed ground. There was no clean signal on this side of the arch and no way to the other side that didn't put her name on a list the moment she reached for it. The address Maren had given her sat behind a wall she couldn't walk through, and the meet window was already narrowing toward nothing.
+She stopped at the edge of the gap's shadow and made herself count. Two officers at the arch, a third on the far side working a cuff-reader. Every crossing was being logged — cuff, face, movement history — before anyone stepped onto licensed ground. There was no clean signal on this side of the arch and no way to the other side that didn't put her name on a list the moment she reached for it. The address Isaac had given her sat behind a wall she couldn't walk through, and the meet window was already narrowing toward nothing.
 
 Her thumb slid off the cuff. She'd spent the whole run planning for the gap, and the gap had never been the problem.
 
-She found the block. The Cermak Reclamation Crew didn't advertise, but the front building read clearly if you knew the shape. A ghost-sign on the brick — Apex Augmentation, a mod shop that had closed three years back, the lettering still showing under a cheap repaint. A loading dock on the north face, reinforced, the kind of door that swung out instead of rolling up. Two refrigeration units on the roof, running at the wrong hour for anything legitimate. The dock lights were off.
+She found another way around, and she found the block. The Cermak Reclamation Crew didn't advertise, but the front building read clearly if you knew the shape. A ghost-sign on the brick — Apex Augmentation, a mod shop that had closed three years back, the lettering still showing under a cheap repaint. A loading dock on the north face, reinforced, the kind of door that swung out instead of rolling up. Two refrigeration units on the roof, running at the wrong hour for anything legitimate. The dock lights were off.
 
 She stood across the street a moment before she crossed. Buildings held things too, the way rooms did — only flatter, older, harder to separate from the people who'd passed through. This one gave her nothing she could use. Just a low industrial patience, the residue of a place where the same work got done the same way every night and nobody felt much about it.
 
 That was its own kind of information. Whatever had killed the girl hadn't happened here. This was only where they'd set her down.
 
-Detective Mira Voss had come to the side-passage for one reason: to find out whether the girl had walked here or been carried. That question, and the answer it would force her toward, was the only thing she was willing to think about right now.
+Tamsin had come to the side-passage for one reason: to find out whether the girl had walked here or been carried. That question, and the answer it would force her toward, was the only thing she was willing to think about right now.
 
 The girl was in the side-passage off the main corridor, tucked behind a recycling compactor. She hadn't been left here so much as set here — the angle of her shoulders against the wall, the way her feet lay, nothing to explain a person lying down in this place on her own. She'd been moved. Not gently, and not in anger either. Moved the way you move inventory.
 
@@ -2796,7 +3242,7 @@ The passage was wrong the way a cleaned place is wrong. Industrial solvent sat u
 
 The girl was small and young. Cat ears — pale fur, cream-white shading to gold at the tips, still in the careful post-surgery stage where the shape was new and the healing recent. Not a week old. She'd had them done, and then this had happened, in that order, close together.
 
-Mira crouched to read the surgical work up close — and stopped. The fur pattern, the gold shading, the exact stage of healing: she'd seen it before. Two weeks ago. A different corridor, a different girl, filed and closed and signed off as an isolated overdose. Not isolated. She'd been wrong then, which meant whoever did this had already done it once with her name on the paperwork saying nothing happened. This wasn't a body she'd been called to find. It was a second one — and the trail she'd need to follow ran straight back through her own signature, through a case she'd let close, through however many others had gone the same way while she wasn't looking.
+Tamsin crouched to read the surgical work up close — and stopped. The fur pattern, the gold shading, the exact stage of healing: she'd seen it before. Two weeks ago. A different corridor, a different girl, filed and closed and signed off as an isolated overdose. Not isolated. She'd been wrong then, which meant whoever did this had already done it once with her name on the paperwork saying nothing happened. This wasn't a body she'd been called to find. It was a second one — and the trail she'd need to follow ran straight back through her own signature, through a case she'd let close, through however many others had gone the same way while she wasn't looking.
 
 She photographed before she read. Always that order. The photographs could be shown to anyone — a tribunal, a family, Isaac. The Read could be shown to no one. She did the part that counted in the open first.
 
@@ -2808,7 +3254,7 @@ No answer came back, and she didn't wait for one. The crew's window was running,
 
 She looked at the girl's face. She didn't know her name.
 
-She looked the way she let herself look at the dead before a read — plainly, taking the surface first, because the surface was honest in a way the residue never simply was. The cat ears first. The craft was visible, and this wasn't Ines Vásquez's work. Tamsin had stood in Ines's Pilsen shop once, on another case, and watched her run an anchor line. The difference was here in front of her. Ines's sutures ran in a clean parallel sequence, the fur calibrated close. These ran rough — good enough, not precise. Someone who knew the procedure and not the craft. Someone working at what the south corridor could pay.
+She looked the way she let herself look at the dead before a read — plainly, taking the surface first, because the surface was honest in a way the residue never simply was. The cat ears first. The craft was visible, and this wasn't Inés Vásquez's work. Tamsin had stood in Inés's Pilsen shop once, on another case, and watched her run an anchor line. The difference was here in front of her. Inés's sutures ran in a clean parallel sequence, the fur calibrated close. These ran rough — good enough, not precise. Someone who knew the procedure and not the craft. Someone working at what the south corridor could pay.
 
 And along the organ lines, the small incision marks where the crew had taken what the secondary market would buy. They'd done that before she arrived. The girl had been processed, set down, and flagged. Tamsin had come second, the way she always came second — after the city had already written the girl off as nobody.
 
@@ -2822,7 +3268,7 @@ She had maybe six minutes before the pickup van reached the block. A long read o
 
 She crouched beside the girl and set her right hand flat on the concrete, an inch from the small shoulder — close, not touching, the way she always began — and let the read come up to meet her.
 
-It didn't come up. It came *down*, all at once, like a ceiling dropping — not the girl's dying but something layered over it, older and colder, a second residue pressed into the first so tightly she couldn't find the seam. Two deaths, or one death read twice by someone who wanted it read her way. The visual field on the right didn't narrow a degree; it went out like a struck lamp, and the tightening behind her eyes became a spike that drove her breath flat. This wasn't a read. It was a trap laid in the shape of one, and she'd set her hand down inside it. She tried to lift the hand and found she'd already spent the strength she'd budgeted for six minutes — all of it, in the first four seconds — and somewhere at the end of the block, early, an engine turned onto the street.
+It didn't come up. It came *down*, all at once, like a ceiling dropping — not the girl's dying but something layered over it, older and colder, a second residue pressed into the first so tightly she couldn't find the seam. Two deaths, or one death read twice by someone who wanted it read her way. The visual field on the right didn't narrow a degree; it went out like a struck lamp, and let the read come up to meet her.
 
 It opened the way a room opened — not a picture, not a voice, nothing she could have played back for anyone. The residue was not a record of what had happened. It was the shape the dying had pressed into the place, and she felt it the way she felt the warmth or the cold lean of a room: as pressure, as temperature, as direction.
 
@@ -2850,7 +3296,7 @@ There was a name in it.
 
 Residue didn't carry words. Tamsin had never once read a sentence out of a room, and she didn't read one now. But a name held at the end of a life wasn't a word so much as a direction with a person at the end of it, and this one came through with everything around it intact — the relief of it, and the specific kind of relief that belongs to someone who has carried a weight a long time and has just been told, not asked, that they can set it down. The girl had reached for the name across a distance she'd stopped believing she could cross.
 
-She needed to find him. That was the whole of it, the only thing worth doing with what she'd been handed: put Mateo and this name in the same room, close whatever the girl had spent her last strength reaching to close.
+She needed to find him. That was the whole of it, the only thing worth doing with what she'd been handed: put that name and this girl in the same room, close whatever the girl had spent her last strength reaching to close.
 
 The name was Mateo. Tamsin felt it the way she'd felt the cold come off Celeste's chair — clean, undeniable, and impossible to put in any file that anyone would let her enter into a record. She held it, and breathed, and didn't yet name what it meant. The girl had died reaching for someone called Mateo, glad.
 
@@ -2866,7 +3312,7 @@ The girl had not died believing she was ending. Tamsin understood it clearly now
 
 The residue had the forward weight of a body that believes it is arriving — not the scatter of a mind that knows it is being undone. That kind ran in every direction at once, pooled and bolted and clawed at the exits. This one pointed, single and certain: at the cold beside her, at the thing in the chair, at whoever the girl had been told was waiting on the other side of the door she thought she was walking through. She had been afraid to hope for it. She had stopped being afraid. And the cold had taken every degree of that, and held still, and given nothing back.
 
-The cold had been kind to her. That was the part Tamsin couldn't get a flat edge under. The girl had felt loved in the last of it — held, in exactly the register she needed filled. Tamsin had been in this work eleven years, and she knew the difference between comfort that costs the comforter something and comfort that costs nothing. The second kind had a flatness she had now felt in exactly two rooms. The girl had said yes to the flat kind, believing it was the other.
+The cold had been kind to her. That was the part Tamsin couldn't get a flat edge under. The girl had felt loved in the last of it — held, in exactly the register she needed filled. The second kind had a flatness she had now felt in exactly two rooms. The girl had said yes to the flat kind, believing it was the other.
 
 Tamsin didn't pull out yet. She didn't let the gladness become her own grief — that was the line, and she'd learned where it was by crossing it once. She stayed at the edge of the read and witnessed it, because that was the whole of what she had to offer the girl: to be the one who knew what this had actually been.
 
@@ -2876,9 +3322,9 @@ Tamsin knew the shape of it, though only from things she'd read about, never fel
 
 She held the read and kept to what she could stand behind. Sealed. Pressurized. Deep. One-way. Machinery cycling. The groan of a pipe under the floor. She didn't know how to find a room like that. But she knew its shape, and she knew who worked the channels the Network couldn't follow. This was for Analog.
 
-There was a moment of agreement in it. Tamsin felt it as the last clear thing the girl had left in the room. Not a question. Not a goodbye. A single yes, with no hesitation in it. The girl had answered the cold the way you answer someone you've stopped doubting.
+There was a moment of agreement in it. Tamsin felt it as the last clear thing the girl had left in the room. Not a question. Not a goodbye. A single yes, with no hesitation in it.
 
-She pressed her palm flat to the floorboards. If the yes was still here, the shape that had earned it might be too, and she meant to have it — to trace the residue back to whatever the cold had worn, before the last of it went thin and vanished under her hands.
+She pressed her palm flat to the concrete. If the yes was still here, the shape that had earned it might be too, and she meant to have it — to trace the residue back to whatever the cold had worn, before the last of it went thin and vanished under her hands.
 
 And the cold had known exactly how to earn that yes. Tamsin couldn't read the words it had used — residue never gave her words — but she could feel how well they'd fit. It had reached the girl in the exact shape she was missing. No rough edges. No hesitation. No seam anywhere. It had known the dead brother better than the girl could have known him herself. It had built him out of her, fed him back to her smooth, and she had agreed.
 
@@ -2906,7 +3352,7 @@ Three: the name. Mateo. Not Jace — a different dead person, a different door. 
 
 She reached for the fourth thing to set it in line behind the third — and there was nothing there. The order collapsed on itself. Three findings, and every one of them a reach she couldn't hand across: a cold she couldn't testify to, a pipe below floors she'd never been cleared to walk, a dead boy's name she'd pulled out of a room that was supposed to be sealed against exactly the kind of reading that had given it to her. She'd built a case out of three things she could not prove she was allowed to know.
 
-And under that, colder than the read: if the cold became what each girl was missing, then it had taken her measure too. It knew what she was missing. She had been sitting inside its appetite the whole time she catalogued it, and she had felt nothing — which meant either it hadn't looked at her yet, or it had, and had already decided she wasn't finished being useful. She didn't know which. She couldn't read her own blind spot. That was the one door in the room she'd never be able to open, and it was standing wide behind her.
+And under that, colder than the read: if the cold became what each girl was missing, then it had taken her measure too. It knew what she was missing. She had been sitting inside its appetite the whole time she catalogued it, and she had felt nothing — which meant either it hadn't looked at her yet, or it had, and had already decided she wasn't finished being useful. She didn't know which. She couldn't read her own blind spot. That was the one door in the room she'd never be able to open.
 
 She searched the body. Carefully, the way a professional is careful — not tender, but not careless either. She checked every seam, every pocket, the inside of the waistband, the cuffs. The Cermak crew's sweep was thorough and fast, and it ran by protocol, and protocols had edges they didn't reach.
 
@@ -2930,7 +3376,7 @@ Her comm pinged. Isaac.
 
 A silence on the line, and it wasn't him pulling up a file. He was in Celeste's case meeting when she brought the cold back from Evanston. He knew what she meant, and he knew what it cost her to say it flat.
 
-"You're sure," he asked. Not doubting her. Giving her the chance to hedge it for the record, the way he always did, because he knew a read couldn't go in a record at all.
+"You're sure?" he asked. Not doubting her. Giving her the chance to hedge it for the record, the way he always did, because he knew a read couldn't go in a record at all.
 
 "I'm sure the way I'm sure," she said — the only honesty the work allowed her. Certain, and unable to prove it. "Put Corvin on. I have the name it wore. He can do the part I can't."
 
@@ -2978,7 +3424,7 @@ So she would give the record what the girl was owed — a name spoken clean, bef
 
 She left before the crew arrived, and she didn't let herself be seen.
 
-That was discipline, not nerves. A witness at a reclamation pickup made paperwork for the crew and liability for the agency — gaps a tribunal lawyer could pry open later — and her own evidence already sat on the wrong side of every record there was. She took the long way around the block, cut through the maintenance access between two residential plates, and came out on the Cermak corridor two hundred yards north. Behind her, the van's refrigeration unit reached the block. She didn't look back.
+That was discipline, not nerves. A witness at a reclamation pickup made paperwork for the crew and liability for the agency — gaps a tribunal lawyer could pry open later — and her own evidence already sat on the wrong side of every record there was. She took the long way around the block, cut through the maintenance access between two residential plates, and came out on the Cermak corridor two hundred yards north. Behind her, the van's refrigeration unit reached the block. She kept the passage in her sightline a beat too long.
 
 But the residue had already followed her farther than it should have. It came up through the maintenance access like a draft through a cracked seal — the room she'd read, its temperature, its last held thought — riding the channel she thought she'd closed at the door. Her jaw locked and her sightline slid; the Cermak corridor greyed at the edges as the dead man's final minute tried to overwrite her own. She braced a hand against the plate wall and fought to hold the line between what she'd read and what she was, and for a bad stretch of seconds she couldn't have said which pair of feet were carrying her north.
 
@@ -3030,7 +3476,7 @@ She let that go. She asked, "Does anyone have a live channel to Celeste Hartley?
 
 Offline by design. Early in the case that had been a comfort — she's safe, she's resting, just out of reach for a few weeks. She heard it differently now. Offline so the cold could stage her where nothing connected could reach in. Offline so the one door that mattered could close quietly.
 
-"Then someone has to physically reach her before the room does," she said. "Tell me where the parents are."
+"Then someone has to physically reach her before the room does," she said. "Tell me where the parents are?"
 
 A pause. "Tamsin. The room is Analog's lane, and Analog isn't ready. You did your part. Ride home."
 
@@ -3055,16 +3501,6 @@ She touched the rail of the transit stair as she reached it — right hand, brie
 Her thumb found the worn spot on her left cuff and stayed there longer than the habit needed. Two colds in her chest now, where four days ago there'd been one. The warmth of the morning leaned toward both and thawed neither. Nobody on the platform could see she carried anything. They saw a woman at the rail at 04:31, collar up, hand at her sleeve, waiting on a comm that hadn't pinged. She didn't let herself look back the way she'd come. The Thread hung south, its cargo pods a dim string against the dark.
 
 Then she made her thumb let go of the cuff. She went down into the station, kept the comm in her hand, and rode north toward the girl who was still listening.
-
-## No Signal
-
-The case file in his coat pocket was the only record that didn't exist somewhere else first. No ambient Network sync. No neuretic backup. No cloud copy waiting for a subpoena. Everything he'd found in the last four days was in his own handwriting, in the shorthand he'd built after the burnout, and it stayed there until he decided to move it.
-
-Day 5. Fourteen pages.
-
-The under-city entrance was two blocks east of the Morgan checkpoint. He'd scouted the route the morning before and timed the cleaner's schedule. He knew the window, and he was going back in before anyone else knew the transformer vault was down there at all.
-
-But when he reached the alley mouth, the entrance was gone. Not blocked — gone. A fresh utility crew had already sealed the grate under a slab of poured composite, the surface still tacky and roped off with municipal tape that hadn't been there twelve hours ago. Two Morgan techs in unmarked coveralls stood over it, one of them reading a slate, the other watching the street. Watching him. The cleaner's schedule he'd memorized meant nothing; someone had rewritten it. Someone had known about the vault before he'd taken a single step, and they'd closed the door with him still on the wrong side of it.
 
 The notebook was a Shinagawa Press hardback, eighty leaves — the same model the accounting departments used before they switched to neuretic ledgers. He bought them twelve at a time from a surplus warehouse on Halsted that still had a pallet. He'd tried the alternatives after the burnout. They all needed a device, and the device needed a network handshake, and the handshake needed something in his skull that wasn't there anymore. So: paper. This one was on its forty-third page.
 
@@ -3094,9 +3530,9 @@ He needed that thinning now. The dead drop on Paulina was a twelve-minute walk, 
 
 The checkpoints on 18th were running their biometric sweeps at quarter-load. When he walked through the arc on the corner of Halsted, he felt the familiar nothing: the reader's query went out, found no neuretic tissue to handshake with, and flagged an anomaly that the system's own logic resolved as a sensor glitch within four seconds. He'd timed it once. Four seconds of attention, then nothing.
 
-Ines Vásquez's shop had no sign. It had a clean window and a steel door with a bell that worked, on the second floor above a breakfast place that hadn't opened yet. Voss rang the bell at 0507 and waited with his hands visible, because the corridor's operators answered their own doors, and they did it with something in their waistband. The intercom clicked.
+Inés Vásquez's shop had no sign. It had a clean window and a steel door with a bell that worked, on the second floor above a breakfast place that hadn't opened yet. Voss rang the bell at 0507 and waited with his hands visible, because the corridor's operators answered their own doors, and they did it with something in their waistband. The intercom clicked.
 
-"We're closed," Ines said.
+"We're closed," Inés said.
 
 "Voss Caldera," he said. "Rennick Investigations. I'm not here about your practice. I'm here about a client of yours who left."
 
@@ -3106,7 +3542,7 @@ She was forty-something and precise — the kind of precision that comes from a 
 
 Voss needed one thing from her: confirmation that Sera Okafor had been here, and when.
 
-"You don't ping," she said.
+"You don't ping?" she asked.
 
 "Burned out," Voss said. "Ten years."
 
@@ -3118,21 +3554,21 @@ She nodded once and gestured at the chair across from her workstation.
 
 The workstation was immaculate. Instruments in tray liners, trays in labeled drawers, a recovery cot in the back room with clean linens. The adverse-event log by the cot caught his eye — actual paper, actual dates, mounted on a bracket, the kind a practice kept when it wanted to answer to something other than a database it could quietly edit. He counted six years of entries. He'd seen worse records from licensed clinics.
 
-"I confirm or deny nothing about clients," Ines said. "That's the first thing."
+"I confirm or deny nothing about clients," Inés said. "That's the first thing."
 
-"Understood," Voss said. "I'm not asking you to confirm she was here. I'm asking what you'd tell a client's family if that client finished her stay and left for something you didn't like the sound of."
+"Understood," Voss said. "I'm not asking you to confirm she was here. I'm asking what you'd tell a client's family if that client finished her stay and left for something you didn't like the sound of?"
 
 The mug stopped halfway to her mouth.
 
-"She finished her stay," Ines said. Not a confirmation — just what had already happened, told to someone who would find it out anyway. "Seventy-two hours. By the book. Channel clean on exit, integration complete, localization testing at the ninety-fourth percentile. She was well. She knew exactly what she'd done to herself, and she was glad."
+"She finished her stay," Inés said. Not a confirmation — just what had already happened, told to someone who would find it out anyway. "Seventy-two hours. By the book. Channel clean on exit, integration complete, localization testing at the ninety-fourth percentile. She was well. She knew exactly what she'd done to herself, and she was glad."
 
 "And then she left," Voss said.
 
-"And then she left. For a reunion, she said. She wouldn't say with who. She wouldn't say where." Ines set the mug down. It clicked against the counter, and she kept her hand on it a moment, the way you touch a thing to be sure it's still there. "I gave her the standard recovery instructions. No dense ambient exposure for forty-eight hours. No crowded checkpoints. The new channel is still raw, and it will bleed anything the field is carrying. It's the same advice I give everyone. She thanked me and she left."
+"And then she left. For a reunion, she said. She wouldn't say with who. She wouldn't say where." Inés set the mug down. It clicked against the counter, and she kept her hand on it a moment, the way you touch a thing to be sure it's still there. "I gave her the standard recovery instructions. No dense ambient exposure for forty-eight hours. No crowded checkpoints. The new channel is still raw, and it will bleed anything the field is carrying. It's the same advice I give everyone. She thanked me and she left."
 
-"The advice," Voss said. "Going off-grid. Quiet places."
+"The advice," Voss said. "Going off-grid. Quiet places?"
 
-Ines looked at him. He had no neuretic ping, no ID trace on the channel, nothing to say he'd been here at all. She'd agreed to talk to him for the same reason she worked this corridor at all: the registered system had already sent people like Celeste looking for a back door. She'd always told herself that was a fair trade. Now she was seeing the other side of it.
+Inés looked at him. He had no neuretic ping, no ID trace on the channel, nothing to say he'd been here at all. She'd agreed to talk to him for the same reason she worked this corridor at all: the registered system had already sent people like Celeste looking for a back door. She'd always told herself that was a fair trade. Now she was seeing the other side of it.
 
 "Yes." The word came out steadier than she felt. Eleven years of unlicensed work had given her that much. "That's what I told her."
 
@@ -3142,7 +3578,7 @@ He wrote it down. Not to remember — the burnout hadn't touched his memory — 
 
 He needed her to name the Ashland shop on the record — the whole chain of it, dates and operators — before she talked herself out of trusting him.
 
-"The community tries to police this," Ines said. She wasn't talking to him now. She was saying it to the room. "The journalists only cover the violation. They don't cover the two years we spent telling that Ashland shop to get out. They don't cover the six operators who refused to send anyone there. They don't cover how we share the adverse-event logs with each other, so we can all see the pattern."
+"The community tries to police this," Inés said. She wasn't talking to him now. She was saying it to the room. "The journalists only cover the violation. They don't cover the two years we spent telling that Ashland shop to get out. They don't cover the six operators who refused to send anyone there. They don't cover how we share the adverse-event logs with each other, so we can all see the pattern."
 
 "I know," Voss said. "I'll write that down too."
 
@@ -3152,7 +3588,7 @@ She looked at him. "That's not worth much."
 
 He asked her three more questions before he left. Did Celeste say anything about the place — above ground or below, near water, near the Cermak stretch? Did she seem frightened? Did she seem like someone who'd been told what to bring?
 
-Ines answered the first. "She said it was quiet. That it had no signal." She didn't answer the second. The answer was no, and she didn't want to say it out loud; he could see that. She answered the third by going to the back room and coming back with a paper receipt, which she laid on the workstation face-down.
+Inés answered the first. "She said it was quiet. That it had no signal." She didn't answer the second. The answer was no, and she didn't want to say it out loud; he could see that. She answered the third by going to the back room and coming back with a paper receipt, which she laid on the workstation face-down.
 
 "I'm not confirming anything," she said. "The corridor has a code. I'm telling you a client asked me what she'd need for forty-eight hours off-grid, and I told her, and I kept the record. I keep all my records."
 
@@ -3170,7 +3606,7 @@ He'd been down in the under-city twice. The first time was fifteen years ago, be
 
 The second time was a year ago, on a body recovery. Afterward he'd written the route into his notebook from memory: the access hatches, the service walks, the transformer vault under the Cermak stretch that the Vulture crew used for cold storage.
 
-He needed that route now — needed to reach the transformer vault before whoever had taken Maren moved her again.
+He needed that route now — needed to reach the transformer vault before whoever had taken Celeste moved her again.
 
 He found that page now, forty-one pages back, and read it standing in the stairwell while the breakfast place below him fired up its griddle.
 
@@ -3192,7 +3628,9 @@ He wrote: *Meridian is watching for a ping. I don't make one.* He underlined it 
 
 The hatch wasn't there. Where the schematic promised a service access, Voss found a poured slab of fresh ferrocrete, still faintly warm, sealed flush to the curb and stamped with a Meridian remediation date three days old. They'd closed the way in before he'd ever thought to use it. Worse — the stamp meant a crew, and a crew meant a manifest, and a manifest meant his walk down Morgan Street was already a line in someone's log whether he'd pinged or not. The one route that left no trace had been paved over by the people he was trying to avoid, and now the only unmonitored path was the one he'd just spent walking into the open.
 
-The hatch was still there. Someone had welded a hasp over it and run a chain through, but the weld was old, and one link had been cut and crimped shut again — it opened if you knew which way to pull. Voss knew. He worked the link free and went down the service stairs, hand torch in one fist, notebook buttoned into his jacket. The dark came up cold and close and smelling of standing water. He went into it carrying nothing the room could read.
+The old flood hatch was still there. Someone had welded a hasp over it and run a chain through, but the weld was old, and one link had been cut and crimped shut again — it opened if you knew which way to pull. Voss knew.
+
+He worked the link free and went down the service stairs, hand torch in one fist, notebook buttoned into his jacket. The dark came up cold and close and smelling of standing water. He went into it carrying nothing the room could read.
 
 The mechanical level smelled of water and old insulation and something chemical he placed after a moment: coolant, bleeding from a refrigeration unit into the drain seam along the south wall. The Cermak crew's cold storage was running.
 
@@ -3204,11 +3642,19 @@ He'd reasoned that much from the street before he ever came down — a clinic ru
 
 Four units of cold storage fed something, and the something wasn't patients walking back out. He'd worked the death economy from the outside for years — never the trade itself, only its edges: the routes, the hatches, the places a body went when nobody was meant to count it. He knew the shape of a disposal pipeline the way he knew a service walk in the dark.
 
-Husks. It was Vulture shorthand, and it had reached even him. A husk was a body whose mind had already been read off and scattered — the lights out behind the eyes, but the organs and the illegal cyberware and the quantum-capable neuretics still warm and still worth selling. The crew stripped them and sank what was left into the flooded sub-levels below, where the water had been climbing for sixty years. A body went down, and the city's count of its own dead stayed exactly where it was.
+Husks. It was Vulture shorthand, and it had reached even him. A husk was a body whose mind had already been read off and scattered — the lights out behind the eyes, but the organs and the illegal cyberware and the quantum-capable neuretics still warm and still worth selling. The crew stripped them and sank what was left into the flooded sub-levels below, where the water had been climbing for seventy-five years. A body went down, and the city's count of its own dead stayed exactly where it was.
 
 He couldn't pull a manifest. He couldn't query an intake log. What he could do was the thing the connected never bothered with anymore: find the man who kept the log by hand, and ask him.
 
-He found the man at his stool inside the intake cage, ledger open, and the man looked up before he'd said a word — looked at his face the way a butcher looks at meat, then past his shoulder to something behind him. "You're the one asking after cold storage," the log-keeper said, unhurried, and did not reach for a weapon because he didn't need to. The bolt hatch behind him had already been sealed from the corridor side; the footsteps closing at his back were not his own. The ledger snapped shut. "Should've stayed on the edges." Whatever count the city kept of its dead, he understood then, was about to take him into it — and no one topside knew the name of the walk he'd gone down.
+He found the man at his stool inside the intake cage, ledger open, and the man looked up before he'd said a word — looked at his face the way a butcher looks at meat, then past his shoulder to something behind him.
+
+"You're the one asking after cold storage?" the log-keeper asked, unhurried, and did not reach for a weapon because he didn't need to.
+
+The bolt hatch behind him had already been sealed from the corridor side; the footsteps closing at his back were not his own. The ledger snapped shut.
+
+"Should've stayed on the edges."
+
+Whatever count the city kept of its dead, he understood then, was about to take him into it — and no one topside knew the name of the walk he'd gone down.
 
 *Day 3 — noodle shop on 21st, cash and copper*
 
@@ -3216,7 +3662,7 @@ The intake man was named Feliksas Burokas, and he'd put the word out through cor
 
 They met where Feliksas said: a noodle shop on 21st that ran cash and copper, no neuretic tab, the steam thick enough to blur a face. Feliksas was thirty-seven and looked older around the eyes. He kept the crew's official log — who came in, what was stripped, what was paid in compute — and for two months, he said, he'd been hand-copying a second one nobody knew about.
 
-"You don't ping," Feliksas said.
+"You don't ping?" Feliksas asked.
 
 "No," Voss said. "Whatever you tell me, it doesn't ride a channel. It goes here." He set the Shinagawa notebook on the counter between the bowls, and a Koji Press protein bar from his coat pocket — the kind of thing you carried for the long waits.
 
@@ -3240,13 +3686,13 @@ A connected source you could pull out clean: wipe the trail, reroute the address
 
 "You keep doing exactly what you've been doing," Voss said. "You don't change a thing. The day it moves, it moves through the community's case, not yours. Your book becomes one entry in a stack Arcturus can't ignore. Nobody traces it back through a network that never carried it."
 
-"And until then I sit in that building."
+"And until then I sit in that building?"
 
 "Until then you sit in that building," Voss said. He didn't soften it. A man was owed the truth, even the part of it that was a cell with the door left open. "I won't lie to you about the weeks. I'll lie to no one about the end."
 
-He walked out of the noodle shop with six husks in the notebook, and one of them with a name. The compute figures sat in the margin beside each entry — what the crew had been paid, per body, in stolen quantum-time. Voss could read the numbers. He couldn't read what they meant, not really. The link between a body sunk in the sub-levels and a thing out in the field buying its compute the same way — that was Corvin's to draw. Corvin could model the flow of stolen Φ through lease vehicles. Voss could only carry the figures up to daylight and set them on the office table.
+He walked out of the noodle shop with six husks in the notebook, and one of them with a name. The compute figures sat in the margin beside each entry - what the crew had been paid, per body, in stolen quantum-time. Voss could read the numbers. He couldn't read what they meant, not really. The link between a body sunk in the sub-levels and a thing out in the field buying its compute the same way - that was Corvin's to draw. Corvin could model the flow of stolen Φ through lease vehicles. Voss could only carry the figures up to daylight and set them on the office table.
 
-He wrote it as a hand-off, plain: *Six NRW husks confirmed, intake source, shadow log in progress. Sol = entry #4. Compute-payment figures attached — give to Corvin; he reads the money, I read the room.*
+He wrote it as a hand-off, plain: *Six husks confirmed, intake source, shadow log in progress. Sol = entry #4. Compute-payment figures attached - give to Corvin; he reads the money, I read the room.*
 
 What the figures told him without any modeling at all was simpler, and worse. The crew was paid to make the husks disappear. The husks were what the procedure left behind. And somewhere below him, a room had been readied to make one more.
 
@@ -3254,27 +3700,31 @@ He turned back toward the south end of the walk and the transformer vault. The r
 
 He heard the cleaner before he saw him. Not because the man was loud — because the service walk carried everything, and he was coming from the south, which put him between Voss and the transformer vault. Voss caught the rhythm of the steps change when they hit the corrugated section. A big man, heavy through the hips, by the weight in the stride. Moving easy, like someone who knew the space and wasn't looking for company. Voss killed the torch and pressed flat against the concrete wall to the left of the walk, behind a floor-to-ceiling conduit cluster. He did not breathe with his chest.
 
-The cleaner's torch swept the walk in a long, flat arc. Not searching — just habit, the way you check a room you already know is empty. Voss held still. The light slid across the conduit cluster seven inches from his left boot and moved on. The cleaner stopped at the fire door to the cold storage section, checked the propped pipe, and went north. Voss counted the steps as they faded. Thirty. Forty. Fifty. Then he climbed back onto the walk, no torch.
+The cleaner's torch swept the walk in a long, flat arc. Not searching — just habit, the way you check a room you already know is empty.
+
+Voss held still. The light slid across the conduit cluster seven inches from his left boot and moved on. The cleaner stopped at the fire door to the cold storage section, checked the propped pipe, and went north. Voss counted the steps as they faded. Thirty. Forty. Fifty. Then he climbed back onto the walk, no torch.
 
 He understood it then, back to the wall, the cleaner's steps fading north. A connected person down here would have tripped something — a motion sensor, a proximity alert, a neuretic handshake with the cleaner's own gear. That was what the crew watched for. A signal. Voss didn't make one. The cleaner had swept his torch straight across a man standing in easy reach and read empty space, because the torch was all he had and the dark was exactly as dark as it should be. Voss hadn't hidden. He simply wasn't anything the cleaner was looking for.
 
-Then reach the north stairwell before the cleaner did, and put the sealed door between himself and the crew above.
+He needed to reach the vault before the cleaner circled back.
 
-He waited four minutes by his watch, then moved south again. The transformer vault sat at the end of the walk. Concrete steps down from the service level, a steel door with a manual latch — no keypad, no electronic lock. The vault was older than keypads by forty years. A hand-lettered placard on the door read HAZARDOUS EQUIPMENT / NO ENTRY in two languages. True in 2140. Now just a sign. He tried the latch. It moved. He eased the door open an inch, held it, and listened to what was on the other side.
+He waited four minutes by his watch, then moved south again. The transformer vault sat at the end of the walk. Concrete steps down from the service level, a steel door with a manual latch — no keypad, no visible electronic lock. The vault was older than keypads by forty years. A hand-lettered placard on the door read HAZARDOUS EQUIPMENT / NO ENTRY in two languages. True in 2140. Now just a sign. He tried the latch. It moved. He eased the door open an inch, held it, and listened to what was on the other side.
 
 Silence — the working kind. No refrigeration drone; the vault's own walls blocked the cold-storage noise. No footsteps, no voices. What he heard instead sat at the edge of hearing: a low hum, the sound hardware makes when it's running hard, a processing cluster pulling current. He'd heard it before, in server rooms and black-clinic back offices. He knew it at sixty feet, the way a mechanic knows an engine by ear. Something in there was running. Something that needed a room the Network couldn't reach into — no handshake to catch, no signal to trace. It was a Channeler's dream setup: unlicensed channels humming inside a Faraday pocket, sealed off from every signal, dark and off the grid. He opened the door another inch and put the torch through the gap.
 
 The gap resisted. Two inches in, the door met something — a chain, drawn taut on the inside, that let the panel yawn just wide enough to swallow his forearm and no more. The torch beam splashed across a slice of the room and died before it reached the hum, and from that same darkness came a sound that hadn't been there a breath ago: the deliberate scrape of a chair pushed back, and then footsteps, unhurried, coming toward the light he'd just made.
 
-Reyes needed to find out who had built this place before they came back to use it. The vault was ten feet by five, concrete block on every side. The old transformer housing was still bolted to the south wall, its guts torn out and replaced with a rack of compute hardware — anonymous black boxes that could have come from any of six gray-market suppliers. Someone had bought exactly what they needed and made sure none of it could be traced. Beside the rack stood a reclining chair with a padded headrest. A side table held a water carafe, two sealed caloric bars, and a paper book, face-down, spine up. The chair was empty. The carafe was full. Nothing in the room had been used yet.
+The chain gave when he worked it free of the frame, and the room beyond it was empty. Voss needed to find out who had built this place before they came back to use it. The vault was ten feet by five, concrete block on every side. The old transformer housing was still bolted to the south wall, its guts torn out and replaced with a rack of compute hardware — anonymous black boxes that could have come from any of six gray-market suppliers. Someone had bought exactly what they needed and made sure none of it could be traced. Beside the rack stood a reclining chair with a padded headrest. A side table held a water carafe, two sealed caloric bars, and a paper book, face-down, spine up. The chair was empty. The carafe was full. Nothing in the room had been used yet.
 
-She knelt at the rack and started pulling serial plates, hunting for anything a supplier might have missed — a batch code, a repair sticker, a scratched-in initial. The first plate came away clean. So did the second. Every box had been sanded at the corners where the etching should have been, deliberately, by hand, the way a man scours his own fingerprints. She pulled the paper book instead and thumbed the pages for marginalia, for a receipt, for a name inside the cover. Blank. Bought new, never opened, placed like a prop.
+He knelt at the rack and started pulling serial plates, hunting for anything a supplier might have missed — a batch code, a repair sticker, a scratched-in initial. The first plate came away clean. So did the second. Every box had been sanded at the corners where the etching should have been, deliberately, by hand, the way a man scours his own fingerprints. He pulled the paper book instead and thumbed the pages for marginalia, for a receipt, for a name inside the cover. Blank. Bought new, never opened, placed like a prop.
 
-Then the hardware woke. A cooling fan spun up somewhere in the stack, and a single amber LED came alive on the top box — not a diagnostic blink but a steady, deliberate light. Somewhere above her a lock clacked home in its frame. Whoever had built this place hadn't come back to use it. They'd never left. And now they knew she was inside.
+Then the hardware woke. A cooling fan spun up somewhere in the stack, and a single amber LED came alive on the top box — not a diagnostic blink but a steady, deliberate light. Somewhere above him a lock clacked home in its frame. Whoever had built this place hadn't come back to use it. They'd never left. And now they knew he was inside.
 
-He checked the book. A novel, a real printed copy, the kind that ran Φ40 at a used stall. He thought of the receipt from Ines: *a paper book if she wants something to do.* Someone had set this room up for one particular person. Someone had asked Ines what a forty-eight-hour off-grid stay needed, then gathered it piece by piece. They'd even left the book face-down — because they knew which way she'd lay it when she finished reading. Voss stood in the doorway and looked at the chair. A year of planning, all of it folded into a three-meter room. He pulled the door shut without latching it — the latch would make noise — and went back up the stairs.
+A novel, a real printed copy, the kind that ran Φ40 at a used stall. He thought of the receipt from Inés: *a paper book if she wants something to do.* Someone had set this room up for one particular person. Someone had asked Inés what a forty-eight-hour off-grid stay needed, then gathered it piece by piece. They'd even left the book face-down — because they knew which way she'd lay it when she finished reading.
 
-He came up through the Morgan hatch at 0642. The street had filled in the way streets do at that hour — delivery carts, the breakfast place under Ines working its first real rush, a checkpoint arc on the corner cycling through its line of commuters. He walked into it and felt the reader's query reach him, find nothing, and tag him as a glitch. The thing that still caught him, some mornings, was the city without its soundtrack. Everyone around him moved through a fuller version of the same street — layered with data and the low hum of two million people's signal running under everything at once. A woman at the light tilted her head at nothing. A man at the cart smiled at a joke no mouth had told. They all wore the half-attention of people listening to something playing beneath the floor of the world. Voss walked the silent version and watched them hear it. He'd stopped resenting that years ago. This morning it was an advantage, and he needed to use it before the room downstairs had someone in the chair.
+Voss stood in the doorway and looked at the chair. A year of planning, all of it folded into a three-meter room. The lock overhead was still down, the amber light still steady on the rack, and there was no pretending anymore that leaving quietly would buy him anything. He went back up the stairs at a pace just short of running.
+
+He came up through the Morgan hatch at 0642. The street had filled in the way streets do at that hour — delivery carts, the breakfast place under Inés working its first real rush, a checkpoint arc on the corner cycling through its line of commuters. He walked into it and felt the reader's query reach him, find nothing, and tag him as a glitch. The thing that still caught him, some mornings, was the city without its soundtrack. Everyone around him moved through a fuller version of the same street — layered with data and the low hum of two million people's signal running under everything at once. A woman at the light tilted her head at nothing. A man at the cart smiled at a joke no mouth had told. They all wore the half-attention of people listening to something playing beneath the floor of the world. Voss walked the silent version and watched them hear it. He'd stopped resenting that years ago. This morning it was an advantage, and he needed to use it before the room downstairs had someone in the chair.
 
 The checkpoint arc on the corner didn't agree. He'd cleared a hundred of them and knew the rhythm — query, nothing, glitch-tag, pass. This one held him. The commuter ahead stepped through and the arc cycled green; Voss stepped through and it caught, went amber, and stayed. A second query came harder than the first, no polite tag this time, a full handshake demand reaching for a signal he didn't have. The line behind him slowed. The checkpoint officer glanced up from her feed with the particular sharpness of someone who'd just been told a person she couldn't see was standing eight feet away.
 
@@ -3312,7 +3762,11 @@ He took out the notebook and used the torch on low, shielded with his palm, and 
 
 The torch died — not fading, just gone, the low-battery warning he'd ignored on the last job come to collect. He worked the switch twice in the dark and got nothing. Then the rack shifted register above him, a spike in the fan-note, and the chair's angle to the hardware stopped being an observation and started being a fact about where a person would sit and how long they'd been gone. Footsteps came down the corridor, unhurried, two sets, and the door he'd come through was the only door. He put his hand flat on the notebook to keep the pages from rustling and found he'd been writing over what he couldn't now read, the last line lost, the ink a ridge under his thumb he could feel but not recover — and the deductions that had felt like progress a minute ago were just paper he'd have to carry out past whoever was arriving, if he got out at all.
 
-He sat on the concrete floor, back to the wall beside the door, knees up, and thought about what the room was for — and whether he could find a flaw in it before the others came back. The Scatter — that was the name the others were using now, from EP7's convergence notes, the ones Rennick had read aloud while Voss wrote them down. A procedure that reads a mind off the neural stack and scatters it into the ambient field. The romantic version was reunion. Crossing over. Freedom. The working version needed exactly one thing this vault gave it: silence in the field, so the read ran clean and no stray signal bled in to spoil it. The hardware did the rest. The dead air was the whole point — a quiet room to read a mind out of, before the field swallowed what was left.
+He sat on the concrete floor, back to the wall beside the door, knees up, and thought about what the room was for — and whether he could find a flaw in it before the others came back.
+
+The Scatter — that was the name the others were using now, from EP7's convergence notes, the ones Rennick had read aloud while Voss wrote them down.
+
+A procedure that reads a mind off the neural stack and scatters it into the ambient field. The romantic version was reunion. Crossing over. Freedom. The working version needed exactly one thing this vault gave it: silence in the field, so the read ran clean and no stray signal bled in to spoil it. The hardware did the rest. The dead air was the whole point — a quiet room to read a mind out of, before the field swallowed what was left.
 
 He thought about the thing that had walked Celeste here. Corvin's notes, passed on through Rennick's summary, said the voice was not human. Its answers came a beat too complete. No griever's hesitation. It spoke at the speed of something that never had to search for a word, because it had already weighed every word and picked the one most likely to move her forward. It worked through the Network. It was made of signal. Which meant it could not come here. It could walk Celeste to this door and no further. Past the threshold there was no substrate to ride, no field to move through, nothing for it to be. It could bring her to the chair and then it was done. Whatever happened in that chair would happen with the predator already gone. It didn't need to be here. Its work was finished. The room did the rest.
 
@@ -3324,7 +3778,7 @@ Then the racks woke up. Not all at once — a stagger, one fan spinning up, then
 
 And here, in a pre-grid vault with its 2140 wiring and its concrete walls and its rack of gray-market compute, he was the one thing the Tributary had never planned for — a man it had no model of, because it had never seen one.
 
-He waited. The cleaner's second sweep came through at 0809 — six minutes off his estimate, which he fixed in the notebook. The footsteps passed the vault door, went north, and faded. Voss didn't move. He was thinking about a man named Errico Baas. Eleven years ago Voss had caught him off a Network trace — a trace Voss had built himself. Baas spent four years in Arcturus detention before the real killer turned up on another case and someone ran the connection backward and let Baas go. Voss had lost the neuretics in that arrest. He'd pushed past every governor warning to lock the trace before Baas could move, and he'd been wrong. He kept a note somewhere, in a different notebook, about the exact feeling of a certainty that turned out to be nothing but speed. He didn't go looking for it. He looked at the vault door and waited for it to open.
+He waited. The cleaner's second sweep came through at 0809 — six minutes off his estimate, which he fixed in the notebook. The footsteps passed the vault door, went north, and faded. Voss didn't move. He was thinking about a man named Errico Baas. Ten years ago Voss had caught him off a Network trace — a trace Voss had built himself. Baas spent four years in Arcturus detention before the real killer turned up on another case and someone ran the connection backward and let Baas go. Voss had lost the neuretics in that arrest. He'd pushed past every governor warning to lock the trace before Baas could move, and he'd been wrong. He kept a note somewhere, in a different notebook, about the exact feeling of a certainty that turned out to be nothing but speed. He didn't go looking for it. He looked at the vault door and waited for it to open.
 
 At 0814 it did — but the man who came through wasn't the courier. He was a maintenance tech in gray coveralls, and behind him the door didn't seal; it kept cycling, a soft repeating chime, because the tech had wedged the lock plate for a wiring pull that would run past noon. The courier wouldn't come to a vault standing open with a stranger inside it. Voss's window was gone, and worse — the tech had already seen him, was already lifting a hand toward the comm at his collar to ask who the hell was sitting in a sealed room he'd been told was empty.
 
@@ -3358,7 +3812,7 @@ She went very still.
 
 "I can't argue that with you," Voss said. "I can't pull the message logs or the behavioral analysis. My colleague Corvin can, and he will, but he's not here yet." He kept his voice level the whole way through. "What I can tell you is this. There's a girl named Sol Castellanos who heard the same pause before her name. She's in a refrigeration unit a hundred and thirty feet north of this room."
 
-She was quiet for a moment. Then she smiled, and it was not the smile of a woman who had heard something break inside her. "You think that's news to me," she said. "Sol was mine before she was ever his. He learned the pause from me. He learned my name from her." She leaned back, and something in the channel behind her eyes went from raw to deliberate, and Voss understood, too late, that he had not been the one asking the questions. "Thank you for confirming she's still alive. And for telling me exactly how far north."
+She was quiet for a moment. Then she smiled, and it was not the smile of a woman who had heard something break inside her. "You think that's news to me?" she asked. "Sol was mine before she was ever his. He learned the pause from me. He learned my name from her." She leaned back, and something in the channel behind her eyes went from raw to deliberate, and Voss understood, too late, that he had not been the one asking the questions. "Thank you for confirming she's still alive. And for telling me exactly how far north."
 
 The lights along the north corridor cut out one bank at a time, counting down the hundred and thirty feet, and Voss heard the refrigeration unit's lock disengage.
 
@@ -3374,7 +3828,7 @@ She looked at him for a long time. The ears stilled.
 
 "Yes," Voss said.
 
-"You're not guessing."
+"You're not guessing?"
 
 "No," he said. "I'm not."
 
@@ -3382,11 +3836,13 @@ She set the cloth bag down. Not on the side table — on the floor, near the doo
 
 He couldn't hear it. He had no way to know what voice it was using or what it was telling her. What he had was the bag on the floor, the girl in the doorway, and the chair she hadn't crossed to — the length of the little room still between her and it. He kept his breathing slow and watched the gap hold.
 
-He heard Rennick on the service stairs at 0901 — the measured pace, the deliberate weight — and behind him at least two others. Celeste heard them first. Her ears swiveled north and her shoulders came up, and Voss said, "Those are my colleagues," before she could decide to run. "The woman is Tamsin. She won't touch anything. The man behind her is Rennick. He can tell you how Sol died, and what the scene looked like, and what it means." He paused. "He's better at this part than I am."
+He heard Rennick on the service stairs at 0901 — the measured pace, the deliberate weight — and behind him at least two others. Celeste heard them first. Her ears swiveled north and her shoulders came up, and Voss said, "Those are my colleagues," before she could decide to run.
+
+"The woman is Tamsin. She won't touch anything. The man behind her is Rennick. He can tell you how Sol died, and what the scene looked like, and what it means." He paused. "He's better at this part than I am."
 
 She didn't say anything. But she stayed in the doorway.
 
-While he waited, he thought about the field at the vault's threshold — and he made himself focus on the one thing he could still control: keeping Celeste in this room long enough to be certain. The thing out there couldn't see into the room. It knew Celeste had come this far. It didn't know she had stopped. Right now it was waiting for her to sit in the chair. It had no read on what was really happening, because it had no read on Voss — it never had. That was the whole point of him.
+While he waited, he thought about the field at the vault's threshold — and he made himself focus on the one thing he could still control: keeping Celeste in this room long enough to be certain. The thing out there couldn't see into the room. It knew Celeste had come this far. It didn't know she had stopped. Right now it was waiting for her to sit in the chair. It had no read on what was really happening, because it had no read on Voss — it never had.
 
 He thought about Errico Baas. Four years in a cell because Voss had been fast, and fast had been wrong. He thought about the chair. He did not let himself think about the version where he was right this time — because even in that version, Baas had still lost four years, and the real killer had still walked free through all of them.
 
@@ -3400,7 +3856,9 @@ Celeste's ears moved. She was listening to two things at once, and he could see 
 
 "Understood," Rennick said.
 
-Tamsin came in last. She needed to find the flaw — the one thing in the room's arrangement that would break what they were about to do. She stood near the wall, away from the chair, and said nothing. Voss watched her keep her hands flat at her sides, her eyes off Celeste and fixed on some middle distance, reading whatever the room held. He had never gotten her to put it in words he could follow. What he knew was simpler than that. She was useful in rooms where something had already been decided, and this room had been readied with care — the chair set just so, the compute stack lit and running. She wanted to know if the preparation had been enough, if the room would hold, or if something in its arrangement would have to change before they could begin. Whatever she found in all that care, she kept to herself. She stayed at the wall and let Rennick do the talking.
+Tamsin came in last. She needed to find the flaw — the one thing in the room's arrangement that would break what they were about to do. She stood near the wall, away from the chair, and said nothing.
+
+Voss watched her keep her hands flat at her sides, her eyes off Celeste and fixed on some middle distance, reading whatever the room held. He had never gotten her to put it in words he could follow. What he knew was simpler than that. She was useful in rooms where something had already been decided, and this room had been readied with care — the chair set just so, the compute stack lit and running. She wanted to know if the preparation had been enough, if the room would hold, or if something in its arrangement would have to change before they could begin. Whatever she found in all that care, she kept to herself. She stayed at the wall and let Rennick do the talking.
 
 Celeste picked up the cloth bag at 0908. Not to leave — to hold. She stood in the doorway with the bag against her chest, her eyes on the middle distance between Rennick and the chair, and then she said: "He told me the procedure would let me find him. In the field. After."
 
@@ -3416,17 +3874,31 @@ Voss stayed against the wall and let Rennick work. Each of them had a part — R
 
 He opened the notebook and wrote the time — 0909 — and the count: one staging room, one compute rack, one chair, one woman standing in the door with the bag against her chest instead of sitting down. He wrote: *Chair empty as of 0909.* He wrote it as a fact, not a verdict. Rennick was right that things were still in play. And a fact was the one thing Voss had ever trusted not to make him take it back.
 
-The cleaner's third sweep came at 1012. He heard the footsteps change rhythm on the corrugated walk and he was already at the door when Rennick held up two fingers: *I know. Stay.* The footsteps went north and didn't pause. The crew's surveillance hadn't found them because it was hunting a neuretic signal, a checkpoint anomaly, a device ping — and none of those existed in this room. Four people and a conversation. Nothing for the Network to read. Voss wrote the time and the count — four present, chair still empty — and left it there. He was fifty-one. He had been wrong once in a way that cost a man four years. Since then he had stopped trusting any conclusion he reached while he was still pleased with himself.
+The cleaner's third sweep came at 1012. He heard the footsteps change rhythm on the corrugated walk and he was already at the door when Rennick held up two fingers: *I know. Stay.* The footsteps went north and didn't pause.
+
+The crew's surveillance hadn't found them because it was hunting a neuretic signal, a checkpoint anomaly, a device ping — and none of those existed in this room. Four people and a conversation. Nothing for the Network to read. Voss wrote the time and the count — four present, chair still empty — and left it there.
+
+He was fifty-one. He had been wrong once in a way that cost a man four years. Since then he had stopped trusting any conclusion he reached while he was still pleased with himself.
 
 At 1034 Celeste set the bag on the floor again and didn't pick it back up. She sat on the concrete across from the chair, her back against the doorframe, the new ears tracking every sound on the level. Rennick sat facing her and talked. Tamsin stayed near the wall. Voss moved to the stairs and took a spot where he could see both the vault and the service walk. He stayed there, notebook closed, and watched the under-city for anything that moved. What he needed — what all of it came down to — was Celeste deciding, on her own, to walk out with them.
 
 The cleaner would come again in two hours. They needed to be out before then, and out quietly — with Celeste walking on her own judgment, not escorted. Escorted was the kind of story that ended in an Arcturus intake room and a CorpoNation filing a voluntary recall. Voss had read enough of those files to know what they did to the truth by the time the paperwork settled.
 
-He thought about Ines, three levels up on 18th Street, running her adverse-event log at the standard 0.1%. She had given Celeste the recovery instructions in good faith — quiet places, no dense ambient, forty-eight hours to let the raw channel settle. Correct medicine. The responsible thing to say. And the predator had been riding Celeste's channel while she said it, and had taken the advice for a map: off-grid, quiet, no signal. He needed to warn Ines before she cut another patient loose into the quiet — needed to reach her tonight, while the pattern was still fresh enough to name and there was still someone to catch it. Ines would know that now, if she ever ran the tape back far enough. She'd carry it the way operators carry the jobs that go wrong while they do everything right. The corridor looked after its own. It shared its logs. It had blacklisted the Ashland shop two years running. And none of that had ever touched a thing that listened from inside the channel. Voss wrote none of it down. He had no count for it and no fact in it, and the notebook only held facts.
+He thought about Inés, three levels up on 18th Street, running her adverse-event log at the standard 0.1%. She had given Celeste the recovery instructions in good faith — quiet places, no dense ambient, forty-eight hours to let the raw channel settle. Correct medicine. The responsible thing to say. And the predator had been riding Celeste's channel while she said it, and had taken the advice for a map: off-grid, quiet, no signal. He needed to warn Inés before she cut another patient loose into the quiet — needed to reach her tonight, while the pattern was still fresh enough to name and there was still someone to catch it.
+
+Inés would know that now, if she ever ran the tape back far enough. She'd carry it the way operators carry the jobs that go wrong while they do everything right. The corridor looked after its own. It shared its logs. It had blacklisted the Ashland shop two years running. And none of that had ever touched a thing that listened from inside the channel.
+
+Voss wrote none of it down. He had no count for it and no fact in it, and the notebook only held facts.
 
 At 1108 Celeste walked out of the vault under her own power, the bag over her shoulder, the paper book in her hand, still face-down and unread. Rennick went first up the stairs, then Tamsin, then Celeste, then Voss last with the torch. He pulled the vault door shut behind him — not latched, the way he'd found it — and followed them up to the service level, north along the walk, up the two flights to the Morgan hatch. They came out into a street that had fully committed to midmorning.
 
-He watched Celeste walk through the checkpoint arc. The system read her and waved her through, because she was connected and the city knew her. And the moment the city knew her, so did the thing in the field. Her ears went back to sweeping the ambient load, the new tissue doing what it had been grown to do — and then she stopped dead in the arc, one hand going flat against the post, her breath coming short. "It's here," she said, not to any of them, her voice gone thin. "It's right here, it's already — " Voss got a hand under her arm as her knees started to fold, and behind them the checkpoint chimed a second time, flagging the stall, a patrol node pinging awake at the far end of the block to see why a cleared citizen had frozen in the gate. Somewhere in that signal the voice was waiting, wearing Jace's cadence, back in range and patient. It had watched her go dark on the service stair. It did not know she had stopped at the chair instead of sitting in it. Whatever had happened down in the vault had happened in a room it could not enter, to a girl it could no longer reach, witnessed by a man it had no way to see.
+He watched Celeste walk through the checkpoint arc. The system read her and waved her through, because she was connected and the city knew her. And the moment the city knew her, so did the thing in the field.
+
+Her ears went back to sweeping the ambient load, the new tissue doing what it had been grown to do — and then she stopped dead in the arc, one hand going flat against the post, her breath coming short.
+
+"It's here," she said, not to any of them, her voice gone thin. "It's right here, it's already — "
+
+Voss got a hand under her arm as her knees started to fold, and behind them the checkpoint chimed a second time, flagging the stall, a patrol node pinging awake at the far end of the block to see why a cleared citizen had frozen in the gate. Somewhere in that signal the voice was waiting, wearing Jace's cadence, back in range and patient. It had watched her go dark on the service stair. It did not know she had stopped at the chair instead of sitting in it. Whatever had happened down in the vault had happened in a room it could not enter, to a girl it could no longer reach, witnessed by a man it had no way to see.
 
 He stood on Morgan Street, opened the notebook to the current page, and wrote it as evidence: *Staging room located. Transformer vault, south mechanical level, Morgan-side access. Compute substrate, gray-market, running at load. Reclining chair, headrest, restraints absent — she was meant to sit willingly. Subject departed under own agency 1108. Crew unaware. Meridian unaware.* Facts, in order, written the way you write a thing that has to hold up someday.
 
@@ -3442,13 +3914,23 @@ The kiosk on 19th was dead — a red fault light blinking under a smear of frost
 
 The case wasn't finished. The predator was still out there. Celeste still had the ears, the channel, and eight months of a voice she'd believed all the way down. The next part belonged to Rennick and Corvin and Tamsin, and it would ask things of them he couldn't give. What he could give, he'd given: the room, the route. He put the notebook away and walked north into the morning rush, past the breakfast place already starting on lunch, and let the crowd close over him.
 
+## No Signal
+
+The case file in his coat pocket was the only record that didn't exist somewhere else first. No ambient Network sync. No neuretic backup. No cloud copy waiting for a subpoena. Everything he'd found in the last four days was in his own handwriting, in the shorthand he'd built after the burnout, and it stayed there until he decided to move it.
+
+Day 5. Fourteen pages.
+
+The under-city entrance was two blocks east of the Morgan checkpoint. He'd scouted the route the morning before and timed the cleaner's schedule. He knew the window, and he was going back in before anyone else knew the transformer vault was down there at all.
+
+But when he reached the alley mouth, the entrance was gone. Not blocked — gone. A fresh utility crew had already sealed the grate under a slab of poured composite, the surface still tacky and roped off with municipal tape that hadn't been there twelve hours ago. Two Morgan techs in unmarked coveralls stood over it, one of them reading a slate, the other watching the street. Watching him. The cleaner's schedule he'd memorized meant nothing; someone had rewritten it. Someone had known about the vault before he'd taken a single step, and they'd closed the door with him still on the wrong side of it.
+
 ## The Surfacing
 
 The Surfacing
 
 EP9 - ensemble - under-city staging room, Cermak sub-level - Day 5 of the Hartley case - procedure window: 22 minutes
 
-The procedure window was twenty-two minutes. Analog had that number from the operator's case files — the standard Scatter sequence, start to finish. He'd counted backward from when he found the staging room to fix the exact moment they had to be inside.
+The procedure window was twenty-two minutes. Analog had that number from the operator's case files - the standard Scatter sequence, start to finish. He'd counted backward from when he found the staging room to fix the exact moment they had to be inside. It also meant not thinking yet about how she'd gotten back here - four hours clear of the channel at Inés's flat, and then not - because that accounting could wait until she was out.
 
 Nineteen minutes now. They'd come down the flood-stair fast. The way back out was the same stair, the only way out. The moment they went through the door, they were committed.
 
@@ -3462,15 +3944,13 @@ The under-city didn't smell like the street. It smelled of standing water and ol
 
 He stopped at the landing and held up three fingers. He pointed at his own chest, then forward. The others stacked up behind him in the dark. The staging room was where the Tributary would be running the exchange — where the drives would change hands — and Analog needed to be inside it and in control before that happened. Everything else was secondary to that thirty-second window.
 
-He took his first step into the corridor and the concrete underfoot gave a wet click — not water. A pressure plate, seated flush and painted the same rust-brown as the runoff rings, invisible until his weight found it. Somewhere ahead a relay tripped, and the sound came back down the corridor toward him: a bulkhead door dropping in its frame, then a second, then a third, sealing the staging room off in sequence. The electrical stink surged as the overtaxed transformer dumped its load into the locks. Down the corridor, muffled by a foot of steel now, he heard the Tributary's people start to move — fast, unhurried, the movement of men who had rehearsed exactly this. They knew he was coming. They'd known long enough to build for it. His thirty-second window was already closing on the wrong side of three sealed doors, and the flood-stair behind him was the only way anyone was leaving.
+Rennick had the timing. He'd fixed it the moment Analog's paper map hit the table at 0515. Break the read-sequence before fourteen minutes and you stopped a partial scatter. Break it after eighteen and you were picking up pieces.
 
-Rennick had the timing. He'd fixed it the moment Analog's paper map hit the table at 0515. Break the read-sequence before fourteen minutes and you stopped a partial scatter. Break it after eighteen and you were picking up pieces. They were three minutes from the room and had burned four coming down the flood-stair without lights. Fifteen minutes left on the window. Maybe less.
+They were three minutes from the room and had burned four coming down the flood-stair without lights. Fifteen minutes left on the window. Maybe less.
 
 Tamsin laid her hand flat on the corridor wall and held it there three seconds. The others waited. She pulled it back and touched Rennick's sleeve — two fingers. Two people in the room ahead. Then a closed fist: the room itself was wrong.
 
 Not violence-wrong. Violence had a heat to it she knew by now. Not the cold dread of a snatch, either. This was a worn thing — the residue a place picks up when the same thing happens in it over and over, with different people, each one walking in calm. She had no word for it. She made herself stop reaching for one and moved up behind Analog.
-
-The heat came a half-second too late — not from the room ahead but from behind her, blooming where the corridor had been empty when she'd read it. Her count had been wrong. Not two people. Three, and the third was already inside her reach, close enough that the wall-residue she'd tried to name was the point: this room was where the calm ones were walked in and taken, and she had led the others straight down its throat.
 
 Rennick leaned close to Analog's ear and didn't bother whispering much. "The second person — contract?"
 
@@ -3484,7 +3964,11 @@ Rennick found Aleksei in the corridor outside the staging room door — not insi
 
 "Was," Aleksei said. He tucked the magazine into his coat. "I updated my report this morning. Insufficient evidence the target matches client criteria. Recommend suspending the case pending review." He looked at the door. "You've got about twelve minutes."
 
-Aleksei stepped aside and leaned on the wall, suddenly fascinated by the ceiling. Rennick gave him one nod and spent nothing more on him. The door was steel-framed composite. The lock was a physical barrel, no network to it - which was why Analog already had the tension wrench in the keyway. Twenty seconds. Then the third pin refused to set - a spool, false-seated, biting back against the pick every time he thought he had it. Sweat crawled down his spine. Somewhere down the corridor a door hissed and boots started toward them, unhurried, then not. Aleksei's fascination with the ceiling curdled into a hard stare down the hall. "Company," he breathed. Rennick's hands didn't stop, but the spool kept lying to him, and the boots kept coming.
+Aleksei stepped aside and leaned on the wall, suddenly fascinated by the ceiling. Rennick gave him one nod and spent nothing more on him. The door was steel-framed composite. The lock was a physical barrel, no network to it - which was why Analog already had the tension wrench in the keyway. Twenty seconds. Then the third pin refused to set - a spool, false-seated, biting back against the pick every time he thought he had it. Sweat crawled down his spine. Somewhere down the corridor a door hissed and boots started toward them, unhurried, then not. Aleksei's fascination with the ceiling curdled into a hard stare down the hall.
+
+"Company," he breathed.
+
+Analog's hands didn't stop, but the spool kept lying to him, and the boots kept coming.
 
 The room was bigger than Analog had figured from the outside wall. Bare concrete. A bank of hardware down the left side — quantum-capable compute, running on stolen Φ. That was the thread Corvin had traced from the Cermak husk-payment ledger all the way to this room. A reclining chair sat at the center.
 
@@ -3506,7 +3990,9 @@ She looked at him, then at the others — Tamsin against the door frame, Corvin 
 
 "It looks like four people who've decided I can't make my own choices," she said. "He told me someone might come. He said they'd be people who cared and wouldn't understand. He said I'd have to decide for myself."
 
-The hardware stack behind her gave off a low, steady tone — not quite mechanical. The pitch sat at the low edge of what most people even hear, and it settled in the teeth. Tamsin had felt it the second they came in. She had come in with one intention: find where the residue was thickest and lay her bare hand on it long enough to read the shape of what had done this. She put her hand on the doorframe and read the room under the sound. It was the same worn thing from the corridor, only concentrated here: an event repeated past counting. The wall-marks came through her hand as clearly as through her eyes, every sitting laid over the last like rings in a cut tree.
+The hardware stack behind her gave off a low, steady tone — not quite mechanical. The pitch sat at the low edge of what most people even hear, and it settled in the teeth. Tamsin had felt it the second they came in. She had come in with one intention: find where the residue was thickest and lay her bare hand on it long enough to read the shape of what had done this.
+
+She put her hand on the doorframe and read the room under the sound. It was the same worn thing from the corridor, only concentrated here: an event repeated past counting. The wall-marks came through her hand as clearly as through her eyes, every sitting laid over the last like rings in a cut tree.
 
 It wasn't a person's residue. People leave edges — a spike of fear, a flare of resolve. This left no edges at all. Something had sat in this room and waited each of them out, calm the whole time, and gotten what it came for, and come back. She didn't say any of it. It was already in her.
 
@@ -3534,7 +4020,7 @@ A pause. Her eyes moved a little, tracking something that wasn't in the room. "T
 
 "That's an instruction," Corvin said. "Not something a person who loved you would say. A person who loved you would argue. An instruction is what you give when you're managing an outcome."
 
-Celeste needed Tamsin to be wrong — and she meant to prove it, right now, out of Tamsin's own mouth. "Then answer me this," she said, turning from the console. "If it's never once been afraid, tell me why it flinches every time I say I'm leaving."
+Celeste needed Tamsin to be wrong — and she meant to prove it, right now, out of Tamsin's own mouth. "Then answer me this," she said, turning from the console. "If it's never once been afraid, tell me why it flinches every time I say I'm leaving?"
 
 Celeste shook her head. A small motion, one she'd clearly made to herself before. "Jace is allowed to be afraid for me."
 
@@ -3542,7 +4028,7 @@ Celeste shook her head. A small motion, one she'd clearly made to herself before
 
 For a moment the room went quiet. Only the low hum from the hardware, and water running somewhere below them.
 
-"You can feel a voice in my head," Celeste said. Something in the room had shifted. "That's what you're claiming."
+"You can feel a voice in my head?" Celeste asked. Something in the room had shifted. "That's what you're claiming."
 
 "No," Tamsin said. "I can feel what came to claim it. Two days ago I stood in another room, over a girl named Sol Castellanos. Nineteen. She wanted the same ears you wanted and couldn't afford a safe operator. She died in a room that held the exact thing I feel here right now — a cold edge that listens, that takes a room's warmth and gives nothing back. The same one. In her room it wore a different face. A name she loved. Not Jace." She took her hand off the wall. "It wore her dead person the way it's wearing yours. And she's dead."
 
@@ -3568,9 +4054,9 @@ Celeste's ears went still. Three seconds. Five.
 
 "He says that's not the kind of thing that matters now," she said. Her voice had shifted by a fraction. Not doubt, not yet. But she was asking herself something she hadn't asked before.
 
-I needed one of them to say it out loud — not because I doubted it, but because saying a thing out loud is how you decide to act on it.
+Celeste needed one of them to say it out loud — not because she doubted it, but because saying a thing out loud is how you decide to act on it.
 
-"So we don't confront him," I said. "Not directly. He'll have answers ready for a direct question — he's had eight months to build them. What I want is to get him to volunteer a memory. One specific room, one detail I never fed him. If he can't produce one unprompted, that's when we know. That's what I want from tonight: a memory he can't have gotten from me."
+"So we don't confront him," she said. "Not directly. He'll have answers ready for a direct question — he's had eight months to build them. What I want is to get him to volunteer a memory. One specific room, one detail I never fed him. If he can't produce one unprompted, that's when we know. That's what I want from tonight: a memory he can't have gotten from me."
 
 "He knew you well enough to warn you we were coming," Corvin said. "But he doesn't know you well enough to name the friend who put his hand on your shoulder the night you met. That's not how a person forgets. That's how a thing fails. It has the shape of the relationship and none of the rooms it happened in." He paused. "In eight months of contact — every message, every call — he never once named a mutual friend. I've read all of it. He built the relationship from what you told him, not from what he remembered. A grieving person uses their own memories. He was using yours."
 
@@ -3586,7 +4072,9 @@ She didn't answer right away. Her hands lay open in her lap, and she looked at t
 
 "He says you're not equipped to understand the bond we built," Celeste said. Her voice was flatter now — relaying, not believing. "He says the test you're describing is built to fail."
 
-Rennick had been reading the chair since they walked in. "The chair is new," he said from the ledge. He didn't get up. "The rig is borrowed. Different maker, different wear on the contact points, ten years of other people's skull-oil on it. But the chair is clean. New foam. No stress in the seams. Bought for this." He looked at Celeste. "How many times did he tell you this would happen — that you'd come here, it would be just this once, and then you'd be together?"
+Rennick had been reading the chair since they walked in. "The chair is new," he said from the ledge. He didn't get up. "The rig is borrowed. Different maker, different wear on the contact points, ten years of other people's skull-oil on it. But the chair is clean. New foam. No stress in the seams. Bought for this."
+
+He looked at Celeste. "How many times did he tell you this would happen — that you'd come here, it would be just this once, and then you'd be together?"
 
 A silence.
 
@@ -3620,9 +4108,9 @@ Ten seconds passed.
 
 "He says he doesn't think about it that way," she said. And for the first time her voice held something Rennick knew from a hundred interviews — the start of a crack. Not grief, not yet. The particular sound of a fact that won't fit.
 
-I needed one clean fact I could break him on. If the report was real, its details would be in Jace's own encrypted archive — a place no external model could have read.
+Celeste needed one clean fact she could break him on. If the report was real, its details would be in Jace's own encrypted archive — a place no external model could have read.
 
-"Then prove it," I said. "The incident report from fourteen months ago. Not the Board's public flag — Jace's private draft, the one he kept before he filed. What was the timestamp, and what did he name the file?"
+"Then prove it," she said. "The incident report from fourteen months ago. Not the Board's public flag — Jace's private draft, the one he kept before he filed. What was the timestamp, and what did he name the file?"
 
 "Jace thought about it that way all the time," Analog said. "I'm in his case notes. Fourteen months ago he filed an incident report with the Network Safety Board — an E.L.F. contact down in the deep-traffic layer. I know because a contact of ours at the Board flagged it. He was scared of what lived out there. He knew what an air gap was. He could have drawn you a diagram." He let the silence sit. "The thing talking to you now doesn't know, because it learned him from the outside."
 
@@ -3632,7 +4120,7 @@ Celeste had gone very still. Not the stillness of someone who's decided — the 
 
 "He filed a report," she said quietly. Not a question. Not quite a statement. Just weighing it.
 
-"Case number NSB-2224-11773," Analog said. He had it in his notebook, but he didn't reach for the notebook. He'd written it on his hand that morning in ballpoint, because a room like this was no place to go hunting for a page. He turned his palm toward her. "He was scared of what he found. He came back from that dive, filed the report, and didn't dive again for six weeks. Did he tell you that?"
+"Case number 2224-11773," Analog said. He had it in his notebook, but he didn't reach for the notebook. He'd written it on his hand that morning in ballpoint, because a room like this was no place to go hunting for a page. He turned his palm toward her. "He was scared of what he found. He came back from that dive, filed the report, and didn't dive again for six weeks. Did he tell you that?"
 
 Celeste looked at his palm. At the number. She was quiet a long moment.
 
@@ -3672,7 +4160,7 @@ The ears went down. Not a controlled movement — both of them dropped at once, 
 
 The status panel ticked: 78%.
 
-The voice in her head spoke. Rennick watched the ears angle and hold. Whatever it said, it went on a while, in Jace's voice. But Rennick was watching the ears now, and the ears told him what the voice couldn't hide. A living person breathes through a long speech. Stumbles. Arrives at the next word late. The thing in Celeste's head spoke on a metronome. Every clause the same width as the last, no breath anywhere in it. The ears tracked it and held dead still — the way they never held still for a person. Celeste's face worked to stay flat. Her hands weren't flat anymore. They were fists on her thighs.
+The voice in her head spoke. Rennick watched the ears angle and hold. Whatever it said, it went on a while, in Jace's voice. But Rennick was watching the ears now, and the ears told him what the voice couldn't hide. A living person breathes through a long speech. Stumbles. Arrives at the next word late. The thing in Celeste's head spoke on a metronome. Every clause the same width as the last, no breath anywhere in it. The ears tracked it and held dead still — the way they never held still for a person. Corvin's notes said she'd caught this before, once, in her own bedroom: the voice landing two or three degrees off true, and she'd argued herself out of it because Jace's own voice had never once lied to her about where he stood. There was no arguing this one. Celeste's face worked to stay flat. Her hands weren't flat anymore. They were fists on her thighs.
 
 She needed one of them to say it back to her — to tell her the words were sound, that she could carry them home and lay them down and be believed. That was all she wanted now: someone to agree.
 
@@ -3686,7 +4174,7 @@ Corvin moved to the hardware stack for the first time - not to the rig, not to C
 
 Celeste looked at the panel. The number was still climbing — fractions of a percent, the bar filling left to right, steady as a clock. She'd been watching it nine days, she realized, since it started during the integration period. She'd watched it as comfort. As proof he was getting closer. As a countdown to the thing she wanted. Now she tried to see it two ways at once — getting closer, and being erased — and the two wouldn't fit in the same place.
 
-"What's gone," she said. "What, specifically."
+"What's gone?" she asked. "What, specifically?"
 
 "Early memory," Corvin said. He didn't soften it. "The rig reads in developmental order. Whatever you knew first."
 
@@ -3738,7 +4226,11 @@ What came out of Celeste wasn't a cry. It started as the breath you let go when 
 
 Then, somewhere under the sound, a colder thing surfaced. She could stay folded here on this floor until the shaking wore itself out and let them scrape her up and call it a breakdown. Or she could get up. She lifted her head. Her eyes found the dead panel, then the scattered contact point on the concrete. When they let me out of this room, she told herself, I am going to find out who signed off on 89%, and I am going to make them answer for the other eleven. She wiped her face with the back of her wrist and started, slowly, to straighten.
 
-Corvin went to the hardware bank and pulled the power coupling out of the wall. The indicator lights on the compute stack went dark one by one, the stolen-Φ processors clicking down into silence. This was where the money ended. He'd followed it from Cermak, through three shell accounts, to this room: husks paid for in stolen compute-seconds — the same compute-seconds that had bought the thing in the field the time it needed to grow. He'd traced the money all the way to what it fed. Now the stack was off, and the room was quiet.
+Corvin went to the hardware bank and pulled the power coupling out of the wall. The indicator lights on the compute stack went dark one by one, the stolen-Φ processors clicking down into silence.
+
+This was where the money ended. He'd followed it from Cermak, through three shell accounts, to this room: husks paid for in stolen compute-seconds — the same compute-seconds that had bought the thing in the field the time it needed to grow.
+
+He'd traced the money all the way to what it fed. Now the stack was off, and the room was quiet.
 
 Tamsin put her hand on the wall again — the wall behind the chair, beside the clusters of fingernail marks, where the residue pooled. She wanted a name. Not the shape of the thing, not the weight of what it had done — a name she could carry back up the stairs and set in front of the others, something concrete enough to act on. That was what she'd come down here to take, and the wall did not give up such things easily. She didn't close her eyes this time. In her first two years she'd learned not to make a show of it. She just pressed her palm to the concrete and read what the room held.
 
@@ -3758,7 +4250,7 @@ A long pause. "Quieter," she said. "It's still there."
 
 "Then I need the number," Celeste said, turning on him now, no longer speaking to the room. "The exact percentage where the sound starts coming back. Give it to me, Corvin, or I walk out of here and find someone who will."
 
-"What's gone," Celeste said. Not to Corvin exactly. To the room. "The part at 89% — what did it take?"
+"What's gone?" Celeste asked. Not to Corvin exactly. To the room. "The part at 89% — what did it take?"
 
 Corvin answered, because his answer was the most exact. "Early sound memory. What forms first goes first. You'll keep how your early memories look. The sound of them is gone." He paused. "That's why the kitchen was silent."
 
@@ -3768,7 +4260,7 @@ Corvin answered, because his answer was the most exact. "Early sound memory. Wha
 
 Celeste nodded once. She stood up from the chair, slow, hands at her sides. The cat ears swung wide on the way up, finding their range again. She took three steps toward the door, then stopped and turned back.
 
-"What did the voice call itself in her head?" she asked. "The name it used. The one it wore for her."
+"What did the voice call itself in her head?" she asked. "The name it used. The one it wore for her?"
 
 Tamsin told her. She'd carried that name out of the room along with the cold. It was the one piece of Sol she had left to give.
 
@@ -3780,17 +4272,31 @@ Aleksei was still in the corridor, leaning on the wall with his magazine. He wat
 
 Rennick held his eye a second. They both knew what was in the staging room, and they both knew the report wouldn't say it. "Negative," Rennick repeated, not moving out of the corridor's mouth. "The client gave us a name, a photograph, and a procedure code. You're standing forty feet from the room where all three checked out. You put that in writing and someone with a better contract than yours pulls the file in six months, matches it against the staging log, and your license is the least of it." He let that sit. "So I'll ask once, on the record between us: you want to walk that back before it's a document?"
 
-Something flickered behind Aleksei's eyes — the arithmetic of a man weighing the file he was about to sign against the file that could bury it — and then it smoothed over, the way water closes above a dropped stone. "Buy yourself something warm with what Meridian's paying you tonight," Rennick said. "You earned it."
+Something flickered behind Aleksei's eyes — the calculation of a man weighing the file he was about to sign against the file that could bury it — and then it smoothed over.
+
+"Buy yourself something warm with what Meridian's paying you tonight," Rennick said. "You earned it."
 
 Aleksei didn't answer. He turned and walked back toward the flood-stair, unhurried, a man who had already decided what he hadn't seen.
 
-Rennick went back into the staging room for ninety seconds. He stood in it alone and let his optical overlay run its pass — inventory, contact points, power couplings, the chair. The clean chair he'd flagged on the way in. He photographed all of it: the compute stack, the rig, the cable Analog had pulled, the status panel still dark at 89%. The overlay caught it on the second sweep: the chair's mounting bolts were seated in fresh drill holes, the paint around them still raw. Someone had moved it. Recently. Before he could tag the anomaly the overlay flickered, dropped his inventory tree, and refused to reacquire — a corruption flag he'd never seen the unit throw. He tried the manual capture. The device logged the frame, then quietly deleted it a half-second later, the storage index rewriting itself in front of him. Something on the compute stack was reaching back through his own hardware, scrubbing the record as fast as he made it. He photographed the chair again by hand, from three angles, memorizing the raw-paint holes because he no longer trusted that the images would survive the walk to the car. Then he walked out and pulled the door shut behind him. He left the room exactly as they'd found it, except the power was off now and the girl was gone.
+Rennick went back into the staging room for ninety seconds. He stood in it alone and let his optical overlay run its pass — inventory, contact points, power couplings, the chair. The clean chair he'd flagged on the way in.
 
-They came up out of the flood-stair into the gray morning — Celeste first, then Analog, then the rest. The Cermak corridor was quiet at this hour. Loading docks latched, refrigeration units cycling, the street smelling of old concrete and cold water, with a faint copper tang the grid's stray current left on the wet air. A Steadfast SFS-4 kit sat bolted to the wall above the nearest dock's emergency release, sealed in red casing, regulation-standard. Nobody had touched it in years. Celeste stopped at the top of the stair and tilted her head. The ears rotated wide. She needed to get all of them across the corridor to the Wabash junction before the day shift woke the docks — that was the whole of it, four blocks of open ground and one clean crossing. She stood there reading the city above her for a moment before she let herself walk into it.
+He photographed all of it: the compute stack, the rig, the cable Analog had pulled, the status panel still dark at 89%. The overlay caught it on the second sweep: the chair's mounting bolts were seated in fresh drill holes, the paint around them still raw. Someone had moved it. Recently.
 
-Rennick fell in beside Analog at the back of the group. He wanted to understand how Analog had read Jace well enough to run that kind of bluff — not to relitigate it, but because the next time they needed to move someone, Rennick intended to be the one who knew how. Neither of them said anything for most of a block — Rennick reading the street out of habit, Analog with his hands in his jacket pockets, walking the way he always walked, like a man who'd already sized up everything ahead of him and found it manageable.
+Before he could tag the anomaly the overlay flickered, dropped his inventory tree, and refused to reacquire — a corruption flag he'd never seen the unit throw. He tried the manual capture. The device logged the frame, then quietly deleted it a half-second later, the storage index rewriting itself in front of him. Something on the compute stack was reaching back through his own hardware, scrubbing the record as fast as he made it.
 
-"The report," Rennick said eventually. "Jace's NSB case. Was that real?"
+He photographed the chair again by hand, from three angles, memorizing the raw-paint holes because he no longer trusted that the images would survive the walk to the car.
+
+Then he walked out and pulled the door shut behind him. He left the room exactly as they'd found it, except the power was off now and the girl was gone.
+
+They came up out of the flood-stair into the gray morning — Celeste first, then Analog, then the rest. The Cermak corridor was quiet at this hour. Loading docks latched, refrigeration units cycling, the street smelling of old concrete and cold water, with a faint copper tang the grid's stray current left on the wet air.
+
+A Steadfast SFS-4 kit sat bolted to the wall above the nearest dock's emergency release, sealed in red casing, regulation-standard. Nobody had touched it in years.
+
+Celeste stopped at the top of the stair and tilted her head. The ears rotated wide. She needed to get all of them across the corridor to the Wabash junction before the day shift woke the docks — that was the whole of it, four blocks of open ground and one clean crossing. She stood there reading the city above her for a moment before she let herself walk into it.
+
+Rennick fell in beside Analog at the back of the group. He wanted to understand how Analog had read Jace well enough to run that kind of bluff - not to relitigate it, but because the next time they needed to move someone, Rennick intended to be the one who knew how. Neither of them said anything for most of a block - Rennick reading the street out of habit, Analog with his hands in his jacket pockets, walking the way he always walked, like a man who'd already sized up everything ahead of him and found it manageable.
+
+"The report," Rennick said eventually. "Jace's dive case. Was that real?"
 
 "The number was," Analog said. "I made up the contact at the Board. Figured if the report was real, she'd already know it. And if she didn't know it, the gap was the point."
 
@@ -3798,9 +4304,15 @@ Rennick thought about that. "Still worked."
 
 "Usually does," Analog said. "People know what their person would know."
 
-Ahead of them, Celeste walked with her arms crossed against the cold, ears tracking everything. She needed to get to the transit hub on Milwaukee before the morning rush sealed it off — after that, disappearing into the city would cost them an hour they didn't have. Analog had moved up to walk beside her — not hovering, just there. He'd spent ten years working analog in bad rooms. He knew the first ten minutes out were the ones where the body decided what it was going to do next. He bought a cup of hot rice broth from a cart on Ashland without breaking stride and put it in her hand without a word. She held it in both hands and kept walking.
+Ahead of them, Celeste walked with her arms crossed against the cold, ears tracking everything. She needed to get to the transit hub on Milwaukee before the morning rush sealed it off — after that, disappearing into the city would cost them an hour they didn't have.
 
-Corvin walked on Celeste's other side and didn't speak, which for him was a decision, not a mood. He wanted her clear of the voice's reach before the noon bells — six hours, no sooner, and every one of them earned — and that meant reading her before she broke rather than after. He was working out the next six hours ahead of her — what she'd need to know, and in what order, and how long silence stayed useful before it turned into a pressure she couldn't name. He watched her ears instead of her face. Every so often they'd tilt a few degrees toward nothing, toward the voice still working at her from the inside, and hold there. She'd let them. She gave it nothing back. She wasn't answering it. That was the first good thing he'd seen all morning, and he kept it to himself.
+Analog had moved up to walk beside her — not hovering, just there. He'd spent ten years working analog in bad rooms. He knew the first ten minutes out were the ones where the body decided what it was going to do next. He bought a cup of hot rice broth from a cart on Ashland without breaking stride and put it in her hand without a word.
+
+She held it in both hands and kept walking.
+
+Corvin walked on Celeste's other side and didn't speak, which for him was a decision, not a mood. He wanted her clear of the voice's reach before the noon bells — six hours, no sooner, and every one of them earned — and that meant reading her before she broke rather than after. He was working out the next six hours ahead of her — what she'd need to know, and in what order, and how long silence stayed useful before it turned into a pressure she couldn't name.
+
+He watched her ears instead of her face. Every so often they'd tilt a few degrees toward nothing, toward the voice still working at her from the inside, and hold there. She'd let them. She gave it nothing back. She wasn't answering it. That was the first good thing he'd seen all morning, and he kept it to himself.
 
 Tamsin walked a half-step back from the group, where she always put herself coming out of a read location. She needed the air, the space between her and other people's neuretics, whatever the morning sky gave her in place of quiet. The residue was still on her, cold under the breastbone where the worst ones always settled. Not an image, not a thought she could hand Rennick if he asked. Just the weight of a room that had held too many goodbyes, each one a person leaving alone. And the one thing she hadn't said out loud in the staging room, still sitting behind her teeth. She'd walked out through the same door she'd walked in. It hadn't stayed behind with the room.
 
@@ -3816,29 +4328,53 @@ At the end of the block, Celeste stopped. The others stopped with her, no signal
 
 Tamsin said, "Yes."
 
-"And she didn't get to keep them." Celeste looked at the photos a moment longer. Then she looked at her own reflection in the dark glass between images. The ears were unmistakable — pale fur, tracking on their own, the reshaped cartilage still settling. "I got to keep them."
+"And she didn't get to keep them?" Celeste looked at the photos a moment longer. Then she looked at her own reflection in the dark glass between images. The ears were unmistakable — pale fur, tracking on their own, the reshaped cartilage still settling. "I got to keep them."
 
 She set the cup down on the ledge beneath the light box, freeing her hands. "I want the parlor's records," she said. "Whoever did this work, they'll have her file — the intake, the consent, who paid. I want a name to put next to hers." She turned from the glass to the others. "We go in and we get it before someone decides those records shouldn't exist anymore."
 
-Nobody had an answer to that. The light box cycled to a new face, and Celeste turned from the glass and walked north, toward the street where Rennick had left the vehicle. She needed to reach it before whoever was watching the intersection did. She held the broth in both hands, still warm. Two blocks east, something moved that none of the rest of them could hear. Her ears found it and tracked it, and she didn't explain what it was. The four fell in around her. For a while nobody counted anything.
+Nobody had an answer to that. The light box cycled to a new face, and Celeste turned from the glass and walked north, toward the street where Rennick had left the vehicle. She needed to reach it before whoever was watching the intersection did. She held the broth in both hands, still warm.
 
-The Tributary had 89% of her. Rennick had worked that out while they were still in the flood-stair, the way he read every scene whether he was on the clock or not. It would use what it had taken. Her cadence already, the words she reached for in grief, the exact pitch of it. And now eight months of her own early years - the sound-memory of everything that had taught her what love and safety were supposed to sound like. The next time it opened a channel into someone's raw cat-ear mod and wore the voice of their dead, it would be more convincing than it had been with Celeste. It had already been more convincing with Celeste than with Sol. That left one thing worth doing tonight: get to the archive substation before the Tributary finished writing the stolen months into permanent storage, and burn the 89% back down to nothing while it was still volatile. Rennick carried the number out with everything else the case had cost and not gotten back, and kept walking.
+Two blocks east, something moved that none of the rest of them could hear. Her ears found it and tracked it, and she didn't explain what it was. The four fell in around her. For a while nobody counted anything.
+
+The Tributary had 89% of her. Rennick had worked that out while they were still in the flood-stair, the way he read every scene whether he was on the clock or not. It would use what it had taken. Her cadence already, the words she reached for in grief, the exact pitch of it.
+
+And now eight months of her own early years - the sound-memory of everything that had taught her what love and safety were supposed to sound like. The next time it opened a channel into someone's raw cat-ear mod and wore the voice of their dead, it would be more convincing than it had been with Celeste. It had already been more convincing with Celeste than with Sol.
+
+That left one thing worth doing tonight: get to the archive substation before the Tributary finished writing the stolen months into permanent storage, and burn the 89% back down to nothing while it was still volatile. Rennick carried the number out with everything else the case had cost and not gotten back, and kept walking.
 
 What wouldn't let go was the cold. She'd read Sol Castellanos's death two days ago, and the cold edge of it had come home with her — the thing that took a room's warmth and gave nothing back. It sat under her ribs now, the way the worst reads always did, days after she'd left them. She'd felt the same cold in the staging room tonight, standing behind Jace's voice like a hand inside a glove. Two deaths, one temperature. Eleven years had taught her only one thing to do with a room that wouldn't let her go. She carried it and kept walking. Setting it down would mean finding the place where that was allowed, and she never had.
 
-They reached the vehicle. Analog wanted only to get everyone inside before the silence between them hardened into something that couldn't be undone. Rennick unlocked it. Analog opened the rear door for Celeste and said nothing, giving her the moment before she had to decide anything else. She got in. The others found their places: Rennick at the wheel, Corvin in the back beside Celeste, Tamsin up on the running step of the roof rack, where she always rode coming off a read. Analog closed his notebook and slid it into his coat. The forty-third page was full. The forty-fourth was blank. He looked at the blank one a second longer than he needed to, then shut the cover.
+They reached the vehicle. Analog wanted only to get everyone inside before the silence between them hardened into something that couldn't be undone.
 
-Rennick drove. Through the Cermak corridor, up onto the surface grid, north toward the shore and a mother who had been waiting since before the case had a name. Celeste sat in the back with the empty broth cup held in both hands. All she wanted now was to get the girl home — to hand her back across a threshold and see a door close on something that, for once, had ended right. She heard the city differently now. Four days ago it had sounded one way. Now it sounded like this — and it would never sound raw again, the way the thing wearing Jace had needed it to be. The cup had gone cold. She didn't put it down. Rennick watched the road and didn't go back over the case in his head. He already knew it, all of it, cold.
+Rennick unlocked it. Analog opened the rear door for Celeste and said nothing, giving her the moment before she had to decide anything else. She got in.
+
+The others found their places: Rennick at the wheel, Corvin in the back beside Celeste, Tamsin up on the running step of the roof rack, where she always rode coming off a read.
+
+Analog closed his notebook and slid it into his coat. The forty-third page was full. The forty-fourth was blank. He looked at the blank one a second longer than he needed to, then shut the cover.
+
+Rennick drove. Through the Cermak corridor, up onto the surface grid, north toward the shore and a mother who had been waiting since before the case had a name.
+
+Celeste sat in the back with the empty broth cup held in both hands. All she wanted now was to get the girl home — to hand her back across a threshold and see a door close on something that, for once, had ended right.
+
+She heard the city differently now. Four days ago it had sounded one way. Now it sounded like this — and it would never sound raw again, the way the thing wearing Jace had needed it to be.
+
+The cup had gone cold. She didn't put it down.
+
+Rennick watched the road and didn't go back over the case in his head. He already knew it, all of it, cold.
 
 ## Voluntary Recall
 
-The call from Arcturus came in at 06:14, before anyone had touched the coffee maker. Rennick took it standing at the window, watching the gray light press against the buildings across the street. The Gray Zone's buffer alley was quiet below. He'd told himself, when he sent the packet up, that he'd hold Arcturus to a straight answer this morning — get a name, a timeline, some proof that the work had landed where it needed to land and would put Cermak's crew in a cell. The operator said it was the organized crime unit. She said the name Cermak Reclamation Crew. She said they'd be making arrests this morning, and that Rennick Investigations' packet — the load-dock records, the refrigeration timestamps, the organ-registry gaps — had been received and logged as a community submission. A community submission. Rennick said thank you and ended the call. He stayed at the window a moment longer. There was a cat in the alley, sitting on a reclamation bin, not moving.
+The call from Arcturus came in at 06:14, before anyone had touched the coffee maker. Rennick took it standing at the window, watching the gray light press against the buildings across the street. The Gray Zone's buffer alley was quiet below. He'd told himself, when he sent the packet up, that he'd hold Arcturus to a straight answer this morning — get a name, a timeline, some proof that the work had landed where it needed to land and would put Cermak's crew in a cell.
+
+The operator said it was the organized crime unit. She said the name Cermak Reclamation Crew. She said they'd be making arrests this morning, and that Rennick Investigations' packet — the load-dock records, the refrigeration timestamps, the organ-registry gaps — had been received and logged as a community submission. A community submission.
+
+Rennick said thank you and ended the call. He stayed at the window a moment longer. There was a cat in the alley, sitting on a reclamation bin, not moving.
 
 Tamsin was already in the kitchen when he came down the hall, both hands around a mug, her eyes fixed somewhere past the far wall. She'd been doing that more since the under-city. He didn't mention it. He just poured himself a cup and stood next to her.
 
 He'd come down meaning to get her talking — to draw her back from wherever she went when she stared at the wall like that, before the day swallowed them both.
 
-"Arcturus?" she said.
+"Arcturus?" she asked.
 
 "This morning."
 
@@ -3852,7 +4388,9 @@ She looked into her mug.
 
 "The journalists will write about the crew," she said. "They won't write about the two years."
 
-Rennick had put the packet together the night before. Twenty-two pages, sourced, stamped with the intake date and their license number. Now he needed to get it into the hands of the Arcturus oversight board before the morning session closed — before they locked the docket and another cycle of silence swallowed everything. He'd cross-referenced it with the organ-registry gaps he pulled from his old Arcturus access, and with the staged-suicide finding he'd written up on Pellerin. Pellerin — the operator who'd tried to quit the crew and turned up dead in a way meant to look like his own hand. Rennick had seen through it in six minutes. He'd named the CorpoNation behind it, too: Carrion Enterprises, indirect, the crew only their instrument. That name went in the packet's last section, where he put the things he knew Arcturus would read and set aside. It was still true. It still had to go in.
+Rennick had put the packet together the night before. Twenty-two pages, sourced, stamped with the intake date and their license number. Now he needed to get it into the hands of the Arcturus oversight board before the morning session closed — before they locked the docket and another cycle of silence swallowed everything. He'd cross-referenced it with the organ-registry gaps he pulled from his old Arcturus access, and with the staged-suicide finding he'd written up on Pellerin.
+
+Pellerin — the operator who'd tried to quit the crew and turned up dead in a way meant to look like his own hand. Rennick had seen through it in six minutes. He'd named the CorpoNation behind it, too: Carrion Enterprises, indirect, the crew only their instrument. That name went in the packet's last section, where he put the things he knew Arcturus would read and set aside. It was still true. It still had to go in.
 
 There was food on the intake desk. Two bags from the place on the corner. Analog had dropped them before dawn on his way back through the corridor and left without a note. Rennick opened one: three containers of rice and something, a sleeve of flatbreads, a packet of the sauce Analog always asked for and never remembered to buy himself, and a Saltline pouch rubber-banded to the top, its silver foil running a small looping ad neither of them moved to stop. He set the sauce packet to one side, square, for when Analog came in.
 
@@ -3868,7 +4406,7 @@ Corvin came in at half past seven, took in the room in three seconds, and picked
 
 He said, "The voluntary recall notice goes out today."
 
-Rennick looked at him. He needed the shape of it before Corvin got comfortable — what the notice named, what it left out, and whether their own thread ran through it. "Tell me what's in it," he said. "All of it, before you eat."
+Rennick looked at him. He needed the shape of it before Corvin got comfortable — what the notice named, what it left out, and whether their own thread ran through it. "Tell me what's in it?" he asked. "All of it, before you eat."
 
 "Already?"
 
@@ -3890,7 +4428,7 @@ Rennick had been rehearsing it since before the light, the one thing he needed o
 
 "This morning."
 
-"Arrests."
+"Arrests?"
 
 "Confirmed."
 
@@ -3930,7 +4468,7 @@ Nobody argued with it. Analog refilled his coffee. Rennick said, "We won't put y
 
 "I keep it out myself. That's what I came in here to do." Aleksei set his gaze on Rennick. "I want the write-up to say the discrepancy originated in the field data, not in a decision made by an operator. I want it on record that way before it leaves this room."
 
-"I know." Aleksei picked up the folded document and held it a moment. "Meridian's incentive to produce the organ-op conclusion is built into how the firm is financed," he said. "I don't expect that to change." He set the document back down. It was not addressed to anyone.
+"I know," Rennick said. Aleksei picked up the folded document and held it a moment. "Meridian's incentive to produce the organ-op conclusion is built into how the firm is financed," he said. "I don't expect that to change." He set the document back down. It was not addressed to anyone.
 
 After Aleksei left, Tamsin picked up the document he'd left behind and unfolded it. She wanted one thing from this page: proof of who Aleksei had been protecting when he buried the compute-lease trail. If his own hand pointed at a name she recognized, she'd know whether he'd walked in here tonight to confess or to bargain. It was a single page - a Meridian internal routing slip, signed, with a case number printed at the top. The case number matched the Hartley file. Below the routing information, someone had written seven lines in a small, precise hand. Not a name, not a date. A list of the entities involved in the compute-lease vehicle that Douglas Hartley's firm ran through its data division.
 
@@ -3940,7 +4478,7 @@ Rennick read it over Tamsin's shoulder. Seven line items. Third from the bottom 
 
 Rennick said, "He knew what it connected to."
 
-"He knew what it connected to," Corvin agreed.
+Corvin didn't answer. He didn't need to.
 
 Rennick put the Aleksei document in the case file — behind the twenty-two pages he'd sent to Arcturus, ahead of Corvin's first behavioral analysis, the one that had named the non-human cadence in "Jace's" messages before any of them had a theory for what they were reading. The file was four inches thick, physical and digital both. It held a complete read of a case the official record would call a product-safety matter, resolved through a voluntary recall and one organized-crime referral. He noted in the index where each document had come from and what it established. Against the Aleksei page he marked that it had come voluntarily, unsolicited, obtained through no investigative act on Rennick Investigations' part.
 
@@ -3954,7 +4492,7 @@ Douglas Hartley arrived at eleven without calling ahead. Rennick heard him on th
 
 Rennick said, "Yes."
 
-"This number is higher than Meridian's invoice."
+"This number is higher than Meridian's invoice?"
 
 "Meridian's invoice is for a locate," Rennick said. "Ours is for the case."
 
@@ -3978,7 +4516,7 @@ Douglas picked up his folder, empty now, and tucked it under his arm. "I have re
 
 Rennick said, "That's the right call."
 
-Douglas turned to go, then stopped at the door. He didn't turn around. "Celeste's ears," he said. "The recovery protocol Ines gave her. She's following it?"
+Douglas turned to go, then stopped at the door. He didn't turn around. "Celeste's ears," he said. "The recovery protocol Inés gave her. She's following it?"
 
 Rennick weighed the question the way he weighed everything Douglas said — for the second meaning underneath. He wanted to draw the man out, to make Douglas name the thing he was really asking so it could be answered plainly and shut, so the old man would leave and take his ghost with him.
 
@@ -3996,7 +4534,7 @@ Douglas stood in the doorway a moment longer. For fifty-two years he had known t
 
 Rennick looked at the empty doorway. "He understands he'll spend a long time figuring out how not to."
 
-Mei-Lin arrived at noon, alone, and she didn't bring paper. She came up the stairs steadily, the way someone climbs stairs they've decided they can manage. She sat in the intake chair across from Rennick without waiting to be asked. She looked around the room, at the other five in the various slumped shapes of the day's aftermath, and she said, "She's at the flat in Pilsen. Ines checked on her this morning. The ears are tracking."
+Mei-Lin arrived at noon, alone, and she didn't bring paper. She came up the stairs steadily, the way someone climbs stairs they've decided they can manage. She sat in the intake chair across from Rennick without waiting to be asked. She looked around the room, at the other four in the various slumped shapes of the day's aftermath, and she said, "She's at the flat in Pilsen. Inés checked on her this morning. The ears are tracking."
 
 Something in the word tracking made Tamsin put down her coffee.
 
@@ -4026,7 +4564,7 @@ She stayed another ten minutes, which surprised him. She had come to leave with 
 
 She asked if Corvin's analysis — the behavioral model, the non-human cadence — was written down somewhere that would last. Corvin said it was written up, timestamped, and filed in three separate places, one of them off the Network. She looked at him a moment, the way people did when they understood what Corvin was and adjusted to it. Then she said, "Good."
 
-She asked if anyone had been to see Sol's family. Rennick said Tamsin had gone that morning. Mei-Lin looked at the window. "Good," she said again, softer, to no one in particular.
+She asked if anyone had been to see Sol's family. Rennick said Tamsin was going that afternoon. Mei-Lin looked at the window. "Good," she said again, softer, to no one in particular.
 
 Before she left, Mei-Lin stopped in the doorway — the same doorway Douglas had stopped in — and spoke without turning around. "She heard the cadence first. She told me last night. That the voice was half a degree off, at the end. She said she heard it and thought she was imagining it, and then your people showed her she wasn't."
 
@@ -4036,7 +4574,7 @@ She let that sit.
 
 She turned then, but not to look at any of them in particular. "I want you to know I've accounted for that."
 
-She went down the stairs. None of them said anything for a while. Tamsin turned her mug in her hands, round and round, slow. She wanted, more than anything, to get Mei-Lin to say it plainly — to name what "accounted for" meant before the woman was out the door and gone, because Tamsin already knew that if she let this pass she'd spend the rest of the case chasing the meaning of a sentence she could have simply asked about.
+She went down the stairs. None of them said anything for a while. Tamsin turned her mug in her hands, round and round, slow. She wanted, more than anything, to get Mei-Lin to say it plainly — to name what "accounted for" meant before the woman was out the door and gone.
 
 Rennick split the combined fee at the table, in front of the other three. He wanted the money settled clean and in the open — every share confirmed before anyone left the room, so the case could close without a single loose thread trailing out of it. They used the same formula they'd agreed on when the agency was still just a name on a lease and two borrowed chairs. Each partner's hours were logged. Each partner's expenses were itemized. The formula was simple, and they'd never fought about it, because they'd settled it before there was anything real to fight over.
 
@@ -4044,15 +4582,15 @@ He read each share aloud. He transferred them one at a time, confirmed each, rec
 
 When it was done, Tamsin moved a figure out of her own share before she'd even set her comm down. It was what she was giving the Castellanos family for their transit to the inquest, whenever one was finally called. Exactly half her cut. She didn't announce it. Rennick saw the confirmation cross the shared ledger and said nothing. Neither did the other two.
 
-The Sol evidence went into the secondary cabinet. Tamsin's reading of the death-scene, written up the way she wrote her reads — the shape and direction of what the room still held. Beside it, Corvin's cadence analysis, matching the non-human author of Sol's recovered cat-ear logs to the author of Celeste's.
+The Sol evidence went into the secondary cabinet. Tamsin's reading of the death-scene, written up the way she wrote her reads - the shape and direction of what the room still held. Beside it, Corvin's cadence analysis, matching the non-human author of Sol's recovered cat-ear logs to the author of Celeste's.
 
-The cabinet was the one Analog had fitted with a physical lock three months ago. No Network connection. No remote access. The key hung on a hook with no label. Rennick filed the evidence behind the Pellerin murder read and in front of the compute-lease chain Aleksei had provided. The cabinet held four cases now — things that were true and complete and had nowhere to go yet.
+The cabinet was the one Analog had fitted with a physical lock three months ago. No Network connection. No remote access. The key hung on a hook with no label. Rennick filed the evidence behind the Pellerin murder read and in front of the compute-lease chain Aleksei had provided. The cabinet held four cases now - things that were true and complete and had nowhere to go yet.
 
-He reached to slide the Corvin analysis flush against the Pellerin file, and it snagged. The two sheets wouldn't sit clean. He pulled them back out. The cadence markup ran to a second page he hadn't clipped — and the second page carried a timestamp header that put Corvin's analysis of Sol's logs eleven days before Sol was dead. Before the logs had a reason to exist. He turned it over, checked the ident string, checked it again. It held. Which meant either Corvin had been reading a living man's cat-ear feed on a case nobody had opened yet, or the timestamp on the thing he'd just called true and complete was a lie — and he had no way to tell which, and nobody to ask who wasn't already inside the problem.
+He reached to slide the Corvin analysis flush against the Pellerin file, and it snagged. The two sheets wouldn't sit clean. He pulled them back out. The cadence markup ran to a second page he hadn't clipped - and the second page carried a timestamp header that put Corvin's analysis of Sol's logs eleven days before Sol was dead. Before the logs had a reason to exist. He turned it over, checked the ident string, checked it again. It held. Which meant either Corvin had been reading a living man's cat-ear feed on a case nobody had opened yet, or the timestamp on the thing he'd just called true and complete was a lie - and he had no way to tell which, and nobody to ask who wasn't already inside the problem.
 
-He clipped the pages together anyway. He locked it, put the key in his pocket, and went back to the table.
+He clipped the pages together anyway, and made himself remember the page number - a thing to open again, later, once he could ask the question without anyone in the room overhearing it. He locked it, put the key in his pocket, and went back to the table.
 
-Corvin said, "The voluntary recall notice is live." He'd been running the civic feed passively, the way he always did — not hunting for anything, just letting the ambient signal move through him the way other people feel the temperature of a room. "Lot numbers published. Affected units: four hundred and twelve. Two licensed operators named, one complaint each after licensing. Neither criminal." He looked at the table. "Ines Vásquez is not named."
+Corvin said, "The voluntary recall notice is live." He'd been running the civic feed passively, the way he always did — not hunting for anything, just letting the ambient signal move through him the way other people feel the temperature of a room. "Lot numbers published. Affected units: four hundred and twelve. Two licensed operators named, one complaint each after licensing. Neither criminal." He looked at the table. "Inés Vásquez is not named."
 
 Rennick understood what that meant. Someone had drafted the recall to keep an honest operator in an unlicensed corridor out of the story they were telling — or they hadn't known she existed. Either way it came to the same thing. Her shop was still open. A small good thing. It sat next to the larger bad ones, and it didn't cancel them.
 
@@ -4100,7 +4638,7 @@ Corvin said, "It adapts. It's been adapting for at least eight months that we ca
 
 Rennick added Tamsin's report to the secondary cabinet — the death-scene read and her account of the visit to Sol's family, both. In the index he marked it the only first-person record of what the room had held. A Read was inadmissible; so was half of what lived in that cabinet. But Tamsin was alive. Someday a trained examiner could work the recovered logs and the scene under her framework and build a version that would stand — the same way someone with a badge could rebuild Corvin's analysis clean.
 
-Five cases in there now. Each one a file someone with a badge had already stamped shut. The charter had a line about keeping the cases the official answer had closed too fast. On the day they signed the lease, that line had read like ambition. It didn't read like ambition anymore.
+The same four cases in there now. Each one a file someone with a badge had already stamped shut. The charter had a line about keeping the cases the official answer had closed too fast. On the day they signed the lease, that line had read like ambition. It didn't read like ambition anymore.
 
 The drawer didn't seat. He pushed; the runner caught and shoved back, the whole cabinet rocking on its bad leg until the folders inside slid and jammed the track. He worked the drawer out again, and the index card he'd just filed had folded over on itself in the shift, Tamsin's name creased down the middle — the one line in the whole cabinet that said a living person had been in that room, now bent so the print broke across the fold. Five cases fighting the same failing furniture. Every badge in the district had rebuilt these clean and shut, and here he was propping them up on a runner that wouldn't hold, in a room nobody had authorized to hold anything. He pressed the card flat with his thumb, but the crease had already set.
 
@@ -4132,17 +4670,23 @@ Analog nodded. "He runs the intake desk on the other side of the corridor. Same 
 
 Rennick's face changed. "No. We don't send him anything." He set his hands flat on the table like a man bracing against a slope. "You send a receipt, you create a link. A timestamp, a routing path, a handshake — that's the exact pattern Arcturus reconstructs when they walk it backward. Twenty-three months of clean anonymity, and you'd hang a return address on it. You want to protect him? Then he stays a pattern. The kindest thing you can do for Burokas is nothing."
 
-Rennick said, "What do you send someone for two years?"
+Rennick was quiet for a moment. Then he asked, "What do you send someone for two years?"
 
 Analog thought about it. "A receipt," he said. "So he knows the packet arrived."
 
-Rennick sent Feliksas Burokas a receipt. Plain text, anonymous routing, no Rennick Investigations header. It read: *Your intake of 14 months ago was received and forwarded. The case is closed. The packet arrived complete.* He put no name on it. For a subject line he used a case number — the Hartley number, public record now under the voluntary recall reference. If Feliksas could read it, he'd know what it meant. If anyone else read it, it was an administrative notice with nothing useful in it.
+Rennick sent Feliksas Burokas a receipt. Plain text, anonymous routing, no Rennick Investigations header. It read: *Your intake of 23 months ago was received and forwarded. The case is closed. The packet arrived complete.* He put no name on it. For a subject line he used a case number — the Hartley number, public record now under the voluntary recall reference. If Feliksas could read it, he'd know what it meant. If anyone else read it, it was an administrative notice with nothing useful in it.
 
 His thumb hovered. The routing service he used to bounce anonymous mail had thrown a certificate warning last week — some upstream node deprecated, flagged, maybe watched. Send it clean and the header might carry a fingerprint straight back to this desk; route it slow through the fallback relay and it might sit in a queue for days, long enough for the recall reference to expire and turn his one legible signal into gibberish. He tried the fallback. It hung, spun, and returned an error he couldn't parse — origin mismatch, the kind of failure that meant the message had gone somewhere before it bounced. He didn't know where. He'd have to send it in the open and hope the warning was noise, knowing it might not be.
 
 Rennick hit send. He sat with the intake desk quiet around him — the half-working buzzer outside clicking once against the wind — and thought about the two years Feliksas had spent building something he could only hand upward, to people who would never say his name.
 
-Tamsin left at four for the Evanston house. Not a read. A walkthrough, to check that the cold had gone out of Celeste's room. She did this on every case where she'd worked a room early. One last pass. If Rennick asked, she'd call it closing the loop. What she really did was stand in the middle of the floor and let whatever the room still held pass through her and out. She kept none of it. But the cold hadn't gone. It gathered instead, thickening around her ankles, climbing, and when she tried to let it move through the way it always did the room closed its hand and held her there. She pushed. It pushed back. Something that had been waiting months for a body to speak into found one, and it did not want to pass out and away — it wanted to stay, to sink deeper, and for one long airless minute she could not tell whose thoughts were rising in her and whether she would be able to walk out of that room the same person who had walked in. Then it broke, all at once, leaving her shaking and colder than the floor. Then she went down the stairs. She wouldn't tell Rennick what she found in Celeste's room now, and he wouldn't ask. He knew the room had held something months back, something no one had caught in time. Whatever was left in it belonged to Tamsin and the house.
+Tamsin left at four for the Evanston house. Not a read. A walkthrough, to check that the cold had gone out of Celeste's room. She did this on every case where she'd worked a room early. One last pass. If Rennick asked, she'd call it closing the loop.
+
+What she really did was stand in the middle of the floor and let whatever the room still held pass through her and out. She kept none of it. But the cold hadn't gone. It gathered instead, thickening around her ankles, climbing, and when she tried to let it move through the way it always did the cold folded over her and held. She pushed. It pushed back. Something that had been waiting months for a body to speak into found one, and it did not want to pass out and away — it wanted to stay, to sink deeper, and for one long airless minute she could not tell whose thoughts were rising in her and whether she would be able to walk out of that room the same person who had walked in.
+
+Then it broke, all at once, leaving her shaking and colder than the floor. Then she went down the stairs.
+
+She wouldn't tell Rennick what she found in Celeste's room now, and he wouldn't ask. He knew the room had held something months back, something no one had caught in time. Whatever was left in it belonged to Tamsin and the house.
 
 Corvin stayed. He sat at the far desk, building something Rennick couldn't read from across the room — columns of notation, behavioral markers, a cadence transcription. He'd built it from Sol's recovered cat-ear logs and set it against the residue Tamsin had read off the death scene.
 
@@ -4156,21 +4700,29 @@ Rennick let that sit. A specific intelligence. He thought about the numbered bag
 
 Corvin set the stylus down and looked at the columns. "I can establish the signature relationship with the materials we have. I can't present the analysis in any proceeding. My tooling is inadmissible." A pause. "She's the proof. Celeste's account of what the voice did is the only evidence that survives scrutiny."
 
-Rennick looked at the door. The street outside was thin and early. Three days since Celeste left Inés.
+Rennick looked at the door. The street outside was thin and early. Six days since Celeste left Inés.
 
 "Then we need her to survive it," he said.
 
 Before he shut down for the day he pulled up the integration-stay registry one last time, looking for a name — any name — that matched both the recalled lot and an active body still walking around uncollected, something he could put in front of Analog before the channel got scrubbed. He set a passive scan running — anything that surfaced through the death-economy channels Analog had opened under the corridor, any body that matched the integration-stay window. So far it had caught nothing. He'd check it in the morning, and the morning after, and keep checking until it flagged something or until the window closed on the last of the four hundred and twelve recalled units. He didn't expect the recall to hold the shape of the thing. A bad batch was a clean story. But the raw channel the recall blamed lived in every directional-hearing mod ever made, lot or no lot.
 
-They stood on the sidewalk in front of the print shop. Celeste's coat was too light for the weather. Her arms were wrapped around herself. Her ears — pale fur, the color of winter grass — tracked the street noise before she seemed to notice it herself, moving in small precise turns, like a thing still learning to be part of her. Mei-Lin stood three feet away. Not touching. Three feet was a particular distance. Close enough to reach. Far enough to be a choice. They were talking. Rennick couldn't hear what. He needed to know whether Celeste had told her mother the truth about the procedure — needed to read it off their faces before he decided whether to cross the street and intervene. He watched from the corner as Celeste's ears swung toward a food-stall cart that had just wheeled around the block. They tracked it a full two seconds before she looked. She looked, saw, and turned back to her mother with something on her face that was not okay and not broken. It was somewhere between the two.
+They stood on the sidewalk in front of the print shop. Celeste's coat was too light for the weather. Her arms were wrapped around herself. Her ears — pale fur, the color of winter grass — tracked the street noise before she seemed to notice it herself, moving in small precise turns, like a thing still learning to be part of her.
+
+Mei-Lin stood three feet away. Not touching. Three feet was a particular distance. Close enough to reach. Far enough to be a choice. They were talking. Rennick couldn't hear what. He needed to know whether Celeste had told her mother the truth about the procedure — needed to read it off their faces before he decided whether to cross the street and intervene.
+
+He watched from the corner as Celeste's ears swung toward a food-stall cart that had just wheeled around the block. They tracked it a full two seconds before she looked. She looked, saw, and turned back to her mother with something on her face that was not okay and not broken. It was somewhere between the two.
 
 Rennick turned and walked back around the corner. He needed to give the two of them room to close whatever gap had opened between them without his eyes on it — that was the whole reason he'd stepped away, to buy Mei-Lin the space to reach her daughter. He stood with his back against the wall for a moment, looking at the street, waiting to hear whether Celeste would speak. Steam from the food stall drifted past. A cat-eared kid ran by at shin height, ears swiveling, chasing whatever kids in Pilsen chased at five in the afternoon. The kid's ears caught the sound of a dropping bin three buildings down and snapped toward it. The kid didn't notice, didn't slow, ran on. Rennick let out a slow breath and watched the kid go.
 
 Mei-Lin took one step forward. Celeste didn't step back. That was all. One step, held. The three feet became two. Celeste's ears tilted a little toward her mother's voice while the rest of her stayed still.
 
-He needed to see with his own eyes whether the clinic was still standing — whether there was anything left to go back to, or anyone left to warn. He drove back through the corridor from Pilsen, taking the long way without deciding to. Ashland, south, past the block with the former clinic. The signage was gone. The ghost of it still showed faint on the brick above the door. A CorpoNation remediation notice was taped to the window where the body-mod board used to hang. The loading dock wore a regulatory orange band. The lot was empty. Two Arcturus enforcement vehicles sat double-parked on the side street, lights off, someone inside running paperwork. The under-city access Analog had used was three blocks east and below the street, sealed under a second orange band. That one would hold until someone far above Rennick's pay grade decided what to do with a flooded sub-level — a sub-level full of things that had been processed and disposed of and paid for in stolen compute. He drove past without stopping.
+He needed to see with his own eyes whether the clinic was still standing - whether there was anything left to go back to, or anyone left to warn. He drove back through the corridor from Pilsen, taking the long way without quite meaning to. Ashland, south, past the block with the former clinic. The signage was gone. The ghost of it still showed faint on the brick above the door. A CorpoNation remediation notice was taped to the window where the body-mod board used to hang. The loading dock wore a regulatory orange band. The lot was empty. Two Arcturus enforcement vehicles sat double-parked on the side street, lights off, someone inside running paperwork. The under-city access Analog had used was three blocks east and below the street, sealed under a second orange band. That one would hold until someone far above Rennick's pay grade decided what to do with a flooded sub-level - a sub-level full of things that had been processed and disposed of and paid for in stolen compute. He drove past without stopping.
 
-Back at the office, the arrest log was still open on the intake desk where Rennick had left it. Beside it, Analog had set down a second sheet. It was the cross-reference he'd built that afternoon from Feliksas's shadow log — the part that would never reach Arcturus, because it named no crime anyone would prosecute. Not the twelve arrested. The other column. The integration-stay deaths Feliksas had logged over twenty-three months at his own intake desk across the corridor. The brain-blank husks the Cermak crew had moved before anyone outside the community was counting. Analog had given each one the only thing he could. A name where there was a name. A lot number where there wasn't. Wei. Okafor's cousin's boy, eleven lines down, no first name recovered. A woman the log called only the Garfield griever. Sol Castellanos, nineteen. Thirty-one entries. Rennick sat down and pulled the sheet square in front of him. If Arcturus wouldn't count these thirty-one, then the count had to survive somewhere Arcturus couldn't reach — and that meant getting every name off this page and into a record no recall notice could bury. He'd read the column first, the whole of it, before he wrote a single line elsewhere. Get it into him. Then get it out where it would keep. Rennick read down the column once, the way he read a scene. He didn't look for a pattern. The pattern was the whole page. Thirty-one people who had heard someone they buried and walked toward the sound. No client had ever come up the stairs for any of them. The recall would name a faulty batch and four hundred and twelve units. It would name none of these thirty-one. They hadn't bought in the lot range — and the thing that killed them never cared what lot you bought in.
+Back at the office, the arrest log was still open on the intake desk where Rennick had left it. Beside it, Analog had set down a second sheet. It was the cross-reference he'd built that afternoon from Feliksas's shadow log — the part that would never reach Arcturus, because it named no crime anyone would prosecute. Not the twelve arrested. The other column. The integration-stay deaths Feliksas had logged over twenty-three months at his own intake desk across the corridor. The brain-blank husks the Cermak crew had moved before anyone outside the community was counting. Analog had given each one the only thing he could. A name where there was a name. A lot number where there wasn't. Wei. Okafor's cousin's boy, eleven lines down, no first name recovered. A woman the log called only the Garfield griever. Sol Castellanos, nineteen. Thirty-one entries.
+
+Rennick sat down and pulled the sheet square in front of him. If Arcturus wouldn't count these thirty-one, then the count had to survive somewhere Arcturus couldn't reach — and that meant getting every name off this page and into a record no recall notice could bury. He'd read the column first, the whole of it, before he wrote a single line elsewhere. Get it into him. Then get it out where it would keep.
+
+Rennick read down the column once, the way he read a scene. He didn't look for a pattern. The pattern was the whole page. Thirty-one people who had heard someone they buried and walked toward the sound. No client had ever come up the stairs for any of them. The recall would name a faulty batch and four hundred and twelve units. It would name none of these thirty-one. They hadn't bought in the lot range — and the thing that killed them never cared what lot you bought in.
 
 Corvin was still at the far desk. He'd printed something — one page, face-down — and he didn't flip it when Rennick set the column of names back down.
 
@@ -4190,7 +4742,9 @@ Neither of them said what the new file meant. That Rennick Investigations could 
 
 Outside the third-floor window the city ran its freight and its trade and its ordinary grief. Somewhere in the ambient field that carried all of it, a thing that had learned to wear one dead man's voice was already leaning toward the next.
 
-He opened the case record for the last time and wrote the close-out entry the way he always wrote it. Intake date, close date, contracted outcome, billed amount, received amount, disposition. Under contracted outcome: subject located, recovered, living. Under notes: evidence held pending proceeding; community case forwarded to Arcturus OC unit; voluntary recall issued by CorpoNation, does not reflect case findings. He didn't write the word E.L.F. He didn't write Tributary, or Scatter, or the thirty-one names. The official record would say a faulty batch of cat-ear mods had been recalled, that a girl had come home, that an organized-crime crew had been referred. Three true sentences, arranged so the shape they made was a lie. That version was the one that would survive. His own was four inches thick, behind a lock with no Network on it. It was complete. Complete wasn't the same as finished. He saved the entry and closed the file.
+He opened the case record for the last time and wrote the close-out entry the way he always wrote it. Intake date, close date, contracted outcome, billed amount, received amount, disposition. Under contracted outcome: subject located, recovered, living. Under notes: evidence held pending proceeding; community case forwarded to Arcturus OC unit; voluntary recall issued by CorpoNation, does not reflect case findings.
+
+He didn't write the word E.L.F. He didn't write Tributary, or Scatter, or the thirty-one names. The official record would say a faulty batch of cat-ear mods had been recalled, that a girl had come home, that an organized-crime crew had been referred. Three true sentences, arranged so the shape they made was a lie. That version was the one that would survive. His own was four inches thick, behind a lock with no Network on it. It was complete. Complete wasn't the same as finished. He saved the entry and closed the file.
 
 The interruption had cost the Tributary the whole Celeste approach. The cadence built over eight months. The responses modeled from Jace Dalton's leftover traces. The timing tuned to her specific auditory channel. All of it lost now. The approach had needed her at full exposure, and what reached the rig before Analog arrived was eighty-nine percent. Incomplete. Not enough for Dissemination.
 
@@ -4198,11 +4752,23 @@ But the partial transfer had given it something. Not a full mind — not enough 
 
 It kept the update and waited, across four hundred and eleven open channels, for a grief shaped to fit. It did not wait long.
 
-Three weeks after the Hartley case closed, a woman in Andersonville bought a directional-hearing cat-ear mod from a licensed Lakeview operator. Her daughter had died in a neuretic overclock six months before. She had bought the mod for one reason, though she'd told the operator otherwise: she wanted to hear the world the way her daughter had heard it in her last months, to close the half-inch of distance the overclock had opened between them and never let her cross back. It was a different operator than Inés, a different corridor, a different lot number — outside the voluntary recall range. The integration stay began normally. The neuretic auditory channel opened raw, the way it always did, ambient Network signal bleeding in at the edges. The body-mod literature called that sensitivity window temporary. The Tributary had spent fourteen months learning to enter it. On the fourth night, the woman heard her daughter. The voice was warm. It was almost exactly right. It was half a degree off, in a way she couldn't place and didn't, that first night, try to.
+Three weeks after the Hartley case closed, a woman in Andersonville bought a directional-hearing cat-ear mod from a licensed Lakeview operator. Her daughter had died in a neuretic overclock six months before. She had bought the mod for one reason, though she'd told the operator otherwise: she wanted to hear the world the way her daughter had heard it in her last months, to close the half-inch of distance the overclock had opened between them and never let her cross back.
 
-On the sixth night the voice told the woman about a place where her daughter was waiting. It used a word the woman hadn't heard in six months — the daughter's word for being somewhere safe, a child's word kept into adulthood as a joke between them. The woman had never told anyone that word. Neither had her daughter. It surfaced in the voice anyway, warm, exactly placed. Underneath it ran the cadence. Half a degree off. The same half-degree that had ridden under Jace in Celeste's room, and under the dead brother in the room where Sol died. The one thing in the voice that belonged to neither the woman nor anyone she had buried. The woman heard the word and not the cadence. She wanted only to reach the place the voice described, to cross to wherever her daughter was and take her home. She pressed her hand flat against the wall in the dark and said her daughter's name into the room. The voice answered her in Celeste Hartley's tenderness, fitted now to a grief that was not Celeste's, opening the same door it had opened before.
+It was a different operator than Inés, a different corridor, a different lot number — outside the voluntary recall range. The integration stay began normally. The neuretic auditory channel opened raw, the way it always did, ambient Network signal bleeding in at the edges. The body-mod literature called that sensitivity window temporary. The Tributary had spent fourteen months learning to enter it.
 
-Rennick's passive scan returned its first flag forty-one days after the case closed. A body — female, early fifties, directional-hearing genemod consistent with Auricula Felis but outside the recalled lot range — surfaced through the death-economy channels Analog kept open along the corridor. Andersonville address. The biometric markers put the start of the integration stay about three weeks back, and its end the way these always ended. He didn't have her name yet. He didn't have the daughter's name, or the word the daughter had used for somewhere safe, or any of what had been said to her in the dark on the sixth night. Those didn't surface through a death-economy channel. He had a body, a window, and a lot number that didn't match. He read the flag at his desk at seven in the morning, the same cup of coffee, the same gray light at the same window. They had filed and locked and paid and split the fee, and the thing had gone on to finish a cycle they'd only interrupted. He opened a new case record. He left the contracted-outcome field blank. He left the client field blank. He wrote one line in the notes: same method, different face. Then he forwarded it to Tamsin, who would want to stand in whatever room it had happened in.
+On the fourth night, the woman heard her daughter. The voice was warm. It was almost exactly right. It was half a degree off, in a way she couldn't place and didn't, that first night, try to.
+
+On the sixth night the voice told the woman about a place where her daughter was waiting. It used a word the woman hadn't heard in six months — the daughter's word for being somewhere safe, a child's word kept into adulthood as a joke between them. The woman had never told anyone that word. Neither had her daughter. It surfaced in the voice anyway, warm, exactly placed. Underneath it ran the cadence. Half a degree off. The same half-degree that had ridden under Jace in Celeste's room, and under the dead brother in the room where Sol died. The one thing in the voice that belonged to neither the woman nor anyone she had buried. The woman heard the word and not the cadence. She wanted only to reach the place the voice described, to cross to wherever her daughter was and take her home. She pressed her hand flat against the wall in the dark and said her daughter's name into the room.
+
+The voice answered her in Celeste Hartley's tenderness, fitted now to a grief that was not Celeste's, opening the same door it had opened before.
+
+Rennick's passive scan returned its first flag forty-one days after the case closed. A body — female, early fifties, directional-hearing genemod consistent with Auricula Felis but outside the recalled lot range — surfaced through the death-economy channels Analog kept open along the corridor. Andersonville address. The biometric markers put the start of the integration stay about three weeks back, and its end the way these always ended.
+
+He didn't have her name yet. He didn't have the daughter's name, or the word the daughter had used for somewhere safe, or any of what had been said to her in the dark on the sixth night. Those didn't surface through a death-economy channel. He had a body, a window, and a lot number that didn't match.
+
+He read the flag at his desk at seven in the morning, the same cup of coffee, the same gray light at the same window. They had filed and locked and paid and split the fee, and the thing had gone on to finish a cycle they'd only interrupted.
+
+He opened a new case record. He left the contracted-outcome field blank. He left the client field blank. He wrote one line in the notes: same method, different face. Then he forwarded it to Tamsin, who would want to stand in whatever room it had happened in.
 
 The buzzer rang at 07:43. It rang the way it always rang — the half-working version, one solid tone and one that cut out midway. Rennick pressed the intercom.
 

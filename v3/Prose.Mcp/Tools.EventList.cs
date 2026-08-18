@@ -30,7 +30,8 @@ public class BeatEventListTools
     {
         if (!Guid.TryParse(nodeIdOrSlug, out var gid)) return nodeIdOrSlug;
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == gid);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == gid);
         return node?.Slug;
     }
 

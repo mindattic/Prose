@@ -59,7 +59,10 @@ public class DocxExportService
     public async Task<string> ExportNodeAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
+        // universe the ambient default resolves to would otherwise 404 here even with a correct id
+        // (same bug class found and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         // Resolution order: explicit param → node.Author → "MindAttic" (pen name)
         if (string.IsNullOrWhiteSpace(author))
@@ -281,7 +284,7 @@ public class DocxExportService
                 {
                     body.AppendChild(SubHeading(subHeadingTitle[i]!));
                 }
-                var text = (beat.Text ?? "").Trim();
+                var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
                 if (text.Length == 0) continue;
                 wordCount += CountWords(text);
                 foreach (var para in SplitParagraphs(text))

@@ -63,7 +63,9 @@ public class CanonContradictionService
     public async Task<CheckResult> CheckNodeAsync(Guid nodeId, bool proposeFixes = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
@@ -79,7 +81,7 @@ public class CanonContradictionService
         // nodeId) — cheap and bounded, not a corpus-wide sweep — so check-canon never audits a
         // book against its own stale vectors again.
         var bookEntities = await db.Entities.AsNoTracking()
-            .Where(e => e.OriginNodeId == nodeId && e.IsActive)
+            .Where(e => e.OriginNodeId == nodeId)
             .Select(e => new { e.Id, e.Name, e.EntityType, e.Description })
             .ToListAsync(ct);
         foreach (var e in bookEntities)

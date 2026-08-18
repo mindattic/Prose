@@ -161,14 +161,13 @@ public abstract class DataScanUtility
                 .Distinct(StringComparer.OrdinalIgnoreCase)
                 .ToHashSet(StringComparer.OrdinalIgnoreCase);
             return db.Entities.AsNoTracking()
-                .Where(e => e.IsActive && types.Contains(e.EntityType))
+                .Where(e => types.Contains(e.EntityType))
                 .Select(e => e.Id)
                 .ToArray();
         }
 
-        // No filter: every active entity that has a Records.Json blob.
+        // No filter: every entity that has a Records.Json blob.
         return db.Entities.AsNoTracking()
-            .Where(e => e.IsActive)
             .Select(e => e.Id)
             .ToArray();
     }

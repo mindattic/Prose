@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
@@ -48,7 +48,7 @@ public class UniverseSegregationTests
     {
         universe.CurrentId = forUniverse;          // drives StampUniverseOnAdded
         using var db = factory.CreateDbContext();
-        db.Entities.Add(new Entity { EntityType = "character", Name = slug, Slug = slug, Status = "canon", IsActive = true });
+        db.Entities.Add(new Entity { EntityType = "character", Name = slug, Slug = slug, Status = "canon", });
         db.SaveChanges();
     }
 

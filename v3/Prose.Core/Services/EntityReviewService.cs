@@ -327,7 +327,7 @@ public class EntityReviewService
         }
 
         var rows = await db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive)
+            .Where(e => e.EntityType == entityType)
             .Select(e => new { e.Id, e.Name, e.Description, e.UniverseId })
             .ToListAsync(ct);
 
@@ -712,7 +712,7 @@ React as THIS person: high Openness welcomes strange and original; low wants cla
                                   .ToList();
 
             var matches = await db.Entities
-                .Where(e => e.IsActive && targetNames.Contains(e.Name))
+                .Where(e => targetNames.Contains(e.Name))
                 .Select(e => new { e.Id, e.Name })
                 .ToListAsync(ct);
 

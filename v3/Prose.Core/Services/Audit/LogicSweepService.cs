@@ -50,7 +50,9 @@ public class LogicSweepService(
     public async Task<LogicSweepReport> RunAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         // Recurses past any nested Collection (2026-08-09 fix) — this is the canonical Logic
@@ -68,17 +70,28 @@ public class LogicSweepService(
         if (beatRows.Count == 0)
             return new LogicSweepReport(nodeId, node.Slug, node.Title, 0, []);
 
-        var beats = beatRows.Select(b => new AuditBeat(b.Id, b.Number, b.Text, b.SortKey)).ToList();
+        // Strip inline entity-GUID tags (corpus-trust-recovery Phase 1a) before this text ever
+        // reaches an LLM prompt or QuotedEvidenceAppearsInBeat's literal substring match — a tag
+        // sitting inside a cited quote span would otherwise break that Contains check and turn a
+        // true, correctly-cited finding into a false negative.
+        var beats = beatRows.Select(b => new AuditBeat(b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), b.SortKey)).ToList();
 
         // A few distinctive disabled-beat snippets so OrphanReferencesRule can spot a live beat
         // still referencing something a cut beat established — an approximation of the skill's
         // "grep every disabled beat's distinctive phrase" step, not a full replacement for it.
-        var disabledSnippets = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
+        // Strip tags before truncating (must materialize raw Text first — BeatMarkup.StripEntityTags
+        // can't translate into the SQL Substring EF would otherwise generate for the old inline
+        // truncation).
+        var disabledSnippetsRaw = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
             .Where(bn => nodeIds.Contains(bn.NodeId) && !true && bn.Beat != null && bn.Beat!.Text != null)
             .OrderBy(bn => bn.SortKey)
-            .Select(bn => bn.Beat!.Text.Length > 200 ? bn.Beat.Text.Substring(0, 200) : bn.Beat.Text)
+            .Select(bn => bn.Beat!.Text)
             .Take(40)
             .ToListAsync(ct);
+        var disabledSnippets = disabledSnippetsRaw
+            .Select(BeatMarkup.StripEntityTags)
+            .Select(t => t.Length > 200 ? t[..200] : t)
+            .ToList();
 
         var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
 
@@ -130,7 +143,9 @@ public class LogicSweepService(
         Guid nodeId, IReadOnlyList<Guid> beatIds, Guid anchorBeatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         if (beatIds.Count == 0)
@@ -145,8 +160,9 @@ public class LogicSweepService(
 
         // Ordered by Number (a stable, book-wide reading-order proxy) — SortKey isn't meaningful
         // across a cross-chapter blast-radius set the way it is within a single chapter.
+        // Strip inline entity-GUID tags — same reason as the sibling query above.
         var beats = beatRows.OrderBy(b => b.Number)
-            .Select((b, i) => new AuditBeat(b.Id, b.Number, b.Text, i)).ToList();
+            .Select((b, i) => new AuditBeat(b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), i)).ToList();
 
         var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
         var extra = new Dictionary<string, object?>
@@ -214,7 +230,9 @@ public class LogicSweepService(
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var fingerprint = await ComputeBookFingerprintAsync(db, nodeId, ct);

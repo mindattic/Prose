@@ -95,7 +95,7 @@ public class EntityRelationshipService
         if (neighborIds.Count == 0) return;
 
         var neighbors = await db.Entities.AsNoTracking()
-            .Where(e => neighborIds.Contains(e.Id) && e.IsActive)
+            .Where(e => neighborIds.Contains(e.Id))
             .Select(e => new { e.Id, e.Name, e.EntityType })
             .ToDictionaryAsync(e => e.Id, ct);
 

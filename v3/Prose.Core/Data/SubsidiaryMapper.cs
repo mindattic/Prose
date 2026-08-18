@@ -33,7 +33,7 @@ public static class SubsidiaryMapper
     public static List<SubsidiaryData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Subsidiaries.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "subsidiary"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "subsidiary"),
                 s => s.Id, e => e.Id,
                 (s, e) => new { s.Id, Name = e.Name, s.Rating, s.VoteCount })
             .ToList();
@@ -73,7 +73,7 @@ public static class SubsidiaryMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "subsidiary")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "subsidiary" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "subsidiary"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -274,7 +274,7 @@ public static class SubsidiaryMapper
 
         // Minimal rows for blob-free ACTIVE entities.
         var activeSubIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "subsidiary" && e.IsActive)
+            .Where(e => e.EntityType == "subsidiary")
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -314,7 +314,7 @@ public static class SubsidiaryMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }
@@ -325,7 +325,7 @@ public static class SubsidiaryMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.IsActive && (e.Name == name || e.Slug == slug))
+            .Where(e => (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

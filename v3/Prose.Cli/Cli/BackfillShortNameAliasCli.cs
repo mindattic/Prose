@@ -53,7 +53,7 @@ public static class BackfillShortNameAliasCli
         }
 
         var charactersQuery = db.Entities.AsNoTracking().IgnoreQueryFilters()
-            .Where(e => e.EntityType == "character" && e.IsActive);
+            .Where(e => e.EntityType == "character");
         if (universeId != null)
             charactersQuery = charactersQuery.Where(e => e.UniverseId == universeId);
 

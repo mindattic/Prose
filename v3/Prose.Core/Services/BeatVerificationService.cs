@@ -93,6 +93,10 @@ public class BeatVerificationService
             log.LogWarning("[BeatVerification] Beat {BeatId} not found", beatId);
             return new List<BeatVerificationResult>();
         }
+        // `beat` is AsNoTracking (detached, never saved back) — safe to mutate in place so every
+        // check below (regex pattern matching, embedding similarity, comparison normalization)
+        // sees plain reader-facing text instead of having to remember to strip it individually.
+        beat.Text = BeatMarkup.StripEntityTags(beat.Text);
 
         var decision = await db.BeatBlueprintDecisions
             .AsNoTracking()
@@ -220,7 +224,11 @@ public class BeatVerificationService
                 if (candidates.Count > 0)
                 {
                     var pairs = candidates
-                        .Select(c => (c.DeclaredPurpose!, c.Text[..Math.Min(1200, c.Text.Length)]))
+                        .Select(c =>
+                        {
+                            var clean = BeatMarkup.StripEntityTags(c.Text);
+                            return (c.DeclaredPurpose!, clean[..Math.Min(1200, clean.Length)]);
+                        })
                         .ToList();
                     declaredPurposeBaseline = await embeddings.ComputeSimilaritiesBatchAsync(pairs, ct);
                 }

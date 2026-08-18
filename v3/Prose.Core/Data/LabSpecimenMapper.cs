@@ -30,7 +30,7 @@ public static class LabSpecimenMapper
     public static List<LabSpecimenData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.LabSpecimens.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "lab_specimen"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "lab_specimen"),
                 s => s.Id, e => e.Id,
                 (s, e) => new { s.Id, Name = e.Name, s.Classification, s.ThreatLevel, s.Rating, s.VoteCount })
             .ToList();
@@ -72,7 +72,7 @@ public static class LabSpecimenMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "lab_specimen")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "lab_specimen" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "lab_specimen"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -333,8 +333,7 @@ public static class LabSpecimenMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive
-                && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

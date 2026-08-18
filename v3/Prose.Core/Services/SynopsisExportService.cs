@@ -69,7 +69,9 @@ public sealed class SynopsisExportService(
 
         string bookTitle;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
-            bookTitle = await db.Nodes.AsNoTracking().Where(n => n.Id == bookNodeId)
+            // IgnoreQueryFilters(): explicit bookNodeId, not an ambient scope (same bug class
+            // found and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+            bookTitle = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == bookNodeId)
                 .Select(n => n.Title).FirstAsync(ct);
 
         var sb = new StringBuilder();
@@ -113,7 +115,11 @@ public sealed class SynopsisExportService(
         List<(Guid Id, string? Title)> chapterNodes = [];
         if (!isFlatBook)
         {
-            var titleById = await db.Nodes.AsNoTracking()
+            // IgnoreQueryFilters(): leafIds is an already-resolved explicit id set (from
+            // GetLeafDescendantIdsAsync, itself IgnoreQueryFilters-safe) — re-filtering by ambient
+            // scope here would silently drop titles for a cross-universe book (same bug class
+            // found and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+            var titleById = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
                 .Where(n => leafIds.Contains(n.Id))
                 .Select(n => new { n.Id, n.Title })
                 .ToDictionaryAsync(n => n.Id, n => n.Title, ct);
@@ -128,11 +134,13 @@ public sealed class SynopsisExportService(
         var units = new List<ChapterUnit>();
         for (int i = 0; i < sources.Count; i++)
         {
-            var beats = await db.BeatNodes.AsNoTracking()
+            var beats = (await db.BeatNodes.AsNoTracking()
                 .Where(bn => bn.NodeId == sources[i].Id && true)
                 .OrderBy(bn => bn.SortKey)
                 .Select(bn => bn.Beat!.Text)
-                .ToListAsync(ct);
+                .ToListAsync(ct))
+                .Select(BeatMarkup.StripEntityTags)
+                .ToList();
 
             var text = string.Join("\n\n", beats.Where(t => !string.IsNullOrWhiteSpace(t)));
             if (string.IsNullOrWhiteSpace(text)) continue;
@@ -262,7 +270,9 @@ public sealed class SynopsisExportService(
     private async Task<string> NodePublishDirAsync(Guid nodeId, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId).FirstAsync(ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(s => s.Id == nodeId).FirstAsync(ct);
         var universeSlug = await db.Universes.AsNoTracking()
             .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
         var baseDir = settings.GetExportDirectory(universeSlug);

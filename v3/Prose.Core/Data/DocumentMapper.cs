@@ -28,7 +28,7 @@ public static class DocumentMapper
     public static List<WorldbuildingDocument> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Documents.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "document"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "document"),
                 d => d.Id, e => e.Id,
                 (d, e) => new { d.Id, d.FileName, d.Title, d.Category, d.Rating, d.VoteCount })
             .ToList();
@@ -69,7 +69,7 @@ public static class DocumentMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "document")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "document" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "document"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -211,7 +211,7 @@ public static class DocumentMapper
 
         var entityIds = db.Entities.AsNoTracking()
             .Where(e => e.EntityType == "document")
-            .Select(e => new { e.Id, e.Name, e.IsActive })
+            .Select(e => new { e.Id, e.Name })
             .ToList();
 
         if (entityIds.Count == 0) return 0;
@@ -258,7 +258,7 @@ public static class DocumentMapper
         }
 
         // Minimal rows for active entities with no blob and no relational row
-        foreach (var e in entityIds.Where(e => e.IsActive && !blobEntityIds.Contains(e.Id) && !existingRelational.Contains(e.Id)))
+        foreach (var e in entityIds.Where(e => !blobEntityIds.Contains(e.Id) && !existingRelational.Contains(e.Id)))
         {
             try
             {

@@ -68,7 +68,7 @@ public class EntityHarvestService(
             // duplicates of entities that exist under a slightly different form.
             var variants = NameVariants(name).ToList();
             var existing = await db.Set<Entity>().AsNoTracking()
-                .Where(e => e.IsActive && e.Status != "archived" && variants.Contains(e.Name))
+                .Where(e => e.Status != "archived" && variants.Contains(e.Name))
                 .Select(e => new { e.Id, e.Name })
                 .FirstOrDefaultAsync(ct);
             if (existing != null)

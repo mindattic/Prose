@@ -188,7 +188,7 @@ public class BookHealthService(
             .Where(bn => searchIds.Contains(bn.NodeId) && true && bn.Beat != null && bn.Beat.Text != "")
             .Select(bn => new { bn.BeatId, Text = bn.Beat!.Text }).ToListAsync(ct);
         foreach (var b in beats)
-            await postBeatValidator.QuickValidateAsync(slug, b.Text, b.BeatId, ct);
+            await postBeatValidator.QuickValidateAsync(slug, BeatMarkup.StripEntityTags(b.Text), b.BeatId, ct);
     }
 
     /// <summary>PlantPayoffService.AuditAsync returns a report but never files it anywhere —
@@ -1141,7 +1141,9 @@ public class BookHealthService(
             .OrderBy(bn => bn.SortKey)
             .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text })
             .ToListAsync(ct);
-        return rows.Select(r => (r.Id, r.Number, r.Text)).ToList();
+        // Stripped here, once, for every caller of this shared helper (voice-fingerprint tokens,
+        // etc.) rather than trusting each analysis to remember to strip its own input.
+        return rows.Select(r => (r.Id, r.Number, BeatMarkup.StripEntityTags(r.Text))).ToList();
     }
 
     // ── SII computation ─────────────────────────────────────────────────────────────

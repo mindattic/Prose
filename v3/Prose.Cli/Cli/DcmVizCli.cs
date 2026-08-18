@@ -45,7 +45,8 @@ public static class DcmVizCli
         Guid nodeId; string nodeCode; string nodeTitle; string universeSlug; string resolvedNodeDir;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug);
             if (node == null) { Console.Error.WriteLine($"[dcm-viz] node not found: {slug}"); return 1; }
             nodeId    = node.Id;
             nodeCode  = node.NodeCode ?? slug.ToUpperInvariant();

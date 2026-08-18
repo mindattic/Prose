@@ -42,7 +42,11 @@ public static class BeatPromptBuilder
         double baselineStability, double baselineSimilarityBoost, double baselineStyle,
         int? seed = null)
     {
-        var text = beat.Text ?? "";
+        // NarrationText.Clean (not a bare read) — this beat text goes straight to ElevenLabs.
+        // Found live 2026-08-17: this call site was completely raw (no markdown/beat-marker
+        // cleaning at all, a pre-existing gap), which would also have let inline entity-GUID
+        // tags (corpus-trust-recovery Phase 1a) leak into TTS input verbatim.
+        var text = NarrationText.Clean(beat.Text ?? "");
         var supportsTags = tagsEnabled && ModelSupportsAudioTags(modelId);
 
         var tagPrefix = supportsTags

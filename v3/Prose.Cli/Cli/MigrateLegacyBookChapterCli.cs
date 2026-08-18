@@ -256,7 +256,8 @@ public static class MigrateLegacyBookChapterCli
         var slug     = $"{baseSlug}-{shortId}";
 
         // Ensure slug is unique (shouldn't collide but guard anyway)
-        if (await db.Nodes.AnyAsync(s => s.Slug == slug))
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        if (await db.Nodes.IgnoreQueryFilters().AnyAsync(s => s.Slug == slug))
             slug = $"{baseSlug}-{shortId}-{Guid.NewGuid():N8}";
 
         var newNodeId = Guid.CreateVersion7();

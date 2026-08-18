@@ -44,7 +44,12 @@ public sealed class ReviewReportExporter
     private async Task<string> NodePublishDirAsync(Guid nodeId, string title, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — without this, any node
+        // outside the ambient default silently 404s here and falls through to the no-universe
+        // fallback path below, which is exactly the "lands in the wrong universe" failure this
+        // method's own doc comment says it exists to prevent (same bug class found and fixed in
+        // BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct);
         if (node is null) return Path.Combine(settings.GetExportDirectory(null), ExportPathResolver.SanitizeTitle(title));
         var universeSlug = await db.Universes.AsNoTracking()
             .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);

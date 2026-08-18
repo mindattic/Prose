@@ -317,7 +317,6 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         // A token is "known" if any entity Name equals or contains it as a standalone word.
         var entityNames = await db.Entities
             .AsNoTracking()
-            .Where(e => e.IsActive)
             .Select(e => e.Name)
             .ToListAsync(ct);
 

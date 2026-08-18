@@ -104,7 +104,8 @@ public static class NarrateNodeCli
         // node row — re-read it to report the tally and pick the exit code.
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var done = await db.Nodes.AsNoTracking().FirstAsync(s => s.Id == nodeId);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var done = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstAsync(s => s.Id == nodeId);
             Console.WriteLine($"[narrate-book] Status: {done.Status}  ({done.NarratedBeatCount}/{done.TotalBeatsToNarrate} beats narrated)");
             if (!string.IsNullOrEmpty(done.Error))
                 Console.WriteLine($"[narrate-book] Error: {done.Error}");

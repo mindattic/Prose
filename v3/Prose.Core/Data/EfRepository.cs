@@ -102,9 +102,12 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
     };
 
     /// <summary>
-    /// Returns every active record for this entity type. Archived rows
-    /// (<c>Entity.IsActive = false</c>) are excluded — use <see cref="GetAllIncludingArchived"/>
-    /// when you need the full history (e.g. restore flows, audit views).
+    /// Returns every record for this entity type. Deleted rows simply aren't here — no
+    /// separate "active" flag to filter on; existence in the live table is the only signal
+    /// (temporal-hygiene rule). <see cref="GetAllIncludingArchived"/> is now identical to this
+    /// method (kept for existing callers, but there's nothing left to include that this doesn't
+    /// already return) — a deleted entity's prior state lives in <c>Entities_History</c>, not a
+    /// hidden-but-present live row.
     /// </summary>
     public virtual List<T> GetAll()
     {
@@ -118,7 +121,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
         using var db = dbFactory.CreateDbContext();
         var rows = db.Records
             .AsNoTracking()
-            .Where(r => r.Entity!.EntityType == entityType && r.Entity.IsActive)
+            .Where(r => r.Entity!.EntityType == entityType)
             .Select(r => r.Json)
             .ToList();
 
@@ -203,7 +206,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
             // this warning is the fix to stop the count from growing further; it
             // does not touch existing data (merging duplicates safely needs a
             // deliberate, reviewed pass, not an automatic one here).
-            var nameCollision = db.Entities.Any(e => e.IsActive && e.EntityType == entityType
+            var nameCollision = db.Entities.Any(e => e.EntityType == entityType
                 && e.Id != id && e.Name.ToLower() == name.ToLower());
             if (nameCollision)
                 Console.Error.WriteLine(
@@ -260,6 +263,13 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
         foreach (var item in items) Save(item);
     }
 
+    /// <summary>
+    /// Hard-deletes the entity row — no soft-disable flag; existence in the live table is the
+    /// only signal of "current" (temporal-hygiene rule). Blocks first if any non-cascading
+    /// dependent rows still reference it (<see cref="EntityDeleteGuard"/>) rather than silently
+    /// cascading past a Restrict FK or leaving orphaned references. Recoverable via
+    /// <c>Entities_History</c> (system-versioned) even though this call is a real delete.
+    /// </summary>
     public virtual void Delete(string name)
     {
         var item = GetByName(name);
@@ -270,13 +280,13 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
 
         using var db = dbFactory.CreateDbContext();
         var entity = db.Entities.FirstOrDefault(e => e.Id == id);
-        if (entity != null)
-        {
-            entity.Status     = "archived";
-            entity.IsActive   = false;
-            entity.ArchivedAt = DateTime.UtcNow;
-            entity.ModifiedAt = DateTime.UtcNow;
-        }
+        if (entity == null) return;
+
+        var blockers = EntityDeleteGuard.CheckBlockingReferencesAsync(db, id).GetAwaiter().GetResult();
+        if (blockers.Count > 0)
+            throw new InvalidOperationException(EntityDeleteGuard.DescribeBlockers(name, id, blockers));
+
+        db.Entities.Remove(entity);
         db.SaveChanges();
         InvalidateCache();
     }
@@ -286,7 +296,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
     public int Count()
     {
         using var db = dbFactory.CreateDbContext();
-        return db.Entities.Count(e => e.EntityType == entityType && e.IsActive);
+        return db.Entities.Count(e => e.EntityType == entityType);
     }
 
     public List<(string name, string json)> GetExportEntries()

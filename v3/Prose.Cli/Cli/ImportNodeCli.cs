@@ -133,7 +133,8 @@ public static class ImportNodeCli
         Guid? parentNodeId = null;
         if (!string.IsNullOrWhiteSpace(parentSlug))
         {
-            var p = await db.Nodes.FirstOrDefaultAsync(s => s.Slug == parentSlug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var p = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Slug == parentSlug);
             if (p == null) { Console.Error.WriteLine($"[import-book] --parent slug not found: {parentSlug}"); return 1; }
             parentNodeId = p.Id;
         }

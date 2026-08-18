@@ -102,7 +102,9 @@ public class SequentialReadTrackingService(IDbContextFactory<ProseDbContext> dbF
     public async Task<SequentialReadReport> GetStatusAsync(Guid bookNodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var book = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == bookNodeId, ct)
+        // IgnoreQueryFilters(): explicit bookNodeId, not an ambient scope (same bug class found
+        // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var book = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == bookNodeId, ct)
             ?? throw new InvalidOperationException($"No node found with Id {bookNodeId}");
 
         var (hash, beatCount, chapterCount) = await ComputeBeatSequenceHashAsync(bookNodeId, ct);
@@ -141,7 +143,9 @@ public class SequentialReadTrackingService(IDbContextFactory<ProseDbContext> dbF
         Guid bookNodeId, string readBy, int stageCount, string? findingsSummary, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var book = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == bookNodeId, ct)
+        // IgnoreQueryFilters(): explicit bookNodeId, not an ambient scope (same bug class found
+        // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var book = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == bookNodeId, ct)
             ?? throw new InvalidOperationException($"No node found with Id {bookNodeId}");
 
         var (hash, beatCount, chapterCount) = await ComputeBeatSequenceHashAsync(bookNodeId, ct);

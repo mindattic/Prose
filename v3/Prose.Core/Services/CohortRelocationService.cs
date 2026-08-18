@@ -242,7 +242,7 @@ public class CohortRelocationService
                 INSERT INTO Edges (SourceId, TargetId, RelationType, Description, Weight, Sentiment, StoryValidFrom, Source)
                 SELECT k.CharId, e.Id, 'deployed_at', 'Work-station / patrol assignment', 1.0, 'neutral', @atStory, @src
                 FROM #cohort k
-                JOIN Entities e ON e.IsActive = 1 AND e.EntityType = 'place'
+                JOIN Entities e ON e.EntityType = 'place'
                               AND (e.Name = k.OldHomeTurf OR e.Name LIKE k.OldHomeTurf + '%')
                 WHERE k.OldHomeTurf IS NOT NULL AND LTRIM(RTRIM(k.OldHomeTurf)) <> ''
                   AND NOT EXISTS (SELECT 1 FROM Edges ed

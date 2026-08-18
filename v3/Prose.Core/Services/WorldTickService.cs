@@ -116,8 +116,7 @@ public class WorldTickService : BackgroundService
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             characterIds = await db.Entities
-                .Where(e => e.IsActive
-                         && e.EntityType == "character"
+                .Where(e => e.EntityType == "character"
                          && e.UniverseId == universeId)
                 .OrderBy(e => e.Id)
                 .Take(MaxCharactersPerTick)

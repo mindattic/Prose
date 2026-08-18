@@ -69,7 +69,9 @@ public sealed class ComprehensionProbeService(
         string slug, title;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var node = await db.Nodes.AsNoTracking().Where(n => n.Id == bookNodeId)
+            // IgnoreQueryFilters(): explicit bookNodeId, not an ambient scope (same bug class
+            // found and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == bookNodeId)
                 .Select(n => new { n.Slug, n.Title }).FirstOrDefaultAsync(ct)
                 ?? throw new InvalidOperationException($"No node {bookNodeId}.");
             slug = node.Slug ?? bookNodeId.ToString("N");

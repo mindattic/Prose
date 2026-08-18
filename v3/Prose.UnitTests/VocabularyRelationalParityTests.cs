@@ -166,7 +166,7 @@ public class VocabularyRelationalParityTests
                 Name       = src.Term,
                 Slug       = WorldGraphService.Slugify(src.Term),
                 Status     = "canon",
-                IsActive   = true,
+                
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             });

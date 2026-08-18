@@ -45,7 +45,8 @@ public static class NodeBibleCli
 
         // Resolve node
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Slug == slug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Slug == slug);
         if (node == null)
         {
             Console.Error.WriteLine($"[book-bible] No node found with slug '{slug}'.");

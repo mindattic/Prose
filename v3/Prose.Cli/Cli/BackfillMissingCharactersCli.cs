@@ -32,8 +32,7 @@ public static class BackfillMissingCharactersCli
 
         // Active character entities lacking a relational Characters row.
         var missing = await db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "character" && e.IsActive
-                && !db.Characters.Any(c => c.Id == e.Id))
+            .Where(e => e.EntityType == "character" && !db.Characters.Any(c => c.Id == e.Id))
             .Select(e => e.Id)
             .ToListAsync();
 

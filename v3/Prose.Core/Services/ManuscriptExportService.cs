@@ -52,7 +52,10 @@ public class ManuscriptExportService
     public async Task<string> ExportMarkdownAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
+        // universe the ambient default resolves to would otherwise 404 here even with a correct id
+        // (same bug class found and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         // Resolution order: explicit param → node.Author → "MindAttic" (pen name)
         author = string.IsNullOrWhiteSpace(author)
@@ -523,7 +526,10 @@ public class ManuscriptExportService
     private async Task<(Manuscript Manuscript, string Path)> LoadAsync(Guid nodeId, string ext, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
+        // universe the ambient default resolves to would otherwise 404 here even with a correct id
+        // (same bug class found and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var universeSlug = await db.Universes.AsNoTracking()
             .Where(u => u.Id == node.UniverseId)
@@ -583,7 +589,7 @@ public class ManuscriptExportService
                 current ??= AddLeadChapter(chapters);
                 current.Blocks.Add(new ContentBlock(true, beatTitle));
             }
-            var text = (beat.Text ?? "").Trim();
+            var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
             if (text.Length == 0) continue;
             // Beats before the first chapter start land in an untitled lead chapter.
             current ??= AddLeadChapter(chapters);

@@ -127,7 +127,8 @@ public class EditSessionTools(
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(nodeIdOrSlug, out var id))
-            return await db.Nodes.FirstOrDefaultAsync(n => n.Id == id);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            return await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == id);
         return await db.Nodes.FirstOrDefaultAsync(
             n => n.Slug == nodeIdOrSlug ||
                  (n.NodeCode != null && n.NodeCode.ToUpper() == nodeIdOrSlug.ToUpper()));

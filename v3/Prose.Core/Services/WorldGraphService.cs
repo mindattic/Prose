@@ -1004,7 +1004,7 @@ public class WorldGraphService : IWorldGraphService
         if (sql == null) return;
         using var ctx = sql.CreateDbContext();
         var rows = ctx.Entities.AsNoTracking()
-            .Where(e => e.IsActive && e.Status != "stub")
+            .Where(e => e.Status != "stub")
             .Select(e => new { e.Name, e.EntityType, e.Description })
             .ToList();
         foreach (var e in rows)

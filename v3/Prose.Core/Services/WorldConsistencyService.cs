@@ -318,7 +318,7 @@ public class WorldConsistencyService : PipelineServiceBase
         var types = AllEntityTypes.ToHashSet(StringComparer.OrdinalIgnoreCase);
         using var db = dbFactory.CreateDbContext();
         return db.Records.AsNoTracking()
-            .Where(r => r.Entity != null && r.Entity.IsActive && types.Contains(r.Entity.EntityType))
+            .Where(r => r.Entity != null && types.Contains(r.Entity.EntityType))
             .Select(r => new { r.EntityId, r.Json })
             .ToList()
             .Select(r => new RecordEntry($"db:Records[{r.EntityId:N}]", r.EntityId, r.Json ?? ""))
@@ -335,7 +335,7 @@ public class WorldConsistencyService : PipelineServiceBase
         foreach (var type in types)
         {
             var rows = db.Records.AsNoTracking()
-                .Where(r => r.Entity != null && r.Entity.IsActive && r.Entity.EntityType == type)
+                .Where(r => r.Entity != null && r.Entity.EntityType == type)
                 .Select(r => new { r.EntityId, r.Json })
                 .Take(maxPerType)
                 .ToList();

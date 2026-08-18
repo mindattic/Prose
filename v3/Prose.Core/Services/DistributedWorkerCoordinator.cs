@@ -49,7 +49,7 @@ public class DistributedWorkerCoordinator
         foreach (var type in entityTypes)
         {
             var entities = await db.Entities
-                .Where(e => e.EntityType == type && e.IsActive)
+                .Where(e => e.EntityType == type)
                 .Select(e => new { e.Id, e.Name, e.Description })
                 .ToListAsync(ct);
 

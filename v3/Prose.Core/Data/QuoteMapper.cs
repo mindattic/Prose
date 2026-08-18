@@ -25,7 +25,7 @@ public static class QuoteMapper
     public static List<QuoteData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Quotes.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "quote"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "quote"),
                 q => q.Id, e => e.Id,
                 (q, e) => new { q.Id, Name = e.Name, q.Category })
             .ToList();
@@ -62,7 +62,7 @@ public static class QuoteMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "quote")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "quote" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "quote"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -179,7 +179,7 @@ public static class QuoteMapper
         };
 
         var quoteEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "quote" && e.IsActive)
+            .Where(e => e.EntityType == "quote")
             .Select(e => e.Id)
             .ToHashSet();
 

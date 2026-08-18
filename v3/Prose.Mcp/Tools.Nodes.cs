@@ -104,7 +104,8 @@ public class NodeTools
         if (string.IsNullOrWhiteSpace(slugOrId)) return null;
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(slugOrId, out var gid))
-            return await db.Nodes.AsNoTracking().AnyAsync(s => s.Id == gid) ? gid : (Guid?)null;
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            return await db.Nodes.IgnoreQueryFilters().AsNoTracking().AnyAsync(s => s.Id == gid) ? gid : (Guid?)null;
         return await db.Nodes.AsNoTracking()
             .Where(s => s.Slug == slugOrId || s.NodeCode == slugOrId).Select(s => (Guid?)s.Id).FirstOrDefaultAsync();
     }
@@ -409,7 +410,8 @@ public class NodeTools
         Guid? nextBeatId = null;
         if (nodeId.HasValue)
         {
-            node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId.Value);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == nodeId.Value);
             var ordered = await workbench.GetOrderedBeatsAsync(nodeId.Value);
             var idx = ordered.FindIndex(o => o.Beat.Id == beat.Id);
             if (idx >= 0)
@@ -1311,9 +1313,11 @@ public class NodeTools
         await using var db = await dbFactory.CreateDbContextAsync();
         if (Guid.TryParse(idOrSlug, out var guid))
         {
-            var byId = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
             if (byId != null) return byId;
         }
-        return await db.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        return await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug);
     }
 }

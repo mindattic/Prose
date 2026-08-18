@@ -42,7 +42,9 @@ public static class ExportPathResolver
         var parentId = node.ParentNodeId;
         for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
         {
-            var parent = await db.Nodes.AsNoTracking()
+            // IgnoreQueryFilters(): explicit pid, not an ambient scope (same bug class found and
+            // fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+            var parent = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
                 .Where(s => s.Id == pid)
                 .Select(s => new { s.Title, s.ParentNodeId })
                 .FirstOrDefaultAsync(ct);
@@ -55,7 +57,11 @@ public static class ExportPathResolver
 
         // De-dup: if a sibling node produces the same folder name, prefix with
         // NodeCode — or GUID7 if NodeCode is null or shared with a colliding sibling.
-        var siblings = await db.Nodes.AsNoTracking()
+        // IgnoreQueryFilters(): explicit node.ParentNodeId, not an ambient scope — a true sibling
+        // shares node's own universe by construction (parent-child is same-universe by design), so
+        // no extra UniverseId filter is needed here, unlike a new-root-node creation (same bug
+        // class found and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+        var siblings = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(s => s.Id != node.Id && s.ParentNodeId == node.ParentNodeId)
             .Select(s => new { s.Title, s.NodeCode })
             .ToListAsync(ct);

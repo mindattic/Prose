@@ -160,7 +160,7 @@ public class QuoteRelationalParityTests
                 Name       = src.Quote,
                 Slug       = WorldGraphService.Slugify(src.Quote.Length > 40 ? src.Quote[..40] : src.Quote),
                 Status     = "canon",
-                IsActive   = true,
+                
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             });

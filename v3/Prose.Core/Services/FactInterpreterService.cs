@@ -321,8 +321,7 @@ public class FactInterpreterService
 
         // Path 1: exact name/slug match within the typed bucket.
         var hit = await db.Entities.AsNoTracking()
-            .Where(e => e.IsActive
-                     && e.EntityType == entityType
+            .Where(e => e.EntityType == entityType
                      && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefaultAsync(ct);
@@ -330,7 +329,7 @@ public class FactInterpreterService
 
         // Path 2: type-agnostic exact match (LLM may have guessed near-miss type).
         hit = await db.Entities.AsNoTracking()
-            .Where(e => e.IsActive && (e.Name == name || e.Slug == slug))
+            .Where(e => (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefaultAsync(ct);
         if (hit.HasValue) return hit;
@@ -397,7 +396,6 @@ public class FactInterpreterService
             Description = description,
             CreatedAt   = DateTime.UtcNow,
             ModifiedAt  = DateTime.UtcNow,
-            IsActive    = true,
         });
 
         // Add a matching subtype row when one is known. Each subtype has its

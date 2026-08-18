@@ -16,7 +16,7 @@ namespace Prose.UnitTests;
 ///
 /// What we're proving:
 ///  • Save→Read round-trips a domain object through the Records JSON column.
-///  • IsActive filter excludes archived rows from default reads.
+///  • Delete hard-deletes — no status flag, no separate archived state.
 ///  • Continuity claims persist with contradiction detection intact.
 ///  • Books / Chapters / Beats land with their child collections preserved.
 /// </summary>
@@ -76,8 +76,15 @@ public class MigrationSmokeTests
     }
 
     [Test]
-    public void Delete_FlipsIsActive_ExcludesFromGetAll_KeepsArchive()
+    public void Delete_HardDeletes_ExcludesFromGetAll_NoSeparateArchiveState()
     {
+        // Replaces the old soft-disable premise (IsActive flip, still queryable via
+        // GetAllIncludingArchived). Temporal-hygiene rule: no status flag, existence in the
+        // live table is the only signal. GetAllIncludingArchived() is now literally identical
+        // to GetAll() — nothing is "archived-but-present" anymore. Recoverability lives in
+        // Entities_History (SQL Server temporal), which this SQLite fixture can't exercise —
+        // verified separately against real SQL Server (Phase -1b's live merge/delete smoke
+        // tests, corpus-trust-recovery plan).
         var repo = new CharacterRepository(dbFactory);
         var src = new CharacterData
         {
@@ -89,8 +96,8 @@ public class MigrationSmokeTests
 
         repo.Delete(src.Name);
 
-        Assert.That(repo.GetAll().Count, Is.EqualTo(0), "archived record hidden from default reads");
-        Assert.That(repo.GetAllIncludingArchived().Count, Is.EqualTo(1), "archived record still queryable for restore");
+        Assert.That(repo.GetAll().Count, Is.EqualTo(0), "deleted record hidden from default reads");
+        Assert.That(repo.GetAllIncludingArchived().Count, Is.EqualTo(0), "no separate archived state — the row is truly gone");
     }
 
     [Test]

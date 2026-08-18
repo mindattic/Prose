@@ -1,0 +1,711 @@
+# Between the Lines
+
+_His job is to look the other way. For fourteen years, Idris Kovac has perfected it. As a checkpoint officer at the Seam—where the corporate interior meets the Grey Zone—he takes payments to leave doors open, to feed bad codes into the system, to delay enforcement by exactly twenty-two minutes. He tells himself the corporations never miss what they lose. He tells himself the Grey Zone would find another route anyway. He doesn't let himself think about what's actually moving through those doors. Then a young woman he processed through his checkpoint eleven months ago goes missing. Her name is Yuki Osei-Reyes. She thanked him when he stamped her family's papers. Her case is quietly misfiled as a runaway—a routing decision that was not accidental—and suddenly Idris can't unsee the pattern underneath fourteen years of looking away. His access to the checkpoint's systems is the only thing that might let him break the operation. But pulling that thread means dragging in the people closest to him, means admitting what kind of man he's been, means discovering that corruption has a cost he never calculated. What happens when the one thing you can't afford to look away from turns out to be connected to everything you've spent your life not seeing? Approximately 48 pages and 59 min to read._
+
+## Routine
+
+The gate light on Lane Three cycles amber-to-green four seconds before the manifest actually clears, and Idris Kovac has known that gap by heart since before his knees started aching in the cold. Four seconds. Long enough to wave a slug through the freight inspection bay before the system finishes deciding whether it should.
+
+He does it now, palm flat against the reader, watching the cargo hauler's undercarriage roll past — six crates, declared as filtration cartridges, weight profile that says otherwise if anyone bothered to check the axle strain. Nobody bothers. He hasn't bothered in fourteen years.
+
+The hauler's driver doesn't look at him. That's the tell of a professional. The amateurs always look.
+
+Rain comes down the Wave in sheets tonight, sliding off the corporate side's overhang and landing three meters short of where Idris stands, because that's where the gutter line was engineered to drop it — onto the Grey Zone apron, not the tier above. He has stopped noticing this most days. Tonight the water finds the seam in his boot anyway, cold thread working up through the sole, and he notices that instead. Officers on this rotation call the checkpoint the Seam for the same reason, unofficially, never on a sign — the exact line where the corporate side's engineering ends and the Grey Zone's doesn't begin, stitched together badly and on purpose.
+
+*Somebody designed that gutter angle on purpose. Somebody got paid for it.*
+
+The credstick meets his palm on the hauler's second pass, tucked inside a supply manifest clipboard the driver hands across like it's paperwork, because to the cameras it is paperwork. Φ340. Less than usual — Idris clocks it before the stick even registers, the weight wrong in his hand, some calculation upstream deciding his silence is worth less this month than last.
+
+He doesn't say anything. You don't negotiate at the gate. You negotiate never, and you adjust your expectations, and you sign the manifest.
+
+Overhead, the aerostatic bloc's underside runs its slow green diagnostic pulse across two hundred meters of ferrocrete belly — Tier 3 housing, mostly, a few Tier 4 balconies catching what's left of the processed light before it dies in the rain. GLMZ Civil Infrastructure Code, Vertical Class System addendum, section he can't remember the number of but remembers the language of: *altitude differential shall not be construed as an indicator of civic priority.* He read that in academy. He has spent fourteen years underneath the proof that nobody who wrote it believed it.
+
+The board on his wrist unit blinks once — a soft amber ping, not urgent, ARC's dispatch queue shuffling itself the way it always does when Sector Seven's on again. Six officers rated for this checkpoint corridor tonight. Two are covering Checkpoint 9 because Checkpoint 9's other two called in. Idris does the math without meaning to: coverage ratio down around thirty percent of doctrine, same as it's been running since budget cycle before last, and doctrine was already thin.
+
+*Nobody's coming if this goes loud. Nobody's been coming for years.*
+
+He runs the DRU delay the way he always does — a habit worn so smooth it barely registers as an act anymore. Direct Response Unit dispatch reads a two-minute window as standard for any flagged anomaly at a manned crossing. Idris's queue-priority override, the one buried three menus deep that nobody audits because nobody's supposed to know it's there, stretches that window to twenty-two minutes if he tags the call as "low-confidence sensor artifact" before it routes. He's tagged eleven calls that way this year. He tells himself each time that it's never mattered, that the twenty-two minutes bought nothing anyone would miss.
+
+The hauler clears the far gate. Taillights smear red through the rain, doubled in the wet ferrocrete, and for a second the reflection looks steadier than the truck itself — cleaner lines, no rust bleed on the wheel wells, a better version of the same machine running just under the real one.
+
+*Which one of those is actually going somewhere?*
+
+His wrist unit chimes again. Not dispatch this time — personal line, a number he still has saved under a name he stopped calling by it in his head months ago. He looks at it for exactly as long as the rain needs to soak through the seam in his boot the rest of the way, then lets it go to nothing, because whatever it is, it isn't checkpoint business, and checkpoint business is the only kind he's any good at handling right now.
+
+The gate light cycles again — Lane One this time, some other officer's four seconds, some other officer's problem — and Idris finally lets his shift end the way it always ends, with his shoulders dropping half an inch he didn't know they'd raised.
+
+His relief, a Tier 2 kid named Osei whose neuretic etching still looks raw at the temple, doesn't say much beyond the handoff codes. Idris doesn't offer much either. That's the arrangement. He walks the covered length of the apron toward the transit stair, rain finding the gutter line exactly where it was engineered to, and he doesn't think about the gutter line, because he thought about it enough for one night already.
+
+The wrist unit chimes a third time before he's past the second support column.
+
+Personal line. Same number. He almost lets it go again — his thumb is already moving toward the dismiss glyph, muscle memory older than the relationship it's dismissing — when the notification text renders underneath the number, because Noor set her messages to preview years ago and never turned it off, and neither has he.
+
+**yuki osei-reyes family filed a missing person report last night. thought you'd want to know. pulled it off the same transfer-audit feed i flag every week. you processed them.**
+
+He stops walking. Water keeps landing on the hood of his jacket, three meters short of where it was supposed to fall, and for a second that fact registers louder than the message did.
+
+*Osei-Reyes. Osei-Reyes.*
+
+The name comes with a face before it comes with a file number, which is wrong, which is backward, fourteen years of doing this job should mean the file number arrives first and the face never arrives at all. But he sees her clearly: a woman maybe twenty-two, Ghanaian-Mexican, standing at his lane with a family cluster behind her — mother, younger brother, a grandmother's photo held against someone's chest like a passport that predates passports — and when he'd finished running their transfer authorization, slower than protocol because the system kept flagging her mother's residency history, she'd looked at him and said *thank you, officer,* like she meant the words instead of just spending them to get through faster.
+
+Nobody thanks him. He processes four hundred bodies a week through that lane and nobody thanks him, and he remembers her for exactly that reason, which he understands is a small, embarrassing fact about himself he has never said out loud to anyone.
+
+*Eleven months ago. That was eleven months ago.*
+
+He checks the date stamp on the message against the memory and the arithmetic holds — she'd have been settled, working, whatever new life the transfer paperwork was supposed to buy her. He thinks about the mother's face in the queue, tired in the specific way that isn't about sleep. He thinks about the grandmother's photo. He does not let himself think, not yet, about what "didn't come home" usually means when the person is a young woman walking a Grey Zone shift route alone, because if he starts thinking that he'll have to keep thinking it the whole way home.
+
+His thumb finds the reply glyph and hovers there in the rain, doing nothing, while the water finds the seam in his boot one more time.
+
+He types: **which lane did she come through?**
+
+He deletes it. That's not the question. The question that matters is the one he doesn't type either — *did anyone even look?* — because he already knows the answer without pulling a single log, the way he knows the gutter angle was engineered on purpose, the way he knows exactly how far twenty-two minutes stretches when nobody's coming.
+
+He doesn't message Noor back. He pulls the case number instead, standing under the apron overhang with rain running the gutter line six inches from his boots, because that's the part of him that still works — not the part that calls people back, the part that opens a terminal and reads.
+
+The report renders in ARC standard intake formatting, ugly amber text on a field gray as wet ferrocrete. **OSEI-REYES, YUKI. 22. LAST CONFIRMED LOCATION: TRANSIT CORRIDOR, GREY ZONE, END OF SHIFT.** Filed 0140 hours. Officer of record: badge string he doesn't recognize, a name he doesn't either — Checkpoint 14 rotates enough bodies through nights that strangers work his lane now, kids six months out of academy who've never stood where he's standing.
+
+Disposition field, second page, routing code where the case gets sorted into a queue that either moves or doesn't.
+
+**CLASSIFICATION: VOLUNTARY DEPARTURE (RUNAWAY, ADULT).**
+
+*No.*
+
+He reads it again in case the rain on the screen is doing something to the letters. It isn't. Twenty-two years old, a family that filed inside a night, a grandmother's photo carried like a passport — and some kid on the overnight shift stamped her a runaway before the report finished uploading, which means no dispatch flag, no priority routing, no automatic cross-reference against corridor cams or checkpoint logs. A runaway file doesn't pull footage. A runaway file sits in a drawer until somebody remembers it exists, and mostly nobody does.
+
+Fourteen years of doing paperwork teaches you the shape paperwork is supposed to have before it teaches you anything else, and this doesn't have it. Adult missing-person filed by immediate family inside twenty-four hours of last confirmed contact routes as **UNCLASSIFIED — PENDING REVIEW** by doctrine, not as a disposition at all, not this fast, not without a single interview logged in the file to justify the call. He's filled out that classification himself. He knows exactly how many boxes it's supposed to make you check before you're allowed to write *runaway* instead of *pending.*
+
+Someone checked none of them.
+
+*Meridian Unsolved did the one about the girl from the Loop tier — the one where the disposition code got changed six times in eleven days and every change moved the case further from anyone looking at it.* He'd watched that episode half paying attention, feet up, waiting for something better to come on, and thought it was the kind of thing that happens on shows, dramatized past what any real desk would actually do. He is looking at the real desk now. The shape is identical. Somebody wanted this file to stop existing before it started, and they only needed one kid on an overnight shift, tired or told to be, to type four words into the wrong box.
+
+He could be that kid, some other night, some other file. He knows that with a clarity that doesn't feel like insight so much as recognition — he has closed calls faster than the disposition should've allowed a dozen times over fourteen years, not because someone told him to but because closing them was easier than the version of the job where he actually looked. This one isn't his. That's the only difference he can find between what he's reading and what he's done himself, and it isn't a difference that holds up under any weight at all.
+
+*Eleven months ago she said thank you and meant it.*
+
+His thumb is over the case file's flag option — the small, useless button that lets any ARC officer mark a disposition for supervisor review, no explanation required, no name attached unless someone digs. It would cost him nothing. It would also do nothing, because supervisor review at Checkpoint 14's parent office means a queue behind eleven other flags nobody's staffed to clear, the same math he ran twenty minutes ago standing under the amber ping, the same math that's been running for years.
+
+He flags it anyway.
+
+The confirmation renders — **REVIEW REQUESTED, ROUTED TO SUPERVISORY QUEUE, EST. PROCESSING 6–14 BUSINESS DAYS** — and he stands there in the rain reading the estimate twice, because he already knows what fourteen days does to a corridor case, and he did that math on purpose too.
+
+Fourteen days is a number he can hold in his hand, and he doesn't like the shape of it.
+
+*Somebody wanted this file to stop existing before it started.*
+
+He could walk away from the terminal now. That is the whole of the decision, laid out as plain as a lane closure sign: log out, go home, let the flag do whatever fourteen days of nobody's-staffed-to-clear-it does to it, and be the man he has been for fourteen years, the one who reads the shape of a thing and knows better than to reach into it. Nothing in his contract requires him to reach into it. Nothing in fourteen years of practiced not-looking has ever required him to reach into anything that wasn't already reaching for him first, a credstick under a glove, a cargo manifest with a gap built in on purpose.
+
+*This one isn't reaching for you. You're reaching for it.*
+
+Something from academy training surfaces, unbidden - a title he hasn't thought of in eleven years: *The Architecture of Silence.* Required reading he'd skimmed the week before the exam and never opened again. He doesn't remember a single argument from it now, only that title, and the fact that it's the only part that ever mattered.
+
+He doesn't log out.
+
+He opens dispatch instead - not the case file, not the disposition, the raw feed underneath it, the actual routing log that shows which units got pinged and when and who canceled what, the thing he has pulled a hundred times for cargo lanes and never once for a person. His clearance is Lane Three, checkpoint-level, nothing that should touch a corridor incident logged outside his own checkpoint's chain. He knows the override that gets him there anyway, the same buried command string he's used for years to buy smugglers twenty minutes of silence, because a system built to hide gaps for money doesn't check who's opening the gap or why.
+
+The log renders. Corridor unit 4, dispatched 0148, eight minutes after the file went in.
+
+Canceled 0151. Three minutes on scene, if it ever left the garage at all.
+
+*Cancel code.* He reads it three times because the code isn't one he recognizes, not a supervisor override, not a resource conflict, not any of the twelve reasons a unit gets pulled that he's memorized without meaning to. It's a string. Raw and unglossed, the kind of code that exists because someone typed it directly into the field instead of selecting from the list ARC gives you, which means whoever canceled that unit had access above what a night-shift disposition clerk should carry, and used it in under three minutes, on a case that was an hour old and already dead in the water.
+
+He sits with that.
+
+*The corporate side never loses anything it would miss.* He has told himself that sentence so many times it stopped sounding like a rationalization and started sounding like a fact he'd personally verified, the load-bearing beam under fourteen years of taking Φ340 or Φ600 or whatever the number was that month and calling it a fair tax on a system too big and too rich to notice the leak. He is looking at a canceled dispatch unit and a runaway classification stacked eleven minutes apart in a file that should have taken six months to go this cold, and the beam doesn't feel like a fact anymore. It feels like something he built himself, out of the exact kind of paperwork he is currently proving wrong.
+
+He copies the cancel code onto a slip he shouldn't be carrying and folds it into his jacket, against his chest, the way a man might carry a photograph that predates the need for one.
+
+The apartment door reads Noor's biometric before it reads his — a half-second delay on the panel that Idris has clocked a dozen times and never mentioned, because there's no version of mentioning it that doesn't sound like a complaint about who left whom.
+
+"You're early," Noor says, not moving from the doorway.
+
+"Traffic on the causeway was light."
+
+"You're never early."
+
+She's got Sela's bag over one shoulder, the audit tablet under the other arm, the two objects that define her week now — one for the kid, one for Axiom Interior Compliance, where she gets paid Φ2,400 a cycle to find exactly the kind of gap in a manifest that Idris gets paid Φ340 to make sure nobody finds. Neither of them has ever said this out loud in fourteen years, married or not. It sits in the room like furniture.
+
+"Long shift," he says.
+
+"You look like one."
+
+Sela comes around the corner already talking, headphones around her neck instead of in her ears, which means she wants to be heard before she wants to disappear into something else — a fifteen-year-old's version of leaving the door open a crack.
+
+"Ms. Boahen's kid got into Bloom Quarter prep on a Tier-2 sponsorship and everybody's acting like she cured something," Sela says. "It's a school. It has a cafeteria."
+
+"Congratulations to her," Idris says.
+
+"I didn't say congratulations, I said everybody's *acting* like—"
+
+"I heard you."
+
+Noor's mouth does something small at the corner, gone before it becomes a smile. She used to translate Sela for him, in the old apartment, back when Sela was young enough that the translation was necessary instead of just habitual. She doesn't do it anymore. He notices the not-doing more than he'd notice the doing.
+
+"Two weeks," Noor says, handing over the bag. "Same window."
+
+"Same window."
+
+She doesn't ask why his jacket smells like the underdeck, or why there's a fold in the breast pocket that wasn't there the last time she stood this close to him, close enough to catalog things without meaning to — an old habit from the marriage, or a newer one from the audit contracts, he's never been sure which. She used to ask him things. She stopped asking about a year before she left, which he understands now was not a coincidence but a decision, made quietly, the way she makes most of them.
+
+"Call if the shift runs long," she says. "Don't just not show."
+
+"I've never not shown."
+
+"You've been late enough times that I stopped believing the difference matters to her."
+
+She says it flat, not cruel, an auditor's sentence — a finding, not an accusation — and it lands the way her sentences always land on him, precisely, without heat, which is worse than heat.
+
+She's gone before he can answer it, down the corridor toward the transit spur, tablet already lit against her forearm, back to the version of her life that doesn't require standing in this doorway.
+
+Sela's already three steps into the apartment, dropping onto the couch with the specific gravity of someone who has decided this visit will be conducted horizontally.
+
+"You didn't eat," Idris says.
+
+"I ate."
+
+"What."
+
+"Does it matter?"
+
+It doesn't, and they both know it doesn't, and the question was never really about food. He sits across from her in the chair that's technically his even though he hasn't lived here in three years, because some furniture keeps a job description longer than the person who assigned it.
+
+"I read something," Sela says, not looking at him, scrolling something on her wrist display he can't see the angle of. "*I Archived My Father and I Regret It.* It's a whole essay. Some woman did a Read on her dad's neuretic backup before she deleted it, found out he'd flagged her for a scholarship program behind her back and never told her because he didn't want credit."
+
+"Is that a real thing people do."
+
+"It's a real essay."
+
+"Did you like it."
+
+"I don't know." She still isn't looking at him. "I read half of it."
+
+*She brought it up on purpose.* He knows this the way he knows a manifest gap on purpose — the shape of it, the placement, the fact that she said it into the air of the room instead of at him directly, which is exactly how she tells him things she wants him to sit with and doesn't want to watch him sit with.
+
+He doesn't ask her what she meant by it.
+
+"You want noodles," he says instead. "There's a place two levels down, real broth, not the printed stuff."
+
+"I have homework."
+
+"You always have homework."
+
+"That's what homework is, Dad."
+
+It's the first time in the visit she's called him that instead of nothing, instead of the flat address she uses when she's annoyed, and he holds onto it the way he held the cancel code against his chest five minutes ago — small, folded, worth more than its size.
+
+Idris's wrist unit buzzes against the couch cushion where he'd tossed it, a notification he almost lets sit until he sees the origin: not Noor, not the checkpoint, a records-query flag from Bishop Alaoui, an ARC name he half-recognizes from a night working intake at Checkpoint 9 six or seven years back and hasn't thought about since.
+
+*Someone's watching the log I pulled.*
+
+Sela's still talking, something about a homework partner who won't reply to messages, and he says "mm" in the place where a response goes without hearing enough of it to know if it was the right one.
+
+The message is three lines, no header, no ARC formatting.
+
+**You pulled the Osei-Reyes dispatch trail off-book at 0240. I want to know why before I decide whether that's a problem.**
+
+He reads it twice. There's no signature, but the sender field says ALAOUI, B - RECORDS/COMPLIANCE, CHECKPOINT 9, and underneath it, smaller, a line that isn't standard ARC messaging at all: a personal contact string, not a work one, the kind of detail you only include if you want the other person to understand this isn't going through channels. Records/Compliance carries a standing query-flag across every checkpoint's dispatch system - a net Bishop built into the compliance feed years ago and never told a supervisor about - which is apparently how a man three checkpoints away already knows what Idris did before anyone at Checkpoint 14 does.
+
+Sela's stopped talking. She's watching him the way she watches things she's decided are more interesting than what he's telling her - the tablet, the fold in his jacket earlier, now his face doing whatever it's doing.
+
+"Work?" she asks.
+
+"Work."
+
+"You always say that like it's an answer."
+
+*It is the only true thing I've said to her tonight.* He doesn't say it. He sets the wrist unit face-down on the arm of the chair, a gesture that means nothing to her and everything to him - the same motion he uses at the checkpoint when a lane camera catches an angle he'd rather it didn't.
+
+He composes three replies in his head and discards all three because each one explains too much or too little, and a man who has spent fourteen years deciding exactly how much truth a form requires knows the difference between those two failures better than most people ever will.
+
+**Following up on a missing-persons case I processed the family for. Nothing above my clearance.**
+
+He sends it before he can revise it into something more careful, which is itself a kind of tell, and he knows it the second his thumb leaves the screen.
+
+The reply comes back in under a minute - too fast for someone typing from scratch, which means Bishop Alaoui had this response ready before Idris ever answered.
+
+**Everybody's clearance covers exactly what they're supposed to look at. You looked at something else. That's the part I want to talk about.**
+
+Sela's still on the couch, headphones back around her neck, watching him read a message that has nothing to do with noodles or homework or the essay she brought into the room on purpose and hasn't mentioned since.
+
+"You're doing the face," she says.
+
+"What face?"
+
+"The one where you're already somewhere else."
+
+He doesn't answer that either, because the honest answer is that she's right, and there's no version of confirming it that doesn't cost him more of this two-week window than he's willing to spend on the truth tonight.
+
+The window won't come for a few minutes yet, and Sela's already asleep on the couch, one arm fallen off the cushion, headphones still looped around her neck playing nothing. Idris doesn't wake her. He sits in the chair that's technically his and answers Bishop Alaoui's third message with an address instead of an explanation, because an address is the only currency he has left that doesn't cost him something he needs to keep.
+
+The place is a records archive two levels under Checkpoint 9, decommissioned storage nobody's decommissioned on paper. Bishop is already there when Idris comes through the service hatch, standing in front of a wall he's built himself out of pulled schematics and hard-copy printouts, the analog kind, because paper doesn't get flagged for deletion in fourteen days.
+
+"You've got a records-compliance badge and a room full of contraband," Idris says.
+
+"I've got a room full of the things ARC's own systems won't hold onto." Bishop doesn't turn around. "Compliance is a job title. It isn't a description of what I do after hours."
+
+The wall is a map. Not a metaphor - an actual map, GLMZ's checkpoint grid rendered in grease pencil and colored string, routes running from Checkpoint 14 through Checkpoint 9, through two others Idris doesn't recognize by number, converging on a cluster of pins in the Grey Zone ground he does recognize, because he's stood near that block on his own two feet.
+
+"Three years of this," Bishop says. "Cargo tags that don't match manifests. Dispatch cancels inside the same three-minute window, over and over, different checkpoints, same signature underneath. I call it the Cordero Desk, half as a joke, because the pattern always terminates somewhere near the old Cordero shipping registry. You'd think a pattern like that gets noticed?"
+
+"It got noticed. By you. In a basement."
+
+"That's noticed the way a man drowning notices the water." Bishop finally looks at him. "Everyone above me who could act on it decided not seeing it was cheaper than seeing it."
+
+Idris steps closer to the wall, close enough to read the handwriting. Dates. Names - not full names, initials, case numbers, the kind of shorthand a man uses when he's the only one who'll ever need to read his own filing system.
+
+*You built this alone.* He doesn't say it. Saying it would be an accusation disguised as sympathy and Bishop would hear it as exactly that.
+
+His eyes find a pin near the bottom of the cluster, and under it, in Bishop's cramped hand: **O-R, Y. - CP14 - 11mo prior - pattern match, transit corridor, solo shift.**
+
+"That's her," Idris says. "That's Yuki."
+
+"That's an entry." Bishop's voice doesn't change, doesn't soften, a man reading a ledger out loud because the ledger is the only honest thing in the room. "Third one this year matching that exact profile - solo shift, transit corridor, recent relocation, family with an open residency flag. Before her there were nine I could confirm and probably twice that I couldn't."
+
+The room goes quiet except for the hum of the archive's ventilation, some old municipal system nobody's bothered replacing since before Idris was born.
+
+*Nine.* The word sits in him wrong, too small for what it's supposed to hold. Fourteen years of small corruptions and he'd told himself the ledger only had one column - what he took, what he let through - and here was a second column he'd never priced, running the entire time, in the dark, under his own checkpoint's floor.
+
+"You think I knew," Idris says.
+
+"I think you're standing in front of a three-year map with your daughter's height marked out of habit against a doorframe you visit every other week, and you're asking me if I think you knew." Bishop's tone doesn't rise. "I think you didn't want to know. Which is a different crime, but it isn't nothing."
+
+"I flagged the case."
+
+"You flagged it into a queue that takes two weeks to open a folder. I've watched that queue eat a hundred folders. It's not a mechanism for finding anyone. It's a mechanism for looking like there's a mechanism."
+
+"Then why not go around it? Pull the dispatch logs yourself, cross-checkpoint, and skip the queue entirely."
+
+"Tried that twice, early on." Bishop taps the wall, not looking at him. "Both times I put in exactly the wrong query through exactly the wrong terminal, and both times it just - died. No denial, no supervisor kicking it back, no record it was ever received. A silence with a shape to it, not the shape silence usually has when a system's just slow." He nods at the paper, the grease pencil, the hand-copied case numbers. "That's why this is analog. Whatever's protecting this pattern isn't only cutouts on the Grey Zone side keeping their own mouths shut. Something inside ARC's own stack doesn't want the same question asked twice, and I stopped being willing to find out what it does the third time."
+
+Idris's hand finds the edge of the table without deciding to move it, the same reflex he uses at the checkpoint console when a manifest doesn't match and his fingers go looking for the override before his mind's finished the sentence explaining why.
+
+"Why show me this," he asks. "You don't know me. You've got a boy's height marked on a doorframe somewhere too, don't you? That's what this room is."
+
+Bishop doesn't answer that directly. He crosses to a second board, smaller, half-hidden behind a support column, and pulls the sheet off it without ceremony.
+
+A photograph. A boy, maybe nineteen, and a case number, and a date three years old, and under it, in the same cramped hand, no pin cluster, no route lines - just a single word: **unresolved.**
+
+"I show you this," Bishop says, "because you're the first person in fourteen years who's had checkpoint-level access and asked a real question instead of taking a payment to stop asking. That's either the beginning of something or it's the most convenient lie you've told yourself yet. I haven't decided which."
+
+The words land the way Noor's land - flat, no heat, an auditor's sentence, and Idris understands in the moment it lands that this is the second person tonight who has priced him exactly and left him holding the number.
+
+His wrist unit buzzes again, and this time it isn't Bishop. It's the checkpoint's automated shift roster, requesting confirmation of coverage because a name has been pulled from the schedule without explanation.
+
+The name pulled is his own.
+
+Idris stares at his own name on the small screen — pulled, no reason code, no supervisor stamp — and the checkpoint console might as well be a hand closing around something he thought was his.
+
+*They're not asking me to explain. They're just taking the chair.*
+
+"Someone's moving on you," Bishop says, reading his face instead of the screen.
+
+"Someone's moving on the schedule. Could be nothing. Could be a rotation."
+
+"You don't believe that."
+
+He doesn't. He puts the wrist unit down on the archive table, face up, like putting down a hand he doesn't want to keep looking at, and thinks through what's left of his own ledger — the names who owe him, the ones he can still spend without the spending showing up somewhere with his badge number on it. There aren't many. There's exactly one who isn't inside the thing that just moved against him.
+
+"I need a records pull from outside this checkpoint's chain," Idris says. "Something that doesn't route through anyone who's already looking at me."
+
+"You're asking the wrong man. I don't have clerk access anymore, not the kind that queries live."
+
+"I know someone who does."
+
+Bishop's face doesn't change, but something in the set of his shoulders does, a man recalculating a variable he thought was fixed. "Who."
+
+"Farai Kessler. Checkpoint 9. We came up together — same intake class, twenty years back." Idris picks the wrist unit back up, turns it over once like weighing it. "She owes me a favor from before either of us had a badge worth owing favors over."
+
+"Records clerk," Bishop says. "Not an operator."
+
+"No."
+
+"She know what she'd be looking at?"
+
+"No." The word costs him something on the way out, more than he expects it to. "She'll know what I tell her, which is going to be less than what it is."
+
+Bishop doesn't say *that's how you got here* but it sits in the room anyway, plain as the pin cluster on the wall, plain as the boy's photograph with no route lines under it because some cases never get to be a pattern — they just stay unresolved.
+
+"Twenty years is a long time to hold a favor," Bishop says.
+
+"Long enough that she might not remember she's owed one."
+
+"You going to remind her tonight?"
+
+Idris is already keying the message, thumb moving over letters he's rehearsed exactly once in his head and not liked the sound of either time.
+
+*Farai. Need a cross-reference on dispatch logs, multiple checkpoints, going back three years. Off the books. I'll explain when I can.*
+
+He reads it twice before sending it, the way he reads a manifest twice before deciding whether the mismatch is worth his signature, and this time there's no twenty-two-minute window buried in code to buy himself room to think it through first.
+
+He sends it anyway.
+
+Bishop's board is still open, the boy's photograph still face-up, when the archive's dead line - the one nobody uses because nobody trusts a landline anymore - rings once and cuts off.
+
+Idris looks at it. Bishop looks at it.
+
+"That line doesn't ring," Bishop says.
+
+It rings again. Two tones this time, then silence, the pattern of a system announcing itself before it commits to a connection. Idris's wrist unit buzzes a second time in twelve minutes, and this one isn't the shift roster. It's a checkpoint-wide alert, the kind that goes to every officer on the grid at once, Farai's name in the header before the body of the message loads.
+
+**CP9 INCIDENT - OFFICER DOWN - RECORDS ANNEX - MEDICAL EN ROUTE**
+
+The words don't rearrange themselves into something else no matter how many times his eyes cross them.
+
+*You sent a message. That's all you did. You sent a message and put the wrist unit down like it was heavy.*
+
+"Farai," he says, and the name comes out wrong, too flat, the way a manifest number sounds when you read it off a screen instead of a person's mouth.
+
+Bishop is already moving, pulling a second unit off his belt, one Idris hasn't seen before, matte and unbranded, the kind that doesn't route through ARC's own network. He taps it twice and a feed opens, grainy, half a second behind real time - a records annex, a woman on the floor between two filing towers, one arm bent under her at an angle arms don't bend, a data terminal above her still lit, screen cracked but glowing.
+
+"That's her console," Idris says. "That's the terminal I sent the message to."
+
+"Nine minutes," Bishop says. His voice hasn't changed pitch, but it's gone somewhere colder, somewhere he keeps for exactly this. "Nine minutes between your message landing in her queue and this. That's not a coincidence window. That's a response time."
+
+"She didn't even open it yet. I don't know if she opened it."
+
+"Doesn't matter if she opened it. Matters if someone else's system flagged it landing." Bishop's thumb moves across the unbranded unit, calling up something else, a routing trace, lines converging the way Idris has watched dispatch logs converge all night, except this one terminates somewhere that isn't the Cordero pattern, isn't the Grey Zone at all. "This query didn't get caught by whoever's running transit corridor disappearances. It got caught by something sitting inside ARC's own intelligence stack. Something with visibility into records-clerk traffic across checkpoints in real time." He doesn't look up from the trace. "This is the wall. The one that ate my two queries and gave nothing back. I just never had a body on the floor to prove it was there."
+
+Idris's stomach does something his mind hasn't caught up to yet, a drop with no bottom to it.
+
+"That's not possible," he says, and hears how thin it sounds even as he says it. "Records clerks don't get watched. There's no budget for watching records clerks."
+
+"There's budget for watching *this* records clerk asking *this* question in the last twelve minutes." Bishop turns the unit so Idris can see the trace terminate, a node with no checkpoint number attached to it, just an internal designation neither of them recognizes. "Somebody built a tripwire for exactly the kind of query you just sent. Which means somebody already knew this question was coming. Which means whatever's inside your own agency watching for it isn't a rogue file clerk with a grudge. It's structural."
+
+The feed on the unbranded unit shifts, a second figure entering frame, kneeling, a hand pressed flat against Farai's shoulder where the blood is already dark enough to read as black on the low-light pickup. Idris doesn't know the man kneeling. He recognizes the posture - someone counting seconds before help that isn't fast enough, the same posture he's seen a hundred times through the checkpoint glass and never once had to be inside.
+
+*Twenty years she owed you a favor and you spent it in one message.*
+
+"I did this," Idris says.
+
+"You made a request," Bishop says. "Whoever built the tripwire did this." He says it like an auditor correcting a manifest, precise, not unkind, and not for a second interested in letting Idris off the number. "Doesn't change what it cost. Just changes who wrote the invoice."
+
+Idris's hand is still on the wrist unit. The alert is still open, the header still lit, and under it a line he hadn't noticed the first time through - a status field, blank a second ago, now populated.
+
+**PATIENT STATUS: CRITICAL - TRANSPORT DELAYED - DRU DISPATCH: NO UNITS AVAILABLE**
+
+No units available. The same phrase, the same shape of absence, he watched happen to a dispatch call three nights ago with a different name in the header.
+
+"Bishop," he says, and his voice has gone somewhere he doesn't recognize either, "that's the same cancellation profile. That's Yuki's file. That's her exact-"
+
+"I know what it is," Bishop says, and for the first time all night something moves under the flat surface of him, something that isn't calm at all, just very carefully not loud. "I've been looking at that profile for three years. I never once thought I'd watch it happen live."
+
+Idris sits down. There's no chair, so he sits on the archive floor, back against the cold spine of a filing tower, the way his legs make the decision before he does.
+
+"She has kids," he says. "Farai. Two of them. I don't - I never met them, I just know because she put it in the response, twenty years ago, when I asked her for a favor the first time. She said she couldn't cover a shift because her youngest had a fever."
+
+Bishop doesn't answer that. He's still watching the feed, unbranded unit angled so the light off it doesn't touch his face directly, and when he speaks his voice has the same flatness Idris used two hours ago reading a manifest number he already knew was wrong.
+
+"Her clearance level," Bishop asks. "What was it?"
+
+"I don't know. Records clerk. Low. Lower than mine."
+
+"Lower than yours." Bishop nods once, like a man confirming a measurement he already trusted. "So whoever built that tripwire isn't watching for people with access. They're watching for people asking questions outside their access. That's a different net than the one I've been mapping. That's not corridor traffic. That's internal."
+
+*You asked her because she was safe. Because she wasn't already burned.*
+
+"I picked her because she wasn't in it," Idris says. "That was the whole - that was the point. Nobody watches a records clerk."
+
+"Somebody built a system that watches every records clerk." Bishop finally turns from the feed, and whatever was carefully not-loud in him a minute ago has gone somewhere flatter and worse, a stillness that doesn't invite argument. "You didn't put her in danger by picking wrong. You put her in danger because there was no right person left to pick. That's the state of things now. That's what you're working inside of."
+
+"That's not better."
+
+"I didn't say it was better. I said it was accurate." Bishop crouches, brings the unit level with Idris's face, close enough that Idris can see the timestamp still climbing, no transport unit assigned, the field blank where a dispatch number should be. "You want to sit with what you did, sit with it later. Right now I need to know if you told her anything that narrows it. Location. Reason. My name."
+
+"No. Nothing. Just the request."
+
+"Good." Bishop stands, and something in the way he does it - economical, no wasted motion, a man who has drilled this exact recovery before - tells Idris this isn't the first time Bishop has had to fold a casualty into a plan without stopping to grieve it. "From here we don't send anything unencrypted again. Not to Kessler, not to anyone. You want another name pulled, you tell me first and I run it through something that doesn't touch ARC's stack at all."
+
+"You don't trust me to ask for help right."
+
+"I trust you to want to fix this so bad you'll do it fast and sloppy again." Bishop says it without heat, which is worse than if he'd shouted it. "I lost a kid to slow and careful. I'm not interested in losing the next thing to fast and desperate. From tonight, operational security runs through me. You bring me what you find. You don't send it anywhere yourself."
+
+Idris looks at the wrist unit, still open, the status field unchanged. **NO UNITS AVAILABLE.**
+
+*Twenty years, one message, nine minutes.*
+
+"Fine," he says.
+
+Bishop is already keying something new into the unbranded unit - a note, a routing change, Idris can't tell which - and doesn't look up.
+
+"It's not fine," Bishop says. "It's just what's next."
+
+Idris's wrist unit buzzes against the concrete floor where he's set it, a different tone than the medical alert, official, the ARC intake chime he's heard four hundred times a week for fourteen years and never once with his own name attached.
+
+He picks it up.
+
+**NOTICE OF ADMINISTRATIVE REVIEW - OFFICER I. KOVAC, BADGE 4471**
+**GROUNDS: UNAUTHORIZED SYSTEM ACCESS, PATTERN CONSISTENT WITH INTELLIGENCE COMPROMISE**
+**STATUS: SUSPENDED PENDING HEARING - EFFECTIVE IMMEDIATE**
+
+No supervisor's name on it. No hearing date. Just a case number and a status field, and under the status field, smaller, the kind of line nobody reads until it's the only line that matters: *Access to Checkpoint 14 systems terminated as of 0417.*
+
+"Bishop."
+
+Bishop doesn't look up from the unbranded unit. "What?"
+
+"They flagged the query. Mine. Not the one to Farai - the first one, the dispatch pull, earlier tonight." Idris turns the wrist unit so the light catches it, hands it across without being asked, the way he hands over a manifest he already knows is wrong. "Pattern consistent with intelligence compromise. That's the language. That's not corruption language. That's - "
+
+"That's counter-intelligence language." Bishop reads it once, twice, the second pass slower, and something in his face does the arithmetic before he says it out loud. "Whoever's watching Kessler's terminal has the same access to your personnel file. Same night. Nine minutes after her, twenty-one after you got flagged for the roster pull. That's not a coincidence window. That's one hand moving two pieces."
+
+"They're calling it a security breach. Not graft." Idris hears his own voice do something almost like a laugh, dry, no air behind it. "Fourteen years of manifests I know are wrong and the thing that ends me is asking a records clerk a question."
+
+"They're not ending you for asking a question." Bishop hands the unit back, and his eyes don't leave Idris's face, reading him the way he read the tripwire trace, patient, unhurried, already three moves further down the board. "They're ending you because whoever built that tripwire needs you gone before you find the next name on it. This isn't discipline. This is removal."
+
+*Fourteen years and they didn't even bother writing a real reason.*
+
+Idris looks at the badge number on the screen like it belongs to someone else. 4471. He's had it long enough to stop seeing it as a number and start seeing it as a shape, a shape that opened doors, that let him stand at Lane Three and decide, in small increments, what the city let through and what it didn't.
+
+"I still have clearance until the hearing," he says. "Doesn't it - there's usually a window? Seventy-two hours, minimum, before-"
+
+"Read the line again."
+
+Idris reads it again. *Access terminated as of 0417.*
+
+Seven minutes ago.
+
+The badge symbol in the corner of his wrist display has already gone gray, the small persistent icon that's sat there lit and green through every shift for fourteen years, and watching it go out costs him something he doesn't have a ready word for, not yet, standing in a dead archive with a dying woman's status field still open on the same screen.
+
+Bishop is already moving toward the stairwell, unbranded unit dark in his coat pocket, voice pitched low and level like a man closing out a ledger for the night.
+
+"Whatever you were planning to do with that access," he says, "you had about seven minutes to do it. That window's gone now."
+
+The stairwell exit dumps him three blocks from the apartment he hasn't called home in three years, and Idris walks it without deciding to, badge-gray wrist display swinging in his peripheral vision like a held breath he can't let go.
+
+The lobby smells like it always does - ferrocrete off-gas and someone's cooking oil three floors up - but tonight it registers as a fact instead of a background, the way everything is registering as a fact tonight, flat and separate and too loud.
+
+Noor is standing outside the apartment door alone, her own wrist unit still lit from whatever route she'd mapped to get here this early, and she turns at the sound of him, reading his face the way she used to read a manifest that didn't balance - not accusing yet, just noting the gap, filing it.
+
+"You're early," Noor says.
+
+Not a question.
+
+"Shift ended," Idris says.
+
+"It's 0430. You said you'd be back by seven."
+
+*Say something that isn't a lie and isn't the truth either.*
+
+"Slow night," he says.
+
+Behind him, through the half-open door, Sela's voice comes rough with sleep. "Mom?" She's in the doorway a second later, blanket-creased and blinking, wrist unit already in her hand out of habit, thumb finding it and going still - the kind of tell he taught himself to read in cargo manifests years before he ever thought to read it in his own kid.
+
+"You look like something happened," Noor says.
+
+She says it the way she used to say *the numbers don't reconcile* - clinical, patient, the tone of someone who has decided to give him exactly one chance to close the gap himself before she starts pulling the thread.
+
+"Nothing happened," Idris says.
+
+"Idris."
+
+"I got flagged. Administrative thing. It's - " He hears himself reaching for the word *nothing* again and can't make it come out a second time. "It's under review."
+
+Noor's face does something small and fast, gone before Sela could have caught it, but Idris catches it, because fourteen years of marriage taught him exactly what that particular stillness costs her to hold.
+
+"Review for what?" she asks.
+
+"I can't - " *You can't tell her. You already told a records clerk too much and look what it cost her.* "I can't talk about it."
+
+"You can't talk about it," Noor repeats, flat, and for one second the audit voice slips and something older comes through underneath it, something that sounds less like Axiom Interior Compliance and more like a woman who spent a decade asking her husband where he was and getting *shift ran long* in return. "That's the same sentence you used to say about everything, Idris. Word for word. I used to think it meant you couldn't. I stopped thinking that a long time ago."
+
+Sela's thumb has gone completely still now. She's watching her mother, not him, and something about the set of her mouth says she's heard this exact register before, has filed it under a category she doesn't have a name for yet but recognizes on contact.
+
+"They pulled my checkpoint access," Idris says. "Fifteen minutes ago. Tonight. That's - that's the whole thing I can tell you."
+
+Noor doesn't move for a second, and when she does it's not toward him - it's toward Sela, a hand on her daughter's shoulder, light, automatic, the gesture of someone repositioning herself between a kid and whatever's about to happen in a room.
+
+"Pulled it for what?" she asks again, quieter this time, and Idris understands, watching her face do the arithmetic, that she is not asking as his ex-wife. She is asking as an auditor who has spent three years finding exactly the kind of gap he's spent fourteen creating, and some door in her has just opened onto a room she has been standing outside of, professionally, for a long time.
+
+*She already knows. She's known for years and let herself not-know it on purpose, same as you did with everything on that checkpoint.*
+
+"Noor," Idris says. "Not in front of-"
+
+"I'm not a kid," Sela says.
+
+It comes out sharp, aimed at both of them at once, and it lands the way it's meant to - Noor's hand tightens once on her daughter's shoulder and then drops, and Idris feels the floor of the conversation shift under him, the two of them suddenly aligned against him in a way they haven't been aligned about anything in three years.
+
+"I know you're not," Idris says, and means it, and it isn't enough, and he knows that too.
+
+Sela looks at him for a long moment - the same look she gave him over the essay about the father who helped without taking credit, except this time there's no essay to hide behind, no indirect frequency to broadcast on.
+
+"Is it because of what you do?" she asks. Not *what happened.* What you *do.*
+
+Noor goes very still, waiting, and Idris understands she is letting her daughter ask the question she has never once asked him herself in fourteen years of marriage and three of divorce - not out of mercy, but because some part of her wants to hear how he answers a fifteen-year-old before she decides how much more she needs to know herself.
+
+"Yeah," Idris says. "It's because of what I do."
+
+Nobody says anything for a moment that goes on long enough to have a texture, rain starting somewhere above them against ferrocrete he can't see, redirected off some corporate roof and onto this one, the small unfair weather that never asks permission from anyone standing under it.
+
+"Okay," Sela says, and picks her bag up off the floor herself, before he can reach for it. "I'll get my own stuff."
+
+She walks past him into the apartment without waiting to see if he follows, and Noor watches her go, and then looks back at Idris.
+
+"I used to think if I stopped asking you'd stop needing to lie," she says. "Sela's asking now. That's the only reason I'm still standing here."
+
+"Noor-"
+
+"I'm not finished." She says it the way she flags a line item - no rush, no apology for taking the time. "You can lose the badge. You can lose the pension, the hearing, whatever's coming. I stopped caring what it costs you three years ago. What I care about is that girl in there just watched you answer a straight question honestly for maybe the first time since she was born, and I need to know if that's a thing you're capable of again, or if it's a one-time accident because you got caught."
+
+"I don't know yet," Idris says. "I don't have anything better than that."
+
+"That's the first true thing you've said tonight that isn't a confession." Noor studies him another second, the way she studies a discrepancy she isn't ready to close out. "Get help. Real help. Not whoever you've been talking to at 0400."
+
+She doesn't wait for an answer. She's already turning toward the elevator, and the door to the apartment stands half open behind her, Sela's shape moving through it, and Idris stands in the hallway between both of them with his badge gone gray on his wrist and rain starting to find its way down through a building that was never built to hold it out.
+
+Sela's door clicks shut down the hall, three seconds after Noor's elevator does, and Idris stands in the space between both sounds until his wrist unit buzzes against the badge that no longer means anything.
+
+BISHOP: *Ground floor. Now.*
+
+Not a request. Bishop hasn't asked him anything since the archive.
+
+The stairwell smells like it always does, wet ferrocrete and the ozone tang of a building that recycles its own air one time too many, and Idris takes the eleven flights instead of the elevator because his legs need the work more than his lungs need the air. Bishop is waiting at the service entrance in a jacket Idris has never seen him wear, matte, no ARC thread anywhere on it, and for a second neither of them says anything, breath fogging between them in the cold coming off the loading dock.
+
+"Your face says the visit went well," Bishop says.
+
+"Don't."
+
+"Fine." Bishop hands him something small, flat, warm from his own pocket - a passive scanner, civilian-grade, the kind that reads structural frequencies instead of biometrics. "The Cordero Desk runs a transfer hub six blocks into the Grey Zone ground. Loading manifest matches nine of my ten confirmed profiles. I've had eyes on it for two years and never once had a reason good enough to go inside."
+
+*Two years of watching and he needed you for the reason.*
+
+"And now you do," Idris says.
+
+"Now I have a suspended checkpoint officer with nothing left to lose and a working knowledge of exactly how corporate cargo gets waved through without triggering a manifest flag." Bishop's mouth does something that isn't a smile. "You're not my partner tonight, Kovac. You're the only person I know who can walk into that building and read it like you built it."
+
+The Cordero hub sits low and wide between two arcology support pylons, a converted freight depot with corporate paint over Grey Zone bones, and Bishop moves toward it without checking twice for cameras - he already knows where they are, Idris realizes, watching the older man's path bend three degrees around a sensor housing bolted eight feet up a support strut, the kind of knowledge that comes from months of standing in the rain across the street doing nothing but watching.
+
+"Phantom Load," Bishop says, low, close enough that it's barely voice at all. "Arcturus weapons vault, four years back. Nobody talks about how they got the manifest override past three separate compliance layers in under nine minutes. I do. Studied it for a year. You've got fourteen years and no idea what real tradecraft costs."
+
+"You're saying I'm slow."
+
+"I'm saying keep up."
+
+The side door reads a maintenance credential Bishop produces from nowhere Idris can name, and it opens onto a receiving bay stacked floor to ceiling with containers labeled in the flat gray shorthand of interior corporate freight - nothing that says *people*, nothing that says anything, which is the whole design, Idris thinks, watching his own hands move across a manifest terminal bolted to the third rack, doing the one thing fourteen years actually taught him to do.
+
+The gap is there in under a minute. Six containers logged as textile relay, tonnage that doesn't match volume, humidity control specs that have no business on a shipment of fabric - the exact signature he has spent fourteen years learning to wave past without seeing, except this time he is looking straight at it and writing it down.
+
+"Got it," Idris says, and his voice comes out steadier than he expects. "Bay four. Six units. Cordero's own routing code, not a cutout's."
+
+Bishop is already crossing to bay four with the scanner raised, close enough now that Idris can hear him breathing, fast and controlled, a man keeping his own pulse where he wants it, and for one second - before either of them reaches the containers, before either of them learns what six units of humidity-controlled cargo actually sound like when nobody's watching - the whole building goes quiet in a way that has nothing to do with soundproofing.
+
+*Freight bays don't go quiet. Freight bays hum.*
+
+The overhead lights cut, all of them, at once, and somewhere above the racks a door that was not open before starts sliding shut on a track that sounds too well-oiled for a Grey Zone building nobody officially owns.
+
+The dark holds for a three-count, long enough that Idris's hand finds the terminal edge before his mind catches up to why, and then the emergency strip lighting along the floor kicks on low and red, throwing everything up short and wrong-angled — Bishop's face lit from below like a man telling a story around a fire that's gone out.
+
+"That's not a Cordero lockdown," Bishop says. His voice has dropped the tradecraft lecture entirely. "Cordero doesn't own the building systems. Somebody with building systems just found us."
+
+*Somebody with building systems already knew we were coming.*
+
+Idris's wrist unit buzzes against his own dead badge, and for a half second he thinks it's Bishop again, ground floor, now — except the alert that resolves against his eyes isn't from Bishop's channel. It's formatted the way every ARC administrative notice has been formatted for fourteen years, the seal, the case number, the cold factual header that has never once in his career meant anything good.
+
+**NOTICE OF SUMMARY SUSPENSION — SUPPLEMENTAL**
+**RE: Kovac, I. (Badge 4471)**
+**Effective: immediate and retroactive to 0417 this date.**
+**All prior clearances, credentials, and system access — including maintenance-tier credentials issued under secondary authorization — are hereby revoked.**
+
+Bishop's credential. The door they walked in through. The word *secondary authorization* sitting there in the ARC font like it's always belonged in a sentence with his name.
+
+"They flagged your door key," Idris says, and hears his own voice come out flat, reciting, the way he used to read a manifest back to a nervous freight handler at 3 a.m. "Whatever you used to get us in. It's on this."
+
+Bishop takes the wrist unit out of his hand without asking, reads it in the red light, and his jaw does something small and controlled, a man closing a ledger he already expected to lose money on.
+
+"That credential was clean eighteen months," he says. "Never used twice at the same site. Never used with a suspended officer standing next to me."
+
+"So it's not the credential?"
+
+"No." Bishop hands the unit back. "It's you. They're not locking a door, Kovac. They're closing a file. Yours."
+
+Above them, the track door finishes its slide with a sound like a held breath let out slow, and somewhere past it — muffled, distant, indifferent to either of them — the containers in bay four shift on their pallet with the particular weight-settling sound of freight that has just realized nobody is watching it anymore.
+
+*Fourteen years and the last thing your badge does is confirm you were never the one holding it.*
+
+Idris looks down at the terminal screen still open on the gap he found — six units, Cordero's own code, tonnage that lies — and understands with a clarity that arrives too late to be useful that the numbers on the screen are the only true thing he's produced all night, and that nobody with the authority to act on them is going to see them before whatever built that door decides what happens to the men standing in front of it.
+
+"Bishop," he says. "Whatever we found. We need it out of this building before that door opens again."
+
+Bishop is already moving toward bay four, the scanner up, his breathing gone flat and even the way a man's breathing goes when he has stopped being afraid and started being efficient instead, and he doesn't look back when he answers.
+
+"I know," he says. "I've known that for two years. I just never had someone standing next to me who was already finished losing something."
+
+Idris's hands are already moving before Bishop finishes the sentence, thumb keying into the terminal's manifest field, and the thought that gets there first is not about the door or the containers but about the one credential nobody has thought to revoke yet because nobody but him knows it exists.
+
+*Fourteen years of a back channel nobody audits because nobody thinks a checkpoint officer would burn it on the way out.*
+
+"Give me your scanner feed," Idris says. "Raw, unencrypted, whatever you've got on that manifest gap. I need to push it somewhere before that door opens."
+
+Bishop turns from bay four, scanner still up, and for the first time all night he looks at Idris like he's recalculating something.
+
+"Push it where?"
+
+"DRU dispatch queue. Direct Response Unit routing - I've spent fourteen years learning exactly how to make that queue see something that isn't there. I can make it see this instead."
+
+"Your access is dead. You told me that yourself, thirty seconds ago."
+
+"My *checkpoint* access is dead." Idris's fingers find the sequence without looking, the same nine keystrokes he's used a hundred times to delay a DRU by twenty-two minutes for a man named Cordero he's never met, except this time he isn't stalling a response - he's calling one down. "This isn't checkpoint access. This is a dispatch override sitting in a maintenance subsystem that nobody flagged because nobody knew to look. Same code I used to make a unit disappear. I can use it to make one appear."
+
+Bishop's breathing changes, just slightly, the controlled rhythm catching on something.
+
+"You're telling me the thing you did wrong for fourteen years is the thing that fixes this."
+
+"I'm telling you it's the only thing I've got left that still works."
+
+The terminal accepts the override on the second try - his hands remember the failure mode from muscle memory alone, a small stutter at the fourth field that has tripped him up since year six - and the manifest data streams out through a routing path built to hide contraband, now carrying the opposite cargo: six container IDs, tonnage mismatches, humidity specs, Cordero's own code stamped across the header like a signature nobody meant to leave - and, folded in behind it, the cancel code he'd carried against his chest since the checkpoint terminal two and a half hours ago, the one raw string that had started all of this. Idris watches the confirmation ping resolve green and feels something in his chest that is not relief, more like a held breath finally given somewhere to go.
+
+*This is the last true thing my badge is ever going to do, and it's still a lie shaped like the truth.*
+
+"It's gone out," he says. "ARC internal-affairs queue, three regional oversight boards, and Farai's old terminal address, in case anyone's still watching that one for the right reasons instead of the wrong ones."
+
+Bishop doesn't answer right away. Above them the track door shudders, a half-inch give and stop, like something on the other side testing whether it's finished deciding.
+
+"They'll trace the override to a dead badge inside four minutes," Bishop says.
+
+"They'll trace it to a dead badge that already told them everything he had left to tell." Idris's wrist unit buzzes again - not ARC this time, no seal, no case number, just a blank routing tag he doesn't recognize and a single line of text sitting under it, cold and administrative in a way that makes his stomach drop before he even reads the words: **Query received. Processing.** - no sender, no signature, nothing that says who or what just picked up what he sent.
+
+"Bishop," he says. "Somebody already has it."
+
+Bishop crosses to him fast, reads it over his shoulder, and whatever calculation was running behind his face stops cold.
+
+"That's not oversight formatting," Bishop says. "That's not any board I've ever petitioned in three years of trying." He looks up at the shuddering door, then back down at the wrist unit, and for the first time all night his voice loses the last of its edge. "Kovac. You didn't send that to the people who can act on it."
+
+"Then who-"
+
+The track door gives up its half-inch resistance all at once and slides fully open, and the freight bay's overhead lights snap back on in a hard white wash that makes the red emergency strips look like something already forgotten, and standing in the new light at the far end of the bay, between them and bay four, is nothing - no one, an empty aisle of stacked containers and settling freight - which is somehow worse than anyone standing there at all.
+
+*Empty rooms don't answer wrist units. Something did.*
+
+Idris's hands are shaking now, he notices it the way he'd notice someone else's hands shaking, a fact reported rather than felt, and he closes the terminal window on the manifest gap he found - the one true thing he made tonight - and turns to find Bishop already moving, scanner down at his side, no longer bothering to aim it at anything.
+
+"We're done here," Bishop says. "Whatever's coming, it's not coming for the cargo."
+
+Idris doesn't move yet. He looks back once at the terminal, dark now, screen gone to standby, holding six container numbers that no longer belong to him in any sense a hearing board would recognize, and somewhere behind that number is a name he will never get to attach to a face - Mateo Cordero, still three cutouts and a logistics chart away from anyone who could put a hand on him, exactly as insulated at the end of this as he was at the start of it. Idris follows Bishop toward the door they came in through, badge dead in his pocket, override spent, the only thing left in his hands the wrist unit still holding two words from someone with no name and no seal and, apparently, already all the access he never had.
+
+They cross the bay at a walk that wants to be a run and isn't, because running is what a man does when he still believes there's somewhere left to get to. Bishop keys the maintenance door with the same forged credential that got them in, and it doesn't work — a soft red pulse, then nothing, then the small mechanical click of a lock that has already been told what to think of them.
+
+"Flagged," Bishop says. Not surprised. Filing it.
+
+He finds the service stair instead, the one his two years of watching this building taught him, unlisted on any schematic ARC ever issued him — and it holds, because whoever is closing doors upstream hasn't finished mapping what Bishop already mapped alone in the dark for two years while nobody was paying him to.
+
+The Grey Zone ground swallows them within a block, the way it always does, container yards and standing water and a smell of ozone off a Substrate seam that never got its full coverage restored. Idris's legs stop him without asking his permission, back against a stack of shipping frames still radiating the day's heat, and he becomes aware, distantly, of his own hand — the one that keyed the override — trembling against his thigh in a rhythm that has nothing to do with cold.
+
+*Fourteen years and it ends on a stairwell I didn't know existed, in a building I'll never officially admit I was in.*
+
+Bishop stops a few feet off, scanner finally pocketed, and looks at him the way he looked at his own second board behind the column — the one with his son's face on it. Not warmth. Recognition.
+
+"You did the thing," Bishop says. "Whatever it costs you. You did it."
+
+"I don't know what it costs yet."
+
+"Everything." Bishop says it flat, no comfort in it, an auditor's number and not a eulogy. "Badge. Pension. Maybe the hearing turns into a docket number with your name and a decade on it, if internal-affairs decides a dead man's override still counts as intrusion. You know that?"
+
+"I know that."
+
+"Good," Bishop says. "Means you're not lying to yourself about this one."
+
+Idris's wrist unit is dark now, the two-word message gone to whatever archive holds things that were never supposed to exist, and he finds he cannot stop looking at the blank screen like it might reconstitute the sender if he waits long enough. It doesn't.
+
+He thinks of Sela's voice in the hallway, *is it because of what you do*, and the flat, complete yes he gave her, the first true thing he's said to her in longer than he wants to count.
+
+Bishop starts walking, back toward wherever his own dark apartment or his own empty second bedroom is waiting for him, and doesn't look back to say goodbye.
+
+Idris watches Bishop's shape thin into the container-yard dark. His thumb finds the dead unit's edge without him deciding to move it, the same worn groove his thumbnail has cut into the casing over fourteen years of checkpoint shifts, back and forth, back and forth, until he catches himself doing it and makes his hand stop. He puts the unit in his pocket instead, the same pocket where the badge sits dead beside it, and starts walking toward the transit spur, one step and then the next one, before he can decide not to.
+

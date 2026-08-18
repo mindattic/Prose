@@ -74,7 +74,9 @@ public class NodeFullExportService
         var descriptionRepaired = false;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var node = await db.Nodes.AsTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
+            // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found
+            // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().AsTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
             if (node == null) throw new InvalidOperationException($"Node {nodeId} not found.");
 
             // Kindle page count (words / 250 -- the commonly-cited convention for Amazon's Kindle

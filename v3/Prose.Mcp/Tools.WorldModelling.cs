@@ -197,7 +197,7 @@ public class WorldModellingTools(
         await using var db = await dbFactory.CreateDbContextAsync();
 
         var entity = await db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "character" && e.Slug == characterSlug && e.IsActive)
+            .Where(e => e.EntityType == "character" && e.Slug == characterSlug)
             .Select(e => new { e.Id, e.Name })
             .FirstOrDefaultAsync();
 
@@ -330,7 +330,8 @@ public class WorldModellingTools(
             nodeId = g;
         else
         {
-            var s = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
             if (s == null)
                 return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
             nodeId = s.Id;

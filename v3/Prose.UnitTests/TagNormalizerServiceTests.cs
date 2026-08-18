@@ -50,7 +50,7 @@ public class TagNormalizerServiceTests
             Name       = "Test Entity",
             Slug       = $"test-entity-{id:N}",
             Status     = "canon",
-            IsActive   = true,
+            
             CreatedAt  = DateTime.UtcNow,
             ModifiedAt = DateTime.UtcNow,
         });

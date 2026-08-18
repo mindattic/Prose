@@ -17,7 +17,7 @@ namespace Prose.Core.Data;
 public static class EntityResolver
 {
     /// <summary>
-    /// Resolve <paramref name="name"/> to an active entity's id: exact <c>Name</c>, then exact
+    /// Resolve <paramref name="name"/> to an entity's id: exact <c>Name</c>, then exact
     /// <c>Slug</c>, then a registered alias (Character/Place/Faction/Weapon — the same alias
     /// tables <c>EntityRamificationService</c>'s beat-text name index already draws on). Returns
     /// null rather than guessing on ambiguous or absent matches.
@@ -26,11 +26,11 @@ public static class EntityResolver
     {
         if (string.IsNullOrWhiteSpace(name)) return null;
 
-        var e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Name == name && x.IsActive);
+        var e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Name == name);
         if (e != null) return e.Id;
 
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
-        e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Slug == slug && x.IsActive);
+        e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Slug == slug);
         if (e != null) return e.Id;
 
         return ResolveByAlias(db, name);
@@ -46,8 +46,11 @@ public static class EntityResolver
 
         if (candidateId is not { } id) return null;
 
-        // The alias tables carry no IsActive of their own (Character/Place/Faction/Weapon share
-        // their PK with Entities) — confirm the owning entity is still active before returning it.
-        return db.Entities.AsNoTracking().Any(x => x.Id == id && x.IsActive) ? id : null;
+        // The alias tables share their PK with Entities. Their owning row's existence in the
+        // live table is the only check needed now — a deleted entity's alias rows cascade away
+        // with it (EntityTags-style child), so a candidateId that survived the queries above
+        // already belongs to a live entity by construction; this Any() is a defensive confirm,
+        // not a filter on a separate status flag.
+        return db.Entities.AsNoTracking().Any(x => x.Id == id) ? id : null;
     }
 }

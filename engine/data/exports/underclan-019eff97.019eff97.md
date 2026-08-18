@@ -14,7 +14,7 @@ UNDERCLAN is a story about a civilization that has survived by staying hidden �
 
 Glim knew the hour by the air on his forearm.
 
-Cool, coming from the right. No smoke in it, no sharp edge. He lay still on the fungus-hide shelf and let the air tell him the rest. The right-hand tunnel carried the Vent Cog's morning work — the same rusted wheel, the same quarter-turn, every fourth sleep without fail. The Cog had never once been late. 
+Cool, coming from the right. No smoke in it, no sharp edge. He lay still on the fungus-hide shelf and let the air tell him the rest. The right-hand tunnel carried the Vent Cog's morning work — the same rusted wheel, the same quarter-turn, every fourth sleep without fail. The Cog had never once been late.
 
 The Underclan had a word for a thing that came back when it said it would. It was the same word they used for the Deep One's voice.
 
@@ -24,7 +24,7 @@ Across the Hollow, two elders were already at the heat-stone. They pressed dried
 
 He set the candle in its dish and went to check the others.
 
-Seven candles in the common space. Lark, the girl who had taken the night watch, had fallen asleep against the far wall with her candle balanced on her knees. He crouched beside it. Steady breathing, clean light. He left her sleeping. He counted — all seven, plus his own, plus the two sentinel candles at the tunnel mouths.
+Seven candles in the common space, one of them Candle-Two's, banked low in her usual corner. Lark, the girl who had taken the night watch, had fallen asleep against the far wall with her candle balanced on her knees. He crouched beside it. Steady breathing, clean light. He left her sleeping. He counted — all seven, plus his own, plus the two sentinel candles at the tunnel mouths.
 
 He reached the left-hand tunnel mouth and stopped. The sentinel candle there was wrong. Not out — but low, its flame pulled sideways and thin, leaning toward the tunnel as though something in the dark were drawing breath through it. He held his own candle up beside it to be sure. His stood straight. The sentinel guttered, righted, guttered again. The left tunnel did not carry the Vent Cog's work. It carried nothing at all, on a good morning. It was not carrying nothing now. He crouched and put the back of his hand into the tunnel mouth and felt it: a slow draw, cool and wet and moving the wrong way, pulling air *in* toward the Deep instead of letting it rest. He waited for it to stop. It did not stop. He counted three of Leaf's rhythms against it, and it held the whole time, patient as the Cog, patient as a thing that came back when it said it would.
 
@@ -44,7 +44,7 @@ He made the three-finger sign, to no one and to everyone. The air is well. I che
 
 He had work to do. He went.
 
-He passed Grale on the way to the cistern — two seconds of overlap in the tunnel, both with candles shielded and eyes ahead, both not speaking. 
+He passed Grale on the way to the cistern — two seconds of overlap in the tunnel, both with candles shielded and eyes ahead, both not speaking.
 
 Grale ran an extra circuit every morning, though no one had asked him to. He came past the junction like a man who had decided that doing what was asked was not enough. He checked the upper passage with a flick of the hand, so worn-in he no longer thought about it, and moved on. He was two years younger than Glim and hadn't been called for his Surfacing yet. That was the one place where the Hollow's law still named Glim first. Knuckle had once said, in Glim's hearing, that Grale would make a better Brave-master than himself inside ten years. It was probably true. It did not make Grale easier to stand near.
 
@@ -106,13 +106,15 @@ It does not weigh you, Vesh had told him once. It takes your Fare and it rows.
 
 The Oarsman rowed.
 
-In the dark, Glim listened to his own heartbeat slow. He pressed a hand flat to the side of the boat and felt the oar-strokes come back to him from far off, flattened — each stroke striking something distant and returning changed. He spread his fingers on the hull and let the echo pass up through the wood and into his palm. The cistern was the size of that returning sound. Enormous. The shape of whatever the strokes had touched. He had never lit a candle in the center and watched the glow die before it reached anything. He'd thought about it sometimes. He didn't need to. 
+In the dark, Glim listened to his own heartbeat slow. He pressed a hand flat to the side of the boat and felt the oar-strokes come back to him from far off, flattened — each stroke striking something distant and returning changed. He spread his fingers on the hull and let the echo pass up through the wood and into his palm. The cistern was the size of that returning sound. Enormous. The shape of whatever the strokes had touched. He had never lit a candle in the center and watched the glow die before it reached anything. He'd thought about it sometimes. He didn't need to.
 
 The far jetty arrived the way it always did. The air changed first — colder, stiller — and then the hull scraped stone.
 
 He rose and reached for the mooring-post the way he always did, and his hand closed on nothing. There was no post. There was no jetty. The cold that had arrived was not the far cistern's cold — it was deeper, and it went on past where the stone should have been, and when he put his foot down there was only the lip of the boat and then a long falling dark. He caught himself against the hull. Behind him the Oarsman had not shipped its oars. It sat with the long gray arm extended again, laid across his path at chest height, barring him from leaving — and pointing, once, at the collection-basin. At the single cap resting there. One Fare. And the basin, he saw now, had two hollows worn into it, and only one was filled.
 
 He had paid to cross. He had not paid to land.
+
+Then the arm drew back — the same spare motion it always used, no more delay in it than any other crossing — and let him go.
 
 He climbed out. He went to work.
 
@@ -154,7 +156,7 @@ The fungus harvest took most of the morning, and it was the work Glim trusted mo
 
 He trusted it the way he trusted the Current's voice below — not for what it gave him, but because it was honest about what it was. The fungus did not pretend. It grew in the heat-band at the base of the Warm's breathing-pipes. Vesh called that band a thermocline, a word out of some document in the old-deeps library that Glim had never heard anyone else use. It was the place where the heat off the Warm's great ring met the cool wet air of the cistern passage and made a strip of warmth exactly right for growing. Cold stone alone couldn't do it. It needed the Warm's heat, the Warm's breath, running hot since before anyone could remember.
 
-First the voice, Vesh taught. Then the Word. Then the warmth. Then us.
+First the voice, Vesh taught. Then the Word. Then us.
 
 The caps grew in clusters on the frame-mesh the Cogs had helped the Underclan build three generations ago, in exchange for something Glim had never been told and had learned not to ask about. The mesh held the growing medium — clay-packed fiber that drank the pipe-drip and held it and let the threads of mycelia run through it in the dark. When a cap came up wrong, too pale or too red in the gills, it meant sickness. You took it off the frame and left it for the compost so the wrong of it didn't spread.
 
@@ -186,13 +188,13 @@ A longer silence. The blue light of the pool shifted, something small moving in 
 
 "And I'm fine."
 
-He pressed his thumb into a cap's gills. Good smell. He set it on the pile. "The Hollow is not a place where you get to decide alone what your body does," he said. "You know that." He kept his voice level, the way Knuckle kept his voice level when a thing mattered too much to need volume. "Your candle knows before you do. That's what it's for."
+He pressed his thumb into a cap's gills. Good smell. He set it on the pile. "The Hollow is not a place where you get to decide alone what your body does," he said. "You know that?" He kept his voice level, the way Knuckle kept his voice level when a thing mattered too much to need volume. "Your candle knows before you do. That's what it's for."
 
 Another silence. Then the raking started again, a little slower.
 
 When he looked up, the set of Lark's shoulders had changed — the small easing of someone allowed to stop pretending. She hadn't agreed to tell Knuckle. She hadn't refused, either. He let the question sit where he'd put it.
 
-She told him. But not the way he'd meant it. He heard the shape of it two days later from Sorrel, and the shape was wrong. Lark had told Knuckle, yes — and told him, too, that it was Glim who'd sent her, Glim who'd stood across the passage and named her cough before she'd named it herself. Knuckle had called it spore-dust and sent her to rest. That part was true. But Lark had not come to Glim afterward, had not raked beside him since. She had learned the wrong lesson from being made to tell: that the passage with Glim in it was a passage where you were watched, where the thing you swallowed to keep private got carried up to Knuckle whether you willed it or not. Sorrel said it plain, the way she said most things. The girl won't work the Still while you're on the frames now. Says she'd rather harvest blind than have you counting her breaths. Whatever you did, old thread, you did it clean enough to lose her.
+She told him. But not the way he'd meant it. He heard the shape of it two days later from Sorrel, and the shape was wrong. Lark had told Knuckle, yes — and told him, too, that it was Glim who'd sent her, Glim who'd stood across the passage and named her cough before she'd named it herself. Knuckle had called it spore-dust and sent her to rest. That part was true. But Lark had not come to Glim afterward, had not raked beside him since. She had learned the wrong lesson from being made to tell: that the passage with Glim in it was a passage where you were watched, where the thing you swallowed to keep private got carried up to Knuckle whether you willed it or not. Sorrel said it plain, the way she said most things. "The girl won't work the Still while you're on the frames now. Says she'd rather harvest blind than have you counting her breaths. Whatever you did, old thread, you did it clean enough to lose her."
 
 The cough had been the small true thing it looked like. Dust, cleared. That was not the part that would follow him.
 
@@ -244,7 +246,7 @@ Glim's candle shifted.
 
 He caught it from the corner of his eye. His candle, set on the tile in front of him, turned in a small circle — the rat had noticed something in the air. Not fast. Not the warning sign. Just noticed. He watched it without moving his head, splitting his attention between Vesh's voice and the candle the way the training taught: all of it, both places at once.
 
-"Down here, the Deep remembers," Vesh went on. "The Current has held this hum since before your grandmothers' grandmothers. It held it before the sealing-off. Before the Exclusion Economy. Before the Downward Expansion. Before anyone asked the Warm to carry the Current's voice."
+"Down here, the Deep remembers," Vesh went on. "The Current has held this hum since before your grandmothers' grandmothers. It held it before the sealing-off, when the deep still had a door to the surface's markets. Before the Exclusion Economy shut that door and called the shutting a law. Before the Downward Expansion drove the ones it shut out into the Works, just to keep breathing. Before anyone asked the Warm to carry the Current's voice."
 
 The candle settled. Glim let his breath out slowly. Lark was watching hers too — he could tell from the angle of her head. Good. She was learning.
 
@@ -328,7 +330,7 @@ They walked a while without speaking. The passage narrowed toward the Warm, and 
 
 "You asked me once," Glim said, "why the Tartar-fear has to be held when the air-fear and the flood-fear don't. Those hold themselves. Bad air kills you; so does the water. I never asked why the Tartar needed a story on top of the danger."
 
-Vesh's hand found the wall for a moment, the way it did when he was arranging a thought before he spoke it. "Because the danger down there isn't the kind you can teach a child to fear correctly," he said. "Bad air, a child can learn — watch the candle, leave when it sickens. Cold, a child can learn — dress for it, turn back before your hands stop working. But there's a thing about the Tartar that isn't air or cold or flood. It doesn't teach the same way. So we gave it a story instead. "
+Vesh's hand found the wall for a moment, the way it did when he was arranging a thought before he spoke it. "Because the danger down there isn't the kind you can teach a child to fear correctly," he said. "Bad air, a child can learn — watch the candle, leave when it sickens. Cold, a child can learn — dress for it, turn back before your hands stop working. But there's a thing about the Tartar that isn't air or cold or flood. It doesn't teach the same way. So we gave it a story instead."
 
 "What thing?"
 
@@ -374,7 +376,7 @@ Glim did not speak.
 
 He said it looking at Glim straight on, which was unusual for him. Knuckle usually looked a little past you when a thing was real — the habit of a man who had learned that the hardest things are easier said to the space beside a face. Not this time. He held the look.
 
-Glim's chest tightened. Not from fear, not from the air-wrong smell that meant danger. From being told that someone had once been frightened for him. That his being here had cost someone something. His eyes stung, sudden and unasked, and he looked at the candle so the man across from him wouldn't see the water in them. He hadn't chosen it. The body had chosen it before he was asked.
+Glim's chest tightened. Not from fear, not from the air-wrong smell that meant danger. From being told that someone had once been frightened for him. That his being here had cost someone something. He looked at the candle. He hadn't chosen it. The body had chosen it before he was asked.
 
 "You didn't leave me there," Glim said. It came out not as a question, not as a thank-you, but as a fact he was still putting together.
 
@@ -410,11 +412,11 @@ A light that had always been there, and then a dark shaped like the light gone m
 
 And the smell. Warm, layered — a body, and something on the body. It reached him sideways, below the mind, the way hunger reached him, the way the pull toward warmth reached him. In his sleep his hand closed on the fungus-hide and found it wrong. Too cool. Too dry. Not the thing the hand was reaching for.
 
-He woke with his fingers curled around nothing. He had carried that smell sixteen years and had never once been able to say what it was.
+He woke with his fingers curled around nothing. He had carried that smell twelve years and had never once been able to say what it was.
 
 Knuckle was still talking when Glim surfaced. He carried the clan's origin-memory in his voice the way he carried the names of routes — not reciting it but living in it, the words worn smooth by decades of use. They were like tunnels his feet knew before his mind did. He didn't look at Glim when Glim opened his eyes. The telling didn't stop for a Brave waking; the Brave was the one who had to find his place in what was already going.
 
-Glim lay still a moment. The fragments were already leaving — they always left fast, like the light off an oar pulled from the water, bright and then dark. He'd learned not to reach after them. Reaching only made them go faster. What he could do was lie still and let whatever stayed, stay. So today he would try it the other way. Today, before the telling ended and the routes claimed him, he would find the one thing the smell belonged to — put a name to it at last, chase it down through the deep to wherever the body that carried it had gone. Sixteen years was long enough to wait. He would not let it leave him again without knowing what it was.
+Glim lay still a moment. The fragments were already leaving — they always left fast, like the light off an oar pulled from the water, bright and then dark. He'd learned not to reach after them. Reaching only made them go faster. What he could do was lie still and let whatever stayed, stay. So today he would try it the other way. Today, before the telling ended and the routes claimed him, he would find the one thing the smell belonged to — put a name to it at last, chase it down through the deep to wherever the body that carried it had gone. Twelve years was long enough to wait. He would not let it leave him again without knowing what it was.
 
 The hand stayed longest. Certain, then too tight, then nothing — the run of pressures, the exact warmth. Not the face. Not the voice. Only the way the warmth went from certain to tight to gone, as if a hand had made a decision.
 
@@ -462,7 +464,7 @@ He didn't announce it in the teaching-chamber or at the morning meal. He came to
 
 Glim sat up. He'd been awake anyway, lying still with his hand flat on the wall, feeling for the Current's voice. It was there. It was always there. He'd been telling himself that was a comfort.
 
-"Twelve more sleep-cycles," Glim said. That was what he'd been told.
+"Twelve more sleep-cycles?" Glim said. That was what he'd been told.
 
 "You're ready now."
 
@@ -480,7 +482,7 @@ It cost something to ask. Knuckle's candle burned between them, and in its light
 
 Glim held his gaze.
 
-He thought of Sorrel's scar, which she'd never explained. Of Grale's face in the passage. Of the face in the crossing basin, and the smell with no name that had never belonged to the Hollow. 
+He thought of Sorrel's scar, which she'd never explained. Of Grale's face in the passage. Of the face in the crossing basin, and the smell with no name that had never belonged to the Hollow.
 
 He said none of it.
 
@@ -514,7 +516,7 @@ He'd known that. The teaching covered it the way it covered anything that could 
 
 He nodded. He turned back to the shelf, found a bad cap by smell, set it aside. His hands worked. He was thinking about a light that came from everywhere, a light that went through you, eyes that decided to stop.
 
-"And then I come back," he said.
+"And then I come back?" he asked.
 
 "Then you come back," she said. "You choose the dark. That's what the Surfacing is. The surface shows you everything it has, and you turn around and choose the dark anyway."
 
@@ -756,7 +758,7 @@ All of it there. None of it meant for him.
 
 This was what the teaching meant when it said the surface forgets. Not that the surface was cruel. That the surface did not look. It was making all of this — noise, light, smell — for reasons that had nothing to do with him. Right now he was nothing. Not dangerous, not worth catching, not worth naming. A shape against a wall with its eyes shut.
 
-He thought of Vesh saying it, all the times Vesh had said it: *up there you are no one; down here you are a light.*  Now he was up here, and it was true in a way the teaching-chamber had never managed. 
+He thought of Vesh saying it, all the times Vesh had said it: *up there you are no one; down here you are a light.*  Now he was up here, and it was true in a way the teaching-chamber had never managed.
 
 He opened his eyes.
 
@@ -778,8 +780,6 @@ He'd been underground an hour when the lights found him.
 
 Not candles. Not the Cogs' working lamps — those were warm and aimed, and they made sense in the dark because they did what a candle did: lit a space. These were the pouring white — white, total, scouring — and they came from behind him and lit everything ahead of him and took his eyes again, all at once, the way a blow takes the breath.
 
-
-
 He had gone two levels below the grating, moving fast, counting his steps the way Knuckle taught — count, so you know how far you've come, because your sense of distance in a strange tunnel lies to you. He'd done everything right: hand on the wall, candle out and shielded, breathing the air for warnings. The Works were the Cogs' ground, and the Underclan didn't trust the Cogs, but the Cogs kept their own rules. They didn't come into the eastern Works without their own signal — three taps on the pipe, the old treaty knock.
 
 The pouring white came with no knock. It came through a door he'd passed and marked in his head as a storage junction, no active use. The door opened, the white poured through, and he was blind before he understood what was happening.
@@ -796,19 +796,19 @@ He was caught.
 
 They took his candle first.
 
-He worked out later why: the candle looked like a weapon, or a fire-risk, or just an odd thing a surface person shouldn't have and so shouldn't keep. In the moment he understood none of it. The one who took it handled it carelessly and set it down on a hard surface floor, and the glow-rat skittered to the edge of its dish, then toppled over and lay still.
+He worked out later why: the candle looked like a weapon, or a fire-risk, or just an odd thing a surface person shouldn't have and so shouldn't keep. In the moment he understood none of it. The one who took it handled it carelessly and set it down on a hard surface floor, and the glow-rat skittered to the edge of its dish, then toppled over and lay still, its glow guttering.
 
-He made no sound. He watched the glow-rat. The glow went out slowly. That was different from how it went in bad air — in bad air it went fast, and the fastness was the warning, was the whole point. This was slow. The slow dying of a warm body that had been handled wrong. He looked at his hands. They were in his lap. He kept them there.
+He made no sound. He watched the glow-rat. The glow didn't go out - not all the way, not yet - but it dimmed slower than any dimming he'd learned to read. That was different from how it went in bad air - in bad air it went fast, and the fastness was the warning, was the whole point. This was slow: the slow fading of a warm body that had been handled wrong. He looked at his hands. They were in his lap. He kept them there.
 
-They moved him upward. He tracked it the only way he could, in his body: the climb of it, ramps and a lifting-box that rose with a lurch in his stomach, each stage warmer and brighter and louder than the one below. He understood they were taking him toward the Skin, and then through it — up, out of the deep entirely, the way a Brave was meant to go once and come back from.
+They moved him upward. He tracked it the only way he could, in his body: the climb of it, ramps and a lifting-box that rose with a lurch in his stomach, each stage warmer and brighter and louder than the one below. He understood they were taking him toward the Skin, and then through it - up, out of the deep entirely, the way a Brave was meant to go once and come back from.
 
-And a Brave came back. That was the whole of it, the only shape he would let his mind take: whatever they did with him up here, however far they carried him from the deep, he would learn the way of this place well enough to turn around and walk it back down. He set himself to that the way he set himself to bad air — slowly, without hope or its opposite, just the fixed intent to survive the climb and reverse it.
+And a Brave came back. That was the whole of it, the only shape he would let his mind take: whatever they did with him up here, however far they carried him from the deep, he would learn the way of this place well enough to turn around and walk it back down. He set himself to that the way he set himself to bad air - slowly, without hope or its opposite, just the fixed intent to survive the climb and reverse it.
 
-They put him in a vehicle. He had no word for vehicle. It was an enclosed space that moved without his say-so, in a way he had never felt — a smooth gathering of speed, then a shiver in the floor that was not the Current, was not anything. The enclosed space had no good air. Not killing-air. Bad in the surface way: closed, used over and over, thick with the smell of many surface people across a long time, packed too dense for his nose to sort fast enough to use.
+They put him in a vehicle. He had no word for vehicle. It was an enclosed space that moved without his say-so, in a way he had never felt - a smooth gathering of speed, then a shiver in the floor that was not the Current, was not anything. The enclosed space had no good air. Not killing-air. Bad in the surface way: closed, used over and over, thick with the smell of many surface people across a long time, packed too dense for his nose to sort fast enough to use.
 
 He sat very still.
 
-There were three of them. He learned them by their breathing and their weight in the space: one large, straight ahead, watching him; two smaller, on either side, looking away. The large one breathed slow and managed — the breathing of a man doing a thing he'd done before and had a way of doing. The two smaller ones breathed easy, which meant this was ordinary to them.
+There were three of them. He learned them by their breathing and their weight in the space: one large, straight ahead, watching him; two smaller, on either side, looking away. The large one breathed slow and managed - the breathing of a man doing a thing he'd done before and had a way of doing. The two smaller ones breathed easy, which meant this was ordinary to them.
 
 Hunting in the deep was ordinary to them.
 
@@ -824,7 +824,7 @@ The light was the thing he hadn't braced for. Above ground he'd expected the ope
 
 He looked at the table. Its top was scratched and stained. He studied the marks because they had edges. The room did not.
 
-The people talked at him. He listened. He knew the shape of surface speech — the rise and fall, the pattern — but he couldn't open it. He had scraps: trade words, prices, part-names, the handful the Cogs used when they dealt with the Underclan. Not enough. He heard the pattern of question, pause, question, and understood they wanted one thing from him: where he came from. He didn't give it to them.
+The people talked at him. He listened. He knew the shape of surface speech — the rise and fall, the pattern — but he couldn't open it. He had scraps: trade words, prices, part-names, the handful the Cogs used when they dealt with the Underclan. Not enough. He heard the pattern of question, pause, question, and understood they wanted one thing from him: where he came from? He didn't give it to them.
 
 He knew that saying nothing was itself an answer. That was as far as he could think it through in a room with light on every side and no corner to hide the thought in.
 
@@ -836,15 +836,13 @@ After a while they stopped asking. Not because they gave up. He could hear it in
 
 And then there was a smell.
 
-[Surface POV - Noor]
-
-The caseworker who called herself Odalys had kept Noor's file open eleven years past the point the department stopped paying for it. Noor knew this because Odalys had told her once, years ago, over cups of something neither of them finished. Most files closed on their own, she'd said — the moment some algorithm decided the odds had gone flat enough that watching wasn't worth a salary. Noor's hadn't closed. Odalys had renewed it by hand, year after year. Noor had never found a way to thank her for it. 
+The caseworker who called herself Odalys had kept Noor's file open twelve years past the point the department stopped paying for it. Noor knew this because Odalys had told her once, years ago, over cups of something neither of them finished. Most files closed on their own, she'd said — the moment some algorithm decided the odds had gone flat enough that watching wasn't worth a salary. Noor's hadn't closed. Odalys had renewed it by hand, year after year. Noor had never found a way to thank her for it.
 
 The call came at eleven at night. Odalys didn't apologize for the hour.
 
 "I need you to look at three images," she said. "Don't hope yet. Just look."
 
-The first was a still frame pulled from a hunting crew's own recovery footage. Grainy, badly lit. A boy on his knees, hands bound in front of him, face turned three-quarters from the lens. Noor's stomach did the thing it always did — a lurch, then a correction. She'd been shown boys before. A dozen of them in twelve years. None had been hers. Her body had learned not to trust the lurch faster than her heart had.
+The first was a still frame pulled from a hunting crew's own recovery footage. Grainy, badly lit. A boy on his knees, hands bound in front of him, face turned three-quarters from the lens. Noor's stomach did the thing it always did - a lurch, then a correction. She'd been shown boys before. A dozen of them in twelve years. None had been hers. Her body had learned not to trust the lurch faster than her heart had.
 
 The second image was cropped tight on his left eyebrow. A thin pale scar cut through the outer third of it, the kind a child earns from a hard corner met at speed. Her own boy had earned one exactly there at two and a half, falling into the edge of a low table. She'd held a cold cloth to it while he screamed. She'd photographed it healing, badly, on the cheap little device she carried back then, because some part of her had wanted it recorded before she understood why a mother records anything.
 
@@ -854,13 +852,13 @@ The third was the crown of his head, where a spray of hair refused to lie flat �
 
 Noor didn't answer for a while. She was looking at a photograph of a stranger's scalp and trying to decide whether she was allowed to feel what she was already feeling.
 
-"I'm not promising you anything," Odalys said. "There's a formal match process. Records, if any still exist for him — and they may not, given where he's been. But I've done this a long time, and I've learned when to make the call at eleven at night instead of waiting for the paperwork. I believe this is him."
+"I'm not promising you anything," Odalys said. "There's a formal match process. Records, if any still exist for him - and they may not, given where he's been. But I've done this a long time, and I've learned when to make the call at eleven at night instead of waiting for the paperwork. I believe this is him."
 
 "Where is he?"
 
-"Custody transfer's underway. He's going to a second facility, not the first — the recovery crew's methods aren't something we advertise." A careful pause. "He hasn't spoken. Not one word, either direction. They don't know if he can't or won't."
+"Custody transfer's underway. He's going to a second facility, not the first - the recovery crew's methods aren't something we advertise." A careful pause. "He hasn't spoken. Not one word, either direction. They don't know if he can't or won't."
 
-Noor sat with the line still open and the three images laid out on the table in front of her. A stranger's kneeling shape. A stranger's eyebrow. A stranger's stubborn hair. And for the first time in eleven years — eleven years of files that closed themselves and one that hadn't — she let herself believe a caseworker's certainty over her own body's practiced doubt.
+Noor sat with the line still open and the three images laid out on the table in front of her. A stranger's kneeling shape. A stranger's eyebrow. A stranger's stubborn hair. And for the first time in twelve years — twelve years of files that closed themselves and one that hadn't — she let herself believe a caseworker's certainty over her own body's practiced doubt.
 
 She was at the facility before dawn. She didn't touch him. She stood in the doorway and looked at a boy who didn't look back. Before she understood anything else about him, she understood the eyebrow and the crown of his head. She had searched for exactly those two things, in every child's face the surface had ever shown her by mistake, for twelve years.
 
@@ -876,7 +874,7 @@ But the smell.
 
 It crossed the room before his eyes had finished with her, because smell was what his body always read first. And it was — it was the thing. The fragment-smell. The smell from the place beside the noise and the slipping hand and the new dark. The smell that had never had a name. He'd never been able to set it next to anything else, so it had stood alone in him all these years, nameless.
 
-His eyes stung. For a second he thought it was the surface light, something in it his dark eyes couldn't take. Then he understood. His eyes were stinging because they were wet.
+His face was wet before he understood what was happening.
 
 He hadn't cried since he was four, or near it — however old he'd been when Knuckle found him.
 
@@ -904,8 +902,6 @@ She had figured out that the ceiling-light hurt him and done something to turn i
 
 She sat in a chair across the room and stayed quiet.
 
-
-
 So he tried to give her something back. It was the only thing he had. He lifted his hand and tapped his name against the floor — the true shape of it, the pattern that was his and no one else's, the thing the surface could not hand over or turn down or cut for him. He tapped it slow, then again, watching her the way she had watched him drink.
 
 She leaned forward. Her face opened, eager, and she made a sound back at him — a knuckle rapped twice on the arm of her chair. Wrong. Not the shape at all, not even close, the two beats flat and dead where his had turns inside them. She smiled at her own answer, pleased, sure she had understood.
@@ -914,25 +910,23 @@ She hadn't. She had heard noise and given him noise. And he understood then, lyi
 
 He put his hand flat on the floor and stopped tapping.
 
-[Surface POV — Noor]
-
 The social worker had left three things on Noor's table: a pamphlet about re-integration resources, a business card with a name Noor would never call, and a handwritten note that said give it time — the thing people said when they'd run out of other things to say.
 
 Noor sat across from the boy and watched him eat.
 
 He had sorted the rice into little groups on the plate and was working through them one group at a time, none of them touching, in an order she couldn't follow but didn't doubt was there. She'd asked about it once. He'd given her that look — the one that checked a question for edges before he'd step through it — and then hadn't answered. She'd learned not to ask about the plate again.
 
-It was his hands that undid her. They did it at bad moments — at the sink, in the dark, here. They were a man's hands now, scarred across the knuckles, the nails worn square. But the way his thumb sat against the side of his first finger when he held the spoon was the way it had sat against a smaller spoon when he was three. She hadn't known she remembered that until her body remembered it for her: a heat behind the breastbone that came before the thought and stayed after it.
+It was his hands that undid her. They did it at bad moments - at the sink, in the dark, here. They were a man's hands now, scarred across the knuckles, the nails worn square. But the way his thumb sat against the side of his first finger when he held the spoon was the way it had sat against a smaller spoon when he was three. She hadn't known she remembered that until her body remembered it for her: a catch in her throat she hadn't felt in twelve years.
 
-They'd told her not to expect him to know her. She'd read everything they gave her. She knew the rough shape of where he'd been — that there was a coming-of-age in it, a going-up and a coming-back, that the people down there were said to mourn the ones who left rather than count the leaving as a wound. She understood it the way you understand a language you don't speak: the sounds, not the sense.
+They'd told her not to expect him to know her. She'd read everything they gave her. She knew the rough shape of where he'd been - that there was a coming-of-age in it, a going-up and a coming-back, that the people down there were said to mourn the ones who left rather than count the leaving as a wound. She understood it the way you understand a language you don't speak: the sounds, not the sense.
 
- He hadn't been stolen and held. He had been kept. He had grown up. Someone had made him into a person with a life and a place in it, and that person wasn't the boy she'd lost. The boy she'd lost was somewhere inside this one — the way the three-year-old's thumb was inside the man's grip. But she couldn't pull the small one out without breaking the large one open, and she didn't know if the large one would live through it, and she didn't know if she had the right to try.
+He hadn't been stolen and held. He had been kept. He had grown up. Someone had made him into a person with a life and a place in it, and that person wasn't the boy she'd lost. The boy she'd lost was somewhere inside this one — the way the three-year-old's thumb was inside the man's grip. But she couldn't pull the small one out without breaking the large one open, and she didn't know if the large one would live through it, and she didn't know if she had the right to try.
 
-The network kept pushing a trending piece at her — The Children Beneath GLMZ — and she kept muting it, and it kept coming back, sure of itself.
+The network kept pushing a trending piece at her - The Children Beneath GLMZ - and she kept muting it, and it kept coming back, sure of itself.
 
 The boy finished the first group on the plate and started the second. He hadn't looked at her once since she sat down.
 
-She watched him eat in his careful order. She let the heat behind her breastbone be what it was. She didn't reach across the table, though her hand wanted to, because she'd learned that much already: he flinched at a reach. So she kept her hands in her lap, the way he kept his, and sat with him in the only language they had — being in the room, and asking nothing of it.
+She watched him eat in his careful order. She let the heat behind her breastbone be what it was. She didn't reach across the table, though her hand wanted to, because she'd learned that much already: he flinched at a reach. So she kept her hands in her lap, the way he kept his, and sat with him in the only language they had - being in the room, and asking nothing of it.
 
 The surface didn't make sense, and he wasn't sure it was meant to.
 
@@ -978,7 +972,7 @@ He breathed. He watched Noor, who was still working at the glass, and then at hi
 
 He wanted to go home.
 
-He hadn't let himself think it that plainly before now. He'd been sorting and weighing and staying, because the clan needed what he was learning and leaving would end the learning for good. But that had changed. The question wasn't what he could still learn by staying. The question was what would reach Homewater first — him, or the people who had now written down the way down.
+He hadn't let himself think it that plainly before now. He'd been sorting and weighing and staying, because the clan needed what he was learning and leaving would end the learning for good. But that had changed. The question wasn't what he could still learn by staying. The question was what would reach Homewater first — him, or the people who had now written down the way down?
 
 He didn't yet know that Noor, looking at the same glass, was doing the same reckoning and reaching the same answer.
 
@@ -1038,19 +1032,19 @@ He didn't look away either.
 
 He left on the eighth night.
 
-Not because it had become unbearable. Noor had been patient in a way that was its own kind of smarts — making changes, learning what he needed and giving it without the weight of expectation the official surface people carried. In eight days she'd learned to turn the ceiling-light down without being asked, to leave space between them, to set food in his direction and step back so he could judge it himself. She'd learned that he needed the floor. She'd learned that he'd say the surface words when he had them, and that quiet was the right answer to his silence.
+Not because it had become unbearable. Noor had been patient in a way that was its own kind of smarts - making changes, learning what he needed and giving it without the weight of expectation the official surface people carried. In eight days she'd learned to turn the ceiling-light down without being asked, to leave space between them, to set food in his direction and step back so he could judge it himself. She'd learned that he needed the floor. She'd learned that he'd say the surface words when he had them, and that quiet was the right answer to his silence.
 
-None of that was why he'd stayed eight days. He'd stayed because the clan didn't know where he was, and Grale was still in the Hollow, and the candle was dead.
+None of that was why he'd stayed eight days. He'd stayed because the clan didn't know where he was, and Grale was still in the Hollow, and the candle was dead in a way he hadn't found the bottom of yet.
 
-The candle was the thing he couldn't get past. The glow-rat that had been grabbed and mishandled up top never recovered. He'd found it on the third day, still in its dish, barely breathing, its glow almost gone. He'd brought it water and warmth and the fungus-cap from his pack. It died on the fourth day. He told himself it was the air — the surface air was wrong for it, the wrong warmth, the wrong damp, the surface light bad for the glow in its skin. That was true. It was also true that he had failed to shield it, that it had been taken out of his hands, and that it had died.
+The candle was the thing he couldn't get past. The glow-rat that had been grabbed and mishandled up top never recovered. He'd found it on the third day, still in its dish, barely breathing, its glow almost gone. He'd brought it water and warmth and the fungus-cap from his pack. It died on the fourth day. He told himself it was the air - the surface air was wrong for it, the wrong warmth, the wrong damp, the surface light bad for the glow in its skin. That was true. It was also true that he had failed to shield it, that it had been taken out of his hands, and that it had died.
 
-A Brave who lets a candle die is a Brave who isn't paying attention.
+He had let it out of his hands. That was the thing he couldn't make smaller.
 
-He couldn't stay in a place that kept him from paying attention. Every day up here was a day of it. The surface needed a different watching than the deep — a wide, loose, everywhere-at-once watching, the opposite of the narrow dark-reading the Underclan lived by. He couldn't do both at once. The deep needed him to be all of himself. The surface was turning him into something he didn't have a word for yet.
+He couldn't stay in a place that kept him from paying attention. Every day up here was a day of it. The surface needed a different watching than the deep - a wide, loose, everywhere-at-once watching, the opposite of the narrow dark-reading the Underclan lived by. He couldn't do both at once. The deep needed him to be all of himself. The surface was turning him into something he didn't have a word for yet.
 
 He waited until Noor was asleep. He couldn't see her well from the floor in the dim, but her breathing had changed and the small movements had stopped. Then he rose without a sound, which wasn't hard. He'd been lying still for hours building the way out in his head: the window's lower panel, the latch he'd studied for two days, the outside wall.
 
-He went out through the lower panel, opening it in one motion, knowing exactly where and how. Then down the outside of the building the same way he took tunnel walls — grip, test, move, grip. The outside had a different feel than the inside: rough, dusty, the grip of a surface left out in the weather. He'd understood that in his head. Now he understood it in his palms.
+He went out through the lower panel, opening it in one motion, knowing exactly where and how. Then down the outside of the building the same way he took tunnel walls - grip, test, move, grip. The outside had a different feel than the inside: rough, dusty, the grip of a surface left out in the weather. He'd understood that in his head. Now he understood it in his palms.
 
 He reached for the second handhold where his two days of measuring from inside had told him it would be, and his fingers closed on nothing. The hold was a hand's width lower than the window's frame had made it look; reading stone through a clear pane was not the same as reading it with a palm. He corrected in the same motion, his weight already committed, and caught the true hold before the miss cost him more than half a second and a heart gone loud. He told himself it was the glass, or the dark, or a guess made from too little instead of worn smooth by doing it a hundred times, the way his tunnel-sense was. He didn't like how easily he believed himself.
 
@@ -1058,7 +1052,7 @@ He went down one level, then another. The surface corridor below was lit but qui
 
 He went toward the grating he remembered. He remembered exactly where it was. That wasn't a special skill. He remembered every ground he'd ever crossed. It was only what the dark asked and the deep had trained into him.
 
-He hadn't said goodbye to Noor. He had no word for what he'd been in her rooms for eight days — the deep had none either. He had the smell, and the fact of her patience, and the picture of her face in the doorway with returned in it, and he carried all of it the way he carried things without names: below the mind, in the body, in the closing hand.
+He hadn't said goodbye to Noor. He had no word for what he'd been in her rooms for eight days - the deep had none either. He had the smell, and the fact of her patience, and the picture of her face in the doorway with worry returned in it, and he carried all of it the way he carried things without names: below the mind, in the body, in the closing hand.
 
 He found the grating.
 
@@ -1072,13 +1066,13 @@ He hadn't heard her at the grating either, and that mattered. The grating at the
 
 He wasn't alone.
 
-Noor. A surface torch in her hand — a hand-held fixed light that threw a wavering pool of white, too much for his eyes, but he could work around it. She was breathing hard from the climb down, and her face in the torchlight had that held, unpeaceful quality.
+Noor. A surface caught star in her hand — a hand-held fixed light that threw a wavering pool of white, too much for his eyes, but he could work around it. She was breathing hard from the climb down, and her face in the caught star's light had that held, unpeaceful quality.
 
 He stopped.
 
-The air in the Works had the smell he tied to the deep: ferrocrete and machine-work and the faint living warmth of the Warm's reach, the ordered smell of a closed world that knew what it was. He breathed it without meaning to, and the thing in him that had been wrong for eight days eased a fraction. Around them the Works made its usual sound — the pipe-rhythm, the far-off machinery, the drone of the Warm carried through stone. It wrapped around them the way silence wraps around a surface person. He was home. Three levels in, and already home.
+The air in the Works had the smell he tied to the deep: ferrocrete and machine-work and the faint living warmth of the Warm's reach, the ordered smell of a closed world that knew what it was. He breathed it without meaning to, and the thing in him that had been wrong for eight days eased a fraction. Around them the Works made its usual sound — the pipe-rhythm, the far-off machinery, the drone of the Warm carried through stone. It wrapped around them, each sound in its known place. He was home. Three levels in, and already home.
 
-She was in every way not home. He could hear it in her breathing — the shallow catch of a body taking in too much at once, unable to pick what to fear first. The tight space. The deep dark. The layered sounds her surface ears had never learned to sort. But she'd come anyway, and her torch was steady, and she hadn't cried out.
+She was in every way not home. He could hear it in her breathing — the shallow catch of a body taking in too much at once, unable to pick what to fear first. The tight space. The deep dark. The layered sounds her surface ears had never learned to sort. But she'd come anyway, and her caught star was steady, and she hadn't cried out.
 
 He said to her, for the first time, the thing he needed to say. He said it in the Underclan's language, because it was the only one that mattered down here, the way Vesh said the teaching — not loud, not hard, but with the weight of a received truth. The Skin is up. The Deep is down. You chose to follow me, and that means you are choosing down, and down does not undo itself for regret.
 
@@ -1088,15 +1082,15 @@ She said something back. He caught I know, and you, and the shape under it: I'm 
 
 He turned and went on down. She followed. He listened to her footsteps behind him — surface-heavy, unsure, but there — and eased his pace to something she could keep without losing her light, and they went down together into the Warm.
 
-The hum met him at the second level. He pressed his palm to the wall and let it run up his arm and into his chest. Behind him, Noor's torch wavered. The Current didn't acknowledge her.
+The hum met him at the second level. He pressed his palm to the wall and let it run up his arm and into his chest. Behind him, Noor's caught star wavered. The Current didn't acknowledge her.
 
 The Current didn't acknowledge anyone. That was its virtue.
 
 He brought her as far as the Works-level and stopped.
 
-Not Homewater. The Works were the Engine Guild's ground, and the Guild and the Underclan had their treaty, and he didn't know if that treaty covered a surface person he'd brought in uninvited. More than that: the Works were where the Lamplighters had found him. He didn't want to be here with a surface torch and a surface person and no way of knowing who was in the tunnels around them.
+Not Homewater. The Works were the Engine Guild's ground, and the Guild and the Underclan had their treaty, and he didn't know if that treaty covered a surface person he'd brought in uninvited. More than that: the Works were where the Lamplighters had found him. He didn't want to be here with a surface caught star and a surface person and no way of knowing who was in the tunnels around them.
 
-He gestured at Noor to put out the torch. She resisted — he could read it without her face, in the angle of her body, the way she drew the torch in toward herself — and he held her eyes for a count of eight, then looked at the torch, then back at her. She put it out.
+He gestured at Noor to put out the caught star. She resisted — he could read it without her face, in the angle of her body, the way she drew the caught star in toward herself — and he held her eyes for a count of eight, then looked at the caught star, then back at her. She put it out.
 
 The dark closed around them. He heard her breathing change: faster, higher, the fear surface people had for the dark, because the dark had nothing to offer them. He understood the fear from the outside and had never felt it. That wasn't courage. The dark was home.
 
@@ -1112,42 +1106,6 @@ Then he started moving, and she moved with him, and they went down toward Homewa
 
 He didn't know yet that above them the legend had an address now, and that the address was being passed around among people whose interest in the deep was not scholarship.
 
-Homewater smelled right.
-
-He hadn't known how wrong the surface had smelled until he was back. Not wrong like bad air or a killing-pocket. Wrong like absence. The surface air had been full of things, and none of them were his. Eight days his body had reached for something it knew and found only more of what it didn't.
-
-The Current was here. He pressed his palm flat to the pipe and it came up through the metal the way it always had — felt in the chest, felt in the bone. He had lived inside that hum since before he could walk. It meant the machine was running, and the machine was the world under the world. He hadn't known how much of his safety lived in it until it was gone. He held his hand there a long count.
-
-Noor stood beside him. She touched nothing. He could hear her breathing the careful way she breathed when she was holding too much at once — a person keeping control and paying for it. She had breathed like that since the Works. She hadn't asked him to slow down. She hadn't asked him to explain. For the last hour she had only followed and kept up, at a pace her body was never built for. He watched her the way he watched his candle: for the signs of what to do next.
-
-He turned and looked at her. In the green-gold of the glow-farms her face was a different color than it had been up top. Not better. Just different. On the surface, in all that white light, she had been sharp and easy to read. Here she was like everyone else in the Deep — warm, close, a little soft at the edges. 
-
-She was looking up.
-
-He followed her gaze. The ceiling of the Hollow was old stone, ferrocrete above that, and above that the whole weight of the city. There was nothing to see. But she stared at it like a person handed a fact too big to hold. She had been underground before. She had never been under a roof that went up for meters and then stopped being anything but the world, with no sky over it at all. The surface had been everything to her. Now she stood beneath it with no way back up except through him.
-
-This is what the surface felt like to me, he thought. And I'm still here.
-
-He put his hand on her arm — not the grip that meant I have you and pointed a direction. Just contact. A reminder that another warm thing was close. She looked at him. Her face almost asked a question. He held her eyes for a count of four, then looked at the pipe, the one with the Current in it, and back at her. She followed his gaze to the pipe and stayed on it. He thought she was trying to feel what he felt.
-
-She couldn't. It was a thing the body learned slow, like the weight of a tool used every day, and her body hadn't learned it and wouldn't in the minutes she had. But she was looking.
-
-"Safe," he said, the second time he'd said it. He meant it more now. He was standing on the thing that made it true.
-
-Then he turned toward the main space, toward the candle-light, toward the people he'd been gone from for eight days — the people he'd just brought the surface home to. He could hear voices. He could hear the waiting in them, the quiet a room gets when it already knows something has arrived.
-
-He moved toward it. She followed.
-
-He got four steps before the quiet changed shape.
-
-The voices stopped — not the way a room goes still for a returning friend, but the way it goes still for a stranger. He felt it before he understood it: the Current gave the pipe a small, wrong shudder under the soles of his feet, the hum breaking rhythm the way it did when someone downstream had sealed a gate. Then a figure came out of the candle-light and stood in the mouth of the passage, blocking it, and behind that figure he counted three more shapes that did not move to let him through.
-
-He knew the one in front. Teller. Who had sent him up eight days ago with a list of names and no surface woman on it.
-
-"You brought a lung up here," Teller said. Not a question. His eyes went past Roan to Noor, to the too-clean cut of her clothes, the softness the Deep hadn't worn into her yet. "You brought her *into* the Hollow. Past the gates. Past the children." His hand was already resting on the wheel-valve set into the wall — the one that flooded the entry channel, the one no one touched unless a killing-pocket was coming through. "You don't get to bring her the rest of the way. Not until we know what she is. Step back from her, Roan."
-
-Behind him, Roan heard the soft catch of Noor's careful breathing stop altogether. Homewater smelled right. It had never once, in his whole life, smelled like this.
-
 Homewater did not welcome him back.
 
 He hadn't expected ceremony. The Underclan saved ceremony for the formal points, and a return from a Surfacing was one of them. But what met him at the eastern passage — down from the Works-level, through the junction where the fungus-farm's warmth hit the cistern air, into the cool of the Hollow — wasn't ceremony and wasn't anger. It was the careful blankness of people who have heard something they didn't expect and are deciding what to do about it.
@@ -1156,7 +1114,7 @@ Vesh was in the teaching-chamber. So was Knuckle. So were most of the Braves. Th
 
 Glim stopped in the doorway. Noor was behind him, her hand still finding his shoulder-blade in the dark. He could feel her working to breathe the Hollow's air — thin and ordered, nothing like the surface's rich flood. It would hit her like a wall. He gave her a moment.
 
-"You came back," Vesh said. The teaching voice, not the ordinary one.
+"You came back?" Vesh asked. The teaching voice, not the ordinary one.
 
 "I came back."
 
@@ -1174,7 +1132,7 @@ Glim looked at him across the room. Grale's face wasn't triumphant. That was the
 
 "Her name is Noor," Glim said. "She followed me down. She'll need a candle."
 
-He kept his eyes on Vesh. But he felt Grale go still in a new way — small, barely there. The same shift Knuckle had once caught, the one that meant Grale was thinking, not performing. 
+He kept his eyes on Vesh. But he felt Grale go still in a new way — small, barely there. The same shift Knuckle had once caught, the one that meant Grale was thinking, not performing.
 
 There was a longer pause.
 
@@ -1182,7 +1140,7 @@ Sorrel crossed the room and put a hand on Noor's arm, drawing her forward. She w
 
 Noor looked at it the way surface people looked at anything strange: careful first, then something close to wonder.
 
-Glim looked around the teaching-chamber — the green tile, the candle-light on it, the faces that had been home for sixteen years. All of them watching him. Knuckle wore the look of a man glad of an outcome he couldn't say he was glad of yet. Vesh's face was turned toward the sound of Noor breathing.
+Glim looked around the teaching-chamber — the green tile, the candle-light on it, the faces that had been home for twelve years. All of them watching him. Knuckle wore the look of a man glad of an outcome he couldn't say he was glad of yet. Vesh's face was turned toward the sound of Noor breathing.
 
 He had come back. He had brought something that couldn't be undone. Both were true, and he stood in the doorway between them.
 
@@ -1218,7 +1176,7 @@ In the white-out he steered by the sounds he knew: Knuckle's breathing, deeper t
 
 The chain began to form.
 
-Behind him and to the left — near the heat-stone where Leaf worked every morning of his life — he heard a scuffle that wasn't a body moving where it chose. A grip. A stumble. The short cry of someone caught by the wrist and spun faster than her balance allowed. Then a fall, heavier than a fall onto packed earth should sound. Then the quiet of a body that has stopped deciding things.
+Behind him and to the left — near the heat-stone where Leaf worked every morning of her life — he heard a scuffle that wasn't a body moving where it chose. A grip. A stumble. The short cry of someone caught by the wrist and spun faster than her balance allowed. Then a fall, heavier than a fall onto packed earth should sound. Then the quiet of a body that has stopped deciding things.
 
 He didn't stop. He couldn't. The chain was forming, the grips passing back from his own arm, and stopping now would cost more than one pair of hands could ever buy back. He shouted the direction — not words, the sound they all knew, this way, follow it, don't stop — and the chain lurched toward the Old Deep.
 
@@ -1242,7 +1200,7 @@ Sorrel found him there. She'd been to the surface too, on her own Surfacing; she
 
 He understood help now. He understood a lot of surface words he'd had eight days of reasons to learn.
 
-"Then I brought that too," he said. "The cure for the thing I brought."
+"Then I brought that too," he said. "The cure for the thing I brought?"
 
 Sorrel didn't tell him it wasn't his fault. That was the thing she'd come back changed with — she didn't reach for the easy comfort when the hard one was true. She set her hand flat against the passage wall beside his, not touching him, just near, the way you set your candle next to another so the two lights make one. They stood like that. Down the middle passage, Lark coughed again, and it went on too long before it stopped.
 
@@ -1260,7 +1218,7 @@ He did it without asking Knuckle, without calling the elders, without the thinki
 
 Lark was coughing in the next passage. They could all hear it.
 
-Glim felt the words coming before he chose them — the answer taking shape in his mouth before he decided to give it. He had heard Vesh teach two hundred times. He had helped the old man to his feet, walked at his side, fixed the candle-dish the way Vesh corrected him without a word of argument. In sixteen years he had never once said no to something Vesh delivered in the teaching voice.
+Glim felt the words coming before he chose them — the answer taking shape in his mouth before he'd meant to give it. He had heard Vesh teach two hundred times. He had helped the old man to his feet, walked at his side, fixed the candle-dish the way Vesh corrected him without a word of argument. In twelve years he had never once said no to something Vesh delivered in the teaching voice.
 
 "I know what it's for," he said, and heard his own voice do the thing no voice did in that chamber. "I don't know how it works. But Lark is coughing, and the Hot Breath came from me, and the surface has medicine for the thing I brought down."
 
@@ -1268,11 +1226,11 @@ The silence had weight. He could feel it in his jaw.
 
 Vesh didn't turn toward him. He turned toward the passage where the coughing had been, the way he always turned toward sound. His face held the calm of a man who has already weighed the thing you're only now picking up.
 
-"You've been to the surface," Vesh said.
+"You've been to the surface?" Vesh asked.
 
 "Yes."
 
-"You know what surface medicine does to a Deep body."
+"You know what surface medicine does to a Deep body?"
 
 He didn't. He knew what it was for, not what it did. "No," he said. "But I know Lark is coughing, and she didn't cough before I came back." He kept his voice level. He made himself keep it level, because the other choice was raising it, and he had never raised his voice at Vesh and didn't want to start now. "And I know I brought the Hot Breath down. That's mine too."
 
@@ -1324,15 +1282,15 @@ He also knew, by the third day after, that the Mission had already begun mapping
 
 The Hot Breath took Slip first.
 
-He was the youngest of the Braves — six sleep-seasons from his Surfacing, still in the early teaching. His First Hearing had been two months ago. He had named his candle, the way the young ones did before they outgrew the habit. The name was Tallow, a made-up word that meant nothing in either language. Slip's candle had a name that belonged to no one.
+He was the youngest of the Braves - six sleep-seasons from his Surfacing, still in the early teaching. His First Hearing had been two months ago - later than most; his mother had wanted him steady on his own feet before it happened, not carried in like the smallest ones. He had named his candle, the way the young ones did before they outgrew the habit. The name was Tallow, a made-up word that meant nothing in either language. Slip's candle had a name that belonged to no one.
 
-Tallow was fine. Slip was not.
+Tallow's glow had gone thin two nights before, dimmer than a candle read for bad air ever went. Glim had noticed it in passing and checked the draft instead of the boy, because a low candle had only ever meant one thing to him. No one had ever thought to read one against a person. Slip was not fine, and by the time anyone thought to ask what the candle had been trying to say, there was nothing left to do about it.
 
 The cough had stayed manageable in Lark. Lark was older, with the reserve that came from years of climbing and harvesting and Brave training. She was still coughing, but she was upright and working. Slip was seven years old or near it, and the Hot Breath in a seven-year-old was not the Hot Breath in a Brave.
 
-He burned with a fever the clan had no word for, because fever was not an Underclan illness. Glim pressed the back of his hand to Slip's forehead and the heat was wrong — too much, the body doing something he had no name for and no answer to. The surface called it fever. He knew the word, not what to do with it.
+He burned with a fever the clan had no word for, because fever was not an Underclan illness. Glim pressed the back of his hand to Slip's forehead and the heat was wrong - too much, the body doing something he had no name for and no answer to. The surface called it fever. He knew the word, not what to do with it.
 
-Noor knew. She had been watching from the edge of the clan's space — not trusted yet, but allowed there as the person Sorrel escorted — and she crossed to where Slip lay and put her hand where Glim's had been and said a word to herself in surface speech that he didn't know and didn't need to.
+Noor knew. She had been watching from the edge of the clan's space - not trusted yet, but allowed there as the person Sorrel escorted - and she crossed to where Slip lay and put her hand where Glim's had been and said a word to herself in surface speech that he didn't know and didn't need to.
 
 She said to him, carefully, "The Mission's medicine. Bring it now."
 
@@ -1344,7 +1302,7 @@ He went to get Vesh. Someone would have to climb to the Skin and make the Missio
 
 The meeting point was a service grating two levels below the Skin — a place the Underclan and the surface had settled on without either side quite admitting they'd settled on anything. Knuckle chose it. Glim didn't ask how he knew where the Mission would be waiting. Knuckle had arranged things in the three days since the first raid that he hadn't explained to anyone, and this was plainly one of them.
 
-The woman at the grating had a case in one hand and a flat surface-device in the other. She gave a title Glim didn't keep and a name he did: Adaeze. She had the calm of a person who wore calm as a tool, the same no matter what stood in front of her.
+The woman at the grating had a case in one hand and a flat surface-device in the other. She gave a title Glim didn't keep and a name he did: Adaeze. She had the calm of a person who wore calm as a tool.
 
 "You're here for the pediatric fever kit," she said. "I need the patient's intake first. Five-minute process. Retinal capture, basic vitals if you can get them, a name if he has one he'll give."
 
@@ -1352,7 +1310,7 @@ The woman at the grating had a case in one hand and a flat surface-device in the
 
 "I understand that's difficult." Her voice didn't change. "But I can't release medication to an unregistered minor without documented need. It's not policy I have any say over — it protects the child. If the dosage goes wrong, if there's a reaction, we need to know who we treated and be able to follow up. I've seen what happens when well-meaning people give medicine without a record. It doesn't end well for the child."
 
-"He is dying while you talk about records," Glim said. He heard his own surface words come out flatter and harder than he meant. The words were too small for what he was trying to carry in them.
+"He is dying while you talk about records?" Glim asked. He heard his own surface words come out flatter and harder than he meant. The words were too small for what he was trying to carry in them.
 
 "I hear you," Adaeze said, and the terrible thing was that she did. Her face did what surface faces did when they meant it — the crease at the eyes, the lean forward. "I'm not trying to make this harder than it has to be. I need five minutes of information. That's the whole of what stands between you and this case." She held it up a little, the way you'd show a child a treat to prove it was real. "I can't lower that bar. If I do it for you, I do it for everyone, and then the whole safety framework means nothing — and next time it's a child who needed the framework and didn't have it."
 
@@ -1362,13 +1320,13 @@ Knuckle's hands had gone very still at his sides. Glim had learned to read that 
 
 "I'm not cleared to go past the Skin-border without an escort clearance, and that takes —"
 
-"How long."
+"How long?"
 
 "Days, usually. I can request an expedite."
 
 Glim felt something behind his breastbone pull tight, like a valve shut hard. Slip did not have days. Slip might not have the hour this conversation was already spending.
 
-It was Noor who broke it. She arrived at a run, chest heaving, told by Sorrel where they'd gone. She didn't argue with Adaeze. She took the device out of the woman's hand — not roughly, but fast, the speed of someone who has decided that being wrong costs less than waiting. She thumbed through three screens like a person who had spent a whole career inside exactly this kind of system. Then she entered a false intake under her own code, backdated, her name standing surety for a boy she'd met twice.
+It was Noor who broke it. She arrived at a run, chest heaving, told by Sorrel where they'd gone. She didn't argue with Adaeze. She took the device out of the woman's hand — not roughly, but fast, the speed of someone who has decided that being wrong costs less than waiting. She thumbed through three screens like someone who'd spent twelve years learning exactly how this system worked from the other side of the desk. Then she entered a false intake under her own code, backdated, her name standing surety for a boy she'd met twice.
 
 "That's a violation," Adaeze said, quietly, and did not take the device back.
 
@@ -1380,7 +1338,7 @@ They ran the whole way down. It wasn't enough time. It was never going to be eno
 
 They took the medicine. It came too late for Slip and just enough for the others.
 
-Slip had been in Glim's cohort — not a close Brave, not a rival, just a constant. Six years at the thermocline fungus-harvest. The one who could read the spore-load in the warm gradient by touch and smell in a way Glim never could. His hands checked the frame-mesh for rot while Glim checked the yield numbers, the two of them working side by side without speaking, because the work didn't need speech and Slip had never used more of it than he had to. He hadn't been loud. He hadn't been vivid. He'd been reliable the way the cistern was reliable — present, useful, taken for granted. 
+Slip had been in Glim's cohort — not a close Brave, not a rival, just a constant. Six years at the thermocline fungus-harvest. The one who could read the spore-load in the warm gradient by touch and smell in a way Glim never could. His hands checked the frame-mesh for rot while Glim checked the yield numbers, the two of them working side by side without speaking, because the work didn't need speech and Slip had never used more of it than he had to. He hadn't been loud. He hadn't been vivid. He'd been reliable the way the cistern was reliable — present, useful, taken for granted.
 
 Vesh did not speak at Slip's sending-off. The ritual belonged to the Brave-master, and Knuckle spoke it, flat and correct and plain. He said the name — tapped it first on the pipe, in the sign the Current heard, then said it aloud. He said what Slip had known and what Slip had done, in the plain listing of a Brave's skills. He did not say what Slip had meant. That wasn't the ritual's shape, and it wouldn't have helped.
 
@@ -1410,13 +1368,13 @@ They went in. There was nowhere else to go. The way that had almost not opened h
 
 Noor was in the chain. He hadn't planned it. He'd grabbed a hand in the flood-white and it had been hers, and by the time he knew it was hers they were two tunnels past the Hollow and he wasn't turning back.
 
-She moved better than he had any right to expect. He'd taken her hand in the grip that meant follow, and she followed — not blindly. She kept her other hand on the wall the way he'd shown her in the Works, reading the surfaces and using them. 
+She moved better than he had any right to expect. He'd taken her hand in the grip that meant follow, and she followed — not blindly. She kept her other hand on the wall the way he'd shown her in the Works, reading the surfaces and using them.
 
 He counted the chain. First thing, always, moving under pressure. Forty-one Underclan and Noor, the tapped signals passing back down the human line, each pulse one life accounted for. He kept his feet on the path he knew — and then, for the space of a wrong wall and a hard reversal, on the path he only half-knew — and let the count run in the back of his mind, a quiet certainty he checked against when something felt wrong.
 
-Noor did not panic, not even when the chain folded back on itself in the dark and the pace turned into something like fear moving at speed. She'd grown up on the surface, where the below was just an idea. Now she was underground, in a chain of people she'd known three months, at the ragged edge of a route that had already failed once. Her hand stayed steady.
+Noor did not panic, not even when the chain folded back on itself in the dark and the pace turned into something like fear moving at speed. She'd grown up on the surface, where the below was just an idea. Now she was underground, in a chain of people she'd known two weeks, at the ragged edge of a route that had already failed once. Her hand stayed steady.
 
-They reached the boundary the training-maps had always stopped short of: the seam where the Old Deep's brick gave way to something older and colder, marked only by the silence that had lived in every telling of the Tartar-fear since before Glim was born. No living Brave had crossed it. He'd been about to be the first.
+They reached the boundary the training-maps had always stopped short of: the seam where the Old Deep's brick gave way to something older and colder, marked only by the silence that had lived in every telling of the Tartar-fear since before Glim was born. No living Brave had crossed it. He'd been about to be the first. Sorrel was a hand's length behind him.
 
 Sorrel stopped at the seam.
 
@@ -1500,7 +1458,7 @@ He sat beside the old man without speaking. The clan was settling into the vault
 
 He couldn't make himself say it: you have the Hot Breath. The words were there. They wouldn't come. He sat with the silence a count.
 
-"You knew," he said. Not an accusation. A recognition. His own voice sounded strange in the vault — the space was too big for the Hollow's close sound-discipline, and his words came back to him off the tile ceiling a beat late, an echo the Deep had never taught him.
+"You knew?" he asked. Not an accusation. A recognition. His own voice sounded strange in the vault — the space was too big for the Hollow's close sound-discipline, and his words came back to him off the tile ceiling a beat late, an echo the Deep had never taught him.
 
 Vesh made a small sound that was not words.
 
@@ -1558,13 +1516,11 @@ He sat cross-legged on the tile and put both palms flat.
 
 The tile was cold. Dead under his hands. He knew the Current's voice was not the floor but the thing under the floor — the pipes, the cables, the Warm's long reach beneath everything. The Tartar was too deep and too old and too sealed for that reach to carry here. Knowing it did not make the silence sit any easier in his body.
 
-
-
 He had brought the surface down. He had done it by going up. Every choice he had made right by the Underclan's law had led here — to forty-one people in the ghost-country with no home to go back to.
 
 Grale was right, he thought. The surface puts things in you.
 
-He couldn't name all of what it had put in him. Some of it, yes. A smell that was a person and was not. A new sense of size, . The knowledge that the world outside the Underclan was not just the Skin and the Works and the Cog-rows. It was something huge, with its own weather and its own light, in which forty-one people who lived below it were too small to see.
+He couldn't name all of what it had put in him. Some of it, yes. A smell that was a person and was not. A new sense of size — how small the Hollow was against everything that sat above it. The knowledge that the world outside the Underclan was not just the Skin and the Works and the Cog-rows. It was something huge, with its own weather and its own light, in which forty-one people who lived below it were too small to see.
 
 And then, from far down — not the floor, not the tile, but somewhere below even the Tartar, below all its beauty and its sealed silence — he felt it.
 
@@ -1574,7 +1530,7 @@ He pressed his palms harder to the tile. His whole body went still — not calm,
 
 The pulse did not come again.
 
-He stayed as he was. Palms flat. Body still. The candle steady, which meant good air, no draft, its clean green-gold light on the beautiful useless floor. He counted his heartbeats and waited. The Brave's training held here too: a thing heard once is a thing not yet true. You stay. You wait. You let the ground speak for itself.
+He stayed as he was. Palms flat. Body still. The candle steady, which meant good air, no draft, its clean green-gold light on the beautiful useless floor. It reminded him, for a moment, of the sentinel candle back home that had once leaned wrong at the left tunnel-mouth, pulling air in toward the Deep instead of letting it rest — a wrongness he had tested, counted through, and never signed to anyone, because it never came again. This tile gave him nothing like that. Whatever had made the pulse, it left the air alone. He counted his heartbeats and waited. The Brave's training held here too: a thing heard once is a thing not yet true. You stay. You wait. You let the ground speak for itself.
 
 The hall said nothing.
 
@@ -1648,23 +1604,23 @@ Dross was a small woman with grease worked deep into the lines of her palms and 
 
 "Yes."
 
-"They'll be in the Works next."
+"They'll be in the Works next?"
 
 "Yes."
 
-She turned back to her workbench. "I know. We've been watching." She picked up a tool Glim had no name for and set it down again. "What do you want from me."
+She turned back to her workbench. "I know. We've been watching." She picked up a tool Glim had no name for and set it down again. "What do you want from me?"
 
 It wasn't a question.
 
 "We want to use the Works," Glim said. "The pump-halls. The sealed corridors. The locks."
 
-Dross turned around. "Against them."
+Dross turned around. "Against them?"
 
 "Against the flood-lights. Against how they move through the upper Works."
 
 She looked at him a long moment. Her eyes went to Noor, then back.
 
-"What do we get," she said.
+"What do we get?" she asked.
 
 Noor gave them the maintenance covenant.
 
@@ -1684,17 +1640,17 @@ When Dross reached page forty-eight, she stopped and looked up.
 
 "Yes," Noor said.
 
-"The budget that's meant to fund the Works."
+"The budget that's meant to fund the Works?"
 
 "Yes."
 
 Dross set the device down. She looked at Glim.
 
-"You want the pump-halls," she said. "You want the seal-locks in corridor G-seven through G-eleven."
+"You want the pump-halls?" she asked. "You want the seal-locks in corridor G-seven through G-eleven?"
 
 "Yes."
 
-"G-seven through G-eleven flood if we open the pressure-diverts."
+"G-seven through G-eleven flood if we open the pressure-diverts?"
 
 "Yes."
 
@@ -1728,7 +1684,7 @@ It took most of a shift. The Cog Runners opened the diverts in order while Dross
 
 Partway through the second shift, the G-seven patrol changed course. He felt it before he understood it. The wrong footstep pattern in the air. Three sets where there had been two, coming toward the junction where Pell was working the last pressure-gate. If they rounded the corner, the operation was finished. Pell needed four more minutes.
 
-Grale had already decided — before the patrol ever moved. Glim only understood that afterward. Grale had spent his whole life sure of one thing: that carelessness let the surface in, that the Hollow's law existed because someone had to hold the line when everyone else went soft. He had been right about Glim. He had been right about all of it. And a man who has been right his whole life does not hand a plan's last four minutes to hands less sure than his own.
+Grale had already decided — before the patrol ever moved. Glim only understood that afterward. Grale had spent his whole life sure of one thing: that carelessness let the surface in, that the Hollow's law existed because someone had to hold the line when everyone else went soft. He had been right about Glim. He had been right about all of it.
 
 Grale went left at the junction. No one asked him to.
 
@@ -1772,7 +1728,7 @@ The smell was wrong first. Not dangerous, not chemical, not the sharp wrongness 
 
 Most things were still there. That surprised him. He had expected more of it to be gone.
 
-Sixteen of the forty-two had lost goods they cared about. Three of the storage alcoves were damaged — not out of malice, but the way you break things when you search fast and don't care about the room. That was its own kind of insult, but not the same one. Candle-Two's sleeping place had been pulled apart and not put back, and when Candle-Two came to it she stood in the entrance a long time and said nothing.
+Sixteen of the thirty-nine had lost goods they cared about. Three of the storage alcoves were damaged — not out of malice, but the way you break things when you search fast and don't care about the room. That was its own kind of insult, but not the same one. Candle-Two's sleeping place had been pulled apart and not put back, and when Candle-Two came to it she stood in the entrance a long time and said nothing.
 
 He helped her rebuild it. It took a while. Candle-Two had her own arrangements that mattered to her, and she couldn't always put them into words, so he watched closely and handed her things and asked the right kind of questions.
 
@@ -1782,7 +1738,9 @@ When they were done, she looked at the space. It was near enough to right.
 
 "Yes," he said. "Still yours."
 
-He counted the clan again. Thirty-nine. He had started with forty-two. Two had not come back. Sorrel, at the seam where the Old Deep gave way to something colder — the name he still had not said out loud. Grale, in the G-eight corridor, in the dark between cycles.
+The heat-stone was cold. No one had worked it since the raid that took Leaf — the scuffle he'd heard from the tunnel mouth, the grip, the stumble, the fall, and the quiet after that he had not let himself stop for. There had been no time to carry her to the deep water the way the clan carried its dead; there had only been the chain, the white light, and the dark of the Old Deep closing over all of them at once. He put his palm flat against the stone the way he used to, checking for her rhythm — three presses, a turn — and felt only cold rock under his hand. No one had matched it since, and no one would. He said her name to himself, once, and went to find the others.
+
+He counted the clan again. Thirty-nine. He had started with forty-one. Two had not come back. Sorrel, at the seam where the Old Deep gave way to something colder — the name he still had not said out loud. Grale, in the G-eight corridor, in the dark between cycles.
 
 Thirty-nine. Plus Noor.
 
@@ -1790,7 +1748,7 @@ Forty.
 
 Vesh died on the third day back.
 
-Not dramatically. His body had done the work it could for the length of the crisis, and when the crisis ended it stopped. The Hot Breath had been far along in him by the time he reached the Tartar. There had been nothing to do about it, and Vesh had known that longer than anyone.
+His body had done the work it could for the length of the crisis, and when the crisis ended it stopped. The Hot Breath had been far along in him by the time he reached the Tartar. There had been nothing to do about it, and Vesh had known that longer than anyone.
 
 Glim was with him. He had arranged to be.
 
@@ -1798,7 +1756,7 @@ He had thought there would be something to mark it — some change in the air, s
 
 What happened was this. Vesh breathed the way he had been breathing, with effort, and then he did not breathe. Glim's own chest kept the old rhythm — in, hold, out — and he was three breaths along before he understood that he was breathing for a man who wasn't. He made himself stop. Stopping was worse.
 
-He pressed his palm to the tile beside the sleeping-mat. The hum ran through the stone exactly as it had the day before, and the year before, and through all sixty-three of Vesh's years as Listener. Some part of Glim had been listening for a change. A slowing. A deepening. Any answer at all to the taking of the one man who had attended it longest. Nothing changed. The Current had not known, or had not cared, or the world with Vesh in it and the world without him were the same to it. The Warm ran on below, at the pace the Warm needed.
+He pressed his palm to the tile beside the sleeping-mat. The hum ran through the stone exactly as it had the day before, and the year before, and through all seventy of Vesh's years as Listener. Some part of Glim had been listening for a change. A slowing. A deepening. Any answer at all to the taking of the one man who had attended it longest. Nothing changed. The Current had not known, or had not cared, or the world with Vesh in it and the world without him were the same to it. The Warm ran on below, at the pace the Warm needed.
 
 He took the silence-piece out and held it until the bone went warm in his fist, the way Vesh had shown him. He sat the vigil to the length of his own breathing, which was how the Underclan counted the things that mattered. The room was the chamber beside the teaching-chamber, the one Vesh had rested in these last years. It smelled of old stone and the oil of the lamp he kept on the shelf and the faint thing Glim had only ever known as Vesh-smell, having no better word for it. It would not smell this way much longer. The body would be moved. The room would become someone else's. The smell would sink into the stone and be lost among everything else the stone had taken in.
 
@@ -1826,7 +1784,7 @@ She looked at the passage — at the split, the two ways.
 
 The corner of her mouth moved.
 
-"What happens now?" she asked. "To the clan."
+"What happens now?" she asked. "To the clan?"
 
 "We rebuild. We learn what the Lamplighters left. We find who the new Listener is, because there's always a new Listener — the Current finds them." He paused. "Knuckle thinks it's Candle-Two. I think he's probably right."
 
@@ -1844,7 +1802,7 @@ She told him plainly, the way she told him everything — no softening, no show.
 
 She had also sent a location marker. Not a precise one — not the tunnels, not Homewater, nothing that could be used to find the clan. Only enough to tell the Mission she was alive, underground, and not being held.
 
-"You contacted them," he said. He worked through what it meant one branch at a time, the way he'd work a tunnel.
+"You contacted them?" he asked. He worked through what it meant one branch at a time, the way he'd work a tunnel.
 
 "I filed a protected document," she said. "There's a difference. The filing sits in the system. It can't be pulled without leaving a record of who pulled it. It makes the Lamplighter operation legally messy in a way it wasn't before."
 
@@ -1856,7 +1814,7 @@ She had also sent a location marker. Not a precise one — not the tunnels, not 
 
 "It complicates things."
 
-""
+"It does," he said. "That doesn't make it wrong."
 
 She was quiet. He let the quiet sit. The mineral-water ticked along the lower edge of the passage.
 
@@ -1914,7 +1872,7 @@ The Oarsman came out of the dark the way it always came: without a sound, the hu
 
 Glim stepped down into the vessel.
 
-He had never heard of a Fare made of more than one thing. He did not know a rule that forbade it, and the Oarsman had never yet refused what was freely given. So he offered three, together, as one. The dried fungus-cap that was the ordinary cost. The carved bone silence-piece Vesh had pressed into his palm in the vaults of the Tartar, worn smooth by a lifetime of a thumb. And the flat surface-card Noor had given him to carry, so that if the surface's systems ever found him, they would have a name to put to him. Three things, three kinds of cost, offered together — because a life that size does not fit in one hand.
+He had never heard of a Fare made of more than one thing. He did not know a rule that forbade it, and the Oarsman had never yet refused what was freely given. So he offered three, together, as one. The dried fungus-cap that was the ordinary cost. The carved bone silence-piece Vesh had pressed into his palm in the vaults of the Tartar, worn smooth by a lifetime of a thumb. And a flat surface-card — Noor must have slipped it in among his things sometime since the reunion, without a word about it — so that if the surface's systems ever found him, they would have a name to put to him. Three things, three kinds of cost, offered together.
 
 He set them in the center of the vessel.
 
@@ -1922,7 +1880,7 @@ The Oarsman did not look at them. It moved the way it always moved, nothing wast
 
 The black water opened ahead of them.
 
-He thought, as the candle's small light found the rim of the basin and lost it again in the vessel's rocking, of the thing he had seen there once. The flat shape on a cord. The small pale face with the dark eyes that pulled light in instead of giving it back. He had carried it for four years before the Surfacing and twelve since — unexplained, always with him, never once handled.
+He thought, as the candle's small light found the rim of the basin and lost it again in the vessel's rocking, of the thing he had seen there once. The flat shape on a cord. The small pale face with the dark eyes that pulled light in instead of giving it back. He had carried it less than a year before the Surfacing, and every day since — unexplained, always with him, never once handled.
 
 He sat with that the way he sat with the Current: present, unprovable to anyone who hadn't felt it, and wholly his.
 

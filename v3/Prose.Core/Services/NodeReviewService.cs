@@ -251,7 +251,9 @@ public class NodeReviewService
         {
             string slug;
             await using (var db = await dbFactory.CreateDbContextAsync(ct))
-                slug = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId)
+                // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class
+                // found and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+                slug = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(s => s.Id == nodeId)
                     .Select(s => s.Slug).FirstOrDefaultAsync(ct) ?? nodeId.ToString("N")[..8];
 
             // Brain label drives the report filename ("… reviews (<brain>).htm"). Cloud is "cloud";
@@ -1858,7 +1860,9 @@ Be specific; do not invent praise the reviews don't support.";
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
+        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, ct);
         if (node == null) return;
 
         // Remember the score before this recompute so we can detect a node
@@ -2441,7 +2445,9 @@ Be specific; do not invent praise the reviews don't support.";
         IReadOnlyDictionary<int, string> latestScoredHashByPos;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
+            // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found
+            // and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
+            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
             if (node == null) return new DeltaRunResult(0, 0, 0, 0, 0, "Node not found.");
             nodeTitle = node.Title;
 

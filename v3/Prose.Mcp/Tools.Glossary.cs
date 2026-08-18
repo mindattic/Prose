@@ -94,8 +94,10 @@ public class GlossaryTools
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var node = Guid.TryParse(idOrSlug, out var gid)
-            ? await db.Nodes.FirstOrDefaultAsync(n => n.Id == gid)
-            : await db.Nodes.FirstOrDefaultAsync(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug);
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            ? await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == gid)
+            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+            : await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug);
         if (node == null)
             return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 

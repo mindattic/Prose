@@ -262,7 +262,7 @@ public class ContractRelationalParityTests
                 Name       = src.Codename,
                 Slug       = WorldGraphService.Slugify(src.Codename),
                 Status     = "canon",
-                IsActive   = true,
+                
                 CreatedAt  = DateTime.UtcNow,
                 ModifiedAt = DateTime.UtcNow,
             });

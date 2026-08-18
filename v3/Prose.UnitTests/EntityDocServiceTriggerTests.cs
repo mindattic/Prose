@@ -45,7 +45,7 @@ public class EntityDocServiceTriggerTests
         var id = Guid.NewGuid();
         using (var db = factory.CreateDbContext())
         {
-            db.Entities.Add(new Entity { Id = id, EntityType = entityType, Name = name, Slug = Guid.NewGuid().ToString("N"), IsActive = true });
+            db.Entities.Add(new Entity { Id = id, EntityType = entityType, Name = name, Slug = Guid.NewGuid().ToString("N"), });
             db.SaveChanges();
         }
         await svc.EnsureEntityDocAsync(id);

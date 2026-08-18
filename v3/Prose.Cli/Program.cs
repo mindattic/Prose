@@ -82,6 +82,18 @@ if (UniverseBootstrap.RequestedSlug == null
         // deliberately — a data-integrity scan must see every universe in one pass, never scoped
         // to whatever --universe happened to be passed (see TextIntegrityService's doc comment).
         "--check-text-integrity",
+        // Schema-level hygiene check: sys.columns + a source-tree grep, neither of which is
+        // scoped to any universe's rows at all (see TemporalHygieneCli).
+        "--check-temporal-hygiene",
+        // Direct-id lookup against Entities_History via IgnoreQueryFilters() — resolves the
+        // row's own universe from the historical data itself, not an ambient scope.
+        "--restore-entity",
+        // Takes two explicit GUIDs and operates on those rows directly — no ambient scope to
+        // resolve (see MergeEntityCli).
+        "--merge-entity",
+        // Explicit --id/--slug/--all targeting via IgnoreQueryFilters(), never an ambient
+        // universe default — see ArchiveBookCli/TagEntitiesCli's own doc comments.
+        "--archive-book", "--tag-entities",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -464,6 +476,15 @@ if (args.Contains("--scan-entity-mentions"))
     return;
 }
 
+// CLI mode: retroactive inline entity-GUID tagging backfill (corpus-trust-recovery Phase 1a/1b).
+//   prose --tag-entities (--id <guid> | --slug <slug> | --all) [--dry-run]
+if (args.Contains("--tag-entities"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await TagEntitiesCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: backfill Entities.Status = 'stub' / 'canon' based on BeatEntityMentions.
 //   prose --backfill-stubs
 // Entities with no BeatEntityMentions row → Status='stub' (excluded from universe graph).
@@ -474,9 +495,9 @@ if (args.Contains("--backfill-stubs"))
     var db2 = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();
     await using var ctx2 = await db2.CreateDbContextAsync();
     var promoted = await ctx2.Database.ExecuteSqlRawAsync(
-        "UPDATE Entities SET Status = 'canon', ModifiedAt = SYSUTCDATETIME() WHERE IsActive = 1 AND Status != 'canon' AND Status != 'archived' AND Id IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
+        "UPDATE Entities SET Status = 'canon', ModifiedAt = SYSUTCDATETIME() WHERE Status != 'canon' AND Status != 'archived' AND Id IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
     var demoted = await ctx2.Database.ExecuteSqlRawAsync(
-        "UPDATE Entities SET Status = 'stub', ModifiedAt = SYSUTCDATETIME() WHERE IsActive = 1 AND Status != 'stub' AND Status != 'archived' AND Id NOT IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
+        "UPDATE Entities SET Status = 'stub', ModifiedAt = SYSUTCDATETIME() WHERE Status != 'stub' AND Status != 'archived' AND Id NOT IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
     Console.WriteLine($"[backfill-stubs] promoted={promoted} canon, demoted={demoted} stub.");
     return;
 }
@@ -1513,6 +1534,38 @@ if (args.Contains("--archive-book"))
     return;
 }
 
+// CLI mode: list every ArchivedBook snapshot for a node, newest first — read-only, use to find
+// the archive-id for --restore-node-field. See ListArchivesCli class doc.
+//   prose --list-archives (--id ... | --slug ...) --universe <u>
+if (args.Contains("--list-archives"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ListArchivesCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: restore a Node content field (Description/NodeBible/Summary/Seed/Subtitle) from a
+// named ArchivedBook snapshot back onto the live node. Explicit archive-id, never "latest" —
+// see RestoreNodeFieldCli class doc.
+//   prose --restore-node-field (--id ... | --slug ...) --archive-id <guid>
+//       --field description|nodebible|summary|seed|subtitle|all --universe <u>
+if (args.Contains("--restore-node-field"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await RestoreNodeFieldCli.RunAsync(args, sp);
+    return;
+}
+
+// CLI mode: restore a hard-deleted Entities row from Entities_History (system-versioned
+// temporal table) — see RestoreEntityCli class doc.
+//   prose --restore-entity --id <guid> --as-of <datetime-utc> [--dry-run]
+if (args.Contains("--restore-entity"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await RestoreEntityCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: the nightly AutoCorrect pass — pure ML/deterministic, zero LLM calls. Invoked by
 // the Windows Task Scheduler task registered by scripts/register-autocorrect-task.ps1 at 2:00 AM
 // Central every night. See AutoCorrectOrchestratorService for the pipeline.
@@ -1779,6 +1832,18 @@ if (args.Contains("--check-duplicate-beats"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await CheckDuplicateBeatsCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --check-temporal-hygiene [--json]
+// Enforces (not just documents) the two rules that make re-enabling SYSTEM_VERSIONING on
+// Nodes/Beats/BeatNodes safe: no IsEnabled/IsActive-style status-flag column on any versioned
+// table, and no application query joins a live table to its own _History shadow. Run after any
+// schema change touching a versioned table, not just once.
+if (args.Contains("--check-temporal-hygiene"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await TemporalHygieneCli.RunAsync(args, sp);
     return;
 }
 
@@ -2343,6 +2408,49 @@ if (args.Contains("--duplicate-entity-scan"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await DuplicateEntityScanCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --duplicate-entity-scan-broad --universe <slug> [--entity-type <type>] [--json]
+// LLM-assisted scan for duplicate rows the deterministic scan above cannot catch (a title/rank/
+// code suffix or otherwise different name for the same entity, not a 1-character typo). Two-stage
+// cost-bounded design — see DuplicateEntityScanService.ScanBroadAsync. Report-only, costs real
+// LLM calls — gated like other LLM-calling commands.
+if (args.Contains("--duplicate-entity-scan-broad"))
+{
+    var sp = BuildCoreServices(args);
+    var (proceedDup, estDup) = await CostGateCli.ConfirmAsync("--duplicate-entity-scan-broad", args, sp);
+    if (!proceedDup) return;
+    var beforeDup = CostGateCli.SnapshotCost(sp);
+    Environment.ExitCode = await DuplicateEntityScanBroadCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--duplicate-entity-scan-broad", estDup, beforeDup, sp);
+    return;
+}
+
+// prose --reconcile-book-entities (--id <guid> | --slug <slug>) [--universe <u>]
+// Phase 0 (repair) of the corpus-trust-recovery plan: finds Entity rows describing a FORMER
+// identity of a character this book's current bible names differently (a full rename, not a
+// typo — name-based dedup structurally can't catch this). Report-only. See
+// BookEntityReconciliationService for the two-stage cost-bounded design.
+if (args.Contains("--reconcile-book-entities"))
+{
+    var sp = BuildCoreServices(args);
+    var (proceedRec, estRec) = await CostGateCli.ConfirmAsync("--reconcile-book-entities", args, sp);
+    if (!proceedRec) return;
+    var beforeRec = CostGateCli.SnapshotCost(sp);
+    Environment.ExitCode = await ReconcileBookEntitiesCli.RunAsync(args, sp);
+    await CostGateCli.RecordActualAsync("--reconcile-book-entities", estRec, beforeRec, sp);
+    return;
+}
+
+// prose --merge-entity --winner <guid> --loser <guid>
+// The execution half of the report-only duplicate-scan tools — a human, having confirmed two
+// rows are the same identity from real book/prose knowledge, executes the merge. No LLM call,
+// no fuzzy matching. See MergeEntityCli.
+if (args.Contains("--merge-entity"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await MergeEntityCli.RunAsync(args, sp);
     return;
 }
 

@@ -28,7 +28,7 @@ public static class EntertainmentMapper
     public static List<EntertainmentData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.EntertainmentItems.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "entertainment"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "entertainment"),
                 ei => ei.Id, e => e.Id,
                 (ei, e) => new { ei.Id, Name = e.Name, ei.Category, ei.Rating, ei.VoteCount })
             .ToList();
@@ -69,7 +69,7 @@ public static class EntertainmentMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "entertainment")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "entertainment" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "entertainment"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -248,7 +248,7 @@ public static class EntertainmentMapper
 
         var entityIds = db.Entities.AsNoTracking()
             .Where(e => e.EntityType == "entertainment")
-            .Select(e => new { e.Id, e.Name, e.IsActive })
+            .Select(e => new { e.Id, e.Name })
             .ToList();
 
         if (entityIds.Count == 0) return 0;
@@ -295,7 +295,7 @@ public static class EntertainmentMapper
         }
 
         // Minimal rows for active entities with no blob and no relational row
-        foreach (var e in entityIds.Where(e => e.IsActive && !blobEntityIds.Contains(e.Id) && !existingRelational.Contains(e.Id)))
+        foreach (var e in entityIds.Where(e => !blobEntityIds.Contains(e.Id) && !existingRelational.Contains(e.Id)))
         {
             try
             {
@@ -318,11 +318,11 @@ public static class EntertainmentMapper
     {
         if (string.IsNullOrWhiteSpace(alias)) return null;
         var e = db.Entities.AsNoTracking()
-            .FirstOrDefault(x => x.EntityType == entityType && x.Name == alias && x.IsActive);
+            .FirstOrDefault(x => x.EntityType == entityType && x.Name == alias);
         if (e != null) return e.Id;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(alias);
         e = db.Entities.AsNoTracking()
-            .FirstOrDefault(x => x.EntityType == entityType && x.Slug == slug && x.IsActive);
+            .FirstOrDefault(x => x.EntityType == entityType && x.Slug == slug);
         return e?.Id;
     }
 }

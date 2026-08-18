@@ -114,8 +114,7 @@ public static class ExpandBeatCli
             await using var db = await dbFactory.CreateDbContextAsync();
             var parg = protagonistArg.Trim();
             var pEntity = await db.Entities.AsNoTracking()
-                .Where(e => e.EntityType == "character" && e.IsActive
-                            && (e.Name == parg || e.Slug == parg))
+                .Where(e => e.EntityType == "character" && (e.Name == parg || e.Slug == parg))
                 .Select(e => e.Name)
                 .FirstOrDefaultAsync();
             if (pEntity != null)

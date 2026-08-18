@@ -31,7 +31,7 @@ public static class NewsMapper
     public static List<NewsData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.News.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "news"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "news"),
                 n => n.Id, e => e.Id,
                 (n, e) => new { n.Id, Name = e.Name, n.Category, n.Rating, n.VoteCount })
             .ToList();
@@ -68,7 +68,7 @@ public static class NewsMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "news")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "news" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "news"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -255,7 +255,7 @@ public static class NewsMapper
         };
 
         var newsEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "news" && e.IsActive)
+            .Where(e => e.EntityType == "news")
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -303,8 +303,7 @@ public static class NewsMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.IsActive
-                && (entityType == null || e.EntityType == entityType)
+            .Where(e => (entityType == null || e.EntityType == entityType)
                 && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();

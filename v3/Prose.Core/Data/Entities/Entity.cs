@@ -36,16 +36,6 @@ public class Entity
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime ModifiedAt { get; set; } = DateTime.UtcNow;
 
-    /// <summary>
-    /// Soft-delete flag. Active rows are what every page lists by default; archived
-    /// rows are still queryable (audit, restore) but excluded from default reads.
-    /// Filtered index on (IsActive = 1) keeps the hot path fast.
-    /// </summary>
-    public bool IsActive { get; set; } = true;
-
-    /// <summary>UTC timestamp when this row was archived, if applicable.</summary>
-    public DateTime? ArchivedAt { get; set; }
-
     /// <summary>23rd-century in-world date this entity came into being, when known.</summary>
     public DateTime? InWorldCreatedDate { get; set; }
 

@@ -584,7 +584,12 @@ public class EmbeddingService
         var sb = new StringBuilder();
         if (!string.IsNullOrWhiteSpace(title)) sb.Append(title).Append('\n');
         if (!string.IsNullOrWhiteSpace(synopsis)) sb.Append(synopsis).Append('\n');
-        if (!string.IsNullOrWhiteSpace(text)) sb.Append(text);
+        // Strip inline entity-GUID tags (corpus-trust-recovery Phase 1a) before embedding — angle-
+        // bracket spans are tokenization noise for cosine-similarity duplicate detection, same
+        // reason BuildChapterSourceText already strips HTML tags above. Found live 2026-08-17:
+        // this sibling had no stripping at all, an asymmetry that would have degraded
+        // BeatDuplicateService's similarity scoring the moment any tagged beat was re-embedded.
+        if (!string.IsNullOrWhiteSpace(text)) sb.Append(BeatMarkup.StripEntityTags(text));
         return TruncateForEmbed(sb.ToString().Trim());
     }
 
@@ -717,13 +722,12 @@ public class EmbeddingService
                 1.0 - VECTOR_DISTANCE('cosine', emb.Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
             FROM dbo.EntityEmbeddings emb
             JOIN dbo.Entities ent ON ent.Id = emb.EntityId
-            WHERE ent.IsActive = 1
-              -- Filter on the ENTITY registry's universe (authoritative), NOT emb.UniverseId:
-              -- the embedding tag is a drift-prone copy that silently defaults to GLMZ when an
-              -- entity is embedded without an active scope, which leaked SCRY quotes (e.g. Wren
-              -- Caerglas, Dame Lyra) into GLMZ blueprint anchor searches. ent.UniverseId is the
-              -- single source of truth. (SS-A46 cross-universe leak fix.)
-              AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR ent.UniverseId = @p_universe){typeFilter}
+            -- Filter on the ENTITY registry's universe (authoritative), NOT emb.UniverseId:
+            -- the embedding tag is a drift-prone copy that silently defaults to GLMZ when an
+            -- entity is embedded without an active scope, which leaked SCRY quotes (e.g. Wren
+            -- Caerglas, Dame Lyra) into GLMZ blueprint anchor searches. ent.UniverseId is the
+            -- single source of truth. (SS-A46 cross-universe leak fix.)
+            WHERE (@p_universe = '00000000-0000-0000-0000-000000000000' OR ent.UniverseId = @p_universe){typeFilter}
             ORDER BY VECTOR_DISTANCE('cosine', emb.Vector, CAST(@p_query AS VECTOR(1536))) ASC;
             """;
 
@@ -745,7 +749,7 @@ public class EmbeddingService
     }
 
     /// <summary>
-    /// Bulk re-embed every active entity that has either no row or a stale
+    /// Bulk re-embed every entity that has either no row or a stale
     /// hash. Idempotent. Returns the count of rows newly written.
     /// </summary>
     public async Task<int> ReembedCorpusAsync(
@@ -755,17 +759,11 @@ public class EmbeddingService
         await EnsureSchemaAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        // Hygiene: drop embedding rows for archived/inactive entities. Retrieval
-        // already joins on Entities.IsActive = 1, so these rows can never surface
-        // in a similarity hit — they are pure dead weight, and derived data is
-        // rebuildable, so a hard delete is safe here.
-        var purged = await db.Database.ExecuteSqlRawAsync(
-            "DELETE emb FROM dbo.EntityEmbeddings emb JOIN dbo.Entities ent ON ent.Id = emb.EntityId WHERE ent.IsActive = 0;", ct);
-        if (purged > 0)
-            log.LogInformation("ReembedCorpus: purged {Count} embedding row(s) for inactive entities.", purged);
-
+        // No purge step needed: EntityEmbeddings has a Cascade FK to Entities (temporal-hygiene
+        // rule — no IsActive flag, existence is the only signal), so a deleted entity's embedding
+        // row is gone automatically. An orphaned embedding for a no-longer-existing entity can no
+        // longer occur.
         var entities = await db.Entities.AsNoTracking()
-            .Where(e => e.IsActive)
             .Select(e => new { e.Id, e.Name, e.EntityType, e.Description })
             .ToListAsync(ct);
 

@@ -31,7 +31,7 @@ public static class AmmunitionMapper
     public static List<AmmunitionData> LoadAllLite(ProseDbContext db)
     {
         var rows = db.Ammunitions.AsNoTracking()
-            .Join(db.Entities.AsNoTracking().Where(e => e.IsActive && e.EntityType == "ammunition"),
+            .Join(db.Entities.AsNoTracking().Where(e => e.EntityType == "ammunition"),
                 a => a.Id, e => e.Id,
                 (a, e) => new { a.Id, Name = e.Name, a.Category, a.Caliber, a.Rating, a.VoteCount })
             .ToList();
@@ -73,7 +73,7 @@ public static class AmmunitionMapper
     {
         var ids = (includeArchived
             ? db.Entities.AsNoTracking().Where(e => e.EntityType == "ammunition")
-            : db.Entities.AsNoTracking().Where(e => e.EntityType == "ammunition" && e.IsActive))
+            : db.Entities.AsNoTracking().Where(e => e.EntityType == "ammunition"))
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -253,7 +253,7 @@ public static class AmmunitionMapper
         };
 
         var ammoEntityIds = db.Entities.AsNoTracking()
-            .Where(e => e.EntityType == "ammunition" && e.IsActive)
+            .Where(e => e.EntityType == "ammunition")
             .Select(e => e.Id)
             .ToHashSet();
 
@@ -301,8 +301,7 @@ public static class AmmunitionMapper
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == entityType && e.IsActive
-                && (e.Name == name || e.Slug == slug))
+            .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();
     }

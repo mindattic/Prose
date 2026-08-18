@@ -15,7 +15,7 @@ namespace Prose.Core.Services;
 /// <summary>
 /// EF-backed Book repository. Books live in the unified Prose database
 /// alongside every other entity:
-///   • <see cref="Entity"/> — universal row (Name, Slug, Status, IsActive, …)
+///   • <see cref="Entity"/> — universal row (Name, Slug, Status, …)
 ///   • <see cref="Prose.Core.Data.Entities.Book"/> — strongly-typed indexed columns
 ///     (Title, Slug, SeriesId, Tagline, Premise, ArcTarget, ProtagonistsJson, ChapterIdsJson)
 ///   • <see cref="Prose.Core.Data.Entities.Record"/> — canonical JSON of the
@@ -23,6 +23,13 @@ namespace Prose.Core.Services;
 ///
 /// Class name preserved so consumers don't change. The legacy file-based
 /// implementation has been retired.
+///
+/// No status flag (temporal-hygiene rule): a book's existence in the live
+/// <c>Books</c>/<c>Entities</c> tables IS the fact of it being current.
+/// <see cref="ArchiveBook"/> hard-deletes both rows in one transaction — <c>Books</c>
+/// has no database FK to <c>Entities</c> (unlike every typed subtype), so both must be
+/// deleted explicitly or the <c>Books</c>/<c>BookProtagonists</c>/<c>BookChapterOrder</c>
+/// rows would silently orphan. Recoverable via <c>Entities_History</c> (system-versioned).
 /// </summary>
 public class BookRepository : IBookRepository
 {
@@ -53,7 +60,7 @@ public class BookRepository : IBookRepository
         using var db = dbFactory.CreateDbContext();
         var jsons = db.Records
             .AsNoTracking()
-            .Where(r => r.Entity!.EntityType == "book" && r.Entity.IsActive)
+            .Where(r => r.Entity!.EntityType == "book")
             .OrderByDescending(r => r.UpdatedAt)
             .Select(r => r.Json)
             .ToList();
@@ -106,7 +113,6 @@ public class BookRepository : IBookRepository
                 Description = book.Premise,
                 CreatedAt   = book.Created == default ? DateTime.UtcNow : book.Created,
                 ModifiedAt  = DateTime.UtcNow,
-                IsActive    = true,
             };
             db.Entities.Add(entity);
         }
@@ -116,8 +122,6 @@ public class BookRepository : IBookRepository
             entity.Slug        = WorldGraphService.Slugify(book.Title);
             entity.Description = book.Premise;
             entity.ModifiedAt  = DateTime.UtcNow;
-            entity.IsActive    = true;
-            entity.ArchivedAt  = null;
         }
 
         var sub = db.Books.FirstOrDefault(b => b.Id == id);
@@ -163,18 +167,31 @@ public class BookRepository : IBookRepository
         db.SaveChanges();
     }
 
+    /// <summary>
+    /// Hard-deletes the book — no status flag; existence in the live table is the only signal
+    /// of "current." <c>Books</c> has no database FK to <c>Entities</c> (unlike every typed
+    /// subtype), so the <c>Books</c> row is deleted explicitly first (its own declared Cascade
+    /// FKs take <c>BookProtagonists</c>/<c>BookChapterOrder</c> with it), then the <c>Entities</c>
+    /// row — in one transaction, so a failure partway never leaves one without the other.
+    /// Chapters are NOT touched (ArchiveBook never archived chapters even under the old flag).
+    /// Recoverable via <c>Entities_History</c> (system-versioned) or <c>prose --restore-entity</c>.
+    /// </summary>
     public void ArchiveBook(string id)
     {
         if (string.IsNullOrEmpty(id)) return;
         var guid = ParseGuid(id);
         using var db = dbFactory.CreateDbContext();
-        var entity = db.Entities.FirstOrDefault(e => e.Id == guid);
+        using var tx = db.Database.BeginTransaction();
+
+        var entity = db.Entities.FirstOrDefault(e => e.Id == guid && e.EntityType == "book");
         if (entity == null) return;
-        entity.IsActive   = false;
-        entity.Status     = "archived";
-        entity.ArchivedAt = DateTime.UtcNow;
-        entity.ModifiedAt = DateTime.UtcNow;
+
+        var book = db.Books.FirstOrDefault(b => b.Id == guid);
+        if (book != null) db.Books.Remove(book);
+        db.Entities.Remove(entity);
+
         db.SaveChanges();
+        tx.Commit();
     }
 
     private static Guid ParseGuid(string s)
@@ -192,7 +209,7 @@ public class BookRepository : IBookRepository
         if (string.IsNullOrWhiteSpace(name)) return null;
         var slug = WorldGraphService.Slugify(name);
         return db.Entities
-            .Where(e => e.EntityType == "character" && e.IsActive
+            .Where(e => e.EntityType == "character"
                 && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)
             .FirstOrDefault();

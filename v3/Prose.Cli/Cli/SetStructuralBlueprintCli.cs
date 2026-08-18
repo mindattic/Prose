@@ -47,7 +47,8 @@ public static class SetStructuralBlueprintCli
         var blueprintService = services.GetRequiredService<StructuralBlueprintService>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
         if (node == null)
         {
             Console.Error.WriteLine($"[set-structural-blueprint] No node found with slug or code '{slug}'.");
