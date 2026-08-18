@@ -94,6 +94,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // Explicit --id/--slug/--all targeting via IgnoreQueryFilters(), never an ambient
         // universe default — see ArchiveBookCli/TagEntitiesCli's own doc comments.
         "--archive-book", "--tag-entities",
+        // Corpus-wide data-repair backfill: finds orphaned character/place rows via
+        // IgnoreQueryFilters() across every universe by design — see BackfillMissingSubtypeRowsCli.
+        "--backfill-missing-subtype-rows",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -2451,6 +2454,16 @@ if (args.Contains("--merge-entity"))
 {
     var sp = BuildCoreServices(args);
     Environment.ExitCode = await MergeEntityCli.RunAsync(args, sp);
+    return;
+}
+
+// prose --backfill-missing-subtype-rows [--dry-run] [--exclude-name "<name>"]...
+// One-time data repair: inserts a minimal Characters/Places row for any character/place Entities
+// row that has none (root cause: raw SQL writes bypassing the app — see BackfillMissingSubtypeRowsCli).
+if (args.Contains("--backfill-missing-subtype-rows"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await BackfillMissingSubtypeRowsCli.RunAsync(args, sp);
     return;
 }
 
