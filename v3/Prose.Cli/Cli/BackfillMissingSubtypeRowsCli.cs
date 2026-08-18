@@ -7,23 +7,48 @@ namespace Prose.Cli;
 /// <summary>
 /// <c>prose --backfill-missing-subtype-rows [--dry-run] [--exclude-name "&lt;name&gt;"]...</c>
 ///
-/// One-time data repair for a corpus-wide integrity gap found 2026-08-18: 477 <c>Entities</c>
-/// rows typed <c>character</c>/<c>place</c> exist with no matching <c>Characters</c>/<c>Places</c>
-/// subtype row. Root-caused to raw SQL writes made directly against the DB, bypassing the app
-/// entirely — every current write path (<see cref="Prose.Core.Services.Repositories"/>'s
-/// CharacterRepository/PlaceRepository, <see cref="Prose.Core.Services.FactInterpreterService"/>'s
-/// stub creator, the create_character/create_place MCP tools) already inserts the subtype row
-/// correctly, so there is no live code bug to fix here — only the debris left behind by writes
-/// that never went through any of them.
+/// One-time data repair for a corpus-wide integrity gap found 2026-08-18: <c>Entities</c> rows
+/// exist with no matching relational subtype row, across 11 types (character, place, faction,
+/// quote, vocabulary, archetype, material, transportation, ammunition, contract, news).
+/// Root-caused to raw SQL writes made directly against the DB, bypassing the app entirely —
+/// every current write path already inserts the subtype row correctly, so there is no live code
+/// bug to fix; only the debris left behind by writes that never went through any of them.
 ///
-/// Inserts exactly the same minimal shape <c>FactInterpreterService.CreateStubAsync</c> already
-/// uses for a legitimate stub (Id + Name only, nothing else) — additive and non-destructive; a
-/// row that already has a subtype row is left untouched. Deliberately corpus-wide via
-/// <c>IgnoreQueryFilters()</c> — the 477 orphans span GLMZ/SCRY/NONFICTION, and an ambient
-/// universe scope would silently fix only one.
+/// <c>prose --retire-records-blobs --rebuild</c> (RFC 0007) already covers most relational
+/// types via each Mapper's <c>RebuildAllAsync</c> — but only for orphans that still have a
+/// <c>Records.Json</c> blob to rebuild from. The 11 types here are exactly the ones whose
+/// mapper has no "no blob, no relational row" minimal-stub fallback (unlike e.g.
+/// <c>DocumentMapper.RebuildAllAsync</c>), and whose C# subtype class defaults every
+/// non-nullable string column to <c>""</c> — the same convention
+/// <c>FactInterpreterService.CreateStubAsync</c> already relies on for its own stub inserts —
+/// so an Id+Name-only row is safe to insert for all eleven.
+///
+/// Additive and non-destructive; a row that already has a subtype row is left untouched.
+/// Deliberately corpus-wide via <c>IgnoreQueryFilters()</c> — orphans span GLMZ/SCRY/NONFICTION,
+/// and an ambient universe scope would silently fix only one.
 /// </summary>
 public static class BackfillMissingSubtypeRowsCli
 {
+    private sealed record TypeDef(
+        string EntityType,
+        Func<ProseDbContext, IQueryable<Guid>> ExistingIds,
+        Action<ProseDbContext, Guid, string> Insert);
+
+    private static readonly TypeDef[] Types =
+    [
+        new("character",      db => db.Characters.Select(x => x.Id),        (db, id, name) => db.Characters.Add(new Character { Id = id, Name = name })),
+        new("place",          db => db.Places.Select(x => x.Id),            (db, id, name) => db.Places.Add(new Place { Id = id, Name = name })),
+        new("faction",        db => db.Factions.Select(x => x.Id),          (db, id, name) => db.Factions.Add(new Faction { Id = id, Name = name })),
+        new("quote",          db => db.Quotes.Select(x => x.Id),            (db, id, name) => db.Quotes.Add(new Quote { Id = id, Name = name })),
+        new("vocabulary",     db => db.VocabularyEntries.Select(x => x.Id), (db, id, name) => db.VocabularyEntries.Add(new Vocabulary { Id = id, Name = name })),
+        new("archetype",      db => db.Archetypes.Select(x => x.Id),        (db, id, name) => db.Archetypes.Add(new ArchetypeRow { Id = id, Name = name })),
+        new("material",       db => db.Materials.Select(x => x.Id),         (db, id, name) => db.Materials.Add(new Material { Id = id, Name = name })),
+        new("transportation", db => db.Transportations.Select(x => x.Id),   (db, id, name) => db.Transportations.Add(new Transportation { Id = id, Name = name })),
+        new("ammunition",     db => db.Ammunitions.Select(x => x.Id),       (db, id, name) => db.Ammunitions.Add(new Ammunition { Id = id, Name = name })),
+        new("contract",       db => db.Contracts.Select(x => x.Id),         (db, id, name) => db.Contracts.Add(new Contract { Id = id, Name = name })),
+        new("news",           db => db.News.Select(x => x.Id),              (db, id, name) => db.News.Add(new News { Id = id, Name = name })),
+    ];
+
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         var dryRun = args.Contains("--dry-run");
@@ -35,36 +60,30 @@ public static class BackfillMissingSubtypeRowsCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var charOrphans = await db.Entities.IgnoreQueryFilters()
-            .Where(e => e.EntityType == "character" && !db.Characters.Any(c => c.Id == e.Id))
-            .Select(e => new { e.Id, e.Name })
-            .ToListAsync();
-        var placeOrphans = await db.Entities.IgnoreQueryFilters()
-            .Where(e => e.EntityType == "place" && !db.Places.Any(p => p.Id == e.Id))
-            .Select(e => new { e.Id, e.Name })
-            .ToListAsync();
-
         var skipped = new List<string>();
-        var charFixed = 0;
-        var placeFixed = 0;
 
-        foreach (var o in charOrphans)
+        foreach (var t in Types)
         {
-            if (excludeNames.Contains(o.Name)) { skipped.Add($"character:{o.Name}"); continue; }
-            if (!dryRun) db.Characters.Add(new Character { Id = o.Id, Name = o.Name });
-            charFixed++;
-        }
-        foreach (var o in placeOrphans)
-        {
-            if (excludeNames.Contains(o.Name)) { skipped.Add($"place:{o.Name}"); continue; }
-            if (!dryRun) db.Places.Add(new Place { Id = o.Id, Name = o.Name });
-            placeFixed++;
+            var existingIds = await t.ExistingIds(db).ToHashSetAsync();
+            var orphans = await db.Entities.IgnoreQueryFilters()
+                .Where(e => e.EntityType == t.EntityType && !existingIds.Contains(e.Id))
+                .Select(e => new { e.Id, e.Name })
+                .ToListAsync();
+
+            var fixedCount = 0;
+            foreach (var o in orphans)
+            {
+                if (excludeNames.Contains(o.Name)) { skipped.Add($"{t.EntityType}:{o.Name}"); continue; }
+                if (!dryRun) t.Insert(db, o.Id, o.Name);
+                fixedCount++;
+            }
+
+            if (orphans.Count > 0 || fixedCount > 0)
+                Console.WriteLine($"[backfill-missing-subtype-rows] {t.EntityType,-16} {(dryRun ? "would insert" : "inserted")} {fixedCount}");
         }
 
         if (!dryRun) await db.SaveChangesAsync();
 
-        Console.WriteLine($"[backfill-missing-subtype-rows] {(dryRun ? "[dry-run] would insert" : "inserted")} " +
-            $"{charFixed} Characters row(s), {placeFixed} Places row(s).");
         if (skipped.Count > 0)
             Console.WriteLine($"[backfill-missing-subtype-rows] skipped (--exclude-name): {string.Join(", ", skipped)}");
 
