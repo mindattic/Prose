@@ -71,6 +71,20 @@ public abstract class Node
     /// prefers canon nodes as the source of truth for the voice.</summary>
     public bool IsCanon { get; set; }
 
+    /// <summary>How this book's characters relate to authorial invention. Gates whether
+    /// personality/goal-drift checks apply (<c>BookHealthService.SacredFlawAsync</c> /
+    /// <c>NarrativeScienceService.AnalyzeSacredFlawAsync</c>):
+    /// "original"   (default) — author-invented psychology; motivations are designed from
+    ///              scratch and must stay internally consistent. Full drift-prevention applies.
+    /// "retelling"  — a close/1:1 adaptation of a pre-existing fixed narrative (myth, scripture,
+    ///              literary classic — e.g. Paradise Lost, the Gospels). Motivations are already
+    ///              fixed by the source text; the sacred-flaw "ground this character's flaw"
+    ///              nudge does not apply — fidelity to the source is the standard, not invention.
+    /// "historical" — nonfiction; real people and events that already happened. No invented
+    ///              psychology exists to enforce or drift from.
+    /// Set via <c>prose --set-narrative-mode --slug &lt;slug&gt; --mode &lt;mode&gt;</c>.</summary>
+    public string NarrativeMode { get; set; } = "original";
+
     /// <summary>When the author marked this node canon (null = never).</summary>
     public DateTime? CanonAt { get; set; }
 

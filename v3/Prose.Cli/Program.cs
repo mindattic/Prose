@@ -598,6 +598,15 @@ if (args.Contains("--generate-node-doc"))
     return;
 }
 
+// prose --set-narrative-mode --slug <slug> --mode original|retelling|historical
+// Gates BookHealthService.SacredFlawAsync — see SetNarrativeModeCli.
+if (args.Contains("--set-narrative-mode"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SetNarrativeModeCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: regenerate a universe's Master Glossary (Glossary.htm/.json/.txt under
 // docs/universes/{SLUG}/) from the GlossaryTerms table.
 //   prose --generate-glossary --universe <slug>   (omit --universe for all)

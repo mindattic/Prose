@@ -95,7 +95,7 @@ public class BookHealthService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes.AsNoTracking()
             .Where(n => n.Id == nodeId)
-            .Select(n => new { n.Id, n.Slug, n.Title, n.Seed })
+            .Select(n => new { n.Id, n.Slug, n.Title, n.Seed, n.NarrativeMode })
             .FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var slug = node.Slug ?? nodeId.ToString("N");
@@ -150,7 +150,13 @@ public class BookHealthService(
             await RunCheckAsync(checks, "chekhov-audit", () => ChekhovAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "five-act-map", () => FiveActMapAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "dramatic-question", () => DramaticQuestionAsync(nodeId, slug, ct));
-            await RunCheckAsync(checks, "sacred-flaw", () => SacredFlawAsync(nodeId, slug, ct));
+            // "original" only — a retelling (Paradise Lost, the Gospels: motivations fixed by the
+            // source text) or historical/nonfiction book (real people/events) has no
+            // author-invented psychology to "ground a flaw" in; the nudge is a category error.
+            if (node.NarrativeMode == "original")
+                await RunCheckAsync(checks, "sacred-flaw", () => SacredFlawAsync(nodeId, slug, ct));
+            else
+                checks.Add(new CheckOutcome("sacred-flaw", true, $"skipped — NarrativeMode={node.NarrativeMode}, not an invented-psychology book"));
         }
 
         var (sii, grade, deduction, rates, excluded) = await ComputeScoreAsync(

@@ -502,6 +502,26 @@ wiring to `StructuralBlueprintService`, `EmotionalDepthService`, `TensionEscalat
 Books/Chapters UI) calls `BeatGeneratorService.GenerateBeatAsync` directly, bypassing
 `ProseWriterRouter` and every enrichment above.
 
+### Narrative Mode — Original vs Retelling vs Historical (added 2026-08-18)
+
+`Nodes.NarrativeMode` classifies how a book's characters relate to authorial invention —
+`"original"` (default), `"retelling"`, or `"historical"`. It gates whether personality/goal-drift
+checks apply: `BookHealthService.SacredFlawAsync` (FULL tier, `NarrativeScienceService.
+AnalyzeSacredFlawAsync`) only runs for `"original"` books. A retelling (a close/1:1 adaptation of a
+pre-existing fixed narrative — e.g. TFAH/Paradise Lost, the four GOSPEL books) or a historical/
+nonfiction book (real people/events — 1381, Irish Outlaws, Jeanne d'Arc, Sons of God Daughters of
+Men) has motivations already fixed by an external source; the sacred-flaw check's "ground this
+character's flaw via create_character" nudge is a category error for them — there is no invented
+psychology to ground. `BehavioralInvariantEnforcer`/`BehaviorCheckAsync` (checking prose against a
+character's *already-documented* rules) is NOT gated by this — that check is still meaningful for
+a retelling/historical book (Milton's Satan or a historical figure should still act consistent
+with their documented record).
+
+Set via `prose --set-narrative-mode --slug <slug-or-code> --mode original|retelling|historical`.
+This is an authorial classification, not something to infer or change without the author (a book
+in the "fiction" universe is not automatically a retelling, and vice versa — universe is the
+wrong axis; TFAH lives in the "fiction" universe alongside future original-fiction books).
+
 ### Coverage monitoring
 ```
 prose --workflow-status --slug <slug>    # per-book service coverage matrix + gaps
