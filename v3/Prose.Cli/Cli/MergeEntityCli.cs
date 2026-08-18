@@ -4,7 +4,12 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --merge-entity --winner &lt;guid&gt; --loser &lt;guid&gt;
+/// prose --merge-entity --winner &lt;guid&gt; --loser &lt;guid&gt; [--universe &lt;slug&gt;]
+///
+/// IMPORTANT: pass <c>--universe &lt;slug&gt;</c> whenever winner/loser live outside the default
+/// universe (GLMZ) — <see cref="UniverseScope"/>'s global query filter otherwise scopes the
+/// lookup to the default universe and the merge fails with "entity not found" even though both
+/// rows genuinely exist (found live 2026-08-18 merging SCRY duplicates).
 ///
 /// The execution half of the report-only duplicate-scan tools (<see cref="DuplicateEntityScanCli"/>,
 /// <see cref="DuplicateEntityScanBroadCli"/>) and Phase 0 book-entity reconciliation
@@ -27,7 +32,7 @@ public static class MergeEntityCli
 
         if (!Guid.TryParse(winnerArg, out var winnerId) || !Guid.TryParse(loserArg, out var loserId))
         {
-            Console.Error.WriteLine("Usage: prose --merge-entity --winner <guid> --loser <guid>");
+            Console.Error.WriteLine("Usage: prose --merge-entity --winner <guid> --loser <guid> [--universe <slug>]");
             return 2;
         }
 

@@ -78,16 +78,21 @@ public class WorldValidationTests
     public void NoSameTypeNameCollisions()
     {
         using var db = factory.CreateDbContext();
+        // Scoped per-universe (SS-LAW-15): the same name legitimately exists in more than one
+        // universe (e.g. "Adam"/"Gabriel"/"Michael"/"Raphael"/"Satan"/"Uriel" each appear once in
+        // NONFICTION's Genesis/Enoch history and once, unrelated, in FICTION's Satan-POV novel).
+        // Grouping without UniverseId flagged those as false-positive collisions forever (found
+        // 2026-08-18 while re-verifying a corpus-wide duplicate-entity merge pass).
         var dupes = db.Entities.AsNoTracking()
             .Where(e => !ExemptFromCollisionCheck.Contains(e.EntityType))
-            .GroupBy(e => new { e.EntityType, Name = e.Name.ToLower() })
+            .GroupBy(e => new { e.EntityType, e.UniverseId, Name = e.Name.ToLower() })
             .Where(g => g.Count() > 1)
-            .Select(g => new { g.Key.EntityType, g.Key.Name, Count = g.Count() })
+            .Select(g => new { g.Key.EntityType, g.Key.UniverseId, g.Key.Name, Count = g.Count() })
             .ToList();
 
         Assert.That(dupes, Is.Empty, () =>
-            "Same-type name collisions (two active entities of the same type share a name):\n" +
-            string.Join("\n", dupes.Select(d => $"  \"{d.Name}\" ({d.EntityType}): {d.Count} entities")));
+            "Same-type name collisions (two active entities of the same type + universe share a name):\n" +
+            string.Join("\n", dupes.Select(d => $"  \"{d.Name}\" ({d.EntityType}, universe {d.UniverseId}): {d.Count} entities")));
     }
 
     // ── 2. No character lists its own name as an alias ────────────────────

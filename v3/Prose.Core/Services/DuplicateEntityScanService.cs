@@ -407,6 +407,26 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
 
         await using var tx = await db.Database.BeginTransactionAsync(ct);
 
+        // Defer FK enforcement for every constraint this merge might touch, for the whole
+        // transaction. Found live 2026-08-18: a subtype table's own PK-as-FK row (e.g.
+        // Characters.Id -> Entities.Id) and its detail tables (CharacterAffiliations.CharacterId
+        // -> Characters.Id) can form a real chicken-and-egg case — relinking a detail table to the
+        // winner requires the winner's subtype-table row to already exist, but updating the
+        // subtype table's own Id to the winner's value fails immediately if any detail row still
+        // references the old (loser's) value. Neither ordering of the two UPDATEs alone succeeds
+        // (SQL Server checks each FK at the statement that changes it, not at commit). NOCHECK lets
+        // every relink in this transaction run in any order; WITH CHECK CHECK CONSTRAINT right
+        // before commit fully revalidates every one of them and throws (rolling back the whole
+        // merge) if anything was left inconsistent, so this is not weaker safety — just deferred to
+        // the end of the transaction instead of per-statement.
+        var constraintsToToggle = fkColumns
+            .Select(fk => (fk.Table, fk.ConstraintName))
+            .Distinct()
+            .ToList();
+        foreach (var (table, constraintName) in constraintsToToggle)
+            await db.Database.ExecuteSqlRawAsync(
+                $"ALTER TABLE [dbo].[{table}] NOCHECK CONSTRAINT [{constraintName}]", ct);
+
         foreach (var fk in fkColumns)
         {
             var (table, column, pkColumn) = (fk.Table, fk.Column, fk.PkColumn);
@@ -455,6 +475,10 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
         // a bespoke soft-disable path — one mechanism, one undo shape, for both cases.
         var loserDeleteUndo = await DeleteAndCaptureAsync(db, "Entities", "Id", "Id", loserId, ct);
         undoLog.AddRange(loserDeleteUndo);
+
+        foreach (var (table, constraintName) in constraintsToToggle)
+            await db.Database.ExecuteSqlRawAsync(
+                $"ALTER TABLE [dbo].[{table}] WITH CHECK CHECK CONSTRAINT [{constraintName}]", ct);
 
         await tx.CommitAsync(ct);
         return new EntityMergeResult(winnerId, loserId, relinked, deletedForCollision, undoLog);

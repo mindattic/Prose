@@ -27,10 +27,26 @@ namespace Prose.Core.Services;
 /// path instead of the update-based relink — an UPDATE-based relink's undo entry needs a single
 /// column that uniquely identifies the row for later point-in-time reversal, which no single
 /// column of a composite key still provides once other rows already share the winner's id.
+///
+/// **Transitive subtype tables** — found live 2026-08-18 during a real GLMZ character-dedup merge
+/// (<c>FK_CharacterAffiliations_Characters_CharacterId</c> threw mid-merge): the original query only
+/// matched FKs whose referenced table is literally <c>Entities</c>. But <c>Characters</c>/<c>Places</c>/
+/// <c>Factions</c>/<c>Weapons</c>/etc. are TPT subtype tables whose own <c>Id</c> is itself a 1:1 FK to
+/// <c>Entities.Id</c> — and over 100 detail tables (<c>CharacterAffiliations</c>, <c>PlaceExits</c>,
+/// <c>FactionMembers</c>, <c>WeaponSpecs</c>, ...) FK to the SUBTYPE table's <c>Id</c>, not to
+/// <c>Entities.Id</c> directly. Those rows belong to the entity exactly as much as a direct
+/// <c>Entities</c> FK would (the subtype's <c>Id</c> IS the entity's <c>Id</c> by construction), so a
+/// merge/delete that only relinks direct-to-Entities FKs silently leaves every one of these subtype
+/// detail tables unrelinked — harmless for relink (the later delete just throws, as it did here) but a
+/// real gap for <see cref="EntityDeleteGuard"/>, which would have reported "no blockers" while a live
+/// FK still pointed at the row. Fixed with a recursive CTE: start from <c>Entities</c>, walk one hop at
+/// a time to any table whose PK is FK'd to an already-found table, and match child FKs against the
+/// whole closure (not just the literal <c>Entities</c> table) — general for any future subtype depth,
+/// not a hardcoded table-name list.
 /// </summary>
 public static class EntityForeignKeyCatalog
 {
-    public sealed record EntityFk(string Table, string Column, string PkColumn, bool Cascades, bool IsCompositeKey);
+    public sealed record EntityFk(string Table, string Column, string PkColumn, bool Cascades, bool IsCompositeKey, string ConstraintName);
 
     public static async Task<List<EntityFk>> DiscoverAsync(ProseDbContext db, CancellationToken ct = default)
     {
@@ -41,14 +57,31 @@ public static class EntityForeignKeyCatalog
         if (!db.Database.IsSqlServer()) return [];
 
         var fkRows = await db.Database.SqlQueryRaw<FkRow>("""
-            SELECT tp.name AS TableName, cp.name AS ColumnName, CAST(fk.delete_referential_action AS int) AS DeleteAction
+            WITH EntitySubtypes AS (
+                SELECT object_id AS TableObjectId
+                FROM sys.tables
+                WHERE name = 'Entities'
+
+                UNION ALL
+
+                SELECT tp.object_id
+                FROM sys.foreign_keys fk
+                JOIN sys.foreign_key_columns fkc ON fkc.constraint_object_id = fk.object_id
+                JOIN sys.tables tp ON tp.object_id = fkc.parent_object_id
+                JOIN sys.columns cp ON cp.object_id = tp.object_id AND cp.column_id = fkc.parent_column_id
+                JOIN sys.index_columns pkc ON pkc.object_id = tp.object_id AND pkc.column_id = cp.column_id
+                JOIN sys.indexes pki ON pki.object_id = pkc.object_id AND pki.index_id = pkc.index_id AND pki.is_primary_key = 1
+                JOIN EntitySubtypes es ON es.TableObjectId = fk.referenced_object_id
+            )
+            SELECT tp.name AS TableName, cp.name AS ColumnName, CAST(fk.delete_referential_action AS int) AS DeleteAction,
+                   fk.name AS ConstraintName
             FROM sys.foreign_keys fk
             JOIN sys.foreign_key_columns fkc ON fkc.constraint_object_id = fk.object_id
             JOIN sys.tables tp ON tp.object_id = fkc.parent_object_id
             JOIN sys.columns cp ON cp.object_id = tp.object_id AND cp.column_id = fkc.parent_column_id
-            JOIN sys.tables tr ON tr.object_id = fk.referenced_object_id
-            WHERE tr.name = 'Entities'
+            WHERE fk.referenced_object_id IN (SELECT TableObjectId FROM EntitySubtypes)
               AND tp.name NOT LIKE '%\_History' ESCAPE '\'
+            OPTION (MAXRECURSION 20)
             """).ToListAsync(ct);
 
         if (fkRows.Count == 0) return [];
@@ -80,7 +113,7 @@ public static class EntityForeignKeyCatalog
             // SET_DEFAULT, none configured on this schema today, treated conservatively as
             // non-cascading so EntityDeleteGuard still flags them rather than assuming safety).
             .Select(r => new EntityFk(r.TableName, r.ColumnName, pkByTable[r.TableName].Representative,
-                r.DeleteAction == 1, pkByTable[r.TableName].IsComposite))
+                r.DeleteAction == 1, pkByTable[r.TableName].IsComposite, r.ConstraintName))
             .ToList();
     }
 
@@ -89,6 +122,7 @@ public static class EntityForeignKeyCatalog
         public string TableName { get; set; } = "";
         public string ColumnName { get; set; } = "";
         public int DeleteAction { get; set; }
+        public string ConstraintName { get; set; } = "";
     }
 
     private sealed class PkColumnRow
