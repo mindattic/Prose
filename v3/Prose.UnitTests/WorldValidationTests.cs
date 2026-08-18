@@ -75,19 +75,13 @@ public class WorldValidationTests
     // Specific (EntityType, lowercased Name) pairs confirmed as genuine duplicate rows that a
     // 2026-08-18 corpus-wide merge sweep deliberately left unmerged pending an AUTHOR content
     // decision (not a bug, not overlooked) — see project_duplicate_entity_character_merge_2026_08_18
-    // memory. Remove an entry here the moment the author resolves it, so this test stays a live
-    // tripwire for any *new* collision instead of a permanently-red check.
-    //   - GLMZ place "The Circuit": one row describes a district-scale black-market tech bazaar,
-    //     the other a single unmarked clinic — these read as genuinely different places that
-    //     happen to share a name, not duplicate rows of the same place; author needs to confirm
-    //     whether the clinic is meant to be a location *within* the district (rename/relink) or
-    //     an unrelated stray entity.
-    //   ("character", "mira quintero") resolved 2026-08-18: the second row was a bare Entities
-    //     stub with no Characters subtype row at all (unusable for generation) and zero prose
-    //     mentions on either side; author chose to discard it outright via --merge-entity rather
-    //     than fold its MNEMOSYNC/Rhea thread into the surviving row.
-    private static readonly (string EntityType, string Name)[] KnownUnresolvedDuplicates =
-        [("place", "the circuit")];
+    // memory. Both since resolved same day via --merge-entity (bare Entities stubs with no
+    // subtype row and zero prose mentions, discarded outright rather than merged):
+    //   ("character", "mira quintero") — MNEMOSYNC/Rhea stub discarded, OPTIC-7 row kept.
+    //   ("place", "the circuit") — unmarked-clinic stub discarded, Meridian bazaar row kept.
+    // Kept as an empty, live tripwire — add an entry here only for a genuinely new
+    // author-pending case, never to silence an unreviewed collision.
+    private static readonly (string EntityType, string Name)[] KnownUnresolvedDuplicates = [];
 
     // ── 1. No two entities of the same type share a name ─────────────────
 
