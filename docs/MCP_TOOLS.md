@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**274 tools** across **43 tool families.**
+**275 tools** across **43 tool families.**
 
 ## Families
 
@@ -38,7 +38,7 @@
 | [Findings](#findings) | 6 |
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Glossary](#glossary) | 4 |
-| [Lore Triple](#lore-triple) | 7 |
+| [Lore Triple](#lore-triple) | 8 |
 | [Narrative Science](#narrative-science) | 4 |
 | [Node](#node) | 38 |
 | [Noun Consistency](#noun-consistency) | 3 |
@@ -1074,6 +1074,14 @@ Add or update one Master Glossary entry for the current universe. term is the wo
 Apply a CANONICAL or CONFIRMED claim to its entity record file. Legion's panel picks which field should hold the value (string fields are set, array fields are appended to, otherwise the claim is appended to a continuity_facts[] array). The audit trail records which field was chosen.
 
 - `claimUid` (string, required) — Claim uid to apply.
+
+### `extract_continuity_from_bible`
+
+Extract continuity claims from a book's story bible (prefers the NodeBibleSections 'Characters' section — settled character-sheet facts, not plot-forward arc/spine content — falling back to the raw NodeBible blob). Claims land with SourceType="bible" in the same ledger chapter-prose and entity-record extraction already populate, so a bible fact and a prose fact on the same (entity, predicate) compete/reconcile automatically — this is how the Bible gets validated against (and validates) the actual prose and the entity repo.
+
+- `nodeIdOrSlug` (string, required) — Book/series node id (guid) or slug/NodeCode.
+- `sectionType` (string, optional) — NodeBibleSections section to prefer: Characters (default, settled fact) | ArcSummary | VoiceRegister | NarrativeLocks | BeatSpine. Falls back to the raw NodeBible blob if the section doesn't exist yet.
+- `maxTokens` (int, optional) — Max tokens for the extraction response. Default 8192 — higher than chapter extraction's 4096, since a book's whole character roster commonly produces a larger fact list than a single beat/chapter does.
 
 ### `extract_continuity_from_book`
 

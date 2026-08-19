@@ -260,6 +260,18 @@ public class ContinuityService
             .ToList();
     }
 
+    /// <summary>Every claim that has been applied back to its entity's canon record
+    /// (<see cref="ContinuityApplyService.ApplyAsync"/> sets <c>AppliedAt</c>/<c>AppliedToField</c>) —
+    /// the candidate set for <see cref="ContinuityApplyService.CheckAppliedClaimsAsync"/>'s drift
+    /// check. Optionally scoped to one book via <see cref="ContinuityClaim.BookSlug"/>.</summary>
+    public List<ContinuityClaim> GetAppliedClaims(string? bookSlug = null)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var q = db.ContinuityClaims.AsNoTracking().Where(c => c.AppliedAt != null);
+        if (!string.IsNullOrEmpty(bookSlug)) q = q.Where(c => c.BookSlug == bookSlug);
+        return q.OrderBy(c => c.EntityName).ThenBy(c => c.Predicate).ToList();
+    }
+
     /// <summary>Whether any claim has ever been extracted and tagged with this book's slug —
     /// lets a per-book caller (BookHealthService's fact-ledger check) distinguish "extracted and
     /// clean" from "never extracted," the same honest-gap distinction SacredFlawAsync's
@@ -430,6 +442,7 @@ public class ContinuityService
                 Superseded       = g.Sum(c => c.Status == "SUPERSEDED"   ? 1 : 0),
                 FromProse        = g.Sum(c => c.SourceType == "prose"         ? 1 : 0),
                 FromEntityRecord = g.Sum(c => c.SourceType == "entity_record" ? 1 : 0),
+                FromBible        = g.Sum(c => c.SourceType == "bible"         ? 1 : 0),
             })
             .FirstOrDefault();
 
@@ -445,6 +458,7 @@ public class ContinuityService
             Superseded       = rows.Superseded,
             FromProse        = rows.FromProse,
             FromEntityRecord = rows.FromEntityRecord,
+            FromBible        = rows.FromBible,
         };
     }
 
@@ -688,4 +702,5 @@ public class ContinuityStats
     public int Superseded       { get; set; }
     public int FromProse        { get; set; }
     public int FromEntityRecord { get; set; }
+    public int FromBible        { get; set; }
 }

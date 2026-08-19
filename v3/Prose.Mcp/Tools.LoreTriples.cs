@@ -1,6 +1,8 @@
 using System.ComponentModel;
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
+using Prose.Core.Data;
 using Prose.Core.Interfaces;
 using Prose.Core.Services;
 
@@ -30,17 +32,20 @@ public class LoreTripleTools
     private readonly ContinuityExtractionService extraction;
     private readonly ContinuityApplyService apply;
     private readonly IBookRepository books;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
 
     public LoreTripleTools(
         ContinuityService store,
         ContinuityExtractionService extraction,
         ContinuityApplyService apply,
-        IBookRepository books)
+        IBookRepository books,
+        IDbContextFactory<ProseDbContext> dbFactory)
     {
         this.store      = store;
         this.extraction = extraction;
         this.apply      = apply;
         this.books      = books;
+        this.dbFactory  = dbFactory;
     }
 
     /// <summary>
@@ -113,6 +118,48 @@ public class LoreTripleTools
         catch (Exception ex)
         {
             return JsonSerializer.Serialize(new { error = "extract_book_failed", detail = ex.Message }, CanonTools.JsonOpts);
+        }
+    }
+
+    /// <summary>
+    /// Extract continuity claims from a book's story bible instead of its prose — the third leg
+    /// of the Bible/Book/Entities validation triangle. Lands with SourceType="bible" in the same
+    /// ledger prose/entity-record claims use, so a stale bible fact and a solid prose fact on the
+    /// same (entity, predicate) compete and surface a contradiction automatically.
+    /// </summary>
+    [McpServerTool, Description(
+        "Extract continuity claims from a book's story bible (prefers the NodeBibleSections " +
+        "'Characters' section — settled character-sheet facts, not plot-forward arc/spine content " +
+        "— falling back to the raw NodeBible blob). Claims land with SourceType=\"bible\" in the " +
+        "same ledger chapter-prose and entity-record extraction already populate, so a bible fact " +
+        "and a prose fact on the same (entity, predicate) compete/reconcile automatically — this " +
+        "is how the Bible gets validated against (and validates) the actual prose and the entity repo.")]
+    public async Task<string> ExtractContinuityFromBible(
+        [Description("Book/series node id (guid) or slug/NodeCode.")]
+            string nodeIdOrSlug,
+        [Description("NodeBibleSections section to prefer: Characters (default, settled fact) | ArcSummary | VoiceRegister | NarrativeLocks | BeatSpine. Falls back to the raw NodeBible blob if the section doesn't exist yet.")]
+            string sectionType = "Characters",
+        [Description("Max tokens for the extraction response. Default 8192 — higher than chapter extraction's 4096, since a book's whole character roster commonly produces a larger fact list than a single beat/chapter does.")]
+            int maxTokens = 8192)
+    {
+        try
+        {
+            await using var db = await dbFactory.CreateDbContextAsync();
+            Guid nodeId;
+            if (!Guid.TryParse(nodeIdOrSlug, out nodeId))
+            {
+                var found = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+                    .FirstOrDefaultAsync(n => n.Slug == nodeIdOrSlug || n.NodeCode == nodeIdOrSlug);
+                if (found == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+                nodeId = found.Id;
+            }
+            var r = await extraction.ExtractFromBibleAsync(nodeId, sectionType, maxTokens);
+            if (r.Error != null) return JsonSerializer.Serialize(new { error = "extract_bible_failed", detail = r.Error }, CanonTools.JsonOpts);
+            return JsonSerializer.Serialize(new { ok = r.ContradictedClaims == 0, report = r }, CanonTools.JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = "extract_bible_failed", detail = ex.Message }, CanonTools.JsonOpts);
         }
     }
 

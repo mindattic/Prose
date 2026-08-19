@@ -210,19 +210,117 @@ public class ContinuityExtractionService
         return results;
     }
 
+    /// <summary>Max chars pulled from the raw <c>Nodes.NodeBible</c> fallback when no matching
+    /// <see cref="NodeBibleSection"/> row exists yet — mirrors <c>BookEntityReconciliationService</c>'s
+    /// existing bible-excerpt guard so this doesn't blow the extraction prompt's token budget on a
+    /// long hand-authored bible.</summary>
+    private const int MaxBibleExcerptChars = 30000;
+
+    /// <summary>
+    /// Extract continuity claims from a book's story bible instead of its prose — the third leg
+    /// of the Bible/Book/Entities validation triangle. Prefers the typed <c>NodeBibleSections</c>
+    /// row matching <paramref name="sectionType"/> when one exists (narrower, cheaper, and skews
+    /// present-tense/settled fact rather than plot-forward — see the caller-facing warning below);
+    /// falls back to the raw <c>Nodes.NodeBible</c> blob (clamped to <see cref="MaxBibleExcerptChars"/>)
+    /// so this works even for books that have never had a typed section authored.
+    ///
+    /// Deliberately defaults <paramref name="sectionType"/> to "Characters", not "ArcSummary" or
+    /// "BeatSpine": those two are plot-forward by design ("by the end of the book, X will have
+    /// moved to Y") and the (entity, predicate, object) claim model has no temporal qualifier to
+    /// distinguish "true now" from "true eventually" — pointing extraction at them would produce
+    /// real, not hypothetical, false-positive CONTRADICTED claims against present-day prose.
+    /// Character-sheet content ("her hair is dark red") skews settled fact instead.
+    ///
+    /// Claims land with <c>SourceType = "bible"</c> in the SAME <see cref="ContinuityClaims"/>
+    /// ledger prose/entity-record extraction already populates — <see cref="ContinuityService.Upsert"/>
+    /// is source-agnostic, so a bible claim and a prose claim on the same (EntityId, Predicate)
+    /// compete/reconcile automatically; no new comparison logic needed.
+    ///
+    /// Default <paramref name="maxTokens"/> is double <see cref="ExtractFromChapterAsync"/>'s
+    /// (8192 vs 4096): confirmed live against a real book (Iron &amp; Silk) that a fact-dense
+    /// Characters section — a dozen named characters each carrying several atomic facts — produced
+    /// a response that got cut off mid-JSON-array at 4096 tokens, which <see cref="ExtractJsonArrayFromText"/>
+    /// then silently parsed as "0 candidates" rather than a visible failure (same truncation failure
+    /// mode <c>AltitudeAuditService</c> already hit once). A single beat/chapter rarely has enough
+    /// named entities to need this; a book's whole character roster commonly does.
+    /// </summary>
+    public async Task<ContinuityExtractionResult> ExtractFromBibleAsync(
+        Guid nodeId, string sectionType = "Characters", int maxTokens = 8192, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same pattern as
+        // ExtractFromBookNodeAsync above).
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+
+        var section = await db.NodeBibleSections.AsNoTracking()
+            .Where(s => s.NodeId == nodeId && s.SectionType == sectionType)
+            .Select(s => s.Content)
+            .FirstOrDefaultAsync(ct);
+
+        string bibleText;
+        string sourcePath;
+        if (!string.IsNullOrWhiteSpace(section))
+        {
+            bibleText = section;
+            sourcePath = $"bible-section:{sectionType}";
+        }
+        else if (!string.IsNullOrWhiteSpace(node.NodeBible))
+        {
+            bibleText = node.NodeBible.Length > MaxBibleExcerptChars
+                ? node.NodeBible[..MaxBibleExcerptChars] : node.NodeBible;
+            sourcePath = "bible-full:fallback";
+        }
+        else
+        {
+            return new ContinuityExtractionResult
+            {
+                ChapterId = "", ChapterTitle = $"bible:{node.Slug}", Error = "no bible content (no section, no NodeBible)",
+            };
+        }
+
+        // Bible content is hand-authored markdown (##, **, backticks) — beat prose never has this
+        // (BeatMarkup already strips it before extraction), so the shared snippet-grounding check
+        // (an exact substring match against THIS text) was never exercised against markdown syntax
+        // before. Confirmed live: real bible character sheets (e.g. "**Heritage:** Korean") are
+        // fact-dense but produced ZERO candidates on a first production run, because the LLM
+        // naturally quotes a snippet without the ** it doesn't consider part of the sentence —
+        // stripping formatting here (not loosening the containment check itself) is what actually
+        // fixes it, same principle as StripEntityTags cleaning beat text before its own extraction.
+        bibleText = StripMarkdownFormatting(bibleText);
+
+        log.LogInformation("[continuity] Extracting from bible for {Slug} (section={Section}, {Chars} chars)",
+            node.Slug, sectionType, bibleText.Length);
+
+        var contextHeader = "=== STORY BIBLE (extract facts from this) ===\n" +
+            $"{node.Title} — {sectionType} section\n";
+
+        var result = await ExtractClaimsFromProseAsync(
+            bibleText, contextHeader, sourceChapterId: "", sourceChapterNumber: null,
+            sourceChapterTitle: sectionType, bookSlug: node.Slug, maxTokens, ct,
+            sourceType: "bible", sourcePath: sourcePath);
+        result.ChapterTitle = $"bible:{node.Slug}:{sectionType}";
+        return result;
+    }
+
     /// <summary>Shared body for "extract atomic claims from one block of prose, upsert each" —
-    /// used by both the legacy IChapterRepository path (<see cref="ExtractFromChapterAsync"/>)
-    /// and the SS-A43 Nodes path (<see cref="ExtractFromBookNodeAsync"/>) so the extraction
-    /// prompt, JSON parsing, snippet-grounding, and upsert logic exist exactly once.</summary>
+    /// used by the legacy IChapterRepository path (<see cref="ExtractFromChapterAsync"/>), the
+    /// SS-A43 Nodes path (<see cref="ExtractFromBookNodeAsync"/>), and the bible path
+    /// (<see cref="ExtractFromBibleAsync"/>) so the extraction prompt, JSON parsing,
+    /// snippet-grounding, and upsert logic exist exactly once.</summary>
     private async Task<ContinuityExtractionResult> ExtractClaimsFromProseAsync(
         string prose, string contextHeader, string sourceChapterId, int? sourceChapterNumber,
-        string? sourceChapterTitle, string? bookSlug, int maxTokens, CancellationToken ct)
+        string? sourceChapterTitle, string? bookSlug, int maxTokens, CancellationToken ct,
+        string sourceType = "prose", string? sourcePath = null)
     {
         var context = contextHeader + "\n" + prose;
         var raw = await llm.GenerateAsync(ExtractionQuestion, context, temperature: 0.1, maxTokens: maxTokens, ct: ct);
 
         var allCandidates = new List<RawCandidate>();
         var arr = ExtractJsonArrayFromText(raw);
+        if (arr == null || arr.Value.GetArrayLength() == 0)
+            log.LogInformation("[continuity] extraction produced 0 candidates. Raw response (first 1000 chars): {Raw}",
+                raw.Length > 1000 ? raw[..1000] : raw);
         if (arr != null)
         {
             foreach (var el in arr.Value.EnumerateArray())
@@ -272,10 +370,11 @@ public class ContinuityExtractionService
                 EntityKind          = resolved.Value.Kind,
                 Predicate           = cand.Predicate,
                 Object              = cand.Object,
-                SourceType          = "prose",
+                SourceType          = sourceType,
                 SourceChapterId     = sourceChapterId,
                 SourceChapterNumber = sourceChapterNumber,
                 SourceChapterTitle  = sourceChapterTitle,
+                SourcePath          = sourcePath,
                 Snippet             = cand.Snippet,
                 Voice               = cand.Voice,
                 Confidence          = cand.Confidence,
@@ -459,6 +558,21 @@ public class ContinuityExtractionService
 
     private static string Normalize(string s)
         => string.IsNullOrEmpty(s) ? "" : Regex.Replace(s.ToLowerInvariant(), @"\s+", " ").Trim();
+
+    /// <summary>Strips the hand-authored-markdown syntax bible content carries (heading `#`/`##`
+    /// markers, `**bold**`/`*italic*`, and `` `backticks` ``) down to plain readable text — so the
+    /// LLM's quoted snippets land as exact substrings of what extraction actually sees, the same
+    /// grounding guarantee beat prose already gets from <see cref="BeatMarkup.StripEntityTags"/>.
+    /// Only strips the markers themselves, keeps the enclosed words (`**Heritage:**` → `Heritage:`).</summary>
+    internal static string StripMarkdownFormatting(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return s;
+        var noHeadings = Regex.Replace(s, @"(?m)^#{1,6}\s*", "");
+        var noBold     = Regex.Replace(noHeadings, @"\*\*(.+?)\*\*", "$1");
+        var noItalic   = Regex.Replace(noBold, @"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", "$1");
+        var noTicks    = noItalic.Replace("`", "");
+        return noTicks;
+    }
 
     private (string Id, string Name, string Kind)? ResolveEntity(string rawName)
     {

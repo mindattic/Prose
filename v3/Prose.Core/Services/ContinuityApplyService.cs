@@ -207,6 +207,110 @@ public class ContinuityApplyService
         return union == 0 ? 0 : (double)intersection / union;
     }
 
+    /// <summary>
+    /// Phase D of the Bible/Book/Entities validation triangle: verify that every claim already
+    /// applied back to its entity's canon record (<see cref="ApplyAsync"/>, which sets
+    /// <c>AppliedAt</c>/<c>AppliedToField</c>) still matches what that field says NOW. A claim
+    /// that was applied and later hand-edited away (or whose field was deleted) is exactly the
+    /// "is the entity repo still correct" leg the author asked for — deterministic, no LLM call,
+    /// same spirit as <c>ContinuityService.GetContradictionGroups</c>'s plain-SQL/in-memory check.
+    /// Bounded by how much of the corpus has actually been applied — same "honest gap" framing as
+    /// <see cref="ContinuityService.HasAnyClaimsForBook"/> (an empty result here can mean "clean"
+    /// or "nothing has ever been applied," and callers should distinguish the two the same way).
+    /// </summary>
+    public async Task<List<AppliedClaimDriftResult>> CheckAppliedClaimsAsync(
+        string? bookSlug = null, CancellationToken ct = default)
+    {
+        var results = new List<AppliedClaimDriftResult>();
+        var applied = store.GetAppliedClaims(bookSlug);
+        if (applied.Count == 0) return results;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        foreach (var claim in applied)
+        {
+            var record = await LocateRecordAsync(db, claim, ct);
+            if (record == null)
+            {
+                results.Add(new AppliedClaimDriftResult
+                {
+                    Claim = claim, Drifted = true,
+                    Reason = "entity_record_missing",
+                    Detail = $"No Records.Json blob found for {claim.EntityName} ({claim.EntityKind}) id={claim.EntityId} — the record may have been merged/deleted since this claim was applied.",
+                });
+                continue;
+            }
+
+            JsonNode? root;
+            try { root = JsonNode.Parse(record.Json); }
+            catch (Exception ex)
+            {
+                results.Add(new AppliedClaimDriftResult
+                {
+                    Claim = claim, Drifted = true, Reason = "record_json_unparseable", Detail = ex.Message,
+                });
+                continue;
+            }
+            if (root is not JsonObject obj)
+            {
+                results.Add(new AppliedClaimDriftResult { Claim = claim, Drifted = true, Reason = "record_not_an_object" });
+                continue;
+            }
+
+            var field = claim.AppliedToField ?? "";
+            if (field == "continuity_facts")
+            {
+                var arr = obj["continuity_facts"] as JsonArray;
+                var stillPresent = arr?.OfType<JsonObject>()
+                    .Any(f => string.Equals(f["claim_uid"]?.ToString(), claim.ClaimUid, StringComparison.Ordinal)) ?? false;
+                if (!stillPresent)
+                    results.Add(new AppliedClaimDriftResult
+                    {
+                        Claim = claim, Drifted = true, Reason = "continuity_facts_entry_removed",
+                        Detail = $"No continuity_facts[] entry with claim_uid={claim.ClaimUid} remains on the entity record.",
+                    });
+                continue;
+            }
+
+            if (!obj.ContainsKey(field))
+            {
+                results.Add(new AppliedClaimDriftResult
+                {
+                    Claim = claim, Drifted = true, Reason = "field_removed",
+                    Detail = $"Field '{field}' no longer exists on the entity record (was {claim.Object}).",
+                });
+                continue;
+            }
+
+            switch (obj[field])
+            {
+                case JsonValue v:
+                    var current = v.ToString();
+                    if (!ContinuityService.ObjectsMatch(claim.Predicate, current, claim.Object))
+                        results.Add(new AppliedClaimDriftResult
+                        {
+                            Claim = claim, Drifted = true, Reason = "value_changed",
+                            Detail = $"Field '{field}' is now \"{current}\", claim says \"{claim.Object}\".",
+                        });
+                    break;
+                case JsonArray arr:
+                    var contains = arr.OfType<JsonValue>()
+                        .Any(v2 => string.Equals(v2.ToString(), claim.Object, StringComparison.OrdinalIgnoreCase));
+                    if (!contains)
+                        results.Add(new AppliedClaimDriftResult
+                        {
+                            Claim = claim, Drifted = true, Reason = "value_removed_from_array",
+                            Detail = $"Field '{field}' no longer contains \"{claim.Object}\".",
+                        });
+                    break;
+                default:
+                    // Object-typed field — ApplyToField never writes here directly (falls through
+                    // to continuity_facts), so nothing to compare.
+                    break;
+            }
+        }
+        return results;
+    }
+
     // ── helpers ─────────────────────────────────────────────────────────────
 
     /// <summary>
@@ -365,4 +469,17 @@ public class SimilarClaimWarning
     public string Predicate      { get; set; } = "";
     public string Object         { get; set; } = "";
     public double Similarity     { get; set; }
+}
+
+/// <summary>One applied claim checked against the entity record it was written into —
+/// see <see cref="ContinuityApplyService.CheckAppliedClaimsAsync"/>. <see cref="Drifted"/>=false
+/// means the field still matches what the claim asserted.</summary>
+public class AppliedClaimDriftResult
+{
+    public ContinuityClaim Claim   { get; set; } = new();
+    public bool            Drifted { get; set; }
+    /// <summary>entity_record_missing | record_json_unparseable | record_not_an_object |
+    /// continuity_facts_entry_removed | field_removed | value_changed | value_removed_from_array</summary>
+    public string          Reason  { get; set; } = "";
+    public string?         Detail  { get; set; }
 }

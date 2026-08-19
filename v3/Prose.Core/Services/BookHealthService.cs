@@ -77,6 +77,7 @@ public class BookHealthService(
     BeatRepairService beatRepair,
     NodeWorkbenchService workbench,
     ContinuityService continuity,
+    ContinuityApplyService continuityApply,
     ILogger<BookHealthService> log)
 {
     // ── SII formula constants ───────────────────────────────────────────────────────
@@ -140,6 +141,7 @@ public class BookHealthService(
             await RunCheckAsync(checks, "behavior-check", () => BehaviorCheckAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "theme-coherence", () => ThemeCoherenceAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "fact-ledger", () => FactLedgerAsync(slug, ct));
+            await RunCheckAsync(checks, "applied-claim-drift", () => AppliedClaimDriftAsync(slug, ct));
         }
 
         // ── FULL tier — heaviest multi-call audits, cost scales with book length ────
@@ -1025,6 +1027,44 @@ public class BookHealthService(
                 suggestedFix: "Resolve via the /continuity UI (or ContinuityService.Resolve/MakeCanonical) — pick the load-bearing value, or supply a custom one if neither is right.");
         }
         return Task.CompletedTask;
+    }
+
+    /// <summary>Phase D of the Bible/Book/Entities validation triangle: for every claim already
+    /// applied to its entity's canon record (<c>ContinuityApplyService.ApplyAsync</c>, which sets
+    /// AppliedAt/AppliedToField), verify the field still says what the claim asserted. Answers
+    /// "are all entities mentioned actually correct in the repo" for the applied subset —
+    /// deterministic (JSON field comparison), no LLM call. Same honest-gap framing as
+    /// FactLedgerAsync/HasAnyClaimsForBook: zero applied claims for a book means "nothing has ever
+    /// been applied here," not "verified clean."</summary>
+    private async Task AppliedClaimDriftAsync(string slug, CancellationToken ct)
+    {
+        ct.ThrowIfCancellationRequested();
+
+        var applied = continuity.GetAppliedClaims(slug);
+        var drifts = applied.Count > 0
+            ? await continuityApply.CheckAppliedClaimsAsync(slug, ct)
+            : [];
+
+        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "APPLIED-CLAIM-DRIFT ");
+
+        if (applied.Count == 0)
+        {
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
+                "APPLIED-CLAIM-DRIFT [not-applied]: no continuity claims have ever been applied back to an " +
+                "entity record for this book — this check has never evaluated any entity here, not because " +
+                "the repo is verified correct.",
+                snippet: null,
+                suggestedFix: "Run prose --continuity apply --claim <uid> (or the sweep's auto-apply step, --allow-votes) on CANONICAL claims first.");
+            return;
+        }
+
+        foreach (var d in drifts.Where(d => d.Drifted))
+        {
+            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.EntityDrift, FindingSeverity.Medium,
+                $"APPLIED-CLAIM-DRIFT [{d.Claim.EntityName}.{d.Claim.Predicate}] ({d.Reason}): {d.Detail ?? "the entity record no longer matches the applied claim"}",
+                snippet: d.Claim.Snippet,
+                suggestedFix: "Confirm whether the entity record's current value is the new truth (re-extract/re-apply a fresh claim) or whether the edit was a mistake (restore the applied value).");
+        }
     }
 
     private const int MinPovBeatsForVoiceFingerprint = 6;
