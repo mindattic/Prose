@@ -607,6 +607,15 @@ if (args.Contains("--set-narrative-mode"))
     return;
 }
 
+// prose --seed-gospel-cast --universe gospel [--dry-run]
+// One-time Stage-1 entity seed for the Gospel series (zero entities existed) — see SeedGospelCastCli.
+if (args.Contains("--seed-gospel-cast"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SeedGospelCastCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: regenerate a universe's Master Glossary (Glossary.htm/.json/.txt under
 // docs/universes/{SLUG}/) from the GlossaryTerms table.
 //   prose --generate-glossary --universe <slug>   (omit --universe for all)
