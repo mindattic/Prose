@@ -85,6 +85,38 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_WeaponAlias_IsIncludedAsCandidate()
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var id = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = id, UniverseId = universeId, EntityType = "weapon", Name = "Fenris Ballistics Howl FB-7", Slug = "fb7", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Weapons.Add(new Weapon { Id = id, Name = "Fenris Ballistics Howl FB-7" });
+        db.WeaponAliases.Add(new WeaponAlias { WeaponId = id, Position = 0, Value = "Wolfpack" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => c.Text == "Wolfpack" && c.EntityId == id && c.EntityType == "weapon"), Is.True,
+            "a registered WeaponAlias must appear as a taggable candidate — the exact live case (Read the Room) that surfaced this second alias-table gap");
+    }
+
+    [Test]
+    public async Task BuildCandidateIndexAsync_PharmAlias_IsIncludedAsCandidate()
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var id = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = id, UniverseId = universeId, EntityType = "pharmaceutical", Name = "Lethedol", Slug = "lethedol", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Pharmaceuticals.Add(new Pharmaceutical { Id = id, Name = "Lethedol" });
+        db.PharmaceuticalAliases.Add(new PharmAlias { PharmaceuticalId = id, Position = 0, Value = "Tears" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => c.Text == "Tears" && c.EntityId == id && c.EntityType == "pharmaceutical"), Is.True,
+            "a registered PharmAlias must appear as a taggable candidate — the exact live case (Vultures at the Door) that surfaced this second alias-table gap");
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_ShortAlias_IsExcludedAcrossAllTypes()
     {
         // The >=3-char guard must apply uniformly to the new alias sources too, not just Character.

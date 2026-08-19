@@ -116,6 +116,28 @@ public static class EntityMentionScanner
             if (namesById.TryGetValue(a.Id, out var canonical))
                 candidates.Add(new MentionCandidate(a.Value, a.Id, canonical, "corponation", RequiresStrictCase(a.Value)));
 
+        // 2026-08-19, same day as the Place/Faction/Corponation fix above: a second sweep found
+        // the identical gap on Weapon ("Wolfpack" never resolving to the seeded "Fenris Ballistics
+        // Howl FB-7 'Wolfpack'") and Pharmaceutical ("Tears" never resolving to "Lethedol (street:
+        // \"Tears\")") — confirming this was never a Place/Faction/Corponation-specific bug, it's
+        // structural to every non-Character alias table. Wiring these two in now; the other ~15
+        // remaining alias tables (technology, cyberware, apparel, ...) are still an open follow-up.
+        var weaponAliases = await db.Set<WeaponAlias>().AsNoTracking()
+            .Where(a => a.Value.Length >= 3)
+            .Select(a => new { Id = a.WeaponId, a.Value })
+            .ToListAsync(ct);
+        foreach (var a in weaponAliases)
+            if (namesById.TryGetValue(a.Id, out var canonical))
+                candidates.Add(new MentionCandidate(a.Value, a.Id, canonical, "weapon", RequiresStrictCase(a.Value)));
+
+        var pharmAliases = await db.Set<PharmAlias>().AsNoTracking()
+            .Where(a => a.Value.Length >= 3)
+            .Select(a => new { Id = a.PharmaceuticalId, a.Value })
+            .ToListAsync(ct);
+        foreach (var a in pharmAliases)
+            if (namesById.TryGetValue(a.Id, out var canonical))
+                candidates.Add(new MentionCandidate(a.Value, a.Id, canonical, "pharmaceutical", RequiresStrictCase(a.Value)));
+
         // Derived given-name/surname candidates for multi-word character names ("Declan Doyle" also
         // tags bare "Declan"/"Doyle"). A token is only added when it is NOT shared with any other
         // entity's full name or derived token in this same candidate pool — a book's cast can

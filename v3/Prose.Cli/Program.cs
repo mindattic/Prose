@@ -625,6 +625,15 @@ if (args.Contains("--seed-glmz-gap-fill"))
     return;
 }
 
+// prose --seed-gap-fill-round2 --part glmz|nonfiction|scry --universe <matching universe> [--dry-run]
+// Round 2 of the entity-tag-coverage sweep, spanning 3 universes — see SeedGapFillRound2Cli.
+if (args.Contains("--seed-gap-fill-round2"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SeedGapFillRound2Cli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: regenerate a universe's Master Glossary (Glossary.htm/.json/.txt under
 // docs/universes/{SLUG}/) from the GlossaryTerms table.
 //   prose --generate-glossary --universe <slug>   (omit --universe for all)
