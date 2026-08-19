@@ -20,16 +20,16 @@ namespace Prose.Core.Services;
 ///
 /// Pure orchestration over already-shipped services: <see cref="ContinuityService"/> (ledger),
 /// <see cref="ContinuityApplyService"/> (entity-record apply + drift check),
-/// <see cref="BeatRepairService"/> (prose repair), <see cref="CanonDocumentService"/> (bible
-/// section edit), <see cref="BookArchiveService"/> (pre-edit snapshot), <see cref="NodeWorkbenchService"/>
-/// (beat text write). Every decision is logged as a permanent <see cref="ReconciliationDecision"/>
-/// row — distinct from <c>Findings</c>, which gets purge-and-refiled by every sweep.
+/// <see cref="CanonDocumentService"/> (bible section edit), <see cref="BookArchiveService"/>
+/// (pre-edit snapshot), <see cref="NodeWorkbenchService"/> (beat text write — also used for the
+/// surgical single-paragraph prose patch, see <see cref="PatchBeatAsync"/>). Every decision is
+/// logged as a permanent <see cref="ReconciliationDecision"/> row — distinct from <c>Findings</c>,
+/// which gets purge-and-refiled by every sweep.
 /// </summary>
 public class TrinityReconciliationService(
     ContinuityService continuityStore,
     ContinuityApplyService continuityApply,
     ContinuityExtractionService extraction,
-    BeatRepairService beatRepair,
     CanonDocumentService canonDocs,
     BookArchiveService bookArchive,
     NodeWorkbenchService workbench,
@@ -107,14 +107,19 @@ public class TrinityReconciliationService(
 
     // ── Phase 2: survey checkpoint (read-only, zero DecideAsync calls) ───────
 
+    /// <param name="WouldHitBeatRepair">Despite the name, counts groups with a losing prose claim
+    /// that would attempt the surgical <c>beat_patch</c> mechanism (a single-paragraph edit) — NOT
+    /// the full-beat-regeneration <see cref="BeatRepairService"/> path the name originally
+    /// referred to before that path was replaced as the prose-losing default (2026-08-19).</param>
     public record SurveyEntry(
         string BookSlug, int ContradictionGroups, int AppliedDriftFindings,
         int ProseVsBible, int ProseVsEntity, int BibleVsEntity, int OtherPairing,
         int WouldHitBeatRepair);
 
     /// <summary>Read-only survey: contradiction groups + applied-claim drift for one book, with a
-    /// source-pair breakdown so the caller can see how many groups would hit the expensive
-    /// prose-repair path vs. the cheap bible/entity paths BEFORE any DecideAsync call is made.</summary>
+    /// source-pair breakdown so the caller can see how many groups have a losing prose claim
+    /// (would attempt the surgical <c>beat_patch</c> mechanism) vs. the bible/entity paths BEFORE
+    /// any DecideAsync call is made.</summary>
     public async Task<SurveyEntry> SurveyBookAsync(string bookSlug, CancellationToken ct = default)
     {
         var groups = continuityStore.GetContradictionGroups(bookSlug);
@@ -187,7 +192,7 @@ public class TrinityReconciliationService(
 
     private static string SourceTypeToMechanism(string sourceType) => sourceType switch
     {
-        "prose"         => "beat_repair",
+        "prose"         => "beat_patch",
         "bible"         => "bible_section",
         "entity_record" => "entity_record",
         _               => "unknown",
@@ -249,7 +254,7 @@ public class TrinityReconciliationService(
         var editTargets = new Dictionary<string, List<object>>();
         var editTimestamp = DateTime.UtcNow;
 
-        // prose loses → repair the specific beat(s) that carry the wrong fact.
+        // prose loses → surgically patch the one paragraph that carries the wrong fact.
         foreach (var losing in losingClaims.Where(c => c.SourceType == "prose"))
         {
             var located = await LocateBeatForClaimAsync(losing, ct);
@@ -260,18 +265,29 @@ public class TrinityReconciliationService(
                 continue;
             }
             var (beatId, chapterNodeId) = located.Value;
-            var issue = new LensIssue(null, "continuity-drift",
-                $"Prose says \"{losing.Object}\" for {group.EntityName}.{group.Predicate}, but the reconciled canon value is \"{winner.Object}\".",
-                $"Rewrite so {group.EntityName}'s {group.Predicate} reads as \"{winner.Object}\" instead of \"{losing.Object}\".",
-                "high");
-            var repaired = await beatRepair.RepairAsync(beatId, bookNodeId, [issue], ct: ct);
-            if (repaired == null)
+
+            // Fresh, uncached fetch on every iteration — required, not just style: if two losing
+            // prose claims in this pass land on the same beat, the second must see the first
+            // patch's result. A hoisted/cached load here would search a stale copy.
+            await using var beatDb = await dbFactory.CreateDbContextAsync(ct);
+            var currentBeat = await beatDb.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
+            if (string.IsNullOrEmpty(currentBeat?.Text))
             {
-                log.LogWarning("[trinity] BeatRepairService refused repair for beat {BeatId} (claim {Uid}) — beat left unchanged.", beatId, losing.ClaimUid);
+                log.LogWarning("[trinity] Beat {BeatId} missing/empty when attempting surgical patch (claim {Uid}) — leaving prose untouched.", beatId, losing.ClaimUid);
                 continue;
             }
-            await workbench.UpdateBeatTextAsync(beatId, repaired, expectedUpdatedAt: null, ct);
-            AddEditTarget(editTargets, "beat_repair", new { beatId, chapterNodeId, claimUid = losing.ClaimUid });
+
+            var patched = await PatchBeatAsync(currentBeat.Text, losing, winner, group, ct);
+            if (patched == null)
+            {
+                log.LogWarning(
+                    "[trinity] Surgical beat patch refused for beat {BeatId} (claim {Uid}) — snippet not found verbatim or guard rejected the rewrite; " +
+                    "beat left unchanged (no automatic fall back to full-beat regeneration).", beatId, losing.ClaimUid);
+                continue;
+            }
+
+            await workbench.UpdateBeatTextAsync(beatId, patched, expectedUpdatedAt: null, ct);
+            AddEditTarget(editTargets, "beat_patch", new { beatId, chapterNodeId, claimUid = losing.ClaimUid });
         }
 
         // bible loses → snapshot the section, patch it, write it back.
@@ -461,7 +477,10 @@ public class TrinityReconciliationService(
             switch (mechanism)
             {
                 case "beat_repair":
-                    await RevertBeatRepairAsync(db, row, asOf, ct);
+                    await RevertBeatTextEditAsync(db, row, "beat_repair", asOf, ct);
+                    break;
+                case "beat_patch":
+                    await RevertBeatTextEditAsync(db, row, "beat_patch", asOf, ct);
                     break;
                 case "bible_section":
                     await RevertBibleSectionAsync(db, row, ct);
@@ -501,9 +520,13 @@ public class TrinityReconciliationService(
         return true;
     }
 
-    private async Task RevertBeatRepairAsync(ProseDbContext db, ReconciliationDecision row, string asOf, CancellationToken ct)
+    /// <summary>Restores <c>Beats.Text</c> from its <c>FOR SYSTEM_TIME AS OF</c> temporal snapshot,
+    /// keyed only on <c>beatId</c> — identical mechanics regardless of which mechanism
+    /// (<c>beat_repair</c>'s full regen or <c>beat_patch</c>'s surgical single-paragraph edit)
+    /// produced the edit being undone.</summary>
+    private async Task RevertBeatTextEditAsync(ProseDbContext db, ReconciliationDecision row, string mechanism, string asOf, CancellationToken ct)
     {
-        var targets = ExtractEditTargets(row.EditTargetJson, "beat_repair");
+        var targets = ExtractEditTargets(row.EditTargetJson, mechanism);
         foreach (var t in targets)
         {
             if (!t.TryGetValue("beatId", out var beatIdRaw) || !Guid.TryParse(beatIdRaw?.ToString(), out var beatId)) continue;
@@ -636,6 +659,63 @@ public class TrinityReconciliationService(
     /// call can only ever change the one line handed to it, and a plain <see cref="string.Replace"/>
     /// on the ORIGINAL line text (not on positional line index) confirms that exact line is what's
     /// swapped, immune to any reflow the LLM's response introduces.</summary>
+    /// <summary>Rejects a <see cref="PatchBeatAsync"/> rewrite whose length moved too far from the
+    /// original paragraph's. Upper bound is 2x-or-+200 chars (not the 3x a naive port of
+    /// <see cref="BeatRepairService.IsUnsafeShrink"/> might suggest) — the incident that motivated
+    /// this whole mechanism was a 3.68x whole-beat blowup, so 2x leaves real margin even at
+    /// paragraph scale, where corpus paragraphs already run up to ~2,700 chars and thus have more
+    /// surface to drift on than a bible bullet line. Lower bound (0.4x) only applies above 20
+    /// chars — short dialogue lines ("Don't.") can legitimately swing far past that ratio on any
+    /// real single-fact edit without being unsafe.</summary>
+    internal static bool IsUnsafeLinePatch(int oldLength, int newLength) =>
+        newLength > Math.Max(oldLength * 2, oldLength + 200)
+        || (oldLength >= 20 && newLength < oldLength * 0.4);
+
+    /// <summary>Surgical single-PARAGRAPH patch for the prose-losing case — the direct mirror of
+    /// <see cref="PatchBibleSectionAsync"/> below, applied to beat text instead of a bible section.
+    /// Confirmed against the live corpus that beats store exactly one paragraph per non-empty
+    /// <c>\n</c>-delimited line, so line-granularity is paragraph-granularity here, not an
+    /// arbitrary split. Operates on <see cref="BeatMarkup.StripEntityTags"/>-stripped plain text
+    /// and returns plain text — <see cref="NodeWorkbenchService.UpdateBeatTextAsync"/> strips and
+    /// re-tags from its own candidate index on every write regardless of what it's handed, so this
+    /// method must not (and does not need to) do any tagging of its own.
+    ///
+    /// Replaces the earlier default of routing the whole beat through
+    /// <see cref="BeatRepairService.RepairAsync"/> (a full <see cref="ProseWriterRouter"/>
+    /// regeneration) for every prose-losing claim: proven unsafe live 2026-08-19 on the very first
+    /// hand-picked-divergence proof run — it silently replaced a 2,848-char beat with an unrelated
+    /// 10,482-char invented scene, dropping the fact it was meant to fix. Scoping the LLM call to
+    /// exactly one already-located paragraph removes that failure mode the same way
+    /// <see cref="PatchBibleSectionAsync"/> already removed it for the bible-losing case.</summary>
+    private async Task<string?> PatchBeatAsync(string beatText, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
+    {
+        var snippet = losingClaim.Snippet ?? "";
+        if (string.IsNullOrEmpty(snippet)) return null;
+
+        var plainText = BeatMarkup.StripEntityTags(beatText);
+        var lines = plainText.Split('\n');
+        var lineIndex = Array.FindIndex(lines, l =>
+            l.Contains(snippet, StringComparison.Ordinal) || l.Contains(snippet, StringComparison.OrdinalIgnoreCase));
+        if (lineIndex < 0) return null;
+
+        var oldLine = lines[lineIndex];
+        var question =
+            $"Rewrite ONLY this one paragraph so {group.EntityName}'s \"{group.Predicate}\" reads as \"{winner.Object}\" " +
+            $"instead of \"{losingClaim.Object}\", changing nothing else about the paragraph's structure, punctuation, or voice. " +
+            "Output ONLY the corrected paragraph — no commentary, no surrounding quotes.";
+        var context = $"PARAGRAPH TO CORRECT:\n{oldLine}";
+        var newLine = await llm.GenerateAsync(question, context, temperature: 0.1, maxTokens: 2048, ct: ct);
+        if (string.IsNullOrWhiteSpace(newLine)) return null;
+        newLine = newLine.Trim().Trim('"');
+
+        if (newLine.Contains('\n') || newLine.Contains('\r')) return null; // would corrupt the line-array rejoin
+        if (string.Equals(newLine, oldLine.Trim(), StringComparison.Ordinal)) return null; // no-op ≠ success
+        if (IsUnsafeLinePatch(oldLine.Length, newLine.Length)) return null;
+
+        lines[lineIndex] = newLine;
+        return string.Join('\n', lines);
+    }
+
     private async Task<string?> PatchBibleSectionAsync(string sectionContent, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
     {
         var snippet = losingClaim.Snippet ?? "";

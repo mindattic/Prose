@@ -17,9 +17,15 @@ namespace Prose.UnitTests;
 /// external MindAttic.Legion type with no test double in this suite, matching the established
 /// pattern (ContinuityApplyServiceCheckAppliedClaimsTests passes voting: null! and only exercises
 /// methods that never call it). The bible_section revert path is covered (no SQL Server temporal
-/// query involved); beat_repair/entity_record revert (FOR SYSTEM_TIME AS OF) require a real SQL
-/// Server temporal table and are exercised live in the Phase 3/4 hand-picked-divergence proof
-/// instead of here, since SQLite (this suite's in-memory provider) has no temporal-table support.
+/// query involved); beat_repair/beat_patch/entity_record revert (FOR SYSTEM_TIME AS OF) require a
+/// real SQL Server temporal table and are exercised live in the Phase 3/4 hand-picked-divergence
+/// proof instead of here, since SQLite (this suite's in-memory provider) has no temporal-table
+/// support. <see cref="TrinityReconciliationService.IsUnsafeLinePatch"/> (the surgical
+/// single-paragraph beat-patch guard) is a pure static predicate and is covered directly in
+/// <c>TrinityPatchGuardTests</c>, mirroring how <see cref="BeatRepairService.IsUnsafeShrink"/> is
+/// covered in <c>BeatRepairServiceTests</c>; <c>PatchBeatAsync</c> itself is not, for the same
+/// reason <c>PatchBibleSectionAsync</c> isn't — both call the external <c>ILlmService</c> with no
+/// test double in this suite.
 /// </summary>
 [TestFixture]
 public class TrinityReconciliationServiceTests
@@ -46,7 +52,6 @@ public class TrinityReconciliationServiceTests
             continuityStore: continuityStore,
             continuityApply: continuityApply,
             extraction: null!,
-            beatRepair: null!,
             canonDocs: canonDocs,
             bookArchive: null!,
             workbench: null!,

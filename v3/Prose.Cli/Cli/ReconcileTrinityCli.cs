@@ -92,14 +92,16 @@ public static class ReconcileTrinityCli
             if (s.ContradictionGroups == 0 && s.AppliedDriftFindings == 0) continue;
             Console.WriteLine($"[trinity]   {b.Slug,-16} {s.ContradictionGroups,3} contradiction groups, {s.AppliedDriftFindings,3} applied-drift " +
                 $"(prose-vs-bible {s.ProseVsBible}, prose-vs-entity {s.ProseVsEntity}, bible-vs-entity {s.BibleVsEntity}, other {s.OtherPairing}; " +
-                $"{s.WouldHitBeatRepair} would hit beat-repair)");
+                $"{s.WouldHitBeatRepair} would attempt a surgical beat_patch)");
             totalGroups += s.ContradictionGroups; totalDrift += s.AppliedDriftFindings; totalBeatRepair += s.WouldHitBeatRepair;
             totalProseBible += s.ProseVsBible; totalProseEntity += s.ProseVsEntity; totalBibleEntity += s.BibleVsEntity; totalOther += s.OtherPairing;
         }
         Console.WriteLine();
         Console.WriteLine($"[trinity] TOTAL: {totalGroups} contradiction groups, {totalDrift} applied-claim drift findings across {books.Count} books.");
         Console.WriteLine($"[trinity]   source pairs: prose-vs-bible={totalProseBible} prose-vs-entity={totalProseEntity} bible-vs-entity={totalBibleEntity} other={totalOther}");
-        Console.WriteLine($"[trinity]   {totalBeatRepair} groups would hit the expensive prose-repair path (BeatRepairService → full 27-service ProseWriterRouter call) if reconciled.");
+        Console.WriteLine($"[trinity]   {totalBeatRepair} groups would attempt the surgical single-paragraph beat_patch mechanism if reconciled " +
+            "(refuses and leaves prose untouched if the snippet can't be located verbatim or the rewrite fails its size guard — " +
+            "never an automatic fall back to full-beat regeneration).");
         return 0;
     }
 
