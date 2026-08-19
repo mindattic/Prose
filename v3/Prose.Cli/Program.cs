@@ -634,6 +634,25 @@ if (args.Contains("--seed-gap-fill-round2"))
     return;
 }
 
+// prose --seed-gap-fill-round3 --part nonfiction|gospel|glmz --universe <matching universe> [--dry-run]
+// Round 3 (closing) of the entity-tag-coverage sweep — see SeedGapFillRound3Cli.
+if (args.Contains("--seed-gap-fill-round3"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SeedGapFillRound3Cli.RunAsync(args, sp);
+    return;
+}
+
+// prose --fix-david-mistag --universe gospel [--dry-run]
+// One-time correction for a Round 3 seeding bug (bare "David" colliding with cited scholars named
+// David in Matthew's footnotes) — see FixDavidMistagCli.
+if (args.Contains("--fix-david-mistag"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await FixDavidMistagCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: regenerate a universe's Master Glossary (Glossary.htm/.json/.txt under
 // docs/universes/{SLUG}/) from the GlossaryTerms table.
 //   prose --generate-glossary --universe <slug>   (omit --universe for all)
