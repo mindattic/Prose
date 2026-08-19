@@ -142,30 +142,44 @@ public class TrinityReconciliationService(
 
     /// <summary>Archives the book (pre-edit snapshot) then reconciles every contradiction group and
     /// applied-claim drift finding for it. In dry-run mode, no archive, no DecideAsync, no edits —
-    /// every decision row is a plan preview only.</summary>
-    public async Task<BookReconciliationResult> ReconcileBookAsync(Guid nodeId, bool dryRun, CancellationToken ct = default)
+    /// every decision row is a plan preview only.
+    /// <paramref name="onlyEntityId"/>/<paramref name="onlyPredicate"/>, when both set, restrict this
+    /// call to the ONE matching contradiction group and skip the applied-drift loop entirely — the
+    /// narrow-pilot safety valve used to prove the mechanism on a single hand-picked divergence
+    /// without touching every other divergence in the same book.</summary>
+    public async Task<BookReconciliationResult> ReconcileBookAsync(
+        Guid nodeId, bool dryRun, CancellationToken ct = default, string? onlyEntityId = null, string? onlyPredicate = null)
     {
         await using var db0 = await dbFactory.CreateDbContextAsync(ct);
         var node = await db0.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var bookSlug = node.Slug;
 
+        var singleGroupOnly = !string.IsNullOrEmpty(onlyEntityId) && !string.IsNullOrEmpty(onlyPredicate);
+
         if (!dryRun)
             await bookArchive.ArchiveAsync(nodeId, "pre-trinity-reconciliation", ct);
 
         var decisions = new List<ReconciliationDecision>();
 
-        foreach (var group in continuityStore.GetContradictionGroups(bookSlug))
+        var groups = continuityStore.GetContradictionGroups(bookSlug);
+        if (singleGroupOnly)
+            groups = groups.Where(g => g.EntityId == onlyEntityId && g.Predicate == onlyPredicate).ToList();
+
+        foreach (var group in groups)
         {
             var row = await ReconcileContradictionGroupAsync(nodeId, bookSlug, group, dryRun, ct);
             if (row != null) decisions.Add(row);
         }
 
-        var drifted = (await continuityApply.CheckAppliedClaimsAsync(bookSlug, ct)).Where(d => d.Drifted);
-        foreach (var d in drifted)
+        if (!singleGroupOnly)
         {
-            var row = await ReconcileAppliedDriftAsync(nodeId, bookSlug, d, dryRun, ct);
-            if (row != null) decisions.Add(row);
+            var drifted = (await continuityApply.CheckAppliedClaimsAsync(bookSlug, ct)).Where(d => d.Drifted);
+            foreach (var d in drifted)
+            {
+                var row = await ReconcileAppliedDriftAsync(nodeId, bookSlug, d, dryRun, ct);
+                if (row != null) decisions.Add(row);
+            }
         }
 
         return new BookReconciliationResult(bookSlug, nodeId, decisions);
@@ -276,12 +290,21 @@ public class TrinityReconciliationService(
                 continue;
             }
 
+            var patched = await PatchBibleSectionAsync(section.Content, losing, winner, group, ct);
+            if (patched == null)
+            {
+                log.LogWarning(
+                    "[trinity] Losing bible claim {Uid}'s snippet is no longer present verbatim in section '{Section}' " +
+                    "(node {NodeId}) — refusing to guess which line to patch; bible left untouched.",
+                    losing.ClaimUid, sectionType, bookNodeId);
+                continue;
+            }
+
             var snapshot = new { nodeId = bookNodeId, sectionType, content = section.Content };
             preEditSnapshotJson = preEditSnapshotJson == null
                 ? JsonSerializer.Serialize(new[] { snapshot })
                 : JsonSerializer.Serialize(JsonSerializer.Deserialize<List<object>>(preEditSnapshotJson)!.Append(snapshot));
 
-            var patched = await PatchBibleSectionAsync(section.Content, losing, winner, group, ct);
             await canonDocs.SetNodeBibleSectionAsync(bookNodeId, sectionType, patched, ct);
             AddEditTarget(editTargets, "bible_section", new { nodeId = bookNodeId, sectionType });
         }
@@ -556,9 +579,17 @@ public class TrinityReconciliationService(
 
     private static string ParseBibleSectionType(string? sourcePath)
     {
-        const string prefix = "bible-section:";
-        if (!string.IsNullOrEmpty(sourcePath) && sourcePath.StartsWith(prefix, StringComparison.Ordinal))
-            return sourcePath[prefix.Length..];
+        const string sectionPrefix = "bible-section:";
+        if (!string.IsNullOrEmpty(sourcePath) && sourcePath.StartsWith(sectionPrefix, StringComparison.Ordinal))
+            return sourcePath[sectionPrefix.Length..];
+        // "bible-full:fallback" (ExtractFromBibleAsync's fallback when no typed NodeBibleSection row
+        // exists yet) extracted from the raw Nodes.NodeBible blob — CanonDocumentService.
+        // SetNodeBibleSectionAsync's "Full" sectionType is the one that writes back to that same
+        // blob, so that's the section to patch, not the "Characters" default (found live 2026-08-19:
+        // patching "Characters" here silently no-opped for every book whose bible predates a typed
+        // Characters section, since GetNodeBibleSectionsAsync never has one to match against).
+        if (string.Equals(sourcePath, "bible-full:fallback", StringComparison.Ordinal))
+            return "Full";
         return "Characters"; // ExtractFromBibleAsync's own default section
     }
 
@@ -589,21 +620,44 @@ public class TrinityReconciliationService(
         return null;
     }
 
-    /// <summary>Single-call LLM patch: rewrite the bible section's text so the flagged snippet's
-    /// fact matches the winning value, changing nothing else. Grounded on the section's own current
-    /// content (same discipline as <see cref="ContinuityExtractionService"/>'s snippet-quote
-    /// extraction) rather than a free rewrite.</summary>
-    private async Task<string> PatchBibleSectionAsync(string sectionContent, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
+    /// <summary>Surgical single-LINE patch: locates the exact line containing the losing claim's
+    /// <c>Snippet</c> (exact-substring grounded, same discipline as
+    /// <see cref="ContinuityExtractionService"/>'s snippet-quote extraction), asks the LLM to
+    /// rewrite ONLY that one line, then replaces it via a plain string swap. Returns null when the
+    /// snippet is no longer present verbatim — refuse rather than guess which passage to touch.
+    ///
+    /// Replaces an earlier whole-section-rewrite approach that handed the LLM the entire section
+    /// and trusted it to reproduce everything else byte-for-byte except the flagged fact: proven
+    /// unsafe live 2026-08-19 on the very first hand-picked-divergence proof run — it rewrote an
+    /// UNRELATED line about a different character ("Ren's unregistered status") into the corrected
+    /// fact instead of touching the line that actually asserted the wrong value, because the
+    /// section-wide prompt gave the model too much surface to misattribute the fix to. Scoping the
+    /// LLM call to exactly one already-located line removes that failure mode structurally: the
+    /// call can only ever change the one line handed to it, and a plain <see cref="string.Replace"/>
+    /// on the ORIGINAL line text (not on positional line index) confirms that exact line is what's
+    /// swapped, immune to any reflow the LLM's response introduces.</summary>
+    private async Task<string?> PatchBibleSectionAsync(string sectionContent, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
     {
+        var snippet = losingClaim.Snippet ?? "";
+        if (string.IsNullOrEmpty(snippet)) return null;
+
+        var lines = sectionContent.Split('\n');
+        var lineIndex = Array.FindIndex(lines, l =>
+            l.Contains(snippet, StringComparison.Ordinal) || l.Contains(snippet, StringComparison.OrdinalIgnoreCase));
+        if (lineIndex < 0) return null;
+
+        var oldLine = lines[lineIndex];
         var question =
-            "Rewrite the section below so it reflects the corrected fact, changing NOTHING else — same structure, " +
-            "same voice, same every other sentence. Output ONLY the full corrected section text, no commentary.";
-        var context =
-            $"CORRECTION: {group.EntityName}'s \"{group.Predicate}\" should read as \"{winner.Object}\", not \"{losingClaim.Object}\".\n" +
-            $"The section currently asserts the wrong value in a passage containing this exact text: \"{losingClaim.Snippet}\"\n\n" +
-            $"=== SECTION TEXT ===\n{sectionContent}";
-        var patched = await llm.GenerateAsync(question, context, temperature: 0.1, maxTokens: Math.Max(2048, sectionContent.Length / 2), ct: ct);
-        return string.IsNullOrWhiteSpace(patched) ? sectionContent : patched.Trim();
+            $"Rewrite ONLY this one line so {group.EntityName}'s \"{group.Predicate}\" reads as \"{winner.Object}\" " +
+            $"instead of \"{losingClaim.Object}\", changing nothing else about the line's structure, punctuation, or voice. " +
+            "Output ONLY the corrected line — no commentary, no surrounding quotes.";
+        var context = $"LINE TO CORRECT:\n{oldLine}";
+        var newLine = await llm.GenerateAsync(question, context, temperature: 0.1, maxTokens: 512, ct: ct);
+        if (string.IsNullOrWhiteSpace(newLine)) return null;
+        newLine = newLine.Trim().Trim('"');
+
+        lines[lineIndex] = newLine;
+        return string.Join('\n', lines);
     }
 
     private static string BuildGroupContext(ContradictionGroup group, List<ContinuityClaim> byObject)

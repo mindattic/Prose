@@ -152,7 +152,14 @@ public class ContinuityExtractionService
         var bookSlug = node.Slug;
 
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var chapterNodes = await db.Nodes.AsNoTracking()
+        // IgnoreQueryFilters(): leafIds are explicit descendants of the already-resolved nodeId
+        // above, not an ambient scope — same bug class as the node lookup two lines up. Without
+        // this, a book outside whatever universe happens to be ambient-scoped (e.g. a SCRY book
+        // extracted while --universe glmz is set) silently resolves to zero chapters here even
+        // though GetLeafDescendantIdsAsync (which already IgnoreQueryFilters) found real leaf ids —
+        // found live 2026-08-19 running Trinity Reconciliation Phase 1 across GLMZ+SCRY+FICTION at
+        // once, where SCRY books executed under an ambient glmz scope.
+        var chapterNodes = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => leafIds.Contains(n.Id))
             .OrderBy(n => n.SortKey)
             .Select(n => new { n.Id, n.Title })

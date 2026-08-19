@@ -105,10 +105,14 @@ public static class ReconcileTrinityCli
 
     static async Task<int> CmdReconcile(string[] args, TrinityReconciliationService svc, VotingGate votingGate)
     {
-        var slug   = ArgValue(args, "--slug");
-        var all    = args.Contains("--all");
-        var dryRun = args.Contains("--dry-run");
+        var slug          = ArgValue(args, "--slug");
+        var all           = args.Contains("--all");
+        var dryRun        = args.Contains("--dry-run");
+        var onlyEntityId  = ArgValue(args, "--only-entity");
+        var onlyPredicate = ArgValue(args, "--only-predicate");
         if (string.IsNullOrEmpty(slug) && !all) return Fail("--reconcile-trinity requires --slug <slug> or --all (or --extract/--survey/--undo)");
+        if (!string.IsNullOrEmpty(onlyEntityId) != !string.IsNullOrEmpty(onlyPredicate))
+            return Fail("--only-entity and --only-predicate must be passed together");
 
         // Two independent gates, both required, --dry-run bypasses neither: this is the first
         // DecideAsync caller that rewrites live prose/bible content, not just a ledger flip.
@@ -130,7 +134,7 @@ public static class ReconcileTrinityCli
         {
             try
             {
-                var result = await svc.ReconcileBookAsync(b.NodeId, dryRun);
+                var result = await svc.ReconcileBookAsync(b.NodeId, dryRun, onlyEntityId: onlyEntityId, onlyPredicate: onlyPredicate);
                 Console.WriteLine($"[trinity]   {b.Slug,-16} {result.Decisions.Count} decision(s)");
                 foreach (var d in result.Decisions)
                 {
@@ -176,6 +180,10 @@ public static class ReconcileTrinityCli
               prose --reconcile-trinity --extract --slug <slug>|--all
               prose --reconcile-trinity --survey  --slug <slug>|--all
               prose --reconcile-trinity --slug <slug>|--all --allow-votes --confirm-auto-edit [--dry-run]
+                  [--only-entity <entityId> --only-predicate <predicate>]
+                  --only-entity/--only-predicate (pass together) restrict to ONE contradiction group and
+                  skip the applied-drift loop — the narrow-pilot safety valve for proving the mechanism
+                  on a single hand-picked divergence instead of every divergence in the book.
               prose --reconcile-trinity --undo --decision-id <guid>
             """);
     }
