@@ -253,6 +253,10 @@ public class TrinityReconciliationService(
 
         var editTargets = new Dictionary<string, List<object>>();
         var editTimestamp = DateTime.UtcNow;
+        // Only claims in here get rejected below — a losing claim whose edit was refused stays at
+        // its current live status so it resurfaces on the next pass instead of being silently
+        // marked resolved while its source still carries the wrong fact.
+        var resolvedLosingClaimUids = new HashSet<string>();
 
         // prose loses → surgically patch the one paragraph that carries the wrong fact.
         foreach (var losing in losingClaims.Where(c => c.SourceType == "prose"))
@@ -288,6 +292,7 @@ public class TrinityReconciliationService(
 
             await workbench.UpdateBeatTextAsync(beatId, patched, expectedUpdatedAt: null, ct);
             AddEditTarget(editTargets, "beat_patch", new { beatId, chapterNodeId, claimUid = losing.ClaimUid });
+            resolvedLosingClaimUids.Add(losing.ClaimUid);
         }
 
         // bible loses → snapshot the section, patch it, write it back.
@@ -323,20 +328,31 @@ public class TrinityReconciliationService(
 
             await canonDocs.SetNodeBibleSectionAsync(bookNodeId, sectionType, patched, ct);
             AddEditTarget(editTargets, "bible_section", new { nodeId = bookNodeId, sectionType });
+            resolvedLosingClaimUids.Add(losing.ClaimUid);
         }
 
         // entity_record loses → apply the WINNING claim's value onto the entity record (same
         // EntityId for every claim in the group, since GetContradictionGroups groups by it).
-        if (losingClaims.Any(c => c.SourceType == "entity_record"))
+        var losingEntityRecordClaims = losingClaims.Where(c => c.SourceType == "entity_record").ToList();
+        if (losingEntityRecordClaims.Count > 0)
         {
             var applied = await continuityApply.ApplyAsync(winner.ClaimUid, ct);
             if (applied.Ok)
+            {
                 AddEditTarget(editTargets, "entity_record", new { claimUid = winner.ClaimUid, field = applied.FieldPath });
+                foreach (var losing in losingEntityRecordClaims) resolvedLosingClaimUids.Add(losing.ClaimUid);
+            }
             else
                 log.LogWarning("[trinity] ContinuityApplyService.ApplyAsync failed for winning claim {Uid}: {Error}", winner.ClaimUid, applied.Error);
         }
 
-        continuityStore.MakeCanonical(winner.ClaimUid, decision.Reasoning ?? "Trinity Reconciliation auto-resolved.");
+        if (resolvedLosingClaimUids.Count < losingClaims.Count)
+            log.LogWarning(
+                "[trinity] {Unresolved}/{Total} losing claim(s) for {Entity}.{Predicate} could not be edited this pass — " +
+                "left at their current live status so they resurface on the next reconciliation instead of being marked resolved.",
+                losingClaims.Count - resolvedLosingClaimUids.Count, losingClaims.Count, group.EntityName, group.Predicate);
+
+        continuityStore.MakeCanonical(winner.ClaimUid, decision.Reasoning ?? "Trinity Reconciliation auto-resolved.", resolvedLosingClaimUids);
 
         var row = new ReconciliationDecision
         {

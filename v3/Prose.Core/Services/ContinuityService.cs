@@ -549,7 +549,19 @@ public class ContinuityService
         return new ResolveResult { Winner = custom, Loser = a, Loser2 = b };
     }
 
-    public void MakeCanonical(string claimUid, string note = "")
+    /// <param name="onlyRejectClaimUids">When null (the default), rejects every other live
+    /// sibling claim for the same (EntityId, Predicate) — the original blanket behavior, correct
+    /// for callers that resolve a divergence purely on the ledger (no external content to edit).
+    /// When provided, rejects ONLY the listed claim UIDs; any live sibling NOT in the set is left
+    /// at its current status untouched. Trinity Reconciliation passes this: a losing claim whose
+    /// underlying prose/bible edit was refused (snippet not found, safety guard rejected the
+    /// rewrite) must NOT be marked REJECTED — the wrong fact is still sitting in its source
+    /// unedited, and REJECTED would permanently hide that from ever resurfacing. Leaving it at its
+    /// current live status keeps it forming a contradiction group against the now-CANONICAL
+    /// winner (CANONICAL claims are deliberately included in the "live" set —
+    /// <see cref="GetContradictionGroups"/> — precisely so this resurfaces on the next pass
+    /// instead of silently vanishing.</param>
+    public void MakeCanonical(string claimUid, string note = "", IReadOnlySet<string>? onlyRejectClaimUids = null)
     {
         using var db = dbFactory.CreateDbContext();
         using var tx = db.Database.BeginTransaction();
@@ -561,7 +573,8 @@ public class ContinuityService
         var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED" };
         var siblings = db.ContinuityClaims
             .Where(c => c.EntityId == winner.EntityId && c.Predicate == winner.Predicate
-                     && c.ClaimUid != claimUid && live.Contains(c.Status))
+                     && c.ClaimUid != claimUid && live.Contains(c.Status)
+                     && (onlyRejectClaimUids == null || onlyRejectClaimUids.Contains(c.ClaimUid)))
             .ToList();
         foreach (var s in siblings)
         {
