@@ -653,6 +653,18 @@ if (args.Contains("--fix-david-mistag"))
     return;
 }
 
+// prose --reconcile-trinity --extract|--survey --slug <slug>|--all
+// prose --reconcile-trinity --slug <slug>|--all --allow-votes --confirm-auto-edit [--dry-run]
+// prose --reconcile-trinity --undo --decision-id <guid>
+// Autonomous-but-reversible Bible/Book/Entity divergence resolution for GLMZ/SCRY/FICTION books —
+// see ReconcileTrinityCli / TrinityReconciliationService.
+if (args.Contains("--reconcile-trinity"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await ReconcileTrinityCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: regenerate a universe's Master Glossary (Glossary.htm/.json/.txt under
 // docs/universes/{SLUG}/) from the GlossaryTerms table.
 //   prose --generate-glossary --universe <slug>   (omit --universe for all)

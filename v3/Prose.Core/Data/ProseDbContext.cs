@@ -392,6 +392,10 @@ public class ProseDbContext : DbContext
     public DbSet<ClaimConfirmationRow>   ClaimConfirmations      => Set<ClaimConfirmationRow>();
     public DbSet<ExtractionRunRow>       ExtractionRuns          => Set<ExtractionRunRow>();
 
+    // Trinity Reconciliation — permanent audit/undo ledger for autonomous Bible/Book/Entity
+    // divergence resolution. See TrinityReconciliationService / ReconcileTrinityCli.
+    public DbSet<ReconciliationDecision> ReconciliationDecisions => Set<ReconciliationDecision>();
+
     // World-state ledger — append-only stream of (entity, aspect, verb, value)
     // changes timestamped to story-time. The "current" state is the latest row
     // per (EntityId, AspectKey); as-of queries pivot on AtStoryTime.
@@ -2584,6 +2588,22 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Markdown).IsRequired();
             e.HasIndex(x => x.NodeId);
             e.HasIndex(x => new { x.NodeId, x.CreatedAt });
+        });
+
+        // ── ReconciliationDecision (Trinity Reconciliation audit/undo ledger) ───
+        b.Entity<ReconciliationDecision>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.BookSlug).HasMaxLength(80).IsRequired();
+            e.Property(x => x.DivergenceType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.EntityId).HasMaxLength(80).IsRequired();
+            e.Property(x => x.EntityName).HasMaxLength(400);
+            e.Property(x => x.Predicate).HasMaxLength(120).IsRequired();
+            e.Property(x => x.WinningSourceType).HasMaxLength(40).IsRequired();
+            e.Property(x => x.EditMechanism).HasMaxLength(40).IsRequired();
+            e.HasIndex(x => x.BookSlug);
+            e.HasIndex(x => new { x.EntityId, x.Predicate });
+            e.HasIndex(x => x.Reverted);
         });
 
         // ── SelfHealAction ───────────────────────────────────────────────────

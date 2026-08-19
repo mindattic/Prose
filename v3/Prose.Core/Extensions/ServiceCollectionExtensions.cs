@@ -1139,6 +1139,11 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<UniverseProfileService>();
         services.AddSingleton<AutoCorrectOrchestratorService>();
 
+        // Trinity Reconciliation — autonomous-but-reversible Bible/Book/Entity divergence
+        // resolution. Pure orchestration over the continuity/canon/beat-repair/archive services
+        // above. Available via `prose --reconcile-trinity` (ReconcileTrinityCli).
+        services.AddSingleton<TrinityReconciliationService>();
+
         // Deterministic noun consistency scan — no LLM; flags deprecated/renamed
         // noun references in beat prose (e.g. old drone name "VacCell" → "Nit").
         // Rules registered in DeprecatedEntityNames table, universe-scoped.
