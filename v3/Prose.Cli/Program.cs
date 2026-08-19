@@ -616,6 +616,15 @@ if (args.Contains("--seed-gospel-cast"))
     return;
 }
 
+// prose --seed-glmz-gap-fill --universe glmz [--dry-run]
+// One-time book-scoped entity seed for the corpus's lowest-tagging-coverage GLMZ books — see SeedGlmzGapFillCli.
+if (args.Contains("--seed-glmz-gap-fill"))
+{
+    var sp = BuildCoreServices(args);
+    Environment.ExitCode = await SeedGlmzGapFillCli.RunAsync(args, sp);
+    return;
+}
+
 // CLI mode: regenerate a universe's Master Glossary (Glossary.htm/.json/.txt under
 // docs/universes/{SLUG}/) from the GlossaryTerms table.
 //   prose --generate-glossary --universe <slug>   (omit --universe for all)

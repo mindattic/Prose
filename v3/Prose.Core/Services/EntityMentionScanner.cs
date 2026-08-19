@@ -75,14 +75,46 @@ public static class EntityMentionScanner
         // alias table and same "scope to the already-universe-filtered entity id set" guard
         // SceneContextAssembler uses, since Character/CharacterAlias carry no UniverseId of their
         // own (Character.Id IS the parent Entity.Id).
-        var characterNames = entities.Where(e => seenIds.Contains(e.Id)).ToDictionary(e => e.Id, e => e.Name);
+        var namesById = entities.Where(e => seenIds.Contains(e.Id)).ToDictionary(e => e.Id, e => e.Name);
         var aliases = await db.Set<CharacterAlias>().AsNoTracking()
             .Where(a => a.Value.Length >= 3)
             .Select(a => new { a.CharacterId, a.Value })
             .ToListAsync(ct);
         foreach (var a in aliases)
-            if (characterNames.TryGetValue(a.CharacterId, out var canonical))
+            if (namesById.TryGetValue(a.CharacterId, out var canonical))
                 candidates.Add(new MentionCandidate(a.Value, a.CharacterId, canonical, "character", RequiresStrictCase(a.Value)));
+
+        // 2026-08-19: place/faction/corponation aliases were NEVER read here — only CharacterAlias
+        // was. Confirmed live: "ArcSec" was already registered as a Corporation CommonName on
+        // "Arcturus Defense Solutions," yet 3 independent tagging passes across 3 different books
+        // still found it unmatched, because this method had no path to ever see it. Every
+        // non-character entity type has its own alias bridge table (PlaceAliases, FactionAliases,
+        // CorponationCommonNames, WeaponAliases, ...) — this wires in the three this fix's driving
+        // case actually needs; the rest are a known, separate follow-up (not yet audited for the
+        // same gap).
+        var placeAliases = await db.Set<PlaceAlias>().AsNoTracking()
+            .Where(a => a.Value.Length >= 3)
+            .Select(a => new { Id = a.PlaceId, a.Value })
+            .ToListAsync(ct);
+        foreach (var a in placeAliases)
+            if (namesById.TryGetValue(a.Id, out var canonical))
+                candidates.Add(new MentionCandidate(a.Value, a.Id, canonical, "place", RequiresStrictCase(a.Value)));
+
+        var factionAliases = await db.Set<FactionAlias>().AsNoTracking()
+            .Where(a => a.Value.Length >= 3)
+            .Select(a => new { Id = a.FactionId, a.Value })
+            .ToListAsync(ct);
+        foreach (var a in factionAliases)
+            if (namesById.TryGetValue(a.Id, out var canonical))
+                candidates.Add(new MentionCandidate(a.Value, a.Id, canonical, "faction", RequiresStrictCase(a.Value)));
+
+        var corponationCommonNames = await db.Set<CorponationCommonName>().AsNoTracking()
+            .Where(a => a.Value.Length >= 3)
+            .Select(a => new { Id = a.CorponationId, a.Value })
+            .ToListAsync(ct);
+        foreach (var a in corponationCommonNames)
+            if (namesById.TryGetValue(a.Id, out var canonical))
+                candidates.Add(new MentionCandidate(a.Value, a.Id, canonical, "corponation", RequiresStrictCase(a.Value)));
 
         // Derived given-name/surname candidates for multi-word character names ("Declan Doyle" also
         // tags bare "Declan"/"Doyle"). A token is only added when it is NOT shared with any other
@@ -121,7 +153,7 @@ public static class EntityMentionScanner
         }
         foreach (var (id, tokens) in derivedByEntity)
         {
-            if (!characterNames.TryGetValue(id, out var canonical)) continue;
+            if (!namesById.TryGetValue(id, out var canonical)) continue;
             foreach (var tok in tokens)
                 if (tokenOwners.TryGetValue(tok, out var owners) && owners.Count == 1 && owners.Contains(id))
                     candidates.Add(new MentionCandidate(tok, id, canonical, "character", RequiresStrictCase(tok)));
