@@ -561,6 +561,18 @@ public class ContinuityService
     /// winner (CANONICAL claims are deliberately included in the "live" set —
     /// <see cref="GetContradictionGroups"/> — precisely so this resurfaces on the next pass
     /// instead of silently vanishing.</param>
+    /// <remarks>The sibling-demotion set includes CANONICAL, not just NEW/CONFIRMED/CONTRADICTED —
+    /// an explicit call to THIS method is itself a re-resolution (a panel vote picking a new
+    /// winner, or a human overriding one), which is exactly the "only a human resolving it again"
+    /// case the <c>ContinuityServiceCanonicalConflictTests</c> regression suite carves out as
+    /// allowed to change a CANONICAL claim's status; that suite only exercises the separate
+    /// <see cref="Upsert"/> path (a fresh, unreviewed extraction), which must still never demote a
+    /// canonical claim on its own and is untouched by this. Before this fix, a non-deterministic
+    /// panel re-vote that flipped a winner (found live 2026-08-19: Breckenridge.background,
+    /// "ex-Arcturus" vs "ex-Arcturus Defense Solutions") left TWO simultaneously-CANONICAL claims
+    /// for the same key forever, since the old winner was never in the demotable set —
+    /// permanently un-resolvable, resurfacing as a false contradiction on every future sweep.
+    /// </remarks>
     public void MakeCanonical(string claimUid, string note = "", IReadOnlySet<string>? onlyRejectClaimUids = null)
     {
         using var db = dbFactory.CreateDbContext();
@@ -570,7 +582,7 @@ public class ContinuityService
         var now = DateTime.UtcNow.ToString("o");
         ApplyStatus(winner, "CANONICAL", now, note);
 
-        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED" };
+        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED", "CANONICAL" };
         var siblings = db.ContinuityClaims
             .Where(c => c.EntityId == winner.EntityId && c.Predicate == winner.Predicate
                      && c.ClaimUid != claimUid && live.Contains(c.Status)
