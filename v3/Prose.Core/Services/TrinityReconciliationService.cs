@@ -264,8 +264,27 @@ public class TrinityReconciliationService(
             var located = await LocateBeatForClaimAsync(losing, ct);
             if (located == null)
             {
-                log.LogWarning("[trinity] Could not locate beat for losing prose claim {Uid} ({Entity}.{Predicate}) — leaving prose untouched.",
-                    losing.ClaimUid, losing.EntityName, losing.Predicate);
+                // A claim with no BookSlug can only have come from the legacy pre-SS-A43
+                // ExtractFromBookAsync/ExtractFromChapterAsync path (IBookRepository/IChapterRepository
+                // model), which stamps SourceChapterId from that repo's own id scheme — never a real
+                // Nodes.Id — and hardcodes BookSlug: null. Such a claim can never resolve here no
+                // matter how many times Trinity runs; leaving it at NEW just makes it resurface
+                // identically on every future pass forever. Retire it now instead of re-discovering
+                // the same permanent dead end each time (found live 2026-08-19: 3 of 19 zero-mechanism
+                // decisions were exactly this, all bushido_coda-family).
+                if (string.IsNullOrEmpty(losing.BookSlug))
+                {
+                    continuityStore.RejectClaim(losing.ClaimUid,
+                        "Trinity Reconciliation: permanently unlocatable — claim has no BookSlug, indicating " +
+                        "extraction via the legacy chapter-repo path whose SourceChapterId cannot resolve to a " +
+                        "modern Nodes row. Retired rather than re-surfaced every pass.");
+                    log.LogWarning("[trinity] Losing prose claim {Uid} ({Entity}.{Predicate}) has no BookSlug and cannot be located — " +
+                        "retired as permanently unresolvable (legacy extraction artifact), not left to resurface.",
+                        losing.ClaimUid, losing.EntityName, losing.Predicate);
+                }
+                else
+                    log.LogWarning("[trinity] Could not locate beat for losing prose claim {Uid} ({Entity}.{Predicate}) — leaving prose untouched.",
+                        losing.ClaimUid, losing.EntityName, losing.Predicate);
                 continue;
             }
             var (beatId, chapterNodeId) = located.Value;
@@ -297,17 +316,33 @@ public class TrinityReconciliationService(
 
         // bible loses → snapshot the section, patch it, write it back.
         string? preEditSnapshotJson = null;
-        var patchedSections = new HashSet<string>();
+        var patchedSections = new HashSet<(Guid NodeId, string SectionType)>();
         foreach (var losing in losingClaims.Where(c => c.SourceType == "bible"))
         {
             var sectionType = ParseBibleSectionType(losing.SourcePath);
-            if (!patchedSections.Add(sectionType)) continue; // already patched this section this pass
 
-            var sections = await canonDocs.GetNodeBibleSectionsAsync(bookNodeId, ct);
+            // GetContradictionGroups groups purely by (EntityId, Predicate), not by book — a
+            // crossover character asserted in two books (e.g. Auda Vane in both high-five and
+            // the-fall-down) can put a losing claim from a DIFFERENT book than the one currently
+            // being reconciled into this same group. Using the outer bookNodeId here would patch
+            // the wrong book's bible and always refuse (snippet never present there) — found live
+            // 2026-08-19: 4 of 19 zero-mechanism decisions were exactly this. Resolve the node the
+            // losing claim actually belongs to instead.
+            var targetNodeId = await ResolveClaimBookNodeIdAsync(losing.BookSlug, bookSlug, bookNodeId, ct);
+            if (targetNodeId == null)
+            {
+                log.LogWarning("[trinity] Losing bible claim {Uid} belongs to book '{Book}', which could not be resolved to a node — cannot patch bible.",
+                    losing.ClaimUid, losing.BookSlug);
+                continue;
+            }
+
+            if (!patchedSections.Add((targetNodeId.Value, sectionType))) continue; // already patched this section this pass
+
+            var sections = await canonDocs.GetNodeBibleSectionsAsync(targetNodeId.Value, ct);
             var section = sections.FirstOrDefault(s => s.SectionType == sectionType);
             if (section == null)
             {
-                log.LogWarning("[trinity] No NodeBibleSection '{Section}' found for node {NodeId} — cannot patch bible.", sectionType, bookNodeId);
+                log.LogWarning("[trinity] No NodeBibleSection '{Section}' found for node {NodeId} — cannot patch bible.", sectionType, targetNodeId.Value);
                 continue;
             }
 
@@ -317,17 +352,17 @@ public class TrinityReconciliationService(
                 log.LogWarning(
                     "[trinity] Losing bible claim {Uid}'s snippet is no longer present verbatim in section '{Section}' " +
                     "(node {NodeId}) — refusing to guess which line to patch; bible left untouched.",
-                    losing.ClaimUid, sectionType, bookNodeId);
+                    losing.ClaimUid, sectionType, targetNodeId.Value);
                 continue;
             }
 
-            var snapshot = new { nodeId = bookNodeId, sectionType, content = section.Content };
+            var snapshot = new { nodeId = targetNodeId.Value, sectionType, content = section.Content };
             preEditSnapshotJson = preEditSnapshotJson == null
                 ? JsonSerializer.Serialize(new[] { snapshot })
                 : JsonSerializer.Serialize(JsonSerializer.Deserialize<List<object>>(preEditSnapshotJson)!.Append(snapshot));
 
-            await canonDocs.SetNodeBibleSectionAsync(bookNodeId, sectionType, patched, ct);
-            AddEditTarget(editTargets, "bible_section", new { nodeId = bookNodeId, sectionType });
+            await canonDocs.SetNodeBibleSectionAsync(targetNodeId.Value, sectionType, patched, ct);
+            AddEditTarget(editTargets, "bible_section", new { nodeId = targetNodeId.Value, sectionType });
             resolvedLosingClaimUids.Add(losing.ClaimUid);
         }
 
@@ -614,6 +649,23 @@ public class TrinityReconciliationService(
     {
         if (!targets.TryGetValue(mechanism, out var list)) targets[mechanism] = list = new();
         list.Add(target);
+    }
+
+    /// <summary>Resolves which BookNode a losing bible claim's edit should target. Most of the
+    /// time the claim's own <see cref="ContinuityClaim.BookSlug"/> matches the book currently being
+    /// reconciled and this is a no-op lookup; it only diverges for a crossover-entity contradiction
+    /// group spanning two books (see the caller's remarks). Returns null if the claim's book can't
+    /// be resolved to a live node at all (e.g. the orphaned pre-SS-A43 legacy-extraction claims that
+    /// were never tagged with a BookSlug in the first place).</summary>
+    internal async Task<Guid?> ResolveClaimBookNodeIdAsync(string? claimBookSlug, string currentBookSlug, Guid currentBookNodeId, CancellationToken ct)
+    {
+        if (string.IsNullOrEmpty(claimBookSlug) || string.Equals(claimBookSlug, currentBookSlug, StringComparison.OrdinalIgnoreCase))
+            return currentBookNodeId;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .FirstOrDefaultAsync(n => n.Slug == claimBookSlug || n.NodeCode == claimBookSlug, ct);
+        return node?.Id;
     }
 
     private static string ParseBibleSectionType(string? sourcePath)

@@ -147,6 +147,52 @@ public class TrinityReconciliationServiceTests
         Assert.That(await svc.LocateBeatForClaimAsync(claim), Is.Null);
     }
 
+    // ── ResolveClaimBookNodeIdAsync — cross-book contradiction-group targeting ──
+    // GetContradictionGroups groups purely by (EntityId, Predicate), not by book, so a losing
+    // bible claim from a DIFFERENT book than the one currently being reconciled can land in the
+    // same group (a crossover character asserted in two books). Found live 2026-08-19: patching
+    // via the outer book's NodeId silently targeted the wrong book's bible and always refused.
+
+    [Test]
+    public async Task ResolveClaimBookNodeIdAsync_SameBookSlug_ReturnsCurrentBookNodeId()
+    {
+        var (bookId, _) = await SeedBookWithChapterAsync();
+        var result = await svc.ResolveClaimBookNodeIdAsync("TESTBOOK", "TESTBOOK", bookId, CancellationToken.None);
+        Assert.That(result, Is.EqualTo(bookId));
+    }
+
+    [Test]
+    public async Task ResolveClaimBookNodeIdAsync_NullClaimBookSlug_FallsBackToCurrentBookNodeId()
+    {
+        var (bookId, _) = await SeedBookWithChapterAsync();
+        var result = await svc.ResolveClaimBookNodeIdAsync(null, "TESTBOOK", bookId, CancellationToken.None);
+        Assert.That(result, Is.EqualTo(bookId));
+    }
+
+    [Test]
+    public async Task ResolveClaimBookNodeIdAsync_DifferentBookSlug_ResolvesToThatBooksOwnNodeId()
+    {
+        var (currentBookId, _) = await SeedBookWithChapterAsync();
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var otherBook = new BookNode { Id = Guid.NewGuid(), UniverseId = Universe.GlmzId, Slug = "OTHERBOOK", Title = "Other Book" };
+        db.Nodes.Add(otherBook);
+        await db.SaveChangesAsync();
+
+        var result = await svc.ResolveClaimBookNodeIdAsync("OTHERBOOK", "TESTBOOK", currentBookId, CancellationToken.None);
+
+        Assert.That(result, Is.EqualTo(otherBook.Id));
+        Assert.That(result, Is.Not.EqualTo(currentBookId));
+    }
+
+    [Test]
+    public async Task ResolveClaimBookNodeIdAsync_UnresolvableBookSlug_ReturnsNull()
+    {
+        var (bookId, _) = await SeedBookWithChapterAsync();
+        var result = await svc.ResolveClaimBookNodeIdAsync("NO-SUCH-BOOK", "TESTBOOK", bookId, CancellationToken.None);
+        Assert.That(result, Is.Null);
+    }
+
     // ── RevertDecisionAsync — ledger-resolution dispatch ─────────────────────
 
     [Test]
