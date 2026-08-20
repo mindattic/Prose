@@ -315,6 +315,10 @@ public static class ServiceCollectionExtensions
         // auto-reconcile path. See ContinuityCompatibilityService's own doc comment.
         services.AddSingleton<ContinuityCompatibilityService>();
 
+        // Config-bound switches for ContinuityLongSweepService's unattended auto-reconcile path —
+        // defaults to Enabled=false, ShadowMode=true (report-only) until an operator opts in.
+        services.AddSingleton<TrinityAutoReconcileOptions>();
+
         // Once-a-day background pass that re-runs GetContradictionGroups so
         // the long-sweep audit isn't gated on a /continuity page click.
         // PeriodicTimer-based BackgroundService — no Quartz/Hangfire dep.
