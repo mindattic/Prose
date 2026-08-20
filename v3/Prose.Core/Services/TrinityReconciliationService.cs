@@ -101,6 +101,10 @@ public class TrinityReconciliationService(
         var proseResults = await extraction.ExtractFromBookNodeAsync(nodeId, ct: ct);
         var bibleResult = await extraction.ExtractFromBibleAsync(nodeId, ct: ct);
 
+        // Seeds the continuous-re-extraction hash cursors so a save the moment after this
+        // finishes compares against a real baseline, not "no cursor → treat as changed."
+        await extraction.SeedExtractionCursorsAsync(nodeId, ct);
+
         var all = proseResults.Append(bibleResult).ToList();
         return new ExtractionSweepEntry(
             node.Slug, Skipped: false,

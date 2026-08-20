@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Interfaces;
 using Prose.Core.Models;
+using ContinuityExtractionCursor = Prose.Core.Data.Entities.ContinuityExtractionCursor;
 
 namespace Prose.Core.Services;
 
@@ -308,6 +309,168 @@ public class ContinuityExtractionService
             sourceType: "bible", sourcePath: sourcePath);
         result.ChapterTitle = $"bible:{node.Slug}:{sectionType}";
         return result;
+    }
+
+    // ── Continuous re-extraction (hash-gated) ───────────────────────────────
+    //
+    // ExtractBookIfNeededAsync (TrinityReconciliationService) only ever extracts a book ONCE —
+    // HasAnyClaimsForBook is a pure existence check, never compared against current content.
+    // Found live 2026-08-19/20: a duplicated sentence in a published, complete book's prose sat
+    // undetected until an unrelated investigation happened to snag on it — the ledger had no way
+    // to know the text had drifted from what it extracted. These two methods are the fix: called
+    // from NodeWorkbenchService.UpdateBeatTextAsync / CanonDocumentService.SetNodeBibleSectionAsync
+    // on every save, they re-extract ONLY the one chapter/section that changed, and ONLY for a
+    // book that already opted in via ExtractBookIfNeededAsync — this never silently extracts a
+    // book for the first time; that stays ExtractBookIfNeededAsync's explicit, supervised job.
+
+    /// <summary>Re-extracts one chapter's claims if its content has changed since extraction last
+    /// ran against it. No-op (returns false) if the book has never been extracted at all, or if
+    /// the chapter's stripped prose is byte-identical to what's cached in
+    /// <see cref="ContinuityExtractionCursor"/>.</summary>
+    public async Task<bool> ReExtractChapterIfChangedAsync(Guid chapterNodeId, int maxTokens = 4096, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var chapter = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .FirstOrDefaultAsync(n => n.Id == chapterNodeId, ct);
+        if (chapter?.ParentNodeId == null) return false;
+
+        var book = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .FirstOrDefaultAsync(n => n.Id == chapter.ParentNodeId.Value, ct);
+        if (book == null || string.IsNullOrEmpty(book.Slug)) return false;
+        var bookSlug = book.Slug;
+
+        if (!store.HasAnyClaimsForBook(bookSlug)) return false;
+
+        var prose = string.Join("\n\n", (await db.BeatNodes.AsNoTracking()
+                .Where(bn => bn.NodeId == chapterNodeId)
+                .Include(bn => bn.Beat)
+                .ToListAsync(ct))
+            .OrderBy(bn => bn.SortKey)
+            .Select(bn => BeatMarkup.StripEntityTags(bn.Beat!.Text))
+            .Where(t => !string.IsNullOrWhiteSpace(t)));
+        if (string.IsNullOrWhiteSpace(prose)) return false;
+
+        var hash = ComputeContentHash(prose);
+        var sourceKey = chapterNodeId.ToString("D");
+        var cursor = await db.ContinuityExtractionCursors
+            .FirstOrDefaultAsync(c => c.BookSlug == bookSlug && c.SourceKind == "chapter" && c.SourceKey == sourceKey, ct);
+        if (cursor != null && cursor.ContentHash == hash) return false; // unchanged — no re-bill
+
+        var siblingChapterIds = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.ParentNodeId == book.Id)
+            .OrderBy(n => n.SortKey)
+            .Select(n => n.Id)
+            .ToListAsync(ct);
+        var chapterNumber = siblingChapterIds.IndexOf(chapterNodeId) + 1; // 1-indexed; 0 if not found (moved/detached)
+
+        log.LogInformation("[continuity] Re-extracting chapter {Title} ({Chapter}) for {BookSlug} — content changed since last extraction.",
+            chapter.Title, chapterNumber, bookSlug);
+        var contextHeader = "=== CHAPTER PROSE (extract facts from this) ===\n" +
+            $"Chapter {chapterNumber}: {chapter.Title}\n";
+        await ExtractClaimsFromProseAsync(prose, contextHeader, chapterNodeId.ToString(), chapterNumber, chapter.Title, bookSlug, maxTokens, ct);
+
+        await UpsertCursorAsync(db, bookSlug, "chapter", sourceKey, hash, ct);
+        return true;
+    }
+
+    /// <summary>Re-extracts one bible section's claims if its content has changed since
+    /// extraction last ran against it. Same no-op/opt-in rules as
+    /// <see cref="ReExtractChapterIfChangedAsync"/>.</summary>
+    public async Task<bool> ReExtractBibleSectionIfChangedAsync(Guid nodeId, string sectionType, int maxTokens = 8192, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
+        if (node == null || string.IsNullOrEmpty(node.Slug)) return false;
+        var bookSlug = node.Slug;
+
+        if (!store.HasAnyClaimsForBook(bookSlug)) return false;
+
+        var content = await db.NodeBibleSections.AsNoTracking()
+            .Where(s => s.NodeId == nodeId && s.SectionType == sectionType)
+            .Select(s => s.Content)
+            .FirstOrDefaultAsync(ct);
+        if (string.IsNullOrWhiteSpace(content))
+            content = node.NodeBible; // same fallback ExtractFromBibleAsync itself uses
+        if (string.IsNullOrWhiteSpace(content)) return false;
+
+        var hash = ComputeContentHash(content);
+        var cursor = await db.ContinuityExtractionCursors
+            .FirstOrDefaultAsync(c => c.BookSlug == bookSlug && c.SourceKind == "bible_section" && c.SourceKey == sectionType, ct);
+        if (cursor != null && cursor.ContentHash == hash) return false;
+
+        log.LogInformation("[continuity] Re-extracting bible section '{Section}' for {BookSlug} — content changed since last extraction.",
+            sectionType, bookSlug);
+        await ExtractFromBibleAsync(nodeId, sectionType, maxTokens, ct);
+
+        await UpsertCursorAsync(db, bookSlug, "bible_section", sectionType, hash, ct);
+        return true;
+    }
+
+    /// <summary>Seeds a book's extraction cursors right after its first
+    /// <c>ExtractBookIfNeededAsync</c> pass succeeds, so the hash-gate has a real baseline from
+    /// day one instead of treating every chapter as "changed" on the very first post-rollout
+    /// save. Best-effort — a missing cursor just means the next save re-extracts once more than
+    /// strictly necessary, never a correctness problem.</summary>
+    public async Task SeedExtractionCursorsAsync(Guid bookNodeId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var book = await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == bookNodeId, ct);
+        if (book == null || string.IsNullOrEmpty(book.Slug)) return;
+
+        var chapterIds = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.ParentNodeId == bookNodeId)
+            .OrderBy(n => n.SortKey)
+            .Select(n => n.Id)
+            .ToListAsync(ct);
+
+        foreach (var chapterId in chapterIds)
+        {
+            var prose = string.Join("\n\n", (await db.BeatNodes.AsNoTracking()
+                    .Where(bn => bn.NodeId == chapterId)
+                    .Include(bn => bn.Beat)
+                    .ToListAsync(ct))
+                .OrderBy(bn => bn.SortKey)
+                .Select(bn => BeatMarkup.StripEntityTags(bn.Beat!.Text))
+                .Where(t => !string.IsNullOrWhiteSpace(t)));
+            if (string.IsNullOrWhiteSpace(prose)) continue;
+            await UpsertCursorAsync(db, book.Slug, "chapter", chapterId.ToString("D"), ComputeContentHash(prose), ct);
+        }
+
+        var sections = await db.NodeBibleSections.AsNoTracking()
+            .Where(s => s.NodeId == bookNodeId)
+            .Select(s => new { s.SectionType, s.Content })
+            .ToListAsync(ct);
+        foreach (var s in sections)
+        {
+            if (string.IsNullOrWhiteSpace(s.Content)) continue;
+            await UpsertCursorAsync(db, book.Slug, "bible_section", s.SectionType, ComputeContentHash(s.Content), ct);
+        }
+    }
+
+    private static async Task UpsertCursorAsync(ProseDbContext db, string bookSlug, string sourceKind, string sourceKey, string hash, CancellationToken ct)
+    {
+        var existing = await db.ContinuityExtractionCursors
+            .FirstOrDefaultAsync(c => c.BookSlug == bookSlug && c.SourceKind == sourceKind && c.SourceKey == sourceKey, ct);
+        if (existing != null)
+        {
+            existing.ContentHash = hash;
+            existing.LastExtractedAt = DateTime.UtcNow;
+        }
+        else
+        {
+            db.ContinuityExtractionCursors.Add(new ContinuityExtractionCursor
+            {
+                Id = Guid.NewGuid(), BookSlug = bookSlug, SourceKind = sourceKind, SourceKey = sourceKey,
+                ContentHash = hash, LastExtractedAt = DateTime.UtcNow,
+            });
+        }
+        await db.SaveChangesAsync(ct);
+    }
+
+    private static string ComputeContentHash(string content)
+    {
+        var bytes = System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(content));
+        return Convert.ToHexString(bytes).ToLowerInvariant();
     }
 
     /// <summary>Shared body for "extract atomic claims from one block of prose, upsert each" —

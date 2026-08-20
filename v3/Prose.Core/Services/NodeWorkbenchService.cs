@@ -61,7 +61,8 @@ public class NodeWorkbenchService
         SemanticFidelityService? semanticFidelity = null,
         EditSessionService? editSession = null,
         BlastRadiusService? blastRadius = null,
-        LogicSweepService? logicSweep = null)
+        LogicSweepService? logicSweep = null,
+        ContinuityExtractionService? continuityExtraction = null)
     {
         this.dbFactory = dbFactory;
         this.tts = tts;
@@ -74,6 +75,7 @@ public class NodeWorkbenchService
         this.editSession = editSession;
         this.blastRadius = blastRadius;
         this.logicSweep = logicSweep;
+        this.continuityExtraction = continuityExtraction;
     }
 
     private readonly PostBeatValidationService? postBeatValidator;
@@ -81,6 +83,7 @@ public class NodeWorkbenchService
     private readonly EditSessionService? editSession;
     private readonly BlastRadiusService? blastRadius;
     private readonly LogicSweepService? logicSweep;
+    private readonly ContinuityExtractionService? continuityExtraction;
 
     // ── Reads ────────────────────────────────────────────────────────────
 
@@ -379,6 +382,18 @@ public class NodeWorkbenchService
                         await logicSweep.RunNarrowAsync(bnId, radiusIds, beatId, CancellationToken.None);
                 }, CancellationToken.None)
                 .ContinueWith(t => log.LogError(t.Exception, "Blast-radius RunNarrowAsync background task failed"),
+                    TaskContinuationOptions.OnlyOnFaulted);
+        }
+
+        // Fire-and-forget: keep the continuity ledger fresh for any book that's already opted in
+        // (ContinuityExtractionService.ReExtractChapterIfChangedAsync is itself a no-op for a book
+        // that's never been extracted, and hash-gated for a chapter whose text didn't actually
+        // change) — see ContinuityExtractionCursor's doc comment for why this exists.
+        if (continuityExtraction != null && directNodeId != Guid.Empty)
+        {
+            var chapterNodeId = directNodeId;
+            _ = Task.Run(() => continuityExtraction.ReExtractChapterIfChangedAsync(chapterNodeId, ct: CancellationToken.None), CancellationToken.None)
+                .ContinueWith(t => log.LogError(t.Exception, "ReExtractChapterIfChangedAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
         }
     }

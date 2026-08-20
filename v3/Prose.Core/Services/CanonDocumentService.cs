@@ -1,6 +1,7 @@
 using System.Security.Cryptography;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Interfaces;
@@ -16,15 +17,21 @@ public class CanonDocumentService
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly IPathProvider paths;
     private readonly CanonDocumentTypeRegistry typeRegistry;
+    private readonly ContinuityExtractionService? continuityExtraction;
+    private readonly ILogger<CanonDocumentService>? log;
 
     public CanonDocumentService(
         IDbContextFactory<ProseDbContext> dbFactory,
         IPathProvider paths,
-        CanonDocumentTypeRegistry typeRegistry)
+        CanonDocumentTypeRegistry typeRegistry,
+        ContinuityExtractionService? continuityExtraction = null,
+        ILogger<CanonDocumentService>? log = null)
     {
         this.dbFactory    = dbFactory;
         this.paths        = paths;
         this.typeRegistry = typeRegistry;
+        this.continuityExtraction = continuityExtraction;
+        this.log          = log;
     }
 
     // ── Resolve a universe slug or id string → Guid ───────────────────────────
@@ -226,6 +233,16 @@ public class CanonDocumentService
         }
 
         await db.SaveChangesAsync(ct);
+
+        // Fire-and-forget: keep the continuity ledger fresh for any book that's already opted in.
+        // Closes the loop for free on every Trinity bible-patch and every bible revert, not just
+        // hand-authored edits — see ContinuityExtractionCursor's doc comment for why this exists.
+        if (continuityExtraction != null)
+        {
+            _ = Task.Run(() => continuityExtraction.ReExtractBibleSectionIfChangedAsync(nodeId, sectionType, ct: CancellationToken.None), CancellationToken.None)
+                .ContinueWith(t => log?.LogError(t.Exception, "ReExtractBibleSectionIfChangedAsync background task failed"),
+                    TaskContinuationOptions.OnlyOnFaulted);
+        }
 
         return new UpsertResult(true, nodeId, null, null, isNew ? "created" : "updated", sectionType);
     }
