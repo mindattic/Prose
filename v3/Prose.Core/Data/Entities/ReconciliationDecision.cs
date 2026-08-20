@@ -65,4 +65,9 @@ public class ReconciliationDecision
     public DateTime? RevertedAt { get; set; }
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+    /// <summary>"cli-manual" (default — a human ran --reconcile-trinity) | "scheduled-auto" (the
+    /// unattended ContinuityLongSweepService auto-reconcile path). Lets anyone reviewing history
+    /// immediately tell which edits were unattended vs. deliberate.</summary>
+    public string TriggeredBy { get; set; } = "cli-manual";
 }

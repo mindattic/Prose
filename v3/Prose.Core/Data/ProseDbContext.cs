@@ -396,6 +396,14 @@ public class ProseDbContext : DbContext
     // divergence resolution. See TrinityReconciliationService / ReconcileTrinityCli.
     public DbSet<ReconciliationDecision> ReconciliationDecisions => Set<ReconciliationDecision>();
 
+    // Trinity Reconciliation — genuine-vs-false-positive contradiction cache. See
+    // ContinuityCompatibilityService.
+    public DbSet<ContinuityCompatibilityJudgment> ContinuityCompatibilityJudgments => Set<ContinuityCompatibilityJudgment>();
+
+    // Trinity Reconciliation — continuous re-extraction hash cursor. See
+    // ContinuityExtractionService.ReExtractChapterIfChangedAsync / ReExtractBibleSectionIfChangedAsync.
+    public DbSet<ContinuityExtractionCursor> ContinuityExtractionCursors => Set<ContinuityExtractionCursor>();
+
     // World-state ledger — append-only stream of (entity, aspect, verb, value)
     // changes timestamped to story-time. The "current" state is the latest row
     // per (EntityId, AspectKey); as-of queries pivot on AtStoryTime.
@@ -2601,9 +2609,32 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Predicate).HasMaxLength(120).IsRequired();
             e.Property(x => x.WinningSourceType).HasMaxLength(40).IsRequired();
             e.Property(x => x.EditMechanism).HasMaxLength(40).IsRequired();
+            e.Property(x => x.TriggeredBy).HasMaxLength(20).IsRequired();
             e.HasIndex(x => x.BookSlug);
             e.HasIndex(x => new { x.EntityId, x.Predicate });
             e.HasIndex(x => x.Reverted);
+        });
+
+        // ── ContinuityCompatibilityJudgment (genuine-vs-false-positive contradiction cache) ──
+        b.Entity<ContinuityCompatibilityJudgment>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.EntityId).HasMaxLength(80).IsRequired();
+            e.Property(x => x.Predicate).HasMaxLength(120).IsRequired();
+            e.Property(x => x.ObjectSetHash).HasMaxLength(64).IsRequired();
+            e.Property(x => x.Result).HasMaxLength(20).IsRequired();
+            e.HasIndex(x => new { x.EntityId, x.Predicate, x.ObjectSetHash }).IsUnique();
+        });
+
+        // ── ContinuityExtractionCursor (continuous re-extraction hash gate) ─────
+        b.Entity<ContinuityExtractionCursor>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.BookSlug).HasMaxLength(80).IsRequired();
+            e.Property(x => x.SourceKind).HasMaxLength(20).IsRequired();
+            e.Property(x => x.SourceKey).HasMaxLength(80).IsRequired();
+            e.Property(x => x.ContentHash).HasMaxLength(64).IsRequired();
+            e.HasIndex(x => new { x.BookSlug, x.SourceKind, x.SourceKey }).IsUnique();
         });
 
         // ── SelfHealAction ───────────────────────────────────────────────────

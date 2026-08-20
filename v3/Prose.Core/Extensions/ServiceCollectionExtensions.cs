@@ -310,6 +310,11 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ContinuityExtractionService>();
         services.AddSingleton<ContinuityApplyService>();
 
+        // Genuine-vs-false-positive contradiction filter — sits in front of
+        // ContinuityService.GetContradictionGroups for Trinity Reconciliation and the long-sweep
+        // auto-reconcile path. See ContinuityCompatibilityService's own doc comment.
+        services.AddSingleton<ContinuityCompatibilityService>();
+
         // Once-a-day background pass that re-runs GetContradictionGroups so
         // the long-sweep audit isn't gated on a /continuity page click.
         // PeriodicTimer-based BackgroundService — no Quartz/Hangfire dep.

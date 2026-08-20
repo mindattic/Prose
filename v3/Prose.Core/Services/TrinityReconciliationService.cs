@@ -36,8 +36,15 @@ public class TrinityReconciliationService(
     LlmVotingService voting,
     ILlmService llm,
     IDbContextFactory<ProseDbContext> dbFactory,
-    ILogger<TrinityReconciliationService> log)
+    ILogger<TrinityReconciliationService> log,
+    ContinuityCompatibilityService? compatibility = null)
 {
+    /// <summary>Falls back to a same-process instance (no test double registered) so existing
+    /// call sites/tests built before this filter existed keep compiling and running unchanged;
+    /// production DI always supplies the real singleton.</summary>
+    private ContinuityCompatibilityService Compatibility => compatibility ??=
+        new ContinuityCompatibilityService(continuityStore, llm, dbFactory, Microsoft.Extensions.Logging.Abstractions.NullLogger<ContinuityCompatibilityService>.Instance);
+
     /// <summary>The only universes Trinity Reconciliation ever touches. NONFICTION/GOSPEL are real
     /// historical/scriptural content — no editorial "which is more compelling" judgment applies.
     /// HORROR exists (6 nodes) but is deliberately excluded — a one-line addition if ever asked for.</summary>
@@ -122,7 +129,7 @@ public class TrinityReconciliationService(
     /// any DecideAsync call is made.</summary>
     public async Task<SurveyEntry> SurveyBookAsync(string bookSlug, CancellationToken ct = default)
     {
-        var groups = continuityStore.GetContradictionGroups(bookSlug);
+        var groups = await Compatibility.GetGenuineContradictionGroupsAsync(bookSlug, ct);
         var drift = (await continuityApply.CheckAppliedClaimsAsync(bookSlug, ct)).Count(d => d.Drifted);
 
         int proseVsBible = 0, proseVsEntity = 0, bibleVsEntity = 0, other = 0, wouldHitBeatRepair = 0;
@@ -153,7 +160,8 @@ public class TrinityReconciliationService(
     /// narrow-pilot safety valve used to prove the mechanism on a single hand-picked divergence
     /// without touching every other divergence in the same book.</summary>
     public async Task<BookReconciliationResult> ReconcileBookAsync(
-        Guid nodeId, bool dryRun, CancellationToken ct = default, string? onlyEntityId = null, string? onlyPredicate = null)
+        Guid nodeId, bool dryRun, CancellationToken ct = default, string? onlyEntityId = null, string? onlyPredicate = null,
+        string triggeredBy = "cli-manual")
     {
         await using var db0 = await dbFactory.CreateDbContextAsync(ct);
         var node = await db0.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
@@ -167,13 +175,19 @@ public class TrinityReconciliationService(
 
         var decisions = new List<ReconciliationDecision>();
 
-        var groups = continuityStore.GetContradictionGroups(bookSlug);
-        if (singleGroupOnly)
-            groups = groups.Where(g => g.EntityId == onlyEntityId && g.Predicate == onlyPredicate).ToList();
+        // --only-entity/--only-predicate is a deliberate, hand-picked target — the operator named
+        // this exact group, so the genuine-vs-restatement filter (which governs auto-discovery)
+        // does not apply here; go straight to the raw group. Auto-discovered runs (the --all/
+        // --slug-without-narrowing path, and the scheduled auto-reconcile) DO apply it — a group
+        // that's just a different-granularity restatement of the same fact (found live 2026-08-19/20
+        // to be the majority case) never reaches a panel vote or an edit attempt there.
+        var groups = singleGroupOnly
+            ? continuityStore.GetContradictionGroups(bookSlug).Where(g => g.EntityId == onlyEntityId && g.Predicate == onlyPredicate).ToList()
+            : await Compatibility.GetGenuineContradictionGroupsAsync(bookSlug, ct);
 
         foreach (var group in groups)
         {
-            var row = await ReconcileContradictionGroupAsync(nodeId, bookSlug, group, dryRun, ct);
+            var row = await ReconcileContradictionGroupAsync(nodeId, bookSlug, group, dryRun, ct, triggeredBy);
             if (row != null) decisions.Add(row);
         }
 
@@ -182,7 +196,7 @@ public class TrinityReconciliationService(
             var drifted = (await continuityApply.CheckAppliedClaimsAsync(bookSlug, ct)).Where(d => d.Drifted);
             foreach (var d in drifted)
             {
-                var row = await ReconcileAppliedDriftAsync(nodeId, bookSlug, d, dryRun, ct);
+                var row = await ReconcileAppliedDriftAsync(nodeId, bookSlug, d, dryRun, ct, triggeredBy);
                 if (row != null) decisions.Add(row);
             }
         }
@@ -203,7 +217,8 @@ public class TrinityReconciliationService(
     /// then edits every source whose claim disagrees with the winner. Dry-run makes zero
     /// DecideAsync calls and prints the plan only.</summary>
     public async Task<ReconciliationDecision?> ReconcileContradictionGroupAsync(
-        Guid bookNodeId, string bookSlug, ContradictionGroup group, bool dryRun, CancellationToken ct = default)
+        Guid bookNodeId, string bookSlug, ContradictionGroup group, bool dryRun, CancellationToken ct = default,
+        string triggeredBy = "cli-manual")
     {
         var byObject = group.Claims
             .GroupBy(c => c.Object, StringComparer.OrdinalIgnoreCase)
@@ -232,6 +247,7 @@ public class TrinityReconciliationService(
                 EditMechanism = string.Join(",", mechanisms),
                 EditTargetJson = "{}",
                 DryRun = true,
+                TriggeredBy = triggeredBy,
             };
         }
 
@@ -407,6 +423,7 @@ public class TrinityReconciliationService(
             PreEditSnapshotJson = preEditSnapshotJson,
             DryRun = false,
             CreatedAt = editTimestamp,
+            TriggeredBy = triggeredBy,
         };
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -421,7 +438,8 @@ public class TrinityReconciliationService(
     /// the other reasons (field/entry removed, record missing) describe a deletion, not a competing
     /// authorial fact, so they're logged and left for human review rather than force-fit here.</summary>
     public async Task<ReconciliationDecision?> ReconcileAppliedDriftAsync(
-        Guid bookNodeId, string bookSlug, AppliedClaimDriftResult drift, bool dryRun, CancellationToken ct = default)
+        Guid bookNodeId, string bookSlug, AppliedClaimDriftResult drift, bool dryRun, CancellationToken ct = default,
+        string triggeredBy = "cli-manual")
     {
         if (drift.Reason != "value_changed")
         {
@@ -450,6 +468,7 @@ public class TrinityReconciliationService(
                 DecisionReasoning = $"DRY RUN: applied value \"{claim.Object}\" vs current record value \"{currentValue}\" — would ask the panel to pick.",
                 LosingClaimUidsJson = JsonSerializer.Serialize(new[] { claim.ClaimUid }),
                 EditMechanism = "entity_record", EditTargetJson = "{}", DryRun = true,
+                TriggeredBy = triggeredBy,
             };
         }
 
@@ -501,6 +520,7 @@ public class TrinityReconciliationService(
             EditTargetJson = JsonSerializer.Serialize(new { claimUid = claim.ClaimUid, field }),
             DryRun = false,
             CreatedAt = editTimestamp,
+            TriggeredBy = triggeredBy,
         };
         db.ReconciliationDecisions.Add(row);
         await db.SaveChangesAsync(ct);

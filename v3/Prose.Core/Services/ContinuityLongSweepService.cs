@@ -36,13 +36,15 @@ public class ContinuityLongSweepService : BackgroundService
     public bool Enabled { get; }
 
     private readonly ContinuityService continuity;
+    private readonly ContinuityCompatibilityService compatibility;
     private readonly ILogger<ContinuityLongSweepService> log;
 
-    public ContinuityLongSweepService(ContinuityService continuity, ILogger<ContinuityLongSweepService> log,
-        IConfiguration configuration)
+    public ContinuityLongSweepService(ContinuityService continuity, ContinuityCompatibilityService compatibility,
+        ILogger<ContinuityLongSweepService> log, IConfiguration configuration)
     {
-        this.continuity = continuity;
-        this.log        = log;
+        this.continuity    = continuity;
+        this.compatibility = compatibility;
+        this.log           = log;
         Enabled = configuration.GetValue<bool>("BackgroundServices:Enabled", defaultValue: true);
     }
 
@@ -77,10 +79,14 @@ public class ContinuityLongSweepService : BackgroundService
                             || LastFullSweepAt is null
                             || DateTime.UtcNow - LastFullSweepAt.Value >= FullSweepInterval;
 
+                // Genuine-filtered: a group that's just a different-granularity restatement of
+                // the same fact (found live 2026-08-19/20 to be the majority case) never counts
+                // as an open contradiction here, and never reaches the auto-reconcile path below —
+                // see ContinuityCompatibilityService.
                 List<ContradictionGroup> groups;
                 if (needFull)
                 {
-                    groups = continuity.GetContradictionGroups();
+                    groups = await compatibility.GetGenuineContradictionGroupsAsync(ct: stoppingToken);
                     LastFullSweepAt = DateTime.UtcNow;
                     LastSweepMode   = "full";
                 }
@@ -90,7 +96,7 @@ public class ContinuityLongSweepService : BackgroundService
                     // at the previous sweep timestamp isn't missed due to clock
                     // jitter or DB write latency.
                     var since = LastSweepAt!.Value - TimeSpan.FromMinutes(1);
-                    groups = continuity.GetContradictionGroupsSince(since);
+                    groups = await compatibility.GetGenuineContradictionGroupsSinceAsync(since, stoppingToken);
                     LastSweepMode = "incremental";
                 }
 
