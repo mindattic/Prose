@@ -764,7 +764,15 @@ public class TrinityReconciliationService(
         var lines = plainText.Split('\n');
         var lineIndex = Array.FindIndex(lines, l =>
             l.Contains(snippet, StringComparison.Ordinal) || l.Contains(snippet, StringComparison.OrdinalIgnoreCase));
-        if (lineIndex < 0) return null;
+        if (lineIndex < 0)
+        {
+            // LocateBeatForClaimAsync already confirmed the snippet is a substring of this same
+            // stripped beat text, so reaching here means the snippet spans a paragraph break (two
+            // \n-delimited lines) rather than living wholly inside one — a real, if rare, case
+            // distinct from "snippet not present at all."
+            log.LogWarning("[trinity] PatchBeatAsync refused for claim {Uid}: snippet is present in the beat but spans a paragraph break — no single line contains it whole.", losingClaim.ClaimUid);
+            return null;
+        }
 
         var oldLine = lines[lineIndex];
         var question =
@@ -773,16 +781,43 @@ public class TrinityReconciliationService(
             "Output ONLY the corrected paragraph — no commentary, no surrounding quotes.";
         var context = $"PARAGRAPH TO CORRECT:\n{oldLine}";
         var newLine = await llm.GenerateAsync(question, context, temperature: 0.1, maxTokens: 2048, ct: ct);
-        if (string.IsNullOrWhiteSpace(newLine)) return null;
+        if (string.IsNullOrWhiteSpace(newLine))
+        {
+            log.LogWarning("[trinity] PatchBeatAsync refused for claim {Uid}: LLM returned empty/whitespace.", losingClaim.ClaimUid);
+            return null;
+        }
         newLine = newLine.Trim().Trim('"');
 
-        if (newLine.Contains('\n') || newLine.Contains('\r')) return null; // would corrupt the line-array rejoin
-        if (string.Equals(newLine, oldLine.Trim(), StringComparison.Ordinal)) return null; // no-op ≠ success
-        if (IsUnsafeLinePatch(oldLine.Length, newLine.Length)) return null;
+        if (newLine.Contains('\n') || newLine.Contains('\r'))
+        {
+            log.LogWarning("[trinity] PatchBeatAsync refused for claim {Uid}: LLM output was multi-line — would corrupt the line-array rejoin.", losingClaim.ClaimUid);
+            return null;
+        }
+        if (string.Equals(newLine, oldLine.Trim(), StringComparison.Ordinal))
+        {
+            log.LogWarning("[trinity] PatchBeatAsync refused for claim {Uid}: LLM's rewrite was a no-op (identical to the original paragraph).", losingClaim.ClaimUid);
+            return null;
+        }
+        if (IsUnsafeLinePatch(oldLine.Length, newLine.Length))
+        {
+            log.LogWarning("[trinity] PatchBeatAsync refused for claim {Uid}: IsUnsafeLinePatch guard rejected the length swing ({OldLen} → {NewLen} chars).",
+                losingClaim.ClaimUid, oldLine.Length, newLine.Length);
+            return null;
+        }
 
         lines[lineIndex] = newLine;
         return string.Join('\n', lines);
     }
+
+    /// <summary>Strips markdown bold/backtick decoration (<c>**</c>, <c>`</c>) so bible-line
+    /// matching survives a bible regenerating its character-bullet formatting (e.g. <c>Name (slug)
+    /// - desc</c> → <c>**Name** (`slug`) - desc</c>) without the underlying fact changing. Found
+    /// live 2026-08-19: 5 losing bible claims (Ruslan Adeyinka, Breckenridge, Ferko Nzambe, Auda
+    /// Vane, Coeli Vantanen) all refused with "snippet no longer present verbatim" purely because
+    /// of this decoration, not because the asserted fact had actually changed. Only ever makes the
+    /// match MORE permissive than a raw <see cref="string.Contains(string)"/> — never a new false
+    /// refusal.</summary>
+    internal static string StripMarkdownDecoration(string s) => s.Replace("**", "").Replace("`", "");
 
     private async Task<string?> PatchBibleSectionAsync(string sectionContent, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
     {
@@ -790,8 +825,12 @@ public class TrinityReconciliationService(
         if (string.IsNullOrEmpty(snippet)) return null;
 
         var lines = sectionContent.Split('\n');
+        var normalizedSnippet = StripMarkdownDecoration(snippet);
         var lineIndex = Array.FindIndex(lines, l =>
-            l.Contains(snippet, StringComparison.Ordinal) || l.Contains(snippet, StringComparison.OrdinalIgnoreCase));
+        {
+            var normalizedLine = StripMarkdownDecoration(l);
+            return normalizedLine.Contains(normalizedSnippet, StringComparison.Ordinal) || normalizedLine.Contains(normalizedSnippet, StringComparison.OrdinalIgnoreCase);
+        });
         if (lineIndex < 0) return null;
 
         var oldLine = lines[lineIndex];

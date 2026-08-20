@@ -87,4 +87,39 @@ public class TrinityPatchGuardTests
         // must still be refused — the whole point of tightening from a naive 3x to 2x.
         Assert.That(TrinityReconciliationService.IsUnsafeLinePatch(2848, 10482), Is.True);
     }
+
+    // ── StripMarkdownDecoration ───────────────────────────────────────────────
+    // Found live 2026-08-19: a bible regeneration reformatted character bullets from
+    // "Name (slug) - desc" to "**Name** (`slug`) - desc" without the underlying fact changing,
+    // which broke PatchBibleSectionAsync's exact-line match for 5 real claims (Ruslan Adeyinka,
+    // Breckenridge, Ferko Nzambe, Auda Vane, Coeli Vantanen), all refused as "snippet no longer
+    // present verbatim" even though the fact was unchanged.
+
+    [Test]
+    public void StripMarkdownDecoration_RemovesBoldAsterisks()
+    {
+        Assert.That(TrinityReconciliationService.StripMarkdownDecoration("**Ruslan Adeyinka** - Salvage broker"),
+            Is.EqualTo("Ruslan Adeyinka - Salvage broker"));
+    }
+
+    [Test]
+    public void StripMarkdownDecoration_RemovesBackticks()
+    {
+        Assert.That(TrinityReconciliationService.StripMarkdownDecoration("(`auda-vane`)"), Is.EqualTo("(auda-vane)"));
+    }
+
+    [Test]
+    public void StripMarkdownDecoration_RemovesBothInOneLine_MatchesThePreDecorationOriginal()
+    {
+        var decorated = "**Breckenridge** (`breckenridge`) - ex-Arcturus Defense Solutions";
+        var original  = "Breckenridge (breckenridge) - ex-Arcturus Defense Solutions";
+        Assert.That(TrinityReconciliationService.StripMarkdownDecoration(decorated), Is.EqualTo(original));
+    }
+
+    [Test]
+    public void StripMarkdownDecoration_PlainTextWithNoDecoration_IsUnchanged()
+    {
+        var plain = "Ferko Nzambe - Junker, mid-fifties";
+        Assert.That(TrinityReconciliationService.StripMarkdownDecoration(plain), Is.EqualTo(plain));
+    }
 }
