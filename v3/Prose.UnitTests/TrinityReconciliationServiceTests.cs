@@ -1,5 +1,6 @@
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging.Abstractions;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
@@ -303,5 +304,51 @@ public class TrinityReconciliationServiceTests
     public void RevertDecisionAsync_UnknownDecisionId_Throws()
     {
         Assert.ThrowsAsync<InvalidOperationException>(async () => await svc.RevertDecisionAsync(Guid.NewGuid()));
+    }
+
+    // ── ScopeUniverseSlugs — config-overridable universe coverage ────────────
+    // NONFICTION/GOSPEL are deliberately, permanently excluded even via override (the panel
+    // vote's "more compelling" framing is a category error for real historical/scriptural
+    // content) — these tests only cover the override MECHANISM, not universe selection policy.
+
+    private TrinityReconciliationService BuildServiceWithConfig(IConfiguration? configuration)
+    {
+        var continuityApply = new ContinuityApplyService(continuityStore, voting: null!, dbFactory, NullLogger<ContinuityApplyService>.Instance);
+        return new TrinityReconciliationService(
+            continuityStore: continuityStore, continuityApply: continuityApply, extraction: null!,
+            canonDocs: canonDocs, bookArchive: null!, workbench: null!, voting: null!, llm: null!,
+            dbFactory: dbFactory, log: NullLogger<TrinityReconciliationService>.Instance,
+            configuration: configuration);
+    }
+
+    [Test]
+    public void ScopeUniverseSlugs_NoConfiguration_FallsBackToDefault()
+    {
+        var svcNoConfig = BuildServiceWithConfig(configuration: null);
+        Assert.That(svcNoConfig.ScopeUniverseSlugs, Is.EqualTo(new[] { "glmz", "scry", "fiction" }));
+    }
+
+    [Test]
+    public void ScopeUniverseSlugs_EmptyConfiguration_FallsBackToDefault()
+    {
+        var configuration = new ConfigurationBuilder().Build();
+        var svcWithConfig = BuildServiceWithConfig(configuration);
+        Assert.That(svcWithConfig.ScopeUniverseSlugs, Is.EqualTo(new[] { "glmz", "scry", "fiction" }));
+    }
+
+    [Test]
+    public void ScopeUniverseSlugs_ExplicitOverride_WidensScope()
+    {
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["Trinity:ScopeUniverseSlugs:0"] = "glmz",
+                ["Trinity:ScopeUniverseSlugs:1"] = "scry",
+                ["Trinity:ScopeUniverseSlugs:2"] = "fiction",
+                ["Trinity:ScopeUniverseSlugs:3"] = "horror",
+            })
+            .Build();
+        var svcWithConfig = BuildServiceWithConfig(configuration);
+        Assert.That(svcWithConfig.ScopeUniverseSlugs, Is.EqualTo(new[] { "glmz", "scry", "fiction", "horror" }));
     }
 }

@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MindAttic.Legion;
 using Prose.Core.Data;
@@ -37,7 +38,8 @@ public class TrinityReconciliationService(
     ILlmService llm,
     IDbContextFactory<ProseDbContext> dbFactory,
     ILogger<TrinityReconciliationService> log,
-    ContinuityCompatibilityService? compatibility = null)
+    ContinuityCompatibilityService? compatibility = null,
+    IConfiguration? configuration = null)
 {
     /// <summary>Falls back to a same-process instance (no test double registered) so existing
     /// call sites/tests built before this filter existed keep compiling and running unchanged;
@@ -45,10 +47,24 @@ public class TrinityReconciliationService(
     private ContinuityCompatibilityService Compatibility => compatibility ??=
         new ContinuityCompatibilityService(continuityStore, llm, dbFactory, Microsoft.Extensions.Logging.Abstractions.NullLogger<ContinuityCompatibilityService>.Instance);
 
-    /// <summary>The only universes Trinity Reconciliation ever touches. NONFICTION/GOSPEL are real
-    /// historical/scriptural content — no editorial "which is more compelling" judgment applies.
-    /// HORROR exists (6 nodes) but is deliberately excluded — a one-line addition if ever asked for.</summary>
-    private static readonly string[] ScopeUniverseSlugs = ["glmz", "scry", "fiction"];
+    /// <summary>The default universes Trinity Reconciliation ever touches. NONFICTION/GOSPEL are
+    /// deliberately and PERMANENTLY excluded — not "not yet piloted": the panel vote's own framing
+    /// ("pick the value that makes the story MORE COMPELLING") is a category error for real
+    /// historical/scriptural content, where the goal is factual accuracy to actual events/scripture,
+    /// not narrative compellingness. Do not add these two by config override without first changing
+    /// the voting question itself for that scope. HORROR/EROTICA are fiction-shaped (the
+    /// "compelling" framing is sound) and are one-line, config-only additions once actually piloted
+    /// per book (see the New Story Workflow's narrow-pilot discipline) — not on by default because
+    /// neither has been proven live through this mechanism yet.</summary>
+    private static readonly string[] DefaultScopeUniverseSlugs = ["glmz", "scry", "fiction"];
+
+    /// <summary>Config override point: "Trinity:ScopeUniverseSlugs" as a JSON array, e.g.
+    /// <c>["glmz","scry","fiction","horror"]</c>. Falls back to <see cref="DefaultScopeUniverseSlugs"/>
+    /// when unset — widening scope is always an explicit config change, never a code deploy.</summary>
+    internal string[] ScopeUniverseSlugs =>
+        configuration?.GetSection("Trinity:ScopeUniverseSlugs").Get<string[]>() is { Length: > 0 } configured
+            ? configured
+            : DefaultScopeUniverseSlugs;
 
     public record BookScopeEntry(Guid NodeId, string Slug, string Title, Guid UniverseId);
 
