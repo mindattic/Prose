@@ -9,17 +9,25 @@ The law lives in `docs/LOGIC.md`. This skill is the runbook. **Never launch vote
 or reviews from this skill** — if the user wants a score, they will say so explicitly.
 
 ## Fixed facts
-- DB: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose` (Windows Auth, read-only for audits).
-- Live book = enabled beats in reading order: `JOIN NodeBeats nb ... WHERE nb.IsEnabled = 1
-  ORDER BY nb.SortKey`. Books: chapter children by `Nodes.SortKey`, beats within by `nb.SortKey`.
-  NEVER order by `Beats.Number`.
+- **HARD, ABSOLUTE (2026-08-22): nothing reaches the database except through Prose.Hub — reads
+  AND writes, no exceptions.** An earlier version of this section instructed running raw `sqlcmd`
+  reads directly against `(localdb)\MSSQLLocalDB` for audit reading — that is retired and must
+  never be resurrected. **No Hub-routed command currently exists for bulk-reading a book's beats
+  (Number/Id/Text in reading order) for audit purposes.** Until one does, do not run this skill's
+  AUDIT step by querying the database yourself in any form — stop and tell the user this tooling
+  gap exists so a proper `prose --export-beats`-style command (or MCP equivalent) can be built.
+  Do not substitute a raw SQL read "just this once" to keep a sweep moving.
+- Live book = enabled beats in reading order: chapter children by `Nodes.SortKey`, beats within
+  by `BeatNodes.SortKey` — NEVER order by `Beats.Number` (not chapter-local; see project memory
+  on cross-book `Beat.Number` confusion). This describes the correct ordering ANY tool must use,
+  not an invitation to hand-write the join yourself.
 - Reports → `audit-outlines-<today>/logic/<CODE>.md`. Fix files → `.../fixes/<CODE>/`.
 - Text pushes via built exe `v3\Prose.Cli\bin\Release\net10.0\Prose.Cli.exe
   --beat update --id <guid> --text -` with OS-level `<` redirection (PowerShell pipelines inject
   BOM; verify `UNICODE(SUBSTRING(Text,1,1)) != 65279` after every push). One CLI invocation at a
   time (port). `dotnet run` may silently drop args — prefer the exe.
-- NEVER `DELETE` from Nodes/Beats/NodeBeats. Soft-disable = `UPDATE NodeBeats SET IsEnabled=0`.
-  Snapshot SortKeys to a backup file before re-seating.
+- NEVER `DELETE` from Nodes/Beats/NodeBeats, ever, from any surface. Soft-disable goes through the
+  CLI/MCP disable path, not a hand-written `UPDATE`.
 - Doc edits → `powershell -File tools/codex.ps1 digest` then `doctor` — must PASS.
 
 ## Steps

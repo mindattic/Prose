@@ -2,9 +2,21 @@
 
 Show a dashboard table of all non-archived strands with their Code, Title, Kind, Status, Score, and estimated Pages.
 
-## Instructions
+## Status: blocked pending a Hub-routed command (2026-08-22)
 
-Run the following SQL against `(localdb)\MSSQLLocalDB` database `Prose` and render the results as a markdown table, sorted by score descending (unscored last):
+This command previously instructed running a raw `sqlcmd` query against the database directly.
+That is no longer allowed under any circumstances — nothing reaches the database except through
+Prose.Hub (HARD, absolute rule; see project memory `feedback_all_writes_through_hub`). No CLI
+`--flag` or MCP tool currently exposes this dashboard's query (strand code/title/kind/status/score/
+page-count roll-up).
+
+**Do not fall back to raw `sqlcmd` to make this command work.** If the user invokes `/progress`,
+tell them a proper Hub-routed CLI/MCP command needs to be built first, and ask whether they want
+that built now or want the dashboard some other way (e.g. via the `/show` skill for a narrower
+lookup, or as a new `prose --strand-progress` CLI command).
+
+The original query this command ran, preserved here for reference when building the real
+replacement — this is DOCUMENTATION of intent, not something to execute directly:
 
 ```sql
 WITH latest_srs AS (
@@ -39,4 +51,7 @@ WHERE s.Status != 'archived'
 ORDER BY CASE WHEN srs.Score IS NULL THEN 1 ELSE 0 END, srs.Score DESC
 ```
 
-Use the Bash tool with `sqlcmd` to run this. Format the output as a clean markdown table with columns: **Code** | **Title** | **Kind** | **Status** | **Score** | **Pages**. Omit stub chapters (Pages = 0 AND Score = NULL) unless there are fewer than 10 rows total. Add a one-line summary at the end: total strands, total pages written, mean score across scored strands.
+Render target (once a real command exists): a clean markdown table with columns **Code** | **Title**
+| **Kind** | **Status** | **Score** | **Pages**. Omit stub chapters (Pages = 0 AND Score = NULL)
+unless there are fewer than 10 rows total. Add a one-line summary at the end: total strands, total
+pages written, mean score across scored strands.

@@ -437,12 +437,14 @@ pattern that became the rule: `Chapter 4 — Seeds, Lamps, and a Sea That Would 
   those get titles that are plain and grave (`Chapter 27 — The Nail, the Titulus, and the
   Governor Who Had the Last Word` is the ceiling; nothing lighter).
 
-The format is `"Chapter N — <title>"` (em dash, not hyphen — set it via
-a UTF-8 `.sql` script file run with `sqlcmd -f 65001`, never inline through a shell command; git
-Bash's default codepage silently flattens em dashes to plain hyphens otherwise, and this is easy
-to miss since the mangled output still looks plausible in a terminal that renders both the same
-width). Verify with `SELECT UNICODE(SUBSTRING(Title, <dash-position>, 1))` — must read `8212`,
-not `45`.
+The format is `"Chapter N — <title>"` (em dash, not hyphen). **Nothing reaches the database except
+through Prose.Hub — reads AND writes, no exceptions (HARD, absolute, 2026-08-22)** — set the title
+via the Hub-routed CLI/MCP node-update path, never a raw `sqlcmd` script, "emergency" or otherwise.
+git Bash's default codepage silently flattens em dashes to plain hyphens when a value passes
+through an inline shell command, and this is easy to miss since the mangled output still looks
+plausible in a terminal that renders both the same width — whatever path you use, verify the
+title actually landed with the real character (an app-layer read-back showing the title, not a
+raw `SELECT UNICODE(...)`, must show an em dash, not a hyphen).
 
 ### 5g0. PowerShell pipe corruption when bulk-inserting beats (`--beat insert`/`--beat update --text -`)
 

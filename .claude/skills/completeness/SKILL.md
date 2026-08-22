@@ -10,15 +10,23 @@ book is across the three coordinates (MEANING = bible, CONSTRUCTION = blueprint,
 plus its open QA findings and structure. Read-only. NO votes, NO panels, NO LLM.
 
 > **Scores retired (2026-08-03, docs/READER-QA.md):** the 0–100 panel score / SD / ballot
-> columns are REPLACED by **open findings by category** — query
-> `SELECT FilePath, Category, Severity FROM Findings WHERE Status IN ('New','Triaged')`,
-> group by book slug parsed from `FilePath` (`node:<slug>[/...]`), and show counts per
-> category (`ComprehensionDefect`/`CraftChecklist`/`ReaderGripe`/logic-sweep categories)
+> columns are REPLACED by **open findings by category** — group findings with
+> `Status IN ('New','Triaged')` by book slug parsed from `FilePath` (`node:<slug>[/...]`), and show
+> counts per category (`ComprehensionDefect`/`CraftChecklist`/`ReaderGripe`/logic-sweep categories)
 > with High severity highlighted. `Nodes.Score` is historical display only — never a column
 > to sort or gate on.
 
+## Status: steps 2-3 blocked pending Hub-routed commands (2026-08-22)
+
+**HARD, ABSOLUTE: nothing reaches the database except through Prose.Hub — reads AND writes, no
+exceptions.** This skill's steps 2 and 3 below previously instructed running raw `sqlcmd` SELECTs
+directly — that is retired and must never be resurrected, including "just this once" to keep a
+dashboard build moving. No Hub-routed command currently exposes the book-list-with-coverage query
+(step 2) or the SD/ballot rollup (step 3). Until one exists, **stop and tell the user this tooling
+gap exists** rather than substituting a raw SQL read. The SQL blocks below are preserved as
+documentation of intent for building the real replacement, not something to execute directly.
+
 ## Fixed facts
-- DB (read-only): `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "<query>"` (Windows Auth).
 - Book nodes = `Nodes.NodeType='book'` (TPH discriminator; in EF, `db.Nodes.OfType<BookNode>()`).
 - Coordination is `prose --coordinate --slug <slug>` — read-only, no LLM. It writes
   `reports/coordination/<CODE>.coordination.json` and stamps `## Beat Coordination Index` into
@@ -45,8 +53,9 @@ plus its open QA findings and structure. Read-only. NO votes, NO panels, NO LLM.
    `reports/coordination/<CODE>.coordination.json` files (fast). If a book has no report yet,
    coordinate it regardless.
 
-2. **List books + structure + score.** One query gives universe, code, chapter count, direct-beat
-   count (should be 0 — nonzero = flat book regression), and Node.Score:
+2. **List books + structure + score.** BLOCKED — see Status note above. Reference query only
+   (needs a real Hub-routed command before this step can run): universe, code, chapter count,
+   direct-beat count (should be 0 — nonzero = flat book regression), and Node.Score:
    ```sql
    SELECT u.Slug AS uni, n.NodeCode AS code, n.Title,
      (SELECT COUNT(*) FROM Nodes c WHERE c.ParentNodeId=n.Id AND c.NodeType='chapter') AS chapters,
@@ -56,7 +65,8 @@ plus its open QA findings and structure. Read-only. NO votes, NO panels, NO LLM.
    WHERE n.NodeType='book' ORDER BY u.Slug, n.NodeCode;
    ```
 
-3. **SD + ballots (clean).** Compute mean/SD/ballot count from valid ballots only:
+3. **SD + ballots (clean).** BLOCKED — see Status note above. Reference query only: compute
+   mean/SD/ballot count from valid ballots only:
    ```sql
    SELECT n.NodeCode,
      COUNT(CASE WHEN r.Score>0 THEN 1 END) AS ballots,

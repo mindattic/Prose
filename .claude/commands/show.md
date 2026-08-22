@@ -6,16 +6,30 @@ allowed-tools: Bash, Artifact, AskUserQuestion, Skill
 
 # /show — database lookup as an Artifact
 
+## Status: blocked pending a Hub-routed lookup path (2026-08-22)
+
+This command previously instructed querying the database directly via raw `sqlcmd`. That is no
+longer allowed under any circumstances — nothing reaches the database except through Prose.Hub
+(HARD, absolute rule; see project memory `feedback_all_writes_through_hub`). No CLI `--flag` or
+MCP tool currently exposes the flexible, arbitrary-lookup capability this command relies on.
+
+**Do not fall back to raw `sqlcmd` to make this command work.** If the user invokes `/show`, tell
+them a proper Hub-routed lookup path needs to exist first (e.g. an MCP tool or CLI command that
+accepts a subject/aspect query and returns the resolved data), and ask whether they want that
+built now or want the specific lookup done some other already-Hub-routed way.
+
+Everything below (§1-5) is preserved as domain-knowledge reference for building that real
+replacement — the resolution logic and table mappings are still correct, they just need to run
+through Hub instead of a raw connection string.
+
+---
+
 The user gives a loose, unordered tuple of words identifying something in the live Prose SQL
 database (not a file, not memory) and wants to *see* it — a readable profile page, not a wall of
 SQL output. `$ARGUMENTS` is that tuple, e.g. `character m-101`, `entity lyra`, `kyle weapon`,
 `pixel friends`, `pixel home`, `silence description`, `arcsec employees`. Word order never
 matters and the tuple is never a fixed schema — interpret it with judgment, the same way you'd
 answer if the user had just asked the question in prose.
-
-Query the DB directly: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "<query>" -h -1 -W`
-(Windows Auth, no `-U`/`-P`). Never touch memory or `docs/*.md` for this — the DB is the only
-source of truth here, and it returns in well under a second.
 
 ## 1. Split the tuple into a *subject* and an optional *aspect*
 

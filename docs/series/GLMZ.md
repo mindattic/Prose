@@ -366,8 +366,9 @@ book. Standalone stories may *allude* to mysteries but not answer them.
 
 ## 7. Entity Seeding Roadmap {#SS-GLMZ-COORD-§7}
 
-Entities that must exist in the DB before prose begins in each book.
-Verify: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "SELECT Name FROM Entities WHERE Name LIKE '%<name>%'"`
+Entities that must exist in the DB before prose begins in each book. Verify via the `/show` skill
+or an existing MCP/CLI lookup — nothing reaches the database except through Prose.Hub, reads
+included, no exceptions (HARD, absolute, 2026-08-22).
 
 ### Before Book 2 prose begins
 

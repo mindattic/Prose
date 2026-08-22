@@ -522,29 +522,26 @@ a foreign proper noun, a definitional "`Φ` = QUANTA" line, an em-dash sitting n
 instead of a space — needs the corrected character inferred from context and fixed by hand; the
 tool reports these for review rather than guessing.
 
-**Two workarounds discovered while fixing this by hand — written down so they are never
-rediscovered the hard way again:**
+**Why manual SQL bypasses of `ApplyFixAsync` are now flatly forbidden, not just error-prone —
+two real incidents recorded so the reasoning is never relitigated:**
+
+**HARD, ABSOLUTE (2026-08-22): nothing reaches the database except through Prose.Hub — reads AND
+writes, no exceptions.** Both incidents below happened specifically because a manual SQL script
+bypassed `TextIntegrityFinding.ApplyFixAsync` (the actual service, which already handles both
+problems correctly) — always use the service; never hand-write the fix.
 
 1. **`TextIntegrityFinding.Position` is 0-indexed (C# convention); SQL `STUFF`/`SUBSTRING` are
-   1-indexed.** `ApplyFixAsync` correctly adds 1 internally. But when a position is hand-copied
-   from the CLI's printed report into a manual SQL script (bypassing the service), forgetting that
-   +1 silently repairs the character **before** the real corruption, leaves the actual bad
-   character untouched, and clobbers whatever legitimate character used to sit one position
-   earlier. This happened for every manual fix attempted in this session before it was caught —
-   always re-derive the position from a fresh `UNICODE(SUBSTRING(...))` check against the live
-   row, never trust a hand-copied "Position:" number without adding 1 first.
+   1-indexed.** `ApplyFixAsync` correctly adds 1 internally. A manual script that hand-copied a
+   position from the CLI's printed report and forgot that +1 silently repaired the character
+   **before** the real corruption, leaving the actual bad character untouched and clobbering
+   whatever legitimate character used to sit one position earlier — this happened for every manual
+   fix attempted before it was caught.
 2. **A literal `--` (or other multi-character ASCII sequence) typed into a `sqlcmd -Q "..."`
-   string argument passed through bash is not reliable.** In this session it arrived in the
-   database as a single ASCII SUB control character (0x1A / codepoint 26), not two hyphens — some
-   layer of the bash → sqlcmd argument-passing chain collapsed or reinterpreted it. Any character
-   or short sequence that isn't a plain ASCII letter/digit — em-dashes, curly quotes, accented
-   letters, and apparently even a doubled hyphen — should be constructed with `NCHAR(<codepoint>)`
-   in the SQL itself, or written via the `Write` tool to a `.sql` file and run with `sqlcmd -i`,
-   never typed as a literal special character (or look-alike ASCII substitute) inside a `-Q`
-   argument. **Confirmed, not just theorized:** the 97-instance control-char corruption found the
-   same day was this exact codepoint (26, ASCII SUB) sitting in place of em-dashes across 11
-   books' bibles — this workaround describes the live mechanism that produced most of that
-   corpus-wide corruption, not a one-off.
+   string argument passed through bash is not reliable.** It arrived in the database as a single
+   ASCII SUB control character (0x1A / codepoint 26), not two hyphens — some layer of the bash →
+   sqlcmd argument-passing chain collapsed or reinterpreted it. This exact codepoint was later
+   found sitting in place of em-dashes across 11 books' bibles (97 instances corpus-wide) — this
+   manual-SQL mechanism is what produced most of that corruption, not a one-off mistake.
 
 ### The "unreachable service" anti-pattern
 
@@ -903,17 +900,17 @@ Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServer
 
 Windows Authentication — no `-U`/`-P` needed. Same as `appsettings.json` → `ConnectionStrings:Prose`.
 
-### Direct queries (read-only lookups)
+### Database access
 
-For book lists, scores, entity counts, and other read-only lookups, query the DB directly:
-
-```powershell
-sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "SELECT Name, Score FROM Nodes WHERE IsCanon = 1 ORDER BY Score DESC"
-```
-
-Only use `dotnet run --project v3/Prose.Cli -- <args>` when the CLI's business logic is actually
-needed (write operations, generation, publish, audit). Never use it just to answer a lookup
-question.
+**HARD, ABSOLUTE (2026-08-22): nothing reaches the database except through Prose.Hub — reads AND
+writes, no exceptions.** No raw `sqlcmd`, not even a read-only lookup — this section used to say
+otherwise and that guidance was wrong; it caused a real incident and must not be resurrected. For
+an ad hoc lookup (book lists, scores, entity counts, etc.), use the `/show` skill or an existing
+CLI `--flag` / MCP tool, both of which route through the running Prose.Hub process. If no such
+command exists for something you need, stop and tell the user the gap exists rather than falling
+back to a direct query — the Hub is what makes every change calibrated, tested, verified, and
+tracked by the rest of the system (reconciliation, self-heal, findings); a raw SQL statement,
+even read-only, bypasses that entirely.
 
 ### Schema reference
 
@@ -1309,8 +1306,11 @@ audited here — see the project's own `.csproj` if working on it directly.
 Raw T-SQL files live under `v3/Prose.Core/Data/Sql/`. Most are historical, pre-EF-migration schema
 deltas superseded by `v3/Prose.Core/Migrations/` — run individually via `prose --seed <name>`
 (see `SqlSeedService.Seeds` for registered names) only if a specific older environment needs them.
-A few small data-only scripts (e.g. universe seed inserts) are not yet registered anywhere and
-would need to be applied by hand with `sqlcmd` if a fresh DB is missing rows you expect.
+A few small data-only scripts (e.g. universe seed inserts) are not yet registered anywhere.
+**Nothing reaches the database except through Prose.Hub — reads AND writes, no exceptions (HARD,
+absolute, 2026-08-22).** If a fresh DB is missing rows from one of these unregistered scripts,
+register it in `SqlSeedService.Seeds` and run it via `prose --seed <name>` — do not apply it by
+hand with `sqlcmd`.
 
 ```powershell
 dotnet run --project v3/Prose.Cli -- --migrate-sql --schema
@@ -1472,10 +1472,13 @@ In active development. **Command-line only** since 2026-08-13 (Epoch 4) — no l
     output has been reviewed via `prose --morning-report`.
 11. `BookSequentialReads` was created via a raw T-SQL script
     (`v3/Prose.Core/Data/Sql/create_book_sequential_reads_20260815.sql`, applied directly to the
-    live dev DB) rather than an EF Core migration, and is not registered in `SqlSeedService.Seeds`
-    — a fresh clone/environment needs that script run by hand with `sqlcmd` before
-    `--sequential-read-status`/`--sequential-read-record` will work. No MCP tool exists for
-    sequential-read tracking, AutoCorrect, or blast-radius re-checks yet — all three are CLI-only.
+    live dev DB at the time) rather than an EF Core migration, and is not registered in
+    `SqlSeedService.Seeds` — a fresh clone/environment is currently missing this table until it's
+    registered as a proper `--seed` entry and run via `prose --seed <name>`. **Nothing reaches the
+    database except through Prose.Hub — reads AND writes, no exceptions (HARD, absolute,
+    2026-08-22)** — do not run this script by hand with `sqlcmd`; register it first. No MCP tool
+    exists for sequential-read tracking, AutoCorrect, or blast-radius re-checks yet — all three are
+    CLI-only.
 
 ---
 

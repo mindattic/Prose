@@ -50,25 +50,37 @@ misses anything nested deeper, exactly as it did here.
 
 ## Database Access
 
-For **read-only lookups** (node lists, scores, entity counts, etc.), query the local DB directly — returns in under a second:
+**HARD RULE, ABSOLUTE (author ruling 2026-08-22): nothing reaches the database except through
+Prose.Hub — reads AND writes, no exceptions.** No raw `sqlcmd`, not even a read-only `SELECT` to
+"just check a value." No direct EF/DbContext access outside the Hub process. Every interaction with
+the database — a one-line lookup, a data correction, a prose edit, an entity/alias change, a schema
+migration — goes through Prose.Hub, via `Prose.Cli.exe` (which forwards to the running Hub process)
+or an MCP tool that routes through it. The Hub exists so that every change is calibrated, tested,
+verified, and weighted through one gatekeeper; a raw SQL statement — even read-only — bypasses that
+entirely, and other subsystems (Trinity Reconciliation, self-heal, findings, hash-gated
+re-extraction) have no record it happened. This is what keeps the prose from drifting out from
+under itself. An earlier version of this section told readers to query the DB directly via `sqlcmd`
+for read-only lookups — that guidance was wrong and caused a real incident; do not resurrect it.
 
-```
-sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -Q "<query>"
-```
+For an ad hoc lookup, use the `/show` skill (looks up anything in the Prose database by loose
+natural-language description and renders it as a private Artifact) or an existing CLI `--flag` /
+MCP tool. **If no command exists for something you need to read or write, stop and tell the user
+the gap exists — do not self-authorize a raw SQL workaround, no matter how small, reversible, or
+well-reasoned it seems.** The user decides whether to build a proper Hub-routed tool first, do it
+another way, or grant a one-time documented exception.
 
-- Auth: Windows Authentication (no `-U`/`-P` needed)
-- Same server as `appsettings.json` → `ConnectionStrings.Prose`
-
-Only use `dotnet run --project v3/Prose.Cli -- <args>` when the CLI's business logic is actually needed (write operations, generation, publish, review). Never use it just to answer a lookup question.
-
-**Key schema facts for queries:**
-- **Beats → Nodes relationship:** Use `BeatNodes` table (fields: `NodeId`, `BeatId`, `SortKey`, `IsEnabled`)
-  - Pattern: `Beats b JOIN BeatNodes bn ON b.Id = bn.BeatId JOIN Nodes n ON bn.NodeId = n.Id`
+**Key schema facts** (for understanding query patterns the CLI/MCP tools use — not for you to run
+directly):
+- **Beats → Nodes relationship:** `BeatNodes` table (fields: `NodeId`, `BeatId`, `SortKey`, `IsEnabled`)
+  joins `Beats` to `Nodes` via `Beats b JOIN BeatNodes bn ON b.Id = bn.BeatId JOIN Nodes n ON bn.NodeId = n.Id`
 - **Beat scoring:** Column is `Score` (not `MeanScore`), type `float`; NULL if unscored
-- **Example:** Count beats in a book: `SELECT COUNT(*) FROM BeatNodes WHERE NodeId = @nodeId AND IsEnabled = 1`
-- **HARD RULE — Book→Chapter→Beat hierarchy:** Always verify all three levels before assessing a book. Books with chapters ARE books, even if ChapterBeats is empty. Use `scripts/book-status-audit.sql` to audit any book: `sqlcmd -S "(localdb)\MSSQLLocalDB" -d Prose -i scripts/book-status-audit.sql -v BookSlug="<slug>"`. Never say a book is "empty" or "planning stage only"—say "chapters structured, prose not yet written."
+- **HARD RULE — Book→Chapter→Beat hierarchy:** Always verify all three levels before assessing a book. Books with chapters ARE books, even if ChapterBeats is empty. Never say a book is "empty" or "planning stage only"—say "chapters structured, prose not yet written."
 
-**HARD RULE — no direct SQL deletes (SS-A37, tables renamed by SS-A43):** Never execute `DELETE FROM Nodes`, `DELETE FROM Beats`, or `DELETE FROM NodeBeats` as raw sqlcmd statements. These tables are system-versioned temporal tables — deleting via raw SQL bypasses all application guards and is unrecoverable without a point-in-time restore. Any book/beat removal must go through the CLI (`prose --beat delete`). If a book genuinely needs to be deleted, get explicit user confirmation naming the book by title and slug before touching the DB.
+**HARD RULE — no SQL deletes of any kind (SS-A37, tables renamed by SS-A43):** `Nodes`, `Beats`, and
+`BeatNodes` are system-versioned temporal tables — deleting via raw SQL bypasses all application
+guards and is unrecoverable without a point-in-time restore. Any book/beat removal must go through
+the CLI (`prose --beat delete`). If a book genuinely needs to be deleted, get explicit user
+confirmation naming the book by title and slug before touching the DB.
 
 **Node deletion cascade order (system rule):** When deleting a book node via `--delete-node`, the required order is beats → chapters → book node. The CLI handles this automatically (cascade was added 2026-07-18). Never try to delete a parent node before its chapter children — `FK_Nodes_ParentNode` will block it. Delete order for manual confirmation: (1) BeatNodes memberships + exclusive beats for the child chapter, (2) structural blueprints for the child, (3) the child chapter node, (4) then the same sequence for the parent book node.
 
@@ -484,23 +496,38 @@ for all prose writing — it coordinates all the services below and logs coverag
 | `StoryScienceService` | King + Storr craft laws: sacred-flaw consistency, status dynamics, curiosity gap, causal chains, sensory specificity | Always |
 | `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode + STORYSCOPE audit-finding loop-back | Node has a blueprint (`prose --generate-blueprint`) |
 | `NarrativeChartService` | Offscreen/parallel character activity (world continuity) | Always |
-| `WorldGraphService` | Entity pre-check — flags invented proper nouns not in canon | Always |
+| `UniverseGraphService` | Entity pre-check (soft gate — warns via a "do not invent backstory" prompt block, never blocks/corrects) — flags proper nouns in `BeatGoal` not present in `AllNodes()` | Always |
 | `PlantPayoffService` | Active plant/payoff pairs for the book | `BeatContext.NodeId != Guid.Empty` |
 | `BookAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
 | `LibertyReportService` / `SemanticFidelityService` / `CanonGroundingService` | Rule-of-Cool check, Goodhart intent-drift check, canon-grounding scaffold | Always (findings loop back into later beats) |
 
-`EmotionalDepthService` (8-dim Want/Need/Wound rubric) is **not** called by ProseWriterRouter directly —
-it only runs via `--examine-emotion` / `BookHealthService` DEEP tier, and its `EMOTIONAL-DEPTH`-prefixed
-findings become live guidance one beat later through the generic findings-loop-back mechanism.
+Note: there is no class named `WorldGraphService` in the live tree — the entity-graph service is
+`UniverseGraphService`. `UniverseGraphService.GetEntityBrief`/`GetSceneContext`/`GetContextForNode`
+already implement richer relationship-aware formatting (`[RelationType] OtherName — description`)
+but are not called anywhere in `ProseWriterRouter` — only `AllNodes()` is, for the name-check above.
+Relationship/edge semantics for the roster that IS assembled come from `SceneContextAssembler`
+instead (see its `RELATIONSHIPS:` block, wired 2026-08-21 — previously the graph-expansion pass
+loaded `Edges` rows only to decide roster membership and discarded `RelationType`/`Description`
+before they ever reached the prompt).
 
-**Two other generation entry points exist and do NOT share this enrichment chain** (found 2026-08-09,
-not yet reconciled — treat as a known gap, not a bug to silently "fix" by deleting either path
-without confirming with the author first): `StoryDirectorService` (the "Surprise Me" autonomous
-pipeline, `--write-story`/`--story-refine`) hand-rolls its own pacing/methodology calls and has zero
-wiring to `StructuralBlueprintService`, `EmotionalDepthService`, `TensionEscalationService`,
-`StoryScienceService`, or `DelightProseGuidance`. `Write.razor` (legacy pre-`NodeMigrationService`
-Books/Chapters UI) calls `BeatGeneratorService.GenerateBeatAsync` directly, bypassing
-`ProseWriterRouter` and every enrichment above.
+`EmotionalDepthService` (8-dim Want/Need/Wound rubric) is **not** called by ProseWriterRouter directly —
+it only runs via `--examine-emotion`, `BookHealthService` DEEP tier, or the hash-gated daily
+`SanityScanBackgroundService` sweep (draft tier, added 2026-08-21 — skips a book whose beat text is
+unchanged since its last examination), and its `EMOTIONAL-DEPTH`-prefixed findings become live
+guidance one beat later through the generic findings-loop-back mechanism.
+
+**One other generation entry point exists and does NOT share this enrichment chain.** `StoryDirectorService`
+and `Write.razor` (the two entry points originally flagged here 2026-08-09) were both deleted
+2026-08-13 along with the entire Blazor UI (commit `ed22bd4f6`, "Command-line only") — the project
+is CLI/MCP/Hub-only now, not Blazor Server. The still-live bypass is `SceneGenerationService`
+(`v3/Prose.Core/Services/SceneGenerationService.cs`): it hand-rolls its own XRay/DocContext/pacing
+calls via `BeatGeneratorService.GenerateBeatAsync` directly, skipping `ContinuityService`,
+`PlantPayoffService`, `BookAuditService`, `TensionEscalationService`, `ReaderKnowledgeService`,
+`StoryScienceService`, `StructuralBlueprintService`, and the entity pre-check entirely. Confirmed
+2026-08-21: it is DI-registered and has its own unit test (`SceneGenerationServiceLifetimeTests`)
+but zero call sites in `Prose.Cli`/`Prose.Mcp`/`Prose.Hub` — dead code left over from the deleted
+UI, not a live gap, but a landmine if anyone wires a new command to it without going through
+`ProseWriterRouter` instead.
 
 ### Narrative Mode — Original vs Retelling vs Historical (added 2026-08-18)
 

@@ -53,12 +53,10 @@ add_deprecated_name("OldName", "NewName", notes="Why it was renamed")
 prose --validate-nouns --slug <slug>
 ```
 
-**Via sqlcmd** (emergency / bulk seed):
-```sql
-SET QUOTED_IDENTIFIER ON;
-INSERT INTO DeprecatedEntityNames (UniverseId, DeprecatedName, CanonicalName, Notes, AddedAt)
-VALUES ('0197E9C9-0001-7000-8000-000000000001', 'OldName', 'NewName', 'reason', GETUTCDATE());
-```
+**Nothing reaches the database except through Prose.Hub — reads AND writes, no exceptions (HARD,
+absolute, 2026-08-22).** There is no raw-SQL fallback for this, "emergency" or otherwise — if the
+MCP tool isn't connected and the CLI equivalent doesn't exist yet, stop and tell the user the gap
+exists rather than inserting a `DeprecatedEntityNames` row directly.
 
 ## When to Run
 

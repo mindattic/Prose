@@ -57,9 +57,13 @@ rollup, never a vote) plus every underlying check's pass/fail detail.
    JSON `FindingsDeduction`/`RateAdjustments`/`Checks` — this is the authoritative "what's
    wrong" list; don't re-derive it by eyeballing prose.
 
-3. **PULL THE FINDINGS LIST** scoped to this book (the MCP `list_findings` inbox has no
-   node filter — query the `Findings` table directly, scoped to the book's leaf descendant
-   ChapterIds, so books can be triaged independently):
+3. **PULL THE FINDINGS LIST** scoped to this book. **HARD, ABSOLUTE (2026-08-22): nothing reaches
+   the database except through Prose.Hub — reads AND writes, no exceptions.** The MCP
+   `list_findings` inbox has no node filter, and no Hub-routed command currently scopes `Findings`
+   (or `BeatVerifications`) to a book's leaf-descendant chapters. Until one exists, stop and tell
+   the user this tooling gap exists rather than querying `Findings`/`BeatVerifications` directly —
+   do not substitute a raw SQL read "just for triage." The join shape below (book → leaf-descendant
+   ChapterIds → matching findings) is preserved as reference for building the real command.
    ```sql
    WITH Descendants AS (
      SELECT Id AS BookId, Id AS DescId FROM Nodes WHERE NodeCode = '<CODE>'
@@ -68,9 +72,6 @@ rollup, never a vote) plus every underlying check's pass/fail detail.
    FROM Findings f JOIN Descendants d ON d.DescId = f.ChapterId
    WHERE f.Status IN ('New','Triaged') ORDER BY f.Severity DESC;
    ```
-   Also pull `BeatVerification` BLOCKER/MODERATE rows for this book's beats directly (these
-   don't always mirror into `Findings`): `SELECT * FROM BeatVerifications WHERE BeatId IN (...)
-   AND Result='Fail' ORDER BY Severity`.
 
 4. **TRIAGE.** BLOCKER/High: always fix. MODERATE: fix unless the call is a genuine editorial
    judgment (record it as deferred, don't force it). MINOR: fix only if it's a one-word/clause
