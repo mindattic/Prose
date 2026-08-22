@@ -469,6 +469,33 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
             relinked += touchedPks.Count;
         }
 
+        // Post-relink self-alias cleanup (found live 2026-08-22, first real merges after this
+        // method shipped): relinking a *Aliases row's {Type}Id to the winner has no idea whether
+        // the loser's alias Value happens to equal the WINNER's own canonical Name — e.g. merging
+        // "Chen" (loser) into "Mrs. Chen" (winner) relinked a "Mrs. Chen" alias row (originally on
+        // the loser) onto the winner, producing a self-referential alias the generic FK-relink
+        // loop above has no way to know is now redundant/wrong. Confirmed live: exactly this
+        // happened for two of the first three real BCODA merges (Femi Kasparov→Femi, Chen→Mrs.
+        // Chen), caught by WorldValidationTests.NoSelfAliases. Any table whose name ends in
+        // "Aliases" is assumed to follow this codebase's uniform alias-bridge shape (Id,
+        // {Type}Id, Position, Value — confirmed for Character/Place/Faction/Weapon); the cleanup
+        // is skipped, not thrown, for any table that doesn't actually have a Value column.
+        var winnerName = await db.Entities.AsNoTracking()
+            .Where(e => e.Id == winnerId).Select(e => e.Name).FirstOrDefaultAsync(ct) ?? "";
+        if (winnerName.Length > 0)
+        {
+            foreach (var fk in fkColumns.Where(fk => fk.Table.EndsWith("Aliases", StringComparison.OrdinalIgnoreCase)))
+            {
+                try
+                {
+                    var selfAliasUndo = await DeleteSelfAliasesAndCaptureAsync(
+                        db, fk.Table, fk.Column, fk.PkColumn, winnerId, winnerName, ct);
+                    undoLog.AddRange(selfAliasUndo);
+                }
+                catch (SqlException) { /* table doesn't have a Value column — not an alias-shaped table after all, skip */ }
+            }
+        }
+
         // Delete the loser's own Entities row last — every real FK pointing at it was relinked
         // above, so this is now safe. Reuses DeleteAndCaptureAsync exactly as-is (same
         // capture-as-JSON-then-delete shape already used for the 1:1-collision case) rather than
@@ -556,6 +583,44 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
 
         await db.Database.ExecuteSqlRawAsync(
             $"DELETE FROM [dbo].[{table}] WHERE [{column}] = @loser", [new SqlParameter("@loser", loserId)], ct);
+
+        return result;
+    }
+
+    /// <summary>Same capture-then-delete shape as <see cref="DeleteAndCaptureAsync"/>, but scoped
+    /// to post-merge self-alias cleanup: deletes rows on <paramref name="table"/> where the FK
+    /// column already equals <paramref name="winnerId"/> (i.e. relinked there by this same merge)
+    /// AND the row's own <c>Value</c> matches <paramref name="winnerName"/> case-insensitively —
+    /// a genuine self-alias, redundant now that the row points at the entity whose own name it
+    /// duplicates. Throws <see cref="SqlException"/> (caught by the caller) if the table has no
+    /// <c>Value</c> column, meaning it isn't actually alias-shaped despite the name match.</summary>
+    private static async Task<List<RowMutationUndo>> DeleteSelfAliasesAndCaptureAsync(
+        ProseDbContext db, string table, string column, string pkColumn, Guid winnerId, string winnerName, CancellationToken ct)
+    {
+        var pars = new object[] { new SqlParameter("@winner", winnerId), new SqlParameter("@name", winnerName) };
+
+        var jsonChunks = await db.Database.SqlQueryRaw<string>($"""
+            SELECT * FROM [dbo].[{table}] WHERE [{column}] = @winner AND LOWER([Value]) = LOWER(@name) FOR JSON AUTO
+            """, pars).ToListAsync(ct);
+        var json = string.Concat(jsonChunks);
+
+        var result = new List<RowMutationUndo>();
+        if (!string.IsNullOrEmpty(json))
+        {
+            var rows = System.Text.Json.JsonSerializer.Deserialize<List<Dictionary<string, object?>>>(json)
+                ?? throw new InvalidOperationException($"Could not parse captured row-set JSON for {table}.");
+            foreach (var dict in rows)
+            {
+                var pkValue = dict.TryGetValue(pkColumn, out var pkv) ? pkv?.ToString() ?? "" : "";
+                var columns = dict
+                    .Where(kv => !TemporalPeriodColumns.Contains(kv.Key))
+                    .ToDictionary(kv => kv.Key, kv => kv.Value?.ToString());
+                result.Add(new RowMutationUndo("delete", table, pkColumn, pkValue, columns));
+            }
+
+            await db.Database.ExecuteSqlRawAsync(
+                $"DELETE FROM [dbo].[{table}] WHERE [{column}] = @winner AND LOWER([Value]) = LOWER(@name)", pars, ct);
+        }
 
         return result;
     }

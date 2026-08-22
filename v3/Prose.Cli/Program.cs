@@ -118,6 +118,15 @@ if (UniverseBootstrap.RequestedSlug == null
         // and resolves the beat's own NodeId from BeatNodes directly — no ambient scope to
         // resolve, same shape as --merge-entity above.
         "--beat-archive",
+        // Strand Progress Dashboard: every non-archived book across every universe, by design
+        // (IgnoreQueryFilters() — see ProgressCli's own doc comment).
+        "--progress",
+        // /show lookup: subject could be in any universe; searches every universe by design
+        // (IgnoreQueryFilters() — see ShowCli's own doc comment).
+        "--show",
+        // Corpus-wide self-alias repair: scans every universe's Character/Place/Faction/Weapon
+        // aliases by design — see FixSelfAliasesCli's own doc comment.
+        "--fix-self-aliases",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -2350,6 +2359,31 @@ if (args.Contains("--close-all-sessions"))
 if (args.Contains("--coordinate"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("CoordinateCli", args);
+    return;
+}
+
+// Strand Progress Dashboard: every non-archived book, code/title/kind/status/score/pages,
+// sorted by score descending. Cross-universe by design. See .claude/commands/progress.md.
+if (args.Contains("--progress"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProgressCli", args);
+    return;
+}
+
+// /show lookup: resolve a subject (name/slug/alias) to one Entity or Node and return a
+// structured profile. See .claude/commands/show.md.
+if (args.Contains("--show"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ShowCli", args);
+    return;
+}
+
+// Corpus-wide repair: remove CharacterAlias/PlaceAlias/FactionAlias/WeaponAlias rows whose
+// Value matches their own owning entity's Name — a redundant self-alias, usually a leftover
+// from an entity merge that relinked a loser's alias onto the winner it now duplicates.
+if (args.Contains("--fix-self-aliases"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FixSelfAliasesCli", args);
     return;
 }
 
