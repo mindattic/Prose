@@ -1,9 +1,14 @@
 #!/usr/bin/env sh
 # ─────────────────────────────────────────────────────────────────────────────
-# Pre-commit gate: Prose's trusted LLM voting panel (legion.json:
-# claude / openai / gemini / deepseek) must authenticate LIVE before a commit.
-# prose --legion and the continuity auto-resolver depend on it — no point
-# committing when a panel key is dead.
+# Pre-commit gate: when Legion voting is enabled (legion.json "votingEnabled"),
+# the trusted panel (claude / openai / gemini / deepseek) must authenticate
+# LIVE before a commit — no point committing when a panel key is dead.
+#
+# Legion voting is OFF by default project-wide (SS-A44) and, per author ruling
+# 2026-08-22, considered unreliable in practice (never once caught a real
+# defect) — LiveKeyValidationTests skips this check entirely with no network
+# calls while votingEnabled=false, so this gate is a no-op until voting is
+# re-enabled.
 #
 # Offline / no-network bypass (use sparingly):
 #   SKIP_LLM_KEY_CHECK=1 git commit -m "..."

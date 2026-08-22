@@ -452,6 +452,16 @@ public class LogicSweepService(
             decision the text gives no motivation for, a character doing something they were
             never shown able to do.
 
+            IMPORTANT — revealed later is NOT the same as never established. Many books use
+            nonlinear intercutting, flashback structure, or a deliberate gradual/withheld reveal
+            (mystery pacing, dramatic irony, first-mention texture that pays off chapters later).
+            Before flagging a missing cause or origin, check the WHOLE book you were given, not
+            just the beats preceding the one you're looking at in reading order — if any beat
+            anywhere in the text (earlier OR later) establishes the cause, motivation, or
+            capability, this is not a violation, even if it reads as unexplained in the moment.
+            Only flag when the text never establishes it anywhere, or when a later beat actively
+            CONTRADICTS the earlier one rather than merely explaining it after the fact.
+
             Return ONLY a JSON array (no prose wrapper), one entry per real problem found:
             [{"beat_number": <int>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "cite what happens and why it has no established cause", "fix": "one concrete sentence or null"}]
             Return [] if the causality chain holds. Do not invent problems you cannot cite a
@@ -473,6 +483,18 @@ public class LogicSweepService(
             Track who knows what, and when they learned it. Nobody may act on knowledge they
             have not yet been shown to possess — a character referencing a fact, name, or event
             before the text establishes they learned it is a violation.
+
+            IMPORTANT — revealed later is NOT the same as never established. Many books use
+            nonlinear intercutting, flashback structure, or a deliberate gradual/withheld reveal
+            (mystery pacing, dramatic irony, first-mention texture that pays off chapters later).
+            Before flagging a character acting on unestablished knowledge, check the WHOLE book
+            you were given, not just the beats preceding the one you're looking at in reading
+            order — if any beat anywhere in the text (earlier OR later) shows how/when that
+            character learned it, or the book's own structure makes clear this is a flash-forward
+            or intentionally withheld origin, this is not a violation. Only flag when the
+            knowledge is never grounded anywhere in the full text, or when the timeline is
+            genuinely impossible (they could not have learned it by any account, not merely that
+            the text delays telling the reader how).
 
             Return ONLY a JSON array (no prose wrapper), one entry per real problem found:
             [{"beat_number": <int>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "name who acts on knowledge they shouldn't have and cite what they say/do", "fix": "one concrete sentence or null"}]

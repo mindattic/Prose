@@ -1,5 +1,6 @@
 using System.Net.Http;
 using MindAttic.Legion;
+using Prose.Core.Services;
 
 namespace Prose.UnitTests;
 
@@ -11,9 +12,16 @@ namespace Prose.UnitTests;
 ///
 /// <para>The <c>LiveKeysTrusted</c>-tagged gate is wired into the Prose
 /// <c>pre-commit</c> hook (<c>.githooks/pre-commit</c>): no point committing when
-/// a panel key is dead — <c>prose --legion</c> and the continuity auto-resolver both
-/// depend on it. Kept <c>[Explicit]</c> so normal <c>dotnet test</c> stays
-/// offline/deterministic.</para>
+/// a panel key is dead and Legion voting is actually in use. Skips entirely
+/// (no network calls) when <c>legion.json</c>'s <c>votingEnabled</c> is false —
+/// author ruling 2026-08-22: Legion's multi-provider "voting" never once caught
+/// a real defect (a contradiction, a dead character reappearing) in practice,
+/// it's disabled by default project-wide (SS-A44, <see cref="VotingGate"/>), and
+/// a flaky third-party key (e.g. DeepSeek timing out) has no business blocking
+/// an unrelated code commit for a feature nobody is running. Re-enable this
+/// check automatically by flipping <c>votingEnabled</c> back to <c>true</c> if
+/// Legion voting is ever trusted again. Kept <c>[Explicit]</c> so normal
+/// <c>dotnet test</c> stays offline/deterministic.</para>
 /// <code>
 ///   dotnet test --filter "Category=LiveKeysTrusted"   # the pre-commit gate
 /// </code>
@@ -29,6 +37,12 @@ public class LiveKeyValidationTests
     [Category("LiveKeysTrusted")]
     public async Task TrustedPanel_EveryKeyAuthenticatesLive()
     {
+        if (!VotingGate.ReadVotingEnabledDefault())
+        {
+            Assert.Pass("Legion voting is disabled (legion.json votingEnabled=false) — " +
+                        "no panel keys are actually in use, skipping live validation.");
+        }
+
         using var http = new HttpClient { Timeout = ProbeTimeout + TimeSpan.FromSeconds(5) };
         var client = new LegionClient(http, LegionClientOptions.NoResilience);
         var health = new LlmHealthCheck(client);
