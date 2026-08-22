@@ -137,6 +137,31 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_CommonWordLeadingTokenInCharacterName_IsNotDerivedAsBareCandidate()
+    {
+        // Found live 2026-08-22 (BCODA logic sweep): "Sunday Alarcon", "Unit 7-Gamma", "Last Word",
+        // "Patient Zero", and "Can Zaragoza" each derived a bare, ordinary-English leading token
+        // ("Sunday", "Unit", "Last", "Patient", "Can") via the given-name/surname split, mistagging
+        // every unrelated occurrence of that word in the book's prose (e.g. "Last week", "Can you
+        // pull the data"). Same failure class as "first" above.
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var names = new[] { "Sunday Alarcon", "Unit 7-Gamma", "Last Word", "Patient Zero", "Can Zaragoza" };
+        foreach (var name in names)
+        {
+            var id = Guid.NewGuid();
+            db.Entities.Add(new Entity { Id = id, UniverseId = universeId, EntityType = "character", Name = name, Slug = name.ToLowerInvariant().Replace(" ", "-"), Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+            db.Characters.Add(new Character { Id = id, Name = name });
+        }
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        foreach (var bareWord in new[] { "Sunday", "Unit", "Last", "Patient", "Can" })
+            Assert.That(candidates.Any(c => c.Text == bareWord), Is.False,
+                $"'{bareWord}' must never be derived as a bare standalone tagging candidate");
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_ShortAlias_IsExcludedAcrossAllTypes()
     {
         // The >=3-char guard must apply uniformly to the new alias sources too, not just Character.

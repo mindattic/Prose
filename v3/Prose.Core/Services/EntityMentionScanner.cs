@@ -44,8 +44,19 @@ public static class EntityMentionScanner
     // in the book's prose (e.g. "First light") got mistagged as that character. Same failure class
     // as the "The X"-alias bug above, just reached through name-derivation instead of a curated
     // alias row -- any future title-word/ordinal found doing this should be added here the same way.
+    //
+    // "sunday"/"unit"/"last"/"patient"/"can" joined 2026-08-22 (BCODA logic sweep), same exact
+    // failure mode as "first": each is tokens[0] of a real multi-word character name -- "Sunday
+    // Alarcon", "Unit 7-Gamma", "Last Word", "Patient Zero", "Can Zaragoza" -- so every ordinary-
+    // English use of that word ("last week", "Can you pull...", "Unit 3", "Patient. Correct.")
+    // mistagged as that character corpus-wide. NOT added here (different bug, needs a data fix
+    // instead -- see plan): single-word full entity Names that are themselves ordinary words
+    // ("Green", "Cut", "drifting" -- character/vocabulary entities whose canonical Name IS the
+    // common word, not a derived token) and curated-alias mismatches ("the wall"/"the face"/
+    // "the counter" registered as a character alias, "Eight" as an alias for "Sumi Okeke") --
+    // those need per-entity alias/name cleanup, a stopword can't fix a full canonical Name match.
     private static readonly HashSet<string> Stopwords =
-        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first" };
+        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can" };
 
     public sealed record MentionCandidate(string Text, Guid EntityId, string Name, string EntityType, bool RequiresStrictCase);
 
