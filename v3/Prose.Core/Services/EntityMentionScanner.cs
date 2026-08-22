@@ -36,8 +36,16 @@ public static class EntityMentionScanner
     // to prevent, just reached through a curated-alias source instead of a common noun. The bad rows
     // themselves are a separate, tracked data cleanup (see plan's "Also track"); this filter is the
     // root-cause code fix that stays correct regardless of whether that cleanup ever runs.
+    //
+    // "first" joined this set 2026-08-22 (VIGL logic sweep): the given-name/surname derivation
+    // below takes tokens[0] of ANY multi-word character name as a candidate, with no way to tell
+    // a personal given name from a leading rank/title word. "First Archivist Aurel Verlaine" derived
+    // bare "First" as a standalone tag, so every ordinary occurrence of the word "First" anywhere
+    // in the book's prose (e.g. "First light") got mistagged as that character. Same failure class
+    // as the "The X"-alias bug above, just reached through name-derivation instead of a curated
+    // alias row -- any future title-word/ordinal found doing this should be added here the same way.
     private static readonly HashSet<string> Stopwords =
-        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al" };
+        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first" };
 
     public sealed record MentionCandidate(string Text, Guid EntityId, string Name, string EntityType, bool RequiresStrictCase);
 

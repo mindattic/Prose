@@ -117,6 +117,26 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_LeadingTitleWordInCharacterName_IsNotDerivedAsBareCandidate()
+    {
+        // Found live 2026-08-22 (VIGL logic sweep): "First Archivist Aurel Verlaine" derived bare
+        // "First" as a standalone tag via the given-name/surname split, mistagging every ordinary
+        // occurrence of the word "First" in the book's prose (e.g. "First light").
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var id = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = id, UniverseId = universeId, EntityType = "character", Name = "First Archivist Aurel Verlaine", Slug = "first-archivist-aurel-verlaine", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = id, Name = "First Archivist Aurel Verlaine" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => c.Text == "First"), Is.False,
+            "a leading title/rank word must never be derived as a bare standalone tagging candidate");
+        Assert.That(candidates.Any(c => c.Text == "Verlaine" && c.EntityId == id), Is.True,
+            "the trailing surname token should still be derived normally");
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_ShortAlias_IsExcludedAcrossAllTypes()
     {
         // The >=3-char guard must apply uniformly to the new alias sources too, not just Character.
