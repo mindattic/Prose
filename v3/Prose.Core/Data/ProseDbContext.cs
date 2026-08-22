@@ -834,8 +834,17 @@ public class ProseDbContext : DbContext
             e.Property(x => x.RuleVersion).HasMaxLength(40);
             e.HasOne(x => x.Beat).WithMany()
                 .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+            // Filtered: excludes CheckType="QuoteGrounding", which is an append-only historical
+            // claim-check log (BeatVerificationService.VerifyQuoteGroundingAsync inserts a new row
+            // per claim, by design, so a beat cited by multiple sweeps over time accumulates many
+            // rows). An unfiltered unique index here made every beat's SECOND-EVER quote check
+            // (from any sweep, any session) throw a DbUpdateException on save — found 2026-08-22
+            // triaging a BCODA sweep: any beat quote-checked once in a past logic sweep could never
+            // be quote-checked again. All other CheckType values are still genuinely one-row upserts
+            // (they describe a beat's current intrinsic state) and keep the uniqueness guarantee.
             e.HasIndex(x => new { x.BeatId, x.CheckType }).IsUnique()
-                .HasDatabaseName("UX_BeatVerifications_Beat_CheckType");
+                .HasDatabaseName("UX_BeatVerifications_Beat_CheckType")
+                .HasFilter("[CheckType] <> 'QuoteGrounding'");
             e.HasIndex(x => x.BeatId);
             e.HasIndex(x => new { x.Result, x.Severity });
             e.HasIndex(x => x.RuleVersion);

@@ -535,8 +535,19 @@ public class BeatVerificationService
         else
         {
             var normalizedQuote = NormalizeForComparison(claimedQuote);
-            var normalizedText  = NormalizeForComparison(beat.Text ?? string.Empty);
-            var found = normalizedQuote.Length > 0 && normalizedText.Contains(normalizedQuote, StringComparison.Ordinal);
+            // Strip inline <entity guid="...">Name</entity> tags before comparing — same fix
+            // LogicSweepService.QuotedEvidenceAppearsInBeat already applies (2026-08-14): a tag
+            // wrapping a proper noun inside a genuinely-quoted span breaks literal Contains()
+            // continuity and turns a true, correctly-cited quote into a false "fabricated" verdict.
+            // Confirmed live 2026-08-22 (BCODA sweep): "Moss, from an earlier job" and "the catalog
+            // value of the Atlas hardware..." both failed this check purely because "Moss"/"Atlas"
+            // were entity-tagged in the stored text, not because the quotes were fabricated.
+            var normalizedText = NormalizeForComparison(BeatMarkup.StripEntityTags(beat.Text ?? string.Empty));
+            // Case-insensitive: a re-typed or paraphrase-adjacent quote (e.g. mid-sentence lowercase
+            // vs. the beat's actual sentence-initial capital) is not fabrication — same "don't reject
+            // over incidental transcription differences" principle as the dash/quote normalization
+            // above.
+            var found = normalizedQuote.Length > 0 && normalizedText.Contains(normalizedQuote, StringComparison.OrdinalIgnoreCase);
 
             result = found
                 ? new(beatId, "QuoteGrounding", "Pass", "BLOCKER",
