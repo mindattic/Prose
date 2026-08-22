@@ -1,0 +1,97 @@
+<div class="p-4 repos-tab">
+    <h4>Repositories</h4>
+    <p class="muted">
+        Browse entities by repository/type. Backed by <code>prose --browse-repository</code> /
+        <code>browse_repository</code>.
+    </p>
+
+    @if (selectedType == null)
+    {
+        @if (loadingTypes)
+        {
+            <p class="muted">Loading…</p>
+        }
+        else
+        {
+            <div class="type-grid">
+                @foreach (var t in types)
+                {
+                    <button class="type-card" @onclick="() => SelectTypeAsync(t.Type)">
+                        <span class="type-name">@t.Type</span>
+                        <span class="type-count">@t.Count</span>
+                    </button>
+                }
+            </div>
+        }
+    }
+    else
+    {
+        <div class="browse-toolbar">
+            <button class="btn" @onclick="BackToTypes">&larr; Types</button>
+            <strong>@selectedType</strong>
+            <input class="txt" placeholder="Search..." @bind="search" @bind:event="oninput" />
+            <button class="btn" @onclick="() => BrowseAsync(1)">Search</button>
+        </div>
+
+        @if (loadingRows)
+        {
+            <p class="muted">Loading…</p>
+        }
+        else if (browseResult != null)
+        {
+            <p class="muted">@browseResult.Total total, page @browseResult.Page</p>
+            @foreach (var row in browseResult.Rows)
+            {
+                <div class="entity-row">
+                    <span class="entity-name">@row.Name</span>
+                    <span class="entity-status">@row.Status</span>
+                    <span class="entity-slug">@row.Slug</span>
+                </div>
+            }
+            <div class="pager">
+                <button class="btn" disabled="@(browseResult.Page <= 1)" @onclick="() => BrowseAsync(browseResult.Page - 1)">Prev</button>
+                <button class="btn" disabled="@(browseResult.Page * browseResult.PageSize >= browseResult.Total)" @onclick="() => BrowseAsync(browseResult.Page + 1)">Next</button>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    [Inject] private ObserverHttpClient api { get; set; } = default!;
+
+    private List<RepositoryTypeCountDto> types = [];
+    private bool loadingTypes = true;
+    private string? selectedType;
+    private string search = "";
+    private bool loadingRows;
+    private BrowseRepositoryResultDto? browseResult;
+
+    protected override async Task OnInitializedAsync()
+    {
+        types = await api.ListRepositoryTypesAsync();
+        loadingTypes = false;
+    }
+
+    private async Task SelectTypeAsync(string type)
+    {
+        selectedType = type;
+        search = "";
+        await BrowseAsync(1);
+    }
+
+    private void BackToTypes()
+    {
+        selectedType = null;
+        browseResult = null;
+    }
+
+    private async Task BrowseAsync(int page)
+    {
+        if (selectedType == null) return;
+        loadingRows = true;
+        StateHasChanged();
+        browseResult = await api.BrowseRepositoryAsync(selectedType, search, page, 25);
+        loadingRows = false;
+        StateHasChanged();
+    }
+}

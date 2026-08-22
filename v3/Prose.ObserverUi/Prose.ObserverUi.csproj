@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Prose.ObserverUi</RootNamespace>
+    <AssemblyName>Prose.ObserverUi</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Plain Microsoft.AspNetCore.Components.Web (not a FrameworkReference to the full
+         ASP.NET Core server framework) - this library is referenced by Prose.Hub (Blazor
+         Server) AND, later, Prose.Maui (MAUI Blazor Hybrid), so it must stay portable. -->
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0-*" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="10.0.0-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Pure DTOs shared with Prose.Hub and (later) Prose.Maui - zero further dependencies. -->
+    <ProjectReference Include="..\Prose.Hub.Contracts\Prose.Hub.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -344,7 +344,7 @@ public class AmmunitionLinkerService
     private async Task<AmmoUpsertResult> UpsertAmmunitionAsync(
         ProseDbContext db, string name, string description, string[] tags, CancellationToken ct)
     {
-        var slug = WorldGraphService.Slugify(name);
+        var slug = UniverseGraphService.Slugify(name);
         var existing = await db.Entities
             .FirstOrDefaultAsync(e => e.EntityType == "ammunition" && (e.Name == name || e.Slug == slug), ct);
         if (existing != null) return new AmmoUpsertResult(existing.Id, Created: false);

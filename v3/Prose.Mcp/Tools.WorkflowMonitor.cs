@@ -14,11 +14,15 @@ namespace Prose.Mcp;
 [McpServerToolType]
 public class WorkflowMonitorTools(
     WorkflowMonitorService monitor,
-    IDbContextFactory<ProseDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory,
+    HubInvoker hub)
 {
     [McpServerTool, Description("Get prose service coverage for a node. Returns which services (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active when beats were written, and flags gaps where applicable services weren't used.")]
-    public async Task<string> workflow_status(
-        [Description("Node slug (e.g. 'ATTE', 'BCODA')")] string slug)
+    public Task<string> workflow_status(
+        [Description("Node slug (e.g. 'ATTE', 'BCODA')")] string slug) =>
+        hub.InvokeAsync(nameof(WorkflowMonitorTools), nameof(workflow_statusImpl), new { slug });
+
+    public async Task<string> workflow_statusImpl(string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var node = await db.Nodes.AsNoTracking()
@@ -32,7 +36,10 @@ public class WorkflowMonitorTools(
     }
 
     [McpServerTool, Description("Get global prose workflow coverage across all nodes. Returns per-service utilization rates and a list of nodes with coverage gaps.")]
-    public async Task<string> workflow_status_global()
+    public Task<string> workflow_status_global() =>
+        hub.InvokeAsync(nameof(WorkflowMonitorTools), nameof(workflow_status_globalImpl), new { });
+
+    public async Task<string> workflow_status_globalImpl()
     {
         var stats = await monitor.GetGlobalStatsAsync();
         var gaps  = await monitor.GetAllNodesWithGapsAsync();
@@ -41,8 +48,11 @@ public class WorkflowMonitorTools(
     }
 
     [McpServerTool, Description("Get the detected beat mode log for a node. Shows how each beat was classified (Narrative/Combat/EmotionalClimax/Dialogue/Transition/Revelation) and the confidence level.")]
-    public async Task<string> workflow_beat_modes(
-        [Description("Node slug")] string slug)
+    public Task<string> workflow_beat_modes(
+        [Description("Node slug")] string slug) =>
+        hub.InvokeAsync(nameof(WorkflowMonitorTools), nameof(workflow_beat_modesImpl), new { slug });
+
+    public async Task<string> workflow_beat_modesImpl(string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var node = await db.Nodes.AsNoTracking()

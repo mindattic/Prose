@@ -27,12 +27,13 @@ namespace Prose.Mcp;
 [McpServerToolType]
 public class DataIntegrityTools(
     DataConsistencyService consistency,
-    WorldGraphService graph,
+    UniverseGraphService graph,
     GraphHealthService graphHealth,
     SanityScanService sanityScan,
     DuplicateEntityScanService duplicateEntityScan,
     CanonDocumentService canonDocs,
-    IDbContextFactory<ProseDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory,
+    HubInvoker hub)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
@@ -42,7 +43,11 @@ public class DataIntegrityTools(
         "bridge tables) disagreeing with the FK they cache, orphaned subtype rows, dangling edges, " +
         "slug collisions, and EntityStateEvents bi-temporal hygiene. Global, cross-universe check " +
         "(not scoped to one universe). No LLM calls; findings are reported, never auto-corrected.")]
-    public async Task<string> AuditDataConsistency()
+    public Task<string> AuditDataConsistency() =>
+        hub.InvokeAsync(nameof(DataIntegrityTools), nameof(AuditDataConsistencyImpl));
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> AuditDataConsistencyImpl()
     {
         var report = await consistency.RunAsync();
         return JsonSerializer.Serialize(new
@@ -72,7 +77,11 @@ public class DataIntegrityTools(
         "fragments, junk parses from free-text fields promoted verbatim into node identities). " +
         "Rebuilds the graph from live SQL before analyzing, so results always reflect current " +
         "data. Zero LLM calls; pure graph traversal + string heuristics.")]
-    public string CheckGraphHealth()
+    public Task<string> CheckGraphHealth() =>
+        hub.InvokeAsync(nameof(DataIntegrityTools), nameof(CheckGraphHealthImpl));
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CheckGraphHealthImpl()
     {
         graph.Rebuild();
         var report = graphHealth.Analyze();
@@ -101,8 +110,13 @@ public class DataIntegrityTools(
         "glossaried terms, and acronyms inside an embedded found-document/log block written in " +
         "sustained capitals), a 50-page length floor, and mojibake (encoding corruption). Fast " +
         "enough for a pre-publish gate. Accepts a book node's slug or GUID.")]
-    public async Task<string> SanityScanNode(
-        [Description("Book node slug or GUID to scan.")] string nodeIdOrSlug)
+    public Task<string> SanityScanNode(
+        [Description("Book node slug or GUID to scan.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(DataIntegrityTools), nameof(SanityScanNodeImpl), new { nodeIdOrSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> SanityScanNodeImpl(
+        string nodeIdOrSlug)
     {
         Guid nodeId;
         if (!Guid.TryParse(nodeIdOrSlug, out nodeId))
@@ -148,9 +162,15 @@ public class DataIntegrityTools(
         "reading the actual prose to determine which row (if either) matches what was actually " +
         "written, exactly as the investigation that motivated this tool did (TEST's 'Bear', " +
         "2026-08-10 — two draft entity rows, neither fully correct on its own). No LLM calls.")]
-    public async Task<string> DuplicateEntityScan(
+    public Task<string> DuplicateEntityScan(
         [Description("Universe slug, e.g. 'glmz', 'scry', 'nonfiction'.")] string universeSlug,
-        [Description("Entity type to scan. Defaults to 'character'.")] string entityType = "character")
+        [Description("Entity type to scan. Defaults to 'character'.")] string entityType = "character") =>
+        hub.InvokeAsync(nameof(DataIntegrityTools), nameof(DuplicateEntityScanImpl), new { universeSlug, entityType });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> DuplicateEntityScanImpl(
+        string universeSlug,
+        string entityType = "character")
     {
         var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)

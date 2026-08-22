@@ -31,10 +31,12 @@ namespace Prose.Mcp;
 public class CombatTools
 {
     private readonly CombatSceneWriter writer;
+    private readonly HubInvoker hub;
 
-    public CombatTools(CombatSceneWriter writer)
+    public CombatTools(CombatSceneWriter writer, HubInvoker hub)
     {
         this.writer = writer;
+        this.hub = hub;
     }
 
     /// <summary>
@@ -56,7 +58,7 @@ public class CombatTools
         "description for shape. Returns the generated beats plus the full " +
         "stitched text. Run validate_canon_text on the result before staging " +
         "it into a chapter.")]
-    public async Task<string> DraftCombatScene(
+    public Task<string> DraftCombatScene(
         [Description("Place name or district where the fight occurs (used to pull terrain/cover).")]
             string battlefieldLocation,
         [Description(
@@ -84,7 +86,23 @@ public class CombatTools
             "\"meal_context\": \"full meal 2h ago\" } }. When present, the " +
             "writer enforces ammo/charge limits across beats. Leave empty to " +
             "skip resource tracking for this scene.")]
-            string initialResourcesJson = "")
+            string initialResourcesJson = "") =>
+        hub.InvokeAsync(nameof(CombatTools), nameof(DraftCombatSceneImpl), new
+        {
+            battlefieldLocation, sidesJson, environment, objective, openingBeat,
+            precedingContext, numExchanges, tone, initialResourcesJson,
+        });
+
+    public async Task<string> DraftCombatSceneImpl(
+        string battlefieldLocation,
+        string sidesJson,
+        string environment = "",
+        string objective = "",
+        string openingBeat = "",
+        string precedingContext = "",
+        int numExchanges = 4,
+        string tone = "Brutal",
+        string initialResourcesJson = "")
     {
         List<CombatSide> sides;
         try { sides = ParseSides(sidesJson); }

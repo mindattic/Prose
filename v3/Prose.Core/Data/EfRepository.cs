@@ -408,7 +408,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
     /// </summary>
     private string ResolveSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
 
         // If we're keeping a disambig'd slug already pinned to this id, keep it.

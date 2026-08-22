@@ -7,7 +7,7 @@ public class SceneGenerationService
 {
     private readonly ContextAnalyzerService analyzer;
     private readonly BeatGeneratorService beatGen;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly DatabaseService canonDb;
     private readonly ValidationService validator;
     private readonly IPathProvider paths;
@@ -33,7 +33,7 @@ public class SceneGenerationService
 
     public SceneGenerationService(
         ContextAnalyzerService analyzer, BeatGeneratorService beatGen,
-        WorldGraphService graph, DatabaseService canonDb, ValidationService validator,
+        UniverseGraphService graph, DatabaseService canonDb, ValidationService validator,
         IPathProvider paths, SemanticIndexService semanticIndex, InferenceService inference,
         SceneContextBuilder contextBuilder, ConsequenceService consequences,
         AmbientAnomalyService anomalies, NarrativeSummaryService summaries,
@@ -127,7 +127,7 @@ public class SceneGenerationService
 
             var analysis = await analyzer.AnalyzeAsync(
                 $"{request.Goal}\n\nScene so far:\n{sceneSoFar}",
-                request.Characters.Select(WorldGraphService.Slugify).ToList(),
+                request.Characters.Select(UniverseGraphService.Slugify).ToList(),
                 ct);
 
             OnBeatProgress?.Invoke(new BeatGenerationProgress

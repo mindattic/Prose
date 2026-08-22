@@ -23,6 +23,7 @@ public class ConfigTools
     private readonly LibertyReportService libertyReport;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly TokenLedger ledger;
+    private readonly HubInvoker hub;
 
     public ConfigTools(
         MarkdownFileService svc,
@@ -30,7 +31,8 @@ public class ConfigTools
         UserContextService userContext,
         LibertyReportService libertyReport,
         IDbContextFactory<ProseDbContext> dbFactory,
-        TokenLedger ledger)
+        TokenLedger ledger,
+        HubInvoker hub)
     {
         this.svc          = svc;
         this.docContext   = docContext;
@@ -38,6 +40,7 @@ public class ConfigTools
         this.libertyReport = libertyReport;
         this.dbFactory    = dbFactory;
         this.ledger       = ledger;
+        this.hub          = hub;
     }
 
     [McpServerTool, Description(
@@ -45,8 +48,12 @@ public class ConfigTools
         "Returns call count, input/output token estimates, and USD cost broken down by model. " +
         "Token counts are estimated from text length (chars / 4) since the Legion transport " +
         "does not expose Anthropic usage objects. Pass reset=true to clear the ledger.")]
-    public string GetCostReport(
-        [Description("If true, clear the ledger after reporting. Default false.")] bool reset = false)
+    public Task<string> GetCostReport(
+        [Description("If true, clear the ledger after reporting. Default false.")] bool reset = false) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(GetCostReportImpl), new { reset });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string GetCostReportImpl(bool reset = false)
     {
         var summary = ledger.GetSummary();
         var result  = JsonSerializer.Serialize(new
@@ -82,7 +89,11 @@ public class ConfigTools
     [McpServerTool, Description(
         "List all markdown files tracked in the database (project rules, Codex docs, Claude Code memory). " +
         "Returns category, relativePath, contentHash, and lastSyncedAt for each file.")]
-    public async Task<string> ListMarkdownFiles()
+    public Task<string> ListMarkdownFiles() =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(ListMarkdownFilesImpl), new { });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ListMarkdownFilesImpl()
     {
         var rows = await svc.ListAsync();
         var result = rows.Select(r => new
@@ -100,9 +111,13 @@ public class ConfigTools
         "Get the content of a tracked markdown file from the database. " +
         "Pass asOf (ISO 8601 UTC) to retrieve a historical version from the temporal table. " +
         "relativePath examples: 'CLAUDE.md', 'docs/BIBLE.md', 'feedback_sequential_node_writing.md'")]
-    public async Task<string> GetMarkdownFile(
+    public Task<string> GetMarkdownFile(
         [Description("Relative path key, e.g. 'CLAUDE.md' or 'docs/AMENDMENTS.md'.")] string relativePath,
-        [Description("Optional ISO 8601 UTC datetime to retrieve the version current at that moment.")] string? asOf = null)
+        [Description("Optional ISO 8601 UTC datetime to retrieve the version current at that moment.")] string? asOf = null) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(GetMarkdownFileImpl), new { relativePath, asOf });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetMarkdownFileImpl(string relativePath, string? asOf = null)
     {
         DateTime? asOfDt = null;
         if (asOf != null)
@@ -132,10 +147,14 @@ public class ConfigTools
         "'BCODA') to include that book's bible + its one register; pass text (scene/goal/conversation) to " +
         "trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that " +
         "matter now instead of dumping hundreds.")]
-    public async Task<string> DocContextPrepare(
+    public Task<string> DocContextPrepare(
         [Description("Scene/goal/conversation text to trigger topic docs against.")] string text,
         [Description("Optional node CODE (e.g. 'BCODA') to also load that book's bible + register.")] string? nodeCode = null,
-        [Description("Token budget for the assembled block. Default 2000.")] int budget = 2000)
+        [Description("Token budget for the assembled block. Default 2000.")] int budget = 2000) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(DocContextPrepareImpl), new { text, nodeCode, budget });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> DocContextPrepareImpl(string text, string? nodeCode = null, int budget = 2000)
     {
         var result = await docContext.PrepareContextAsync(SessionKey(nodeCode), nodeCode, text, budget);
         return JsonSerializer.Serialize(new
@@ -149,8 +168,12 @@ public class ConfigTools
     [McpServerTool, Description(
         "Inspect the current Doc Context Stack working set (the docs resident in the rotating cast) for a " +
         "node context, without changing it. Returns each doc's tier, why it loaded, and its score.")]
-    public string DocContextStatus(
-        [Description("Optional node CODE whose working set to inspect.")] string? nodeCode = null)
+    public Task<string> DocContextStatus(
+        [Description("Optional node CODE whose working set to inspect.")] string? nodeCode = null) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(DocContextStatusImpl), new { nodeCode });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string DocContextStatusImpl(string? nodeCode = null)
     {
         var active = docContext.GetActive(SessionKey(nodeCode));
         return JsonSerializer.Serialize(new
@@ -166,9 +189,13 @@ public class ConfigTools
         "the keyword (case-insensitive) against relativePath, fileName, and category; set includeContent=true " +
         "to also search inside file bodies. Returns each match's full content so the caller can read only " +
         "what it needs. Examples: 'steppin', 'wound ledger', 'schism'.")]
-    public async Task<string> RecallMarkdownFiles(
+    public Task<string> RecallMarkdownFiles(
         [Description("Keyword to match against path/name/category (and body when includeContent=true).")] string keyword,
-        [Description("Also search inside file bodies, not just names. Default false.")] bool includeContent = false)
+        [Description("Also search inside file bodies, not just names. Default false.")] bool includeContent = false) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(RecallMarkdownFilesImpl), new { keyword, includeContent });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> RecallMarkdownFilesImpl(string keyword, bool includeContent = false)
     {
         var matches = await svc.SearchAsync(keyword, includeContent);
         var files = matches.Select(r => new
@@ -186,8 +213,12 @@ public class ConfigTools
         "Sync all discovered markdown files from disk into the database. " +
         "Only files whose content hash changed produce a new history row. " +
         "Pass dryRun=true to preview without writing.")]
-    public async Task<string> SyncMarkdownFiles(
-        [Description("If true, report what would be synced without writing to the database.")] bool dryRun = false)
+    public Task<string> SyncMarkdownFiles(
+        [Description("If true, report what would be synced without writing to the database.")] bool dryRun = false) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(SyncMarkdownFilesImpl), new { dryRun });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> SyncMarkdownFilesImpl(bool dryRun = false)
     {
         var discovered = svc.DiscoverFiles().ToList();
         var result = await svc.SyncAllAsync(dryRun);
@@ -207,10 +238,14 @@ public class ConfigTools
         "Pass relativePath to restore a single file; omit to restore all tracked files. " +
         "Pass asOf (ISO 8601 UTC) to recover a historical version from the temporal table. " +
         "Pass dryRun=true to preview without writing to disk.")]
-    public async Task<string> RestoreMarkdownFile(
+    public Task<string> RestoreMarkdownFile(
         [Description("Relative path of the file to restore, e.g. 'CLAUDE.md'. Omit to restore all.")] string? relativePath = null,
         [Description("Optional ISO 8601 UTC datetime for point-in-time recovery.")] string? asOf = null,
-        [Description("If true, report what would be written without touching the filesystem.")] bool dryRun = false)
+        [Description("If true, report what would be written without touching the filesystem.")] bool dryRun = false) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(RestoreMarkdownFileImpl), new { relativePath, asOf, dryRun });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> RestoreMarkdownFileImpl(string? relativePath = null, string? asOf = null, bool dryRun = false)
     {
         DateTime? asOfDt = null;
         if (asOf != null)
@@ -242,9 +277,13 @@ public class ConfigTools
         "Identify the doc by relative path fragment (e.g. 'ICFI', 'BIBLE', 'wound') or its GUID. " +
         "The override lasts 24 h or until remove_context_doc / clear_context is called. " +
         "Optionally scope to a single book with nodeSlug so only that book's beats include it.")]
-    public async Task<string> AddContextDoc(
+    public Task<string> AddContextDoc(
         [Description("Relative path fragment or GUID of the markdown doc to pin.")] string doc,
-        [Description("Optional book slug to scope the pin (e.g. 'icfi'). Omit for session-global.")] string? nodeSlug = null)
+        [Description("Optional book slug to scope the pin (e.g. 'icfi'). Omit for session-global.")] string? nodeSlug = null) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(AddContextDocImpl), new { doc, nodeSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> AddContextDocImpl(string doc, string? nodeSlug = null)
     {
         var (docId, docPath, err) = await ResolveDocIdAsync(doc);
         if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
@@ -267,9 +306,13 @@ public class ConfigTools
         "Exclude a canon .md doc from the DocContextStack so it is never injected even if it would " +
         "normally match. Identify the doc by relative path fragment or GUID. " +
         "The override lasts 24 h or until remove_context_doc / clear_context is called.")]
-    public async Task<string> ExcludeContextDoc(
+    public Task<string> ExcludeContextDoc(
         [Description("Relative path fragment or GUID of the markdown doc to exclude.")] string doc,
-        [Description("Optional book slug to scope the exclusion. Omit for session-global.")] string? nodeSlug = null)
+        [Description("Optional book slug to scope the exclusion. Omit for session-global.")] string? nodeSlug = null) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(ExcludeContextDocImpl), new { doc, nodeSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ExcludeContextDocImpl(string doc, string? nodeSlug = null)
     {
         var (docId, docPath, err) = await ResolveDocIdAsync(doc);
         if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
@@ -291,9 +334,13 @@ public class ConfigTools
     [McpServerTool, Description(
         "Remove a specific pin or exclude override for a canon doc. " +
         "Pass the same doc path/GUID and optional nodeSlug used when the override was created.")]
-    public async Task<string> RemoveContextDoc(
+    public Task<string> RemoveContextDoc(
         [Description("Relative path fragment or GUID of the markdown doc whose override to remove.")] string doc,
-        [Description("Optional book slug the override was scoped to.")] string? nodeSlug = null)
+        [Description("Optional book slug the override was scoped to.")] string? nodeSlug = null) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(RemoveContextDocImpl), new { doc, nodeSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> RemoveContextDocImpl(string doc, string? nodeSlug = null)
     {
         var (docId, docPath, err) = await ResolveDocIdAsync(doc);
         if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
@@ -306,8 +353,12 @@ public class ConfigTools
     [McpServerTool, Description(
         "Clear ALL active context overrides for this session (both pins and excludes). " +
         "Pass nodeSlug to clear only overrides scoped to that book; omit for session-wide clear.")]
-    public async Task<string> ClearContext(
-        [Description("Optional book slug to clear only overrides for that node. Omit for full session clear.")] string? nodeSlug = null)
+    public Task<string> ClearContext(
+        [Description("Optional book slug to clear only overrides for that node. Omit for full session clear.")] string? nodeSlug = null) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(ClearContextImpl), new { nodeSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ClearContextImpl(string? nodeSlug = null)
     {
         var nodeId = nodeSlug != null ? await ResolveNodeIdAsync(nodeSlug) : null;
         if (nodeSlug != null && nodeId == null)
@@ -320,7 +371,11 @@ public class ConfigTools
     [McpServerTool, Description(
         "Show all active context overrides (pins and excludes) for this session. " +
         "Includes the doc path, action, scope (global or node), and expiry time.")]
-    public async Task<string> GetContextStatus()
+    public Task<string> GetContextStatus() =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(GetContextStatusImpl), new { });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetContextStatusImpl()
     {
         var report = await userContext.GetStatusAsync();
         return JsonSerializer.Serialize(new
@@ -347,9 +402,13 @@ public class ConfigTools
         "Each liberty is scored CoolFactor 0–10: ≥8 → CANON-ADDITION-CANDIDATE finding, " +
         "5–7 → LIBERTY-CONSIDER advisory, ≤4 entity invention → LIBERTY-WARNING. " +
         "Reports are written automatically after each beat write; this tool reads them.")]
-    public async Task<string> GetLibertyReport(
+    public Task<string> GetLibertyReport(
         [Description("Beat GUID to retrieve the report for that specific beat.")] string? beatId = null,
-        [Description("Book slug (e.g. 'icfi') to retrieve all reports for that book, newest first.")] string? slug = null)
+        [Description("Book slug (e.g. 'icfi') to retrieve all reports for that book, newest first.")] string? slug = null) =>
+        hub.InvokeAsync(nameof(ConfigTools), nameof(GetLibertyReportImpl), new { beatId, slug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetLibertyReportImpl(string? beatId = null, string? slug = null)
     {
         if (beatId != null)
         {

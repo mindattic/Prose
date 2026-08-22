@@ -10,6 +10,12 @@
          IN(...) placeholder lists from SqlParameter names, not user input; same audited
          pattern already suppressed project-wide in Prose.Core (see its csproj, 2026-07-02). -->
     <NoWarn>$(NoWarn);EF1002;EF1003</NoWarn>
+    <!-- Explicit (not just a publish-time flag): Prose.Hub references this project (another
+         Exe) for CliDispatch's reflection over the Cli/*.cs handler classes. Publishing
+         Prose.Hub framework-dependent for win-x64 fails with NETSDK1151 unless every end of
+         an Exe-to-Exe project reference agrees on this in-project, not just on the command
+         line - see Prose.Mcp.csproj for the same fix, hit first. -->
+    <SelfContained>false</SelfContained>
   </PropertyGroup>
 
   <ItemGroup>

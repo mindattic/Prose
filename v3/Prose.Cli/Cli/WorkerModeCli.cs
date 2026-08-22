@@ -48,6 +48,18 @@ public static class WorkerModeCli
             return 1;
         }
 
+        // Fail-closed on the hard dependency this command actually has (Phase 2 principle
+        // applied here instead of the local Hub — --worker-mode runs on a rented remote GPU
+        // pod with no access to this machine's loopback-only Hub by construction, but it must
+        // still verify ITS dependency — the local LLM endpoint — is live before claiming any
+        // work, rather than churning through a whole batch marking every item individually
+        // failed the way a per-item try/catch alone would.
+        if (!await IsLocalLlmReachableAsync(localUrl))
+        {
+            Console.Error.WriteLine($"[worker] local LLM endpoint is not reachable at {localUrl} — refusing to claim work.");
+            return 1;
+        }
+
         // SS-A44: entity-review / node-review work types cast score ballots and
         // are disabled by default. beat-write is prose generation and is never
         // gated. Require --allow-votes to claim ballot work.
@@ -129,6 +141,26 @@ public static class WorkerModeCli
 
         Console.WriteLine($"[worker] total processed: {totalDone}");
         return 0;
+    }
+
+    /// <summary>
+    /// Fail-closed reachability probe for the local LLM endpoint. Protocol-agnostic on purpose
+    /// (vLLM/OpenAI-compatible servers vary in which routes exist) — any HTTP response, even a
+    /// 404, proves the process at that address is alive and answering; only a connection
+    /// failure/timeout means the dependency genuinely isn't there.
+    /// </summary>
+    private static async Task<bool> IsLocalLlmReachableAsync(string localUrl)
+    {
+        try
+        {
+            using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(5) };
+            using var resp = await http.GetAsync(localUrl);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
     }
 
     // ── Entity review ─────────────────────────────────────────────────────────

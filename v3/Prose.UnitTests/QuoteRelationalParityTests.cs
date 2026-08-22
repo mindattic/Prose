@@ -158,7 +158,7 @@ public class QuoteRelationalParityTests
                 Id         = id,
                 EntityType = "quote",
                 Name       = src.Quote,
-                Slug       = WorldGraphService.Slugify(src.Quote.Length > 40 ? src.Quote[..40] : src.Quote),
+                Slug       = UniverseGraphService.Slugify(src.Quote.Length > 40 ? src.Quote[..40] : src.Quote),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,

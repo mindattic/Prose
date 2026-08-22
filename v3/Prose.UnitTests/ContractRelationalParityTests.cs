@@ -260,7 +260,7 @@ public class ContractRelationalParityTests
                 Id         = id,
                 EntityType = "contract",
                 Name       = src.Codename,
-                Slug       = WorldGraphService.Slugify(src.Codename),
+                Slug       = UniverseGraphService.Slugify(src.Codename),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,

@@ -7,6 +7,11 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Prose.Mcp</RootNamespace>
     <AssemblyName>Prose.Mcp</AssemblyName>
+    <!-- Explicit (not just a publish-time flag): Prose.Hub references this project (another
+         Exe) for ToolDispatch's reflection over the migrated tool classes. Publishing Prose.Hub
+         framework-dependent for win-x64 fails with NETSDK1151 unless both ends of an Exe-to-Exe
+         project reference agree on this in-project, not just on the command line. -->
+    <SelfContained>false</SelfContained>
   </PropertyGroup>
 
   <ItemGroup>

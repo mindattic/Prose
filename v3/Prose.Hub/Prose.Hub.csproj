@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Prose.Hub</RootNamespace>
+    <AssemblyName>Prose.Hub</AssemblyName>
+    <ApplicationIcon>icons\prose-hub.ico</ApplicationIcon>
+    <!-- Explicit (not just a publish-time flag): Prose.Hub references Prose.Mcp, another Exe
+         project, and publishing framework-dependent for win-x64 fails with NETSDK1151
+         ("referenced project is a self-contained executable") unless both ends of an Exe-to-Exe
+         reference agree on this in the csproj itself, not just the command line. -->
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Re-uses every Core service (repositories, UniverseGraphService, DocContextStack,
+         SemanticIndexService, ContinuityService, etc) via AddProseServices() - same DI
+         entry point as Prose.Cli, Prose.Mcp, and Prose.KdpPublish. -->
+    <ProjectReference Include="..\Prose.Core\Prose.Core.csproj" />
+    <!-- Phase 2 migration: the Hub reflects into Prose.Mcp's tool classes (see ToolDispatch.cs)
+         to run their *Impl methods in-process here, instead of duplicating ~319 methods' worth
+         of logic into a third project. NOT circular - Prose.Mcp only calls the Hub over HTTP
+         at runtime, it never references Prose.Hub.dll at compile time. -->
+    <ProjectReference Include="..\Prose.Mcp\Prose.Mcp.csproj" />
+    <!-- Stage C: the Hub reflects into Prose.Cli's Cli/*.cs handler classes (see
+         CliDispatch.cs) so CLI commands run against the Hub's resident services instead of a
+         fresh process's own cold DI container. Same not-circular reasoning as Prose.Mcp above -
+         Prose.Cli only calls the Hub over HTTP at runtime (see HubCliClient). -->
+    <ProjectReference Include="..\Prose.Cli\Prose.Cli.csproj" />
+    <!-- Observability plan (2026-08-20): pure DTOs shared with Prose.ObserverUi/Prose.Maui,
+         zero dependencies - see Prose.Hub.Contracts.csproj's own comment. -->
+    <ProjectReference Include="..\Prose.Hub.Contracts\Prose.Hub.Contracts.csproj" />
+    <!-- The shared observability UI (Razor Class Library) - the Hub hosts it directly as a
+         Blazor Server web head at /app, no separate process (see Program.cs). The same
+         library is referenced by Prose.Maui's native head later. -->
+    <ProjectReference Include="..\Prose.ObserverUi\Prose.ObserverUi.csproj" />
+  </ItemGroup>
+
+</Project>

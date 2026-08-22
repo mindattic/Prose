@@ -1,0 +1,45 @@
+.tabshell {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+.tabshell-strip {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0.5rem 0;
+    gap: 0.25rem;
+    border-bottom: 1px solid #30363d;
+    background: #161b22;
+}
+
+.tabshell-tab {
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom: none;
+    color: #8b949e;
+    padding: 0.5rem 1rem;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.tabshell-tab:hover {
+    color: #e6edf3;
+    background: #21262d;
+}
+
+.tabshell-tab.active {
+    color: #e6edf3;
+    background: #0d1117;
+    border-color: #30363d;
+    font-weight: 600;
+}
+
+.tabshell-body {
+    flex: 1 1 auto;
+    overflow: auto;
+}

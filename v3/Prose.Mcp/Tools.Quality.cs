@@ -44,6 +44,7 @@ public class QualityTools
     private readonly VotingGate votingGate;
     private readonly TokenLedger tokenLedger;
     private readonly CommandCostEstimatorService costEstimator;
+    private readonly HubInvoker hub;
 
     public QualityTools(
         WorldConsistencyService consistency,
@@ -61,7 +62,8 @@ public class QualityTools
         IDbContextFactory<ProseDbContext> dbFactory,
         VotingGate votingGate,
         TokenLedger tokenLedger,
-        CommandCostEstimatorService costEstimator)
+        CommandCostEstimatorService costEstimator,
+        HubInvoker hub)
     {
         this.consistency    = consistency;
         this.quality        = quality;
@@ -79,12 +81,17 @@ public class QualityTools
         this.votingGate     = votingGate;
         this.tokenLedger    = tokenLedger;
         this.costEstimator  = costEstimator;
+        this.hub            = hub;
     }
 
     /// <summary>Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/city police, no phi/Greek-letter confusion). Returns matched violations with surrounding context. Call this on a chapter draft before delivering it — catches rule slips an LLM might miss.</summary>
     [McpServerTool, Description("Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/city police, no phi/Greek-letter confusion). Returns the list of matched violations with the surrounding context. Call this on a chapter draft BEFORE delivering it — catches rule slips Claude might miss.")]
-    public string ValidateCanonText(
-        [Description("The prose to scan. Pass an entire chapter or a single beat.")] string text)
+    public Task<string> ValidateCanonText(
+        [Description("The prose to scan. Pass an entire chapter or a single beat.")] string text) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(ValidateCanonTextImpl), new { text });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string ValidateCanonTextImpl(string text)
     {
         var hits = consistency.ScanText(text);
         if (hits.Count == 0)
@@ -95,8 +102,12 @@ public class QualityTools
 
     /// <summary>Run the writing-quality heuristic pass over a book's chapters: first-line strength, tension delta, paragraph-serves audit, motif reuse, voice cadence Jaccard. Returns findings list. No LLM calls.</summary>
     [McpServerTool, Description("Run the writing-quality heuristic pass over a book's chapters. Same checks the BookReviewService runs before its LLM Quorum: first-line strength, tension delta (flags 4+ low-tension beats in a row), paragraph-serves audit (paragraphs with no dialogue / sensory detail / action / number / capitalized noun), motif reuse (chapters that drop registered motifs), voice cadence Jaccard (chapter prose drifting from POV character's documented vocabulary). Returns findings list. No LLM calls.")]
-    public string AnalyzeWritingQuality(
-        [Description("Book id.")] string bookId)
+    public Task<string> AnalyzeWritingQuality(
+        [Description("Book id.")] string bookId) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(AnalyzeWritingQualityImpl), new { bookId });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string AnalyzeWritingQualityImpl(string bookId)
     {
         var book = books.LoadBook(bookId);
         if (book == null) return JsonSerializer.Serialize(new { error = "book_not_found", bookId }, CanonTools.JsonOpts);
@@ -124,7 +135,7 @@ public class QualityTools
 
     /// <summary>Run a sampled Legion review panel against a node. Automatically runs structural pre-flight first — blocking failures (missing antagonist cost, passive protagonist, etc.) halt the review and tell you what to fix. Non-blocking warnings are appended to the report. Casts score-only ballots and a few full prose upgrades. Returns the pooled mean, SD, 95% CI, per-beat heat map, clustered weakness tags, and the Pareto/contested/seam report.</summary>
     [McpServerTool, Description("Run the sampled Legion review panel against a node. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts node id (GUID) for the nodeIdOrSlug param.")]
-    public async Task<string> ReviewBook(
+    public Task<string> ReviewBook(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Number of score-only ballots to cast. 0 = use the effort tier (if given) or the ReviewBallots setting (default 20). A non-zero value overrides the tier.")] int ballots = 0,
         [Description("Number of full prose reviews to write (upgraded from ballots). 0 = use the effort tier (if given) else 0. A non-zero value overrides the tier.")] int prose = 0,
@@ -132,7 +143,19 @@ public class QualityTools
         [Description("Cost tier (RFC 0009), scales calls + per-call model to importance: 'draft' = ~6 cheap-model ballots on claude+gemini, no diagnosis, NOT a gate; 'standard' = ~12 ballots + 2 prose, the >=82% standalone gate; 'deep' = ~37 ballots + 4 prose + full structural diagnosis, the >=85%/publish gate. Omit for the configured defaults.")] string? effort = null,
         [Description("Run ballots + synopsis on the LOCAL LLM (Ollama) instead of the cloud trusted-4 panel — free, no API tokens. ONE model = no temperament diversity, so the resulting score is a SEPARATE baseline (do NOT compare to cloud means). Default false (cloud).")] bool useLocal = false,
         [Description("Override the local model tag for this run (e.g. an Ollama tag). Ignored unless use_local=true. Omit to use the configured LocalReviewModel.")] string? localModel = null,
-        [Description("SS-A44: score panels are DISABLED BY DEFAULT engine-wide. Set true to explicitly run this review; otherwise the call is refused. Default false.")] bool allowVotes = false)
+        [Description("SS-A44: score panels are DISABLED BY DEFAULT engine-wide. Set true to explicitly run this review; otherwise the call is refused. Default false.")] bool allowVotes = false) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(ReviewBookImpl), new { nodeIdOrSlug, ballots, prose, skipDiagnosis, effort, useLocal, localModel, allowVotes });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ReviewBookImpl(
+        string nodeIdOrSlug,
+        int ballots = 0,
+        int prose = 0,
+        bool skipDiagnosis = false,
+        string? effort = null,
+        bool useLocal = false,
+        string? localModel = null,
+        bool allowVotes = false)
     {
         // SS-A44 voting kill-switch — refuse cleanly (no throw) when not overridden.
         if (!votingGate.IsAllowed(allowVotes))
@@ -222,9 +245,13 @@ public class QualityTools
 
     /// <summary>Sweep a node's prose against the canon database, queue contradictions as CANON-CONTRADICTION findings, and return the list. Pass propose_fixes=true to also draft suggested rewrites for each contradiction.</summary>
     [McpServerTool, Description("Sweep a node's prose against the entire canon database (entities, locations, weapons, etc.) and queue each contradiction as a CANON-CONTRADICTION finding with an optional proposed fix. Returns the list of contradictions found. Use list_findings / apply_finding / set_finding_status to manage them afterward. Accepts node id (GUID) or slug.")]
-    public async Task<string> CheckCanon(
+    public Task<string> CheckCanon(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Set to true to also draft a suggested rewrite for each contradiction found.")] bool proposeFixes = false)
+        [Description("Set to true to also draft a suggested rewrite for each contradiction found.")] bool proposeFixes = false) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(CheckCanonImpl), new { nodeIdOrSlug, proposeFixes });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> CheckCanonImpl(string nodeIdOrSlug, bool proposeFixes = false)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid nodeId;
@@ -257,9 +284,13 @@ public class QualityTools
 
     /// <summary>Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel (antagonist cost, protagonist behavior change, stakes embodiment, exposition density, character embodiment, pacing gear change, affectation lines, dramatic question, passive protagonist, character function, dialogue subtext, jargon front-loading). Returns Pass/Warn/Fail per check with evidence quoted from the text and a concrete fix. Blocking failures mean: fix the structure before running 60 ballots — structural issues cap scores regardless of prose quality.</summary>
     [McpServerTool, Description("Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_node. Accepts node id (GUID) or slug. max_chars controls how much of the assembled node text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length nodes; lower to reduce cost, raise for very long nodes).")]
-    public async Task<string> DiagnoseBook(
+    public Task<string> DiagnoseBook(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Max characters of assembled node text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long nodes (max practical: ~160000).")] int maxChars = 40000)
+        [Description("Max characters of assembled node text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long nodes (max practical: ~160000).")] int maxChars = 40000) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(DiagnoseBookImpl), new { nodeIdOrSlug, maxChars });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> DiagnoseBookImpl(string nodeIdOrSlug, int maxChars = 40000)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid nodeId;
@@ -303,9 +334,13 @@ public class QualityTools
     /// adjacent in the same chapter, since a continuous scene is supposed to share vocabulary. Candidate
     /// generator, NOT a verdict — read both beats in full before disabling either.</summary>
     [McpServerTool, Description("Corpus-wide near-duplicate-scene detector. Flags beat pairs anywhere in a book whose prose embeddings are near-identical (default cosine similarity floor 0.90) — catches an abandoned early draft left enabled alongside its own developed, canonical rewrite written later. Excludes beat pairs merely adjacent within the same chapter (a continuous scene is supposed to share vocabulary — that's not a duplicate). The 0.90 default is deliberately high-precision/low-recall: real-corpus calibration found a genuine duplicate pair scoring only 0.84, while a lower floor also surfaces dozens of false positives from a book's own deliberate recurring formulaic devices (contract postings, logbook entries). Pass a lower threshold (e.g. 0.80) for an occasional deliberate deep pass, expecting more manual filtering. Candidate generator, NOT a verdict: read both beats in full before disabling either with set_beat_membership_enabled. Accepts node id (GUID) or slug.")]
-    public async Task<string> CheckDuplicateBeats(
+    public Task<string> CheckDuplicateBeats(
         [Description("Node id (GUID) or slug — should be a BookNode; its descendant chapters are scanned together.")] string nodeIdOrSlug,
-        [Description("Cosine similarity floor for a candidate pair, 0–1. Default 0.90.")] double threshold = 0.90)
+        [Description("Cosine similarity floor for a candidate pair, 0–1. Default 0.90.")] double threshold = 0.90) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(CheckDuplicateBeatsImpl), new { nodeIdOrSlug, threshold });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> CheckDuplicateBeatsImpl(string nodeIdOrSlug, double threshold = 0.90)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid nodeId;
@@ -338,10 +373,14 @@ public class QualityTools
 
     /// <summary>Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw), register-adaptive (CODA vs JOY/SORROW/Fantasy). Returns EmotionalDepthScore 0–100, per-dimension scores with strongest/weakest evidence and beat-scoped craft fixes, a beat-by-beat depth curve (Standard/Deep), and character ledgers. Blocking dimensions (WantNeedDivergence, CostFeltNotAsserted) file Findings. Does NOT alter Node.Score or the 82/85 gate.</summary>
     [McpServerTool, Description("Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw from the node bible), register-adaptive (CODA/JOY/SORROW/Fantasy anchors). Returns: EmotionalDepthScore 0–100, per-dimension 0–4 scores with strongest evidence, weakest evidence, weakest beat number, and a beat-scoped craft fix; a per-beat emotional depth curve (Standard/Deep effort); character ledgers. Blocking dimensions (WantNeedDivergence=want/need gap, CostFeltNotAsserted=wins felt not stated) file Findings at /findings. Does NOT change Node.Score or the 82/85 reader-panel gate. Accepts node id (GUID) or slug.")]
-    public async Task<string> ExamineEmotionalDepth(
+    public Task<string> ExamineEmotionalDepth(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Effort tier: 'draft' (Pass 1 only, cheapest), 'standard' (Pass 1 + beat curve, default), 'deep' (Pass 1 + beat curve + ledger refresh + weakest fixes).")] string effort = "standard",
-        [Description("Max characters of assembled node text each check reads. Default 40000 (~10k tokens).")] int maxChars = 40000)
+        [Description("Max characters of assembled node text each check reads. Default 40000 (~10k tokens).")] int maxChars = 40000) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(ExamineEmotionalDepthImpl), new { nodeIdOrSlug, effort, maxChars });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ExamineEmotionalDepthImpl(string nodeIdOrSlug, string effort = "standard", int maxChars = 40000)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid nodeId;
@@ -399,7 +438,11 @@ public class QualityTools
 
     /// <summary>Return the current review-voting configuration (ballots, prose, panel, readers, max_concurrency, judge_provider, allowed_providers).</summary>
     [McpServerTool, Description("Return the current review-voting configuration: how many score-ballots and prose upgrades a sampled run casts, the persona panel depth, default reader count, max parallel ballot slots, judge provider, the comma-separated list of allowed providers, and whether the continuous auto-review monitor is enabled. Use update_review_settings to change any value.")]
-    public string GetReviewSettings()
+    public Task<string> GetReviewSettings() =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(GetReviewSettingsImpl), new { });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string GetReviewSettingsImpl()
     {
         return JsonSerializer.Serialize(new
         {
@@ -416,8 +459,12 @@ public class QualityTools
 
     /// <summary>Return the stored review summary for a node — the synthesized "what readers think" aggregate written after the last review run. Cheaper than a new review; stale if the node has been edited since.</summary>
     [McpServerTool, Description("Return the stored review summary for a node — the synthesized aggregate of what readers liked, recurring gripes, and concrete improvement suggestions, written by the judge after the last review run. Includes average score, review count, and content hash so you can tell whether the summary is stale (node was edited after the last run). Call review_node to refresh. Accepts node id (GUID) or slug.")]
-    public async Task<string> GetReviewSummary(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> GetReviewSummary(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(GetReviewSummaryImpl), new { nodeIdOrSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetReviewSummaryImpl(string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid nodeId;
@@ -455,10 +502,14 @@ public class QualityTools
 
     /// <summary>List individual ballot reviews for a node — one row per persona reader.</summary>
     [McpServerTool, Description("List individual ballot reviews for a node — one row per persona reader, showing persona name, provider, score, flow score (if study mode), improvements, and content hash. Use to inspect which personas scored low and what they said, or to compare how different providers voted. Results are sorted most-recent-first. Accepts node id (GUID) or slug.")]
-    public async Task<string> ListBookReviews(
+    public Task<string> ListBookReviews(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Only return reviews from this content hash (i.e. one specific review run). Leave empty for all reviews.")] string contentHash = "",
-        [Description("Maximum rows to return. Default 50.")] int limit = 50)
+        [Description("Maximum rows to return. Default 50.")] int limit = 50) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(ListBookReviewsImpl), new { nodeIdOrSlug, contentHash, limit });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ListBookReviewsImpl(string nodeIdOrSlug, string contentHash = "", int limit = 50)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid nodeId;
@@ -509,8 +560,12 @@ public class QualityTools
 
     /// <summary>Check the semantic fidelity of a node — detect meaning drift from the book's original intent. Returns bible alignment (prose vs book Seed/Synopsis) and intent alignment (prose vs beat Synopsis) for every beat with prose, with SEMANTIC-DRIFT findings filed for violations. Beat.Score (if present) is informational only — it is not a gate.</summary>
     [McpServerTool, Description("Check the Semantic Fidelity Gap for a node — meaning drift from the book's original intent. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a beat that no longer resembles the book it was born from has drifted. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served something other than the beat's purpose. Evaluates every beat with prose (Beat.Score, if present, is reported but not a gate). Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.")]
-    public async Task<string> CheckSemanticFidelity(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> CheckSemanticFidelity(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(CheckSemanticFidelityImpl), new { nodeIdOrSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> CheckSemanticFidelityImpl(string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid nodeId;
@@ -555,7 +610,7 @@ public class QualityTools
 
     /// <summary>Update one or more review-voting settings. Omit any field to leave it unchanged. Changes persist immediately and take effect on the next review run.</summary>
     [McpServerTool, Description("Update review-voting settings. Pass only the fields you want to change — omit the rest. ballots: score-only ballot count (≥1). prose: full prose upgrades per run (≥0). panel: persona pool depth (≥1). readers: default reader count (≥1). max_concurrency: parallel ballot slots 1–50. judge_provider: provider that synthesizes the summary (claude|openai|gemini|deepseek). allowed_providers: comma-separated provider whitelist (e.g. 'claude,openai'); empty = all active providers allowed. review_auto_run_enabled: set false to disable the continuous auto-review monitor (you call reviews manually); set true to re-enable.")]
-    public string UpdateReviewSettings(
+    public Task<string> UpdateReviewSettings(
         [Description("Score-only ballot count (≥1). Omit to leave unchanged.")] int? ballots = null,
         [Description("Full prose upgrades per run (≥0). Omit to leave unchanged.")] int? prose = null,
         [Description("Persona pool depth (≥1). Omit to leave unchanged.")] int? panel = null,
@@ -563,7 +618,22 @@ public class QualityTools
         [Description("Parallel ballot slots, 1–50. Omit to leave unchanged.")] int? maxConcurrency = null,
         [Description("Provider that synthesizes the summary. Omit to leave unchanged.")] string? judgeProvider = null,
         [Description("Comma-separated provider whitelist (e.g. 'claude,openai'). Empty string = all active. Omit to leave unchanged.")] string? allowedProviders = null,
-        [Description("False = disable the continuous auto-review monitor (call reviews manually). True = re-enable. Omit to leave unchanged.")] bool? reviewAutoRunEnabled = null)
+        [Description("False = disable the continuous auto-review monitor (call reviews manually). True = re-enable. Omit to leave unchanged.")] bool? reviewAutoRunEnabled = null) =>
+        hub.InvokeAsync(nameof(QualityTools), nameof(UpdateReviewSettingsImpl), new { ballots, prose, panel, readers, maxConcurrency, judgeProvider, allowedProviders, reviewAutoRunEnabled });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.
+    /// NOTE: the original body's closing call was `return GetReviewSettings();` — that method now forwards to the
+    /// Hub (returns Task&lt;string&gt;), so it's redirected here to GetReviewSettingsImpl() to keep this method's own
+    /// logic self-contained and synchronous, matching what actually needs to run inside the Hub process.</summary>
+    public string UpdateReviewSettingsImpl(
+        int? ballots = null,
+        int? prose = null,
+        int? panel = null,
+        int? readers = null,
+        int? maxConcurrency = null,
+        string? judgeProvider = null,
+        string? allowedProviders = null,
+        bool? reviewAutoRunEnabled = null)
     {
         if (ballots.HasValue)              settings.ReviewBallots          = ballots.Value;
         if (prose.HasValue)                settings.ReviewProse            = prose.Value;
@@ -573,6 +643,6 @@ public class QualityTools
         if (judgeProvider != null)         settings.ReviewJudgeProvider    = judgeProvider;
         if (allowedProviders != null)      settings.ReviewAllowedProviders = allowedProviders;
         if (reviewAutoRunEnabled.HasValue) settings.ReviewAutoRunEnabled   = reviewAutoRunEnabled.Value;
-        return GetReviewSettings();
+        return GetReviewSettingsImpl();
     }
 }

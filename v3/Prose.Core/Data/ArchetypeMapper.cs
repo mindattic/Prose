@@ -316,7 +316,7 @@ public static class ArchetypeMapper
     private static Guid? ResolveEntityId(ProseDbContext db, string entityType, string name)
     {
         if (string.IsNullOrWhiteSpace(name)) return null;
-        var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
+        var slug = Prose.Core.Services.UniverseGraphService.Slugify(name);
         return db.Entities
             .Where(e => e.EntityType == entityType && (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)

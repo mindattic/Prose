@@ -19,11 +19,13 @@ public class BeatEventListTools
 {
     private readonly BeatEventSummaryService eventSummaries;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly HubInvoker hub;
 
-    public BeatEventListTools(BeatEventSummaryService eventSummaries, IDbContextFactory<ProseDbContext> dbFactory)
+    public BeatEventListTools(BeatEventSummaryService eventSummaries, IDbContextFactory<ProseDbContext> dbFactory, HubInvoker hub)
     {
         this.eventSummaries = eventSummaries;
         this.dbFactory = dbFactory;
+        this.hub = hub;
     }
 
     private async Task<string?> ResolveSlugAsync(string nodeIdOrSlug)
@@ -41,9 +43,14 @@ public class BeatEventListTools
         "so unchanged beats cost nothing on re-run. Distinct from Description (authorial-intent " +
         "register — 'why this beat exists'). Accepts node id (GUID) or slug. force=true regenerates " +
         "every beat's line regardless of cache.")]
-    public async Task<string> generate_event_list(
+    public Task<string> generate_event_list(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Regenerate every beat's line even if its TextHash hasn't changed.")] bool force = false)
+        [Description("Regenerate every beat's line even if its TextHash hasn't changed.")] bool force = false) =>
+        hub.InvokeAsync(nameof(BeatEventListTools), nameof(generate_event_listImpl), new { nodeIdOrSlug, force });
+
+    public async Task<string> generate_event_listImpl(
+        string nodeIdOrSlug,
+        bool force = false)
     {
         var slug = await ResolveSlugAsync(nodeIdOrSlug);
         if (slug == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -62,8 +69,11 @@ public class BeatEventListTools
         "only, no LLM call, no disk write — the fast, in-session way to read a whole book's plot " +
         "flow without opening the exported {CODE}-Events.txt or reading the raw prose. Accepts node id " +
         "(GUID) or slug.")]
-    public async Task<string> get_event_list(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> get_event_list(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(BeatEventListTools), nameof(get_event_listImpl), new { nodeIdOrSlug });
+
+    public async Task<string> get_event_listImpl(string nodeIdOrSlug)
     {
         var slug = await ResolveSlugAsync(nodeIdOrSlug);
         if (slug == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -81,8 +91,11 @@ public class BeatEventListTools
         "publish-export folder (same layout as description.txt / {CODE}-dcm-viz.htm — not docs/nodes; " +
         "deliberately .txt, not .md, so it's never picked up by sync_markdown_files / DCM). No LLM " +
         "call — reads current DB state only.")]
-    public async Task<string> export_event_list(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> export_event_list(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(BeatEventListTools), nameof(export_event_listImpl), new { nodeIdOrSlug });
+
+    public async Task<string> export_event_listImpl(string nodeIdOrSlug)
     {
         var slug = await ResolveSlugAsync(nodeIdOrSlug);
         if (slug == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);

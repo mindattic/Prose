@@ -1,0 +1,57 @@
+<div class="p-4 beats-tab">
+    <h4>Beats</h4>
+    <p class="muted">
+        Read a book's prose directly, in reading order — no <code>--publish-md</code>
+        export required. Backed by <code>prose --read-beats</code> / <code>read_beats</code>.
+    </p>
+
+    <div class="beats-form">
+        <input class="txt" placeholder="Slug or GUID" @bind="idOrSlug" @bind:event="oninput" />
+        <input class="num" type="number" min="1" placeholder="From" @bind="from" />
+        <input class="num" type="number" min="1" placeholder="To" @bind="to" />
+        <button class="btn" @onclick="LoadAsync" disabled="@loading">@(loading ? "Loading…" : "Load")</button>
+    </div>
+
+    @if (notFound)
+    {
+        <p class="err">Not found: "@idOrSlug"</p>
+    }
+    else if (result != null)
+    {
+        <p class="muted">@result.Slug — showing @result.Beats.Count of @result.Total beat(s)</p>
+        @foreach (var beat in result.Beats)
+        {
+            <div class="beat-card">
+                <div class="beat-head">[@beat.Position] @(beat.Title ?? "(untitled)")</div>
+                <div class="beat-text">@beat.Text</div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    [Inject] private ObserverHttpClient api { get; set; } = default!;
+
+    private string idOrSlug = "";
+    private int? from;
+    private int? to;
+    private bool loading;
+    private bool notFound;
+    private ReadBeatsResultDto? result;
+
+    private async Task LoadAsync()
+    {
+        if (string.IsNullOrWhiteSpace(idOrSlug)) return;
+        loading = true;
+        notFound = false;
+        result = null;
+        StateHasChanged();
+
+        var r = await api.ReadBeatsAsync(idOrSlug, from, to);
+        if (r == null) notFound = true;
+        else result = r;
+
+        loading = false;
+        StateHasChanged();
+    }
+}

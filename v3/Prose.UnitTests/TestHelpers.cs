@@ -17,7 +17,7 @@ public static class NullLoggers
 /// unavailable in this environment" — extracted 2026-08-09 after CI (which never ran any test at
 /// all before this session) surfaced that this exact check was needed in more than one test
 /// class. Any DI-resolution test that transitively touches a service which connects to the DB at
-/// construction time (WorldGraphService, StoryDirectorService, ...) needs this guard, or it's
+/// construction time (UniverseGraphService, StoryDirectorService, ...) needs this guard, or it's
 /// only really testing "is LocalDB installed on the machine running this," not the DI wiring
 /// itself — true on a dev box with LocalDB, false on a bare CI runner with no SQL Server at all.
 /// </summary>

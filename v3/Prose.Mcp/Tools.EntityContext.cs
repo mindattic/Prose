@@ -17,11 +17,17 @@ namespace Prose.Mcp;
 public class EntityContextTools(
     EntityContextService entityContext,
     EntityMentionService mentionService,
-    IDbContextFactory<ProseDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory,
+    HubInvoker hub)
 {
     [McpServerTool, Description("Inspect the entity working memory currently active for a node. Shows depth-0 (directly named), depth-1 (semantic neighbors), and depth-2 (neighbors of neighbors) entities with their canon descriptions. Call after generating beats to see what was in scope.")]
-    public async Task<string> get_entity_context(
-        [Description("Node slug (e.g. 'ATTE', 'BCODA')")] string slug)
+    public Task<string> get_entity_context(
+        [Description("Node slug (e.g. 'ATTE', 'BCODA')")] string slug) =>
+        hub.InvokeAsync(nameof(EntityContextTools), nameof(get_entity_contextImpl), new { slug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> get_entity_contextImpl(
+        string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var node = await db.Nodes.AsNoTracking()
@@ -56,9 +62,15 @@ public class EntityContextTools(
     }
 
     [McpServerTool, Description("Run the entity context scanner on a text snippet and return the formatted context block that would be injected into the beat prompt. Useful for testing what entities the scanner picks up from a given passage or beat goal.")]
-    public async Task<string> scan_entity_context(
+    public Task<string> scan_entity_context(
         [Description("Node slug — context is keyed per node")] string slug,
-        [Description("Text to scan (beat goal, prose excerpt, or entity name)")] string text)
+        [Description("Text to scan (beat goal, prose excerpt, or entity name)")] string text) =>
+        hub.InvokeAsync(nameof(EntityContextTools), nameof(scan_entity_contextImpl), new { slug, text });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> scan_entity_contextImpl(
+        string slug,
+        string text)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var node = await db.Nodes.AsNoTracking()
@@ -80,9 +92,15 @@ public class EntityContextTools(
     }
 
     [McpServerTool, Description("Find every beat in the narrative where a specific entity is mentioned. Returns a list grouped by node with beat number, beat handle, and a short excerpt. Useful for auditing entity coverage, finding canon moments, and reverse-navigating from entity to story.")]
-    public async Task<string> get_entity_beat_mentions(
+    public Task<string> get_entity_beat_mentions(
         [Description("Entity ID (GUID) or entity slug")] string entityId,
-        [Description("Maximum results to return (default 50)")] int limit = 50)
+        [Description("Maximum results to return (default 50)")] int limit = 50) =>
+        hub.InvokeAsync(nameof(EntityContextTools), nameof(get_entity_beat_mentionsImpl), new { entityId, limit });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> get_entity_beat_mentionsImpl(
+        string entityId,
+        int limit = 50)
     {
         var entity = await mentionService.ResolveEntityAsync(entityId);
         if (entity == null) return $"Entity not found: {entityId}";
@@ -102,8 +120,13 @@ public class EntityContextTools(
     }
 
     [McpServerTool, Description("Clear the entity context stack for a node. Use when starting a new writing session for a node to reset the LRU working memory.")]
-    public async Task<string> clear_entity_context(
-        [Description("Node slug")] string slug)
+    public Task<string> clear_entity_context(
+        [Description("Node slug")] string slug) =>
+        hub.InvokeAsync(nameof(EntityContextTools), nameof(clear_entity_contextImpl), new { slug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> clear_entity_contextImpl(
+        string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var node = await db.Nodes.AsNoTracking()

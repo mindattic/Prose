@@ -444,7 +444,7 @@ When she appears in a scene, describe what she's wearing.
 *Vehicles — ground:*
 - **Meridian Motor** — the standard GLMZ consumer car; MM-5 sedan; hydrogen cell; what contractors and cabs drive
 - **Volk** — archology-tier executive ground transport; V-Series; sculpted, quiet, no AR glamour
-- **Aries Performance Vehicles** — performance motorcycles and ground vehicles; Pilsen-built; mid-tier independent; Kyle rides the Viper Predator MDK-2
+- **Aries Performance Vehicles** — performance motorcycles and ground vehicles; Detroit-built (Geartown, trade arrangement with a local Robotic Commune, no owned automata labor); mid-tier independent import; Kyle rides a surviving 2103 Kimodo MDK, debadged
 - **Block Runner Fabrication** — gray zone operator transport; BR-4; looks like a cargo van; isn't; high-clearance armored; modified constantly
 - **Ferrogate** — contractor-issue vehicles; CI-4 is NCID/ArcSec field transport; also operates Pulse franchise
 

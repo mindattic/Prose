@@ -17,7 +17,7 @@ namespace Prose.Core.Services;
 /// </summary>
 public class InferenceService
 {
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
 
     // Property index: (propertyKey, propertyValue) -> list of nodeIds sharing that value.
     // Replaced wholesale (never mutated in place) so readers can capture a stable snapshot.
@@ -31,7 +31,7 @@ public class InferenceService
     // Serialises index rebuilds against each other (reads capture the field reference).
     private readonly object indexLock = new();
 
-    public InferenceService(WorldGraphService graph)
+    public InferenceService(UniverseGraphService graph)
     {
         this.graph = graph;
     }

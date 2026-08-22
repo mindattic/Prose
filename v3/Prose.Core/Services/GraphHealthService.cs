@@ -18,16 +18,16 @@ namespace Prose.Core.Services;
 /// </summary>
 public class GraphHealthService
 {
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly IDbContextFactory<ProseDbContext>? dbFactory;
 
-    public GraphHealthService(WorldGraphService graph)
+    public GraphHealthService(UniverseGraphService graph)
     {
         this.graph = graph;
         this.dbFactory = null;
     }
 
-    public GraphHealthService(WorldGraphService graph, IDbContextFactory<ProseDbContext> dbFactory)
+    public GraphHealthService(UniverseGraphService graph, IDbContextFactory<ProseDbContext> dbFactory)
     {
         this.graph = graph;
         this.dbFactory = dbFactory;
@@ -104,7 +104,7 @@ public class GraphHealthService
     }
 
     /// <summary>
-    /// Best-effort join: WorldNode.Id (a Slugify(Name) string, see WorldGraphService.BuildCharacters
+    /// Best-effort join: UniverseNode.Id (a Slugify(Name) string, see UniverseGraphService.BuildCharacters
     /// etc.) → Entities.Slug (or NodeType+Name as fallback) → Entities.Id → any BeatEntityPresence
     /// row for that Id. Not guaranteed 1:1 (slugification schemes can drift), but only needs to be
     /// directionally right — the goal is separating "flavor, never on the page" from "actually used,
@@ -135,7 +135,7 @@ public class GraphHealthService
         return new ProseUsageIndex(referencedIds, bySlug, byTypeAndName);
     }
 
-    private static bool? IsReferencedInProse(Models.Graph.WorldNode node, ProseUsageIndex index)
+    private static bool? IsReferencedInProse(Models.Graph.UniverseNode node, ProseUsageIndex index)
     {
         if (index.BySlug.TryGetValue(node.Id, out var idBySlug))
             return index.ReferencedEntityIds.Contains(idBySlug);
@@ -199,7 +199,7 @@ public class OrphanInfo
     /// true = this entity appears in at least one beat (BeatEntityPresence) — a real
     /// interconnectivity gap worth a follow-up pass. false = never referenced in shipped
     /// prose — expected flavor/reserve texture, not a bug. null = couldn't resolve this
-    /// WorldNode to a real Entities row (unknown), or no DB was available to check.
+    /// UniverseNode to a real Entities row (unknown), or no DB was available to check.
     /// </summary>
     public bool? ReferencedInProse { get; set; }
 }

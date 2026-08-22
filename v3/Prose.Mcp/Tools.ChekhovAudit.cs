@@ -10,7 +10,8 @@ namespace Prose.Mcp;
 [McpServerToolType]
 public class ChekhovAuditTools(
     ChekhovAuditService chekhov,
-    IDbContextFactory<ProseDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory,
+    HubInvoker hub)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
@@ -22,8 +23,11 @@ public class ChekhovAuditTools(
     /// serves a distinct narrative purpose.
     /// </summary>
     [McpServerTool, Description("Chekhov's Gun audit for a story node: extract all concrete props, environmental anchors, sensory details, and recurring character-specific physical traits, then test whether each earns its place. Verdicts: EARNS_IT (each appearance serves a distinct purpose), ORPHANED (appears once with no payoff), DECORATION (repeated without new narrative function), ATMOSPHERE (one-time environmental texture with no implied promise), FLAG (uncertain — human review). Run before trimming any prose detail; before cutting, confirm the prop has no payoff in a later beat. Accepts node id (GUID) or slug.")]
-    public async Task<string> chekhov_audit(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> chekhov_audit(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(ChekhovAuditTools), nameof(chekhov_auditImpl), new { nodeIdOrSlug });
+
+    public async Task<string> chekhov_auditImpl(string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)

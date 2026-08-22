@@ -23,7 +23,7 @@ public class InterfaceRegistrationTests
     }
 
     [Test]
-    public void DI_RegistersIWorldGraphService()
+    public void DI_RegistersIUniverseGraphService()
     {
         var services = new ServiceCollection();
         services.AddProseServices();
@@ -32,14 +32,14 @@ public class InterfaceRegistrationTests
 
         try
         {
-            var iface = sp.GetService<IWorldGraphService>();
-            var concrete = sp.GetService<WorldGraphService>();
+            var iface = sp.GetService<IUniverseGraphService>();
+            var concrete = sp.GetService<UniverseGraphService>();
             Assert.That(iface, Is.Not.Null);
             Assert.That(iface, Is.SameAs(concrete));
         }
         catch (Exception ex) when (SqlAvailability.IsUnavailable(ex))
         {
-            // WorldGraphService's DI factory eagerly calls EnsureLoaded()/Rebuild() at
+            // UniverseGraphService's DI factory eagerly calls EnsureLoaded()/Rebuild() at
             // construction time — merely resolving it (not calling any of its methods) touches
             // the SQL Server DB immediately. Confirmed live 2026-08-09: this test passed on every
             // dev machine (LocalDB installed) but failed the first time it ever ran on a genuine

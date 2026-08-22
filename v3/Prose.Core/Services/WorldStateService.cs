@@ -18,7 +18,7 @@ namespace Prose.Core.Services;
 /// </summary>
 public class WorldStateService
 {
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly ContinuityService continuity;
     private readonly IChapterRepository chapters;
     private readonly CharacterRepository characterRepo;
@@ -59,7 +59,7 @@ public class WorldStateService
     private const int SnippetMaxChars  = 240;
 
     public WorldStateService(
-        WorldGraphService graph,
+        UniverseGraphService graph,
         ContinuityService continuity,
         IChapterRepository chapters,
         CharacterRepository characterRepo,
@@ -124,7 +124,7 @@ public class WorldStateService
 
     /// <summary>
     /// Build a dossier for one entity at a given story-time cursor. Pass either
-    /// a graph node id or a name/alias — both resolve via WorldGraphService.ResolveId.
+    /// a graph node id or a name/alias — both resolve via UniverseGraphService.ResolveId.
     /// Returns null only when the entity cannot be resolved.
     /// </summary>
     public Dossier? GetDossier(string entityIdOrName, AsOfCursor? asOf = null, CancellationToken ct = default)
@@ -199,7 +199,7 @@ public class WorldStateService
 
     // ── Card construction ─────────────────────────────────────────────────────
 
-    private EntityCard BuildEntityCard(WorldNode node, string storyPoint, bool includeEdges, bool includeCharacterDetails)
+    private EntityCard BuildEntityCard(UniverseNode node, string storyPoint, bool includeEdges, bool includeCharacterDetails)
     {
         var props = MaterializeProperties(node, storyPoint);
 
@@ -222,7 +222,7 @@ public class WorldStateService
             Sections: sections);
     }
 
-    private EntityCard BuildLightCard(WorldNode node, string storyPoint)
+    private EntityCard BuildLightCard(UniverseNode node, string storyPoint)
     {
         var props = MaterializeProperties(node, storyPoint);
         return new EntityCard(
@@ -245,7 +245,7 @@ public class WorldStateService
     /// conditions, psychology, behavioral rules, and speech tics. Filtered to AsOf where
     /// the data carries chapter cursors.
     /// </summary>
-    private IReadOnlyList<DossierSection> BuildCharacterSections(WorldNode node, string storyPoint)
+    private IReadOnlyList<DossierSection> BuildCharacterSections(UniverseNode node, string storyPoint)
     {
         CharacterData? record;
         try { record = characterRepo.GetById(node.Id) ?? characterRepo.GetByName(node.Name); }
@@ -336,7 +336,7 @@ public class WorldStateService
         return null;
     }
 
-    private static IReadOnlyDictionary<string, string> MaterializeProperties(WorldNode node, string storyPoint)
+    private static IReadOnlyDictionary<string, string> MaterializeProperties(UniverseNode node, string storyPoint)
     {
         var keys = new[]
         {
@@ -398,7 +398,7 @@ public class WorldStateService
     /// that show up across the subject's life.
     /// </summary>
     private List<ScoredNode> ScoreAdjacents(
-        WorldNode subject,
+        UniverseNode subject,
         IReadOnlyList<EntityCard> linked,
         string storyPoint,
         HashSet<string> skipIds)
@@ -476,7 +476,7 @@ public class WorldStateService
         return bonuses;
     }
 
-    private sealed record ScoredNode(WorldNode Node, double Score);
+    private sealed record ScoredNode(UniverseNode Node, double Score);
 
     // ── Continuity facts ──────────────────────────────────────────────────────
 

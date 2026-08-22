@@ -9,7 +9,7 @@ namespace Prose.Core.Models.Graph;
 /// is true in the STORY world (e.g. "Sable was alive from chapter 1 to chapter 12").
 /// CreatedAt/InvalidatedAt track when the record was created/superseded in the DATABASE.
 /// </summary>
-public record WorldEdge : IEdge<string>
+public record UniverseEdge : IEdge<string>
 {
     public string Source { get; init; } = "";
     public string Target { get; init; } = "";

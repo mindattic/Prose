@@ -301,7 +301,7 @@ public static class NewsMapper
     private static Guid? ResolveEntityId(ProseDbContext db, string name, string? entityType = null)
     {
         if (string.IsNullOrWhiteSpace(name)) return null;
-        var slug = Services.WorldGraphService.Slugify(name);
+        var slug = Services.UniverseGraphService.Slugify(name);
         return db.Entities
             .Where(e => (entityType == null || e.EntityType == entityType)
                 && (e.Name == name || e.Slug == slug))

@@ -17,7 +17,8 @@ namespace Prose.Mcp;
 public class BookHealthTools(
     BookHealthService bookHealth,
     IDbContextFactory<ProseDbContext> dbFactory,
-    SettingsService settings)
+    SettingsService settings,
+    HubInvoker hub)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
@@ -40,10 +41,16 @@ public class BookHealthTools(
         "swain-audit, chekhov-audit) — cost scales with book length. The SII itself is always computed " +
         "from whatever is currently in the Findings table regardless of tier — a free-tier run still " +
         "reflects a prior full-tier run's findings, it just won't refresh them.")]
-    public async Task<string> book_health(
+    public Task<string> book_health(
         [Description("Node id (GUID) or slug — a book or a lone chapter.")] string nodeIdOrSlug,
         [Description("free | deep | full")] string tier = "free",
-        [Description("Optional model override for the deep/full tier's LLM calls.")] string? model = null)
+        [Description("Optional model override for the deep/full tier's LLM calls.")] string? model = null) =>
+        hub.InvokeAsync(nameof(BookHealthTools), nameof(book_healthImpl), new { nodeIdOrSlug, tier, model });
+
+    public async Task<string> book_healthImpl(
+        string nodeIdOrSlug,
+        string tier = "free",
+        string? model = null)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)

@@ -18,7 +18,7 @@ public class ConversationalWriterService
 {
     private readonly ILlmService llm;
     private readonly WorldStateService worldState;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly IBookRepository books;
     private readonly IChapterRepository chapters;
     private readonly BookOutlineService outline;
@@ -28,7 +28,7 @@ public class ConversationalWriterService
 
     public ConversationalWriterService(
         ILlmService llm,
-        WorldStateService worldState, WorldGraphService graph,
+        WorldStateService worldState, UniverseGraphService graph,
         IBookRepository books, IChapterRepository chapters,
         BookOutlineService outline, DatabaseService canon,
         ILogger<ConversationalWriterService> log,
@@ -218,7 +218,7 @@ public class ConversationalWriterService
                 var hits = embeddings.FindSimilarAsync(hay, k: 3).GetAwaiter().GetResult();
                 foreach (var h in hits)
                 {
-                    var id = WorldGraphService.Slugify(h.EntityName);
+                    var id = UniverseGraphService.Slugify(h.EntityName);
                     if (!string.IsNullOrEmpty(id)) found.Add(id);
                 }
             }

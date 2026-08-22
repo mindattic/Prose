@@ -16,14 +16,22 @@ public class SpeciesTools
     private static readonly JsonSerializerOptions JsonOpts = new() { WriteIndented = false };
 
     private readonly SpeciesRepository repo;
+    private readonly HubInvoker hub;
 
-    public SpeciesTools(SpeciesRepository repo) => this.repo = repo;
+    public SpeciesTools(SpeciesRepository repo, HubInvoker hub)
+    {
+        this.repo = repo;
+        this.hub = hub;
+    }
 
     [McpServerTool, Description(
         "List all species in the current universe. Returns canonical name (key used on " +
         "Character.Species), label, and sentient flag. The five GLMZ values are: " +
         "human, ai, elf, synthetic, unknown.")]
-    public string ListSpecies()
+    public Task<string> ListSpecies() =>
+        hub.InvokeAsync(nameof(SpeciesTools), nameof(ListSpeciesImpl), new { });
+
+    public string ListSpeciesImpl()
     {
         var list = repo.GetAll()
             .Select(s => new { name = s.Name, label = s.Label, sentient = s.Sentient })
@@ -35,7 +43,10 @@ public class SpeciesTools
         "Get the full record for one species by canonical name (e.g. 'ai', 'elf', 'synthetic'). " +
         "Returns name, label, description, examples, and sentient flag. " +
         "Returns {error: not_found} when the name doesn't match.")]
-    public string GetSpecies([Description("Canonical species name, e.g. 'human' or 'elf'.")] string name)
+    public Task<string> GetSpecies([Description("Canonical species name, e.g. 'human' or 'elf'.")] string name) =>
+        hub.InvokeAsync(nameof(SpeciesTools), nameof(GetSpeciesImpl), new { name });
+
+    public string GetSpeciesImpl(string name)
     {
         var s = repo.GetByName(name);
         if (s == null) return JsonSerializer.Serialize(new { error = "not_found", name }, JsonOpts);

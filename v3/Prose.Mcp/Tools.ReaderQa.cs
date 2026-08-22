@@ -20,7 +20,8 @@ public class ReaderQaTools(
     ComprehensionProbeService probes,
     BeatChecklistGateService checklist,
     GripePassService gripes,
-    IDbContextFactory<ProseDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory,
+    HubInvoker hub)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
@@ -30,9 +31,14 @@ public class ReaderQaTools(
         "defects are filed as ComprehensionDefect findings (see list_findings) and auto-supersede on re-run. Hash-cached per " +
         "chapter — unchanged chapters never re-bill. Emits NO scores: this is the default reader-facing QA, replacing persona " +
         "score panels. Accepts node id (GUID) or slug.")]
-    public async Task<string> reader_qa_comprehension(
+    public Task<string> reader_qa_comprehension(
         [Description("Book node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Re-probe every chapter even if unchanged (default false).")] bool force = false)
+        [Description("Re-probe every chapter even if unchanged (default false).")] bool force = false) =>
+        hub.InvokeAsync(nameof(ReaderQaTools), nameof(reader_qa_comprehensionImpl), new { nodeIdOrSlug, force });
+
+    public async Task<string> reader_qa_comprehensionImpl(
+        string nodeIdOrSlug,
+        bool force = false)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)
@@ -73,9 +79,14 @@ public class ReaderQaTools(
         "DON'Ts = CRAFT §8 banned mannerisms (literal binaries); DO = '≥1 applicable DELIGHT move lands' (short connective " +
         "beats exempt); book level = move-monotony counters (DELIGHT §14 — a palette, not a stamp; never 'all 13 per beat'). " +
         "Findings persist as CraftChecklist and auto-supersede per run. Emits NO scores. Accepts node id (GUID) or slug.")]
-    public async Task<string> beat_checklist_audit(
+    public Task<string> beat_checklist_audit(
         [Description("Book node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Re-evaluate every beat even if unchanged (default false).")] bool force = false)
+        [Description("Re-evaluate every beat even if unchanged (default false).")] bool force = false) =>
+        hub.InvokeAsync(nameof(ReaderQaTools), nameof(beat_checklist_auditImpl), new { nodeIdOrSlug, force });
+
+    public async Task<string> beat_checklist_auditImpl(
+        string nodeIdOrSlug,
+        bool force = false)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)
@@ -118,9 +129,14 @@ public class ReaderQaTools(
         "against the actual beat text and triaged blocker/moderate/minor. Confirmed gripes persist as ReaderGripe findings " +
         "(see list_findings) and supersede on re-run. Report-only — applying a fix is a separate deliberate action " +
         "(update_beat_text, optionally gated by a duel). Accepts node id (GUID) or slug.")]
-    public async Task<string> reader_qa_gripe_pass(
+    public Task<string> reader_qa_gripe_pass(
         [Description("Book node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Jury size (default 4; one seat per live model family, Claude tiers fill in).")] int readers = 4)
+        [Description("Jury size (default 4; one seat per live model family, Claude tiers fill in).")] int readers = 4) =>
+        hub.InvokeAsync(nameof(ReaderQaTools), nameof(reader_qa_gripe_passImpl), new { nodeIdOrSlug, readers });
+
+    public async Task<string> reader_qa_gripe_passImpl(
+        string nodeIdOrSlug,
+        int readers = 4)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)

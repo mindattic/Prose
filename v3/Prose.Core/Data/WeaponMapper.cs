@@ -339,7 +339,7 @@ public static class WeaponMapper
             .FirstOrDefault(x => x.EntityType == entityType && x.Name == alias);
         if (e != null) return e.Id;
         // Try slug match
-        var slug = Prose.Core.Services.WorldGraphService.Slugify(alias);
+        var slug = Prose.Core.Services.UniverseGraphService.Slugify(alias);
         e = db.Entities.AsNoTracking()
             .FirstOrDefault(x => x.EntityType == entityType && x.Slug == slug);
         return e?.Id;

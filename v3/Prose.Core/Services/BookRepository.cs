@@ -108,7 +108,7 @@ public class BookRepository : IBookRepository
                 Id          = id,
                 EntityType  = "book",
                 Name        = book.Title,
-                Slug        = WorldGraphService.Slugify(book.Title),
+                Slug        = UniverseGraphService.Slugify(book.Title),
                 Status      = string.IsNullOrEmpty(book.Status) ? "canon" : book.Status,
                 Description = book.Premise,
                 CreatedAt   = book.Created == default ? DateTime.UtcNow : book.Created,
@@ -119,7 +119,7 @@ public class BookRepository : IBookRepository
         else
         {
             entity.Name        = book.Title;
-            entity.Slug        = WorldGraphService.Slugify(book.Title);
+            entity.Slug        = UniverseGraphService.Slugify(book.Title);
             entity.Description = book.Premise;
             entity.ModifiedAt  = DateTime.UtcNow;
         }
@@ -131,7 +131,7 @@ public class BookRepository : IBookRepository
             db.Books.Add(sub);
         }
         sub.Title             = book.Title;
-        sub.Slug              = WorldGraphService.Slugify(book.Title);
+        sub.Slug              = UniverseGraphService.Slugify(book.Title);
         sub.SeriesId          = string.IsNullOrEmpty(book.SeriesId) ? null : ParseGuid(book.SeriesId);
         sub.Tagline           = book.Tagline ?? "";
         sub.Premise           = book.Premise ?? "";
@@ -207,7 +207,7 @@ public class BookRepository : IBookRepository
     private static Guid? ResolveCharacterIdByName(ProseDbContext db, string name)
     {
         if (string.IsNullOrWhiteSpace(name)) return null;
-        var slug = WorldGraphService.Slugify(name);
+        var slug = UniverseGraphService.Slugify(name);
         return db.Entities
             .Where(e => e.EntityType == "character"
                 && (e.Name == name || e.Slug == slug))

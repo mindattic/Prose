@@ -143,7 +143,7 @@ public static class TestDbFactory
                             ?? (root.TryGetProperty("body", out var bd) ? bd.GetString() : null);
 
                         if (!seenIds.Add(id)) continue;
-                        var slug = WorldGraphService.Slugify(name ?? "");
+                        var slug = UniverseGraphService.Slugify(name ?? "");
                         var compositeKey = type + "|" + slug;
                         // Skip slug collisions within the same type — real data has dupes
                         // (two characters named "Sasha", etc.). The first one wins; the

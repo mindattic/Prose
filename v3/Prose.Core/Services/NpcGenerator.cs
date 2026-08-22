@@ -18,12 +18,12 @@ public class NpcGenerator
     private readonly ILlmService llm;
     private readonly DatabaseService db;
     private readonly CharacterRepository charRepo;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly NamePoolService namePool;
     private readonly EmbeddingService embeddings;
 
     public NpcGenerator(ILlmService llm, DatabaseService db, CharacterRepository charRepo,
-        WorldGraphService graph, NamePoolService namePool, EmbeddingService embeddings)
+        UniverseGraphService graph, NamePoolService namePool, EmbeddingService embeddings)
     {
         this.llm = llm;
         this.db = db;
@@ -184,8 +184,8 @@ public class NpcGenerator
                 charRepo.Save(character);
 
                 // Add to world graph
-                var nodeId = WorldGraphService.Slugify(character.Name);
-                graph.AddNode(new Models.Graph.WorldNode
+                var nodeId = UniverseGraphService.Slugify(character.Name);
+                graph.AddNode(new Models.Graph.UniverseNode
                 {
                     Id = nodeId,
                     Name = character.Name,

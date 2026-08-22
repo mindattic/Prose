@@ -485,7 +485,7 @@ public class DataConsistencyService
     /// <summary>
     /// CharacterAffiliations.Alias (the denormalized display text — feeds directly into
     /// <c>Character.Affiliation</c> in <c>CharacterMapper</c>, and from there into
-    /// <c>WorldGraphService.BuildCharacters()</c>'s "affiliated_with" edge and every prose-
+    /// <c>UniverseGraphService.BuildCharacters()</c>'s "affiliated_with" edge and every prose-
     /// generation context that reads it) drifted from the Faction it's actually FK'd to.
     ///
     /// Confirmed live 2026-08-09: 10 rows where Alias names one real, active Faction (e.g.
@@ -494,7 +494,7 @@ public class DataConsistencyService
     /// followed the entity but the row's own cached Alias text was never refreshed. Both
     /// names being real, live factions makes this worse than a typo: prose context and any
     /// display surface reading <c>Alias</c> reports a technically-real but WRONG affiliation,
-    /// and <c>WorldGraphService</c>'s edge-target slug (built from Alias, not FactionId)
+    /// and <c>UniverseGraphService</c>'s edge-target slug (built from Alias, not FactionId)
     /// silently points at a different graph vertex than the row's own FK does.
     /// </summary>
     private async Task<Finding> CharacterAffiliationAliasDriftAsync(ProseDbContext db, CancellationToken ct)
@@ -526,7 +526,7 @@ public class DataConsistencyService
             Description: "The row's cached display Alias no longer matches the Name of the Faction its " +
                          "own FactionId points to — most likely a Faction rename/merge that updated the " +
                          "FK's target but never refreshed this row's Alias. Character.Affiliation (and " +
-                         "everything downstream: prose context, WorldGraphService's affiliated_with edge) " +
+                         "everything downstream: prose context, UniverseGraphService's affiliated_with edge) " +
                          "reads Alias, so it reports the wrong faction even though the relational FK is " +
                          "correct.",
             DriftCount: count,
@@ -585,7 +585,7 @@ public class DataConsistencyService
     /// full-schema sweep after the CharacterAffiliations finding turned out not to be a one-off:
     /// 204 additional drifted rows across 11 more tables, some far higher-rate than the 0.6% seen
     /// on CharacterAffiliations — <c>ChapterCharacters</c> 47.6%, <c>PlaceFrequentedBy</c> 43.5%,
-    /// <c>FactionMembers</c> 10.6%. Two of these feed <c>WorldGraphService</c> graph edges
+    /// <c>FactionMembers</c> 10.6%. Two of these feed <c>UniverseGraphService</c> graph edges
     /// directly (<c>FactionRelationships</c> → <c>BuildFactions()</c>'s Relationships loop,
     /// <c>PlaceFrequentedBy</c> → <c>LinkDistrictFrequentedBy()</c>) — a drifted Alias there
     /// silently mislabels the edge's target node, not just a display string. Excludes
@@ -645,7 +645,7 @@ public class DataConsistencyService
             Title: "Bridge-table Alias columns disagreeing with their own target FK",
             Description: "Same shape as CHAR-AFFIL-ALIAS-DRIFT, swept across every other bridge " +
                          "table with a denormalized Alias cache alongside its target FK. Two of " +
-                         "these (FactionRelationships, PlaceFrequentedBy) feed WorldGraphService " +
+                         "these (FactionRelationships, PlaceFrequentedBy) feed UniverseGraphService " +
                          "edges directly, so a drifted Alias mislabels the graph edge's target, " +
                          "not just a display string.",
             DriftCount: total,

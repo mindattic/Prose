@@ -164,7 +164,7 @@ public class VocabularyRelationalParityTests
                 Id         = id,
                 EntityType = "vocabulary",
                 Name       = src.Term,
-                Slug       = WorldGraphService.Slugify(src.Term),
+                Slug       = UniverseGraphService.Slugify(src.Term),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,

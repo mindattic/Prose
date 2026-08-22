@@ -15,7 +15,7 @@ namespace Prose.Core.Services;
 public class WorldStatePrecheckService
 {
     private readonly WorldStateService world;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly ILogger<WorldStatePrecheckService> log;
 
     private static readonly HashSet<string> DeadStatuses = new(StringComparer.OrdinalIgnoreCase)
@@ -33,7 +33,7 @@ public class WorldStatePrecheckService
     private List<(string Name, string Id, string Kind)>? gearIndex;
     private readonly object gearIndexLock = new();
 
-    public WorldStatePrecheckService(WorldStateService world, WorldGraphService graph, ILogger<WorldStatePrecheckService> log)
+    public WorldStatePrecheckService(WorldStateService world, UniverseGraphService graph, ILogger<WorldStatePrecheckService> log)
     {
         this.world = world;
         this.graph = graph;
@@ -125,7 +125,7 @@ public class WorldStatePrecheckService
         if (string.IsNullOrWhiteSpace(current)) return; // unknown location — don't false-flag
 
         // 2026-08-09: investigated whether dossier.Now.Location's narrative-text values (same
-        // EntityStateEvents source as WorldGraphService.BuildCharacters(), 94% of live rows are
+        // EntityStateEvents source as UniverseGraphService.BuildCharacters(), 94% of live rows are
         // a full "home turf" description, not a clean place name) cause this substring check to
         // spuriously fail. Tried truncating `current` to its leading segment before comparing —
         // reverted: LooseLocationMatch's Contains-based check already succeeds whenever

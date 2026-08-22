@@ -7,7 +7,7 @@ namespace Prose.Core.Services;
 /// <summary>
 /// Aggregates data from individual typed JSON repositories.
 /// Keeps the same public API so downstream services (StoryStarterService,
-/// SceneGenerationService, WorldGraphService) don't break.
+/// SceneGenerationService, UniverseGraphService) don't break.
 /// </summary>
 public class DatabaseService : IDatabaseService
 {

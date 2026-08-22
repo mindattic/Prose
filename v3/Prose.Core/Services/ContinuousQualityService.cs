@@ -12,7 +12,7 @@ namespace Prose.Core.Services;
 /// and runs scoped contradiction + cliché checks on each saved chapter.
 ///
 /// Grounding comes from SQL: for each chapter we resolve the entities the prose
-/// mentions via <see cref="WorldGraphService"/> and pull dossiers via
+/// mentions via <see cref="UniverseGraphService"/> and pull dossiers via
 /// <see cref="WorldStateService"/> so the contradiction prompt is anchored to
 /// canon. The cliché scan needs no grounding — it goes straight to the LLM.
 /// Findings land in <see cref="FindingsService"/> for triage at /findings.
@@ -22,7 +22,7 @@ public class ContinuousQualityService
     private const int MaxConcurrent = 1;
 
     private readonly ILlmService llm;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly WorldStateService worldState;
     private readonly EmbeddingService embeddings;
     private readonly FindingsService findings;
@@ -45,7 +45,7 @@ public class ContinuousQualityService
 
     public ContinuousQualityService(
         ILlmService llm,
-        WorldGraphService graph,
+        UniverseGraphService graph,
         WorldStateService worldState,
         EmbeddingService embeddings,
         FindingsService findings,

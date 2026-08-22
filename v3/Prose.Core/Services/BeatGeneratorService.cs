@@ -9,7 +9,7 @@ namespace Prose.Core.Services;
 public class BeatGeneratorService
 {
     private readonly ILlmService llm;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly EmbeddingService embeddings;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly LlmVotingService? voting;
@@ -22,7 +22,7 @@ public class BeatGeneratorService
 
     public BeatGeneratorService(
         ILlmService llm,
-        WorldGraphService graph,
+        UniverseGraphService graph,
         EmbeddingService embeddings,
         IDbContextFactory<ProseDbContext> dbFactory,
         LlmVotingService? voting = null,

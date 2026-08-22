@@ -140,9 +140,15 @@ public class LoggingService
         @"^(.+?) \[(\w{3})\] (.+)$",
         RegexOptions.Compiled);
 
-    // All format strings we may encounter in log files
-    private static readonly string[] ParseFormats = SettingsService.TimestampFormats
-        .Select(f => f.Format).ToArray();
+    // The actual format Serilog's default output template writes ("{Timestamp:yyyy-MM-dd
+    // HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}", confirmed against
+    // real on-disk mcp-*.txt/log-*.txt files) — NOT SettingsService.TimestampFormats, which
+    // is a distinct, unrelated list for parsing user-typed dates in settings UI input and has
+    // no millisecond/offset variant at all. Reusing that list here was a latent bug: it meant
+    // TryParseLogLine silently failed to parse every real Serilog line ever written, so
+    // Search()/GetAvailableDates() always returned nothing — found live the first time this
+    // was actually exercised (2026-08-21), not caught earlier because nothing called it.
+    private static readonly string[] ParseFormats = ["yyyy-MM-dd HH:mm:ss.fff zzz"];
 
     private static LogEntry? TryParseLogLine(string line)
     {

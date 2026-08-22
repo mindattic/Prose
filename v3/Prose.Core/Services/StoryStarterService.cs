@@ -7,7 +7,7 @@ namespace Prose.Core.Services;
 public class StoryStarterService
 {
     private readonly ILlmService llm;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly LoreService canon;
     private readonly DatabaseService canonDb;
     private readonly IPathProvider paths;
@@ -36,7 +36,7 @@ public class StoryStarterService
     ];
 
     public StoryStarterService(
-        ILlmService llm, WorldGraphService graph, LoreService canon,
+        ILlmService llm, UniverseGraphService graph, LoreService canon,
         DatabaseService canonDb, IPathProvider paths,
         SemanticIndexService semanticIndex, InferenceService inference,
         WorldStateService worldState,
@@ -280,7 +280,7 @@ public class StoryStarterService
         var districtContext = canonDb.GetDistrictContext(location);
 
         // Supplement with graph relationships
-        var id = WorldGraphService.Slugify(location);
+        var id = UniverseGraphService.Slugify(location);
         var graphContext = graph.GetContextForNode(id);
 
         if (districtContext.Length > 0)
@@ -305,7 +305,7 @@ public class StoryStarterService
             if (ctx.Length > 0)
             {
                 // Supplement with graph relationships (broader world connections)
-                var id = WorldGraphService.Slugify(name);
+                var id = UniverseGraphService.Slugify(name);
                 var edges = graph.GetAllEdges(id);
                 if (edges.Any())
                 {
@@ -322,7 +322,7 @@ public class StoryStarterService
             else
             {
                 // Fallback: graph-only context
-                var id = WorldGraphService.Slugify(name);
+                var id = UniverseGraphService.Slugify(name);
                 var graphCtx = graph.GetContextForNode(id);
                 if (graphCtx.Length > 0) contexts.Add(graphCtx);
             }

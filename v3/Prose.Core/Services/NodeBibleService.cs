@@ -96,6 +96,33 @@ public class NodeBibleService
     }
 
     /// <summary>
+    /// Beat Context Archive, Part F4b (2026-08-21): read <see cref="Data.Entities.Node.NodeBible"/>
+    /// as it stood at a point in time — <c>Nodes</c> is already system-versioned, this just
+    /// wasn't wired up yet. Mirrors <see cref="MarkdownFileService.GetAsync"/>'s exact
+    /// <c>FOR SYSTEM_TIME AS OF</c> pattern. Null <paramref name="asOf"/> returns the current bible.
+    /// </summary>
+    public async Task<string?> GetBibleAsync(Guid nodeId, DateTime? asOf = null, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        if (asOf.HasValue && db.Database.IsSqlServer())
+        {
+            var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+            // EF Core's SqlQueryRaw<TScalar> requires the returned column be named "Value".
+            return await db.Database.SqlQueryRaw<string>(
+                    $"SELECT [NodeBible] AS [Value] FROM [Nodes] FOR SYSTEM_TIME AS OF '{ts}' WHERE [Id] = {{0}}",
+                    nodeId)
+                .FirstOrDefaultAsync(ct);
+        }
+
+        // IgnoreQueryFilters — explicit id lookup, not ambient scope (2026-08-17 convention).
+        return await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(n => n.Id == nodeId)
+            .Select(n => n.NodeBible)
+            .FirstOrDefaultAsync(ct);
+    }
+
+    /// <summary>
     /// Generate a bible text only — no DB writes. Used by PremiseToOutlineService
     /// to produce competing outlines before picking a winner.
     /// </summary>

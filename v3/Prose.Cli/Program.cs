@@ -21,6 +21,16 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 // This project is the non-commercial indie use case the Community tier exists for.
 QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 
+// Fail-closed Hub dependency (Phase 2, explicit user decision): "the hub is running, Prose is
+// working; hub goes down, Prose is down." Every command gates on the Hub being reachable and
+// healthy before anything else runs — no silent fallback to the old direct-in-process behavior.
+// The one exception: --worker-mode runs on a rented remote GPU pod talking to a separate
+// Azure-hosted coordinator and its own local LLM endpoint — it has no access to this machine's
+// loopback-only Hub by construction, not by choice, and gets its own equivalent fail-closed
+// check against ITS hard dependency (see WorkerModeCli) instead of this one.
+if (!args.Contains("--worker-mode"))
+    HubGate.EnsureReachableOrExit();
+
 // Multi-universe: a global `--universe <slug>` flag selects which universe this
 // process targets (SS-LAW-15). UniverseContext also honors the PROSE_UNIVERSE env
 // var (per terminal), so two CLIs can write different universes at once. Parsed
@@ -61,6 +71,13 @@ if (UniverseBootstrap.RequestedSlug == null
         // reproducibility audit): the guard blocked exactly the fresh-DB-bootstrap use case
         // this flag exists for.
         "--seed", "--migrate-sql",
+        // Command/Decision Ledger (2026-08-20): system-level audit trail, not scoped to any
+        // one universe — CommandLedgerEntry.Universe is a plain informational column, not a
+        // filter, and DecisionLedgerEntry has no universe concept at all.
+        "--log-decision", "--command-log", "--decision-log",
+        // Durable log search (2026-08-21, observability Part E): Serilog files on disk,
+        // not universe-scoped data at all.
+        "--log-search",
         // Corpus-wide staleness reports: resolve each row's own book, not an ambient scope —
         // same shape as --sync-markdown/--generate-canon-md above.
         "--verification-staleness", "--findings-staleness",
@@ -97,6 +114,10 @@ if (UniverseBootstrap.RequestedSlug == null
         // Corpus-wide data-repair backfill: finds orphaned character/place rows via
         // IgnoreQueryFilters() across every universe by design — see BackfillMissingSubtypeRowsCli.
         "--backfill-missing-subtype-rows",
+        // Beat Context Archive (2026-08-21, observability Part F5): takes an explicit --beat-id
+        // and resolves the beat's own NodeId from BeatNodes directly — no ambient scope to
+        // resolve, same shape as --merge-entity above.
+        "--beat-archive",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -114,17 +135,7 @@ if (UniverseBootstrap.RequestedSlug == null
 // without starting the web server. One universe per invocation (scope is pinned below).
 if (args.Contains("--rebuild-graph"))
 {
-    var sp = BuildCoreServices(args);
-    // Pin the universe scope BEFORE building so it can't shift mid-rebuild. Resolving the context
-    // forces its lazy catalog load + applies the --universe/PROSE_UNIVERSE/default selection, so every
-    // builder in this rebuild sees one stable scope (the non-deterministic node/edge counts came
-    // from the scope resolving partway through the multi-builder pass). Defaults to GLMZ.
-    var cliUniverse = sp.GetRequiredService<Prose.Core.Services.IUniverseContext>();
-    Console.WriteLine($"[rebuild-graph] Universe scope: {cliUniverse.CurrentSlug} ({cliUniverse.CurrentId})");
-    var graph = sp.GetRequiredService<WorldGraphService>();
-    Console.WriteLine("[rebuild-graph] Rebuilding world graph from source data...");
-    graph.Rebuild();
-    Console.WriteLine($"[rebuild-graph] Done: {graph.NodeCount} nodes, {graph.EdgeCount} edges saved to {cliUniverse.CurrentSlug}_universe_graph.json");
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RebuildGraphCli", args);
     return;
 }
 
@@ -132,8 +143,7 @@ if (args.Contains("--rebuild-graph"))
 // Operator password reset over the MindAttic.Authentication store, no web server.
 if (args.Contains("--reset-password"))
 {
-    var sp = BuildServicesWithVaultAndAuth(args);
-    Environment.ExitCode = await ResetPasswordCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ResetPasswordCli", args);
     return;
 }
 
@@ -145,8 +155,7 @@ if (args.Contains("--reset-password"))
 // Run `dotnet run --project Prose.Blazor -- --book` (no subcommand) to see full usage.
 if (args.Contains("--book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BookCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BookCli", args);
     return;
 }
 
@@ -154,8 +163,7 @@ if (args.Contains("--book"))
 // Run `dotnet run --project Prose.Blazor -- --continuity` (no subcommand) to see full usage.
 if (args.Contains("--continuity"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = ContinuityCli.Run(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ContinuityCli", args);
     return;
 }
 
@@ -165,8 +173,7 @@ if (args.Contains("--continuity"))
 //   prose --migrate-sql --all              schema + import all supported types
 if (args.Contains("--migrate-sql"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MigrateSqlCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateSqlCli", args);
     return;
 }
 
@@ -175,8 +182,7 @@ if (args.Contains("--migrate-sql"))
 //   add --commit to apply, --auto-create to stub missing entities, --tag <source>
 if (args.Contains("--interpret"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await InterpretCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("InterpretCli", args);
     return;
 }
 
@@ -184,8 +190,7 @@ if (args.Contains("--interpret"))
 //   prose --add-doc --title "…" --body-file path.md [--category essay] [--tags "a,b,c"] [--filename slug.md]
 if (args.Contains("--add-doc"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AddDocCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AddDocCli", args);
     return;
 }
 
@@ -193,8 +198,7 @@ if (args.Contains("--add-doc"))
 //   prose --add-character --file path.json
 if (args.Contains("--add-character"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AddCharacterCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AddCharacterCli", args);
     return;
 }
 
@@ -204,8 +208,7 @@ if (args.Contains("--add-character"))
 //   prose --add-place --file path.json [--print]
 if (args.Contains("--add-place"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AddPlaceCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AddPlaceCli", args);
     return;
 }
 
@@ -213,8 +216,7 @@ if (args.Contains("--add-place"))
 //   prose --add-corponation --file path.json
 if (args.Contains("--add-corponation"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AddCorponationCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AddCorponationCli", args);
     return;
 }
 
@@ -222,8 +224,7 @@ if (args.Contains("--add-corponation"))
 //   prose --add-weapon --file path.json
 if (args.Contains("--add-weapon"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AddWeaponryCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AddWeaponryCli", args);
     return;
 }
 
@@ -231,8 +232,7 @@ if (args.Contains("--add-weapon"))
 //   prose --add-apparel --file path.json
 if (args.Contains("--add-apparel"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AddApparelCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AddApparelCli", args);
     return;
 }
 
@@ -241,8 +241,7 @@ if (args.Contains("--add-apparel"))
 //   prose --combat --location "Hegewisch" --objective "..." --exchanges 6 --tone Cinematic
 if (args.Contains("--combat"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CombatCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CombatCli", args);
     return;
 }
 
@@ -252,8 +251,7 @@ if (args.Contains("--combat"))
 //   prose --add-faction --file path.json
 if (args.Contains("--add-faction"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AddFactionCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AddFactionCli", args);
     return;
 }
 
@@ -261,8 +259,7 @@ if (args.Contains("--add-faction"))
 //   prose --add-news --file path.json
 if (args.Contains("--add-news"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AddNewsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AddNewsCli", args);
     return;
 }
 
@@ -271,8 +268,7 @@ if (args.Contains("--add-news"))
 //   prose --schema rebuild  --table NAME --order "col1,col2,col3,…"
 if (args.Contains("--schema"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SchemaCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SchemaCli", args);
     return;
 }
 
@@ -282,8 +278,7 @@ if (args.Contains("--schema"))
 //   prose --sql-export --schema --out path  override output path
 if (args.Contains("--sql-export"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SqlExportCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SqlExportCli", args);
     return;
 }
 
@@ -295,8 +290,7 @@ if (args.Contains("--sql-export"))
 // MUST appear before the bare --repair handler below.
 if (args.Contains("--swain-audit"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SwainAuditCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SwainAuditCli", args);
     return;
 }
 
@@ -306,8 +300,7 @@ if (args.Contains("--swain-audit"))
 //   prose --repair --continuity   # also run continuity extraction (LLM-heavy)
 if (args.Contains("--repair"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RepairCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RepairCli", args);
     return;
 }
 
@@ -315,8 +308,7 @@ if (args.Contains("--repair"))
 //   prose --ask "Question" [--k 8] [--type character]
 if (args.Contains("--ask"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AskCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AskCli", args);
     return;
 }
 
@@ -325,8 +317,7 @@ if (args.Contains("--ask"))
 //   prose --seed-vultures
 if (args.Contains("--seed-vultures"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = VulturesSeedCli.Run(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("VulturesSeedCli", args);
     return;
 }
 
@@ -337,8 +328,7 @@ if (args.Contains("--seed-vultures"))
 //   prose --audit-drift --json    JSON dump
 if (args.Contains("--audit-drift"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AuditDriftCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AuditDriftCli", args);
     return;
 }
 
@@ -347,8 +337,7 @@ if (args.Contains("--audit-drift"))
 // Territory*, DailyLife). One-shot, idempotent.
 if (args.Contains("--backfill-character-state"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await StateBackfillCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("StateBackfillCli", args);
     return;
 }
 
@@ -358,8 +347,7 @@ if (args.Contains("--backfill-character-state"))
 //   prose --image-prompts regen --all-changed
 if (args.Contains("--image-prompts"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ImagePromptsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ImagePromptsCli", args);
     return;
 }
 
@@ -369,8 +357,7 @@ if (args.Contains("--image-prompts"))
 //   --seed N for reproducible RNG
 if (args.Contains("--family-gen"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await FamilyGenCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FamilyGenCli", args);
     return;
 }
 
@@ -382,8 +369,7 @@ if (args.Contains("--family-gen"))
 //   prose --genetics propagate --seed 42           reproducible RNG
 if (args.Contains("--genetics"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await GeneticsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GeneticsCli", args);
     return;
 }
 
@@ -394,8 +380,7 @@ if (args.Contains("--genetics"))
 //   prose --family show    --of <id|slug>
 if (args.Contains("--family"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await FamilyCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FamilyCli", args);
     return;
 }
 
@@ -403,8 +388,7 @@ if (args.Contains("--family"))
 //   prose --validate-nouns --slug <slug>
 if (args.Contains("--validate-nouns"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ValidateNounsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ValidateNounsCli", args);
     return;
 }
 
@@ -414,8 +398,7 @@ if (args.Contains("--validate-nouns"))
 //   prose --deprecated-names --remove --id <id>
 if (args.Contains("--deprecated-names"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DeprecatedNameCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DeprecatedNameCli", args);
     return;
 }
 
@@ -423,8 +406,7 @@ if (args.Contains("--deprecated-names"))
 //   prose --audit-consistency [--json]
 if (args.Contains("--audit-consistency"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DataConsistencyCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DataConsistencyCli", args);
     return;
 }
 
@@ -432,8 +414,7 @@ if (args.Contains("--audit-consistency"))
 //   prose --graph-health --universe <slug> [--json]
 if (args.Contains("--graph-health"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await GraphHealthCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GraphHealthCli", args);
     return;
 }
 
@@ -443,8 +424,7 @@ if (args.Contains("--graph-health"))
 //   prose --data-scan --tool <name> [--apply] [--overwrite] --universe <slug>
 if (args.Contains("--data-scan"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DataScanCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DataScanCli", args);
     return;
 }
 
@@ -454,8 +434,7 @@ if (args.Contains("--data-scan"))
 // DRY-RUN by default; --apply writes. Slugs are loose keys — guid is the key.
 if (args.Contains("--repair-slugs"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SlugRepairCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SlugRepairCli", args);
     return;
 }
 
@@ -464,8 +443,7 @@ if (args.Contains("--repair-slugs"))
 //   prose --get-survey --slug <slug>
 if (args.Contains("--list-surveys") || args.Contains("--get-survey"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SurveyCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SurveyCli", args);
     return;
 }
 
@@ -474,8 +452,7 @@ if (args.Contains("--list-surveys") || args.Contains("--get-survey"))
 //   prose --scan-entity-mentions
 if (args.Contains("--scan-entity-mentions"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ScanEntityMentionsCli.RunAsync(sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ScanEntityMentionsCli", args);
     return;
 }
 
@@ -483,8 +460,7 @@ if (args.Contains("--scan-entity-mentions"))
 //   prose --tag-entities (--id <guid> | --slug <slug> | --all) [--dry-run]
 if (args.Contains("--tag-entities"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await TagEntitiesCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("TagEntitiesCli", args);
     return;
 }
 
@@ -494,14 +470,7 @@ if (args.Contains("--tag-entities"))
 // Entities that ARE mentioned → Status='canon'. Re-run after --scan-entity-mentions.
 if (args.Contains("--backfill-stubs"))
 {
-    var sp = BuildCoreServices(args);
-    var db2 = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-    await using var ctx2 = await db2.CreateDbContextAsync();
-    var promoted = await ctx2.Database.ExecuteSqlRawAsync(
-        "UPDATE Entities SET Status = 'canon', ModifiedAt = SYSUTCDATETIME() WHERE Status != 'canon' AND Status != 'archived' AND Id IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
-    var demoted = await ctx2.Database.ExecuteSqlRawAsync(
-        "UPDATE Entities SET Status = 'stub', ModifiedAt = SYSUTCDATETIME() WHERE Status != 'stub' AND Status != 'archived' AND Id NOT IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
-    Console.WriteLine($"[backfill-stubs] promoted={promoted} canon, demoted={demoted} stub.");
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillStubsCli", args);
     return;
 }
 
@@ -511,8 +480,7 @@ if (args.Contains("--backfill-stubs"))
 //   prose --export <entityId>            one entity, plain .json
 if (args.Contains("--export"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ExportCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ExportCli", args);
     return;
 }
 
@@ -521,8 +489,7 @@ if (args.Contains("--export"))
 //   prose --reembed --force      clear the table first, re-embed everything
 if (args.Contains("--reembed"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReembedCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReembedCli", args);
     return;
 }
 
@@ -531,8 +498,7 @@ if (args.Contains("--reembed"))
 //   prose --legion vote "Q" [--context "…"]    → open-ended vote with synthesized narrative
 if (args.Contains("--legion"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await LegionCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("LegionCli", args);
     return;
 }
 
@@ -550,8 +516,7 @@ if (args.Contains("--seed") && !args.Contains("--write-node")
     && !args.Contains("--write-story") && !args.Contains("--create-book")
     && !args.Contains("--run-corpus"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SeedCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedCli", args);
     return;
 }
 
@@ -559,8 +524,7 @@ if (args.Contains("--seed") && !args.Contains("--write-node")
 //   prose --book-bible --slug <slug> [--beats N] [--replace-beats]
 if (args.Contains("--book-bible"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await NodeBibleCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("NodeBibleCli", args);
     return;
 }
 
@@ -568,8 +532,7 @@ if (args.Contains("--book-bible"))
 //   prose --set-book-bible --slug <slug> --file <path-to-bible.md>
 if (args.Contains("--set-book-bible"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SetBookBibleCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetBookBibleCli", args);
     return;
 }
 
@@ -579,8 +542,7 @@ if (args.Contains("--set-book-bible"))
 //   prose --generate-canon-md --all
 if (args.Contains("--generate-canon-md"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CanonDocumentCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CanonDocumentCli", args);
     return;
 }
 
@@ -593,8 +555,7 @@ if (args.Contains("--generate-canon-md"))
 //   prose --generate-node-doc --all
 if (args.Contains("--generate-node-doc"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await NodeDocCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("NodeDocCli", args);
     return;
 }
 
@@ -602,8 +563,7 @@ if (args.Contains("--generate-node-doc"))
 // Gates BookHealthService.SacredFlawAsync — see SetNarrativeModeCli.
 if (args.Contains("--set-narrative-mode"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SetNarrativeModeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetNarrativeModeCli", args);
     return;
 }
 
@@ -611,8 +571,7 @@ if (args.Contains("--set-narrative-mode"))
 // One-time Stage-1 entity seed for the Gospel series (zero entities existed) — see SeedGospelCastCli.
 if (args.Contains("--seed-gospel-cast"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SeedGospelCastCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedGospelCastCli", args);
     return;
 }
 
@@ -620,8 +579,7 @@ if (args.Contains("--seed-gospel-cast"))
 // One-time book-scoped entity seed for the corpus's lowest-tagging-coverage GLMZ books — see SeedGlmzGapFillCli.
 if (args.Contains("--seed-glmz-gap-fill"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SeedGlmzGapFillCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedGlmzGapFillCli", args);
     return;
 }
 
@@ -629,8 +587,7 @@ if (args.Contains("--seed-glmz-gap-fill"))
 // Round 2 of the entity-tag-coverage sweep, spanning 3 universes — see SeedGapFillRound2Cli.
 if (args.Contains("--seed-gap-fill-round2"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SeedGapFillRound2Cli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedGapFillRound2Cli", args);
     return;
 }
 
@@ -638,8 +595,7 @@ if (args.Contains("--seed-gap-fill-round2"))
 // Round 3 (closing) of the entity-tag-coverage sweep — see SeedGapFillRound3Cli.
 if (args.Contains("--seed-gap-fill-round3"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SeedGapFillRound3Cli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedGapFillRound3Cli", args);
     return;
 }
 
@@ -648,8 +604,7 @@ if (args.Contains("--seed-gap-fill-round3"))
 // David in Matthew's footnotes) — see FixDavidMistagCli.
 if (args.Contains("--fix-david-mistag"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await FixDavidMistagCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FixDavidMistagCli", args);
     return;
 }
 
@@ -660,8 +615,7 @@ if (args.Contains("--fix-david-mistag"))
 // see ReconcileTrinityCli / TrinityReconciliationService.
 if (args.Contains("--reconcile-trinity"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReconcileTrinityCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReconcileTrinityCli", args);
     return;
 }
 
@@ -670,8 +624,7 @@ if (args.Contains("--reconcile-trinity"))
 //   prose --generate-glossary --universe <slug>   (omit --universe for all)
 if (args.Contains("--generate-glossary"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await GlossaryCli.RunMasterAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GlossaryCli", args, method: "RunMasterAsync");
     return;
 }
 
@@ -681,8 +634,7 @@ if (args.Contains("--generate-glossary"))
 //   prose --generate-book-glossary --all
 if (args.Contains("--generate-book-glossary"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await GlossaryCli.RunBookAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GlossaryCli", args, method: "RunBookAsync");
     return;
 }
 
@@ -692,12 +644,7 @@ if (args.Contains("--generate-book-glossary"))
 //   prose --generate-cover-prompt --all
 if (args.Contains("--generate-cover-prompt"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedCp, estCp) = await CostGateCli.ConfirmAsync("--generate-cover-prompt", args, sp);
-    if (!proceedCp) return;
-    var beforeCp = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await GenerateCoverPromptCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--generate-cover-prompt", estCp, beforeCp, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("GenerateCoverPromptCli", "--generate-cover-prompt", args);
     return;
 }
 
@@ -706,8 +653,7 @@ if (args.Contains("--generate-cover-prompt"))
 //   prose --generate-cover-image --slug <slug> --provider openai|stability|google
 if (args.Contains("--generate-cover-image"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await GenerateCoverImageCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GenerateCoverImageCli", args);
     return;
 }
 
@@ -719,17 +665,13 @@ if (args.Contains("--generate-cover-image"))
 //   prose --booktok --standalone --cover-path <path> --title "<title>" --provider kling|runway|sora
 if (args.Contains("--booktok"))
 {
-    var sp = BuildCoreServices(args);
     if (args.Contains("--dry-run"))
     {
         // No paid API call happens in dry-run — skip the cost gate entirely.
-        Environment.ExitCode = await BookTokCli.RunAsync(args, sp);
+        Environment.ExitCode = await HubCliClient.ForwardAsync("BookTokCli", args);
         return;
     }
-    var gateArgs = args.Contains("--yes") ? args.Append("--no-confirm").ToArray() : args;
-    var (proceedBt, _) = await CostGateCli.ConfirmAsync("--booktok", gateArgs, sp);
-    if (!proceedBt) return;
-    Environment.ExitCode = await BookTokCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("BookTokCli", "--booktok", args);
     return;
 }
 
@@ -738,8 +680,7 @@ if (args.Contains("--booktok"))
 //   prose --composite-cover-title --slug <slug>
 if (args.Contains("--composite-cover-title"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CompositeCoverTitleCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CompositeCoverTitleCli", args);
     return;
 }
 
@@ -748,8 +689,7 @@ if (args.Contains("--composite-cover-title"))
 //   prose --run-corpus --count N [--seed "..."] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]
 if (args.Contains("--run-corpus"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RunCorpusCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RunCorpusCli", args);
     return;
 }
 
@@ -757,8 +697,7 @@ if (args.Contains("--run-corpus"))
 //   prose --edit-beat --slug <slug> (--beat-number N | --insert-after N) --file <path>
 if (args.Contains("--edit-beat"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await EditBeatCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("EditBeatCli", args);
     return;
 }
 
@@ -767,8 +706,7 @@ if (args.Contains("--edit-beat"))
 //   prose --move-beat --slug <slug> --beat-number N --after M   (M=0 moves to the top)
 if (args.Contains("--move-beat"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MoveBeatCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MoveBeatCli", args);
     return;
 }
 
@@ -777,8 +715,7 @@ if (args.Contains("--move-beat"))
 //   prose --set-beat-enabled --slug <slug> (--beat-number N | --beat-id <guid>) [--enable]
 if (args.Contains("--set-beat-enabled"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SetBeatEnabledCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetBeatEnabledCli", args);
     return;
 }
 
@@ -786,36 +723,28 @@ if (args.Contains("--set-beat-enabled"))
 //   prose --create-book --title "..." [--code SRZR] [--kind book] [--description "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
 if (args.Contains("--create-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CreateNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CreateNodeCli", args);
     return;
 }
 
 //   prose --expand-beat (--slug <slug> | --id <guid>) [--beat <beatId>] [--force]
 if (args.Contains("--expand-beat"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ExpandBeatCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ExpandBeatCli", args);
     return;
 }
 
 //   prose --auto-run (--slug <slug> | --id <guid>) [--effort draft|standard] [--dry-run] [--force]
 if (args.Contains("--auto-run"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedAr, estAr) = await CostGateCli.ConfirmAsync("--auto-run", args, sp);
-    if (!proceedAr) return;
-    var beforeAr = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await AutoRunCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--auto-run", estAr, beforeAr, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("AutoRunCli", "--auto-run", args);
     return;
 }
 
 //   prose --write-node --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
 if (args.Contains("--write-node"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await WriteNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("WriteNodeCli", args);
     return;
 }
 
@@ -825,8 +754,7 @@ if (args.Contains("--write-node"))
 //   prose --migrate-legacy-book-chapter
 if (args.Contains("--migrate-legacy-book-chapter"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MigrateLegacyBookChapterCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateLegacyBookChapterCli", args);
     return;
 }
 
@@ -836,8 +764,7 @@ if (args.Contains("--migrate-legacy-book-chapter"))
 //   prose --migrate-canon-docs [--dry-run]
 if (args.Contains("--migrate-canon-docs"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MigrateCanonDocsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateCanonDocsCli", args);
     return;
 }
 
@@ -847,8 +774,7 @@ if (args.Contains("--migrate-canon-docs"))
 //   prose --migrate-node-bibles [--slug <slug>] [--dry-run]
 if (args.Contains("--migrate-node-bibles"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MigrateNodeBiblesCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateNodeBiblesCli", args);
     return;
 }
 
@@ -858,8 +784,7 @@ if (args.Contains("--migrate-node-bibles"))
 //   prose --migrate-blueprint-rows [--slug <slug>] [--dry-run]
 if (args.Contains("--migrate-blueprint-rows"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MigrateBlueprintRowsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateBlueprintRowsCli", args);
     return;
 }
 
@@ -880,8 +805,7 @@ if (args.Contains("--verify-beat") || args.Contains("--verify-book")
     || args.Contains("--verify-quote") || args.Contains("--verify-quotes-batch")
     || args.Contains("--verification-staleness"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await VerifyBeatCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("VerifyBeatCli", args);
     return;
 }
 
@@ -890,8 +814,7 @@ if (args.Contains("--verify-beat") || args.Contains("--verify-book")
 // SourceRuleVersion on write (currently CraftChecklist + StructuralFailure).
 if (args.Contains("--findings-staleness"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await FindingsStalenessCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FindingsStalenessCli", args);
     return;
 }
 
@@ -899,8 +822,7 @@ if (args.Contains("--findings-staleness"))
 // RFC 0011 Brick 3: degraded-services status on demand. See docs/PROVIDERS.md.
 if (args.Contains("--provider-status"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ProviderStatusCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProviderStatusCli", args);
     return;
 }
 
@@ -910,8 +832,7 @@ if (args.Contains("--provider-status"))
 // ReaderQaJuryProviders only where they currently hold the other Claude variant).
 if (args.Contains("--set-llm-provider"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SetLlmProviderCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetLlmProviderCli", args);
     return;
 }
 
@@ -919,8 +840,7 @@ if (args.Contains("--set-llm-provider"))
 // One-time repair for CharacterRelationships.TargetEntityId never being resolved at save time.
 if (args.Contains("--backfill-character-relationships"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BackfillCharacterRelationshipsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillCharacterRelationshipsCli", args);
     return;
 }
 
@@ -930,8 +850,7 @@ if (args.Contains("--backfill-character-relationships"))
 // generation pass.
 if (args.Contains("--backfill-entity-presence"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BackfillEntityPresenceCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillEntityPresenceCli", args);
     return;
 }
 
@@ -941,8 +860,7 @@ if (args.Contains("--backfill-entity-presence"))
 // a live matching-pipeline bug (see FixCrossUniverseContaminationCli for root-cause detail).
 if (args.Contains("--fix-cross-universe-contamination"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await FixCrossUniverseContaminationCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FixCrossUniverseContaminationCli", args);
     return;
 }
 
@@ -952,8 +870,7 @@ if (args.Contains("--fix-cross-universe-contamination"))
 // embedding/graph matches don't). See FixBadNameMatchesCli for root-cause detail.
 if (args.Contains("--fix-bad-name-matches"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await FixBadNameMatchesCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FixBadNameMatchesCli", args);
     return;
 }
 
@@ -964,8 +881,7 @@ if (args.Contains("--fix-bad-name-matches"))
 // call. See BackfillPovCli.cs.
 if (args.Contains("--backfill-pov"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BackfillPovCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillPovCli", args);
     return;
 }
 
@@ -975,8 +891,7 @@ if (args.Contains("--backfill-pov"))
 // first name; ScanNames only matches full Name or a registered alias). No LLM call.
 if (args.Contains("--backfill-short-name-alias"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BackfillShortNameAliasCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillShortNameAliasCli", args);
     return;
 }
 
@@ -985,10 +900,7 @@ if (args.Contains("--backfill-short-name-alias"))
 //   prose --migrate-nodes
 if (args.Contains("--migrate-nodes"))
 {
-    var sp = BuildCoreServices(args);
-    var svc = sp.GetRequiredService<NodeMigrationService>();
-    var report = await svc.MigrateAllAsync();
-    Console.WriteLine($"[migrate-nodes] Books={report.BooksAdded} Chapters={report.ChaptersAdded} Beats={report.BeatsAdded} Episodes={report.EpisodesAdded} Standalone={report.StandaloneBeatsAdded} Junctions={report.JunctionRowsAdded}");
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateNodesCli", args);
     return;
 }
 
@@ -999,10 +911,7 @@ if (args.Contains("--migrate-nodes"))
 //   prose --sync-audio [--push] [--pull] [--node SLUG] [--dry-run] [--verbose]
 if (args.Contains("--sync-audio"))
 {
-    // Surface %APPDATA%\MindAttic\<bucket>\providers.json — AzureBlobAudioStore reads
-    // AudioStore:ConnectionString straight from IConfiguration with no fallback.
-    var sp = BuildServicesWithVault(args);
-    Environment.ExitCode = await SyncAudioCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SyncAudioCli", args);
     return;
 }
 
@@ -1012,8 +921,7 @@ if (args.Contains("--sync-audio"))
 //   prose --narrate-book (--id <guid|prefix> | --slug <slug>)
 if (args.Contains("--narrate-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await NarrateNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("NarrateNodeCli", args);
     return;
 }
 
@@ -1022,8 +930,7 @@ if (args.Contains("--narrate-book"))
 //   prose --make-group --name "Group B" [--size 128]
 if (args.Contains("--make-group"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MakeGroupCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MakeGroupCli", args);
     return;
 }
 
@@ -1033,24 +940,21 @@ if (args.Contains("--make-group"))
 //   prose --review-entity [--type <type>] [--ballots N] [--prose N] [--unrated]
 if (args.Contains("--review-entity"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReviewEntityCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReviewEntityCli", args);
     return;
 }
 
 //   prose --link-weapon-ammo [--local-url URL] [--local-key KEY] [--local-model TAG] [--dry-run]
 if (args.Contains("--link-weapon-ammo"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await LinkWeaponAmmoCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("LinkWeaponAmmoCli", args);
     return;
 }
 
 //   prose --populate-queue --entity-review|--story-review|--beat-write|--status [options]
 if (args.Contains("--populate-queue"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await Prose.Cli.PopulateQueueCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PopulateQueueCli", args);
     return;
 }
 
@@ -1069,14 +973,9 @@ if (args.Contains("--worker-mode"))
 //   prose --review-book / --run-panel  (legacy aliases)
 if (args.Contains("--review-node") || args.Contains("--review-book") || args.Contains("--run-panel"))
 {
-    var sp = BuildServicesWithVault(args);
     var cmdRn = args.Contains("--review-node") ? "--review-node"
               : args.Contains("--review-book") ? "--review-book" : "--run-panel";
-    var (proceedRn, estRn) = await CostGateCli.ConfirmAsync(cmdRn, args, sp);
-    if (!proceedRn) return;
-    var beforeRn = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await ReviewNodeCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync(cmdRn, estRn, beforeRn, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ReviewNodeCli", cmdRn, args);
     return;
 }
 
@@ -1084,8 +983,7 @@ if (args.Contains("--review-node") || args.Contains("--review-book") || args.Con
 //   prose --gpu <status|stop|start|destroy> [--instance <id>]
 if (args.Contains("--gpu"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await VastGpuCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("VastGpuCli", args);
     return;
 }
 
@@ -1093,8 +991,7 @@ if (args.Contains("--gpu"))
 //   prose --runpod <status|stop|start|terminate> [--pod <id>]
 if (args.Contains("--runpod"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RunPodGpuCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RunPodGpuCli", args);
     return;
 }
 
@@ -1103,8 +1000,7 @@ if (args.Contains("--runpod"))
 //   prose --review-report (--slug <slug> | --id <guid> | --code <CODE>) [--provider local|cloud|all]
 if (args.Contains("--review-report"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReviewReportCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReviewReportCli", args);
     return;
 }
 
@@ -1116,8 +1012,7 @@ if (args.Contains("--review-report"))
 //   Kind:  score-vs-function | delight | voice | pacing | continuity | other
 if (args.Contains("--lesson-add"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ProseLessonCli.RunAddAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseLessonCli", args, method: "RunAddAsync");
     return;
 }
 
@@ -1125,8 +1020,7 @@ if (args.Contains("--lesson-add"))
 //   prose --lessons-list [--scope <scope>]
 if (args.Contains("--lessons-list"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ProseLessonCli.RunListAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseLessonCli", args, method: "RunListAsync");
     return;
 }
 
@@ -1136,8 +1030,7 @@ if (args.Contains("--lessons-list"))
 //   prose --edit-book (--id <guid|prefix> | --slug <slug>) [--top N]
 if (args.Contains("--edit-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await EditNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("EditNodeCli", args);
     return;
 }
 
@@ -1147,8 +1040,7 @@ if (args.Contains("--edit-book"))
 //   prose --publish-book (--id <guid|prefix> | --slug <slug>)
 if (args.Contains("--publish-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await PublishNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PublishNodeCli", args);
     return;
 }
 
@@ -1156,8 +1048,7 @@ if (args.Contains("--publish-book"))
 //   prose --seed-keywords --slug <slug> --keywords "phrase one|phrase two|..."
 if (args.Contains("--seed-keywords"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SeedKeywordsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedKeywordsCli", args);
     return;
 }
 
@@ -1165,8 +1056,7 @@ if (args.Contains("--seed-keywords"))
 //   prose --altitude-audit (--slug <slug> | --all) [--force-synopsis]
 if (args.Contains("--altitude-audit"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AltitudeAuditCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AltitudeAuditCli", args);
     return;
 }
 
@@ -1174,8 +1064,7 @@ if (args.Contains("--altitude-audit"))
 //   prose --export-synopsis (--slug <slug> | --all) [--force]
 if (args.Contains("--export-synopsis"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ExportSynopsisCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ExportSynopsisCli", args);
     return;
 }
 
@@ -1185,8 +1074,7 @@ if (args.Contains("--export-synopsis"))
 //   prose --export-node (--id <guid|prefix> | --slug <slug>) [--author "Name"]
 if (args.Contains("--export-node"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ExportNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ExportNodeCli", args);
     return;
 }
 
@@ -1196,8 +1084,7 @@ if (args.Contains("--export-node"))
 //   prose --prune-disabled --slug <slug> [--dry-run] [--yes]
 if (args.Contains("--prune-disabled"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await PruneDisabledCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PruneDisabledCli", args);
     return;
 }
 
@@ -1206,8 +1093,7 @@ if (args.Contains("--prune-disabled"))
 //   prose --prepare-audible (--slug <slug> | --id <guid|prefix>) [--no-phonetics]
 if (args.Contains("--prepare-audible"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await PrepareAudibleCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PrepareAudibleCli", args);
     return;
 }
 
@@ -1216,8 +1102,7 @@ if (args.Contains("--prepare-audible"))
 //   prose --timeline-check (--slug <slug> | --id <guid>)
 if (args.Contains("--timeline-check"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await TimelineCheckCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("TimelineCheckCli", args);
     return;
 }
 
@@ -1227,8 +1112,7 @@ if (args.Contains("--timeline-check"))
 //   prose --assemble-scene (--beat <guid> | --text "<prose>") [--budget N]
 if (args.Contains("--assemble-scene"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AssembleSceneCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AssembleSceneCli", args);
     return;
 }
 
@@ -1236,8 +1120,7 @@ if (args.Contains("--assemble-scene"))
 //   prose --reparent-node --slug <slug> --clear   — detach from parent
 if (args.Contains("--reparent-node"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReparentNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReparentNodeCli", args);
     return;
 }
 
@@ -1249,8 +1132,7 @@ if (args.Contains("--reparent-node"))
 //      (--id <guid|prefix> | --slug <slug>)
 if (args.Contains("--publish-audiobook") || args.Contains("--record") || args.Contains("--export-audio") || args.Contains("--export-mp3"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await PublishAudiobookCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PublishAudiobookCli", args);
     return;
 }
 
@@ -1260,8 +1142,7 @@ if (args.Contains("--publish-audiobook") || args.Contains("--record") || args.Co
 //   prose --seed-voice-rules
 if (args.Contains("--seed-voice-rules"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SeedVoiceRulesCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedVoiceRulesCli", args);
     return;
 }
 
@@ -1270,8 +1151,7 @@ if (args.Contains("--seed-voice-rules"))
 //   prose --timeline (--slug <slug> | --id <id>)
 if (args.Contains("--timeline"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await TimelineCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("TimelineCli", args);
     return;
 }
 
@@ -1284,8 +1164,7 @@ if (args.Contains("--timeline"))
 //   prose --read-beats --slug <slug> (--from <N> --to <N> | --numbers <csv>)
 if (args.Contains("--read-beats"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReadBeatsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReadBeatsCli", args);
     return;
 }
 
@@ -1294,8 +1173,7 @@ if (args.Contains("--read-beats"))
 //   prose --coverage
 if (args.Contains("--coverage"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CoverageCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CoverageCli", args);
     return;
 }
 
@@ -1306,8 +1184,7 @@ if (args.Contains("--coverage"))
 //   prose --rebuild-readmodel [--archived]
 if (args.Contains("--rebuild-readmodel"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebuildReadModelCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RebuildReadModelCli", args);
     return;
 }
 
@@ -1315,57 +1192,47 @@ if (args.Contains("--rebuild-readmodel"))
 //   prose --create-repository --name "Artifacts" [--category World] [--icon bi-box] [--description "..."]
 if (args.Contains("--create-repository"))
 {
-    string ArgVal(string flag) { var i = Array.IndexOf(args, flag); return i >= 0 && i + 1 < args.Length ? args[i + 1] : ""; }
-    var repoName = ArgVal("--name");
-    if (string.IsNullOrWhiteSpace(repoName)) { Console.Error.WriteLine("[create-repository] --name is required."); Environment.ExitCode = 1; return; }
-    var sp = BuildCoreServices(args);
-    var svc = sp.GetRequiredService<Prose.Core.Services.RepositoryDefinitionService>();
-    try
-    {
-        var def = svc.Create(repoName, ArgVal("--category"), ArgVal("--icon"), ArgVal("--description"));
-        Console.WriteLine($"[create-repository] Created '{def.Name}' — slug '{def.Slug}', category {def.Category}, route {def.RoutePath}.");
-    }
-    catch (Exception ex) { Console.Error.WriteLine($"[create-repository] FAILED: {ex.Message}"); Environment.ExitCode = 1; }
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CreateRepositoryCli", args);
     return;
 }
 
-// Table-driven: each --rebuild-*-relational flag maps to its CLI handler. ADDITIVE — Records.Json is never modified. (RFC 0007)
+// Table-driven: each --rebuild-*-relational flag maps to its CLI handler class name, forwarded
+// generically to the Hub. ADDITIVE — Records.Json is never modified. (RFC 0007)
 {
-    var rebuildRelational = new Dictionary<string, Func<string[], IServiceProvider, Task<int>>>(StringComparer.Ordinal)
+    var rebuildRelational = new Dictionary<string, string>(StringComparer.Ordinal)
     {
-        ["--rebuild-faction-relational"]        = RebuildFactionRelationalCli.RunAsync,
-        ["--rebuild-quote-relational"]          = RebuildQuoteRelationalCli.RunAsync,
-        ["--rebuild-news-relational"]           = RebuildNewsRelationalCli.RunAsync,
-        ["--rebuild-contract-relational"]       = RebuildContractRelationalCli.RunAsync,
-        ["--rebuild-vocabulary-relational"]     = RebuildVocabularyRelationalCli.RunAsync,
-        ["--rebuild-archetype-relational"]      = RebuildArchetypeRelationalCli.RunAsync,
-        ["--rebuild-genemod-relational"]        = RebuildGenemodRelationalCli.RunAsync,
-        ["--rebuild-material-relational"]       = RebuildMaterialRelationalCli.RunAsync,
-        ["--rebuild-psionic-relational"]        = RebuildPsionicRelationalCli.RunAsync,
-        ["--rebuild-motif-relational"]          = RebuildMotifRelationalCli.RunAsync,
-        ["--rebuild-lab-specimen-relational"]   = RebuildLabSpecimenRelationalCli.RunAsync,
-        ["--rebuild-flyover-entity-relational"] = RebuildFlyoverEntityRelationalCli.RunAsync,
-        ["--rebuild-automaton-relational"]      = RebuildAutomatonRelationalCli.RunAsync,
-        ["--rebuild-ammunition-relational"]     = RebuildAmmunitionRelationalCli.RunAsync,
-        ["--rebuild-transportation-relational"] = RebuildTransportationRelationalCli.RunAsync,
-        ["--rebuild-corponation-relational"]    = RebuildCorponationRelationalCli.RunAsync,
-        ["--rebuild-equipment-relational"]      = RebuildEquipmentRelationalCli.RunAsync,
-        ["--rebuild-technology-relational"]     = RebuildTechnologyRelationalCli.RunAsync,
-        ["--rebuild-pharmaceutical-relational"] = RebuildPharmaceuticalRelationalCli.RunAsync,
-        ["--rebuild-cyberware-relational"]      = RebuildCyberwareRelationalCli.RunAsync,
-        ["--rebuild-consumer-good-relational"]  = RebuildConsumerGoodRelationalCli.RunAsync,
-        ["--rebuild-synthetic-relational"]      = RebuildSyntheticRelationalCli.RunAsync,
-        ["--rebuild-place-relational"]          = RebuildPlaceRelationalCli.RunAsync,
-        ["--rebuild-document-relational"]       = RebuildDocumentRelationalCli.RunAsync,
-        ["--rebuild-entertainment-relational"]  = RebuildEntertainmentRelationalCli.RunAsync,
-        ["--rebuild-weapon-relational"]         = RebuildWeaponRelationalCli.RunAsync,
-        ["--rebuild-apparel-relational"]        = RebuildApparelRelationalCli.RunAsync,
-        ["--rebuild-subsidiary-relational"]     = RebuildSubsidiaryRelationalCli.RunAsync,
+        ["--rebuild-faction-relational"]        = "RebuildFactionRelationalCli",
+        ["--rebuild-quote-relational"]          = "RebuildQuoteRelationalCli",
+        ["--rebuild-news-relational"]           = "RebuildNewsRelationalCli",
+        ["--rebuild-contract-relational"]       = "RebuildContractRelationalCli",
+        ["--rebuild-vocabulary-relational"]     = "RebuildVocabularyRelationalCli",
+        ["--rebuild-archetype-relational"]      = "RebuildArchetypeRelationalCli",
+        ["--rebuild-genemod-relational"]        = "RebuildGenemodRelationalCli",
+        ["--rebuild-material-relational"]       = "RebuildMaterialRelationalCli",
+        ["--rebuild-psionic-relational"]        = "RebuildPsionicRelationalCli",
+        ["--rebuild-motif-relational"]          = "RebuildMotifRelationalCli",
+        ["--rebuild-lab-specimen-relational"]   = "RebuildLabSpecimenRelationalCli",
+        ["--rebuild-flyover-entity-relational"] = "RebuildFlyoverEntityRelationalCli",
+        ["--rebuild-automaton-relational"]      = "RebuildAutomatonRelationalCli",
+        ["--rebuild-ammunition-relational"]     = "RebuildAmmunitionRelationalCli",
+        ["--rebuild-transportation-relational"] = "RebuildTransportationRelationalCli",
+        ["--rebuild-corponation-relational"]    = "RebuildCorponationRelationalCli",
+        ["--rebuild-equipment-relational"]      = "RebuildEquipmentRelationalCli",
+        ["--rebuild-technology-relational"]     = "RebuildTechnologyRelationalCli",
+        ["--rebuild-pharmaceutical-relational"] = "RebuildPharmaceuticalRelationalCli",
+        ["--rebuild-cyberware-relational"]      = "RebuildCyberwareRelationalCli",
+        ["--rebuild-consumer-good-relational"]  = "RebuildConsumerGoodRelationalCli",
+        ["--rebuild-synthetic-relational"]      = "RebuildSyntheticRelationalCli",
+        ["--rebuild-place-relational"]          = "RebuildPlaceRelationalCli",
+        ["--rebuild-document-relational"]       = "RebuildDocumentRelationalCli",
+        ["--rebuild-entertainment-relational"]  = "RebuildEntertainmentRelationalCli",
+        ["--rebuild-weapon-relational"]         = "RebuildWeaponRelationalCli",
+        ["--rebuild-apparel-relational"]        = "RebuildApparelRelationalCli",
+        ["--rebuild-subsidiary-relational"]     = "RebuildSubsidiaryRelationalCli",
     };
     if (Array.Find(args, a => rebuildRelational.ContainsKey(a)) is { } rebuildVerb)
     {
-        var sp = BuildCoreServices(args);
-        Environment.ExitCode = await rebuildRelational[rebuildVerb](args, sp);
+        Environment.ExitCode = await HubCliClient.ForwardAsync(rebuildRelational[rebuildVerb], args);
         return;
     }
 }
@@ -1375,8 +1242,7 @@ if (args.Contains("--create-repository"))
 //   prose --backfill-missing-characters
 if (args.Contains("--backfill-missing-characters"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BackfillMissingCharactersCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillMissingCharactersCli", args);
     return;
 }
 
@@ -1386,8 +1252,7 @@ if (args.Contains("--backfill-missing-characters"))
 //   prose --retire-records-blobs [--rebuild] [--validate] [--apply]
 if (args.Contains("--retire-records-blobs"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RetireRecordsBlobsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RetireRecordsBlobsCli", args);
     return;
 }
 
@@ -1396,8 +1261,7 @@ if (args.Contains("--retire-records-blobs"))
 //   prose --split-collection (--slug <s> | --id <guid>)
 if (args.Contains("--split-collection"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SplitCollectionCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SplitCollectionCli", args);
     return;
 }
 
@@ -1406,8 +1270,7 @@ if (args.Contains("--split-collection"))
 //   prose --print-voice
 if (args.Contains("--print-voice"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await PrintVoiceCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PrintVoiceCli", args);
     return;
 }
 
@@ -1416,16 +1279,14 @@ if (args.Contains("--print-voice"))
 //   prose --sanitize-beats [--slug <slug> | --all] [--dry-run]
 if (args.Contains("--sanitize-beats"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SanitizeBeatsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SanitizeBeatsCli", args);
     return;
 }
 
 //   prose --print-book (--id <guid|prefix> | --slug <slug>)
 if (args.Contains("--print-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await PrintNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PrintNodeCli", args);
     return;
 }
 
@@ -1436,8 +1297,7 @@ if (args.Contains("--print-book"))
 //   prose --rebeat-book (--slug <s> | --id <guid> | --all) [--apply]
 if (args.Contains("--rebeat-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RebeatNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RebeatNodeCli", args);
     return;
 }
 
@@ -1446,8 +1306,7 @@ if (args.Contains("--rebeat-book"))
 //   prose --check-canon (--slug <s> | --id <guid> | --all)
 if (args.Contains("--check-canon"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CheckCanonCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CheckCanonCli", args);
     return;
 }
 
@@ -1456,8 +1315,7 @@ if (args.Contains("--check-canon"))
 //   prose --canon-retrieve "<query>" [--k N] [--types t1,t2]
 if (args.Contains("--canon-retrieve"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CanonRetrieveCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CanonRetrieveCli", args);
     return;
 }
 
@@ -1466,8 +1324,7 @@ if (args.Contains("--canon-retrieve"))
 //   prose --mark-canon (--slug <s> | --id <guid>) [--off]
 if (args.Contains("--mark-canon"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MarkCanonCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MarkCanonCli", args);
     return;
 }
 
@@ -1476,12 +1333,7 @@ if (args.Contains("--mark-canon"))
 //   prose --harvest-voice (--slug <s> | --id <id> | --all-80 | --pending | --apply <guid> | --reject <guid>) [--force]
 if (args.Contains("--harvest-voice"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedHv, estHv) = await CostGateCli.ConfirmAsync("--harvest-voice", args, sp);
-    if (!proceedHv) return;
-    var beforeHv = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await HarvestVoiceCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--harvest-voice", estHv, beforeHv, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("HarvestVoiceCli", "--harvest-voice", args);
     return;
 }
 
@@ -1489,8 +1341,7 @@ if (args.Contains("--harvest-voice"))
 //   prose --list-books [--status <s>] [--kind <k>] [--search <text>] [--limit <n>] [--json]
 if (args.Contains("--list-books"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ListNodesCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ListNodesCli", args);
     return;
 }
 
@@ -1499,8 +1350,7 @@ if (args.Contains("--list-books"))
 //   Outdated = published but beats edited since last KDP push.
 if (args.Contains("--kdp-status"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await KdpStatusCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("KdpStatusCli", args);
     return;
 }
 
@@ -1510,8 +1360,7 @@ if (args.Contains("--kdp-status"))
 //   tools/kdp/kdp-panel.user.js from tools/kdp/kdp-panel.template.js.
 if (args.Contains("--kdp-manifest"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await KdpManifestCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("KdpManifestCli", args);
     return;
 }
 
@@ -1519,8 +1368,7 @@ if (args.Contains("--kdp-manifest"))
 //   Closes the loop after a republish actually completes on KDP.
 if (args.Contains("--kdp-mark-published"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await KdpMarkPublishedCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("KdpMarkPublishedCli", args);
     return;
 }
 
@@ -1529,10 +1377,9 @@ if (args.Contains("--kdp-mark-published"))
 //   ss (--publish-md | --publish-pdf) (--id <guid|prefix> | --slug <slug>) [--author "Name"]
 if (args.Contains("--publish-md") || args.Contains("--publish-pdf"))
 {
-    var sp = BuildCoreServices(args);
     var format = args.Contains("--publish-md") ? PublishManuscriptCli.Format.Markdown
                : PublishManuscriptCli.Format.Pdf;
-    Environment.ExitCode = await PublishManuscriptCli.RunAsync(args, sp, format);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PublishManuscriptCli", args, extraParamValue: format.ToString());
     return;
 }
 
@@ -1541,8 +1388,7 @@ if (args.Contains("--publish-md") || args.Contains("--publish-pdf"))
 //   prose --import-md --file path.md [--dry-run]
 if (args.Contains("--import-md"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ImportMarkdownCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ImportMarkdownCli", args);
     return;
 }
 
@@ -1553,8 +1399,7 @@ if (args.Contains("--import-md"))
 //   prose --reflow-book (--id <guid|prefix> | --slug <slug>) [--apply]
 if (args.Contains("--reflow-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReflowNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReflowNodeCli", args);
     return;
 }
 
@@ -1564,8 +1409,7 @@ if (args.Contains("--reflow-book"))
 //   prose --duplicate-book (--id <guid|prefix> | --slug <slug>) --title "New Title"
 if (args.Contains("--duplicate-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DuplicateNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DuplicateNodeCli", args);
     return;
 }
 
@@ -1576,8 +1420,7 @@ if (args.Contains("--duplicate-book"))
 //   prose --import-book --file path.node [--title ...] [--kind ...] [--slug ...] [--parent ...] [--dry-run]
 if (args.Contains("--import-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ImportNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ImportNodeCli", args);
     return;
 }
 
@@ -1589,8 +1432,7 @@ if (args.Contains("--import-book"))
 //   prose --reimport-node (--id ... | --slug ...) --file path.node [--dry-run] [--force]
 if (args.Contains("--reimport-node"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReimportNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReimportNodeCli", args);
     return;
 }
 
@@ -1599,8 +1441,7 @@ if (args.Contains("--reimport-node"))
 //   prose --archive-book (--id ... | --slug ...) [--reason "..."] --universe <u>
 if (args.Contains("--archive-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ArchiveBookCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ArchiveBookCli", args);
     return;
 }
 
@@ -1609,8 +1450,7 @@ if (args.Contains("--archive-book"))
 //   prose --list-archives (--id ... | --slug ...) --universe <u>
 if (args.Contains("--list-archives"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ListArchivesCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ListArchivesCli", args);
     return;
 }
 
@@ -1621,8 +1461,7 @@ if (args.Contains("--list-archives"))
 //       --field description|nodebible|summary|seed|subtitle|all --universe <u>
 if (args.Contains("--restore-node-field"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RestoreNodeFieldCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RestoreNodeFieldCli", args);
     return;
 }
 
@@ -1631,8 +1470,7 @@ if (args.Contains("--restore-node-field"))
 //   prose --restore-entity --id <guid> --as-of <datetime-utc> [--dry-run]
 if (args.Contains("--restore-entity"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RestoreEntityCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RestoreEntityCli", args);
     return;
 }
 
@@ -1642,8 +1480,7 @@ if (args.Contains("--restore-entity"))
 //   prose --auto-correct-nightly [--universe <slug>] [--dry-run] [--json]
 if (args.Contains("--auto-correct-nightly"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AutoCorrectNightlyCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AutoCorrectNightlyCli", args);
     return;
 }
 
@@ -1651,8 +1488,7 @@ if (args.Contains("--auto-correct-nightly"))
 //   prose --auto-correct-undo (--run-id <guid> | --last-n <N>)
 if (args.Contains("--auto-correct-undo"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AutoCorrectUndoCli.RunUndoAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AutoCorrectUndoCli", args, method: "RunUndoAsync");
     return;
 }
 
@@ -1660,8 +1496,7 @@ if (args.Contains("--auto-correct-undo"))
 //   prose --auto-correct-status [--list-runs]
 if (args.Contains("--auto-correct-status"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AutoCorrectUndoCli.RunStatusAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AutoCorrectUndoCli", args, method: "RunStatusAsync");
     return;
 }
 
@@ -1670,8 +1505,7 @@ if (args.Contains("--auto-correct-status"))
 //   prose --import-cover --file PATH [--book-code CODE] [--type TYPE] [--notes TEXT] [--dry-run]
 if (args.Contains("--import-cover"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ImportCoverImageCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ImportCoverImageCli", args);
     return;
 }
 
@@ -1682,8 +1516,7 @@ if (args.Contains("--import-cover"))
 //   prose --burst-beats [--min-chars 800] [--node slug] [--kind book] [--dry-run]
 if (args.Contains("--burst-beats"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BurstBeatsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BurstBeatsCli", args);
     return;
 }
 
@@ -1692,32 +1525,28 @@ if (args.Contains("--burst-beats"))
 //   prose --audit-denorm Characters.Affiliation
 if (args.Contains("--audit-denorm"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AuditDenormCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AuditDenormCli", args);
     return;
 }
 
 // CLI mode: findings inbox — list / show / apply / dismiss / scan.
 if (args.Contains("--findings"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await FindingsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FindingsCli", args);
     return;
 }
 
 // prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]
 if (args.Contains("--entity-tree"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await EntityTreeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("EntityTreeCli", args);
     return;
 }
 
 // prose --prose-check (--slug <nodeSlug> | --id <beatId>) [--all] [--json]
 if (args.Contains("--prose-check"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ProseCheckCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseCheckCli", args);
     return;
 }
 
@@ -1727,8 +1556,7 @@ if (args.Contains("--prose-check"))
 // Upserts into BeatProseMetrics. Safe to re-run nightly. Exit 0 = success.
 if (args.Contains("--compute-metrics"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BeatProseMetricsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatProseMetricsCli", args);
     return;
 }
 
@@ -1738,8 +1566,7 @@ if (args.Contains("--compute-metrics"))
 // CPU-only — no LLM calls. Exit 0 = success.
 if (args.Contains("--beat-granularity"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BeatGranularityCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatGranularityCli", args);
     return;
 }
 
@@ -1749,8 +1576,7 @@ if (args.Contains("--beat-granularity"))
 // Exit 0 = clean, 1 = conflicts found.
 if (args.Contains("--consistency-audit"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CrossBookConsistencyAuditCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CrossBookConsistencyAuditCli", args);
     return;
 }
 
@@ -1760,8 +1586,7 @@ if (args.Contains("--consistency-audit"))
 // Writes HTML to PublishExportDirectory. Default window: 24h. Exit 0 always.
 if (args.Contains("--morning-report"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MorningReportCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MorningReportCli", args);
     return;
 }
 
@@ -1770,8 +1595,7 @@ if (args.Contains("--morning-report"))
 // semantic outlier detection using cached ProseEmbeddings. No API calls.
 if (args.Contains("--prose-health"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ProseHealthCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseHealthCli", args);
     return;
 }
 
@@ -1783,16 +1607,14 @@ if (args.Contains("--prose-health"))
 // Files SEMANTIC-DRIFT findings; also runs automatically after every review.
 if (args.Contains("--check-fidelity"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CheckFidelityCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CheckFidelityCli", args);
     return;
 }
 
 // prose --world-state --beat <beatId> [--story-time "date"] [--json]
 if (args.Contains("--world-state"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await WorldStateCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("WorldStateCli", args);
     return;
 }
 
@@ -1800,24 +1622,21 @@ if (args.Contains("--world-state"))
 // prose --sequential-read-record --slug <slug> --read-by <name> [--stages N] [--summary "text"]
 if (args.Contains("--sequential-read-status") || args.Contains("--sequential-read-record"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SequentialReadCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SequentialReadCli", args);
     return;
 }
 
 // prose --check-text-integrity [--fix] [--json]
 if (args.Contains("--check-text-integrity"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await TextIntegrityCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("TextIntegrityCli", args);
     return;
 }
 
 // prose --gear-check --slug <nodeSlug> --character <characterId> [--story-time date]
 if (args.Contains("--gear-check"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await GearCheckCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GearCheckCli", args);
     return;
 }
 
@@ -1826,8 +1645,7 @@ if (args.Contains("--gear-check"))
 // For a logic check, use --logic-sweep instead.
 if (args.Contains("--write-outline"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await WriteOutlineCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("WriteOutlineCli", args);
     return;
 }
 
@@ -1840,8 +1658,7 @@ if (args.Contains("--write-outline"))
 // auto-heal on re-run. Exit 0 = clean, 1 = MODERATE/MINOR only, 2 = any BLOCKER.
 if (args.Contains("--logic-sweep"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await LogicSweepCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("LogicSweepCli", args);
     return;
 }
 
@@ -1853,8 +1670,7 @@ if (args.Contains("--logic-sweep"))
 // no prose touched. Run after --generate-node-doc + --sync-markdown.
 if (args.Contains("--dcm-backfill"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DcmBackfillCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DcmBackfillCli", args);
     return;
 }
 
@@ -1866,8 +1682,7 @@ if (args.Contains("--dcm-backfill"))
 // Exit 0 = clean, 1 = defects found, 2 = error.
 if (args.Contains("--reader-qa"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReaderQaCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReaderQaCli", args);
     return;
 }
 
@@ -1878,8 +1693,7 @@ if (args.Contains("--reader-qa"))
 // Findings persist as CraftChecklist. No scores. Exit 0 = clean, 1 = findings, 2 = error.
 if (args.Contains("--craft-checklist"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BeatChecklistCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatChecklistCli", args);
     return;
 }
 
@@ -1890,8 +1704,7 @@ if (args.Contains("--craft-checklist"))
 // Exit 0 = ready, 1 = warnings, 2 = blocking failures.
 if (args.Contains("--diagnose-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DiagnoseNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DiagnoseNodeCli", args);
     return;
 }
 
@@ -1900,8 +1713,7 @@ if (args.Contains("--diagnose-book"))
 // Candidate generator, not a verdict — verify by reading both beats before acting.
 if (args.Contains("--check-duplicate-beats"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CheckDuplicateBeatsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CheckDuplicateBeatsCli", args);
     return;
 }
 
@@ -1912,8 +1724,7 @@ if (args.Contains("--check-duplicate-beats"))
 // schema change touching a versioned table, not just once.
 if (args.Contains("--check-temporal-hygiene"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await TemporalHygieneCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("TemporalHygieneCli", args);
     return;
 }
 
@@ -1923,12 +1734,7 @@ if (args.Contains("--check-temporal-hygiene"))
 // Exit 0 = none blocking, 1 = advisory issues, 2 = blocking dimensions open.
 if (args.Contains("--examine-emotion"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedEe, estEe) = await CostGateCli.ConfirmAsync("--examine-emotion", args, sp);
-    if (!proceedEe) return;
-    var beforeEe = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await ExamineEmotionCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--examine-emotion", estEe, beforeEe, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ExamineEmotionCli", "--examine-emotion", args);
     return;
 }
 
@@ -1936,12 +1742,7 @@ if (args.Contains("--examine-emotion"))
 // one real beat without a full ProseWriterRouter pass. See SimulateCollisionCli for details.
 if (args.Contains("--simulate-collision"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedSc, estSc) = await CostGateCli.ConfirmAsync("--simulate-collision", args, sp);
-    if (!proceedSc) return;
-    var beforeSc = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await SimulateCollisionCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--simulate-collision", estSc, beforeSc, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("SimulateCollisionCli", "--simulate-collision", args);
     return;
 }
 
@@ -1953,52 +1754,42 @@ if (args.Contains("--causality-check") || args.Contains("--affect-check") || arg
     var lens = args.Contains("--causality-check") ? "causality"
              : args.Contains("--affect-check") ? "affect" : "interpersonal";
     var cmdLens = $"--{lens}-check";
-    var sp = BuildCoreServices(args);
-    var (proceedLens, estLens) = await CostGateCli.ConfirmAsync(cmdLens, args, sp);
-    if (!proceedLens) return;
-    var beforeLens = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await BeatLensCli.RunAsync(args, sp, lens);
-    await CostGateCli.RecordActualAsync(cmdLens, estLens, beforeLens, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("BeatLensCli", cmdLens, args, extraParamValue: lens);
     return;
 }
 
 // prose --list-species — print the species taxonomy (canonical name, label, sentience).
 if (args.Contains("--list-species"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = ListSpeciesCli.Run(sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ListSpeciesCli", args);
     return;
 }
 
 // prose --behavior-check --slug <nodeSlug> --character <characterId>
 if (args.Contains("--behavior-check"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BehaviorCheckCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BehaviorCheckCli", args);
     return;
 }
 
 // prose --weapon-network (--id <weaponId> | --character <characterId> [--as-of date])
 if (args.Contains("--weapon-network"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await WeaponNetworkCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("WeaponNetworkCli", args);
     return;
 }
 
 // prose --ambient-palette --character <characterId> [--as-of date]
 if (args.Contains("--ambient-palette"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await AmbientPaletteCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AmbientPaletteCli", args);
     return;
 }
 
 // prose --seed-sensory-hints [--list] [--weapon "Name" --hints "hint1; hint2"] [--force]
 if (args.Contains("--seed-sensory-hints"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SeedSensoryHintsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedSensoryHintsCli", args);
     return;
 }
 
@@ -2011,9 +1802,8 @@ if (args.Contains("--seed-sensory-hints"))
 //   list    --node <slug|id>
 if (args.Contains("--beat"))
 {
-    var sp = BuildCoreServices(args);
     var beatArgs = args.SkipWhile(a => a != "--beat").Skip(1).ToArray();
-    Environment.ExitCode = await BeatCli.RunAsync(beatArgs, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatCli", beatArgs);
     return;
 }
 
@@ -2022,65 +1812,7 @@ if (args.Contains("--beat"))
 // HARD RULE: never use raw sqlcmd DELETE on Nodes — use this command instead.
 if (args.Contains("--delete-node"))
 {
-    var idStr = args.SkipWhile(a => a != "--id").Skip(1).FirstOrDefault();
-    if (!Guid.TryParse(idStr, out var deleteNodeId))
-    {
-        Console.Error.WriteLine("Usage: prose --delete-node --id <guid>");
-        Environment.ExitCode = 1;
-        return;
-    }
-    var sp = BuildCoreServices(args);
-    await using var scope = sp.CreateAsyncScope();
-    var dbFactory = scope.ServiceProvider.GetRequiredService<IDbContextFactory<Prose.Core.Data.ProseDbContext>>();
-    await using var db = await dbFactory.CreateDbContextAsync();
-    var target = await db.Nodes.FindAsync(deleteNodeId);
-    if (target == null) { Console.Error.WriteLine($"Node {deleteNodeId} not found."); Environment.ExitCode = 1; return; }
-
-    // 2026-08-09 bug fix: this used to cascade exactly one level deep ("nested chapters
-    // are not supported", per the comment it replaces) — a child that was itself a split
-    // Collection (chapter -> N sub-chapters -> beats, e.g. any book split via
-    // --split-collection) left its own grandchildren untouched, so db.Nodes.Remove on that
-    // mid-level chapter would hit FK_Nodes_ParentNode (grandchildren still reference it).
-    // Deletion removes NODES themselves, not just beats, so the fix isn't the usual
-    // GetLeafDescendantIdsAsync swap (that returns only leaves) — it needs a genuinely
-    // recursive, depth-first, POST-order walk: fully delete every child's own subtree
-    // before deleting the child, at any depth, then finally the target itself.
-    async Task DeleteNodeSubtreeAsync(Guid id, int depth)
-    {
-        var childIds = await db.Nodes.Where(n => n.ParentNodeId == id).Select(n => n.Id).ToListAsync();
-        foreach (var childId in childIds)
-            await DeleteNodeSubtreeAsync(childId, depth + 1);
-
-        var beatIds = await db.BeatNodes.Where(bn => bn.NodeId == id).Select(bn => bn.BeatId).ToListAsync();
-        var sharedIds = await db.BeatNodes.Where(bn => beatIds.Contains(bn.BeatId) && bn.NodeId != id).Select(bn => bn.BeatId).Distinct().ToListAsync();
-        var exclusiveIds = beatIds.Except(sharedIds).ToList();
-
-        var blueprintIds = await db.NodeStructuralBlueprints.Where(bp => bp.NodeId == id).Select(bp => bp.Id).ToListAsync();
-        if (blueprintIds.Count > 0)
-        {
-            db.NodeStructuralBlueprintBeatTags.RemoveRange(await db.NodeStructuralBlueprintBeatTags.Where(t => blueprintIds.Contains(t.BlueprintId)).ToListAsync());
-            db.NodeStructuralBlueprints.RemoveRange(await db.NodeStructuralBlueprints.Where(bp => blueprintIds.Contains(bp.Id)).ToListAsync());
-        }
-
-        db.BeatNodes.RemoveRange(await db.BeatNodes.Where(bn => bn.NodeId == id).ToListAsync());
-        if (exclusiveIds.Count > 0)
-        {
-            var beats = await db.Beats.Where(b => exclusiveIds.Contains(b.Id)).ToListAsync();
-            db.Beats.RemoveRange(beats);
-            Console.WriteLine($"  {new string(' ', depth * 2)}Deleting {beats.Count} exclusive beat(s) for {id}.");
-        }
-
-        var node = await db.Nodes.FindAsync(id);
-        if (node != null)
-        {
-            db.Nodes.Remove(node);
-            Console.WriteLine($"  {new string(' ', depth * 2)}→ {node.Title} ({id})");
-        }
-    }
-
-    await DeleteNodeSubtreeAsync(deleteNodeId, 0);
-    await db.SaveChangesAsync();
-    Console.WriteLine($"[delete-node] Deleted: {target.Title} ({deleteNodeId})");
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DeleteNodeCli", args);
     return;
 }
 
@@ -2090,9 +1822,8 @@ if (args.Contains("--delete-node"))
 //   status  --wound <id> --status active|healed|noted
 if (args.Contains("--wound"))
 {
-    var sp = BuildCoreServices(args);
     var woundArgs = args.SkipWhile(a => a != "--wound").Skip(1).ToArray();
-    Environment.ExitCode = await WoundCli.RunAsync(woundArgs, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("WoundCli", woundArgs);
     return;
 }
 
@@ -2101,12 +1832,7 @@ if (args.Contains("--wound"))
 //   prose --harvest-entities --file <path> [--universe glmz] [--dry-run]
 if (args.Contains("--harvest-entities"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedHe, estHe) = await CostGateCli.ConfirmAsync("--harvest-entities", args, sp);
-    if (!proceedHe) return;
-    var beforeHe = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await HarvestEntitiesCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--harvest-entities", estHe, beforeHe, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("HarvestEntitiesCli", "--harvest-entities", args);
     return;
 }
 
@@ -2128,9 +1854,8 @@ if (args.Contains("--harvest-entities"))
 // falling through the whole dispatch chain and exiting silently.
 if (isUniverseManagementCommand)
 {
-    var sp = BuildCoreServices(args);
     var uniArgs = args.Skip(1).ToArray();
-    Environment.ExitCode = await UniverseCli.RunAsync(uniArgs, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("UniverseCli", uniArgs);
     return;
 }
 
@@ -2138,8 +1863,7 @@ if (isUniverseManagementCommand)
 // Keys: ballots, prose, panel, readers, max-concurrency, judge-provider, allowed-providers
 if (args.Contains("--review-settings"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ReviewSettingsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReviewSettingsCli", args);
     return;
 }
 
@@ -2147,9 +1871,8 @@ if (args.Contains("--review-settings"))
 // Types: character | place | weapon | faction | corponation
 if (args.Contains("--get"))
 {
-    var sp = BuildCoreServices(args);
     var getArgs = args.SkipWhile(a => a != "--get").Skip(1).ToArray();
-    Environment.ExitCode = await GetEntityCli.RunAsync(getArgs, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GetEntityCli", getArgs);
     return;
 }
 
@@ -2158,8 +1881,7 @@ if (args.Contains("--get"))
 //   prose --sync-markdown [--dry-run]
 if (args.Contains("--sync-markdown"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SyncMarkdownCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SyncMarkdownCli", args);
     return;
 }
 
@@ -2169,8 +1891,7 @@ if (args.Contains("--sync-markdown"))
 //   prose --restore-markdown [--file <relativePath>] [--as-of <datetime-utc>] [--dry-run] [--list]
 if (args.Contains("--restore-markdown"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RestoreMarkdownCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RestoreMarkdownCli", args);
     return;
 }
 
@@ -2179,8 +1900,7 @@ if (args.Contains("--restore-markdown"))
 //   prose --recall <keyword> [--content] [--to-disk] [--as-of <datetime-utc>]
 if (args.Contains("--recall"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RecallMarkdownCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RecallMarkdownCli", args);
     return;
 }
 
@@ -2195,9 +1915,8 @@ if (args.Contains("--recall"))
 //   prose --context status                                       Show active overrides
 if (args.Contains("--context"))
 {
-    var sp = BuildCoreServices(args);
     var ctxArgs = args.SkipWhile(a => a != "--context").Skip(1).ToArray();
-    Environment.ExitCode = await ContextCli.RunAsync(ctxArgs, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ContextCli", ctxArgs);
     return;
 }
 
@@ -2205,16 +1924,76 @@ if (args.Contains("--context"))
 // Show liberty analysis + Rule of Cool findings for a beat or all beats in a story.
 if (args.Contains("--liberty-report"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await LibertyReportCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("LibertyReportCli", args);
+    return;
+}
+
+// prose --log-decision --summary "..." [--rationale "..."] [--category ...] [--related id,id]
+// Durable "why" record — the Decision Ledger half of the Command/Decision Ledger pair
+// (CommandLedgerEntries is written automatically by every dispatch; this is explicit).
+if (args.Contains("--log-decision"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("LogDecisionCli", args);
+    return;
+}
+
+// prose --command-log [--since <dt>] [--handler <name>] [--take N] [--json]
+// Read back the Command Ledger — every CLI/MCP/cost-gated call Prose.Hub has executed.
+if (args.Contains("--command-log"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CommandLogCli", args);
+    return;
+}
+
+// prose --decision-log [--since <dt>] [--session <id>] [--take N] [--json]
+// Read back the Decision Ledger written by --log-decision.
+if (args.Contains("--decision-log"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DecisionLogCli", args);
+    return;
+}
+
+// prose --log-search [--since <dt>] [--severity <lvl>] [--text <q>] [--take N] [--json]
+// Durable, searchable log history (Serilog daily files) — not the live in-memory tail.
+if (args.Contains("--log-search"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("LogSearchCli", args);
+    return;
+}
+
+// prose --beat-archive --beat-id <guid>
+// The Beat Context Archive (observability Part F5): everything that fed one beat, resolved
+// as-of that beat's own BeatContextTrace timestamp — prose, per-service trace, full LLM
+// prompt/response, entity roster resolved to that moment's canon, DCM doc content as of that
+// moment, and the bible section active at that time.
+if (args.Contains("--beat-archive"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatArchiveCli", args);
+    return;
+}
+
+// prose --read-beats (--slug <slug> | --id <guid>) [--from N] [--to N] [--format text|json]
+// Read a book's beats directly, in reading order — no --publish-md export required.
+if (args.Contains("--read-beats"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReadBeatsCli", args);
+    return;
+}
+
+// prose --browse-repository [--type <name>] [--search <text>] [--page N] [--format text|json]
+// Browse entities by repository/type (built-in or custom) — no hand-written SQL required.
+if (args.Contains("--browse-repository"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BrowseRepositoryCli", args);
     return;
 }
 
 if (args.Contains("--doc-context-hook"))
 {
-    // UserPromptSubmit hook backend — stdout must contain ONLY the hook JSON, so kill logging.
-    var sp = BuildCoreServicesNoLogging(args);
-    Environment.ExitCode = await DocContextHookCli.RunAsync(args, sp);
+    // UserPromptSubmit hook backend — stdout must contain ONLY the hook JSON. The Hub
+    // captures stdout/stderr separately and this process only ever writes the JSON it gets
+    // back, so no NoLogging DI variant is needed on this side any more.
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DocContextHookCli", args);
     return;
 }
 
@@ -2229,15 +2008,13 @@ if (args.Contains("--doc-context-hook"))
 //   prose --dual-read --old <slug|id> --new <slug|id> [--panel <name>] [--readers N]
 if (args.Contains("--dual-read"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DualReadCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DualReadCli", args);
     return;
 }
 
 if (args.Contains("--doc-context"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DocContextCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DocContextCli", args);
     return;
 }
 
@@ -2245,8 +2022,7 @@ if (args.Contains("--doc-context"))
 //   prose --dcm-viz --slug <slug> [--out <dir>]
 if (args.Contains("--dcm-viz"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DcmVizCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DcmVizCli", args);
     return;
 }
 
@@ -2256,8 +2032,7 @@ if (args.Contains("--dcm-viz"))
 // --text) so future prose generation and the DCM viz see per-character entity docs.
 if (args.Contains("--backfill-entity-docs"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BackfillEntityDocsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillEntityDocsCli", args);
     return;
 }
 
@@ -2268,8 +2043,7 @@ if (args.Contains("--backfill-entity-docs"))
 // MarkdownFiles.UniverseId on all of them requires.
 if (args.Contains("--repair-entity-docs"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await RepairEntityDocsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RepairEntityDocsCli", args);
     return;
 }
 
@@ -2279,8 +2053,7 @@ if (args.Contains("--repair-entity-docs"))
 // when beats were written, and surfaces gaps where applicable services weren't used.
 if (args.Contains("--workflow-status"))
 {
-    var sp = BuildCoreServices(args);
-    await WorkflowMonitorCli.RunAsync(sp, args);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("WorkflowMonitorCli", args);
     return;
 }
 
@@ -2290,8 +2063,7 @@ if (args.Contains("--workflow-status"))
 // each existing beat so --workflow-status has real logs to report.
 if (args.Contains("--backfill-coverage"))
 {
-    var sp = BuildCoreServices(args);
-    await BackfillCoverageCli.RunAsync(sp, args);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillCoverageCli", args);
     return;
 }
 
@@ -2301,8 +2073,7 @@ if (args.Contains("--backfill-coverage"))
 // for mode detection); StructureRole deterministically by book-global Save-the-Cat arc.
 if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-roles"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BackfillBeatMetaCli.RunAsync(sp, args);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillBeatMetaCli", args);
     return;
 }
 
@@ -2315,17 +2086,7 @@ if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-
 // --model retargets the deep/full tier LLM calls (e.g. Haiku) for the run.
 if (args.Contains("--audit-book"))
 {
-    var sp = BuildCoreServices(args);
-    // Cost-gated 2026-08-13: the FULL tier alone makes one LLM call per beat for SWAIN,
-    // DRAMATIC-Q, and several other checks — on a long book this is easily the single most
-    // expensive command in the CLI, and it was the one major audit command with no estimate,
-    // no confirmation prompt, and no actual-cost recording at all (11 other LLM-calling
-    // commands already had this via CostGateCli; this one was simply missed).
-    var (proceedAb, estAb) = await CostGateCli.ConfirmAsync("--audit-book", args, sp);
-    if (!proceedAb) return;
-    var beforeAb = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await AuditNodeCli.RunAsync(sp, args);
-    await CostGateCli.RecordActualAsync("--audit-book", estAb, beforeAb, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("AuditNodeCli", "--audit-book", args);
     return;
 }
 
@@ -2349,8 +2110,7 @@ if (args.Contains("--estimate-cost"))
 // Exit 0 = all pass, 1 = advisory warnings, 2 = blocking failures.
 if (args.Contains("--book-audit"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BookAuditCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BookAuditCli", args);
     return;
 }
 
@@ -2361,12 +2121,7 @@ if (args.Contains("--book-audit"))
 // --retrofit infers the blueprint from already-written prose.
 if (args.Contains("--generate-blueprint"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedGb, estGb) = await CostGateCli.ConfirmAsync("--generate-blueprint", args, sp);
-    if (!proceedGb) return;
-    var beforeGb = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await GenerateBlueprintCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--generate-blueprint", estGb, beforeGb, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("GenerateBlueprintCli", "--generate-blueprint", args);
     return;
 }
 
@@ -2375,8 +2130,7 @@ if (args.Contains("--generate-blueprint"))
 // for when the generation provider is unavailable but the structural decisions are already made.
 if (args.Contains("--set-structural-blueprint"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SetStructuralBlueprintCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetStructuralBlueprintCli", args);
     return;
 }
 
@@ -2388,12 +2142,7 @@ if (args.Contains("--set-structural-blueprint"))
 // Exit 0 = clean, 1 = moderate/minor, 2 = any blocker.
 if (args.Contains("--storyscope-audit"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedSsa, estSsa) = await CostGateCli.ConfirmAsync("--storyscope-audit", args, sp);
-    if (!proceedSsa) return;
-    var beforeSsa = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await StoryScopeAuditCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--storyscope-audit", estSsa, beforeSsa, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("StoryScopeAuditCli", "--storyscope-audit", args);
     return;
 }
 
@@ -2404,12 +2153,7 @@ if (args.Contains("--storyscope-audit"))
 // Run before trimming any prose detail.
 if (args.Contains("--chekhov-audit"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedCk, estCk) = await CostGateCli.ConfirmAsync("--chekhov-audit", args, sp);
-    if (!proceedCk) return;
-    var beforeCk = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await ChekhovAuditCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--chekhov-audit", estCk, beforeCk, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ChekhovAuditCli", "--chekhov-audit", args);
     return;
 }
 
@@ -2421,8 +2165,7 @@ if (args.Contains("--chekhov-audit"))
 // Exit 0 = replace, 1 = keep, 2 = error.
 if (args.Contains("--duel"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BeatDuelCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatDuelCli", args);
     return;
 }
 
@@ -2465,8 +2208,7 @@ if (args.Contains("--export-personas-json"))
 // Exit 0 = clean, 1 = warnings only, 2 = any blocks.
 if (args.Contains("--sanity-scan"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SanityScanCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SanityScanCli", args);
     return;
 }
 
@@ -2476,8 +2218,7 @@ if (args.Contains("--sanity-scan"))
 // Exit 0 = none found, 1 = candidates found (informational — read the prose before merging).
 if (args.Contains("--duplicate-entity-scan"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await DuplicateEntityScanCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DuplicateEntityScanCli", args);
     return;
 }
 
@@ -2488,12 +2229,7 @@ if (args.Contains("--duplicate-entity-scan"))
 // LLM calls — gated like other LLM-calling commands.
 if (args.Contains("--duplicate-entity-scan-broad"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedDup, estDup) = await CostGateCli.ConfirmAsync("--duplicate-entity-scan-broad", args, sp);
-    if (!proceedDup) return;
-    var beforeDup = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await DuplicateEntityScanBroadCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--duplicate-entity-scan-broad", estDup, beforeDup, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("DuplicateEntityScanBroadCli", "--duplicate-entity-scan-broad", args);
     return;
 }
 
@@ -2504,12 +2240,7 @@ if (args.Contains("--duplicate-entity-scan-broad"))
 // BookEntityReconciliationService for the two-stage cost-bounded design.
 if (args.Contains("--reconcile-book-entities"))
 {
-    var sp = BuildCoreServices(args);
-    var (proceedRec, estRec) = await CostGateCli.ConfirmAsync("--reconcile-book-entities", args, sp);
-    if (!proceedRec) return;
-    var beforeRec = CostGateCli.SnapshotCost(sp);
-    Environment.ExitCode = await ReconcileBookEntitiesCli.RunAsync(args, sp);
-    await CostGateCli.RecordActualAsync("--reconcile-book-entities", estRec, beforeRec, sp);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ReconcileBookEntitiesCli", "--reconcile-book-entities", args);
     return;
 }
 
@@ -2519,8 +2250,7 @@ if (args.Contains("--reconcile-book-entities"))
 // no fuzzy matching. See MergeEntityCli.
 if (args.Contains("--merge-entity"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await MergeEntityCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MergeEntityCli", args);
     return;
 }
 
@@ -2529,8 +2259,7 @@ if (args.Contains("--merge-entity"))
 // row that has none (root cause: raw SQL writes bypassing the app — see BackfillMissingSubtypeRowsCli).
 if (args.Contains("--backfill-missing-subtype-rows"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await BackfillMissingSubtypeRowsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillMissingSubtypeRowsCli", args);
     return;
 }
 
@@ -2539,8 +2268,7 @@ if (args.Contains("--backfill-missing-subtype-rows"))
 // prose --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]
 if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Contains("--add-plant"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await PlantPayoffCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PlantPayoffCli", args);
     return;
 }
 
@@ -2553,16 +2281,14 @@ if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Con
 //   (add --json to any subcommand for raw JSON output)
 if (args.Contains("--narrative-science"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await NarrativeScienceCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("NarrativeScienceCli", args);
     return;
 }
 
 // prose --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-code SM1] [--draft] [--status ready]
 if (args.Contains("--clone-book"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CloneNodeCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CloneNodeCli", args);
     return;
 }
 
@@ -2570,48 +2296,42 @@ if (args.Contains("--clone-book"))
 // prose --start-session --slug <slug> --label "prose-pass-1" [--type prose-pass|gripes-cleanup|logic-sweep|custom]
 if (args.Contains("--start-session"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await StartSessionCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("StartSessionCli", args);
     return;
 }
 
 // prose --close-session (--slug <slug> | --session-id <guid>)
 if (args.Contains("--close-session"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CloseSessionCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CloseSessionCli", args);
     return;
 }
 
 // prose --list-sessions --slug <slug> [--limit N]
 if (args.Contains("--list-sessions"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await ListSessionsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ListSessionsCli", args);
     return;
 }
 
 // prose --session-beats --session-id <guid>
 if (args.Contains("--session-beats"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await SessionBeatsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SessionBeatsCli", args);
     return;
 }
 
 // prose --sync-bible-from-session --session-id <guid> [--dry-run]
 if (args.Contains("--sync-bible-from-session"))
 {
-    var sp = BuildServicesWithVault(args);
-    Environment.ExitCode = await SyncBibleFromSessionCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SyncBibleFromSessionCli", args);
     return;
 }
 
 // prose --sync-blueprint-from-session --session-id <guid>
 if (args.Contains("--sync-blueprint-from-session"))
 {
-    var sp = BuildServicesWithVault(args);
-    Environment.ExitCode = await SyncBlueprintFromSessionCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SyncBlueprintFromSessionCli", args);
     return;
 }
 
@@ -2620,8 +2340,7 @@ if (args.Contains("--sync-blueprint-from-session"))
 // run bible + blueprint sync for each, and draw a clean 3B coordination boundary.
 if (args.Contains("--close-all-sessions"))
 {
-    var sp = BuildServicesWithVault(args);
-    Environment.ExitCode = await CloseAllSessionsCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CloseAllSessionsCli", args);
     return;
 }
 
@@ -2630,8 +2349,7 @@ if (args.Contains("--close-all-sessions"))
 // construction, and prose; emit JSON + stamp the "## Beat Coordination Index".
 if (args.Contains("--coordinate"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CoordinateCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CoordinateCli", args);
     return;
 }
 
@@ -2640,8 +2358,7 @@ if (args.Contains("--coordinate"))
 // single ChapterNode child (no-op if already chaptered). No LLM.
 if (args.Contains("--ensure-chapter"))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await EnsureChapterCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("EnsureChapterCli", args);
     return;
 }
 
@@ -2649,8 +2366,7 @@ if (args.Contains("--ensure-chapter"))
 // Fill the MEANING coordinate (Beat.Description) for beats with prose but no meaning.
 if (args.Contains("--backfill-meaning"))
 {
-    var sp = BuildServicesWithVault(args);
-    Environment.ExitCode = await BackfillMeaningCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillMeaningCli", args);
     return;
 }
 
@@ -2658,8 +2374,7 @@ if (args.Contains("--backfill-meaning"))
 // Fill the per-beat plot-EVENT one-liner (Beat.EventSummary) — "what happened".
 if (args.Contains("--generate-event-list"))
 {
-    var sp = BuildServicesWithVault(args);
-    Environment.ExitCode = await GenerateEventListCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GenerateEventListCli", args);
     return;
 }
 
@@ -2667,8 +2382,7 @@ if (args.Contains("--generate-event-list"))
 // Write the current per-beat event list to {CODE}-Events.txt in the publish-export folder (no LLM call).
 if (args.Contains("--export-event-list"))
 {
-    var sp = BuildServicesWithVault(args);
-    Environment.ExitCode = await ExportEventListCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ExportEventListCli", args);
     return;
 }
 
@@ -2680,8 +2394,7 @@ if (args.Contains("--export-event-list"))
 // the cost of that command's LLM calls is printed after the command finishes.
 if (args.Contains("--cost") && (args.Length == 1 || (args.Length == 2 && (args.Contains("--json") || args.Contains("--reset")))))
 {
-    var sp = BuildCoreServices(args);
-    Environment.ExitCode = await CostCli.RunAsync(args, sp);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CostCli", args);
     return;
 }
 
@@ -2732,47 +2445,3 @@ static IServiceProvider BuildCoreServices(string[] args)
         .Build()
         .Services);
 
-static IServiceProvider BuildCoreServicesNoLogging(string[] args)
-    => Finalize(Host.CreateDefaultBuilder(args)
-        .ConfigureLogging(lb => lb.ClearProviders())
-        .ConfigureServices((_, svc) => svc.AddProseServices())
-        .Build()
-        .Services);
-
-static IServiceProvider BuildServicesWithVault(string[] args)
-    => Finalize(Host.CreateDefaultBuilder(args)
-        .ConfigureAppConfiguration(cfg =>
-            cfg.AddMindAtticVaultFiles())
-        .ConfigureLogging(lb => lb.AddConsole())
-        .ConfigureServices((ctx, svc) =>
-        {
-            SettingsService.VaultConfiguration = ctx.Configuration;
-            svc.AddProseServices();
-        })
-        .Build()
-        .Services);
-
-static IServiceProvider BuildServicesWithVaultAndAuth(string[] args)
-{
-    var host = Host.CreateDefaultBuilder(args)
-        .ConfigureAppConfiguration(cfg =>
-            cfg.AddMindAtticVaultFiles(o => o.Buckets = new[]
-                { "LLM", "Brokers", "Tokens", "Subtitles", "Notifications", "AudioStore", "Security" }))
-        .ConfigureLogging(lb => lb.AddConsole())
-        .ConfigureServices((ctx, svc) =>
-        {
-            SettingsService.VaultConfiguration = ctx.Configuration;
-            svc.AddProseServices();
-            svc.AddMindAtticAuthentication<ProseAuthDbContext>(
-                ctx.Configuration,
-                o =>
-                {
-                    o.AppName = "Prose";
-                    o.IsProduction = !string.Equals(
-                        ctx.HostingEnvironment.EnvironmentName, "Development",
-                        StringComparison.OrdinalIgnoreCase);
-                });
-        })
-        .Build();
-    return Finalize(host.Services);
-}

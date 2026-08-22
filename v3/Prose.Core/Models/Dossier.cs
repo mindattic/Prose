@@ -186,7 +186,7 @@ public sealed record DerivedState(
 
 /// <summary>
 /// Story-time cursor. ChapterNumber is the canonical sort key; BeatIndex narrows
-/// within a chapter. Story-point format matches WorldGraphService comparisons.
+/// within a chapter. Story-point format matches UniverseGraphService comparisons.
 /// </summary>
 public sealed record AsOfCursor(string? ChapterId, int? ChapterNumber, int? BeatIndex)
 {

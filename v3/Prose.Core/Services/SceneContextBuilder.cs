@@ -10,12 +10,12 @@ namespace Prose.Core.Services;
 public class SceneContextBuilder
 {
     private readonly DatabaseService db;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly WorldbuildingDocRepository docRepo;
     private readonly DistrictRepository districtRepo;
 
     public SceneContextBuilder(
-        DatabaseService db, WorldGraphService graph,
+        DatabaseService db, UniverseGraphService graph,
         WorldbuildingDocRepository docRepo, DistrictRepository districtRepo)
     {
         this.db = db;

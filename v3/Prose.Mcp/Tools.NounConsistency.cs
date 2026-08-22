@@ -22,7 +22,8 @@ namespace Prose.Mcp;
 [McpServerToolType]
 public class NounConsistencyTools(
     NounConsistencyService nounConsistency,
-    IDbContextFactory<ProseDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory,
+    HubInvoker hub)
 {
     static readonly JsonSerializerOptions JsonOpts = new() { WriteIndented = false };
 
@@ -32,8 +33,11 @@ public class NounConsistencyTools(
         "Returns ok:true when clean; ok:false with a violations list (beatNumber, " +
         "deprecatedName, canonicalName, snippet) when stale names are found. " +
         "Register rules first with add_deprecated_name.")]
-    public async Task<string> ValidateNouns(
-        [Description("Node slug or GUID to scan.")] string nodeIdOrSlug)
+    public Task<string> ValidateNouns(
+        [Description("Node slug or GUID to scan.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(NounConsistencyTools), nameof(ValidateNounsImpl), new { nodeIdOrSlug });
+
+    public async Task<string> ValidateNounsImpl(string nodeIdOrSlug)
     {
         NounConsistencyReport report;
         try
@@ -68,11 +72,18 @@ public class NounConsistencyTools(
         "(whole-word, case-insensitive) in the target universe will be flagged by " +
         "validate_nouns. Use when a named thing is renamed or retired. " +
         "universeSlug defaults to 'glmz' when omitted.")]
-    public async Task<string> AddDeprecatedName(
+    public Task<string> AddDeprecatedName(
         [Description("The old/wrong name to flag in prose (e.g. 'VacCell', 'Rider').")] string deprecatedName,
         [Description("The correct name to use instead (e.g. 'Nit', 'Exo').")] string canonicalName,
         [Description("Optional explanation (e.g. 'Renamed in SS-A38 when Rider job was retired').")] string? notes = null,
-        [Description("Universe slug ('glmz' or 'fantasy'). Defaults to 'glmz'.")] string? universeSlug = null)
+        [Description("Universe slug ('glmz' or 'fantasy'). Defaults to 'glmz'.")] string? universeSlug = null) =>
+        hub.InvokeAsync(nameof(NounConsistencyTools), nameof(AddDeprecatedNameImpl), new { deprecatedName, canonicalName, notes, universeSlug });
+
+    public async Task<string> AddDeprecatedNameImpl(
+        string deprecatedName,
+        string canonicalName,
+        string? notes = null,
+        string? universeSlug = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
 
@@ -97,8 +108,11 @@ public class NounConsistencyTools(
     [McpServerTool, Description(
         "List all registered deprecated noun rules. Filter by universeSlug ('glmz' or 'fantasy') " +
         "or omit for all universes.")]
-    public async Task<string> ListDeprecatedNames(
-        [Description("Optional universe slug to filter ('glmz' or 'fantasy'). Omit for all.")] string? universeSlug = null)
+    public Task<string> ListDeprecatedNames(
+        [Description("Optional universe slug to filter ('glmz' or 'fantasy'). Omit for all.")] string? universeSlug = null) =>
+        hub.InvokeAsync(nameof(NounConsistencyTools), nameof(ListDeprecatedNamesImpl), new { universeSlug });
+
+    public async Task<string> ListDeprecatedNamesImpl(string? universeSlug = null)
     {
         Guid? universeId = null;
         if (!string.IsNullOrWhiteSpace(universeSlug))

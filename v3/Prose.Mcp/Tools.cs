@@ -30,26 +30,31 @@ public class CanonTools
     private readonly FactionRepository factions;
     private readonly CorponationRepository corponations;
     private readonly LiteraryRulesRepository literaryRules;
+    private readonly HubInvoker hub;
 
     public CanonTools(
         CharacterRepository characters,
         DistrictRepository places,
         FactionRepository factions,
         CorponationRepository corponations,
-        LiteraryRulesRepository literaryRules)
+        LiteraryRulesRepository literaryRules,
+        HubInvoker hub)
     {
         this.characters = characters;
         this.places = places;
         this.factions = factions;
         this.corponations = corponations;
         this.literaryRules = literaryRules;
+        this.hub = hub;
     }
 
     /// <summary>
     /// List every character in canon. Returns name + role + status for each. Cheap — call this first when you need to know who exists.
     /// </summary>
     [McpServerTool, Description("List every character in canon. Returns name + role + status for each. Cheap — call this first when you need to know who exists.")]
-    public string ListCharacters()
+    public Task<string> ListCharacters() => hub.InvokeAsync(nameof(CanonTools), nameof(ListCharactersImpl));
+
+    public string ListCharactersImpl()
     {
         characters.Reload();
         var list = characters.GetAll()
@@ -63,7 +68,11 @@ public class CanonTools
     /// Load a character's full canon record by name: identity, psychology, behavioral profile, speech patterns, augmentations, story hooks. Primary source for voice when writing a POV chapter.
     /// </summary>
     [McpServerTool, Description("Load a character's full canon record by name: identity, psychology (core_fears, core_desires, coping_mechanisms, blind_spots, secret), behavioral (decision_rules, escalation_ladder, contradictions, habits, breaking_points, stress_responses), speech_patterns (vocabulary, cadence, verbal_tics, example_lines), augmentations, story_hooks. This is the primary source for voice when writing a POV chapter.")]
-    public string GetCharacter([Description("Exact name of the character (e.g. 'Kyle Ellen Corbin' or 'Sasha Võ').")] string name)
+    public Task<string> GetCharacter([Description("Exact name of the character (e.g. 'Kyle Ellen Corbin' or 'Sasha Võ').")] string name) =>
+        hub.InvokeAsync(nameof(CanonTools), nameof(GetCharacterImpl), new { name });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string GetCharacterImpl(string name)
     {
         var c = characters.GetByName(name);
         if (c == null) return JsonSerializer.Serialize(new { error = "not_found", name }, JsonOpts);
@@ -72,7 +81,9 @@ public class CanonTools
 
     /// <summary>List every place / district in canon. Use this to find a location for a scene.</summary>
     [McpServerTool, Description("List every place / district in canon. Use this to find a location for a scene.")]
-    public string ListPlaces()
+    public Task<string> ListPlaces() => hub.InvokeAsync(nameof(CanonTools), nameof(ListPlacesImpl));
+
+    public string ListPlacesImpl()
     {
         places.Reload();
         var list = places.GetAll()
@@ -84,7 +95,10 @@ public class CanonTools
 
     /// <summary>Load a place / district by name. Returns description, sensory details, parent territory, geography.</summary>
     [McpServerTool, Description("Load a place / district by name. Returns description, sensory_details, parent territory, geography.")]
-    public string GetPlace([Description("Exact name of the place.")] string name)
+    public Task<string> GetPlace([Description("Exact name of the place.")] string name) =>
+        hub.InvokeAsync(nameof(CanonTools), nameof(GetPlaceImpl), new { name });
+
+    public string GetPlaceImpl(string name)
     {
         var p = places.GetByName(name);
         if (p == null) return JsonSerializer.Serialize(new { error = "not_found", name }, JsonOpts);
@@ -93,7 +107,9 @@ public class CanonTools
 
     /// <summary>List every faction in canon: street gangs, syndicates, cells, advocacy groups, etc.</summary>
     [McpServerTool, Description("List every faction in canon: street gangs, syndicates, cells, advocacy groups, etc.")]
-    public string ListFactions()
+    public Task<string> ListFactions() => hub.InvokeAsync(nameof(CanonTools), nameof(ListFactionsImpl));
+
+    public string ListFactionsImpl()
     {
         factions.Reload();
         var list = factions.GetAll()
@@ -105,7 +121,10 @@ public class CanonTools
 
     /// <summary>Load a faction by name: leadership, structure, territory, motives, alliances, rivalries.</summary>
     [McpServerTool, Description("Load a faction by name: leadership, structure, territory, motives, alliances, rivalries.")]
-    public string GetFaction([Description("Exact faction name.")] string name)
+    public Task<string> GetFaction([Description("Exact faction name.")] string name) =>
+        hub.InvokeAsync(nameof(CanonTools), nameof(GetFactionImpl), new { name });
+
+    public string GetFactionImpl(string name)
     {
         var f = factions.GetByName(name);
         if (f == null) return JsonSerializer.Serialize(new { error = "not_found", name }, JsonOpts);
@@ -114,7 +133,9 @@ public class CanonTools
 
     /// <summary>List every CorpoNation (corporate sovereign entity).</summary>
     [McpServerTool, Description("List every CorpoNation (corporate sovereign entity).")]
-    public string ListCorponations()
+    public Task<string> ListCorponations() => hub.InvokeAsync(nameof(CanonTools), nameof(ListCorponationsImpl));
+
+    public string ListCorponationsImpl()
     {
         corponations.Reload();
         var list = corponations.GetAll()
@@ -126,7 +147,10 @@ public class CanonTools
 
     /// <summary>Load a CorpoNation by name: sector, hierarchy, holdings, public-facing brand, dirty laundry.</summary>
     [McpServerTool, Description("Load a CorpoNation by name: sector, hierarchy, holdings, public-facing brand, dirty laundry.")]
-    public string GetCorponation([Description("Exact CorpoNation name.")] string name)
+    public Task<string> GetCorponation([Description("Exact CorpoNation name.")] string name) =>
+        hub.InvokeAsync(nameof(CanonTools), nameof(GetCorponationImpl), new { name });
+
+    public string GetCorponationImpl(string name)
     {
         var c = corponations.GetByName(name);
         if (c == null) return JsonSerializer.Serialize(new { error = "not_found", name }, JsonOpts);
@@ -135,7 +159,9 @@ public class CanonTools
 
     /// <summary>Load the world's literary rules: prohibitions, paragraph requirements, POV voice differentiation rules, register permissions, paragraph economy, interior monologue source. Inject this near the top of any prose-generation prompt.</summary>
     [McpServerTool, Description("Load the world's literary rules: prohibitions, paragraph requirements, POV voice differentiation rules, register permissions, paragraph economy, interior_monologue source. Inject this near the top of any prose-generation prompt.")]
-    public string GetLiteraryRules()
+    public Task<string> GetLiteraryRules() => hub.InvokeAsync(nameof(CanonTools), nameof(GetLiteraryRulesImpl));
+
+    public string GetLiteraryRulesImpl()
     {
         return JsonSerializer.Serialize(literaryRules.Get(), JsonOpts);
     }
@@ -158,20 +184,25 @@ public class StoryTools
     private readonly Prose.Core.Interfaces.IBookRepository books;
     private readonly Prose.Core.Interfaces.IChapterRepository chapters;
     private readonly BookOutlineService outlines;
+    private readonly HubInvoker hub;
 
     public StoryTools(
         Prose.Core.Interfaces.IBookRepository books,
         Prose.Core.Interfaces.IChapterRepository chapters,
-        BookOutlineService outlines)
+        BookOutlineService outlines,
+        HubInvoker hub)
     {
         this.books = books;
         this.chapters = chapters;
         this.outlines = outlines;
+        this.hub = hub;
     }
 
     /// <summary>List every book on the shelf. Returns id, title, premise, chapter count, status, protagonists.</summary>
     [McpServerTool, Description("List every book on the shelf. Returns id, title, premise, chapter count, status, protagonists.")]
-    public string ListBooks()
+    public Task<string> ListBooks() => hub.InvokeAsync(nameof(StoryTools), nameof(ListBooksImpl));
+
+    public string ListBooksImpl()
     {
         var list = books.ListBooks()
             .Select(b => new { id = b.Id, title = b.Title, premise = b.Premise, chapter_count = b.ChapterIds.Count, status = b.Status, protagonists = b.Protagonists })
@@ -182,7 +213,10 @@ public class StoryTools
 
     /// <summary>Load a book by id: full metadata, chapter id list (canonical order), state_at_end (open threads, character status carry-forward, canon changes).</summary>
     [McpServerTool, Description("Load a book by id: full metadata, chapter id list (canonical order), state_at_end (open threads, character status carry-forward, canon changes).")]
-    public string GetBook([Description("Book id (32-char hex like 'eb91080d9c9c4f2b9b405fa5996bdea1').")] string id)
+    public Task<string> GetBook([Description("Book id (32-char hex like 'eb91080d9c9c4f2b9b405fa5996bdea1').")] string id) =>
+        hub.InvokeAsync(nameof(StoryTools), nameof(GetBookImpl), new { id });
+
+    public string GetBookImpl(string id)
     {
         var b = books.LoadBook(id);
         if (b == null) return JsonSerializer.Serialize(new { error = "not_found", id }, CanonTools.JsonOpts);
@@ -191,7 +225,10 @@ public class StoryTools
 
     /// <summary>Load a single chapter by id: synopsis, full HTML body, persisted beats list, participating characters. Use this to read existing prose before extending or revising.</summary>
     [McpServerTool, Description("Load a single chapter by id: synopsis, full HTML body, persisted beats list (each with structure_role + text), participating characters. Use this to read existing prose before extending or revising.")]
-    public string GetChapter([Description("Chapter id (32-char hex).")] string id)
+    public Task<string> GetChapter([Description("Chapter id (32-char hex).")] string id) =>
+        hub.InvokeAsync(nameof(StoryTools), nameof(GetChapterImpl), new { id });
+
+    public string GetChapterImpl(string id)
     {
         var c = chapters.LoadChapter(id);
         if (c == null) return JsonSerializer.Serialize(new { error = "not_found", id }, CanonTools.JsonOpts);
@@ -200,25 +237,34 @@ public class StoryTools
 
     /// <summary>Load a book's shared outline (plot spine): premise/arc/theme/structure, per-chapter outlines, book-level threads, pending adjustments. Approval status gates prose generation in the UI.</summary>
     [McpServerTool, Description("Load a book's shared outline (the plot spine). Returns premise/arc_target/theme/structure, per-chapter outlines (title, short_synopsis, long_synopsis, key_beats, opens_threads, closes_threads, state_changes, pov_character), book-level threads (planted_in / pays_off_in), pending_adjustments (LLM-proposed neighbor edits). Approval status gates prose generation in the UI.")]
-    public string GetBookOutline([Description("Book id.")] string bookId)
+    public Task<string> GetBookOutline([Description("Book id.")] string bookId) =>
+        hub.InvokeAsync(nameof(StoryTools), nameof(GetBookOutlineImpl), new { bookId });
+
+    public string GetBookOutlineImpl(string bookId)
     {
         return JsonSerializer.Serialize(outlines.Load(bookId), CanonTools.JsonOpts);
     }
 
     /// <summary>Build the "WHERE WE ARE" director-context block for a specific chapter: prior chapters' content, this chapter's outline, upcoming setup needs, open book-level threads. Highest-value writing-context tool — call before drafting prose.</summary>
     [McpServerTool, Description("Build the 'WHERE WE ARE' director context block for writing a specific chapter: PRIOR chapters' content, THIS chapter's outline, UPCOMING chapters' setup needs, plus open book-level threads. This is the highest-value writing-context tool — call it before drafting prose for any chapter that's part of a book.")]
-    public string GetDirectorContext(
+    public Task<string> GetDirectorContext(
         [Description("Book id.")] string bookId,
-        [Description("Chapter id whose prose you're about to write.")] string chapterId)
+        [Description("Chapter id whose prose you're about to write.")] string chapterId) =>
+        hub.InvokeAsync(nameof(StoryTools), nameof(GetDirectorContextImpl), new { bookId, chapterId });
+
+    public string GetDirectorContextImpl(string bookId, string chapterId)
     {
         return outlines.BuildDirectorContext(bookId, chapterId);
     }
 
     /// <summary>Archive a book — moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive (chapters stay in place). Requires the caller to retype the full book id as a confirmation token, matching the UI's type-the-guid modal.</summary>
     [McpServerTool, Description("Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive — the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.")]
-    public string ArchiveBook(
+    public Task<string> ArchiveBook(
         [Description("Book id (32-char hex).")] string id,
-        [Description("Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.")] string confirmId)
+        [Description("Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.")] string confirmId) =>
+        hub.InvokeAsync(nameof(StoryTools), nameof(ArchiveBookImpl), new { id, confirmId });
+
+    public string ArchiveBookImpl(string id, string confirmId)
     {
         var book = books.LoadBook(id);
         if (book == null)
@@ -241,27 +287,33 @@ public class StoryTools
 public class ContextTools
 {
     private readonly SemanticIndexService semanticIndex;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly MotifService motifs;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly HubInvoker hub;
 
     public ContextTools(
         SemanticIndexService semanticIndex,
-        WorldGraphService graph,
+        UniverseGraphService graph,
         MotifService motifs,
-        IDbContextFactory<ProseDbContext> dbFactory)
+        IDbContextFactory<ProseDbContext> dbFactory,
+        HubInvoker hub)
     {
         this.semanticIndex = semanticIndex;
         this.graph = graph;
         this.motifs = motifs;
         this.dbFactory = dbFactory;
+        this.hub = hub;
     }
 
     /// <summary>Search the world graph by theme rather than by name. TF-IDF cosine similarity over every entity description. Surfaces entities thematically relevant to what you're about to write. Returns ranked id+name+type+score.</summary>
     [McpServerTool, Description("Search the world graph by theme, not by name. TF-IDF cosine similarity across every entity description. Use this to surface entities that are *thematically relevant* to what you're about to write — e.g. searching 'corporate betrayal under-table contract' might return Sable's backstory, the Lotus Syndicate, the Ferrogate enforcement arm. Returns ranked id+name+type+score.")]
-    public string SearchSemantic(
+    public Task<string> SearchSemantic(
         [Description("Free-text query — describe the theme/scene/concept.")] string query,
-        [Description("Number of top hits to return. Default 8.")] int topK = 8)
+        [Description("Number of top hits to return. Default 8.")] int topK = 8) =>
+        hub.InvokeAsync(nameof(ContextTools), nameof(SearchSemanticImpl), new { query, topK });
+
+    public string SearchSemanticImpl(string query, int topK = 8)
     {
         graph.EnsureLoaded();
         var hits = semanticIndex.Search(query, topK);
@@ -275,19 +327,25 @@ public class ContextTools
 
     /// <summary>List the registered motifs for a book — recurring objects, phrases, gestures, sensory threads. Use these in chapters where natural; the review pipeline flags chapters that drop the whole inventory.</summary>
     [McpServerTool, Description("List the registered motifs for a book — recurring objects, phrases, gestures, sensory threads. Mention these in the chapter you're writing where natural; the review pipeline flags chapters that drop the whole inventory.")]
-    public string GetMotifs([Description("Book id.")] string bookId)
+    public Task<string> GetMotifs([Description("Book id.")] string bookId) =>
+        hub.InvokeAsync(nameof(ContextTools), nameof(GetMotifsImpl), new { bookId });
+
+    public string GetMotifsImpl(string bookId)
     {
         return JsonSerializer.Serialize(motifs.Load(bookId), CanonTools.JsonOpts);
     }
 
     /// <summary>Plant a new motif in a book's inventory. Idempotent by name (re-planting with a longer description merges). Same write the UI's Motifs panel issues, exposed here so chat-side authoring can register motifs too.</summary>
     [McpServerTool, Description("Plant a new motif in a book's inventory. Idempotent by name (re-planting with a longer description merges). The user normally accepts these from the Motifs panel in the UI; this tool exposes the same write so chat-side authoring can register them too.")]
-    public string PlantMotif(
+    public Task<string> PlantMotif(
         [Description("Book id.")] string bookId,
         [Description("Motif name, e.g. 'brick-wall notebook' or 'the door is unlocked'.")] string name,
         [Description("Short description of what this motif means and where it lands.")] string description,
         [Description("MotifKind: Object, Phrase, Gesture, Sensory, Ritual.")] string kind,
-        [Description("Chapter id where this motif is being introduced.")] string introducedInChapterId)
+        [Description("Chapter id where this motif is being introduced.")] string introducedInChapterId) =>
+        hub.InvokeAsync(nameof(ContextTools), nameof(PlantMotifImpl), new { bookId, name, description, kind, introducedInChapterId });
+
+    public string PlantMotifImpl(string bookId, string name, string description, string kind, string introducedInChapterId)
     {
         if (!Enum.TryParse<MotifKind>(kind, ignoreCase: true, out var kindEnum))
             return JsonSerializer.Serialize(new { error = "invalid_kind", kind, valid = Enum.GetNames(typeof(MotifKind)) }, CanonTools.JsonOpts);
@@ -302,8 +360,11 @@ public class ContextTools
     /// Read-only: proposals are returned for review, never auto-planted (call plant_motif for any
     /// you want to keep, same as the existing UI workflow this mirrors).</summary>
     [McpServerTool, Description("Scan a node's actual written prose for motif candidates — italicized phrases that recur, or capitalized named objects (not already characters/places) that repeat 3+ times. Returns proposals for review; nothing is written automatically. Pass a chapter-level node for one chapter's beats, or a book-level node to aggregate every chapter's beats. Plant any you want to keep via plant_motif.")]
-    public async Task<string> ProposeMotifs(
-        [Description("Node id (GUID) or slug/code to scan.")] string nodeIdOrSlug)
+    public Task<string> ProposeMotifs(
+        [Description("Node id (GUID) or slug/code to scan.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(ContextTools), nameof(ProposeMotifsImpl), new { nodeIdOrSlug });
+
+    public async Task<string> ProposeMotifsImpl(string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
         if (nodeId == null) return Error("node_not_found", nodeIdOrSlug);
@@ -361,9 +422,12 @@ public class ContextTools
 
     /// <summary>Get a graph node's neighbors (relationships) up to N hops. Walks from a known entity to entities related by canon — alliances, rivalries, family, mentor links, location ownership.</summary>
     [McpServerTool, Description("Get a graph node's neighbors (relationships) up to N hops. Use this to walk from a known entity to entities related by canon — alliances, rivalries, family, mentor links, location ownership.")]
-    public string GetNeighbors(
+    public Task<string> GetNeighbors(
         [Description("Node id (use search_semantic or list_characters to find the id).")] string nodeId,
-        [Description("Hops to traverse. 1 = direct neighbors. Default 1.")] int hops = 1)
+        [Description("Hops to traverse. 1 = direct neighbors. Default 1.")] int hops = 1) =>
+        hub.InvokeAsync(nameof(ContextTools), nameof(GetNeighborsImpl), new { nodeId, hops });
+
+    public string GetNeighborsImpl(string nodeId, int hops = 1)
     {
         graph.EnsureLoaded();
         var neighbors = graph.GetNeighbors(nodeId, hops);

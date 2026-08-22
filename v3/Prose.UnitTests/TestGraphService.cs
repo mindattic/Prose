@@ -4,10 +4,10 @@ using Prose.Core.Models.Graph;
 namespace Prose.UnitTests;
 
 /// <summary>
-/// Lightweight WorldGraphService wrapper for unit tests.
+/// Lightweight UniverseGraphService wrapper for unit tests.
 /// Bypasses file I/O and DatabaseService — builds graph directly in memory.
 /// </summary>
-public class TestGraphService : WorldGraphService
+public class TestGraphService : UniverseGraphService
 {
     public TestGraphService() : base(new TestPathProvider(), new TestDatabaseService())
     {
@@ -20,7 +20,7 @@ public class TestGraphService : WorldGraphService
 
     public void AddTestNode(string id, string name, string nodeType, Dictionary<string, string> props)
     {
-        AddNode(new WorldNode
+        AddNode(new UniverseNode
         {
             Id = id,
             Name = name,
@@ -31,7 +31,7 @@ public class TestGraphService : WorldGraphService
 
     public void AddTestEdge(string source, string target, string relationType, string description = "")
     {
-        AddEdge(new WorldEdge
+        AddEdge(new UniverseEdge
         {
             Source = source,
             Target = target,

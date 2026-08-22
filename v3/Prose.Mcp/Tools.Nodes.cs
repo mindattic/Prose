@@ -36,6 +36,7 @@ public class NodeTools
     private readonly CoverTitleCompositorService titleCompositor;
     private readonly Prose.Core.Interfaces.IPathProvider paths;
     private readonly CanonDocumentService canonDocs;
+    private readonly HubInvoker hub;
 
     public NodeTools(
         NodeWorkbenchService workbench,
@@ -53,7 +54,8 @@ public class NodeTools
         CoverImageService coverImages,
         CoverTitleCompositorService titleCompositor,
         Prose.Core.Interfaces.IPathProvider paths,
-        CanonDocumentService canonDocs)
+        CanonDocumentService canonDocs,
+        HubInvoker hub)
     {
         this.workbench = workbench;
         this.dbFactory = dbFactory;
@@ -71,6 +73,7 @@ public class NodeTools
         this.titleCompositor = titleCompositor;
         this.paths = paths;
         this.canonDocs = canonDocs;
+        this.hub = hub;
     }
 
     [McpServerTool, Description("Create a SeriesNode — the top-level grouping (saga / anthology) that BookNodes hang under. Never holds beats. Returns the new id, slug, and URL.")]
@@ -78,6 +81,12 @@ public class NodeTools
         [Description("Series title. Required.")] string title,
         [Description("Optional short reference code (e.g. 'BCODA'). Upper-cased; rejected if already in use.")] string code = "",
         [Description("Optional one-line description (back-of-book text).")] string description = "")
+        => hub.InvokeAsync(nameof(NodeTools), nameof(CreateSeriesImpl), new { title, code, description });
+
+    public Task<string> CreateSeriesImpl(
+        string title,
+        string code = "",
+        string description = "")
         => CreateNodeCoreAsync(title, "series", description, seed: "", targetBeats: 0, parentNodeIdOrSlug: "", code: code, previous: "");
 
     [McpServerTool, Description("Create a BookNode — a single book arc (book / novella / standalone). Pass 'seed' to also generate a book bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.")]
@@ -89,6 +98,16 @@ public class NodeTools
         [Description("Optional parent SeriesNode Guid id (or slug). Empty = standalone.")] string parentNodeIdOrSlug = "",
         [Description("Optional short author-assigned reference code (e.g. 'ATTE'). Uppercased, unique lookup key.")] string code = "",
         [Description("Optional prior book this one continues (slug or GUID) — sequel commandments apply.")] string previous = "")
+        => hub.InvokeAsync(nameof(NodeTools), nameof(CreateBookImpl), new { title, description, seed, targetBeats, parentNodeIdOrSlug, code, previous });
+
+    public Task<string> CreateBookImpl(
+        string title,
+        string description = "",
+        string seed = "",
+        int targetBeats = 12,
+        string parentNodeIdOrSlug = "",
+        string code = "",
+        string previous = "")
         => CreateNodeCoreAsync(title, "book", description, seed, targetBeats, parentNodeIdOrSlug, code, previous);
 
     [McpServerTool, Description("Create a ChapterNode under a book. Chapters hold beats and never carry a reference code. parentNodeIdOrSlug is REQUIRED. Returns the new id, slug, and url.")]
@@ -96,6 +115,12 @@ public class NodeTools
         [Description("Chapter title. Required.")] string title,
         [Description("Parent BookNode Guid id or slug. Required.")] string parentNodeIdOrSlug,
         [Description("Optional back-of-book description.")] string description = "")
+        => hub.InvokeAsync(nameof(NodeTools), nameof(CreateChapterImpl), new { title, parentNodeIdOrSlug, description });
+
+    public Task<string> CreateChapterImpl(
+        string title,
+        string parentNodeIdOrSlug,
+        string description = "")
         => CreateNodeCoreAsync(title, "chapter", description, seed: "", targetBeats: 0, parentNodeIdOrSlug: parentNodeIdOrSlug, code: "", previous: "");
 
     /// <summary>Resolve a node reference (GUID or slug) to its id. Empty input → null.</summary>
@@ -111,9 +136,12 @@ public class NodeTools
     }
 
     [McpServerTool, Description("List nodes. Use kind='book' to list all root narratives; kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
-    public async Task<string> ListBooks(
+    public Task<string> ListBooks(
         [Description("Optional Kind filter — 'book' (root nodes) or 'chapter' (sub-nodes with beats). Case-insensitive equality match.")] string kind = "",
-        [Description("Maximum rows to return. Default 100.")] int limit = 100)
+        [Description("Maximum rows to return. Default 100.")] int limit = 100) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(ListBooksImpl), new { kind, limit });
+
+    public async Task<string> ListBooksImpl(string kind = "", int limit = 100)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var q = db.Nodes.AsNoTracking();
@@ -143,8 +171,11 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Get a single node with its beats in reading order. Accepts a Guid id OR a slug. Returns node metadata + ordered beats (id, text, stale, has_audio, title, description).")]
-    public async Task<string> GetBook(
-        [Description("Node Guid id or slug.")] string idOrSlug)
+    public Task<string> GetBook(
+        [Description("Node Guid id or slug.")] string idOrSlug) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(GetBookImpl), new { idOrSlug });
+
+    public async Task<string> GetBookImpl(string idOrSlug)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
@@ -240,9 +271,12 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Deep-duplicate a node (and its sub-node tree) into a fresh, independent copy. Every beat is cloned into a new row — prose and narration metadata are preserved, but audio, review scores, and the stale flag are reset. Editing the copy never affects the original. Accepts a Guid id OR a slug. Returns the new node's id, slug, and writer URL.")]
-    public async Task<string> DuplicateBook(
+    public Task<string> DuplicateBook(
         [Description("Source node Guid id or slug.")] string idOrSlug,
-        [Description("Title for the new duplicate. Required.")] string newTitle)
+        [Description("Title for the new duplicate. Required.")] string newTitle) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(DuplicateBookImpl), new { idOrSlug, newTitle });
+
+    public async Task<string> DuplicateBookImpl(string idOrSlug, string newTitle)
     {
         if (string.IsNullOrWhiteSpace(newTitle))
             return JsonSerializer.Serialize(new { error = "title_required" }, CanonTools.JsonOpts);
@@ -254,11 +288,14 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Clone a node into a fully independent copy: new Node row + new Beat rows, same prose. Audio, scores, and review history are NOT copied — clone starts fresh. Supports nodeCode for per-experiment isolation. Use this instead of DuplicateBook when you need nodeCode or per-experiment isolation. Returns new id, slug, beat count.")]
-    public async Task<string> CloneBook(
+    public Task<string> CloneBook(
         [Description("Source node Guid id or slug.")] string idOrSlug,
         [Description("Title for the clone. Defaults to 'Source Title (Clone)'.")] string title = "",
         [Description("Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.")] string nodeCode = "",
-        [Description("Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.")] string status = "ready")
+        [Description("Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.")] string status = "ready") =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(CloneBookImpl), new { idOrSlug, title, nodeCode, status });
+
+    public async Task<string> CloneBookImpl(string idOrSlug, string title = "", string nodeCode = "", string status = "ready")
     {
         var source = await ResolveNodeAsync(idOrSlug);
         if (source == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
@@ -369,10 +406,13 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Insert a new beat into a node. Pass an empty afterBeatId to insert at the top. Returns the new beat's id.")]
-    public async Task<string> InsertBeat(
+    public Task<string> InsertBeat(
         [Description("Node Guid id or slug.")] string nodeIdOrSlug,
         [Description("Beat Guid id to insert after, or empty for top-of-node.")] string afterBeatId = "",
-        [Description("Initial prose text for the new beat. May be empty.")] string text = "")
+        [Description("Initial prose text for the new beat. May be empty.")] string text = "") =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(InsertBeatImpl), new { nodeIdOrSlug, afterBeatId, text });
+
+    public async Task<string> InsertBeatImpl(string nodeIdOrSlug, string afterBeatId = "", string text = "")
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -388,8 +428,11 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Get a single beat with every authoring field — prose, kind, IsChapterStart, BeatTitle, gap-after, tone/pace/facet metadata, position within node, and the previous/next beat ids for relative insertion. Accepts a plain Beat Guid or the 'node-guid.beat-guid' dotted handle the writer UI shows on the LLM bottom sheet.")]
-    public async Task<string> GetBeat(
-        [Description("Beat Guid OR the dotted 'node-guid.beat-guid' handle.")] string beatHandle)
+    public Task<string> GetBeat(
+        [Description("Beat Guid OR the dotted 'node-guid.beat-guid' handle.")] string beatHandle) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(GetBeatImpl), new { beatHandle });
+
+    public async Task<string> GetBeatImpl(string beatHandle)
     {
         if (!BeatHandle.TryParse(beatHandle, out var parsedNode, out var parsedBeat) || parsedBeat == null)
             return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
@@ -450,9 +493,12 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Update one beat's prose. Recomputes the hash, marks the beat stale, and invalidates its audio. Beat.Text accepts inline markdown (**bold** / *italic* / __underline__ / ~~strike~~) and ElevenLabs-style tone tags ([WHISPERING] [GASP] [LAUGHS] [PAUSES] etc.) that render as emoji in the read view. Accepts a Beat Guid OR the 'node-guid.beat-guid' handle.")]
-    public async Task<string> UpdateBeatText(
+    public Task<string> UpdateBeatText(
         [Description("Beat Guid OR 'node-guid.beat-guid' handle.")] string beatHandle,
-        [Description("New prose. Replaces the entire beat text. Markdown markers + tone-tag brackets are preserved verbatim in storage.")] string text)
+        [Description("New prose. Replaces the entire beat text. Markdown markers + tone-tag brackets are preserved verbatim in storage.")] string text) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBeatTextImpl), new { beatHandle, text });
+
+    public async Task<string> UpdateBeatTextImpl(string beatHandle, string text)
     {
         if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
             return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
@@ -461,7 +507,7 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Update a beat's metadata: Title, Description, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.")]
-    public async Task<string> UpdateBeatMetadata(
+    public Task<string> UpdateBeatMetadata(
         [Description("Beat Guid OR 'node-guid.beat-guid' handle.")] string beatHandle,
         [Description("Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.")] string title = "",
         [Description("One-line description fed to LLM regenerations.")] string description = "",
@@ -473,7 +519,22 @@ public class NodeTools
         [Description("Scene type: scene | summary | transition | interstitial.")] string sceneType = "scene",
         [Description("True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading.")] bool isChapterStart = false,
         [Description("Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.")] string kind = "prose",
-        [Description("Optional manual override for the plot-event line (EventSummary — 'what happened', distinct from Description's authorial-intent register). When provided, sets Beat.EventSummary and stamps EventSummaryHash to the beat's CURRENT TextHash, which 'freezes' the manual line so the next generate_event_list run sees it as already current and skips it (no LLM call, no clobber). Pass empty string to clear. Omit (leave null) to leave the beat's event line untouched — unlike the other params above, this one is NOT overwritten by an empty default.")] string? eventSummary = null)
+        [Description("Optional manual override for the plot-event line (EventSummary — 'what happened', distinct from Description's authorial-intent register). When provided, sets Beat.EventSummary and stamps EventSummaryHash to the beat's CURRENT TextHash, which 'freezes' the manual line so the next generate_event_list run sees it as already current and skips it (no LLM call, no clobber). Pass empty string to clear. Omit (leave null) to leave the beat's event line untouched — unlike the other params above, this one is NOT overwritten by an empty default.")] string? eventSummary = null) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBeatMetadataImpl), new { beatHandle, title, description, subtext, emotionalTone, paceHint, structureRole, act, sceneType, isChapterStart, kind, eventSummary });
+
+    public async Task<string> UpdateBeatMetadataImpl(
+        string beatHandle,
+        string title = "",
+        string description = "",
+        string subtext = "",
+        string emotionalTone = "",
+        string paceHint = "",
+        string structureRole = "",
+        int act = 0,
+        string sceneType = "scene",
+        bool isChapterStart = false,
+        string kind = "prose",
+        string? eventSummary = null)
     {
         if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
             return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
@@ -508,9 +569,12 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Set the silence (in ms) the audio engine inserts AFTER this beat, before the next. 0 = no silence (explicit override). Use ClearBeatGapAfter to revert to the auto-computed default from SceneType + terminator punctuation.")]
-    public async Task<string> SetBeatGapAfter(
+    public Task<string> SetBeatGapAfter(
         [Description("Beat Guid OR 'node-guid.beat-guid' handle.")] string beatHandle,
-        [Description("Silence in milliseconds, 0..6000.")] int durationMs)
+        [Description("Silence in milliseconds, 0..6000.")] int durationMs) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(SetBeatGapAfterImpl), new { beatHandle, durationMs });
+
+    public async Task<string> SetBeatGapAfterImpl(string beatHandle, int durationMs)
     {
         if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
             return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
@@ -519,8 +583,11 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Clear an explicit gap-after-beat override. The audio engine falls back to the auto-computed silence from SceneType + terminator punctuation.")]
-    public async Task<string> ClearBeatGapAfter(
-        [Description("Beat Guid OR 'node-guid.beat-guid' handle.")] string beatHandle)
+    public Task<string> ClearBeatGapAfter(
+        [Description("Beat Guid OR 'node-guid.beat-guid' handle.")] string beatHandle) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(ClearBeatGapAfterImpl), new { beatHandle });
+
+    public async Task<string> ClearBeatGapAfterImpl(string beatHandle)
     {
         if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
             return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
@@ -529,9 +596,12 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Split one beat into two at the nearest sentence boundary near its midpoint. Both halves lose their audio.")]
-    public async Task<string> SplitBeat(
+    public Task<string> SplitBeat(
         [Description("Node Guid id or slug.")] string nodeIdOrSlug,
-        [Description("Beat Guid id to split.")] string beatId)
+        [Description("Beat Guid id to split.")] string beatId) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(SplitBeatImpl), new { nodeIdOrSlug, beatId });
+
+    public async Task<string> SplitBeatImpl(string nodeIdOrSlug, string beatId)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -541,9 +611,12 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Merge one beat into the previous one in the node. Audio on the survivor is invalidated.")]
-    public async Task<string> JoinBeat(
+    public Task<string> JoinBeat(
         [Description("Node Guid id or slug.")] string nodeIdOrSlug,
-        [Description("Beat Guid id to merge upward.")] string beatId)
+        [Description("Beat Guid id to merge upward.")] string beatId) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(JoinBeatImpl), new { nodeIdOrSlug, beatId });
+
+    public async Task<string> JoinBeatImpl(string nodeIdOrSlug, string beatId)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -553,9 +626,12 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Remove a beat from a node. If the beat is not referenced by any other node, the beat row + audio file are deleted entirely.")]
-    public async Task<string> DeleteBeat(
+    public Task<string> DeleteBeat(
         [Description("Node Guid id or slug.")] string nodeIdOrSlug,
-        [Description("Beat Guid id to delete.")] string beatId)
+        [Description("Beat Guid id to delete.")] string beatId) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(DeleteBeatImpl), new { nodeIdOrSlug, beatId });
+
+    public async Task<string> DeleteBeatImpl(string nodeIdOrSlug, string beatId)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -565,8 +641,11 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Kick off TTS narration for every un-narrated beat in this node (and its child nodes recursively). Returns immediately — narration runs in the background; poll get_node to observe progress. Returns an error response (without spawning anything) if TTS is not configured.")]
-    public async Task<string> NarrateBook(
-        [Description("Node Guid id or slug.")] string nodeIdOrSlug)
+    public Task<string> NarrateBook(
+        [Description("Node Guid id or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(NarrateBookImpl), new { nodeIdOrSlug });
+
+    public async Task<string> NarrateBookImpl(string nodeIdOrSlug)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -587,8 +666,11 @@ public class NodeTools
     // ── Node Bible tools ────────────────────────────────────────────────
 
     [McpServerTool, Description("Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_bible=false when no bible exists yet.")]
-    public async Task<string> GetBookBible(
-        [Description("Node Guid id or slug.")] string idOrSlug)
+    public Task<string> GetBookBible(
+        [Description("Node Guid id or slug.")] string idOrSlug) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(GetBookBibleImpl), new { idOrSlug });
+
+    public async Task<string> GetBookBibleImpl(string idOrSlug)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
@@ -612,9 +694,12 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Generate (or regenerate) the node bible for a node. Uses the node's Seed field (falls back to Synopsis then Title) plus the literary rules to produce a dry structural plan: logline, premise, register, characters, numbered beat spine, seeds & payoffs. Creates planned Beat rows from the spine when the node has no beats yet. Returns the generated bible text.")]
-    public async Task<string> GenerateBookBible(
+    public Task<string> GenerateBookBible(
         [Description("Node Guid id or slug.")] string idOrSlug,
-        [Description("Target number of beats in the spine. 0 = auto (use existing beat count or 12).")] int targetBeats = 0)
+        [Description("Target number of beats in the spine. 0 = auto (use existing beat count or 12).")] int targetBeats = 0) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(GenerateBookBibleImpl), new { idOrSlug, targetBeats });
+
+    public async Task<string> GenerateBookBibleImpl(string idOrSlug, int targetBeats = 0)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
@@ -656,9 +741,12 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible. The docs/nodes/{CODE}.md mirror and MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.")]
-    public async Task<string> SetBookBible(
+    public Task<string> SetBookBible(
         [Description("Node Guid id or slug.")] string idOrSlug,
-        [Description("Full bible markdown text to store. Empty string clears the bible.")] string bibleText)
+        [Description("Full bible markdown text to store. Empty string clears the bible.")] string bibleText) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(SetBookBibleImpl), new { idOrSlug, bibleText });
+
+    public async Task<string> SetBookBibleImpl(string idOrSlug, string bibleText)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
@@ -691,8 +779,11 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Assemble the unified Book Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. The MarkdownFiles sync (what DocContextService reads at generation time) runs automatically as part of this call — no follow-up call needed. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.")]
-    public async Task<string> GenerateNodeDoc(
-        [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug)
+    public Task<string> GenerateNodeDoc(
+        [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(GenerateNodeDocImpl), new { nodeIdOrSlug });
+
+    public async Task<string> GenerateNodeDocImpl(string nodeIdOrSlug)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -720,9 +811,12 @@ public class NodeTools
 
     /// <summary>Copy-edit a node's prose in-place: proper paragraph/dialogue spacing, "?" on questions, "asks"/"asked" on question dialogue. Dry-run by default — pass apply=true to commit. Returns a report of what changed, was rejected, or errored.</summary>
     [McpServerTool, Description("Copy-edit a node's prose in-place: adds missing '?' on questions, swaps 'says/said' → 'asks/asked' on question dialogue lines, and normalises paragraph/dialogue spacing. Dry-run by default — set apply=true to commit. Beats the model modified beyond those specific edits are rejected and left untouched. Returns changed/unchanged/rejected/errors counts plus per-beat diff previews.")]
-    public async Task<string> ReflowBook(
+    public Task<string> ReflowBook(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Set to true to write the edits to the DB. Default false = dry run.")] bool apply = false)
+        [Description("Set to true to write the edits to the DB. Default false = dry run.")] bool apply = false) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(ReflowBookImpl), new { nodeIdOrSlug, apply });
+
+    public async Task<string> ReflowBookImpl(string nodeIdOrSlug, bool apply = false)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -754,9 +848,12 @@ public class NodeTools
 
     /// <summary>LLM-rebeat a node: re-segment all beats to the beat doctrine (proper formatting, no run-ons, no sentence-shrapnel). Dry-run by default; set apply=true to export a backup then replace beats (only if the word-retention guard passes).</summary>
     [McpServerTool, Description("Re-segment a node's beats to the codified beat doctrine via LLM re-segmentation. Dry-run by default (safe to call freely). Set apply=true to export a Markdown backup then replace the beats — only committed if the word-retention guard passes (prevents silent content loss). Returns old/new beat counts, retention %, guard result, and a note if it was blocked.")]
-    public async Task<string> RebeatBook(
+    public Task<string> RebeatBook(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Set to true to commit the new segmentation. Default false = dry run.")] bool apply = false)
+        [Description("Set to true to commit the new segmentation. Default false = dry run.")] bool apply = false) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(RebeatBookImpl), new { nodeIdOrSlug, apply });
+
+    public async Task<string> RebeatBookImpl(string nodeIdOrSlug, bool apply = false)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -813,9 +910,12 @@ public class NodeTools
 
     /// <summary>Export a node to every KDP-ready format (docx/epub/pdf/txt) plus description.txt/keywords.txt/cover.jpg, to the configured export directory (defaults to Desktop). Same pipeline as the CLI's `prose --export-node`, via the shared NodeFullExportService. Local file rendering only — no KDP API integration.</summary>
     [McpServerTool, Description("Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), keywords.txt (from seeded NodeKeywords), and cover.jpg (only if missing), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Use get_node first to confirm the node exists.")]
-    public async Task<string> ExportNode(
+    public Task<string> ExportNode(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Author name to embed in the document properties. Optional.")] string author = "")
+        [Description("Author name to embed in the document properties. Optional.")] string author = "") =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(ExportNodeImpl), new { nodeIdOrSlug, author });
+
+    public async Task<string> ExportNodeImpl(string nodeIdOrSlug, string author = "")
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -842,10 +942,13 @@ public class NodeTools
 
     /// <summary>Render a node as a single continuous MP3 audiobook and write it to the configured export directory. Local file rendering only — no KDP/Audible API integration.</summary>
     [McpServerTool, Description("Render the whole node as one continuous narration (no per-beat voice drift) and write the MP3 to the configured export directory (defaults to Desktop). TTS engine: 'elevenlabs' (default, paid, highest fidelity), 'piper' (free/local, fastest), 'kokoro' (free/local, recommended), 'chatterbox' (free/local, most expressive). Returns the path of the written file, or null if the node has no beat text. This only generates a local MP3 — it does not publish anything to Audible/ACX.")]
-    public async Task<string> ExportAudiobook(
+    public Task<string> ExportAudiobook(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("TTS engine: elevenlabs (default) | piper | kokoro | chatterbox.")] string ttsEngine = "",
-        [Description("Set to true to retune this node's frozen voice snapshot to Robust stability (1.0) before recording.")] bool robust = false)
+        [Description("Set to true to retune this node's frozen voice snapshot to Robust stability (1.0) before recording.")] bool robust = false) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(ExportAudiobookImpl), new { nodeIdOrSlug, ttsEngine, robust });
+
+    public async Task<string> ExportAudiobookImpl(string nodeIdOrSlug, string ttsEngine = "", bool robust = false)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
@@ -856,11 +959,14 @@ public class NodeTools
     }
 
     [McpServerTool, Description("List nodes with their latest review score, word count, and estimated page count (250 words/page). Optionally filter by kind ('book', 'chapter', 'episode', etc.) and/or status ('draft', 'canon', 'ready', 'archived'). Returns code, title, kind, status, score (null if unreviewed), words, pages, scored_on. Sorted by score descending (unscored nodes last). Use this for a quick quality dashboard without running new reviews.")]
-    public async Task<string> ListScores(
+    public Task<string> ListScores(
         [Description("Optional kind filter (case-insensitive). E.g. 'book', 'chapter', 'novella'. Empty = all kinds.")] string kind = "",
         [Description("Optional status filter (case-insensitive). E.g. 'draft', 'canon', 'ready'. Empty = all statuses except archived.")] string status = "",
         [Description("Include archived nodes. Default false.")] bool includeArchived = false,
-        [Description("Maximum rows to return. Default 200.")] int limit = 200)
+        [Description("Maximum rows to return. Default 200.")] int limit = 200) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(ListScoresImpl), new { kind, status, includeArchived, limit });
+
+    public async Task<string> ListScoresImpl(string kind = "", string status = "", bool includeArchived = false, int limit = 200)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
 
@@ -925,7 +1031,7 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count, cover_prompt. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
-    public async Task<string> UpdateBook(
+    public Task<string> UpdateBook(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("New title. Omit to leave unchanged.")] string? title = null,
         [Description("Subtitle (e.g. 'A GLMZ Novella'). Omit to leave unchanged; pass empty string to clear.")] string? subtitle = null,
@@ -936,7 +1042,21 @@ public class NodeTools
         [Description("Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.")] string? code = null,
         [Description("ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.")] string? voiceId = null,
         [Description("KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.")] int? kdpPageCount = null,
-        [Description("Hand-set cover art image prompt (overrides the generated one). Omit to leave unchanged; pass empty string to clear. Prefer generate_cover_prompt to derive this from the book itself.")] string? coverPrompt = null)
+        [Description("Hand-set cover art image prompt (overrides the generated one). Omit to leave unchanged; pass empty string to clear. Prefer generate_cover_prompt to derive this from the book itself.")] string? coverPrompt = null) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBookImpl), new { idOrSlug, title, subtitle, description, kind, status, seed, code, voiceId, kdpPageCount, coverPrompt });
+
+    public async Task<string> UpdateBookImpl(
+        string idOrSlug,
+        string? title = null,
+        string? subtitle = null,
+        string? description = null,
+        string? kind = null,
+        string? status = null,
+        string? seed = null,
+        string? code = null,
+        string? voiceId = null,
+        int? kdpPageCount = null,
+        string? coverPrompt = null)
     {
         try
         {
@@ -982,8 +1102,11 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Generate and save a book-cover image prompt (Node.CoverPrompt) from the book's own Title/Summary/Description and universe — a single paragraph describing subject, setting, mood, palette, and composition for an image model. Kept commercial-cover-safe (never explicit) regardless of interior content. Overwrites any existing CoverPrompt. Accepts node id (GUID) or slug.")]
-    public async Task<string> GenerateCoverPrompt(
-        [Description("Node id (GUID) or slug.")] string idOrSlug)
+    public Task<string> GenerateCoverPrompt(
+        [Description("Node id (GUID) or slug.")] string idOrSlug) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(GenerateCoverPromptImpl), new { idOrSlug });
+
+    public async Task<string> GenerateCoverPromptImpl(string idOrSlug)
     {
         try
         {
@@ -1044,16 +1167,22 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Return the current status of the cover pipeline: for each registered image provider, its id and whether an API key is configured. Use before calling generate_cover_image to know which providers are actually usable.")]
-    public string GetCoverProviderStatus()
+    public Task<string> GetCoverProviderStatus() =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(GetCoverProviderStatusImpl), new { });
+
+    public string GetCoverProviderStatusImpl()
     {
         var rows = coverImages.AvailableProviders.Select(p => new { id = p.Id, configured = p.Configured });
         return JsonSerializer.Serialize(new { providers = rows }, CanonTools.JsonOpts);
     }
 
     [McpServerTool, Description("Return the score history for a node as a time-series — every review run that produced a summary, with its mean score, SD, review count, and date. Use to track whether an edit moved the needle, or to compare pre/post-edit trajectories. Accepts node id (GUID) or slug.")]
-    public async Task<string> GetScoreHistory(
+    public Task<string> GetScoreHistory(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
-        [Description("Maximum history points to return (most recent first). Default 20.")] int limit = 20)
+        [Description("Maximum history points to return (most recent first). Default 20.")] int limit = 20) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(GetScoreHistoryImpl), new { idOrSlug, limit });
+
+    public async Task<string> GetScoreHistoryImpl(string idOrSlug, int limit = 20)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
@@ -1116,8 +1245,11 @@ public class NodeTools
         "Return the full narrative spine for a node: bible, user stories, all amendments (in order), " +
         "and the latest spine version pin (which records the content hashes and amendment count at the " +
         "last docx export). Use this before writing prose to understand the narrative contract.")]
-    public async Task<string> GetBookSpine(
-        [Description("Node id (GUID) or slug.")] string idOrSlug)
+    public Task<string> GetBookSpine(
+        [Description("Node id (GUID) or slug.")] string idOrSlug) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(GetBookSpineImpl), new { idOrSlug });
+
+    public async Task<string> GetBookSpineImpl(string idOrSlug)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null)
@@ -1159,9 +1291,12 @@ public class NodeTools
         "Set (replace) the user stories / acceptance criteria for a node. " +
         "Write this before starting prose — it defines what scenes, arcs, and voice moments must be present " +
         "for the node to reach ≥82% standalone and ≥85% cumulative book score.")]
-    public async Task<string> SetBookUserStories(
+    public Task<string> SetBookUserStories(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
-        [Description("Full user stories markdown. Will replace any existing content.")] string userStoriesText)
+        [Description("Full user stories markdown. Will replace any existing content.")] string userStoriesText) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(SetBookUserStoriesImpl), new { idOrSlug, userStoriesText });
+
+    public async Task<string> SetBookUserStoriesImpl(string idOrSlug, string userStoriesText)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null)
@@ -1176,10 +1311,13 @@ public class NodeTools
         "Amendments are append-only — they form an auditable change log of narrative decisions. " +
         "Use when: changing a character's motivation after beats are written, retconning world rules, " +
         "or noting why a section was expanded or cut.")]
-    public async Task<string> AppendBookAmendment(
+    public Task<string> AppendBookAmendment(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("One-line summary of the change.")] string summary,
-        [Description("Full amendment body (markdown). Explain what changed and why.")] string body)
+        [Description("Full amendment body (markdown). Explain what changed and why.")] string body) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(AppendBookAmendmentImpl), new { idOrSlug, summary, body });
+
+    public async Task<string> AppendBookAmendmentImpl(string idOrSlug, string summary, string body)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null)
@@ -1201,9 +1339,12 @@ public class NodeTools
         "Records the SHA-256 hashes of the current bible and user stories, plus the amendment count, " +
         "so future drift checks can tell when prose was written against a stale spine. " +
         "Call this after every significant prose session or whenever the spine changes.")]
-    public async Task<string> PinBookSpineVersion(
+    public Task<string> PinBookSpineVersion(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
-        [Description("Optional human note explaining what changed at this version.")] string notes = "")
+        [Description("Optional human note explaining what changed at this version.")] string notes = "") =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(PinBookSpineVersionImpl), new { idOrSlug, notes });
+
+    public async Task<string> PinBookSpineVersionImpl(string idOrSlug, string notes = "")
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null)
@@ -1244,9 +1385,12 @@ public class NodeTools
         "respellings; (3) AUDIBLE_README.md with submission instructions. " +
         "No API is called on Audible's side — the author uploads the .audible.txt via ACX/Audible " +
         "publisher portal. Returns paths + word/term counts.")]
-    public async Task<string> PrepareAudible(
+    public Task<string> PrepareAudible(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Run the optional LLM phonetics pass to fill in 'Say it as' respellings. Default true. Set false to skip and leave the column blank for manual completion.")] bool withPhonetics = true)
+        [Description("Run the optional LLM phonetics pass to fill in 'Say it as' respellings. Default true. Set false to skip and leave the column blank for manual completion.")] bool withPhonetics = true) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(PrepareAudibleImpl), new { nodeIdOrSlug, withPhonetics });
+
+    public async Task<string> PrepareAudibleImpl(string nodeIdOrSlug, bool withPhonetics = true)
     {
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null)
@@ -1273,8 +1417,11 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Print all beats of a node as continuous prose — each beat's Text joined by a blank line. No headers, no beat numbers, no metadata. Accepts node id (GUID) or slug. Use this to read the full prose of a node in one call.")]
-    public async Task<string> PrintBook(
-        [Description("Node Guid id or slug.")] string idOrSlug)
+    public Task<string> PrintBook(
+        [Description("Node Guid id or slug.")] string idOrSlug) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(PrintBookImpl), new { idOrSlug });
+
+    public async Task<string> PrintBookImpl(string idOrSlug)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
@@ -1305,6 +1452,39 @@ public class NodeTools
         if (prose.Count == 0) return JsonSerializer.Serialize(new { error = "no_prose", node_id = node.Id, slug = node.Slug }, CanonTools.JsonOpts);
 
         return string.Join("\n\n", prose);
+    }
+
+    [McpServerTool, Description(
+        "Read a book's beats directly, in reading order, with ids/titles/text - no --publish-md " +
+        "export round-trip required. The 'Writer' capability: browse prose without exporting first. " +
+        "Unlike print_book (plain joined text only), this returns structured per-beat rows and " +
+        "supports a from/to range.")]
+    public Task<string> ReadBeats(
+        [Description("Node Guid id or slug.")] string idOrSlug,
+        [Description("1-based position to start at (default 1).")] int? from = null,
+        [Description("1-based position to end at, inclusive (default: last beat).")] int? to = null) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(ReadBeatsImpl), new { idOrSlug, from, to });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ReadBeatsImpl(string idOrSlug, int? from, int? to)
+    {
+        var node = await ResolveNodeAsync(idOrSlug);
+        if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
+
+        var ordered = await workbench.GetOrderedBeatsAsync(node.Id);
+        var from0 = Math.Max(0, (from ?? 1) - 1);
+        var to0 = Math.Min(ordered.Count - 1, (to ?? ordered.Count) - 1);
+        var slice = from0 <= to0 ? ordered.Skip(from0).Take(to0 - from0 + 1).ToList() : [];
+
+        var payload = slice.Select((ob, i) => new
+        {
+            position = from0 + i + 1,
+            id = ob.Beat.Id,
+            title = ob.Beat.Title,
+            kind = ob.Beat.Kind,
+            text = ob.Beat.Text,
+        });
+        return JsonSerializer.Serialize(new { nodeId = node.Id, slug = node.Slug, total = ordered.Count, beats = payload }, CanonTools.JsonOpts);
     }
 
     private async Task<Node?> ResolveNodeAsync(string idOrSlug)

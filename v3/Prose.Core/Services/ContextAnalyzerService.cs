@@ -6,9 +6,9 @@ namespace Prose.Core.Services;
 public class ContextAnalyzerService
 {
     private readonly ILlmService llm;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
 
-    public ContextAnalyzerService(ILlmService llm, WorldGraphService graph)
+    public ContextAnalyzerService(ILlmService llm, UniverseGraphService graph)
     {
         this.llm = llm;
         this.graph = graph;

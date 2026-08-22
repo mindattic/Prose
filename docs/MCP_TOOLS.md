@@ -11,12 +11,13 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**275 tools** across **43 tool families.**
+**285 tools** across **46 tool families.**
 
 ## Families
 
 | Family | Tools |
 | --- | --- |
+| [Beat Archive](#beat-archive) | 1 |
 | [Beat Event List](#beat-event-list) | 3 |
 | [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
@@ -38,15 +39,17 @@
 | [Findings](#findings) | 6 |
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Glossary](#glossary) | 4 |
+| [Hub](#hub) | 3 |
+| [Ledger](#ledger) | 4 |
 | [Lore Triple](#lore-triple) | 8 |
 | [Narrative Science](#narrative-science) | 4 |
-| [Node](#node) | 38 |
+| [Node](#node) | 39 |
 | [Noun Consistency](#noun-consistency) | 3 |
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 12 |
 | [Reader Qa](#reader-qa) | 3 |
-| [Repository](#repository) | 2 |
+| [Repository](#repository) | 3 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
 | [Story](#story) | 6 |
@@ -60,6 +63,16 @@
 | [World Entity Crud](#world-entity-crud) | 5 |
 | [World Modelling](#world-modelling) | 16 |
 | [Writing](#writing) | 3 |
+
+## Beat Archive
+
+<sub>`BeatArchiveTools`</sub>
+
+### `get_beat_archive`
+
+Get the Beat Context Archive for one beat — everything that fed it, resolved as of that beat's own trace timestamp: prose, per-service coverage trace, the full LLM system/user prompt and response, the entity roster resolved to that moment's canon (including psychology/speech fields), the DCM doc list resolved to that moment's content, and the bible section active then. Use this to audit exactly what the prose engine saw and did for a specific beat, after the fact.
+
+- `beatId` (string, required) — The beat's Guid id.
 
 ## Beat Event List
 
@@ -1065,6 +1078,75 @@ Add or update one Master Glossary entry for the current universe. term is the wo
 - `definition` (string, required) — Reader-facing definition shown in the glossary.
 - `category` (string, optional) — Optional grouping category (e.g. 'Enforcement', 'Currency').
 
+## Hub
+
+<sub>`HubTools`</sub>
+
+### `graph_snapshot`
+
+Pull a graph snapshot from the Prose Hub for one universe - either the whole graph (scope='all') or just what's currently pertinent to ProseWriter right now (scope='active', the DocContextStack-driven default). Returns {nodes, edges}. Requires the Prose Hub running on http://127.0.0.1:5900.
+
+- `universe` (string, required) — Universe slug: glmz | scry | gspl.
+- `scope` (string, optional) — 'active' (default, what's pertinent right now) or 'all' (whole universe).
+- `nodeCode` (string, optional) — Node CODE (e.g. 'BCODA') to scope the 'active' set to, if applicable.
+
+### `graph_stats`
+
+Get node/edge counts for one universe's resident graph from the Prose Hub. Cheap sanity check that the Hub is up and its graph is loaded. Requires the Prose Hub running on http://127.0.0.1:5900.
+
+- `universe` (string, required) — Universe slug: glmz | scry | gspl.
+
+### `link_entities`
+
+Create a relationship edge between two entities via the Prose Hub - the generic edge-creation capability missing from RelationshipDiscoveryService's auto-link path (which only covers Character/CorpoNation/District/Faction/Weaponry/Equipment/Technology, not e.g. Transportation). Writes to the SQL Edges table and updates the Hub's resident graph immediately. Requires the Prose Hub to be running on http://127.0.0.1:5900.
+
+- `source` (string, required) — Source entity GUID.
+- `target` (string, required) — Target entity GUID.
+- `relationType` (string, required) — Relation type, e.g. 'made_by', 'owns', 'based_in'.
+- `sentiment` (string, optional) — Optional: 'positive' | 'negative' | 'neutral' (default).
+- `description` (string, optional) — Optional free-text description of the relationship.
+- `universe` (string, optional) — Optional universe slug to scope the write (glmz|scry|gspl). Uses the Hub's default if omitted.
+
+## Ledger
+
+<sub>`LedgerTools`</sub>
+
+### `command_log`
+
+Read back the Command Ledger — every CLI/MCP/cost-gated call Prose.Hub has executed, with args, exit code, duration, and error (if any). The mechanical half of the durable audit trail.
+
+- `since` (string, optional) — ISO-8601 datetime; only rows at/after this time.
+- `handler` (string, optional) — Filter to one handler class, e.g. 'BeatCli'.
+- `take` (int, optional) — Max rows to return (default 50).
+
+### `decision_log`
+
+Read back the Decision Ledger written by log_decision — structured, permanent decision/reasoning records. Query this at the start of a fresh session instead of relying on chat history to reconstruct what was decided and why.
+
+- `since` (string, optional) — ISO-8601 datetime; only rows at/after this time.
+- `sessionId` (string, optional) — Filter to one session id.
+- `take` (int, optional) — Max rows to return (default 50).
+
+### `log_decision`
+
+Write a Decision Ledger row — a durable, structured record of a higher-level decision or piece of reasoning (not a mechanical command call; those are logged automatically). Use this to make your own reasoning survive past this conversation's memory: a fresh session can query it back via decision_log.
+
+- `summary` (string, required) — One-line summary of the decision.
+- `rationale` (string, optional) — The 'why' behind it.
+- `category` (string, optional) — e.g. 'architecture', 'bugfix', 'canon-change'.
+- `sessionId` (string, optional) — This assistant's session id, if known.
+- `actor` (string, optional) — Who's recording this, e.g. 'claude-code'. Defaults to 'claude-code'.
+- `relatedCommandIds` (string, optional) — CommandLedgerEntry ids this decision grew out of, comma-separated.
+
+### `search_logs`
+
+Search the Hub's durable log history (Serilog daily files on disk, not the live in-memory tail) by time range, minimum severity, and/or free text. This is the already-existing LoggingService.Search, the same mechanism the old Codex Logging page used, now exposed through the Hub.
+
+- `since` (string, optional) — ISO-8601 datetime; only entries at/after this time. Defaults to 1 day ago.
+- `severity` (string, optional) — Minimum severity: Verbose|Debug|Information|Warning|Error|Fatal.
+- `text` (string, optional) — Free-text filter over message/exception.
+- `take` (int, optional) — Max entries to return (default 200).
+
 ## Lore Triple
 
 <sub>`LoreTripleTools`</sub>
@@ -1366,6 +1448,14 @@ Build an Audible AI-narration hand-off package for a node. Produces three files 
 Print all beats of a node as continuous prose — each beat's Text joined by a blank line. No headers, no beat numbers, no metadata. Accepts node id (GUID) or slug. Use this to read the full prose of a node in one call.
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
+
+### `read_beats`
+
+Read a book's beats directly, in reading order, with ids/titles/text - no --publish-md export round-trip required. The 'Writer' capability: browse prose without exporting first. Unlike print_book (plain joined text only), this returns structured per-beat rows and supports a from/to range.
+
+- `idOrSlug` (string, required) — Node Guid id or slug.
+- `from` (int, optional) — 1-based position to start at (default 1).
+- `to` (int, optional) — 1-based position to end at, inclusive (default: last beat).
 
 ### `rebeat_book`
 
@@ -1693,6 +1783,15 @@ Reader-Proxy QA findings-only gripe jury: a small cross-family jury full-reads t
 ## Repository
 
 <sub>`RepositoryTools`</sub>
+
+### `browse_repository`
+
+Browse entities by repository/type (built-in - character, place, faction, weapon, corponation, ... - or a custom one from create_repository) without hand-written SQL. Omit type to list every repository type present in the current universe with counts.
+
+- `type` (string, optional) — EntityType/repository slug to browse, e.g. 'character'. Omit to list types.
+- `search` (string, optional) — Optional free-text filter over Name/Description.
+- `page` (int, optional) — 1-based page number (default 1).
+- `pageSize` (int, optional) — Rows per page, 1-200 (default 25).
 
 ### `create_repository`
 

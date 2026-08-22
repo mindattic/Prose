@@ -20,15 +20,19 @@ namespace Prose.Mcp;
 public class BookLogicTools(
     NodeOutlineService outlineService,
     LogicSweepService logicSweepService,
-    IDbContextFactory<ProseDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory,
+    HubInvoker hub)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
     [McpServerTool, Description("Generate a beat-by-beat narrative outline (act-grouped) for a node. " +
         "For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/bible-agreement), " +
         "call logic_sweep instead. Accepts node id (GUID) or slug.")]
-    public async Task<string> write_outline(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> write_outline(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(BookLogicTools), nameof(write_outlineImpl), new { nodeIdOrSlug });
+
+    public async Task<string> write_outlineImpl(string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)
@@ -57,8 +61,11 @@ public class BookLogicTools(
         "NOT a replacement for the full /logic-sweep Claude Code skill on a large book (that skill splits " +
         "the book across range-scoped subagents, verifies quotes, and does a separate fix + re-verify pass). " +
         "Findings persist to the Findings table and auto-heal on re-run. Accepts node id (GUID) or slug.")]
-    public async Task<string> logic_sweep(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> logic_sweep(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(BookLogicTools), nameof(logic_sweepImpl), new { nodeIdOrSlug });
+
+    public async Task<string> logic_sweepImpl(string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)
@@ -98,10 +105,16 @@ public class BookLogicTools(
         "made) or converged=true (2 consecutive clean rounds reached) or hit_safety_cap=true (8 rounds without " +
         "converging — filed as its own finding; the book likely needs a structural rewrite, not another fix pass). " +
         "Accepts node id (GUID) or slug.")]
-    public async Task<string> logic_sweep_until_dry(
+    public Task<string> logic_sweep_until_dry(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Consecutive clean rounds required to call it converged. Default 2.")] int requiredDryRounds = LogicSweepService.DefaultRequiredDryRounds,
-        [Description("Safety cap on total rounds before escalating 'not converging' as its own finding. Default 8.")] int maxTotalRounds = LogicSweepService.DefaultMaxTotalRounds)
+        [Description("Safety cap on total rounds before escalating 'not converging' as its own finding. Default 8.")] int maxTotalRounds = LogicSweepService.DefaultMaxTotalRounds) =>
+        hub.InvokeAsync(nameof(BookLogicTools), nameof(logic_sweep_until_dryImpl), new { nodeIdOrSlug, requiredDryRounds, maxTotalRounds });
+
+    public async Task<string> logic_sweep_until_dryImpl(
+        string nodeIdOrSlug,
+        int requiredDryRounds = LogicSweepService.DefaultRequiredDryRounds,
+        int maxTotalRounds = LogicSweepService.DefaultMaxTotalRounds)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)

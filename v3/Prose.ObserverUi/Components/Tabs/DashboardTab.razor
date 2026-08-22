@@ -1,0 +1,127 @@
+@implements IAsyncDisposable
+
+<div class="p-4 dashboard-tab">
+    <h4>Dashboard</h4>
+
+    <div class="dash-card">
+        <h6>Live Write Status</h6>
+        @if (currentRun != null)
+        {
+            <p>
+                Writing <strong>@currentRun.NodeSlug</strong> — beat @beatCount so far,
+                started @currentRun.StartedAt.ToLocalTime().ToString("HH:mm:ss")
+                @if (lastBeatTitle != null)
+                {
+                    <text> — latest: <em>@lastBeatTitle</em></text>
+                }
+            </p>
+        }
+        else
+        {
+            <p class="muted">No write in progress.</p>
+        }
+    </div>
+
+    <div class="dash-grid">
+        <div class="dash-card">
+            <div class="dash-card-head">
+                <h6>Recent Commands</h6>
+                <button class="btn" @onclick="RefreshAsync">Refresh</button>
+            </div>
+            @if (commands.Count == 0)
+            {
+                <p class="muted">Nothing yet.</p>
+            }
+            else
+            {
+                @foreach (var c in commands)
+                {
+                    <div class="feed-row @(c.Success ? "" : "feed-fail")">
+                        <span class="feed-time">@c.At.ToLocalTime().ToString("HH:mm:ss")</span>
+                        <span class="feed-src">@c.Source</span>
+                        <span class="feed-name">@c.HandlerClass</span>
+                        <span class="feed-dur">@c.DurationMs.ToString("F0")ms</span>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="dash-card">
+            <div class="dash-card-head">
+                <h6>Recent Decisions</h6>
+            </div>
+            @if (decisions.Count == 0)
+            {
+                <p class="muted">Nothing yet.</p>
+            }
+            else
+            {
+                @foreach (var d in decisions)
+                {
+                    <div class="feed-row">
+                        <span class="feed-time">@d.At.ToLocalTime().ToString("HH:mm:ss")</span>
+                        <span class="feed-name">@d.Summary</span>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Inject] private HubApiClient hub { get; set; } = default!;
+    [Inject] private ObserverHttpClient api { get; set; } = default!;
+
+    private DcmRunDto? currentRun;
+    private int beatCount;
+    private string? lastBeatTitle;
+
+    private List<CommandLedgerDto> commands = [];
+    private List<DecisionLedgerDto> decisions = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        hub.DcmRunStarted += OnRunStarted;
+        hub.DcmBeat += OnBeat;
+        hub.DcmRunEnded += OnRunEnded;
+        await hub.EnsureStartedAsync();
+        await RefreshAsync();
+    }
+
+    private async Task RefreshAsync()
+    {
+        commands = await api.GetCommandLogAsync(20);
+        decisions = await api.GetDecisionLogAsync(20);
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private void OnRunStarted(DcmRunDto run)
+    {
+        currentRun = run;
+        beatCount = 0;
+        lastBeatTitle = null;
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void OnBeat(DcmBeatDto beat)
+    {
+        if (currentRun == null || beat.RunId != currentRun.RunId) return;
+        beatCount++;
+        lastBeatTitle = beat.BeatTitle;
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void OnRunEnded(DcmRunDto run)
+    {
+        if (currentRun != null && run.RunId == currentRun.RunId) currentRun = null;
+        InvokeAsync(StateHasChanged);
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        hub.DcmRunStarted -= OnRunStarted;
+        hub.DcmBeat -= OnBeat;
+        hub.DcmRunEnded -= OnRunEnded;
+        return ValueTask.CompletedTask;
+    }
+}

@@ -12,7 +12,7 @@ namespace Prose.Mcp;
 // session can run and repair the audit without shelling out.
 
 [McpServerToolType]
-public class SwainTools(SwainAuditService swain)
+public class SwainTools(SwainAuditService swain, HubInvoker hub)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
@@ -20,9 +20,14 @@ public class SwainTools(SwainAuditService swain)
 
     /// <summary>Classify every enabled beat in a book against Dwight Swain's Scene/Sequel doctrine. Scene = Goal→Conflict→Disaster; Sequel = Reaction→Dilemma→Decision. Ambiguous (one element weak) = MODERATE; Deficient (pattern not executed) = BLOCKER.</summary>
     [McpServerTool, Description("Classify every enabled beat in a book against Dwight Swain's Scene/Sequel doctrine via a Haiku pass. Scene (Goal→Conflict→Disaster) and Sequel (Reaction→Dilemma→Decision) both pass; Ambiguous (one element weak/underwritten) is MODERATE; Deficient (neither pattern executes) is BLOCKER. Returns per-beat classification plus book-level pass/MODERATE/BLOCKER counts and compliance rate. Accepts node id (GUID) or slug/NodeCode.")]
-    public async Task<string> swain_audit(
+    public Task<string> swain_audit(
         [Description("Book node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug,
-        [Description("Set true to use Opus instead of Haiku for classification (stubborn/ambiguous beats).")] bool useOpus = false)
+        [Description("Set true to use Opus instead of Haiku for classification (stubborn/ambiguous beats).")] bool useOpus = false) =>
+        hub.InvokeAsync(nameof(SwainTools), nameof(swain_auditImpl), new { nodeIdOrSlug, useOpus });
+
+    public async Task<string> swain_auditImpl(
+        string nodeIdOrSlug,
+        bool useOpus = false)
     {
         try
         {
@@ -60,8 +65,11 @@ public class SwainTools(SwainAuditService swain)
 
     /// <summary>Run the Swain Scene/Sequel audit across every book node. Returns a per-book summary table plus corpus totals — use this to find which books have BLOCKER findings before drilling into swain_audit on any single one.</summary>
     [McpServerTool, Description("Run the Swain Scene/Sequel doctrine audit across every book node in the current universe scope. Returns a per-book summary (beat count, pass/MODERATE/BLOCKER counts, compliance rate) plus corpus-wide totals. Use this first to see which books need attention before calling swain_audit on a specific one.")]
-    public async Task<string> swain_audit_all(
-        [Description("Set true to use Opus instead of Haiku for classification (slower, costlier, more accurate on stubborn beats).")] bool useOpus = false)
+    public Task<string> swain_audit_all(
+        [Description("Set true to use Opus instead of Haiku for classification (slower, costlier, more accurate on stubborn beats).")] bool useOpus = false) =>
+        hub.InvokeAsync(nameof(SwainTools), nameof(swain_audit_allImpl), new { useOpus });
+
+    public async Task<string> swain_audit_allImpl(bool useOpus = false)
     {
         var model = useOpus ? "claude-opus-4-8" : null;
         var reports = await swain.AuditAllAsync(model);
@@ -93,10 +101,16 @@ public class SwainTools(SwainAuditService swain)
 
     /// <summary>Auto-splice the missing structural element into every BLOCKER beat in a book (or one specific beat). Re-audits first, then for each BLOCKER: loads the beat text, asks Sonnet (or Opus) to add ONLY the missing element at the most natural point, and applies the splice via the workbench.</summary>
     [McpServerTool, Description("Repair Swain BLOCKER findings in a book by auto-splicing the missing structural element (disaster turn, decision, etc.) into each deficient beat. Re-runs the audit first, then for each BLOCKER (or just beatId if given): loads the beat's current text, asks an LLM to add ONLY the missing element without rewriting existing sentences, and applies the result via the workbench. Returns per-beat repair outcomes. Accepts node id (GUID) or slug/NodeCode.")]
-    public async Task<string> swain_repair(
+    public Task<string> swain_repair(
         [Description("Book node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug,
         [Description("Only repair this specific beat id (GUID), if given — otherwise every BLOCKER in the book.")] string? beatId = null,
-        [Description("Set true to use Opus instead of Sonnet for the splice (stubborn beats that resist a Sonnet pass).")] bool useOpus = false)
+        [Description("Set true to use Opus instead of Sonnet for the splice (stubborn beats that resist a Sonnet pass).")] bool useOpus = false) =>
+        hub.InvokeAsync(nameof(SwainTools), nameof(swain_repairImpl), new { nodeIdOrSlug, beatId, useOpus });
+
+    public async Task<string> swain_repairImpl(
+        string nodeIdOrSlug,
+        string? beatId = null,
+        bool useOpus = false)
     {
         SwainAuditReport report;
         try { report = await swain.AuditAsync(nodeIdOrSlug); }

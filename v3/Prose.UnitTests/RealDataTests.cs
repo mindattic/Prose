@@ -273,7 +273,7 @@ public class RealDataTests
     public void WorldGraph_LoadsFromRealData()
     {
         var db = BuildDatabaseService();
-        var graph = new WorldGraphService(paths, db);
+        var graph = new UniverseGraphService(paths, db);
         graph.EnsureLoaded();
 
         Assert.That(graph.NodeCount, Is.GreaterThan(500), "Graph should have 500+ nodes");
@@ -283,10 +283,10 @@ public class RealDataTests
     [Test]
     public void WorldGraph_Slugify_Consistent()
     {
-        Assert.That(WorldGraphService.Slugify("Kyle"), Is.EqualTo("kyle"));
-        Assert.That(WorldGraphService.Slugify("The Shelf"), Is.EqualTo("the-shelf"));
-        Assert.That(WorldGraphService.Slugify("Mrs. Chen"), Is.EqualTo("mrs-chen"));
-        Assert.That(WorldGraphService.Slugify("Axiom Industries"), Is.EqualTo("axiom-industries"));
+        Assert.That(UniverseGraphService.Slugify("Kyle"), Is.EqualTo("kyle"));
+        Assert.That(UniverseGraphService.Slugify("The Shelf"), Is.EqualTo("the-shelf"));
+        Assert.That(UniverseGraphService.Slugify("Mrs. Chen"), Is.EqualTo("mrs-chen"));
+        Assert.That(UniverseGraphService.Slugify("Axiom Industries"), Is.EqualTo("axiom-industries"));
     }
 
     // ── SEMANTIC INDEX ───────────────────────────────────────
@@ -296,7 +296,7 @@ public class RealDataTests
     public void SemanticIndex_BuildsFromRealGraph()
     {
         var db = BuildDatabaseService();
-        var graph = new WorldGraphService(paths, db);
+        var graph = new UniverseGraphService(paths, db);
         graph.EnsureLoaded();
 
         var idx = new SemanticIndexService(graph);

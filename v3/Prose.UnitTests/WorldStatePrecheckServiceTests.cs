@@ -6,7 +6,7 @@ namespace Prose.UnitTests;
 /// <summary>
 /// Baseline behavior coverage for <see cref="WorldStatePrecheckService.CheckLocationConsistency"/>,
 /// added 2026-08-09 while investigating whether it needed a fix for the same
-/// narrative-vs-clean-place-name issue found in WorldGraphService.BuildCharacters() (94% of
+/// narrative-vs-clean-place-name issue found in UniverseGraphService.BuildCharacters() (94% of
 /// live <c>dossier.Now.Location</c> values are a full "home turf" description, not a clean
 /// place name). Confirmed the existing Contains-based substring match already handles this
 /// correctly — it succeeds whenever the scene location appears ANYWHERE in the narrative text,

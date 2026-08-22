@@ -41,12 +41,12 @@ public class DataIntegrityToolsRegistrationTests
         }
         catch (Exception ex) when (SqlAvailability.IsUnavailable(ex))
         {
-            // DataIntegrityTools depends on WorldGraphService, whose DI factory eagerly calls
+            // DataIntegrityTools depends on UniverseGraphService, whose DI factory eagerly calls
             // EnsureLoaded()/Rebuild() at construction time — resolving it touches the SQL Server
             // DB immediately, before any of DataIntegrityTools' own methods are ever called.
             // Confirmed live 2026-08-09: this test passed against every dev machine (LocalDB
             // installed) but failed the first time it ran on a genuine CI runner with no SQL
-            // Server at all — same gap as InterfaceRegistrationTests.DI_RegistersIWorldGraphService,
+            // Server at all — same gap as InterfaceRegistrationTests.DI_RegistersIUniverseGraphService,
             // fixed in the same commit. Test environments without LocalDB skip cleanly; the wiring
             // this test actually cares about (does the constructor dependency graph resolve at
             // all) is verified by reaching the DB call in the first place.

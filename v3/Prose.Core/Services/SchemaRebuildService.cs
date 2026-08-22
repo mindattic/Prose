@@ -79,8 +79,11 @@ public class SchemaRebuildService
         await using var _ = conn;
 
         var snapshot = await ReadTableMetadataAsync(conn, tableName, ct);
+        // Path.GetDirectoryName returns "" (not null) for a bare filename with no directory
+        // component (e.g. --out foo.sql) - Directory.CreateDirectory("") throws, so that case
+        // must resolve to the current directory instead.
         var dir = outPath != null
-            ? Path.GetDirectoryName(outPath)!
+            ? (Path.GetDirectoryName(outPath) is { Length: > 0 } d ? d : ".")
             : Path.Combine(paths.EngineDataDir, "schema-snapshots");
         Directory.CreateDirectory(dir);
         var path = outPath ?? Path.Combine(dir, $"{tableName}-{DateTime.Now:yyyyMMdd-HHmmss}.sql");

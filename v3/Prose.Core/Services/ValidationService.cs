@@ -13,12 +13,12 @@ namespace Prose.Core.Services;
 /// </summary>
 public class ValidationService
 {
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly ILlmService llm;
     private readonly MultiLlmService multiLlm;
     private readonly ILogger<ValidationService> log;
 
-    public ValidationService(WorldGraphService graph, ILlmService llm, MultiLlmService multiLlm, ILogger<ValidationService> log)
+    public ValidationService(UniverseGraphService graph, ILlmService llm, MultiLlmService multiLlm, ILogger<ValidationService> log)
     {
         this.graph = graph;
         this.llm = llm;

@@ -348,7 +348,7 @@ public static class SyntheticMapper
         var e = db.Entities.AsNoTracking()
             .FirstOrDefault(x => x.Name == alias);
         if (e != null) return e.Id;
-        var slug = Prose.Core.Services.WorldGraphService.Slugify(alias);
+        var slug = Prose.Core.Services.UniverseGraphService.Slugify(alias);
         e = db.Entities.AsNoTracking()
             .FirstOrDefault(x => x.Slug == slug);
         return e?.Id;

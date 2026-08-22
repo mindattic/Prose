@@ -6,9 +6,9 @@ public class TextAnalysisService
 {
     private readonly ILlmService llm;
     private readonly LoreService canon;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
 
-    public TextAnalysisService(ILlmService llm, LoreService canon, WorldGraphService graph)
+    public TextAnalysisService(ILlmService llm, LoreService canon, UniverseGraphService graph)
     {
         this.llm = llm;
         this.canon = canon;

@@ -16,12 +16,14 @@ public class FindingsTools
     private readonly FindingsService store;
     private readonly FindingApplyService apply;
     private readonly ContinuousQualityService monitor;
+    private readonly HubInvoker hub;
 
-    public FindingsTools(FindingsService store, FindingApplyService apply, ContinuousQualityService monitor)
+    public FindingsTools(FindingsService store, FindingApplyService apply, ContinuousQualityService monitor, HubInvoker hub)
     {
         this.store   = store;
         this.apply   = apply;
         this.monitor = monitor;
+        this.hub     = hub;
     }
 
     /// <summary>
@@ -33,11 +35,17 @@ public class FindingsTools
         "List findings from the autonomous quality inbox. ContinuousQualityService " +
         "auto-detects contradictions and clichés on every chapter save; results land " +
         "here for triage. Sorted high-severity-first.")]
-    public string ListFindings(
+    public Task<string> ListFindings(
         [Description("Filter by status: New, Triaged, Applied, Dismissed. Omit for all.")]
             string? status = null,
         [Description("Max number of findings to return. Default 100.")]
-            int limit = 100)
+            int limit = 100) =>
+        hub.InvokeAsync(nameof(FindingsTools), nameof(ListFindingsImpl), new { status, limit });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string ListFindingsImpl(
+        string? status = null,
+        int limit = 100)
     {
         FindingStatus? filter = null;
         if (!string.IsNullOrWhiteSpace(status)
@@ -67,7 +75,11 @@ public class FindingsTools
 
     /// <summary>Counts of findings per status (new / triaged / applied / dismissed).</summary>
     [McpServerTool, Description("Counts of findings per status (new / triaged / applied / dismissed).")]
-    public string FindingsStats() => JsonSerializer.Serialize(new
+    public Task<string> FindingsStats() =>
+        hub.InvokeAsync(nameof(FindingsTools), nameof(FindingsStatsImpl));
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string FindingsStatsImpl() => JsonSerializer.Serialize(new
     {
         @new      = store.CountByStatus(FindingStatus.New),
         triaged   = store.CountByStatus(FindingStatus.Triaged),
@@ -88,8 +100,13 @@ public class FindingsTools
         "engine/data/archives/findings/, and marks the finding Applied. Returns " +
         "the outcome: Applied, SnippetNotFound (LLM paraphrased — edit manually), " +
         "NoSuggestedFix, NoSnippet, FileMissing, or Failed.")]
-    public async Task<string> ApplyFinding(
-        [Description("Finding id from list_findings.")] long id)
+    public Task<string> ApplyFinding(
+        [Description("Finding id from list_findings.")] long id) =>
+        hub.InvokeAsync(nameof(FindingsTools), nameof(ApplyFindingImpl), new { id });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ApplyFindingImpl(
+        long id)
     {
         var result = await apply.ApplyAsync(id);
         return JsonSerializer.Serialize(new
@@ -102,9 +119,15 @@ public class FindingsTools
 
     /// <summary>Mark a finding triaged / applied / dismissed without writing to source files.</summary>
     [McpServerTool, Description("Mark a finding triaged / applied / dismissed without writing to source files.")]
-    public string SetFindingStatus(
+    public Task<string> SetFindingStatus(
         [Description("Finding id.")] long id,
-        [Description("Target status: Triaged, Applied, or Dismissed.")] string status)
+        [Description("Target status: Triaged, Applied, or Dismissed.")] string status) =>
+        hub.InvokeAsync(nameof(FindingsTools), nameof(SetFindingStatusImpl), new { id, status });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string SetFindingStatusImpl(
+        long id,
+        string status)
     {
         if (!Enum.TryParse<FindingStatus>(status, ignoreCase: true, out var s))
             return JsonSerializer.Serialize(new { error = $"unknown status: {status}" });
@@ -122,11 +145,17 @@ public class FindingsTools
         "Dismiss every open finding matching a category and/or summary-prefix filter. " +
         "At least one filter is required. Use to clear a backlog of many similar findings " +
         "(e.g. an old per-beat sweep) instead of dismissing them one at a time.")]
-    public async Task<string> BulkDismissFindings(
+    public Task<string> BulkDismissFindings(
         [Description("FindingCategory to match, e.g. StructuralFailure. Omit to match any category.")]
             string? category = null,
         [Description("Summary text prefix to match, e.g. \"SWAIN \". Omit to match any summary.")]
-            string? summaryPrefix = null)
+            string? summaryPrefix = null) =>
+        hub.InvokeAsync(nameof(FindingsTools), nameof(BulkDismissFindingsImpl), new { category, summaryPrefix });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> BulkDismissFindingsImpl(
+        string? category = null,
+        string? summaryPrefix = null)
     {
         FindingCategory? cat = null;
         if (!string.IsNullOrWhiteSpace(category))
@@ -151,8 +180,13 @@ public class FindingsTools
         "Manually trigger a quality scan (contradiction + cliché) on a single " +
         "chapter file. Normally the autonomous monitor runs this on every save; " +
         "use this for ad-hoc rescans without modifying the file.")]
-    public async Task<string> ScanChapterQuality(
-        [Description("Absolute path to a chapter.json file.")] string filePath)
+    public Task<string> ScanChapterQuality(
+        [Description("Absolute path to a chapter.json file.")] string filePath) =>
+        hub.InvokeAsync(nameof(FindingsTools), nameof(ScanChapterQualityImpl), new { filePath });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ScanChapterQualityImpl(
+        string filePath)
     {
         if (!File.Exists(filePath))
             return JsonSerializer.Serialize(new { error = "file_not_found", filePath });

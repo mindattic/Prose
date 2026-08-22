@@ -139,7 +139,7 @@ public class SubsidiaryRelationalParityTests
                 Id         = id,
                 EntityType = "subsidiary",
                 Name       = src.Name,
-                Slug       = WorldGraphService.Slugify(src.Name),
+                Slug       = UniverseGraphService.Slugify(src.Name),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,

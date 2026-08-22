@@ -12,7 +12,7 @@ namespace Prose.Core.Services;
 /// state as hard constraints — preventing continuity errors at generation time
 /// rather than catching them after.
 ///
-/// This is the STORY model, separate from the WORLD model (WorldGraphService).
+/// This is the STORY model, separate from the WORLD model (UniverseGraphService).
 /// The world model says "Kyle carries a katana." The story state says
 /// "Kyle set the katana down on Mrs. Chen's counter in paragraph 3."
 ///

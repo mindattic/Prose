@@ -29,24 +29,27 @@ public class CoreEntityCrudTools
     private readonly FactionRepository factions;
     private readonly CorponationRepository corponations;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly HubInvoker hub;
 
     public CoreEntityCrudTools(
         CharacterRepository characters,
         DistrictRepository places,
         FactionRepository factions,
         CorponationRepository corponations,
-        IDbContextFactory<ProseDbContext> dbFactory)
+        IDbContextFactory<ProseDbContext> dbFactory,
+        HubInvoker hub)
     {
         this.characters = characters;
         this.places = places;
         this.factions = factions;
         this.corponations = corponations;
         this.dbFactory = dbFactory;
+        this.hub = hub;
     }
 
     /// <summary>Create or update a character record. Pass empty id to create new; pass an existing id to update (upsert).</summary>
     [McpServerTool, Description("Create or update a character in canon. Pass empty id to create new; pass an existing id to update. List fields (tags, story_hooks, aliases) are comma-delimited strings. Complex fields (psychology_json, speech_patterns_json, physical_description_json) accept optional JSON — omit to keep defaults.")]
-    public string CreateCharacter(
+    public Task<string> CreateCharacter(
         [Description("Character's full name. Required.")] string name,
         [Description("Role or function in the world (e.g. 'street samurai', 'fixer', 'cleanup contractor').")] string role = "",
         [Description("Prose description of who this character is.")] string description = "",
@@ -65,7 +68,35 @@ public class CoreEntityCrudTools
         [Description("Optional JSON for speech_patterns: {vocabulary, cadence, verbal_tics, example_lines, subtext}.")] string speechPatternsJson = "",
         [Description("Optional JSON for physical_description: {heritage, height_cm, weight_kg, build, hair_color, eye_color, distinguishing_marks}.")] string physicalDescriptionJson = "",
         [Description("Optional existing character id (32-char hex or full UUID) to update.")] string id = "",
-        [Description("Optional book/series node slug this character belongs to (Entity.OriginNodeId). Pass this when seeding a book's cast — it lets a genuinely different character elsewhere reuse a common name (e.g. two unrelated books each with a 'Marcus') instead of being refused as a duplicate.")] string originNodeSlug = "")
+        [Description("Optional book/series node slug this character belongs to (Entity.OriginNodeId). Pass this when seeding a book's cast — it lets a genuinely different character elsewhere reuse a common name (e.g. two unrelated books each with a 'Marcus') instead of being refused as a duplicate.")] string originNodeSlug = "") =>
+        hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(CreateCharacterImpl), new
+        {
+            name, role, description, species, gender, pronouns, age, status, location, affiliation,
+            augmentations, narrativeFunction, tags, storyHooks, psychologyJson, speechPatternsJson,
+            physicalDescriptionJson, id, originNodeSlug,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateCharacterImpl(
+        string name,
+        string role = "",
+        string description = "",
+        string species = "human",
+        string gender = "",
+        string pronouns = "",
+        int age = 0,
+        string status = "alive",
+        string location = "",
+        string affiliation = "",
+        string augmentations = "",
+        string narrativeFunction = "",
+        string tags = "",
+        string storyHooks = "",
+        string psychologyJson = "",
+        string speechPatternsJson = "",
+        string physicalDescriptionJson = "",
+        string id = "",
+        string originNodeSlug = "")
     {
         Guid? resolvedOrigin = null;
         if (!string.IsNullOrWhiteSpace(originNodeSlug))
@@ -197,9 +228,13 @@ public class CoreEntityCrudTools
     /// create_* collision guards use to tell apart two different entities that happen to share
     /// a name in different books. Pass an empty originNodeSlug to clear it back to universe-wide.</summary>
     [McpServerTool, Description("Set which book/series node an existing entity belongs to (Entity.OriginNodeId), so a same-named entity in a different book is recognized as genuinely different rather than blocked as a duplicate. Pass empty originNodeSlug to clear back to universe-wide.")]
-    public string SetEntityOrigin(
+    public Task<string> SetEntityOrigin(
         [Description("Existing entity id (32-char hex or full UUID).")] string id,
-        [Description("Book/series node slug to scope this entity to. Empty clears it (universe-wide/shared).")] string originNodeSlug = "")
+        [Description("Book/series node slug to scope this entity to. Empty clears it (universe-wide/shared).")] string originNodeSlug = "") =>
+        hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(SetEntityOriginImpl), new { id, originNodeSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string SetEntityOriginImpl(string id, string originNodeSlug = "")
     {
         if (!Guid.TryParse(id, out var entityId))
             return JsonSerializer.Serialize(new { ok = false, error = "invalid_id" }, CanonTools.JsonOpts);
@@ -226,7 +261,7 @@ public class CoreEntityCrudTools
 
     /// <summary>Create or update a place / district record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a place / district in canon. Pass empty id to create new; pass an existing id to update. List fields are comma-delimited strings.")]
-    public string CreatePlace(
+    public Task<string> CreatePlace(
         [Description("Place name. Required.")] string name,
         [Description("Type of place (e.g. 'district', 'building', 'landmark', 'corridor', 'station').")] string type = "place",
         [Description("Prose description of the place.")] string description = "",
@@ -236,7 +271,24 @@ public class CoreEntityCrudTools
         [Description("Comma-separated dangers present in this place.")] string dangers = "",
         [Description("Comma-separated story hooks.")] string storyHooks = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing place id to update.")] string id = "")
+        [Description("Optional existing place id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(CreatePlaceImpl), new
+        {
+            name, type, description, demographics, economy, powerStructure, dangers, storyHooks, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreatePlaceImpl(
+        string name,
+        string type = "place",
+        string description = "",
+        string demographics = "",
+        string economy = "",
+        string powerStructure = "",
+        string dangers = "",
+        string storyHooks = "",
+        string tags = "",
+        string id = "")
     {
         var p = string.IsNullOrEmpty(id)
             ? new DistrictData()
@@ -261,7 +313,7 @@ public class CoreEntityCrudTools
 
     /// <summary>Create or update a faction record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a faction (street gang, syndicate, cell, advocacy group, etc.) in canon. Pass empty id to create new; pass an existing id to update. List fields are comma-delimited strings.")]
-    public string CreateFaction(
+    public Task<string> CreateFaction(
         [Description("Faction name. Required.")] string name,
         [Description("Faction motto or slogan.")] string motto = "",
         [Description("Prose description.")] string description = "",
@@ -273,7 +325,27 @@ public class CoreEntityCrudTools
         [Description("Comma-separated goals.")] string goals = "",
         [Description("Comma-separated story hooks.")] string storyHooks = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing faction id to update.")] string id = "")
+        [Description("Optional existing faction id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(CreateFactionImpl), new
+        {
+            name, motto, description, ideology, territory, leadership, narrativeFunction, methods, goals,
+            storyHooks, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateFactionImpl(
+        string name,
+        string motto = "",
+        string description = "",
+        string ideology = "",
+        string territory = "",
+        string leadership = "",
+        string narrativeFunction = "",
+        string methods = "",
+        string goals = "",
+        string storyHooks = "",
+        string tags = "",
+        string id = "")
     {
         var f = string.IsNullOrEmpty(id)
             ? new FactionData()
@@ -301,7 +373,7 @@ public class CoreEntityCrudTools
 
     /// <summary>Create or update a CorpoNation record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a CorpoNation (corporate sovereign entity) in canon. Pass empty id to create new; pass an existing id to update.")]
-    public string CreateCorponation(
+    public Task<string> CreateCorponation(
         [Description("CorpoNation name. Required.")] string name,
         [Description("Full legal corporate name.")] string fullLegalName = "",
         [Description("Industry sector.")] string sector = "",
@@ -312,7 +384,26 @@ public class CoreEntityCrudTools
         [Description("Key distinguishing detail about this corp.")] string keyDetail = "",
         [Description("Full prose text describing the CorpoNation.")] string fullText = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing CorpoNation id to update.")] string id = "")
+        [Description("Optional existing CorpoNation id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(CreateCorponationImpl), new
+        {
+            name, fullLegalName, sector, sovereignTerritory, stockDesignation, foundingStory, securityForce,
+            keyDetail, fullText, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateCorponationImpl(
+        string name,
+        string fullLegalName = "",
+        string sector = "",
+        string sovereignTerritory = "",
+        string stockDesignation = "",
+        string foundingStory = "",
+        string securityForce = "",
+        string keyDetail = "",
+        string fullText = "",
+        string tags = "",
+        string id = "")
     {
         var corp = string.IsNullOrEmpty(id)
             ? new CorponationData()
@@ -349,6 +440,7 @@ public class GearEntityCrudTools
     private readonly ApparelRepository apparel;
     private readonly PharmaceuticalRepository pharmaceuticals;
     private readonly AmmunitionRepository ammunition;
+    private readonly HubInvoker hub;
 
     public GearEntityCrudTools(
         WeaponryRepository weapons,
@@ -357,7 +449,8 @@ public class GearEntityCrudTools
         TechnologyRepository technology,
         ApparelRepository apparel,
         PharmaceuticalRepository pharmaceuticals,
-        AmmunitionRepository ammunition)
+        AmmunitionRepository ammunition,
+        HubInvoker hub)
     {
         this.weapons = weapons;
         this.cyberware = cyberware;
@@ -366,11 +459,12 @@ public class GearEntityCrudTools
         this.apparel = apparel;
         this.pharmaceuticals = pharmaceuticals;
         this.ammunition = ammunition;
+        this.hub = hub;
     }
 
     /// <summary>Create or update a weapon record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a weapon in canon. Pass empty id to create new; pass an existing id to update. List fields are comma-delimited strings.")]
-    public string CreateWeapon(
+    public Task<string> CreateWeapon(
         [Description("Weapon name. Required.")] string name,
         [Description("Category (e.g. 'melee', 'pistol', 'shotgun', 'rifle', 'explosive', 'launcher').")] string category = "",
         [Description("Prose description of the weapon.")] string description = "",
@@ -383,7 +477,28 @@ public class GearEntityCrudTools
         [Description("Comma-separated ammunition types this weapon accepts.")] string ammunitionTypes = "",
         [Description("Comma-separated story hooks.")] string storyHooks = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing weapon id to update.")] string id = "")
+        [Description("Optional existing weapon id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(GearEntityCrudTools), nameof(CreateWeaponImpl), new
+        {
+            name, category, description, manufacturer, tierAvailability, legality, specifications,
+            tacticalUse, culturalContext, ammunitionTypes, storyHooks, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateWeaponImpl(
+        string name,
+        string category = "",
+        string description = "",
+        string manufacturer = "",
+        string tierAvailability = "",
+        string legality = "",
+        string specifications = "",
+        string tacticalUse = "",
+        string culturalContext = "",
+        string ammunitionTypes = "",
+        string storyHooks = "",
+        string tags = "",
+        string id = "")
     {
         var w = string.IsNullOrEmpty(id)
             ? new WeaponryData()
@@ -411,7 +526,7 @@ public class GearEntityCrudTools
 
     /// <summary>Create or update a cyberware record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a cyberware implant in canon. Pass empty id to create new; pass an existing id to update. List fields are comma-delimited strings.")]
-    public string CreateCyberware(
+    public Task<string> CreateCyberware(
         [Description("Cyberware name. Required.")] string name,
         [Description("Brand name.")] string brandName = "",
         [Description("Product model name.")] string productName = "",
@@ -428,7 +543,33 @@ public class GearEntityCrudTools
         [Description("Comma-separated side effects.")] string sideEffects = "",
         [Description("Comma-separated story hooks.")] string storyHooks = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing cyberware id to update.")] string id = "")
+        [Description("Optional existing cyberware id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(GearEntityCrudTools), nameof(CreateCyberwareImpl), new
+        {
+            name, brandName, productName, category, bodyLocation, description, manufacturer,
+            tierAvailability, legality, installationRequirements, specifications, streetPrice,
+            culturalContext, sideEffects, storyHooks, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateCyberwareImpl(
+        string name,
+        string brandName = "",
+        string productName = "",
+        string category = "",
+        string bodyLocation = "",
+        string description = "",
+        string manufacturer = "",
+        string tierAvailability = "",
+        string legality = "",
+        string installationRequirements = "",
+        string specifications = "",
+        string streetPrice = "",
+        string culturalContext = "",
+        string sideEffects = "",
+        string storyHooks = "",
+        string tags = "",
+        string id = "")
     {
         var cw = string.IsNullOrEmpty(id)
             ? new CyberwareData()
@@ -460,7 +601,7 @@ public class GearEntityCrudTools
 
     /// <summary>Create or update an equipment record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a piece of equipment (gear, tools, devices, accessories) in canon. Pass empty id to create new; pass an existing id to update.")]
-    public string CreateEquipment(
+    public Task<string> CreateEquipment(
         [Description("Equipment name. Required.")] string name,
         [Description("Brand name.")] string brandName = "",
         [Description("Product model name.")] string productName = "",
@@ -469,7 +610,23 @@ public class GearEntityCrudTools
         [Description("Manufacturer name.")] string manufacturer = "",
         [Description("Tier availability.")] string tierAvailability = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing equipment id to update.")] string id = "")
+        [Description("Optional existing equipment id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(GearEntityCrudTools), nameof(CreateEquipmentImpl), new
+        {
+            name, brandName, productName, category, description, manufacturer, tierAvailability, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateEquipmentImpl(
+        string name,
+        string brandName = "",
+        string productName = "",
+        string category = "",
+        string description = "",
+        string manufacturer = "",
+        string tierAvailability = "",
+        string tags = "",
+        string id = "")
     {
         var eq = string.IsNullOrEmpty(id)
             ? new EquipmentData()
@@ -491,7 +648,7 @@ public class GearEntityCrudTools
 
     /// <summary>Create or update a technology record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a technology entry (software, protocols, networks, systems) in canon. Pass empty id to create new; pass an existing id to update.")]
-    public string CreateTechnology(
+    public Task<string> CreateTechnology(
         [Description("Technology name. Required.")] string name,
         [Description("Brand name.")] string brandName = "",
         [Description("Product model name.")] string productName = "",
@@ -501,7 +658,25 @@ public class GearEntityCrudTools
         [Description("Tier availability.")] string tierAvailability = "",
         [Description("Comma-separated story hooks.")] string storyHooks = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing technology id to update.")] string id = "")
+        [Description("Optional existing technology id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(GearEntityCrudTools), nameof(CreateTechnologyImpl), new
+        {
+            name, brandName, productName, subcategory, description, developers, tierAvailability,
+            storyHooks, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateTechnologyImpl(
+        string name,
+        string brandName = "",
+        string productName = "",
+        string subcategory = "",
+        string description = "",
+        string developers = "",
+        string tierAvailability = "",
+        string storyHooks = "",
+        string tags = "",
+        string id = "")
     {
         var tech = string.IsNullOrEmpty(id)
             ? new TechnologyData()
@@ -526,13 +701,26 @@ public class GearEntityCrudTools
 
     /// <summary>Create or update an apparel record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update an apparel item (clothing, armor, accessories) in canon. Pass empty id to create new; pass an existing id to update.")]
-    public string CreateApparel(
+    public Task<string> CreateApparel(
         [Description("Apparel name. Required.")] string name,
         [Description("Category (e.g. 'outerwear', 'armor', 'footwear', 'accessories').")] string category = "",
         [Description("Prose description.")] string description = "",
         [Description("Manufacturer name.")] string manufacturer = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing apparel id to update.")] string id = "")
+        [Description("Optional existing apparel id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(GearEntityCrudTools), nameof(CreateApparelImpl), new
+        {
+            name, category, description, manufacturer, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateApparelImpl(
+        string name,
+        string category = "",
+        string description = "",
+        string manufacturer = "",
+        string tags = "",
+        string id = "")
     {
         var ap = string.IsNullOrEmpty(id)
             ? new ApparelData()
@@ -551,13 +739,26 @@ public class GearEntityCrudTools
 
     /// <summary>Create or update a pharmaceutical record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a pharmaceutical (drug, stim, pain modulator, neuro-pharma) in canon. Pass empty id to create new; pass an existing id to update.")]
-    public string CreatePharmaceutical(
+    public Task<string> CreatePharmaceutical(
         [Description("Pharmaceutical name. Required.")] string name,
         [Description("Category (e.g. 'stimulant', 'analgesic', 'neuro-modulator', 'combat stim').")] string category = "",
         [Description("Prose description and effects.")] string description = "",
         [Description("Manufacturer name.")] string manufacturer = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing pharmaceutical id to update.")] string id = "")
+        [Description("Optional existing pharmaceutical id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(GearEntityCrudTools), nameof(CreatePharmaceuticalImpl), new
+        {
+            name, category, description, manufacturer, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreatePharmaceuticalImpl(
+        string name,
+        string category = "",
+        string description = "",
+        string manufacturer = "",
+        string tags = "",
+        string id = "")
     {
         var ph = string.IsNullOrEmpty(id)
             ? new PharmaceuticalData()
@@ -576,13 +777,26 @@ public class GearEntityCrudTools
 
     /// <summary>Create or update an ammunition record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update an ammunition type (calibers, specialty rounds, energy cells) in canon. Pass empty id to create new; pass an existing id to update.")]
-    public string CreateAmmunition(
+    public Task<string> CreateAmmunition(
         [Description("Ammunition name. Required.")] string name,
         [Description("Category (e.g. 'pistol', 'rifle', 'shotgun', 'energy', 'specialty').")] string category = "",
         [Description("Prose description.")] string description = "",
         [Description("Manufacturer name.")] string manufacturer = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing ammunition id to update.")] string id = "")
+        [Description("Optional existing ammunition id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(GearEntityCrudTools), nameof(CreateAmmunitionImpl), new
+        {
+            name, category, description, manufacturer, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateAmmunitionImpl(
+        string name,
+        string category = "",
+        string description = "",
+        string manufacturer = "",
+        string tags = "",
+        string id = "")
     {
         var am = string.IsNullOrEmpty(id)
             ? new AmmunitionData()
@@ -612,29 +826,44 @@ public class WorldEntityCrudTools
     private readonly ConsumerGoodRepository consumerGoods;
     private readonly WorldbuildingDocRepository documents;
     private readonly SubsidiaryRepository subsidiaries;
+    private readonly HubInvoker hub;
 
     public WorldEntityCrudTools(
         AutomatonRepository automata,
         TransportationRepository transportation,
         ConsumerGoodRepository consumerGoods,
         WorldbuildingDocRepository documents,
-        SubsidiaryRepository subsidiaries)
+        SubsidiaryRepository subsidiaries,
+        HubInvoker hub)
     {
         this.automata = automata;
         this.transportation = transportation;
         this.consumerGoods = consumerGoods;
         this.documents = documents;
         this.subsidiaries = subsidiaries;
+        this.hub = hub;
     }
 
     /// <summary>Create or update an automaton record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update an automaton (drone, security bot, Iowan Behemoth, agricultural machine) in canon. Automata are machines, NOT synthetic life. Pass empty id to create new; pass an existing id to update.")]
-    public string CreateAutomaton(
+    public Task<string> CreateAutomaton(
         [Description("Automaton name. Required.")] string name,
         [Description("Prose description.")] string description = "",
         [Description("Manufacturer name.")] string manufacturer = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing automaton id to update.")] string id = "")
+        [Description("Optional existing automaton id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(WorldEntityCrudTools), nameof(CreateAutomatonImpl), new
+        {
+            name, description, manufacturer, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateAutomatonImpl(
+        string name,
+        string description = "",
+        string manufacturer = "",
+        string tags = "",
+        string id = "")
     {
         var a = string.IsNullOrEmpty(id)
             ? new AutomatonData()
@@ -652,13 +881,26 @@ public class WorldEntityCrudTools
 
     /// <summary>Create or update a transportation record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a transportation entry (vehicle, transit line, Pulse station, individual transport) in canon. Pass empty id to create new; pass an existing id to update.")]
-    public string CreateTransportation(
+    public Task<string> CreateTransportation(
         [Description("Transportation name. Required.")] string name,
         [Description("Category (e.g. 'motorcycle', 'rail', 'air', 'Pulse', 'water').")] string category = "",
         [Description("Prose description.")] string description = "",
         [Description("Manufacturer name.")] string manufacturer = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing transportation id to update.")] string id = "")
+        [Description("Optional existing transportation id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(WorldEntityCrudTools), nameof(CreateTransportationImpl), new
+        {
+            name, category, description, manufacturer, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateTransportationImpl(
+        string name,
+        string category = "",
+        string description = "",
+        string manufacturer = "",
+        string tags = "",
+        string id = "")
     {
         var t = string.IsNullOrEmpty(id)
             ? new TransportationData()
@@ -677,14 +919,28 @@ public class WorldEntityCrudTools
 
     /// <summary>Create or update a consumer good record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a consumer good (food, drinks, household items, branded products) in canon. Pass empty id to create new; pass an existing id to update.")]
-    public string CreateConsumerGood(
+    public Task<string> CreateConsumerGood(
         [Description("Consumer good name. Required.")] string name,
         [Description("Product name if different from name.")] string productName = "",
         [Description("Category (e.g. 'food', 'beverage', 'household', 'luxury').")] string category = "",
         [Description("Prose description.")] string description = "",
         [Description("Manufacturer or brand.")] string manufacturer = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing consumer good id to update.")] string id = "")
+        [Description("Optional existing consumer good id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(WorldEntityCrudTools), nameof(CreateConsumerGoodImpl), new
+        {
+            name, productName, category, description, manufacturer, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateConsumerGoodImpl(
+        string name,
+        string productName = "",
+        string category = "",
+        string description = "",
+        string manufacturer = "",
+        string tags = "",
+        string id = "")
     {
         var g = string.IsNullOrEmpty(id)
             ? new ConsumerGoodData()
@@ -704,13 +960,26 @@ public class WorldEntityCrudTools
 
     /// <summary>Create or update a worldbuilding document. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a worldbuilding document in canon. Documents hold long-form canon text (lore articles, guides, in-world publications). Pass empty id to create new; pass an existing id to update.")]
-    public string CreateDocument(
+    public Task<string> CreateDocument(
         [Description("Document file name (slug, e.g. 'network_operators_guide'). Required.")] string fileName,
         [Description("Document title. Required.")] string title,
         [Description("Category (e.g. 'lore', 'technical', 'in-world-publication', 'history').")] string category = "",
         [Description("Full prose body of the document.")] string body = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing document id to update.")] string id = "")
+        [Description("Optional existing document id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(WorldEntityCrudTools), nameof(CreateDocumentImpl), new
+        {
+            fileName, title, category, body, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateDocumentImpl(
+        string fileName,
+        string title,
+        string category = "",
+        string body = "",
+        string tags = "",
+        string id = "")
     {
         var d = string.IsNullOrEmpty(id)
             ? new WorldbuildingDocument()
@@ -729,12 +998,24 @@ public class WorldEntityCrudTools
 
     /// <summary>Create or update a subsidiary record. Pass empty id to create new; pass an existing id to update.</summary>
     [McpServerTool, Description("Create or update a subsidiary (child/holding company of a larger CorpoNation) in canon. Pass empty id to create new; pass an existing id to update.")]
-    public string CreateSubsidiary(
+    public Task<string> CreateSubsidiary(
         [Description("Subsidiary name. Required.")] string name,
         [Description("Parent CorpoNation name.")] string parentCorponation = "",
         [Description("Prose description.")] string description = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing subsidiary id to update.")] string id = "")
+        [Description("Optional existing subsidiary id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(WorldEntityCrudTools), nameof(CreateSubsidiaryImpl), new
+        {
+            name, parentCorponation, description, tags, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CreateSubsidiaryImpl(
+        string name,
+        string parentCorponation = "",
+        string description = "",
+        string tags = "",
+        string id = "")
     {
         var s = string.IsNullOrEmpty(id)
             ? new SubsidiaryData()

@@ -14,7 +14,13 @@ namespace Prose.Core.Services;
 public sealed class ContextTelemetryService
 {
     public sealed record DocLoad(string Path, string Tier, string Reason, double Score, int Chars);
-    public sealed record EntityLoad(string Name, string Type, string MatchSource, double Score, int Depth);
+    // EntityId added 2026-08-21 (Beat Context Archive Part F4): EntityContextStack.StackEntry
+    // already carried it; it was just dropped at the one construction site
+    // (ProseWriterRouter.WriteAsync). Purely additive to a JSON-serialized field
+    // (DcmBeatSnapshot.EntitiesJson) — old rows just lack it. Lets a beat's entity roster join
+    // straight into WorldStateService.GetRecordJsonAsOf(entityId, asOf) instead of a fuzzy
+    // name match.
+    public sealed record EntityLoad(Guid EntityId, string Name, string Type, string MatchSource, double Score, int Depth);
     /// <summary>Full DCM working-set entry at a beat — not budget-clipped. Used for Gantt visualization.</summary>
     public sealed record StackDocEntry(string Path, string Tier, string Reason, double Score);
 
@@ -51,8 +57,18 @@ public sealed class ContextTelemetryService
     public bool IsActive { get { lock (gate) return current != null; } }
     public Run? Current { get { lock (gate) return current; } }
 
+    // Observability plan (2026-08-20), Part C: plain C# events so this service stays
+    // transport-agnostic (it's used by the CLI too, not just the Hub) - only Prose.Hub's
+    // Program.cs subscribes, forwarding to SignalR and to a best-effort DB write. Raised
+    // OUTSIDE the lock (after capturing what's needed inside it) so a subscriber can never
+    // deadlock this service by calling back into it synchronously.
+    public event Action<Run>? RunStarted;
+    public event Action<Run, BeatRecord>? BeatRecorded;
+    public event Action<Run>? RunEnded;
+
     public void BeginRun(Guid runId, Guid nodeId, string nodeSlug, string label, bool docContextEnabled, DateTime startedAt, double baselineScore, double baselineFlow)
     {
+        Run started;
         lock (gate)
         {
             current = new Run
@@ -66,25 +82,35 @@ public sealed class ContextTelemetryService
                 BaselineScore = baselineScore,
                 BaselineFlow = baselineFlow,
             };
+            started = current;
         }
+        RunStarted?.Invoke(started);
     }
 
     public void RecordBeat(BeatRecord record)
     {
-        lock (gate) { current?.Beats.Add(record); }
+        Run? run;
+        lock (gate)
+        {
+            current?.Beats.Add(record);
+            run = current;
+        }
+        if (run != null) BeatRecorded?.Invoke(run, record);
     }
 
     public Run? EndRun(DateTime endedAt, double finalScore, double finalFlow)
     {
+        Run? done;
         lock (gate)
         {
             if (current == null) return null;
             current.EndedAt = endedAt;
             current.FinalScore = finalScore;
             current.FinalFlow = finalFlow;
-            var done = current;
+            done = current;
             current = null;
-            return done;
         }
+        RunEnded?.Invoke(done);
+        return done;
     }
 }

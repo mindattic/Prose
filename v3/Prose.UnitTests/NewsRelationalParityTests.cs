@@ -203,7 +203,7 @@ public class NewsRelationalParityTests
                 Id         = id,
                 EntityType = "news",
                 Name       = src.Headline,
-                Slug       = WorldGraphService.Slugify(src.Headline),
+                Slug       = UniverseGraphService.Slugify(src.Headline),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,

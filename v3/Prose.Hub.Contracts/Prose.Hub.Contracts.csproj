@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Prose.Hub.Contracts</RootNamespace>
+    <AssemblyName>Prose.Hub.Contracts</AssemblyName>
+    <!-- Deliberately zero package/project references. Referenced by Prose.Hub (server side),
+         Prose.ObserverUi, and Prose.Maui (both client-side, incl. a native Windows head) - none
+         of those should have to pull in EF Core/SqlServer/QuikGraph just to deserialize a log
+         line or a graph delta. Same discipline Prose.LlmCli already uses for a different reason. -->
+  </PropertyGroup>
+
+</Project>

@@ -317,7 +317,7 @@ public class FactInterpreterService
     private async Task<Guid?> ResolveAsync(
         ProseDbContext db, string name, string entityType, string? description, CancellationToken ct)
     {
-        var slug = WorldGraphService.Slugify(name);
+        var slug = UniverseGraphService.Slugify(name);
 
         // Path 1: exact name/slug match within the typed bucket.
         var hit = await db.Entities.AsNoTracking()
@@ -381,7 +381,7 @@ public class FactInterpreterService
         ProseDbContext db, string name, string entityType, string? description, string sourceTag, CancellationToken ct)
     {
         var id = Guid.CreateVersion7();
-        var slug = WorldGraphService.Slugify(name);
+        var slug = UniverseGraphService.Slugify(name);
         // Disambiguate against any stale matching slug
         if (await db.Entities.AnyAsync(e => e.EntityType == entityType && e.Slug == slug, ct))
             slug = $"{slug}-{id:N}";

@@ -234,7 +234,7 @@ public class WeaponRelationalParityTests
                 Id         = id,
                 EntityType = "weapon",
                 Name       = src.Name,
-                Slug       = WorldGraphService.Slugify(src.Name),
+                Slug       = UniverseGraphService.Slugify(src.Name),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,

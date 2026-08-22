@@ -4,7 +4,7 @@ namespace Prose.Core.Models.Graph;
 
 /// <summary>
 /// Result of LLM entity extraction from story text.
-/// Designed to map directly to WorldNode + WorldEdge creation.
+/// Designed to map directly to UniverseNode + UniverseEdge creation.
 /// </summary>
 public record ExtractionResult
 {

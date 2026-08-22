@@ -4,29 +4,29 @@ using Prose.Core.Models.Graph;
 namespace Prose.UnitTests;
 
 [TestFixture]
-public class WorldGraphServiceTests
+public class UniverseGraphServiceTests
 {
     [Test]
     public void CompareStoryPoints_ChapterFormat()
     {
-        Assert.That(WorldGraphService.CompareStoryPoints("chapter:1", "chapter:2"), Is.LessThan(0));
-        Assert.That(WorldGraphService.CompareStoryPoints("chapter:10", "chapter:2"), Is.GreaterThan(0));
-        Assert.That(WorldGraphService.CompareStoryPoints("chapter:5", "chapter:5"), Is.EqualTo(0));
+        Assert.That(UniverseGraphService.CompareStoryPoints("chapter:1", "chapter:2"), Is.LessThan(0));
+        Assert.That(UniverseGraphService.CompareStoryPoints("chapter:10", "chapter:2"), Is.GreaterThan(0));
+        Assert.That(UniverseGraphService.CompareStoryPoints("chapter:5", "chapter:5"), Is.EqualTo(0));
     }
 
     [Test]
     public void CompareStoryPoints_UnderscoreFormat()
     {
-        Assert.That(WorldGraphService.CompareStoryPoints("SS_00001", "SS_00002"), Is.LessThan(0));
-        Assert.That(WorldGraphService.CompareStoryPoints("SS_00050", "SS_00005"), Is.GreaterThan(0));
+        Assert.That(UniverseGraphService.CompareStoryPoints("SS_00001", "SS_00002"), Is.LessThan(0));
+        Assert.That(UniverseGraphService.CompareStoryPoints("SS_00050", "SS_00005"), Is.GreaterThan(0));
     }
 
     [Test]
     public void CompareStoryPoints_EmptyMeansBeginning()
     {
-        Assert.That(WorldGraphService.CompareStoryPoints("", "chapter:1"), Is.LessThan(0));
-        Assert.That(WorldGraphService.CompareStoryPoints("chapter:1", ""), Is.GreaterThan(0));
-        Assert.That(WorldGraphService.CompareStoryPoints("", ""), Is.EqualTo(0));
+        Assert.That(UniverseGraphService.CompareStoryPoints("", "chapter:1"), Is.LessThan(0));
+        Assert.That(UniverseGraphService.CompareStoryPoints("chapter:1", ""), Is.GreaterThan(0));
+        Assert.That(UniverseGraphService.CompareStoryPoints("", ""), Is.EqualTo(0));
     }
 
     [Test]
@@ -59,13 +59,13 @@ public class WorldGraphServiceTests
         // The exact real example that surfaced this bug (Hae-won Magnúsdóttir's location).
         var raw = "Shallowgrave — sleeps in a shared squat off Burnside Pocket, runs routes through the market corridors, near Ashland and Division";
 
-        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("Shallowgrave"));
+        Assert.That(UniverseGraphService.ExtractPlaceName(raw), Is.EqualTo("Shallowgrave"));
     }
 
     [Test]
     public void ExtractPlaceName_ShortCleanLocation_PassesThroughUnchanged()
     {
-        Assert.That(WorldGraphService.ExtractPlaceName("Burnside Pocket"), Is.EqualTo("Burnside Pocket"));
+        Assert.That(UniverseGraphService.ExtractPlaceName("Burnside Pocket"), Is.EqualTo("Burnside Pocket"));
     }
 
     [Test]
@@ -73,7 +73,7 @@ public class WorldGraphServiceTests
     {
         var raw = "Ironvein Station - with a rented bunk in the Ferrogate Transit crew dormitory at Jefferson Switch";
 
-        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("Ironvein Station"));
+        Assert.That(UniverseGraphService.ExtractPlaceName(raw), Is.EqualTo("Ironvein Station"));
     }
 
     [Test]
@@ -81,7 +81,7 @@ public class WorldGraphServiceTests
     {
         var raw = "Hamtramck Enclave, basement shrine beneath the Copperplate Market, near Kedzie and Division";
 
-        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("Hamtramck Enclave"));
+        Assert.That(UniverseGraphService.ExtractPlaceName(raw), Is.EqualTo("Hamtramck Enclave"));
     }
 
     [Test]
@@ -92,7 +92,7 @@ public class WorldGraphServiceTests
         // still a large improvement over promoting the entire two-clause sentence verbatim.
         var raw = "The Quarantine Wall perimeter around the Sinter zone; Descent Corps operations within the zone";
 
-        var result = WorldGraphService.ExtractPlaceName(raw);
+        var result = UniverseGraphService.ExtractPlaceName(raw);
 
         Assert.That(result, Does.Not.Contain("Descent Corps"), "must not include the second clause");
         Assert.That(result.Length, Is.LessThanOrEqualTo(30));
@@ -105,7 +105,7 @@ public class WorldGraphServiceTests
         // any free-text field promoted to a node name, not just places.
         var raw = "House Vulcanus (primary); licensed variants from Houses Corvus and Noctua";
 
-        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("House Vulcanus"));
+        Assert.That(UniverseGraphService.ExtractPlaceName(raw), Is.EqualTo("House Vulcanus"));
     }
 
     [Test]
@@ -113,7 +113,7 @@ public class WorldGraphServiceTests
     {
         var raw = "ThisIsAnUnusuallyLongPlaceNameWithNoNaturalSeparatorAtAllToSplitOn";
 
-        var result = WorldGraphService.ExtractPlaceName(raw);
+        var result = UniverseGraphService.ExtractPlaceName(raw);
 
         Assert.That(result.Length, Is.LessThanOrEqualTo(30));
     }
@@ -122,7 +122,7 @@ public class WorldGraphServiceTests
     public void ExtractPlaceName_ExactlyAtThreshold_PassesThroughUnchanged()
     {
         var raw = new string('X', 30);
-        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo(raw));
+        Assert.That(UniverseGraphService.ExtractPlaceName(raw), Is.EqualTo(raw));
     }
 
     [Test]
@@ -130,7 +130,7 @@ public class WorldGraphServiceTests
     {
         var raw = "the Gray Zone (operates between Brewer's Spine and the old rail line)";
 
-        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("the Gray Zone"));
+        Assert.That(UniverseGraphService.ExtractPlaceName(raw), Is.EqualTo("the Gray Zone"));
     }
 
     [Test]
@@ -140,16 +140,16 @@ public class WorldGraphServiceTests
         // this string is 40 chars, right at the old cutoff, and still reads as narrative.
         var raw = "the Gray Zone, near Kedzie and Division";
 
-        Assert.That(WorldGraphService.ExtractPlaceName(raw), Is.EqualTo("the Gray Zone"));
+        Assert.That(UniverseGraphService.ExtractPlaceName(raw), Is.EqualTo("the Gray Zone"));
     }
 
     [Test]
     public void Slugify_ProducesConsistentSlugs()
     {
-        Assert.That(WorldGraphService.Slugify("Kyle"), Is.EqualTo("kyle"));
-        Assert.That(WorldGraphService.Slugify("Axiom Industries"), Is.EqualTo("axiom-industries"));
-        Assert.That(WorldGraphService.Slugify("Dae-jung Seo"), Is.EqualTo("dae-jung-seo"));
-        Assert.That(WorldGraphService.Slugify("  spaces  "), Is.EqualTo("spaces"));
+        Assert.That(UniverseGraphService.Slugify("Kyle"), Is.EqualTo("kyle"));
+        Assert.That(UniverseGraphService.Slugify("Axiom Industries"), Is.EqualTo("axiom-industries"));
+        Assert.That(UniverseGraphService.Slugify("Dae-jung Seo"), Is.EqualTo("dae-jung-seo"));
+        Assert.That(UniverseGraphService.Slugify("  spaces  "), Is.EqualTo("spaces"));
     }
 
     [Test]
@@ -213,9 +213,9 @@ public class WorldGraphServiceTests
         graph.AddTestNode("b", "B", "character", new());
 
         // Edge valid from chapter 1 to chapter 5
-        graph.AddNode(new WorldNode { Id = "a", Name = "A", NodeType = "character" });
-        graph.AddNode(new WorldNode { Id = "b", Name = "B", NodeType = "character" });
-        graph.AddEdge(new WorldEdge
+        graph.AddNode(new UniverseNode { Id = "a", Name = "A", NodeType = "character" });
+        graph.AddNode(new UniverseNode { Id = "b", Name = "B", NodeType = "character" });
+        graph.AddEdge(new UniverseEdge
         {
             Source = "a", Target = "b", RelationType = "friend",
             ValidFrom = "chapter:1", ValidUntil = "chapter:5",

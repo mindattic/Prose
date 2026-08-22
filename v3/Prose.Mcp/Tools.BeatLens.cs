@@ -25,6 +25,7 @@ public class BeatLensTools
     private readonly AffectBehaviorService affect;
     private readonly InterpersonalDynamicsService interpersonal;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly HubInvoker hub;
 
     private static readonly JsonSerializerOptions JsonOpts = new() { WriteIndented = true };
 
@@ -32,24 +33,35 @@ public class BeatLensTools
         CausalityService causality,
         AffectBehaviorService affect,
         InterpersonalDynamicsService interpersonal,
-        IDbContextFactory<ProseDbContext> dbFactory)
+        IDbContextFactory<ProseDbContext> dbFactory,
+        HubInvoker hub)
     {
         this.causality = causality;
         this.affect = affect;
         this.interpersonal = interpersonal;
         this.dbFactory = dbFactory;
+        this.hub = hub;
     }
 
     [McpServerTool, Description("Check a node's CAUSE-AND-EFFECT: do beats follow by therefore/but rather than 'and then'? Flags episodic transitions, effects without setup, actions against established motive, implausible reactions. Files advisory Findings; returns score 0-100 + issues. Arg: node GUID or slug.")]
-    public Task<string> CausalityCheck([Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> CausalityCheck([Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(BeatLensTools), nameof(CausalityCheckImpl), new { nodeIdOrSlug });
+
+    public Task<string> CausalityCheckImpl(string nodeIdOrSlug)
         => RunAsync(causality, nodeIdOrSlug);
 
     [McpServerTool, Description("Check whether each character's EMOTION believably DRIVES their ACTION. Flags actions that ignore what just happened, unmotivated calm, feelings named but not enacted. Files advisory Findings; returns score 0-100 + issues. Arg: node GUID or slug.")]
-    public Task<string> AffectCheck([Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> AffectCheck([Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(BeatLensTools), nameof(AffectCheckImpl), new { nodeIdOrSlug });
+
+    public Task<string> AffectCheckImpl(string nodeIdOrSlug)
         => RunAsync(affect, nodeIdOrSlug);
 
     [McpServerTool, Description("Check INTERPERSONAL DYNAMICS — the 90+ relational lever. Are exchanges doing real relational work on BOTH channels (verbal subtext + non-verbal body/gesture)? Flags info-only dead exchanges, missing non-verbal channel, on-the-nose emotion-naming, bonds that don't change. Files advisory Findings; returns score 0-100 + issues. Arg: node GUID or slug.")]
-    public Task<string> InterpersonalCheck([Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> InterpersonalCheck([Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(BeatLensTools), nameof(InterpersonalCheckImpl), new { nodeIdOrSlug });
+
+    public Task<string> InterpersonalCheckImpl(string nodeIdOrSlug)
         => RunAsync(interpersonal, nodeIdOrSlug);
 
     private async Task<string> RunAsync(BeatLensService svc, string nodeIdOrSlug)

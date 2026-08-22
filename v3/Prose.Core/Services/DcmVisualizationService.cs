@@ -31,8 +31,13 @@ public sealed class DcmVisualizationService
     }
 
     // ── JSON payload ─────────────────────────────────────────────────────────────
+    // Public (observability plan, 2026-08-20, Phase 7): reused by the legacy .htm export
+    // below AND by Prose.Hub's live/history DCM-Viz paths (ObservabilityBridge pushes a
+    // freshly-rebuilt payload over SignalR after every beat; a history GET endpoint rebuilds
+    // one from persisted DcmBeatSnapshots rows) - one JSON shape, one JS renderer, three
+    // producers.
 
-    private sealed class VizPayload
+    public sealed class VizPayload
     {
         public string slug { get; set; } = "";
         public int totalBeats { get; set; }
@@ -41,7 +46,7 @@ public sealed class DcmVisualizationService
         public List<BeatCount> counts { get; set; } = new();
     }
 
-    private sealed class DocRow
+    public sealed class DocRow
     {
         public string path { get; set; } = "";
         public string label { get; set; } = "";
@@ -52,16 +57,21 @@ public sealed class DcmVisualizationService
         public List<int[]> segs { get; set; } = new();
     }
 
-    private sealed record BeatCount(int i, string t, int n);
+    public sealed record BeatCount(int i, string t, int n);
 
-    private static readonly JsonSerializerOptions JsonOpts = new()
+    public static readonly JsonSerializerOptions JsonOpts = new()
     {
         WriteIndented = false,
         PropertyNamingPolicy = null,
         DefaultIgnoreCondition = JsonIgnoreCondition.Never,
     };
 
-    private static VizPayload BuildPayload(string slug, IReadOnlyList<BeatSnapshot> beats)
+    /// <summary>Serialized <see cref="BuildPayload"/> — what both the live SignalR push and
+    /// the history HTTP endpoint actually send; the JS renderer only ever sees this shape.</summary>
+    public static string BuildPayloadJson(string slug, IReadOnlyList<BeatSnapshot> beats) =>
+        JsonSerializer.Serialize(BuildPayload(slug, beats), JsonOpts);
+
+    public static VizPayload BuildPayload(string slug, IReadOnlyList<BeatSnapshot> beats)
     {
         // Map every unique doc path to all beat indices where it was active.
         var docBeats = new Dictionary<string, (string Tier, List<int> Beats)>(StringComparer.Ordinal);

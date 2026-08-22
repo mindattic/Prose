@@ -1,0 +1,221 @@
+<div class="p-4 archive-tab">
+    <h4>Beat Archive</h4>
+    <p class="muted">
+        Everything that fed one beat, archived and pulled up after the fact — resolved as of
+        that beat's own trace timestamp. Backed by <code>prose --beat-archive</code> /
+        <code>get_beat_archive</code>.
+    </p>
+
+    <div class="archive-form">
+        <input class="txt" placeholder="Beat GUID" @bind="beatId" @bind:event="oninput" />
+        <button class="btn" @onclick="LoadAsync" disabled="@loading">@(loading ? "Loading…" : "Load")</button>
+    </div>
+
+    @if (notFound)
+    {
+        <p class="err">Not found: "@beatId"</p>
+    }
+    else if (archive != null)
+    {
+        <div class="section">
+            <div class="section-head">Beat — @(archive.Beat.Title ?? "(untitled)") <span class="tag">@archive.Beat.Kind</span></div>
+            <p class="muted small">as of @archive.AsOf.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss.fff") — node @archive.NodeId</p>
+            <div class="beat-text">@archive.Beat.Text</div>
+        </div>
+
+        @if (archive.Mode != null)
+        {
+            <div class="section">
+                <div class="section-head">Mode</div>
+                <p>@archive.Mode.Mode <span class="muted small">(@archive.Mode.Confidence.ToString("0.00") confidence, via @archive.Mode.DetectionMethod)</span></p>
+            </div>
+        }
+
+        <div class="section">
+            <div class="section-head">Service coverage <span class="muted small">(@archive.ServiceCoverage.Count)</span></div>
+            @if (archive.ServiceCoverage.Count == 0)
+            {
+                <p class="muted small">No BeatServiceLog rows for this beat.</p>
+            }
+            else
+            {
+                <table class="grid">
+                    <thead><tr><th>Service</th><th>Applicable</th><th>Active</th><th>Block size</th></tr></thead>
+                    <tbody>
+                        @foreach (var s in archive.ServiceCoverage)
+                        {
+                            <tr>
+                                <td>@s.Service</td>
+                                <td class="@(s.WasApplicable ? "ok" : "muted")">@s.WasApplicable</td>
+                                <td class="@(s.WasActive ? "ok" : "muted")">@s.WasActive</td>
+                                <td>@s.BlockSizeChars</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+
+        <div class="section">
+            <div class="section-head">LLM prompt(s) <span class="muted small">(@archive.Prompts.Count)</span></div>
+            @if (archive.Prompts.Count == 0)
+            {
+                <p class="muted small">No LlmPromptCapture rows for this beat.</p>
+            }
+            else
+            {
+                @foreach (var p in archive.Prompts)
+                {
+                    <details class="card">
+                        <summary>@p.At.ToLocalTime().ToString("HH:mm:ss.fff") — @p.ProviderId / @p.Model @(p.ElapsedMs is { } ms ? $"({ms}ms)" : "")</summary>
+                        <div class="prompt-block">
+                            <div class="prompt-label">System</div>
+                            <pre>@p.System</pre>
+                            <div class="prompt-label">User</div>
+                            <pre>@p.User</pre>
+                            @if (!string.IsNullOrWhiteSpace(p.Response))
+                            {
+                                <div class="prompt-label">Response</div>
+                                <pre>@p.Response</pre>
+                            }
+                        </div>
+                    </details>
+                }
+            }
+        </div>
+
+        <div class="section">
+            <div class="section-head">Entity roster <span class="muted small">(@archive.EntityRoster.Count)</span></div>
+            @if (archive.EntityRoster.Count == 0)
+            {
+                <p class="muted small">No BeatEntities rows for this beat.</p>
+            }
+            else
+            {
+                @foreach (var e in archive.EntityRoster)
+                {
+                    <details class="card">
+                        <summary>
+                            @(e.IsPov ? "★ " : "")@e.Name <span class="tag">@e.EntityType</span>
+                            <span class="muted small">via @e.MatchSource, score @e.Score.ToString("0.00")</span>
+                        </summary>
+                        @if (!string.IsNullOrWhiteSpace(e.ResolvedJson))
+                        {
+                            <pre>@e.ResolvedJson</pre>
+                        }
+                        else
+                        {
+                            <p class="muted small">No resolved record as of this beat.</p>
+                        }
+                    </details>
+                }
+            }
+        </div>
+
+        <div class="section">
+            <div class="section-head">Edges <span class="muted small">(@archive.Edges.Count)</span></div>
+            @if (archive.Edges.Count == 0)
+            {
+                <p class="muted small">No edges touching this beat's roster as of this beat.</p>
+            }
+            else
+            {
+                <table class="grid">
+                    <thead><tr><th>Source</th><th>Relation</th><th>Target</th><th>Sentiment</th><th>Weight</th></tr></thead>
+                    <tbody>
+                        @foreach (var e in archive.Edges)
+                        {
+                            <tr>
+                                <td>@(e.SourceName ?? e.SourceId.ToString())</td>
+                                <td>@e.RelationType</td>
+                                <td>@(e.TargetName ?? e.TargetId.ToString())</td>
+                                <td>@e.Sentiment</td>
+                                <td>@e.Weight.ToString("0.00")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+
+        <div class="section">
+            <div class="section-head">Docs <span class="muted small">(@archive.Docs.Count)</span></div>
+            @if (archive.Docs.Count == 0)
+            {
+                <p class="muted small">No DcmBeatSnapshot for this beat.</p>
+            }
+            else
+            {
+                @foreach (var d in archive.Docs)
+                {
+                    <details class="card">
+                        <summary>@d.Path <span class="tag">@d.Tier</span></summary>
+                        @if (!string.IsNullOrWhiteSpace(d.Content))
+                        {
+                            <pre>@d.Content</pre>
+                        }
+                        else
+                        {
+                            <p class="muted small">No content resolved as of this beat.</p>
+                        }
+                    </details>
+                }
+            }
+        </div>
+
+        <div class="section">
+            <div class="section-head">Bible</div>
+            @if (string.IsNullOrWhiteSpace(archive.Bible))
+            {
+                <p class="muted small">No bible content resolved as of this beat.</p>
+            }
+            else
+            {
+                <details class="card">
+                    <summary>Node bible as of this beat</summary>
+                    <pre>@archive.Bible</pre>
+                </details>
+            }
+        </div>
+
+        <div class="section">
+            <div class="section-head">Raw context trace</div>
+            @if (string.IsNullOrWhiteSpace(archive.ContextTrace))
+            {
+                <p class="muted small">No BeatContextTrace for this beat.</p>
+            }
+            else
+            {
+                <details class="card">
+                    <summary>Full merged BeatContext (JSON)</summary>
+                    <pre>@archive.ContextTrace</pre>
+                </details>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    [Inject] private ObserverHttpClient api { get; set; } = default!;
+
+    private string beatId = "";
+    private bool loading;
+    private bool notFound;
+    private BeatArchiveDto? archive;
+
+    private async Task LoadAsync()
+    {
+        if (string.IsNullOrWhiteSpace(beatId)) return;
+        loading = true;
+        notFound = false;
+        archive = null;
+        StateHasChanged();
+
+        var r = await api.GetBeatArchiveAsync(beatId.Trim());
+        if (r == null) notFound = true;
+        else archive = r;
+
+        loading = false;
+        StateHasChanged();
+    }
+}

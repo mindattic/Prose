@@ -1,0 +1,65 @@
+.logs-tab {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logs-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #30363d;
+    background: #161b22;
+}
+
+.btn {
+    background: #21262d;
+    border: 1px solid #30363d;
+    color: #e6edf3;
+    border-radius: 6px;
+    padding: 0.3rem 0.75rem;
+    cursor: pointer;
+}
+
+.btn:hover { background: #30363d; }
+
+.filter {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #e6edf3;
+    border-radius: 6px;
+    padding: 0.3rem 0.6rem;
+    flex: 0 0 220px;
+}
+
+.btn.active { background: #1f6feb; border-color: #1f6feb; }
+
+.sel {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #e6edf3;
+    border-radius: 6px;
+    padding: 0.3rem 0.6rem;
+}
+
+.conn { font-size: 0.85rem; padding: 0.15rem 0.5rem; border-radius: 10px; }
+.conn-ok { background: #0f5132; color: #75dd8e; }
+.conn-warn { background: #4a3b00; color: #f0c419; }
+.conn-down { background: #4a0f14; color: #ff7b83; }
+
+.logs-pane {
+    flex: 1 1 auto;
+    overflow: auto;
+    padding: 0.5rem 1rem;
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Code", Consolas, monospace;
+    font-size: 0.85rem;
+}
+
+.log-line { padding: 0.1rem 0; white-space: pre-wrap; word-break: break-word; }
+.log-time { color: #6e7681; margin-right: 0.5rem; }
+.log-cat { color: #58a6ff; margin-right: 0.5rem; }
+.log-msg { color: #c9d1d9; }
+
+.lvl-error .log-msg, .lvl-critical .log-msg { color: #ff7b83; }
+.lvl-warning .log-msg { color: #f0c419; }

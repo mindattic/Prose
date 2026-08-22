@@ -6,6 +6,7 @@ using Serilog.Events;
 using Prose.Core.Extensions;
 using Prose.Core.Interfaces;
 using Prose.Core.Services;
+using Prose.Mcp;
 
 // ── Prose MCP server ─────────────────────────────────────────────────
 // Exposes the canon (characters, places, factions, books, outlines, motifs,
@@ -59,6 +60,11 @@ Log.Logger = new LoggerConfiguration()
 // (SS-LAW-15). A switch_universe tool can also change it mid-session.
 UniverseBootstrap.RequestedSlug ??= UniverseBootstrap.ParseSlug(args);
 
+// Fail-closed Hub dependency (Phase 2, explicit user decision): "the hub is running, Prose is
+// working; hub goes down, Prose is down." Gate before the MCP stdio server even starts — no
+// silent fallback to each tool holding its own in-process Core service copy.
+HubGate.EnsureReachableOrExit();
+
 var builder = Host.CreateApplicationBuilder(args);
 
 // Route the framework log pipeline through Serilog (file-only, no console).
@@ -68,6 +74,13 @@ builder.Logging.AddSerilog();
 // All Core services — repositories, BookOutlineService, SemanticIndexService,
 // MotifService, WritingQualityService, etc.
 builder.Services.AddProseServices();
+
+// Thin HTTP client for the Prose Hub (v3/Prose.Hub) - the standalone always-on process
+// holding the resident graph/DCM state. Used by HubTools for graph mutations (link_entities)
+// and snapshots that should reflect the Hub's single shared copy rather than this process's
+// own in-memory UniverseGraphService instance.
+builder.Services.AddHttpClient("ProseHub", c => c.BaseAddress = new Uri("http://127.0.0.1:5900/"));
+builder.Services.AddSingleton<HubInvoker>();
 
 // MCP server with stdio transport. WithToolsFromAssembly scans this assembly
 // for [McpServerToolType] classes and registers each [McpServerTool] method.

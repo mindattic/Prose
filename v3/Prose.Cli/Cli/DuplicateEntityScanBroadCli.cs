@@ -11,9 +11,9 @@ namespace Prose.Cli;
 /// <see cref="DuplicateEntityScanCli"/> structurally cannot catch — a title, rank/code suffix,
 /// or otherwise different name for the same person ("Dame Lyra" vs. "Dame Lyra of House
 /// Ocipheus"), not a 1-character typo. See <see cref="DuplicateEntityScanService.ScanBroadAsync"/>
-/// for the two-stage cost-bounded design. Costs real LLM calls — gated by CostGateCli like other
-/// LLM-calling commands (e.g. --generate-cover-prompt); wrap this call the same way in
-/// Program.cs, do not skip the gate.
+/// for the two-stage cost-bounded design. Costs real LLM calls — gated the same way as other
+/// LLM-calling commands (e.g. --generate-cover-prompt) via HubCliClient.ForwardWithCostGateAsync
+/// in Program.cs, do not skip the gate.
 ///
 /// Nothing is merged by this command — it only reports candidate groups + an LLM judge verdict
 /// for a human to review before ever calling DuplicateEntityScanService.MergeAsync.

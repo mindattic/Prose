@@ -1,0 +1,159 @@
+@implements IAsyncDisposable
+
+<div class="logs-tab">
+    <div class="logs-toolbar">
+        <button class="btn @(mode == Mode.Live ? "active" : "")" @onclick="() => SetMode(Mode.Live)">Live</button>
+        <button class="btn @(mode == Mode.History ? "active" : "")" @onclick="() => SetMode(Mode.History)">History</button>
+
+        @if (mode == Mode.Live)
+        {
+            <button class="btn" @onclick="TogglePause">@(paused ? "Resume" : "Pause")</button>
+            <input class="filter" placeholder="Filter..." @bind="filterText" @bind:event="oninput" />
+            <span class="conn conn-@ConnClass()">@ConnLabel()</span>
+            <span class="muted">@lines.Count line(s)@(paused ? " (paused)" : "")</span>
+        }
+        else
+        {
+            <input class="filter" placeholder="Since (e.g. 2026-08-20)..." @bind="historySince" />
+            <select class="sel" @bind="historySeverity">
+                <option value="">any severity</option>
+                <option value="Warning">Warning+</option>
+                <option value="Error">Error+</option>
+            </select>
+            <input class="filter" placeholder="Search text..." @bind="historyText" />
+            <button class="btn" @onclick="SearchHistoryAsync" disabled="@historyLoading">@(historyLoading ? "Searching…" : "Search")</button>
+            <span class="muted">durable log-*.txt files — not the live tail</span>
+        }
+    </div>
+
+    @if (mode == Mode.Live)
+    {
+        <div class="logs-pane">
+            @foreach (var line in FilteredLines())
+            {
+                <div class="log-line lvl-@line.Level.ToLowerInvariant()">
+                    <span class="log-time">@line.At.ToLocalTime().ToString("HH:mm:ss.fff")</span>
+                    <span class="log-cat">@ShortCategory(line.Category)</span>
+                    <span class="log-msg">@line.Message</span>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="logs-pane">
+            @foreach (var e in historyResults)
+            {
+                <div class="log-line lvl-@e.Level.ToLowerInvariant()">
+                    <span class="log-time">@e.Timestamp.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</span>
+                    <span class="log-msg">@e.Message</span>
+                </div>
+                @if (!string.IsNullOrWhiteSpace(e.Exception))
+                {
+                    <div class="log-line"><span class="log-msg muted">@e.Exception</span></div>
+                }
+            }
+            @if (!historyLoading && historyResults.Count == 0)
+            {
+                <p class="muted">No results. Try Search, or widen the filters.</p>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private enum Mode { Live, History }
+
+    [Inject] private HubApiClient hub { get; set; } = default!;
+    [Inject] private ObserverHttpClient api { get; set; } = default!;
+
+    private const int Cap = 2000;
+    private readonly List<LogLineDto> lines = [];
+    private bool paused;
+    private string filterText = "";
+    private Mode mode = Mode.Live;
+
+    private string historySince = "";
+    private string historySeverity = "";
+    private string historyText = "";
+    private bool historyLoading;
+    private List<LogSearchResultDto> historyResults = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        hub.LogLine += OnLine;
+        hub.StateChanged += OnConnChanged;
+        await hub.EnsureStartedAsync();
+        foreach (var l in await api.GetRecentLogsAsync(200)) Append(l);
+    }
+
+    private void SetMode(Mode m)
+    {
+        mode = m;
+        StateHasChanged();
+    }
+
+    private async Task SearchHistoryAsync()
+    {
+        historyLoading = true;
+        StateHasChanged();
+        historyResults = await api.SearchLogsAsync(
+            string.IsNullOrWhiteSpace(historySince) ? null : historySince,
+            string.IsNullOrWhiteSpace(historySeverity) ? null : historySeverity,
+            string.IsNullOrWhiteSpace(historyText) ? null : historyText,
+            300);
+        historyLoading = false;
+        StateHasChanged();
+    }
+
+    private void OnLine(LogLineDto line)
+    {
+        if (paused) return;
+        Append(line);
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void Append(LogLineDto line)
+    {
+        lines.Add(line);
+        while (lines.Count > Cap) lines.RemoveAt(0);
+    }
+
+    private void OnConnChanged() => InvokeAsync(StateHasChanged);
+
+    private void TogglePause() => paused = !paused;
+
+    private IEnumerable<LogLineDto> FilteredLines() =>
+        string.IsNullOrWhiteSpace(filterText)
+            ? lines
+            : lines.Where(l => l.Message.Contains(filterText, StringComparison.OrdinalIgnoreCase)
+                             || l.Category.Contains(filterText, StringComparison.OrdinalIgnoreCase));
+
+    private static string ShortCategory(string category)
+    {
+        var lastDot = category.LastIndexOf('.');
+        return lastDot >= 0 ? category[(lastDot + 1)..] : category;
+    }
+
+    private string ConnClass() => hub.State switch
+    {
+        Microsoft.AspNetCore.SignalR.Client.HubConnectionState.Connected => "ok",
+        Microsoft.AspNetCore.SignalR.Client.HubConnectionState.Disconnected => "down",
+        _ => "warn",
+    };
+
+    private string ConnLabel() => hub.State switch
+    {
+        Microsoft.AspNetCore.SignalR.Client.HubConnectionState.Connected => "connected",
+        Microsoft.AspNetCore.SignalR.Client.HubConnectionState.Disconnected => "disconnected",
+        Microsoft.AspNetCore.SignalR.Client.HubConnectionState.Reconnecting => "reconnecting",
+        _ => "connecting",
+    };
+
+    public ValueTask DisposeAsync()
+    {
+        hub.LogLine -= OnLine;
+        hub.StateChanged -= OnConnChanged;
+        return ValueTask.CompletedTask;
+    }
+}

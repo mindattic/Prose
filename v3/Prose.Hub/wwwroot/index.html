@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Prose Hub</title>
+<style>
+  :root { --bg:#0e1116; --surf:#171b22; --line:#262c36; --ink:#e6edf3; --mut:#8b949e;
+          --always:#f0a868; --node:#6cb6ff; --topic:#7ee787; --depth0:#7ee787; --depth1:#6cb6ff; --depth2:#8b949e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  header { padding: 14px 20px; border-bottom: 1px solid var(--line); display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  h1 { font-size: 15px; margin: 0; }
+  .sub { color: var(--mut); font-size: 12px; }
+  input, select, button { background: var(--surf); color: var(--ink); border: 1px solid var(--line); border-radius: 4px; padding: 4px 8px; font: inherit; }
+  button { cursor: pointer; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px 20px; }
+  .panel { background: var(--surf); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+  .panel h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .5px; color: var(--mut); margin: 0 0 10px; }
+  .row { display: flex; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: none; }
+  .name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar-track { width: 100px; height: 8px; background: var(--bg); border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; }
+  .tag { font-size: 10px; padding: 1px 5px; border-radius: 3px; background: var(--bg); color: var(--mut); }
+  .empty { color: var(--mut); font-style: italic; padding: 8px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Prose Hub</h1>
+  <span class="sub" id="stats">loading...</span>
+  <select id="universe"></select>
+  <input id="nodeId" placeholder="Book/chapter NodeId (GUID) for entity lifecycle" style="width:340px" />
+  <input id="nodeCode" placeholder="Node CODE (e.g. BCODA) for DCM docs" style="width:160px" />
+  <button id="refresh">Refresh</button>
+  <label class="sub"><input type="checkbox" id="auto" checked /> auto (3s)</label>
+</header>
+<div class="grid">
+  <div class="panel">
+    <h2>DCM working set (.md docs) &mdash; DocContextStack</h2>
+    <div id="docs"></div>
+  </div>
+  <div class="panel">
+    <h2>Entity working set &mdash; EntityContextStack (DynamicGraphMemory)</h2>
+    <div id="entities"></div>
+  </div>
+</div>
+
+<script>
+const TOPIC_EVICT_AFTER = 4; // DocContextStack.TopicEvictAfterActions
+const ENTITY_EVICT_AFTER = 4; // EntityContextStack.EvictAfterBeats
+const tierColor = { always: 'var(--always)', node: 'var(--node)', series: 'var(--node)', topic: 'var(--topic)' };
+const depthColor = { 0: 'var(--depth0)', 1: 'var(--depth1)', 2: 'var(--depth2)' };
+
+async function loadUniverses() {
+  const res = await fetch('/api/universes');
+  const universes = await res.json();
+  const sel = document.getElementById('universe');
+  sel.innerHTML = universes.map(u => `<option value="${u.slug}">${u.name} (${u.slug})</option>`).join('');
+}
+
+async function refreshStats() {
+  const slug = document.getElementById('universe').value;
+  if (!slug) return;
+  const res = await fetch(`/api/universes/${slug}/stats`);
+  if (!res.ok) return;
+  const s = await res.json();
+  document.getElementById('stats').textContent = `${slug}: ${s.nodeCount} nodes, ${s.edgeCount} edges`;
+}
+
+async function refreshDocs() {
+  const nodeCode = document.getElementById('nodeCode').value.trim();
+  const res = await fetch(`/api/dcm/status?nodeCode=${encodeURIComponent(nodeCode)}`);
+  const el = document.getElementById('docs');
+  if (!res.ok) { el.innerHTML = '<div class="empty">error loading</div>'; return; }
+  const data = await res.json();
+  if (!data.docs.length) { el.innerHTML = '<div class="empty">nothing resident - enter a node CODE, or nothing is loaded right now</div>'; return; }
+  el.innerHTML = data.docs.map(d => `
+    <div class="row">
+      <span class="tag" style="background:${tierColor[d.tier] || '#666'}22;color:${tierColor[d.tier] || '#666'}">${d.tier}</span>
+      <span class="name" title="${d.relativePath}">${d.relativePath}</span>
+      <span class="sub">${d.reason}</span>
+    </div>`).join('');
+}
+
+async function refreshEntities() {
+  const nodeId = document.getElementById('nodeId').value.trim();
+  const el = document.getElementById('entities');
+  if (!nodeId) { el.innerHTML = '<div class="empty">enter a NodeId to inspect its entity working set</div>'; return; }
+  const res = await fetch(`/api/entities/active?nodeId=${encodeURIComponent(nodeId)}`);
+  if (!res.ok) { el.innerHTML = '<div class="empty">error loading</div>'; return; }
+  const data = await res.json();
+  if (!data.count) { el.innerHTML = '<div class="empty">nothing resident for this node right now</div>'; return; }
+  el.innerHTML = data.entities.map(e => {
+    const age = e.pushedAtBeat != null ? (e.lastMentionedBeat - e.pushedAtBeat) : 0;
+    const staleness = Math.max(0, ENTITY_EVICT_AFTER - (data.currentBeat ?? e.lastMentionedBeat) + e.lastMentionedBeat);
+    const pct = Math.max(4, Math.min(100, 100 * (1 - staleness / ENTITY_EVICT_AFTER)));
+    return `
+    <div class="row">
+      <span class="tag" style="background:${depthColor[e.depth] || '#666'}22;color:${depthColor[e.depth] || '#666'}">d${e.depth}</span>
+      <span class="name" title="${e.entityId}">${e.name}</span>
+      <span class="sub">${e.entityType}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${depthColor[e.depth] || '#666'}"></div></div>
+    </div>`;
+  }).join('');
+}
+
+async function refreshAll() {
+  await Promise.all([refreshStats(), refreshDocs(), refreshEntities()]);
+}
+
+document.getElementById('refresh').addEventListener('click', refreshAll);
+document.getElementById('universe').addEventListener('change', refreshAll);
+document.getElementById('nodeId').addEventListener('change', refreshAll);
+document.getElementById('nodeCode').addEventListener('change', refreshAll);
+
+let timer = null;
+function setupAutoRefresh() {
+  if (timer) clearInterval(timer);
+  if (document.getElementById('auto').checked) timer = setInterval(refreshAll, 3000);
+}
+document.getElementById('auto').addEventListener('change', setupAutoRefresh);
+
+(async function () {
+  await loadUniverses();
+  await refreshAll();
+  setupAutoRefresh();
+})();
+</script>
+</body>
+</html>

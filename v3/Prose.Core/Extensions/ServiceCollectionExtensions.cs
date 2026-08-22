@@ -466,7 +466,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<WorldStateService>(sp =>
         {
             var ws = new WorldStateService(
-                sp.GetRequiredService<WorldGraphService>(),
+                sp.GetRequiredService<UniverseGraphService>(),
                 sp.GetRequiredService<ContinuityService>(),
                 sp.GetRequiredService<IChapterRepository>(),
                 sp.GetRequiredService<CharacterRepository>(),
@@ -525,21 +525,21 @@ public static class ServiceCollectionExtensions
         // run). RefreshIfStale() does the SQL probe + potential rebuild on a
         // background task so app.Run() isn't held up by it — that was the bulk
         // of the 60+ s cold-start cost.
-        services.AddSingleton<WorldGraphService>(sp =>
+        services.AddSingleton<UniverseGraphService>(sp =>
         {
-            var graph = new WorldGraphService(
+            var graph = new UniverseGraphService(
                 sp.GetRequiredService<IPathProvider>(),
                 sp.GetRequiredService<DatabaseService>(),
                 sp.GetRequiredService<IDbContextFactory<ProseDbContext>>());
             graph.EnsureLoaded();
-            var graphLogger = sp.GetRequiredService<ILoggerFactory>().CreateLogger<WorldGraphService>();
+            var graphLogger = sp.GetRequiredService<ILoggerFactory>().CreateLogger<UniverseGraphService>();
             _ = Task.Run(graph.RefreshIfStale)
                 .ContinueWith(t => graphLogger.LogError(t.Exception, "[WorldGraph] RefreshIfStale failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
             return graph;
         });
 
-        services.AddSingleton<IWorldGraphService>(sp => sp.GetRequiredService<WorldGraphService>());
+        services.AddSingleton<IUniverseGraphService>(sp => sp.GetRequiredService<UniverseGraphService>());
 
         // Semantic search — TF-IDF index over all graph entities. Build is gated
         // inside Search/UpdateNode on the `built` flag so first query rebuilds
@@ -555,7 +555,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<RelationshipDiscoveryService>(sp =>
         {
             var discovery = new RelationshipDiscoveryService(
-                sp.GetRequiredService<WorldGraphService>(),
+                sp.GetRequiredService<UniverseGraphService>(),
                 sp.GetRequiredService<SemanticIndexService>(),
                 sp.GetRequiredService<InferenceService>(),
                 sp.GetRequiredService<EmbeddingService>());
@@ -723,7 +723,7 @@ public static class ServiceCollectionExtensions
         // texture, not bugs — only entities that actually appear in shipped prose
         // (BeatEntityPresence) are a real interconnectivity gap worth a follow-up pass.
         services.AddSingleton<GraphHealthService>(sp => new GraphHealthService(
-            sp.GetRequiredService<WorldGraphService>(),
+            sp.GetRequiredService<UniverseGraphService>(),
             sp.GetRequiredService<IDbContextFactory<ProseDbContext>>()));
 
         // Character behavior prediction — psychological modeling
@@ -1190,6 +1190,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityHarvestService>();
         services.AddSingleton<ContextTelemetryService>();
         services.AddSingleton<TelemetryExportService>();
+        services.AddSingleton<BeatArchiveService>();
         services.AddSingleton<DcmVisualizationService>();
         services.AddSingleton<TensionEscalationService>();
         services.AddSingleton<ReaderKnowledgeService>();

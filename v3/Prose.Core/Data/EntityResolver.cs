@@ -29,7 +29,7 @@ public static class EntityResolver
         var e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Name == name);
         if (e != null) return e.Id;
 
-        var slug = Prose.Core.Services.WorldGraphService.Slugify(name);
+        var slug = Prose.Core.Services.UniverseGraphService.Slugify(name);
         e = db.Entities.AsNoTracking().FirstOrDefault(x => x.Slug == slug);
         if (e != null) return e.Id;
 

@@ -24,15 +24,21 @@ public class UniverseTools
 
     private readonly IUniverseContext universe;
     private readonly UniversalFactsService universalFacts;
+    private readonly HubInvoker hub;
 
-    public UniverseTools(IUniverseContext universe, UniversalFactsService universalFacts)
+    public UniverseTools(IUniverseContext universe, UniversalFactsService universalFacts, HubInvoker hub)
     {
         this.universe = universe;
         this.universalFacts = universalFacts;
+        this.hub = hub;
     }
 
     [McpServerTool, Description("List every registered universe (slug, name, theme) and which one is currently active. Call this first to discover universe slugs before switch_universe.")]
-    public string ListUniverses()
+    public Task<string> ListUniverses() =>
+        hub.InvokeAsync(nameof(UniverseTools), nameof(ListUniversesImpl));
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string ListUniversesImpl()
     {
         var current = universe.CurrentSlug;
         var list = universe.ListUniverses()
@@ -42,7 +48,11 @@ public class UniverseTools
     }
 
     [McpServerTool, Description("Switch the active universe for this session by slug (e.g. 'glmz' or 'scry'). All subsequent canon/story reads are scoped to it. Returns the new current universe or an error if the slug is unknown.")]
-    public string SwitchUniverse([Description("Universe slug from list_universes, e.g. 'glmz'.")] string slug)
+    public Task<string> SwitchUniverse([Description("Universe slug from list_universes, e.g. 'glmz'.")] string slug) =>
+        hub.InvokeAsync(nameof(UniverseTools), nameof(SwitchUniverseImpl), new { slug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string SwitchUniverseImpl(string slug)
     {
         if (!universe.UseUniverseBySlug(slug))
             return JsonSerializer.Serialize(new { error = "unknown_universe", slug, hint = "call list_universes for valid slugs" }, JsonOpts);
@@ -50,14 +60,22 @@ public class UniverseTools
     }
 
     [McpServerTool, Description("Return the universe currently active for this session (slug + name).")]
-    public string CurrentUniverse()
+    public Task<string> CurrentUniverse() =>
+        hub.InvokeAsync(nameof(UniverseTools), nameof(CurrentUniverseImpl));
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CurrentUniverseImpl()
     {
         var u = universe.CurrentUniverse;
         return JsonSerializer.Serialize(new { slug = universe.CurrentSlug, name = u?.Name, theme = u?.Theme }, JsonOpts);
     }
 
     [McpServerTool, Description("Return the universal world facts for the current universe — world mechanics, vocabulary, and social rules injected into every beat generation prompt. These apply to all books in the universe. Book-specific facts live in each book's node bible instead.")]
-    public async Task<string> GetUniversalFacts()
+    public Task<string> GetUniversalFacts() =>
+        hub.InvokeAsync(nameof(UniverseTools), nameof(GetUniversalFactsImpl));
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetUniversalFactsImpl()
     {
         var facts = await universalFacts.GetWorldFactsAsync();
         var u = universe.CurrentUniverse;
@@ -71,8 +89,12 @@ public class UniverseTools
     }
 
     [McpServerTool, Description("Set the universal world facts for the current universe. These facts are injected into every beat generation prompt for any book in this universe, so they should cover mechanics and vocabulary that apply everywhere (transport, technology, social structure, prose vocabulary). Book-specific content belongs in the book's node bible, not here.")]
-    public async Task<string> SetUniversalFacts(
-        [Description("The full world facts text in Markdown. Replaces any existing content. Pass empty string to clear.")] string facts)
+    public Task<string> SetUniversalFacts(
+        [Description("The full world facts text in Markdown. Replaces any existing content. Pass empty string to clear.")] string facts) =>
+        hub.InvokeAsync(nameof(UniverseTools), nameof(SetUniversalFactsImpl), new { facts });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> SetUniversalFactsImpl(string facts)
     {
         await universalFacts.SetWorldFactsAsync(facts);
         return JsonSerializer.Serialize(new { ok = true, universe = universe.CurrentSlug, length = facts.Length }, JsonOpts);

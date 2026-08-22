@@ -1,0 +1,25 @@
+@page "/app"
+@using Microsoft.AspNetCore.Components.Web
+@using Prose.ObserverUi.Components
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <title>Prose Observability</title>
+    <link rel="stylesheet" href="_content/Prose.ObserverUi/observer-ui.css" />
+    <script src="_content/Prose.ObserverUi/js/dcm-viz-interop.js"></script>
+    <!-- Bundled CSS-isolation styles (e.g. TabShell.razor.css) from every referenced RCL,
+         concatenated by the build under the HOSTING project's own name/convention - not
+         served from _content/{RclName}/... despite living there at compile/publish time. -->
+    <link rel="stylesheet" href="Prose.Hub.styles.css" />
+    <HeadOutlet @rendermode="RenderMode.InteractiveServer" />
+</head>
+<body>
+    <div id="app-root">
+        <TabShell @rendermode="RenderMode.InteractiveServer" />
+    </div>
+    <script src="_framework/blazor.web.js"></script>
+</body>
+</html>

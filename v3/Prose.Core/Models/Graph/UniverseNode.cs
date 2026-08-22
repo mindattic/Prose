@@ -5,7 +5,7 @@ namespace Prose.Core.Models.Graph;
 /// Properties that change over time (status, location, affiliations) are tracked
 /// via the PropertyHistory list — each entry records what changed and when.
 /// </summary>
-public record WorldNode
+public record UniverseNode
 {
     public string Id { get; init; } = "";
     public string Name { get; init; } = "";

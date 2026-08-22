@@ -106,7 +106,7 @@ public class ChapterRepository : IChapterRepository
                 Id          = id,
                 EntityType  = "chapter",
                 Name        = chapter.Title,
-                Slug        = WorldGraphService.Slugify(chapter.Title),
+                Slug        = UniverseGraphService.Slugify(chapter.Title),
                 Status      = string.IsNullOrEmpty(chapter.Status) ? "draft" : chapter.Status,
                 Description = chapter.Synopsis,
                 CreatedAt   = chapter.Created == default ? DateTime.UtcNow : chapter.Created,
@@ -117,7 +117,7 @@ public class ChapterRepository : IChapterRepository
         else
         {
             entity.Name        = chapter.Title;
-            entity.Slug        = WorldGraphService.Slugify(chapter.Title);
+            entity.Slug        = UniverseGraphService.Slugify(chapter.Title);
             entity.Description = chapter.Synopsis;
             entity.ModifiedAt  = DateTime.UtcNow;
             entity.Status      = string.IsNullOrEmpty(chapter.Status) ? entity.Status : chapter.Status;
@@ -204,7 +204,7 @@ public class ChapterRepository : IChapterRepository
     private static Guid? ResolveCharacterIdByName(ProseDbContext db, string name)
     {
         if (string.IsNullOrWhiteSpace(name)) return null;
-        var slug = WorldGraphService.Slugify(name);
+        var slug = UniverseGraphService.Slugify(name);
         return db.Entities
             .Where(e => e.EntityType == "character"
                 && (e.Name == name || e.Slug == slug))

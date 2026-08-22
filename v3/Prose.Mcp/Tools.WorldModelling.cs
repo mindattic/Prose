@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using ModelContextProtocol.Server;
@@ -20,17 +20,22 @@ public class WorldModellingTools(
     PostBeatValidationService postBeatValidator,
     ProseLessonStore proseLessonStore,
     TimelineConsistencyService timelineSvc,
-    IDbContextFactory<ProseDbContext> dbFactory)
+    IDbContextFactory<ProseDbContext> dbFactory,
+    HubInvoker hub)
 {
     [McpServerTool, Description(
         "Returns a hierarchical relationship tree rooted at an entity, " +
         "traversing the Edge graph up to maxDepth hops. " +
         "Formatted as a prompt-injectable context block. " +
         "Use before generation to understand who/what an entity is connected to.")]
-    public async Task<string> GetEntityTree(
+    public Task<string> GetEntityTree(
         [Description("Entity GUID")] string entityId,
         [Description("Maximum hop depth (default 3)")] int maxDepth = 3,
-        [Description("Comma-separated relation types to follow, e.g. 'carries,wields,member_of'. Omit for all.")] string? relTypes = null)
+        [Description("Comma-separated relation types to follow, e.g. 'carries,wields,member_of'. Omit for all.")] string? relTypes = null) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(GetEntityTreeImpl), new { entityId, maxDepth, relTypes });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetEntityTreeImpl(string entityId, int maxDepth = 3, string? relTypes = null)
     {
         if (!Guid.TryParse(entityId, out var id))
             return JsonSerializer.Serialize(new { error = "invalid_guid", entityId }, CanonTools.JsonOpts);
@@ -44,9 +49,13 @@ public class WorldModellingTools(
         "Returns the world-state snapshot at a given beat: " +
         "all entity aspect states (wounds, location, status…) + active relationships. " +
         "Use to inject consistent 'what is true right now' context before writing a beat.")]
-    public async Task<string> GetWorldStateAtBeat(
+    public Task<string> GetWorldStateAtBeat(
         [Description("Beat GUID")] string beatId,
-        [Description("Story-world timestamp override, ISO 8601. Inferred from beat events when omitted.")] string? storyTime = null)
+        [Description("Story-world timestamp override, ISO 8601. Inferred from beat events when omitted.")] string? storyTime = null) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(GetWorldStateAtBeatImpl), new { beatId, storyTime });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetWorldStateAtBeatImpl(string beatId, string? storyTime = null)
     {
         if (!Guid.TryParse(beatId, out var bid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
@@ -61,9 +70,13 @@ public class WorldModellingTools(
     [McpServerTool, Description(
         "Returns the sensory detail palette for a character's carried gear. " +
         "Inject the result into a beat prompt to ground sensory texture in what the character actually carries.")]
-    public async Task<string> GetAmbientPalette(
+    public Task<string> GetAmbientPalette(
         [Description("Character entity GUID")] string characterId,
-        [Description("Story-date filter (ISO 8601). Omit for current carry edges.")] string? asOfDate = null)
+        [Description("Story-date filter (ISO 8601). Omit for current carry edges.")] string? asOfDate = null) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(GetAmbientPaletteImpl), new { characterId, asOfDate });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetAmbientPaletteImpl(string characterId, string? asOfDate = null)
     {
         if (!Guid.TryParse(characterId, out var cid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", characterId }, CanonTools.JsonOpts);
@@ -80,10 +93,14 @@ public class WorldModellingTools(
         "Scans prose text for gear usage verbs (drew, fired, aimed…) and checks " +
         "whether the subject character has a carry/wield edge for each named prop. " +
         "Returns a JSON array of violations — empty array means clean.")]
-    public async Task<string> CheckGearCarry(
+    public Task<string> CheckGearCarry(
         [Description("Beat prose text to scan")] string beatText,
         [Description("Character entity GUID (the POV/subject character)")] string characterId,
-        [Description("Story-date for edge validation (ISO 8601). Omit to use all-time carry edges.")] string? storyTime = null)
+        [Description("Story-date for edge validation (ISO 8601). Omit to use all-time carry edges.")] string? storyTime = null) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(CheckGearCarryImpl), new { beatText, characterId, storyTime });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> CheckGearCarryImpl(string beatText, string characterId, string? storyTime = null)
     {
         if (!Guid.TryParse(characterId, out var cid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", characterId }, CanonTools.JsonOpts);
@@ -106,9 +123,13 @@ public class WorldModellingTools(
         "LLM-checks prose text against a character's behavioral rules (decision_rules, " +
         "escalation_ladder, contradictions, habits, breaking_points). " +
         "Returns a JSON array of violations — empty array means the prose is consistent.")]
-    public async Task<string> CheckBehavior(
+    public Task<string> CheckBehavior(
         [Description("Beat prose text to check")] string beatText,
-        [Description("Character entity GUID")] string characterId)
+        [Description("Character entity GUID")] string characterId) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(CheckBehaviorImpl), new { beatText, characterId });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> CheckBehaviorImpl(string beatText, string characterId)
     {
         if (!Guid.TryParse(characterId, out var cid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", characterId }, CanonTools.JsonOpts);
@@ -128,8 +149,12 @@ public class WorldModellingTools(
         "Detects: clichés (chrome gleam, heart hammered…), pseudo-profound constructs " +
         "(in that moment, it hit him that…), on-the-nose interiority, and italicised dialogue. " +
         "Returns a JSON array of violations.")]
-    public string CheckProse(
-        [Description("Prose text to lint")] string text)
+    public Task<string> CheckProse(
+        [Description("Prose text to lint")] string text) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(CheckProseImpl), new { text });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string CheckProseImpl(string text)
     {
         var violations = proseGuard.Check(text);
         return JsonSerializer.Serialize(violations.Select(v => new
@@ -146,8 +171,12 @@ public class WorldModellingTools(
         "Returns the ammo network for a weapon: its ammunition types + sibling weapons " +
         "that share at least one chambering. Use for continuity (scavenging compatible rounds, " +
         "borrowing ammo between characters) and world enrichment.")]
-    public async Task<string> GetWeaponNetwork(
-        [Description("Weapon entity GUID")] string weaponId)
+    public Task<string> GetWeaponNetwork(
+        [Description("Weapon entity GUID")] string weaponId) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(GetWeaponNetworkImpl), new { weaponId });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetWeaponNetworkImpl(string weaponId)
     {
         if (!Guid.TryParse(weaponId, out var wid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", weaponId }, CanonTools.JsonOpts);
@@ -164,9 +193,13 @@ public class WorldModellingTools(
     [McpServerTool, Description(
         "Returns a character's weapon loadout from their signature_gear list, " +
         "with ammo types for each weapon. Use for scene continuity and logistics.")]
-    public async Task<string> GetCharacterLoadout(
+    public Task<string> GetCharacterLoadout(
         [Description("Character entity GUID")] string characterId,
-        [Description("Story-date filter (ISO 8601). Omit for all-time loadout.")] string? asOfDate = null)
+        [Description("Story-date filter (ISO 8601). Omit for all-time loadout.")] string? asOfDate = null) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(GetCharacterLoadoutImpl), new { characterId, asOfDate });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetCharacterLoadoutImpl(string characterId, string? asOfDate = null)
     {
         if (!Guid.TryParse(characterId, out var cid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", characterId }, CanonTools.JsonOpts);
@@ -191,8 +224,12 @@ public class WorldModellingTools(
         "Returns a character's full equipment across all slots: primary/secondary/ranged weapons, " +
         "armor, tool, signature gear, pharmaceuticals, and carried loot. " +
         "Use for scene continuity, loot tracking, and loadout management.")]
-    public async Task<string> GetCharacterEquipment(
-        [Description("Character entity slug (e.g. 'kyle_ellen_corbin', 'sasha_vo').")] string characterSlug)
+    public Task<string> GetCharacterEquipment(
+        [Description("Character entity slug (e.g. 'kyle_ellen_corbin', 'sasha_vo').")] string characterSlug) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(GetCharacterEquipmentImpl), new { characterSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetCharacterEquipmentImpl(string characterSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
 
@@ -241,7 +278,11 @@ public class WorldModellingTools(
         "Returns every beat flagged EntityStale — i.e. a canon entity mentioned in " +
         "the beat was updated after the beat was written. Grouped by node. " +
         "Review each beat and call clear_entity_stale when satisfied.")]
-    public async Task<string> ListEntityStaleBeats()
+    public Task<string> ListEntityStaleBeats() =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(ListEntityStaleBeatsImpl), new { });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ListEntityStaleBeatsImpl()
     {
         var beats = await ramificationSvc.GetEntityStaleBeatsAsync();
         if (beats.Count == 0)
@@ -261,8 +302,12 @@ public class WorldModellingTools(
     [McpServerTool, Description(
         "Clears the EntityStale flag on a beat after the author has reviewed it " +
         "and confirmed the prose is still consistent with current entity canon.")]
-    public async Task<string> ClearEntityStale(
-        [Description("Beat GUID")] string beatId)
+    public Task<string> ClearEntityStale(
+        [Description("Beat GUID")] string beatId) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(ClearEntityStaleImpl), new { beatId });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ClearEntityStaleImpl(string beatId)
     {
         if (!Guid.TryParse(beatId, out var bid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
@@ -279,11 +324,15 @@ public class WorldModellingTools(
         "All violations are filed as Findings and returned. " +
         "Accepts an optional comma-separated list of character GUIDs; when omitted, " +
         "characters are derived from the beat's indexed entity mentions.")]
-    public async Task<string> ValidateBeat(
+    public Task<string> ValidateBeat(
         [Description("Beat GUID.")] string beatId,
         [Description("Comma-separated character GUIDs to check gear/behavior for. Omit to auto-detect from entity mentions.")] string? characterIds = null,
         [Description("Run the LLM-based behavior invariant check (one LLM call per character). Default false.")] bool checkBehavior = false,
-        [Description("Story-date for gear edge validation (ISO 8601). Omit for all-time carry edges.")] string? storyTime = null)
+        [Description("Story-date for gear edge validation (ISO 8601). Omit for all-time carry edges.")] string? storyTime = null) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(ValidateBeatImpl), new { beatId, characterIds, checkBehavior, storyTime });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ValidateBeatImpl(string beatId, string? characterIds = null, bool checkBehavior = false, string? storyTime = null)
     {
         if (!Guid.TryParse(beatId, out var bid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
@@ -321,8 +370,12 @@ public class WorldModellingTools(
         "use it after importing or rewriting a node to catch all clichés, " +
         "pseudo-profound constructs, on-the-nose interiority, and italicised dialogue " +
         "in one pass. Returns a per-beat summary of violations found.")]
-    public async Task<string> ScanBookViolations(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug)
+    public Task<string> ScanBookViolations(
+        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(ScanBookViolationsImpl), new { nodeIdOrSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ScanBookViolationsImpl(string nodeIdOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         Guid nodeId;
@@ -391,10 +444,14 @@ public class WorldModellingTools(
         "penalise beats the author has already decided are doing their job in the sequence. " +
         "scope: 'global' applies to all nodes; 'node:<slug>' to one node; 'beat:<guid>' to one beat. " +
         "kind: score-vs-function | delight | voice | pacing | continuity | other.")]
-    public string AddProseLesson(
+    public Task<string> AddProseLesson(
         [Description("Scope: 'global', 'node:<slug>', or 'beat:<guid>'")] string scope,
         [Description("Kind: score-vs-function | delight | voice | pacing | continuity | other")] string kind,
-        [Description("The ruling text — what reviewers must respect.")] string text)
+        [Description("The ruling text — what reviewers must respect.")] string text) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(AddProseLessonImpl), new { scope, kind, text });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string AddProseLessonImpl(string scope, string kind, string text)
     {
         if (string.IsNullOrWhiteSpace(scope))
             return JsonSerializer.Serialize(new { error = "scope_required" }, CanonTools.JsonOpts);
@@ -412,8 +469,12 @@ public class WorldModellingTools(
         "When scope is omitted, returns all lessons across all scopes. " +
         "When scope is provided, returns only lessons whose scope starts with that prefix " +
         "(e.g. 'global' for all global lessons, 'node:my-slug' for a specific node).")]
-    public string ListProseLessons(
-        [Description("Optional scope filter prefix (e.g. 'global', 'node:my-slug'). Omit for all.")] string? scope = null)
+    public Task<string> ListProseLessons(
+        [Description("Optional scope filter prefix (e.g. 'global', 'node:my-slug'). Omit for all.")] string? scope = null) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(ListProseLessonsImpl), new { scope });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string ListProseLessonsImpl(string? scope = null)
     {
         var all = proseLessonStore.ListAll();
         if (!string.IsNullOrWhiteSpace(scope))
@@ -443,8 +504,12 @@ public class WorldModellingTools(
         "the same condition. " +
         "Returns a list of findings with kind, entityId, entityName, beatNumber, detail, severity. " +
         "Returns an empty array when no events are in the ledger for this node — never throws.")]
-    public async Task<string> CheckTimeline(
-        [Description("Node slug or GUID")] string slugOrId)
+    public Task<string> CheckTimeline(
+        [Description("Node slug or GUID")] string slugOrId) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(CheckTimelineImpl), new { slugOrId });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> CheckTimelineImpl(string slugOrId)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
 

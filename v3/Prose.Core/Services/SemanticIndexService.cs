@@ -10,7 +10,7 @@ namespace Prose.Core.Services;
 /// </summary>
 public class SemanticIndexService
 {
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
 
     // TF-IDF vectors: nodeId -> (term -> weight)
     private Dictionary<string, Dictionary<string, double>> _vectors = new();
@@ -35,7 +35,7 @@ public class SemanticIndexService
         "her", "his", "we", "our", "you", "your", "up", "any", "much", "many", "like"
     };
 
-    public SemanticIndexService(WorldGraphService graph)
+    public SemanticIndexService(UniverseGraphService graph)
     {
         this.graph = graph;
     }

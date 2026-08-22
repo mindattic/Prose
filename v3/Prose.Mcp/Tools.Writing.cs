@@ -27,23 +27,35 @@ public class WritingTools
 {
     private readonly IBookRepository books;
     private readonly IChapterRepository chapters;
+    private readonly HubInvoker hub;
 
-    public WritingTools(IBookRepository books, IChapterRepository chapters)
+    public WritingTools(IBookRepository books, IChapterRepository chapters, HubInvoker hub)
     {
         this.books = books;
         this.chapters = chapters;
+        this.hub = hub;
     }
 
     /// <summary>Create or upsert a legacy Book record (retired Book/Chapter schema — new work uses create_series / create_book).</summary>
     [McpServerTool, Description("LEGACY Book/Chapter schema — new work should use create_series / create_book instead. Create or upsert a Book record. Pass an empty id to create a new book (a v7 GUID is assigned and returned); pass a known id to update an existing book. Returns the persisted Book including assigned id.")]
-    public string CreateLegacyBook(
+    public Task<string> CreateLegacyBook(
         [Description("Book title. Required.")] string title,
         [Description("One-paragraph premise — feeds the chapter director when extending.")] string premise,
         [Description("Comma-separated protagonist names — first name is the lead. Resolved against character canon.")] string protagonists,
         [Description("What this book is *about* and where it lands. Used as the extension target. Optional.")] string arcTarget = "",
         [Description("Optional tagline shown beneath the title on the bookshelf card.")] string tagline = "",
         [Description("Book status: drafting | preserved | published | archived. Defaults to 'drafting'.")] string status = "drafting",
-        [Description("Optional book id to update an existing record. Empty creates a new book.")] string id = "")
+        [Description("Optional book id to update an existing record. Empty creates a new book.")] string id = "") =>
+        hub.InvokeAsync(nameof(WritingTools), nameof(CreateLegacyBookImpl), new { title, premise, protagonists, arcTarget, tagline, status, id });
+
+    public string CreateLegacyBookImpl(
+        string title,
+        string premise,
+        string protagonists,
+        string arcTarget = "",
+        string tagline = "",
+        string status = "drafting",
+        string id = "")
     {
         var book = string.IsNullOrEmpty(id) ? new Book() : (books.LoadBook(id) ?? new Book { Id = id });
         book.Title      = title;
@@ -61,7 +73,7 @@ public class WritingTools
 
     /// <summary>Create or upsert a legacy Chapter record (retired Book/Chapter schema — new work uses create_chapter on the node tree).</summary>
     [McpServerTool, Description("LEGACY Book/Chapter schema — new work should use create_chapter (node tree) instead. Create or upsert a Chapter record. Pass an empty id to create new; pass a known id to update. Returns the persisted Chapter including assigned id.")]
-    public string CreateLegacyChapter(
+    public Task<string> CreateLegacyChapter(
         [Description("Chapter title. Required.")] string title,
         [Description("One-paragraph chapter synopsis. Required.")] string synopsis,
         [Description("Full chapter prose. HTML or plain text — plain text is wrapped in <p> tags on render.")] string html,
@@ -69,7 +81,18 @@ public class WritingTools
         [Description("Parent book id. Empty leaves the chapter orphaned.")] string bookId = "",
         [Description("Chapter number within the book (1-indexed). Ignored when bookId is empty.")] int number = 0,
         [Description("Chapter status: draft | revising | reviewed | published. Defaults to 'draft'.")] string status = "draft",
-        [Description("Optional chapter id to update an existing record. Empty creates new.")] string id = "")
+        [Description("Optional chapter id to update an existing record. Empty creates new.")] string id = "") =>
+        hub.InvokeAsync(nameof(WritingTools), nameof(CreateLegacyChapterImpl), new { title, synopsis, html, characters, bookId, number, status, id });
+
+    public string CreateLegacyChapterImpl(
+        string title,
+        string synopsis,
+        string html,
+        string characters,
+        string bookId = "",
+        int number = 0,
+        string status = "draft",
+        string id = "")
     {
         if (!string.IsNullOrEmpty(id) && chapters.LoadChapter(id) == null)
             return $"Chapter not found: {id}";
@@ -108,10 +131,16 @@ public class WritingTools
 
     /// <summary>Append an existing chapter id to a book's chapter_ids list. Use when a chapter and a book were created independently.</summary>
     [McpServerTool, Description("Append an existing chapter id to a book's chapter_ids list. Use when a chapter and a book were created independently. Sets the chapter's BookId and Number to match. Idempotent — re-running with the same chapter moves it to the requested position.")]
-    public string AddChapterToBook(
+    public Task<string> AddChapterToBook(
         [Description("Book id.")] string bookId,
         [Description("Chapter id to attach.")] string chapterId,
-        [Description("Chapter position (1-indexed). 0 = append.")] int number = 0)
+        [Description("Chapter position (1-indexed). 0 = append.")] int number = 0) =>
+        hub.InvokeAsync(nameof(WritingTools), nameof(AddChapterToBookImpl), new { bookId, chapterId, number });
+
+    public string AddChapterToBookImpl(
+        string bookId,
+        string chapterId,
+        int number = 0)
     {
         var book = books.LoadBook(bookId);
         if (book == null) return JsonSerializer.Serialize(new { error = "book_not_found", bookId }, CanonTools.JsonOpts);

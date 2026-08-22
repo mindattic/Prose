@@ -18,13 +18,13 @@ namespace Prose.Core.Services;
 /// </summary>
 public class RelationshipDiscoveryService
 {
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly SemanticIndexService semanticIndex;
     private readonly InferenceService inference;
     private readonly EmbeddingService embeddings;
 
     public RelationshipDiscoveryService(
-        WorldGraphService graph,
+        UniverseGraphService graph,
         SemanticIndexService semanticIndex,
         InferenceService inference,
         EmbeddingService embeddings)
@@ -66,7 +66,7 @@ public class RelationshipDiscoveryService
     {
         if (string.IsNullOrWhiteSpace(entityName)) return Array.Empty<SemanticEdgeSuggestion>();
 
-        var sourceId = WorldGraphService.Slugify(entityName);
+        var sourceId = UniverseGraphService.Slugify(entityName);
         var sourceNode = graph.GetNode(sourceId);
         if (sourceNode == null) return Array.Empty<SemanticEdgeSuggestion>();
 
@@ -95,7 +95,7 @@ public class RelationshipDiscoveryService
         {
             if (hit.Similarity < minSimilarity) break;     // hits are sorted desc
             if (string.Equals(hit.EntityName, entityName, StringComparison.OrdinalIgnoreCase)) continue;
-            var candidateNodeId = WorldGraphService.Slugify(hit.EntityName);
+            var candidateNodeId = UniverseGraphService.Slugify(hit.EntityName);
             if (candidateNodeId == sourceId) continue;
             if (connectedIds.Contains(candidateNodeId)) continue;
             suggestions.Add(new SemanticEdgeSuggestion(
@@ -111,7 +111,7 @@ public class RelationshipDiscoveryService
     /// </summary>
     public int DiscoverFromEntity(string entityName, string entityType)
     {
-        var nodeId = WorldGraphService.Slugify(entityName);
+        var nodeId = UniverseGraphService.Slugify(entityName);
         var node = graph.GetNode(nodeId);
         if (node == null) return 0;
 
@@ -145,7 +145,7 @@ public class RelationshipDiscoveryService
                 var existingEdges = graph.GetRelationshipsBetween(nodeId, other.Id);
                 if (existingEdges.Any()) continue;
 
-                graph.AddEdge(new WorldEdge
+                graph.AddEdge(new UniverseEdge
                 {
                     Source = nodeId,
                     Target = other.Id,
@@ -175,7 +175,7 @@ public class RelationshipDiscoveryService
     /// </summary>
     public int DiscoverFromCharacter(string characterName, Dictionary<string, double> archetypes, CharacterBelongings? belongings)
     {
-        var charId = WorldGraphService.Slugify(characterName);
+        var charId = UniverseGraphService.Slugify(characterName);
         if (graph.GetNode(charId) == null) return 0;
         int edges = 0;
 
@@ -183,11 +183,11 @@ public class RelationshipDiscoveryService
         foreach (var (archName, score) in archetypes)
         {
             if (score < 0.4) continue;
-            var archId = WorldGraphService.Slugify(archName);
+            var archId = UniverseGraphService.Slugify(archName);
             // Ensure archetype node exists
             if (graph.GetNode(archId) == null)
             {
-                graph.AddNode(new WorldNode
+                graph.AddNode(new UniverseNode
                 {
                     Id = archId, Name = archName, NodeType = "archetype",
                     Properties = new Dictionary<string, string> { ["score"] = score.ToString("F1") }
@@ -196,7 +196,7 @@ public class RelationshipDiscoveryService
             var existing = graph.GetRelationshipsBetween(charId, archId);
             if (!existing.Any())
             {
-                graph.AddEdge(new WorldEdge
+                graph.AddEdge(new UniverseEdge
                 {
                     Source = charId,
                     Target = archId,
@@ -236,17 +236,17 @@ public class RelationshipDiscoveryService
     private int TryBelongingEdge(string charId, string charName, string itemName, string relType)
     {
         if (string.IsNullOrWhiteSpace(itemName)) return 0;
-        var itemId = WorldGraphService.Slugify(itemName);
+        var itemId = UniverseGraphService.Slugify(itemName);
         var existing = graph.GetRelationshipsBetween(charId, itemId);
         if (existing.Any()) return 0;
 
         // Create item node if missing
         if (graph.GetNode(itemId) == null)
         {
-            graph.AddNode(new WorldNode { Id = itemId, Name = itemName, NodeType = "item", Properties = new() });
+            graph.AddNode(new UniverseNode { Id = itemId, Name = itemName, NodeType = "item", Properties = new() });
         }
 
-        graph.AddEdge(new WorldEdge
+        graph.AddEdge(new UniverseEdge
         {
             Source = charId,
             Target = itemId,
@@ -284,7 +284,7 @@ public class RelationshipDiscoveryService
         var existing = graph.GetRelationshipsBetween(sourceId, targetId);
         if (existing.Any(e => e.RelationType == relationType)) return 0;
 
-        graph.AddEdge(new WorldEdge
+        graph.AddEdge(new UniverseEdge
         {
             Source = sourceId,
             Target = targetId,

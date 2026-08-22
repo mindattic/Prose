@@ -231,7 +231,7 @@ public class BeatStateExtractor
         Dictionary<string, Guid?> cache, CancellationToken ct)
     {
         if (cache.TryGetValue(name, out var hit)) return hit;
-        var slug = WorldGraphService.Slugify(name);
+        var slug = UniverseGraphService.Slugify(name);
         var id = await db.Entities.AsNoTracking()
             .Where(e => (e.Name == name || e.Slug == slug))
             .Select(e => (Guid?)e.Id)

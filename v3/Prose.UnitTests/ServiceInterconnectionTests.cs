@@ -19,8 +19,8 @@ namespace Prose.UnitTests;
 ///  • <see cref="BookOutlineSyncTests"/>            BookRepository ↔ ChapterRepository ↔ BookOutlineService
 ///  • <see cref="MotifPipelineTests"/>              MotifService Plant → Load → Propose
 ///  • <see cref="WritingQualityHeuristicTests"/>    WritingQualityService over Book + Chapters + Motifs
-///  • <see cref="SemanticIndexUpdateTests"/>        WorldGraphService ↔ SemanticIndexService incremental update
-///  • <see cref="NarrativeSessionTests"/>           NarrativeSessionContext → WorldGraphService + SemanticIndexService
+///  • <see cref="SemanticIndexUpdateTests"/>        UniverseGraphService ↔ SemanticIndexService incremental update
+///  • <see cref="NarrativeSessionTests"/>           NarrativeSessionContext → UniverseGraphService + SemanticIndexService
 /// </summary>
 internal static class _Doc { /* doc anchor */ }
 

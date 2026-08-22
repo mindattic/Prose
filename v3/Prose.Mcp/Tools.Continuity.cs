@@ -44,19 +44,22 @@ public class ContinuityTools
     private readonly IChapterRepository chapters;
     private readonly CharacterRepository characters;
     private readonly ILogger<ContinuityTools> log;
+    private readonly HubInvoker hub;
 
     public ContinuityTools(
         IPathProvider paths,
         IBookRepository books,
         IChapterRepository chapters,
         CharacterRepository characters,
-        ILogger<ContinuityTools> log)
+        ILogger<ContinuityTools> log,
+        HubInvoker hub)
     {
         this.paths = paths;
         this.books = books;
         this.chapters = chapters;
         this.characters = characters;
         this.log = log;
+        this.hub = hub;
     }
 
     // Builds a self-contained JSON bundle of book + chapters + character profiles
@@ -335,7 +338,7 @@ public class ContinuityTools
         "synopsisOnly=true for cheaper triage that skips prose-level facts. Returns a JSON " +
         "report with per-chapter findings and a consolidated cross-book finding list. " +
         "Exit-code-equivalent convention: ok=true means no contradictions; ok=false means findings exist.")]
-    public async Task<string> FindContradictionsBook(
+    public Task<string> FindContradictionsBook(
         [Description("Book id (32-char hex), resolved from the SQL canon (IBookRepository) with its chapters — the pre-SS-A45 engine/data/books/<id>.json disk layout was retired 2026-05-08.")]
             string bookId,
         [Description("Quorum requirement for the contradiction vote: plurality | simplemajority | twothirds | unanimous. Default plurality (most permissive — surfaces every voter's concerns).")]
@@ -345,7 +348,15 @@ public class ContinuityTools
         [Description("Hard cap on canon-context characters per chapter pass. Default 0 = let the script choose (400000 with prose, 120000 with synopsisOnly). Lower this if hitting provider context limits.")]
             int maxContextChars = 0,
         [Description("If true, feed only chapter synopses (not full prose) as canon. Cheaper but misses prose-level facts like handedness or specific physical actions. Default false (prose included).")]
-            bool synopsisOnly = false)
+            bool synopsisOnly = false) =>
+        hub.InvokeAsync(nameof(ContinuityTools), nameof(FindContradictionsBookImpl), new { bookId, quorum, maxTokens, maxContextChars, synopsisOnly });
+
+    public async Task<string> FindContradictionsBookImpl(
+        string bookId,
+        string quorum = "plurality",
+        int maxTokens = 4096,
+        int maxContextChars = 0,
+        bool synopsisOnly = false)
     {
         var scriptPath = Path.Combine("tools", "check-contradictions.js");
         var resolvedScriptPath = Path.GetFullPath(scriptPath);

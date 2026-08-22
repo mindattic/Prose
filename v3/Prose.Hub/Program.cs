@@ -1,0 +1,465 @@
+using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
+using MindAttic.Authentication;
+using MindAttic.Authentication.Web;
+using MindAttic.Vault.Configuration;
+using Prose.Core.Data;
+using Prose.Core.Data.Entities;
+using Prose.Core.Extensions;
+using Prose.Core.Interfaces;
+using Prose.Core.Models.Graph;
+using Prose.Core.Services;
+using Prose.Hub;
+using Prose.ObserverUi;
+using Serilog;
+using Serilog.Events;
+
+// ── Prose Hub ─────────────────────────────────────────────────────────────
+// The standalone always-on process holding the resident "Trinity" - the
+// UniverseGraphService (in-memory entity/edge graph), DocContextStack (the
+// DCM working set), and bible/beat access via the same repositories every
+// other Prose.* front end uses. Prose.Cli and Prose.Mcp are meant to become
+// thin clients of this over plain loopback HTTP; Claude Code can hit it
+// directly via curl for the same reason - no dependency on any one client's
+// connection staying up. A plain console app that happens to serve HTTP -
+// not a public web site, loopback-only.
+//
+// Multi-universe correctness: every request that touches universe-scoped
+// data resolves its {slug} to a universe id and calls
+// IUniverseContext.SetFlowUniverse(id) - the AsyncLocal-backed per-flow
+// override - NOT UseUniverse (which is process-wide and would bleed across
+// concurrent requests for different universes). See UniverseGraphService's
+// own per-universe GraphState dictionary for the matching fix on the graph
+// side.
+
+// Force Prose.Cli.dll to actually load into this process. Unlike Prose.Mcp (loaded
+// automatically because HubInvoker, a Prose.Mcp type, is registered in DI below),
+// nothing here has a direct compile-time reference to any Prose.Cli type - CliDispatch
+// only touches it via runtime reflection - so the CLR would otherwise never load the
+// assembly at all, and AppDomain.CurrentDomain.GetAssemblies() in CliDispatch would
+// never find the Cli/*.cs handler classes (found live: "unknown_handler_class").
+_ = typeof(Prose.Cli.BookCli).Assembly;
+
+// Observability plan Part E (2026-08-21): durable, searchable logs. Prose.Core/Services/
+// LoggingService.cs already exists (still registered in AddProseServices()) and already
+// implements time-range/severity/free-text search over Serilog daily log files - it's what
+// the old, deleted Codex Logging.razor page called. Prose.Mcp already configures a Serilog
+// file sink (mcp-.txt); the Hub - the process that now does essentially all the real work
+// post-migration - never did, so it had no durable log at all, only the in-memory,
+// restart-losing RingBufferLoggerProvider. Writing to "log-.txt" (not "hub-.txt") matters:
+// LoggingService.Search hardcodes the glob "log-*.txt", so this filename makes every Hub log
+// line searchable via that existing service with zero changes to it. Constructed manually
+// (mirrors Prose.Mcp/Program.cs's own pattern) since this runs before the DI container exists.
+var hubLogSettings = new SettingsService();
+var hubLogPaths = new FileSystemPathProvider(hubLogSettings);
+var hubLogPath = Path.Combine(hubLogPaths.LogDir, "log-.txt");
+var hubSerilogLogger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+    .MinimumLevel.Override("Microsoft.EntityFrameworkCore.Database.Command", LogEventLevel.Warning)
+    .WriteTo.File(hubLogPath, rollingInterval: RollingInterval.Day, retainedFileCountLimit: 14, shared: true)
+    .CreateLogger();
+
+var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls("http://127.0.0.1:5900");
+
+// Added as ONE additional provider (deliberately no ClearProviders() - unlike Mcp, which
+// needs pure stdio hygiene) - coexists with RingBufferLoggerProvider (registered below) on
+// the same pipeline: one for live-tail, one for durable/searchable history.
+builder.Logging.AddSerilog(hubSerilogLogger, dispose: true);
+
+// Stage C completion: the 9 CLI commands that used Program.cs's BuildServicesWithVault(AndAuth)
+// builders (rather than plain BuildCoreServices) need Vault-loaded config and, for
+// --reset-password specifically, the full MindAttic.Authentication registration - neither was
+// present in the Hub's own service provider, so forwarding them would have failed with a
+// missing-service error. Registered unconditionally (superset of both builders' needs) so
+// every migrated command shares the one resident service provider, matching every other
+// forwarded command instead of needing a second, parallel DI container.
+builder.Configuration.AddMindAtticVaultFiles(o => o.Buckets = new[]
+    { "LLM", "Brokers", "Tokens", "Subtitles", "Notifications", "AudioStore", "Security" });
+SettingsService.VaultConfiguration = builder.Configuration;
+builder.Services.AddProseServices();
+try
+{
+    // AddMindAtticAuthentication itself fail-closes (throws) when IsProduction=true and no
+    // ConfigureDataProtection was supplied - a deliberate library safety check, not a bug.
+    // Found live: this machine has neither DOTNET_ENVIRONMENT nor ASPNETCORE_ENVIRONMENT set,
+    // so EnvironmentName defaults to "Production" and this throws today - confirmed the exact
+    // same call in Prose.Cli's own BuildServicesWithVaultAndAuth would throw identically if
+    // --reset-password were actually invoked directly on this machine right now, so this is
+    // pre-existing environment behavior, not a regression from moving it here. The one thing
+    // that must never happen: this one rarely-used operator command's setup taking down the
+    // whole Hub (and therefore every other migrated command/tool) at startup. If this throws,
+    // log it and continue without auth registered - only --reset-password becomes unavailable
+    // via the Hub (it already returns hub_unreachable-style failures for anything needing a
+    // service that didn't register), not the other ~430 working commands/tools.
+    builder.Services.AddMindAtticAuthentication<ProseAuthDbContext>(
+        builder.Configuration,
+        o =>
+        {
+            o.AppName = "Prose";
+            o.IsProduction = !string.Equals(builder.Environment.EnvironmentName, "Development", StringComparison.OrdinalIgnoreCase);
+        });
+}
+catch (Exception ex)
+{
+    Console.Error.WriteLine($"[hub] MindAttic.Authentication registration failed, continuing without it - " +
+        $"--reset-password will be unavailable via the Hub: {ex.Message}");
+}
+
+// Phase 2 migration: tool classes referenced from Prose.Mcp.dll (see ToolDispatch.cs) take
+// HubInvoker as a constructor dependency for their thin forwarding methods. The Hub's own
+// in-process copy only ever calls the {Name}Impl sibling (never the forwarding method itself),
+// so HubInvoker is never actually invoked here - it just needs to resolve so
+// ActivatorUtilities.CreateInstance can construct the class at all.
+builder.Services.AddHttpClient("ProseHub", c => c.BaseAddress = new Uri("http://127.0.0.1:5900/"));
+builder.Services.AddSingleton<Prose.Mcp.HubInvoker>();
+
+// Observability plan (2026-08-20), Part C, Phase 3: makes the Hub's own console output
+// (invisible today - it runs with a hidden window) observable. Two-step registration is
+// required for an ILoggerProvider that also needs to be resolvable later (Phase 4 wires its
+// OnLine callback to push each line over SignalR) - it must be both a plain singleton AND
+// registered into the logging pipeline as the same instance.
+builder.Services.AddSingleton<Prose.Hub.Logging.RingBufferLoggerProvider>();
+builder.Logging.Services.AddSingleton<Microsoft.Extensions.Logging.ILoggerProvider>(
+    sp => sp.GetRequiredService<Prose.Hub.Logging.RingBufferLoggerProvider>());
+// EF Core's default Information-level command logging dumps the full SQL text + every
+// parameter on every query - found live the moment the ring buffer actually had a reader
+// (/api/logs/recent): it would drown out every genuinely useful line. Warning-and-above
+// still surfaces real EF problems (e.g. slow-query/exception logging), just not routine
+// successful commands.
+builder.Logging.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", Microsoft.Extensions.Logging.LogLevel.Warning);
+
+// Observability plan, Phase 4: live push transport for logs/DCM/graph deltas. SignalR over
+// SSE/polling because the same client code path serves both UI hosts (the Blazor-Server-in-
+// Hub web head and the MAUI Blazor Hybrid head) with automatic reconnection built in.
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<Prose.Hub.ObservabilityBridge>();
+
+// Observability plan, Phase 5: the Hub hosts the shared observability UI directly as an
+// interactive Blazor Server web head, at /app - no separate process, since the Hub already
+// holds every resident singleton the UI needs to observe. AddProseObserverUi is called with
+// this same process's own loopback address; Prose.Maui (a different process, Phase 9) calls
+// it with the same base URL from the outside instead.
+builder.Services.AddRazorComponents().AddInteractiveServerComponents();
+builder.Services.AddProseObserverUi("http://127.0.0.1:5900");
+
+var app = builder.Build();
+
+// Subscribes ONCE to every Phase-3 event and forwards to ObservabilityHub - see
+// ObservabilityBridge's own doc comment. Must run after Build() so DI can resolve
+// IHubContext<ObservabilityHub> (registered by AddSignalR/MapHub).
+app.Services.GetRequiredService<Prose.Hub.ObservabilityBridge>().Wire();
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.UseAntiforgery(); // required by MapRazorComponents (Phase 5) - found live via /api/logs/recent
+app.MapHub<Prose.Hub.Hubs.ObservabilityHub>("/hubs/observability");
+// Observability plan, Phase 5: App.razor declares @page "/app" itself and is the only
+// routable component (TabShell does client-side tab switching, not URL routing) - so this
+// maps exactly one addressable route without needing a Router/Routes indirection. "/"
+// keeps serving the existing static wwwroot/index.html dashboard untouched.
+app.MapRazorComponents<Prose.Hub.Components.App>().AddInteractiveServerRenderMode();
+
+var uc = app.Services.GetRequiredService<IUniverseContext>();
+
+Guid? ResolveUniverseId(string slug)
+{
+    foreach (var u in uc.ListUniverses())
+        if (string.Equals(u.Slug, slug, StringComparison.OrdinalIgnoreCase)) return u.Id;
+    return null;
+}
+
+static Guid DocSessionKey(string? s) =>
+    new(System.Security.Cryptography.MD5.HashData(System.Text.Encoding.UTF8.GetBytes("hub-doc:" + (s ?? ""))));
+
+static object NodeDto(UniverseNode n, int edgeCount) => new
+{
+    id = n.Id,
+    name = n.Name,
+    nodeType = n.NodeType,
+    status = n.Status,
+    edgeCount,
+    properties = n.Properties,
+};
+
+static object EdgeDto(UniverseEdge e) => new
+{
+    source = e.Source,
+    target = e.Target,
+    relationType = e.RelationType,
+    sentiment = e.Sentiment,
+    weight = e.Weight,
+};
+
+// Fail-closed contract (Phase 2): "the Hub is up" must mean "the Hub can do work", not just
+// "the process didn't crash" - Prose.Cli/Prose.Mcp gate every startup on this endpoint and
+// exit immediately if it isn't a clean 200, so a Hub process that's alive but can't reach SQL
+// must report unhealthy rather than silently accepting requests it can't actually serve.
+app.MapGet("/api/health", async (IDbContextFactory<ProseDbContext> dbFactory) =>
+{
+    try
+    {
+        await using var ctx = await dbFactory.CreateDbContextAsync();
+        var dbOk = await ctx.Database.CanConnectAsync();
+        if (!dbOk)
+            return Results.Json(new { status = "unhealthy", reason = "db_unreachable" }, statusCode: 503);
+        return Results.Ok(new { status = "ok", time = DateTime.UtcNow });
+    }
+    catch (Exception ex)
+    {
+        return Results.Json(new { status = "unhealthy", reason = "db_error", detail = ex.Message }, statusCode: 503);
+    }
+});
+
+app.MapGet("/api/universes", () =>
+    Results.Ok(uc.ListUniverses().Select(u => new { id = u.Id, slug = u.Slug, name = u.Name })));
+
+app.MapGet("/api/universes/{slug}/stats", (string slug, UniverseGraphService graph) =>
+{
+    var id = ResolveUniverseId(slug);
+    if (id == null) return Results.NotFound(new { error = "unknown_universe", slug });
+    uc.SetFlowUniverse(id);
+    graph.EnsureLoaded();
+    var result = Results.Ok(new { nodeCount = graph.NodeCount, edgeCount = graph.EdgeCount });
+    uc.SetFlowUniverse(null);
+    return result;
+});
+
+app.MapGet("/api/universes/{slug}/entities/{id}", (string slug, string id, UniverseGraphService graph) =>
+{
+    var uid = ResolveUniverseId(slug);
+    if (uid == null) return Results.NotFound(new { error = "unknown_universe", slug });
+    uc.SetFlowUniverse(uid);
+    var node = graph.GetNode(id);
+    var result = node == null
+        ? Results.NotFound(new { error = "not_found", id })
+        : Results.Ok(NodeDto(node, graph.GetAllEdges(id).Count));
+    uc.SetFlowUniverse(null);
+    return result;
+});
+
+app.MapGet("/api/universes/{slug}/neighbors/{id}", (string slug, string id, int depth, UniverseGraphService graph) =>
+{
+    var uid = ResolveUniverseId(slug);
+    if (uid == null) return Results.NotFound(new { error = "unknown_universe", slug });
+    uc.SetFlowUniverse(uid);
+    var d = depth <= 0 ? 1 : depth;
+    var nodes = graph.GetNeighbors(id, d);
+    var ids = new HashSet<string>(nodes.Select(n => n.Id)) { id };
+    var edges = ids.SelectMany(graph.GetAllEdges)
+        .Where(e => ids.Contains(e.Source) && ids.Contains(e.Target))
+        .DistinctBy(e => (e.Source, e.Target, e.RelationType))
+        .ToList();
+    var result = Results.Ok(new
+    {
+        nodes = nodes.Select(n => NodeDto(n, graph.GetAllEdges(n.Id).Count)),
+        edges = edges.Select(EdgeDto),
+    });
+    uc.SetFlowUniverse(null);
+    return result;
+});
+
+app.MapGet("/api/universes/{slug}/search", (string slug, string q, UniverseGraphService graph) =>
+{
+    var uid = ResolveUniverseId(slug);
+    if (uid == null) return Results.NotFound(new { error = "unknown_universe", slug });
+    uc.SetFlowUniverse(uid);
+    var matches = graph.AllNodes()
+        .Where(n => n.Name.Contains(q ?? "", StringComparison.OrdinalIgnoreCase))
+        .Take(50)
+        .Select(n => NodeDto(n, graph.GetAllEdges(n.Id).Count));
+    var result = Results.Ok(matches);
+    uc.SetFlowUniverse(null);
+    return result;
+});
+
+// scope=active resolves whatever DocContextStack currently holds resident for the given
+// nodeCode into its corresponding graph nodes - "what's pertinent to ProseWriter right now",
+// reusing DCM's existing tracking rather than a new relevance engine. scope=all dumps the
+// whole per-universe graph. Both return the same {nodes, edges} shape as /neighbors.
+app.MapGet("/api/universes/{slug}/snapshot", async (
+    string slug, string? scope, string? nodeCode,
+    UniverseGraphService graph, DocContextStack docStack, IDbContextFactory<ProseDbContext> dbFactory) =>
+{
+    var uid = ResolveUniverseId(slug);
+    if (uid == null) return Results.NotFound(new { error = "unknown_universe", slug });
+    uc.SetFlowUniverse(uid);
+
+    List<UniverseNode> nodes;
+    if (string.Equals(scope, "all", StringComparison.OrdinalIgnoreCase))
+    {
+        graph.EnsureLoaded();
+        nodes = graph.AllNodes();
+    }
+    else
+    {
+        var active = docStack.GetActive(DocSessionKey(nodeCode));
+        var docIds = active.Select(a => a.DocId).ToList();
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var entityIds = await db.Set<MarkdownFile>().AsNoTracking()
+            .Where(m => docIds.Contains(m.Id) && m.EntityId != null)
+            .Select(m => m.EntityId!.Value)
+            .ToListAsync();
+        var names = await db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()
+            .Where(e => entityIds.Contains(e.Id))
+            .Select(e => e.Name)
+            .ToListAsync();
+        nodes = names
+            .Select(n => graph.GetNode(UniverseGraphService.Slugify(n)))
+            .Where(n => n != null)
+            .Select(n => n!)
+            .ToList();
+    }
+
+    var ids = new HashSet<string>(nodes.Select(n => n.Id));
+    var edges = ids.SelectMany(graph.GetAllEdges)
+        .Where(e => ids.Contains(e.Source) && ids.Contains(e.Target))
+        .DistinctBy(e => (e.Source, e.Target, e.RelationType))
+        .ToList();
+
+    var result = Results.Ok(new
+    {
+        nodes = nodes.Select(n => NodeDto(n, graph.GetAllEdges(n.Id).Count)),
+        edges = edges.Select(EdgeDto),
+    });
+    uc.SetFlowUniverse(null);
+    return result;
+});
+
+app.MapGet("/api/dcm/status", (string? nodeCode, DocContextStack docStack) =>
+{
+    var active = docStack.GetActive(DocSessionKey(nodeCode));
+    return Results.Ok(new
+    {
+        count = active.Count,
+        docs = active.Select(e => new { e.Tier, e.Reason, e.RelativePath, e.Score }),
+    });
+});
+
+// EntityContextStack is the entity-level analog of DocContextStack - the actual
+// "DynamicGraphMemory" already in this codebase: entities enter the working set as
+// they become relevant (direct mention = depth 0, semantic neighbors = depth 1/2) and
+// evict automatically after 4 beats without a mention. This is a live snapshot of that
+// resident state, keyed by book/chapter NodeId (not universe slug - EntityContextStack
+// tracks per-node, same as the prose engine itself does).
+app.MapGet("/api/entities/active", (Guid nodeId, EntityContextStack entityStack) =>
+{
+    var active = entityStack.GetActive(nodeId);
+    return Results.Ok(new
+    {
+        count = active.Count,
+        entities = active.Select(e => new
+        {
+            entityId = e.EntityId,
+            name = e.Name,
+            entityType = e.EntityType,
+            depth = e.Depth,
+            score = e.Score,
+            pushedAtBeat = e.PushedAtBeat,
+            lastMentionedBeat = e.LastMentionedBeat,
+        }),
+    });
+});
+
+// Observability plan, Phase 4: initial page load / reconnect catch-up for the live-tail
+// Logs view - RingBufferLoggerProvider already captures every line the Hub logs (see
+// Phase 3); this just snapshots it.
+app.MapGet("/api/logs/recent", (int take, Prose.Hub.Logging.RingBufferLoggerProvider logs) =>
+    Results.Ok(logs.Recent(take <= 0 ? 200 : take)));
+
+// DCM-Viz history mode: list past runs, newest first.
+app.MapGet("/api/dcm/runs", async (IDbContextFactory<ProseDbContext> dbFactory, int? take) =>
+{
+    await using var db = await dbFactory.CreateDbContextAsync();
+    var rows = await db.DcmRuns.AsNoTracking()
+        .OrderByDescending(r => r.StartedAt)
+        .Take(take is > 0 ? take.Value : 50)
+        .ToListAsync();
+    return Results.Ok(rows);
+});
+
+// DCM-Viz history mode: every persisted beat snapshot for one past run, in beat order.
+app.MapGet("/api/dcm/runs/{id:guid}/beats", async (Guid id, IDbContextFactory<ProseDbContext> dbFactory) =>
+{
+    await using var db = await dbFactory.CreateDbContextAsync();
+    var rows = await db.DcmBeatSnapshots.AsNoTracking()
+        .Where(b => b.RunId == id)
+        .OrderBy(b => b.BeatIndex)
+        .ToListAsync();
+    return Results.Ok(rows);
+});
+
+// DCM-Viz history mode: rebuild the SAME payload shape the live SignalR push sends, from
+// persisted DcmBeatSnapshots rows - one JS renderer, no separate history code path.
+app.MapGet("/api/dcm/runs/{id:guid}/payload", async (Guid id, IDbContextFactory<ProseDbContext> dbFactory) =>
+{
+    await using var db = await dbFactory.CreateDbContextAsync();
+    var run = await db.DcmRuns.AsNoTracking().FirstOrDefaultAsync(r => r.Id == id);
+    if (run == null) return Results.NotFound(new { error = "run_not_found", id });
+
+    var rows = await db.DcmBeatSnapshots.AsNoTracking()
+        .Where(b => b.RunId == id)
+        .OrderBy(b => b.BeatIndex)
+        .ToListAsync();
+    var snapshots = rows.Select(r =>
+    {
+        var docs = JsonSerializer.Deserialize<List<DcmVisualizationService.DocEntry>>(r.FullActiveSetJson ?? r.DocsJson) ?? [];
+        return new DcmVisualizationService.BeatSnapshot(r.BeatIndex, r.BeatTitle, docs);
+    }).ToList();
+
+    var json = DcmVisualizationService.BuildPayloadJson(run.NodeSlug, snapshots);
+    return Results.Text(json, "application/json");
+});
+
+// Stage C: generic CLI command dispatch. Prose.Cli's dispatch blocks forward here instead of
+// running their handler in-process - see CliDispatch.cs. Console.Out/Error capture is
+// serialized (ConsoleGate) since they're process-wide statics, not per-request.
+app.MapPost("/api/cli-invoke", async (CliDispatch.InvokeRequest req, IServiceProvider sp) =>
+    await CliDispatch.InvokeAsync(req, sp));
+
+// Hub-side counterpart to Prose.Cli's CostGateCli (the ~15 cost-estimate-then-confirm
+// commands) - see CostGateDispatch.cs for the two-round-trip protocol; the estimator/ledger
+// are Hub-resident, only the actual terminal y/n prompt stays client-side.
+app.MapPost("/api/cli-cost-gate", async (CostGateDispatch.CostGateRequest req, IServiceProvider sp) =>
+    await CostGateDispatch.InvokeAsync(req, sp));
+
+// Phase 2 migration: generic MCP tool dispatch. Prose.Mcp's [McpServerTool] methods forward
+// here instead of running their own logic in-process - see ToolDispatch.cs for why this is a
+// single generic mechanism instead of ~319 hand-written endpoints.
+app.MapPost("/api/mcp-invoke", async (ToolDispatch.InvokeRequest req, IServiceProvider sp) =>
+    await ToolDispatch.InvokeAsync(req, sp));
+
+// The missing generic edge-creation tool (RelationshipDiscoveryService's auto-link path
+// doesn't cover every entity type, e.g. Transportation) - writes to SQL first, then applies
+// the same edge to the resident in-memory graph immediately so it's visible without waiting
+// on the next staleness probe.
+app.MapPost("/api/edges", async (EdgeRequest req, UniverseGraphService graph, IDbContextFactory<ProseDbContext> dbFactory) =>
+{
+    if (req.Source == Guid.Empty || req.Target == Guid.Empty || string.IsNullOrWhiteSpace(req.RelationType))
+        return Results.BadRequest(new { error = "source, target, and relationType are required" });
+
+    var uid = req.Universe != null ? ResolveUniverseId(req.Universe) : (Guid?)null;
+    if (req.Universe != null && uid == null) return Results.NotFound(new { error = "unknown_universe", req.Universe });
+    if (uid != null) uc.SetFlowUniverse(uid);
+
+    await using var db = await dbFactory.CreateDbContextAsync();
+    db.Set<Edge>().Add(new Edge
+    {
+        SourceId = req.Source,
+        TargetId = req.Target,
+        RelationType = req.RelationType,
+        Sentiment = req.Sentiment ?? "neutral",
+        Weight = req.Weight ?? 1.0,
+        Description = req.Description ?? "",
+        Source = "hub-api",
+    });
+    await db.SaveChangesAsync();
+
+    var refreshed = graph.EnsureFresh();
+    if (uid != null) uc.SetFlowUniverse(null);
+    return Results.Ok(new { ok = true, graphRefreshed = refreshed });
+});
+
+app.Run();
+
+sealed record EdgeRequest(Guid Source, Guid Target, string RelationType, string? Sentiment, double? Weight, string? Description, string? Universe);

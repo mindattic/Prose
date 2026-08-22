@@ -261,7 +261,7 @@ public class CharacterRepository : EfRepository<CharacterData>
 
     private string ResolveCharacterSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -463,7 +463,7 @@ public class CorponationRepository : EfRepository<CorponationData>
 
     private string ResolveSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -628,7 +628,7 @@ public class DistrictRepository : EfRepository<DistrictData>
 
     private string ResolvePlaceSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -794,7 +794,7 @@ public class FactionRepository : EfRepository<FactionData>
 
     private string ResolveFactionSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -954,7 +954,7 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 
     private string ResolveDocumentSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -1113,7 +1113,7 @@ public class MotifRepository : EfRepository<MotifData>
 
     private string ResolveMotifSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -1273,7 +1273,7 @@ public class WeaponryRepository : EfRepository<WeaponryData>
 
     private string ResolveWeaponSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -1433,7 +1433,7 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
 
     private string ResolveAmmunitionSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -1592,7 +1592,7 @@ public class EquipmentRepository : EfRepository<EquipmentData>
 
     private string ResolveSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -1751,7 +1751,7 @@ public class TechnologyRepository : EfRepository<TechnologyData>
 
     private string ResolveSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -1910,7 +1910,7 @@ public class CyberwareRepository : EfRepository<CyberwareData>
 
     private string ResolveSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -2069,7 +2069,7 @@ public class VocabularyRepository : EfRepository<VocabularyData>
 
     private string ResolveVocabSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -2230,7 +2230,7 @@ public class GenemodRepository : EfRepository<GenemodData>
 
     private string ResolveGenemodSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -2390,7 +2390,7 @@ public class TransportationRepository : EfRepository<TransportationData>
 
     private string ResolveTransportationSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -2552,7 +2552,7 @@ public class ContractRepository : EfRepository<ContractData>
 
     private string ResolveContractSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -2713,7 +2713,7 @@ public class AutomatonRepository : EfRepository<AutomatonData>
 
     private string ResolveAutomatonSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -2872,7 +2872,7 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
 
     private string ResolveSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -3032,7 +3032,7 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
 
     private string ResolveEntertainmentSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -3192,7 +3192,7 @@ public class ApparelRepository : EfRepository<ApparelData>
 
     private string ResolveApparelSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -3351,7 +3351,7 @@ public class NewsRepository : EfRepository<NewsData>
 
     private string ResolveNewsSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -3512,7 +3512,7 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
 
     private string ResolveArchetypeSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -3672,7 +3672,7 @@ public class MaterialRepository : EfRepository<MaterialData>
 
     private string ResolveMaterialSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -3831,7 +3831,7 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
 
     private string ResolveSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -3990,7 +3990,7 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
 
     private string ResolveSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -4144,7 +4144,7 @@ public class QuoteRepository : EfRepository<QuoteData>
 
     private string ResolveQuoteSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -4338,7 +4338,7 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
 
     private string ResolveLabSpecimenSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -4496,7 +4496,7 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
 
     private string ResolveFlyoverEntitySlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -4654,7 +4654,7 @@ public class PsionicRepository : EfRepository<PsionicData>
 
     private string ResolvePsionicSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
@@ -4854,7 +4854,7 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
 
     private string ResolveSyntheticSlug(ProseDbContext db, string name, Guid id, string? currentSlug)
     {
-        var plain = WorldGraphService.Slugify(name);
+        var plain = UniverseGraphService.Slugify(name);
         var disambig = $"{plain}-{id:N}";
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))

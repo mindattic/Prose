@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
@@ -9,38 +10,89 @@ using Prose.Core.Models.Graph;
 
 namespace Prose.Core.Services;
 
-public class WorldGraphService : IWorldGraphService
+public class UniverseGraphService : IUniverseGraphService
 {
     private readonly IPathProvider paths;
     private readonly DatabaseService db;
     private readonly IDbContextFactory<ProseDbContext>? sql;
-    private readonly AdjacencyGraph<string, WorldEdge> _graph = new();
-    private readonly Dictionary<string, WorldNode> _nodes = new();
-    // Index: node type -> set of node IDs for fast type-based lookup
-    private readonly Dictionary<string, HashSet<string>> typeIndex = new(StringComparer.OrdinalIgnoreCase);
-    // Index: territory/location -> set of node IDs for spatial queries
-    private readonly Dictionary<string, HashSet<string>> territoryIndex = new(StringComparer.OrdinalIgnoreCase);
-    // Index: nodeId -> total current edges incident to that node (out + in).
-    // Populated by RebuildIndexes; lets /dashboard's "top connected" widget
-    // skip the O(N×E) GetAllEdges loop and do a hash lookup instead.
-    private readonly Dictionary<string, int> edgeCountIndex = new(StringComparer.OrdinalIgnoreCase);
-    private readonly object rebuildLock = new();
-    private bool loaded;
-    private bool loading;
-    private int builtEpoch = -1;
-    // Set while a Rebuild() is in flight so the DI-factory background RefreshIfStale (Task.Run)
-    // doesn't pile a second, differently-scoped rebuild on top of an explicit one (the source of
-    // the non-deterministic node/edge counts seen when a CLI --rebuild-graph raced the background probe).
-    private volatile bool rebuilding;
 
-    public WorldGraphService(IPathProvider paths, DatabaseService db)
+    /// <summary>
+    /// Everything the old singular `_graph`/`_nodes`/index fields held, bundled per universe.
+    /// One instance lives per distinct <see cref="UniverseScope.EffectiveId"/> this process has
+    /// ever resolved — see <see cref="statesByUniverse"/>.
+    /// </summary>
+    private sealed class GraphState
+    {
+        public readonly Guid UniverseId;
+        public readonly AdjacencyGraph<string, UniverseEdge> Graph = new();
+        public readonly Dictionary<string, UniverseNode> Nodes = new();
+        // Index: node type -> set of node IDs for fast type-based lookup
+        public readonly Dictionary<string, HashSet<string>> TypeIndex = new(StringComparer.OrdinalIgnoreCase);
+        // Index: territory/location -> set of node IDs for spatial queries
+        public readonly Dictionary<string, HashSet<string>> TerritoryIndex = new(StringComparer.OrdinalIgnoreCase);
+        // Index: nodeId -> total current edges incident to that node (out + in).
+        // Populated by RebuildIndexes; lets /dashboard's "top connected" widget
+        // skip the O(N×E) GetAllEdges loop and do a hash lookup instead.
+        public readonly Dictionary<string, int> EdgeCountIndex = new(StringComparer.OrdinalIgnoreCase);
+        public readonly object RebuildLock = new();
+        public bool Loaded;
+        public bool Loading;
+        // Set while a Rebuild() is in flight so the DI-factory background RefreshIfStale (Task.Run)
+        // doesn't pile a second, differently-scoped rebuild on top of an explicit one (the source of
+        // the non-deterministic node/edge counts seen when a CLI --rebuild-graph raced the background probe).
+        public volatile bool Rebuilding;
+
+        public GraphState(Guid universeId) => UniverseId = universeId;
+    }
+
+    /// <summary>
+    /// Per-universe graph cache. Keyed by <see cref="UniverseScope.EffectiveId"/> so a single
+    /// long-running host serving concurrent requests scoped to DIFFERENT universes (e.g. Prose
+    /// Hub, via <c>IUniverseContext.SetFlowUniverse</c> — an <c>AsyncLocal</c>-backed per-async-flow
+    /// override) keeps each universe's graph independently loaded and independently fresh, instead
+    /// of the old single-graph-per-process design.
+    ///
+    /// The old design rebuilt the ENTIRE graph whenever the process-wide <see cref="UniverseScope.Epoch"/>
+    /// counter changed — correct only when a process works exactly one universe for its whole
+    /// lifetime (the CLI/MCP model). <c>SetFlowUniverse</c> bumps that same epoch on every call
+    /// regardless of which universe is being switched to, so under concurrent multi-universe
+    /// requests the old design would thrash a full rebuild on literally every request — both wrong
+    /// (concurrent readers could observe a mid-rebuild graph scoped to the WRONG universe) and slow.
+    ///
+    /// Two different universes' states simply coexist in this dictionary forever once each is
+    /// loaded; there is no cross-invalidation between them and no reliance on
+    /// <see cref="UniverseScope.Epoch"/> anywhere in this class any more — each <see cref="GraphState"/>
+    /// is refreshed purely by its own <see cref="IsStale"/> SQL probe.
+    /// </summary>
+    private readonly ConcurrentDictionary<Guid, GraphState> statesByUniverse = new();
+
+    // Observability plan (2026-08-20), Part C: plain C# events so this service stays
+    // transport-agnostic - only Prose.Hub's Program.cs subscribes, forwarding to the
+    // relevant universe:{slug} SignalR group. The universe id rides explicitly in every
+    // payload (this is a per-universe-state singleton with one shared event surface, so a
+    // subscriber can never infer it from ambient scope). Fired during bulk load/rebuild too
+    // (AddNode/AddEdge are the same low-level chokepoints either way) - harmless when nothing
+    // is subscribed yet, and any future high-volume subscriber (Phase 4+) is responsible for
+    // its own batching/throttling, not this service.
+    public event Action<Guid, UniverseNode>? NodeAdded;
+    public event Action<Guid, string>? NodeRemoved;
+    public event Action<Guid, UniverseEdge>? EdgeAdded;
+    public event Action<Guid, UniverseEdge>? EdgeInvalidated;
+
+    private GraphState GetState()
+    {
+        var universeId = UniverseScope.EffectiveId;
+        return statesByUniverse.GetOrAdd(universeId, id => new GraphState(id));
+    }
+
+    public UniverseGraphService(IPathProvider paths, DatabaseService db)
     {
         this.paths = paths;
         this.db = db;
         this.sql = null;
     }
 
-    public WorldGraphService(IPathProvider paths, DatabaseService db,
+    public UniverseGraphService(IPathProvider paths, DatabaseService db,
         IDbContextFactory<ProseDbContext> sql)
     {
         this.paths = paths;
@@ -48,37 +100,36 @@ public class WorldGraphService : IWorldGraphService
         this.sql = sql;
     }
 
-    public int NodeCount => _nodes.Count;
-    public int EdgeCount => _graph.EdgeCount;
+    public int NodeCount { get { var state = GetState(); EnsureLoaded(state); return state.Nodes.Count; } }
+    public int EdgeCount { get { var state = GetState(); EnsureLoaded(state); return state.Graph.EdgeCount; } }
 
-    public void EnsureLoaded()
+    public void EnsureLoaded() => EnsureLoaded(GetState());
+
+    private void EnsureLoaded(GraphState state)
     {
-        // If the universe has changed since the last build, force a full rebuild.
-        if (loaded && builtEpoch != UniverseScope.Epoch)
-        {
-            loaded = false;
-        }
-        if (loaded) return;
+        if (state.Loaded) return;
         // Reentrance guard: Rebuild() invokes builders that read back through query
         // methods (e.g. GetRelationshipsBetween → EnsureLoaded). Without this, those
         // calls re-enter Rebuild and recurse until the stack overflows.
-        if (loading) return;
-        loading = true;
+        if (state.Loading) return;
+        state.Loading = true;
         try
         {
-            Load();
+            Load(state);
             // Empty cache (first run) → must rebuild synchronously, there's no data
-            // to serve. On universe switch, also rebuild so we serve the new universe's
-            // graph. Otherwise we trust the cache and let RefreshIfStale handle
+            // to serve. Otherwise we trust the cache and let RefreshIfStale handle
             // the SQL freshness probe in the background — that probe used to block
-            // the startup path for 30-60 s on the eager-instantiate chain.
-            if (_nodes.Count == 0 || builtEpoch != UniverseScope.Epoch) Rebuild();
-            RebuildIndexes();
-            loaded = true;
+            // the startup path for 30-60 s on the eager-instantiate chain. Freshness
+            // for an already-cached universe is driven entirely by IsStale(state),
+            // never by any process-wide epoch counter (see class-level comment on
+            // statesByUniverse) — each universe's state is independent.
+            if (state.Nodes.Count == 0) Rebuild(state);
+            RebuildIndexes(state);
+            state.Loaded = true;
         }
         finally
         {
-            loading = false;
+            state.Loading = false;
         }
     }
 
@@ -92,14 +143,15 @@ public class WorldGraphService : IWorldGraphService
     /// </summary>
     public void RefreshIfStale()
     {
+        var state = GetState();
         try
         {
-            if (rebuilding) return;   // an explicit Rebuild() is in flight — don't race it
-            if (!loaded) EnsureLoaded();
-            if (IsStale())
+            if (state.Rebuilding) return;   // an explicit Rebuild() is in flight — don't race it
+            if (!state.Loaded) EnsureLoaded(state);
+            if (IsStale(state))
             {
-                Rebuild();
-                RebuildIndexes();
+                Rebuild(state);
+                RebuildIndexes(state);
             }
         }
         catch (Exception ex)
@@ -115,10 +167,11 @@ public class WorldGraphService : IWorldGraphService
     /// </summary>
     public bool EnsureFresh()
     {
-        if (!loaded) { EnsureLoaded(); return true; }
-        if (!IsStale()) return false;
-        Rebuild();
-        RebuildIndexes();
+        var state = GetState();
+        if (!state.Loaded) { EnsureLoaded(state); return true; }
+        if (!IsStale(state)) return false;
+        Rebuild(state);
+        RebuildIndexes(state);
         return true;
     }
 
@@ -128,11 +181,11 @@ public class WorldGraphService : IWorldGraphService
     /// <c>Records.UpdatedAt</c>. Any row newer than the graph snapshot file's mtime
     /// means canon moved and the QuikGraph in memory needs a rebuild.
     /// </summary>
-    private bool IsStale()
+    private bool IsStale(GraphState state)
     {
         try
         {
-            var graphPath = Path.Combine(paths.GraphDir, GraphFileName());
+            var graphPath = Path.Combine(paths.GraphDir, GraphFileName(state));
             if (!File.Exists(graphPath)) return true;
             var graphTime = File.GetLastWriteTimeUtc(graphPath);
 
@@ -151,12 +204,37 @@ public class WorldGraphService : IWorldGraphService
             // graph silently stale (the class of bug that left phantom / old-name nodes around).
             // Probe the latest write across every surface a canon change can land on, so any of
             // them re-stamps the graph as stale and forces a rebuild. (SS-LAW-15 graph safeguard.)
-            const string sqlText = @"SELECT MAX(t) AS [Value] FROM (
-                SELECT MAX(ModifiedAt) t FROM Entities
+            //
+            // Scoped per-universe (this GraphState's own UniverseId) wherever the underlying table
+            // carries a direct UniverseId column: Entities, Nodes, Edges. Now that multiple
+            // GraphStates coexist (one per universe — see statesByUniverse), an edit in universe A
+            // must not mark universe B's cache stale too. Guid.Empty means "no active universe
+            // scoping" (tests / design-time / pre-migration DB) — in that mode every real row
+            // still carries a real, non-empty UniverseId, so filtering by "= Guid.Empty" would
+            // match nothing and the probe would never see real edits; those three sub-selects stay
+            // unfiltered in that case instead.
+            //
+            // Records/Beats/Characters do NOT carry a direct UniverseId column (Records/Characters
+            // key off EntityId → Entities; Beats key off BeatNodes → Nodes) — scoping them would
+            // require an extra join that risks matching the wrong rows more than it's worth for a
+            // freshness probe, so those three sub-selects are left global/unscoped intentionally.
+            // Net effect: an edit in universe A can over-invalidate universe B's cache via these
+            // three (wasteful, an extra rebuild) but never under-invalidate (never silently stale).
+            //
+            // Entities.SysStart is probed in addition to Entities.ModifiedAt: ModifiedAt is an
+            // app-managed column only stamped by EF's SaveChanges, so a raw SQL UPDATE Entities
+            // (outside the app) never touches it and was invisible to this check forever. Entities
+            // is SQL Server system-versioned — SysStart is GENERATED ALWAYS and updates on every
+            // write to a row regardless of path (EF or raw SQL), so it can never again miss an edit
+            // made outside the app.
+            var scope = state.UniverseId == Guid.Empty ? "" : $"WHERE UniverseId = '{state.UniverseId}'";
+            var sqlText = $@"SELECT MAX(t) AS [Value] FROM (
+                SELECT MAX(ModifiedAt) t FROM Entities {scope}
+                UNION ALL SELECT MAX(SysStart) FROM Entities {scope}
                 UNION ALL SELECT MAX(UpdatedAt) FROM Records
                 UNION ALL SELECT MAX(UpdatedAt) FROM Beats
-                UNION ALL SELECT MAX(UpdatedAt) FROM Nodes
-                UNION ALL SELECT MAX(SysStart) FROM Edges
+                UNION ALL SELECT MAX(UpdatedAt) FROM Nodes {scope}
+                UNION ALL SELECT MAX(SysStart) FROM Edges {scope}
                 UNION ALL SELECT MAX(SysStart) FROM Characters
             ) x";
             var maxUpdated = ctx.Database.SqlQueryRaw<DateTime?>(sqlText).AsEnumerable().FirstOrDefault();
@@ -171,53 +249,59 @@ public class WorldGraphService : IWorldGraphService
 
     // ── Queries (current edges only by default) ───────────────
 
-    public WorldNode? GetNode(string id)
+    public UniverseNode? GetNode(string id)
     {
-        EnsureLoaded();
-        return _nodes.GetValueOrDefault(id);
+        var state = GetState();
+        EnsureLoaded(state);
+        return state.Nodes.GetValueOrDefault(id);
     }
 
-    public List<WorldNode> GetNodesByType(string nodeType)
+    public List<UniverseNode> GetNodesByType(string nodeType)
     {
-        EnsureLoaded();
-        if (typeIndex.TryGetValue(nodeType, out var ids))
-            return ids.Select(id => _nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
+        var state = GetState();
+        EnsureLoaded(state);
+        if (state.TypeIndex.TryGetValue(nodeType, out var ids))
+            return ids.Select(id => state.Nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
         return [];
     }
 
     /// <summary>Get all nodes in a territory/location. Fast spatial query.</summary>
-    public List<WorldNode> GetNodesByTerritory(string territory)
+    public List<UniverseNode> GetNodesByTerritory(string territory)
     {
-        EnsureLoaded();
-        if (territoryIndex.TryGetValue(territory, out var ids))
-            return ids.Select(id => _nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
+        var state = GetState();
+        EnsureLoaded(state);
+        if (state.TerritoryIndex.TryGetValue(territory, out var ids))
+            return ids.Select(id => state.Nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
         return [];
     }
 
-    public List<WorldNode> AllNodes()
+    public List<UniverseNode> AllNodes()
     {
-        EnsureLoaded();
-        return _nodes.Values.ToList();
+        var state = GetState();
+        EnsureLoaded(state);
+        return state.Nodes.Values.ToList();
     }
 
     /// <summary>All edges including invalidated ones — for history views.</summary>
-    public List<WorldEdge> AllEdgesRaw() => _graph.Edges.ToList();
+    public List<UniverseEdge> AllEdgesRaw() => GetState().Graph.Edges.ToList();
 
-    public List<WorldEdge> GetEdgesFrom(string nodeId)
+    public List<UniverseEdge> GetEdgesFrom(string nodeId)
     {
-        EnsureLoaded();
-        return _graph.TryGetOutEdges(nodeId, out var edges)
+        var state = GetState();
+        EnsureLoaded(state);
+        return state.Graph.TryGetOutEdges(nodeId, out var edges)
             ? edges.Where(e => e.IsCurrent).ToList()
             : [];
     }
 
-    public List<WorldEdge> GetEdgesTo(string nodeId)
+    public List<UniverseEdge> GetEdgesTo(string nodeId)
     {
-        EnsureLoaded();
-        return _graph.Edges.Where(e => e.Target == nodeId && e.IsCurrent).ToList();
+        var state = GetState();
+        EnsureLoaded(state);
+        return state.Graph.Edges.Where(e => e.Target == nodeId && e.IsCurrent).ToList();
     }
 
-    public List<WorldEdge> GetAllEdges(string nodeId)
+    public List<UniverseEdge> GetAllEdges(string nodeId)
     {
         EnsureLoaded();
         var from = GetEdgesFrom(nodeId);
@@ -232,10 +316,11 @@ public class WorldGraphService : IWorldGraphService
     /// ValidFrom is empty or <= storyPoint, AND ValidUntil is empty or > storyPoint,
     /// AND not invalidated in the database.
     /// </summary>
-    public List<WorldEdge> GetEdgesAt(string nodeId, string storyPoint)
+    public List<UniverseEdge> GetEdgesAt(string nodeId, string storyPoint)
     {
-        EnsureLoaded();
-        return _graph.Edges
+        var state = GetState();
+        EnsureLoaded(state);
+        return state.Graph.Edges
             .Where(e => (e.Source == nodeId || e.Target == nodeId) && IsEdgeValidAt(e, storyPoint))
             .ToList();
     }
@@ -324,7 +409,7 @@ public class WorldGraphService : IWorldGraphService
         return null;
     }
 
-    private static bool IsEdgeValidAt(WorldEdge edge, string storyPoint)
+    private static bool IsEdgeValidAt(UniverseEdge edge, string storyPoint)
     {
         if (edge.InvalidatedAt != null) return false;
         if (!string.IsNullOrEmpty(edge.ValidFrom) && CompareStoryPoints(edge.ValidFrom, storyPoint) > 0)
@@ -335,27 +420,32 @@ public class WorldGraphService : IWorldGraphService
     }
 
     /// <summary>Get ALL edges for a node including invalidated history.</summary>
-    public List<WorldEdge> GetEdgeHistory(string nodeId)
+    public List<UniverseEdge> GetEdgeHistory(string nodeId)
     {
-        EnsureLoaded();
-        return _graph.Edges
+        var state = GetState();
+        EnsureLoaded(state);
+        return state.Graph.Edges
             .Where(e => e.Source == nodeId || e.Target == nodeId)
             .OrderByDescending(e => e.CreatedAt)
             .ToList();
     }
 
-    public List<WorldEdge> GetRelationshipsBetween(string a, string b)
+    public List<UniverseEdge> GetRelationshipsBetween(string a, string b) =>
+        GetRelationshipsBetween(GetState(), a, b);
+
+    private List<UniverseEdge> GetRelationshipsBetween(GraphState state, string a, string b)
     {
-        EnsureLoaded();
-        return _graph.Edges
+        EnsureLoaded(state);
+        return state.Graph.Edges
             .Where(e => (e.Source == a && e.Target == b) || (e.Source == b && e.Target == a))
             .Where(e => e.IsCurrent)
             .ToList();
     }
 
-    public List<WorldNode> GetNeighbors(string nodeId, int depth = 1)
+    public List<UniverseNode> GetNeighbors(string nodeId, int depth = 1)
     {
-        EnsureLoaded();
+        var state = GetState();
+        EnsureLoaded(state);
         var visited = new HashSet<string> { nodeId };
         var frontier = new Queue<(string id, int d)>();
         frontier.Enqueue((nodeId, 0));
@@ -375,7 +465,7 @@ public class WorldGraphService : IWorldGraphService
         }
 
         visited.Remove(nodeId);
-        return visited.Select(id => _nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
+        return visited.Select(id => state.Nodes.GetValueOrDefault(id)).Where(n => n != null).ToList()!;
     }
 
     public string GetContextForNode(string nodeId)
@@ -403,17 +493,18 @@ public class WorldGraphService : IWorldGraphService
     /// </summary>
     public string? ResolveId(string nameOrAlias)
     {
-        EnsureLoaded();
+        var state = GetState();
+        EnsureLoaded(state);
         var slug = Slugify(nameOrAlias);
-        if (_nodes.ContainsKey(slug)) return slug;
+        if (state.Nodes.ContainsKey(slug)) return slug;
 
         // Search by name
-        var byName = _nodes.Values.FirstOrDefault(n =>
+        var byName = state.Nodes.Values.FirstOrDefault(n =>
             n.Name.Equals(nameOrAlias, StringComparison.OrdinalIgnoreCase));
         if (byName != null) return byName.Id;
 
         // Search aliases in properties
-        var byAlias = _nodes.Values.FirstOrDefault(n =>
+        var byAlias = state.Nodes.Values.FirstOrDefault(n =>
             n.Properties.TryGetValue("aliases", out var aliases)
             && aliases.Split(',', StringSplitOptions.TrimEntries)
                 .Any(a => a.Equals(nameOrAlias, StringComparison.OrdinalIgnoreCase)));
@@ -483,7 +574,8 @@ public class WorldGraphService : IWorldGraphService
     /// </summary>
     public string GetSceneContext(IEnumerable<string> entityNames, int neighborDepth = 1)
     {
-        EnsureLoaded();
+        var state = GetState();
+        EnsureLoaded(state);
         var sections = new List<string>();
         var included = new HashSet<string>();
 
@@ -513,7 +605,7 @@ public class WorldGraphService : IWorldGraphService
             var neighborLines = new List<string> { "--- NEARBY ENTITIES ---" };
             foreach (var nid in neighborIds.Take(30))
             {
-                var n = GetNode(nid);
+                var n = state.Nodes.GetValueOrDefault(nid);
                 if (n == null) continue;
                 var brief = $"[{n.NodeType.ToUpperInvariant()}] {n.Name}";
                 if (n.Properties.TryGetValue("gender", out var g) && g.Length > 0) brief += $" ({g})";
@@ -533,21 +625,23 @@ public class WorldGraphService : IWorldGraphService
     /// </summary>
     public GraphStats GetStats()
     {
-        EnsureLoaded();
-        var typeCounts = _nodes.Values
+        var state = GetState();
+        EnsureLoaded(state);
+        var typeCounts = state.Nodes.Values
             .GroupBy(n => n.NodeType)
             .ToDictionary(g => g.Key, g => g.Count());
-        var relCounts = _graph.Edges
+        var relCounts = state.Graph.Edges
             .GroupBy(e => e.RelationType)
             .ToDictionary(g => g.Key, g => g.Count());
         return new GraphStats { NodesByType = typeCounts, EdgesByType = relCounts };
     }
 
-    public List<WorldNode> Search(string query)
+    public List<UniverseNode> Search(string query)
     {
-        EnsureLoaded();
+        var state = GetState();
+        EnsureLoaded(state);
         var q = query.ToLowerInvariant();
-        return _nodes.Values
+        return state.Nodes.Values
             .Where(n => n.Name.Contains(q, StringComparison.OrdinalIgnoreCase)
                      || n.Id.Contains(q, StringComparison.OrdinalIgnoreCase)
                      || n.Properties.Values.Any(v => v.Contains(q, StringComparison.OrdinalIgnoreCase)))
@@ -556,29 +650,33 @@ public class WorldGraphService : IWorldGraphService
 
     // ── Mutations ───────────────────────────────────────────
 
-    public void AddNode(WorldNode node)
+    public void AddNode(UniverseNode node) => AddNode(GetState(), node);
+
+    private void AddNode(GraphState state, UniverseNode node)
     {
         if (string.IsNullOrWhiteSpace(node.Id) || string.IsNullOrWhiteSpace(node.Name)) return;
-        _nodes[node.Id] = node;
-        if (!_graph.ContainsVertex(node.Id))
-            _graph.AddVertex(node.Id);
+        state.Nodes[node.Id] = node;
+        if (!state.Graph.ContainsVertex(node.Id))
+            state.Graph.AddVertex(node.Id);
 
         // Maintain type index
         if (!string.IsNullOrWhiteSpace(node.NodeType))
         {
-            if (!typeIndex.TryGetValue(node.NodeType, out var typeSet))
+            if (!state.TypeIndex.TryGetValue(node.NodeType, out var typeSet))
             {
                 typeSet = [];
-                typeIndex[node.NodeType] = typeSet;
+                state.TypeIndex[node.NodeType] = typeSet;
             }
             typeSet.Add(node.Id);
         }
 
         // Maintain territory index — extract location from properties
-        IndexNodeTerritory(node);
+        IndexNodeTerritory(state, node);
+
+        NodeAdded?.Invoke(state.UniverseId, node);
     }
 
-    private void IndexNodeTerritory(WorldNode node)
+    private void IndexNodeTerritory(GraphState state, UniverseNode node)
     {
         var locationKeys = new[] { "location", "territory", "sovereign_territory", "home_turf" };
         foreach (var key in locationKeys)
@@ -589,10 +687,10 @@ public class WorldGraphService : IWorldGraphService
                 var territories = ExtractTerritories(loc);
                 foreach (var t in territories)
                 {
-                    if (!territoryIndex.TryGetValue(t, out var terrSet))
+                    if (!state.TerritoryIndex.TryGetValue(t, out var terrSet))
                     {
                         terrSet = [];
-                        territoryIndex[t] = terrSet;
+                        state.TerritoryIndex[t] = terrSet;
                     }
                     terrSet.Add(node.Id);
                 }
@@ -620,28 +718,33 @@ public class WorldGraphService : IWorldGraphService
 
     public void RemoveNode(string nameOrAlias)
     {
+        var state = GetState();
         var id = ResolveId(nameOrAlias);
         if (id == null) return;
 
         // Clean indexes
-        var node = _nodes.GetValueOrDefault(id);
+        var node = state.Nodes.GetValueOrDefault(id);
         if (node != null)
         {
-            if (typeIndex.TryGetValue(node.NodeType, out var typeSet)) typeSet.Remove(id);
-            foreach (var terrSet in territoryIndex.Values) terrSet.Remove(id);
+            if (state.TypeIndex.TryGetValue(node.NodeType, out var typeSet)) typeSet.Remove(id);
+            foreach (var terrSet in state.TerritoryIndex.Values) terrSet.Remove(id);
         }
 
-        _nodes.Remove(id);
-        _graph.RemoveVertex(id);
+        state.Nodes.Remove(id);
+        state.Graph.RemoveVertex(id);
         Save();
+        NodeRemoved?.Invoke(state.UniverseId, id);
     }
 
-    public void AddEdge(WorldEdge edge)
+    public void AddEdge(UniverseEdge edge) => AddEdge(GetState(), edge);
+
+    private void AddEdge(GraphState state, UniverseEdge edge)
     {
         if (string.IsNullOrWhiteSpace(edge.Source) || string.IsNullOrWhiteSpace(edge.Target)) return;
-        if (!_graph.ContainsVertex(edge.Source)) _graph.AddVertex(edge.Source);
-        if (!_graph.ContainsVertex(edge.Target)) _graph.AddVertex(edge.Target);
-        _graph.AddEdge(edge);
+        if (!state.Graph.ContainsVertex(edge.Source)) state.Graph.AddVertex(edge.Source);
+        if (!state.Graph.ContainsVertex(edge.Target)) state.Graph.AddVertex(edge.Target);
+        state.Graph.AddEdge(edge);
+        EdgeAdded?.Invoke(state.UniverseId, edge);
     }
 
     /// <summary>
@@ -651,22 +754,24 @@ public class WorldGraphService : IWorldGraphService
     /// </summary>
     public void EvolveRelationship(string sourceId, string targetId, string storyId, string relationType, string description, double weight = 1.0, string sentiment = "neutral", string storyPoint = "")
     {
-        var existing = GetRelationshipsBetween(sourceId, targetId)
+        var state = GetState();
+        var existing = GetRelationshipsBetween(state, sourceId, targetId)
             .FirstOrDefault(e => e.RelationType == relationType);
 
         if (existing != null)
         {
             // Invalidate old edge (don't remove — keep for history)
-            _graph.RemoveEdge(existing);
+            state.Graph.RemoveEdge(existing);
             var invalidated = existing with
             {
                 InvalidatedAt = DateTime.UtcNow,
                 ValidUntil = storyPoint,
             };
-            _graph.AddEdge(invalidated);
+            state.Graph.AddEdge(invalidated);
+            EdgeInvalidated?.Invoke(state.UniverseId, invalidated);
 
             // Create new version
-            AddEdge(new WorldEdge
+            AddEdge(state, new UniverseEdge
             {
                 Source = sourceId,
                 Target = targetId,
@@ -681,7 +786,7 @@ public class WorldGraphService : IWorldGraphService
         }
         else
         {
-            AddEdge(new WorldEdge
+            AddEdge(state, new UniverseEdge
             {
                 Source = sourceId,
                 Target = targetId,
@@ -703,7 +808,8 @@ public class WorldGraphService : IWorldGraphService
     /// </summary>
     public void RecordPropertyChange(string nodeId, string property, string newValue, string storyPoint, string source = "")
     {
-        var node = GetNode(nodeId);
+        var state = GetState();
+        var node = state.Nodes.GetValueOrDefault(nodeId);
         if (node == null) return;
 
         var oldValue = node.Properties.GetValueOrDefault(property, "");
@@ -724,7 +830,7 @@ public class WorldGraphService : IWorldGraphService
 
         // Update current value
         var props = new Dictionary<string, string>(node.Properties) { [property] = newValue };
-        _nodes[nodeId] = node with { Properties = props, History = history };
+        state.Nodes[nodeId] = node with { Properties = props, History = history };
     }
 
     /// <summary>
@@ -765,11 +871,13 @@ public class WorldGraphService : IWorldGraphService
     /// Deduplicate edges — merge edges between the same source/target with the same
     /// relation type. Keeps the highest-weight version. Returns count of removed duplicates.
     /// </summary>
-    public int DeduplicateEdges()
+    public int DeduplicateEdges() => DeduplicateEdges(GetState());
+
+    private int DeduplicateEdges(GraphState state)
     {
-        var allEdges = _graph.Edges.ToList();
-        var seen = new Dictionary<string, WorldEdge>();
-        var toRemove = new List<WorldEdge>();
+        var allEdges = state.Graph.Edges.ToList();
+        var seen = new Dictionary<string, UniverseEdge>();
+        var toRemove = new List<UniverseEdge>();
 
         foreach (var edge in allEdges)
         {
@@ -794,41 +902,43 @@ public class WorldGraphService : IWorldGraphService
         }
 
         foreach (var edge in toRemove)
-            _graph.RemoveEdge(edge);
+            state.Graph.RemoveEdge(edge);
 
-        if (toRemove.Count > 0) Save();
+        if (toRemove.Count > 0) Save(state);
         return toRemove.Count;
     }
 
     /// <summary>Rebuild all indexes from current node data.</summary>
-    public void RebuildIndexes()
+    public void RebuildIndexes() => RebuildIndexes(GetState());
+
+    private void RebuildIndexes(GraphState state)
     {
-        typeIndex.Clear();
-        territoryIndex.Clear();
-        edgeCountIndex.Clear();
-        foreach (var node in _nodes.Values)
+        state.TypeIndex.Clear();
+        state.TerritoryIndex.Clear();
+        state.EdgeCountIndex.Clear();
+        foreach (var node in state.Nodes.Values)
         {
             if (!string.IsNullOrWhiteSpace(node.NodeType))
             {
-                if (!typeIndex.TryGetValue(node.NodeType, out var typeSet))
+                if (!state.TypeIndex.TryGetValue(node.NodeType, out var typeSet))
                 {
                     typeSet = [];
-                    typeIndex[node.NodeType] = typeSet;
+                    state.TypeIndex[node.NodeType] = typeSet;
                 }
                 typeSet.Add(node.Id);
             }
-            IndexNodeTerritory(node);
+            IndexNodeTerritory(state, node);
         }
         // One pass over edges populates incident-count for every node — turns
         // the dashboard "top connected" loop from O(N×E) to O(N+E) build +
         // O(1) lookup. Only counts current edges to match GetAllEdges semantics.
-        foreach (var e in _graph.Edges)
+        foreach (var e in state.Graph.Edges)
         {
             if (!e.IsCurrent) continue;
             if (!string.IsNullOrEmpty(e.Source))
-                edgeCountIndex[e.Source] = edgeCountIndex.GetValueOrDefault(e.Source) + 1;
+                state.EdgeCountIndex[e.Source] = state.EdgeCountIndex.GetValueOrDefault(e.Source) + 1;
             if (!string.IsNullOrEmpty(e.Target) && !string.Equals(e.Source, e.Target, StringComparison.OrdinalIgnoreCase))
-                edgeCountIndex[e.Target] = edgeCountIndex.GetValueOrDefault(e.Target) + 1;
+                state.EdgeCountIndex[e.Target] = state.EdgeCountIndex.GetValueOrDefault(e.Target) + 1;
         }
     }
 
@@ -840,17 +950,18 @@ public class WorldGraphService : IWorldGraphService
     /// </summary>
     public int GetEdgeCount(string nodeId)
     {
-        EnsureLoaded();
-        return edgeCountIndex.GetValueOrDefault(nodeId);
+        var state = GetState();
+        EnsureLoaded(state);
+        return state.EdgeCountIndex.GetValueOrDefault(nodeId);
     }
 
     /// <summary>Get territory index stats for display.</summary>
     public Dictionary<string, int> GetTerritoryStats() =>
-        territoryIndex.ToDictionary(kv => kv.Key, kv => kv.Value.Count);
+        GetState().TerritoryIndex.ToDictionary(kv => kv.Key, kv => kv.Value.Count);
 
     /// <summary>Get type index stats for display.</summary>
     public Dictionary<string, int> GetTypeStats() =>
-        typeIndex.ToDictionary(kv => kv.Key, kv => kv.Value.Count);
+        GetState().TypeIndex.ToDictionary(kv => kv.Key, kv => kv.Value.Count);
 
     // ── Persistence ─────────────────────────────────────────
 
@@ -861,24 +972,28 @@ public class WorldGraphService : IWorldGraphService
     /// scoped universe slug so each universe keeps its own cache side-by-side:
     /// <c>glmz_universe_graph.json</c>, <c>scry_universe_graph.json</c>, …
     /// Falls back to the universe id (or "world" when unscoped) if no slug is available.
+    /// Derived from <paramref name="state"/>'s own UniverseId (not the ambient
+    /// <see cref="UniverseScope"/>) so the filename is always correct for the state
+    /// actually being saved/loaded/probed, independent of whichever universe happens
+    /// to be ambient at the moment this is called.
     /// </summary>
-    private string GraphFileName()
+    private string GraphFileName(GraphState state)
     {
-        var slug = UniverseScope.Current?.CurrentSlug;
+        var slug = UniverseScope.Current?.ListUniverses()
+            .FirstOrDefault(u => u.Id == state.UniverseId)?.Slug;
         if (string.IsNullOrWhiteSpace(slug))
-        {
-            var id = UniverseScope.EffectiveId;
-            slug = id == Guid.Empty ? "world" : "u-" + id.ToString("N")[..8];
-        }
+            slug = state.UniverseId == Guid.Empty ? "world" : "u-" + state.UniverseId.ToString("N")[..8];
         return $"{slug}_universe_graph.json";
     }
 
-    public void Save()
+    public void Save() => Save(GetState());
+
+    private void Save(GraphState state)
     {
         var snapshot = new GraphSnapshot
         {
-            Nodes = _nodes.Values.ToList(),
-            Edges = _graph.Edges.ToList(),
+            Nodes = state.Nodes.Values.ToList(),
+            Edges = state.Graph.Edges.ToList(),
             LastSaved = DateTime.UtcNow,
         };
 
@@ -891,7 +1006,7 @@ public class WorldGraphService : IWorldGraphService
             try
             {
                 var json = JsonSerializer.Serialize(snapshot, JsonDefaults.Indented);
-                File.WriteAllText(Path.Combine(paths.GraphDir, GraphFileName()), json);
+                File.WriteAllText(Path.Combine(paths.GraphDir, GraphFileName(state)), json);
             }
             catch (Exception ex) { error = ex; }
         }, maxStackSize: 16 * 1024 * 1024);
@@ -908,9 +1023,11 @@ public class WorldGraphService : IWorldGraphService
         if (error != null) throw error;
     }
 
-    public void Load()
+    public void Load() => Load(GetState());
+
+    private void Load(GraphState state)
     {
-        var path = Path.Combine(paths.GraphDir, GraphFileName());
+        var path = Path.Combine(paths.GraphDir, GraphFileName(state));
         if (!File.Exists(path)) return;
 
         GraphSnapshot? snapshot = null;
@@ -938,56 +1055,125 @@ public class WorldGraphService : IWorldGraphService
         }
         if (snapshot == null) return;
 
-        _graph.Clear();
-        _nodes.Clear();
+        state.Graph.Clear();
+        state.Nodes.Clear();
 
         foreach (var node in snapshot.Nodes)
-            AddNode(node);
+            AddNode(state, node);
         foreach (var edge in snapshot.Edges)
-            AddEdge(edge);
+            AddEdge(state, edge);
     }
 
-    public void Rebuild()
+    public void Rebuild() => Rebuild(GetState());
+
+    private void Rebuild(GraphState state)
     {
-        lock (rebuildLock)
+        lock (state.RebuildLock)
         {
-          rebuilding = true;
+          state.Rebuilding = true;
           try
           {
-            _graph.Clear();
-            _nodes.Clear();
-            typeIndex.Clear();
-            territoryIndex.Clear();
+            state.Graph.Clear();
+            state.Nodes.Clear();
+            state.TypeIndex.Clear();
+            state.TerritoryIndex.Clear();
 
-            BuildFromDatabase();
-            InferCorpRelationships();
+            BuildFromDatabase(state);
+            InferCorpRelationships(state);
 
             // Optimize: deduplicate edges and rebuild indexes
-            var deduped = DeduplicateEdges();
-            RebuildIndexes();
+            var deduped = DeduplicateEdges(state);
+            RebuildIndexes(state);
 
-            System.Diagnostics.Debug.WriteLine($"[WorldGraph] Rebuild complete: {_nodes.Count} nodes, {_graph.EdgeCount} edges, {deduped} duplicates removed, {typeIndex.Count} type indexes, {territoryIndex.Count} territory indexes");
+            System.Diagnostics.Debug.WriteLine($"[WorldGraph] Rebuild complete: {state.Nodes.Count} nodes, {state.Graph.EdgeCount} edges, {deduped} duplicates removed, {state.TypeIndex.Count} type indexes, {state.TerritoryIndex.Count} territory indexes");
 
-            builtEpoch = UniverseScope.Epoch;
-            Save();
+            Save(state);
           }
-          finally { rebuilding = false; }
+          finally { state.Rebuilding = false; }
         }
     }
 
     // ── Graph Builders (from canon.json) ────────────────────
 
-    private void BuildFromDatabase()
+    private void BuildFromDatabase(GraphState state)
     {
-        BuildCharacters();
-        BuildDistricts();
-        BuildFactions();
-        BuildCorponations();
-        BuildWeaponry();
-        BuildEquipment();
-        BuildTechnology();
-        LinkDistrictFrequentedBy();
-        BuildRemainingEntities();
+        BuildCharacters(state);
+        BuildDistricts(state);
+        BuildFactions(state);
+        BuildCorponations(state);
+        BuildWeaponry(state);
+        BuildEquipment(state);
+        BuildTechnology(state);
+        LinkDistrictFrequentedBy(state);
+        BuildRemainingEntities(state);
+        BuildEdgesFromSqlTable(state);
+    }
+
+    /// <summary>
+    /// Loads the real typed <c>Edges</c> SQL table (RFC 0007 relationalization) and wires those
+    /// rows into the graph, additive to every narrative-text-derived edge the bespoke Build*
+    /// methods above already produced. Before this, the graph's only source of edges was regex
+    /// parsing of free-text fields (e.g. <see cref="BuildCorponations"/> deriving
+    /// <c>controls_territory</c> from <c>SovereignTerritory</c>) — real relationship rows created
+    /// via <c>create_relationship</c>/MCP (owns, made_by, makes, based_in, etc.) were completely
+    /// invisible to <see cref="GetNeighbors"/>/<see cref="GetAllEdges"/> no matter how often the
+    /// graph rebuilt. Runs LAST in <see cref="BuildFromDatabase"/> so as many Source/Target
+    /// entities as possible already have graph vertices from the node-building passes above.
+    /// Deliberately does not deduplicate against narrative-derived edges itself — the exact-match
+    /// pass in <see cref="DeduplicateEdges(GraphState)"/> (called right after <c>BuildFromDatabase</c>
+    /// in <see cref="Rebuild"/>) already covers Source|Target|RelationType collisions.
+    /// </summary>
+    private void BuildEdgesFromSqlTable(GraphState state)
+    {
+        if (sql == null) return;
+        using var ctx = sql.CreateDbContext();
+
+        // Same Guid.Empty guard as IsStale(): Guid.Empty means "no active universe scoping"
+        // (tests / design-time) where every real row still carries a real, non-empty
+        // UniverseId, so filtering by "= Guid.Empty" would match nothing — load everything
+        // instead. When scoped, the Edges DbSet also carries its own ambient HasQueryFilter
+        // keyed on UniverseScope.EffectiveId, so this is belt-and-suspenders with that filter,
+        // not a replacement for it.
+        var edgesQuery = ctx.Edges.AsNoTracking();
+        if (state.UniverseId != Guid.Empty)
+            edgesQuery = edgesQuery.Where(e => e.UniverseId == state.UniverseId);
+
+        var edges = edgesQuery
+            .Select(e => new { e.SourceId, e.TargetId, e.RelationType, e.Weight, e.Sentiment, e.Description, e.InvalidatedAt })
+            .ToList();
+        if (edges.Count == 0) return;
+
+        // One batched lookup for every entity referenced as a Source or Target, instead of
+        // resolving each edge's name via an N+1 query.
+        var idsNeeded = edges.Select(e => e.SourceId).Concat(edges.Select(e => e.TargetId)).Distinct().ToList();
+        var idToSlug = ctx.Entities.AsNoTracking()
+            .Where(en => idsNeeded.Contains(en.Id))
+            .Select(en => new { en.Id, en.Name })
+            .ToList()
+            .ToDictionary(en => en.Id, en => Slugify(en.Name));
+
+        foreach (var edge in edges)
+        {
+            var sourceSlug = idToSlug.GetValueOrDefault(edge.SourceId);
+            var targetSlug = idToSlug.GetValueOrDefault(edge.TargetId);
+            // Skip edges whose endpoint entity has no resolvable name, or whose endpoint
+            // isn't already a node the graph knows about (only wire edges between nodes the
+            // graph actually has — AddEdge would silently auto-vertex an unknown slug, which
+            // would put a nameless/typeless phantom node in the graph).
+            if (string.IsNullOrEmpty(sourceSlug) || string.IsNullOrEmpty(targetSlug)) continue;
+            if (!state.Nodes.ContainsKey(sourceSlug) || !state.Nodes.ContainsKey(targetSlug)) continue;
+
+            AddEdge(state, new UniverseEdge
+            {
+                Source = sourceSlug,
+                Target = targetSlug,
+                RelationType = edge.RelationType,
+                Weight = edge.Weight,
+                Sentiment = edge.Sentiment,
+                Description = edge.Description ?? "",
+                InvalidatedAt = edge.InvalidatedAt,
+            });
+        }
     }
 
     /// <summary>
@@ -998,33 +1184,41 @@ public class WorldGraphService : IWorldGraphService
     /// are reachable by neighbor-traversal and the type index, ending the
     /// "graph only sees 7 types" gap. Rich types already added above win (we skip
     /// any id already present), so this never clobbers a character/place node.
+    ///
+    /// No longer filters out stub-status rows: a stub-status entity of one of these
+    /// types (e.g. a Transportation entity like "Kyle's motorcycle") used to be
+    /// invisible to the graph forever, even after a full rebuild, because this was
+    /// the only builder with a `.Where(e => e.Status != "stub")` filter — the
+    /// bespoke builders above have no such filter. Real Status is now threaded onto
+    /// the node so stub vs. canon is represented honestly instead of every node
+    /// silently defaulting to UniverseNode's "canon" default.
     /// </summary>
-    private void BuildRemainingEntities()
+    private void BuildRemainingEntities(GraphState state)
     {
         if (sql == null) return;
         using var ctx = sql.CreateDbContext();
         var rows = ctx.Entities.AsNoTracking()
-            .Where(e => e.Status != "stub")
-            .Select(e => new { e.Name, e.EntityType, e.Description })
+            .Select(e => new { e.Name, e.EntityType, e.Description, e.Status })
             .ToList();
         foreach (var e in rows)
         {
             if (string.IsNullOrWhiteSpace(e.Name)) continue;
             var id = Slugify(e.Name);
-            if (_nodes.ContainsKey(id)) continue;   // a bespoke builder already modeled it
+            if (state.Nodes.ContainsKey(id)) continue;   // a bespoke builder already modeled it
             var props = new Dictionary<string, string>();
             if (!string.IsNullOrWhiteSpace(e.Description)) props["description"] = e.Description!;
-            AddNode(new WorldNode
+            AddNode(state, new UniverseNode
             {
                 Id = id,
                 Name = e.Name,
                 NodeType = string.IsNullOrWhiteSpace(e.EntityType) ? EntityTypes.Unknown : e.EntityType,
                 Properties = props,
+                Status = string.IsNullOrWhiteSpace(e.Status) ? "canon" : e.Status,
             });
         }
     }
 
-    private void BuildCharacters()
+    private void BuildCharacters(GraphState state)
     {
         foreach (var c in db.Characters)
         {
@@ -1052,14 +1246,14 @@ public class WorldGraphService : IWorldGraphService
             if (c.SpeechPatterns.Cadence.Length > 0) props["cadence"] = c.SpeechPatterns.Cadence;
             if (c.SpeechPatterns.ExampleLines.Any()) props["example_dialogue"] = string.Join(" | ", c.SpeechPatterns.ExampleLines);
 
-            AddNode(new WorldNode { Id = id, Name = c.Name, NodeType = EntityTypes.Character, Properties = props, SourceFile = "characters.json" });
+            AddNode(state, new UniverseNode { Id = id, Name = c.Name, NodeType = EntityTypes.Character, Properties = props, SourceFile = "characters.json" });
 
             foreach (var r in c.Relationships)
             {
                 var targetId = Slugify(r.Name);
-                if (!_nodes.ContainsKey(targetId))
-                    AddNode(new WorldNode { Id = targetId, Name = r.Name, NodeType = EntityTypes.Unknown });
-                AddEdge(new WorldEdge
+                if (!state.Nodes.ContainsKey(targetId))
+                    AddNode(state, new UniverseNode { Id = targetId, Name = r.Name, NodeType = EntityTypes.Unknown });
+                AddEdge(state, new UniverseEdge
                 {
                     Source = id, Target = targetId,
                     RelationType = r.Type, Description = r.Description,
@@ -1070,7 +1264,7 @@ public class WorldGraphService : IWorldGraphService
             if (c.Affiliation.Length > 0)
             {
                 var affId = Slugify(c.Affiliation);
-                AddEdge(new WorldEdge { Source = id, Target = affId, RelationType = "affiliated_with",
+                AddEdge(state, new UniverseEdge { Source = id, Target = affId, RelationType = "affiliated_with",
                     Description = $"{c.Name} is affiliated with {c.Affiliation}" });
             }
 
@@ -1089,9 +1283,9 @@ public class WorldGraphService : IWorldGraphService
                 // detail isn't lost, just not misused as a node name.
                 var placeName = ExtractPlaceName(c.Location);
                 var locId = Slugify(placeName);
-                if (!_nodes.ContainsKey(locId))
-                    AddNode(new WorldNode { Id = locId, Name = placeName, NodeType = EntityTypes.Place });
-                AddEdge(new WorldEdge { Source = id, Target = locId, RelationType = "located_in",
+                if (!state.Nodes.ContainsKey(locId))
+                    AddNode(state, new UniverseNode { Id = locId, Name = placeName, NodeType = EntityTypes.Place });
+                AddEdge(state, new UniverseEdge { Source = id, Target = locId, RelationType = "located_in",
                     Description = placeName == c.Location ? "" : c.Location });
             }
         }
@@ -1125,7 +1319,7 @@ public class WorldGraphService : IWorldGraphService
         return leading.Length > cleanThreshold ? leading[..cleanThreshold].TrimEnd() : leading;
     }
 
-    private void BuildDistricts()
+    private void BuildDistricts(GraphState state)
     {
         foreach (var d in db.Districts)
         {
@@ -1144,7 +1338,7 @@ public class WorldGraphService : IWorldGraphService
             if (d.Atmosphere.Smells.Any()) props["smells"] = string.Join("; ", d.Atmosphere.Smells);
             if (d.Atmosphere.Feel.Length > 0) props["feel"] = d.Atmosphere.Feel;
 
-            AddNode(new WorldNode { Id = id, Name = d.Name, NodeType = EntityTypes.Place, Properties = props, SourceFile = "districts.json" });
+            AddNode(state, new UniverseNode { Id = id, Name = d.Name, NodeType = EntityTypes.Place, Properties = props, SourceFile = "districts.json" });
 
             foreach (var adj in d.Connections.AdjacentTo)
             {
@@ -1153,9 +1347,9 @@ public class WorldGraphService : IWorldGraphService
                 var adjDesc = parenIdx > 0 ? adj[(parenIdx + 1)..].TrimEnd(')').Trim() : "";
                 var adjId = Slugify(adjName);
 
-                if (!_nodes.ContainsKey(adjId))
-                    AddNode(new WorldNode { Id = adjId, Name = adjName, NodeType = EntityTypes.Place });
-                AddEdge(new WorldEdge { Source = id, Target = adjId, RelationType = "adjacent_to", Description = adjDesc });
+                if (!state.Nodes.ContainsKey(adjId))
+                    AddNode(state, new UniverseNode { Id = adjId, Name = adjName, NodeType = EntityTypes.Place });
+                AddEdge(state, new UniverseEdge { Source = id, Target = adjId, RelationType = "adjacent_to", Description = adjDesc });
             }
 
             foreach (var loc in d.NotableLocations)
@@ -1167,20 +1361,20 @@ public class WorldGraphService : IWorldGraphService
                 var locId = Slugify(locName);
                 var locProps = new Dictionary<string, string>();
                 if (loc.Description.Length > 0) locProps["description"] = loc.Description;
-                AddNode(new WorldNode { Id = locId, Name = locName, NodeType = EntityTypes.Place, Properties = locProps });
-                AddEdge(new WorldEdge { Source = locId, Target = id, RelationType = "located_in", Description = $"{loc.Name} is inside {d.Name}" });
+                AddNode(state, new UniverseNode { Id = locId, Name = locName, NodeType = EntityTypes.Place, Properties = locProps });
+                AddEdge(state, new UniverseEdge { Source = locId, Target = id, RelationType = "located_in", Description = $"{loc.Name} is inside {d.Name}" });
             }
 
             foreach (var exit in d.Connections.Exits)
             {
                 if (string.IsNullOrWhiteSpace(exit.Destination)) continue;
                 var destId = Slugify(exit.Destination);
-                if (!_nodes.ContainsKey(destId))
-                    AddNode(new WorldNode { Id = destId, Name = exit.Destination, NodeType = EntityTypes.Place });
+                if (!state.Nodes.ContainsKey(destId))
+                    AddNode(state, new UniverseNode { Id = destId, Name = exit.Destination, NodeType = EntityTypes.Place });
                 var exitDesc = string.IsNullOrWhiteSpace(exit.Description)
                     ? $"{exit.Direction} exit from {d.Name} to {exit.Destination} ({exit.Type})"
                     : exit.Description;
-                AddEdge(new WorldEdge { Source = id, Target = destId, RelationType = "connected_via_exit",
+                AddEdge(state, new UniverseEdge { Source = id, Target = destId, RelationType = "connected_via_exit",
                     Description = exitDesc, Weight = exit.Restricted ? 0.5 : 1.0 });
             }
 
@@ -1189,15 +1383,15 @@ public class WorldGraphService : IWorldGraphService
                 if (string.IsNullOrWhiteSpace(related)) continue;
                 var relName = ExtractPlaceName(related);
                 var relId = Slugify(relName);
-                if (!_nodes.ContainsKey(relId))
-                    AddNode(new WorldNode { Id = relId, Name = relName, NodeType = EntityTypes.Unknown });
-                AddEdge(new WorldEdge { Source = id, Target = relId, RelationType = "related_to", Weight = 0.5,
+                if (!state.Nodes.ContainsKey(relId))
+                    AddNode(state, new UniverseNode { Id = relId, Name = relName, NodeType = EntityTypes.Unknown });
+                AddEdge(state, new UniverseEdge { Source = id, Target = relId, RelationType = "related_to", Weight = 0.5,
                     Description = relName == related ? "" : related });
             }
         }
     }
 
-    private void BuildFactions()
+    private void BuildFactions(GraphState state)
     {
         foreach (var f in db.Factions)
         {
@@ -1214,14 +1408,14 @@ public class WorldGraphService : IWorldGraphService
             if (f.NarrativeFunction.Length > 0) props["narrative_function"] = f.NarrativeFunction;
             if (f.StoryHooks.Any()) props["story_hooks"] = string.Join("; ", f.StoryHooks);
 
-            AddNode(new WorldNode { Id = id, Name = f.Name, NodeType = EntityTypes.Faction, Properties = props, SourceFile = "factions.json" });
+            AddNode(state, new UniverseNode { Id = id, Name = f.Name, NodeType = EntityTypes.Faction, Properties = props, SourceFile = "factions.json" });
 
             foreach (var r in f.Relationships)
             {
                 var targetId = Slugify(r.Name);
-                if (!_nodes.ContainsKey(targetId))
-                    AddNode(new WorldNode { Id = targetId, Name = r.Name, NodeType = EntityTypes.Unknown });
-                AddEdge(new WorldEdge
+                if (!state.Nodes.ContainsKey(targetId))
+                    AddNode(state, new UniverseNode { Id = targetId, Name = r.Name, NodeType = EntityTypes.Unknown });
+                AddEdge(state, new UniverseEdge
                 {
                     Source = id, Target = targetId,
                     RelationType = r.Type, Description = r.Description,
@@ -1237,15 +1431,15 @@ public class WorldGraphService : IWorldGraphService
                 // rather than a clean place name.
                 var terrName = ExtractPlaceName(f.Territory);
                 var terrId = Slugify(terrName);
-                if (!_nodes.ContainsKey(terrId))
-                    AddNode(new WorldNode { Id = terrId, Name = terrName, NodeType = EntityTypes.Place });
-                AddEdge(new WorldEdge { Source = id, Target = terrId, RelationType = "operates_in",
+                if (!state.Nodes.ContainsKey(terrId))
+                    AddNode(state, new UniverseNode { Id = terrId, Name = terrName, NodeType = EntityTypes.Place });
+                AddEdge(state, new UniverseEdge { Source = id, Target = terrId, RelationType = "operates_in",
                     Description = terrName == f.Territory ? "" : f.Territory });
             }
         }
     }
 
-    private void BuildCorponations()
+    private void BuildCorponations(GraphState state)
     {
         foreach (var c in db.Corponations)
         {
@@ -1262,7 +1456,7 @@ public class WorldGraphService : IWorldGraphService
             if (c.KeyDetail.Length > 0) props["key_detail"] = c.KeyDetail;
             if (c.RelationshipToBig20.Length > 0) props["relationship_to_big_20"] = c.RelationshipToBig20;
 
-            AddNode(new WorldNode { Id = id, Name = c.Name, NodeType = EntityTypes.Organization, Properties = props, SourceFile = "corponations.json" });
+            AddNode(state, new UniverseNode { Id = id, Name = c.Name, NodeType = EntityTypes.Organization, Properties = props, SourceFile = "corponations.json" });
 
             if (c.SovereignTerritory.Length > 0)
             {
@@ -1272,15 +1466,15 @@ public class WorldGraphService : IWorldGraphService
                 // platforms..."), not a clean place name.
                 var terrName = ExtractPlaceName(c.SovereignTerritory);
                 var terrId = Slugify(terrName);
-                if (!_nodes.ContainsKey(terrId))
-                    AddNode(new WorldNode { Id = terrId, Name = terrName, NodeType = EntityTypes.Place });
-                AddEdge(new WorldEdge { Source = id, Target = terrId, RelationType = "controls_territory",
+                if (!state.Nodes.ContainsKey(terrId))
+                    AddNode(state, new UniverseNode { Id = terrId, Name = terrName, NodeType = EntityTypes.Place });
+                AddEdge(state, new UniverseEdge { Source = id, Target = terrId, RelationType = "controls_territory",
                     Description = terrName == c.SovereignTerritory ? "" : c.SovereignTerritory });
             }
         }
     }
 
-    private void BuildWeaponry()
+    private void BuildWeaponry(GraphState state)
     {
         foreach (var w in db.Weaponry)
         {
@@ -1297,7 +1491,7 @@ public class WorldGraphService : IWorldGraphService
             if (w.CulturalContext.Length > 0) props["cultural_context"] = w.CulturalContext;
             if (w.StoryHooks.Any()) props["story_hooks"] = string.Join("; ", w.StoryHooks);
 
-            AddNode(new WorldNode { Id = id, Name = w.Name, NodeType = EntityTypes.Weapon, Properties = props, SourceFile = "weaponry.json" });
+            AddNode(state, new UniverseNode { Id = id, Name = w.Name, NodeType = EntityTypes.Weapon, Properties = props, SourceFile = "weaponry.json" });
 
             // Link to manufacturer
             if (w.Manufacturer.Length > 0)
@@ -1307,9 +1501,9 @@ public class WorldGraphService : IWorldGraphService
                 // (primary); licensed variants from Houses Corvus and Noctua"), not a clean org name.
                 var mfgName = ExtractPlaceName(w.Manufacturer);
                 var mfgId = Slugify(mfgName);
-                if (!_nodes.ContainsKey(mfgId))
-                    AddNode(new WorldNode { Id = mfgId, Name = mfgName, NodeType = EntityTypes.Organization });
-                AddEdge(new WorldEdge { Source = id, Target = mfgId, RelationType = "manufactured_by",
+                if (!state.Nodes.ContainsKey(mfgId))
+                    AddNode(state, new UniverseNode { Id = mfgId, Name = mfgName, NodeType = EntityTypes.Organization });
+                AddEdge(state, new UniverseEdge { Source = id, Target = mfgId, RelationType = "manufactured_by",
                     Description = mfgName == w.Manufacturer ? "" : w.Manufacturer });
             }
 
@@ -1317,23 +1511,23 @@ public class WorldGraphService : IWorldGraphService
             foreach (var user in w.KnownUsers)
             {
                 var userId = Slugify(user);
-                if (!_nodes.ContainsKey(userId))
-                    AddNode(new WorldNode { Id = userId, Name = user, NodeType = EntityTypes.Unknown });
-                AddEdge(new WorldEdge { Source = userId, Target = id, RelationType = "wields" });
+                if (!state.Nodes.ContainsKey(userId))
+                    AddNode(state, new UniverseNode { Id = userId, Name = user, NodeType = EntityTypes.Unknown });
+                AddEdge(state, new UniverseEdge { Source = userId, Target = id, RelationType = "wields" });
             }
 
             // Link to base technologies
             foreach (var tech in w.BaseTechnologies)
             {
                 var techId = Slugify(tech);
-                if (!_nodes.ContainsKey(techId))
-                    AddNode(new WorldNode { Id = techId, Name = tech, NodeType = EntityTypes.Technology });
-                AddEdge(new WorldEdge { Source = id, Target = techId, RelationType = "built_on" });
+                if (!state.Nodes.ContainsKey(techId))
+                    AddNode(state, new UniverseNode { Id = techId, Name = tech, NodeType = EntityTypes.Technology });
+                AddEdge(state, new UniverseEdge { Source = id, Target = techId, RelationType = "built_on" });
             }
         }
     }
 
-    private void BuildEquipment()
+    private void BuildEquipment(GraphState state)
     {
         foreach (var e in db.Equipment)
         {
@@ -1350,7 +1544,7 @@ public class WorldGraphService : IWorldGraphService
             if (e.Specifications.Any()) props["specifications"] = string.Join("; ", e.Specifications.Select(kv => $"{kv.Key}: {kv.Value}"));
             if (e.StoryHooks.Any()) props["story_hooks"] = string.Join("; ", e.StoryHooks);
 
-            AddNode(new WorldNode { Id = id, Name = e.Name, NodeType = EntityTypes.Equipment, Properties = props, SourceFile = "equipment.json" });
+            AddNode(state, new UniverseNode { Id = id, Name = e.Name, NodeType = EntityTypes.Equipment, Properties = props, SourceFile = "equipment.json" });
 
             if (e.Manufacturer.Length > 0)
             {
@@ -1360,31 +1554,31 @@ public class WorldGraphService : IWorldGraphService
                 // manufactured)"), not a clean org name.
                 var mfgName = ExtractPlaceName(e.Manufacturer);
                 var mfgId = Slugify(mfgName);
-                if (!_nodes.ContainsKey(mfgId))
-                    AddNode(new WorldNode { Id = mfgId, Name = mfgName, NodeType = EntityTypes.Organization });
-                AddEdge(new WorldEdge { Source = id, Target = mfgId, RelationType = "manufactured_by",
+                if (!state.Nodes.ContainsKey(mfgId))
+                    AddNode(state, new UniverseNode { Id = mfgId, Name = mfgName, NodeType = EntityTypes.Organization });
+                AddEdge(state, new UniverseEdge { Source = id, Target = mfgId, RelationType = "manufactured_by",
                     Description = mfgName == e.Manufacturer ? "" : e.Manufacturer });
             }
 
             foreach (var user in e.KnownUsers)
             {
                 var userId = Slugify(user);
-                if (!_nodes.ContainsKey(userId))
-                    AddNode(new WorldNode { Id = userId, Name = user, NodeType = EntityTypes.Unknown });
-                AddEdge(new WorldEdge { Source = userId, Target = id, RelationType = "uses" });
+                if (!state.Nodes.ContainsKey(userId))
+                    AddNode(state, new UniverseNode { Id = userId, Name = user, NodeType = EntityTypes.Unknown });
+                AddEdge(state, new UniverseEdge { Source = userId, Target = id, RelationType = "uses" });
             }
 
             foreach (var tech in e.BaseTechnologies)
             {
                 var techId = Slugify(tech);
-                if (!_nodes.ContainsKey(techId))
-                    AddNode(new WorldNode { Id = techId, Name = tech, NodeType = EntityTypes.Technology });
-                AddEdge(new WorldEdge { Source = id, Target = techId, RelationType = "built_on" });
+                if (!state.Nodes.ContainsKey(techId))
+                    AddNode(state, new UniverseNode { Id = techId, Name = tech, NodeType = EntityTypes.Technology });
+                AddEdge(state, new UniverseEdge { Source = id, Target = techId, RelationType = "built_on" });
             }
         }
     }
 
-    private void BuildTechnology()
+    private void BuildTechnology(GraphState state)
     {
         foreach (var t in db.Technology)
         {
@@ -1397,30 +1591,30 @@ public class WorldGraphService : IWorldGraphService
             if (t.SocialImpact.Length > 0) props["social_impact"] = t.SocialImpact;
             if (t.StoryHooks.Any()) props["story_hooks"] = string.Join("; ", t.StoryHooks);
 
-            AddNode(new WorldNode { Id = id, Name = t.Name, NodeType = EntityTypes.Technology, Properties = props, SourceFile = "technology.json" });
+            AddNode(state, new UniverseNode { Id = id, Name = t.Name, NodeType = EntityTypes.Technology, Properties = props, SourceFile = "technology.json" });
 
             foreach (var dev in t.Developers)
             {
                 var devId = Slugify(dev);
-                if (!_nodes.ContainsKey(devId))
-                    AddNode(new WorldNode { Id = devId, Name = dev, NodeType = EntityTypes.Organization });
-                AddEdge(new WorldEdge { Source = id, Target = devId, RelationType = "developed_by" });
+                if (!state.Nodes.ContainsKey(devId))
+                    AddNode(state, new UniverseNode { Id = devId, Name = dev, NodeType = EntityTypes.Organization });
+                AddEdge(state, new UniverseEdge { Source = id, Target = devId, RelationType = "developed_by" });
             }
 
             foreach (var baseTech in t.BaseTechnologies)
             {
                 var baseId = Slugify(baseTech);
-                if (!_nodes.ContainsKey(baseId))
-                    AddNode(new WorldNode { Id = baseId, Name = baseTech, NodeType = EntityTypes.Technology });
-                AddEdge(new WorldEdge { Source = id, Target = baseId, RelationType = "depends_on" });
+                if (!state.Nodes.ContainsKey(baseId))
+                    AddNode(state, new UniverseNode { Id = baseId, Name = baseTech, NodeType = EntityTypes.Technology });
+                AddEdge(state, new UniverseEdge { Source = id, Target = baseId, RelationType = "depends_on" });
             }
 
             foreach (var enabled in t.Enables)
             {
                 var enabledId = Slugify(enabled);
-                if (!_nodes.ContainsKey(enabledId))
-                    AddNode(new WorldNode { Id = enabledId, Name = enabled, NodeType = EntityTypes.Technology });
-                AddEdge(new WorldEdge { Source = id, Target = enabledId, RelationType = "enables" });
+                if (!state.Nodes.ContainsKey(enabledId))
+                    AddNode(state, new UniverseNode { Id = enabledId, Name = enabled, NodeType = EntityTypes.Technology });
+                AddEdge(state, new UniverseEdge { Source = id, Target = enabledId, RelationType = "enables" });
             }
         }
     }
@@ -1429,7 +1623,7 @@ public class WorldGraphService : IWorldGraphService
     /// Cross-reference district.frequented_by with character nodes.
     /// Run after all entity types are loaded so character nodes exist.
     /// </summary>
-    private void LinkDistrictFrequentedBy()
+    private void LinkDistrictFrequentedBy(GraphState state)
     {
         foreach (var d in db.Districts)
         {
@@ -1437,8 +1631,8 @@ public class WorldGraphService : IWorldGraphService
             foreach (var name in d.FrequentedBy)
             {
                 var charId = Slugify(name);
-                if (_nodes.ContainsKey(charId))
-                    AddEdge(new WorldEdge { Source = charId, Target = districtId, RelationType = "frequents" });
+                if (state.Nodes.ContainsKey(charId))
+                    AddEdge(state, new UniverseEdge { Source = charId, Target = districtId, RelationType = "frequents" });
             }
         }
     }
@@ -1455,16 +1649,16 @@ public class WorldGraphService : IWorldGraphService
         return "mixed";
     }
 
-    private void InferCorpRelationships()
+    private void InferCorpRelationships(GraphState state)
     {
         foreach (var character in GetNodesByType("character"))
         {
             if (character.Properties.TryGetValue("affiliation", out var aff) && !string.IsNullOrEmpty(aff))
             {
                 var affId = Slugify(aff);
-                if (_nodes.ContainsKey(affId) && !GetRelationshipsBetween(character.Id, affId).Any())
+                if (state.Nodes.ContainsKey(affId) && !GetRelationshipsBetween(state, character.Id, affId).Any())
                 {
-                    AddEdge(new WorldEdge
+                    AddEdge(state, new UniverseEdge
                     {
                         Source = character.Id,
                         Target = affId,

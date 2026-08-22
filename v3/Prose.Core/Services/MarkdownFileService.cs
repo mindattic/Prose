@@ -27,11 +27,14 @@ public class MarkdownFileService
     /// queries. A <c>FromSqlRaw</c> projection must return the full mapped set or EF throws when
     /// materializing — the previous hand-written list stopped at <c>SyncedBy</c> and omitted
     /// Tier/Scope/Triggers/AutoTier/RelatedIds, which meant the <c>--as-of</c> restore path was
-    /// already broken before UniverseId was added to it.
+    /// already broken before UniverseId was added to it. EntityId (added 2026-08-04) went stale
+    /// the same way and stayed silent until the Beat Context Archive's Docs[] resolution
+    /// (2026-08-21) became the first caller to actually exercise <see cref="GetAsync"/>'s
+    /// <c>asOf</c> branch against a doc-bearing beat.
     /// </summary>
     private const string TemporalColumns =
         "Id, FilePath, FileRoot, RelativePath, FileName, Category, Content, ContentHash, " +
-        "LastSyncedAt, SyncedBy, Tier, Scope, Triggers, AutoTier, RelatedIds, UniverseId";
+        "LastSyncedAt, SyncedBy, Tier, Scope, Triggers, AutoTier, RelatedIds, UniverseId, EntityId";
 
     public record SyncResult(int Inserted, int Updated, int Unchanged, List<string> Errors);
     public record RestoreResult(int Written, int Skipped, List<string> Errors);

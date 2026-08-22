@@ -9,7 +9,7 @@ namespace Prose.Cli;
 /// Runs GraphHealthService.Analyze() against the scoped universe's world graph — orphaned
 /// nodes (zero edges), weakly-connected nodes (exactly one edge), and suspicious/malformed
 /// node names (sentence fragments, junk parses). Zero LLM calls, pure graph traversal + string
-/// heuristics over the already-cached WorldGraphService data (run --rebuild-graph first if the
+/// heuristics over the already-cached UniverseGraphService data (run --rebuild-graph first if the
 /// cache might be stale).
 ///
 /// Added 2026-08-09: GraphHealthService existed with a complete, working Analyze() method but
@@ -30,7 +30,7 @@ public static class GraphHealthCli
     {
         var json = args.Contains("--json");
         var proseOnly = args.Contains("--used-in-prose-only");
-        var graph = services.GetRequiredService<WorldGraphService>();
+        var graph = services.GetRequiredService<UniverseGraphService>();
         var health = services.GetRequiredService<GraphHealthService>();
 
         if (!json) Console.WriteLine("Loading world graph…");

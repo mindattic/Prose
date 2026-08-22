@@ -19,11 +19,13 @@ public class GlossaryTools
 {
     private readonly GlossaryService glossary;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly HubInvoker hub;
 
-    public GlossaryTools(GlossaryService glossary, IDbContextFactory<ProseDbContext> dbFactory)
+    public GlossaryTools(GlossaryService glossary, IDbContextFactory<ProseDbContext> dbFactory, HubInvoker hub)
     {
         this.glossary = glossary;
         this.dbFactory = dbFactory;
+        this.hub = hub;
     }
 
     [McpServerTool, Description(
@@ -33,11 +35,19 @@ public class GlossaryTools
         "back-matter explanation (can carry more context than an in-voice gloss would); category groups " +
         "entries in the rendered glossary (e.g. 'Enforcement', 'Currency', 'Tech'). Upserts by " +
         "(universe, term) — case-sensitive exact match, calling again with the same term overwrites it.")]
-    public async Task<string> UpsertGlossaryTerm(
+    public Task<string> UpsertGlossaryTerm(
         [Description("The term/acronym as it appears in prose.")] string term,
         [Description("Full expansion if an acronym; empty for plain vocabulary.")] string fullForm,
         [Description("Reader-facing definition shown in the glossary.")] string definition,
-        [Description("Optional grouping category (e.g. 'Enforcement', 'Currency').")] string category = "")
+        [Description("Optional grouping category (e.g. 'Enforcement', 'Currency').")] string category = "") =>
+        hub.InvokeAsync(nameof(GlossaryTools), nameof(UpsertGlossaryTermImpl), new { term, fullForm, definition, category });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> UpsertGlossaryTermImpl(
+        string term,
+        string fullForm,
+        string definition,
+        string category = "")
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var universeId = Prose.Core.Services.UniverseScope.EffectiveId;
@@ -52,7 +62,11 @@ public class GlossaryTools
 
     [McpServerTool, Description(
         "List every Master Glossary entry for the current universe, grouped by category.")]
-    public async Task<string> ListGlossaryTerms()
+    public Task<string> ListGlossaryTerms() =>
+        hub.InvokeAsync(nameof(GlossaryTools), nameof(ListGlossaryTermsImpl));
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ListGlossaryTermsImpl()
     {
         var universeId = Prose.Core.Services.UniverseScope.EffectiveId;
         if (universeId == Guid.Empty)
@@ -69,7 +83,11 @@ public class GlossaryTools
     [McpServerTool, Description(
         "Regenerate the current universe's Master Glossary — Glossary.htm/.json/.txt under " +
         "docs/universes/{SLUG}/ — from the GlossaryTerms table. Run after upsert_glossary_term calls.")]
-    public async Task<string> GenerateGlossary()
+    public Task<string> GenerateGlossary() =>
+        hub.InvokeAsync(nameof(GlossaryTools), nameof(GenerateGlossaryImpl));
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GenerateGlossaryImpl()
     {
         var universeId = Prose.Core.Services.UniverseScope.EffectiveId;
         if (universeId == Guid.Empty)
@@ -89,8 +107,13 @@ public class GlossaryTools
         "detected fresh each call (not a stored join). A term the book stops using drops out on " +
         "the next regenerate; a term added to the universe glossary after the book's last edit " +
         "picks up automatically.")]
-    public async Task<string> GenerateBookGlossary(
-        [Description("Node Guid id or slug/NodeCode of the book.")] string idOrSlug)
+    public Task<string> GenerateBookGlossary(
+        [Description("Node Guid id or slug/NodeCode of the book.")] string idOrSlug) =>
+        hub.InvokeAsync(nameof(GlossaryTools), nameof(GenerateBookGlossaryImpl), new { idOrSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GenerateBookGlossaryImpl(
+        string idOrSlug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var node = Guid.TryParse(idOrSlug, out var gid)

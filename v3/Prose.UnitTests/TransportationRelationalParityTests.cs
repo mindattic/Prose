@@ -219,7 +219,7 @@ public class TransportationRelationalParityTests
                 Id         = id,
                 EntityType = "transportation",
                 Name       = src.Name,
-                Slug       = WorldGraphService.Slugify(src.Name),
+                Slug       = UniverseGraphService.Slugify(src.Name),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,

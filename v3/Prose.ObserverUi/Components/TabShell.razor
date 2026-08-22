@@ -1,0 +1,51 @@
+@implements IDisposable
+
+<div class="tabshell">
+    <ul class="tabshell-strip">
+        @foreach (var tab in orderedTabs)
+        {
+            <li>
+                <button type="button"
+                        class="tabshell-tab @(tab.Id == state.ActiveTabId ? "active" : "")"
+                        @onclick="() => state.Activate(tab.Id)">
+                    @tab.Title
+                </button>
+            </li>
+        }
+    </ul>
+
+    <div class="tabshell-body">
+        @if (activeTab != null)
+        {
+            <DynamicComponent Type="activeTab.ComponentType" />
+        }
+    </div>
+</div>
+
+@code {
+    [Inject] private TabShellState state { get; set; } = default!;
+    [Inject] private IEnumerable<ITabDefinition> tabs { get; set; } = default!;
+
+    private List<ITabDefinition> orderedTabs = [];
+    private ITabDefinition? activeTab;
+
+    protected override void OnInitialized()
+    {
+        orderedTabs = tabs.OrderBy(t => t.Order).ToList();
+        state.Changed += OnStateChanged;
+        if (state.ActiveTabId == null && orderedTabs.Count > 0)
+            state.Open(orderedTabs[0].Id);
+        RefreshActiveTab();
+    }
+
+    private void OnStateChanged()
+    {
+        RefreshActiveTab();
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void RefreshActiveTab() =>
+        activeTab = orderedTabs.FirstOrDefault(t => t.Id == state.ActiveTabId);
+
+    public void Dispose() => state.Changed -= OnStateChanged;
+}

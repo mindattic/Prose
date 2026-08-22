@@ -53,7 +53,7 @@ public class RepositoryDefinitionService
         if (string.IsNullOrWhiteSpace(name))
             throw new ArgumentException("Repository name is required.", nameof(name));
 
-        var slug = WorldGraphService.Slugify(name);
+        var slug = UniverseGraphService.Slugify(name);
         if (string.IsNullOrWhiteSpace(slug))
             throw new ArgumentException($"Name '{name}' does not produce a valid slug.", nameof(name));
 

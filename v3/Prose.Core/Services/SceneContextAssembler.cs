@@ -476,7 +476,7 @@ public class SceneContextAssembler(
 
     private async Task<Dictionary<string, List<(Guid Id, string Name, string Type, bool SingleToken, Guid? OriginNodeId)>>> GetNameIndexAsync(CancellationToken ct)
     {
-        // Universe-switch invalidation (mirrors WorldGraphService's builtEpoch pattern): a
+        // Universe-switch invalidation (mirrors UniverseGraphService's builtEpoch pattern): a
         // process that switches universe mid-run (CLI --universe, MCP switch_universe, the
         // web dropdown) must not keep serving the previous universe's roster for up to
         // NameIndexTtl minutes.

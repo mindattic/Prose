@@ -25,17 +25,20 @@ public class CanonDocTools
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly NodeDocService nodeDoc;
     private readonly MarkdownFileService markdownFiles;
+    private readonly HubInvoker hub;
 
     public CanonDocTools(
         CanonDocumentService canonDocs,
         IDbContextFactory<ProseDbContext> dbFactory,
         NodeDocService nodeDoc,
-        MarkdownFileService markdownFiles)
+        MarkdownFileService markdownFiles,
+        HubInvoker hub)
     {
         this.canonDocs     = canonDocs;
         this.dbFactory     = dbFactory;
         this.nodeDoc       = nodeDoc;
         this.markdownFiles = markdownFiles;
+        this.hub           = hub;
     }
 
     // ── World-level canon ─────────────────────────────────────────────────────
@@ -45,7 +48,11 @@ public class CanonDocTools
         "valid values for the documentType parameter on every other tool in this file. Data-driven " +
         "(CanonDocumentTypes table), so this grows as new document types are migrated; don't rely " +
         "on a hardcoded list from memory.")]
-    public async Task<string> ListCanonDocumentTypes()
+    public Task<string> ListCanonDocumentTypes() =>
+        hub.InvokeAsync(nameof(CanonDocTools), nameof(ListCanonDocumentTypesImpl), new { });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ListCanonDocumentTypesImpl()
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var types = await db.CanonDocumentTypes
@@ -61,9 +68,13 @@ public class CanonDocTools
         "Call list_canon_document_types for the current valid documentType values. " +
         "universeSlug: glmz | scry/fantasy/caul (or a universe GUID). " +
         "Returns the complete assembled markdown — same content that generate_canon_md would write to disk.")]
-    public async Task<string> GetCanonDocument(
+    public Task<string> GetCanonDocument(
         [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
-        [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz")
+        [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz") =>
+        hub.InvokeAsync(nameof(CanonDocTools), nameof(GetCanonDocumentImpl), new { documentType, universeSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GetCanonDocumentImpl(string documentType, string universeSlug = "glmz")
     {
         var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)
@@ -81,9 +92,13 @@ public class CanonDocTools
     [McpServerTool, Description(
         "List all sections in a world-canon document with their keys, titles, sort order, and last-updated times. " +
         "Use this to find the sectionKey you need before calling set_canon_section.")]
-    public async Task<string> ListCanonSections(
+    public Task<string> ListCanonSections(
         [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
-        [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz")
+        [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz") =>
+        hub.InvokeAsync(nameof(CanonDocTools), nameof(ListCanonSectionsImpl), new { documentType, universeSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ListCanonSectionsImpl(string documentType, string universeSlug = "glmz")
     {
         var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)
@@ -117,12 +132,16 @@ public class CanonDocTools
         "The .md artifact and the MarkdownFiles sync (what DocContextService reads at generation time) " +
         "are regenerated automatically as part of this call — no follow-up call needed. " +
         "To find available sectionKeys, call list_canon_sections first.")]
-    public async Task<string> SetCanonSection(
+    public Task<string> SetCanonSection(
         [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
         [Description("Stable section key — e.g. 'SS-LAW-1', 'SS-§3', 'preamble'. Use list_canon_sections to find existing keys.")] string sectionKey,
         [Description("Full section content (markdown). Replaces the existing content for this key.")] string content,
         [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz",
-        [Description("Optional: human-readable section title (the ## heading text). Leave blank to keep the existing title.")] string? sectionTitle = null)
+        [Description("Optional: human-readable section title (the ## heading text). Leave blank to keep the existing title.")] string? sectionTitle = null) =>
+        hub.InvokeAsync(nameof(CanonDocTools), nameof(SetCanonSectionImpl), new { documentType, sectionKey, content, universeSlug, sectionTitle });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> SetCanonSectionImpl(string documentType, string sectionKey, string content, string universeSlug = "glmz", string? sectionTitle = null)
     {
         var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)
@@ -156,9 +175,13 @@ public class CanonDocTools
         "Regenerate a world-canon .md file from its DB sections. Writes the assembled content to disk and " +
         "updates the LastChecksum so codex doctor validates the file as current. " +
         "Run this after every set_canon_section call.")]
-    public async Task<string> GenerateCanonMd(
+    public Task<string> GenerateCanonMd(
         [Description("Document type — call list_canon_document_types for the current valid values.")] string documentType,
-        [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz")
+        [Description("Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.")] string universeSlug = "glmz") =>
+        hub.InvokeAsync(nameof(CanonDocTools), nameof(GenerateCanonMdImpl), new { documentType, universeSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> GenerateCanonMdImpl(string documentType, string universeSlug = "glmz")
     {
         var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
         if (universeId == null)
@@ -186,10 +209,14 @@ public class CanonDocTools
         "Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain " +
         "structured per-category content. The docs/nodes/<CODE>.md artifact and the MarkdownFiles " +
         "sync (what DocContextService reads) are regenerated automatically as part of this call.")]
-    public async Task<string> SetBookBibleSection(
+    public Task<string> SetBookBibleSection(
         [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug,
         [Description("Section type: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, or BeatSpine.")] string sectionType,
-        [Description("Section content (markdown). Replaces any existing content for this sectionType.")] string content)
+        [Description("Section content (markdown). Replaces any existing content for this sectionType.")] string content) =>
+        hub.InvokeAsync(nameof(CanonDocTools), nameof(SetBookBibleSectionImpl), new { nodeIdOrSlug, sectionType, content });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> SetBookBibleSectionImpl(string nodeIdOrSlug, string sectionType, string content)
     {
         var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
         if (nodeId == null)
@@ -223,8 +250,12 @@ public class CanonDocTools
     [McpServerTool, Description(
         "List all NodeBibleSections for a book node. Shows section types, content lengths, and last-updated timestamps. " +
         "Use this to see which typed sections exist before calling set_book_bible_section.")]
-    public async Task<string> ListBookBibleSections(
-        [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug)
+    public Task<string> ListBookBibleSections(
+        [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug) =>
+        hub.InvokeAsync(nameof(CanonDocTools), nameof(ListBookBibleSectionsImpl), new { nodeIdOrSlug });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ListBookBibleSectionsImpl(string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
         if (nodeId == null)

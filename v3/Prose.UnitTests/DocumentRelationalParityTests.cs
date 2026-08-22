@@ -185,7 +185,7 @@ public class DocumentRelationalParityTests
                 Id         = id,
                 EntityType = "document",
                 Name       = src.FileName,
-                Slug       = WorldGraphService.Slugify(src.FileName),
+                Slug       = UniverseGraphService.Slugify(src.FileName),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,

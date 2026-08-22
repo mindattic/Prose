@@ -456,12 +456,40 @@ public class ProseDbContext : DbContext
     public DbSet<BeatModeLog>            BeatModeLogs            => Set<BeatModeLog>();
 
     // Cost tracking — append-only log of CLI command cost history.
-    // Populated by CostGateCli.RecordActualAsync; queried by CommandCostEstimatorService to self-calibrate.
+    // Populated by Prose.Hub's CostGateDispatch; queried by CommandCostEstimatorService to self-calibrate.
     public DbSet<CommandCostHistory>     CommandCostHistories    => Set<CommandCostHistory>();
 
     // Multi-LLM master switch-over — per-provider-call audit trail (one row per fallback
     // hop, success or failure). Populated by LlmRouter; see docs/PROVIDERS.md.
     public DbSet<LlmCallHistory>          LlmCallHistories        => Set<LlmCallHistory>();
+
+    // Beat Context Archive, Part F1 (2026-08-21) — the full literal prompt/response text
+    // LlmCallHistory never stored, durably. Populated by LlmRouter alongside LlmCallHistory;
+    // query via prose --beat-archive / the get_beat_archive MCP tool.
+    public DbSet<LlmPromptCapture>        LlmPromptCaptures       => Set<LlmPromptCapture>();
+
+    // Beat Context Archive, Part F2 (2026-08-21) — the whole merged BeatContext, per beat.
+    // Populated by ProseWriterRouter right before the LLM call. Query via
+    // prose --beat-archive / the get_beat_archive MCP tool.
+    public DbSet<BeatContextTrace>        BeatContextTraces       => Set<BeatContextTrace>();
+
+    // Command Ledger — append-only, best-effort audit trail of every command/tool call
+    // Prose.Hub executes (CLI + MCP + cost-gated). Populated by Prose.Hub's
+    // CliDispatch.ExecuteCoreAsync / ToolDispatch.InvokeAsync. Query via
+    // prose --command-log / the command_log MCP tool.
+    public DbSet<CommandLedgerEntry>     CommandLedgerEntries    => Set<CommandLedgerEntry>();
+
+    // Decision Ledger — durable, structured record of higher-level decisions/reasoning,
+    // explicitly written via prose --log-decision / the log_decision MCP tool. The durable
+    // answer to "don't depend on fading context memory" — query via prose --decision-log /
+    // the decision_log MCP tool.
+    public DbSet<DecisionLedgerEntry>    DecisionLedgerEntries   => Set<DecisionLedgerEntry>();
+
+    // DCM-Viz permanent history (observability plan, 2026-08-20) — every
+    // ContextTelemetryService run/beat, persisted forever by Prose.Hub's event
+    // subscribers (RunStarted/BeatRecorded/RunEnded), not just held in-memory.
+    public DbSet<DcmRun>                 DcmRuns                 => Set<DcmRun>();
+    public DbSet<DcmBeatSnapshot>        DcmBeatSnapshots        => Set<DcmBeatSnapshot>();
 
     // Injectable context overrides — user-managed pin/exclude list for DocContextStack.
     // Managed by UserContextService; applied by DocContextService.PrepareForNodeAsync.
@@ -1110,7 +1138,7 @@ public class ProseDbContext : DbContext
             e.HasKey(x => x.EntityId);
             e.HasOne(x => x.Entity).WithOne(x => x.Record!)
                 .HasForeignKey<Record>(x => x.EntityId).OnDelete(DeleteBehavior.Cascade);
-            // WorldGraphService.IsStale() probes max(UpdatedAt) on every cold
+            // UniverseGraphService.IsStale() probes max(UpdatedAt) on every cold
             // start; chapter / book repos do OrderByDescending(r => r.UpdatedAt)
             // for recent-first lists. Without this it was a full scan of every
             // row's UpdatedAt — multi-second on a populated canon.

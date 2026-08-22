@@ -44,7 +44,7 @@ public static class BackfillCharacterRelationshipsCli
         {
             if (string.IsNullOrWhiteSpace(row.TargetName)) { notFound++; continue; }
 
-            var slug = WorldGraphService.Slugify(row.TargetName);
+            var slug = UniverseGraphService.Slugify(row.TargetName);
             var candidates = await db.Entities.AsNoTracking().IgnoreQueryFilters()
                 .Where(e => e.UniverseId == row.OwnerUniverseId && (e.Name == row.TargetName || e.Slug == slug))
                 .Select(e => e.Id)

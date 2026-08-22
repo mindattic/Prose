@@ -13,10 +13,12 @@ namespace Prose.Mcp;
 public class VerificationTools
 {
     private readonly BeatVerificationService verification;
+    private readonly HubInvoker hub;
 
-    public VerificationTools(BeatVerificationService verification)
+    public VerificationTools(BeatVerificationService verification, HubInvoker hub)
     {
         this.verification = verification;
+        this.hub = hub;
     }
 
     [McpServerTool, Description(
@@ -26,8 +28,13 @@ public class VerificationTools
         "DeclaredPurpose (embedding similarity — requires embeddings). " +
         "Results are upserted to BeatVerification table. Returns Pass/Fail/Partial/Skipped per check with evidence. " +
         "Exit 1 (blockers found) if any BLOCKER check fails.")]
-    public async Task<string> VerifyBeat(
-        [Description("Beat GUID to verify.")] string beatId)
+    public Task<string> VerifyBeat(
+        [Description("Beat GUID to verify.")] string beatId) =>
+        hub.InvokeAsync(nameof(VerificationTools), nameof(VerifyBeatImpl), new { beatId });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> VerifyBeatImpl(
+        string beatId)
     {
         if (!Guid.TryParse(beatId, out var id))
             return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
@@ -57,8 +64,13 @@ public class VerificationTools
         "BLOCKER/MODERATE/MINOR failures plus individual findings. Results are upserted to " +
         "BeatVerification table. BLOCKER findings must be fixed before export. " +
         "Includes EscalationMonotonic check (book-wide curve regression) not available per-beat.")]
-    public async Task<string> VerifyBook(
-        [Description("Book node slug or NodeCode.")] string slugOrCode)
+    public Task<string> VerifyBook(
+        [Description("Book node slug or NodeCode.")] string slugOrCode) =>
+        hub.InvokeAsync(nameof(VerificationTools), nameof(VerifyBookImpl), new { slugOrCode });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> VerifyBookImpl(
+        string slugOrCode)
     {
         try
         {
@@ -101,10 +113,17 @@ public class VerificationTools
         "to BeatVerification (CheckType='QuoteGrounding', always inserted, never overwritten — a " +
         "beat accumulates one row per claim checked across every sweep). A Fail means: reject the " +
         "finding and re-read the actual beat before acting on it.")]
-    public async Task<string> VerifyQuoteGrounding(
+    public Task<string> VerifyQuoteGrounding(
         [Description("Beat GUID the finding claims this quote came from.")] string beatId,
         [Description("The exact text the audit agent claims appears in this beat.")] string quote,
-        [Description("Optional: which agent/pass made this claim, for the audit trail.")] string? claimedBy = null)
+        [Description("Optional: which agent/pass made this claim, for the audit trail.")] string? claimedBy = null) =>
+        hub.InvokeAsync(nameof(VerificationTools), nameof(VerifyQuoteGroundingImpl), new { beatId, quote, claimedBy });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> VerifyQuoteGroundingImpl(
+        string beatId,
+        string quote,
+        string? claimedBy = null)
     {
         if (!Guid.TryParse(beatId, out var id))
             return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
@@ -128,9 +147,15 @@ public class VerificationTools
         "Pass every (beatId, quote) claim the audit produced; get back which ones are actually " +
         "grounded in their attributed beat and which must be rejected/re-verified. Run this before " +
         "triaging any logic-sweep audit findings that quote beat text (SS-LOGIC-4a).")]
-    public async Task<string> VerifyQuoteGroundingBatch(
+    public Task<string> VerifyQuoteGroundingBatch(
         [Description("JSON array of claims: [{\"beatId\":\"<guid>\",\"quote\":\"<text>\"}, ...]")] string claimsJson,
-        [Description("Optional: which agent/pass made these claims, for the audit trail.")] string? claimedBy = null)
+        [Description("Optional: which agent/pass made these claims, for the audit trail.")] string? claimedBy = null) =>
+        hub.InvokeAsync(nameof(VerificationTools), nameof(VerifyQuoteGroundingBatchImpl), new { claimsJson, claimedBy });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> VerifyQuoteGroundingBatchImpl(
+        string claimsJson,
+        string? claimedBy = null)
     {
         List<QuoteClaimDto> claims;
         try
@@ -172,8 +197,13 @@ public class VerificationTools
         "Get the current truth status for a book: how many beats have verified contracts, " +
         "how many have BeatBlueprintDecision rows, how many are in violation. " +
         "Use this as a quick dashboard check before writing or exporting.")]
-    public async Task<string> TruthStatus(
-        [Description("Book node slug or NodeCode.")] string slugOrCode)
+    public Task<string> TruthStatus(
+        [Description("Book node slug or NodeCode.")] string slugOrCode) =>
+        hub.InvokeAsync(nameof(VerificationTools), nameof(TruthStatusImpl), new { slugOrCode });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> TruthStatusImpl(
+        string slugOrCode)
     {
         try
         {

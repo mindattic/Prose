@@ -42,9 +42,9 @@ public class ContractGenerator
 {
     private readonly ILlmService llm;
     private readonly DatabaseService db;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
 
-    public ContractGenerator(ILlmService llm, DatabaseService db, WorldGraphService graph)
+    public ContractGenerator(ILlmService llm, DatabaseService db, UniverseGraphService graph)
     {
         this.llm = llm;
         this.db = db;

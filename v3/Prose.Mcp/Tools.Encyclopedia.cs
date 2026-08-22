@@ -44,6 +44,7 @@ public class EncyclopediaTools
     private readonly LabSpecimenRepository labSpecimens;
     private readonly PsionicRepository psionics;
     private readonly SubsidiaryRepository subsidiaries;
+    private readonly HubInvoker hub;
 
     public EncyclopediaTools(
         WeaponryRepository weapons, AmmunitionRepository ammunition,
@@ -56,7 +57,8 @@ public class EncyclopediaTools
         ConsumerGoodRepository consumerGoods,
         QuoteRepository quotes, WorldbuildingDocRepository documents,
         GenemodRepository genemods, LabSpecimenRepository labSpecimens,
-        PsionicRepository psionics, SubsidiaryRepository subsidiaries)
+        PsionicRepository psionics, SubsidiaryRepository subsidiaries,
+        HubInvoker hub)
     {
         this.weapons = weapons;
         this.ammunition = ammunition;
@@ -76,11 +78,15 @@ public class EncyclopediaTools
         this.labSpecimens = labSpecimens;
         this.psionics = psionics;
         this.subsidiaries = subsidiaries;
+        this.hub = hub;
     }
 
     /// <summary>List every weapon in canon. Returns name + category + manufacturer. Use this to find a weapon for an action scene.</summary>
     [McpServerTool, Description("List every weapon in canon. Returns name + category + manufacturer. Use this to find a weapon for an action scene.")]
-    public string ListWeapons()
+    public Task<string> ListWeapons() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListWeaponsImpl));
+
+    public string ListWeaponsImpl()
     {
         weapons.Reload();
         var list = weapons.GetAll()
@@ -91,7 +97,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a weapon's full record by name: category, manufacturer, ammunition type, lethality, mechanics, sensory detail, story hooks, image prompts.</summary>
     [McpServerTool, Description("Load a weapon's full record by name: category, manufacturer, ammunition_type, lethality, mechanics, sensory detail, story_hooks, image prompts.")]
-    public string GetWeapon([Description("Weapon name.")] string name)
+    public Task<string> GetWeapon([Description("Weapon name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetWeaponImpl), new { name });
+
+    public string GetWeaponImpl(string name)
     {
         var w = weapons.GetByName(name);
         if (w == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -100,7 +109,10 @@ public class EncyclopediaTools
 
     /// <summary>List every ammunition variant in canon (calibers, specialty rounds, energy cells).</summary>
     [McpServerTool, Description("List every ammunition variant in canon (calibers, specialty rounds, energy cells).")]
-    public string ListAmmunition()
+    public Task<string> ListAmmunition() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListAmmunitionImpl));
+
+    public string ListAmmunitionImpl()
     {
         ammunition.Reload();
         var list = ammunition.GetAll()
@@ -111,7 +123,10 @@ public class EncyclopediaTools
 
     /// <summary>Load an ammunition record by name.</summary>
     [McpServerTool, Description("Load an ammunition record.")]
-    public string GetAmmunition([Description("Ammunition name.")] string name)
+    public Task<string> GetAmmunition([Description("Ammunition name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetAmmunitionImpl), new { name });
+
+    public string GetAmmunitionImpl(string name)
     {
         var a = ammunition.GetByName(name);
         if (a == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -120,7 +135,10 @@ public class EncyclopediaTools
 
     /// <summary>List every equipment item in canon: gear, tools, devices, augmentation accessories.</summary>
     [McpServerTool, Description("List every equipment item in canon: gear, tools, devices, augmentation accessories.")]
-    public string ListEquipment()
+    public Task<string> ListEquipment() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListEquipmentImpl));
+
+    public string ListEquipmentImpl()
     {
         equipment.Reload();
         var list = equipment.GetAll()
@@ -131,7 +149,10 @@ public class EncyclopediaTools
 
     /// <summary>Load an equipment record. Match is by ProductName when set, else Name (case-insensitive).</summary>
     [McpServerTool, Description("Load an equipment record. Match is by ProductName when set, else Name (case-insensitive).")]
-    public string GetEquipment([Description("Equipment ProductName or Name.")] string name)
+    public Task<string> GetEquipment([Description("Equipment ProductName or Name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetEquipmentImpl), new { name });
+
+    public string GetEquipmentImpl(string name)
     {
         var e = equipment.GetByName(name);
         if (e == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -140,7 +161,10 @@ public class EncyclopediaTools
 
     /// <summary>List every technology entry: software, protocols, networks, systems.</summary>
     [McpServerTool, Description("List every technology entry: software, protocols, networks, systems.")]
-    public string ListTechnology()
+    public Task<string> ListTechnology() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListTechnologyImpl));
+
+    public string ListTechnologyImpl()
     {
         technology.Reload();
         var list = technology.GetAll()
@@ -151,7 +175,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a technology record. Match is by ProductName when set, else Name.</summary>
     [McpServerTool, Description("Load a technology record. Match is by ProductName when set, else Name.")]
-    public string GetTechnology([Description("Technology ProductName or Name.")] string name)
+    public Task<string> GetTechnology([Description("Technology ProductName or Name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetTechnologyImpl), new { name });
+
+    public string GetTechnologyImpl(string name)
     {
         var t = technology.GetByName(name);
         if (t == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -160,7 +187,10 @@ public class EncyclopediaTools
 
     /// <summary>List every cyberware product: implants, neural augmentations, prosthetic limbs.</summary>
     [McpServerTool, Description("List every cyberware product: implants, neural augmentations, prosthetic limbs.")]
-    public string ListCyberware()
+    public Task<string> ListCyberware() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListCyberwareImpl));
+
+    public string ListCyberwareImpl()
     {
         cyberware.Reload();
         var list = cyberware.GetAll()
@@ -171,7 +201,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a cyberware record: install procedure, side effects, sensory experience, dependency profile.</summary>
     [McpServerTool, Description("Load a cyberware record: install procedure, side effects, sensory experience, dependency profile.")]
-    public string GetCyberware([Description("Cyberware ProductName or Name.")] string name)
+    public Task<string> GetCyberware([Description("Cyberware ProductName or Name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetCyberwareImpl), new { name });
+
+    public string GetCyberwareImpl(string name)
     {
         var c = cyberware.GetByName(name);
         if (c == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -180,7 +213,10 @@ public class EncyclopediaTools
 
     /// <summary>List every apparel item in canon: clothing, armor, accessories.</summary>
     [McpServerTool, Description("List every apparel item in canon: clothing, armor, accessories.")]
-    public string ListApparel()
+    public Task<string> ListApparel() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListApparelImpl));
+
+    public string ListApparelImpl()
     {
         apparel.Reload();
         var list = apparel.GetAll()
@@ -191,7 +227,10 @@ public class EncyclopediaTools
 
     /// <summary>Load an apparel record by name.</summary>
     [McpServerTool, Description("Load an apparel record.")]
-    public string GetApparel([Description("Apparel name.")] string name)
+    public Task<string> GetApparel([Description("Apparel name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetApparelImpl), new { name });
+
+    public string GetApparelImpl(string name)
     {
         var a = apparel.GetByName(name);
         if (a == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -200,7 +239,10 @@ public class EncyclopediaTools
 
     /// <summary>List every pharmaceutical: drugs, stims, pain modulators, neuro-pharma.</summary>
     [McpServerTool, Description("List every pharmaceutical: drugs, stims, pain modulators, neuro-pharma.")]
-    public string ListPharmaceuticals()
+    public Task<string> ListPharmaceuticals() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListPharmaceuticalsImpl));
+
+    public string ListPharmaceuticalsImpl()
     {
         pharmaceuticals.Reload();
         var list = pharmaceuticals.GetAll()
@@ -211,7 +253,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a pharmaceutical record: effects, dosage, side effects, dependency profile.</summary>
     [McpServerTool, Description("Load a pharmaceutical record: effects, dosage, side effects, dependency profile.")]
-    public string GetPharmaceutical([Description("Pharmaceutical name.")] string name)
+    public Task<string> GetPharmaceutical([Description("Pharmaceutical name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetPharmaceuticalImpl), new { name });
+
+    public string GetPharmaceuticalImpl(string name)
     {
         var p = pharmaceuticals.GetByName(name);
         if (p == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -220,7 +265,10 @@ public class EncyclopediaTools
 
     /// <summary>List every automaton in canon: drones, security bots, Iowan Behemoths, agricultural machines.</summary>
     [McpServerTool, Description("List every automaton in canon: drones, security bots, Iowan Behemoths, agricultural machines.")]
-    public string ListAutomata()
+    public Task<string> ListAutomata() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListAutomataImpl));
+
+    public string ListAutomataImpl()
     {
         automata.Reload();
         var list = automata.GetAll()
@@ -231,7 +279,10 @@ public class EncyclopediaTools
 
     /// <summary>Load an automaton record. Behemoths and other industrial automata are not synthetic life — they are machines.</summary>
     [McpServerTool, Description("Load an automaton record. Behemoths and other industrial automata: not synthetic life — these are machines.")]
-    public string GetAutomaton([Description("Automaton name.")] string name)
+    public Task<string> GetAutomaton([Description("Automaton name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetAutomatonImpl), new { name });
+
+    public string GetAutomatonImpl(string name)
     {
         var a = automata.GetByName(name);
         if (a == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -240,7 +291,10 @@ public class EncyclopediaTools
 
     /// <summary>List every archetype: occupational/social roles in the world (street samurai, fixer, runner, gleaner, etc).</summary>
     [McpServerTool, Description("List every archetype: occupational/social roles in the world (street samurai, fixer, runner, gleaner, etc).")]
-    public string ListArchetypes()
+    public Task<string> ListArchetypes() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListArchetypesImpl));
+
+    public string ListArchetypesImpl()
     {
         archetypes.Reload();
         var list = archetypes.GetAll()
@@ -251,7 +305,10 @@ public class EncyclopediaTools
 
     /// <summary>Load an archetype record: typical behavior, knowledge, equipment, social position.</summary>
     [McpServerTool, Description("Load an archetype record: typical behavior, knowledge, equipment, social position.")]
-    public string GetArchetype([Description("Archetype name.")] string name)
+    public Task<string> GetArchetype([Description("Archetype name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetArchetypeImpl), new { name });
+
+    public string GetArchetypeImpl(string name)
     {
         var a = archetypes.GetByName(name);
         if (a == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -260,7 +317,10 @@ public class EncyclopediaTools
 
     /// <summary>List every material: alloys, composites, fabrics, biomaterials. Use when describing physical objects with specificity.</summary>
     [McpServerTool, Description("List every material: alloys, composites, fabrics, biomaterials. Use this when describing physical objects with specificity.")]
-    public string ListMaterials()
+    public Task<string> ListMaterials() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListMaterialsImpl));
+
+    public string ListMaterialsImpl()
     {
         materials.Reload();
         var list = materials.GetAll()
@@ -271,7 +331,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a material record: properties, applications, sensory qualities.</summary>
     [McpServerTool, Description("Load a material record: properties, applications, sensory qualities.")]
-    public string GetMaterial([Description("Material name.")] string name)
+    public Task<string> GetMaterial([Description("Material name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetMaterialImpl), new { name });
+
+    public string GetMaterialImpl(string name)
     {
         var m = materials.GetByName(name);
         if (m == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -280,7 +343,10 @@ public class EncyclopediaTools
 
     /// <summary>List every transportation entry: vehicles, transit systems, The Pulse stations, individual transports.</summary>
     [McpServerTool, Description("List every transportation entry: vehicles, transit systems, The Pulse stations, individual transports.")]
-    public string ListTransportation()
+    public Task<string> ListTransportation() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListTransportationImpl));
+
+    public string ListTransportationImpl()
     {
         transportation.Reload();
         var list = transportation.GetAll()
@@ -291,7 +357,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a transportation record by name.</summary>
     [McpServerTool, Description("Load a transportation record.")]
-    public string GetTransportation([Description("Transportation name.")] string name)
+    public Task<string> GetTransportation([Description("Transportation name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetTransportationImpl), new { name });
+
+    public string GetTransportationImpl(string name)
     {
         var t = transportation.GetByName(name);
         if (t == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -300,7 +369,10 @@ public class EncyclopediaTools
 
     /// <summary>List every consumer good: food, drinks, household items, branded products.</summary>
     [McpServerTool, Description("List every consumer good: food, drinks, household items, branded products.")]
-    public string ListConsumerGoods()
+    public Task<string> ListConsumerGoods() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListConsumerGoodsImpl));
+
+    public string ListConsumerGoodsImpl()
     {
         consumerGoods.Reload();
         var list = consumerGoods.GetAll()
@@ -311,7 +383,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a consumer good record by name.</summary>
     [McpServerTool, Description("Load a consumer good record.")]
-    public string GetConsumerGood([Description("Consumer good name.")] string name)
+    public Task<string> GetConsumerGood([Description("Consumer good name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetConsumerGoodImpl), new { name });
+
+    public string GetConsumerGoodImpl(string name)
     {
         var c = consumerGoods.GetByName(name);
         if (c == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -320,8 +395,11 @@ public class EncyclopediaTools
 
     /// <summary>List every quote: in-world sayings, graffiti, advertising copy, attributed quotes. Useful for chapter epigraphs and ambient flavor. Optional tag filter.</summary>
     [McpServerTool, Description("List every quote: in-world sayings, graffiti, advertising copy, attributed quotes. Useful for chapter epigraphs and ambient flavor.")]
-    public string ListQuotes(
-        [Description("Optional filter: only quotes with a tag matching this value. Empty for all.")] string tag = "")
+    public Task<string> ListQuotes(
+        [Description("Optional filter: only quotes with a tag matching this value. Empty for all.")] string tag = "") =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListQuotesImpl), new { tag });
+
+    public string ListQuotesImpl(string tag = "")
     {
         quotes.Reload();
         var all = quotes.GetAll();
@@ -335,7 +413,10 @@ public class EncyclopediaTools
 
     /// <summary>List every worldbuilding document by file name + title + category. Use get_document to load the body.</summary>
     [McpServerTool, Description("List every worldbuilding document by file name + title + category. Use get_document to load the body.")]
-    public string ListDocuments()
+    public Task<string> ListDocuments() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListDocumentsImpl));
+
+    public string ListDocumentsImpl()
     {
         documents.Reload();
         var list = documents.GetAll()
@@ -346,7 +427,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a worldbuilding document by its file_name (the filename-derived identifier). Returns the full prose body.</summary>
     [McpServerTool, Description("Load a worldbuilding document by its file_name (the filename-derived identifier). Returns the full prose body.")]
-    public string GetDocument([Description("Document file_name (e.g. 'corponations_overview' or as listed by list_documents).")] string fileName)
+    public Task<string> GetDocument([Description("Document file_name (e.g. 'corponations_overview' or as listed by list_documents).")] string fileName) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetDocumentImpl), new { fileName });
+
+    public string GetDocumentImpl(string fileName)
     {
         var d = documents.GetByName(fileName);
         if (d == null) return JsonSerializer.Serialize(new { error = "not_found", file_name = fileName }, CanonTools.JsonOpts);
@@ -355,7 +439,10 @@ public class EncyclopediaTools
 
     /// <summary>List every gene modification: somatic edits, lineage modifications, body-spec edits.</summary>
     [McpServerTool, Description("List every gene modification: somatic edits, lineage modifications, body-spec edits.")]
-    public string ListGenemods()
+    public Task<string> ListGenemods() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListGenemodsImpl));
+
+    public string ListGenemodsImpl()
     {
         genemods.Reload();
         var list = genemods.GetAll().Select(g => new { name = g.Name }).OrderBy(x => x.name).ToList();
@@ -364,7 +451,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a gene modification record by name.</summary>
     [McpServerTool, Description("Load a gene modification record.")]
-    public string GetGenemod([Description("Genemod name.")] string name)
+    public Task<string> GetGenemod([Description("Genemod name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetGenemodImpl), new { name });
+
+    public string GetGenemodImpl(string name)
     {
         var g = genemods.GetByName(name);
         if (g == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -373,7 +463,10 @@ public class EncyclopediaTools
 
     /// <summary>List every lab specimen — anomalous biological / synthetic / hybrid samples held in research facilities.</summary>
     [McpServerTool, Description("List every lab specimen — anomalous biological / synthetic / hybrid samples held in research facilities.")]
-    public string ListLabSpecimens()
+    public Task<string> ListLabSpecimens() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListLabSpecimensImpl));
+
+    public string ListLabSpecimensImpl()
     {
         labSpecimens.Reload();
         var list = labSpecimens.GetAll().Select(s => new { name = s.Name }).OrderBy(x => x.name).ToList();
@@ -382,7 +475,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a lab specimen record by name.</summary>
     [McpServerTool, Description("Load a lab specimen record.")]
-    public string GetLabSpecimen([Description("Specimen name.")] string name)
+    public Task<string> GetLabSpecimen([Description("Specimen name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetLabSpecimenImpl), new { name });
+
+    public string GetLabSpecimenImpl(string name)
     {
         var s = labSpecimens.GetByName(name);
         if (s == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -391,7 +487,10 @@ public class EncyclopediaTools
 
     /// <summary>List every psionic phenomenon recorded in canon.</summary>
     [McpServerTool, Description("List every psionic phenomenon recorded in canon.")]
-    public string ListPsionics()
+    public Task<string> ListPsionics() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListPsionicsImpl));
+
+    public string ListPsionicsImpl()
     {
         psionics.Reload();
         var list = psionics.GetAll().Select(p => new { name = p.Name }).OrderBy(x => x.name).ToList();
@@ -400,7 +499,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a psionic record by name.</summary>
     [McpServerTool, Description("Load a psionic record.")]
-    public string GetPsionic([Description("Psionic name.")] string name)
+    public Task<string> GetPsionic([Description("Psionic name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetPsionicImpl), new { name });
+
+    public string GetPsionicImpl(string name)
     {
         var p = psionics.GetByName(name);
         if (p == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -409,7 +511,10 @@ public class EncyclopediaTools
 
     /// <summary>List every subsidiary — child/holding companies of larger CorpoNations.</summary>
     [McpServerTool, Description("List every subsidiary — child/holding companies of larger CorpoNations.")]
-    public string ListSubsidiaries()
+    public Task<string> ListSubsidiaries() =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(ListSubsidiariesImpl));
+
+    public string ListSubsidiariesImpl()
     {
         subsidiaries.Reload();
         var list = subsidiaries.GetAll().Select(s => new { name = s.Name }).OrderBy(x => x.name).ToList();
@@ -418,7 +523,10 @@ public class EncyclopediaTools
 
     /// <summary>Load a subsidiary record by name.</summary>
     [McpServerTool, Description("Load a subsidiary record.")]
-    public string GetSubsidiary([Description("Subsidiary name.")] string name)
+    public Task<string> GetSubsidiary([Description("Subsidiary name.")] string name) =>
+        hub.InvokeAsync(nameof(EncyclopediaTools), nameof(GetSubsidiaryImpl), new { name });
+
+    public string GetSubsidiaryImpl(string name)
     {
         var s = subsidiaries.GetByName(name);
         if (s == null) return JsonSerializer.Serialize(new { error = "not_found", name }, CanonTools.JsonOpts);
@@ -437,26 +545,37 @@ public class BibleTools
     private readonly ToneBibleRepository tone;
     private readonly StoryBibleRepository storyBible;
     private readonly CharacterProfileRepository profile;
+    private readonly HubInvoker hub;
 
-    public BibleTools(ToneBibleRepository tone, StoryBibleRepository storyBible, CharacterProfileRepository profile)
+    public BibleTools(ToneBibleRepository tone, StoryBibleRepository storyBible, CharacterProfileRepository profile, HubInvoker hub)
     {
         this.tone = tone;
         this.storyBible = storyBible;
         this.profile = profile;
+        this.hub = hub;
     }
 
     /// <summary>Load the Tone Bible — voice, register, sensory palette, do/don't list for prose. Inject into the system prompt when drafting prose.</summary>
     [McpServerTool, Description("Load the Tone Bible — voice, register, sensory palette, what to do and what not to do for prose. Inject this into the system prompt when drafting prose.")]
-    public string GetToneBible()
+    public Task<string> GetToneBible() =>
+        hub.InvokeAsync(nameof(BibleTools), nameof(GetToneBibleImpl));
+
+    public string GetToneBibleImpl()
         => JsonSerializer.Serialize(tone.Get(), CanonTools.JsonOpts);
 
     /// <summary>Load the Story Bible — structural rules for narrative shape: act structure, beat anatomy, motif planting, dialogue cadence.</summary>
     [McpServerTool, Description("Load the Story Bible — structural rules for narrative shape: act structure, beat anatomy, motif planting, dialogue cadence.")]
-    public string GetStoryBible()
+    public Task<string> GetStoryBible() =>
+        hub.InvokeAsync(nameof(BibleTools), nameof(GetStoryBibleImpl));
+
+    public string GetStoryBibleImpl()
         => JsonSerializer.Serialize(storyBible.Get(), CanonTools.JsonOpts);
 
     /// <summary>Load the Character Profile — the protagonist's core contradiction, signature behavior, voice anchors. Often Kyle's profile in this project.</summary>
     [McpServerTool, Description("Load the Character Profile — the protagonist's core contradiction, signature behavior, voice anchors. Often Kyle's profile in this project.")]
-    public string GetCharacterProfile()
+    public Task<string> GetCharacterProfile() =>
+        hub.InvokeAsync(nameof(BibleTools), nameof(GetCharacterProfileImpl));
+
+    public string GetCharacterProfileImpl()
         => JsonSerializer.Serialize(profile.Get(), CanonTools.JsonOpts);
 }

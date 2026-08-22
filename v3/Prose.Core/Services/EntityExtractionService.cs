@@ -12,10 +12,10 @@ namespace Prose.Core.Services;
 public class EntityExtractionService
 {
     private readonly ILlmService llm;
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly EmbeddingService? embeddings;
 
-    public EntityExtractionService(ILlmService llm, WorldGraphService graph, EmbeddingService? embeddings = null)
+    public EntityExtractionService(ILlmService llm, UniverseGraphService graph, EmbeddingService? embeddings = null)
     {
         this.llm = llm;
         this.graph = graph;
@@ -121,7 +121,7 @@ public class EntityExtractionService
         // Merge entities
         foreach (var entity in result.Entities)
         {
-            var id = WorldGraphService.Slugify(entity.Name);
+            var id = UniverseGraphService.Slugify(entity.Name);
             if (string.IsNullOrEmpty(id)) continue;
 
             var nodeType = EntityTypes.Normalize(entity.Type);
@@ -165,7 +165,7 @@ public class EntityExtractionService
                 if (!string.IsNullOrEmpty(entity.Description))
                     props["description"] = entity.Description;
 
-                graph.AddNode(new WorldNode
+                graph.AddNode(new UniverseNode
                 {
                     Id = id,
                     Name = entity.Name,
@@ -181,15 +181,15 @@ public class EntityExtractionService
         // Merge relationships
         foreach (var rel in result.Relationships)
         {
-            var sourceId = WorldGraphService.Slugify(rel.Source);
-            var targetId = WorldGraphService.Slugify(rel.Target);
+            var sourceId = UniverseGraphService.Slugify(rel.Source);
+            var targetId = UniverseGraphService.Slugify(rel.Target);
             if (string.IsNullOrEmpty(sourceId) || string.IsNullOrEmpty(targetId)) continue;
             if (sourceId == targetId) continue;
 
             // Ensure both nodes exist (create stubs if not)
             if (graph.GetNode(sourceId) == null)
             {
-                graph.AddNode(new WorldNode
+                graph.AddNode(new UniverseNode
                 {
                     Id = sourceId, Name = rel.Source,
                     NodeType = EntityTypes.Unknown, Status = "extracted",
@@ -200,7 +200,7 @@ public class EntityExtractionService
 
             if (graph.GetNode(targetId) == null)
             {
-                graph.AddNode(new WorldNode
+                graph.AddNode(new UniverseNode
                 {
                     Id = targetId, Name = rel.Target,
                     NodeType = EntityTypes.Unknown, Status = "extracted",

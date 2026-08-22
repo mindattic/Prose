@@ -616,7 +616,7 @@ public class FamilyGeneratorService
         var json = JsonSerializer.Serialize(data, JsonOpts);
 
         // Slug + collision check (mirror EfRepository's approach)
-        var plainSlug = Prose.Core.Services.WorldGraphService.Slugify(fullName);
+        var plainSlug = Prose.Core.Services.UniverseGraphService.Slugify(fullName);
         var slug = plainSlug;
         var collision = await db.Entities.AnyAsync(e =>
             e.EntityType == "character" && e.Slug == slug && e.Id != p.Id, ct);

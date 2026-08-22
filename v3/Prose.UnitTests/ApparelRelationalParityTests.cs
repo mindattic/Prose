@@ -225,7 +225,7 @@ public class ApparelRelationalParityTests
                 Id         = id,
                 EntityType = "apparel",
                 Name       = src.Name,
-                Slug       = WorldGraphService.Slugify(src.Name),
+                Slug       = UniverseGraphService.Slugify(src.Name),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,

@@ -21,18 +21,26 @@ public class VoiceTools
 {
     private readonly VoiceHarvestService harvest;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly HubInvoker hub;
 
-    public VoiceTools(VoiceHarvestService harvest, IDbContextFactory<ProseDbContext> dbFactory)
+    public VoiceTools(VoiceHarvestService harvest, IDbContextFactory<ProseDbContext> dbFactory, HubInvoker hub)
     {
         this.harvest = harvest;
         this.dbFactory = dbFactory;
+        this.hub = hub;
     }
 
     /// <summary>Harvest voice rules from a single node. The node must have a score ≥80 (or pass --force). Returns proposed change-log entries; nothing is written to the live rule store until you call apply_voice_proposal.</summary>
     [McpServerTool, Description("Distill voice rules from a winning node (score ≥80) into proposed change-log entries. Nothing touches the live rule store until apply_voice_proposal is called. Pass force=true to harvest even if the node scored below 80. Returns the list of proposed entries with their ids, rule targets, descriptions, and evidence.")]
-    public async Task<string> HarvestVoice(
+    public Task<string> HarvestVoice(
         [Description("Node id (GUID) or slug to harvest from.")] string nodeIdOrSlug,
-        [Description("Set to true to harvest even if the node scored below 80%.")] bool force = false)
+        [Description("Set to true to harvest even if the node scored below 80%.")] bool force = false) =>
+        hub.InvokeAsync(nameof(VoiceTools), nameof(HarvestVoiceImpl), new { nodeIdOrSlug, force });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> HarvestVoiceImpl(
+        string nodeIdOrSlug,
+        bool force = false)
     {
         var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
         if (nodeId == null) return Error("node_not_found", nodeIdOrSlug);
@@ -55,8 +63,13 @@ public class VoiceTools
     /// result against most of the live corpus regardless of threshold. Prefer harvest_voice_canon (selects by
     /// Node.IsCanon, the current recommended gate) or harvest_voice_node with force=true for a specific book.</summary>
     [McpServerTool, Description("Distill voice rules from every node scored >=threshold (default 80). Score gates were retired project-wide (SS-A44) so almost no node has a Score anymore — this will likely return empty. Prefer harvest_voice_canon or harvest_voice_node(force:true) instead. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called.")]
-    public async Task<string> HarvestVoiceAll(
-        [Description("Minimum Node.Score to include (0-100). Default 80. Only affects nodes that HAVE a Score — most nodes have none post-SS-A44.")] double threshold = 80)
+    public Task<string> HarvestVoiceAll(
+        [Description("Minimum Node.Score to include (0-100). Default 80. Only affects nodes that HAVE a Score — most nodes have none post-SS-A44.")] double threshold = 80) =>
+        hub.InvokeAsync(nameof(VoiceTools), nameof(HarvestVoiceAllImpl), new { threshold });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> HarvestVoiceAllImpl(
+        double threshold = 80)
     {
         var results = await harvest.HarvestAllAboveAsync(threshold);
         return JsonSerializer.Serialize(results.Select(r => new
@@ -75,7 +88,11 @@ public class VoiceTools
     /// the SS-A44-era recommended gate now that 0-100 score panels are retired. Canon is an
     /// explicit author trust decision, so every canon node is harvested unconditionally.</summary>
     [McpServerTool, Description("Distill voice rules from every node the author has marked Canon (IsCanon=true) — the recommended harvest gate post-SS-A44, since almost no node carries a Score anymore. Returns proposals grouped by node slug. Nothing is written to the live rule store until apply_voice_proposal is called.")]
-    public async Task<string> HarvestVoiceCanon()
+    public Task<string> HarvestVoiceCanon() =>
+        hub.InvokeAsync(nameof(VoiceTools), nameof(HarvestVoiceCanonImpl));
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> HarvestVoiceCanonImpl()
     {
         var results = await harvest.HarvestCanonAsync();
         return JsonSerializer.Serialize(results.Select(r => new
@@ -92,8 +109,13 @@ public class VoiceTools
 
     /// <summary>List voice proposals by status. Status values: "proposed" (awaiting decision), "applied", "rejected", "observed".</summary>
     [McpServerTool, Description("List voice change-log entries filtered by status. Use status='proposed' to see pending proposals awaiting a decision. Each entry shows its id (use for apply/reject), rule target, description, evidence, and source node.")]
-    public async Task<string> ListVoiceProposals(
-        [Description("Filter by status: 'proposed' | 'applied' | 'rejected' | 'observed'. Default 'proposed'.")] string status = "proposed")
+    public Task<string> ListVoiceProposals(
+        [Description("Filter by status: 'proposed' | 'applied' | 'rejected' | 'observed'. Default 'proposed'.")] string status = "proposed") =>
+        hub.InvokeAsync(nameof(VoiceTools), nameof(ListVoiceProposalsImpl), new { status });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ListVoiceProposalsImpl(
+        string status = "proposed")
     {
         var rows = await harvest.GetByStatusAsync(status);
         return JsonSerializer.Serialize(SerializeProposals(rows), CanonTools.JsonOpts);
@@ -101,8 +123,13 @@ public class VoiceTools
 
     /// <summary>Apply a proposed voice change-log entry, writing the rule to the live voice store.</summary>
     [McpServerTool, Description("Apply a proposed voice rule to the live voice store (the DB-backed rules the generator reads). Pass the entry id returned by harvest_voice or list_voice_proposals. The entry status changes to 'applied'. Returns ok=true on success, or error if the entry was not found or already resolved.")]
-    public async Task<string> ApplyVoiceProposal(
-        [Description("The voice change-log entry GUID to apply.")] string entryId)
+    public Task<string> ApplyVoiceProposal(
+        [Description("The voice change-log entry GUID to apply.")] string entryId) =>
+        hub.InvokeAsync(nameof(VoiceTools), nameof(ApplyVoiceProposalImpl), new { entryId });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> ApplyVoiceProposalImpl(
+        string entryId)
     {
         if (!Guid.TryParse(entryId, out var guid))
             return Error("invalid_guid", entryId);
@@ -114,8 +141,13 @@ public class VoiceTools
 
     /// <summary>Reject a proposed voice change-log entry. The entry is kept in the audit trail as "rejected".</summary>
     [McpServerTool, Description("Reject a proposed voice rule. The entry stays in the audit trail (status = 'rejected') so the decision is traceable. Pass the entry id returned by harvest_voice or list_voice_proposals.")]
-    public async Task<string> RejectVoiceProposal(
-        [Description("The voice change-log entry GUID to reject.")] string entryId)
+    public Task<string> RejectVoiceProposal(
+        [Description("The voice change-log entry GUID to reject.")] string entryId) =>
+        hub.InvokeAsync(nameof(VoiceTools), nameof(RejectVoiceProposalImpl), new { entryId });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> RejectVoiceProposalImpl(
+        string entryId)
     {
         if (!Guid.TryParse(entryId, out var guid))
             return Error("invalid_guid", entryId);

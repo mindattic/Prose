@@ -19,7 +19,7 @@ namespace Prose.Core.Services;
 /// gender, a weapon's manufacturer, or a location's atmosphere mid-scene.
 ///
 /// This is NOT a database. It's a view into the graph that persists for a
-/// writing session. The source of truth is always WorldGraphService.
+/// writing session. The source of truth is always UniverseGraphService.
 ///
 /// ── WHY ──
 /// The LLM has no memory between calls. Without this service, every generation
@@ -43,7 +43,7 @@ namespace Prose.Core.Services;
 ///          Includes explanations of why the connection was inferred.
 ///
 /// ── HOW IT CONNECTS ──
-/// READS FROM: WorldGraphService (entity data, 2-hop neighborhoods, briefs),
+/// READS FROM: UniverseGraphService (entity data, 2-hop neighborhoods, briefs),
 ///             SemanticIndexService (TF-IDF thematic search),
 ///             InferenceService (transitive connection discovery).
 /// CALLED BY: StoryStarterService and any service that needs world context for
@@ -56,7 +56,7 @@ namespace Prose.Core.Services;
 /// </summary>
 public class NarrativeSessionContext
 {
-    private readonly WorldGraphService graph;
+    private readonly UniverseGraphService graph;
     private readonly SemanticIndexService? semanticIndex;
     private readonly InferenceService? inference;
     private readonly WorldStateService? worldState;
@@ -86,11 +86,11 @@ public class NarrativeSessionContext
     // Temporal filtering
     private string? storyPoint;
 
-    public NarrativeSessionContext(WorldGraphService graph, int maxTokens = 16_000)
+    public NarrativeSessionContext(UniverseGraphService graph, int maxTokens = 16_000)
         : this(graph, null, null, null, maxTokens) { }
 
     public NarrativeSessionContext(
-        WorldGraphService graph,
+        UniverseGraphService graph,
         SemanticIndexService? semanticIndex,
         InferenceService? inference,
         int maxTokens = 16_000)
@@ -103,7 +103,7 @@ public class NarrativeSessionContext
     /// timeline + derived "current state". The LLM stops re-deriving these from prose.
     /// </summary>
     public NarrativeSessionContext(
-        WorldGraphService graph,
+        UniverseGraphService graph,
         SemanticIndexService? semanticIndex,
         InferenceService? inference,
         WorldStateService? worldState,

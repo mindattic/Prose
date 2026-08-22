@@ -50,7 +50,7 @@ public class SlugRepairService(
     /// <summary>Canonical slugifier for ALL families: fold diacritics to ASCII
     /// (Möller → moller, Cissé → cisse — matching how the existing corpus was
     /// slugged), lowercase, collapse non-alphanumerics to "-", 80-char cap.
-    /// NOT WorldGraphService.Slugify — that one drops non-ASCII letters
+    /// NOT UniverseGraphService.Slugify — that one drops non-ASCII letters
     /// outright (Cissé → ciss_), which would degrade every diaspora name.</summary>
     public static string SlugifyTitle(string title)
     {

@@ -21,7 +21,7 @@ SET CONCAT_NULL_YIELDS_NULL ON;
 SET NUMERIC_ROUNDABORT OFF;
 
 -- ── Records.UpdatedAt ────────────────────────────────────────────────────────
--- WorldGraphService.IsStale() does
+-- UniverseGraphService.IsStale() does
 --   SELECT TOP 1 UpdatedAt FROM Records ORDER BY UpdatedAt DESC
 -- BookRepository and ChapterRepository do
 --   FROM Records r WHERE r.Entity.EntityType=? AND r.Entity.IsActive ORDER BY r.UpdatedAt DESC

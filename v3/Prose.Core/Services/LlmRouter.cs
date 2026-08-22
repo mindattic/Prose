@@ -215,7 +215,8 @@ public class LlmRouter : ILlmService
                 sw.Stop();
                 prompts.Capture(id, modelLabel, temperature, maxTokens, capturedInput, user, response, (int)sw.ElapsedMilliseconds);
                 ledger?.Record(id, modelLabel, capturedInput + user, response);
-                await RecordCallHistoryAsync(id, modelLabel, success: true, hopIndex, capturedInput, response, errorMessage: null);
+                var historyId = await RecordCallHistoryAsync(id, modelLabel, success: true, hopIndex, capturedInput, response, errorMessage: null);
+                await RecordPromptCaptureAsync(historyId, id, modelLabel, capturedInput, user, response, (int)sw.ElapsedMilliseconds);
                 if (attempted.Count > 0)
                     log.LogWarning(
                         "LlmRouter: recovered via fallback to provider={Provider} after {FailedCount} failure(s): {Failed}",
@@ -227,7 +228,8 @@ public class LlmRouter : ILlmService
                 sw.Stop();
                 attempted.Add((id, ex));
                 prompts.Capture(id, modelLabel, temperature, maxTokens, capturedInput, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
-                await RecordCallHistoryAsync(id, modelLabel, success: false, hopIndex, capturedInput, outputText: "", errorMessage: ex.Message);
+                var failedHistoryId = await RecordCallHistoryAsync(id, modelLabel, success: false, hopIndex, capturedInput, outputText: "", errorMessage: ex.Message);
+                await RecordPromptCaptureAsync(failedHistoryId, id, modelLabel, capturedInput, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
                 log.LogWarning(ex, "LlmRouter: provider={Provider} failed, trying next in fallback chain", id);
             }
         }
@@ -251,16 +253,19 @@ public class LlmRouter : ILlmService
     /// Warning, not rethrown). No-op when no <see cref="IDbContextFactory{TContext}"/> was
     /// supplied (e.g. every test-friendly constructor).
     /// </summary>
-    private async Task RecordCallHistoryAsync(
+    /// <returns>The saved row's <c>Id</c> (for <see cref="LlmPromptCapture"/>'s sibling FK), or
+    /// null if nothing was written (no <see cref="IDbContextFactory{TContext}"/>, or the write
+    /// itself failed — best-effort, never throws).</returns>
+    private async Task<int?> RecordCallHistoryAsync(
         string providerId, string model, bool success, int hopIndex,
         string inputText, string outputText, string? errorMessage)
     {
-        if (dbFactory is null) return;
+        if (dbFactory is null) return null;
         try
         {
             var (inputTok, outputTok, cost) = EstimateUsage(providerId, model, inputText, outputText);
             await using var db = await dbFactory.CreateDbContextAsync();
-            db.LlmCallHistories.Add(new LlmCallHistory
+            var row = new LlmCallHistory
             {
                 ProviderId = providerId,
                 Model = model,
@@ -271,12 +276,47 @@ public class LlmRouter : ILlmService
                 OutputTokens = outputTok,
                 Cost = cost,
                 ErrorMessage = errorMessage is { Length: > 500 } ? errorMessage[..500] : errorMessage,
+            };
+            db.LlmCallHistories.Add(row);
+            await db.SaveChangesAsync();
+            return row.Id;
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "LlmRouter: failed to write LlmCallHistory row for provider={Provider}", providerId);
+            return null;
+        }
+    }
+
+    /// <summary>
+    /// Beat Context Archive, Part F1: durable sibling to the in-memory-only
+    /// <see cref="LastPromptStore.Capture"/> — best-effort, same posture as
+    /// <see cref="RecordCallHistoryAsync"/> (a failure here must never break generation).
+    /// </summary>
+    private async Task RecordPromptCaptureAsync(
+        int? llmCallHistoryId, string providerId, string model,
+        string systemText, string userText, string? responseText, int elapsedMs)
+    {
+        if (dbFactory is null) return;
+        try
+        {
+            await using var db = await dbFactory.CreateDbContextAsync();
+            db.LlmPromptCaptures.Add(new LlmPromptCapture
+            {
+                LlmCallHistoryId = llmCallHistoryId,
+                BeatId = LlmActionContext.CurrentBeatId,
+                ProviderId = providerId,
+                Model = model,
+                System = systemText,
+                User = userText,
+                Response = responseText,
+                ElapsedMs = elapsedMs,
             });
             await db.SaveChangesAsync();
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "LlmRouter: failed to write LlmCallHistory row for provider={Provider}", providerId);
+            log.LogWarning(ex, "LlmRouter: failed to write LlmPromptCapture row for provider={Provider}", providerId);
         }
     }
 

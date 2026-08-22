@@ -192,7 +192,7 @@ Default `Chapter.InWorldDate` writes as `2256-XX-XX`. Helpers convert numeric `c
 
 1. **Foundation** (this session): packages, `ProseDbContext`, schema migration, `JsonImportService` skeleton, `Character` end-to-end with dual-write toggle.
 2. **Type-by-type** (subsequent passes): port each entity type, importer + EF repo + cutover.
-3. **Service rewires**: `WorldGraphService` reads from EF; `WorldStateService` unchanged.
+3. **Service rewires**: `UniverseGraphService` reads from EF; `WorldStateService` unchanged.
 4. **Decommission**: JSON repos become legacy/export.
 
 Failures stay reversible — JSON files are canonical until the toggle flips. Worst case: roll back the toggle, JSON keeps working.

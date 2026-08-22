@@ -1,0 +1,30 @@
+/* Shared, non-Bootstrap base styles for the observability UI — deliberately no external
+   framework/CDN dependency (see TabShell.razor.css's sibling comment for why). Small utility
+   classes used directly by the stub tab components; each tab is free to add its own
+   CSS-isolated .razor.css file for anything more specific. */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#app-root {
+    height: 100vh;
+}
+
+.p-4 { padding: 1.5rem; }
+
+h4 { margin: 0 0 0.5rem; font-weight: 600; }
+
+.muted { color: #8b949e; }
+
+code {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    padding: 0.1rem 0.35rem;
+    font-size: 0.9em;
+}

@@ -1,0 +1,99 @@
+@implements IAsyncDisposable
+
+<div class="p-4 dcmviz-tab">
+    <h4>DCM-Viz</h4>
+    <p class="muted">
+        The Dynamic Context Memory working set over the course of a write — live while the
+        engine is running a beat loop, or browsed from permanent history afterward.
+    </p>
+
+    <div class="dcmviz-toolbar">
+        <button class="btn @(mode == Mode.Live ? "active" : "")" @onclick="() => SetMode(Mode.Live)">Live</button>
+        <button class="btn @(mode == Mode.History ? "active" : "")" @onclick="() => SetMode(Mode.History)">History</button>
+        @if (mode == Mode.History)
+        {
+            <select class="sel" @onchange="OnRunSelected">
+                <option value="">Select a run…</option>
+                @foreach (var run in pastRuns)
+                {
+                    <option value="@run.RunId">@run.NodeSlug — @run.StartedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</option>
+                }
+            </select>
+        }
+        else if (liveRunSlug != null)
+        {
+            <span class="muted">watching: @liveRunSlug</span>
+        }
+        else
+        {
+            <span class="muted">no write in progress — chart appears when one starts</span>
+        }
+    </div>
+
+    <div id="@rootId"></div>
+</div>
+
+@code {
+    private enum Mode { Live, History }
+
+    [Inject] private HubApiClient hub { get; set; } = default!;
+    [Inject] private ObserverHttpClient api { get; set; } = default!;
+    [Inject] private IJSRuntime js { get; set; } = default!;
+
+    private readonly string rootId = "dcmviz-root-" + Guid.NewGuid().ToString("N");
+    private Mode mode = Mode.Live;
+    private List<DcmRunDto> pastRuns = [];
+    private string? liveRunSlug;
+
+    protected override async Task OnInitializedAsync()
+    {
+        hub.DcmRunStarted += OnRunStarted;
+        hub.DcmRunEnded += OnRunEnded;
+        hub.DcmPayload += OnPayload;
+        await hub.EnsureStartedAsync();
+        pastRuns = await api.GetDcmRunsAsync();
+    }
+
+    private void OnRunStarted(DcmRunDto run)
+    {
+        liveRunSlug = run.NodeSlug;
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void OnRunEnded(DcmRunDto run)
+    {
+        liveRunSlug = null;
+        InvokeAsync(StateHasChanged);
+        // Refresh the history dropdown so the just-finished run shows up immediately.
+        InvokeAsync(async () => { pastRuns = await api.GetDcmRunsAsync(); StateHasChanged(); });
+    }
+
+    private void OnPayload(string json)
+    {
+        if (mode != Mode.Live) return;
+        _ = js.InvokeVoidAsync("dcmVizInterop.render", rootId, json);
+    }
+
+    private async void SetMode(Mode m)
+    {
+        mode = m;
+        if (m == Mode.History) pastRuns = await api.GetDcmRunsAsync();
+        StateHasChanged();
+    }
+
+    private async Task OnRunSelected(ChangeEventArgs e)
+    {
+        var idStr = e.Value as string;
+        if (string.IsNullOrWhiteSpace(idStr) || !Guid.TryParse(idStr, out var runId)) return;
+        var payload = await api.GetDcmRunPayloadAsync(runId);
+        if (payload != null) await js.InvokeVoidAsync("dcmVizInterop.render", rootId, payload);
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        hub.DcmRunStarted -= OnRunStarted;
+        hub.DcmRunEnded -= OnRunEnded;
+        hub.DcmPayload -= OnPayload;
+        return ValueTask.CompletedTask;
+    }
+}

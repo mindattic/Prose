@@ -225,7 +225,7 @@ public class FlyoverEntityRelationalParityTests
                 Id         = id,
                 EntityType = "flyover_entity",
                 Name       = src.Name,
-                Slug       = WorldGraphService.Slugify(src.Name),
+                Slug       = UniverseGraphService.Slugify(src.Name),
                 Status     = "canon",
                 
                 CreatedAt  = DateTime.UtcNow,
