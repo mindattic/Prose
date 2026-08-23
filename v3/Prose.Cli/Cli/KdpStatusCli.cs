@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
+using Prose.Core.Services;
 
 namespace Prose.Cli;
 
@@ -52,37 +53,41 @@ public static class KdpStatusCli
             return 0;
         }
 
-        // For Published nodes: check whether any beat was edited after KdpPublishedAt
-        // Collect book-level latest-beat-edit via both direct BeatNodes and chapter children
+        // For Published nodes: check whether any beat was edited after KdpPublishedAt.
+        //
+        // 2026-08-23 fix: this used to check only two fixed depths — beats directly on the book
+        // node, or on nodes one level below it (ParentNodeId == bookId) — instead of walking the
+        // full descendant tree. Same bug class CLAUDE.md's own hard rule and docs/ENGINE.md
+        // §SS-ENGINE-2 document as having already caused a real incident elsewhere (a query that
+        // joined BeatNodes one level deep silently dropped BCODA, whose beats live several levels
+        // down a split-chapter structure). Concretely here: a Published book with beats nested
+        // two-plus levels below the book node would never be flagged Outdated after an edit,
+        // because this query simply never looked that far down. Reuse
+        // NodeWorkbenchService.GetLeafDescendantIdsAsync (the sanctioned depth-first walk) per
+        // book instead of two fixed-depth JOINs.
         var nodeIds = await db.Nodes
             .AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.PublicationStatus != null)
             .Select(n => n.Id)
             .ToListAsync();
 
-        // Latest beat edit via chapter children
-        var viaChapters = await db.Nodes
-            .AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.ParentNodeId != null && nodeIds.Contains(n.ParentNodeId.Value))
-            .Join(db.BeatNodes.AsNoTracking().Where(nb => true), ch => ch.Id, nb => nb.NodeId, (ch, nb) => new { ch.ParentNodeId, nb.BeatId })
-            .Join(db.Beats.AsNoTracking(), x => x.BeatId, b => b.Id, (x, b) => new { BookId = x.ParentNodeId!.Value, b.UpdatedAt })
-            .GroupBy(x => x.BookId)
-            .Select(g => new { BookId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
-            .ToListAsync();
+        var leafIdToBookId = new Dictionary<Guid, Guid>();
+        foreach (var bookId in nodeIds)
+        {
+            var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, bookId);
+            foreach (var leafId in leafIds)
+                leafIdToBookId[leafId] = bookId; // a leaf's beats always belong to its own book — no sharing across tracked books
+        }
 
-        // Latest beat edit via direct BeatNodes on the book node
-        var direct = await db.BeatNodes
+        var lastEditsRaw = await db.BeatNodes
             .AsNoTracking()
-            .Where(nb => nodeIds.Contains(nb.NodeId) && true)
+            .Where(nb => leafIdToBookId.Keys.Contains(nb.NodeId))
             .Join(db.Beats.AsNoTracking(), nb => nb.BeatId, b => b.Id, (nb, b) => new { nb.NodeId, b.UpdatedAt })
-            .GroupBy(x => x.NodeId)
-            .Select(g => new { BookId = g.Key, LastEdit = g.Max(x => x.UpdatedAt) })
             .ToListAsync();
 
-        var lastEdits = viaChapters
-            .Concat(direct)
-            .GroupBy(x => x.BookId)
-            .ToDictionary(g => g.Key, g => (DateTime?)g.Max(x => x.LastEdit));
+        var lastEdits = lastEditsRaw
+            .GroupBy(x => leafIdToBookId[x.NodeId])
+            .ToDictionary(g => g.Key, g => (DateTime?)g.Max(x => x.UpdatedAt));
 
         // Resolve node IDs for the status nodes
         var nodeIdMap = await db.Nodes
@@ -94,6 +99,7 @@ public static class KdpStatusCli
         Console.WriteLine($"\n{"CODE",-8}  {"UNIVERSE",-8}  {"STATUS",-16}  {"KDP PUBLISHED",-22}  {"LAST EDIT",-22}  NOTE");
         Console.WriteLine(new string('-', 108));
 
+        var effectiveStatuses = new List<string>(nodes.Count);
         foreach (var n in nodes)
         {
             var id = nodeIdMap.TryGetValue(n.NodeCode ?? "", out var nid) ? nid : Guid.Empty;
@@ -105,6 +111,7 @@ public static class KdpStatusCli
                 && lastEdit.Value > n.KdpPublishedAt.Value;
 
             string effectiveStatus = stale ? "Outdated" : (n.PublicationStatus ?? "—");
+            effectiveStatuses.Add(effectiveStatus);
             string note = stale ? "⚠ beats edited after publish" : "";
             string universe = universeNames.TryGetValue(n.UniverseId, out var slug) ? slug : "—";
 
@@ -115,7 +122,10 @@ public static class KdpStatusCli
         }
 
         Console.WriteLine(new string('-', 100));
-        int needRepublish = nodes.Count(n => n.PublicationStatus == "Outdated");
+        // 2026-08-23 fix: this used to count the raw DB PublicationStatus column, which is never
+        // actually "Outdated" (that's a display-only label computed above from the stale check) —
+        // always reported 0 outdated regardless of how many rows the table itself flagged.
+        int needRepublish = effectiveStatuses.Count(s => s == "Outdated");
         int wip           = nodes.Count(n => n.PublicationStatus == "WorkInProgress");
         Console.WriteLine($"[kdp-status] {nodes.Count} tracked  |  {needRepublish} outdated  |  {wip} WIP\n");
         return 0;
