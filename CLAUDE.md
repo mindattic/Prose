@@ -123,14 +123,10 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 
 | Location | Contains | Source of truth / how to edit |
 |---|---|---|
-| `CanonDocumentSections` (DB) | Engine invariants, GLMZ canon, Entos canon, etc. | MCP `set_canon_section`; generates to `docs/BIBLE.md`, `docs/WORLD.md`, `docs/universes/ENTOS.md`, etc. |
+| `CanonDocumentSections` (DB) | Every canon doc's actual content, keyed by `CanonDocumentType` (`WorldBible`, `WorldMaster`, `Franchise`, `UniverseCanon`, `CraftGuide`, `UniverseCraft`, `DelightGuide`, `EngineGuide`, `CharacterDoctrine`) | MCP `set_canon_section` — this is the ONLY sanctioned edit path for every generated doc in the row below, with zero exceptions |
 | `Nodes.NodeBible` (DB) | **The single source of truth for that book** — arc, characters, voice, locks, blueprint, beat spine | `set_book_bible` MCP (hand-authored sections) |
 | `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
-| `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/ENTOS.md` | Generated canon docs — ephemeral, gitignored | Re-run `prose --generate-canon-md --all` to materialize |
-| `docs/CRAFT.md` | Universal prose rules — **Base layer** of DCM static hierarchy; all universes (the DON'Ts) | Hand-edit directly |
-| `docs/DELIGHT.md` | Positive prose doctrine — what readers LOVE (13 DOs reverse-engineered from the 99 top-decile beats + 114 praise ballots); craft companion to CRAFT.md; globally pinned; injected per beat-mode by `DelightProseGuidance` | Hand-edit directly |
-| `docs/GLMZ.md` | GLMZ universe craft additions — **Universe layer** of DCM static hierarchy (transaction register, weird, prohibitions) | Hand-edit directly |
-| `docs/SCRY.md` | SCRY/Fantasy universe craft additions — **Universe layer** (Entos naming, death permanent, tone, prohibitions) | Hand-edit directly |
+| `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/ENTOS.md`, `docs/CRAFT.md`, `docs/GLMZ.md`, `docs/SCRY.md`, `docs/DELIGHT.md`, `docs/ENGINE.md`, `docs/CHARACTER.md` | Generated canon docs — **ALL ten are DB-backed via `CanonDocumentSections`, ephemeral, gitignored** (verified live 2026-08-23: every one of these carries a `<!-- GENERATED — do not hand-edit -->` banner and real section counts from the DB — this table previously and wrongly told readers to "hand-edit directly" for 5 of these 10 files; that instruction was stale from before they were migrated into `CanonDocumentSections`, and following it risked a silent data-loss bug: a hand edit destroyed by the next `--generate-canon-md --all`) | Edit content via `set_canon_section` MCP, then re-run `prose --generate-canon-md --type <type>` (or `--all`) to materialize the `.md` mirror |
 | Character record `Speech*`/`Psychology*` fields (DB) | Per-narrator voice — **Register layer** of DCM static hierarchy (SS-A46; no `docs/registers/` files) | `create_character` with the id + `speechPatternsJson`; loaded per-beat by DCM |
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
 | `docs/USER_STORIES.md` | Epic index + acceptance criteria | Hand-edit directly |
@@ -167,19 +163,27 @@ and conversation.
 3. **Release (GC)** — after X beats without reference, the .md file is garbage-collected from
    the LRU working set. Only a small, current-beat-relevant subset persists at any moment.
 
-### The Four-Layer DCM Static Hierarchy
+### The DCM Static Hierarchy — Tier 0 + four layers
 
-These four resources are **always** loaded at the correct scope — they are the only static
+**Corrected 2026-08-23** (was documented as only 4 layers — `docs/ENGINE.md` exists, is real,
+DB-backed, and loads on every single beat above everything else, but had never been added here).
+These five resources are **always** loaded at the correct scope — they are the only static
 resources in DCM. Everything else (entities, topics, relational cascade) is dynamic.
 
 | Layer | File | Scope | How loaded |
 |---|---|---|---|
+| **0 — Engine** | `docs/ENGINE.md` | Every universe, every story, unconditionally | `tier: always` in its own frontmatter — same generic "always" mechanism `DocContextService.PrepareContextAsync` step 1 uses for the pinned universal core; loads above CRAFT.md per its own text ("This is DCM tier 0 — it loads above CRAFT.md and above every universe document, on every beat, always") |
 | **1 — Base** | `docs/CRAFT.md` | All universes, all stories | Globally pinned via `add_context_doc` (24h; renew each session) |
 | **2 — Universe** | `docs/GLMZ.md` (GLMZ) or `docs/SCRY.md` (Fantasy) | One universe | Globally pinned; keyword triggers activate per-book |
 | **3 — BookBible** | `docs/nodes/<CODE>.md` | One book | `node` tier — auto-loaded by DocContextService; evicts on book change |
 | **4 — Register (SS-A46)** | The **POV character's Character record** (`SpeechVocabulary` / `SpeechCadence` / `SpeechSubtext` / `SpeechUnderPressure` / `SpeechIntimacyRegister` / `PsychologySecret`) | One narrating character (**per beat** — POV can change within a book) | The beat's narrator (from the bible **POV Map** → `BeatEntityPresence` `PresenceType='pov'` row) is materialized and **pinned dominant** (score 999) by `DocContextService.PrepareForNodeAsync(povEntityId:)`; other present characters' registers still load via clue-gathering (step 0) but don't override the narrator's |
 
-**Hierarchy resolution:** When layers conflict, the lower tier wins for its own book (Register > BookBible > Universe > Base). Use the narrowest scope that is authoritative.
+`docs/CHARACTER.md` (the Character Doctrine, `CanonDocumentType.CharacterDoctrine`) is a **topic**
+tier doc, not a static layer — it loads via keyword triggers (character/cast/protagonist/
+antagonist/relationship/dialogue/motive/arc/pov, etc.), same as any other topic doc, not
+unconditionally on every beat.
+
+**Hierarchy resolution:** When layers conflict, the lower tier wins for its own book (Register > BookBible > Universe > Base > Engine). Use the narrowest scope that is authoritative — except Engine tier (SS-ENGINE-0's own text: "none may contradict this one").
 
 **Voice is the character, not a file (SS-A46, 2026-07-20).** There are no `docs/registers/<NAME>.md` files and no imposed tonal/flagship registers (JOY, SORROW, Kyle/CODA are retired and deleted). A narrator's voice lives in their **Character record's speech/psychology fields** — so it is loaded automatically by the existing DCM entity-doc path when that character is on the page, and it **evolves as the record evolves**: update the character (via `create_character` with the id, or a wound/continuity claim) and the next beat's prose tracks the change. The clear base voice (CRAFT.md §0–§2) is the floor; the character's own diction and attention are the only "register." A Pixel chapter reads in Pixel's voice; a Bear chapter in Bear's.
 
@@ -332,24 +336,49 @@ The project follows the **MindAttic Codex** documentation standard. The source o
 - **`docs/BIBLE.md`** (L0) — engine invariants (SS-LAW-N) + **GLMZ** universe canon. Authoritative
   for GLMZ world facts. Fantasy/Entos universe facts live in `docs/universes/ENTOS.md`.
   Inherits laws from `D:/Projects/MindAttic/MindAttic.HouseRules.md`.
+- **`docs/ENGINE.md`** — DCM **Tier 0** (loads above CRAFT.md, on every beat, unconditionally):
+  the Prime Rule ("a defect is fixed in code, never by writing a paragraph about it"), what the
+  engine checks automatically (logic sweep dimensions, craft-audit rules), and measured/calibrated
+  numeric thresholds. **DB-backed** (`CanonDocumentType.EngineGuide`) — edit via `set_canon_section`
+  MCP, then `prose --generate-canon-md --type EngineGuide`. Never hand-edit the `.md` file.
 - **`docs/CRAFT.md`** — universal prose rules, Base layer of the DCM static hierarchy. Applies to
   all universes (GLMZ and SCRY/Fantasy). Source: hoisted §5 universals from WORLD.md + LDGR-C/K
-  audit (8 DON'Ts, 8 DOs). Hand-edit directly. Synced + globally pinned each session.
+  audit (8 DON'Ts, 8 DOs). **DB-backed** (`CanonDocumentType.CraftGuide`, confirmed live 2026-08-23
+  — do not hand-edit, a prior version of this doc wrongly said to). Edit via `set_canon_section`
+  MCP, then `prose --generate-canon-md --type CraftGuide`. Synced + globally pinned each session.
 - **`docs/GLMZ.md`** — GLMZ Universe craft layer (DCM static tier 2): transaction register, world
   texture, the weird, interludes, hard prohibitions. Craft additions on top of CRAFT.md.
-  Hand-edit directly. Synced + globally pinned each session.
+  **DB-backed** (`CanonDocumentType.UniverseCraft`, confirmed live 2026-08-23 — do not hand-edit).
+  Edit via `set_canon_section` MCP, then `prose --generate-canon-md --type UniverseCraft`. Synced +
+  globally pinned each session.
 - **`docs/SCRY.md`** — SCRY/Fantasy Universe craft layer (DCM static tier 2): naming canon
   (universe = SCRY; world = The Entos), death permanent, tone/visual, the weird, prohibitions.
-  Hand-edit directly. Synced + globally pinned each session.
+  **DB-backed** (`CanonDocumentType.UniverseCraft`, same type as GLMZ.md, scoped by universe;
+  confirmed live 2026-08-23 — do not hand-edit). Edit via `set_canon_section` MCP, then
+  `prose --generate-canon-md --type UniverseCraft`. Synced + globally pinned each session.
+- **`docs/DELIGHT.md`** — positive prose doctrine (13 DOs from the top-decile-beat + praise-ballot
+  analysis); craft companion to CRAFT.md, globally pinned, injected per beat-mode by
+  `DelightProseGuidance`. **DB-backed** (`CanonDocumentType.DelightGuide`, confirmed live
+  2026-08-23 — do not hand-edit). Edit via `set_canon_section` MCP, then
+  `prose --generate-canon-md --type DelightGuide`.
+- **`docs/CHARACTER.md`** — the Character Doctrine: a binding craft law (every universe) that
+  "the Bible governs what is true; this governs who the people are" — cast-as-people, the
+  Relational Law (interpersonal interaction as the 90+ lever), etc. Topic-tier (keyword-triggered,
+  not always-pinned — see the DCM hierarchy section above). **DB-backed**
+  (`CanonDocumentType.CharacterDoctrine`) — previously undocumented in this file entirely. Edit via
+  `set_canon_section` MCP, then `prose --generate-canon-md --type CharacterDoctrine`.
 - **Per-narrator voice (DCM static tier 4, SS-A46)** — lives in the POV character's **Character
   record** (`Speech*` + `Psychology*` fields), NOT in a file. There are no `docs/registers/<NAME>.md`
   files (the folder is retired). The record is loaded per-beat as that character's entity doc by DCM
   clue-gathering inference, and evolves as the character does. Edit voice via `create_character`
   (pass the id + `speechPatternsJson`), not by hand-editing a register file.
 - **`docs/WORLD.md`** — **GLMZ** world master: how the city works, how the cast works, how combat
-  works. (Craft/voice rules moved to `docs/CRAFT.md` + `docs/GLMZ.md`.) Hand-edit directly.
+  works. (Craft/voice rules moved to `docs/CRAFT.md` + `docs/GLMZ.md`.) **DB-backed**
+  (`CanonDocumentType.WorldMaster`). Edit via `set_canon_section` MCP.
 - **`docs/FRANCHISE.md`** — **GLMZ** franchise & IP bible: commercial positioning, genre, logline.
-  Hand-edit directly.
+  **DB-backed** (`CanonDocumentType.Franchise`, confirmed live 2026-08-23 — do not hand-edit; this
+  row previously contradicted the Per-Node Documentation table above, which already correctly
+  listed FRANCHISE.md as a generated/ephemeral file). Edit via `set_canon_section` MCP.
 - **`Nodes.NodeBible`** (DB, L0 per-book) — book arc, beat spine, character rules, locks,
   voice register, structural blueprint. **The single source of truth for that BookNode.**
   Mirrored to `docs/nodes/<CODE>.md` as a generated read-only file — never hand-edit the file.
@@ -373,12 +402,15 @@ The project follows the **MindAttic Codex** documentation standard. The source o
 canonical destinations. Do not append to it. Do not reference it.
 
 Working rules:
-- **Canon changes go DIRECTLY into the authoritative source** — `docs/BIBLE.md` (or `docs/WORLD.md`) for
-  GLMZ/engine world facts, `docs/universes/ENTOS.md` for Fantasy/Entos world facts, `Nodes.NodeBible` (via
-  `set_book_bible` MCP) for book-specific facts, `docs/CRAFT.md` for universal prose craft rules,
-  `docs/GLMZ.md` for GLMZ craft additions, `docs/SCRY.md` for SCRY/Fantasy craft additions.
-  There is no amendment layer. After updating NodeBible, re-run `generate_node_doc` + `prose --sync-markdown`.
-  After editing CRAFT.md / GLMZ.md / SCRY.md / registers, run `prose --sync-markdown`.
+- **Canon changes go DIRECTLY into the authoritative source** — every canon doc in the table above
+  (`BIBLE.md`/`WORLD.md`/`FRANCHISE.md`/`ENTOS.md`/`CRAFT.md`/`GLMZ.md`/`SCRY.md`/`DELIGHT.md`/
+  `ENGINE.md`/`CHARACTER.md`) is `CanonDocumentSections` (DB) via `set_canon_section` MCP —
+  **never hand-edit the `.md` file directly for any of these**, `Nodes.NodeBible` (via
+  `set_book_bible` MCP) for book-specific facts. There is no amendment layer. After updating
+  NodeBible, re-run `generate_node_doc` + `prose --sync-markdown`. After calling
+  `set_canon_section` for any canon doc, re-run `prose --generate-canon-md --type <type>` (or
+  `--all`) to materialize the `.md` mirror, then `prose --sync-markdown` so DocContextService
+  picks up the change.
 - A fact lives in **exactly one file**; cite it by its stable `{#SS-...}` id, never by line number.
 - Update the Bible/books status in the **same change** that moves a goal; "done" means a test or
   build proves it.
@@ -472,34 +504,51 @@ for all prose writing — it coordinates all the services below and logs coverag
 | `CombatSceneWriter.WriteCombatSceneAsync(request)` | Explicit multi-exchange combat setpiece (numExchanges > 1, full loadout tracking) |
 | `BeatGeneratorService.GenerateBeatAsync(context)` | Legacy path — direct generation without coverage logging |
 
-### Context enrichment chain (all wired inside ProseWriterRouter — verified by call-site audit 2026-08-09)
+### Context enrichment chain (all wired inside ProseWriterRouter)
+
+**Corrected 2026-08-23** (a call-site audit found ~10 activation gates below had drifted from
+what this table claimed since the 2026-08-09 version — mostly "Always" claimed where a real
+precondition exists — and 5 real enrichment stages added since then had never been added as
+rows; both are fixed below). "Always" in this table means "no explicit precondition beyond the
+router's own ambient state (`NodeId`/`beatId` usually already set by the time a real beat writes)"
+— not "literally unconditional."
+
 | Service | What it injects | Activation |
 |---|---|---|
-| `BeatModeDetector` | Classifies beat as Combat/Narrative/EmotionalClimax/Dialogue/Transition/Revelation | Keyword scan on BeatGoal |
-| `PacingService` | BREATHE/FLOW/TIGHTEN/STRIKE/SETTLE prose rhythm | Position + BeatGoal keywords; Combat forces STRIKE |
-| `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | Position in book |
-| `DelightProseGuidance` | Positive doctrine (docs/DELIGHT.md): emphasizes the 2–3 reader-loved moves matching the beat mode | All beat modes (mode-keyed) |
+| `BeatModeDetector` | Classifies beat as Combat/Narrative/EmotionalClimax/Dialogue/Transition/Revelation | Unconditional, every call |
+| `PacingService` | BREATHE/FLOW/TIGHTEN/STRIKE/SETTLE prose rhythm | `totalBeats > 0`; Combat forces STRIKE regardless |
+| `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | `totalBeats > 0` |
+| `DelightProseGuidance` | Positive doctrine (docs/DELIGHT.md): emphasizes the 2–3 reader-loved moves matching the beat mode | Unconditional, all beat modes (mode-keyed) |
 | `CombatProseGuidance` (`CombatProseConstants`) | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
-| `SceneContextBuilder` | Ambient sensory grounding | Always |
-| `DialogueService` | Per-character voice/subtext profile injection | `Dialogue`/`EmotionalClimax` modes |
-| `SceneContextAssembler` (+ `WoundLedgerService`) | Per-entity XRay: voice/psychology/wound/behavior profile of everyone on-page | Always |
-| `ContinuityService` | Canonical/confirmed fact constraints for on-page characters | Always |
+| `SceneContextBuilder` | Ambient sensory grounding | **`context.Location` non-empty** — NOT always; `Location` is only ever set on 14/46 book nodes today (see `DefaultLocation` ancestor-walk fix, 2026-08-22) |
+| `DialogueService` | Per-character voice/subtext profile injection | `Dialogue`/`EmotionalClimax` modes + `CharactersInScene.Count > 0` |
+| `SceneContextAssembler` (+ `WoundLedgerService`) | Per-entity XRay: voice/psychology/wound/behavior profile of everyone on-page | `beatId != Guid.Empty` — never fires on a preview/no-beat-id write |
+| `SceneCollisionService` | **(undocumented until 2026-08-23)** How on-page characters' psychology collides given the beat goal | 2+ `CharactersInScene`, non-Combat mode, XRay context present |
+| `ContinuityService` | Canonical/confirmed fact constraints for on-page characters | `CharactersInScene.Count > 0` — empty until the entity pre-check/XRay stack has warmed or the caller set it explicitly |
+| `ContinuityEnforcer` | **(new 2026-08-22, undocumented until now)** Post-generation LLM check: does the just-written beat contradict a CANONICAL/CONFIRMED claim it was actually shown? Closes the gap where the canon block above was prompt-side-only with no verification | After generation, when `ContinuityService` produced a non-empty canon block for the scene |
 | `TensionEscalationService` | Warns when beats have stagnated at low intensity | `beatIndex > 2` |
-| `ReaderKnowledgeService` | Dramatic-irony bookkeeping — what the reader currently knows | Always |
-| `ConsequenceService` / `ConsequenceEngine` | Gear/cyberware/status constraints + cross-book persistent consequences | Always |
-| `AmbientAnomalyService` | Location-tagged background detail | ~60% gate |
-| `WorldStateAtBeatService` | Temporal entity-state snapshot (drift from canon) | Always |
-| `NarrativeSummaryService` | Rolling compressed memory of prior beats | Always |
-| `ChapterSummaryService` | DB-backed prior-chapter memory | Always |
-| `OpenThreadsService` | Unresolved promises/plants/questions | Always |
-| `BookStateLedgerService` | Arc-level named state (crises, dramatic questions, alliances) | Long books |
-| `StoryScienceService` | King + Storr craft laws: sacred-flaw consistency, status dynamics, curiosity gap, causal chains, sensory specificity | Always |
-| `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode + STORYSCOPE audit-finding loop-back | Node has a blueprint (`prose --generate-blueprint`) |
-| `NarrativeChartService` | Offscreen/parallel character activity (world continuity) | Always |
-| `UniverseGraphService` | Entity pre-check (soft gate — warns via a "do not invent backstory" prompt block, never blocks/corrects) — flags proper nouns in `BeatGoal` not present in `AllNodes()` | Always |
-| `PlantPayoffService` | Active plant/payoff pairs for the book | `BeatContext.NodeId != Guid.Empty` |
-| `BookAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | `BeatContext.NodeId != Guid.Empty` |
-| `LibertyReportService` / `SemanticFidelityService` / `CanonGroundingService` | Rule-of-Cool check, Goodhart intent-drift check, canon-grounding scaffold | Always (findings loop back into later beats) |
+| `ReaderKnowledgeService` | Dramatic-irony bookkeeping — what the reader currently knows | `NodeId != Guid.Empty` |
+| `ConsequenceService` | Gear/cyberware/status constraints for the full on-page cast | `CharactersInScene.Count > 0` |
+| `ConsequenceEngine` | Cross-book persistent consequences (contract outcomes, faction burns) | `CharactersInScene.Count > 0` — **known bug (tracked, not yet fixed): only ever reads `CharactersInScene[0]`, so consequences for character #2+ in a multi-character scene are silently never surfaced, unlike `ConsequenceService` immediately above it** |
+| `AmbientAnomalyService` | Location-tagged background detail | `Location` set (router-level gate); an internal ~60% roll inside the service itself is unverified against this table — check the service directly before citing that number |
+| `WorldStateAtBeatService` | Temporal entity-state snapshot (drift from canon) | `beatId != Guid.Empty` |
+| `NarrativeSummaryService` | Rolling compressed memory of prior beats | `NodeId != Guid.Empty` |
+| `ChapterSummaryService` | DB-backed prior-chapter memory | `NodeId != Guid.Empty` **and `beatIndex > 0`** (intentional — no prior chapter exists for the first beat; documented in the code itself) |
+| `OpenThreadsService` | Unresolved promises/plants/questions | `NodeId != Guid.Empty` |
+| `BookStateLedgerService` | Arc-level named state (crises, dramatic questions, alliances) | `NodeId`/`beatId` set — **the "long books" gate this table used to claim was not found anywhere in `ProseWriterRouter.cs` itself; if it's real it lives inside `BookStateLedgerService`, unconfirmed as of 2026-08-23** |
+| `StoryScienceService` | King + Storr craft laws: sacred-flaw consistency, status dynamics, curiosity gap, causal chains, sensory specificity | `totalBeats > 0` |
+| `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode | Node has a blueprint (`prose --generate-blueprint`) **and `totalBeats > 0`** |
+| `BeatBlueprintDecision` ("Track B") | **(undocumented until 2026-08-23)** A separate structural-decision block merged into the same `structuralBlueprintGuidance` string as the row above — see the coverage-logging caveat below | Node has a blueprint |
+| StoryScope audit loop-back | **(undocumented until 2026-08-23)** Queries prior STORYSCOPE findings and folds them into `structuralBlueprintGuidance` too — three logically separate mechanisms currently share one coverage signal (see `workflow_status`'s `BeatContract` row: it can report "active" from either of the other two, over-counting its own actual hit rate — tracked, not yet fixed) | Node has a blueprint |
+| `NarrativeChartService` | Offscreen/parallel character activity (world continuity) | `beatIndex > 2` **and** `totalBeats > 0` |
+| `UniverseGraphService` | Entity pre-check (soft gate — warns via a "do not invent backstory" prompt block, never blocks/corrects) — flags proper nouns in `BeatGoal` not present in `AllNodes()` | Non-empty `BeatGoal` |
+| `HarvestRevealedDetailsAsync` (on `SceneContextAssembler`) | **(undocumented until 2026-08-23)** Opt-in harvesting of newly-revealed entity details from the beat goal back into the entity's own record | `AutoHarvestRevealedDetails` setting (opt-in, off by default) |
+| `PlantPayoffService` | Active plant/payoff pairs for the book | `BeatContext.NodeId != Guid.Empty` for the coverage-length metric computed here; **the actual prompt injection happens inside `BeatGeneratorService`, not `ProseWriterRouter`** — this row and the one below describe where the block is logged, not where it's built |
+| `BookAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | Same caveat as `PlantPayoffService` above |
+| Reader-Proxy QA loop-back | **(new 2026-08-22, undocumented until now)** Folds prior `ComprehensionDefect`/`CraftChecklist`/`ReaderGripe` findings into forward-looking guidance, same pattern as `EMOTIONAL-DEPTH`/`READABILITY` below | `NodeId != Guid.Empty`, no guidance already supplied by the caller |
+| `LibertyReportService` | Rule-of-Cool check | `beatId != Guid.Empty` + non-empty result (findings loop back into later beats) |
+| `SemanticFidelityService` | Goodhart intent-drift check | `beatId != Guid.Empty` + non-empty `capturedBeatGoal` |
+| `CanonGroundingService` | Canon-grounding scaffold | **Opt-in, `AutoCanonGrounding` setting, off by default — NOT "Always" as this table previously claimed.** Turning this on globally is a per-beat LLM-call cost decision, not a documentation fix; ask before flipping the default. |
 
 Note: there is no class named `WorldGraphService` in the live tree — the entity-graph service is
 `UniverseGraphService`. `UniverseGraphService.GetEntityBrief`/`GetSceneContext`/`GetContextForNode`
