@@ -36,7 +36,8 @@ public class NodeCliRoundTripTests
         dbFactory = TestDbFactory.For(paths, "cli-roundtrip");
         migration = new NodeMigrationService(dbFactory, NullLogger<NodeMigrationService>.Instance);
         var audioStore = new LocalDiskAudioStore(paths, NullLogger<LocalDiskAudioStore>.Instance);
-        workbench = new NodeWorkbenchService(dbFactory, null!, paths, audioStore, NullLogger<NodeWorkbenchService>.Instance);
+        workbench = new NodeWorkbenchService(dbFactory, null!, paths, audioStore, NullLogger<NodeWorkbenchService>.Instance,
+            null!, null!, null!, null!, null!);
     }
 
     [TearDown]

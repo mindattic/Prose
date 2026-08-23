@@ -126,20 +126,55 @@ public class EmotionalDepthService
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        // For book nodes, examine the LIVE chapter prose (child chapters), not the
-        // book node's own beats — those may hold a legacy outline/condensed draft.
-        // Recurses past any nested Collection (2026-08-09 fix) — this is a DEEP-tier
-        // BookHealthService check (--examine-emotion), a major miss when unconverted.
-        // leafIds is already in correct global reading order; ordering by leafIds' list
-        // position (not raw Node.SortKey, which is only comparable among siblings under the
-        // SAME parent) avoids the cross-branch scrambling bug found the same day in
-        // NodeDocService/SynopsisExportService/BeatLensServices.
+        var (assembled, beatNums, hasChildren) = await AssembleBeatTextAsync(db, nodeId, ct);
+        var effectiveMax = hasChildren ? Math.Max(maxChars, 100000) : maxChars; // representative whole-novel read
+
+        return await ExamineTextAsync(
+            nodeId, node.Slug, node.Title, node.NodeBible,
+            assembled, beatNums, effort, effectiveMax, ct);
+    }
+
+    /// <summary>
+    /// Cheap (no LLM) staleness check: true when this node's currently-assembled beat text
+    /// differs from the ContentHash of its most recent EmotionalExamination, or none exists
+    /// yet. Lets a background sweep (SanityScanBackgroundService) skip the 8 dimension LLM
+    /// calls for a book that hasn't changed since its last examination — added 2026-08-21
+    /// because ExamineNodeAsync itself always re-scores unconditionally (no internal hash
+    /// gate), and this was previously 100% manual (--examine-emotion only), so most books
+    /// never had their emotional depth checked at all.
+    /// </summary>
+    public async Task<bool> HasContentChangedSinceLastExamAsync(Guid nodeId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var (assembled, _, _) = await AssembleBeatTextAsync(db, nodeId, ct);
+        if (string.IsNullOrWhiteSpace(assembled)) return false;
+
+        var lastHash = await db.Set<EmotionalExamination>().AsNoTracking()
+            .Where(e => e.NodeId == nodeId)
+            .OrderByDescending(e => e.ExaminedAt)
+            .Select(e => e.ContentHash)
+            .FirstOrDefaultAsync(ct);
+
+        return lastHash != Hash(assembled);
+    }
+
+    /// <summary>
+    /// For book nodes, assembles the LIVE chapter prose (child chapters), not the book node's
+    /// own beats — those may hold a legacy outline/condensed draft. Recurses past any nested
+    /// Collection (2026-08-09 fix) — this feeds a DEEP-tier BookHealthService check
+    /// (--examine-emotion), a major miss when unconverted. leafIds is already in correct
+    /// global reading order; ordering by leafIds' list position (not raw Node.SortKey, which
+    /// is only comparable among siblings under the SAME parent) avoids the cross-branch
+    /// scrambling bug found the same day in NodeDocService/SynopsisExportService/BeatLensServices.
+    /// </summary>
+    private static async Task<(string Text, List<int> BeatNumbers, bool HasChildren)> AssembleBeatTextAsync(
+        ProseDbContext db, Guid nodeId, CancellationToken ct)
+    {
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var hasChildren = !(leafIds.Count == 1 && leafIds[0] == nodeId);
 
         List<string> beats;
         List<int> beatNums;
-        var effectiveMax = maxChars;
 
         if (hasChildren)
         {
@@ -153,7 +188,6 @@ public class EmotionalDepthService
 
             beats    = ordered.Where(r => !string.IsNullOrWhiteSpace(r.Text)).Select(r => r.Text).ToList();
             beatNums = ordered.Where(r => !string.IsNullOrWhiteSpace(r.Text)).Select(r => r.Number).ToList();
-            effectiveMax = Math.Max(maxChars, 100000);             // representative whole-novel read
         }
         else
         {
@@ -169,11 +203,7 @@ public class EmotionalDepthService
             beatNums = beatRows.Where(x => !string.IsNullOrWhiteSpace(x.Text)).Select(x => x.Number).ToList();
         }
 
-        var assembled = string.Join("\n\n---\n\n", beats);
-
-        return await ExamineTextAsync(
-            nodeId, node.Slug, node.Title, node.NodeBible,
-            assembled, beatNums, effort, effectiveMax, ct);
+        return (string.Join("\n\n---\n\n", beats), beatNums, hasChildren);
     }
 
     public async Task<EmotionalExaminationResult> ExamineTextAsync(

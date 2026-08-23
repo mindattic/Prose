@@ -110,14 +110,154 @@ public class ProseDbContext : DbContext
     {
         StampUniverseOnAdded();
         StampBeatTextHash();
-        return base.SaveChanges(acceptAllChangesOnSuccess);
+        RunWriteGateSyncChecks();
+        var events = ClassifyPendingWriteEvents();
+        var result = base.SaveChanges(acceptAllChangesOnSuccess);
+        DispatchWriteEvents(events);
+        return result;
     }
 
-    public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
+    public override async Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
     {
         StampUniverseOnAdded();
         StampBeatTextHash();
-        return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
+        await RunWriteGateSyncChecksAsync(cancellationToken).ConfigureAwait(false);
+        var events = ClassifyPendingWriteEvents();
+        var result = await base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken).ConfigureAwait(false);
+        DispatchWriteEvents(events);
+        return result;
+    }
+
+    /// <summary>
+    /// Layer A of the write gate (project plan "Make Prose.Hub the real gatekeeper",
+    /// 2026-08-22): fast, deterministic, pre-save checks run for EVERY tracked write in the
+    /// application, regardless of which of the ~150 CLI/MCP call sites produced it — not just the
+    /// ones that remembered to ask for validation. Runs before <c>base.SaveChanges</c> so a
+    /// rejection aborts the save; a checked entry can still fail the underlying commit afterward
+    /// (constraint violations etc.), same as today.
+    ///
+    /// Known limit, stated explicitly: <c>ExecuteDeleteAsync</c>/<c>ExecuteUpdateAsync</c> bypass
+    /// <c>ChangeTracker</c> entirely (same reason raw SQL does) and are invisible here.
+    /// </summary>
+    private void RunWriteGateSyncChecks()
+    {
+        var checks = Prose.Core.Services.WriteGate.WriteGateScope.SyncChecks;
+        if (checks.Count == 0) return;
+        foreach (var entry in ChangeTracker.Entries())
+        {
+            if (entry.State == EntityState.Unchanged || entry.State == EntityState.Detached) continue;
+            foreach (var check in checks)
+            {
+                if (!check.AppliesTo(entry)) continue;
+                check.CheckAsync(entry, CancellationToken.None).GetAwaiter().GetResult();
+            }
+        }
+    }
+
+    private async Task RunWriteGateSyncChecksAsync(CancellationToken ct)
+    {
+        var checks = Prose.Core.Services.WriteGate.WriteGateScope.SyncChecks;
+        if (checks.Count == 0) return;
+        foreach (var entry in ChangeTracker.Entries())
+        {
+            if (entry.State == EntityState.Unchanged || entry.State == EntityState.Detached) continue;
+            foreach (var check in checks)
+            {
+                if (!check.AppliesTo(entry)) continue;
+                await check.CheckAsync(entry, ct).ConfigureAwait(false);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Captures which entities are about to change, and how, BEFORE <c>base.SaveChanges</c> clears
+    /// tracked state — so post-save dispatch (<see cref="DispatchWriteEvents"/>) knows what
+    /// actually happened even though <c>EntityState</c>/<c>IsModified</c> are gone by then.
+    /// Unrecognized entity types return null and are silently skipped — this table only needs to
+    /// grow as Layer B adds concrete post-save checks for a new family, per <see
+    /// cref="Prose.Core.Services.WriteGate.WriteSubject"/>'s own "deliberately coarse" contract.
+    /// </summary>
+    private List<Prose.Core.Services.WriteGate.WriteEvent> ClassifyPendingWriteEvents()
+    {
+        var events = new List<Prose.Core.Services.WriteGate.WriteEvent>();
+        if (Prose.Core.Services.WriteGate.WriteGateScope.AuditService == null) return events;
+        var source = Prose.Core.Services.WriteGate.WriteGateScope.CurrentSource;
+
+        foreach (var entry in ChangeTracker.Entries())
+        {
+            if (entry.State == EntityState.Unchanged || entry.State == EntityState.Detached) continue;
+
+            switch (entry.Entity)
+            {
+                case Beat beat:
+                    var textChanged = entry.State == EntityState.Added
+                        || (entry.State == EntityState.Modified && entry.Property(nameof(Beat.Text)).IsModified);
+                    events.Add(new Prose.Core.Services.WriteGate.WriteEvent(
+                        textChanged ? Prose.Core.Services.WriteGate.WriteSubject.BeatText
+                                    : Prose.Core.Services.WriteGate.WriteSubject.BeatMetadata,
+                        beat.Id, null, null, source));
+                    break;
+
+                case Node node:
+                    var subject = entry.State switch
+                    {
+                        EntityState.Added => Prose.Core.Services.WriteGate.WriteSubject.NodeCreate,
+                        EntityState.Deleted => Prose.Core.Services.WriteGate.WriteSubject.NodeDelete,
+                        _ => Prose.Core.Services.WriteGate.WriteSubject.NodeStructure,
+                    };
+                    events.Add(new Prose.Core.Services.WriteGate.WriteEvent(
+                        subject, node.Id, null, node.UniverseId, source));
+                    break;
+
+                case Entity ent when entry.State != EntityState.Deleted:
+                    var originChanged = entry.State == EntityState.Modified
+                        && entry.Property(nameof(Entity.OriginNodeId)).IsModified;
+                    events.Add(new Prose.Core.Services.WriteGate.WriteEvent(
+                        originChanged ? Prose.Core.Services.WriteGate.WriteSubject.EntityOrigin
+                                      : Prose.Core.Services.WriteGate.WriteSubject.EntityCore,
+                        ent.Id, ent.OriginNodeId, ent.UniverseId, source));
+                    break;
+
+                case CharacterAlias ca:
+                    events.Add(new Prose.Core.Services.WriteGate.WriteEvent(
+                        Prose.Core.Services.WriteGate.WriteSubject.EntityAlias, ca.CharacterId, null, null, source));
+                    break;
+                case PlaceAlias pa:
+                    events.Add(new Prose.Core.Services.WriteGate.WriteEvent(
+                        Prose.Core.Services.WriteGate.WriteSubject.EntityAlias, pa.PlaceId, null, null, source));
+                    break;
+                case FactionAlias fa:
+                    events.Add(new Prose.Core.Services.WriteGate.WriteEvent(
+                        Prose.Core.Services.WriteGate.WriteSubject.EntityAlias, fa.FactionId, null, null, source));
+                    break;
+                case WeaponAlias wa:
+                    events.Add(new Prose.Core.Services.WriteGate.WriteEvent(
+                        Prose.Core.Services.WriteGate.WriteSubject.EntityAlias, wa.WeaponId, null, null, source));
+                    break;
+
+                case CharacterRelationshipRow rel:
+                    events.Add(new Prose.Core.Services.WriteGate.WriteEvent(
+                        Prose.Core.Services.WriteGate.WriteSubject.CharacterRelationship, rel.CharacterId, null, null, source));
+                    break;
+            }
+        }
+        return events;
+    }
+
+    /// <summary>
+    /// Fire-and-forget post-save dispatch (Layer A). Deliberately not awaited into the caller's
+    /// save path — a slow/failing audit check must never make a successful write look like it
+    /// failed. Failures are the audit service's own responsibility to log (see
+    /// <see cref="Prose.Core.Services.WriteGate.IWriteAuditService"/>).
+    /// </summary>
+    private void DispatchWriteEvents(List<Prose.Core.Services.WriteGate.WriteEvent> events)
+    {
+        var audit = Prose.Core.Services.WriteGate.WriteGateScope.AuditService;
+        if (audit == null || events.Count == 0) return;
+        foreach (var evt in events)
+        {
+            _ = Task.Run(() => audit.DispatchAsync(evt, CancellationToken.None));
+        }
     }
 
     // Multi-universe tenancy — every universe-scoped root (Entity, Node, Book)

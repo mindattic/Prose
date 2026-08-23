@@ -29,6 +29,7 @@ public class CoreEntityCrudTools
     private readonly FactionRepository factions;
     private readonly CorponationRepository corponations;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly EntityOriginService entityOrigin;
     private readonly HubInvoker hub;
 
     public CoreEntityCrudTools(
@@ -37,6 +38,7 @@ public class CoreEntityCrudTools
         FactionRepository factions,
         CorponationRepository corponations,
         IDbContextFactory<ProseDbContext> dbFactory,
+        EntityOriginService entityOrigin,
         HubInvoker hub)
     {
         this.characters = characters;
@@ -44,6 +46,7 @@ public class CoreEntityCrudTools
         this.factions = factions;
         this.corponations = corponations;
         this.dbFactory = dbFactory;
+        this.entityOrigin = entityOrigin;
         this.hub = hub;
     }
 
@@ -77,7 +80,7 @@ public class CoreEntityCrudTools
         });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public string CreateCharacterImpl(
+    public async Task<string> CreateCharacterImpl(
         string name,
         string role = "",
         string description = "",
@@ -213,9 +216,9 @@ public class CoreEntityCrudTools
 
         if (isNewCharacter && resolvedOrigin.HasValue && Guid.TryParse(c.Id, out var newId))
         {
-            using var wdb = dbFactory.CreateDbContext();
-            var row = wdb.Entities.FirstOrDefault(e => e.Id == newId);
-            if (row != null) { row.OriginNodeId = resolvedOrigin; wdb.SaveChanges(); }
+            // Write-gate Phase 2 (2026-08-22): was a raw OriginNodeId write, one of 4 independent
+            // sites setting this column with no shared validation — now the one sanctioned path.
+            await entityOrigin.SetEntityOriginAsync(newId, resolvedOrigin);
         }
 
         return JsonSerializer.Serialize(
@@ -234,28 +237,28 @@ public class CoreEntityCrudTools
         hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(SetEntityOriginImpl), new { id, originNodeSlug });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public string SetEntityOriginImpl(string id, string originNodeSlug = "")
+    public async Task<string> SetEntityOriginImpl(string id, string originNodeSlug = "")
     {
         if (!Guid.TryParse(id, out var entityId))
             return JsonSerializer.Serialize(new { ok = false, error = "invalid_id" }, CanonTools.JsonOpts);
 
-        using var db = dbFactory.CreateDbContext();
-        var entity = db.Entities.FirstOrDefault(e => e.Id == entityId);
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var entity = await db.Entities.FirstOrDefaultAsync(e => e.Id == entityId);
         if (entity == null)
             return JsonSerializer.Serialize(new { ok = false, error = "entity_not_found" }, CanonTools.JsonOpts);
 
         Guid? resolved = null;
         if (!string.IsNullOrWhiteSpace(originNodeSlug))
         {
-            resolved = db.Nodes.AsNoTracking()
+            resolved = await db.Nodes.AsNoTracking()
                 .Where(n => n.Slug == originNodeSlug || n.NodeCode == originNodeSlug)
-                .Select(n => (Guid?)n.Id).FirstOrDefault();
+                .Select(n => (Guid?)n.Id).FirstOrDefaultAsync();
             if (resolved == null)
                 return JsonSerializer.Serialize(new { ok = false, error = "node_not_found", originNodeSlug }, CanonTools.JsonOpts);
         }
 
-        entity.OriginNodeId = resolved;
-        db.SaveChanges();
+        // Write-gate Phase 2 (2026-08-22): the sanctioned OriginNodeId write path.
+        await entityOrigin.SetEntityOriginAsync(entityId, resolved);
         return JsonSerializer.Serialize(new { ok = true, id, entityName = entity.Name, originNodeId = resolved }, CanonTools.JsonOpts);
     }
 

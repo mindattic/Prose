@@ -90,7 +90,7 @@ public class BeatGeneratorService
         var plantBlock = "";
         if (plantPayoffs != null && context.NodeId != Guid.Empty)
         {
-            try { plantBlock = await plantPayoffs.BuildPlantContextAsync(context.NodeId, ct); }
+            try { plantBlock = await plantPayoffs.BuildPlantContextAsync(context.NodeId, context.BeatIndex, context.TotalBeats, ct); }
             catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
         }
 
@@ -125,6 +125,12 @@ public class BeatGeneratorService
             : "";
         var readabilityBlock = !string.IsNullOrWhiteSpace(context.ReadabilityGuidanceContext)
             ? $"\n\n{context.ReadabilityGuidanceContext}"
+            : "";
+        var readerProxyBlock = !string.IsNullOrWhiteSpace(context.ReaderProxyGuidanceContext)
+            ? $"\n\n{context.ReaderProxyGuidanceContext}"
+            : "";
+        var continuityViolationBlock = !string.IsNullOrWhiteSpace(context.ContinuityViolationGuidanceContext)
+            ? $"\n\n{context.ContinuityViolationGuidanceContext}"
             : "";
         var tensionBlock = !string.IsNullOrWhiteSpace(context.TensionGuidanceContext)
             ? $"\n\n{context.TensionGuidanceContext}"
@@ -198,7 +204,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{readabilityBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{readabilityBlock}{readerProxyBlock}{continuityViolationBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -957,6 +963,17 @@ public record BeatContext
     /// the clarity floor, write shorter and plainer." Empty when no recent outliers exist.</summary>
     public string ReadabilityGuidanceContext { get; init; } = "";
 
+    /// <summary>Reader-Proxy QA guidance (docs/READER-QA.md) — prior ComprehensionDefect,
+    /// CraftChecklist, and ReaderGripe findings, same "prior findings become future generation
+    /// constraints" pattern as EmotionalGuidanceContext/ReadabilityGuidanceContext. Empty when
+    /// no recent findings exist in any of the three categories.</summary>
+    public string ReaderProxyGuidanceContext { get; init; } = "";
+
+    /// <summary>Prior CONTINUITY-VIOLATION findings (filed by ContinuityEnforcer after a beat
+    /// contradicted established canon) formatted as forward guidance. Same pattern as
+    /// EmotionalGuidanceContext/ReadabilityGuidanceContext/ReaderProxyGuidanceContext.</summary>
+    public string ContinuityViolationGuidanceContext { get; init; } = "";
+
     /// <summary>Tension escalation note from TensionEscalationService.
     /// Non-empty when the last N beats have been at low intensity and the reader needs the stakes raised.</summary>
     public string TensionGuidanceContext { get; init; } = "";
@@ -1058,6 +1075,15 @@ public record BeatContext
     /// works). Raises the generation maxTokens accordingly.
     /// </summary>
     public int TargetWords { get; init; } = 0;
+
+    /// <summary>Zero-based position of this beat within its node, when known. Set by
+    /// ProseWriterRouter (which receives it as a WriteAsync parameter) so PlantPayoffService can
+    /// escalate urgency for unpaid plants near the end of the book. 0 for legacy direct
+    /// BeatGeneratorService callers — matches their pre-existing behavior exactly (no escalation).</summary>
+    public int BeatIndex { get; init; } = 0;
+
+    /// <summary>Total beats in this node, when known. See <see cref="BeatIndex"/>.</summary>
+    public int TotalBeats { get; init; } = 0;
 
     /// <summary>
     /// Mandatory self-repair constraints injected at the top of the dynamic system prompt.

@@ -114,9 +114,18 @@ public class CodexCliService : ILlmService
         return null;
     }
 
+    // A hung `codex` process (network stall, interactive prompt it can't answer headlessly)
+    // previously blocked forever — callers typically pass CancellationToken.None, and there
+    // was no internal cap, so LlmRouter's fallback chain could never move past this provider.
+    private static readonly TimeSpan ProcessTimeout = TimeSpan.FromMinutes(10);
+
     private async Task<(int ExitCode, string Stdout, string Stderr)> RunAsync(
         IReadOnlyList<string> args, string? stdinPayload, CancellationToken ct)
     {
+        using var timeoutCts = new CancellationTokenSource(ProcessTimeout);
+        using var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(ct, timeoutCts.Token);
+        ct = linkedCts.Token;
+
         var psi = new ProcessStartInfo
         {
             UseShellExecute = false,

@@ -9,7 +9,8 @@
       "Bash(python3 -c \"import json; data = json.load\\(open\\(''/d/Projects/MindAttic/Prose/engine_data/weaponry.json''\\)\\); print\\(''Total entries:'', len\\(data\\)\\); print\\(''Keys:'', list\\(data[0].keys\\(\\)\\) if isinstance\\(data, list\\) else list\\(data.keys\\(\\)\\)\\)\")",
       "Bash(ls -lh /d/Projects/MindAttic/Prose/engine_data/*.json)",
       "Bash(sqlcmd -S \"\\(localdb\\)\\\\MSSQLLocalDB\" -d Prose -y0 -Q \"SELECT NodeBible FROM Nodes WHERE NodeCode='VIGL'\")",
-      "Bash(grep -n -B2 -A2 \"Averlyne\" /tmp_vigl_bible.txt)"
+      "Bash(grep -n -B2 -A2 \"Averlyne\" /tmp_vigl_bible.txt)",
+      "Bash(xargs grep -l \"SaveChangesAsync\\\\|ExecuteDeleteAsync\\\\|ExecuteUpdateAsync\")"
     ]
   }
 }

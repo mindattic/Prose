@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
+using Prose.Core.Services;
 
 namespace Prose.Cli;
 
@@ -8,6 +9,10 @@ namespace Prose.Cli;
 /// — sets ParentNodeId on an existing node.
 /// Use --clear to detach from any parent.
 /// Use --sort-key N to set the node's SortKey (can combine with parent change or use standalone).
+///
+/// Write-gate Phase 2 (2026-08-22): the actual write is now
+/// <see cref="NodeWorkbenchService.ReparentNodeAsync"/> — node resolution (slug/id/prefix lookup)
+/// stays here since it's the same read-only logic the other reparent-adjacent CLIs already use.
 /// </summary>
 public static class ReparentNodeCli
 {
@@ -41,6 +46,7 @@ public static class ReparentNodeCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
         var childQ = db.Nodes.AsQueryable();
@@ -55,20 +61,16 @@ public static class ReparentNodeCli
 
         if (clear)
         {
-            child.ParentNodeId = null;
-            if (sortKey.HasValue) child.SortKey = sortKey.Value;
-            child.UpdatedAt = DateTime.UtcNow;
-            await db.SaveChangesAsync();
+            await workbench.ReparentNodeAsync(child.Id, null, sortKey);
             Console.WriteLine($"[reparent-node] \"{child.Title}\" detached from parent." + (sortKey.HasValue ? $" SortKey={sortKey}" : ""));
             return 0;
         }
 
-        // Sort-key-only update (no parent change needed).
+        // Sort-key-only update (no parent change needed) — pass the node's own current
+        // ParentNodeId back in so ReparentNodeAsync's write is a true no-op on that field.
         if (sortKey.HasValue && string.IsNullOrWhiteSpace(parentId) && string.IsNullOrWhiteSpace(parentSlug))
         {
-            child.SortKey = sortKey.Value;
-            child.UpdatedAt = DateTime.UtcNow;
-            await db.SaveChangesAsync();
+            await workbench.ReparentNodeAsync(child.Id, child.ParentNodeId, sortKey);
             Console.WriteLine($"[reparent-node] \"{child.Title}\" SortKey={sortKey}.");
             return 0;
         }
@@ -84,10 +86,7 @@ public static class ReparentNodeCli
         if (parent == null) { Console.Error.WriteLine("[reparent-node] Parent node not found."); return 1; }
         if (parent.Id == child.Id) { Console.Error.WriteLine("[reparent-node] A node cannot be its own parent."); return 1; }
 
-        child.ParentNodeId = parent.Id;
-        if (sortKey.HasValue) child.SortKey = sortKey.Value;
-        child.UpdatedAt = DateTime.UtcNow;
-        await db.SaveChangesAsync();
+        await workbench.ReparentNodeAsync(child.Id, parent.Id, sortKey);
         Console.WriteLine($"[reparent-node] \"{child.Title}\" → parent \"{parent.Title}\"." + (sortKey.HasValue ? $" SortKey={sortKey}" : ""));
         return 0;
     }

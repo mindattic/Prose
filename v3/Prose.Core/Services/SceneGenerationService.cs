@@ -80,7 +80,7 @@ public class SceneGenerationService
         var ambientContext = contextBuilder.BuildAmbientContext(request.Location);
 
         // Build character state constraints (injuries, status, possessions)
-        var characterConstraints = consequences.BuildConstraints(request.Characters);
+        var characterConstraints = await consequences.BuildConstraintsAsync(request.Characters, storyTime: null, ct);
 
         // Pre-write contradiction check — runs once per scene, output is a constraint
         // block injected into every beat prompt below. Blockers do not throw; the LLM

@@ -15,7 +15,11 @@ namespace Prose.Cli;
 /// </summary>
 public static class HubCliClient
 {
-    private static readonly HttpClient Http = new() { BaseAddress = new Uri(Prose.Core.Services.HubGate.DefaultBaseUrl) };
+    // The default HttpClient.Timeout (100s) is shorter than several forwarded commands
+    // (full-battery audits, --write-story, review panels) — any of those would previously
+    // throw an unhandled TaskCanceledException and crash this CLI process instead of
+    // reporting a clean error. Long-running-by-design, so this is generous rather than tuned.
+    private static readonly HttpClient Http = new() { BaseAddress = new Uri(Prose.Core.Services.HubGate.DefaultBaseUrl), Timeout = TimeSpan.FromMinutes(30) };
 
     /// <param name="method">Override the entry-point method name for handlers that don't use
     /// the ~150-command common convention (RunAsync/Run) - e.g. GlossaryCli.RunBookAsync,
@@ -44,6 +48,11 @@ public static class HubCliClient
         catch (HttpRequestException ex)
         {
             Console.Error.WriteLine($"[hub] Prose Hub is not reachable — {ex.Message}");
+            return 1;
+        }
+        catch (TaskCanceledException)
+        {
+            Console.Error.WriteLine($"[hub] Command timed out after {Http.Timeout} waiting on the Hub — it may still be running there.");
             return 1;
         }
 
@@ -130,6 +139,11 @@ public static class HubCliClient
         catch (HttpRequestException ex)
         {
             Console.Error.WriteLine($"[hub] Prose Hub is not reachable — {ex.Message}");
+            return null;
+        }
+        catch (TaskCanceledException)
+        {
+            Console.Error.WriteLine($"[hub] Command timed out after {Http.Timeout} waiting on the Hub — it may still be running there.");
             return null;
         }
 

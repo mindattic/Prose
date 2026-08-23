@@ -54,6 +54,19 @@ public static class CliDispatch
     // graph query anyway - throughput isn't the concern here, correctness is.
     private static readonly SemaphoreSlim ConsoleGate = new(1, 1);
 
+    // Handler-class lookup is cacheable: the Hub's loaded assemblies never change after
+    // startup, so re-running AppDomain.CurrentDomain.GetAssemblies().SelectMany(GetTypes())
+    // on every single one of the ~150 CLI commands (now the hot path for all Prose command
+    // execution, post-migration) was a real, avoidable per-call cost. Keyed by simple name,
+    // same lookup shape the uncached version used.
+    private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, Type?> HandlerTypeCache = new();
+
+    private static Type? ResolveHandlerType(string handlerClass) =>
+        HandlerTypeCache.GetOrAdd(handlerClass, static name =>
+            AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(a => { try { return a.GetTypes(); } catch { return []; } })
+                .FirstOrDefault(t => t.Name == name && t.Namespace == "Prose.Cli"));
+
     public static async Task<IResult> InvokeAsync(InvokeRequest req, IServiceProvider sp)
     {
         var outcome = await ExecuteCoreAsync(req, sp);
@@ -74,9 +87,19 @@ public static class CliDispatch
     // by that caller instead (it wraps this same method, see CostGateDispatch.cs).
     public static async Task<ExecuteOutcome> ExecuteCoreAsync(InvokeRequest req, IServiceProvider sp, string source = "cli")
     {
+        var label = req.HandlerClass + (string.IsNullOrWhiteSpace(req.Method) ? "" : $".{req.Method}");
+        HubConsoleEcho.LogIn(source, label, string.Join(' ', req.Args));
+
         var sw = Stopwatch.StartNew();
         var outcome = await ExecuteCoreInnerAsync(req, sp);
         sw.Stop();
+
+        HubConsoleEcho.LogOut(source, label,
+            success: outcome.ErrorCode == null && outcome.Response?.ExitCode == 0,
+            outputChars: outcome.Response?.Output.Length ?? 0,
+            elapsedMs: sw.Elapsed.TotalMilliseconds,
+            error: outcome.ErrorCode ?? outcome.Response?.Error);
+
         await WriteLedgerEntryAsync(req, sp, source, outcome, sw.Elapsed.TotalMilliseconds);
         return outcome;
     }
@@ -114,9 +137,7 @@ public static class CliDispatch
 
     private static async Task<ExecuteOutcome> ExecuteCoreInnerAsync(InvokeRequest req, IServiceProvider sp)
     {
-        var type = AppDomain.CurrentDomain.GetAssemblies()
-            .SelectMany(a => { try { return a.GetTypes(); } catch { return []; } })
-            .FirstOrDefault(t => t.Name == req.HandlerClass && t.Namespace == "Prose.Cli");
+        var type = ResolveHandlerType(req.HandlerClass);
         if (type == null)
             return new ExecuteOutcome("unknown_handler_class", new { error = "unknown_handler_class", req.HandlerClass }, null);
 

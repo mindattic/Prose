@@ -94,6 +94,27 @@ public class WorldStateAtBeatService
                 .FirstOrDefaultAsync(ct);
         }
 
+        // 2026-08-22 fix: EntityStateEvents are only extracted post-hoc, AFTER a chapter's prose
+        // is already written (BeatStateExtractor.OnChapterSaved) — so during ordinary FORWARD
+        // drafting, the beat about to be generated has no events of its own yet, and the query
+        // above always returned null. This "Always"-documented service was therefore silently a
+        // no-op for the primary use case (drafting a new beat), only ever populating when
+        // REGENERATING an already-extracted beat. Fall back to the single most recent known
+        // story-time fact across the whole universe (optionally entity-scoped below) — the best
+        // available proxy for "where is the story clock right now" once at least one earlier
+        // beat's events have been extracted, which covers every beat past the first chapter.
+        if (effectiveTime == null)
+        {
+            var fallbackQ = db.EntityStateEvents.AsNoTracking().Where(e => e.BeatGuid != beatId);
+            var scopeIdsForFallback = entityIds?.ToHashSet();
+            if (scopeIdsForFallback is { Count: > 0 })
+                fallbackQ = fallbackQ.Where(e => scopeIdsForFallback.Contains(e.EntityId));
+            effectiveTime = await fallbackQ
+                .OrderByDescending(e => e.AtStoryTime)
+                .Select(e => (DateTime?)e.AtStoryTime)
+                .FirstOrDefaultAsync(ct);
+        }
+
         var snapshot = new WorldStateSnapshot { BeatId = beatId, StoryTime = effectiveTime };
         if (effectiveTime == null) return snapshot;
 

@@ -79,7 +79,10 @@ builder.Services.AddProseServices();
 // holding the resident graph/DCM state. Used by HubTools for graph mutations (link_entities)
 // and snapshots that should reflect the Hub's single shared copy rather than this process's
 // own in-memory UniverseGraphService instance.
-builder.Services.AddHttpClient("ProseHub", c => c.BaseAddress = new Uri("http://127.0.0.1:5900/"));
+// Timeout override: the default HttpClient.Timeout (100s) is shorter than several Hub-forwarded
+// tools (full-battery audits, review panels) — an unhandled TaskCanceledException would
+// otherwise surface as an opaque tool failure instead of a clean "still running" message.
+builder.Services.AddHttpClient("ProseHub", c => { c.BaseAddress = new Uri("http://127.0.0.1:5900/"); c.Timeout = TimeSpan.FromMinutes(30); });
 builder.Services.AddSingleton<HubInvoker>();
 
 // MCP server with stdio transport. WithToolsFromAssembly scans this assembly

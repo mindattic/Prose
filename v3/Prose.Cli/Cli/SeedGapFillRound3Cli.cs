@@ -136,13 +136,12 @@ public static class SeedGapFillRound3Cli
         SetOrigin(services, data.Id, f.Book);
     }
 
+    // Write-gate Phase 2 (2026-08-22): routed through EntityOriginService.SetEntityOriginAsync —
+    // see SeedGapFillRound2Cli.SetOrigin's doc comment for why this stays a sync wrapper.
     private static void SetOrigin(IServiceProvider services, string entityIdStr, Guid bookNodeId)
     {
         if (!Guid.TryParse(entityIdStr, out var entityId)) return;
-        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        using var db = dbFactory.CreateDbContext();
-        var row = db.Entities.FirstOrDefault(e => e.Id == entityId);
-        if (row != null) { row.OriginNodeId = bookNodeId; db.SaveChanges(); }
+        services.GetRequiredService<EntityOriginService>().SetEntityOriginAsync(entityId, bookNodeId).GetAwaiter().GetResult();
     }
 
     private static string? ArgValue(string[] args, string name)

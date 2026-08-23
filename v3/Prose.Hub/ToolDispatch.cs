@@ -29,14 +29,31 @@ public static class ToolDispatch
 
     private static readonly JsonSerializerOptions JsonOpts = new(JsonSerializerDefaults.Web);
 
+    // Same fix as CliDispatch.HandlerTypeCache: the Hub's loaded assemblies are fixed after
+    // startup, so re-scanning them on every one of the ~319 MCP tool calls was an avoidable
+    // per-call cost on what is now the hot path for all Prose tool execution.
+    private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, Type?> ToolTypeCache = new();
+
+    private static Type? ResolveToolType(string toolClass) =>
+        ToolTypeCache.GetOrAdd(toolClass, static name =>
+            AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(a => { try { return a.GetTypes(); } catch { return []; } })
+                .FirstOrDefault(t => t.Name == name && t.Namespace == "Prose.Mcp"));
+
     // Command Ledger (Part A of the observability plan, 2026-08-20): every MCP tool call this
     // dispatcher runs becomes a permanent, best-effort DB row, same posture as CliDispatch's
     // "cli" source - see CliDispatch.WriteLedgerEntryAsync for the shared rationale.
     public static async Task<IResult> InvokeAsync(InvokeRequest req, IServiceProvider sp)
     {
+        var label = req.ToolClass + "." + req.Method;
+        HubConsoleEcho.LogIn("mcp", label, req.Args?.GetRawText() ?? "{}");
+
         var sw = Stopwatch.StartNew();
         var (result, success, output, error) = await InvokeCoreAsync(req, sp);
         sw.Stop();
+
+        HubConsoleEcho.LogOut("mcp", label, success, output?.Length ?? 0, sw.Elapsed.TotalMilliseconds, error);
+
         await WriteLedgerEntryAsync(req, sp, success, output, error, sw.Elapsed.TotalMilliseconds);
         return result;
     }
@@ -70,9 +87,7 @@ public static class ToolDispatch
     {
         // Tool classes live in Prose.Mcp.dll (referenced project); search loaded assemblies by
         // simple name so callers don't need to know the fully-qualified namespace.
-        var type = AppDomain.CurrentDomain.GetAssemblies()
-            .SelectMany(a => { try { return a.GetTypes(); } catch { return []; } })
-            .FirstOrDefault(t => t.Name == req.ToolClass && t.Namespace == "Prose.Mcp");
+        var type = ResolveToolType(req.ToolClass);
         if (type == null)
             return (Results.NotFound(new { error = "unknown_tool_class", req.ToolClass }), false, null, "unknown_tool_class");
 

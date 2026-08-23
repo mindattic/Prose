@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
+using Prose.Core.Data.Entities;
 
 namespace Prose.Core.Services;
 
@@ -181,6 +182,32 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
             allCharacters = allCharacters.Union(mentioned, StringComparer.OrdinalIgnoreCase).ToList();
         }
 
+        // 2026-08-22 fix: InferOffscreenActivity already accepts a per-character
+        // offscreenLibrary to ground its output in something specific and real, but the only
+        // call site (below) always passed a brand-new EMPTY dictionary — so the "grounded"
+        // path never fired and every offscreen line was the same generic arc-stage boilerplate
+        // for any character at that position, regardless of who they actually are. Built once
+        // here (not per-beat) from each character's own documented core_desires — the closest
+        // existing "what do they actually want" signal already used elsewhere (SceneContextAssembler).
+        var offscreenLibrary = await BuildOffscreenLibraryAsync(db, allCharacters, ct);
+
+        // 2026-08-22 fix (reconciliation half): without this, a dead/missing character still
+        // got the same agenda-driven "maneuvering" boilerplate as anyone else — a direct
+        // contradiction of Character.LifeStatus, which ConsequenceService/ContinuityService both
+        // already treat as a hard "do not write this character as active" constraint elsewhere
+        // in the pipeline (LifeStatus, not Entity.Status — a different column on a different
+        // table; Entity.Status is entity lifecycle (canon/archived), unrelated to in-world
+        // alive/dead/missing). Cheap to check (one query, no LLM) and prevents the most obvious
+        // cross-service disagreement this service could introduce.
+        var inactiveNames = (await (
+                from e in db.Entities.AsNoTracking()
+                join c in db.Set<Character>().AsNoTracking() on e.Id equals c.Id
+                where e.EntityType == "character" && allCharacters.Contains(e.Name)
+                   && !string.IsNullOrEmpty(c.LifeStatus) && c.LifeStatus != "alive"
+                select e.Name)
+            .ToListAsync(ct))
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
         // Build chart events and cross-sections
         var chartEvents = new List<ChartEvent>();
         var crossSections = new List<BeatCrossSection>();
@@ -211,7 +238,9 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
 
             for (var t = 0; t < offscreenList.Count; t++)
             {
-                var activity = InferOffscreenActivity(offscreenList[t], beatGoal, i, beatRows.Count, new Dictionary<string, string[]>());
+                var activity = inactiveNames.Contains(offscreenList[t])
+                    ? $"{offscreenList[t]} is not active in the story right now (status: not alive) — do not write them taking any action."
+                    : InferOffscreenActivity(offscreenList[t], beatGoal, i, beatRows.Count, offscreenLibrary);
                 presences.Add(new CharacterPresence(offscreenList[t], false, "", activity, onscreenList.Count + t));
             }
 
@@ -230,6 +259,44 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
             crossSections,
             allCharacters,
             chartEvents);
+    }
+
+    /// <summary>
+    /// Grounds offscreen activity in each character's own documented core_desires
+    /// (CharacterPsychologyTraits) instead of generic arc-stage template text. Returns one to
+    /// three short, specific activity lines per character with matching psychology data;
+    /// characters with none simply fall back to InferOffscreenActivity's generic branch, same
+    /// as before this fix — this only adds grounding where real data exists, never removes the
+    /// fallback.
+    /// </summary>
+    private static async Task<Dictionary<string, string[]>> BuildOffscreenLibraryAsync(
+        ProseDbContext db, List<string> allCharacters, CancellationToken ct)
+    {
+        var library = new Dictionary<string, string[]>(StringComparer.OrdinalIgnoreCase);
+        if (allCharacters.Count == 0) return library;
+
+        var entities = await db.Entities.AsNoTracking()
+            .Where(e => e.EntityType == "character" && allCharacters.Contains(e.Name))
+            .Select(e => new { e.Id, e.Name })
+            .ToListAsync(ct);
+        if (entities.Count == 0) return library;
+
+        var idsByName = entities.ToDictionary(e => e.Name, e => e.Id, StringComparer.OrdinalIgnoreCase);
+        var entityIds = entities.Select(e => e.Id).ToList();
+
+        var traits = await db.Set<CharacterPsychologyTrait>().AsNoTracking()
+            .Where(t => entityIds.Contains(t.CharacterId) && t.Bucket == "core_desires")
+            .OrderBy(t => t.Position)
+            .ToListAsync(ct);
+
+        foreach (var (name, id) in idsByName)
+        {
+            var desires = traits.Where(t => t.CharacterId == id && !string.IsNullOrWhiteSpace(t.Trait))
+                .Select(t => t.Trait).Take(3).ToArray();
+            if (desires.Length > 0)
+                library[name] = desires.Select(d => $"{name}, driven by wanting {d.ToLowerInvariant()}, is pursuing it in ways that haven't surfaced onscreen yet.").ToArray();
+        }
+        return library;
     }
 
     // ── Offscreen activity inference ──────────────────────────────────────────

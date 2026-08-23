@@ -1,14 +1,22 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
+using Prose.Core.Services;
 
 namespace Prose.Cli;
 
 /// <summary>
 /// <c>prose --clone-book (--id &lt;guid&gt; | --slug &lt;slug&gt;) [--title "New Title"] [--book-code "SM1"] [--draft] [--status &lt;status&gt;]</c>
 /// — deep-clone a node: creates a new Node row plus independent copies of every
-/// enabled beat (new IDs, new Numbers). Audio, scores, and review history are NOT
+/// beat in its full subtree (new IDs, new Numbers). Audio, scores, and review history are NOT
 /// cloned — the clone starts fresh so review scores are independent.
+///
+/// Write-gate Phase 1 (2026-08-22): this used to hand-roll its own raw write, cloning ONLY the
+/// beats directly attached to the source node itself — a silent no-op for any book with chapters
+/// (per the Book→Chapter→Beat hierarchy, a book's beats normally live on its ChapterNode children,
+/// not the book node), since a real multi-chapter book has no directly-attached beats to copy. Now
+/// a thin wrapper around <see cref="NodeWorkbenchService.DuplicateNodeAsync"/>, which recurses the
+/// whole subtree — the same fix already applied to the near-identical MCP <c>CloneBookImpl</c>.
 /// </summary>
 public static class CloneNodeCli
 {
@@ -40,23 +48,22 @@ public static class CloneNodeCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        await using var db = await dbFactory.CreateDbContextAsync();
-        await using var tx = await db.Database.BeginTransactionAsync(
-            System.Data.IsolationLevel.Serializable);
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
 
-        // ── Resolve source node ─────────────────────────────────────────────
         Node? source;
-        if (!string.IsNullOrWhiteSpace(slug))
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
-        else if (Guid.TryParse(id, out var g))
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
-        else
-            source = await db.Nodes.AsNoTracking()
-                .Where(s => s.Id.ToString().StartsWith(id!.ToLower()))
-                .Take(2).ToListAsync() switch
-                { { Count: 1 } m => m[0], _ => null };
+            if (!string.IsNullOrWhiteSpace(slug))
+                source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+            else if (Guid.TryParse(id, out var g))
+                source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
+            else
+                source = await db.Nodes.AsNoTracking()
+                    .Where(s => s.Id.ToString().StartsWith(id!.ToLower()))
+                    .Take(2).ToListAsync() switch
+                    { { Count: 1 } m => m[0], _ => null };
+        }
 
         if (source == null)
         {
@@ -64,125 +71,21 @@ public static class CloneNodeCli
             return 1;
         }
 
-        // ── Validate node-code uniqueness ───────────────────────────────────
-        var code = string.IsNullOrWhiteSpace(nodeCode) ? null : nodeCode.Trim().ToUpperInvariant();
-        if (code != null)
+        var newTitle = string.IsNullOrWhiteSpace(title) ? $"{source.Title} (Clone)" : title.Trim();
+        Console.WriteLine($"[clone-book] Source: '{source.Title}' ({source.Slug})");
+
+        try
         {
-            var clash = await db.Nodes.AsNoTracking()
-                .FirstOrDefaultAsync(s => s.NodeCode == code);
-            if (clash != null)
-            {
-                Console.Error.WriteLine(
-                    $"[clone-book] NodeCode '{code}' is already in use by '{clash.Title}' ({clash.Slug}).");
-                return 1;
-            }
+            var (newId, newSlug) = await workbench.DuplicateNodeAsync(source.Id, newTitle, nodeCode, status);
+            Console.WriteLine($"[clone-book] Created '{newTitle}'");
+            Console.WriteLine($"[clone-book] id:   {newId}");
+            Console.WriteLine($"[clone-book] slug: {newSlug}");
+            return 0;
         }
-
-        // ── Load enabled beats in SortKey order ───────────────────────────────
-        var sourceBeats = await db.BeatNodes
-            .AsNoTracking()
-            .Where(sb => sb.NodeId == source.Id && true)
-            .OrderBy(sb => sb.SortKey)
-            .Join(db.Beats.AsNoTracking(), sb => sb.BeatId, b => b.Id,
-                  (sb, b) => new { sb.SortKey, Beat = b })
-            .ToListAsync();
-
-        Console.WriteLine($"[clone-book] Source: '{source.Title}' ({source.Slug}) — {sourceBeats.Count} beat(s)");
-
-        // ── Determine new title and slug ──────────────────────────────────────
-        var newTitle = string.IsNullOrWhiteSpace(title)
-            ? $"{source.Title} (Clone)"
-            : title.Trim();
-        var newId   = Guid.CreateVersion7();
-        var newSlug = $"{Slugify(newTitle)}-{newId.ToString("N")[..8]}";
-
-        // ── Sort key: append after all siblings at the same parent level ──────
-        var maxSort = await db.Nodes
-            .Where(s => s.ParentNodeId == source.ParentNodeId)
-            .Select(s => (double?)s.SortKey)
-            .MaxAsync() ?? 0;
-
-        var now = DateTime.UtcNow;
-
-        // ── Insert new Node (same concrete type as the source) ──────────────
-        var newNode = NodeFactory.CreateLike(source);
-        newNode.Id              = newId;
-        newNode.Slug            = newSlug;
-        newNode.Title           = newTitle;
-        newNode.ParentNodeId    = source.ParentNodeId;
-        newNode.NodeCode        = code;
-        newNode.Kind            = source.Kind;
-        newNode.Status          = status;
-        newNode.Description     = source.Description;
-        newNode.Seed            = source.Seed;
-        newNode.UniverseId      = source.UniverseId;
-        newNode.VoiceId         = source.VoiceId;
-        newNode.VoiceModel      = source.VoiceModel;
-        newNode.VoiceStability  = source.VoiceStability;
-        newNode.VoiceSimilarity = source.VoiceSimilarity;
-        newNode.VoiceStyle      = source.VoiceStyle;
-        newNode.VoiceSeed       = source.VoiceSeed;
-        newNode.TtsEngine       = source.TtsEngine;
-        newNode.SortKey         = maxSort + 100.0;
-        newNode.CreatedAt       = now;
-        newNode.UpdatedAt       = now;
-        db.Nodes.Add(newNode);
-
-        // ── Clone beats ───────────────────────────────────────────────────────
-        var beatMax = await db.Beats.MaxAsync(b => (int?)b.Number) ?? 0;
-        int nextNum = beatMax + 1;
-
-        foreach (var entry in sourceBeats)
+        catch (Exception ex)
         {
-            var src  = entry.Beat;
-            var beatId = Guid.CreateVersion7();
-            var cloned = new Beat
-            {
-                Id              = beatId,
-                Number          = nextNum++,
-                Text            = src.Text,
-                Title           = src.Title,
-                Description     = src.Description,
-                StructureRole   = src.StructureRole,
-                Act             = src.Act,
-                SceneType       = src.SceneType,
-                EmotionalTone   = src.EmotionalTone,
-                PaceHint        = src.PaceHint,
-                Kind            = src.Kind,
-                IsChapterStart  = src.IsChapterStart,
-                GapAfterMs      = src.GapAfterMs,
-                GapAfterAudioPath = src.GapAfterAudioPath,
-                Stale           = false,
-                EntityStale     = false,
-                WasCorrected    = false,
-                Version         = 0,
-                CreatedAt       = now,
-                UpdatedAt       = now,
-            };
-            db.Beats.Add(cloned);
-
-            db.BeatNodes.Add(new BeatNode
-            {
-                NodeId  = newId,
-                BeatId    = beatId,
-                SortKey   = entry.SortKey,
-            });
+            Console.Error.WriteLine($"[clone-book] Failed: {ex.Message}");
+            return 1;
         }
-
-        await db.SaveChangesAsync();
-        await tx.CommitAsync();
-
-        Console.WriteLine($"[clone-book] Created '{newTitle}' — {sourceBeats.Count} beat(s) cloned");
-        Console.WriteLine($"[clone-book] id:   {newId}");
-        Console.WriteLine($"[clone-book] slug: {newSlug}");
-        return 0;
-    }
-
-    private static string Slugify(string s)
-    {
-        var clean = new string(s.ToLowerInvariant()
-            .Select(c => char.IsLetterOrDigit(c) ? c : '-').ToArray());
-        var parts = clean.Split('-').Where(p => p.Length > 0).Take(8);
-        return string.Join("-", parts);
     }
 }

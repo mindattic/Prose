@@ -322,14 +322,13 @@ public static class SeedGlmzGapFillCli
     }
 
     /// <summary>Stamps Entity.OriginNodeId so this book-local entity doesn't create a universe-wide
-    /// same-name/alias collision with an unrelated GLMZ entity elsewhere — see class doc comment.</summary>
+    /// same-name/alias collision with an unrelated GLMZ entity elsewhere — see class doc comment.
+    /// Write-gate Phase 2 (2026-08-22): routed through EntityOriginService.SetEntityOriginAsync —
+    /// see SeedGapFillRound2Cli.SetOrigin's doc comment for why this stays a sync wrapper.</summary>
     private static void SetOrigin(IServiceProvider services, string entityIdStr, Guid bookNodeId)
     {
         if (bookNodeId == Guid.Empty) return; // unscoped — shared universe-wide entity
         if (!Guid.TryParse(entityIdStr, out var entityId)) return;
-        var dbFactory = services.GetRequiredService<Microsoft.EntityFrameworkCore.IDbContextFactory<Prose.Core.Data.ProseDbContext>>();
-        using var db = dbFactory.CreateDbContext();
-        var row = db.Entities.FirstOrDefault(e => e.Id == entityId);
-        if (row != null) { row.OriginNodeId = bookNodeId; db.SaveChanges(); }
+        services.GetRequiredService<Prose.Core.Services.EntityOriginService>().SetEntityOriginAsync(entityId, bookNodeId).GetAwaiter().GetResult();
     }
 }

@@ -117,16 +117,18 @@ public static class PlantPayoffCli
                 planted              = audit.Planted,
                 paid_off             = audit.PaidOff,
                 orphaned             = audit.Orphaned,
+                unplanted            = audit.Unplanted,
                 not_transparent      = audit.NotTransparentCount,
-                gateway_plant_ready  = audit.Orphaned == 0 && audit.NotTransparentCount == 0,
+                gateway_plant_ready  = audit.Orphaned == 0 && audit.Unplanted == 0 && audit.NotTransparentCount == 0,
             }, new JsonSerializerOptions { WriteIndented = true }));
-            return audit.Orphaned > 0 || audit.NotTransparentCount > 0 ? 1 : 0;
+            return audit.Orphaned > 0 || audit.Unplanted > 0 || audit.NotTransparentCount > 0 ? 1 : 0;
         }
 
         Console.WriteLine($"Total pairs:   {audit.TotalPairs}");
         Console.WriteLine($"Seeded:        {audit.Planted}");
         Console.WriteLine($"Paid off:      {audit.PaidOff}");
         Console.WriteLine($"Orphaned:      {audit.Orphaned}");
+        Console.WriteLine($"Unplanted:     {audit.Unplanted}");
         Console.WriteLine($"Not transparent: {audit.NotTransparentCount}");
         Console.WriteLine();
 
@@ -134,6 +136,14 @@ public static class PlantPayoffCli
         {
             Console.WriteLine("ORPHANED (seeded, no payoff written):");
             foreach (var p in audit.OrphanedPlants)
+                Console.WriteLine($"  [{p.Category.ToUpper()}] {p.PlantDescription} → {p.PayoffDescription}");
+            Console.WriteLine();
+        }
+
+        if (audit.UnplantedPayoffs.Count > 0)
+        {
+            Console.WriteLine("UNPLANTED (payoff written, no plant beat on record — every payoff must have been planted):");
+            foreach (var p in audit.UnplantedPayoffs)
                 Console.WriteLine($"  [{p.Category.ToUpper()}] {p.PlantDescription} → {p.PayoffDescription}");
             Console.WriteLine();
         }
@@ -146,9 +156,9 @@ public static class PlantPayoffCli
             Console.WriteLine();
         }
 
-        if (audit.Orphaned == 0 && audit.NotTransparentCount == 0)
+        if (audit.Orphaned == 0 && audit.Unplanted == 0 && audit.NotTransparentCount == 0)
             Console.WriteLine("✅ All plants accounted for and transparent.");
 
-        return audit.Orphaned > 0 || audit.NotTransparentCount > 0 ? 1 : 0;
+        return audit.Orphaned > 0 || audit.Unplanted > 0 || audit.NotTransparentCount > 0 ? 1 : 0;
     }
 }

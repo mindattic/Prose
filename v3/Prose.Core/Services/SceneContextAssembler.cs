@@ -391,18 +391,19 @@ public class SceneContextAssembler(
         }
 
         // 3 — one-hop graph expansion from everything matched so far.
+        var graphEdges = new List<Edge>();
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             var ids = matched.Keys.ToList();
             if (ids.Count > 0)
             {
-                var edges = await db.Set<Edge>().AsNoTracking()
+                graphEdges = await db.Set<Edge>().AsNoTracking()
                     .Where(e => ids.Contains(e.SourceId) || ids.Contains(e.TargetId))
                     .OrderByDescending(e => e.Weight)
                     .Take(64)
                     .ToListAsync(ct);
 
-                var neighborIds = edges
+                var neighborIds = graphEdges
                     .SelectMany(e => new[] { e.SourceId, e.TargetId })
                     .Where(id => !matched.ContainsKey(id))
                     .Distinct()
@@ -417,16 +418,33 @@ public class SceneContextAssembler(
                     neighbors.RemoveAll(n => ExcludedTypes.Contains(n.EntityType));
                     foreach (var n in neighbors)
                     {
-                        var w = edges.Where(e => e.SourceId == n.Id || e.TargetId == n.Id).Max(e => e.Weight);
+                        var w = graphEdges.Where(e => e.SourceId == n.Id || e.TargetId == n.Id).Max(e => e.Weight);
                         matched.TryAdd(n.Id, new SceneEntityRef(n.Id, n.Name, n.EntityType, "graph", Math.Min(w, 1.0)));
                     }
                 }
             }
         }
 
+        // Edge SEMANTICS (RelationType/Description), not just membership: graphEdges was
+        // used above only to decide WHICH neighbor entities join the roster; without this,
+        // the LLM sees that two characters are both present but never learns HOW they're
+        // connected (married/rival/betrayed-by/wields/…). Restricted to edges whose both
+        // endpoints ended up on the final matched set, so a neighbor that got excluded
+        // (archived, structural type) never leaves a dangling reference.
+        var edgesByEntity = new Dictionary<Guid, List<(Guid OtherId, string RelationType, string? Description)>>();
+        foreach (var e in graphEdges)
+        {
+            if (!matched.ContainsKey(e.SourceId) || !matched.ContainsKey(e.TargetId)) continue;
+            if (!edgesByEntity.TryGetValue(e.SourceId, out var listA)) edgesByEntity[e.SourceId] = listA = new();
+            listA.Add((e.TargetId, e.RelationType, e.Description));
+            if (!edgesByEntity.TryGetValue(e.TargetId, out var listB)) edgesByEntity[e.TargetId] = listB = new();
+            listB.Add((e.SourceId, e.RelationType, e.Description));
+        }
+        var namesById = matched.Values.ToDictionary(r => r.EntityId, r => r.Name);
+
         // 4 — budget gate: rank, format, cap; then one recursive re-scan.
         var ranked = matched.Values.OrderByDescending(r => r.Score).ToList();
-        var (roster, block) = await FormatWithinBudgetAsync(ranked, tokenBudget, ct);
+        var (roster, block) = await FormatWithinBudgetAsync(ranked, tokenBudget, ct, edgesByEntity, namesById);
 
         var extra = ScanNames(block, index)
             .Where(h => roster.All(r => r.EntityId != h.EntityId))
@@ -436,7 +454,7 @@ public class SceneContextAssembler(
             var remaining = tokenBudget - block.Length / CharsPerToken;
             if (remaining > 100)
             {
-                var (roster2, block2) = await FormatWithinBudgetAsync(extra, remaining, ct);
+                var (roster2, block2) = await FormatWithinBudgetAsync(extra, remaining, ct, edgesByEntity, namesById);
                 roster = roster.Concat(roster2).ToList();
                 block += block2;
             }
@@ -571,8 +589,12 @@ public class SceneContextAssembler(
     // ── pass 4: per-type formatters + budget ───────────────────────────────────
 
     private async Task<(List<SceneEntityRef> roster, string block)> FormatWithinBudgetAsync(
-        IReadOnlyList<SceneEntityRef> ranked, int tokenBudget, CancellationToken ct)
+        IReadOnlyList<SceneEntityRef> ranked, int tokenBudget, CancellationToken ct,
+        Dictionary<Guid, List<(Guid OtherId, string RelationType, string? Description)>>? edgesByEntity = null,
+        Dictionary<Guid, string>? namesById = null)
     {
+        edgesByEntity ??= new();
+        namesById ??= new();
         var sb = new StringBuilder();
         var roster = new List<SceneEntityRef>();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -590,8 +612,8 @@ public class SceneContextAssembler(
                 continue;
             }
             var entry = r.EntityType.Equals("character", StringComparison.OrdinalIgnoreCase)
-                ? await FormatCharacterAsync(db, r, ct)
-                : await FormatGenericAsync(db, r, ct);
+                ? await FormatCharacterAsync(db, r, ct, edgesByEntity, namesById)
+                : await FormatGenericAsync(db, r, ct, edgesByEntity, namesById);
             if (string.IsNullOrWhiteSpace(entry)) continue;
             if ((sb.Length + entry.Length) / CharsPerToken > tokenBudget && roster.Count > 0) break;
             sb.Append(entry);
@@ -600,7 +622,33 @@ public class SceneContextAssembler(
         return (roster, sb.ToString());
     }
 
-    private async Task<string> FormatCharacterAsync(ProseDbContext db, SceneEntityRef r, CancellationToken ct)
+    /// <summary>
+    /// Renders the edges connecting <paramref name="entityId"/> to other entities already on
+    /// this scene's roster — the actual RelationType/Description, not just co-presence. Without
+    /// this the LLM only learns that two entities are both "in scene," never why (married,
+    /// rival, wields, betrayed-by, …), even though the graph-expansion pass above already
+    /// queried that exact data to decide roster membership.
+    /// </summary>
+    private static void AppendRelationships(
+        StringBuilder sb, Guid entityId,
+        Dictionary<Guid, List<(Guid OtherId, string RelationType, string? Description)>> edgesByEntity,
+        Dictionary<Guid, string> namesById)
+    {
+        if (!edgesByEntity.TryGetValue(entityId, out var edges) || edges.Count == 0) return;
+        var lines = edges
+            .Where(e => namesById.ContainsKey(e.OtherId))
+            .Select(e => $"{e.RelationType} {namesById[e.OtherId]}" +
+                (string.IsNullOrWhiteSpace(e.Description) ? "" : $" — {Clip(e.Description, 80)}"))
+            .Take(5)
+            .ToList();
+        if (lines.Count > 0)
+            sb.AppendLine("RELATIONSHIPS: " + string.Join("; ", lines));
+    }
+
+    private async Task<string> FormatCharacterAsync(
+        ProseDbContext db, SceneEntityRef r, CancellationToken ct,
+        Dictionary<Guid, List<(Guid OtherId, string RelationType, string? Description)>> edgesByEntity,
+        Dictionary<Guid, string> namesById)
     {
         var c = await db.Set<Character>().AsNoTracking().FirstOrDefaultAsync(x => x.Id == r.EntityId, ct);
         var entity = await db.Set<Entity>().AsNoTracking()
@@ -610,6 +658,7 @@ public class SceneContextAssembler(
         sb.AppendLine($"## {r.Name}  (character, in scene via {r.MatchSource})");
         if (!string.IsNullOrWhiteSpace(entity?.Description)) sb.AppendLine(Clip(entity.Description, 400));
         if (!string.IsNullOrWhiteSpace(entity?.GrammarNote))  sb.AppendLine($"GRAMMAR: {entity.GrammarNote}");
+        AppendRelationships(sb, r.EntityId, edgesByEntity, namesById);
         if (c != null)
         {
             AppendField(sb, "VOICE — vocabulary", c.SpeechVocabulary);
@@ -745,7 +794,10 @@ public class SceneContextAssembler(
             sb.Append(block);
     }
 
-    private static async Task<string> FormatGenericAsync(ProseDbContext db, SceneEntityRef r, CancellationToken ct)
+    private static async Task<string> FormatGenericAsync(
+        ProseDbContext db, SceneEntityRef r, CancellationToken ct,
+        Dictionary<Guid, List<(Guid OtherId, string RelationType, string? Description)>> edgesByEntity,
+        Dictionary<Guid, string> namesById)
     {
         var entity = await db.Set<Entity>().AsNoTracking()
             .Where(e => e.Id == r.EntityId).FirstOrDefaultAsync(ct);
@@ -753,6 +805,7 @@ public class SceneContextAssembler(
         sb.AppendLine($"## {r.Name}  ({r.EntityType}, in scene via {r.MatchSource})");
         if (!string.IsNullOrWhiteSpace(entity?.Description)) sb.AppendLine(Clip(entity.Description, 500));
         if (!string.IsNullOrWhiteSpace(entity?.GrammarNote))  sb.AppendLine($"GRAMMAR: {entity.GrammarNote}");
+        AppendRelationships(sb, r.EntityId, edgesByEntity, namesById);
         sb.AppendLine();
         return sb.ToString();
     }

@@ -37,16 +37,31 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
             .ToListAsync(ct);
     }
 
-    public async Task<string> BuildPlantContextAsync(Guid nodeId, CancellationToken ct = default)
+    // 2026-08-22 fix: how close to the book's end an unpaid (seeded, no payoff beat yet) plant
+    // starts escalating from a neutral status line to an explicit "pay this off soon" warning.
+    private const int UrgencyWindowBeats = 5;
+
+    /// <param name="beatIndex">Zero-based position of the beat about to be written, when known.
+    /// 0 (default) with <paramref name="totalBeats"/> also 0 disables the urgency escalation —
+    /// matches every pre-existing caller (the coverage-telemetry call in ProseWriterRouter and
+    /// any legacy direct BeatGeneratorService caller) exactly, no behavior change for them.</param>
+    /// <param name="totalBeats">Total beats in the node this plant/payoff set is scoped to.</param>
+    public async Task<string> BuildPlantContextAsync(Guid nodeId, int beatIndex = 0, int totalBeats = 0, CancellationToken ct = default)
     {
         var plants = await GetByNodeAsync(nodeId, ct);
         if (plants.Count == 0) return "";
+
+        var beatsRemaining = totalBeats > 0 ? totalBeats - beatIndex : int.MaxValue;
+        var unpaidCount = plants.Count(p => p.PlantBeatId != null && p.PayoffBeatId == null);
 
         var sb = new System.Text.StringBuilder();
         sb.AppendLine();
         sb.AppendLine("[PLANTED DETAILS — reward re-reading without requiring it]");
         sb.AppendLine("These pairs are registered for this node. Every payoff beat must make");
         sb.AppendLine("complete sense to a cold reader; the plant makes it richer on re-read.");
+        if (unpaidCount > 0 && beatsRemaining <= UrgencyWindowBeats)
+            sb.AppendLine($"⚠ URGENT: {unpaidCount} seeded plant(s) below are still unpaid with only " +
+                $"~{beatsRemaining} beat(s) left in this book — pay one off in THIS beat if the scene allows it.");
         foreach (var p in plants)
         {
             var status = p.PayoffBeatId != null ? "paid off"
@@ -140,6 +155,12 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
 
         var orphaned     = all.Where(p => p.PlantBeatId != null && p.PayoffBeatId == null).ToList();
         var notTransparent = all.Where(p => !p.IsTransparent && p.PayoffBeatId != null).ToList();
+        // 2026-08-22 fix: docs/LOGIC.md's plant/payoff ledger dimension is documented as
+        // two-way ("every plant pays, every payoff was planted") but this audit previously only
+        // ever checked the first direction (Orphaned, above). A payoff beat can legitimately get
+        // linked (LinkPayoffBeatAsync) before its plant beat does — this catches that reverse
+        // case: a payoff written into prose with no plant beat on record yet.
+        var unplanted    = all.Where(p => p.PayoffBeatId != null && p.PlantBeatId == null).ToList();
         var paidOff      = all.Count(p => p.PayoffBeatId != null);
         var planted      = all.Count(p => p.PlantBeatId  != null);
 
@@ -150,9 +171,11 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
             Planted:              planted,
             PaidOff:              paidOff,
             Orphaned:             orphaned.Count,
+            Unplanted:            unplanted.Count,
             NotTransparentCount:  notTransparent.Count,
             AllPairs:             all,
             OrphanedPlants:       orphaned,
+            UnplantedPayoffs:     unplanted,
             NotTransparentPayoffs: notTransparent);
     }
 
@@ -174,7 +197,9 @@ public record PlantPayoffAudit(
     int               Planted,
     int               PaidOff,
     int               Orphaned,
+    int               Unplanted,
     int               NotTransparentCount,
     List<PlantPayoff> AllPairs,
     List<PlantPayoff> OrphanedPlants,
+    List<PlantPayoff> UnplantedPayoffs,
     List<PlantPayoff> NotTransparentPayoffs);

@@ -25,6 +25,13 @@ namespace Prose.Core.Services;
 /// no extra packages. Registered only via <c>AddProseBackgroundServices</c> (the Codex
 /// host), never the Writer or CLI/MCP hosts — same one-process-only rule as every other
 /// background sweep in this file, to avoid duplicate corpus scans hitting the shared DB.
+///
+/// 2026-08-21: this sweep is no longer zero-cost end to end — it also hash-gates a draft-tier
+/// <see cref="EmotionalDepthService"/> examination per book (see RunSweepAsync), which makes
+/// real LLM calls, but ONLY for a book whose beat text actually changed since its last
+/// examination (explicit user decision, given this project's LLM-billing history — see
+/// <c>feedback_leaked_api_keys_critical</c> memory). The original deterministic sanity/
+/// readability checks below remain zero-cost.
 /// </summary>
 public class SanityScanBackgroundService : BackgroundService
 {
@@ -42,6 +49,7 @@ public class SanityScanBackgroundService : BackgroundService
     private readonly SanityScanService sanityScan;
     private readonly BeatProseMetricsService proseMetrics;
     private readonly FindingsService findingsSvc;
+    private readonly EmotionalDepthService emotionalDepth;
     private readonly ILogger<SanityScanBackgroundService> log;
 
     public SanityScanBackgroundService(
@@ -49,14 +57,16 @@ public class SanityScanBackgroundService : BackgroundService
         SanityScanService sanityScan,
         BeatProseMetricsService proseMetrics,
         FindingsService findingsSvc,
+        EmotionalDepthService emotionalDepth,
         ILogger<SanityScanBackgroundService> log,
         IConfiguration configuration)
     {
-        this.dbFactory    = dbFactory;
-        this.sanityScan   = sanityScan;
-        this.proseMetrics = proseMetrics;
-        this.findingsSvc  = findingsSvc;
-        this.log          = log;
+        this.dbFactory      = dbFactory;
+        this.sanityScan     = sanityScan;
+        this.proseMetrics   = proseMetrics;
+        this.findingsSvc    = findingsSvc;
+        this.emotionalDepth = emotionalDepth;
+        this.log            = log;
         Enabled = configuration.GetValue<bool>("BackgroundServices:Enabled", defaultValue: true);
     }
 
@@ -157,6 +167,23 @@ public class SanityScanBackgroundService : BackgroundService
             catch (Exception ex)
             {
                 log.LogWarning(ex, "Sanity-scan sweep: readability check for book {Slug} failed, skipping", book.Slug);
+            }
+
+            // Emotional depth (SS-A15), added 2026-08-21: EmotionalDepthService was previously
+            // 100% manual (--examine-emotion only) — the only mechanism that scores Want/Need/
+            // Wound/Flaw character depth never ran unless a human remembered to invoke it.
+            // Draft tier only (cheapest — 8 parallel dimension calls, no beat-curve/ledger-
+            // refresh passes) and hash-gated: HasContentChangedSinceLastExamAsync is a free DB
+            // read, so a book whose beat text hasn't changed since its last examination costs
+            // nothing here, same posture as every other cost-conscious sweep in this file.
+            try
+            {
+                if (await emotionalDepth.HasContentChangedSinceLastExamAsync(book.Id, ct))
+                    await emotionalDepth.ExamineNodeAsync(book.Id, "draft", ct: ct);
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "Sanity-scan sweep: emotional-depth check for book {Slug} failed, skipping", book.Slug);
             }
         }
 

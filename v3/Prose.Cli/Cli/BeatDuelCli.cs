@@ -55,6 +55,7 @@ public static class BeatDuelCli
 
         var duelSvc   = services.GetRequiredService<BeatDuelService>();
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
 
         string originalText, storyTitle, precedingText = "";
         string? registerNotes = null;
@@ -132,13 +133,11 @@ public static class BeatDuelCli
 
         if (result.Replace && apply)
         {
-            await using var db = await dbFactory.CreateDbContextAsync();
-            var beat = await db.Beats.FirstAsync(b => b.Id == beatId);
-            beat.Text      = candidateText;
-            beat.TextHash  = NodeWorkbenchService.ComputeTextHash(candidateText);
-            beat.Stale     = true;
-            beat.UpdatedAt = DateTime.UtcNow;
-            await db.SaveChangesAsync();
+            // Write-gate Phase 1 (2026-08-22): was a raw Text/TextHash/Stale write, bypassing
+            // entity-GUID tagging, blast-radius/logic-sweep, and continuity re-extraction — a
+            // duel-applied replacement is exactly the kind of real content edit every other
+            // prose-writing path in the app routes through UpdateBeatTextAsync.
+            await workbench.UpdateBeatTextAsync(beatId, candidateText);
             if (!jsonMode)
                 Console.WriteLine("\n✅ Applied — beat text replaced, TextHash recomputed, marked stale for narration.");
         }

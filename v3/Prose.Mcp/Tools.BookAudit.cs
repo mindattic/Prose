@@ -18,6 +18,7 @@ namespace Prose.Mcp;
 public class BookAuditTools(
     BookAuditService bookAudit,
     IDbContextFactory<ProseDbContext> dbFactory,
+    NodeWorkbenchService workbench,
     HubInvoker hub)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
@@ -94,19 +95,25 @@ public class BookAuditTools(
                 return JsonSerializer.Serialize(new { error = "previous_node_not_found", previousNodeIdOrSlug }, JsonOpts);
         }
 
-        await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.FindAsync(nodeId.Value);
-        if (node == null)
-            return JsonSerializer.Serialize(new { error = "node_not_found" }, JsonOpts);
-
-        node.PreviousNodeId = prevId;
-        node.UpdatedAt = DateTime.UtcNow;
-        await db.SaveChangesAsync();
+        // Write-gate Phase 1 (2026-08-22): was a raw PreviousNodeId write; now the sanctioned
+        // NodeWorkbenchService.SetPreviousNodeAsync (built write-gate Phase 0) so the
+        // WriteSubject.NodeStructure classification has one call site to observe.
+        string nodeSlug;
+        try
+        {
+            await workbench.SetPreviousNodeAsync(nodeId.Value, prevId);
+            await using var db = await dbFactory.CreateDbContextAsync();
+            nodeSlug = await db.Nodes.AsNoTracking().Where(n => n.Id == nodeId.Value).Select(n => n.Slug).FirstAsync();
+        }
+        catch (InvalidOperationException ex)
+        {
+            return JsonSerializer.Serialize(new { error = "set_previous_failed", message = ex.Message }, JsonOpts);
+        }
 
         return JsonSerializer.Serialize(new
         {
             status            = "updated",
-            node_slug       = node.Slug,
+            node_slug       = nodeSlug,
             mode              = prevId.HasValue ? "sequel" : "gateway",
             previous_node_id = prevId,
         }, JsonOpts);

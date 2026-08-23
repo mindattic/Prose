@@ -295,114 +295,35 @@ public class NodeTools
         [Description("Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.")] string status = "ready") =>
         hub.InvokeAsync(nameof(NodeTools), nameof(CloneBookImpl), new { idOrSlug, title, nodeCode, status });
 
+    // Write-gate Phase 1 (2026-08-22): this used to hand-roll the same raw write as
+    // CloneNodeCli.cs — cloning ONLY the beats directly attached to the source node itself, a
+    // silent no-op for any book with chapters (per Book→Chapter→Beat, a real book's beats live on
+    // its ChapterNode children). Now a thin wrapper around
+    // NodeWorkbenchService.DuplicateNodeAsync, which recurses the whole subtree.
     public async Task<string> CloneBookImpl(string idOrSlug, string title = "", string nodeCode = "", string status = "ready")
     {
         var source = await ResolveNodeAsync(idOrSlug);
         if (source == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
-        var code = string.IsNullOrWhiteSpace(nodeCode) ? null : nodeCode.Trim().ToUpperInvariant();
-        if (code != null)
+        var newTitle = string.IsNullOrWhiteSpace(title) ? $"{source.Title} (Clone)" : title.Trim();
+        try
         {
-            await using var check = await dbFactory.CreateDbContextAsync();
-            var clash = await check.Nodes.AsNoTracking().FirstOrDefaultAsync(s => s.NodeCode == code);
-            if (clash != null)
-                return JsonSerializer.Serialize(new { error = "node_code_in_use", code, clash_slug = clash.Slug }, CanonTools.JsonOpts);
-        }
-
-        await using var db = await dbFactory.CreateDbContextAsync();
-
-        var sourceBeats = await db.Set<BeatNode>()
-            .AsNoTracking()
-            .Where(sb => sb.NodeId == source.Id && true)
-            .OrderBy(sb => sb.SortKey)
-            .Join(db.Beats.AsNoTracking(), sb => sb.BeatId, b => b.Id,
-                  (sb, b) => new { sb.SortKey, Beat = b })
-            .ToListAsync();
-
-        var newTitle  = string.IsNullOrWhiteSpace(title) ? $"{source.Title} (Clone)" : title.Trim();
-        var newId     = Guid.CreateVersion7();
-        var sanitised = new string(newTitle.ToLowerInvariant().Select(c => char.IsLetterOrDigit(c) ? c : '-').ToArray());
-        var parts     = sanitised.Split('-').Where(p => p.Length > 0).Take(8);
-        var newSlug   = $"{string.Join("-", parts)}-{newId.ToString("N")[..8]}";
-
-        var now = DateTime.UtcNow;
-
-        // Serializable isolation covers both the SortKey MAX (prevents duplicate sort order)
-        // and the Beat.Number MAX (prevents duplicate-key on concurrent clones).
-        await using var tx = await db.Database.BeginTransactionAsync(
-            System.Data.IsolationLevel.Serializable);
-
-        var maxSort = await db.Nodes.Where(s => s.ParentNodeId == null).Select(s => (double?)s.SortKey).MaxAsync() ?? 0;
-
-        var clone = NodeFactory.CreateLike(source);
-        clone.Id              = newId;
-        clone.Slug            = newSlug;
-        clone.Title           = newTitle;
-        clone.NodeCode        = code;
-        clone.Kind            = source.Kind;
-        clone.Status          = status;
-        clone.Description     = source.Description;
-        clone.Seed            = source.Seed;
-        clone.UniverseId      = source.UniverseId;
-        clone.VoiceId         = source.VoiceId;
-        clone.VoiceModel      = source.VoiceModel;
-        clone.VoiceStability  = source.VoiceStability;
-        clone.VoiceSimilarity = source.VoiceSimilarity;
-        clone.VoiceStyle      = source.VoiceStyle;
-        clone.VoiceSeed       = source.VoiceSeed;
-        clone.TtsEngine       = source.TtsEngine;
-        clone.SortKey         = maxSort + 100.0;
-        clone.CreatedAt       = now;
-        clone.UpdatedAt       = now;
-        db.Nodes.Add(clone);
-
-        var beatMax = await db.Beats.MaxAsync(b => (int?)b.Number) ?? 0;
-        int nextNum = beatMax + 1;
-
-        foreach (var entry in sourceBeats)
-        {
-            var src    = entry.Beat;
-            var beatId = Guid.CreateVersion7();
-            db.Beats.Add(new Beat
+            var (newId, newSlug) = await workbench.DuplicateNodeAsync(source.Id, newTitle, nodeCode, status);
+            return JsonSerializer.Serialize(new
             {
-                Id               = beatId,
-                Number           = nextNum++,
-                Text             = src.Text,
-                Title            = src.Title,
-                Description      = src.Description,
-                StructureRole    = src.StructureRole,
-                Act              = src.Act,
-                SceneType        = src.SceneType,
-                EmotionalTone    = src.EmotionalTone,
-                PaceHint         = src.PaceHint,
-                Kind             = src.Kind,
-                IsChapterStart   = src.IsChapterStart,
-                GapAfterMs       = src.GapAfterMs,
-                GapAfterAudioPath = src.GapAfterAudioPath,
-                CreatedAt        = now,
-                UpdatedAt        = now,
-            });
-            db.BeatNodes.Add(new BeatNode
-            {
-                NodeId  = newId,
-                BeatId    = beatId,
-                SortKey   = entry.SortKey,
-            });
+                ok        = true,
+                id        = newId,
+                slug      = newSlug,
+                title     = newTitle,
+                code      = string.IsNullOrWhiteSpace(nodeCode) ? null : nodeCode.Trim().ToUpperInvariant(),
+                source_id = source.Id,
+                url       = $"/node/{newSlug}",
+            }, CanonTools.JsonOpts);
         }
-
-        await db.SaveChangesAsync();
-        await tx.CommitAsync();
-        return JsonSerializer.Serialize(new
+        catch (InvalidOperationException ex)
         {
-            ok         = true,
-            id         = newId,
-            slug       = newSlug,
-            title      = newTitle,
-            code,
-            beat_count = sourceBeats.Count,
-            source_id  = source.Id,
-            url        = $"/node/{newSlug}",
-        }, CanonTools.JsonOpts);
+            return JsonSerializer.Serialize(new { error = "clone_failed", message = ex.Message }, CanonTools.JsonOpts);
+        }
     }
 
     [McpServerTool, Description("Insert a new beat into a node. Pass an empty afterBeatId to insert at the top. Returns the new beat's id.")]

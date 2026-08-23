@@ -53,7 +53,8 @@ public class StructuralBlueprintManualSaveTests
         paths = new TestPathProviderWithRoot(tempRoot);
         dbFactory = TestDbFactory.For(paths, "blueprint-manual");
         var audioStore = new LocalDiskAudioStore(paths, NullLogger<LocalDiskAudioStore>.Instance);
-        workbench = new NodeWorkbenchService(dbFactory, null!, paths, audioStore, NullLogger<NodeWorkbenchService>.Instance);
+        workbench = new NodeWorkbenchService(dbFactory, null!, paths, audioStore, NullLogger<NodeWorkbenchService>.Instance,
+            null!, null!, null!, null!, null!);
         // SetManualAsync never touches llm or embeddings — only GenerateCoreAsync (the LLM
         // path) does — so both are safely null! here, same pattern as NodeWorkbenchServiceTests
         // passing null! for TTS in its CRUD-only fixture.

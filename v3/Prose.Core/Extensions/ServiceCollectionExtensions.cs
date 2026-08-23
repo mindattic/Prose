@@ -499,10 +499,12 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<IPathProvider>(),
             sp.GetRequiredService<IAudioStore>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<NodeWorkbenchService>>(),
-            sp.GetService<SettingsService>(),
             sp.GetRequiredService<PostBeatValidationService>(),
-            blastRadius: sp.GetRequiredService<BlastRadiusService>(),
-            logicSweep: sp.GetRequiredService<Prose.Core.Services.Audit.LogicSweepService>()));
+            sp.GetRequiredService<SemanticFidelityService>(),
+            sp.GetRequiredService<BlastRadiusService>(),
+            sp.GetRequiredService<Prose.Core.Services.Audit.LogicSweepService>(),
+            sp.GetRequiredService<ContinuityExtractionService>(),
+            settings: sp.GetService<SettingsService>()));
         services.AddSingleton<WritingQualityService>();
         services.AddSingleton(sp => new MotifService(
             sp.GetRequiredService<SettingsKvStore>(),
@@ -1028,6 +1030,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<TextIntegrityService>();
         services.AddSingleton<GearCarryEnforcer>();
         services.AddSingleton<BehavioralInvariantEnforcer>();
+        services.AddSingleton<ContinuityEnforcer>();
         services.AddSingleton<WeaponAmmoCompatibilityService>();
         services.AddSingleton<MarkdownFileService>();
         services.AddSingleton<NodeSpineService>();
@@ -1138,6 +1141,16 @@ public static class ServiceCollectionExtensions
         // disambiguation (e.g. TEST's two "Boris Johan(s)sen" Bear rows, found 2026-08-10).
         // Available via `prose --duplicate-entity-scan --universe <slug>`.
         services.AddSingleton<DuplicateEntityScanService>();
+
+        // The one sanctioned path for Entity.OriginNodeId writes (write-gate Phase 0, 2026-08-22).
+        services.AddSingleton<EntityOriginService>();
+
+        // Write-gate first concrete check + audit service (2026-08-22) — see WriteGateBootstrap's
+        // doc comment: WriteGateBootstrap MUST be eagerly resolved once at Hub startup or these
+        // never actually wire into WriteGateScope.
+        services.AddSingleton<Prose.Core.Services.WriteGate.SelfAliasSyncCheck>();
+        services.AddSingleton<Prose.Core.Services.WriteGate.IWriteAuditService, Prose.Core.Services.WriteGate.DefaultWriteAuditService>();
+        services.AddSingleton<Prose.Core.Services.WriteGate.WriteGateBootstrap>();
 
         // AutoCorrect nightly pass (pure ML/deterministic, no LLM): whole-book pre-edit
         // snapshots, a per-action undo ledger, per-universe statistical baselines, and the

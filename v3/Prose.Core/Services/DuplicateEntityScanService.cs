@@ -154,6 +154,69 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
     }
 
     /// <summary>
+    /// Narrow, single-entity variant of <see cref="ScanAsync(Guid, string, CancellationToken)"/>
+    /// for the write-gate's async post-save hook (project plan "Make Prose.Hub the real
+    /// gatekeeper", 2026-08-22 Phase 0): after ONE entity is created or renamed, checks it against
+    /// its own universe+type cohort for an exact or near-duplicate name, instead of re-scanning
+    /// the whole corpus on every single write. Returns at most one group (this entity's own), not
+    /// every duplicate group in the universe — callers that need the full picture still want
+    /// <see cref="ScanAsync(Guid, string, CancellationToken)"/>.
+    /// </summary>
+    public async Task<IReadOnlyList<DuplicateEntityGroup>> CheckSingleEntityAsync(Guid entityId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var target = await db.Entities.AsNoTracking().IgnoreQueryFilters()
+            .Where(e => e.Id == entityId)
+            .Select(e => new { e.Id, e.Name, e.OriginNodeId, e.Description, e.UniverseId, e.EntityType })
+            .FirstOrDefaultAsync(ct);
+        if (target == null) return [];
+
+        var cohort = await db.Entities.AsNoTracking().IgnoreQueryFilters()
+            .Where(e => e.UniverseId == target.UniverseId && e.EntityType == target.EntityType && e.Id != target.Id)
+            .Select(e => new EntityRow(e.Id, e.Name, e.OriginNodeId, e.Description))
+            .ToListAsync(ct);
+        if (cohort.Count == 0) return [];
+
+        var targetNorm = Normalize(target.Name);
+        var matches = new List<EntityRow>();
+        string? matchKind = null;
+
+        foreach (var candidate in cohort)
+        {
+            if (!SharesDisambiguationScope([target.OriginNodeId, candidate.OriginNodeId])) continue;
+            var candNorm = Normalize(candidate.Name);
+            if (candNorm == targetNorm)
+            {
+                matches.Add(candidate);
+                matchKind ??= $"exact match: \"{targetNorm}\"";
+            }
+            else if (LevenshteinDistance(targetNorm, candNorm) <= MaxEditDistance)
+            {
+                matches.Add(candidate);
+                matchKind ??= $"near match (edit distance <= {MaxEditDistance}): \"{target.Name}\" / \"{candidate.Name}\"";
+            }
+        }
+
+        if (matches.Count == 0) return [];
+
+        var targetRow = new EntityRow(target.Id, target.Name, target.OriginNodeId, target.Description);
+        var allIds = matches.Select(m => m.Id).Append(target.Id).ToList();
+        var mentionCounts = await db.BeatEntityMentions.AsNoTracking()
+            .Where(m => allIds.Contains(m.EntityId))
+            .GroupBy(m => m.EntityId)
+            .Select(g => new { EntityId = g.Key, Count = g.Count() })
+            .ToDictionaryAsync(x => x.EntityId, x => x.Count, ct);
+
+        DuplicateEntityCandidate ToCandidate(EntityRow e) => new(
+            e.Id, e.Name, e.OriginNodeId,
+            e.Description == null ? null : Snippet(e.Description),
+            mentionCounts.GetValueOrDefault(e.Id, 0));
+
+        var members = matches.Append(targetRow).Select(ToCandidate).ToList();
+        return [new DuplicateEntityGroup(matchKind!, members)];
+    }
+
+    /// <summary>
     /// True when the candidates are NOT legitimately disambiguated by OriginNodeId — i.e. they
     /// share the same scope (all null, or all the same non-null value) rather than each pointing
     /// at a different book. Different non-null values means "different books, deliberately

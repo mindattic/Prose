@@ -33,7 +33,8 @@ public class NodeWorkbenchServiceTests
         // workbench guards against null only inside that method's first
         // statement, so we pass null! here intentionally.
         var audioStore = new LocalDiskAudioStore(paths, NullLogger<LocalDiskAudioStore>.Instance);
-        svc = new NodeWorkbenchService(dbFactory, null!, paths, audioStore, NullLogger<NodeWorkbenchService>.Instance);
+        svc = new NodeWorkbenchService(dbFactory, null!, paths, audioStore, NullLogger<NodeWorkbenchService>.Instance,
+            null!, null!, null!, null!, null!);
     }
 
     [TearDown]
@@ -889,5 +890,113 @@ public class NodeWorkbenchServiceTests
         await using var db2 = await dbFactory.CreateDbContextAsync();
         var fresh = await db2.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
         Assert.That(fresh.Kind, Is.EqualTo("prose"));
+    }
+
+    // ── DuplicateNodeAsync (write-gate Phase 1, 2026-08-22) ─────────────────
+
+    private async Task<(Node Book, Node Chapter)> MakeBookWithChapterAsync()
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var book = new BookNode
+        {
+            Id = Guid.CreateVersion7(),
+            Slug = "book-" + Guid.NewGuid().ToString("N")[..8],
+            Title = "Source Book",
+            Kind = "book",
+            Status = "ready",
+            SortKey = 100,
+        };
+        db.Nodes.Add(book);
+        await db.SaveChangesAsync();
+
+        var chapter = new ChapterNode
+        {
+            Id = Guid.CreateVersion7(),
+            Slug = "ch1-" + Guid.NewGuid().ToString("N")[..8],
+            Title = "Chapter 1 — Beginnings",
+            Kind = "chapter",
+            Status = "ready",
+            ParentNodeId = book.Id,
+            SortKey = 100,
+        };
+        db.Nodes.Add(chapter);
+        await db.SaveChangesAsync();
+        return (book, chapter);
+    }
+
+    [Test]
+    public async Task DuplicateNodeAsync_BookWithChapterAndBeats_ClonesEntireSubtree()
+    {
+        // Regression test for the bug CloneNodeCli.cs/CloneBookImpl had before both were
+        // rewired onto this method: a non-recursive clone only ever copied beats attached
+        // DIRECTLY to the source node, which is empty for any real multi-chapter book (beats
+        // live on the ChapterNode children, not the book) — the "clone" silently produced a
+        // near-empty shell. DuplicateNodeAsync must recurse the full subtree.
+        var (book, chapter) = await MakeBookWithChapterAsync();
+        await svc.InsertBeatAsync(chapter.Id, null, "The first beat of the chapter.");
+        await svc.InsertBeatAsync(chapter.Id, null, "The second beat of the chapter.");
+
+        var (newBookId, _) = await svc.DuplicateNodeAsync(book.Id, "Cloned Book");
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var clonedChapter = await db.Nodes.AsNoTracking().SingleAsync(n => n.ParentNodeId == newBookId);
+        Assert.That(clonedChapter.Title, Is.EqualTo("Chapter 1 — Beginnings"), "descendant nodes keep their own titles");
+        Assert.That(clonedChapter.Id, Is.Not.EqualTo(chapter.Id), "clone gets fresh ids, not shared rows");
+
+        var clonedBeats = await db.BeatNodes.AsNoTracking()
+            .Where(bn => bn.NodeId == clonedChapter.Id)
+            .Join(db.Beats.AsNoTracking(), bn => bn.BeatId, b => b.Id, (bn, b) => b.Text)
+            .ToListAsync();
+        Assert.That(clonedBeats, Is.EquivalentTo(new[] { "The first beat of the chapter.", "The second beat of the chapter." }));
+
+        // Original untouched — editing the clone must never touch the source.
+        var originalBeatCount = await db.BeatNodes.AsNoTracking().CountAsync(bn => bn.NodeId == chapter.Id);
+        Assert.That(originalBeatCount, Is.EqualTo(2));
+    }
+
+    [Test]
+    public async Task DuplicateNodeAsync_NodeCode_StampedOnRootOnly()
+    {
+        var (book, chapter) = await MakeBookWithChapterAsync();
+
+        var (newBookId, _) = await svc.DuplicateNodeAsync(book.Id, "Cloned Book", nodeCode: "CLN1");
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var clonedBook = await db.Nodes.AsNoTracking().SingleAsync(n => n.Id == newBookId);
+        var clonedChapter = await db.Nodes.AsNoTracking().SingleAsync(n => n.ParentNodeId == newBookId);
+        Assert.That(clonedBook.NodeCode, Is.EqualTo("CLN1"));
+        Assert.That(clonedChapter.NodeCode, Is.Null, "chapters never carry a reference code");
+    }
+
+    [Test]
+    public async Task DuplicateNodeAsync_Status_AppliesToWholeSubtree()
+    {
+        var (book, chapter) = await MakeBookWithChapterAsync();
+
+        var (newBookId, _) = await svc.DuplicateNodeAsync(book.Id, "Cloned Book", status: "draft");
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var clonedBook = await db.Nodes.AsNoTracking().SingleAsync(n => n.Id == newBookId);
+        var clonedChapter = await db.Nodes.AsNoTracking().SingleAsync(n => n.ParentNodeId == newBookId);
+        Assert.That(clonedBook.Status, Is.EqualTo("draft"));
+        Assert.That(clonedChapter.Status, Is.EqualTo("draft"), "status now applies uniformly, not just to the root");
+    }
+
+    [Test]
+    public async Task DuplicateNodeAsync_NodeCodeAlreadyInUse_Throws()
+    {
+        var (book, _) = await MakeBookWithChapterAsync();
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            db.Nodes.Add(new BookNode
+            {
+                Id = Guid.CreateVersion7(), Slug = "other-" + Guid.NewGuid().ToString("N")[..8],
+                Title = "Other Book", Kind = "book", Status = "ready", SortKey = 200, NodeCode = "TAKEN",
+            });
+            await db.SaveChangesAsync();
+        }
+
+        Assert.ThrowsAsync<InvalidOperationException>(
+            () => svc.DuplicateNodeAsync(book.Id, "Cloned Book", nodeCode: "taken"));
     }
 }

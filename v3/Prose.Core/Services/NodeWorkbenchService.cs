@@ -50,19 +50,32 @@ public class NodeWorkbenchService
     public ExportProgress? GetExportProgress(Guid nodeId)
         => exportProgress.TryGetValue(nodeId, out var p) ? p : null;
 
+    /// <summary>
+    /// The five validation-hook params (<paramref name="postBeatValidator"/>,
+    /// <paramref name="semanticFidelity"/>, <paramref name="blastRadius"/>,
+    /// <paramref name="logicSweep"/>, <paramref name="continuityExtraction"/>) are mandatory —
+    /// no default value — by design (project plan "Make Prose.Hub the real gatekeeper",
+    /// 2026-08-22 Phase 0). They used to default to <c>null</c>, and production DI silently never
+    /// wired two of them (<c>semanticFidelity</c>, <c>continuityExtraction</c>) for the entire
+    /// life of this service — meaning drift/continuity checks never once fired on a beat save.
+    /// Removing the default turns that class of gap into a compile error at the one production
+    /// call site (<c>ServiceCollectionExtensions</c>) instead of a silent no-op. Types stay
+    /// nullable so tests that don't exercise the hooked behavior can still pass <c>null!</c>
+    /// explicitly — an explicit decision, not an accidental default.
+    /// </summary>
     public NodeWorkbenchService(
         IDbContextFactory<ProseDbContext> dbFactory,
         ElevenLabsTtsService tts,
         IPathProvider paths,
         IAudioStore audioStore,
         ILogger<NodeWorkbenchService> log,
+        PostBeatValidationService? postBeatValidator,
+        SemanticFidelityService? semanticFidelity,
+        BlastRadiusService? blastRadius,
+        LogicSweepService? logicSweep,
+        ContinuityExtractionService? continuityExtraction,
         SettingsService? settings = null,
-        PostBeatValidationService? postBeatValidator = null,
-        SemanticFidelityService? semanticFidelity = null,
-        EditSessionService? editSession = null,
-        BlastRadiusService? blastRadius = null,
-        LogicSweepService? logicSweep = null,
-        ContinuityExtractionService? continuityExtraction = null)
+        EditSessionService? editSession = null)
     {
         this.dbFactory = dbFactory;
         this.tts = tts;
@@ -398,11 +411,139 @@ public class NodeWorkbenchService
         }
     }
 
+    /// <summary>
+    /// Batch prose edit — the sanctioned path for a fix pass touching many beats in one book
+    /// (a logic-sweep fix round, a corpus-wide entity-rename splice), added 2026-08-22 (write-gate
+    /// Phase 0) to replace callers looping <see cref="UpdateBeatTextAsync"/> per-beat, which fires
+    /// one full blast-radius + narrow-logic-sweep pass PER beat — redundant work when the same fix
+    /// round touches N beats in the same book, and N separate async passes racing each other
+    /// rather than one pass over their union. Each edit still gets its own concurrency check,
+    /// hash recompute, and entity-tag re-derivation exactly as the single-beat path does; only the
+    /// blast-radius/logic-sweep/continuity-extraction tail is deduplicated across the batch.
+    /// </summary>
+    public async Task UpdateBeatTextBatchAsync(
+        IReadOnlyList<(Guid BeatId, string NewText)> edits, string source, CancellationToken ct = default)
+    {
+        if (edits.Count == 0) return;
+
+        var touchedBeatIds = new List<Guid>();
+        Guid? bookNodeId = null;
+
+        foreach (var (beatId, newText) in edits)
+        {
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+            var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
+                ?? throw new InvalidOperationException($"Beat {beatId} not found.");
+
+            Guid? thisBookNodeId = null;
+            var directNodeId = await db.BeatNodes.AsNoTracking()
+                .Where(bn => bn.BeatId == beatId)
+                .Select(bn => bn.NodeId)
+                .FirstOrDefaultAsync(ct);
+            if (directNodeId != Guid.Empty)
+            {
+                var walkId = directNodeId;
+                for (var depth = 0; depth < 10; depth++)
+                {
+                    var parent = await db.Nodes.AsNoTracking()
+                        .Where(n => n.Id == walkId)
+                        .Select(n => n.ParentNodeId)
+                        .FirstOrDefaultAsync(ct);
+                    if (parent == null) { thisBookNodeId = walkId; break; }
+                    walkId = parent.Value;
+                }
+            }
+            bookNodeId ??= thisBookNodeId;
+
+            var universeId = thisBookNodeId.HasValue
+                ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == thisBookNodeId.Value).Select(n => n.UniverseId).FirstOrDefaultAsync(ct)
+                : Guid.Empty;
+
+            var plainText = BeatMarkup.StripEntityTags(TextSanitizerService.Sanitize((newText ?? "").Trim()));
+            var candidates = universeId != Guid.Empty
+                ? await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, thisBookNodeId, ct)
+                : [];
+            var mentionMatches = EntityMentionScanner.Scan(plainText, candidates);
+            var trimmed = EntityMentionScanner.ApplyTags(plainText, mentionMatches);
+
+            if (beat.Text == trimmed) continue; // no-op — don't bump UpdatedAt for nothing
+
+            beat.Text         = trimmed;
+            beat.TextHash     = ComputeTextHash(trimmed);
+            beat.WasCorrected = true;
+            beat.Stale        = true;
+            beat.Score        = null;
+            beat.ScoredAt     = null;
+            beat.Version++;
+            InvalidateAudioOnBeat(beat);
+            beat.UpdatedAt = DateTime.UtcNow;
+            await db.SaveChangesAsync(ct);
+            touchedBeatIds.Add(beatId);
+
+            _ = Task.Run(() => EntityMentionScanner.DeriveAndSaveMentionsAsync(dbFactory, beatId, trimmed, CancellationToken.None), CancellationToken.None)
+                .ContinueWith(t => log.LogError(t.Exception, "EntityMentionScanner.DeriveAndSaveMentionsAsync background task failed (batch)"),
+                    TaskContinuationOptions.OnlyOnFaulted);
+        }
+
+        if (touchedBeatIds.Count == 0) return;
+
+        log.LogInformation("UpdateBeatTextBatchAsync: {Count} beat(s) edited by {Source}", touchedBeatIds.Count, source);
+
+        // One blast-radius + narrow-logic-sweep pass over the UNION of every touched beat's
+        // radius, instead of one pass per beat — the whole point of the batch path.
+        if (blastRadius != null && logicSweep != null && bookNodeId.HasValue)
+        {
+            var bnId = bookNodeId.Value;
+            var seedBeatIds = touchedBeatIds.ToList();
+            _ = Task.Run(async () =>
+                {
+                    var radiusIds = new HashSet<Guid>();
+                    foreach (var seedId in seedBeatIds)
+                        foreach (var id in await blastRadius.GetBlastRadiusBeatIdsAsync(seedId, ct: CancellationToken.None))
+                            radiusIds.Add(id);
+                    if (radiusIds.Count > 0)
+                        await logicSweep.RunNarrowAsync(bnId, radiusIds.ToList(), seedBeatIds[0], CancellationToken.None);
+                }, CancellationToken.None)
+                .ContinueWith(t => log.LogError(t.Exception, "Blast-radius RunNarrowAsync background task failed (batch)"),
+                    TaskContinuationOptions.OnlyOnFaulted);
+        }
+
+        if (continuityExtraction != null)
+        {
+            // Re-extraction is per-chapter and hash-gated (no-op if the chapter's text is
+            // unchanged since its last extraction) — safe to fan out one call per distinct
+            // chapter touched by the batch rather than trying to dedupe further here.
+            var chapterIds = new List<Guid>();
+            await using var db2 = await dbFactory.CreateDbContextAsync(ct);
+            foreach (var beatId in touchedBeatIds)
+            {
+                var nodeId = await db2.BeatNodes.AsNoTracking()
+                    .Where(bn => bn.BeatId == beatId)
+                    .Select(bn => bn.NodeId)
+                    .FirstOrDefaultAsync(ct);
+                if (nodeId != Guid.Empty) chapterIds.Add(nodeId);
+            }
+            foreach (var chapterNodeId in chapterIds.Distinct())
+            {
+                var cid = chapterNodeId;
+                _ = Task.Run(() => continuityExtraction.ReExtractChapterIfChangedAsync(cid, ct: CancellationToken.None), CancellationToken.None)
+                    .ContinueWith(t => log.LogError(t.Exception, "ReExtractChapterIfChangedAsync background task failed (batch)"),
+                        TaskContinuationOptions.OnlyOnFaulted);
+            }
+        }
+    }
+
     /// <summary>Update a beat's narrative metadata — the fields that drive
     /// <see cref="BeatPromptBuilder"/> at narration time. Does NOT touch
     /// the prose, the audio, or the hash; the user can tune tone without
     /// invalidating the existing recording. The next re-record picks up
-    /// the new tone via the prompt builder.</summary>
+    /// the new tone via the prompt builder.
+    ///
+    /// Fires the same blast-radius + narrow logic-sweep hook as
+    /// <see cref="UpdateBeatTextAsync"/> (added 2026-08-22, write-gate Phase 0) — this method
+    /// previously had zero validation hooks, but <c>StructureRole</c>/<c>IsChapterStart</c>/
+    /// <c>Act</c> are exactly the fields a structural-blueprint or chapter-boundary check depends
+    /// on, and a metadata-only edit could silently invalidate them with nothing ever re-checking.</summary>
     public async Task UpdateBeatMetadataAsync(Guid beatId, BeatMetadataUpdate update, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -420,6 +561,165 @@ public class NodeWorkbenchService
         beat.Kind           = string.IsNullOrWhiteSpace(update.Kind)          ? "prose" : update.Kind.Trim().ToLowerInvariant();
         beat.UpdatedAt      = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
+
+        if (blastRadius != null && logicSweep != null)
+        {
+            var directNodeId = await db.BeatNodes.AsNoTracking()
+                .Where(bn => bn.BeatId == beatId)
+                .Select(bn => bn.NodeId)
+                .FirstOrDefaultAsync(ct);
+            Guid? bookNodeId = null;
+            if (directNodeId != Guid.Empty)
+            {
+                var walkId = directNodeId;
+                for (var depth = 0; depth < 10; depth++)
+                {
+                    var parent = await db.Nodes.AsNoTracking()
+                        .Where(n => n.Id == walkId)
+                        .Select(n => n.ParentNodeId)
+                        .FirstOrDefaultAsync(ct);
+                    if (parent == null) { bookNodeId = walkId; break; }
+                    walkId = parent.Value;
+                }
+            }
+            if (bookNodeId.HasValue)
+            {
+                var bnId = bookNodeId.Value;
+                _ = Task.Run(async () =>
+                    {
+                        var radiusIds = await blastRadius.GetBlastRadiusBeatIdsAsync(beatId, ct: CancellationToken.None);
+                        if (radiusIds.Count > 0)
+                            await logicSweep.RunNarrowAsync(bnId, radiusIds, beatId, CancellationToken.None);
+                    }, CancellationToken.None)
+                    .ContinueWith(t => log.LogError(t.Exception, "Blast-radius RunNarrowAsync background task failed (metadata update)"),
+                        TaskContinuationOptions.OnlyOnFaulted);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Move a node to a new parent, optionally also restamping its SortKey (write-gate Phase 0/2,
+    /// 2026-08-22 — the sanctioned replacement for a raw
+    /// <c>node.ParentNodeId = ...; db.SaveChanges()</c>, moved from <c>ReparentNodeCli.cs</c>). No
+    /// structural validation beyond "the new parent exists" lives here yet — the point of adding
+    /// this method is to give Layer A's <c>WriteSubject.NodeStructure</c> classification one call
+    /// site to observe, not to invent new reparenting business rules.
+    /// <paramref name="newParentNodeId"/> pass <c>null</c> to detach (make it a root node);
+    /// <paramref name="sortKey"/> pass <c>null</c> to leave the current value untouched — for a
+    /// SortKey-only reorder with no parent change, pass the node's own current
+    /// <c>ParentNodeId</c> back in.
+    /// </summary>
+    public async Task ReparentNodeAsync(Guid nodeId, Guid? newParentNodeId, double? sortKey = null, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+
+        if (newParentNodeId.HasValue)
+        {
+            var parentExists = await db.Nodes.IgnoreQueryFilters().AnyAsync(n => n.Id == newParentNodeId.Value, ct);
+            if (!parentExists)
+                throw new InvalidOperationException($"New parent node {newParentNodeId.Value} not found.");
+        }
+
+        node.ParentNodeId = newParentNodeId;
+        if (sortKey.HasValue) node.SortKey = sortKey.Value;
+        node.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Reparented node {NodeId} -> parent {NewParentId} (SortKey={SortKey})", nodeId, newParentNodeId, sortKey);
+    }
+
+    /// <summary>
+    /// Set (or clear) a book node's sequel link (write-gate Phase 0, 2026-08-22 — the sanctioned
+    /// replacement for <c>Tools.BookAudit.cs</c>'s <c>set_previous_bookImpl</c> raw write).
+    /// </summary>
+    public async Task SetPreviousNodeAsync(Guid nodeId, Guid? previousNodeId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+
+        if (previousNodeId.HasValue)
+        {
+            if (previousNodeId.Value == nodeId)
+                throw new InvalidOperationException("A node cannot be its own PreviousNodeId.");
+            var previousExists = await db.Nodes.IgnoreQueryFilters().AnyAsync(n => n.Id == previousNodeId.Value, ct);
+            if (!previousExists)
+                throw new InvalidOperationException($"Previous node {previousNodeId.Value} not found.");
+        }
+
+        node.PreviousNodeId = previousNodeId;
+        node.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Node {NodeId} PreviousNodeId set to {PreviousId}", nodeId, previousNodeId);
+    }
+
+    /// <summary>
+    /// Hard-delete a node and its full subtree (write-gate Phase 0, 2026-08-22 — moved verbatim
+    /// from <c>DeleteNodeCli.cs</c>'s recursive post-order walk, the CLI becomes a thin wrapper
+    /// around this). Beats exclusively owned by a deleted node are deleted with it; beats shared
+    /// with another still-live node are left alone (only the <c>BeatNode</c> membership is
+    /// removed).
+    ///
+    /// <paramref name="force"/> gate (author-confirmed design question, 2026-08-22): refuses to
+    /// delete a node that another node's <see cref="Node.PreviousNodeId"/> points at, unless
+    /// <paramref name="force"/> is true — deleting a book another book's sequel link references
+    /// would silently orphan that link with nothing left to catch it.
+    /// </summary>
+    public async Task DeleteNodeAsync(Guid nodeId, bool force = false, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var target = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+
+        if (!force)
+        {
+            var referencedBy = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+                .Where(n => n.PreviousNodeId == nodeId)
+                .Select(n => n.Title)
+                .ToListAsync(ct);
+            if (referencedBy.Count > 0)
+                throw new InvalidOperationException(
+                    $"Node {nodeId} ({target.Title}) is referenced as PreviousNodeId by: " +
+                    $"{string.Join(", ", referencedBy)}. Pass force to delete anyway.");
+        }
+
+        async Task DeleteNodeSubtreeAsync(Guid id, int depth)
+        {
+            var childIds = await db.Nodes.IgnoreQueryFilters().Where(n => n.ParentNodeId == id).Select(n => n.Id).ToListAsync(ct);
+            foreach (var childId in childIds)
+                await DeleteNodeSubtreeAsync(childId, depth + 1);
+
+            var beatIds = await db.BeatNodes.Where(bn => bn.NodeId == id).Select(bn => bn.BeatId).ToListAsync(ct);
+            var sharedIds = await db.BeatNodes.Where(bn => beatIds.Contains(bn.BeatId) && bn.NodeId != id).Select(bn => bn.BeatId).Distinct().ToListAsync(ct);
+            var exclusiveIds = beatIds.Except(sharedIds).ToList();
+
+            var blueprintIds = await db.NodeStructuralBlueprints.Where(bp => bp.NodeId == id).Select(bp => bp.Id).ToListAsync(ct);
+            if (blueprintIds.Count > 0)
+            {
+                db.NodeStructuralBlueprintBeatTags.RemoveRange(await db.NodeStructuralBlueprintBeatTags.Where(t => blueprintIds.Contains(t.BlueprintId)).ToListAsync(ct));
+                db.NodeStructuralBlueprints.RemoveRange(await db.NodeStructuralBlueprints.Where(bp => blueprintIds.Contains(bp.Id)).ToListAsync(ct));
+            }
+
+            db.BeatNodes.RemoveRange(await db.BeatNodes.Where(bn => bn.NodeId == id).ToListAsync(ct));
+            if (exclusiveIds.Count > 0)
+            {
+                var beats = await db.Beats.Where(b => exclusiveIds.Contains(b.Id)).ToListAsync(ct);
+                db.Beats.RemoveRange(beats);
+                log.LogInformation("DeleteNodeAsync: deleting {Count} exclusive beat(s) for {NodeId}", beats.Count, id);
+            }
+
+            var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == id, ct);
+            if (node != null)
+            {
+                db.Nodes.Remove(node);
+                log.LogInformation("DeleteNodeAsync: -> {Title} ({NodeId})", node.Title, id);
+            }
+        }
+
+        await DeleteNodeSubtreeAsync(nodeId, 0);
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("DeleteNodeAsync: deleted {Title} ({NodeId})", target.Title, nodeId);
     }
 
     /// <summary>Deep-duplicate a node (and its sub-node tree) into a brand-new
@@ -429,11 +729,26 @@ public class NodeWorkbenchService
     /// the duplicate never touches the original (beats are not shared). The root
     /// copy takes <paramref name="newTitle"/>; any child nodes keep their own
     /// titles. The duplicate slots in beside the source under the same parent.
-    /// Returns the new root node's id and slug.</summary>
-    public async Task<(Guid Id, string Slug)> DuplicateNodeAsync(Guid sourceId, string newTitle, CancellationToken ct = default)
+    /// Returns the new root node's id and slug.
+    ///
+    /// <paramref name="nodeCode"/> (write-gate Phase 1, 2026-08-22) is stamped ONLY on the root
+    /// clone, never descendants — chapters never carry a reference code (see
+    /// <c>Tools.Nodes.cs</c>'s <c>CreateNodeCoreAsync</c>, which enforces the same rule on
+    /// create). Rejected with <see cref="InvalidOperationException"/> if already in use by another
+    /// node. <paramref name="status"/> is stamped on EVERY node in the cloned subtree (root and
+    /// descendants alike) — before this method absorbed <c>CloneNodeCli.cs</c>/<c>CloneBookImpl</c>
+    /// (both non-recursive, so this question never came up for them), descendants always got a
+    /// hardcoded <c>"draft"</c> with no way to override; now the caller's choice applies uniformly,
+    /// and <c>"draft"</c> stays the default so existing callers (<c>--duplicate-book</c>, MCP
+    /// <c>DuplicateBook</c>) are unaffected.
+    /// </summary>
+    public async Task<(Guid Id, string Slug)> DuplicateNodeAsync(
+        Guid sourceId, string newTitle, string? nodeCode = null, string status = "draft", CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(newTitle))
             throw new ArgumentException("A title for the duplicate is required.", nameof(newTitle));
+
+        var code = string.IsNullOrWhiteSpace(nodeCode) ? null : nodeCode.Trim().ToUpperInvariant();
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // IgnoreQueryFilters(): explicit sourceId, not an ambient scope (same bug class found and
@@ -442,8 +757,18 @@ public class NodeWorkbenchService
             ?? throw new InvalidOperationException($"Node {sourceId} not found.");
 
         // Serializable so the sibling-max read + inserts can't race a concurrent
-        // create/duplicate under the same parent (mirrors ImportNodeCli).
+        // create/duplicate under the same parent (mirrors ImportNodeCli), AND so the NodeCode
+        // uniqueness check below can't race a concurrent clone claiming the same code — the two
+        // prior drifted implementations checked this OUTSIDE any transaction (a real, if narrow,
+        // TOCTOU race); folding it in here is a strict improvement, not just a relocation.
         await using var tx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
+
+        if (code != null)
+        {
+            var clash = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.NodeCode == code, ct);
+            if (clash != null)
+                throw new InvalidOperationException($"NodeCode '{code}' is already in use by '{clash.Title}' ({clash.Slug}).");
+        }
 
         // IgnoreQueryFilters() + explicit UniverseId: "siblings" means same parent AND same
         // universe as `source`, not whatever the ambient scope happens to be — a blanket
@@ -459,7 +784,7 @@ public class NodeWorkbenchService
         var nextNumber = new[] { (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1 };
 
         var (rootId, rootSlug) = await CloneNodeSubtreeAsync(
-            db, sourceId, newTitle, source.ParentNodeId, siblingMaxSort + 100.0, nextNumber, ct);
+            db, sourceId, newTitle, source.ParentNodeId, siblingMaxSort + 100.0, nextNumber, code, status, isRoot: true, ct);
 
         await db.SaveChangesAsync(ct);
         await tx.CommitAsync(ct);
@@ -471,7 +796,7 @@ public class NodeWorkbenchService
     /// entities on <paramref name="db"/>. The caller owns the transaction + save.</summary>
     private async Task<(Guid Id, string Slug)> CloneNodeSubtreeAsync(
         ProseDbContext db, Guid srcNodeId, string? titleOverride,
-        Guid? newParentId, double sortKey, int[] nextNumber, CancellationToken ct)
+        Guid? newParentId, double sortKey, int[] nextNumber, string? rootNodeCode, string status, bool isRoot, CancellationToken ct)
     {
         // IgnoreQueryFilters(): explicit srcNodeId, not an ambient scope (same bug class found
         // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
@@ -481,15 +806,23 @@ public class NodeWorkbenchService
         var slug = $"{Slugify(title)}-{newId.ToString("N")[..8]}";
 
         var clone = NodeFactory.CreateLike(src);
-        clone.Id           = newId;
-        clone.Slug         = slug;
-        clone.Title        = title;
-        clone.Kind         = src.Kind;
-        clone.Status       = "draft";
-        clone.Description  = src.Description;
-        clone.VoiceId      = src.VoiceId;
-        clone.ParentNodeId = newParentId;
-        clone.SortKey      = sortKey;
+        clone.Id              = newId;
+        clone.Slug            = slug;
+        clone.Title           = title;
+        clone.Kind            = src.Kind;
+        clone.Status          = status;
+        clone.Description     = src.Description;
+        clone.Seed            = src.Seed;
+        clone.NodeCode        = isRoot ? rootNodeCode : null;
+        clone.VoiceId         = src.VoiceId;
+        clone.VoiceModel      = src.VoiceModel;
+        clone.VoiceStability  = src.VoiceStability;
+        clone.VoiceSimilarity = src.VoiceSimilarity;
+        clone.VoiceStyle      = src.VoiceStyle;
+        clone.VoiceSeed       = src.VoiceSeed;
+        clone.TtsEngine       = src.TtsEngine;
+        clone.ParentNodeId    = newParentId;
+        clone.SortKey         = sortKey;
         db.Nodes.Add(clone);
 
         // Direct beats in reading order → fresh Beat rows. Audio
@@ -538,7 +871,7 @@ public class NodeWorkbenchService
             .Select(s => new { s.Id, s.SortKey })
             .ToListAsync(ct);
         foreach (var child in children)
-            await CloneNodeSubtreeAsync(db, child.Id, null, newId, child.SortKey, nextNumber, ct);
+            await CloneNodeSubtreeAsync(db, child.Id, null, newId, child.SortKey, nextNumber, rootNodeCode, status, isRoot: false, ct);
 
         return (newId, slug);
     }

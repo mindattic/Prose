@@ -62,7 +62,7 @@ try {
 
     if (-not (Test-HubHealthy)) {
         if (Test-Path $deployedExe) {
-            Start-Process -FilePath $deployedExe -WorkingDirectory (Split-Path $deployedExe) -WindowStyle Hidden
+            Start-Process -FilePath $deployedExe -WorkingDirectory (Split-Path $deployedExe) -WindowStyle Normal
         } elseif (Test-Path $proj) {
             # Deployed copy doesn't exist and deploy.ps1 isn't available/failed - fall back to
             # an ad-hoc source build so the Hub is at least running somehow.
@@ -70,9 +70,9 @@ try {
             $exeDir = Join-Path $repoRoot 'v3\Prose.Hub\bin\Release\net10.0'
             $exe    = Join-Path $exeDir 'Prose.Hub.exe'
             if (Test-Path $exe) {
-                Start-Process -FilePath $exe -WorkingDirectory $exeDir -WindowStyle Hidden
+                Start-Process -FilePath $exe -WorkingDirectory $exeDir -WindowStyle Normal
             } else {
-                Start-Process -FilePath 'dotnet' -ArgumentList @('run', '--project', $proj, '--no-build', '--configuration', 'Release') -WorkingDirectory $repoRoot -WindowStyle Hidden
+                Start-Process -FilePath 'dotnet' -ArgumentList @('run', '--project', $proj, '--no-build', '--configuration', 'Release') -WorkingDirectory $repoRoot -WindowStyle Normal
             }
         }
     }

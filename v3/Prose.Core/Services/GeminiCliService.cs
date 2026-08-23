@@ -87,8 +87,16 @@ public class GeminiCliService : ILlmService
         return trimmed;
     }
 
+    // Same rationale as CodexCliService.ProcessTimeout: a hung `gemini` process previously
+    // blocked forever since callers typically pass CancellationToken.None with no internal cap.
+    private static readonly TimeSpan ProcessTimeout = TimeSpan.FromMinutes(10);
+
     private async Task<(int ExitCode, string Stdout, string Stderr)> RunAsync(string prompt, string? model, CancellationToken ct)
     {
+        using var timeoutCts = new CancellationTokenSource(ProcessTimeout);
+        using var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(ct, timeoutCts.Token);
+        ct = linkedCts.Token;
+
         var psi = new ProcessStartInfo
         {
             UseShellExecute = false,

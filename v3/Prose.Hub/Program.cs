@@ -32,6 +32,12 @@ using Serilog.Events;
 // own per-universe GraphState dictionary for the matching fix on the graph
 // side.
 
+// Explicit user requirement (2026-08-21): visible window + live command echo. Must run before
+// anything else touches Console — see HubConsoleEcho's own doc comment for why capturing the
+// REAL writers here (rather than reading Console.Out fresh at each echo call) is required for
+// the echo to stay safe once CliDispatch/ToolDispatch start redirecting Console.Out/Error.
+Prose.Hub.HubConsoleEcho.CaptureOriginal();
+
 // Force Prose.Cli.dll to actually load into this process. Unlike Prose.Mcp (loaded
 // automatically because HubInvoker, a Prose.Mcp type, is registered in DI below),
 // nothing here has a direct compile-time reference to any Prose.Cli type - CliDispatch
@@ -116,7 +122,8 @@ builder.Services.AddHttpClient("ProseHub", c => c.BaseAddress = new Uri("http://
 builder.Services.AddSingleton<Prose.Mcp.HubInvoker>();
 
 // Observability plan (2026-08-20), Part C, Phase 3: makes the Hub's own console output
-// (invisible today - it runs with a hidden window) observable. Two-step registration is
+// observable to remote UIs too, not just the visible window itself (2026-08-21: the window is
+// no longer hidden - see start-prose-hub.ps1 + HubConsoleEcho). Two-step registration is
 // required for an ILoggerProvider that also needs to be resolvable later (Phase 4 wires its
 // OnLine callback to push each line over SignalR) - it must be both a plain singleton AND
 // registered into the logging pipeline as the same instance.
@@ -161,6 +168,12 @@ app.MapHub<Prose.Hub.Hubs.ObservabilityHub>("/hubs/observability");
 app.MapRazorComponents<Prose.Hub.Components.App>().AddInteractiveServerRenderMode();
 
 var uc = app.Services.GetRequiredService<IUniverseContext>();
+
+// Write-gate (2026-08-22): eagerly resolve so WriteGateBootstrap's constructor actually runs and
+// wires the concrete checks/audit service into WriteGateScope — a singleton nobody resolves never
+// constructs, and the gate would silently stay a no-op forever. See WriteGateBootstrap's own doc
+// comment for why this mirrors the IUniverseContext resolution immediately above.
+app.Services.GetRequiredService<Prose.Core.Services.WriteGate.WriteGateBootstrap>();
 
 Guid? ResolveUniverseId(string slug)
 {
@@ -459,6 +472,14 @@ app.MapPost("/api/edges", async (EdgeRequest req, UniverseGraphService graph, ID
     if (uid != null) uc.SetFlowUniverse(null);
     return Results.Ok(new { ok = true, graphRefreshed = refreshed });
 });
+
+Console.Title = "Prose Hub — http://127.0.0.1:5900";
+HubConsoleEcho.Out.WriteLine();
+HubConsoleEcho.Out.WriteLine("========================================================");
+HubConsoleEcho.Out.WriteLine(" Prose Hub is running — http://127.0.0.1:5900");
+HubConsoleEcho.Out.WriteLine(" Every CLI/MCP command is echoed below as it runs.");
+HubConsoleEcho.Out.WriteLine("========================================================");
+HubConsoleEcho.Out.WriteLine();
 
 app.Run();
 

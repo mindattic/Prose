@@ -61,7 +61,9 @@ public class ProseWriterRouter(
     BookAuditService? bookAudit = null,
     SceneCollisionService? sceneCollision = null,
     VerificationContextService? verificationContext = null,
-    BeatExtractionService? beatExtraction = null)
+    BeatExtractionService? beatExtraction = null,
+    ContinuityEnforcer? continuityEnforcer = null,
+    FindingsService? findings = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
@@ -172,14 +174,27 @@ public class ProseWriterRouter(
 
         // Fix 4: auto-populate Location from BookNode.DefaultLocation when caller doesn't set it.
         // Enables SceneContextBuilder (ambient grounding) and AmbientAnomalyService for every beat.
+        //
+        // 2026-08-22 fix: DefaultLocation only ever lives on the BOOK node (confirmed live:
+        // 14/46 book nodes have it set, 0/465 chapter nodes ever do — there is no UI/CLI path
+        // that writes it onto a chapter). Every real beat-generation call site sets
+        // context.NodeId to the beat's owning CHAPTER, per the Book -> Chapter -> Beat hard
+        // hierarchy (CLAUDE.md) — so the original `n.Id == context.NodeId` lookup queried the
+        // chapter row's own (always-null) DefaultLocation and NEVER found a value for ANY beat
+        // in ANY book, not just the 32/46 books that never had one authored. This walks up
+        // ParentNodeId to the nearest book/series ancestor first, the same ancestor-walk shape
+        // EntityDisambiguationService.ResolveNearestBookOrSeriesNodeIdAsync already uses for the
+        // identical "given a chapter, find its book" problem.
         if (string.IsNullOrWhiteSpace(context.Location) && context.NodeId != Guid.Empty && dbFactory != null)
         {
             await TraceStageAsync("DefaultLocation fallback", async () =>
             {
                 await using var locDb = await dbFactory.CreateDbContextAsync(ct);
-                var defaultLoc = await locDb.Nodes
-                    .AsNoTracking()
-                    .Where(n => n.Id == context.NodeId)
+                var bookId = await ResolveBookAncestorAsync(locDb, context.NodeId, ct);
+                if (bookId == null) return;
+
+                var defaultLoc = await locDb.Nodes.AsNoTracking()
+                    .Where(n => n.Id == bookId.Value)
                     .Select(n => n.DefaultLocation)
                     .FirstOrDefaultAsync(ct);
                 if (!string.IsNullOrWhiteSpace(defaultLoc))
@@ -240,6 +255,48 @@ public class ProseWriterRouter(
                     headerLine: "READABILITY — recent beats in this book scored below the clarity floor; write shorter, plainer sentences and cut interpretive gloss:",
                     category: FindingCategory.ProseHealth,
                     ct: ct);
+            });
+        }
+
+        // Reader-Proxy QA loop-back (2026-08-22 fix): ComprehensionDefect (comprehension probes),
+        // CraftChecklist (docs/DELIGHT.md binary checklist), and ReaderGripe (findings-only gripe
+        // jury) findings were filed correctly by their own audit tools but NEVER queried by any
+        // loop-back mechanism — only EMOTIONAL-DEPTH/READABILITY/STORYSCOPE fed forward into later
+        // beats. Same "prior findings become future generation constraints" pattern as those three.
+        var readerProxyGuidanceContext = context.ReaderProxyGuidanceContext;
+        if (string.IsNullOrEmpty(readerProxyGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
+        {
+            await TraceStageAsync("ReaderProxyQA guidance", async () =>
+            {
+                var comprehension = await BuildFindingsGuidanceAsync(
+                    context.NodeId, summaryPrefix: "COMPREHENSION",
+                    headerLine: "READER COMPREHENSION — prior probes found readers missed or misread these; make them unambiguous:",
+                    category: FindingCategory.ComprehensionDefect, ct: ct);
+                var craft = await BuildFindingsGuidanceAsync(
+                    context.NodeId, summaryPrefix: "CHECKLIST",
+                    headerLine: "CRAFT CHECKLIST — recent beats hit these banned mannerisms/DELIGHT violations; avoid repeating them:",
+                    category: FindingCategory.CraftChecklist, ct: ct);
+                var gripe = await BuildFindingsGuidanceAsync(
+                    context.NodeId, summaryPrefix: "GRIPE",
+                    headerLine: "READER GRIPES — a reader jury confirmed these complaints; do not repeat the pattern:",
+                    category: FindingCategory.ReaderGripe, ct: ct);
+                readerProxyGuidanceContext = string.Join("\n\n", new[] { comprehension, craft, gripe }.Where(s => !string.IsNullOrEmpty(s)));
+            });
+        }
+
+        // Continuity-violation feedback (2026-08-22 fix): prior CONTINUITY-VIOLATION findings
+        // (filed by ContinuityEnforcer below, after generation) become forward-looking
+        // guidance — same "prior findings become future generation constraints" pattern as
+        // EMOTIONAL-DEPTH/READABILITY above and Reader-Proxy QA below.
+        var continuityViolationGuidanceContext = context.ContinuityViolationGuidanceContext;
+        if (string.IsNullOrEmpty(continuityViolationGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
+        {
+            await TraceStageAsync($"{nameof(ContinuityEnforcer)} guidance", async () =>
+            {
+                continuityViolationGuidanceContext = await BuildFindingsGuidanceAsync(
+                    context.NodeId, summaryPrefix: "CONTINUITY-VIOLATION",
+                    headerLine: "CONTINUITY — a prior beat contradicted established canon; do not repeat the mistake:",
+                    category: FindingCategory.Contradiction, ct: ct);
             });
         }
 
@@ -320,8 +377,8 @@ public class ProseWriterRouter(
         var consequenceContext = context.ConsequenceContext;
         if (string.IsNullOrEmpty(consequenceContext) && consequence != null && context.CharactersInScene.Count > 0)
         {
-            TraceStage(nameof(ConsequenceService), () =>
-                { consequenceContext = consequence.BuildConstraints(context.CharactersInScene.ToList()); });
+            await TraceStageAsync(nameof(ConsequenceService), async () =>
+                { consequenceContext = await consequence.BuildConstraintsAsync(context.CharactersInScene.ToList(), storyTime: null, ct); });
         }
 
         // Cross-book persistent consequences for named characters (contract outcomes, faction burns).
@@ -556,6 +613,8 @@ public class ProseWriterRouter(
             DialogueContext        = dialogueContext,
             EmotionalGuidanceContext = emotionalGuidanceContext,
             ReadabilityGuidanceContext = readabilityGuidanceContext,
+            ReaderProxyGuidanceContext = readerProxyGuidanceContext,
+            ContinuityViolationGuidanceContext = continuityViolationGuidanceContext,
             TensionGuidanceContext = tensionGuidanceContext,
             ReaderKnowledgeContext = readerKnowledgeContext,
             ConsequenceContext     = consequenceContext,
@@ -570,6 +629,8 @@ public class ProseWriterRouter(
             OffscreenActivityContext = offscreenActivityContext,
             StructuralBlueprintGuidance = structuralBlueprintGuidance,
             SceneCollisionGuidance   = sceneCollisionGuidance,
+            BeatIndex                = beatIndex,
+            TotalBeats               = totalBeats,
         };
 
         // ── C1: Entity pre-check (soft gate — warns, never blocks) ────────────────
@@ -687,7 +748,7 @@ public class ProseWriterRouter(
         var plantBlockLen = 0;
         if (plantPayoffs != null && context.NodeId != Guid.Empty)
         {
-            try { plantBlockLen = (await plantPayoffs.BuildPlantContextAsync(context.NodeId, ct)).Length; }
+            try { plantBlockLen = (await plantPayoffs.BuildPlantContextAsync(context.NodeId, beatIndex, totalBeats, ct)).Length; }
             catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
         }
         var commandmentBlockLen = 0;
@@ -734,6 +795,8 @@ public class ProseWriterRouter(
                 new("DialogueService",     IsApplicable: nodeApplicable,    IsActive: dialogueContext.Length > 0,                                             BlockSizeChars: dialogueContext.Length),
                 new("EmotionalGuidance",   IsApplicable: nodeApplicable,    IsActive: emotionalGuidanceContext.Length > 0,                                    BlockSizeChars: emotionalGuidanceContext.Length),
                 new("ReadabilityGuidance", IsApplicable: nodeApplicable,    IsActive: readabilityGuidanceContext.Length > 0,                                  BlockSizeChars: readabilityGuidanceContext.Length),
+                new("ReaderProxyGuidance", IsApplicable: nodeApplicable,    IsActive: readerProxyGuidanceContext.Length > 0,                                  BlockSizeChars: readerProxyGuidanceContext.Length),
+                new("ContinuityViolationGuidance", IsApplicable: nodeApplicable, IsActive: continuityViolationGuidanceContext.Length > 0,                     BlockSizeChars: continuityViolationGuidanceContext.Length),
                 new("TensionEscalation",   IsApplicable: nodeApplicable,    IsActive: tensionGuidanceContext.Length > 0,                                      BlockSizeChars: tensionGuidanceContext.Length),
                 new("ReaderKnowledge",     IsApplicable: nodeApplicable,    IsActive: readerKnowledgeContext.Length > 0,                                      BlockSizeChars: readerKnowledgeContext.Length),
                 new("Consequence",         IsApplicable: nodeApplicable,    IsActive: consequenceContext.Length > 0,                                          BlockSizeChars: consequenceContext.Length),
@@ -802,6 +865,87 @@ public class ProseWriterRouter(
                             { await bookStateLedger.ExtractAndRecordAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); });
                     }
                 }
+            }
+
+            // Chapter-close summary extraction (2026-08-22 fix): ChapterSummaryService's write
+            // side previously only ran inside `prose --auto-run`'s own ChapterCloseProcessorService
+            // call — a beat written via --expand-beat/--run-corpus never persisted a
+            // NodeChapterSummaries row, even though the READ side (BuildPriorSummaryContextAsync
+            // above) fires unconditionally every beat. Fires here when this was the chapter's
+            // LAST beat (beatIndex == totalBeats - 1, scoped to whatever node context.NodeId is —
+            // the chapter, for every real call site except the flat-book legacy path), keyed by
+            // the resolved book id + this chapter's position among its book's leaf chapters —
+            // the same numbering AutoRunCli itself uses — so both paths write the same
+            // (nodeId, chapterIndex) row. Harmless if AutoRunCli's own explicit call also fires
+            // for the same chapter later (ExtractAndSaveAsync upserts) — that call runs AFTER
+            // reflow, so it naturally supersedes this pre-reflow snapshot with the final text.
+            if (chapterSummary != null && dbFactory != null && capturedNodeId != Guid.Empty
+                && totalBeats > 0 && beatIndex == totalBeats - 1 && !string.IsNullOrWhiteSpace(capturedResult))
+            {
+                await TraceStageAsync($"{nameof(ChapterSummaryService)}.ExtractAndSaveAsync", async () =>
+                {
+                    await using var chDb = await dbFactory.CreateDbContextAsync(CancellationToken.None);
+                    var bookId = await ResolveBookAncestorAsync(chDb, capturedNodeId, CancellationToken.None);
+                    if (bookId == null) return;
+
+                    var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(chDb, bookId.Value, CancellationToken.None);
+                    var chapterIndex = leafIds.IndexOf(capturedNodeId);
+                    if (chapterIndex < 0) return; // not a real chapter under this book — nothing to key by
+
+                    var chapterBeats = await (
+                        from bn in chDb.BeatNodes.AsNoTracking()
+                        join b in chDb.Beats.AsNoTracking() on bn.BeatId equals b.Id
+                        where bn.NodeId == capturedNodeId
+                        orderby bn.SortKey
+                        select b.Text).ToListAsync(CancellationToken.None);
+                    var chapterProse = string.Join("\n\n", chapterBeats.Where(t => !string.IsNullOrWhiteSpace(t)));
+
+                    await chapterSummary.ExtractAndSaveAsync(bookId.Value, chapterIndex, chapterProse, CancellationToken.None);
+                });
+            }
+
+            // ContinuityEnforcer (2026-08-22 fix): closes the "ContinuityService constraints are
+            // pure prompt-side hope with zero verification" gap. Immediate, same-beat check
+            // against exactly the CANONICAL/CONFIRMED claims shown in the canon block above —
+            // not the asynchronous, indirect Trinity Reconciliation re-extraction sweep, which
+            // can lag by sessions and never ties back to the specific beat/constraint set.
+            // Findings loop back into later beats via BuildFindingsGuidanceAsync exactly like
+            // EMOTIONAL-DEPTH/READABILITY/STORYSCOPE/Reader-Proxy QA above.
+            if (continuityEnforcer != null && findings != null && capturedNodeId != Guid.Empty
+                && context.CharactersInScene.Count > 0 && !string.IsNullOrWhiteSpace(capturedResult))
+            {
+                await TraceStageAsync(nameof(ContinuityEnforcer), async () =>
+                {
+                    List<ContinuityViolation> violations;
+                    try
+                    {
+                        violations = await continuityEnforcer.EnforceAsync(
+                            capturedResult, context.CharactersInScene.ToList(), CancellationToken.None);
+                    }
+                    catch (Exception ex) when (ex is not OperationCanceledException)
+                    {
+                        log.LogWarning(ex, "ContinuityEnforcer failed for node {NodeId} — not filing (could-not-evaluate is not the same as clean)", capturedNodeId);
+                        return;
+                    }
+                    if (violations.Count == 0 || dbFactory == null) return;
+
+                    await using var fdb = await dbFactory.CreateDbContextAsync(CancellationToken.None);
+                    var slug = await fdb.Nodes.AsNoTracking()
+                        .Where(n => n.Id == capturedNodeId).Select(n => n.Slug).FirstOrDefaultAsync(CancellationToken.None);
+                    if (string.IsNullOrEmpty(slug)) return;
+                    var fp = $"node:{slug}";
+                    foreach (var v in violations)
+                    {
+                        findings.Upsert(
+                            filePath: fp,
+                            chapterId: null,
+                            category: FindingCategory.Contradiction,
+                            severity: FindingSeverity.High,
+                            summary: $"CONTINUITY-VIOLATION [{v.EntityName}] {v.Predicate}: {v.Explanation}",
+                            snippet: v.EstablishedFact,
+                            suggestedFix: $"Established fact: {v.EstablishedFact}. Rewrite the contradicting line.");
+                    }
+                });
             }
 
             // C2: CanonGroundingService — flag PROVISIONAL-ENTITY findings for invented names (opt-in).
@@ -965,8 +1109,14 @@ public class ProseWriterRouter(
         var catKey    = category.ToString();
         var statusKey = FindingStatus.New.ToString();
 
+        // StartsWith, not ==: several Reader-Proxy QA categories (CraftChecklist, ComprehensionDefect,
+        // ReaderGripe) file findings scoped to a specific beat/chapter subpath
+        // ("node:{slug}/beat:{id}", "node:{slug}/ch:{index}"), not the bare book-level path —
+        // an exact match against `fp` silently found zero rows for those categories even when
+        // findings existed (2026-08-22 fix). Safe for the categories that DO use the bare path
+        // (EMOTIONAL-DEPTH, READABILITY, STORYSCOPE) since StartsWith is a strict superset of ==.
         var findings = await db.Findings.AsNoTracking()
-            .Where(f => f.FilePath == fp
+            .Where(f => f.FilePath.StartsWith(fp)
                         && f.Category == catKey
                         && f.Status == statusKey
                         && f.Summary.StartsWith(summaryPrefix))
@@ -1016,5 +1166,28 @@ public class ProseWriterRouter(
             .ToList();
 
         return candidates.Where(c => !knownNames.Contains(c)).ToList();
+    }
+
+    /// <summary>
+    /// Walk ParentNodeId from any node (typically a chapter) up to the nearest "book" or
+    /// "series" ancestor. Shared by the DefaultLocation fallback and the chapter-close summary
+    /// extraction below — same shape as EntityDisambiguationService.ResolveNearestBookOrSeriesNodeIdAsync,
+    /// duplicated locally (rather than taking a dependency on that service) since ProseWriterRouter
+    /// already opens its own short-lived DbContext for each of these one-off lookups.
+    /// </summary>
+    private static async Task<Guid?> ResolveBookAncestorAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
+    {
+        var currentId = (Guid?)nodeId;
+        for (var depth = 0; depth < 5 && currentId is { } cid; depth++)
+        {
+            var row = await db.Nodes.AsNoTracking()
+                .Where(n => n.Id == cid)
+                .Select(n => new { n.Kind, n.ParentNodeId })
+                .FirstOrDefaultAsync(ct);
+            if (row == null) return null;
+            if (row.Kind is "book" or "series") return cid;
+            currentId = row.ParentNodeId;
+        }
+        return null;
     }
 }

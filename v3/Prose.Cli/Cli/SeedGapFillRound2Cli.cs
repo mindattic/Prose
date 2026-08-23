@@ -339,6 +339,11 @@ public static class SeedGapFillRound2Cli
         return 1;
     }
 
+    // Write-gate Phase 2 (2026-08-22): both routed through EntityOriginService.SetEntityOriginAsync
+    // — the one sanctioned OriginNodeId write path — instead of an independent raw write. Sync
+    // wrapper (.GetAwaiter().GetResult()) because the callers (SeedCharacter/SeedPlace/
+    // SeedCorponation) use `ref int` counters and can't be made async without a larger refactor;
+    // same bridging pattern CharacterMapper.PersistAsync already uses elsewhere in this codebase.
     private static int ClearOrigin(IServiceProvider services, Guid entityId, bool dryRun, string reason)
     {
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
@@ -348,8 +353,7 @@ public static class SeedGapFillRound2Cli
         if (row.OriginNodeId == null) return 0;
         Console.WriteLine($"[seed-gap-fill-round2] scope-fix: {row.Name} -> unscoped ({reason}){(dryRun ? " (dry-run)" : "")}");
         if (dryRun) return 1;
-        row.OriginNodeId = null;
-        db.SaveChanges();
+        services.GetRequiredService<EntityOriginService>().SetEntityOriginAsync(entityId, null).GetAwaiter().GetResult();
         return 1;
     }
 
@@ -357,10 +361,7 @@ public static class SeedGapFillRound2Cli
     {
         if (bookNodeId == Guid.Empty) return; // unscoped — shared universe-wide entity
         if (!Guid.TryParse(entityIdStr, out var entityId)) return;
-        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        using var db = dbFactory.CreateDbContext();
-        var row = db.Entities.FirstOrDefault(e => e.Id == entityId);
-        if (row != null) { row.OriginNodeId = bookNodeId; db.SaveChanges(); }
+        services.GetRequiredService<EntityOriginService>().SetEntityOriginAsync(entityId, bookNodeId).GetAwaiter().GetResult();
     }
 
     private static string? ArgValue(string[] args, string name)

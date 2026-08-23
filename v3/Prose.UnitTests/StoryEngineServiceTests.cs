@@ -89,26 +89,26 @@ public class ConsequenceServiceTests
     public void Cleanup() { if (Directory.Exists(rootDir)) Directory.Delete(rootDir, true); }
 
     [Test]
-    public void EmptyCharacters_ReturnsEmpty()
+    public async Task EmptyCharacters_ReturnsEmpty()
     {
-        var result = svc.BuildConstraints(["Nobody"]);
+        var result = await svc.BuildConstraintsAsync(["Nobody"]);
         Assert.That(result, Is.Empty);
     }
 
     [Test]
-    public void DeadCharacter_IncludesHardConstraint()
+    public async Task DeadCharacter_IncludesHardConstraint()
     {
         var character = new CharacterData { Name = "Kyle", Status = "dead" };
         repo.Save(character);
         repo.Reload();
 
-        var result = svc.BuildConstraints(["Kyle"]);
+        var result = await svc.BuildConstraintsAsync(["Kyle"]);
         Assert.That(result, Does.Contain("dead"));
         Assert.That(result, Does.Contain("HARD CONSTRAINT"));
     }
 
     [Test]
-    public void CharacterWithCyberware_ListsChrome()
+    public async Task CharacterWithCyberware_ListsChrome()
     {
         var character = new CharacterData
         {
@@ -118,12 +118,12 @@ public class ConsequenceServiceTests
         repo.Save(character);
         repo.Reload();
 
-        var result = svc.BuildConstraints(["Sable"]);
+        var result = await svc.BuildConstraintsAsync(["Sable"]);
         Assert.That(result, Does.Contain("Thermal Eyes"));
     }
 
     [Test]
-    public void CharacterWithWeapon_ListsGear()
+    public async Task CharacterWithWeapon_ListsGear()
     {
         var character = new CharacterData
         {
@@ -133,7 +133,7 @@ public class ConsequenceServiceTests
         repo.Save(character);
         repo.Reload();
 
-        var result = svc.BuildConstraints(["Vex"]);
+        var result = await svc.BuildConstraintsAsync(["Vex"]);
         Assert.That(result, Does.Contain("Hearthstone HM-7"));
     }
 }

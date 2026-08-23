@@ -30,7 +30,15 @@ public class ReaderKnowledgeService(
     IDbContextFactory<ProseDbContext> dbFactory,
     ILogger<ReaderKnowledgeService> log)
 {
-    private const int MaxInjected = 6;
+    // 2026-08-22 fix: a pure "most recent N" window silently dropped every OLDER reveal forever
+    // once a book passed MaxInjected facts — on a long book this meant a foundational fact (a
+    // character death, a hidden identity reveal) could scroll out of the window and the writer
+    // would lose all guard-rail against re-revealing or contradicting it. Split the budget: a
+    // recency window for near-term dramatic irony, plus a small foundational anchor of the
+    // OLDEST facts (the ones most likely to be permanent reader knowledge) so nothing vanishes
+    // outright — still bounded, not unbounded growth.
+    private const int MaxRecentInjected = 8;
+    private const int MaxFoundationalInjected = 4;
     private const int MaxExtractedPerBeat = 3;
 
     // ── Public API ────────────────────────────────────────────────────────────
@@ -128,20 +136,38 @@ public class ReaderKnowledgeService(
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var facts = await db.ReaderKnowledgeFacts.AsNoTracking()
+            var recent = await db.ReaderKnowledgeFacts.AsNoTracking()
                 .Where(f => f.NodeId == nodeId)
                 .OrderByDescending(f => f.DetectedAt)
-                .Take(MaxInjected)
-                .Select(f => f.Fact)
+                .Take(MaxRecentInjected)
+                .Select(f => new { f.Fact, f.DetectedAt })
                 .ToListAsync(ct);
 
-            if (facts.Count == 0) return "";
+            if (recent.Count == 0) return "";
+
+            var foundational = new List<string>();
+            if (recent.Count == MaxRecentInjected) // otherwise fewer facts exist than the window holds — nothing older to anchor
+            {
+                var recentDetectedAts = recent.Select(f => f.DetectedAt).ToHashSet();
+                foundational = await db.ReaderKnowledgeFacts.AsNoTracking()
+                    .Where(f => f.NodeId == nodeId && !recentDetectedAts.Contains(f.DetectedAt))
+                    .OrderBy(f => f.DetectedAt)
+                    .Take(MaxFoundationalInjected)
+                    .Select(f => f.Fact)
+                    .ToListAsync(ct);
+            }
 
             var sb = new StringBuilder();
             sb.AppendLine("READER KNOWLEDGE STATE — what the reader now knows (as of the end of the previous beat):");
             sb.AppendLine("Write with awareness of this. Do not re-reveal facts the reader already has. Use asymmetries for dramatic irony.");
-            foreach (var f in facts)
-                sb.AppendLine($"• {f}");
+            foreach (var f in recent)
+                sb.AppendLine($"• {f.Fact}");
+            if (foundational.Count > 0)
+            {
+                sb.AppendLine("EARLIER-ESTABLISHED (still true, still known to the reader — do not contradict):");
+                foreach (var f in foundational)
+                    sb.AppendLine($"• {f}");
+            }
 
             return sb.ToString().TrimEnd();
         }
