@@ -134,6 +134,116 @@ public class WriteGateTests
         Assert.ThrowsAsync<WriteGateRejectedException>(() => db.SaveChangesAsync());
     }
 
+    private async Task<Guid> SeedBookAsync(Guid universeId, Guid? previousNodeId = null)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var id = Guid.CreateVersion7();
+        db.Nodes.Add(new BookNode
+        {
+            Id = id,
+            UniverseId = universeId,
+            Title = "Book " + id.ToString("N")[..8],
+            Slug = "book-" + id.ToString("N"),
+            PreviousNodeId = previousNodeId,
+        });
+        await db.SaveChangesAsync();
+        return id;
+    }
+
+    // ── CrossUniverseOriginCheck ─────────────────────────────────────────────
+
+    [Test]
+    public async Task CrossUniverseOriginCheck_RejectsOriginNodeInADifferentUniverse()
+    {
+        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { new CrossUniverseOriginCheck() };
+        var universeA = Guid.CreateVersion7();
+        var universeB = Guid.CreateVersion7();
+        var bookInB = await SeedBookAsync(universeB);
+        var characterInA = await SeedCharacterAsync("Yemina Fola", universeA);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var entity = await db.Entities.FirstAsync(e => e.Id == characterInA);
+        entity.OriginNodeId = bookInB;
+
+        var ex = Assert.ThrowsAsync<WriteGateRejectedException>(() => db.SaveChangesAsync());
+        Assert.That(ex!.Message, Does.Contain("Universe division is absolute"));
+
+        await using var verify = await dbFactory.CreateDbContextAsync();
+        Assert.That((await verify.Entities.FirstAsync(e => e.Id == characterInA)).OriginNodeId, Is.Null);
+    }
+
+    [Test]
+    public async Task CrossUniverseOriginCheck_AllowsOriginNodeInTheSameUniverse()
+    {
+        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { new CrossUniverseOriginCheck() };
+        var universeId = Guid.CreateVersion7();
+        var bookId = await SeedBookAsync(universeId);
+        var characterId = await SeedCharacterAsync("Raphael", universeId);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var entity = await db.Entities.FirstAsync(e => e.Id == characterId);
+        entity.OriginNodeId = bookId;
+        await db.SaveChangesAsync();
+
+        await using var verify = await dbFactory.CreateDbContextAsync();
+        Assert.That((await verify.Entities.FirstAsync(e => e.Id == characterId)).OriginNodeId, Is.EqualTo(bookId));
+    }
+
+    // ── PreviousNodeCycleCheck ───────────────────────────────────────────────
+
+    [Test]
+    public async Task PreviousNodeCycleCheck_RejectsDirectSelfReference()
+    {
+        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { new PreviousNodeCycleCheck() };
+        var universeId = Guid.CreateVersion7();
+        var bookId = await SeedBookAsync(universeId);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var book = await db.Nodes.OfType<BookNode>().FirstAsync(n => n.Id == bookId);
+        book.PreviousNodeId = bookId;
+
+        var ex = Assert.ThrowsAsync<WriteGateRejectedException>(() => db.SaveChangesAsync());
+        Assert.That(ex!.Message, Does.Contain("cycle"));
+    }
+
+    [Test]
+    public async Task PreviousNodeCycleCheck_RejectsLongerLoop()
+    {
+        // A -> B -> A: setting A.PreviousNodeId = B after B.PreviousNodeId = A already exists
+        // must be caught by walking the chain, not just an immediate-self-reference check.
+        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { new PreviousNodeCycleCheck() };
+        var universeId = Guid.CreateVersion7();
+        var bookA = await SeedBookAsync(universeId);
+        var bookB = await SeedBookAsync(universeId, previousNodeId: bookA);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var a = await db.Nodes.OfType<BookNode>().FirstAsync(n => n.Id == bookA);
+        a.PreviousNodeId = bookB;
+
+        Assert.ThrowsAsync<WriteGateRejectedException>(() => db.SaveChangesAsync());
+    }
+
+    [Test]
+    public async Task PreviousNodeCycleCheck_AllowsAStraightSequelChain()
+    {
+        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { new PreviousNodeCycleCheck() };
+        var universeId = Guid.CreateVersion7();
+        var bookA = await SeedBookAsync(universeId);
+        var bookB = await SeedBookAsync(universeId, previousNodeId: bookA);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var bookC = new BookNode
+        {
+            Id = Guid.CreateVersion7(), UniverseId = universeId, Title = "Book C",
+            Slug = "book-c-" + Guid.CreateVersion7().ToString("N"), PreviousNodeId = bookB,
+        };
+        db.Nodes.Add(bookC);
+        await db.SaveChangesAsync();
+
+        await using var verify = await dbFactory.CreateDbContextAsync();
+        Assert.That((await verify.Nodes.FirstAsync(n => n.Id == bookC.Id)).PreviousNodeId, Is.EqualTo(bookB));
+    }
+
     // ── DefaultWriteAuditService: the gate's first real post-save audit ─────
 
     [Test]

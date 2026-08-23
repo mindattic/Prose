@@ -14,6 +14,12 @@ namespace Prose.Cli;
 /// entity merges). See <c>WorldValidationTests.NoSelfAliases</c> for the detection query this
 /// mirrors. All four alias tables are system-versioned (temporal) — a delete here is recoverable
 /// via SQL Server's own history, same safety net as every other entity write in this codebase.
+///
+/// Write-gate scope (2026-08-22 triage): exempt, same class as <c>RestoreEntityCli</c>/
+/// <c>RestoreNodeFieldCli</c> — this tool exists specifically to undo a bad state that IS the
+/// exact violation <see cref="Prose.Core.Services.WriteGate.SelfAliasSyncCheck"/> now blocks at
+/// the source; gating the cleanup with the same check it's cleaning up after is circular. Its
+/// <c>ExecuteDeleteAsync</c> calls are intentionally left ungated.
 /// </summary>
 public static class FixSelfAliasesCli
 {

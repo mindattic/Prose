@@ -1149,6 +1149,8 @@ public static class ServiceCollectionExtensions
         // doc comment: WriteGateBootstrap MUST be eagerly resolved once at Hub startup or these
         // never actually wire into WriteGateScope.
         services.AddSingleton<Prose.Core.Services.WriteGate.SelfAliasSyncCheck>();
+        services.AddSingleton<Prose.Core.Services.WriteGate.CrossUniverseOriginCheck>();
+        services.AddSingleton<Prose.Core.Services.WriteGate.PreviousNodeCycleCheck>();
         services.AddSingleton<Prose.Core.Services.WriteGate.IWriteAuditService, Prose.Core.Services.WriteGate.DefaultWriteAuditService>();
         services.AddSingleton<Prose.Core.Services.WriteGate.WriteGateBootstrap>();
 

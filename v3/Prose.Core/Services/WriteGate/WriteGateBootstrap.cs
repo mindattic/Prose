@@ -17,9 +17,13 @@ namespace Prose.Core.Services.WriteGate;
 /// </summary>
 public sealed class WriteGateBootstrap
 {
-    public WriteGateBootstrap(SelfAliasSyncCheck selfAlias, IWriteAuditService audit)
+    public WriteGateBootstrap(
+        SelfAliasSyncCheck selfAlias,
+        CrossUniverseOriginCheck crossUniverseOrigin,
+        PreviousNodeCycleCheck previousNodeCycle,
+        IWriteAuditService audit)
     {
-        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { selfAlias };
+        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { selfAlias, crossUniverseOrigin, previousNodeCycle };
         WriteGateScope.AuditService = audit;
     }
 }

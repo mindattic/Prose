@@ -20,6 +20,14 @@ namespace Prose.Cli;
 /// the character whose relationship it is (Universe division absolute — a same-named entity in a
 /// different universe must never resolve as the target). Reports ambiguous/unresolved rows rather
 /// than guessing.
+///
+/// Write-gate scope (2026-08-22 triage): accepted exception, same class as the
+/// <c>Rebuild*RelationalCli</c> exemptions — a raw <c>ExecuteUpdateAsync</c>, but deterministic
+/// re-derivation from already-seeded source-of-truth rows (Name/Slug/alias match, universe-scoped,
+/// ambiguous cases reported and left untouched rather than guessed) that cannot produce a
+/// narratively-wrong result. The plan's own audit noted no independent raw-write path existed for
+/// <c>CharacterRelationships</c> at the time — this file is that path, found during Phase-3
+/// triage; documenting it now so it isn't rediscovered as a gap.
 /// </summary>
 public static class BackfillCharacterRelationshipsCli
 {
