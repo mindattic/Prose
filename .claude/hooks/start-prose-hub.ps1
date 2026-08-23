@@ -47,6 +47,16 @@ function Get-NewestSourceMtime {
 }
 
 try {
+    # This Hub is local-only (binds 127.0.0.1; never the thing deployed to
+    # prose.azurewebsites.net via azure-deploy.yml, a completely separate pipeline). With
+    # neither DOTNET_ENVIRONMENT nor ASPNETCORE_ENVIRONMENT set, ASP.NET Core defaults
+    # EnvironmentName to "Production", which makes AddMindAtticAuthentication fail-close (no
+    # ConfigureDataProtection configured for local dev) and silently drops --reset-password
+    # from the Hub at every startup. Start-Process inherits the parent's environment block, so
+    # setting this here (not in Program.cs, which keeps the library's real production safety
+    # check intact) covers all three launch paths below.
+    $env:ASPNETCORE_ENVIRONMENT = 'Development'
+
     $needsRedeploy = $false
     if (-not (Test-Path $deployedExe)) {
         $needsRedeploy = $true

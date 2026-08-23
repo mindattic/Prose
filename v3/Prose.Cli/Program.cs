@@ -555,6 +555,22 @@ if (args.Contains("--generate-canon-md"))
     return;
 }
 
+// CLI mode: read/edit CanonDocumentSections directly — the CLI equivalent of the MCP tools
+// list_canon_sections / set_canon_section, built 2026-08-23 to close the gap where canon
+// editing was MCP-only and unreachable from a CLI-only session.
+//   prose --list-canon-sections --type <DocumentType> [--universe <slug>]
+//   prose --set-canon-section --type <DocumentType> --key <sectionKey> --file <path.md> [--title <t>] [--universe <slug>]
+if (args.Contains("--list-canon-sections"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ListCanonSectionsCli", args);
+    return;
+}
+if (args.Contains("--set-canon-section"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetCanonSectionCli", args);
+    return;
+}
+
 // CLI mode: assemble the unified Book Context Document for a node.
 // Merges hand-authored NodeBible + Structural Blueprint + Beat Spine into one document,
 // writes the merged view to docs/nodes/{CODE}.md (read-only disk mirror) only. Nodes.NodeBible

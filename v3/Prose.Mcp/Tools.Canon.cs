@@ -104,10 +104,7 @@ public class CanonDocTools
         if (universeId == null)
             return JsonSerializer.Serialize(new { error = "unknown_universe", universeSlug }, CanonTools.JsonOpts);
 
-        await using var db = await dbFactory.CreateDbContextAsync();
-        var doc = await db.CanonDocuments
-            .Include(d => d.Sections.OrderBy(s => s.SortKey))
-            .FirstOrDefaultAsync(d => d.UniverseId == universeId.Value && d.DocumentType == documentType);
+        var doc = await canonDocs.FindDocumentAsync(documentType, universeId.Value);
 
         if (doc == null)
             return JsonSerializer.Serialize(new { error = "document_not_found", documentType, universeSlug }, CanonTools.JsonOpts);

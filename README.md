@@ -123,9 +123,10 @@ defaulting to "everything" (closing the exact gap behind a cross-universe conten
 and extended self-healing repair (`BeatRepairService.SelfHealAsync`) to the expensive Full-tier
 audits (SWAIN, DRAMATIC-Q, VERIFY), so a failing check now attempts a real targeted rewrite before
 ever filing a Finding. **This is the current architecture**: `Prose.Cli` + `Prose.Mcp` are the
-entire user-facing surface. See [Deployment](#deployment) for what this means for the still-wired
-Azure App Service pipeline, and [Tests](#tests) for what it means for the Cypress suite — both
-predate this epoch and reference the deleted UI; neither has been reconciled yet.
+entire user-facing surface. The Azure App Service deploy pipeline this epoch had left stale has
+since been retired entirely (see [Deployment](#deployment)) — Prose is local-only. See
+[Tests](#tests) for what the deleted UI means for the Cypress suite, which still hasn't been
+reconciled.
 
 ---
 
@@ -141,7 +142,7 @@ prose CLI  (dotnet run --project v3/Prose.Cli -- <args>)          Prose.Mcp  (MC
                     │  311 services directly under Services/, 353 including
                     │  Services/Audit, /CoverImage, /Local, /Operator (KDP-automation
                     │  tool-calling only), /VideoGen — see The Subsystems below
-                    │  EF Core → SQL Server (LocalDB in dev, Azure SQL in prod)
+                    │  EF Core → SQL Server (LocalDB — local-only app, no hosted deployment)
                     ▼
                     Database  (SQL Server)
                     │  263 base tables + 168 system-versioned _History tables
@@ -1320,21 +1321,19 @@ dotnet run --project v3/Prose.Cli -- --migrate-sql --schema
 
 ## Deployment
 
-**This section documents the current, as-found state — including a break introduced by Epoch 4
-that has not yet been reconciled.**
+**Retired 2026-08-23 (author decision).** Prose is a local-only, single-user application — there
+is no hosted/production deployment target and there will not be one. The Azure App Service
+pipeline (`.github/workflows/azure-deploy.yml`), the Azure SQL provisioning guide (`infra/`), and
+`docs/infra/AZURE_DEPLOY.md` have all been deleted. This resolves the open question the Epoch 4
+break had left unanswered (deploy the MCP server web-facing vs. build+test+migrate only vs.
+retire) — the answer is retire; there is no browser surface, and there is no second user to serve
+one to.
 
-`.github/workflows/azure-deploy.yml` runs a four-stage pipeline on every push to `master`: build →
-test → migrate → deploy, targeting an Azure App Service named `mindattic-prose` (the `prose`
-hostname was already taken on `*.azurewebsites.net`) against Azure SQL Database with OIDC/managed-identity
-auth — no passwords anywhere. Full provisioning guide: [`infra/README.md`](infra/README.md).
-
-**The build/publish/deploy steps still target `v3/Prose.Codex/Prose.Codex.csproj` — a project
-Epoch 4 deleted.** The next push to `master` will fail at `dotnet restore
-v3/Prose.Codex/Prose.Codex.csproj`. The `migrate` job (schema bootstrap against Azure SQL via
-`Prose.Cli --migrate-sql --schema`) is unaffected and would still succeed on its own. This is a
-known, currently-live gap — not yet decided whether the pipeline should deploy the MCP server,
-deploy nothing web-facing and become build+test+migrate only, or be retired in favor of a
-different distribution model now that there's no browser surface to serve.
+The only "deployment" that exists is local: `v3/Prose.Hub/tools/deploy.ps1` publishes
+`Prose.Hub.exe` (bundling `Prose.Cli` + `Prose.Mcp` + `Prose.Core`) to `C:\Apps\Prose\Prose.Hub\`
+and launches it — see `.claude/hooks/start-prose-hub.ps1` for how this happens automatically at
+the start of every Claude Code session. `dotnet test v3/Prose.UnitTests` still runs locally the
+same way it always has; there is no CI runner and no `master`-push automation of any kind.
 
 ---
 

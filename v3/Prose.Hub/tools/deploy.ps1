@@ -126,6 +126,15 @@ $launchBatPath = Join-Path $out 'launch.bat'
     ') else (',
     '    echo Source repo not found at "%DEPLOY_PS1%" - launching existing build without redeploying.',
     ')',
+    'rem Local-only Hub (binds 127.0.0.1, never the thing deployed to prose.azurewebsites.net',
+    'rem via azure-deploy.yml, a completely separate pipeline) - with neither DOTNET_ENVIRONMENT',
+    'rem nor ASPNETCORE_ENVIRONMENT set, ASP.NET Core defaults EnvironmentName to "Production",',
+    'rem which makes AddMindAtticAuthentication fail-close (no ConfigureDataProtection configured',
+    'rem for local dev) and --reset-password silently unavailable via the Hub. Correcting the',
+    'rem environment classification here (this launcher is regenerated fresh every deploy, not a',
+    'rem production artifact) is the honest fix - not loosening the library''s production safety',
+    'rem check itself, which stays intact in Program.cs for an actual production deployment.',
+    'set "ASPNETCORE_ENVIRONMENT=Development"',
     "start `"`" `"%~dp0$exeName`""
 ) | Set-Content $launchBatPath -Encoding ascii
 

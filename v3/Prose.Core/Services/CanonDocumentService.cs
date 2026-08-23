@@ -93,6 +93,32 @@ public class CanonDocumentService
 
     // ── Upsert a single section ───────────────────────────────────────────────
 
+    /// <summary>
+    /// Looks up a <see cref="CanonDocument"/> (with its sections, ordered) by document type and a
+    /// caller-requested universe id — resolving through <see cref="CanonDocumentTypeRegistry.
+    /// ResolveEffectiveUniverseIdAsync"/> first, exactly as <see cref="UpsertSectionAsync"/> and
+    /// <see cref="GenerateMdAsync"/> already do.
+    ///
+    /// 2026-08-23 fix: extracted because two independent read call sites (the MCP tool
+    /// <c>list_canon_sections</c> and the CLI's <c>--list-canon-sections</c>, added the same day)
+    /// had each queried <c>CanonDocuments</c> directly against the caller's raw requested
+    /// universe id, without the effective-scope resolution — so a "base"-scope type (e.g.
+    /// <c>EngineGuide</c>, stored under <see cref="Universe.SharedId"/> regardless of what
+    /// universe is asked for) could never be found by either read path, even though the write
+    /// path (<see cref="UpsertSectionAsync"/>) already handled it correctly. Same "two
+    /// independent implementations of the same lookup drift apart" bug class as the write-gate
+    /// initiative's <c>DeleteNodeCli</c>/<c>CloneNodeCli</c> findings — fixed by giving both
+    /// callers one shared, correct implementation instead of two copies.
+    /// </summary>
+    public async Task<CanonDocument?> FindDocumentAsync(string documentType, Guid requestedUniverseId, CancellationToken ct = default)
+    {
+        var effectiveUniverseId = await typeRegistry.ResolveEffectiveUniverseIdAsync(documentType, requestedUniverseId, ct);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        return await db.CanonDocuments
+            .Include(d => d.Sections.OrderBy(s => s.SortKey))
+            .FirstOrDefaultAsync(d => d.UniverseId == effectiveUniverseId && d.DocumentType == documentType, ct);
+    }
+
     public async Task<UpsertResult> UpsertSectionAsync(
         string documentType,
         Guid universeId,

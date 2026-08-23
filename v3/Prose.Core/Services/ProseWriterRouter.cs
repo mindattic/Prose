@@ -386,7 +386,7 @@ public class ProseWriterRouter(
         {
             TraceStage(nameof(ConsequenceEngine), () =>
             {
-                var engineBlock = consequenceEngine.BuildConsequenceContext(context.CharactersInScene[0]);
+                var engineBlock = consequenceEngine.BuildConsequenceContext(context.CharactersInScene);
                 if (!string.IsNullOrEmpty(engineBlock))
                     consequenceContext = string.IsNullOrEmpty(consequenceContext)
                         ? engineBlock

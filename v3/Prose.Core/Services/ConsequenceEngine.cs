@@ -133,20 +133,30 @@ public class ConsequenceEngine
     public List<WorldConsequence> GetRecent(int count = 10) =>
         GetAll().OrderByDescending(c => c.RecordedAt).Take(count).ToList();
 
+    /// <summary>Single-character convenience overload — see the list overload below.</summary>
+    public string BuildConsequenceContext(string? protagonistName = null) =>
+        BuildConsequenceContext(protagonistName != null ? new[] { protagonistName } : Array.Empty<string>());
+
     /// <summary>
     /// Build a context block for LLM injection — what has happened in the world
-    /// that should affect this story. Combines protagonist-specific consequences
-    /// with the 5 most recent world events, deduplicates, and caps at 10 entries.
-    /// Unresolved consequences are explicitly flagged so the LLM knows they are
-    /// still active and can reference or resolve them in the new story.
+    /// that should affect this story. Combines every named character's personal
+    /// consequences with the 5 most recent world events, deduplicates, and caps at
+    /// 10 entries. Unresolved consequences are explicitly flagged so the LLM knows
+    /// they are still active and can reference or resolve them in the new story.
+    ///
+    /// 2026-08-23 fix: previously single-character only (`string? protagonistName`) —
+    /// ProseWriterRouter's only call site passed just `CharactersInScene[0]`, so in any
+    /// multi-character scene, cross-book consequences for character #2+ were silently
+    /// never surfaced even though everyone else in the scene could have an active,
+    /// unresolved consequence just as relevant as the first character's.
     /// </summary>
-    public string BuildConsequenceContext(string? protagonistName = null)
+    public string BuildConsequenceContext(IReadOnlyList<string> protagonistNames)
     {
         var relevant = new List<WorldConsequence>();
 
-        // Personal consequences first — things that happened TO this character
-        if (protagonistName != null)
-            relevant.AddRange(GetConsequencesFor(protagonistName));
+        // Personal consequences first — things that happened TO any character in scene
+        foreach (var name in protagonistNames)
+            relevant.AddRange(GetConsequencesFor(name));
 
         // Then recent world events — things that changed the world regardless of who did them
         relevant.AddRange(GetRecent(5));
