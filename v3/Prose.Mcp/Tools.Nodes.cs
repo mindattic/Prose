@@ -124,16 +124,13 @@ public class NodeTools
         => CreateNodeCoreAsync(title, "chapter", description, seed: "", targetBeats: 0, parentNodeIdOrSlug: parentNodeIdOrSlug, code: "", previous: "");
 
     /// <summary>Resolve a node reference (GUID or slug) to its id. Empty input → null.</summary>
-    private async Task<Guid?> ResolveNodeIdAsync(string? slugOrId)
-    {
-        if (string.IsNullOrWhiteSpace(slugOrId)) return null;
-        await using var db = await dbFactory.CreateDbContextAsync();
-        if (Guid.TryParse(slugOrId, out var gid))
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            return await db.Nodes.IgnoreQueryFilters().AsNoTracking().AnyAsync(s => s.Id == gid) ? gid : (Guid?)null;
-        return await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slugOrId || s.NodeCode == slugOrId).Select(s => (Guid?)s.Id).FirstOrDefaultAsync();
-    }
+    /// <summary>
+    /// 2026-08-23: applied the 2026-08-17 <c>IgnoreQueryFilters()</c> fix to its GUID branch but
+    /// not its slug/code branch, so an explicit slug still resolved to null cross-universe.
+    /// Delegates to <see cref="NodeRefResolver"/>.
+    /// </summary>
+    private Task<Guid?> ResolveNodeIdAsync(string? slugOrId) =>
+        NodeRefResolver.ResolveAsync(dbFactory, slugOrId);
 
     [McpServerTool, Description("List nodes. Use kind='book' to list all root narratives; kind='chapter' for all sub-nodes (contain beats). Returns a flat list of id, slug, title, kind, status, beat-count, stale-count.")]
     public Task<string> ListBooks(

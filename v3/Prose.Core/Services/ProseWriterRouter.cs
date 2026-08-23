@@ -342,6 +342,12 @@ public class ProseWriterRouter(
                     .Where(c => sceneNames.Any(n =>
                         c.EntityName.StartsWith(n, StringComparison.OrdinalIgnoreCase) ||
                         n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase)))
+                    // 2026-08-23: never hand the model point-in-time state as a
+                    // do-not-contradict constraint. A stale location_current from a previous
+                    // book would instruct this beat to put the character where they used to be
+                    // — actively causing the drift this block exists to prevent. See
+                    // ContinuityService.VolatilePredicates.
+                    .Where(c => !ContinuityService.IsVolatilePredicate(c.Predicate))
                     .Take(24)
                     .ToList();
                 if (claims.Count > 0)

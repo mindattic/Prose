@@ -565,6 +565,20 @@ if (args.Contains("--list-canon-sections"))
     Environment.ExitCode = await HubCliClient.ForwardAsync("ListCanonSectionsCli", args);
     return;
 }
+if (args.Contains("--get-canon-section"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GetCanonSectionCli", args);
+    return;
+}
+
+// CLI mode: search seeded entities by name or alias — the read-side counterpart to
+// --add-character, so authoring can check for an existing entity before creating a duplicate.
+//   prose --find-entity --name "<text>" [--type character] [--universe <slug>] [--limit N]
+if (args.Contains("--find-entity"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FindEntityCli", args);
+    return;
+}
 if (args.Contains("--set-canon-section"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SetCanonSectionCli", args);

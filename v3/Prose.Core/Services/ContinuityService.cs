@@ -67,6 +67,38 @@ public class ContinuityService
         "age", "tenure_years", "career_length_years", "zone_age_years", "duration_years", "years",
     };
 
+    /// <summary>
+    /// Predicates describing a character's state AT A MOMENT rather than a durable fact about
+    /// them. A later value does not contradict an earlier one — it supersedes it, because the
+    /// character moved, or appeared in another book, or changed what they were carrying.
+    ///
+    /// Added 2026-08-23 after generating the first chapter of a sequel: roughly a quarter of all
+    /// findings on that chapter were <c>CONTINUITY-VIOLATION [Kyle Ellen Corbin] location_current</c>
+    /// and <c>appearance_in_story</c> — fired because BCODA had recorded where Kyle was standing
+    /// and which story he was in, and Book 2 legitimately put him somewhere else. Left unfixed
+    /// this fires on essentially every beat of every sequel for every recurring character, and
+    /// the noise buries the real contradictions the ledger exists to catch.
+    ///
+    /// The ledger is for invariants ("his mentor was Seito", "he is carrier seven"). Time-scoped
+    /// state belongs to <c>EntityStateEvents</c> / <c>WorldStateAtBeatService</c>, which model a
+    /// timeline instead of asserting one permanent truth.
+    /// </summary>
+    private static readonly HashSet<string> VolatilePredicates = new(StringComparer.Ordinal)
+    {
+        "location_current", "appearance_in_story", "current_location", "location",
+        "present_in_scene", "carrying", "wearing", "status_current", "current_status",
+        "mood", "current_mood", "companions", "current_job", "current_contract",
+    };
+
+    /// <summary>True when <paramref name="predicate"/> records momentary state, so a differing
+    /// later value supersedes rather than contradicts. Public because the same exclusion has to
+    /// apply everywhere the ledger is consumed as "established canon" — notably
+    /// <c>ContinuityEnforcer</c>'s post-generation check and <c>ProseWriterRouter</c>'s
+    /// ESTABLISHED CANON prompt block, where feeding a stale <c>location_current</c> would
+    /// actively instruct the model to put the character in the wrong place.</summary>
+    public static bool IsVolatilePredicate(string? predicate) =>
+        VolatilePredicates.Contains(Normalize(predicate ?? ""));
+
     private static readonly Dictionary<string, int> NumberWords = new(StringComparer.OrdinalIgnoreCase)
     {
         ["zero"] = 0, ["one"] = 1, ["two"] = 2, ["three"] = 3, ["four"] = 4, ["five"] = 5,
@@ -192,7 +224,11 @@ public class ContinuityService
         // and been handled by the `existing` branch above, so every row here is guaranteed to
         // have a different raw object — this only changes HOW the mismatch is judged, not which
         // rows are candidates.
-        var conflict = db.ContinuityClaims
+        // A volatile predicate records where/how the character was at one moment; a later,
+        // different value is the character having moved on, not the prose contradicting canon.
+        // Skipping conflict detection here means the new claim lands as NEW rather than
+        // CONTRADICTED — see VolatilePredicates for why this matters to every sequel.
+        var conflict = IsVolatilePredicate(incoming.Predicate) ? null : db.ContinuityClaims
             .Where(c => c.EntityId == incoming.EntityId
                      && c.Predicate == incoming.Predicate
                      && c.Status != "REJECTED" && c.Status != "SUPERSEDED")

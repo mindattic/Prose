@@ -72,6 +72,12 @@ public class ContinuityEnforcer
             .Where(c => sceneNames.Any(n =>
                 c.EntityName.StartsWith(n, StringComparison.OrdinalIgnoreCase) ||
                 n.StartsWith(c.EntityName, StringComparison.OrdinalIgnoreCase)))
+            // 2026-08-23: exclude point-in-time state. A stored location_current /
+            // appearance_in_story from an earlier book is not something a later book can
+            // "contradict" — the character moved. Including them made this check report a
+            // violation on essentially every beat of a sequel (see
+            // ContinuityService.VolatilePredicates for the full reasoning).
+            .Where(c => !ContinuityService.IsVolatilePredicate(c.Predicate))
             .Take(40)
             .ToList();
         if (claims.Count == 0) return [];

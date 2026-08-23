@@ -90,14 +90,15 @@ public static class AutoRunCli
         string nodeTitle, nodeSlug, nodeKind;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var q = db.Nodes.AsNoTracking();
-            var node = !string.IsNullOrWhiteSpace(slug)
-                ? await q.FirstOrDefaultAsync(s => s.Slug == slug)
-                : Guid.TryParse(id, out var g)
-                    ? await q.FirstOrDefaultAsync(s => s.Id == g)
-                    : await q.FirstOrDefaultAsync(s => s.Id.ToString().StartsWith(id!.ToLowerInvariant()));
+            // 2026-08-23: --slug was an exact slug match only, so the flagship writing command
+            // rejected the NodeCode that `prose --progress` prints for every book. Both --slug
+            // and --id now go through NodeRefResolver (slug | NodeCode | GUID | GUID prefix).
+            var reference = !string.IsNullOrWhiteSpace(slug) ? slug : id;
+            var resolvedId = await NodeRefResolver.ResolveAsync(db, reference);
+            var node = resolvedId == null ? null
+                : await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == resolvedId.Value);
 
-            if (node == null) { Console.Error.WriteLine("[auto-run] Node not found."); return 1; }
+            if (node == null) { Console.Error.WriteLine($"[auto-run] {NodeRefResolver.NotFoundMessage(reference)}"); return 1; }
             nodeId    = node.Id;
             nodeTitle = node.Title ?? node.Slug ?? nodeId.ToString();
             nodeSlug  = node.Slug ?? nodeId.ToString();

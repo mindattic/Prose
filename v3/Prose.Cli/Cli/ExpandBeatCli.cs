@@ -88,20 +88,15 @@ public static class ExpandBeatCli
         Guid nodeId; string nodeSlug, nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var query = db.Nodes.AsNoTracking();
-            Core.Data.Entities.Node? node;
-            if (!string.IsNullOrWhiteSpace(slug))
-                node = await query.FirstOrDefaultAsync(s => s.Slug == slug);
-            else if (Guid.TryParse(id, out var exact))
-                node = await query.FirstOrDefaultAsync(s => s.Id == exact);
-            else
-            {
-                var prefix = id!.ToLowerInvariant();
-                var matches = await query.Where(s => s.Id.ToString().StartsWith(prefix)).Take(2).ToListAsync();
-                node = matches.Count == 1 ? matches[0] : null;
-                if (matches.Count > 1) { Console.Error.WriteLine($"[expand-beat] Id prefix '{id}' is ambiguous."); return 1; }
-            }
-            if (node == null) { Console.Error.WriteLine("[expand-beat] Node not found."); return 1; }
+            // 2026-08-23: --slug was an exact slug match only (NodeCode rejected), and the
+            // prefix path was a third hand-rolled copy of prefix resolution. NodeRefResolver
+            // handles slug | NodeCode | GUID | unique GUID prefix, and returns null rather than
+            // guessing when a prefix is ambiguous.
+            var reference = !string.IsNullOrWhiteSpace(slug) ? slug : id;
+            var resolvedId = await NodeRefResolver.ResolveAsync(db, reference);
+            var node = resolvedId == null ? null
+                : await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == resolvedId.Value);
+            if (node == null) { Console.Error.WriteLine($"[expand-beat] {NodeRefResolver.NotFoundMessage(reference)}"); return 1; }
             nodeId = node.Id; nodeSlug = node.Slug; nodeTitle = node.Title;
         }
 

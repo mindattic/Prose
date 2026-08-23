@@ -87,16 +87,14 @@ public static class CreateNodeCli
     }
 
     /// <summary>Resolve a node reference (GUID or slug) to its id. Null input → null.</summary>
-    private static async Task<Guid?> ResolveNodeAsync(
-        IDbContextFactory<ProseDbContext> dbFactory, string? slugOrId)
-    {
-        if (string.IsNullOrWhiteSpace(slugOrId)) return null;
-        await using var db = await dbFactory.CreateDbContextAsync();
-        if (Guid.TryParse(slugOrId, out var gid))
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            return await db.Nodes.IgnoreQueryFilters().AsNoTracking().AnyAsync(s => s.Id == gid) ? gid : null;
-        var hit = await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slugOrId).Select(s => (Guid?)s.Id).FirstOrDefaultAsync();
-        return hit;
-    }
+    /// <summary>
+    /// 2026-08-23: was a 7th private copy of "resolve a node reference" — slug-only (so
+    /// <c>--previous BCODA</c>, a NodeCode, failed outright while creating a sequel) and missing
+    /// <c>IgnoreQueryFilters()</c> on its slug branch, so a cross-universe parent/previous also
+    /// resolved to null. Delegates to <see cref="NodeRefResolver"/>, which accepts slug, NodeCode,
+    /// GUID, or a unique GUID prefix, and applies the filter fix on every branch.
+    /// </summary>
+    private static Task<Guid?> ResolveNodeAsync(
+        IDbContextFactory<ProseDbContext> dbFactory, string? slugOrId) =>
+        NodeRefResolver.ResolveAsync(dbFactory, slugOrId);
 }

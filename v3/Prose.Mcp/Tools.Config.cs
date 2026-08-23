@@ -476,12 +476,11 @@ public class ConfigTools
         return (hits[0].Id, hits[0].RelativePath, null);
     }
 
-    private async Task<Guid?> ResolveNodeIdAsync(string slug)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync();
-        return await db.Nodes.AsNoTracking()
-            .Where(n => n.Slug == slug)
-            .Select(n => (Guid?)n.Id)
-            .FirstOrDefaultAsync();
-    }
+    /// <summary>
+    /// 2026-08-23: was slug-only and lacked <c>IgnoreQueryFilters()</c> — the most broken of the
+    /// seven private resolver copies (a NodeCode or GUID returned null, and so did any node
+    /// outside the ambient universe scope). Delegates to <see cref="NodeRefResolver"/>.
+    /// </summary>
+    private Task<Guid?> ResolveNodeIdAsync(string slug) =>
+        NodeRefResolver.ResolveAsync(dbFactory, slug);
 }

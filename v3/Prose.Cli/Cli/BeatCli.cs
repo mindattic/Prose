@@ -331,20 +331,14 @@ public static class BeatCli
 
     // ── helpers ───────────────────────────────────────────────────────────────
 
-    private static async Task<Guid?> ResolveNodeIdAsync(string idOrSlug, IServiceProvider services)
-    {
-        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        await using var db = await dbFactory.CreateDbContextAsync();
-        if (Guid.TryParse(idOrSlug, out var g))
-        {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
-            if (byId != null) return byId.Id;
-        }
-        var bySlug = await db.Nodes.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug);
-        return bySlug?.Id;
-    }
+    /// <summary>
+    /// 2026-08-23: its slug/code branch was missing the <c>IgnoreQueryFilters()</c> its GUID
+    /// branch had, so an explicit slug resolved to null cross-universe. Delegates to
+    /// <see cref="NodeRefResolver"/>.
+    /// </summary>
+    private static Task<Guid?> ResolveNodeIdAsync(string idOrSlug, IServiceProvider services) =>
+        NodeRefResolver.ResolveAsync(
+            services.GetRequiredService<IDbContextFactory<ProseDbContext>>(), idOrSlug);
 
     private static int PrintUsage()
     {

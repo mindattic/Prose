@@ -44,6 +44,59 @@ public static class ListCanonSectionsCli
 }
 
 /// <summary>
+/// <c>prose --get-canon-section --type &lt;DocumentType&gt; --key &lt;sectionKey&gt; [--out &lt;path.md&gt;]
+/// [--universe &lt;slug&gt;]</c> — dump ONE canon section's raw stored content, byte-for-byte as the
+/// DB holds it (no assembled heading, no frontmatter, no generated banner).
+///
+/// Exists so a section can be round-tripped losslessly: <c>--get-canon-section</c> to a file,
+/// edit precisely, <c>--set-canon-section</c> back. Reconstructing a section body by slicing the
+/// generated <c>.md</c> mirror between headings is NOT equivalent — the mirror has assembly
+/// artifacts layered on, and a lossy round-trip through a 31KB section (e.g. WorldBible's
+/// <c>SS-§5</c>, which holds every numbered Law) risks silently corrupting canon to fix a typo.
+/// The MCP side has <c>get_canon_document</c>, but that returns the whole assembled document
+/// rather than one section's raw body, so it can't serve this purpose either.
+/// </summary>
+public static class GetCanonSectionCli
+{
+    public static async Task<int> RunAsync(string[] args, IServiceProvider services)
+    {
+        var type = args.SkipWhile(a => a != "--type").Skip(1).FirstOrDefault();
+        var key = args.SkipWhile(a => a != "--key").Skip(1).FirstOrDefault();
+        var outPath = args.SkipWhile(a => a != "--out").Skip(1).FirstOrDefault();
+        var universeSlug = args.SkipWhile(a => a != "--universe").Skip(1).FirstOrDefault() ?? "glmz";
+
+        if (string.IsNullOrWhiteSpace(type) || string.IsNullOrWhiteSpace(key))
+        {
+            Console.Error.WriteLine("Usage: prose --get-canon-section --type <DocumentType> --key <sectionKey> [--out <path.md>] [--universe <slug>]");
+            return 1;
+        }
+
+        var canonDocs = services.GetRequiredService<CanonDocumentService>();
+        var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);
+        if (universeId == null) { Console.Error.WriteLine($"[get-canon-section] Unknown universe '{universeSlug}'."); return 1; }
+
+        var doc = await canonDocs.FindDocumentAsync(type, universeId.Value);
+        if (doc == null) { Console.Error.WriteLine($"[get-canon-section] No {type} document for universe {universeSlug}."); return 1; }
+
+        var section = doc.Sections.FirstOrDefault(s => s.SectionKey.Equals(key, StringComparison.OrdinalIgnoreCase));
+        if (section == null) { Console.Error.WriteLine($"[get-canon-section] No section '{key}' in {type}. Use --list-canon-sections to see keys."); return 1; }
+
+        if (string.IsNullOrWhiteSpace(outPath))
+        {
+            Console.WriteLine(section.Content);
+        }
+        else
+        {
+            // UTF-8 without BOM — matches how GeneratedFileWriter/the rest of the pipeline writes
+            // markdown, so a get→edit→set round-trip can't introduce an encoding change.
+            await File.WriteAllTextAsync(outPath, section.Content, new System.Text.UTF8Encoding(false));
+            Console.WriteLine($"[get-canon-section] {type}/{section.SectionKey} → {outPath} ({section.Content.Length} chars)");
+        }
+        return 0;
+    }
+}
+
+/// <summary>
 /// <c>prose --set-canon-section --type &lt;DocumentType&gt; --key &lt;sectionKey&gt; --file &lt;path.md&gt;
 /// [--title &lt;title&gt;] [--universe &lt;slug&gt;]</c> — CLI equivalent of the MCP tool
 /// <c>set_canon_section</c>. Content is read from a file (not an inline arg) since canon section
