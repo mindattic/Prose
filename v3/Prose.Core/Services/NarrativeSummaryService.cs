@@ -85,8 +85,7 @@ public class NarrativeSummaryService
     /// Persist an already-produced scene summary (no LLM call here) — split out of
     /// <see cref="SummarizeSceneAsync"/> so <see cref="BeatExtractionService"/> can reuse it
     /// after a single consolidated extraction call instead of this class firing its own LLM
-    /// call too. <see cref="SummarizeSceneAsync"/> itself is unchanged and still used standalone
-    /// by <c>SceneGenerationService</c>.
+    /// call too. <see cref="SummarizeSceneAsync"/> itself is unchanged.
     /// </summary>
     public async Task PersistSummaryAsync(string trimmedSummary, Guid nodeId, Guid? beatId, CancellationToken ct = default)
     {

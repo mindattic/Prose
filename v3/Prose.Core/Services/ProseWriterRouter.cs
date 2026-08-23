@@ -828,43 +828,16 @@ public class ProseWriterRouter(
 
             // Post-write extraction cluster (RFC 0009 §9.4, "item 1"): reader-knowledge facts,
             // scene summary, new/resolved open threads, and arc-level plot-state transitions all
-            // used to be five separate Haiku calls each re-reading capturedResult. When
-            // BeatExtractionService is wired (the normal case — see ServiceCollectionExtensions),
-            // this is now ONE call fanning out to each service's Persist*-only method. Fall back to
-            // the original five-call sequence when it isn't (e.g. a test or DI graph that predates
-            // this consolidation) so behavior never silently regresses to "nothing runs."
-            if (capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))
+            // used to be five separate Haiku calls each re-reading capturedResult.
+            // BeatExtractionService fans this out to each service's Persist*-only method in ONE
+            // call. 2026-08-23: removed the five-call fallback that used to run when
+            // beatExtraction was null — BeatExtractionService is unconditionally singleton-
+            // registered in production DI (ServiceCollectionExtensions.cs), so that branch was
+            // confirmed dead in every real deployment; it only doubled the maintenance surface.
+            if (capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult) && beatExtraction != null)
             {
-                if (beatExtraction != null)
-                {
-                    await TraceStageAsync($"{nameof(BeatExtractionService)}.ExtractAllAsync", async () =>
-                        { await beatExtraction.ExtractAllAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); });
-                }
-                else
-                {
-                    if (readerKnowledge != null)
-                    {
-                        await TraceStageAsync($"{nameof(ReaderKnowledgeService)}.ExtractAsync", async () =>
-                            { await readerKnowledge.ExtractAsync(capturedResult, capturedNodeId, CancellationToken.None); });
-                    }
-                    if (narrativeSummary != null)
-                    {
-                        await TraceStageAsync($"{nameof(NarrativeSummaryService)}.SummarizeSceneAsync", async () =>
-                            { await narrativeSummary.SummarizeSceneAsync(capturedResult, capturedNodeId, beatId == Guid.Empty ? null : beatId, CancellationToken.None); });
-                    }
-                    if (openThreads != null && beatId != Guid.Empty)
-                    {
-                        await TraceStageAsync($"{nameof(OpenThreadsService)}.MarkResolvedAsync", async () =>
-                            { await openThreads.MarkResolvedAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); });
-                        await TraceStageAsync($"{nameof(OpenThreadsService)}.DetectAndRegisterAsync", async () =>
-                            { await openThreads.DetectAndRegisterAsync(capturedNodeId, beatId, capturedResult, CancellationToken.None); });
-                    }
-                    if (bookStateLedger != null && beatId != Guid.Empty)
-                    {
-                        await TraceStageAsync($"{nameof(BookStateLedgerService)}.ExtractAndRecordAsync", async () =>
-                            { await bookStateLedger.ExtractAndRecordAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); });
-                    }
-                }
+                await TraceStageAsync($"{nameof(BeatExtractionService)}.ExtractAllAsync", async () =>
+                    { await beatExtraction.ExtractAllAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); });
             }
 
             // Chapter-close summary extraction (2026-08-22 fix): ChapterSummaryService's write

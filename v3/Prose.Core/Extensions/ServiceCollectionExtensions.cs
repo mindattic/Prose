@@ -751,15 +751,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CanonDocumentService>();
         services.AddSingleton<BeatVerificationService>();
         services.AddSingleton<VerificationContextService>();
-        // Scoped, not Singleton (2026-08-09 fix): SceneGenerationService exposes instance events
-        // (OnBeatProgress/OnBeatCompleted) that GenerateScene.razor subscribes to per page visit.
-        // As a singleton shared by every Blazor Server circuit, two open /generate tabs — from
-        // the same user or different users — were subscribed to the SAME event source, so
-        // clicking "Generate" in one tab fired the callback in every other open tab too,
-        // silently populating an unrelated session's UI with someone else's generated content.
-        // Scoped ties one instance to one circuit, matching the per-user isolation the events
-        // were always meant to have.
-        services.AddScoped<SceneGenerationService>();
         services.AddSingleton<CombatSceneWriter>();
         services.AddSingleton<StoryStarterService>();
 

@@ -19,9 +19,11 @@ namespace Prose.Core.Services;
 /// everything else combined, with this five-call cluster as its single largest component.
 ///
 /// Each of the four downstream services keeps its own standalone Extract/Summarize method
-/// working exactly as before (still used by other callers, e.g. SceneGenerationService) — this
-/// class only replaces the FIVE LLM CALLS with one, then fans the parsed response out to each
-/// service's existing Persist*-only method (pure DB writes, no LLM).
+/// intact (2026-08-23: the only other caller, SceneGenerationService, was deleted as confirmed
+/// dead code — this class is now the sole caller of all four, which is fine, it's the normal
+/// case this consolidation was built for) — this class only replaces the FIVE LLM CALLS with
+/// one, then fans the parsed response out to each service's existing Persist*-only method (pure
+/// DB writes, no LLM).
 /// </summary>
 public class BeatExtractionService(
     ILlmService llm,
