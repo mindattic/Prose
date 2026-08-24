@@ -55,8 +55,15 @@ public static class EntityMentionScanner
     // common word, not a derived token) and curated-alias mismatches ("the wall"/"the face"/
     // "the counter" registered as a character alias, "Eight" as an alias for "Sumi Okeke") --
     // those need per-entity alias/name cleanup, a stopword can't fix a full canonical Name match.
+    //
+    // "gate" joined 2026-08-24 (Kofi alias investigation), and is the first entry here derived from
+    // the TRAILING token rather than tokens[0]: the character "Judas Gate" derives bare "Gate", so
+    // every "Gate 3" in BCODA Ch24-25 -- a freight-yard reconciliation office, not a person -- tagged
+    // as him. All 3 of that character's beat mentions corpus-wide were this false positive; he has no
+    // real on-page appearance, so the derived token had nothing to lose and 5 spans to stop mistagging.
+    // The full name "Judas Gate" still tags normally; only the bare derived token is suppressed.
     private static readonly HashSet<string> Stopwords =
-        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can" };
+        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can", "gate" };
 
     public sealed record MentionCandidate(string Text, Guid EntityId, string Name, string EntityType, bool RequiresStrictCase);
 
