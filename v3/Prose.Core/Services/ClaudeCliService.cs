@@ -36,6 +36,13 @@ public class ClaudeCliService
             WorkingDirectory = workingDir,
             StandardOutputEncoding = Encoding.UTF8,
             StandardErrorEncoding = Encoding.UTF8,
+            // The prompt goes out over stdin, so stdin needs UTF-8 as much as the two output
+            // streams do — without this it is written in the console's default code page and
+            // every em-dash / curly quote / Φ in the prompt becomes a mangled byte. Same defect
+            // that made `codex exec -` reject prompts outright (CodexCliService, 2026-08-24);
+            // here it corrupts silently instead of erroring, which is worse. No BOM: it would
+            // land as literal text at the top of the prompt.
+            StandardInputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false),
         };
 
         if (OperatingSystem.IsWindows())

@@ -106,6 +106,11 @@ public class GeminiCliService : ILlmService
             CreateNoWindow = true,
             StandardOutputEncoding = Encoding.UTF8,
             StandardErrorEncoding = Encoding.UTF8,
+            // The whole prompt is piped over stdin (see the comment at the write below), so stdin
+            // must be UTF-8 too — otherwise it goes out in the console's default code page and
+            // every em-dash / curly quote / Φ is corrupted before Gemini ever sees it. Same
+            // omission as CodexCliService and ClaudeCliService (both fixed 2026-08-24). No BOM.
+            StandardInputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false),
         };
 
         if (OperatingSystem.IsWindows())

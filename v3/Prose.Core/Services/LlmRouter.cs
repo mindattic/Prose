@@ -131,6 +131,81 @@ public class LlmRouter : ILlmService
         return map;
     }
 
+    /// <summary>
+    /// Model-id prefix → the provider family that can actually serve it. Ordered longest-prefix-
+    /// first is unnecessary here because no prefix is a prefix of another family's.
+    /// </summary>
+    private static readonly (string Prefix, string Family)[] ModelFamilyPrefixes =
+    [
+        ("claude",     "anthropic"),
+        ("gpt",        "openai"),
+        ("chatgpt",    "openai"),
+        ("codex",      "openai"),
+        ("o1",         "openai"),
+        ("o3",         "openai"),
+        ("o4",         "openai"),
+        ("gemini",     "google"),
+        ("deepseek",   "deepseek"),
+        ("mistral",    "mistral"),
+        ("magistral",  "mistral"),
+        ("ministral",  "mistral"),
+        ("codestral",  "mistral"),
+        ("pixtral",    "mistral"),
+        ("open-mixtral", "mistral"),
+        ("kimi",       "kimi"),
+        ("moonshot",   "kimi"),
+        ("sonar",      "perplexity"),
+    ];
+
+    /// <summary>Provider id → the model families it can serve. <c>"*"</c> means "anything".</summary>
+    private static readonly IReadOnlyDictionary<string, string[]> ProviderFamilies =
+        new Dictionary<string, string[]>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["claude-api"]  = ["anthropic"],
+            ["claude-team"] = ["anthropic"],
+            ["openai"]      = ["openai"],
+            ["codex-cli"]   = ["openai"],
+            ["gemini"]      = ["google"],
+            ["gemini-cli"]  = ["google"],
+            ["deepseek"]    = ["deepseek"],
+            ["mistral"]     = ["mistral"],
+            ["kimi"]        = ["kimi"],
+            ["perplexity"]  = ["perplexity"],
+            ["local"]       = ["*"],   // arbitrary local model names — never second-guess these
+        };
+
+    /// <summary>
+    /// The model id to hand a specific provider. A pinned model belongs to exactly one provider
+    /// family; handing it to a provider from a different family is a guaranteed failure, so drop
+    /// the pin there and let that provider apply its OWN settings-driven default (null).
+    ///
+    /// This is what made the fallback chain decorative rather than real: a caller that pinned an
+    /// explicit model (<c>ComprehensionProbeService</c> asking for <c>claude-sonnet-5</c>, e.g.)
+    /// had that id forwarded verbatim to every hop, so an Anthropic outage walked the whole chain
+    /// collecting "model_not_found" / "Invalid model" from OpenAI, Gemini, DeepSeek and Mistral in
+    /// turn and then reported all ten providers down — when eight of them were merely being asked
+    /// for a model that was never theirs. <see cref="RunWithFallbackAsync"/>'s own comment already
+    /// documented this rule ("a Claude model name would be meaningless to Gemini/DeepSeek"); it
+    /// only ever held for the <c>model == null</c> case.
+    ///
+    /// An unrecognized model id (a fine-tune, a local build) is passed through untouched — we
+    /// can't classify it, so we don't presume to override the caller.
+    /// </summary>
+    private static string? ModelForProvider(string providerId, string? pinnedModel)
+    {
+        if (string.IsNullOrWhiteSpace(pinnedModel)) return null;
+
+        var family = ModelFamilyPrefixes
+            .FirstOrDefault(p => pinnedModel.StartsWith(p.Prefix, StringComparison.OrdinalIgnoreCase))
+            .Family;
+        if (family is null) return pinnedModel;                       // unclassifiable — caller knows best
+
+        if (!ProviderFamilies.TryGetValue(providerId, out var served)) return pinnedModel;
+        if (served.Contains("*") || served.Contains(family)) return pinnedModel;
+
+        return null;                                                  // wrong family — use the provider's default
+    }
+
     private static IReadOnlyList<string> ParseChain(string? csv) =>
         string.IsNullOrWhiteSpace(csv)
             ? []
@@ -196,7 +271,6 @@ public class LlmRouter : ILlmService
         // provider applies its OWN settings-driven default when null — a Claude model name would
         // be meaningless to Gemini/DeepSeek/etc. if forced through as a non-null override.
         var resolvedModel = model ?? runModel;
-        var modelLabel = resolvedModel ?? "(provider default)";
         var attempted = new List<(string Id, Exception Error)>();
 
         foreach (var id in ResolveAttemptOrder())
@@ -207,11 +281,22 @@ public class LlmRouter : ILlmService
                 continue;
             }
 
+            // Per-hop, not per-call: a model pinned by the caller belongs to one provider family
+            // and is dropped for hops outside it (see ModelForProvider). modelLabel is computed
+            // here for the same reason — the ledger/history/prompt-capture rows must record the
+            // model that hop was ACTUALLY asked for, not the caller's pin.
+            var hopModel = ModelForProvider(id, resolvedModel);
+            var modelLabel = hopModel ?? "(provider default)";
+            if (resolvedModel is not null && hopModel is null)
+                log.LogDebug(
+                    "LlmRouter: dropping pinned model {Model} for provider={Provider} (different model family) — using its own default",
+                    resolvedModel, id);
+
             var hopIndex = attempted.Count;
             var sw = System.Diagnostics.Stopwatch.StartNew();
             try
             {
-                var response = await invoke(svc, resolvedModel, ct);
+                var response = await invoke(svc, hopModel, ct);
                 sw.Stop();
                 prompts.Capture(id, modelLabel, temperature, maxTokens, capturedInput, user, response, (int)sw.ElapsedMilliseconds);
                 ledger?.Record(id, modelLabel, capturedInput + user, response);

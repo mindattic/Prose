@@ -135,6 +135,14 @@ public class CodexCliService : ILlmService
             CreateNoWindow = true,
             StandardOutputEncoding = Encoding.UTF8,
             StandardErrorEncoding = Encoding.UTF8,
+            // stdin MUST be UTF-8 too, and without a BOM. Only the two output streams were set
+            // before, so the prompt went out in the console's default code page — every em-dash,
+            // curly quote, and Φ in it became an invalid byte, and `codex exec -` rejected the
+            // whole payload with "input is not valid UTF-8 (invalid byte at offset N)". That
+            // failed EVERY prose prompt through this provider, not an edge case: GLMZ prose is
+            // full of em-dashes and Φ. A BOM would land as literal text at the top of the prompt,
+            // hence UTF8Encoding(false) rather than Encoding.UTF8.
+            StandardInputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false),
         };
 
         if (OperatingSystem.IsWindows())

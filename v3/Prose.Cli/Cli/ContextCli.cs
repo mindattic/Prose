@@ -175,15 +175,15 @@ public static class ContextCli
         return hits[0].Id;
     }
 
-    private static async Task<Guid?> ResolveNodeAsync(string slug, IServiceProvider services)
-    {
-        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        await using var db = await dbFactory.CreateDbContextAsync();
-        return await db.Nodes.AsNoTracking()
-            .Where(n => n.Slug == slug)
-            .Select(n => (Guid?)n.Id)
-            .FirstOrDefaultAsync();
-    }
+    /// <summary>
+    /// 2026-08-24 consolidation. This copy was the narrowest of the twelve: slug only — a NodeCode
+    /// or a GUID resolved to null — and no <c>IgnoreQueryFilters()</c>, so `--context add/exclude
+    /// --node` silently pinned nothing for any book outside the ambient universe. Delegates to
+    /// <see cref="NodeRefResolver"/>, which accepts slug, NodeCode, GUID, or a unique GUID prefix.
+    /// </summary>
+    private static Task<Guid?> ResolveNodeAsync(string slug, IServiceProvider services) =>
+        NodeRefResolver.ResolveAsync(
+            services.GetRequiredService<IDbContextFactory<ProseDbContext>>(), slug);
 
     private static void PrintUsage()
     {

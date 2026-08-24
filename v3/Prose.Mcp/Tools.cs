@@ -402,20 +402,14 @@ public class ContextTools
         return JsonSerializer.Serialize(new { node_id = nodeId, beat_count = beatTexts.Count, proposals }, CanonTools.JsonOpts);
     }
 
-    private async Task<Guid?> ResolveNodeIdAsync(string idOrSlug)
-    {
-        if (string.IsNullOrWhiteSpace(idOrSlug)) return null;
-        await using var db = await dbFactory.CreateDbContextAsync();
-        if (Guid.TryParse(idOrSlug, out var guid))
-        {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == guid);
-            if (byId != null) return byId.Id;
-        }
-        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-        var bySlug = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug);
-        return bySlug?.Id;
-    }
+    /// <summary>
+    /// 2026-08-24 consolidation. This copy was already correct on both branches, but a correct
+    /// duplicate is still how the next one goes wrong — six of the twelve copies found by the
+    /// audit were broken, and the same split defect had been re-patched four times in eight days.
+    /// Delegates to <see cref="NodeRefResolver"/>, which additionally accepts a unique GUID prefix.
+    /// </summary>
+    private Task<Guid?> ResolveNodeIdAsync(string idOrSlug) =>
+        NodeRefResolver.ResolveAsync(dbFactory, idOrSlug);
 
     private static string Error(string code, string detail) =>
         JsonSerializer.Serialize(new { error = code, detail }, CanonTools.JsonOpts);

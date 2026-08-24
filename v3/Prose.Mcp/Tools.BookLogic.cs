@@ -149,17 +149,13 @@ public class BookLogicTools(
 
     // ── helpers ───────────────────────────────────────────────────────────────
 
-    async Task<Guid?> ResolveNodeAsync(string idOrSlug)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync();
-        // IgnoreQueryFilters() on BOTH branches: a slug/NodeCode is just as explicit as a GUID.
-        // The 2026-08-17 pass added it to the id branch only and left the slug branch ambient, so
-        // `logic_sweep` / `logic_sweep_until_dry` returned node_not_found for every book outside
-        // the ambient universe when addressed by slug — including VIGL (scry), whose own sweep
-        // reports repeatedly called --until-dry "unreliable" for this book. Found live 2026-08-24.
-        if (Guid.TryParse(idOrSlug, out var g))
-            return (await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g))?.Id;
-        return (await db.Nodes.IgnoreQueryFilters().AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug))?.Id;
-    }
+    /// <summary>
+    /// Fixed 2026-08-24 (the 2026-08-17 pass had added <c>IgnoreQueryFilters()</c> to the id branch
+    /// only, so <c>logic_sweep</c> / <c>logic_sweep_until_dry</c> returned node_not_found for every
+    /// book outside the ambient universe when addressed by slug — including VIGL, whose own sweep
+    /// reports repeatedly called <c>--until-dry</c> "unreliable" for this book), then folded into
+    /// <see cref="NodeRefResolver"/> the same day with the other eleven copies of this helper.
+    /// </summary>
+    Task<Guid?> ResolveNodeAsync(string idOrSlug) =>
+        NodeRefResolver.ResolveAsync(dbFactory, idOrSlug);
 }

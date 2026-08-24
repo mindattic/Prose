@@ -151,7 +151,8 @@ public static class ReaderQaCli
         foreach (var ch in r.Chapters)
         {
             var live = ch.Defects.Where(d => d.ReaderPlausible && d.Kind != "hallucination").ToList();
-            var discarded = ch.Defects.Count(d => !d.ReaderPlausible || d.Kind == "hallucination");
+            var intentional = ch.Defects.Count(d => d.Kind == ComprehensionProbeService.IntentionalAmbiguityKind);
+            var discarded = ch.Defects.Count(d => !d.ReaderPlausible || d.Kind == "hallucination") - intentional;
             sb.AppendLine($"### Ch {ch.ChapterIndex + 1} — {ch.ChapterTitle} " +
                           $"({(live.Count == 0 ? "clean" : $"{live.Count} defect(s)")}{(ch.FromCache ? ", cached" : "")})");
             if (ch.Confusions.Count > 0)
@@ -171,6 +172,11 @@ public static class ReaderQaCli
             }
             if (discarded > 0)
                 sb.AppendLine($"- _{discarded} probe hallucination(s) discarded by the arbiter (not the chapter's fault)._");
+            // Reported separately from hallucinations: the reader's confusion was real, it is the
+            // arbiter's "this is a defect" verdict that its own evidence contradicts.
+            if (intentional > 0)
+                sb.AppendLine($"- _{intentional} confirmed defect(s) dropped as self-declared intentional ambiguity " +
+                              "(the arbiter's own evidence called the chapter working as intended)._");
             sb.AppendLine();
         }
         File.WriteAllText(path, sb.ToString(), new UTF8Encoding(true));

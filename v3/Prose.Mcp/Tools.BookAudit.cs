@@ -121,14 +121,17 @@ public class BookAuditTools(
 
     // ── Helper ────────────────────────────────────────────────────────────────
 
-    async Task<Guid?> ResolveNodeAsync(string idOrSlug)
-    {
-        if (Guid.TryParse(idOrSlug, out var g)) return g;
-        await using var db = await dbFactory.CreateDbContextAsync();
-        var s = await db.Nodes.AsNoTracking()
-            .Where(x => x.Slug == idOrSlug || x.NodeCode == idOrSlug)
-            .Select(x => x.Id)
-            .FirstOrDefaultAsync();
-        return s == Guid.Empty ? null : s;
-    }
+    /// <summary>
+    /// 2026-08-24 consolidation. This file carried its own copy of the node resolver, and that
+    /// copy was broken two ways: no <c>IgnoreQueryFilters()</c> on EITHER branch (so every book
+    /// outside the ambient universe returned node_not_found when addressed by slug or NodeCode —
+    /// e.g. VIGL, universe scry), and a GUID branch that returned the parsed value without
+    /// checking any node has that id. A corpus audit found twelve copies of this helper and six
+    /// broken ones; the "GUID branch fixed, slug branch missed" split alone had been re-found and
+    /// re-patched four times in eight days, which is what a duplicated helper guarantees.
+    /// Delegates to <see cref="NodeRefResolver"/> — the one sanctioned resolver, which also
+    /// accepts a unique GUID prefix.
+    /// </summary>
+    Task<Guid?> ResolveNodeAsync(string idOrSlug) =>
+        NodeRefResolver.ResolveAsync(dbFactory, idOrSlug);
 }

@@ -140,6 +140,11 @@ public sealed class ComprehensionProbeService(
                 && string.Equals(parsed.Value.arbiterModel, arbiterModel, StringComparison.OrdinalIgnoreCase))
             {
                 var (defects, confusions) = parsed.Value.payload;
+                // Applied on the cache path too, not just after a live arbitration: cache rows are
+                // keyed on (source hash, probe model, arbiter model), so rows written before this
+                // guard existed would otherwise keep reporting their self-refuting defects forever
+                // — the guard would only ever reach a chapter whose text happened to change.
+                defects = DemoteSelfDeclaredIntentional(defects);
                 return new ChapterProbeResult(ch.Index, ch.Title,
                     defects.Any(d => d.ReaderPlausible) ? "cached-defects" : "cached-clean",
                     defects, confusions, FromCache: true);
@@ -175,6 +180,8 @@ public sealed class ComprehensionProbeService(
                 return new ChapterProbeResult(ch.Index, ch.Title, "error",
                     Array.Empty<ProbeDefect>(), probe.Confusions, FromCache: false);
             }
+
+            allDefects = DemoteSelfDeclaredIntentional(allDefects);
         }
 
         // ── 4. file confirmed reader-plausible defects; supersede stale ones ──────
@@ -370,6 +377,74 @@ public sealed class ComprehensionProbeService(
 
         var raw = await llm.GenerateAsync(system, sb.ToString(), temperature: 0.1, maxTokens: 2500, model: arbiterModel, ct: ct);
         return ParseDefects(raw);
+    }
+
+    /// <summary>Kind assigned to a confirmed defect whose own evidence says the chapter is working
+    /// as intended. Not <c>"hallucination"</c> — the reader's confusion was real; it is the
+    /// arbiter's verdict that is wrong.</summary>
+    public const string IntentionalAmbiguityKind = "intentional-ambiguity";
+
+    /// <summary>
+    /// Demotes any confirmed defect whose OWN description/evidence declares the ambiguity
+    /// deliberate — "an intentional mystery the text marks as such", "deliberately withholds
+    /// this", "ambiguity is inherent to the text's style rather than a comprehension failure".
+    ///
+    /// <para>The arbiter system prompt already forbids exactly this ("Deliberately open mysteries
+    /// the text itself marks as unresolved … are the text working as intended — reject, do not
+    /// confirm"), but that was a prompt-side rule with nothing verifying it, and the 2026-08-24
+    /// BCODA run shows it being violated: several confirmed findings argue in their own text that
+    /// they are not findings. Persisting those is the failure mode already fixed once in
+    /// <c>LogicSweepService.IsSelfDeclaredNonFinding</c> — a reader who sees a defect whose
+    /// evidence says "this is the text working as intended" stops trusting the other 40.</para>
+    ///
+    /// <para>Phrase-matched narrowly, on explicit intent language only. In particular nothing
+    /// matching "genuine"/"genuinely" is listed: the arbiter uses that word to mean "the text
+    /// really does under-establish this" — a CONFIRMATION — so matching it would suppress real
+    /// findings. Verified against the 45 findings of the BCODA 2026-08-24 run: this drops the
+    /// self-refuting minors and keeps every MODERATE.</para>
+    /// </summary>
+    internal static List<ProbeDefect> DemoteSelfDeclaredIntentional(IEnumerable<ProbeDefect> defects)
+    {
+        string[] intentPhrases =
+        [
+            "intentional mystery",
+            "intentional withholding",
+            "working as intended",
+            "text marks as unresolved",
+            "marks as such",
+            "explicitly left open",
+            "inherent to the text",
+            "comprehension failure",   // "…rather than a comprehension failure" / "not a …"
+            "is not a defect",
+            "by design",
+            // The arbiter's own rebuttal idioms: it confirmed a defect while arguing the reader
+            // was simply wrong. Both verbatim from the VIGL 2026-08-24 run.
+            "unwarranted",
+            "actually clear",
+        ];
+
+        // An explicit intent word next to a withholding word. Catches the forms a fixed phrase
+        // list keeps missing — "deliberately leaves the operation's ultimate purpose unstated",
+        // "intentionally cryptic foreshadowing device", "deliberately left ambiguous by the text
+        // itself" were all confirmed in the same run and all slipped a literal-phrase list.
+        // Requires the two within ~40 chars and no sentence boundary between them, so an ordinary
+        // "the text deliberately shows X, but Y is buried" is not swept up.
+        var intentPairing = new Regex(
+            @"\b(?:deliberate|deliberately|intentional|intentionally)\b[^.!?]{0,40}?"
+          + @"\b(?:left|leaves|withhold\w*|unstated|cryptic|ambiguous|vague|unexplained|unresolved|open)\b",
+            RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
+
+        var result = new List<ProbeDefect>();
+        foreach (var d in defects)
+        {
+            if (!d.ReaderPlausible || d.Kind == "hallucination") { result.Add(d); continue; }
+
+            var hay = (d.Description + " " + d.Evidence).ToLowerInvariant();
+            result.Add(intentPhrases.Any(hay.Contains) || intentPairing.IsMatch(hay)
+                ? d with { ReaderPlausible = false, Kind = IntentionalAmbiguityKind }
+                : d);
+        }
+        return result;
     }
 
     /// <summary>Throws (JsonException) on unparseable arbiter output instead of returning an

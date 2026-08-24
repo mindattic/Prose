@@ -67,6 +67,7 @@ public class CoreEntityCrudTools
         [Description("Narrative function: what role this character plays in stories.")] string narrativeFunction = "",
         [Description("Comma-separated tags (e.g. 'freelancer,enforcer,Tier 3').")] string tags = "",
         [Description("Comma-separated story hooks — unresolved threads this character carries.")] string storyHooks = "",
+        [Description("Comma-separated aliases/handles this character is also known by (e.g. 'Rook,The Read'). ADDITIVE — merged into any aliases already on file, never replacing them; an alias equal to the character's own name is dropped (a self-alias is rejected by the write gate). Remove one with `prose --delete-alias`.")] string aliases = "",
         [Description("Optional JSON for the psychology block: {core_fears, core_desires, coping_mechanisms, blind_spots, secret}.")] string psychologyJson = "",
         [Description("Optional JSON for speech_patterns: {vocabulary, cadence, verbal_tics, example_lines, subtext}.")] string speechPatternsJson = "",
         [Description("Optional JSON for physical_description: {heritage, height_cm, weight_kg, build, hair_color, eye_color, distinguishing_marks}.")] string physicalDescriptionJson = "",
@@ -75,7 +76,7 @@ public class CoreEntityCrudTools
         hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(CreateCharacterImpl), new
         {
             name, role, description, species, gender, pronouns, age, status, location, affiliation,
-            augmentations, narrativeFunction, tags, storyHooks, psychologyJson, speechPatternsJson,
+            augmentations, narrativeFunction, tags, storyHooks, aliases, psychologyJson, speechPatternsJson,
             physicalDescriptionJson, id, originNodeSlug,
         });
 
@@ -95,6 +96,7 @@ public class CoreEntityCrudTools
         string narrativeFunction = "",
         string tags = "",
         string storyHooks = "",
+        string aliases = "",
         string psychologyJson = "",
         string speechPatternsJson = "",
         string physicalDescriptionJson = "",
@@ -184,6 +186,30 @@ public class CoreEntityCrudTools
         // Parse failures are surfaced as warnings, not silently swallowed — a swallowed error here
         // returned ok:true while the register/psychology never persisted (the SS-A46 voice no-op bug).
         var warnings = new List<string>();
+
+        // Aliases are ADDITIVE. CharacterMapper.ToEntity replaces the whole CharacterAliases
+        // bridge from src.Aliases on every Save, so assigning the parsed list outright would
+        // silently drop every alias already on file — the caller passing one new handle would
+        // wipe the rest. Merge into what GetById loaded instead, case-insensitively, and drop a
+        // value equal to the character's own name: SelfAliasSyncCheck rejects that at the write
+        // gate, which would fail the entire call over a redundant value we can just ignore.
+        // (This parameter existed only in the tool DESCRIPTION until 2026-08-24 — the schema had
+        // no aliases field at all, so the collision guard below could tell a caller to "add this
+        // to their aliases" with no way to do it.)
+        if (!string.IsNullOrWhiteSpace(aliases))
+        {
+            var known = new HashSet<string>(c.Aliases, StringComparer.OrdinalIgnoreCase);
+            foreach (var alias in aliases.Split(',').Select(a => a.Trim()).Where(a => a.Length > 0))
+            {
+                if (string.Equals(alias, c.Name, StringComparison.OrdinalIgnoreCase))
+                {
+                    warnings.Add($"alias '{alias}' skipped — it matches the character's own name (self-alias).");
+                    continue;
+                }
+                if (known.Add(alias)) c.Aliases.Add(alias);
+            }
+        }
+
         if (!string.IsNullOrWhiteSpace(psychologyJson))
         {
             try { c.Psychology = JsonSerializer.Deserialize<CharacterPsychology>(psychologyJson, CanonTools.JsonOpts) ?? c.Psychology; }

@@ -208,14 +208,13 @@ public class PlantPayoffTools(
 
     // ── Helper ────────────────────────────────────────────────────────────────
 
-    async Task<Guid?> ResolveNodeAsync(string idOrSlug)
-    {
-        if (Guid.TryParse(idOrSlug, out var g)) return g;
-        await using var db = await dbFactory.CreateDbContextAsync();
-        var s = await db.Nodes.AsNoTracking()
-            .Where(x => x.Slug == idOrSlug || x.NodeCode == idOrSlug)
-            .Select(x => x.Id)
-            .FirstOrDefaultAsync();
-        return s == Guid.Empty ? null : s;
-    }
+    /// <summary>
+    /// 2026-08-24 consolidation — see the note on <c>BookAuditTools.ResolveNodeAsync</c>. This
+    /// copy had no <c>IgnoreQueryFilters()</c> on either branch, so the plant/payoff tools
+    /// (<c>audit_plant_payoffs</c>, <c>register_plant_payoff</c>, <c>link_plant_beat</c>,
+    /// <c>link_payoff_beat</c>) could not reach any book outside the ambient universe by slug.
+    /// Delegates to <see cref="NodeRefResolver"/>.
+    /// </summary>
+    Task<Guid?> ResolveNodeAsync(string idOrSlug) =>
+        NodeRefResolver.ResolveAsync(dbFactory, idOrSlug);
 }

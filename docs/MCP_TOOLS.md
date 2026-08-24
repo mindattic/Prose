@@ -519,6 +519,7 @@ Create or update a character in canon. Pass empty id to create new; pass an exis
 - `narrativeFunction` (string, optional) — Narrative function: what role this character plays in stories.
 - `tags` (string, optional) — Comma-separated tags (e.g. 'freelancer,enforcer,Tier 3').
 - `storyHooks` (string, optional) — Comma-separated story hooks — unresolved threads this character carries.
+- `aliases` (string, optional) — Comma-separated aliases/handles this character is also known by (e.g. 'Rook,The Read'). ADDITIVE — merged into any aliases already on file, never replacing them; an alias equal to the character's own name is dropped (a self-alias is rejected by the write gate). Remove one with `prose --delete-alias`.
 - `psychologyJson` (string, optional) — Optional JSON for the psychology block: {core_fears, core_desires, coping_mechanisms, blind_spots, secret}.
 - `speechPatternsJson` (string, optional) — Optional JSON for speech_patterns: {vocabulary, cadence, verbal_tics, example_lines, subtext}.
 - `physicalDescriptionJson` (string, optional) — Optional JSON for physical_description: {heritage, height_cm, weight_kg, build, hair_color, eye_color, distinguishing_marks}.

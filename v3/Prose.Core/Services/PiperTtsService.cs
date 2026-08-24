@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Text;
 using Microsoft.Extensions.Logging;
 
 namespace Prose.Core.Services;
@@ -79,6 +80,12 @@ public sealed class PiperTtsService : ILocalTtsEngine
                 RedirectStandardError = true,
                 UseShellExecute = false,
                 CreateNoWindow = true,
+                // Piper reads the line to speak from stdin as UTF-8. Without this it was written
+                // in the console's default code page, so an em-dash, a curly quote, or a Φ in the
+                // prose reached the voice model as mojibake — audible in the narration as a
+                // dropped or mispronounced character. Same omission as the three CLI LLM
+                // providers (all fixed 2026-08-24). No BOM: piper would try to speak it.
+                StandardInputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false),
             };
             psi.ArgumentList.Add("--model");
             psi.ArgumentList.Add(ModelPath!);

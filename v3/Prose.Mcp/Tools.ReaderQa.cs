@@ -165,13 +165,15 @@ public class ReaderQaTools(
         }
     }
 
-    async Task<Guid?> ResolveNodeAsync(string idOrSlug)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync();
-        if (Guid.TryParse(idOrSlug, out var g))
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            return (await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g))?.Id;
-        return (await db.Nodes.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug))?.Id;
-    }
+    /// <summary>
+    /// 2026-08-24 consolidation — see the note on <c>BookAuditTools.ResolveNodeAsync</c>. This
+    /// copy was the exact "GUID branch fixed, slug branch missed" split the 2026-08-17 pass left
+    /// behind: <c>reader_qa_comprehension</c> and <c>reader_qa_gripe_pass</c> resolved a GUID
+    /// cross-universe but returned node_not_found for the same book addressed by its slug — and
+    /// Reader-Proxy QA is the last publish gate, so the tool that gates release was unreachable
+    /// by slug for every book outside the ambient universe. Delegates to
+    /// <see cref="NodeRefResolver"/>.
+    /// </summary>
+    Task<Guid?> ResolveNodeAsync(string idOrSlug) =>
+        NodeRefResolver.ResolveAsync(dbFactory, idOrSlug);
 }

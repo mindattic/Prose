@@ -702,10 +702,11 @@ public class TrinityReconciliationService(
         if (string.IsNullOrEmpty(claimBookSlug) || string.Equals(claimBookSlug, currentBookSlug, StringComparison.OrdinalIgnoreCase))
             return currentBookNodeId;
 
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .FirstOrDefaultAsync(n => n.Slug == claimBookSlug || n.NodeCode == claimBookSlug, ct);
-        return node?.Id;
+        // The early return above is this method's own logic; the lookup itself is just node
+        // reference resolution, so it delegates (2026-08-24 consolidation — twelve hand-rolled
+        // copies of that lookup existed and six were broken). Gains GUID / unique-GUID-prefix
+        // and case-insensitive matching for free.
+        return await NodeRefResolver.ResolveAsync(dbFactory, claimBookSlug, ct);
     }
 
     private static string ParseBibleSectionType(string? sourcePath)

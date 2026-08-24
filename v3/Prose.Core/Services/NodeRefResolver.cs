@@ -61,7 +61,11 @@ public static class NodeRefResolver
 
         // GUID-prefix fallback last: only reached when the reference isn't a real slug/code, and
         // only honoured when it identifies exactly one node.
-        if (trimmed.Length >= 4 && trimmed.All(Uri.IsHexDigit))
+        // Hyphens allowed: a GUID is PRINTED hyphenated, so the natural copy-paste prefix is
+        // "019f5767-d08a", and requiring bare hex digits rejected exactly the form a user is most
+        // likely to paste while accepting "019f5767" (found 2026-08-24 writing this class's first
+        // tests). A hyphen can't make a real slug pass either — slugs contain non-hex letters.
+        if (trimmed.Length >= 4 && trimmed.All(c => Uri.IsHexDigit(c) || c == '-'))
         {
             var matches = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
                 .Where(n => n.Id.ToString().StartsWith(lowered))

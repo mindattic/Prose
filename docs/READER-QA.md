@@ -85,3 +85,33 @@ excluded with a logged warning and juries degrade gracefully — a single live f
 still produces verdicts (tier-diversified within Claude), and a refreshed key joins
 automatically. **No run ever fails, and no new funding is ever required, because a
 provider died.**
+
+## 6. What the instruments refuse to file {#SS-RQA-6}
+
+A finding that argues in its own evidence that it is not a finding discredits every
+other finding in the report. Two verified guards, not prompt requests:
+
+- **Self-declared intentional ambiguity** (`ComprehensionProbeService.DemoteSelfDeclaredIntentional`,
+  2026-08-24). The arbiter prompt already says deliberately open mysteries the text
+  marks as unresolved are the text working as intended and must be rejected — but that
+  was prompt-side with nothing checking it, and the BCODA run of 2026-08-24 filed
+  confirmed defects describing themselves as "an intentional mystery the text marks as
+  such", "left deliberately unstated", "inherent to the text's style rather than a
+  comprehension failure". Those are now demoted to `kind="intentional-ambiguity"`,
+  counted separately in the report, and never filed as findings. Applied on the cache
+  read path too, so rows written before the guard heal without a re-bill.
+- **Self-declared non-findings** in the logic sweep
+  (`LogicSweepService.IsSelfDeclaredNonFinding`) — the same failure mode, fixed first.
+
+Both phrase-match **narrowly**, on explicit verdict/intent language only. Neither may
+key on "genuine"/"genuinely": the arbiter uses those words to mean *the text really
+does under-establish this*, which is a confirmation. If a real finding is ever
+suppressed, the phrase that did it is in one of those two lists.
+
+**Known false-positive source, not yet fixed:** the probe reads each chapter cold with
+a recap of only the previous three chapters, and the arbiter judges against that
+chapter's text alone. So a term established early and paid off late (Cacophony,
+introduced in BCODA ch1 with detail) gets confirmed as "never defined anywhere in the
+chapter" when it reaches ch34 — an artifact of the instrument's window, not a defect in
+the book. Treat "never explained in this chapter" findings on late chapters as suspect
+until the arbiter is given the earlier chapters' synopses to check against.

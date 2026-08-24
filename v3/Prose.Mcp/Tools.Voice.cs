@@ -170,20 +170,13 @@ public class VoiceTools
             created_at  = e.CreatedAt,
         }).ToArray();
 
-    private async Task<Guid?> ResolveNodeIdAsync(string idOrSlug)
-    {
-        if (string.IsNullOrWhiteSpace(idOrSlug)) return null;
-        await using var db = await dbFactory.CreateDbContextAsync();
-        if (Guid.TryParse(idOrSlug, out var guid))
-        {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
-            if (byId != null) return byId.Id;
-        }
-        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-        var bySlug = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug);
-        return bySlug?.Id;
-    }
+    /// <summary>
+    /// 2026-08-24 consolidation — already correct on both branches, but folded into
+    /// <see cref="NodeRefResolver"/> with the other eleven copies so there is one resolver to keep
+    /// right rather than twelve to keep in sync.
+    /// </summary>
+    private Task<Guid?> ResolveNodeIdAsync(string idOrSlug) =>
+        NodeRefResolver.ResolveAsync(dbFactory, idOrSlug);
 
     private static string Error(string code, string detail) =>
         JsonSerializer.Serialize(new { error = code, detail }, CanonTools.JsonOpts);
