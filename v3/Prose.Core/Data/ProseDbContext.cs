@@ -2769,7 +2769,12 @@ public class ProseDbContext : DbContext
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.Title).HasMaxLength(300).IsRequired();
-            e.Property(x => x.Reason).HasMaxLength(40).IsRequired();
+            // 200, not 40: --archive-book exposes --reason as free text, so real callers pass a
+            // descriptive sentence ("Pre-fix: 2026-08-23 logic sweep + stale duplicate beat-set
+            // investigation"). At 40 that overflowed and SQL aborted the INSERT, which meant the
+            // mandatory pre-edit safety snapshot silently failed with an opaque "invoke failed"
+            // — the worst possible time to lose an archive. Found live 2026-08-23.
+            e.Property(x => x.Reason).HasMaxLength(200).IsRequired();
             e.Property(x => x.Markdown).IsRequired();
             e.HasIndex(x => x.NodeId);
             e.HasIndex(x => new { x.NodeId, x.CreatedAt });

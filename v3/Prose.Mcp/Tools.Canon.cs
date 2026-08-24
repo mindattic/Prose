@@ -277,13 +277,32 @@ public class CanonDocTools
 
     private async Task<Guid?> ResolveNodeIdAsync(string idOrSlug)
     {
-        if (Guid.TryParse(idOrSlug, out var guid)) return guid;
+        if (string.IsNullOrWhiteSpace(idOrSlug)) return null;
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var id = await db.Nodes
+
+        // IgnoreQueryFilters(): the caller passed an explicit id/slug/NodeCode, not an ambient
+        // scope. Without this, every book outside whatever universe the ambient default resolves
+        // to returned node_not_found here — which broke BOTH tools sharing this helper, including
+        // SetBookBibleSection, the sanctioned edit path for a book bible. Found live 2026-08-23:
+        // `list_book_bible_sections` on VIGL (universe scry) 404'd on the very slug read_beats
+        // resolves fine, making VIGL's bible uneditable through the only approved route. Same bug
+        // class as the 2026-08-17 sweep (NodeWorkbenchService.WalkAsync, BookArchiveService).
+        if (Guid.TryParse(idOrSlug, out var guid))
+        {
+            var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+                .Where(n => n.Id == guid)
+                .Select(n => (Guid?)n.Id)
+                .FirstOrDefaultAsync();
+            // Fall through on a miss: a well-formed GUID that matches no row used to be returned
+            // verbatim, so the caller failed later with a confusing downstream error instead of a
+            // clean node_not_found.
+            if (byId != null) return byId;
+        }
+
+        return await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug)
             .Select(n => (Guid?)n.Id)
             .FirstOrDefaultAsync();
-        return id;
     }
 }

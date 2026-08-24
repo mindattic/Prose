@@ -24,8 +24,19 @@ public static class AuditProseUtils
 /// That trail is the only surviving evidence of which beats were written against an already-fixed
 /// neighbourhood, which is exactly where state contradictions hide — see
 /// <c>InsertedBeatDriftRule</c>. Defaults to 0 so test fixtures and rules that don't care about
-/// position can keep constructing beats positionally.</summary>
-public record AuditBeat(Guid Id, int Number, string Text, double SortKey = 0);
+/// position can keep constructing beats positionally.
+///
+/// <paramref name="ChapterTitle"/> is the title of the chapter node this beat actually hangs off
+/// (e.g. "Chapter 30 — The Gray Suit"), and it is load-bearing for BibleAgreementRule. The bible
+/// describes locked scenes BY CHAPTER, but <c>Beat.Number</c> is not chapter-local and does not
+/// track chapter order on a large or restructured book — so a prompt that labels prose with only
+/// "[Beat #N]" gives the model no way to tell which chapter it is reading, and it compares a beat
+/// against a different chapter's locked description and reports a "mismatch" between two unrelated
+/// things. That exact false-positive class was diagnosed on BCODA and VIGL's 2026-08-22 sweeps
+/// (e.g. beat #3033 is really in Ch30, matching the very Ch30 lock the finding claimed it
+/// contradicted) and recommended for fix in both reports; this field is that fix. Defaults to ""
+/// so test fixtures and rules that don't care about chapter attribution keep working.</summary>
+public record AuditBeat(Guid Id, int Number, string Text, double SortKey = 0, string ChapterTitle = "");
 
 /// <summary>
 /// Everything a rule needs to evaluate one node. <see cref="Prose"/> is the whole node's

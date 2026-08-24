@@ -12,11 +12,16 @@ or reviews from this skill** — if the user wants a score, they will say so exp
 - **HARD, ABSOLUTE (2026-08-22): nothing reaches the database except through Prose.Hub — reads
   AND writes, no exceptions.** An earlier version of this section instructed running raw `sqlcmd`
   reads directly against `(localdb)\MSSQLLocalDB` for audit reading — that is retired and must
-  never be resurrected. **No Hub-routed command currently exists for bulk-reading a book's beats
-  (Number/Id/Text in reading order) for audit purposes.** Until one does, do not run this skill's
-  AUDIT step by querying the database yourself in any form — stop and tell the user this tooling
-  gap exists so a proper `prose --export-beats`-style command (or MCP equivalent) can be built.
-  Do not substitute a raw SQL read "just this once" to keep a sweep moving.
+  never be resurrected. **The sanctioned bulk-read for audit purposes is `prose --read-beats
+  (--slug <slug> | --id <guid>) [--from N] [--to N] [--numbers <csv>] [--format text|json]`
+  (MCP: `read_beats`)** — it returns per-beat id/title/text in true reading order through the
+  Hub, plus the beat's authoritative POV from `BeatEntityPresence` (never inferred from prose;
+  see `ReadBeatsCli`'s doc comment for the 2026-08-10 VIGL multi-POV misattribution it exists to
+  prevent). Range-scope it (`--from`/`--to`) so each audit agent reads its own slice.
+  An earlier version of this section claimed no such command existed and told readers to stop
+  the sweep — that was stale (the command shipped and the claim was never updated) and blocked
+  a real sweep on 2026-08-23. Never substitute a raw SQL read "just this once" to keep a sweep
+  moving; if a genuinely missing read has no command, build the Hub-routed command.
 - Live book = enabled beats in reading order: chapter children by `Nodes.SortKey`, beats within
   by `BeatNodes.SortKey` — NEVER order by `Beats.Number` (not chapter-local; see project memory
   on cross-book `Beat.Number` confusion). This describes the correct ordering ANY tool must use,

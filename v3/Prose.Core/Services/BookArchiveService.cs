@@ -68,7 +68,11 @@ public class BookArchiveService(IDbContextFactory<ProseDbContext> dbFactory)
             NodeId = node.Id,
             Title = node.Title,
             Version = node.Version,
-            Reason = reason,
+            // Defensive clamp to the column width: an archive is a safety snapshot taken right
+            // before destructive prose edits, so it must never be the thing that fails because
+            // the caller's note was wordy. Truncating a note is always better than losing the
+            // snapshot (2026-08-23).
+            Reason = reason.Length > 200 ? reason[..200] : reason,
             Markdown = snapshotMd.ToString().TrimEnd() + "\n",
             BeatCount = beatCount,
             WordCount = wordCount,

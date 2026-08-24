@@ -545,6 +545,15 @@ if (args.Contains("--set-book-bible"))
     return;
 }
 
+// CLI mode: dump the node bible VERBATIM (the read half of --set-book-bible's round trip).
+// NOT --book-bible, which generates a fresh bible via an LLM instead of reading the existing one.
+//   prose --get-book-bible --slug <slug|code|guid> [--out <path>]
+if (args.Contains("--get-book-bible"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GetBookBibleCli", args);
+    return;
+}
+
 // CLI mode: regenerate canon document .md files from DB (CanonDocuments + CanonDocumentSections).
 // The disk files are generated read-only mirrors; source of truth is the DB.
 //   prose --generate-canon-md --type <WorldBible|WorldMaster|Franchise|UniverseCanon>
@@ -1200,7 +1209,10 @@ if (args.Contains("--timeline"))
 // or continuity will be drawn from what's read — see ReadBeatsCli's own doc comment for the
 // live mistake (2026-08-10, VIGL multi-POV misattribution) this exists to make structurally
 // harder to repeat.
-//   prose --read-beats --slug <slug> (--from <N> --to <N> | --numbers <csv>)
+// Reads in true reading order, so it is also the sanctioned bulk-read for audit/logic-sweep
+// work — no --publish-md export round-trip required.
+//   prose --read-beats (--slug <slug> | --id <guid>) [--from N] [--to N] [--numbers <csv>]
+//                      [--format text|json]
 if (args.Contains("--read-beats"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("ReadBeatsCli", args);
@@ -2008,14 +2020,6 @@ if (args.Contains("--log-search"))
 if (args.Contains("--beat-archive"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BeatArchiveCli", args);
-    return;
-}
-
-// prose --read-beats (--slug <slug> | --id <guid>) [--from N] [--to N] [--format text|json]
-// Read a book's beats directly, in reading order — no --publish-md export required.
-if (args.Contains("--read-beats"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("ReadBeatsCli", args);
     return;
 }
 

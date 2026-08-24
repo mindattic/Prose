@@ -64,17 +64,28 @@ public class LogicSweepService(
             .Where(bn => nodeIds.Contains(bn.NodeId) && true && bn.Beat != null
                       && bn.Beat!.Text != null && bn.Beat.Text != "")
             .OrderBy(bn => bn.SortKey)
-            .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text, bn.SortKey })
+            .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text, bn.SortKey, bn.NodeId })
             .ToListAsync(ct);
 
         if (beatRows.Count == 0)
             return new LogicSweepReport(nodeId, node.Slug, node.Title, 0, []);
 
+        // Chapter titles for the leaf nodes these beats hang off. The bible cites locked scenes by
+        // CHAPTER while Beat.Number is not chapter-local, so without this the model can't tell
+        // which chapter it's reading and BibleAgreementRule compares a beat to the wrong chapter's
+        // lock — see AuditBeat.ChapterTitle for the two sweeps that diagnosed this.
+        var chapterTitles = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(n => nodeIds.Contains(n.Id))
+            .Select(n => new { n.Id, n.Title })
+            .ToDictionaryAsync(x => x.Id, x => x.Title ?? "", ct);
+
         // Strip inline entity-GUID tags (corpus-trust-recovery Phase 1a) before this text ever
         // reaches an LLM prompt or QuotedEvidenceAppearsInBeat's literal substring match — a tag
         // sitting inside a cited quote span would otherwise break that Contains check and turn a
         // true, correctly-cited finding into a false negative.
-        var beats = beatRows.Select(b => new AuditBeat(b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), b.SortKey)).ToList();
+        var beats = beatRows.Select(b => new AuditBeat(
+            b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), b.SortKey,
+            chapterTitles.TryGetValue(b.NodeId, out var chTitle) ? chTitle : "")).ToList();
 
         // A few distinctive disabled-beat snippets so OrphanReferencesRule can spot a live beat
         // still referencing something a cut beat established — an approximation of the skill's
@@ -158,11 +169,27 @@ public class LogicSweepService(
         if (beatRows.Count == 0)
             return new LogicSweepReport(nodeId, node.Slug, node.Title, 0, []);
 
+        // Chapter titles for this blast-radius set. A blast radius is deliberately CROSS-chapter,
+        // so chapter attribution matters more here than in the full sweep, not less — see
+        // AuditBeat.ChapterTitle. A beat linked to several nodes takes its lowest-SortKey link,
+        // matching the reading-order position the full sweep would give it.
+        var chapterTitles = await db.BeatNodes.AsNoTracking()
+            .Where(bn => beatIds.Contains(bn.BeatId))
+            .OrderBy(bn => bn.SortKey)
+            .Join(db.Nodes.IgnoreQueryFilters(), bn => bn.NodeId, n => n.Id,
+                (bn, n) => new { bn.BeatId, n.Title })
+            .ToListAsync(ct);
+        var chapterTitleByBeat = chapterTitles
+            .GroupBy(x => x.BeatId)
+            .ToDictionary(g => g.Key, g => g.First().Title ?? "");
+
         // Ordered by Number (a stable, book-wide reading-order proxy) — SortKey isn't meaningful
         // across a cross-chapter blast-radius set the way it is within a single chapter.
         // Strip inline entity-GUID tags — same reason as the sibling query above.
         var beats = beatRows.OrderBy(b => b.Number)
-            .Select((b, i) => new AuditBeat(b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), i)).ToList();
+            .Select((b, i) => new AuditBeat(
+                b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), i,
+                chapterTitleByBeat.TryGetValue(b.Id, out var chTitle) ? chTitle : "")).ToList();
 
         var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
         var extra = new Dictionary<string, object?>
@@ -326,12 +353,12 @@ public class LogicSweepService(
     /// post-hoc catch for whatever gets through anyway.</summary>
     internal static string BuildClampedProse(IReadOnlyList<AuditBeat> beats)
     {
-        var full = string.Join("\n\n", beats.Select(b => $"[Beat #{b.Number}]\n{b.Text}"));
+        var full = string.Join("\n\n", beats.Select(b => $"{BeatHeader(b)}\n{b.Text}"));
         if (full.Length <= 100_000) return full;
 
         var head = full[..50_000];
         var tail = full[^50_000..];
-        var visible = beats.Where(b => head.Contains($"[Beat #{b.Number}]") || tail.Contains($"[Beat #{b.Number}]"))
+        var visible = beats.Where(b => head.Contains(BeatHeader(b)) || tail.Contains(BeatHeader(b)))
             .Select(b => b.Number).ToHashSet();
         var elided = beats.Select(b => b.Number).Where(n => !visible.Contains(n)).ToList();
         var rangeNote = elided.Count == 0
@@ -344,6 +371,17 @@ public class LogicSweepService(
             + "its actual text, and any quote you attribute to it would be fabricated. ...]\n\n"
             + tail;
     }
+
+    /// <summary>The per-beat header the audit prompts see. Carries the chapter title when known
+    /// ("[Beat #3033 | Chapter 30 — The Gray Suit]") so a rule comparing prose against a
+    /// chapter-keyed bible lock can tell which chapter it is actually reading — Beat.Number alone
+    /// does not track chapter order on a large or restructured book. Falls back to the bare
+    /// "[Beat #N]" form when no chapter title is available, which is also what every existing
+    /// test fixture and the narrow blast-radius path produce.</summary>
+    internal static string BeatHeader(AuditBeat b) =>
+        string.IsNullOrWhiteSpace(b.ChapterTitle)
+            ? $"[Beat #{b.Number}]"
+            : $"[Beat #{b.Number} | {b.ChapterTitle}]";
 
     internal static IReadOnlyList<AuditVerdict> ParseFindingsArray(
         string ruleKey, string title, string raw, IReadOnlyList<AuditBeat> beats)
@@ -620,8 +658,20 @@ public class LogicSweepService(
                 the bible is explicitly marking something as a locked constraint the prose must
                 honor — say which side you think is stale in your evidence.{{bibleBlock}}
 
+                CHAPTER ATTRIBUTION — READ THIS BEFORE COMPARING ANYTHING.
+                Each beat below is labeled "[Beat #N | Chapter Title]". The beat NUMBER is a
+                global id: it is NOT chapter-local and does NOT tell you which chapter a beat is
+                in, nor its reading order. Only the chapter title in that header does.
+                The bible describes its locked scenes BY CHAPTER. So before reporting that a beat
+                contradicts a bible passage, confirm the beat's own chapter title matches the
+                chapter the bible passage is talking about. If the bible describes a scene as
+                happening in one chapter and the beat you are looking at is labeled a different
+                chapter, those are two DIFFERENT scenes — that is not a contradiction, and
+                reporting it as one is the single most common false positive on this dimension.
+                If a beat carries no chapter title, do not guess its chapter from its number.
+
                 Return ONLY a JSON array (no prose wrapper), one entry per real problem found:
-                [{"beat_number": <int or null>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "quote the bible claim and the contradicting prose, and say which side is stale", "fix": "one concrete sentence or null"}]
+                [{"beat_number": <int or null>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "quote the bible claim and the contradicting prose, name the beat's chapter and the bible passage's chapter, and say which side is stale", "fix": "one concrete sentence or null"}]
                 Return [] if bible and prose agree. Do not invent problems you cannot cite
                 specific bible text and prose for. When uncertain, err toward fewer findings.
                 """,

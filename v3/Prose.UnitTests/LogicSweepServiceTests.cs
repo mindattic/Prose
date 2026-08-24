@@ -294,4 +294,59 @@ public class LogicSweepServiceTests
         Assert.That(lo, Is.LessThan(100));
         Assert.That(hi, Is.GreaterThan(100));
     }
+
+    // ── Chapter attribution in the beat header (2026-08-23) ──────────────────────
+    // The bible cites locked scenes BY CHAPTER, but Beat.Number is not chapter-local, so a
+    // prompt labelling prose with only "[Beat #N]" let BibleAgreementRule compare a beat against
+    // a different chapter's lock and report a mismatch between two unrelated things. Diagnosed on
+    // both BCODA's and VIGL's 2026-08-22 sweeps (beat #3033 is really in Ch30, matching the very
+    // Ch30 lock the finding claimed it contradicted) and recommended for fix in both reports.
+
+    [Test]
+    public void BuildClampedProse_WhenBeatHasChapterTitle_LabelsTheBeatWithItsChapter()
+    {
+        var beats = new List<AuditBeat>
+        {
+            new(Guid.NewGuid(), 3033, "The gray suit sat down.", 100, "Chapter 30 — The Gray Suit"),
+        };
+
+        var result = LogicSweepService.BuildClampedProse(beats);
+
+        Assert.That(result, Does.Contain("[Beat #3033 | Chapter 30 — The Gray Suit]"),
+            "the model can only match prose to a chapter-keyed bible lock if the header names the chapter");
+    }
+
+    [Test]
+    public void BuildClampedProse_WhenBeatHasNoChapterTitle_FallsBackToBareBeatHeader()
+    {
+        // Test fixtures and any caller that can't resolve a chapter must keep the old format
+        // rather than emitting an empty "| " and inviting the model to guess a chapter.
+        var result = LogicSweepService.BuildClampedProse(
+            [new AuditBeat(Guid.NewGuid(), 7, "Text.", 100, "")]);
+
+        Assert.That(result, Does.Contain("[Beat #7]"));
+        Assert.That(result, Does.Not.Contain("|"));
+    }
+
+    [Test]
+    public void BuildClampedProse_OverThreshold_ChapterLabelledBeatsStillResolveVisibility()
+    {
+        // The head/tail visibility probe matches on the rendered header, so a chapter-labelled
+        // book must not report every beat as elided just because the header got longer.
+        var beats = Enumerable.Range(1, 200)
+            .Select(n => new AuditBeat(
+                Guid.NewGuid(), n, new string('x', 900) + $" beat{n}", n,
+                $"Chapter {(n / 8) + 1} — Some Title"))
+            .ToList();
+
+        var result = LogicSweepService.BuildClampedProse(beats);
+
+        Assert.That(result, Does.Contain("[Beat #1 | Chapter 1 — Some Title]"), "head should be visible");
+        Assert.That(result, Does.Contain("[Beat #200 | Chapter 26 — Some Title]"), "tail should be visible");
+
+        var match = System.Text.RegularExpressions.Regex.Match(result, @"beats #(\d+)-#(\d+)");
+        Assert.That(match.Success, Is.True, "elision note should still name a real beat-number range");
+        Assert.That(int.Parse(match.Groups[1].Value), Is.LessThan(100));
+        Assert.That(int.Parse(match.Groups[2].Value), Is.GreaterThan(100));
+    }
 }
