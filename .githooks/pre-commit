@@ -49,8 +49,37 @@ if [ "${SKIP_LLM_KEY_CHECK:-0}" = "1" ]; then
   exit 0
 fi
 
+# ── Build first, SEPARATELY, so a build break is not reported as a key failure ─
+# `dotnet test` builds before it runs, and a non-zero exit does not say which of
+# the two failed. That mattered on 2026-08-24: the long-lived Prose.Mcp.exe holds
+# v3/Prose.Mcp/bin/Release/net10.0/*.dll open, the build died on MSB3021/MSB3027,
+# and this gate announced "a trusted LLM key failed live validation" — pointing
+# at key rotation for a file lock, while votingEnabled=false meant the key test
+# was a guaranteed no-op skip that could not have failed at all. Build here,
+# attribute the failure honestly, and only then let the key test speak for keys.
+echo "pre-commit: building Prose.UnitTests…"
+build_log=$(dotnet build v3/Prose.UnitTests -c Release --nologo --verbosity quiet 2>&1) || {
+  echo "$build_log" | tail -20 >&2
+  if echo "$build_log" | grep -qE 'MSB3021|MSB3027|being used by another process'; then
+    cat >&2 <<'MSG'
+
+pre-commit: BLOCKED — BUILD FAILED (output locked by a running process, not a key problem).
+  A live Prose.Mcp.exe / Prose.Hub.exe is holding bin/Release/net10.0/*.dll open.
+  Close it (exiting Claude Code shuts the MCP server down) and re-commit.
+  This is NOT an LLM key failure — do not rotate keys for it.
+MSG
+  else
+    cat >&2 <<'MSG'
+
+pre-commit: BLOCKED — BUILD FAILED. Fix the compile error above and re-commit.
+  This is NOT an LLM key failure — do not rotate keys for it.
+MSG
+  fi
+  exit 1
+}
+
 echo "pre-commit: validating Prose trusted LLM panel keys (live)…"
-if dotnet test v3/Prose.UnitTests -c Release \
+if dotnet test v3/Prose.UnitTests -c Release --no-build \
       --filter "Category=LiveKeysTrusted" \
       --nologo --verbosity quiet; then
   echo "pre-commit: all trusted LLM keys valid — proceeding."

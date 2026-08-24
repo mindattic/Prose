@@ -555,6 +555,16 @@ if (args.Contains("--delete-alias"))
     return;
 }
 
+// CLI mode: add one alias row to one entity (dry-run unless --apply). The other half of
+// --delete-alias — re-binding a name the prose actually uses to the entity that owns it, which
+// until now had no path outside create_character's `aliases` parameter.
+//   prose --add-alias --value "<alias>" --entity <id-or-name> [--apply] [--force]
+if (args.Contains("--add-alias"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AddAliasCli", args);
+    return;
+}
+
 // CLI mode: dump the node bible VERBATIM (the read half of --set-book-bible's round trip).
 // NOT --book-bible, which generates a fresh bible via an LLM instead of reading the existing one.
 //   prose --get-book-bible --slug <slug|code|guid> [--out <path>]
