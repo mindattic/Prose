@@ -154,6 +154,41 @@ public class ContinuityService
     /// otherwise — non-numeric predicates and unparseable numeric-predicate values behave
     /// exactly as before this change.
     /// </summary>
+    /// <summary>
+    /// True when two claims are the SAME assertion re-extracted, rather than two competing facts:
+    /// same source chapter, same underlying sentence, only the model's paraphrase of it differs.
+    ///
+    /// Re-running extraction over unchanged prose (which every beat save does) rephrases objects
+    /// freely — "considers the sound criminal" one pass, "calls the sound criminal" the next, off
+    /// the byte-identical snippet. Because <c>ComputeClaimUid</c> hashes the object, the reworded
+    /// version lands as a new row on the same (entity, predicate), and the old test flagged the
+    /// pair CONTRADICTED. That put pure paraphrase duplicates in front of a human as continuity
+    /// contradictions and, worse, blocked point 2 of the docs/LOGIC.md §9 publish gate, which
+    /// requires zero open CONTRADICTED claims. Observed live 2026-08-24: 3 of 3 open
+    /// contradictions corpus-wide were this, 2 of them from a byte-identical snippet.
+    ///
+    /// Two genuinely contradicting facts essentially never come from the identical snippet in the
+    /// identical chapter — a contradiction needs two different pieces of text saying different
+    /// things — so this is a safe discriminator rather than a heuristic that could mask a real
+    /// conflict. Claims with no recorded snippet are never matched this way.
+    /// </summary>
+    internal static bool IsSameAssertion(ContinuityClaim a, ContinuityClaim b)
+    {
+        if (string.IsNullOrWhiteSpace(a.Snippet) || string.IsNullOrWhiteSpace(b.Snippet)) return false;
+        if (!string.Equals(a.SourceChapterId ?? "", b.SourceChapterId ?? "", StringComparison.OrdinalIgnoreCase))
+            return false;
+        return NormalizeSnippet(a.Snippet) == NormalizeSnippet(b.Snippet);
+    }
+
+    /// <summary>Lower-case, collapse whitespace, drop surrounding quotes and trailing sentence
+    /// punctuation — so the same sentence quoted with or without its full stop still matches.</summary>
+    internal static string NormalizeSnippet(string s)
+    {
+        var t = System.Text.RegularExpressions.Regex.Replace(s.Trim(), @"\s+", " ").ToLowerInvariant();
+        t = t.Trim('"', '“', '”', '\'');
+        return t.TrimEnd('.', ',', ';', ':', '!', '?', ' ');
+    }
+
     internal static bool ObjectsMatch(string predicate, string a, string b)
     {
         if (NumericPredicates.Contains(Normalize(predicate))
@@ -234,7 +269,8 @@ public class ContinuityService
                      && c.Status != "REJECTED" && c.Status != "SUPERSEDED")
             .OrderByDescending(c => c.Status == "CANONICAL" ? 1 : 0).ThenByDescending(c => c.LastConfirmedAt)
             .ToList()
-            .FirstOrDefault(c => !ObjectsMatch(incoming.Predicate, c.Object, incoming.Object));
+            .FirstOrDefault(c => !ObjectsMatch(incoming.Predicate, c.Object, incoming.Object)
+                              && !IsSameAssertion(c, incoming));
 
         incoming.Status          = conflict != null ? "CONTRADICTED" : "NEW";
         incoming.FirstAssertedAt = now;

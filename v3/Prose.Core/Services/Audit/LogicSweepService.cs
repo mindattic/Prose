@@ -410,7 +410,19 @@ public class LogicSweepService(
             "prose is consistent with the bible",
             "consistent with the bible's",
         ];
-        return verdicts.Any(v => hay.Contains(v, StringComparison.Ordinal));
+        if (verdicts.Any(v => hay.Contains(v, StringComparison.Ordinal))) return true;
+
+        // Softer shape, gated on there being no fix proposed: an entry that merely concludes
+        // "…which is consistent with X" and offers nothing to do is a confirmation wearing a
+        // finding's clothes. Requiring the absent fix keeps a genuine "beat 12 is consistent, but
+        // beat 14 contradicts it" finding — which always carries a fix — out of the filter.
+        if (string.IsNullOrWhiteSpace(fix))
+        {
+            string[] soft = ["is consistent with", "are consistent with", "reads as consistent"];
+            if (soft.Any(s => hay.Contains(s, StringComparison.Ordinal))) return true;
+        }
+
+        return false;
     }
 
     /// <summary>The per-beat header the audit prompts see. Carries the chapter title when known
@@ -556,6 +568,11 @@ public class LogicSweepService(
             [{"beat_number": <int>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "cite what happens and why it has no established cause", "fix": "one concrete sentence or null"}]
             Return [] if the causality chain holds. Do not invent problems you cannot cite a
             specific beat for. When uncertain, err toward fewer findings.
+
+            NOT A FINDING, EVER: an entry whose evidence concludes the text is fine ("this is
+            consistent", "no contradiction", "no fix needed"), or that says you could not check
+            something because those beats were not provided to you. Neither is a defect in the
+            book. If you would write one, return [] instead — [] is a correct, common answer.
             """,
             $"Beats:\n{ctx.Prose}");
         public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
@@ -590,6 +607,11 @@ public class LogicSweepService(
             [{"beat_number": <int>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "name who acts on knowledge they shouldn't have and cite what they say/do", "fix": "one concrete sentence or null"}]
             Return [] if knowledge states are consistent. Do not invent problems you cannot cite
             a specific beat for. When uncertain, err toward fewer findings.
+
+            NOT A FINDING, EVER: an entry whose evidence concludes the text is fine ("this is
+            consistent", "no contradiction", "no fix needed"), or that says you could not check
+            something because those beats were not provided to you. Neither is a defect in the
+            book. If you would write one, return [] instead — [] is a correct, common answer.
             """,
             $"Beats:\n{ctx.Prose}");
         public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
@@ -615,6 +637,11 @@ public class LogicSweepService(
             [{"beat_number": <int>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "quote the conflicting time claims and do the arithmetic", "fix": "one concrete sentence or null"}]
             Return [] if the timeline holds. Do not invent problems you cannot cite a specific
             beat for. When uncertain, err toward fewer findings.
+
+            NOT A FINDING, EVER: an entry whose evidence concludes the text is fine ("this is
+            consistent", "no contradiction", "no fix needed"), or that says you could not check
+            something because those beats were not provided to you. Neither is a defect in the
+            book. If you would write one, return [] instead — [] is a correct, common answer.
             """,
             $"Beats:\n{ctx.Prose}");
         public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
@@ -649,6 +676,11 @@ public class LogicSweepService(
                 Return [] if the ledger is clean both ways. Do not invent problems you cannot
                 cite a specific beat or registered pair for. When uncertain, err toward fewer
                 findings.
+
+                NOT A FINDING, EVER: an entry whose evidence concludes the text is fine ("this
+                is consistent", "no contradiction", "no fix needed"), or that says you could not
+                check something because those beats were not provided to you. Neither is a defect
+                in the book. If you would write one, return [] instead — [] is a correct answer.
                 """,
                 $"Beats:\n{ctx.Prose}");
         }
@@ -682,6 +714,11 @@ public class LogicSweepService(
                 Return [] if there are no orphan references. Do not flag a deliberately
                 unresolved mystery as an orphan reference — only flag what reads like leftover
                 debris from a cut plan. When uncertain, err toward fewer findings.
+
+                NOT A FINDING, EVER: an entry whose evidence concludes the text is fine ("this
+                is consistent", "no contradiction", "no fix needed"), or that says you could not
+                check something because those beats were not provided to you. Neither is a defect
+                in the book. If you would write one, return [] instead — [] is a correct answer.
                 """,
                 $"Beats:\n{ctx.Prose}");
         }
@@ -875,6 +912,11 @@ public class LogicSweepService(
                 Cite the specific inserted beat and the specific anchor text it conflicts with.
                 Return [] if the inserted beats are consistent with their anchors. Do not report a
                 difference that is merely later in time and consistent. When uncertain, return [].
+
+                NOT A FINDING, EVER: an entry whose evidence concludes the text is fine ("this
+                is consistent", "no contradiction", "no fix needed"), or that says you could not
+                check something because those beats were not provided to you. Neither is a defect
+                in the book. If you would write one, return [] instead — [] is a correct answer.
                 """,
                 $"Beats:\n{string.Join("\n\n", window)}");
         }

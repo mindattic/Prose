@@ -354,6 +354,31 @@ public class LogicSweepServiceTests
             Is.False);
     }
 
+    [Test]
+    public void IsSelfDeclaredNonFinding_ConsistencyConclusionWithNoFix_IsFiltered()
+    {
+        // The shape a real VIGL round produced: an inserted-beat-drift entry that trails off into
+        // "...which is consistent with their established professional relationship", proposing
+        // nothing. A confirmation wearing a finding's clothes.
+        Assert.That(
+            LogicSweepService.IsSelfDeclaredNonFinding(
+                "The flat, procedural tone suggests a standard acknowledgment rather than a first "
+                + "meeting, which is consistent with their established professional relationship.",
+                null),
+            Is.True);
+    }
+
+    [Test]
+    public void IsSelfDeclaredNonFinding_ConsistencyMentionWithARealFix_Survives()
+    {
+        // Same phrase, but the model proposed an actual change — that is a finding, keep it.
+        Assert.That(
+            LogicSweepService.IsSelfDeclaredNonFinding(
+                "Beat 12 is consistent with the timeline, but beat 14 places the same scene a month earlier.",
+                "Reconcile beat 14 to the established date."),
+            Is.False);
+    }
+
     // ── Chapter attribution in the beat header (2026-08-23) ──────────────────────
     // The bible cites locked scenes BY CHAPTER, but Beat.Number is not chapter-local, so a
     // prompt labelling prose with only "[Beat #N]" let BibleAgreementRule compare a beat against
