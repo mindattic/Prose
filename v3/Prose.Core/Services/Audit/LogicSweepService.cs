@@ -372,6 +372,47 @@ public class LogicSweepService(
             + tail;
     }
 
+    /// <summary>
+    /// True when a returned entry is the model reporting a NON-defect — either a confirmation
+    /// that prose and bible agree, or an admission it could not check something because the
+    /// relevant beats weren't in its window. Neither is a finding, and persisting them is worse
+    /// than useless: a reader who sees a BLOCKER whose evidence says "this matches the bible
+    /// exactly" stops believing the other findings too.
+    ///
+    /// Phrase-matched deliberately narrowly, on explicit VERDICT language rather than anything
+    /// that merely mentions agreement, so a genuine finding that happens to note "beat X is
+    /// consistent, but beat Y contradicts it" survives. The tradeoff is accepted knowingly: the
+    /// cost of wrongly dropping one finding is that the next sweep round finds it again, while
+    /// the cost of persisting confirmations is that every finding becomes untrustworthy. If a
+    /// real finding is ever suppressed here, the phrase that did it is in this list.
+    /// </summary>
+    internal static bool IsSelfDeclaredNonFinding(string evidence, string? fix)
+    {
+        var hay = (evidence + " " + (fix ?? "")).ToLowerInvariant();
+        string[] verdicts =
+        [
+            "no contradiction",
+            "not a contradiction",
+            "no fix needed",
+            "no fix required",
+            "no action needed",
+            "no action required",
+            "this is not a defect",
+            "is not a defect",
+            "cannot verify",
+            "could not verify",
+            "unable to verify",
+            "not visible in the beats provided",
+            "beats provided do not",
+            "were not provided",
+            "not provided in the beats",
+            "matches the bible",
+            "prose is consistent with the bible",
+            "consistent with the bible's",
+        ];
+        return verdicts.Any(v => hay.Contains(v, StringComparison.Ordinal));
+    }
+
     /// <summary>The per-beat header the audit prompts see. Carries the chapter title when known
     /// ("[Beat #3033 | Chapter 30 — The Gray Suit]") so a rule comparing prose against a
     /// chapter-keyed bible lock can tell which chapter it is actually reading — Beat.Number alone
@@ -427,6 +468,17 @@ public class LogicSweepService(
                     if (citedBeat != null && !QuotedEvidenceAppearsInBeat(evidence, citedBeat.Text))
                         continue;
                     var fix = f.TryGetProperty("fix", out var fx) ? fx.GetString() : null;
+                    // Post-hoc catch for self-declared non-findings, the companion to the prompt's
+                    // "an entry is a defect or it does not exist" rule (prevention) — same pairing
+                    // as the hallucinated-citation guard above. Models persistently return
+                    // CONFIRMATIONS ("this matches the bible exactly", "no contradiction") and
+                    // NON-VERIFICATIONS ("cannot verify — those beats weren't provided") as
+                    // findings, sometimes at BLOCKER severity: a 2026-08-24 VIGL round filed a
+                    // BLOCKER whose own evidence concluded "the prose is consistent with the
+                    // bible's locked kill choreography." Persisting those destroys trust in the
+                    // whole instrument, which is what made every prior report say "don't run
+                    // --until-dry on this book."
+                    if (IsSelfDeclaredNonFinding(evidence, fix)) continue;
                     var evidenceWithBeat = beatNumber.HasValue ? $"Beat #{beatNumber}: {evidence}" : evidence;
                     results.Add(new AuditVerdict(ruleKey, title, severity, evidenceWithBeat, location, fix));
                 }
@@ -670,10 +722,24 @@ public class LogicSweepService(
                 reporting it as one is the single most common false positive on this dimension.
                 If a beat carries no chapter title, do not guess its chapter from its number.
 
+                AN ENTRY IS A DEFECT OR IT DOES NOT EXIST. Two kinds of non-finding keep getting
+                reported; never emit either one:
+                1. CONFIRMATIONS. If bible and prose agree, say nothing at all about it. Do not
+                   emit an entry whose evidence concludes "this is consistent", "no fix needed",
+                   or "the lock is not contradicted".
+                2. NON-VERIFICATION. You are shown an excerpt, not the whole book. If checking a
+                   bible claim would need a beat you were not given, STAY SILENT about it. Do not
+                   emit an entry saying you "cannot verify", that a beat "is not visible in the
+                   beats provided", or asking to be given more beats. A gap in what you were shown
+                   is not a defect in the book, and reporting it as one is a false positive.
+                Report a contradiction only when you can see BOTH sides of it in front of you: the
+                bible text, and the prose that actually conflicts with it.
+
                 Return ONLY a JSON array (no prose wrapper), one entry per real problem found:
                 [{"beat_number": <int or null>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "quote the bible claim and the contradicting prose, name the beat's chapter and the bible passage's chapter, and say which side is stale", "fix": "one concrete sentence or null"}]
-                Return [] if bible and prose agree. Do not invent problems you cannot cite
-                specific bible text and prose for. When uncertain, err toward fewer findings.
+                Return [] if bible and prose agree, or if you were not shown enough to judge.
+                Returning [] is a correct and common answer. Do not invent problems you cannot
+                cite specific bible text and prose for. When uncertain, err toward fewer findings.
                 """,
                 $"Beats:\n{ctx.Prose}");
         }

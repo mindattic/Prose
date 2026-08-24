@@ -295,6 +295,65 @@ public class LogicSweepServiceTests
         Assert.That(hi, Is.GreaterThan(100));
     }
 
+    // ── Self-declared non-findings (2026-08-24) ─────────────────────────────────
+    // Models persistently return confirmations and non-verifications as findings, sometimes at
+    // BLOCKER severity — a real VIGL round filed a BLOCKER whose evidence concluded "the prose is
+    // consistent with the bible's locked kill choreography." Persisting those makes every other
+    // finding untrustworthy, which is what made prior reports say "don't run --until-dry."
+
+    [Test]
+    public void ParseFindingsArray_ConfirmationReportedAsFinding_IsDropped()
+    {
+        var raw = """
+            [{"beat_number":1,"severity":"blocker","evidence":"This matches the bible's description of the kill sequence exactly. The prose is consistent with the bible's locked kill choreography.","fix":null}]
+            """;
+        var results = LogicSweepService.ParseFindingsArray("bible_agreement", "Bible agreement", raw, Beats);
+        Assert.That(results, Is.Empty, "a confirmation is not a finding, whatever severity the model stamped on it");
+    }
+
+    [Test]
+    public void ParseFindingsArray_NonVerificationReportedAsFinding_IsDropped()
+    {
+        var raw = """
+            [{"beat_number":null,"severity":"moderate","evidence":"Cannot verify whether beat #4369 contains the tally; those beats were not provided.","fix":"Provide beats from Ch16 to verify."}]
+            """;
+        var results = LogicSweepService.ParseFindingsArray("bible_agreement", "Bible agreement", raw, Beats);
+        Assert.That(results, Is.Empty, "a gap in the model's window is not a defect in the book");
+    }
+
+    [Test]
+    public void ParseFindingsArray_NoFixNeededInTheFixField_IsDropped()
+    {
+        var raw = """
+            [{"beat_number":1,"severity":"minor","evidence":"Beat one text.","fix":"No fix needed; bible and prose align on the separation lock."}]
+            """;
+        var results = LogicSweepService.ParseFindingsArray("bible_agreement", "Bible agreement", raw, Beats);
+        Assert.That(results, Is.Empty);
+    }
+
+    [Test]
+    public void ParseFindingsArray_RealFinding_SurvivesTheNonFindingFilter()
+    {
+        // The filter must not eat genuine defects — this is the failure mode that would matter.
+        var raw = """
+            [{"beat_number":2,"severity":"blocker","evidence":"Beat two text. states the grace period is eight days, but the sale on day nine is called inside the window.","fix":"Change eight to ten."}]
+            """;
+        var results = LogicSweepService.ParseFindingsArray("bible_agreement", "Bible agreement", raw, Beats);
+        Assert.That(results, Has.Count.EqualTo(1));
+        Assert.That(results[0].Severity, Is.EqualTo("BLOCKER"));
+    }
+
+    [Test]
+    public void IsSelfDeclaredNonFinding_MixedVerdict_IsNotTreatedAsAConfirmation()
+    {
+        // "X is consistent, but Y contradicts it" is a REAL finding and must not be filtered.
+        Assert.That(
+            LogicSweepService.IsSelfDeclaredNonFinding(
+                "Beat 12 is consistent with the timeline, but beat 14 places the same scene a month earlier.",
+                "Reconcile beat 14 to the established date."),
+            Is.False);
+    }
+
     // ── Chapter attribution in the beat header (2026-08-23) ──────────────────────
     // The bible cites locked scenes BY CHAPTER, but Beat.Number is not chapter-local, so a
     // prompt labelling prose with only "[Beat #N]" let BibleAgreementRule compare a beat against
