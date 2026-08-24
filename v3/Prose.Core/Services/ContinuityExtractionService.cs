@@ -489,8 +489,14 @@ public class ContinuityExtractionService
         var allCandidates = new List<RawCandidate>();
         var arr = ExtractJsonArrayFromText(raw);
         if (arr == null || arr.Value.GetArrayLength() == 0)
-            log.LogInformation("[continuity] extraction produced 0 candidates. Raw response (first 1000 chars): {Raw}",
-                raw.Length > 1000 ? raw[..1000] : raw);
+            // Warning, not Information: a non-trivial response that yields no claims means the
+            // fact ledger silently got nothing from this source, and the ledger is point 2 of the
+            // publish gate. This sat at Information for a long time and was easy to scroll past.
+            log.LogWarning(
+                "[continuity] extraction produced 0 candidates from a {Len}-char response (maxTokens={MaxTokens}). " +
+                "If the response looks like valid claims, it was likely truncated mid-array. " +
+                "Raw response (first 1000 chars): {Raw}",
+                raw.Length, maxTokens, raw.Length > 1000 ? raw[..1000] : raw);
         if (arr != null)
         {
             foreach (var el in arr.Value.EnumerateArray())
@@ -808,7 +814,96 @@ public class ContinuityExtractionService
             }
             catch { }
         }
+
+        // Last resort: salvage whole objects out of a TRUNCATED array.
+        //
+        // Both passes above need the array to be closed — the greedy one needs a final ']' and the
+        // regex needs a literal "}]". When the model hits its maxTokens mid-object neither matches,
+        // so a response carrying a dozen perfectly good claims was discarded in full and the beat
+        // silently contributed nothing to the fact ledger. Observed live 2026-08-24: a beat-save
+        // extraction logged "produced 0 candidates" while its own raw response plainly contained
+        // four complete, well-formed claims. Since the fact ledger is point 2 of the docs/LOGIC.md
+        // §9 publish gate, a silent zero there is worse than a loud partial. Salvaging the complete
+        // objects and dropping only the half-written tail is strictly better than losing the batch.
+        var salvaged = SalvageCompleteObjects(text);
+        if (salvaged != null)
+        {
+            try
+            {
+                using var d = JsonDocument.Parse(salvaged);
+                if (d.RootElement.ValueKind == JsonValueKind.Array && d.RootElement.GetArrayLength() > 0)
+                    return d.RootElement.Clone();
+            }
+            catch { }
+        }
         return null;
+    }
+
+    /// <summary>Pull every COMPLETE top-level <c>{...}</c> object out of a possibly-truncated JSON
+    /// array and re-emit them as a well-formed array. String-aware (braces and brackets inside
+    /// string literals don't move the depth counter) and escape-aware, so a snippet containing a
+    /// quote or a brace can't desynchronise the scan. Returns null when nothing complete is found.
+    /// </summary>
+    internal static string? SalvageCompleteObjects(string text)
+    {
+        var start = text.IndexOf('[');
+        if (start < 0) return null;
+
+        var objects = new List<string>();
+        var depth = 0;
+        var objStart = -1;
+        var inString = false;
+        var escaped = false;
+
+        for (var i = start + 1; i < text.Length; i++)
+        {
+            var ch = text[i];
+
+            if (escaped) { escaped = false; continue; }
+            if (ch == '\\' && inString) { escaped = true; continue; }
+            if (ch == '"') { inString = !inString; continue; }
+            if (inString) continue;
+
+            if (ch == '{')
+            {
+                if (depth == 0) objStart = i;
+                depth++;
+            }
+            else if (ch == '}')
+            {
+                depth--;
+                if (depth == 0 && objStart >= 0)
+                {
+                    objects.Add(text[objStart..(i + 1)]);
+                    objStart = -1;
+                }
+                else if (depth < 0)
+                {
+                    depth = 0; // stray brace — resynchronise rather than abort.
+                }
+            }
+            else if (ch == ']' && depth == 0)
+            {
+                break; // array closed cleanly; anything after it isn't ours.
+            }
+        }
+
+        if (objects.Count == 0) return null;
+
+        // Keep only objects that individually parse — the salvage is worthless if it re-emits
+        // something malformed, and one bad object must not cost the others.
+        var good = new List<string>();
+        foreach (var o in objects)
+        {
+            try
+            {
+                using var d = JsonDocument.Parse(o);
+                if (d.RootElement.ValueKind == JsonValueKind.Object) good.Add(o);
+            }
+            catch { }
+        }
+
+        return good.Count == 0 ? null : "[" + string.Join(",", good) + "]";
     }
 
     private static RawCandidate? ParseCandidate(JsonElement el, string voterProviderId)

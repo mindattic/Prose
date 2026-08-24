@@ -545,6 +545,16 @@ if (args.Contains("--set-book-bible"))
     return;
 }
 
+// CLI mode: remove a bad entity alias row (dry-run unless --apply). The sanctioned fix for
+// alias pollution — an ordinary phrase registered as an alias, which makes EntityMentionScanner
+// tag that phrase as the entity corpus-wide.
+//   prose --delete-alias --value "<alias>" [--type <character|place|…>] [--apply]
+if (args.Contains("--delete-alias"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DeleteAliasCli", args);
+    return;
+}
+
 // CLI mode: dump the node bible VERBATIM (the read half of --set-book-bible's round trip).
 // NOT --book-bible, which generates a fresh bible via an LLM instead of reading the existing one.
 //   prose --get-book-bible --slug <slug|code|guid> [--out <path>]
