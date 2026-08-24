@@ -424,34 +424,34 @@ public class NodeTools
         return JsonSerializer.Serialize(new { ok = true, id = bid.Value }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update a beat's metadata: Title, Description, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.")]
+    [McpServerTool, Description("Update a beat's metadata: Title, Description, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. ONLY the fields you pass change — omit a field to leave that column exactly as it is, pass an empty string to clear it. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.")]
     public Task<string> UpdateBeatMetadata(
         [Description("Beat Guid OR 'node-guid.beat-guid' handle.")] string beatHandle,
-        [Description("Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.")] string title = "",
-        [Description("One-line description fed to LLM regenerations.")] string description = "",
-        [Description("What is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony. Visible to the prose writer LLM but never printed.")] string subtext = "",
-        [Description("Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.")] string emotionalTone = "",
-        [Description("Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.")] string paceHint = "",
-        [Description("Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.")] string structureRole = "",
-        [Description("Plot-act number 0–5. 0 = unassigned.")] int act = 0,
-        [Description("Scene type: scene | summary | transition | interstitial.")] string sceneType = "scene",
-        [Description("True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading.")] bool isChapterStart = false,
-        [Description("Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.")] string kind = "prose",
-        [Description("Optional manual override for the plot-event line (EventSummary — 'what happened', distinct from Description's authorial-intent register). When provided, sets Beat.EventSummary and stamps EventSummaryHash to the beat's CURRENT TextHash, which 'freezes' the manual line so the next generate_event_list run sees it as already current and skips it (no LLM call, no clobber). Pass empty string to clear. Omit (leave null) to leave the beat's event line untouched — unlike the other params above, this one is NOT overwritten by an empty default.")] string? eventSummary = null) =>
+        [Description("Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution. Omit to leave unchanged; \"\" to clear.")] string? title = null,
+        [Description("One-line description fed to LLM regenerations. Omit to leave unchanged; \"\" to clear.")] string? description = null,
+        [Description("What is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony. Visible to the prose writer LLM but never printed. Omit to leave unchanged; \"\" to clear.")] string? subtext = null,
+        [Description("Emotional tone, e.g. 'quiet' / 'tense' / 'wry'. Omit to leave unchanged; \"\" to clear.")] string? emotionalTone = null,
+        [Description("Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'. Omit to leave unchanged; \"\" to clear.")] string? paceHint = null,
+        [Description("Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'. Omit to leave unchanged; \"\" to clear.")] string? structureRole = null,
+        [Description("Plot-act number 0–5. 0 = unassigned. Omit to leave unchanged.")] int? act = null,
+        [Description("Scene type: scene | summary | transition | interstitial. Omit to leave unchanged; \"\" resets to 'scene'.")] string? sceneType = null,
+        [Description("True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading. OMIT to leave unchanged — passing false demotes a chapter opener, which until 2026-08-24 happened on every call that didn't set it.")] bool? isChapterStart = null,
+        [Description("Beat kind: prose | book-title | dedication | quote. Free-form so new kinds add no schema cost. Omit to leave unchanged; \"\" resets to 'prose'.")] string? kind = null,
+        [Description("Optional manual override for the plot-event line (EventSummary — 'what happened', distinct from Description's authorial-intent register). When provided, sets Beat.EventSummary and stamps EventSummaryHash to the beat's CURRENT TextHash, which 'freezes' the manual line so the next generate_event_list run sees it as already current and skips it (no LLM call, no clobber). Pass empty string to clear. Omit (leave null) to leave the beat's event line untouched.")] string? eventSummary = null) =>
         hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBeatMetadataImpl), new { beatHandle, title, description, subtext, emotionalTone, paceHint, structureRole, act, sceneType, isChapterStart, kind, eventSummary });
 
     public async Task<string> UpdateBeatMetadataImpl(
         string beatHandle,
-        string title = "",
-        string description = "",
-        string subtext = "",
-        string emotionalTone = "",
-        string paceHint = "",
-        string structureRole = "",
-        int act = 0,
-        string sceneType = "scene",
-        bool isChapterStart = false,
-        string kind = "prose",
+        string? title = null,
+        string? description = null,
+        string? subtext = null,
+        string? emotionalTone = null,
+        string? paceHint = null,
+        string? structureRole = null,
+        int? act = null,
+        string? sceneType = null,
+        bool? isChapterStart = null,
+        string? kind = null,
         string? eventSummary = null)
     {
         if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
@@ -470,9 +470,11 @@ public class NodeTools
 
         if (eventSummary != null)
         {
-            // Deliberately NOT folded into BeatMetadataUpdate above — that record overwrites
-            // every field unconditionally from its params, which would clobber EventSummary
-            // on every ordinary metadata call. This is a separate, targeted, opt-in write.
+            // Still a separate, targeted write: EventSummary carries a companion hash stamp
+            // (EventSummaryHash) that BeatMetadataUpdate has no field for. The reason it was
+            // originally kept out — "that record overwrites every field unconditionally from its
+            // params" — no longer applies: BeatMetadataUpdate is a partial update as of
+            // 2026-08-24 and only writes the fields a caller actually supplies.
             await using var db = await dbFactory.CreateDbContextAsync();
             var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == bid.Value);
             if (beat != null)

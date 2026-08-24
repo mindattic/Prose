@@ -1502,20 +1502,20 @@ Split one beat into two at the nearest sentence boundary near its midpoint. Both
 
 ### `update_beat_metadata`
 
-Update a beat's metadata: Title, Description, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. Pass empty strings to clear nullable fields. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.
+Update a beat's metadata: Title, Description, EmotionalTone, PaceHint, StructureRole, Act, SceneType, IsChapterStart, Kind. ONLY the fields you pass change — omit a field to leave that column exactly as it is, pass an empty string to clear it. Does NOT touch prose or audio. Use to mark a beat as a chapter start, change its kind to quote/dedication/book-title, or set the tone the next re-record uses.
 
 - `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
-- `title` (string, optional) — Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution.
-- `description` (string, optional) — One-line description fed to LLM regenerations.
-- `subtext` (string, optional) — What is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony. Visible to the prose writer LLM but never printed.
-- `emotionalTone` (string, optional) — Emotional tone, e.g. 'quiet' / 'tense' / 'wry'.
-- `paceHint` (string, optional) — Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'.
-- `structureRole` (string, optional) — Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'.
-- `act` (int, optional) — Plot-act number 0–5. 0 = unassigned.
-- `sceneType` (string, optional) — Scene type: scene | summary | transition | interstitial.
-- `isChapterStart` (bool, optional) — True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading.
-- `kind` (string, optional) — Beat kind: prose (default) | book-title | dedication | quote. Free-form so new kinds add no schema cost.
-- `eventSummary` (string, optional) — Optional manual override for the plot-event line (EventSummary — 'what happened', distinct from Description's authorial-intent register). When provided, sets Beat.EventSummary and stamps EventSummaryHash to the beat's CURRENT TextHash, which 'freezes' the manual line so the next generate_event_list run sees it as already current and skips it (no LLM call, no clobber). Pass empty string to clear. Omit (leave null) to leave the beat's event line untouched — unlike the other params above, this one is NOT overwritten by an empty default.
+- `title` (string, optional) — Short label. When IsChapterStart=true this is the chapter heading; when Kind=quote this is the attribution. Omit to leave unchanged; "" to clear.
+- `description` (string, optional) — One-line description fed to LLM regenerations. Omit to leave unchanged; "" to clear.
+- `subtext` (string, optional) — What is happening beneath the prose — foreshadowing, unspoken motivations, dramatic irony. Visible to the prose writer LLM but never printed. Omit to leave unchanged; "" to clear.
+- `emotionalTone` (string, optional) — Emotional tone, e.g. 'quiet' / 'tense' / 'wry'. Omit to leave unchanged; "" to clear.
+- `paceHint` (string, optional) — Pace hint, e.g. 'flowing' / 'clipped' / 'staccato' / 'languorous'. Omit to leave unchanged; "" to clear.
+- `structureRole` (string, optional) — Structure role, e.g. 'inciting-incident' / 'rising-action' / 'climax'. Omit to leave unchanged; "" to clear.
+- `act` (int, optional) — Plot-act number 0–5. 0 = unassigned. Omit to leave unchanged.
+- `sceneType` (string, optional) — Scene type: scene | summary | transition | interstitial. Omit to leave unchanged; "" resets to 'scene'.
+- `isChapterStart` (bool, optional) — True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading. OMIT to leave unchanged — passing false demotes a chapter opener, which until 2026-08-24 happened on every call that didn't set it.
+- `kind` (string, optional) — Beat kind: prose | book-title | dedication | quote. Free-form so new kinds add no schema cost. Omit to leave unchanged; "" resets to 'prose'.
+- `eventSummary` (string, optional) — Optional manual override for the plot-event line (EventSummary — 'what happened', distinct from Description's authorial-intent register). When provided, sets Beat.EventSummary and stamps EventSummaryHash to the beat's CURRENT TextHash, which 'freezes' the manual line so the next generate_event_list run sees it as already current and skips it (no LLM call, no clobber). Pass empty string to clear. Omit (leave null) to leave the beat's event line untouched.
 
 ### `update_beat_text`
 

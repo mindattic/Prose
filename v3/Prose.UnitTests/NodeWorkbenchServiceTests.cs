@@ -892,6 +892,101 @@ public class NodeWorkbenchServiceTests
         Assert.That(fresh.Kind, Is.EqualTo("prose"));
     }
 
+    // ── BeatMetadataUpdate is a PARTIAL update (2026-08-24) ─────────────────
+    //
+    // It used to overwrite every column unconditionally from the record's fields, so a caller who
+    // set one field silently reset all the others. Both callers defaulted isChapterStart to false,
+    // which means `prose --beat meta --id <opener> --title "X"` and any update_beat_metadata call
+    // that didn't think about the flag DEMOTED a chapter-opening beat — corrupting chapter
+    // structure on what the caller believed was a title edit. Found while clearing a mid-chapter
+    // BCODA beat that had been stamped with the chapter title.
+
+    /// <summary>Sets every metadata column to a known non-default value.</summary>
+    private async Task SeedFullMetadataAsync(Guid beatId) =>
+        await svc.UpdateBeatMetadataAsync(beatId, new NodeWorkbenchService.BeatMetadataUpdate(
+            Title: "Chapter 15 — One Shoe", Description: "the chapter opener", Subtext: "he already knows",
+            EmotionalTone: "quiet", PaceHint: "languorous", StructureRole: "Dark Night of the Soul",
+            Act: 3, SceneType: "summary", IsChapterStart: true, Kind: "quote"));
+
+    [Test]
+    public async Task UpdateBeatMetadata_TitleOnlyEdit_LeavesEveryOtherFieldIntact()
+    {
+        var s = await MakeNodeAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Opener prose.");
+        await SeedFullMetadataAsync(b.Id);
+
+        // Exactly what a title fix looks like: one field supplied, everything else null.
+        await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
+            "Chapter 15 — One Shoe (revised)", null, null, null, null, null, null, null, null, null));
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.Multiple(() =>
+        {
+            Assert.That(fresh.Title, Is.EqualTo("Chapter 15 — One Shoe (revised)"));
+            Assert.That(fresh.IsChapterStart, Is.True, "a title edit must NEVER demote a chapter opener");
+            Assert.That(fresh.Description, Is.EqualTo("the chapter opener"));
+            Assert.That(fresh.Subtext, Is.EqualTo("he already knows"));
+            Assert.That(fresh.EmotionalTone, Is.EqualTo("quiet"));
+            Assert.That(fresh.PaceHint, Is.EqualTo("languorous"));
+            Assert.That(fresh.StructureRole, Is.EqualTo("Dark Night of the Soul"));
+            Assert.That(fresh.Act, Is.EqualTo(3));
+            Assert.That(fresh.SceneType, Is.EqualTo("summary"));
+            Assert.That(fresh.Kind, Is.EqualTo("quote"));
+        });
+    }
+
+    [Test]
+    public async Task UpdateBeatMetadata_BlankString_ClearsThatFieldOnly()
+    {
+        var s = await MakeNodeAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Mid-chapter prose.");
+        await SeedFullMetadataAsync(b.Id);
+
+        // The actual BCODA fix: drop a wrongly-stamped title, keep the beat's own description.
+        await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
+            "", null, null, null, null, null, null, null, null, null));
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.That(fresh.Title, Is.Null, "an empty string is an explicit clear");
+        Assert.That(fresh.Description, Is.EqualTo("the chapter opener"), "and clears nothing else");
+        Assert.That(fresh.IsChapterStart, Is.True);
+    }
+
+    [Test]
+    public async Task UpdateBeatMetadata_ChapterStartFlag_CanStillBeUnsetExplicitly()
+    {
+        var s = await MakeNodeAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Not really an opener.");
+        await SeedFullMetadataAsync(b.Id);
+
+        await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
+            null, null, null, null, null, null, null, null, IsChapterStart: false, null));
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.That(fresh.IsChapterStart, Is.False, "passing false explicitly must still work — that is what --no-chapter-start is for");
+        Assert.That(fresh.Title, Is.EqualTo("Chapter 15 — One Shoe"), "and must not disturb the other fields");
+    }
+
+    [Test]
+    public async Task UpdateBeatMetadata_BlankSceneTypeAndKind_ResetToDefaultsRatherThanClearing()
+    {
+        // Neither column is nullable in the schema, so blank means "back to the default".
+        var s = await MakeNodeAsync();
+        var b = await svc.InsertBeatAsync(s.Id, null, "Prose.");
+        await SeedFullMetadataAsync(b.Id);
+
+        await svc.UpdateBeatMetadataAsync(b.Id, new NodeWorkbenchService.BeatMetadataUpdate(
+            null, null, null, null, null, null, null, SceneType: "  ", null, Kind: "  "));
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var fresh = await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id);
+        Assert.That(fresh.SceneType, Is.EqualTo("scene"));
+        Assert.That(fresh.Kind, Is.EqualTo("prose"));
+    }
+
     // ── DuplicateNodeAsync (write-gate Phase 1, 2026-08-22) ─────────────────
 
     private async Task<(Node Book, Node Chapter)> MakeBookWithChapterAsync()

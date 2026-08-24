@@ -549,16 +549,30 @@ public class NodeWorkbenchService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
             ?? throw new InvalidOperationException($"Beat {beatId} not found.");
-        beat.Title          = string.IsNullOrWhiteSpace(update.Title)          ? null : update.Title.Trim();
-        beat.Description    = string.IsNullOrWhiteSpace(update.Description)   ? null : update.Description.Trim();
-        beat.Subtext        = string.IsNullOrWhiteSpace(update.Subtext)       ? null : update.Subtext.Trim();
-        beat.EmotionalTone  = string.IsNullOrWhiteSpace(update.EmotionalTone) ? null : update.EmotionalTone.Trim().ToLowerInvariant();
-        beat.PaceHint       = string.IsNullOrWhiteSpace(update.PaceHint)      ? null : update.PaceHint.Trim().ToLowerInvariant();
-        beat.StructureRole  = string.IsNullOrWhiteSpace(update.StructureRole) ? null : update.StructureRole.Trim();
-        beat.Act            = update.Act;
-        beat.SceneType      = string.IsNullOrWhiteSpace(update.SceneType)     ? "scene" : update.SceneType.Trim();
-        beat.IsChapterStart = update.IsChapterStart;
-        beat.Kind           = string.IsNullOrWhiteSpace(update.Kind)          ? "prose" : update.Kind.Trim().ToLowerInvariant();
+        // PARTIAL update (2026-08-24): null = "not supplied, leave the column alone"; a blank
+        // string = "clear it". This used to overwrite EVERY column unconditionally from the
+        // record's fields, which made the CLI's own documented contract ("update beat metadata
+        // without touching prose") false in a damaging way: `prose --beat meta --id X --title "Y"`
+        // wiped that beat's Description, StructureRole, tone and pace, and — because the CLI and
+        // the MCP tool both default isChapterStart to false — silently set IsChapterStart=false,
+        // demoting a chapter-opening beat and breaking the book's chapter structure on what the
+        // caller thought was a title edit. The footgun was already known: Tools.Nodes.cs's
+        // eventSummary parameter documents these exact semantics for itself and was deliberately
+        // kept OUT of this record to dodge the clobber, rather than the record being fixed.
+        static string? Blank(string s) => string.IsNullOrWhiteSpace(s) ? null : s.Trim();
+
+        if (update.Title          is not null) beat.Title          = Blank(update.Title);
+        if (update.Description    is not null) beat.Description    = Blank(update.Description);
+        if (update.Subtext        is not null) beat.Subtext        = Blank(update.Subtext);
+        if (update.EmotionalTone  is not null) beat.EmotionalTone  = Blank(update.EmotionalTone)?.ToLowerInvariant();
+        if (update.PaceHint       is not null) beat.PaceHint       = Blank(update.PaceHint)?.ToLowerInvariant();
+        if (update.StructureRole  is not null) beat.StructureRole  = Blank(update.StructureRole);
+        if (update.Act            is not null) beat.Act            = update.Act.Value;
+        // SceneType and Kind are never null in the schema, so blank means "reset to the default"
+        // rather than "clear" (UpdateBeatMetadata_NullOrBlankKind_FallsBackToProse pins this).
+        if (update.SceneType      is not null) beat.SceneType      = Blank(update.SceneType) ?? "scene";
+        if (update.IsChapterStart is not null) beat.IsChapterStart = update.IsChapterStart.Value;
+        if (update.Kind           is not null) beat.Kind           = Blank(update.Kind)?.ToLowerInvariant() ?? "prose";
         beat.UpdatedAt      = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
 
@@ -3715,7 +3729,14 @@ public class NodeWorkbenchService
 
     /// <summary>The fields the UI's per-beat "details" panel can edit. None
     /// of these touch prose or audio — they just steer the narration's
-    /// tone the next time the beat is re-recorded.</summary>
+    /// tone the next time the beat is re-recorded.
+    ///
+    /// <para><b>Every field is "supply to change".</b> null = leave that column exactly as it is;
+    /// a blank string = clear it (or, for <see cref="SceneType"/> and <see cref="Kind"/>, which are
+    /// never null in the schema, reset it to "scene" / "prose"). <see cref="Act"/> and
+    /// <see cref="IsChapterStart"/> are nullable for the same reason — a non-nullable
+    /// <c>bool IsChapterStart</c> meant every caller that didn't think about it demoted a
+    /// chapter-opening beat. See the comment in <see cref="UpdateBeatMetadataAsync"/>.</para></summary>
     public record BeatMetadataUpdate(
         string? Title,
         string? Description,
@@ -3723,9 +3744,9 @@ public class NodeWorkbenchService
         string? EmotionalTone,
         string? PaceHint,
         string? StructureRole,
-        int Act,
+        int? Act,
         string? SceneType,
-        bool IsChapterStart,
+        bool? IsChapterStart,
         string? Kind);
 
     /// <summary>Map a Node.Status value to a Bootstrap chip color name.

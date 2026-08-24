@@ -16,7 +16,9 @@ namespace Prose.Cli;
 ///   update  --id &lt;beatId&gt; --text "..."
 ///           Replace a beat's prose. Use `--text -` to read from stdin.
 ///   meta    --id &lt;beatId&gt; [--title "..."] [--kind "..."] [--note "..."] [--in-world-date "..."]
-///           Update beat metadata without touching prose.
+///           Update beat metadata without touching prose. Only the fields you pass change
+///           (2026-08-24 — it used to reset every field you omitted); pass an empty string
+///           to clear one, and --no-chapter-start to unset the chapter-start flag.
 ///   show    --id &lt;beatId&gt;
 ///           Print a beat's full text and metadata.
 ///   list    --node &lt;slug|id&gt;
@@ -245,8 +247,12 @@ public static class BeatCli
     private static async Task<int> MetaAsync(string[] args, IServiceProvider services)
     {
         string? beatIdStr = null, title = null, kind = null, description = null, subtext = null, tone = null, pace = null, role = null, sceneType = null;
-        int act = 0;
-        bool chapterStart = false;
+        // Nullable so an unsupplied flag stays unsupplied: BeatMetadataUpdate treats null as
+        // "leave this column alone". `int act = 0` / `bool chapterStart = false` previously meant
+        // every `--beat meta` call reset Act to 0 and cleared IsChapterStart, so a title edit on a
+        // chapter-opening beat silently demoted it.
+        int? act = null;
+        bool? chapterStart = null;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -262,6 +268,9 @@ public static class BeatCli
                 case "--scene-type":    if (i + 1 < args.Length) sceneType = args[++i]; break;
                 case "--act":           if (i + 1 < args.Length && int.TryParse(args[++i], out var a)) act = a; break;
                 case "--chapter-start": chapterStart = true; break;
+                // Without this there is no way to UNSET the flag — the old code cleared it as a
+                // side effect of every call, which is not a feature you can rely on.
+                case "--no-chapter-start": chapterStart = false; break;
             }
         }
         if (string.IsNullOrWhiteSpace(beatIdStr)) { Console.Error.WriteLine("[beat meta] --id <beatGuid> is required."); return 1; }
@@ -348,7 +357,8 @@ public static class BeatCli
         Console.Error.WriteLine("  clear   --node <slug|id>  (soft-delete every enabled beat in the node)");
         Console.Error.WriteLine("  seed-spine --node <slug|id>  (create planned beats from the node's saved bible spine)");
         Console.Error.WriteLine("  update  --id <beatId> --text \"...\"  (use '-' for stdin)");
-        Console.Error.WriteLine("  meta    --id <beatId> [--title \"...\"] [--kind \"...\"] [--description \"...\"] [--tone \"...\"] [--pace \"...\"] [--role \"...\"] [--scene-type \"...\"] [--act N] [--chapter-start]");
+        Console.Error.WriteLine("  meta    --id <beatId> [--title \"...\"] [--kind \"...\"] [--description \"...\"] [--tone \"...\"] [--pace \"...\"] [--role \"...\"] [--scene-type \"...\"] [--act N] [--chapter-start | --no-chapter-start]");
+        Console.Error.WriteLine("          (only the fields you pass change; pass \"\" to clear one)");
         Console.Error.WriteLine("  show    --id <beatId>");
         Console.Error.WriteLine("  list    --node <slug|id>");
         return 1;
