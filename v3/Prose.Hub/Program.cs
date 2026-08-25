@@ -38,6 +38,15 @@ using Serilog.Events;
 // the echo to stay safe once CliDispatch/ToolDispatch start redirecting Console.Out/Error.
 Prose.Hub.HubConsoleEcho.CaptureOriginal();
 
+// QuestPDF Community license — required call before the first Document.Create. The Hub is
+// where PDF export actually executes (Prose.Cli/--export-node dispatches here via CliDispatch),
+// so setting this only in Prose.Cli's own Program.cs (which never runs the export code itself)
+// left every PDF export failing with QuestPDF's license-required exception — which aborted the
+// rest of NodeFullExportService.ExportAllAsync (description.txt/synopsis/keywords/cover never
+// ran) for every book in the corpus. This project is the non-commercial indie use case the
+// Community tier exists for.
+QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
+
 // Force Prose.Cli.dll to actually load into this process. Unlike Prose.Mcp (loaded
 // automatically because HubInvoker, a Prose.Mcp type, is registered in DI below),
 // nothing here has a direct compile-time reference to any Prose.Cli type - CliDispatch

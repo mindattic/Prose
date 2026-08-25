@@ -83,8 +83,11 @@ public static class EntityMentionScanner
                 && e.Status != "archived"
                 && e.Name.Length >= 3
                 && (e.OriginNodeId == null || e.OriginNodeId == bookNodeId))
-            .Select(e => new { e.Id, e.Name, e.EntityType })
+            .Select(e => new { e.Id, e.Name, e.EntityType, e.OriginNodeId })
             .ToListAsync(ct);
+        var bookScopedIds = bookNodeId is Guid bnid
+            ? entities.Where(e => e.OriginNodeId == bnid).Select(e => e.Id).ToHashSet()
+            : [];
 
         var candidates = new List<MentionCandidate>();
         var seenIds = new HashSet<Guid>();
@@ -165,11 +168,16 @@ public static class EntityMentionScanner
                 candidates.Add(new MentionCandidate(a.Value, a.Id, canonical, "pharmaceutical", RequiresStrictCase(a.Value)));
 
         // Derived given-name/surname candidates for multi-word character names ("Declan Doyle" also
-        // tags bare "Declan"/"Doyle"). A token is only added when it is NOT shared with any other
-        // entity's full name or derived token in this same candidate pool — a book's cast can
-        // legitimately collide on a token (found live: "Aelwyn Croft"/"Aderyn Croft" both derive
-        // "Croft"), and silently mistagging one character's name onto another is worse than leaving
-        // the bare form untagged, so an ambiguous token is dropped rather than guessed at.
+        // tags bare "Declan"/"Doyle"). Ambiguity arbitration used to happen right here (a token was
+        // only kept when exactly one entity claimed it) — moved to the unified cross-source pass
+        // below (2026-08-24, BTL logic sweep) because doing it here meant a token claimed by two
+        // entities was dropped unconditionally, with no chance for the book-scope-preference rule
+        // to save it: "Kovac" claimed by both a book-scoped "Idris Kovac" and a universe-wide "Ivet
+        // Kovac" was discarded right here, before the later pass ever saw a "Kovac" candidate to
+        // arbitrate. Every derived token is now added unconditionally (`ClaimToken` still records
+        // ownership for the unified pass to read); a book's cast can legitimately collide on a
+        // token with no book-scoped tiebreaker available (found live: "Aelwyn Croft"/"Aderyn Croft"
+        // both derive "Croft") — the unified pass drops those exactly as before.
         var tokenOwners = new Dictionary<string, HashSet<Guid>>(StringComparer.OrdinalIgnoreCase);
         void ClaimToken(string token, Guid id)
         {
@@ -203,9 +211,43 @@ public static class EntityMentionScanner
         {
             if (!namesById.TryGetValue(id, out var canonical)) continue;
             foreach (var tok in tokens)
-                if (tokenOwners.TryGetValue(tok, out var owners) && owners.Count == 1 && owners.Contains(id))
-                    candidates.Add(new MentionCandidate(tok, id, canonical, "character", RequiresStrictCase(tok)));
+                candidates.Add(new MentionCandidate(tok, id, canonical, "character", RequiresStrictCase(tok)));
         }
+
+        // Cross-source ambiguity guard (2026-08-24, BTL logic sweep): the derived given-name/
+        // surname loop above only arbitrates collisions AMONG derived tokens. It never sees a
+        // collision between a derived token and an alias-table row, or between two alias-table
+        // rows for two different entities — those are added to `candidates` directly, with no
+        // ClaimToken call at all. Confirmed live: "Farai" was a curated CharacterAlias on BOTH
+        // "Farai Karimi" (universe-wide) and "Farai Kessler" (BTL-scoped, the character actually
+        // introduced in that book) — since alias rows never call ClaimToken, the derived-token
+        // ambiguity check never saw the collision, and every bare "Farai" mention in BTL silently
+        // resolved to whichever of the two candidates happened to sort first, misattributing a
+        // book's own protagonist's records-clerk contact to an unrelated universe-wide character.
+        // Generalize the same "ambiguous token dropped, never guessed at" rule to the WHOLE
+        // candidate pool regardless of source: any Text claimed by more than one distinct entity
+        // is unsafe to anchor a tag to, full stop.
+        // A collision isn't always an unresolvable guess: if exactly one contender for a shared
+        // Text is scoped to THIS book (OriginNodeId == bookNodeId) and the rest are universe-wide
+        // or scoped elsewhere, the book-scoped one wins — that's not guessing, it's the whole
+        // point of book-scoping (Farai Kessler, introduced by name in BTL, correctly outranks the
+        // unrelated universe-wide "Farai Karimi" for every bare "Farai" mention in BTL's own
+        // beats). Only drop the text entirely when the collision can't be broken that way (two+
+        // book-scoped contenders, or none).
+        var textOwners = new Dictionary<string, HashSet<Guid>>(StringComparer.OrdinalIgnoreCase);
+        foreach (var c in candidates)
+        {
+            if (!textOwners.TryGetValue(c.Text, out var owners))
+                textOwners[c.Text] = owners = [];
+            owners.Add(c.EntityId);
+        }
+        candidates.RemoveAll(c =>
+        {
+            if (!textOwners.TryGetValue(c.Text, out var owners) || owners.Count <= 1) return false;
+            var bookScopedOwners = owners.Where(bookScopedIds.Contains).ToList();
+            if (bookScopedOwners.Count == 1) return c.EntityId != bookScopedOwners[0];
+            return true; // 0 or 2+ book-scoped contenders — genuinely ambiguous, drop all.
+        });
 
         // Final guard, independent of source: a candidate whose entire text is nothing but a bare
         // article/connective can never safely anchor a tag. See the Stopwords doc comment for why

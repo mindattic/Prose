@@ -1872,12 +1872,6 @@ Archive a book: moves the book file from engine/data/books/ to engine/data/archi
 - `id` (string, required) — Book id (32-char hex).
 - `confirmId` (string, required) — Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.
 
-### `get_book`
-
-Load a book by id: full metadata, chapter id list (canonical order), state_at_end (open threads, character status carry-forward, canon changes).
-
-- `id` (string, required) — Book id (32-char hex like 'eb91080d9c9c4f2b9b405fa5996bdea1').
-
 ### `get_book_outline`
 
 Load a book's shared outline (the plot spine). Returns premise/arc_target/theme/structure, per-chapter outlines (title, short_synopsis, long_synopsis, key_beats, opens_threads, closes_threads, state_changes, pov_character), book-level threads (planted_in / pays_off_in), pending_adjustments (LLM-proposed neighbor edits). Approval status gates prose generation in the UI.
@@ -1897,9 +1891,15 @@ Build the 'WHERE WE ARE' director context block for writing a specific chapter: 
 - `bookId` (string, required) — Book id.
 - `chapterId` (string, required) — Chapter id whose prose you're about to write.
 
-### `list_books`
+### `get_legacy_book`
 
-List every book on the shelf. Returns id, title, premise, chapter count, status, protagonists.
+LEGACY. Load a book by id from the old pre-Nodes Records/Entities book shelf only (create_legacy_book writes here). Does NOT resolve current Nodes-table books/slugs — use get_book for those. Full metadata, chapter id list (canonical order), state_at_end (open threads, character status carry-forward, canon changes).
+
+- `id` (string, required) — Legacy book id (32-char hex like 'eb91080d9c9c4f2b9b405fa5996bdea1').
+
+### `list_legacy_books`
+
+LEGACY. List books in the old pre-Nodes Records/Entities book shelf only (create_legacy_book/create_legacy_chapter write here). Does NOT include current Nodes-table books — use list_books for those. Returns id, title, premise, chapter count, status, protagonists.
 
 - _(no parameters)_
 

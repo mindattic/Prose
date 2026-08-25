@@ -198,11 +198,11 @@ public class StoryTools
         this.hub = hub;
     }
 
-    /// <summary>List every book on the shelf. Returns id, title, premise, chapter count, status, protagonists.</summary>
-    [McpServerTool, Description("List every book on the shelf. Returns id, title, premise, chapter count, status, protagonists.")]
-    public Task<string> ListBooks() => hub.InvokeAsync(nameof(StoryTools), nameof(ListBooksImpl));
+    /// <summary>LEGACY — list every book in the old pre-Nodes Records/Entities shelf (see BookRepository). Real books live in the Nodes table now; use NodeTools.ListBooks (tool name list_books) for those. This is the legacy_book counterpart to create_legacy_book/create_legacy_chapter.</summary>
+    [McpServerTool, Description("LEGACY. List books in the old pre-Nodes Records/Entities book shelf only (create_legacy_book/create_legacy_chapter write here). Does NOT include current Nodes-table books — use list_books for those. Returns id, title, premise, chapter count, status, protagonists.")]
+    public Task<string> ListLegacyBooks() => hub.InvokeAsync(nameof(StoryTools), nameof(ListLegacyBooksImpl));
 
-    public string ListBooksImpl()
+    public string ListLegacyBooksImpl()
     {
         var list = books.ListBooks()
             .Select(b => new { id = b.Id, title = b.Title, premise = b.Premise, chapter_count = b.ChapterIds.Count, status = b.Status, protagonists = b.Protagonists })
@@ -211,12 +211,12 @@ public class StoryTools
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
     }
 
-    /// <summary>Load a book by id: full metadata, chapter id list (canonical order), state_at_end (open threads, character status carry-forward, canon changes).</summary>
-    [McpServerTool, Description("Load a book by id: full metadata, chapter id list (canonical order), state_at_end (open threads, character status carry-forward, canon changes).")]
-    public Task<string> GetBook([Description("Book id (32-char hex like 'eb91080d9c9c4f2b9b405fa5996bdea1').")] string id) =>
-        hub.InvokeAsync(nameof(StoryTools), nameof(GetBookImpl), new { id });
+    /// <summary>LEGACY — load a book by id from the old pre-Nodes Records/Entities shelf only. Real books live in the Nodes table now; use NodeTools.GetBook (tool name get_book) for those.</summary>
+    [McpServerTool, Description("LEGACY. Load a book by id from the old pre-Nodes Records/Entities book shelf only (create_legacy_book writes here). Does NOT resolve current Nodes-table books/slugs — use get_book for those. Full metadata, chapter id list (canonical order), state_at_end (open threads, character status carry-forward, canon changes).")]
+    public Task<string> GetLegacyBook([Description("Legacy book id (32-char hex like 'eb91080d9c9c4f2b9b405fa5996bdea1').")] string id) =>
+        hub.InvokeAsync(nameof(StoryTools), nameof(GetLegacyBookImpl), new { id });
 
-    public string GetBookImpl(string id)
+    public string GetLegacyBookImpl(string id)
     {
         var b = books.LoadBook(id);
         if (b == null) return JsonSerializer.Serialize(new { error = "not_found", id }, CanonTools.JsonOpts);
