@@ -625,6 +625,13 @@ public class ProseDbContext : DbContext
     // the decision_log MCP tool.
     public DbSet<DecisionLedgerEntry>    DecisionLedgerEntries   => Set<DecisionLedgerEntry>();
 
+    // RFC 0007 "Universe Interchange" — the Hub's outbound message queue toward other
+    // MindAttic apps' Claude Code sessions (ExperimentEve first). Not universe-scoped
+    // (Consumer is an external app identity, not a Prose Universe row). Query via
+    // GET /api/outbox/{consumer}; enqueue via POST /api/outbox/{consumer} or
+    // UniverseInterchangeService's own auto-enqueue calls.
+    public DbSet<OutboxEvent>            OutboxEvents            => Set<OutboxEvent>();
+
     // DCM-Viz permanent history (observability plan, 2026-08-20) — every
     // ContextTelemetryService run/beat, persisted forever by Prose.Hub's event
     // subscribers (RunStarted/BeatRecorded/RunEnded), not just held in-memory.

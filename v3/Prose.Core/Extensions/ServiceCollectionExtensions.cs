@@ -408,6 +408,12 @@ public static class ServiceCollectionExtensions
         // Idempotent via the SeedRuns audit table; CLI: `prose --seed <name>`.
         services.AddSingleton<SqlSeedService>();
 
+        // RFC 0007 "Universe Interchange": import/export between the <app>/universe/<slug>.
+        // universe.json contract and the Entity spine, plus the Hub -> consumer-app outbox
+        // queue (ExperimentEve first). CLI: `prose --universe-import/-export/-sync`.
+        services.AddSingleton<UniverseInterchangeService>();
+        services.AddSingleton<OutboxService>();
+
         // Reads sys.* into a JSON-friendly graph for the /schema visualization.
         services.AddSingleton<SchemaGraphService>();
 

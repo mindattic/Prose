@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**285 tools** across **46 tool families.**
+**289 tools** across **47 tool families.**
 
 ## Families
 
@@ -57,6 +57,7 @@
 | [Survey](#survey) | 7 |
 | [Swain](#swain) | 3 |
 | [Universe](#universe) | 5 |
+| [Universe Interchange](#universe-interchange) | 4 |
 | [Verification](#verification) | 5 |
 | [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
@@ -2039,6 +2040,38 @@ Set the universal world facts for the current universe. These facts are injected
 Switch the active universe for this session by slug (e.g. 'glmz' or 'scry'). All subsequent canon/story reads are scoped to it. Returns the new current universe or an error if the slug is unknown.
 
 - `slug` (string, required) — Universe slug from list_universes, e.g. 'glmz'.
+
+## Universe Interchange
+
+<sub>`UniverseInterchangeTools`</sub>
+
+### `export_universe_file`
+
+Export a Prose universe to Universe Interchange JSON (RFC 0007) at the given path.
+
+- `slug` (string, required) — Universe slug, e.g. 'eve'.
+- `path` (string, required) — Absolute output path for the exported JSON file.
+
+### `get_universe_entity`
+
+Look up one entity in a specific universe by slug. Cross-universe — does NOT switch the session's active universe (unlike the generic entity tools).
+
+- `slug` (string, required) — Universe slug, e.g. 'eve'.
+- `entitySlug` (string, required) — Entity slug within that universe, e.g. 'kat-weiss'.
+
+### `import_universe_file`
+
+Import a Universe Interchange JSON file (RFC 0007, docs/schemas/universe.schema.json) into Prose's Entity spine. Universe slug defaults to the file's own universe.id. Idempotent — re-importing the same file is a no-op diff.
+
+- `path` (string, required) — Absolute path to the <slug>.universe.json file.
+- `slug` (string, optional) — Optional universe slug override; defaults to the file's own universe.id.
+
+### `search_universe`
+
+Search a specific universe's entities by name substring. Cross-universe — does NOT switch the session's active universe.
+
+- `slug` (string, required) — Universe slug, e.g. 'eve'.
+- `query` (string, required) — Name substring to search for.
 
 ## Verification
 

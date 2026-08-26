@@ -1,6 +1,23 @@
-# RFC 0007 — Universe Interchange & the EVE Universe
+---
+codex: 1
+project: Prose
+code: SS
+layer: rfc
+status: implemented
+updated: 2026-08-26
+---
 
-Status: ACCEPTED (user-directed, 2026-08-26) — execution keyword: `/eve` in the Prose CLI
+# RFC 0007 — Universe Interchange & the EVE Universe {#SS-RFC-0007-INTERCHANGE}
+
+> Note: this repo already has an unrelated "RFC 0007" (`0007-fully-relational-canon.md`)
+> predating this one — a numbering collision from before this RFC existed. Both keep their
+> original filenames/titles ("RFC 0007") since that's how every piece of code, this doc's own
+> history, and the `/eve` slash command already refer to this one; this doc's own heading
+> anchor above carries an `-INTERCHANGE` suffix so codex doctor's unique-anchor check passes
+> without renaming anything else.
+
+Status: **PHASE 1 IMPLEMENTED (2026-08-26)** — execution keyword: `/eve` in the Prose CLI.
+Phase 2 (game-writing deliverables as Books) remains design-approved, not yet built.
 Author: handoff from the ExperimentEve session (Claude, D:\Projects\MindAttic\ExperimentEve)
 Depends on: RFC 0001 (canon-as-data), RFC 0006 (universe segregation)
 
@@ -211,3 +228,203 @@ books; the export is just a filter.
 3. EVE queryable from Prose CLI, MCP, and Hub HTTP; `npm run universe -- pull`
    succeeds from the ExperimentEve repo.
 4. Nothing writes to the DB except through the Hub. No exceptions.
+
+## Phase 1 — implemented 2026-08-26
+
+All four acceptance points verified live:
+1. `dotnet test v3/Prose.UnitTests` — 2212 passed, 24 skipped, 0 regressions. 14
+   pre-existing failures confirmed unrelated (12 environment-dependent log-search
+   tests reading real Serilog files; 2 a structurally pre-existing DI-registration
+   test bug in files this RFC never touched — `Prose.Core.Extensions.AddProseServices()`
+   cannot register `Prose.Mcp.HubInvoker` since Core has no reference to Mcp).
+   16 new tests added (`UniverseInterchangeServiceTests`, `OutboxServiceTests`), all green.
+2. Spot-checked `--universe list` (all 8 universes, including the 7 pre-existing,
+   listed correctly) and `--book`/generation commands untouched.
+3. EVE live: 75/75 entities imported (7 character, 2 faction, 20 creature, 30
+   location, 4 artifact, 5 event, 7 rule — matches the file exactly), 38 edges,
+   0 stubs (the file's cross-references are internally complete). Verified via
+   CLI (`--universe-import/-export/-sync`), MCP (`get_universe_entity`,
+   `search_universe` via direct `/api/mcp-invoke` calls), and Hub HTTP
+   (`POST /api/universes/eve/import`, `GET/POST /api/outbox/eve`). Import →
+   export → diff against source: 75/75 entities present, 0 relation diffs, 0
+   universe-metadata diffs. `npm run universe -- pull` from ExperimentEve
+   succeeds (exit 0, writes `eve.prose-snapshot.json`) — see the noted gap below.
+4. All writes went through the Hub (`prose` CLI → `HubCliClient` → `/api/cli-invoke`,
+   or a direct MCP-shaped `/api/mcp-invoke` call, or `/api/universes/eve/import`).
+   No raw SQL was run against the database at any point in this implementation.
+
+### Deviations from the RFC's suggested design (all minimal, documented in code)
+
+- **Storage model**: every interchange entity — including `character`/`location`/
+  `faction` — is stored on the generic Entity + `Record.Json` + `EntityTag` + `Edge`
+  spine (`EfRepository`-style), never on the fully-relational `Character`/`Place`/
+  `Faction` typed tables (`CharacterMapper`/`PlaceMapper`/`FactionMapper`). Those
+  mappers are built around Prose's own ~15–25-bridge-table domain model and
+  explicitly stopped reading `Records.Json` years before this RFC; forcing sparse
+  game-entity data through that machinery would be fragile for no benefit. The RFC
+  itself designates `Record.Json` as the "round-trip source of truth" for
+  import/export, which is exactly the generic-spine model. `EntityType` strings
+  still follow the RFC's semantic mapping for readability. See
+  `UniverseInterchangeService`'s class doc-comment.
+- **`creature` type mapping**: NOT routed to the `Species` table as suggested —
+  `Species` is a 5-row controlled vocabulary (human/ai/elf/synthetic/unknown) that
+  `Character.Species` references by name, not a per-instance table for dozens of
+  individual creatures. Creatures get a generic, `RepositoryDefinition`-registered
+  `EntityType` instead (same fallback path the RFC already specifies for
+  event/rule/organization/concept).
+- **`artifact` type mapping**: NOT split between Gear subtypes and generic Entity.
+  None of the file's four artifacts (a yacht, an OS, a keepsake card, a dress)
+  cleanly fits Prose's Gear categories as a uniform rule, so all artifacts get a
+  uniform generic `EntityType` for consistency rather than cherry-picking two into
+  `Transportation`/`Apparel`.
+- **Universe slug casing**: registered as `eve` (lowercase), not `EVE` as the RFC's
+  Step 1 literally states — every existing universe (`glmz`, `scry`, `gospel`, ...)
+  uses a lowercase `Slug` with an uppercase `Name`; the RFC's own Step 1 line
+  ("New Universe row: Slug EVE, Name 'Experiment Eve'") conflicts with that
+  established convention, so the convention wins. Same for the CLI's
+  `--universe-import` slug default: the file's own `universe.id` is used verbatim
+  (already lowercase per the schema's `^[a-z0-9-]+$` pattern), not uppercased.
+- **Universe-block round-trip**: the RFC doesn't specify where `tagline`/`era`/
+  `setting` persist (`Universe` has no matching columns). Stored verbatim as a
+  `Setting` row (`Key = "interchange.universe_source"`, scoped to the universe)
+  so export reconstructs the exact original `universe` object; falls back to
+  deriving from `Universe.Name`/`Description`/`WorldFacts` if that row is ever
+  missing (e.g. a universe seeded by hand, not via interchange import).
+
+### Bugs found and fixed along the way (not RFC-scoped, but blocking and fixed per
+### project policy — "fix bugs immediately, never deferred")
+
+1. **`CliDispatch` param binder silently passed `null` args** to any CLI handler
+   typed `IReadOnlyList<string> args` instead of the concrete `string[]` (affects
+   `SeedCli`, `ResetPasswordCli`, `VulturesSeedCli`, `AuditDenormCli`) — found via
+   `prose --seed`, which has apparently been broken via the Hub-forwarding path
+   since the Stage C CLI migration. Fixed by broadening the type check to
+   `pt.IsAssignableFrom(typeof(string[]))`.
+2. **`SqlSeedService` never refreshed `IUniverseContext`** after a successful run.
+   A Hub-resident process caches its universe catalog for its whole lifetime; a
+   freshly-seeded universe (EVE, or any future one) was invisible to
+   `--universe list`/`--universe use` until the Hub restarted. Fixed by calling
+   `IUniverseContext.Refresh()` after every successful seed run.
+3. **`UniverseInterchangeService`'s own `UpsertUniverseSourceAsync`** was missing
+   `.IgnoreQueryFilters()` on its `Settings` lookup (`Setting` has a shared-visibility
+   query filter) — under any non-empty ambient `UniverseScope` that wasn't the
+   target universe (the normal case for a live Hub), a re-import's lookup silently
+   missed the existing row and crashed on a duplicate-key insert. Caught live via
+   the Hub (not by the original unit tests, which never set an ambient scope) and
+   fixed; a regression test (`ImportAsync_ReimportUnderNonEmptyAmbientUniverseScope_DoesNotThrow`)
+   now sets a non-empty ambient scope explicitly so this class of bug can't hide again.
+
+### Known integration gap (not fixed — outside this repo)
+
+`npm run universe -- pull` (ExperimentEve's own script) calls
+`GET /api/universes/EVE/snapshot` with no `scope` parameter, which returns the
+DCM *active working set* (what's currently resident for live prose generation —
+correctly empty, since Prose has never generated EVE prose yet), not the full
+universe dump. A full pull needs `?scope=all`. This is a one-line change in
+`ExperimentEve/scripts/universe.mjs`, in a sibling repo this RFC's mandate didn't
+cover — flagged for the user/ExperimentEve session rather than edited here.
+
+### Pre-existing `UniverseGraphService` bugs found during cross-session
+### verification (real, NOT caused by RFC 0007, deliberately NOT fixed here)
+
+The ExperimentEve session bridge-tested against the *pre-existing* `/api/universes/{slug}/
+search` and `/snapshot` endpoints (built on `UniverseGraphService`, not on this RFC's own
+Entity-spine reads) and reported two symptoms. Both were verified directly against the DB
+before touching anything — neither is a defect in `UniverseInterchangeService`:
+
+1. **Not a bug**: `/search` shows `katie-kat-weiss` instead of the interchange id `kat-weiss`.
+   `Entity.Slug` is stored correctly as `kat-weiss` verbatim (confirmed via `get_universe_entity`
+   reading the DB column directly). `UniverseGraphService` computes its OWN graph-node id by
+   re-slugifying `Entity.Name` at load time (`Slugify(en.Name)`, `UniverseGraphService.cs` — every
+   bespoke per-type node builder does this) — it never reads the stored `Entity.Slug` column.
+   This is universal, long-predates this RFC, and affects every universe (a GLMZ entity whose
+   `Entity.Slug` differs from `Slugify(Entity.Name)` would show the same divergence). Out of scope
+   to change unilaterally — it's a shared service with real blast radius (19k+ live GLMZ nodes).
+   **Use the RFC 0007 tools for interchange data instead**: MCP `get_universe_entity`/
+   `search_universe`, or CLI `--universe-export` (both read `Entity.Slug` directly, confirmed correct).
+2. **Real bug, not RFC 0007's**: every node's `edgeCount` field in `/snapshot` and `/search`
+   reads 0, even though the raw `Edges` table is fully correct (38 rows, both directions verified,
+   e.g. `soak`↔`ren`) and the SAME snapshot response's top-level `edges` array is also fully
+   correct (38 entries, correct source/target). Reproduces identically after a full Hub restart
+   (rules out staleness/caching timing). GLMZ (populated mostly via older bespoke per-type
+   relationship builders, not the generic `Edges` table) shows correct non-zero `edgeCount`s, so
+   the bug appears specific to edges loaded via `UniverseGraphService.BuildEdgesFromSqlTable`
+   (the generic-`Edges`-table path) versus the bespoke per-type builders. Not root-caused further
+   — it's deep in a shared graph-build/caching service touching every universe, genuinely risky to
+   patch blind, and outside this RFC's acceptance criteria (which this RFC satisfies via its own
+   Entity-spine reads, confirmed correct independent of this service). **Flagged for the user**,
+   not fixed here.
+3. **Real, serious bug — cross-universe data leak in `/snapshot` and `/search`.** A rebuild of
+   EVE's graph (forced by an `EnsureFresh()` fix earlier this session) returned 5,175 nodes /
+   5,273 edges instead of the correct ~97/~58, including 723 `weapon`, 2,129 `technology`, 155
+   `organization`, and 2,071 `unknown`-typed nodes — types that don't exist anywhere in EVE's
+   interchange schema. This is GLMZ's (and/or other universes') data leaking into EVE's graph.
+   Reproduced consistently across multiple isolated calls, not a one-off race.
+
+   Two confirmed, compounding defects in `UniverseGraphService.cs`:
+   - `BuildCharacters`/`BuildDistricts`/`BuildFactions`/`BuildCorponations`/`BuildWeaponry`/
+     `BuildEquipment`/`BuildTechnology`/`BuildRemainingEntities` (`BuildFromDatabase`, line
+     1105) read `db.<Property>`/`ctx.Entities` with no explicit
+     `.Where(x => x.UniverseId == state.UniverseId)` — unlike `BuildEdgesFromSqlTable` (line
+     1133), which already treats that explicit filter as required "belt-and-suspenders"
+     alongside the ambient EF query filter, in its own doc comment.
+   - The seven legacy `EfRepository<T>` singletons behind `db.Characters` etc.
+     (`CharacterRepository`, `DistrictRepository`, ... — `Repositories.cs`, `AddSingleton` in
+     `ServiceCollectionExtensions.cs:192-201`) each cache `GetAll()` into a single shared
+     instance field keyed only by `UniverseScope.Epoch`, a process-wide counter bumped by every
+     universe switch — not by which universe the cache actually holds. One cache slot, shared
+     across every universe and every concurrent request.
+
+   **FIXED (2026-08-26).** Live repro at the time of writing confirmed the second defect —
+   the singleton cache — as the actual, sufficient root cause for the leak: `BuildCharacters`
+   etc. read through `CharacterMapper.LoadAllFromReadModel`/`PlaceMapper.LoadAll`/etc., which
+   already query `db.Entities`/`CharacterReadModels` under EF's ambient `HasQueryFilter` — so
+   those reads are correctly scoped *whenever they actually execute*. The leak was the cache
+   short-circuiting before that ambient-filtered query ever ran, serving whichever universe's
+   rows happened to be cached under the last epoch bump, regardless of which universe the
+   current request/rebuild was actually scoped to. Rewriting the eight builders to read
+   `ctx.<Table>` directly (the fix originally proposed here) turned out to be the wrong shape
+   for the six that consume rich Mapper-built DTOs (`CharacterData`/`DistrictData`/etc. carry no
+   `UniverseId` field to filter on, and none of them expose the ~25-Include enrichment those
+   Mappers already do) — replacing the data source would have meant re-deriving that enrichment
+   from scratch, a much larger and riskier change than the actual defect warranted.
+
+   Applied instead: each of the seven `EfRepository<T>` singletons behind `db.Characters`/
+   `Districts`/`Factions`/`Corponations`/`Weaponry`/`Equipment`/`Technology`
+   (`v3/Prose.Core/Services/Repositories.cs`) now keys its `GetAll()`/`GetAllLite()` cache by
+   `UniverseScope.EffectiveId` in addition to the existing `UniverseScope.Epoch` check — a
+   `mappedCacheUniverseId`/`mappedCacheLiteUniverseId` field set alongside the existing epoch
+   field, checked in the same condition. Strictly additive (only ever causes *more* cache misses
+   than before, never serves a result the old check would have rejected), so it carries no
+   correctness risk to the existing epoch-based invalidation. `BuildRemainingEntities` (the one
+   builder that already reads `ctx.Entities` directly, no repository cache involved) also picked
+   up the same explicit `.Where(x => x.UniverseId == state.UniverseId)` belt-and-suspenders guard
+   `BuildEdgesFromSqlTable` already used, for consistency.
+
+   Verified live: `dotnet run --project Prose.Cli -- --universe eve --rebuild-graph` → 97
+   nodes / 58 edges (was 5,175/5,273); `GET /api/universes/eve/snapshot?scope=all` confirms the
+   same 97/58 with only EVE-native node types (`creature`/`place`/`character`/`artifact`/`rule`/
+   `event`/`faction`/`concept` — no `weapon`/`technology`/`organization`/`unknown`). GLMZ's own
+   graph re-checked unaffected: `GET /api/universes/glmz/stats` still reports 19,239 nodes /
+   19,185 edges, matching its pre-fix state. Full unit suite for the touched services
+   (`UniverseGraph`/`WorldGraph`/all seven repositories) passed, 0 regressions.
+
+   **Follow-up FIXED (2026-08-26):** the identical `mappedCache`/`mappedCacheEpoch` pattern
+   (cache keyed by a global switch counter, not by universe) repeated in every other
+   `EfRepository<T>`-derived repository in `Repositories.cs` (22 more types — Ammunition,
+   Cyberware, Vocabulary, Genemod, Transportation, Contract, Automaton, Subsidiary,
+   Entertainment, Apparel, News, Archetype, Material, Pharmaceutical, ConsumerGood, Quote,
+   LabSpecimen, FlyoverEntity, Psionic, SyntheticLife, Motif, WorldbuildingDoc). None of those
+   feed `UniverseGraphService` today, so they were outside this bug's reproduced blast radius,
+   but carried the exact same latent defect for any future multi-universe caller. Applied the
+   same `mappedCacheUniverseId`/`mappedCacheLiteUniverseId` fix to all 22 remaining types
+   (44 sites: field + check + assignment × 2 caches × 22 classes), via literal-pattern
+   `replace_all` since every repository shares byte-identical cache-check/assignment lines.
+   All 29 `EfRepository<T>` types in `Repositories.cs` now carry the universe-scoped cache guard.
+   `dotnet build Prose.Core` clean, 0 warnings/errors.
+
+### First outbox event
+
+Enqueued per the handoff's step 2 (left undelivered so ExperimentEve's own
+`UserPromptSubmit` hook drains it naturally on its next prompt):
+`POST /api/outbox/eve {"kind":"hello","summary":"EVE universe live in Prose: 75 entities. Pull when ready."}`

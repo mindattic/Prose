@@ -241,7 +241,15 @@ app.MapGet("/api/universes/{slug}/stats", (string slug, UniverseGraphService gra
     var id = ResolveUniverseId(slug);
     if (id == null) return Results.NotFound(new { error = "unknown_universe", slug });
     uc.SetFlowUniverse(id);
-    graph.EnsureLoaded();
+    // EnsureFresh(), not EnsureLoaded(): EnsureLoaded() only rebuilds when a universe's
+    // GraphState has never been loaded in this process's lifetime (state.Loaded latches true
+    // forever after the first call and is never re-checked) — a universe other than whichever
+    // one was ambient at Hub startup (the only one RefreshIfStale() ever probes, once, via the
+    // DI factory's background Task.Run) would show stale data for the rest of the process's
+    // life after any later write. EnsureFresh() re-runs the cheap IsStale() SQL probe on every
+    // call instead. Found live: a second RFC 0007 interchange import into EVE left this
+    // endpoint stuck at the pre-import node/edge counts. See /snapshot below for the same fix.
+    graph.EnsureFresh();
     var result = Results.Ok(new { nodeCount = graph.NodeCount, edgeCount = graph.EdgeCount });
     uc.SetFlowUniverse(null);
     return result;
@@ -310,7 +318,11 @@ app.MapGet("/api/universes/{slug}/snapshot", async (
     List<UniverseNode> nodes;
     if (string.Equals(scope, "all", StringComparison.OrdinalIgnoreCase))
     {
-        graph.EnsureLoaded();
+        // EnsureFresh(), not EnsureLoaded() — see the /stats endpoint's comment above for why
+        // EnsureLoaded() alone leaves a non-startup-default universe's graph stale forever
+        // after the first load. Found live: a second RFC 0007 interchange import into EVE
+        // left scope=all stuck at the pre-import node/edge counts.
+        graph.EnsureFresh();
         nodes = graph.AllNodes();
     }
     else
@@ -482,6 +494,36 @@ app.MapPost("/api/edges", async (EdgeRequest req, UniverseGraphService graph, ID
     return Results.Ok(new { ok = true, graphRefreshed = refreshed });
 });
 
+// RFC 0007 "Universe Interchange" §5 — game-side push: ExperimentEve's `npm run universe --
+// push` posts its interchange JSON body here. Mirrors the read endpoints' {slug}-in-route
+// style; UniverseInterchangeService is self-contained (explicit UniverseId everywhere, no
+// ambient-scope dependency) so no uc.SetFlowUniverse dance is needed here.
+app.MapPost("/api/universes/{slug}/import", async (string slug, HttpRequest http, UniverseInterchangeService interchange) =>
+{
+    using var reader = new StreamReader(http.Body);
+    var json = await reader.ReadToEndAsync();
+    var result = await interchange.ImportAsync(json, slug);
+    return result.Success ? Results.Ok(result) : Results.BadRequest(result);
+});
+
+// RFC 0007 §5 "The Outbox (CliHook channel)" — the Hub's outbound message queue toward other
+// MindAttic apps' Claude Code sessions. GET drains (marks delivered) unless ?peek=true;
+// POST enqueues (used both by this session deliberately messaging a consumer, and by
+// services auto-enqueuing on import/export/beat-write completion).
+app.MapGet("/api/outbox/{consumer}", async (string consumer, bool? peek, OutboxService outbox) =>
+{
+    var events = await outbox.DrainAsync(consumer, peek ?? false);
+    return Results.Ok(events.Select(e => new { id = e.Id, ts = e.Ts, kind = e.Kind, summary = e.Summary, data = e.DataJson }));
+});
+
+app.MapPost("/api/outbox/{consumer}", async (string consumer, OutboxEnqueueRequest req, OutboxService outbox) =>
+{
+    if (string.IsNullOrWhiteSpace(req.Kind) || string.IsNullOrWhiteSpace(req.Summary))
+        return Results.BadRequest(new { error = "kind and summary are required" });
+    var ev = await outbox.EnqueueAsync(consumer, req.Kind, req.Summary, req.Data);
+    return Results.Ok(new { id = ev.Id, ts = ev.Ts });
+});
+
 Console.Title = "Prose Hub — http://127.0.0.1:5900";
 HubConsoleEcho.Out.WriteLine();
 HubConsoleEcho.Out.WriteLine("========================================================");
@@ -493,3 +535,5 @@ HubConsoleEcho.Out.WriteLine();
 app.Run();
 
 sealed record EdgeRequest(Guid Source, Guid Target, string RelationType, string? Sentiment, double? Weight, string? Description, string? Universe);
+
+sealed record OutboxEnqueueRequest(string Kind, string Summary, object? Data);

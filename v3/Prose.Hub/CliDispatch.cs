@@ -165,8 +165,18 @@ public static class CliDispatch
         for (var i = 0; i < callParams.Length; i++)
         {
             var pt = callParams[i].ParameterType;
+            // IsAssignableFrom(string[]), not `pt == typeof(string[])`: several handlers
+            // (SeedCli, ResetPasswordCli, VulturesSeedCli, AuditDenormCli) type their args
+            // parameter as IReadOnlyList<string>/IEnumerable<string> rather than the concrete
+            // array — a strict type-equality check left those silently bound to null (the
+            // final `: null` branch), which for an async handler doesn't throw synchronously
+            // from Invoke() but instead surfaces as a plain ArgumentNullException the first
+            // time the null args is enumerated, once the returned Task is awaited below. Found
+            // live: `prose --seed <name>` failing with "Value cannot be null (Parameter
+            // 'source')" via the Hub-forwarding path since the Stage C CLI migration — this
+            // silently broke every handler using a non-array args type until now.
             callArgs[i] = pt == typeof(IServiceProvider) ? sp
-                : pt == typeof(string[]) ? req.Args
+                : pt.IsAssignableFrom(typeof(string[])) ? req.Args
                 : pt.IsEnum && req.ExtraParamValue != null ? Enum.Parse(pt, req.ExtraParamValue, ignoreCase: true)
                 : pt == typeof(string) && req.ExtraParamValue != null ? req.ExtraParamValue
                 : null;

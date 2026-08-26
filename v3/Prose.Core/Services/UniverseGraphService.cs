@@ -168,7 +168,14 @@ public class UniverseGraphService : IUniverseGraphService
     public bool EnsureFresh()
     {
         var state = GetState();
-        if (!state.Loaded) { EnsureLoaded(state); return true; }
+        // Bug fix (found live, RFC 0007 EVE interchange re-import): the old code returned right
+        // after EnsureLoaded(state) on a never-loaded GraphState WITHOUT ever calling IsStale() —
+        // EnsureLoaded() trusts a non-empty on-disk graph cache file as-is regardless of age, so
+        // the very first call in a fresh Hub process silently served however-stale that file
+        // happened to be, contradicting this method's own doc comment ("cheap when graph is
+        // fresh (just compares mtimes)" implies the staleness probe always runs). Now it does,
+        // for both the first-ever load and every call after.
+        if (!state.Loaded) EnsureLoaded(state);
         if (!IsStale(state)) return false;
         Rebuild(state);
         RebuildIndexes(state);
@@ -1197,7 +1204,12 @@ public class UniverseGraphService : IUniverseGraphService
     {
         if (sql == null) return;
         using var ctx = sql.CreateDbContext();
-        var rows = ctx.Entities.AsNoTracking()
+        // Explicit filter, belt-and-suspenders alongside the ambient EF query filter, same
+        // reasoning as BuildEdgesFromSqlTable below (docs/rfc/0007-universe-interchange.md bug #3).
+        var entitiesQuery = ctx.Entities.AsNoTracking();
+        if (state.UniverseId != Guid.Empty)
+            entitiesQuery = entitiesQuery.Where(e => e.UniverseId == state.UniverseId);
+        var rows = entitiesQuery
             .Select(e => new { e.Name, e.EntityType, e.Description, e.Status })
             .ToList();
         foreach (var e in rows)

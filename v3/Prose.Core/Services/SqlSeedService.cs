@@ -24,13 +24,16 @@ public class SqlSeedService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly IPathProvider paths;
+    private readonly IUniverseContext universe;
 
     public SqlSeedService(
         IDbContextFactory<ProseDbContext> dbFactory,
-        IPathProvider paths)
+        IPathProvider paths,
+        IUniverseContext universe)
     {
         this.dbFactory = dbFactory;
         this.paths     = paths;
+        this.universe  = universe;
     }
 
     /// <summary>
@@ -72,6 +75,9 @@ public class SqlSeedService
             ["universe_horror"]                  = "add_universe_horror_20260803.sql",
             ["universe_erotica"]                 = "add_universe_erotica_20260804.sql",
             ["universe_gospel"]                  = "add_universe_gospel_20260812.sql",
+            // RFC 0007 (2026-08-26): 8th Universe — EVE (Experiment Eve), the first non-literary
+            // (game) consumer of the Prose engine. See the .sql file's own header for context.
+            ["universe_eve"]                     = "add_universe_eve_20260826.sql",
         };
 
     public class SeedResult
@@ -129,6 +135,15 @@ public class SqlSeedService
             await RecordRunAsync(db, name, ct);
             result.Success = true;
             result.Message = $"Seed '{name}' applied.";
+
+            // A seed script can insert a new Universe row (every add_universe_*.sql does).
+            // IUniverseContext caches its catalog for the Hub process's lifetime and only
+            // reloads on an explicit Refresh() — without this, a freshly-seeded universe is
+            // invisible to `prose --universe list/use` and every ambient-scope resolution
+            // until the Hub restarts. Found live seeding EVE (RFC 0007): the seed applied
+            // successfully but `--universe use --slug eve` still reported "Unknown slug".
+            // Cheap and safe to do unconditionally — any seed could touch Universe rows.
+            universe.Refresh();
         }
         catch (Exception ex)
         {

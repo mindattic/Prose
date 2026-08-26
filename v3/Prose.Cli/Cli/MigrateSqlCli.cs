@@ -77,7 +77,10 @@ public static class MigrateSqlCli
         // add ScoreBeat/ScoreChapter/ScoreArc/ScoreStory to NodeReviewBeatScores.
         var beatScoreDimensions = args.Contains("--beat-score-dimensions");
 
-        if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !nodeBible && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue && !beatScoreDimensions)
+        // RFC 0007 "Universe Interchange": create OutboxEvents (Hub → consumer-app queue).
+        var outboxEvents = args.Contains("--outbox-events");
+
+        if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !nodeBible && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue && !beatScoreDimensions && !outboxEvents)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  prose --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -94,6 +97,7 @@ public static class MigrateSqlCli
             Console.WriteLine("  prose --migrate-sql --review-contradictions     add Contradictions to EntityReviews + NodeReviews; Gripes+Contradictions to NodeReviewBeatScores");
             Console.WriteLine("  prose --migrate-sql --distributed-queue         create DistributedWorkQueue table (multi-machine entity/node/beat review + prose writing)");
             Console.WriteLine("  prose --migrate-sql --beat-score-dimensions     add ScoreBeat/ScoreChapter/ScoreArc/ScoreStory to NodeReviewBeatScores (SS-A47 Swain doctrine)");
+            Console.WriteLine("  prose --migrate-sql --outbox-events             create OutboxEvents table (RFC 0007 Hub → consumer-app queue)");
             Console.WriteLine();
             Console.WriteLine("  prose --migrate-sql --character-relational    add relational columns + bridges to Characters,");
             Console.WriteLine("                                             then backfill from Records.Json (--no-backfill skips Phase C)");
@@ -862,6 +866,41 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ beat-score-dimensions migration failed: {ex.Message}");
+                failures++;
+            }
+        }
+
+        if (outboxEvents)
+        {
+            using var scope = sp.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<ProseDbContext>();
+
+            Console.WriteLine();
+            Console.WriteLine("[outbox-events]");
+            try
+            {
+                await db.Database.ExecuteSqlRawAsync("""
+                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[OutboxEvents]') AND type = N'U')
+                    BEGIN
+                        CREATE TABLE [dbo].[OutboxEvents] (
+                            [Id]           UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
+                            [Consumer]     NVARCHAR(64)     NOT NULL DEFAULT '',
+                            [Ts]           DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
+                            [Kind]         NVARCHAR(64)     NOT NULL DEFAULT '',
+                            [Summary]      NVARCHAR(1000)   NOT NULL DEFAULT '',
+                            [DataJson]     NVARCHAR(MAX)        NULL,
+                            [DeliveredTs]  DATETIME2            NULL,
+                            CONSTRAINT [PK_OutboxEvents] PRIMARY KEY ([Id])
+                        );
+                        CREATE INDEX [IX_OutboxEvents_Consumer_DeliveredTs]
+                            ON [dbo].[OutboxEvents] ([Consumer], [DeliveredTs]);
+                    END;
+                    """);
+                Console.WriteLine("  ✔ OutboxEvents table created (or already exists).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"  ✘ outbox-events migration failed: {ex.Message}");
                 failures++;
             }
         }

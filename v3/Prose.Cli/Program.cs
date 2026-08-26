@@ -127,6 +127,10 @@ if (UniverseBootstrap.RequestedSlug == null
         // Corpus-wide self-alias repair: scans every universe's Character/Place/Faction/Weapon
         // aliases by design — see FixSelfAliasesCli's own doc comment.
         "--fix-self-aliases",
+        // RFC 0007 "Universe Interchange": each subcommand resolves its own explicit universe
+        // (the file's own universe.id for import, a required positional slug for export/sync) —
+        // an ambient scope would defeat the point of a cross-app interchange format.
+        "--universe-import", "--universe-export", "--universe-sync",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -1927,6 +1931,29 @@ if (isUniverseManagementCommand)
 {
     var uniArgs = args.Skip(1).ToArray();
     Environment.ExitCode = await HubCliClient.ForwardAsync("UniverseCli", uniArgs);
+    return;
+}
+
+// RFC 0007 "Universe Interchange" — import/export between an app's
+// <app>/universe/<slug>.universe.json contract file and Prose's Entity spine.
+// Each subcommand resolves its own explicit universe (file's own id, or a required
+// positional slug) — see UniverseAgnosticCommands below.
+if (args.Contains("--universe-import"))
+{
+    var rest = args.SkipWhile(a => a != "--universe-import").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("UniverseInterchangeCli", rest, method: "RunImportAsync");
+    return;
+}
+if (args.Contains("--universe-export"))
+{
+    var rest = args.SkipWhile(a => a != "--universe-export").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("UniverseInterchangeCli", rest, method: "RunExportAsync");
+    return;
+}
+if (args.Contains("--universe-sync"))
+{
+    var rest = args.SkipWhile(a => a != "--universe-sync").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("UniverseInterchangeCli", rest, method: "RunSyncAsync");
     return;
 }
 

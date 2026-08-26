@@ -975,7 +975,7 @@ rows. Added to [Status](#status)'s known-gaps list.
 ## Universes
 
 Every canon and story row belongs to exactly one Universe ([SS-LAW-15](docs/BIBLE.md#SS-§5)).
-Seven are currently registered:
+Eight are currently registered:
 
 | Universe | Slug | Genre | World-facts doc | Craft-layer doc |
 |---|---|---|---|---|
@@ -986,12 +986,43 @@ Seven are currently registered:
 | **EROTICA** | `erotica` | Sixth universe added 2026-08-04 | — | — |
 | **GOSPEL** | `gospel` | Split out from NONFICTION; New Testament claims-cataloguing campaign | [docs/gospel/](docs/gospel/) | — |
 | **FICTION** | `fiction` | General literary fiction (formerly EPIC) | — | — |
+| **EVE** | `eve` | Experiment Eve — first game/non-literary universe (ExperimentEve, RFC 0007) | — | — |
 
 Universe scoping is **fail-closed** as of Epoch 4: an unset or invalid universe scope blocks
 generation rather than silently defaulting to "every universe" — the fix that closed a
 cross-universe content-leak incident (`--fix-cross-universe-contamination` repairs any residue).
 Switch scope with `prose --universe <id>` (CLI, per-process) or MCP `switch_universe`
 (per-session) — two processes or sessions can target different universes simultaneously.
+
+### Universe Interchange (RFC 0007)
+
+Prose is the repository of universes — not just the writing program for books, but a
+canonical store other MindAttic apps read from and write to. The **Universe Interchange**
+format (`docs/schemas/universe.schema.json`) is the contract: a single JSON file per universe
+(`<app>/universe/<slug>.universe.json`) holding `{universe: {id, name, tagline, era, setting,
+logline, rules[]}, entities: [{id, type, name, summary, details{}, relations[], tags[]}]}`.
+
+- **Import/export** — `UniverseInterchangeService` maps interchange entities onto the generic
+  Entity spine (`Entity` + `Record.Json` as the round-trip source of truth + `EntityTag` +
+  `Edge`), auto-registering a `RepositoryDefinition` for any novel entity `type`. Import is an
+  idempotent upsert by `(UniverseId, Slug)`; a dangling `relations[].to` auto-creates a
+  `Status=stub` entity, promoted to canon if that entity's own row arrives in a later import.
+- **CLI**: `prose --universe-import <path> [--universe <slug>]` · `prose --universe-export
+  <slug> <path>` · `prose --universe-sync <path>` (import then export back, normalizing the
+  file for the consumer app to commit).
+- **MCP**: `import_universe_file`, `export_universe_file`, `get_universe_entity`,
+  `search_universe` (cross-universe lookups that don't switch the session's active universe).
+- **Hub HTTP**: `POST /api/universes/{slug}/import` (game-side push) plus the pre-existing
+  `GET /api/universes/{slug}/{entities,neighbors,search,snapshot}` reads.
+- **The Outbox** — `GET/POST /api/outbox/{consumer}` is the Hub's message queue toward another
+  app's Claude Code session: Prose enqueues a one-line summary ("GDD chapter 3 drafted — pull
+  barks"), and a `UserPromptSubmit` hook in the consumer repo drains it on the next prompt.
+  `?peek=true` reads without marking delivered.
+- **First consumer**: [ExperimentEve](../ExperimentEve) — a 75-entity game universe (Kingsport,
+  a real-time-night survival-horror-parody). `npm run universe -- push|pull` round-trips
+  against this contract. Phase 2 (design-approved, not yet built): Prose writes the game's GDD,
+  script, and bark sheets as ordinary Books in the EVE universe — same Book→Chapter→Beat
+  engine, different deliverable.
 
 ---
 
