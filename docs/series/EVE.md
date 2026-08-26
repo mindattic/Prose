@@ -30,7 +30,7 @@ seed line.
 | Code | Title | Type | Status |
 |---|---|---|---|
 | EVEGDD | Experiment Eve — Game Design Document | Nonfiction-structured reference | **Drafted 2026-08-26** — 11 chapters / 46 beats, prose complete end-to-end (`docs/planning/EVEGDD-brief.md`); exported to manuscript. Citation spot-check against live ExperimentEve code still pending (see brief). |
-| TBD | EVE — Night One (Game Script) | Screenplay-format narrative | Planned, brief not yet filed — depends on EVEGDD existing first (see §5) |
+| EVEN1 | Experiment Eve — Night One (Game Script) | Screenplay-format narrative | **Drafted 2026-08-26** — 7 chapters / 30 beats, prose complete end-to-end (`docs/planning/EVEN1-brief.md`), corrected via full-read QA pass same day (18/30 beats hand-fixed — see brief), exported to manuscript. |
 | TBD | EVE — Prequel Novella | Literary fiction | **Deferred by author decision, 2026-08-26** — "save for future after we prove this experiment is valid." No brief; not scheduled. |
 
 Per RFC 0007 Phase 2, all three are ordinary Prose Books in the `eve` universe using the same
@@ -95,21 +95,21 @@ it does NOT yet mean each citation has been spot-checked against the live Experi
 
 | Plant | Origin Book | Payoff | Payoff Book | Status |
 |---|---|---|---|---|
-| Shared mechanics vocabulary + built-vs-planned district map | EVEGDD | Consistent system references in scene direction and barks | Night One | EVEGDD not yet written; TBD |
-| "No dialogue trees, environmental narrative only" design law, illustrated (M./Ray, ApertureOS trash-folder lore) | EVEGDD Ch. 9 | Night One's script obeys the rule instead of writing exposition dialogue | Night One | TBD |
-| Kat's unsigned Father's Day card (`kats-card` artifact, already in canon) | Interchange import | What she does with it at Providence — the endgame beat | Night One | Planted in canon; payoff not yet written |
-| "The Island" / old Asylum's 180-year history (`the-island-asylum` place, already in canon) | Interchange import | Any book that dramatizes what Erasure is actually doing there | Night One or a future episode | Planted in canon; payoff not yet written |
+| Shared mechanics vocabulary + built-vs-planned district map | EVEGDD | Consistent system references in scene direction and barks | Night One | **EVEGDD complete** — Night One brief filed, ready to consume it |
+| "No dialogue trees, environmental narrative only" design law, illustrated (M./Ray, ApertureOS trash-folder lore) | EVEGDD Ch. 9 | Night One's script obeys the rule instead of writing exposition dialogue | Night One | Night One Ch. 6 built directly around the real `garageMachine` ApertureOS files (`note_to_ray.txt`, `for_ray.txt`) |
+| Kat's unsigned Father's Day card (`kats-card` artifact, already in canon) | Interchange import | What she does with it at Providence — the endgame beat | Deferred Prequel Novella | Night One's brief confirms Providence is unbuilt — this payoff cannot land in Night One; still open |
+| "The Island" / old Asylum's 180-year history (`the-island-asylum` place, already in canon) | Interchange import | Any book that dramatizes what Erasure is actually doing there | Future EVE work | Night One's Ch. 4 dramatizes the SOAK/REN "THEY TAKE THEM TO THE ISLAND" tag as a live mystery, still unanswered by book's end |
+| Ray's disappearance (`shift_log.txt`) and M.'s unanswered vigil | Night One Ch. 6 | Ray's fate | Not yet scheduled | New plant, filed with the Night One brief (2026-08-26) |
+| SOAK/REN's "THEN WHY DO THE BOATS GO NORTH?" (third graffiti stage) | Night One Ch. 4 | A routing/geography answer | Not yet scheduled | New plant, filed with the Night One brief (2026-08-26) |
 
 ---
 
 ## 5. Sequencing Lock {#SS-EVE-COORD-§5}
 
-- **Night One must not be briefed or written before EVEGDD's chapters exist** for any system
-  Night One's script would need to reference (battle, save points, creature encounters, the
-  district it's set in). EVEGDD is the terminology source of truth; writing Night One first
-  would let its script invent vocabulary EVEGDD would then have to retrofit around, exactly
-  backwards from RFC 0007 Phase 2's stated design ("Prose's normal writing flow authors these
-  books; the export is just a filter" assumes the reference book comes first).
+- **Unblocked 2026-08-26**: EVEGDD is complete (46 beats, all 11 chapters), so Night One's brief
+  was filed and its script may now proceed — the original constraint ("Night One must not be
+  briefed or written before EVEGDD's chapters exist") is satisfied, not removed. Night One still
+  must not contradict EVEGDD's system definitions (battle, camera, save, A-Life).
 - **The Prequel Novella is deferred** (author decision, 2026-08-26) — no sequencing question
   applies until it's un-deferred.
 
