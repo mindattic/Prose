@@ -1,56 +1,60 @@
-{
-  "statusLine": { "type": "command", "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"%CLAUDE_PROJECT_DIR%\\.claude\\statusline.ps1\"" },
-  "env": {
-    "CLAUDE_CODE_STOP_HOOK_BLOCK_CAP": "9999"
-  },
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.claude/hooks/inject-digest.ps1\""
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.claude/hooks/build-prose-mcp.ps1\""
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.claude/hooks/start-prose-hub.ps1\""
-          }
-        ]
-      },
-      {
-        "matcher": "clear",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.claude/hooks/restore-handoff.ps1\""
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "timeout": 60,
-            "statusMessage": "Running WorldValidation...",
-            "command": "node -e \"let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{const i=JSON.parse(d);const fp=i.tool_input?.file_path??'';if(fp.includes('engine') && fp.includes('data')){require('child_process').execSync('cd \\\"D:/Projects/MindAttic/Prose/v3\\\" && dotnet test Prose.UnitTests/Prose.UnitTests.csproj --filter \\\"Category=WorldValidation\\\" --logger \\\"console;verbosity=normal\\\" --no-build',{stdio:\\\"inherit\\\"});}});\""
-          }
-        ]
-      }
-    ]
-  }
+﻿{
+    "statusLine":  {
+                       "type":  "command",
+                       "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"%CLAUDE_PROJECT_DIR%\\.claude\\statusline.ps1\""
+                   },
+    "env":  {
+                "CLAUDE_CODE_STOP_HOOK_BLOCK_CAP":  "9999"
+            },
+    "hooks":  {
+                  "SessionStart":  [
+                                       {
+                                           "hooks":  [
+                                                         {
+                                                             "type":  "command",
+                                                             "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.claude/hooks/inject-digest.ps1\""
+                                                         }
+                                                     ]
+                                       },
+                                       {
+                                           "hooks":  [
+                                                         {
+                                                             "type":  "command",
+                                                             "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.claude/hooks/build-prose-mcp.ps1\""
+                                                         }
+                                                     ]
+                                       },
+                                       {
+                                           "hooks":  [
+                                                         {
+                                                             "type":  "command",
+                                                             "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.claude/hooks/start-prose-hub.ps1\""
+                                                         }
+                                                     ]
+                                       }
+                                   ],
+                  "PostToolUse":  [
+                                      {
+                                          "matcher":  "Write|Edit",
+                                          "hooks":  [
+                                                        {
+                                                            "type":  "command",
+                                                            "timeout":  60,
+                                                            "statusMessage":  "Running WorldValidation...",
+                                                            "command":  "node -e \"let d=\u0027\u0027;process.stdin.on(\u0027data\u0027,c=\u003ed+=c);process.stdin.on(\u0027end\u0027,()=\u003e{const i=JSON.parse(d);const fp=i.tool_input?.file_path??\u0027\u0027;if(fp.includes(\u0027engine\u0027) \u0026\u0026 fp.includes(\u0027data\u0027)){require(\u0027child_process\u0027).execSync(\u0027cd \\\"D:/Projects/MindAttic/Prose/v3\\\" \u0026\u0026 dotnet test Prose.UnitTests/Prose.UnitTests.csproj --filter \\\"Category=WorldValidation\\\" --logger \\\"console;verbosity=normal\\\" --no-build\u0027,{stdio:\\\"inherit\\\"});}});\""
+                                                        }
+                                                    ]
+                                      }
+                                  ],
+                  "UserPromptSubmit":  [
+                                           {
+                                               "hooks":  [
+                                                             {
+                                                                 "type":  "command",
+                                                                 "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"%CLAUDE_PROJECT_DIR%\\.claude\\hooks\\quickload-on-do.ps1\""
+                                                             }
+                                                         ]
+                                           }
+                                       ]
+              }
 }
