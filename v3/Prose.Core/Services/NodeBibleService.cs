@@ -96,6 +96,24 @@ public class NodeBibleService
     }
 
     /// <summary>
+    /// Parse a "## BEAT SPINE" section out of already-written bible text and create planned
+    /// beats from it (only when the node has no beats yet — see <see cref="CreatePlannedBeatsAsync"/>).
+    /// This is the hand-authored-bible counterpart to <see cref="GenerateAndSaveAsync"/>'s own
+    /// inline spine parsing: <c>SetBookBible</c> (MCP) / <c>--set-book-bible</c> (CLI) save the
+    /// bible text verbatim without ever calling an LLM, so they need this to actually create the
+    /// planned Beat rows their own tool descriptions already claimed happened. No-op if the text
+    /// has no "## BEAT SPINE" section, or the target node(s) already have beats.
+    /// </summary>
+    public async Task ApplyBeatSpineFromTextAsync(Guid nodeId, string bibleText, CancellationToken ct = default)
+    {
+        var beatPlans = ParseBeatSpine(bibleText);
+        if (beatPlans.Count == 0) return;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        await CreatePlannedBeatsAsync(db, nodeId, beatPlans, ct);
+    }
+
+    /// <summary>
     /// Beat Context Archive, Part F4b (2026-08-21): read <see cref="Data.Entities.Node.NodeBible"/>
     /// as it stood at a point in time — <c>Nodes</c> is already system-versioned, this just
     /// wasn't wired up yet. Mirrors <see cref="MarkdownFileService.GetAsync"/>'s exact

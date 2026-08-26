@@ -45,6 +45,7 @@ public static class SetBookBibleCli
         var nodeDoc = services.GetRequiredService<NodeDocService>();
         var markdownFiles = services.GetRequiredService<MarkdownFileService>();
         var canonDocs = services.GetRequiredService<CanonDocumentService>();
+        var nodeBible = services.GetRequiredService<NodeBibleService>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
         // 2026-08-23: was slug-only, so --slug SCON (a NodeCode) failed while authoring a new
@@ -65,6 +66,13 @@ public static class SetBookBibleCli
         // overwrites MarkdownFiles from that stale row — silently reverting this write the next
         // time someone ran a full markdown sync. Found and root-caused 2026-08-14.
         await canonDocs.SetNodeBibleSectionAsync(node.Id, "Full", bibleText);
+
+        // Bug found 2026-08-26: this call has always claimed ("beat spine parsing still
+        // applies") to create planned beats from a "## BEAT SPINE" section, but never actually
+        // did — only the LLM-generation path (GenerateBookBible) called ParseBeatSpine. Fixed by
+        // routing through the same planned-beat creation NodeBibleService.GenerateAndSaveAsync
+        // uses; still a no-op if the node already has beats or the text has no spine section.
+        await nodeBible.ApplyBeatSpineFromTextAsync(node.Id, bibleText);
 
         var genResult = await nodeDoc.GenerateAsync(node.Id);
         var syncResult = await markdownFiles.SyncAllAsync();

@@ -681,6 +681,12 @@ public class NodeTools
         // reverted a hand-authored bible fix mid-session.
         await canonDocs.SetNodeBibleSectionAsync(node.Id, "Full", bibleText);
 
+        // Bug found 2026-08-26: this tool's own description ("beat spine parsing still applies
+        // for planned-beat creation") was never actually implemented — only the LLM-generation
+        // path (GenerateBookBible) called ParseBeatSpine. Fixed to match the documented contract;
+        // still a no-op if the node already has beats or the text has no "## BEAT SPINE" section.
+        await bible.ApplyBeatSpineFromTextAsync(node.Id, bibleText);
+
         // Cascade immediately — same reasoning as GenerateBookBible/SetCanonSection: propagation
         // is part of the write, not a follow-up step the caller has to remember.
         var genResult = await nodeDoc.GenerateAsync(node.Id);
