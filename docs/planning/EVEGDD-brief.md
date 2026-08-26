@@ -264,12 +264,24 @@ link a scene to "the battle system" the way it might link to a character or plac
       first
 - [x] `docs/series/EVE.md` — new coordination board created (mirrors `docs/series/GLMZ.md`'s
       shape; EVE has no prior roster to update in place)
-- [ ] BookNode `EVEGDD` created in DB (universe `eve`)
-- [ ] ChapterNodes created (11 chapters per §9, SortKey 100–1100)
-- [ ] Node bible authored (`set_book_bible`) — arc/mission per §2, chapter spine per §9, the
-      "Design Law" callout device confirmed or dropped
-- [ ] Structural blueprint — **skip or adapt**: `--generate-blueprint`'s narrative anti-tell
-      machinery (resolution mode, moral polarity, ending style) doesn't apply; author decision
-      needed on whether to run it anyway (harmless no-op) or bypass Stage 6 entirely for this
-      book with that justification recorded
-- [ ] Prose: Sonnet draft → Opus polish per standard SOP, once the above stages close
+- [x] BookNode `EVEGDD` created in DB (universe `eve`, slug
+      `experiment-eve-game-design-document-01a03d5e`)
+- [x] ChapterNodes created (11 chapters per §9, SortKey 100–1100)
+- [x] Node bible authored (`set_book_bible`) — arc/mission per §2, chapter spine per §9, the
+      "Design Law" callout device locked (§3 of the bible)
+- [x] Structural blueprint — **skipped**, per this brief's own §9 recommendation: Stage 6's
+      `--generate-blueprint` targets narrative anti-tell concerns (resolution mode, moral
+      polarity, ending style) that don't exist for a nonfiction reference book. The chapter
+      sequencing check is instead satisfied by the bible's §2 chapter spine directly. Confirmed
+      via `workflow-status`: `StructuralBlueprint 0% (0/46 applicable)` — expected, not a gap.
+- [x] Prose: all 46 beats across all 11 chapters drafted end-to-end (confirmed via
+      `--read-beats`, last beat titled "Closing the Book"). `--scan-entity-mentions` run
+      corpus-wide (no per-book scope exists) to index the new content. `--export-node` run to
+      produce manuscript artifacts (.docx/.epub/.pdf/.txt).
+
+**Not yet done, flagged for the author:** the book's core Lock ("every implemented-system claim
+must cite a real source file") is a fact-checking discipline against the live ExperimentEve
+codebase — outside what Prose's automated QA tooling (logic sweep, Reader-Proxy QA) checks,
+since those are built for narrative continuity, not code-citation accuracy. A human (or a
+dedicated cross-repo verification pass) should spot-check a sample of citations before this book
+is treated as authoritative for Night One's script.

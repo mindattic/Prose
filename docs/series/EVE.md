@@ -29,7 +29,7 @@ seed line.
 
 | Code | Title | Type | Status |
 |---|---|---|---|
-| EVEGDD | Experiment Eve — Game Design Document | Nonfiction-structured reference | Brief filed 2026-08-26 (`docs/planning/EVEGDD-brief.md`); node not yet created |
+| EVEGDD | Experiment Eve — Game Design Document | Nonfiction-structured reference | **Drafted 2026-08-26** — 11 chapters / 46 beats, prose complete end-to-end (`docs/planning/EVEGDD-brief.md`); exported to manuscript. Citation spot-check against live ExperimentEve code still pending (see brief). |
 | TBD | EVE — Night One (Game Script) | Screenplay-format narrative | Planned, brief not yet filed — depends on EVEGDD existing first (see §5) |
 | TBD | EVE — Prequel Novella | Literary fiction | **Deferred by author decision, 2026-08-26** — "save for future after we prove this experiment is valid." No brief; not scheduled. |
 
@@ -65,24 +65,29 @@ for documenting/dramatizing each:
 
 The EVE equivalent of GLMZ's Character Arc Ledger — not narrative continuity (no book has been
 written yet), but which real, implemented game systems are documented vs. still only living in
-code. Updated as EVEGDD's chapters get written.
+code.
 
-| System | Real/implemented? | Documented (post-EVEGDD)? |
+**Status as of 2026-08-26: EVEGDD's prose is drafted end-to-end (all 11 chapters).** The
+"Drafted" column below reflects that the writing pass covering each system has been generated —
+it does NOT yet mean each citation has been spot-checked against the live ExperimentEve source
+(see the open item in `docs/planning/EVEGDD-brief.md`).
+
+| System | Real/implemented? | Documented (EVEGDD)? |
 |---|---|---|
-| Movement, dodge-roll, bicycle mode | Yes (`playerController.ts`, `playerRig.ts`) | Pending Ch. 2 |
-| Fixed-camera system + CCTV/Observer variant | Yes (`cameraManager.ts`, `cameraZone.ts`) | Pending Ch. 2 |
-| ATB battle system | Yes (`battle/battle.ts`, 603 lines) | Pending Ch. 3 |
-| A-Life ecology simulation | Yes (`enemies/worldAI.ts`, 484 lines) | Pending Ch. 4 |
-| 20 creature classes | Yes (one `.ts` file each, `enemies/registry.ts`) | Pending Ch. 4 |
-| Erasure stealth/execution vignette | Yes (`gameplay/erasureSquad.ts`) | Pending Ch. 5 |
-| Level 1 (North End) | Yes (`level/level01.ts`, 12 camera zones) | Pending Ch. 6 |
-| 14 other Gazetteer districts | **No — design intent only** (`docs/GAZETTEER.md`) | Pending Ch. 6 (marked aspirational) |
-| Save system + ApertureOS | Yes (`saveSystem.ts`, `apertureOS.ts`) | Pending Ch. 7 |
-| Crafting/economy/baubles | Yes (`gameplay/inventory.ts`) | Pending Ch. 8 |
-| PS1 shader rendering pipeline | Yes (`render/ps1/`) | Pending Ch. 10 |
-| Skill tree beyond 4 flat stats | **No** (`GameState.skills` is 4 numeric fields) | Pending Ch. 11 (flagged gap) |
-| Vehicle/boat traversal (the Drive, the *Providence Belle*) | **No** (only basic riding momentum exists) | Pending Ch. 11 (flagged gap) |
-| Faction war beyond Erasure | Partial (`worldAI.ts` faction/morale fields exist; only Erasure has a dedicated system) | Pending Ch. 11 (flagged gap) |
+| Movement, dodge-roll, bicycle mode | Yes (`playerController.ts`, `playerRig.ts`) | Drafted, Ch. 2 |
+| Fixed-camera system + CCTV/Observer variant | Yes (`cameraManager.ts`, `cameraZone.ts`) | Drafted, Ch. 2 |
+| ATB battle system | Yes (`battle/battle.ts`, 603 lines) | Drafted, Ch. 3 |
+| A-Life ecology simulation | Yes (`enemies/worldAI.ts`, 484 lines) | Drafted, Ch. 4 |
+| 20 creature classes | Yes (one `.ts` file each, `enemies/registry.ts`) | Drafted, Ch. 4 |
+| Erasure stealth/execution vignette | Yes (`gameplay/erasureSquad.ts`) | Drafted, Ch. 5 |
+| Level 1 (North End) | Yes (`level/level01.ts`, 12 camera zones) | Drafted, Ch. 6 |
+| 14 other Gazetteer districts | **No — design intent only** (`docs/GAZETTEER.md`) | Drafted, Ch. 6 (marked aspirational) |
+| Save system + ApertureOS | Yes (`saveSystem.ts`, `apertureOS.ts`) | Drafted, Ch. 7 |
+| Crafting/economy/baubles | Yes (`gameplay/inventory.ts`) | Drafted, Ch. 8 |
+| PS1 shader rendering pipeline | Yes (`render/ps1/`) | Drafted, Ch. 10 |
+| Skill tree beyond 4 flat stats | **No** (`GameState.skills` is 4 numeric fields) | Drafted, Ch. 11 (flagged gap) |
+| Vehicle/boat traversal (the Drive, the *Providence Belle*) | **No** (only basic riding momentum exists) | Drafted, Ch. 11 (flagged gap) |
+| Faction war beyond Erasure | Partial (`worldAI.ts` faction/morale fields exist; only Erasure has a dedicated system) | Drafted, Ch. 11 (flagged gap) |
 
 ---
 
