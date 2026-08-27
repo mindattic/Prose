@@ -32,6 +32,14 @@ using Serilog.Events;
 // own per-universe GraphState dictionary for the matching fix on the graph
 // side.
 
+// Explicit user requirement (2026-08-27): yellow-background console so the Hub's own window is
+// instantly recognizable among other open terminals. Clear() repaints the existing buffer with
+// the new background — setting BackgroundColor alone only colors text written after this point.
+// Must run before CaptureOriginal() below so the echoed writers inherit these colors too.
+Console.BackgroundColor = ConsoleColor.Yellow;
+Console.ForegroundColor = ConsoleColor.Black;
+Console.Clear();
+
 // Explicit user requirement (2026-08-21): visible window + live command echo. Must run before
 // anything else touches Console — see HubConsoleEcho's own doc comment for why capturing the
 // REAL writers here (rather than reading Console.Out fresh at each echo call) is required for

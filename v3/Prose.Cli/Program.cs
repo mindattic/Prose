@@ -1579,6 +1579,15 @@ if (args.Contains("--strip-beat-artifacts"))
     return;
 }
 
+// CLI mode: set Node.Author — the pen name exports fall through to instead of "MindAttic".
+// See SetNodeAuthorCli class doc.
+//   prose --set-node-author --slug <slug|code|guid> --author "<Name>"
+if (args.Contains("--set-node-author"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetNodeAuthorCli", args);
+    return;
+}
+
 // CLI mode: the nightly AutoCorrect pass — pure ML/deterministic, zero LLM calls. Invoked by
 // the Windows Task Scheduler task registered by scripts/register-autocorrect-task.ps1 at 2:00 AM
 // Central every night. See AutoCorrectOrchestratorService for the pipeline.
