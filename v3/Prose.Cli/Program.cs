@@ -1552,6 +1552,33 @@ if (args.Contains("--restore-entity"))
     return;
 }
 
+// CLI mode: recover Beats.Text from Beats_History (system-versioned temporal table) after a bad
+// overwrite — see RestoreBeatTextCli class doc.
+//   prose --restore-beat-text --id <beatGuid> --as-of <datetime-utc> [--dry-run]
+if (args.Contains("--restore-beat-text"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RestoreBeatTextCli", args);
+    return;
+}
+
+// CLI mode: rename a Universe row in place (Slug/Name/Theme only) — a seamless cutover, every
+// Node/Entity/Book already scoped to its Id keeps working unmodified. See RenameUniverseCli.
+//   prose --rename-universe --slug <oldSlug> --new-slug <newSlug> --new-name <newName> [--new-theme <newTheme>]
+if (args.Contains("--rename-universe"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RenameUniverseCli", args);
+    return;
+}
+
+// CLI mode: one-off cleanup of a generation-artifact heading/marker leaking into Beats.Text —
+// see StripBeatArtifactsCli class doc.
+//   prose --strip-beat-artifacts --slug <slug> [--dry-run]
+if (args.Contains("--strip-beat-artifacts"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("StripBeatArtifactsCli", args);
+    return;
+}
+
 // CLI mode: the nightly AutoCorrect pass — pure ML/deterministic, zero LLM calls. Invoked by
 // the Windows Task Scheduler task registered by scripts/register-autocorrect-task.ps1 at 2:00 AM
 // Central every night. See AutoCorrectOrchestratorService for the pipeline.
