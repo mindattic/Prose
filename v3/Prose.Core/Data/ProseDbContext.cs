@@ -655,6 +655,10 @@ public class ProseDbContext : DbContext
     // not appear in prose. Scanned by NounConsistencyService / validate_nouns MCP.
     public DbSet<DeprecatedEntityName>   DeprecatedEntityNames   => Set<DeprecatedEntityName>();
 
+    // Prose-wide hard-banned name registry (2026-08-26) — enforced at write time by
+    // Services.WriteGate.BannedNameSyncCheck, not just flagged after the fact in prose scans.
+    public DbSet<BannedName>             BannedNames             => Set<BannedName>();
+
     // Master Glossary — universe-scoped acronym/term definitions for back-matter glossary
     // generation (Glossary.htm/.json/.txt). Per-book glossaries are a live-detected subset,
     // not a stored join — see GlossaryService.
@@ -2965,6 +2969,17 @@ public class ProseDbContext : DbContext
                 .IsRequired(false);
             e.HasIndex(x => x.UniverseId);
             e.HasIndex(x => x.EntityId);
+        });
+
+        // ── Prose-wide hard-banned names (no universe scope, no canonical replacement) ──
+        b.Entity<BannedName>(e =>
+        {
+            e.ToTable("BannedNames");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Name).HasMaxLength(256).IsRequired();
+            e.Property(x => x.Notes).HasMaxLength(512);
+            e.Property(x => x.AddedAt).HasDefaultValueSql("GETUTCDATE()");
+            e.HasIndex(x => x.Name).IsUnique();
         });
 
         b.Entity<Survey>(e =>

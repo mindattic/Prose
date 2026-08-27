@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prose.Core.Data;
 
@@ -11,9 +12,11 @@ using Prose.Core.Data;
 namespace Prose.Core.Migrations
 {
     [DbContext(typeof(ProseDbContext))]
-    partial class ProseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260827021525_AddBannedNames")]
+    partial class AddBannedNames
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -110,7 +113,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TenantId", "Folder", "FileName");
 
-                    b.ToTable("Media", (string)null);
+                    b.ToTable("Media");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Ammunition", b =>
@@ -180,7 +183,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Ammunitions", (string)null);
+                    b.ToTable("Ammunitions");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.AmmunitionAlias", b =>
@@ -208,7 +211,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("AmmunitionId", "Position");
 
-                    b.ToTable("AmmunitionAliases", (string)null);
+                    b.ToTable("AmmunitionAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.AmmunitionCompatibleWeapon", b =>
@@ -239,7 +242,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("AmmunitionId", "Position");
 
-                    b.ToTable("AmmunitionCompatibleWeapons", (string)null);
+                    b.ToTable("AmmunitionCompatibleWeapons");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.AmmunitionStoryHook", b =>
@@ -264,7 +267,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("AmmunitionId", "Position");
 
-                    b.ToTable("AmmunitionStoryHooks", (string)null);
+                    b.ToTable("AmmunitionStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.AmmunitionVariant", b =>
@@ -290,7 +293,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("AmmunitionId", "Position");
 
-                    b.ToTable("AmmunitionVariants", (string)null);
+                    b.ToTable("AmmunitionVariants");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Apparel", b =>
@@ -362,7 +365,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Apparels", (string)null);
+                    b.ToTable("Apparels");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ApparelAlias", b =>
@@ -390,7 +393,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ApparelId", "Position");
 
-                    b.ToTable("ApparelAliases", (string)null);
+                    b.ToTable("ApparelAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ApparelMaterial", b =>
@@ -440,7 +443,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ApparelId", "Position");
 
-                    b.ToTable("ApparelStoryHooks", (string)null);
+                    b.ToTable("ApparelStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ApparelWornBy", b =>
@@ -504,7 +507,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ArchetypeId", "Position");
 
-                    b.ToTable("ArchetypeOpposites", (string)null);
+                    b.ToTable("ArchetypeOpposites");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ArchetypeRow", b =>
@@ -551,7 +554,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Archetypes", (string)null);
+                    b.ToTable("Archetypes");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ArchetypeSimilar", b =>
@@ -589,7 +592,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ArchetypeId", "Position");
 
-                    b.ToTable("ArchetypeSimilars", (string)null);
+                    b.ToTable("ArchetypeSimilars");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ArchetypeUnless", b =>
@@ -614,7 +617,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ArchetypeId", "Position");
 
-                    b.ToTable("ArchetypeUnless", (string)null);
+                    b.ToTable("ArchetypeUnless");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ArchetypeWillAlways", b =>
@@ -639,7 +642,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ArchetypeId", "Position");
 
-                    b.ToTable("ArchetypeWillAlways", (string)null);
+                    b.ToTable("ArchetypeWillAlways");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ArchetypeWillNever", b =>
@@ -664,7 +667,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ArchetypeId", "Position");
 
-                    b.ToTable("ArchetypeWillNever", (string)null);
+                    b.ToTable("ArchetypeWillNever");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ArchivedBook", b =>
@@ -723,7 +726,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "CreatedAt");
 
-                    b.ToTable("ArchivedBooks", (string)null);
+                    b.ToTable("ArchivedBooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Automaton", b =>
@@ -823,7 +826,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Operator");
 
-                    b.ToTable("Automata", (string)null);
+                    b.ToTable("Automata");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.AutomatonAlias", b =>
@@ -851,7 +854,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("AutomatonId", "Position");
 
-                    b.ToTable("AutomatonAliases", (string)null);
+                    b.ToTable("AutomatonAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.AutomatonArmament", b =>
@@ -884,7 +887,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("AutomatonId", "Position");
 
-                    b.ToTable("AutomatonArmament", (string)null);
+                    b.ToTable("AutomatonArmament");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.AutomatonDeployment", b =>
@@ -915,7 +918,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("AutomatonId", "Position");
 
-                    b.ToTable("AutomatonDeployments", (string)null);
+                    b.ToTable("AutomatonDeployments");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.AutomatonSensor", b =>
@@ -941,7 +944,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("AutomatonId", "Position");
 
-                    b.ToTable("AutomatonSensors", (string)null);
+                    b.ToTable("AutomatonSensors");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.AutomatonStoryHook", b =>
@@ -966,7 +969,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("AutomatonId", "Position");
 
-                    b.ToTable("AutomatonStoryHooks", (string)null);
+                    b.ToTable("AutomatonStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BannedName", b =>
@@ -1178,7 +1181,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("BlueprintId");
 
-                    b.ToTable("BeatBlueprintDecisions", (string)null);
+                    b.ToTable("BeatBlueprintDecisions");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BeatChecklistResult", b =>
@@ -1220,7 +1223,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("NodeId", "BeatId")
                         .IsUnique();
 
-                    b.ToTable("BeatChecklistResults", (string)null);
+                    b.ToTable("BeatChecklistResults");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BeatContextTrace", b =>
@@ -1251,7 +1254,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("BeatId");
 
-                    b.ToTable("BeatContextTraces", (string)null);
+                    b.ToTable("BeatContextTraces");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BeatDuelVerdict", b =>
@@ -1338,7 +1341,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EntityId");
 
-                    b.ToTable("BeatEntityMentions", (string)null);
+                    b.ToTable("BeatEntityMentions");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BeatModeLog", b =>
@@ -1387,7 +1390,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "SortKey");
 
-                    b.ToTable("BeatNodes", (string)null);
+                    b.ToTable("BeatNodes");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BeatProseMetrics", b =>
@@ -1527,7 +1530,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Result", "Severity");
 
-                    b.ToTable("BeatVerifications", (string)null);
+                    b.ToTable("BeatVerifications");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Book", b =>
@@ -1578,7 +1581,7 @@ namespace Prose.Core.Migrations
                         .IsUnique()
                         .HasDatabaseName("UX_Books_Universe_Slug");
 
-                    b.ToTable("Books", (string)null);
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BookChapterOrder", b =>
@@ -1605,7 +1608,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("BookId", "Position")
                         .IsUnique();
 
-                    b.ToTable("BookChapterOrder", (string)null);
+                    b.ToTable("BookChapterOrder");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BookPlotEvent", b =>
@@ -1662,7 +1665,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "StateKey");
 
-                    b.ToTable("BookPlotEvents", (string)null);
+                    b.ToTable("BookPlotEvents");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BookProtagonist", b =>
@@ -1693,7 +1696,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("BookId", "Position");
 
-                    b.ToTable("BookProtagonists", (string)null);
+                    b.ToTable("BookProtagonists");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BookSequentialRead", b =>
@@ -1742,7 +1745,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "ReadAt");
 
-                    b.ToTable("BookSequentialReads", (string)null);
+                    b.ToTable("BookSequentialReads");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CanonDocument", b =>
@@ -1787,7 +1790,7 @@ namespace Prose.Core.Migrations
                         .IsUnique()
                         .HasDatabaseName("UX_CanonDocuments_Universe_Type");
 
-                    b.ToTable("CanonDocuments", (string)null);
+                    b.ToTable("CanonDocuments");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CanonDocumentSection", b =>
@@ -1828,7 +1831,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("DocumentId", "SortKey");
 
-                    b.ToTable("CanonDocumentSections", (string)null);
+                    b.ToTable("CanonDocumentSections");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CanonDocumentType", b =>
@@ -1873,7 +1876,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("DocumentType");
 
-                    b.ToTable("CanonDocumentTypes", (string)null);
+                    b.ToTable("CanonDocumentTypes");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Chapter", b =>
@@ -1931,7 +1934,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("BookId", "Number");
 
-                    b.ToTable("Chapters", (string)null);
+                    b.ToTable("Chapters");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ChapterBeat", b =>
@@ -2011,7 +2014,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ChapterId", "Index");
 
-                    b.ToTable("ChapterBeats", (string)null);
+                    b.ToTable("ChapterBeats");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ChapterCharacter", b =>
@@ -2042,7 +2045,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ChapterId", "Position");
 
-                    b.ToTable("ChapterCharacters", (string)null);
+                    b.ToTable("ChapterCharacters");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Character", b =>
@@ -2246,7 +2249,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("LastName", "FirstName")
                         .HasDatabaseName("IX_Characters_LastFirst");
 
-                    b.ToTable("Characters", (string)null);
+                    b.ToTable("Characters");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterAffiliation", b =>
@@ -2279,7 +2282,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Position");
 
-                    b.ToTable("CharacterAffiliations", (string)null);
+                    b.ToTable("CharacterAffiliations");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterAlias", b =>
@@ -2307,7 +2310,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Position");
 
-                    b.ToTable("CharacterAliases", (string)null);
+                    b.ToTable("CharacterAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterAncestryDetail", b =>
@@ -2346,7 +2349,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("CharacterId", "Region", "SubRegion", "Nationality")
                         .IsUnique();
 
-                    b.ToTable("CharacterAncestryDetails", (string)null);
+                    b.ToTable("CharacterAncestryDetails");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterArchetypeScore", b =>
@@ -2375,7 +2378,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("CharacterId", "ArchetypeName")
                         .IsUnique();
 
-                    b.ToTable("CharacterArchetypeScores", (string)null);
+                    b.ToTable("CharacterArchetypeScores");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterBehavioralMap", b =>
@@ -2408,7 +2411,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("CharacterId", "Bucket", "KeyName")
                         .IsUnique();
 
-                    b.ToTable("CharacterBehavioralMaps", (string)null);
+                    b.ToTable("CharacterBehavioralMaps");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterBehavioralRule", b =>
@@ -2438,7 +2441,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Bucket", "Position");
 
-                    b.ToTable("CharacterBehavioralRules", (string)null);
+                    b.ToTable("CharacterBehavioralRules");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterBelongingsExtra", b =>
@@ -2466,7 +2469,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("CharacterId", "KeyName")
                         .IsUnique();
 
-                    b.ToTable("CharacterBelongingsExtras", (string)null);
+                    b.ToTable("CharacterBelongingsExtras");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterBelongingsGear", b =>
@@ -2501,7 +2504,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Bucket", "Position");
 
-                    b.ToTable("CharacterBelongingsGear", (string)null);
+                    b.ToTable("CharacterBelongingsGear");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterBioBatteryThreshold", b =>
@@ -2529,7 +2532,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("CharacterId", "Threshold")
                         .IsUnique();
 
-                    b.ToTable("CharacterBioBatteryThresholds", (string)null);
+                    b.ToTable("CharacterBioBatteryThresholds");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterChangelogRow", b =>
@@ -2588,7 +2591,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Position");
 
-                    b.ToTable("CharacterChangelog", (string)null);
+                    b.ToTable("CharacterChangelog");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterConditionRow", b =>
@@ -2630,7 +2633,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Kind");
 
-                    b.ToTable("CharacterConditions", (string)null);
+                    b.ToTable("CharacterConditions");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterCyberware", b =>
@@ -2684,7 +2687,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("CharacterCyberware", (string)null);
+                    b.ToTable("CharacterCyberware");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterEmotionalLedger", b =>
@@ -2732,7 +2735,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("NodeId", "Character")
                         .IsUnique();
 
-                    b.ToTable("CharacterEmotionalLedgers", (string)null);
+                    b.ToTable("CharacterEmotionalLedgers");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterGeneticAncestry", b =>
@@ -2761,7 +2764,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("CharacterId", "Region")
                         .IsUnique();
 
-                    b.ToTable("CharacterGeneticAncestries", (string)null);
+                    b.ToTable("CharacterGeneticAncestries");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterHomeTurf", b =>
@@ -2794,7 +2797,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Position");
 
-                    b.ToTable("CharacterHomeTurfs", (string)null);
+                    b.ToTable("CharacterHomeTurfs");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterKnowledgeEntity", b =>
@@ -2822,7 +2825,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("KnowledgeId", "Position");
 
-                    b.ToTable("CharacterKnowledgeEntities", (string)null);
+                    b.ToTable("CharacterKnowledgeEntities");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterKnowledgeRow", b =>
@@ -2863,7 +2866,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Topic");
 
-                    b.ToTable("CharacterKnowledge", (string)null);
+                    b.ToTable("CharacterKnowledge");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterNeuralAbility", b =>
@@ -2905,7 +2908,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Position");
 
-                    b.ToTable("CharacterNeuralAbilities", (string)null);
+                    b.ToTable("CharacterNeuralAbilities");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterPhysicalMark", b =>
@@ -2930,7 +2933,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Position");
 
-                    b.ToTable("CharacterPhysicalMarks", (string)null);
+                    b.ToTable("CharacterPhysicalMarks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterPsychologyTrait", b =>
@@ -2960,7 +2963,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Bucket", "Position");
 
-                    b.ToTable("CharacterPsychologyTraits", (string)null);
+                    b.ToTable("CharacterPsychologyTraits");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterReadModel", b =>
@@ -2988,7 +2991,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Version");
 
-                    b.ToTable("CharacterReadModels", (string)null);
+                    b.ToTable("CharacterReadModels");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterRelationshipRow", b =>
@@ -3043,7 +3046,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "TargetName");
 
-                    b.ToTable("CharacterRelationships", (string)null);
+                    b.ToTable("CharacterRelationships");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterSpeechPhrase", b =>
@@ -3073,7 +3076,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Bucket", "Position");
 
-                    b.ToTable("CharacterSpeechPhrases", (string)null);
+                    b.ToTable("CharacterSpeechPhrases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterStatPhrase", b =>
@@ -3103,7 +3106,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Bucket", "Position");
 
-                    b.ToTable("CharacterStatPhrases", (string)null);
+                    b.ToTable("CharacterStatPhrases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterStatScalar", b =>
@@ -3148,7 +3151,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("CharacterId", "Bucket", "KeyName")
                         .IsUnique();
 
-                    b.ToTable("CharacterStatScalars", (string)null);
+                    b.ToTable("CharacterStatScalars");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterStoryHook", b =>
@@ -3173,7 +3176,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Position");
 
-                    b.ToTable("CharacterStoryHooks", (string)null);
+                    b.ToTable("CharacterStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterTerritoryReputation", b =>
@@ -3201,7 +3204,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("CharacterId", "Zone")
                         .IsUnique();
 
-                    b.ToTable("CharacterTerritoryReputations", (string)null);
+                    b.ToTable("CharacterTerritoryReputations");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterTerritoryZone", b =>
@@ -3234,7 +3237,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "Bucket", "Position");
 
-                    b.ToTable("CharacterTerritoryZones", (string)null);
+                    b.ToTable("CharacterTerritoryZones");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterTimelineBodyChange", b =>
@@ -3259,7 +3262,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TimelineEventId", "Position");
 
-                    b.ToTable("CharacterTimelineBodyChanges", (string)null);
+                    b.ToTable("CharacterTimelineBodyChanges");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CharacterTimelineEvent", b =>
@@ -3303,7 +3306,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CharacterId", "StoryId");
 
-                    b.ToTable("CharacterTimeline", (string)null);
+                    b.ToTable("CharacterTimeline");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ClaimConfirmationRow", b =>
@@ -3379,7 +3382,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CommandCostHistories", (string)null);
+                    b.ToTable("CommandCostHistories");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CommandLedgerEntry", b =>
@@ -3436,7 +3439,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CommandLedgerEntries", (string)null);
+                    b.ToTable("CommandLedgerEntries");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ConsensusCliche", b =>
@@ -3562,7 +3565,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("ConsumerGoods", (string)null);
+                    b.ToTable("ConsumerGoods");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ConsumerGoodAlias", b =>
@@ -3590,7 +3593,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ConsumerGoodId", "Position");
 
-                    b.ToTable("ConsumerGoodAliases", (string)null);
+                    b.ToTable("ConsumerGoodAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ConsumerGoodStoryHook", b =>
@@ -3615,7 +3618,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ConsumerGoodId", "Position");
 
-                    b.ToTable("ConsumerGoodStoryHooks", (string)null);
+                    b.ToTable("ConsumerGoodStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ContextOverride", b =>
@@ -3649,7 +3652,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ContextOverrides", (string)null);
+                    b.ToTable("ContextOverrides");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ContinuityCompatibilityJudgment", b =>
@@ -3689,7 +3692,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("EntityId", "Predicate", "ObjectSetHash")
                         .IsUnique();
 
-                    b.ToTable("ContinuityCompatibilityJudgments", (string)null);
+                    b.ToTable("ContinuityCompatibilityJudgments");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ContinuityExtractionCursor", b =>
@@ -3726,7 +3729,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("BookSlug", "SourceKind", "SourceKey")
                         .IsUnique();
 
-                    b.ToTable("ContinuityExtractionCursors", (string)null);
+                    b.ToTable("ContinuityExtractionCursors");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Contract", b =>
@@ -3866,7 +3869,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("LocationPlaceId");
 
-                    b.ToTable("Contracts", (string)null);
+                    b.ToTable("Contracts");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ContractBonusRow", b =>
@@ -3900,7 +3903,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ContractId", "Position");
 
-                    b.ToTable("ContractBonuses", (string)null);
+                    b.ToTable("ContractBonuses");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ContractComplication", b =>
@@ -3925,7 +3928,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ContractId", "Position");
 
-                    b.ToTable("ContractComplications", (string)null);
+                    b.ToTable("ContractComplications");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Corponation", b =>
@@ -4016,7 +4019,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Corponations", (string)null);
+                    b.ToTable("Corponations");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CorponationCommonName", b =>
@@ -4044,7 +4047,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CorponationId", "Position");
 
-                    b.ToTable("CorponationCommonNames", (string)null);
+                    b.ToTable("CorponationCommonNames");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Cyberware", b =>
@@ -4139,7 +4142,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("CyberwareItems", (string)null);
+                    b.ToTable("CyberwareItems");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CyberwareItemAlias", b =>
@@ -4167,7 +4170,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CyberwareId", "Position");
 
-                    b.ToTable("CyberwareItemAliases", (string)null);
+                    b.ToTable("CyberwareItemAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CyberwareItemKnownUser", b =>
@@ -4198,7 +4201,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CyberwareId", "Position");
 
-                    b.ToTable("CyberwareItemKnownUsers", (string)null);
+                    b.ToTable("CyberwareItemKnownUsers");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CyberwareItemSideEffect", b =>
@@ -4223,7 +4226,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CyberwareId", "Position");
 
-                    b.ToTable("CyberwareItemSideEffects", (string)null);
+                    b.ToTable("CyberwareItemSideEffects");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.CyberwareItemStoryHook", b =>
@@ -4248,7 +4251,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("CyberwareId", "Position");
 
-                    b.ToTable("CyberwareItemStoryHooks", (string)null);
+                    b.ToTable("CyberwareItemStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.DcmBeatSnapshot", b =>
@@ -4299,7 +4302,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("RunId");
 
-                    b.ToTable("DcmBeatSnapshots", (string)null);
+                    b.ToTable("DcmBeatSnapshots");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.DcmRun", b =>
@@ -4344,7 +4347,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("DcmRuns", (string)null);
+                    b.ToTable("DcmRuns");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.DecisionLedgerEntry", b =>
@@ -4381,7 +4384,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("DecisionLedgerEntries", (string)null);
+                    b.ToTable("DecisionLedgerEntries");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.DeprecatedEntityName", b =>
@@ -4485,7 +4488,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("WorkType", "Status", "ClaimedAt");
 
-                    b.ToTable("DistributedWorkQueue", (string)null);
+                    b.ToTable("DistributedWorkQueue");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Document", b =>
@@ -4542,7 +4545,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Title");
 
-                    b.ToTable("Documents", (string)null);
+                    b.ToTable("Documents");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.DocumentHeading", b =>
@@ -4567,7 +4570,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("DocumentId", "Position");
 
-                    b.ToTable("DocumentHeadings", (string)null);
+                    b.ToTable("DocumentHeadings");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Edge", b =>
@@ -4633,7 +4636,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TargetId", "RelationType", "StoryValidFrom");
 
-                    b.ToTable("Edges", (string)null);
+                    b.ToTable("Edges");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EditSession", b =>
@@ -4724,7 +4727,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("ExaminationId", "BeatNumber");
 
-                    b.ToTable("EmotionalBeatScores", (string)null);
+                    b.ToTable("EmotionalBeatScores");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EmotionalDimensionResult", b =>
@@ -4758,7 +4761,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("ExaminationId", "Dimension");
 
-                    b.ToTable("EmotionalDimensionResults", (string)null);
+                    b.ToTable("EmotionalDimensionResults");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EmotionalExamination", b =>
@@ -4808,7 +4811,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "ExaminedAt");
 
-                    b.ToTable("EmotionalExaminations", (string)null);
+                    b.ToTable("EmotionalExaminations");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Entertainment", b =>
@@ -4888,7 +4891,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("EntertainmentItems", (string)null);
+                    b.ToTable("EntertainmentItems");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntertainmentAlias", b =>
@@ -4916,7 +4919,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EntertainmentId", "Position");
 
-                    b.ToTable("EntertainmentAliases", (string)null);
+                    b.ToTable("EntertainmentAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntertainmentKnownFan", b =>
@@ -4947,7 +4950,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EntertainmentId", "Position");
 
-                    b.ToTable("EntertainmentKnownFans", (string)null);
+                    b.ToTable("EntertainmentKnownFans");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntertainmentStoryHook", b =>
@@ -4972,7 +4975,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EntertainmentId", "Position");
 
-                    b.ToTable("EntertainmentStoryHooks", (string)null);
+                    b.ToTable("EntertainmentStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Entity", b =>
@@ -5039,7 +5042,7 @@ namespace Prose.Core.Migrations
                         .IsUnique()
                         .HasDatabaseName("UX_Entities_Universe_Type_Slug");
 
-                    b.ToTable("Entities", (string)null);
+                    b.ToTable("Entities");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntityEmbedding", b =>
@@ -5111,7 +5114,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EntityId", "PropertyKey", "StoryValidFrom");
 
-                    b.ToTable("EntityProperties", (string)null);
+                    b.ToTable("EntityProperties");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntityReview", b =>
@@ -5191,7 +5194,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EntityId", "EntityType", "ReviewedAt");
 
-                    b.ToTable("EntityReviews", (string)null);
+                    b.ToTable("EntityReviews");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntityReviewQueue", b =>
@@ -5245,7 +5248,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Status", "ClaimedAt");
 
-                    b.ToTable("EntityReviewQueue", (string)null);
+                    b.ToTable("EntityReviewQueue");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntityReviewSummary", b =>
@@ -5294,7 +5297,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("EntityId", "EntityType")
                         .IsUnique();
 
-                    b.ToTable("EntityReviewSummaries", (string)null);
+                    b.ToTable("EntityReviewSummaries");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntityStateAtBeat", b =>
@@ -5343,7 +5346,7 @@ namespace Prose.Core.Migrations
                         .IsUnique()
                         .HasDatabaseName("UX_EntityStateAtBeat_Entity_Beat_Type");
 
-                    b.ToTable("EntityStateAtBeats", (string)null);
+                    b.ToTable("EntityStateAtBeats");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntityStateEvent", b =>
@@ -5426,7 +5429,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TagId");
 
-                    b.ToTable("EntityTags", (string)null);
+                    b.ToTable("EntityTags");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EntityTaxonomy", b =>
@@ -5450,7 +5453,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TaxonomyId");
 
-                    b.ToTable("EntityTaxonomies", (string)null);
+                    b.ToTable("EntityTaxonomies");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Episode", b =>
@@ -5527,7 +5530,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Status");
 
-                    b.ToTable("Episodes", (string)null);
+                    b.ToTable("Episodes");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EpisodeBeat", b =>
@@ -5606,7 +5609,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("EpisodeId", "Index")
                         .IsUnique();
 
-                    b.ToTable("EpisodeBeats", (string)null);
+                    b.ToTable("EpisodeBeats");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EpisodeCorrection", b =>
@@ -5639,7 +5642,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EpisodeId");
 
-                    b.ToTable("EpisodeCorrections", (string)null);
+                    b.ToTable("EpisodeCorrections");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EpisodeSurvey", b =>
@@ -5676,7 +5679,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("EpisodeId")
                         .IsUnique();
 
-                    b.ToTable("EpisodeSurveys", (string)null);
+                    b.ToTable("EpisodeSurveys");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Equipment", b =>
@@ -5753,7 +5756,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("EquipmentItems", (string)null);
+                    b.ToTable("EquipmentItems");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EquipmentAlias", b =>
@@ -5781,7 +5784,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EquipmentId", "Position");
 
-                    b.ToTable("EquipmentAliases", (string)null);
+                    b.ToTable("EquipmentAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EquipmentBaseTechnology", b =>
@@ -5812,7 +5815,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EquipmentId", "Position");
 
-                    b.ToTable("EquipmentBaseTechnologies", (string)null);
+                    b.ToTable("EquipmentBaseTechnologies");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EquipmentKnownUser", b =>
@@ -5843,7 +5846,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EquipmentId", "Position");
 
-                    b.ToTable("EquipmentKnownUsers", (string)null);
+                    b.ToTable("EquipmentKnownUsers");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EquipmentSpecification", b =>
@@ -5871,7 +5874,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("EquipmentId", "KeyName")
                         .IsUnique();
 
-                    b.ToTable("EquipmentSpecifications", (string)null);
+                    b.ToTable("EquipmentSpecifications");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.EquipmentStoryHook", b =>
@@ -5896,7 +5899,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EquipmentId", "Position");
 
-                    b.ToTable("EquipmentStoryHooks", (string)null);
+                    b.ToTable("EquipmentStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ExtractionRunRow", b =>
@@ -6009,7 +6012,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Factions", (string)null);
+                    b.ToTable("Factions");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FactionAlias", b =>
@@ -6037,7 +6040,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FactionId", "Position");
 
-                    b.ToTable("FactionAliases", (string)null);
+                    b.ToTable("FactionAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FactionGoal", b =>
@@ -6062,7 +6065,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FactionId", "Position");
 
-                    b.ToTable("FactionGoals", (string)null);
+                    b.ToTable("FactionGoals");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FactionMemberRow", b =>
@@ -6109,7 +6112,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FactionId", "Position");
 
-                    b.ToTable("FactionMembers", (string)null);
+                    b.ToTable("FactionMembers");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FactionMethod", b =>
@@ -6134,7 +6137,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FactionId", "Position");
 
-                    b.ToTable("FactionMethods", (string)null);
+                    b.ToTable("FactionMethods");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FactionRelationshipRow", b =>
@@ -6175,7 +6178,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FactionId", "Position");
 
-                    b.ToTable("FactionRelationships", (string)null);
+                    b.ToTable("FactionRelationships");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FactionRelationshipTag", b =>
@@ -6201,7 +6204,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FactionRelationshipRowId", "Position");
 
-                    b.ToTable("FactionRelationshipTags", (string)null);
+                    b.ToTable("FactionRelationshipTags");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FactionResource", b =>
@@ -6226,7 +6229,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FactionId", "Position");
 
-                    b.ToTable("FactionResources", (string)null);
+                    b.ToTable("FactionResources");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FactionStoryHook", b =>
@@ -6251,7 +6254,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FactionId", "Position");
 
-                    b.ToTable("FactionStoryHooks", (string)null);
+                    b.ToTable("FactionStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FindingRow", b =>
@@ -6399,7 +6402,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("FlyoverEntities", (string)null);
+                    b.ToTable("FlyoverEntities");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FlyoverEntityAlias", b =>
@@ -6427,7 +6430,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FlyoverEntityId", "Position");
 
-                    b.ToTable("FlyoverEntityAliases", (string)null);
+                    b.ToTable("FlyoverEntityAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FlyoverEntityKnownLocation", b =>
@@ -6458,7 +6461,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FlyoverEntityId", "Position");
 
-                    b.ToTable("FlyoverEntityKnownLocations", (string)null);
+                    b.ToTable("FlyoverEntityKnownLocations");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FlyoverEntityStoryHook", b =>
@@ -6483,7 +6486,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("FlyoverEntityId", "Position");
 
-                    b.ToTable("FlyoverEntityStoryHooks", (string)null);
+                    b.ToTable("FlyoverEntityStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FocusGroup", b =>
@@ -6509,7 +6512,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("FocusGroups", (string)null);
+                    b.ToTable("FocusGroups");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.FocusGroupMember", b =>
@@ -6532,7 +6535,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("FocusGroupId", "PersonaId");
 
-                    b.ToTable("FocusGroupMembers", (string)null);
+                    b.ToTable("FocusGroupMembers");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Genemod", b =>
@@ -6637,7 +6640,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TargetSystem");
 
-                    b.ToTable("Genemods", (string)null);
+                    b.ToTable("Genemods");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.GenemodAlias", b =>
@@ -6665,7 +6668,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("GenemodId", "Position");
 
-                    b.ToTable("GenemodAliases", (string)null);
+                    b.ToTable("GenemodAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.GenemodSideEffect", b =>
@@ -6690,7 +6693,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("GenemodId", "Position");
 
-                    b.ToTable("GenemodSideEffects", (string)null);
+                    b.ToTable("GenemodSideEffects");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.GenemodStoryHook", b =>
@@ -6715,7 +6718,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("GenemodId", "Position");
 
-                    b.ToTable("GenemodStoryHooks", (string)null);
+                    b.ToTable("GenemodStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.GlossaryTerm", b =>
@@ -6848,7 +6851,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("LabSpecimens", (string)null);
+                    b.ToTable("LabSpecimens");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.LabSpecimenAlias", b =>
@@ -6876,7 +6879,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("LabSpecimenId", "Position");
 
-                    b.ToTable("LabSpecimenAliases", (string)null);
+                    b.ToTable("LabSpecimenAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.LabSpecimenKnownLocation", b =>
@@ -6907,7 +6910,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("LabSpecimenId", "Position");
 
-                    b.ToTable("LabSpecimenKnownLocations", (string)null);
+                    b.ToTable("LabSpecimenKnownLocations");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.LabSpecimenStoryHook", b =>
@@ -6932,7 +6935,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("LabSpecimenId", "Position");
 
-                    b.ToTable("LabSpecimenStoryHooks", (string)null);
+                    b.ToTable("LabSpecimenStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.LibertyReport", b =>
@@ -6958,7 +6961,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("LibertyReports", (string)null);
+                    b.ToTable("LibertyReports");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.LlmCallHistory", b =>
@@ -7008,7 +7011,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("LlmCallHistories", (string)null);
+                    b.ToTable("LlmCallHistories");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.LlmPromptCapture", b =>
@@ -7056,7 +7059,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("BeatId");
 
-                    b.ToTable("LlmPromptCaptures", (string)null);
+                    b.ToTable("LlmPromptCaptures");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.MarkdownFile", b =>
@@ -7163,7 +7166,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("FileRoot", "RelativePath")
                         .IsUnique();
 
-                    b.ToTable("MarkdownFiles", (string)null);
+                    b.ToTable("MarkdownFiles");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Material", b =>
@@ -7229,7 +7232,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Materials", (string)null);
+                    b.ToTable("Materials");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.MaterialAlias", b =>
@@ -7257,7 +7260,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("MaterialId", "Position");
 
-                    b.ToTable("MaterialAliases", (string)null);
+                    b.ToTable("MaterialAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.MaterialApplication", b =>
@@ -7282,7 +7285,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("MaterialId", "Position");
 
-                    b.ToTable("MaterialApplications", (string)null);
+                    b.ToTable("MaterialApplications");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.MaterialDeveloper", b =>
@@ -7307,7 +7310,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("MaterialId", "Position");
 
-                    b.ToTable("MaterialDevelopers", (string)null);
+                    b.ToTable("MaterialDevelopers");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.MaterialProperty", b =>
@@ -7332,7 +7335,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("MaterialId", "Position");
 
-                    b.ToTable("MaterialProperties", (string)null);
+                    b.ToTable("MaterialProperties");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.MaterialStoryHook", b =>
@@ -7357,7 +7360,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("MaterialId", "Position");
 
-                    b.ToTable("MaterialStoryHooks", (string)null);
+                    b.ToTable("MaterialStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Motif", b =>
@@ -7378,7 +7381,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Motifs", (string)null);
+                    b.ToTable("Motifs");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.MotifAppearance", b =>
@@ -7406,7 +7409,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("MotifId", "Position");
 
-                    b.ToTable("MotifAppearances", (string)null);
+                    b.ToTable("MotifAppearances");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NarrativeSummaryEntry", b =>
@@ -7436,7 +7439,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "SortKey");
 
-                    b.ToTable("NarrativeSummaryEntries", (string)null);
+                    b.ToTable("NarrativeSummaryEntries");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.News", b =>
@@ -7514,7 +7517,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PublishedDate");
 
-                    b.ToTable("News", (string)null);
+                    b.ToTable("News");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NewsEntityInvolved", b =>
@@ -7545,7 +7548,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NewsId", "Position");
 
-                    b.ToTable("NewsEntitiesInvolved", (string)null);
+                    b.ToTable("NewsEntitiesInvolved");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NewsLocation", b =>
@@ -7576,7 +7579,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NewsId", "Position");
 
-                    b.ToTable("NewsLocations", (string)null);
+                    b.ToTable("NewsLocations");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Node", b =>
@@ -7840,7 +7843,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("NodeId", "SequenceNo")
                         .IsUnique();
 
-                    b.ToTable("NodeAmendments", (string)null);
+                    b.ToTable("NodeAmendments");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeAudioEvent", b =>
@@ -7876,7 +7879,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "At");
 
-                    b.ToTable("NodeAudioEvents", (string)null);
+                    b.ToTable("NodeAudioEvents");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeBibleSection", b =>
@@ -7908,7 +7911,7 @@ namespace Prose.Core.Migrations
                         .IsUnique()
                         .HasDatabaseName("UX_NodeBibleSections_Node_Type");
 
-                    b.ToTable("NodeBibleSections", (string)null);
+                    b.ToTable("NodeBibleSections");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeChapterSummary", b =>
@@ -7945,7 +7948,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("NodeId", "ChapterIndex")
                         .IsUnique();
 
-                    b.ToTable("NodeChapterSummaries", (string)null);
+                    b.ToTable("NodeChapterSummaries");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeConvergenceState", b =>
@@ -7977,7 +7980,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("NodeId")
                         .IsUnique();
 
-                    b.ToTable("NodeConvergenceStates", (string)null);
+                    b.ToTable("NodeConvergenceStates");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeKeyword", b =>
@@ -8004,7 +8007,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId");
 
-                    b.ToTable("NodeKeywords", (string)null);
+                    b.ToTable("NodeKeywords");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeOpenThread", b =>
@@ -8045,7 +8048,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "IsResolved");
 
-                    b.ToTable("NodeOpenThreads", (string)null);
+                    b.ToTable("NodeOpenThreads");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodePublication", b =>
@@ -8090,7 +8093,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "StartedAt");
 
-                    b.ToTable("NodePublications", (string)null);
+                    b.ToTable("NodePublications");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeReview", b =>
@@ -8174,7 +8177,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "ReviewedAt");
 
-                    b.ToTable("NodeReviews", (string)null);
+                    b.ToTable("NodeReviews");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeReviewBeatScore", b =>
@@ -8212,7 +8215,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("ReviewId", "BeatNumber");
 
-                    b.ToTable("NodeReviewBeatScores", (string)null);
+                    b.ToTable("NodeReviewBeatScores");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeReviewSummary", b =>
@@ -8249,7 +8252,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("NodeId")
                         .IsUnique();
 
-                    b.ToTable("NodeReviewSummaries", (string)null);
+                    b.ToTable("NodeReviewSummaries");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeScoreHistory", b =>
@@ -8287,7 +8290,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("NodeId", "RecordedAt");
 
-                    b.ToTable("NodeScoreHistories", (string)null);
+                    b.ToTable("NodeScoreHistories");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeSpineVersion", b =>
@@ -8335,7 +8338,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("NodeId", "NodeVersion")
                         .IsUnique();
 
-                    b.ToTable("NodeSpineVersions", (string)null);
+                    b.ToTable("NodeSpineVersions");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeStructuralBlueprint", b =>
@@ -8441,7 +8444,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("UniverseId");
 
-                    b.ToTable("NodeStructuralBlueprints", (string)null);
+                    b.ToTable("NodeStructuralBlueprints");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.NodeStructuralBlueprintBeatTag", b =>
@@ -8482,7 +8485,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("BlueprintId");
 
-                    b.ToTable("NodeStructuralBlueprintBeatTags", (string)null);
+                    b.ToTable("NodeStructuralBlueprintBeatTags");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.OutboxEvent", b =>
@@ -8517,7 +8520,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("OutboxEvents", (string)null);
+                    b.ToTable("OutboxEvents");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PharmAlias", b =>
@@ -8545,7 +8548,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PharmaceuticalId", "Position");
 
-                    b.ToTable("PharmaceuticalAliases", (string)null);
+                    b.ToTable("PharmaceuticalAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PharmEffect", b =>
@@ -8570,7 +8573,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PharmaceuticalId", "Position");
 
-                    b.ToTable("PharmaceuticalEffects", (string)null);
+                    b.ToTable("PharmaceuticalEffects");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PharmSideEffect", b =>
@@ -8595,7 +8598,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PharmaceuticalId", "Position");
 
-                    b.ToTable("PharmaceuticalSideEffects", (string)null);
+                    b.ToTable("PharmaceuticalSideEffects");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PharmStoryHook", b =>
@@ -8620,7 +8623,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PharmaceuticalId", "Position");
 
-                    b.ToTable("PharmaceuticalStoryHooks", (string)null);
+                    b.ToTable("PharmaceuticalStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Pharmaceutical", b =>
@@ -8702,7 +8705,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Pharmaceuticals", (string)null);
+                    b.ToTable("Pharmaceuticals");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Place", b =>
@@ -8774,7 +8777,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Places", (string)null);
+                    b.ToTable("Places");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceAdjacency", b =>
@@ -8807,7 +8810,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Position");
 
-                    b.ToTable("PlaceAdjacencies", (string)null);
+                    b.ToTable("PlaceAdjacencies");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceAlias", b =>
@@ -8835,7 +8838,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Position");
 
-                    b.ToTable("PlaceAliases", (string)null);
+                    b.ToTable("PlaceAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceAtmosphereItem", b =>
@@ -8865,7 +8868,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Bucket", "Position");
 
-                    b.ToTable("PlaceAtmosphereItems", (string)null);
+                    b.ToTable("PlaceAtmosphereItems");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceDanger", b =>
@@ -8890,7 +8893,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Position");
 
-                    b.ToTable("PlaceDangers", (string)null);
+                    b.ToTable("PlaceDangers");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceExitRow", b =>
@@ -8943,7 +8946,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Position");
 
-                    b.ToTable("PlaceExits", (string)null);
+                    b.ToTable("PlaceExits");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceFrequentBy", b =>
@@ -8976,7 +8979,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Position");
 
-                    b.ToTable("PlaceFrequentedBy", (string)null);
+                    b.ToTable("PlaceFrequentedBy");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceNotableLocation", b =>
@@ -9008,7 +9011,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Position");
 
-                    b.ToTable("PlaceNotableLocations", (string)null);
+                    b.ToTable("PlaceNotableLocations");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceOpportunity", b =>
@@ -9033,7 +9036,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Position");
 
-                    b.ToTable("PlaceOpportunities", (string)null);
+                    b.ToTable("PlaceOpportunities");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceRelatedEntity", b =>
@@ -9064,7 +9067,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Position");
 
-                    b.ToTable("PlaceRelatedEntities", (string)null);
+                    b.ToTable("PlaceRelatedEntities");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlaceStoryHook", b =>
@@ -9089,7 +9092,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlaceId", "Position");
 
-                    b.ToTable("PlaceStoryHooks", (string)null);
+                    b.ToTable("PlaceStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PlantPayoff", b =>
@@ -9149,7 +9152,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PlantBeatId");
 
-                    b.ToTable("PlantPayoffs", (string)null);
+                    b.ToTable("PlantPayoffs");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ProseEmbedding", b =>
@@ -9257,7 +9260,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Psionics", (string)null);
+                    b.ToTable("Psionics");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PsionicAlias", b =>
@@ -9285,7 +9288,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PsionicId", "Position");
 
-                    b.ToTable("PsionicAliases", (string)null);
+                    b.ToTable("PsionicAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PsionicKnownPractitioner", b =>
@@ -9316,7 +9319,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PsionicId", "Position");
 
-                    b.ToTable("PsionicKnownPractitioners", (string)null);
+                    b.ToTable("PsionicKnownPractitioners");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.PsionicStoryHook", b =>
@@ -9341,7 +9344,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("PsionicId", "Position");
 
-                    b.ToTable("PsionicStoryHooks", (string)null);
+                    b.ToTable("PsionicStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Quote", b =>
@@ -9392,7 +9395,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Theme");
 
-                    b.ToTable("Quotes", (string)null);
+                    b.ToTable("Quotes");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.ReaderKnowledgeFact", b =>
@@ -9509,7 +9512,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("EntityId", "Predicate");
 
-                    b.ToTable("ReconciliationDecisions", (string)null);
+                    b.ToTable("ReconciliationDecisions");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Record", b =>
@@ -9529,7 +9532,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("UpdatedAt")
                         .HasDatabaseName("IX_Records_UpdatedAt");
 
-                    b.ToTable("Records", (string)null);
+                    b.ToTable("Records");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.RepositoryDefinition", b =>
@@ -9631,7 +9634,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("RunId", "Sequence");
 
-                    b.ToTable("SelfHealActions", (string)null);
+                    b.ToTable("SelfHealActions");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Series", b =>
@@ -9666,7 +9669,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("Slug")
                         .IsUnique();
 
-                    b.ToTable("SeriesItems", (string)null);
+                    b.ToTable("SeriesItems");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Setting", b =>
@@ -9687,7 +9690,7 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Key", "UniverseId");
 
-                    b.ToTable("Settings", (string)null);
+                    b.ToTable("Settings");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Species", b =>
@@ -9726,7 +9729,7 @@ namespace Prose.Core.Migrations
                         .IsUnique()
                         .HasDatabaseName("UX_Species_Universe_Name");
 
-                    b.ToTable("Species", (string)null);
+                    b.ToTable("Species");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.StructuralReading", b =>
@@ -9820,7 +9823,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("ParentCorponationId");
 
-                    b.ToTable("Subsidiaries", (string)null);
+                    b.ToTable("Subsidiaries");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.SubsidiaryProduct", b =>
@@ -9853,7 +9856,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("SubsidiaryId", "Position");
 
-                    b.ToTable("SubsidiaryProducts", (string)null);
+                    b.ToTable("SubsidiaryProducts");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Survey", b =>
@@ -10207,7 +10210,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Tags", (string)null);
+                    b.ToTable("Tags");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Taxonomy", b =>
@@ -10243,7 +10246,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("Domain", "Code")
                         .IsUnique();
 
-                    b.ToTable("Taxonomies", (string)null);
+                    b.ToTable("Taxonomies");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Technology", b =>
@@ -10310,7 +10313,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Technologies", (string)null);
+                    b.ToTable("Technologies");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.TechnologyAlias", b =>
@@ -10338,7 +10341,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TechnologyId", "Position");
 
-                    b.ToTable("TechnologyAliases", (string)null);
+                    b.ToTable("TechnologyAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.TechnologyBaseTechnology", b =>
@@ -10369,7 +10372,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TechnologyId", "Position");
 
-                    b.ToTable("TechnologyBaseTechnologies", (string)null);
+                    b.ToTable("TechnologyBaseTechnologies");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.TechnologyDeveloper", b =>
@@ -10400,7 +10403,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TechnologyId", "Position");
 
-                    b.ToTable("TechnologyDevelopers", (string)null);
+                    b.ToTable("TechnologyDevelopers");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.TechnologyEnables", b =>
@@ -10431,7 +10434,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TechnologyId", "Position");
 
-                    b.ToTable("TechnologyEnabledList", (string)null);
+                    b.ToTable("TechnologyEnabledList");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.TechnologyStoryHook", b =>
@@ -10456,7 +10459,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TechnologyId", "Position");
 
-                    b.ToTable("TechnologyStoryHooks", (string)null);
+                    b.ToTable("TechnologyStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Transportation", b =>
@@ -10556,7 +10559,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Propulsion");
 
-                    b.ToTable("Transportations", (string)null);
+                    b.ToTable("Transportations");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.TransportationAlias", b =>
@@ -10584,7 +10587,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TransportationId", "Position");
 
-                    b.ToTable("TransportationAliases", (string)null);
+                    b.ToTable("TransportationAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.TransportationStoryHook", b =>
@@ -10609,7 +10612,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("TransportationId", "Position");
 
-                    b.ToTable("TransportationStoryHooks", (string)null);
+                    b.ToTable("TransportationStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Universe", b =>
@@ -10687,7 +10690,7 @@ namespace Prose.Core.Migrations
                     b.HasIndex("UniverseId", "MetricKey")
                         .IsUnique();
 
-                    b.ToTable("UniverseProfiles", (string)null);
+                    b.ToTable("UniverseProfiles");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Vocabulary", b =>
@@ -10743,7 +10746,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Term");
 
-                    b.ToTable("VocabularyEntries", (string)null);
+                    b.ToTable("VocabularyEntries");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.VoiceChangeLogEntry", b =>
@@ -10798,7 +10801,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Status", "CreatedAt");
 
-                    b.ToTable("VoiceChangeLog", (string)null);
+                    b.ToTable("VoiceChangeLog");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.Weapon", b =>
@@ -10867,7 +10870,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("Name");
 
-                    b.ToTable("Weapons", (string)null);
+                    b.ToTable("Weapons");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.WeaponAlias", b =>
@@ -10895,7 +10898,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("WeaponId", "Position");
 
-                    b.ToTable("WeaponAliases", (string)null);
+                    b.ToTable("WeaponAliases");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.WeaponAmmunitionType", b =>
@@ -10926,7 +10929,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("WeaponId", "Position");
 
-                    b.ToTable("WeaponAmmunitionTypes", (string)null);
+                    b.ToTable("WeaponAmmunitionTypes");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.WeaponBaseTechnology", b =>
@@ -10957,7 +10960,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("WeaponId", "Position");
 
-                    b.ToTable("WeaponBaseTechnologies", (string)null);
+                    b.ToTable("WeaponBaseTechnologies");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.WeaponKnownUser", b =>
@@ -10988,7 +10991,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("WeaponId", "Position");
 
-                    b.ToTable("WeaponKnownUsers", (string)null);
+                    b.ToTable("WeaponKnownUsers");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.WeaponSpec", b =>
@@ -11045,7 +11048,7 @@ namespace Prose.Core.Migrations
 
                     b.HasIndex("WeaponId", "Position");
 
-                    b.ToTable("WeaponStoryHooks", (string)null);
+                    b.ToTable("WeaponStoryHooks");
                 });
 
             modelBuilder.Entity("Prose.Core.Services.ContinuityClaim", b =>

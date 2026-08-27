@@ -134,6 +134,12 @@ if (UniverseBootstrap.RequestedSlug == null
         // Portable-writing-service plan, Phase 4: takes an explicit positional universe slug
         // (BarksExportService.ExportAsync), same shape as --universe-export above.
         "--barks-export",
+        // BannedNames (2026-08-26): genuinely global, no UniverseId column at all — the whole
+        // point of a Prose-wide ban is that it has no per-universe scope to resolve.
+        "--banned-names",
+        // Entity beat mentions (2026-08-26): resolves an explicit --entity id/slug directly,
+        // same shape as --merge-entity/--restore-entity above — no ambient scope needed.
+        "--entity-mentions",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -415,6 +421,24 @@ if (args.Contains("--validate-nouns"))
 if (args.Contains("--deprecated-names"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("DeprecatedNameCli", args);
+    return;
+}
+
+// CLI mode: CRUD for BannedNames — Prose-wide hard name ban, enforced at write time.
+//   prose --banned-names --list
+//   prose --banned-names --add --name <name> [--notes <notes>]
+//   prose --banned-names --remove --id <id>
+if (args.Contains("--banned-names"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BannedNameCli", args);
+    return;
+}
+
+// CLI mode: list every beat that mentions a given entity (node, beat number, excerpt).
+//   prose --entity-mentions --entity <id|slug> [--limit <n>]
+if (args.Contains("--entity-mentions"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("EntityMentionsCli", args);
     return;
 }
 

@@ -1148,6 +1148,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.WriteGate.SelfAliasSyncCheck>();
         services.AddSingleton<Prose.Core.Services.WriteGate.CrossUniverseOriginCheck>();
         services.AddSingleton<Prose.Core.Services.WriteGate.PreviousNodeCycleCheck>();
+        services.AddSingleton<Prose.Core.Services.WriteGate.BannedNameSyncCheck>();
+        services.AddSingleton<BannedNameService>();
         services.AddSingleton<Prose.Core.Services.WriteGate.IWriteAuditService, Prose.Core.Services.WriteGate.DefaultWriteAuditService>();
         services.AddSingleton<Prose.Core.Services.WriteGate.WriteGateBootstrap>();
 

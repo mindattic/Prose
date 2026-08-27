@@ -21,9 +21,10 @@ public sealed class WriteGateBootstrap
         SelfAliasSyncCheck selfAlias,
         CrossUniverseOriginCheck crossUniverseOrigin,
         PreviousNodeCycleCheck previousNodeCycle,
+        BannedNameSyncCheck bannedName,
         IWriteAuditService audit)
     {
-        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { selfAlias, crossUniverseOrigin, previousNodeCycle };
+        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { selfAlias, crossUniverseOrigin, previousNodeCycle, bannedName };
         WriteGateScope.AuditService = audit;
     }
 }
