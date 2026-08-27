@@ -122,7 +122,13 @@ public class EmotionalDepthService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.AsNoTracking()
+        // IgnoreQueryFilters(): callers include SanityScanBackgroundService's corpus-wide sweep,
+        // which runs with no ambient universe scope by design (see that class's own
+        // RunSweepAsync comment) — without this, any book outside whatever universe happens to
+        // be the ambient default 404s here even though the caller already resolved a real,
+        // valid nodeId (same bug class fixed across ~90 other sites in this codebase,
+        // 2026-08-17).
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
