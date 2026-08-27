@@ -19,7 +19,20 @@ public static class HubCliClient
     // (full-battery audits, --write-story, review panels) — any of those would previously
     // throw an unhandled TaskCanceledException and crash this CLI process instead of
     // reporting a clean error. Long-running-by-design, so this is generous rather than tuned.
-    private static readonly HttpClient Http = new() { BaseAddress = new Uri(Prose.Core.Services.HubGate.DefaultBaseUrl), Timeout = TimeSpan.FromMinutes(30) };
+    private static readonly HttpClient Http = BuildClient();
+
+    // Portable-writing-service plan, Phase 1: the Hub's sensitive endpoints (cli-invoke among
+    // them) require the shared X-Prose-Key header. Constructed directly (no DI available this
+    // early — mirrors Prose.Hub/Prose.Mcp's own Program.cs pattern of instantiating
+    // SettingsService directly before their DI containers exist) so it reads the same shared
+    // Settings.json file the Hub generated the key into at its own startup.
+    private static HttpClient BuildClient()
+    {
+        var client = new HttpClient { BaseAddress = new Uri(Prose.Core.Services.HubGate.DefaultBaseUrl), Timeout = TimeSpan.FromMinutes(30) };
+        var key = new Prose.Core.Services.SettingsService().HubApiKey;
+        if (!string.IsNullOrEmpty(key)) client.DefaultRequestHeaders.Add("X-Prose-Key", key);
+        return client;
+    }
 
     /// <param name="method">Override the entry-point method name for handlers that don't use
     /// the ~150-command common convention (RunAsync/Run) - e.g. GlossaryCli.RunBookAsync,

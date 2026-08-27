@@ -131,6 +131,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // (the file's own universe.id for import, a required positional slug for export/sync) —
         // an ambient scope would defeat the point of a cross-app interchange format.
         "--universe-import", "--universe-export", "--universe-sync",
+        // Portable-writing-service plan, Phase 4: takes an explicit positional universe slug
+        // (BarksExportService.ExportAsync), same shape as --universe-export above.
+        "--barks-export",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -1954,6 +1957,22 @@ if (args.Contains("--universe-sync"))
 {
     var rest = args.SkipWhile(a => a != "--universe-sync").Skip(1).ToArray();
     Environment.ExitCode = await HubCliClient.ForwardAsync("UniverseInterchangeCli", rest, method: "RunSyncAsync");
+    return;
+}
+// Portable-writing-service plan, Phase 2: write a scene/line of dialog without a pre-existing
+// Book/Chapter/Beat row — see OneShotGenerateCli's own doc comment.
+if (args.Contains("--generate-scene"))
+{
+    var rest = args.SkipWhile(a => a != "--generate-scene").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("OneShotGenerateCli", rest);
+    return;
+}
+// Portable-writing-service plan, Phase 4: narrow dialog-beat filter/export — see
+// BarksExportCli's own doc comment.
+if (args.Contains("--barks-export"))
+{
+    var rest = args.SkipWhile(a => a != "--barks-export").Skip(1).ToArray();
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BarksExportCli", rest);
     return;
 }
 

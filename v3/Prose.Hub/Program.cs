@@ -184,6 +184,19 @@ var uc = app.Services.GetRequiredService<IUniverseContext>();
 // comment for why this mirrors the IUniverseContext resolution immediately above.
 app.Services.GetRequiredService<Prose.Core.Services.WriteGate.WriteGateBootstrap>();
 
+// Portable-writing-service plan, Phase 1: generate the shared Hub API key once, on first-ever
+// startup, and flush it synchronously (not the debounced ScheduleSave path) so it's durably on
+// disk in Settings.json before Kestrel starts accepting requests below — a Cli/Mcp process that
+// starts even moments later reads the same file and gets a working key immediately, no race.
+var hubApiKeySettings = app.Services.GetRequiredService<SettingsService>();
+if (string.IsNullOrEmpty(hubApiKeySettings.HubApiKey))
+{
+    hubApiKeySettings.HubApiKey = Convert.ToHexString(System.Security.Cryptography.RandomNumberGenerator.GetBytes(32));
+    try { hubApiKeySettings.Flush(); }
+    catch (Exception ex) { Console.Error.WriteLine($"[hub] Could not persist the new Hub API key to Settings.json — {ex.Message}"); }
+    Console.WriteLine("[hub] Generated a new Hub API key (Settings.json) — Cli/Mcp on this machine pick it up automatically.");
+}
+
 Guid? ResolveUniverseId(string slug)
 {
     foreach (var u in uc.ListUniverses())
@@ -449,7 +462,8 @@ app.MapGet("/api/dcm/runs/{id:guid}/payload", async (Guid id, IDbContextFactory<
 // running their handler in-process - see CliDispatch.cs. Console.Out/Error capture is
 // serialized (ConsoleGate) since they're process-wide statics, not per-request.
 app.MapPost("/api/cli-invoke", async (CliDispatch.InvokeRequest req, IServiceProvider sp) =>
-    await CliDispatch.InvokeAsync(req, sp));
+    await CliDispatch.InvokeAsync(req, sp))
+    .AddEndpointFilter<HubApiKeyFilter>();
 
 // Hub-side counterpart to Prose.Cli's CostGateCli (the ~15 cost-estimate-then-confirm
 // commands) - see CostGateDispatch.cs for the two-round-trip protocol; the estimator/ledger
@@ -461,7 +475,8 @@ app.MapPost("/api/cli-cost-gate", async (CostGateDispatch.CostGateRequest req, I
 // here instead of running their own logic in-process - see ToolDispatch.cs for why this is a
 // single generic mechanism instead of ~319 hand-written endpoints.
 app.MapPost("/api/mcp-invoke", async (ToolDispatch.InvokeRequest req, IServiceProvider sp) =>
-    await ToolDispatch.InvokeAsync(req, sp));
+    await ToolDispatch.InvokeAsync(req, sp))
+    .AddEndpointFilter<HubApiKeyFilter>();
 
 // The missing generic edge-creation tool (RelationshipDiscoveryService's auto-link path
 // doesn't cover every entity type, e.g. Transportation) - writes to SQL first, then applies
@@ -504,7 +519,8 @@ app.MapPost("/api/universes/{slug}/import", async (string slug, HttpRequest http
     var json = await reader.ReadToEndAsync();
     var result = await interchange.ImportAsync(json, slug);
     return result.Success ? Results.Ok(result) : Results.BadRequest(result);
-});
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
 
 // RFC 0007 §5 "The Outbox (CliHook channel)" — the Hub's outbound message queue toward other
 // MindAttic apps' Claude Code sessions. GET drains (marks delivered) unless ?peek=true;
@@ -514,7 +530,8 @@ app.MapGet("/api/outbox/{consumer}", async (string consumer, bool? peek, OutboxS
 {
     var events = await outbox.DrainAsync(consumer, peek ?? false);
     return Results.Ok(events.Select(e => new { id = e.Id, ts = e.Ts, kind = e.Kind, summary = e.Summary, data = e.DataJson }));
-});
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
 
 app.MapPost("/api/outbox/{consumer}", async (string consumer, OutboxEnqueueRequest req, OutboxService outbox) =>
 {
@@ -522,7 +539,41 @@ app.MapPost("/api/outbox/{consumer}", async (string consumer, OutboxEnqueueReque
         return Results.BadRequest(new { error = "kind and summary are required" });
     var ev = await outbox.EnqueueAsync(consumer, req.Kind, req.Summary, req.Data);
     return Results.Ok(new { id = ev.Id, ts = ev.Ts });
-});
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
+
+// Portable-writing-service plan, Phase 3: write a scene/line of dialog without a pre-existing
+// Book/Chapter/Beat row, over plain HTTP (same OneShotGenerationService the CLI/MCP entry points
+// call — see OneShotGenerateCli/generate_scene's doc comments for the ephemeral-vs-attached
+// design). Calls the service directly, in-process, rather than bouncing through the generic
+// CliDispatch/ToolDispatch reflection dispatchers — this is one named, stable operation.
+app.MapPost("/api/generate-scene", async (GenerateSceneRequest req, OneShotGenerationService generation) =>
+{
+    try
+    {
+        var result = await generation.GenerateAsync(new OneShotGenerationService.OneShotGenerationRequest(
+            BeatGoal: req.BeatGoal,
+            Characters: req.Characters,
+            Location: req.Location,
+            Subtext: req.Subtext,
+            Node: req.Node,
+            Universe: req.Universe,
+            BeatIndex: req.BeatIndex ?? 0,
+            TotalBeats: req.TotalBeats ?? 0));
+        return Results.Ok(new
+        {
+            text = result.Text,
+            wordCount = result.WordCount,
+            universe = result.UniverseSlug,
+            attachedNode = result.AttachedNodeSlug,
+        });
+    }
+    catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
+    {
+        return Results.BadRequest(new { error = "generate_scene_failed", detail = ex.Message });
+    }
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
 
 Console.Title = "Prose Hub — http://127.0.0.1:5900";
 HubConsoleEcho.Out.WriteLine();
@@ -537,3 +588,7 @@ app.Run();
 sealed record EdgeRequest(Guid Source, Guid Target, string RelationType, string? Sentiment, double? Weight, string? Description, string? Universe);
 
 sealed record OutboxEnqueueRequest(string Kind, string Summary, object? Data);
+
+sealed record GenerateSceneRequest(
+    string BeatGoal, string[]? Characters, string? Location, string? Subtext,
+    string? Node, string? Universe, int? BeatIndex, int? TotalBeats);

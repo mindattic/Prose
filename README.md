@@ -1024,6 +1024,31 @@ logline, rules[]}, entities: [{id, type, name, summary, details{}, relations[], 
   script, and bark sheets as ordinary Books in the EVE universe — same Book→Chapter→Beat
   engine, different deliverable.
 
+### Portable Writing Service — generic for the next consumer
+
+Everything above proved the pattern against one consumer. These pieces generalize it for *any*
+sibling project, no Prose-side code changes needed per new consumer — full runbook:
+[`docs/CONSUMER_ONBOARDING.md`](docs/CONSUMER_ONBOARDING.md).
+
+- **Auth**: the Hub's sensitive endpoints (`/api/cli-invoke`, `/api/mcp-invoke`,
+  `/api/universes/{slug}/import`, `/api/outbox/{consumer}`, `/api/generate-scene`) require an
+  `X-Prose-Key` header — a single shared secret, generated once at Hub startup into the shared
+  `Settings.json` store, read automatically by every trusted local process (Cli, Mcp). Not
+  enterprise auth; just enough to stop an arbitrary local process from reaching the two generic
+  reflection dispatchers (which can invoke any CLI command or MCP tool by name) unauthenticated.
+- **`generate_scene` / `prose --generate-scene`** — write a scene or line of dialog **without** a
+  pre-existing Book/Chapter/Beat row. Ephemeral by default (pacing, dialogue voice, canon
+  grounding, consequence/gear constraints, ambient sensory detail, and entity pre-check warnings
+  all still apply); pass `--node <slug>` for "attached mode" to borrow an existing book's canon
+  and continuity without writing a Beat row to it. CLI, MCP, and `POST /api/generate-scene` are
+  three equivalent entry points.
+- **`export_barks` / `prose --barks-export <universe> <path>`** — walk a universe's (or one
+  book/chapter's) beats and emit every beat with a single recorded POV speaker as `{barkId,
+  speakerEntitySlug, text, context}`. A beat with no recorded speaker is skipped and counted,
+  never silently dropped.
+- **The Outbox is already generic** — `consumer` has always been a free-form string with no
+  registration step; a new project just starts calling `/api/outbox/<its-own-name>`.
+
 ---
 
 ## The Subsystems

@@ -11,12 +11,13 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**289 tools** across **47 tool families.**
+**291 tools** across **49 tool families.**
 
 ## Families
 
 | Family | Tools |
 | --- | --- |
+| [Barks Export](#barks-export) | 1 |
 | [Beat Archive](#beat-archive) | 1 |
 | [Beat Event List](#beat-event-list) | 3 |
 | [Beat Lens](#beat-lens) | 3 |
@@ -45,6 +46,7 @@
 | [Narrative Science](#narrative-science) | 4 |
 | [Node](#node) | 39 |
 | [Noun Consistency](#noun-consistency) | 3 |
+| [One Shot Generation](#one-shot-generation) | 1 |
 | [Planning](#planning) | 6 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 12 |
@@ -64,6 +66,17 @@
 | [World Entity Crud](#world-entity-crud) | 5 |
 | [World Modelling](#world-modelling) | 16 |
 | [Writing](#writing) | 3 |
+
+## Barks Export
+
+<sub>`BarksExportTools`</sub>
+
+### `export_barks`
+
+Walk a universe's (or one book/chapter's) beats and return every beat with a single recorded POV speaker as {barkId, speakerEntitySlug, text, context}. Beats with no recorded POV are skipped and counted, never silently dropped.
+
+- `universe` (string, required) — Universe slug, e.g. 'eve'.
+- `node` (string, optional) — Optional slug/NodeCode/GUID of one book or chapter to scope the walk to. Omit for the whole universe.
 
 ## Beat Archive
 
@@ -1565,6 +1578,23 @@ List all registered deprecated noun rules. Filter by universeSlug ('glmz' or 'fa
 Scan a node's prose beats for deprecated or renamed noun references. Returns ok:true when clean; ok:false with a violations list (beatNumber, deprecatedName, canonicalName, snippet) when stale names are found. Register rules first with add_deprecated_name.
 
 - `nodeIdOrSlug` (string, required) — Node slug or GUID to scan.
+
+## One Shot Generation
+
+<sub>`OneShotGenerationTools`</sub>
+
+### `generate_scene`
+
+Write a scene or line of dialog without a pre-existing Book/Chapter/Beat row. Ephemeral by default: pacing, dialogue voice profiles, canon-fact grounding, consequence/gear constraints, ambient sensory grounding, and entity pre-check warnings all still apply. Pass node to borrow an existing book's canon/continuity ('attached mode') without writing a Beat row to it.
+
+- `beatGoal` (string, required) — What should happen in this scene/line — the beat goal.
+- `characters` (string, optional) — Comma-separated character names on screen (activates dialogue voice profiles and continuity/consequence grounding).
+- `location` (string, optional) — Raw location hint for ambient sensory grounding, e.g. 'The Spine, Zone 3'.
+- `subtext` (string, optional) — What's happening beneath the surface — foreshadowing, unspoken motivation, dramatic irony.
+- `node` (string, optional) — Optional slug/NodeCode/GUID of an existing Book or Chapter to borrow canon and continuity from. Omit for pure ephemeral.
+- `universe` (string, optional) — Optional universe slug override; defaults to the session's current universe.
+- `beatIndex` (int, optional) — Zero-based position in an imagined beat sequence, for pacing guidance. 0 if unknown.
+- `totalBeats` (int, optional) — Total beats in that imagined sequence, for pacing guidance. 0 disables positional pacing.
 
 ## Planning
 

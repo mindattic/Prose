@@ -576,6 +576,13 @@ public class SettingsService : IDisposable
     /// num_ctx, and big nodes will segment into fewer, larger chunks.</summary>
     public int LocalReviewContextTokens { get => data.LocalReviewContextTokens; set { data.LocalReviewContextTokens = Math.Max(4096, value); ScheduleSave(); } }
 
+    // ── Hub HTTP auth (portable-writing-service plan, Phase 1) ───────────────────
+    /// <summary>Shared secret checked on the Hub's sensitive HTTP endpoints (generic CLI/MCP
+    /// dispatch, universe import, outbox) via the <c>X-Prose-Key</c> header. Empty until the Hub
+    /// generates one at first startup; Cli/Mcp read the same value from this shared file, so
+    /// nothing needs manual configuration for the common single-machine case.</summary>
+    public string HubApiKey { get => data.HubApiKey; set { data.HubApiKey = value; ScheduleSave(); } }
+
     // ── Local-LLM generation (--local prose) ─────────────────────────────────────
     /// <summary>OpenAI-compatible chat-completions endpoint for local prose generation
     /// (Ollama, vLLM, RunPod, etc.). Used by <c>--local</c> beat/node generation;
@@ -1061,6 +1068,10 @@ public class SettingsService : IDisposable
         /// <summary>Local model context window in tokens (num_ctx) — used to size review segments to fit.</summary>
         public int LocalReviewContextTokens { get; set; } = 131072;
         public int LocalReviewMaxConcurrency { get; set; } = 2;
+        // Portable-writing-service plan, Phase 1: shared secret for the Hub's sensitive HTTP
+        // endpoints. Generated once by the Hub at startup if empty; every trusted local process
+        // (Cli, Mcp) reads it from this same shared Settings.json file.
+        public string HubApiKey { get; set; } = "";
         // Local-LLM generation (--local prose) defaults
         public string LocalLlmBaseUrl { get; set; } = "";
         public string LocalLlmApiKey { get; set; } = "";

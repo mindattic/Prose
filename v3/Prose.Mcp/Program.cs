@@ -82,7 +82,16 @@ builder.Services.AddProseServices();
 // Timeout override: the default HttpClient.Timeout (100s) is shorter than several Hub-forwarded
 // tools (full-battery audits, review panels) — an unhandled TaskCanceledException would
 // otherwise surface as an opaque tool failure instead of a clean "still running" message.
-builder.Services.AddHttpClient("ProseHub", c => { c.BaseAddress = new Uri("http://127.0.0.1:5900/"); c.Timeout = TimeSpan.FromMinutes(30); });
+// Portable-writing-service plan, Phase 1: attach the shared Hub API key (from the same
+// Settings.json `settings` already loaded above for logging) so calls into the Hub's protected
+// endpoints (mcp-invoke among them) authenticate automatically — nothing to configure by hand
+// for the common single-machine case.
+builder.Services.AddHttpClient("ProseHub", c =>
+{
+    c.BaseAddress = new Uri("http://127.0.0.1:5900/");
+    c.Timeout = TimeSpan.FromMinutes(30);
+    if (!string.IsNullOrEmpty(settings.HubApiKey)) c.DefaultRequestHeaders.Add("X-Prose-Key", settings.HubApiKey);
+});
 builder.Services.AddSingleton<HubInvoker>();
 
 // MCP server with stdio transport. WithToolsFromAssembly scans this assembly
