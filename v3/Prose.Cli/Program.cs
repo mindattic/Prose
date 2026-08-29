@@ -2572,6 +2572,46 @@ if (args.Contains("--generate-event-list"))
     return;
 }
 
+// prose --extract-beat-locations --slug <slug> [--force] [--limit N] [--dry-run]
+// Backfill the per-beat scene location (Beat.PlaceName / PlaceEntityId) — hash-gated.
+if (args.Contains("--extract-beat-locations"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ExtractBeatLocationsCli", args);
+    return;
+}
+
+// prose --location-scan [--min-travel-minutes N]
+// Character-in-two-places-at-once contradiction scan; conflicts land in Findings.
+if (args.Contains("--location-scan"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("LocationScanCli", args);
+    return;
+}
+
+// prose --lint-prose --slug <slug> [--dry-run]
+// Deterministic prose linter: echo words, crutch phrases, pet words, dialogue-attribution runs.
+if (args.Contains("--lint-prose"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("LintProseCli", args);
+    return;
+}
+
+// prose --pov-audit --slug <slug> [--dry-run]
+// Head-hopping + same-scene voice-sameness audit (batched Haiku; findings loop back).
+if (args.Contains("--pov-audit"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PovVoiceAuditCli", args);
+    return;
+}
+
+// prose --hook-audit --slug <slug> [--dry-run]
+// Chapter-ending hook strength analysis; weak non-final endings file findings.
+if (args.Contains("--hook-audit"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("HookAuditCli", args);
+    return;
+}
+
 // prose --export-event-list --slug <slug>
 // Write the current per-beat event list to {CODE}-Events.txt in the publish-export folder (no LLM call).
 if (args.Contains("--export-event-list"))

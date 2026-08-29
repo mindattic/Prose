@@ -324,6 +324,7 @@ public class ProseDbContext : DbContext
     public DbSet<NodeChapterSummary>      NodeChapterSummaries      => Set<NodeChapterSummary>();
     public DbSet<NodeOpenThread>          NodeOpenThreads           => Set<NodeOpenThread>();
     public DbSet<BookPlotEvent>           BookPlotEvents            => Set<BookPlotEvent>();
+    public DbSet<BookMotif>               BookMotifs                => Set<BookMotif>();
     public DbSet<NarrativeSummaryEntry>   NarrativeSummaryEntries   => Set<NarrativeSummaryEntry>();
     // Persona quality-reviews for canon entities (characters, weapons, tech, etc.).
     public DbSet<EntityReview>          EntityReviews          => Set<EntityReview>();
@@ -2890,6 +2891,17 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Category).HasMaxLength(50);
             e.Property(x => x.Description).HasMaxLength(500).IsRequired();
             e.HasIndex(x => new { x.NodeId, x.IsResolved });
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── BookMotif ──────────────────────────────────────────────────────
+        b.Entity<BookMotif>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.MotifKey).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Display).HasMaxLength(200).IsRequired();
+            e.HasIndex(x => new { x.NodeId, x.MotifKey });
             e.HasOne(x => x.Node).WithMany()
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });

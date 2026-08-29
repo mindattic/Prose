@@ -25,7 +25,8 @@ public class ChapterCloseProcessorService(
     NodeReviewService reviewer,
     NarrativeForkService forkService,
     VotingGate votingGate,
-    ILlmService llm)
+    ILlmService llm,
+    ChapterHookService? chapterHook = null)
 {
     public const int MinChapterScore = 80;
     public const int HardFloor       = 75;
@@ -37,7 +38,8 @@ public class ChapterCloseProcessorService(
         string chapterProse,
         int forkCount = 0,
         CancellationToken ct = default,
-        bool allowVotes = false)
+        bool allowVotes = false,
+        int? totalChapters = null)
     {
         var result = new ChapterCloseResult { ChapterIndex = chapterIndex };
 
@@ -100,6 +102,27 @@ public class ChapterCloseProcessorService(
         catch (Exception ex)
         {
             result.Warnings.Add($"Adherence: {ex.Message}");
+        }
+
+        // 3.5. Chapter-hook check (2026-08-28): classify the chapter's ending for page-turn
+        // pull; a weak ending files a "HOOK " CraftChecklist finding that loops back into
+        // future generation. One Haiku call; non-fatal, not vote-gated (a measurement, not a
+        // score gate — same SS-A44 posture as the comprehension probes).
+        if (chapterHook != null)
+        {
+            try
+            {
+                var hook = await chapterHook.CheckCloseAndFileAsync(parentNodeId, chapterIndex, chapterProse, totalChapters, ct);
+                if (hook != null)
+                {
+                    result.HookType = hook.HookType;
+                    result.HookStrength = hook.Strength;
+                }
+            }
+            catch (Exception ex)
+            {
+                result.Warnings.Add($"Chapter hook: {ex.Message}");
+            }
         }
 
         // 4. Tiered review gate (SS-A44: scoring — skipped when voting disabled)
@@ -215,6 +238,8 @@ public class ChapterCloseResult
     public int  AdherenceScore    { get; set; } = 100;
     public string AdherenceSummary { get; set; } = "";
     public int  RecalibratedBeats { get; set; }
+    public string HookType        { get; set; } = "";  // question/danger/decision/revelation/arrival/emotional/none
+    public int  HookStrength      { get; set; } = -1;  // 0-3; -1 = not checked
     public int  ChapterScore      { get; set; }   // Tier 1 quick score
     public int  ReviewTier        { get; set; }   // 1=pass, 2=draft panel, 3=standard panel
     public double PanelScore      { get; set; }   // Set when ReviewTier >= 2

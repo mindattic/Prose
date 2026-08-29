@@ -70,12 +70,7 @@ public class NarrativeSummaryService
     {
         if (string.IsNullOrWhiteSpace(sceneText)) return;
 
-        var system = """
-            You are a story editor. Compress the following scene into exactly 3-4 sentences.
-            Capture: what happened, to whom, what changed, and what tension remains.
-            Be specific — names, consequences, emotional state.
-            Do NOT editorialize or add interpretation. Just the facts of what occurred.
-            """;
+        var system = StorySummaryPrompt.Build("scene");
 
         var summary = await llm.GenerateAsync(system, sceneText, 0.3, 256, model: LlmModels.Haiku, ct: ct);
         await PersistSummaryAsync(summary.Trim(), nodeId, beatId, ct);

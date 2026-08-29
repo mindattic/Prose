@@ -274,8 +274,7 @@ public class SceneContextBuilderTests
         var paths = new TestPathProviderWithRoot(rootDir);
         var docRepo = new WorldbuildingDocRepository(paths);
         var districtRepo = new DistrictRepository(paths);
-        // Use null-safe approach — SceneContextBuilder only needs docRepo and districtRepo for ambient context
-        var svc = new SceneContextBuilder(null!, null!, docRepo, districtRepo);
+        var svc = new SceneContextBuilder(docRepo, districtRepo);
 
         var result = svc.BuildAmbientContext("Shelf", "night", "raining");
         Assert.That(result, Is.Not.Null);

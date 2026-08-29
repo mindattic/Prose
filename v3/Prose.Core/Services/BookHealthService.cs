@@ -1182,14 +1182,21 @@ public class BookHealthService(
         ProseDbContext db, Guid nodeId, CancellationToken ct)
     {
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        // Chapter position first, then chapter-local SortKey — raw SortKey alone ties across
+        // chapters (every chapter's beats restart near the same values), scrambling reading order
+        // for this shared helper's callers (same fix as LogicSweepService.RunAsync).
+        var chapterOrder = searchIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
         var rows = await db.BeatNodes.AsNoTracking()
             .Where(bn => searchIds.Contains(bn.NodeId) && true && bn.Beat != null && bn.Beat.Text != "")
-            .OrderBy(bn => bn.SortKey)
-            .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text })
+            .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text, bn.NodeId, bn.SortKey })
             .ToListAsync(ct);
         // Stripped here, once, for every caller of this shared helper (voice-fingerprint tokens,
         // etc.) rather than trusting each analysis to remember to strip its own input.
-        return rows.Select(r => (r.Id, r.Number, BeatMarkup.StripEntityTags(r.Text))).ToList();
+        return rows
+            .OrderBy(r => chapterOrder.TryGetValue(r.NodeId, out var idx) ? idx : int.MaxValue)
+            .ThenBy(r => r.SortKey)
+            .Select(r => (r.Id, r.Number, BeatMarkup.StripEntityTags(r.Text)))
+            .ToList();
     }
 
     // ── SII computation ─────────────────────────────────────────────────────────────

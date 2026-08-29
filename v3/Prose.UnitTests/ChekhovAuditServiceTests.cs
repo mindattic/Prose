@@ -64,13 +64,36 @@ public class ChekhovAuditServiceTests
     public void ParseSightings_BeatLabelMatchesRealBeat_UsesRealSortKeyNotLlmEcho()
     {
         // BUG FIX documented in source: the LLM's echoed sort_key can drift on a long pass —
-        // when the beat_label resolves to a real beat, its actual SortKey wins over the echo.
+        // when the beat_label resolves to a real beat, its actual position wins over the echo.
         var beats = new List<NodeWorkbenchService.OrderedBeat> { MakeBeat(250.0) };
         var raw = """{"sightings":[{"beat_label":"Beat 1","sort_key":999.0,"prop_name":"lantern","context":"lit"}]}""";
 
         var results = ChekhovAuditService.ParseSightings(raw, beats);
 
-        Assert.That(results[0].SortKey, Is.EqualTo(250.0f), "real beat SortKey must win over the LLM's echoed value");
+        // BUG FIX 2 documented in source: the resolved value is the beat's global sequential
+        // position in `beats` (0 here, the only beat) — NOT its raw, chapter-local
+        // BeatNodes.SortKey (250.0) — since that raw value only compares within one chapter.
+        Assert.That(results[0].SortKey, Is.EqualTo(0f), "real beat's global reading-order position must win over the LLM's echoed value");
+    }
+
+    [Test]
+    public void ParseSightings_BeatLabelMatchesRealBeat_UsesGlobalPositionNotChapterLocalSortKey()
+    {
+        // Two beats from DIFFERENT chapters can share the same chapter-local BeatNodes.SortKey
+        // (every chapter's own beats restart near the same values) — the resolved sighting order
+        // must follow `beats`' own (already book-wide-correct) sequence, not those raw values.
+        var beats = new List<NodeWorkbenchService.OrderedBeat> { MakeBeat(200.0), MakeBeat(100.0) };
+        var raw = """
+            {"sightings":[
+                {"beat_label":"Beat 1","sort_key":200.0,"prop_name":"lantern","context":"lit"},
+                {"beat_label":"Beat 2","sort_key":100.0,"prop_name":"lantern","context":"extinguished"}
+            ]}
+            """;
+
+        var results = ChekhovAuditService.ParseSightings(raw, beats);
+
+        Assert.That(results[0].SortKey, Is.LessThan(results[1].SortKey),
+            "Beat 1's sighting must sort before Beat 2's regardless of their raw chapter-local SortKey values");
     }
 
     [Test]

@@ -21,20 +21,17 @@ public class PlanningTools
     private readonly EntityExtractionService extraction;
     private readonly BehaviorPredictionService prediction;
     private readonly UniverseGraphService graph;
-    private readonly ConsequenceEngine consequences;
     private readonly HubInvoker hub;
 
     public PlanningTools(
         EntityExtractionService extraction,
         BehaviorPredictionService prediction,
         UniverseGraphService graph,
-        ConsequenceEngine consequences,
         HubInvoker hub)
     {
         this.extraction = extraction;
         this.prediction = prediction;
         this.graph = graph;
-        this.consequences = consequences;
         this.hub = hub;
     }
 
@@ -119,45 +116,9 @@ public class PlanningTools
         return JsonSerializer.Serialize(hits, CanonTools.JsonOpts);
     }
 
-    /// <summary>Get the most recent world consequences (cross-story state changes — assassinations, faction shifts, public scandals, infrastructure damage). Use when extending a chapter sequence to honour what's already happened in the world.</summary>
-    [McpServerTool, Description("Get the most recent world consequences (cross-story state changes — assassinations, faction shifts, public scandals, infrastructure damage). Use this when extending a chapter sequence to honour what's already happened in the world.")]
-    public Task<string> GetRecentConsequences(
-        [Description("Maximum number of recent entries to return. Default 10.")] int count = 10) =>
-        hub.InvokeAsync(nameof(PlanningTools), nameof(GetRecentConsequencesImpl), new { count });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public string GetRecentConsequencesImpl(
-        int count = 10)
-    {
-        var list = consequences.GetRecent(count);
-        return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
-    }
-
-    /// <summary>Get every world consequence affecting a specific entity (character, faction, place), ordered by recorded_at descending.</summary>
-    [McpServerTool, Description("Get every world consequence affecting a specific entity (character, faction, place). Returns the consequences ordered by recorded_at descending.")]
-    public Task<string> GetConsequencesFor(
-        [Description("Entity name (character, faction, place, etc.).")] string entityName) =>
-        hub.InvokeAsync(nameof(PlanningTools), nameof(GetConsequencesForImpl), new { entityName });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public string GetConsequencesForImpl(
-        string entityName)
-    {
-        var list = consequences.GetConsequencesFor(entityName);
-        return JsonSerializer.Serialize(list, CanonTools.JsonOpts);
-    }
-
-    /// <summary>Build the LLM-ready "consequences in play" context block for a protagonist. Combines protagonist-specific consequences with the 5 most recent world events, dedupes, caps at 10, flags unresolved threads. Plug directly into a chapter prompt's situational context.</summary>
-    [McpServerTool, Description("Build the LLM-ready 'consequences in play' context block for a protagonist. Combines protagonist-specific consequences with the 5 most recent world events, dedupes, caps at 10 entries, flags unresolved threads. Plug this directly into a chapter prompt's situational context.")]
-    public Task<string> GetConsequenceContext(
-        [Description("Protagonist name. Optional — pass empty for unfocused 'world events' context.")] string protagonistName = "") =>
-        hub.InvokeAsync(nameof(PlanningTools), nameof(GetConsequenceContextImpl), new { protagonistName });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public string GetConsequenceContextImpl(
-        string protagonistName = "")
-    {
-        var ctx = consequences.BuildConsequenceContext(string.IsNullOrWhiteSpace(protagonistName) ? null : protagonistName);
-        return ctx;  // already a formatted text block
-    }
+    // The get_recent_consequences / get_consequences_for / get_consequence_context tools were
+    // removed 2026-08-28 along with ConsequenceEngine: their KV store ('world_consequences')
+    // lost its only writer when the --write-story contract loop was removed, so all three
+    // returned permanently stale/empty data. DB-backed character state constraints live in
+    // ConsequenceService (injected per beat by ProseWriterRouter).
 }

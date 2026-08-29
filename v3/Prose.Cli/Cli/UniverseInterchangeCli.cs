@@ -57,8 +57,7 @@ public static class UniverseInterchangeCli
         var svc = services.GetRequiredService<UniverseInterchangeService>();
         try
         {
-            var json = await svc.ExportAsync(slug);
-            await File.WriteAllTextAsync(path, json);
+            await svc.ExportToFileAsync(slug, path);
             Console.WriteLine($"[universe-export] Wrote {path}");
             return 0;
         }
@@ -89,8 +88,7 @@ public static class UniverseInterchangeCli
         PrintImportResult(importResult);
         if (!importResult.Success) return 1;
 
-        var exported = await svc.ExportAsync(importResult.UniverseSlug);
-        await File.WriteAllTextAsync(path, exported);
+        await svc.ExportToFileAsync(importResult.UniverseSlug, path);
         Console.WriteLine($"[universe-sync] Normalized {path}");
         return 0;
     }

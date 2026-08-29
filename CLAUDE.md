@@ -520,32 +520,33 @@ router's own ambient state (`NodeId`/`beatId` usually already set by the time a 
 | `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | `totalBeats > 0` |
 | `DelightProseGuidance` | Positive doctrine (docs/DELIGHT.md): emphasizes the 2–3 reader-loved moves matching the beat mode | Unconditional, all beat modes (mode-keyed) |
 | `CombatProseGuidance` (`CombatProseConstants`) | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
-| `SceneContextBuilder` | Ambient sensory grounding | **`context.Location` non-empty** — NOT always; `Location` is only ever set on 14/46 book nodes today (see `DefaultLocation` ancestor-walk fix, 2026-08-22) |
-| `DialogueService` | Per-character voice/subtext profile injection | `Dialogue`/`EmotionalClimax` modes + `CharactersInScene.Count > 0` |
-| `SceneContextAssembler` (+ `WoundLedgerService`) | Per-entity XRay: voice/psychology/wound/behavior profile of everyone on-page | `beatId != Guid.Empty` — never fires on a preview/no-beat-id write |
+| `BeatPlaceService` | **(new 2026-08-28)** Per-beat scene location: the nearest prior beat's extracted `Beat.PlaceName` in this chapter becomes `context.Location` (scene-continuity default), ahead of the book-wide `DefaultLocation` ancestor-walk fallback. Populate via the SCENE-LOCATION slice of the consolidated post-write extraction (new beats) or `prose --extract-beat-locations --slug <slug>` (backfill) | `Location` unset by caller + `NodeId`/`beatId` set |
+| `SceneContextBuilder` | Ambient sensory grounding **incl. the New Weird anomaly layer absorbed from the deleted `AmbientAnomalyService` (2026-08-28 — the two used to double-inject overlapping anomaly blocks under two labels)** | **`context.Location` non-empty** — scene-granular once a book's beat locations are extracted (row above); before that, only the 14/46 books with `DefaultLocation` |
+| `DialogueService` | Multi-character RELATIONSHIP DYNAMICS + DIALOGUE RULES; per-character voice profiles ONLY when no XRay block exists (2026-08-28: when XRay is present it emits the complement — behavioral tells, inferred subtext, heritage/age register — instead of duplicating the six `Speech*` fields XRay already carries) | `Dialogue`/`EmotionalClimax` modes + `CharactersInScene.Count > 0` |
+| `SceneContextAssembler` (+ `WoundLedgerService`) | Per-entity XRay: voice/psychology/wound/behavior profile of everyone on-page — since 2026-08-28 also `verbal_tics`/`avoidances` (previously only in DialogueService's duplicate block), making XRay the single canonical voice rendering | `beatId != Guid.Empty` — never fires on a preview/no-beat-id write. **Runs BEFORE DocContextService since 2026-08-28** and awaits `PersistPovAsync`, fixing the POV ordering race: the 'pov' row used to be written fire-and-forget AFTER DocContext read it, so POV register pinning was a no-op on every beat's FIRST generation. `PersistPovAsync` also now defers to any pre-existing pov row (bible POV-map backfills win over the roster heuristic; previously it could write a SECOND pov row for the beat and `SELECT TOP 1` picked nondeterministically) |
 | `SceneCollisionService` | **(undocumented until 2026-08-23)** How on-page characters' psychology collides given the beat goal | 2+ `CharactersInScene`, non-Combat mode, XRay context present |
 | `ContinuityService` | Canonical/confirmed fact constraints for on-page characters | `CharactersInScene.Count > 0` — empty until the entity pre-check/XRay stack has warmed or the caller set it explicitly |
 | `ContinuityEnforcer` | **(new 2026-08-22, undocumented until now)** Post-generation LLM check: does the just-written beat contradict a CANONICAL/CONFIRMED claim it was actually shown? Closes the gap where the canon block above was prompt-side-only with no verification | After generation, when `ContinuityService` produced a non-empty canon block for the scene |
 | `TensionEscalationService` | Warns when beats have stagnated at low intensity | `beatIndex > 2` |
 | `ReaderKnowledgeService` | Dramatic-irony bookkeeping — what the reader currently knows | `NodeId != Guid.Empty` |
 | `ConsequenceService` | Gear/cyberware/status constraints for the full on-page cast | `CharactersInScene.Count > 0` |
-| `ConsequenceEngine` | Cross-book persistent consequences (contract outcomes, faction burns) | `CharactersInScene.Count > 0` — **known bug (tracked, not yet fixed): only ever reads `CharactersInScene[0]`, so consequences for character #2+ in a multi-character scene are silently never surfaced, unlike `ConsequenceService` immediately above it** |
-| `AmbientAnomalyService` | Location-tagged background detail | `Location` set (router-level gate); an internal ~60% roll inside the service itself is unverified against this table — check the service directly before citing that number |
+| ~~`ConsequenceEngine`~~ | **DELETED 2026-08-28** — its KV store (`world_consequences`) lost its only writer when the `--write-story` contract loop was removed, so every beat paid to read a permanently stale blob; the three MCP tools over it (`get_recent_consequences` etc.) went with it. `ConsequenceService` (row above) is the live DB-backed constraint source | — |
 | `WorldStateAtBeatService` | Temporal entity-state snapshot (drift from canon) | `beatId != Guid.Empty` |
 | `NarrativeSummaryService` | Rolling compressed memory of prior beats | `NodeId != Guid.Empty` |
 | `ChapterSummaryService` | DB-backed prior-chapter memory | `NodeId != Guid.Empty` **and `beatIndex > 0`** (intentional — no prior chapter exists for the first beat; documented in the code itself) |
 | `OpenThreadsService` | Unresolved promises/plants/questions | `NodeId != Guid.Empty` |
+| `MotifLedgerService` | **(new 2026-08-28)** "MOTIFS IN PLAY" — recurring images from the `BookMotifs` ledger (sighted in 2+ beats): deepen/refract, never reintroduce as new. Written by the MOTIFS slice of the consolidated post-write extraction | `NodeId != Guid.Empty`; empty until a motif recurs |
 | `BookStateLedgerService` | Arc-level named state (crises, dramatic questions, alliances) | `NodeId`/`beatId` set — **confirmed 2026-08-23: the "long books" gate this table used to claim never existed, in `ProseWriterRouter.cs` or inside `BookStateLedgerService` itself. It runs on every book regardless of length; the doc's claim was simply wrong.** |
 | `StoryScienceService` | King + Storr craft laws: sacred-flaw consistency, status dynamics, curiosity gap, causal chains, sensory specificity | `totalBeats > 0` |
 | `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode | Node has a blueprint (`prose --generate-blueprint`) **and `totalBeats > 0`** |
-| `BeatBlueprintDecision` ("Track B") | **(undocumented until 2026-08-23)** A separate structural-decision block merged into the same `structuralBlueprintGuidance` string as the row above — see the coverage-logging caveat below | Node has a blueprint |
-| StoryScope audit loop-back | **(undocumented until 2026-08-23)** Queries prior STORYSCOPE findings and folds them into `structuralBlueprintGuidance` too — three logically separate mechanisms currently share one coverage signal (see `workflow_status`'s `BeatContract` row: it can report "active" from either of the other two, over-counting its own actual hit rate — tracked, not yet fixed) | Node has a blueprint |
+| `BeatBlueprintDecision` ("Track B") | A separate structural-decision block (declared purpose + pre-state). **Coverage conflation FIXED 2026-08-28**: the three structural mechanisms are now tracked as independent variables and merged only at prompt assembly — coverage rows `StructuralBlueprint`, `BeatContract`, and the new `StoryScopeLoopback` each report their own mechanism honestly | `beatId != Guid.Empty` + a `BeatBlueprintDecisions` row exists |
+| StoryScope audit loop-back | Queries prior STORYSCOPE findings into forward guidance — own coverage row (`StoryScopeLoopback`) since 2026-08-28 | `NodeId != Guid.Empty` |
 | `NarrativeChartService` | Offscreen/parallel character activity (world continuity) | `beatIndex > 2` **and** `totalBeats > 0` |
 | `UniverseGraphService` | Entity pre-check (soft gate — warns via a "do not invent backstory" prompt block, never blocks/corrects) — flags proper nouns in `BeatGoal` not present in `AllNodes()` | Non-empty `BeatGoal` |
 | `HarvestRevealedDetailsAsync` (on `SceneContextAssembler`) | **(undocumented until 2026-08-23)** Opt-in harvesting of newly-revealed entity details from the beat goal back into the entity's own record | `AutoHarvestRevealedDetails` setting (opt-in, off by default) |
 | `PlantPayoffService` | Active plant/payoff pairs for the book | `BeatContext.NodeId != Guid.Empty` for the coverage-length metric computed here; **the actual prompt injection happens inside `BeatGeneratorService`, not `ProseWriterRouter`** — this row and the one below describe where the block is logged, not where it's built |
 | `BookAuditService` | Gateway or Sequel commandments (7 each, auto-detected from `PreviousNodeId`) | Same caveat as `PlantPayoffService` above |
-| Reader-Proxy QA loop-back | **(new 2026-08-22, undocumented until now)** Folds prior `ComprehensionDefect`/`CraftChecklist`/`ReaderGripe` findings into forward-looking guidance, same pattern as `EMOTIONAL-DEPTH`/`READABILITY` below | `NodeId != Guid.Empty`, no guidance already supplied by the caller |
+| Reader-Proxy QA loop-back | Folds prior `ComprehensionDefect`/`CraftChecklist`/`ReaderGripe` findings into forward-looking guidance, same pattern as `EMOTIONAL-DEPTH`/`READABILITY` below. **Since 2026-08-28 also carries the `LINT` block** (mechanical linter findings — `prose --lint-prose`), and the CraftChecklist category now also receives `POV `/`VOICE ` (`prose --pov-audit`) and `HOOK ` (`prose --hook-audit` + automatic chapter-close check) findings | `NodeId != Guid.Empty`, no guidance already supplied by the caller |
 | `LibertyReportService` | Rule-of-Cool check | `beatId != Guid.Empty` + non-empty result (findings loop back into later beats) |
 | `SemanticFidelityService` | Goodhart intent-drift check | `beatId != Guid.Empty` + non-empty `capturedBeatGoal` |
 | `CanonGroundingService` | Canon-grounding scaffold | **Opt-in, `AutoCanonGrounding` setting, off by default — NOT "Always" as this table previously claimed.** Turning this on globally is a per-beat LLM-call cost decision, not a documentation fix; ask before flipping the default. |
@@ -568,15 +569,34 @@ guidance one beat later through the generic findings-loop-back mechanism.
 **One other generation entry point exists and does NOT share this enrichment chain.** `StoryDirectorService`
 and `Write.razor` (the two entry points originally flagged here 2026-08-09) were both deleted
 2026-08-13 along with the entire Blazor UI (commit `ed22bd4f6`, "Command-line only") — the project
-is CLI/MCP/Hub-only now, not Blazor Server. The still-live bypass is `SceneGenerationService`
-(`v3/Prose.Core/Services/SceneGenerationService.cs`): it hand-rolls its own XRay/DocContext/pacing
-calls via `BeatGeneratorService.GenerateBeatAsync` directly, skipping `ContinuityService`,
-`PlantPayoffService`, `BookAuditService`, `TensionEscalationService`, `ReaderKnowledgeService`,
-`StoryScienceService`, `StructuralBlueprintService`, and the entity pre-check entirely. Confirmed
-2026-08-21: it is DI-registered and has its own unit test (`SceneGenerationServiceLifetimeTests`)
-but zero call sites in `Prose.Cli`/`Prose.Mcp`/`Prose.Hub` — dead code left over from the deleted
-UI, not a live gap, but a landmine if anyone wires a new command to it without going through
-`ProseWriterRouter` instead.
+is CLI/MCP/Hub-only now, not Blazor Server. The last bypass, `SceneGenerationService`, was
+**deleted 2026-08-23 as confirmed dead code** (see `BeatExtractionService.cs`'s header comment) —
+there is no live generation entry point outside `ProseWriterRouter` any more.
+
+### New craft instruments (2026-08-28 tooling overhaul)
+
+- `prose --extract-beat-locations --slug <slug>` — backfill per-beat scene location
+  (`Beat.PlaceName`/`PlaceEntityId`, hash-gated on `PlaceExtractedFromHash`); new beats get it
+  automatically via the SCENE-LOCATION slice of the consolidated post-write extraction.
+- `prose --location-scan` — the (previously never-invocable) LocationContradictionService
+  character-in-two-places scan; files Contradiction findings. Its travel-time axis still needs
+  in-world timestamps on live beats (`Beat.InWorldDate` does not exist — backlog).
+- `prose --lint-prose --slug <slug>` — deterministic RepetitionLintService: echo words, crutch
+  phrases, pet words, unattributed-dialogue runs, airless-narration runs, floating-heads beats.
+  Zero LLM cost; files `LINT ` CraftChecklist findings (loop back into generation). Run
+  `prose --compute-metrics --slug` first for the dialogue-proportion checks.
+- `prose --pov-audit --slug <slug>` — PovVoiceAuditService: head-hopping out of the recorded
+  POV + same-scene voice sameness (batched Haiku; `POV `/`VOICE ` findings).
+- `prose --hook-audit --slug <slug>` — ChapterHookService: chapter-ending hook type + strength
+  0-3; weak non-final endings file `HOOK ` findings. Also fires automatically at chapter close
+  (`ChapterCloseProcessorService` step 3.5, one Haiku call, not vote-gated).
+- Motif ledger: `BookMotifs` table + `MotifLedgerService`; extraction via the MOTIFS slice of
+  the consolidated call; recurring motifs (2+ beats) inject as "MOTIFS IN PLAY" guidance. The
+  legacy KV `MotifService` remains legacy-stack-only — do not extend it.
+- Two EF migrations pending Hub redeploy: `AddBeatPlace`, `AddBookMotifs` (both plain nullable
+  ADD COLUMN / new table; apply at next Hub restart).
+- Subplot-thread health was NOT added as a new instrument: `prose --storyscope-audit` already
+  covers it (`subplot_not_executed` carrier-beat check + the single-track/interleave check).
 
 ### Narrative Mode — Original vs Retelling vs Historical (added 2026-08-18)
 

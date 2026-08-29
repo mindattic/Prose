@@ -23,7 +23,7 @@ namespace Prose.Core.Services;
 /// constraint — same non-blocking posture as every other ProseWriterRouter enrichment service.
 ///
 /// Deliberately reuses XRayContext/WorldStateContext/ConsequenceContext (already assembled by
-/// SceneContextAssembler/WorldStateAtBeatService/ConsequenceService+ConsequenceEngine) rather
+/// SceneContextAssembler/WorldStateAtBeatService/ConsequenceService) rather
 /// than re-querying character psychology from scratch — avoids both a duplicate DB round trip
 /// and a fragile new dependency on CharacterEmotionalLedger, which is only populated for books
 /// that have run EmotionalLedgerService and would otherwise make this a silent no-op on most

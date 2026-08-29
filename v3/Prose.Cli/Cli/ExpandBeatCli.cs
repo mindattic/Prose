@@ -20,7 +20,7 @@ namespace Prose.Cli;
 ///   --beat &lt;beatId&gt;           Expand one specific beat by its UUID.
 ///   --force                   Re-expand beats that already have prose (overwrites).
 ///   --protagonist &lt;name|slug&gt; Character name or slug to add to CharactersInScene, activating
-///                             DialogueService, ConsequenceService, and ConsequenceEngine during polish.
+///                             DialogueService and ConsequenceService during polish.
 ///   --model &lt;modelId&gt;         Force a specific cloud model for this run (e.g. claude-sonnet-4-6, claude-opus-4-8).
 ///                             Passed directly to the active cloud provider; ignored when --local is set.
 ///   --local                   Route generation to the configured local LLM (LocalLlmBaseUrl in settings).

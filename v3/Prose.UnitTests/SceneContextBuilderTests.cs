@@ -38,8 +38,7 @@ public class SceneContextBuilderDetailedTests
     {
         var districtRepo = new StubDistrictRepo(districts ?? []);
         var docRepo      = new StubDocRepo(docs ?? []);
-        // DatabaseService and UniverseGraphService are not called by BuildAmbientContext
-        return new SceneContextBuilder(db: null!, graph: null!, docRepo: docRepo, districtRepo: districtRepo);
+        return new SceneContextBuilder(docRepo: docRepo, districtRepo: districtRepo);
     }
 
     // ── Empty / unknown location ──────────────────────────────────────────────

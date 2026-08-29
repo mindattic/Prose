@@ -222,7 +222,7 @@ public abstract class Node
 
     /// <summary>Default scene location for this node (e.g. "Zone 4 civic district", "The Spine, Zone 6").
     /// ProseWriterRouter uses this to auto-populate BeatContext.Location when the caller doesn't set it,
-    /// enabling SceneContextBuilder (ambient sensory grounding) and AmbientAnomalyService to fire.</summary>
+    /// enabling SceneContextBuilder (ambient sensory grounding + New Weird anomaly layer) to fire.</summary>
     public string? DefaultLocation { get; set; }
 
     // ── Node Bible ──────────────────────────────────────────────────────

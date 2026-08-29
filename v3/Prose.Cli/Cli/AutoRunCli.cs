@@ -158,7 +158,7 @@ public static class AutoRunCli
                     : bookBible + "\n\n=== CHAPTER OUTLINE (BINDING — beats must fulfil these chapter goals) ===\n" + chapterSeed.Trim();
                 await ExpandAndRepairAsync(chapterId, nodeId, chapterBible, router, workbench, reflow,
                     chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
-                    forks, allowVotes, noRepair, totalChapters);
+                    forks, allowVotes, noRepair, totalChapters, chapters.Count);
                 totalChapters++;
             }
             Console.WriteLine();
@@ -168,7 +168,7 @@ public static class AutoRunCli
         {
             await ExpandAndRepairAsync(nodeId, nodeId, bookBible, router, workbench, reflow,
                 chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
-                forks, allowVotes, noRepair, chapterIndex: 0);
+                forks, allowVotes, noRepair, chapterIndex: 0, totalChapters: 1);
             Console.WriteLine($"[auto-run] Done: {stats.Written} beats expanded.");
         }
 
@@ -184,7 +184,7 @@ public static class AutoRunCli
         SessionStats stats,
         bool force, bool dryRun, int targetWords,
         int forks, bool allowVotes, bool noRepair,
-        int chapterIndex)
+        int chapterIndex, int totalChapters)
     {
         var (written, skipped) = await ExpandBeatNodesAsync(chapterId, nodeId, bookBible, router, workbench, force, dryRun, targetWords);
         stats.Written  += written;
@@ -204,7 +204,7 @@ public static class AutoRunCli
         Console.WriteLine("[auto-run]   chapter close processing…");
         var beats = await workbench.GetOrderedBeatsAsync(chapterId);
         var prose = string.Join("\n\n", beats.Select(b => b.Beat.Text).Where(t => !string.IsNullOrWhiteSpace(t)));
-        var closeResult = await chapterClose.ProcessAsync(nodeId, chapterId, chapterIndex, prose, forks, allowVotes: allowVotes);
+        var closeResult = await chapterClose.ProcessAsync(nodeId, chapterId, chapterIndex, prose, forks, allowVotes: allowVotes, totalChapters: totalChapters);
         PrintCloseResult(closeResult);
 
         if (noRepair) return;

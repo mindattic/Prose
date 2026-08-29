@@ -15,84 +15,30 @@ namespace Prose.Core.Services;
 public class DialogueService
 {
     private readonly IDatabaseService db;
-    private readonly EmbeddingService? embeddings;
 
-    public DialogueService(IDatabaseService db) : this(db, null) { }
-
-    public DialogueService(IDatabaseService db, EmbeddingService? embeddings)
+    public DialogueService(IDatabaseService db)
     {
-        this.db         = db;
-        this.embeddings = embeddings;
+        this.db = db;
     }
 
+    // BuildVoiceAnchorsAsync (embedding voice-peer anchors) and BuildConversationGoals
+    // (per-scene negotiation goals) were deleted 2026-08-28 — both were dead code with zero
+    // callers. If scene-level psychology collision is needed, SceneCollisionService is the
+    // live mechanism.
+
     /// <summary>
-    /// Pull a few canon characters with semantically-similar voice profiles
-    /// for each character in the scene, format as anchor examples for the
-    /// dialogue-generation LLM. The LLM gets to see "here are some real
-    /// voices in this universe that have an adjacent register" — anchors
-    /// generated dialogue without copying anyone specific.
+    /// Build dialogue constraints for all characters in a scene.
     ///
-    /// <para>Returns an empty string when the embedding cache is cold or the
-    /// service was constructed without an EmbeddingService (test fixtures).</para>
+    /// <paramref name="includeVoiceProfiles"/> (2026-08-28): when the beat's XRay block
+    /// (SceneContextAssembler.FormatCharacterAsync) is already in the prompt, it carries the
+    /// canonical six Speech* fields + example lines + verbal tics + avoidances for everyone
+    /// on-page — re-rendering full profiles here duplicated all of that in the same prompt.
+    /// Pass false in that case: this emits only what XRay does not (derived behavioral tells,
+    /// inferred subtext, heritage/age register notes) plus the cross-character relationship
+    /// dynamics and dialogue rules. Pass true (default) on preview/no-beatId writes where no
+    /// XRay block exists and this is the only voice signal.
     /// </summary>
-    public async Task<string> BuildVoiceAnchorsAsync(List<string> charactersInScene, CancellationToken ct = default)
-    {
-        if (embeddings == null) return "";
-        if (charactersInScene == null || charactersInScene.Count == 0) return "";
-
-        var sb = new System.Text.StringBuilder();
-        sb.AppendLine("CANON VOICE ANCHORS — existing characters with adjacent registers; write each scene character DISTINCT from these but in the same overall world voice:");
-
-        var added = 0;
-        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-        foreach (var name in charactersInScene)
-        {
-            var ch = db.FindCharacter(name);
-            if (ch == null) continue;
-            if (!seen.Add(ch.Name)) continue;
-
-            // Build the embedding query from this character's voice signal
-            // (vocabulary + cadence + subtext + secret) so the cosine match
-            // surfaces voice peers, not just role peers.
-            var sp = ch.SpeechPatterns;
-            var query = string.Join(" ", new[]
-            {
-                ch.Name, ch.Role, ch.Affiliation,
-                sp.Vocabulary, sp.Cadence, sp.Subtext,
-            }.Where(s => !string.IsNullOrWhiteSpace(s)));
-            if (string.IsNullOrWhiteSpace(query)) continue;
-
-            IReadOnlyList<EmbeddingHit> hits;
-            try { hits = await embeddings.FindSimilarAsync(query, k: 4, entityTypes: new[] { "character" }, ct); }
-            catch (OperationCanceledException) { throw; }
-            catch { continue; }
-
-            sb.AppendLine();
-            sb.Append("  ").Append(ch.Name).AppendLine(" — voice peers:");
-            int peers = 0;
-            foreach (var hit in hits)
-            {
-                if (string.Equals(hit.EntityName, ch.Name, StringComparison.OrdinalIgnoreCase)) continue; // self
-                var peer = db.FindCharacter(hit.EntityName);
-                if (peer == null) continue;
-                var peerSp = peer.SpeechPatterns;
-                var fragment = !string.IsNullOrWhiteSpace(peerSp.Cadence) ? peerSp.Cadence
-                             : !string.IsNullOrWhiteSpace(peerSp.Vocabulary) ? peerSp.Vocabulary
-                             : "voice profile available in canon";
-                if (fragment.Length > 160) fragment = fragment[..157] + "…";
-                sb.Append("    • ").Append(peer.Name).Append(": ").AppendLine(fragment);
-                if (++peers >= 3) break;
-            }
-            added++;
-        }
-        return added == 0 ? "" : sb.ToString().TrimEnd();
-    }
-
-    /// <summary>
-    /// Build comprehensive dialogue constraints for all characters in a scene.
-    /// Includes per-character voice profiles AND cross-character relationship rules.
-    /// </summary>
-    public string BuildDialogueContext(List<string> charactersInScene)
+    public string BuildDialogueContext(List<string> charactersInScene, bool includeVoiceProfiles = true)
     {
         if (charactersInScene.Count == 0) return "";
 
@@ -106,15 +52,17 @@ public class DialogueService
 
         var sb = new System.Text.StringBuilder();
 
-        // Per-character voice profiles
-        var header = characters.Count > 1
-            ? "CHARACTER VOICE PROFILES — each voice must be immediately distinct:"
-            : "CHARACTER VOICE PROFILE:";
+        // Per-character voice profiles (full, or the XRay-complement subset)
+        var header = includeVoiceProfiles
+            ? (characters.Count > 1
+                ? "CHARACTER VOICE PROFILES — each voice must be immediately distinct:"
+                : "CHARACTER VOICE PROFILE:")
+            : "DIALOGUE REGISTER NOTES (voice fields are in the scene context above):";
         sb.AppendLine(header);
 
         foreach (var c in characters)
         {
-            var voice = BuildCharacterVoice(c);
+            var voice = includeVoiceProfiles ? BuildCharacterVoice(c) : BuildVoiceSupplement(c);
             if (voice.Length > 0)
             {
                 sb.AppendLine();
@@ -148,115 +96,42 @@ public class DialogueService
     }
 
     /// <summary>
-    /// Build per-character CONVERSATION GOALS for this specific scene.
-    /// Every scene has a negotiation between wills — each character wants something.
-    /// The drama comes from those goals colliding.
-    ///
-    /// This answers: "What does each character need to GET from this conversation?"
-    /// Not their global story arc — their immediate, beat-level conversational goal.
-    ///
-    /// Derived from: beat goal + character desire + character fear + relationship type.
-    /// Pure logic — no LLM call.
+    /// The XRay-complement subset of <see cref="BuildCharacterVoice"/>: only what
+    /// SceneContextAssembler.FormatCharacterAsync does NOT already inject for this character —
+    /// derived behavioral tells, inferred subtext, heritage code-switching, role/age register
+    /// notes. Used when the beat's XRay block already carries the canonical voice fields.
     /// </summary>
-    public string BuildConversationGoals(List<string> charactersInScene, string beatGoal, int tension)
+    private static string BuildVoiceSupplement(CharacterData c)
     {
-        var characters = charactersInScene
-            .Select(name => db.FindCharacter(name))
-            .Where(c => c != null)
-            .Cast<CharacterData>()
-            .ToList();
+        var lines = new List<string> { $"[{c.Name.ToUpper()}]" };
 
-        if (characters.Count < 2) return "";
+        var behavioral = BuildBehavioralSignals(c);
+        if (behavioral.Length > 0)
+            lines.Add($"  Behavioral tells: {behavioral}");
 
-        var lines = new List<string> { "CONVERSATION GOALS — what each character needs from this exchange:" };
-        var beatLower = beatGoal.ToLowerInvariant();
-
-        foreach (var c in characters)
+        if (string.IsNullOrWhiteSpace(c.SpeechPatterns.Subtext))
         {
-            var goals = new List<string>();
-            var sp = c.SpeechPatterns;
-
-            // Derive immediate conversational goal from beat context + core desire
-            if (c.Psychology.CoreDesires.Count > 0)
-            {
-                var desire = c.Psychology.CoreDesires[0].ToLowerInvariant();
-
-                // Map beat context to conversational strategy
-                if (beatLower.Contains("negotiate") || beatLower.Contains("deal") || beatLower.Contains("contract"))
-                    goals.Add($"wants favorable terms — but need is shaped by: {c.Psychology.CoreDesires[0]}");
-                else if (beatLower.Contains("reveal") || beatLower.Contains("discover") || beatLower.Contains("learn"))
-                    goals.Add($"wants information — filtered through: {c.Psychology.CoreDesires[0]}");
-                else if (beatLower.Contains("confront") || beatLower.Contains("fight") || beatLower.Contains("challenge"))
-                    goals.Add($"wants to establish/defend position — driven by: {c.Psychology.CoreDesires[0]}");
-                else
-                    goals.Add($"underlying need in this conversation: {c.Psychology.CoreDesires[0]}");
-            }
-
-            // What they're protecting (fear-driven defensive posture)
-            if (c.Psychology.CoreFears.Count > 0 && tension >= 4)
-                goals.Add($"protecting against: {c.Psychology.CoreFears[0]}");
-
-            // What they're hiding — shapes every answer they give
-            if (c.Psychology.Secret.Length > 0)
-                goals.Add($"cannot let conversation reach: the subject that would expose their secret");
-
-            // How stress affects their goals
-            if (tension >= 7)
-            {
-                var stressGoal = c.Behavioral.StressResponses.GetValueOrDefault("high", "");
-                if (stressGoal.Length > 0)
-                    goals.Add($"high tension mode: {ShortenToSignal(stressGoal)}");
-            }
-
-            // Avoidance topics — conversational maneuver
-            if (sp.Avoidances.Count > 0)
-                goals.Add($"will redirect away from: {sp.Avoidances[0]}");
-
-            if (goals.Count > 0)
-                lines.Add($"  {c.Name}: {string.Join("; ", goals)}");
+            var inferredSubtext = InferSubtextFromPsychology(c);
+            if (inferredSubtext.Length > 0)
+                lines.Add($"  Inferred subtext: {inferredSubtext}");
         }
 
-        // Add cross-character negotiation frame: who has leverage?
-        lines.Add("\nNEGOTIATION FRAME:");
-        for (int i = 0; i < characters.Count; i++)
+        var heritage = BuildHeritageHints(c);
+        if (heritage.Length > 0)
+            lines.Add($"  Cultural register: {heritage}");
+
+        if (!string.IsNullOrWhiteSpace(c.Role))
+            lines.Add($"  Station: {c.Role} — vocabulary and deference patterns reflect this");
+
+        if (c.Age > 0)
         {
-            for (int j = i + 1; j < characters.Count; j++)
-            {
-                var a = characters[i];
-                var b = characters[j];
-                var leverage = BuildLeverageAssessment(a, b, tension);
-                if (leverage.Length > 0)
-                    lines.Add($"  {a.Name} vs {b.Name}: {leverage}");
-            }
+            if (c.Age < 18)
+                lines.Add("  Age note: adolescent — fast, defensive, uses slang as armor, hates sounding young");
+            else if (c.Age > 65)
+                lines.Add("  Age note: elder — unhurried, speaks in whole thoughts, references are older than the listener");
         }
 
-        return string.Join("\n", lines);
-    }
-
-    /// <summary>
-    /// Determine who has leverage in a two-person exchange.
-    /// Leverage = information + position + what the other person needs.
-    /// </summary>
-    private static string BuildLeverageAssessment(CharacterData a, CharacterData b, int tension)
-    {
-        var parts = new List<string>();
-
-        // Check if one person knows something the other doesn't (drives dramatic irony)
-        var aKnowsAboutB = a.Relationships
-            .FirstOrDefault(r => r.Name.Contains(b.Name, StringComparison.OrdinalIgnoreCase));
-        var bKnowsAboutA = b.Relationships
-            .FirstOrDefault(r => r.Name.Contains(a.Name, StringComparison.OrdinalIgnoreCase));
-
-        if (aKnowsAboutB?.StoryTension.Length > 0)
-            parts.Add($"{a.Name} knows: {ShortenToSignal(aKnowsAboutB.StoryTension)}");
-        if (bKnowsAboutA?.StoryTension.Length > 0)
-            parts.Add($"{b.Name} knows: {ShortenToSignal(bKnowsAboutA.StoryTension)}");
-
-        // Information asymmetry is the lifeblood of dialogue tension
-        if (parts.Count == 0 && tension >= 5)
-            parts.Add("neither has full information — both operating on assumptions");
-
-        return string.Join("; ", parts);
+        return lines.Count <= 1 ? "" : string.Join("\n", lines);
     }
 
     private string BuildCharacterVoice(CharacterData c)

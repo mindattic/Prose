@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**291 tools** across **49 tool families.**
+**288 tools** across **49 tool families.**
 
 ## Families
 
@@ -47,7 +47,7 @@
 | [Node](#node) | 39 |
 | [Noun Consistency](#noun-consistency) | 3 |
 | [One Shot Generation](#one-shot-generation) | 1 |
-| [Planning](#planning) | 6 |
+| [Planning](#planning) | 3 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 12 |
 | [Reader Qa](#reader-qa) | 3 |
@@ -1606,30 +1606,12 @@ Extract named entities and relationships from arbitrary prose. Useful AFTER draf
 
 - `text` (string, required) — Prose text to scan.
 
-### `get_consequence_context`
-
-Build the LLM-ready 'consequences in play' context block for a protagonist. Combines protagonist-specific consequences with the 5 most recent world events, dedupes, caps at 10 entries, flags unresolved threads. Plug this directly into a chapter prompt's situational context.
-
-- `protagonistName` (string, optional) — Protagonist name. Optional — pass empty for unfocused 'world events' context.
-
-### `get_consequences_for`
-
-Get every world consequence affecting a specific entity (character, faction, place). Returns the consequences ordered by recorded_at descending.
-
-- `entityName` (string, required) — Entity name (character, faction, place, etc.).
-
 ### `get_neighbors_by_relation`
 
 List a node's edges filtered by relation type. Subset of get_neighbors that returns only relationships matching a specific relation_type — e.g. 'rival', 'allied', 'mentor', 'family', 'controls_territory', 'frequents'. Useful for targeted lookups: 'who are Kyle's known rivals'.
 
 - `nodeId` (string, required) — Source node id (use search_semantic / list_characters / etc. to find).
 - `relationType` (string, required) — Relation type to filter on. Case-insensitive substring match (e.g. 'rival' matches 'rivalry').
-
-### `get_recent_consequences`
-
-Get the most recent world consequences (cross-story state changes — assassinations, faction shifts, public scandals, infrastructure damage). Use this when extending a chapter sequence to honour what's already happened in the world.
-
-- `count` (int, optional) — Maximum number of recent entries to return. Default 10.
 
 ### `predict_behavior`
 

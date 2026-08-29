@@ -30,11 +30,29 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
         // every leaf descendant, recursing past any nested Collection (2026-08-09 fix).
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         if (!searchIds.Contains(nodeId)) searchIds.Add(nodeId);
-        return await db.PlantPayoffs
+        var rows = await db.PlantPayoffs
             .AsNoTracking()
             .Where(p => searchIds.Contains(p.NodeId))
-            .OrderBy(p => p.SortKey)
             .ToListAsync(ct);
+        return OrderByChapterThenSortKey(rows, searchIds);
+    }
+
+    // BUG FIX (2026-08-28): PlantPayoff.SortKey is assigned per registering node
+    // (NextSortKeyAsync below computes MAX(SortKey) WHERE NodeId == nodeId, starting back at
+    // 100), so it is only comparable among plants registered on the SAME node — a plant
+    // registered on chapter 2 and one registered on chapter 8 can share the same SortKey. Both
+    // callers here aggregate across every chapter under a book (searchIds), so ordering by raw
+    // SortKey alone ties/scrambles chapters — same bug class fixed the same day in
+    // LogicSweepService.RunAsync. searchIds is already in true reading order (leaf ids from
+    // GetLeafDescendantIdsAsync, depth-first/SortKey-per-level, plus the book node itself
+    // appended last) — order by each pair's node position in it first, then its own SortKey.
+    private static List<PlantPayoff> OrderByChapterThenSortKey(List<PlantPayoff> rows, List<Guid> searchIds)
+    {
+        var chapterOrder = searchIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        return rows
+            .OrderBy(p => chapterOrder.TryGetValue(p.NodeId, out var idx) ? idx : int.MaxValue)
+            .ThenBy(p => p.SortKey)
+            .ToList();
     }
 
     // 2026-08-22 fix: how close to the book's end an unpaid (seeded, no payoff beat yet) plant
@@ -147,11 +165,11 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
         // Recurses past any nested Collection (2026-08-09 fix).
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         if (!searchIds.Contains(nodeId)) searchIds.Add(nodeId);
-        var all = await db.PlantPayoffs
+        var allRows = await db.PlantPayoffs
             .AsNoTracking()
             .Where(p => searchIds.Contains(p.NodeId))
-            .OrderBy(p => p.SortKey)
             .ToListAsync(ct);
+        var all = OrderByChapterThenSortKey(allRows, searchIds);
 
         var orphaned     = all.Where(p => p.PlantBeatId != null && p.PayoffBeatId == null).ToList();
         var notTransparent = all.Where(p => !p.IsTransparent && p.PayoffBeatId != null).ToList();

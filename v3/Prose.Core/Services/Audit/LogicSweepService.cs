@@ -60,15 +60,29 @@ public class LogicSweepService(
         // chapter's beats are silently excluded from the causality/knowledge-state/timeline audit.
         var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
-        var beatRows = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
+        var beatRowsUnordered = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
             .Where(bn => nodeIds.Contains(bn.NodeId) && true && bn.Beat != null
                       && bn.Beat!.Text != null && bn.Beat.Text != "")
-            .OrderBy(bn => bn.SortKey)
             .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text, bn.SortKey, bn.NodeId })
             .ToListAsync(ct);
 
-        if (beatRows.Count == 0)
+        if (beatRowsUnordered.Count == 0)
             return new LogicSweepReport(nodeId, node.Slug, node.Title, 0, []);
+
+        // BeatNodes.SortKey is fractional WITHIN a chapter (e.g. 50, 100, 150…) — every chapter's
+        // own beats restart near the same values, so ordering the WHOLE book's beats by raw
+        // SortKey alone (as this used to) interleaves chapters instead of reading chapter 1 through
+        // to the end before chapter 2: a chapter-1 beat at SortKey 100 and a chapter-5 beat also at
+        // SortKey 100 sort as ties, scrambling the causality/knowledge-state/timeline order the
+        // whole sweep depends on. nodeIds is already in true reading order (GetLeafDescendantIdsAsync
+        // is depth-first, SortKey-ordered per level — see its own remarks), exactly like
+        // RunNarrowAsync's sibling comment already flags for its own cross-chapter beat set. Order by
+        // each beat's chapter position first, then its own SortKey within that chapter.
+        var chapterOrder = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var beatRows = beatRowsUnordered
+            .OrderBy(b => chapterOrder.TryGetValue(b.NodeId, out var idx) ? idx : int.MaxValue)
+            .ThenBy(b => b.SortKey)
+            .ToList();
 
         // Chapter titles for the leaf nodes these beats hang off. The bible cites locked scenes by
         // CHAPTER while Beat.Number is not chapter-local, so without this the model can't tell
@@ -93,14 +107,18 @@ public class LogicSweepService(
         // Strip tags before truncating (must materialize raw Text first — BeatMarkup.StripEntityTags
         // can't translate into the SQL Substring EF would otherwise generate for the old inline
         // truncation).
-        var disabledSnippetsRaw = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
+        // Same chapter-local SortKey tie problem as beatRows above: order by chapter position
+        // first so the Take(40) sample spreads across the whole book instead of an arbitrary
+        // tie-broken cluster from whichever chapters happen to share low SortKey values.
+        var disabledSnippetsRows = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
             .Where(bn => nodeIds.Contains(bn.NodeId) && !true && bn.Beat != null && bn.Beat!.Text != null)
-            .OrderBy(bn => bn.SortKey)
-            .Select(bn => bn.Beat!.Text)
-            .Take(40)
+            .Select(bn => new { bn.NodeId, bn.SortKey, Text = bn.Beat!.Text })
             .ToListAsync(ct);
-        var disabledSnippets = disabledSnippetsRaw
-            .Select(BeatMarkup.StripEntityTags)
+        var disabledSnippets = disabledSnippetsRows
+            .OrderBy(b => chapterOrder.TryGetValue(b.NodeId, out var idx) ? idx : int.MaxValue)
+            .ThenBy(b => b.SortKey)
+            .Take(40)
+            .Select(b => BeatMarkup.StripEntityTags(b.Text))
             .Select(t => t.Length > 200 ? t[..200] : t)
             .ToList();
 
@@ -329,12 +347,21 @@ public class LogicSweepService(
     private static async Task<string> ComputeBookFingerprintAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
     {
         var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var texts = await db.BeatNodes.AsNoTracking()
+        // Ordered chapter-then-SortKey, matching RunAsync's own fix below — raw SortKey alone
+        // is chapter-local (every chapter's beats restart near the same values), so ordering
+        // the whole book by it ties across chapters. A tie order SQL Server doesn't guarantee
+        // stable would make this fingerprint flap between two runs of unchanged content,
+        // defeating the whole point of a hash-gated "did anything change" check.
+        var chapterOrder = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var rows = await db.BeatNodes.AsNoTracking()
             .Where(bn => nodeIds.Contains(bn.NodeId) && true && bn.Beat != null
                       && bn.Beat!.Text != null && bn.Beat.Text != "")
-            .OrderBy(bn => bn.SortKey)
-            .Select(bn => bn.Beat!.Text)
+            .Select(bn => new { bn.NodeId, bn.SortKey, Text = bn.Beat!.Text })
             .ToListAsync(ct);
+        var texts = rows
+            .OrderBy(b => chapterOrder.TryGetValue(b.NodeId, out var idx) ? idx : int.MaxValue)
+            .ThenBy(b => b.SortKey)
+            .Select(b => b.Text);
         var combined = string.Join("|", texts.Select(Beat.ComputeHash));
         return Beat.ComputeHash(combined);
     }

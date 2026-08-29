@@ -226,6 +226,16 @@ public class UniverseInterchangeService
     /// excluded — they are bookkeeping for dangling relations, not real file content.</summary>
     public async Task<string> ExportAsync(string universeSlug, CancellationToken ct = default)
     {
+        var (_, json) = await ExportCoreAsync(universeSlug, ct);
+        return json;
+    }
+
+    /// <summary>Shared by <see cref="ExportAsync"/> and <see cref="ExportToFileAsync"/> so the
+    /// latter can log the entity count from the file it just built instead of re-deserializing
+    /// the whole export JSON (each entity carries its full stored Record.Json verbatim, so that
+    /// used to cost a full parse of the entire interchange file purely to print a count).</summary>
+    private async Task<(InterchangeFile File, string Json)> ExportCoreAsync(string universeSlug, CancellationToken ct)
+    {
         var slug = universeSlug.Trim().ToLowerInvariant();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
@@ -286,18 +296,33 @@ public class UniverseInterchangeService
 
         var file = new InterchangeFile { Universe = universeBlock, Entities = outEntities };
 
+        return (file, JsonSerializer.Serialize(file, JsonOpts));
+    }
+
+    /// <summary>Export <paramref name="universeSlug"/> and write it to <paramref name="path"/>,
+    /// notifying the outbox only once the file is actually on disk. Enqueuing from inside
+    /// <see cref="ExportAsync"/> itself (a prior version of this method did) fired the "fresh
+    /// snapshot available" notification before the caller's own file write ran — a disk failure
+    /// there (bad path, permissions, full disk) still left the consumer told a snapshot existed
+    /// when it didn't. Every current caller (CLI --universe-export/-sync, the MCP export tool)
+    /// should go through this method instead of ExportAsync + a manual File.WriteAllTextAsync.</summary>
+    public async Task ExportToFileAsync(string universeSlug, string path, CancellationToken ct = default)
+    {
+        var (file, json) = await ExportCoreAsync(universeSlug, ct);
+        await File.WriteAllTextAsync(path, json, ct);
+
         if (outbox != null)
         {
             try
             {
+                var count = file.Entities.Count;
+                var slug = universeSlug.Trim().ToLowerInvariant();
                 await outbox.EnqueueAsync(slug, "interchange-export",
-                    $"Universe '{slug}' exported: {outEntities.Count} entities. Fresh snapshot available.",
+                    $"Universe '{slug}' exported: {count} entities. Fresh snapshot available.",
                     ct: ct);
             }
             catch { /* best-effort notification only */ }
         }
-
-        return JsonSerializer.Serialize(file, JsonOpts);
     }
 
     // ── Universe row ────────────────────────────────────────────────────────

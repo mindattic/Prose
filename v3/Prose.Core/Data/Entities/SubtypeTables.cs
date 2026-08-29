@@ -108,9 +108,9 @@ public class Chapter
 
     /// <summary>
     /// Serialized KnowledgeMap (information asymmetry — what each character
-    /// knows, what the reader knows, when learned). Replaces the legacy
-    /// <c>engine/data/chapters/&lt;id&gt;/knowledge.json</c> file. Owned by
-    /// <see cref="Prose.Core.Services.KnowledgeMapService"/>.
+    /// knows, what the reader knows, when learned). Legacy column: its owner
+    /// (KnowledgeMapService) was deleted 2026-08-28, superseded by the DB-backed
+    /// ReaderKnowledgeService; the column stays mapped for historical data only.
     /// </summary>
     public string? KnowledgeJson { get; set; }
 

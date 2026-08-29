@@ -31,17 +31,21 @@ public class BeatExtractionService(
     NarrativeSummaryService narrativeSummary,
     OpenThreadsService openThreads,
     BookStateLedgerService bookStateLedger,
-    ILogger<BeatExtractionService> log)
+    ILogger<BeatExtractionService> log,
+    BeatPlaceService? beatPlace = null,
+    MotifLedgerService? motifLedger = null)
 {
     private const string ReaderFactsHeader   = "=== READER-FACTS ===";
     private const string SceneSummaryHeader  = "=== SCENE-SUMMARY ===";
     private const string NewThreadsHeader    = "=== NEW-THREADS ===";
     private const string ResolvedHeader      = "=== RESOLVED-THREADS ===";
     private const string PlotEventsHeader    = "=== PLOT-EVENTS ===";
+    private const string SceneLocationHeader = "=== SCENE-LOCATION ===";
+    private const string MotifsHeader        = "=== MOTIFS ===";
 
     private static readonly string System = $"""
-        You are a story continuity editor. Read the beat of prose below ONCE and extract five
-        different kinds of structured fact from it. Output exactly five sections, in this order,
+        You are a story continuity editor. Read the beat of prose below ONCE and extract seven
+        different kinds of structured fact from it. Output exactly seven sections, in this order,
         each starting with its own header line exactly as shown, and "NONE" under a section (or
         for SCENE-SUMMARY, an empty line) if that section has nothing to report.
 
@@ -76,6 +80,19 @@ public class BeatExtractionService(
         state_key: snake_case slug, e.g. crisis:behemoth_approach
         verb: open escalate climax resolve reopen defer answer establish achieve fail abandon contain neutralize reveal confirm contest shift
         NewValue: Open Escalated Climaxed Resolved Reopened Answered Deferred Active Achieved Failed Abandoned Contained Neutralized Strained Broken Restored Hidden Revealed Confirmed Contested
+
+        {SceneLocationHeader}
+        WHERE this beat's scene takes place — the concrete physical location as the prose
+        establishes it (venue plus district/region when stated, e.g. "Doc Stash's clinic, The
+        Shelf"). Max ~10 words, named as the prose names it, never invented. One line. "NONE" if
+        genuinely indeterminate.
+
+        {MotifsHeader}
+        Up to 3 concrete, SPECIFIC recurring-image candidates in this beat — a physical object,
+        gesture, or sensory image rendered distinctly enough to recur (e.g. "the cracked
+        credstick", "rain on the skylight", "her habit of counting exits"). NOT themes, NOT
+        emotions, NOT plot events. One per line, max 8 words each, lowercase except proper nouns.
+        "NONE" if the beat has no distinct recurring-image candidate.
         """;
 
     /// <summary>
@@ -127,7 +144,7 @@ public class BeatExtractionService(
         string raw;
         try
         {
-            raw = await llm.GenerateAsync(System, user, temperature: 0.15, maxTokens: 900, model: LlmModels.Haiku, ct: ct);
+            raw = await llm.GenerateAsync(System, user, temperature: 0.15, maxTokens: 1100, model: LlmModels.Haiku, ct: ct);
         }
         catch (Exception ex)
         {
@@ -182,6 +199,30 @@ public class BeatExtractionService(
             }
         }
 
+        if (sections.TryGetValue(SceneLocationHeader, out var locationBlock) && beatPlace != null && beatId != Guid.Empty)
+        {
+            var place = locationBlock.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .FirstOrDefault();
+            if (!string.IsNullOrWhiteSpace(place) && !place.Equals("NONE", StringComparison.OrdinalIgnoreCase))
+            {
+                try { await beatPlace.PersistAsync(beatId, place, ct); }
+                catch (Exception ex) { log.LogWarning(ex, "BeatExtractionService: scene-location persist failed for beat {BeatId}", beatId); }
+            }
+        }
+
+        if (sections.TryGetValue(MotifsHeader, out var motifBlock) && motifLedger != null && beatId != Guid.Empty)
+        {
+            var motifs = motifBlock.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .Where(l => l.Length > 3 && !l.Equals("NONE", StringComparison.OrdinalIgnoreCase))
+                .Take(3)
+                .ToList();
+            if (motifs.Count > 0)
+            {
+                try { await motifLedger.PersistCandidatesAsync(nodeId, beatId, motifs, ct); }
+                catch (Exception ex) { log.LogWarning(ex, "BeatExtractionService: motif persist failed for beat {BeatId}", beatId); }
+            }
+        }
+
         if (sections.TryGetValue(PlotEventsHeader, out var plotBlock) && beatId != Guid.Empty)
         {
             var lines = plotBlock.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
@@ -196,12 +237,12 @@ public class BeatExtractionService(
         }
     }
 
-    /// <summary>Splits the model's response on the five known header lines. Tolerant of a
+    /// <summary>Splits the model's response on the seven known header lines. Tolerant of a
     /// missing section (older/degraded response) — callers TryGetValue and skip what's absent
     /// rather than failing the whole extraction over one missing header.</summary>
     private static Dictionary<string, string> SplitSections(string raw)
     {
-        var headers = new[] { ReaderFactsHeader, SceneSummaryHeader, NewThreadsHeader, ResolvedHeader, PlotEventsHeader };
+        var headers = new[] { ReaderFactsHeader, SceneSummaryHeader, NewThreadsHeader, ResolvedHeader, PlotEventsHeader, SceneLocationHeader, MotifsHeader };
         var result = new Dictionary<string, string>();
         var positions = headers
             .Select(h => (Header: h, Index: raw.IndexOf(h, StringComparison.Ordinal)))

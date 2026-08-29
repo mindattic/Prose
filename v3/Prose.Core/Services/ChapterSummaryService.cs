@@ -83,11 +83,7 @@ public class ChapterSummaryService(
 
     private async Task<string> SummarizeAsync(string prose, CancellationToken ct)
     {
-        var system = """
-            You are a story editor. Compress the following chapter into exactly 3-4 sentences.
-            Capture: what happened, to whom, what changed emotionally/physically, and what tension remains unresolved.
-            Be specific — names, consequences, wounds, discoveries. Do NOT editorialize. Just the facts.
-            """;
+        var system = StorySummaryPrompt.Build("chapter");
         return (await llm.GenerateAsync(system, prose, temperature: 0.3, maxTokens: 300, ct: ct)).Trim();
     }
 }

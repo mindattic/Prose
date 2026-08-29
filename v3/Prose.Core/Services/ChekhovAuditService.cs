@@ -166,8 +166,19 @@ public class ChekhovAuditService(
             // can misremember across a 4096-token pass over 30+ beats. Key it by the same
             // "Beat N" label used in the extraction prompt so a mis-echoed sort_key falls back
             // to the real, deterministic beat order instead of silently trusting the model's arithmetic.
+            //
+            // BUG FIX 2 (2026-08-28): the "real" value plugged in here used to be the beat's raw
+            // BeatNodes.SortKey — but that value is only comparable WITHIN one chapter (every
+            // chapter's beats restart near the same values, same bug class fixed the same day in
+            // LogicSweepService.RunAsync). `beats` here is already `GetOrderedBeatsAsync`'s output,
+            // i.e. true book-wide reading order — so its own index `i` is the correct, globally
+            // monotonic sort key. Using the raw SortKey instead meant a prop sighted in chapter 1
+            // at (chapter-local) SortKey 200 and again in chapter 5 at SortKey 150 clustered with
+            // the chapter-5 sighting sorted BEFORE the chapter-1 one, feeding VerdictAsync a
+            // scrambled "setup → payoff" order for exactly the cross-chapter recurring props this
+            // audit exists to check.
             var beatIndex = beats
-                .Select((b, i) => (Label: $"Beat {i + 1}", SortKey: (float)b.SortKey))
+                .Select((b, i) => (Label: $"Beat {i + 1}", SortKey: (float)i))
                 .ToDictionary(x => x.Label, x => x.SortKey);
 
             var results = new List<ChekhovSighting>();
@@ -284,6 +295,9 @@ public class ChekhovAuditService(
 
 // ── Report types ──────────────────────────────────────────────────────────────
 
+/// <summary>SortKey is this sighting's beat's global sequential position in the book's true
+/// reading order (chapter 1 through the end) — NOT the raw, chapter-local BeatNodes.SortKey
+/// value. See the "BUG FIX 2" comment in ParseSightings for why.</summary>
 public record ChekhovSighting(string BeatLabel, float SortKey, string PropName, string PropType, string Context);
 
 public record ChekhovFinding(

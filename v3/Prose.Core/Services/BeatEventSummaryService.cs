@@ -344,7 +344,7 @@ Output STRICT JSON, no fences, no commentary:
         var results = new List<(Guid, string)>();
         try
         {
-            using var doc = JsonDocument.Parse(StripFences(raw));
+            using var doc = JsonDocument.Parse(JsonDefaults.StripCodeFences(raw));
             if (!doc.RootElement.TryGetProperty("items", out var arr)) return results;
 
             foreach (var el in arr.EnumerateArray())
@@ -368,17 +368,5 @@ Output STRICT JSON, no fences, no commentary:
             // Malformed JSON entirely — return whatever (nothing) was parsed so far.
         }
         return results;
-    }
-
-    private static string StripFences(string s)
-    {
-        s = s.Trim();
-        if (s.StartsWith("```"))
-        {
-            int nl = s.IndexOf('\n');
-            if (nl >= 0) s = s[(nl + 1)..];
-            if (s.EndsWith("```")) s = s[..^3];
-        }
-        return s.Trim();
     }
 }

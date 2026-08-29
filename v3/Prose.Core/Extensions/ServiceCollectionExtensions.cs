@@ -224,9 +224,6 @@ public static class ServiceCollectionExtensions
         // test-fixture ctor and throws "ambiguous constructors".
         services.AddSingleton(sp => new ToneBibleRepository(Db(sp)));
 
-        // Daily trivia — pre-generates 100 facts from canon data, cached to disk
-        services.AddSingleton<TriviaService>();
-
         // Auto-register all directory repos as IExportableRepository for discovery.
         // Each type is captured per-iteration so the lambda closes over the correct value.
         foreach (var exportableType in new[]
@@ -459,7 +456,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AskService>();
         services.AddSingleton<SceneContextBuilder>();
         services.AddSingleton<ConsequenceService>();
-        services.AddSingleton<AmbientAnomalyService>();
         services.AddSingleton<NarrativeSummaryService>();
         services.AddSingleton<ExportService>();
         services.AddSingleton<HtmlExportService>();
@@ -522,7 +518,6 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<MindAttic.Legion.LlmVotingService>(),
             sp.GetRequiredService<DatabaseService>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<BookOutlineService>>()));
-        services.AddSingleton<ConversationalWriterService>();
         services.AddSingleton<LastPromptStore>();
         // Graph builds from canon on first access. With the SQL cutover, freshness
         // is driven by Records.UpdatedAt — the IDbContextFactory ctor receives the
@@ -717,15 +712,6 @@ public static class ServiceCollectionExtensions
         // Canon validation — checks generated text against graph for contradictions
         services.AddSingleton<ValidationService>();
 
-        // Thematic index — tag-based cross-repo retrieval for story generation.
-        // RebuildIndex is gated inside Get* methods on the `built` flag, so the
-        // first query builds lazily. Skipping the factory rebuild trims ~5-15 s
-        // off cold-start (this one touches 10 repos via GetAll()).
-        services.AddSingleton<ThematicIndexService>();
-
-        // Crew assessment — grades team capability against contract requirements
-        services.AddSingleton<CrewAssessmentService>();
-
         // Graph health analysis — orphan detection, bad node flagging, and (when a DB
         // factory is available) prose-usage tagging: most orphans are intentional flavor
         // texture, not bugs — only entities that actually appear in shipped prose
@@ -737,11 +723,13 @@ public static class ServiceCollectionExtensions
         // Character behavior prediction — psychological modeling
         services.AddSingleton<BehaviorPredictionService>();
 
-        // Narrative intelligence — story model layer
-        services.AddSingleton<StoryStateService>();
+        // Narrative intelligence — story model layer. 2026-08-28: StoryStateService,
+        // KnowledgeMapService (and TriviaService, CrewAssessmentService, ThematicIndexService,
+        // ConversationalWriterService above) deleted — legacy projectId-keyed dead code with
+        // zero live callers; ReaderKnowledgeService is the DB-backed successor for
+        // dramatic-irony bookkeeping.
         services.AddSingleton<EventLogService>();
         services.AddSingleton<OutlineService>();
-        services.AddSingleton<KnowledgeMapService>();
 
         // Universal facts — world mechanics / vocabulary injected into every generation prompt
         services.AddSingleton<UniversalFactsService>();
@@ -834,21 +822,15 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<NavigationService>();
         services.AddSingleton<DynamicPlaceGenerator>();
 
-        // Freelancer story systems
-        services.AddSingleton<ContractGenerator>();
+        // Freelancer story systems. 2026-08-28: ContractGenerator, RandomEncounterService,
+        // ReputationTracker, and ConsequenceEngine deleted — all four were leftovers of the
+        // removed --write-story contract/gig loop with zero live callers.
         services.AddSingleton(sp => new NamePoolService(
             sp.GetRequiredService<IPathProvider>(),
             sp.GetRequiredService<SettingsKvStore>(),
             sp.GetRequiredService<IDatabaseService>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<NamePoolService>>()));
         services.AddSingleton<NpcGenerator>();
-        services.AddSingleton<RandomEncounterService>();
-        services.AddSingleton(sp => new ReputationTracker(
-            sp.GetRequiredService<SettingsKvStore>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ReputationTracker>>()));
-        services.AddSingleton(sp => new ConsequenceEngine(
-            sp.GetRequiredService<SettingsKvStore>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<ConsequenceEngine>>()));
 
         // Milestone 2 story engine services
         services.AddSingleton<DialogueService>();
@@ -1214,6 +1196,11 @@ public static class ServiceCollectionExtensions
         // Consolidates ReaderKnowledgeService/NarrativeSummaryService/OpenThreadsService/
         // BookStateLedgerService's post-write extraction into one call — RFC 0009 §9.4 "item 1".
         services.AddSingleton<BeatExtractionService>();
+        services.AddSingleton<BeatPlaceService>();
+        services.AddSingleton<RepetitionLintService>();
+        services.AddSingleton<MotifLedgerService>();
+        services.AddSingleton<PovVoiceAuditService>();
+        services.AddSingleton<ChapterHookService>();
         services.AddSingleton<PremiseToOutlineService>();
         services.AddSingleton<OutlineAdherenceService>();
         services.AddSingleton<NarrativeForkService>();

@@ -57,8 +57,7 @@ public class UniverseInterchangeTools
     {
         try
         {
-            var json = await interchange.ExportAsync(slug);
-            await File.WriteAllTextAsync(path, json);
+            await interchange.ExportToFileAsync(slug, path);
             return JsonSerializer.Serialize(new { ok = true, path }, JsonOpts);
         }
         catch (InvalidOperationException ex)

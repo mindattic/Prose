@@ -98,20 +98,31 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
         // Recurses past any nested Collection (2026-08-09 fix).
         var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
-        // Load beats for this node in book order (via BeatNode join to Beat)
-        var beatRows = await db.BeatNodes
-            .AsNoTracking()
-            .Where(nb => beatNodeIds.Contains(nb.NodeId) && true)
-            .OrderBy(nb => nb.SortKey)
-            .Include(nb => nb.Beat)
-            .Select(nb => new
-            {
-                nb.BeatId,
-                nb.SortKey,
-                Description = nb.Beat != null ? nb.Beat.Description : null,
-                Location = (string?)null, // Beat has no Location field; use node default
-            })
-            .ToListAsync(ct);
+        // BUG FIX: beatNodeIds spans every chapter, but BeatNodes.SortKey is only comparable
+        // WITHIN one chapter (each chapter's own beats restart near the same values) — ordering
+        // this whole-book query by raw SortKey alone (as it used to) ties/interleaves chapters
+        // instead of reading chapter 1 through the end before chapter 2, which then fed a wrong
+        // sequential index `i` into StoryScienceService.ClassifyArcStage below for every beat in
+        // the chart (same bug class as LogicSweepService.RunAsync). beatNodeIds is already in
+        // true reading order (GetLeafDescendantIdsAsync is depth-first, SortKey-ordered per
+        // level) — order by each beat's chapter position first, then its own SortKey.
+        var chapterOrder = beatNodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var beatRows = (await db.BeatNodes
+                .AsNoTracking()
+                .Where(nb => beatNodeIds.Contains(nb.NodeId) && true)
+                .Include(nb => nb.Beat)
+                .Select(nb => new
+                {
+                    nb.BeatId,
+                    nb.NodeId,
+                    nb.SortKey,
+                    Description = nb.Beat != null ? nb.Beat.Description : null,
+                    Location = (string?)null, // Beat has no Location field; use node default
+                })
+                .ToListAsync(ct))
+            .OrderBy(nb => chapterOrder.TryGetValue(nb.NodeId, out var idx) ? idx : int.MaxValue)
+            .ThenBy(nb => nb.SortKey)
+            .ToList();
 
         // Collect all beat IDs for this node to query EntityStateEvents
         var beatIds = beatRows.Select(b => b.BeatId).ToHashSet();

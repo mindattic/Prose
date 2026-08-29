@@ -6,22 +6,28 @@ namespace Prose.Core.Services;
 /// Assembles rich ambient context for scene generation — sensory profiles,
 /// weather, nearby anomalies, local wildlife, ghost buildings.
 /// Injected into every generation prompt so scenes feel like the world.
+///
+/// 2026-08-28: absorbed AmbientAnomalyService. Both services auto-fired on the same
+/// Location gate and independently pulled anomaly-tagged worldbuilding docs into the same
+/// prompt under two different labels ("AMBIENT STRANGENESS" here + "AMBIENT ANOMALIES"
+/// there), from overlapping tag pools — one beat could get the same doc injected twice as
+/// two apparently different anomalies. The anomaly layer now lives only here: one cached
+/// pool over the full tag set, one probability gate, one labeled section per beat.
 /// </summary>
 public class SceneContextBuilder
 {
-    private readonly DatabaseService db;
-    private readonly UniverseGraphService graph;
     private readonly WorldbuildingDocRepository docRepo;
     private readonly DistrictRepository districtRepo;
 
-    public SceneContextBuilder(
-        DatabaseService db, UniverseGraphService graph,
-        WorldbuildingDocRepository docRepo, DistrictRepository districtRepo)
+    // Thread-safe lazy cache — populated once on first access from any circuit thread.
+    private readonly Lazy<List<(string title, string snippet, List<string> tags)>> anomalyCache;
+
+    public SceneContextBuilder(WorldbuildingDocRepository docRepo, DistrictRepository districtRepo)
     {
-        this.db = db;
-        this.graph = graph;
         this.docRepo = docRepo;
         this.districtRepo = districtRepo;
+        this.anomalyCache = new Lazy<List<(string, string, List<string>)>>(
+            BuildAnomalyCache, LazyThreadSafetyMode.ExecutionAndPublication);
     }
 
     /// <summary>Build a sensory/ambient context packet for a scene location.</summary>
@@ -49,13 +55,11 @@ public class SceneContextBuilder
         if (!string.IsNullOrWhiteSpace(weather))
             parts.Add($"WEATHER: {weather}");
 
-        // Nearby anomalies (from the New Weird layer)
-        var anomalies = FindDocsByTags(["anomaly", "inexplicable"]);
-        if (anomalies.Count > 0)
-        {
-            var anomaly = anomalies[Random.Shared.Next(anomalies.Count)];
-            parts.Add($"AMBIENT STRANGENESS (weave subtly, don't explain): {Truncate(anomaly.Title, 100)} — {Truncate(anomaly.Body.Length > 0 ? anomaly.Body : anomaly.Title, 150)}");
-        }
+        // Nearby anomalies — the New Weird layer bleeding into the scene without being a plot
+        // point. Location-relevant anomalies preferred; universal pool as fallback; probability
+        // gate so the weird stays background texture, not a per-beat fixture.
+        foreach (var hint in GetAmbientAnomalyHints(location))
+            parts.Add(hint);
 
         // Urban wildlife
         var wildlife = FindDocsByTags(["urban_wildlife"]);
@@ -68,6 +72,56 @@ public class SceneContextBuilder
         return parts.Count > 0
             ? "AMBIENT WORLD CONTEXT (use to ground the scene in sensory reality):\n" + string.Join("\n", parts)
             : "";
+    }
+
+    /// <summary>Get 0-2 ambient anomaly hints for a scene location (ex-AmbientAnomalyService).</summary>
+    internal List<string> GetAmbientAnomalyHints(string? location, int maxHints = 2)
+    {
+        var cache = anomalyCache.Value;
+        if (cache.Count == 0) return [];
+
+        if (!RandomGatePasses()) return [];
+
+        var locationLower = (location ?? "").ToLowerInvariant();
+
+        // Prefer location-relevant anomalies, fall back to universal ones
+        var relevant = cache
+            .Where(a => a.tags.Any(t => locationLower.Contains(t)))
+            .ToList();
+
+        var pool = relevant.Count >= 1 ? relevant : cache;
+
+        // Pick 1-2 random anomalies
+        var count = Random.Shared.Next(1, Math.Min(maxHints + 1, pool.Count + 1));
+        var selected = pool.OrderBy(_ => Random.Shared.Next()).Take(count);
+
+        return selected
+            .Select(a => $"AMBIENT STRANGENESS (weave subtly, do NOT explain or make it a plot point): {a.snippet}")
+            .ToList();
+    }
+
+    /// <summary>60% chance any anomaly texture appears in a scene. Virtual for test override.</summary>
+    protected virtual bool RandomGatePasses() => Random.Shared.NextDouble() <= 0.6;
+
+    private List<(string title, string snippet, List<string> tags)> BuildAnomalyCache()
+    {
+        return docRepo.GetAll()
+            .Where(d => d.Tags.Any(t =>
+                t.Contains("anomaly") || t.Contains("inexplicable") || t.Contains("new_weird") ||
+                t.Contains("ghost_building") || t.Contains("lost_block")))
+            .Select(d =>
+            {
+                var body = d.Body.Length > 0 ? d.Body : d.Title;
+                // Extract a 1-2 sentence snippet for the prompt
+                var sentences = body.Split(new[] { ". ", ".\n" }, StringSplitOptions.RemoveEmptyEntries);
+                var snippet = sentences.Length > 1
+                    ? sentences[0] + ". " + sentences[1] + "."
+                    : sentences.FirstOrDefault() ?? d.Title;
+                if (snippet.Length > 200) snippet = snippet[..200] + "...";
+
+                return (d.Title, snippet, d.Tags.Select(t => t.ToLowerInvariant()).ToList());
+            })
+            .ToList();
     }
 
     private DistrictData? ResolveDistrict(string? location)

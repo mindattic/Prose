@@ -210,31 +210,6 @@ public class NpcGenerator
         return "Unknown Operator";
     }
 
-    /// <summary>Generate multiple NPCs for a contract (client, target, complication NPC).</summary>
-    public async Task<List<string>> GenerateContractNpcsAsync(Contract contract, CancellationToken ct = default)
-    {
-        var names = new List<string>();
-
-        // Generate client if not an existing character
-        if (!string.IsNullOrWhiteSpace(contract.ClientName) && db.FindCharacter(contract.ClientName) == null)
-        {
-            var name = await GenerateAndSaveAsync(
-                $"Contract client — {contract.ClientName}",
-                $"Hiring a freelancer for a {contract.JobType} job. Motivation: {contract.ClientMotivation}",
-                contract.TargetLocation, contract.ClientAffiliation, ct);
-            names.Add(name);
-        }
-
-        // Generate secondary antagonist if needed
-        if (!string.IsNullOrWhiteSpace(contract.SecondaryAntagonist) && db.FindCharacter(contract.SecondaryAntagonist) == null)
-        {
-            var name = await GenerateAndSaveAsync(
-                $"Antagonist — {contract.SecondaryAntagonist}",
-                $"Opposes the freelancer during a {contract.JobType} job. {contract.Complication}",
-                contract.TargetLocation, null, ct);
-            names.Add(name);
-        }
-
-        return names;
-    }
+    // GenerateContractNpcsAsync removed 2026-08-28 with ContractGenerator's Contract type —
+    // zero callers since the --write-story contract loop was removed.
 }

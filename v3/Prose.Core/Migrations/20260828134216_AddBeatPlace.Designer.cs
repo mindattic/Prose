@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prose.Core.Data;
 
@@ -11,9 +12,11 @@ using Prose.Core.Data;
 namespace Prose.Core.Migrations
 {
     [DbContext(typeof(ProseDbContext))]
-    partial class ProseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260828134216_AddBeatPlace")]
+    partial class AddBeatPlace
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1615,47 +1618,6 @@ namespace Prose.Core.Migrations
                         .IsUnique();
 
                     b.ToTable("BookChapterOrder");
-                });
-
-            modelBuilder.Entity("Prose.Core.Data.Entities.BookMotif", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Display")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<Guid?>("FirstBeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("LastBeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("MotifKey")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<Guid>("NodeId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("Occurrences")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NodeId", "MotifKey");
-
-                    b.ToTable("BookMotifs");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BookPlotEvent", b =>
@@ -11652,17 +11614,6 @@ namespace Prose.Core.Migrations
                     b.Navigation("Book");
 
                     b.Navigation("Chapter");
-                });
-
-            modelBuilder.Entity("Prose.Core.Data.Entities.BookMotif", b =>
-                {
-                    b.HasOne("Prose.Core.Data.Entities.Node", "Node")
-                        .WithMany()
-                        .HasForeignKey("NodeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Node");
                 });
 
             modelBuilder.Entity("Prose.Core.Data.Entities.BookPlotEvent", b =>

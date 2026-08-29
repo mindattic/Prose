@@ -980,9 +980,26 @@ Be honest and use the whole scale.";
         if (reviews.Count == 0) return new List<EditProposal>();
 
         // Recurses past any nested Collection (2026-08-09 fix).
+        // BUG FIX (2026-08-28): reviewSearchIds spans every chapter, but BeatNodes.SortKey is only
+        // comparable WITHIN one chapter (every chapter's own beats restart near the same values) —
+        // ordering this whole-book query by raw SortKey alone (as it used to) ties/interleaves
+        // chapters instead of matching `exporter.ExportAsync`'s numbering above, which the comment
+        // below depends on ("positional 1..N matches the numbered export the readers saw"). A
+        // mismatch here doesn't just misorder output — it silently attaches an edit proposal meant
+        // for one beat onto a DIFFERENT beat elsewhere in the book (same bug class fixed the same
+        // day in LogicSweepService.RunAsync). reviewSearchIds is already in true reading order
+        // (GetLeafDescendantIdsAsync is depth-first, SortKey-ordered per level) — order by each
+        // beat's chapter position first, then its own SortKey.
         var reviewSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var ordered = await db.BeatNodes.Where(sb => reviewSearchIds.Contains(sb.NodeId) && true)
-            .OrderBy(sb => sb.SortKey).Include(sb => sb.Beat).Select(sb => sb.Beat!).ToListAsync(ct);
+        var reviewChapterOrder = reviewSearchIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var ordered = (await db.BeatNodes.Where(sb => reviewSearchIds.Contains(sb.NodeId) && true)
+                .Include(sb => sb.Beat)
+                .Select(sb => new { sb.NodeId, sb.SortKey, Beat = sb.Beat! })
+                .ToListAsync(ct))
+            .OrderBy(x => reviewChapterOrder.TryGetValue(x.NodeId, out var idx) ? idx : int.MaxValue)
+            .ThenBy(x => x.SortKey)
+            .Select(x => x.Beat)
+            .ToList();
         int n = ordered.Count;
         if (n == 0) return new List<EditProposal>();
 

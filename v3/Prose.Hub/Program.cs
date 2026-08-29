@@ -91,6 +91,18 @@ builder.WebHost.UseUrls("http://127.0.0.1:5900");
 // the same pipeline: one for live-tail, one for durable/searchable history.
 builder.Logging.AddSerilog(hubSerilogLogger, dispose: true);
 
+// Bug fix (2026-08-28): the default Console logger provider (added implicitly by
+// WebApplication.CreateBuilder) colors each "info:"/"warn:" level tag per LogLevel and calls
+// Console.ResetColor() afterward. ResetColor() reverts to the console's ORIGINAL attribute pair
+// captured the first time any Console.*Color setter ran in this process - i.e. the terminal's
+// real default (whatever it was before line 39's Console.BackgroundColor = Yellow) - not to our
+// custom yellow/black scheme. Net effect: every logged line's level tag, and everything the
+// framework writes right after it, snapped back to plain default colors instead of staying
+// yellow/black. Disabling the formatter's own color behavior stops it from touching the console
+// colors at all, so our scheme (set once, above) simply stays in effect for the whole process.
+builder.Services.Configure<Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions>(
+    options => options.ColorBehavior = Microsoft.Extensions.Logging.Console.LoggerColorBehavior.Disabled);
+
 // Stage C completion: the 9 CLI commands that used Program.cs's BuildServicesWithVault(AndAuth)
 // builders (rather than plain BuildCoreServices) need Vault-loaded config and, for
 // --reset-password specifically, the full MindAttic.Authentication registration - neither was
@@ -477,7 +489,8 @@ app.MapPost("/api/cli-invoke", async (CliDispatch.InvokeRequest req, IServicePro
 // commands) - see CostGateDispatch.cs for the two-round-trip protocol; the estimator/ledger
 // are Hub-resident, only the actual terminal y/n prompt stays client-side.
 app.MapPost("/api/cli-cost-gate", async (CostGateDispatch.CostGateRequest req, IServiceProvider sp) =>
-    await CostGateDispatch.InvokeAsync(req, sp));
+    await CostGateDispatch.InvokeAsync(req, sp))
+    .AddEndpointFilter<HubApiKeyFilter>();
 
 // Phase 2 migration: generic MCP tool dispatch. Prose.Mcp's [McpServerTool] methods forward
 // here instead of running their own logic in-process - see ToolDispatch.cs for why this is a
@@ -515,7 +528,8 @@ app.MapPost("/api/edges", async (EdgeRequest req, UniverseGraphService graph, ID
     var refreshed = graph.EnsureFresh();
     if (uid != null) uc.SetFlowUniverse(null);
     return Results.Ok(new { ok = true, graphRefreshed = refreshed });
-});
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
 
 // RFC 0007 "Universe Interchange" §5 — game-side push: ExperimentEve's `npm run universe --
 // push` posts its interchange JSON body here. Mirrors the read endpoints' {slug}-in-route

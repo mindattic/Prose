@@ -119,6 +119,17 @@ public class SceneContextAssembler(
     public async Task PersistPovAsync(Guid beatId, SceneContext ctx, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // Defer to any existing POV row (bible POV-map backfills, Source='pov-map', or a prior
+        // auto-write). The MERGE below keys on (BeatId, EntityId), so writing the heuristic pick
+        // alongside a bible-authored row for a DIFFERENT entity would leave the beat with TWO
+        // 'pov' rows — and GetPovEntityIdAsync's SELECT TOP 1 (no ORDER BY) would then pick
+        // between them nondeterministically. The heuristic is a fallback, never an override.
+        var existing = await db.Database
+            .SqlQuery<int>($"SELECT COUNT(*) AS [Value] FROM [dbo].[BeatEntityPresence] WHERE BeatId = {beatId} AND PresenceType = 'pov'")
+            .ToListAsync(ct);
+        if (existing.Count > 0 && existing[0] > 0) return;
+
         var characters = await FilterToBeatUniverseAsync(db, beatId,
             ctx.Roster.Where(r => string.Equals(r.EntityType, "character", StringComparison.OrdinalIgnoreCase)).ToList(), ct);
         var pov = characters.OrderByDescending(r => r.Score).FirstOrDefault();
@@ -681,11 +692,25 @@ public class SceneContextAssembler(
             // "act on established objectives/beliefs" actually needs.
             await AppendPsychologyTraitsAsync(db, sb, r.EntityId, ct);
 
-            var lines = await db.Set<CharacterSpeechPhrase>().AsNoTracking()
-                .Where(p => p.CharacterId == r.EntityId && p.Bucket == "example_lines")
-                .OrderBy(p => p.Position).Take(3).Select(p => p.Phrase).ToListAsync(ct);
+            // One query over all three speech-phrase buckets. verbal_tics/avoidances added
+            // 2026-08-28 — they previously reached the prompt only via DialogueService's
+            // duplicate voice profile (Dialogue/EmotionalClimax beats only); now the XRay
+            // block is the single canonical voice rendering on every beat.
+            var phrases = await db.Set<CharacterSpeechPhrase>().AsNoTracking()
+                .Where(p => p.CharacterId == r.EntityId &&
+                    (p.Bucket == "example_lines" || p.Bucket == "verbal_tics" || p.Bucket == "avoidances"))
+                .OrderBy(p => p.Position)
+                .Select(p => new { p.Bucket, p.Phrase })
+                .ToListAsync(ct);
+            var lines = phrases.Where(p => p.Bucket == "example_lines").Take(3).Select(p => p.Phrase).ToList();
             if (lines.Count > 0)
                 sb.AppendLine("VOICE — example lines: " + string.Join(" | ", lines.Select(l => $"\"{Clip(l, 140)}\"")));
+            var tics = phrases.Where(p => p.Bucket == "verbal_tics").Take(3).Select(p => p.Phrase).ToList();
+            if (tics.Count > 0)
+                sb.AppendLine("VOICE — verbal tics: " + string.Join("; ", tics.Select(t => Clip(t, 100))));
+            var avoidances = phrases.Where(p => p.Bucket == "avoidances").Take(3).Select(p => p.Phrase).ToList();
+            if (avoidances.Count > 0)
+                sb.AppendLine("VOICE — never says / deflects from: " + string.Join("; ", avoidances.Select(a => Clip(a, 100))));
 
             var woundBlock = await wounds.BuildPromptBlockAsync(r.EntityId, atInWorldDate: null, ct);
             if (woundBlock.Length > 0) sb.AppendLine(woundBlock);

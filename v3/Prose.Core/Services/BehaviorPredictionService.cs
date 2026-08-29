@@ -17,20 +17,21 @@ namespace Prose.Core.Services;
 public class BehaviorPredictionService
 {
     private readonly DatabaseService db;
-    private readonly StoryStateService storyState;
     private readonly EventLogService eventLog;
-    private readonly KnowledgeMapService knowledge;
     private readonly ArchetypeRepository archetypeRepo;
 
+    // 2026-08-28: StoryStateService and KnowledgeMapService dependencies removed. Both were
+    // legacy, projectId-keyed, in-memory stores that the only live caller (the MCP
+    // predict_behavior tool, which passes projectId: "") could never populate — every read
+    // through them returned the empty default. Emotional state now defaults to neutral and
+    // dramatic-irony bookkeeping belongs to ReaderKnowledgeService (DB-backed, nodeId-keyed).
     public BehaviorPredictionService(
-        DatabaseService db, StoryStateService storyState,
-        EventLogService eventLog, KnowledgeMapService knowledge,
+        DatabaseService db,
+        EventLogService eventLog,
         ArchetypeRepository archetypeRepo)
     {
         this.db = db;
-        this.storyState = storyState;
         this.eventLog = eventLog;
-        this.knowledge = knowledge;
         this.archetypeRepo = archetypeRepo;
     }
 
@@ -45,8 +46,6 @@ public class BehaviorPredictionService
         var character = db.FindCharacter(characterName);
         if (character == null) return new CharacterBehaviorPrediction { CharacterName = characterName };
 
-        var state = storyState.GetState(projectId);
-        var charState = state.Characters.GetValueOrDefault(characterName);
         var events = eventLog.GetEvents(projectId);
         var recentCharEvents = events.Where(e =>
             e.Participants.Any(p => p.Equals(characterName, StringComparison.OrdinalIgnoreCase)))
@@ -55,8 +54,8 @@ public class BehaviorPredictionService
         var prediction = new CharacterBehaviorPrediction
         {
             CharacterName = characterName,
-            CurrentEmotionalState = charState?.EmotionalState ?? "neutral",
-            CurrentLocation = charState?.Location ?? sceneLocation,
+            CurrentEmotionalState = "neutral",
+            CurrentLocation = sceneLocation,
         };
 
         // What's foregrounded in their psychology right now (no longer a 6-archetype facet —
@@ -67,13 +66,13 @@ public class BehaviorPredictionService
         prediction.LikelyActions = PredictActions(character, tensionLevel, otherCharactersPresent, beatGoal, recentCharEvents);
 
         // Predict dialogue style
-        prediction.DialogueMode = PredictDialogueMode(character, tensionLevel, charState?.EmotionalState);
+        prediction.DialogueMode = PredictDialogueMode(character, tensionLevel, emotionalState: null);
 
         // Predict what they're hiding
-        prediction.Concealing = PredictConcealment(character, otherCharactersPresent, projectId);
+        prediction.Concealing = PredictConcealment(character);
 
         // Predict physical behavior / body language
-        prediction.PhysicalBehavior = PredictPhysicalBehavior(character, tensionLevel, charState?.EmotionalState);
+        prediction.PhysicalBehavior = PredictPhysicalBehavior(character, tensionLevel, emotionalState: null);
 
         // Predict relationship dynamics with people in the room
         prediction.RelationshipDynamics = PredictRelationshipDynamics(character, otherCharactersPresent);
@@ -225,57 +224,10 @@ public class BehaviorPredictionService
         return lines.Count > 0 ? string.Join("\n    ", lines) : "";
     }
 
-    /// <summary>Build a prompt-ready text block from predictions for all characters in a scene.</summary>
-    public string BuildBehaviorContext(
-        string projectId, List<string> charactersInScene, string sceneLocation,
-        string beatGoal, int tensionLevel)
-    {
-        var predictions = charactersInScene
-            .Select(name => PredictBehavior(name, projectId, sceneLocation, charactersInScene, beatGoal, tensionLevel))
-            .Where(p => p.LikelyActions.Count > 0 || p.DialogueMode.Length > 0)
-            .ToList();
-
-        if (predictions.Count == 0) return "";
-
-        var lines = new List<string> { "CHARACTER BEHAVIOR PREDICTIONS (use to guide authentic responses):" };
-
-        foreach (var p in predictions)
-        {
-            lines.Add($"\n  {p.CharacterName.ToUpperInvariant()} [{p.DominantState}] — feeling {p.CurrentEmotionalState}:");
-
-            if (p.LikelyActions.Count > 0)
-                lines.Add($"    LIKELY TO: {string.Join("; ", p.LikelyActions)}");
-
-            if (p.DialogueMode.Length > 0)
-                lines.Add($"    SPEAKING: {p.DialogueMode}");
-
-            if (p.PhysicalBehavior.Count > 0)
-                lines.Add($"    BODY: {string.Join("; ", p.PhysicalBehavior)}");
-
-            if (p.Concealing.Count > 0)
-                lines.Add($"    HIDING: {string.Join("; ", p.Concealing)} — show through behavior, NOT exposition");
-
-            if (p.RelationshipDynamics.Count > 0)
-                lines.Add($"    DYNAMICS: {string.Join("; ", p.RelationshipDynamics)}");
-
-            if (p.StressResponse.Length > 0)
-                lines.Add($"    STRESS: {p.StressResponse}");
-
-            if (p.ArchetypeInfluences.Count > 0)
-                lines.Add($"    ARCHETYPES: {string.Join("; ", p.ArchetypeInfluences)}");
-
-            if (p.Belongings.Count > 0)
-                lines.Add($"    HAS: {string.Join("; ", p.Belongings)}");
-
-            if (p.StatModifiers.Length > 0)
-                lines.Add($"    STATS: {p.StatModifiers}");
-
-            if (p.NearBreakingPoint)
-                lines.Add("    WARNING: Near breaking point — behavior may become erratic or uncharacteristic");
-        }
-
-        return string.Join("\n", lines);
-    }
+    // BuildBehaviorContext (multi-character prompt block) deleted 2026-08-28 — zero callers.
+    // The live scene-level "psychologies collide" mechanism is SceneCollisionService; adding a
+    // second advisory block for the same question is the over-fragmentation its own doc
+    // comment warns about.
 
     /// <summary>
     /// Returns a one-word label hinting at what's foregrounded for this character at this tension.
@@ -380,7 +332,7 @@ public class BehaviorPredictionService
         return string.Join("; ", parts);
     }
 
-    private List<string> PredictConcealment(CharacterData character, List<string> others, string projectId)
+    private static List<string> PredictConcealment(CharacterData character)
     {
         var hiding = new List<string>();
 
@@ -391,15 +343,6 @@ public class BehaviorPredictionService
         // Blind spots — things they can't see about themselves
         if (character.Psychology.BlindSpots.Count > 0)
             hiding.Add($"unaware of: {character.Psychology.BlindSpots[0]}");
-
-        // Knowledge asymmetry — check if they know things others don't
-        foreach (var other in others)
-        {
-            if (other.Equals(character.Name, StringComparison.OrdinalIgnoreCase)) continue;
-            var irony = knowledge.GetDramaticIrony(projectId, other);
-            if (irony.Any(i => i.Contains(character.Name, StringComparison.OrdinalIgnoreCase)))
-                hiding.Add($"knows something about {other} that {other} doesn't know they know");
-        }
 
         return hiding;
     }

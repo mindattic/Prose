@@ -113,6 +113,24 @@ public class Beat
     /// mark the beat Stale or invalidate audio (see BeatEventSummaryService).</summary>
     public string? EventSummaryHash { get; set; }
 
+    /// <summary>Where this beat's scene takes place, as free text (e.g. "Doc Stash's clinic,
+    /// The Shelf"). Written by the scene-location slice of BeatExtractionService's consolidated
+    /// post-write call, or by the `prose --extract-beat-locations` backfill; may also be
+    /// authored directly. ProseWriterRouter uses the nearest prior beat's value as
+    /// BeatContext.Location (scene-continuity assumption) when the caller doesn't set one,
+    /// before falling back to the book's DefaultLocation. Null = not yet extracted.</summary>
+    public string? PlaceName { get; set; }
+
+    /// <summary>The place Entity this beat's <see cref="PlaceName"/> resolved to (matched
+    /// against Places.Name / PlaceAliases.Value in the beat's universe). Soft reference — no FK
+    /// constraint, same as BeatEntityPresence. Null = unresolved or not a canon place.</summary>
+    public Guid? PlaceEntityId { get; set; }
+
+    /// <summary>TextHash value when PlaceName was last extracted — hash gate, exactly the
+    /// <see cref="EventSummaryHash"/> pattern: equal to current TextHash = skip (free);
+    /// different = prose changed, re-extract. Never marks the beat Stale.</summary>
+    public string? PlaceExtractedFromHash { get; set; }
+
     /// <summary>What is happening beneath the surface of this beat —
     /// foreshadowing, unspoken motivations, dramatic irony, hidden agendas.
     /// Visible to the prose writer LLM but never printed; it informs the

@@ -156,6 +156,9 @@ public class BeatGeneratorService
         var openThreadsBlock = !string.IsNullOrWhiteSpace(context.OpenThreadsContext)
             ? $"\n\n{context.OpenThreadsContext}"
             : "";
+        var motifBlock = !string.IsNullOrWhiteSpace(context.MotifContext)
+            ? $"\n\n{context.MotifContext}"
+            : "";
         var continuityBlock = !string.IsNullOrWhiteSpace(context.ContinuityContext)
             ? $"\n\n{context.ContinuityContext}"
             : "";
@@ -204,7 +207,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{readabilityBlock}{readerProxyBlock}{continuityViolationBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{readabilityBlock}{readerProxyBlock}{continuityViolationBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{motifBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -984,12 +987,13 @@ public record BeatContext
 
     // ── New ProseWriterRouter enrichment fields (SS-A29) ─────────────────────
 
-    /// <summary>Character state constraints from ConsequenceService + ConsequenceEngine.
-    /// Gear, cyberware, status, and cross-book persistent consequences — hard constraints injected before generation.</summary>
+    /// <summary>Character state constraints from ConsequenceService.
+    /// Gear, cyberware, status — hard constraints injected before generation.</summary>
     public string ConsequenceContext { get; init; } = "";
 
-    /// <summary>Ambient anomaly texture from AmbientAnomalyService.
-    /// New Weird background detail tagged to the scene location. 60% chance gate — often empty.</summary>
+    /// <summary>Manual-injection hook for extra ambient anomaly texture. As of 2026-08-28 the
+    /// New Weird anomaly layer is folded into SceneContextBuilder (rides in LocationContext);
+    /// nothing auto-populates this field any more — callers may still set it by hand.</summary>
     public string AmbientAnomalyContext { get; init; } = "";
 
     /// <summary>Live entity state snapshot from WorldStateAtBeatService.
@@ -1013,6 +1017,11 @@ public record BeatContext
     /// the generator should address or advance at least one per beat.
     /// Empty when OpenThreadsService is not wired or no open threads exist.</summary>
     public string OpenThreadsContext { get; init; } = "";
+
+    /// <summary>"MOTIFS IN PLAY" block from MotifLedgerService — recurring images already
+    /// established in this book (2+ beat sightings). Deepen/refract, never reintroduce as new.
+    /// Empty when the ledger is not wired or no motif has recurred yet.</summary>
+    public string MotifContext { get; init; } = "";
 
     /// <summary>
     /// Arc-level plot state snapshot from BookStateLedgerService.

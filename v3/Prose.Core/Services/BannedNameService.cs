@@ -14,8 +14,12 @@ public class BannedNameService(IDbContextFactory<ProseDbContext> dbFactory)
 {
     public async Task<BannedName> AddAsync(string name, string? notes = null, CancellationToken ct = default)
     {
+        var trimmed = (name ?? "").Trim();
+        if (trimmed.Length == 0)
+            throw new ArgumentException("Banned name cannot be empty or whitespace — an empty entry " +
+                "would match \\b\\b against every non-empty value and reject all future writes.", nameof(name));
+
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var trimmed = name.Trim();
         var existing = await db.BannedNames.FirstOrDefaultAsync(
             b => b.Name.ToLower() == trimmed.ToLower(), ct);
         if (existing != null) return existing;

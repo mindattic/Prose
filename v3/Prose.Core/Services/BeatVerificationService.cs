@@ -194,12 +194,19 @@ public class BeatVerificationService
         // Recurses past any nested Collection (2026-08-09 fix).
         var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
 
-        var beatIds = await db.BeatNodes
-            .Where(bn => nodeIds.Contains(bn.NodeId) && true)
-            .OrderBy(bn => bn.SortKey)
-            .Select(bn => bn.BeatId)
+        // Chapter-position-then-SortKey, not raw SortKey alone — nodeIds spans every chapter and
+        // BeatNodes.SortKey is only comparable within one chapter (same fix as
+        // LogicSweepService.RunAsync / CheckEscalationMonotonicAsync below).
+        var chapterOrderForBeatIds = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var beatIds = (await db.BeatNodes
+                .Where(bn => nodeIds.Contains(bn.NodeId) && true)
+                .Select(bn => new { bn.BeatId, bn.NodeId, bn.SortKey })
+                .ToListAsync(ct))
+            .OrderBy(x => chapterOrderForBeatIds.TryGetValue(x.NodeId, out var idx) ? idx : int.MaxValue)
+            .ThenBy(x => x.SortKey)
+            .Select(x => x.BeatId)
             .Distinct()
-            .ToListAsync(ct);
+            .ToList();
 
         // Pre-pass: compute this book's own DeclaredPurpose cosine-similarity distribution so
         // CheckDeclaredPurposeAsync can flag outliers relative to the book's own register
@@ -254,7 +261,7 @@ public class BeatVerificationService
         }
 
         // Book-wide escalation monotonicity check
-        var escalationResults = await CheckEscalationMonotonicAsync(db, node.Id, ct);
+        var escalationResults = await CheckEscalationMonotonicAsync(db, nodeIds, ct);
         allResults.AddRange(escalationResults);
         foreach (var r in escalationResults)
             await UpsertVerificationAsync(db, r, ct);
@@ -403,22 +410,34 @@ public class BeatVerificationService
     }
 
     private static async Task<List<BeatVerificationResult>> CheckEscalationMonotonicAsync(
-        ProseDbContext db, Guid nodeId, CancellationToken ct)
+        ProseDbContext db, IReadOnlyList<Guid> nodeIds, CancellationToken ct)
     {
         var results = new List<BeatVerificationResult>();
 
-        // Load all BeatBlueprintDecisions for this node in order
-        var decisions = await db.BeatNodes
-            .Where(bn => bn.NodeId == nodeId && true)
-            .OrderBy(bn => bn.SortKey)
+        // BUG FIX: this used to filter bn.NodeId == <book node id>, but beats attach to CHAPTER
+        // nodes, never the book node itself (Book -> Chapter -> Beat, no exceptions) — so this
+        // "book-wide curve regression detection" matched zero BeatNodes rows and silently
+        // no-opped on every real multi-chapter book. Filter against the full leaf-descendant set
+        // (nodeIds, as VerifyBookAsync's caller already resolves it) instead. That set now spans
+        // multiple chapters, so — same fix as LogicSweepService.RunAsync — order by each beat's
+        // chapter position first, then its own (chapter-local) SortKey; raw SortKey alone ties
+        // across chapters since every chapter's beats restart near the same values.
+        var chapterOrder = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var decisionRows = await db.BeatNodes
+            .Where(bn => nodeIds.Contains(bn.NodeId) && true)
             .Join(db.BeatBlueprintDecisions, bn => bn.BeatId, d => d.BeatId, (bn, d) => new
             {
                 d.BeatId,
                 d.EscalationFloor,
                 bn.SortKey,
+                bn.NodeId,
             })
             .Where(x => x.EscalationFloor != null)
             .ToListAsync(ct);
+        var decisions = decisionRows
+            .OrderBy(x => chapterOrder.TryGetValue(x.NodeId, out var idx) ? idx : int.MaxValue)
+            .ThenBy(x => x.SortKey)
+            .ToList();
 
         if (decisions.Count < 2) return results;
 
