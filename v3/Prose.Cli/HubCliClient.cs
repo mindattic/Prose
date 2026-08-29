@@ -19,6 +19,10 @@ public static class HubCliClient
     // (full-battery audits, --write-story, review panels) — any of those would previously
     // throw an unhandled TaskCanceledException and crash this CLI process instead of
     // reporting a clean error. Long-running-by-design, so this is generous rather than tuned.
+    // 30 minutes proved insufficient for a FULL-tier audit (storyscope/swain/chekhov, each
+    // multi-LLM-call) on a 300+ beat book (observed: VIGL, 318 beats, still running past 30m
+    // 2026-08-29) — bumped to 2 hours, matching the skill docs' own "multi-hour" framing for
+    // this tier.
     private static readonly HttpClient Http = BuildClient();
 
     // Portable-writing-service plan, Phase 1: the Hub's sensitive endpoints (cli-invoke among
@@ -28,7 +32,7 @@ public static class HubCliClient
     // Settings.json file the Hub generated the key into at its own startup.
     private static HttpClient BuildClient()
     {
-        var client = new HttpClient { BaseAddress = new Uri(Prose.Core.Services.HubGate.DefaultBaseUrl), Timeout = TimeSpan.FromMinutes(30) };
+        var client = new HttpClient { BaseAddress = new Uri(Prose.Core.Services.HubGate.DefaultBaseUrl), Timeout = TimeSpan.FromHours(2) };
         var key = new Prose.Core.Services.SettingsService().HubApiKey;
         if (!string.IsNullOrEmpty(key)) client.DefaultRequestHeaders.Add("X-Prose-Key", key);
         return client;
