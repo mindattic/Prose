@@ -7,14 +7,15 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --write-outline --slug &lt;nodeSlug&gt; [--json]
+/// prose --write-synopsis --slug &lt;nodeSlug&gt; [--json]
 ///
-/// Generates a beat-by-beat narrative outline of a node. For a real logic check
-/// (causality/knowledge-states/timeline/plant-payoff/orphan-refs/bible-agreement),
-/// use prose --logic-sweep instead — this used to bundle a logic audit here too, but that
-/// audit predated LOGIC.md's current six-dimension doctrine and never matched it.
+/// Generates a beat-by-beat narrative synopsis of a node — a post-hoc description of the
+/// written prose (renamed from --write-outline 2026-08-29; "Outline" now names the per-book
+/// pre-writing plan formerly called the Node Bible). For a real logic check
+/// (causality/knowledge-states/timeline/plant-payoff/orphan-refs/outline-agreement),
+/// use prose --logic-sweep instead.
 /// </summary>
-public static class WriteOutlineCli
+public static class WriteSynopsisCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -28,12 +29,12 @@ public static class WriteOutlineCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: prose --write-outline --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine("Usage: prose --write-synopsis --slug <nodeSlug> [--json]");
             return 2;
         }
 
-        var outlineSvc = services.GetRequiredService<NodeOutlineService>();
-        var dbFactory  = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+        var synopsisSvc = services.GetRequiredService<NarrativeSynopsisService>();
+        var dbFactory   = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
         var node = await db.Nodes.AsNoTracking()
@@ -45,9 +46,9 @@ public static class WriteOutlineCli
         }
 
         if (!jsonMode)
-            Console.WriteLine($"Writing outline for '{node.Title}'…\n");
+            Console.WriteLine($"Writing synopsis for '{node.Title}'…\n");
 
-        var result = await outlineSvc.GenerateAsync(node.Id);
+        var result = await synopsisSvc.GenerateAsync(node.Id);
 
         if (jsonMode)
         {
@@ -57,12 +58,12 @@ public static class WriteOutlineCli
                 slug,
                 title      = result.Title,
                 beat_count = result.BeatCount,
-                outline    = result.Outline,
+                synopsis   = result.Synopsis,
             }, new JsonSerializerOptions { WriteIndented = true }));
             return 0;
         }
 
-        Console.WriteLine(result.Outline);
+        Console.WriteLine(result.Synopsis);
         return 0;
     }
 }

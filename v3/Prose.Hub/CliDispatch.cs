@@ -166,7 +166,7 @@ public static class CliDispatch
         {
             var pt = callParams[i].ParameterType;
             // IsAssignableFrom(string[]), not `pt == typeof(string[])`: several handlers
-            // (SeedCli, ResetPasswordCli, VulturesSeedCli, AuditDenormCli) type their args
+            // (SeedCli, ResetPasswordCli, AuditDenormCli) type their args
             // parameter as IReadOnlyList<string>/IEnumerable<string> rather than the concrete
             // array — a strict type-equality check left those silently bound to null (the
             // final `: null` branch), which for an async handler doesn't throw synchronously

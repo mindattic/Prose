@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**288 tools** across **49 tool families.**
+**286 tools** across **49 tool families.**
 
 ## Families
 
@@ -54,7 +54,7 @@
 | [Repository](#repository) | 3 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
-| [Story](#story) | 6 |
+| [Story](#story) | 4 |
 | [Story Scope](#story-scope) | 3 |
 | [Survey](#survey) | 7 |
 | [Swain](#swain) | 3 |
@@ -203,9 +203,9 @@ Run ONE round of a loop-until-dry logic-sweep convergence campaign (2026-08-14) 
 - `requiredDryRounds` (int, optional) — Consecutive clean rounds required to call it converged. Default 2.
 - `maxTotalRounds` (int, optional) — Safety cap on total rounds before escalating 'not converging' as its own finding. Default 8.
 
-### `write_outline`
+### `write_synopsis`
 
-Generate a beat-by-beat narrative outline (act-grouped) for a node. For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/bible-agreement), call logic_sweep instead. Accepts node id (GUID) or slug.
+Generate a beat-by-beat narrative synopsis (act-grouped) of a node's written prose. For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/outline-agreement), call logic_sweep instead. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
@@ -1885,24 +1885,11 @@ Archive a book: moves the book file from engine/data/books/ to engine/data/archi
 - `id` (string, required) — Book id (32-char hex).
 - `confirmId` (string, required) — Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.
 
-### `get_book_outline`
-
-Load a book's shared outline (the plot spine). Returns premise/arc_target/theme/structure, per-chapter outlines (title, short_synopsis, long_synopsis, key_beats, opens_threads, closes_threads, state_changes, pov_character), book-level threads (planted_in / pays_off_in), pending_adjustments (LLM-proposed neighbor edits). Approval status gates prose generation in the UI.
-
-- `bookId` (string, required) — Book id.
-
 ### `get_chapter`
 
 Load a single chapter by id: synopsis, full HTML body, persisted beats list (each with structure_role + text), participating characters. Use this to read existing prose before extending or revising.
 
 - `id` (string, required) — Chapter id (32-char hex).
-
-### `get_director_context`
-
-Build the 'WHERE WE ARE' director context block for writing a specific chapter: PRIOR chapters' content, THIS chapter's outline, UPCOMING chapters' setup needs, plus open book-level threads. This is the highest-value writing-context tool — call it before drafting prose for any chapter that's part of a book.
-
-- `bookId` (string, required) — Book id.
-- `chapterId` (string, required) — Chapter id whose prose you're about to write.
 
 ### `get_legacy_book`
 

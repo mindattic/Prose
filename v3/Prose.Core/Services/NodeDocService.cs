@@ -370,7 +370,7 @@ public class NodeDocService
             }
 
             if (!full)
-                sb.AppendLine($"\n_({totalBeats} beats total — use `get_book_outline` for chapter summaries)_");
+                sb.AppendLine($"\n_({totalBeats} beats total)_");
         }
 
         return (sb.ToString(), totalBeats);

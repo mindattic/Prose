@@ -511,13 +511,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(sp => new MotifService(
             sp.GetRequiredService<SettingsKvStore>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<MotifService>>()));
-        services.AddSingleton(sp => new BookOutlineService(
-            sp.GetRequiredService<IBookRepository>(),
-            sp.GetRequiredService<IChapterRepository>(),
-            sp.GetRequiredService<SettingsKvStore>(),
-            sp.GetRequiredService<MindAttic.Legion.LlmVotingService>(),
-            sp.GetRequiredService<DatabaseService>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<BookOutlineService>>()));
         services.AddSingleton<LastPromptStore>();
         // Graph builds from canon on first access. With the SQL cutover, freshness
         // is driven by Records.UpdatedAt — the IDbContextFactory ctor receives the
@@ -1213,7 +1206,7 @@ public static class ServiceCollectionExtensions
         // prose --barks-export.
         services.AddSingleton<BarksExportService>();
         services.AddSingleton<LibertyReportService>();
-        services.AddSingleton<NodeOutlineService>();
+        services.AddSingleton<NarrativeSynopsisService>();
         services.AddSingleton<Prose.Core.Services.Audit.LogicSweepService>();
 
         return services;

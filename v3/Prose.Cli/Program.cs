@@ -334,15 +334,6 @@ if (args.Contains("--ask"))
     return;
 }
 
-// CLI mode: idempotent stub-creator for the seeded "Vultures on the Doorstep"
-// future story. Creates the Book + Draft outline only; writes no prose.
-//   prose --seed-vultures
-if (args.Contains("--seed-vultures"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("VulturesSeedCli", args);
-    return;
-}
-
 // CLI mode: report Character columns that disagree with their latest
 // matching EntityStateEvents row. Lights up the static-vs-dynamic recipe
 // only for columns that actually drifted.
@@ -1778,12 +1769,12 @@ if (args.Contains("--gear-check"))
     return;
 }
 
-// prose --write-outline --slug <nodeSlug> [--json]
-// Generates a beat-by-beat narrative outline (act-grouped, one sentence per beat).
-// For a logic check, use --logic-sweep instead.
-if (args.Contains("--write-outline"))
+// prose --write-synopsis --slug <nodeSlug> [--json]
+// Generates a beat-by-beat narrative synopsis (act-grouped, one sentence per beat) FROM
+// the written prose. For a logic check, use --logic-sweep instead.
+if (args.Contains("--write-synopsis"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardAsync("WriteOutlineCli", args);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("WriteSynopsisCli", args);
     return;
 }
 

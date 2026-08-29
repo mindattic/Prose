@@ -8,31 +8,33 @@ using Prose.Core.Services.Audit;
 
 namespace Prose.Mcp;
 
-// ── Story Outline + Logic Sweep tools ──────────────────────────────────────────
+// ── Narrative Synopsis + Logic Sweep tools ─────────────────────────────────────
 //
-//   write_outline — generate a beat-by-beat narrative outline (act-grouped).
-//   logic_sweep   — docs/LOGIC.md's six-dimension sweep (SS-A44) as a single-pass
-//                   LLM-per-dimension check. For a large book or a thorough pass,
-//                   prefer the /logic-sweep Claude Code skill instead (range-scoped
-//                   subagents + quote verification + fix + re-verify).
+//   write_synopsis — generate a beat-by-beat narrative synopsis (act-grouped) FROM
+//                    the written prose (renamed from write_outline 2026-08-29;
+//                    "outline" now names the per-book pre-writing plan).
+//   logic_sweep    — docs/LOGIC.md's six-dimension sweep (SS-A44) as a single-pass
+//                    LLM-per-dimension check. For a large book or a thorough pass,
+//                    prefer the /logic-sweep Claude Code skill instead (range-scoped
+//                    subagents + quote verification + fix + re-verify).
 
 [McpServerToolType]
 public class BookLogicTools(
-    NodeOutlineService outlineService,
+    NarrativeSynopsisService synopsisService,
     LogicSweepService logicSweepService,
     IDbContextFactory<ProseDbContext> dbFactory,
     HubInvoker hub)
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
-    [McpServerTool, Description("Generate a beat-by-beat narrative outline (act-grouped) for a node. " +
-        "For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/bible-agreement), " +
+    [McpServerTool, Description("Generate a beat-by-beat narrative synopsis (act-grouped) of a node's written prose. " +
+        "For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/outline-agreement), " +
         "call logic_sweep instead. Accepts node id (GUID) or slug.")]
-    public Task<string> write_outline(
+    public Task<string> write_synopsis(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
-        hub.InvokeAsync(nameof(BookLogicTools), nameof(write_outlineImpl), new { nodeIdOrSlug });
+        hub.InvokeAsync(nameof(BookLogicTools), nameof(write_synopsisImpl), new { nodeIdOrSlug });
 
-    public async Task<string> write_outlineImpl(string nodeIdOrSlug)
+    public async Task<string> write_synopsisImpl(string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
         if (nodeId == null)
@@ -40,13 +42,13 @@ public class BookLogicTools(
 
         try
         {
-            var result = await outlineService.GenerateAsync(nodeId.Value);
+            var result = await synopsisService.GenerateAsync(nodeId.Value);
             return JsonSerializer.Serialize(new
             {
                 node_id    = result.NodeId,
                 title      = result.Title,
                 beat_count = result.BeatCount,
-                outline    = result.Outline,
+                synopsis   = result.Synopsis,
             }, JsonOpts);
         }
         catch (Exception ex)

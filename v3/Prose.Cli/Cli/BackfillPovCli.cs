@@ -18,9 +18,9 @@ namespace Prose.Cli;
 /// on this table and were silently starved for POV data on effectively the whole corpus.
 /// ProseWriterRouter.WriteAsync now writes this forward for every new beat
 /// (SceneContextAssembler.PersistPovAsync); this CLI is the one-time backward pass for beats
-/// already written before that fix landed. Where a chapter-level PovCharacter already exists
-/// on BookOutline, prefer that over this heuristic (higher confidence) — not implemented in
-/// this pass; flagged for a follow-up if BookOutline data proves more reliable in practice.
+/// already written before that fix landed. (A chapter-level PovCharacter preference from the
+/// legacy BookOutline system was once flagged as a follow-up here; that system was retired
+/// 2026-08-29, so the mention-count heuristic below stands as the only backfill source.)
 ///
 /// Scope: without --slug, processes every book corpus-wide. With --slug, restricts to that
 /// node's own leaf-descendant beats.

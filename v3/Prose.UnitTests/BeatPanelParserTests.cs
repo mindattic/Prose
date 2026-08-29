@@ -5,7 +5,7 @@ namespace Prose.UnitTests;
 
 /// <summary>
 /// Pure-parser tests for the LLM-output JSON shapes that drive
-/// BeatGeneratorService and BookOutlineService. No LLM calls, no DB —
+/// BeatGeneratorService. No LLM calls, no DB —
 /// just the contract: given a JSON-string blob from a voter, parse it
 /// into typed records without throwing on the messy real-world inputs
 /// LLMs actually produce (preamble prose before the JSON, slightly
@@ -135,56 +135,5 @@ public class BeatPanelParserTests
         Assert.That(findings[0].Detected, Is.Empty);
         Assert.That(findings[0].CanonValue, Is.Empty);
         Assert.That(findings[0].Suggestion, Is.Empty);
-    }
-
-    // ── BookOutlineService.ParseDriftFindings ──────────────────────────
-
-    [Test]
-    public void ParseDriftFindings_AllKinds_AreSurfaced()
-    {
-        var json = @"[
-          {""kind"":""missing"",""summary"":""beat A not delivered"",
-           ""outline_says"":""Kyle reaches the bar"",""prose_says"":""(no scene)""},
-          {""kind"":""contradiction"",""summary"":""POV mismatch"",
-           ""outline_says"":""Kyle POV"",""prose_says"":""Sasha POV""},
-          {""kind"":""extra"",""summary"":""new sub-beat introduced"",
-           ""outline_says"":"""",""prose_says"":""Auntie Hoa appears""}
-        ]";
-        var drifts = BookOutlineService.ParseDriftFindings(json);
-        Assert.That(drifts, Has.Count.EqualTo(3));
-        Assert.That(drifts.Select(d => d.Kind), Is.EquivalentTo(new[] { "missing", "contradiction", "extra" }));
-    }
-
-    [Test]
-    public void ParseDriftFindings_Empty_ReturnsEmpty()
-    {
-        Assert.That(BookOutlineService.ParseDriftFindings("[]"), Is.Empty);
-        Assert.That(BookOutlineService.ParseDriftFindings(null), Is.Empty);
-        Assert.That(BookOutlineService.ParseDriftFindings("nothing"), Is.Empty);
-    }
-
-    [Test]
-    public void ParseDriftFindings_PreambleProse_StillExtracts()
-    {
-        var raw = "Here's what I found:\n[{\"kind\":\"missing\",\"summary\":\"X\",\"outline_says\":\"Y\",\"prose_says\":\"Z\"}]";
-        var drifts = BookOutlineService.ParseDriftFindings(raw);
-        Assert.That(drifts, Has.Count.EqualTo(1));
-        Assert.That(drifts[0].Summary, Is.EqualTo("X"));
-    }
-
-    [Test]
-    public void ParseDriftFindings_PartialFields_FillsWithEmptyStrings()
-    {
-        var drifts = BookOutlineService.ParseDriftFindings(@"[{""kind"":""missing""}]");
-        Assert.That(drifts, Has.Count.EqualTo(1));
-        Assert.That(drifts[0].Summary,     Is.Empty);
-        Assert.That(drifts[0].OutlineSays, Is.Empty);
-        Assert.That(drifts[0].ProseSays,   Is.Empty);
-    }
-
-    [Test]
-    public void ParseDriftFindings_Malformed_DoesNotThrow()
-    {
-        Assert.That(BookOutlineService.ParseDriftFindings("[{\"kind\":"), Is.Empty);
     }
 }

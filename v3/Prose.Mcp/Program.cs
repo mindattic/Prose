@@ -71,7 +71,7 @@ var builder = Host.CreateApplicationBuilder(args);
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog();
 
-// All Core services — repositories, BookOutlineService, SemanticIndexService,
+// All Core services — repositories, SemanticIndexService,
 // MotifService, WritingQualityService, etc.
 builder.Services.AddProseServices();
 

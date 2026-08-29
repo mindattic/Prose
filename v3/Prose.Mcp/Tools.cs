@@ -174,27 +174,25 @@ public class CanonTools
 }
 
 /// <summary>
-/// Tool group for the active book shelf — listing books, loading chapters, pulling
-/// outlines, and assembling the per-chapter director context that feeds drafting
-/// prompts. Also exposes the type-the-id archive operation.
+/// Tool group for the LEGACY pre-Nodes book shelf — listing legacy books and loading
+/// chapters. Also exposes the type-the-id archive operation. (The legacy BookOutline
+/// system — get_book_outline/get_director_context — was retired 2026-08-29 when the
+/// per-book Outline concept moved to the Nodes graph; see NodeTools.)
 /// </summary>
 [McpServerToolType]
 public class StoryTools
 {
     private readonly Prose.Core.Interfaces.IBookRepository books;
     private readonly Prose.Core.Interfaces.IChapterRepository chapters;
-    private readonly BookOutlineService outlines;
     private readonly HubInvoker hub;
 
     public StoryTools(
         Prose.Core.Interfaces.IBookRepository books,
         Prose.Core.Interfaces.IChapterRepository chapters,
-        BookOutlineService outlines,
         HubInvoker hub)
     {
         this.books = books;
         this.chapters = chapters;
-        this.outlines = outlines;
         this.hub = hub;
     }
 
@@ -233,28 +231,6 @@ public class StoryTools
         var c = chapters.LoadChapter(id);
         if (c == null) return JsonSerializer.Serialize(new { error = "not_found", id }, CanonTools.JsonOpts);
         return JsonSerializer.Serialize(c, CanonTools.JsonOpts);
-    }
-
-    /// <summary>Load a book's shared outline (plot spine): premise/arc/theme/structure, per-chapter outlines, book-level threads, pending adjustments. Approval status gates prose generation in the UI.</summary>
-    [McpServerTool, Description("Load a book's shared outline (the plot spine). Returns premise/arc_target/theme/structure, per-chapter outlines (title, short_synopsis, long_synopsis, key_beats, opens_threads, closes_threads, state_changes, pov_character), book-level threads (planted_in / pays_off_in), pending_adjustments (LLM-proposed neighbor edits). Approval status gates prose generation in the UI.")]
-    public Task<string> GetBookOutline([Description("Book id.")] string bookId) =>
-        hub.InvokeAsync(nameof(StoryTools), nameof(GetBookOutlineImpl), new { bookId });
-
-    public string GetBookOutlineImpl(string bookId)
-    {
-        return JsonSerializer.Serialize(outlines.Load(bookId), CanonTools.JsonOpts);
-    }
-
-    /// <summary>Build the "WHERE WE ARE" director-context block for a specific chapter: prior chapters' content, this chapter's outline, upcoming setup needs, open book-level threads. Highest-value writing-context tool — call before drafting prose.</summary>
-    [McpServerTool, Description("Build the 'WHERE WE ARE' director context block for writing a specific chapter: PRIOR chapters' content, THIS chapter's outline, UPCOMING chapters' setup needs, plus open book-level threads. This is the highest-value writing-context tool — call it before drafting prose for any chapter that's part of a book.")]
-    public Task<string> GetDirectorContext(
-        [Description("Book id.")] string bookId,
-        [Description("Chapter id whose prose you're about to write.")] string chapterId) =>
-        hub.InvokeAsync(nameof(StoryTools), nameof(GetDirectorContextImpl), new { bookId, chapterId });
-
-    public string GetDirectorContextImpl(string bookId, string chapterId)
-    {
-        return outlines.BuildDirectorContext(bookId, chapterId);
     }
 
     /// <summary>Archive a book — moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive (chapters stay in place). Requires the caller to retype the full book id as a confirmation token, matching the UI's type-the-guid modal.</summary>
