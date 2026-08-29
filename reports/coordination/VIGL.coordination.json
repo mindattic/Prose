@@ -2,8 +2,8 @@
   "nodeCode": "VIGL",
   "slug": "vigil-s-end-019f5767",
   "title": "Vigil\u0027s End",
-  "generatedAtUtc": "2026-08-13 23:21:41Z",
-  "totalBeats": 25,
+  "generatedAtUtc": "2026-08-29 07:37:02Z",
+  "totalBeats": 318,
   "covered": 0,
   "chapterGranular": true,
   "bookScope": {
@@ -17,406 +17,4486 @@
     "ConstructionCapacity": 1
   },
   "flagCounts": {
-    "MISSING_MEANING": 25
+    "MISSING_MEANING": 318,
+    "NO_CONSTRUCTION": 307
   },
   "beats": [
     {
-      "BeatId": "019ff95b-c6a5-77aa-bd6f-2591fe806e62",
-      "Number": 16996,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9c5-7cf1-95b9-eece59be1418",
+      "Number": 5550,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
-      "BeatTags": [],
-      "ProseLength": 23534,
+      "BeatTags": [
+        "intertextual-touchpoint",
+        "intertextual-touchpoint",
+        "intertextual-touchpoint",
+        "intertextual-touchpoint"
+      ],
+      "ProseLength": 1960,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b1-7dcb-83db-a95d2ffea7e1",
-      "Number": 16997,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e7-7e07-b1fb-2816cc5f2a46",
+      "Number": 5551,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 20608,
+      "ProseLength": 2845,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7fbc-9fe5-ea48c0fa7c2a",
-      "Number": 16998,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e8-70e1-afbc-7eee68f66096",
+      "Number": 5552,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 22583,
+      "ProseLength": 1804,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7473-a333-215ad7cce4f6",
-      "Number": 16999,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e8-78c0-a6a7-558f301e9538",
+      "Number": 5553,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2643,
+      "ProseLength": 1462,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-75bb-b278-ffa27e1ead6a",
-      "Number": 17000,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e8-7421-9518-3322ceb7df0a",
+      "Number": 5554,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 29985,
+      "ProseLength": 1845,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7886-b038-e5da7d161702",
-      "Number": 17001,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e8-7256-8180-76e54a4b30bf",
+      "Number": 5555,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 22961,
+      "ProseLength": 1751,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-708f-a666-af765c8f29eb",
-      "Number": 17002,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e8-7b7f-8c31-bdf85bb1d07d",
+      "Number": 5556,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 40227,
+      "ProseLength": 3973,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-77e5-b8e8-0d10febb36ce",
-      "Number": 17003,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e8-7ec5-bd1f-9d508e91d411",
+      "Number": 5557,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 30779,
+      "ProseLength": 7202,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-751c-8deb-87fc646d71a0",
-      "Number": 17004,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e8-76a5-a7d9-1ae60e6a2db4",
+      "Number": 5558,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 30107,
+      "ProseLength": 4127,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7994-aad7-54633656adcc",
-      "Number": 17005,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e8-7e41-91b1-e49cd3e9cd34",
+      "Number": 5559,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 47136,
+      "ProseLength": 2811,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7718-9d87-55458554a089",
-      "Number": 17006,
-      "Chapter": "VIGL",
+      "BeatId": "019f9f96-b9e8-74c3-a5b5-f24cbbe64a3d",
+      "Number": 5560,
+      "Chapter": "Chapter 1 \u2014 The Oculus",
       "ChapterIndex": 0,
       "Act": 0,
       "EscalationTarget": "8",
       "EventType": "vigil",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 37856,
+      "ProseLength": 981,
       "Flags": [
         "MISSING_MEANING"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7c0d-bab6-4e3fc6df0d92",
-      "Number": 17007,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019fbff4-b7b1-7360-b401-a5455fc5e8fc",
+      "Number": 14664,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 6285,
+      "ProseLength": 4403,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7af0-a019-acb4ed6b9fc9",
-      "Number": 17008,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e8-7e37-bd13-7e421c42895f",
+      "Number": 5561,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 34165,
+      "ProseLength": 2092,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7ca3-99be-4217f8f9ba5f",
-      "Number": 17009,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e8-7e95-8904-575ce1079639",
+      "Number": 5562,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 28953,
+      "ProseLength": 1232,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7248-9e86-4f91288e6a0e",
-      "Number": 17010,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e8-7eee-a880-d9622a356ce3",
+      "Number": 5563,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 19267,
+      "ProseLength": 2029,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7e1d-9e5a-39f46f4d2a7e",
-      "Number": 17011,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e8-7916-b4b3-1b153e9daf46",
+      "Number": 5564,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 27378,
+      "ProseLength": 2644,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-757c-a094-16f28a56d920",
-      "Number": 17012,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e8-7d22-8314-192090f530f7",
+      "Number": 5565,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 16293,
+      "ProseLength": 3462,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7362-8c82-89e4b8b0e66c",
-      "Number": 17013,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e8-7835-8c0f-918ce818901c",
+      "Number": 5566,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 53619,
+      "ProseLength": 1660,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7c31-b15e-dc7335258a06",
-      "Number": 17014,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e8-70d4-9d9b-269b71618f21",
+      "Number": 5567,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 22483,
+      "ProseLength": 2218,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7935-bfc6-497e88533d68",
-      "Number": 17015,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e9-72c7-a1a8-33a60e0297f0",
+      "Number": 5568,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 7523,
+      "ProseLength": 2512,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7fb3-b3e3-d3143d223412",
-      "Number": 17016,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e9-7e87-bc8b-05ac6be48504",
+      "Number": 5569,
+      "Chapter": "Chapter 2 \u2014 Petitioners\u0027",
+      "ChapterIndex": 1,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 19836,
+      "ProseLength": 2572,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b2-7d53-9bc4-a1206807347c",
-      "Number": 17017,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e9-7f37-a271-e77e8890665e",
+      "Number": 5572,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 29768,
+      "ProseLength": 2553,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b3-7179-85e7-83e4a481bc68",
-      "Number": 17018,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e9-7b99-a4e5-2c90c60addb7",
+      "Number": 5573,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 76868,
+      "ProseLength": 2524,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b3-7ed3-b9de-8721673118f6",
-      "Number": 17019,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e9-7c4b-9e13-a872b22b354f",
+      "Number": 5574,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 80846,
+      "ProseLength": 865,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     },
     {
-      "BeatId": "019ff95b-c6b3-7897-844e-ace60dd8bc62",
-      "Number": 17020,
-      "Chapter": "VIGL",
-      "ChapterIndex": 0,
+      "BeatId": "019f9f96-b9e9-7faf-a099-e88687a84a95",
+      "Number": 5576,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
       "Act": 0,
-      "EscalationTarget": "8",
-      "EventType": "vigil",
-      "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 2841,
+      "ProseLength": 1381,
       "Flags": [
-        "MISSING_MEANING"
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7021-a7a7-8f9308e8c511",
+      "Number": 5577,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1055,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7a04-9b02-605b106f4168",
+      "Number": 5578,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2391,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7229-b359-68e366477a1a",
+      "Number": 5579,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2083,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-77a8-9c1d-2a91a8c28365",
+      "Number": 5580,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1367,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-786e-8ac9-7b7beae05064",
+      "Number": 5581,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1657,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd8da-6a65-7477-8355-afb808a5095f",
+      "Number": 16961,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5635,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-77c5-99c8-8c579e8e3f72",
+      "Number": 5582,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1532,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7cb9-9efc-98ca8a9a46f0",
+      "Number": 5583,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1286,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7bd7-b2b8-76cd58bdba19",
+      "Number": 5584,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1964,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-76d3-8cd9-8ea2a36e6d5e",
+      "Number": 5585,
+      "Chapter": "Chapter 3 \u2014 Ardea Marten",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 998,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7ec9-8192-e76cbc909180",
+      "Number": 5586,
+      "Chapter": "Chapter 4 \u2014 A Thursday N",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 665,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7ae3-8d4a-f4f9c8148367",
+      "Number": 5587,
+      "Chapter": "Chapter 4 \u2014 A Thursday N",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1234,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-758d-9fd4-ed2d08c85592",
+      "Number": 5588,
+      "Chapter": "Chapter 4 \u2014 A Thursday N",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 767,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7e93-9e69-ef9359bb8f0c",
+      "Number": 5589,
+      "Chapter": "Chapter 4 \u2014 A Thursday N",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 283,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7968-9906-dd5a19cac60d",
+      "Number": 5590,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1652,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7279-a693-a4664b326e9e",
+      "Number": 5591,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2699,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7344-85cb-3334434c348c",
+      "Number": 5592,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6371,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7673-bbc5-4b76764ea318",
+      "Number": 5593,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4569,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-771f-819c-59439d5ca6ef",
+      "Number": 5594,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1339,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7bcb-9ddf-77d2a0f586bf",
+      "Number": 5595,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2943,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7922-818e-bbdc1a5fc868",
+      "Number": 5596,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 855,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-79b0-9dc5-559d3fd14789",
+      "Number": 5597,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1382,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-76f1-99fb-1b11be42dce9",
+      "Number": 5598,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2751,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7ce9-b051-e10bf0b3a5de",
+      "Number": 5599,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3308,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7cdc-b682-dee4be9ce948",
+      "Number": 5600,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2943,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7c8d-9087-dbacb34ad37c",
+      "Number": 5601,
+      "Chapter": "Chapter 5 \u2014 The Canonica",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3254,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7af7-8fc7-1d8d45b3f4cd",
+      "Number": 5602,
+      "Chapter": "Chapter 6 \u2014 The Pluck",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2140,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7ef2-8d48-7ae83d7ccc38",
+      "Number": 5603,
+      "Chapter": "Chapter 6 \u2014 The Pluck",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2892,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7bc3-a31d-f90be53e6003",
+      "Number": 5604,
+      "Chapter": "Chapter 6 \u2014 The Pluck",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2599,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7eca-9e35-4bff82fed05c",
+      "Number": 5605,
+      "Chapter": "Chapter 6 \u2014 The Pluck",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3158,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-74a5-b732-00279d50c23d",
+      "Number": 5606,
+      "Chapter": "Chapter 6 \u2014 The Pluck",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1673,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019faeda-4fb3-7ffa-95dc-339cb68fcd6d",
+      "Number": 14620,
+      "Chapter": "Chapter 6 \u2014 The Pluck",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5256,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7578-8e7d-0f4c74c8b255",
+      "Number": 5607,
+      "Chapter": "Chapter 6 \u2014 The Pluck",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4715,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7849-955d-4966949331b5",
+      "Number": 5608,
+      "Chapter": "Chapter 6 \u2014 The Pluck",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2196,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7976-96c2-13bdde959f95",
+      "Number": 5609,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3784,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7dbf-89ce-263af1f4048d",
+      "Number": 5611,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4321,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7014-b282-06dbee39f9fc",
+      "Number": 5612,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3861,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9e9-7d4b-b6bf-cad895f02937",
+      "Number": 5613,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5273,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-77e7-aafb-e8bb582a8485",
+      "Number": 5614,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4305,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7bd5-9420-056bb0048018",
+      "Number": 5615,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1055,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7405-961c-06270daf30fd",
+      "Number": 5616,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4111,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-72ab-8c48-0a243d45d346",
+      "Number": 5617,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1235,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7e15-856d-74e58a645fb6",
+      "Number": 5618,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2830,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7aa2-bd2c-29e0ad2f20df",
+      "Number": 5619,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3010,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-73b8-8e1d-b0ea101f0f72",
+      "Number": 5620,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3008,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7a92-a590-3d62875c2397",
+      "Number": 5621,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2036,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-704f-be54-bdb8f23c23cd",
+      "Number": 5623,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2426,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7990-a3f0-0d932fe51884",
+      "Number": 5624,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2627,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7148-9104-d146bc1d40d1",
+      "Number": 5625,
+      "Chapter": "Chapter 7 \u2014 Third Mornin",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3490,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd8d3-3bb1-7f86-9796-040807f04db7",
+      "Number": 16960,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1287,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-726c-867a-f2c228be5bf9",
+      "Number": 5626,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2991,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7b17-830f-7ca58f54d21c",
+      "Number": 5627,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1256,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-775a-aa20-9a030a0d68db",
+      "Number": 5628,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4197,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7787-b9b7-86f104306e57",
+      "Number": 5629,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1090,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7bbc-ba1c-71e5c79133ca",
+      "Number": 5630,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1994,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7799-80f6-f4c39d6e3ab4",
+      "Number": 5631,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3164,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7cb0-89f3-6c2445a7d33a",
+      "Number": 5632,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1278,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7051-8c76-57f94558b8af",
+      "Number": 5633,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1612,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7163-8add-21946aab11f2",
+      "Number": 5634,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1296,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7734-a040-3c8b9774717d",
+      "Number": 5635,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1820,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7e49-afcd-9cc7b39a6135",
+      "Number": 5636,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3039,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "a67c9ffc-f96a-4876-b253-5642aeeb4ce6",
+      "Number": 12750,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2068,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7670-be4b-4c2373523995",
+      "Number": 5637,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2021,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7060-b119-b6bfa73af095",
+      "Number": 5638,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3293,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-79e6-95b2-84ef64811ac1",
+      "Number": 5639,
+      "Chapter": "Chapter 8 \u2014 The WC-Eiren",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2681,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7081-9fc8-6c263f55bc34",
+      "Number": 5640,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1894,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-768a-8d9c-7e91eab5ce22",
+      "Number": 5641,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1323,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7b2b-87f4-a160fae7c4fc",
+      "Number": 5642,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2467,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7f43-b1f3-dce9b8d68561",
+      "Number": 5643,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2915,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7d4a-8e12-1cf7b5ad438f",
+      "Number": 5644,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1642,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-72f5-a0a0-1086dd2673fc",
+      "Number": 5645,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1734,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-748d-902f-7263a86d29db",
+      "Number": 5646,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2630,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-726c-acf4-a595448d7e63",
+      "Number": 5647,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1868,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7eb5-9552-0dc0f884fb51",
+      "Number": 5648,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2228,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-75c8-b23f-f55534b0d675",
+      "Number": 5649,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4039,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7bec-9f9f-764db4abf9aa",
+      "Number": 5650,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1248,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019faeda-c1b2-7389-8c2a-502924dcd0d8",
+      "Number": 14621,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2612,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-70be-936c-25888bf13984",
+      "Number": 5651,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2125,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-776f-bb31-5b1372edf6b8",
+      "Number": 5652,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2007,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7e0f-b6ae-542abbd24a15",
+      "Number": 5653,
+      "Chapter": "Chapter 9 \u2014 The Houndsto",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2546,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7c7f-a516-ce9d1caf2a84",
+      "Number": 5654,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2271,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7914-983b-96a72bbfc6cd",
+      "Number": 5655,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3664,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7512-a055-3f74163a0126",
+      "Number": 5656,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2683,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7229-91de-5294ddc20876",
+      "Number": 5657,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3631,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-77e1-841f-b0f212752043",
+      "Number": 5658,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3953,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-74d1-8829-8351e5579905",
+      "Number": 5659,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 7742,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7487-83ac-70beaff2aad3",
+      "Number": 5660,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4384,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7e30-9924-87b06c0d54a5",
+      "Number": 5661,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 10193,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-771d-bac1-970db9da6a86",
+      "Number": 5662,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1239,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ea-7724-9cab-f31473c18fae",
+      "Number": 5663,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6381,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7b7c-9571-ee278741ae93",
+      "Number": 5664,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2277,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7403-9b74-fd3701b1ca57",
+      "Number": 5665,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1072,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7d1b-9c3e-97502783892c",
+      "Number": 5666,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2380,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-79f0-83ae-4ff718cbb9d0",
+      "Number": 5667,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2854,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7281-991d-67e808f0a0aa",
+      "Number": 5668,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2125,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-71d0-a478-767ad594d7e8",
+      "Number": 5669,
+      "Chapter": "Chapter 10 \u2014 The Wheat B",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2342,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-747d-9cfc-47ecf888f306",
+      "Number": 5670,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2775,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7476-8d9a-f0a03825fc90",
+      "Number": 5671,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2734,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-763d-a734-c8068b4e2b40",
+      "Number": 5672,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2520,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-760e-bc7c-323c384a020d",
+      "Number": 5673,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2407,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7d8e-bd77-c13a96992aa8",
+      "Number": 5674,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1757,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7874-a98c-bb6fb972b1b3",
+      "Number": 5675,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2595,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-71a6-9857-ec6584c23b04",
+      "Number": 5676,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4965,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7c7e-aaa7-07140a8cecb3",
+      "Number": 5677,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3777,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7ce2-9662-0dee2bfc36c4",
+      "Number": 5678,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4013,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7b3e-aac9-c0584aedbd73",
+      "Number": 5679,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2970,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-71f7-98ef-d0d8b08ad6b3",
+      "Number": 5680,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4549,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7296-beb9-7f6b399540fb",
+      "Number": 5681,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2843,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7784-bdfb-56fb310f748b",
+      "Number": 5682,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2138,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-70c7-8434-8d117f8aac78",
+      "Number": 5683,
+      "Chapter": "Chapter 11 \u2014 The Waystat",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4353,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7260-ac7c-50d7ecd01dcc",
+      "Number": 5684,
+      "Chapter": "Chapter 12 \u2014 The Stolen ",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 943,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0ed-1bf6-7ef3-9350-3b889dd54cc8",
+      "Number": 14652,
+      "Chapter": "Chapter 12 \u2014 The Stolen ",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3078,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7fde-ba8d-319b5ac9b410",
+      "Number": 5685,
+      "Chapter": "Chapter 12 \u2014 The Stolen ",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2725,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-77b3-9824-d704bdd94e48",
+      "Number": 5686,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2669,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7f7e-8e13-efa66767f6e3",
+      "Number": 5687,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3635,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7435-964c-124eeeb876dd",
+      "Number": 5688,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3803,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-763e-9c7f-381d4d5bd794",
+      "Number": 5689,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4008,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7d24-841f-e8286cbd57a3",
+      "Number": 5690,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1512,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7f03-9229-6e7d1d2d5d0c",
+      "Number": 5691,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3251,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7250-8846-a0c77846e4bf",
+      "Number": 5692,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2024,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-797d-a731-90aa59b5c427",
+      "Number": 5694,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2815,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7829-a2ad-1a83f4abb24d",
+      "Number": 5695,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3229,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7efe-8cf1-68a6a70b98d9",
+      "Number": 5696,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2438,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7b56-882a-3c20f866345a",
+      "Number": 5697,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4321,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-761c-b721-2c2cb30819d5",
+      "Number": 5698,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2738,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7bf7-9ea7-a72c3697571e",
+      "Number": 5699,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1703,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-779e-a4c6-f8dd3a8b9a00",
+      "Number": 5700,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2729,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-74ce-ac26-a3c0a3f2399d",
+      "Number": 5701,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1449,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7bed-8a4f-6cc5b8757370",
+      "Number": 5702,
+      "Chapter": "Chapter 13 \u2014 Chamber Thr",
+      "ChapterIndex": 12,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1926,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7e73-a538-f8ea7c0a61a8",
+      "Number": 5703,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2985,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-77af-95c1-ff27cdecc334",
+      "Number": 5704,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1884,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-76d1-a1cd-443709d6aed5",
+      "Number": 5705,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1833,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-77b3-ba0b-e2b613b213f5",
+      "Number": 5706,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1988,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7fa9-93bb-ec02dd32c1e5",
+      "Number": 5707,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1482,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7f91-bab7-44a4ce89b773",
+      "Number": 5708,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2213,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7a10-a40f-e4ecdf2d8ce6",
+      "Number": 5709,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2765,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-7504-ab9d-bd2f35c7cbda",
+      "Number": 5710,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2980,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-71d9-9636-72abee194fd8",
+      "Number": 5711,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2166,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9eb-741a-b915-2e8bdb218768",
+      "Number": 5712,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2670,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7c0e-aaec-1e0898618351",
+      "Number": 5713,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2543,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-77e7-97c7-9c91249b82ef",
+      "Number": 5714,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2812,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-71bb-b2aa-41b520afb941",
+      "Number": 5715,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2377,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-79a3-8212-260fb11ce052",
+      "Number": 5716,
+      "Chapter": "Chapter 14 \u2014 The Volcani",
+      "ChapterIndex": 13,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2980,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-74ea-aa7d-f22287d47cc6",
+      "Number": 5717,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2921,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e79-afd3-fabf157796ff",
+      "Number": 5718,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1793,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7747-9ca0-e1187edac5b3",
+      "Number": 5719,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1696,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7897-b027-fcb5cc37e390",
+      "Number": 5720,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2035,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e65-85e3-41fb88c52d52",
+      "Number": 5721,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1753,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7c50-8ccc-9c896522da0e",
+      "Number": 5722,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1699,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7613-a05c-a7c0e35ad05a",
+      "Number": 5723,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2746,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7ba8-ac8b-a7ec6cd8902b",
+      "Number": 5724,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3844,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7932-8234-8f524de5182b",
+      "Number": 5725,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1991,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7171-a4a9-cffcac090a0b",
+      "Number": 5726,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2291,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-795a-9cd1-cb761c7cc0f2",
+      "Number": 5727,
+      "Chapter": "Chapter 15 \u2014 The Monster",
+      "ChapterIndex": 14,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 692,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-79f8-ad11-7c00f6d514bd",
+      "Number": 5728,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2174,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-76ea-82d6-964dad31a296",
+      "Number": 5729,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3886,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7522-80a3-8c9913757f78",
+      "Number": 5730,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3835,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-785d-b780-9af20b9a612d",
+      "Number": 5731,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2600,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-72ff-8326-57e1ac9b7a56",
+      "Number": 5732,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3524,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7216-b65a-c6059ec7f0c1",
+      "Number": 5733,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2668,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-75bf-b703-4f07aef23970",
+      "Number": 5734,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3941,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7fd7-9ab3-9e6fde875a16",
+      "Number": 5735,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2996,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7c76-870f-ffe79f5a9ffe",
+      "Number": 5736,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4545,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7b1e-9ec5-4b6736eaeded",
+      "Number": 5737,
+      "Chapter": "Chapter 16 \u2014 The Gorge",
+      "ChapterIndex": 15,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2896,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fbff0-58b9-788b-9907-59af9fabaf34",
+      "Number": 14661,
+      "Chapter": "Chapter 17 \u2014 Calyx Uplan",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3271,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fbff0-777e-738f-935e-f57918729cb4",
+      "Number": 14662,
+      "Chapter": "Chapter 17 \u2014 Calyx Uplan",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2986,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0f9-7c47-7737-ab3c-f3e7456f4fa4",
+      "Number": 14654,
+      "Chapter": "Chapter 17 \u2014 Calyx Uplan",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4098,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0fa-25e8-7349-871e-501ce8d834a5",
+      "Number": 14655,
+      "Chapter": "Chapter 17 \u2014 Calyx Uplan",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2652,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7ede-855d-10ce37727b6e",
+      "Number": 5738,
+      "Chapter": "Chapter 17 \u2014 Calyx Uplan",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1061,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7479-807b-32f0653fc9e2",
+      "Number": 5739,
+      "Chapter": "Chapter 17 \u2014 Calyx Uplan",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1482,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-73b6-9dbe-17ffa258b37c",
+      "Number": 5740,
+      "Chapter": "Chapter 17 \u2014 Calyx Uplan",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1404,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7447-bb06-9081f32b2752",
+      "Number": 5741,
+      "Chapter": "Chapter 17 \u2014 Calyx Uplan",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1241,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7bc9-a944-b6c5b9d9ee12",
+      "Number": 5742,
+      "Chapter": "Chapter 17 \u2014 Calyx Uplan",
+      "ChapterIndex": 16,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4055,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0fa-dd77-7a35-a867-b397e2b597db",
+      "Number": 14656,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2130,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7813-96c5-96101164e88a",
+      "Number": 5743,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3382,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7724-b184-dc5e7bbd10fe",
+      "Number": 5744,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2521,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-72ab-81f0-ad39994a62a3",
+      "Number": 5745,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2361,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e80-8c4b-cd43e1e6ff10",
+      "Number": 5746,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1254,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7eb7-8271-edc9c57b2a10",
+      "Number": 5747,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2340,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e48-997f-a1626b4a4c31",
+      "Number": 5748,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1601,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-704e-a727-57e17fde49ef",
+      "Number": 5749,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2089,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-79bf-a413-a21b128e230f",
+      "Number": 5750,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1757,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-73ab-b86e-f376d03c911d",
+      "Number": 5751,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1680,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7258-9784-c7bdaf0e914c",
+      "Number": 5752,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 824,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7b34-bb54-76bcde973bdc",
+      "Number": 5753,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2416,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7e10-82aa-0a78b4ccc85e",
+      "Number": 5754,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3255,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7207-81ae-89de9170521c",
+      "Number": 5755,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6880,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-760c-acae-e4c9cdb938d4",
+      "Number": 5756,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4050,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7f74-8b5f-8399b42a7907",
+      "Number": 5757,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5035,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-72ec-bf27-d2efe6e226ea",
+      "Number": 5758,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1605,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7de1-a01a-5354c87428e0",
+      "Number": 5759,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4582,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-73ad-b99b-a33bb328b71e",
+      "Number": 5760,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3842,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ec-7da4-80e1-fee8d9862b51",
+      "Number": 5761,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1849,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-75c9-bb2b-0a4b1cb00eff",
+      "Number": 5762,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2168,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7d1b-b345-0bb949e17f58",
+      "Number": 5763,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1981,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-70dc-a4f8-a5ecd3258b19",
+      "Number": 5764,
+      "Chapter": "Chapter 18 \u2014 The Barred ",
+      "ChapterIndex": 17,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2621,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb101-27fb-7866-8345-8b1f46db682b",
+      "Number": 14658,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2472,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7dbb-91b5-f78ab6d1b5f4",
+      "Number": 5767,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2227,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-79fa-b6de-a39dad5e4ff1",
+      "Number": 5768,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1242,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7dbc-ac7a-cd16ed1e9507",
+      "Number": 5769,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 956,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb102-ca22-7415-8334-49d39dd09887",
+      "Number": 14659,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2779,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7cb2-ac7f-6f684b7a2504",
+      "Number": 5774,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1870,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-75ed-bfa7-0fc99d09d61c",
+      "Number": 5775,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2346,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7776-8671-df08379bf252",
+      "Number": 5776,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3572,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7223-9aa0-fed7e65bd8df",
+      "Number": 5777,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2261,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7e69-9968-dc1ed57663fa",
+      "Number": 5778,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1954,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0f0-ade3-72c3-8033-09ca086eac9e",
+      "Number": 14653,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3111,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-79b8-8958-ec13490ed26e",
+      "Number": 5779,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1158,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7957-9a4e-86a044aafac0",
+      "Number": 5780,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1859,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-710d-bd68-035f5cd63d9f",
+      "Number": 5781,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1388,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-75cd-89d5-cd3828d2ee12",
+      "Number": 5782,
+      "Chapter": "Chapter 19 \u2014 Caer Glas M",
+      "ChapterIndex": 18,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2490,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd6ff-f61d-7fc6-983f-9150f5545f2c",
+      "Number": 16958,
+      "Chapter": "Chapter 20 \u2014 The Road Ea",
+      "ChapterIndex": 19,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2030,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0a7-9c98-745a-9451-1579387e896d",
+      "Number": 14649,
+      "Chapter": "Chapter 20 \u2014 The Road Ea",
+      "ChapterIndex": 19,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3955,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0a7-cde4-7f41-93d7-d3488e552a7e",
+      "Number": 14650,
+      "Chapter": "Chapter 20 \u2014 The Road Ea",
+      "ChapterIndex": 19,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4093,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7620-9588-811f4450674a",
+      "Number": 5783,
+      "Chapter": "Chapter 21 \u2014 The Senior ",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5943,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7cf8-8b6e-86bb9ff8a5b0",
+      "Number": 5784,
+      "Chapter": "Chapter 21 \u2014 The Senior ",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4448,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7a71-ac2a-2aa42255da5d",
+      "Number": 5785,
+      "Chapter": "Chapter 21 \u2014 The Senior ",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4936,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7f6f-856e-a6f62b6c5d24",
+      "Number": 5786,
+      "Chapter": "Chapter 21 \u2014 The Senior ",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2700,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7416-a633-25f2af28ef9e",
+      "Number": 5787,
+      "Chapter": "Chapter 21 \u2014 The Senior ",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2906,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-761f-b511-89b6ebc146aa",
+      "Number": 5788,
+      "Chapter": "Chapter 21 \u2014 The Senior ",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4451,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7b8b-abd3-498b957d5ca5",
+      "Number": 5789,
+      "Chapter": "Chapter 21 \u2014 The Senior ",
+      "ChapterIndex": 20,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1650,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7ee2-8254-846a288882ac",
+      "Number": 5790,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1847,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb05b-9380-731a-8f02-3c14d04d29b9",
+      "Number": 14622,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2873,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-73c7-9c39-4350705b2e08",
+      "Number": 5792,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2287,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7aa2-bfc1-d359f54776a5",
+      "Number": 5793,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2374,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7972-ae4a-1782e0b2c07c",
+      "Number": 5794,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1437,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-715c-a914-bae40ff0e980",
+      "Number": 5795,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1968,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7ec3-87ed-5afde55e80aa",
+      "Number": 5796,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1767,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-70c9-876d-0e345aac709c",
+      "Number": 5797,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1148,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-71c4-91a9-7b8f99ff4d07",
+      "Number": 5798,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 602,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-77c2-85fd-df35b359d8d6",
+      "Number": 5799,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1126,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7908-90f0-9bda605a7f2d",
+      "Number": 5800,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 454,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb077-6177-7ae0-b8f0-235ffca3b99e",
+      "Number": 14648,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2788,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7a34-8e09-1738149031ff",
+      "Number": 5801,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2253,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-745f-b081-c13423e4c6ae",
+      "Number": 5802,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1534,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7f7b-b503-e36465f3980f",
+      "Number": 5803,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1999,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7774-96e5-b8ea446327b2",
+      "Number": 5804,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4065,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7979-a513-43f71809fc1e",
+      "Number": 5805,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3301,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7f4d-916d-bf9ffe898b2d",
+      "Number": 5806,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1912,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0c6-1437-7e89-bc6f-1fffbedd25e6",
+      "Number": 14651,
+      "Chapter": "Chapter 22 \u2014 The Gate",
+      "ChapterIndex": 21,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1922,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-79a5-9f85-d9945af3e685",
+      "Number": 5807,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1443,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7836-96db-61c0f7321fe0",
+      "Number": 5808,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4396,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd8d3-1df7-73fb-bd9f-46d6b4b06c77",
+      "Number": 16959,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2731,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ed-7589-93ca-12971a08dbce",
+      "Number": 5809,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1286,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7455-a4d3-4fcb57b3b4a2",
+      "Number": 5812,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4228,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-71b0-80c3-92bf2483fedb",
+      "Number": 5813,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4251,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-784a-8ee9-d8923133ef4e",
+      "Number": 5814,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4929,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-766f-a830-45b627b6b6ef",
+      "Number": 5816,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5319,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7bd7-b1f5-bf7c43bb06d8",
+      "Number": 5817,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6298,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7f4d-aeb0-db86c595e7d3",
+      "Number": 5818,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4150,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-79a9-b7e6-ad60d7fad9ad",
+      "Number": 5819,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 8214,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7ac7-b24c-0b15369664ad",
+      "Number": 5820,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3680,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7bb6-b52e-b4ce2fc3ebe0",
+      "Number": 5821,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2235,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7fca-9e65-8e8a29dad110",
+      "Number": 5822,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3979,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-789a-bafb-b83d7b46ce0f",
+      "Number": 5823,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1886,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7245-9fc5-88ca108381d9",
+      "Number": 5824,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3662,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7f56-89a5-1fdc87437e1a",
+      "Number": 5825,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5497,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-78fd-a80b-1706e54d5faf",
+      "Number": 5826,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3037,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7515-b18e-22091a306cd0",
+      "Number": 5827,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1179,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-72b2-8742-558de3d46664",
+      "Number": 5828,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3885,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-77c7-acfd-9f7caf983db4",
+      "Number": 5829,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4717,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7cfb-b576-325cfe4d0457",
+      "Number": 5830,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3744,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7148-8d9e-2a3cff8360fe",
+      "Number": 5831,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4482,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7083-95e8-be82d010992b",
+      "Number": 5832,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2896,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7f9f-b81c-77da4ede828a",
+      "Number": 5833,
+      "Chapter": "Chapter 23 \u2014 The Zone",
+      "ChapterIndex": 22,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1948,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7f19-8dda-8108b8673fa5",
+      "Number": 5834,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3372,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7c9f-a068-50834db9cb2d",
+      "Number": 5835,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1815,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7d6f-b0e6-45ea681325ce",
+      "Number": 5836,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1601,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7414-823d-648afa01cd39",
+      "Number": 5837,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2611,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7c06-8341-26747bcc2aeb",
+      "Number": 5838,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1714,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-79ce-b5a1-8fd444d355d0",
+      "Number": 5839,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1313,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-773f-aa28-82b4110afa71",
+      "Number": 5840,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 7472,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7012-949e-180b8c050560",
+      "Number": 5841,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3178,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-752b-b5a5-f2261886f338",
+      "Number": 5842,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2797,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7334-bf92-bb53d5f6c4d1",
+      "Number": 5843,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2419,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7058-93f8-23479d0f9037",
+      "Number": 5844,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2881,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7074-b4c0-17233cf3ec10",
+      "Number": 5845,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1436,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-71da-9744-08069a60bc75",
+      "Number": 5846,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1836,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-711b-90c2-0ef6c5bb0b51",
+      "Number": 5847,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4358,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-770a-a961-912c567282ba",
+      "Number": 5848,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1579,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7d43-a79a-154c46b537a5",
+      "Number": 5849,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 1575,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7d2b-9c38-a1b0da354ef3",
+      "Number": 5850,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 8360,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019f9f96-b9ee-7946-b497-48d28ca122c6",
+      "Number": 5851,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5253,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb05d-6905-7eb2-8ee2-3bb7bbdcd463",
+      "Number": 14624,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 5540,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fd4ab-cfe1-7ed2-9422-b4427c7f7b9b",
+      "Number": 16957,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2512,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb0ff-0414-741f-a4fa-ce2690c8fccf",
+      "Number": 14657,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4392,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb05e-c692-76a1-bc9e-62ab57f15123",
+      "Number": 14625,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4428,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb05e-ffb7-7d9e-9d75-216f621fd73e",
+      "Number": 14626,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4032,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb060-764f-7c78-a56e-4483cdad8f63",
+      "Number": 14627,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 2902,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb060-c231-730a-a2fc-878193ba4647",
+      "Number": 14628,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 9208,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb061-03fe-7484-b023-f6957fe6a933",
+      "Number": 14629,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 6178,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb061-4bc0-73c0-8ca9-e0f33fb5f05f",
+      "Number": 14630,
+      "Chapter": "Chapter 24 \u2014 The Crater ",
+      "ChapterIndex": 23,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 4991,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "019fb061-8d70-7f9a-a83c-cb925343a567",
+      "Number": 14631,
+      "Chapter": "Chapter 25 \u2014 Rennick",
+      "ChapterIndex": 24,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 3809,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
       ],
       "Covered": false
     }
