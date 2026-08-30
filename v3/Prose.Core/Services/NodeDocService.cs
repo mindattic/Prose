@@ -14,7 +14,7 @@ public record NodeDocResult(string NodeCode, int BeatCount, bool HasBlueprint, s
 
 /// <summary>
 /// Assembles the unified Book Context Document — hand-authored NodeOutline content
-/// plus generated Structural Blueprint and Beat Spine sections — and writes it to
+/// plus generated Structural Blueprint and Event Sequence sections — and writes it to
 /// both <c>Nodes.NodeOutline</c> (DB) and <c>docs/nodes/{CODE}.md</c> (disk mirror).
 ///
 /// The disk file is a generated read-only view; never hand-edit it.
@@ -36,17 +36,20 @@ public class NodeDocService
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly StructuralBlueprintService blueprintService;
     private readonly IPathProvider paths;
+    private readonly FindingsService findings;
     private readonly ILogger<NodeDocService> log;
 
     public NodeDocService(
         IDbContextFactory<ProseDbContext> dbFactory,
         StructuralBlueprintService blueprintService,
         IPathProvider paths,
+        FindingsService findings,
         ILogger<NodeDocService> log)
     {
         this.dbFactory = dbFactory;
         this.blueprintService = blueprintService;
         this.paths = paths;
+        this.findings = findings;
         this.log = log;
     }
 
@@ -89,9 +92,29 @@ public class NodeDocService
 
         // Load generated data
         var blueprint = await blueprintService.GetAsync(nodeId, ct);
-        var (beatSpine, beatCount) = await BuildBeatSpineAsync(db, nodeId, ct);
+        var (eventSequence, beatCount, unresolvedNames) =
+            await BuildEventSequenceAsync(db, nodeId, node.UniverseId, ct);
 
-        // Build generated portion (blueprint + beat spine) separately so we can checksum it.
+        // Stage-1 "seed before reference" enforced at the outline layer (Phase 4b): a generated
+        // Event Sequence line naming something that resolves to no entity record is a finding, not
+        // a silent gap — same rule that already gates hand-authored outline sections (see
+        // CanonDocumentService.SetNodeOutlineSectionAsync, which files under its own "#section:"
+        // scope). Full re-generation is authoritative for the Event Sequence specifically: purge
+        // just THIS scope (not the hand-authored sections' own findings) and refile, so a name
+        // later seeded/fixed clears its own finding without erasing an unrelated section's.
+        var sequenceScope = $"story:{node.Slug}#sequence";
+        findings.DeleteBySummaryPrefix(sequenceScope, "[outline-entity] ");
+        foreach (var name in unresolvedNames)
+            findings.Upsert(
+                filePath: sequenceScope,
+                chapterId: null,
+                category: FindingCategory.EntityDrift,
+                severity: FindingSeverity.Low,
+                summary: $"[outline-entity] \"{name}\" resolves to no entity record",
+                snippet: null,
+                suggestedFix: $"Seed \"{name}\" as an entity, or fix the name if it's a typo/renamed reference.");
+
+        // Build generated portion (blueprint + event sequence) separately so we can checksum it.
         // Checksum detects hand-edits to the generated sections (checked by codex doctor).
         var genPart = new StringBuilder();
         if (blueprint != null)
@@ -99,10 +122,10 @@ public class NodeDocService
             genPart.AppendLine();
             genPart.AppendLine(BuildBlueprintSection(blueprint, now));
         }
-        if (!string.IsNullOrWhiteSpace(beatSpine))
+        if (!string.IsNullOrWhiteSpace(eventSequence))
         {
             genPart.AppendLine();
-            genPart.AppendLine(BuildBeatSpineSection(beatSpine, now));
+            genPart.AppendLine(BuildEventSequenceSection(eventSequence, now));
         }
         var genText = genPart.ToString();
         // Normalize to LF before hashing so the checksum is stable across platforms.
@@ -237,40 +260,20 @@ public class NodeDocService
         return sb.ToString().TrimEnd();
     }
 
-    // ── Beat spine section ────────────────────────────────────────────────────
+    // ── Event Sequence section ────────────────────────────────────────────────
+    //
+    // Phase 4a of the Bible→Outline refactor: the Event Sequence is every beat in the book, in
+    // reading order, with its plant/payoff status — the actual outline (Little-Red-Riding-Hood
+    // framing: "the core beats in order" — see the plan). Replaces the old opens/closes-only
+    // Beat Spine, which compressed any book over 60 beats down to two lines per chapter and hid
+    // everything in between; a full event list is the entire point of an outline, so there is no
+    // compression gate here regardless of book length.
 
-    private static string BuildBeatSpineSection(string beatSpine, DateTime now) =>
-        $"## Beat Spine\n<!-- generated {now:O} from Beats table — edit via MCP beat tools -->\n\n{beatSpine.TrimEnd()}";
+    private static string BuildEventSequenceSection(string eventSequence, DateTime now) =>
+        $"## Event Sequence\n<!-- generated {now:O} from Beats table — edit via MCP beat tools -->\n\n{eventSequence.TrimEnd()}";
 
-    /// <summary>
-    /// Opens/closes preview label for the compressed (&gt;60 beat) Beat Spine view. Post-Swain-rebeat
-    /// books never populate Beat.Title (only Description, via the MeaningBackfillService), so a bare
-    /// "Title ?? '—'" fallback rendered every compressed spine as a content-free "— — opens" stub.
-    /// Falls back to a clipped Description, which IS populated for those books.
-    /// </summary>
-    internal static string BeatLabel(string? title, string? desc)
-    {
-        if (!string.IsNullOrWhiteSpace(title)) return title;
-        if (!string.IsNullOrWhiteSpace(desc)) return TruncateAtWordBoundary(desc, 80);
-        return "—";
-    }
-
-    /// <summary>
-    /// Truncates to at most maxLength characters, backing up to the last space so a word is
-    /// never cut in half (e.g. "...will for…" instead of "...will force impossible...").
-    /// If no space exists before maxLength, falls back to a hard cut rather than returning an
-    /// oversized string.
-    /// </summary>
-    internal static string TruncateAtWordBoundary(string text, int maxLength)
-    {
-        if (text.Length <= maxLength) return text;
-        var cut = text.LastIndexOf(' ', maxLength - 1);
-        var slice = cut > 0 ? text[..cut] : text[..maxLength];
-        return slice.TrimEnd() + "…";
-    }
-
-    private static async Task<(string SpineText, int BeatCount)> BuildBeatSpineAsync(
-        ProseDbContext db, Guid nodeId, CancellationToken ct)
+    private static async Task<(string SequenceText, int BeatCount, List<string> UnresolvedNames)> BuildEventSequenceAsync(
+        ProseDbContext db, Guid nodeId, Guid universeId, CancellationToken ct)
     {
         // Check for ChapterNode children (SS-A43 book-mode: beats live on chapter children).
         // Recurses past any nested Collection (a mid-book chapter split into its own bounded
@@ -292,87 +295,99 @@ public class NodeDocService
             chapters = leafIds.Select(id => (id, titleById.GetValueOrDefault(id))).ToList();
         }
 
-        var sb = new StringBuilder();
-        int totalBeats = 0;
+        // Flat list of every beat in true reading order, whatever shape the book is in.
+        var ordered = new List<(int Pos, string Chapter, Guid BeatId, string? Title, string? Description)>();
 
         if (chapters.Count > 0)
         {
-            // Two-pass: count first, then render at appropriate detail level
-            var chapterData = new List<(string Title, List<(int Pos, string? Title, string? Desc)> Beats)>();
             int pos = 1;
-
             foreach (var ch in chapters)
             {
                 var beats = await db.BeatNodes
-                    .Where(bn => bn.NodeId == ch.Id && true)
+                    .Where(bn => bn.NodeId == ch.Id)
                     .OrderBy(bn => bn.SortKey)
                     .Join(db.Beats, bn => bn.BeatId, b => b.Id,
-                          (bn, b) => new { b.Title, b.Description })
+                          (bn, b) => new { b.Id, b.Title, b.Description })
                     .ToListAsync(ct);
-
-                var list = beats.Select(b => (pos++, b.Title, b.Description)).ToList();
-                chapterData.Add((ch.Title ?? "Chapter", list));
-                totalBeats += list.Count;
-            }
-
-            bool full = totalBeats <= 60;
-
-            foreach (var (chTitle, beats) in chapterData)
-            {
-                sb.AppendLine($"### {chTitle}");
-                if (full)
-                {
-                    foreach (var (p, t, d) in beats)
-                    {
-                        var desc = string.IsNullOrWhiteSpace(d) ? "" : $" — {d}";
-                        sb.AppendLine($"- B{p:D2} · {t ?? "—"}{desc}");
-                    }
-                }
-                else
-                {
-                    sb.AppendLine($"_({beats.Count} beats)_");
-                    if (beats.Count >= 2)
-                    {
-                        var first = beats.First();
-                        var last  = beats.Last();
-                        sb.AppendLine($"- B{first.Pos:D2} · {BeatLabel(first.Title, first.Desc)} — opens");
-                        sb.AppendLine($"- B{last.Pos:D2}  · {BeatLabel(last.Title, last.Desc)} — closes");
-                    }
-                }
-                sb.AppendLine();
+                foreach (var b in beats)
+                    ordered.Add((pos++, ch.Title ?? "Chapter", b.Id, b.Title, b.Description));
             }
         }
         else
         {
-            // Direct beats on book node — use IsChapterStart to detect chapter boundaries
+            // Direct beats on book node — use IsChapterStart to detect chapter boundaries.
             var beats = await db.BeatNodes
-                .Where(bn => bn.NodeId == nodeId && true)
+                .Where(bn => bn.NodeId == nodeId)
                 .OrderBy(bn => bn.SortKey)
                 .Join(db.Beats, bn => bn.BeatId, b => b.Id,
-                      (bn, b) => new { b.Title, b.Description, b.IsChapterStart })
+                      (bn, b) => new { b.Id, b.Title, b.Description, b.IsChapterStart })
                 .ToListAsync(ct);
 
-            totalBeats = beats.Count;
-            bool full = totalBeats <= 60;
+            var currentChapter = "Chapter";
             int pos = 1;
-
             foreach (var b in beats)
             {
-                if (b.IsChapterStart)
-                    sb.AppendLine($"\n### {b.Title ?? $"Chapter"}");
-
-                if (full)
-                {
-                    var desc = string.IsNullOrWhiteSpace(b.Description) ? "" : $" — {b.Description}";
-                    sb.AppendLine($"- B{pos:D2} · {b.Title ?? "—"}{desc}");
-                }
-                pos++;
+                if (b.IsChapterStart && !string.IsNullOrWhiteSpace(b.Title)) currentChapter = b.Title;
+                ordered.Add((pos++, currentChapter, b.Id, b.Title, b.Description));
             }
-
-            if (!full)
-                sb.AppendLine($"\n_({totalBeats} beats total)_");
         }
 
-        return (sb.ToString(), totalBeats);
+        var totalBeats = ordered.Count;
+        if (totalBeats == 0) return ("", 0, []);
+
+        // Plant/payoff annotations (Phase 4a): same query shape as PlantPayoffService.AuditAsync
+        // — Orphaned (planted, no payoff yet) / Unplanted (paid off, no plant on record) — but
+        // keyed per-beat here instead of aggregated, since each event line names its own status.
+        var posByBeatId = ordered.ToDictionary(o => o.BeatId, o => o.Pos);
+        var searchIds = isFlatNode ? [nodeId] : chapters.Select(c => c.Id).Append(nodeId).ToList();
+        var plantPayoffs = await db.PlantPayoffs.AsNoTracking()
+            .Where(p => searchIds.Contains(p.NodeId))
+            .ToListAsync(ct);
+        var annotationByBeatId = new Dictionary<Guid, string>();
+        foreach (var p in plantPayoffs)
+        {
+            if (p.PlantBeatId is Guid plantId && posByBeatId.ContainsKey(plantId))
+                annotationByBeatId[plantId] = p.PayoffBeatId is Guid payoffId && posByBeatId.TryGetValue(payoffId, out var m)
+                    ? $"[x] pays off at B{m:D2}"
+                    : "[ ] ORPHANED";
+            if (p.PayoffBeatId is Guid payId && posByBeatId.ContainsKey(payId) && p.PlantBeatId == null)
+                annotationByBeatId[payId] = "[ ] UNPLANTED";
+        }
+
+        // Entity tags (Phase 4b): built once per node, applied per rendered line at RENDER time —
+        // never persisted back into Beat.Title/Description (see the plan's round-trip-safety
+        // note). Same 3-call sequence as NodeWorkbenchService.SaveBeatDraftAsync.
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, nodeId, ct);
+        var unresolvedNames = new List<string>();
+        var seenUnresolved = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        var sb = new StringBuilder();
+        string? lastChapter = null;
+        foreach (var (pos, chapter, beatId, title, description) in ordered)
+        {
+            if (chapter != lastChapter)
+            {
+                if (lastChapter != null) sb.AppendLine();
+                sb.AppendLine($"### {chapter}");
+                lastChapter = chapter;
+            }
+
+            var body = string.IsNullOrWhiteSpace(description) ? (title ?? "—") : $"{title ?? "—"}: {description}";
+
+            // Skip re-tagging a line that (unexpectedly) already carries tags — Title/Description
+            // never persist tags themselves, but this keeps the render idempotent regardless.
+            if (!BeatMarkup.ExtractEntityGuids(body).Any())
+            {
+                var matches = EntityMentionScanner.Scan(body, candidates);
+                foreach (var name in EntityMentionScanner.FindUnresolvedProperNouns(body, matches))
+                    if (seenUnresolved.Add(name)) unresolvedNames.Add(name);
+                body = EntityMentionScanner.ApplyTags(body, matches);
+            }
+
+            var annotation = annotationByBeatId.TryGetValue(beatId, out var a) ? $"  {a}" : "";
+            sb.AppendLine($"- B{pos:D2} · {body}{annotation}");
+        }
+
+        return (sb.ToString(), totalBeats, unresolvedNames);
     }
 }

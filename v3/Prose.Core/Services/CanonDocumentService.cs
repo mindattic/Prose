@@ -18,6 +18,7 @@ public class CanonDocumentService
     private readonly IPathProvider paths;
     private readonly CanonDocumentTypeRegistry typeRegistry;
     private readonly ContinuityExtractionService? continuityExtraction;
+    private readonly FindingsService? findings;
     private readonly ILogger<CanonDocumentService>? log;
 
     public CanonDocumentService(
@@ -25,12 +26,14 @@ public class CanonDocumentService
         IPathProvider paths,
         CanonDocumentTypeRegistry typeRegistry,
         ContinuityExtractionService? continuityExtraction = null,
+        FindingsService? findings = null,
         ILogger<CanonDocumentService>? log = null)
     {
         this.dbFactory    = dbFactory;
         this.paths        = paths;
         this.typeRegistry = typeRegistry;
         this.continuityExtraction = continuityExtraction;
+        this.findings     = findings;
         this.log          = log;
     }
 
@@ -240,6 +243,37 @@ public class CanonDocumentService
                 SectionType = sectionType,
             };
             db.NodeOutlineSections.Add(section);
+        }
+
+        // Entity tags (Bible→Outline refactor Phase 4b): a hand-authored outline section is
+        // persisted TAGGED, unlike the auto-generated Event Sequence (which tags only at render
+        // time) — this is the single choke point every set_book_outline / set_book_outline_section
+        // caller (incl. Trinity's PatchOutlineSectionAsync) already runs through, so it stays the
+        // one place hand-authored content ever gets tagged. Strip-then-rescan first (same
+        // idempotency pattern as NodeWorkbenchService.SaveBeatDraftAsync) so a stale tag never
+        // survives an entity rename, and so re-saving already-tagged content doesn't double-wrap.
+        var plainContent = BeatMarkup.StripEntityTags(content);
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, node.UniverseId, nodeId, ct);
+        var matches = EntityMentionScanner.Scan(plainContent, candidates);
+        content = EntityMentionScanner.ApplyTags(plainContent, matches);
+
+        // Stage-1 "seed before reference" enforced at the outline layer: a name in a hand-authored
+        // section that resolves to no entity record is a finding, not a silent gap. Scoped to
+        // THIS node+section (not the auto-generated Event Sequence's own "#sequence" scope in
+        // NodeDocService.GenerateAsync) so the two sources never purge each other's findings.
+        if (findings != null)
+        {
+            var sectionScope = $"story:{node.Slug}#section:{sectionType}";
+            findings.DeleteBySummaryPrefix(sectionScope, "[outline-entity] ");
+            foreach (var name in EntityMentionScanner.FindUnresolvedProperNouns(plainContent, matches))
+                findings.Upsert(
+                    filePath: sectionScope,
+                    chapterId: null,
+                    category: FindingCategory.EntityDrift,
+                    severity: FindingSeverity.Low,
+                    summary: $"[outline-entity] \"{name}\" resolves to no entity record",
+                    snippet: null,
+                    suggestedFix: $"Seed \"{name}\" as an entity, or fix the name if it's a typo/renamed reference.");
         }
 
         section!.Content   = content;

@@ -179,4 +179,39 @@ public class NodeOutlineServiceTests
         Assert.That(result[0].StructureRole, Is.EqualTo("OPENING"));
         Assert.That(result[2].StructureRole, Is.EqualTo("CLIMAX"));
     }
+
+    // Bible→Outline refactor Phase 4b: hand-authored NodeOutlineSections content is persisted
+    // TAGGED (CanonDocumentService.SetNodeOutlineSectionAsync applies <entity> tags on save), so
+    // a "## BEAT SPINE" section saved through that path can legitimately contain inline entity
+    // tags by the time ParseBeatSpine reads it back for ApplyBeatSpineFromTextAsync. REQUIRED
+    // by the plan before shipping Phase 4 — the tag's angle brackets/quotes/attributes are just
+    // literal characters to this regex, so tolerance was expected to already hold; this pins it.
+    [Test]
+    public void ParseBeatSpine_TitleWithEntityTag_ParsedCorrectly()
+    {
+        var bible = """
+            ## BEAT SPINE
+            1. [OPENING] The Hook — <entity repo="character" guid="11111111-1111-1111-1111-111111111111">Kyle</entity> gets the call.
+            """;
+        var result = NodeOutlineService.ParseBeatSpine(bible);
+        Assert.That(result, Has.Count.EqualTo(1));
+        var beat = result[0];
+        Assert.That(beat.Title, Is.EqualTo("The Hook"));
+        Assert.That(beat.Goal, Does.Contain("<entity"));
+        Assert.That(beat.Goal, Does.Contain("Kyle</entity> gets the call."));
+    }
+
+    [Test]
+    public void ParseBeatSpine_TaggedNameInTitleAndGoal_BothPreserveTags()
+    {
+        var bible = """
+            ## BEAT SPINE
+            1. [CLIMAX] <entity repo="character" guid="22222222-2222-2222-2222-222222222222">Pixel</entity>'s Choice — She confronts <entity repo="character" guid="11111111-1111-1111-1111-111111111111">Kyle</entity> at the lemon tree.
+            """;
+        var result = NodeOutlineService.ParseBeatSpine(bible);
+        Assert.That(result, Has.Count.EqualTo(1));
+        var beat = result[0];
+        Assert.That(beat.Title, Does.Contain("<entity").And.Contain("Pixel</entity>'s Choice"));
+        Assert.That(beat.Goal, Does.Contain("<entity").And.Contain("Kyle</entity> at the lemon tree."));
+    }
 }

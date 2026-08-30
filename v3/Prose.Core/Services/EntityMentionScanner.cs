@@ -309,6 +309,47 @@ public static class EntityMentionScanner
         return accepted.OrderBy(x => x.Start).ToList();
     }
 
+    // Outline entity-tag round-trip (Bible→Outline refactor Phase 4b): capitalized word-groups
+    // that LOOK like proper nouns but a completed Scan() pass left untagged — the residue a
+    // human should either seed as a real entity or fix as a typo. Deliberately the same coarse
+    // heuristic as ProseWriterRouter.FindUnknownEntityNames (capitalized-phrase regex + a
+    // common-word stoplist), independently scoped here to Scan()'s own matches rather than to
+    // UniverseGraphService.AllNodes() — this method has no graph dependency, only text + matches.
+    private static readonly Regex ProperNounResiduePattern =
+        new(@"\b([A-Z][a-z]{2,}(?:\s+[A-Z][a-z]{2,})*)\b", RegexOptions.Compiled);
+
+    private static readonly HashSet<string> ResidueCommonWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "The", "This", "That", "Here", "There", "When", "What", "Where", "Who", "Which",
+        "And", "But", "Yet", "For", "Nor", "So", "Then", "Now", "Just", "Still",
+        "He", "She", "They", "His", "Her", "Their", "Its", "Our", "Your", "My",
+        "After", "Before", "During", "Inside", "Outside", "Through", "Against",
+        // Outline-format labels, not names.
+        "Chapter", "Beat", "Book", "Outline",
+    };
+
+    /// <summary>Every distinct capitalized phrase in <paramref name="text"/> whose span was NOT
+    /// claimed by <paramref name="matches"/> (a completed <see cref="Scan"/> pass) — the "resolves
+    /// to no entity record" residue filed as an <c>EntityDrift</c> finding by
+    /// <c>NodeDocService.GenerateAsync</c> / <c>CanonDocumentService.SetNodeOutlineSectionAsync</c>.
+    /// Not a grammar check: a name that legitimately isn't an entity (a one-off descriptive phrase)
+    /// still surfaces here for a human to dismiss — the mechanism's job is recall, not precision.</summary>
+    public static List<string> FindUnresolvedProperNouns(string text, IReadOnlyList<MentionMatch> matches)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return [];
+        var claimed = matches.Select(m => (m.Start, End: m.Start + m.Length)).ToList();
+        var found = new List<string>();
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (Match m in ProperNounResiduePattern.Matches(text))
+        {
+            var name = m.Value.Trim();
+            if (name.Length <= 3 || ResidueCommonWords.Contains(name)) continue;
+            if (claimed.Any(r => m.Index >= r.Start && m.Index < r.End)) continue;
+            if (seen.Add(name)) found.Add(name);
+        }
+        return found;
+    }
+
     /// <summary>Wraps each accepted match in
     /// <c>&lt;entity repo="..." guid="..."&gt;matchedText&lt;/entity&gt;</c>, working right-to-left
     /// so earlier offsets stay valid as the string grows. <c>repo</c> carries the entity's

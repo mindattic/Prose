@@ -182,3 +182,85 @@ public class EntityMentionScannerTests
         Assert.That(matches[0].EntityId, Is.EqualTo(id));
     }
 }
+
+/// <summary>
+/// Pure unit tests for <see cref="EntityMentionScanner.FindUnresolvedProperNouns"/> — the Bible→
+/// Outline refactor Phase 4b residue check that files an <c>[outline-entity]</c> EntityDrift
+/// finding for a capitalized name Scan() left untagged. No DB required: both the text and the
+/// completed Scan() match list are hand-built.
+/// </summary>
+[TestFixture]
+public class EntityMentionScannerFindUnresolvedProperNounsTests
+{
+    [Test]
+    public void NameNotInCandidates_IsReported()
+    {
+        var result = EntityMentionScanner.FindUnresolvedProperNouns(
+            "Marisol Vega walks into the room.", matches: []);
+
+        Assert.That(result, Is.EquivalentTo(new[] { "Marisol Vega" }));
+    }
+
+    [Test]
+    public void NameCoveredByAMatch_IsNotReported()
+    {
+        var id = Guid.NewGuid();
+        var text = "Declan Doyle walks into the room.";
+        var candidates = new List<EntityMentionScanner.MentionCandidate>
+        {
+            new("Declan Doyle", id, "Declan Doyle", "character", RequiresStrictCase: false),
+        };
+        var matches = EntityMentionScanner.Scan(text, candidates);
+
+        var result = EntityMentionScanner.FindUnresolvedProperNouns(text, matches);
+
+        Assert.That(result, Is.Empty);
+    }
+
+    [Test]
+    public void MixOfTaggedAndUntagged_OnlyUntaggedReported()
+    {
+        var id = Guid.NewGuid();
+        var text = "Declan Doyle meets Marisol Vega at the dock.";
+        var candidates = new List<EntityMentionScanner.MentionCandidate>
+        {
+            new("Declan Doyle", id, "Declan Doyle", "character", RequiresStrictCase: false),
+        };
+        var matches = EntityMentionScanner.Scan(text, candidates);
+
+        var result = EntityMentionScanner.FindUnresolvedProperNouns(text, matches);
+
+        Assert.That(result, Is.EquivalentTo(new[] { "Marisol Vega" }));
+    }
+
+    [Test]
+    public void CommonSentenceOpeners_NeverReported()
+    {
+        var result = EntityMentionScanner.FindUnresolvedProperNouns(
+            "The dock was quiet. After the storm, She waited.", matches: []);
+
+        Assert.That(result, Is.Empty);
+    }
+
+    [Test]
+    public void DuplicateName_ReportedOnce()
+    {
+        var result = EntityMentionScanner.FindUnresolvedProperNouns(
+            "Marisol Vega walked. Marisol Vega waited. Marisol Vega left.", matches: []);
+
+        Assert.That(result, Is.EquivalentTo(new[] { "Marisol Vega" }));
+    }
+
+    [Test]
+    public void ShortCapitalizedWord_NotFlagged()
+    {
+        // Length filter (>3 chars) exists so a short incidental capitalized word doesn't spam
+        // findings — matches the same threshold ProseWriterRouter's beat-goal precheck uses.
+        // "Sam" is 3 characters and does match the proper-noun regex shape (unlike "Ok"/"Go",
+        // which are too short even to match the pattern at all), so it actually exercises the
+        // length filter rather than the regex's own minimum-match-length falling short first.
+        var result = EntityMentionScanner.FindUnresolvedProperNouns("Sam left early.", matches: []);
+
+        Assert.That(result, Is.Empty);
+    }
+}
