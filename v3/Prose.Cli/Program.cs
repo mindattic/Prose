@@ -151,6 +151,14 @@ if (UniverseBootstrap.RequestedSlug == null
         // via an explicit --to-universe slug — same "resolves its own per-row UniverseId" shape
         // as the other entries in this list, not the ambient scope.
         "--move-node-universe",
+        // CloseAllSessionsCli: genuinely cross-universe by design (its own doc comment says
+        // "across all nodes") — called automatically by the /commit skill before every commit,
+        // where the caller has no reason to know or care which universe(s) have open sessions.
+        // EditSessions/EditSessionBeats carry no UniverseId column and no query filter at all
+        // (confirmed in ProseDbContext — not in the scoped-entity list), so this was blocked by
+        // this outer CLI gate alone, not by anything at the data layer. Found live 2026-08-30
+        // while running the /commit skill's mandatory pre-commit step.
+        "--close-all-sessions",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
