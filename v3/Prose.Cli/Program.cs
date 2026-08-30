@@ -111,6 +111,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // Explicit --id/--slug/--all targeting via IgnoreQueryFilters(), never an ambient
         // universe default — see ArchiveBookCli/TagEntitiesCli's own doc comments.
         "--archive-book", "--tag-entities",
+        // Explicit --slug (or corpus-wide) targeting via IgnoreQueryFilters(), same exemption
+        // shape as --tag-entities above — see RetireLockedMarkersCli's own doc comment.
+        "--retire-locked-markers",
         // Corpus-wide data-repair backfill: finds orphaned character/place rows via
         // IgnoreQueryFilters() across every universe by design — see BackfillMissingSubtypeRowsCli.
         "--backfill-missing-subtype-rows",
@@ -492,6 +495,16 @@ if (args.Contains("--scan-entity-mentions"))
 if (args.Contains("--tag-entities"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("TagEntitiesCli", args);
+    return;
+}
+
+// CLI mode: Bible->Outline refactor Phase 6a -- retire "LOCKED" markers (author ruling
+// 2026-08-29, decision #3: the LOCK concept is retired, no corner auto-wins). Dry-run first.
+//   prose --retire-locked-markers --dry-run [--slug <slug>]
+//   prose --retire-locked-markers --apply [--slug <slug>]
+if (args.Contains("--retire-locked-markers"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RetireLockedMarkersCli", args);
     return;
 }
 
