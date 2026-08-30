@@ -8,12 +8,12 @@ using Prose.Core.Interfaces;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// Generates and persists the NODE BIBLE — a dry, structural plot document
-/// created before any prose is written. The bible defines logline, premise,
+/// Generates and persists the book's Outline — a dry, structural plot document
+/// created before any prose is written. The Outline defines logline, premise,
 /// register, characters, a numbered beat spine, and seeds-and-payoffs.
 ///
 /// The prose engine (BeatGeneratorService / Node.razor LLM sheet) reads the
-/// bible as <c>BookOutlineContext</c> on every beat so the full arc is always
+/// Outline as <c>BookOutlineContext</c> on every beat so the full arc is always
 /// in view.
 ///
 /// Usage:
@@ -245,21 +245,21 @@ public class NodeOutlineService
     // ── Private helpers ───────────────────────────────────────────────────
 
     private static string BuildBibleSystemPrompt(int targetBeats, string literaryRules) => $"""
-        You are a story architect. Given a one-line seed, produce a NODE BIBLE —
+        You are a story architect. Given a one-line seed, produce a BOOK OUTLINE —
         a dry, structural plan that a prose engine will execute beat by beat.
 
-        Rules for the bible:
+        Rules for the outline:
         - Declarative sentences only. No purple prose. No florid language.
         - Every beat entry is a fact about what happens, not a lyric about it.
         - Be specific: name characters, name costs, name objects that matter.
-        - The bible is a spine. Flesh lives in the prose pass.
+        - The outline is a spine. Flesh lives in the prose pass.
 
         LITERARY RULES (follow these — they define the world's voice):
         {literaryRules}
 
         Output EXACTLY this markdown format. No extra sections. No preamble.
 
-        # NODE BIBLE: [Working Title]
+        # Book Context: [Working Title]
 
         ## LOGLINE
         [One sentence. Who. Does what. At what cost.]

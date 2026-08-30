@@ -114,6 +114,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // Explicit --slug (or corpus-wide) targeting via IgnoreQueryFilters(), same exemption
         // shape as --tag-entities above — see RetireLockedMarkersCli's own doc comment.
         "--retire-locked-markers",
+        // Same exemption shape as --retire-locked-markers above — see
+        // RetireBibleTitleHeaderCli's own doc comment.
+        "--retire-bible-title-header",
         // Corpus-wide data-repair backfill: finds orphaned character/place rows via
         // IgnoreQueryFilters() across every universe by design — see BackfillMissingSubtypeRowsCli.
         "--backfill-missing-subtype-rows",
@@ -521,6 +524,17 @@ if (args.Contains("--tag-entities"))
 if (args.Contains("--retire-locked-markers"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RetireLockedMarkersCli", args);
+    return;
+}
+
+// CLI mode: retire the stale "# NODE BIBLE: [Title]" header baked into pre-fix generated
+// outlines (NodeOutlineService's LLM prompt template). Dry-run first, same shape as
+// --retire-locked-markers above.
+//   prose --retire-bible-title-header --dry-run [--slug <slug>]
+//   prose --retire-bible-title-header --apply [--slug <slug>]
+if (args.Contains("--retire-bible-title-header"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RetireBibleTitleHeaderCli", args);
     return;
 }
 

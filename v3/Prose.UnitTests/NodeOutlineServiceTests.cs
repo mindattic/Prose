@@ -152,7 +152,7 @@ public class NodeOutlineServiceTests
     public void ParseBeatSpine_FullBible_ExtractsOnlySpineSection()
     {
         var bible = """
-            # NODE BIBLE: Test
+            # Book Context: Test
 
             ## LOGLINE
             A man gets a job. It costs him everything.
