@@ -3,7 +3,7 @@ codex: 1
 project: Prose
 layer: methodology
 status: locked
-updated: 2026-07-18
+updated: 2026-08-29
 ---
 
 # THE LOGIC SWEEP — canonical QA methodology {#SS-LOGIC}
@@ -20,7 +20,7 @@ updated: 2026-07-18
 A logic sweep is REQUIRED:
 - after any beat is written, rewritten, merged, split, re-ordered, or disabled;
 - before any export (`--export-node`) or release;
-- after any bible edit that states story facts (sweep verifies prose agreement);
+- after any outline edit that states story facts (sweep verifies prose agreement);
 - on demand, any time a story "feels off" — the sweep names the failure or clears the story.
 
 Scope the sweep to what changed plus its blast radius (the touched beats, their chapters, and
@@ -60,8 +60,8 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
    narrating a name the POV never learned.)
 3. **Timeline.** Reconstruct the story clock from every stated time/date/span. Flag
    impossibilities (an effect timestamped before its cause; one character in two places at the
-   same minute) and unexplained gaps. Respect DELIBERATE impossibilities marked in the bible
-   (e.g., ATTE's 6:02→0540 texture) — the bible names them; don't "fix" them.
+   same minute) and unexplained gaps. Respect DELIBERATE impossibilities marked in the outline
+   (e.g., ATTE's 6:02→0540 texture) — the outline names them; don't "fix" them.
 4. **Plant/payoff ledger.** Two-way table: every planted element → where it pays (or ORPHANED);
    every payoff → where it was planted (or UNPLANTED). Also ARITHMETIC: every count, sum,
    ledger, and roster stated in prose must reconcile — build the actual ledger and walk it.
@@ -89,10 +89,16 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
    edits. Also inverse-orphans: metadata stranded on disabled beats (chapter-start flags,
    titles) — `IsChapterStart` on a disabled beat silently deletes the chapter heading from
    every export.
-6. **Bible agreement.** Prose and `docs/nodes/<CODE>.md` tell the same story. When they
-   disagree: the bible wins on canonical FACTS — unless the finding shows the bible is stale
-   (describes a superseded draft), in which case fix the bible in the same change and run
-   `codex digest` + `doctor`. Never leave the disagreement standing. This dimension is
+6. **Outline agreement.** Prose and `docs/nodes/<CODE>.md` tell the same story. **Arbitration
+   (author ruling 2026-08-29, replaces the old "the outline wins on canonical facts" fixed
+   rule): no corner is automatically authoritative.** Outline ⇄ Book ⇄ Entities is a three-way
+   symbiosis — each corner is verified by the other two, and every divergence is resolved
+   case-by-case on evidence: state which side appears stale and why, citing both texts, then fix
+   whichever the evidence actually points to (the outline, the prose, or both) in the same
+   change and run `codex digest` + `doctor`. Never leave the disagreement standing, and never
+   apply a blanket "X always wins" shortcut — Trinity reconciliation (`TrinityReconciliationService`)
+   is the canonical arbiter for this, recording every ruling as a revertible
+   `ReconciliationDecision` row rather than a silent auto-win. This dimension is
    checked ACROSS ALTITUDES (see [§8](#SS-LOGIC-8)): chapter synopses
    (`NodeChapterSummaries` / `story-synopsis.txt`) are the 100-ft instrument, and
    `prose --altitude-audit --slug <slug>` automates the 10,000↔100 ft comparison. Sweeps may
@@ -164,15 +170,16 @@ A story is examined at three magnifications, and every lens has a dedicated inst
 
 | Altitude | What you see | Instrument / artifact |
 |---|---|---|
-| **10,000 ft — the story** | Premise, arc, locks, structure-as-designed | `Nodes.NodeBible` (hand-authored) + structural blueprint |
+| **10,000 ft — the story** | Premise, arc, structure-as-designed | `Nodes.NodeOutline` (hand-authored) + structural blueprint |
 | **100 ft — the chapter** | What actually happens, in order | `NodeChapterSummaries` + `story-synopsis.txt` (publish artifact) |
 | **10 ft — the beat** | The prose itself; who is in the room; what is true | Beat text + `BeatEntityPresence` + `BeatVerifications` |
 
 **The agreement principle:** the three altitudes must tell the same story — they are one
-specimen at different magnifications. Defects ARE altitude disagreements: a stale bible
+specimen at different magnifications. Defects ARE altitude disagreements: a stale outline
 describing a superseded draft (10,000↔10), two chapters telling incompatible events
-(100↔100), a typo (pure 10 ft). Arbitration follows dimension 6: prose wins on FACTS,
-the bible wins on LOCKS.
+(100↔100), a typo (pure 10 ft). Arbitration follows dimension 6: no altitude is automatically
+authoritative — the divergence is judged case-by-case on evidence (which side is stale, and
+why), never by a blanket rule.
 
 **Instruments per comparison:** 10,000↔100 ft = `prose --altitude-audit` (designed vs told;
 findings filed as `OutlineDrift`); 100↔10 ft and 10↔10 ft = the logic sweep itself
@@ -208,3 +215,61 @@ finding — the section keeps surfacing new problems faster than fix passes reso
 usually means it needs a structural rewrite, not another one-clause splice. This is the same
 "if you can't name the failure, leave the beat alone" doctrine from §4, applied to the campaign
 as a whole rather than one finding: escalate instead of looping forever.
+
+## 10. Cold ledger, felt pass — two disciplines, never one instrument {#SS-LOGIC-10}
+
+Author doctrine (2026-08-29). Real novelists split QA into two disciplines they deliberately
+don't mix, and this engine must too: **a cold ledger for correctness, and a felt pass for
+weight.** The failure mode is trying to get both from the same instrument — a spot-check dimension
+that passes clean while the book reads dead, or a "feel" judgment asked to also certify a fact.
+
+**The cold ledger (§§1–9 above): correctness is clerical, never a memory problem.**
+Working novelists keep scene cards (POV, location, day/time, who's present, what changes, what
+the reader learns) — this engine's Beat + `Beat.Description` **is** the scene card, embedded in
+the outline itself (see the Bible→Outline refactor). Mystery/thriller writers keep day-by-day
+calendars so alibis and travel times arithmetic out — dimension 3 (Timeline) is that calendar.
+Series bibles are LOOKUP TABLES, not lore essays (eye colors, wound history, who-knows-what as of
+which chapter) — `ContinuityClaims` + the wound ledger are that table. At scale, authors stop
+trusting themselves and hire a continuity editor (Sanderson) or lean on superfan encyclopedists
+(Martin) — this engine's equivalent is the fact ledger + Trinity reconciliation + this whole
+sweep. Every dimension in §3, the fact ledger in §3.4, and dimension 6's outline-agreement check
+are cold-ledger instruments. They measure correctness. **They do not, and cannot, measure
+whether the book is good to read.**
+
+**The felt pass: weight is discovered serially, not measured per-beat.** Shape comes from the
+outline layer first — Rowling's famous chapters-as-rows/subplots-as-columns spreadsheet, so a
+quiet thread is visible at a glance (this engine's subplot-carrier/coordination check is that
+grid). Beat-sheet structures (Save the Cat, Swain scene/sequel) set where the big swings should
+land. But no working author believes the outline *delivers* weight — weight comes from three
+practices, in order:
+
+1. **The full-order read at reader speed — the sacred one.** You cannot feel pacing while
+   editing, because editing speed isn't reading speed. Authors print the manuscript, sit
+   somewhere else, and read it straight through like a stranger, marking only where they got
+   bored. **This is the one human-analog ritual this engine keeps sacred, and no per-beat
+   instrument replaces it.** Every dimension in §3 can pass clean — every ledger balanced, every
+   claim reconciled, every altitude agreeing — while the book still reads dead, because deadness
+   is a property of the *sequence*, not of any single beat (the EVEN1 lesson: a clean-report book
+   was later found to have silently dropped its own key beat and hid three more defects, caught
+   only by a full linear read). Run it after the ledgers in §9 are clean, in full reading order,
+   at speed, answering exactly one question: *where did I stop caring?*
+2. **Distance.** Drawer time — weeks between draft and reread, so the cold read is actually cold
+   (King's "six weeks in a drawer"). A same-session reread of your own fix pass is not this.
+3. **Weight-by-length, not weight-by-adjective.** When a beat lands flat, the fix is almost never
+   a better verb — it's structural: give the moment more page-time to accrue pressure before it,
+   or cut the correct-but-inert scene sitting in front of it. Weight is mostly *time under
+   tension*: a payoff feels as heavy as the number of pages the promise spent open, which is why
+   plant/payoff **distance** matters as much as plant/payoff existence (§3.4 tracks the pairing;
+   it does not track the gap between them — that gap is a felt-pass judgment, not a ledger fact).
+
+Then authors outsource the measurement: beta readers and editors don't fix anything, they mark
+where attention died, and the author treats those marks as ground truth because the author can no
+longer feel their own book. Reader-Proxy QA (docs/READER-QA.md) is this engine's beta-reader
+layer — findings-only, no scores, same as the sweep.
+
+**How this shapes engine behavior:** never let a cold-ledger instrument (a sweep dimension, the
+fact ledger, outline-agreement) stand in for a felt-pass verdict, and never ask the full-order
+read to also certify a fact — that's what §§1–9 are for. A flat-beat finding from the full-order
+read gets fixed by reallocating page-time around it, not by rewriting its adjectives. Beta
+readers (a Legion-style panel) are a possible future addition to the felt-pass layer, not a
+replacement for the full-order read itself.

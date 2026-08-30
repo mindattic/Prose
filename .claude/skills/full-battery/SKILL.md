@@ -24,7 +24,7 @@ Driven by `prose --audit-book --full --slug <slug> --universe <u> --json --out <
   EventType / SubplotCarrier / EscalationFloor / DeclaredPurpose), outline-coordination.
 - **DEEP** (`--deep`, implied by `--full`): examine-emotion, book-audit (Gateway/Sequel
   commandments), diagnose-node, check-fidelity (Semantic Fidelity Gap), Logic Sweep
-  (six-dimension causality/knowledge/timeline/plant/orphan/bible), craft-checklist,
+  (six-dimension causality/knowledge/timeline/plant/orphan/outline), craft-checklist,
   check-canon, altitude-audit (10,000↔100 ft drift), reader-qa comprehension.
 - **FULL** (`--full`): + storyscope-audit, swain-audit (Scene/Sequel doctrine), chekhov-audit.
 
@@ -85,8 +85,9 @@ rollup, never a vote) plus every underlying check's pass/fail detail.
      missing element only; set `useOpus:true` on a beat that resists a Sonnet pass).
    - Everything else (Logic Sweep findings, StoryScope anti-tells, craft-checklist, canon,
      comprehension defects) → hand-splice via `update_beat_text`, minimal-splice discipline:
-     prefer data fix → clause → passage → full rewrite (`docs/LOGIC.md` §4). Bible wins on
-     facts unless the finding proves the bible stale — fix the bible in the same change, then
+     prefer data fix → clause → passage → full rewrite (`docs/LOGIC.md` §4). For an outline/prose
+     divergence, state which side the evidence shows is stale and fix that side in the same
+     change — never a blanket "outline always wins" shortcut (`docs/LOGIC.md` §3.6) — then
      `generate_node_doc` + `codex.ps1 digest`/`doctor`.
    - No concrete fix possible → `set_finding_status(id, "Dismissed")` with a stated reason, or
      leave a `BeatVerification` row as-is (it will resurface next run if still real).

@@ -51,14 +51,15 @@ or reviews from this skill** — if the user wants a score, they will say so exp
 2. **AUDIT (report-only agents, one per 1–2 books, Sonnet).** Each agent reads the book
    end-to-end and reports on the six dimensions of `docs/LOGIC.md` §3:
    causality chain / knowledge states (incl. names-before-coining) / timeline (respect
-   bible-marked deliberate impossibilities) / plant-payoff ledger incl. arithmetic walked
+   outline-marked deliberate impossibilities) / plant-payoff ledger incl. arithmetic walked
    end-to-end / orphan references (grep distinctive phrases of every disabled beat; check
-   IsChapterStart stranded on disabled beats) / bible agreement.
+   IsChapterStart stranded on disabled beats) / outline agreement.
    Findings: severity (BLOCKER/MODERATE/MINOR) + SortKeys + quoted text + minimal fix proposal.
    Instruct verbatim: "Do not invent problems — if the logic holds, say so."
-   Bible agreement is checked ACROSS ALTITUDES (docs/LOGIC.md §8): `prose --altitude-audit
-   --slug <slug>` automates the 10,000↔100 ft comparison (bible/blueprint vs chapter
-   synopses; findings filed as OutlineDrift); agents may read the book's
+   Outline agreement is checked ACROSS ALTITUDES (docs/LOGIC.md §8): `prose --altitude-audit
+   --slug <slug>` automates the 10,000↔100 ft comparison (outline/blueprint vs chapter
+   synopses; findings filed as OutlineDrift; no side auto-wins — the divergence is judged
+   case-by-case on evidence, per docs/LOGIC.md §3.6); agents may read the book's
    `story-synopsis.txt` (or `NodeChapterSummaries`) for cheap chapter-altitude scoping
    before deep beat reads.
    Cross-book canon (shared characters, series arcs): one additional cross-read agent over the
@@ -80,8 +81,9 @@ or reviews from this skill** — if the user wants a score, they will say so exp
 
 5. **FIX (separate agents, the audit report as input).** Minimal-splice discipline per
    `docs/LOGIC.md` §4: prefer data fix → clause → passage → rewrite; reassign to established
-   cast, reconcile counts to the load-bearing version; bible wins on facts unless the finding
-   proves the bible stale — then fix the bible in the same change (+ digest/doctor).
+   cast, reconcile counts to the load-bearing version; for an outline/prose divergence, state
+   which side the evidence shows is stale and fix that side in the same change (+ digest/doctor)
+   — never a blanket "outline always wins" or "prose always wins" shortcut.
 
 6. **VERIFY (inside each fix pass).** Changed passages re-read with neighbors; old-defect
    greps = 0; disabled-content greps = 0; repaired arithmetic walked and printed; BOM checks;

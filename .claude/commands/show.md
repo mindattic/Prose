@@ -68,7 +68,7 @@ For a **node** (`"source": "node"`, a book or chapter): `name`, `kind`, `univers
 extension to `ShowCli.cs` rather than a workaround here): `wounds` (`WoundLedger`), `speech`/
 `voice` (a character's `Speech*`/`Psychology*` columns), `timeline`
 (`CharacterTimeline`/`CharacterTimelineBodyChanges`), and node-specific aspects beyond chapter
-count/score (POV/protagonist, full bible). If the user asks for one of these, say plainly that
+count/score (POV/protagonist, full outline). If the user asks for one of these, say plainly that
 this specific lens isn't wired up yet rather than improvising a raw query.
 
 ## 4. Render as an Artifact

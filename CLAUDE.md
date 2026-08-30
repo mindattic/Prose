@@ -112,7 +112,7 @@ What it means in practice:
 ## Per-Node Documentation (SS-A11 + SS-A45)
 
 Every book node with active prose has a **unified Book Context Document** stored in
-`Nodes.NodeBible` (DB) and mirrored to `docs/nodes/<CODE>.md` (generated read-only file).
+`Nodes.NodeOutline` (DB) and mirrored to `docs/nodes/<CODE>.md` (generated read-only file).
 
 **SS-A45 (shipped 2026-07-15): ALL generated `.md` files are gitignored. They do not exist
 in the repo between sessions.** The DB is the heap (permanent, authoritative). `.md` files
@@ -124,8 +124,8 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 | Location | Contains | Source of truth / how to edit |
 |---|---|---|
 | `CanonDocumentSections` (DB) | Every canon doc's actual content, keyed by `CanonDocumentType` (`WorldBible`, `WorldMaster`, `Franchise`, `UniverseCanon`, `CraftGuide`, `UniverseCraft`, `DelightGuide`, `EngineGuide`, `CharacterDoctrine`) | MCP `set_canon_section` — this is the ONLY sanctioned edit path for every generated doc in the row below, with zero exceptions |
-| `Nodes.NodeBible` (DB) | **The single source of truth for that book** — arc, characters, voice, locks, blueprint, beat spine | `set_book_bible` MCP (hand-authored sections) |
-| `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeBible` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
+| `Nodes.NodeOutline` (DB) | **The single source of truth for that book's Outline** — the sequenced, entity-tagged, intent-charged plan: arc, characters, voice, structural notes, blueprint, Event Sequence | `set_book_outline` MCP (hand-authored sections) |
+| `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeOutline` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
 | `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/ENTOS.md`, `docs/CRAFT.md`, `docs/GLMZ.md`, `docs/SCRY.md`, `docs/DELIGHT.md`, `docs/ENGINE.md`, `docs/CHARACTER.md` | Generated canon docs — **ALL ten are DB-backed via `CanonDocumentSections`, ephemeral, gitignored** (verified live 2026-08-23: every one of these carries a `<!-- GENERATED — do not hand-edit -->` banner and real section counts from the DB — this table previously and wrongly told readers to "hand-edit directly" for 5 of these 10 files; that instruction was stale from before they were migrated into `CanonDocumentSections`, and following it risked a silent data-loss bug: a hand edit destroyed by the next `--generate-canon-md --all`) | Edit content via `set_canon_section` MCP, then re-run `prose --generate-canon-md --type <type>` (or `--all`) to materialize the `.md` mirror |
 | Character record `Speech*`/`Psychology*` fields (DB) | Per-narrator voice — **Register layer** of DCM static hierarchy (SS-A46; no `docs/registers/` files) | `create_character` with the id + `speechPatternsJson`; loaded per-beat by DCM |
 | `docs/books/<name>.md` | Legacy long-form book spines (BCODA; maintained in place) | Hand-edit directly |
@@ -137,15 +137,21 @@ Every book is examined at three magnifications (canonical definition: `docs/LOGI
 
 | Altitude | What you see | Instrument |
 |---|---|---|
-| **10,000 ft — book** | Arc, locks, structure-as-designed | `Nodes.NodeBible` + structural blueprint |
+| **10,000 ft — book** | Arc, structure-as-designed | `Nodes.NodeOutline` + structural blueprint |
 | **100 ft — chapter** | What actually happens, in order | `NodeChapterSummaries` / `story-synopsis.txt` |
 | **10 ft — beat** | The prose; who's in the room | Beat text + `BeatEntityPresence` + verifications |
 
-The altitudes must tell the same story — defects ARE altitude disagreements. Arbitration:
-prose wins on facts, bible wins on locks. `prose --altitude-audit --slug <slug>` compares
-10,000↔100 ft (findings filed as OutlineDrift); the logic sweep owns 100↔10 ft. **Planning
-and review start at chapter altitude** — read `story-synopsis.txt` before deep beat reads;
-drop to beat altitude only where a finding points.
+The altitudes must tell the same story — defects ARE altitude disagreements. **Arbitration
+(author ruling 2026-08-29, replaces the old "prose wins on facts / bible wins on locks" fixed
+rule): no altitude is automatically authoritative.** Outline ⇄ Book ⇄ Entities is a three-way
+symbiosis — each corner is verified by the other two, and a divergence is resolved case-by-case
+on evidence (which side is actually stale, and why), never by a blanket rule. Trinity
+reconciliation is the canonical arbiter: every ruling is recorded as a revertible
+`ReconciliationDecision` row, not a silent auto-win. `prose --altitude-audit --slug <slug>`
+compares 10,000↔100 ft (findings filed as OutlineDrift, evidence-based recommendations); the
+logic sweep's `outline_agreement` dimension owns 100↔10 ft the same way. **Planning and review
+start at chapter altitude** — read `story-synopsis.txt` before deep beat reads; drop to beat
+altitude only where a finding points.
 
 ### Dynamic Context Memory (Dynamic Context Memory) — the named protocol
 
@@ -156,7 +162,7 @@ and conversation.
 
 **Three phases:**
 1. **Materialize** — for the current beat, pull from DB exactly what is relevant: the beat's
-   node bible section, blueprint slice, referenced entities (characters, places, factions,
+   node outline section, blueprint slice, referenced entities (characters, places, factions,
    weapons), recent beat window, and applicable canon fragments. Generate these as .md files.
 2. **Inject** — DocContextService includes only the materialized .md files in the LLM prompt
    for this beat. Nothing outside the current scope enters the context.
@@ -175,15 +181,15 @@ resources in DCM. Everything else (entities, topics, relational cascade) is dyna
 | **0 — Engine** | `docs/ENGINE.md` | Every universe, every story, unconditionally | `tier: always` in its own frontmatter — same generic "always" mechanism `DocContextService.PrepareContextAsync` step 1 uses for the pinned universal core; loads above CRAFT.md per its own text ("This is DCM tier 0 — it loads above CRAFT.md and above every universe document, on every beat, always") |
 | **1 — Base** | `docs/CRAFT.md` | All universes, all stories | Globally pinned via `add_context_doc` (24h; renew each session) |
 | **2 — Universe** | `docs/GLMZ.md` (GLMZ) or `docs/SCRY.md` (Fantasy) | One universe | Globally pinned; keyword triggers activate per-book |
-| **3 — BookBible** | `docs/nodes/<CODE>.md` | One book | `node` tier — auto-loaded by DocContextService; evicts on book change |
-| **4 — Register (SS-A46)** | The **POV character's Character record** (`SpeechVocabulary` / `SpeechCadence` / `SpeechSubtext` / `SpeechUnderPressure` / `SpeechIntimacyRegister` / `PsychologySecret`) | One narrating character (**per beat** — POV can change within a book) | The beat's narrator (from the bible **POV Map** → `BeatEntityPresence` `PresenceType='pov'` row) is materialized and **pinned dominant** (score 999) by `DocContextService.PrepareForNodeAsync(povEntityId:)`; other present characters' registers still load via clue-gathering (step 0) but don't override the narrator's |
+| **3 — BookOutline** | `docs/nodes/<CODE>.md` | One book | `node` tier — auto-loaded by DocContextService; evicts on book change |
+| **4 — Register (SS-A46)** | The **POV character's Character record** (`SpeechVocabulary` / `SpeechCadence` / `SpeechSubtext` / `SpeechUnderPressure` / `SpeechIntimacyRegister` / `PsychologySecret`) | One narrating character (**per beat** — POV can change within a book) | The beat's narrator (from the outline **POV Map** → `BeatEntityPresence` `PresenceType='pov'` row) is materialized and **pinned dominant** (score 999) by `DocContextService.PrepareForNodeAsync(povEntityId:)`; other present characters' registers still load via clue-gathering (step 0) but don't override the narrator's |
 
 `docs/CHARACTER.md` (the Character Doctrine, `CanonDocumentType.CharacterDoctrine`) is a **topic**
 tier doc, not a static layer — it loads via keyword triggers (character/cast/protagonist/
 antagonist/relationship/dialogue/motive/arc/pov, etc.), same as any other topic doc, not
 unconditionally on every beat.
 
-**Hierarchy resolution:** When layers conflict, the lower tier wins for its own book (Register > BookBible > Universe > Base > Engine). Use the narrowest scope that is authoritative — except Engine tier (SS-ENGINE-0's own text: "none may contradict this one").
+**Hierarchy resolution:** When layers conflict, the lower tier wins for its own book (Register > BookOutline > Universe > Base > Engine). Use the narrowest scope that is authoritative — except Engine tier (SS-ENGINE-0's own text: "none may contradict this one").
 
 **Voice is the character, not a file (SS-A46, 2026-07-20).** There are no `docs/registers/<NAME>.md` files and no imposed tonal/flagship registers (JOY, SORROW, Kyle/CODA are retired and deleted). A narrator's voice lives in their **Character record's speech/psychology fields** — so it is loaded automatically by the existing DCM entity-doc path when that character is on the page, and it **evolves as the record evolves**: update the character (via `create_character` with the id, or a wound/continuity claim) and the next beat's prose tracks the change. The clear base voice (CRAFT.md §0–§2) is the floor; the character's own diction and attention are the only "register." A Pixel chapter reads in Pixel's voice; a Bear chapter in Bear's.
 
@@ -199,7 +205,7 @@ by calling prose generation tools at beat scope, not book scope.
 
 During prose generation (via ProseWriterRouter / CLI / MCP), DocContextService handles
 context injection automatically. For the current beat it pulls exactly the relevant entities,
-beats, blueprint slice, node bible section, and canon fragments — materializes them as .md
+beats, blueprint slice, node outline section, and canon fragments — materializes them as .md
 files — injects them into the LLM prompt — then GCs them after a sliding window of
 non-reference. **The engine manages the scope; you don't have to.** Only a small, relevant
 subset of .md files is present at any moment — never a full dump of all data.
@@ -215,7 +221,7 @@ subset of .md files is present at any moment — never a full dump of all data.
 
 Then PrepareContextAsync runs its five passes:
 1. **always** — pinned universal core (BIBLE.digest.md)
-2. **node** — the active book's bible + register (evicted on book change)
+2. **node** — the active book's outline + register (evicted on book change)
 3. **keyword** — topic docs whose Triggers match the beat-goal text (includes newly-created
    entity docs from step 0, since they carry name/slug triggers)
 4. **embedding** — topic docs semantically near the beat goal (markdown embedding scope)
@@ -262,7 +268,7 @@ The `related:` field contains project-relative paths (e.g., `docs/nodes/M101.md`
 GUIDs). Paths that don't resolve to a known `MarkdownFile` are silently dropped.
 
 **When to use `related:`:**
-- A node bible that references specific canon docs heavily (e.g., `docs/universes/ENTOS.md`)
+- A node outline that references specific canon docs heavily (e.g., `docs/universes/ENTOS.md`)
 - A universe doc that depends on a companion canon doc
 - Entity docs (future) linking to their place or faction docs
 
@@ -289,7 +295,7 @@ which beat, in-world date) before Chapter 4's `.md` is generated. Never edit the
 generation), trigger generation at the **narrowest possible scope**:
 
 ```powershell
-prose --generate-node-doc --slug <slug>      # one book's bible + blueprint
+prose --generate-node-doc --slug <slug>      # one book's outline + blueprint
 prose --generate-canon-md --type <type>      # one canon doc (not --all unless needed)
 prose --sync-markdown                        # push to MarkdownFiles so DocContextService sees it
 ```
@@ -300,20 +306,20 @@ Or MCP: `generate_node_doc` (slug required) + `sync_markdown_files`. Do not run
 **Workflow:**
 
 1. **Before writing or editing a book** — trust the prose engine to auto-inject context.
-   For planning/review where Claude Code needs to read the bible: generate at narrow scope,
+   For planning/review where Claude Code needs to read the outline: generate at narrow scope,
    then GC when done (`powershell -File tools/codex.ps1 gc`).
-2. **To update arc, characters, voice register, or narrative locks** — call `set_book_bible` MCP
+2. **To update arc, characters, voice register, or structural notes** — call `set_book_outline` MCP
    with updated hand-authored markdown. Then re-run `generate_node_doc` so the engine
    picks up the change on the next prose call.
 3. **When a story event confirms an empirical fact** — update DB first (entity row, continuity
    claim, wound log), then regenerate and sync. Never edit `.md` directly.
-4. **Blueprint and beat spine sections are always generated** — edit their sources:
-   `prose --generate-blueprint` for the blueprint, MCP beat tools for beat titles/goals.
+4. **Blueprint and Event Sequence sections are always generated** — edit their sources:
+   `prose --generate-blueprint` for the blueprint, MCP beat tools for beat titles/descriptions.
 
 Never Read or Glob for ephemeral .md files without regenerating them first — they don't
 exist in the repo and may not exist on disk.
 
-**Existing node bibles:**
+**Existing node outlines:**
 - `docs/nodes/PXL.md` — Pixel / PXL (Pixel origin story, GLMZ; formerly PNHL/TDIU; Channeler+Ghost+Splicer; Detroit escape opening)
 - `docs/nodes/BCODA.md` — Bushido Coda flagship novel (GLMZ)
 - `docs/nodes/ATTE.md` — Attendance / Yemina Fola investigation (GLMZ)
@@ -322,7 +328,7 @@ exist in the repo and may not exist on disk.
 - `docs/nodes/SPRW.md` — Sparrow / Elias Macias & the orbital mystery (GLMZ)
 - `docs/nodes/MNEMO.md` — Mnemosync / Amara & Seto (GLMZ, in progress; formerly ULC, redesigned SS-A14)
 - `docs/nodes/TEST.md` — Testament / Bear court-martial (GLMZ)
-- `docs/nodes/M101.md` — M-101 / Declan Doyle origin before VIGL (Fantasy; Verlaine Taking → desertion; renamed from "Soren Rowe" at some point — that name appears nowhere in the current bible or prose)
+- `docs/nodes/M101.md` — M-101 / Declan Doyle origin before VIGL (Fantasy; Verlaine Taking → desertion; renamed from "Soren Rowe" at some point — that name appears nowhere in the current outline or prose)
 - `docs/nodes/MxG.md` — Magenta & Gunmetal / GLMZ run (GLMZ, planned; Shadowrun-style heist → True Lies finale)
 - `docs/nodes/RTR.md` — Read the Room / Faith Larson & Ethan Wolfe (GLMZ; Fenris band; Faith is a Read; Milwaukee dive club)
 - `docs/nodes/LLSS.md` — Lieutenant Lyra, Sinterkin Slayer (Fantasy; standalone; COMPLETE; VIGL prose register exemplar; 1 beat; was LSSS/"Lyra, Sinterspawn Slayer")
@@ -379,8 +385,8 @@ The project follows the **MindAttic Codex** documentation standard. The source o
   **DB-backed** (`CanonDocumentType.Franchise`, confirmed live 2026-08-23 — do not hand-edit; this
   row previously contradicted the Per-Node Documentation table above, which already correctly
   listed FRANCHISE.md as a generated/ephemeral file). Edit via `set_canon_section` MCP.
-- **`Nodes.NodeBible`** (DB, L0 per-book) — book arc, beat spine, character rules, locks,
-  voice register, structural blueprint. **The single source of truth for that BookNode.**
+- **`Nodes.NodeOutline`** (DB, L0 per-book) — book arc, Event Sequence, character rules,
+  voice register, structural blueprint. **The single source of truth for that BookNode's Outline.**
   Mirrored to `docs/nodes/<CODE>.md` as a generated read-only file — never hand-edit the file.
 - **`docs/USER_STORIES.md`** (L2) — test-cited stories + backlog + audit log. Every `✅` names its
   verifying test or recorded evidence.
@@ -390,9 +396,9 @@ The project follows the **MindAttic Codex** documentation standard. The source o
   **Update this doc whenever a book is added, a character state is resolved, or a plant/payoff
   is confirmed.** This is a planning instrument, not a canon source.
 - **`docs/planning/_TEMPLATE.md`** — mandatory 10-section book brief template. Every new GLMZ
-  book fills `docs/planning/<CODE>-brief.md` from this template before a node bible is created
+  book fills `docs/planning/<CODE>-brief.md` from this template before a node outline is created
   (see New Story Workflow Step 0 below).
-- **`docs/rfc/`** — design notes that graduate into BIBLE.md or book bibles.
+- **`docs/rfc/`** — design notes that graduate into BIBLE.md or book outlines.
 - **`docs/data/`** (L5) — canon-as-data: JSON Schemas + the master entity-identity table for the
   `engine_data/*.json` seed corpus. **Live canon is the SQL DB, not files** (SS-LAW-1).
 - **`docs/BIBLE.digest.md`** — GENERATED by `tools/codex.ps1 digest`; never hand-edit. The
@@ -405,14 +411,14 @@ Working rules:
 - **Canon changes go DIRECTLY into the authoritative source** — every canon doc in the table above
   (`BIBLE.md`/`WORLD.md`/`FRANCHISE.md`/`ENTOS.md`/`CRAFT.md`/`GLMZ.md`/`SCRY.md`/`DELIGHT.md`/
   `ENGINE.md`/`CHARACTER.md`) is `CanonDocumentSections` (DB) via `set_canon_section` MCP —
-  **never hand-edit the `.md` file directly for any of these**, `Nodes.NodeBible` (via
-  `set_book_bible` MCP) for book-specific facts. There is no amendment layer. After updating
-  NodeBible, re-run `generate_node_doc` + `prose --sync-markdown`. After calling
+  **never hand-edit the `.md` file directly for any of these**, `Nodes.NodeOutline` (via
+  `set_book_outline` MCP) for book-specific facts. There is no amendment layer. After updating
+  NodeOutline, re-run `generate_node_doc` + `prose --sync-markdown`. After calling
   `set_canon_section` for any canon doc, re-run `prose --generate-canon-md --type <type>` (or
   `--all`) to materialize the `.md` mirror, then `prose --sync-markdown` so DocContextService
   picks up the change.
 - A fact lives in **exactly one file**; cite it by its stable `{#SS-...}` id, never by line number.
-- Update the Bible/books status in the **same change** that moves a goal; "done" means a test or
+- Update the Outline/books status in the **same change** that moves a goal; "done" means a test or
   build proves it.
 - After editing any `docs/*` canon file, run `powershell -File tools/codex.ps1 digest` then
   `powershell -File tools/codex.ps1 doctor` — doctor must pass. (`pwsh` is not installed; use `powershell`.)
@@ -426,37 +432,38 @@ exception, for every new book.** No stage is skipped and no stage is reordered t
 faster. The premise is unnegotiable: if a book doesn't make sense at the outline/synopsis level,
 it will not make sense as prose — prose cannot repair a structural or causal defect sitting
 underneath it. When something breaks downstream, walk back to the stage that actually owns the
-defect and fix it there (a wrong fact → fix Stage 3's bible; a plot hole → fix Stage 3/4's spine;
+defect and fix it there (a wrong fact → fix Stage 3's outline; a plot hole → fix Stage 3/4's spine;
 a never-linked entity → fix Stage 1/2), then re-run forward. **Never paper over a lower-stage
 defect by throwing more generation at a later stage** ("no more throw a million tokens at it and
 see if that fixes it" — author's words, binding).
 
 0. **Series Brief** — fill `docs/planning/<CODE>-brief.md` using the template at
-   `docs/planning/_TEMPLATE.md`. The brief must cover all 10 sections before a node bible is
+   `docs/planning/_TEMPLATE.md`. The brief must cover all 10 sections before a node outline is
    created. A book that cannot answer all 10 sections does not belong in the roster yet.
    After filing: update `docs/series/GLMZ.md` Book Roster (§1–2), Character Arc Ledger exit
    states (§3), and Plant/Payoff Registry (§5). Check World-Revelation Sequencing (§6) — this
    book must not reveal anything before its designated book.
 1. **Entity Seeding** — seed every named character, CorpoNation/faction, place, and weapon into
    the DB via CLI or MCP **before anything downstream references them**. The cast, locations, and
-   factions must exist as real rows before the bible names them or the plot uses them.
+   factions must exist as real rows before the outline names them or the plot uses them.
 2. **Relationship Linking — gate: 100% resolution** — every relationship declared on a seeded
    entity (`CharacterRelationships`, `FactionRelationships`, etc.) must resolve to a real
    `TargetEntityId` pointing at another seeded entity, or be explicitly an intentional off-page
    reference (e.g. "an aunt never otherwise named"). Verify before proceeding — a relationship
    left null because the target was simply never seeded is a Stage 1 defect, not an acceptable
    gap: go back, seed the missing entity, and re-save the relationship so it resolves. Do not
-   carry silently-broken edges into the bible.
+   carry silently-broken edges into the outline.
 3. **Book Structure (SS-A43)** — create a **BookNode** (MCP `create_book` / CLI `--create-book`)
    + **ChapterNode** children (MCP `create_chapter`, parent required). Authorial spine (14-beat
    outline) = the book node's `seed` text. This stage is pure infrastructure — an empty shell with
-   title/slug/seed — not content decisions; it exists this early only because `SetBookBible`
-   writes onto `Nodes.NodeBible`, which requires the row to already exist.
-4. **Bible & Plot** — if new world facts: GLMZ facts → `docs/BIBLE.md`/`docs/WORLD.md`;
+   title/slug/seed — not content decisions; it exists this early only because `SetBookOutline`
+   writes onto `Nodes.NodeOutline`, which requires the row to already exist.
+4. **Outline & Plot** — if new world facts: GLMZ facts → `docs/BIBLE.md`/`docs/WORLD.md`;
    Fantasy/Entos facts → `docs/universes/ENTOS.md`. Write the book's hand-authored content (arc,
-   characters, voice register, locks, POV map) via `set_book_bible` MCP into `Nodes.NodeBible`.
-   Every named entity and relationship the bible describes must already exist from Stages 1–2 —
-   the bible describes the graph, it does not invent it. Add a story entry to
+   characters, voice register, structural notes, POV map) via `set_book_outline` MCP into
+   `Nodes.NodeOutline`. Every named entity and relationship the outline describes must already
+   exist from Stages 1–2 — the outline describes the graph, it does not invent it. Add a story
+   entry to
    `docs/USER_STORIES.md`; run `codex doctor`. Do NOT use `docs/AMENDMENTS.md` — it is retired.
 5. **Synopsis Coherence Gate — mandatory, prose-free** — before any structural blueprint or prose
    is generated, read the chapter-by-chapter synopsis/outline end-to-end (100 ft altitude —
@@ -473,7 +480,7 @@ see if that fixes it" — author's words, binding).
      the plot beat that should exercise it is missing.
    Use `prose --altitude-audit --slug <slug>` (existing 10,000↔100 ft drift check) as a starting
    instrument, then read the synopsis directly — findings triage BLOCKER/MODERATE/MINOR exactly
-   like a logic sweep. **A book that fails this gate goes back to Stage 3/4 for a bible/spine
+   like a logic sweep. **A book that fails this gate goes back to Stage 3/4 for an outline/spine
    rewrite. It does not proceed to Stage 6 "to see if it works out in the writing."**
 6. **Structural blueprint (StoryScope countermeasures)** — only once Stage 5 is clean at BLOCKER,
    run `prose --generate-blueprint --slug <slug>` (MCP `generate_structural_blueprint`). This
@@ -484,7 +491,7 @@ see if that fixes it" — author's words, binding).
    Then run `prose --generate-node-doc --slug <slug>` to regenerate `docs/nodes/<CODE>.md` with the
    blueprint section auto-populated from the DB. If the LLM provider is unavailable (e.g. the
    standing Anthropic credit outage) but the structural decisions are already authored by hand in
-   the brief/bible, use `prose --set-structural-blueprint --slug <slug> --file <path.json>` instead
+   the brief/outline, use `prose --set-structural-blueprint --slug <slug> --file <path.json>` instead
    — same STRICT JSON contract as the generator's prompt, no LLM call, saved with
    `GeneratedBy="manual"` for honest provenance.
 7. **Prose** — Sonnet draft → Opus polish → reflow → logic sweep (see Quality Verification SOP below) → scan entity mentions.
@@ -523,7 +530,7 @@ router's own ambient state (`NodeId`/`beatId` usually already set by the time a 
 | `BeatPlaceService` | **(new 2026-08-28)** Per-beat scene location: the nearest prior beat's extracted `Beat.PlaceName` in this chapter becomes `context.Location` (scene-continuity default), ahead of the book-wide `DefaultLocation` ancestor-walk fallback. Populate via the SCENE-LOCATION slice of the consolidated post-write extraction (new beats) or `prose --extract-beat-locations --slug <slug>` (backfill) | `Location` unset by caller + `NodeId`/`beatId` set |
 | `SceneContextBuilder` | Ambient sensory grounding **incl. the New Weird anomaly layer absorbed from the deleted `AmbientAnomalyService` (2026-08-28 — the two used to double-inject overlapping anomaly blocks under two labels)** | **`context.Location` non-empty** — scene-granular once a book's beat locations are extracted (row above); before that, only the 14/46 books with `DefaultLocation` |
 | `DialogueService` | Multi-character RELATIONSHIP DYNAMICS + DIALOGUE RULES; per-character voice profiles ONLY when no XRay block exists (2026-08-28: when XRay is present it emits the complement — behavioral tells, inferred subtext, heritage/age register — instead of duplicating the six `Speech*` fields XRay already carries) | `Dialogue`/`EmotionalClimax` modes + `CharactersInScene.Count > 0` |
-| `SceneContextAssembler` (+ `WoundLedgerService`) | Per-entity XRay: voice/psychology/wound/behavior profile of everyone on-page — since 2026-08-28 also `verbal_tics`/`avoidances` (previously only in DialogueService's duplicate block), making XRay the single canonical voice rendering | `beatId != Guid.Empty` — never fires on a preview/no-beat-id write. **Runs BEFORE DocContextService since 2026-08-28** and awaits `PersistPovAsync`, fixing the POV ordering race: the 'pov' row used to be written fire-and-forget AFTER DocContext read it, so POV register pinning was a no-op on every beat's FIRST generation. `PersistPovAsync` also now defers to any pre-existing pov row (bible POV-map backfills win over the roster heuristic; previously it could write a SECOND pov row for the beat and `SELECT TOP 1` picked nondeterministically) |
+| `SceneContextAssembler` (+ `WoundLedgerService`) | Per-entity XRay: voice/psychology/wound/behavior profile of everyone on-page — since 2026-08-28 also `verbal_tics`/`avoidances` (previously only in DialogueService's duplicate block), making XRay the single canonical voice rendering | `beatId != Guid.Empty` — never fires on a preview/no-beat-id write. **Runs BEFORE DocContextService since 2026-08-28** and awaits `PersistPovAsync`, fixing the POV ordering race: the 'pov' row used to be written fire-and-forget AFTER DocContext read it, so POV register pinning was a no-op on every beat's FIRST generation. `PersistPovAsync` also now defers to any pre-existing pov row (outline POV-map backfills win over the roster heuristic; previously it could write a SECOND pov row for the beat and `SELECT TOP 1` picked nondeterministically) |
 | `SceneCollisionService` | **(undocumented until 2026-08-23)** How on-page characters' psychology collides given the beat goal | 2+ `CharactersInScene`, non-Combat mode, XRay context present |
 | `ContinuityService` | Canonical/confirmed fact constraints for on-page characters | `CharactersInScene.Count > 0` — empty until the entity pre-check/XRay stack has warmed or the caller set it explicitly |
 | `ContinuityEnforcer` | **(new 2026-08-22, undocumented until now)** Post-generation LLM check: does the just-written beat contradict a CANONICAL/CONFIRMED claim it was actually shown? Closes the gap where the canon block above was prompt-side-only with no verification | After generation, when `ContinuityService` produced a non-empty canon block for the scene |
@@ -653,8 +660,9 @@ enforces this (voting gate, default OFF; explicit `--allow-votes` / `allowVotes:
 3. **Timeline** — reconstruct the book clock; no impossibilities.
 4. **Plant/payoff ledger** — two-way: every plant pays, every payoff was planted.
 5. **Orphan references** — nothing references removed/disabled/merged content.
-6. **Bible agreement** — prose and `Nodes.NodeBible` (the hand-authored sections) tell the same
-   story; fix one in the same change, then re-run `generate_node_doc`.
+6. **Outline agreement** — prose and `Nodes.NodeOutline` (the hand-authored sections) tell the
+   same story; no side auto-wins — fix whichever the evidence points to in the same change, then
+   re-run `generate_node_doc`.
 
 Reports land in `audit-outlines-<date>/logic/`; findings are triaged
 **BLOCKER / MODERATE / MINOR** and fixed with minimal splices. Fix what a finding names;

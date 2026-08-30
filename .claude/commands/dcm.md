@@ -1,7 +1,7 @@
 ---
 description: Log durable canon/craft/structural facts into the real Dynamic Context Memory DB tables (not scratch .md files, not just Claude's own memory) so future prose generation and sessions recall them with perfect fidelity.
 argument-hint: "[what to log, or omit to log whatever was just discussed/discovered]"
-allowed-tools: Bash, PowerShell, Read, Edit, Write, Grep, Glob, mcp__prose__set_canon_section, mcp__prose__set_book_bible, mcp__prose__generate_node_doc, mcp__prose__sync_markdown_files, mcp__prose__create_character
+allowed-tools: Bash, PowerShell, Read, Edit, Write, Grep, Glob, mcp__prose__set_canon_section, mcp__prose__set_book_outline, mcp__prose__generate_node_doc, mcp__prose__sync_markdown_files, mcp__prose__create_character
 ---
 
 # /dcm — write it into Dynamic Context Memory, not a scratch file
@@ -9,7 +9,7 @@ allowed-tools: Bash, PowerShell, Read, Edit, Write, Grep, Glob, mcp__prose__set_
 **The point of this command**: this project has hundreds of ephemeral `.md` files under `docs/`
 and `docs/nodes/` that are all GENERATED MIRRORS, gitignored, and regenerated on demand (SS-A45).
 They are not memory — they are a cache. The actual persistent memory is the SQL database:
-`CanonDocumentSections` (world/craft/universe facts), `Nodes.NodeBible` (per-book facts),
+`CanonDocumentSections` (world/craft/universe facts), `Nodes.NodeOutline` (per-book facts),
 character/entity records (`Speech*`/`Psychology*` fields, wounds, continuity claims). **When you
 learn or decide something worth remembering across sessions, write it to the DB row that owns it,
 then regenerate the mirror — never the reverse, and never leave it living only in a hand-edited
@@ -22,7 +22,7 @@ project canon — canon belongs in this project's own DB so the prose engine its
 | The fact is about... | Lives in | Write via |
 |---|---|---|
 | Engine invariant, GLMZ world fact, Fantasy/Entos world fact | `CanonDocuments`/`CanonDocumentSections` | `mcp__prose__set_canon_section`, then `prose --generate-canon-md --type <Type>` |
-| One book's arc, characters, voice register, locks, blueprint, beat spine, or a **structural/state discrepancy note** (like "this book's chapter split regressed in the live DB") | `Nodes.NodeBible` (that book's row) | `mcp__prose__set_book_bible` (preferred, full-body write) — or CLI `prose --set-book-bible --slug <slug> --file <path>` (also a FULL OVERWRITE — read the current bible first, append/edit, write the whole thing back). Always follow with `prose --generate-node-doc --slug <slug> --universe <u>` + `prose --sync-markdown` so the mirror and `MarkdownFiles` (what DocContextService actually injects) pick it up |
+| One book's arc, characters, voice register, structural notes, blueprint, Event Sequence, or a **structural/state discrepancy note** (like "this book's chapter split regressed in the live DB") | `Nodes.NodeOutline` (that book's row) | `mcp__prose__set_book_outline` (preferred, full-body write) — or CLI `prose --set-book-outline --slug <slug> --file <path>` (also a FULL OVERWRITE — read the current outline first, append/edit, write the whole thing back). Always follow with `prose --generate-node-doc --slug <slug> --universe <u>` + `prose --sync-markdown` so the mirror and `MarkdownFiles` (what DocContextService actually injects) pick it up |
 | A character's voice, psychology, wounds, relationships | That character's `Entity`/`Character` record | `mcp__prose__create_character` (pass the id + the changed field) — never a `docs/registers/*.md` file, those are retired (SS-A46) |
 | A craft principle (universal prose rule, or a universe-specific craft addition) | `CanonDocumentSections` row inside the CraftGuide/GLMZ-craft/SCRY-craft document | Same as row 1 — **do NOT hand-edit `docs/CRAFT.md`/`docs/GLMZ.md`/`docs/SCRY.md` directly**, despite what CLAUDE.md's summary table says; those files carry a "GENERATED — do not hand-edit" banner and CLAUDE.md is stale on this point (verify DB-backed generation is still true via `Program.cs`'s `--generate-canon-md` handler before trusting either source blindly) |
 
