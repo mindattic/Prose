@@ -187,4 +187,46 @@ public class StoryScopeAuditServiceTests
         Assert.That(earlyPeak.Severity, Is.EqualTo("MODERATE"),
             "no beat in the climax zone reaches the overall peak stakes — this IS a genuine early-peak defect");
     }
+
+    // ── ComputeSubplotGap: backs the positional subplot check (docs/LOGIC.md §10, Rowling grid) ──
+
+    [Test]
+    public void ComputeSubplotGap_SingleCarrierEarly_TrailingGapIsTheMax()
+    {
+        // Only one carrier appearance, at unit 0 of 20 — the thread is touched once and never
+        // again, so the trailing gap (19) is what must be reported, not zero.
+        var (maxGap, threshold) = StoryScopeAuditService.ComputeSubplotGap([0], 20);
+        Assert.That(maxGap, Is.EqualTo(19));
+        Assert.That(threshold, Is.EqualTo(5)); // floor: 20 * 0.20 = 4, floor is 5
+    }
+
+    [Test]
+    public void ComputeSubplotGap_EvenlySpreadCarriers_PassesUnderThreshold()
+    {
+        // 20 units, carriers every 4 units — well under the proportional threshold (4).
+        var (maxGap, threshold) = StoryScopeAuditService.ComputeSubplotGap([0, 4, 8, 12, 16, 19], 20);
+        Assert.That(maxGap, Is.EqualTo(4));
+        Assert.That(threshold, Is.EqualTo(5));
+    }
+
+    [Test]
+    public void ComputeSubplotGap_LongQuietStretch_ExceedsThreshold()
+    {
+        // 20 units: carriers at 0 and 1, then nothing until the end — an 18-unit trailing gap
+        // is well past the 5-unit floor threshold.
+        var (maxGap, threshold) = StoryScopeAuditService.ComputeSubplotGap([0, 1], 20);
+        Assert.That(maxGap, Is.EqualTo(18));
+        Assert.That(maxGap, Is.GreaterThan(threshold));
+    }
+
+    [Test]
+    public void ComputeSubplotGap_ShortBook_FloorPreventsFalsePositive()
+    {
+        // A 6-unit novella with one carrier near the start: the proportional threshold (6 * 0.20
+        // = 1, rounded down) would be absurdly strict without the floor — the floor (5) keeps a
+        // short book from flagging on one unavoidable gap.
+        var (maxGap, threshold) = StoryScopeAuditService.ComputeSubplotGap([1], 6);
+        Assert.That(threshold, Is.EqualTo(5));
+        Assert.That(maxGap, Is.EqualTo(4)); // trailing gap: (6-1)-1 = 4, under the floor
+    }
 }

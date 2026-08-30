@@ -48,6 +48,14 @@ public class StoryScopeAuditService(
 {
     public const string FindingPrefix = "STORYSCOPE";
 
+    // A subplot thread going quiet for more than a fifth of the book's units is long enough for
+    // a reader to forget it exists (docs/LOGIC.md §10 — Rowling's chapters×threads grid).
+    // Proportional, not absolute: a fixed beat-count would be trivial for a 300-beat novel and
+    // impossibly strict for a 20-beat novella. The floor stops a short book flagging on one
+    // unavoidable small gap.
+    private const double SubplotGapFraction = 0.20;
+    private const int SubplotGapFloorUnits = 5;
+
     // ── Public API ────────────────────────────────────────────────────────────
 
     public async Task<StoryScopeAuditReport> AuditAsync(Guid nodeId, CancellationToken ct = default)
@@ -159,8 +167,32 @@ public class StoryScopeAuditService(
                         "Write the subplot carrier beats, or regenerate the blueprint without a subplot if the story genuinely can't hold one.",
                         "insert", null));
                 else
+                {
                     results.Add(Pass("subplot_not_executed", "Subplot executed",
                         $"Subplot carrier beats written: {executed}/{subplotBeatIds.Count}."));
+
+                    // Positional check (docs/LOGIC.md §10 — the Rowling grid): executed at least
+                    // once isn't the same as never going quiet for long enough that a reader
+                    // forgets the thread exists.
+                    var (unitGranularity, units) = StructuralBlueprintService.GroupUnits(beats);
+                    var carrierUnitIndexes = units
+                        .Where(u => u.Beats.Any(b => subplotBeatIds.Contains(b.Beat.Id)))
+                        .Select(u => u.Index)
+                        .OrderBy(i => i)
+                        .ToList();
+                    var (maxGap, gapThreshold) = ComputeSubplotGap(carrierUnitIndexes, units.Count);
+                    var unitNoun = unitGranularity == "chapter" ? "chapters" : "beats";
+
+                    if (maxGap > gapThreshold)
+                        results.Add(new StoryScopeCheck("subplot_gap_too_long", "Subplot thread continuity",
+                            "MODERATE",
+                            $"Subplot (\"{blueprint.SubplotSummary}\") goes {maxGap} {unitNoun} without a carrier beat (threshold {gapThreshold}) — the thread went quiet long enough for a reader to forget it (docs/LOGIC.md §10, Rowling grid).",
+                            "Give the subplot a touch-point inside the quiet stretch, or move a carrier beat earlier/later to shrink the gap.",
+                            "insert", null));
+                    else
+                        results.Add(Pass("subplot_gap_too_long", "Subplot thread continuity",
+                            $"Longest gap between subplot carrier {unitNoun}: {maxGap} (threshold {gapThreshold})."));
+                }
             }
 
             // 2. Deviation surfacing — legal escape hatches, reported for human judgment
@@ -267,6 +299,25 @@ public class StoryScopeAuditService(
 
     static StoryScopeCheck Pass(string key, string title, string evidence) =>
         new(key, title, "PASS", evidence, null, null, null);
+
+    /// <summary>Pure gap-math for the subplot positional check — no DB/LLM, unit-testable in
+    /// isolation. <paramref name="carrierUnitIndexes"/> must be sorted ascending and non-empty
+    /// (callers only reach here once at least one carrier beat has executed).
+    /// Returns the longest run of units between two consecutive carrier appearances — including
+    /// a trailing gap from the last carrier to the end of the book, since a thread touched once
+    /// early and never again has still gone quiet — and the proportional threshold it's judged
+    /// against.</summary>
+    internal static (int MaxGap, int Threshold) ComputeSubplotGap(List<int> carrierUnitIndexes, int totalUnits)
+    {
+        var gaps = new List<int>();
+        for (var i = 0; i + 1 < carrierUnitIndexes.Count; i++)
+            gaps.Add(carrierUnitIndexes[i + 1] - carrierUnitIndexes[i]);
+        gaps.Add((totalUnits - 1) - carrierUnitIndexes[^1]);
+
+        var maxGap = gaps.Max();
+        var threshold = Math.Max(SubplotGapFloorUnits, (int)(totalUnits * SubplotGapFraction));
+        return (maxGap, threshold);
+    }
 
     internal static (string? Value, int Length, int StartIndex) LongestRun(List<string> values)
     {

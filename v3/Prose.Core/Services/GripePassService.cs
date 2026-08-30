@@ -72,6 +72,16 @@ public sealed class GripePassService(
         IReadOnlyList<EngagementSpan> Confirmed, IReadOnlyList<EngagementSpan> Rejected,
         int RawSpans, int QuoteGroundingKills, int FindingsFiled);
 
+    // docs/LOGIC.md §10, practice #3: "weight-by-length, not weight-by-adjective." Static and
+    // generic by design — RunFullOrderReadAsync has no plant/payoff or page-distance data in
+    // scope at this point, and computing it per-finding would be a second query per finding for
+    // marginal specificity over what the finding's own beat number + note already tell a fixer.
+    private const string WeightByLengthFix =
+        "Fix structurally, not stylistically: give this beat more page-time to accrue pressure " +
+        "before it lands, or cut the correct-but-inert scene immediately in front of it. Do NOT " +
+        "rewrite this beat's prose to sound more intense at the same length — that is the wrong " +
+        "fix (docs/LOGIC.md §10, weight-by-length not weight-by-adjective).";
+
     public async Task<GripeRunResult> RunAsync(Guid nodeId, int readers = 4, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -260,7 +270,7 @@ public sealed class GripePassService(
                 s.Severity switch { "blocker" => FindingSeverity.High, "moderate" => FindingSeverity.Medium, _ => FindingSeverity.Low },
                 $"{EngagementFindingSummaryPrefix} beat #{s.StartBeat} ({s.Voters} voter(s), {recovery}): {s.Note}",
                 snippet: s.Quote,
-                suggestedFix: null);
+                suggestedFix: WeightByLengthFix);
         }
 
         log.LogInformation("[full-order-read] {Slug}: {Raw} raw → {Grounded} grounded → {Unique} unique → {Confirmed} confirmed ({Kills} quote-grounding kills).",

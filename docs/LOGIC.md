@@ -239,9 +239,11 @@ whether the book is good to read.**
 **The felt pass: weight is discovered serially, not measured per-beat.** Shape comes from the
 outline layer first — Rowling's famous chapters-as-rows/subplots-as-columns spreadsheet, so a
 quiet thread is visible at a glance (this engine's subplot-carrier/coordination check is that
-grid). Beat-sheet structures (Save the Cat, Swain scene/sequel) set where the big swings should
-land. But no working author believes the outline *delivers* weight — weight comes from three
-practices, in order:
+grid — and, since 2026-08-30, positional: `subplot_gap_too_long` measures the longest run of
+chapters/beats between two carrier appearances against a proportional threshold, not just whether
+the thread was ever touched at all). Beat-sheet structures (Save the Cat, Swain scene/sequel) set
+where the big swings should land. But no working author believes the outline *delivers* weight —
+weight comes from three practices, in order:
 
 1. **The full-order read at reader speed — the sacred one.** You cannot feel pacing while
    editing, because editing speed isn't reading speed. Authors print the manuscript, sit
@@ -274,6 +276,20 @@ layer — findings-only, no scores, same as the sweep.
 **How this shapes engine behavior:** never let a cold-ledger instrument (a sweep dimension, the
 fact ledger, outline-agreement) stand in for a felt-pass verdict, and never ask the full-order
 read to also certify a fact — that's what §§1–9 are for. A flat-beat finding from the full-order
-read gets fixed by reallocating page-time around it, not by rewriting its adjectives. Beta
+read gets fixed by reallocating page-time around it, not by rewriting its adjectives — every
+finding the full-order read files now carries that instruction as its own `suggestedFix`, so the
+steer reaches whoever applies the fix without having to re-derive it from this doctrine. Beta
 readers (a Legion-style panel) are a possible future addition to the felt-pass layer, not a
 replacement for the full-order read itself.
+
+**A correction, found live 2026-08-30:** an earlier draft of this session's work also tried to
+give the full-order read a "drawer time" nudge — warn (never block) when the beats in scope were
+edited too recently. That was wrong and was reverted before shipping. Drawer time is about a
+*human author's own memory* of writing fading enough that a reread becomes genuinely cold — but
+the full-order read's "reader" is a jury of stateless LLM calls (`ReviewLlmTransport.
+AssignJuryAsync`) that never had any exposure to the beat at write time in the first place. There
+is no memory to fade, so wall-clock time since `Beat.UpdatedAt` measures nothing the instrument
+actually needs — every run is already maximally cold by construction. Do not reintroduce a
+timing-based warning here; if a future distance-style safeguard is wanted, it would have to target
+something that actually accumulates state between the write and the read (there is none today),
+not elapsed clock time.
