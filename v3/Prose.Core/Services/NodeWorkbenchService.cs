@@ -669,6 +669,63 @@ public class NodeWorkbenchService
     }
 
     /// <summary>
+    /// Re-stamps <see cref="Node.UniverseId"/> on <paramref name="rootId"/> and every node in its
+    /// full subtree (book + all descendant chapters, whatever the nesting depth) to
+    /// <paramref name="newUniverseId"/> — a whole-book relocation between universes. Beats
+    /// themselves carry no <c>UniverseId</c> (they're scoped only via the <c>BeatNodes</c> join to
+    /// a Node — see CLAUDE.md's BeatNodes schema note), so moving the Node rows is sufficient for
+    /// the book to read/write correctly under its new universe scope; no Beat/BeatNode row needs
+    /// to change.
+    ///
+    /// Added 2026-08-30 alongside <c>CreateUniverseCli</c> to close a confirmed gap: there was no
+    /// way to create a universe or relocate a book into one. Unlike <see
+    /// cref="GetLeafDescendantIdsAsync"/> (which deliberately returns only leaves, for manuscript
+    /// assembly), this collects every node in the subtree — the book root and every intermediate
+    /// chapter — since all of them carry their own <c>UniverseId</c> that must move together.
+    /// </summary>
+    public async Task<int> MoveSubtreeToUniverseAsync(Guid rootId, Guid newUniverseId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var root = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == rootId, ct)
+            ?? throw new InvalidOperationException($"Node {rootId} not found.");
+
+        var subtreeIds = new List<Guid>();
+        var visited = new HashSet<Guid>();
+        await CollectSubtreeAsync(db, rootId, subtreeIds, visited, ct);
+
+        var nodes = await db.Nodes.IgnoreQueryFilters()
+            .Where(n => subtreeIds.Contains(n.Id))
+            .ToListAsync(ct);
+
+        foreach (var node in nodes)
+        {
+            node.UniverseId = newUniverseId;
+            node.UpdatedAt = DateTime.UtcNow;
+        }
+        await db.SaveChangesAsync(ct);
+
+        log.LogInformation("Moved node {RootId} \"{Title}\" and {Count} descendant(s) to universe {UniverseId}",
+            rootId, root.Title, nodes.Count - 1, newUniverseId);
+        return nodes.Count;
+    }
+
+    private static async Task CollectSubtreeAsync(
+        ProseDbContext db, Guid nodeId, List<Guid> result, HashSet<Guid> visited, CancellationToken ct)
+    {
+        if (!visited.Add(nodeId)) return; // cycle guard
+        result.Add(nodeId);
+
+        var children = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.ParentNodeId == nodeId)
+            .Select(n => n.Id)
+            .ToListAsync(ct);
+
+        foreach (var childId in children)
+            await CollectSubtreeAsync(db, childId, result, visited, ct);
+    }
+
+    /// <summary>
     /// Hard-delete a node and its full subtree (write-gate Phase 0, 2026-08-22 — moved verbatim
     /// from <c>DeleteNodeCli.cs</c>'s recursive post-order walk, the CLI becomes a thin wrapper
     /// around this). Beats exclusively owned by a deleted node are deleted with it; beats shared

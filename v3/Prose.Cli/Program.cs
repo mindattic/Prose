@@ -143,6 +143,14 @@ if (UniverseBootstrap.RequestedSlug == null
         // Entity beat mentions (2026-08-26): resolves an explicit --entity id/slug directly,
         // same shape as --merge-entity/--restore-entity above — no ambient scope needed.
         "--entity-mentions",
+        // CreateUniverseCli (2026-08-30): inserts a brand-new Universe row keyed by its own
+        // --slug; there is no existing universe to scope to yet.
+        "--create-universe",
+        // MoveNodeUniverseCli (2026-08-30): resolves its source node via NodeRefResolver
+        // (IgnoreQueryFilters, same shape as --merge-entity/--reparent-node) and its destination
+        // via an explicit --to-universe slug — same "resolves its own per-row UniverseId" shape
+        // as the other entries in this list, not the ambient scope.
+        "--move-node-universe",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -1585,6 +1593,23 @@ if (args.Contains("--restore-beat-text"))
 if (args.Contains("--rename-universe"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RenameUniverseCli", args);
+    return;
+}
+
+// CLI mode: create a new Universe row. See CreateUniverseCli.
+//   prose --create-universe --slug <slug> --name <name> [--theme <theme>] [--description <text>]
+if (args.Contains("--create-universe"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CreateUniverseCli", args);
+    return;
+}
+
+// CLI mode: relocate a book node (and its full descendant chapter subtree) into a different
+// universe. See MoveNodeUniverseCli.
+//   prose --move-node-universe (--slug <slug> | --id <id>) --to-universe <universeSlug>
+if (args.Contains("--move-node-universe"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MoveNodeUniverseCli", args);
     return;
 }
 
