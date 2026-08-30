@@ -71,7 +71,7 @@ public static class MorningReportCli
             foreach (var c in crossReport.Conflicts.Take(10))
                 Console.WriteLine($"    {c.EntityName} | {c.Predicate}: \"{c.MajorityObject}\" vs \"{c.MinorityObject}\"  [{string.Join("/", c.MinorityBooks)}]");
             if (crossReport.Conflicts.Count > 10)
-                Console.WriteLine($"    ... and {crossReport.Conflicts.Count - 10} more. Run prose --consistency-audit for full list.");
+                Console.WriteLine($"    ... and {crossReport.Conflicts.Count - 10} more. Run prose --cross-book-consistency-audit for full list.");
         }
         sections.Add(BuildContradictionsHtml(crossReport));
         Console.WriteLine();

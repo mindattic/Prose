@@ -4,7 +4,11 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --consistency-audit [--all | --since &lt;hours&gt;]
+/// prose --cross-book-consistency-audit [--all | --since &lt;hours&gt;]
+///
+/// Renamed from --consistency-audit (2026-08-30) — it collided by word-order with the
+/// unrelated --audit-consistency (DataConsistencyCli's SSOT-drift audit). This one is
+/// specifically cross-book.
 ///
 /// Surfaces factual claims that contradict across different book nodes.
 /// Reads the existing ContinuityClaims table (no LLM calls). Filters to

@@ -182,7 +182,9 @@ public class ProseWriterRouter(
             await TraceStageAsync("NodeOutlineFallback", async () =>
             {
                 await using var bibleDb = await dbFactory.CreateDbContextAsync(ct);
-                var nodeBible = await bibleDb.Nodes.AsNoTracking()
+                // IgnoreQueryFilters(): context.NodeId is an already-resolved explicit id, not an
+                // ambient scope — same rule as NodeWorkbenchService's explicit-id lookups.
+                var nodeBible = await bibleDb.Nodes.AsNoTracking().IgnoreQueryFilters()
                     .Where(n => n.Id == context.NodeId)
                     .Select(n => n.NodeOutline)
                     .FirstOrDefaultAsync(ct);
@@ -239,7 +241,7 @@ public class ProseWriterRouter(
                 var bookId = await ResolveBookAncestorAsync(locDb, context.NodeId, ct);
                 if (bookId == null) return;
 
-                var defaultLoc = await locDb.Nodes.AsNoTracking()
+                var defaultLoc = await locDb.Nodes.AsNoTracking().IgnoreQueryFilters()
                     .Where(n => n.Id == bookId.Value)
                     .Select(n => n.DefaultLocation)
                     .FirstOrDefaultAsync(ct);
@@ -793,7 +795,7 @@ public class ProseWriterRouter(
             try
             {
                 await using var cdb = await dbFactory.CreateDbContextAsync(ct);
-                var s = await cdb.Nodes.AsNoTracking()
+                var s = await cdb.Nodes.AsNoTracking().IgnoreQueryFilters()
                     .Where(x => x.Id == context.NodeId)
                     .Select(x => new { x.PreviousNodeId, x.UniverseId })
                     .FirstOrDefaultAsync(ct);
@@ -923,8 +925,14 @@ public class ProseWriterRouter(
             // can lag by sessions and never ties back to the specific beat/constraint set.
             // Findings loop back into later beats via BuildFindingsGuidanceAsync exactly like
             // EMOTIONAL-DEPTH/READABILITY/STORYSCOPE/Reader-Proxy QA above.
+            //
+            // Gated on continuityContext.Length > 0 (2026-08-30 fix): there is nothing to
+            // enforce against when ContinuityService produced no canon block for this scene —
+            // without this check, the enforcer paid for an LLM call on every beat with
+            // CharactersInScene set, even when zero CANONICAL/CONFIRMED claims applied.
             if (continuityEnforcer != null && findings != null && capturedNodeId != Guid.Empty
-                && context.CharactersInScene.Count > 0 && !string.IsNullOrWhiteSpace(capturedResult))
+                && context.CharactersInScene.Count > 0 && !string.IsNullOrWhiteSpace(capturedResult)
+                && !string.IsNullOrEmpty(continuityContext))
             {
                 await TraceStageAsync(nameof(ContinuityEnforcer), async () =>
                 {
@@ -942,7 +950,7 @@ public class ProseWriterRouter(
                     if (violations.Count == 0 || dbFactory == null) return;
 
                     await using var fdb = await dbFactory.CreateDbContextAsync(CancellationToken.None);
-                    var slug = await fdb.Nodes.AsNoTracking()
+                    var slug = await fdb.Nodes.AsNoTracking().IgnoreQueryFilters()
                         .Where(n => n.Id == capturedNodeId).Select(n => n.Slug).FirstOrDefaultAsync(CancellationToken.None);
                     if (string.IsNullOrEmpty(slug)) return;
                     var fp = $"node:{slug}";
@@ -1111,7 +1119,7 @@ public class ProseWriterRouter(
         if (dbFactory == null) return "";
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var slug = await db.Nodes.AsNoTracking()
+        var slug = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(s => s.Id == nodeId)
             .Select(s => s.Slug)
             .FirstOrDefaultAsync(ct);
@@ -1192,7 +1200,7 @@ public class ProseWriterRouter(
         var currentId = (Guid?)nodeId;
         for (var depth = 0; depth < 5 && currentId is { } cid; depth++)
         {
-            var row = await db.Nodes.AsNoTracking()
+            var row = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(n => n.Id == cid)
                 .Select(n => new { n.Kind, n.ParentNodeId })
                 .FirstOrDefaultAsync(ct);

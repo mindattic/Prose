@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**287 tools** across **49 tool families.**
+**294 tools** across **50 tool families.**
 
 ## Families
 
@@ -23,7 +23,7 @@
 | [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
 | [Book Audit](#book-audit) | 2 |
-| [Book Health](#book-health) | 1 |
+| [Book Health](#book-health) | 2 |
 | [Book Logic](#book-logic) | 3 |
 | [Canon](#canon) | 9 |
 | [Canon Doc](#canon-doc) | 7 |
@@ -33,6 +33,7 @@
 | [Context](#context) | 5 |
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 5 |
+| [Craft Instrument](#craft-instrument) | 6 |
 | [Data Integrity](#data-integrity) | 4 |
 | [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
@@ -184,6 +185,12 @@ Run the full book-health battery and return one Structural Integrity Index (SII,
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug — a book or a lone chapter.
 - `tier` (string, optional) — free | deep | full
 - `model` (string, optional) — Optional model override for the deep/full tier's LLM calls.
+
+### `publish_readiness`
+
+docs/LOGIC.md §9's five-point publish-readiness convergence gate, computed as one answer: (1) zero open BLOCKER/MODERATE logic-sweep findings, (2) zero open CONTRADICTED fact-ledger claims, (3) two consecutive dry logic-sweep rounds against the book's current text, (4) blast-radius recheck clean on every beat, (5) zero open High/BLOCKER Reader-Proxy QA findings. Read-only — makes no LLM calls and runs no new checks, only reads what earlier sweep/audit/ledger runs already filed or persisted.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug — a book or a lone chapter.
 
 ## Book Logic
 
@@ -594,6 +601,53 @@ Set which book/series node an existing entity belongs to (Entity.OriginNodeId), 
 
 - `id` (string, required) — Existing entity id (32-char hex or full UUID).
 - `originNodeSlug` (string, optional) — Book/series node slug to scope this entity to. Empty clears it (universe-wide/shared).
+
+## Craft Instrument
+
+<sub>`CraftInstrumentTools`</sub>
+
+### `compute_metrics`
+
+Computes and upserts per-beat prose quality metrics (sentence stats, type-token ratio, Flesch-Kincaid, dialogue proportion) for one book or every enabled beat corpus-wide. CPU-only — no LLM or API calls. Safe to re-run; results are upserted.
+
+- `slug` (string, optional) — Node slug — omit and set all=true to compute corpus-wide instead.
+- `all` (bool, optional) — Compute for every enabled beat corpus-wide instead of one book.
+
+### `extract_beat_locations`
+
+Backfill the per-beat scene location (Beat.PlaceName + resolved Beat.PlaceEntityId) for one book — batched Haiku extraction in reading order, hash-gated on Beat.PlaceExtractedFromHash vs TextHash so unchanged beats cost nothing on re-run. New beats get this automatically via the consolidated post-write extraction; this tool exists for backfilling the existing corpus.
+
+- `slug` (string, required) — Node slug or code.
+- `force` (bool, optional) — Re-extract every beat, ignoring the hash gate.
+- `limit` (int, optional) — Optional cap on how many beats to process this call.
+- `dryRun` (bool, optional) — Preview without writing.
+
+### `hook_audit`
+
+Chapter-hook strength analysis (ChapterHookService): classifies every chapter's final passage (question/danger/decision/revelation/arrival/emotional/none, strength 0-3) in one batched Haiku call. Weak non-final endings file "HOOK " CraftChecklist findings.
+
+- `slug` (string, required) — Node slug or code.
+- `dryRun` (bool, optional) — Preview findings without writing them.
+
+### `lint_prose`
+
+Deterministic prose linter (RepetitionLintService) — echo words, crutch phrases, pet words, unattributed dialogue runs, airless-narration runs, floating-heads beats. Zero LLM cost. Findings land in the Findings table (CraftChecklist, "LINT " prefix) and loop back into future generation. Run compute_metrics first so dialogue-proportion checks have data.
+
+- `slug` (string, required) — Node slug or code.
+- `dryRun` (bool, optional) — Preview findings without writing them.
+
+### `location_scan`
+
+Runs the LocationContradictionService corpus scan — "a character can only be in one place at a time" — over located_at Edges and dated legacy chapter-beats. Corpus-wide by design, not scoped to one book. Conflicts are filed to the Findings inbox (Contradiction category). The scan reports its own data-coverage status honestly (empty result is common until in-world dates/locations are populated).
+
+- `minTravelMinutes` (int, optional) — Minimum minutes between two locations to NOT count as a contradiction (dramatic-license knob).
+
+### `pov_audit`
+
+POV discipline + voice distinctiveness audit (PovVoiceAuditService): head-hopping out of the recorded POV narrator, and same-scene characters speaking in interchangeable registers. Batched Haiku per chapter; findings ("POV " / "VOICE ", CraftChecklist) loop back into future generation. Explicit invocation only — an LLM-cost decision.
+
+- `slug` (string, required) — Node slug or code.
+- `dryRun` (bool, optional) — Preview findings without writing them.
 
 ## Data Integrity
 

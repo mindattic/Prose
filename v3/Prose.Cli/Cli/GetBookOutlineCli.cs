@@ -11,7 +11,8 @@ namespace Prose.Cli;
 /// generation, formatting, or truncation. Written to <c>--out</c> when given, otherwise stdout.
 ///
 /// Added 2026-08-23 to close a real tooling gap. The only ways to read a bible were
-/// <c>--book-outline</c> (which GENERATES a fresh one via an LLM — destructive, not a dump) and the
+/// <c>--generate-book-outline</c> (renamed from --book-outline 2026-08-30 for exactly this
+/// reason — it GENERATES a fresh one via an LLM, destructive, not a dump) and the
 /// MCP <c>get_book_outline</c> tool (which returns 100K+ chars into the caller's context). That left
 /// no safe way to do the read-edit-write round trip <c>--set-book-outline --file</c> exists for, so a
 /// targeted bible correction on VIGL (a 118K-char bible needing a two-clause fix) had no sanctioned

@@ -322,7 +322,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ContinuityLongSweepService>();
 
         // Cross-story consistency — surfaces contradictions that span multiple book nodes.
-        // CPU-only query over the existing ContinuityClaims table. Used by prose --consistency-audit.
+        // CPU-only query over the existing ContinuityClaims table. Used by
+        // prose --cross-book-consistency-audit (renamed from --consistency-audit 2026-08-30).
         services.AddSingleton<CrossBookConsistencyService>();
 
         // Per-beat prose quality metrics — CPU-only nightly compute (sentence stats,
@@ -411,8 +412,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<UniverseInterchangeService>();
         services.AddSingleton<OutboxService>();
 
-        // Reads sys.* into a JSON-friendly graph for the /schema visualization.
-        services.AddSingleton<SchemaGraphService>();
+        // SchemaGraphService removed 2026-08-30 (confirmed dead code — the /schema visualization
+        // route it served was orphaned by the Blazor UI deletion, 2026-08-13 commit ed22bd4f6;
+        // no CLI/MCP caller ever replaced it).
 
         // Repeatable workflow for "relocate every character matching predicate
         // X to place P + add to faction F". Touches Characters / Records.Json /
@@ -692,12 +694,9 @@ public static class ServiceCollectionExtensions
         // Wire transport delegated to MindAttic.Legion's LegionClient.
         services.AddSingleton<MultiLlmService>();
 
-        // TTS enhancement — adds ElevenLabs audio tags before synthesis
-        services.AddSingleton<TtsEnhancementService>();
-
-        // Draft narration — free Windows SAPI voices (Windows only)
-        if (OperatingSystem.IsWindows())
-            services.AddSingleton<WindowsTtsService>();
+        // TtsEnhancementService and WindowsTtsService removed 2026-08-30 (confirmed dead code —
+        // neither had a CLI/MCP caller; the CLI/MCP-only narration path uses IAudioStore/
+        // PiperTtsService via LocalTts.Resolve's factory switch instead).
 
         // Entity extraction — LLM-powered story-to-graph pipeline
         services.AddSingleton<EntityExtractionService>();
@@ -728,8 +727,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<UniversalFactsService>();
 
         // Scene generation pipeline
+        // ContextAnalyzerService removed 2026-08-30 (confirmed dead code — no CLI/MCP caller).
         services.AddSingleton<TextAnalysisService>();
-        services.AddSingleton<ContextAnalyzerService>();
         services.AddSingleton<BeatGeneratorService>();
         services.AddSingleton<NodeOutlineService>();
         services.AddSingleton<NodeDocService>();
@@ -816,14 +815,15 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<DynamicPlaceGenerator>();
 
         // Freelancer story systems. 2026-08-28: ContractGenerator, RandomEncounterService,
-        // ReputationTracker, and ConsequenceEngine deleted — all four were leftovers of the
-        // removed --write-story contract/gig loop with zero live callers.
+        // ReputationTracker, and ConsequenceEngine deleted — all leftovers of the removed
+        // --write-story contract/gig loop with zero live callers. NpcGenerator was the fifth
+        // member of this same family — missed in that pass, deleted here 2026-08-30 for the
+        // identical reason (confirmed zero CLI/MCP callers).
         services.AddSingleton(sp => new NamePoolService(
             sp.GetRequiredService<IPathProvider>(),
             sp.GetRequiredService<SettingsKvStore>(),
             sp.GetRequiredService<IDatabaseService>(),
             sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<NamePoolService>>()));
-        services.AddSingleton<NpcGenerator>();
 
         // Milestone 2 story engine services
         services.AddSingleton<DialogueService>();
@@ -1072,7 +1072,8 @@ public static class ServiceCollectionExtensions
 
         // Book commandment audits — gateway (standalone) and sequel commandment sets.
         // Determined automatically from Node.PreviousNodeId.
-        // Available via `prose --book-audit` and the Tools.StoryAudit MCP tools.
+        // Available via `prose --commandment-audit` (renamed from --book-audit 2026-08-30) and
+        // the Tools.StoryAudit MCP tools.
         services.AddSingleton<BookAuditService>();
 
         // Structural blueprints — pre-prose StoryScope anti-tell commitments

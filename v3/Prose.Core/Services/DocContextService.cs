@@ -9,15 +9,21 @@ namespace Prose.Core.Services;
 /// <summary>
 /// Assembles the rotating cast of pertinent canon <c>.md</c> documents for a context — the
 /// document analog of <see cref="EntityContextService"/>. Sources from the <c>MarkdownFiles</c>
-/// table (classified into always/node/topic by <see cref="MarkdownFileService"/>) and the
-/// <c>markdown</c> prose-embedding scope, layering into a token-budgeted block:
+/// table (classified into always/node/series/topic by <see cref="MarkdownFileService"/>) and the
+/// <c>markdown</c> prose-embedding scope, layering into a token-budgeted block. Corrected
+/// 2026-08-30 — this docstring itself was the stale source CLAUDE.md's own summary of this
+/// method had drifted from (it silently dropped the pinned and series tiers); the real order,
+/// from <see cref="PrepareContextAsync"/>:
 ///
+///   0. PINNED  — caller-supplied override (score 999), e.g. the POV register.
 ///   1. ALWAYS  — the small universal core (every context).
 ///   2. NODE  — docs whose Scope matches the active node CODE (the one bible + one register).
+///   2.5 SERIES — cross-book arc docs (`docs/series/*.md`) matching this book's series/universe.
 ///   3. TOPIC (keyword)    — topic docs whose Triggers appear in the scene/goal text.
 ///   4. TOPIC (embedding)  — topic docs semantically near the text (markdown embedding scope).
+///   5. RELATIONAL CASCADE — one level of each resident doc's own `related:` links.
 ///
-/// The <see cref="DocContextStack"/> holds the working set: pinned always/node, decaying topic.
+/// The <see cref="DocContextStack"/> holds the working set: pinned always/node/series, decaying topic.
 /// </summary>
 public sealed class DocContextService(
     IDbContextFactory<ProseDbContext> dbFactory,

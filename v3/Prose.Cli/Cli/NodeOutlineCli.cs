@@ -5,7 +5,11 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>prose --book-outline</c> — (re)generate the node bible for an existing node.
+/// <c>prose --generate-book-outline</c> — (re)generate the node bible for an existing node.
+///
+/// Renamed from --book-outline (2026-08-30) — too easily confused with the read-only
+/// --get-book-outline (dumps the existing bible verbatim); this one calls an LLM and can
+/// destructively regenerate it. See GetBookOutlineCli's own header for the same note.
 ///
 /// Use this to add a bible to a node created before the bible system existed,
 /// or to regenerate the plan when the book direction changes.
@@ -35,7 +39,7 @@ public static class NodeOutlineCli
         if (string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[book-bible] --slug is required.");
-            Console.Error.WriteLine("Usage: prose --book-outline --slug <slug> [--beats N] [--replace-beats]");
+            Console.Error.WriteLine("Usage: prose --generate-book-outline --slug <slug> [--beats N] [--replace-beats]");
             return 2;
         }
 

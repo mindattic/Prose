@@ -25,6 +25,15 @@ public class DataIntegrityToolsRegistrationTests
         var services = new ServiceCollection();
         services.AddProseServices();
         services.AddLogging();
+        // HubInvoker (2026-08-30 fix — this test started failing once DataIntegrityTools'
+        // constructor began requiring it): registered by Prose.Mcp/Program.cs directly, not by
+        // AddProseServices() (a Prose.Core-owned extension that correctly knows nothing about a
+        // Prose.Mcp-specific type) or by WithToolsFromAssembly (which only auto-registers
+        // [McpServerToolType] classes themselves, not their own dependencies). Mirror Program.cs's
+        // registration here — AddHttpClient() alone is enough for DI resolution; the "ProseHub"
+        // named client's BaseAddress/timeout only matter for an actual call, never made here.
+        services.AddHttpClient();
+        services.AddSingleton<HubInvoker>();
         using var sp = services.BuildServiceProvider();
 
         // DataIntegrityTools is never explicitly registered in the container by AddProseServices()

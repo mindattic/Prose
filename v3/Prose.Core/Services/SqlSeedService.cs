@@ -159,7 +159,13 @@ public class SqlSeedService
         // varies — Blazor host, Core test runner, one-shot CLI — so try a
         // handful of candidate roots. Each candidate is a directory we hope
         // ends in (…/Prose.Core), to which we append Data/Sql/X.
-        var assemblyDir = Path.GetDirectoryName(typeof(SqlSeedService).Assembly.Location) ?? "";
+        // AppContext.BaseDirectory, not Assembly.Location (2026-08-30 fix, IL3000): Location
+        // always returns "" for an assembly embedded in a single-file publish (the Hub's actual
+        // deployed form via deploy.ps1), which silently made this whole candidate-root strategy
+        // dead weight in production while still emitting a trim-analyzer warning on every
+        // publish. BaseDirectory is the single-file-safe equivalent and works in every other
+        // host (dotnet run, unit tests) too.
+        var assemblyDir = AppContext.BaseDirectory;
         var candidateRoots = new List<string>();
 
         // 1. Walk up from the assembly. From any v3/<ProjectName>/bin/.../

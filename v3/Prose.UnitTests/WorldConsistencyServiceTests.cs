@@ -32,19 +32,11 @@ public class WorldConsistencyServiceTests
         TestDbFactory.Reset(paths);
         factory = TestDbFactory.For(paths, "consistency");
 
-        var services = new ServiceCollection();
-        services.AddLogging();
-        services.AddHttpClient<ClaudeService>();
-        services.AddSingleton(new SettingsService(tempDir));
-        var provider = services.BuildServiceProvider();
-
         svc = new WorldConsistencyService(
-            provider.GetRequiredService<IServiceScopeFactory>(),
             factory,
             NullLoggers.For<WorldConsistencyService>());
 
         svc.RunRuleScan      = true;
-        svc.RunConflictCheck = false; // disable Claude-dependent check
         svc.RunDedup         = false;
     }
 
@@ -201,7 +193,6 @@ public class WorldConsistencyServiceTests
             SeedEntity(new { name = n, description = "A person." });
 
         svc.RunRuleScan      = false;
-        svc.RunConflictCheck = false;
         svc.RunDedup         = true;
         svc.DedupThreshold   = 0.90;
 
@@ -217,7 +208,6 @@ public class WorldConsistencyServiceTests
         SeedEntity(new { name = "Zephyr Nakamura-Bell", description = "Other person." });
 
         svc.RunRuleScan      = false;
-        svc.RunConflictCheck = false;
         svc.RunDedup         = true;
         svc.DedupThreshold   = 0.90;
 
@@ -234,7 +224,6 @@ public class WorldConsistencyServiceTests
         SeedEntity(new { name = "Kira Voss", description = "Second." });
 
         svc.RunRuleScan      = false;
-        svc.RunConflictCheck = false;
         svc.RunDedup         = true;
         svc.DedupThreshold   = 0.95;
 
@@ -250,7 +239,6 @@ public class WorldConsistencyServiceTests
         SeedEntity(new { name = "Alexa Krone", description = "." }); // similar but not above 0.95
 
         svc.RunRuleScan      = false;
-        svc.RunConflictCheck = false;
         svc.RunDedup         = true;
         svc.DedupThreshold   = 0.99; // extremely strict
 

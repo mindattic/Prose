@@ -182,6 +182,26 @@ builder.Services.AddProseObserverUi("http://127.0.0.1:5900");
 
 var app = builder.Build();
 
+// Migration guardrail (2026-08-30 fix): nothing previously called Database.Migrate/MigrateAsync
+// anywhere in the Hub, and deploy.ps1 never runs `dotnet ef database update` either — whether a
+// shipped EF migration was actually applied to the live DB depended entirely on someone
+// remembering to do it by hand. Runs first, before anything else touches the DB, so the Hub
+// never serves requests against a schema its own code doesn't match. A migration failure is
+// fatal (not caught/swallowed) — starting up against a half-migrated or stale schema is worse
+// than refusing to start, and this must stay loud, not silently logged and ignored.
+await using (var migrationScope = app.Services.CreateAsyncScope())
+{
+    var migrationDb = await migrationScope.ServiceProvider
+        .GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
+    var pending = (await migrationDb.Database.GetPendingMigrationsAsync()).ToList();
+    if (pending.Count > 0)
+    {
+        Console.WriteLine($"[hub] Applying {pending.Count} pending migration(s): {string.Join(", ", pending)}");
+        await migrationDb.Database.MigrateAsync();
+        Console.WriteLine("[hub] Migrations applied.");
+    }
+}
+
 // Subscribes ONCE to every Phase-3 event and forwards to ObservabilityHub - see
 // ObservabilityBridge's own doc comment. Must run after Build() so DI can resolve
 // IHubContext<ObservabilityHub> (registered by AddSignalR/MapHub).

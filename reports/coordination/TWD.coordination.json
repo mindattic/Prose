@@ -2,9 +2,9 @@
   "nodeCode": "TWD",
   "slug": "the-fall-down-019f78f4",
   "title": "The Way Down",
-  "generatedAtUtc": "2026-08-12 17:21:13Z",
-  "totalBeats": 85,
-  "covered": 85,
+  "generatedAtUtc": "2026-08-30 16:49:58Z",
+  "totalBeats": 84,
+  "covered": 80,
   "chapterGranular": true,
   "bookScope": {
     "TemporalScheme": "linear",
@@ -16,7 +16,9 @@
     "HasBlueprint": true,
     "ConstructionCapacity": 14
   },
-  "flagCounts": {},
+  "flagCounts": {
+    "MISSING_MEANING": 4
+  },
   "beats": [
     {
       "BeatId": "019f9fff-0ec4-7ea6-96a2-908a04ba14b1",
@@ -24,16 +26,17 @@
       "Chapter": "Chapter 1 \u2014 Two Lives",
       "ChapterIndex": 0,
       "Act": 0,
-      "Meaning": "Establishes Reza\u0027s habitual competence and the eerie routine emptiness of his post, priming the reader for disruption.",
       "EscalationTarget": "2",
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 508,
-      "Flags": [],
-      "Covered": true
+      "ProseLength": 18170,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
     },
     {
       "BeatId": "019f9fff-0ee6-7b3d-ac42-2f86049319dd",
@@ -46,7 +49,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 344,
+      "ProseLength": 403,
       "Flags": [],
       "Covered": true
     },
@@ -61,7 +64,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 1033,
+      "ProseLength": 1505,
       "Flags": [],
       "Covered": true
     },
@@ -76,7 +79,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 587,
+      "ProseLength": 744,
       "Flags": [],
       "Covered": true
     },
@@ -91,7 +94,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 401,
+      "ProseLength": 331,
       "Flags": [],
       "Covered": true
     },
@@ -106,7 +109,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 486,
+      "ProseLength": 587,
       "Flags": [],
       "Covered": true
     },
@@ -121,7 +124,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 308,
+      "ProseLength": 179,
       "Flags": [],
       "Covered": true
     },
@@ -136,7 +139,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 655,
+      "ProseLength": 733,
       "Flags": [],
       "Covered": true
     },
@@ -151,7 +154,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 198,
+      "ProseLength": 177,
       "Flags": [],
       "Covered": true
     },
@@ -181,7 +184,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 100,
+      "ProseLength": 36,
       "Flags": [],
       "Covered": true
     },
@@ -196,7 +199,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 219,
+      "ProseLength": 162,
       "Flags": [],
       "Covered": true
     },
@@ -211,7 +214,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 552,
+      "ProseLength": 759,
       "Flags": [],
       "Covered": true
     },
@@ -226,7 +229,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 429,
+      "ProseLength": 503,
       "Flags": [],
       "Covered": true
     },
@@ -241,7 +244,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 810,
+      "ProseLength": 888,
       "Flags": [],
       "Covered": true
     },
@@ -256,7 +259,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 632,
+      "ProseLength": 790,
       "Flags": [],
       "Covered": true
     },
@@ -271,7 +274,7 @@
       "EventType": "arrival",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 627,
+      "ProseLength": 875,
       "Flags": [],
       "Covered": true
     },
@@ -281,16 +284,17 @@
       "Chapter": "Chapter 2 \u2014 The Signatur",
       "ChapterIndex": 1,
       "Act": 0,
-      "Meaning": "Demonstrates Tavi\u0027s practiced tradecraft in action, establishing his competence and the high-stakes environment he\u0027s infiltrating.",
       "EscalationTarget": "3",
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [
         "intertextual-touchpoint"
       ],
-      "ProseLength": 589,
-      "Flags": [],
-      "Covered": true
+      "ProseLength": 14420,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
     },
     {
       "BeatId": "019f9fff-6de0-71ec-b494-dcf11cda459f",
@@ -303,7 +307,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 498,
+      "ProseLength": 576,
       "Flags": [],
       "Covered": true
     },
@@ -318,7 +322,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 106,
+      "ProseLength": 18,
       "Flags": [],
       "Covered": true
     },
@@ -333,7 +337,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 556,
+      "ProseLength": 666,
       "Flags": [],
       "Covered": true
     },
@@ -363,7 +367,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 558,
+      "ProseLength": 862,
       "Flags": [],
       "Covered": true
     },
@@ -378,7 +382,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 299,
+      "ProseLength": 455,
       "Flags": [],
       "Covered": true
     },
@@ -393,7 +397,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 412,
+      "ProseLength": 486,
       "Flags": [],
       "Covered": true
     },
@@ -408,7 +412,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 113,
+      "ProseLength": 60,
       "Flags": [],
       "Covered": true
     },
@@ -438,7 +442,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 591,
+      "ProseLength": 538,
       "Flags": [],
       "Covered": true
     },
@@ -453,7 +457,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 85,
+      "ProseLength": 19,
       "Flags": [],
       "Covered": true
     },
@@ -468,7 +472,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 185,
+      "ProseLength": 94,
       "Flags": [],
       "Covered": true
     },
@@ -483,7 +487,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 409,
+      "ProseLength": 483,
       "Flags": [],
       "Covered": true
     },
@@ -498,7 +502,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 496,
+      "ProseLength": 505,
       "Flags": [],
       "Covered": true
     },
@@ -513,7 +517,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 205,
+      "ProseLength": 283,
       "Flags": [],
       "Covered": true
     },
@@ -528,7 +532,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 528,
+      "ProseLength": 680,
       "Flags": [],
       "Covered": true
     },
@@ -543,7 +547,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 83,
+      "ProseLength": 125,
       "Flags": [],
       "Covered": true
     },
@@ -558,7 +562,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 389,
+      "ProseLength": 779,
       "Flags": [],
       "Covered": true
     },
@@ -573,7 +577,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 701,
+      "ProseLength": 935,
       "Flags": [],
       "Covered": true
     },
@@ -588,7 +592,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 149,
+      "ProseLength": 151,
       "Flags": [],
       "Covered": true
     },
@@ -603,7 +607,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 800,
+      "ProseLength": 1512,
       "Flags": [],
       "Covered": true
     },
@@ -633,7 +637,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 175,
+      "ProseLength": 25,
       "Flags": [],
       "Covered": true
     },
@@ -648,7 +652,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 455,
+      "ProseLength": 689,
       "Flags": [],
       "Covered": true
     },
@@ -663,7 +667,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 123,
+      "ProseLength": 28,
       "Flags": [],
       "Covered": true
     },
@@ -678,7 +682,7 @@
       "EventType": "negotiation",
       "RevelationMode": "curiosity",
       "BeatTags": [],
-      "ProseLength": 554,
+      "ProseLength": 866,
       "Flags": [],
       "Covered": true
     },
@@ -688,7 +692,6 @@
       "Chapter": "Chapter 3 \u2014 The Impossib",
       "ChapterIndex": 2,
       "Act": 0,
-      "Meaning": "Establishes the stakes and fragility of Tavi\u0027s plan by exposing the gap between preparation and uncertain reality.",
       "EscalationTarget": "4",
       "EventType": "discovery",
       "RevelationMode": "suspense",
@@ -696,9 +699,11 @@
         "subplot",
         "intertextual-touchpoint"
       ],
-      "ProseLength": 539,
-      "Flags": [],
-      "Covered": true
+      "ProseLength": 8243,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
     },
     {
       "BeatId": "019f9fff-c7bf-7571-addb-323c43e2abea",
@@ -711,7 +716,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 735,
+      "ProseLength": 622,
       "Flags": [],
       "Covered": true
     },
@@ -726,7 +731,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 608,
+      "ProseLength": 864,
       "Flags": [],
       "Covered": true
     },
@@ -741,7 +746,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 423,
+      "ProseLength": 505,
       "Flags": [],
       "Covered": true
     },
@@ -756,7 +761,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 244,
+      "ProseLength": 322,
       "Flags": [],
       "Covered": true
     },
@@ -771,7 +776,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 346,
+      "ProseLength": 580,
       "Flags": [],
       "Covered": true
     },
@@ -786,7 +791,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 252,
+      "ProseLength": 262,
       "Flags": [],
       "Covered": true
     },
@@ -801,7 +806,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 701,
+      "ProseLength": 857,
       "Flags": [],
       "Covered": true
     },
@@ -816,7 +821,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 83,
+      "ProseLength": 26,
       "Flags": [],
       "Covered": true
     },
@@ -831,7 +836,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 489,
+      "ProseLength": 645,
       "Flags": [],
       "Covered": true
     },
@@ -846,7 +851,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 303,
+      "ProseLength": 381,
       "Flags": [],
       "Covered": true
     },
@@ -861,7 +866,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 559,
+      "ProseLength": 715,
       "Flags": [],
       "Covered": true
     },
@@ -876,7 +881,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 256,
+      "ProseLength": 420,
       "Flags": [],
       "Covered": true
     },
@@ -891,7 +896,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 385,
+      "ProseLength": 463,
       "Flags": [],
       "Covered": true
     },
@@ -906,7 +911,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 77,
+      "ProseLength": 19,
       "Flags": [],
       "Covered": true
     },
@@ -921,7 +926,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 453,
+      "ProseLength": 727,
       "Flags": [],
       "Covered": true
     },
@@ -951,7 +956,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 247,
+      "ProseLength": 483,
       "Flags": [],
       "Covered": true
     },
@@ -966,7 +971,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 64,
+      "ProseLength": 22,
       "Flags": [],
       "Covered": true
     },
@@ -981,7 +986,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 345,
+      "ProseLength": 423,
       "Flags": [],
       "Covered": true
     },
@@ -996,7 +1001,7 @@
       "EventType": "discovery",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 358,
+      "ProseLength": 593,
       "Flags": [],
       "Covered": true
     },
@@ -1006,14 +1011,15 @@
       "Chapter": "Chapter 4 \u2014 The Fall",
       "ChapterIndex": 3,
       "Act": 0,
-      "Meaning": "Opens the chapter on a bare timestamp: the leak (\u0027the slug\u0027) has gone public at 04:17, starting the clock on the fallout that follows (Rafi\u0027s escape, Reza\u0027s reckoning).",
       "EscalationTarget": "5",
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 76,
-      "Flags": [],
-      "Covered": true
+      "ProseLength": 11317,
+      "Flags": [
+        "MISSING_MEANING"
+      ],
+      "Covered": false
     },
     {
       "BeatId": "019fa000-3729-70c2-94e9-d916637fd6d5",
@@ -1026,7 +1032,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 633,
+      "ProseLength": 1026,
       "Flags": [],
       "Covered": true
     },
@@ -1041,7 +1047,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 690,
+      "ProseLength": 1159,
       "Flags": [],
       "Covered": true
     },
@@ -1056,7 +1062,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 746,
+      "ProseLength": 904,
       "Flags": [],
       "Covered": true
     },
@@ -1071,7 +1077,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 169,
+      "ProseLength": 405,
       "Flags": [],
       "Covered": true
     },
@@ -1086,7 +1092,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 639,
+      "ProseLength": 791,
       "Flags": [],
       "Covered": true
     },
@@ -1101,7 +1107,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 645,
+      "ProseLength": 1263,
       "Flags": [],
       "Covered": true
     },
@@ -1116,7 +1122,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 1035,
+      "ProseLength": 1113,
       "Flags": [],
       "Covered": true
     },
@@ -1131,7 +1137,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 733,
+      "ProseLength": 889,
       "Flags": [],
       "Covered": true
     },
@@ -1146,7 +1152,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 917,
+      "ProseLength": 1225,
       "Flags": [],
       "Covered": true
     },
@@ -1161,7 +1167,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 366,
+      "ProseLength": 444,
       "Flags": [],
       "Covered": true
     },
@@ -1176,7 +1182,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 655,
+      "ProseLength": 964,
       "Flags": [],
       "Covered": true
     },
@@ -1191,7 +1197,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 145,
+      "ProseLength": 208,
       "Flags": [],
       "Covered": true
     },
@@ -1206,7 +1212,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 370,
+      "ProseLength": 395,
       "Flags": [],
       "Covered": true
     },
@@ -1221,7 +1227,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 425,
+      "ProseLength": 672,
       "Flags": [],
       "Covered": true
     },
@@ -1236,7 +1242,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 524,
+      "ProseLength": 680,
       "Flags": [],
       "Covered": true
     },
@@ -1251,7 +1257,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 436,
+      "ProseLength": 514,
       "Flags": [],
       "Covered": true
     },
@@ -1266,22 +1272,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 722,
-      "Flags": [],
-      "Covered": true
-    },
-    {
-      "BeatId": "019fa000-372a-7f28-8cc1-d3b165d910ac",
-      "Number": 6751,
-      "Chapter": "Chapter 4 \u2014 The Fall",
-      "ChapterIndex": 3,
-      "Act": 0,
-      "Meaning": "The scene sets the augment booth as the story\u0027s moral flashpoint, showing exploitation already in motion as the vulnerable kid signs away his future.",
-      "EscalationTarget": "5",
-      "EventType": "approach",
-      "RevelationMode": "suspense",
-      "BeatTags": [],
-      "ProseLength": 943,
+      "ProseLength": 771,
       "Flags": [],
       "Covered": true
     },
@@ -1296,7 +1287,7 @@
       "EventType": "approach",
       "RevelationMode": "suspense",
       "BeatTags": [],
-      "ProseLength": 140,
+      "ProseLength": 154,
       "Flags": [],
       "Covered": true
     }

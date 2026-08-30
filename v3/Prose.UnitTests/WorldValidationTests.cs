@@ -129,17 +129,11 @@ public class WorldValidationTests
     [Test]
     public async Task NoWorldRuleViolations()
     {
-        var services = new ServiceCollection();
-        services.AddLogging();
-        var provider = services.BuildServiceProvider();
-
         var svc = new WorldConsistencyService(
-            provider.GetRequiredService<IServiceScopeFactory>(),
             factory,
             NullLoggers.For<WorldConsistencyService>());
 
         svc.RunRuleScan      = true;
-        svc.RunConflictCheck = false; // requires an LLM call — skip
         svc.RunDedup         = false; // slow — skip
 
         await svc.RunAsync();

@@ -7,7 +7,11 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --book-audit --slug &lt;nodeSlug&gt; [--json]
+/// prose --commandment-audit --slug &lt;nodeSlug&gt; [--json]
+///
+/// Renamed from --book-audit (2026-08-30) — it collided by verb/noun-order with the
+/// entirely different --audit-book (the full QA battery, AuditNodeCli/BookHealthService); a
+/// typo silently ran the wrong tool. This command has always been the narrow one.
 ///
 /// Audits a node against its 7 commandments:
 ///   • Gateway commandments — when PreviousNodeId is null (standalone / first in series)
@@ -32,7 +36,7 @@ public static class BookAuditCli
 
         if (slug == null)
         {
-            Console.Error.WriteLine("Usage: prose --book-audit --slug <nodeSlug> [--json]");
+            Console.Error.WriteLine("Usage: prose --commandment-audit --slug <nodeSlug> [--json]");
             return 2;
         }
 

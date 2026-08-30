@@ -338,6 +338,21 @@ public class LogicSweepService(
             consecutiveDry, totalRounds, report, message);
     }
 
+    /// <summary>2026-08-30 addition — read-only convergence check for the publish-readiness gate
+    /// (docs/LOGIC.md §9, condition 3): "is this book CURRENTLY at ≥N consecutive dry sweep
+    /// rounds, against its book text as it stands right now" — same freshness check
+    /// <see cref="RunConvergenceRoundAsync"/> uses in its own already-converged short-circuit
+    /// (lines above), exposed standalone so a caller that only wants the status doesn't have to
+    /// run (and persist) another sweep round just to ask the question.</summary>
+    public async Task<bool> IsConvergedAsync(Guid nodeId, int requiredDryRounds = DefaultRequiredDryRounds, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var state = await db.NodeConvergenceStates.AsNoTracking().FirstOrDefaultAsync(s => s.NodeId == nodeId, ct);
+        if (state == null || state.ConsecutiveDryRounds < requiredDryRounds) return false;
+        var fingerprint = await ComputeBookFingerprintAsync(db, nodeId, ct);
+        return state.LastBookFingerprint == fingerprint;
+    }
+
     /// <summary>Book-wide content fingerprint: <see cref="Beat.ComputeHash"/> over the
     /// concatenation of every enabled beat's own ComputeHash, in the SAME order (leaf-descendant
     /// walk, ordered by BeatNodes.SortKey) <see cref="RunAsync"/> itself reads them in — any

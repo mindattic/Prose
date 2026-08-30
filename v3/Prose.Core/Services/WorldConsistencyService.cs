@@ -12,39 +12,39 @@ namespace Prose.Core.Services;
 /// World consistency checker — port of consistency_check.py and dedup_entities.js.
 ///
 ///   Phase 1 — Rule Scan:      Text-searches all entity files for hardcoded world-rule violations.
-///   Phase 2 — Entity Conflicts: Batches entities and asks Claude to find cross-entity contradictions.
 ///   Phase 3 — Deduplication:  Finds near-duplicate entities by name/description similarity.
 ///
 /// Results are accumulated and available after the run completes.
+///
+/// 2026-08-30 note (holistic-cleanup audit): Phase 1 (via <see cref="ScanText"/>) is the only
+/// piece with a live production caller (the MCP <c>validate_canon_text</c> tool). The full
+/// pipeline (<see cref="RunAsync"/> → Phase 1 + Phase 3) is exercised only by this class's own
+/// unit tests (<c>WorldConsistencyServiceTests.cs</c>, <c>WorldValidationTests.
+/// NoWorldRuleViolations</c>) — real, meaningful test coverage, not dead code, but neither
+/// phase is wired to any CLI/MCP entry point for a caller who wants the corpus-wide sweep
+/// rather than the single-string scan. For actual entity-duplicate remediation (merge,
+/// write-gate integration, CLI tooling), <see cref="DuplicateEntityScanService"/> is the real,
+/// actively-used production system — this class's Phase 3 is a separately-tested algorithm,
+/// not a second production dedup path; do not wire it up as one without first checking whether
+/// DuplicateEntityScanService already covers the need. The former Phase 2 (Entity Conflicts, an
+/// LLM cross-entity contradiction check) was removed here — confirmed zero callers, test or
+/// production (no test ever set RunConflictCheck = true; it required a live Claude call unit
+/// tests correctly never made).
 /// </summary>
 public class WorldConsistencyService : PipelineServiceBase
 {
     public record RuleViolation(string FilePath, string EntityName, string Rule, string MatchedText);
-    public record ConsistencyIssue(string Entity1, string Entity2, string Description, string Severity);
     public record DuplicatePair(string File1, string Name1, string File2, string Name2, double Score);
 
-    private readonly IServiceScopeFactory scopeFactory;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly ILogger<WorldConsistencyService> log;
 
     // Results
     public List<RuleViolation>    RuleViolations  { get; private set; } = [];
-    public List<ConsistencyIssue> EntityConflicts { get; private set; } = [];
     public List<DuplicatePair>    Duplicates      { get; private set; } = [];
-
-    /// <summary>Count of Phase 2 windows whose LLM call failed and were silently skipped
-    /// (2026-08-09 fix). Before this, a failed window's exception was caught and the loop just
-    /// continued adding nothing to EntityConflicts for it — "0 conflicts in this window because
-    /// the check failed" was indistinguishable from "0 conflicts because the window is genuinely
-    /// clean." Lower severity than the other fail-open fixes this session (EntityConflicts is an
-    /// in-memory result displayed once per run, not a persisted cache an outage could poison
-    /// forever) — but still a real signal a caller/UI should be able to show ("N windows could
-    /// not be checked"), not silence.</summary>
-    public int FailedConflictWindowCount { get; private set; }
 
     // Configuration
     public bool RunRuleScan        { get; set; } = true;
-    public bool RunConflictCheck   { get; set; } = true;
     public bool RunDedup           { get; set; } = true;
     public double DedupThreshold   { get; set; } = 0.82;
 
@@ -94,11 +94,9 @@ public class WorldConsistencyService : PipelineServiceBase
     ];
 
     public WorldConsistencyService(
-        IServiceScopeFactory scopeFactory,
         IDbContextFactory<ProseDbContext> dbFactory,
         ILogger<WorldConsistencyService> log)
     {
-        this.scopeFactory = scopeFactory;
         this.dbFactory    = dbFactory;
         this.log          = log;
     }
@@ -106,33 +104,22 @@ public class WorldConsistencyService : PipelineServiceBase
     protected override void OnCancel()
     {
         RuleViolations  = [];
-        EntityConflicts = [];
         Duplicates      = [];
     }
 
-    protected override async Task RunCoreAsync(CancellationToken ct)
+    protected override Task RunCoreAsync(CancellationToken ct)
     {
         RuleViolations  = [];
-        EntityConflicts = [];
         Duplicates      = [];
-        FailedConflictWindowCount = 0;
 
         if (RunRuleScan)
             RunRuleScanPhase();
 
-        if (RunConflictCheck)
-        {
-            using var scope = scopeFactory.CreateScope();
-            var claude = scope.ServiceProvider.GetRequiredService<ClaudeService>();
-            await RunConflictCheckAsync(claude, ct);
-        }
-
         if (RunDedup)
             RunDedupPhase();
 
-        Notify("Done", 1, 1, FailedConflictWindowCount > 0
-            ? $"{FailedConflictWindowCount} conflict-check window(s) could not be evaluated (LLM errors) — re-run to check them"
-            : "");
+        Notify("Done", 1, 1, "");
+        return Task.CompletedTask;
     }
 
     // ── Phase 1: Rule scan ────────────────────────────────────
@@ -204,77 +191,6 @@ public class WorldConsistencyService : PipelineServiceBase
             }
         }
         return hits;
-    }
-
-    // ── Phase 2: Cross-entity conflict check ─────────────────
-
-    private async Task RunConflictCheckAsync(ClaudeService claude, CancellationToken ct)
-    {
-        // Load a representative sample of entities across repos
-        var entities = LoadEntitySummaries(maxPerType: 30);
-        const int windowSize = 10;
-
-        for (int i = 0; i < entities.Count; i += windowSize)
-        {
-            ct.ThrowIfCancellationRequested();
-            await CheckPauseAsync(ct);
-            Notify("Phase 2 — Conflict Check", i, entities.Count, $"window {i / windowSize + 1}");
-
-            var window = entities.Skip(i).Take(windowSize).ToList();
-            var conflictLead = UniverseScope.Current?.UniverseGroundingOr("Review these GLMZ worldbuilding entities for internal contradictions.")
-                ?? "Review these GLMZ worldbuilding entities for internal contradictions.";
-            var prompt = $$"""
-                {{conflictLead}}
-                Look for: factual conflicts between entities, impossible affiliations, timeline contradictions,
-                zone/location inconsistencies, or violations of established world logic.
-
-                World rules:
-                - No city police force (ArcSec is closest thing)
-                - Iowan Behemoths are autonomous machines, not alive
-                - Φ is the Quanta currency symbol
-                - Tiers are social class only — not physical levels/floors
-                - The Spine = western Lake Michigan corridor (Chicago → Milwaukee → Green Bay)
-
-                Entities:
-                {{JsonSerializer.Serialize(window)}}
-
-                Return JSON array of conflicts: [{entity1, entity2, description, severity}]
-                severity = "critical" | "moderate" | "minor"
-                Only return genuine contradictions. Empty array if none found.
-                """;
-
-            try
-            {
-                var response = await claude.GenerateAsync(
-                    system: UniverseScope.Current?.UniverseGroundingOr("You are a world-consistency checker for cyberpunk fiction. Return valid JSON only.")
-                        ?? "You are a world-consistency checker for cyberpunk fiction. Return valid JSON only.",
-                    user: prompt,
-                    temperature: 0,
-                    maxTokens: 1024,
-                    model: "claude-haiku-4-5-20251001",
-                    ct: ct);
-
-                response = StripFences(response);
-                using var doc = JsonDocument.Parse(response);
-                foreach (var item in doc.RootElement.EnumerateArray())
-                {
-                    EntityConflicts.Add(new(
-                        GetStr(item, "entity1"),
-                        GetStr(item, "entity2"),
-                        GetStr(item, "description"),
-                        GetStr(item, "severity")
-                    ));
-                }
-            }
-            catch (Exception ex)
-            {
-                // 2026-08-09 fix: track this instead of silently continuing — a failed window
-                // must not read as "0 conflicts, this window is clean" to whatever displays
-                // EntityConflicts after the run.
-                FailedConflictWindowCount++;
-                log.LogWarning("Conflict check window failed: {Msg}", ex.Message);
-            }
-        }
     }
 
     // ── Phase 3: Deduplication ────────────────────────────────
@@ -399,15 +315,4 @@ public class WorldConsistencyService : PipelineServiceBase
 
     private static string Truncate(string s, int max) =>
         s.Length <= max ? s : s[..max] + "…";
-
-    private static string StripFences(string json)
-    {
-        json = json.Trim();
-        if (json.StartsWith("```"))
-        {
-            var lines = json.Split('\n');
-            json = string.Join('\n', lines.Skip(1).TakeWhile(l => !l.StartsWith("```")));
-        }
-        return json.Trim();
-    }
 }

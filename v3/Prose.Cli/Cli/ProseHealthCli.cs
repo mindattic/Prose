@@ -41,8 +41,11 @@ public static class ProseHealthCli
 
         // ── Markdown report ───────────────────────────────────────────────
         var md = NightlyHealthService.FormatReportMarkdown(report);
+        // yyyy-MM-dd (2026-08-30 fix): every other audit-outlines-* generator uses the dashed
+        // form; this one used yyyyMMdd, so a "most recent audit" lookup by date string could
+        // silently sort/miss this report relative to every sibling report from the same day.
         var dir = outDir
-            ?? Path.Combine("audit-outlines-" + report.RunAt.ToString("yyyyMMdd"), "health");
+            ?? Path.Combine("audit-outlines-" + report.RunAt.ToString("yyyy-MM-dd"), "health");
         Directory.CreateDirectory(dir);
         var fileName = slug != null ? $"{slug}-prose-health.md" : "prose-health.md";
         var filePath = Path.Combine(dir, fileName);

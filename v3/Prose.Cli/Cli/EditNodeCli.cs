@@ -88,7 +88,7 @@ public static class EditNodeCli
 
         if (proposals.Count == 0)
         {
-            Console.WriteLine("[edit-book] No proposals — either there are no reviews yet, or no beat is below the floor threshold. Run --review-book first.");
+            Console.WriteLine("[edit-book] No proposals — either there are no reviews yet, or no beat is below the floor threshold. Run --review-node first.");
             return 0;
         }
 

@@ -22,6 +22,12 @@ public class ContextToolsRegistrationTests
         var services = new ServiceCollection();
         services.AddProseServices();
         services.AddLogging();
+        // HubInvoker (2026-08-30 fix — see DataIntegrityToolsRegistrationTests' own comment for
+        // the full rationale): registered by Prose.Mcp/Program.cs directly, not by
+        // AddProseServices() or WithToolsFromAssembly. AddHttpClient() alone is enough for DI
+        // resolution here — no call is ever actually made.
+        services.AddHttpClient();
+        services.AddSingleton<HubInvoker>();
         using var sp = services.BuildServiceProvider();
 
         try

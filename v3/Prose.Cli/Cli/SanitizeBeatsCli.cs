@@ -10,7 +10,7 @@ namespace Prose.Cli;
 /// Scans beats for UTF-8-as-Windows-1252 mojibake and repairs in place.
 /// Prints a summary of affected beats. Idempotent.
 /// </summary>
-static class SanitizeBeatsCli
+public static class SanitizeBeatsCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {

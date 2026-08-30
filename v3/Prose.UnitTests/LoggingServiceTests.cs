@@ -43,9 +43,14 @@ public class LoggingServiceTests
     [Test]
     public void Search_ParsesStandardSerilogFormat()
     {
+        // Real Serilog default-template format ("yyyy-MM-dd HH:mm:ss.fff zzz") — this fixture
+        // used to be 12-hour AM/PM, a format that was never actually real (2026-08-30 fix): the
+        // production parser was corrected to the real format on 2026-08-21 (see ParseFormats'
+        // own comment) but these fixtures were never updated to match, so every test here
+        // silently parsed zero log lines regardless of what it claimed to assert.
         WriteLogFile("log-20260405.txt",
-            "2026-04-05 02:30:22PM [INF] Application started\n" +
-            "2026-04-05 02:30:23PM [WRN] Slow query detected\n");
+            "2026-04-05 14:30:22.000 +00:00 [INF] Application started\n" +
+            "2026-04-05 14:30:23.000 +00:00 [WRN] Slow query detected\n");
 
         var results = svc.Search(new LogSearchRequest
         {
@@ -62,9 +67,9 @@ public class LoggingServiceTests
     public void Search_FiltersBySeverity()
     {
         WriteLogFile("log-20260405.txt",
-            "2026-04-05 02:30:22PM [INF] Info message\n" +
-            "2026-04-05 02:30:23PM [ERR] Error message\n" +
-            "2026-04-05 02:30:24PM [WRN] Warning message\n");
+            "2026-04-05 14:30:22.000 +00:00 [INF] Info message\n" +
+            "2026-04-05 14:30:23.000 +00:00 [ERR] Error message\n" +
+            "2026-04-05 14:30:24.000 +00:00 [WRN] Warning message\n");
 
         var results = svc.Search(new LogSearchRequest
         {
@@ -81,8 +86,8 @@ public class LoggingServiceTests
     public void Search_FiltersBySearchText()
     {
         WriteLogFile("log-20260405.txt",
-            "2026-04-05 02:30:22PM [INF] Application started\n" +
-            "2026-04-05 02:30:23PM [INF] Database connected\n");
+            "2026-04-05 14:30:22.000 +00:00 [INF] Application started\n" +
+            "2026-04-05 14:30:23.000 +00:00 [INF] Database connected\n");
 
         var results = svc.Search(new LogSearchRequest
         {
@@ -99,10 +104,10 @@ public class LoggingServiceTests
     public void Search_ParsesMultiLineExceptions()
     {
         WriteLogFile("log-20260405.txt",
-            "2026-04-05 02:30:22PM [ERR] Something failed\n" +
+            "2026-04-05 14:30:22.000 +00:00 [ERR] Something failed\n" +
             "System.Exception: Bad things\n" +
             "   at Foo.Bar()\n" +
-            "2026-04-05 02:30:23PM [INF] Recovered\n");
+            "2026-04-05 14:30:23.000 +00:00 [INF] Recovered\n");
 
         var results = svc.Search(new LogSearchRequest
         {
@@ -120,7 +125,7 @@ public class LoggingServiceTests
     public void Search_RespectsMaxResults()
     {
         var lines = string.Join("\n", Enumerable.Range(0, 50)
-            .Select(i => $"2026-04-05 02:30:{i:D2}PM [INF] Message {i}"));
+            .Select(i => $"2026-04-05 14:30:{i:D2}.000 +00:00 [INF] Message {i}"));
         WriteLogFile("log-20260405.txt", lines);
 
         var results = svc.Search(new LogSearchRequest
@@ -143,7 +148,7 @@ public class LoggingServiceTests
     public void Search_NormalizesLevelAbbreviations(string abbrev, string expected)
     {
         WriteLogFile("log-20260405.txt",
-            $"2026-04-05 02:30:22PM [{abbrev}] Test message\n");
+            $"2026-04-05 14:30:22.000 +00:00 [{abbrev}] Test message\n");
 
         var results = svc.Search(new LogSearchRequest
         {
@@ -178,8 +183,8 @@ public class LoggingServiceTests
     [Test]
     public void GetAvailableDates_ReturnsCorrectDates()
     {
-        WriteLogFile("log-20260405.txt", "2026-04-05 02:30:22PM [INF] test\n");
-        WriteLogFile("log-20260404.txt", "2026-04-04 02:30:22PM [INF] test\n");
+        WriteLogFile("log-20260405.txt", "2026-04-05 14:30:22.000 +00:00 [INF] test\n");
+        WriteLogFile("log-20260404.txt", "2026-04-04 14:30:22.000 +00:00 [INF] test\n");
 
         var dates = svc.GetAvailableDates();
         Assert.That(dates, Has.Count.EqualTo(2));
@@ -192,7 +197,7 @@ public class LoggingServiceTests
     [Test]
     public void GetLogSizeBytes_ExistingFile_ReturnsSize()
     {
-        WriteLogFile("log-20260405.txt", "2026-04-05 02:30:22PM [INF] test\n");
+        WriteLogFile("log-20260405.txt", "2026-04-05 14:30:22.000 +00:00 [INF] test\n");
         var size = svc.GetLogSizeBytes(new DateTime(2026, 4, 5));
         Assert.That(size, Is.GreaterThan(0));
     }

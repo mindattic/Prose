@@ -28,6 +28,13 @@ public sealed record BookHealthReport(
     IReadOnlyList<SiiRateAdjustment> RateAdjustments,
     IReadOnlyList<string> ExcludedFromScore);
 
+/// <summary>One of docs/LOGIC.md §9's five publish-readiness conditions.</summary>
+public sealed record PublishReadinessCheck(string Name, bool Pass, string Detail);
+
+/// <summary>The five-point publish-readiness convergence gate (docs/LOGIC.md §9) computed as
+/// one answer — see <see cref="BookHealthService.PublishReadinessAsync"/>.</summary>
+public sealed record PublishReadinessReport(Guid NodeId, string Slug, bool Ready, IReadOnlyList<PublishReadinessCheck> Checks);
+
 /// <summary>
 /// The single "does this book work" battery + score. Runs the FREE/DEEP/FULL tiers of
 /// checks — each check's own service files Findings as a side effect; this service does not
@@ -78,6 +85,10 @@ public class BookHealthService(
     NodeWorkbenchService workbench,
     ContinuityService continuity,
     ContinuityApplyService continuityApply,
+    RepetitionLintService repetitionLint,
+    PovVoiceAuditService povVoiceAudit,
+    ChapterHookService chapterHook,
+    GripePassService gripePass,
     ILogger<BookHealthService> log)
 {
     // ── SII formula constants ───────────────────────────────────────────────────────
@@ -142,6 +153,14 @@ public class BookHealthService(
             await RunCheckAsync(checks, "theme-coherence", () => ThemeCoherenceAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "fact-ledger", () => FactLedgerAsync(slug, ct));
             await RunCheckAsync(checks, "applied-claim-drift", () => AppliedClaimDriftAsync(slug, ct));
+            // 2026-08-30 fix: these three instruments (2026-08-28 tooling overhaul) already
+            // self-file CraftChecklist findings from their own standalone CLI flags but were
+            // never wired into the "one option" battery — --audit-book --deep/--full silently
+            // never ran them. lint-prose is deterministic/zero-LLM-cost; pov-audit and
+            // hook-audit are cheap batched-Haiku calls, same cost class as reader-qa above.
+            await RunCheckAsync(checks, "lint-prose", async () => { await repetitionLint.LintAsync(slug, ct: ct); });
+            await RunCheckAsync(checks, "pov-audit", async () => { await povVoiceAudit.AuditAsync(slug, ct: ct); });
+            await RunCheckAsync(checks, "hook-audit", async () => { await chapterHook.AuditAsync(slug, ct: ct); });
         }
 
         // ── FULL tier — heaviest multi-call audits, cost scales with book length ────
@@ -159,6 +178,13 @@ public class BookHealthService(
                 await RunCheckAsync(checks, "sacred-flaw", () => SacredFlawAsync(nodeId, slug, ct));
             else
                 checks.Add(new CheckOutcome("sacred-flaw", true, $"skipped — NarrativeMode={node.NarrativeMode}, not an invented-psychology book"));
+            // 2026-08-30 fix: Reader-Proxy QA instrument 4 (the findings-only gripe jury —
+            // docs/READER-QA.md) was built and self-files ReaderGripe findings from its own
+            // standalone --reader-qa --gripe-pass flag, but was never wired into --audit-book.
+            // RunAsync (not ProposeAndDuelFixAsync) is the report-only pass — no votes, SS-A44
+            // compliant — a full multi-reader jury read, same cost class as storyscope/swain/
+            // chekhov above, hence FULL tier only.
+            await RunCheckAsync(checks, "gripe-pass", async () => { await gripePass.RunAsync(nodeId, ct: ct); });
         }
 
         var (sii, grade, deduction, rates, excluded) = await ComputeScoreAsync(
@@ -166,6 +192,95 @@ public class BookHealthService(
 
         return new BookHealthReport(nodeId, slug, node.Title, tier.ToString(), DateTime.UtcNow,
             checks, sii, grade, deduction, rates, excluded);
+    }
+
+    /// <summary>Sub-keys FindingCategory.CraftChecklist by its summary prefix (2026-08-30 fix —
+    /// see ComputeScoreAsync's remarks) so LINT/POV+VOICE/HOOK/native craft-checklist findings
+    /// each get their own capped SII bucket instead of sharing one. Every other category passes
+    /// through unchanged.</summary>
+    private static string SubCategoryKey(string category, string summary)
+    {
+        if (category != nameof(FindingCategory.CraftChecklist)) return category;
+        if (summary.StartsWith("LINT ", StringComparison.Ordinal)) return "CraftChecklist:Lint";
+        if (summary.StartsWith("POV ", StringComparison.Ordinal) || summary.StartsWith("VOICE ", StringComparison.Ordinal))
+            return "CraftChecklist:PovVoice";
+        if (summary.StartsWith("HOOK ", StringComparison.Ordinal)) return "CraftChecklist:Hook";
+        return "CraftChecklist:Native";
+    }
+
+    /// <summary>
+    /// docs/LOGIC.md §9's five-point publish-readiness convergence gate, computed as one answer
+    /// (2026-08-30 fix) — previously nothing in the codebase computed this as a single readout;
+    /// a user/agent had to manually cross-reference audit-book's findings rollup, the
+    /// --until-dry round history, fact-ledger findings, and Reader-Proxy QA findings by hand.
+    /// Read-only: makes no LLM calls and runs no new checks — it only reads what earlier
+    /// sweep/audit/ledger runs already filed or persisted, so this is safe (and cheap) to call
+    /// at any time, not just after a fresh --audit-book run.
+    /// </summary>
+    public async Task<PublishReadinessReport> PublishReadinessAsync(Guid nodeId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking()
+            .Where(n => n.Id == nodeId).Select(n => new { n.Slug }).FirstOrDefaultAsync(ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        var slug = node.Slug ?? nodeId.ToString("N");
+        var prefix = $"node:{slug}";
+
+        var openFindings = await db.Findings.AsNoTracking()
+            .Where(f => f.FilePath.StartsWith(prefix) && (f.Status == "New" || f.Status == "Triaged"))
+            .Select(f => new { f.Category, f.Severity, f.Summary })
+            .ToListAsync(ct);
+
+        var checks = new List<PublishReadinessCheck>();
+
+        // 1. Zero open BLOCKER/MODERATE logic-sweep findings. Summary prefix "LOGICSWEEP " (with
+        // the trailing space) distinguishes the full-book sweep's own findings from other
+        // FindingCategory.Contradiction sources (e.g. ContinuityEnforcer's "CONTINUITY-VIOLATION"
+        // findings, or the blast-radius mini-sweep's own "LOGICSWEEP-BLAST" prefix, which does
+        // NOT match "LOGICSWEEP " since it has a hyphen, not a space, after the word).
+        var sweepBad = openFindings.Count(f => f.Summary.StartsWith("LOGICSWEEP ", StringComparison.Ordinal)
+            && (f.Severity == "High" || f.Severity == "Medium"));
+        checks.Add(new PublishReadinessCheck("logic-sweep BLOCKER/MODERATE = 0", sweepBad == 0,
+            sweepBad == 0 ? "clean" : $"{sweepBad} open BLOCKER/MODERATE logic-sweep finding(s)"));
+
+        // 2. Zero open CONTRADICTED fact-ledger claims — "[not-extracted]" is FactLedgerAsync's
+        // own honest-gap marker (never populated), not an actual contradiction; excluded.
+        var contradicted = openFindings.Count(f => f.Summary.StartsWith("FACT-LEDGER [", StringComparison.Ordinal)
+            && !f.Summary.Contains("[not-extracted]", StringComparison.Ordinal));
+        checks.Add(new PublishReadinessCheck("fact-ledger CONTRADICTED = 0", contradicted == 0,
+            contradicted == 0 ? "clean" : $"{contradicted} open contradicted fact-ledger claim(s)"));
+
+        // 3. Two consecutive dry sweep rounds, fresh against the book's CURRENT text.
+        var converged = await logicSweep.IsConvergedAsync(nodeId, ct: ct);
+        checks.Add(new PublishReadinessCheck("2 consecutive dry sweep rounds", converged,
+            converged ? "converged" : "not converged — run prose --logic-sweep --slug <slug> --until-dry"));
+
+        // 4. Blast-radius recheck clean for every beat in this book — RunNarrowAsync scopes its
+        // findings under "beat:{id}:blast", not "node:{slug}", so this needs its own query
+        // rather than the book-prefixed openFindings list above.
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var beatIds = await db.BeatNodes.AsNoTracking()
+            .Where(bn => searchIds.Contains(bn.NodeId)).Select(bn => bn.BeatId).Distinct().ToListAsync(ct);
+        var blastPaths = beatIds.Select(id => $"beat:{id:N}:blast").ToHashSet();
+        var openBlastPaths = await db.Findings.AsNoTracking()
+            .Where(f => (f.Status == "New" || f.Status == "Triaged") && f.FilePath.EndsWith(":blast"))
+            .Select(f => f.FilePath)
+            .ToListAsync(ct);
+        var blastBad = openBlastPaths.Count(blastPaths.Contains);
+        checks.Add(new PublishReadinessCheck("blast-radius recheck clean", blastBad == 0,
+            blastBad == 0 ? "clean" : $"{blastBad} open blast-radius finding(s) on this book's beats"));
+
+        // 5. Zero open High/BLOCKER Reader-Proxy QA findings (comprehension, craft-checklist —
+        // incl. the LINT/POV/VOICE/HOOK sub-instruments, gripe jury).
+        var readerBad = openFindings.Count(f =>
+            (f.Category == nameof(FindingCategory.ComprehensionDefect)
+             || f.Category == nameof(FindingCategory.CraftChecklist)
+             || f.Category == nameof(FindingCategory.ReaderGripe))
+            && f.Severity == "High");
+        checks.Add(new PublishReadinessCheck("Reader-Proxy QA High/BLOCKER = 0", readerBad == 0,
+            readerBad == 0 ? "clean" : $"{readerBad} open High-severity Reader-Proxy QA finding(s)"));
+
+        return new PublishReadinessReport(nodeId, slug, checks.All(c => c.Pass), checks);
     }
 
     private async Task RunCheckAsync(List<CheckOutcome> checks, string name, Func<Task> action)
@@ -1221,12 +1336,20 @@ public class BookHealthService(
         var prefix = $"node:{slug}";
         var open = await db.Findings.AsNoTracking()
             .Where(f => f.FilePath.StartsWith(prefix) && (f.Status == "New" || f.Status == "Triaged"))
-            .Select(f => new { f.Category, f.Severity })
+            .Select(f => new { f.Category, f.Severity, f.Summary })
             .ToListAsync(ct);
 
         var deduction = new List<SiiCategoryDeduction>();
         var totalDeduction = 0;
-        foreach (var g in open.GroupBy(f => f.Category))
+        // 2026-08-30 fix: RepetitionLintService (LINT), PovVoiceAuditService (POV /VOICE ), and
+        // ChapterHookService (HOOK ) all deliberately file under the shared FindingCategory.
+        // CraftChecklist umbrella (see each service's own doc comment) alongside
+        // BeatChecklistGateService's native checklist findings — but a single flat CategoryCap
+        // over that whole group let one instrument's findings silently crowd out another's once
+        // ad hoc runs accumulated. Sub-key CraftChecklist by its summary prefix so each
+        // instrument gets its own capped bucket; every other category is capped as one group
+        // exactly as before.
+        foreach (var g in open.GroupBy(f => SubCategoryKey(f.Category, f.Summary)))
         {
             var high = g.Count(x => x.Severity == "High");
             var medium = g.Count(x => x.Severity == "Medium");

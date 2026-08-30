@@ -77,9 +77,13 @@ Dashboards show **open findings by category/severity + last-run date** instead o
 discipline — nothing deleted). Nothing writes new scores except an explicitly
 requested legacy panel run.
 
-Publish-readiness = logic sweep clean at BLOCKER level + Reader-Proxy QA open
-BLOCKER/High findings = 0. Counts of open MODERATE/MINOR findings are editorial
-judgment, not a gate.
+Publish-readiness is the five-point convergence gate at [docs/LOGIC.md §9](LOGIC.md#SS-LOGIC-9)
+(corrected 2026-08-30 — this section previously restated the older, looser two-part formula
+LOGIC.md §9 itself says it replaces "everywhere it appears"; this was one of the places it
+still appeared). Reader-Proxy QA's own contribution to that gate is condition 5: zero open
+High/BLOCKER Reader-Proxy QA findings. Counts of open MODERATE/MINOR findings are editorial
+judgment, not a gate. `prose --publish-readiness --slug <slug>` (added 2026-08-30) computes
+all five conditions as one readout instead of a manual cross-reference across tools.
 
 ## 5. Jury provider policy {#SS-RQA-5}
 

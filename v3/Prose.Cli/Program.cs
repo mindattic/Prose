@@ -595,8 +595,10 @@ if (args.Contains("--seed") && !args.Contains("--write-node")
 }
 
 // CLI mode: (re)generate the node bible for an existing node.
-//   prose --book-outline --slug <slug> [--beats N] [--replace-beats]
-if (args.Contains("--book-outline"))
+// Renamed from --book-outline (2026-08-30) — too easily confused with the read-only
+// --get-book-outline; this one calls an LLM and can destructively regenerate the bible.
+//   prose --generate-book-outline --slug <slug> [--beats N] [--replace-beats]
+if (args.Contains("--generate-book-outline"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("NodeOutlineCli", args);
     return;
@@ -631,7 +633,8 @@ if (args.Contains("--add-alias"))
 }
 
 // CLI mode: dump the node bible VERBATIM (the read half of --set-book-outline's round trip).
-// NOT --book-outline, which generates a fresh bible via an LLM instead of reading the existing one.
+// NOT --generate-book-outline (renamed from --book-outline 2026-08-30), which generates a
+// fresh bible via an LLM instead of reading the existing one.
 //   prose --get-book-outline --slug <slug|code|guid> [--out <path>]
 if (args.Contains("--get-book-outline"))
 {
@@ -700,46 +703,12 @@ if (args.Contains("--set-narrative-mode"))
     return;
 }
 
-// prose --seed-gospel-cast --universe gospel [--dry-run]
-// One-time Stage-1 entity seed for the Gospel series (zero entities existed) — see SeedGospelCastCli.
-if (args.Contains("--seed-gospel-cast"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedGospelCastCli", args);
-    return;
-}
-
-// prose --seed-glmz-gap-fill --universe glmz [--dry-run]
-// One-time book-scoped entity seed for the corpus's lowest-tagging-coverage GLMZ books — see SeedGlmzGapFillCli.
-if (args.Contains("--seed-glmz-gap-fill"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedGlmzGapFillCli", args);
-    return;
-}
-
-// prose --seed-gap-fill-round2 --part glmz|nonfiction|scry --universe <matching universe> [--dry-run]
-// Round 2 of the entity-tag-coverage sweep, spanning 3 universes — see SeedGapFillRound2Cli.
-if (args.Contains("--seed-gap-fill-round2"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedGapFillRound2Cli", args);
-    return;
-}
-
-// prose --seed-gap-fill-round3 --part nonfiction|gospel|glmz --universe <matching universe> [--dry-run]
-// Round 3 (closing) of the entity-tag-coverage sweep — see SeedGapFillRound3Cli.
-if (args.Contains("--seed-gap-fill-round3"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SeedGapFillRound3Cli", args);
-    return;
-}
-
-// prose --fix-david-mistag --universe gospel [--dry-run]
-// One-time correction for a Round 3 seeding bug (bare "David" colliding with cited scholars named
-// David in Matthew's footnotes) — see FixDavidMistagCli.
-if (args.Contains("--fix-david-mistag"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("FixDavidMistagCli", args);
-    return;
-}
+// --seed-gospel-cast, --seed-glmz-gap-fill, --seed-gap-fill-round2, --seed-gap-fill-round3,
+// --fix-david-mistag: five one-time, non-repeatable corpus data-migration commands, all
+// completed, removed 2026-08-30 (a holistic-cleanup pass flagged them as permanent CLI surface
+// for finished campaigns — the exact "unmanaged pile of one-off tools" pattern being cleaned
+// up). Their handler classes (SeedGospelCastCli, SeedGlmzGapFillCli, SeedGapFillRound2Cli,
+// SeedGapFillRound3Cli, FixDavidMistagCli) are preserved in git history if ever needed again.
 
 // prose --reconcile-trinity --extract|--survey --slug <slug>|--all
 // prose --reconcile-trinity --slug <slug>|--all --allow-votes --confirm-auto-edit [--dry-run]
@@ -1092,13 +1061,11 @@ if (args.Contains("--worker-mode"))
 // CLI mode: have N Legion personas each read an EXISTING node and write an
 // honest, scored reader review (saved to NodeReviews), then synthesize the
 // Amazon-style aggregate summary. Round-robins reviewers across the trusted-4.
+// --review-book/--run-panel literal aliases retired 2026-08-30 — one canonical name only.
 //   prose --review-node (--id <guid|prefix> | --slug <slug>) [--readers N]
-//   prose --review-book / --run-panel  (legacy aliases)
-if (args.Contains("--review-node") || args.Contains("--review-book") || args.Contains("--run-panel"))
+if (args.Contains("--review-node"))
 {
-    var cmdRn = args.Contains("--review-node") ? "--review-node"
-              : args.Contains("--review-book") ? "--review-book" : "--run-panel";
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ReviewNodeCli", cmdRn, args);
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ReviewNodeCli", "--review-node", args);
     return;
 }
 
@@ -1201,15 +1168,11 @@ if (args.Contains("--export-node"))
     return;
 }
 
-// CLI mode: hard-delete all disabled (IsEnabled=false) beats from a book.
-// Use ONLY when a book is export-ready and placeholder beats will never be used.
-// Temporal history retains all deleted beats; data is recoverable by a DBA.
-//   prose --prune-disabled --slug <slug> [--dry-run] [--yes]
-if (args.Contains("--prune-disabled"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("PruneDisabledCli", args);
-    return;
-}
+// --prune-disabled removed 2026-08-30 — PruneDisabledCli had been a retired no-op stub for
+// some time already (BeatNode.IsEnabled no longer exists; disabled beats are hard-deleted for
+// real at removal time, so this command always found zero candidates). The stub existed only
+// so an old script calling it got an explanation instead of silence; the explanation is this
+// comment. Handler class preserved in git history if ever needed again.
 
 // CLI mode: build an Audible AI-narration hand-off package for a node.
 // Produces a narration-clean manuscript, pronunciation guide, and README.
@@ -1749,11 +1712,13 @@ if (args.Contains("--beat-granularity"))
     return;
 }
 
-// prose --consistency-audit [--since <hours>]
+// prose --cross-book-consistency-audit [--since <hours>]
+// Renamed from --consistency-audit (2026-08-30) — collided by word order with the unrelated
+// --audit-consistency (DataConsistencyCli's SSOT-drift audit).
 // Surfaces factual contradictions that span multiple story nodes by querying
 // the existing ContinuityClaims table. CPU-only — no LLM calls.
 // Exit 0 = clean, 1 = conflicts found.
-if (args.Contains("--consistency-audit"))
+if (args.Contains("--cross-book-consistency-audit"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("CrossBookConsistencyAuditCli", args);
     return;
@@ -2290,13 +2255,23 @@ if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-
 // prose --audit-book --slug <book-or-chapter-slug> [--deep] [--full] [--model <id>] [--out <path>] [--json]
 // The "Player Piano" — one repeatable command running the full QA battery + the
 // Structural Integrity Index (SII), a deterministic Findings rollup (BookHealthService).
-// FREE (always): census/coverage/plant/prose/noun/timeline/verify/coordinate.
-// DEEP (--deep): + examine-emotion/book-audit/diagnose/fidelity/logic-sweep/craft-checklist/
-// check-canon/altitude-audit/reader-qa. FULL (--full, implies --deep): + storyscope/swain/chekhov.
+// See AuditNodeCli.cs's own header comment for the authoritative, kept-in-sync tier list
+// (10 FREE / 16 DEEP / 7 FULL checks as of 2026-08-30 — do not re-duplicate the list here,
+// it drifted stale from BookHealthService.RunAsync once already).
 // --model retargets the deep/full tier LLM calls (e.g. Haiku) for the run.
 if (args.Contains("--audit-book"))
 {
     Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("AuditNodeCli", "--audit-book", args);
+    return;
+}
+
+// prose --publish-readiness --slug <slug> [--json]
+// docs/LOGIC.md §9's five-point publish-readiness convergence gate as a single readout
+// (2026-08-30) — see BookHealthService.PublishReadinessAsync and PublishReadinessCli.cs.
+// Read-only, no LLM calls, no cost gate needed.
+if (args.Contains("--publish-readiness"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("PublishReadinessCli", args);
     return;
 }
 
@@ -2314,11 +2289,13 @@ if (args.Contains("--estimate-cost"))
     return;
 }
 
-// prose --book-audit --slug <nodeSlug> [--json]
+// prose --commandment-audit --slug <nodeSlug> [--json]
+// Renamed from --book-audit (2026-08-30) — collided by verb/noun order with the unrelated
+// --audit-book (the full QA battery); a typo silently ran the wrong tool.
 // Audits a node against 7 commandments — gateway (PreviousNodeId=null) or
 // sequel (PreviousNodeId set). Pass/warn/fail per commandment with fix hints.
 // Exit 0 = all pass, 1 = advisory warnings, 2 = blocking failures.
-if (args.Contains("--book-audit"))
+if (args.Contains("--commandment-audit"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BookAuditCli", args);
     return;

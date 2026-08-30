@@ -1,0 +1,189 @@
+{
+  "nodeCode": "GCSH",
+  "slug": "gutenberg-calibration-the-adventures-of-sherlock-holmes-01a0514c",
+  "title": "GUTENBERG CALIBRATION \u2014 The Adventures of Sherlock Holmes",
+  "generatedAtUtc": "2026-08-30 20:03:01Z",
+  "totalBeats": 12,
+  "covered": 0,
+  "chapterGranular": false,
+  "bookScope": {
+    "HasSubplot": false,
+    "Granularity": "beat",
+    "HasBlueprint": false,
+    "ConstructionCapacity": 0
+  },
+  "flagCounts": {
+    "MISSING_MEANING": 12,
+    "NO_CONSTRUCTION": 12
+  },
+  "beats": [
+    {
+      "BeatId": "01a0514d-70ec-7ff7-99ff-5c4c275f693a",
+      "Number": 17265,
+      "Chapter": "A Scandal in Bohemia",
+      "ChapterIndex": 0,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 47564,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-71f8-7330-abba-987e39cc1e60",
+      "Number": 17266,
+      "Chapter": "The Red-Headed League",
+      "ChapterIndex": 1,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 50255,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-72d7-717a-8836-09240a9830dc",
+      "Number": 17267,
+      "Chapter": "A Case of Identity",
+      "ChapterIndex": 2,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 38633,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-73b2-72f6-adfa-09d6544f0cd6",
+      "Number": 17268,
+      "Chapter": "The Boscombe Valley Myst",
+      "ChapterIndex": 3,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 52365,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-749c-7dbd-8df1-bd1a07090711",
+      "Number": 17269,
+      "Chapter": "The Five Orange Pips",
+      "ChapterIndex": 4,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 40247,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-7593-74c8-8e28-2603747ac6f9",
+      "Number": 17270,
+      "Chapter": "The Man with the Twisted",
+      "ChapterIndex": 5,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 50159,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-7688-7ae9-a272-bae93b246072",
+      "Number": 17271,
+      "Chapter": "The Adventure of the Blu",
+      "ChapterIndex": 6,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 42991,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-7776-7821-a84b-3126f4cfd4f4",
+      "Number": 17272,
+      "Chapter": "The Adventure of the Spe",
+      "ChapterIndex": 7,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 54037,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-785a-7530-a14b-94be74422dac",
+      "Number": 17273,
+      "Chapter": "The Adventure of the Eng",
+      "ChapterIndex": 8,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 45459,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-7935-7021-8d67-40af429c719c",
+      "Number": 17274,
+      "Chapter": "The Adventure of the Nob",
+      "ChapterIndex": 9,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 45077,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-7a20-7fdf-9693-9fc554ef32f0",
+      "Number": 17275,
+      "Chapter": "The Adventure of the Ber",
+      "ChapterIndex": 10,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 52018,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    },
+    {
+      "BeatId": "01a0514d-7b1a-75b2-8abe-4accb80f61dc",
+      "Number": 17276,
+      "Chapter": "The Adventure of the Cop",
+      "ChapterIndex": 11,
+      "Act": 0,
+      "BeatTags": [],
+      "ProseLength": 54169,
+      "Flags": [
+        "MISSING_MEANING",
+        "NO_CONSTRUCTION"
+      ],
+      "Covered": false
+    }
+  ]
+}

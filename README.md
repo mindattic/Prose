@@ -280,7 +280,9 @@ the Blazor UIs in Epoch 4.
 1. Assemble `BeatContext` (X-Ray context via `SceneContextAssembler`, `NodeId` always set).
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)`.
 3. `prose --examine-emotion --slug <slug>` — 8-dimension emotional scoring.
-4. `prose --book-audit --slug <slug>` — gateway/sequel commandments once the book is complete.
+4. `prose --commandment-audit --slug <slug>` — gateway/sequel commandments once the book is
+   complete (renamed from `--book-audit` 2026-08-30 — it collided with the unrelated
+   `--audit-book` full battery).
 5. `prose --plant-audit --slug <slug>` — orphaned-plant check.
 6. `prose --storyscope-audit --slug <slug>` — verifies the structural anti-tells held (monotonic
    escalation, varied event types, no moral gloss, no epilogue, subplot executed). BLOCKER
@@ -755,10 +757,11 @@ line-by-line dump — `Program.cs` is the exhaustive source, and the CLI has no 
 | `prose --auto-correct-nightly [--universe <slug>] [--dry-run] [--json]` / `--auto-correct-undo (--run-id <guid> \| --last-n <N>)` / `--auto-correct-status [--list-runs]` | Nightly self-heal pass — 3 whitelisted deterministic auto-fixes, everything else stays a Finding; every mutation undoable (see [Book Completeness](#book-completeness--convergence-gate--self-healing)) |
 | `prose --reader-qa --slug <slug> [--gripe-pass]` | Reader-Proxy QA — comprehension, craft checklist, gripe jury |
 | `prose --craft-checklist --slug <slug>` | Hash-gated binary craft/delight checklist |
-| `prose --duel --slug <slug>` | Cross-provider pairwise splice duels |
+| `prose --duel --beat-id <guid> --candidate <file> [--goal "..."] [--apply]` | Vote-gated (SS-A44) blind A/B duel between a beat's current text and one candidate revision |
 | `prose --diagnose-book --slug <slug>` | 12-check structural pre-flight, cheap |
 | `prose --audit-book [--full] [--deep] [--model haiku]` | Repeatable full-QA orchestrator — every audit tool in one pass |
-| `prose --book-audit --slug <slug>` | Gateway/sequel commandment audit |
+| `prose --publish-readiness --slug <slug>` | docs/LOGIC.md §9's five-point publish-readiness gate as one readout |
+| `prose --commandment-audit --slug <slug>` | Gateway/sequel commandment audit (renamed from `--book-audit` 2026-08-30) |
 | `prose --plant-audit --slug <slug>` | Orphaned plant/payoff detection |
 | `prose --chekhov-audit --slug <slug>` | Setup-and-payoff ledger check |
 | `prose --swain-audit [--all] --slug <slug>` / `--swain-repair` | Scene/Sequel doctrine classification + auto-splice repair |
@@ -773,7 +776,7 @@ line-by-line dump — `Program.cs` is the exhaustive source, and the CLI has no 
 | `prose --graph-health --universe <slug> [--used-in-prose-only]` | Entity relationship graph integrity check — orphans, weak links, junk names; `--used-in-prose-only` filters to entities that actually appear in shipped prose (see [World Graph and Interconnectivity](#world-graph-and-interconnectivity)) |
 | `prose --coordinate` / `--coverage` / `--backfill-coverage` | Cross-service coverage bookkeeping (non-destructive logging for existing beats) |
 | `prose --fix-cross-universe-contamination` | Repairs cross-universe roster/POV leaks (the fail-closed scoping fix from Epoch 4) |
-| `prose --review-book` / `--review-node` / `--review-entity` | **Quarantined legacy vote panels** — SS-A44-gated, explicit request only |
+| `prose --review-node` / `--review-entity` | **Quarantined legacy vote panels** — SS-A44-gated, explicit request only (`--review-book`/`--run-panel` aliases retired 2026-08-30) |
 
 ### Canon & world
 

@@ -18,9 +18,13 @@ public class WorldStatePrecheckService
     private readonly UniverseGraphService graph;
     private readonly ILogger<WorldStatePrecheckService> log;
 
+    // Kept in sync with TimelineConsistencyService.DeathValues (2026-08-30 fix — the two sets
+    // had silently diverged: this pre-write gate didn't recognize "dead (confirmed)", and the
+    // post-hoc sweep didn't recognize "destroyed", so an entity marked dead one way slipped
+    // past whichever check used the other vocabulary).
     private static readonly HashSet<string> DeadStatuses = new(StringComparer.OrdinalIgnoreCase)
     {
-        "deceased", "dead", "killed", "destroyed",
+        "deceased", "dead", "killed", "destroyed", "dead (confirmed)",
     };
 
     /// <summary>Node kinds we treat as "gear" — anything a character could draw, wear, or carry.</summary>

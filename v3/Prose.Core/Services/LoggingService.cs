@@ -148,7 +148,11 @@ public class LoggingService
     // TryParseLogLine silently failed to parse every real Serilog line ever written, so
     // Search()/GetAvailableDates() always returned nothing — found live the first time this
     // was actually exercised (2026-08-21), not caught earlier because nothing called it.
-    private static readonly string[] ParseFormats = ["yyyy-MM-dd HH:mm:ss.fff zzz"];
+    // Second entry (2026-08-30 fix — LoggingServiceTests.Search_Parses24hFormat already
+    // exercised this variant, and this field's own array type signals more than one format was
+    // always meant to be accepted): plain 24h with no milliseconds/offset, for a simpler custom
+    // logger or sink configuration than Serilog's own default template.
+    private static readonly string[] ParseFormats = ["yyyy-MM-dd HH:mm:ss.fff zzz", "yyyy-MM-dd HH:mm:ss"];
 
     private static LogEntry? TryParseLogLine(string line)
     {

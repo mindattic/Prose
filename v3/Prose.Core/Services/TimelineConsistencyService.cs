@@ -34,9 +34,13 @@ public class TimelineConsistencyService
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly ILogger<TimelineConsistencyService> log;
 
-    /// <summary>Values (case-insensitive) that indicate an entity is dead.</summary>
+    /// <summary>Values (case-insensitive) that indicate an entity is dead. Kept in sync with
+    /// WorldStatePrecheckService.DeadStatuses (2026-08-30 fix — the two sets had silently
+    /// diverged: this one didn't recognize "destroyed" for synthetics/automatons, so a destroyed
+    /// entity could pass this post-hoc sweep clean while the pre-write gate caught it, or vice
+    /// versa for "dead (confirmed)").</summary>
     private static readonly HashSet<string> DeathValues =
-        new(StringComparer.OrdinalIgnoreCase) { "dead", "deceased", "killed", "dead (confirmed)" };
+        new(StringComparer.OrdinalIgnoreCase) { "dead", "deceased", "killed", "dead (confirmed)", "destroyed" };
 
     /// <summary>Values (case-insensitive) that indicate a wound is healed/resolved.</summary>
     private static readonly HashSet<string> HealedValues =

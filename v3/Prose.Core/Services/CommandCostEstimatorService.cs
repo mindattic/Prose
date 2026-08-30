@@ -21,9 +21,7 @@ public class CommandCostEstimatorService
         {
             ["--write-story"]         = 0.12,
             ["--refine-story"]        = 0.08,
-            ["--review-node"]         = 0.50,
-            ["--review-book"]         = 0.50,
-            ["--run-panel"]           = 0.50,
+            ["--review-node"]         = 0.50, // --review-book/--run-panel aliases retired 2026-08-30
             ["--auto-run"]            = 0.30,
             ["--harvest-voice"]       = 0.06,
             ["--examine-emotion"]     = 0.04,

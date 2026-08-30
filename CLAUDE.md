@@ -123,7 +123,7 @@ the next time `generate_node_doc` runs. **Never assume these files exist — alw
 
 | Location | Contains | Source of truth / how to edit |
 |---|---|---|
-| `CanonDocumentSections` (DB) | Every canon doc's actual content, keyed by `CanonDocumentType` (`WorldBible`, `WorldMaster`, `Franchise`, `UniverseCanon`, `CraftGuide`, `UniverseCraft`, `DelightGuide`, `EngineGuide`, `CharacterDoctrine`) | MCP `set_canon_section` — this is the ONLY sanctioned edit path for every generated doc in the row below, with zero exceptions |
+| `CanonDocumentSections` (DB) | Every canon doc's actual content, keyed by `CanonDocumentType` — a DB-backed lookup table (`Prose.Core\Data\Entities\CanonDocumentType.cs`, resolved via `CanonDocumentTypeRegistry`), not a compiled C# `enum`, despite the dot-notation below (`WorldBible`, `WorldMaster`, `Franchise`, `UniverseCanon`, `CraftGuide`, `UniverseCraft`, `DelightGuide`, `EngineGuide`, `CharacterDoctrine` — confirmed 2026-08-30, all 9 exist, no gap either direction) | MCP `set_canon_section` — this is the ONLY sanctioned edit path for every generated doc in the row below, with zero exceptions |
 | `Nodes.NodeOutline` (DB) | **The single source of truth for that book's Outline** — the sequenced, entity-tagged, intent-charged plan: arc, characters, voice, structural notes, blueprint, Event Sequence | `set_book_outline` MCP (hand-authored sections) |
 | `docs/nodes/<CODE>.md` | Generated mirror of `Nodes.NodeOutline` — ephemeral, gitignored | Re-run `generate_node_doc` to materialize |
 | `docs/BIBLE.md`, `docs/WORLD.md`, `docs/FRANCHISE.md`, `docs/universes/ENTOS.md`, `docs/CRAFT.md`, `docs/GLMZ.md`, `docs/SCRY.md`, `docs/DELIGHT.md`, `docs/ENGINE.md`, `docs/CHARACTER.md` | Generated canon docs — **ALL ten are DB-backed via `CanonDocumentSections`, ephemeral, gitignored** (verified live 2026-08-23: every one of these carries a `<!-- GENERATED — do not hand-edit -->` banner and real section counts from the DB — this table previously and wrongly told readers to "hand-edit directly" for 5 of these 10 files; that instruction was stale from before they were migrated into `CanonDocumentSections`, and following it risked a silent data-loss bug: a hand edit destroyed by the next `--generate-canon-md --all`) | Edit content via `set_canon_section` MCP, then re-run `prose --generate-canon-md --type <type>` (or `--all`) to materialize the `.md` mirror |
@@ -189,7 +189,11 @@ tier doc, not a static layer — it loads via keyword triggers (character/cast/p
 antagonist/relationship/dialogue/motive/arc/pov, etc.), same as any other topic doc, not
 unconditionally on every beat.
 
-**Hierarchy resolution:** When layers conflict, the lower tier wins for its own book (Register > BookOutline > Universe > Base > Engine). Use the narrowest scope that is authoritative — except Engine tier (SS-ENGINE-0's own text: "none may contradict this one").
+**Hierarchy resolution (reworded 2026-08-30 — the prior wording stated a priority order ranking
+Engine last/weakest, then reversed it with a blanket exception, which read as self-contradictory):**
+Engine tier is supreme and out-of-band — SS-ENGINE-0's own text says "none may contradict this
+one," full stop, no exception. Among the other four tiers, when they conflict, the narrowest
+scope wins for its own book: Register > BookOutline > Universe > Base.
 
 **Voice is the character, not a file (SS-A46, 2026-07-20).** There are no `docs/registers/<NAME>.md` files and no imposed tonal/flagship registers (JOY, SORROW, Kyle/CODA are retired and deleted). A narrator's voice lives in their **Character record's speech/psychology fields** — so it is loaded automatically by the existing DCM entity-doc path when that character is on the page, and it **evolves as the record evolves**: update the character (via `create_character` with the id, or a wound/continuity claim) and the next beat's prose tracks the change. The clear base voice (CRAFT.md §0–§2) is the floor; the character's own diction and attention are the only "register." A Pixel chapter reads in Pixel's voice; a Bear chapter in Bear's.
 
@@ -210,18 +214,28 @@ files — injects them into the LLM prompt — then GCs them after a sliding win
 non-reference. **The engine manages the scope; you don't have to.** Only a small, relevant
 subset of .md files is present at any moment — never a full dump of all data.
 
-**Five-step context assembly (DocContextService.PrepareForNodeAsync):**
+**Context assembly (DocContextService.PrepareForNodeAsync) — corrected 2026-08-30, was
+documented as five steps, is really seven** (a holistic-cleanup audit found this section had
+been written from a stale internal code comment rather than the actual `PrepareContextAsync`
+method body — it silently dropped the entire "series" tier and the pinned-doc override):
 
 0. **Clue-gathering inference** (EntityDocService.InferFromTextAsync): scans the beat goal
    text via SceneContextAssembler (name scan + embedding + graph expansion). For every entity
    found, calls EnsureEntityDocAsync — hash-gated, so unchanged entities are a no-op. Freshly
    materialized entity docs land in MarkdownFiles as DB-only rows (category "entity-doc",
    SyncedBy "inferred", no disk file) with keyword triggers from name/slug/aliases. Because
-   this runs BEFORE the candidate query, the new docs participate in steps 1-5 immediately.
+   this runs BEFORE the candidate query, the new docs participate in the passes below immediately.
 
-Then PrepareContextAsync runs its five passes:
+Then `PrepareContextAsync` runs, in order:
+0. **pinned** (score 999) — caller-supplied `pinnedDocIds` override every other tier; this is
+   how the POV register gets pinned dominant (see the DCM static hierarchy table below).
 1. **always** — pinned universal core (BIBLE.digest.md)
-2. **node** — the active book's outline + register (evicted on book change)
+2. **node** — the active book's one outline + one register + book docs (evicted on book change)
+2.5. **series** — cross-book arc docs (`docs/series/*.md`) whose declared scope matches this
+   book's universe/series identifier (not its own NodeCode — see the code's own bug-fix note on
+   `ScopeMatches`). Survives ~8 beats, long enough to carry a plant/payoff callback across a book
+   boundary. This tier is discussed elsewhere in this file (the "book coordination board") but
+   its DCM loading mechanism was never previously connected to that discussion.
 3. **keyword** — topic docs whose Triggers match the beat-goal text (includes newly-created
    entity docs from step 0, since they carry name/slug triggers)
 4. **embedding** — topic docs semantically near the beat goal (markdown embedding scope)
@@ -513,12 +527,12 @@ for all prose writing — it coordinates all the services below and logs coverag
 
 ### Context enrichment chain (all wired inside ProseWriterRouter)
 
-**Corrected 2026-08-23** (a call-site audit found ~10 activation gates below had drifted from
-what this table claimed since the 2026-08-09 version — mostly "Always" claimed where a real
-precondition exists — and 5 real enrichment stages added since then had never been added as
-rows; both are fixed below). "Always" in this table means "no explicit precondition beyond the
-router's own ambient state (`NodeId`/`beatId` usually already set by the time a real beat writes)"
-— not "literally unconditional."
+**Corrected 2026-08-23, then again 2026-08-30** (a holistic-cleanup audit found this table still
+omitted several load-bearing services after the 2026-08-23 pass — most critically
+`EntityContextService`, whose `CharactersInScene` auto-populate gates ~8 of the other rows below
+— plus two rows whose documented gate condition didn't match the code). "Always" in this table
+means "no explicit precondition beyond the router's own ambient state (`NodeId`/`beatId` usually
+already set by the time a real beat writes)" — not "literally unconditional."
 
 | Service | What it injects | Activation |
 |---|---|---|
@@ -527,13 +541,15 @@ router's own ambient state (`NodeId`/`beatId` usually already set by the time a 
 | `StoryMethodologyService` | Save the Cat structural role (Opening Image → Final Image) + Scene-Sequel type | `totalBeats > 0` |
 | `DelightProseGuidance` | Positive doctrine (docs/DELIGHT.md): emphasizes the 2–3 reader-loved moves matching the beat mode | Unconditional, all beat modes (mode-keyed) |
 | `CombatProseGuidance` (`CombatProseConstants`) | Verbs-first, fragment sentences, no emotion-naming, dissociated observer | `BeatMode.Combat` |
+| `EntityContextService` | **(added to this table 2026-08-30 — load-bearing omission)** Loads the LRU entity working-memory stack for this beat, then auto-populates `context.CharactersInScene` from its active character-type entries (up to 3) when the caller left it empty. This single auto-populate is what actually gates `DialogueService`, `ContinuityService`, `ConsequenceService`, and `SceneCollisionService` below on a normal call that doesn't pre-set `CharactersInScene` itself — gracefully empty on a cold stack (fills after the first `ReconcileAsync`) | `context.NodeId != Guid.Empty` |
 | `BeatPlaceService` | **(new 2026-08-28)** Per-beat scene location: the nearest prior beat's extracted `Beat.PlaceName` in this chapter becomes `context.Location` (scene-continuity default), ahead of the book-wide `DefaultLocation` ancestor-walk fallback. Populate via the SCENE-LOCATION slice of the consolidated post-write extraction (new beats) or `prose --extract-beat-locations --slug <slug>` (backfill) | `Location` unset by caller + `NodeId`/`beatId` set |
 | `SceneContextBuilder` | Ambient sensory grounding **incl. the New Weird anomaly layer absorbed from the deleted `AmbientAnomalyService` (2026-08-28 — the two used to double-inject overlapping anomaly blocks under two labels)** | **`context.Location` non-empty** — scene-granular once a book's beat locations are extracted (row above); before that, only the 14/46 books with `DefaultLocation` |
 | `DialogueService` | Multi-character RELATIONSHIP DYNAMICS + DIALOGUE RULES; per-character voice profiles ONLY when no XRay block exists (2026-08-28: when XRay is present it emits the complement — behavioral tells, inferred subtext, heritage/age register — instead of duplicating the six `Speech*` fields XRay already carries) | `Dialogue`/`EmotionalClimax` modes + `CharactersInScene.Count > 0` |
 | `SceneContextAssembler` (+ `WoundLedgerService`) | Per-entity XRay: voice/psychology/wound/behavior profile of everyone on-page — since 2026-08-28 also `verbal_tics`/`avoidances` (previously only in DialogueService's duplicate block), making XRay the single canonical voice rendering | `beatId != Guid.Empty` — never fires on a preview/no-beat-id write. **Runs BEFORE DocContextService since 2026-08-28** and awaits `PersistPovAsync`, fixing the POV ordering race: the 'pov' row used to be written fire-and-forget AFTER DocContext read it, so POV register pinning was a no-op on every beat's FIRST generation. `PersistPovAsync` also now defers to any pre-existing pov row (outline POV-map backfills win over the roster heuristic; previously it could write a SECOND pov row for the beat and `SELECT TOP 1` picked nondeterministically) |
-| `SceneCollisionService` | **(undocumented until 2026-08-23)** How on-page characters' psychology collides given the beat goal | 2+ `CharactersInScene`, non-Combat mode, XRay context present |
+| `SceneCollisionService` | **(undocumented until 2026-08-23)** How on-page characters' psychology collides given the beat goal | 2+ `CharactersInScene`, non-Combat mode, XRay context present, **and a non-empty `context.BeatGoal`** (omitted from this table until 2026-08-30) |
 | `ContinuityService` | Canonical/confirmed fact constraints for on-page characters | `CharactersInScene.Count > 0` — empty until the entity pre-check/XRay stack has warmed or the caller set it explicitly |
-| `ContinuityEnforcer` | **(new 2026-08-22, undocumented until now)** Post-generation LLM check: does the just-written beat contradict a CANONICAL/CONFIRMED claim it was actually shown? Closes the gap where the canon block above was prompt-side-only with no verification | After generation, when `ContinuityService` produced a non-empty canon block for the scene |
+| `VerificationContextService` | **(added to this table 2026-08-30)** Resolves the beat's POV entity id (`BeatEntityPresence` `PresenceType='pov'` row) that `DocContextService.PrepareForNodeAsync` uses to pin the narrator's Register layer dominant (score 999) | Runs whenever `DocContextService` fires, i.e. `beatId != Guid.Empty` |
+| `ContinuityEnforcer` | **(new 2026-08-22, undocumented until now)** Post-generation LLM check: does the just-written beat contradict a CANONICAL/CONFIRMED claim it was actually shown? Closes the gap where the canon block above was prompt-side-only with no verification | After generation, when `ContinuityService` produced a non-empty canon block for the scene (2026-08-30 fix: the code used to skip this check, paying for the LLM call even on a beat where the canon block was empty — the code now matches this documented condition) |
 | `TensionEscalationService` | Warns when beats have stagnated at low intensity | `beatIndex > 2` |
 | `ReaderKnowledgeService` | Dramatic-irony bookkeeping — what the reader currently knows | `NodeId != Guid.Empty` |
 | `ConsequenceService` | Gear/cyberware/status constraints for the full on-page cast | `CharactersInScene.Count > 0` |
@@ -542,10 +558,11 @@ router's own ambient state (`NodeId`/`beatId` usually already set by the time a 
 | `NarrativeSummaryService` | Rolling compressed memory of prior beats | `NodeId != Guid.Empty` |
 | `ChapterSummaryService` | DB-backed prior-chapter memory | `NodeId != Guid.Empty` **and `beatIndex > 0`** (intentional — no prior chapter exists for the first beat; documented in the code itself) |
 | `OpenThreadsService` | Unresolved promises/plants/questions | `NodeId != Guid.Empty` |
+| `BeatExtractionService` | **(added to this table 2026-08-30 — load-bearing omission)** The consolidated post-write extraction orchestrator itself — fans one call out to reader-knowledge facts, scene summary, open-threads, plot-state, the SCENE-LOCATION slice (`BeatPlaceService`), and the MOTIFS slice (`MotifLedgerService`), replacing what used to be five separate Haiku calls each re-reading the beat text | `capturedNodeId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult)` — runs after generation, not before |
 | `MotifLedgerService` | **(new 2026-08-28)** "MOTIFS IN PLAY" — recurring images from the `BookMotifs` ledger (sighted in 2+ beats): deepen/refract, never reintroduce as new. Written by the MOTIFS slice of the consolidated post-write extraction | `NodeId != Guid.Empty`; empty until a motif recurs |
-| `BookStateLedgerService` | Arc-level named state (crises, dramatic questions, alliances) | `NodeId`/`beatId` set — **confirmed 2026-08-23: the "long books" gate this table used to claim never existed, in `ProseWriterRouter.cs` or inside `BookStateLedgerService` itself. It runs on every book regardless of length; the doc's claim was simply wrong.** |
+| `BookStateLedgerService` | Arc-level named state (crises, dramatic questions, alliances) | `NodeId` set — **confirmed 2026-08-23: the "long books" gate this table used to claim never existed... It runs on every book regardless of length. Confirmed again 2026-08-30: the code gates on `NodeId` only, not `beatId` as an earlier version of this row also (separately) claimed.** |
 | `StoryScienceService` | King + Storr craft laws: sacred-flaw consistency, status dynamics, curiosity gap, causal chains, sensory specificity | `totalBeats > 0` |
-| `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode | Node has a blueprint (`prose --generate-blueprint`) **and `totalBeats > 0`** |
+| `StructuralBlueprintService` | Per-beat StoryScope anti-tell slice: subplot carrier, anachrony cut, escalation floor, event type, ending/resolution mode | Router-level gate is just `totalBeats > 0`; the blueprint-existence check happens separately, inside `BuildBeatInjectionAsync` itself, not as a precondition the router evaluates before calling in (clarified 2026-08-30 — this table used to conflate the two into one combined condition) |
 | `BeatBlueprintDecision` ("Track B") | A separate structural-decision block (declared purpose + pre-state). **Coverage conflation FIXED 2026-08-28**: the three structural mechanisms are now tracked as independent variables and merged only at prompt assembly — coverage rows `StructuralBlueprint`, `BeatContract`, and the new `StoryScopeLoopback` each report their own mechanism honestly | `beatId != Guid.Empty` + a `BeatBlueprintDecisions` row exists |
 | StoryScope audit loop-back | Queries prior STORYSCOPE findings into forward guidance — own coverage row (`StoryScopeLoopback`) since 2026-08-28 | `NodeId != Guid.Empty` |
 | `NarrativeChartService` | Offscreen/parallel character activity (world continuity) | `beatIndex > 2` **and** `totalBeats > 0` |
@@ -557,6 +574,8 @@ router's own ambient state (`NodeId`/`beatId` usually already set by the time a 
 | `LibertyReportService` | Rule-of-Cool check | `beatId != Guid.Empty` + non-empty result (findings loop back into later beats) |
 | `SemanticFidelityService` | Goodhart intent-drift check | `beatId != Guid.Empty` + non-empty `capturedBeatGoal` |
 | `CanonGroundingService` | Canon-grounding scaffold | **Opt-in, `AutoCanonGrounding` setting, off by default — NOT "Always" as this table previously claimed.** Turning this on globally is a per-beat LLM-call cost decision, not a documentation fix; ask before flipping the default. |
+| `ContextTelemetryService` | **(added to this table 2026-08-30)** Observability sidecar — records which docs/entities loaded for this beat (DCM Gantt visualization data), not a content-injection stage | `telemetry != null` (ambient DI availability) |
+| `WorkflowMonitorService` | **(added to this table 2026-08-30, despite being named in this section's own "Entry points" intro since before 2026-08-23)** Fire-and-forget `BeatServiceLog` coverage write — which of the OTHER rows in this table were actually applicable/active for this beat, the data `prose --workflow-status` reads | Unconditional per beat (background `Task.Run`, non-blocking) |
 
 Note: there is no class named `WorldGraphService` in the live tree — the entity-graph service is
 `UniverseGraphService`. `UniverseGraphService.GetEntityBrief`/`GetSceneContext`/`GetContextForNode`
@@ -636,7 +655,9 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 1. Assemble `BeatContext` (XRayContext via SceneContextAssembler, NodeId always set)
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)` — NOT BeatGeneratorService directly
 3. After writing, run `prose --examine-emotion --slug <slug>` to score emotional dimensions
-4. After book complete, run `prose --book-audit --slug <slug>` to audit gateway/sequel commandments
+4. After book complete, run `prose --commandment-audit --slug <slug>` (renamed from --book-audit
+   2026-08-30 — it collided with the unrelated `--audit-book` full battery) to audit
+   gateway/sequel commandments
 5. After book complete, run `prose --plant-audit --slug <slug>` to check for orphaned plants
 6. After book complete, run `prose --storyscope-audit --slug <slug>` to verify the structural
    anti-tells held (escalation monotonic, event types varied, no moral gloss, no epilogue,
@@ -669,14 +690,19 @@ Reports land in `audit-outlines-<date>/logic/`; findings are triaged
 if you can't name the failure, leave the beat alone.
 
 **Reader-facing craft/comprehension QA is READER-PROXY QA (`prose --reader-qa`), not the
-persona panel — canonical methodology: [docs/READER-QA.md](docs/READER-QA.md).** Four
-instruments, all findings-based, NO scores: (1) Haiku comprehension probes diffed against
-the Sonnet synopsis, Sonnet-arbitrated → `ComprehensionDefect` findings; (2) hash-gated
-binary craft/delight checklist (`prose --craft-checklist`) → `CraftChecklist` findings;
-(3) cross-family pairwise duels for every splice (`prose --duel`, SS-A44-gated);
-(4) findings-only gripe jury (`prose --reader-qa --gripe-pass`) → `ReaderGripe` findings.
-Instruments 1/2/4-report are measurements, not votes — not vote-gated. Everything is
-hash-cached: unchanged content re-runs free.
+persona panel — canonical methodology: [docs/READER-QA.md](docs/READER-QA.md).** **Five**
+instruments (corrected 2026-08-30 — this said "four" and omitted instrument 5, which
+docs/READER-QA.md itself has documented since it shipped the same day), all findings-based,
+NO scores: (1) Haiku comprehension probes diffed against the Sonnet synopsis,
+Sonnet-arbitrated → `ComprehensionDefect` findings; (2) hash-gated binary craft/delight
+checklist (`prose --craft-checklist`) → `CraftChecklist` findings; (3) cross-family pairwise
+duels for every splice (`prose --duel`, SS-A44-gated); (4) findings-only gripe jury
+(`prose --reader-qa --gripe-pass`) → `ReaderGripe` findings; (5) **Full-Order Read**
+(`prose --reader-qa --full-order-read`) — 3-5 cross-family readers narrate ONE continuous
+read start-to-finish, flagging only where their own engagement died and whether it recovered
+(never a craft complaint list) → `ReaderGripe` findings, "ENGAGEMENT " prefix. Instruments
+1/2/4/5-report are measurements, not votes — not vote-gated. Everything is hash-cached:
+unchanged content re-runs free.
 
 **The 0–100 score gates are RETIRED (author ruling 2026-08-03: "remove scores; they mean
 nothing").** The ≥82/≥85 gates no longer exist; dashboards show open findings instead of

@@ -13,15 +13,22 @@ namespace Prose.Cli;
 /// node and emits a single consolidated scorecard: the Structural Integrity Index (SII), a
 /// deterministic rollup over Findings (never an LLM opinion vote — see BookHealthService).
 ///
-/// Tiers (cumulative — each includes the one before):
-///   FREE  (always)  — deterministic + near-zero-cost checks: census, coverage, plant-audit,
-///                     prose-check, noun-consistency, timeline-check, beat-verification,
-///                     outline-coordination.
-///   DEEP  (--deep)  — one LLM call per check per node: examine-emotion, book-audit,
-///                     diagnose-node, check-fidelity, logic-sweep, craft-checklist,
-///                     check-canon, altitude-audit, reader-qa comprehension.
+/// Tiers (cumulative — each includes the one before). This list is kept in sync with
+/// BookHealthService.RunAsync's actual check calls — it previously drifted 10 checks stale
+/// (2026-08-30 fix; found by a documentation-drift audit) after several rounds of new
+/// instruments landing in RunAsync without a matching update here:
+///   FREE  (always)  — deterministic + near-zero-cost, 10 checks: plant-audit, plant-density,
+///                     prose-check, validate-nouns, timeline-check, verify-book, coordinate,
+///                     voice-consistency, duplicate-beats, sanity-scan.
+///   DEEP  (--deep)  — one LLM call (or a cheap batched-Haiku call) per check per node, 16
+///                     checks: examine-emotion, book-audit, diagnose-book, check-fidelity,
+///                     logic-sweep, craft-checklist, check-canon, altitude-audit, reader-qa
+///                     (comprehension probes), behavior-check, theme-coherence, fact-ledger,
+///                     applied-claim-drift, lint-prose, pov-audit, hook-audit.
 ///   FULL  (--full, implies --deep) — heaviest multi-call audits, cost scales with book
-///                     length: storyscope-audit, swain-audit, chekhov-audit.
+///                     length, 7 checks: storyscope-audit, swain-audit, chekhov-audit,
+///                     five-act-map, dramatic-question, sacred-flaw (original books only),
+///                     gripe-pass (Reader-Proxy QA instrument 4, the findings-only gripe jury).
 ///
 /// This is a thin formatter over Prose.Core.Services.BookHealthService — the battery and
 /// the SII arithmetic both live there so the MCP book_health tool can share the exact same

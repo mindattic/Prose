@@ -1,6 +1,6 @@
 ---
 name: full-battery
-description: Run the Full Battery — every QA/audit tool in the engine (census, coverage, plant-audit, timeline, verify, coordinate, examine-emotion, book-audit, diagnose, fidelity, logic-sweep, craft-checklist, check-canon, altitude-audit, reader-qa, storyscope, swain, chekhov) against a book via `prose --audit-book --full`, then fix, re-verify, validate, and re-export any book that was actually modified. Usage /full-battery [slug ...]; no argument = every book with live prose corpus-wide.
+description: Run the Full Battery — every QA/audit tool in the engine (10 FREE + 16 DEEP + 7 FULL checks — see AuditNodeCli.cs's header for the authoritative list, kept in sync with BookHealthService.RunAsync) against a book via `prose --audit-book --full`, then fix, re-verify, validate, and re-export any book that was actually modified. Usage /full-battery [slug ...]; no argument = every book with live prose corpus-wide.
 ---
 
 # /full-battery — the complete diagnostic + repair pass
@@ -16,20 +16,38 @@ and findings, not opinion.
 
 ## What "Full Battery" means (the tiers, cumulative)
 
-Driven by `prose --audit-book --full --slug <slug> --universe <u> --json --out <path>`:
+Driven by `prose --audit-book --full --slug <slug> --universe <u> --json --out <path>`. **This
+list previously drifted 10 checks stale (2026-08-30 fix, found by a documentation-drift audit)
+— do not hand-maintain it again; treat `AuditNodeCli.cs`'s own header comment as the
+authoritative source and copy from there if this ever needs re-syncing.**
 
-- **FREE** (always): census (text/desc/struct/tone/score/EQ/mention coverage), coverage
-  (per-service activation), plant-payoff audit, prose-pattern check, noun-consistency
-  (`validate_nouns`), timeline-check, beat-verification (`BeatVerification`: BannedPattern /
-  EventType / SubplotCarrier / EscalationFloor / DeclaredPurpose), outline-coordination.
-- **DEEP** (`--deep`, implied by `--full`): examine-emotion, book-audit (Gateway/Sequel
-  commandments), diagnose-node, check-fidelity (Semantic Fidelity Gap), Logic Sweep
-  (six-dimension causality/knowledge/timeline/plant/orphan/outline), craft-checklist,
-  check-canon, altitude-audit (10,000↔100 ft drift), reader-qa comprehension.
-- **FULL** (`--full`): + storyscope-audit, swain-audit (Scene/Sequel doctrine), chekhov-audit.
+- **FREE** (always, 10 checks): plant-audit, plant-density, prose-check, validate-nouns,
+  timeline-check, verify-book, coordinate, voice-consistency, duplicate-beats, sanity-scan.
+- **DEEP** (`--deep`, implied by `--full`, 16 checks): examine-emotion, book-audit
+  (Gateway/Sequel commandments), diagnose-book, check-fidelity (Semantic Fidelity Gap), Logic
+  Sweep (six-dimension causality/knowledge/timeline/plant/orphan/outline), craft-checklist,
+  check-canon, altitude-audit (10,000↔100 ft drift), reader-qa (comprehension probes),
+  behavior-check, theme-coherence, fact-ledger, applied-claim-drift, **lint-prose** (mechanical
+  repetition/crutch-phrase linter), **pov-audit** (head-hopping + same-scene voice sameness),
+  **hook-audit** (chapter-ending hook strength) — the last three (bold) were built in the
+  2026-08-28 tooling overhaul but never wired into this battery until 2026-08-30.
+- **FULL** (`--full`, 7 checks): storyscope-audit, swain-audit (Scene/Sequel doctrine),
+  chekhov-audit, five-act-map, dramatic-question, sacred-flaw (original-narrative books only),
+  **gripe-pass** (Reader-Proxy QA instrument 4, the findings-only gripe jury — also newly wired
+  in 2026-08-30).
+
+Not part of this battery by design, even though they're real QA instruments: cross-family
+**duels** (`prose --duel`) are a vote-gated (SS-A44) fix-verification mechanism for one specific
+beat + candidate revision, not a book-wide audit — they have nothing to compare against outside
+an actual fix-application workflow. **Location-scan** (`prose --location-scan`) is deliberately
+corpus-wide (checks a character's position across every book at once), not per-book — running it
+inside a single-book battery would re-scan the whole corpus on every book's audit.
 
 Output: one **Structural Integrity Index (SII)** scorecard per book (deterministic Findings
-rollup, never a vote) plus every underlying check's pass/fail detail.
+rollup, never a vote) plus every underlying check's pass/fail detail. For a single
+publish-ready yes/no answer instead of reading the SII deduction table, run
+`prose --publish-readiness --slug <slug>` (docs/LOGIC.md §9's five-point gate, computed as one
+readout — added 2026-08-30).
 
 ## Steps
 
