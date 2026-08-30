@@ -39,13 +39,16 @@ namespace Prose.Cli;
 /// </summary>
 public static class RetireLockedMarkersCli
 {
-    private static readonly Regex ScanPattern = new(@"\bLOCKED\b", RegexOptions.Compiled);
+    // Case-insensitive (fixed 2026-08-30): a same-day live corpus sweep found lowercase "locked"
+    // section-heading qualifiers (e.g. "## Theme (locked - see brief §8)") in a book the original
+    // ALL-CAPS-only pattern never surfaced — the doctrine word is retired regardless of case.
+    private static readonly Regex ScanPattern = new(@"\bLOCKED\b", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
     // Matches ONLY a parenthetical whose entire content, after "LOCKED", is nothing but an
     // optional dash + date or an optional dash + "never resolved" — never a compound parenthetical
     // that happens to mention LOCKED alongside other text (that stays MANUAL by simply not matching).
     private static readonly Regex SafeParenPattern = new(
-        @"\(LOCKED\s*(?<inner>.*?)\)", RegexOptions.Compiled);
+        @"\(LOCKED\s*(?<inner>.*?)\)", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
     private static readonly Regex DateOnly = new(@"^[-–—]?\s*(?<date>\d{4}-\d{2}-\d{2})$", RegexOptions.Compiled);
     private static readonly Regex NeverResolved = new(@"^[-–—]?\s*never resolved$", RegexOptions.IgnoreCase | RegexOptions.Compiled);

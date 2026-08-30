@@ -59,6 +59,42 @@ public class RetireLockedMarkersCliTests
         Assert.That(scan.ManualMatches, Is.Empty);
     }
 
+    // Case-insensitivity (fixed 2026-08-30): a same-day live corpus sweep found lowercase "locked"
+    // section-heading qualifiers in a book (BTL/"Between the Lines") the original ALL-CAPS-only
+    // ScanPattern never surfaced in the dry-run report at all — silently invisible, not just
+    // misclassified.
+    [Test]
+    public void LowercaseBareParenthetical_ClassifiedSafe()
+    {
+        var scan = RetireLockedMarkersCli.ClassifyText(NodeId, "btl", "Between the Lines",
+            "**Battle choreography (locked):**");
+
+        Assert.That(scan.ManualMatches, Is.Empty);
+        Assert.That(scan.SafeMatches, Has.Count.EqualTo(1));
+    }
+
+    [Test]
+    public void ApplySafeRewrite_LowercaseBareParenthetical_ConvertsToAuthorDecision()
+    {
+        var result = RetireLockedMarkersCli.ApplySafeRewrite("**Battle choreography (locked):**");
+
+        Assert.That(result, Is.EqualTo("**Battle choreography (author decision):**"));
+    }
+
+    // The two REAL BTL occurrences that motivated the case-insensitivity fix are both compound
+    // parentheticals (extra text alongside "locked") — MANUAL, same as their uppercase equivalents
+    // elsewhere. This pins that lowercase input doesn't accidentally get treated as safe just
+    // because it slipped past the old case-sensitive scan entirely before this fix.
+    [TestCase("## Theme (locked - see brief §8)")]
+    [TestCase("## Relationship Utilization Map (locked - every edge below must be exercised on-page)")]
+    public void LowercaseCompoundParenthetical_ClassifiedManual(string text)
+    {
+        var scan = RetireLockedMarkersCli.ClassifyText(NodeId, "btl", "Between the Lines", text);
+
+        Assert.That(scan.SafeMatches, Is.Empty);
+        Assert.That(scan.ManualMatches, Has.Count.EqualTo(1));
+    }
+
     [Test]
     public void ApplySafeRewrite_DatedParenthetical_ConvertsToAuthorDecisionWithDate()
     {
