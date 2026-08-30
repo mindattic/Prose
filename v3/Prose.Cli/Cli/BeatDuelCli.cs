@@ -85,7 +85,7 @@ public static class BeatDuelCli
                 if (story != null)
                 {
                     storyTitle = story.Title;
-                    registerNotes = story.NodeBible is { Length: > 0 } bible
+                    registerNotes = story.NodeOutline is { Length: > 0 } bible
                         ? (bible.Length <= 3000 ? bible : bible[..3000])
                         : null;
                 }

@@ -136,7 +136,7 @@ public class EmotionalDepthService
         var effectiveMax = hasChildren ? Math.Max(maxChars, 100000) : maxChars; // representative whole-novel read
 
         return await ExamineTextAsync(
-            nodeId, node.Slug, node.Title, node.NodeBible,
+            nodeId, node.Slug, node.Title, node.NodeOutline,
             assembled, beatNums, effort, effectiveMax, ct);
     }
 

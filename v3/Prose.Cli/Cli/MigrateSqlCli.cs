@@ -47,9 +47,6 @@ public static class MigrateSqlCli
         // Entity quality reviews: create EntityReviews + EntityReviewSummaries tables.
         var entityReviews = args.Contains("--entity-reviews");
 
-        // Node Bible: add NodeBible + NodeBibleGeneratedAt to Nodes (+ history table).
-        var nodeBible = args.Contains("--node-bible");
-
         // MarkdownFiles: create the MarkdownFiles table so .md files (project rules,
         // Codex docs, Claude Code memory) can be backed up + restored by timestamp.
         var markdownFiles = args.Contains("--markdown-files");
@@ -80,7 +77,7 @@ public static class MigrateSqlCli
         // RFC 0007 "Universe Interchange": create OutboxEvents (Hub → consumer-app queue).
         var outboxEvents = args.Contains("--outbox-events");
 
-        if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !nodeBible && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue && !beatScoreDimensions && !outboxEvents)
+        if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue && !beatScoreDimensions && !outboxEvents)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  prose --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -89,7 +86,6 @@ public static class MigrateSqlCli
             Console.WriteLine("  prose --migrate-sql --entity-grammar-note       add GrammarNote column to Entities (and history table)");
             Console.WriteLine("  prose --migrate-sql --story-code               add NodeCode NVARCHAR(20) to Nodes (unique per non-null value)");
             Console.WriteLine("  prose --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
-            Console.WriteLine("  prose --migrate-sql --node-bible              add NodeBible + NodeBibleGeneratedAt to Nodes (+ history)");
             Console.WriteLine("  prose --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
             Console.WriteLine("  prose --migrate-sql --node-spine              add NodeUserStories to Nodes; create NodeAmendments + NodeSpineVersions");
             Console.WriteLine("  prose --migrate-sql --emotional-examination     create EmotionalExaminations/DimensionResults/BeatScores/CharacterEmotionalLedgers + Beat.EmotionalScore (SS-A15)");
@@ -410,37 +406,6 @@ public static class MigrateSqlCli
             }
         }
 
-        if (nodeBible)
-        {
-            using var sbScope = sp.CreateScope();
-            var sbDb = sbScope.ServiceProvider.GetRequiredService<ProseDbContext>();
-            Console.WriteLine();
-            Console.WriteLine("[node-bible]");
-            try
-            {
-                await sbDb.Database.ExecuteSqlRawAsync("""
-                    IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('Nodes') AND name = 'NodeBible')
-                    BEGIN
-                        ALTER TABLE [dbo].[Nodes] SET (SYSTEM_VERSIONING = OFF);
-                        ALTER TABLE [dbo].[Nodes]         ADD [NodeBible]             NVARCHAR(MAX) NULL;
-                        ALTER TABLE [dbo].[Nodes_History] ADD [NodeBible]             NVARCHAR(MAX) NULL;
-                        ALTER TABLE [dbo].[Nodes]         ADD [NodeBibleGeneratedAt]  DATETIME2     NULL;
-                        ALTER TABLE [dbo].[Nodes_History] ADD [NodeBibleGeneratedAt]  DATETIME2     NULL;
-                        ALTER TABLE [dbo].[Nodes]
-                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Nodes_History],
-                                                         DATA_CONSISTENCY_CHECK = OFF));
-                    END;
-                    """);
-                Console.WriteLine("  ✔ NodeBible + NodeBibleGeneratedAt columns added to Nodes (+ Nodes_History).");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"  ✘ node-bible migration failed: {ex.Message}");
-                failures++;
-            }
-        }
-
         if (nodeSpine)
         {
             using var scope = sp.CreateScope();
@@ -497,7 +462,7 @@ public static class MigrateSqlCli
                             [Id]               UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
                             [NodeId]         UNIQUEIDENTIFIER NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
                             [NodeVersion]    INT              NOT NULL DEFAULT 0,
-                            [BibleHash]        NVARCHAR(64)     NOT NULL DEFAULT '',
+                            [OutlineHash]        NVARCHAR(64)     NOT NULL DEFAULT '',
                             [UserStoriesHash]  NVARCHAR(64)     NOT NULL DEFAULT '',
                             [AmendmentCount]   INT              NOT NULL DEFAULT 0,
                             [PinnedAt]         DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
@@ -699,7 +664,7 @@ public static class MigrateSqlCli
                             [Flaw]            NVARCHAR(MAX)        NULL,
                             [VoiceRegister]   NVARCHAR(200)        NULL,
                             [Inferred]        BIT              NOT NULL DEFAULT 0,
-                            [SourceBibleHash] NVARCHAR(64)         NULL,
+                            [SourceOutlineHash] NVARCHAR(64)         NULL,
                             [UpdatedAt]       DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
                             CONSTRAINT [PK_CharacterEmotionalLedgers] PRIMARY KEY ([Id]),
                             CONSTRAINT [FK_CharacterEmotionalLedgers_Nodes] FOREIGN KEY ([NodeId])

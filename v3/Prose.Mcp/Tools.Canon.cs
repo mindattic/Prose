@@ -10,7 +10,7 @@ namespace Prose.Mcp;
 
 // ── Canon document tools (Track A — Truth-First Architecture) ─────────────────
 // Structured canon editing: every world-level .md file has a DB source of truth.
-// Edits go through set_canon_section / set_book_bible_section; the .md artifacts
+// Edits go through set_canon_section / set_book_outline_section; the .md artifacts
 // are regenerated on demand and NEVER hand-edited.
 //
 // Document types are data-driven (CanonDocumentTypes table, not a fixed list) — call
@@ -198,28 +198,28 @@ public class CanonDocTools
         }, CanonTools.JsonOpts);
     }
 
-    // ── NodeBibleSections ─────────────────────────────────────────────────────
+    // ── NodeOutlineSections ─────────────────────────────────────────────────────
 
     [McpServerTool, Description(
-        "Update or create a structured section in a book's node bible (NodeBibleSections table). " +
+        "Update or create a structured section in a book's node bible (NodeOutlineSections table). " +
         "sectionType: Full | ArcSummary | Characters | VoiceRegister | NarrativeLocks | BeatSpine. " +
         "Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain " +
         "structured per-category content. The docs/nodes/<CODE>.md artifact and the MarkdownFiles " +
         "sync (what DocContextService reads) are regenerated automatically as part of this call.")]
-    public Task<string> SetBookBibleSection(
+    public Task<string> SetBookOutlineSection(
         [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug,
         [Description("Section type: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, or BeatSpine.")] string sectionType,
         [Description("Section content (markdown). Replaces any existing content for this sectionType.")] string content) =>
-        hub.InvokeAsync(nameof(CanonDocTools), nameof(SetBookBibleSectionImpl), new { nodeIdOrSlug, sectionType, content });
+        hub.InvokeAsync(nameof(CanonDocTools), nameof(SetBookOutlineSectionImpl), new { nodeIdOrSlug, sectionType, content });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> SetBookBibleSectionImpl(string nodeIdOrSlug, string sectionType, string content)
+    public async Task<string> SetBookOutlineSectionImpl(string nodeIdOrSlug, string sectionType, string content)
     {
         var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
         if (nodeId == null)
             return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
 
-        var result = await canonDocs.SetNodeBibleSectionAsync(nodeId.Value, sectionType, content);
+        var result = await canonDocs.SetNodeOutlineSectionAsync(nodeId.Value, sectionType, content);
 
         if (!result.Ok)
             return JsonSerializer.Serialize(new { error = result.Error, message = result.ErrorMessage }, CanonTools.JsonOpts);
@@ -245,20 +245,20 @@ public class CanonDocTools
     }
 
     [McpServerTool, Description(
-        "List all NodeBibleSections for a book node. Shows section types, content lengths, and last-updated timestamps. " +
-        "Use this to see which typed sections exist before calling set_book_bible_section.")]
-    public Task<string> ListBookBibleSections(
+        "List all NodeOutlineSections for a book node. Shows section types, content lengths, and last-updated timestamps. " +
+        "Use this to see which typed sections exist before calling set_book_outline_section.")]
+    public Task<string> ListBookOutlineSections(
         [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug) =>
-        hub.InvokeAsync(nameof(CanonDocTools), nameof(ListBookBibleSectionsImpl), new { nodeIdOrSlug });
+        hub.InvokeAsync(nameof(CanonDocTools), nameof(ListBookOutlineSectionsImpl), new { nodeIdOrSlug });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> ListBookBibleSectionsImpl(string nodeIdOrSlug)
+    public async Task<string> ListBookOutlineSectionsImpl(string nodeIdOrSlug)
     {
         var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
         if (nodeId == null)
             return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
 
-        var sections = await canonDocs.GetNodeBibleSectionsAsync(nodeId.Value);
+        var sections = await canonDocs.GetNodeOutlineSectionsAsync(nodeId.Value);
 
         return JsonSerializer.Serialize(new
         {
@@ -277,9 +277,9 @@ public class CanonDocTools
 
     /// <summary>
     /// 2026-08-24 consolidation. This copy was patched on 2026-08-23, after
-    /// <c>list_book_bible_sections</c> on VIGL (universe scry) 404'd on the very slug
+    /// <c>list_book_outline_sections</c> on VIGL (universe scry) 404'd on the very slug
     /// <c>read_beats</c> resolves fine — making VIGL's bible uneditable through
-    /// <c>SetBookBibleSection</c>, its only sanctioned edit path. Correct since, but a correct
+    /// <c>SetBookOutlineSection</c>, its only sanctioned edit path. Correct since, but a correct
     /// duplicate is how the next copy goes wrong: the audit found twelve of these helpers and six
     /// still broken. Delegates to <see cref="NodeRefResolver"/>, which keeps this file's hard-won
     /// behaviour — <c>IgnoreQueryFilters()</c> on every branch, and a well-formed GUID matching no

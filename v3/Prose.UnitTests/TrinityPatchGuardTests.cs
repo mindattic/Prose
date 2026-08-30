@@ -91,7 +91,7 @@ public class TrinityPatchGuardTests
     // ── StripMarkdownDecoration ───────────────────────────────────────────────
     // Found live 2026-08-19: a bible regeneration reformatted character bullets from
     // "Name (slug) - desc" to "**Name** (`slug`) - desc" without the underlying fact changing,
-    // which broke PatchBibleSectionAsync's exact-line match for 5 real claims (Ruslan Adeyinka,
+    // which broke PatchOutlineSectionAsync's exact-line match for 5 real claims (Ruslan Adeyinka,
     // Breckenridge, Ferko Nzambe, Auda Vane, Coeli Vantanen), all refused as "snippet no longer
     // present verbatim" even though the fact was unchanged.
 

@@ -20,7 +20,7 @@ namespace Prose.Core.Services;
 /// PNAS 2025; Artificial Hivemind, NeurIPS 2025: sampling and ensembles do NOT
 /// break semantic homogeneity).
 ///
-/// Ordering contract: node bible first (NodeBibleService), blueprint second,
+/// Ordering contract: node bible first (NodeOutlineService), blueprint second,
 /// prose last. BuildBeatInjectionAsync feeds the per-beat slice into the
 /// ProseWriterRouter enrichment chain; StoryScopeAuditService verifies the
 /// commitments held after writing.
@@ -159,7 +159,7 @@ public class StructuralBlueprintService
         var node = await db.Nodes.FindAsync([nodeId], ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        if (string.IsNullOrWhiteSpace(node.NodeBible) && !retrofit)
+        if (string.IsNullOrWhiteSpace(node.NodeOutline) && !retrofit)
             throw new InvalidOperationException(
                 $"Node '{node.Title}' has no bible. Generate the bible first (bible → blueprint → prose).");
 
@@ -586,10 +586,10 @@ public class StructuralBlueprintService
             "",
         };
 
-        if (!string.IsNullOrWhiteSpace(node.NodeBible))
+        if (!string.IsNullOrWhiteSpace(node.NodeOutline))
         {
             parts.Add("NODE BIBLE:");
-            parts.Add(ClampText(node.NodeBible, 12000));
+            parts.Add(ClampText(node.NodeOutline, 12000));
             parts.Add("");
         }
 

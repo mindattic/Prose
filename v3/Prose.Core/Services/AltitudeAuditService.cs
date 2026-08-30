@@ -10,7 +10,7 @@ namespace Prose.Core.Services;
 
 /// <summary>
 /// The three-altitudes agreement audit (docs/LOGIC.md §8): compares the DESIGNED story
-/// (10,000 ft — hand-authored NodeBible + structural blueprint headline) against the TOLD
+/// (10,000 ft — hand-authored NodeOutline + structural blueprint headline) against the TOLD
 /// story (100 ft — chapter synopses from <see cref="SynopsisExportService"/>) and reports
 /// divergences. Beat-altitude (10 ft) checking stays with the logic sweep.
 ///
@@ -42,11 +42,11 @@ public sealed class AltitudeAuditService(
             // IgnoreQueryFilters(): explicit storyNodeId, not an ambient scope (same bug class
             // found and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
             var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == storyNodeId)
-                .Select(n => new { n.Slug, n.NodeCode, n.Title, n.NodeBible })
+                .Select(n => new { n.Slug, n.NodeCode, n.Title, n.NodeOutline })
                 .FirstOrDefaultAsync(ct);
             if (node == null) return null;
             slug = node.Slug; nodeCode = node.NodeCode ?? node.Slug.ToUpperInvariant(); title = node.Title;
-            bible = NodeDocService.ExtractHandAuthored(node.NodeBible);
+            bible = NodeDocService.ExtractHandAuthored(node.NodeOutline);
 
             var bp = await db.NodeStructuralBlueprints.AsNoTracking()
                 .Where(b => b.NodeId == storyNodeId).FirstOrDefaultAsync(ct);

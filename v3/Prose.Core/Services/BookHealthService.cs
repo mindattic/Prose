@@ -973,7 +973,7 @@ public class BookHealthService(
         if (string.Equals(result.Confidence, "low", StringComparison.OrdinalIgnoreCase))
             findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.StructuralFailure, FindingSeverity.Low,
                 $"THEME [unclear]: no coherent controlling idea identifiable from Seed/Bible/bookend beats — {result.Diagnosis}",
-                snippet: null, suggestedFix: "State the book's controlling idea in the NodeBible via set_book_bible so future beats have a claim to dramatize.");
+                snippet: null, suggestedFix: "State the book's controlling idea in the NodeOutline via set_book_outline so future beats have a claim to dramatize.");
 
         // EndingEngagesOpening is now nullable (2026-08-14 fix) — null means the model didn't
         // answer the question (e.g. omitted the field), which is NOT the same as "no, it

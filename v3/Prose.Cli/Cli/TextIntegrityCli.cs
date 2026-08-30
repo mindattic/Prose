@@ -6,14 +6,14 @@ namespace Prose.Cli;
 /// <summary>
 /// prose --check-text-integrity [--fix] [--json]
 ///
-/// Scans every Beats.Text and every book's Nodes.NodeBible, corpus-wide across ALL universes in
+/// Scans every Beats.Text and every book's Nodes.NodeOutline, corpus-wide across ALL universes in
 /// one pass (TextIntegrityService.ScanAsync uses IgnoreQueryFilters — a data-integrity scan must
 /// never be universe-scoped), for TWO known corruption signatures left by past non-UTF-8 write
 /// paths mangling a multi-byte character: U+FFFD (the Unicode replacement character), and stray
 /// low-range control characters (codepoints 1-31, excluding tab/LF/CR) standing in for a lost
 /// em-dash or section symbol.
 ///
-/// Added 2026-08-15 after finding 8 real instances of the U+FFFD case in Ballast's NodeBible
+/// Added 2026-08-15 after finding 8 real instances of the U+FFFD case in Ballast's NodeOutline
 /// during its sequential read. Root cause of why this went undetected: SQL Server's
 /// REPLACE/CHARINDEX gave false negatives for U+FFFD under this DB's collation — only a raw
 /// positional UNICODE() scan found it. This tool never uses those SQL functions for detection; it
@@ -65,7 +65,7 @@ public static class TextIntegrityCli
 
         if (findings.Count == 0)
         {
-            Console.WriteLine("[text-integrity] Clean — no U+FFFD or stray control characters found in any Beats.Text or Nodes.NodeBible, corpus-wide.");
+            Console.WriteLine("[text-integrity] Clean — no U+FFFD or stray control characters found in any Beats.Text or Nodes.NodeOutline, corpus-wide.");
             return 0;
         }
 

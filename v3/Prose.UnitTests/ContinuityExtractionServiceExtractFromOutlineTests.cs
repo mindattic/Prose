@@ -8,9 +8,9 @@ namespace Prose.UnitTests;
 
 /// <summary>
 /// Phase A/B of the Bible/Book/Entities validation triangle (2026-08-18):
-/// ContinuityExtractionService.ExtractFromBibleAsync must prefer a matching
-/// NodeBibleSections row over the raw Nodes.NodeBible blob, fall back correctly when no
-/// section exists, and tag every resulting claim SourceType="bible" so it competes/reconciles
+/// ContinuityExtractionService.ExtractFromOutlineAsync must prefer a matching
+/// NodeOutlineSections row over the raw Nodes.NodeOutline blob, fall back correctly when no
+/// section exists, and tag every resulting claim SourceType="outline" so it competes/reconciles
 /// against prose- and entity-record-derived claims in the same ledger. Uses a capturing fake
 /// ILlmService (returns "[]" — no claims) so these tests verify the TEXT SUBSTRATE selection
 /// logic without depending on real LLM extraction quality, mirroring the existing
@@ -74,24 +74,24 @@ public class ContinuityExtractionServiceExtractFromBibleTests
         db.Nodes.Add(new BookNode
         {
             Id = id, Slug = "test-book-" + id.ToString("N")[..8], Title = "Test Book",
-            Kind = "book", Status = "draft", NodeBible = nodeBible,
+            Kind = "book", Status = "draft", NodeOutline = nodeBible,
         });
         await db.SaveChangesAsync();
         return id;
     }
 
     [Test]
-    public async Task ExtractFromBibleAsync_SectionExists_UsesSectionContentNotFullBlob()
+    public async Task ExtractFromOutlineAsync_SectionExists_UsesSectionContentNotFullBlob()
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var nodeId = await SeedNodeAsync(db, nodeBible: "FULL BIBLE BLOB — should not be sent when a section exists.");
-        db.NodeBibleSections.Add(new NodeBibleSection
+        db.NodeOutlineSections.Add(new NodeOutlineSection
         {
             NodeId = nodeId, SectionType = "Characters", Content = "UNIQUE-SECTION-MARKER: Rook has dark red hair.",
         });
         await db.SaveChangesAsync();
 
-        await ext.ExtractFromBibleAsync(nodeId);
+        await ext.ExtractFromOutlineAsync(nodeId);
 
         Assert.That(llm.CallCount, Is.EqualTo(1));
         Assert.That(llm.LastUserContext, Does.Contain("UNIQUE-SECTION-MARKER"));
@@ -99,49 +99,49 @@ public class ContinuityExtractionServiceExtractFromBibleTests
     }
 
     [Test]
-    public async Task ExtractFromBibleAsync_NoSection_FallsBackToRawNodeBible()
+    public async Task ExtractFromOutlineAsync_NoSection_FallsBackToRawNodeOutline()
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var nodeId = await SeedNodeAsync(db, nodeBible: "RAW-BIBLE-MARKER: the only content this book has.");
 
-        await ext.ExtractFromBibleAsync(nodeId);
+        await ext.ExtractFromOutlineAsync(nodeId);
 
         Assert.That(llm.CallCount, Is.EqualTo(1));
         Assert.That(llm.LastUserContext, Does.Contain("RAW-BIBLE-MARKER"));
     }
 
     [Test]
-    public async Task ExtractFromBibleAsync_NoSectionAndNoNodeBible_ReturnsErrorWithoutCallingLlm()
+    public async Task ExtractFromOutlineAsync_NoSectionAndNoNodeOutline_ReturnsErrorWithoutCallingLlm()
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var nodeId = await SeedNodeAsync(db, nodeBible: null);
 
-        var result = await ext.ExtractFromBibleAsync(nodeId);
+        var result = await ext.ExtractFromOutlineAsync(nodeId);
 
         Assert.That(result.Error, Is.Not.Null);
         Assert.That(llm.CallCount, Is.EqualTo(0), "no bible content at all must short-circuit before any LLM call");
     }
 
     [Test]
-    public async Task ExtractFromBibleAsync_RequestedSectionMissing_FallsBackToRawBible()
+    public async Task ExtractFromOutlineAsync_RequestedSectionMissing_FallsBackToRawBible()
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var nodeId = await SeedNodeAsync(db, nodeBible: "RAW-FALLBACK-MARKER");
         // A DIFFERENT section exists, but not the one requested ("Characters" default).
-        db.NodeBibleSections.Add(new NodeBibleSection { NodeId = nodeId, SectionType = "VoiceRegister", Content = "voice stuff" });
+        db.NodeOutlineSections.Add(new NodeOutlineSection { NodeId = nodeId, SectionType = "VoiceRegister", Content = "voice stuff" });
         await db.SaveChangesAsync();
 
-        await ext.ExtractFromBibleAsync(nodeId, sectionType: "Characters");
+        await ext.ExtractFromOutlineAsync(nodeId, sectionType: "Characters");
 
         Assert.That(llm.LastUserContext, Does.Contain("RAW-FALLBACK-MARKER"));
     }
 
     [Test]
-    public async Task ExtractFromBibleAsync_ProducedClaims_AreTaggedSourceTypeBible()
+    public async Task ExtractFromOutlineAsync_ProducedClaims_AreTaggedSourceTypeBible()
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var nodeId = await SeedNodeAsync(db, nodeBible: null);
-        db.NodeBibleSections.Add(new NodeBibleSection
+        db.NodeOutlineSections.Add(new NodeOutlineSection
         {
             NodeId = nodeId, SectionType = "Characters", Content = "Rook has dark red hair.",
         });
@@ -156,7 +156,7 @@ public class ContinuityExtractionServiceExtractFromBibleTests
             [{"entity_name":"Rook","predicate":"hair_color","object":"dark red","snippet":"Rook has dark red hair.","voice":"narrator","confidence":"high"}]
             """;
 
-        var result = await ext.ExtractFromBibleAsync(nodeId);
+        var result = await ext.ExtractFromOutlineAsync(nodeId);
 
         Assert.That(result.Error, Is.Null);
         Assert.That(result.NewClaims, Is.EqualTo(1));
@@ -164,23 +164,23 @@ public class ContinuityExtractionServiceExtractFromBibleTests
         var store = new ContinuityService(dbFactory);
         var claims = store.GetByEntity(character.Id);
         Assert.That(claims, Has.Count.EqualTo(1));
-        Assert.That(claims[0].SourceType, Is.EqualTo("bible"));
+        Assert.That(claims[0].SourceType, Is.EqualTo("outline"));
         Assert.That(claims[0].SourcePath, Is.EqualTo("bible-section:Characters"));
     }
 
     [Test]
-    public async Task ExtractFromBibleAsync_StripsMarkdownBeforeSendingToLlm()
+    public async Task ExtractFromOutlineAsync_StripsMarkdownBeforeSendingToLlm()
     {
         await using var db = await dbFactory.CreateDbContextAsync();
         var nodeId = await SeedNodeAsync(db, nodeBible: null);
-        db.NodeBibleSections.Add(new NodeBibleSection
+        db.NodeOutlineSections.Add(new NodeOutlineSection
         {
             NodeId = nodeId, SectionType = "Characters",
             Content = "### Rook\n**Heritage:** Ghanaian-Portuguese\nHer *wound*: operational.",
         });
         await db.SaveChangesAsync();
 
-        await ext.ExtractFromBibleAsync(nodeId);
+        await ext.ExtractFromOutlineAsync(nodeId);
 
         Assert.That(llm.LastUserContext, Does.Not.Contain("**"));
         Assert.That(llm.LastUserContext, Does.Not.Contain("###"));

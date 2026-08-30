@@ -65,7 +65,7 @@ public static class ListArchivesCli
         {
             var fields = new List<string>();
             if (!string.IsNullOrWhiteSpace(a.Description)) fields.Add("description");
-            if (!string.IsNullOrWhiteSpace(a.NodeBible)) fields.Add("nodebible");
+            if (!string.IsNullOrWhiteSpace(a.NodeOutline)) fields.Add("nodeoutline");
             if (!string.IsNullOrWhiteSpace(a.Summary)) fields.Add("summary");
             if (!string.IsNullOrWhiteSpace(a.Seed)) fields.Add("seed");
             if (!string.IsNullOrWhiteSpace(a.Subtitle)) fields.Add("subtitle");

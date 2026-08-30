@@ -81,7 +81,7 @@ public class EmotionalBeatScore
 
 /// <summary>
 /// Per-(node, character) cache of Want/Need/Wound/Flaw parsed from the node bible.
-/// Cache-busted on <see cref="SourceBibleHash"/>. Unique on (NodeId, Character).
+/// Cache-busted on <see cref="SourceOutlineHash"/>. Unique on (NodeId, Character).
 /// </summary>
 public class CharacterEmotionalLedger
 {
@@ -99,8 +99,8 @@ public class CharacterEmotionalLedger
     /// <summary>True when ledger was inferred from prose (no bible heading found).</summary>
     public bool Inferred { get; set; }
 
-    /// <summary>SHA-256 of Node.NodeBible at extraction time. Null triggers refresh.</summary>
-    public string? SourceBibleHash { get; set; }
+    /// <summary>SHA-256 of Node.NodeOutline at extraction time. Null triggers refresh.</summary>
+    public string? SourceOutlineHash { get; set; }
 
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 }

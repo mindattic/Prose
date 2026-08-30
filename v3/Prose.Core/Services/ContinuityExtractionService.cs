@@ -218,18 +218,18 @@ public class ContinuityExtractionService
         return results;
     }
 
-    /// <summary>Max chars pulled from the raw <c>Nodes.NodeBible</c> fallback when no matching
-    /// <see cref="NodeBibleSection"/> row exists yet — mirrors <c>BookEntityReconciliationService</c>'s
+    /// <summary>Max chars pulled from the raw <c>Nodes.NodeOutline</c> fallback when no matching
+    /// <see cref="NodeOutlineSection"/> row exists yet — mirrors <c>BookEntityReconciliationService</c>'s
     /// existing bible-excerpt guard so this doesn't blow the extraction prompt's token budget on a
     /// long hand-authored bible.</summary>
     private const int MaxBibleExcerptChars = 30000;
 
     /// <summary>
     /// Extract continuity claims from a book's story bible instead of its prose — the third leg
-    /// of the Bible/Book/Entities validation triangle. Prefers the typed <c>NodeBibleSections</c>
+    /// of the Bible/Book/Entities validation triangle. Prefers the typed <c>NodeOutlineSections</c>
     /// row matching <paramref name="sectionType"/> when one exists (narrower, cheaper, and skews
     /// present-tense/settled fact rather than plot-forward — see the caller-facing warning below);
-    /// falls back to the raw <c>Nodes.NodeBible</c> blob (clamped to <see cref="MaxBibleExcerptChars"/>)
+    /// falls back to the raw <c>Nodes.NodeOutline</c> blob (clamped to <see cref="MaxBibleExcerptChars"/>)
     /// so this works even for books that have never had a typed section authored.
     ///
     /// Deliberately defaults <paramref name="sectionType"/> to "Characters", not "ArcSummary" or
@@ -239,7 +239,7 @@ public class ContinuityExtractionService
     /// real, not hypothetical, false-positive CONTRADICTED claims against present-day prose.
     /// Character-sheet content ("her hair is dark red") skews settled fact instead.
     ///
-    /// Claims land with <c>SourceType = "bible"</c> in the SAME <see cref="ContinuityClaims"/>
+    /// Claims land with <c>SourceType = "outline"</c> in the SAME <see cref="ContinuityClaims"/>
     /// ledger prose/entity-record extraction already populates — <see cref="ContinuityService.Upsert"/>
     /// is source-agnostic, so a bible claim and a prose claim on the same (EntityId, Predicate)
     /// compete/reconcile automatically; no new comparison logic needed.
@@ -252,7 +252,7 @@ public class ContinuityExtractionService
     /// mode <c>AltitudeAuditService</c> already hit once). A single beat/chapter rarely has enough
     /// named entities to need this; a book's whole character roster commonly does.
     /// </summary>
-    public async Task<ContinuityExtractionResult> ExtractFromBibleAsync(
+    public async Task<ContinuityExtractionResult> ExtractFromOutlineAsync(
         Guid nodeId, string sectionType = "Characters", int maxTokens = 8192, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -261,7 +261,7 @@ public class ContinuityExtractionService
         var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        var section = await db.NodeBibleSections.AsNoTracking()
+        var section = await db.NodeOutlineSections.AsNoTracking()
             .Where(s => s.NodeId == nodeId && s.SectionType == sectionType)
             .Select(s => s.Content)
             .FirstOrDefaultAsync(ct);
@@ -273,17 +273,17 @@ public class ContinuityExtractionService
             bibleText = section;
             sourcePath = $"bible-section:{sectionType}";
         }
-        else if (!string.IsNullOrWhiteSpace(node.NodeBible))
+        else if (!string.IsNullOrWhiteSpace(node.NodeOutline))
         {
-            bibleText = node.NodeBible.Length > MaxBibleExcerptChars
-                ? node.NodeBible[..MaxBibleExcerptChars] : node.NodeBible;
+            bibleText = node.NodeOutline.Length > MaxBibleExcerptChars
+                ? node.NodeOutline[..MaxBibleExcerptChars] : node.NodeOutline;
             sourcePath = "bible-full:fallback";
         }
         else
         {
             return new ContinuityExtractionResult
             {
-                ChapterId = "", ChapterTitle = $"bible:{node.Slug}", Error = "no bible content (no section, no NodeBible)",
+                ChapterId = "", ChapterTitle = $"bible:{node.Slug}", Error = "no bible content (no section, no NodeOutline)",
             };
         }
 
@@ -306,7 +306,7 @@ public class ContinuityExtractionService
         var result = await ExtractClaimsFromProseAsync(
             bibleText, contextHeader, sourceChapterId: "", sourceChapterNumber: null,
             sourceChapterTitle: sectionType, bookSlug: node.Slug, maxTokens, ct,
-            sourceType: "bible", sourcePath: sourcePath);
+            sourceType: "outline", sourcePath: sourcePath);
         result.ChapterTitle = $"bible:{node.Slug}:{sectionType}";
         return result;
     }
@@ -318,7 +318,7 @@ public class ContinuityExtractionService
     // Found live 2026-08-19/20: a duplicated sentence in a published, complete book's prose sat
     // undetected until an unrelated investigation happened to snag on it — the ledger had no way
     // to know the text had drifted from what it extracted. These two methods are the fix: called
-    // from NodeWorkbenchService.UpdateBeatTextAsync / CanonDocumentService.SetNodeBibleSectionAsync
+    // from NodeWorkbenchService.UpdateBeatTextAsync / CanonDocumentService.SetNodeOutlineSectionAsync
     // on every save, they re-extract ONLY the one chapter/section that changed, and ONLY for a
     // book that already opted in via ExtractBookIfNeededAsync — this never silently extracts a
     // book for the first time; that stays ExtractBookIfNeededAsync's explicit, supervised job.
@@ -376,7 +376,7 @@ public class ContinuityExtractionService
     /// <summary>Re-extracts one bible section's claims if its content has changed since
     /// extraction last ran against it. Same no-op/opt-in rules as
     /// <see cref="ReExtractChapterIfChangedAsync"/>.</summary>
-    public async Task<bool> ReExtractBibleSectionIfChangedAsync(Guid nodeId, string sectionType, int maxTokens = 8192, CancellationToken ct = default)
+    public async Task<bool> ReExtractOutlineSectionIfChangedAsync(Guid nodeId, string sectionType, int maxTokens = 8192, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
@@ -385,24 +385,24 @@ public class ContinuityExtractionService
 
         if (!store.HasAnyClaimsForBook(bookSlug)) return false;
 
-        var content = await db.NodeBibleSections.AsNoTracking()
+        var content = await db.NodeOutlineSections.AsNoTracking()
             .Where(s => s.NodeId == nodeId && s.SectionType == sectionType)
             .Select(s => s.Content)
             .FirstOrDefaultAsync(ct);
         if (string.IsNullOrWhiteSpace(content))
-            content = node.NodeBible; // same fallback ExtractFromBibleAsync itself uses
+            content = node.NodeOutline; // same fallback ExtractFromOutlineAsync itself uses
         if (string.IsNullOrWhiteSpace(content)) return false;
 
         var hash = ComputeContentHash(content);
         var cursor = await db.ContinuityExtractionCursors
-            .FirstOrDefaultAsync(c => c.BookSlug == bookSlug && c.SourceKind == "bible_section" && c.SourceKey == sectionType, ct);
+            .FirstOrDefaultAsync(c => c.BookSlug == bookSlug && c.SourceKind == "outline_section" && c.SourceKey == sectionType, ct);
         if (cursor != null && cursor.ContentHash == hash) return false;
 
         log.LogInformation("[continuity] Re-extracting bible section '{Section}' for {BookSlug} — content changed since last extraction.",
             sectionType, bookSlug);
-        await ExtractFromBibleAsync(nodeId, sectionType, maxTokens, ct);
+        await ExtractFromOutlineAsync(nodeId, sectionType, maxTokens, ct);
 
-        await UpsertCursorAsync(db, bookSlug, "bible_section", sectionType, hash, ct);
+        await UpsertCursorAsync(db, bookSlug, "outline_section", sectionType, hash, ct);
         return true;
     }
 
@@ -436,14 +436,14 @@ public class ContinuityExtractionService
             await UpsertCursorAsync(db, book.Slug, "chapter", chapterId.ToString("D"), ComputeContentHash(prose), ct);
         }
 
-        var sections = await db.NodeBibleSections.AsNoTracking()
+        var sections = await db.NodeOutlineSections.AsNoTracking()
             .Where(s => s.NodeId == bookNodeId)
             .Select(s => new { s.SectionType, s.Content })
             .ToListAsync(ct);
         foreach (var s in sections)
         {
             if (string.IsNullOrWhiteSpace(s.Content)) continue;
-            await UpsertCursorAsync(db, book.Slug, "bible_section", s.SectionType, ComputeContentHash(s.Content), ct);
+            await UpsertCursorAsync(db, book.Slug, "outline_section", s.SectionType, ComputeContentHash(s.Content), ct);
         }
     }
 
@@ -476,7 +476,7 @@ public class ContinuityExtractionService
     /// <summary>Shared body for "extract atomic claims from one block of prose, upsert each" —
     /// used by the legacy IChapterRepository path (<see cref="ExtractFromChapterAsync"/>), the
     /// SS-A43 Nodes path (<see cref="ExtractFromBookNodeAsync"/>), and the bible path
-    /// (<see cref="ExtractFromBibleAsync"/>) so the extraction prompt, JSON parsing,
+    /// (<see cref="ExtractFromOutlineAsync"/>) so the extraction prompt, JSON parsing,
     /// snippet-grounding, and upsert logic exist exactly once.</summary>
     private async Task<ContinuityExtractionResult> ExtractClaimsFromProseAsync(
         string prose, string contextHeader, string sourceChapterId, int? sourceChapterNumber,

@@ -7,30 +7,30 @@ using Prose.Core.Interfaces;
 
 namespace Prose.Core.Services;
 
-public record BibleSyncFact(string Fact, int BeatNumber, string BeatTitle, string Category);
+public record OutlineSyncFact(string Fact, int BeatNumber, string BeatTitle, string Category);
 
-public record BibleSyncReport(
+public record OutlineSyncReport(
     Guid SessionId,
     string SessionLabel,
     string NodeCode,
-    List<BibleSyncFact> Facts,
+    List<OutlineSyncFact> Facts,
     bool WroteToFile,
     string? FilePath);
 
-public class BibleSyncService
+public class OutlineSyncService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly ILlmService llm;
     private readonly IPathProvider paths;
     private readonly MarkdownFileService markdown;
-    private readonly ILogger<BibleSyncService> log;
+    private readonly ILogger<OutlineSyncService> log;
 
-    public BibleSyncService(
+    public OutlineSyncService(
         IDbContextFactory<ProseDbContext> dbFactory,
         ILlmService llm,
         IPathProvider paths,
         MarkdownFileService markdown,
-        ILogger<BibleSyncService> log)
+        ILogger<OutlineSyncService> log)
     {
         this.dbFactory = dbFactory;
         this.llm = llm;
@@ -39,7 +39,7 @@ public class BibleSyncService
         this.log = log;
     }
 
-    public async Task<BibleSyncReport> ExtractFromSessionAsync(
+    public async Task<OutlineSyncReport> ExtractFromSessionAsync(
         Guid sessionId, bool dryRun = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -59,7 +59,7 @@ public class BibleSyncService
             .ToListAsync(ct);
 
         if (sessionBeats.Count == 0)
-            return new BibleSyncReport(sessionId, session.Label, node.NodeCode ?? node.Slug,
+            return new OutlineSyncReport(sessionId, session.Label, node.NodeCode ?? node.Slug,
                 new(), false, null);
 
         // Short-circuit BEFORE the LLM call when there is no bible file to append to
@@ -69,9 +69,9 @@ public class BibleSyncService
         var earlyBibleFile = Path.Combine(paths.DataRoot, "docs", "nodes", $"{earlyNodeCode}.md");
         if (!dryRun && !File.Exists(earlyBibleFile))
         {
-            log.LogInformation("BibleSync: no bible file at {Path} — skipping extraction for session {SessionId}",
+            log.LogInformation("OutlineSync: no bible file at {Path} — skipping extraction for session {SessionId}",
                 earlyBibleFile, sessionId);
-            return new BibleSyncReport(sessionId, session.Label, earlyNodeCode, new(), false, earlyBibleFile);
+            return new OutlineSyncReport(sessionId, session.Label, earlyNodeCode, new(), false, earlyBibleFile);
         }
 
         // Build the prose corpus for LLM extraction
@@ -106,7 +106,7 @@ Output STRICT JSON — no markdown fences, no commentary:
 
         var user = $"Book: {node.Title ?? node.Slug}\nSession: {session.Label}\n\nBeats:\n\n{corpus}";
 
-        List<BibleSyncFact> facts = new();
+        List<OutlineSyncFact> facts = new();
         try
         {
             var raw = await llm.GenerateAsync(system, user, temperature: 0.3,
@@ -121,26 +121,26 @@ Output STRICT JSON — no markdown fences, no commentary:
                     var beatTitle = el.TryGetProperty("beatTitle", out var bt) ? bt.GetString() ?? "" : "";
                     var category = el.TryGetProperty("category", out var cat) ? cat.GetString() ?? "other" : "other";
                     if (!string.IsNullOrWhiteSpace(fact))
-                        facts.Add(new BibleSyncFact(fact, beatNum, beatTitle, category));
+                        facts.Add(new OutlineSyncFact(fact, beatNum, beatTitle, category));
                 }
             }
         }
         catch (Exception ex)
         {
-            log.LogWarning(ex, "BibleSyncService LLM parse failed for session {SessionId}", sessionId);
+            log.LogWarning(ex, "OutlineSyncService LLM parse failed for session {SessionId}", sessionId);
         }
 
         var nodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
 
         if (dryRun || facts.Count == 0)
-            return new BibleSyncReport(sessionId, session.Label, nodeCode, facts, false, null);
+            return new OutlineSyncReport(sessionId, session.Label, nodeCode, facts, false, null);
 
         // Append section to docs/nodes/<CODE>.md
         var bibleFile = Path.Combine(paths.DataRoot, "docs", "nodes", $"{nodeCode}.md");
         if (!File.Exists(bibleFile))
         {
             log.LogWarning("Bible file not found at {Path} — cannot append session extracts", bibleFile);
-            return new BibleSyncReport(sessionId, session.Label, nodeCode, facts, false, bibleFile);
+            return new OutlineSyncReport(sessionId, session.Label, nodeCode, facts, false, bibleFile);
         }
 
         var span = session.ClosedAt.HasValue
@@ -170,6 +170,6 @@ Output STRICT JSON — no markdown fences, no commentary:
         // Re-sync to MarkdownFiles DB so DocContextService sees it immediately
         await markdown.SyncAllAsync(ct: ct);
 
-        return new BibleSyncReport(sessionId, session.Label, nodeCode, facts, true, bibleFile);
+        return new OutlineSyncReport(sessionId, session.Label, nodeCode, facts, true, bibleFile);
     }
 }

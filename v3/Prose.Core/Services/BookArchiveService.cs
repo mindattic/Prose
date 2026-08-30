@@ -8,7 +8,7 @@ public sealed record BookArchiveResult(Guid ArchivedBookId, int LeafNodeCount, i
 
 /// <summary>
 /// Snapshots a book's ENTIRE current live prose, plus the Node's own content fields
-/// (Description, NodeBible, Summary, Seed, Subtitle), into one <see cref="ArchivedBook"/> row —
+/// (Description, NodeOutline, Summary, Seed, Subtitle), into one <see cref="ArchivedBook"/> row —
 /// a pre-edit backup. Extracted from <c>ArchiveBookCli</c> (manual `--archive-book`) so
 /// <see cref="AutoCorrectOrchestratorService"/> can call the exact same, tested logic before it
 /// touches a book, without going through the CLI. Read-only against Beats/Nodes/BeatNodes: never
@@ -77,7 +77,7 @@ public class BookArchiveService(IDbContextFactory<ProseDbContext> dbFactory)
             BeatCount = beatCount,
             WordCount = wordCount,
             Description = node.Description,
-            NodeBible = node.NodeBible,
+            NodeOutline = node.NodeOutline,
             Summary = node.Summary,
             Seed = node.Seed,
             Subtitle = node.Subtitle,

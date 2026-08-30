@@ -40,7 +40,7 @@ public static class ReconcileBookEntitiesCli
             if (all)
             {
                 var rows = await db.Nodes.AsNoTracking()
-                    .Where(n => n.Kind == "book" && n.NodeBible != null)
+                    .Where(n => n.Kind == "book" && n.NodeOutline != null)
                     .OrderBy(n => n.Title)
                     .Select(n => new { n.Id, n.Title, n.Slug })
                     .ToListAsync();
@@ -66,7 +66,7 @@ public static class ReconcileBookEntitiesCli
 
         if (targets.Count == 0)
         {
-            Console.Error.WriteLine("[reconcile-book-entities] No book nodes with a NodeBible found in this universe scope.");
+            Console.Error.WriteLine("[reconcile-book-entities] No book nodes with a NodeOutline found in this universe scope.");
             return 1;
         }
 

@@ -542,7 +542,7 @@ public class ProseDbContext : DbContext
     public DbSet<ContinuityCompatibilityJudgment> ContinuityCompatibilityJudgments => Set<ContinuityCompatibilityJudgment>();
 
     // Trinity Reconciliation — continuous re-extraction hash cursor. See
-    // ContinuityExtractionService.ReExtractChapterIfChangedAsync / ReExtractBibleSectionIfChangedAsync.
+    // ContinuityExtractionService.ReExtractChapterIfChangedAsync / ReExtractOutlineSectionIfChangedAsync.
     public DbSet<ContinuityExtractionCursor> ContinuityExtractionCursors => Set<ContinuityExtractionCursor>();
 
     // World-state ledger — append-only stream of (entity, aspect, verb, value)
@@ -683,9 +683,9 @@ public class ProseDbContext : DbContext
     // CanonDocumentCli, MigrateCanonDocsCli, and MarkdownFileService.
     public DbSet<CanonDocumentType>    CanonDocumentTypes    => Set<CanonDocumentType>();
 
-    // Truth-First Architecture (Track A) — structured NodeBible sections replace
-    // the Nodes.NodeBible text blob. Edits go through set_book_bible_section MCP.
-    public DbSet<NodeBibleSection> NodeBibleSections => Set<NodeBibleSection>();
+    // Truth-First Architecture (Track A) — structured NodeOutline sections replace
+    // the Nodes.NodeOutline text blob. Edits go through set_book_outline_section MCP.
+    public DbSet<NodeOutlineSection> NodeOutlineSections => Set<NodeOutlineSection>();
 
     // Truth-First Architecture (Track B) — per-beat structural contract.
     // Replaces EscalationCurveJson / EventTypePaletteJson blobs. One row per beat.
@@ -928,7 +928,7 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => new { x.DocumentId, x.SortKey });
         });
 
-        b.Entity<NodeBibleSection>(e =>
+        b.Entity<NodeOutlineSection>(e =>
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.SectionType).HasMaxLength(40).IsRequired();
@@ -936,7 +936,7 @@ public class ProseDbContext : DbContext
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => x.NodeId);
             e.HasIndex(x => new { x.NodeId, x.SectionType }).IsUnique()
-                .HasDatabaseName("UX_NodeBibleSections_Node_Type");
+                .HasDatabaseName("UX_NodeOutlineSections_Node_Type");
         });
 
         // ── Truth-First Architecture: Track B ────────────────────────────────
@@ -1207,7 +1207,7 @@ public class ProseDbContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.Character).HasMaxLength(200).IsRequired();
             e.Property(x => x.VoiceRegister).HasMaxLength(2000);
-            e.Property(x => x.SourceBibleHash).HasMaxLength(64);
+            e.Property(x => x.SourceOutlineHash).HasMaxLength(64);
             e.HasOne(x => x.Node).WithMany()
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => new { x.NodeId, x.Character }).IsUnique();
@@ -2768,7 +2768,7 @@ public class ProseDbContext : DbContext
         b.Entity<NodeSpineVersion>(e =>
         {
             e.HasKey(x => x.Id);
-            e.Property(x => x.BibleHash).HasMaxLength(64);
+            e.Property(x => x.OutlineHash).HasMaxLength(64);
             e.Property(x => x.UserStoriesHash).HasMaxLength(64);
             e.Property(x => x.PinnedBy).HasMaxLength(100);
             e.Property(x => x.Notes).HasMaxLength(1000);

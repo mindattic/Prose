@@ -13,7 +13,7 @@ namespace Prose.Cli;
 /// <c>prose --run-corpus --count N</c> — autonomous end-to-end pipeline:
 ///
 ///   For each of N nodes (or resume from a prior run):
-///     1. Create node + planned beats (NodeBibleService)
+///     1. Create node + planned beats (NodeOutlineService)
 ///     2. Expand every beat to prose (BeatGeneratorService)
 ///     3. Reflow prose (ProseReflowService — mechanical punctuation only)
 ///     4. Validate against canon (CanonContradictionService)
@@ -140,7 +140,7 @@ public static class RunCorpusCli
 
         // Resolve services
         var dbFactory  = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        var bibleService  = services.GetRequiredService<NodeBibleService>();
+        var bibleService  = services.GetRequiredService<NodeOutlineService>();
         var router     = services.GetRequiredService<ProseWriterRouter>();
         var workbench  = services.GetRequiredService<NodeWorkbenchService>();
         var reflow     = services.GetRequiredService<ProseReflowService>();
@@ -347,7 +347,7 @@ public static class RunCorpusCli
 
     private static async Task<NodeEntry> CreateNodeAsync(
         IDbContextFactory<ProseDbContext> dbFactory,
-        NodeBibleService bibleService,
+        NodeOutlineService bibleService,
         string seed, string kind, int beats)
     {
         var nodeId = Guid.CreateVersion7();

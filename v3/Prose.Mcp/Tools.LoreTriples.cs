@@ -134,28 +134,28 @@ public class LoreTripleTools
 
     /// <summary>
     /// Extract continuity claims from a book's story bible instead of its prose — the third leg
-    /// of the Bible/Book/Entities validation triangle. Lands with SourceType="bible" in the same
+    /// of the Bible/Book/Entities validation triangle. Lands with SourceType="outline" in the same
     /// ledger prose/entity-record claims use, so a stale bible fact and a solid prose fact on the
     /// same (entity, predicate) compete and surface a contradiction automatically.
     /// </summary>
     [McpServerTool, Description(
-        "Extract continuity claims from a book's story bible (prefers the NodeBibleSections " +
+        "Extract continuity claims from a book's story bible (prefers the NodeOutlineSections " +
         "'Characters' section — settled character-sheet facts, not plot-forward arc/spine content " +
-        "— falling back to the raw NodeBible blob). Claims land with SourceType=\"bible\" in the " +
+        "— falling back to the raw NodeOutline blob). Claims land with SourceType=\"bible\" in the " +
         "same ledger chapter-prose and entity-record extraction already populate, so a bible fact " +
         "and a prose fact on the same (entity, predicate) compete/reconcile automatically — this " +
         "is how the Bible gets validated against (and validates) the actual prose and the entity repo.")]
-    public Task<string> ExtractContinuityFromBible(
+    public Task<string> ExtractContinuityFromOutline(
         [Description("Book/series node id (guid) or slug/NodeCode.")]
             string nodeIdOrSlug,
-        [Description("NodeBibleSections section to prefer: Characters (default, settled fact) | ArcSummary | VoiceRegister | NarrativeLocks | BeatSpine. Falls back to the raw NodeBible blob if the section doesn't exist yet.")]
+        [Description("NodeOutlineSections section to prefer: Characters (default, settled fact) | ArcSummary | VoiceRegister | NarrativeLocks | BeatSpine. Falls back to the raw NodeOutline blob if the section doesn't exist yet.")]
             string sectionType = "Characters",
         [Description("Max tokens for the extraction response. Default 8192 — higher than chapter extraction's 4096, since a book's whole character roster commonly produces a larger fact list than a single beat/chapter does.")]
             int maxTokens = 8192) =>
-        hub.InvokeAsync(nameof(LoreTripleTools), nameof(ExtractContinuityFromBibleImpl), new { nodeIdOrSlug, sectionType, maxTokens });
+        hub.InvokeAsync(nameof(LoreTripleTools), nameof(ExtractContinuityFromOutlineImpl), new { nodeIdOrSlug, sectionType, maxTokens });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> ExtractContinuityFromBibleImpl(string nodeIdOrSlug, string sectionType = "Characters", int maxTokens = 8192)
+    public async Task<string> ExtractContinuityFromOutlineImpl(string nodeIdOrSlug, string sectionType = "Characters", int maxTokens = 8192)
     {
         try
         {
@@ -168,13 +168,13 @@ public class LoreTripleTools
                 if (found == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
                 nodeId = found.Id;
             }
-            var r = await extraction.ExtractFromBibleAsync(nodeId, sectionType, maxTokens);
-            if (r.Error != null) return JsonSerializer.Serialize(new { error = "extract_bible_failed", detail = r.Error }, CanonTools.JsonOpts);
+            var r = await extraction.ExtractFromOutlineAsync(nodeId, sectionType, maxTokens);
+            if (r.Error != null) return JsonSerializer.Serialize(new { error = "extract_outline_failed", detail = r.Error }, CanonTools.JsonOpts);
             return JsonSerializer.Serialize(new { ok = r.ContradictedClaims == 0, report = r }, CanonTools.JsonOpts);
         }
         catch (Exception ex)
         {
-            return JsonSerializer.Serialize(new { error = "extract_bible_failed", detail = ex.Message }, CanonTools.JsonOpts);
+            return JsonSerializer.Serialize(new { error = "extract_outline_failed", detail = ex.Message }, CanonTools.JsonOpts);
         }
     }
 

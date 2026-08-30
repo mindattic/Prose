@@ -13,7 +13,7 @@ namespace Prose.Core.Services;
 /// register, characters, a numbered beat spine, and seeds-and-payoffs.
 ///
 /// The prose engine (BeatGeneratorService / Node.razor LLM sheet) reads the
-/// bible as <c>BookBibleContext</c> on every beat so the full arc is always
+/// bible as <c>BookOutlineContext</c> on every beat so the full arc is always
 /// in view.
 ///
 /// Usage:
@@ -23,18 +23,18 @@ namespace Prose.Core.Services;
 ///      drives planned-beat creation: each entry becomes a Beat row with
 ///      <c>Synopsis</c> = the plan, ready for prose expansion.
 /// </summary>
-public class NodeBibleService
+public class NodeOutlineService
 {
     private readonly ILlmService llm;
     private readonly DatabaseService canonDb;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
-    private readonly ILogger<NodeBibleService> log;
+    private readonly ILogger<NodeOutlineService> log;
 
-    public NodeBibleService(
+    public NodeOutlineService(
         ILlmService llm,
         DatabaseService canonDb,
         IDbContextFactory<ProseDbContext> dbFactory,
-        ILogger<NodeBibleService> log)
+        ILogger<NodeOutlineService> log)
     {
         this.llm      = llm;
         this.canonDb  = canonDb;
@@ -80,8 +80,8 @@ public class NodeBibleService
         var node = await db.Nodes.FindAsync([nodeId], ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        node.NodeBible            = bibleText;
-        node.NodeBibleGeneratedAt = DateTime.UtcNow;
+        node.NodeOutline            = bibleText;
+        node.NodeOutlineGeneratedAt = DateTime.UtcNow;
         node.UpdatedAt              = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
 
@@ -99,7 +99,7 @@ public class NodeBibleService
     /// Parse a "## BEAT SPINE" section out of already-written bible text and create planned
     /// beats from it (only when the node has no beats yet — see <see cref="CreatePlannedBeatsAsync"/>).
     /// This is the hand-authored-bible counterpart to <see cref="GenerateAndSaveAsync"/>'s own
-    /// inline spine parsing: <c>SetBookBible</c> (MCP) / <c>--set-book-bible</c> (CLI) save the
+    /// inline spine parsing: <c>SetBookOutline</c> (MCP) / <c>--set-book-outline</c> (CLI) save the
     /// bible text verbatim without ever calling an LLM, so they need this to actually create the
     /// planned Beat rows their own tool descriptions already claimed happened. No-op if the text
     /// has no "## BEAT SPINE" section, or the target node(s) already have beats.
@@ -114,7 +114,7 @@ public class NodeBibleService
     }
 
     /// <summary>
-    /// Beat Context Archive, Part F4b (2026-08-21): read <see cref="Data.Entities.Node.NodeBible"/>
+    /// Beat Context Archive, Part F4b (2026-08-21): read <see cref="Data.Entities.Node.NodeOutline"/>
     /// as it stood at a point in time — <c>Nodes</c> is already system-versioned, this just
     /// wasn't wired up yet. Mirrors <see cref="MarkdownFileService.GetAsync"/>'s exact
     /// <c>FOR SYSTEM_TIME AS OF</c> pattern. Null <paramref name="asOf"/> returns the current bible.
@@ -128,7 +128,7 @@ public class NodeBibleService
             var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
             // EF Core's SqlQueryRaw<TScalar> requires the returned column be named "Value".
             return await db.Database.SqlQueryRaw<string>(
-                    $"SELECT [NodeBible] AS [Value] FROM [Nodes] FOR SYSTEM_TIME AS OF '{ts}' WHERE [Id] = {{0}}",
+                    $"SELECT [NodeOutline] AS [Value] FROM [Nodes] FOR SYSTEM_TIME AS OF '{ts}' WHERE [Id] = {{0}}",
                     nodeId)
                 .FirstOrDefaultAsync(ct);
         }
@@ -136,7 +136,7 @@ public class NodeBibleService
         // IgnoreQueryFilters — explicit id lookup, not ambient scope (2026-08-17 convention).
         return await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => n.Id == nodeId)
-            .Select(n => n.NodeBible)
+            .Select(n => n.NodeOutline)
             .FirstOrDefaultAsync(ct);
     }
 
@@ -169,8 +169,8 @@ public class NodeBibleService
         var node = await db.Nodes.FindAsync([nodeId], ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
-        node.NodeBible            = bibleText;
-        node.NodeBibleGeneratedAt = DateTime.UtcNow;
+        node.NodeOutline            = bibleText;
+        node.NodeOutlineGeneratedAt = DateTime.UtcNow;
         node.UpdatedAt              = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
 
@@ -191,7 +191,7 @@ public class NodeBibleService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         return await db.Nodes
             .Where(s => s.Id == nodeId)
-            .Select(s => s.NodeBible)
+            .Select(s => s.NodeOutline)
             .FirstOrDefaultAsync(ct);
     }
 

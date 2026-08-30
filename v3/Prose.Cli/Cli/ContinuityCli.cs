@@ -20,7 +20,7 @@ namespace Prose.Cli;
 ///   prose --continuity extract --book &lt;bookId&gt;          Extract claims from every chapter in a book (legacy Book/Chapter model).
 ///   prose --continuity extract --node &lt;nodeIdOrSlug&gt;    Extract claims from every leaf chapter under a modern SS-A43 BookNode.
 ///   prose --continuity extract --entity &lt;guid&gt;          Extract claims from one entity's Records.Json blob (by EntityId).
-///   prose --continuity extract --bible &lt;nodeIdOrSlug&gt;   Extract claims from the story bible (SourceType="bible").
+///   prose --continuity extract --outline &lt;nodeIdOrSlug&gt;   Extract claims from the story bible (SourceType="outline").
 ///   prose --continuity apply --claim &lt;uid&gt;              Apply a CANONICAL claim back to its entity record (Legion picks the field).
 ///
 /// Backed by ContinuityService / ContinuityExtractionService / ContinuityApplyService —
@@ -138,7 +138,7 @@ public static class ContinuityCli
         var bookId    = ArgValue(args, "--book");
         var nodeRef   = ArgValue(args, "--node");
         var entityRef = ArgValue(args, "--entity");
-        var bibleRef  = ArgValue(args, "--bible");
+        var bibleRef  = ArgValue(args, "--outline");
 
         if (!string.IsNullOrEmpty(chapterId))
         {
@@ -223,7 +223,7 @@ public static class ContinuityCli
             Console.WriteLine($"[continuity] Extracting from bible for {bibleRef} (section={sectionType})…");
             try
             {
-                var r = await ext.ExtractFromBibleAsync(nodeId, sectionType);
+                var r = await ext.ExtractFromOutlineAsync(nodeId, sectionType);
                 if (r.Error != null) return Fail(r.Error);
                 Console.WriteLine($"[continuity] {r.ChapterTitle} — candidates {r.CandidatesProposed}, validated {r.CandidatesValidated}");
                 Console.WriteLine($"[continuity] {r.NewClaims} new, {r.ConfirmedClaims} confirmed, {r.ContradictedClaims} contradicted, {r.UnknownEntities.Count} unknown entity references");
@@ -232,7 +232,7 @@ public static class ContinuityCli
             }
             catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
         }
-        return Fail("extract requires one of: --chapter <id> | --book <id> | --node <nodeIdOrSlug> | --entity <guid> | --bible <slug>");
+        return Fail("extract requires one of: --chapter <id> | --book <id> | --node <nodeIdOrSlug> | --entity <guid> | --outline <slug>");
     }
 
     static async Task<int> CmdApply(string[] args, IServiceProvider services)
@@ -460,7 +460,7 @@ public static class ContinuityCli
     {
         "prose"            => $"prose ch.{c.SourceChapterNumber} ({c.SourceChapterTitle})",
         "entity_record"    => $"entity record {Path.GetFileName(c.SourcePath ?? "")}",
-        "bible"            => $"story bible ({c.SourcePath ?? c.SourceChapterTitle})",
+        "outline"            => $"story bible ({c.SourcePath ?? c.SourceChapterTitle})",
         "writer_assertion" => "writer assertion",
         _                  => c.SourceType,
     };
@@ -484,9 +484,9 @@ public static class ContinuityCli
               prose --continuity extract --book <bookId>
               prose --continuity extract --node <nodeIdOrSlug>
               prose --continuity extract --entity <path-to-entity-json>
-              prose --continuity extract --bible <nodeIdOrSlug> [--section Characters|ArcSummary|VoiceRegister|NarrativeLocks|BeatSpine]
-                  extract claims from the story bible (NodeBibleSections, default section Characters,
-                  falls back to the raw NodeBible blob) — lands as SourceType="bible" in the same
+              prose --continuity extract --outline <nodeIdOrSlug> [--section Characters|ArcSummary|VoiceRegister|NarrativeLocks|BeatSpine]
+                  extract claims from the story bible (NodeOutlineSections, default section Characters,
+                  falls back to the raw NodeOutline blob) — lands as SourceType="outline" in the same
                   ledger prose/entity-record claims use, so bible facts compete/reconcile automatically
               prose --continuity apply --claim <claimUid>
               prose --continuity sweep [--book <id>] [--skip-records] [--skip-prose] [--skip-resolve] [--skip-apply] [--dry-run]

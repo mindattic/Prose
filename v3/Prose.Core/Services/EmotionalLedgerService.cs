@@ -12,8 +12,8 @@ namespace Prose.Core.Services;
 // ── Emotional Ledger Service ───────────────────────────────────────────────────
 //
 // Parses Want / Need / Wound / Flaw / VoiceRegister for each named character
-// from the node's NodeBible field, caches the result per (NodeId, Character),
-// and cache-busts when the bible content changes (SourceBibleHash).
+// from the node's NodeOutline field, caches the result per (NodeId, Character),
+// and cache-busts when the bible content changes (SourceOutlineHash).
 //
 // Fallback: when no bible is present, or a character is not mentioned in the bible,
 // a single LLM extraction call infers the fields from the assembled prose, flagged
@@ -77,7 +77,7 @@ public class EmotionalLedgerService
         // If bible changed or forced, clear and re-extract
         bool stale = force
             || cached.Count == 0
-            || cached.Any(c => c.SourceBibleHash != bibleHash);
+            || cached.Any(c => c.SourceOutlineHash != bibleHash);
 
         if (!stale)
             return cached.Select(ToEntry).ToList();
@@ -90,7 +90,7 @@ public class EmotionalLedgerService
 
         // Extract from bible if available, otherwise from prose
         var entries = bible is { Length: > 10 }
-            ? await ExtractFromBibleAsync(nodeId, bible, bibleHash!, ct)
+            ? await ExtractFromOutlineAsync(nodeId, bible, bibleHash!, ct)
             : await InferFromProseAsync(nodeId, assembledText, ct);
 
         db.CharacterEmotionalLedgers.AddRange(entries);
@@ -101,7 +101,7 @@ public class EmotionalLedgerService
 
     // ── Extraction from bible ─────────────────────────────────────────────────
 
-    private async Task<List<CharacterEmotionalLedger>> ExtractFromBibleAsync(
+    private async Task<List<CharacterEmotionalLedger>> ExtractFromOutlineAsync(
         Guid nodeId, string bible, string bibleHash, CancellationToken ct)
     {
         const string system =
@@ -149,7 +149,7 @@ NODE BIBLE:
                     Flaw            = el.TryGetProperty("flaw",            out var f) ? f.GetString() : null,
                     VoiceRegister   = el.TryGetProperty("voice_register",  out var vr) ? vr.GetString() : null,
                     Inferred        = false,
-                    SourceBibleHash = bibleHash,
+                    SourceOutlineHash = bibleHash,
                     UpdatedAt       = DateTime.UtcNow,
                 });
             }

@@ -63,10 +63,10 @@ public class BookEntityReconciliationService(
         var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == bookNodeId, ct)
             ?? throw new InvalidOperationException($"Node {bookNodeId} not found.");
 
-        var bible = node.NodeBible ?? "";
+        var bible = node.NodeOutline ?? "";
         if (bible.Trim().Length < 1000)
             throw new InvalidOperationException(
-                $"Node '{node.Slug}' has no substantive NodeBible content to reconcile against.");
+                $"Node '{node.Slug}' has no substantive NodeOutline content to reconcile against.");
 
         var truncated = bible.Length > MaxBibleExcerptChars;
         var excerpt = truncated ? bible[..MaxBibleExcerptChars] : bible;

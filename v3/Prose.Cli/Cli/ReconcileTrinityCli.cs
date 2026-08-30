@@ -91,10 +91,10 @@ public static class ReconcileTrinityCli
             var s = await svc.SurveyBookAsync(b.Slug);
             if (s.ContradictionGroups == 0 && s.AppliedDriftFindings == 0) continue;
             Console.WriteLine($"[trinity]   {b.Slug,-16} {s.ContradictionGroups,3} contradiction groups, {s.AppliedDriftFindings,3} applied-drift " +
-                $"(prose-vs-bible {s.ProseVsBible}, prose-vs-entity {s.ProseVsEntity}, bible-vs-entity {s.BibleVsEntity}, other {s.OtherPairing}; " +
+                $"(prose-vs-bible {s.ProseVsOutline}, prose-vs-entity {s.ProseVsEntity}, bible-vs-entity {s.OutlineVsEntity}, other {s.OtherPairing}; " +
                 $"{s.WouldHitBeatRepair} would attempt a surgical beat_patch)");
             totalGroups += s.ContradictionGroups; totalDrift += s.AppliedDriftFindings; totalBeatRepair += s.WouldHitBeatRepair;
-            totalProseBible += s.ProseVsBible; totalProseEntity += s.ProseVsEntity; totalBibleEntity += s.BibleVsEntity; totalOther += s.OtherPairing;
+            totalProseBible += s.ProseVsOutline; totalProseEntity += s.ProseVsEntity; totalBibleEntity += s.OutlineVsEntity; totalOther += s.OtherPairing;
         }
         Console.WriteLine();
         Console.WriteLine($"[trinity] TOTAL: {totalGroups} contradiction groups, {totalDrift} applied-claim drift findings across {books.Count} books.");

@@ -126,7 +126,7 @@ public class LogicSweepService(
 
         var extra = new Dictionary<string, object?>
         {
-            ["bible"]             = node.NodeBible,
+            ["outline"]             = node.NodeOutline,
             ["plants"]            = plants,
             ["disabledSnippets"]  = disabledSnippets,
         };
@@ -212,7 +212,7 @@ public class LogicSweepService(
         var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
         var extra = new Dictionary<string, object?>
         {
-            ["bible"]            = node.NodeBible,
+            ["outline"]            = node.NodeOutline,
             ["plants"]           = plants,
             ["disabledSnippets"] = new List<string>(),
         };
@@ -760,9 +760,9 @@ public class LogicSweepService(
 
         public (string System, string User) BuildPrompt(AuditContext ctx)
         {
-            var bible = ctx.Extra.TryGetValue("bible", out var b) ? (string?)b : null;
+            var bible = ctx.Extra.TryGetValue("outline", out var b) ? (string?)b : null;
             var bibleBlock = string.IsNullOrWhiteSpace(bible)
-                ? "\n\n(No NodeBible recorded for this node.)"
+                ? "\n\n(No NodeOutline recorded for this node.)"
                 : $"\n\nNode bible (hand-authored facts, arc, locks):\n{Clamp(bible!, 30000)}";
             return (
                 $$"""

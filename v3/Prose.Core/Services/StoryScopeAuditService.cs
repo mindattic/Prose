@@ -78,9 +78,9 @@ public class StoryScopeAuditService(
         // suggestions don't contradict the book's own deliberate design (narrative
         // locks, register choices) — the ATTE pilot showed judges recommending
         // against locked decisions when blind to them.
-        var bibleExcerpt = string.IsNullOrWhiteSpace(node.NodeBible)
+        var bibleExcerpt = string.IsNullOrWhiteSpace(node.NodeOutline)
             ? ""
-            : node.NodeBible.Length <= 6000 ? node.NodeBible : node.NodeBible[..6000] + " …[clamped]";
+            : node.NodeOutline.Length <= 6000 ? node.NodeOutline : node.NodeOutline[..6000] + " …[clamped]";
 
         var progressiveTask = ReadProgressiveAsync(beats, ct);
         var holisticTasks = BuildHolisticChecks(node, prose, blueprint)

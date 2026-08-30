@@ -17,7 +17,7 @@ namespace Prose.Cli;
 ///
 /// Phase 2 — canon DB sync (Truth-First Architecture):
 ///   CanonDocumentSections → MarkdownFiles (world docs: BIBLE, WORLD, FRANCHISE, CAUL)
-///   NodeBibleSections    → MarkdownFiles (node bibles: docs/nodes/{CODE}.md)
+///   NodeOutlineSections    → MarkdownFiles (node bibles: docs/nodes/{CODE}.md)
 ///   DB content always wins — overwrites any file-synced version. This is how
 ///   hand-edits to .md files are detected and silently corrected.
 /// </summary>

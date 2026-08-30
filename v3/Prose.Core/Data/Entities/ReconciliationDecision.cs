@@ -28,7 +28,7 @@ public class ReconciliationDecision
     public string EntityName { get; set; } = "";
     public string Predicate { get; set; } = "";
 
-    /// <summary>"bible" | "prose" | "entity_record" — which source's value won.</summary>
+    /// <summary>"outline" | "prose" | "entity_record" — which source's value won.</summary>
     public string WinningSourceType { get; set; } = "";
     public string WinningValue { get; set; } = "";
 
@@ -39,17 +39,17 @@ public class ReconciliationDecision
     /// <summary>JSON array of ClaimUid strings for every losing claim in the group/drift check.</summary>
     public string LosingClaimUidsJson { get; set; } = "[]";
 
-    /// <summary>"beat_repair" | "bible_section" | "entity_record" — which mechanism performed the
+    /// <summary>"beat_repair" | "outline_section" | "entity_record" — which mechanism performed the
     /// edit to bring the losing source(s) into agreement with <see cref="WinningValue"/>.</summary>
     public string EditMechanism { get; set; } = "";
 
     /// <summary>JSON describing exactly what was edited — shape depends on
     /// <see cref="EditMechanism"/> (e.g. {"beatId":...,"nodeId":...} for beat_repair;
-    /// {"nodeId":...,"sectionType":...} for bible_section; {"claimUid":...} for entity_record).</summary>
+    /// {"nodeId":...,"sectionType":...} for outline_section; {"claimUid":...} for entity_record).</summary>
     public string EditTargetJson { get; set; } = "{}";
 
-    /// <summary>Pre-edit content snapshot, populated ONLY for <c>bible_section</c> edits —
-    /// <c>NodeBibleSections</c> is not a system-versioned temporal table (confirmed via
+    /// <summary>Pre-edit content snapshot, populated ONLY for <c>outline_section</c> edits —
+    /// <c>NodeOutlineSections</c> is not a system-versioned temporal table (confirmed via
     /// <c>sys.tables</c>, unlike Nodes/Records/Beats/ContinuityClaims), so this is the only way to
     /// recover the section's prior content on <c>RevertDecisionAsync</c>. Null for prose/entity_record
     /// edits, which restore from their own tables' temporal history instead.</summary>

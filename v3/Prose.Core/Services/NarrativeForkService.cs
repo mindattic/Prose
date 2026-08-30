@@ -42,9 +42,9 @@ public class NarrativeForkService(
         {
             var node = await db.Nodes.AsNoTracking()
                 .Where(s => s.Id == parentNodeId)
-                .Select(s => new { s.NodeBible })
+                .Select(s => new { s.NodeOutline })
                 .FirstOrDefaultAsync(ct);
-            bibleText = node?.NodeBible;
+            bibleText = node?.NodeOutline;
 
             // Descend to LEAF nodes, not just direct children — a split-collection book
             // (parentNodeId -> "Chapter N" container with 0 direct beats -> real chapters ->
@@ -120,9 +120,9 @@ public class NarrativeForkService(
         {
             var node = await db.Nodes.AsNoTracking()
                 .Where(s => s.Id == nodeId)
-                .Select(s => new { s.NodeBible })
+                .Select(s => new { s.NodeOutline })
                 .FirstOrDefaultAsync(ct);
-            bibleText = node?.NodeBible;
+            bibleText = node?.NodeOutline;
 
             // Recurses past any nested Collection (2026-08-09 fix).
             var forkSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);

@@ -17,7 +17,7 @@ namespace Prose.UnitTests;
 /// ReconcileAppliedDriftAsync's real-run branches) are NOT covered here — LlmVotingService is an
 /// external MindAttic.Legion type with no test double in this suite, matching the established
 /// pattern (ContinuityApplyServiceCheckAppliedClaimsTests passes voting: null! and only exercises
-/// methods that never call it). The bible_section revert path is covered (no SQL Server temporal
+/// methods that never call it). The outline_section revert path is covered (no SQL Server temporal
 /// query involved); beat_repair/beat_patch/entity_record revert (FOR SYSTEM_TIME AS OF) require a
 /// real SQL Server temporal table and are exercised live in the Phase 3/4 hand-picked-divergence
 /// proof instead of here, since SQLite (this suite's in-memory provider) has no temporal-table
@@ -25,7 +25,7 @@ namespace Prose.UnitTests;
 /// single-paragraph beat-patch guard) is a pure static predicate and is covered directly in
 /// <c>TrinityPatchGuardTests</c>, mirroring how <see cref="BeatRepairService.IsUnsafeShrink"/> is
 /// covered in <c>BeatRepairServiceTests</c>; <c>PatchBeatAsync</c> itself is not, for the same
-/// reason <c>PatchBibleSectionAsync</c> isn't — both call the external <c>ILlmService</c> with no
+/// reason <c>PatchOutlineSectionAsync</c> isn't — both call the external <c>ILlmService</c> with no
 /// test double in this suite.
 /// </summary>
 [TestFixture]
@@ -201,7 +201,7 @@ public class TrinityReconciliationServiceTests
     {
         var (bookId, _) = await SeedBookWithChapterAsync();
         var originalContent = "Rook has dark red hair.";
-        await canonDocs.SetNodeBibleSectionAsync(bookId, "Characters", originalContent);
+        await canonDocs.SetNodeOutlineSectionAsync(bookId, "Characters", originalContent);
 
         // Seed the ledger state as if a real ReconcileContradictionGroupAsync already ran:
         // winner (prose, "platinum blonde") CANONICAL, loser (bible, "dark red") REJECTED.
@@ -213,7 +213,7 @@ public class TrinityReconciliationServiceTests
         var loser = continuityStore.Upsert(new ContinuityClaim
         {
             EntityId = "e1", EntityName = "Rook", EntityKind = "person", Predicate = "hair_color",
-            Object = "dark red", SourceType = "bible",
+            Object = "dark red", SourceType = "outline",
         }).Claim;
         continuityStore.MakeCanonical(winner.ClaimUid, "test setup");
 
@@ -221,7 +221,7 @@ public class TrinityReconciliationServiceTests
         Assert.That(continuityStore.GetByEntity("e1").First(c => c.ClaimUid == loser.ClaimUid).Status, Is.EqualTo("REJECTED"));
 
         // Simulate the edit having landed (the section now says the winning value).
-        await canonDocs.SetNodeBibleSectionAsync(bookId, "Characters", "Rook has platinum blonde hair.");
+        await canonDocs.SetNodeOutlineSectionAsync(bookId, "Characters", "Rook has platinum blonde hair.");
 
         var decisionId = Guid.NewGuid();
         await using (var db = await dbFactory.CreateDbContextAsync())
@@ -232,10 +232,10 @@ public class TrinityReconciliationServiceTests
                 EntityId = "e1", EntityName = "Rook", Predicate = "hair_color",
                 WinningSourceType = "prose", WinningValue = "platinum blonde",
                 LosingClaimUidsJson = JsonSerializer.Serialize(new[] { loser.ClaimUid }),
-                EditMechanism = "bible_section",
+                EditMechanism = "outline_section",
                 EditTargetJson = JsonSerializer.Serialize(new Dictionary<string, object>
                 {
-                    ["bible_section"] = new[] { new { nodeId = bookId, sectionType = "Characters" } },
+                    ["outline_section"] = new[] { new { nodeId = bookId, sectionType = "Characters" } },
                 }),
                 PreEditSnapshotJson = JsonSerializer.Serialize(new[]
                 {
@@ -250,7 +250,7 @@ public class TrinityReconciliationServiceTests
 
         Assert.That(reverted, Is.True);
 
-        var sections = await canonDocs.GetNodeBibleSectionsAsync(bookId);
+        var sections = await canonDocs.GetNodeOutlineSectionsAsync(bookId);
         Assert.That(sections.First(s => s.SectionType == "Characters").Content, Is.EqualTo(originalContent));
 
         Assert.That(continuityStore.GetByEntity("e1").First(c => c.ClaimUid == winner.ClaimUid).Status, Is.EqualTo("NEW"));
@@ -272,7 +272,7 @@ public class TrinityReconciliationServiceTests
             {
                 Id = decisionId, BookSlug = "X", DivergenceType = "contradiction_group",
                 EntityId = "e1", EntityName = "X", Predicate = "p", WinningSourceType = "prose", WinningValue = "v",
-                LosingClaimUidsJson = "[]", EditMechanism = "bible_section", EditTargetJson = "{}",
+                LosingClaimUidsJson = "[]", EditMechanism = "outline_section", EditTargetJson = "{}",
                 DryRun = false, Reverted = true, RevertedAt = DateTime.UtcNow, CreatedAt = DateTime.UtcNow,
             });
             await db.SaveChangesAsync();
@@ -291,7 +291,7 @@ public class TrinityReconciliationServiceTests
             {
                 Id = decisionId, BookSlug = "X", DivergenceType = "contradiction_group",
                 EntityId = "e1", EntityName = "X", Predicate = "p", WinningSourceType = "(dry run — not decided)", WinningValue = "(dry run — not decided)",
-                LosingClaimUidsJson = "[]", EditMechanism = "bible_section", EditTargetJson = "{}",
+                LosingClaimUidsJson = "[]", EditMechanism = "outline_section", EditTargetJson = "{}",
                 DryRun = true, Reverted = false, CreatedAt = DateTime.UtcNow,
             });
             await db.SaveChangesAsync();

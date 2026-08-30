@@ -9,8 +9,8 @@ namespace Prose.Cli;
 /// <c>prose --write-story</c> — create a new node via the bible-first workflow:
 ///
 ///   1. Insert a Node row (status=draft, no beats yet).
-///   2. Call NodeBibleService to generate the node bible and planned beats.
-///   3. Print the bible + URL. Stop here with <c>--bible-only</c>.
+///   2. Call NodeOutlineService to generate the node bible and planned beats.
+///   3. Print the bible + URL. Stop here with <c>--outline-only</c>.
 ///   4. With <c>--narrate</c>, also run TTS after the prose pass (future).
 ///
 /// The bible's ## BEAT SPINE section is parsed into Beat rows with Synopsis set
@@ -22,7 +22,7 @@ namespace Prose.Cli;
 ///   --kind &lt;k&gt;          Kind tag: "episode" (default), "vignette", "chapter", etc.
 ///   --beats N            Target beat count in the spine (default: 12).
 ///   --compete N          Generate N competing outlines (2-5), score each, keep the winner.
-///   --bible-only         Stop after generating the bible; do not open the URL.
+///   --outline-only         Stop after generating the bible; do not open the URL.
 ///   --narrate            (placeholder) Run TTS after prose expansion.
 /// </summary>
 public static class WriteNodeCli
@@ -43,19 +43,19 @@ public static class WriteNodeCli
                 case "--kind":       if (i + 1 < args.Length) kind       = args[++i]; break;
                 case "--beats":      if (i + 1 < args.Length && int.TryParse(args[++i], out var n)) targetBeats = n; break;
                 case "--compete":    if (i + 1 < args.Length && int.TryParse(args[++i], out var c)) compete = c; break;
-                case "--bible-only": bibleOnly = true; break;
+                case "--outline-only": bibleOnly = true; break;
             }
         }
 
         if (string.IsNullOrWhiteSpace(seed))
         {
             Console.Error.WriteLine("[write-story] --seed is required.");
-            Console.Error.WriteLine("Usage: prose --write-story --seed \"...\" [--title \"...\"] [--kind episode] [--beats 12] [--compete N] [--bible-only]");
+            Console.Error.WriteLine("Usage: prose --write-story --seed \"...\" [--title \"...\"] [--kind episode] [--beats 12] [--compete N] [--outline-only]");
             return 2;
         }
 
         var dbFactory    = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        var bibleService = services.GetRequiredService<NodeBibleService>();
+        var bibleService = services.GetRequiredService<NodeOutlineService>();
 
         Guid nodeId;
         string bibleText, workingTitle, slug;
@@ -126,7 +126,7 @@ public static class WriteNodeCli
         Console.WriteLine();
 
         // Report planned beats
-        var beatPlans = NodeBibleService.ParseBeatSpine(bibleText);
+        var beatPlans = NodeOutlineService.ParseBeatSpine(bibleText);
         Console.WriteLine($"[write-story] {beatPlans.Count} planned beats created from the spine.");
 
         var url = $"https://localhost:7103/node/{slug}";

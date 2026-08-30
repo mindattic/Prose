@@ -17,8 +17,8 @@ public class SemanticFidelityServiceTests
             "Score-gaming threshold must be a sensible percentage (50–95).");
 
     [Test]
-    public void BibleAlignmentFloor_IsReasonable()
-        => Assert.That(SemanticFidelityService.BibleAlignmentFloor, Is.InRange(0.2, 0.8),
+    public void OutlineAlignmentFloor_IsReasonable()
+        => Assert.That(SemanticFidelityService.OutlineAlignmentFloor, Is.InRange(0.2, 0.8),
             "Bible alignment floor must be a sensible cosine similarity (0.2–0.8).");
 
     [Test]
@@ -27,9 +27,9 @@ public class SemanticFidelityServiceTests
             "Intent alignment floor must be a sensible cosine similarity (0.2–0.8).");
 
     [Test]
-    public void IntentAlignmentFloor_IsStricterThan_BibleAlignmentFloor()
+    public void IntentAlignmentFloor_IsStricterThan_OutlineAlignmentFloor()
         => Assert.That(SemanticFidelityService.IntentAlignmentFloor,
-            Is.GreaterThanOrEqualTo(SemanticFidelityService.BibleAlignmentFloor),
+            Is.GreaterThanOrEqualTo(SemanticFidelityService.OutlineAlignmentFloor),
             "Intent alignment should be at least as strict as Bible alignment.");
 
     [Test]

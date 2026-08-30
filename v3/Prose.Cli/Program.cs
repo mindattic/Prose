@@ -552,18 +552,18 @@ if (args.Contains("--seed") && !args.Contains("--write-node")
 }
 
 // CLI mode: (re)generate the node bible for an existing node.
-//   prose --book-bible --slug <slug> [--beats N] [--replace-beats]
-if (args.Contains("--book-bible"))
+//   prose --book-outline --slug <slug> [--beats N] [--replace-beats]
+if (args.Contains("--book-outline"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardAsync("NodeBibleCli", args);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("NodeOutlineCli", args);
     return;
 }
 
-// CLI mode: hand-write the node bible verbatim (CLI mirror of MCP SetBookBible).
-//   prose --set-book-bible --slug <slug> --file <path-to-bible.md>
-if (args.Contains("--set-book-bible"))
+// CLI mode: hand-write the node bible verbatim (CLI mirror of MCP SetBookOutline).
+//   prose --set-book-outline --slug <slug> --file <path-to-bible.md>
+if (args.Contains("--set-book-outline"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SetBookBibleCli", args);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetBookOutlineCli", args);
     return;
 }
 
@@ -587,12 +587,12 @@ if (args.Contains("--add-alias"))
     return;
 }
 
-// CLI mode: dump the node bible VERBATIM (the read half of --set-book-bible's round trip).
-// NOT --book-bible, which generates a fresh bible via an LLM instead of reading the existing one.
-//   prose --get-book-bible --slug <slug|code|guid> [--out <path>]
-if (args.Contains("--get-book-bible"))
+// CLI mode: dump the node bible VERBATIM (the read half of --set-book-outline's round trip).
+// NOT --book-outline, which generates a fresh bible via an LLM instead of reading the existing one.
+//   prose --get-book-outline --slug <slug|code|guid> [--out <path>]
+if (args.Contains("--get-book-outline"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardAsync("GetBookBibleCli", args);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GetBookOutlineCli", args);
     return;
 }
 
@@ -637,8 +637,8 @@ if (args.Contains("--set-canon-section"))
 }
 
 // CLI mode: assemble the unified Book Context Document for a node.
-// Merges hand-authored NodeBible + Structural Blueprint + Beat Spine into one document,
-// writes the merged view to docs/nodes/{CODE}.md (read-only disk mirror) only. Nodes.NodeBible
+// Merges hand-authored NodeOutline + Structural Blueprint + Beat Spine into one document,
+// writes the merged view to docs/nodes/{CODE}.md (read-only disk mirror) only. Nodes.NodeOutline
 // itself stays pure hand-authored content (fixed 2026-08-14 — it used to get the merged blob
 // written back, so the column named "the bible" stopped meaning only the bible).
 //   prose --generate-node-doc --slug <slug>
@@ -831,7 +831,7 @@ if (args.Contains("--auto-run"))
     return;
 }
 
-//   prose --write-node --seed "..." [--title "..."] [--kind episode] [--beats 12] [--bible-only]
+//   prose --write-node --seed "..." [--title "..."] [--kind episode] [--beats 12] [--outline-only]
 if (args.Contains("--write-node"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("WriteNodeCli", args);
@@ -855,16 +855,6 @@ if (args.Contains("--migrate-legacy-book-chapter"))
 if (args.Contains("--migrate-canon-docs"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateCanonDocsCli", args);
-    return;
-}
-
-// Truth-First Architecture — Step A2 (NodeBible): migrate Nodes.NodeBible text
-// blobs into NodeBibleSection rows. Creates a single "Full" section per node.
-// Idempotent; skips nodes that already have sections.
-//   prose --migrate-node-bibles [--slug <slug>] [--dry-run]
-if (args.Contains("--migrate-node-bibles"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateNodeBiblesCli", args);
     return;
 }
 
@@ -1547,11 +1537,11 @@ if (args.Contains("--list-archives"))
     return;
 }
 
-// CLI mode: restore a Node content field (Description/NodeBible/Summary/Seed/Subtitle) from a
+// CLI mode: restore a Node content field (Description/NodeOutline/Summary/Seed/Subtitle) from a
 // named ArchivedBook snapshot back onto the live node. Explicit archive-id, never "latest" —
 // see RestoreNodeFieldCli class doc.
 //   prose --restore-node-field (--id ... | --slug ...) --archive-id <guid>
-//       --field description|nodebible|summary|seed|subtitle|all --universe <u>
+//       --field description|nodeoutline|summary|seed|subtitle|all --universe <u>
 if (args.Contains("--restore-node-field"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RestoreNodeFieldCli", args);
@@ -2481,10 +2471,10 @@ if (args.Contains("--session-beats"))
     return;
 }
 
-// prose --sync-bible-from-session --session-id <guid> [--dry-run]
-if (args.Contains("--sync-bible-from-session"))
+// prose --sync-outline-from-session --session-id <guid> [--dry-run]
+if (args.Contains("--sync-outline-from-session"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SyncBibleFromSessionCli", args);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SyncOutlineFromSessionCli", args);
     return;
 }
 

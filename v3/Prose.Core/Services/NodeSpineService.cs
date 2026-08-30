@@ -45,10 +45,10 @@ public class NodeSpineService
 
         bool changed = false;
 
-        if (!bibleAlreadySet && string.IsNullOrWhiteSpace(node.NodeBible))
+        if (!bibleAlreadySet && string.IsNullOrWhiteSpace(node.NodeOutline))
         {
-            node.NodeBible = BibleTemplate(title);
-            node.NodeBibleGeneratedAt = DateTime.UtcNow;
+            node.NodeOutline = BibleTemplate(title);
+            node.NodeOutlineGeneratedAt = DateTime.UtcNow;
             changed = true;
         }
 
@@ -88,8 +88,8 @@ public class NodeSpineService
 
         return new SpineDto(
             nodeId,
-            node.NodeBible,
-            node.NodeBibleGeneratedAt,
+            node.NodeOutline,
+            node.NodeOutlineGeneratedAt,
             node.NodeUserStories,
             node.NodeUserStoriesUpdatedAt,
             amendments,
@@ -175,7 +175,7 @@ public class NodeSpineService
             .Select(x => (int?)x.SequenceNo)
             .MaxAsync(ct) ?? 0;
 
-        var bibleHash       = Hash(node.NodeBible ?? "");
+        var bibleHash       = Hash(node.NodeOutline ?? "");
         var userStoriesHash = Hash(node.NodeUserStories ?? "");
 
         // Upsert: if a pin already exists for this version, update it.
@@ -184,7 +184,7 @@ public class NodeSpineService
 
         if (existing != null)
         {
-            existing.BibleHash       = bibleHash;
+            existing.OutlineHash       = bibleHash;
             existing.UserStoriesHash = userStoriesHash;
             existing.AmendmentCount  = amendmentCount;
             existing.PinnedAt        = DateTime.UtcNow;
@@ -200,7 +200,7 @@ public class NodeSpineService
             Id               = Guid.NewGuid(),
             NodeId         = nodeId,
             NodeVersion    = node.Version,
-            BibleHash        = bibleHash,
+            OutlineHash        = bibleHash,
             UserStoriesHash  = userStoriesHash,
             AmendmentCount   = amendmentCount,
             PinnedAt         = DateTime.UtcNow,
@@ -243,11 +243,11 @@ public class NodeSpineService
 
         if (latestPin == null) return (false, "no pin yet");
 
-        var bibleHash       = Hash(node.NodeBible ?? "");
+        var bibleHash       = Hash(node.NodeOutline ?? "");
         var userStoriesHash = Hash(node.NodeUserStories ?? "");
 
         var reasons = new List<string>();
-        if (latestPin.BibleHash != bibleHash)       reasons.Add("bible changed since last pin");
+        if (latestPin.OutlineHash != bibleHash)       reasons.Add("bible changed since last pin");
         if (latestPin.UserStoriesHash != userStoriesHash) reasons.Add("user_stories changed since last pin");
 
         var amendmentCount = await db.NodeAmendments

@@ -42,7 +42,7 @@ public class SemanticFidelityService
 
     /// <summary>Cosine similarity floor for bible alignment. Below this the beat has
     /// drifted significantly from the story's Seed/Synopsis anchor.</summary>
-    public const double BibleAlignmentFloor = 0.42;
+    public const double OutlineAlignmentFloor = 0.42;
 
     /// <summary>Cosine similarity floor for intent alignment. Below this the beat's
     /// prose no longer serves its stated Synopsis/purpose. Necessary but not sufficient as of
@@ -97,7 +97,7 @@ public class SemanticFidelityService
         int BeatNumber,
         string? BeatTitle,
         double? Score,
-        double BibleAlignment,
+        double OutlineAlignment,
         double? IntentAlignment,
         string Kind,
         string Message,
@@ -109,7 +109,7 @@ public class SemanticFidelityService
         int BeatsChecked,
         int BeatsEvaluated,
         double? NodeScore,
-        double MeanBibleAlignment,
+        double MeanOutlineAlignment,
         double? MeanIntentAlignment,
         IReadOnlyList<FidelityViolation> Violations,
         int FindingsEmitted);
@@ -272,7 +272,7 @@ public class SemanticFidelityService
             // Bible drift: prose has drifted from the story's north star. When the beat also
             // has a (legacy panel) score, a high score alongside low alignment is specifically
             // Goodhart's Law — gaming the metric while losing the meaning; call that out.
-            if (hasBibleAnchor && bibleAlign.HasValue && bibleAlign.Value < BibleAlignmentFloor)
+            if (hasBibleAnchor && bibleAlign.HasValue && bibleAlign.Value < OutlineAlignmentFloor)
             {
                 var sev = bibleAlign.Value < 0.30 ? FindingSeverity.High
                         : bibleAlign.Value < 0.37 ? FindingSeverity.Medium
@@ -281,13 +281,13 @@ public class SemanticFidelityService
                     ? " High score / low meaning alignment — Goodhart's Law in prose."
                     : " Low meaning alignment with the story's own intent.";
                 var msg  = $"Beat #{b.Number} {scoreLabel} but aligns only {bibleAlign.Value:P0} with the story bible " +
-                           $"(floor {BibleAlignmentFloor:P0}).{goodhart}";
+                           $"(floor {OutlineAlignmentFloor:P0}).{goodhart}";
                 var fix  = $"Revise Beat #{b.Number} to re-anchor in the story's core intent. " +
                            $"Story seed: \"{(bibleAnchor!.Length > 120 ? bibleAnchor[..120] + "…" : bibleAnchor)}\". " +
                            $"Avoid rewriting purely to satisfy stylistic patterns the reviewers reward if it pulls the beat away from the story's centre of gravity.";
                 violations.Add(new FidelityViolation(
                     b.Id, b.Number, b.Title, score,
-                    bibleAlign.Value, intentAlign, "bible", msg, fix));
+                    bibleAlign.Value, intentAlign, "outline", msg, fix));
                 EmitFinding($"node:{node.Slug}", sev,
                     $"SEMANTIC-DRIFT [bible]: {msg}",
                     b.Text?.Length > 200 ? b.Text[..200] : b.Text, fix);
@@ -346,7 +346,7 @@ public class SemanticFidelityService
             BeatsChecked:       beats.Count,
             BeatsEvaluated:     evaluatedBeats.Count,
             NodeScore:        node.Score,
-            MeanBibleAlignment: meanBible,
+            MeanOutlineAlignment: meanBible,
             MeanIntentAlignment: meanIntent,
             Violations:         violations,
             FindingsEmitted:    violations.Count);

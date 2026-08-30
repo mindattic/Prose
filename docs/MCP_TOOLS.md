@@ -285,9 +285,9 @@ Get a full world-canon document assembled from its DB sections. Call list_canon_
 - `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
 
-### `list_book_bible_sections`
+### `list_book_outline_sections`
 
-List all NodeBibleSections for a book node. Shows section types, content lengths, and last-updated timestamps. Use this to see which typed sections exist before calling set_book_bible_section.
+List all NodeOutlineSections for a book node. Shows section types, content lengths, and last-updated timestamps. Use this to see which typed sections exist before calling set_book_outline_section.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
 
@@ -304,9 +304,9 @@ List all sections in a world-canon document with their keys, titles, sort order,
 - `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
 
-### `set_book_bible_section`
+### `set_book_outline_section`
 
-Update or create a structured section in a book's node bible (NodeBibleSections table). sectionType: Full | ArcSummary | Characters | VoiceRegister | NarrativeLocks | BeatSpine. Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain structured per-category content. The docs/nodes/<CODE>.md artifact and the MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.
+Update or create a structured section in a book's node bible (NodeOutlineSections table). sectionType: Full | ArcSummary | Characters | VoiceRegister | NarrativeLocks | BeatSpine. Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain structured per-category content. The docs/nodes/<CODE>.md artifact and the MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
 - `sectionType` (string, required) — Section type: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, or BeatSpine.
@@ -656,18 +656,18 @@ Start a named edit session for a node. A session groups all prose edits until cl
 - `label` (string, required) — Human-readable label, e.g. 'prose-pass-1' or 'gripes-cleanup-2026-07-13'.
 - `sessionType` (string, optional) — Session type: prose-pass | gripes-cleanup | logic-sweep | custom (default).
 
-### `sync_bible_from_session`
-
-Extract narrative facts from a session's beats and append them as '## Session Extracts' to the node bible .md file. Use --dry-run to preview without writing.
-
-- `sessionId` (string, required) — Session GUID.
-- `dryRun` (bool, optional) — If true, returns extracted facts without writing to the bible file.
-
 ### `sync_blueprint_from_session`
 
 Map a session's beats to their blueprint tags. Confirmed decisions are recorded; divergences file BLUEPRINT-DRIFT findings.
 
 - `sessionId` (string, required) — Session GUID.
+
+### `sync_outline_from_session`
+
+Extract narrative facts from a session's beats and append them as '## Session Extracts' to the node bible .md file. Use --dry-run to preview without writing.
+
+- `sessionId` (string, required) — Session GUID.
+- `dryRun` (bool, optional) — If true, returns extracted facts without writing to the bible file.
 
 ## Encyclopedia
 
@@ -1172,14 +1172,6 @@ Apply a CANONICAL or CONFIRMED claim to its entity record file. Legion's panel p
 
 - `claimUid` (string, required) — Claim uid to apply.
 
-### `extract_continuity_from_bible`
-
-Extract continuity claims from a book's story bible (prefers the NodeBibleSections 'Characters' section — settled character-sheet facts, not plot-forward arc/spine content — falling back to the raw NodeBible blob). Claims land with SourceType="bible" in the same ledger chapter-prose and entity-record extraction already populate, so a bible fact and a prose fact on the same (entity, predicate) compete/reconcile automatically — this is how the Bible gets validated against (and validates) the actual prose and the entity repo.
-
-- `nodeIdOrSlug` (string, required) — Book/series node id (guid) or slug/NodeCode.
-- `sectionType` (string, optional) — NodeBibleSections section to prefer: Characters (default, settled fact) | ArcSummary | VoiceRegister | NarrativeLocks | BeatSpine. Falls back to the raw NodeBible blob if the section doesn't exist yet.
-- `maxTokens` (int, optional) — Max tokens for the extraction response. Default 8192 — higher than chapter extraction's 4096, since a book's whole character roster commonly produces a larger fact list than a single beat/chapter does.
-
 ### `extract_continuity_from_book`
 
 Extract continuity claims from every chapter in a book (sequential — long-running). Returns per-chapter results plus aggregate counts.
@@ -1199,6 +1191,14 @@ Extract atomic continuity claims (entity, predicate, object triples) from a chap
 Extract continuity claims from a single entity record by EntityId (canonical Records.Json blob in SQL). Top-level scalar fields become direct claims; prose fields (description, personality, ideology…) go through the same single-call extraction as chapter prose.
 
 - `entityId` (string, required) — EntityId (guid, hyphenated or 32-char hex) of the canon entity to extract from.
+
+### `extract_continuity_from_outline`
+
+Extract continuity claims from a book's story bible (prefers the NodeOutlineSections 'Characters' section — settled character-sheet facts, not plot-forward arc/spine content — falling back to the raw NodeOutline blob). Claims land with SourceType="bible" in the same ledger chapter-prose and entity-record extraction already populate, so a bible fact and a prose fact on the same (entity, predicate) compete/reconcile automatically — this is how the Bible gets validated against (and validates) the actual prose and the entity repo.
+
+- `nodeIdOrSlug` (string, required) — Book/series node id (guid) or slug/NodeCode.
+- `sectionType` (string, optional) — NodeOutlineSections section to prefer: Characters (default, settled fact) | ArcSummary | VoiceRegister | NarrativeLocks | BeatSpine. Falls back to the raw NodeOutline blob if the section doesn't exist yet.
+- `maxTokens` (int, optional) — Max tokens for the extraction response. Default 8192 — higher than chapter extraction's 4096, since a book's whole character roster commonly produces a larger fact list than a single beat/chapter does.
 
 ### `get_continuity_claims`
 
@@ -1344,7 +1344,7 @@ Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.De
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `author` (string, optional) — Author name to embed in the document properties. Optional.
 
-### `generate_book_bible`
+### `generate_book_outline`
 
 Generate (or regenerate) the node bible for a node. Uses the node's Seed field (falls back to Synopsis then Title) plus the literary rules to produce a dry structural plan: logline, premise, register, characters, numbered beat spine, seeds & payoffs. Creates planned Beat rows from the spine when the node has no beats yet. Returns the generated bible text.
 
@@ -1366,7 +1366,7 @@ Generate and save a book-cover image prompt (Node.CoverPrompt) from the book's o
 
 ### `generate_node_doc`
 
-Assemble the unified Book Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. The MarkdownFiles sync (what DocContextService reads at generation time) runs automatically as part of this call — no follow-up call needed. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.
+Assemble the unified Book Context Document for a node: merges hand-authored NodeOutline content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeOutline and docs/nodes/{CODE}.md. The MarkdownFiles sync (what DocContextService reads at generation time) runs automatically as part of this call — no follow-up call needed. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
 
@@ -1382,9 +1382,9 @@ Get a single node with its beats in reading order. Accepts a Guid id OR a slug. 
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 
-### `get_book_bible`
+### `get_book_outline`
 
-Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_bible=false when no bible exists yet.
+Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_outline=false when no bible exists yet.
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 
@@ -1493,7 +1493,7 @@ Set the silence (in ms) the audio engine inserts AFTER this beat, before the nex
 - `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
 - `durationMs` (int, required) — Silence in milliseconds, 0..6000.
 
-### `set_book_bible`
+### `set_book_outline`
 
 Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible. The docs/nodes/{CODE}.md mirror and MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.
 
@@ -1909,7 +1909,7 @@ LEGACY. List books in the old pre-Nodes Records/Entities book shelf only (create
 
 ### `generate_structural_blueprint`
 
-Generate the StructuralBlueprint for a book node — pre-prose structural anti-tell commitments (StoryScope countermeasures): thematically-parallel subplot with carrier beats, temporal scheme (linear/frame/nonlinear), resolution mode (external/unresolved/mixed — never internal-understanding), moral polarity (ambivalent default), per-beat 1-10 escalation curve (kills flat escalation, Claude's #1 fingerprint), per-beat event-type + revelation-mode palette (kills event monoculture), optional form device, ending style (avalanche default, no epilogue), and 3-5 intertextual anchors pulled from the entity DB. The blueprint is injected per-beat into prose generation and verified afterward by the storyscope audit. Requires Node.NodeBible unless retrofit=true (infers from written prose). The docs/nodes/{CODE}.md mirror (Structural Blueprint section) and the MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call. Accepts node id (GUID) or slug.
+Generate the StructuralBlueprint for a book node — pre-prose structural anti-tell commitments (StoryScope countermeasures): thematically-parallel subplot with carrier beats, temporal scheme (linear/frame/nonlinear), resolution mode (external/unresolved/mixed — never internal-understanding), moral polarity (ambivalent default), per-beat 1-10 escalation curve (kills flat escalation, Claude's #1 fingerprint), per-beat event-type + revelation-mode palette (kills event monoculture), optional form device, ending style (avalanche default, no epilogue), and 3-5 intertextual anchors pulled from the entity DB. The blueprint is injected per-beat into prose generation and verified afterward by the storyscope audit. Requires Node.NodeOutline unless retrofit=true (infers from written prose). The docs/nodes/{CODE}.md mirror (Structural Blueprint section) and the MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `retrofit` (bool, optional) — Set true to infer the blueprint from already-written prose (for stories that predate the blueprint system).

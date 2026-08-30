@@ -16,7 +16,7 @@ namespace Prose.Core.Services;
 ///   • CONSTRUCTION — how the beat is to be built     (blueprint chapter slice + beat tags)
 ///   • PROSE        — what actually accomplishes both (Beat.Text)
 ///
-/// Unlike the session-scoped BibleSync/BlueprintSync services, this correlates
+/// Unlike the session-scoped OutlineSync/BlueprintSync services, this correlates
 /// the whole node at once and FLAGS every beat missing a coordinate — the gap
 /// list is the first tranche of gripe/contradiction/cliché candidates. Read-only
 /// over the DB; the only write is a regenerable "## Beat Coordination Index"

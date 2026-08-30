@@ -5,7 +5,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>prose --book-bible</c> — (re)generate the node bible for an existing node.
+/// <c>prose --book-outline</c> — (re)generate the node bible for an existing node.
 ///
 /// Use this to add a bible to a node created before the bible system existed,
 /// or to regenerate the plan when the book direction changes.
@@ -15,7 +15,7 @@ namespace Prose.Cli;
 ///   --beats N        Target beat count in the bible spine (default: use existing beat count or 12).
 ///   --replace-beats  Delete existing planned beats and recreate from the new spine.
 /// </summary>
-public static class NodeBibleCli
+public static class NodeOutlineCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -35,12 +35,12 @@ public static class NodeBibleCli
         if (string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[book-bible] --slug is required.");
-            Console.Error.WriteLine("Usage: prose --book-bible --slug <slug> [--beats N] [--replace-beats]");
+            Console.Error.WriteLine("Usage: prose --book-outline --slug <slug> [--beats N] [--replace-beats]");
             return 2;
         }
 
         var dbFactory    = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        var bibleService = services.GetRequiredService<NodeBibleService>();
+        var bibleService = services.GetRequiredService<NodeOutlineService>();
         var spineService = services.GetRequiredService<NodeSpineService>();
 
         // Resolve node
@@ -117,7 +117,7 @@ public static class NodeBibleCli
         await spineService.ScaffoldAsync(node.Id, node.Title, bibleAlreadySet: true);
         Console.WriteLine($"[book-bible] Spine user-stories scaffolded.");
 
-        var beatPlans = NodeBibleService.ParseBeatSpine(bibleText);
+        var beatPlans = NodeOutlineService.ParseBeatSpine(bibleText);
         Console.WriteLine();
         Console.WriteLine($"[book-bible] Done. {beatPlans.Count} spine entries parsed.");
         Console.WriteLine($"   URL: https://localhost:7103/node/{node.Slug}");

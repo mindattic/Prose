@@ -731,7 +731,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<TextAnalysisService>();
         services.AddSingleton<ContextAnalyzerService>();
         services.AddSingleton<BeatGeneratorService>();
-        services.AddSingleton<NodeBibleService>();
+        services.AddSingleton<NodeOutlineService>();
         services.AddSingleton<NodeDocService>();
         services.AddSingleton<GlossaryService>();
         services.AddSingleton<CanonDocumentTypeRegistry>();
@@ -1163,7 +1163,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatModeDetector>();
         services.AddSingleton<WorkflowMonitorService>();
         services.AddSingleton<EditSessionService>();
-        services.AddSingleton<BibleSyncService>();
+        services.AddSingleton<OutlineSyncService>();
         services.AddSingleton<BlueprintSyncService>();
         services.AddSingleton<BeatCoordinationService>();
         services.AddSingleton<BlastRadiusService>();

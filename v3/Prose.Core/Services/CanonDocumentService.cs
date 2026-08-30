@@ -10,7 +10,7 @@ namespace Prose.Core.Services;
 
 /// <summary>
 /// Structured canon editing — read / upsert / regenerate CanonDocuments, CanonDocumentSections,
-/// and NodeBibleSections. All canon edits flow through here; .md files are generated artifacts.
+/// and NodeOutlineSections. All canon edits flow through here; .md files are generated artifacts.
 /// </summary>
 public class CanonDocumentService
 {
@@ -211,9 +211,9 @@ public class CanonDocumentService
         return new GenerateResult(true, filePath, null, null, doc.Sections.Count, checksum);
     }
 
-    // ── NodeBibleSection upsert ───────────────────────────────────────────────
+    // ── NodeOutlineSection upsert ───────────────────────────────────────────────
 
-    public async Task<UpsertResult> SetNodeBibleSectionAsync(
+    public async Task<UpsertResult> SetNodeOutlineSectionAsync(
         Guid nodeId,
         string sectionType,
         string content,
@@ -227,34 +227,34 @@ public class CanonDocumentService
         if (node == null)
             return new UpsertResult(false, null, "node_not_found", $"Node {nodeId} not found.");
 
-        var section = await db.NodeBibleSections
+        var section = await db.NodeOutlineSections
             .FirstOrDefaultAsync(s => s.NodeId == nodeId
                                    && s.SectionType == sectionType, ct);
 
         bool isNew = section == null;
         if (isNew)
         {
-            section = new NodeBibleSection
+            section = new NodeOutlineSection
             {
                 NodeId      = nodeId,
                 SectionType = sectionType,
             };
-            db.NodeBibleSections.Add(section);
+            db.NodeOutlineSections.Add(section);
         }
 
         section!.Content   = content;
         section.UpdatedAt  = DateTime.UtcNow;
 
         // NodeDocService.GenerateAsync (the cascade every caller of this method runs immediately
-        // after) reads hand-authored content exclusively from Nodes.NodeBible — it never reads
-        // NodeBibleSections. sectionType "Full" is documented as "replace the entire hand-authored
+        // after) reads hand-authored content exclusively from Nodes.NodeOutline — it never reads
+        // NodeOutlineSections. sectionType "Full" is documented as "replace the entire hand-authored
         // bible blob", so it must also land here or the cascade regenerates from the stale blob
         // and silently discards this write. (Typed sections below Full have no downstream reader
-        // yet — recording them in NodeBibleSections is honest storage, not a composed bible edit.)
+        // yet — recording them in NodeOutlineSections is honest storage, not a composed bible edit.)
         if (string.Equals(sectionType, "Full", StringComparison.OrdinalIgnoreCase))
         {
-            node.NodeBible = string.IsNullOrEmpty(content) ? null : content;
-            node.NodeBibleGeneratedAt = DateTime.UtcNow;
+            node.NodeOutline = string.IsNullOrEmpty(content) ? null : content;
+            node.NodeOutlineGeneratedAt = DateTime.UtcNow;
             node.UpdatedAt = DateTime.UtcNow;
         }
 
@@ -265,22 +265,22 @@ public class CanonDocumentService
         // hand-authored edits — see ContinuityExtractionCursor's doc comment for why this exists.
         if (continuityExtraction != null)
         {
-            _ = Task.Run(() => continuityExtraction.ReExtractBibleSectionIfChangedAsync(nodeId, sectionType, ct: CancellationToken.None), CancellationToken.None)
-                .ContinueWith(t => log?.LogError(t.Exception, "ReExtractBibleSectionIfChangedAsync background task failed"),
+            _ = Task.Run(() => continuityExtraction.ReExtractOutlineSectionIfChangedAsync(nodeId, sectionType, ct: CancellationToken.None), CancellationToken.None)
+                .ContinueWith(t => log?.LogError(t.Exception, "ReExtractOutlineSectionIfChangedAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
         }
 
         return new UpsertResult(true, nodeId, null, null, isNew ? "created" : "updated", sectionType);
     }
 
-    // ── Get all NodeBibleSections for a node ──────────────────────────────────
+    // ── Get all NodeOutlineSections for a node ──────────────────────────────────
 
-    public async Task<List<NodeBibleSection>> GetNodeBibleSectionsAsync(
+    public async Task<List<NodeOutlineSection>> GetNodeOutlineSectionsAsync(
         Guid nodeId,
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.NodeBibleSections
+        return await db.NodeOutlineSections
             .Where(s => s.NodeId == nodeId)
             .OrderBy(s => s.SectionType)
             .ToListAsync(ct);

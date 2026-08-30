@@ -514,7 +514,7 @@ public class ContinuityService
                 Superseded       = g.Sum(c => c.Status == "SUPERSEDED"   ? 1 : 0),
                 FromProse        = g.Sum(c => c.SourceType == "prose"         ? 1 : 0),
                 FromEntityRecord = g.Sum(c => c.SourceType == "entity_record" ? 1 : 0),
-                FromBible        = g.Sum(c => c.SourceType == "bible"         ? 1 : 0),
+                FromBible        = g.Sum(c => c.SourceType == "outline"         ? 1 : 0),
             })
             .FirstOrDefault();
 

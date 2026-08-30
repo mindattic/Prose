@@ -175,16 +175,16 @@ public class ProseWriterRouter(
 
         // Node-bible fallback: an empty doc stack means the book's bible never reached the prompt
         // (typically docs/nodes/<CODE>.md not yet synced into MarkdownFiles). A book node must never
-        // generate bible-blind — fall back to Nodes.NodeBible and warn so the missing sync stays visible.
+        // generate bible-blind — fall back to Nodes.NodeOutline and warn so the missing sync stays visible.
         if (docStackContext.Length == 0 && settings?.DocContextEnabled == true
             && context.NodeId != Guid.Empty && dbFactory != null)
         {
-            await TraceStageAsync("NodeBibleFallback", async () =>
+            await TraceStageAsync("NodeOutlineFallback", async () =>
             {
                 await using var bibleDb = await dbFactory.CreateDbContextAsync(ct);
                 var nodeBible = await bibleDb.Nodes.AsNoTracking()
                     .Where(n => n.Id == context.NodeId)
-                    .Select(n => n.NodeBible)
+                    .Select(n => n.NodeOutline)
                     .FirstOrDefaultAsync(ct);
                 if (!string.IsNullOrWhiteSpace(nodeBible))
                 {
@@ -192,13 +192,13 @@ public class ProseWriterRouter(
                     docStackContext = "## NODE BIBLE (authoritative for this book — do not contradict)\n"
                         + (nodeBible.Length > maxBibleChars ? nodeBible[..maxBibleChars] : nodeBible);
                     log.LogWarning(
-                        "Doc context stack EMPTY for node {NodeId} — fell back to Nodes.NodeBible ({Chars} chars). Run 'prose --sync-markdown' to restore the full doc stack.",
+                        "Doc context stack EMPTY for node {NodeId} — fell back to Nodes.NodeOutline ({Chars} chars). Run 'prose --sync-markdown' to restore the full doc stack.",
                         context.NodeId, docStackContext.Length);
                 }
                 else
                 {
                     log.LogWarning(
-                        "Doc context stack EMPTY for node {NodeId} and no NodeBible on the node — prose will generate WITHOUT canon context.",
+                        "Doc context stack EMPTY for node {NodeId} and no NodeOutline on the node — prose will generate WITHOUT canon context.",
                         context.NodeId);
                 }
             });

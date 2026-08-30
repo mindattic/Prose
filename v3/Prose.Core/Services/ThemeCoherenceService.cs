@@ -118,7 +118,7 @@ public class ThemeCoherenceService(
         var user = $"""
             NODE: {node.Title ?? node.Slug}
             SEED: {node.Seed ?? "(none)"}
-            BIBLE EXCERPT: {Truncate(node.NodeBible ?? "(none)", 1000)}
+            BIBLE EXCERPT: {Truncate(node.NodeOutline ?? "(none)", 1000)}
 
             OPENING BEATS:
             {openingText}

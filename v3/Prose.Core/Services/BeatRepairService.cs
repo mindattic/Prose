@@ -77,13 +77,13 @@ public class BeatRepairService(
 
             var node = await db.Nodes.AsNoTracking()
                 .Where(n => n.Id == nodeId)
-                .Select(n => new { n.Seed, n.NodeBible, n.ParentNodeId })
+                .Select(n => new { n.Seed, n.NodeOutline, n.ParentNodeId })
                 .FirstOrDefaultAsync(ct);
             if (node?.ParentNodeId != null) bookNodeId = node.ParentNodeId.Value;
             if (bookBibleOverride != null)
                 bookBible = bookBibleOverride;
             else if (node != null)
-                bookBible = node.Seed ?? node.NodeBible ?? "";
+                bookBible = node.Seed ?? node.NodeOutline ?? "";
         }
         catch (Exception ex)
         {

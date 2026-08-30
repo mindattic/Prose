@@ -1,7 +1,7 @@
 namespace Prose.Core.Data.Entities;
 
 /// <summary>
-/// Structured sections of a story's NodeBible — replaces the Nodes.NodeBible text blob.
+/// Structured sections of a story's NodeOutline — replaces the Nodes.NodeOutline text blob.
 /// One row per (NodeId, SectionType) pair. The generated docs/nodes/&lt;CODE&gt;.md file is
 /// assembled from these rows; generate_node_doc reads here, not the old blob.
 ///
@@ -12,7 +12,7 @@ namespace Prose.Core.Data.Entities;
 ///   NarrativeLocks  — immovable story facts the engine must never contradict
 ///   BeatSpine       — 14-beat spine outline (hand-authored portion; blueprint is Track B)
 /// </summary>
-public class NodeBibleSection
+public class NodeOutlineSection
 {
     public Guid   Id          { get; set; } = Guid.NewGuid();
     public Guid   NodeId      { get; set; }

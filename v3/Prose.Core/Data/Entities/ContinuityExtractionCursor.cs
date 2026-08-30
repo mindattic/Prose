@@ -23,11 +23,11 @@ public class ContinuityExtractionCursor
 
     public string BookSlug { get; set; } = "";
 
-    /// <summary>"chapter" | "bible_section".</summary>
+    /// <summary>"chapter" | "outline_section".</summary>
     public string SourceKind { get; set; } = "";
 
     /// <summary>Chapter NodeId ("D" format) for SourceKind="chapter"; the bible SectionType
-    /// string for SourceKind="bible_section".</summary>
+    /// string for SourceKind="outline_section".</summary>
     public string SourceKey { get; set; } = "";
 
     /// <summary>SHA-256 hex of the content (stripped, concatenated beat text for a chapter;

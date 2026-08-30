@@ -30,8 +30,8 @@ namespace Prose.Cli;
 ///           the writer UI's restore, never a raw SQL delete.
 ///   seed-spine --node &lt;slug|id&gt;
 ///           Create planned (empty-text) beats from the book node's *already-saved*
-///           NodeBible "## BEAT SPINE" section — no LLM call, no bible regeneration.
-///           For when a bible was hand-written (e.g. via set_book_bible) and the node
+///           NodeOutline "## BEAT SPINE" section — no LLM call, no bible regeneration.
+///           For when a bible was hand-written (e.g. via set_book_outline) and the node
 ///           currently has zero enabled beats. No-op if the node already has beats.
 /// </summary>
 public static class BeatCli
@@ -74,11 +74,11 @@ public static class BeatCli
         var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug, services);
         if (nodeId == null) { Console.Error.WriteLine($"[beat seed-spine] Node '{nodeIdOrSlug}' not found."); return 1; }
 
-        var bibleSvc = services.GetRequiredService<NodeBibleService>();
+        var bibleSvc = services.GetRequiredService<NodeOutlineService>();
         var bibleText = await bibleSvc.GetBibleTextAsync(nodeId.Value);
-        if (string.IsNullOrWhiteSpace(bibleText)) { Console.Error.WriteLine("[beat seed-spine] Node has no NodeBible — set one first."); return 1; }
+        if (string.IsNullOrWhiteSpace(bibleText)) { Console.Error.WriteLine("[beat seed-spine] Node has no NodeOutline — set one first."); return 1; }
 
-        var plans = NodeBibleService.ParseBeatSpine(bibleText);
+        var plans = NodeOutlineService.ParseBeatSpine(bibleText);
         if (plans.Count == 0) { Console.Error.WriteLine("[beat seed-spine] No \"## BEAT SPINE\" entries parsed from the bible."); return 1; }
 
         Console.WriteLine($"[beat seed-spine] Parsed {plans.Count} spine entries. Creating planned beats…");

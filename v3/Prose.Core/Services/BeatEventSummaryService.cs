@@ -33,7 +33,7 @@ internal class PovRow
 /// on some books and waste calls on others. Clips long beats head+tail rather than head-only,
 /// since plot twists/reveals often land at the END of a beat.
 ///
-/// Deliberately never touches NodeDocService, Node.NodeBible, or any DCM/MarkdownFiles
+/// Deliberately never touches NodeDocService, Node.NodeOutline, or any DCM/MarkdownFiles
 /// ingestion path — this is a human-readable QA artifact, not prose-generation context.
 /// Writes EventSummary/EventSummaryHash directly; never routes through
 /// NodeWorkbenchService.UpdateBeatTextAsync (wrong semantics: bumps Version, sets Stale,

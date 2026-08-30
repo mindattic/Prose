@@ -10,7 +10,7 @@ namespace Prose.Mcp;
 [McpServerToolType]
 public class EditSessionTools(
     EditSessionService sessionSvc,
-    BibleSyncService bibleSvc,
+    OutlineSyncService bibleSvc,
     BlueprintSyncService blueprintSvc,
     IDbContextFactory<ProseDbContext> dbFactory,
     HubInvoker hub)
@@ -106,13 +106,13 @@ public class EditSessionTools(
     }
 
     [McpServerTool, Description("Extract narrative facts from a session's beats and append them as '## Session Extracts' to the node bible .md file. Use --dry-run to preview without writing.")]
-    public Task<string> sync_bible_from_session(
+    public Task<string> sync_outline_from_session(
         [Description("Session GUID.")] string sessionId,
         [Description("If true, returns extracted facts without writing to the bible file.")] bool dryRun = false) =>
-        hub.InvokeAsync(nameof(EditSessionTools), nameof(sync_bible_from_sessionImpl), new { sessionId, dryRun });
+        hub.InvokeAsync(nameof(EditSessionTools), nameof(sync_outline_from_sessionImpl), new { sessionId, dryRun });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> sync_bible_from_sessionImpl(string sessionId, bool dryRun = false)
+    public async Task<string> sync_outline_from_sessionImpl(string sessionId, bool dryRun = false)
     {
         if (!Guid.TryParse(sessionId, out var sid)) return $"Invalid session ID: {sessionId}";
         var report = await bibleSvc.ExtractFromSessionAsync(sid, dryRun);

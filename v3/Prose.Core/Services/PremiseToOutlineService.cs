@@ -10,11 +10,11 @@ namespace Prose.Core.Services;
 /// LLM call, commits the winner to the DB, and returns the winning node's Guid.
 ///
 /// Usage: pass --compete N to prose --write-story. When N=1 (or omitted),
-/// falls back to NodeBibleService directly (no scoring overhead).
+/// falls back to NodeOutlineService directly (no scoring overhead).
 /// </summary>
 public class PremiseToOutlineService(
     IDbContextFactory<ProseDbContext> dbFactory,
-    NodeBibleService bibleService,
+    NodeOutlineService bibleService,
     ILlmService llm)
 {
     /// <summary>

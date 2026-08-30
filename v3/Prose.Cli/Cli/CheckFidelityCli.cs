@@ -76,7 +76,7 @@ public static class CheckFidelityCli
                 node_score         = report.NodeScore,
                 beats_checked        = report.BeatsChecked,
                 beats_evaluated      = report.BeatsEvaluated,
-                mean_bible_alignment = Math.Round(report.MeanBibleAlignment, 4),
+                mean_outline_alignment = Math.Round(report.MeanOutlineAlignment, 4),
                 mean_intent_alignment = report.MeanIntentAlignment.HasValue
                     ? Math.Round(report.MeanIntentAlignment.Value, 4) : (double?)null,
                 violations_count     = report.Violations.Count,
@@ -87,7 +87,7 @@ public static class CheckFidelityCli
                     beat_number     = v.BeatNumber,
                     beat_title      = v.BeatTitle,
                     score           = v.Score,
-                    bible_alignment = Math.Round(v.BibleAlignment, 4),
+                    outline_alignment = Math.Round(v.OutlineAlignment, 4),
                     intent_alignment = v.IntentAlignment.HasValue ? Math.Round(v.IntentAlignment.Value, 4) : (double?)null,
                     kind            = v.Kind,
                     message         = v.Message,
@@ -102,7 +102,7 @@ public static class CheckFidelityCli
         Console.WriteLine($"Node : {report.Slug}");
         Console.WriteLine($"Score  : {report.NodeScore?.ToString("0.#") ?? "unscored"}%");
         Console.WriteLine($"Beats  : {report.BeatsChecked} checked, {report.BeatsEvaluated} evaluated (bible/intent alignment computed for every beat with prose — Score is informational only)");
-        Console.WriteLine($"Bible alignment (mean) : {report.MeanBibleAlignment:P1}  (floor {SemanticFidelityService.BibleAlignmentFloor:P0})");
+        Console.WriteLine($"Bible alignment (mean) : {report.MeanOutlineAlignment:P1}  (floor {SemanticFidelityService.OutlineAlignmentFloor:P0})");
         if (report.MeanIntentAlignment.HasValue)
             Console.WriteLine($"Intent alignment (mean): {report.MeanIntentAlignment.Value:P1}  (floor {SemanticFidelityService.IntentAlignmentFloor:P0})");
 
@@ -121,8 +121,8 @@ public static class CheckFidelityCli
             Console.WriteLine($"\n  {label}  (score {first.Score:0.#}%)");
             foreach (var v in grp)
             {
-                var kindLabel = v.Kind == "bible" ? "[BIBLE DRIFT]" : "[INTENT DRIFT]";
-                var alignVal = v.Kind == "bible" ? $"{v.BibleAlignment:P0}" : $"{v.IntentAlignment:P0}";
+                var kindLabel = v.Kind == "outline" ? "[BIBLE DRIFT]" : "[INTENT DRIFT]";
+                var alignVal = v.Kind == "outline" ? $"{v.OutlineAlignment:P0}" : $"{v.IntentAlignment:P0}";
                 Console.WriteLine($"    {kindLabel} alignment {alignVal}");
                 Console.WriteLine($"      {v.Message}");
                 if (v.SuggestedFix != null)

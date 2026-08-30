@@ -34,10 +34,10 @@ public class OutlineAdherenceService(
         {
             var node = await db.Nodes.AsNoTracking()
                 .Where(s => s.Id == nodeId)
-                .Select(s => new { s.NodeBible })
+                .Select(s => new { s.NodeOutline })
                 .FirstOrDefaultAsync(ct);
 
-            bibleText = node?.NodeBible;
+            bibleText = node?.NodeOutline;
 
             // SS-A43: beats live on chapter nodes (children), not directly on the book node.
             // Recurses past any nested Collection (2026-08-09 fix).

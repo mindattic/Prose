@@ -3,7 +3,7 @@ using Prose.Core.Services;
 
 namespace Prose.Cli;
 
-public static class SyncBibleFromSessionCli
+public static class SyncOutlineFromSessionCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -16,11 +16,11 @@ public static class SyncBibleFromSessionCli
 
         if (sessionIdStr == null || !Guid.TryParse(sessionIdStr, out var sessionId))
         {
-            Console.Error.WriteLine("Usage: prose --sync-bible-from-session --session-id <guid> [--dry-run]");
+            Console.Error.WriteLine("Usage: prose --sync-outline-from-session --session-id <guid> [--dry-run]");
             return 2;
         }
 
-        var svc = services.GetRequiredService<BibleSyncService>();
+        var svc = services.GetRequiredService<OutlineSyncService>();
         Console.WriteLine(dryRun ? "Dry run — will not write to file." : "Extracting facts and updating bible...");
 
         var report = await svc.ExtractFromSessionAsync(sessionId, dryRun);

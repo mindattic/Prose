@@ -3,12 +3,12 @@ using Prose.Core.Services;
 namespace Prose.UnitTests;
 
 [TestFixture]
-public class NodeBibleServiceTests
+public class NodeOutlineServiceTests
 {
     [Test]
     public void ParseBeatSpine_EmptyString_ReturnsEmptyList()
     {
-        var result = NodeBibleService.ParseBeatSpine("");
+        var result = NodeOutlineService.ParseBeatSpine("");
         Assert.That(result, Is.Empty);
     }
 
@@ -22,7 +22,7 @@ public class NodeBibleServiceTests
             ## PREMISE
             The world is ending. Nobody cares.
             """;
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Is.Empty);
     }
 
@@ -33,7 +33,7 @@ public class NodeBibleServiceTests
             ## BEAT SPINE
             1. [OPENING] The Hook — Kyle gets the call.
             """;
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Has.Count.EqualTo(1));
         var beat = result[0];
         Assert.That(beat.Index, Is.EqualTo(1));
@@ -49,7 +49,7 @@ public class NodeBibleServiceTests
             ## BEAT SPINE
             2. Cold Open — Establishing the city.
             """;
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Has.Count.EqualTo(1));
         var beat = result[0];
         Assert.That(beat.Index, Is.EqualTo(2));
@@ -65,7 +65,7 @@ public class NodeBibleServiceTests
             ## BEAT SPINE
             3. Kyle walks alone.
             """;
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Has.Count.EqualTo(1));
         var beat = result[0];
         Assert.That(beat.Index, Is.EqualTo(3));
@@ -82,7 +82,7 @@ public class NodeBibleServiceTests
             3. [ESCALATION] The Climb — He takes the stairs.
             5. [CLIMAX] The Drop — Everything breaks open.
             """;
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Has.Count.EqualTo(3));
         Assert.That(result[0].Index, Is.EqualTo(1));
         Assert.That(result[1].Index, Is.EqualTo(3));
@@ -98,7 +98,7 @@ public class NodeBibleServiceTests
             2. [COMPLICATION] The Briefing — The job is worse than advertised.
             3. [ESCALATION] The Climb — Two guards instead of one.
             """;
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Has.Count.EqualTo(3));
     }
 
@@ -113,7 +113,7 @@ public class NodeBibleServiceTests
             ## SEEDS & PAYOFFS
             4. This should not parse as a beat.
             """;
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Has.Count.EqualTo(2));
         Assert.That(result.All(b => b.Index <= 2), Is.True);
     }
@@ -125,7 +125,7 @@ public class NodeBibleServiceTests
             ## BEAT SPINE
             1. The Setup — The contact is late.
             """;
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result[0].Title, Is.EqualTo("The Setup"));
         Assert.That(result[0].Goal, Is.EqualTo("The contact is late."));
     }
@@ -134,7 +134,7 @@ public class NodeBibleServiceTests
     public void ParseBeatSpine_EnDashSeparator_ParsedCorrectly()
     {
         var bible = "## BEAT SPINE\n1. The Setup – The contact is late.\n";
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Has.Count.EqualTo(1));
         Assert.That(result[0].Goal, Is.Not.Empty);
     }
@@ -143,7 +143,7 @@ public class NodeBibleServiceTests
     public void ParseBeatSpine_HyphenSeparator_ParsedCorrectly()
     {
         var bible = "## BEAT SPINE\n1. The Setup - The contact is late.\n";
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Has.Count.EqualTo(1));
         Assert.That(result[0].Goal, Is.Not.Empty);
     }
@@ -174,7 +174,7 @@ public class NodeBibleServiceTests
             ## SEEDS & PAYOFFS
             - Beat 1 plants the second client → Beat 3 pays it off.
             """;
-        var result = NodeBibleService.ParseBeatSpine(bible);
+        var result = NodeOutlineService.ParseBeatSpine(bible);
         Assert.That(result, Has.Count.EqualTo(3));
         Assert.That(result[0].StructureRole, Is.EqualTo("OPENING"));
         Assert.That(result[2].StructureRole, Is.EqualTo("CLIMAX"));

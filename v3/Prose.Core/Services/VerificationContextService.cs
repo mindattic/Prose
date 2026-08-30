@@ -8,7 +8,7 @@ namespace Prose.Core.Services;
 /// RFC 0011, Brick 1 — the Verification Context Provider.
 ///
 /// <para>Generation solved "what do I already know about this beat that should shape the
-/// output" months ago: SS-A46's DCM four-layer hierarchy (Base/Universe/BookBible/Register),
+/// output" months ago: SS-A46's DCM four-layer hierarchy (Base/Universe/BookOutline/Register),
 /// with <see cref="DocContextService"/> pinning a beat's POV character's register dominant.
 /// Verification never got the same treatment — every check service that needed "who's narrating
 /// this beat, and what's their established voice" re-implemented the same

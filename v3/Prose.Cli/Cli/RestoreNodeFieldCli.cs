@@ -5,7 +5,7 @@ namespace Prose.Cli;
 
 /// <summary>
 /// <c>prose --restore-node-field (--id &lt;guid&gt; | --slug &lt;slug&gt;) --archive-id &lt;guid&gt;
-///     --field description|nodebible|summary|seed|subtitle|all</c>
+///     --field description|nodeoutline|summary|seed|subtitle|all</c>
 ///
 /// Copies one (or all) of a Node's content fields FROM a chosen <c>ArchivedBook</c> snapshot
 /// BACK onto the live Node row. Explicit and human-driven by design: the archive-id names
@@ -15,7 +15,7 @@ namespace Prose.Cli;
 /// </summary>
 public static class RestoreNodeFieldCli
 {
-    private static readonly string[] ValidFields = ["description", "nodebible", "summary", "seed", "subtitle", "all"];
+    private static readonly string[] ValidFields = ["description", "nodeoutline", "summary", "seed", "subtitle", "all"];
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -34,7 +34,7 @@ public static class RestoreNodeFieldCli
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine("[restore-node-field] One of --id or --slug is required.");
-            Console.Error.WriteLine("Usage: prose --restore-node-field (--id <guid> | --slug <slug>) --archive-id <guid> --field description|nodebible|summary|seed|subtitle|all --universe <u>");
+            Console.Error.WriteLine("Usage: prose --restore-node-field (--id <guid> | --slug <slug>) --archive-id <guid> --field description|nodeoutline|summary|seed|subtitle|all --universe <u>");
             return 2;
         }
         if (!Guid.TryParse(archiveId, out var archiveGuid))
@@ -87,7 +87,7 @@ public static class RestoreNodeFieldCli
         }
 
         if (field is "description" or "all") Restore("Description", archive.Description, v => node.Description = v, () => node.Description);
-        if (field is "nodebible" or "all") Restore("NodeBible", archive.NodeBible, v => node.NodeBible = v, () => node.NodeBible);
+        if (field is "nodeoutline" or "all") Restore("NodeOutline", archive.NodeOutline, v => node.NodeOutline = v, () => node.NodeOutline);
         if (field is "summary" or "all") Restore("Summary", archive.Summary, v => node.Summary = v, () => node.Summary);
         if (field is "seed" or "all") Restore("Seed", archive.Seed, v => node.Seed = v, () => node.Seed);
         if (field is "subtitle" or "all") Restore("Subtitle", archive.Subtitle, v => node.Subtitle = v, () => node.Subtitle);

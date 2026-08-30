@@ -91,11 +91,11 @@ public class ChapterCloseProcessorService(
             {
                 var node = await db.Nodes.AsNoTracking()
                     .Where(s => s.Id == parentNodeId)
-                    .Select(s => new { s.NodeBible })
+                    .Select(s => new { s.NodeOutline })
                     .FirstOrDefaultAsync(ct);
 
                 var recalibrated = await adherence.RecalibrateAsync(
-                    parentNodeId, adherenceResult.Summary, node?.NodeBible, ct);
+                    parentNodeId, adherenceResult.Summary, node?.NodeOutline, ct);
                 result.RecalibratedBeats = recalibrated;
             }
         }

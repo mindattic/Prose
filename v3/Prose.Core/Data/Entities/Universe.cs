@@ -33,7 +33,7 @@ public class Universe
     /// Universal world facts for this universe — injected into every beat generation prompt
     /// regardless of which story is being written. Captures world mechanics (transport, tech,
     /// social structure, vocabulary) that apply across ALL stories and must never be wrong.
-    /// Story-specific facts live in <c>Node.NodeBible</c> instead.
+    /// Story-specific facts live in <c>Node.NodeOutline</c> instead.
     /// Maintained as <c>docs/universes/&lt;slug&gt;.md</c> and synced here via --sync-markdown.
     /// </summary>
     public string? WorldFacts { get; set; }

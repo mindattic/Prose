@@ -62,12 +62,12 @@ public class NodeDocServiceFrontmatterTests
         string BuildDoc(string frontmatter, string hand) =>
             frontmatter + hand + "\n\n" + marker + "\n<!-- GENERATED-CHECKSUM: abc -->\n## Structural Blueprint\n";
 
-        // Run 1: no prior NodeBible, nothing to strip.
+        // Run 1: no prior NodeOutline, nothing to strip.
         var run1Extracted = NodeDocService.StripFrontmatter(NodeDocService.ExtractHandAuthored(null));
         Assert.That(run1Extracted, Is.EqualTo(""));
         var run1Doc = BuildDoc("---\nrelated: docs/WORLD.md\n---\n\n", handAuthored);
 
-        // Run 2: NodeBible now holds run1Doc. ExtractHandAuthored + StripFrontmatter must
+        // Run 2: NodeOutline now holds run1Doc. ExtractHandAuthored + StripFrontmatter must
         // recover the ORIGINAL hand-authored text, with the run-1 frontmatter gone.
         var run2Extracted = NodeDocService.StripFrontmatter(NodeDocService.ExtractHandAuthored(run1Doc));
         Assert.That(run2Extracted, Is.EqualTo(handAuthored),

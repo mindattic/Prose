@@ -23,7 +23,7 @@ public class NodeTools
     private readonly NodeWorkbenchService workbench;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly ElevenLabsTtsService tts;
-    private readonly NodeBibleService bible;
+    private readonly NodeOutlineService bible;
     private readonly ProseReflowService reflow;
     private readonly BeatRebuildService rebuilder;
     private readonly NodeFullExportService fullExport;
@@ -42,7 +42,7 @@ public class NodeTools
         NodeWorkbenchService workbench,
         IDbContextFactory<ProseDbContext> dbFactory,
         ElevenLabsTtsService tts,
-        NodeBibleService bible,
+        NodeOutlineService bible,
         ProseReflowService reflow,
         BeatRebuildService rebuilder,
         NodeFullExportService fullExport,
@@ -161,7 +161,7 @@ public class NodeTools
             kind = s.Kind,
             status = s.Status,
             beats = beatCounts.GetValueOrDefault(s.Id, 0),
-            has_bible = s.NodeBible != null,
+            has_outline = s.NodeOutline != null,
             parent_node_id = s.ParentNodeId,
         });
         return JsonSerializer.Serialize(result, CanonTools.JsonOpts);
@@ -183,8 +183,8 @@ public class NodeTools
             status = node.Status, description = node.Description, seed = node.Seed,
             voice_id = node.VoiceId,
             parent_node_id = node.ParentNodeId, chars_narrated = node.CharsNarrated,
-            has_bible = node.NodeBible != null,
-            node_bible_generated_at = node.NodeBibleGeneratedAt,
+            has_outline = node.NodeOutline != null,
+            node_outline_generated_at = node.NodeOutlineGeneratedAt,
             beats = beats.Select((b, i) => new
             {
                 position = i + 1,
@@ -264,7 +264,7 @@ public class NodeTools
         // Scaffold user stories (and a bible template if no seed was provided).
         await spine.ScaffoldAsync(id, title ?? "", bibleAlreadySet: bibleText != null);
 
-        return JsonSerializer.Serialize(new { ok = true, id, slug, url = $"/node/{slug}", node_bible = bibleText }, CanonTools.JsonOpts);
+        return JsonSerializer.Serialize(new { ok = true, id, slug, url = $"/node/{slug}", node_outline = bibleText }, CanonTools.JsonOpts);
     }
 
     [McpServerTool, Description("Deep-duplicate a node (and its sub-node tree) into a fresh, independent copy. Every beat is cloned into a new row — prose and narration metadata are preserved, but audio, review scores, and the stale flag are reset. Editing the copy never affects the original. Accepts a Guid id OR a slug. Returns the new node's id, slug, and writer URL.")]
@@ -585,48 +585,48 @@ public class NodeTools
 
     // ── Node Bible tools ────────────────────────────────────────────────
 
-    [McpServerTool, Description("Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_bible=false when no bible exists yet.")]
-    public Task<string> GetBookBible(
+    [McpServerTool, Description("Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_outline=false when no bible exists yet.")]
+    public Task<string> GetBookOutline(
         [Description("Node Guid id or slug.")] string idOrSlug) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(GetBookBibleImpl), new { idOrSlug });
+        hub.InvokeAsync(nameof(NodeTools), nameof(GetBookOutlineImpl), new { idOrSlug });
 
-    public async Task<string> GetBookBibleImpl(string idOrSlug)
+    public async Task<string> GetBookOutlineImpl(string idOrSlug)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
-        if (string.IsNullOrEmpty(node.NodeBible))
-            return JsonSerializer.Serialize(new { has_bible = false, id = node.Id, slug = node.Slug, title = node.Title }, CanonTools.JsonOpts);
+        if (string.IsNullOrEmpty(node.NodeOutline))
+            return JsonSerializer.Serialize(new { has_outline = false, id = node.Id, slug = node.Slug, title = node.Title }, CanonTools.JsonOpts);
 
-        var spine = NodeBibleService.ParseBeatSpine(node.NodeBible)
+        var spine = NodeOutlineService.ParseBeatSpine(node.NodeOutline)
             .Select(p => new { index = p.Index, title = p.Title, goal = p.Goal, structure_role = p.StructureRole });
 
         return JsonSerializer.Serialize(new
         {
-            has_bible = true,
+            has_outline = true,
             id = node.Id,
             slug = node.Slug,
             title = node.Title,
-            generated_at = node.NodeBibleGeneratedAt,
-            bible = node.NodeBible,
+            generated_at = node.NodeOutlineGeneratedAt,
+            bible = node.NodeOutline,
             beat_spine = spine,
         }, CanonTools.JsonOpts);
     }
 
     [McpServerTool, Description("Generate (or regenerate) the node bible for a node. Uses the node's Seed field (falls back to Synopsis then Title) plus the literary rules to produce a dry structural plan: logline, premise, register, characters, numbered beat spine, seeds & payoffs. Creates planned Beat rows from the spine when the node has no beats yet. Returns the generated bible text.")]
-    public Task<string> GenerateBookBible(
+    public Task<string> GenerateBookOutline(
         [Description("Node Guid id or slug.")] string idOrSlug,
         [Description("Target number of beats in the spine. 0 = auto (use existing beat count or 12).")] int targetBeats = 0) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(GenerateBookBibleImpl), new { idOrSlug, targetBeats });
+        hub.InvokeAsync(nameof(NodeTools), nameof(GenerateBookOutlineImpl), new { idOrSlug, targetBeats });
 
-    public async Task<string> GenerateBookBibleImpl(string idOrSlug, int targetBeats = 0)
+    public async Task<string> GenerateBookOutlineImpl(string idOrSlug, int targetBeats = 0)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
         var seed = node.Seed ?? node.Description ?? node.Title;
         if (string.IsNullOrWhiteSpace(seed))
-            return JsonSerializer.Serialize(new { error = "no_seed", message = "Node has no Seed or Description to drive generation. Set one first with SetBookBible or UpdateBeatMetadata." }, CanonTools.JsonOpts);
+            return JsonSerializer.Serialize(new { error = "no_seed", message = "Node has no Seed or Description to drive generation. Set one first with SetBookOutline or UpdateBeatMetadata." }, CanonTools.JsonOpts);
 
         if (targetBeats <= 0)
         {
@@ -639,10 +639,10 @@ public class NodeTools
         try { bibleText = await bible.GenerateAndSaveAsync(node.Id, seed, node.Title, targetBeats); }
         catch (Exception ex) { return JsonSerializer.Serialize(new { error = "generation_failed", message = ex.Message, inner = ex.InnerException?.Message, deep = ex.InnerException?.InnerException?.Message }, CanonTools.JsonOpts); }
 
-        var spine = NodeBibleService.ParseBeatSpine(bibleText)
+        var spine = NodeOutlineService.ParseBeatSpine(bibleText)
             .Select(p => new { index = p.Index, title = p.Title, goal = p.Goal, structure_role = p.StructureRole });
 
-        // Cascade immediately — GenerateAndSaveAsync only wrote Node.NodeBible; the docs/nodes/{CODE}.md
+        // Cascade immediately — GenerateAndSaveAsync only wrote Node.NodeOutline; the docs/nodes/{CODE}.md
         // mirror and the MarkdownFiles row DocContextService actually reads both need to reflect it too.
         var genResult = await nodeDoc.GenerateAsync(node.Id);
         var syncResult = await markdownFiles.SyncAllAsync();
@@ -661,33 +661,33 @@ public class NodeTools
     }
 
     [McpServerTool, Description("Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible. The docs/nodes/{CODE}.md mirror and MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.")]
-    public Task<string> SetBookBible(
+    public Task<string> SetBookOutline(
         [Description("Node Guid id or slug.")] string idOrSlug,
         [Description("Full bible markdown text to store. Empty string clears the bible.")] string bibleText) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(SetBookBibleImpl), new { idOrSlug, bibleText });
+        hub.InvokeAsync(nameof(NodeTools), nameof(SetBookOutlineImpl), new { idOrSlug, bibleText });
 
-    public async Task<string> SetBookBibleImpl(string idOrSlug, string bibleText)
+    public async Task<string> SetBookOutlineImpl(string idOrSlug, string bibleText)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
-        // Route through CanonDocumentService.SetNodeBibleSectionAsync (sectionType "Full") rather
-        // than writing Nodes.NodeBible directly — that method keeps NodeBibleSections' "Full" row
-        // in lockstep with Nodes.NodeBible. Writing only the latter (as this method used to) left
-        // NodeBibleSections stale for any node not also touched via SetBookBibleSection, and
+        // Route through CanonDocumentService.SetNodeOutlineSectionAsync (sectionType "Full") rather
+        // than writing Nodes.NodeOutline directly — that method keeps NodeOutlineSections' "Full" row
+        // in lockstep with Nodes.NodeOutline. Writing only the latter (as this method used to) left
+        // NodeOutlineSections stale for any node not also touched via SetBookOutlineSection, and
         // MarkdownFileService.SyncFromCanonDbAsync (phase 2 of `--sync-markdown`) unconditionally
         // overwrites MarkdownFiles from that stale row — silently reverting a bible edit the very
         // next time someone ran a full markdown sync. Found and root-caused 2026-08-14 after it
         // reverted a hand-authored bible fix mid-session.
-        await canonDocs.SetNodeBibleSectionAsync(node.Id, "Full", bibleText);
+        await canonDocs.SetNodeOutlineSectionAsync(node.Id, "Full", bibleText);
 
         // Bug found 2026-08-26: this tool's own description ("beat spine parsing still applies
         // for planned-beat creation") was never actually implemented — only the LLM-generation
-        // path (GenerateBookBible) called ParseBeatSpine. Fixed to match the documented contract;
+        // path (GenerateBookOutline) called ParseBeatSpine. Fixed to match the documented contract;
         // still a no-op if the node already has beats or the text has no "## BEAT SPINE" section.
         await bible.ApplyBeatSpineFromTextAsync(node.Id, bibleText);
 
-        // Cascade immediately — same reasoning as GenerateBookBible/SetCanonSection: propagation
+        // Cascade immediately — same reasoning as GenerateBookOutline/SetCanonSection: propagation
         // is part of the write, not a follow-up step the caller has to remember.
         var genResult = await nodeDoc.GenerateAsync(node.Id);
         var syncResult = await markdownFiles.SyncAllAsync();
@@ -704,7 +704,7 @@ public class NodeTools
         }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Assemble the unified Book Context Document for a node: merges hand-authored NodeBible content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeBible and docs/nodes/{CODE}.md. The MarkdownFiles sync (what DocContextService reads at generation time) runs automatically as part of this call — no follow-up call needed. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.")]
+    [McpServerTool, Description("Assemble the unified Book Context Document for a node: merges hand-authored NodeOutline content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeOutline and docs/nodes/{CODE}.md. The MarkdownFiles sync (what DocContextService reads at generation time) runs automatically as part of this call — no follow-up call needed. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.")]
     public Task<string> GenerateNodeDoc(
         [Description("Node id (GUID), slug, or NodeCode.")] string nodeIdOrSlug) =>
         hub.InvokeAsync(nameof(NodeTools), nameof(GenerateNodeDocImpl), new { nodeIdOrSlug });
@@ -1204,7 +1204,7 @@ public class NodeTools
             latest_pin = dto.LatestPin == null ? null : new
             {
                 node_version    = dto.LatestPin.NodeVersion,
-                bible_hash        = dto.LatestPin.BibleHash[..Math.Min(12, dto.LatestPin.BibleHash.Length)] + "…",
+                outline_hash        = dto.LatestPin.OutlineHash[..Math.Min(12, dto.LatestPin.OutlineHash.Length)] + "…",
                 user_stories_hash = dto.LatestPin.UserStoriesHash[..Math.Min(12, dto.LatestPin.UserStoriesHash.Length)] + "…",
                 amendment_count   = dto.LatestPin.AmendmentCount,
                 pinned_at         = dto.LatestPin.PinnedAt.ToString("u"),
@@ -1283,7 +1283,7 @@ public class NodeTools
         {
             ok              = true,
             node_version  = pin.NodeVersion,
-            bible_hash      = pin.BibleHash[..Math.Min(12, pin.BibleHash.Length)] + "…",
+            outline_hash      = pin.OutlineHash[..Math.Min(12, pin.OutlineHash.Length)] + "…",
             user_stories_hash = pin.UserStoriesHash[..Math.Min(12, pin.UserStoriesHash.Length)] + "…",
             amendment_count = pin.AmendmentCount,
             prior_drift     = drifted,

@@ -14,7 +14,7 @@ public class BeatArchiveService(
     IDbContextFactory<Data.ProseDbContext> dbFactory,
     WorldStateService worldState,
     MarkdownFileService markdownFiles,
-    NodeBibleService nodeBible)
+    NodeOutlineService nodeBible)
 {
     private sealed class BeatEntityRosterRow
     {
@@ -133,10 +133,10 @@ public class BeatArchiveService(
             }
         }
 
-        // NodeBible lives on the BOOK node only, never the chapter (Book -> Chapter -> Beat is a
+        // NodeOutline lives on the BOOK node only, never the chapter (Book -> Chapter -> Beat is a
         // hard, no-exceptions hierarchy — see CLAUDE.md). `nodeId` above is the beat's chapter, so
         // looking it up directly returned null for virtually every real beat in the corpus (only
-        // 43 legacy chapter rows anywhere carry a stray NodeBible value; every real book bible
+        // 43 legacy chapter rows anywhere carry a stray NodeOutline value; every real book bible
         // lives one level up). Walk to the parent book before resolving.
         Guid bibleNodeId = Guid.Empty;
         if (nodeId != Guid.Empty)

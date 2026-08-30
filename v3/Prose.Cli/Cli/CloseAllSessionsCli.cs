@@ -19,7 +19,7 @@ public static class CloseAllSessionsCli
     {
         var dbFactory  = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var sessionSvc = services.GetRequiredService<EditSessionService>();
-        var bibleSvc   = services.GetRequiredService<BibleSyncService>();
+        var bibleSvc   = services.GetRequiredService<OutlineSyncService>();
         var bpSvc      = services.GetRequiredService<BlueprintSyncService>();
 
         await using var db = await dbFactory.CreateDbContextAsync();

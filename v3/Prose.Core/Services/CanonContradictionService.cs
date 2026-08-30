@@ -74,7 +74,7 @@ public class CanonContradictionService
 
         // 2026-08-14 fix: EmbeddingService.EnsureFreshAsync had zero call sites anywhere in the
         // codebase — nothing re-embedded an entity's canon vector after its Description changed
-        // (e.g. via set_book_bible-driven corrections), so FindSimilarAsync's top-k ranking could
+        // (e.g. via set_book_outline-driven corrections), so FindSimilarAsync's top-k ranking could
         // keep weighing a book-specific entity by a stale vector indefinitely; only a manual
         // `prose --reembed` ever closed the gap. Refresh is hash-gated (no-op unless the source
         // text actually changed) and scoped to just this book's own entities (OriginNodeId ==

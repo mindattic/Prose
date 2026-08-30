@@ -29,7 +29,7 @@ public class TextIntegrityFinding
 /// text into memory via EF Core and does a plain C# <c>char == '�'</c> comparison, which has
 /// no collation involved and cannot have the same false-negative bug.
 ///
-/// Confirmed scope of the original bug (Ballast): 8 instances in <c>Nodes.NodeBible</c>, all
+/// Confirmed scope of the original bug (Ballast): 8 instances in <c>Nodes.NodeOutline</c>, all
 /// immediately before a formatted number (Φ8,400, Φ2,100, etc.) — 0 instances in that book's 339
 /// `Beats.Text` rows. The corruption is specific to Φ's 2-byte UTF-8 encoding being mangled by
 /// some past non-UTF-8 write path.
@@ -37,7 +37,7 @@ public class TextIntegrityFinding
 /// Extended 2026-08-15 (same day) after finding a SECOND, distinct corruption class in Between
 /// the Lines' bible: stray low-range control characters (codepoints 1-31, excluding tab/LF/CR)
 /// sitting where an em-dash (—, 8212) or section symbol (§, 167) had been silently lost — 12
-/// instances, all in <c>Nodes.NodeBible</c>. Same failure family as the Φ→U+FFFD bug (a non-UTF-8
+/// instances, all in <c>Nodes.NodeOutline</c>. Same failure family as the Φ→U+FFFD bug (a non-UTF-8
 /// write path mangling a multi-byte character), different garbage byte value. This scanner now
 /// flags BOTH U+FFFD and any stray control character in that range — do not narrow it back to
 /// U+FFFD only. Treat any future new garbage-codepoint discovery the same way: extend
@@ -68,11 +68,11 @@ public class TextIntegrityService(IDbContextFactory<ProseDbContext> dbFactory)
             ScanText(beat.Text, "Beats", beat.Id, "Text", $"Beat #{beat.Number}", findings);
 
         var books = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.Kind == "book" && n.NodeBible != null)
-            .Select(n => new { n.Id, n.Title, n.NodeBible })
+            .Where(n => n.Kind == "book" && n.NodeOutline != null)
+            .Select(n => new { n.Id, n.Title, n.NodeOutline })
             .ToListAsync(ct);
         foreach (var book in books)
-            ScanText(book.NodeBible, "Nodes", book.Id, "NodeBible", book.Title, findings);
+            ScanText(book.NodeOutline, "Nodes", book.Id, "NodeOutline", book.Title, findings);
 
         return findings;
     }
@@ -151,6 +151,6 @@ public class TextIntegrityService(IDbContextFactory<ProseDbContext> dbFactory)
                 $"UPDATE Beats SET Text = STUFF(Text, {pos}, 1, {repl}) WHERE Id = {finding.RowId}", ct);
         else
             await db.Database.ExecuteSqlInterpolatedAsync(
-                $"UPDATE Nodes SET NodeBible = STUFF(NodeBible, {pos}, 1, {repl}) WHERE Id = {finding.RowId}", ct);
+                $"UPDATE Nodes SET NodeOutline = STUFF(NodeOutline, {pos}, 1, {repl}) WHERE Id = {finding.RowId}", ct);
     }
 }

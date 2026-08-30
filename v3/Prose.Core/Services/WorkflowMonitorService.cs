@@ -75,7 +75,7 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
             .Where(x => scopeIds.Contains(x.NodeId)).ToListAsync(ct);
         var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(s => s.Id == nodeId)
-            .Select(s => new { s.Slug, s.Title, s.NodeCode, s.NodeBibleGeneratedAt })
+            .Select(s => new { s.Slug, s.Title, s.NodeCode, s.NodeOutlineGeneratedAt })
             .FirstOrDefaultAsync(ct);
 
         var byService = logs
@@ -115,18 +115,18 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
         if (!hasBlueprint)
             gaps.Add($"StructuralBlueprint: not found — run 'prose --generate-blueprint --slug {node?.Slug ?? "?"}'");
 
-        // Health check: NodeBible freshness vs MarkdownFiles
+        // Health check: NodeOutline freshness vs MarkdownFiles
         var nodeCode = node?.NodeCode ?? "";
-        if (!string.IsNullOrEmpty(nodeCode) && node?.NodeBibleGeneratedAt.HasValue == true)
+        if (!string.IsNullOrEmpty(nodeCode) && node?.NodeOutlineGeneratedAt.HasValue == true)
         {
             var mdSynced = await db.MarkdownFiles.AsNoTracking()
                 .Where(m => m.Tier == "node" && m.Scope.Contains(nodeCode))
                 .Select(m => (DateTime?)m.LastSyncedAt)
                 .FirstOrDefaultAsync(ct);
             if (mdSynced == null)
-                gaps.Add($"NodeBible: generated but never synced — run 'prose --generate-node-doc --slug {node?.Slug ?? "?"} && prose --sync-markdown'");
-            else if (node!.NodeBibleGeneratedAt!.Value > mdSynced.Value)
-                gaps.Add($"NodeBible: generated {node.NodeBibleGeneratedAt.Value:yyyy-MM-dd HH:mm} UTC but MarkdownFiles synced {mdSynced.Value:yyyy-MM-dd HH:mm} UTC — run 'prose --sync-markdown'");
+                gaps.Add($"NodeOutline: generated but never synced — run 'prose --generate-node-doc --slug {node?.Slug ?? "?"} && prose --sync-markdown'");
+            else if (node!.NodeOutlineGeneratedAt!.Value > mdSynced.Value)
+                gaps.Add($"NodeOutline: generated {node.NodeOutlineGeneratedAt.Value:yyyy-MM-dd HH:mm} UTC but MarkdownFiles synced {mdSynced.Value:yyyy-MM-dd HH:mm} UTC — run 'prose --sync-markdown'");
         }
 
         return new NodeCoverageReport(

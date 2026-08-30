@@ -184,9 +184,9 @@ public class MarkdownFileService
         // NodeCode → owning universe, for docs/nodes/<CODE>.md.
         //
         // A node bible can reach MarkdownFiles by either of two paths: SyncFromCanonDbAsync (from
-        // NodeBibleSections, which knows the node and therefore its universe) or this disk sync
+        // NodeOutlineSections, which knows the node and therefore its universe) or this disk sync
         // (which historically knew nothing). A book whose bible exists only as a generated file on
-        // disk — no "Full" NodeBibleSections row — therefore landed on Universe.SharedId and was
+        // disk — no "Full" NodeOutlineSections row — therefore landed on Universe.SharedId and was
         // visible to every universe. That is how the SCRY bibles (VIGL, M101, TRNY, LLSS) ended up
         // shared. ClassifyFile already derives Scope from the filename for this folder, so the code
         // is available here; resolve it to the real universe.
@@ -317,7 +317,7 @@ public class MarkdownFileService
         return new(inserted, updated, unchanged, errors);
     }
 
-    // ── Sync: CanonDocumentSections + NodeBibleSections → MarkdownFiles ───────
+    // ── Sync: CanonDocumentSections + NodeOutlineSections → MarkdownFiles ───────
     // DB-sourced sync: assembles content from the Truth-First DB tables and upserts
     // into MarkdownFiles. DB content always wins over file-sync content — this is how
     // hand-edits to .md files are detected and reverted to the canonical DB source.
@@ -436,8 +436,8 @@ public class MarkdownFileService
             }
         }
 
-        // ── Node bibles (NodeBibleSections) ───────────────────────────────────
-        var nodeBibles = await db.NodeBibleSections
+        // ── Node bibles (NodeOutlineSections) ───────────────────────────────────
+        var nodeBibles = await db.NodeOutlineSections
             .Join(db.Nodes, s => s.NodeId, n => n.Id, (s, n) => new
             {
                 s.NodeId,

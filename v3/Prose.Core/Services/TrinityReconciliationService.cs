@@ -115,7 +115,7 @@ public class TrinityReconciliationService(
             return new ExtractionSweepEntry(node.Slug, Skipped: true, 0, 0, 0, 0);
 
         var proseResults = await extraction.ExtractFromBookNodeAsync(nodeId, ct: ct);
-        var bibleResult = await extraction.ExtractFromBibleAsync(nodeId, ct: ct);
+        var bibleResult = await extraction.ExtractFromOutlineAsync(nodeId, ct: ct);
 
         // Seeds the continuous-re-extraction hash cursors so a save the moment after this
         // finishes compares against a real baseline, not "no cursor → treat as changed."
@@ -140,7 +140,7 @@ public class TrinityReconciliationService(
     /// referred to before that path was replaced as the prose-losing default (2026-08-19).</param>
     public record SurveyEntry(
         string BookSlug, int ContradictionGroups, int AppliedDriftFindings,
-        int ProseVsBible, int ProseVsEntity, int BibleVsEntity, int OtherPairing,
+        int ProseVsOutline, int ProseVsEntity, int OutlineVsEntity, int OtherPairing,
         int WouldHitBeatRepair);
 
     /// <summary>Read-only survey: contradiction groups + applied-claim drift for one book, with a
@@ -152,20 +152,20 @@ public class TrinityReconciliationService(
         var groups = await Compatibility.GetGenuineContradictionGroupsAsync(bookSlug, ct);
         var drift = (await continuityApply.CheckAppliedClaimsAsync(bookSlug, ct)).Count(d => d.Drifted);
 
-        int proseVsBible = 0, proseVsEntity = 0, bibleVsEntity = 0, other = 0, wouldHitBeatRepair = 0;
+        int proseVsOutline = 0, proseVsEntity = 0, outlineVsEntity = 0, other = 0, wouldHitBeatRepair = 0;
         foreach (var g in groups)
         {
             var sources = g.Claims.Select(c => c.SourceType).Distinct().OrderBy(s => s).ToList();
             if (sources.Contains("prose")) wouldHitBeatRepair++;
 
             var pair = string.Join("+", sources);
-            if (sources.Count == 2 && sources.Contains("prose") && sources.Contains("bible")) proseVsBible++;
+            if (sources.Count == 2 && sources.Contains("prose") && sources.Contains("outline")) proseVsOutline++;
             else if (sources.Count == 2 && sources.Contains("prose") && sources.Contains("entity_record")) proseVsEntity++;
-            else if (sources.Count == 2 && sources.Contains("bible") && sources.Contains("entity_record")) bibleVsEntity++;
+            else if (sources.Count == 2 && sources.Contains("outline") && sources.Contains("entity_record")) outlineVsEntity++;
             else other++;
         }
 
-        return new SurveyEntry(bookSlug, groups.Count, drift, proseVsBible, proseVsEntity, bibleVsEntity, other, wouldHitBeatRepair);
+        return new SurveyEntry(bookSlug, groups.Count, drift, proseVsOutline, proseVsEntity, outlineVsEntity, other, wouldHitBeatRepair);
     }
 
     // ── Phase 3: reconciliation ───────────────────────────────────────────────
@@ -227,7 +227,7 @@ public class TrinityReconciliationService(
     private static string SourceTypeToMechanism(string sourceType) => sourceType switch
     {
         "prose"         => "beat_patch",
-        "bible"         => "bible_section",
+        "outline"         => "outline_section",
         "entity_record" => "entity_record",
         _               => "unknown",
     };
@@ -353,9 +353,9 @@ public class TrinityReconciliationService(
         // bible loses → snapshot the section, patch it, write it back.
         string? preEditSnapshotJson = null;
         var patchedSections = new HashSet<(Guid NodeId, string SectionType)>();
-        foreach (var losing in losingClaims.Where(c => c.SourceType == "bible"))
+        foreach (var losing in losingClaims.Where(c => c.SourceType == "outline"))
         {
-            var sectionType = ParseBibleSectionType(losing.SourcePath);
+            var sectionType = ParseOutlineSectionType(losing.SourcePath);
 
             // GetContradictionGroups groups purely by (EntityId, Predicate), not by book — a
             // crossover character asserted in two books (e.g. Auda Vane in both high-five and
@@ -374,15 +374,15 @@ public class TrinityReconciliationService(
 
             if (!patchedSections.Add((targetNodeId.Value, sectionType))) continue; // already patched this section this pass
 
-            var sections = await canonDocs.GetNodeBibleSectionsAsync(targetNodeId.Value, ct);
+            var sections = await canonDocs.GetNodeOutlineSectionsAsync(targetNodeId.Value, ct);
             var section = sections.FirstOrDefault(s => s.SectionType == sectionType);
             if (section == null)
             {
-                log.LogWarning("[trinity] No NodeBibleSection '{Section}' found for node {NodeId} — cannot patch bible.", sectionType, targetNodeId.Value);
+                log.LogWarning("[trinity] No NodeOutlineSection '{Section}' found for node {NodeId} — cannot patch bible.", sectionType, targetNodeId.Value);
                 continue;
             }
 
-            var patched = await PatchBibleSectionAsync(section.Content, losing, winner, group, ct);
+            var patched = await PatchOutlineSectionAsync(section.Content, losing, winner, group, ct);
             if (patched == null)
             {
                 log.LogWarning(
@@ -397,8 +397,8 @@ public class TrinityReconciliationService(
                 ? JsonSerializer.Serialize(new[] { snapshot })
                 : JsonSerializer.Serialize(JsonSerializer.Deserialize<List<object>>(preEditSnapshotJson)!.Append(snapshot));
 
-            await canonDocs.SetNodeBibleSectionAsync(targetNodeId.Value, sectionType, patched, ct);
-            AddEditTarget(editTargets, "bible_section", new { nodeId = targetNodeId.Value, sectionType });
+            await canonDocs.SetNodeOutlineSectionAsync(targetNodeId.Value, sectionType, patched, ct);
+            AddEditTarget(editTargets, "outline_section", new { nodeId = targetNodeId.Value, sectionType });
             resolvedLosingClaimUids.Add(losing.ClaimUid);
         }
 
@@ -552,7 +552,7 @@ public class TrinityReconciliationService(
     /// <summary>Undoes one decision's edit(s) and flips the ledger side back. A prose/entity edit
     /// restores from its own table's temporal history (<c>FOR SYSTEM_TIME AS OF</c> just before the
     /// edit); a bible edit restores from <see cref="ReconciliationDecision.PreEditSnapshotJson"/>
-    /// directly, since <c>NodeBibleSections</c> is not a system-versioned table.</summary>
+    /// directly, since <c>NodeOutlineSections</c> is not a system-versioned table.</summary>
     public async Task<bool> RevertDecisionAsync(Guid decisionId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -573,8 +573,8 @@ public class TrinityReconciliationService(
                 case "beat_patch":
                     await RevertBeatTextEditAsync(db, row, "beat_patch", asOf, ct);
                     break;
-                case "bible_section":
-                    await RevertBibleSectionAsync(db, row, ct);
+                case "outline_section":
+                    await RevertOutlineSectionAsync(db, row, ct);
                     break;
                 case "entity_record":
                     await RevertEntityRecordAsync(db, row, asOf, ct);
@@ -633,7 +633,7 @@ public class TrinityReconciliationService(
         }
     }
 
-    private async Task RevertBibleSectionAsync(ProseDbContext db, ReconciliationDecision row, CancellationToken ct)
+    private async Task RevertOutlineSectionAsync(ProseDbContext db, ReconciliationDecision row, CancellationToken ct)
     {
         if (string.IsNullOrEmpty(row.PreEditSnapshotJson)) return;
         var snapshots = JsonSerializer.Deserialize<List<JsonElement>>(row.PreEditSnapshotJson) ?? new();
@@ -642,7 +642,7 @@ public class TrinityReconciliationService(
             var nodeId = Guid.Parse(snap.GetProperty("nodeId").GetString()!);
             var sectionType = snap.GetProperty("sectionType").GetString()!;
             var content = snap.GetProperty("content").GetString() ?? "";
-            await canonDocs.SetNodeBibleSectionAsync(nodeId, sectionType, content, ct);
+            await canonDocs.SetNodeOutlineSectionAsync(nodeId, sectionType, content, ct);
         }
     }
 
@@ -709,20 +709,20 @@ public class TrinityReconciliationService(
         return await NodeRefResolver.ResolveAsync(dbFactory, claimBookSlug, ct);
     }
 
-    private static string ParseBibleSectionType(string? sourcePath)
+    private static string ParseOutlineSectionType(string? sourcePath)
     {
         const string sectionPrefix = "bible-section:";
         if (!string.IsNullOrEmpty(sourcePath) && sourcePath.StartsWith(sectionPrefix, StringComparison.Ordinal))
             return sourcePath[sectionPrefix.Length..];
-        // "bible-full:fallback" (ExtractFromBibleAsync's fallback when no typed NodeBibleSection row
-        // exists yet) extracted from the raw Nodes.NodeBible blob — CanonDocumentService.
-        // SetNodeBibleSectionAsync's "Full" sectionType is the one that writes back to that same
+        // "bible-full:fallback" (ExtractFromOutlineAsync's fallback when no typed NodeOutlineSection row
+        // exists yet) extracted from the raw Nodes.NodeOutline blob — CanonDocumentService.
+        // SetNodeOutlineSectionAsync's "Full" sectionType is the one that writes back to that same
         // blob, so that's the section to patch, not the "Characters" default (found live 2026-08-19:
         // patching "Characters" here silently no-opped for every book whose bible predates a typed
-        // Characters section, since GetNodeBibleSectionsAsync never has one to match against).
+        // Characters section, since GetNodeOutlineSectionsAsync never has one to match against).
         if (string.Equals(sourcePath, "bible-full:fallback", StringComparison.Ordinal))
             return "Full";
-        return "Characters"; // ExtractFromBibleAsync's own default section
+        return "Characters"; // ExtractFromOutlineAsync's own default section
     }
 
     /// <summary>Finds which beat under a chapter-scoped continuity claim's <c>SourceChapterId</c>
@@ -781,7 +781,7 @@ public class TrinityReconciliationService(
         || (oldLength >= 20 && newLength < oldLength * 0.4);
 
     /// <summary>Surgical single-PARAGRAPH patch for the prose-losing case — the direct mirror of
-    /// <see cref="PatchBibleSectionAsync"/> below, applied to beat text instead of a bible section.
+    /// <see cref="PatchOutlineSectionAsync"/> below, applied to beat text instead of a bible section.
     /// Confirmed against the live corpus that beats store exactly one paragraph per non-empty
     /// <c>\n</c>-delimited line, so line-granularity is paragraph-granularity here, not an
     /// arbitrary split. Operates on <see cref="BeatMarkup.StripEntityTags"/>-stripped plain text
@@ -795,7 +795,7 @@ public class TrinityReconciliationService(
     /// hand-picked-divergence proof run — it silently replaced a 2,848-char beat with an unrelated
     /// 10,482-char invented scene, dropping the fact it was meant to fix. Scoping the LLM call to
     /// exactly one already-located paragraph removes that failure mode the same way
-    /// <see cref="PatchBibleSectionAsync"/> already removed it for the bible-losing case.</summary>
+    /// <see cref="PatchOutlineSectionAsync"/> already removed it for the bible-losing case.</summary>
     private async Task<string?> PatchBeatAsync(string beatText, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
     {
         var snippet = losingClaim.Snippet ?? "";
@@ -860,7 +860,7 @@ public class TrinityReconciliationService(
     /// refusal.</summary>
     internal static string StripMarkdownDecoration(string s) => s.Replace("**", "").Replace("`", "");
 
-    private async Task<string?> PatchBibleSectionAsync(string sectionContent, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
+    private async Task<string?> PatchOutlineSectionAsync(string sectionContent, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
     {
         var snippet = losingClaim.Snippet ?? "";
         if (string.IsNullOrEmpty(snippet)) return null;
@@ -906,7 +906,7 @@ public class TrinityReconciliationService(
 
     private static string SourceLabel(ContinuityClaim c) => c.SourceType switch
     {
-        "bible"         => "the story bible — authorial intent",
+        "outline"         => "the story bible — authorial intent",
         "prose"         => $"the prose (ch.{c.SourceChapterNumber} {c.SourceChapterTitle}) — what actually happened on the page, the reader's lived experience",
         "entity_record" => "the entity's structured canon sheet — what other tools read as ground truth",
         _               => c.SourceType,

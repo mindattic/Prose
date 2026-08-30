@@ -13,12 +13,12 @@ namespace Prose.Core.Services;
 public record NodeDocResult(string NodeCode, int BeatCount, bool HasBlueprint, string Path, DateTime GeneratedAt);
 
 /// <summary>
-/// Assembles the unified Book Context Document — hand-authored NodeBible content
+/// Assembles the unified Book Context Document — hand-authored NodeOutline content
 /// plus generated Structural Blueprint and Beat Spine sections — and writes it to
-/// both <c>Nodes.NodeBible</c> (DB) and <c>docs/nodes/{CODE}.md</c> (disk mirror).
+/// both <c>Nodes.NodeOutline</c> (DB) and <c>docs/nodes/{CODE}.md</c> (disk mirror).
 ///
 /// The disk file is a generated read-only view; never hand-edit it.
-/// Edit hand-authored content via <c>set_book_bible</c> MCP, then re-run.
+/// Edit hand-authored content via <c>set_book_outline</c> MCP, then re-run.
 /// </summary>
 public class NodeDocService
 {
@@ -76,10 +76,10 @@ public class NodeDocService
         // frontmatter block (the frontmatter is recomputed fresh every run from UniverseId,
         // never hand-edited, so it must never be carried forward as "hand-authored" — otherwise
         // it accumulates a new block on top of the old one every regenerate).
-        var handAuthored = StripFrontmatter(ExtractHandAuthored(node.NodeBible));
+        var handAuthored = StripFrontmatter(ExtractHandAuthored(node.NodeOutline));
         if (string.IsNullOrWhiteSpace(handAuthored))
             handAuthored = $"# Book Context: {node.Title} ({nodeCode})\n\n" +
-                           $"_No hand-authored content yet. Use `set_book_bible` MCP to add arc, characters, voice register, and narrative locks._\n";
+                           $"_No hand-authored content yet. Use `set_book_outline` MCP to add arc, characters, voice register, and narrative locks._\n";
 
         var universeSlug = await db.Universes.AsNoTracking()
             .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
@@ -121,18 +121,18 @@ public class NodeDocService
 
         var docText = doc.ToString().TrimEnd() + "\n";
 
-        // Save to DB — NodeBible stays PURE hand-authored content, never the merged blob.
+        // Save to DB — NodeOutline stays PURE hand-authored content, never the merged blob.
         // Previously this wrote the full docText (frontmatter + hand-authored + blueprint +
-        // beat spine) back into Nodes.NodeBible, so the column named "the bible" stopped
+        // beat spine) back into Nodes.NodeOutline, so the column named "the bible" stopped
         // meaning only the bible after the first regenerate — any code or person reading
-        // NodeBible directly got a blend under a name that promised one of its three
+        // NodeOutline directly got a blend under a name that promised one of its three
         // ingredients. The merged view belongs only on the disk mirror (docs/nodes/{CODE}.md)
         // and MarkdownFiles, which is what DocContextService actually injects at generation
         // time anyway. ExtractHandAuthored still strips a legacy marker/blueprint/spine tail
-        // from any NodeBible value saved before this fix, so every book self-heals back to a
+        // from any NodeOutline value saved before this fix, so every book self-heals back to a
         // pure bible the next time its doc is regenerated.
-        node.NodeBible = handAuthored.TrimEnd() + "\n";
-        node.NodeBibleGeneratedAt = now;
+        node.NodeOutline = handAuthored.TrimEnd() + "\n";
+        node.NodeOutlineGeneratedAt = now;
         node.UpdatedAt = now;
         await db.SaveChangesAsync(ct);
 
