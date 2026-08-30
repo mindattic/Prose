@@ -59,8 +59,12 @@ namespace Prose.Core.Migrations
                 IF OBJECT_ID('dbo.NodeBibleSections') IS NOT NULL AND OBJECT_ID('dbo.NodeOutlineSections') IS NULL
                 BEGIN
                     EXEC sp_rename 'dbo.NodeBibleSections', 'NodeOutlineSections';
-                    EXEC sp_rename 'dbo.NodeOutlineSections.PK_NodeBibleSections', 'PK_NodeOutlineSections';
-                    EXEC sp_rename 'dbo.NodeOutlineSections.FK_NodeBibleSections_Nodes_NodeId', 'FK_NodeOutlineSections_Nodes_NodeId';
+                    -- PK/FK constraints are schema-scoped objects, not table-qualified like columns/
+                    -- indexes -- sp_rename needs the 2-part 'schema.constraintname' form for them.
+                    -- (Verified empirically: the 3-part table-qualified form silently works for PK
+                    -- but throws "No item by the name..." (15225) for FK.)
+                    EXEC sp_rename 'dbo.PK_NodeBibleSections', 'PK_NodeOutlineSections';
+                    EXEC sp_rename 'dbo.FK_NodeBibleSections_Nodes_NodeId', 'FK_NodeOutlineSections_Nodes_NodeId';
                     EXEC sp_rename 'dbo.NodeOutlineSections.IX_NodeBibleSections_NodeId', 'IX_NodeOutlineSections_NodeId', 'INDEX';
                     EXEC sp_rename 'dbo.NodeOutlineSections.UX_NodeBibleSections_Node_Type', 'UX_NodeOutlineSections_Node_Type', 'INDEX';
                 END;
@@ -101,8 +105,8 @@ namespace Prose.Core.Migrations
                 BEGIN
                     EXEC sp_rename 'dbo.NodeOutlineSections.UX_NodeOutlineSections_Node_Type', 'UX_NodeBibleSections_Node_Type', 'INDEX';
                     EXEC sp_rename 'dbo.NodeOutlineSections.IX_NodeOutlineSections_NodeId', 'IX_NodeBibleSections_NodeId', 'INDEX';
-                    EXEC sp_rename 'dbo.NodeOutlineSections.FK_NodeOutlineSections_Nodes_NodeId', 'FK_NodeBibleSections_Nodes_NodeId';
-                    EXEC sp_rename 'dbo.NodeOutlineSections.PK_NodeOutlineSections', 'PK_NodeBibleSections';
+                    EXEC sp_rename 'dbo.FK_NodeOutlineSections_Nodes_NodeId', 'FK_NodeBibleSections_Nodes_NodeId';
+                    EXEC sp_rename 'dbo.PK_NodeOutlineSections', 'PK_NodeBibleSections';
                     EXEC sp_rename 'dbo.NodeOutlineSections', 'NodeBibleSections';
                 END;
 
