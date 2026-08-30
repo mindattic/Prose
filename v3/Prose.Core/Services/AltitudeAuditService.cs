@@ -35,7 +35,7 @@ public sealed class AltitudeAuditService(
     public async Task<AuditResult?> AuditAsync(Guid storyNodeId, bool forceSynopsis = false, CancellationToken ct = default)
     {
         string slug, nodeCode, title;
-        string? bible;
+        string? outline;
         string blueprintHeadline;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
@@ -46,7 +46,7 @@ public sealed class AltitudeAuditService(
                 .FirstOrDefaultAsync(ct);
             if (node == null) return null;
             slug = node.Slug; nodeCode = node.NodeCode ?? node.Slug.ToUpperInvariant(); title = node.Title;
-            bible = NodeDocService.ExtractHandAuthored(node.NodeOutline);
+            outline = NodeDocService.ExtractHandAuthored(node.NodeOutline);
 
             var bp = await db.NodeStructuralBlueprints.AsNoTracking()
                 .Where(b => b.NodeId == storyNodeId).FirstOrDefaultAsync(ct);
@@ -56,9 +56,9 @@ public sealed class AltitudeAuditService(
                 $"Subplot: {(bp.HasSubplot ? bp.SubplotSummary : "none")}";
         }
 
-        if (string.IsNullOrWhiteSpace(bible))
+        if (string.IsNullOrWhiteSpace(outline))
         {
-            log.LogWarning("AltitudeAudit: {Slug} has no hand-authored bible — nothing to compare", slug);
+            log.LogWarning("AltitudeAudit: {Slug} has no hand-authored outline — nothing to compare", slug);
             return null;
         }
 
@@ -75,25 +75,29 @@ public sealed class AltitudeAuditService(
 
         const string system = """
             You audit ALTITUDE AGREEMENT for a novel: does the DESIGNED story (the hand-authored
-            bible: arc, characters, locks, register + the structural blueprint headline) match
-            the TOLD story (chapter-by-chapter synopses generated from the live prose)?
+            outline: arc, characters, structural notes, register + the structural blueprint
+            headline) match the TOLD story (chapter-by-chapter synopses generated from the live
+            prose)?
 
-            Report only CONCRETE divergences — a fact, event, character state, lock, or arc
-            promise that one altitude asserts and the other contradicts or omits where it is
-            load-bearing. Do not report tone, style, or level-of-detail differences; synopses
-            compress. Do not invent problems — if the altitudes agree, return an empty list.
+            Report only CONCRETE divergences — a fact, event, character state, or arc promise
+            that one altitude asserts and the other contradicts or omits where it is load-bearing.
+            Do not report tone, style, or level-of-detail differences; synopses compress. Do not
+            invent problems — if the altitudes agree, return an empty list.
 
-            Arbitration rule for recommendations: prose wins on FACTS (the bible is stale —
-            recommend a bible update); the bible wins on LOCKS (explicitly locked arcs, endings,
-            prohibitions — recommend a prose fix naming the chapters).
+            No side is automatically authoritative (Outline ⇄ Book ⇄ Entities is a three-way
+            symbiosis — see docs/LOGIC.md; Trinity reconciliation is the canonical case-by-case
+            arbiter). For each divergence, state which side appears stale and WHY, citing evidence
+            from both texts, and recommend fixing whichever side the evidence actually points to —
+            the outline, the prose, or both. Never default to "prose wins" or "outline wins" as a
+            blanket rule.
 
             Return STRICT JSON only, no markdown fence:
-            {"findings":[{"severity":"BLOCKER|MODERATE|MINOR","tenKftClaim":"what the bible/blueprint says","hundredFtReality":"what the chapters actually tell","chapters":["Chapter N — Title"],"recommendation":"which side bends and the minimal change"}]}
+            {"findings":[{"severity":"BLOCKER|MODERATE|MINOR","tenKftClaim":"what the outline/blueprint says","hundredFtReality":"what the chapters actually tell","chapters":["Chapter N — Title"],"recommendation":"which side the evidence points to and the minimal change"}]}
             Severity: BLOCKER = the designed and told stories are different stories on this point;
             MODERATE = a load-bearing detail diverges; MINOR = small drift worth recording.
             """;
 
-        var user = $"STORY: {title} ({nodeCode})\n\n== 10,000 FT — HAND-AUTHORED BIBLE ==\n{bible}\n\n" +
+        var user = $"STORY: {title} ({nodeCode})\n\n== 10,000 FT — HAND-AUTHORED OUTLINE ==\n{outline}\n\n" +
                    $"== 10,000 FT — BLUEPRINT HEADLINE ==\n{blueprintHeadline}\n\n" +
                    $"== 100 FT — CHAPTER SYNOPSES (from live prose) ==\n{chapterBlock}";
 
@@ -171,7 +175,7 @@ public sealed class AltitudeAuditService(
         var sb = new StringBuilder();
         sb.AppendLine($"# {nodeCode} — Altitude Agreement Audit ({DateTime.UtcNow:yyyy-MM-dd})");
         sb.AppendLine();
-        sb.AppendLine($"Story: **{title}** (`{slug}`) — designed (bible + blueprint) vs told ({chapterCount} chapter synopses).");
+        sb.AppendLine($"Story: **{title}** (`{slug}`) — designed (outline + blueprint) vs told ({chapterCount} chapter synopses).");
         sb.AppendLine($"Blueprint headline: {blueprintHeadline}");
         sb.AppendLine();
         if (parsed.Count == 0)

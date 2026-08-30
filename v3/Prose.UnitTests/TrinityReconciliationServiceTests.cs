@@ -150,9 +150,9 @@ public class TrinityReconciliationServiceTests
 
     // ── ResolveClaimBookNodeIdAsync — cross-book contradiction-group targeting ──
     // GetContradictionGroups groups purely by (EntityId, Predicate), not by book, so a losing
-    // bible claim from a DIFFERENT book than the one currently being reconciled can land in the
+    // outline claim from a DIFFERENT book than the one currently being reconciled can land in the
     // same group (a crossover character asserted in two books). Found live 2026-08-19: patching
-    // via the outer book's NodeId silently targeted the wrong book's bible and always refused.
+    // via the outer book's NodeId silently targeted the wrong book's outline and always refused.
 
     [Test]
     public async Task ResolveClaimBookNodeIdAsync_SameBookSlug_ReturnsCurrentBookNodeId()
@@ -197,14 +197,14 @@ public class TrinityReconciliationServiceTests
     // ── RevertDecisionAsync — ledger-resolution dispatch ─────────────────────
 
     [Test]
-    public async Task RevertDecisionAsync_BibleSectionMechanism_RestoresContentAndFlipsLedgerBackToNew()
+    public async Task RevertDecisionAsync_OutlineSectionMechanism_RestoresContentAndFlipsLedgerBackToNew()
     {
         var (bookId, _) = await SeedBookWithChapterAsync();
         var originalContent = "Rook has dark red hair.";
         await canonDocs.SetNodeOutlineSectionAsync(bookId, "Characters", originalContent);
 
         // Seed the ledger state as if a real ReconcileContradictionGroupAsync already ran:
-        // winner (prose, "platinum blonde") CANONICAL, loser (bible, "dark red") REJECTED.
+        // winner (prose, "platinum blonde") CANONICAL, loser (outline, "dark red") REJECTED.
         var winner = continuityStore.Upsert(new ContinuityClaim
         {
             EntityId = "e1", EntityName = "Rook", EntityKind = "person", Predicate = "hair_color",

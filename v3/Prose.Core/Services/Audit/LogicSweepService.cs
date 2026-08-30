@@ -10,7 +10,7 @@ namespace Prose.Core.Services.Audit;
 /// <summary>
 /// Codifies docs/LOGIC.md's six-dimension sweep (SS-A44) as six independent
 /// <see cref="ILlmAuditRule"/>s on the shared <see cref="AuditRunner"/> — causality chain,
-/// knowledge states, timeline, plant/payoff (two-way), orphan references, bible agreement.
+/// knowledge states, timeline, plant/payoff (two-way), orphan references, outline agreement.
 ///
 /// <b>Honest scope note:</b> this is a single LLM call per dimension over the WHOLE node's
 /// prose (truncated for an oversized book, like BookAuditService's ClampProse). The
@@ -84,9 +84,9 @@ public class LogicSweepService(
             .ThenBy(b => b.SortKey)
             .ToList();
 
-        // Chapter titles for the leaf nodes these beats hang off. The bible cites locked scenes by
+        // Chapter titles for the leaf nodes these beats hang off. The outline cites scenes by
         // CHAPTER while Beat.Number is not chapter-local, so without this the model can't tell
-        // which chapter it's reading and BibleAgreementRule compares a beat to the wrong chapter's
+        // which chapter it's reading and OutlineAgreementRule compares a beat to the wrong chapter's
         // lock — see AuditBeat.ChapterTitle for the two sweeps that diagnosed this.
         var chapterTitles = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => nodeIds.Contains(n.Id))
@@ -139,7 +139,7 @@ public class LogicSweepService(
             new TimelineRule(),
             new PlantPayoffRule(),
             new OrphanReferencesRule(),
-            new BibleAgreementRule(),
+            new OutlineAgreementRule(),
             new InsertedBeatDriftRule(),
         ];
 
@@ -152,7 +152,7 @@ public class LogicSweepService(
     /// <summary>
     /// Blast-radius mini re-check (2026-08-14) — the same five whole-book-agnostic dimensions as
     /// <see cref="RunAsync"/> (causality, knowledge states, timeline, plant/payoff, orphan refs,
-    /// bible agreement), but scoped to a caller-supplied beat-ID subset instead of the whole
+    /// outline agreement), but scoped to a caller-supplied beat-ID subset instead of the whole
     /// book's prose. Exists so a fix pass (an --edit-beat, or the /logic-sweep skill's own Step 5)
     /// can verify its own side effects against its immediate neighbors in the SAME turn, instead
     /// of waiting for the next independent full-book sweep round to catch a regression it
@@ -225,7 +225,7 @@ public class LogicSweepService(
             new TimelineRule(),
             new PlantPayoffRule(),
             new OrphanReferencesRule(),
-            new BibleAgreementRule(),
+            new OutlineAgreementRule(),
         ];
 
         var scopeKey = $"beat:{anchorBeatId:N}:blast";
@@ -401,9 +401,9 @@ public class LogicSweepService(
 
     /// <summary>
     /// True when a returned entry is the model reporting a NON-defect — either a confirmation
-    /// that prose and bible agree, or an admission it could not check something because the
+    /// that prose and outline agree, or an admission it could not check something because the
     /// relevant beats weren't in its window. Neither is a finding, and persisting them is worse
-    /// than useless: a reader who sees a BLOCKER whose evidence says "this matches the bible
+    /// than useless: a reader who sees a BLOCKER whose evidence says "this matches the outline
     /// exactly" stops believing the other findings too.
     ///
     /// Phrase-matched deliberately narrowly, on explicit VERDICT language rather than anything
@@ -436,6 +436,9 @@ public class LogicSweepService(
             "matches the bible",
             "prose is consistent with the bible",
             "consistent with the bible's",
+            "matches the outline",
+            "prose is consistent with the outline",
+            "consistent with the outline's",
         ];
         if (verdicts.Any(v => hay.Contains(v, StringComparison.Ordinal))) return true;
 
@@ -454,7 +457,7 @@ public class LogicSweepService(
 
     /// <summary>The per-beat header the audit prompts see. Carries the chapter title when known
     /// ("[Beat #3033 | Chapter 30 — The Gray Suit]") so a rule comparing prose against a
-    /// chapter-keyed bible lock can tell which chapter it is actually reading — Beat.Number alone
+    /// chapter-keyed outline passage can tell which chapter it is actually reading — Beat.Number alone
     /// does not track chapter order on a large or restructured book. Falls back to the bare
     /// "[Beat #N]" form when no chapter title is available, which is also what every existing
     /// test fixture and the narrow blast-radius path produce.</summary>
@@ -478,7 +481,7 @@ public class LogicSweepService(
                 try
                 {
                     // beat_number is documented to the LLM as "<int or null>" for whole-book
-                    // findings (plant/payoff, bible agreement) — JsonElement.TryGetInt32 THROWS
+                    // findings (plant/payoff, outline agreement) — JsonElement.TryGetInt32 THROWS
                     // InvalidOperationException on a JSON null (it doesn't fail soft like the
                     // name implies), so this must check ValueKind first or one whole-book finding
                     // silently discards every other finding in the same response via the outer
@@ -510,11 +513,11 @@ public class LogicSweepService(
                     // Post-hoc catch for self-declared non-findings, the companion to the prompt's
                     // "an entry is a defect or it does not exist" rule (prevention) — same pairing
                     // as the hallucinated-citation guard above. Models persistently return
-                    // CONFIRMATIONS ("this matches the bible exactly", "no contradiction") and
+                    // CONFIRMATIONS ("this matches the outline exactly", "no contradiction") and
                     // NON-VERIFICATIONS ("cannot verify — those beats weren't provided") as
                     // findings, sometimes at BLOCKER severity: a 2026-08-24 VIGL round filed a
                     // BLOCKER whose own evidence concluded "the prose is consistent with the
-                    // bible's locked kill choreography." Persisting those destroys trust in the
+                    // outline's locked kill choreography." Persisting those destroys trust in the
                     // whole instrument, which is what made every prior report say "don't run
                     // --until-dry on this book."
                     if (IsSelfDeclaredNonFinding(evidence, fix)) continue;
@@ -752,35 +755,36 @@ public class LogicSweepService(
         public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
     }
 
-    sealed class BibleAgreementRule : ILlmAuditRule
+    sealed class OutlineAgreementRule : ILlmAuditRule
     {
-        public string Key => "bible_agreement";
-        public string Title => "Bible agreement";
+        public string Key => "outline_agreement";
+        public string Title => "Outline agreement";
         public int MaxResponseTokens => 4096;
 
         public (string System, string User) BuildPrompt(AuditContext ctx)
         {
-            var bible = ctx.Extra.TryGetValue("outline", out var b) ? (string?)b : null;
-            var bibleBlock = string.IsNullOrWhiteSpace(bible)
+            var outlineText = ctx.Extra.TryGetValue("outline", out var b) ? (string?)b : null;
+            var outlineBlock = string.IsNullOrWhiteSpace(outlineText)
                 ? "\n\n(No NodeOutline recorded for this node.)"
-                : $"\n\nNode bible (hand-authored facts, arc, locks):\n{Clamp(bible!, 30000)}";
+                : $"\n\nNode outline (hand-authored facts, arc, structural notes):\n{Clamp(outlineText!, 30000)}";
             return (
                 $$"""
-                You are auditing one dimension of a story: BIBLE AGREEMENT.
-                The prose and the node's hand-authored bible must tell the same story. Find
-                contradictions — a locked fact the bible states that the prose contradicts, or
-                prose that establishes something the bible doesn't know about and should.
-                Per house rule: prose wins on facts (the bible is the one that's stale) UNLESS
-                the bible is explicitly marking something as a locked constraint the prose must
-                honor — say which side you think is stale in your evidence.{{bibleBlock}}
+                You are auditing one dimension of a story: OUTLINE AGREEMENT.
+                The prose and the node's hand-authored outline must tell the same story. Find
+                contradictions — a fact the outline states that the prose contradicts, or prose
+                that establishes something the outline doesn't know about and should.
+                No side is automatically authoritative (Outline ⇄ Book ⇄ Entities is a three-way
+                symbiosis; Trinity reconciliation is the canonical case-by-case arbiter). For each
+                contradiction, say which side you think is stale and WHY, citing evidence from
+                both — never apply a blanket "prose wins" or "outline wins" rule.{{outlineBlock}}
 
                 CHAPTER ATTRIBUTION — READ THIS BEFORE COMPARING ANYTHING.
                 Each beat below is labeled "[Beat #N | Chapter Title]". The beat NUMBER is a
                 global id: it is NOT chapter-local and does NOT tell you which chapter a beat is
                 in, nor its reading order. Only the chapter title in that header does.
-                The bible describes its locked scenes BY CHAPTER. So before reporting that a beat
-                contradicts a bible passage, confirm the beat's own chapter title matches the
-                chapter the bible passage is talking about. If the bible describes a scene as
+                The outline describes its scenes BY CHAPTER. So before reporting that a beat
+                contradicts an outline passage, confirm the beat's own chapter title matches the
+                chapter the outline passage is talking about. If the outline describes a scene as
                 happening in one chapter and the beat you are looking at is labeled a different
                 chapter, those are two DIFFERENT scenes — that is not a contradiction, and
                 reporting it as one is the single most common false positive on this dimension.
@@ -788,22 +792,21 @@ public class LogicSweepService(
 
                 AN ENTRY IS A DEFECT OR IT DOES NOT EXIST. Two kinds of non-finding keep getting
                 reported; never emit either one:
-                1. CONFIRMATIONS. If bible and prose agree, say nothing at all about it. Do not
-                   emit an entry whose evidence concludes "this is consistent", "no fix needed",
-                   or "the lock is not contradicted".
-                2. NON-VERIFICATION. You are shown an excerpt, not the whole book. If checking a
-                   bible claim would need a beat you were not given, STAY SILENT about it. Do not
+                1. CONFIRMATIONS. If outline and prose agree, say nothing at all about it. Do not
+                   emit an entry whose evidence concludes "this is consistent" or "no fix needed".
+                2. NON-VERIFICATION. You are shown an excerpt, not the whole book. If checking an
+                   outline claim would need a beat you were not given, STAY SILENT about it. Do not
                    emit an entry saying you "cannot verify", that a beat "is not visible in the
                    beats provided", or asking to be given more beats. A gap in what you were shown
                    is not a defect in the book, and reporting it as one is a false positive.
                 Report a contradiction only when you can see BOTH sides of it in front of you: the
-                bible text, and the prose that actually conflicts with it.
+                outline text, and the prose that actually conflicts with it.
 
                 Return ONLY a JSON array (no prose wrapper), one entry per real problem found:
-                [{"beat_number": <int or null>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "quote the bible claim and the contradicting prose, name the beat's chapter and the bible passage's chapter, and say which side is stale", "fix": "one concrete sentence or null"}]
-                Return [] if bible and prose agree, or if you were not shown enough to judge.
+                [{"beat_number": <int or null>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "quote the outline claim and the contradicting prose, name the beat's chapter and the outline passage's chapter, and say which side appears stale", "fix": "one concrete sentence or null"}]
+                Return [] if outline and prose agree, or if you were not shown enough to judge.
                 Returning [] is a correct and common answer. Do not invent problems you cannot
-                cite specific bible text and prose for. When uncertain, err toward fewer findings.
+                cite specific outline text and prose for. When uncertain, err toward fewer findings.
                 """,
                 $"Beats:\n{ctx.Prose}");
         }

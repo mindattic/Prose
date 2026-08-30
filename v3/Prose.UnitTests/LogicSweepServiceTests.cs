@@ -4,7 +4,7 @@ namespace Prose.UnitTests;
 
 /// <summary>
 /// Tests for LogicSweepService's deterministic, LLM-free helper. The six audit dimensions
-/// themselves (causality, knowledge states, timeline, plant/payoff, orphan references, bible
+/// themselves (causality, knowledge states, timeline, plant/payoff, orphan references, outline
 /// agreement) are each a single LLM call and aren't practically unit-testable, but
 /// <c>ParseFindingsArray</c> — the ONE parser all six dimensions share for their untrusted LLM
 /// JSON output — is pure logic worth covering directly. Made <c>internal</c> (was <c>private</c>);
@@ -97,7 +97,7 @@ public class LogicSweepServiceTests
     [Test]
     public void ParseFindingsArray_NullBeatNumber_LocationIsNull()
     {
-        // plant/payoff and bible-agreement findings can be whole-node (beat_number: null)
+        // plant/payoff and outline-agreement findings can be whole-node (beat_number: null)
         var raw = """[{"beat_number":null,"severity":"moderate","evidence":"whole-book issue","fix":null}]""";
         var results = LogicSweepService.ParseFindingsArray("plant_payoff", "Plant/payoff ledger", raw, Beats);
 
@@ -298,16 +298,16 @@ public class LogicSweepServiceTests
     // ── Self-declared non-findings (2026-08-24) ─────────────────────────────────
     // Models persistently return confirmations and non-verifications as findings, sometimes at
     // BLOCKER severity — a real VIGL round filed a BLOCKER whose evidence concluded "the prose is
-    // consistent with the bible's locked kill choreography." Persisting those makes every other
+    // consistent with the outline's locked kill choreography." Persisting those makes every other
     // finding untrustworthy, which is what made prior reports say "don't run --until-dry."
 
     [Test]
     public void ParseFindingsArray_ConfirmationReportedAsFinding_IsDropped()
     {
         var raw = """
-            [{"beat_number":1,"severity":"blocker","evidence":"This matches the bible's description of the kill sequence exactly. The prose is consistent with the bible's locked kill choreography.","fix":null}]
+            [{"beat_number":1,"severity":"blocker","evidence":"This matches the outline's description of the kill sequence exactly. The prose is consistent with the outline's locked kill choreography.","fix":null}]
             """;
-        var results = LogicSweepService.ParseFindingsArray("bible_agreement", "Bible agreement", raw, Beats);
+        var results = LogicSweepService.ParseFindingsArray("outline_agreement", "Outline agreement", raw, Beats);
         Assert.That(results, Is.Empty, "a confirmation is not a finding, whatever severity the model stamped on it");
     }
 
@@ -317,7 +317,7 @@ public class LogicSweepServiceTests
         var raw = """
             [{"beat_number":null,"severity":"moderate","evidence":"Cannot verify whether beat #4369 contains the tally; those beats were not provided.","fix":"Provide beats from Ch16 to verify."}]
             """;
-        var results = LogicSweepService.ParseFindingsArray("bible_agreement", "Bible agreement", raw, Beats);
+        var results = LogicSweepService.ParseFindingsArray("outline_agreement", "Outline agreement", raw, Beats);
         Assert.That(results, Is.Empty, "a gap in the model's window is not a defect in the book");
     }
 
@@ -325,9 +325,9 @@ public class LogicSweepServiceTests
     public void ParseFindingsArray_NoFixNeededInTheFixField_IsDropped()
     {
         var raw = """
-            [{"beat_number":1,"severity":"minor","evidence":"Beat one text.","fix":"No fix needed; bible and prose align on the separation lock."}]
+            [{"beat_number":1,"severity":"minor","evidence":"Beat one text.","fix":"No fix needed; outline and prose align on the separation."}]
             """;
-        var results = LogicSweepService.ParseFindingsArray("bible_agreement", "Bible agreement", raw, Beats);
+        var results = LogicSweepService.ParseFindingsArray("outline_agreement", "Outline agreement", raw, Beats);
         Assert.That(results, Is.Empty);
     }
 
@@ -338,7 +338,7 @@ public class LogicSweepServiceTests
         var raw = """
             [{"beat_number":2,"severity":"blocker","evidence":"Beat two text. states the grace period is eight days, but the sale on day nine is called inside the window.","fix":"Change eight to ten."}]
             """;
-        var results = LogicSweepService.ParseFindingsArray("bible_agreement", "Bible agreement", raw, Beats);
+        var results = LogicSweepService.ParseFindingsArray("outline_agreement", "Outline agreement", raw, Beats);
         Assert.That(results, Has.Count.EqualTo(1));
         Assert.That(results[0].Severity, Is.EqualTo("BLOCKER"));
     }
@@ -380,11 +380,11 @@ public class LogicSweepServiceTests
     }
 
     // ── Chapter attribution in the beat header (2026-08-23) ──────────────────────
-    // The bible cites locked scenes BY CHAPTER, but Beat.Number is not chapter-local, so a
-    // prompt labelling prose with only "[Beat #N]" let BibleAgreementRule compare a beat against
-    // a different chapter's lock and report a mismatch between two unrelated things. Diagnosed on
-    // both BCODA's and VIGL's 2026-08-22 sweeps (beat #3033 is really in Ch30, matching the very
-    // Ch30 lock the finding claimed it contradicted) and recommended for fix in both reports.
+    // The outline cites scenes BY CHAPTER, but Beat.Number is not chapter-local, so a
+    // prompt labelling prose with only "[Beat #N]" let OutlineAgreementRule compare a beat against
+    // a different chapter's description and report a mismatch between two unrelated things. Diagnosed
+    // on both BCODA's and VIGL's 2026-08-22 sweeps (beat #3033 is really in Ch30, matching the very
+    // Ch30 passage the finding claimed it contradicted) and recommended for fix in both reports.
 
     [Test]
     public void BuildClampedProse_WhenBeatHasChapterTitle_LabelsTheBeatWithItsChapter()
@@ -397,7 +397,7 @@ public class LogicSweepServiceTests
         var result = LogicSweepService.BuildClampedProse(beats);
 
         Assert.That(result, Does.Contain("[Beat #3033 | Chapter 30 — The Gray Suit]"),
-            "the model can only match prose to a chapter-keyed bible lock if the header names the chapter");
+            "the model can only match prose to a chapter-keyed outline passage if the header names the chapter");
     }
 
     [Test]
