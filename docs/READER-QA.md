@@ -37,7 +37,7 @@ The legacy panel machinery is quarantined, not deleted — `--review-node` /
 `review_book` still run behind the SS-A44 VotingGate on explicit request only, and
 the 1024-persona library lives on in the MindAttic.Legion package for other projects.
 
-## 2. The four instruments {#SS-RQA-2}
+## 2. The five instruments {#SS-RQA-2}
 
 | # | Instrument | What it measures | Cost model |
 |---|---|---|---|
@@ -45,15 +45,22 @@ the 1024-persona library lives on in the MindAttic.Legion package for other proj
 | 2 | **Craft/delight checklist** (`prose --craft-checklist`) | Binary checks per beat: CRAFT.md §8 DON'Ts (literal) + "≥1 applicable DELIGHT move lands" (short connective beats exempt), rules parsed live from CanonDocumentSections. Book-level move-monotony counters implement DELIGHT §14 — never "all 13 moves per beat". | Hash-gated per beat (`BeatChecklistResults`, Beat.TextHash + rule-set hash) — only changed beats re-bill. |
 | 3 | **Pairwise edit gate** (`prose --duel`) | Before-vs-after for every splice: cross-family jury (one lens per live model family; Claude tiers fill in when families are dead), each lens judging BOTH presentation orders — an order-flipped verdict is discarded as noise. REPLACE ≥2 better + 0 worse. | Verdicts cached by text-hash pair (`BeatDuelVerdicts`). SS-A44: duels ARE votes — `--allow-votes` required. |
 | 4 | **Gripe jury** (`prose --reader-qa --gripe-pass`) | 3–5 cross-family full-read readers emit ONLY page-anchored complaints (beat + verbatim quote + what's wrong). Deterministic quote-grounding kills hallucinated citations free; a Sonnet arbiter confirms each against the beat text; triage blocker/moderate/minor. | Fresh per run (readers should re-read changed books); arbitration only on unique grounded complaints. |
+| 5 | **Full-Order Read** (`prose --reader-qa --full-order-read`) | 3–5 cross-family readers narrate ONE continuous read start-to-finish and flag only where their own engagement died — the beat it started, and whether it ever recovered. NOT a complaint list: no craft judgment, only "where did I stop caring." Severity comes from the recovery signal (never recovers = blocker; recovers after a long stretch = moderate; brief dip = minor). | Fresh per run, same as instrument 4; arbitration only on unique grounded spans. |
 
-All four file into the **Findings** table (categories `ComprehensionDefect`,
+All five file into the **Findings** table (categories `ComprehensionDefect`,
 `CraftChecklist`, `ReaderGripe`) with delete-then-recreate supersession per run —
 `list_findings` / `apply_finding` / `set_finding_status` are the workflow surface.
 Reports land in `audit-outlines-<date>/reader-qa/<SLUG>.md`.
 
-Instruments 1, 2, and 4 (report mode) are **measurements, not votes** — they are
+Instruments 1, 2, 4, and 5 (report mode) are **measurements, not votes** — they are
 outside the SS-A44 VotingGate, same exemption as `craft_checklist` and the logic sweep.
 Instrument 3 and any automated apply arm go through the gate.
+
+**Instrument 5 is a proxy, not the ritual itself (docs/LOGIC.md §10).** The felt-pass doctrine's
+one sacred instrument is a human author's own full-order read at reader speed — an LLM doesn't
+get bored the way a person does, though it can be prompted to notice textual flatness.
+Instrument 5 makes running an *approximation* of that ritual unattended and cheap; it does not
+replace the author actually reading the book straight through before calling it done.
 
 ## 3. Fix discipline {#SS-RQA-3}
 

@@ -165,6 +165,52 @@ public class ReaderQaTools(
         }
     }
 
+    [McpServerTool, Description("Reader-Proxy QA Instrument 5 — the Full-Order Read (docs/LOGIC.md §10): an automated proxy " +
+        "for the felt-pass ritual of reading a book straight through at reader speed and marking only where engagement died. " +
+        "Unlike the gripe jury (a complaint list), each juror narrates a continuous read and reports only the beat where its " +
+        "own attention drifted and whether it ever recovered before the book ended. NO scores, ever. Spans are deduped, " +
+        "quote-grounded deterministically, then Sonnet-arbitrated and severity-triaged from the recovery signal (never " +
+        "recovered = blocker; recovers after a long stretch = moderate; a brief dip = minor). Confirmed spans persist as " +
+        "ReaderGripe findings under their own scope and supersede on re-run without touching the gripe jury's own " +
+        "findings. This is a proxy, not a replacement for an author's own " +
+        "full-order read — an LLM doesn't get bored the way a human reader does, but can be prompted to notice textual " +
+        "flatness. Accepts node id (GUID) or slug.")]
+    public Task<string> reader_qa_full_order_read(
+        [Description("Book node id (GUID) or slug.")] string nodeIdOrSlug,
+        [Description("Jury size (default 4; one seat per live model family, Claude tiers fill in).")] int readers = 4) =>
+        hub.InvokeAsync(nameof(ReaderQaTools), nameof(reader_qa_full_order_readImpl), new { nodeIdOrSlug, readers });
+
+    public async Task<string> reader_qa_full_order_readImpl(
+        string nodeIdOrSlug,
+        int readers = 4)
+    {
+        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
+        if (nodeId == null)
+            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+
+        try
+        {
+            var r = await gripes.RunFullOrderReadAsync(nodeId.Value, readers);
+            return JsonSerializer.Serialize(new
+            {
+                node_id = r.NodeId,
+                slug = r.Slug,
+                title = r.Title,
+                jury = r.ReaderSeats,
+                raw_spans = r.RawSpans,
+                quote_grounding_kills = r.QuoteGroundingKills,
+                findings_filed = r.FindingsFiled,
+                confirmed = r.Confirmed.Select(s => new
+                { s.StartBeat, s.BeatId, s.Severity, s.Voters, s.Note, s.Quote, s.RecoveredAtBeat, s.ArbiterRationale }),
+                rejected = r.Rejected.Select(s => new { s.StartBeat, s.Note, s.RecoveredAtBeat, s.ArbiterRationale }),
+            }, JsonOpts);
+        }
+        catch (Exception ex)
+        {
+            return JsonSerializer.Serialize(new { error = ex.Message }, JsonOpts);
+        }
+    }
+
     /// <summary>
     /// 2026-08-24 consolidation — see the note on <c>BookAuditTools.ResolveNodeAsync</c>. This
     /// copy was the exact "GUID branch fixed, slug branch missed" split the 2026-08-17 pass left

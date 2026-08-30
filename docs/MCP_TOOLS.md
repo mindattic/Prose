@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**286 tools** across **49 tool families.**
+**287 tools** across **49 tool families.**
 
 ## Families
 
@@ -50,7 +50,7 @@
 | [Planning](#planning) | 3 |
 | [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 12 |
-| [Reader Qa](#reader-qa) | 3 |
+| [Reader Qa](#reader-qa) | 4 |
 | [Repository](#repository) | 3 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
@@ -1786,6 +1786,13 @@ Reader-Proxy QA comprehension probes: a cheap model reads each chapter cold (rol
 
 - `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
 - `force` (bool, optional) — Re-probe every chapter even if unchanged (default false).
+
+### `reader_qa_full_order_read`
+
+Reader-Proxy QA Instrument 5 — the Full-Order Read (docs/LOGIC.md §10): an automated proxy for the felt-pass ritual of reading a book straight through at reader speed and marking only where engagement died. Unlike the gripe jury (a complaint list), each juror narrates a continuous read and reports only the beat where its own attention drifted and whether it ever recovered before the book ended. NO scores, ever. Spans are deduped, quote-grounded deterministically, then Sonnet-arbitrated and severity-triaged from the recovery signal (never recovered = blocker; recovers after a long stretch = moderate; a brief dip = minor). Confirmed spans persist as ReaderGripe findings under their own scope and supersede on re-run without touching the gripe jury's own findings. This is a proxy, not a replacement for an author's own full-order read — an LLM doesn't get bored the way a human reader does, but can be prompted to notice textual flatness. Accepts node id (GUID) or slug.
+
+- `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
+- `readers` (int, optional) — Jury size (default 4; one seat per live model family, Claude tiers fill in).
 
 ### `reader_qa_gripe_pass`
 

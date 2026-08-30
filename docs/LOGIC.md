@@ -252,7 +252,11 @@ practices, in order:
    is a property of the *sequence*, not of any single beat (the EVEN1 lesson: a clean-report book
    was later found to have silently dropped its own key beat and hid three more defects, caught
    only by a full linear read). Run it after the ledgers in §9 are clean, in full reading order,
-   at speed, answering exactly one question: *where did I stop caring?*
+   at speed, answering exactly one question: *where did I stop caring?* `prose --reader-qa
+   --full-order-read` (docs/READER-QA.md §2, instrument 5) is an automated proxy for this
+   ritual — cheap, unattended, and useful, but it is not the ritual itself. An LLM doesn't get
+   bored the way a person does; it can be prompted to notice textual flatness, not to replace
+   an author's own read.
 2. **Distance.** Drawer time — weeks between draft and reread, so the cold read is actually cold
    (King's "six weeks in a drawer"). A same-session reread of your own fix pass is not this.
 3. **Weight-by-length, not weight-by-adjective.** When a beat lands flat, the fix is almost never

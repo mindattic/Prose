@@ -41,6 +41,13 @@ public sealed class GripePassService(
     ILogger<GripePassService> log)
 {
     private const string FindingSummaryPrefix = "GRIPE";
+    private const string EngagementFindingSummaryPrefix = "ENGAGEMENT";
+
+    // A dip that recovers within this many beats reads as a brief stumble (minor); beyond it, the
+    // book stayed flat long enough to cost real reader trust (moderate). Never recovering at all
+    // (RecoveredAtBeat null) is categorically worse than either — a dead stretch the book never
+    // pulls out of — so that case is blocker regardless of how far from the end it starts.
+    private const int MinorRecoveryWindowBeats = 3;
 
     public sealed record Gripe(
         int BeatNumber, Guid BeatId, string Quote, string Complaint,
@@ -51,6 +58,19 @@ public sealed class GripePassService(
         Guid NodeId, string Slug, string Title, int Readers, string ReaderSeats,
         IReadOnlyList<Gripe> Confirmed, IReadOnlyList<Gripe> Rejected,
         int RawComplaints, int QuoteGroundingKills, int FindingsFiled);
+
+    /// <summary>One reader's account of where the manuscript lost them and whether it ever got
+    /// them back — the felt-pass unit of measure (docs/LOGIC.md §10), as opposed to
+    /// <see cref="Gripe"/>'s itemized craft complaint.</summary>
+    public sealed record EngagementSpan(
+        int StartBeat, Guid BeatId, string Quote, string Note, int? RecoveredAtBeat,
+        int Voters, string Providers,
+        string Severity /* blocker|moderate|minor */, bool Confirmed, string ArbiterRationale);
+
+    public sealed record EngagementRunResult(
+        Guid NodeId, string Slug, string Title, int Readers, string ReaderSeats,
+        IReadOnlyList<EngagementSpan> Confirmed, IReadOnlyList<EngagementSpan> Rejected,
+        int RawSpans, int QuoteGroundingKills, int FindingsFiled);
 
     public async Task<GripeRunResult> RunAsync(Guid nodeId, int readers = 4, CancellationToken ct = default)
     {
@@ -144,6 +164,109 @@ public sealed class GripePassService(
             slug, raw.Count, grounded.Count, deduped.Count, confirmed.Count, groundingKills);
 
         return new GripeRunResult(nodeId, slug, node.Title, seats.Count,
+            string.Join(" · ", seats.Select(s => $"{s.Provider}:{s.Model}")),
+            confirmed, rejected, raw.Count, groundingKills, confirmed.Count);
+    }
+
+    /// <summary>
+    /// The Full-Order Read (docs/LOGIC.md §10) — an automated proxy for the felt-pass ritual's
+    /// one sacred instrument: reading straight through at reader speed and marking only where
+    /// engagement died. This is deliberately NOT the same instrument as <see cref="RunAsync"/>
+    /// (the gripe jury) — that lists concrete craft complaints; this asks each juror to narrate
+    /// a continuous read and report only where their own attention drifted and whether it came
+    /// back. An LLM doesn't get bored the way a human reader does, but can be prompted to notice
+    /// textual flatness — this makes running an approximation of the ritual unattended and cheap;
+    /// it does not replace an author's own full-order read (docs/READER-QA.md §2, instrument 5).
+    /// Shares every mechanical stage with <see cref="RunAsync"/> (export, jury, quote-grounding,
+    /// dedup, findings persistence) under its own finding scope so neither instrument's re-run
+    /// ever clears the other's findings.
+    /// </summary>
+    public async Task<EngagementRunResult> RunFullOrderReadAsync(Guid nodeId, int readers = 4, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        var slug = node.Slug ?? nodeId.ToString("N");
+
+        var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        var beatRows = await db.BeatNodes.AsNoTracking()
+            .Where(bn => sourceIds.Contains(bn.NodeId) && true && bn.Beat != null)
+            .Select(bn => new { bn.NodeId, bn.SortKey, bn.Beat!.Id, bn.Beat.Text })
+            .ToListAsync(ct);
+        var chapterOrder = sourceIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var ordered = beatRows.OrderBy(b => chapterOrder[b.NodeId]).ThenBy(b => b.SortKey).ToList();
+        if (ordered.Count == 0)
+            return new EngagementRunResult(nodeId, slug, node.Title, 0, "", Array.Empty<EngagementSpan>(), Array.Empty<EngagementSpan>(), 0, 0, 0);
+
+        var export = await exporter.ExportAsync(nodeId, numberBeats: true, ct: ct);
+
+        var seats = await transport.AssignJuryAsync(readers, ct);
+        if (seats.Count == 0)
+            throw new InvalidOperationException("No live jury providers — cannot run a full-order read. Check API keys.");
+
+        var perReader = await Task.WhenAll(seats.Select(async (seat, i) =>
+        {
+            try { return (seat, spans: await ReadForEngagementAsync(seat, export.Markdown, node.Title, ct)); }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "[full-order-read] reader {Provider}/{Model} failed — continuing without it.", seat.Provider, seat.Model);
+                return (seat, spans: new List<RawEngagementSpan>());
+            }
+        }));
+
+        var raw = perReader.SelectMany(r => r.spans.Select(s => (r.seat, s))).ToList();
+
+        int groundingKills = 0;
+        var groundingBeats = ordered.Select(b => (b.Id, BeatMarkup.StripEntityTags(b.Text))).ToList();
+        var grounded = new List<(ReviewLlmTransport.JurySeat Seat, RawEngagementSpan S, Guid BeatId, string BeatText)>();
+        foreach (var (seat, s) in raw)
+        {
+            var result = GroundQuote(groundingBeats, s.StartBeat, s.Quote);
+            if (result == null) { groundingKills++; continue; }
+            var span = result.Value.CorrectedBeatNumber == s.StartBeat ? s : s with { StartBeat = result.Value.CorrectedBeatNumber };
+            grounded.Add((seat, span, result.Value.BeatId, result.Value.BeatText));
+        }
+
+        var deduped = new List<(RawEngagementSpan S, Guid BeatId, string BeatText, List<string> Providers)>();
+        foreach (var g in grounded)
+        {
+            var existing = deduped.FirstOrDefault(d =>
+                d.S.StartBeat == g.S.StartBeat && TokenJaccard(d.S.Note, g.S.Note) > 0.4);
+            if (existing.S != null) existing.Providers.Add(g.Seat.Provider);
+            else deduped.Add((g.S, g.BeatId, g.BeatText, new List<string> { g.Seat.Provider }));
+        }
+
+        var confirmed = new List<EngagementSpan>();
+        var rejected = new List<EngagementSpan>();
+        foreach (var d in deduped)
+        {
+            ct.ThrowIfCancellationRequested();
+            var (isConfirmed, rationale) = await ArbitrateEngagementAsync(d.S, d.BeatText, ct);
+            var severity = DeriveEngagementSeverity(d.S.StartBeat, d.S.RecoveredAtBeat);
+            var span = new EngagementSpan(d.S.StartBeat, d.BeatId, d.S.Quote, d.S.Note, d.S.RecoveredAtBeat,
+                d.Providers.Count, string.Join(",", d.Providers.Distinct()), severity, isConfirmed, rationale);
+            (isConfirmed ? confirmed : rejected).Add(span);
+        }
+
+        // Own scope (`#fullorderread`), never the gripe jury's `node:{slug}` — a re-run of either
+        // instrument must never clear the other's findings.
+        var filePathPrefix = $"node:{slug}#fullorderread";
+        findings.DeleteBySummaryPrefix(filePathPrefix, EngagementFindingSummaryPrefix);
+        foreach (var s in confirmed)
+        {
+            var recovery = s.RecoveredAtBeat is int r ? $"recovered at B{r}" : "never recovered";
+            findings.Upsert(
+                $"{filePathPrefix}/beat:{s.BeatId:N}", chapterId: null, FindingCategory.ReaderGripe,
+                s.Severity switch { "blocker" => FindingSeverity.High, "moderate" => FindingSeverity.Medium, _ => FindingSeverity.Low },
+                $"{EngagementFindingSummaryPrefix} beat #{s.StartBeat} ({s.Voters} voter(s), {recovery}): {s.Note}",
+                snippet: s.Quote,
+                suggestedFix: null);
+        }
+
+        log.LogInformation("[full-order-read] {Slug}: {Raw} raw → {Grounded} grounded → {Unique} unique → {Confirmed} confirmed ({Kills} quote-grounding kills).",
+            slug, raw.Count, grounded.Count, deduped.Count, confirmed.Count, groundingKills);
+
+        return new EngagementRunResult(nodeId, slug, node.Title, seats.Count,
             string.Join(" · ", seats.Select(s => $"{s.Provider}:{s.Model}")),
             confirmed, rejected, raw.Count, groundingKills, confirmed.Count);
     }
@@ -253,7 +376,98 @@ public sealed class GripePassService(
         catch (JsonException) { return (false, "minor", "(arbiter returned non-JSON — rejected by default)"); }
     }
 
+    // ── one reader's full-order read (engagement, not complaints) ─────────────────
+
+    private sealed record RawEngagementSpan(int StartBeat, int? RecoveredAtBeat, string Quote, string Note);
+
+    private async Task<List<RawEngagementSpan>> ReadForEngagementAsync(
+        ReviewLlmTransport.JurySeat seat, string manuscript, string title, CancellationToken ct)
+    {
+        const string system = """
+            You are reading a complete novel manuscript, straight through, the way a stranger
+            would — not auditing it for facts, auditing your own engagement. Beats are numbered
+            [Beat N].
+
+            Report ONLY the moment(s) where you noticed your own attention drift or your interest
+            die — where you would have started skimming, or put the book down, if this weren't
+            your job. For each such span, name the beat where it started, and whether your
+            interest ever came back before the book ended (name the beat where it recovered, or
+            say it never did).
+
+            Do NOT report: a slow start that pays off later, a deliberately quiet chapter that
+            earns its quiet, or a scene you simply didn't enjoy stylistically. Report only genuine
+            flatness — a stretch where nothing was actually at stake, or the prose itself went inert.
+
+            Quality over quantity — most books have zero or one such span; several is unusual and
+            should make you suspect you're pattern-matching rather than genuinely losing interest.
+
+            Return STRICT JSON only, no markdown fence:
+            {"spans":[{"startBeat":N,"recoveredAtBeat":N,"quote":"verbatim text from the beat where it started","note":"what specifically lost you"}]}
+            Use recoveredAtBeat:null if interest never came back before the book ended.
+            """;
+        var raw = await transport.CallSeatAsync(seat, system, $"NOVEL: {title}\n\n{manuscript}",
+            maxTokens: 2500, temperature: 0.4, ct);
+        raw = StripFence(raw);
+        try
+        {
+            using var doc = JsonDocument.Parse(raw);
+            var list = new List<RawEngagementSpan>();
+            if (doc.RootElement.TryGetProperty("spans", out var arr) && arr.ValueKind == JsonValueKind.Array)
+                foreach (var s in arr.EnumerateArray())
+                    list.Add(new RawEngagementSpan(
+                        s.TryGetProperty("startBeat", out var n) && n.ValueKind == JsonValueKind.Number ? n.GetInt32() : -1,
+                        s.TryGetProperty("recoveredAtBeat", out var rb) && rb.ValueKind == JsonValueKind.Number ? rb.GetInt32() : null,
+                        s.TryGetProperty("quote", out var q) ? q.GetString() ?? "" : "",
+                        s.TryGetProperty("note", out var m) ? m.GetString() ?? "" : ""));
+            return list.Where(s => !string.IsNullOrWhiteSpace(s.Note)).ToList();
+        }
+        catch (JsonException)
+        {
+            log.LogWarning("[full-order-read] reader {Provider} returned non-JSON — 0 spans taken.", seat.Provider);
+            return new List<RawEngagementSpan>();
+        }
+    }
+
+    private async Task<(bool Confirmed, string Rationale)> ArbitrateEngagementAsync(
+        RawEngagementSpan s, string beatText, CancellationToken ct)
+    {
+        const string system = """
+            You arbitrate one reader's claim that their engagement died at a specific beat,
+            against the actual text there.
+            Confirm it ONLY if the text genuinely goes flat or inert at that point — nothing at
+            stake, no forward pull, or prose that stalls. Reject a stylistic preference, and
+            reject a deliberate slow-burn the text itself is clearly building toward something
+            with (tension accruing even if the surface action is quiet).
+            Return STRICT JSON only: {"confirmed":true,"rationale":"one sentence"}
+            """;
+        var raw = await llm.GenerateAsync(system,
+            $"WHERE ENGAGEMENT DIED: {s.Note}\nCITED QUOTE: {s.Quote}\n\nBEAT TEXT:\n{beatText}",
+            temperature: 0.1, maxTokens: 200, model: settings.ComprehensionArbiterModel, ct: ct);
+        raw = StripFence(raw);
+        try
+        {
+            using var doc = JsonDocument.Parse(raw);
+            var root = doc.RootElement;
+            return (
+                root.TryGetProperty("confirmed", out var cf) && cf.ValueKind == JsonValueKind.True,
+                root.TryGetProperty("rationale", out var r) ? r.GetString() ?? "" : "");
+        }
+        catch (JsonException) { return (false, "(arbiter returned non-JSON — rejected by default)"); }
+    }
+
     // ── helpers ────────────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Severity for one confirmed engagement span, from the recovery signal alone (the arbiter
+    /// only confirms genuineness — it never sets severity, unlike <see cref="ArbitrateAsync"/>'s
+    /// gripe-jury counterpart). Never recovering before the book ends is categorically worse than
+    /// any recovered dip, however long: a book that never pulls itself back is the only case
+    /// that can't be waved off as "the middle sagged a little."
+    /// </summary>
+    internal static string DeriveEngagementSeverity(int startBeat, int? recoveredAtBeat) =>
+        recoveredAtBeat is int r
+            ? (r - startBeat <= MinorRecoveryWindowBeats ? "minor" : "moderate")
+            : "blocker";
 
     /// <summary>
     /// Grounds a reader-cited quote against the manuscript. Returns null (grounding kill) when

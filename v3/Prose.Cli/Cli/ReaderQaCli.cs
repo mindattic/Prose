@@ -8,7 +8,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>prose --reader-qa (--slug &lt;slug&gt; | --all) [--force] [--json]</c>
+/// <c>prose --reader-qa (--slug &lt;slug&gt; | --all) [--gripe-pass|--full-order-read [--readers N]] [--force] [--json]</c>
 ///
 /// Reader-Proxy QA (docs/READER-QA.md) — the default reader-facing quality
 /// instrument, replacing persona score panels. Phase 1 runs comprehension probes:
@@ -31,6 +31,7 @@ public static class ReaderQaCli
         bool force = args.Contains("--force");
         bool json = args.Contains("--json");
         bool gripePass = args.Contains("--gripe-pass");
+        bool fullOrderRead = args.Contains("--full-order-read");
         int readers = 4;
         for (int i = 0; i < args.Length; i++)
         {
@@ -40,12 +41,17 @@ public static class ReaderQaCli
 
         if (!all && string.IsNullOrWhiteSpace(slug))
         {
-            Console.Error.WriteLine("Usage: prose --reader-qa (--slug <slug> | --all) [--gripe-pass [--readers N]] [--force] [--json]");
+            Console.Error.WriteLine("Usage: prose --reader-qa (--slug <slug> | --all) [--gripe-pass|--full-order-read [--readers N]] [--force] [--json]");
             return 2;
         }
         if (gripePass && all)
         {
             Console.Error.WriteLine("[reader-qa] --gripe-pass runs one book at a time (--slug).");
+            return 2;
+        }
+        if (fullOrderRead && all)
+        {
+            Console.Error.WriteLine("[reader-qa] --full-order-read runs one book at a time (--slug).");
             return 2;
         }
 
@@ -82,6 +88,31 @@ public static class ReaderQaCli
                 Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(gr,
                     new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
             return gr.FindingsFiled > 0 ? 1 : 0;
+        }
+
+        if (fullOrderRead)
+        {
+            var gripes = services.GetRequiredService<GripePassService>();
+            var (fid, ftitle) = targets[0];
+            Console.WriteLine($"[reader-qa] {ftitle} — full-order read ({readers} readers, findings only, no scores)…");
+            GripePassService.EngagementRunResult fr;
+            try { fr = await gripes.RunFullOrderReadAsync(fid, readers); }
+            catch (Exception ex) { Console.Error.WriteLine($"[reader-qa]   FAILED: {ex.Message}"); return 2; }
+
+            Console.WriteLine($"[reader-qa]   jury: {fr.ReaderSeats}");
+            Console.WriteLine($"[reader-qa]   {fr.RawSpans} raw → {fr.QuoteGroundingKills} quote-grounding kill(s) → " +
+                              $"{fr.Confirmed.Count} confirmed, {fr.Rejected.Count} rejected by arbiter.");
+            foreach (var s in fr.Confirmed.OrderBy(s => s.StartBeat))
+            {
+                var recovery = s.RecoveredAtBeat is int r ? $"recovered B{r}" : "never recovered";
+                Console.WriteLine($"      [{s.Severity.ToUpperInvariant()}] beat #{s.StartBeat} ({s.Voters}v, {recovery}): {s.Note}");
+            }
+            Console.WriteLine($"[reader-qa]   {fr.FindingsFiled} finding(s) filed (Category=ReaderGripe). Apply via " +
+                              $"update_beat_text + prose --duel, or apply_finding.");
+            if (json)
+                Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(fr,
+                    new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+            return fr.FindingsFiled > 0 ? 1 : 0;
         }
 
         var anyDefects = false;
