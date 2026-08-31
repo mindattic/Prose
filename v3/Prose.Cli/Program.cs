@@ -149,6 +149,11 @@ if (UniverseBootstrap.RequestedSlug == null
         // CreateUniverseCli (2026-08-30): inserts a brand-new Universe row keyed by its own
         // --slug; there is no existing universe to scope to yet.
         "--create-universe",
+        // GrepBeatsCli (2026-08-31): plain substring scan over every Beat.Text corpus-wide.
+        // Beats itself carries no UniverseId column at all — the whole point of a corpus-wide
+        // defect check (e.g. "did this leaked-metadata bug hit other books too") is to see every
+        // universe in one pass, same rationale as --check-text-integrity above.
+        "--grep-beats",
         // MoveNodeUniverseCli (2026-08-30): resolves its source node via NodeRefResolver
         // (IgnoreQueryFilters, same shape as --merge-entity/--reparent-node) and its destination
         // via an explicit --to-universe slug — same "resolves its own per-row UniverseId" shape
@@ -253,6 +258,26 @@ if (args.Contains("--add-character"))
 if (args.Contains("--add-place"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("AddPlaceCli", args);
+    return;
+}
+
+// CLI mode: read a Place/District's full DistrictData record by exact name — the read-side
+// counterpart to --add-place, so a rename/edit can round-trip the existing record instead of
+// upserting blind and clobbering fields the caller didn't know about.
+//   prose --get-place --name "<exact name>" [--print-raw]
+if (args.Contains("--get-place"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GetPlaceCli", args);
+    return;
+}
+
+// CLI mode: plain substring search over every Beat.Text corpus-wide (all universes) —
+// read-only, no LLM cost. Built to check whether a defect found in one book (e.g. leaked
+// LLM repair-pass scaffolding) also hit others.
+//   prose --grep-beats --pattern "<text>" [--case-sensitive]
+if (args.Contains("--grep-beats"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GrepBeatsCli", args);
     return;
 }
 
