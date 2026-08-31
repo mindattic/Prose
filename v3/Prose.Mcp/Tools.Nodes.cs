@@ -1384,31 +1384,52 @@ public class NodeTools
         "Read a book's beats directly, in reading order, with ids/titles/text - no --publish-md " +
         "export round-trip required. The 'Writer' capability: browse prose without exporting first. " +
         "Unlike print_book (plain joined text only), this returns structured per-beat rows and " +
-        "supports a from/to range.")]
+        "supports a from/to range, or direct lookup of specific beats by their global Beat.Number " +
+        "(the id logic-sweep findings quote, e.g. 'Beat #14664') via numbersCsv, which takes " +
+        "precedence over from/to when both are given.")]
     public Task<string> ReadBeats(
         [Description("Node Guid id or slug.")] string idOrSlug,
         [Description("1-based position to start at (default 1).")] int? from = null,
-        [Description("1-based position to end at, inclusive (default: last beat).")] int? to = null) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(ReadBeatsImpl), new { idOrSlug, from, to });
+        [Description("1-based position to end at, inclusive (default: last beat).")] int? to = null,
+        [Description("Optional comma-separated Beat.Number values to look up directly, ignoring from/to.")] string? numbersCsv = null) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(ReadBeatsImpl), new { idOrSlug, from, to, numbersCsv });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> ReadBeatsImpl(string idOrSlug, int? from, int? to)
+    public async Task<string> ReadBeatsImpl(string idOrSlug, int? from, int? to, string? numbersCsv)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
         var ordered = await workbench.GetOrderedBeatsAsync(node.Id);
-        var from0 = Math.Max(0, (from ?? 1) - 1);
-        var to0 = Math.Min(ordered.Count - 1, (to ?? ordered.Count) - 1);
-        var slice = from0 <= to0 ? ordered.Skip(from0).Take(to0 - from0 + 1).ToList() : [];
 
-        var payload = slice.Select((ob, i) => new
+        List<(int position, Beat Beat)> slice;
+        var numbers = string.IsNullOrWhiteSpace(numbersCsv)
+            ? null
+            : numbersCsv.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .Select(s => int.TryParse(s, out var n) ? n : (int?)null)
+                .Where(n => n.HasValue).Select(n => n!.Value).ToHashSet();
+        if (numbers is { Count: > 0 })
         {
-            position = from0 + i + 1,
-            id = ob.Beat.Id,
-            title = ob.Beat.Title,
-            kind = ob.Beat.Kind,
-            text = ob.Beat.Text,
+            slice = ordered.Select((ob, i) => (position: i + 1, ob.Beat))
+                .Where(x => numbers.Contains(x.Beat.Number)).ToList();
+        }
+        else
+        {
+            var from0 = Math.Max(0, (from ?? 1) - 1);
+            var to0 = Math.Min(ordered.Count - 1, (to ?? ordered.Count) - 1);
+            slice = from0 <= to0
+                ? ordered.Skip(from0).Take(to0 - from0 + 1).Select((ob, i) => (position: from0 + i + 1, ob.Beat)).ToList()
+                : [];
+        }
+
+        var payload = slice.Select(x => new
+        {
+            position = x.position,
+            number = x.Beat.Number,
+            id = x.Beat.Id,
+            title = x.Beat.Title,
+            kind = x.Beat.Kind,
+            text = x.Beat.Text,
         });
         return JsonSerializer.Serialize(new { nodeId = node.Id, slug = node.Slug, total = ordered.Count, beats = payload }, CanonTools.JsonOpts);
     }

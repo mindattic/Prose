@@ -8,9 +8,12 @@ namespace Prose.Cli;
 
 /// <summary>
 /// <c>prose --read-beats (--slug &lt;slug&gt; | --id &lt;guid&gt;) [--from N] [--to N]
-/// [--format text|json]</c> — read a book's beats directly, in reading order, with no
-/// <c>--publish-md</c>/export round-trip required. The "Writer" capability the user asked
-/// for: browse prose without exporting first. Mirrored MCP tool: <c>read_beats</c>.
+/// [--numbers &lt;csv&gt;] [--format text|json]</c> — read a book's beats directly, in reading
+/// order, with no <c>--publish-md</c>/export round-trip required. The "Writer" capability the
+/// user asked for: browse prose without exporting first. <c>--numbers</c> looks up specific
+/// beats by their global <c>Beat.Number</c> (the id logic-sweep findings quote, e.g. "Beat
+/// #14664") instead of by reading-order position; it takes precedence over --from/--to when
+/// both are given. Mirrored MCP tool: <c>read_beats</c>.
 /// </summary>
 public static class ReadBeatsCli
 {
@@ -18,6 +21,7 @@ public static class ReadBeatsCli
     {
         string? idOrSlug = null;
         int? from = null, to = null;
+        HashSet<int>? numbers = null;
         var format = "text";
         for (var i = 0; i < args.Length; i++)
         {
@@ -27,6 +31,17 @@ public static class ReadBeatsCli
                 case "--id":     if (i + 1 < args.Length) idOrSlug = args[++i]; break;
                 case "--from":   if (i + 1 < args.Length && int.TryParse(args[++i], out var f)) from = f; break;
                 case "--to":     if (i + 1 < args.Length && int.TryParse(args[++i], out var t)) to = t; break;
+                case "--numbers":
+                    if (i + 1 < args.Length)
+                    {
+                        numbers = args[++i]
+                            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                            .Select(s => int.TryParse(s, out var n) ? n : (int?)null)
+                            .Where(n => n.HasValue)
+                            .Select(n => n!.Value)
+                            .ToHashSet();
+                    }
+                    break;
                 case "--format": if (i + 1 < args.Length) format = args[++i]; break;
             }
         }
@@ -57,28 +72,41 @@ public static class ReadBeatsCli
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId.Value);
 
-        var from0 = Math.Max(0, (from ?? 1) - 1);
-        var to0 = Math.Min(ordered.Count - 1, (to ?? ordered.Count) - 1);
-        var slice = from0 <= to0 ? ordered.Skip(from0).Take(to0 - from0 + 1).ToList() : [];
+        List<(int position, Prose.Core.Data.Entities.Beat Beat)> slice;
+        if (numbers is { Count: > 0 })
+        {
+            slice = ordered
+                .Select((ob, i) => (position: i + 1, ob.Beat))
+                .Where(x => numbers.Contains(x.Beat.Number))
+                .ToList();
+        }
+        else
+        {
+            var from0 = Math.Max(0, (from ?? 1) - 1);
+            var to0 = Math.Min(ordered.Count - 1, (to ?? ordered.Count) - 1);
+            slice = from0 <= to0
+                ? ordered.Skip(from0).Take(to0 - from0 + 1).Select((ob, i) => (position: from0 + i + 1, ob.Beat)).ToList()
+                : [];
+        }
 
         if (format == "json")
         {
-            var payload = slice.Select((ob, i) => new
+            var payload = slice.Select(x => new
             {
-                position = from0 + i + 1,
-                id = ob.Beat.Id,
-                title = ob.Beat.Title,
-                kind = ob.Beat.Kind,
-                text = ob.Beat.Text,
+                position = x.position,
+                number = x.Beat.Number,
+                id = x.Beat.Id,
+                title = x.Beat.Title,
+                kind = x.Beat.Kind,
+                text = x.Beat.Text,
             });
             Console.WriteLine(JsonSerializer.Serialize(payload, new JsonSerializerOptions { WriteIndented = true }));
             return 0;
         }
 
-        for (var i = 0; i < slice.Count; i++)
+        foreach (var (position, beat) in slice)
         {
-            var beat = slice[i].Beat;
-            Console.WriteLine($"--- [{from0 + i + 1}] {beat.Title ?? "(untitled)"} ({beat.Id}) ---");
+            Console.WriteLine($"--- [{position}] #{beat.Number} {beat.Title ?? "(untitled)"} ({beat.Id}) ---");
             Console.WriteLine(beat.Text ?? "(empty)");
             Console.WriteLine();
         }

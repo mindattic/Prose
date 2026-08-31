@@ -812,6 +812,15 @@ if (args.Contains("--move-beat"))
     return;
 }
 
+// CLI mode: relocate a beat OUT of one chapter and INTO another (--move-beat only re-slots
+// within a single node's existing siblings). Wraps NodeWorkbenchService.MoveBeatToNodeAsync.
+//   prose --move-beat-to-node --slug <from-slug> --beat-number N --to-slug <to-slug> --after M
+if (args.Contains("--move-beat-to-node"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MoveBeatToNodeCli", args);
+    return;
+}
+
 // CLI mode: enable/disable a beat's membership in a node's reading order without touching the
 // Beat row itself (wraps NodeWorkbenchService.SetBeatMembershipEnabledAsync).
 //   prose --set-beat-enabled --slug <slug> (--beat-number N | --beat-id <guid>) [--enable]

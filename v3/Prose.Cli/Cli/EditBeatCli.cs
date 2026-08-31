@@ -125,7 +125,13 @@ public static class EditBeatCli
 
         if (insertMode)
         {
+            // Resolve the anchor's REAL owning chapter node, not the raw --slug node — for a
+            // book whose beats live on a child chapter (the normal Book->Chapter->Beat shape),
+            // InsertBeatAsync needs that chapter's id or it can't find the anchor at all (same
+            // bug class fixed in SetBeatEnabledCli 2026-08-31: VIGL's beats live on its chapter
+            // node, not the book node --slug resolves to).
             Guid? afterId = null;
+            Guid insertNodeId = nodeId; // top-of-book fallback when --insert-after 0
             if (insertAfter > 0)
             {
                 if (insertAfter > ordered.Count)
@@ -133,10 +139,12 @@ public static class EditBeatCli
                     Console.Error.WriteLine($"[edit-beat] --insert-after {insertAfter} exceeds beat count ({ordered.Count}).");
                     return 1;
                 }
-                afterId = ordered[insertAfter - 1].Beat.Id;
+                var anchor = ordered[insertAfter - 1];
+                afterId = anchor.Beat.Id;
+                insertNodeId = anchor.NodeId;
             }
-            var newBeat = await workbench.InsertBeatAsync(nodeId, afterId, prose);
-            Console.WriteLine($"[edit-beat] Inserted new beat after position {insertAfter} → id {newBeat.Id} ({prose.Length} chars).");
+            var newBeat = await workbench.InsertBeatAsync(insertNodeId, afterId, prose);
+            Console.WriteLine($"[edit-beat] Inserted new beat after position {insertAfter} (chapter {insertNodeId}) → id {newBeat.Id} ({prose.Length} chars).");
             return 0;
         }
 

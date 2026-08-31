@@ -877,8 +877,11 @@ public class ProseDbContext : DbContext
             e.Property(x => x.ConfirmedBySessionId);
             e.HasOne(x => x.Blueprint).WithMany(x => x.BeatTags)
                 .HasForeignKey(x => x.BlueprintId).OnDelete(DeleteBehavior.Cascade);
+            // Cascade (fixed 2026-08-31, was NoAction): generation metadata, not canon-of-record
+            // (unlike PlantBeatId/PayoffBeatId below, which stay NoAction on purpose — those
+            // guard real cross-beat referential integrity a deletion should have to reckon with).
             e.HasOne(x => x.Beat).WithMany()
-                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.NoAction);
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => x.BlueprintId);
             e.HasIndex(x => x.BeatId);
         });
@@ -964,8 +967,12 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Source).HasMaxLength(20).IsRequired().HasDefaultValue("Inferred");
             e.HasOne(x => x.Entity).WithMany()
                 .HasForeignKey(x => x.EntityId).OnDelete(DeleteBehavior.Cascade);
+            // Cascade (fixed 2026-08-31, was NoAction): a temporal entity-state snapshot for a
+            // beat that no longer exists is not worth blocking a legitimate deletion for — same
+            // class of generation-support metadata as the BlueprintBeatTag/BeatServiceLog/
+            // EditSessionBeats fixes just above.
             e.HasOne(x => x.Beat).WithMany()
-                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.NoAction);
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
             e.HasOne(x => x.Node).WithMany()
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.NoAction);
             e.HasIndex(x => new { x.EntityId, x.BeatId, x.StateType }).IsUnique()
@@ -1040,7 +1047,11 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => x.NodeId);
             e.HasIndex(x => x.BeatId).HasFilter("[BeatId] IS NOT NULL");
             e.HasOne<Node>().WithMany().HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
-            e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).IsRequired(false).OnDelete(DeleteBehavior.Restrict);
+            // Cascade (fixed 2026-08-31, was Restrict): this is a fire-and-forget coverage log,
+            // not canon — it must not block a legitimate beat deletion (--set-beat-enabled hit
+            // this constraint deleting a VIGL beat that had been generated through the router).
+            // BeatModeLog right below is the same kind of per-beat workflow log and is Cascade.
+            e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).IsRequired(false).OnDelete(DeleteBehavior.Cascade);
         });
         b.Entity<BeatModeLog>(e =>
         {
@@ -3045,8 +3056,13 @@ public class ProseDbContext : DbContext
             e.Property(x => x.PriorTextHash).HasMaxLength(64);
             e.HasOne(x => x.Session).WithMany(x => x.SessionBeats)
                 .HasForeignKey(x => x.EditSessionId).OnDelete(DeleteBehavior.Cascade);
+            // Cascade (fixed 2026-08-31, was NoAction): a per-session edit-history row for a
+            // beat that no longer exists is dead weight, not audit trail worth blocking a
+            // legitimate deletion for — NoAction meant a beat could never be deleted, via any
+            // path, once it had EVER been touched by --edit-beat in any session (hit live
+            // deleting a cut VIGL beat that a prior session's continuity fix had edited).
             e.HasOne(x => x.Beat).WithMany()
-                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.NoAction);
+                .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => x.BeatId);
         });
     }

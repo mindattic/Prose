@@ -36,9 +36,18 @@ using Serilog.Events;
 // instantly recognizable among other open terminals. Clear() repaints the existing buffer with
 // the new background — setting BackgroundColor alone only colors text written after this point.
 // Must run before CaptureOriginal() below so the echoed writers inherit these colors too.
-Console.BackgroundColor = ConsoleColor.Yellow;
-Console.ForegroundColor = ConsoleColor.Black;
-Console.Clear();
+// Guarded (fixed 2026-08-31): Console.Clear() throws IOException("The handle is invalid") when
+// stdout has no real Win32 screen buffer — any launch whose parent redirects/pipes stdout (an
+// agent-driven process spawn, a service host, etc.), not just a genuine interactive console.
+// That unhandled exception took the whole Hub down before it ever bound its port. A cosmetic
+// repaint must never be fatal to startup; skip it silently when there's no buffer to clear.
+try
+{
+    Console.BackgroundColor = ConsoleColor.Yellow;
+    Console.ForegroundColor = ConsoleColor.Black;
+    Console.Clear();
+}
+catch (IOException) { }
 
 // Explicit user requirement (2026-08-21): visible window + live command echo. Must run before
 // anything else touches Console — see HubConsoleEcho's own doc comment for why capturing the

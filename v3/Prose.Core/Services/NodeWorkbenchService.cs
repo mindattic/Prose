@@ -1478,6 +1478,92 @@ public class NodeWorkbenchService
             beatId, nodeId, newSortKey, afterBeatId?.ToString() ?? "(top)");
     }
 
+    /// <summary>Move a beat OUT of one chapter-level node and INTO another — the gap
+    /// <see cref="MoveBeatAsync"/> deliberately doesn't cover, since that method only re-slots a
+    /// beat among its existing siblings in a single node. Needed whenever a logic-sweep finding
+    /// says a beat belongs at a different point in the book's structure than it was drafted at
+    /// (e.g. a scene written around possessing an object the book doesn't establish the
+    /// possession of until a later chapter) — until 2026-08-31 the only "fix" available was a
+    /// content rewrite, even when the real defect was the beat sitting in the wrong chapter.
+    /// Deletes the (fromNodeId, beatId) <see cref="BeatNode"/> row and inserts a fresh one under
+    /// toNodeId, computed with the same fractional-SortKey-midpoint + restripe-on-collision
+    /// logic as MoveBeatAsync — just against the TARGET node's sibling ladder instead of the
+    /// source's. The Beat row itself (prose, audio, TextHash) is untouched; only which chapter
+    /// it reads under, and where in that chapter, changes.
+    /// Pass <paramref name="afterBeatId"/>=null to land at the very top of toNodeId; otherwise
+    /// the beat lands directly after that sibling (which must already be a toNodeId member).
+    /// Throws if the beat has no membership in fromNodeId, or already has one in toNodeId (that
+    /// would be an ambiguous double-membership, not a move) — delegate to MoveBeatAsync instead
+    /// when fromNodeId == toNodeId.</summary>
+    public async Task MoveBeatToNodeAsync(
+        Guid beatId, Guid fromNodeId, Guid toNodeId, Guid? afterBeatId, CancellationToken ct = default)
+    {
+        if (fromNodeId == toNodeId)
+            throw new InvalidOperationException(
+                "fromNodeId == toNodeId is a within-node reorder — use MoveBeatAsync instead.");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var sourceMembership = await db.BeatNodes.FirstOrDefaultAsync(
+            bn => bn.NodeId == fromNodeId && bn.BeatId == beatId, ct)
+            ?? throw new InvalidOperationException($"Beat {beatId} has no membership row in node {fromNodeId}.");
+        if (await db.BeatNodes.AnyAsync(bn => bn.NodeId == toNodeId && bn.BeatId == beatId, ct))
+            throw new InvalidOperationException($"Beat {beatId} is already a member of node {toNodeId}.");
+
+        var targetSiblings = await db.BeatNodes
+            .Where(sb => sb.NodeId == toNodeId)
+            .OrderBy(sb => sb.SortKey)
+            .ToListAsync(ct);
+
+        double prevSk, nextSk;
+        if (afterBeatId == null)
+        {
+            prevSk = targetSiblings.Count > 0 ? targetSiblings[0].SortKey - 100.0 : 0.0;
+            nextSk = targetSiblings.Count > 0 ? targetSiblings[0].SortKey         : 100.0;
+        }
+        else
+        {
+            var pos = targetSiblings.FindIndex(sb => sb.BeatId == afterBeatId.Value);
+            if (pos < 0) throw new InvalidOperationException($"Anchor beat {afterBeatId} not in node {toNodeId}.");
+            prevSk = targetSiblings[pos].SortKey;
+            nextSk = pos + 1 < targetSiblings.Count ? targetSiblings[pos + 1].SortKey : prevSk + 100.0;
+        }
+
+        // Same precision guard as MoveBeatAsync/InsertBeatAsync — restripe the TARGET node
+        // first if the gap we'd land in is too tight, then recompute against the fresh ladder.
+        if (nextSk - prevSk < MinSortKeyGap)
+        {
+            await RestripeSortKeysAsync(toNodeId, ct);
+            db.ChangeTracker.Clear();
+            targetSiblings = await db.BeatNodes
+                .Where(sb => sb.NodeId == toNodeId)
+                .OrderBy(sb => sb.SortKey)
+                .ToListAsync(ct);
+            if (afterBeatId == null)
+            {
+                prevSk = targetSiblings.Count > 0 ? targetSiblings[0].SortKey - 100.0 : 0.0;
+                nextSk = targetSiblings.Count > 0 ? targetSiblings[0].SortKey         : 100.0;
+            }
+            else
+            {
+                var pos = targetSiblings.FindIndex(sb => sb.BeatId == afterBeatId.Value);
+                prevSk = targetSiblings[pos].SortKey;
+                nextSk = pos + 1 < targetSiblings.Count ? targetSiblings[pos + 1].SortKey : prevSk + 100.0;
+            }
+            // Restripe used a separate DbContext; re-fetch the source membership too so
+            // db.BeatNodes.Remove below acts on a tracked, current row.
+            sourceMembership = await db.BeatNodes.FirstAsync(
+                bn => bn.NodeId == fromNodeId && bn.BeatId == beatId, ct);
+        }
+
+        var newSortKey = (prevSk + nextSk) / 2.0;
+        db.BeatNodes.Remove(sourceMembership);
+        db.BeatNodes.Add(new BeatNode { NodeId = toNodeId, BeatId = beatId, SortKey = newSortKey });
+        await db.SaveChangesAsync(ct);
+        log.LogInformation(
+            "Moved beat {Beat} from node {From} to node {To} at SortKey {Sk} (after {After})",
+            beatId, fromNodeId, toNodeId, newSortKey, afterBeatId?.ToString() ?? "(top)");
+    }
+
     /// <summary>Remove a beat's membership in a node's reading order, without touching the
     /// Beat row itself (its prose, audio, and any OTHER node's membership of the same beat all
     /// survive untouched). There is no more soft-disable/re-enable cycle — a membership exists
