@@ -64,9 +64,13 @@ public class WorldStateSnapshot
 public class WorldStateAtBeatService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly WorldStateLedger ledger;
 
-    public WorldStateAtBeatService(IDbContextFactory<ProseDbContext> dbFactory)
-        => this.dbFactory = dbFactory;
+    public WorldStateAtBeatService(IDbContextFactory<ProseDbContext> dbFactory, WorldStateLedger ledger)
+    {
+        this.dbFactory = dbFactory;
+        this.ledger = ledger;
+    }
 
     /// <summary>
     /// Returns a snapshot of world state at the given beat.
@@ -122,22 +126,13 @@ public class WorldStateAtBeatService
         var scopeIds = entityIds?.ToHashSet();
 
         // Latest EntityStateEvent per (EntityId, AspectKey) at or before this story time.
-        // Group in memory after a bounded query — avoids complex SQL GROUP BY on temporal tables.
-        var eventsQ = db.EntityStateEvents.AsNoTracking()
-            .Where(e => e.AtStoryTime <= t);
-
-        if (scopeIds is { Count: > 0 })
-            eventsQ = eventsQ.Where(e => scopeIds.Contains(e.EntityId));
-
-        var events = await eventsQ
-            .OrderByDescending(e => e.AtStoryTime)
-            .Take(2000)
-            .ToListAsync(ct);
-
-        // Latest value per (EntityId, AspectKey)
-        var latestByKey = events
-            .GroupBy(e => (e.EntityId, e.AspectKey))
-            .Select(g => g.OrderByDescending(e => e.AtStoryTime).First())
+        // Delegates to WorldStateLedger.SnapshotManyAsync (2026-09-01) rather than querying
+        // EntityStateEvents directly — that method groups before capping (this used to cap the
+        // raw 2000-most-recent events BEFORE grouping, which could silently drop the correct
+        // "latest" value for an aspect belonging to a less-recently-touched entity) and applies
+        // a deterministic Id tie-break this call site didn't have before.
+        var latestByKey = (await ledger.SnapshotManyAsync(scopeIds, t, max: null, ct))
+            .Values
             .ToList();
 
         // Resolve entity names

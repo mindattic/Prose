@@ -446,7 +446,19 @@ public class FindingsService
             .ToList();
         if (rows.Count == 0) return 0;
         db.Findings.RemoveRange(rows);
-        db.SaveChanges();
+        try
+        {
+            db.SaveChanges();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            // Another caller (the on-demand --audit-book/book_health path racing the
+            // periodic SanityScanBackgroundService sweep, both clearing the same
+            // "node:{slug}"+"SANITY " prefix — see SanityScanService.FileFindings) already
+            // deleted these same rows between our SELECT and this SaveChanges. The desired
+            // end state — these stale rows gone — is already true, so this is success, not
+            // failure; a plain retry would just throw again against the same phantom rows.
+        }
         return rows.Count;
     }
 

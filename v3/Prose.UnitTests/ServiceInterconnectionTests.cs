@@ -16,7 +16,7 @@ namespace Prose.UnitTests;
 /// Coverage map:
 ///  • <see cref="LlmRouterCaptureTests"/>           LlmRouter → LastPromptStore
 ///  • <see cref="LastPromptStoreTests"/>            LastPromptStore ring-buffer behavior
-///  • <see cref="MotifPipelineTests"/>              MotifService Plant → Load → Propose
+///  • <see cref="MotifPipelineTests"/>              AuthoredMotifRegistry Plant → Load → Propose
 ///  • <see cref="WritingQualityHeuristicTests"/>    WritingQualityService over Book + Chapters + Motifs
 ///  • <see cref="SemanticIndexUpdateTests"/>        UniverseGraphService ↔ SemanticIndexService incremental update
 ///  • <see cref="NarrativeSessionTests"/>           NarrativeSessionContext → UniverseGraphService + SemanticIndexService
@@ -174,7 +174,7 @@ public class LastPromptStoreTests
 public class MotifPipelineTests
 {
     private string rootDir = "";
-    private MotifService svc = null!;
+    private AuthoredMotifRegistry svc = null!;
 
     [SetUp]
     public void Setup()
@@ -182,7 +182,7 @@ public class MotifPipelineTests
         rootDir = Path.Combine(Path.GetTempPath(), $"ss_motif_{Guid.NewGuid():N}");
         Directory.CreateDirectory(Path.Combine(rootDir, "books"));
         var paths = new TestPathProviderWithRoot(rootDir);
-        svc = new MotifService(paths, NullLoggers.For<MotifService>());
+        svc = new AuthoredMotifRegistry(paths, NullLoggers.For<AuthoredMotifRegistry>());
     }
 
     [TearDown]

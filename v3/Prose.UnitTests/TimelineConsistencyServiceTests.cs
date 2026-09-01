@@ -34,7 +34,8 @@ public class TimelineConsistencyServiceTests
         dbFactory = new TestFactory(conn);
         using var ctx = dbFactory.CreateDbContext();
         ctx.Database.EnsureCreated();
-        svc = new TimelineConsistencyService(dbFactory, NullLogger<TimelineConsistencyService>.Instance);
+        var ledger = new WorldStateLedger(dbFactory, NullLogger<WorldStateLedger>.Instance);
+        svc = new TimelineConsistencyService(dbFactory, NullLogger<TimelineConsistencyService>.Instance, ledger);
     }
 
     [TearDown]

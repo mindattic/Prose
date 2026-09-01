@@ -233,14 +233,14 @@ public class StoryTools
         return JsonSerializer.Serialize(c, CanonTools.JsonOpts);
     }
 
-    /// <summary>Archive a book — moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive (chapters stay in place). Requires the caller to retype the full book id as a confirmation token, matching the UI's type-the-guid modal.</summary>
-    [McpServerTool, Description("Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive — the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.")]
-    public Task<string> ArchiveBook(
+    /// <summary>Permanently deletes a book — hard-deletes the Books and Entities rows (recoverable only via Entities_History / prose --restore-entity, not via this tool). Requires the caller to retype the full book id as a confirmation token, matching the UI's type-the-guid modal. This is destructive — for a non-destructive pre-edit snapshot instead, use prose --archive-book (BookArchiveService), not this tool.</summary>
+    [McpServerTool, Description("Permanently delete a book: hard-deletes its Books and Entities rows. This is DESTRUCTIVE — chapters/beats are not touched but the book record itself is gone from normal queries, recoverable only via Entities_History / prose --restore-entity. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). If you want a non-destructive backup instead, do not use this tool. Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.")]
+    public Task<string> DeleteBookPermanently(
         [Description("Book id (32-char hex).")] string id,
-        [Description("Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.")] string confirmId) =>
-        hub.InvokeAsync(nameof(StoryTools), nameof(ArchiveBookImpl), new { id, confirmId });
+        [Description("Confirmation token — must equal the same full book id. Mismatched or missing values abort the deletion.")] string confirmId) =>
+        hub.InvokeAsync(nameof(StoryTools), nameof(DeleteBookPermanentlyImpl), new { id, confirmId });
 
-    public string ArchiveBookImpl(string id, string confirmId)
+    public string DeleteBookPermanentlyImpl(string id, string confirmId)
     {
         var book = books.LoadBook(id);
         if (book == null)
@@ -249,8 +249,8 @@ public class StoryTools
         if (!string.Equals(confirmId, book.Id, StringComparison.Ordinal))
             return JsonSerializer.Serialize(new { error = "confirmation_mismatch", expected = book.Id }, CanonTools.JsonOpts);
 
-        books.ArchiveBook(book.Id);
-        return JsonSerializer.Serialize(new { ok = true, id = book.Id, title = book.Title, archived_to = "archives/books/" }, CanonTools.JsonOpts);
+        books.HardDeleteBook(book.Id);
+        return JsonSerializer.Serialize(new { ok = true, id = book.Id, title = book.Title, deleted = true }, CanonTools.JsonOpts);
     }
 }
 
@@ -264,14 +264,14 @@ public class ContextTools
 {
     private readonly SemanticIndexService semanticIndex;
     private readonly UniverseGraphService graph;
-    private readonly MotifService motifs;
+    private readonly AuthoredMotifRegistry motifs;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly HubInvoker hub;
 
     public ContextTools(
         SemanticIndexService semanticIndex,
         UniverseGraphService graph,
-        MotifService motifs,
+        AuthoredMotifRegistry motifs,
         IDbContextFactory<ProseDbContext> dbFactory,
         HubInvoker hub)
     {
@@ -329,10 +329,10 @@ public class ContextTools
         return JsonSerializer.Serialize(new { ok = true, name, kind = kindEnum.ToString() }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Scan a node's actual written prose for motif candidates. MotifService's heuristic
-    /// detector (recurring italicized phrases, recurring capitalized named objects not already
-    /// characters/places) existed only against the legacy Chapter model and was never reachable
-    /// against a live book — this is the first entry point that runs it on real Nodes/Beats prose.
+    /// <summary>Scan a node's actual written prose for motif candidates. AuthoredMotifRegistry's
+    /// heuristic detector (recurring italicized phrases, recurring capitalized named objects not
+    /// already characters/places) existed only against the legacy Chapter model and was never
+    /// reachable against a live book — this is the first entry point that runs it on real Nodes/Beats prose.
     /// Read-only: proposals are returned for review, never auto-planted (call plant_motif for any
     /// you want to keep, same as the existing UI workflow this mirrors).</summary>
     [McpServerTool, Description("Scan a node's actual written prose for motif candidates — italicized phrases that recur, or capitalized named objects (not already characters/places) that repeat 3+ times. Returns proposals for review; nothing is written automatically. Pass a chapter-level node for one chapter's beats, or a book-level node to aggregate every chapter's beats. Plant any you want to keep via plant_motif.")]

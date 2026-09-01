@@ -42,7 +42,7 @@ public class BookMotif
 }
 
 /// <summary>
-/// A proposed motif surfaced by <see cref="Prose.Core.Services.MotifService.ProposeFromChapter"/>.
+/// A proposed motif surfaced by <see cref="Prose.Core.Services.AuthoredMotifRegistry.ProposeFromChapter"/>.
 /// Pending user confirmation. Distinct from <see cref="BookMotif"/>, which is the persisted form.
 /// </summary>
 public class MotifProposal

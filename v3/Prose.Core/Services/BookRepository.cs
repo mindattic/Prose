@@ -26,7 +26,7 @@ namespace Prose.Core.Services;
 ///
 /// No status flag (temporal-hygiene rule): a book's existence in the live
 /// <c>Books</c>/<c>Entities</c> tables IS the fact of it being current.
-/// <see cref="ArchiveBook"/> hard-deletes both rows in one transaction — <c>Books</c>
+/// <see cref="HardDeleteBook"/> hard-deletes both rows in one transaction — <c>Books</c>
 /// has no database FK to <c>Entities</c> (unlike every typed subtype), so both must be
 /// deleted explicitly or the <c>Books</c>/<c>BookProtagonists</c>/<c>BookChapterOrder</c>
 /// rows would silently orphan. Recoverable via <c>Entities_History</c> (system-versioned).
@@ -173,10 +173,14 @@ public class BookRepository : IBookRepository
     /// subtype), so the <c>Books</c> row is deleted explicitly first (its own declared Cascade
     /// FKs take <c>BookProtagonists</c>/<c>BookChapterOrder</c> with it), then the <c>Entities</c>
     /// row — in one transaction, so a failure partway never leaves one without the other.
-    /// Chapters are NOT touched (ArchiveBook never archived chapters even under the old flag).
+    /// Chapters are NOT touched (this method never touched chapters even under the old flag).
     /// Recoverable via <c>Entities_History</c> (system-versioned) or <c>prose --restore-entity</c>.
+    /// Named honestly as a hard delete — do not rename back to "Archive*"; a prior name,
+    /// <c>ArchiveBook</c>, caused a live MCP tool to describe this operation as non-destructive
+    /// when it is not (fixed 2026-09-01). The genuinely non-destructive snapshot operation is
+    /// <see cref="BookArchiveService.ArchiveAsync"/>.
     /// </summary>
-    public void ArchiveBook(string id)
+    public void HardDeleteBook(string id)
     {
         if (string.IsNullOrEmpty(id)) return;
         var guid = ParseGuid(id);

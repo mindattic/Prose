@@ -617,8 +617,18 @@ there is no live generation entry point outside `ProseWriterRouter` any more.
   0-3; weak non-final endings file `HOOK ` findings. Also fires automatically at chapter close
   (`ChapterCloseProcessorService` step 3.5, one Haiku call, not vote-gated).
 - Motif ledger: `BookMotifs` table + `MotifLedgerService`; extraction via the MOTIFS slice of
-  the consolidated call; recurring motifs (2+ beats) inject as "MOTIFS IN PLAY" guidance. The
-  legacy KV `MotifService` remains legacy-stack-only — do not extend it.
+  the consolidated call; recurring motifs (2+ beats) inject as "MOTIFS IN PLAY" guidance,
+  automatic, no manual authoring. **Corrected 2026-09-01** (this row previously called the KV
+  store below "legacy, do not extend" — wrong, and renamed to stop implying it): the separate
+  KV-backed `AuthoredMotifRegistry` (was `MotifService`) is not a legacy predecessor of
+  `MotifLedgerService` — it's a still-live, distinct feature (manually/LLM-authored, named +
+  described + kind-tagged motifs) backing the `get_motifs`/`plant_motif`/`propose_motifs` MCP
+  tools, none of which `MotifLedgerService` has an equivalent for. Do extend
+  `AuthoredMotifRegistry` if that manual-authoring surface needs more capability; don't assume
+  `MotifLedgerService` should absorb it. `BookReviewService.ReviewAsync` and
+  `analyze_writing_quality`'s dependency on `AuthoredMotifRegistry` via the legacy Book/Chapter
+  model remains a known, documented limitation (returns `book_not_found` for any book that only
+  exists as a live Node) — not yet fixed.
 - Two EF migrations pending Hub redeploy: `AddBeatPlace`, `AddBookMotifs` (both plain nullable
   ADD COLUMN / new table; apply at next Hub restart).
 - Subplot-thread health was NOT added as a new instrument: `prose --storyscope-audit` already

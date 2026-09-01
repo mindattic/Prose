@@ -1,11 +1,13 @@
 namespace Prose.Core.Data.Entities;
 
 /// <summary>
-/// One recurring image/object/gesture in one book — the motif ledger (2026-08-28). The legacy
-/// KV-backed MotifService only ever served the retired pre-Node review stack; the live Node
-/// pipeline had no motif tracking at all. Rows are written by the motif slice of
-/// BeatExtractionService's consolidated post-write call (via MotifLedgerService) and read back
-/// as a "MOTIFS IN PLAY" generation-guidance block, the same surface shape as open threads.
+/// One recurring image/object/gesture in one book — the automatic motif ledger (2026-08-28).
+/// Before this, the live Node pipeline had no motif tracking at all; the KV-backed
+/// AuthoredMotifRegistry (renamed from MotifService 2026-09-01) is a separate, still-live,
+/// manually/LLM-authored motif registry — not this table's predecessor, see that class's doc
+/// comment. Rows here are written by the motif slice of BeatExtractionService's consolidated
+/// post-write call (via MotifLedgerService) and read back as a "MOTIFS IN PLAY"
+/// generation-guidance block, the same surface shape as open threads.
 /// </summary>
 public class BookMotif
 {

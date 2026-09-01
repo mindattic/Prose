@@ -32,7 +32,7 @@ public class QualityTools
     private readonly WritingQualityService quality;
     private readonly IBookRepository books;
     private readonly IChapterRepository chapters;
-    private readonly MotifService motifs;
+    private readonly AuthoredMotifRegistry motifs;
     private readonly SettingsService settings;
     private readonly NodeReviewService reviewer;
     private readonly CanonContradictionService canonChecker;
@@ -51,7 +51,7 @@ public class QualityTools
         WritingQualityService quality,
         IBookRepository books,
         IChapterRepository chapters,
-        MotifService motifs,
+        AuthoredMotifRegistry motifs,
         SettingsService settings,
         NodeReviewService reviewer,
         CanonContradictionService canonChecker,
@@ -106,7 +106,15 @@ public class QualityTools
         [Description("Book id.")] string bookId) =>
         hub.InvokeAsync(nameof(QualityTools), nameof(AnalyzeWritingQualityImpl), new { bookId });
 
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never
+    /// called directly by this process.
+    /// KNOWN LIMITATION (documented 2026-09-01, not fixed): depends on the legacy Book/Chapter
+    /// model (<c>books.LoadBook</c>), separate from the live Node/Beat pipeline. Returns
+    /// book_not_found for any book that only exists as a live Node — no bridge exists from
+    /// Node/Beat generation into a Book/Chapter record. Fixing this means rewriting
+    /// WritingQualityService's motif-reuse check to work off Node/Beat + MotifLedgerService
+    /// occurrence counts instead of AuthoredMotifRegistry's named/described motifs — a real
+    /// rewrite, out of scope for the service-naming cleanup that added this note.</summary>
     public string AnalyzeWritingQualityImpl(string bookId)
     {
         var book = books.LoadBook(bookId);

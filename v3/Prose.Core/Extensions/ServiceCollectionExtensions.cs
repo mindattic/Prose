@@ -278,15 +278,14 @@ public static class ServiceCollectionExtensions
         // retired in favor of MindAttic.Authentication (wired in the Blazor host via
         // AddMindAtticAuthentication). UserRepository is retained for one release as the
         // sole data source for AuthUserImportService (its 'users.accounts' Settings blob
-        // is the rollback artifact); ProfileService (avatars) + EmailService (SMTP) stay.
+        // is the rollback artifact). ProfileService (Blazor avatar upload) and EmailService
+        // (never had a caller) were removed 2026-09-01 as confirmed dead code — see the
+        // Engine Manifest service audit.
         services.AddSingleton<UserRepository>();
-        services.AddSingleton<ProfileService>();
-        services.AddSingleton<EmailService>();
 
         services.AddSingleton<DatabaseService>();
         services.AddSingleton<IDatabaseService>(sp => sp.GetRequiredService<DatabaseService>());
         services.AddSingleton<XrefService>();
-        services.AddSingleton<ScriptRunnerService>();
         services.AddSingleton<ProjectArchitectureService>();
         services.AddSingleton<FixPhiService>();
         services.AddSingleton<FixIdentityCorruptionService>();
@@ -295,10 +294,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AssignTiersService>();
         services.AddSingleton<CrossReferenceService>();
         services.AddSingleton<GlobalSearchService>();
-        services.AddSingleton<SearchTriggerService>();
         services.AddSingleton<LoreService>();
         services.AddSingleton<MarkdownService>();
-        services.AddSingleton<ViewModeService>();
         // Unified continuity store — atomic (entity, predicate, object) claims
         // extracted from chapter prose AND entity records via Legion Quorum.
         // One SQLite at engine/data/continuity.db. Replaces the prior
@@ -430,7 +427,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<CharacterPipelineService>();
         services.AddSingleton<WorldConsistencyService>();
         services.AddSingleton<DataConsistencyService>();
-        services.AddSingleton<DataRepairService>();
+        // DataRepairService removed 2026-09-01 — confirmed dead code (only its own unit test
+        // referenced it, no CLI/MCP caller); legacy JSON-file repair kit pre-dating the SQL-only
+        // rule. See the Engine Manifest service audit.
 
         // Slug repair — regenerate every slug from its Name/Title metadata and
         // update all slug-carrying references (beat audio paths, publication
@@ -510,9 +509,9 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<ContinuityExtractionService>(),
             settings: sp.GetService<SettingsService>()));
         services.AddSingleton<WritingQualityService>();
-        services.AddSingleton(sp => new MotifService(
+        services.AddSingleton(sp => new AuthoredMotifRegistry(
             sp.GetRequiredService<SettingsKvStore>(),
-            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<MotifService>>()));
+            sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<AuthoredMotifRegistry>>()));
         services.AddSingleton<LastPromptStore>();
         // Graph builds from canon on first access. With the SQL cutover, freshness
         // is driven by Records.UpdatedAt — the IDbContextFactory ctor receives the
@@ -701,8 +700,8 @@ public static class ServiceCollectionExtensions
         // Entity extraction — LLM-powered story-to-graph pipeline
         services.AddSingleton<EntityExtractionService>();
 
-        // Canon validation — checks generated text against graph for contradictions
-        services.AddSingleton<ValidationService>();
+        // ValidationService removed 2026-09-01 — confirmed dead code (zero callers beyond its
+        // own DI registration); superseded in practice by WorldConsistencyService.ScanText.
 
         // Graph health analysis — orphan detection, bad node flagging, and (when a DB
         // factory is available) prose-usage tagging: most orphans are intentional flavor
@@ -728,7 +727,8 @@ public static class ServiceCollectionExtensions
 
         // Scene generation pipeline
         // ContextAnalyzerService removed 2026-08-30 (confirmed dead code — no CLI/MCP caller).
-        services.AddSingleton<TextAnalysisService>();
+        // TextAnalysisService removed 2026-09-01 for the same reason (Blazor rich-text-editor
+        // companion, no CLI/MCP caller).
         services.AddSingleton<BeatGeneratorService>();
         services.AddSingleton<NodeOutlineService>();
         services.AddSingleton<NodeDocService>();
@@ -810,9 +810,12 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Services.Operator.KdpToolRegistry>();
         services.AddScoped<Services.Operator.KdpOperatorService>();
 
-        // Geographic navigation, pathfinding, and dynamic place generation
-        services.AddSingleton<NavigationService>();
-        services.AddSingleton<DynamicPlaceGenerator>();
+        // NavigationService + DynamicPlaceGenerator removed 2026-09-01 — confirmed dead code.
+        // Their only caller, StoryDirectorService's "Surprise Me" pipeline, was deliberately
+        // deleted 2026-08-13; no other caller ever picked them up. Reviving on-demand place
+        // generation is real feature work (new integration point would be
+        // WorldStatePrecheckService.CheckLocationConsistency's "unknown location" branch), not a
+        // dead-code fix — see the Engine Manifest service audit.
 
         // Freelancer story systems. 2026-08-28: ContractGenerator, RandomEncounterService,
         // ReputationTracker, and ConsequenceEngine deleted — all leftovers of the removed
@@ -1179,7 +1182,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<DocContextService>();
         services.AddSingleton<EntityHarvestService>();
         services.AddSingleton<ContextTelemetryService>();
-        services.AddSingleton<TelemetryExportService>();
+        // TelemetryExportService removed 2026-09-01 — confirmed dead code (zero callers). Its
+        // score/flow-correlation design goal was never wired to ContextTelemetryService.RunEnded;
+        // the "watch DCM live" half of its intent was superseded by DcmVisualizationService +
+        // ObservabilityBridge, which are live and heavily used.
         services.AddSingleton<BeatArchiveService>();
         services.AddSingleton<DcmVisualizationService>();
         services.AddSingleton<TensionEscalationService>();

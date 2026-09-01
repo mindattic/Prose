@@ -1940,12 +1940,12 @@ List all species in the current universe. Returns canonical name (key used on Ch
 
 <sub>`StoryTools`</sub>
 
-### `archive_book`
+### `delete_book_permanently`
 
-Archive a book: moves the book file from engine/data/books/ to engine/data/archives/books/. Non-destructive — the original chapters stay in place but the book record is removed from the active shelf. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.
+Permanently delete a book: hard-deletes its Books and Entities rows. This is DESTRUCTIVE — chapters/beats are not touched but the book record itself is gone from normal queries, recoverable only via Entities_History / prose --restore-entity. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). If you want a non-destructive backup instead, do not use this tool. Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.
 
 - `id` (string, required) — Book id (32-char hex).
-- `confirmId` (string, required) — Confirmation token — must equal the same full book id. Mismatched or missing values abort the archive.
+- `confirmId` (string, required) — Confirmation token — must equal the same full book id. Mismatched or missing values abort the deletion.
 
 ### `get_chapter`
 

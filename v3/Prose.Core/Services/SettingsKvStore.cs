@@ -9,7 +9,7 @@ namespace Prose.Core.Services;
 /// Tiny strongly-typed KV façade over the universal <see cref="Setting"/> table.
 /// Replaces the dozens of <c>File.WriteAllText("{engine_data}/foo.json", json)</c>
 /// snippets that used to live in BookOutlineService, BookReviewService,
-/// MotifService, NamePoolService, etc.
+/// AuthoredMotifRegistry, NamePoolService, etc.
 ///
 /// Schema is dirt-simple: one row per logical store (key = arbitrary string,
 /// json = serialized payload). System-versioning gives us free history.

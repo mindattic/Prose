@@ -101,19 +101,19 @@ public class BookRepositoryTests
     }
 
     [Test]
-    public void ArchiveBook_FlipsActive_HidesFromList()
+    public void HardDeleteBook_RemovesFromList()
     {
         var book = new Book { Title = "Doomed" };
         books.SaveBook(book);
         Assert.That(books.LoadBook(book.Id), Is.Not.Null);
         Assert.That(books.ListBooks(), Has.Count.EqualTo(1));
 
-        books.ArchiveBook(book.Id);
+        books.HardDeleteBook(book.Id);
 
-        // Soft-delete: the row stays in the DB but ListBooks/LoadBook only return active
-        // rows. The full audit trail (including archived rows) lives in the
-        // system-versioned history table, queryable via FOR SYSTEM_TIME AS OF.
-        Assert.That(books.ListBooks(), Is.Empty, "Archived book should not appear in default list");
+        // Hard delete: the row is actually removed from the live Books/Entities tables (no
+        // status flag). The full audit trail lives in the system-versioned history table,
+        // queryable via FOR SYSTEM_TIME AS OF, or restorable via `prose --restore-entity`.
+        Assert.That(books.ListBooks(), Is.Empty, "Deleted book should not appear in the list");
     }
 
     [Test]

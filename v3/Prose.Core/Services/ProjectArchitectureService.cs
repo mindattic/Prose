@@ -4,10 +4,16 @@ using Prose.Core.Interfaces;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// Scans the source tree (v3/Prose.*, root .js, tools/, engine/scripts/)
-/// to produce an inventory of every service, CLI verb, MCP tool, Razor page, and
-/// standalone script. Powers the /architecture page so we can spot duplicates and
-/// dead code without grepping by hand.
+/// Scans the source tree (v3/Prose.*, root .js, tools/, engine/scripts/) to produce an
+/// inventory of every service, CLI verb, MCP tool, and standalone script — the automated,
+/// repeatable version of the manual 8-agent "Engine Manifest" service audit run 2026-09-01.
+/// Originally powered a Blazor `/architecture` page (deleted 2026-08-13); resurrected
+/// 2026-09-01 as the `prose --architecture-scan` CLI command instead (see
+/// <c>Prose.Cli/Cli/ArchitectureScanCli.cs</c>), with its <c>ScanServices</c>/<c>ScanCli</c>
+/// project paths corrected — they still pointed at the deleted Prose.Shared/Prose.Blazor
+/// projects, which is why this service went dead in the first place. Razor-page scanning was
+/// dropped entirely: the live UI, Prose.ObserverUi, is a tab-shell SPA with zero `@page`-routed
+/// components, so there is nothing meaningful left for that scan to find.
 /// </summary>
 public class ProjectArchitectureService
 {
@@ -36,7 +42,9 @@ public class ProjectArchitectureService
         if (Directory.Exists(v3))
         {
             snapshot.Services = ScanServices(v3);
-            snapshot.RazorPages = ScanRazorPages(v3);
+            // RazorPages intentionally left empty — see class doc comment. Prose.ObserverUi has
+            // no @page-routed components, and the Blazor host that ScanRazorPages originally
+            // targeted (Prose.Shared/Prose.Blazor) was deleted 2026-08-13.
             snapshot.CliCommands = ScanCli(v3);
             snapshot.McpTools = ScanMcp(v3);
             snapshot.DiRegistrations = ScanDiRegistrations(v3);
@@ -49,7 +57,9 @@ public class ProjectArchitectureService
 
     // ── Services ──────────────────────────────────────────────────────────
 
-    static readonly string[] ServiceProjects = ["Prose.Core", "Prose.Shared", "Prose.Blazor"];
+    // Prose.Shared/Prose.Blazor were deleted 2026-08-13 along with the Blazor host — Prose.Core
+    // is the only project with a /Services/ directory today.
+    static readonly string[] ServiceProjects = ["Prose.Core"];
 
     private List<ServiceEntry> ScanServices(string v3)
     {
@@ -130,44 +140,11 @@ public class ProjectArchitectureService
         return list;
     }
 
-    // ── Razor pages ───────────────────────────────────────────────────────
-
-    private List<RazorPageEntry> ScanRazorPages(string v3)
-    {
-        var list = new List<RazorPageEntry>();
-        foreach (var proj in new[] { "Prose.Shared", "Prose.Blazor" })
-        {
-            var dir = Path.Combine(v3, proj, "Components");
-            if (!Directory.Exists(dir)) continue;
-
-            foreach (var file in Directory.EnumerateFiles(dir, "*.razor", SearchOption.AllDirectories))
-            {
-                var text = SafeRead(file);
-                if (text == null) continue;
-
-                var pageMatch = Regex.Match(text, @"@page\s+""(?<route>[^""]+)""");
-                if (!pageMatch.Success) continue;
-
-                var rolesMatch = Regex.Match(text, @"\[Authorize\s*\(\s*Roles\s*=\s*""(?<roles>[^""]+)""\s*\)\]");
-                var titleMatch = Regex.Match(text, @"<h[1-4][^>]*>(?<t>[^<]+)</h[1-4]>");
-
-                list.Add(new RazorPageEntry
-                {
-                    Route = pageMatch.Groups["route"].Value,
-                    Title = titleMatch.Success ? CleanText(titleMatch.Groups["t"].Value) : Path.GetFileNameWithoutExtension(file),
-                    File = Rel(v3, file),
-                    Roles = rolesMatch.Success ? rolesMatch.Groups["roles"].Value : "(public)",
-                });
-            }
-        }
-        return list.OrderBy(p => p.Route, StringComparer.OrdinalIgnoreCase).ToList();
-    }
-
     // ── CLI commands ──────────────────────────────────────────────────────
 
     private List<CliCommand> ScanCli(string v3)
     {
-        var dir = Path.Combine(v3, "Prose.Blazor", "Cli");
+        var dir = Path.Combine(v3, "Prose.Cli", "Cli");
         if (!Directory.Exists(dir)) return [];
 
         var list = new List<CliCommand>();

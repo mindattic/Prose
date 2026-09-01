@@ -25,7 +25,7 @@ public class BookReviewService : IBookReviewService
     private readonly LlmVotingService llmVoting;
     private readonly SettingsKvStore kv;
     private readonly WritingQualityService quality;
-    private readonly MotifService motifs;
+    private readonly AuthoredMotifRegistry motifs;
     private readonly DatabaseService db;
     private readonly EmbeddingService? embeddings;
     private readonly ILogger<BookReviewService> log;
@@ -34,7 +34,7 @@ public class BookReviewService : IBookReviewService
     public BookReviewService(
         IBookRepository books, IChapterRepository chapters,
         LlmVotingService llmVoting, SettingsKvStore kv,
-        WritingQualityService quality, MotifService motifs,
+        WritingQualityService quality, AuthoredMotifRegistry motifs,
         DatabaseService db,
         ILogger<BookReviewService> log,
         VotingGate votingGate,

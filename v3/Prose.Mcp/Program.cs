@@ -72,7 +72,7 @@ builder.Logging.ClearProviders();
 builder.Logging.AddSerilog();
 
 // All Core services — repositories, SemanticIndexService,
-// MotifService, WritingQualityService, etc.
+// AuthoredMotifRegistry, WritingQualityService, etc.
 builder.Services.AddProseServices();
 
 // Thin HTTP client for the Prose Hub (v3/Prose.Hub) - the standalone always-on process

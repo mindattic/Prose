@@ -12,8 +12,13 @@ namespace Prose.Core.Services;
 /// "MOTIFS IN PLAY" guidance block (only motifs sighted in 2+ beats — a single sighting is
 /// just a detail, not yet a motif). No LLM calls in this class.
 ///
-/// Deliberately NOT the legacy KV MotifService, which only ever served the retired pre-Node
-/// review stack — do not extend that one.
+/// Deliberately NOT the same thing as <see cref="AuthoredMotifRegistry"/> (renamed from
+/// MotifService 2026-09-01) — that class is a separate, still-live, manually/LLM-authored motif
+/// registry (named/described/kind-tagged motifs, backing the plant_motif/get_motifs/
+/// propose_motifs MCP tools), not a legacy predecessor of this one. This class only does
+/// automatic per-beat occurrence counting for generation guidance; it has no equivalent for
+/// AuthoredMotifRegistry's manual authoring surface, so do not delete or repoint that class
+/// under the assumption this one replaces it.
 /// </summary>
 public class MotifLedgerService
 {

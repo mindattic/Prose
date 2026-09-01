@@ -121,13 +121,6 @@ public class DiRegistrationTests
     }
 
     [Test]
-    public void ProfileService_IsRegistered()
-    {
-        var svc = sp.GetService<ProfileService>();
-        Assert.That(svc, Is.Not.Null);
-    }
-
-    [Test]
     public void AuthUserImportService_IsRegistered()
     {
         // The MindAttic.Authentication adoption path: the legacy-user importer must

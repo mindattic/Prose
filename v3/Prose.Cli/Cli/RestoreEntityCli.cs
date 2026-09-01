@@ -9,7 +9,7 @@ namespace Prose.Cli;
 ///
 /// Restores a hard-deleted <c>Entities</c> row from <c>Entities_History</c> (system-versioned
 /// temporal table) — the recovery path for <see cref="Prose.Core.Data.EfRepository{T}"/>'s
-/// plain <c>Delete()</c> and <see cref="Prose.Core.Services.BookRepository.ArchiveBook"/>/
+/// plain <c>Delete()</c> and <see cref="Prose.Core.Services.BookRepository.HardDeleteBook"/>/
 /// <see cref="Prose.Core.Services.ChapterRepository.DeleteChapter"/>, none of which go through
 /// the AutoCorrect undo ledger (<see cref="Prose.Core.Services.SelfHealLedgerService"/> remains
 /// the correct recovery path for a <c>MergeAsync</c> loser).

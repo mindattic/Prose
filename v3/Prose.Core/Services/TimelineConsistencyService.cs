@@ -33,6 +33,7 @@ public class TimelineConsistencyService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly ILogger<TimelineConsistencyService> log;
+    private readonly WorldStateLedger ledger;
 
     /// <summary>Values (case-insensitive) that indicate an entity is dead. Kept in sync with
     /// WorldStatePrecheckService.DeadStatuses (2026-08-30 fix — the two sets had silently
@@ -48,10 +49,12 @@ public class TimelineConsistencyService
 
     public TimelineConsistencyService(
         IDbContextFactory<ProseDbContext> dbFactory,
-        ILogger<TimelineConsistencyService> log)
+        ILogger<TimelineConsistencyService> log,
+        WorldStateLedger ledger)
     {
         this.dbFactory = dbFactory;
         this.log       = log;
+        this.ledger    = ledger;
     }
 
     /// <summary>
@@ -118,12 +121,11 @@ public class TimelineConsistencyService
             var entityIds = mentionRows.Select(m => m.EntityId).Distinct().ToList();
 
             // All EntityStateEvents for these entities (unbounded to story time —
-            // we need the full history to find the earliest death event).
-            var events = await db.EntityStateEvents.AsNoTracking()
-                .Where(e => entityIds.Contains(e.EntityId))
-                .OrderBy(e => e.EntityId)
-                .ThenBy(e => e.AtStoryTime)
-                .ToListAsync(ct);
+            // we need the full history to find the earliest death event). Delegates to
+            // WorldStateLedger.EventsForEntitiesAsync (2026-09-01) rather than querying
+            // EntityStateEvents directly — same query shape, now shared with the ledger's own
+            // API instead of duplicated here.
+            var events = await ledger.EventsForEntitiesAsync(entityIds, ct);
 
             if (events.Count == 0)
             {

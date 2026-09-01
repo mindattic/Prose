@@ -103,6 +103,66 @@ public class WorldStateLedger
     }
 
     /// <summary>
+    /// Multi-entity analogue of <see cref="SnapshotAsync"/> — the most recent value of every
+    /// (EntityId, AspectKey) pair at or before <paramref name="atStoryTime"/>, across
+    /// <paramref name="entityIds"/> (or every entity in the ledger when null/empty — expensive
+    /// on large DBs, scope this in production). Same
+    /// <c>OrderByDescending(AtStoryTime).ThenByDescending(Id)</c> tie-break as
+    /// <see cref="StateAtAsync"/>/<see cref="SnapshotAsync"/>.
+    ///
+    /// Added 2026-09-01 to replace <c>WorldStateAtBeatService</c>'s own ad-hoc version of this
+    /// query, which had two real bugs this method fixes: (1) no <c>Id</c> tie-break, so a tie on
+    /// <c>AtStoryTime</c> picked whichever row LINQ-to-Objects' stable sort happened to see
+    /// first — not necessarily the latest-inserted row; (2) it took the 2000 most-recent events
+    /// by time BEFORE grouping by (EntityId, AspectKey), which could silently drop the correct
+    /// "latest" value for an aspect whose owning entity's last update was older than the 2000th
+    /// most-recent event across every OTHER entity in an unscoped call. This method groups
+    /// first and only applies <paramref name="max"/> (if given) to the grouped RESULT — capping
+    /// how many aspect-states come back, never which raw events feed the grouping.
+    /// </summary>
+    public async Task<Dictionary<(Guid EntityId, string AspectKey), EntityStateEvent>> SnapshotManyAsync(
+        IEnumerable<Guid>? entityIds, DateTime atStoryTime, int? max = null, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var q = db.EntityStateEvents.AsNoTracking().Where(e => e.AtStoryTime <= atStoryTime);
+
+        var scopeIds = entityIds as ICollection<Guid> ?? entityIds?.ToList();
+        if (scopeIds is { Count: > 0 })
+            q = q.Where(e => scopeIds.Contains(e.EntityId));
+
+        var rows = await q.ToListAsync(ct);
+        IEnumerable<EntityStateEvent> latest = rows
+            .GroupBy(r => (r.EntityId, r.AspectKey))
+            .Select(g => g.OrderByDescending(r => r.AtStoryTime).ThenByDescending(r => r.Id).First());
+
+        if (max is int m && m > 0)
+            latest = latest.OrderByDescending(e => e.AtStoryTime).Take(m);
+
+        return latest.ToDictionary(e => (e.EntityId, e.AspectKey));
+    }
+
+    /// <summary>
+    /// Unbounded, chronologically-ordered event history for a set of entities — no time-window
+    /// cap, because callers of this method (e.g. <see cref="TimelineConsistencyService"/>) need
+    /// to find the EARLIEST event of some kind (first death, first injury) and a cap risks
+    /// silently missing it. For a bounded window use <see cref="EventsBetweenAsync"/> per entity
+    /// instead. Ordered by (EntityId, AtStoryTime) — events for one entity are contiguous and
+    /// chronological, matching what a per-entity history walk needs.
+    /// </summary>
+    public async Task<List<EntityStateEvent>> EventsForEntitiesAsync(
+        IEnumerable<Guid> entityIds, CancellationToken ct = default)
+    {
+        var ids = entityIds as ICollection<Guid> ?? entityIds.ToList();
+        if (ids.Count == 0) return [];
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        return await db.EntityStateEvents.AsNoTracking()
+            .Where(e => ids.Contains(e.EntityId))
+            .OrderBy(e => e.EntityId).ThenBy(e => e.AtStoryTime)
+            .ToListAsync(ct);
+    }
+
+    /// <summary>
     /// Chronological list of every event for one entity (or one aspect) within
     /// a time window. Used by the timeline UI's "show me the trail" view.
     /// </summary>

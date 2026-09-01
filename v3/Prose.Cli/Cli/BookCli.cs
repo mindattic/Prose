@@ -18,7 +18,8 @@ namespace Prose.Cli;
 ///   prose --book apply &lt;bookId&gt; &lt;findingId&gt;
 ///   prose --book export &lt;bookId&gt; [--format pdf|epub|html|md]
 ///   prose --book export-all --format &lt;pdf|epub|html|md&gt;
-///   prose --book archive &lt;bookId&gt; --confirm &lt;bookId&gt;
+///   prose --book delete &lt;bookId&gt; --confirm &lt;bookId&gt;   (permanent, hard-deletes the book row —
+///       for a non-destructive snapshot instead, use the separate `prose --archive-book` command)
 ///
 /// Every operation matches what the chapters page does in the UI — parity, not divergence.
 /// </summary>
@@ -46,7 +47,7 @@ public static class BookCli
             "apply"    => await CmdApply(rest, services.GetRequiredService<IBookReviewService>()),
             "export"   => CmdExport(rest, services.GetRequiredService<BookExportService>()),
             "export-all" => CmdExportAll(rest, services.GetRequiredService<BookExportService>()),
-            "archive"  => CmdArchive(rest, bookRepo),
+            "delete"   => CmdDelete(rest, bookRepo),
             _          => Fail($"unknown subcommand: {sub}"),
         };
     }
@@ -226,23 +227,23 @@ public static class BookCli
         }
     }
 
-    static int CmdArchive(string[] args, IBookRepository repo)
+    static int CmdDelete(string[] args, IBookRepository repo)
     {
-        if (args.Length == 0) return Fail("usage: --book archive <bookId> --confirm <bookId>");
+        if (args.Length == 0) return Fail("usage: --book delete <bookId> --confirm <bookId>");
         var book = ResolveBook(args[0], repo);
         if (book == null) return 1;
 
         // Require the user to retype the full book id as a confirmation token —
-        // matches the UI modal so accidental archives can't slip through automation.
+        // matches the UI modal so accidental deletions can't slip through automation.
         var confirm = ArgValue(args, "--confirm");
         if (string.IsNullOrEmpty(confirm) || !string.Equals(confirm, book.Id, StringComparison.Ordinal))
         {
-            Console.Error.WriteLine($"[book] archive aborted — pass --confirm {book.Id} to proceed");
+            Console.Error.WriteLine($"[book] delete aborted — pass --confirm {book.Id} to proceed");
             return 2;
         }
 
-        repo.ArchiveBook(book.Id);
-        Console.Error.WriteLine($"[book] archived '{book.Title}' ({book.Id})");
+        repo.HardDeleteBook(book.Id);
+        Console.Error.WriteLine($"[book] permanently deleted '{book.Title}' ({book.Id})");
         return 0;
     }
 

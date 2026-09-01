@@ -167,6 +167,10 @@ if (UniverseBootstrap.RequestedSlug == null
         // this outer CLI gate alone, not by anything at the data layer. Found live 2026-08-30
         // while running the /commit skill's mandatory pre-commit step.
         "--close-all-sessions",
+        // ArchitectureScanCli (2026-09-01): pure source-tree/filesystem scan (services, DI
+        // registrations, CLI verbs, MCP tools, scripts) — touches no DB row and no
+        // universe-scoped data at all, same rationale as --estimate-cost above.
+        "--architecture-scan",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -1565,6 +1569,15 @@ if (args.Contains("--reimport-node"))
 if (args.Contains("--archive-book"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("ArchiveBookCli", args);
+    return;
+}
+
+// CLI mode: automated inventory of every service/DI-registration/CLI-verb/MCP-tool/script in
+// the tree, plus name-overlap clusters worth a second look. See ArchitectureScanCli class doc.
+//   prose --architecture-scan [--json] [--out <file>] [--top <n>] [--force]
+if (args.Contains("--architecture-scan"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ArchitectureScanCli", args);
     return;
 }
 

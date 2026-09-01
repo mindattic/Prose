@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <!-- Re-uses every Core service (repos, BookOutlineService, SemanticIndexService,
-         MotifService, WritingQualityService, etc) via AddProseServices(). -->
+         AuthoredMotifRegistry, WritingQualityService, etc) via AddProseServices(). -->
     <ProjectReference Include="..\Prose.Core\Prose.Core.csproj" />
   </ItemGroup>
 

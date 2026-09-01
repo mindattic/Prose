@@ -7,23 +7,33 @@ using Prose.Core.Models;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// Persists per-book motif inventories. The Director registers new motifs as chapters
-/// are produced; the BookReviewService consults the inventory to flag chapters that
-/// drop a thread or to suggest callbacks. Stored as Settings('book_motifs:{bookId}').
+/// Persists per-book, named/described/kind-tagged motif inventories — manually or LLM-authored
+/// (via the <c>plant_motif</c>/<c>propose_motifs</c> MCP tools), not automatically extracted.
+/// Stored as Settings('book_motifs:{bookId}').
+///
+/// Renamed from <c>MotifService</c> 2026-09-01 (was mislabeled "legacy KV-store, do not
+/// extend" — it isn't: <c>get_motifs</c>/<c>plant_motif</c>/<c>propose_motifs</c> are live MCP
+/// tools with no equivalent in <see cref="MotifLedgerService"/>, which only does automatic
+/// per-beat occurrence counting, not named/described motifs a person or model registers by
+/// hand). The two are genuinely distinct features that happen to share a domain concept, not a
+/// legacy/replacement pair — see that class's own doc comment. <c>BookReviewService</c>'s and
+/// <c>AnalyzeWritingQualityImpl</c>'s dependency on this class via the legacy Book/Chapter model
+/// remains a known, documented limitation (see their own call sites) — do not read that as
+/// grounds to consider this whole class legacy.
 /// </summary>
-public class MotifService
+public class AuthoredMotifRegistry
 {
     private readonly SettingsKvStore kv;
-    private readonly ILogger<MotifService> log;
+    private readonly ILogger<AuthoredMotifRegistry> log;
 
-    public MotifService(SettingsKvStore kv, ILogger<MotifService> log)
+    public AuthoredMotifRegistry(SettingsKvStore kv, ILogger<AuthoredMotifRegistry> log)
     {
         this.kv = kv;
         this.log = log;
     }
 
     /// <summary>Test-fixture ctor — wraps a SQLite-in-memory factory.</summary>
-    public MotifService(IPathProvider paths, ILogger<MotifService> log)
+    public AuthoredMotifRegistry(IPathProvider paths, ILogger<AuthoredMotifRegistry> log)
         : this(new SettingsKvStore(Prose.Core.Data.TestDbFactory.For(paths, "settings")), log) { }
 
     private static string Key(string bookId) => $"book_motifs:{bookId}";
