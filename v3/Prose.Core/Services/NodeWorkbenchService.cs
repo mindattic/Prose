@@ -98,6 +98,21 @@ public class NodeWorkbenchService
     private readonly LogicSweepService? logicSweep;
     private readonly ContinuityExtractionService? continuityExtraction;
 
+    /// <summary>Call before every Beats.Remove/RemoveRange — Edge.ValidFromBeatId/
+    /// ValidUntilBeatId are NoAction (not SetNull; see ProseDbContext's Edge config comment for
+    /// why SQL Server refuses a second SET NULL path to the same table), so nothing at the DB
+    /// level clears these bounds automatically. A bound beat being deleted should still just
+    /// clear the bound, never block the delete or delete the edge — this does that explicitly,
+    /// as a single bulk UPDATE per column (no entities loaded into the change tracker).</summary>
+    public static async Task ClearEdgeBeatBoundsAsync(ProseDbContext db, IReadOnlyCollection<Guid> beatIds, CancellationToken ct)
+    {
+        if (beatIds.Count == 0) return;
+        await db.Edges.Where(e => e.ValidFromBeatId != null && beatIds.Contains(e.ValidFromBeatId.Value))
+            .ExecuteUpdateAsync(s => s.SetProperty(e => e.ValidFromBeatId, (Guid?)null), ct);
+        await db.Edges.Where(e => e.ValidUntilBeatId != null && beatIds.Contains(e.ValidUntilBeatId.Value))
+            .ExecuteUpdateAsync(s => s.SetProperty(e => e.ValidUntilBeatId, (Guid?)null), ct);
+    }
+
     // ── Reads ────────────────────────────────────────────────────────────
 
     /// <summary>Walk this node's tree (recursing into sub-nodes) and
@@ -119,7 +134,12 @@ public class NodeWorkbenchService
         return result;
     }
 
-    private static async Task WalkAsync(ProseDbContext db, Guid nodeId, List<OrderedBeat> acc, HashSet<Guid> visited, bool includeDisabled, CancellationToken ct)
+    /// <summary>internal, not private: <see cref="BeatRangeService"/> calls this directly
+    /// (static, no NodeWorkbenchService instance needed) rather than depending on
+    /// NodeWorkbenchService itself, which would create a DI cycle — NodeWorkbenchService's own
+    /// constructor already needs PostBeatValidationService → GearCarryEnforcer →
+    /// BeatRangeService.</summary>
+    internal static async Task WalkAsync(ProseDbContext db, Guid nodeId, List<OrderedBeat> acc, HashSet<Guid> visited, bool includeDisabled, CancellationToken ct)
     {
         if (!visited.Add(nodeId)) return; // cycle — already walked this node once.
 
@@ -776,6 +796,7 @@ public class NodeWorkbenchService
             if (exclusiveIds.Count > 0)
             {
                 var beats = await db.Beats.Where(b => exclusiveIds.Contains(b.Id)).ToListAsync(ct);
+                await ClearEdgeBeatBoundsAsync(db, beats.Select(b => b.Id).ToList(), ct);
                 db.Beats.RemoveRange(beats);
                 log.LogInformation("DeleteNodeAsync: deleting {Count} exclusive beat(s) for {NodeId}", beats.Count, id);
             }
@@ -1586,7 +1607,11 @@ public class NodeWorkbenchService
         if (!stillReferenced)
         {
             var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
-            if (beat != null) db.Beats.Remove(beat);
+            if (beat != null)
+            {
+                await ClearEdgeBeatBoundsAsync(db, [beatId], ct);
+                db.Beats.Remove(beat);
+            }
         }
         await db.SaveChangesAsync(ct);
         log.LogInformation("Removed beat {Beat} membership in node {Node}", beatId, nodeId);
@@ -2086,6 +2111,7 @@ public class NodeWorkbenchService
         if (!otherMemberships)
         {
             InvalidateAudioOnBeat(target);
+            await ClearEdgeBeatBoundsAsync(db, [beatId], ct);
             db.Beats.Remove(target);
         }
         await db.SaveChangesAsync(ct);
@@ -2116,6 +2142,7 @@ public class NodeWorkbenchService
                 var orphan = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
                 if (orphan != null)
                 {
+                    await ClearEdgeBeatBoundsAsync(db, [beatId], ct);
                     db.Beats.Remove(orphan);
                     await db.SaveChangesAsync(ct);
                 }
@@ -2128,7 +2155,11 @@ public class NodeWorkbenchService
         if (!stillReferenced)
         {
             var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
-            if (beat != null) db.Beats.Remove(beat);
+            if (beat != null)
+            {
+                await ClearEdgeBeatBoundsAsync(db, [beatId], ct);
+                db.Beats.Remove(beat);
+            }
         }
 
         await db.SaveChangesAsync(ct);

@@ -7,7 +7,10 @@ namespace Prose.Cli;
 
 /// <summary>
 /// prose --gear-check --slug &lt;nodeSlug&gt; --character &lt;characterId&gt; [--story-time "date"]
-/// Scans each beat of the node for gear usage that lacks a carry/wield edge.
+/// Scans each beat of the node for gear usage that lacks a carry/wield edge. Each beat is
+/// checked against its own reading-order position (Edge.ValidFromBeatId/ValidUntilBeatId, the
+/// live mechanism — see BeatRangeService) automatically; --story-time is the legacy DateTime
+/// path, confirmed dead in production, kept only for anyone with it in a saved command.
 /// </summary>
 public static class GearCheckCli
 {
@@ -43,8 +46,12 @@ public static class GearCheckCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == nodeSlug);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17). Slug OR
+        // NodeCode, same as ReadBeatsCli/other node-resolving CLIs — found live 2026-09-02:
+        // this only matched Slug, so the book's short code (e.g. "BCODA", what --list-books
+        // shows) never resolved here even though it works everywhere else.
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .FirstOrDefaultAsync(s => s.Slug == nodeSlug || s.NodeCode == nodeSlug);
         if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
         // Recurses past any nested Collection (2026-08-09 fix); searchIds is already in
@@ -65,7 +72,7 @@ public static class GearCheckCli
         int totalViolations = 0;
         foreach (var beat in beats)
         {
-            var violations = await enforcer.EnforceAsync(beat.Text ?? "", characterId.Value, storyTime);
+            var violations = await enforcer.EnforceAsync(beat.Text ?? "", characterId.Value, storyTime, asOfBeatId: beat.Id);
             if (violations.Count == 0) continue;
 
             Console.WriteLine($"\nBeat #{beat.Number}: {violations.Count} gear violation(s)");

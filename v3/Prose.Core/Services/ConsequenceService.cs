@@ -14,17 +14,24 @@ public class ConsequenceService
 {
     private readonly CharacterRepository charRepo;
     private readonly IDbContextFactory<ProseDbContext>? dbFactory;
+    private readonly BeatRangeService? beatRange;
 
     private static readonly string[] CarryRelTypes = ["carries", "wields", "wears", "owns"];
 
-    public ConsequenceService(CharacterRepository charRepo, IDbContextFactory<ProseDbContext>? dbFactory = null)
+    public ConsequenceService(CharacterRepository charRepo, IDbContextFactory<ProseDbContext>? dbFactory = null, BeatRangeService? beatRange = null)
     {
         this.charRepo = charRepo;
         this.dbFactory = dbFactory;
+        this.beatRange = beatRange;
     }
 
-    /// <summary>Build a constraint block for all characters in a scene.</summary>
-    public async Task<string> BuildConstraintsAsync(List<string> characterNames, DateTime? storyTime = null, CancellationToken ct = default)
+    /// <summary>Build a constraint block for all characters in a scene. <paramref name="asOfBeatId"/>
+    /// (2026-09-02) is the live mechanism — pass the beat currently being generated so gear
+    /// carried "as of this point in the reading order" is what's reported. <paramref name="storyTime"/>
+    /// is the legacy DateTime path, confirmed dead in production (nothing supplies it); kept only
+    /// for source compatibility. When both are null, falls back to "not InvalidatedAt" (today's
+    /// behavior, unchanged).</summary>
+    public async Task<string> BuildConstraintsAsync(List<string> characterNames, DateTime? storyTime = null, Guid? asOfBeatId = null, CancellationToken ct = default)
     {
         var constraints = new List<string>();
 
@@ -63,7 +70,7 @@ public class ConsequenceService
             // used to make GearCarryEnforcer raise false-positive violations for organically-
             // acquired gear the prompt never told the writer about). Falls back to the flat
             // Belongings fields only for a character with no carry edges yet (never graph-linked).
-            var gear = await BuildGearFromEdgesAsync(character.Id, storyTime, ct);
+            var gear = await BuildGearFromEdgesAsync(character.Id, storyTime, asOfBeatId, ct);
             if (gear.Count == 0)
             {
                 var belongings = character.Belongings;
@@ -99,11 +106,12 @@ public class ConsequenceService
     }
 
     /// <summary>Same query shape as GearCarryEnforcer.EnforceAsync — carries/wields/wears/owns
-    /// edges from this character, valid at storyTime (or currently valid when storyTime is
-    /// null). Returns an empty list (triggering the flat-Belongings fallback above) when this
-    /// process has no DbContextFactory (test fixtures), the character id doesn't parse, or the
-    /// character genuinely has no carry edges yet.</summary>
-    private async Task<List<string>> BuildGearFromEdgesAsync(string characterIdRaw, DateTime? storyTime, CancellationToken ct)
+    /// edges from this character, valid as of asOfBeatId (live path) or storyTime (legacy, dead
+    /// in production — see class doc), or currently valid when neither is supplied. Returns an
+    /// empty list (triggering the flat-Belongings fallback above) when this process has no
+    /// DbContextFactory (test fixtures), the character id doesn't parse, or the character
+    /// genuinely has no carry edges yet.</summary>
+    private async Task<List<string>> BuildGearFromEdgesAsync(string characterIdRaw, DateTime? storyTime, Guid? asOfBeatId, CancellationToken ct)
     {
         if (dbFactory == null) return [];
         if (!TryParseCharacterId(characterIdRaw, out var characterId)) return [];
@@ -115,6 +123,22 @@ public class ConsequenceService
             q = q.Where(e => (e.StoryValidFrom == null || e.StoryValidFrom <= storyTime) && (e.StoryValidUntil == null || e.StoryValidUntil > storyTime));
 
         var edges = await q.ToListAsync(ct);
+
+        // Beat-scoped validity (live path). Indeterminate (cross-book bound, or a flagged
+        // anachrony beat) → keep the edge: this builds a "don't contradict these facts" prompt
+        // block, not a violation detector, so the conservative default is to mention it.
+        if (asOfBeatId != null && beatRange != null && edges.Count > 0)
+        {
+            var kept = new List<Data.Entities.Edge>();
+            foreach (var e in edges)
+            {
+                if (e.ValidFromBeatId == null && e.ValidUntilBeatId == null) { kept.Add(e); continue; }
+                var result = await beatRange.CheckBeatInRangeAsync(asOfBeatId.Value, e.ValidFromBeatId, e.ValidUntilBeatId, ct);
+                if (result.InRange != false) kept.Add(e); // true or indeterminate (null) both keep
+            }
+            edges = kept;
+        }
+
         if (edges.Count == 0) return [];
 
         var gearIds = edges.Select(e => e.TargetId).ToHashSet();

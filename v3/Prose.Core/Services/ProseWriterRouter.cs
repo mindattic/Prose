@@ -446,7 +446,16 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(consequenceContext) && consequence != null && context.CharactersInScene.Count > 0)
         {
             await TraceStageAsync(nameof(ConsequenceService), async () =>
-                { consequenceContext = await consequence.BuildConstraintsAsync(context.CharactersInScene.ToList(), storyTime: null, ct); });
+                {
+                    // asOfBeatId (2026-09-02): the actual fix — storyTime was always null here
+                    // (nothing in the live pipeline ever produces a real in-fiction DateTime), so
+                    // gear/possession constraints never enforced any temporal window in
+                    // production. beatId is already known at this call site; beat-scoped validity
+                    // (Edge.ValidFromBeatId/ValidUntilBeatId via BeatRangeService) is the live
+                    // mechanism now.
+                    var asOfBeatId = beatId != Guid.Empty ? (Guid?)beatId : null;
+                    consequenceContext = await consequence.BuildConstraintsAsync(context.CharactersInScene.ToList(), storyTime: null, asOfBeatId, ct);
+                });
         }
 
         // ConsequenceEngine stage removed 2026-08-28: its KV store ('world_consequences') lost

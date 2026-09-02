@@ -1167,14 +1167,16 @@ Get node/edge counts for one universe's resident graph from the Prose Hub. Cheap
 
 ### `link_entities`
 
-Create a relationship edge between two entities via the Prose Hub - the generic edge-creation capability missing from RelationshipDiscoveryService's auto-link path (which only covers Character/CorpoNation/District/Faction/Weaponry/Equipment/Technology, not e.g. Transportation). Writes to the SQL Edges table and updates the Hub's resident graph immediately. Requires the Prose Hub to be running on http://127.0.0.1:5900.
+Create a relationship edge between two entities via the Prose Hub - the generic edge-creation capability missing from RelationshipDiscoveryService's auto-link path (which only covers Character/CorpoNation/District/Faction/Weaponry/Equipment/Technology, not e.g. Transportation). Writes to the SQL Edges table and updates the Hub's resident graph immediately. relationType is normalized (trim/lowercase/underscore) and resolved against the RelationTypeAliases registry before writing, so a registered wording (e.g. 'has' -> 'owns') collapses onto the same canonical RelationType automatically. The response's 'possibleDuplicate' field, when present, means a live edge already exists for this (source, target) pair under a DIFFERENT RelationType wording - check it before assuming this call created a new fact: if it's the same relationship reworded, prefer reusing the existing edge (or run prose --merge-edge --keep <id> --dedupe <id> --register-alias afterward) rather than leaving two edges for one relationship. validFromBeatId/validUntilBeatId (2026-09-02) bound this edge's truth to a reading-order span within ONE book (e.g. 'Lyra has the Oculus starting at this beat' / 'Kyle no longer has the motorcycle from this beat on') - replaces the dead legacy DateTime story-time mechanism. Omit both for an edge that's just always true. To close/adjust the window on an edge that ALREADY exists (the common case - most facts start out unbounded, then later the story establishes when they end), use prose --set-edge-validity instead of calling this again - a repeat call with different bounds does NOT change the existing edge (see the response's 'validityNote' when that happens). Requires the Prose Hub to be running on http://127.0.0.1:5900.
 
 - `source` (string, required) — Source entity GUID.
 - `target` (string, required) — Target entity GUID.
-- `relationType` (string, required) — Relation type, e.g. 'made_by', 'owns', 'based_in'.
+- `relationType` (string, required) — Relation type, e.g. 'made_by', 'owns', 'based_in'. Normalized + alias-resolved server-side.
 - `sentiment` (string, optional) — Optional: 'positive' | 'negative' | 'neutral' (default).
 - `description` (string, optional) — Optional free-text description of the relationship.
 - `universe` (string, optional) — Optional universe slug to scope the write (glmz|scry|gspl). Uses the Hub's default if omitted.
+- `validFromBeatId` (string, optional) — Optional beat GUID: this edge is valid starting at this beat (inclusive), within that beat's own book. Omit for valid-from-the-start.
+- `validUntilBeatId` (string, optional) — Optional beat GUID: this edge is valid up to (exclusive of) this beat, within that beat's own book. Omit for valid-to-the-end.
 
 ## Ledger
 
@@ -2318,7 +2320,8 @@ Scans prose text for gear usage verbs (drew, fired, aimed…) and checks whether
 
 - `beatText` (string, required) — Beat prose text to scan
 - `characterId` (string, required) — Character entity GUID (the POV/subject character)
-- `storyTime` (string, optional) — Story-date for edge validation (ISO 8601). Omit to use all-time carry edges.
+- `storyTime` (string, optional) — Story-date for edge validation (ISO 8601). Legacy — confirmed dead in the live pipeline (2026-09-02); prefer beatId. Omit to use all-time carry edges.
+- `beatId` (string, optional) — Beat GUID this text belongs to — the live mechanism. Filters carry edges by beat-scoped validity (Edge.ValidFromBeatId/ValidUntilBeatId) via reading-order position. Omit for ad hoc text with no real beat.
 
 ### `check_prose`
 

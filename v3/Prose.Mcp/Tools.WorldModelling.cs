@@ -96,11 +96,15 @@ public class WorldModellingTools(
     public Task<string> CheckGearCarry(
         [Description("Beat prose text to scan")] string beatText,
         [Description("Character entity GUID (the POV/subject character)")] string characterId,
-        [Description("Story-date for edge validation (ISO 8601). Omit to use all-time carry edges.")] string? storyTime = null) =>
-        hub.InvokeAsync(nameof(WorldModellingTools), nameof(CheckGearCarryImpl), new { beatText, characterId, storyTime });
+        [Description("Story-date for edge validation (ISO 8601). Legacy — confirmed dead in the " +
+            "live pipeline (2026-09-02); prefer beatId. Omit to use all-time carry edges.")] string? storyTime = null,
+        [Description("Beat GUID this text belongs to — the live mechanism. Filters carry edges by " +
+            "beat-scoped validity (Edge.ValidFromBeatId/ValidUntilBeatId) via reading-order position. " +
+            "Omit for ad hoc text with no real beat.")] string? beatId = null) =>
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(CheckGearCarryImpl), new { beatText, characterId, storyTime, beatId });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> CheckGearCarryImpl(string beatText, string characterId, string? storyTime = null)
+    public async Task<string> CheckGearCarryImpl(string beatText, string characterId, string? storyTime = null, string? beatId = null)
     {
         if (!Guid.TryParse(characterId, out var cid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", characterId }, CanonTools.JsonOpts);
@@ -108,7 +112,10 @@ public class WorldModellingTools(
         DateTime? st = null;
         if (storyTime != null && DateTime.TryParse(storyTime, out var dt)) st = dt;
 
-        var violations = await gearEnforcer.EnforceAsync(beatText, cid, st);
+        Guid? asOfBeatId = null;
+        if (beatId != null && Guid.TryParse(beatId, out var bid)) asOfBeatId = bid;
+
+        var violations = await gearEnforcer.EnforceAsync(beatText, cid, st, asOfBeatId);
         return JsonSerializer.Serialize(violations.Select(v => new
         {
             gear = v.GearName,

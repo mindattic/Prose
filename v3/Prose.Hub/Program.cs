@@ -542,21 +542,91 @@ app.MapPost("/api/edges", async (EdgeRequest req, UniverseGraphService graph, ID
     if (uid != null) uc.SetFlowUniverse(uid);
 
     await using var db = await dbFactory.CreateDbContextAsync();
-    db.Set<Edge>().Add(new Edge
+
+    // Normalize + alias-resolve the free-text RelationType so "owns"/"has"/"Has " etc. converge
+    // on one wording instead of each producing its own Edge row (RelationTypeAlias registry —
+    // see prose --relation-aliases / prose --merge-edge --register-alias).
+    var normalized = req.RelationType.Trim().ToLowerInvariant().Replace(' ', '_');
+    var alias = await db.Set<RelationTypeAlias>().AsNoTracking()
+        .FirstOrDefaultAsync(a => a.Alias.ToLower() == normalized);
+    var resolvedRelationType = alias?.CanonicalRelationType ?? normalized;
+
+    // Once normalization/alias-resolution is in play, the SAME resolved wording for the SAME
+    // pair will legitimately be submitted more than once (e.g. two callers both saying "owns",
+    // or an alias resolving two different wordings onto the same canonical string). That case
+    // is unambiguous — it's the identical fact, not a judgment call — so the write is made
+    // idempotent: return the existing live edge instead of inserting a second copy of it.
+    var exactMatch = await db.Edges
+        .Where(e => e.SourceId == req.Source && e.TargetId == req.Target && e.InvalidatedAt == null)
+        .Where(e => e.RelationType.ToLower() == resolvedRelationType)
+        .FirstOrDefaultAsync();
+
+    if (exactMatch != null)
+    {
+        if (uid != null) uc.SetFlowUniverse(null);
+        // Idempotent return never silently changes the existing edge's validity window — if the
+        // caller asked for different beat bounds than what's stored, that's an intentional
+        // adjustment, not a duplicate write, and belongs to prose --set-edge-validity, not here.
+        var boundsDiffer = req.ValidFromBeatId != exactMatch.ValidFromBeatId || req.ValidUntilBeatId != exactMatch.ValidUntilBeatId;
+        return Results.Ok(new
+        {
+            ok = true,
+            graphRefreshed = false,
+            edgeId = exactMatch.Id,
+            relationType = exactMatch.RelationType,
+            alreadyExists = true,
+            possibleDuplicate = (object?)null,
+            validityNote = boundsDiffer && (req.ValidFromBeatId != null || req.ValidUntilBeatId != null)
+                ? $"This edge already exists with ValidFromBeatId={exactMatch.ValidFromBeatId}, ValidUntilBeatId={exactMatch.ValidUntilBeatId} — " +
+                  "the bounds you passed here were NOT applied (an idempotent return never changes existing state). " +
+                  $"To adjust the window: prose --set-edge-validity --edge {exactMatch.Id} [--slug <slug> --from-beat-number <N>] [--until-beat-number <N>]"
+                : null,
+        });
+    }
+
+    // Soft gate, not a hard block, for a DIFFERENT wording on the same pair: a script can't
+    // safely tell "owns" and "wields" apart for a given pair (both can be true at once), only a
+    // human/LLM with story knowledge can — so this is surfaced as a warning, the write still
+    // goes through, and the caller decides whether to prose --merge-edge the two together.
+    var possibleDuplicate = await db.Edges.AsNoTracking()
+        .Where(e => e.SourceId == req.Source && e.TargetId == req.Target && e.InvalidatedAt == null)
+        .Select(e => new { e.Id, e.RelationType, e.Description })
+        .FirstOrDefaultAsync();
+
+    var newEdge = new Edge
     {
         SourceId = req.Source,
         TargetId = req.Target,
-        RelationType = req.RelationType,
+        RelationType = resolvedRelationType,
         Sentiment = req.Sentiment ?? "neutral",
         Weight = req.Weight ?? 1.0,
         Description = req.Description ?? "",
         Source = "hub-api",
-    });
+        ValidFromBeatId = req.ValidFromBeatId,
+        ValidUntilBeatId = req.ValidUntilBeatId,
+    };
+    db.Set<Edge>().Add(newEdge);
     await db.SaveChangesAsync();
 
     var refreshed = graph.EnsureFresh();
     if (uid != null) uc.SetFlowUniverse(null);
-    return Results.Ok(new { ok = true, graphRefreshed = refreshed });
+    return Results.Ok(new
+    {
+        ok = true,
+        graphRefreshed = refreshed,
+        edgeId = newEdge.Id,
+        relationType = resolvedRelationType,
+        alreadyExists = false,
+        possibleDuplicate = possibleDuplicate == null ? null : new
+        {
+            edgeId = possibleDuplicate.Id,
+            relationType = possibleDuplicate.RelationType,
+            description = possibleDuplicate.Description,
+            hint = "Same (Source, Target) pair already has a live edge under a different RelationType wording. " +
+                   "If this is the same relationship reworded, run: prose --merge-edge --keep <id> --dedupe <id> " +
+                   "[--as <canonicalRelationType>] --register-alias",
+        },
+    });
 })
     .AddEndpointFilter<HubApiKeyFilter>();
 
@@ -636,7 +706,7 @@ HubConsoleEcho.Out.WriteLine();
 
 app.Run();
 
-sealed record EdgeRequest(Guid Source, Guid Target, string RelationType, string? Sentiment, double? Weight, string? Description, string? Universe);
+sealed record EdgeRequest(Guid Source, Guid Target, string RelationType, string? Sentiment, double? Weight, string? Description, string? Universe, Guid? ValidFromBeatId = null, Guid? ValidUntilBeatId = null);
 
 sealed record OutboxEnqueueRequest(string Kind, string Summary, object? Data);
 

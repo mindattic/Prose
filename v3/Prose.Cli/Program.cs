@@ -108,6 +108,17 @@ if (UniverseBootstrap.RequestedSlug == null
         // Takes two explicit GUIDs and operates on those rows directly — no ambient scope to
         // resolve (see MergeEntityCli).
         "--merge-entity",
+        // Takes two explicit numeric Edge ids and operates on those rows directly — same shape
+        // as --merge-entity above (see MergeEdgeCli).
+        "--merge-edge",
+        // Takes an explicit numeric Edge id directly; --slug (when passed, for beat-number
+        // resolution) is looked up via IgnoreQueryFilters() same as MoveBeatToNodeCli — no
+        // ambient scope needed (see SetEdgeValidityCli).
+        "--set-edge-validity",
+        // RelationTypeAliases (added alongside --merge-edge): genuinely global, no UniverseId
+        // column at all — relation-type wording ("owns"/"has") isn't story-specific, same
+        // rationale as --banned-names above.
+        "--relation-aliases",
         // Explicit --id/--slug/--all targeting via IgnoreQueryFilters(), never an ambient
         // universe default — see ArchiveBookCli/TagEntitiesCli's own doc comments.
         "--archive-book", "--tag-entities",
@@ -473,6 +484,17 @@ if (args.Contains("--deprecated-names"))
 if (args.Contains("--banned-names"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BannedNameCli", args);
+    return;
+}
+
+// CLI mode: CRUD for RelationTypeAliases — normalizes link_entities free-text RelationType
+// wording (e.g. "has" -> "owns") so the same relationship doesn't fork into multiple Edge rows.
+//   prose --relation-aliases --list
+//   prose --relation-aliases --add --alias <wording> --canonical <standardizedRelationType> [--notes <notes>]
+//   prose --relation-aliases --remove --id <id>
+if (args.Contains("--relation-aliases"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RelationAliasCli", args);
     return;
 }
 
@@ -2503,6 +2525,34 @@ if (args.Contains("--reconcile-book-entities"))
 if (args.Contains("--merge-entity"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("MergeEntityCli", args);
+    return;
+}
+
+// prose --scan-edge-duplicates --universe <slug> [--json]
+// Report-only: flags (Source, Target) pairs with more than one live RelationType wording
+// (link_entities free-text drift, e.g. "owns" vs "has"). See ScanEdgeDuplicatesCli.
+if (args.Contains("--scan-edge-duplicates"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ScanEdgeDuplicatesCli", args);
+    return;
+}
+
+// prose --merge-edge --keep <edgeId> --dedupe <edgeId> [--as <canonicalRelationType>] [--register-alias]
+// The execution half of --scan-edge-duplicates — collapses two Edge rows describing the same
+// relationship under different wording into one. See MergeEdgeCli.
+if (args.Contains("--merge-edge"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MergeEdgeCli", args);
+    return;
+}
+
+// prose --set-edge-validity --edge <edgeId> [--slug <slug>] [--from-beat-number <N>]
+//        [--until-beat-number <N>] [--clear-from] [--clear-until]
+// Sets/adjusts/clears an existing edge's beat-scoped validity window (2026-09-02, replaces the
+// dead DateTime story-time mechanism). See SetEdgeValidityCli.
+if (args.Contains("--set-edge-validity"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetEdgeValidityCli", args);
     return;
 }
 

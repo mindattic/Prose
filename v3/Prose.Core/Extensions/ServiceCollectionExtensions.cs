@@ -456,6 +456,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<DriftAuditService>();
         services.AddSingleton<AskService>();
         services.AddSingleton<SceneContextBuilder>();
+        services.AddSingleton<BeatRangeService>();
         services.AddSingleton<ConsequenceService>();
         services.AddSingleton<NarrativeSummaryService>();
         services.AddSingleton<ExportService>();

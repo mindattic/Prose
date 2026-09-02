@@ -196,6 +196,7 @@ public static class ReimportNodeCli
         if (orphanedBeatIds.Count > 0)
         {
             var orphanedBeats = await db.Beats.Where(b => orphanedBeatIds.Contains(b.Id)).ToListAsync();
+            await Prose.Core.Services.NodeWorkbenchService.ClearEdgeBeatBoundsAsync(db, orphanedBeatIds, default);
             db.Beats.RemoveRange(orphanedBeats);
         }
 

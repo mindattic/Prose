@@ -84,7 +84,7 @@ public class PostBeatValidationService(
             foreach (var charId in chars)
             {
                 ct.ThrowIfCancellationRequested();
-                gearCount += await FileGearViolationsAsync(text, nodeSlug, charId, storyTime, ct);
+                gearCount += await FileGearViolationsAsync(text, nodeSlug, charId, storyTime, beatId, ct);
                 if (checkBehavior)
                     behaviorCount += await FileBehaviorViolationsAsync(text, nodeSlug, charId, ct);
             }
@@ -126,11 +126,11 @@ public class PostBeatValidationService(
     }
 
     private async Task<int> FileGearViolationsAsync(
-        string text, string nodeSlug, Guid charId, DateTime? storyTime, CancellationToken ct)
+        string text, string nodeSlug, Guid charId, DateTime? storyTime, Guid asOfBeatId, CancellationToken ct)
     {
         try
         {
-            var violations = await gearEnforcer.EnforceAsync(text, charId, storyTime, ct);
+            var violations = await gearEnforcer.EnforceAsync(text, charId, storyTime, asOfBeatId, ct);
             foreach (var v in violations)
             {
                 findings.Upsert(

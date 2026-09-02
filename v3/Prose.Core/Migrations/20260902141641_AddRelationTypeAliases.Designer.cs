@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prose.Core.Data;
 
@@ -11,9 +12,11 @@ using Prose.Core.Data;
 namespace Prose.Core.Migrations
 {
     [DbContext(typeof(ProseDbContext))]
-    partial class ProseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260902141641_AddRelationTypeAliases")]
+    partial class AddRelationTypeAliases
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -4664,22 +4667,12 @@ namespace Prose.Core.Migrations
                     b.Property<Guid>("UniverseId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("ValidFromBeatId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("ValidUntilBeatId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<double>("Weight")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
 
                     b.HasIndex("UniverseId");
-
-                    b.HasIndex("ValidFromBeatId");
-
-                    b.HasIndex("ValidUntilBeatId");
 
                     b.HasIndex("SourceId", "RelationType")
                         .HasDatabaseName("IX_Edges_Source_Current")
@@ -12348,16 +12341,6 @@ namespace Prose.Core.Migrations
                         .HasForeignKey("TargetId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.HasOne("Prose.Core.Data.Entities.Beat", null)
-                        .WithMany()
-                        .HasForeignKey("ValidFromBeatId")
-                        .OnDelete(DeleteBehavior.NoAction);
-
-                    b.HasOne("Prose.Core.Data.Entities.Beat", null)
-                        .WithMany()
-                        .HasForeignKey("ValidUntilBeatId")
-                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("SourceEntity");
 

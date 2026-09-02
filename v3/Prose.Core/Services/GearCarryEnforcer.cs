@@ -50,19 +50,29 @@ public class GearCarryEnforcer
     ];
 
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly BeatRangeService? beatRange;
 
-    public GearCarryEnforcer(IDbContextFactory<ProseDbContext> dbFactory)
-        => this.dbFactory = dbFactory;
+    public GearCarryEnforcer(IDbContextFactory<ProseDbContext> dbFactory, BeatRangeService? beatRange = null)
+    {
+        this.dbFactory = dbFactory;
+        this.beatRange = beatRange;
+    }
 
     /// <summary>
     /// Scans <paramref name="beatText"/> for gear usage verbs and checks whether
-    /// <paramref name="characterId"/> carries each gear item at <paramref name="storyTime"/>.
-    /// Returns a violation for each gear item used but not found in the carry edges.
+    /// <paramref name="characterId"/> carries each gear item as of <paramref name="asOfBeatId"/>
+    /// (2026-09-02, the live mechanism — beat-scoped Edge validity) or at
+    /// <paramref name="storyTime"/> (legacy DateTime path, confirmed dead in production — kept
+    /// for source compatibility). Returns a violation for each gear item used but not found in
+    /// the carry edges. An indeterminate beat-range result (cross-book bound, or a flagged
+    /// anachrony beat) never raises a violation — a false positive off an unresolved flashback
+    /// beat is worse than a missed one.
     /// </summary>
     public async Task<List<GearUsageViolation>> EnforceAsync(
         string beatText,
         Guid characterId,
         DateTime? storyTime = null,
+        Guid? asOfBeatId = null,
         CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(beatText)) return [];
@@ -87,6 +97,21 @@ public class GearCarryEnforcer
                 (e.StoryValidUntil == null || e.StoryValidUntil > storyTime));
 
         var edges = await carryQ.ToListAsync(ct);
+
+        if (asOfBeatId != null && beatRange != null && edges.Count > 0)
+        {
+            var kept = new List<Data.Entities.Edge>();
+            foreach (var e in edges)
+            {
+                if (e.ValidFromBeatId == null && e.ValidUntilBeatId == null) { kept.Add(e); continue; }
+                var result = await beatRange.CheckBeatInRangeAsync(asOfBeatId.Value, e.ValidFromBeatId, e.ValidUntilBeatId, ct);
+                // Indeterminate (null) keeps the edge — never manufacture a false-positive
+                // violation off an unresolved flashback/cross-book bound.
+                if (result.InRange != false) kept.Add(e);
+            }
+            edges = kept;
+        }
+
         var gearEntityIds = edges.Select(e => e.TargetId).ToHashSet();
 
         // Load entity names for carried gear

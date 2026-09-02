@@ -660,6 +660,10 @@ public class ProseDbContext : DbContext
     // Services.WriteGate.BannedNameSyncCheck, not just flagged after the fact in prose scans.
     public DbSet<BannedName>             BannedNames             => Set<BannedName>();
 
+    // Relationship-edge wording normalization registry — enforced at write time by the
+    // POST /api/edges Hub endpoint so "owns"/"has"/etc. collapse to one RelationType.
+    public DbSet<RelationTypeAlias>      RelationTypeAliases     => Set<RelationTypeAlias>();
+
     // Master Glossary — universe-scoped acronym/term definitions for back-matter glossary
     // generation (Glossary.htm/.json/.txt). Per-book glossaries are a live-detected subset,
     // not a stored join — see GlossaryService.
@@ -1341,6 +1345,19 @@ public class ProseDbContext : DbContext
                 .HasForeignKey(x => x.SourceId).OnDelete(DeleteBehavior.Restrict);
             e.HasOne(x => x.TargetEntity).WithMany(x => x.IncomingEdges)
                 .HasForeignKey(x => x.TargetId).OnDelete(DeleteBehavior.Restrict);
+            // Beat-scoped validity (2026-09-02, replaces the dead StoryValidFrom/Until DateTime
+            // mechanism). NoAction on BOTH, not SetNull like every other optional-reference FK in
+            // this file — SQL Server refuses a second SET NULL/CASCADE path between the same pair
+            // of tables ("may cause cycles or multiple cascade paths", error 1785; confirmed live:
+            // the first FK below applied fine, the second failed migration application outright).
+            // A bound beat being deleted should still just clear the bound, never block the
+            // delete or delete the edge — that's now handled explicitly in application code at
+            // every Beats.Remove/RemoveRange call site (NodeWorkbenchService.ClearEdgeBeatBoundsAsync),
+            // same category of fix as the recent beat-delete FK cascade work (a7adf1aa4).
+            e.HasOne<Beat>().WithMany()
+                .HasForeignKey(x => x.ValidFromBeatId).OnDelete(DeleteBehavior.NoAction);
+            e.HasOne<Beat>().WithMany()
+                .HasForeignKey(x => x.ValidUntilBeatId).OnDelete(DeleteBehavior.NoAction);
             e.HasIndex(x => new { x.SourceId, x.RelationType, x.StoryValidFrom });
             e.HasIndex(x => new { x.TargetId, x.RelationType, x.StoryValidFrom });
             e.HasIndex(x => x.UniverseId);
@@ -3003,6 +3020,18 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Notes).HasMaxLength(512);
             e.Property(x => x.AddedAt).HasDefaultValueSql("GETUTCDATE()");
             e.HasIndex(x => x.Name).IsUnique();
+        });
+
+        // ── Relationship-edge wording normalization (no universe scope) ────────
+        b.Entity<RelationTypeAlias>(e =>
+        {
+            e.ToTable("RelationTypeAliases");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Alias).HasMaxLength(120).IsRequired();
+            e.Property(x => x.CanonicalRelationType).HasMaxLength(80).IsRequired();
+            e.Property(x => x.Notes).HasMaxLength(512);
+            e.Property(x => x.AddedAt).HasDefaultValueSql("GETUTCDATE()");
+            e.HasIndex(x => x.Alias).IsUnique();
         });
 
         b.Entity<Survey>(e =>
