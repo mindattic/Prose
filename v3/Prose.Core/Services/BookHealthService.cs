@@ -1110,7 +1110,12 @@ public class BookHealthService(
     /// for this book (nothing runs it automatically per beat save yet) — HasAnyClaimsForBook
     /// distinguishes "extracted and clean" from "never extracted," same honest-gap pattern as
     /// SacredFlawAsync's no-pov-data finding.</summary>
-    private Task FactLedgerAsync(string slug, CancellationToken ct)
+    /// <summary>Public (2026-09-01) so a narrow, zero-LLM-cost CLI command
+    /// (<c>prose --fact-ledger-refresh</c>) can re-run just this check on demand — the only
+    /// existing entry point was the cost-gated <c>--audit-book --deep</c> bundle (~15 other
+    /// LLM-call checks alongside this free one), which made "did my ContinuityService fix
+    /// actually shrink this book's fact-ledger count" a ~$70 question to answer.</summary>
+    public Task FactLedgerAsync(string slug, CancellationToken ct)
     {
         ct.ThrowIfCancellationRequested();
 

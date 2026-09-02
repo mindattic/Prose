@@ -1725,6 +1725,24 @@ if (args.Contains("--findings"))
     return;
 }
 
+// prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of just the
+// fact-ledger check (see FactLedgerRefreshCli's own doc comment). Not cost-gated: it is the
+// deliberate cheap alternative to the cost-gated --audit-book --deep bundle.
+if (args.Contains("--fact-ledger-refresh"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FactLedgerRefreshCli", args);
+    return;
+}
+
+// prose --orphan-beats [--min-number N] [--max-number N] [--limit N] [--contains "text"] —
+// read-only diagnostic: Beats rows with no BeatNodes membership. See OrphanBeatsCli's own doc
+// comment for why this exists (VIGL fact-ledger investigation, 2026-09-01).
+if (args.Contains("--orphan-beats"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("OrphanBeatsCli", args);
+    return;
+}
+
 // prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1,type2] [--as-of date]
 if (args.Contains("--entity-tree"))
 {

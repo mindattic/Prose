@@ -202,7 +202,10 @@ public class TrinityReconciliationService(
         // that's just a different-granularity restatement of the same fact (found live 2026-08-19/20
         // to be the majority case) never reaches a panel vote or an edit attempt there.
         var groups = singleGroupOnly
-            ? continuityStore.GetContradictionGroups(bookSlug).Where(g => g.EntityId == onlyEntityId && g.Predicate == onlyPredicate).ToList()
+            // excludeVolatile: false — the operator named this exact (entity, predicate)
+            // deliberately (see the comment above); a volatile-predicate exclusion added for
+            // auto-discovery must not silently empty out an explicit request (2026-09-01).
+            ? continuityStore.GetContradictionGroups(bookSlug, excludeVolatile: false).Where(g => g.EntityId == onlyEntityId && g.Predicate == onlyPredicate).ToList()
             : await Compatibility.GetGenuineContradictionGroupsAsync(bookSlug, ct);
 
         foreach (var group in groups)

@@ -196,4 +196,32 @@ public class ContinuityServiceTests
         var all = svc.GetContradictionGroups();
         Assert.That(all.Select(g => g.EntityId), Is.SupersetOf(new[] { entityA, entityB }));
     }
+
+    [Test]
+    public void GetContradictionGroups_VolatilePredicate_ExcludedByDefault()
+    {
+        // 2026-09-01: traveling_with is scene-scoped state (companions change chapter to
+        // chapter) — the ledger must not treat two different chapters' rosters as a
+        // permanent contradiction. Pins the VIGL false-positive class (14 of 24 open
+        // CONTINUITY-VIOLATION findings were exactly this predicate).
+        var entityId = Guid.NewGuid().ToString("N");
+        svc.Upsert(MakeClaim(entityId, "traveling_with", "Orim, a seventy-year-old scryer, and a Rod"));
+        svc.Upsert(MakeClaim(entityId, "traveling_with", "Orim, Doyle, and Wren"));
+
+        var groups = svc.GetContradictionGroups();
+        Assert.That(groups.Select(g => g.EntityId), Does.Not.Contain(entityId));
+    }
+
+    [Test]
+    public void GetContradictionGroups_VolatilePredicate_ExcludeVolatileFalse_ReturnsRawGroup()
+    {
+        // TrinityReconciliationService's --only-entity/--only-predicate path names an exact
+        // group deliberately and must get it back even if it's volatile-class.
+        var entityId = Guid.NewGuid().ToString("N");
+        svc.Upsert(MakeClaim(entityId, "traveling_with", "Orim, a seventy-year-old scryer, and a Rod"));
+        svc.Upsert(MakeClaim(entityId, "traveling_with", "Orim, Doyle, and Wren"));
+
+        var groups = svc.GetContradictionGroups(excludeVolatile: false);
+        Assert.That(groups.Select(g => g.EntityId), Does.Contain(entityId));
+    }
 }

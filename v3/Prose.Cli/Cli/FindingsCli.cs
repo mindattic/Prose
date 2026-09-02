@@ -1,20 +1,32 @@
-﻿using Prose.Core.Services;
+﻿using Microsoft.EntityFrameworkCore;
+using Prose.Core.Data;
+using Prose.Core.Interfaces;
+using Prose.Core.Services;
 
 namespace Prose.Cli;
 
 /// <summary>
 /// CLI surface for the autonomous quality findings inbox.
 ///
-///   prose --findings list [--status new|triaged|applied|dismissed]   List findings.
+///   prose --findings list [--status new|triaged|applied|dismissed] [--node &lt;slug-or-code&gt;]
+///                                                                    List findings, optionally
+///                                                                    scoped to one book. Without
+///                                                                    --node, thousands of
+///                                                                    High-severity findings from
+///                                                                    other books can bury a
+///                                                                    single book's own (esp.
+///                                                                    Medium-severity) findings
+///                                                                    past the default limit.
 ///   prose --findings stats                                            Counts per status.
 ///   prose --findings show &lt;id&gt;                                       Full detail for one finding.
 ///   prose --findings apply &lt;id&gt;                                      Apply the suggested fix to the source file.
 ///   prose --findings dismiss &lt;id&gt;                                    Mark dismissed.
 ///   prose --findings triage &lt;id&gt;                                     Mark triaged.
 ///   prose --findings scan &lt;file-path&gt;                                Manually trigger a quality scan on a chapter file.
-///   prose --findings bulk-dismiss [--category &lt;cat&gt;] [--prefix &lt;text&gt;]  Dismiss every open finding
-///                                                                      matching the filter(s). At least
-///                                                                      one filter is required.
+///   prose --findings bulk-dismiss [--category &lt;cat&gt;] [--prefix &lt;text&gt;] [--node &lt;slug-or-code&gt;]
+///                                                                      Dismiss every open finding
+///                                                                      matching the filter(s). At
+///                                                                      least one filter is required.
 /// </summary>
 public static class FindingsCli
 {
@@ -29,21 +41,39 @@ public static class FindingsCli
 
         return sub switch
         {
-            "list"         => CmdList(rest, store),
+            "list"         => await CmdList(rest, store, services),
             "stats"        => CmdStats(store),
             "show"         => CmdShow(rest, store),
             "apply"        => await CmdApply(rest, services),
             "dismiss"      => CmdSetStatus(rest, store, FindingStatus.Dismissed),
             "triage"       => CmdSetStatus(rest, store, FindingStatus.Triaged),
             "scan"         => await CmdScan(rest, services),
-            "bulk-dismiss" => await CmdBulkDismiss(rest, store),
+            "bulk-dismiss" => await CmdBulkDismiss(rest, store, services),
             _              => Fail($"unknown subcommand: {sub}"),
         };
     }
 
     static int Fail(string msg) { Console.Error.WriteLine($"[findings] {msg}"); PrintUsage(); return 1; }
 
-    static int CmdList(string[] rest, FindingsService store)
+    /// <summary>Resolves a node ref (GUID, Slug, or NodeCode) to its Findings-table FilePath
+    /// prefix ("node:{slug}") — same "accept id or slug" convention ContinuityCli's --node uses,
+    /// extended to also accept NodeCode since that's the identifier most users actually know
+    /// (see ExportNodeCli's documented Slug-only gotcha).</summary>
+    static async Task<string?> ResolveNodeFilePathPrefixAsync(string nodeRef, IServiceProvider services)
+    {
+        var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+        await using var db = await dbFactory.CreateDbContextAsync();
+        // Guid.TryParse can't run inside an EF expression-tree lambda — resolve it first,
+        // then branch, same pattern ContinuityCli's --node handling already uses.
+        var node = Guid.TryParse(nodeRef, out var nodeId)
+            ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId)
+            : await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+                .FirstOrDefaultAsync(n => n.Slug == nodeRef || n.NodeCode == nodeRef);
+        if (node is null) return null;
+        return $"node:{(string.IsNullOrEmpty(node.Slug) ? node.Id.ToString("N") : node.Slug)}";
+    }
+
+    static async Task<int> CmdList(string[] rest, FindingsService store, IServiceProvider services)
     {
         FindingStatus? filter = null;
         var sIdx = Array.IndexOf(rest, "--status");
@@ -51,10 +81,24 @@ public static class FindingsCli
             && Enum.TryParse<FindingStatus>(rest[sIdx + 1], ignoreCase: true, out var parsed))
             filter = parsed;
 
-        var items = store.List(filter, limit: 200);
+        string? filePathPrefix = null;
+        var nIdx = Array.IndexOf(rest, "--node");
+        if (nIdx >= 0 && nIdx + 1 < rest.Length)
+        {
+            var nodeRef = rest[nIdx + 1];
+            filePathPrefix = await ResolveNodeFilePathPrefixAsync(nodeRef, services);
+            if (filePathPrefix is null) return Fail($"node not found: {nodeRef}");
+        }
+
+        var limit = 200;
+        var lIdx = Array.IndexOf(rest, "--limit");
+        if (lIdx >= 0 && lIdx + 1 < rest.Length && int.TryParse(rest[lIdx + 1], out var parsedLimit))
+            limit = parsedLimit;
+
+        var items = store.List(filter, limit, filePathPrefix);
         if (items.Count == 0)
         {
-            Console.WriteLine($"[findings] none{(filter is null ? "" : $" with status {filter}")}.");
+            Console.WriteLine($"[findings] none{(filter is null ? "" : $" with status {filter}")}{(filePathPrefix is null ? "" : $" for {filePathPrefix}")}.");
             return 0;
         }
         foreach (var f in items)
@@ -108,13 +152,15 @@ public static class FindingsCli
         return 0;
     }
 
-    static async Task<int> CmdBulkDismiss(string[] rest, FindingsService store)
+    static async Task<int> CmdBulkDismiss(string[] rest, FindingsService store, IServiceProvider services)
     {
-        string? categoryArg = null, prefix = null;
+        string? categoryArg = null, prefix = null, nodeRef = null;
         var cIdx = Array.IndexOf(rest, "--category");
         if (cIdx >= 0 && cIdx + 1 < rest.Length) categoryArg = rest[cIdx + 1];
         var pIdx = Array.IndexOf(rest, "--prefix");
         if (pIdx >= 0 && pIdx + 1 < rest.Length) prefix = rest[pIdx + 1];
+        var nIdx = Array.IndexOf(rest, "--node");
+        if (nIdx >= 0 && nIdx + 1 < rest.Length) nodeRef = rest[nIdx + 1];
 
         FindingCategory? category = null;
         if (categoryArg != null)
@@ -124,13 +170,21 @@ public static class FindingsCli
             category = parsed;
         }
 
-        if (category is null && string.IsNullOrWhiteSpace(prefix))
-            return Fail("bulk-dismiss requires --category and/or --prefix");
+        string? filePathPrefix = null;
+        if (nodeRef != null)
+        {
+            filePathPrefix = await ResolveNodeFilePathPrefixAsync(nodeRef, services);
+            if (filePathPrefix is null) return Fail($"node not found: {nodeRef}");
+        }
 
-        var n = await store.BulkSetStatusAsync(FindingStatus.Dismissed, category, prefix);
+        if (category is null && string.IsNullOrWhiteSpace(prefix) && filePathPrefix is null)
+            return Fail("bulk-dismiss requires --category and/or --prefix and/or --node");
+
+        var n = await store.BulkSetStatusAsync(FindingStatus.Dismissed, category, prefix, filePathPrefix);
         Console.WriteLine($"[findings] dismissed {n} finding(s)"
             + (category is null ? "" : $" [category={category}]")
-            + (string.IsNullOrWhiteSpace(prefix) ? "" : $" [prefix=\"{prefix}\"]"));
+            + (string.IsNullOrWhiteSpace(prefix) ? "" : $" [prefix=\"{prefix}\"]")
+            + (filePathPrefix is null ? "" : $" [node={filePathPrefix}]"));
         return 0;
     }
 
@@ -151,13 +205,13 @@ public static class FindingsCli
     static void PrintUsage()
     {
         Console.WriteLine("Usage:");
-        Console.WriteLine("  prose --findings list [--status new|triaged|applied|dismissed]");
+        Console.WriteLine("  prose --findings list [--status new|triaged|applied|dismissed] [--node <slug-or-code>] [--limit <n>]");
         Console.WriteLine("  prose --findings stats");
         Console.WriteLine("  prose --findings show <id>");
         Console.WriteLine("  prose --findings apply <id>");
         Console.WriteLine("  prose --findings triage <id>");
         Console.WriteLine("  prose --findings dismiss <id>");
         Console.WriteLine("  prose --findings scan <file-path>");
-        Console.WriteLine("  prose --findings bulk-dismiss [--category <cat>] [--prefix <text>]");
+        Console.WriteLine("  prose --findings bulk-dismiss [--category <cat>] [--prefix <text>] [--node <slug-or-code>]");
     }
 }

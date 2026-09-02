@@ -315,11 +315,17 @@ public class FindingsService
         return i < 0 ? filePath : filePath[..i];
     }
 
-    public IReadOnlyList<Finding> List(FindingStatus? status = null, int limit = 200)
+    public IReadOnlyList<Finding> List(FindingStatus? status = null, int limit = 200, string? filePathPrefix = null)
     {
         // Severity ordering: High first, then Medium, then Low. Newest within
         // each bucket. Keeps damning findings at the top of the inbox without
         // burying recent low-severity noise.
+        //
+        // filePathPrefix (2026-09-01): without it, a book's own findings — especially
+        // Medium-severity ones like FACT-LEDGER — are invisible in practice once the
+        // corpus-wide High-severity backlog exceeds `limit`. PublishReadinessAsync already
+        // scopes this way (BookHealthService.cs); this brings the same scoping to the
+        // general-purpose read surfaces (CLI/MCP) that triage actually happens through.
         using var db = dbFactory.CreateDbContext();
         var q = db.Findings.AsNoTracking().AsQueryable();
         if (status is FindingStatus s)
@@ -327,6 +333,8 @@ public class FindingsService
             var key = s.ToString();
             q = q.Where(f => f.Status == key);
         }
+        if (!string.IsNullOrWhiteSpace(filePathPrefix))
+            q = q.Where(f => f.FilePath.StartsWith(filePathPrefix));
         var rows = q
             .OrderBy(f => f.Severity == "High" ? 0 : f.Severity == "Medium" ? 1 : f.Severity == "Low" ? 2 : 3)
             .ThenByDescending(f => f.DetectedAt)
@@ -394,15 +402,17 @@ public class FindingsService
         FindingStatus status,
         FindingCategory? category = null,
         string? summaryPrefix = null,
+        string? filePathPrefix = null,
         CancellationToken ct = default)
     {
-        if (category is null && string.IsNullOrWhiteSpace(summaryPrefix))
-            throw new ArgumentException("BulkSetStatusAsync requires at least one of category/summaryPrefix — refusing to sweep the entire inbox unfiltered.");
+        if (category is null && string.IsNullOrWhiteSpace(summaryPrefix) && string.IsNullOrWhiteSpace(filePathPrefix))
+            throw new ArgumentException("BulkSetStatusAsync requires at least one of category/summaryPrefix/filePathPrefix — refusing to sweep the entire inbox unfiltered.");
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var q = db.Findings.Where(f => f.Status == "New" || f.Status == "Triaged");
         if (category is FindingCategory c) { var key = c.ToString(); q = q.Where(f => f.Category == key); }
         if (!string.IsNullOrWhiteSpace(summaryPrefix)) q = q.Where(f => f.Summary.StartsWith(summaryPrefix));
+        if (!string.IsNullOrWhiteSpace(filePathPrefix)) q = q.Where(f => f.FilePath.StartsWith(filePathPrefix));
 
         var rows = await q.ToListAsync(ct);
         foreach (var row in rows)

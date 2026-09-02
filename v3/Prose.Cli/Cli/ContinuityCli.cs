@@ -42,6 +42,8 @@ public static class ContinuityCli
             "migrate"         => CmdMigrate(svc),
             "stats"           => CmdStats(svc),
             "contradictions"  => CmdContradictions(svc),
+            "groups"          => CmdGroups(rest, svc),
+            "reset-book"      => CmdResetBook(rest, svc),
             "resolve"         => CmdResolve(rest, svc),
             "entity"          => CmdEntity(rest, svc),
             "extract"         => CmdExtract(rest, services).GetAwaiter().GetResult(),
@@ -90,6 +92,63 @@ public static class ContinuityCli
             Console.WriteLine();
         }
         return pairs.Count > 0 ? 1 : 0;
+    }
+
+    /// <summary>
+    /// prose --continuity groups --slug &lt;slug&gt; [--predicate &lt;name&gt;]
+    ///
+    /// Prints ContinuityService.GetContradictionGroups(slug) (the book-scoped, N-way grouping
+    /// FactLedgerAsync's "FACT-LEDGER" findings are built from) WITH each claim's ClaimUid —
+    /// the one thing `--findings show` can't provide, since a Finding is just the rendered
+    /// summary text. Added 2026-09-01: hand-resolving a fact-ledger contradiction requires
+    /// `--continuity resolve --a &lt;uid&gt; --b &lt;uid&gt;`, and there was no surface printing the UIDs
+    /// this grouping (as opposed to the older pairwise GetContradictions()) actually produces.
+    /// </summary>
+    static int CmdGroups(string[] args, ContinuityService svc)
+    {
+        var slug = ArgValue(args, "--slug");
+        if (string.IsNullOrEmpty(slug)) return Fail("groups requires --slug <slug>");
+        var predicateFilter = ArgValue(args, "--predicate");
+
+        var groups = svc.GetContradictionGroups(slug);
+        if (!string.IsNullOrEmpty(predicateFilter))
+            groups = groups.Where(g => string.Equals(g.Predicate, predicateFilter, StringComparison.OrdinalIgnoreCase)).ToList();
+
+        if (groups.Count == 0) { Console.WriteLine($"[continuity] no contradiction groups for {slug}."); return 0; }
+
+        foreach (var g in groups)
+        {
+            Console.WriteLine($"[{g.EntityName}] {g.Predicate}  ({g.Claims.Count} variants)");
+            foreach (var c in g.Claims)
+            {
+                var src = c.SourceChapterNumber.HasValue ? $"ch.{c.SourceChapterNumber}" : c.SourceType;
+                Console.WriteLine($"  {c.ClaimUid}  [{c.Status,-10}]  \"{c.Object}\"  ({src})");
+            }
+            Console.WriteLine();
+        }
+        return 0;
+    }
+
+    /// <summary>
+    /// prose --continuity reset-book --slug &lt;slug&gt; [--note "..."]
+    ///
+    /// Supersedes every live claim tagged with this book's slug — see
+    /// ContinuityService.SupersedeAllLiveClaimsForBook's doc comment for why. Run
+    /// `--continuity extract --node &lt;slug&gt;` right after to repopulate the ledger from only the
+    /// book's current live text, then `--fact-ledger-refresh --slug &lt;slug&gt;` to see the real
+    /// remaining count.
+    /// </summary>
+    static int CmdResetBook(string[] args, ContinuityService svc)
+    {
+        var slug = ArgValue(args, "--slug");
+        if (string.IsNullOrEmpty(slug)) return Fail("reset-book requires --slug <slug>");
+        var note = ArgValue(args, "--note") ?? "reset before fresh extraction (prose --continuity reset-book)";
+
+        var n = svc.SupersedeAllLiveClaimsForBook(slug, note);
+        Console.WriteLine($"[continuity] {n} claim(s) for \"{slug}\" superseded. Now run:");
+        Console.WriteLine($"  prose --continuity extract --node {slug}");
+        Console.WriteLine($"  prose --fact-ledger-refresh --slug {slug}");
+        return 0;
     }
 
     static int CmdResolve(string[] args, ContinuityService svc)
@@ -478,6 +537,10 @@ public static class ContinuityCli
               prose --continuity migrate
               prose --continuity stats
               prose --continuity contradictions
+              prose --continuity groups --slug <slug> [--predicate <name>]
+                  N-way contradiction groups (ClaimUid included) for --continuity resolve
+              prose --continuity reset-book --slug <slug> [--note "..."]
+                  Supersede every live claim for a book (before a fresh extraction pass)
               prose --continuity resolve --a <uid> --b <uid> --winner A|B|custom [--object "..."] [--note "..."]
               prose --continuity entity <name>
               prose --continuity extract --chapter <chapterId>

@@ -79,6 +79,30 @@ public class ContinuityService
     /// this fires on essentially every beat of every sequel for every recurring character, and
     /// the noise buries the real contradictions the ledger exists to catch.
     ///
+    /// Extended 2026-09-01 after the same failure recurred within a SINGLE book (VIGL, post
+    /// airship-cut rewrite): a different extraction pass had used its own predicate vocabulary for
+    /// the identical "moment, not invariant" concept — <c>traveling_with</c>/<c>companions</c> is
+    /// the same idea under a different name, and the book's cast legitimately changes as Doyle,
+    /// Wren, and Ardea join over the course of the story. 14 of 24 open CONTINUITY-VIOLATION
+    /// findings on VIGL were exactly this one stale snapshot ("Orim, a seventy-year-old scryer,
+    /// and a Rod") compared against every later chapter's real, correct, evolving travel party.
+    /// The remaining additions below are the same class for other scene-scoped facts that
+    /// naturally change chapter to chapter or wound to wound: where a chapter opens
+    /// (<c>location_at_chapter_start</c>), whether the character has slept
+    /// (<c>sleep_status</c>), what's in their hands or on their back right now
+    /// (<c>weapon_carry</c>, <c>carries_item</c>, <c>carries_equipment</c>, <c>carries_weapon</c>),
+    /// what task they're mid-execution on (<c>current_task</c>), and where their most recent
+    /// injury is (<c>injury</c>, <c>injury_location</c>, <c>shoulder_injury</c> — a long journey
+    /// accumulates more than one wound; an old scar and a fresh cut are not a contradiction).
+    ///
+    /// Deliberately NOT added despite also appearing in VIGL's open findings: identity/durable
+    /// predicates like <c>rank</c>, <c>profession</c>, <c>occupation</c>,
+    /// <c>organization_affiliation</c>, <c>employment</c> (is she Templar or Vigil service? — a
+    /// real question worth a human read, not a moment that supersedes itself) and pure
+    /// paraphrase-of-the-same-fact pairs (e.g. "Ocipheus" vs "Ocipheus Station") that need a
+    /// same-assertion/numeric-dedup fix, not a volatility exemption — silently exempting either
+    /// class here would hide a real defect instead of fixing the false-positive mechanism.
+    ///
     /// The ledger is for invariants ("his mentor was Seito", "he is carrier seven"). Time-scoped
     /// state belongs to <c>EntityStateEvents</c> / <c>WorldStateAtBeatService</c>, which model a
     /// timeline instead of asserting one permanent truth.
@@ -88,6 +112,9 @@ public class ContinuityService
         "location_current", "appearance_in_story", "current_location", "location",
         "present_in_scene", "carrying", "wearing", "status_current", "current_status",
         "mood", "current_mood", "companions", "current_job", "current_contract",
+        "traveling_with", "location_at_chapter_start", "sleep_status", "current_task",
+        "weapon_carry", "carries_item", "carries_equipment", "carries_weapon",
+        "injury", "injury_location", "shoulder_injury",
     };
 
     /// <summary>True when <paramref name="predicate"/> records momentary state, so a differing
@@ -396,7 +423,12 @@ public class ContinuityService
     /// surface a contradiction between a prose claim (tagged) and an entity-record claim
     /// (untagged) as long as the prose side matches — the group isn't restricted away entirely,
     /// just which keys get considered.</param>
-    public List<ContradictionGroup> GetContradictionGroups(string? bookSlug = null)
+    /// <param name="excludeVolatile">Default true: drop <see cref="IsVolatilePredicate"/> keys
+    /// before grouping, same as every other consumer of "the ledger as established canon" (2026-09-01).
+    /// Pass false only for an operator-directed single-group lookup (TrinityReconciliationService's
+    /// <c>--only-entity</c>/<c>--only-predicate</c>) — there the operator named this exact
+    /// (entity, predicate) deliberately and expects the raw group back, volatile or not.</param>
+    public List<ContradictionGroup> GetContradictionGroups(string? bookSlug = null, bool excludeVolatile = true)
     {
         using var db = dbFactory.CreateDbContext();
         // CANONICAL included: a new claim contradicting an already-resolved fact is exactly
@@ -409,6 +441,15 @@ public class ContinuityService
             .Select(g => new { g.Key.EntityId, g.Key.Predicate, Variants = g.Select(x => x.Object).Distinct().Count() })
             .Where(g => g.Variants > 1)
             .ToList();
+
+        if (excludeVolatile)
+            // 2026-09-01: this exclusion already applies to the prompt-time canon block
+            // (ProseWriterRouter's ESTABLISHED CANON section) and to the enforcer's
+            // per-beat check — it was never applied here, so a moment-state predicate
+            // (location_current, companions, ...) that legitimately differs beat to beat
+            // still landed as a permanent FACT-LEDGER contradiction. Same root cause,
+            // same fix, applied where it was missing.
+            keys = keys.Where(k => !IsVolatilePredicate(k.Predicate)).ToList();
 
         if (!string.IsNullOrEmpty(bookSlug))
         {
@@ -471,6 +512,9 @@ public class ContinuityService
                          c.FirstAssertedAt.CompareTo(sinceIso) >= 0))
             .Select(c => new { c.EntityId, c.Predicate })
             .Distinct()
+            .ToList()
+            // 2026-09-01: same exclusion as GetContradictionGroups — see its remarks.
+            .Where(k => !IsVolatilePredicate(k.Predicate))
             .ToList();
 
         if (touchedKeys.Count == 0) return new List<ContradictionGroup>();
@@ -668,6 +712,28 @@ public class ContinuityService
 
         db.SaveChanges();
         tx.Commit();
+    }
+
+    /// <summary>Marks every live (NEW/CONFIRMED/CONTRADICTED/CANONICAL) claim tagged with this
+    /// book's slug as SUPERSEDED, without picking a replacement value. Exists to reset a book's
+    /// fact ledger before a fresh extraction pass: <see cref="ContinuityClaim"/> carries no BeatId,
+    /// so there is no automatic way to notice a claim's source beat was later cut/detached from
+    /// the book (Beats rows survive detachment by design — see docs on system-versioned tables —
+    /// but the claim extracted from one doesn't know that happened) and keeps contradicting the
+    /// replacement content forever. Found live 2026-09-01 on VIGL: a fact-ledger group's evidence
+    /// traced to beat #5501, which had zero BeatNodes membership and contained two unrelated
+    /// story fragments spliced together (Stale=true) — clearly superseded pre-rewrite content
+    /// still fighting the current book in the ledger. Entity-record-sourced claims (BookSlug is
+    /// null on those) are untouched — re-extraction doesn't refresh them anyway.</summary>
+    public int SupersedeAllLiveClaimsForBook(string bookSlug, string note)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED", "CANONICAL" };
+        var claims = db.ContinuityClaims.Where(c => c.BookSlug == bookSlug && live.Contains(c.Status)).ToList();
+        var now = DateTime.UtcNow.ToString("o");
+        foreach (var c in claims) ApplyStatus(c, "SUPERSEDED", now, note);
+        db.SaveChanges();
+        return claims.Count;
     }
 
     public void RejectClaim(string claimUid, string note = "")
