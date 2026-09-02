@@ -2556,6 +2556,25 @@ if (args.Contains("--set-edge-validity"))
     return;
 }
 
+// prose --export-entity-cluster --root <entityGuid> --universe <slug> --out <path.md>
+// Report-only: walks the full connected component from --root and archives it to Markdown —
+// the review step before --delete-entity-cluster. See ExportEntityClusterCli.
+if (args.Contains("--export-entity-cluster"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ExportEntityClusterCli", args);
+    return;
+}
+
+// prose --delete-entity-cluster --root <entityGuid> --universe <slug> --confirm <entityCount>
+// The execution half of --export-entity-cluster — hard-deletes the reviewed cluster after
+// re-verifying the count and checking every entity for outside references. See
+// DeleteEntityClusterCli.
+if (args.Contains("--delete-entity-cluster"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DeleteEntityClusterCli", args);
+    return;
+}
+
 // prose --backfill-missing-subtype-rows [--dry-run] [--exclude-name "<name>"]...
 // One-time data repair: inserts a minimal Characters/Places row for any character/place Entities
 // row that has none (root cause: raw SQL writes bypassing the app — see BackfillMissingSubtypeRowsCli).
