@@ -27,6 +27,8 @@ namespace Prose.Cli;
 ///   --local-url &lt;url&gt;         Override the local endpoint URL for this run only (implies --local).
 ///   --local-key &lt;key&gt;         Override the local API/bearer key for this run only.
 ///   --local-model &lt;tag&gt;       Override the local model tag for this run only.
+///   --allow-unblueprinted     Override the locked-pipeline gate (no outline + no structural
+///                             blueprint on this book) — see ProseWriterRouter.WriteAsync.
 ///
 /// Exit codes:
 ///   0 — at least one beat expanded successfully.
@@ -40,6 +42,7 @@ public static class ExpandBeatCli
         string? localUrl = null, localKey = null, localModel = null;
         bool force = args.Contains("--force");
         bool useLocal = args.Contains("--local");
+        bool allowUnblueprinted = args.Contains("--allow-unblueprinted");
 
         for (int i = 0; i < args.Length; i++)
         {
@@ -191,7 +194,7 @@ public static class ExpandBeatCli
                     Subtext           = beat.Subtext ?? "",
                     CharactersInScene = protagonistName != null ? new[] { protagonistName } : Array.Empty<string>(),
                 };
-                var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
+                var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count, allowUnblueprinted: allowUnblueprinted);
                 if (string.IsNullOrWhiteSpace(prose))
                 {
                     Console.WriteLine("LLM returned empty — skipped.");

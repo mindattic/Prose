@@ -1393,10 +1393,11 @@ Render the whole node as one continuous narration (no per-beat voice drift) and 
 
 ### `export_node`
 
-Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), keywords.txt (from seeded NodeKeywords), and cover.jpg (only if missing), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Use get_node first to confirm the node exists.
+Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), keywords.txt (from seeded NodeKeywords), and cover.jpg (only if missing), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Blocked with ok:false unless the publish-readiness gate (docs/LOGIC.md §9) passes or forceExport is true — call publish_readiness first if unsure. Use get_node first to confirm the node exists.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `author` (string, optional) — Author name to embed in the document properties. Optional.
+- `forceExport` (bool, optional) — Export even if the publish-readiness gate reports open findings. Default false.
 
 ### `generate_book_outline`
 

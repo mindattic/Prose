@@ -81,6 +81,9 @@ public class ProseWriterRouter(
     /// <param name="beatIndex">Zero-based position of this beat in the node. 0 if unknown.</param>
     /// <param name="totalBeats">Total beats in the node. 0 disables positional pacing/structural injection.</param>
     /// <param name="universeId">Current universe for log stamping. Guid.Empty = GLMZ (default).</param>
+    /// <param name="allowUnblueprinted">Override for the locked-pipeline gate below. Default false
+    /// (gate active) — additive parameter, so no existing caller's behavior changes unless it
+    /// explicitly opts in.</param>
     /// <param name="ct">Cancellation token.</param>
     public async Task<string> WriteAsync(
         BeatContext context,
@@ -88,8 +91,32 @@ public class ProseWriterRouter(
         int beatIndex        = 0,
         int totalBeats       = 0,
         Guid universeId      = default,
+        bool allowUnblueprinted = false,
         CancellationToken ct = default)
     {
+        // Locked-pipeline gate (2026-09-01, CLAUDE.md "New Story Workflow — LOCKED PIPELINE"):
+        // previously this was documentation-only — nothing stopped prose generation for a book
+        // that skipped straight from an empty shell to beats. Gates on "outline AND blueprint both
+        // missing" (not blueprint alone) so the corpus's existing outlined-but-not-yet-blueprinted
+        // books are unaffected — this only fires for a book that has genuinely never been planned.
+        if (context.NodeId != Guid.Empty && totalBeats > 0 && !allowUnblueprinted && dbFactory != null)
+        {
+            await using var gateDb = await dbFactory.CreateDbContextAsync(ct);
+            var bookId = await ResolveBookAncestorAsync(gateDb, context.NodeId, ct) ?? context.NodeId;
+            var book = await gateDb.Nodes.AsNoTracking().IgnoreQueryFilters()
+                .Where(n => n.Id == bookId)
+                .Select(n => new { n.NodeOutline })
+                .FirstOrDefaultAsync(ct);
+            var hasBlueprint = await gateDb.NodeStructuralBlueprints.AnyAsync(bp => bp.NodeId == bookId, ct);
+            if (book != null && string.IsNullOrWhiteSpace(book.NodeOutline) && !hasBlueprint)
+            {
+                throw new InvalidOperationException(
+                    $"Book {bookId} has no outline (set_book_outline) and no structural blueprint " +
+                    "(--generate-blueprint) — the locked pipeline (CLAUDE.md) requires at least one " +
+                    "before prose generation. Pass allowUnblueprinted:true / --allow-unblueprinted to override.");
+            }
+        }
+
         var (mode, confidence, method, pacingGuidance, structuralGuidance) =
             ComputeEnrichment(context.BeatGoal, context.SceneSoFar, beatIndex, totalBeats);
 
@@ -930,24 +957,51 @@ public class ProseWriterRouter(
             // enforce against when ContinuityService produced no canon block for this scene —
             // without this check, the enforcer paid for an LLM call on every beat with
             // CharactersInScene set, even when zero CANONICAL/CONFIRMED claims applied.
-            if (continuityEnforcer != null && findings != null && capturedNodeId != Guid.Empty
+            var continuityEnforcerApplicable = continuityEnforcer != null && findings != null && capturedNodeId != Guid.Empty
                 && context.CharactersInScene.Count > 0 && !string.IsNullOrWhiteSpace(capturedResult)
-                && !string.IsNullOrEmpty(continuityContext))
+                && !string.IsNullOrEmpty(continuityContext);
+            var continuityEnforcerRanOk = false;
+            if (continuityEnforcerApplicable)
             {
                 await TraceStageAsync(nameof(ContinuityEnforcer), async () =>
                 {
                     List<ContinuityViolation> violations;
                     try
                     {
-                        violations = await continuityEnforcer.EnforceAsync(
+                        violations = await continuityEnforcer!.EnforceAsync(
                             capturedResult, context.CharactersInScene.ToList(), CancellationToken.None);
+                        continuityEnforcerRanOk = true;
                     }
                     catch (Exception ex) when (ex is not OperationCanceledException)
                     {
-                        log.LogWarning(ex, "ContinuityEnforcer failed for node {NodeId} — not filing (could-not-evaluate is not the same as clean)", capturedNodeId);
+                        // 2026-09-01 fix: this used to only log a warning — a malformed/empty LLM
+                        // response (the enforcer deliberately throws rather than fail-open, see
+                        // ContinuityEnforcer.EnforceAsync's remarks) left NO trace anywhere: no
+                        // finding, and this service wasn't even in the BeatServiceLog array below,
+                        // so workflow-status couldn't show it was failing either. Low severity is
+                        // deliberate — "could not evaluate" must not count toward the
+                        // publish-readiness fact-ledger/contradiction check (High/Medium only);
+                        // this is visibility, not a violation.
+                        if (findings != null && dbFactory != null)
+                        {
+                            await using var edb = await dbFactory.CreateDbContextAsync(CancellationToken.None);
+                            var eslug = await edb.Nodes.AsNoTracking().IgnoreQueryFilters()
+                                .Where(n => n.Id == capturedNodeId).Select(n => n.Slug).FirstOrDefaultAsync(CancellationToken.None);
+                            if (!string.IsNullOrEmpty(eslug))
+                            {
+                                findings.Upsert(
+                                    filePath: $"node:{eslug}",
+                                    chapterId: null,
+                                    category: FindingCategory.Other,
+                                    severity: FindingSeverity.Low,
+                                    summary: $"CONTINUITY-CHECK-FAILED [could not evaluate] {ex.Message}",
+                                    snippet: null,
+                                    suggestedFix: "Transient LLM/parse failure — re-run this beat's continuity check, or ignore if isolated.");
+                            }
+                        }
                         return;
                     }
-                    if (violations.Count == 0 || dbFactory == null) return;
+                    if (violations.Count == 0 || dbFactory == null || findings == null) return;
 
                     await using var fdb = await dbFactory.CreateDbContextAsync(CancellationToken.None);
                     var slug = await fdb.Nodes.AsNoTracking().IgnoreQueryFilters()
@@ -967,6 +1021,17 @@ public class ProseWriterRouter(
                     }
                 });
             }
+
+            // Separate, additive LogBeatActivityAsync call (WorkflowMonitorService.LogBeatActivityAsync
+            // appends rows, never overwrites) — the main coverage-log array above is built and sent
+            // BEFORE ContinuityEnforcer runs, so its own real success/failure couldn't be folded into
+            // that call. IsActive = true only when EnforceAsync returned without throwing, so
+            // `prose --workflow-status` can finally show this service's true activation rate instead
+            // of it being invisible.
+            await TraceStageAsync($"{nameof(WorkflowMonitorService)}.ContinuityEnforcer", async () =>
+                { await monitor.LogBeatActivityAsync(beatId, capturedNodeId, universeId,
+                    [new("ContinuityEnforcer", IsApplicable: continuityEnforcerApplicable, IsActive: continuityEnforcerRanOk, BlockSizeChars: 0)],
+                    CancellationToken.None); });
 
             // C2: CanonGroundingService — flag PROVISIONAL-ENTITY findings for invented names (opt-in).
             if (canonGrounding != null && (settings?.AutoCanonGrounding ?? false) && beatId != Guid.Empty && !string.IsNullOrWhiteSpace(capturedResult))

@@ -6,13 +6,17 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>prose --export-node (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
+/// <c>prose --export-node (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;] [--force-export]</c>
 /// — render a node to .docx + .epub + .pdf + .txt in the configured export
 /// directory (Desktop fallback). Also writes <c>description.txt</c> when
 /// <c>Node.Description</c> is set. <c>--export-dir</c> overrides and persists the
 /// export directory <em>for the node's universe</em>
 /// (<c>UniverseExportDirectories[slug]</c>), never the shared global — so
 /// exporting a Scry book can't redirect where GLMZ books land, and vice versa.
+/// <para>Blocks (exit 1) unless <see cref="BookHealthService.PublishReadinessAsync"/>'s
+/// five-point gate (docs/LOGIC.md §9) reports Ready, or <c>--force-export</c> is passed to
+/// override with a visible warning (2026-09-01 — closes the gap where this gate was computed by
+/// <c>prose --publish-readiness</c> but nothing actually blocked export on it).</para>
 /// <para>NOTE: this is local file rendering only — there is no KDP API
 /// integration. "Export" is the correct name; it does not touch
 /// <see cref="Node.PublishUrl"/> or <see cref="Node.PublicationStatus"/>, which
@@ -24,6 +28,7 @@ public static class ExportNodeCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? id = null, slug = null, author = null, exportDir = null;
+        var forceExport = false;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -32,6 +37,7 @@ public static class ExportNodeCli
                 case "--slug":       if (i + 1 < args.Length) slug = args[++i]; break;
                 case "--author":     if (i + 1 < args.Length) author = args[++i]; break;
                 case "--export-dir": if (i + 1 < args.Length) exportDir = args[++i]; break;
+                case "--force-export": forceExport = true; break;
             }
         }
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
@@ -43,6 +49,7 @@ public static class ExportNodeCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var fullExport = services.GetRequiredService<NodeFullExportService>();
         var mojiChecker = services.GetRequiredService<MojibakeRepairService>();
+        var bookHealth = services.GetRequiredService<BookHealthService>();
 
         Guid nodeId; string nodeTitle; string nodeSlug; string? universeSlug;
         await using (var db = await dbFactory.CreateDbContextAsync())
@@ -91,6 +98,27 @@ public static class ExportNodeCli
             foreach (var hit in detected.Hits.Take(5))
                 Console.Error.WriteLine($"  beat {hit.BeatId}: {hit.Excerpt[..Math.Min(80, hit.Excerpt.Length)]}");
             return 1;
+        }
+
+        // ── pre-export publish-readiness gate (docs/LOGIC.md §9, five-point convergence gate) ──
+        // Reads existing findings/convergence state — does NOT re-run any sweep. Run
+        // 'prose --logic-sweep --slug <slug> --until-dry' first to refresh, then fix what's open.
+        var readiness = await bookHealth.PublishReadinessAsync(nodeId);
+        if (!readiness.Ready)
+        {
+            if (!forceExport)
+            {
+                Console.Error.WriteLine("[export-node] ❌ Publish-readiness gate failed — fix before exporting, or pass --force-export to override:");
+                foreach (var c in readiness.Checks.Where(c => !c.Pass))
+                    Console.Error.WriteLine($"  ❌ {c.Name} — {c.Detail}");
+                Console.Error.WriteLine("[export-node] Run 'prose --publish-readiness --slug <slug>' for the full report.");
+                return 1;
+            }
+
+            var failing = readiness.Checks.Where(c => !c.Pass).ToList();
+            Console.Error.WriteLine($"[export-node] ⚠ --force-export: overriding {failing.Count} failing publish-readiness check(s):");
+            foreach (var c in failing)
+                Console.Error.WriteLine($"  ⚠ {c.Name} — {c.Detail}");
         }
 
         // ── pre-export BLOCKER verification gate (Track C — Truth-First Architecture) ──

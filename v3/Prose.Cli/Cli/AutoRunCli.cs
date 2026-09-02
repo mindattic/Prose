@@ -19,6 +19,8 @@ namespace Prose.Cli;
 ///   --dry-run                List beats/chapters to process without generating prose.
 ///   --force                  Re-generate beats that already have prose.
 ///   --no-repair              Skip the post-chapter self-repair pass.
+///   --allow-unblueprinted    Override the locked-pipeline gate (no outline + no structural
+///                            blueprint on this book) — see ProseWriterRouter.WriteAsync.
 /// </summary>
 public static class AutoRunCli
 {
@@ -38,7 +40,7 @@ public static class AutoRunCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? slug = null, id = null, effort = "draft";
-        bool dryRun = false, force = false, allowVotes = false, noRepair = false;
+        bool dryRun = false, force = false, allowVotes = false, noRepair = false, allowUnblueprinted = false;
         int forks = 0, targetWords = 0;
 
         for (int i = 0; i < args.Length; i++)
@@ -54,6 +56,7 @@ public static class AutoRunCli
                 case "--force":      force     = true; break;
                 case "--allow-votes": allowVotes = true; break;
                 case "--no-repair":  noRepair  = true; break;
+                case "--allow-unblueprinted": allowUnblueprinted = true; break;
             }
         }
 
@@ -158,7 +161,7 @@ public static class AutoRunCli
                     : bookBible + "\n\n=== CHAPTER OUTLINE (BINDING — beats must fulfil these chapter goals) ===\n" + chapterSeed.Trim();
                 await ExpandAndRepairAsync(chapterId, nodeId, chapterBible, router, workbench, reflow,
                     chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
-                    forks, allowVotes, noRepair, totalChapters, chapters.Count);
+                    forks, allowVotes, noRepair, totalChapters, chapters.Count, allowUnblueprinted);
                 totalChapters++;
             }
             Console.WriteLine();
@@ -168,7 +171,7 @@ public static class AutoRunCli
         {
             await ExpandAndRepairAsync(nodeId, nodeId, bookBible, router, workbench, reflow,
                 chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
-                forks, allowVotes, noRepair, chapterIndex: 0, totalChapters: 1);
+                forks, allowVotes, noRepair, chapterIndex: 0, totalChapters: 1, allowUnblueprinted: allowUnblueprinted);
             Console.WriteLine($"[auto-run] Done: {stats.Written} beats expanded.");
         }
 
@@ -184,9 +187,9 @@ public static class AutoRunCli
         SessionStats stats,
         bool force, bool dryRun, int targetWords,
         int forks, bool allowVotes, bool noRepair,
-        int chapterIndex, int totalChapters)
+        int chapterIndex, int totalChapters, bool allowUnblueprinted = false)
     {
-        var (written, skipped) = await ExpandBeatNodesAsync(chapterId, nodeId, bookBible, router, workbench, force, dryRun, targetWords);
+        var (written, skipped) = await ExpandBeatNodesAsync(chapterId, nodeId, bookBible, router, workbench, force, dryRun, targetWords, allowUnblueprinted);
         stats.Written  += written;
         stats.Skipped  += skipped;
 
@@ -310,7 +313,8 @@ public static class AutoRunCli
         NodeWorkbenchService workbench,
         bool force,
         bool dryRun,
-        int targetWords = 0)
+        int targetWords = 0,
+        bool allowUnblueprinted = false)
     {
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId);
         var sceneSoFar = "";
@@ -353,7 +357,7 @@ public static class AutoRunCli
                     Subtext           = beat.Subtext ?? "",
                     TargetWords       = targetWords,
                 };
-                var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
+                var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count, allowUnblueprinted: allowUnblueprinted);
                 if (string.IsNullOrWhiteSpace(prose))
                 {
                     Console.WriteLine("empty — skipped.");

@@ -32,6 +32,8 @@ namespace Prose.Cli;
 ///   --ballots N      Review ballot count per node. Default: 20.
 ///   --resume         Resume the run described in ss-corpus-run.json.
 ///   --dry-run        Print what would be done without calling LLMs.
+///   --allow-unblueprinted  Override the locked-pipeline gate (no outline + no structural
+///                    blueprint on this book) — see ProseWriterRouter.WriteAsync.
 ///
 /// Exit codes:
 ///   0 — at least one node completed the full pipeline.
@@ -84,6 +86,7 @@ public static class RunCorpusCli
         bool resume = args.Contains("--resume");
         bool dryRun = args.Contains("--dry-run");
         bool allowVotes = args.Contains("--allow-votes");
+        bool allowUnblueprinted = args.Contains("--allow-unblueprinted");
         var votingGate = services.GetRequiredService<VotingGate>();
         bool votingAllowed = votingGate.IsAllowed(allowVotes);
 
@@ -184,7 +187,7 @@ public static class RunCorpusCli
                 Console.WriteLine($"[run-corpus]   expand beats…");
                 try
                 {
-                    await ExpandBeatsAsync(entry.NodeId, storyBible, router, workbench);
+                    await ExpandBeatsAsync(entry.NodeId, storyBible, router, workbench, allowUnblueprinted);
                     entry.Stage = "expanded";
                     SaveCheckpoint(state);
                     Console.WriteLine($"[run-corpus]   expanded.");
@@ -388,7 +391,8 @@ public static class RunCorpusCli
         Guid nodeId,
         string storyBible,
         ProseWriterRouter router,
-        NodeWorkbenchService workbench)
+        NodeWorkbenchService workbench,
+        bool allowUnblueprinted = false)
     {
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId);
         var sceneSoFar = "";
@@ -412,7 +416,7 @@ public static class RunCorpusCli
                 Subtext           = beat.Subtext ?? "",
             };
 
-            var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
+            var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count, allowUnblueprinted: allowUnblueprinted);
             if (string.IsNullOrWhiteSpace(prose)) { beatIndex++; continue; }
 
             prose = prose.Trim();
