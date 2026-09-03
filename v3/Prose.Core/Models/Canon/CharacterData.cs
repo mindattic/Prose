@@ -332,6 +332,17 @@ public class CharacterRelationship
     [JsonPropertyName("since_chapter")] public int? SinceChapter { get; set; }
     /// <summary>Chapter number where this relationship ended, if applicable.</summary>
     [JsonPropertyName("until_chapter")] public int? UntilChapter { get; set; }
+
+    /// <summary>
+    /// Provenance grade — authored | observed | inferred | scaffolded | legacy-unknown (see
+    /// <see cref="Prose.Core.Services.ClaimProvenance"/>). Story Ledger Phase 3.
+    ///
+    /// <para>Lives on the DTO, not just the row, because <c>CharacterMapper.PersistAsync</c>
+    /// deletes every <c>CharacterRelationships</c> row for a character and reinserts
+    /// <c>src.Relationships</c> wholesale on each Save — a grade that did not round-trip here would
+    /// be silently reset to the default by the next unrelated edit to that character.</para>
+    /// </summary>
+    [JsonPropertyName("provenance")] public string Provenance { get; set; } = Prose.Core.Services.ClaimProvenance.Inferred;
 }
 
 /// <summary>

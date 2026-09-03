@@ -530,6 +530,25 @@ public class CharacterRelationshipRow
     public string Status { get; set; } = "active";
     public int? SinceChapter { get; set; }
     public int? UntilChapter { get; set; }
+
+    /// <summary>
+    /// How this relationship came to be believed — see <see cref="Services.ClaimProvenance"/>.
+    /// Story Ledger Phase 3.
+    ///
+    /// <para>This table is where the 2026-09-02 cross-book contamination landed: seven rows
+    /// describing BCODA's Kyle were written onto Testament's unrelated Seo Jisun by
+    /// <c>CanonGroundingService</c>'s auto-scaffolder, indistinguishable from hand-authored canon
+    /// once written. <see cref="Services.ClaimProvenance.Scaffolded"/> is what makes that
+    /// distinction survive the write, so the next batch is a filterable candidate list rather than
+    /// silent canon.</para>
+    ///
+    /// <para>Round-trips through <see cref="Models.Canon.CharacterRelationship"/> deliberately:
+    /// <c>CharacterMapper.PersistAsync</c> deletes and reinserts every row for a character on each
+    /// Save, so a grade that lived only on the row would be erased by the next unrelated character
+    /// edit.</para>
+    /// </summary>
+    public string Provenance { get; set; } = Services.ClaimProvenance.Inferred;
+
     public Character? Character { get; set; }
 }
 

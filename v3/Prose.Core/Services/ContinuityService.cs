@@ -853,9 +853,15 @@ public class ContinuityClaim
 }
 
 /// <summary>
-/// Provenance grades for a ledger claim, in descending trust. Applied to
-/// <see cref="ContinuityClaim.Provenance"/> now; extended to <c>Entities</c> and
-/// <c>CharacterRelationships</c> in Story Ledger Phase 3.
+/// Provenance grades, in descending trust. Applied to <see cref="ContinuityClaim.Provenance"/>
+/// (Phase 2) and, since Story Ledger Phase 3, to
+/// <see cref="Prose.Core.Data.Entities.Entity.Provenance"/> and
+/// <see cref="Prose.Core.Data.Entities.CharacterRelationshipRow.Provenance"/>.
+///
+/// <para>Deliberately ONE vocabulary across all three tables rather than a per-table enum: the
+/// question is identical in each case ("did a human approve this?"), and
+/// <c>prose --provenance-audit</c> reports the three side by side. Three parallel dialects would
+/// drift, and the audit would have to translate between them.</para>
 /// </summary>
 public static class ClaimProvenance
 {
@@ -882,6 +888,12 @@ public static class ClaimProvenance
 
     public static readonly string[] All =
         [Authored, Observed, Inferred, Scaffolded, LegacyUnknown];
+
+    /// <summary>True when <paramref name="provenance"/> is one of the five known grades. Used by
+    /// the promotion CLI to refuse a typo rather than writing an unqueryable grade nobody's
+    /// reports will ever count.</summary>
+    public static bool IsValid(string? provenance) =>
+        provenance != null && All.Contains(provenance, StringComparer.Ordinal);
 
     /// <summary>True for grades that may be treated as established fact when generating prose.
     /// <see cref="Scaffolded"/> deliberately is not, and neither is <see cref="LegacyUnknown"/>

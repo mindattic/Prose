@@ -4,6 +4,8 @@ using Prose.Core.Data.Entities;
 using Prose.Core.Models.Canon;
 // JsonDefaults lives in the root Prose.Core namespace.
 using Prose.Core;
+// ClaimProvenance — the shared provenance vocabulary (Story Ledger Phase 3).
+using Prose.Core.Services;
 
 namespace Prose.Core.Data;
 
@@ -138,7 +140,16 @@ public static class CharacterMapper
     /// <see cref="Materialize"/>'s output changes so existing rows are treated
     /// as stale and rebuilt rather than deserialized into a mismatched model.
     /// </summary>
-    public const int ReadModelVersion = 1;
+    /// <remarks>
+    /// v2 (Story Ledger Phase 3): <c>CharacterRelationship</c> gained <c>provenance</c>. A v1 blob
+    /// has no such member, so deserializing it yields the property initializer ("inferred") for
+    /// every relationship — and since <c>CharacterRepository.Save</c> persists whatever
+    /// <c>CharacterData</c> it is handed, a load-from-blob-then-save cycle would silently rewrite
+    /// every grade to "inferred", destroying exactly the distinction the column exists to keep.
+    /// Bumping the version makes existing blobs stale so they are rebuilt from the bridge tables,
+    /// which are the source of truth for the grade.
+    /// </remarks>
+    public const int ReadModelVersion = 2;
 
     private static readonly JsonSerializerOptions ReadModelWrite = new()
     {
@@ -701,6 +712,9 @@ public static class CharacterMapper
             Name = x.TargetName, Type = x.Type, Description = x.Description,
             EmotionalCore = x.EmotionalCore, StoryTension = x.StoryTension, Status = x.Status,
             SinceChapter = x.SinceChapter, UntilChapter = x.UntilChapter,
+            // Read the grade back so a round-trip (load → edit one field → Save) preserves it.
+            // PersistAsync deletes and reinserts every row, so anything not carried here is lost.
+            Provenance = x.Provenance,
         }).ToList();
 
         data.Timeline = c.Timeline.Select(t => new TimelineEvent
@@ -1015,6 +1029,14 @@ public static class CharacterMapper
         // right for FactionRelationships. A relationship's target can be any entity type (another
         // character, a faction, a place) — CharacterRelationship carries no TargetType field to
         // narrow the search, so this resolves across all entity types, not just "character".
+        // The source character's own book scope, passed to the resolver so a same-named target in
+        // ANOTHER book cannot win (Story Ledger Phase 3). Read once — the loop below can be long,
+        // and this is the same value for every row. Null (a universe-wide character like GLMZ's
+        // Kyle) simply means "no book preference", which is the correct behaviour for a shared
+        // entity, not a missing scope.
+        var sourceOriginNodeId = db.Entities.AsNoTracking()
+            .Where(x => x.Id == id).Select(x => x.OriginNodeId).FirstOrDefault();
+
         foreach (var r in src.Relationships)
             db.CharacterRelationships.Add(new CharacterRelationshipRow
             {
@@ -1023,7 +1045,10 @@ public static class CharacterMapper
                 EmotionalCore = r.EmotionalCore ?? "", StoryTension = r.StoryTension ?? "",
                 Status = string.IsNullOrEmpty(r.Status) ? "active" : r.Status,
                 SinceChapter = r.SinceChapter, UntilChapter = r.UntilChapter,
-                TargetEntityId = ResolveEntityIdAny(db, r.Name ?? ""),
+                TargetEntityId = ResolveEntityIdAny(db, r.Name ?? "", sourceOriginNodeId),
+                // Carry the grade the DTO arrived with (see CharacterRelationship.Provenance) —
+                // the round trip is what stops an unrelated Save from resetting every grade.
+                Provenance = ClaimProvenance.IsValid(r.Provenance) ? r.Provenance : ClaimProvenance.Inferred,
             });
 
         foreach (var k in src.Knowledge)
@@ -1086,8 +1111,8 @@ public static class CharacterMapper
     /// type (another character, a faction, a place) and carries no field saying which.
     /// Delegates to <see cref="EntityResolver.ResolveEntityIdAny"/> (shared with PlaceMapper).
     /// </summary>
-    private static Guid? ResolveEntityIdAny(ProseDbContext db, string name)
-        => EntityResolver.ResolveEntityIdAny(db, name);
+    private static Guid? ResolveEntityIdAny(ProseDbContext db, string name, Guid? scopeNodeId = null)
+        => EntityResolver.ResolveEntityIdAny(db, name, scopeNodeId);
 
     /// <summary>
     /// Look up the canonical Entity id of the given type for a free-form name.

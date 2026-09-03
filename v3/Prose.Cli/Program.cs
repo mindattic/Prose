@@ -546,6 +546,19 @@ if (args.Contains("--tuned-read"))
     return;
 }
 
+// CLI mode: the Story Ledger's provenance surface (Phase 3) — "what is in canon that no human
+// ever approved?", plus the explicit human act that promotes one candidate row to authored.
+// Deterministic and free; report-only for the audit (docs/LOGIC.md §4). Universe-scoped
+// deliberately: the entity/relationship counts come through the ambient query filter.
+//   prose --provenance-audit [--slug <slug-or-code-or-id>] [--samples N] [--json]
+//   prose --provenance --grade <grade> --entity <id> | --relationship <rowId> | --claim <uid>
+//   prose --provenance --grades
+if (args.Contains("--provenance-audit") || args.Contains("--provenance"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ProvenanceCli", args);
+    return;
+}
+
 // CLI mode: manage the PredicateExclusion ontology the Tuned Read runs on — list, propose,
 // approve/reject, and --test a rule against a hypothetical claim pair before approving it.
 // Deterministic and free; no LLM call anywhere in this command.

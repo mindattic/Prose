@@ -1129,6 +1129,12 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.WriteGate.CrossUniverseOriginCheck>();
         services.AddSingleton<Prose.Core.Services.WriteGate.PreviousNodeCycleCheck>();
         services.AddSingleton<Prose.Core.Services.WriteGate.BannedNameSyncCheck>();
+        // Story Ledger Phase 3: CharacterRelationships was the declared-but-unrouted WriteSubject
+        // ("left unrouted deliberately until a concrete problem surfaces") — the Seo Jisun
+        // cross-book contamination is that problem. UnscopedUniverseWriteCheck fails new canon
+        // closed when its universe was inherited rather than named (author ruling 2026-09-03).
+        services.AddSingleton<Prose.Core.Services.WriteGate.CharacterRelationshipTargetCheck>();
+        services.AddSingleton<Prose.Core.Services.WriteGate.UnscopedUniverseWriteCheck>();
         services.AddSingleton<BannedNameService>();
         services.AddSingleton<Prose.Core.Services.WriteGate.IWriteAuditService, Prose.Core.Services.WriteGate.DefaultWriteAuditService>();
         services.AddSingleton<Prose.Core.Services.WriteGate.WriteGateBootstrap>();
@@ -1219,6 +1225,9 @@ public static class ServiceCollectionExtensions
         // Story Ledger Phase 2 — the exclusion ontology and the Tuned Read over it.
         services.AddSingleton<Prose.Core.Services.Audit.PredicateExclusionService>();
         services.AddSingleton<Prose.Core.Services.Audit.TunedReadService>();
+        // Story Ledger Phase 3 — the provenance grade across Entities / CharacterRelationships /
+        // ContinuityClaims, and the audit that answers "what is in canon nobody approved?".
+        services.AddSingleton<Prose.Core.Services.Audit.ProvenanceService>();
 
         return services;
     }

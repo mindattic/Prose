@@ -22,9 +22,16 @@ public sealed class WriteGateBootstrap
         CrossUniverseOriginCheck crossUniverseOrigin,
         PreviousNodeCycleCheck previousNodeCycle,
         BannedNameSyncCheck bannedName,
+        CharacterRelationshipTargetCheck characterRelationshipTarget,
+        UnscopedUniverseWriteCheck unscopedUniverseWrite,
         IWriteAuditService audit)
     {
-        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[] { selfAlias, crossUniverseOrigin, previousNodeCycle, bannedName };
+        WriteGateScope.SyncChecks = new IWriteGateSyncCheck[]
+        {
+            selfAlias, crossUniverseOrigin, previousNodeCycle, bannedName,
+            // Story Ledger Phase 3.
+            characterRelationshipTarget, unscopedUniverseWrite,
+        };
         WriteGateScope.AuditService = audit;
     }
 }

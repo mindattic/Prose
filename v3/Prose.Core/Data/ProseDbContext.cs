@@ -41,6 +41,22 @@ public class ProseDbContext : DbContext
     public static Guid SharedUniverseId => Universe.SharedId;
 
     /// <summary>
+    /// Entity/Node inserts in the CURRENT save whose <c>UniverseId</c> came from the ambient
+    /// scope rather than from the caller. Reference identity, not equality: two brand-new rows are
+    /// equal by value until they have ids.
+    ///
+    /// <para>This is the discriminator <see cref="Services.WriteGate.UnscopedUniverseWriteCheck"/>
+    /// needs and could not otherwise get: by the time the write gate runs, the stamp has already
+    /// been applied, so an inherited universe and a deliberately-chosen one look identical on the
+    /// row. Code that knows which universe it is writing to (the interchange importer, entity
+    /// restore) sets the field itself and never lands here.</para>
+    /// </summary>
+    private readonly HashSet<object> ambientStampedRoots = new(ReferenceEqualityComparer.Instance);
+
+    /// <summary>True if this row's UniverseId was supplied by the ambient scope in this save.</summary>
+    internal bool WasUniverseStampedFromAmbient(object entity) => ambientStampedRoots.Contains(entity);
+
+    /// <summary>
     /// Stamp <c>UniverseId</c> on freshly-added universe-scoped roots (Entity / Node / Book) so
     /// new rows land in the current universe without every call site having to set it. Falls back
     /// to GLMZ when no universe context is active (tests), keeping the NOT NULL column valid.
@@ -49,13 +65,14 @@ public class ProseDbContext : DbContext
     {
         var current = Prose.Core.Services.UniverseScope.EffectiveId;
         var target = current != Guid.Empty ? current : Universe.GlmzId;
+        ambientStampedRoots.Clear();
         foreach (var entry in ChangeTracker.Entries())
         {
             if (entry.State != EntityState.Added) continue;
             switch (entry.Entity)
             {
-                case Entity e when e.UniverseId == Guid.Empty: e.UniverseId = target; break;
-                case Node s when s.UniverseId == Guid.Empty: s.UniverseId = target; break;
+                case Entity e when e.UniverseId == Guid.Empty: e.UniverseId = target; ambientStampedRoots.Add(e); break;
+                case Node s when s.UniverseId == Guid.Empty: s.UniverseId = target; ambientStampedRoots.Add(s); break;
                 case Book bk when bk.UniverseId == Guid.Empty: bk.UniverseId = target; break;
                 case Species sp when sp.UniverseId == Guid.Empty: sp.UniverseId = target; break;
                 case Edge ed when ed.UniverseId == Guid.Empty: ed.UniverseId = target; break;
@@ -1295,6 +1312,15 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Name).HasMaxLength(400).IsRequired();
             e.Property(x => x.Slug).HasMaxLength(400).IsRequired();
             e.Property(x => x.Status).HasMaxLength(40);
+            // Provenance grade (Story Ledger Phase 3). Default "inferred" is the honest grade for
+            // a row nobody explicitly graded; the migration grandfathers pre-existing rows to
+            // "legacy-unknown" instead, since "inferred" would be a false claim about how the
+            // existing corpus came to be believed. Indexed because --provenance-audit's whole job is
+            // "everything in canon no human ever approved", i.e. a filter on this column.
+            e.Property(x => x.Provenance).HasMaxLength(20).IsRequired()
+                .HasDefaultValue(Prose.Core.Services.ClaimProvenance.Inferred);
+            e.HasIndex(x => new { x.UniverseId, x.Provenance })
+                .HasDatabaseName("IX_Entities_Universe_Provenance");
             // Slug is unique per (universe, type) — a place "Silence" and a weapon
             // "Silence" are valid, AND the same (type, slug) may recur in another
             // universe (SS-LAW-15). Wiki-link resolution disambiguates by type.
@@ -1747,10 +1773,15 @@ public class ProseDbContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.TargetName).HasMaxLength(400);
             e.Property(x => x.Status).HasMaxLength(40);
+            // Provenance grade (Story Ledger Phase 3) — same vocabulary and same rationale as
+            // Entities.Provenance above. This is the table the cross-book contamination landed in.
+            e.Property(x => x.Provenance).HasMaxLength(20).IsRequired()
+                .HasDefaultValue(Prose.Core.Services.ClaimProvenance.Inferred);
             e.HasOne(x => x.Character).WithMany(x => x.Relationships)
                 .HasForeignKey(x => x.CharacterId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => new { x.CharacterId, x.TargetName });
             e.HasIndex(x => x.TargetEntityId);
+            e.HasIndex(x => x.Provenance).HasDatabaseName("IX_CharacterRelationships_Provenance");
         });
 
         b.Entity<CharacterTimelineEvent>(e =>

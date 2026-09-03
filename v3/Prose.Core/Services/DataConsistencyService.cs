@@ -76,6 +76,14 @@ public class DataConsistencyService
         await SafeRun(findings, "CHAR-AFFIL-ALIAS-DRIFT",   () => CharacterAffiliationAliasDriftAsync(db, ct));
         await SafeRun(findings, "CHAR-HOMETURF-ALIAS-DRIFT",() => CharacterHomeTurfAliasDriftAsync(db, ct));
         await SafeRun(findings, "BRIDGE-ALIAS-DRIFT",       () => BridgeAliasDriftAsync(db, ct));
+        // CharacterRelationships had ZERO coverage here until Story Ledger Phase 3 — the table the
+        // 2026-09-02 cross-book contamination landed in, in the service whose whole job is
+        // "does the denormalized surface still match the authoritative source?". Its FK-integrity
+        // sibling FactionRelationships was covered; this one was simply never added.
+        await SafeRun(findings, "CHAR-REL-EMPTY-TARGET",    () => CharacterRelationshipEmptyTargetAsync(db, ct));
+        await SafeRun(findings, "CHAR-REL-CROSSBOOK",       () => CharacterRelationshipCrossBookAsync(db, ct));
+        await SafeRun(findings, "CHAR-REL-NAME-DRIFT",      () => CharacterRelationshipNameDriftAsync(db, ct));
+        await SafeRun(findings, "CHAR-REL-UNRESOLVED",      () => CharacterRelationshipUnresolvedAsync(db, ct));
         await SafeRun(findings, "BEAT-ORDER-ANOMALY",       () => OpeningBeatOrderAnomaliesAsync(db, ct));
 
         return new ConsistencyReport(
@@ -835,5 +843,242 @@ public class DataConsistencyService
         public string OwnerId { get; set; } = "";
         public string CachedAlias { get; set; } = "";
         public string ActualName { get; set; } = "";
+    }
+
+    // ── CharacterRelationships (Story Ledger Phase 3) ─────────────────────────
+    //
+    // Added because this service had ZERO references to the table that the 2026-09-02 cross-book
+    // contamination landed in. The four checks below are each the machine-readable form of one
+    // thing that actually went wrong or was actually found while cleaning it up — not a
+    // speculative sweep:
+    //
+    //   EMPTY-TARGET   the literal fingerprint of the bad parser (Name="" + raw sentence in Type)
+    //   CROSSBOOK      the contamination itself: a row joining two different books' continuities
+    //   NAME-DRIFT     BRIDGE-ALIAS-DRIFT's shape, which missed this table because the column is
+    //                  called TargetName rather than Alias
+    //   UNRESOLVED     the 493-row population found in 2026-08-10's backfill; a report, never a
+    //                  rejection, since an intentional off-page reference is legitimate
+    //
+    // WriteGate's CharacterRelationshipTargetCheck now prevents new EMPTY-TARGET and CROSSBOOK
+    // rows at the write. These checks are what find the ones already stored, and what proves the
+    // gate is holding.
+
+    private sealed class RelationshipSample
+    {
+        public string RowId { get; set; } = "";
+        public string CharacterName { get; set; } = "";
+        public string Detail { get; set; } = "";
+    }
+
+    /// <summary>
+    /// Sample allowance for the two error-severity relationship checks, deliberately above the
+    /// shared <see cref="SampleLimit"/>. Those two report a DEFECT population, not a census: every
+    /// row they name has to be looked at and removed by hand (there is no safe bulk fix — the
+    /// Description may carry a real assertion), so a finding that names 5 of 19 is a finding you
+    /// cannot act on. The drift/unresolved checks stay at SampleLimit because their populations
+    /// are hundreds of rows and the count is the signal, not the list.
+    /// </summary>
+    private const int DefectSampleLimit = 25;
+
+    /// <summary>
+    /// Relationship rows pointing at nothing at all — an empty/whitespace <c>TargetName</c>.
+    ///
+    /// <para>Severity "error", not "warn": every other check here reports a stale cache that still
+    /// describes something real. A relationship to nobody is not a fact about anyone, it is
+    /// unrecoverable noise sitting in canon, and the read paths that render it (get_character, the
+    /// XRay relationship block) present it to the prose engine as a real edge.</para>
+    /// </summary>
+    private async Task<Finding> CharacterRelationshipEmptyTargetAsync(ProseDbContext db, CancellationToken ct)
+    {
+        const string where = "WHERE r.TargetName IS NULL OR LTRIM(RTRIM(r.TargetName)) = ''";
+
+        var rows = await db.Database.SqlQueryRaw<RelationshipSample>($"""
+            SELECT TOP ({DefectSampleLimit})
+                CAST(r.Id AS NVARCHAR(50)) AS RowId,
+                e.Name                     AS CharacterName,
+                CONCAT('[', r.Type, '] ', LEFT(r.Description, 80)) AS Detail
+            FROM [dbo].[CharacterRelationships] r
+            JOIN [dbo].[Entities] e ON e.Id = r.CharacterId
+            {where}
+            """).ToListAsync(ct);
+
+        var count = await db.Database.SqlQueryRaw<long>($"""
+            SELECT COUNT_BIG(*) AS Value FROM [dbo].[CharacterRelationships] r {where}
+            """).FirstOrDefaultAsync(ct);
+
+        return new Finding(
+            Code: "CHAR-REL-EMPTY-TARGET",
+            Title: "CharacterRelationships rows with no target at all",
+            Description: "A relationship row whose TargetName is empty — the exact fingerprint of " +
+                         "CanonGroundingService's pre-2026-09-02 claim parser, which split on \" of \" and, " +
+                         "when the claim had no such connector, wrote an empty Name with the raw sentence " +
+                         "duplicated into Type and Description. These render as real relationship edges to " +
+                         "every reader (get_character, the XRay block, prose context) while naming nobody.",
+            DriftCount: count,
+            Samples: rows.Take(DefectSampleLimit)
+                .Select(r => new SampleRow(r.CharacterName, $"row {r.RowId}: {r.Detail}")).ToList(),
+            Severity: count == 0 ? "info" : "error",
+            FixHint: count > 0
+                ? "Remove each row individually: prose --entity-relationships --character <name> --remove --id <rowId> " +
+                  "(system-versioned, recoverable from CharacterRelationships_History). Read the Description first — " +
+                  "it may name a real relationship the prose asserts, which should be re-added properly."
+                : null);
+    }
+
+    /// <summary>
+    /// Rows joining two DIFFERENT books' continuities: the source character and the resolved
+    /// target are each scoped (<c>OriginNodeId</c>) to a different book. This is the shape of the
+    /// contamination itself — seven rows describing BCODA's Kyle written onto Testament's Seo
+    /// Jisun. A null <c>OriginNodeId</c> on either side means a universe-wide entity shared by
+    /// every book in the universe, which is legitimate and deliberately not counted.
+    /// </summary>
+    private async Task<Finding> CharacterRelationshipCrossBookAsync(ProseDbContext db, CancellationToken ct)
+    {
+        const string from = """
+            FROM [dbo].[CharacterRelationships] r
+            JOIN [dbo].[Entities] src ON src.Id = r.CharacterId
+            JOIN [dbo].[Entities] tgt ON tgt.Id = r.TargetEntityId
+            WHERE src.OriginNodeId IS NOT NULL
+              AND tgt.OriginNodeId IS NOT NULL
+              AND src.OriginNodeId <> tgt.OriginNodeId
+            """;
+
+        var rows = await db.Database.SqlQueryRaw<RelationshipSample>($"""
+            SELECT TOP ({DefectSampleLimit})
+                CAST(r.Id AS NVARCHAR(50)) AS RowId,
+                src.Name                   AS CharacterName,
+                CONCAT('[', r.Type, '] -> ', tgt.Name) AS Detail
+            {from}
+            """).ToListAsync(ct);
+
+        var count = await db.Database.SqlQueryRaw<long>($"""
+            SELECT COUNT_BIG(*) AS Value {from}
+            """).FirstOrDefaultAsync(ct);
+
+        return new Finding(
+            Code: "CHAR-REL-CROSSBOOK",
+            Title: "CharacterRelationships rows spanning two different books' continuities",
+            Description: "Both ends of the relationship are book-scoped, to different books. This is the " +
+                         "2026-08-22 OriginNodeId contamination class, recurred 2026-09-02 on Seo Jisun. " +
+                         "CrossUniverseOriginCheck guards the cross-universe case; nothing guarded " +
+                         "cross-book within one universe until WriteGate's CharacterRelationshipTargetCheck. " +
+                         "Rows here predate that gate.",
+            DriftCount: count,
+            Samples: rows.Take(DefectSampleLimit)
+                .Select(r => new SampleRow(r.CharacterName, $"row {r.RowId}: {r.Detail}")).ToList(),
+            Severity: count == 0 ? "info" : "error",
+            FixHint: count > 0
+                ? "Per row: if the target is genuinely shared across books, clear its OriginNodeId " +
+                  "(prose --set-entity-origin); if it is a different same-named entity, repoint the row; if the " +
+                  "row is contamination, prose --entity-relationships --character <name> --remove --id <rowId>."
+                : null);
+    }
+
+    /// <summary>
+    /// Same denormalized-cache-vs-FK drift as <see cref="BridgeAliasDriftAsync"/>, which does not
+    /// cover this table: that sweep matches on a column literally named <c>Alias</c>, and this
+    /// bridge calls it <c>TargetName</c>. A drifted TargetName mislabels a real graph edge, since
+    /// the read surfaces render the cached string rather than the FK's current Name.
+    ///
+    /// <para><b>A registered alias is not drift.</b> The first live run of this check reported 49
+    /// rows, and every one of them was <c>TargetName = 'Kyle'</c> pointing correctly at
+    /// <c>'Kyle Ellen Corbin'</c> — <c>EntityResolver</c> resolving a well-known alias exactly as
+    /// designed. Rows whose TargetName is a registered alias of their own target are therefore
+    /// excluded; only a name that matches neither the entity's Name nor any of its aliases is
+    /// actually stale. Left unexcluded, the check would have reported a 49-row defect that does
+    /// not exist, which is worse than having no check: this project's every false-positive flood
+    /// has come from a rule that was NEARLY right applied corpus-wide.</para>
+    /// </summary>
+    private async Task<Finding> CharacterRelationshipNameDriftAsync(ProseDbContext db, CancellationToken ct)
+    {
+        // The four alias tables EntityResolver.ResolveByAlias itself consults, in one pass — a row
+        // is only drifted if its TargetName appears in none of them for its own target entity.
+        const string from = """
+            FROM [dbo].[CharacterRelationships] r
+            JOIN [dbo].[Entities] e ON e.Id = r.TargetEntityId
+            WHERE r.TargetName <> e.Name
+              AND NOT EXISTS (SELECT 1 FROM [dbo].[CharacterAliases] a WHERE a.CharacterId = e.Id AND a.Value = r.TargetName)
+              AND NOT EXISTS (SELECT 1 FROM [dbo].[PlaceAliases]     a WHERE a.PlaceId     = e.Id AND a.Value = r.TargetName)
+              AND NOT EXISTS (SELECT 1 FROM [dbo].[FactionAliases]   a WHERE a.FactionId   = e.Id AND a.Value = r.TargetName)
+              AND NOT EXISTS (SELECT 1 FROM [dbo].[WeaponAliases]    a WHERE a.WeaponId    = e.Id AND a.Value = r.TargetName)
+            """;
+
+        var rows = await db.Database.SqlQueryRaw<AliasDriftSample>($"""
+            SELECT TOP (6)
+                CAST(r.CharacterId AS NVARCHAR(50)) AS OwnerId,
+                r.TargetName                        AS CachedAlias,
+                e.Name                              AS ActualName
+            {from}
+            """).ToListAsync(ct);
+
+        var count = await db.Database.SqlQueryRaw<long>($"""
+            SELECT COUNT_BIG(*) AS Value {from}
+            """).FirstOrDefaultAsync(ct);
+
+        return new Finding(
+            Code: "CHAR-REL-NAME-DRIFT",
+            Title: "CharacterRelationships.TargetName disagrees with its own TargetEntityId",
+            Description: "The row's cached target name matches neither the Name of the entity its own FK " +
+                         "points at NOR any registered alias of that entity — an entity rename that updated " +
+                         "the FK's target but not this row. BRIDGE-ALIAS-DRIFT sweeps every other bridge for " +
+                         "exactly this and skips this one because the column here is TargetName, not Alias. " +
+                         "A row naming its target by a registered alias (TargetName 'Kyle' -> 'Kyle Ellen " +
+                         "Corbin') is correct resolution, not drift, and is excluded.",
+            DriftCount: count,
+            Samples: rows.Take(SampleLimit)
+                .Select(r => new SampleRow(r.OwnerId, $"shows '{r.CachedAlias}' but TargetEntityId now points at '{r.ActualName}'"))
+                .ToList(),
+            Severity: count == 0 ? "info" : "warn",
+            FixHint: count > 0
+                ? "Per row, refresh the cached name to the target's current Name — but ONLY for the rows this " +
+                  "check reports. A blanket 'UPDATE ... WHERE TargetName <> Name' would also overwrite every " +
+                  "row that legitimately names its target by a registered alias, which this check deliberately " +
+                  "excludes. Use prose --entity-relationships --character <name> to inspect, then re-add."
+                : null);
+    }
+
+    /// <summary>
+    /// Rows naming a target that never resolved to a seeded entity. Reported, never treated as an
+    /// error: CLAUDE.md's Stage 2 gate explicitly permits "an intentional off-page reference", and
+    /// the table carries no field distinguishing that from a target nobody remembered to seed.
+    /// The count is the signal — 493 corpus-wide in 2026-08-10 meant every character relationship
+    /// in the corpus was inert display text rather than a graph edge.
+    /// </summary>
+    private async Task<Finding> CharacterRelationshipUnresolvedAsync(ProseDbContext db, CancellationToken ct)
+    {
+        const string where = """
+            WHERE r.TargetEntityId IS NULL
+              AND r.TargetName IS NOT NULL AND LTRIM(RTRIM(r.TargetName)) <> ''
+            """;
+
+        var rows = await db.Database.SqlQueryRaw<RelationshipSample>($"""
+            SELECT TOP (6)
+                CAST(r.Id AS NVARCHAR(50)) AS RowId,
+                e.Name                     AS CharacterName,
+                CONCAT('[', r.Type, '] -> ', r.TargetName) AS Detail
+            FROM [dbo].[CharacterRelationships] r
+            JOIN [dbo].[Entities] e ON e.Id = r.CharacterId
+            {where}
+            """).ToListAsync(ct);
+
+        var count = await db.Database.SqlQueryRaw<long>($"""
+            SELECT COUNT_BIG(*) AS Value FROM [dbo].[CharacterRelationships] r {where}
+            """).FirstOrDefaultAsync(ct);
+
+        return new Finding(
+            Code: "CHAR-REL-UNRESOLVED",
+            Title: "CharacterRelationships rows whose target never resolved to a seeded entity",
+            Description: "The row names a target but carries no TargetEntityId, so it is display text rather " +
+                         "than a graph edge. Some of these are legitimate off-page references; the rest are " +
+                         "Stage 1 seeding gaps (the entity the outline names was never created). Not an error " +
+                         "on its own — the count and the trend are the signal.",
+            DriftCount: count,
+            Samples: rows.Take(SampleLimit)
+                .Select(r => new SampleRow(r.CharacterName, $"row {r.RowId}: {r.Detail}")).ToList(),
+            Severity: count == 0 ? "info" : "warn",
+            FixHint: count > 0
+                ? "Seed the missing entities, then prose --backfill-character-relationships to re-resolve; " +
+                  "review the remainder with prose --entity-relationships --character <name> --orphans."
+                : null);
     }
 }

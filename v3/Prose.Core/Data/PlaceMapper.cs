@@ -304,11 +304,17 @@ public static class PlaceMapper
             });
         }
 
+        // The place's own book scope, so a same-named target in another book cannot win the
+        // resolution (Story Ledger Phase 3 — same reasoning as CharacterMapper's relationship
+        // loop). Null means "universe-wide place, no book preference", not a missing scope.
+        var placeOriginNodeId = db.Entities.AsNoTracking()
+            .Where(x => x.Id == id).Select(x => x.OriginNodeId).FirstOrDefault();
+
         // FrequentedBy — resolve to any entity FK when possible
         for (int i = 0; i < src.FrequentedBy.Count; i++)
         {
             var alias = src.FrequentedBy[i] ?? "";
-            var targetId = ResolveEntityIdAny(db, alias);
+            var targetId = ResolveEntityIdAny(db, alias, placeOriginNodeId);
             db.PlaceFrequentedBy.Add(new PlaceFrequentBy { PlaceId = id, Position = i, Alias = alias, TargetEntityId = targetId });
         }
 
@@ -329,7 +335,7 @@ public static class PlaceMapper
         for (int i = 0; i < src.RelatedEntities.Count; i++)
         {
             var alias = src.RelatedEntities[i] ?? "";
-            var relId = ResolveEntityIdAny(db, alias);
+            var relId = ResolveEntityIdAny(db, alias, placeOriginNodeId);
             db.PlaceRelatedEntities.Add(new PlaceRelatedEntity { PlaceId = id, Position = i, Alias = alias, RelatedEntityId = relId });
         }
     }
@@ -440,6 +446,6 @@ public static class PlaceMapper
     }
 
     /// <summary>Delegates to <see cref="EntityResolver.ResolveEntityIdAny"/> (shared with CharacterMapper).</summary>
-    private static Guid? ResolveEntityIdAny(ProseDbContext db, string alias)
-        => EntityResolver.ResolveEntityIdAny(db, alias);
+    private static Guid? ResolveEntityIdAny(ProseDbContext db, string alias, Guid? scopeNodeId = null)
+        => EntityResolver.ResolveEntityIdAny(db, alias, scopeNodeId);
 }

@@ -61,6 +61,23 @@ public class Entity
     /// </summary>
     public Guid? OriginNodeId { get; set; }
 
+    /// <summary>
+    /// How this entity came to exist in canon — see
+    /// <see cref="Services.ClaimProvenance"/> for the grades (the same vocabulary the fact ledger
+    /// uses; one vocabulary, so the three tables cannot drift into three dialects).
+    ///
+    /// <para>Story Ledger Phase 3. The question it answers is the one no column could answer
+    /// before: <i>did a human ever approve this entity, or did a model invent it?</i> A fabricated
+    /// character ("Dae-jung Seo") survived in canon long enough to spread into a weapon record and
+    /// an unrelated book's character precisely because "show me everything nobody approved" was an
+    /// archaeology project rather than a query. <c>prose --provenance-audit</c> is that query.</para>
+    ///
+    /// <para>Pre-Phase-3 rows are grandfathered to <see cref="Services.ClaimProvenance.LegacyUnknown"/>
+    /// by the migration, per the author's ruling for this program: an unknown grade is not evidence
+    /// of a defect, and mass-flagging thousands of rows would bury the ones that genuinely are.</para>
+    /// </summary>
+    public string Provenance { get; set; } = Services.ClaimProvenance.Inferred;
+
     // Navigation
     public ICollection<EntityProperty> Properties { get; set; } = new List<EntityProperty>();
     public ICollection<EntityTaxonomy> Taxonomies { get; set; } = new List<EntityTaxonomy>();

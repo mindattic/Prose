@@ -43,6 +43,18 @@ public interface IUniverseContext
     /// </summary>
     string UniverseGroundingOr(string glmzFallback);
 
+    /// <summary>
+    /// True when the current universe was chosen by the CALLER (a flow override or a process
+    /// override — <c>--universe</c>, <c>PROSE_UNIVERSE</c>, <c>switch_universe</c>) rather than
+    /// inherited from the persisted <c>current_universe</c> default.
+    ///
+    /// <para>Story Ledger Phase 3. The default is a convenience for reads and a hazard for writes:
+    /// a caller that never named a universe still gets one, so new canon can land in whichever
+    /// universe happened to be the process default. <c>UnscopedUniverseWriteCheck</c> uses this to
+    /// refuse exactly that — see its doc comment for why only ambient-stamped INSERTS are gated.</para>
+    /// </summary>
+    bool IsExplicitlyScoped { get; }
+
     /// <summary>Set the process-scoped universe (CLI/MCP/UI active selection). Not persisted.</summary>
     void UseUniverse(Guid id);
     /// <summary>Set the process universe by slug. Returns false if the slug is unknown.</summary>
@@ -118,6 +130,18 @@ public static class UniverseScope
     public static Guid EffectiveId => Current?.CurrentId ?? UniverseBootstrap.ResolveWellKnownId() ?? Guid.Empty;
 
     /// <summary>
+    /// True when the ambient universe was named by the caller rather than inherited from the
+    /// persisted default — see <see cref="IUniverseContext.IsExplicitlyScoped"/>.
+    ///
+    /// <para>With no context wired at all (tests, design-time), this falls back to the well-known
+    /// <c>--universe</c>/<c>PROSE_UNIVERSE</c> resolution: present means explicit, absent means
+    /// there is no universe scoping in play at all — in which case <see cref="EffectiveId"/> is
+    /// <c>Guid.Empty</c>, scoping is a no-op, and nothing downstream is gating on this.</para>
+    /// </summary>
+    public static bool IsExplicitlyScoped =>
+        Current?.IsExplicitlyScoped ?? (UniverseBootstrap.ResolveWellKnownId() != null);
+
+    /// <summary>
     /// Monotonic counter bumped whenever the current universe changes. In-memory caches that aren't
     /// universe-keyed (repository GetAll caches, singleton config caches) record the epoch they were
     /// built at and rebuild when it differs — so a mid-process SwitchUniverse (the UI dropdown) never
@@ -180,6 +204,19 @@ public sealed class UniverseContext : IUniverseContext
     }
 
     public string CurrentSlug => CurrentUniverse?.Slug ?? "";
+
+    /// <inheritdoc />
+    public bool IsExplicitlyScoped
+    {
+        get
+        {
+            // EnsureLoaded first: the process override is applied lazily there from
+            // --universe/PROSE_UNIVERSE, so asking before the catalog loads would report a
+            // CLI process that DID name its universe as unscoped.
+            EnsureLoaded();
+            return flowOverride.Value != null || processOverride != null;
+        }
+    }
 
     public bool IsGlmz
     {

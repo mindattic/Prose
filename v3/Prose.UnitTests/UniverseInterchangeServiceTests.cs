@@ -282,6 +282,11 @@ public class UniverseInterchangeServiceTests
     {
         public AmbientScopeStub(Guid currentId) => CurrentId = currentId;
         public Guid CurrentId { get; set; }
+        // A fake that pins CurrentId HAS named its universe — that is exactly what an explicit
+        // scope means (Story Ledger Phase 3, UnscopedUniverseWriteCheck). Guid.Empty means no
+        // universe is wired at all, where scoping is a no-op and nothing gates on this.
+        public bool IsExplicitlyScoped => CurrentId != Guid.Empty;
+
         public string CurrentSlug => "ambient-test";
         public UniverseInfo? CurrentUniverse => new(CurrentId, CurrentSlug, "Ambient Test", null, null, true, 100);
         public IReadOnlyList<UniverseInfo> ListUniverses() => new List<UniverseInfo>();

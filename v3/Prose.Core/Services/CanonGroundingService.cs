@@ -22,17 +22,20 @@ public class CanonGroundingService
     private readonly CharacterRepository characters;
     private readonly IPathProvider paths;
     private readonly FindingsService findings;
+    private readonly Audit.ProvenanceService provenance;
     private readonly ILogger<CanonGroundingService> log;
 
     public CanonGroundingService(
         ILlmService llm, XrefService xref, CharacterRepository characters,
-        IPathProvider paths, FindingsService findings, ILogger<CanonGroundingService> log)
+        IPathProvider paths, FindingsService findings, Audit.ProvenanceService provenance,
+        ILogger<CanonGroundingService> log)
     {
         this.llm = llm;
         this.xref = xref;
         this.characters = characters;
         this.paths = paths;
         this.findings = findings;
+        this.provenance = provenance;
         this.log = log;
     }
 
@@ -68,6 +71,14 @@ public class CanonGroundingService
                 {
                     var stub = ScaffoldCharacter(entity, out var unparsedClaims);
                     characters.Save(stub);
+                    // Grade the entity row itself scaffolded (Story Ledger Phase 3). The
+                    // "auto-scaffolded"/"needs-review" TAGS above already said this, but tags are
+                    // free text nothing queries or enforces — a grade is a column
+                    // --provenance-audit counts, and the one thing that separates "a model
+                    // invented this while writing a beat" from author-approved canon after the
+                    // fact. Done here rather than in CharacterRepository.Save because the SAVE is
+                    // not what makes a record provisional; this call site is.
+                    await GradeScaffoldedAsync(stub.Id, entity.Name, ct);
                     entity.Scaffolded = true;
                     entity.ScaffoldedId = stub.Id;
                     result.EntitiesScaffolded++;
@@ -99,6 +110,18 @@ public class CanonGroundingService
 
         SaveLog(result);
         return result;
+    }
+
+    /// <summary>
+    /// Mark a freshly-scaffolded stub's Entity row <see cref="ClaimProvenance.Scaffolded"/>.
+    /// Never throws into the grounding pass: this service's contract is "never blocks generation",
+    /// so a failed grade is logged and the stub survives ungraded rather than losing the record.
+    /// </summary>
+    private async Task GradeScaffoldedAsync(string? stubId, string name, CancellationToken ct)
+    {
+        if (!Guid.TryParse(stubId, out var id)) return;
+        try { await provenance.SetEntityProvenanceAsync(id, ClaimProvenance.Scaffolded, ct); }
+        catch (Exception ex) { log.LogWarning(ex, "Failed to grade scaffolded stub '{Name}' ({Id})", name, id); }
     }
 
     /// <summary>Raise a low-severity PROVISIONAL-ENTITY finding so unknown
@@ -219,7 +242,14 @@ public class CanonGroundingService
                              || target.StartsWith("the ", StringComparison.OrdinalIgnoreCase);
             if (!looksNamed || target.Length > 80) continue;
 
-            return new CharacterRelationship { Name = target, Type = type, Description = claim };
+            // Graded scaffolded, never canon — this parser's output is a candidate a human has
+            // not seen (Story Ledger Phase 3). The seven contaminating rows were undetectable as
+            // machine-authored once written; the grade is what keeps that distinction.
+            return new CharacterRelationship
+            {
+                Name = target, Type = type, Description = claim,
+                Provenance = ClaimProvenance.Scaffolded,
+            };
         }
 
         return null;
