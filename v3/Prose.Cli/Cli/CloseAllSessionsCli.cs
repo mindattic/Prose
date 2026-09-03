@@ -21,6 +21,7 @@ public static class CloseAllSessionsCli
         var sessionSvc = services.GetRequiredService<EditSessionService>();
         var bibleSvc   = services.GetRequiredService<OutlineSyncService>();
         var bpSvc      = services.GetRequiredService<BlueprintSyncService>();
+        var universes  = services.GetRequiredService<IUniverseContext>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
 
@@ -64,7 +65,12 @@ public static class CloseAllSessionsCli
                     continue;
                 }
 
-                Console.WriteLine($"  [{node.NodeCode}] {session.Label} ({session.BeatCount} beat(s))");
+                // NodeCode ?? Slug: beats attach to CHAPTER nodes (BeatNodes), and chapter nodes
+                // carry no NodeCode — every line here used to print an empty "[]", which is what
+                // hid the real shape of the 31-session failure until 2026-09-03. Universe slug is
+                // printed because this command is deliberately cross-universe.
+                var uSlug = universes.ListUniverses().FirstOrDefault(u => u.Id == node.UniverseId)?.Slug ?? "?";
+                Console.WriteLine($"  [{uSlug}/{node.NodeCode ?? node.Slug}] {session.Label} ({session.BeatCount} beat(s))");
 
                 // Bible sync: extract facts and append to docs/nodes/<CODE>.md
                 var bibleReport = await bibleSvc.ExtractFromSessionAsync(session.EditSessionId);
