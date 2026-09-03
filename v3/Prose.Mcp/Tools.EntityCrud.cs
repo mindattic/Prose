@@ -72,12 +72,13 @@ public class CoreEntityCrudTools
         [Description("Optional JSON for speech_patterns: {vocabulary, cadence, verbal_tics, example_lines, subtext}.")] string speechPatternsJson = "",
         [Description("Optional JSON for physical_description: {heritage, height_cm, weight_kg, build, hair_color, eye_color, distinguishing_marks}.")] string physicalDescriptionJson = "",
         [Description("Optional existing character id (32-char hex or full UUID) to update.")] string id = "",
-        [Description("Optional book/series node slug this character belongs to (Entity.OriginNodeId). Pass this when seeding a book's cast — it lets a genuinely different character elsewhere reuse a common name (e.g. two unrelated books each with a 'Marcus') instead of being refused as a duplicate.")] string originNodeSlug = "") =>
+        [Description("Optional book/series node slug this character belongs to (Entity.OriginNodeId). Pass this when seeding a book's cast — it lets a genuinely different character elsewhere reuse a common name (e.g. two unrelated books each with a 'Marcus') instead of being refused as a duplicate.")] string originNodeSlug = "",
+        [Description("Optional JSON array of relationships: [{name (target, required), type, description, emotional_core, story_tension, status, since_chapter, until_chapter}]. REPLACES the whole list (the mapper rewrites the bridge table on every save) — pass '[]' to CLEAR all relationships, omit to leave unchanged. An entry with an empty 'name' is rejected.")] string relationshipsJson = "") =>
         hub.InvokeAsync(nameof(CoreEntityCrudTools), nameof(CreateCharacterImpl), new
         {
             name, role, description, species, gender, pronouns, age, status, location, affiliation,
             augmentations, narrativeFunction, tags, storyHooks, aliases, psychologyJson, speechPatternsJson,
-            physicalDescriptionJson, id, originNodeSlug,
+            physicalDescriptionJson, id, originNodeSlug, relationshipsJson,
         });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
@@ -101,7 +102,8 @@ public class CoreEntityCrudTools
         string speechPatternsJson = "",
         string physicalDescriptionJson = "",
         string id = "",
-        string originNodeSlug = "")
+        string originNodeSlug = "",
+        string relationshipsJson = "")
     {
         Guid? resolvedOrigin = null;
         if (!string.IsNullOrWhiteSpace(originNodeSlug))
@@ -214,6 +216,40 @@ public class CoreEntityCrudTools
         {
             try { c.Psychology = JsonSerializer.Deserialize<CharacterPsychology>(psychologyJson, CanonTools.JsonOpts) ?? c.Psychology; }
             catch (Exception ex) { warnings.Add($"psychologyJson ignored — parse error: {ex.Message}"); }
+        }
+        // Relationships were unreachable from this tool until 2026-09-02. CharacterMapper.PersistAsync
+        // has always read src.Relationships and rewritten the CharacterRelationships bridge, but nothing
+        // here populated it — so there was no sanctioned way to add OR remove a relationship, and a bad
+        // row (see the Seo Jisun cross-book contamination) could not be repaired at all. Because the
+        // mapper deletes-all-and-reinserts, this is REPLACE semantics, not additive like aliases.
+        if (!string.IsNullOrWhiteSpace(relationshipsJson))
+        {
+            try
+            {
+                var parsed = JsonSerializer.Deserialize<List<CharacterRelationship>>(relationshipsJson, CanonTools.JsonOpts);
+                if (parsed is null)
+                {
+                    warnings.Add("relationshipsJson ignored — parsed to null. Expected a JSON array.");
+                }
+                else
+                {
+                    // An empty target is what made the contamination rows unusable and unrepairable.
+                    // Refuse the whole call rather than write one.
+                    var blank = parsed.FindIndex(r => string.IsNullOrWhiteSpace(r.Name));
+                    if (blank >= 0)
+                        return JsonSerializer.Serialize(new
+                        {
+                            ok = false,
+                            error = "relationship_missing_target",
+                            index = blank,
+                            message = $"relationshipsJson[{blank}] has an empty 'name' (the relationship target). "
+                                    + "Every relationship must name what it points at.",
+                        }, CanonTools.JsonOpts);
+
+                    c.Relationships = parsed;
+                }
+            }
+            catch (Exception ex) { warnings.Add($"relationshipsJson ignored — parse error: {ex.Message}"); }
         }
         if (!string.IsNullOrWhiteSpace(speechPatternsJson))
         {
@@ -506,11 +542,12 @@ public class GearEntityCrudTools
         [Description("Comma-separated ammunition types this weapon accepts.")] string ammunitionTypes = "",
         [Description("Comma-separated story hooks.")] string storyHooks = "",
         [Description("Comma-separated tags.")] string tags = "",
-        [Description("Optional existing weapon id to update.")] string id = "") =>
+        [Description("Optional existing weapon id to update.")] string id = "",
+        [Description("Comma-separated known users (character names). Pass '[]' to CLEAR the list. Omit to leave unchanged.")] string knownUsers = "") =>
         hub.InvokeAsync(nameof(GearEntityCrudTools), nameof(CreateWeaponImpl), new
         {
             name, category, description, manufacturer, tierAvailability, legality, specifications,
-            tacticalUse, culturalContext, ammunitionTypes, storyHooks, tags, id,
+            tacticalUse, culturalContext, ammunitionTypes, storyHooks, tags, id, knownUsers,
         });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
@@ -527,7 +564,8 @@ public class GearEntityCrudTools
         string ammunitionTypes = "",
         string storyHooks = "",
         string tags = "",
-        string id = "")
+        string id = "",
+        string knownUsers = "")
     {
         var w = string.IsNullOrEmpty(id)
             ? new WeaponryData()
@@ -548,9 +586,17 @@ public class GearEntityCrudTools
             w.StoryHooks = [.. storyHooks.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
         if (!string.IsNullOrEmpty(tags))
             w.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
+        // KnownUsers was unreachable from this tool until 2026-09-02: WeaponMapper.PersistAsync
+        // has always written it, but nothing here ever populated it, so a caller passing the
+        // field got ok:true and a silent no-op. "[]" clears; empty leaves unchanged.
+        if (knownUsers == "[]")
+            w.KnownUsers = [];
+        else if (!string.IsNullOrEmpty(knownUsers))
+            w.KnownUsers = [.. knownUsers.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         weapons.Save(w);
-        return JsonSerializer.Serialize(new { ok = true, id = w.Id, name = w.Name }, CanonTools.JsonOpts);
+        return JsonSerializer.Serialize(
+            new { ok = true, id = w.Id, name = w.Name, known_users = w.KnownUsers }, CanonTools.JsonOpts);
     }
 
     /// <summary>Create or update a cyberware record. Pass empty id to create new; pass an existing id to update.</summary>

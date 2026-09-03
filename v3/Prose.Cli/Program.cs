@@ -498,6 +498,20 @@ if (args.Contains("--relation-aliases"))
     return;
 }
 
+// CLI mode: surgical CRUD over a character's CharacterRelationships rows. Added 2026-09-02 —
+// there was previously NO sanctioned way to remove a single relationship row (see
+// EntityRelationshipCli's doc comment and the Seo Jisun cross-book contamination).
+// Deliberately universe-scoped: --character resolves through db.Characters, which the Entity
+// query filter scopes, so this stays out of UniverseAgnosticCommands.
+//   prose --entity-relationships --character <name-or-id> [--json] [--orphans]
+//   prose --entity-relationships --character <name-or-id> --remove --id <rowId>
+//   prose --entity-relationships --character <name-or-id> --add --target <name> --type <type>
+if (args.Contains("--entity-relationships"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("EntityRelationshipCli", args);
+    return;
+}
+
 // CLI mode: list every beat that mentions a given entity (node, beat number, excerpt).
 //   prose --entity-mentions --entity <id|slug> [--limit <n>]
 if (args.Contains("--entity-mentions"))

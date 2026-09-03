@@ -546,6 +546,7 @@ Create or update a character in canon. Pass empty id to create new; pass an exis
 - `physicalDescriptionJson` (string, optional) — Optional JSON for physical_description: {heritage, height_cm, weight_kg, build, hair_color, eye_color, distinguishing_marks}.
 - `id` (string, optional) — Optional existing character id (32-char hex or full UUID) to update.
 - `originNodeSlug` (string, optional) — Optional book/series node slug this character belongs to (Entity.OriginNodeId). Pass this when seeding a book's cast — it lets a genuinely different character elsewhere reuse a common name (e.g. two unrelated books each with a 'Marcus') instead of being refused as a duplicate.
+- `relationshipsJson` (string, optional) — Optional JSON array of relationships: [{name (target, required), type, description, emotional_core, story_tension, status, since_chapter, until_chapter}]. REPLACES the whole list (the mapper rewrites the bridge table on every save) — pass '[]' to CLEAR all relationships, omit to leave unchanged. An entry with an empty 'name' is rejected.
 
 ### `create_corponation`
 
@@ -1115,6 +1116,7 @@ Create or update a weapon in canon. Pass empty id to create new; pass an existin
 - `storyHooks` (string, optional) — Comma-separated story hooks.
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing weapon id to update.
+- `knownUsers` (string, optional) — Comma-separated known users (character names). Pass '[]' to CLEAR the list. Omit to leave unchanged.
 
 ## Glossary
 

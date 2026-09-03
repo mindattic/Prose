@@ -66,7 +66,7 @@ public class CanonGroundingService
             {
                 if (entity.InferredType is "character" or "person" or "unknown")
                 {
-                    var stub = ScaffoldCharacter(entity);
+                    var stub = ScaffoldCharacter(entity, out var unparsedClaims);
                     characters.Save(stub);
                     entity.Scaffolded = true;
                     entity.ScaffoldedId = stub.Id;
@@ -77,6 +77,14 @@ public class CanonGroundingService
                     // Don't grow canon silently — flag the provisional stub for review.
                     TryFlag(entity.Name, sourceContext,
                         $"PROVISIONAL-ENTITY [{entity.InferredType}] '{entity.Name}' was auto-created as a needs-review stub from prose. Confirm, merge into an existing entity, or remove.");
+                    // A claim that isn't relationship-shaped is dropped rather than written as a
+                    // malformed row — but it is never dropped SILENTLY, or the prose that produced
+                    // it goes unexamined.
+                    if (unparsedClaims.Count > 0)
+                    {
+                        TryFlag(entity.Name, sourceContext,
+                            $"UNPARSED-RELATIONSHIP '{entity.Name}': {unparsedClaims.Count} claim(s) were not relationship-shaped and were NOT written to canon — {string.Join(" | ", unparsedClaims.Take(5))}. Either the prose asserts something that needs a real relationship, or the claim is noise.");
+                    }
                 }
                 else
                 {
@@ -166,7 +174,58 @@ public class CanonGroundingService
         }
     }
 
-    private static CharacterData ScaffoldCharacter(ProposedEntity entity)
+    /// <summary>
+    /// Connectors a relationship claim may hinge on, longest-first so " of " never
+    /// pre-empts a longer match. Deliberately short and conservative: a connector that
+    /// mostly introduces a date or a place (" from ", " on ", " in ") produces garbage
+    /// relationships far more often than real ones.
+    /// </summary>
+    private static readonly string[] RelationshipConnectors = [" with ", " for ", " of ", " to ", " by ", " at "];
+
+    /// <summary>
+    /// Parse one LLM-proposed relationship claim ("nephew of Barber Vasquez",
+    /// "works for Arcturus") into a typed relationship, or return null if the claim
+    /// is not relationship-shaped.
+    ///
+    /// This used to be a bare <c>claim.Split(" of ", 2)</c> that wrote a row no matter
+    /// what came back — a claim with no " of " produced <c>Name = ""</c> and dumped the
+    /// whole raw sentence into both Type and Description. That is how a set of BCODA
+    /// sentences ("gave Kyle his katana", "his funeral") ended up as relationship rows on
+    /// an unrelated character in another book. The invariant now: a relationship row is
+    /// only ever written when BOTH a plausible type and a non-empty, proper-noun-shaped
+    /// target were actually recovered. Everything else is dropped and reported.
+    /// </summary>
+    internal static CharacterRelationship? TryParseRelationshipClaim(string claim)
+    {
+        if (string.IsNullOrWhiteSpace(claim)) return null;
+        claim = claim.Trim();
+
+        foreach (var connector in RelationshipConnectors)
+        {
+            var idx = claim.IndexOf(connector, StringComparison.OrdinalIgnoreCase);
+            if (idx <= 0) continue;
+
+            var type = claim[..idx].Trim();
+            var target = claim[(idx + connector.Length)..].Trim();
+            if (type.Length == 0 || target.Length == 0) continue;
+
+            // A relationship TYPE is a word or two ("nephew", "works", "allied"), never a
+            // clause. "Kyle was not informed" is a sentence fragment, not a relation.
+            if (type.Length > 30 || type.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length > 3) continue;
+
+            // A TARGET is a named thing: a proper noun, or a definite description.
+            // This rejects dates ("2189 through 2193") and possessives ("his funeral").
+            var looksNamed = char.IsUpper(target[0])
+                             || target.StartsWith("the ", StringComparison.OrdinalIgnoreCase);
+            if (!looksNamed || target.Length > 80) continue;
+
+            return new CharacterRelationship { Name = target, Type = type, Description = claim };
+        }
+
+        return null;
+    }
+
+    private static CharacterData ScaffoldCharacter(ProposedEntity entity, out List<string> unparsedClaims)
     {
         var stub = new CharacterData
         {
@@ -176,16 +235,12 @@ public class CanonGroundingService
             Tags = ["auto-scaffolded", "needs-review"]
         };
 
+        unparsedClaims = [];
         foreach (var claim in entity.RelationshipClaims)
         {
-            // Parse "X of Y" pattern to extract relationship type and counterpart
-            var parts = claim.Split(" of ", 2, StringSplitOptions.TrimEntries);
-            stub.Relationships.Add(new CharacterRelationship
-            {
-                Name = parts.Length == 2 ? parts[1] : "",
-                Type = parts[0],
-                Description = claim
-            });
+            var parsed = TryParseRelationshipClaim(claim);
+            if (parsed is null) { unparsedClaims.Add(claim); continue; }
+            stub.Relationships.Add(parsed);
         }
 
         return stub;

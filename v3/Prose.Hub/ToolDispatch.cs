@@ -134,6 +134,43 @@ public static class ToolDispatch
             }
         }
 
+        // Reject arguments that matched no parameter, instead of dropping them silently.
+        //
+        // The loop above walks PARAMETERS and pulls the matching arg. Anything the caller
+        // supplied that has no corresponding parameter was never looked at — so a tool invoked
+        // with a field it does not implement ran happily without it and returned ok:true. That
+        // is a silent no-op the caller reads as success: it is how a create_weapon call carrying
+        // known_users appeared to work while changing nothing, and it is the same shape as the
+        // stale-schema incident recorded in project memory (2026-08-24), where a live server
+        // stripped newly-added parameters and still answered ok:true.
+        //
+        // A dropped argument is always a bug — a stale server, a renamed parameter, or a caller
+        // inventing a field. Failing loudly and naming the field turns a whole class of invisible
+        // no-ops into an immediate, diagnosable error.
+        if (argsObj.ValueKind == JsonValueKind.Object)
+        {
+            var known = new HashSet<string>(
+                parameters.Select(p => p.Name!).Where(n => n is not null), StringComparer.OrdinalIgnoreCase);
+            var unknown = argsObj.EnumerateObject()
+                .Select(prop => prop.Name)
+                .Where(n => !known.Contains(n))
+                .ToList();
+
+            if (unknown.Count > 0)
+                return (Results.Json(new
+                {
+                    error = "unknown_arguments",
+                    toolClass = req.ToolClass,
+                    method = methodName,
+                    unknown,
+                    accepted = parameters.Select(p => p.Name).ToArray(),
+                    message = $"{unknown.Count} argument(s) matched no parameter on {req.ToolClass}.{methodName} "
+                            + $"and were NOT applied: {string.Join(", ", unknown)}. The call was refused rather than "
+                            + "silently ignoring them. If the parameter was added recently, the running server is "
+                            + "serving a stale schema and needs a rebuild/restart.",
+                }, statusCode: 400), false, null, $"unknown_arguments: {string.Join(",", unknown)}");
+        }
+
         try
         {
             var result = method.Invoke(instance, args);
