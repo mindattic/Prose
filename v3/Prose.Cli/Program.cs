@@ -512,6 +512,21 @@ if (args.Contains("--entity-relationships"))
     return;
 }
 
+// CLI mode: surgical CRUD over a character's signature-gear / pharmaceuticals list. Added
+// 2026-09-03 — there was no sanctioned way to remove ONE gear entry; create_character
+// round-trips the whole record through the delete-all-and-reinsert mapper, so correcting a
+// single invented item risked every other field. Logic lives in CharacterGearService, shared
+// with the *_character_gear MCP tools. Universe-scoped (--character resolves through
+// db.Characters), so it stays out of UniverseAgnosticCommands.
+//   prose --character-gear --character <name-or-id> [--bucket <b>] [--json]
+//   prose --character-gear --character <name-or-id> --remove --id <rowId>
+//   prose --character-gear --search "<text>" [--json]
+if (args.Contains("--character-gear"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CharacterGearCli", args);
+    return;
+}
+
 // CLI mode: list a book's chapter units in reading order — the 100 ft rung of the Three
 // Altitudes, previously unreachable from the CLI (every read path was a flat beat list, which
 // is why a full-book read fell back to the one-line Description spine). Story Ledger Phase 1.

@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**294 tools** across **50 tool families.**
+**297 tools** across **51 tool families.**
 
 ## Families
 
@@ -27,6 +27,7 @@
 | [Book Logic](#book-logic) | 3 |
 | [Canon](#canon) | 9 |
 | [Canon Doc](#canon-doc) | 7 |
+| [Character Gear](#character-gear) | 3 |
 | [Chekhov Audit](#chekhov-audit) | 1 |
 | [Combat](#combat) | 1 |
 | [Config](#config) | 14 |
@@ -328,6 +329,30 @@ Update or create a section in a world-canon document. This is the ONLY way to ed
 - `content` (string, required) — Full section content (markdown). Replaces the existing content for this key.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
 - `sectionTitle` (string, optional) — Optional: human-readable section title (the ## heading text). Leave blank to keep the existing title.
+
+## Character Gear
+
+<sub>`CharacterGearTools`</sub>
+
+### `list_character_gear`
+
+List a character's gear entries (signature_gear / pharmaceuticals buckets) with their row ids. Row ids are what remove_character_gear takes. Pass a character name or GUID.
+
+- `character` (string, required) — Character name (exact) or GUID.
+- `bucket` (string, optional) — Optional bucket filter, e.g. 'signature_gear' or 'pharmaceuticals'.
+
+### `remove_character_gear`
+
+Remove ONE gear entry from a character by its row id (get ids from list_character_gear). Surgical: the rest of the character record is never round-tripped, so nothing else can be lost. The table is system-versioned, so the row stays recoverable from CharacterBelongingsGear_History.
+
+- `character` (string, required) — Character name (exact) or GUID — the row's owner.
+- `rowId` (long, required) — Numeric gear row id from list_character_gear.
+
+### `search_character_gear`
+
+Corpus-wide search for a gear name across every character — answers 'does anyone still carry X?'. Use before declaring an invented item purged: a per-character-only read is how invented canon survives.
+
+- `text` (string, required) — Substring to look for in gear names (case-insensitive).
 
 ## Chekhov Audit
 

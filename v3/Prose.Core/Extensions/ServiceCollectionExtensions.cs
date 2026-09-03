@@ -1228,6 +1228,9 @@ public static class ServiceCollectionExtensions
         // Story Ledger Phase 3 — the provenance grade across Entities / CharacterRelationships /
         // ContinuityClaims, and the audit that answers "what is in canon nobody approved?".
         services.AddSingleton<Prose.Core.Services.Audit.ProvenanceService>();
+        // Surgical single-row edits to a character's gear list — shared by
+        // prose --character-gear and the *_character_gear MCP tools (2026-09-03).
+        services.AddSingleton<CharacterGearService>();
 
         return services;
     }
