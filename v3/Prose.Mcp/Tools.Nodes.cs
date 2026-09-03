@@ -198,6 +198,12 @@ public class NodeTools
                 duration_sec = b.Beat.DurationSec,
                 title = b.Beat.Title,
                 description = b.Beat.Description,
+                description_state = b.Beat.DescriptionState,
+                // event_summary is the OBSERVATIONAL line ("what happened"); description is
+                // authorial INTENT ("what this beat is doing"). Prefer event_summary when you
+                // need to know what the prose says — see Beat.EventSummary/Beat.Description.
+                event_summary = b.Beat.EventSummary,
+                event_summary_state = b.Beat.EventSummaryState,
             }),
         }, CanonTools.JsonOpts);
     }
@@ -399,6 +405,9 @@ public class NodeTools
             is_chapter_start = beat.IsChapterStart,
             title           = beat.Title,
             description     = beat.Description,
+            description_state = beat.DescriptionState,
+            event_summary   = beat.EventSummary,
+            event_summary_state = beat.EventSummaryState,
             subtext         = beat.Subtext,
             structure_role  = beat.StructureRole,
             act             = beat.Act,
@@ -1402,23 +1411,32 @@ public class NodeTools
         "Unlike print_book (plain joined text only), this returns structured per-beat rows and " +
         "supports a from/to range, or direct lookup of specific beats by their global Beat.Number " +
         "(the id logic-sweep findings quote, e.g. 'Beat #14664') via numbersCsv, which takes " +
-        "precedence over from/to when both are given.")]
+        "precedence over from/to when both are given. Each beat carries event_summary (the " +
+        "observational 'what happened' line) with an event_summary_state of current/stale/" +
+        "unverified - prefer it over description, which is authorial intent. Pass " +
+        "groupByChapter:true for the chapter-altitude view: the same beats nested under their " +
+        "chapter nodes, so a large book can be read chapter by chapter instead of as one flat " +
+        "list.")]
     public Task<string> ReadBeats(
         [Description("Node Guid id or slug.")] string idOrSlug,
         [Description("1-based position to start at (default 1).")] int? from = null,
         [Description("1-based position to end at, inclusive (default: last beat).")] int? to = null,
-        [Description("Optional comma-separated Beat.Number values to look up directly, ignoring from/to.")] string? numbersCsv = null) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(ReadBeatsImpl), new { idOrSlug, from, to, numbersCsv });
+        [Description("Optional comma-separated Beat.Number values to look up directly, ignoring from/to.")] string? numbersCsv = null,
+        [Description("When true, nest the returned beats under their chapter nodes instead of returning one flat list. Positions are identical either way.")] bool? groupByChapter = null) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(ReadBeatsImpl), new { idOrSlug, from, to, numbersCsv, groupByChapter });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> ReadBeatsImpl(string idOrSlug, int? from, int? to, string? numbersCsv)
+    public async Task<string> ReadBeatsImpl(string idOrSlug, int? from, int? to, string? numbersCsv, bool? groupByChapter)
     {
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
         var ordered = await workbench.GetOrderedBeatsAsync(node.Id);
 
-        List<(int position, Beat Beat)> slice;
+        // NodeId rides along so groupByChapter can nest the SAME rows under the SAME source
+        // nodes GetOrderedBeatsAsync already walked — no second tree walk, and the grouped and
+        // flat views can never disagree about order or position.
+        List<(int position, Guid NodeId, Beat Beat)> slice;
         var numbers = string.IsNullOrWhiteSpace(numbersCsv)
             ? null
             : numbersCsv.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
@@ -1426,7 +1444,7 @@ public class NodeTools
                 .Where(n => n.HasValue).Select(n => n!.Value).ToHashSet();
         if (numbers is { Count: > 0 })
         {
-            slice = ordered.Select((ob, i) => (position: i + 1, ob.Beat))
+            slice = ordered.Select((ob, i) => (position: i + 1, ob.NodeId, ob.Beat))
                 .Where(x => numbers.Contains(x.Beat.Number)).ToList();
         }
         else
@@ -1434,11 +1452,11 @@ public class NodeTools
             var from0 = Math.Max(0, (from ?? 1) - 1);
             var to0 = Math.Min(ordered.Count - 1, (to ?? ordered.Count) - 1);
             slice = from0 <= to0
-                ? ordered.Skip(from0).Take(to0 - from0 + 1).Select((ob, i) => (position: from0 + i + 1, ob.Beat)).ToList()
+                ? ordered.Skip(from0).Take(to0 - from0 + 1).Select((ob, i) => (position: from0 + i + 1, ob.NodeId, ob.Beat)).ToList()
                 : [];
         }
 
-        var payload = slice.Select(x => new
+        object BeatRow((int position, Guid NodeId, Beat Beat) x) => new
         {
             position = x.position,
             number = x.Beat.Number,
@@ -1446,8 +1464,56 @@ public class NodeTools
             title = x.Beat.Title,
             kind = x.Beat.Kind,
             text = x.Beat.Text,
-        });
-        return JsonSerializer.Serialize(new { nodeId = node.Id, slug = node.Slug, total = ordered.Count, beats = payload }, CanonTools.JsonOpts);
+            event_summary = x.Beat.EventSummary,
+            event_summary_state = x.Beat.EventSummaryState,
+        };
+
+        if (groupByChapter != true)
+            return JsonSerializer.Serialize(new
+            {
+                nodeId = node.Id, slug = node.Slug, total = ordered.Count,
+                beats = slice.Select(BeatRow),
+            }, CanonTools.JsonOpts);
+
+        // Chapter titles for the source nodes actually present in the slice.
+        // IgnoreQueryFilters(): these ids came out of GetOrderedBeatsAsync (itself
+        // IgnoreQueryFilters-safe) — re-filtering by ambient universe scope here would blank
+        // every title for a book outside the Hub's default universe.
+        var chapterIds = slice.Select(x => x.NodeId).Distinct().ToList();
+        Dictionary<Guid, string> titleById;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+            titleById = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+                .Where(n => chapterIds.Contains(n.Id))
+                .Select(n => new { n.Id, n.Title })
+                .ToDictionaryAsync(n => n.Id, n => n.Title);
+
+        // Consecutive runs, not GroupBy: the walk emits each node's beats contiguously, and a
+        // run-based grouping preserves reading order even if a node were ever revisited.
+        var groups = new List<object>();
+        var runStart = 0;
+        for (var i = 1; i <= slice.Count; i++)
+        {
+            if (i < slice.Count && slice[i].NodeId == slice[runStart].NodeId) continue;
+            var run = slice.GetRange(runStart, i - runStart);
+            groups.Add(new
+            {
+                chapter_index = groups.Count + 1,
+                chapter_node_id = run[0].NodeId,
+                title = titleById.GetValueOrDefault(run[0].NodeId) is { Length: > 0 } t ? t : null,
+                is_book_node = run[0].NodeId == node.Id,
+                beat_count = run.Count,
+                first_position = run[0].position,
+                last_position = run[^1].position,
+                beats = run.Select(BeatRow).ToList(),
+            });
+            runStart = i;
+        }
+
+        return JsonSerializer.Serialize(new
+        {
+            nodeId = node.Id, slug = node.Slug, total = ordered.Count,
+            chapter_count = groups.Count, chapters = groups,
+        }, CanonTools.JsonOpts);
     }
 
     private async Task<Node?> ResolveNodeAsync(string idOrSlug)

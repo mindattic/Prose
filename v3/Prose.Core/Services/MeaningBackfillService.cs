@@ -3,6 +3,7 @@ using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
+using Prose.Core.Data.Entities;
 using Prose.Core.Interfaces;
 
 namespace Prose.Core.Services;
@@ -113,7 +114,16 @@ Output STRICT JSON, no fences, no commentary:
                 {
                     if (trackedById.TryGetValue(beatId, out var beat))
                     {
-                        if (!dryRun) beat.Description = meaning;
+                        if (!dryRun)
+                        {
+                            beat.Description = meaning;
+                            // This meaning line was written FROM this beat's prose (the query
+                            // above requires b.Text non-empty, and the prompt is that text), so
+                            // stamp the prose it describes. If the prose later changes, the
+                            // mismatch is what makes the staleness provable at zero cost —
+                            // see Beat.DescriptionHash.
+                            beat.DescriptionHash = Beat.ComputeHash(beat.Text);
+                        }
                         filled++;
                     }
                 }

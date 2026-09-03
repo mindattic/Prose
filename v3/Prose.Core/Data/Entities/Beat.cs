@@ -95,6 +95,70 @@ public class Beat
     /// and ElevenLabs tone direction.</summary>
     public string? Description { get; set; }
 
+    /// <summary><see cref="TextHash"/> value at the moment <see cref="Description"/> was last
+    /// written FROM, or confirmed AGAINST, this beat's actual prose. Exactly the
+    /// <see cref="EventSummaryHash"/> pattern, and never a Stale/audio signal.
+    ///
+    /// <para>Why this exists (Story Ledger Phase 1): <see cref="Description"/> was the only
+    /// per-beat summary the read tools exposed, and it had no binding to the prose at all — so it
+    /// could drift from <see cref="Text"/> permanently and silently. A reading agent that fell
+    /// back to the Description spine for a book too large to hold verbatim reported fabricated
+    /// detail as established fact, and nothing in the engine could tell it the spine was stale.</para>
+    ///
+    /// <para><b>Three states, and the middle one is the point:</b>
+    /// <list type="bullet">
+    /// <item>null — never verified against prose. Either the beat was planned before it was
+    /// written (<c>NodeOutlineService</c> creating beats from a spine), or Description was set
+    /// from an OUTLINE line rather than from the prose (<c>OutlineAdherenceService</c>,
+    /// <c>NarrativeForkService</c>, <c>ImportNodeCli</c>) — those sites deliberately CLEAR this
+    /// so an intent line can never masquerade as a verified one.</item>
+    /// <item>set and equal to <see cref="TextHash"/> — Description describes the prose that is
+    /// actually there. Trustworthy.</item>
+    /// <item>set and DIFFERENT from <see cref="TextHash"/> — the prose changed after the
+    /// Description was written. Provably stale, with zero LLM or embedding cost.
+    /// <c>prose --description-drift</c> files these as findings; nothing auto-rewrites them
+    /// (docs/LOGIC.md §4 — audits never write).</item>
+    /// </list></para>
+    ///
+    /// <para>Stamped only by the sites that derive Description FROM prose
+    /// (<c>MeaningBackfillService</c>, <c>BackfillBeatMetaCli</c>) or confirm it against prose
+    /// (<c>NodeWorkbenchService.UpdateBeatMetadataAsync</c>), and only when the beat actually has
+    /// text — stamping a textless planned beat would flag every beat as "drifted" the moment its
+    /// prose was first written, which is the normal authoring flow, not a defect.</para></summary>
+    public string? DescriptionHash { get; set; }
+
+    /// <summary>
+    /// How much a reader may trust one of this beat's summary fields, as an explicit word:
+    /// <c>"current"</c> (<paramref name="stampedTextHash"/> matches
+    /// <paramref name="currentTextHash"/> — the summary describes the prose that is actually
+    /// there), <c>"stale"</c> (the prose changed after the summary was written),
+    /// <c>"unverified"</c> (a summary exists but was never bound to prose — an outline/intent
+    /// line, or a row predating hash stamping), or null when there is no summary to qualify.
+    ///
+    /// <para>Lives here rather than in a payload builder so the read tools, the CLI reports and
+    /// any future reader all answer this question identically — the whole failure this guards
+    /// against is one consumer treating a summary as trustworthy when another would not.
+    /// A null <paramref name="currentTextHash"/> yields <c>"unverified"</c>, never
+    /// <c>"stale"</c>: with no fingerprint for the prose there is nothing to compare against,
+    /// and asserting drift there would be a claim about text we cannot see.</para>
+    /// </summary>
+    public static string? SummaryTrustState(string? summary, string? stampedTextHash, string? currentTextHash)
+    {
+        if (string.IsNullOrWhiteSpace(summary)) return null;
+        if (string.IsNullOrWhiteSpace(stampedTextHash)) return "unverified";
+        if (string.IsNullOrWhiteSpace(currentTextHash)) return "unverified";
+        return string.Equals(stampedTextHash, currentTextHash, StringComparison.OrdinalIgnoreCase)
+            ? "current" : "stale";
+    }
+
+    /// <summary>Trust state of <see cref="Description"/> — see <see cref="SummaryTrustState"/>.</summary>
+    [System.ComponentModel.DataAnnotations.Schema.NotMapped]
+    public string? DescriptionState => SummaryTrustState(Description, DescriptionHash, TextHash);
+
+    /// <summary>Trust state of <see cref="EventSummary"/> — see <see cref="SummaryTrustState"/>.</summary>
+    [System.ComponentModel.DataAnnotations.Schema.NotMapped]
+    public string? EventSummaryState => SummaryTrustState(EventSummary, EventSummaryHash, TextHash);
+
     /// <summary>Terse, present-tense, name-anchored plot-EVENT line — "what happened" in
     /// this beat, not why it matters. Distinct register from <see cref="Description"/>
     /// (authorial intent). Written by BeatEventSummaryService; null = not yet generated.

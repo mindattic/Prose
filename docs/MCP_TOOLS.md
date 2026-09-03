@@ -1525,12 +1525,13 @@ Print all beats of a node as continuous prose — each beat's Text joined by a b
 
 ### `read_beats`
 
-Read a book's beats directly, in reading order, with ids/titles/text - no --publish-md export round-trip required. The 'Writer' capability: browse prose without exporting first. Unlike print_book (plain joined text only), this returns structured per-beat rows and supports a from/to range, or direct lookup of specific beats by their global Beat.Number (the id logic-sweep findings quote, e.g. 'Beat #14664') via numbersCsv, which takes precedence over from/to when both are given.
+Read a book's beats directly, in reading order, with ids/titles/text - no --publish-md export round-trip required. The 'Writer' capability: browse prose without exporting first. Unlike print_book (plain joined text only), this returns structured per-beat rows and supports a from/to range, or direct lookup of specific beats by their global Beat.Number (the id logic-sweep findings quote, e.g. 'Beat #14664') via numbersCsv, which takes precedence over from/to when both are given. Each beat carries event_summary (the observational 'what happened' line) with an event_summary_state of current/stale/unverified - prefer it over description, which is authorial intent. Pass groupByChapter:true for the chapter-altitude view: the same beats nested under their chapter nodes, so a large book can be read chapter by chapter instead of as one flat list.
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 - `from` (int, optional) — 1-based position to start at (default 1).
 - `to` (int, optional) — 1-based position to end at, inclusive (default: last beat).
 - `numbersCsv` (string, optional) — Optional comma-separated Beat.Number values to look up directly, ignoring from/to.
+- `groupByChapter` (bool, optional) — When true, nest the returned beats under their chapter nodes instead of returning one flat list. Positions are identical either way.
 
 ### `rebeat_book`
 

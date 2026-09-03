@@ -582,7 +582,18 @@ public class NodeWorkbenchService
         static string? Blank(string s) => string.IsNullOrWhiteSpace(s) ? null : s.Trim();
 
         if (update.Title          is not null) beat.Title          = Blank(update.Title);
-        if (update.Description    is not null) beat.Description    = Blank(update.Description);
+        if (update.Description    is not null)
+        {
+            beat.Description = Blank(update.Description);
+            // A hand-supplied Description is the author confirming it against the prose that is
+            // there right now — stamp it, so a LATER prose edit makes the staleness provable
+            // (Beat.DescriptionHash). Textless beat, or a cleared Description: leave it
+            // unverified rather than stamping the hash of nothing, which would flag the beat the
+            // moment its prose was first written.
+            beat.DescriptionHash = beat.Description != null && !string.IsNullOrWhiteSpace(beat.Text)
+                ? Beat.ComputeHash(beat.Text)
+                : null;
+        }
         if (update.Subtext        is not null) beat.Subtext        = Blank(update.Subtext);
         if (update.EmotionalTone  is not null) beat.EmotionalTone  = Blank(update.EmotionalTone)?.ToLowerInvariant();
         if (update.PaceHint       is not null) beat.PaceHint       = Blank(update.PaceHint)?.ToLowerInvariant();

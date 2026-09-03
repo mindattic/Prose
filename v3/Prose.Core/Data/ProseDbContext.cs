@@ -780,6 +780,9 @@ public class ProseDbContext : DbContext
             e.Property(x => x.AudioPath).HasMaxLength(400);
             e.Property(x => x.TextHash).HasMaxLength(80);
             e.Property(x => x.EventSummaryHash).HasMaxLength(80);
+            // Same shape/length as EventSummaryHash — both hold a TextHash snapshot, not a
+            // hash of their own field (see Beat.DescriptionHash's doc comment).
+            e.Property(x => x.DescriptionHash).HasMaxLength(80);
             e.Property(x => x.LastRequestId).HasMaxLength(120);
             // No index on Slug — the column is legacy/abandoned (see Beat.Slug doc
             // comment); nothing queries by it.

@@ -512,6 +512,28 @@ if (args.Contains("--entity-relationships"))
     return;
 }
 
+// CLI mode: list a book's chapter units in reading order — the 100 ft rung of the Three
+// Altitudes, previously unreachable from the CLI (every read path was a flat beat list, which
+// is why a full-book read fell back to the one-line Description spine). Story Ledger Phase 1.
+// Reuses SynopsisExportService's segmentation, so the listing matches story-synopsis.txt.
+//   prose --chapters --slug <slug-or-code-or-id> [--json]
+if (args.Contains("--chapters"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ChaptersCli", args);
+    return;
+}
+
+// CLI mode: report beats whose Beat.Description was verified against prose that has since
+// changed (DescriptionHash != TextHash). Deterministic — no LLM, no embeddings, no cost.
+// Report-only per docs/LOGIC.md §4. Story Ledger Phase 1.
+//   prose --description-drift --slug <slug-or-code-or-id> [--json]
+//   prose --description-drift --all --universe <slug>
+if (args.Contains("--description-drift"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DescriptionDriftCli", args);
+    return;
+}
+
 // CLI mode: list every beat that mentions a given entity (node, beat number, excerpt).
 //   prose --entity-mentions --entity <id|slug> [--limit <n>]
 if (args.Contains("--entity-mentions"))

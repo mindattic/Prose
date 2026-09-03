@@ -118,7 +118,10 @@ public static class BackfillBeatMetaCli
                 finally { sem.Release(); }
             }));
 
-            await ApplyAsync(dbFactory, results.ToDictionary(k => k.Key, v => v.Value), (b, v) => b.Description = v);
+            // DescriptionHash: this synopsis was generated FROM b.Text (see the prompt above),
+            // so stamp the prose it describes — Beat.DescriptionHash explains why.
+            await ApplyAsync(dbFactory, results.ToDictionary(k => k.Key, v => v.Value),
+                (b, v) => { b.Description = v; b.DescriptionHash = Beat.ComputeHash(b.Text); });
             Console.WriteLine($"  Descriptions: {results.Count} beat(s) written.");
         }
 

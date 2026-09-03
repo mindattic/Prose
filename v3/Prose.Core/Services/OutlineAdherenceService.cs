@@ -164,6 +164,10 @@ public class OutlineAdherenceService(
             {
                 if (!beatMap.TryGetValue(emptyBeats[i].BeatId, out var beat)) continue;
                 beat.Description  = lines[i].Length > 500 ? lines[i][..500] : lines[i];
+                // Clear, never stamp: this line comes from the OUTLINE, not from the beat's
+                // prose, so it is authorial intent and has never been verified against what is
+                // actually on the page (Beat.DescriptionHash).
+                beat.DescriptionHash = null;
                 beat.UpdatedAt = DateTime.UtcNow;
                 updated++;
             }

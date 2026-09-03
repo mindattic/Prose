@@ -267,6 +267,10 @@ public class NarrativeForkService(
         {
             if (!beatMap.TryGetValue(beats[i].BeatId, out var beat)) continue;
             beat.Description  = lines[i].Length > 500 ? lines[i][..500] : lines[i];
+            // Clear, never stamp: these are the winning ARC's proposed beat goals — forward
+            // intent for prose not yet rewritten, not a reading of what is on the page
+            // (Beat.DescriptionHash).
+            beat.DescriptionHash = null;
             beat.UpdatedAt = DateTime.UtcNow;
             updated++;
         }
