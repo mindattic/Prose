@@ -1,0 +1,10 @@
+# Windows batch files MUST be CRLF. cmd.exe mis-parses an LF-only .cmd/.bat: it drops the
+# first character of lines (`setlocal` reads as `etlocal`, `rem` stops commenting) and the
+# script fails in confusing ways that look nothing like a line-ending problem. Every batch
+# file in this repo was LF-only until 2026-09-03, which made `prose.cmd` unusable from
+# PowerShell while still happening to work through Git Bash.
+#
+# Deliberately NOT applied to *.ps1: PowerShell reads LF fine, so a rule there would
+# renormalize every hook/tool script in the repo for no correctness gain.
+*.cmd text eol=crlf
+*.bat text eol=crlf
