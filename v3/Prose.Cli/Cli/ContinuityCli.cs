@@ -16,6 +16,10 @@ namespace Prose.Cli;
 ///   prose --continuity resolve --a &lt;uid&gt; --b &lt;uid&gt; --winner A|B|custom [--object "..."] [--note "..."]
 ///                                                    Resolve a contradiction.
 ///   prose --continuity entity &lt;name&gt;                    Dump every claim about one entity.
+///   prose --continuity search --text "&lt;substring&gt;"       Free-text search over EntityName,
+///                                                       Predicate AND Object, printing ClaimUids.
+///                                                       Finds facts hidden in object strings that
+///                                                       no predicate-name sweep can match.
 ///   prose --continuity reject --claim &lt;uid&gt;             Reject one fabricated claim (or a whole
 ///                                                       predicate family via --entity +
 ///                                                       --predicate-prefix). Reversible.
@@ -49,6 +53,7 @@ public static class ContinuityCli
             "reset-book"      => CmdResetBook(rest, svc),
             "resolve"         => CmdResolve(rest, svc),
             "entity"          => CmdEntity(rest, svc),
+            "search"          => CmdSearch(rest, svc),
             "reject"          => CmdReject(rest, svc),
             "extract"         => CmdExtract(rest, services).GetAwaiter().GetResult(),
             "apply"           => CmdApply(rest, services).GetAwaiter().GetResult(),
@@ -300,6 +305,59 @@ public static class ContinuityCli
         Console.WriteLine($"[continuity] {hits[0].EntityName} ({eid}) — {all.Count} claims");
         foreach (var c in all)
             Console.WriteLine($"  [{c.Status,-12}] {c.Predicate,-32}  →  {c.Object}");
+        return 0;
+    }
+
+    /// <summary>
+    /// prose --continuity search --text "&lt;substring&gt;" [--entity &lt;id&gt;] [--predicate-prefix &lt;p&gt;] [--live] [--limit N]
+    ///
+    /// Free-text search across the whole ledger — entity name, predicate AND object — printing
+    /// each hit's ClaimUid so it can be fed straight to <c>--continuity reject</c>.
+    ///
+    /// <para><b>Why this exists (2026-09-03).</b> There was no way to search claims by text, and
+    /// that gap hid fabricated canon twice. Phase 0 called the "Dae-jung Seo" fabrication purged
+    /// because <c>search_universe</c> found nothing — it searches <c>Entities</c>, not this table
+    /// — and Phase 2 then found twelve live claims still asserting it. The author's family purge
+    /// found four more that no <c>father_*</c> predicate sweep could ever match, because the fact
+    /// was in the OBJECT: <c>second_sword_possession → "old sword wrapped in oilcloth, made by
+    /// father"</c>. A predicate-name search cannot find a fact hidden in an object string.</para>
+    ///
+    /// <para>Rejected/superseded rows are shown by default (pass <c>--live</c> to hide them):
+    /// confirming a purge landed means being able to see the rejected rows.</para>
+    /// </summary>
+    static int CmdSearch(string[] args, ContinuityService svc)
+    {
+        var text = Flag(args, "--text") ?? Flag(args, "--pattern");
+        if (string.IsNullOrWhiteSpace(text))
+        {
+            Console.Error.WriteLine(
+                "Usage: prose --continuity search --text \"<substring>\" [--entity <entityId>] " +
+                "[--predicate-prefix <p>] [--live] [--limit N]\n" +
+                "  Searches EntityName, Predicate AND Object. Prints ClaimUid for --continuity reject.");
+            return 2;
+        }
+
+        var limit = int.TryParse(Flag(args, "--limit"), out var n) && n > 0 ? n : 200;
+        var hits = svc.Search(
+            text,
+            entityId: Flag(args, "--entity"),
+            predicatePrefix: Flag(args, "--predicate-prefix"),
+            liveOnly: args.Contains("--live"));
+
+        if (hits.Count == 0)
+        {
+            Console.WriteLine($"[continuity] No claims matching \"{text}\".");
+            return 0;
+        }
+
+        var live = hits.Count(c => c.Status is not ("REJECTED" or "SUPERSEDED"));
+        Console.WriteLine($"[continuity] {hits.Count} claim(s) matching \"{text}\" — {live} live, " +
+                          $"{hits.Count - live} rejected/superseded.");
+        foreach (var c in hits.Take(limit))
+            Console.WriteLine($"  {c.ClaimUid}  [{c.Status,-12}] {c.EntityName} :: {c.Predicate}  →  {c.Object}");
+
+        if (hits.Count > limit)
+            Console.WriteLine($"  … {hits.Count - limit} more (raise --limit).");
         return 0;
     }
 
@@ -657,6 +715,10 @@ public static class ContinuityCli
                   Supersede every live claim for a book (before a fresh extraction pass)
               prose --continuity resolve --a <uid> --b <uid> --winner A|B|custom [--object "..."] [--note "..."]
               prose --continuity entity <name>
+              prose --continuity search --text "<substring>" [--entity <id>] [--predicate-prefix <p>] [--live] [--limit N]
+                  Free-text search over EntityName, Predicate AND Object, printing each ClaimUid.
+                  The only way to find a fact hidden in an object string — a father claim recorded
+                  as second_sword_possession -> "...made by father" matches no father_* prefix.
               prose --continuity reject --claim <uid> [--claim <uid> ...] [--note "..."]
               prose --continuity reject --entity <entityId> --predicate-prefix <p> --yes [--note "..."]
                   Reject one claim, several, or a whole predicate family on one entity. The only

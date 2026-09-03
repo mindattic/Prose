@@ -10,6 +10,7 @@ namespace Prose.Cli;
 /// prose --entity-relationships --character &lt;name-or-id&gt; --remove --id &lt;rowId&gt;
 /// prose --entity-relationships --character &lt;name-or-id&gt; --add --target &lt;name&gt; --type &lt;type&gt; [--description &lt;text&gt;]
 /// prose --entity-relationships --character &lt;name-or-id&gt; --orphans        (rows whose target never resolved)
+/// prose --entity-relationships --search "&lt;text&gt;" [--json]                 (corpus-wide scan, any owner)
 ///
 /// Surgical CRUD over <see cref="CharacterRelationshipRow"/>.
 ///
@@ -34,10 +35,16 @@ public static class EntityRelationshipCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
+        // ── corpus-wide search (no --character) ──────────────────────────────
+        if (Flag(args, "--search") is { } needle && !string.IsNullOrWhiteSpace(needle))
+            return await SearchAsync(db, needle, args.Contains("--json"));
+
         var who = Flag(args, "--character");
         if (string.IsNullOrWhiteSpace(who))
         {
-            Console.Error.WriteLine("[entity-relationships] --character <name-or-id> is required.");
+            Console.Error.WriteLine(
+                "[entity-relationships] --character <name-or-id> is required " +
+                "(or --search \"<text>\" for a corpus-wide scan).");
             return 2;
         }
 
@@ -159,6 +166,66 @@ public static class EntityRelationshipCli
         }
         return 0;
     }
+
+    /// <summary>
+    /// Corpus-wide free-text scan over <c>CharacterRelationships</c> — owner name, target name,
+    /// type, and description — printing each row's id so it can be fed to <c>--remove --id</c>.
+    ///
+    /// <para><b>Why (2026-09-03).</b> Every read here was per-character, so "does any row anywhere
+    /// still name X?" was unanswerable. That is the same gap that let the "Dae-jung Seo"
+    /// fabrication be declared purged twice while rows still asserted it: the seven contaminating
+    /// rows on Seo Jisun were found by accident, and Kyle's own <c>[mentor / deceased] -> Dae-jung
+    /// Seo</c> row survived both the Phase 0 cleanup and the empty-target check because it was
+    /// typed "mentor", not "father", and had a non-empty target. <c>audit_data_consistency</c>
+    /// reports counts with capped samples, which is a census, not a search.</para>
+    ///
+    /// <para>Case-insensitive substring match. Deliberately universe-scoped like the rest of this
+    /// command (the owner resolves through <c>db.Characters</c>, which the query filter scopes).</para>
+    /// </summary>
+    private static async Task<int> SearchAsync(ProseDbContext db, string needle, bool asJson)
+    {
+        var pattern = $"%{needle.Trim()}%";
+        var rows = await db.CharacterRelationships.AsNoTracking()
+            .Where(r => EF.Functions.Like(r.TargetName, pattern)
+                     || EF.Functions.Like(r.Type, pattern)
+                     || EF.Functions.Like(r.Description, pattern))
+            .Join(db.Entities.AsNoTracking(), r => r.CharacterId, e => e.Id,
+                (r, e) => new
+                {
+                    r.Id, Owner = e.Name, r.Type, r.TargetName, r.TargetEntityId,
+                    r.Description, r.Provenance,
+                })
+            .OrderBy(x => x.Owner).ThenBy(x => x.Id)
+            .ToListAsync();
+
+        if (asJson)
+        {
+            Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(
+                new { search = needle, count = rows.Count, rows },
+                new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+            return 0;
+        }
+
+        if (rows.Count == 0)
+        {
+            Console.WriteLine($"[entity-relationships] No relationship row matches \"{needle}\".");
+            return 0;
+        }
+
+        Console.WriteLine($"[entity-relationships] {rows.Count} row(s) matching \"{needle}\":");
+        foreach (var r in rows)
+        {
+            var link = r.TargetEntityId == null ? "UNRESOLVED" : r.TargetEntityId.Value.ToString("N");
+            var target = string.IsNullOrWhiteSpace(r.TargetName) ? "(EMPTY TARGET)" : r.TargetName;
+            Console.WriteLine($"  [{r.Id}] {r.Owner}: [{r.Type}] -> {target}   {link}  ({r.Provenance})");
+            if (!string.IsNullOrWhiteSpace(r.Description) && r.Description != r.Type)
+                Console.WriteLine($"        {Clip(r.Description, 160)}");
+        }
+        return 0;
+    }
+
+    private static string Clip(string? s, int max) =>
+        string.IsNullOrEmpty(s) ? "" : s.Length <= max ? s : s[..(max - 1)] + "…";
 
     /// <summary>
     /// Rebuild the character's CQRS-lite read-model projection after a direct row mutation.

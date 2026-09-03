@@ -591,6 +591,90 @@ public class StoryLedgerPhase3Tests
             "the read side must carry the grade out");
     }
 
+    // ═══ Ledger free-text search ════════════════════════════════════════════
+    // The instrument the author's family purge needed and the ledger did not have. Every read was
+    // by entity id, by status, or by applied-ness — so a fact recorded in the OBJECT string was
+    // unfindable, which is how four claims survived Phase 2's father_* predicate sweep.
+
+    private ContinuityService Continuity() => new(new SingleContextFactory(options));
+
+    private void SeedClaim(string uid, string entityId, string entityName, string predicate, string obj, string status = "NEW")
+    {
+        using var db = Db();
+        db.ContinuityClaims.Add(new ContinuityClaim
+        {
+            ClaimUid = uid, EntityId = entityId, EntityName = entityName, EntityKind = "character",
+            Predicate = predicate, Object = obj, SourceType = "chapter", Status = status,
+        });
+        db.SaveChanges();
+    }
+
+    [Test]
+    public void LedgerSearch_FindsAFactHiddenInTheObjectString()
+    {
+        // The exact defect: a father fact recorded under a sword predicate. No predicate-name
+        // search can reach it, and this is why the "purged" fabrication kept resurfacing.
+        SeedClaim("c1", "kyle", "Kyle Ellen Corbin", "second_sword_possession",
+            "old sword wrapped in oilcloth, made by father", "CONFIRMED");
+        SeedClaim("c2", "kyle", "Kyle Ellen Corbin", "second_sword_tsuka", "wrapped in dark cord");
+
+        var hits = Continuity().Search("father");
+
+        Assert.That(hits, Has.Count.EqualTo(1));
+        Assert.That(hits[0].ClaimUid, Is.EqualTo("c1"), "the uid is what makes the hit actionable");
+    }
+
+    [Test]
+    public void LedgerSearch_MatchesEntityNameAndPredicateToo()
+    {
+        SeedClaim("c1", "kyle", "Kyle Ellen Corbin", "father_name", "Dae-jung Seo");
+        SeedClaim("c2", "chen", "Mrs. Chen", "role", "noodle shop owner");
+
+        Assert.Multiple(() =>
+        {
+            Assert.That(Continuity().Search("Dae-jung").Select(c => c.ClaimUid), Is.EqualTo(new[] { "c1" }));
+            Assert.That(Continuity().Search("father_name").Select(c => c.ClaimUid), Is.EqualTo(new[] { "c1" }));
+            Assert.That(Continuity().Search("Mrs. Chen").Select(c => c.ClaimUid), Is.EqualTo(new[] { "c2" }));
+        });
+    }
+
+    [Test]
+    public void LedgerSearch_ShowsRejectedRowsByDefaultSoAPurgeCanBeVerified()
+    {
+        SeedClaim("c1", "kyle", "Kyle Ellen Corbin", "father_name", "Dae-jung Seo", "REJECTED");
+
+        Assert.That(Continuity().Search("Dae-jung"), Has.Count.EqualTo(1),
+            "confirming a purge landed means being able to see the rejected row");
+        Assert.That(Continuity().Search("Dae-jung", liveOnly: true), Is.Empty,
+            "--live is what answers 'is it still asserted anywhere?'");
+    }
+
+    [Test]
+    public void LedgerSearch_ScopesToOneEntityAndOnePredicateFamily()
+    {
+        SeedClaim("c1", "kyle", "Kyle Ellen Corbin", "father_name", "Dae-jung Seo");
+        SeedClaim("c2", "celeste", "Celeste Hartley", "father_name", "Douglas Hartley");
+
+        Assert.Multiple(() =>
+        {
+            Assert.That(Continuity().Search("father", entityId: "kyle").Select(c => c.ClaimUid),
+                Is.EqualTo(new[] { "c1" }), "another character's real father must not be swept up");
+            Assert.That(Continuity().Search("Hartley", predicatePrefix: "father").Select(c => c.ClaimUid),
+                Is.EqualTo(new[] { "c2" }));
+            Assert.That(Continuity().Search("father"), Has.Count.EqualTo(2));
+        });
+    }
+
+    [Test]
+    public void LedgerSearch_IsCaseInsensitiveAndRefusesAnEmptyNeedle()
+    {
+        SeedClaim("c1", "kyle", "Kyle Ellen Corbin", "father_name", "Dae-jung Seo");
+
+        Assert.That(Continuity().Search("DAE-JUNG"), Has.Count.EqualTo(1));
+        Assert.That(Continuity().Search("   "), Is.Empty,
+            "an empty needle must not degenerate into 'match everything'");
+    }
+
     // ── helpers ──────────────────────────────────────────────────────────────
 
     private ProvenanceService Provenance() =>

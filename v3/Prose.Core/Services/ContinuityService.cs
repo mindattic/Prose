@@ -359,6 +359,52 @@ public class ContinuityService
             .ToList();
     }
 
+    /// <summary>
+    /// Free-text search across the WHOLE ledger — entity name, predicate, and object — returning
+    /// each hit's <see cref="ContinuityClaim.ClaimUid"/> so the caller can act on it.
+    ///
+    /// <para><b>Why this exists (2026-09-03).</b> Nothing could search claims by text. The only
+    /// reads were by entity id, by status, or by applied-ness, and <c>search_universe</c> covers
+    /// <c>Entities</c>, not this table. That gap has now hidden fabricated canon twice: Phase 0
+    /// declared the "Dae-jung Seo" fabrication purged because <c>search_universe glmz "Dae-jung"</c>
+    /// returned nothing, and Phase 2's Tuned Read then found twelve live claims still asserting it;
+    /// the author's family purge then found four more that a <c>father_*</c> predicate-prefix sweep
+    /// could never have matched, because they were recorded under
+    /// <c>second_sword_possession → "old sword wrapped in oilcloth, made by father"</c>. A
+    /// predicate-name search cannot find a fact hidden in an object string, and the ledger feeds
+    /// ContinuityService's ESTABLISHED CANON prompt block — so a fabrication surviving here is told
+    /// to the next beat as fact.</para>
+    ///
+    /// <para>Case-insensitive substring match (SQL <c>LIKE</c> under the collation the DB already
+    /// uses). Rejected/superseded claims are included unless <paramref name="liveOnly"/>:
+    /// verifying that a purge actually landed means being able to see the rejected rows too.</para>
+    /// </summary>
+    /// <param name="text">Substring to look for in EntityName, Predicate, or Object.</param>
+    /// <param name="entityId">Optional — restrict to one entity's claims.</param>
+    /// <param name="predicatePrefix">Optional — restrict to predicates starting with this.</param>
+    /// <param name="liveOnly">Exclude REJECTED and SUPERSEDED claims.</param>
+    public List<ContinuityClaim> Search(
+        string text,
+        string? entityId = null,
+        string? predicatePrefix = null,
+        bool liveOnly = false)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return new();
+
+        using var db = dbFactory.CreateDbContext();
+        var pattern = $"%{text.Trim()}%";
+        var q = db.ContinuityClaims.AsNoTracking().Where(c =>
+            EF.Functions.Like(c.EntityName, pattern)
+            || EF.Functions.Like(c.Predicate, pattern)
+            || EF.Functions.Like(c.Object, pattern));
+
+        if (!string.IsNullOrWhiteSpace(entityId)) q = q.Where(c => c.EntityId == entityId);
+        if (!string.IsNullOrWhiteSpace(predicatePrefix)) q = q.Where(c => c.Predicate.StartsWith(predicatePrefix));
+        if (liveOnly) q = q.Where(c => c.Status != "REJECTED" && c.Status != "SUPERSEDED");
+
+        return q.OrderBy(c => c.EntityName).ThenBy(c => c.Predicate).ThenBy(c => c.Object).ToList();
+    }
+
     /// <summary>Every claim that has been applied back to its entity's canon record
     /// (<see cref="ContinuityApplyService.ApplyAsync"/> sets <c>AppliedAt</c>/<c>AppliedToField</c>) —
     /// the candidate set for <see cref="ContinuityApplyService.CheckAppliedClaimsAsync"/>'s drift
