@@ -99,11 +99,23 @@ public class NodeWorkbenchService
     private readonly ContinuityExtractionService? continuityExtraction;
 
     /// <summary>Call before every Beats.Remove/RemoveRange — Edge.ValidFromBeatId/
-    /// ValidUntilBeatId are NoAction (not SetNull; see ProseDbContext's Edge config comment for
-    /// why SQL Server refuses a second SET NULL path to the same table), so nothing at the DB
-    /// level clears these bounds automatically. A bound beat being deleted should still just
-    /// clear the bound, never block the delete or delete the edge — this does that explicitly,
-    /// as a single bulk UPDATE per column (no entities loaded into the change tracker).</summary>
+    /// ValidUntilBeatId and PlantPayoffs.PlantBeatId/PayoffBeatId are all NoAction (not SetNull;
+    /// see ProseDbContext's Edge config comment for why SQL Server refuses a second SET NULL path
+    /// to the same table), so nothing at the DB level clears these bounds automatically. A bound
+    /// beat being deleted should still just clear the bound, never block the delete or delete the
+    /// edge/pair — this does that explicitly, as a single bulk UPDATE per column (no entities
+    /// loaded into the change tracker).
+    ///
+    /// <para><b>PlantPayoffs added 2026-09-03.</b> Only the Edge bounds were ever cleared, so a
+    /// beat registered as a plant's or payoff's anchor could not be deleted at all: the delete
+    /// failed on <c>FK_PlantPayoffs_PayoffBeat</c> with a generic "error occurred while saving the
+    /// entity changes", the same class of blocked-delete the Edge clearing was written to fix and
+    /// one table short of covering. Found deleting 1,630 orphaned beats corpus-wide — exactly two
+    /// were blocked, both by this FK.</para>
+    ///
+    /// <para>The bound is CLEARED, not the pair deleted: the plant still happened, it simply no
+    /// longer has that anchor, which <c>--plant-audit</c> can then report honestly as an orphaned
+    /// plant. Deleting the pair would silently lose the plant instead.</para></summary>
     public static async Task ClearEdgeBeatBoundsAsync(ProseDbContext db, IReadOnlyCollection<Guid> beatIds, CancellationToken ct)
     {
         if (beatIds.Count == 0) return;
@@ -111,6 +123,10 @@ public class NodeWorkbenchService
             .ExecuteUpdateAsync(s => s.SetProperty(e => e.ValidFromBeatId, (Guid?)null), ct);
         await db.Edges.Where(e => e.ValidUntilBeatId != null && beatIds.Contains(e.ValidUntilBeatId.Value))
             .ExecuteUpdateAsync(s => s.SetProperty(e => e.ValidUntilBeatId, (Guid?)null), ct);
+        await db.PlantPayoffs.Where(p => p.PlantBeatId != null && beatIds.Contains(p.PlantBeatId.Value))
+            .ExecuteUpdateAsync(s => s.SetProperty(p => p.PlantBeatId, (Guid?)null), ct);
+        await db.PlantPayoffs.Where(p => p.PayoffBeatId != null && beatIds.Contains(p.PayoffBeatId.Value))
+            .ExecuteUpdateAsync(s => s.SetProperty(p => p.PayoffBeatId, (Guid?)null), ct);
     }
 
     // ── Reads ────────────────────────────────────────────────────────────
