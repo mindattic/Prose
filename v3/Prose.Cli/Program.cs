@@ -534,6 +534,31 @@ if (args.Contains("--description-drift"))
     return;
 }
 
+// CLI mode: the Story Ledger's Tuned Read (Phase 2) — walks a book in reading order, keeps its
+// fact ledger fresh, pairs claims an exclusion axiom says cannot both be true, adjudicates only
+// those pairs, and files a finding for each contradiction whose quote survives the mechanical
+// grounding gate. Report-only (docs/LOGIC.md §4). Cost-gated: a real run spends one Sonnet call
+// per uncached candidate. --dry runs the whole deterministic half for free.
+//   prose --tuned-read --slug <slug> [--dry] [--no-extract] [--max-candidates N] [--json]
+if (args.Contains("--tuned-read"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("TunedReadCli", "--tuned-read", args);
+    return;
+}
+
+// CLI mode: manage the PredicateExclusion ontology the Tuned Read runs on — list, propose,
+// approve/reject, and --test a rule against a hypothetical claim pair before approving it.
+// Deterministic and free; no LLM call anywhere in this command.
+//   prose --exclusion-rules [--all] [--json]
+//   prose --exclusion-rules --propose --predicate-a <p> --predicate-b <p> --why "..." [--universal]
+//   prose --exclusion-rules --approve|--reject --id <n>
+//   prose --exclusion-rules --test --predicate-a <p> --object-a "..." --predicate-b <p> --object-b "..."
+if (args.Contains("--exclusion-rules"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ExclusionRulesCli", args);
+    return;
+}
+
 // CLI mode: list every beat that mentions a given entity (node, beat number, excerpt).
 //   prose --entity-mentions --entity <id|slug> [--limit <n>]
 if (args.Contains("--entity-mentions"))

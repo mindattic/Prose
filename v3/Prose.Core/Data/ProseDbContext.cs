@@ -530,6 +530,11 @@ public class ProseDbContext : DbContext
     // Continuity store (was a separate SQLite DB; folded into Prose)
     public DbSet<ContinuityClaim>        ContinuityClaims        => Set<ContinuityClaim>();
     public DbSet<ClaimContradictionRow>  ClaimContradictions     => Set<ClaimContradictionRow>();
+
+    // Story Ledger Phase 2 — disjointness axioms over the ledger, and the cached LLM verdicts
+    // the Tuned Read produces from them. See PredicateExclusion / TunedReadAdjudication.
+    public DbSet<PredicateExclusion>     PredicateExclusions     => Set<PredicateExclusion>();
+    public DbSet<TunedReadAdjudication>  TunedReadAdjudications  => Set<TunedReadAdjudication>();
     public DbSet<ClaimConfirmationRow>   ClaimConfirmations      => Set<ClaimConfirmationRow>();
     public DbSet<ExtractionRunRow>       ExtractionRuns          => Set<ExtractionRunRow>();
 
@@ -2186,6 +2191,73 @@ public class ProseDbContext : DbContext
             // 23rd-century in-world date for asOf queries (e.g. "what was true on 2256-04-15").
             e.HasIndex(x => x.StoryDate);
             e.Property(x => x.BookSlug).HasMaxLength(80);
+            e.HasIndex(x => x.BookSlug);
+            // Story Ledger Phase 2 — provenance grade, beat anchor, and the axiom that flagged
+            // this claim as contradicted (see ClaimProvenance / PredicateExclusion).
+            e.Property(x => x.Provenance).HasMaxLength(20).IsRequired().HasDefaultValue(ClaimProvenance.Inferred);
+            e.HasIndex(x => x.Provenance);
+            e.HasIndex(x => x.SourceBeatId);
+        });
+
+        // ── Story Ledger Phase 2: the exclusion ontology ─────────────────────
+        b.Entity<PredicateExclusion>(e =>
+        {
+            e.ToTable("PredicateExclusions");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).ValueGeneratedOnAdd();
+            // 400, matching the object patterns: a predicate side is an ALTERNATION over a
+            // predicate family, not one name. The real vocabulary needed for the BCODA
+            // constructed-origin axiom is 152 chars on its own
+            // ("origin*|nature*|true_nature*|construction_type*|…"), and 120 silently truncated
+            // it into a failed migration — caught by the Hub's fail-loud migration guardrail
+            // rather than by review (2026-09-03).
+            e.Property(x => x.PredicateA).HasMaxLength(400).IsRequired();
+            e.Property(x => x.PredicateB).HasMaxLength(400).IsRequired();
+            e.Property(x => x.ObjectPatternA).HasMaxLength(400);
+            e.Property(x => x.ObjectPatternB).HasMaxLength(400);
+            e.Property(x => x.Source).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.Property(x => x.Rationale).HasMaxLength(1000).IsRequired();
+            e.Property(x => x.ApprovedBy).HasMaxLength(120);
+            // Candidate generation reads "every active rule for this universe plus every
+            // universal one", so this is the hot index.
+            e.HasIndex(x => new { x.UniverseId, x.Status });
+            // Lookup index only — deliberately NOT unique.
+            //
+            // Shape dedup ("never re-propose an axiom that already exists in any state, including
+            // one the author already REJECTED") is enforced in
+            // PredicateExclusionService.ProposeLearnedRuleAsync, which is the only automated
+            // insert path. It is NOT enforced by the database, and that is a considered
+            // trade-off rather than an oversight: the four shape columns are alternation patterns
+            // 400 chars wide, so a unique index across them has a potential key of ~3.2KB against
+            // SQL Server's 1700-byte limit. Such an index is created with a warning and then
+            // fails at INSERT time on a genuinely long rule — i.e. it would break the table
+            // exactly when an author wrote the most expressive axiom. An earlier version of this
+            // config had that unique index and a comment calling it load-bearing; the comment was
+            // wrong about what it could deliver.
+            e.HasIndex(x => new { x.UniverseId, x.PredicateA })
+                .HasDatabaseName("IX_PredicateExclusions_Shape");
+            // NOT universe-query-filtered: UniverseId == Guid.Empty legitimately means "every
+            // universe" for a logical axiom, and the standard filter
+            // (ScopedUniverseId == Guid.Empty || x.UniverseId == ScopedUniverseId) would hide
+            // exactly those universal rows whenever a scope IS set. Scoping is applied
+            // explicitly by PredicateExclusionService instead.
+        });
+
+        b.Entity<TunedReadAdjudication>(e =>
+        {
+            e.ToTable("TunedReadAdjudications");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Id).ValueGeneratedOnAdd();
+            e.Property(x => x.CacheKey).HasMaxLength(80).IsRequired();
+            e.Property(x => x.ClaimAUid).HasMaxLength(80).IsRequired();
+            e.Property(x => x.ClaimBUid).HasMaxLength(80).IsRequired();
+            e.Property(x => x.BookSlug).HasMaxLength(80);
+            e.Property(x => x.Severity).HasMaxLength(20);
+            e.Property(x => x.EvidenceQuote).HasMaxLength(2000);
+            e.Property(x => x.Note).HasMaxLength(2000);
+            e.Property(x => x.RejectedReason).HasMaxLength(400);
+            e.HasIndex(x => x.CacheKey).IsUnique().HasDatabaseName("UX_TunedReadAdjudications_CacheKey");
             e.HasIndex(x => x.BookSlug);
         });
 

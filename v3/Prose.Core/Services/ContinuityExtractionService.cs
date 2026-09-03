@@ -173,17 +173,7 @@ public class ContinuityExtractionService
             ct.ThrowIfCancellationRequested();
             chapterNumber++;
 
-            // Stripped, not raw — the LLM prompt built from `prose` below and this method's own
-            // exact-substring "snippet must exist in prose" grounding check both need to see the
-            // same plain text a reader would; a stray <entity guid="..."> tag straddling a quoted
-            // span would otherwise break Contains() and silently discard a true claim.
-            var prose = string.Join("\n\n", (await db.BeatNodes.AsNoTracking()
-                    .Where(bn => bn.NodeId == chNode.Id)
-                    .Include(bn => bn.Beat)
-                    .ToListAsync(ct))
-                .OrderBy(bn => bn.SortKey)
-                .Select(bn => BeatMarkup.StripEntityTags(bn.Beat!.Text))
-                .Where(t => !string.IsNullOrWhiteSpace(t)));
+            var (prose, beatIndex) = await LoadChapterProseAsync(db, chNode.Id, ct);
 
             if (string.IsNullOrWhiteSpace(prose))
             {
@@ -202,7 +192,8 @@ public class ContinuityExtractionService
                 var contextHeader = "=== CHAPTER PROSE (extract facts from this) ===\n" +
                     $"Chapter {chapterNumber}: {chNode.Title}\n";
                 var r = await ExtractClaimsFromProseAsync(
-                    prose, contextHeader, chNode.Id.ToString(), chapterNumber, chNode.Title, bookSlug, maxTokens, ct);
+                    prose, contextHeader, chNode.Id.ToString(), chapterNumber, chNode.Title, bookSlug, maxTokens, ct,
+                    beatIndex: beatIndex);
                 results.Add(r);
             }
             catch (Exception ex)
@@ -341,13 +332,7 @@ public class ContinuityExtractionService
 
         if (!store.HasAnyClaimsForBook(bookSlug)) return false;
 
-        var prose = string.Join("\n\n", (await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.NodeId == chapterNodeId)
-                .Include(bn => bn.Beat)
-                .ToListAsync(ct))
-            .OrderBy(bn => bn.SortKey)
-            .Select(bn => BeatMarkup.StripEntityTags(bn.Beat!.Text))
-            .Where(t => !string.IsNullOrWhiteSpace(t)));
+        var (prose, beatIndex) = await LoadChapterProseAsync(db, chapterNodeId, ct);
         if (string.IsNullOrWhiteSpace(prose)) return false;
 
         var hash = ComputeContentHash(prose);
@@ -367,7 +352,8 @@ public class ContinuityExtractionService
             chapter.Title, chapterNumber, bookSlug);
         var contextHeader = "=== CHAPTER PROSE (extract facts from this) ===\n" +
             $"Chapter {chapterNumber}: {chapter.Title}\n";
-        await ExtractClaimsFromProseAsync(prose, contextHeader, chapterNodeId.ToString(), chapterNumber, chapter.Title, bookSlug, maxTokens, ct);
+        await ExtractClaimsFromProseAsync(prose, contextHeader, chapterNodeId.ToString(), chapterNumber, chapter.Title, bookSlug, maxTokens, ct,
+            beatIndex: beatIndex);
 
         await UpsertCursorAsync(db, bookSlug, "chapter", sourceKey, hash, ct);
         return true;
@@ -473,6 +459,30 @@ public class ContinuityExtractionService
         return Convert.ToHexString(bytes).ToLowerInvariant();
     }
 
+    /// <summary>One chapter's prose in reading order, returned BOTH as the joined block the
+    /// extraction prompt needs and as the per-beat index that lets a validated snippet be traced
+    /// back to the exact beat it came from (<c>ContinuityClaim.SourceBeatId</c>, Story Ledger
+    /// Phase 2). The two must be built from the same stripped text in the same order or the
+    /// snippet-to-beat match silently misses — which is why they are produced together here
+    /// rather than assembled twice at each call site, as they were before.</summary>
+    private static async Task<(string Prose, List<(Guid BeatId, string Text)> Beats)> LoadChapterProseAsync(
+        ProseDbContext db, Guid chapterNodeId, CancellationToken ct)
+    {
+        var beats = (await db.BeatNodes.AsNoTracking()
+                .Where(bn => bn.NodeId == chapterNodeId)
+                .Include(bn => bn.Beat)
+                .ToListAsync(ct))
+            .OrderBy(bn => bn.SortKey)
+            // Stripped, not raw — the LLM prompt and the exact-substring snippet grounding both
+            // need the plain text a reader would see; a stray <entity guid="..."> tag straddling
+            // a quoted span would otherwise break Contains() and discard a true claim.
+            .Select(bn => (BeatId: bn.BeatId, Text: BeatMarkup.StripEntityTags(bn.Beat!.Text)))
+            .Where(x => !string.IsNullOrWhiteSpace(x.Text))
+            .ToList();
+
+        return (string.Join("\n\n", beats.Select(b => b.Text)), beats);
+    }
+
     /// <summary>Shared body for "extract atomic claims from one block of prose, upsert each" —
     /// used by the legacy IChapterRepository path (<see cref="ExtractFromChapterAsync"/>), the
     /// SS-A43 Nodes path (<see cref="ExtractFromBookNodeAsync"/>), and the bible path
@@ -481,8 +491,24 @@ public class ContinuityExtractionService
     private async Task<ContinuityExtractionResult> ExtractClaimsFromProseAsync(
         string prose, string contextHeader, string sourceChapterId, int? sourceChapterNumber,
         string? sourceChapterTitle, string? bookSlug, int maxTokens, CancellationToken ct,
-        string sourceType = "prose", string? sourcePath = null)
+        string sourceType = "prose", string? sourcePath = null,
+        IReadOnlyList<(Guid BeatId, string Text)>? beatIndex = null)
     {
+        // Snippet -> beat anchor (Story Ledger Phase 2). Every candidate that survives the
+        // `validated` filter below is guaranteed to appear verbatim SOMEWHERE in `prose`; this
+        // says where. Null for the outline path, which has no beats at all.
+        Guid? ResolveSnippetBeatId(string? snippet)
+        {
+            if (beatIndex == null || string.IsNullOrWhiteSpace(snippet)) return null;
+            foreach (var b in beatIndex)
+                if (b.Text.Contains(snippet, StringComparison.Ordinal)) return b.BeatId;
+            foreach (var b in beatIndex)
+                if (b.Text.Contains(snippet, StringComparison.OrdinalIgnoreCase)) return b.BeatId;
+            // A snippet that spans a beat boundary matches the joined prose but no single beat.
+            // Leave it unanchored rather than guessing a beat it isn't wholly inside.
+            return null;
+        }
+
         var context = contextHeader + "\n" + prose;
         var raw = await llm.GenerateAsync(ExtractionQuestion, context, temperature: 0.1, maxTokens: maxTokens, ct: ct);
 
@@ -556,6 +582,19 @@ public class ContinuityExtractionService
                 Confidence          = cand.Confidence,
                 ExtractedBy         = new List<string> { cand.Voter },
                 BookSlug            = bookSlug,
+                // "observed", not "inferred": every candidate reaching this loop already passed
+                // a MECHANICAL grounding gate — the `validated` filter above drops any whose
+                // Snippet is not present verbatim in the source text. That is exactly what
+                // ClaimProvenance.Observed means, so the grade is earned rather than asserted.
+                //
+                // This method serves the prose paths AND the outline path, and the grade is
+                // right for both: the source text is Beat prose in one case and the
+                // hand-authored Nodes.NodeOutline in the other, and in both the snippet is
+                // verified verbatim against it. Neither earns "authored" — a human wrote the
+                // sentence, but a model decided the (entity, predicate, object) triple, and
+                // "authored" is reserved for a fact a human actually approved AS a claim.
+                Provenance          = ClaimProvenance.Observed,
+                SourceBeatId        = ResolveSnippetBeatId(cand.Snippet),
             };
             var r = store.Upsert(claim);
             switch (r.Outcome)
@@ -637,6 +676,13 @@ public class ContinuityExtractionService
                 Voice       = "writer",
                 Confidence  = "high",
                 ExtractedBy = new List<string> { "entity_record_walker" },
+                // "inferred", NOT "authored": an entity-record field may have been typed by the
+                // author or auto-scaffolded by CanonGroundingService, and nothing in Entities
+                // records which. Grading it "authored" here would launder scaffolded guesses
+                // into unqualified canon — the exact laundering that let a fabricated character
+                // spread into a weapon record. Story Ledger Phase 3 adds provenance to Entities
+                // themselves; that is what will make this answerable.
+                Provenance  = ClaimProvenance.Inferred,
             };
             var r = store.Upsert(claim);
             switch (r.Outcome)
@@ -697,6 +743,9 @@ public class ContinuityExtractionService
                     Voice       = c.Voice,
                     Confidence  = c.Confidence,
                     ExtractedBy = new List<string> { c.Voter },
+                    // Same reasoning as the property-walker site above: the source record's own
+                    // trustworthiness is not yet knowable, so this cannot be graded "authored".
+                    Provenance  = ClaimProvenance.Inferred,
                 };
                 var r = store.Upsert(claim);
                 switch (r.Outcome)

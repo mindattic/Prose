@@ -821,6 +821,73 @@ public class ContinuityClaim
 
     /// <summary>Code of the BookNode this claim was extracted from (e.g. "BCODA", "RTR"). Null for entity-record sources.</summary>
     public string? BookSlug            { get; set; }
+
+    /// <summary>
+    /// How this fact came to be believed — see <see cref="ClaimProvenance"/> for the grades.
+    ///
+    /// <para>The one question no column could answer before (Story Ledger Phase 2): <i>did a
+    /// human ever approve this, or did a model invent it?</i> Without it, "show me everything in
+    /// canon nobody ever approved" is an archaeology project rather than a query — which is why
+    /// a fabricated character survived in canon long enough to spread into a weapon record and
+    /// an unrelated book's character.</para>
+    /// </summary>
+    public string Provenance           { get; set; } = ClaimProvenance.Inferred;
+
+    /// <summary>
+    /// The specific beat this claim was extracted from, when known.
+    ///
+    /// <para>The ledger had chapter anchors (<see cref="SourceChapterId"/>) but no beat anchor,
+    /// so a claim could be traced to a 40-beat chapter and no further. The Tuned Read needs the
+    /// exact beat to pull the carrier band for adjudication and to key the verdict cache on that
+    /// beat's current text; a finding also needs it to say WHERE, not roughly where.</para>
+    ///
+    /// <para>Null for entity-record claims (no beat exists) and for pre-Phase-2 rows.</para>
+    /// </summary>
+    public Guid? SourceBeatId          { get; set; }
+
+    /// <summary>The <see cref="Prose.Core.Data.Entities.PredicateExclusion"/> that flagged this
+    /// claim as contradicting another, when the contradiction came from the exclusion ontology
+    /// rather than from the same-predicate/different-object rule. Null otherwise — including for
+    /// every non-contradicted claim.</summary>
+    public int? ExclusionRuleId        { get; set; }
+}
+
+/// <summary>
+/// Provenance grades for a ledger claim, in descending trust. Applied to
+/// <see cref="ContinuityClaim.Provenance"/> now; extended to <c>Entities</c> and
+/// <c>CharacterRelationships</c> in Story Ledger Phase 3.
+/// </summary>
+public static class ClaimProvenance
+{
+    /// <summary>A human decided this. The only grade that is canon without qualification.</summary>
+    public const string Authored = "authored";
+
+    /// <summary>Extracted from prose with a snippet that MECHANICALLY verifies against the beat
+    /// text — not "an LLM said it appears", but a literal substring match. This is the grade
+    /// ContinuityExtractionService's chapter path earns, because it already drops any candidate
+    /// whose snippet is not present verbatim in the prose.</summary>
+    public const string Observed = "observed";
+
+    /// <summary>A model produced it without a verifying quote, or it was derived from something
+    /// else. Believable, never authoritative.</summary>
+    public const string Inferred = "inferred";
+
+    /// <summary>Auto-created by entity scaffolding. <b>Never canon</b> — candidate only.</summary>
+    public const string Scaffolded = "scaffolded";
+
+    /// <summary>Pre-existing rows, grandfathered by the Phase 2 migration. Author ruling: do not
+    /// mass-flag these; flag only the suspicious ones. An unknown grade is not evidence of a
+    /// defect, and treating 12,888 rows as suspect would bury the ones that are.</summary>
+    public const string LegacyUnknown = "legacy-unknown";
+
+    public static readonly string[] All =
+        [Authored, Observed, Inferred, Scaffolded, LegacyUnknown];
+
+    /// <summary>True for grades that may be treated as established fact when generating prose.
+    /// <see cref="Scaffolded"/> deliberately is not, and neither is <see cref="LegacyUnknown"/>
+    /// on its own merit — it is tolerated only because it predates the grading.</summary>
+    public static bool IsTrustworthy(string? provenance) =>
+        provenance is Authored or Observed;
 }
 
 public class ClaimUpsertResult

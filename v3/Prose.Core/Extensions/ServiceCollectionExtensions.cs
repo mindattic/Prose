@@ -1216,6 +1216,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LibertyReportService>();
         services.AddSingleton<NarrativeSynopsisService>();
         services.AddSingleton<Prose.Core.Services.Audit.LogicSweepService>();
+        // Story Ledger Phase 2 — the exclusion ontology and the Tuned Read over it.
+        services.AddSingleton<Prose.Core.Services.Audit.PredicateExclusionService>();
+        services.AddSingleton<Prose.Core.Services.Audit.TunedReadService>();
 
         return services;
     }

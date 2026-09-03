@@ -16,6 +16,9 @@ namespace Prose.Cli;
 ///   prose --continuity resolve --a &lt;uid&gt; --b &lt;uid&gt; --winner A|B|custom [--object "..."] [--note "..."]
 ///                                                    Resolve a contradiction.
 ///   prose --continuity entity &lt;name&gt;                    Dump every claim about one entity.
+///   prose --continuity reject --claim &lt;uid&gt;             Reject one fabricated claim (or a whole
+///                                                       predicate family via --entity +
+///                                                       --predicate-prefix). Reversible.
 ///   prose --continuity extract --chapter &lt;chapterId&gt;    Extract claims from one chapter's prose (legacy Book/Chapter model).
 ///   prose --continuity extract --book &lt;bookId&gt;          Extract claims from every chapter in a book (legacy Book/Chapter model).
 ///   prose --continuity extract --node &lt;nodeIdOrSlug&gt;    Extract claims from every leaf chapter under a modern SS-A43 BookNode.
@@ -46,6 +49,7 @@ public static class ContinuityCli
             "reset-book"      => CmdResetBook(rest, svc),
             "resolve"         => CmdResolve(rest, svc),
             "entity"          => CmdEntity(rest, svc),
+            "reject"          => CmdReject(rest, svc),
             "extract"         => CmdExtract(rest, services).GetAwaiter().GetResult(),
             "apply"           => CmdApply(rest, services).GetAwaiter().GetResult(),
             "sweep"           => CmdSweep(rest, services).GetAwaiter().GetResult(),
@@ -54,6 +58,116 @@ public static class ContinuityCli
     }
 
     static int Fail(string msg) { Console.Error.WriteLine($"[continuity] {msg}"); PrintUsage(); return 1; }
+
+    /// <summary>
+    /// prose --continuity reject --claim &lt;uid&gt; [--claim &lt;uid&gt; ...] [--note "..."]
+    /// prose --continuity reject --entity &lt;name-or-id&gt; --predicate-prefix &lt;p&gt; [--note "..."]
+    ///
+    /// Rejects one claim, several named claims, or a whole predicate family on one entity.
+    ///
+    /// <para><b>Why this exists (2026-09-03).</b> There was no sanctioned way to reject a single
+    /// ledger claim. <c>resolve</c> needs a CONTRADICTED pair and picks a winner;
+    /// <c>reset-book</c> supersedes every live claim for a whole book. Neither can express "this
+    /// one fact is fabricated and has no counterpart to lose to" — which is the shape of the
+    /// defect the Story Ledger exists for. Found the moment the Tuned Read shipped: BCODA's
+    /// ledger still held four CONFIRMED claims asserting a fabricated father (father_name,
+    /// father_occupation, father_profession, father_status) whose prose Phase 0 had already
+    /// removed. The ledger feeds ContinuityService's ESTABLISHED CANON prompt block, so a
+    /// fabrication surviving there is not cosmetic: the next beat generated with that character
+    /// on the page would be told it as fact.</para>
+    ///
+    /// <para><c>--predicate-prefix</c> takes the family form because extraction records one idea
+    /// under many names (father_name / father_occupation / father_status / father_took_swords);
+    /// rejecting them one uid at a time is how the last four get missed. Prints exactly what it
+    /// will reject and requires <c>--yes</c> for the family form, since that is the destructive
+    /// shape. Claims are never deleted — <c>RejectClaim</c> sets status REJECTED and
+    /// ContinuityClaims is system-versioned, so this is reversible.</para>
+    /// </summary>
+    static int CmdReject(string[] args, ContinuityService svc)
+    {
+        var note = Flag(args, "--note") ?? "rejected via prose --continuity reject";
+        var uids = AllFlags(args, "--claim");
+        var entity = Flag(args, "--entity");
+        var prefix = Flag(args, "--predicate-prefix");
+
+        if (uids.Count == 0 && (string.IsNullOrWhiteSpace(entity) || string.IsNullOrWhiteSpace(prefix)))
+        {
+            Console.Error.WriteLine(
+                "Usage: prose --continuity reject --claim <uid> [--claim <uid> ...] [--note \"...\"]\n" +
+                "       prose --continuity reject --entity <name-or-id> --predicate-prefix <p> --yes [--note \"...\"]");
+            return 2;
+        }
+
+        // ── family form ─────────────────────────────────────────────────────
+        if (uids.Count == 0)
+        {
+            var all = svc.GetByEntity(entity!);
+            if (all.Count == 0)
+            {
+                // GetByEntity takes an id; fall back to a name match over the live ledger so the
+                // command works from the name the --continuity entity listing prints.
+                Console.Error.WriteLine(
+                    $"[continuity] No claims found for entity id '{entity}'. " +
+                    "This form takes the ENTITY ID (the hex string --continuity entity prints in " +
+                    "its header), not the display name.");
+                return 2;
+            }
+
+            var live = all
+                .Where(c => c.Status is not ("REJECTED" or "SUPERSEDED"))
+                .Where(c => c.Predicate.StartsWith(prefix!, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+
+            if (live.Count == 0)
+            {
+                Console.WriteLine($"[continuity] No live claims on '{all[0].EntityName}' with predicate prefix '{prefix}'.");
+                return 0;
+            }
+
+            Console.WriteLine($"{all[0].EntityName} — {live.Count} live claim(s) matching predicate prefix '{prefix}':");
+            foreach (var c in live)
+                Console.WriteLine($"  [{c.Status,-12}] {c.Predicate,-34} →  {c.Object}");
+
+            if (!args.Contains("--yes") && !args.Contains("--no-confirm"))
+            {
+                Console.WriteLine();
+                Console.WriteLine("Nothing rejected. Re-run with --yes to reject all of the above.");
+                return 0;
+            }
+
+            foreach (var c in live) svc.RejectClaim(c.ClaimUid, note);
+            Console.WriteLine();
+            Console.WriteLine($"[continuity] Rejected {live.Count} claim(s). ContinuityClaims is system-versioned — " +
+                              "these are recoverable from ContinuityClaims_History.");
+            return 0;
+        }
+
+        // ── explicit-uid form ───────────────────────────────────────────────
+        var rejected = 0;
+        foreach (var uid in uids)
+        {
+            try { svc.RejectClaim(uid, note); rejected++; Console.WriteLine($"  rejected {uid}"); }
+            catch (Exception ex) { Console.Error.WriteLine($"  ! {uid}: {ex.Message}"); }
+        }
+        Console.WriteLine($"[continuity] Rejected {rejected} of {uids.Count} claim(s).");
+        return rejected == uids.Count ? 0 : 1;
+    }
+
+    static string? Flag(string[] args, string name)
+    {
+        var i = Array.IndexOf(args, name);
+        return i >= 0 && i + 1 < args.Length ? args[i + 1] : null;
+    }
+
+    /// <summary>Every value of a repeatable flag, so several --claim uids can be rejected in one
+    /// call (one transaction per claim, but one command per decision).</summary>
+    static List<string> AllFlags(string[] args, string name)
+    {
+        var values = new List<string>();
+        for (var i = 0; i < args.Length - 1; i++)
+            if (args[i] == name && !string.IsNullOrWhiteSpace(args[i + 1])) values.Add(args[i + 1]);
+        return values;
+    }
 
     static int CmdMigrate(ContinuityService svc)
     {
@@ -543,6 +657,11 @@ public static class ContinuityCli
                   Supersede every live claim for a book (before a fresh extraction pass)
               prose --continuity resolve --a <uid> --b <uid> --winner A|B|custom [--object "..."] [--note "..."]
               prose --continuity entity <name>
+              prose --continuity reject --claim <uid> [--claim <uid> ...] [--note "..."]
+              prose --continuity reject --entity <entityId> --predicate-prefix <p> --yes [--note "..."]
+                  Reject one claim, several, or a whole predicate family on one entity. The only
+                  path for "this fact is fabricated and has no counterpart to lose to" — resolve
+                  needs a pair, reset-book takes the whole book. Reversible (system-versioned).
               prose --continuity extract --chapter <chapterId>
               prose --continuity extract --book <bookId>
               prose --continuity extract --node <nodeIdOrSlug>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Prose.Core.Data;
 
@@ -11,9 +12,11 @@ using Prose.Core.Data;
 namespace Prose.Core.Migrations
 {
     [DbContext(typeof(ProseDbContext))]
-    partial class ProseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260903103313_StoryLedgerPhase2")]
+    partial class StoryLedgerPhase2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -9244,13 +9247,13 @@ namespace Prose.Core.Migrations
 
                     b.Property<string>("PredicateA")
                         .IsRequired()
-                        .HasMaxLength(400)
-                        .HasColumnType("nvarchar(400)");
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
 
                     b.Property<string>("PredicateB")
                         .IsRequired()
-                        .HasMaxLength(400)
-                        .HasColumnType("nvarchar(400)");
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
 
                     b.Property<string>("Rationale")
                         .IsRequired()
@@ -9275,10 +9278,11 @@ namespace Prose.Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UniverseId", "PredicateA")
-                        .HasDatabaseName("IX_PredicateExclusions_Shape");
-
                     b.HasIndex("UniverseId", "Status");
+
+                    b.HasIndex("UniverseId", "PredicateA", "ObjectPatternA", "PredicateB", "ObjectPatternB")
+                        .IsUnique()
+                        .HasDatabaseName("UX_PredicateExclusions_Shape");
 
                     b.ToTable("PredicateExclusions", (string)null);
                 });
