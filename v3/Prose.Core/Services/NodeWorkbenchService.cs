@@ -474,8 +474,14 @@ public class NodeWorkbenchService
     /// come from here rather than from the tag's inner text, for the same reason
     /// <c>DeriveAndSaveMentionsAsync</c> re-looks them up: the guid is the permanent fact, the
     /// tag's display text is not.</summary>
-    private static async Task<Dictionary<Guid, (string Name, string EntityType)>> LoadLiveEntitiesAsync(
-        ProseDbContext db, Guid universeId, IReadOnlyList<BeatMarkup.TaggedMention> pinned, CancellationToken ct)
+    /// <summary>Resolve pinned tag guids to live, non-archived entities in one query.
+    /// <para>Public, not private: <c>TagEntitiesCli</c> (a different assembly) needs the identical
+    /// guard when it honours pinned mentions during a re-tag pass. Sharing this one implementation
+    /// keeps the staleness rule — archived/deleted guids are dropped — from drifting between the
+    /// per-beat save path and the bulk tagger, which is exactly how the two name indexes in
+    /// SceneContextAssembler and EntityRamificationService drifted apart.</para></summary>
+    public static async Task<Dictionary<Guid, (string Name, string EntityType)>> LoadLiveEntitiesAsync(
+        ProseDbContext db, Guid universeId, IReadOnlyList<BeatMarkup.TaggedMention> pinned, CancellationToken ct = default)
     {
         var ids = pinned.Select(p => p.EntityId).Distinct().ToList();
         var rows = await db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
+using Prose.Core.Services;
 
 namespace Prose.Cli;
 
@@ -35,17 +36,17 @@ public static class ListArchivesCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var node = !string.IsNullOrWhiteSpace(slug)
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug)
-            : Guid.TryParse(id, out var g)
-                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-                ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == g)
-                : null;
+        // NodeRefResolver accepts slug, NodeCode, GUID, or unique GUID prefix (2026-09-04 — this
+        // was slug-or-GUID only and rejected a NodeCode like "BCODA" that every other command takes).
+        var nodeRef = slug ?? id;
+        var resolvedId = await NodeRefResolver.ResolveAsync(db, nodeRef);
+        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+        var node = resolvedId == null ? null
+            : await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == resolvedId.Value);
 
         if (node == null)
         {
-            Console.Error.WriteLine("[list-archives] Target node not found.");
+            Console.Error.WriteLine($"[list-archives] {NodeRefResolver.NotFoundMessage(nodeRef)}");
             return 1;
         }
 

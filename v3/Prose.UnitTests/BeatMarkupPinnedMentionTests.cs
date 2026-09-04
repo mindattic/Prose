@@ -133,6 +133,40 @@ public class BeatMarkupPinnedMentionTests
     }
 
     [Test]
+    public void WithPinnedMentions_MutatesTheListItIsGiven_SoBulkCallersMustCopy()
+    {
+        // Pins the hazard that `--tag-entities` walks into. The per-beat save paths build a fresh
+        // candidate index per call, so in-place mutation is harmless there. TagEntitiesCli builds
+        // ONE index per book and reuses it for every beat — pinning into that shared list would
+        // leak beat N's disambiguation into beat N+1 and, worse, RemoveAll would permanently
+        // delete a legitimate candidate for every later beat. This test documents the contract
+        // that makes the copy at the call site mandatory rather than stylistic.
+        var wrongMarisol = Guid.NewGuid();
+        var shared = new List<EntityMentionScanner.MentionCandidate>
+        {
+            new("Marisol", wrongMarisol, "Marisol Teng", "character", RequiresStrictCase: true),
+        };
+        var pinned = BeatMarkup.ExtractTaggedMentions(
+            """<entity repo="character" guid="01a0030b-602e-7a47-a1ec-61747fc9d537">Marisol</entity> said nothing.""");
+
+        var returned = EntityMentionScanner.WithPinnedMentions(shared, pinned, Live(Marisol));
+
+        Assert.That(returned, Is.SameAs(shared), "returns the same instance it mutated");
+        Assert.That(shared.Any(c => c.EntityId == wrongMarisol), Is.False,
+            "the caller's own list lost a candidate — which is why a shared index must be copied");
+
+        // And the copy that TagEntitiesCli actually makes leaves the shared index intact.
+        var fresh = new List<EntityMentionScanner.MentionCandidate>
+        {
+            new("Marisol", wrongMarisol, "Marisol Teng", "character", RequiresStrictCase: true),
+        };
+        var perBeat = EntityMentionScanner.WithPinnedMentions([.. fresh], pinned, Live(Marisol));
+
+        Assert.That(perBeat.Any(c => c.EntityId == Marisol), Is.True, "the copy carries the pin");
+        Assert.That(fresh.Any(c => c.EntityId == wrongMarisol), Is.True, "the shared index is untouched");
+    }
+
+    [Test]
     public void PinnedMention_DoesNotDisturbANameTheScannerAlreadyResolves()
     {
         // Kyle is unambiguous, so nothing should change — pinning is a repair for what the scan

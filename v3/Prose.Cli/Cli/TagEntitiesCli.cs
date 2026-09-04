@@ -78,12 +78,15 @@ public static class TagEntitiesCli
         }
         else
         {
-            var node = !string.IsNullOrWhiteSpace(slug)
-                ? await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug)
-                : Guid.TryParse(id, out var g) ? await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == g) : null;
+            // NodeRefResolver accepts slug, NodeCode, GUID, or unique GUID prefix (2026-09-04 —
+            // was slug-or-GUID only and rejected a NodeCode like "BCODA").
+            var nodeRef = slug ?? id;
+            var resolvedId = await NodeRefResolver.ResolveAsync(db, nodeRef);
+            var node = resolvedId == null ? null
+                : await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == resolvedId.Value);
             if (node == null)
             {
-                Console.Error.WriteLine("[tag-entities] Target node not found.");
+                Console.Error.WriteLine($"[tag-entities] {NodeRefResolver.NotFoundMessage(nodeRef)}");
                 return 1;
             }
             if (node.Kind != "book")
@@ -141,6 +144,32 @@ public static class TagEntitiesCli
         var beatsById = (await db.Beats.Where(b => beatIds.Contains(b.Id)).ToListAsync())
             .ToDictionary(b => b.Id);
 
+        // Pinned-mention disambiguation (2026-09-04). This pass strips every tag and re-derives
+        // from a name scan, which is deliberate — a rename must never leave a stale tag. But
+        // re-derivation ALONE silently destroys any tag whose surface name is ambiguous, because
+        // EntityMentionScanner rightly refuses to guess between several entities claiming one name
+        // and drops the candidate for all of them. That is how four valid "Marisol" tags were lost
+        // on a single hand edit (five Marisols in the universe); the fix was applied to
+        // NodeWorkbenchService's per-beat save paths at the time but never here, leaving
+        // `--tag-entities` able to wipe human-confirmed guids across a whole book.
+        //
+        // So: read each beat's existing tags as the caller's DISAMBIGUATION before scanning.
+        // Staleness is still enforced — LoadLiveEntitiesAsync only resolves guids that are still
+        // live and non-archived in this universe, and the canonical name comes from that lookup,
+        // so a renamed entity re-renders under its current identity.
+        var pinnedByBeat = new Dictionary<Guid, List<BeatMarkup.TaggedMention>>();
+        foreach (var (bid, b) in beatsById)
+        {
+            if (string.IsNullOrWhiteSpace(b.Text)) continue;
+            var p = BeatMarkup.ExtractTaggedMentions(b.Text);
+            if (p.Count > 0) pinnedByBeat[bid] = p;
+        }
+        // One query for every pinned guid in the book, not one per beat.
+        var liveEntities = pinnedByBeat.Count == 0 || node.UniverseId == Guid.Empty
+            ? []
+            : await NodeWorkbenchService.LoadLiveEntitiesAsync(
+                db, node.UniverseId, pinnedByBeat.Values.SelectMany(v => v).ToList());
+
         int tagged = 0, unchanged = 0, totalMentions = 0;
         var taggedBeatIds = new List<Guid>();
         // Every beat's resolved (possibly unchanged) tagged text — populated regardless of whether
@@ -160,7 +189,14 @@ public static class TagEntitiesCli
             }
 
             var plainText = BeatMarkup.StripEntityTags(beat.Text);
-            var matches = EntityMentionScanner.Scan(plainText, candidates);
+            // WithPinnedMentions MUTATES the list it is handed (RemoveAll + Add). The candidate
+            // index here is built once per BOOK and shared by every beat, so it must be copied
+            // per beat — pinning into the shared list would leak one beat's disambiguation into
+            // all later beats and permanently delete legitimate candidates for them.
+            var beatCandidates = candidates;
+            if (liveEntities.Count > 0 && pinnedByBeat.TryGetValue(beatId, out var pinned))
+                beatCandidates = EntityMentionScanner.WithPinnedMentions([.. candidates], pinned, liveEntities);
+            var matches = EntityMentionScanner.Scan(plainText, beatCandidates);
             var retagged = EntityMentionScanner.ApplyTags(plainText, matches);
             resolvedTextByBeatId[beatId] = retagged;
 

@@ -13,7 +13,7 @@
 > routes through the cost gate; everything else is deterministic or read-only.
 > Most commands require a `--universe <slug>` scope.
 
-**276 commands.** 15 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**277 commands.** 15 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -2287,6 +2287,12 @@ RFC 0007 "Universe Interchange" — import/export between an app's <app>/univers
 _(no description in the dispatch comment — add one above the guard in `Program.cs`)_
 
 <sub>handler `UniverseInterchangeCli`</sub>
+
+### `--unresolved-nouns`
+
+prose --unresolved-nouns (--slug <s> | --all) [--min N] [--limit N] [--json] Report-only: capitalized phrases in a book's LIVE BEAT PROSE that resolve to no Entity row. Deterministic, no LLM, writes nothing. The residue detector already existed but ran against outline text only, so "is every named thing an entity?" had no measurable answer for prose.
+
+<sub>handler `UnresolvedNounsCli`</sub>
 
 ### `--validate-nouns`
 

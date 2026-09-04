@@ -65,14 +65,19 @@ public static class ArchiveBookCli
         }
         else
         {
-            var node = !string.IsNullOrWhiteSpace(slug)
-                ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug)
-                : Guid.TryParse(id, out var g)
-                    ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == g)
-                    : null;
+            // NodeRefResolver accepts slug, NodeCode, GUID, or unique GUID prefix — the same
+            // resolution --get-book-outline/--set-book-outline use. 2026-09-04: this was
+            // slug-or-GUID only, so `--archive-book --slug bcoda` (a NodeCode, the identifier
+            // used everywhere else) failed with "Target node not found" — a bad failure for the
+            // one command CLAUDE.md makes mandatory before every prose edit.
+            var nodeRef = slug ?? id;
+            var resolvedId = await NodeRefResolver.ResolveAsync(db, nodeRef);
+            // IgnoreQueryFilters(): explicit ref, not ambient scope (2026-08-17 convention).
+            var node = resolvedId == null ? null
+                : await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == resolvedId.Value);
             if (node == null)
             {
-                Console.Error.WriteLine("[archive-book] Target node not found.");
+                Console.Error.WriteLine($"[archive-book] {NodeRefResolver.NotFoundMessage(nodeRef)}");
                 return 1;
             }
             targets = [(node.Id, node.Title, node.Slug, node.Version)];

@@ -48,16 +48,16 @@ public static class ReconcileBookEntitiesCli
             }
             else
             {
-                var node = !string.IsNullOrWhiteSpace(slug)
-                    // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-                    ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug)
-                    : Guid.TryParse(id, out var g)
-                        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-                        ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == g)
-                        : null;
+                // NodeRefResolver accepts slug, NodeCode, GUID, or unique GUID prefix (2026-09-04 —
+                // was slug-or-GUID only and rejected a NodeCode like "BCODA").
+                var nodeRef = slug ?? id;
+                var resolvedId = await NodeRefResolver.ResolveAsync(db, nodeRef);
+                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
+                var node = resolvedId == null ? null
+                    : await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == resolvedId.Value);
                 if (node == null)
                 {
-                    Console.Error.WriteLine("[reconcile-book-entities] Target node not found.");
+                    Console.Error.WriteLine($"[reconcile-book-entities] {NodeRefResolver.NotFoundMessage(nodeRef)}");
                     return 1;
                 }
                 targets = new() { (node.Id, node.Title, node.Slug) };

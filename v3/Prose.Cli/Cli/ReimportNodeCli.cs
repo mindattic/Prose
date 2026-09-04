@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
+using Prose.Core.Services;
 
 namespace Prose.Cli;
 
@@ -103,16 +104,16 @@ public static class ReimportNodeCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var nodeQuery = db.Nodes.AsQueryable();
-        var node = !string.IsNullOrWhiteSpace(slug)
-            ? await nodeQuery.FirstOrDefaultAsync(n => n.Slug == slug)
-            : Guid.TryParse(id, out var g)
-                ? await nodeQuery.FirstOrDefaultAsync(n => n.Id == g)
-                : null;
+        // NodeRefResolver accepts slug, NodeCode, GUID, or unique GUID prefix (2026-09-04 — this
+        // was slug-or-GUID only and rejected a NodeCode like "BCODA" that every other command takes).
+        var nodeRef = slug ?? id;
+        var resolvedId = await NodeRefResolver.ResolveAsync(db, nodeRef);
+        var node = resolvedId == null ? null
+            : await db.Nodes.FirstOrDefaultAsync(n => n.Id == resolvedId.Value);
 
         if (node == null)
         {
-            Console.Error.WriteLine("[reimport-node] Target node not found.");
+            Console.Error.WriteLine($"[reimport-node] {NodeRefResolver.NotFoundMessage(nodeRef)}");
             return 1;
         }
 

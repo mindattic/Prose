@@ -2096,6 +2096,16 @@ if (args.Contains("--diagnose-book"))
     return;
 }
 
+// prose --unresolved-nouns (--slug <s> | --all) [--min N] [--limit N] [--json]
+// Report-only: capitalized phrases in a book's LIVE BEAT PROSE that resolve to no Entity row.
+// Deterministic, no LLM, writes nothing. The residue detector already existed but ran against
+// outline text only, so "is every named thing an entity?" had no measurable answer for prose.
+if (args.Contains("--unresolved-nouns"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("UnresolvedNounsCli", args);
+    return;
+}
+
 // prose --check-duplicate-beats --slug <nodeSlug> [--threshold 0.90] [--json]
 // Corpus-wide near-duplicate-scene detector over prose embeddings (BeatDuplicateService).
 // Candidate generator, not a verdict — verify by reading both beats before acting.
