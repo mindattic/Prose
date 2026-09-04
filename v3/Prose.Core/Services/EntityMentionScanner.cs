@@ -382,6 +382,42 @@ public static class EntityMentionScanner
         "After", "Before", "During", "Inside", "Outside", "Through", "Against",
         // Outline-format labels, not names.
         "Chapter", "Beat", "Book", "Outline",
+
+        // Sentence-initial prose words (2026-09-04). The list above was tuned on OUTLINE text,
+        // which is mostly fragments and labels. Run against real prose by --unresolved-nouns,
+        // the top of the report was almost entirely sentence-openers: "Three" 93x, "Something"
+        // 58x, "Someone" 56x, "Every" 52x — noise that buries the actual finding (a genuinely
+        // unseeded name) below dozens of rows nobody will read. Recall still beats precision
+        // here, so only words that cannot plausibly BE a name on their own are listed.
+        "Something", "Someone", "Somebody", "Somewhere", "Somehow", "Sometimes",
+        "Nothing", "Nobody", "Nowhere", "Neither", "Everything", "Everyone", "Everybody",
+        "Anything", "Anyone", "Anybody", "Whatever", "Whoever", "Whenever", "Wherever",
+        "Because", "Behind", "Below", "Above", "Beyond", "Beside", "Between", "Beneath",
+        "Across", "Around", "Under", "Over", "Down", "From", "Into", "Onto", "Upon", "With",
+        "Both", "Each", "Every", "Some", "Most", "Many", "Much", "More", "Less", "Same",
+        "Maybe", "Perhaps", "Yeah", "Okay", "Yes", "Well", "Even", "Only", "Also", "Once",
+        "Come", "Tell", "Take", "Give", "Keep", "Made", "Make", "Said", "Says", "Went",
+        "Good", "Better", "Best", "Bad", "Worse", "Right", "Wrong", "Left", "Long", "Last",
+        "Different", "Another", "Other", "Enough", "Almost", "Always", "Never", "Nearly",
+        "Later", "Again", "Away", "Back", "Since", "Until", "While", "Though", "Although",
+        "Today", "Tonight", "Tomorrow", "Yesterday", "Morning", "Evening", "Night",
+        // Number words: never entities, and prose is full of them at sentence start.
+        "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+        "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen",
+        "Eighteen", "Nineteen", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy",
+        "Eighty", "Ninety", "Hundred", "Thousand", "First", "Second", "Third",
+        // Contraction stems the residue regex splits off an apostrophe ("Didn't" -> "Didn").
+        "Didn", "Don", "Won", "Can", "Couldn", "Wouldn", "Shouldn", "Isn", "Wasn", "Aren",
+        "Weren", "Hasn", "Hadn", "Haven", "Doesn", "Ain",
+        // Weekdays and months: capitalized by grammar, never an entity row.
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",
+        "January", "February", "March", "April", "June", "July", "August",
+        "September", "October", "November", "December",
+        // Second prose pass — remaining high-frequency sentence-openers.
+        "Either", "Instead", "Already", "Probably", "About", "Except", "Like", "None",
+        "Half", "Full", "Close", "Small", "Large", "People", "Built", "Stay", "Waiting",
+        "Everywhere", "Elsewhere", "Otherwise", "However", "Meanwhile", "Finally",
+        "Behind", "Ahead", "Together", "Alone", "Enough",
     };
 
     /// <summary>Every distinct capitalized phrase in <paramref name="text"/> whose span was NOT

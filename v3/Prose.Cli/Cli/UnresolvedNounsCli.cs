@@ -97,8 +97,26 @@ public static class UnresolvedNounsCli
             foreach (var b in beats)
             {
                 if (string.IsNullOrWhiteSpace(b.Text)) continue;
+
+                // Honour tags already in the prose, exactly as the save paths and --tag-entities
+                // do. Without this the report answers the WRONG QUESTION: it strips tags and
+                // rescans, so any already-tagged AMBIGUOUS name (the scanner refuses to guess
+                // between several entities claiming one surface form) comes back as "resolves to
+                // no entity record" when it is in fact tagged with a valid guid. Measured on
+                // BCODA before the fix: Sable 51x, Marisol 15x, Mira 13x, Nadia 13x — all real,
+                // all tagged, all false. An instrument that reports healthy rows as defects is
+                // worse than none, because its noise is indistinguishable from its signal.
+                var pinned = BeatMarkup.ExtractTaggedMentions(b.Text);
+                var beatCandidates = candidates;
+                if (pinned.Count > 0 && node.UniverseId != Guid.Empty)
+                {
+                    var live = await NodeWorkbenchService.LoadLiveEntitiesAsync(db, node.UniverseId, pinned);
+                    // Copy: WithPinnedMentions mutates, and this index is shared across beats.
+                    if (live.Count > 0) beatCandidates = EntityMentionScanner.WithPinnedMentions([.. candidates], pinned, live);
+                }
+
                 var plain = BeatMarkup.StripEntityTags(b.Text);
-                var matches = EntityMentionScanner.Scan(plain, candidates);
+                var matches = EntityMentionScanner.Scan(plain, beatCandidates);
                 foreach (var name in EntityMentionScanner.FindUnresolvedProperNouns(plain, matches))
                 {
                     if (!beatsByName.TryGetValue(name, out var list))
