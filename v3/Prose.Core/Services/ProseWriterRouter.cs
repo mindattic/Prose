@@ -378,10 +378,38 @@ public class ProseWriterRouter(
         {
             await TraceStageAsync($"{nameof(ContinuityEnforcer)} guidance", async () =>
             {
-                continuityViolationGuidanceContext = await BuildFindingsGuidanceAsync(
+                var enforcer = await BuildFindingsGuidanceAsync(
                     context.NodeId, summaryPrefix: "CONTINUITY-VIOLATION",
                     headerLine: "CONTINUITY — a prior beat contradicted established canon; do not repeat the mistake:",
                     category: FindingCategory.Contradiction, ct: ct);
+
+                // Story Ledger Phase 4 (2026-09-03): the Tuned Read's cross-predicate
+                // contradictions loop back into generation the same way every other audit's
+                // findings already do. Without this the instrument could only ever report a
+                // contradiction after the fact — the beat that CREATES the next one is written
+                // with no knowledge that the ledger already caught its predecessor.
+                var tunedRead = await BuildFindingsGuidanceAsync(
+                    context.NodeId, summaryPrefix: Audit.TunedReadService.SummaryPrefix,
+                    headerLine: "STORY LEDGER — the tuned read found these facts cannot both be true in this book; " +
+                                "do not restate either side as established fact in this beat:",
+                    includeSuggestedFix: true,
+                    category: FindingCategory.Contradiction, ct: ct);
+
+                // The missing loop-back (2026-09-03): logic-sweep findings have been filed since
+                // the sweep shipped and were never fed back into generation at all — the single
+                // most-run audit in the engine was write-only with respect to the writer. The
+                // trailing space in the prefix is load-bearing: it excludes "LOGICSWEEP-BLAST"
+                // (the per-beat blast-radius mini-sweep) and "LOGICSWEEP-CONVERGENCE" (a process
+                // finding about the sweep itself, not about the prose).
+                var logicSweep = await BuildFindingsGuidanceAsync(
+                    context.NodeId, summaryPrefix: "LOGICSWEEP ",
+                    headerLine: "LOGIC SWEEP — a full-book causality/knowledge/timeline audit filed these against " +
+                                "this book; write this beat so it does not deepen them:",
+                    includeSuggestedFix: true,
+                    category: FindingCategory.Contradiction, ct: ct);
+
+                continuityViolationGuidanceContext = string.Join("\n\n",
+                    new[] { enforcer, tunedRead, logicSweep }.Where(s => !string.IsNullOrEmpty(s)));
             });
         }
 
@@ -1226,11 +1254,29 @@ public class ProseWriterRouter(
         sb.AppendLine(headerLine);
         foreach (var f in findings)
         {
-            sb.AppendLine($"• {f.Summary.Replace(summaryPrefix + " ", "").Trim()}");
+            sb.AppendLine($"• {StripSummaryPrefix(f.Summary, summaryPrefix)}");
             if (includeSuggestedFix && !string.IsNullOrEmpty(f.SuggestedFix))
                 sb.AppendLine($"  → {f.SuggestedFix}");
         }
         return sb.ToString().TrimEnd();
+    }
+
+    /// <summary>
+    /// Drops the routing prefix off a finding summary before it becomes a guidance bullet.
+    ///
+    /// <para>Slices rather than <c>Replace(prefix + " ")</c> (2026-09-03 fix): a caller may pass a
+    /// prefix WITH its trailing space, which is the only way to keep a sibling prefix out of the
+    /// <c>StartsWith</c> filter — "LOGICSWEEP " must not pull in "LOGICSWEEP-BLAST" (the per-beat
+    /// blast-radius mini-sweep) or "LOGICSWEEP-CONVERGENCE" (a finding about the sweep process,
+    /// not about the prose). The old form then searched for two consecutive spaces, matched
+    /// nothing, and left the raw prefix in every bullet.</para>
+    /// </summary>
+    internal static string StripSummaryPrefix(string summary, string prefix)
+    {
+        if (string.IsNullOrEmpty(summary)) return "";
+        return (summary.StartsWith(prefix, StringComparison.Ordinal)
+            ? summary[prefix.Length..]
+            : summary).Trim();
     }
 
     // C1 helper — extract capitalized word-groups from the beat goal that look like proper nouns

@@ -89,6 +89,7 @@ public class BookHealthService(
     PovVoiceAuditService povVoiceAudit,
     ChapterHookService chapterHook,
     GripePassService gripePass,
+    Audit.TunedReadService tunedRead,
     ILogger<BookHealthService> log)
 {
     // ── SII formula constants ───────────────────────────────────────────────────────
@@ -185,6 +186,14 @@ public class BookHealthService(
             // compliant — a full multi-reader jury read, same cost class as storyscope/swain/
             // chekhov above, hence FULL tier only.
             await RunCheckAsync(checks, "gripe-pass", async () => { await gripePass.RunAsync(nodeId, ct: ct); });
+            // Story Ledger Phase 4 (2026-09-03): the Tuned Read joins the battery here rather
+            // than in DEEP because its cost is one Sonnet adjudication per uncached CANDIDATE
+            // (capped at MaxCandidates), not one call per book — the same multi-call cost class
+            // as storyscope/swain/chekhov above. Every verdict is cached on
+            // (claim pair, axiom, both anchor TextHashes), so a re-run on an unchanged book
+            // spends nothing; the extraction refresh it does first is hash-gated the same way,
+            // and skips entirely for a book that has never opted into the ledger.
+            await RunCheckAsync(checks, "tuned-read", async () => { await tunedRead.RunAsync(nodeId, ct: ct); });
         }
 
         var (sii, grade, deduction, rates, excluded) = await ComputeScoreAsync(
@@ -243,12 +252,50 @@ public class BookHealthService(
         checks.Add(new PublishReadinessCheck("logic-sweep BLOCKER/MODERATE = 0", sweepBad == 0,
             sweepBad == 0 ? "clean" : $"{sweepBad} open BLOCKER/MODERATE logic-sweep finding(s)"));
 
-        // 2. Zero open CONTRADICTED fact-ledger claims — "[not-extracted]" is FactLedgerAsync's
-        // own honest-gap marker (never populated), not an actual contradiction; excluded.
-        var contradicted = openFindings.Count(f => f.Summary.StartsWith("FACT-LEDGER [", StringComparison.Ordinal)
+        // 2. Zero open CONTRADICTED claims in the STORY LEDGER (Phase 4, 2026-09-03).
+        //
+        // This gate used to read one detector: FactLedgerAsync's "FACT-LEDGER [" findings, which
+        // come from ContinuityService's same-predicate/different-object rule over a six-item
+        // numeric-predicate allowlist. That is a numeric drift detector, and docs/LOGIC.md §9
+        // leaned on it as if it were a general consistency gate — so a book could pass here
+        // having had exactly nothing checked. It is the mechanism that let a character's
+        // fabricated father coexist with his "no before" origin across ~290 beats of a
+        // repeatedly-swept book: father vs origin are different predicates, so the old rule
+        // could not represent the conflict, let alone flag it.
+        //
+        // The widened ledger has three faces and this gate now reads all three:
+        //   (a) the claim rows themselves — Status == "CONTRADICTED", which BOTH detectors write
+        //       (ContinuityService.Upsert for same-predicate, TunedReadService for the exclusion
+        //       ontology). Scoped to this book's own claims: an entity-record claim carries no
+        //       BookSlug and belongs to no single book, so counting those here would fail every
+        //       book that merely mentions a contested entity. The finding side (c) still carries
+        //       those, because a TUNEDREAD finding is filed at book scope.
+        //   (b) same-predicate findings — unchanged.
+        //   (c) TUNEDREAD findings — the cross-predicate half, previously invisible here.
+        //
+        // "Never extracted" now FAILS instead of passing silently. "[not-extracted]" is a real
+        // honest-gap marker and was correctly excluded from a CONTRADICTION count — but a book
+        // whose ledger was never populated has not been checked clean, it has not been checked.
+        // With no claims there is also nothing for the tuned read to collide, so this single
+        // condition covers "never checked" for both detectors at once.
+        var hasLedger = await db.ContinuityClaims.AsNoTracking().AnyAsync(c => c.BookSlug == slug, ct);
+        // Volatile predicates are excluded here for the same reason GetContradictionGroups
+        // excludes them (2026-09-01): location_current/carrying/mood record where a character was
+        // at one moment, and a later different value is the character having moved on, not the
+        // book contradicting itself. Upsert stopped MARKING those CONTRADICTED in the same fix,
+        // but every row written before it still carries the status — counting them here would
+        // resurrect exactly the false failures that fix removed, one layer up.
+        var contradictedClaims = (await db.ContinuityClaims.AsNoTracking()
+                .Where(c => c.BookSlug == slug && c.Status == "CONTRADICTED")
+                .Select(c => c.Predicate)
+                .ToListAsync(ct))
+            .Count(p => !ContinuityService.IsVolatilePredicate(p));
+        var samePredicate = openFindings.Count(f => f.Summary.StartsWith("FACT-LEDGER [", StringComparison.Ordinal)
             && !f.Summary.Contains("[not-extracted]", StringComparison.Ordinal));
-        checks.Add(new PublishReadinessCheck("fact-ledger CONTRADICTED = 0", contradicted == 0,
-            contradicted == 0 ? "clean" : $"{contradicted} open contradicted fact-ledger claim(s)"));
+        var tunedReadOpen = openFindings.Count(f =>
+            f.Summary.StartsWith(Audit.TunedReadService.SummaryPrefix, StringComparison.Ordinal));
+
+        checks.Add(StoryLedgerCheck(hasLedger, contradictedClaims, samePredicate, tunedReadOpen));
 
         // 3. Two consecutive dry sweep rounds, fresh against the book's CURRENT text.
         var converged = await logicSweep.IsConvergedAsync(nodeId, ct: ct);
@@ -281,6 +328,26 @@ public class BookHealthService(
             readerBad == 0 ? "clean" : $"{readerBad} open High-severity Reader-Proxy QA finding(s)"));
 
         return new PublishReadinessReport(nodeId, slug, checks.All(c => c.Pass), checks);
+    }
+
+    /// <summary>
+    /// docs/LOGIC.md §9 gate 2, as a pure decision over the four numbers
+    /// <see cref="PublishReadinessAsync"/> reads — separated out so the rule itself is testable
+    /// without standing up the whole battery, and so the "never extracted fails" clause cannot
+    /// silently regress back to the pass it used to be.
+    /// </summary>
+    internal static PublishReadinessCheck StoryLedgerCheck(
+        bool hasLedger, int contradictedClaims, int samePredicateFindings, int tunedReadFindings)
+    {
+        var parts = new List<string>();
+        if (!hasLedger)
+            parts.Add("the fact ledger has never been populated for this book — nothing was checked " +
+                      "(run prose --continuity extract --book <slug>, then prose --tuned-read --slug <slug>)");
+        if (contradictedClaims > 0) parts.Add($"{contradictedClaims} claim row(s) still CONTRADICTED");
+        if (samePredicateFindings > 0) parts.Add($"{samePredicateFindings} open same-predicate finding(s)");
+        if (tunedReadFindings > 0) parts.Add($"{tunedReadFindings} open tuned-read contradiction(s)");
+        return new PublishReadinessCheck("story-ledger CONTRADICTED = 0", parts.Count == 0,
+            parts.Count == 0 ? "clean" : string.Join("; ", parts));
     }
 
     private async Task RunCheckAsync(List<CheckOutcome> checks, string name, Func<Task> action)

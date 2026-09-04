@@ -1,6 +1,6 @@
 ---
 name: full-battery
-description: Run the Full Battery — every QA/audit tool in the engine (10 FREE + 16 DEEP + 7 FULL checks — see AuditNodeCli.cs's header for the authoritative list, kept in sync with BookHealthService.RunAsync) against a book via `prose --audit-book --full`, then fix, re-verify, validate, and re-export any book that was actually modified. Usage /full-battery [slug ...]; no argument = every book with live prose corpus-wide.
+description: Run the Full Battery — every QA/audit tool in the engine (10 FREE + 16 DEEP + 8 FULL checks — see AuditNodeCli.cs's header for the authoritative list, kept in sync with BookHealthService.RunAsync) against a book via `prose --audit-book --full`, then fix, re-verify, validate, and re-export any book that was actually modified. Usage /full-battery [slug ...]; no argument = every book with live prose corpus-wide.
 ---
 
 # /full-battery — the complete diagnostic + repair pass
@@ -31,10 +31,11 @@ authoritative source and copy from there if this ever needs re-syncing.**
   repetition/crutch-phrase linter), **pov-audit** (head-hopping + same-scene voice sameness),
   **hook-audit** (chapter-ending hook strength) — the last three (bold) were built in the
   2026-08-28 tooling overhaul but never wired into this battery until 2026-08-30.
-- **FULL** (`--full`, 7 checks): storyscope-audit, swain-audit (Scene/Sequel doctrine),
+- **FULL** (`--full`, 8 checks): storyscope-audit, swain-audit (Scene/Sequel doctrine),
   chekhov-audit, five-act-map, dramatic-question, sacred-flaw (original-narrative books only),
   **gripe-pass** (Reader-Proxy QA instrument 4, the findings-only gripe jury — also newly wired
-  in 2026-08-30).
+  in 2026-08-30), **tuned-read** (the Story Ledger's cross-predicate contradiction pass — wired
+  in 2026-09-03; files `TUNEDREAD ` Contradiction findings).
 
 Not part of this battery by design, even though they're real QA instruments: cross-family
 **duels** (`prose --duel`) are a vote-gated (SS-A44) fix-verification mechanism for one specific

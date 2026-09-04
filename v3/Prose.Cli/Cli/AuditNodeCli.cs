@@ -26,9 +26,11 @@ namespace Prose.Cli;
 ///                     (comprehension probes), behavior-check, theme-coherence, fact-ledger,
 ///                     applied-claim-drift, lint-prose, pov-audit, hook-audit.
 ///   FULL  (--full, implies --deep) — heaviest multi-call audits, cost scales with book
-///                     length, 7 checks: storyscope-audit, swain-audit, chekhov-audit,
+///                     length, 8 checks: storyscope-audit, swain-audit, chekhov-audit,
 ///                     five-act-map, dramatic-question, sacred-flaw (original books only),
-///                     gripe-pass (Reader-Proxy QA instrument 4, the findings-only gripe jury).
+///                     gripe-pass (Reader-Proxy QA instrument 4, the findings-only gripe jury),
+///                     tuned-read (the Story Ledger's cross-predicate contradiction pass —
+///                     cost is per uncached candidate, not per beat; wired in 2026-09-03).
 ///
 /// This is a thin formatter over Prose.Core.Services.BookHealthService — the battery and
 /// the SII arithmetic both live there so the MCP book_health tool can share the exact same
