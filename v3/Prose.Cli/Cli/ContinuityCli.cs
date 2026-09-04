@@ -56,6 +56,7 @@ public static class ContinuityCli
             "search"          => CmdSearch(rest, svc),
             "predicates"      => CmdPredicates(rest, svc),
             "anchor-beats"    => CmdAnchorBeats(rest, services).GetAwaiter().GetResult(),
+            "stale-snippets"  => CmdStaleSnippets(rest, services).GetAwaiter().GetResult(),
             "reject"          => CmdReject(rest, svc),
             "extract"         => CmdExtract(rest, services).GetAwaiter().GetResult(),
             "apply"           => CmdApply(rest, services).GetAwaiter().GetResult(),
@@ -465,6 +466,83 @@ public static class ContinuityCli
         return 0;
     }
 
+    /// <summary>
+    /// prose --continuity stale-snippets [--slug &lt;s&gt;] [--limit N] [--by-book] [--unanchored-only] [--json]
+    ///
+    /// <para>Live prose claims whose own snippet no longer appears in the prose they were read
+    /// from — the ledger asserting something the book has stopped saying. Read-only: whether a
+    /// stale claim is merely superseded or was wrong all along is an author call.</para>
+    /// </summary>
+    static async Task<int> CmdStaleSnippets(string[] args, IServiceProvider services)
+    {
+        var anchors = services.GetRequiredService<Prose.Core.Services.Audit.ClaimBeatAnchorService>();
+        var slug  = Flag(args, "--slug") ?? Flag(args, "--book");
+        var limit = int.TryParse(Flag(args, "--limit"), out var n) && n > 0 ? n : 40;
+
+        // Write path, guarded by an exact count the caller must have read from the report first.
+        if (args.Contains("--supersede"))
+        {
+            if (!int.TryParse(Flag(args, "--confirm"), out var expected))
+            {
+                Console.Error.WriteLine(
+                    "Usage: prose --continuity stale-snippets --supersede --confirm <exactCount> [--slug <s>] [--note \"…\"]\n" +
+                    "  Run the report first and pass the number it printed. A claim whose evidence is gone\n" +
+                    "  should not be asserted as canon; SUPERSEDED keeps the row and is reversible.");
+                return 2;
+            }
+            var note = Flag(args, "--note")
+                ?? "Superseded: the claim's own snippet no longer appears anywhere in its book "
+                 + "(prose --continuity stale-snippets, 2026-09-04).";
+            try
+            {
+                var written = await anchors.SupersedeStaleAsync(slug, expected, note, CancellationToken.None);
+                Console.WriteLine($"[stale-snippets] Superseded {written} ungroundable claim(s) in {slug ?? "corpus-wide"}.");
+                return 0;
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.Error.WriteLine($"[stale-snippets] {ex.Message}");
+                return 2;
+            }
+        }
+
+        var r = await anchors.FindStaleSnippetsAsync(
+            slug, includeAnchored: !args.Contains("--unanchored-only"), CancellationToken.None);
+
+        if (args.Contains("--json"))
+        {
+            Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(
+                r, new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+            return 0;
+        }
+
+        Console.WriteLine($"[stale-snippets] {slug ?? "corpus-wide"} — {r.Stale} of {r.Checked} live prose " +
+                          "claim(s) can no longer be grounded in the prose they cite.");
+        if (r.Stale == 0) return 0;
+
+        if (args.Contains("--by-book"))
+        {
+            Console.WriteLine($"  {"CLAIMS",-8}{"ANCHORED",-10}BOOK");
+            foreach (var g in r.Claims.GroupBy(c => c.BookSlug ?? "(none)").OrderByDescending(g => g.Count()))
+                Console.WriteLine($"  {g.Count(),-8}{g.Count(c => c.WasAnchored),-10}{g.Key}");
+            Console.WriteLine();
+            Console.WriteLine("  ANCHORED means the claim had a beat and that beat's text changed under it —");
+            Console.WriteLine("  invisible to --continuity anchor-beats, which only ever looks at unanchored rows.");
+            return 0;
+        }
+
+        foreach (var c in r.Claims.Take(limit))
+        {
+            var where = c.ChapterNumber.HasValue ? $"ch.{c.ChapterNumber}" : "ch.?";
+            Console.WriteLine($"  {c.ClaimUid}  [{c.Status,-12}] [{c.Provenance,-14}] " +
+                              $"{c.BookSlug ?? "?"} {where}{(c.WasAnchored ? " (anchored)" : "")}");
+            Console.WriteLine($"      {c.EntityName} :: {c.Predicate}  →  {Clip(c.Object, 90)}");
+            Console.WriteLine($"      cites: \"{Clip(c.Snippet, 110)}\"");
+        }
+        if (r.Stale > limit) Console.WriteLine($"  … {r.Stale - limit} more (raise --limit, or use --by-book).");
+        return 0;
+    }
+
     static string Clip(string? s, int max) =>
         string.IsNullOrEmpty(s) ? "" : s.Length <= max ? s : s[..(max - 1)] + "…";
 
@@ -826,6 +904,16 @@ public static class ContinuityCli
                   Free-text search over EntityName, Predicate AND Object, printing each ClaimUid.
                   The only way to find a fact hidden in an object string — a father claim recorded
                   as second_sword_possession -> "...made by father" matches no father_* prefix.
+              prose --continuity anchor-beats [--slug <s>] [--dry]
+                  Recover SourceBeatId by matching each claim's own snippet against its chapter
+                  (then its book). Deterministic, zero LLM cost, fails closed on an ambiguous
+                  match. An unanchored claim cannot be adjudicated at all — run this before
+                  trusting any --tuned-read result. See docs/LEDGER.md §5.
+              prose --continuity stale-snippets [--slug <s>] [--by-book] [--limit N] [--json]
+              prose --continuity stale-snippets --supersede --confirm <exactCount> [--slug <s>]
+                  Live prose claims whose own snippet no longer appears anywhere in their book —
+                  the ledger asserting what the book has stopped saying. Report is read-only;
+                  --supersede is the reversible write, guarded by the exact count you just read.
               prose --continuity predicates [--slug <s>] [--min N] [--limit N] [--all]
               prose --continuity predicates --co-occur [--family <f>] [--slug <s>] [--min N]
                   The ledger's real predicate vocabulary, grouped into the families an exclusion
