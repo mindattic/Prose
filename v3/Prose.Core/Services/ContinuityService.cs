@@ -865,13 +865,25 @@ public class ContinuityService
             keys = keys.Where(k => bookKeys.Contains((k.EntityId, k.Predicate))).ToList();
         }
 
+        // One query for every key's claims, not one query per key (2026-09-04). The N+1 shape was
+        // survivable while this ran on a handful of keys; on BCODA it is ~500 round-trips and the
+        // command started timing out past ten minutes, which also stalls FactLedgerAsync (DEEP
+        // tier) and the group adjudicator, both of which call this method. Filtering by EntityId
+        // and re-checking the predicate client-side keeps the parameter list small — SQL Server
+        // has no composite-key IN, and a 500-clause OR is worse than the fetch.
+        var wantedEntityIds = keys.Select(k => k.EntityId).Distinct().ToList();
+        var wantedKeys = keys.Select(k => (k.EntityId, k.Predicate)).ToHashSet();
+        var claimsByKey = db.ContinuityClaims.AsNoTracking()
+            .Where(c => wantedEntityIds.Contains(c.EntityId) && live.Contains(c.Status))
+            .ToList()
+            .Where(c => wantedKeys.Contains((c.EntityId, c.Predicate)))
+            .GroupBy(c => (c.EntityId, c.Predicate))
+            .ToDictionary(g => g.Key, g => g.OrderBy(c => c.FirstAssertedAt).ToList());
+
         var groups = new List<ContradictionGroup>();
         foreach (var k in keys)
         {
-            var claims = db.ContinuityClaims.AsNoTracking()
-                .Where(c => c.EntityId == k.EntityId && c.Predicate == k.Predicate && live.Contains(c.Status))
-                .OrderBy(c => c.FirstAssertedAt)
-                .ToList();
+            if (!claimsByKey.TryGetValue((k.EntityId, k.Predicate), out var claims)) continue;
             // The SQL Distinct() above counts variants by exact string, so a key whose only
             // "disagreement" is rewording still reached here (2026-09-04). Collapse the members
             // into genuinely distinct assertions before deciding this is a group at all —

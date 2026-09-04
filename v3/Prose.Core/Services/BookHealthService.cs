@@ -1204,6 +1204,18 @@ public class BookHealthService(
             return Task.CompletedTask;
         }
 
+        // Only groups that still hold a CONTRADICTED member (2026-09-04). A group is defined by
+        // divergent VALUES, not by status, so every group re-formed here even after its verdict
+        // had been settled — `--continuity reassess` clearing it under the corrected rules, or
+        // `--ledger-adjudicate` reading the prose and finding the values compatible. The claim-row
+        // half of publish-readiness gate 2 already reflected those settlements while this half
+        // re-filed a finding for all 371/310/275 groups regardless, so the same book reported 128
+        // contradicted rows and 371 contradiction findings at once. Nothing can be hidden by this:
+        // a divergence nobody has judged still carries the CONTRADICTED rows Upsert wrote.
+        groups = groups
+            .Where(g => g.Claims.Any(c => c.Status == "CONTRADICTED"))
+            .ToList();
+
         foreach (var g in groups)
         {
             var variants = string.Join(" vs. ", g.Claims.Select(c =>
