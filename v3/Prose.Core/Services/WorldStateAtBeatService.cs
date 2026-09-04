@@ -103,20 +103,50 @@ public class WorldStateAtBeatService
         // drafting, the beat about to be generated has no events of its own yet, and the query
         // above always returned null. This "Always"-documented service was therefore silently a
         // no-op for the primary use case (drafting a new beat), only ever populating when
-        // REGENERATING an already-extracted beat. Fall back to the single most recent known
-        // story-time fact across the whole universe (optionally entity-scoped below) — the best
-        // available proxy for "where is the story clock right now" once at least one earlier
-        // beat's events have been extracted, which covers every beat past the first chapter.
+        // REGENERATING an already-extracted beat.
+        //
+        // 2026-09-04: that fix took "the single most recent story-time fact across the whole
+        // universe" as a proxy for "where is the story clock right now". It is only that for the
+        // beat currently at the front of the draft. For any EARLIER beat — regenerating chapter 3
+        // of a finished book, or any audit that walks a book in order — it returned state from the
+        // END of the story, silently, as a confident answer. The cause was that a beat had no
+        // position on any timeline, so the service could not ask "at or before THIS beat".
+        //
+        // Beat.StoryPosition (author ruling: beats are the authoritative time axis) gives it one.
+        // Take the newest story time among events at or before this beat's own position, which is
+        // exact instead of a proxy. The universe-wide guess is kept ONLY for a beat with no
+        // stamped position, since a null position means unknown, not "the beginning".
         if (effectiveTime == null)
         {
-            var fallbackQ = db.EntityStateEvents.AsNoTracking().Where(e => e.BeatGuid != beatId);
             var scopeIdsForFallback = entityIds?.ToHashSet();
-            if (scopeIdsForFallback is { Count: > 0 })
-                fallbackQ = fallbackQ.Where(e => scopeIdsForFallback.Contains(e.EntityId));
-            effectiveTime = await fallbackQ
-                .OrderByDescending(e => e.AtStoryTime)
-                .Select(e => (DateTime?)e.AtStoryTime)
+            var position = await db.Beats.AsNoTracking()
+                .Where(b => b.Id == beatId)
+                .Select(b => b.StoryPosition)
                 .FirstOrDefaultAsync(ct);
+
+            if (position != null)
+            {
+                var priorQ = from e in db.EntityStateEvents.AsNoTracking()
+                             join b in db.Beats.AsNoTracking() on e.BeatGuid equals b.Id
+                             where b.StoryPosition != null && b.StoryPosition <= position
+                             select new { e.AtStoryTime, e.EntityId };
+                if (scopeIdsForFallback is { Count: > 0 })
+                    priorQ = priorQ.Where(x => scopeIdsForFallback.Contains(x.EntityId));
+                effectiveTime = await priorQ
+                    .OrderByDescending(x => x.AtStoryTime)
+                    .Select(x => (DateTime?)x.AtStoryTime)
+                    .FirstOrDefaultAsync(ct);
+            }
+            else
+            {
+                var fallbackQ = db.EntityStateEvents.AsNoTracking().Where(e => e.BeatGuid != beatId);
+                if (scopeIdsForFallback is { Count: > 0 })
+                    fallbackQ = fallbackQ.Where(e => scopeIdsForFallback.Contains(e.EntityId));
+                effectiveTime = await fallbackQ
+                    .OrderByDescending(e => e.AtStoryTime)
+                    .Select(e => (DateTime?)e.AtStoryTime)
+                    .FirstOrDefaultAsync(ct);
+            }
         }
 
         var snapshot = new WorldStateSnapshot { BeatId = beatId, StoryTime = effectiveTime };

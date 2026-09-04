@@ -39,6 +39,64 @@ public class Beat
     /// </summary>
     public string? Slug { get; set; }
 
+    // ── Story time: beats are authoritative, the clock is an overlay ─────
+    // Author ruling 2026-09-04: "we are supposed to be using beats not a clock counting hours
+    // and minutes; that still should be there to keep night and day aligned but I guess it has
+    // to support both; if a bomb has a 20 minute timer then the timer needs to align but in the
+    // case of owning then losing a motorcycle that can be tracked by beats."
+    //
+    // So there are two axes and only one of them is authoritative:
+    //   • StoryPosition — WHEN, for ordering and duration. Free, exact, always available.
+    //   • InWorldDate / ElapsedMinutesSincePrevious — the clock OVERLAY, for the two things
+    //     beat counting genuinely cannot do: keeping day and night aligned, and making a short
+    //     fuse add up across the beats it spans.
+    //
+    // Before this, a beat had no in-world time of ANY kind (Number is a stable handle, not a
+    // position; NarratedAt/ScoredAt/CreatedAt/UpdatedAt are system wall-clock). The cost of
+    // that shows up in WorldStateAtBeatService: asked for the world state at a beat, it could
+    // not place the beat on any timeline, so when the beat had no extracted events of its own —
+    // which its own comments document as the normal case while drafting forward — it fell back
+    // to the most recent story-time fact ANYWHERE in the universe. Regenerating an early beat
+    // got the state from the end of the book.
+
+    /// <summary>
+    /// This beat's position in its book's reading order, 1-based — the canonical story clock.
+    ///
+    /// <para>Derived, not authored: <c>NodeWorkbenchService.GetOrderedBeatsAsync</c> already
+    /// defines the total order (chapter sequence, then <c>BeatNodes.SortKey</c>), and
+    /// <c>prose --beat-positions</c> stamps it from that walk for free. Null means "not yet
+    /// stamped", never "position zero" — every consumer must treat null as unknown rather than
+    /// as the beginning of the book.</para>
+    ///
+    /// <para>This is what makes "state as of this beat" and "how long did he own the
+    /// motorcycle" answerable without inventing a timestamp: a duration is a difference of two
+    /// positions, and an as-of query is <c>StoryPosition &lt;= target</c>.</para>
+    /// </summary>
+    public int? StoryPosition { get; set; }
+
+    /// <summary>
+    /// The in-world instant this beat occurs at, when the story actually fixes one. Nullable and
+    /// expected to stay mostly null: it exists to keep day and night aligned and to anchor
+    /// scheduled events, NOT to order beats — <see cref="StoryPosition"/> does that.
+    ///
+    /// <para>Deliberately separate from the system-time columns on this row. <c>CreatedAt</c> and
+    /// <c>UpdatedAt</c> record when the database saw this text; this records when the scene
+    /// happens to the characters. Conflating the two is the mistake
+    /// <c>EntityStateEvent.AtStoryTime</c>'s own remarks warn about.</para>
+    /// </summary>
+    public DateTime? InWorldDate { get; set; }
+
+    /// <summary>
+    /// In-world minutes between the previous beat in reading order and this one, when it matters.
+    ///
+    /// <para>This is the axis beat counting cannot express: a twenty-minute fuse has to still be
+    /// a twenty-minute fuse however many beats the scene takes, so a tight sequence carries
+    /// explicit minutes and the timer is checked against their sum. Null means "unmeasured" —
+    /// the overwhelmingly common case, and NOT zero. Never write 0 to mean "unknown": zero is a
+    /// real and different claim (simultaneous, or a hard cut with no elapsed time).</para>
+    /// </summary>
+    public int? ElapsedMinutesSincePrevious { get; set; }
+
     /// <summary>The paragraph. Authoritative; nothing else holds a copy.</summary>
     public string Text { get; set; } = "";
 

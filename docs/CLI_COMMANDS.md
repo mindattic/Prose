@@ -13,7 +13,7 @@
 > routes through the cost gate; everything else is deterministic or read-only.
 > Most commands require a `--universe <slug>` scope.
 
-**275 commands.** 15 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**276 commands.** 15 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -358,6 +358,16 @@ prose --beat-archive --beat-id <guid> The Beat Context Archive (observability Pa
 prose --beat-granularity [--slug <slug> | --code <code> | --all] [--beats] Analyses beat-size distribution against the 4,000–7,500 char optimal range. Labels each beat as OK / SPLIT / MERGE and prints per-story stats. CPU-only — no LLM calls. Exit 0 = success.
 
 <sub>handler `BeatGranularityCli`</sub>
+
+### `--beat-positions`
+
+```
+prose --beat-positions [--slug <slug-or-code-or-id>] [--all] [--dry] [--json]
+```
+
+stamp Beat.StoryPosition — a book's reading order as a number, which is the engine's authoritative story clock (author ruling 2026-09-04: track time in beats; the wall clock is an overlay for day/night alignment and short timers that have to add up). Deterministic and FREE: reads the order GetOrderedBeatsAsync already defines, writes an integer, touches no prose and marks no beat dirty. Re-run after anything that changes reading order.
+
+<sub>handler `BeatPositionsCli`</sub>
 
 ### `--behavior-check`
 

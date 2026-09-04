@@ -1204,6 +1204,9 @@ public static class ServiceCollectionExtensions
         // BookStateLedgerService's post-write extraction into one call — RFC 0009 §9.4 "item 1".
         services.AddSingleton<BeatExtractionService>();
         services.AddSingleton<BeatPlaceService>();
+        // Beat.StoryPosition — the authoritative story clock (author ruling 2026-09-04: time is
+        // tracked in beats; the wall clock is an overlay for day/night and short timers).
+        services.AddSingleton<BeatStoryPositionService>();
         services.AddSingleton<RepetitionLintService>();
         services.AddSingleton<MotifLedgerService>();
         services.AddSingleton<PovVoiceAuditService>();

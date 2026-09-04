@@ -125,6 +125,12 @@ if (UniverseBootstrap.RequestedSlug == null
         // concept, and CommandCostHistories (which --cost --history reads) has no universe
         // column at all — the cost gate calibrates per COMMAND, across every book.
         "--cost",
+        // A beat's place in its own book's reading order is structural, not universe-scoped, and
+        // BeatStoryPositionService walks every book via IgnoreQueryFilters. Requiring a scope here
+        // would mean complete coverage depends on the caller naming every universe slug correctly
+        // — which failed on the first attempt (78.3%, ~2,600 beats missed in a universe whose slug
+        // this very error message was stale about).
+        "--beat-positions",
         // Corpus-wide corruption scan: TextIntegrityService.ScanAsync uses IgnoreQueryFilters
         // deliberately — a data-integrity scan must see every universe in one pass, never scoped
         // to whatever --universe happened to be passed (see TextIntegrityService's doc comment).
@@ -2880,6 +2886,18 @@ if (args.Contains("--generate-event-list"))
 if (args.Contains("--extract-beat-locations"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("ExtractBeatLocationsCli", args);
+    return;
+}
+
+// CLI mode: stamp Beat.StoryPosition — a book's reading order as a number, which is the engine's
+// authoritative story clock (author ruling 2026-09-04: track time in beats; the wall clock is an
+// overlay for day/night alignment and short timers that have to add up). Deterministic and FREE:
+// reads the order GetOrderedBeatsAsync already defines, writes an integer, touches no prose and
+// marks no beat dirty. Re-run after anything that changes reading order.
+//   prose --beat-positions [--slug <slug-or-code-or-id>] [--all] [--dry] [--json]
+if (args.Contains("--beat-positions"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatPositionsCli", args);
     return;
 }
 
