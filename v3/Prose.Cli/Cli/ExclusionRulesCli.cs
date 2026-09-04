@@ -76,8 +76,12 @@ public static class ExclusionRulesCli
         foreach (var r in rows)
         {
             var scope = r.UniverseId == Guid.Empty ? "*ALL*" : slugById.GetValueOrDefault(r.UniverseId, "?");
+            // "⊥ THEN" rather than a bare ⊥ for a temporal axiom: the ordering constraint is
+            // most of what the rule means, and an author reviewing a list where it is invisible
+            // would read a precise rule as a far broader one.
+            var op = PredicateExclusionService.IsTemporal(r) ? "  ⊥ THEN(later beat)  " : "  ⊥  ";
             Console.WriteLine($"#{r.Id,-4} [{r.Status,-8}] {r.Source,-7} {scope,-6} " +
-                              $"{Describe(r.PredicateA, r.ObjectPatternA)}  ⊥  {Describe(r.PredicateB, r.ObjectPatternB)}");
+                              $"{Describe(r.PredicateA, r.ObjectPatternA)}{op}{Describe(r.PredicateB, r.ObjectPatternB)}");
             Console.WriteLine($"        {r.Rationale}");
         }
 

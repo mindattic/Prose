@@ -158,7 +158,15 @@ public sealed class TunedReadService(
 
         // (b) NEW: the exclusion ontology — different predicate, incompatible meaning.
         var rules = await exclusions.GetActiveRulesAsync(book.UniverseId, ct);
-        var rawCandidates = PredicateExclusionService.GenerateCandidates(liveClaims, rules);
+        // Reading-order positions for the temporal axioms (docs/LOGIC.md §2 order — chapters by
+        // Nodes.SortKey, beats by NodeBeats.SortKey, never Beats.Number, which manufactures false
+        // findings). Without this map GenerateCandidates skips every temporal rule rather than
+        // evaluating it as a timeless one.
+        var beatPositions = ordered
+            .Select((o, i) => (o.Beat.Id, i))
+            .GroupBy(x => x.Id)
+            .ToDictionary(g => g.Key, g => g.First().i);
+        var rawCandidates = PredicateExclusionService.GenerateCandidates(liveClaims, rules, beatPositions);
         // Collapse to one question per (entity, axiom). The ledger records the same fact under
         // many predicate names, so the raw cross product asks one question dozens of times —
         // see PredicateExclusionService.Collapse for the measured case (60+ pairs, one defect).
@@ -171,6 +179,14 @@ public sealed class TunedReadService(
         if (rules.Count == 0)
             notes.Add("No active exclusion axioms are in scope for this universe, so the " +
                       "cross-predicate half of collision detection found nothing by construction.");
+
+        // "Zero candidates" has two completely different meanings — the book is consistent, or the
+        // instrument could not look — and until this diagnostic existed they were indistinguishable
+        // from the outside. That ambiguity cost real time: a corpus-wide zero read as "clean" while
+        // the actual cause was that 0.1% of the ledger carried a beat anchor. A temporal axiom in
+        // particular can be perfectly correct and still never fire, and silence should never be the
+        // only thing it reports.
+        AppendTemporalDiagnostics(notes, liveClaims, rules, beatPositions);
 
         // Deterministic, stable order so a truncated run is reproducible rather than arbitrary.
         ontologyCandidates = ontologyCandidates
@@ -285,6 +301,53 @@ public sealed class TunedReadService(
         };
     }
 
+    /// <summary>
+    /// For every temporal axiom that produced nothing, says which gate stopped it: the shape never
+    /// matched at all, or it matched and the ordering constraint rejected every pair — and if so,
+    /// whether that was for want of a beat anchor or because the second fact simply comes first.
+    ///
+    /// <para>Re-runs candidate generation with the ordering stripped, which is cheap (a pure
+    /// function over claims already in memory) and buys the difference between "this book is
+    /// consistent" and "this instrument cannot see".</para>
+    /// </summary>
+    private static void AppendTemporalDiagnostics(
+        List<string> notes,
+        List<ContinuityClaim> liveClaims,
+        List<PredicateExclusion> rules,
+        IReadOnlyDictionary<Guid, int> beatPositions)
+    {
+        foreach (var rule in rules.Where(PredicateExclusionService.IsTemporal))
+        {
+            var timeless = new PredicateExclusion
+            {
+                Id = rule.Id,
+                UniverseId = rule.UniverseId,
+                PredicateA = rule.PredicateA, ObjectPatternA = rule.ObjectPatternA,
+                PredicateB = rule.PredicateB, ObjectPatternB = rule.ObjectPatternB,
+                Symmetric = false, TemporalOrder = null,
+                Status = rule.Status, Source = rule.Source, Rationale = rule.Rationale,
+            };
+
+            var shapeMatches = PredicateExclusionService.GenerateCandidates(liveClaims, [timeless]);
+            if (shapeMatches.Count == 0) continue; // shape never occurs here; nothing to explain.
+
+            var kept = shapeMatches.Count(c =>
+                PredicateExclusionService.BStrictlyAfterA(c.A, c.B, beatPositions));
+            if (kept > 0) continue; // the axiom did fire; no diagnostic needed.
+
+            var unanchored = shapeMatches.Count(c =>
+                c.A.SourceBeatId is null || c.B.SourceBeatId is null);
+            notes.Add(
+                $"Axiom #{rule.Id} matched {shapeMatches.Count} claim pair(s) by shape, but the ordering " +
+                $"gate rejected all of them — {unanchored} because a claim carries no beat anchor, " +
+                $"{shapeMatches.Count - unanchored} because the second fact is not anchored later than the " +
+                "first. This is NOT the same as the book being clean on this axiom" +
+                (unanchored > 0
+                    ? "; run prose --continuity anchor-beats to recover the anchors the snippets already imply."
+                    : "."));
+        }
+    }
+
     // ── adjudication ─────────────────────────────────────────────────────────
 
     private const string AdjudicationSystem = """
@@ -360,6 +423,24 @@ false is a correct, common answer.
         user.AppendLine("AXIOM UNDER TEST:");
         user.AppendLine($"  {cand.Rule.Rationale}");
         user.AppendLine();
+
+        // Without this the temporal axioms would be self-defeating: the system prompt tells the
+        // adjudicator to answer NO when "the two facts describe different moments", and for a
+        // temporal axiom the different moments ARE the question. The rule is not "he is dead and
+        // he also acts" (true of everyone who dies on-page) but "he was established dead, and the
+        // book has him acting afterwards".
+        if (PredicateExclusionService.IsTemporal(cand.Rule))
+        {
+            user.AppendLine("ORDERING — READ THIS BEFORE APPLYING THE GENERAL RULES:");
+            user.AppendLine("  Fact 2 is recorded from a beat that comes LATER in the book than fact 1.");
+            user.AppendLine("  For this axiom the ordering IS the question, so the general guidance that two");
+            user.AppendLine("  facts describing different moments are not a contradiction does NOT apply.");
+            user.AppendLine("  Answer YES if fact 1 makes fact 2 impossible at that later point and nothing in");
+            user.AppendLine("  the prose reconciles it. Answer NO if the story does reconcile it — a faked or");
+            user.AppendLine("  reversed death, a flashback or remembered scene, a recording or message left");
+            user.AppendLine("  behind, a namesake, or a different character with a similar name.");
+            user.AppendLine();
+        }
         user.AppendLine("FACT 1:");
         user.AppendLine($"  {cand.A.Predicate} = {cand.A.Object}");
         if (!string.IsNullOrWhiteSpace(cand.A.Snippet)) user.AppendLine($"  recorded from: \"{cand.A.Snippet}\"");

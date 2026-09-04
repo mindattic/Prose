@@ -76,9 +76,15 @@ public sealed class PredicateExclusionService(
     /// and cross-entity pairing would assert that one character being constructed forbids another
     /// from having a father.</para>
     /// </summary>
+    /// <param name="beatOrder">Beat id → position in true reading order, for
+    /// <see cref="PredicateExclusion.TemporalOrder"/> rules. When null, temporal rules are SKIPPED
+    /// rather than treated as timeless: a temporal axiom evaluated without an ordering is a
+    /// different, much broader axiom than the one its author approved, and silently widening a rule
+    /// is the failure mode this whole table is written to avoid.</param>
     public static List<ExclusionCandidate> GenerateCandidates(
         IReadOnlyList<ContinuityClaim> claims,
-        IReadOnlyList<PredicateExclusion> rules)
+        IReadOnlyList<PredicateExclusion> rules,
+        IReadOnlyDictionary<Guid, int>? beatOrder = null)
     {
         var candidates = new List<ExclusionCandidate>();
         if (rules.Count == 0) return candidates;
@@ -94,6 +100,11 @@ public sealed class PredicateExclusionService(
 
             foreach (var rule in rules)
             {
+                var temporal = IsTemporal(rule);
+                // A temporal rule without an ordering is not a weaker version of itself, it is a
+                // different axiom. Skip rather than silently widen.
+                if (temporal && beatOrder == null) continue;
+
                 foreach (var a in entityClaims)
                 {
                     foreach (var b in entityClaims)
@@ -101,11 +112,15 @@ public sealed class PredicateExclusionService(
                         if (ReferenceEquals(a, b)) continue;
                         if (string.Equals(a.ClaimUid, b.ClaimUid, StringComparison.Ordinal)) continue;
                         if (!Matches(rule, a, b)) continue;
+                        if (temporal && !BStrictlyAfterA(a, b, beatOrder!)) continue;
 
-                        // Order the pair by uid so (A,B) and (B,A) collapse to one question —
-                        // claim order in the ledger is an accident of extraction order.
-                        var (first, second) = string.CompareOrdinal(a.ClaimUid, b.ClaimUid) <= 0
-                            ? (a, b) : (b, a);
+                        // A temporal pair is directional, so its ordering IS its meaning — keying
+                        // it by uid order the way a timeless pair is keyed would let (a,b) and
+                        // (b,a) collapse into whichever the uid sort happened to put first, and
+                        // the surviving candidate could be the one pointing backwards in time.
+                        var (first, second) = temporal
+                            ? (a, b)
+                            : string.CompareOrdinal(a.ClaimUid, b.ClaimUid) <= 0 ? (a, b) : (b, a);
                         if (!seen.Add($"{first.ClaimUid}|{second.ClaimUid}|{rule.Id}")) continue;
 
                         candidates.Add(new ExclusionCandidate(first, second, rule));
@@ -130,9 +145,34 @@ public sealed class PredicateExclusionService(
         if (SideMatches(rule.PredicateA, rule.ObjectPatternA, a)
             && SideMatches(rule.PredicateB, rule.ObjectPatternB, b)) return true;
 
-        return rule.Symmetric
+        // A temporal rule is directional by construction: swapping the sides asserts the opposite
+        // ordering, so Symmetric is ignored for it even if a row somehow carries it set.
+        return rule.Symmetric && !IsTemporal(rule)
             && SideMatches(rule.PredicateA, rule.ObjectPatternA, b)
             && SideMatches(rule.PredicateB, rule.ObjectPatternB, a);
+    }
+
+    /// <summary>True for an axiom carrying an ordering constraint on its two claims' beat anchors.</summary>
+    public static bool IsTemporal(PredicateExclusion rule) =>
+        string.Equals(rule.TemporalOrder, PredicateExclusion.TemporalBAfterA, StringComparison.OrdinalIgnoreCase);
+
+    /// <summary>
+    /// True when both claims carry a beat anchor and <paramref name="b"/>'s beat sits strictly
+    /// later in reading order than <paramref name="a"/>'s.
+    ///
+    /// <para>An unanchored claim fails this, deliberately. It cannot be placed on the book's clock,
+    /// and pairing it anyway would turn "the character acts after their death" back into the
+    /// timeless "the character is dead and also acts" — true of every character who ever dies
+    /// on-page. Equal positions also fail: a death and an action recorded from the SAME beat is
+    /// the death scene itself.</para>
+    /// </summary>
+    internal static bool BStrictlyAfterA(
+        ContinuityClaim a, ContinuityClaim b, IReadOnlyDictionary<Guid, int> beatOrder)
+    {
+        if (a.SourceBeatId is not { } aBeat || b.SourceBeatId is not { } bBeat) return false;
+        if (!beatOrder.TryGetValue(aBeat, out var aPos)) return false;
+        if (!beatOrder.TryGetValue(bBeat, out var bPos)) return false;
+        return bPos > aPos;
     }
 
     private static bool SideMatches(string predicatePattern, string? objectPattern, ContinuityClaim claim)

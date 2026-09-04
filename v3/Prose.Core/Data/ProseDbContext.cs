@@ -2250,6 +2250,7 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Status).HasMaxLength(20).IsRequired();
             e.Property(x => x.Rationale).HasMaxLength(1000).IsRequired();
             e.Property(x => x.ApprovedBy).HasMaxLength(120);
+            e.Property(x => x.TemporalOrder).HasMaxLength(20);
             // Candidate generation reads "every active rule for this universe plus every
             // universal one", so this is the hot index.
             e.HasIndex(x => new { x.UniverseId, x.Status });

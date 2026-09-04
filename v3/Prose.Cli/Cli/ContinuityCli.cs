@@ -54,6 +54,8 @@ public static class ContinuityCli
             "resolve"         => CmdResolve(rest, svc),
             "entity"          => CmdEntity(rest, svc),
             "search"          => CmdSearch(rest, svc),
+            "predicates"      => CmdPredicates(rest, svc),
+            "anchor-beats"    => CmdAnchorBeats(rest, services).GetAwaiter().GetResult(),
             "reject"          => CmdReject(rest, svc),
             "extract"         => CmdExtract(rest, services).GetAwaiter().GetResult(),
             "apply"           => CmdApply(rest, services).GetAwaiter().GetResult(),
@@ -196,6 +198,20 @@ public static class ContinuityCli
         Console.WriteLine($"[continuity]   prose:         {s.FromProse}");
         Console.WriteLine($"[continuity]   entity_record: {s.FromEntityRecord}");
         Console.WriteLine($"[continuity]   bible:         {s.FromBible}");
+
+        // Beat-anchor coverage is the ceiling on the Tuned Read: an unanchored claim cannot be
+        // ordered (no temporal axiom fires) and cannot be shown to the adjudicator with its prose
+        // (the pair is refused rather than ruled on). Reporting it here means a ledger that CANNOT
+        // produce findings never again looks like a ledger that found nothing.
+        var anchors = svc.GetBeatAnchorCoverage();
+        var pct = anchors.LiveClaims == 0 ? 0 : 100.0 * anchors.Anchored / anchors.LiveClaims;
+        var prosePct = anchors.FromProse == 0 ? 0 : 100.0 * anchors.ProseAnchored / anchors.FromProse;
+        Console.WriteLine($"[continuity] Beat anchors (live claims — the Tuned Read's ceiling):");
+        Console.WriteLine($"[continuity]   anchored:      {anchors.Anchored} / {anchors.LiveClaims} ({pct:F1}%)");
+        Console.WriteLine($"[continuity]   of prose only: {anchors.ProseAnchored} / {anchors.FromProse} ({prosePct:F1}%)");
+        if (anchors.Anchored == 0 && anchors.LiveClaims > 0)
+            Console.WriteLine("[continuity]   NOTE: no claim carries a beat anchor, so the Tuned Read cannot " +
+                              "adjudicate anything at all — a clean result from it means nothing yet.");
         return 0;
     }
 
@@ -360,6 +376,97 @@ public static class ContinuityCli
             Console.WriteLine($"  … {hits.Count - limit} more (raise --limit).");
         return 0;
     }
+
+    /// <summary>
+    /// prose --continuity predicates [--slug &lt;s&gt;] [--co-occur] [--family &lt;f&gt;] [--min N] [--limit N] [--all]
+    ///
+    /// <para>The ledger's own predicate vocabulary, grouped into the families an exclusion axiom's
+    /// <c>stem*</c> pattern addresses — and, with <c>--co-occur</c>, which families are actually
+    /// held by the same entity.</para>
+    ///
+    /// <para><b>Why it exists.</b> An exclusion axiom can only fire on a predicate pair that
+    /// co-occurs on one subject, and nothing reported which pairs those are, so axioms were being
+    /// written from imagination. That already misfired once: Phase 2's shipped axioms named
+    /// <c>father</c> while extraction had written <c>father_name</c>, <c>father_occupation</c> and
+    /// a dozen more, and a rule that silently matches nothing looks exactly like no rule. This is
+    /// the list an author picks the next axiom FROM. Deterministic, zero LLM cost.</para>
+    /// </summary>
+    static int CmdPredicates(string[] args, ContinuityService svc)
+    {
+        var slug     = Flag(args, "--slug") ?? Flag(args, "--book");
+        var liveOnly = !args.Contains("--all");
+        var limit    = int.TryParse(Flag(args, "--limit"), out var l) && l > 0 ? l : 60;
+        var min      = int.TryParse(Flag(args, "--min"), out var m) && m > 0 ? m : 0;
+        var scope    = slug is null ? "corpus-wide" : $"book '{slug}'";
+
+        if (args.Contains("--co-occur") || args.Contains("--cooccur"))
+        {
+            var family = Flag(args, "--family");
+            var pairs = svc.GetPredicateCoOccurrences(
+                slug, family, minEntities: min > 0 ? min : 2, liveOnly: liveOnly);
+
+            if (pairs.Count == 0)
+            {
+                Console.WriteLine($"[continuity] No predicate families co-occur ({scope}" +
+                                  (family is null ? "" : $", family '{family}'") + ").");
+                return 0;
+            }
+
+            Console.WriteLine($"[continuity] {pairs.Count} co-occurring predicate family pair(s), {scope}" +
+                              (family is null ? "" : $", involving '{family}'") +
+                              " — an exclusion axiom can only fire on a pair that appears here.");
+            Console.WriteLine($"  {"ENTITIES",-9}  {"FAMILY A",-28}  {"FAMILY B",-28}  SAMPLE ENTITY");
+            foreach (var p in pairs.Take(limit))
+                Console.WriteLine($"  {p.Entities,-9}  {Clip(p.FamilyA, 28),-28}  {Clip(p.FamilyB, 28),-28}  {Clip(p.SampleEntity, 40)}");
+            if (pairs.Count > limit) Console.WriteLine($"  … {pairs.Count - limit} more (raise --limit).");
+            return 0;
+        }
+
+        var families = svc.GetPredicateFamilies(slug, liveOnly, minClaims: min);
+        if (families.Count == 0)
+        {
+            Console.WriteLine($"[continuity] No predicates ({scope}).");
+            return 0;
+        }
+
+        Console.WriteLine($"[continuity] {families.Count} predicate family/families, {scope} " +
+                          $"({(liveOnly ? "live claims only" : "all claims incl. rejected/superseded")}).");
+        Console.WriteLine($"  {"ENTITIES",-9}{"CLAIMS",-8}{"FAMILY",-26}MEMBERS");
+        foreach (var f in families.Take(limit))
+            Console.WriteLine($"  {f.Entities,-9}{f.Claims,-8}{Clip(f.Family, 26),-26}{Clip(string.Join(", ", f.Members), 70)}");
+        if (families.Count > limit) Console.WriteLine($"  … {families.Count - limit} more (raise --limit).");
+        return 0;
+    }
+
+    /// <summary>
+    /// prose --continuity anchor-beats [--slug &lt;s&gt;] [--dry]
+    ///
+    /// <para>Backfills the beat anchor each claim's own snippet already implies. Deterministic,
+    /// zero LLM cost, and the single highest-leverage thing available to the Tuned Read: with 0.1%
+    /// of the ledger anchored, the instrument cannot adjudicate anything and reports that silence
+    /// as a clean book.</para>
+    /// </summary>
+    static async Task<int> CmdAnchorBeats(string[] args, IServiceProvider services)
+    {
+        var anchors = services.GetRequiredService<Prose.Core.Services.Audit.ClaimBeatAnchorService>();
+        var slug = Flag(args, "--slug") ?? Flag(args, "--book");
+        var dry  = args.Contains("--dry") || args.Contains("--dry-run");
+
+        var r = await anchors.BackfillAsync(slug, dry, CancellationToken.None);
+
+        Console.WriteLine($"[anchor-beats] {slug ?? "corpus-wide"} — {r.Considered} unanchored live prose claim(s) considered.");
+        Console.WriteLine($"  anchored:        {r.Anchored}{(dry ? "  (DRY RUN — nothing written)" : "")}");
+        Console.WriteLine($"  ambiguous:       {r.Ambiguous}   (snippet matched several beats — left alone)");
+        Console.WriteLine($"  snippet stale:   {r.NotFound}   (no longer in the chapter's prose)");
+        Console.WriteLine($"  no snippet:      {r.NoSnippet}");
+        Console.WriteLine($"  snippet too short: {r.TooShort}");
+        Console.WriteLine($"  no chapter scope:  {r.NoChapterScope}");
+        foreach (var n in r.Notes) Console.WriteLine($"  note: {n}");
+        return 0;
+    }
+
+    static string Clip(string? s, int max) =>
+        string.IsNullOrEmpty(s) ? "" : s.Length <= max ? s : s[..(max - 1)] + "…";
 
     static async Task<int> CmdExtract(string[] args, IServiceProvider services)
     {
@@ -719,6 +826,12 @@ public static class ContinuityCli
                   Free-text search over EntityName, Predicate AND Object, printing each ClaimUid.
                   The only way to find a fact hidden in an object string — a father claim recorded
                   as second_sword_possession -> "...made by father" matches no father_* prefix.
+              prose --continuity predicates [--slug <s>] [--min N] [--limit N] [--all]
+              prose --continuity predicates --co-occur [--family <f>] [--slug <s>] [--min N]
+                  The ledger's real predicate vocabulary, grouped into the families an exclusion
+                  axiom's stem* pattern addresses; --co-occur lists the family pairs actually held
+                  by the same entity. An axiom can only ever fire on a pair that appears there —
+                  author the next one from this list, not from a guess.
               prose --continuity reject --claim <uid> [--claim <uid> ...] [--note "..."]
               prose --continuity reject --entity <entityId> --predicate-prefix <p> --yes [--note "..."]
                   Reject one claim, several, or a whole predicate family on one entity. The only

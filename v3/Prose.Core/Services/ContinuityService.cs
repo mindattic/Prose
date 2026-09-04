@@ -405,6 +405,149 @@ public class ContinuityService
         return q.OrderBy(c => c.EntityName).ThenBy(c => c.Predicate).ThenBy(c => c.Object).ToList();
     }
 
+    /// <summary>How much of the ledger can actually be placed on a book's clock.</summary>
+    /// <param name="Anchored">Live claims carrying a <c>SourceBeatId</c>.</param>
+    public sealed record BeatAnchorCoverage(int LiveClaims, int Anchored, int FromProse, int ProseAnchored);
+
+    /// <summary>
+    /// Beat-anchor coverage — the ceiling on everything the Tuned Read can do.
+    ///
+    /// <para><b>Why it is worth its own readout.</b> <c>SourceBeatId</c> arrived in Phase 2; every
+    /// claim extracted before it is unanchored. An unanchored claim cannot be ordered against
+    /// another (so no temporal axiom can ever fire on it) and cannot be shown to the adjudicator
+    /// with its prose (so <c>TunedReadService.AdjudicateAsync</c> refuses the pair outright rather
+    /// than ruling on two summaries). A ledger of unanchored claims therefore produces zero
+    /// findings no matter how good the ontology is — and reports that as "clean", which is exactly
+    /// the silence this whole programme exists to break.</para>
+    /// </summary>
+    public BeatAnchorCoverage GetBeatAnchorCoverage(string? bookSlug = null)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var q = QueryForSurvey(db, bookSlug, liveOnly: true);
+        return new BeatAnchorCoverage(
+            q.Count(),
+            q.Count(c => c.SourceBeatId != null),
+            q.Count(c => c.SourceType == "prose"),
+            q.Count(c => c.SourceType == "prose" && c.SourceBeatId != null));
+    }
+
+    // ── predicate vocabulary survey (2026-09-03) ────────────────────────────────
+
+    /// <summary>One predicate FAMILY — the stem an exclusion axiom's <c>stem*</c> pattern
+    /// addresses (<c>father</c> covers father, father_name, father_occupation …).</summary>
+    /// <param name="Members">The distinct full predicate names in this family, most common first.</param>
+    public sealed record PredicateFamilyStat(
+        string Family, int Claims, int Entities, IReadOnlyList<string> Members, string SampleObject);
+
+    /// <summary>Two predicate families held by the same entity. An exclusion axiom can only ever
+    /// fire on a pair that actually co-occurs, so this is the candidate list an author picks
+    /// axioms FROM — the alternative being to invent a pattern and discover it matches nothing.</summary>
+    public sealed record PredicateCoOccurrence(
+        string FamilyA, string FamilyB, int Entities, string SampleEntity);
+
+    /// <summary>
+    /// The ledger's actual predicate vocabulary, grouped into the families
+    /// <c>PredicateExclusionService.PredicateMatchesPattern</c>'s <c>stem*</c> form addresses.
+    ///
+    /// <para><b>Why this exists.</b> The exclusion ontology is only as good as its authors'
+    /// knowledge of what the ledger really records, and nothing reported that. The axioms shipped
+    /// in Phase 2 named <c>father</c> when extraction had actually written <c>father_name</c>,
+    /// <c>father_occupation</c>, <c>father_status</c> and eleven more — a rule that silently
+    /// matches nothing is indistinguishable from no rule, and that near-miss was caught only by
+    /// dry-running the instrument against the one defect it was built for. Authoring the next
+    /// axiom from a guess instead of from this list would repeat it.</para>
+    /// </summary>
+    public List<PredicateFamilyStat> GetPredicateFamilies(
+        string? bookSlug = null, bool liveOnly = true, int minClaims = 1)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var rows = QueryForSurvey(db, bookSlug, liveOnly)
+            .Select(c => new { c.EntityId, c.Predicate, c.Object })
+            .ToList();
+
+        return rows
+            .Select(r => new { Family = FamilyStem(r.Predicate), r.EntityId, r.Predicate, r.Object })
+            .Where(r => r.Family.Length > 0)
+            .GroupBy(r => r.Family, StringComparer.Ordinal)
+            .Select(g => new PredicateFamilyStat(
+                g.Key,
+                g.Count(),
+                g.Select(x => x.EntityId).Distinct(StringComparer.Ordinal).Count(),
+                g.GroupBy(x => x.Predicate, StringComparer.Ordinal)
+                    .OrderByDescending(m => m.Count()).ThenBy(m => m.Key, StringComparer.Ordinal)
+                    .Select(m => m.Key).Take(8).ToList(),
+                g.Select(x => x.Object).FirstOrDefault(o => !string.IsNullOrWhiteSpace(o)) ?? ""))
+            .Where(f => f.Claims >= minClaims)
+            .OrderByDescending(f => f.Entities).ThenByDescending(f => f.Claims)
+            .ThenBy(f => f.Family, StringComparer.Ordinal)
+            .ToList();
+    }
+
+    /// <summary>
+    /// Predicate-family pairs held by the same entity, ranked by how many entities hold both.
+    /// This is the empirical answer to "which exclusion axioms could fire at all" — a pair with
+    /// zero co-occurrence cannot produce a candidate no matter how sound the axiom is.
+    /// </summary>
+    /// <param name="familyFilter">When set, only pairs involving this family (e.g. "death").</param>
+    public List<PredicateCoOccurrence> GetPredicateCoOccurrences(
+        string? bookSlug = null, string? familyFilter = null, int minEntities = 2, bool liveOnly = true)
+    {
+        using var db = dbFactory.CreateDbContext();
+        var rows = QueryForSurvey(db, bookSlug, liveOnly)
+            .Select(c => new { c.EntityId, c.EntityName, c.Predicate })
+            .ToList();
+
+        var filter = string.IsNullOrWhiteSpace(familyFilter) ? null : FamilyStem(familyFilter);
+        var pairs = new Dictionary<(string A, string B), (int Count, string Sample)>();
+
+        foreach (var entity in rows.GroupBy(r => r.EntityId, StringComparer.Ordinal))
+        {
+            var families = entity.Select(r => FamilyStem(r.Predicate))
+                .Where(f => f.Length > 0)
+                .Distinct(StringComparer.Ordinal)
+                .OrderBy(f => f, StringComparer.Ordinal)
+                .ToList();
+            var name = entity.Select(r => r.EntityName).FirstOrDefault() ?? entity.Key;
+
+            for (var i = 0; i < families.Count; i++)
+                for (var j = i + 1; j < families.Count; j++)
+                {
+                    if (filter != null && families[i] != filter && families[j] != filter) continue;
+                    var key = (families[i], families[j]);
+                    pairs[key] = pairs.TryGetValue(key, out var cur)
+                        ? (cur.Count + 1, cur.Sample)
+                        : (1, name);
+                }
+        }
+
+        return pairs
+            .Where(p => p.Value.Count >= minEntities)
+            .Select(p => new PredicateCoOccurrence(p.Key.A, p.Key.B, p.Value.Count, p.Value.Sample))
+            .OrderByDescending(p => p.Entities)
+            .ThenBy(p => p.FamilyA, StringComparer.Ordinal).ThenBy(p => p.FamilyB, StringComparer.Ordinal)
+            .ToList();
+    }
+
+    private static IQueryable<ContinuityClaim> QueryForSurvey(
+        ProseDbContext db, string? bookSlug, bool liveOnly)
+    {
+        var q = db.ContinuityClaims.AsNoTracking().AsQueryable();
+        if (!string.IsNullOrEmpty(bookSlug)) q = q.Where(c => c.BookSlug == bookSlug);
+        if (liveOnly) q = q.Where(c => c.Status != "REJECTED" && c.Status != "SUPERSEDED");
+        return q;
+    }
+
+    /// <summary>The leading token of a normalized predicate — the stem an axiom's <c>stem*</c>
+    /// pattern anchors on. <c>father_occupation</c> → <c>father</c>; <c>life_status</c> →
+    /// <c>life</c>; a single-token predicate is its own family.</summary>
+    internal static string FamilyStem(string? predicate)
+    {
+        var n = Normalize(predicate ?? "");
+        if (n.Length == 0) return "";
+        var cut = n.IndexOf('_');
+        return cut > 0 ? n[..cut] : n;
+    }
+
     /// <summary>Every claim that has been applied back to its entity's canon record
     /// (<see cref="ContinuityApplyService.ApplyAsync"/> sets <c>AppliedAt</c>/<c>AppliedToField</c>) —
     /// the candidate set for <see cref="ContinuityApplyService.CheckAppliedClaimsAsync"/>'s drift

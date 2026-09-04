@@ -1225,6 +1225,10 @@ public static class ServiceCollectionExtensions
         // Story Ledger Phase 2 — the exclusion ontology and the Tuned Read over it.
         services.AddSingleton<Prose.Core.Services.Audit.PredicateExclusionService>();
         services.AddSingleton<Prose.Core.Services.Audit.TunedReadService>();
+        // Deterministic SourceBeatId backfill. Registered alongside the Tuned Read because it is
+        // that instrument's precondition, not an optional companion: an unanchored claim can
+        // never be adjudicated (see ClaimBeatAnchorService's remarks).
+        services.AddSingleton<Prose.Core.Services.Audit.ClaimBeatAnchorService>();
         // Story Ledger Phase 3 — the provenance grade across Entities / CharacterRelationships /
         // ContinuityClaims, and the audit that answers "what is in canon nobody approved?".
         services.AddSingleton<Prose.Core.Services.Audit.ProvenanceService>();

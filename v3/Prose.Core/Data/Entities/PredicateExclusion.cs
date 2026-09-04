@@ -68,8 +68,34 @@ public class PredicateExclusion
 
     /// <summary>When true (the default), the axiom matches with the two sides swapped as well —
     /// claim order in the ledger is an accident of extraction order, not meaning. Set false only
-    /// for a genuinely directional rule.</summary>
+    /// for a genuinely directional rule, including every <see cref="TemporalOrder"/> rule.</summary>
     public bool Symmetric { get; set; } = true;
+
+    /// <summary>
+    /// Optional ordering constraint on the two claims' beat anchors. <c>null</c> (the default) is
+    /// an ordinary timeless axiom. <c>"b_after_a"</c> means the pair is only a question when B's
+    /// <c>SourceBeatId</c> sits STRICTLY LATER in reading order than A's.
+    ///
+    /// <para><b>Why the model needed this.</b> The plan named three built-in axiom families and
+    /// only "a constructed being has no biological parents" was expressible: the second, <i>a dead
+    /// character does not later act</i>, is not a statement about two predicates at all — it is a
+    /// statement about two predicates <i>in an order</i>. Without the constraint, "dead" against
+    /// "acted" fires on every character who dies on the page, because a life that ends mid-book is
+    /// the normal shape of a story rather than a contradiction. That axiom would have been a
+    /// false-positive generator, which is precisely the failure this table's own remarks warn
+    /// against ("a rule that was <i>nearly</i> right applied corpus-wide"). With it, the axiom asks
+    /// only the question actually worth asking: the character was established dead <i>here</i>, and
+    /// the book has them acting <i>later</i>, with nothing in between reconciling it.</para>
+    ///
+    /// <para>A temporal axiom must have <see cref="Symmetric"/> false — swapping the sides inverts
+    /// the claim it makes. A pair where either claim lacks a beat anchor is skipped rather than
+    /// guessed at: unanchored claims cannot be ordered, and the adjudicator already refuses to rule
+    /// on a pair with no prose behind it.</para>
+    /// </summary>
+    public string? TemporalOrder { get; set; }
+
+    /// <summary>The one recognized <see cref="TemporalOrder"/> value.</summary>
+    public const string TemporalBAfterA = "b_after_a";
 
     /// <summary>Where the axiom came from, in increasing specificity:
     /// <list type="bullet">
