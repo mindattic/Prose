@@ -634,6 +634,55 @@ there is no live generation entry point outside `ProseWriterRouter` any more.
 - Subplot-thread health was NOT added as a new instrument: `prose --storyscope-audit` already
   covers it (`subplot_not_executed` carrier-beat check + the single-track/interleave check).
 
+### Story Ledger instruments (2026-09-02→04) — full methodology in [docs/LEDGER.md](docs/LEDGER.md)
+
+These shipped across Story Ledger Phases 0–5 and were absent from this file entirely until
+2026-09-04. **Everything here is Hub-routed; nothing touches the DB directly.**
+
+- `prose --tuned-read --slug <s> [--dry] [--no-extract] [--max-candidates N] [--json]` — the
+  cross-predicate contradiction pass. **`--dry` first, always**: it runs the whole deterministic
+  half for free and reports candidate counts plus *why* an axiom was silent. A real run bills one
+  Sonnet adjudication per uncached candidate; verdicts cache on
+  `(claim pair, axiom, both anchor TextHashes)`. FULL tier of `--audit-book`.
+- `prose --continuity anchor-beats [--slug <s>] [--dry]` — **run this before trusting any
+  tuned-read result.** Deterministic, zero LLM cost: recovers `SourceBeatId` by matching each
+  claim's own snippet against its chapter's beats, using the same containment test the
+  quote-grounding gate uses. Fails closed on an ambiguous match. Corpus coverage was **24/24,758
+  (0.1%)** before it and 90.7% of prose claims after — an unanchored claim cannot be adjudicated,
+  so the instrument was returning "clean" where it meant "could not look".
+- `prose --continuity predicates [--slug <s>] [--min N] [--limit N] [--all]` and
+  `--co-occur [--family <f>]` — the ledger's real predicate vocabulary, grouped into the families
+  an axiom's `stem*` pattern addresses, and which families actually co-occur on one entity.
+  **Author every new axiom from this, never from a guess.**
+- `prose --continuity stats` — now also reports **beat-anchor coverage** and says outright when
+  zero anchors make a clean result meaningless.
+- `prose --continuity search --text "<s>" [--entity <id>] [--predicate-prefix <p>] [--live]` —
+  free-text over EntityName, Predicate AND Object. The only way to find a fact hidden in an object
+  string (`second_sword_possession → "…made by father"` matches no `father_*` prefix).
+- `prose --continuity reject --claim <uid> [--note]` / `--entity <id> --predicate-prefix <p> --yes`
+  — reject one claim, several, or a whole predicate family. The path for "this fact is fabricated
+  and has no counterpart to lose to" (resolve needs a pair; reset-book takes the whole book).
+  Reversible — system-versioned.
+- `prose --exclusion-rules [--all] [--json] [--test …] [--propose …] [--approve --id <n>]
+  [--reject --id <n>]` — the axiom table. A `proposed` axiom generates nothing until approved.
+  `--test` checks a candidate pattern against a hypothetical claim pair for free, which is the
+  cheapest guard the design has.
+- `prose --provenance-audit [--slug <s>] --universe <u>` / `prose --provenance --grade <g>
+  --entity <id>` — "everything in canon no human ever approved", and the promotion path.
+- `prose --fact-ledger-refresh --slug <s>` — re-run only the same-predicate check (free); the
+  alternative was the cost-gated `--audit-book --deep` bundle.
+- `prose --chapters --slug <s>` and `read_beats(groupByChapter:)` — chapter-grouped read path
+  (Phase 1). Both read payloads now expose `eventSummary`; **`Beat.Description` is authorial
+  intent with no binding to the prose and must not be read as a summary.**
+- `prose --description-drift` — surfaces descriptions that drifted from the text they describe
+  (`DescriptionHash`, Phase 1). Report-only; never auto-rewrites.
+- `prose --character-gear --character <x> [--search "<s>"] [--remove --id <n>]`,
+  `prose --entity-tags --entity <x> [--add "a,b"] [--remove "a,b"]`,
+  `prose --entity-relationships --search "<s>" | --character <x> --remove --id <n>`,
+  `prose --orphan-beats [--limit 0] [--delete --confirm <exactCount> --archive <path>]` — surgical
+  single-row tools built when a purge had no sanctioned path. `--orphan-beats` and
+  `--fix-bad-name-matches` are **corpus-wide, not scoped**.
+
 ### Narrative Mode — Original vs Retelling vs Historical (added 2026-08-18)
 
 `Nodes.NarrativeMode` classifies how a book's characters relate to authorial invention —
@@ -714,6 +763,19 @@ read start-to-finish, flagging only where their own engagement died and whether 
 1/2/4/5-report are measurements, not votes — not vote-gated. Everything is hash-cached:
 unchanged content re-runs free.
 
+**Correctness/continuity-of-fact QA is the STORY LEDGER — canonical methodology:
+[docs/LEDGER.md](docs/LEDGER.md), the third peer of LOGIC.md and READER-QA.md.** Two detectors
+over `ContinuityClaims`: (1) same predicate/different object (`ContinuityService.Upsert`,
+numeric-safe, volatile predicates exempt) → `FACT-LEDGER ` findings; (2) **different predicate,
+incompatible meaning** — the exclusion ontology, `prose --tuned-read` → `TUNEDREAD ` findings.
+Detector 2 exists because detector 1 could not *represent* the defect that motivated the whole
+programme (a fabricated `father` against a constructed `origin` are different predicates, so they
+never collide). **Before reading a clean tuned-read result as clean, check beat-anchor coverage**
+(`prose --continuity stats`): an unanchored claim cannot be adjudicated at all, and corpus
+coverage was 0.1% until `prose --continuity anchor-beats` (deterministic, free) took prose claims
+to 90.7% on 2026-09-04. Author axioms from `prose --continuity predicates [--co-occur]`, never
+from a guess — a rule that silently matches nothing looks exactly like no rule.
+
 **The 0–100 score gates are RETIRED (author ruling 2026-08-03: "remove scores; they mean
 nothing").** The ≥82/≥85 gates no longer exist; dashboards show open findings instead of
 `Node.Score`; nothing writes new scores except an explicitly requested legacy panel run.
@@ -721,8 +783,10 @@ nothing").** The ≥82/≥85 gates no longer exist; dashboards show open finding
 single "clean at BLOCKER" snapshot** — a fixed number of sweep rounds was never a real stopping
 criterion (five rounds run, a sixth independent round still finding something new was the
 observed failure this replaces). A book is complete only when ALL of: (1) zero open
-BLOCKER/MODERATE logic-sweep findings, (2) zero open `CONTRADICTED` fact-ledger claims
-(`ContinuityService`, numeric-safe), (3) two consecutive independent sweep rounds found zero new
+BLOCKER/MODERATE logic-sweep findings, (2) zero open `CONTRADICTED` Story-Ledger claims — widened
+2026-09-03 to read the claim rows, the `FACT-LEDGER ` findings AND the `TUNEDREAD ` findings, and
+a book whose ledger was **never populated now FAILS** rather than passing silently, (3) two
+consecutive independent sweep rounds found zero new
 findings — check via `prose --logic-sweep --slug <slug> --until-dry`, not a manual round count,
 (4) every fix since the last dry round passed its own automatic blast-radius re-check
 (`BlastRadiusService` + `LogicSweepService.RunNarrowAsync`, fires on every beat save), (5) zero

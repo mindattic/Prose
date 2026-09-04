@@ -6,9 +6,11 @@ adopted: 2026-08-03
 
 # Reader-Proxy QA {#SS-RQA}
 
-The default reader-facing quality instrument for every book. Peer of
-[docs/LOGIC.md](LOGIC.md): the Logic Sweep owns continuity/causality QA; Reader-Proxy
-QA owns craft/comprehension/reader-experience QA. **It emits no scores, ever.**
+The default reader-facing quality instrument for every book. One of three peer methodologies:
+the Logic Sweep ([docs/LOGIC.md](LOGIC.md)) owns continuity/causality QA; the Story Ledger
+([docs/LEDGER.md](LEDGER.md)) owns the record of what is true and the detection of two facts
+that cannot both be; Reader-Proxy QA owns craft/comprehension/reader-experience QA.
+**It emits no scores, ever.**
 
 ## 1. Why the score panels were retired {#SS-RQA-1}
 

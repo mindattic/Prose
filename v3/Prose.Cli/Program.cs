@@ -21,6 +21,32 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 // This project is the non-commercial indie use case the Community tier exists for.
 QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 
+// Documentation generator, deliberately ABOVE the Hub gate: it reads this file's own dispatch
+// chain and writes a markdown reference. It touches no database and needs no running Hub, and
+// requiring one would make the CLI reference unbuildable in exactly the situation where you most
+// want to read it. Mirrors `Prose.Mcp -- --export-tools`, which closes the asymmetry
+// docs/ARCHITECTURE.md §8 recorded as an open gap.
+//   prose --export-commands [<output-path>] [--source <path-to-Program.cs>]
+if (args.Contains("--export-commands"))
+{
+    var ci = Array.IndexOf(args, "--export-commands");
+    var outPath = ci + 1 < args.Length && !args[ci + 1].StartsWith("--") ? args[ci + 1] : "docs/CLI_COMMANDS.md";
+    var si = Array.IndexOf(args, "--source");
+    var srcPath = si >= 0 && si + 1 < args.Length ? args[si + 1] : "v3/Prose.Cli/Program.cs";
+    if (!File.Exists(srcPath))
+    {
+        // Fail loudly rather than emitting an empty reference: a silently-blank doc is worse
+        // than no doc, because it reads as "the CLI has no commands".
+        Console.Error.WriteLine($"[export-commands] Source not found: {srcPath}\n" +
+                                "  Run from the repo root, or pass --source <path-to-Program.cs>.");
+        Environment.ExitCode = 2;
+        return;
+    }
+    var count = CommandDocGenerator.Generate(srcPath, outPath);
+    Console.WriteLine($"[export-commands] Wrote {count} command(s) to {outPath}");
+    return;
+}
+
 // Fail-closed Hub dependency (Phase 2, explicit user decision): "the hub is running, Prose is
 // working; hub goes down, Prose is down." Every command gates on the Hub being reachable and
 // healthy before anything else runs — no silent fallback to the old direct-in-process behavior.

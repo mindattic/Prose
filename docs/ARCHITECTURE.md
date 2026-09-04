@@ -84,11 +84,13 @@ table lives in **CLAUDE.md's "Context enrichment chain" section** (corrected 202
 duplicate that table here, it will drift — this file points to it as the source of truth for that
 specific mechanism).
 
-One confirmed dead bypass exists: `SceneGenerationService` (`v3/Prose.Core/Services/
-SceneGenerationService.cs`) hand-rolls its own generation path around `BeatGeneratorService.
-GenerateBeatAsync` directly, skipping the entire enrichment chain. DI-registered, has its own
-test, zero call sites in `Cli`/`Mcp`/`Hub` — leftover from the deleted Blazor UI. A landmine if a
-future command gets wired to it instead of `ProseWriterRouter`; scheduled for deletion.
+**No generation bypass exists any more (corrected 2026-09-04; this section described one as live
+and "scheduled for deletion" for months after it was gone).** The last one,
+`SceneGenerationService`, hand-rolled its own path around `BeatGeneratorService.GenerateBeatAsync`
+and skipped the entire enrichment chain; it was **deleted 2026-08-23** as confirmed dead code —
+verified again here: no such file, and the sole surviving reference is a historical note in
+`BeatExtractionService.cs`'s header. `StoryDirectorService` and `Write.razor` went earlier, with
+the Blazor UI (`ed22bd4f6`). `ProseWriterRouter` is the only live generation entry point.
 
 ## 5. The WriteGate — the one chokepoint for writes
 
@@ -164,7 +166,8 @@ access to fix via `set_canon_section`, not a raw SQL workaround.
 | Universal prose craft — Tier 1 | `docs/CRAFT.md` |
 | Per-universe craft — Tier 2 | `docs/GLMZ.md` / `docs/SCRY.md` |
 | Character Doctrine (topic-tier craft law) | `docs/CHARACTER.md` |
-| Logic-sweep / QA methodology | `docs/LOGIC.md`, `docs/READER-QA.md` |
+| Logic-sweep / QA methodology | `docs/LOGIC.md`, `docs/READER-QA.md`, `docs/LEDGER.md` |
+| Story Ledger — the record of what is true, and cross-predicate contradiction detection | `docs/LEDGER.md` (added 2026-09-04, third peer of LOGIC/READER-QA) |
 | MCP tool reference (auto-generated, current) | `docs/MCP_TOOLS.md` (309 tools) |
-| CLI command reference | **Does not exist yet** — 257 command files, no generated reference; tracked as a documentation gap |
+| CLI command reference (auto-generated, current) | `docs/CLI_COMMANDS.md` (274 commands) — **gap closed 2026-09-04.** `CommandDocGenerator` parses the dispatch chain in `Program.cs` rather than reflecting over attributes, because CLI handlers carry none; refresh with `dotnet run --project v3/Prose.Cli -- --export-commands docs/CLI_COMMANDS.md` |
 | Story/feature status | `docs/USER_STORIES.md` (stale ~1 week as of 2026-08-23 — missing this week's write-gate/architecture work) |

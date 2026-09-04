@@ -3,7 +3,7 @@ codex: 1
 project: Prose
 layer: methodology
 status: locked
-updated: 2026-08-29
+updated: 2026-09-04
 ---
 
 # THE LOGIC SWEEP — canonical QA methodology {#SS-LOGIC}
@@ -69,7 +69,10 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
    components added to 28 while it said thirty-one.)
 
    **Hard numeric facts (ages, tenures, career/duration lengths) have a dedicated ledger,
-   separate from this per-sweep arithmetic check (2026-08-14).** `ContinuityService` stores each
+   separate from this per-sweep arithmetic check (2026-08-14).** This is the **Story Ledger** —
+   canonical methodology: **[docs/LEDGER.md](LEDGER.md)**, the third peer of this doc and
+   docs/READER-QA.md. Everything below describes only its FIRST detector; read LEDGER.md before
+   relying on it for anything wider. `ContinuityService` stores each fact
    as an atomic (entity, predicate, object) claim and auto-flags a `CONTRADICTED` pair when the
    same predicate gets a genuinely different value later — but numeric-aware, not bare string
    equality: "fifty" and "50" collapse into the same claim; only an actual arithmetic
@@ -84,6 +87,18 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
    `FACT-LEDGER` findings; the extraction pass (`prose --continuity extract --node <slug>`) must
    be run at least once per book to populate it — an empty ledger reads as `[not-extracted]`, not
    silently clean.
+
+   **This detector is a numeric drift detector, and this section used to imply it was general
+   (corrected 2026-09-04).** It fires only on SAME predicate, different object. The defect that
+   forced the Story Ledger programme was the other shape — *different predicate, incompatible
+   meaning* ("Kyle → `father` → a swordsmith" against "Kyle → `origin` → constructed, no prior
+   life") — which those two rows can never collide under, so it was undetectable here **by
+   construction, not by bad luck**. The second detector, the exclusion ontology, is what makes
+   that shape expressible: `prose --tuned-read` (docs/LEDGER.md §3.2), filing `TUNEDREAD `
+   findings. **Its ceiling is beat-anchor coverage** — an unanchored claim cannot be adjudicated
+   at all, so run `prose --continuity anchor-beats` (deterministic, free) and check the coverage
+   line in `prose --continuity stats` before reading a clean tuned-read result as clean
+   (docs/LEDGER.md §5).
 5. **Orphan references.** Nothing enabled references removed/disabled/merged content — hunt
    with greps for distinctive phrases from every disabled beat. Highest-risk after structural
    edits. Also inverse-orphans: metadata stranded on disabled beats (chapter-start flags,
@@ -199,7 +214,14 @@ old ones. A book is publish-ready only when ALL FIVE of the following hold simul
 this replaces the older, looser "logic sweep clean at BLOCKER" language everywhere it appears:
 
 1. Zero open BLOCKER/MODERATE logic-sweep findings (§3–4, unchanged).
-2. Zero open `CONTRADICTED` `ContinuityClaims` for the book (the fact ledger, §3.4 above).
+2. Zero open `CONTRADICTED` claims for the book in the **Story Ledger**
+   ([docs/LEDGER.md](LEDGER.md); §3.4 above). Widened 2026-09-03 — the gate reads all three faces:
+   the `CONTRADICTED` claim rows themselves (volatile predicates excluded, §3.4), the
+   same-predicate `FACT-LEDGER ` findings, and the cross-predicate `TUNEDREAD ` findings. **A book
+   whose ledger was never populated FAILS this condition rather than passing silently**: it has
+   not been checked clean, it has not been checked. Before trusting a pass, confirm the
+   instrument could have found something — see [docs/LEDGER.md §5](LEDGER.md#SS-LEDGER-5) on
+   beat-anchor coverage.
 3. **Two consecutive independent sweep rounds found zero NEW findings** — convergence, not a
    fixed round count. `prose --logic-sweep --slug <slug> --until-dry` runs one round of this
    campaign and reports whether to keep going or stop; state persists in
@@ -229,7 +251,7 @@ the reader learns) — this engine's Beat + `Beat.Description` **is** the scene 
 the outline itself (see the Bible→Outline refactor). Mystery/thriller writers keep day-by-day
 calendars so alibis and travel times arithmetic out — dimension 3 (Timeline) is that calendar.
 Series bibles are LOOKUP TABLES, not lore essays (eye colors, wound history, who-knows-what as of
-which chapter) — `ContinuityClaims` + the wound ledger are that table. At scale, authors stop
+which chapter) — the Story Ledger ([docs/LEDGER.md](LEDGER.md)) + the wound ledger are that table. At scale, authors stop
 trusting themselves and hire a continuity editor (Sanderson) or lean on superfan encyclopedists
 (Martin) — this engine's equivalent is the fact ledger + Trinity reconciliation + this whole
 sweep. Every dimension in §3, the fact ledger in §3.4, and dimension 6's outline-agreement check
