@@ -80,6 +80,11 @@ You are judging ONE question about a story's internal consistency, and nothing e
 A story ledger recorded several values for the SAME named fact about the SAME entity. You are
 shown each value and the prose it was read from. Decide whether they genuinely CONTRADICT.
 
+The prose may refer to the entity by a callsign or nickname rather than the name in the ledger.
+If an ALSO CALLED line is given, those names are the SAME PERSON — a passage that assigns
+something to "Stash" is assigning it to Jude Adeyemi. Never treat a different name for the same
+entity as evidence the fact belongs to somebody else.
+
 Answer NO (not a contradiction) when:
 - They are COMPLEMENTARY — different partial descriptions of one thing that fit together
   ("four-armed combat specialist" and "quadrupedal with four arms"; "red hair in a loose braid"
@@ -158,7 +163,8 @@ NO is a correct and common answer. Most of what you are shown will be complement
                 continue;
             }
 
-            var cacheKey = ComputeCacheKey(distinct, anchors);
+            var aliases = await LoadAliasesAsync(db, g.EntityId, g.EntityName, ct);
+            var cacheKey = ComputeCacheKey(distinct, anchors, aliases);
             var cached = await db.TunedReadAdjudications.AsNoTracking()
                 .FirstOrDefaultAsync(a => a.CacheKey == cacheKey, ct);
 
@@ -166,7 +172,7 @@ NO is a correct and common answer. Most of what you are shown will be complement
             if (cached != null) { verdict = cached; cacheHits++; }
             else
             {
-                verdict = await AdjudicateAsync(g, distinct, anchors, beatOrder, book.Slug, cacheKey, ct);
+                verdict = await AdjudicateAsync(g, distinct, anchors, beatOrder, book.Slug, cacheKey, aliases, ct);
                 adjudicated++;
                 db.TunedReadAdjudications.Add(verdict);
                 try { await db.SaveChangesAsync(ct); }
@@ -212,9 +218,46 @@ NO is a correct and common answer. Most of what you are shown will be complement
             conflicting, notes);
     }
 
+    /// <summary>
+    /// Every name the prose might use for this entity: its own, plus its character aliases.
+    ///
+    /// <para><b>Without this the adjudicator invents contradictions.</b> Found live 2026-09-04 on
+    /// the first finding triaged: the ledger records <c>Jude Adeyemi → role_on_crew → "gear
+    /// knowledge"</c> and the prose says "Stash knew the gear" — so the model, shown only the
+    /// formal name, concluded the prose assigned that role to somebody else and filed a High
+    /// finding. The entity is <c>Dr. Jude "Stash" Adeyemi</c>; claim and prose agree completely.
+    /// In GLMZ most of the cast is referred to by callsign (Pixel, Shroud, Sift, Boost, Doc
+    /// Stash), so an adjudicator that cannot connect the two names is wrong about a whole class
+    /// of entity rather than an unlucky one.</para>
+    /// </summary>
+    private static async Task<List<string>> LoadAliasesAsync(
+        ProseDbContext db, string entityId, string entityName, CancellationToken ct)
+    {
+        if (!Guid.TryParse(entityId, out var id)) return [];
+        var aliases = await db.CharacterAliases.AsNoTracking()
+            .Where(a => a.CharacterId == id)
+            .OrderBy(a => a.Position)
+            .Select(a => a.Value)
+            .ToListAsync(ct);
+
+        // The canonical Entity.Name too: a claim's EntityName is a copy taken at extraction time
+        // and can be a stale or shortened form of what the entity is actually called now.
+        var canonical = await db.Entities.IgnoreQueryFilters().AsNoTracking()
+            .Where(e => e.Id == id).Select(e => e.Name).FirstOrDefaultAsync(ct);
+        if (!string.IsNullOrWhiteSpace(canonical)) aliases.Add(canonical);
+
+        return aliases
+            .Where(a => !string.IsNullOrWhiteSpace(a)
+                     && !string.Equals(a, entityName, StringComparison.OrdinalIgnoreCase))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .OrderBy(a => a, StringComparer.Ordinal)   // stable, so the cache key is stable
+            .ToList();
+    }
+
     private async Task<TunedReadAdjudication> AdjudicateAsync(
         ContradictionGroup g, List<ContinuityClaim> distinct, List<Beat?> anchors,
-        List<Beat> beatOrder, string? bookSlug, string cacheKey, CancellationToken ct)
+        List<Beat> beatOrder, string? bookSlug, string cacheKey, List<string> aliases,
+        CancellationToken ct)
     {
         var row = new TunedReadAdjudication
         {
@@ -227,6 +270,8 @@ NO is a correct and common answer. Most of what you are shown will be complement
 
         var user = new StringBuilder();
         user.AppendLine($"ENTITY: {g.EntityName}");
+        if (aliases.Count > 0)
+            user.AppendLine($"ALSO CALLED (the prose usually uses these): {string.Join(", ", aliases)}");
         user.AppendLine($"FACT: {g.Predicate}");
         user.AppendLine();
         user.AppendLine("VALUES RECORDED FOR THIS FACT:");
@@ -334,10 +379,21 @@ NO is a correct and common answer. Most of what you are shown will be complement
                         + "prose to satisfy the ledger.");
     }
 
-    private static string ComputeCacheKey(List<ContinuityClaim> claims, List<Beat?> anchors)
+    /// <summary>
+    /// Keyed on the claim uids, every anchor beat's CURRENT text, and the entity's alias set.
+    ///
+    /// <para>Aliases belong in the key for the same reason the anchor text does: they change what
+    /// the model was asked, so a verdict reached without them is stale. Including them rather than
+    /// bumping a blanket prompt-version constant is deliberate and saves real money — an entity
+    /// with no aliases produces a byte-identical key, so its cached verdict survives and only the
+    /// entities the alias fix actually affects get re-billed.</para>
+    /// </summary>
+    private static string ComputeCacheKey(
+        List<ContinuityClaim> claims, List<Beat?> anchors, List<string> aliases)
     {
         var raw = string.Join("|", claims.Select(c => c.ClaimUid))
-                + "||" + string.Join("|", anchors.Select(a => a?.TextHash ?? "-"));
+                + "||" + string.Join("|", anchors.Select(a => a?.TextHash ?? "-"))
+                + (aliases.Count > 0 ? "||aka:" + string.Join(",", aliases) : "");
         return Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(raw))).ToLowerInvariant()[..40];
     }
 
