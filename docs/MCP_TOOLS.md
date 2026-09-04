@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**297 tools** across **51 tool families.**
+**300 tools** across **52 tool families.**
 
 ## Families
 
@@ -39,6 +39,7 @@
 | [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 4 |
+| [Entity Tag](#entity-tag) | 3 |
 | [Findings](#findings) | 6 |
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
 | [Glossary](#glossary) | 4 |
@@ -992,6 +993,30 @@ Run the entity context scanner on a text snippet and return the formatted contex
 
 - `slug` (string, required) — Node slug — context is keyed per node
 - `text` (string, required) — Text to scan (beat goal, prose excerpt, or entity name)
+
+## Entity Tag
+
+<sub>`EntityTagTools`</sub>
+
+### `add_entity_tags`
+
+Add tags to an entity, creating any tag vocabulary row that does not exist yet. Comma-separated. Tags already present are skipped.
+
+- `entity` (string, required) — Entity GUID or exact name.
+- `tagNames` (string, required) — Comma-separated tag names to add.
+
+### `list_entity_tags`
+
+List an entity's tags. Pass an entity GUID or its exact name.
+
+- `entity` (string, required) — Entity GUID or exact name.
+
+### `remove_entity_tags`
+
+REMOVE tags from an entity — the only path that can take a tag off, since create_character's tags parameter merges and never deletes. Comma-separated, case-insensitive. Removing a tag the entity does not carry is a no-op, not an error. Only the entity's link is removed; the shared tag vocabulary row is left intact for every other entity using it.
+
+- `entity` (string, required) — Entity GUID or exact name.
+- `tagNames` (string, required) — Comma-separated tag names to remove, e.g. 'vigl,battle-rig'.
 
 ## Findings
 

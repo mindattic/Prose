@@ -22,8 +22,22 @@ namespace Prose.Core.Services;
 /// </summary>
 public static class EntityMentionScanner
 {
+    /// <summary>
+    /// Entity types that must never be tagging anchors.
+    ///
+    /// <para><b><c>quote</c> added 2026-09-03.</b> A quote row is stored as an Entity whose
+    /// <c>Name</c> is its SPEAKER's name — "Kressida Haun" has 46 of them
+    /// (<c>kressida-haun-q002</c>, <c>q005</c>, …). Left in the candidate pool, every quoted
+    /// character's own name is claimed by dozens of entities at once, so the ambiguity rule below
+    /// drops the name entirely and the character can never be tagged — and an older scanner
+    /// without that rule picked one arbitrarily, which is how TRUCE beat #16174 ended up tagging a
+    /// QUOTE row as the character. It also made <c>--backfill-character-relationships</c> report
+    /// "Kressida Haun matches 46 entities in the same universe", which reads like a duplicate-data
+    /// disaster and is really just this. A quote is a record ABOUT a speaker, never a thing prose
+    /// refers to by name.</para>
+    /// </summary>
     private static readonly HashSet<string> ExcludedTypes =
-        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat" };
+        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat", "quote" };
 
     // A bare article/connective is never a valid standalone tagging anchor, no matter which source
     // offers it as a candidate: given-name/surname derivation skips these when splitting a full name

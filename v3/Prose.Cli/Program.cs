@@ -512,6 +512,19 @@ if (args.Contains("--entity-relationships"))
     return;
 }
 
+// CLI mode: an entity's tags — list / add / REMOVE. Added 2026-09-03: tags could be added and
+// never taken away (create_character's `tags` MERGES, like aliases), so a wrong tag was permanent,
+// and a stale book tag can pull a character into that book's context loads. NOT the same as
+// --tag-entities, which rewrites inline <entity guid="…"> markup inside beat text.
+//   prose --entity-tags --entity <guid-or-name> [--json]
+//   prose --entity-tags --entity <guid-or-name> --remove "tag1,tag2"
+//   prose --entity-tags --entity <guid-or-name> --add "tag1,tag2"
+if (args.Contains("--entity-tags"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("EntityTagsCli", args);
+    return;
+}
+
 // CLI mode: surgical CRUD over a character's signature-gear / pharmaceuticals list. Added
 // 2026-09-03 — there was no sanctioned way to remove ONE gear entry; create_character
 // round-trips the whole record through the delete-all-and-reinsert mapper, so correcting a

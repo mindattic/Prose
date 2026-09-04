@@ -1231,6 +1231,9 @@ public static class ServiceCollectionExtensions
         // Surgical single-row edits to a character's gear list — shared by
         // prose --character-gear and the *_character_gear MCP tools (2026-09-03).
         services.AddSingleton<CharacterGearService>();
+        // Entity tag add/REMOVE — the only path that can take a tag off (create_character's
+        // `tags` merges and never deletes). Shared by prose --entity-tags and the MCP tools.
+        services.AddSingleton<EntityTagService>();
 
         return services;
     }
