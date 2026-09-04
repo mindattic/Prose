@@ -1229,6 +1229,10 @@ public static class ServiceCollectionExtensions
         // that instrument's precondition, not an optional companion: an unanchored claim can
         // never be adjudicated (see ClaimBeatAnchorService's remarks).
         services.AddSingleton<Prose.Core.Services.Audit.ClaimBeatAnchorService>();
+        // The same-predicate half of contradiction detection: candidates have always been
+        // generated and never judged. Depends on the anchor backfill above having run — an
+        // unanchored claim has no prose to adjudicate against.
+        services.AddSingleton<Prose.Core.Services.Audit.ClaimGroupAdjudicationService>();
         // Story Ledger Phase 3 — the provenance grade across Entities / CharacterRelationships /
         // ContinuityClaims, and the audit that answers "what is in canon nobody approved?".
         services.AddSingleton<Prose.Core.Services.Audit.ProvenanceService>();

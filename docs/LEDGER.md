@@ -89,6 +89,24 @@ existing rows stating a verdict the engine has already repudiated.
 and moves the unsupported ones back to `NEW` — deterministic, free, reversible, and the claims
 themselves are untouched.
 
+**What survives the exemptions still is not a defect list.** Reading a sample showed it is
+dominated by **complementary facets** (`augmentation_type`: "four-armed combat specialist" against
+"quadrupedal with four arms") and **temporal states** (`beacon_status`: "live" against "dormant
+for 3 months, recovered"). Telling those from a genuine conflict is a judgement about the story,
+and no string rule loose enough to merge them is tight enough to be safe — a rule that merges
+complementary values is a rule that hides the next fabricated fact. So the discrimination is
+bought rather than guessed: **`prose --ledger-adjudicate --slug <s>`** puts one narrow Sonnet call
+per group in front of the prose each value was read from, behind the same quote gate as everything
+else here. Compatible groups are cleared back to `NEW`; real conflicts keep their status and file a
+`LEDGER-CONFLICT ` finding. **~$0.03 per group**, cached on the claim uids plus every anchor beat's
+current `TextHash`, so an interrupted run resumes free. Only affordable at all because
+[§5](#SS-LEDGER-5)'s backfill took anchor coverage to 99.1% — an unanchored claim has no prose to
+show, and the question cannot be asked.
+
+Measured on BCODA's first 120 groups: **11 real conflicts** — including a character's handedness
+recorded as both right and left, one fatal wound placed in two different parts of the body in
+consecutive beats, and a contract count stated as both 43 and 140 over the same eleven years.
+
 **The paraphrase threshold is deliberately severe** (subsumption, or ≥0.75 token overlap). The
 asymmetry is the reason: a false "same assertion" hides a real contradiction, while a false
 contradiction merely costs a triage decision. Complementary facets — "red hair in loose braid" vs

@@ -13,7 +13,7 @@
 > routes through the cost gate; everything else is deterministic or read-only.
 > Most commands require a `--universe <slug>` scope.
 
-**274 commands.** 15 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**275 commands.** 16 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -1274,6 +1274,16 @@ prose --kdp-status
 Show KDP publication status: Published / Outdated / WorkInProgress for all tracked nodes. Outdated = published but beats edited since last KDP push.
 
 <sub>handler `KdpStatusCli`</sub>
+
+### `--ledger-adjudicate`
+
+```
+prose --ledger-adjudicate --slug <slug> [--dry] [--max N] [--json]
+```
+
+judges the fact ledger's SAME-PREDICATE contradiction groups against the prose they came from. The deterministic exemptions (volatile / set-valued / paraphrase) already removed everything that was never a contradiction; what reaches here is dominated by complementary facets and temporal states, which need the prose to tell apart from a real conflict. Writes claim STATUS only, never prose (docs/LOGIC.md §4). Cost-gated: one Sonnet call per uncached group, cached on the claim uids plus every anchor beat's current TextHash.
+
+<sub>handler `LedgerAdjudicateCli` · **cost-gated (spends LLM money)**</sub>
 
 ### `--legion`
 

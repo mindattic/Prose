@@ -600,6 +600,19 @@ if (args.Contains("--tuned-read"))
     return;
 }
 
+// CLI mode: judges the fact ledger's SAME-PREDICATE contradiction groups against the prose they
+// came from. The deterministic exemptions (volatile / set-valued / paraphrase) already removed
+// everything that was never a contradiction; what reaches here is dominated by complementary
+// facets and temporal states, which need the prose to tell apart from a real conflict. Writes
+// claim STATUS only, never prose (docs/LOGIC.md §4). Cost-gated: one Sonnet call per uncached
+// group, cached on the claim uids plus every anchor beat's current TextHash.
+//   prose --ledger-adjudicate --slug <slug> [--dry] [--max N] [--json]
+if (args.Contains("--ledger-adjudicate"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("LedgerAdjudicateCli", "--ledger-adjudicate", args);
+    return;
+}
+
 // CLI mode: the Story Ledger's provenance surface (Phase 3) — "what is in canon that no human
 // ever approved?", plus the explicit human act that promotes one candidate row to authored.
 // Deterministic and free; report-only for the audit (docs/LOGIC.md §4). Universe-scoped

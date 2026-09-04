@@ -541,14 +541,21 @@ false is a correct, common answer.
 
     /// <summary>Carrier band: <see cref="CarrierRadius"/> beats either side of the anchor, full
     /// verbatim prose, entity tags stripped so a quote can match literally.</summary>
-    private static string BuildCarrier(Beat? anchor, List<Beat> beatOrder)
+    /// <param name="radius">Beats either side of the anchor. Defaults to
+    /// <see cref="CarrierRadius"/>. <c>ClaimGroupAdjudicationService</c> passes a much smaller
+    /// value: a same-predicate group asks a narrower question than a cross-predicate axiom
+    /// (are these two values of ONE named fact compatible?) and does not need the surrounding
+    /// scene to answer it, so paying for ±10 beats per anchor there would be spending on prose
+    /// nobody reads.</param>
+    internal static string BuildCarrier(Beat? anchor, List<Beat> beatOrder, int? radius = null)
     {
         if (anchor == null) return "";
         var idx = beatOrder.FindIndex(b => b.Id == anchor.Id);
         if (idx < 0) return BeatMarkup.StripEntityTags(anchor.Text ?? "");
 
-        var from = Math.Max(0, idx - CarrierRadius);
-        var to = Math.Min(beatOrder.Count - 1, idx + CarrierRadius);
+        var r = radius ?? CarrierRadius;
+        var from = Math.Max(0, idx - r);
+        var to = Math.Min(beatOrder.Count - 1, idx + r);
 
         var sb = new StringBuilder();
         for (var i = from; i <= to; i++)
