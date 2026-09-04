@@ -66,10 +66,34 @@ The load-bearing columns beyond the triple:
 ### 3.1 Same predicate, different object (`ContinuityService.Upsert`)
 
 The original mechanism. Numeric-safe: `ObjectsMatch` parses number words, so "fifty" and "50"
-collapse into one claim and only a genuine arithmetic discrepancy contradicts. **Volatile
-predicates are exempt** (`VolatilePredicates`: `location_current`, `carrying`, `mood`,
-`companions`, …) — a later different value there is the character having moved on, not the book
-contradicting itself.
+collapse into one claim and only a genuine arithmetic discrepancy contradicts. Three exemptions,
+each answering a different question about the predicate:
+
+| Exemption | Question it answers | Examples |
+|---|---|---|
+| **Volatile** (`IsVolatilePredicate`) | Does this value change as the story moves? | `location_current`, `carrying`, `mood`, `companions` |
+| **Set-valued** (`IsSetValuedPredicate`, 2026-09-04) | Can this subject have many values *at once*? | `ability`, `action*`, `knowledge*`, `possession*`, `skill`, `relationship*` |
+| **Same assertion** (`IsSameAssertion`) | Is this one fact recorded twice in different words? | "rebuilds bike" vs "rebuilt the bike" |
+
+**Cardinality is not volatility, and conflating them cost real signal.** A volatile predicate has
+one value that changes over time; a set-valued predicate has many values that are all true
+simultaneously. `action` is both; `ability` is only the second, which is why one list could not
+cover both. Measured across the 1,316 live contradiction groups in BCODA/DWIACE/VATD before the
+fix: **250 groups (950 rows) were pure cardinality** — a character with two abilities filed as a
+contradiction — and ~300 more were pure paraphrase. Corpus-wide, re-assessing the 3,776
+`CONTRADICTED` rows under the corrected rules cleared **964 of them (26%)**.
+
+**A status is written once and never revisited**, so every correction to these rules leaves the
+existing rows stating a verdict the engine has already repudiated.
+`prose --continuity reassess [--apply]` re-runs today's test over the `CONTRADICTED` population
+and moves the unsupported ones back to `NEW` — deterministic, free, reversible, and the claims
+themselves are untouched.
+
+**The paraphrase threshold is deliberately severe** (subsumption, or ≥0.75 token overlap). The
+asymmetry is the reason: a false "same assertion" hides a real contradiction, while a false
+contradiction merely costs a triage decision. Complementary facets — "red hair in loose braid" vs
+"dark red hair" — are left for a human on purpose; deciding those is an author's call about the
+story, not a string comparison.
 
 Its reach is narrow by construction, and [LOGIC.md §3.4](LOGIC.md#SS-LOGIC-3) describes it
 accurately as a **numeric drift detector**. It is not, and never was, a general identity-consistency
@@ -237,6 +261,8 @@ prose --tuned-read --slug <s> --dry                 # FREE: candidate counts + w
 prose --tuned-read --slug <s> [--max-candidates N]  # one Sonnet call per uncached candidate
 
 # — triage —
+prose --continuity reassess [--slug <s>] [--apply]   # re-judge CONTRADICTED under today's rules
+prose --continuity stale-snippets [--slug <s>] [--by-book] [--supersede --confirm <n>]
 prose --continuity search --text "<substring>" [--predicate-prefix <p>] [--live]
 prose --continuity groups --slug <s>                # N-way same-predicate groups, with ClaimUids
 prose --continuity resolve --a <uid> --b <uid> --winner A|B|custom [--object "…"]

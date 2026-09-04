@@ -57,6 +57,7 @@ public static class ContinuityCli
             "predicates"      => CmdPredicates(rest, svc),
             "anchor-beats"    => CmdAnchorBeats(rest, services).GetAwaiter().GetResult(),
             "stale-snippets"  => CmdStaleSnippets(rest, services).GetAwaiter().GetResult(),
+            "reassess"        => CmdReassess(rest, svc).GetAwaiter().GetResult(),
             "reject"          => CmdReject(rest, svc),
             "extract"         => CmdExtract(rest, services).GetAwaiter().GetResult(),
             "apply"           => CmdApply(rest, services).GetAwaiter().GetResult(),
@@ -540,6 +541,34 @@ public static class ContinuityCli
             Console.WriteLine($"      cites: \"{Clip(c.Snippet, 110)}\"");
         }
         if (r.Stale > limit) Console.WriteLine($"  … {r.Stale - limit} more (raise --limit, or use --by-book).");
+        return 0;
+    }
+
+    /// <summary>
+    /// prose --continuity reassess [--slug &lt;s&gt;] [--apply]
+    ///
+    /// <para>Re-runs today's conflict test over every CONTRADICTED claim. A status is written once
+    /// by whatever rule was live at extraction time and never revisited, so the ledger carries
+    /// verdicts from rules the engine has since repudiated — they inflate the count, fail books at
+    /// publish-readiness, and bury the real disagreements. Deterministic, free, reversible.</para>
+    /// </summary>
+    static async Task<int> CmdReassess(string[] args, ContinuityService svc)
+    {
+        var slug  = Flag(args, "--slug") ?? Flag(args, "--book");
+        var apply = args.Contains("--apply");
+
+        var r = await svc.ReassessContradictionsAsync(slug, apply, CancellationToken.None);
+
+        Console.WriteLine($"[reassess] {slug ?? "corpus-wide"} — examined {r.Examined} CONTRADICTED claim(s)." +
+                          (apply ? "" : "  (DRY RUN — pass --apply to write)"));
+        Console.WriteLine($"  still contradicted:   {r.Kept}");
+        Console.WriteLine($"  cleared:              {r.Cleared}");
+        Console.WriteLine($"    volatile/set-valued:  {r.SetValued}   (many values are correct for this predicate)");
+        Console.WriteLine($"    paraphrase/no peer:   {r.Paraphrase}");
+        Console.WriteLine($"    numeric-safe match:   {r.NumericSafe}   (\"fifty\" vs \"50\")");
+        if (!apply && r.Cleared > 0)
+            Console.WriteLine($"\n  Re-run with --apply to move {r.Cleared} claim(s) back to NEW. Reversible " +
+                              "(system-versioned); the claims themselves are untouched, only the verdict about them.");
         return 0;
     }
 

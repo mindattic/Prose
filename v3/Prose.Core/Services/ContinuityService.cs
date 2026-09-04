@@ -124,7 +124,73 @@ public class ContinuityService
     /// ESTABLISHED CANON prompt block, where feeding a stale <c>location_current</c> would
     /// actively instruct the model to put the character in the wrong place.</summary>
     public static bool IsVolatilePredicate(string? predicate) =>
-        VolatilePredicates.Contains(Normalize(predicate ?? ""));
+        VolatilePredicates.Contains(NormalizePredicateKey(predicate));
+
+    /// <summary>
+    /// Predicate name reduced to a comparison key: lower-cased, and <c>-</c>/space folded to
+    /// <c>_</c> so <c>life_status</c>, <c>life status</c> and <c>life-status</c> are one predicate.
+    ///
+    /// <para>Added 2026-09-04 — the plain <see cref="Normalize"/> these lookups used before only
+    /// lower-cased and collapsed whitespace, so a hyphenated or spaced variant silently missed the
+    /// volatile exemption entirely. <c>PredicateExclusionService.NormalizePredicate</c> has folded
+    /// separators since it shipped, for exactly this reason ("an axiom that silently misses because
+    /// of a separator would look identical to no axiom at all"); the fact ledger simply never got
+    /// the same treatment. Every entry in both lists is already underscore-form, so this only ever
+    /// ADDS matches — nothing that matched before stops matching.</para>
+    /// </summary>
+    internal static string NormalizePredicateKey(string? predicate)
+    {
+        if (string.IsNullOrWhiteSpace(predicate)) return "";
+        var t = predicate.ToLowerInvariant().Replace('-', '_').Replace(' ', '_');
+        return System.Text.RegularExpressions.Regex.Replace(t, "_+", "_").Trim('_');
+    }
+
+    /// <summary>
+    /// Predicate FAMILIES that are set-valued: one subject legitimately has many values at once,
+    /// so a second differing value is an addition to a set, not a disagreement about a fact.
+    ///
+    /// <para><b>Measured 2026-09-04, and this is a cardinality bug, not a tuning knob.</b> The
+    /// contradiction rule assumes every predicate is single-valued — one predicate, one value,
+    /// forever. Extraction does not write claims that way. A survey of the 1,316 live contradiction
+    /// groups across BCODA/DWIACE/VATD found <b>250 groups (950 claim rows)</b> that were nothing
+    /// but this: <c>Kyle → ability → "ballistic precognition"</c> against <c>Kyle → ability →
+    /// "neuretics"</c>, or <c>Pixel → action → "wired a beacon"</c> against <c>Pixel → action →
+    /// "singing"</c>. A character having two abilities is not the book contradicting itself, and
+    /// no amount of triage makes those rows into defects.</para>
+    ///
+    /// <para><b>Distinct from <see cref="VolatilePredicates"/>, which is about TIME.</b> A volatile
+    /// predicate has one value that changes as the story moves (<c>location_current</c>). A
+    /// set-valued predicate has many values that are all true simultaneously (<c>ability</c>).
+    /// <c>action</c> happens to be both; <c>ability</c> is only the latter, which is why one list
+    /// could not have covered both.</para>
+    ///
+    /// <para>Matched as an anchored prefix family (<c>action</c> covers <c>action_taken</c>,
+    /// <c>action_final</c>, <c>action_during_dark_period</c>) but never as a bare substring, for
+    /// the same reason the exclusion axioms use anchored families: a substring match would quietly
+    /// widen the exemption past what anyone approved, and an exemption that is too broad hides
+    /// real contradictions instead of merely creating noise. Deliberately conservative —
+    /// <c>weapon_type</c> and <c>occupation</c> are NOT here, because they are single-valued on
+    /// the entities that matter even though a careless reading would call them plural.</para>
+    /// </summary>
+    private static readonly HashSet<string> SetValuedPredicateFamilies = new(StringComparer.Ordinal)
+    {
+        "action", "ability", "abilities", "skill", "skills", "knowledge",
+        "possession", "possessions", "possesses", "carries", "equipment", "gear",
+        "relationship", "relationships", "interaction", "observation", "habit", "habits",
+        "capability", "capabilities", "specialization", "specializations",
+    };
+
+    /// <summary>True when the predicate belongs to a <see cref="SetValuedPredicateFamilies"/>
+    /// family — <c>ability</c>, <c>ability_neuretics</c>, <c>action_taken</c>, but never
+    /// <c>abilityish</c> or <c>reaction</c>.</summary>
+    public static bool IsSetValuedPredicate(string? predicate)
+    {
+        var n = NormalizePredicateKey(predicate);
+        if (n.Length == 0) return false;
+        if (SetValuedPredicateFamilies.Contains(n)) return true;
+        var cut = n.IndexOf('_');
+        return cut > 0 && SetValuedPredicateFamilies.Contains(n[..cut]);
+    }
 
     private static readonly Dictionary<string, int> NumberWords = new(StringComparer.OrdinalIgnoreCase)
     {
@@ -201,10 +267,61 @@ public class ContinuityService
     /// </summary>
     internal static bool IsSameAssertion(ContinuityClaim a, ContinuityClaim b)
     {
-        if (string.IsNullOrWhiteSpace(a.Snippet) || string.IsNullOrWhiteSpace(b.Snippet)) return false;
-        if (!string.Equals(a.SourceChapterId ?? "", b.SourceChapterId ?? "", StringComparison.OrdinalIgnoreCase))
-            return false;
-        return NormalizeSnippet(a.Snippet) == NormalizeSnippet(b.Snippet);
+        if (!string.IsNullOrWhiteSpace(a.Snippet) && !string.IsNullOrWhiteSpace(b.Snippet)
+            && string.Equals(a.SourceChapterId ?? "", b.SourceChapterId ?? "", StringComparison.OrdinalIgnoreCase)
+            && NormalizeSnippet(a.Snippet) == NormalizeSnippet(b.Snippet))
+            return true;
+
+        // Widened 2026-09-04. The snippet-identity rule above only ever caught re-extraction of
+        // the SAME sentence, so two different sentences wording one fact still read as a
+        // contradiction. Measured across the 1,316 live groups in BCODA/DWIACE/VATD: 296 groups
+        // (629 rows) were pure paraphrase and another 361 were partly so — "rebuilt the bike" vs
+        // "rebuilds bike", "can read events ahead of time" vs "can read events ahead of time,
+        // provides tactical advantage". Those are one assertion recorded twice.
+        return ObjectsSayTheSameThing(a.Object, b.Object);
+    }
+
+    /// <summary>
+    /// True when two object strings are the same assertion in different words: one wholly contains
+    /// the other, or their wording overlaps almost completely.
+    ///
+    /// <para><b>The threshold is deliberately severe, and the asymmetry is the reason.</b> A false
+    /// "same assertion" HIDES a real contradiction — the failure this ledger exists to prevent. A
+    /// false contradiction merely costs someone a triage decision. So this only fires on
+    /// near-identical wording (<see cref="SameAssertionOverlap"/> = 0.75), and complementary
+    /// facets are deliberately left to a human: "red hair in loose braid" against "dark red hair"
+    /// scores 0.33 and stays on the pile, as it should — deciding those is an author's call about
+    /// the story, not a string comparison.</para>
+    /// </summary>
+    internal static bool ObjectsSayTheSameThing(string? a, string? b)
+    {
+        var x = NormalizeForCompare(a);
+        var y = NormalizeForCompare(b);
+        if (x.Length == 0 || y.Length == 0) return false;
+        if (x == y) return true;
+
+        // Subsumption: one is the other plus detail. Guarded by a length floor so a two-word
+        // object is not swallowed by every longer string that happens to contain it.
+        var shorter = x.Length <= y.Length ? x : y;
+        var longer = x.Length <= y.Length ? y : x;
+        if (shorter.Length >= 12 && longer.Contains(shorter, StringComparison.Ordinal)) return true;
+
+        var ta = x.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToHashSet(StringComparer.Ordinal);
+        var tb = y.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToHashSet(StringComparer.Ordinal);
+        if (ta.Count < 2 || tb.Count < 2) return false;
+        var union = ta.Count + tb.Count - ta.Count(tb.Contains);
+        return union > 0 && (double)ta.Count(tb.Contains) / union >= SameAssertionOverlap;
+    }
+
+    private const double SameAssertionOverlap = 0.75;
+
+    /// <summary>Lower-cased, punctuation-stripped, whitespace-collapsed — so "rebuilds bike." and
+    /// "Rebuilds  bike" compare equal without a stemmer's guesswork.</summary>
+    private static string NormalizeForCompare(string? s)
+    {
+        if (string.IsNullOrWhiteSpace(s)) return "";
+        var t = System.Text.RegularExpressions.Regex.Replace(s.ToLowerInvariant(), @"[^a-z0-9 ]+", " ");
+        return System.Text.RegularExpressions.Regex.Replace(t, @"\s+", " ").Trim();
     }
 
     /// <summary>Lower-case, collapse whitespace, drop surrounding quotes and trailing sentence
@@ -290,7 +407,12 @@ public class ContinuityService
         // different value is the character having moved on, not the prose contradicting canon.
         // Skipping conflict detection here means the new claim lands as NEW rather than
         // CONTRADICTED — see VolatilePredicates for why this matters to every sequel.
-        var conflict = IsVolatilePredicate(incoming.Predicate) ? null : db.ContinuityClaims
+        // Set-valued predicates join volatile ones in skipping conflict detection entirely
+        // (2026-09-04): a second `ability` or `action` is another member of a set, and marking it
+        // CONTRADICTED asserts a disagreement that was never claimed.
+        var conflict = IsVolatilePredicate(incoming.Predicate) || IsSetValuedPredicate(incoming.Predicate)
+            ? null
+            : db.ContinuityClaims
             .Where(c => c.EntityId == incoming.EntityId
                      && c.Predicate == incoming.Predicate
                      && c.Status != "REJECTED" && c.Status != "SUPERSEDED")
@@ -429,6 +551,90 @@ public class ContinuityService
             q.Count(c => c.SourceBeatId != null),
             q.Count(c => c.SourceType == "prose"),
             q.Count(c => c.SourceType == "prose" && c.SourceBeatId != null));
+    }
+
+    /// <summary>Outcome of <see cref="ReassessContradictionsAsync"/>.</summary>
+    /// <param name="Cleared">Rows whose CONTRADICTED verdict today's rules no longer justify.</param>
+    public sealed record ReassessReport(
+        int Examined, int Cleared, int SetValued, int Paraphrase, int NumericSafe, int Kept);
+
+    /// <summary>
+    /// Re-runs today's conflict test over every claim already marked <c>CONTRADICTED</c> and
+    /// returns those the current rules would no longer mark.
+    ///
+    /// <para><b>Why a status can be wrong without anything having changed.</b> A claim's status is
+    /// written once, by whatever version of the rule was live at extraction time, and never
+    /// revisited. Three corrections have landed since most of this corpus was extracted — the
+    /// numeric-safe object comparison (2026-08-14), the volatile-predicate exemption (2026-09-01),
+    /// and the set-valued/paraphrase work (2026-09-04) — and none of them reached a single
+    /// existing row. So the ledger carries verdicts from rules the engine has already repudiated,
+    /// and they are indistinguishable from live ones: they inflate the contradiction count, they
+    /// fail books at publish-readiness gate 2, and they bury the real disagreements.</para>
+    ///
+    /// <para>Cleared rows go back to <c>NEW</c>, not <c>REJECTED</c>: the claim itself was never
+    /// judged wrong, only the verdict about it. <c>CANONICAL</c> and <c>CONFIRMED</c> are never
+    /// touched — they are not CONTRADICTED, and a human settled them.</para>
+    /// </summary>
+    /// <param name="apply">False (default) computes and reports without writing.</param>
+    public async Task<ReassessReport> ReassessContradictionsAsync(
+        string? bookSlug = null, bool apply = false, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var q = db.ContinuityClaims.Where(c => c.Status == "CONTRADICTED");
+        if (!string.IsNullOrWhiteSpace(bookSlug)) q = q.Where(c => c.BookSlug == bookSlug);
+        var suspects = await q.ToListAsync(ct);
+        if (suspects.Count == 0) return new ReassessReport(0, 0, 0, 0, 0, 0);
+
+        // Every live sibling on the same (entity, predicate) — the set the original conflict test
+        // was run against.
+        var keys = suspects.Select(c => c.EntityId).Distinct().ToList();
+        var siblings = (await db.ContinuityClaims.AsNoTracking()
+                .Where(c => keys.Contains(c.EntityId)
+                         && c.Status != "REJECTED" && c.Status != "SUPERSEDED")
+                .ToListAsync(ct))
+            .GroupBy(c => (c.EntityId, Predicate: Normalize(c.Predicate)))
+            .ToDictionary(g => g.Key, g => g.ToList());
+
+        int setValued = 0, paraphrase = 0, numericSafe = 0, kept = 0;
+        var cleared = new List<ContinuityClaim>();
+
+        foreach (var c in suspects)
+        {
+            if (IsVolatilePredicate(c.Predicate) || IsSetValuedPredicate(c.Predicate))
+            { setValued++; cleared.Add(c); continue; }
+
+            var peers = siblings.TryGetValue((c.EntityId, Normalize(c.Predicate)), out var s)
+                ? s.Where(p => p.ClaimUid != c.ClaimUid).ToList()
+                : [];
+
+            // Does ANY peer still genuinely disagree under today's rules?
+            var conflicting = peers.FirstOrDefault(p =>
+                !ObjectsMatch(c.Predicate, p.Object, c.Object) && !IsSameAssertion(p, c));
+
+            if (conflicting != null) { kept++; continue; }
+
+            if (peers.Any(p => ObjectsMatch(c.Predicate, p.Object, c.Object))) numericSafe++;
+            else paraphrase++;
+            cleared.Add(c);
+        }
+
+        if (apply && cleared.Count > 0)
+        {
+            var stamp = DateTime.UtcNow.ToString("O");
+            foreach (var c in cleared)
+            {
+                c.Status = "NEW";
+                c.ExclusionRuleId = null;
+                c.ResolutionNote =
+                    "Contradiction verdict cleared: re-assessed under the current rules "
+                    + "(numeric-safe comparison, volatile + set-valued exemptions, paraphrase "
+                    + $"detection) and no live sibling still disagrees. {stamp}";
+            }
+            await db.SaveChangesAsync(ct);
+        }
+
+        return new ReassessReport(suspects.Count, cleared.Count, setValued, paraphrase, numericSafe, kept);
     }
 
     // ── predicate vocabulary survey (2026-09-03) ────────────────────────────────
@@ -638,7 +844,11 @@ public class ContinuityService
             // (location_current, companions, ...) that legitimately differs beat to beat
             // still landed as a permanent FACT-LEDGER contradiction. Same root cause,
             // same fix, applied where it was missing.
-            keys = keys.Where(k => !IsVolatilePredicate(k.Predicate)).ToList();
+            // Set-valued keys go with them (2026-09-04): a key with several `ability` values is
+            // several abilities, and surfacing it as a contradiction group buried the real ones
+            // under 250 groups of noise in three books.
+            keys = keys.Where(k => !IsVolatilePredicate(k.Predicate) && !IsSetValuedPredicate(k.Predicate))
+                .ToList();
 
         if (!string.IsNullOrEmpty(bookSlug))
         {
@@ -662,7 +872,18 @@ public class ContinuityService
                 .Where(c => c.EntityId == k.EntityId && c.Predicate == k.Predicate && live.Contains(c.Status))
                 .OrderBy(c => c.FirstAssertedAt)
                 .ToList();
-            if (claims.Count >= 2)
+            // The SQL Distinct() above counts variants by exact string, so a key whose only
+            // "disagreement" is rewording still reached here (2026-09-04). Collapse the members
+            // into genuinely distinct assertions before deciding this is a group at all —
+            // otherwise the same fact recorded twice is filed as a contradiction, which is what
+            // put ~300 pure-paraphrase groups in front of a human across three books.
+            var distinct = new List<ContinuityClaim>();
+            foreach (var c in claims)
+                if (!distinct.Any(d => ObjectsMatch(k.Predicate, d.Object, c.Object)
+                                    || ObjectsSayTheSameThing(d.Object, c.Object)))
+                    distinct.Add(c);
+
+            if (claims.Count >= 2 && distinct.Count >= 2)
                 groups.Add(new ContradictionGroup
                 {
                     EntityId   = k.EntityId,
