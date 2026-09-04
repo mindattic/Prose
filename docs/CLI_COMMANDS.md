@@ -13,7 +13,7 @@
 > routes through the cost gate; everything else is deterministic or read-only.
 > Most commands require a `--universe <slug>` scope.
 
-**275 commands.** 16 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**275 commands.** 15 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -559,15 +559,16 @@ prose --coordinate --slug <slug> [--json <path>] [--no-stamp] Full-coverage bibl
 
 <sub>handler `CoordinateCli`</sub>
 
-### `--cost` / `--json` / `--reset`
+### `--cost` / `--history`
 
 ```
 prose --cost              print session cost table
 prose --cost --json       emit summary as JSON
 prose --cost --reset      clear the ledger
+prose --cost --history [--command <name>] [--take N] [--json]
 ```
 
-show running token cost tally for the current process. When appended to another command (e.g. prose --write-node --slug foo --cost), the cost of that command's LLM calls is printed after the command finishes.
+show running token cost tally for the current process, or the durable per-command calibration data the cost gate estimates from. print CommandCostHistories — what each cost gate calibrates from When appended to another command (e.g. prose --write-node --slug foo --cost), the cost of that command's LLM calls is printed after the command finishes.
 
 <sub>handler `CostCli`</sub>
 
@@ -1278,12 +1279,11 @@ Show KDP publication status: Published / Outdated / WorkInProgress for all track
 ### `--ledger-adjudicate`
 
 ```
-prose --ledger-adjudicate --slug <slug> [--dry] [--max N] [--json]
+prose --ledger-adjudicate --slug <slug> [--dry] [--max N] [--entity <t>] [--predicate <t>] [--json]
 ```
 
 judges the fact ledger's SAME-PREDICATE contradiction groups against the prose they came from. The deterministic exemptions (volatile / set-valued / paraphrase) already removed everything that was never a contradiction; what reaches here is dominated by complementary facets and temporal states, which need the prose to tell apart from a real conflict. Writes claim STATUS only, never prose (docs/LOGIC.md §4). Cost-gated: one Sonnet call per uncached group, cached on the claim uids plus every anchor beat's current TextHash.
 
-<sub>handler `LedgerAdjudicateCli` · **cost-gated (spends LLM money)**</sub>
 
 ### `--legion`
 

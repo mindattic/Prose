@@ -194,7 +194,11 @@ public class QualityTools
         // MCP tool both land rows in CommandCostHistories, regardless of entry point.
         var costCommandName = "--review-node";
         var costEstimate     = await costEstimator.EstimateAsync(costCommandName);
-        var costBefore       = tokenLedger.GetSummary().TotalCost;
+
+        // Scoped, not a before/after delta on the ledger's process-wide total — that charged this
+        // review for every other LLM call billing concurrently in the same host. See
+        // LlmActionContext.BeginCostScope.
+        using var costScope  = LlmActionContext.BeginCostScope();
 
         var result = await reviewer.RunSampledReviewAsync(nodeId, effBallots, effProse < 0 ? 0 : effProse,
             skipDiagnosis: effSkip,
@@ -206,7 +210,7 @@ public class QualityTools
 
         if (!useLocal)
         {
-            var actualCost = tokenLedger.GetSummary().TotalCost - costBefore;
+            var actualCost = tokenLedger.CostForScope(costScope.Id);
             if (actualCost > 0)
                 await costEstimator.RecordActualAsync(costCommandName, costEstimate.Estimated, actualCost, "claude-api");
         }

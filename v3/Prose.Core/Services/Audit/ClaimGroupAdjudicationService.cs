@@ -62,7 +62,20 @@ public sealed class ClaimGroupAdjudicationService(
 
     private const string Model = "claude-sonnet-5";
 
-    public sealed record Options(bool Apply = true, int MaxGroups = 400);
+    /// <summary>
+    /// <paramref name="EntityFilter"/> / <paramref name="PredicateFilter"/> narrow the run to the
+    /// groups whose entity name or predicate contains the given text — the cheap way to re-judge
+    /// ONE group (~$0.03) after a prompt or data change, instead of re-billing a whole book ($6-8)
+    /// to find out whether the change did anything. Built 2026-09-04 for exactly that: validating
+    /// the <c>PromptVersion</c> v2 reorder against the two groups known to have self-refuted.
+    /// </summary>
+    public sealed record Options(
+        bool Apply = true, int MaxGroups = 400,
+        string? EntityFilter = null, string? PredicateFilter = null)
+    {
+        public bool IsFiltered => !string.IsNullOrWhiteSpace(EntityFilter)
+                               || !string.IsNullOrWhiteSpace(PredicateFilter);
+    }
 
     public sealed record GroupVerdict(
         string EntityName, string Predicate, string[] Values,
@@ -102,11 +115,32 @@ You MUST cite a verbatim quote copied EXACTLY from the prose you were given, dem
 conflict. A verdict whose quote is not found in that prose is discarded. Do not quote the value
 summaries; quote the prose.
 
-Output STRICT JSON, no fences, no commentary:
-{"contradiction": true|false, "severity": "BLOCKER"|"MODERATE"|"MINOR", "quote": "verbatim span", "note": "one sentence naming what conflicts, or why they are compatible"}
+Output STRICT JSON, no fences, no commentary, with the fields in EXACTLY this order:
+{"note": "one sentence naming what conflicts, or why they are compatible", "quote": "verbatim span", "severity": "BLOCKER"|"MODERATE"|"MINOR", "contradiction": true|false}
+
+Write "note" FIRST and "contradiction" LAST. The note is your reasoning and the verdict must
+FOLLOW from it. If your note concludes the values are complementary, temporal, the same assertion
+restated, or a character's belief, then "contradiction" MUST be false — a note arguing they are
+compatible alongside "contradiction": true is a self-refuting answer and is worse than either
+answer alone.
 
 NO is a correct and common answer. Most of what you are shown will be complementary or temporal.
 """;
+
+    /// <summary>
+    /// Bumped whenever the prompt above changes in a way that should invalidate cached verdicts,
+    /// since the cache key is otherwise only the claims, their prose and the alias set.
+    ///
+    /// <para><b>v2</b> — the verdict field moved to LAST in the output contract. v1 asked for
+    /// <c>contradiction</c> first and the reasoning afterwards, so the model committed to a
+    /// true/false before doing the analysis; measured 2026-09-04 across DWIACE + VATD, roughly one
+    /// in ten filed conflicts carried a note arguing the opposite of its own boolean
+    /// (<c>The Tributary :: hunting_duration</c> — "complementary rather than contradictory";
+    /// <c>Sol Castellanos :: procedure_status</c> — "no genuine contradiction exists"). Those were
+    /// not hard judgement calls the model got wrong; they were answers it had already talked itself
+    /// out of and could not revise, because the field was spent.</para>
+    /// </summary>
+    private const string PromptVersion = "v2";
 
     public async Task<Report> RunAsync(Guid bookNodeId, Options? options = null, CancellationToken ct = default)
     {
@@ -123,6 +157,19 @@ NO is a correct and common answer. Most of what you are shown will be complement
         // GetContradictionGroups already applies the volatile/set-valued/paraphrase exemptions,
         // so this only ever pays for groups the deterministic layer could not settle.
         var groups = store.GetContradictionGroups(book.Slug);
+
+        if (opts.IsFiltered)
+        {
+            var before = groups.Count;
+            if (!string.IsNullOrWhiteSpace(opts.EntityFilter))
+                groups = groups.Where(g => g.EntityName.Contains(opts.EntityFilter, StringComparison.OrdinalIgnoreCase)).ToList();
+            if (!string.IsNullOrWhiteSpace(opts.PredicateFilter))
+                groups = groups.Where(g => g.Predicate.Contains(opts.PredicateFilter, StringComparison.OrdinalIgnoreCase)).ToList();
+            notes.Add($"Filtered to {groups.Count} of {before} group(s) " +
+                      $"(entity~\"{opts.EntityFilter}\", predicate~\"{opts.PredicateFilter}\"). " +
+                      "Findings for groups outside the filter are left untouched.");
+        }
+
         var ordered = await workbench.GetOrderedBeatsAsync(bookNodeId, ct);
         var beatOrder = ordered.Select(o => o.Beat).ToList();
         var beatById = beatOrder.ToDictionary(b => b.Id, b => b);
@@ -205,7 +252,19 @@ NO is a correct and common answer. Most of what you are shown will be complement
 
         if (opts.Apply)
         {
-            findings.DeleteBySummaryPrefix($"node:{book.Slug}", SummaryPrefix);
+            if (opts.IsFiltered)
+            {
+                // A filtered run has only looked at some of the book, so the usual wipe-and-refile
+                // would silently delete every finding outside the filter. Clear each ADJUDICATED
+                // group's own finding by its exact "[Entity] predicate: " prefix instead — so a
+                // group that flipped to compatible loses its stale finding and nothing else moves.
+                foreach (var g in groups)
+                    findings.DeleteBySummaryPrefix($"node:{book.Slug}", GroupSummaryPrefix(g.EntityName, g.Predicate));
+            }
+            else
+            {
+                findings.DeleteBySummaryPrefix($"node:{book.Slug}", SummaryPrefix);
+            }
             foreach (var v in conflicting) FileFinding(book.Slug, v);
         }
 
@@ -354,6 +413,12 @@ NO is a correct and common answer. Most of what you are shown will be complement
         return rows.Count;
     }
 
+    /// <summary>The leading, group-identifying span of a finding's summary — everything before the
+    /// values, which change as the ledger does. Used to retire exactly one group's finding on a
+    /// filtered run; <see cref="FileFinding"/> must keep building its summary on top of this.</summary>
+    private static string GroupSummaryPrefix(string entityName, string predicate)
+        => $"{SummaryPrefix}[{entityName}] {predicate}: ";
+
     private void FileFinding(string? bookSlug, GroupVerdict v)
     {
         var severity = v.Severity switch
@@ -369,7 +434,7 @@ NO is a correct and common answer. Most of what you are shown will be complement
             chapterId: null,
             category: FindingCategory.Contradiction,
             severity: severity,
-            summary: $"{SummaryPrefix}[{v.EntityName}] {v.Predicate}: "
+            summary: GroupSummaryPrefix(v.EntityName, v.Predicate)
                    + string.Join(" vs ", v.Values.Select(x => $"\"{Clip(x, 60)}\"")) + $"{where}: {Clip(v.Note, 300)}",
             // No Snippet, deliberately — docs/LOGIC.md §4 and the no-bulk-rewriter rule: without a
             // Snippet/SuggestedFix pair no apply path can splice a machine "fix" over prose.
@@ -380,18 +445,21 @@ NO is a correct and common answer. Most of what you are shown will be complement
     }
 
     /// <summary>
-    /// Keyed on the claim uids, every anchor beat's CURRENT text, and the entity's alias set.
+    /// Keyed on <see cref="PromptVersion"/>, the claim uids, every anchor beat's CURRENT text, and
+    /// the entity's alias set.
     ///
     /// <para>Aliases belong in the key for the same reason the anchor text does: they change what
-    /// the model was asked, so a verdict reached without them is stale. Including them rather than
-    /// bumping a blanket prompt-version constant is deliberate and saves real money — an entity
-    /// with no aliases produces a byte-identical key, so its cached verdict survives and only the
-    /// entities the alias fix actually affects get re-billed.</para>
+    /// the model was asked, so a verdict reached without them is stale. They are keyed
+    /// individually rather than folded into the prompt version deliberately, and it saved real
+    /// money — an entity with no aliases produces the same key it had before that change, so its
+    /// cached verdict survived and only the entities the alias fix actually affected re-billed.
+    /// <see cref="PromptVersion"/> is the blunt instrument for a change that alters every question
+    /// asked, and re-bills the whole corpus; reach for it only when that is true.</para>
     /// </summary>
     private static string ComputeCacheKey(
         List<ContinuityClaim> claims, List<Beat?> anchors, List<string> aliases)
     {
-        var raw = string.Join("|", claims.Select(c => c.ClaimUid))
+        var raw = PromptVersion + "||" + string.Join("|", claims.Select(c => c.ClaimUid))
                 + "||" + string.Join("|", anchors.Select(a => a?.TextHash ?? "-"))
                 + (aliases.Count > 0 ? "||aka:" + string.Join(",", aliases) : "");
         return Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(raw))).ToLowerInvariant()[..40];

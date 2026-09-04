@@ -27,6 +27,12 @@ public sealed class TokenLedger
         double OutputCost)
     {
         public double TotalCost => InputCost + OutputCost;
+
+        /// <summary>Which cost-attribution scopes were open when this call was made
+        /// (<see cref="LlmActionContext.BeginCostScope"/>). Empty for calls made outside any
+        /// scope — a background sweep, say — which is what keeps them out of some unrelated
+        /// command's reported spend.</summary>
+        public Guid[] CostScopes { get; init; } = [];
     }
 
     private readonly ConcurrentBag<LedgerEntry> entries = new();
@@ -62,7 +68,7 @@ public sealed class TokenLedger
             InputTokens:  inputTok,
             OutputTokens: outputTok,
             InputCost:    inputCost,
-            OutputCost:   outputCost));
+            OutputCost:   outputCost) { CostScopes = LlmActionContext.CostScopes });
     }
 
     /// <summary>
@@ -87,8 +93,20 @@ public sealed class TokenLedger
             InputTokens:  Math.Max(1, inputTokens),
             OutputTokens: Math.Max(1, outputTokens),
             InputCost:    inputCost,
-            OutputCost:   outputCost));
+            OutputCost:   outputCost) { CostScopes = LlmActionContext.CostScopes });
     }
+
+    /// <summary>
+    /// What one cost-attribution scope actually spent — the sum of the calls made while it was
+    /// open, and nothing else.
+    ///
+    /// <para>This replaces sampling <see cref="GetSummary"/><c>.TotalCost</c> before and after a
+    /// command. That delta was a process-wide total, so it also charged the caller for whatever
+    /// else happened to be billing concurrently; see
+    /// <see cref="LlmActionContext.BeginCostScope"/> for the live case that exposed it.</para>
+    /// </summary>
+    public double CostForScope(Guid scopeId)
+        => entries.Where(e => e.CostScopes.Contains(scopeId)).Sum(e => e.TotalCost);
 
     /// <summary>Returns a snapshot of all recorded entries, oldest first.</summary>
     public IReadOnlyList<LedgerEntry> GetEntries()

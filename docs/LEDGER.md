@@ -107,6 +107,18 @@ Measured on BCODA's first 120 groups: **11 real conflicts** — including a char
 recorded as both right and left, one fatal wound placed in two different parts of the body in
 consecutive beats, and a contract count stated as both 43 and 140 over the same eleven years.
 
+**The verdict field is emitted LAST, after the reasoning, and that is load-bearing.** The first
+version of the output contract asked for `contradiction` first and the explanatory `note`
+afterwards, so the model committed to true/false before doing the analysis. Measured across
+DWIACE + VATD on 2026-09-04: roughly **one in ten** filed conflicts carried a note arguing the
+opposite of its own boolean — *"complementary rather than contradictory"*, *"no genuine
+contradiction exists among the three sources"* — answers it had talked itself out of and could not
+revise, because the field was already spent. Reordering the contract (`note` → `quote` →
+`severity` → `contradiction`) fixed both known cases at $0.03 each. Cached verdicts are keyed on a
+`PromptVersion` so a change of this kind cannot be masked by the cache; that also means it
+re-bills the corpus, which is what the single-group `--predicate` filter is for — validate the
+change on a group you already know the answer for before paying for every book.
+
 **The paraphrase threshold is deliberately severe** (subsumption, or ≥0.75 token overlap). The
 asymmetry is the reason: a false "same assertion" hides a real contradiction, while a false
 contradiction merely costs a triage decision. Complementary facets — "red hair in loose braid" vs
@@ -277,6 +289,14 @@ prose --exclusion-rules --approve --id <n>          # a proposed axiom generates
 # — the read —
 prose --tuned-read --slug <s> --dry                 # FREE: candidate counts + why an axiom was silent
 prose --tuned-read --slug <s> [--max-candidates N]  # one Sonnet call per uncached candidate
+prose --ledger-adjudicate --slug <s> --dry          # FREE: which same-predicate groups would be judged
+prose --ledger-adjudicate --slug <s> [--max N]      # ~$0.03/group; $6-8 for a big book
+prose --ledger-adjudicate --slug <s> --predicate <t> [--entity <t>]
+                                                    # ONE group, ~$0.03 — the way to re-judge after a
+                                                    # change instead of re-billing the book to find out
+
+# — is the instrument telling the truth about what it spent? —
+prose --cost --history [--command <name>] [--take N] # the durable per-command calibration data
 
 # — triage —
 prose --continuity reassess [--slug <s>] [--apply]   # re-judge CONTRADICTED under today's rules

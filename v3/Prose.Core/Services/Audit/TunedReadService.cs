@@ -375,13 +375,26 @@ You MUST cite a verbatim quote, copied EXACTLY character for character from the 
 given, that demonstrates the conflicting assertion. A verdict whose quote is not found in that
 prose is discarded. Do not paraphrase inside the quote. Do not quote the fact summaries.
 
-Output STRICT JSON, no fences, no commentary:
-{"contradiction": true|false, "severity": "BLOCKER"|"MODERATE"|"MINOR", "quote": "verbatim span from the prose", "note": "one sentence naming what conflicts"}
+Output STRICT JSON, no fences, no commentary, with the fields in EXACTLY this order:
+{"note": "one sentence naming what conflicts, or why they are reconcilable", "quote": "verbatim span from the prose", "severity": "BLOCKER"|"MODERATE"|"MINOR", "contradiction": true|false}
+
+Write "note" FIRST and "contradiction" LAST. The note is your reasoning and the verdict must
+FOLLOW from it. If your note concludes the facts are reconcilable — revealed later, a different
+moment, a lie, a paraphrase — then "contradiction" MUST be false. A note arguing they are
+compatible alongside "contradiction": true is a self-refuting answer, and it is worse than either
+answer alone because it lands in a findings queue a human then has to un-pick.
 
 severity: BLOCKER if a reader would notice and the story breaks; MODERATE if it survives a
 careful read but is wrong; MINOR for a detail. Use "MINOR" and contradiction:false freely —
 false is a correct, common answer.
 """;
+
+    /// <summary>
+    /// Bumped whenever <see cref="AdjudicationSystem"/> changes in a way that should invalidate
+    /// cached verdicts. See <c>ClaimGroupAdjudicationService.PromptVersion</c> for the measurement
+    /// that motivated v2 — the verdict field moved to LAST so the reasoning precedes it.
+    /// </summary>
+    private const string PromptVersion = "v2";
 
     private async Task<TunedReadAdjudication> AdjudicateAsync(
         PredicateExclusionService.ExclusionCandidate cand,
@@ -622,7 +635,7 @@ false is a correct, common answer.
     internal static string ComputeCacheKey(
         string claimAUid, string claimBUid, int ruleId, string? anchorAHash, string? anchorBHash)
     {
-        var raw = $"{claimAUid}|{claimBUid}|{ruleId}|{anchorAHash ?? "-"}|{anchorBHash ?? "-"}";
+        var raw = $"{PromptVersion}|{claimAUid}|{claimBUid}|{ruleId}|{anchorAHash ?? "-"}|{anchorBHash ?? "-"}";
         return Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(raw))).ToLowerInvariant()[..40];
     }
 

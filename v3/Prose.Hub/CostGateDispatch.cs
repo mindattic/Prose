@@ -40,7 +40,11 @@ public static class CostGateDispatch
             return Results.Ok(new CostGateResponse(true, estimate.Estimated, estimate.Confidence, 0, "", ""));
 
         var ledger = sp.GetRequiredService<TokenLedger>();
-        var costBefore = ledger.GetSummary().TotalCost;
+
+        // Scoped, not a before/after delta on the process-wide total: the Hub runs concurrent
+        // invocations and background sweeps against one TokenLedger singleton, and a delta charges
+        // this command for all of them. See LlmActionContext.BeginCostScope.
+        using var costScope = LlmActionContext.BeginCostScope();
 
         LlmActionContext.Current = req.CommandName;
         CliDispatch.ExecuteOutcome outcome;
@@ -60,7 +64,7 @@ public static class CostGateDispatch
         var response = outcome.Response!;
         var output = response.Output;
 
-        var actualCost = ledger.GetSummary().TotalCost - costBefore;
+        var actualCost = ledger.CostForScope(costScope.Id);
         if (actualCost > 0)
         {
             try

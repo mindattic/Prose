@@ -31,9 +31,14 @@ public static class LedgerAdjudicateCli
         if (string.IsNullOrWhiteSpace(slug))
         {
             Console.Error.WriteLine(
-                "Usage: prose --ledger-adjudicate --slug <slug-or-code-or-id> [--dry] [--max N] [--json]\n" +
-                "  --dry   count the groups that would be adjudicated. ZERO spend. Start here.\n" +
-                "  --max   cap groups this run (default 400). Verdicts cache, so re-running continues.");
+                "Usage: prose --ledger-adjudicate --slug <slug-or-code-or-id> [--dry] [--max N]\n" +
+                "                               [--entity <text>] [--predicate <text>] [--json]\n" +
+                "  --dry        count the groups that would be adjudicated. ZERO spend. Start here.\n" +
+                "  --max        cap groups this run (default 400). Verdicts cache, so re-running continues.\n" +
+                "  --entity     only groups whose entity name contains this text\n" +
+                "  --predicate  only groups whose predicate contains this text\n" +
+                "               (the two filters combine, and are the ~$0.03 way to re-judge ONE\n" +
+                "                group after a change instead of re-billing a whole book)");
             return 2;
         }
 
@@ -43,6 +48,8 @@ public static class LedgerAdjudicateCli
 
         var dry = args.Contains("--dry");
         var max = int.TryParse(Flag(args, "--max"), out var m) && m > 0 ? m : 400;
+        var entityFilter = Flag(args, "--entity");
+        var predicateFilter = Flag(args, "--predicate");
 
         if (dry)
         {
@@ -50,14 +57,24 @@ public static class LedgerAdjudicateCli
             var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
                 .Where(n => n.Id == nodeId).Select(n => new { n.Slug, n.Title }).FirstAsync();
             var groups = store.GetContradictionGroups(node.Slug);
+            var total = groups.Count;
+            if (!string.IsNullOrWhiteSpace(entityFilter))
+                groups = groups.Where(g => g.EntityName.Contains(entityFilter, StringComparison.OrdinalIgnoreCase)).ToList();
+            if (!string.IsNullOrWhiteSpace(predicateFilter))
+                groups = groups.Where(g => g.Predicate.Contains(predicateFilter, StringComparison.OrdinalIgnoreCase)).ToList();
+
             Console.WriteLine($"{node.Title}  [{node.Slug}]");
             Console.WriteLine($"  {groups.Count} contradiction group(s) would be adjudicated " +
-                              $"({Math.Min(groups.Count, max)} this run at --max {max}).");
+                              $"({Math.Min(groups.Count, max)} this run at --max {max})"
+                              + (groups.Count != total ? $" — filtered from {total}." : "."));
+            foreach (var g in groups.Take(Math.Min(groups.Count, max)))
+                Console.WriteLine($"    {g.EntityName} :: {g.Predicate}  ({g.Claims.Count} claim(s))");
             Console.WriteLine("[ledger-adjudicate] Dry run — nothing adjudicated, nothing written, nothing spent.");
             return 0;
         }
 
-        var report = await svc.RunAsync(nodeId.Value, new ClaimGroupAdjudicationService.Options(true, max));
+        var report = await svc.RunAsync(nodeId.Value,
+            new ClaimGroupAdjudicationService.Options(true, max, entityFilter, predicateFilter));
 
         if (args.Contains("--json"))
         {

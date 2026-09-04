@@ -248,6 +248,113 @@ public class ClaimGroupAdjudicationTests
         Assert.That(llm.Calls, Is.EqualTo(2), "a prose edit must invalidate the cached verdict");
     }
 
+    // ── the prompt contract ──────────────────────────────────────────────────
+
+    [Test]
+    public async Task The_Prompt_Asks_For_The_Reasoning_Before_The_Verdict()
+    {
+        // Measured 2026-09-04: with "contradiction" emitted FIRST, roughly one in ten filed
+        // conflicts across DWIACE + VATD carried a note arguing the opposite of its own boolean
+        // ("complementary rather than contradictory"; "no genuine contradiction exists"). The model
+        // had talked itself out of the verdict and could not revise it, because the field was
+        // already spent. Field order is the fix, so it is pinned here rather than left to a
+        // future tidy-up of the prompt.
+        var bookId = await SeedAsync();
+        var llm = new CapturingLlm(
+            """{"note": "compatible", "quote": "", "severity": "MINOR", "contradiction": false}""");
+        await Build(llm).RunAsync(bookId);
+
+        var system = llm.LastSystem;
+        Assert.That(system, Is.Not.Empty);
+        Assert.That(system.IndexOf("\"note\"", StringComparison.Ordinal),
+            Is.LessThan(system.IndexOf("\"contradiction\"", StringComparison.Ordinal)),
+            "the output contract must place the reasoning before the verdict");
+    }
+
+    // ── the targeted filter ──────────────────────────────────────────────────
+
+    /// <summary>Adds a SECOND contradiction group to the same book, on a different predicate.</summary>
+    private async Task SeedSecondGroupAsync(string bookSlug)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var beats = await db.Beats.OrderBy(b => b.Number).Select(b => b.Id).ToArrayAsync();
+        var chapterId = await db.ContinuityClaims.Select(c => c.SourceChapterId).FirstAsync();
+
+        void AddClaim(string uid, string obj, Guid beat) => db.ContinuityClaims.Add(new ContinuityClaim
+        {
+            ClaimUid = uid, EntityId = "e-sift", EntityName = "Sift", EntityKind = "character",
+            Predicate = "handedness", Object = obj, Status = "CONTRADICTED",
+            SourceType = "prose", BookSlug = bookSlug, SourceBeatId = beat,
+            SourceChapterId = chapterId,
+        });
+        AddClaim("claim-c", "right-handed", beats[0]);
+        AddClaim("claim-d", "left-handed", beats[1]);
+        await db.SaveChangesAsync();
+    }
+
+    [Test]
+    public async Task A_Filtered_Run_Bills_Only_The_Matching_Group()
+    {
+        var bookId = await SeedAsync();
+        await SeedSecondGroupAsync("adj-book");
+        var llm = new CountingLlm(
+            """{"note": "compatible", "quote": "", "severity": "MINOR", "contradiction": false}""");
+
+        var report = await Build(llm).RunAsync(bookId,
+            new ClaimGroupAdjudicationService.Options(true, 400, PredicateFilter: "handedness"));
+
+        Assert.That(llm.Calls, Is.EqualTo(1), "the point of the filter is to pay for one group, not the book");
+        Assert.That(report.Groups, Is.EqualTo(1));
+        Assert.That(report.Notes.Any(n => n.Contains("Filtered")), Is.True, "the narrowing must be reported");
+        // Only the filtered group's claims moved; the other group is untouched.
+        Assert.That(await StatusesAsync(dbFactory), Is.EqualTo(new[]
+            { "CONTRADICTED", "CONTRADICTED", "NEW", "NEW" }));
+    }
+
+    [Test]
+    public async Task A_Filtered_Run_Leaves_Findings_Outside_The_Filter_Alone()
+    {
+        // The trap this guards: the unfiltered lifecycle is delete-every-LEDGER-CONFLICT-then-refile.
+        // Run that after narrowing to one group and the other 20+ findings for the book vanish,
+        // silently, having never been looked at.
+        var bookId = await SeedAsync();
+        await SeedSecondGroupAsync("adj-book");
+
+        var conflict = """{"note": "conflict", "quote": "A hundred and forty contracts, she said, in the same eleven years", "severity": "MODERATE", "contradiction": true}""";
+        await Build(new FixedLlm(conflict)).RunAsync(bookId);
+
+        var before = findings.List(FindingStatus.New, filePathPrefix: "node:adj-book")
+            .Where(f => f.Summary.StartsWith(ClaimGroupAdjudicationService.SummaryPrefix, StringComparison.Ordinal))
+            .ToList();
+        Assert.That(before.Count, Is.EqualTo(2), "both groups should have filed");
+
+        // Re-contradict both groups so they are live, and edit the handedness anchor so its cached
+        // verdict is stale — otherwise the cache correctly returns run 1's conflict and the second
+        // response never gets asked for.
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var beat = await db.Beats.OrderBy(b => b.Number).Skip(1).FirstAsync();
+            beat.Text = "She wrote with her left, and had for as long as anyone could remember.";
+            beat.TextHash = Beat.ComputeHash(beat.Text);
+            foreach (var c in await db.ContinuityClaims.ToListAsync()) c.Status = "CONTRADICTED";
+            await db.SaveChangesAsync();
+        }
+        var second = await Build(new FixedLlm(
+            """{"note": "one is a habitual gesture, not handedness", "quote": "", "severity": "MINOR", "contradiction": false}"""))
+            .RunAsync(bookId, new ClaimGroupAdjudicationService.Options(true, 400, PredicateFilter: "handedness"));
+        Assert.That(second.Groups, Is.EqualTo(1), "the filter should have selected the handedness group");
+        Assert.That(second.Compatible, Is.EqualTo(1));
+
+        var after = findings.List(FindingStatus.New, filePathPrefix: "node:adj-book")
+            .Where(f => f.Summary.StartsWith(ClaimGroupAdjudicationService.SummaryPrefix, StringComparison.Ordinal))
+            .ToList();
+
+        Assert.That(after.Count, Is.EqualTo(1), "the untouched group must keep its finding");
+        Assert.That(after[0].Summary, Does.Contain("contract_count"));
+        Assert.That(after.Any(f => f.Summary.Contains("handedness")), Is.False,
+            "the group that flipped to compatible must lose its stale finding");
+    }
+
     // ── doubles ──────────────────────────────────────────────────────────────
 
     private sealed class FixedLlm(string response) : ILlmService
@@ -266,6 +373,18 @@ public class ClaimGroupAdjudicationTests
             double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default)
         {
             Calls++;
+            return Task.FromResult(response);
+        }
+    }
+
+    private sealed class CapturingLlm(string response) : ILlmService
+    {
+        public string LastSystem { get; private set; } = "";
+        public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
+        public Task<string> GenerateAsync(string system, string user,
+            double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default)
+        {
+            LastSystem = system;
             return Task.FromResult(response);
         }
     }

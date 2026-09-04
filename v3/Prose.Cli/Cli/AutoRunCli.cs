@@ -118,7 +118,12 @@ public static class AutoRunCli
 
         var stats    = new SessionStats();
         var started  = DateTime.UtcNow;
-        var costBefore = ledger.GetSummary().TotalCost;
+
+        // Scoped rather than a before/after delta on the ledger's process-wide total, which also
+        // charged this run for anything else billing concurrently (see
+        // LlmActionContext.BeginCostScope). Nesting is handled: cost-gated sub-commands this run
+        // invokes open their own inner scopes and still roll up into this one.
+        using var costScope = LlmActionContext.BeginCostScope();
 
         // Determine if this is a book (has chapter children) or a flat node. Descend to LEAF
         // nodes, not just direct children — a split-collection book (Book -> "Chapter N"
@@ -175,7 +180,7 @@ public static class AutoRunCli
             Console.WriteLine($"[auto-run] Done: {stats.Written} beats expanded.");
         }
 
-        PrintSessionReport(nodeTitle, nodeSlug, stats, started, costBefore, ledger);
+        PrintSessionReport(nodeTitle, nodeSlug, stats, started, costScope.Id, ledger);
         return 0;
     }
 
@@ -386,11 +391,11 @@ public static class AutoRunCli
         string title, string slug,
         SessionStats stats,
         DateTime started,
-        double costBefore,
+        Guid costScopeId,
         TokenLedger ledger)
     {
         var elapsed    = DateTime.UtcNow - started;
-        var actualCost = ledger.GetSummary().TotalCost - costBefore;
+        var actualCost = ledger.CostForScope(costScopeId);
         var separator  = new string('═', 47);
 
         Console.WriteLine();

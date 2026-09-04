@@ -121,6 +121,10 @@ if (UniverseBootstrap.RequestedSlug == null
         // Pure arithmetic against BookHealthService's tier shapes — touches no DB row at all
         // (see EstimateCostCli).
         "--estimate-cost",
+        // Cost accounting is universe-agnostic: the in-process TokenLedger has no universe
+        // concept, and CommandCostHistories (which --cost --history reads) has no universe
+        // column at all — the cost gate calibrates per COMMAND, across every book.
+        "--cost",
         // Corpus-wide corruption scan: TextIntegrityService.ScanAsync uses IgnoreQueryFilters
         // deliberately — a data-integrity scan must see every universe in one pass, never scoped
         // to whatever --universe happened to be passed (see TextIntegrityService's doc comment).
@@ -606,10 +610,16 @@ if (args.Contains("--tuned-read"))
 // facets and temporal states, which need the prose to tell apart from a real conflict. Writes
 // claim STATUS only, never prose (docs/LOGIC.md §4). Cost-gated: one Sonnet call per uncached
 // group, cached on the claim uids plus every anchor beat's current TextHash.
-//   prose --ledger-adjudicate --slug <slug> [--dry] [--max N] [--json]
+//   prose --ledger-adjudicate --slug <slug> [--dry] [--max N] [--entity <t>] [--predicate <t>] [--json]
 if (args.Contains("--ledger-adjudicate"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("LedgerAdjudicateCli", "--ledger-adjudicate", args);
+    // An --entity/--predicate run judges ONE group (~$0.03); a whole-book run is $6-8. The cost
+    // estimator keys purely on this command name, so letting both shapes calibrate together
+    // teaches it that --ledger-adjudicate is cheap and the $0.10 gate then stops warning before a
+    // real book run. Separate names, separate histories.
+    var filtered = args.Contains("--entity") || args.Contains("--predicate");
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync(
+        "LedgerAdjudicateCli", filtered ? "--ledger-adjudicate --filtered" : "--ledger-adjudicate", args);
     return;
 }
 
@@ -2913,13 +2923,17 @@ if (args.Contains("--export-event-list"))
     return;
 }
 
-// CLI mode: show running token cost tally for the current process.
+// CLI mode: show running token cost tally for the current process, or the durable per-command
+// calibration data the cost gate estimates from.
 //   prose --cost              print session cost table
 //   prose --cost --json       emit summary as JSON
 //   prose --cost --reset      clear the ledger
+//   prose --cost --history [--command <name>] [--take N] [--json]
+//                             print CommandCostHistories — what each cost gate calibrates from
 // When appended to another command (e.g. prose --write-node --slug foo --cost),
 // the cost of that command's LLM calls is printed after the command finishes.
-if (args.Contains("--cost") && (args.Length == 1 || (args.Length == 2 && (args.Contains("--json") || args.Contains("--reset")))))
+if (args.Contains("--cost") && (args.Contains("--history")
+    || args.Length == 1 || (args.Length == 2 && (args.Contains("--json") || args.Contains("--reset")))))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("CostCli", args);
     return;
