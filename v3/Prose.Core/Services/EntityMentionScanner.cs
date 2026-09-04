@@ -271,6 +271,48 @@ public static class EntityMentionScanner
         return candidates;
     }
 
+    /// <summary>
+    /// Adds the caller's own already-tagged mentions to <paramref name="candidates"/> as pinned
+    /// candidates, so a tag on an AMBIGUOUS name survives a save instead of being silently lost.
+    ///
+    /// <para>The ambiguity rule in <see cref="BuildCandidateIndexAsync"/> is not weakened by this
+    /// and must not be: it refuses to GUESS which of five Marisols a bare "Marisol" means. A
+    /// pinned mention is not a guess — it is the guid a human (or a prior tagging pass) already
+    /// committed to in the markup, which is precisely the fact a name scan cannot recover. So the
+    /// pinned entry is added AFTER the purge and replaces any purged entry for the same text.</para>
+    ///
+    /// <para>Two guards keep the staleness property that made re-derivation strip-first in the
+    /// first place: a pinned guid is honoured only if it is <paramref name="liveEntities"/> (a
+    /// live, non-archived entity in this book's universe), and the tag's canonical Name/EntityType
+    /// come from that lookup rather than from the tag's own inner text, so a renamed entity still
+    /// re-renders under its current identity.</para>
+    /// </summary>
+    public static List<MentionCandidate> WithPinnedMentions(
+        List<MentionCandidate> candidates,
+        IReadOnlyList<BeatMarkup.TaggedMention> pinned,
+        IReadOnlyDictionary<Guid, (string Name, string EntityType)> liveEntities)
+    {
+        if (pinned.Count == 0) return candidates;
+
+        foreach (var p in pinned)
+        {
+            if (!liveEntities.TryGetValue(p.EntityId, out var live)) continue;   // stale tag — still dropped
+            var text = p.Text.Trim();
+            if (text.Length == 0 || Stopwords.Contains(text)) continue;
+
+            // Already resolvable to this same entity by name: nothing to pin.
+            if (candidates.Any(c => string.Equals(c.Text, text, StringComparison.OrdinalIgnoreCase)
+                                 && c.EntityId == p.EntityId))
+                continue;
+
+            // Any other claim on this surface text loses to the explicit one.
+            candidates.RemoveAll(c => string.Equals(c.Text, text, StringComparison.OrdinalIgnoreCase));
+            candidates.Add(new MentionCandidate(
+                text, p.EntityId, live.Name, live.EntityType, RequiresStrictCase(text)));
+        }
+        return candidates;
+    }
+
     // Bare single tokens AND article+noun names ("The Ledger", "The Spine") hold to
     // case-sensitive matching: their nouns are ordinary prose words ("the ledger is open") and
     // ignore-case containment attaches the wrong entity to the scene. Multi-word proper names

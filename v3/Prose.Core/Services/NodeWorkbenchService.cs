@@ -331,10 +331,21 @@ public class NodeWorkbenchService
         // than trust stale tags a caller might hand back unmodified), then re-scan+re-tag from
         // scratch. This is a deliberate design property, not an oversight: a rename never leaves
         // a stale tag sitting in prose past the next edit.
+        //
+        // The incoming tags are still read first, as DISAMBIGUATION (2026-09-04). Re-derivation
+        // alone silently destroyed any tag whose surface name is ambiguous, because the scanner
+        // rightly refuses to guess between several entities claiming one name — see
+        // BeatMarkup.ExtractTaggedMentions for the live case (four valid "Marisol" tags lost on a
+        // one-clause hand edit, against five Marisols in the universe). Pinning is guarded on the
+        // guid still resolving to a live entity, so a genuinely stale tag is dropped as before.
+        var pinnedMentions = BeatMarkup.ExtractTaggedMentions(newText);
         var plainText = BeatMarkup.StripEntityTags(TextSanitizerService.Sanitize((newText ?? "").Trim()));
         var candidates = universeId != Guid.Empty
             ? await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId, ct)
             : [];
+        if (universeId != Guid.Empty && pinnedMentions.Count > 0)
+            candidates = EntityMentionScanner.WithPinnedMentions(
+                candidates, pinnedMentions, await LoadLiveEntitiesAsync(db, universeId, pinnedMentions, ct));
         var mentionMatches = EntityMentionScanner.Scan(plainText, candidates);
         var trimmed = EntityMentionScanner.ApplyTags(plainText, mentionMatches);
 
@@ -457,6 +468,23 @@ public class NodeWorkbenchService
     /// hash recompute, and entity-tag re-derivation exactly as the single-beat path does; only the
     /// blast-radius/logic-sweep/continuity-extraction tail is deduplicated across the batch.
     /// </summary>
+    /// <summary>The pinned tags' entities, as they exist RIGHT NOW in this universe — live and
+    /// non-archived only, keyed by guid. A tag whose guid is absent from the result is stale and
+    /// gets dropped by the re-derivation exactly as it always did. The canonical Name/EntityType
+    /// come from here rather than from the tag's inner text, for the same reason
+    /// <c>DeriveAndSaveMentionsAsync</c> re-looks them up: the guid is the permanent fact, the
+    /// tag's display text is not.</summary>
+    private static async Task<Dictionary<Guid, (string Name, string EntityType)>> LoadLiveEntitiesAsync(
+        ProseDbContext db, Guid universeId, IReadOnlyList<BeatMarkup.TaggedMention> pinned, CancellationToken ct)
+    {
+        var ids = pinned.Select(p => p.EntityId).Distinct().ToList();
+        var rows = await db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()
+            .Where(e => ids.Contains(e.Id) && e.UniverseId == universeId && e.Status != "archived")
+            .Select(e => new { e.Id, e.Name, e.EntityType })
+            .ToListAsync(ct);
+        return rows.ToDictionary(r => r.Id, r => (r.Name, r.EntityType));
+    }
+
     public async Task UpdateBeatTextBatchAsync(
         IReadOnlyList<(Guid BeatId, string NewText)> edits, string source, CancellationToken ct = default)
     {
@@ -495,10 +523,16 @@ public class NodeWorkbenchService
                 ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == thisBookNodeId.Value).Select(n => n.UniverseId).FirstOrDefaultAsync(ct)
                 : Guid.Empty;
 
+            // Same pinned-mention handling as the single-beat path above — a batch edit must not
+            // be the one that loses an ambiguous name's tag.
+            var pinnedMentions = BeatMarkup.ExtractTaggedMentions(newText);
             var plainText = BeatMarkup.StripEntityTags(TextSanitizerService.Sanitize((newText ?? "").Trim()));
             var candidates = universeId != Guid.Empty
                 ? await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, thisBookNodeId, ct)
                 : [];
+            if (universeId != Guid.Empty && pinnedMentions.Count > 0)
+                candidates = EntityMentionScanner.WithPinnedMentions(
+                    candidates, pinnedMentions, await LoadLiveEntitiesAsync(db, universeId, pinnedMentions, ct));
             var mentionMatches = EntityMentionScanner.Scan(plainText, candidates);
             var trimmed = EntityMentionScanner.ApplyTags(plainText, mentionMatches);
 

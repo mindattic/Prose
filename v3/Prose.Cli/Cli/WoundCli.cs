@@ -14,6 +14,9 @@ namespace Prose.Cli;
 ///           Record a new wound for a character.
 ///   status  --wound &lt;woundId&gt; --status "healed|active|noted"
 ///           Update a wound's status.
+///   delete  --wound &lt;woundId&gt; --confirm &lt;woundId&gt;
+///           Remove a wound whose event never happened (a retired storyline). No status can
+///           express that — active/healed/noted all assert the injury occurred.
 /// </summary>
 public static class WoundCli
 {
@@ -32,6 +35,7 @@ public static class WoundCli
             "list"   => await ListAsync(rest, services),
             "log"    => await LogAsync(rest, services),
             "status" => await StatusAsync(rest, services),
+            "delete" => await DeleteAsync(rest, services),
             _        => PrintUsage(),
         };
     }
@@ -122,6 +126,44 @@ public static class WoundCli
         return updated > 0 ? 0 : 1;
     }
 
+    /// <summary>
+    /// <c>prose --wound delete --wound &lt;id&gt; --confirm &lt;id&gt;</c> — remove a wound recording an
+    /// event that never happened. <c>status</c> cannot express that: active/healed/noted all
+    /// assert the injury occurred. Added 2026-09-04 for the retired lopped-hands storyline, where
+    /// wound #5 ("Hands severed by cleaver, reattached by AutoDoc") had no removal path at all and
+    /// kept feeding the per-beat XRay.
+    ///
+    /// <para><c>--confirm</c> must repeat the id. Unlike a rejected continuity claim, this row is
+    /// not recoverable from temporal history, so the id is typed twice on purpose.</para>
+    /// </summary>
+    private static async Task<int> DeleteAsync(string[] args, IServiceProvider services)
+    {
+        string? woundIdStr = null, confirm = null;
+        for (int i = 0; i < args.Length; i++)
+        {
+            switch (args[i])
+            {
+                case "--wound":   if (i + 1 < args.Length) woundIdStr = args[++i]; break;
+                case "--confirm": if (i + 1 < args.Length) confirm = args[++i]; break;
+            }
+        }
+        if (string.IsNullOrWhiteSpace(woundIdStr)) { Console.Error.WriteLine("[wound delete] --wound <id> is required."); return 1; }
+        if (!long.TryParse(woundIdStr, out var woundId)) { Console.Error.WriteLine("[wound delete] --wound must be an integer id."); return 1; }
+        if (confirm != woundIdStr)
+        {
+            Console.Error.WriteLine($"[wound delete] Refusing: pass --confirm {woundId} to delete wound {woundId}. " +
+                                    "This row is not recoverable from temporal history.");
+            return 1;
+        }
+
+        var ledger = services.GetRequiredService<WoundLedgerService>();
+        var deleted = await ledger.DeleteAsync(woundId);
+        Console.WriteLine(deleted > 0
+            ? $"[wound delete] Wound {woundId} deleted."
+            : $"[wound delete] Wound {woundId} not found.");
+        return deleted > 0 ? 0 : 1;
+    }
+
     private static async Task<Guid?> ResolveCharacterIdAsync(string idOrSlug, IServiceProvider services)
     {
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
@@ -142,6 +184,7 @@ public static class WoundCli
         Console.Error.WriteLine("  list    --character <id|slug> [--as-of \"date\"]");
         Console.Error.WriteLine("  log     --character <id|slug> --description \"...\" [--location \"chest\"] [--severity moderate|severe|minor] [--beat <beatId>] [--in-world-date \"...\"]");
         Console.Error.WriteLine("  status  --wound <id> --status active|healed|noted");
+        Console.Error.WriteLine("  delete  --wound <id> --confirm <id>   (for a wound whose event never happened)");
         return 1;
     }
 }

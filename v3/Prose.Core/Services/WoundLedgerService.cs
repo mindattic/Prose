@@ -111,4 +111,32 @@ public class WoundLedgerService(
         return await db.Database.ExecuteSqlRawAsync(
             "UPDATE [dbo].[WoundLedger] SET [Status] = {0} WHERE [Id] = {1}", [status, woundId], ct);
     }
+
+    /// <summary>
+    /// Removes one wound row outright — for a wound recording an event that <b>never happened</b>,
+    /// which no status can express.
+    ///
+    /// <para><b>Why a delete and not a status change.</b> <c>active|healed|noted</c> all assert the
+    /// injury occurred and only differ on what became of it; a retired storyline needs the record
+    /// gone. Found live 2026-09-04: wound #5 on Kyle Ellen Corbin read "Hands severed by cleaver,
+    /// reattached by AutoDoc", from an obsolete story the author had already replaced — and the
+    /// wound ledger had no path to remove it, so it kept feeding
+    /// <c>SceneContextAssembler</c>'s per-beat XRay and every prose call that read it.</para>
+    ///
+    /// <para><b>Why a raw delete is safe here specifically.</b> <c>WoundLedger</c> is a plain table
+    /// created by <see cref="EnsureSchemaAsync"/> above — NOT one of the system-versioned temporal
+    /// tables (<c>Nodes</c>, <c>Beats</c>, <c>BeatNodes</c>) that the no-SQL-deletes law protects,
+    /// where a delete is unrecoverable without a point-in-time restore. Callers should still
+    /// confirm the id, because this row is not recoverable from history the way a claim rejection
+    /// is.</para>
+    /// </summary>
+    public async Task<int> DeleteAsync(long woundId, CancellationToken ct = default)
+    {
+        await EnsureSchemaAsync(ct);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var n = await db.Database.ExecuteSqlRawAsync(
+            "DELETE FROM [dbo].[WoundLedger] WHERE [Id] = {0}", [woundId], ct);
+        if (n > 0) log.LogInformation("[wound] Deleted wound {WoundId} from the ledger.", woundId);
+        return n;
+    }
 }
