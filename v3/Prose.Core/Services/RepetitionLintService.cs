@@ -419,6 +419,11 @@ public class RepetitionLintService
                 if (!int.TryParse(e.Groups[1].Value, out var chNum)) continue;
                 var end = k + 1 < entries.Count ? entries[k + 1].Index : Math.Min(o.Length, e.Index + 1500);
                 var block = o[e.Index..Math.Min(end, e.Index + 1500)];
+                // An entry ends where the outline's next numbered item or bold header begins — the
+                // Ch12 entry otherwise swallowed item 6 ("LOOK AT THE CENTER", which the outline
+                // itself places in Ch26) and filed three false OUTLINE-HOOK findings against Ch12.
+                var nextItem = Regex.Match(block[Math.Min(block.Length, e.Length)..], @"\n\s*(?:\d+\.\s+\*\*|\*\*[A-Z#])");
+                if (nextItem.Success) block = block[..(e.Length + nextItem.Index)];
                 // Italic parenthetical revision notes — "*(Revised 2026-09-05. The "01:14" entry
                 // was cut…)*" — are the outline talking about itself, not naming things the
                 // chapter must contain. Strip them before harvesting literals.

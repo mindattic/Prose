@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Prose.Core.Services;
 
@@ -30,11 +31,15 @@ public class WorldStateSnapshot
     public DateTime? StoryTime { get; set; }
     public List<EntityAspectState> EntityStates { get; set; } = [];
     public List<ActiveRelationship> ActiveEdges { get; set; } = [];
+    /// <summary>What this snapshot looked at — so an empty result is never mistaken for
+    /// "nothing is true", and a full result is never mistaken for "the whole universe".</summary>
+    public string? Scope { get; set; }
 
     public string FormatAsContextBlock()
     {
         var sb = new StringBuilder();
         sb.AppendLine("## World state at this beat");
+        if (Scope != null) sb.AppendLine($"_({Scope})_");
 
         if (EntityStates.Count > 0)
         {
@@ -65,6 +70,9 @@ public class WorldStateAtBeatService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly WorldStateLedger ledger;
+
+    private const int MaxAspects = 400;
+    private static readonly Regex GuidAttrRx = new(@"guid=""([0-9a-fA-F-]{36})""", RegexOptions.Compiled);
 
     public WorldStateAtBeatService(IDbContextFactory<ProseDbContext> dbFactory, WorldStateLedger ledger)
     {
@@ -150,20 +158,60 @@ public class WorldStateAtBeatService
         }
 
         var snapshot = new WorldStateSnapshot { BeatId = beatId, StoryTime = effectiveTime };
-        if (effectiveTime == null) return snapshot;
+        if (effectiveTime == null)
+        {
+            snapshot.Scope = "COULD NOT LOOK — no story time could be inferred for this beat (no state events at or before its position).";
+            return snapshot;
+        }
 
         var t = effectiveTime.Value;
         var scopeIds = entityIds?.ToHashSet();
+
+        // 2026-09-05: with no entityIds this used to ask the ledger for EVERY entity's latest
+        // aspect in the universe (max: null) — on BCODA the MCP tool returned a 1M-character,
+        // 8,929-line alphabetical roster of the corpus's background NPCs as "what is true right
+        // now for this beat". A snapshot the reader cannot read is a fail-open. Default the scope
+        // to the entities actually tagged in the beat's own chapter, and say so.
+        if (scopeIds == null)
+        {
+            var nodeIds = await db.BeatNodes.AsNoTracking()
+                .Where(bn => bn.BeatId == beatId)
+                .Select(bn => bn.NodeId)
+                .ToListAsync(ct);
+            var texts = await (
+                from bn in db.BeatNodes.AsNoTracking()
+                join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
+                where nodeIds.Contains(bn.NodeId) && b.Text != null
+                select b.Text!).ToListAsync(ct);
+            scopeIds = texts
+                .SelectMany(txt => GuidAttrRx.Matches(txt).Cast<Match>()
+                    .Select(m => Guid.TryParse(m.Groups[1].Value, out var g) ? g : Guid.Empty))
+                .Where(g => g != Guid.Empty)
+                .ToHashSet();
+            if (scopeIds.Count == 0)
+            {
+                snapshot.Scope = $"COULD NOT LOOK — no entity tags in the beat's chapter ({texts.Count} beat(s) examined); pass entityIds to scope explicitly.";
+                return snapshot;
+            }
+            snapshot.Scope = $"scoped to the {scopeIds.Count} entities tagged in this beat's chapter ({texts.Count} beat(s)); pass entityIds to override";
+        }
+        else
+        {
+            snapshot.Scope = $"scoped to {scopeIds.Count} caller-supplied entities";
+        }
 
         // Latest EntityStateEvent per (EntityId, AspectKey) at or before this story time.
         // Delegates to WorldStateLedger.SnapshotManyAsync (2026-09-01) rather than querying
         // EntityStateEvents directly — that method groups before capping (this used to cap the
         // raw 2000-most-recent events BEFORE grouping, which could silently drop the correct
         // "latest" value for an aspect belonging to a less-recently-touched entity) and applies
-        // a deterministic Id tie-break this call site didn't have before.
-        var latestByKey = (await ledger.SnapshotManyAsync(scopeIds, t, max: null, ct))
+        // a deterministic Id tie-break this call site didn't have before. The cap is a hard
+        // ceiling on output size; the scope above is what keeps it from being hit in practice.
+        var latestByKey = (await ledger.SnapshotManyAsync(scopeIds, t, max: MaxAspects, ct))
             .Values
             .ToList();
+        if (latestByKey.Count >= MaxAspects)
+            snapshot.Scope += $"; aspect list capped at {MaxAspects}";
 
         // Resolve entity names
         var entityIdSet = latestByKey.Select(e => e.EntityId).Distinct().ToList();
