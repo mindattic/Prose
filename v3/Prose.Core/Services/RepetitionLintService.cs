@@ -12,6 +12,7 @@ public record RepetitionLintReport(
     int PhraseFindings,
     int PetWordFindings,
     int DialogueFindings,
+    int StructureFindings,
     IReadOnlyList<string> Lines);
 
 /// <summary>
@@ -112,22 +113,22 @@ public class RepetitionLintService
             join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
             where searchIds.Contains(bn.NodeId) && b.Text != null && b.Text != ""
             orderby c.SortKey, bn.SortKey
-            select new { b.Id, b.Number, Text = b.Text!, Chapter = c.Title }
+            select new { b.Id, b.Number, Text = b.Text!, Chapter = c.Title, ChapterId = c.Id, b.StoryPosition }
         ).ToListAsync(ct);
 
         // Entity-name exemption: a character/place name repeating is normal prose, not an echo.
         var entityNameTokens = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-        var entityNames = await db.Set<Data.Entities.Entity>().AsNoTracking()
+        var entityRows = await db.Set<Data.Entities.Entity>().AsNoTracking()
             .Where(e => e.UniverseId == node.UniverseId)
-            .Select(e => e.Name).ToListAsync(ct);
-        foreach (var name in entityNames)
-            foreach (Match m in WordRx.Matches(name))
+            .Select(e => new { e.Id, e.Name, e.EntityType }).ToListAsync(ct);
+        foreach (var e in entityRows)
+            foreach (Match m in WordRx.Matches(e.Name))
                 entityNameTokens.Add(m.Value);
 
         if (!dryRun) findings.DeleteBySummaryPrefix(fp, LintPrefix);
 
         var lines = new List<string>();
-        int echoCount = 0, phraseCount = 0, petCount = 0, dialogueCount = 0;
+        int echoCount = 0, phraseCount = 0, petCount = 0, dialogueCount = 0, structureCount = 0;
 
         void File(FindingSeverity sev, string summary, string? snippet = null, string? fix = null)
         {
@@ -278,9 +279,289 @@ public class RepetitionLintService
                 fix: "Let characters speak — break summary/narration with scene.");
         }
 
-        log.LogInformation("[RepetitionLint] {Code}: {Beats} beats, {Echo} echo, {Phrase} phrase, {Pet} pet-word, {Dlg} dialogue findings",
-            nodeCode, beats.Count, echoCount, phraseCount, petCount, dialogueCount);
-        return new RepetitionLintReport(nodeCode, beats.Count, echoCount, phraseCount, petCount, dialogueCount, lines);
+        // ── 6. Structural checks (2026-09-05) ──────────────────────────────────
+        // Every real BCODA defect on record — Ch7's fight told three times, Ch1's orphaned
+        // elevator scene, Ch12's #5229 and #5346, the togishi "first time" line — was a
+        // superseded draft left in the reading order after a rewrite pass. None of them was
+        // caught by any instrument; all of them were caught by reading a chapter whole. These
+        // four checks are the mechanical version of that read. They are flags for a reader, not
+        // verdicts, and each one prints what it examined so a zero is never mistaken for "clean".
+        if (beats.Count == 0)
+        {
+            lines.Add("[structure] COULD NOT LOOK — 0 beats with prose.");
+        }
+        else
+        {
+            structureCount += StructuralChecks(beats.Select((b, i) => new StructBeat(
+                    i, b.Id, b.Number, b.Chapter, b.ChapterId, b.StoryPosition, b.Text)).ToList(),
+                node.NodeOutline, entityRows.Select(e => (e.Id, e.Name, e.EntityType)).ToList(),
+                entityNameTokens, File, lines);
+        }
+
+        log.LogInformation("[RepetitionLint] {Code}: {Beats} beats, {Echo} echo, {Phrase} phrase, {Pet} pet-word, {Dlg} dialogue, {Struct} structure findings",
+            nodeCode, beats.Count, echoCount, phraseCount, petCount, dialogueCount, structureCount);
+        return new RepetitionLintReport(nodeCode, beats.Count, echoCount, phraseCount, petCount, dialogueCount, structureCount, lines);
+    }
+
+    private sealed record StructBeat(int Index, Guid Id, int Number, string Chapter, Guid ChapterId, int? StoryPosition, string Text);
+
+    // Alternate-scene detector thresholds. Two distinct shared 8-word runs, or one run plus two
+    // shared distinctive markers (timestamps / quoted lines), between beats within this many
+    // positions of each other in the same chapter. A single shared run alone is NOT enough — a
+    // deliberate refrain ("CORRIDOR AUDIT COMPLETE. THE CHOICE AT 6.2% IS LOGGED." recurs three
+    // times in BCODA Ch12 by design) must not read as a duplicate scene.
+    private const int AltSceneWindow = 6;
+    private const int AltSceneGramLen = 8;
+    private const double AltSceneJaccard = 0.40;
+    private const int AltSceneMinTokens = 120;
+    // Entities present in this share of beats (the protagonist, his weapons) are exempt from the
+    // first-time check — they are in every window by construction.
+    private const double UbiquitousEntityShare = 0.30;
+
+    private static readonly Regex ChapterNumRx = new(@"^\s*Chapter\s+(\d+)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex TimeRx = new(@"\b\d{1,2}:\d\d\b", RegexOptions.Compiled);
+    private static readonly Regex QuoteSpanRx = new(@"[“""]([^”""\n]{16,200})[”""]", RegexOptions.Compiled);
+    private static readonly Regex OutlineChapterRx = new(@"\*\*Ch(\d+)\s*[-–—:]\s*([^*\n]{2,160})\*\*", RegexOptions.Compiled);
+    private static readonly Regex OutlineBeatRefRx = new(@"\bbeats?\s*#?\s*(\d{3,5})((?:\s*[/,]\s*#?\d{3,5})*)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex FirstTimeRx = new(@"\b(for the first time|had never (?:spoken|met|seen)|never spoken to|never met)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex GuidAttrRx = new(@"guid=""([0-9a-fA-F-]{36})""", RegexOptions.Compiled);
+    private static readonly Regex WsRx = new(@"\s+", RegexOptions.Compiled);
+
+    private static string Norm(string s) => WsRx.Replace(s, " ").Trim().ToLowerInvariant();
+
+    private int StructuralChecks(
+        List<StructBeat> beats, string? outline,
+        List<(Guid Id, string Name, string EntityType)> entities,
+        HashSet<string> entityNameTokens,
+        Action<FindingSeverity, string, string?, string?> file,
+        List<string> lines)
+    {
+        int count = 0;
+
+        // Per-beat derived data, computed once.
+        var stripped = beats.Select(b => BeatMarkup.StripEntityTags(b.Text)).ToList();
+        var strippedLower = stripped.Select(Norm).ToList();
+        var tokens = stripped.Select(s => WordRx.Matches(s).Select(m => m.Value.ToLowerInvariant()).ToList()).ToList();
+        var grams = tokens.Select(t =>
+        {
+            var set = new HashSet<string>();
+            for (int i = 0; i + AltSceneGramLen <= t.Count; i++)
+                set.Add(string.Join(' ', t.Skip(i).Take(AltSceneGramLen)));
+            return set;
+        }).ToList();
+        var distinct = tokens.Select(t => t.Where(w => w.Length >= 5 && !Stopwords.Contains(w) && !entityNameTokens.Contains(w)).ToHashSet()).ToList();
+        var markers = stripped.Select(s =>
+        {
+            var set = new HashSet<string>();
+            foreach (Match m in TimeRx.Matches(s)) set.Add("t:" + m.Value);
+            foreach (Match m in QuoteSpanRx.Matches(s)) set.Add("q:" + Norm(m.Groups[1].Value));
+            return set;
+        }).ToList();
+
+        // 6a. Alternate scene / repeated passage — same event told twice within a chapter window.
+        int pairs = 0;
+        var pairSeen = new HashSet<(int, int)>();
+        for (int i = 0; i < beats.Count; i++)
+        {
+            for (int j = i + 1; j < beats.Count && j <= i + AltSceneWindow; j++)
+            {
+                if (beats[j].ChapterId != beats[i].ChapterId) break;
+                pairs++;
+                var sharedGrams = grams[i].Intersect(grams[j]).ToList();
+                var sharedMarkers = markers[i].Intersect(markers[j]).ToList();
+                double jaccard = 0;
+                if (tokens[i].Count >= AltSceneMinTokens && tokens[j].Count >= AltSceneMinTokens)
+                {
+                    var inter = distinct[i].Intersect(distinct[j]).Count();
+                    var union = distinct[i].Union(distinct[j]).Count();
+                    jaccard = union == 0 ? 0 : (double)inter / union;
+                }
+                bool literal = sharedGrams.Count >= 2 || (sharedGrams.Count >= 1 && sharedMarkers.Count >= 2);
+                bool lexical = jaccard >= AltSceneJaccard;
+                if (!literal && !lexical) continue;
+                if (!pairSeen.Add((i, j))) continue;
+                count++;
+                var why = literal
+                    ? $"{sharedGrams.Count} shared {AltSceneGramLen}-word run(s)" + (sharedMarkers.Count > 0 ? $", {sharedMarkers.Count} shared marker(s)" : "")
+                    : $"{jaccard:P0} shared distinctive vocabulary";
+                var snippet = sharedGrams.FirstOrDefault() ?? sharedMarkers.FirstOrDefault()?[2..] ?? string.Join(", ", distinct[i].Intersect(distinct[j]).Take(8));
+                file(literal ? FindingSeverity.High : FindingSeverity.Medium,
+                    $"ALT-SCENE beats #{beats[i].Number} and #{beats[j].Number} ({beats[i].Chapter}): {why} — possibly the same scene told twice (a superseded draft left in the reading order). Read both before deciding.",
+                    snippet,
+                    "If one is an earlier draft of the other, delete it (or trim it to the part the survivor needs, as with Ch7 #2856). If both belong, no change.");
+            }
+        }
+        lines.Add($"[structure] alt-scene: examined {pairs} beat pair(s) across {beats.Select(b => b.ChapterId).Distinct().Count()} chapter(s).");
+
+        // 6b. Outline literal hooks — every **ChN - …** entry's timestamps, quoted lines and
+        // beat refs must exist in chapter N's prose. Zero hits means the prose dropped it or the
+        // outline is stale; either way the author decides, and the instrument must not.
+        var chapterBeats = new Dictionary<int, List<int>>();
+        for (int i = 0; i < beats.Count; i++)
+        {
+            var m = ChapterNumRx.Match(beats[i].Chapter ?? "");
+            if (m.Success && int.TryParse(m.Groups[1].Value, out var n))
+                (chapterBeats.TryGetValue(n, out var l) ? l : chapterBeats[n] = new List<int>()).Add(i);
+        }
+        var allNumbers = beats.Select(b => b.Number).ToHashSet();
+        int hooks = 0;
+        if (string.IsNullOrWhiteSpace(outline))
+        {
+            lines.Add("[structure] outline-hook: COULD NOT LOOK — node has no outline.");
+        }
+        else
+        {
+            var o = BeatMarkup.StripEntityTags(outline);
+            var entries = OutlineChapterRx.Matches(o).Cast<Match>().ToList();
+            for (int k = 0; k < entries.Count; k++)
+            {
+                var e = entries[k];
+                if (!int.TryParse(e.Groups[1].Value, out var chNum)) continue;
+                var end = k + 1 < entries.Count ? entries[k + 1].Index : Math.Min(o.Length, e.Index + 1500);
+                var block = o[e.Index..Math.Min(end, e.Index + 1500)];
+                // Italic parenthetical revision notes — "*(Revised 2026-09-05. The "01:14" entry
+                // was cut…)*" — are the outline talking about itself, not naming things the
+                // chapter must contain. Strip them before harvesting literals.
+                block = Regex.Replace(block, @"\*\((?:[^()]|\([^()]*\))*\)\*", " ");
+                var literals = new List<(string Kind, string Value)>();
+                foreach (Match m in TimeRx.Matches(block)) literals.Add(("time", m.Value));
+                foreach (Match m in QuoteSpanRx.Matches(block))
+                    if (WordRx.Matches(m.Groups[1].Value).Count >= 4) literals.Add(("quote", Norm(m.Groups[1].Value)));
+                foreach (Match m in OutlineBeatRefRx.Matches(block))
+                {
+                    // A ref the outline itself marks as cut/archived/deleted is provenance, not a
+                    // claim that the beat is in the book — e.g. "(beats 4368/512/497, archived V68)".
+                    var tail = block[m.Index..Math.Min(block.Length, m.Index + m.Length + 80)];
+                    if (Regex.IsMatch(tail, @"\b(cut|archived|deleted|removed|retired|superseded)\b", RegexOptions.IgnoreCase)) continue;
+                    literals.Add(("beat", m.Groups[1].Value));
+                    foreach (Match x in Regex.Matches(m.Groups[2].Value, @"\d{3,5}")) literals.Add(("beat", x.Value));
+                }
+                if (literals.Count == 0) continue;
+                hooks += literals.Count;
+
+                if (!chapterBeats.TryGetValue(chNum, out var idxs) || idxs.Count == 0)
+                {
+                    lines.Add($"[structure] outline-hook Ch{chNum}: COULD NOT LOOK — no beats under a node titled 'Chapter {chNum}'.");
+                    continue;
+                }
+                foreach (var (kind, value) in literals.Distinct())
+                {
+                    bool found = kind switch
+                    {
+                        "beat" => int.TryParse(value, out var bn) && allNumbers.Contains(bn),
+                        "time" => idxs.Any(i => stripped[i].Contains(value)),
+                        _ => idxs.Any(i => strippedLower[i].Contains(value)),
+                    };
+                    if (found) continue;
+                    count++;
+                    var shown = value.Length > 90 ? value[..90] + "…" : value;
+                    file(FindingSeverity.Medium,
+                        kind == "beat"
+                            ? $"OUTLINE-HOOK Ch{chNum} \"{e.Groups[2].Value.Trim()}\": the outline cites beat #{value}, which is not in this book."
+                            : $"OUTLINE-HOOK Ch{chNum} \"{e.Groups[2].Value.Trim()}\": the outline names {kind} \"{shown}\" for this chapter; no beat in Chapter {chNum} contains it (examined {idxs.Count} beat(s)).",
+                        null,
+                        "Either the prose dropped what the outline plans, or the outline is stale about what the book does. Show the author both sides; do not pick a winner here.");
+                }
+            }
+            lines.Add($"[structure] outline-hook: examined {hooks} literal(s) across {entries.Count} outline chapter entr(y/ies).");
+        }
+
+        // 6c. "First time" that isn't — a first-meeting phrase near an entity that already
+        // appeared earlier in reading order. Ubiquitous entities are exempt.
+        var tagCounts = new Dictionary<Guid, int>();
+        var firstTagIdx = new Dictionary<Guid, int>();
+        for (int i = 0; i < beats.Count; i++)
+            foreach (var g in GuidAttrRx.Matches(beats[i].Text).Cast<Match>().Select(m => Guid.TryParse(m.Groups[1].Value, out var gg) ? gg : Guid.Empty).Where(gg => gg != Guid.Empty).Distinct())
+            {
+                tagCounts[g] = tagCounts.GetValueOrDefault(g) + 1;
+                if (!firstTagIdx.ContainsKey(g)) firstTagIdx[g] = i;
+            }
+        var byId = entities.ToDictionary(e => e.Id);
+        string? HeadWord(string name)
+        {
+            foreach (Match m in WordRx.Matches(name))
+            {
+                var w = m.Value.ToLowerInvariant();
+                if (w.Length >= 4 && !Stopwords.Contains(w)) return w;
+            }
+            return null;
+        }
+        var heads = entities.Where(e => tagCounts.ContainsKey(e.Id))
+            .Select(e => (e.Id, e.Name, Head: HeadWord(e.Name)))
+            .Where(x => x.Head != null)
+            .ToList();
+        var firstHeadIdx = new Dictionary<Guid, int>();
+        foreach (var (id, _, head) in heads)
+        {
+            var rx = new Regex($@"\b{Regex.Escape(head!)}\b");
+            for (int i = 0; i < beats.Count; i++)
+                if (rx.IsMatch(strippedLower[i])) { firstHeadIdx[id] = i; break; }
+        }
+        int phrases = 0;
+        var ftSeen = new HashSet<(int, Guid)>();
+        for (int i = 0; i < beats.Count; i++)
+        {
+            foreach (Match m in FirstTimeRx.Matches(beats[i].Text))
+            {
+                phrases++;
+                var lo = Math.Max(0, m.Index - 300);
+                var hi = Math.Min(beats[i].Text.Length, m.Index + m.Length + 300);
+                var window = beats[i].Text[lo..hi];
+                var windowLower = Norm(BeatMarkup.StripEntityTags(window));
+                var candidates = new HashSet<Guid>();
+                foreach (Match g in GuidAttrRx.Matches(window))
+                    if (Guid.TryParse(g.Groups[1].Value, out var gg)) candidates.Add(gg);
+                foreach (var (id, _, head) in heads)
+                    if (Regex.IsMatch(windowLower, $@"\b{Regex.Escape(head!)}\b")) candidates.Add(id);
+                // One finding per (beat, phrase), naming every prior-seen entity in the window —
+                // not one per entity. A crowded scene fanned out to 12 findings for one clause.
+                var priors = new List<string>();
+                foreach (var id in candidates)
+                {
+                    if (!byId.TryGetValue(id, out var ent)) continue;
+                    if ((double)tagCounts.GetValueOrDefault(id) / beats.Count >= UbiquitousEntityShare) continue;
+                    var first = Math.Min(firstTagIdx.GetValueOrDefault(id, int.MaxValue), firstHeadIdx.GetValueOrDefault(id, int.MaxValue));
+                    if (first >= i) continue;
+                    if (!ftSeen.Add((i, id))) continue;
+                    priors.Add($"{ent.Name} (first at beat #{beats[first].Number}, position {first + 1})");
+                }
+                if (priors.Count == 0) continue;
+                count++;
+                var stripWin = BeatMarkup.StripEntityTags(window);
+                file(FindingSeverity.Medium,
+                    $"FIRST-TIME beat #{beats[i].Number} ({beats[i].Chapter}): \"{m.Value}\" within reach of {string.Join("; ", priors)} — each already on the page earlier. A first meeting that isn't, or a stale draft. Read the beat.",
+                    stripWin.Length > 240 ? stripWin[..240] + "…" : stripWin,
+                    "If the earlier appearance is real, this clause must acknowledge it (the author's words). If this beat is a superseded draft, it goes. If the phrase is about something else entirely, dismiss.");
+            }
+        }
+        lines.Add($"[structure] first-time: examined {phrases} phrase(s) against {heads.Count} tagged entit(y/ies).");
+
+        // 6d. Cross-batch insertion — Beat.Number is a global creation counter, so a beat whose
+        // number sits far outside its chapter's cluster was created in a different batch and
+        // placed here later. Catches #4368-in-a-4xx-5xx-chapter; does NOT catch same-batch
+        // alternates (Ch12's #5229 sat among its 5xxx siblings) — that is what 6a is for.
+        int chaptersChecked = 0;
+        foreach (var grp in beats.GroupBy(b => b.ChapterId))
+        {
+            var nums = grp.Select(b => (double)b.Number).OrderBy(x => x).ToList();
+            if (nums.Count < 5) continue;
+            chaptersChecked++;
+            var median = nums[nums.Count / 2];
+            var mad = nums.Select(x => Math.Abs(x - median)).OrderBy(x => x).ToList()[nums.Count / 2];
+            var thr = Math.Max(150, 3 * mad);
+            foreach (var b in grp)
+            {
+                if (Math.Abs(b.Number - median) <= thr) continue;
+                count++;
+                file(FindingSeverity.Low,
+                    $"BATCH-OUTLIER beat #{b.Number} ({b.Chapter}): far from the chapter's beat-number cluster (median {median:F0}, threshold ±{thr:F0}) — created in a different generation batch and inserted here. Check that it belongs in the reading order.",
+                    null,
+                    "Read it against its neighbours. An inserted beat is fine if the story needs it; a leftover from another draft is not.");
+            }
+        }
+        lines.Add($"[structure] batch-outlier: examined {beats.Count} beat(s) across {chaptersChecked} chapter(s) with ≥5 beats.");
+
+        return count;
     }
 
     /// <summary>Distinctive 3-4-grams: every token lowercased; n-grams that are all stopwords

@@ -49,6 +49,7 @@ public class CraftInstrumentTools(
                 node_code = r.NodeCode, beats_scanned = r.BeatsScanned,
                 echo_findings = r.EchoFindings, phrase_findings = r.PhraseFindings,
                 pet_word_findings = r.PetWordFindings, dialogue_findings = r.DialogueFindings,
+                structure_findings = r.StructureFindings,
                 lines = r.Lines,
             }, JsonOpts);
         }
