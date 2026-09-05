@@ -722,6 +722,36 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
    anti-tells held (escalation monotonic, event types varied, no moral gloss, no epilogue,
    subplot executed). BLOCKER findings fix per logic-sweep minimal-splice rules, then re-audit.
 
+## Prose Is Ground Truth — five HARD rules for anyone auditing a book (author ruling 2026-09-05)
+
+Written after a session in which the assistant stated two false conclusions as fact, overwrote a
+correct memory with a wrong retraction, and deleted outline-hooked beats without checking the
+outline. Root cause of every one: **treating the index as the book.** Tags, `event_summary`,
+outline lines, memory notes, and instrument output are all lossy *derivatives* of the prose.
+
+1. **Prose is ground truth.** A missing entity tag, a stale `event_summary`, an absent outline
+   line, or a silent instrument is a *metadata defect to file* — never evidence about the story.
+   (BCODA beat #521 is Mrs. Chen's apartment; she is never *named* in it, so it carried no tag.
+   "No tag" was read as "not her." It is the book's opening scene.)
+2. **Read the whole chapter before ruling on anything in it.** Every real BCODA defect on record —
+   Ch7's triple fight, Ch1's elevator, Ch12's #5229/#5346, the togishi "first time" line — was
+   found by reading in reading order, and missed by every instrument and every sampled slice. A
+   chapter that doesn't fit in context is the signal to build a deterministic check, not to
+   sample and extrapolate.
+3. **Before deleting or rewriting any beat, grep the outline for every distinctive literal in it**
+   (timestamps, named objects, quoted lines). Any hit → stop, show the author both sides, wait.
+4. **Memory holds rulings and rules only.** Findings go in the `Findings` table, tied to text
+   hashes, where they expire when the text changes. No "OPEN" checklists carried across sessions.
+5. **Never declare resolved what was not read in full context.** "Two different togishi —
+   intentional echo" was a story manufactured to close an item. Say "I don't know" instead.
+
+Corollaries that are code, not doctrine (see the 2026-09-05 plan): every instrument prints
+`examined N of M`; zero with M=0 prints **COULD NOT LOOK**, never "clean". `event_summary_state
+== stale` means the text changed after the summary was written and nobody re-ran
+`--generate-event-list` — until it's current, every synopsis-based instrument is reading fiction.
+None of this belongs in `ENGINE.md`/DCM: the Prime Rule there is "a defect is fixed in code, never
+by writing a paragraph about it," and DCM doctrine shapes the *writing* model, not the auditor.
+
 ## Quality Verification SOP — Logic Sweeps, NOT Votes (LAW: SS-A44)
 
 **Default QA for any book that changes or needs validation is a LOGIC & CONTINUITY SWEEP,

@@ -111,6 +111,17 @@ public class BeatEventSummaryService
 
         if (limit.HasValue) candidates = candidates.Take(limit.Value).ToList();
 
+        // A dry run must be FREE. Until 2026-09-05 it ran every LLM batch and only skipped the
+        // write — so "quote me the cost" cost the full pass, and a caller that stopped waiting
+        // left the Hub billing for output nobody would ever read (observed on BCODA, ~499 stale
+        // beats). Count, report the ceiling ("N of M"), and return before the loop.
+        if (dryRun)
+        {
+            progress?.Invoke($"[dry-run] {candidates.Count} of {all.Count} beat(s) would be regenerated " +
+                             $"({skippedFromCache} already current, hash-gated); no LLM call made.");
+            return new BeatEventListReport(nodeCode, candidates.Count, 0, 0, skippedFromCache);
+        }
+
         if (candidates.Count == 0)
             return new BeatEventListReport(nodeCode, 0, 0, 0, skippedFromCache);
 

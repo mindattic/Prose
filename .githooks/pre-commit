@@ -57,8 +57,14 @@ fi
 # at key rotation for a file lock, while votingEnabled=false meant the key test
 # was a guaranteed no-op skip that could not have failed at all. Build here,
 # attribute the failure honestly, and only then let the key test speak for keys.
-echo "pre-commit: building Prose.UnitTests…"
-build_log=$(dotnet build v3/Prose.UnitTests -c Release --nologo --verbosity quiet 2>&1) || {
+# Build (and test) through --artifacts-path so the whole graph's bin/obj lands OUTSIDE the repo.
+# Prose.Mcp.exe runs out of the repo's v3/Prose.Mcp/bin/Release for an entire Claude Code
+# session, so any in-repo build of Prose.Mcp dies on MSB3021/MSB3027 (2026-08-24, and again
+# 2026-09-05 when this gate blocked a code commit for exactly that). Same fix as
+# v3/Prose.Hub/tools/deploy.ps1. Killing the MCP server to commit is not acceptable.
+ART="${LOCALAPPDATA:-$HOME/.prose}/Prose/build-artifacts"
+echo "pre-commit: building Prose.UnitTests… (artifacts: $ART)"
+build_log=$(dotnet build v3/Prose.UnitTests -c Release --artifacts-path "$ART" --nologo --verbosity quiet 2>&1) || {
   echo "$build_log" | tail -20 >&2
   if echo "$build_log" | grep -qE 'MSB3021|MSB3027|being used by another process'; then
     cat >&2 <<'MSG'
@@ -79,7 +85,7 @@ MSG
 }
 
 echo "pre-commit: validating Prose trusted LLM panel keys (live)…"
-if dotnet test v3/Prose.UnitTests -c Release --no-build \
+if dotnet test v3/Prose.UnitTests -c Release --no-build --artifacts-path "$ART" \
       --filter "Category=LiveKeysTrusted" \
       --nologo --verbosity quiet; then
   echo "pre-commit: all trusted LLM keys valid — proceeding."

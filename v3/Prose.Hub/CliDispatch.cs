@@ -3,6 +3,7 @@ using System.Reflection;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
@@ -88,17 +89,31 @@ public static class CliDispatch
     public static async Task<ExecuteOutcome> ExecuteCoreAsync(InvokeRequest req, IServiceProvider sp, string source = "cli")
     {
         var label = req.HandlerClass + (string.IsNullOrWhiteSpace(req.Method) ? "" : $".{req.Method}");
-        HubConsoleEcho.LogIn(source, label, string.Join(' ', req.Args));
+        var argLine = string.Join(' ', req.Args);
+        HubConsoleEcho.LogIn(source, label, argLine);
+
+        // The Command Ledger row below is written only on COMPLETION, and HubConsoleEcho goes to
+        // the Hub's console, not to the durable Serilog files — so a command that is still running
+        // (or queued behind ConsoleGate) has left no durable trace anywhere. On 2026-09-05 three
+        // abandoned commands (one of them a billed LLM pass) were invisible to `search_logs` for
+        // exactly that reason. A START line with no END line is the honest signal.
+        var logger = sp.GetService<ILoggerFactory>()?.CreateLogger("CliDispatch");
+        logger?.LogInformation("[cli-invoke] START {Source} {Label} {Args}", source, label, argLine);
 
         var sw = Stopwatch.StartNew();
         var outcome = await ExecuteCoreInnerAsync(req, sp);
         sw.Stop();
 
+        var ok = outcome.ErrorCode == null && outcome.Response?.ExitCode == 0;
         HubConsoleEcho.LogOut(source, label,
-            success: outcome.ErrorCode == null && outcome.Response?.ExitCode == 0,
+            success: ok,
             outputChars: outcome.Response?.Output.Length ?? 0,
             elapsedMs: sw.Elapsed.TotalMilliseconds,
             error: outcome.ErrorCode ?? outcome.Response?.Error);
+        logger?.LogInformation("[cli-invoke] END {Source} {Label} ok={Ok} exit={Exit} {Ms:F0}ms out={Chars}ch{Error}",
+            source, label, ok, outcome.Response?.ExitCode, sw.Elapsed.TotalMilliseconds,
+            outcome.Response?.Output.Length ?? 0,
+            string.IsNullOrWhiteSpace(outcome.ErrorCode ?? outcome.Response?.Error) ? "" : " ERROR");
 
         await WriteLedgerEntryAsync(req, sp, source, outcome, sw.Elapsed.TotalMilliseconds);
         return outcome;

@@ -75,9 +75,19 @@ if (Test-Path $targetExe) {
 }
 
 # ── Clear build cache ──────────────────────────────────────────────────────
+# The MCP server (Prose.Mcp.exe) runs out of the REPO's Prose.Mcp\bin\Release — not a published
+# copy — and it is alive for the whole of a Claude Code session. Wiping that folder deletes every
+# DLL the process has not yet lazy-loaded, and rebuilding into it fails on the ones it has
+# (observed 2026-09-05: the session-start build hook died on exactly this lock). So: never touch
+# Prose.Mcp's bin/obj while it is running, and publish through --artifacts-path below so the build
+# graph never writes into any repo bin/obj at all. Killing Prose.Mcp.exe is not an option here —
+# it ends the user's session.
+$mcpLive = [bool](Get-Process 'Prose.Mcp' -ErrorAction SilentlyContinue)
 Write-Host ''
 Write-Host '  Clearing build cache (bin/obj)...' -ForegroundColor Cyan
+if ($mcpLive) { Write-Host '    Prose.Mcp.exe is running - leaving Prose.Mcp\bin and obj alone.' -ForegroundColor DarkYellow }
 foreach ($rel in @('Prose.Hub', 'Prose.Mcp', 'Prose.Core')) {
+    if ($mcpLive -and $rel -eq 'Prose.Mcp') { continue }
     $projRoot = Resolve-Path (Join-Path $projDir "..\$rel") -ErrorAction SilentlyContinue
     if (-not $projRoot) { continue }
     foreach ($d in @((Join-Path $projRoot 'bin'), (Join-Path $projRoot 'obj'))) {
@@ -93,10 +103,15 @@ Write-Host ''
 Write-Host "  Publishing $proj" -ForegroundColor Cyan
 Write-Host "    -> $out\$exeName"
 
+# --artifacts-path relocates bin/ AND obj/ for EVERY project in the build graph (Hub, Mcp, Core,
+# Cli) out of the repo, so this publish can never collide with the live Prose.Mcp.exe's own
+# bin\Release (see the clear-cache note above). The single-file bundle still lands in $out.
+$artifacts = Join-Path $env:LOCALAPPDATA 'Prose\build-artifacts'
 dotnet publish $proj `
     --configuration Release `
     --runtime win-x64 `
     --self-contained false `
+    --artifacts-path $artifacts `
     /p:PublishSingleFile=true `
     /p:IncludeNativeLibrariesForSelfExtract=true `
     --output $out | Out-Host

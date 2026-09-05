@@ -60,7 +60,20 @@ public static class HubCliClient
         HttpResponseMessage resp;
         try
         {
-            resp = await Http.PostAsJsonAsync("api/cli-invoke", new { handlerClass, args, universe, method, extraParamValue, cwd, stdin });
+            var post = Http.PostAsJsonAsync("api/cli-invoke", new { handlerClass, args, universe, method, extraParamValue, cwd, stdin });
+
+            // The Hub captures a command's entire console output and returns it in ONE response,
+            // so a long command is silent for its whole duration — indistinguishable from a hang.
+            // And killing this client does not cancel the handler on the Hub: the work continues
+            // (LLM billing included) with the output discarded, and CLI commands there run one at
+            // a time, so everything launched afterwards queues behind it. On 2026-09-05 three
+            // commands were killed on that misreading in one session; one was a billed LLM pass.
+            // Say so once, after a short grace period, instead of letting silence read as "hung".
+            if (await Task.WhenAny(post, Task.Delay(TimeSpan.FromSeconds(8))) != post)
+                Console.Error.WriteLine($"[hub] {handlerClass} is still running on the Hub. Its output arrives only when it " +
+                                        "finishes; killing this process does NOT stop it there, and other CLI commands " +
+                                        "will wait behind it.");
+            resp = await post;
         }
         catch (HttpRequestException ex)
         {
