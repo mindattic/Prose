@@ -132,7 +132,10 @@ public class ContinuityService
         //                            "against wall by stool". That is nine moments, not nine facts.
         //   physical_state         ← `status_current` is already here. "bleeding from side" (ch.19)
         //                            against "steady hands" (ch.35), sixteen chapters apart.
-        "weapon_carry_location", "physical_state",
+        //   physical_condition     ← the same predicate as `physical_state`, one row above, under
+        //                            the name a different pass gave it: "bleeding" (ch.4) against
+        //                            "bleeding from side wound" (ch.19).
+        "weapon_carry_location", "physical_state", "physical_condition",
     };
 
     /// <summary>
@@ -489,6 +492,27 @@ public class ContinuityService
         var ta = x.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToHashSet(StringComparer.Ordinal);
         var tb = y.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToHashSet(StringComparer.Ordinal);
 
+        // Identical UNIT DESIGNATORS — added 2026-09-06. Two objects carrying exactly the same
+        // non-empty set of designator tokens are naming one identified thing at two levels of
+        // detail, not two things. Kyle's address arrived as "apartment 2D" (ch.38), "the Pivot,
+        // room 2D" (ch.2) and "2D, second floor of The Pivot" (ch.19); Pixel's as three more
+        // spellings of 2E. Nine of the book's last ten contradictions were exactly this, and no
+        // wording rule reaches them — "apartment 2D" and "the Pivot, room 2D" share one word in
+        // five.
+        //
+        // A designator carries a digit AND a letter ("2d", "2e", "a12"), never a bare number.
+        // That exclusion is load-bearing: on a bare count, "fired 2 rounds" and "2 rounds
+        // remaining" share {2} while asserting opposite things, and merging them would be a
+        // fabricated agreement. A room code is an identifier; a count is a value.
+        //
+        // Requiring the sets to be EQUAL rather than merely to intersect is what keeps the real
+        // defect findable: this session's actual canon question was whether Kyle's door reads 2W,
+        // 2E or 2D, and {2d} vs {2e} are unequal, so that group still contradicts exactly as it
+        // did.
+        var da = ta.Where(IsUnitDesignator).ToHashSet(StringComparer.Ordinal);
+        var db = tb.Where(IsUnitDesignator).ToHashSet(StringComparer.Ordinal);
+        if (da.Count > 0 && da.SetEquals(db)) return true;
+
         // A ONE-token object may be subsumed only when it is a DESIGNATOR — a token carrying a
         // digit (a room number, a model number, a count). Added 2026-09-06 for Pixel's address,
         // recorded as "2E" in one chapter and "2E, second floor of The Pivot" in another: one
@@ -535,6 +559,11 @@ public class ContinuityService
         "neither", "nor", "denied", "denies", "absent", "removed", "gone", "lost",
         "former", "formerly", "ex", "unarmed",
     };
+
+    /// <summary>A unit designator: an alphanumeric token carrying both a digit and a letter
+    /// ("2d", "2e", "a12"). A bare number is a value, not an identifier, and is excluded.</summary>
+    private static bool IsUnitDesignator(string token) =>
+        token.Any(char.IsDigit) && token.Any(char.IsLetter);
 
     /// <summary>True when the already-normalized object carries an absence word as a whole token.</summary>
     private static bool CarriesNegation(string normalized) =>

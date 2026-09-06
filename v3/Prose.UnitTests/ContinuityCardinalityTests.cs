@@ -250,6 +250,36 @@ public class ContinuityCardinalityTests
         Assert.That(ContinuityService.ObjectsSayTheSameThing("fixer", "fixer who routes contracts"), Is.False);
     }
 
+    [Test]
+    public void Paraphrase_Merges_One_Address_Written_At_Different_Zoom_Levels()
+    {
+        // Nine of BCODA's last ten contradictions. No wording rule reaches these: "apartment 2D"
+        // and "the Pivot, room 2D" share one word in five.
+        Assert.That(ContinuityService.ObjectsSayTheSameThing(
+            "apartment 2D", "the Pivot, room 2D"), Is.True);
+        Assert.That(ContinuityService.ObjectsSayTheSameThing(
+            "2D, second floor of The Pivot", "apartment 2D"), Is.True);
+        Assert.That(ContinuityService.ObjectsSayTheSameThing(
+            "The Pivot, room 2E", "apartment 2E (room across hall from Kyle)"), Is.True);
+    }
+
+    [Test]
+    public void Paraphrase_Designator_Rule_Still_Catches_A_Changed_Address()
+    {
+        // The session's real canon question was whether Kyle's door reads 2W, 2E or 2D. Requiring
+        // the designator sets to be EQUAL rather than merely to intersect is what keeps that
+        // question findable.
+        Assert.That(ContinuityService.ObjectsSayTheSameThing("apartment 2D", "apartment 2E"), Is.False);
+        Assert.That(ContinuityService.ObjectsSayTheSameThing(
+            "The Pivot, room 2W", "The Pivot, room 2D"), Is.False);
+        // A bare number is a value, not an identifier. These two share {2} and assert opposite
+        // things; treating a count as a designator would manufacture an agreement.
+        Assert.That(ContinuityService.ObjectsSayTheSameThing(
+            "fired 2 rounds", "2 rounds remaining"), Is.False);
+        // And no designator on either side means the rule never fires.
+        Assert.That(ContinuityService.ObjectsSayTheSameThing("nine years", "eleven years"), Is.False);
+    }
+
     // ── boolean polarity (2026-09-06) ────────────────────────────────────────
 
     private static ContinuityClaim BoolClaim(string predicate, string obj) => new()
