@@ -174,6 +174,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // Strand Progress Dashboard: every non-archived book across every universe, by design
         // (IgnoreQueryFilters() — see ProgressCli's own doc comment).
         "--progress",
+        // RFC 0009 Phase 0 measurement: the Beat.Version histogram is corpus-wide by design —
+        // the point is to measure every book, not one universe (see EditDistributionCli).
+        "--edit-distribution",
         // /show lookup: subject could be in any universe; searches every universe by design
         // (IgnoreQueryFilters() — see ShowCli's own doc comment).
         "--show",
@@ -2908,6 +2911,15 @@ if (args.Contains("--generate-event-list"))
 if (args.Contains("--audit-event-summaries"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("AuditEventSummariesCli", args);
+    return;
+}
+
+// prose --edit-distribution [--slug <slug>] [--top N] [--json]
+// RFC 0009 Phase 0: Beat.Version histogram per book + corpus-wide, and the most-rewritten beats.
+// Read-only, free. The baseline that must not rise once the autonomous rewriters are deleted.
+if (args.Contains("--edit-distribution"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("EditDistributionCli", args);
     return;
 }
 
