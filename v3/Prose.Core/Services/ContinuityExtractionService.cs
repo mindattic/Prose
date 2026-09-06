@@ -556,6 +556,25 @@ public class ContinuityExtractionService
             CandidatesValidated = grouped.Count,
         };
 
+        // Replace, don't accumulate (2026-09-06). Re-extracting a source used to leave the prior
+        // pass's claims live, so the same fact piled up paraphrase copies that the
+        // same-predicate/different-object detector counted as contradictions — see
+        // ContinuityService.SupersedeLiveClaimsForSource for the measured BCODA evidence. Done
+        // only once real candidates survived validation: a failed or empty extraction (LLM outage,
+        // truncated array) must never wipe a source's existing ledger and leave nothing behind,
+        // which is the same fail-open trap already fixed in BehavioralInvariantEnforcer and
+        // SwainAuditService.
+        if (grouped.Count > 0)
+        {
+            var superseded = store.SupersedeLiveClaimsForSource(
+                sourceChapterId, sourceType,
+                $"superseded by re-extraction {DateTime.UtcNow:yyyy-MM-dd HH:mm}Z");
+            if (superseded > 0)
+                log.LogInformation(
+                    "[continuity] superseded {Count} prior {SourceType} claim(s) for source {Source} before re-extraction",
+                    superseded, sourceType, sourceChapterId);
+        }
+
         foreach (var cand in grouped)
         {
             var resolved = ResolveEntity(cand.EntityName);

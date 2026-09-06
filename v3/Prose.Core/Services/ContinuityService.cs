@@ -1158,6 +1158,48 @@ public class ContinuityService
         return claims.Count;
     }
 
+    /// <summary>
+    /// Supersede every live claim previously extracted from ONE source scope (a chapter, or an
+    /// outline section), so a re-extraction of that scope REPLACES its own prior output instead of
+    /// piling a second copy on top of it.
+    ///
+    /// <para>2026-09-06. Without this, extraction was purely additive: each pass minted fresh
+    /// claims and left the previous pass's alive, so the same fact accumulated paraphrase copies
+    /// and the same-predicate/different-object detector read every pile as a contradiction. BCODA
+    /// showed it plainly — <c>[The Roost] acquisition_effective_date</c> held three phrasings of
+    /// one date and <c>acquisition_status</c> four phrasings of one status, all from ch.15, all
+    /// counted as contradictions; <c>[Kyle] age</c> held three mutually-consistent variants. The
+    /// publish gate was therefore measuring extraction duplication rather than story defects, and
+    /// it moved the WRONG WAY when the book was fixed: five prose splices took the contradiction
+    /// count from 47 to 86, because editing a beat re-extracts its chapter. <c>reassess</c> cannot
+    /// clear these — its paraphrase rule requires the claim to have no peer, and duplicates have
+    /// peers by definition.</para>
+    ///
+    /// <para>Scoped by <c>SourceChapterId</c> + <c>SourceType</c> so a prose re-extraction never
+    /// touches entity-record or outline claims about the same entities — those have their own
+    /// refresh paths and are not what this pass is replacing. Reversible: the rows are
+    /// system-versioned and marked SUPERSEDED, never deleted. Claims a human has ruled on
+    /// (REJECTED / SUPERSEDED already) are untouched, as are APPLIED ones, since re-extraction is
+    /// not evidence against a decision somebody made.</para>
+    /// </summary>
+    public int SupersedeLiveClaimsForSource(string sourceChapterId, string sourceType, string note)
+    {
+        if (string.IsNullOrWhiteSpace(sourceChapterId)) return 0;
+        using var db = dbFactory.CreateDbContext();
+        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED" };
+        var claims = db.ContinuityClaims
+            .Where(c => c.SourceChapterId == sourceChapterId
+                     && c.SourceType == sourceType
+                     && live.Contains(c.Status)
+                     && c.AppliedAt == null)
+            .ToList();
+        if (claims.Count == 0) return 0;
+        var now = DateTime.UtcNow.ToString("o");
+        foreach (var c in claims) ApplyStatus(c, "SUPERSEDED", now, note);
+        db.SaveChanges();
+        return claims.Count;
+    }
+
     public void RejectClaim(string claimUid, string note = "")
     {
         using var db = dbFactory.CreateDbContext();
