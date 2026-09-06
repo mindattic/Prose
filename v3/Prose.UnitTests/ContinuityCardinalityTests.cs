@@ -243,9 +243,10 @@ public class ContinuityCardinalityTests
         Assert.That(ContinuityService.ObjectsSayTheSameThing(
             "room 2E, across the hall from Kyle", "2E"), Is.True);
 
-        // The reason the floor cannot simply drop to one token for everything: this pair is the
-        // founding defect of the whole Story Ledger programme, and it must stay on the pile.
-        Assert.That(ContinuityService.ObjectsSayTheSameThing("Seito", "Seito's apprentice"), Is.False);
+        // The reason the floor cannot simply drop to one token for everything: a bare name is a
+        // token subset of every phrase built around it, and those phrases are usually claims about
+        // a DIFFERENT person. This pair must stay on the pile.
+        Assert.That(ContinuityService.ObjectsSayTheSameThing("Marrow", "Marrow's apprentice"), Is.False);
         Assert.That(ContinuityService.ObjectsSayTheSameThing("live", "delivered to the lab"), Is.False);
         Assert.That(ContinuityService.ObjectsSayTheSameThing("fixer", "fixer who routes contracts"), Is.False);
     }

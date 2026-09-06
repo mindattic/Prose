@@ -135,7 +135,10 @@ public class ContinuityService
         //   physical_condition     ← the same predicate as `physical_state`, one row above, under
         //                            the name a different pass gave it: "bleeding" (ch.4) against
         //                            "bleeding from side wound" (ch.19).
-        "weapon_carry_location", "physical_state", "physical_condition",
+        //   weapon_type_secondary  ← loadout for one job, not an invariant: "sword" (ch.2) against
+        //                            "gun" (ch.21). Kyle carries two named blades and sometimes a
+        //                            sidearm, and `weapon_carry` is already here for this reason.
+        "weapon_carry_location", "physical_state", "physical_condition", "weapon_type_secondary",
     };
 
     /// <summary>
@@ -304,6 +307,21 @@ public class ContinuityService
         "job_type", "job_title", "job_role",
         "employment_status", "employment_type",
         "role", "role_in_crew", "role_on_crew", "crew_role", "role_in_operation",
+
+        // The residence cluster (author ruling 2026-09-06). Not multi-valued the way occupation is
+        // — Kyle has one home — but multi-GRANULAR, which produces the identical false positives:
+        // district ⊃ neighborhood ⊃ building ⊃ unit ⊃ room, all true at once, all recorded under
+        // one predicate. "apartment 2D" (ch.38), "the Pivot, room 2D" (ch.2), "West Town" (ch.32)
+        // and "apartment in GLMZ district" (ch.18) are four zoom levels on one address, and they
+        // were the last four contradictions in the book.
+        //
+        // The cost is stated plainly: a genuine address CHANGE will no longer contradict here. The
+        // ruling weighed that against what actually happened — this session's real address question
+        // (2W or 2E or 2D?) was found by reading the prose and put to the author, not surfaced by
+        // this detector, which had instead spent 43 rows on nine spellings of things that agreed.
+        // `apartment_number` is deliberately NOT in this list: it holds the unit alone, at one
+        // granularity, so it is still the row that catches a moved door.
+        "residence", "residence_location", "location_residence",
     };
 
     /// <summary>True when the predicate belongs to a <see cref="SetValuedPredicateFamilies"/>
@@ -520,11 +538,11 @@ public class ContinuityService
         // floor.
         //
         // Why designators and not any single word: the floor was asked to come down to one token
-        // outright, and it cannot. `father_name` "Seito" is a token subset of "Seito's apprentice",
-        // and merging those two is precisely the defect this ledger was built to catch — a
-        // fabricated parent quietly absorbed into a claim about someone else. A digit-bearing token
-        // is the case where the short form really is an identifier that the long form annotates,
-        // and a name never qualifies.
+        // outright, and it cannot. A bare name is a token subset of every phrase built around it,
+        // and those phrases are usually claims about a DIFFERENT person — "<name>" against
+        // "<name>'s apprentice". Quietly absorbing one into the other is precisely the defect this
+        // ledger was built to catch. A digit-bearing token is the case where the short form really
+        // is an identifier that the long form annotates, and a name never qualifies.
         if (ta.Count < 2 || tb.Count < 2)
         {
             var small = ta.Count <= tb.Count ? ta : tb;
