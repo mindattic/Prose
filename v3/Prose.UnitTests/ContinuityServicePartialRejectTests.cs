@@ -12,6 +12,13 @@ namespace Prose.UnitTests;
 /// re-forms a group from claims in the "live" status set. MakeCanonical's new
 /// onlyRejectClaimUids parameter lets a caller reject only the claims whose edit actually landed,
 /// leaving the rest at their current live status.
+///
+/// <para>The contested predicate here is an incidental stand-in for "any single-valued fact two
+/// claims disagree about" — nothing in this fixture is about the predicate itself. It was
+/// <c>role</c> until 2026-09-06, when <c>role</c> became set-valued (a person holds several roles
+/// at once, so a second value stopped forming a contradiction group at all) and these tests
+/// started failing for a reason that had nothing to do with what they cover. Swapped to
+/// <c>birthplace</c>, which is genuinely one value forever.</para>
 /// </summary>
 [TestFixture]
 public class ContinuityServicePartialRejectTests
@@ -50,9 +57,9 @@ public class ContinuityServicePartialRejectTests
     public void MakeCanonical_WithOnlyRejectClaimUids_LeavesUnlistedSiblingLive()
     {
         var entityId = Guid.NewGuid().ToString("N");
-        var winner = svc.Upsert(Claim(entityId, "Sable", "role", "fixer")).Claim!;
-        var editedLoser = svc.Upsert(Claim(entityId, "Sable", "role", "contractor")).Claim!;
-        var unresolvedLoser = svc.Upsert(Claim(entityId, "Sable", "role", "broker")).Claim!;
+        var winner = svc.Upsert(Claim(entityId, "Sable", "birthplace", "Northpoint")).Claim!;
+        var editedLoser = svc.Upsert(Claim(entityId, "Sable", "birthplace", "Pilsen")).Claim!;
+        var unresolvedLoser = svc.Upsert(Claim(entityId, "Sable", "birthplace", "West Town")).Claim!;
         var unresolvedLoserStatusBefore = svc.GetByEntity(entityId).First(c => c.ClaimUid == unresolvedLoser.ClaimUid).Status;
 
         svc.MakeCanonical(winner.ClaimUid, "test", onlyRejectClaimUids: new HashSet<string> { editedLoser.ClaimUid });
@@ -70,12 +77,12 @@ public class ContinuityServicePartialRejectTests
     public void MakeCanonical_WithOnlyRejectClaimUids_UnresolvedSiblingStillFormsContradictionGroup()
     {
         var entityId = Guid.NewGuid().ToString("N");
-        var winner = svc.Upsert(Claim(entityId, "Sable", "role", "fixer")).Claim!;
-        var unresolvedLoser = svc.Upsert(Claim(entityId, "Sable", "role", "broker")).Claim!;
+        var winner = svc.Upsert(Claim(entityId, "Sable", "birthplace", "Northpoint")).Claim!;
+        var unresolvedLoser = svc.Upsert(Claim(entityId, "Sable", "birthplace", "West Town")).Claim!;
 
         svc.MakeCanonical(winner.ClaimUid, "test", onlyRejectClaimUids: new HashSet<string>());
 
-        var group = svc.GetContradictionGroups().FirstOrDefault(g => g.EntityId == entityId && g.Predicate == "role");
+        var group = svc.GetContradictionGroups().FirstOrDefault(g => g.EntityId == entityId && g.Predicate == "birthplace");
         Assert.That(group, Is.Not.Null,
             "the unresolved loser must keep contradicting the now-CANONICAL winner so the next " +
             "reconciliation pass retries the edit, instead of silently vanishing");
@@ -86,8 +93,8 @@ public class ContinuityServicePartialRejectTests
     public void MakeCanonical_WithNullRejectSet_KeepsOriginalBlanketBehavior()
     {
         var entityId = Guid.NewGuid().ToString("N");
-        var winner = svc.Upsert(Claim(entityId, "Sable", "role", "fixer")).Claim!;
-        var loser = svc.Upsert(Claim(entityId, "Sable", "role", "broker")).Claim!;
+        var winner = svc.Upsert(Claim(entityId, "Sable", "birthplace", "Northpoint")).Claim!;
+        var loser = svc.Upsert(Claim(entityId, "Sable", "birthplace", "West Town")).Claim!;
 
         svc.MakeCanonical(winner.ClaimUid, "test");
 

@@ -103,13 +103,16 @@ public class ContinuityServiceTests
         // text is identical to one of the two contested claims' Object (a natural thing to pass
         // when you just mean "this side is right"), the hash collides with that claim's own
         // already-tracked ClaimUid and EF throws attaching a "new" row under the same key.
+        // The predicate is an incidental stand-in for "a single-valued fact two claims disagree
+        // about"; this test is about Resolve's uid hashing, not cardinality. It was `occupation`
+        // until 2026-09-06, when occupation became set-valued and stopped contradicting at all.
         var entityId = Guid.NewGuid().ToString("N");
-        var a = svc.Upsert(MakeClaim(entityId, "occupation", "notary")).Claim;
-        var b = svc.Upsert(MakeClaim(entityId, "occupation", "Scribe")).Claim;
+        var a = svc.Upsert(MakeClaim(entityId, "birthplace", "Ostmere")).Claim;
+        var b = svc.Upsert(MakeClaim(entityId, "birthplace", "Ashfell")).Claim;
         Assert.That(b.Status, Is.EqualTo("CONTRADICTED"));
 
         ResolveResult result = null!;
-        Assert.DoesNotThrow(() => result = svc.Resolve(a.ClaimUid, b.ClaimUid, "custom", "Scribe", "author call"));
+        Assert.DoesNotThrow(() => result = svc.Resolve(a.ClaimUid, b.ClaimUid, "custom", "Ashfell", "author call"));
         Assert.That(result.Winner.ClaimUid, Is.EqualTo(b.ClaimUid));
         Assert.That(result.Winner.Status, Is.EqualTo("CANONICAL"));
         Assert.That(result.Loser.Status, Is.EqualTo("REJECTED"));

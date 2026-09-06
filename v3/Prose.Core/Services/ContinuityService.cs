@@ -115,7 +115,76 @@ public class ContinuityService
         "traveling_with", "location_at_chapter_start", "sleep_status", "current_task",
         "weapon_carry", "carries_item", "carries_equipment", "carries_weapon",
         "injury", "injury_location", "shoulder_injury",
+
+        // Added 2026-09-06 (author-approved, measured on BCODA's 43 live contradiction groups).
+        // All three name a fact that is true OF ONE SCENE and carries no claim about any other:
+        //   arrival_time      "08:00" (ch.5) vs "11 minutes after Able left" (ch.28)
+        //   location_at_time  "Mrs. Chen's at 08:00" (ch.21) vs "Halvorsen landing at 08:58" (ch.27)
+        //   job_location      "Northpoint" (ch.10) vs "Pilsen corridor" (ch.32)
+        // A freelancer works a different job in a different place every chapter; two of these
+        // rows disagree only if you read a scene-scoped fact as a permanent one.
+        "arrival_time", "location_at_time", "job_location",
     };
+
+    /// <summary>
+    /// Every <see cref="VolatilePredicates"/> entry reduced to its SORTED token set, so a
+    /// word-order variant of a listed predicate matches too.
+    ///
+    /// <para>Added 2026-09-06. The list is exact-match, and extraction does not agree with itself
+    /// about word order: <c>shoulder_injury</c> was listed and exempt, while <c>injury_shoulder</c>
+    /// — the same predicate from a different pass — was not, and contradicted. That is a matching
+    /// bug, not a cardinality judgement, so it is fixed in the matcher rather than by pasting every
+    /// permutation into the list. Additive only: this can never stop something matching that
+    /// matched before.</para>
+    /// </summary>
+    private static readonly HashSet<string> VolatilePredicateTokenKeys =
+        VolatilePredicates.Select(PredicateTokenKey).ToHashSet(StringComparer.Ordinal);
+
+    /// <summary>A normalized predicate key with its underscore-separated tokens sorted, so
+    /// <c>injury_shoulder</c> and <c>shoulder_injury</c> produce the identical key.</summary>
+    private static string PredicateTokenKey(string normalizedPredicate)
+    {
+        var parts = normalizedPredicate.Split('_', StringSplitOptions.RemoveEmptyEntries);
+        Array.Sort(parts, StringComparer.Ordinal);
+        return string.Join('_', parts);
+    }
+
+    /// <summary>
+    /// Stems that make a predicate WOUND-SCOPED — a claim about one injury among the many a body
+    /// accumulates over a book.
+    ///
+    /// <para><b>The argument is about comparability, not tolerance.</b> A wound predicate names a
+    /// body part or nothing at all (<c>injury_forearm</c>, <c>burn_location</c>, <c>hand_injury</c>,
+    /// <c>physical_injury</c>) — it never names WHICH wound. So two wound claims on one entity are
+    /// not two answers to one question; they are two answers to questions the ledger cannot tell
+    /// apart. Comparing them produces a verdict about nothing. Measured on BCODA: <c>injury_forearm</c>
+    /// "three inches opened, vein not artery" (ch.1) against "cut from wrist to elbow" (ch.31), and
+    /// <c>injury_shoulder</c> "through clean, deep wound" (ch.1) against "left shoulder took woman's
+    /// elbow, bruised not broken" (ch.26) — thirty and twenty-five chapters apart, different fights,
+    /// both true.</para>
+    ///
+    /// <para>Wound state that genuinely needs a timeline belongs to <c>WoundLedgerService</c> /
+    /// <c>EntityStateEvents</c>, which model one wound per row with a time on it, instead of
+    /// asserting one permanent truth about a body.</para>
+    ///
+    /// <para><b>Noun forms only, deliberately.</b> The participles (<c>burned</c>, <c>wounded</c>,
+    /// <c>scarring</c>) are what turn a predicate into a verb phrase about something else entirely
+    /// — <c>burned_bridges_with</c> is a relationship fact, not an injury — and <c>wounded_by</c>
+    /// names an assailant, which is exactly the kind of invariant this exemption must not
+    /// swallow.</para>
+    /// </summary>
+    private static readonly HashSet<string> WoundStems = new(StringComparer.Ordinal)
+    {
+        "injury", "injuries", "wound", "wounds", "burn", "burns",
+        "scar", "scars", "bruise", "bruises",
+        "laceration", "lacerations", "fracture", "fractures",
+    };
+
+    /// <summary>True when any token of the predicate is a <see cref="WoundStems"/> stem —
+    /// <c>injury_forearm</c>, <c>forearm_injury</c>, <c>burn_location</c>, <c>hand_injury</c>,
+    /// but never <c>injurious</c> (a stem is a whole token, never a substring).</summary>
+    private static bool IsWoundScopedPredicate(string normalizedPredicate) =>
+        normalizedPredicate.Split('_', StringSplitOptions.RemoveEmptyEntries).Any(WoundStems.Contains);
 
     /// <summary>True when <paramref name="predicate"/> records momentary state, so a differing
     /// later value supersedes rather than contradicts. Public because the same exclusion has to
@@ -123,8 +192,14 @@ public class ContinuityService
     /// <c>ContinuityEnforcer</c>'s post-generation check and <c>ProseWriterRouter</c>'s
     /// ESTABLISHED CANON prompt block, where feeding a stale <c>location_current</c> would
     /// actively instruct the model to put the character in the wrong place.</summary>
-    public static bool IsVolatilePredicate(string? predicate) =>
-        VolatilePredicates.Contains(NormalizePredicateKey(predicate));
+    public static bool IsVolatilePredicate(string? predicate)
+    {
+        var n = NormalizePredicateKey(predicate);
+        if (n.Length == 0) return false;
+        return VolatilePredicates.Contains(n)
+            || VolatilePredicateTokenKeys.Contains(PredicateTokenKey(n))
+            || IsWoundScopedPredicate(n);
+    }
 
     /// <summary>
     /// Predicate name reduced to a comparison key: lower-cased, and <c>-</c>/space folded to
@@ -169,8 +244,10 @@ public class ContinuityService
     /// the same reason the exclusion axioms use anchored families: a substring match would quietly
     /// widen the exemption past what anyone approved, and an exemption that is too broad hides
     /// real contradictions instead of merely creating noise. Deliberately conservative —
-    /// <c>weapon_type</c> and <c>occupation</c> are NOT here, because they are single-valued on
-    /// the entities that matter even though a careless reading would call them plural.</para>
+    /// <c>weapon_type</c> is NOT here, because it is single-valued on the entities that matter
+    /// even though a careless reading would call it plural. (<c>occupation</c> used to be named
+    /// here as the other example; it moved to <see cref="SetValuedPredicatesExact"/> in 2026-09-06
+    /// on the author's ruling, for the reasons documented there.)</para>
     /// </summary>
     private static readonly HashSet<string> SetValuedPredicateFamilies = new(StringComparer.Ordinal)
     {
@@ -180,14 +257,49 @@ public class ContinuityService
         "capability", "capabilities", "specialization", "specializations",
     };
 
+    /// <summary>
+    /// Set-valued predicates matched EXACTLY rather than as a prefix family — the "what someone
+    /// does" cluster.
+    ///
+    /// <para><b>This reverses a documented decision, on the author's ruling of 2026-09-06, against
+    /// measured evidence.</b> <see cref="SetValuedPredicateFamilies"/> deliberately excluded
+    /// <c>occupation</c> as "single-valued on the entities that matter". BCODA says otherwise, and
+    /// says it seven times: <c>occupation</c> alone accounts for SIX of the book's 43 live
+    /// contradiction groups. Kyle is "security", "contractor/operative", "freelancer/contract
+    /// worker" and "muscle/security" across four chapters — every one of those is true of the same
+    /// man in the same week, because a freelancer's occupation is a list, not a value. Pixel has
+    /// nine: technician, engineer, salvage specialist, prosthetics, calibration, hacker. Sable is
+    /// "fixer" and "fixer, overwatch". Mrs. Chen is "noodle stall owner" and "restaurant
+    /// worker/proprietor". None of those pairs is the book disagreeing with itself.</para>
+    ///
+    /// <para><b>Exact, not a prefix family, and that distinction is the whole safety margin.</b>
+    /// <c>occupation</c> is set-valued; <c>occupation_duration</c> ("eleven years") is emphatically
+    /// not, and a prefix family would have swallowed it along with <c>job_duration</c> and
+    /// <c>employment_duration</c> — the single-valued numbers that catch the real defects. Same
+    /// reasoning admits the direct extraction-synonyms of the same concept (<c>profession</c>,
+    /// <c>job_type</c>, <c>job_title</c>, <c>job_role</c>, <c>employment_status</c>,
+    /// <c>employment_type</c>) and the per-operation <c>role</c> cluster: the failure mode this
+    /// list exists to fix is one idea arriving under several names from different extraction
+    /// passes, exactly as <c>traveling_with</c>/<c>companions</c> did for the volatile list.</para>
+    /// </summary>
+    private static readonly HashSet<string> SetValuedPredicatesExact = new(StringComparer.Ordinal)
+    {
+        "occupation", "profession",
+        "job_type", "job_title", "job_role",
+        "employment_status", "employment_type",
+        "role", "role_in_crew", "role_on_crew", "crew_role", "role_in_operation",
+    };
+
     /// <summary>True when the predicate belongs to a <see cref="SetValuedPredicateFamilies"/>
     /// family — <c>ability</c>, <c>ability_neuretics</c>, <c>action_taken</c>, but never
-    /// <c>abilityish</c> or <c>reaction</c>.</summary>
+    /// <c>abilityish</c> or <c>reaction</c> — or is one of the exactly-matched
+    /// <see cref="SetValuedPredicatesExact"/> entries.</summary>
     public static bool IsSetValuedPredicate(string? predicate)
     {
         var n = NormalizePredicateKey(predicate);
         if (n.Length == 0) return false;
         if (SetValuedPredicateFamilies.Contains(n)) return true;
+        if (SetValuedPredicatesExact.Contains(n)) return true;
         var cut = n.IndexOf('_');
         return cut > 0 && SetValuedPredicateFamilies.Contains(n[..cut]);
     }
@@ -278,7 +390,54 @@ public class ContinuityService
         // (629 rows) were pure paraphrase and another 361 were partly so — "rebuilt the bike" vs
         // "rebuilds bike", "can read events ahead of time" vs "can read events ahead of time,
         // provides tactical advantage". Those are one assertion recorded twice.
-        return ObjectsSayTheSameThing(a.Object, b.Object);
+        if (ObjectsSayTheSameThing(a.Object, b.Object)) return true;
+
+        // Boolean predicates, added 2026-09-06. `has_neuretics` asks a yes/no question, and both
+        // BCODA rows answer it yes — "true" (ch.5) against "yes, with overlay display" (ch.19).
+        // Everything after the yes is elaboration on the same answer, and no string rule below
+        // could see that, because the two objects share no words at all. Only the POLARITY is the
+        // assertion; opposite polarity ("true" vs "false") still contradicts, and an object that is
+        // not a yes/no word at all ("alive" vs "dead" on `is_alive`) falls straight through to the
+        // ordinary rules, unexempted.
+        return SamePredicate(a, b)
+            && IsBooleanPredicate(a.Predicate)
+            && TryParsePolarity(a.Object, out var pa)
+            && TryParsePolarity(b.Object, out var pb)
+            && pa == pb;
+    }
+
+    private static bool SamePredicate(ContinuityClaim a, ContinuityClaim b) =>
+        NormalizePredicateKey(a.Predicate) == NormalizePredicateKey(b.Predicate);
+
+    private static readonly HashSet<string> BooleanPredicateLeads = new(StringComparer.Ordinal)
+    { "has", "have", "had", "is", "was", "are", "were", "can", "does", "did" };
+
+    /// <summary>True for a predicate phrased as a yes/no question — <c>has_neuretics</c>,
+    /// <c>is_alive</c>, <c>can_pilot</c>.</summary>
+    private static bool IsBooleanPredicate(string? predicate)
+    {
+        var n = NormalizePredicateKey(predicate);
+        var cut = n.IndexOf('_');
+        return cut > 0 && BooleanPredicateLeads.Contains(n[..cut]);
+    }
+
+    /// <summary>Parses a leading yes/no word out of an object value. Deliberately tiny: anything
+    /// that is not an explicit affirmative or negative returns false and gets no exemption.</summary>
+    private static bool TryParsePolarity(string? raw, out bool value)
+    {
+        value = false;
+        var n = NormalizeForCompare(raw);
+        if (n.Length == 0) return false;
+        var first = n.Split(' ', StringSplitOptions.RemoveEmptyEntries)[0];
+        switch (first)
+        {
+            case "true": case "yes": case "confirmed": case "present":
+                value = true;  return true;
+            case "false": case "no": case "none": case "absent":
+                value = false; return true;
+            default:
+                return false;
+        }
     }
 
     /// <summary>
@@ -300,6 +459,14 @@ public class ContinuityService
         if (x.Length == 0 || y.Length == 0) return false;
         if (x == y) return true;
 
+        // Negation guard — added 2026-09-06, and it is a precondition of every merge rule below,
+        // not a refinement of them. "has neuretics" is a substring of "has no neuretics", and
+        // {atlas, neocortex} is a token subset of {atlas, neocortex, with, no, governor}: both
+        // subsumption rules would have merged a fact with its own denial, which is the one outcome
+        // this whole file exists to prevent. When exactly one side carries an absence word, the
+        // two are never the same assertion, whatever their wording overlap says.
+        if (CarriesNegation(x) != CarriesNegation(y)) return false;
+
         // Subsumption: one is the other plus detail. Guarded by a length floor so a two-word
         // object is not swallowed by every longer string that happens to contain it.
         var shorter = x.Length <= y.Length ? x : y;
@@ -309,11 +476,36 @@ public class ContinuityService
         var ta = x.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToHashSet(StringComparer.Ordinal);
         var tb = y.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToHashSet(StringComparer.Ordinal);
         if (ta.Count < 2 || tb.Count < 2) return false;
+
+        // Token subsumption — added 2026-09-06. The substring rule above only sees detail APPENDED
+        // to an intact phrase; extraction just as often inserts it. "Atlas NeoCortex" (ch.6) and
+        // "Atlas-grade NeoCortex" (ch.19) are the same implant, but neither string contains the
+        // other and their overlap is 0.67 — under the old rules that pair was a contradiction on
+        // record. Every word of one side appearing in the other is the same evidence of
+        // "one is the other plus detail" that the substring rule wanted, without depending on
+        // where the extra word landed. The two-token floor and the negation guard above keep it
+        // from swallowing short objects or their denials, and complementary facets still fail it:
+        // "dark red hair" is not a subset of "red hair in loose braid" — "dark" is in neither.
+        if (ta.IsSubsetOf(tb) || tb.IsSubsetOf(ta)) return true;
+
         var union = ta.Count + tb.Count - ta.Count(tb.Contains);
         return union > 0 && (double)ta.Count(tb.Contains) / union >= SameAssertionOverlap;
     }
 
     private const double SameAssertionOverlap = 0.75;
+
+    /// <summary>Absence/reversal words. A claim carrying one of these asserts the opposite of the
+    /// otherwise-identical claim that does not.</summary>
+    private static readonly HashSet<string> NegationTokens = new(StringComparer.Ordinal)
+    {
+        "no", "not", "never", "none", "without", "lacks", "lacking", "nothing",
+        "neither", "nor", "denied", "denies", "absent", "removed", "gone", "lost",
+        "former", "formerly", "ex", "unarmed",
+    };
+
+    /// <summary>True when the already-normalized object carries an absence word as a whole token.</summary>
+    private static bool CarriesNegation(string normalized) =>
+        normalized.Split(' ', StringSplitOptions.RemoveEmptyEntries).Any(NegationTokens.Contains);
 
     /// <summary>Lower-cased, punctuation-stripped, whitespace-collapsed — so "rebuilds bike." and
     /// "Rebuilds  bike" compare equal without a stemmer's guesswork.</summary>
