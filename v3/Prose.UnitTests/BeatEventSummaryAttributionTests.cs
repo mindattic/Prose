@@ -40,10 +40,14 @@ public class BeatEventSummaryAttributionTests
                "desk bought your file last year, freelancer.\"", "ch31"),
     ];
 
+    /// <summary>ambientNames is null here: these fixtures exercise the per-batch heuristic itself.
+    /// The book-wide ambient set is supplied only by AuditAttributionAsync, which measures it
+    /// across all 475 beats precisely because a short chapter is too small a window to establish
+    /// that a recurring lead is ambient.</summary>
     private static HashSet<Guid> Detect(List<(Guid, string, string)> batch, List<(Guid, string)> events) =>
         (HashSet<Guid>)typeof(BeatEventSummaryService)
             .GetMethod("DetectShiftedAttribution", BindingFlags.NonPublic | BindingFlags.Static)!
-            .Invoke(null, [batch, events])!;
+            .Invoke(null, [batch, events, null])!;
 
     /// <summary>The real defect: summaries keyed one beat late.</summary>
     [Test]

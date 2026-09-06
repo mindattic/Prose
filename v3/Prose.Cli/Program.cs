@@ -2903,6 +2903,14 @@ if (args.Contains("--generate-event-list"))
     return;
 }
 
+// prose --audit-event-summaries --slug <slug>
+// Read-only, free: find stored EventSummary lines that describe a DIFFERENT beat (batch ref shift).
+if (args.Contains("--audit-event-summaries"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("AuditEventSummariesCli", args);
+    return;
+}
+
 // prose --extract-beat-locations --slug <slug> [--force] [--limit N] [--dry-run]
 // Backfill the per-beat scene location (Beat.PlaceName / PlaceEntityId) — hash-gated.
 if (args.Contains("--extract-beat-locations"))

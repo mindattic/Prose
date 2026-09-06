@@ -248,6 +248,89 @@ Output STRICT JSON, no fences, no commentary:
         return new BeatEventListReport(nodeCode, candidates.Count, generated, failed, skippedFromCache);
     }
 
+    /// <summary>One beat whose stored EventSummary appears to describe a different beat.</summary>
+    public sealed record AttributionMismatch(int Number, string Chapter, string Summary, string Name, int MatchesBeatNumber);
+
+    /// <summary>
+    /// Scan a book's ALREADY-STORED event summaries for the shift this service now guards against
+    /// at write time. The guard only protects new writes; every summary written before it is
+    /// stamped EventSummaryHash == TextHash, so the hash gate will never re-derive it, and a wrong
+    /// synopsis stays wrong forever. Read-only, deterministic, zero LLM cost.
+    ///
+    /// <para>Chapters are the comparison window because that is the scope a batch is drawn from and
+    /// the scope a reader judges continuity in. Reports which OTHER beat each stray name actually
+    /// belongs to, which is what makes a shift legible rather than just "suspicious".</para>
+    /// </summary>
+    public async Task<List<AttributionMismatch>> AuditAttributionAsync(
+        string slugOrCode, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(
+            n => n.Slug == slugOrCode || (n.NodeCode != null && n.NodeCode.ToUpper() == slugOrCode.ToUpper()), ct)
+            ?? throw new InvalidOperationException($"Node not found: {slugOrCode}");
+
+        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
+        var rows = await (
+            from bn in db.BeatNodes.AsNoTracking()
+            join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
+            join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
+            where searchIds.Contains(bn.NodeId) && b.Text != null && b.Text != "" && b.EventSummary != null
+            orderby c.SortKey, bn.SortKey
+            select new { b.Id, b.Number, b.Text, b.EventSummary, Chapter = c.Title }
+        ).ToListAsync(ct);
+
+        // Ambient names must be measured BOOK-wide, not per chapter. A recurring lead appears in
+        // nearly every beat, so their name in a summary carries no attribution signal — but a short
+        // chapter (BCODA ch.38 has two beats) is too small a window to establish that, and the
+        // per-batch cutoff then flags a correct summary purely because that one beat happened to
+        // use a pronoun. Measuring across the whole book is what makes the screen usable: on BCODA
+        // this is the difference between a report the author must hand-verify line by line and one
+        // that points at real shifts.
+        var nameBeatCounts = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+        foreach (var r in rows)
+        {
+            var seenHere = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            foreach (Match m in ProperNounInEvent.Matches(r.Text ?? ""))
+                if (seenHere.Add(m.Value))
+                    nameBeatCounts[m.Value] = nameBeatCounts.GetValueOrDefault(m.Value) + 1;
+        }
+        var ambientFloor = Math.Max(3, (int)Math.Ceiling(rows.Count * 0.15));
+        var ambient = nameBeatCounts.Where(kv => kv.Value >= ambientFloor)
+                                    .Select(kv => kv.Key)
+                                    .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+        var found = new List<AttributionMismatch>();
+        foreach (var chapter in rows.GroupBy(r => r.Chapter))
+        {
+            var window = chapter.ToList();
+            if (window.Count < 2) continue;
+
+            var batch = window.Select(w => (w.Id, Text: w.Text ?? "", Chapter: chapter.Key)).ToList();
+            var events = window.Select(w => (BeatId: w.Id, Event: w.EventSummary ?? "")).ToList();
+            var suspect = DetectShiftedAttribution(batch, events, ambient);
+
+            foreach (var w in window.Where(w => suspect.Contains(w.Id)))
+            {
+                // Re-derive WHICH name gave it away and where that name actually lives, so the
+                // report names the real owner instead of just asserting a mismatch.
+                foreach (Match m in ProperNounInEvent.Matches(w.EventSummary ?? ""))
+                {
+                    var name = m.Value;
+                    if (EventNameStopwords.Contains(name) || ambient.Contains(name)) continue;
+                    if ((w.Text ?? "").Contains(name, StringComparison.OrdinalIgnoreCase)) continue;
+                    var owner = window.FirstOrDefault(o => o.Id != w.Id
+                        && (o.Text ?? "").Contains(name, StringComparison.OrdinalIgnoreCase));
+                    if (owner != null)
+                    {
+                        found.Add(new AttributionMismatch(w.Number, chapter.Key, w.EventSummary ?? "", name, owner.Number));
+                        break;
+                    }
+                }
+            }
+        }
+        return found;
+    }
+
     /// <summary>
     /// Which beats in this batch got a summary that describes a DIFFERENT beat in the same batch.
     ///
@@ -262,7 +345,8 @@ Output STRICT JSON, no fences, no commentary:
     /// </summary>
     private static HashSet<Guid> DetectShiftedAttribution(
         List<(Guid Id, string Text, string Chapter)> batch,
-        List<(Guid BeatId, string Event)> events)
+        List<(Guid BeatId, string Event)> events,
+        HashSet<string>? ambientNames = null)
     {
         var suspect = new HashSet<Guid>();
         if (batch.Count < 2) return suspect;
@@ -284,6 +368,7 @@ Output STRICT JSON, no fences, no commentary:
             {
                 var name = m.Value;
                 if (EventNameStopwords.Contains(name)) continue;
+                if (ambientNames != null && ambientNames.Contains(name)) continue;
                 if (ownText.Contains(name, StringComparison.OrdinalIgnoreCase)) continue;
 
                 var beatsWithName = batch.Count(b =>
