@@ -425,21 +425,120 @@ public static class EntityMentionScanner
     /// to no entity record" residue filed as an <c>EntityDrift</c> finding by
     /// <c>NodeDocService.GenerateAsync</c> / <c>CanonDocumentService.SetNodeOutlineSectionAsync</c>.
     /// Not a grammar check: a name that legitimately isn't an entity (a one-off descriptive phrase)
-    /// still surfaces here for a human to dismiss — the mechanism's job is recall, not precision.</summary>
+    /// still surfaces here for a human to dismiss — the mechanism's job is recall, not precision.
+    ///
+    /// <para>2026-09-06 — sentence-initial suppression. Precision had collapsed to roughly zero on
+    /// outline text: 4,795 open EntityDrift findings corpus-wide (85% of that category, 18% of the
+    /// ENTIRE findings table) came from this scan, and the sample was "Recontextualizes Kyle",
+    /// "Orients", "Demonstrates", "Establishes Gantry", "Turns Vey", "Season Two". Those are
+    /// sentence-opening verbs and chapter titles, not names. The defence up to now was the
+    /// hand-maintained <see cref="ResidueCommonWords"/> list, which had already been extended
+    /// twice (2026-09-04 and a "second prose pass") and cannot ever converge — it is trying to
+    /// enumerate the English verb lexicon one incident at a time.</para>
+    ///
+    /// <para>The real signal is positional, not lexical: a capital immediately after a sentence
+    /// boundary, a newline, or a list/heading marker carries NO evidence of being a proper noun,
+    /// because English capitalises there anyway. So a leading token in that position is dropped.
+    /// Recall is preserved by an evidence rule — the token is only dropped if that same word never
+    /// appears capitalised MID-sentence anywhere else in the text. A genuinely unseeded name
+    /// ("Gantry walked in… beside Gantry") still surfaces on its mid-sentence occurrence, while a
+    /// verb that only ever opens a sentence disappears. Dropping the leading token also rescues
+    /// the real name behind it: "Establishes Gantry" reduces to "Gantry", which then gets tested
+    /// against the claimed spans on its own merits instead of being reported as one bogus phrase.</para></summary>
     public static List<string> FindUnresolvedProperNouns(string text, IReadOnlyList<MentionMatch> matches)
     {
         if (string.IsNullOrWhiteSpace(text)) return [];
         var claimed = matches.Select(m => (m.Start, End: m.Start + m.Length)).ToList();
         var found = new List<string>();
         var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        // Evidence pass: which capitalised words ever appear MID-sentence? Those are real proper
+        // nouns wherever they occur; everything else is only ever capitalised by position.
+        var evidenced = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         foreach (Match m in ProperNounResiduePattern.Matches(text))
         {
-            var name = m.Value.Trim();
-            if (name.Length <= 3 || ResidueCommonWords.Contains(name)) continue;
-            if (claimed.Any(r => m.Index >= r.Start && m.Index < r.End)) continue;
-            if (seen.Add(name)) found.Add(name);
+            if (StartsSentence(text, m.Index)) continue;
+            foreach (var w in m.Value.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries))
+                evidenced.Add(w);
+        }
+
+        foreach (Match m in ProperNounResiduePattern.Matches(text))
+        {
+            // Split the capitalised run into tokens, drop the ones a real entity already claims,
+            // and regroup what is left into consecutive sub-runs. This is what separates
+            // "Establishes Gantry" (Gantry is claimed → leaves the bare verb "Establishes") from
+            // "Marisol Vega" (nothing claimed → stays one two-word candidate). Testing the whole
+            // run against only its FIRST index, as this used to, made those two cases identical.
+            var tokens = new List<(string Word, int Index)>();
+            foreach (Match w in WordInRunPattern.Matches(m.Value))
+                tokens.Add((w.Value, m.Index + w.Index));
+
+            var run = new List<(string Word, int Index)>();
+            foreach (var t in tokens)
+            {
+                if (claimed.Any(r => t.Index >= r.Start && t.Index < r.End))
+                {
+                    Emit(run);
+                    run.Clear();
+                    continue;
+                }
+                run.Add(t);
+            }
+            Emit(run);
         }
         return found;
+
+        void Emit(List<(string Word, int Index)> run)
+        {
+            if (run.Count == 0) return;
+
+            // A lone capital sitting where English capitalises by rule is not evidence of a name.
+            // Only applied to a SINGLE surviving token: if two capitals stand together, position
+            // explains the first but not the second, so the pair is a real candidate.
+            if (run.Count == 1 && StartsSentence(text, run[0].Index) && !evidenced.Contains(run[0].Word))
+                return;
+
+            var name = string.Join(' ', run.Select(t => t.Word));
+            if (name.Length <= 3 || ResidueCommonWords.Contains(name)) return;
+            if (seen.Add(name)) found.Add(name);
+        }
+    }
+
+    private static readonly Regex WordInRunPattern = new(@"[A-Z][a-z]{2,}", RegexOptions.Compiled);
+
+    /// <summary>True when the capital at <paramref name="index"/> sits where English capitalises
+    /// by rule rather than because the word is a name: start of text, after terminal punctuation,
+    /// after a newline, or after a list/heading/label marker (outline text is full of "- ", "* ",
+    /// "# ", "**", "1. " and "Label: " openers, all of which force a capital).</summary>
+    private static bool StartsSentence(string text, int index)
+    {
+        int i = index - 1;
+        for (; i >= 0; i--)
+        {
+            var c = text[i];
+            if (c is ' ' or '\t' or '"' or '\'' or '(' or '[' or '_') continue;
+
+            if (c is '\n' or '\r') return true;          // line start
+            if (c is '.' or '!' or '?') return true;      // sentence end
+            if (c is ':') return true;                    // "POV: Kyle" outline label
+
+            // List/heading markers force a capital ONLY at line start. Mid-sentence these are
+            // ordinary punctuation ("the thing—Kyle's thing"), where a capital IS name evidence,
+            // so do not suppress there. Note ',' and ';' are deliberately absent from this whole
+            // set: neither capitalises in English, so a capital after one is real evidence.
+            if (c is '-' or '—' or '–' or '*' or '#' or '•' or '|' or '>')
+            {
+                for (int j = i - 1; j >= 0; j--)
+                {
+                    var p = text[j];
+                    if (p is ' ' or '\t' or '-' or '—' or '–' or '*' or '#' or '•' or '|' or '>') continue;
+                    return p is '\n' or '\r';
+                }
+                return true; // marker at start of text
+            }
+            return false;
+        }
+        return true; // start of text
     }
 
     /// <summary>Wraps each accepted match in

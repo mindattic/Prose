@@ -201,6 +201,68 @@ public class EntityMentionScannerFindUnresolvedProperNounsTests
         Assert.That(result, Is.EquivalentTo(new[] { "Marisol Vega" }));
     }
 
+    /// <summary>Regression for the 2026-09-06 sentence-initial fix. These are verbatim shapes from
+    /// the 4,795 open EntityDrift findings this scan had produced corpus-wide (18% of the entire
+    /// Findings table): outline beat lines open with a capitalised VERB, which the old
+    /// position-blind regex reported as an unresolved proper noun. Every one of these was a false
+    /// positive; the hand-maintained ResidueCommonWords list could never converge on them because
+    /// it was trying to enumerate the English verb lexicon.</summary>
+    [Test]
+    public void OutlineSentenceOpeningVerbs_AreNotReportedAsNames()
+    {
+        var id = Guid.NewGuid();
+        var text = """
+            - Recontextualizes Kyle and the whole Ghost Period.
+            - Orients the reader before the drop.
+            - Demonstrates the cost of the choice.
+            - Establishes Gantry as the fixer.
+            - Turns Vey against her own crew.
+            """;
+        var candidates = new List<EntityMentionScanner.MentionCandidate>
+        {
+            new("Kyle",   id, "Kyle",   "character", RequiresStrictCase: false),
+            new("Gantry", id, "Gantry", "character", RequiresStrictCase: false),
+            new("Vey",    id, "Vey",    "character", RequiresStrictCase: false),
+        };
+        var matches = EntityMentionScanner.Scan(text, candidates);
+
+        var result = EntityMentionScanner.FindUnresolvedProperNouns(text, matches);
+
+        Assert.That(result, Has.No.Member("Recontextualizes Kyle"));
+        Assert.That(result, Has.No.Member("Establishes Gantry"));
+        Assert.That(result, Has.No.Member("Turns Vey"));
+        Assert.That(result, Has.No.Member("Orients"));
+        Assert.That(result, Has.No.Member("Demonstrates"));
+        Assert.That(result, Has.No.Member("Recontextualizes"));
+        Assert.That(result, Has.No.Member("Establishes"));
+        Assert.That(result, Has.No.Member("Turns"));
+    }
+
+    /// <summary>The other half of the same fix: suppression is positional, so it must NOT swallow a
+    /// real unseeded name just because the sentence happens to start with it. "Marisol" alone would
+    /// be dropped, but a second capital immediately after it is not explained by position.</summary>
+    [Test]
+    public void SentenceOpeningMultiWordName_IsStillReported()
+    {
+        var result = EntityMentionScanner.FindUnresolvedProperNouns(
+            "Marisol Vega walks in. Orients herself. Marisol Vega waits.", matches: []);
+
+        Assert.That(result, Has.Member("Marisol Vega"));
+        Assert.That(result, Has.No.Member("Orients"));
+    }
+
+    /// <summary>A single-token name that only ever opens sentences would be lost to a naive
+    /// positional rule, so the fix keeps it when the same word also appears capitalised
+    /// mid-sentence anywhere in the text (the "evidenced" pass).</summary>
+    [Test]
+    public void SingleWordName_EvidencedMidSentence_IsStillReported()
+    {
+        var result = EntityMentionScanner.FindUnresolvedProperNouns(
+            "Gantry opened the door. The fixer they called Gantry never knocked.", matches: []);
+
+        Assert.That(result, Has.Member("Gantry"));
+    }
+
     [Test]
     public void NameCoveredByAMatch_IsNotReported()
     {
