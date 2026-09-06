@@ -1160,7 +1160,9 @@ public class ProseWriterRouter(
 
         // DELIGHT (positive prose doctrine, docs/DELIGHT.md): emphasize the reader-loved moves that
         // fit this beat's mode. CRAFT.md keeps the beat from being disliked; this pushes it toward loved.
-        var delightGuidance = DelightProseGuidance.GetForMode(mode);
+        // beatIndex rotates the pick through the mode's pool (2026-09-06) — without it every beat of a
+        // mode got identical guidance and the book developed a tic (§7 landed on 50% of BCODA's beats).
+        var delightGuidance = DelightProseGuidance.GetForMode(mode, beatIndex);
         structuralGuidance = structuralGuidance.Length > 0
             ? structuralGuidance + "\n\n" + delightGuidance
             : delightGuidance;
