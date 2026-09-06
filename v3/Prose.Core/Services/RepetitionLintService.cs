@@ -588,7 +588,30 @@ public class RepetitionLintService
             }
         }
         // Only phrases that actually recur are interesting; drop singletons early.
-        return counts.Where(kv => kv.Value >= 2).ToDictionary(kv => kv.Key, kv => kv.Value);
+        var recurring = counts.Where(kv => kv.Value >= 2).ToDictionary(kv => kv.Key, kv => kv.Value);
+
+        // Maximal-phrase suppression (2026-09-06). Counting 3-grams AND 4-grams over the same
+        // token run reports one repetition up to five times: BCODA beat #5222 filed "crack the
+        // plaster crack", "the plaster crack the", "crack the plaster", "plaster crack the" and
+        // "the plaster crack" as five separate findings for a single repeated image, and did the
+        // same for "meant for eleven years" (3x) and "done putting things away" (3x). That is a
+        // ~4x inflation of every phrase finding, and CraftChecklist is 21% of the corpus-wide
+        // findings table, so it materially distorts both the inbox and the SII category cap.
+        // Keep only maximal phrases: drop a 3-gram when a 4-gram that contains it recurs at
+        // least as often, since the longer phrase fully explains those occurrences. A 3-gram
+        // with a HIGHER count than every 4-gram containing it does appear somewhere else on its
+        // own and is kept — that is a genuinely distinct repetition, not a sub-span artefact.
+        var redundant = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var (phrase, count) in recurring)
+        {
+            var words = phrase.Split(' ');
+            if (words.Length != 4) continue;
+            foreach (var sub in new[] { string.Join(' ', words[..3]), string.Join(' ', words[1..]) })
+                if (recurring.TryGetValue(sub, out var subCount) && subCount <= count)
+                    redundant.Add(sub);
+        }
+        foreach (var r in redundant) recurring.Remove(r);
+        return recurring;
     }
 
     private static bool IsQuotedOnly(string paragraph)

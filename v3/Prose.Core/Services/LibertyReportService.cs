@@ -14,12 +14,24 @@ namespace Prose.Core.Services;
 /// creative departure taken relative to the beat goal and entity roster, then scores
 /// each on a CoolFactor (0–10):
 ///
-///   CoolFactor ≥ 8 → <c>CANON-ADDITION-CANDIDATE</c> finding (user must approve before canon entry)
-///   CoolFactor 5–7 → <c>LIBERTY-CONSIDER</c> advisory finding
+///   CoolFactor ≥ 8 → canon-addition candidate  ─┐ report-only since 2026-09-06
+///   CoolFactor 5–7 → advisory                   ─┘ (see below)
 ///   CoolFactor ≤ 4 AND kind=entity_invention → <c>LIBERTY-WARNING</c> finding
 ///
 /// The raw report is stored in the <c>LibertyReports</c> table (one row per beat).
 /// Called by ProseWriterRouter as a fire-and-forget post-write Task — never delays beat output.
+///
+/// 2026-09-06 (author ruling): the two Low tiers no longer file Findings. They were advisory
+/// BY CONSTRUCTION — their own suggestedFix text read "advisory; no action required" and "seed
+/// this into the DB if you want it in canon" — but they accumulated to 3,418 open rows, 14% of
+/// the entire corpus-wide findings table, and the SII treats 20 Low findings as a maxed-out
+/// category cap (LowWeight 1 × CategoryCap 20). So a category of thousands of notes that
+/// explicitly require no action deducted exactly as much as a category holding three genuine
+/// blockers, which is a large part of why every mature book graded F no matter what was fixed.
+/// A findings inbox is for things to act on; these are notes. Nothing is lost — every liberty,
+/// including both Low tiers, is still persisted in full to LibertyReports and readable on
+/// demand via the get_liberty_report MCP tool. Only LIBERTY-WARNING (an invented entity absent
+/// from canon — a real, actionable seeding gap) still files.
 /// </summary>
 public class LibertyReportService(
     IDbContextFactory<ProseDbContext> dbFactory,
@@ -73,27 +85,15 @@ public class LibertyReportService(
             }
             await db.SaveChangesAsync(ct);
 
-            // File findings for notable liberties.
+            // File findings ONLY for the actionable tier. The two advisory tiers are
+            // report-only (see the class remarks) — read them via get_liberty_report.
             var filePath = $"beat:{beatId:N}";
             foreach (var liberty in liberties)
             {
-                if (liberty.CoolFactor >= CanonCandidateFloor)
+                if (liberty.CoolFactor >= AdvisoryFloor)
                 {
-                    findings.Upsert(
-                        filePath, chapterId: null,
-                        FindingCategory.Liberty, FindingSeverity.Low,
-                        $"CANON-ADDITION-CANDIDATE [{liberty.Name}]: {liberty.Explanation}",
-                        snippet: liberty.Evidence,
-                        suggestedFix: $"CoolFactor {liberty.CoolFactor}/10 — seed this into the DB if you want it in canon.");
-                }
-                else if (liberty.CoolFactor >= AdvisoryFloor)
-                {
-                    findings.Upsert(
-                        filePath, chapterId: null,
-                        FindingCategory.Liberty, FindingSeverity.Low,
-                        $"LIBERTY-CONSIDER [{liberty.Name}]: {liberty.Explanation}",
-                        snippet: liberty.Evidence,
-                        suggestedFix: $"CoolFactor {liberty.CoolFactor}/10 — advisory; no action required.");
+                    // Canon-addition candidate or advisory — persisted to LibertyReports above,
+                    // deliberately not filed as a Finding.
                 }
                 else if (liberty.Kind == "entity_invention")
                 {
