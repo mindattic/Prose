@@ -1005,7 +1005,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SequentialReadTrackingService>();
         services.AddSingleton<TextIntegrityService>();
         services.AddSingleton<GearCarryEnforcer>();
-        services.AddSingleton<BehavioralInvariantEnforcer>();
         services.AddSingleton<ContinuityEnforcer>();
         services.AddSingleton<WeaponAmmoCompatibilityService>();
         services.AddSingleton<MarkdownFileService>();

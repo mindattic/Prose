@@ -1,6 +1,6 @@
 ---
 name: full-battery
-description: Run the Full Battery — every QA/audit tool in the engine (10 FREE + 16 DEEP + 8 FULL checks — see AuditNodeCli.cs's header for the authoritative list, kept in sync with BookHealthService.RunAsync) against a book via `prose --audit-book --full`, then fix, re-verify, validate, and re-export any book that was actually modified. Usage /full-battery [slug ...]; no argument = every book with live prose corpus-wide.
+description: Run the Full Battery — every QA/audit tool in the engine (10 FREE + 15 DEEP + 8 FULL checks — see AuditNodeCli.cs's header for the authoritative list, kept in sync with BookHealthService.RunAsync) against a book via `prose --audit-book --full`, then fix, re-verify, validate, and re-export any book that was actually modified. Usage /full-battery [slug ...]; no argument = every book with live prose corpus-wide.
 ---
 
 # /full-battery — the complete diagnostic + repair pass
@@ -27,7 +27,7 @@ authoritative source and copy from there if this ever needs re-syncing.**
   (Gateway/Sequel commandments), diagnose-book, check-fidelity (Semantic Fidelity Gap), Logic
   Sweep (six-dimension causality/knowledge/timeline/plant/orphan/outline), craft-checklist,
   check-canon, altitude-audit (10,000↔100 ft drift), reader-qa (comprehension probes),
-  behavior-check, theme-coherence, fact-ledger, applied-claim-drift, **lint-prose** (mechanical
+  theme-coherence, fact-ledger, applied-claim-drift, **lint-prose** (mechanical
   repetition/crutch-phrase linter), **pov-audit** (head-hopping + same-scene voice sameness),
   **hook-audit** (chapter-ending hook strength) — the last three (bold) were built in the
   2026-08-28 tooling overhaul but never wired into this battery until 2026-08-30.

@@ -20,10 +20,11 @@ namespace Prose.Cli;
 ///   FREE  (always)  — deterministic + near-zero-cost, 10 checks: plant-audit, plant-density,
 ///                     prose-check, validate-nouns, timeline-check, verify-book, coordinate,
 ///                     voice-consistency, duplicate-beats, sanity-scan.
-///   DEEP  (--deep)  — one LLM call (or a cheap batched-Haiku call) per check per node, 16
-///                     checks: examine-emotion, book-audit, diagnose-book, check-fidelity,
+///   DEEP  (--deep)  — one LLM call (or a cheap batched-Haiku call) per check per node, 15
+///                     checks (was 16 until behavior-check was retired 2026-09-06):
+///                     examine-emotion, book-audit, diagnose-book, check-fidelity,
 ///                     logic-sweep, craft-checklist, check-canon, altitude-audit, reader-qa
-///                     (comprehension probes), behavior-check, theme-coherence, fact-ledger,
+///                     (comprehension probes), theme-coherence, fact-ledger,
 ///                     applied-claim-drift, lint-prose, pov-audit, hook-audit.
 ///   FULL  (--full, implies --deep) — heaviest multi-call audits, cost scales with book
 ///                     length, 8 checks: storyscope-audit, swain-audit, chekhov-audit,

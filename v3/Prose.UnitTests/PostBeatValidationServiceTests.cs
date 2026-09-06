@@ -5,9 +5,10 @@ using Prose.Core.Services;
 namespace Prose.UnitTests;
 
 /// <summary>
-/// SS-US-I1: PostBeatValidationService wires ProsePatternGuard, GearCarryEnforcer,
-/// and BehavioralInvariantEnforcer together and runs on beat save.
-/// Tests use SQLite in-memory + FakeLlmService — no real LLM calls.
+/// SS-US-I1: PostBeatValidationService wires ProsePatternGuard and GearCarryEnforcer together
+/// and runs on beat save. (BehavioralInvariantEnforcer was the third leg until 2026-09-06, when
+/// it was retired by author ruling — see the note on BookHealthService's check list.)
+/// Tests use SQLite in-memory — no real LLM calls.
 /// </summary>
 [TestFixture]
 public class PostBeatValidationServiceTests
@@ -27,7 +28,6 @@ public class PostBeatValidationServiceTests
         svc = new PostBeatValidationService(
             new ProsePatternGuard(),
             new GearCarryEnforcer(db),
-            new BehavioralInvariantEnforcer(db, new FakeLlmService()),
             new FindingsService(db, paths),
             db,
             NullLogger<PostBeatValidationService>.Instance);

@@ -163,7 +163,7 @@ set the ParentNodeId on an existing node (move it into a collection). X-Ray scen
 
 ### `--audit-book`
 
-prose --audit-book --slug <book-or-chapter-slug> [--deep] [--full] [--model <id>] [--out <path>] [--json] The "Player Piano" — one repeatable command running the full QA battery + the Structural Integrity Index (SII), a deterministic Findings rollup (BookHealthService). See AuditNodeCli.cs's own header comment for the authoritative, kept-in-sync tier list (10 FREE / 16 DEEP / 7 FULL checks as of 2026-08-30 — do not re-duplicate the list here, it drifted stale from BookHealthService.RunAsync once already). --model retargets the deep/full tier LLM calls (e.g. Haiku) for the run.
+prose --audit-book --slug <book-or-chapter-slug> [--deep] [--full] [--model <id>] [--out <path>] [--json] The "Player Piano" — one repeatable command running the full QA battery + the Structural Integrity Index (SII), a deterministic Findings rollup (BookHealthService). See AuditNodeCli.cs's own header comment for the authoritative, kept-in-sync tier list (10 FREE / 15 DEEP / 8 FULL checks as of 2026-09-06 — do not re-duplicate the list here, it drifted stale from BookHealthService.RunAsync once already). --model retargets the deep/full tier LLM calls (e.g. Haiku) for the run.
 
 <sub>handler `AuditNodeCli` · **cost-gated (spends LLM money)**</sub>
 
@@ -369,11 +369,6 @@ stamp Beat.StoryPosition — a book's reading order as a number, which is the en
 
 <sub>handler `BeatPositionsCli`</sub>
 
-### `--behavior-check`
-
-prose --behavior-check --slug <nodeSlug> --character <characterId>
-
-<sub>handler `BehaviorCheckCli`</sub>
 
 ### `--book`
 

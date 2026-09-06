@@ -12,7 +12,6 @@ public class WorldModellingTools(
     EntityRelationshipService entityRelSvc,
     WorldStateAtBeatService worldStateSvc,
     GearCarryEnforcer gearEnforcer,
-    BehavioralInvariantEnforcer behaviorEnforcer,
     ProsePatternGuard proseGuard,
     WeaponAmmoCompatibilityService weaponAmmoSvc,
     AmbientDetailInjector ambientSvc,
@@ -126,30 +125,8 @@ public class WorldModellingTools(
         }), CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description(
-        "LLM-checks prose text against a character's behavioral rules (decision_rules, " +
-        "escalation_ladder, contradictions, habits, breaking_points). " +
-        "Returns a JSON array of violations — empty array means the prose is consistent.")]
-    public Task<string> CheckBehavior(
-        [Description("Beat prose text to check")] string beatText,
-        [Description("Character entity GUID")] string characterId) =>
-        hub.InvokeAsync(nameof(WorldModellingTools), nameof(CheckBehaviorImpl), new { beatText, characterId });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> CheckBehaviorImpl(string beatText, string characterId)
-    {
-        if (!Guid.TryParse(characterId, out var cid))
-            return JsonSerializer.Serialize(new { error = "invalid_guid", characterId }, CanonTools.JsonOpts);
-
-        var violations = await behaviorEnforcer.EnforceAsync(beatText, cid);
-        return JsonSerializer.Serialize(violations.Select(v => new
-        {
-            bucket = v.RuleBucket,
-            rule = v.RuleText,
-            explanation = v.Explanation,
-            character = v.CharacterName,
-        }), CanonTools.JsonOpts);
-    }
+    // check_behavior REMOVED 2026-09-06 (author ruling) along with BehavioralInvariantEnforcer —
+    // see the retirement note on BookHealthService's check list.
 
     [McpServerTool, Description(
         "Runs the deterministic prose pattern linter on text. " +
@@ -326,20 +303,18 @@ public class WorldModellingTools(
     [McpServerTool, Description(
         "Run the full post-beat validation battery on a saved beat: " +
         "prose pattern guard (clichés, pseudo-profound, on-the-nose, italicised dialogue) + " +
-        "gear carry check (character uses gear without a carry edge) + " +
-        "optional behavior invariant check (LLM — one call per character). " +
+        "gear carry check (character uses gear without a carry edge). " +
         "All violations are filed as Findings and returned. " +
         "Accepts an optional comma-separated list of character GUIDs; when omitted, " +
         "characters are derived from the beat's indexed entity mentions.")]
     public Task<string> ValidateBeat(
         [Description("Beat GUID.")] string beatId,
-        [Description("Comma-separated character GUIDs to check gear/behavior for. Omit to auto-detect from entity mentions.")] string? characterIds = null,
-        [Description("Run the LLM-based behavior invariant check (one LLM call per character). Default false.")] bool checkBehavior = false,
+        [Description("Comma-separated character GUIDs to check gear for. Omit to auto-detect from entity mentions.")] string? characterIds = null,
         [Description("Story-date for gear edge validation (ISO 8601). Omit for all-time carry edges.")] string? storyTime = null) =>
-        hub.InvokeAsync(nameof(WorldModellingTools), nameof(ValidateBeatImpl), new { beatId, characterIds, checkBehavior, storyTime });
+        hub.InvokeAsync(nameof(WorldModellingTools), nameof(ValidateBeatImpl), new { beatId, characterIds, storyTime });
 
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> ValidateBeatImpl(string beatId, string? characterIds = null, bool checkBehavior = false, string? storyTime = null)
+    public async Task<string> ValidateBeatImpl(string beatId, string? characterIds = null, string? storyTime = null)
     {
         if (!Guid.TryParse(beatId, out var bid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
@@ -357,13 +332,12 @@ public class WorldModellingTools(
         DateTime? st = null;
         if (storyTime != null && DateTime.TryParse(storyTime, out var dt)) st = dt;
 
-        var result = await postBeatValidator.FullValidateAsync(bid, charIds, checkBehavior, st);
+        var result = await postBeatValidator.FullValidateAsync(bid, charIds, st);
         return JsonSerializer.Serialize(new
         {
             beat_id            = beatId,
             prose_violations   = result.ProseViolations,
             gear_violations    = result.GearViolations,
-            behavior_violations = result.BehaviorViolations,
             total_findings     = result.Total,
             note               = result.Total > 0
                 ? "Findings filed — use list_findings to review them."

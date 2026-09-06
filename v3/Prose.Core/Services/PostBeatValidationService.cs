@@ -6,10 +6,9 @@ namespace Prose.Core.Services;
 
 public record PostBeatValidationResult(
     int ProseViolations,
-    int GearViolations,
-    int BehaviorViolations)
+    int GearViolations)
 {
-    public int Total => ProseViolations + GearViolations + BehaviorViolations;
+    public int Total => ProseViolations + GearViolations;
 }
 
 /// <summary>
@@ -19,7 +18,7 @@ public record PostBeatValidationResult(
 ///   QuickValidateAsync — prose pattern guard only (sync, no DB beyond findings write).
 ///     Called fire-and-forget by NodeWorkbenchService on every UpdateBeatTextAsync.
 ///
-///   FullValidateAsync  — prose + gear carry + (opt) behavior invariants.
+///   FullValidateAsync  — prose + gear carry.
 ///     Called explicitly via the <c>validate_beat</c> MCP tool or
 ///     <c>prose --validate-beat</c> CLI when the writer wants a complete audit.
 ///
@@ -28,7 +27,6 @@ public record PostBeatValidationResult(
 public class PostBeatValidationService(
     ProsePatternGuard proseGuard,
     GearCarryEnforcer gearEnforcer,
-    BehavioralInvariantEnforcer behaviorEnforcer,
     FindingsService findings,
     IDbContextFactory<ProseDbContext> dbFactory,
     ILogger<PostBeatValidationService> log)
@@ -53,24 +51,25 @@ public class PostBeatValidationService(
     }
 
     /// <summary>
-    /// Full battery: prose guard + gear carry + optional behavior invariants.
+    /// Full battery: prose guard + gear carry.
     /// Resolves beat text and node slug from DB. When <paramref name="characterIds"/>
     /// is null, derives characters from the beat's indexed BeatEntityMentions.
+    /// The behaviour-invariant tier was REMOVED 2026-09-06 (author ruling) — see the retirement
+    /// note on BookHealthService's check list for why that check was unsound for fiction.
     /// </summary>
     public async Task<PostBeatValidationResult> FullValidateAsync(
         Guid beatId,
         IReadOnlyList<Guid>? characterIds = null,
-        bool checkBehavior = false,
         DateTime? storyTime = null,
         CancellationToken ct = default)
     {
-        int proseCount = 0, gearCount = 0, behaviorCount = 0;
+        int proseCount = 0, gearCount = 0;
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
 
             var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
-            if (string.IsNullOrWhiteSpace(beat?.Text)) return new(0, 0, 0);
+            if (string.IsNullOrWhiteSpace(beat?.Text)) return new(0, 0);
 
             var nodeSlug = await db.BeatNodes.AsNoTracking()
                 .Where(sb => sb.BeatId == beatId && true)
@@ -85,15 +84,13 @@ public class PostBeatValidationService(
             {
                 ct.ThrowIfCancellationRequested();
                 gearCount += await FileGearViolationsAsync(text, nodeSlug, charId, storyTime, beatId, ct);
-                if (checkBehavior)
-                    behaviorCount += await FileBehaviorViolationsAsync(text, nodeSlug, charId, ct);
             }
         }
         catch (Exception ex)
         {
             log.LogWarning(ex, "FullValidate failed for beat {Id}", beatId);
         }
-        return new(proseCount, gearCount, behaviorCount);
+        return new(proseCount, gearCount);
     }
 
     // ── private helpers ──────────────────────────────────────────────────────
@@ -147,32 +144,6 @@ public class PostBeatValidationService(
         catch (Exception ex)
         {
             log.LogWarning(ex, "GearCarryEnforcer failed for char {Id}", charId);
-            return 0;
-        }
-    }
-
-    private async Task<int> FileBehaviorViolationsAsync(
-        string text, string nodeSlug, Guid charId, CancellationToken ct)
-    {
-        try
-        {
-            var violations = await behaviorEnforcer.EnforceAsync(text, charId, ct);
-            foreach (var v in violations)
-            {
-                findings.Upsert(
-                    filePath:     $"node:{nodeSlug}",
-                    chapterId:    null,
-                    category:     FindingCategory.BehaviorContradiction,
-                    severity:     FindingSeverity.Medium,
-                    summary:      $"BEHAVIOR [{v.RuleBucket}] {v.CharacterName}: {v.RuleText}",
-                    snippet:      v.Explanation,
-                    suggestedFix: null);
-            }
-            return violations.Count;
-        }
-        catch (Exception ex)
-        {
-            log.LogWarning(ex, "BehavioralInvariantEnforcer failed for char {Id}", charId);
             return 0;
         }
     }

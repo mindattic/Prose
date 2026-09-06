@@ -53,13 +53,13 @@ public static class EstimateCostCli
         // ── DEEP tier adds ───────────────────────────────────────────────────────
         const int deepPerBookCalls = 10; // examine-emotion, book-audit, diagnose-book, check-fidelity,
                                           // logic-sweep, craft-checklist, check-canon, altitude-audit,
-                                          // reader-qa, behavior-check, theme-coherence (one call/book each,
+                                          // reader-qa, theme-coherence (one call/book each,
                                           // except craft-checklist/logic-sweep which are closer to O(chapters) —
                                           // treated here as 1 "unit" each; this is a first-pass estimate, not
                                           // a verified per-service call count for every one of these).
         Console.WriteLine("DEEP tier adds (one call per book, roughly, per service):");
         Console.WriteLine($"  ~{deepPerBookCalls} calls/book (examine-emotion, book-audit, diagnose-book, check-fidelity,");
-        Console.WriteLine("   logic-sweep, craft-checklist, check-canon, altitude-audit, reader-qa, behavior-check, theme-coherence)");
+        Console.WriteLine("   logic-sweep, craft-checklist, check-canon, altitude-audit, reader-qa, theme-coherence)");
         if (tier == "deep") return Task.FromResult(0);
         Console.WriteLine();
 

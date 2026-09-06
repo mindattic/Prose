@@ -2179,12 +2179,8 @@ if (args.Contains("--list-species"))
     return;
 }
 
-// prose --behavior-check --slug <nodeSlug> --character <characterId>
-if (args.Contains("--behavior-check"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("BehaviorCheckCli", args);
-    return;
-}
+// --behavior-check REMOVED 2026-09-06 (author ruling) with BehavioralInvariantEnforcer —
+// see the retirement note on BookHealthService's check list.
 
 // prose --weapon-network (--id <weaponId> | --character <characterId> [--as-of date])
 if (args.Contains("--weapon-network"))

@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**300 tools** across **52 tool families.**
+**299 tools** across **52 tool families.**
 
 ## Families
 
@@ -67,7 +67,7 @@
 | [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 5 |
-| [World Modelling](#world-modelling) | 16 |
+| [World Modelling](#world-modelling) | 15 |
 | [Writing](#writing) | 3 |
 
 ## Barks Export
@@ -2360,13 +2360,6 @@ Add an editorial prose lesson — an author ruling that reviewers must respect. 
 - `kind` (string, required) — Kind: score-vs-function | delight | voice | pacing | continuity | other
 - `text` (string, required) — The ruling text — what reviewers must respect.
 
-### `check_behavior`
-
-LLM-checks prose text against a character's behavioral rules (decision_rules, escalation_ladder, contradictions, habits, breaking_points). Returns a JSON array of violations — empty array means the prose is consistent.
-
-- `beatText` (string, required) — Beat prose text to check
-- `characterId` (string, required) — Character entity GUID
-
 ### `check_gear_carry`
 
 Scans prose text for gear usage verbs (drew, fired, aimed…) and checks whether the subject character has a carry/wield edge for each named prop. Returns a JSON array of violations — empty array means clean.
@@ -2455,11 +2448,10 @@ Run the prose pattern guard over every beat in a node and file violations as Fin
 
 ### `validate_beat`
 
-Run the full post-beat validation battery on a saved beat: prose pattern guard (clichés, pseudo-profound, on-the-nose, italicised dialogue) + gear carry check (character uses gear without a carry edge) + optional behavior invariant check (LLM — one call per character). All violations are filed as Findings and returned. Accepts an optional comma-separated list of character GUIDs; when omitted, characters are derived from the beat's indexed entity mentions.
+Run the full post-beat validation battery on a saved beat: prose pattern guard (clichés, pseudo-profound, on-the-nose, italicised dialogue) + gear carry check (character uses gear without a carry edge). All violations are filed as Findings and returned. Accepts an optional comma-separated list of character GUIDs; when omitted, characters are derived from the beat's indexed entity mentions.
 
 - `beatId` (string, required) — Beat GUID.
-- `characterIds` (string, optional) — Comma-separated character GUIDs to check gear/behavior for. Omit to auto-detect from entity mentions.
-- `checkBehavior` (bool, optional) — Run the LLM-based behavior invariant check (one LLM call per character). Default false.
+- `characterIds` (string, optional) — Comma-separated character GUIDs to check gear for. Omit to auto-detect from entity mentions.
 - `storyTime` (string, optional) — Story-date for gear edge validation (ISO 8601). Omit for all-time carry edges.
 
 ## Writing

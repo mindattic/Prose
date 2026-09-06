@@ -78,7 +78,6 @@ public class BookHealthService(
     ChekhovAuditService chekhovAudit,
     NarrativeScienceService narrativeScience,
     ThemeCoherenceService themeCoherence,
-    BehavioralInvariantEnforcer behaviorEnforcer,
     BeatDuplicateService beatDuplicate,
     SanityScanService sanityScan,
     BeatRepairService beatRepair,
@@ -150,7 +149,22 @@ public class BookHealthService(
             await RunCheckAsync(checks, "check-canon", async () => { await canonContradiction.CheckNodeAsync(nodeId, proposeFixes: false, ct); });
             await RunCheckAsync(checks, "altitude-audit", async () => { await altitudeAudit.AuditAsync(nodeId, forceSynopsis: false, ct); });
             await RunCheckAsync(checks, "reader-qa", async () => { await comprehensionProbe.RunAsync(nodeId, force: false, ct); });
-            await RunCheckAsync(checks, "behavior-check", () => BehaviorCheckAsync(nodeId, slug, ct));
+            // behavior-check RETIRED 2026-09-06 (author ruling). BehavioralInvariantEnforcer asked
+            // an LLM whether a beat's prose contradicted a character's CharacterBehavioralRules —
+            // i.e. it measured the book against its own character sketch and filed the difference
+            // as a defect. That is backwards for fiction: a character violating their documented
+            // rules is what an arc IS. On BCODA (whose entire plot is Kyle spending his bushido
+            // tenets one by one) it filed 343 findings, and a 4/4 hand-read sample was 4/4 false
+            // positives — including one that identified the book's central arc correctly and
+            // called it an error for not making Kyle feel bad enough about it. Three of the five
+            // rule buckets it consumed (habits, breaking_points, contradictions — 163/335 findings)
+            // cannot yield a valid contradiction even in principle: a habit not performed in a beat
+            // isn't a contradiction, a character breaking at their breaking point is the book
+            // working, and the `contradictions` bucket exists to record "does X despite believing
+            // Y". It also had no concept of a beat being silent about something, so it routinely
+            // inferred a fact from absence and then flagged its own inference. The genuine subcase
+            // (a character doing something with no setup) belongs to the logic sweep's causality
+            // dimension, which checks against the story rather than against a profile.
             await RunCheckAsync(checks, "theme-coherence", () => ThemeCoherenceAsync(nodeId, slug, ct));
             await RunCheckAsync(checks, "fact-ledger", () => FactLedgerAsync(slug, ct));
             await RunCheckAsync(checks, "applied-claim-drift", () => AppliedClaimDriftAsync(slug, ct));
@@ -1022,94 +1036,6 @@ public class BookHealthService(
     }
 
     private sealed record PresenceRow(Guid BeatId, Guid EntityId, string EntityName);
-
-    /// <summary>BehavioralInvariantEnforcer checks a beat's prose against ONE character's
-    /// CharacterBehavioralRules but is never run automatically — it only fires on explicit
-    /// manual --behavior-check calls today. Wires it into the battery: for each character who
-    /// (a) has behavioral rules defined AND (b) is actually present (not just mentioned) in a
-    /// beat of this book, ask whether that beat contradicts their established rules.
-    /// EnforceAsync itself is already cost-gated (zero LLM calls for a character with no rules),
-    /// so this naturally costs little on books with few or no ruled characters — safe for DEEP,
-    /// not reserved for FULL. BeatEntityPresence has no EF mapping, so the character list is
-    /// narrowed via the real BeatEntityMentions DbSet first (this book's characters only) before
-    /// a small parameterized raw-SQL query for presence-type filtering.</summary>
-    private async Task BehaviorCheckAsync(Guid nodeId, string slug, CancellationToken ct)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var beatIds = await db.BeatNodes.AsNoTracking()
-            .Where(bn => searchIds.Contains(bn.NodeId) && true).Select(bn => bn.BeatId).ToListAsync(ct);
-        if (beatIds.Count == 0) return;
-
-        var bookEntityIds = await db.BeatEntityMentions.AsNoTracking()
-            .Where(m => beatIds.Contains(m.BeatId)).Select(m => m.EntityId).Distinct().ToListAsync(ct);
-        if (bookEntityIds.Count == 0) return;
-        var ruleCharacterIds = await db.CharacterBehavioralRules.AsNoTracking()
-            .Where(r => bookEntityIds.Contains(r.CharacterId))
-            .Select(r => r.CharacterId).Distinct().ToListAsync(ct);
-        if (ruleCharacterIds.Count == 0) return;
-
-        var charParams = ruleCharacterIds.Select((id, i) => new SqlParameter($"@c{i}", id)).ToArray();
-        var placeholders = string.Join(",", charParams.Select(p => p.ParameterName));
-        var presence = await db.Database.SqlQueryRaw<PresenceRow>(
-            "SELECT BeatId, EntityId, EntityName FROM BeatEntityPresence " +
-            "WHERE PresenceType IN ('present-active','present-passive','pov','implied-present') " +
-            $"AND EntityId IN ({placeholders})",
-            charParams).ToListAsync(ct);
-
-        var beatIdSet = beatIds.ToHashSet();
-        var pairs = presence.Where(p => beatIdSet.Contains(p.BeatId)).ToList();
-        if (pairs.Count == 0) return;
-
-        var pairBeatIds = pairs.Select(p => p.BeatId).Distinct().ToList();
-        var beatTexts = await db.Beats.AsNoTracking()
-            .Where(b => pairBeatIds.Contains(b.Id))
-            .Select(b => new { b.Id, b.Number, b.Text })
-            .ToDictionaryAsync(b => b.Id, ct);
-
-        // EnforceAsync now throws on genuine evaluation failure (2026-08-09 fix — it used to
-        // swallow every failure into an empty violations list, indistinguishable from "checked,
-        // found nothing"). Evaluate everything FIRST, then only purge+refile BEHAVIOR findings
-        // for beats that had at least one successfully-evaluated pair this run — a beat whose
-        // only pair(s) failed keeps its prior findings untouched rather than losing them to a
-        // delete with nothing to replace it (same principle as the SwainAuditService fix: never
-        // purge-then-recreate across a failed evaluation). The "[incomplete]" rollup itself is
-        // node-scoped, not beat-scoped, so it needs its own narrow, unconditional clear — the
-        // per-beat deletes below never touch it (a beat-scoped prefix doesn't match the plainer
-        // node-scoped path this rollup files under), so without this line a stale "N could not be
-        // evaluated" finding would survive forever even after the API recovers and everything
-        // succeeds again.
-        findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "BEHAVIOR [incomplete]");
-        var evaluated = new List<(Guid BeatId, int Number, Guid EntityId, List<BehaviorViolation> Violations)>();
-        var failedCount = 0;
-        foreach (var p in pairs)
-        {
-            if (!beatTexts.TryGetValue(p.BeatId, out var beat) || string.IsNullOrWhiteSpace(beat.Text)) continue;
-            try
-            {
-                var violations = await behaviorEnforcer.EnforceAsync(beat.Text, p.EntityId, ct);
-                evaluated.Add((p.BeatId, beat.Number, p.EntityId, violations));
-            }
-            catch (Exception ex)
-            {
-                failedCount++;
-                log.LogWarning(ex, "BehavioralInvariantEnforcer failed for beat {BeatId} char {EntityId}", p.BeatId, p.EntityId);
-            }
-        }
-
-        foreach (var beatId in evaluated.Select(e => e.BeatId).Distinct())
-            findingsSvc.DeleteBySummaryPrefix($"node:{slug}/beat:{beatId:N}", "BEHAVIOR ");
-        foreach (var e in evaluated)
-            foreach (var v in e.Violations)
-                findingsSvc.Upsert($"node:{slug}/beat:{e.BeatId:N}", chapterId: null, FindingCategory.BehaviorContradiction, FindingSeverity.Medium,
-                    $"BEHAVIOR beat #{e.Number} {v.CharacterName} [{v.RuleBucket}]: {v.RuleText} — {v.Explanation}",
-                    snippet: null, suggestedFix: null);
-
-        if (failedCount > 0)
-            findingsSvc.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
-                $"BEHAVIOR [incomplete]: {failedCount}/{pairs.Count} character checks could not be evaluated (LLM errors) — re-run once resolved.",
-                snippet: null, suggestedFix: null);
-    }
 
     /// <summary>ThemeCoherenceService.AnalyzeAsync (McKee/Truby controlling-idea framework) is a
     /// brand-new check — before this, "theme" only existed in the pipeline as StoryScienceService's
