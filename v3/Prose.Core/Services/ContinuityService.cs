@@ -124,6 +124,15 @@ public class ContinuityService
         // A freelancer works a different job in a different place every chapter; two of these
         // rows disagree only if you read a scene-scoped fact as a permanent one.
         "arrival_time", "location_at_time", "job_location",
+
+        // Second pass, same day and same class — both are a listed volatile predicate wearing a
+        // different extraction name, which is the failure this list keeps rediscovering:
+        //   weapon_carry_location  ← `weapon_carry` is already here. Nine BCODA values for where
+        //                            Kyle's sword is: "hip", "saya at back", "side table",
+        //                            "against wall by stool". That is nine moments, not nine facts.
+        //   physical_state         ← `status_current` is already here. "bleeding from side" (ch.19)
+        //                            against "steady hands" (ch.35), sixteen chapters apart.
+        "weapon_carry_location", "physical_state",
     };
 
     /// <summary>
@@ -255,6 +264,10 @@ public class ContinuityService
         "possession", "possessions", "possesses", "carries", "equipment", "gear",
         "relationship", "relationships", "interaction", "observation", "habit", "habits",
         "capability", "capabilities", "specialization", "specializations",
+        // `dining` is `habit` under another name (2026-09-06). BCODA records Kyle eating "at Mei's
+        // on alternating weeks for six years" and "at Vong's on Tuesdays" — from the SAME chapter,
+        // so the book is plainly telling us both, not arguing with itself.
+        "dining",
     };
 
     /// <summary>
@@ -475,7 +488,27 @@ public class ContinuityService
 
         var ta = x.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToHashSet(StringComparer.Ordinal);
         var tb = y.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToHashSet(StringComparer.Ordinal);
-        if (ta.Count < 2 || tb.Count < 2) return false;
+
+        // A ONE-token object may be subsumed only when it is a DESIGNATOR — a token carrying a
+        // digit (a room number, a model number, a count). Added 2026-09-06 for Pixel's address,
+        // recorded as "2E" in one chapter and "2E, second floor of The Pivot" in another: one
+        // address, on the pile as a contradiction because a bare "2E" cannot clear a two-token
+        // floor.
+        //
+        // Why designators and not any single word: the floor was asked to come down to one token
+        // outright, and it cannot. `father_name` "Seito" is a token subset of "Seito's apprentice",
+        // and merging those two is precisely the defect this ledger was built to catch — a
+        // fabricated parent quietly absorbed into a claim about someone else. A digit-bearing token
+        // is the case where the short form really is an identifier that the long form annotates,
+        // and a name never qualifies.
+        if (ta.Count < 2 || tb.Count < 2)
+        {
+            var small = ta.Count <= tb.Count ? ta : tb;
+            var large = ta.Count <= tb.Count ? tb : ta;
+            return small.Count == 1 && large.Count >= 2
+                && small.Single().Any(char.IsDigit)
+                && small.IsSubsetOf(large);
+        }
 
         // Token subsumption — added 2026-09-06. The substring rule above only sees detail APPENDED
         // to an intact phrase; extraction just as often inserts it. "Atlas NeoCortex" (ch.6) and

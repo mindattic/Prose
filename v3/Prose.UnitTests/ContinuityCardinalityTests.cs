@@ -234,6 +234,22 @@ public class ContinuityCardinalityTests
             "noodle stall", "operates a noodle cart"), Is.False);
     }
 
+    [Test]
+    public void Paraphrase_Subsumes_A_OneToken_Designator_But_Never_A_Bare_Name()
+    {
+        // Pixel's address, recorded twice at different granularity.
+        Assert.That(ContinuityService.ObjectsSayTheSameThing(
+            "2E", "2E, second floor of The Pivot"), Is.True);
+        Assert.That(ContinuityService.ObjectsSayTheSameThing(
+            "room 2E, across the hall from Kyle", "2E"), Is.True);
+
+        // The reason the floor cannot simply drop to one token for everything: this pair is the
+        // founding defect of the whole Story Ledger programme, and it must stay on the pile.
+        Assert.That(ContinuityService.ObjectsSayTheSameThing("Seito", "Seito's apprentice"), Is.False);
+        Assert.That(ContinuityService.ObjectsSayTheSameThing("live", "delivered to the lab"), Is.False);
+        Assert.That(ContinuityService.ObjectsSayTheSameThing("fixer", "fixer who routes contracts"), Is.False);
+    }
+
     // ── boolean polarity (2026-09-06) ────────────────────────────────────────
 
     private static ContinuityClaim BoolClaim(string predicate, string obj) => new()
