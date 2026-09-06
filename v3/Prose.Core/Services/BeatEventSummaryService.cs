@@ -1,5 +1,6 @@
 using System.Text;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
@@ -184,9 +185,19 @@ Output STRICT JSON, no fences, no commentary:
                     var tracked = await db.Beats.Where(b => ids.Contains(b.Id)).ToListAsync(ct);
                     var trackedById = tracked.ToDictionary(b => b.Id);
 
+                    // Attribution guard (2026-09-06). The dedupe above catches a DUPLICATE ref, but
+                    // the far more damaging batch failure is a SHIFTED one: the model returns good
+                    // summaries keyed one ref off, so every beat gets its neighbour's event. Found on
+                    // BCODA ch.31, where beat #3056 (Kyle vs KT's Kinetix arm) carried "Kyle strikes
+                    // Rook's Meridian Conduct port housing" and #3057 (Rook) carried Nines's event —
+                    // all stamped state=current, so nothing would ever re-derive them, and every
+                    // synopsis-altitude instrument was reading a chapter where Kyle hits the wrong
+                    // man. Nothing in the pipeline verified that a summary describes its own beat.
+                    var suspect = DetectShiftedAttribution(batch, events);
                     var writtenIds = new HashSet<Guid>();
                     foreach (var (beatId, evt) in events)
                     {
+                        if (suspect.Contains(beatId)) continue;
                         if (trackedById.TryGetValue(beatId, out var beat))
                         {
                             if (!dryRun)
@@ -199,7 +210,29 @@ Output STRICT JSON, no fences, no commentary:
                     }
                     generated += writtenIds.Count;
                     if (!dryRun) await db.SaveChangesAsync(ct);
-                    failed += batch.Count - writtenIds.Count;
+
+                    // A suspect beat is not a failure — it is a beat this batch could not attribute
+                    // safely. Re-run those one per call, which is unambiguous by construction (the
+                    // same reason the onlyNumbers remediation path already runs single-beat batches).
+                    if (suspect.Count > 0 && batch.Count > 1)
+                    {
+                        progress?.Invoke($"  attribution guard: {suspect.Count} of {batch.Count} " +
+                                         "summary/beat mismatch(es) — re-running those singly");
+                        foreach (var one in batch.Where(b => suspect.Contains(b.Id)))
+                        {
+                            var (ok, note) = await GenerateOneAsync(db, system, one, model, dryRun, ct);
+                            if (ok) generated++; else { failed++; log.LogWarning("{Note}", note); }
+                        }
+                    }
+                    else if (suspect.Count > 0)
+                    {
+                        // Already single-beat and still mismatched — the model is describing something
+                        // that is not in this beat. Leave the existing summary alone rather than
+                        // overwrite a good one with a worse guess; count it honestly as failed.
+                        failed += suspect.Count;
+                    }
+
+                    failed += batch.Count - writtenIds.Count - suspect.Count;
                 }
             }
             catch (Exception ex)
@@ -213,6 +246,99 @@ Output STRICT JSON, no fences, no commentary:
         }
 
         return new BeatEventListReport(nodeCode, candidates.Count, generated, failed, skippedFromCache);
+    }
+
+    /// <summary>
+    /// Which beats in this batch got a summary that describes a DIFFERENT beat in the same batch.
+    ///
+    /// <para>Deterministic and free — no second LLM call. A summary names its actors ("Kyle strikes
+    /// Rook's… port housing"), so a proper noun that is absent from the beat it is keyed to but
+    /// present in another beat of the same batch is the signature of a ref shift. Requiring the
+    /// name to appear in a SIBLING beat is what keeps this precise: a summary may legitimately
+    /// name something the prose words differently ("the fixer" → "Húlìjīng"), and that case is
+    /// ignored because the name appears nowhere else in the batch either. On the BCODA ch.31 batch
+    /// that motivated this, the rule flagged exactly the two shifted beats and passed the four
+    /// correct ones, including one whose summary described only the beat's tail event.</para>
+    /// </summary>
+    private static HashSet<Guid> DetectShiftedAttribution(
+        List<(Guid Id, string Text, string Chapter)> batch,
+        List<(Guid BeatId, string Event)> events)
+    {
+        var suspect = new HashSet<Guid>();
+        if (batch.Count < 2) return suspect;
+
+        var textById = batch.ToDictionary(b => b.Id, b => b.Text ?? "");
+
+        // A name carried by much of the batch is ambient cast (usually the POV character) and holds
+        // no attribution signal: a summary routinely names the POV where that beat's prose used a
+        // pronoun ("Mira reveals the Narrows desk bought KYLE's file" over prose reading "bought
+        // YOUR file"), which would otherwise read as a shift on every such beat. Only a name
+        // concentrated in one or two beats can distinguish one beat from its neighbour.
+        var ambientCutoff = Math.Max(2, (int)Math.Ceiling(batch.Count * 0.4));
+
+        foreach (var (beatId, evt) in events)
+        {
+            if (!textById.TryGetValue(beatId, out var ownText)) continue;
+
+            foreach (Match m in ProperNounInEvent.Matches(evt ?? ""))
+            {
+                var name = m.Value;
+                if (EventNameStopwords.Contains(name)) continue;
+                if (ownText.Contains(name, StringComparison.OrdinalIgnoreCase)) continue;
+
+                var beatsWithName = batch.Count(b =>
+                    (b.Text ?? "").Contains(name, StringComparison.OrdinalIgnoreCase));
+                if (beatsWithName >= ambientCutoff) continue;
+
+                // Absent from its own beat. Only a shift if a SIBLING beat actually has it.
+                var inSibling = batch.Any(b => b.Id != beatId
+                    && (b.Text ?? "").Contains(name, StringComparison.OrdinalIgnoreCase));
+                if (inSibling) { suspect.Add(beatId); break; }
+            }
+        }
+        return suspect;
+    }
+
+    private static readonly Regex ProperNounInEvent = new(@"\b[A-Z][a-z]{2,}\b", RegexOptions.Compiled);
+
+    /// <summary>Sentence-openers and register words that are capitalised in a summary line without
+    /// being anybody's name — matching them would flag correct attributions.</summary>
+    private static readonly HashSet<string> EventNameStopwords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "The", "This", "That", "There", "Then", "When", "While", "After", "Before", "During",
+        "His", "Her", "Their", "They", "She", "Client", "Description", "Transitional",
+        "No", "Not", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+    };
+
+    /// <summary>One beat, one call — unambiguous by construction. Used by the attribution guard to
+    /// recover the beats a batch could not key safely.</summary>
+    private async Task<(bool Ok, string Note)> GenerateOneAsync(
+        ProseDbContext db, string system, (Guid Id, string Text, string Chapter) one,
+        string? model, bool dryRun, CancellationToken ct)
+    {
+        var refMap = new Dictionary<int, Guid> { [0] = one.Id };
+        var prompt = $"[ref 0 · {one.Chapter}]\n{ClipForEvent(one.Text)}\n";
+        try
+        {
+            var raw = await llm.GenerateAsync(system, prompt, temperature: 0.2,
+                maxTokens: 300, model: model ?? LlmModels.Haiku, ct: ct);
+            var parsed = ParseEventBatch(raw, refMap);
+            if (parsed.Count == 0) return (false, $"single-beat retry parsed nothing for {one.Id}");
+
+            var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == one.Id, ct);
+            if (beat == null) return (false, $"single-beat retry: beat {one.Id} vanished");
+            if (!dryRun)
+            {
+                beat.EventSummary = parsed[0].Event;
+                beat.EventSummaryHash = beat.TextHash;
+                await db.SaveChangesAsync(ct);
+            }
+            return (true, "");
+        }
+        catch (Exception ex)
+        {
+            return (false, $"single-beat retry failed for {one.Id}: {ex.Message}");
+        }
     }
 
     /// <summary>Reads the current DB state (no LLM call) for export/display — every enabled
