@@ -45,17 +45,20 @@ public class FindingApplyService
     private readonly FindingsService findings;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly IPathProvider paths;
+    private readonly NodeWorkbenchService workbench;
     private readonly ILogger<FindingApplyService> log;
 
     public FindingApplyService(
         FindingsService findings,
         IDbContextFactory<ProseDbContext> dbFactory,
         IPathProvider paths,
+        NodeWorkbenchService workbench,
         ILogger<FindingApplyService> log)
     {
         this.findings  = findings;
         this.dbFactory = dbFactory;
         this.paths     = paths;
+        this.workbench = workbench;
         this.log       = log;
     }
 
@@ -97,8 +100,11 @@ public class FindingApplyService
             var updated = beat.Text.Replace(f.Snippet!, f.SuggestedFix!);
             if (updated == beat.Text) return new(ApplyOutcome.SnippetNotFound, "Replacement made no change.");
 
-            beat.Text = updated;
-            await db.SaveChangesAsync(ct);
+            // RFC 0009 Phase 3b (2026-09-06): through the workbench, not a direct beat.Text write.
+            // The direct write skipped entity re-tagging, the Version counter, the Stale flag, the
+            // blast-radius recheck, and — the point — left no LastWriteReason. This is the author
+            // applying one specific finding by exact-snippet replacement; it says so now.
+            await workbench.UpdateBeatTextAsync(beatId, updated, BeatWriteReason.FindingApply, expectedUpdatedAt: null, ct: ct);
             findings.SetStatus(f.Id, FindingStatus.Applied);
             log.LogInformation("Applied finding {Id} to beat {BeatId}", f.Id, beatId);
             return new(ApplyOutcome.Applied);

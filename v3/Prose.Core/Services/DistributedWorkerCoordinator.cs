@@ -399,6 +399,7 @@ public class DistributedWorkerCoordinator
         // beat from an unwritten one. The DbContext enforces this on save too; setting it
         // here keeps the intent visible at the call site.
         beat.TextHash  = Beat.ComputeHash(beat.Text);
+        beat.LastWriteReason = nameof(BeatWriteReason.Generation);   // RFC 0009 Phase 3b: prose that was asked for, into an empty beat
         beat.UpdatedAt = DateTime.UtcNow;
         beat.Version   = beat.Version + 1;
         await db.SaveChangesAsync(ct);

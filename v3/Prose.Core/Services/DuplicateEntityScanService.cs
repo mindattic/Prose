@@ -571,7 +571,11 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
         var loserTag  = $"guid=\"{loserId}\"";
         var winnerTag = $"guid=\"{winnerId}\"";
         var taggedBeats = await db.Beats.Where(b => b.Text != null && b.Text.Contains(loserTag)).ToListAsync(ct);
-        foreach (var b in taggedBeats) b.Text = b.Text!.Replace(loserTag, winnerTag, StringComparison.Ordinal);
+        foreach (var b in taggedBeats)
+        {
+            b.Text = b.Text!.Replace(loserTag, winnerTag, StringComparison.Ordinal);
+            b.LastWriteReason = nameof(BeatWriteReason.TagMaintenance);   // RFC 0009 Phase 3b: a GUID moved, no word did
+        }
         var taggedNodes = await db.Nodes.IgnoreQueryFilters()
             .Where(n => n.NodeOutline != null && n.NodeOutline.Contains(loserTag)).ToListAsync(ct);
         foreach (var n in taggedNodes) n.NodeOutline = n.NodeOutline!.Replace(loserTag, winnerTag, StringComparison.Ordinal);

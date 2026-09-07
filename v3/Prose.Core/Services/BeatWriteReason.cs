@@ -51,4 +51,15 @@ public enum BeatWriteReason
 
     /// <summary>Split / merge / join: text moves between beats and is never reworded.</summary>
     StructuralSplit,
+
+    /// <summary><c>FindingApplyService</c>: the author applying one specific finding's stored
+    /// <c>SuggestedFix</c> by exact-snippet replacement. Deterministic — no model in the loop —
+    /// and author-initiated per finding. (Phase 3b, 2026-09-06: it used to write <c>beat.Text</c>
+    /// directly, bypassing entity re-tagging, the Version counter, and the blast-radius recheck.)</summary>
+    FindingApply,
+
+    /// <summary>Entity-tag maintenance: <c>&lt;entity guid="…"&gt;</c> attributes rewritten in place
+    /// when two entity rows are merged (<c>--merge-entity</c>). The words never change; only the
+    /// GUID a tag points at. Stamped without a Version bump, because no prose changed.</summary>
+    TagMaintenance,
 }
