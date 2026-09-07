@@ -2,6 +2,7 @@ using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
+using Prose.Core.Services.Audit;
 
 namespace Prose.Core.Services;
 
@@ -135,6 +136,26 @@ public class RepetitionLintService
             lines.Add(summary);
             if (!dryRun) findings.Upsert(fp, chapterId: null, FindingCategory.CraftChecklist, sev,
                 LintPrefix + summary, snippet, fix);
+        }
+
+        // ── native craft rules (deterministic; RFC 0010, 2026-09-06) ─────────────────────
+        // InteriorityDensityRule and RetiredTicRule used to run inside the LLM craft checklist
+        // (BeatChecklistGateService). That service was deleted; these two are regexes over the
+        // prose with the same answer every time, the author's instrument review kept them
+        // ("CraftChecklist:Native"), and this is the surviving deterministic CraftChecklist
+        // producer — so they run here, filed under the same LINT prefix and purged with it.
+        {
+            var auditBeats = beats.Select(b => new AuditBeat(b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), 0, b.Chapter ?? "")).ToList();
+            var detCtx = new AuditContext(node.Id, node.UniverseId, "", auditBeats, new Dictionary<string, object?>());
+            var nativeVerdicts = (await new CraftNativeRules.InteriorityDensityRule().EvaluateAsync(detCtx, ct))
+                .Concat(await new CraftNativeRules.RetiredTicRule().EvaluateAsync(detCtx, ct));
+            foreach (var v in nativeVerdicts)
+            {
+                if (v.Severity == "PASS") continue;
+                var sev = v.Severity == "BLOCKER" ? FindingSeverity.High : v.Severity == "MODERATE" ? FindingSeverity.Medium : FindingSeverity.Low;
+                File(sev, $"{v.Title}: {v.Evidence}", fix: v.Fix);
+                structureCount++;
+            }
         }
 
         // ── per-beat checks ────────────────────────────────────────────────────
