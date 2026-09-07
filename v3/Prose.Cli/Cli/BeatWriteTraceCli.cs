@@ -8,7 +8,7 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --beat-write-trace (--beat &lt;guid&gt; | --last) [--json]
+/// prose --beat-write-trace (--beat-id &lt;guid&gt; | --last) [--json]
 ///
 /// Single-source-writer RFC, step one (2026-09-07): make one beat write observable. Read-only,
 /// deterministic, zero LLM cost. Answers, from the data rather than from reading the router:
@@ -57,11 +57,11 @@ public static class BeatWriteTraceCli
         bool last = args.Contains("--last");
         bool json = args.Contains("--json");
         for (int i = 0; i < args.Length; i++)
-            if (args[i] == "--beat" && i + 1 < args.Length && Guid.TryParse(args[i + 1], out var g)) beatId = g;
+            if (args[i] == "--beat-id" && i + 1 < args.Length && Guid.TryParse(args[i + 1], out var g)) beatId = g;
 
         if (beatId == null && !last)
         {
-            Console.Error.WriteLine("Usage: prose --beat-write-trace (--beat <guid> | --last) [--json]");
+            Console.Error.WriteLine("Usage: prose --beat-write-trace (--beat-id <guid> | --last) [--json]");
             return 1;
         }
 

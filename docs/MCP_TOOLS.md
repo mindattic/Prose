@@ -2117,7 +2117,7 @@ Get the detected beat mode log for a node. Shows how each beat was classified (N
 
 ### `workflow_status`
 
-Get prose service coverage for a node. Returns which services (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active when beats were written, and flags gaps where applicable services weren't used.
+Get prose service coverage for a node. Returns, for every service the live write path logs (~30 rows per beat: Pacing, StoryMethodology, EntityContext, DocContext, SceneContextAssembler, ContinuityEnforcer, …), how often it was applicable and how often it actually contributed a non-empty prompt block, and flags gaps where applicable services went unused. For per-beat LLM-call counts by stage use prose --beat-write-trace.
 
 - `slug` (string, required) — Node slug (e.g. 'ATTE', 'BCODA')
 

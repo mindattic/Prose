@@ -171,7 +171,7 @@ if (UniverseBootstrap.RequestedSlug == null
         // and resolves the beat's own NodeId from BeatNodes directly — no ambient scope to
         // resolve, same shape as --merge-entity above.
         "--beat-archive",
-        // Single-source-writer RFC step one (2026-09-07): takes an explicit --beat <guid> (or
+        // Single-source-writer RFC step one (2026-09-07): takes an explicit --beat-id <guid> (or
         // --last) and resolves the beat's own chapter/book/universe via IgnoreQueryFilters() —
         // same shape as --beat-archive above (see BeatWriteTraceCli).
         "--beat-write-trace",
@@ -2348,7 +2348,7 @@ if (args.Contains("--beat-archive"))
     return;
 }
 
-// prose --beat-write-trace (--beat <guid> | --last) [--json]
+// prose --beat-write-trace (--beat-id <guid> | --last) [--json]
 // Single-source-writer RFC, step one: every LLM + embedding call one beat write made, by stage,
 // with tokens/cost/wall time, plus the per-stage execution log and gate-skipped stages.
 // Read-only, free.

@@ -140,6 +140,12 @@ enrichment services make their own LLM call per beat, and the coverage log
 (`--workflow-status`) instruments **five** of ~35 services — so the number of LLM calls one beat
 write makes is, today, unmeasurable. That measurement is step one of the next RFC.
 
+*Correction and result, 2026-09-07 (RFC 0012 §1):* the live write path logged **30** coverage rows,
+not five — the "five" was the backfill path — but coverage was never the gap; **attribution** was
+(no beat id or stage on enrichment/post-write calls, embeddings recorded nowhere). With that fixed,
+one beat write measured **29 LLM calls = 15 chat + 14 embedding, $0.0287, 52.8 s**;
+`prose --beat-write-trace` reports it per stage.
+
 ## 7. What was not measured
 
 - Apply rate is a lower bound on value: a finding can inform a hand edit without ever being marked

@@ -17,7 +17,7 @@ public class WorkflowMonitorTools(
     IDbContextFactory<ProseDbContext> dbFactory,
     HubInvoker hub)
 {
-    [McpServerTool, Description("Get prose service coverage for a node. Returns which services (Pacing, StoryMethodology, PlantPayoff, StoryAudit, Combat) were active when beats were written, and flags gaps where applicable services weren't used.")]
+    [McpServerTool, Description("Get prose service coverage for a node. Returns, for every service the live write path logs (~30 rows per beat: Pacing, StoryMethodology, EntityContext, DocContext, SceneContextAssembler, ContinuityEnforcer, …), how often it was applicable and how often it actually contributed a non-empty prompt block, and flags gaps where applicable services went unused. For per-beat LLM-call counts by stage use prose --beat-write-trace.")]
     public Task<string> workflow_status(
         [Description("Node slug (e.g. 'ATTE', 'BCODA')")] string slug) =>
         hub.InvokeAsync(nameof(WorkflowMonitorTools), nameof(workflow_statusImpl), new { slug });
