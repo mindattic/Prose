@@ -145,8 +145,240 @@ matter (XRay emptiness; chapter-close cost). Before any cut: run `--beat-write-t
 ordinary writes — a mid-chapter beat with two named characters in the goal, a combat beat, a
 dialogue beat, a first-beat-of-book — and compare the stage tables. The command is free.
 
-## 2. Step two — not started
 
-Decide, from ≥5 traces, which fan-out calls change what the writer produces (measure: diff the
-assembled `BeatContextTrace` with and without the stage's block) and which only file findings
-nobody applies (RFC 0010's rule). Then design the funnel. Not before.
+## 2. Diagnosis — why the beat ignored its brief, from the code (read 2026-09-07)
+
+Three facts, each verified by reading `BeatGeneratorService.GenerateBeatAsync` (lines 64–275),
+the router's post-write cluster, and every writer of `Beats.Text`:
+
+1. **The brief is one line at the end of a prompt that has already said everything else.**
+   `BeatGoal` appears exactly once, as `BEAT GOAL: …` in the user message, after the cached
+   prefix (universe primer, world facts, interiority budget, the whole book bible, commandments,
+   story-science), after a dynamic system block of **30 conditional guidance sections** (world
+   context, X-ray, canon claims, entity memory, doc stack, location, dialogue, style anchors,
+   plants, consequences, world state, collisions, six kinds of loop-back guidance, tension,
+   reader knowledge, narrative summary, chapter summary, open threads, motifs, plot state, pacing,
+   structural role, offscreen activity, blueprint slice), and after **6,000 characters of scene
+   tail**. It is not restated, not weighted, not checked. On beat #17292 the whole prompt was
+   ~22,900 tokens and the brief was ~150 characters of it. Temperature is hard-coded 0.85.
+2. **Nothing validates the draft.** No header strip, no length band, no retry, no check that the
+   ending or the named entities match the brief. `ClaudeService` trims whitespace; the router
+   returns the string; the CLI saves it with `BeatWriteReason.Generation`. The `# Beat: …` header
+   went into the book verbatim. The three post-write "checks" run **after** the save, asynchronously,
+   and can only file findings: `SemanticFidelityService` compares an embedding of the goal with an
+   embedding of the prose (cosine, floor 0.50) — structurally blind to "invented a plot event";
+   `LibertyReportService` files only `entity_invention` below CoolFactor 5 and its findings are
+   **never looped back** into generation; `ContinuityEnforcer` checks ≤40 canon claims for the
+   on-page cast and *is* looped back, but only as a hint for a *later* beat, never as a gate on this
+   one.
+3. **28 of the 29 calls do not touch the text, and 12 of them produce nothing durable.**
+   `EntityContextStack.ReconcileAsync` makes 1 claim-extraction call + 1 Haiku conflict check **per
+   active entity** (11 here); its output is an **in-process dictionary** (lost on every Hub
+   restart) plus `FindingCategory.Other` rows that no loop-back reads. `BeatExtractionService`
+   (1 Haiku call) is the opposite: its six slices write the five tables the *next* beat reads
+   (`ReaderKnowledgeFacts`, `NarrativeSummaryEntries`, `NodeOpenThreads`, `BookMotifs`,
+   `BookPlotEvents`, plus `Beats.PlaceName`) — a closed loop that is load-bearing. The Story Ledger
+   (`ContinuityClaims`) is **not** written by the writer at all; only `--continuity extract` /
+   `--tuned-read` write it.
+
+And one fact about the funnel: `NodeWorkbenchService.UpdateBeatTextAsync` is the choke point for
+14 named write paths, but three writers still bypass it — `StripBeatArtifactsCli` (no reason),
+`NodeBeatWriter` used by `--import-book`/reimport (new rows, no reason), and
+`DuplicateEntityScanService` (direct write, reason set). `BeatGeneratorService.GenerateBeatAsync`
+has exactly one caller (the router), which is the right shape already.
+
+## 3. The design — one writer, four phases, one door
+
+```
+                 ┌──────────────── BeatWriter.WriteAsync(beatId) ────────────────┐
+                 │                                                               │
+  Brief ───────► │  ASSEMBLE ─► DRAFT (1 call) ─► GATE ─pass─► COMMIT ─► EXTRACT  │
+  (contract)     │      ▲                          │fail          │        (1 call)│
+                 │      │                          ▼              │               │
+  Context tiers  │  budgeted            retry once with reasons   │ UpdateBeatText │
+  (Ledger, DCM,  │  by tier             then STOP, hand to author │ (Generation)   │
+   summaries,    │                                                │               │
+   entities)     └────────────────────────────────────────────────┴───────────────┘
+```
+
+**Law (extends RFC 0009):** the writer may *generate* and may *refuse to save*; it may never
+*rewrite* what the author accepted. A retry before the first save is generation. A finding
+still describes and never instructs.
+
+### 3.1 The Brief is a contract, not a line
+
+New record `BeatBrief` built by `BeatBriefBuilder` from data that already exists:
+
+| Field | Source | Enforced how |
+|---|---|---|
+| `Goal` | `Beat.Description` (else `Title`) | Prompt: first line of the user message **and** restated as the last line ("Write exactly this beat; stop where it says to stop.") |
+| `StopBefore` | the **next** beat's `Description` in reading order (or the outline's next Event Sequence line at chapter end; `null` = last beat of book) | Gate verifier question 1: "Does the draft cross into this?" — this is the ending constraint that would have caught the ArcSec sedan |
+| `MustInclude` | entities the goal names (existing `UniverseGraphService` name scan on the goal) | Deterministic: each name appears in the draft |
+| `NoNewPlot` | always on | Gate verifier question 2: "Name any event the draft adds that the goal does not imply" |
+| `Pov` | outline POV map row for this beat (`BeatEntityPresence 'pov'`) | Deterministic: person/pronoun sanity + name; Register pinned as today |
+| `Register` | POV character record (DCM tier 4) | unchanged |
+| `TargetWords` | `Beat.TargetWords` or Swain default | Deterministic band: 0.5×–1.6× |
+| `Subtext` | `Beat.Subtext` | unchanged, writer-only |
+
+The brief is persisted with the write (`BeatContextTrace.ContextJson` already archives the
+assembled context; add `BriefJson`) so a later reader can see what the writer was told to do.
+
+### 3.2 Assemble: the same sources, a budget, and an order
+
+Nothing new is invented here; the 30 blocks are **re-tiered and capped**, and the brief moves
+to the front. Tier order in the prompt, each with a character ceiling logged per write:
+
+| Tier | Blocks (today's names) | Ceiling | Why it stays |
+|---|---|---|---|
+| **A · Brief** | `BeatBrief` (goal, stop-before, POV, must-include, length) | — | it is the job |
+| **B · Facts** | canon claims (`ContinuityService`), consequences/gear, world state, X-ray roster, relationship context, universal facts | 6,000 ch | contradictions are the defects the author actually fixes (RFC 0010 §1) |
+| **C · Memory** | scene-so-far tail, narrative summary, chapter summary, open threads, plot state, reader knowledge, motifs, beat place | 8,000 ch | the closed loop that keeps a 500-page book coherent |
+| **D · Voice** | register (POV record), CRAFT base, universe craft, DELIGHT (3 rules), pacing, structural role | 3,000 ch | measured in §4; kept only at the level the A/B supports |
+| **E · Opinion** | six finding loop-backs, story-science, blueprint slice, offscreen chart, style anchors, tension, collision | **0 by default** | none has an applied finding (RFC 0010); each is re-admitted only by the §4 A/B showing it changed the output |
+
+The bible goes in the cached prefix as today. Temperature becomes a brief field (default 0.7;
+combat 0.6) instead of a constant.
+
+### 3.3 Draft: one call, one contract
+
+`GenerateBeatAsync` stays the single generation call, made private to the writer. Its response
+contract: **prose only**. Deterministic post-processing before anything else sees it: strip a
+leading markdown header or `Beat:`/`Title:` label line, strip trailing meta commentary after a
+`---`, normalise whitespace. Empty → treated as a gate failure, not saved.
+
+### 3.4 Gate: deterministic first, then one verifier call
+
+Runs **before** save, synchronously. Order:
+
+1. **Deterministic (free):** header/label stripped clean · length band · every `MustInclude`
+   name present · no proper noun absent from `UniverseGraphService.AllNodes()` (today's
+   `EntityPreCheck` applied to the *output*, not just the goal) · `CraftNativeRules` (the two
+   validated deterministic craft rules) · `RepetitionLintService` echo/crutch checks on the draft.
+2. **One Haiku call, strict JSON, reasons before verdicts** (house rule): given the brief, the
+   ≤40 canon claims shown to the writer, and the draft — (a) does the draft cross `StopBefore`?
+   (b) list any plot event the goal does not imply; (c) list any contradiction of a shown claim.
+   This one call **replaces** `ContinuityEnforcer`, `LibertyReportService` and
+   `SemanticFidelityService`.
+3. **Fail → retry once**, appending the verifier's reasons to the brief as constraints
+   ("Do not: …"). **Fail again → do not save.** Return the draft and the reasons to the caller;
+   the CLI prints them and exits non-zero; the MCP tool returns them. The author decides.
+4. Pass → `UpdateBeatTextAsync(…, BeatWriteReason.Generation)`; the gate result (pass/retry/fail,
+   verifier JSON) is stored on the trace, not as a Finding.
+
+### 3.5 Extract: one call, chapter close when applicable
+
+`BeatExtractionService.ExtractAllAsync` (already one consolidated Haiku call feeding the five
+next-beat tables) stays. `ChapterSummaryService.ExtractAndSaveAsync` stays on the last beat of a
+chapter. The in-memory `EntityContextStack` keeps `Push`/`RecordMentions` (no LLM). **Deleted:**
+`ReconcileAsync`'s claim-extraction call and its per-entity conflict checks (12 calls → 0; output
+was volatile memory plus `Other` findings nobody reads). If the author later wants per-beat Story
+Ledger extraction, it is added as **one** hash-gated `ContinuityExtractionService` call — a
+separate decision with its own measurement, not smuggled back in.
+
+### 3.6 One door for beat text
+
+- `NodeWorkbenchService.UpdateBeatTextAsync` (exists) + new `CreateBeatAsync(…, BeatWriteReason)`
+  for imports. Route `NodeBeatWriter` (Import), `StripBeatArtifactsCli` (TagMaintenance), and
+  `DuplicateEntityScanService` (TagMaintenance) through them.
+- `BeatGeneratorService` becomes `internal` to the writer; `ILlmService` is no longer injected into
+  any class that also touches `Beats.Text` (there should be none after the routing above).
+- **Architecture test** (`Prose.UnitTests/WriterFunnelTests.cs`): fails the build if any file
+  outside `Prose.Core/Services/Writer/` references `GenerateBeatAsync`, or any file outside
+  `NodeWorkbenchService` assigns `.Text =` on a `Beat` entity, or any `Beats.Add(` occurs outside
+  the workbench. This is the compiler enforcing "sole funnel", the same way `BeatWriteReason`
+  already enforces "declare yourself".
+
+### 3.7 Observability stays and gets one thing more
+
+`--beat-write-trace` already shows calls by stage. Add per-tier character counts and the gate
+verdict to the stage log so a trace answers: what was the brief, how big was each tier, did the
+gate pass, and on which question it failed.
+
+## 4. Phase 0 — the A/B that decides how much of the pile survives (before any cut)
+
+Five ordinary beats, chosen by the author or taken as the next five beats the author wants
+written anyway (so the work is not throwaway): one mid-chapter dialogue beat with two named
+characters, one combat beat, one transition, one first-beat-of-chapter, one chapter close.
+Each written **twice**, saved to a scratch copy of the book (`duplicate_book`), not the live book:
+
+| Arm | Prompt |
+|---|---|
+| **Full** | today's router, unchanged |
+| **Brief** | tiers A + B + C + D only (no tier E), brief first and last, temperature 0.7 |
+
+Scored, per beat, by things that do not need a panel:
+
+1. Brief compliance (deterministic + the §3.4 verifier run as a *report* on both arms): ending
+   honored? new plot events? all named entities present? unknown proper nouns?
+2. `--lint-prose` finding count on each draft.
+3. Calls, cost, wall time from `--beat-write-trace`.
+4. The author reads both blind (arm labels hidden) and marks which they would keep.
+
+Cost: ~10 drafts ≈ $0.30. Decision rule, fixed in advance: a tier-E block is re-admitted only if
+removing it changed (1) or (4) for the worse on ≥2 of 5 beats. Everything else in tier E is deleted
+under the RFC 0010 rule. If the *Brief* arm loses on (4), the design in §3.2 is wrong and this RFC
+stops here and says so.
+
+Also answered by the same five traces, for free: why `SceneContextAssembler` produced an empty
+X-ray on #17292 (roster resolution vs gate order — read `AssembleForBeatAsync` on a beat where it
+is empty), and where `SceneContextBuilder` (4.0 s) and `ConsequenceService` (2.3 s) spend their
+time with zero LLM calls (a stopwatch inside each; both should be milliseconds).
+
+## 5. Execution order
+
+| Step | Work | Depends on | Size |
+|---|---|---|---|
+| 0 | Phase 0 A/B (§4) — scratch book, 10 drafts, scoring script, author blind read | §1 tooling (done) | 1 session, ~$0.30 |
+| 1 | `BeatBrief` + `BeatBriefBuilder` (`StopBefore` from next beat / outline); brief first-and-last in the prompt; temperature from brief | — | small |
+| 2 | Deterministic gate (§3.4 step 1) + response post-processing (§3.3) | 1 | small |
+| 3 | Verifier call (§3.4 step 2) with retry-once/refuse semantics; CLI + MCP surface the refusal | 1, 2 | medium |
+| 4 | Delete `ReconcileAsync` LLM calls (keep LRU push), `LibertyReportService`, `SemanticFidelityService`, `ContinuityEnforcer` (absorbed by 3); delete tier-E blocks the A/B did not re-admit; remove the corresponding `BeatContext` fields and coverage rows | 0, 3 | medium, mostly deletion |
+| 5 | Re-tier and cap the remaining blocks (§3.2); per-tier char counts + gate verdict on the trace | 4 | medium |
+| 6 | One door: `CreateBeatAsync`, route the three bypassing writers, `BeatGeneratorService` internal, architecture test | — (parallel to 1–5) | small |
+| 7 | Docs: CLAUDE.md "Prose Engine Services" table rewritten to the four phases; ENGINE.md thresholds; this RFC §9 status | 4, 5, 6 | small |
+| 8 | Re-run the five beats through the finished writer; publish the before/after trace pair in §9 | all | ~$0.15 |
+
+Nothing in steps 1–6 touches a beat that has accepted prose. BCODA's publish gate is re-read
+after step 5 as a regression check; it must still be 5/5 (it will — nothing here rewrites).
+
+## 6. Acceptance — what "fixed" means, measurably
+
+| Criterion | Today (#17292) | Target |
+|---|---|---|
+| Chat calls per beat write | 15 | **≤ 4** (draft, verifier, ≤1 retry, extraction; +1 at chapter close) |
+| Total LLM+embedding calls | 29 | **≤ 10** |
+| Brief compliance on the 5-beat set (ending honored, no invented plot, entities present) | 0/1 | **≥ 4/5 pass the gate without retry; 5/5 after ≤1 retry** |
+| Drafts saved that fail the gate | 1 (saved) | **0** — a failing draft is never saved |
+| Markdown/label artefacts saved | 1 | 0 |
+| `Beats.Text` writes without a `BeatWriteReason` | 2 paths | 0, enforced by test |
+| Callers of `GenerateBeatAsync` outside the writer | 0 | 0, enforced by test |
+| UNATTRIBUTED calls in `--beat-write-trace` | 0 | 0 |
+| `--edit-distribution` (BCODA 472/475, mean 4.04) | baseline | unchanged |
+| BCODA `--publish-readiness` | 5/5 | 5/5 |
+| Wall time per write | 52.8 s | measured; expected ≈ draft + verifier + extraction ≈ 30 s |
+
+## 7. What is deliberately not in this RFC
+
+- **Panels, votes, scores.** SS-A44 stands. The gate's verifier answers three yes/no questions
+  with reasons; it does not grade.
+- **Rewriting any accepted beat**, including #17292's predecessors or the throwaway itself. The
+  throwaway is deleted by the author or left; the writer never touches it.
+- **Story Ledger extraction per beat.** Today it is CLI-only and that is a conscious state; adding
+  it is a separate decision (§3.5).
+- **A new "orchestrator" layer.** The writer is `ProseWriterRouter` renamed and cut down, not a
+  fifth thing on top of it.
+
+## 8. The rule that keeps this from growing back
+
+Add to CLAUDE.md, next to the RFC 0009 law: *No block is added to the writer's prompt and no call
+is added to the write path without a `--beat-write-trace` pair (before/after) on the same beat
+showing the output changed. A service that cannot show that is not added.* The 93 awaits were
+written by sessions that each had a good reason; the trace is the only thing that would have
+stopped them, so it is the thing that gates the door now.
+
+## 9. Status
+
+- §1 done 2026-09-07 (`32e2491d1`, `ad7a26e9a`).
+- §2–§8 written 2026-09-07 on the author's instruction (*"please fix this, write the plan; total
+  and complete"*). No code changed for §2–§8 yet. **Next action: §4 Phase 0** — needs the author
+  to name five beats or approve a scratch duplicate of one draft book.
