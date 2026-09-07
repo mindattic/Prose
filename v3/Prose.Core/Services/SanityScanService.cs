@@ -241,8 +241,20 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         // Load the node + its ordered beats (same pattern as BookAuditService)
+        // IgnoreQueryFilters(): explicit-id lookup, same reasoning as every other explicit-id
+        // read in this codebase — an ambient universe scope is a convenience for "give me
+        // everything in the current universe", not a security boundary, and it must never
+        // hide a specific node the caller already resolved by id. Load-bearing for
+        // SanityScanBackgroundService's corpus-wide sweep in particular: that sweep lists
+        // books via IgnoreQueryFilters() (deliberately, corpus-wide), but without this fix,
+        // ScanAsync's own lookup re-applies whatever universe some UNRELATED concurrent
+        // CLI/MCP call last pinned as the Hub's process-wide UniverseContext override
+        // (UniverseContext.processOverride is a singleton field, not per-request) — so a
+        // book from any other universe throws "Node not found" here for a reason that has
+        // nothing to do with the book itself.
         var node = await db.Nodes
             .AsNoTracking()
+            .IgnoreQueryFilters()
             .Include(s => s.BeatNodes)
             .ThenInclude(sb => sb.Beat)
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
