@@ -1,4 +1,3 @@
-using System.Text;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -8,17 +7,18 @@ using Prose.Core.Interfaces;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// Bounded copy-editor for node prose. Beats are stored as run-on blocks with
-/// no paragraph breaks, declarative-looking questions (no "?"), and "says" where
-/// a question wants "asks". This pass repairs ONLY those three mechanical things:
-///   1. paragraph + dialogue line breaks (manuscript convention),
-///   2. a "?" on a question that lacks terminal interrogative punctuation,
-///   3. say↔ask attribution on a line of dialogue that is a question.
+/// Paragraph re-flow for node prose that arrived as run-on blocks. Inserts paragraph and
+/// dialogue line breaks — and does nothing else.
 ///
-/// It is NOT a rewrite. Every result is gated by a word-token guard: the lowercased
-/// word sequence must be IDENTICAL except for permitted say↔ask verb swaps. Any beat
-/// where the model touched an actual word (a typo "fix", a reword, an insertion) is
-/// REJECTED and left exactly as it was, so canon prose can never silently drift.
+/// <para><b>Reduced to paragraph-only on 2026-09-06 (RFC 0009).</b> Until then this pass also
+/// added "?" to sentences a model judged to be questions and swapped said→asked on those
+/// lines. Both changes were bounded by a word-token guard, but both were still an LLM
+/// altering accepted prose on its own reading of a sentence, and the author's ruling is that
+/// no instrument may do that. What remains cannot: the only accepted output is one whose
+/// text is <b>byte-for-byte identical</b> to the original once whitespace runs are collapsed
+/// (<see cref="WhitespaceOnlyChange"/>). A model that touches a single character — a word, a
+/// comma, a question mark — is refused and the beat is left exactly as it was. The model
+/// decides only where the breaks go; it cannot decide what the words are.</para>
 /// </summary>
 public class ProseReflowService
 {
@@ -39,6 +39,8 @@ public class ProseReflowService
         this.log = log;
     }
 
+    /// <summary><c>QuestionMarksAdded</c> and <c>AttributionSwaps</c> are always 0 since the
+    /// 2026-09-06 reduction; the fields are kept so existing report consumers keep compiling.</summary>
     public sealed record BeatReflowResult(
         Guid BeatId, int Position, string Status,
         int QuestionMarksAdded, int AttributionSwaps,
@@ -50,37 +52,22 @@ public class ProseReflowService
         List<BeatReflowResult> Beats);
 
     private const string System =
-        "You are a meticulous print copy-editor preparing a passage of fiction for a manuscript. " +
-        "You make ONLY mechanical formatting and punctuation corrections. You must NEVER reword, " +
-        "rewrite, paraphrase, add, delete, reorder, or respell any word, and you must NOT fix grammar " +
-        "or typos. Output ONLY the corrected passage — no preamble, no code fences, no commentary.";
+        "You are a print typesetter re-flowing a passage of fiction into paragraphs. You may ONLY " +
+        "insert line breaks. You must NEVER change, add, remove, reorder, or respell a single character " +
+        "of text — not one word, not one punctuation mark. Output ONLY the re-flowed passage — no " +
+        "preamble, no code fences, no commentary.";
 
     private static string BuildUser(string original) =>
-        "Apply ONLY these three corrections to the PASSAGE below:\n\n" +
-        "1. PARAGRAPHS: Break the run-on text into proper paragraphs, separated by a single blank line. " +
-        "Start a NEW paragraph each time a different character begins to speak (standard fiction convention) " +
-        "and at natural narrative shifts. Keep a speaker's dialogue and its attribution together in one paragraph.\n" +
-        "2. QUESTION MARKS: If a sentence is genuinely a question but ends without one, change its terminal " +
-        "punctuation to '?'. Touch no other punctuation.\n" +
-        "3. DIALOGUE ATTRIBUTION: When a line of dialogue is a question, its attribution verb must be " +
-        "'asks'/'asked', not 'says'/'said'. Change only that single verb, only in that case.\n\n" +
-        "Do NOT change, add, remove, reorder, or respell any word. Do NOT fix spelling, grammar, or wording. " +
-        "Preserve every word exactly as written, including any *asterisks* used for emphasis.\n\n" +
-        "PASSAGE:\n" + original;
-
-    /// <summary>Fallback prompt used only when the full copy-edit is rejected for
-    /// touching a word: insert paragraph breaks and NOTHING else — not one
-    /// character of text may change.</summary>
-    private static string BuildParagraphOnlyUser(string original) =>
         "Re-flow the PASSAGE below into proper paragraphs ONLY. Separate paragraphs with a single blank line; " +
-        "start a new paragraph each time a different character begins to speak. " +
-        "You may ONLY insert line breaks. Do NOT change, add, remove, reorder, or respell a single character of " +
-        "text — not one word, not one punctuation mark. The text between the breaks must be byte-for-byte identical.\n\n" +
+        "start a new paragraph each time a different character begins to speak, and at natural narrative " +
+        "shifts. Keep a speaker's dialogue and its attribution together in one paragraph. " +
+        "You may ONLY insert line breaks. The text between the breaks must be byte-for-byte identical " +
+        "to the original.\n\n" +
         "PASSAGE:\n" + original;
 
-    /// <summary>Copy-edit every beat in the node. With <paramref name="apply"/> false
-    /// this is a dry run (nothing written) — the report carries before/after previews
-    /// so a caller can show the diff before committing.</summary>
+    /// <summary>Re-flow every beat in the node. With <paramref name="apply"/> false this is a
+    /// dry run (nothing written) — the report carries before/after previews so a caller can
+    /// show the diff before committing.</summary>
     public async Task<NodeReflowReport> ReflowNodeAsync(Guid nodeId, bool apply, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -107,7 +94,7 @@ public class ProseReflowService
             string edited;
             try
             {
-                var raw = await llm.GenerateAsync(System, BuildUser(original), temperature: 0.2, maxTokens: 4096, ct: ct);
+                var raw = await llm.GenerateAsync(System, BuildUser(original), temperature: 0.1, maxTokens: 4096, ct: ct);
                 edited = StripFences((raw ?? "").Trim());
             }
             catch (Exception ex)
@@ -117,32 +104,14 @@ public class ProseReflowService
                 continue;
             }
 
-            var (ok, reason, swaps) = Guard(original, edited);
-            if (!ok)
+            if (edited.Length == 0 || !WhitespaceOnlyChange(original, edited))
             {
-                // The full copy-edit touched a real word — refuse it, then fall back
-                // to a paragraphing-ONLY pass (whitespace-strict guard) so the beat
-                // at least gets its paragraphs without any risk of a reworded line.
-                string paraOnly;
-                try
-                {
-                    var raw2 = await llm.GenerateAsync(System, BuildParagraphOnlyUser(original), temperature: 0.1, maxTokens: 4096, ct: ct);
-                    paraOnly = StripFences((raw2 ?? "").Trim());
-                }
-                catch { paraOnly = ""; }
-
-                if (paraOnly.Length > 0 && WhitespaceOnlyChange(original, paraOnly) && paraOnly != original)
-                {
-                    if (apply)
-                        await workbench.UpdateBeatTextAsync(beat.Id, paraOnly, expectedUpdatedAt: beat.UpdatedAt, ct);
-                    changed++;
-                    results.Add(new(beat.Id, pos, "changed", 0, 0, "paragraphs only (full edit rejected: " + reason + ")",
-                        Preview(original), Preview(paraOnly)));
-                    continue;
-                }
-
+                // The model touched a character. That is the one thing this pass exists to
+                // refuse — the beat stays exactly as it was.
                 rejected++;
-                results.Add(new(beat.Id, pos, "rejected", 0, 0, reason, Preview(original), Preview(edited)));
+                results.Add(new(beat.Id, pos, "rejected", 0, 0,
+                    edited.Length == 0 ? "empty model output" : "text changed (only whitespace may differ)",
+                    Preview(original), Preview(edited)));
                 continue;
             }
             if (edited == original)
@@ -152,11 +121,10 @@ public class ProseReflowService
                 continue;
             }
 
-            var qAdded = Math.Max(0, CountChar(edited, '?') - CountChar(original, '?'));
             if (apply)
                 await workbench.UpdateBeatTextAsync(beat.Id, edited, expectedUpdatedAt: beat.UpdatedAt, ct);
             changed++;
-            results.Add(new(beat.Id, pos, "changed", qAdded, swaps, null, Preview(original), Preview(edited)));
+            results.Add(new(beat.Id, pos, "changed", 0, 0, "paragraphs only", Preview(original), Preview(edited)));
         }
 
         log.LogInformation("Reflow {Mode} node {Slug}: {Changed} changed, {Unchanged} unchanged, {Rejected} rejected, {Errors} errors",
@@ -166,62 +134,13 @@ public class ProseReflowService
 
     // ── guard ─────────────────────────────────────────────────────────────
 
-    /// <summary>Permitted attribution-verb swaps (tense-matched), say-family ↔ ask-family.</summary>
-    private static readonly Dictionary<string, string> SayToAsk = new()
-    {
-        ["say"] = "ask", ["says"] = "asks", ["said"] = "asked", ["saying"] = "asking",
-    };
-
-    private static bool IsAllowedVerbSwap(string a, string b)
-        => (SayToAsk.TryGetValue(a, out var ax) && ax == b)
-        || (SayToAsk.TryGetValue(b, out var bx) && bx == a);
-
-    /// <summary>The edit is in-bounds iff the lowercased word-token sequence is
-    /// identical except for permitted say↔ask swaps. Punctuation and whitespace
-    /// (the only things this pass is allowed to add) are invisible to word tokens,
-    /// so adding "?" and paragraph breaks passes; touching any real word fails.</summary>
-    private static (bool ok, string reason, int swaps) Guard(string original, string edited)
-    {
-        if (edited.Length == 0) return (false, "empty model output", 0);
-        var a = WordTokens(original);
-        var b = WordTokens(edited);
-        if (a.Count != b.Count)
-            return (false, $"word count changed {a.Count}→{b.Count} (rewrite/insert/delete)", 0);
-        int swaps = 0;
-        for (int i = 0; i < a.Count; i++)
-        {
-            if (a[i] == b[i]) continue;
-            if (IsAllowedVerbSwap(a[i], b[i])) { swaps++; continue; }
-            return (false, $"word changed at token {i + 1}: '{a[i]}' → '{b[i]}'", swaps);
-        }
-        if (CountChar(edited, '?') < CountChar(original, '?'))
-            return (false, "question mark removed", swaps);
-        return (true, "", swaps);
-    }
-
-    /// <summary>True iff the two strings differ ONLY in whitespace — same characters,
-    /// same order, once every whitespace run is collapsed to a single space and
-    /// trimmed. The strictest guard: used for the paragraphing-only fallback, where
-    /// not even a punctuation mark may change.</summary>
-    private static bool WhitespaceOnlyChange(string a, string b)
+    /// <summary>True iff the two strings differ ONLY in whitespace — same characters, same
+    /// order, once every whitespace run is collapsed to a single space and trimmed. This is
+    /// the entire acceptance test: not even a punctuation mark may change.</summary>
+    internal static bool WhitespaceOnlyChange(string a, string b)
     {
         static string Collapse(string s) => Regex.Replace(s, @"\s+", " ").Trim();
         return Collapse(a) == Collapse(b);
-    }
-
-    private static readonly Regex WordRe = new(@"[a-z0-9']+", RegexOptions.Compiled);
-    private static List<string> WordTokens(string text)
-    {
-        var list = new List<string>();
-        foreach (Match m in WordRe.Matches(text.ToLowerInvariant())) list.Add(m.Value);
-        return list;
-    }
-
-    private static int CountChar(string s, char c)
-    {
-        int n = 0;
-        foreach (var ch in s) if (ch == c) n++;
-        return n;
     }
 
     /// <summary>Strip a ```fence``` the model may wrap the passage in despite instructions.</summary>

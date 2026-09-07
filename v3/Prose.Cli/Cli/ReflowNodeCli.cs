@@ -58,7 +58,7 @@ public static class ReflowNodeCli
                 if (b.Status is "unchanged" or "empty") continue;
                 var tag = b.Status switch
                 {
-                    "changed"  => $"CHANGED (+{b.QuestionMarksAdded}? {b.AttributionSwaps} say→ask)",
+                    "changed"  => "CHANGED (paragraph breaks only — text byte-identical)",
                     "rejected" => $"REJECTED — {b.Reason}",
                     "error"    => $"ERROR — {b.Reason}",
                     _          => b.Status.ToUpperInvariant(),

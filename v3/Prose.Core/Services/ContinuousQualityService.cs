@@ -93,9 +93,7 @@ public class ContinuousQualityService
         log.LogInformation("Quality scan: chapter {Id} '{Title}'", chapter.Id, chapter.Title);
         var pseudoPath = "chapter:" + chapter.Id;
         var text = chapter.PlainText;
-        await Task.WhenAll(
-            ScanContradictionsTextAsync(pseudoPath, chapter.Id, text, ct),
-            ScanClichesTextAsync(pseudoPath, chapter.Id, text, ct));
+        await ScanContradictionsTextAsync(pseudoPath, chapter.Id, text, ct);
     }
 
     /// <summary>
@@ -109,9 +107,7 @@ public class ContinuousQualityService
         if (string.IsNullOrWhiteSpace(raw)) return;
         var chapterId = TryGetChapterId(raw);
         var text = TryGetChapterText(raw) ?? raw;
-        await Task.WhenAll(
-            ScanContradictionsTextAsync(filePath, chapterId, text, ct),
-            ScanClichesTextAsync(filePath, chapterId, text, ct));
+        await ScanContradictionsTextAsync(filePath, chapterId, text, ct);
     }
 
     // ── Contradiction scan ──────────────────────────────────────────────────────
@@ -198,38 +194,6 @@ public class ContinuousQualityService
             sb.AppendLine(dossier.ToPromptString()).AppendLine();
         }
         return sb.Length == 0 ? "(no dossiers available)" : sb.ToString();
-    }
-
-    // ── Cliché / voice scan ─────────────────────────────────────────────────────
-
-    private async Task ScanClichesTextAsync(string filePath, string? chapterId, string chapterText, CancellationToken ct)
-    {
-        if (string.IsNullOrWhiteSpace(chapterText)) return;
-
-        var system =
-            "You are a prose quality reviewer for the Prose world — a precise, " +
-            "muscular, restrained register that avoids cyberpunk clichés (no neon-soaked, " +
-            "no chrome-and-shadow, no rain-slicked, no jacked-in, no Matrix-ese). Find " +
-            "specific cliché phrases or sentences in the chapter. Reply ONLY with a JSON " +
-            "array; empty array [] if none. Each item: " +
-            "{\"severity\":\"high|medium|low\",\"summary\":\"<phrase>\",\"snippet\":\"<sentence>\",\"fix\":\"<rewrite>\"}.";
-
-        var prompt = "Find clichés in this chapter:\n\n" + Truncate(chapterText, 12000);
-
-        string answer;
-        try { answer = await llm.GenerateAsync(system, prompt, temperature: 0.2, maxTokens: 1500, ct: ct); }
-        catch (Exception ex) { log.LogWarning(ex, "Cliché scan LLM call failed"); return; }
-
-        foreach (var item in ParseJsonArray(answer))
-        {
-            var sev     = ParseSeverity(item.GetValueOrDefault("severity"));
-            var summary = (item.GetValueOrDefault("summary") ?? "").Trim();
-            if (string.IsNullOrWhiteSpace(summary)) continue;
-            findings.Upsert(filePath, chapterId,
-                FindingCategory.Cliche, sev, summary,
-                snippet: item.GetValueOrDefault("snippet"),
-                suggestedFix: item.GetValueOrDefault("fix"));
-        }
     }
 
     // ── Helpers ─────────────────────────────────────────────────────────────────

@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**299 tools** across **52 tool families.**
+**296 tools** across **52 tool families.**
 
 ## Families
 
@@ -60,14 +60,14 @@
 | [Story](#story) | 4 |
 | [Story Scope](#story-scope) | 3 |
 | [Survey](#survey) | 7 |
-| [Swain](#swain) | 3 |
+| [Swain](#swain) | 2 |
 | [Universe](#universe) | 5 |
 | [Universe Interchange](#universe-interchange) | 4 |
 | [Verification](#verification) | 5 |
 | [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 5 |
-| [World Modelling](#world-modelling) | 15 |
+| [World Modelling](#world-modelling) | 13 |
 | [Writing](#writing) | 3 |
 
 ## Barks Export
@@ -2116,14 +2116,6 @@ Run the Swain Scene/Sequel doctrine audit across every book node in the current 
 
 - `useOpus` (bool, optional) — Set true to use Opus instead of Haiku for classification (slower, costlier, more accurate on stubborn beats).
 
-### `swain_repair`
-
-Repair Swain BLOCKER findings in a book by auto-splicing the missing structural element (disaster turn, decision, etc.) into each deficient beat. Re-runs the audit first, then for each BLOCKER (or just beatId if given): loads the beat's current text, asks an LLM to add ONLY the missing element without rewriting existing sentences, and applies the result via the workbench. Returns per-beat repair outcomes. Accepts node id (GUID) or slug/NodeCode.
-
-- `nodeIdOrSlug` (string, required) — Book node id (GUID), slug, or NodeCode.
-- `beatId` (string, optional) — Only repair this specific beat id (GUID), if given — otherwise every BLOCKER in the book.
-- `useOpus` (bool, optional) — Set true to use Opus instead of Sonnet for the splice (stubborn beats that resist a Sonnet pass).
-
 ## Universe
 
 <sub>`UniverseTools`</sub>
@@ -2369,12 +2361,6 @@ Scans prose text for gear usage verbs (drew, fired, aimed…) and checks whether
 - `storyTime` (string, optional) — Story-date for edge validation (ISO 8601). Legacy — confirmed dead in the live pipeline (2026-09-02); prefer beatId. Omit to use all-time carry edges.
 - `beatId` (string, optional) — Beat GUID this text belongs to — the live mechanism. Filters carry edges by beat-scoped validity (Edge.ValidFromBeatId/ValidUntilBeatId) via reading-order position. Omit for ad hoc text with no real beat.
 
-### `check_prose`
-
-Runs the deterministic prose pattern linter on text. Detects: clichés (chrome gleam, heart hammered…), pseudo-profound constructs (in that moment, it hit him that…), on-the-nose interiority, and italicised dialogue. Returns a JSON array of violations.
-
-- `text` (string, required) — Prose text to lint
-
 ### `check_timeline`
 
 Deterministic timeline-consistency check for a node (RFC 0009 §5). Zero LLM calls. Detects two violation classes: (1) dead-character-acting — an entity whose status is 'dead'/'deceased' appears in a later beat; (2) wound-regression — a healed/none event precedes the injury-onset event for the same condition. Returns a list of findings with kind, entityId, entityName, beatNumber, detail, severity. Returns an empty array when no events are in the ledger for this node — never throws.
@@ -2439,12 +2425,6 @@ Returns every beat flagged EntityStale — i.e. a canon entity mentioned in the 
 List prose lessons from the editorial memory store. When scope is omitted, returns all lessons across all scopes. When scope is provided, returns only lessons whose scope starts with that prefix (e.g. 'global' for all global lessons, 'node:my-slug' for a specific node).
 
 - `scope` (string, optional) — Optional scope filter prefix (e.g. 'global', 'node:my-slug'). Omit for all.
-
-### `scan_book_violations`
-
-Run the prose pattern guard over every beat in a node and file violations as Findings. This is the node-wide sweep equivalent of check_prose — use it after importing or rewriting a node to catch all clichés, pseudo-profound constructs, on-the-nose interiority, and italicised dialogue in one pass. Returns a per-beat summary of violations found.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ### `validate_beat`
 

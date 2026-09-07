@@ -18,21 +18,17 @@ namespace Prose.Cli;
 ///   --effort draft|standard  Review tier per chapter (default: draft).
 ///   --dry-run                List beats/chapters to process without generating prose.
 ///   --force                  Re-generate beats that already have prose.
-///   --no-repair              Skip the post-chapter self-repair pass.
+///   --no-repair              Accepted and ignored: the self-repair pass was deleted (RFC 0009, 2026-09-06).
 ///   --allow-unblueprinted    Override the locked-pipeline gate (no outline + no structural
 ///                            blueprint on this book) — see ProseWriterRouter.WriteAsync.
 /// </summary>
 public static class AutoRunCli
 {
-    private const int MaxRepairAttempts = 2;
 
     private sealed record SessionStats
     {
         public int Written        { get; set; }
         public int Skipped        { get; set; }
-        public int RepairAttempts { get; set; }
-        public int RepairSuccess  { get; set; }
-        public int GaveUp         { get; set; }
         public int BlockersRemaining { get; set; }
         public int ModeratesRemaining { get; set; }
     }
@@ -81,7 +77,6 @@ public static class AutoRunCli
         var chapterClose = services.GetRequiredService<ChapterCloseProcessorService>();
         var canonDb      = services.GetRequiredService<IDatabaseService>();
         var beatAudit    = services.GetRequiredService<BeatAuditService>();
-        var beatRepair   = services.GetRequiredService<BeatRepairService>();
         var ledger       = services.GetRequiredService<TokenLedger>();
 
         string bookBible;
@@ -165,7 +160,7 @@ public static class AutoRunCli
                 var chapterBible = string.IsNullOrWhiteSpace(chapterSeed) ? bookBible
                     : bookBible + "\n\n=== CHAPTER OUTLINE (BINDING — beats must fulfil these chapter goals) ===\n" + chapterSeed.Trim();
                 await ExpandAndRepairAsync(chapterId, nodeId, chapterBible, router, workbench, reflow,
-                    chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
+                    chapterClose, beatAudit, stats, force, dryRun, targetWords,
                     forks, allowVotes, noRepair, totalChapters, chapters.Count, allowUnblueprinted);
                 totalChapters++;
             }
@@ -175,7 +170,7 @@ public static class AutoRunCli
         else
         {
             await ExpandAndRepairAsync(nodeId, nodeId, bookBible, router, workbench, reflow,
-                chapterClose, beatAudit, beatRepair, stats, force, dryRun, targetWords,
+                chapterClose, beatAudit, stats, force, dryRun, targetWords,
                 forks, allowVotes, noRepair, chapterIndex: 0, totalChapters: 1, allowUnblueprinted: allowUnblueprinted);
             Console.WriteLine($"[auto-run] Done: {stats.Written} beats expanded.");
         }
@@ -188,7 +183,7 @@ public static class AutoRunCli
         Guid chapterId, Guid nodeId, string bookBible,
         ProseWriterRouter router, NodeWorkbenchService workbench,
         ProseReflowService reflow, ChapterCloseProcessorService chapterClose,
-        BeatAuditService beatAudit, BeatRepairService beatRepair,
+        BeatAuditService beatAudit,
         SessionStats stats,
         bool force, bool dryRun, int targetWords,
         int forks, bool allowVotes, bool noRepair,
@@ -215,98 +210,25 @@ public static class AutoRunCli
         var closeResult = await chapterClose.ProcessAsync(nodeId, chapterId, chapterIndex, prose, forks, allowVotes: allowVotes, totalChapters: totalChapters);
         PrintCloseResult(closeResult);
 
-        if (noRepair) return;
-
-        // Self-repair pass: run lens audits; fix BLOCKERs with beat-targeted re-writes.
-        Console.WriteLine("[auto-run]   repair audit…");
-        BeatAuditService.BeatAuditResult? audit = null;
-        try { audit = await beatAudit.AuditAsync(chapterId); }
-        catch (Exception ex) { Console.WriteLine($"[auto-run]   audit failed (skipping repair): {ex.Message}"); return; }
-
-        if (audit.FailedLensCount > 0)
-            Console.WriteLine($"[auto-run]   ⚠ {audit.FailedLensCount}/{audit.TotalLensCount} audit lenses failed — coverage degraded; repair may miss defects.");
-
-        if (audit.FailedLensCount == audit.TotalLensCount)
-        {
-            Console.WriteLine($"[auto-run]   audit could not run (all {audit.TotalLensCount} lenses failed) — skipping repair this pass.");
-            return;
-        }
-
-        var ordered       = await workbench.GetOrderedBeatsAsync(chapterId);
-        var beatsByNumber = ordered.ToDictionary(ob => ob.Beat.Number, ob => ob);
-
-        // Readability (plan "Making Prose readable...", 2026-08-13): pure-CPU Flesch check on
-        // every beat just written this pass, merged into the same repair pipeline as the lens
-        // audit's blockers — a beat scoring below the urgent floor gets the same targeted
-        // rewrite treatment as a causality/affect/interpersonal BLOCKER, no new repair path.
-        var readabilityIssues = ordered
-            .Where(ob => !string.IsNullOrWhiteSpace(ob.Beat.Text))
-            .Select(ob => (ob.Beat.Number, Metrics: BeatProseMetricsService.Compute(ob.Beat.Id, nodeId, ob.Beat.Text!)))
-            .Where(x => x.Metrics.FleschReadingEase < BeatProseMetricsService.UrgentReadabilityFloor)
-            .Select(x => new LensIssue(
-                Beat: x.Number,
-                Kind: "readability",
-                Evidence: $"Flesch {x.Metrics.FleschReadingEase:F0}, avg {x.Metrics.AvgWordsPerSentence:F1} words/sentence",
-                Fix: "Break long/associative sentences into short plain ones; cut interpretive gloss; plain words over Latinate ones.",
-                Severity: "High"))
-            .ToList();
-        if (readabilityIssues.Count > 0)
-            Console.WriteLine($"[auto-run]   readability: {readabilityIssues.Count} beat(s) below the urgent clarity floor.");
-
-        var allBlockers = audit.Blockers.Concat(readabilityIssues).ToList();
-
-        if (allBlockers.Count == 0)
-        {
-            Console.WriteLine("[auto-run]   audit clean — no blockers.");
-            return;
-        }
-
-        Console.WriteLine($"[auto-run]   {allBlockers.Count} blocker(s) found — starting repair pass…");
-
-        var beatBlockers = allBlockers
-            .Where(i => i.Beat.HasValue)
-            .GroupBy(i => i.Beat!.Value)
-            .ToList();
-
-        foreach (var group in beatBlockers)
-        {
-            if (!beatsByNumber.TryGetValue(group.Key, out var ob)) continue;
-            var beatId = ob.Beat.Id;
-            var repaired = false;
-
-            for (var attempt = 0; attempt < MaxRepairAttempts; attempt++)
-            {
-                stats.RepairAttempts++;
-                Console.Write($"[auto-run]   repair beat #{group.Key} (attempt {attempt + 1}/{MaxRepairAttempts})… ");
-                try
-                {
-                    var newText = await beatRepair.RepairAsync(beatId, chapterId, group.ToList(), bookBible);
-                    if (string.IsNullOrWhiteSpace(newText)) { Console.WriteLine("empty — skipped."); break; }
-
-                    await workbench.UpdateBeatTextAsync(beatId, newText, expectedUpdatedAt: null);
-                    Console.WriteLine($"ok ({newText.Length} chars).");
-                    repaired = true;
-                    break;
-                }
-                catch (Exception ex) { Console.WriteLine($"failed: {ex.Message}"); }
-            }
-
-            if (repaired) stats.RepairSuccess++;
-            else stats.GaveUp++;
-        }
-
-        // Final audit tally after repair.
+        // Post-chapter audit — REPORT ONLY. Until RFC 0009 (2026-09-06) this was a self-repair
+        // pass: every BLOCKER and every beat under the readability floor was handed to
+        // BeatRepairService, rewritten by an LLM, written back, and re-audited, up to twice.
+        // That loop damaged prose badly enough that "always --no-repair" became standing policy
+        // on 2026-08-23; the loop itself is now gone. The audit still runs and its counts still
+        // land in the session report. It writes nothing. See docs/rfc/0009.
+        Console.WriteLine("[auto-run]   post-chapter audit…");
         try
         {
-            var final = await beatAudit.AuditAsync(chapterId);
-            stats.BlockersRemaining  += final.Blockers.Count;
-            stats.ModeratesRemaining += final.Moderates.Count;
-            Console.WriteLine($"[auto-run]   post-repair: {final.Blockers.Count} blocker(s) · {final.Moderates.Count} moderate(s) remaining.");
+            var audit = await beatAudit.AuditAsync(chapterId);
+            if (audit.FailedLensCount > 0)
+                Console.WriteLine($"[auto-run]   ⚠ {audit.FailedLensCount}/{audit.TotalLensCount} audit lenses failed — coverage degraded.");
+            stats.BlockersRemaining  += audit.Blockers.Count;
+            stats.ModeratesRemaining += audit.Moderates.Count;
+            Console.WriteLine($"[auto-run]   audit: {audit.Blockers.Count} blocker(s) · {audit.Moderates.Count} moderate(s) — reported, not repaired.");
         }
         catch (Exception ex)
         {
-            // [SS-AutoRun-001] Post-repair audit failed — counts in session report will be incomplete.
-            Console.WriteLine($"[auto-run]   post-repair audit failed: {ex.Message}");
+            Console.WriteLine($"[auto-run]   audit failed: {ex.Message}");
         }
     }
 
@@ -403,8 +325,6 @@ public static class AutoRunCli
         Console.WriteLine($"  Auto-Run Session Report");
         Console.WriteLine($"  Story   : {title} ({slug})");
         Console.WriteLine($"  Written : {stats.Written,-6} Skipped : {stats.Skipped}");
-        if (stats.RepairAttempts > 0)
-            Console.WriteLine($"  Repaired: {stats.RepairSuccess,-6} Gave up : {stats.GaveUp}  (of {stats.RepairAttempts} attempt(s))");
         if (stats.BlockersRemaining > 0 || stats.ModeratesRemaining > 0)
             Console.WriteLine($"  Remaining: {stats.BlockersRemaining} BLOCKER · {stats.ModeratesRemaining} MODERATE");
         Console.WriteLine($"  Elapsed : {FormatElapsed(elapsed)}");

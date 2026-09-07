@@ -393,7 +393,7 @@ public class NodeWorkbenchService
 
         // Fire-and-forget: auto-engage prose quality checks. Resolve slug
         // here while the db context is still open; the validator only needs
-        // the slug string + text (no DB access in QuickValidateAsync).
+        // the slug string + text. (The prose-pattern-guard QuickValidate hop was deleted 2026-09-06, RFC 0009.)
         string? beatSlug = null;
         if (postBeatValidator != null || semanticFidelity != null)
         {
@@ -407,11 +407,6 @@ public class NodeWorkbenchService
         // check should see plain prose, not entity markup (see Phase 1a's confirmed LogicSweep/
         // Embedding findings for why raw tags are unsafe to feed into text-matching/LLM prompts).
         var strippedForAnalysis = BeatMarkup.StripEntityTags(trimmed);
-
-        if (postBeatValidator != null && beatSlug != null)
-            _ = Task.Run(() => postBeatValidator.QuickValidateAsync(beatSlug, strippedForAnalysis, beatId), CancellationToken.None)
-                .ContinueWith(t => log.LogError(t.Exception, "QuickValidateAsync background task failed"),
-                    TaskContinuationOptions.OnlyOnFaulted);
 
         if (semanticFidelity != null && beatSlug != null && !string.IsNullOrWhiteSpace(beat.Description))
         {

@@ -1,6 +1,6 @@
 ---
 name: full-battery
-description: Run the Full Battery — every QA/audit tool in the engine (10 FREE + 15 DEEP + 8 FULL checks — see AuditNodeCli.cs's header for the authoritative list, kept in sync with BookHealthService.RunAsync) against a book via `prose --audit-book --full`, then fix, re-verify, validate, and re-export any book that was actually modified. Usage /full-battery [slug ...]; no argument = every book with live prose corpus-wide.
+description: Run the Full Battery — every QA/audit tool in the engine (9 FREE + 15 DEEP + 8 FULL checks — see AuditNodeCli.cs's header for the authoritative list, kept in sync with BookHealthService.RunAsync) against a book via `prose --audit-book --full`, then fix, re-verify, validate, and re-export any book that was actually modified. Usage /full-battery [slug ...]; no argument = every book with live prose corpus-wide.
 ---
 
 # /full-battery — the complete diagnostic + repair pass
@@ -21,8 +21,8 @@ list previously drifted 10 checks stale (2026-08-30 fix, found by a documentatio
 — do not hand-maintain it again; treat `AuditNodeCli.cs`'s own header comment as the
 authoritative source and copy from there if this ever needs re-syncing.**
 
-- **FREE** (always, 10 checks): plant-audit, plant-density, prose-check, validate-nouns,
-  timeline-check, verify-book, coordinate, voice-consistency, duplicate-beats, sanity-scan.
+- **FREE** (always, 9 checks — prose-check, the [Cliche] linter, was deleted 2026-09-06 under
+  RFC 0009): plant-audit, plant-density, validate-nouns, timeline-check, verify-book, coordinate, voice-consistency, duplicate-beats, sanity-scan.
 - **DEEP** (`--deep`, implied by `--full`, 16 checks): examine-emotion, book-audit
   (Gateway/Sequel commandments), diagnose-book, check-fidelity (Semantic Fidelity Gap), Logic
   Sweep (six-dimension causality/knowledge/timeline/plant/orphan/outline), craft-checklist,
@@ -100,8 +100,9 @@ readout — added 2026-08-30).
 5. **FIX**, cheapest mechanism first:
    - Has a `SuggestedFix`/snippet the tool can locate → `apply_finding(id)` (writes the fix +
      backs up to `engine/data/archives/findings/` + marks Applied automatically).
-   - Swain BLOCKER (Scene/Sequel doctrine failure) → `swain_repair(nodeIdOrSlug)` (splices the
-     missing element only; set `useOpus:true` on a beat that resists a Sonnet pass).
+   - Swain BLOCKER (Scene/Sequel doctrine failure) → **report it to the author; do not splice.**
+     `swain_repair` and every other LLM-driven rewrite of finished prose were deleted 2026-09-06
+     (docs/rfc/0009-no-autonomous-prose-writes.md). A structural verdict is a reading, not a fix.
    - Everything else (Logic Sweep findings, StoryScope anti-tells, craft-checklist, canon,
      comprehension defects) → hand-splice via `update_beat_text`, minimal-splice discipline:
      prefer data fix → clause → passage → full rewrite (`docs/LOGIC.md` §4). For an outline/prose
@@ -112,8 +113,8 @@ readout — added 2026-08-30).
      leave a `BeatVerification` row as-is (it will resurface next run if still real).
 
 6. **RE-VERIFY** every beat you touched:
-   - `validate_beat(beatId, checkBehavior:true)` — prose pattern guard + gear carry + behavior
-     invariant, all in one call.
+   - `validate_beat(beatId)` — gear-carry check (the prose-pattern-guard and behaviour-invariant
+     tiers were both retired 2026-09-06).
    - `validate_canon_text(text)` on the new passage — world-rule violations.
    - Any finding whose triage quoted beat text gets checked against the DB before being
      trusted (`verify_quote_grounding` / `verify_quote_grounding_batch`) — same mechanical
@@ -125,7 +126,7 @@ readout — added 2026-08-30).
    introduced a new defect; find and fix it before closing the book out.
 
 8. **RE-EXPORT — only books that actually changed.** Track whether step 5 wrote any
-   `update_beat_text`/`apply_finding`/`swain_repair` call for this book. If yes:
+   `update_beat_text`/`apply_finding` call for this book. If yes:
    ```
    prose --export-node --slug <slug> --universe <u>
    ```

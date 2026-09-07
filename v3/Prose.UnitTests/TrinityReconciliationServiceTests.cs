@@ -23,7 +23,7 @@ namespace Prose.UnitTests;
 /// proof instead of here, since SQLite (this suite's in-memory provider) has no temporal-table
 /// support. <see cref="TrinityReconciliationService.IsUnsafeLinePatch"/> (the surgical
 /// single-paragraph beat-patch guard) is a pure static predicate and is covered directly in
-/// <c>TrinityPatchGuardTests</c>, mirroring how <see cref="BeatRepairService.IsUnsafeShrink"/> is
+/// <c>TrinityPatchGuardTests</c>, mirroring how the (since-deleted, RFC 0009) <c>BeatRepairService.IsUnsafeShrink</c> was
 /// covered in <c>BeatRepairServiceTests</c>; <c>PatchBeatAsync</c> itself is not, for the same
 /// reason <c>PatchOutlineSectionAsync</c> isn't — both call the external <c>ILlmService</c> with no
 /// test double in this suite.

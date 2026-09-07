@@ -15,41 +15,21 @@ public record PostBeatValidationResult(
 /// Auto-engages prose-quality and world-consistency checks after every beat save
 /// and files violations as Findings. Two tiers:
 ///
-///   QuickValidateAsync — prose pattern guard only (sync, no DB beyond findings write).
-///     Called fire-and-forget by NodeWorkbenchService on every UpdateBeatTextAsync.
-///
-///   FullValidateAsync  — prose + gear carry.
+///   FullValidateAsync  — gear carry. (The prose-pattern-guard tier, QuickValidateAsync, was
+///     DELETED 2026-09-06 under RFC 0009: 46 [Cliche] findings on BCODA alone, a corpus apply
+///     rate of zero, and the only thing it ever produced was pressure to restyle finished
+///     prose. ProseViolations in the result is kept at 0 for report-shape compatibility.)
 ///     Called explicitly via the <c>validate_beat</c> MCP tool or
 ///     <c>prose --validate-beat</c> CLI when the writer wants a complete audit.
 ///
 /// All methods swallow exceptions — quality checks are enhancers, not blockers.
 /// </summary>
 public class PostBeatValidationService(
-    ProsePatternGuard proseGuard,
     GearCarryEnforcer gearEnforcer,
     FindingsService findings,
     IDbContextFactory<ProseDbContext> dbFactory,
     ILogger<PostBeatValidationService> log)
 {
-    /// <summary>
-    /// Prose guard only — no DB or LLM, safe to fire-and-forget after every beat save.
-    /// <paramref name="nodeSlug"/> (plus <paramref name="beatId"/>, when the caller has it) is
-    /// used as the finding's filePath prefix.
-    /// </summary>
-    public Task QuickValidateAsync(string nodeSlug, string beatText, Guid beatId = default, CancellationToken ct = default)
-    {
-        if (string.IsNullOrWhiteSpace(beatText)) return Task.CompletedTask;
-        try
-        {
-            FileProseViolations(beatText, nodeSlug, beatId);
-        }
-        catch (Exception ex)
-        {
-            log.LogWarning(ex, "QuickValidate prose guard failed for node {Slug}", nodeSlug);
-        }
-        return Task.CompletedTask;
-    }
-
     /// <summary>
     /// Full battery: prose guard + gear carry.
     /// Resolves beat text and node slug from DB. When <paramref name="characterIds"/>
@@ -63,7 +43,7 @@ public class PostBeatValidationService(
         DateTime? storyTime = null,
         CancellationToken ct = default)
     {
-        int proseCount = 0, gearCount = 0;
+        const int proseCount = 0; int gearCount = 0;
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -77,7 +57,6 @@ public class PostBeatValidationService(
                 .FirstOrDefaultAsync(ct) ?? beatId.ToString();
 
             var text = beat.Text;
-            proseCount = FileProseViolations(text, nodeSlug, beatId);
 
             var chars = characterIds ?? await CharactersFromMentionsAsync(db, beatId, ct);
             foreach (var charId in chars)
@@ -94,33 +73,6 @@ public class PostBeatValidationService(
     }
 
     // ── private helpers ──────────────────────────────────────────────────────
-
-    /// <summary>Files ProsePatternGuard violations for one beat. When <paramref name="beatId"/>
-    /// is known, findings are beat-scoped (<c>node:{slug}/beat:{id}</c>) and purged-then-
-    /// refiled every call, so a since-fixed violation (or a false positive resolved by a
-    /// detector refinement, e.g. the 2026-08-09 em-dash/gazetteer exclusions) actually clears
-    /// instead of leaving a stale row forever — the same class of bug already fixed this
-    /// session in SemanticFidelityService/StructuralDiagnosticService/etc. Falls back to the
-    /// book-wide (unpurged) legacy scope only when no beatId is available at the call site.</summary>
-    private int FileProseViolations(string text, string nodeSlug, Guid beatId = default)
-    {
-        var violations = proseGuard.Check(text);
-        var filePath = beatId != Guid.Empty ? $"node:{nodeSlug}/beat:{beatId:N}" : $"node:{nodeSlug}";
-        if (beatId != Guid.Empty)
-            findings.DeleteBySummaryPrefix(filePath, "[");
-        foreach (var v in violations)
-        {
-            findings.Upsert(
-                filePath:     filePath,
-                chapterId:    null,
-                category:     FindingCategory.Cliche,
-                severity:     FindingSeverity.Medium,
-                summary:      $"[{v.Category}]: {v.Rule}",
-                snippet:      SnippetAround(text, v.CharOffset),
-                suggestedFix: v.Suggestion);
-        }
-        return violations.Count;
-    }
 
     private async Task<int> FileGearViolationsAsync(
         string text, string nodeSlug, Guid charId, DateTime? storyTime, Guid asOfBeatId, CancellationToken ct)

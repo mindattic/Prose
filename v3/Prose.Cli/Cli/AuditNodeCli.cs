@@ -17,8 +17,9 @@ namespace Prose.Cli;
 /// BookHealthService.RunAsync's actual check calls — it previously drifted 10 checks stale
 /// (2026-08-30 fix; found by a documentation-drift audit) after several rounds of new
 /// instruments landing in RunAsync without a matching update here:
-///   FREE  (always)  — deterministic + near-zero-cost, 10 checks: plant-audit, plant-density,
-///                     prose-check, validate-nouns, timeline-check, verify-book, coordinate,
+///   FREE  (always)  — deterministic + near-zero-cost, 9 checks (was 10 until prose-check, the
+///                     [Cliche] linter, was deleted 2026-09-06 — RFC 0009): plant-audit, plant-density,
+///                     validate-nouns, timeline-check, verify-book, coordinate,
 ///                     voice-consistency, duplicate-beats, sanity-scan.
 ///   DEEP  (--deep)  — one LLM call (or a cheap batched-Haiku call) per check per node, 15
 ///                     checks (was 16 until behavior-check was retired 2026-09-06):

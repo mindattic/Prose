@@ -33,7 +33,7 @@ public sealed record AutoCorrectRunReport(
 /// Everything else these detectors surface (prose-quality findings: code-leaks, mojibake, low
 /// readability, voice drift, near-duplicate BEATS) stays flag-only — fixing those means rewriting
 /// prose, which by definition needs the LLM (<see cref="ProseWriterRouter"/>/
-/// <see cref="BeatRepairService"/>), so a "no LLM" pass never attempts it. BEAT-NEAR-DUPLICATE in
+/// <c>BeatRepairService</c>), so a "no LLM" pass never attempts it. BEAT-NEAR-DUPLICATE in
 /// particular was deliberately excluded from auto-fix even though it looked whitelist-eligible in
 /// the original plan: <see cref="BeatDuplicateService"/>'s own doc comment says a high-similarity
 /// pair can be a legitimate intentional callback, not a bug — "a candidate generator, not a
@@ -60,7 +60,7 @@ public class AutoCorrectOrchestratorService(
     ILogger<AutoCorrectOrchestratorService> log)
 {
     /// <summary>Refuse-rather-than-cascade guard, same spirit as
-    /// <see cref="BeatRepairService.IsUnsafeShrink"/> — once this many entity merges have gone
+    /// <c>BeatRepairService.IsUnsafeShrink</c> — once this many entity merges have gone
     /// through in one universe on one run, stop and leave the rest flagged, don't keep going on
     /// the theory that "more of the same fix" is automatically safe.</summary>
     private const int MaxEntityMergesPerUniversePerRun = 20;

@@ -24,7 +24,7 @@ namespace Prose.Core.Services;
 /// printed grouped gripes to console and threw them away; ProposeEditsAsync wrote
 /// proposals to a temp JSON no apply arm ever read. Gripes now persist, supersede on
 /// re-run, and can be applied through the duel gate
-/// (<see cref="ProposeAndDuelFixAsync"/> — SS-A44: the duel is a vote, apply passes
+/// (<c>ProposeAndDuelFixAsync</c> (DELETED 2026-09-06, RFC 0009 — it had no callers and rewrote finished prose) — SS-A44: the duel is a vote, apply passes
 /// allowVotes under the explicit user action).</para>
 ///
 /// <para>The report-only pass emits no scores and is not vote-gated.</para>
@@ -36,8 +36,6 @@ public sealed class GripePassService(
     ILlmService llm,
     FindingsService findings,
     SettingsService settings,
-    BeatDuelService duels,
-    NodeWorkbenchService workbench,
     ILogger<GripePassService> log)
 {
     private const string FindingSummaryPrefix = "GRIPE";
@@ -279,43 +277,6 @@ public sealed class GripePassService(
         return new EngagementRunResult(nodeId, slug, node.Title, seats.Count,
             string.Join(" · ", seats.Select(s => $"{s.Provider}:{s.Model}")),
             confirmed, rejected, raw.Count, groundingKills, confirmed.Count);
-    }
-
-    /// <summary>Apply arm: generate a minimal splice for a confirmed gripe, put it
-    /// through the duel gate (SS-A44 — duels are votes; <paramref name="allowVotes"/>
-    /// must carry an explicit user instruction), and only on REPLACE write the beat.
-    /// On KEEP the gripe's finding stays open with the dissent attached — revision
-    /// fuel, not a silent dismissal.</summary>
-    public async Task<(bool Applied, DuelResult Duel, string CandidateText)> ProposeAndDuelFixAsync(
-        Guid beatId, string complaint, string quote, bool allowVotes, CancellationToken ct = default)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct)
-            ?? throw new InvalidOperationException($"Beat {beatId} not found.");
-
-        const string system = """
-            You revise ONE beat of a finished novel to address ONE specific reader complaint.
-            Minimal splice: change as little as possible — keep voice, length, events, and
-            every fact identical except what the complaint names. Never add scenes, never
-            summarize, never explain. Return ONLY the full revised beat text, no commentary.
-            """;
-        var user = $"READER COMPLAINT: {complaint}\nOFFENDING PASSAGE: {quote}\n\nBEAT TEXT:\n{beat.Text}";
-        var candidate = (await llm.GenerateAsync(system, user, temperature: 0.4,
-            maxTokens: Math.Max(1200, beat.Text.Length / 2), model: settings.ComprehensionArbiterModel, ct: ct)).Trim();
-        if (candidate.Length < beat.Text.Length / 3)
-            throw new InvalidOperationException("Candidate splice came back suspiciously short — not dueling it.");
-
-        var duel = await duels.DuelAsync(beat.Text, candidate,
-            new DuelContext(StoryTitle: "", Goal: $"Address reader complaint: {complaint}", BeatId: beatId),
-            allowVotes: allowVotes, ct: ct);
-
-        if (duel.Replace)
-        {
-            await workbench.UpdateBeatTextAsync(beatId, candidate, ct: ct);
-            log.LogInformation("[gripe] beat {BeatId} spliced (duel {B}/{W}/{S}).",
-                beatId, duel.BetterVotes, duel.WorseVotes, duel.SameVotes);
-        }
-        return (duel.Replace, duel, candidate);
     }
 
     // ── one reader's full pass ─────────────────────────────────────────────────────

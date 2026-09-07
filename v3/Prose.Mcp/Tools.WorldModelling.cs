@@ -12,7 +12,6 @@ public class WorldModellingTools(
     EntityRelationshipService entityRelSvc,
     WorldStateAtBeatService worldStateSvc,
     GearCarryEnforcer gearEnforcer,
-    ProsePatternGuard proseGuard,
     WeaponAmmoCompatibilityService weaponAmmoSvc,
     AmbientDetailInjector ambientSvc,
     EntityRamificationService ramificationSvc,
@@ -127,29 +126,6 @@ public class WorldModellingTools(
 
     // check_behavior REMOVED 2026-09-06 (author ruling) along with BehavioralInvariantEnforcer —
     // see the retirement note on BookHealthService's check list.
-
-    [McpServerTool, Description(
-        "Runs the deterministic prose pattern linter on text. " +
-        "Detects: clichés (chrome gleam, heart hammered…), pseudo-profound constructs " +
-        "(in that moment, it hit him that…), on-the-nose interiority, and italicised dialogue. " +
-        "Returns a JSON array of violations.")]
-    public Task<string> CheckProse(
-        [Description("Prose text to lint")] string text) =>
-        hub.InvokeAsync(nameof(WorldModellingTools), nameof(CheckProseImpl), new { text });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public string CheckProseImpl(string text)
-    {
-        var violations = proseGuard.Check(text);
-        return JsonSerializer.Serialize(violations.Select(v => new
-        {
-            category = v.Category.ToString(),
-            match = v.Match,
-            offset = v.CharOffset,
-            rule = v.Rule,
-            suggestion = v.Suggestion,
-        }), CanonTools.JsonOpts);
-    }
 
     [McpServerTool, Description(
         "Returns the ammo network for a weapon: its ammunition types + sibling weapons " +
@@ -342,80 +318,6 @@ public class WorldModellingTools(
             note               = result.Total > 0
                 ? "Findings filed — use list_findings to review them."
                 : "No violations found.",
-        }, CanonTools.JsonOpts);
-    }
-
-    [McpServerTool, Description(
-        "Run the prose pattern guard over every beat in a node and file violations " +
-        "as Findings. This is the node-wide sweep equivalent of check_prose — " +
-        "use it after importing or rewriting a node to catch all clichés, " +
-        "pseudo-profound constructs, on-the-nose interiority, and italicised dialogue " +
-        "in one pass. Returns a per-beat summary of violations found.")]
-    public Task<string> ScanBookViolations(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
-        hub.InvokeAsync(nameof(WorldModellingTools), nameof(ScanBookViolationsImpl), new { nodeIdOrSlug });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> ScanBookViolationsImpl(string nodeIdOrSlug)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync();
-        Guid nodeId;
-        if (Guid.TryParse(nodeIdOrSlug, out var g))
-            nodeId = g;
-        else
-        {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
-            if (s == null)
-                return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
-            nodeId = s.Id;
-        }
-
-        var slug = await db.Nodes.AsNoTracking()
-            .Where(s => s.Id == nodeId)
-            .Select(s => s.Slug)
-            .FirstOrDefaultAsync() ?? nodeId.ToString();
-
-        // SS-A43: expand to chapter children for book-mode nodes.
-        // Recurses past any nested Collection (2026-08-09 fix).
-        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId);
-        var beats = await db.BeatNodes.AsNoTracking()
-            .Where(sb => searchIds.Contains(sb.NodeId) && true)
-            .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { b.Id, b.Number, sb.SortKey, b.Text })
-            .OrderBy(b => b.SortKey)
-            .ToListAsync();
-
-        int totalViolations = 0;
-        var beatSummaries = new List<object>();
-        foreach (var beat in beats)
-        {
-            if (string.IsNullOrWhiteSpace(beat.Text)) continue;
-            var violations = proseGuard.Check(beat.Text);
-            if (violations.Count == 0) continue;
-
-            // File all violations for this beat as Findings.
-            await postBeatValidator.QuickValidateAsync(slug, beat.Text, beat.Id);
-
-            beatSummaries.Add(new
-            {
-                beat_number = beat.Number,
-                beat_id     = beat.Id,
-                violations  = violations.Select(v => new { category = v.Category.ToString(), rule = v.Rule }),
-            });
-            totalViolations += violations.Count;
-        }
-
-        return JsonSerializer.Serialize(new
-        {
-            node_id       = nodeId,
-            slug,
-            beats_scanned   = beats.Count,
-            total_violations = totalViolations,
-            beats_with_issues = beatSummaries.Count,
-            note = totalViolations > 0
-                ? "Violations filed as Findings — use list_findings to review."
-                : "No prose violations found.",
-            beats            = beatSummaries,
         }, CanonTools.JsonOpts);
     }
 

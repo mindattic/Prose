@@ -136,7 +136,7 @@ public class TrinityReconciliationService(
 
     /// <param name="WouldHitBeatRepair">Despite the name, counts groups with a losing prose claim
     /// that would attempt the surgical <c>beat_patch</c> mechanism (a single-paragraph edit) — NOT
-    /// the full-beat-regeneration <see cref="BeatRepairService"/> path the name originally
+    /// the full-beat-regeneration <c>BeatRepairService</c> path the name originally
     /// referred to before that path was replaced as the prose-losing default (2026-08-19).</param>
     public record SurveyEntry(
         string BookSlug, int ContradictionGroups, int AppliedDriftFindings,
@@ -729,7 +729,7 @@ public class TrinityReconciliationService(
     }
 
     /// <summary>Finds which beat under a chapter-scoped continuity claim's <c>SourceChapterId</c>
-    /// actually contains its <c>Snippet</c> — <see cref="BeatRepairService.RepairAsync"/> needs one
+    /// actually contains its <c>Snippet</c> — <c>BeatRepairService.RepairAsync</c> needs one
     /// specific beat id, but prose claims are extracted per-chapter (all beats concatenated), so
     /// there is no existing lookup from claim → beat before this.</summary>
     internal async Task<(Guid beatId, Guid chapterNodeId)?> LocateBeatForClaimAsync(ContinuityClaim claim, CancellationToken ct = default)
@@ -773,7 +773,7 @@ public class TrinityReconciliationService(
     /// swapped, immune to any reflow the LLM's response introduces.</summary>
     /// <summary>Rejects a <see cref="PatchBeatAsync"/> rewrite whose length moved too far from the
     /// original paragraph's. Upper bound is 2x-or-+200 chars (not the 3x a naive port of
-    /// <see cref="BeatRepairService.IsUnsafeShrink"/> might suggest) — the incident that motivated
+    /// <c>BeatRepairService.IsUnsafeShrink</c> might suggest) — the incident that motivated
     /// this whole mechanism was a 3.68x whole-beat blowup, so 2x leaves real margin even at
     /// paragraph scale, where corpus paragraphs already run up to ~2,700 chars and thus have more
     /// surface to drift on than a bible bullet line. Lower bound (0.4x) only applies above 20
@@ -793,7 +793,7 @@ public class TrinityReconciliationService(
     /// method must not (and does not need to) do any tagging of its own.
     ///
     /// Replaces the earlier default of routing the whole beat through
-    /// <see cref="BeatRepairService.RepairAsync"/> (a full <see cref="ProseWriterRouter"/>
+    /// <c>BeatRepairService.RepairAsync</c> (a full <see cref="ProseWriterRouter"/>
     /// regeneration) for every prose-losing claim: proven unsafe live 2026-08-19 on the very first
     /// hand-picked-divergence proof run — it silently replaced a 2,848-char beat with an unrelated
     /// 10,482-char invented scene, dropping the fact it was meant to fix. Scoping the LLM call to

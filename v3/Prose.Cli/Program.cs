@@ -405,11 +405,11 @@ if (args.Contains("--sql-export"))
     return;
 }
 
-// prose --swain-audit [--slug <slug> | --code <code> | --all] [--repair] [--blockers]
+// prose --swain-audit [--slug <slug> | --code <code> | --all] [--blockers]
 // Classifies every enabled beat as Scene / Sequel / Ambiguous / Deficient against
 // Dwight Swain's Scene/Sequel doctrine. Deficient = BLOCKER; Ambiguous = MODERATE.
-// Add --repair to auto-splice the missing structural element (disaster turn, decision, etc.)
-// into BLOCKER beats via Haiku (classify) + Sonnet (splice). Exit 0 = success.
+// REPORT ONLY. The former --repair mode (an LLM splicing "the missing DISASTER" into a
+// finished beat) was deleted 2026-09-06 — RFC 0009. Exit 0 = success.
 // MUST appear before the bare --repair handler below.
 if (args.Contains("--swain-audit"))
 {
@@ -1945,13 +1945,6 @@ if (args.Contains("--orphan-beats"))
 if (args.Contains("--entity-tree"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("EntityTreeCli", args);
-    return;
-}
-
-// prose --prose-check (--slug <nodeSlug> | --id <beatId>) [--all] [--json]
-if (args.Contains("--prose-check"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("ProseCheckCli", args);
     return;
 }
 

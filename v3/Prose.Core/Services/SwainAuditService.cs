@@ -70,11 +70,9 @@ public sealed class SwainAuditService(
     IDbContextFactory<ProseDbContext> dbFactory,
     VotingConfiguration cfg,
     LegionClient legion,
-    NodeWorkbenchService workbench,
     ILogger<SwainAuditService> log)
 {
     private const string ClassifyModel = "claude-haiku-4-5-20251001";
-    private const string SpliceModel   = "claude-sonnet-4-6";
     private const string Provider      = "claude-api";
 
     private string ApiKey => cfg.ApiKeys.GetValueOrDefault(Provider, "");
@@ -138,66 +136,6 @@ public sealed class SwainAuditService(
             reports.Add(await AuditNodeAsync(node.Id, node.Code, node.Title ?? "", classifyModel, ct));
         }
         return reports;
-    }
-
-    // ── Splice (repair) ───────────────────────────────────────────────────────
-
-    public async Task<string?> LoadBeatTextAsync(Guid beatId, CancellationToken ct = default)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.Beats
-            .Where(b => b.Id == beatId)
-            .Select(b => b.Text)
-            .FirstOrDefaultAsync(ct);
-    }
-
-    public async Task<string?> SpliceAsync(SwainBeatResult finding, string beatText,
-        string? spliceModel = null, CancellationToken ct = default)
-    {
-        if (string.IsNullOrWhiteSpace(ApiKey)) { log.LogWarning("No claude-api key for splice."); return null; }
-
-        var model = spliceModel ?? SpliceModel;
-        var system = $"""
-            A beat is structurally deficient — it is missing its {finding.MissingElement}.
-
-            Dwight Swain doctrine:
-            - SCENE:  Goal → Conflict → DISASTER (character does NOT fully succeed; stakes worsen)
-            - SEQUEL: Reaction → Dilemma → DECISION (names what the POV character will do next)
-
-            YOUR TASK: Add only the missing {finding.MissingElement} — the minimum prose needed to complete the dramatic unit. Attach it at the most natural point in the existing beat. Do NOT rewrite or change any existing sentences. Return the COMPLETE beat text with your splice embedded — nothing else, no commentary.
-
-            Missing element : {finding.MissingElement}
-            Evidence        : {finding.Note}
-            Beat title      : {finding.Title}
-            """;
-
-        try
-        {
-            var result = await legion.CallAsync(
-                Provider, ApiKey, model,
-                system, beatText,
-                maxTokens: 4096, temperature: 0.5, ct);
-            return string.IsNullOrWhiteSpace(result) ? null : result.Trim();
-        }
-        catch (Exception ex)
-        {
-            log.LogWarning(ex, "Splice LLM call failed for beat {BeatId}", finding.BeatId);
-            return null;
-        }
-    }
-
-    public async Task<bool> ApplySpliceAsync(SwainBeatResult finding, string splicedText, CancellationToken ct = default)
-    {
-        try
-        {
-            await workbench.UpdateBeatTextAsync(finding.BeatId, splicedText, ct: ct);
-            return true;
-        }
-        catch (Exception ex)
-        {
-            log.LogWarning(ex, "Apply splice failed for beat {BeatId}", finding.BeatId);
-            return false;
-        }
     }
 
     // ── Internal ──────────────────────────────────────────────────────────────

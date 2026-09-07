@@ -80,7 +80,6 @@ public class BookHealthService(
     ThemeCoherenceService themeCoherence,
     BeatDuplicateService beatDuplicate,
     SanityScanService sanityScan,
-    BeatRepairService beatRepair,
     NodeWorkbenchService workbench,
     ContinuityService continuity,
     ContinuityApplyService continuityApply,
@@ -121,7 +120,6 @@ public class BookHealthService(
         // ── FREE tier — deterministic / near-zero API cost ──────────────────────────
         await RunCheckAsync(checks, "plant-audit", () => PlantAuditAsync(nodeId, slug, ct));
         await RunCheckAsync(checks, "plant-density", () => PlantDensityAsync(nodeId, slug, ct));
-        await RunCheckAsync(checks, "prose-check", () => ProseCheckAsync(db, nodeId, slug, ct));
         await RunCheckAsync(checks, "validate-nouns", async () => { await nounConsistency.ValidateAsync(nodeId, ct); });
         await RunCheckAsync(checks, "timeline-check", () => TimelineCheckAsync(nodeId, slug, ct));
         await RunCheckAsync(checks, "verify-book", () => BeatVerificationAsync(nodeId, slug, ct));
@@ -374,26 +372,6 @@ public class BookHealthService(
         }
     }
 
-    // ── FREE-tier wrappers for services that don't self-file Findings ──────────────
-
-    /// <summary>Runs the deterministic prose-pattern linter over every beat and files
-    /// violations via the same PostBeatValidationService.QuickValidateAsync path already
-    /// used on every beat save — reuses existing Findings-filing logic (same pattern the
-    /// scan_book_violations MCP tool already follows) rather than duplicating it. Passes each
-    /// beat's own id so findings are beat-scoped and purge-then-refiled every run (2026-08-09
-    /// fix) — without it, a since-fixed violation (or a false positive resolved by a detector
-    /// refinement) never cleared, the same missing-purge bug already fixed elsewhere this
-    /// session, just undiscovered here until real-corpus validation of the new AI-tell checks
-    /// surfaced two false positives that needed a code fix to actually clear.</summary>
-    private async Task ProseCheckAsync(ProseDbContext db, Guid nodeId, string slug, CancellationToken ct)
-    {
-        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var beats = await db.BeatNodes.AsNoTracking()
-            .Where(bn => searchIds.Contains(bn.NodeId) && true && bn.Beat != null && bn.Beat.Text != "")
-            .Select(bn => new { bn.BeatId, Text = bn.Beat!.Text }).ToListAsync(ct);
-        foreach (var b in beats)
-            await postBeatValidator.QuickValidateAsync(slug, BeatMarkup.StripEntityTags(b.Text), b.BeatId, ct);
-    }
 
     /// <summary>PlantPayoffService.AuditAsync returns a report but never files it anywhere —
     /// the "plant-audit" FREE-tier check was calling it and discarding the result, so an
@@ -493,77 +471,6 @@ public class BookHealthService(
         }
     }
 
-    /// <summary>Attempts before Findings: max repair attempts per beat via BeatRepairService,
-    /// matching AutoRunCli's write-time lens self-repair loop (MaxRepairAttempts there is also
-    /// 2). Kept as its own constant since these are two independent, differently-scoped repair
-    /// loops (write-time lenses vs. Full-tier audits), not one shared budget.</summary>
-    private const int MaxSelfHealAttempts = 2;
-
-    /// <summary>
-    /// Repair-then-recheck pass shared by the Full-tier score/classification audits (2026-08-13):
-    /// attempts a real targeted rewrite via <see cref="BeatRepairService.RepairAsync"/> — the same
-    /// mechanism <c>AutoRunCli</c>'s write-time lens self-repair already uses live — before ever
-    /// filing a Finding for a human to read. Only candidates still failing after
-    /// <see cref="MaxSelfHealAttempts"/> genuine rounds are returned; those are what actually need
-    /// to surface.
-    ///
-    /// Round-based, not per-beat: every candidate still outstanding gets a repair attempt each
-    /// round (beats with multiple failing checks get ONE rewrite carrying all of them as MUST-FIX
-    /// constraints, same grouping <c>AutoRunCli</c> uses for its own blockers), then
-    /// <c>stillFailingAsync</c> is called ONCE per round for the whole remaining batch — not once
-    /// per beat. This matters for checks whose only re-verification path is a whole-book re-audit
-    /// (SWAIN's <c>AuditAsync</c>): calling that per beat per attempt would multiply an already
-    /// expensive audit by the beat count. A check with a cheap single-beat re-check (VERIFY,
-    /// DRAMATIC-Q) just loops internally inside its own <c>stillFailingAsync</c> implementation.
-    ///
-    /// A round with nothing successfully repaired stops immediately rather than re-checking
-    /// (nothing changed, so nothing could have healed) or retrying (repair itself is failing, not
-    /// the content). A single beat's repair exception is caught and logged per-beat, not
-    /// per-round, so one bad beat can't stop the rest of the batch from healing.
-    ///
-    /// <c>repairAsync</c>/<c>writeTextAsync</c> are passed in explicitly (rather than closing over
-    /// <c>beatRepair</c>/<c>workbench</c>) so this method is <c>internal static</c> — testable with
-    /// fakes for both, no need to construct a full <see cref="BookHealthService"/> and its ~30
-    /// unrelated dependencies just to prove the retry/escalation logic (see
-    /// <c>[InternalsVisibleTo]</c> in Prose.Core's AssemblyInfo.cs, same pattern used for
-    /// <c>SceneContextAssembler.FilterToBeatUniverseAsync</c>).
-    /// </summary>
-    internal static async Task<List<T>> SelfHealAsync<T>(
-        Guid nodeId,
-        IEnumerable<T> candidates,
-        Func<T, Guid> beatIdOf,
-        Func<T, LensIssue> issueOf,
-        Func<Guid, Guid, IReadOnlyList<LensIssue>, CancellationToken, Task<string?>> repairAsync,
-        Func<Guid, string, CancellationToken, Task> writeTextAsync,
-        Func<IReadOnlyList<T>, CancellationToken, Task<List<T>>> stillFailingAsync,
-        ILogger log,
-        CancellationToken ct)
-    {
-        var remaining = candidates.ToList();
-        for (var attempt = 0; attempt < MaxSelfHealAttempts && remaining.Count > 0; attempt++)
-        {
-            var repairedAnything = false;
-            foreach (var group in remaining.GroupBy(beatIdOf).ToList())
-            {
-                var beatId = group.Key;
-                try
-                {
-                    var newText = await repairAsync(beatId, nodeId, group.Select(issueOf).ToList(), ct);
-                    if (string.IsNullOrWhiteSpace(newText)) continue;
-                    await writeTextAsync(beatId, newText, ct);
-                    repairedAnything = true;
-                }
-                catch (Exception ex)
-                {
-                    log.LogWarning(ex, "[BookHealthService] Self-heal attempt {Attempt} failed for beat {BeatId}", attempt + 1, beatId);
-                }
-            }
-            if (!repairedAnything) break;
-            remaining = await stillFailingAsync(remaining, ct);
-        }
-        return remaining;
-    }
-
     /// <summary>BeatVerificationService persists to the BeatVerifications table (its own
     /// Truth-Table dashboard source) but never files shared Findings — wrap the non-Pass
     /// rows here. Severity vocabulary (BLOCKER/MODERATE/MINOR) maps 1:1 onto High/Medium/Low.</summary>
@@ -589,9 +496,8 @@ public class BookHealthService(
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "VERIFY ");
 
         // BannedPattern is a unique textual anti-tell per beat — stays granular so a human can
-        // jump straight to the offending beat, and is left untouched by self-heal for this first
-        // pass (a categorical anti-tell rule, not a score-floor gap — see SwainAsync/
-        // DramaticQuestionAsync for the same treatment being extended there next).
+        // jump straight to the offending beat. (Nothing in this method repairs anything any
+        // more — the self-heal pass was deleted 2026-09-06, RFC 0009.)
         foreach (var x in failing.Where(x => x.CheckType == "BannedPattern"))
         {
             var sev = x.Severity switch { "BLOCKER" => FindingSeverity.High, "MODERATE" => FindingSeverity.Medium, _ => FindingSeverity.Low };
@@ -601,34 +507,11 @@ public class BookHealthService(
         }
 
         // EventType/SubplotCarrier/EscalationFloor/DeclaredPurpose are threshold/classification
-        // checks (score vs. floor, category match) — the same shape LensIssue already carries, so
-        // a real repair attempt runs before any Finding is filed (2026-08-13 fix). Only beats
-        // still failing after MaxSelfHealAttempts feed the book-level rollup below.
-        var nonBanned = failing.Where(x => x.CheckType != "BannedPattern").ToList();
-        var stillFailing = await SelfHealAsync(
-            nodeId, nonBanned,
-            beatIdOf: x => x.BeatId,
-            issueOf: x => new LensIssue(x.Number, x.CheckType, x.Evidence ?? x.Result, $"Fix the {x.CheckType} defect: {x.Evidence ?? x.Result}", x.Severity),
-            repairAsync: (beatId, nid, issues, ct2) => beatRepair.RepairAsync(beatId, nid, issues, bookBibleOverride: null, ct2),
-            writeTextAsync: (beatId, newText, ct2) => workbench.UpdateBeatTextAsync(beatId, newText, expectedUpdatedAt: null, ct: ct2),
-            stillFailingAsync: async (remaining, ct2) =>
-            {
-                // VerifyBeatAsync is cheap per-beat, so re-check each distinct repaired beat
-                // directly rather than re-running the whole-book audit (SwainAsync below does the
-                // opposite — its only re-check IS the whole-book audit, so it re-runs that once).
-                var stillFailingByBeat = new Dictionary<Guid, HashSet<string>>();
-                foreach (var beatId in remaining.Select(x => x.BeatId).Distinct())
-                {
-                    var fresh = await beatVerification.VerifyBeatAsync(beatId, declaredPurposeBaseline: null, ct2);
-                    stillFailingByBeat[beatId] = fresh
-                        .Where(r => r.Result != "Pass" && r.Result != "Skipped")
-                        .Select(r => r.CheckType)
-                        .ToHashSet();
-                }
-                return remaining.Where(x => stillFailingByBeat[x.BeatId].Contains(x.CheckType)).ToList();
-            },
-            log,
-            ct);
+        // checks. Until RFC 0009 (2026-09-06) a "self-heal" pass ran here first: an LLM rewrote
+        // every failing beat, up to twice, and only what still failed was reported. That is an
+        // audit editing the book to satisfy its own rubric, and it is gone — this pass now
+        // REPORTS every failing check and touches no prose. See docs/rfc/0009.
+        var stillFailing = failing.Where(x => x.CheckType != "BannedPattern").ToList();
 
         foreach (var grp in stillFailing.GroupBy(x => x.CheckType))
         {
@@ -757,34 +640,12 @@ public class BookHealthService(
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "SWAIN ");
         var blockers = report.Results.Where(b => b.Severity == "BLOCKER").ToList();
 
-        // Self-heal before filing (2026-08-13): a real repair attempt via BeatRepairService, same
-        // mechanism AutoRunCli's write-time lens self-repair already uses live. The only
-        // re-verification path SwainAuditService offers is a whole-book re-audit, so
-        // stillFailingAsync re-runs that once per round (not once per beat) — see SelfHealAsync's
-        // own doc comment. `finalReport` tracks the latest audit state so the SII score this
-        // method returns reflects post-repair reality, not the pre-repair snapshot.
+        // Until RFC 0009 (2026-09-06) every BLOCKER here was first handed to an LLM with the
+        // instruction "Rewrite as a proper Scene (Goal→Conflict→Disaster)", written back, and
+        // re-audited — twice — before anything was reported. Swain still CLASSIFIES; it no longer
+        // rewrites the author's prose to fit its classification. See docs/rfc/0009.
         var finalReport = report;
-        if (blockers.Count > 0)
-        {
-            await SelfHealAsync(
-                nodeId, blockers,
-                beatIdOf: x => x.BeatId,
-                issueOf: x => new LensIssue(x.Position, x.Classification.ToString(), x.Note,
-                    $"Rewrite as a proper Scene (Goal→Conflict→Disaster) or Sequel (Reaction→Dilemma→Decision) — missing: {x.MissingElement}",
-                    x.Severity),
-                repairAsync: (beatId, nid, issues, ct2) => beatRepair.RepairAsync(beatId, nid, issues, bookBibleOverride: null, ct2),
-                writeTextAsync: (beatId, newText, ct2) => workbench.UpdateBeatTextAsync(beatId, newText, expectedUpdatedAt: null, ct: ct2),
-                stillFailingAsync: async (remaining, ct2) =>
-                {
-                    finalReport = await swainAudit.AuditAsync(slug, ct: ct2);
-                    var stillBlockerBeats = finalReport.Results.Where(r => r.Severity == "BLOCKER").Select(r => r.BeatId).ToHashSet();
-                    return remaining.Where(x => stillBlockerBeats.Contains(x.BeatId)).ToList();
-                },
-                log,
-                ct);
-        }
-
-        var stillFailing = finalReport.Results.Where(b => b.Severity == "BLOCKER").ToList();
+        var stillFailing = blockers;
         if (stillFailing.Count > 0)
         {
             var examples = string.Join("; ", stillFailing.Take(5)
@@ -898,47 +759,12 @@ public class BookHealthService(
         findingsSvc.DeleteBySummaryPrefix($"node:{slug}", "DRAMATIC-Q ");
         var failingInitially = evaluated.Where(e => !(e.Result.DramaticQuestionActive && e.Result.OverallScore >= 5)).ToList();
 
-        // Self-heal before filing (2026-08-13): a real repair attempt via BeatRepairService, same
-        // mechanism AutoRunCli's write-time lens self-repair already uses live. Re-check re-runs
-        // CheckDramaticQuestionAsync directly on the repaired beat's fresh text — cheap, since
-        // this check already operates one beat at a time (unlike SWAIN, whose only re-check is a
-        // whole-book re-audit).
-        var stillFailing = failingInitially.Count == 0
-            ? failingInitially
-            : await SelfHealAsync(
-                nodeId, failingInitially,
-                beatIdOf: e => e.BeatId,
-                issueOf: e => new LensIssue(
-                    e.Number, "DramaticQuestion",
-                    string.IsNullOrWhiteSpace(e.Result.SubconsciousSummary) ? e.Result.SurfaceSummary : e.Result.SubconsciousSummary,
-                    string.IsNullOrWhiteSpace(e.Result.ImprovementHint) ? "Reveal who this character really is beneath the surface action." : e.Result.ImprovementHint,
-                    e.Result.OverallScore <= 2 ? "MODERATE" : "MINOR"),
-                repairAsync: (beatId, nid, issues, ct2) => beatRepair.RepairAsync(beatId, nid, issues, bookBibleOverride: null, ct2),
-                writeTextAsync: (beatId, newText, ct2) => workbench.UpdateBeatTextAsync(beatId, newText, expectedUpdatedAt: null, ct: ct2),
-                stillFailingAsync: async (remaining, ct2) =>
-                {
-                    var result = new List<(Guid BeatId, int Number, DramaticQuestionResult Result)>();
-                    foreach (var e in remaining)
-                    {
-                        var freshText = await db.Beats.AsNoTracking()
-                            .Where(b => b.Id == e.BeatId).Select(b => b.Text).FirstOrDefaultAsync(ct2);
-                        if (string.IsNullOrWhiteSpace(freshText)) { result.Add(e); continue; }
-                        try
-                        {
-                            var fresh = await narrativeScience.CheckDramaticQuestionAsync(freshText, characterId: null, ct2);
-                            if (!(fresh.DramaticQuestionActive && fresh.OverallScore >= 5))
-                                result.Add((e.BeatId, e.Number, fresh)); // carry the FRESH result forward for accurate display
-                        }
-                        catch (Exception ex)
-                        {
-                            log.LogWarning(ex, "CheckDramaticQuestionAsync re-check failed for beat {BeatId}", e.BeatId);
-                            result.Add(e); // re-check itself failed — keep as still-failing with the last-known result
-                        }
-                    }
-                    return result;
-                },
-                log,
-                ct);
+        // Until RFC 0009 (2026-09-06) a beat scoring low here was handed to an LLM with the hint
+        // "Reveal who this character really is beneath the surface action", rewritten, re-scored,
+        // and rewritten again — an LLM grading the author's prose against a rubric and then
+        // editing the prose until its own grade passed. The check still SCORES; it no longer
+        // writes. See docs/rfc/0009.
+        var stillFailing = failingInitially;
 
         if (stillFailing.Count > 0)
         {

@@ -1096,7 +1096,7 @@ public record BeatContext
 
     /// <summary>
     /// Mandatory self-repair constraints injected at the top of the dynamic system prompt.
-    /// Set by <see cref="BeatRepairService"/> when the audit flagged specific defects that
+    /// Set by <c>BeatRepairService</c> when the audit flagged specific defects that
     /// MUST be fixed before anything else. Empty = normal generation with no repair overlay.
     /// When non-empty, BeatGeneratorService prepends a MANDATORY REPAIR CONSTRAINTS block
     /// above all world-context so the model addresses the defects first.

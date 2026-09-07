@@ -999,7 +999,6 @@ public static class ServiceCollectionExtensions
 
         // Prose-continuity and world-modelling services (2026-06-16)
         services.AddSingleton<EntityRelationshipService>();
-        services.AddSingleton<ProsePatternGuard>();
         services.AddSingleton<AmbientDetailInjector>();
         services.AddSingleton<WorldStateAtBeatService>();
         services.AddSingleton<SequentialReadTrackingService>();
@@ -1105,7 +1104,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<InterpersonalDynamicsService>();
         services.AddSingleton<CraftQualityService>();
         services.AddSingleton<BeatAuditService>();
-        services.AddSingleton<BeatRepairService>();
 
         // Deterministic prose sanity scan — no LLM; catches leaked internal codes,
         // undefined acronyms, encoding corruption, and heft floor violations.
