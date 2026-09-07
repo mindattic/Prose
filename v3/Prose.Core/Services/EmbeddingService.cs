@@ -420,8 +420,13 @@ public class EmbeddingService
 
     /// <summary>
     /// Top-<paramref name="k"/> node beats most similar to <paramref name="queryText"/>,
-    /// optionally restricted to a single node. Only enabled beats are searched
-    /// (the BeatNodes join filters soft-deletes). Returns hits keyed on Beat.Id.
+    /// optionally restricted to a single node. Returns hits keyed on Beat.Id.
+    /// <see cref="BeatNode"/> has no enabled/disabled state (a removed beat's row is hard-deleted,
+    /// per that class's own doc comment) — the join needs no extra filter beyond the key match.
+    /// This method previously carried a broken "AND true = 1" placeholder join condition here
+    /// (T-SQL has no bare true/false literal; SQL Server parsed it as an invalid column
+    /// reference), which made every call to this method throw and get silently swallowed by
+    /// whatever caught it -- found live 2026-09-07 via a Hub command-log capture.
     /// </summary>
     public async Task<IReadOnlyList<ProseEmbeddingHit>> FindSimilarBeatNodesAsync(
         string queryText, int k = 6, Guid? nodeScope = null, CancellationToken ct = default)
@@ -453,7 +458,7 @@ public class EmbeddingService
                 pe.ScopeId AS ScopeId,
                 1.0 - VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
             FROM dbo.ProseEmbeddings pe
-            JOIN dbo.BeatNodes sb ON sb.BeatId = pe.ScopeId AND true = 1
+            JOIN dbo.BeatNodes sb ON sb.BeatId = pe.ScopeId
             JOIN dbo.Nodes n ON n.Id = sb.NodeId
             WHERE pe.ScopeKind = '{ScopeBeatNode}'
               -- Filter on the NODE's universe (authoritative), NOT pe.UniverseId: the embedding
