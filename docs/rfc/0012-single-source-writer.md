@@ -399,8 +399,12 @@ stopped them, so it is the thing that gates the door now.
   the beat is about, so the brief now carries the beat's CURRENT event summary as "what happens";
   (b) the verifier called a fee split an "added event" — recalibrated to "something a later beat
   would have to honour"; (c) the roster heuristic's POV row said Mrs. Chen on a Kyle scene and
-  the gate refused a correct draft — POV now comes only from the outline map. One refusal was a
-  true catch: the lean combat draft gave War Dog a fourth arm with a belt-fed weapon.
+  the gate refused a correct draft — POV now comes only from the outline map. One refusal looked
+  like a true catch (the lean combat draft gave War Dog "a fourth arm with a belt-fed weapon")
+  and was not: the ORIGINAL beat already says War Dog has "a belt-feed on the left arm"; the brief
+  said "three-shotgun architecture" and the verifier trusted the brief over the book. A brief
+  built from a lossy description can make the gate enforce a fiction — the events line (below)
+  narrows that, and it is one more reason the gate refuses rather than rewrites.
 - **Phase 0 run 2** in progress with the corrected brief; results and the author's blind read go
   in §10. **Not started:** step 4 (cuts — waits on run 2), step 5 (tier ceilings), step 7 (docs),
   step 8, and the full BCODA2 pass.
