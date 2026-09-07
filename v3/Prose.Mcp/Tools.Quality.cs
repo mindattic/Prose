@@ -35,11 +35,8 @@ public class QualityTools
     private readonly AuthoredMotifRegistry motifs;
     private readonly SettingsService settings;
     private readonly NodeReviewService reviewer;
-    private readonly CanonContradictionService canonChecker;
-    private readonly SemanticFidelityService fidelity;
     private readonly StructuralDiagnosticService structural;
     private readonly BeatDuplicateService duplicateBeats;
-    private readonly EmotionalDepthService emotionalDepth;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly VotingGate votingGate;
     private readonly TokenLedger tokenLedger;
@@ -54,11 +51,8 @@ public class QualityTools
         AuthoredMotifRegistry motifs,
         SettingsService settings,
         NodeReviewService reviewer,
-        CanonContradictionService canonChecker,
-        SemanticFidelityService fidelity,
         StructuralDiagnosticService structural,
         BeatDuplicateService duplicateBeats,
-        EmotionalDepthService emotionalDepth,
         IDbContextFactory<ProseDbContext> dbFactory,
         VotingGate votingGate,
         TokenLedger tokenLedger,
@@ -72,11 +66,8 @@ public class QualityTools
         this.motifs         = motifs;
         this.settings       = settings;
         this.reviewer       = reviewer;
-        this.canonChecker   = canonChecker;
-        this.fidelity       = fidelity;
         this.structural     = structural;
         this.duplicateBeats = duplicateBeats;
-        this.emotionalDepth = emotionalDepth;
         this.dbFactory      = dbFactory;
         this.votingGate     = votingGate;
         this.tokenLedger    = tokenLedger;
@@ -255,91 +246,6 @@ public class QualityTools
         }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Sweep a node's prose against the canon database, queue contradictions as CANON-CONTRADICTION findings, and return the list. Pass propose_fixes=true to also draft suggested rewrites for each contradiction.</summary>
-    [McpServerTool, Description("Sweep a node's prose against the entire canon database (entities, locations, weapons, etc.) and queue each contradiction as a CANON-CONTRADICTION finding with an optional proposed fix. Returns the list of contradictions found. Use list_findings / apply_finding / set_finding_status to manage them afterward. Accepts node id (GUID) or slug.")]
-    public Task<string> CheckCanon(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Set to true to also draft a suggested rewrite for each contradiction found.")] bool proposeFixes = false) =>
-        hub.InvokeAsync(nameof(QualityTools), nameof(CheckCanonImpl), new { nodeIdOrSlug, proposeFixes });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> CheckCanonImpl(string nodeIdOrSlug, bool proposeFixes = false)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync();
-        Guid nodeId;
-        if (Guid.TryParse(nodeIdOrSlug, out var g))
-            nodeId = g;
-        else
-        {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
-            nodeId = s.Id;
-        }
-
-        var result = await canonChecker.CheckNodeAsync(nodeId, proposeFixes);
-        return JsonSerializer.Serialize(new
-        {
-            slug             = result.Slug,
-            chunks_checked   = result.ChunksChecked,
-            contradiction_count = result.Contradictions.Count,
-            contradictions   = result.Contradictions.Select(c => new
-            {
-                entity         = c.Entity,
-                issue          = c.Issue,
-                snippet        = c.Snippet,
-                suggested_fix  = c.SuggestedFix,
-                severity       = c.Severity,
-            }),
-        }, CanonTools.JsonOpts);
-    }
-
-    /// <summary>Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel (antagonist cost, protagonist behavior change, stakes embodiment, exposition density, character embodiment, pacing gear change, affectation lines, dramatic question, passive protagonist, character function, dialogue subtext, jargon front-loading). Returns Pass/Warn/Fail per check with evidence quoted from the text and a concrete fix. Blocking failures mean: fix the structure before running 60 ballots — structural issues cap scores regardless of prose quality.</summary>
-    [McpServerTool, Description("Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_node. Accepts node id (GUID) or slug. max_chars controls how much of the assembled node text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length nodes; lower to reduce cost, raise for very long nodes).")]
-    public Task<string> DiagnoseBook(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Max characters of assembled node text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long nodes (max practical: ~160000).")] int maxChars = 40000) =>
-        hub.InvokeAsync(nameof(QualityTools), nameof(DiagnoseBookImpl), new { nodeIdOrSlug, maxChars });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> DiagnoseBookImpl(string nodeIdOrSlug, int maxChars = 40000)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync();
-        Guid nodeId;
-        if (Guid.TryParse(nodeIdOrSlug, out var g))
-            nodeId = g;
-        else
-        {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
-            nodeId = s.Id;
-        }
-
-        var result = await structural.DiagnoseNodeAsync(nodeId, maxChars);
-        return JsonSerializer.Serialize(new
-        {
-            node_id    = result.NodeId,
-            slug         = result.Slug,
-            title        = result.Title,
-            pass         = result.PassCount,
-            warn         = result.WarnCount,
-            fail         = result.FailCount,
-            error        = result.ErrorCount,
-            blocking     = result.HasBlockingFailures,
-            recommendation = result.Recommendation,
-            checks       = result.Checks.Select(c => new
-            {
-                name        = c.Name,
-                description = c.Description,
-                result      = c.Result.ToString().ToLower(),
-                is_blocking = c.IsBlocking,
-                evidence    = c.Evidence,
-                fix         = c.Fix,
-            }),
-        }, CanonTools.JsonOpts);
-    }
-
     /// <summary>Corpus-wide near-duplicate-scene detector. Flags beat pairs anywhere in a book (any two
     /// chapters) whose prose embeddings are near-identical — catches an abandoned early draft left enabled
     /// alongside its own developed, canonical rewrite (found in BCODA 2026-08-09). Excludes beats merely
@@ -379,71 +285,6 @@ public class QualityTools
                 beat_a = c.NumberA, chapter_a = c.ChapterA,
                 beat_b = c.NumberB, chapter_b = c.ChapterB,
                 similarity = c.Similarity,
-            }),
-        }, CanonTools.JsonOpts);
-    }
-
-    /// <summary>Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw), register-adaptive (CODA vs JOY/SORROW/Fantasy). Returns EmotionalDepthScore 0–100, per-dimension scores with strongest/weakest evidence and beat-scoped craft fixes, a beat-by-beat depth curve (Standard/Deep), and character ledgers. Blocking dimensions (WantNeedDivergence, CostFeltNotAsserted) file Findings. Does NOT alter Node.Score or the 82/85 gate.</summary>
-    [McpServerTool, Description("Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw from the node bible), register-adaptive (CODA/JOY/SORROW/Fantasy anchors). Returns: EmotionalDepthScore 0–100, per-dimension 0–4 scores with strongest evidence, weakest evidence, weakest beat number, and a beat-scoped craft fix; a per-beat emotional depth curve (Standard/Deep effort); character ledgers. Blocking dimensions (WantNeedDivergence=want/need gap, CostFeltNotAsserted=wins felt not stated) file Findings at /findings. Does NOT change Node.Score or the 82/85 reader-panel gate. Accepts node id (GUID) or slug.")]
-    public Task<string> ExamineEmotionalDepth(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
-        [Description("Effort tier: 'draft' (Pass 1 only, cheapest), 'standard' (Pass 1 + beat curve, default), 'deep' (Pass 1 + beat curve + ledger refresh + weakest fixes).")] string effort = "standard",
-        [Description("Max characters of assembled node text each check reads. Default 40000 (~10k tokens).")] int maxChars = 40000) =>
-        hub.InvokeAsync(nameof(QualityTools), nameof(ExamineEmotionalDepthImpl), new { nodeIdOrSlug, effort, maxChars });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> ExamineEmotionalDepthImpl(string nodeIdOrSlug, string effort = "standard", int maxChars = 40000)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync();
-        Guid nodeId;
-        if (Guid.TryParse(nodeIdOrSlug, out var g))
-            nodeId = g;
-        else
-        {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
-            nodeId = s.Id;
-        }
-
-        var result = await emotionalDepth.ExamineNodeAsync(nodeId, effort, maxChars);
-        return JsonSerializer.Serialize(new
-        {
-            node_id       = result.NodeId,
-            slug            = result.Slug,
-            title           = result.Title,
-            emotional_depth = result.EmotionalDepthScore,
-            register        = result.Register,
-            blocking_count  = result.BlockingCount,
-            recommendation  = result.Recommendation,
-            dimensions      = result.Dimensions.Select(d => new
-            {
-                dimension       = d.Dimension.ToString(),
-                name            = d.Name,
-                score           = d.Score,
-                is_blocking     = d.IsBlocking,
-                is_error        = d.IsError,
-                strongest       = d.StrongestEvidence,
-                weakest         = d.WeakestEvidence,
-                weakest_beat    = d.WeakestBeatNumber,
-                fix             = d.Fix,
-                craft_law       = d.CraftLaw,
-            }),
-            beat_curve      = result.BeatCurve.Select(b => new
-            {
-                beat_number = b.BeatNumber,
-                depth       = b.Depth,
-                note        = b.Note,
-            }),
-            ledgers         = result.Ledgers.Select(l => new
-            {
-                character      = l.Character,
-                want           = l.Want,
-                need           = l.Need,
-                wound          = l.Wound,
-                flaw           = l.Flaw,
-                voice_register = l.VoiceRegister,
-                inferred       = l.Inferred,
             }),
         }, CanonTools.JsonOpts);
     }
@@ -567,56 +408,6 @@ public class QualityTools
             count        = reviews.Count,
             avg_score    = reviews.Count > 0 ? Math.Round(avg, 2) : (double?)null,
             reviews,
-        }, CanonTools.JsonOpts);
-    }
-
-    /// <summary>Check the semantic fidelity of a node — detect meaning drift from the book's original intent. Returns bible alignment (prose vs book Seed/Synopsis) and intent alignment (prose vs beat Synopsis) for every beat with prose, with SEMANTIC-DRIFT findings filed for violations. Beat.Score (if present) is informational only — it is not a gate.</summary>
-    [McpServerTool, Description("Check the Semantic Fidelity Gap for a node — meaning drift from the book's original intent. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a beat that no longer resembles the book it was born from has drifted. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served something other than the beat's purpose. Evaluates every beat with prose (Beat.Score, if present, is reported but not a gate). Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.")]
-    public Task<string> CheckSemanticFidelity(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
-        hub.InvokeAsync(nameof(QualityTools), nameof(CheckSemanticFidelityImpl), new { nodeIdOrSlug });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> CheckSemanticFidelityImpl(string nodeIdOrSlug)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync();
-        Guid nodeId;
-        if (Guid.TryParse(nodeIdOrSlug, out var g))
-            nodeId = g;
-        else
-        {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
-            if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
-            nodeId = s.Id;
-        }
-
-        var report = await fidelity.AuditNodeAsync(nodeId);
-        return JsonSerializer.Serialize(new
-        {
-            node_id             = report.NodeId,
-            slug                  = report.Slug,
-            node_score          = report.NodeScore,
-            beats_checked         = report.BeatsChecked,
-            beats_evaluated       = report.BeatsEvaluated,
-            mean_outline_alignment  = Math.Round(report.MeanOutlineAlignment, 4),
-            mean_intent_alignment = report.MeanIntentAlignment.HasValue
-                ? Math.Round(report.MeanIntentAlignment.Value, 4) : (double?)null,
-            outline_alignment_floor   = SemanticFidelityService.OutlineAlignmentFloor,
-            intent_alignment_floor  = SemanticFidelityService.IntentAlignmentFloor,
-            violations_count      = report.Violations.Count,
-            findings_emitted      = report.FindingsEmitted,
-            violations            = report.Violations.Select(v => new
-            {
-                beat_number      = v.BeatNumber,
-                beat_title       = v.BeatTitle,
-                score            = v.Score,
-                outline_alignment  = Math.Round(v.OutlineAlignment, 4),
-                intent_alignment = v.IntentAlignment.HasValue ? Math.Round(v.IntentAlignment.Value, 4) : (double?)null,
-                kind             = v.Kind,
-                message          = v.Message,
-                suggested_fix    = v.SuggestedFix,
-            }),
         }, CanonTools.JsonOpts);
     }
 

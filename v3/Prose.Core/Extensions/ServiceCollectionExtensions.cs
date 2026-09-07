@@ -335,7 +335,6 @@ public static class ServiceCollectionExtensions
         // Swain Scene/Sequel doctrine auditor (SS-A47): classifies every enabled beat
         // as Scene / Sequel / Ambiguous / Deficient and splices the missing structural
         // element (disaster turn, decision, etc.) when --repair is requested.
-        services.AddSingleton<SwainAuditService>();
 
         // Universal KV façade over the Settings table — used by every per-book /
         // per-world JSON store that previously wrote to engine_data/*.json.
@@ -1088,7 +1087,6 @@ public static class ServiceCollectionExtensions
         // (deterministic checks + LLM-graded checks; findings loop back into future
         // beat prompts via the STORYSCOPE Findings prefix).
         services.AddSingleton<StoryScopeAuditService>();
-        services.AddSingleton<ChekhovAuditService>();
 
         // Beat duels — blind A/B panel gate for beat rewrites (3 voters, escalate
         // to 7 on dissent). SS-A44: duels are votes; allowVotes must be passed

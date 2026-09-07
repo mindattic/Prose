@@ -405,18 +405,6 @@ if (args.Contains("--sql-export"))
     return;
 }
 
-// prose --swain-audit [--slug <slug> | --code <code> | --all] [--blockers]
-// Classifies every enabled beat as Scene / Sequel / Ambiguous / Deficient against
-// Dwight Swain's Scene/Sequel doctrine. Deficient = BLOCKER; Ambiguous = MODERATE.
-// REPORT ONLY. The former --repair mode (an LLM splicing "the missing DISASTER" into a
-// finished beat) was deleted 2026-09-06 — RFC 0009. Exit 0 = success.
-// MUST appear before the bare --repair handler below.
-if (args.Contains("--swain-audit"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SwainAuditCli", args);
-    return;
-}
-
 // CLI mode: dossier-driven story repair — walks every chapter, augments character
 // records with timeline entries and (optionally) LLM-extracted continuity claims.
 //   prose --repair                # cheap timeline-only pass
@@ -1626,15 +1614,6 @@ if (args.Contains("--rebeat-book"))
     return;
 }
 
-// CLI mode: sweep a node's prose against canon (all entity types) and queue
-// contradictions as approval-gated findings — the self-correction pass.
-//   prose --check-canon (--slug <s> | --id <guid> | --all)
-if (args.Contains("--check-canon"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("CheckCanonCli", args);
-    return;
-}
-
 // CLI mode: show what the universal canon reach pulls for a query, across ALL
 // entity types — verifies the full-interconnect retrieval path.
 //   prose --canon-retrieve "<query>" [--k N] [--types t1,t2]
@@ -1999,18 +1978,6 @@ if (args.Contains("--prose-health"))
     return;
 }
 
-// prose --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json]
-// Detects the Semantic Fidelity Gap — beats scoring high but drifting from the
-// story's original meaning (Goodhart's Law in prose). Two checks:
-//   Bible alignment: prose vs Seed/Description (north-star drift)
-//   Intent alignment: prose vs beat Description (purpose drift)
-// Files SEMANTIC-DRIFT findings; also runs automatically after every review.
-if (args.Contains("--check-fidelity"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("CheckFidelityCli", args);
-    return;
-}
-
 // prose --world-state --beat <beatId> [--story-time "date"] [--json]
 if (args.Contains("--world-state"))
 {
@@ -2094,17 +2061,6 @@ if (args.Contains("--reader-qa"))
 if (args.Contains("--craft-checklist"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BeatChecklistCli", args);
-    return;
-}
-
-// prose --diagnose-book --slug <nodeSlug> [--json]
-// Pre-flight structural analysis before running the review panel.
-// Runs 12 targeted checks (antagonist cost, protagonist behavior change,
-// exposition density, etc.) and reports Pass/Warn/Fail with evidence + fixes.
-// Exit 0 = ready, 1 = warnings, 2 = blocking failures.
-if (args.Contains("--diagnose-book"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("DiagnoseNodeCli", args);
     return;
 }
 
@@ -2579,17 +2535,6 @@ if (args.Contains("--set-structural-blueprint"))
 if (args.Contains("--storyscope-audit"))
 {
     Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("StoryScopeAuditCli", "--storyscope-audit", args);
-    return;
-}
-
-// prose --chekhov-audit --slug <nodeSlug>
-// Chekhov's Gun audit: extract all concrete props/anchors/traits and test whether
-// each earns its place. ORPHANED = appears with no payoff; DECORATION = repeated
-// without new function; EARNS_IT = each appearance serves a distinct narrative purpose.
-// Run before trimming any prose detail.
-if (args.Contains("--chekhov-audit"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ChekhovAuditCli", "--chekhov-audit", args);
     return;
 }
 

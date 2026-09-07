@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**295 tools** across **52 tool families.**
+**288 tools** across **50 tool families.**
 
 ## Families
 
@@ -28,7 +28,6 @@
 | [Canon](#canon) | 9 |
 | [Canon Doc](#canon-doc) | 7 |
 | [Character Gear](#character-gear) | 3 |
-| [Chekhov Audit](#chekhov-audit) | 1 |
 | [Combat](#combat) | 1 |
 | [Config](#config) | 14 |
 | [Context](#context) | 5 |
@@ -52,7 +51,7 @@
 | [One Shot Generation](#one-shot-generation) | 1 |
 | [Planning](#planning) | 3 |
 | [Plant Payoff](#plant-payoff) | 6 |
-| [Quality](#quality) | 12 |
+| [Quality](#quality) | 8 |
 | [Reader Qa](#reader-qa) | 4 |
 | [Repository](#repository) | 3 |
 | [Scene](#scene) | 4 |
@@ -60,7 +59,6 @@
 | [Story](#story) | 4 |
 | [Story Scope](#story-scope) | 3 |
 | [Survey](#survey) | 7 |
-| [Swain](#swain) | 2 |
 | [Universe](#universe) | 5 |
 | [Universe Interchange](#universe-interchange) | 4 |
 | [Verification](#verification) | 5 |
@@ -346,16 +344,6 @@ Remove ONE gear entry from a character by its row id (get ids from list_characte
 Corpus-wide search for a gear name across every character — answers 'does anyone still carry X?'. Use before declaring an invented item purged: a per-character-only read is how invented canon survives.
 
 - `text` (string, required) — Substring to look for in gear names (case-insensitive).
-
-## Chekhov Audit
-
-<sub>`ChekhovAuditTools`</sub>
-
-### `chekhov_audit`
-
-Chekhov's Gun audit for a story node: extract all concrete props, environmental anchors, sensory details, and recurring character-specific physical traits, then test whether each earns its place. Verdicts: EARNS_IT (each appearance serves a distinct purpose), ORPHANED (appears once with no payoff), DECORATION (repeated without new narrative function), ATMOSPHERE (one-time environmental texture with no implied promise), FLAG (uncertain — human review). Run before trimming any prose detail; before cutting, confirm the prop has no payoff in a later beat. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Combat
 
@@ -1785,40 +1773,12 @@ Run the writing-quality heuristic pass over a book's chapters. Same checks the B
 
 - `bookId` (string, required) — Book id.
 
-### `check_canon`
-
-Sweep a node's prose against the entire canon database (entities, locations, weapons, etc.) and queue each contradiction as a CANON-CONTRADICTION finding with an optional proposed fix. Returns the list of contradictions found. Use list_findings / apply_finding / set_finding_status to manage them afterward. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-- `proposeFixes` (bool, optional) — Set to true to also draft a suggested rewrite for each contradiction found.
-
 ### `check_duplicate_beats`
 
 Corpus-wide near-duplicate-scene detector. Flags beat pairs anywhere in a book whose prose embeddings are near-identical (default cosine similarity floor 0.90) — catches an abandoned early draft left enabled alongside its own developed, canonical rewrite written later. Excludes beat pairs merely adjacent within the same chapter (a continuous scene is supposed to share vocabulary — that's not a duplicate). The 0.90 default is deliberately high-precision/low-recall: real-corpus calibration found a genuine duplicate pair scoring only 0.84, while a lower floor also surfaces dozens of false positives from a book's own deliberate recurring formulaic devices (contract postings, logbook entries). Pass a lower threshold (e.g. 0.80) for an occasional deliberate deep pass, expecting more manual filtering. Candidate generator, NOT a verdict: read both beats in full before disabling either with set_beat_membership_enabled. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug — should be a BookNode; its descendant chapters are scanned together.
 - `threshold` (double, optional) — Cosine similarity floor for a candidate pair, 0–1. Default 0.90.
-
-### `check_semantic_fidelity`
-
-Check the Semantic Fidelity Gap for a node — meaning drift from the book's original intent. Two checks: (1) Bible alignment: cosine similarity between each beat's prose and the node's Seed/Synopsis — a beat that no longer resembles the book it was born from has drifted. (2) Intent alignment: cosine similarity between each beat's Synopsis (stated purpose) and its actual prose — drift here means the rewrite served something other than the beat's purpose. Evaluates every beat with prose (Beat.Score, if present, is reported but not a gate). Embeds beats (drift-skipped), queries alignment, files SEMANTIC-DRIFT findings for violators, and returns the full report. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-
-### `diagnose_book`
-
-Pre-flight structural analysis before running the review panel. Runs 12 targeted checks in parallel and returns Pass/Warn/Fail for each with evidence (a quote from the text) and a concrete one-action fix. Blocking failures (antagonist cost, protagonist behavior change, stakes embodiment, exposition density) mean the chapter is structurally unsound and will score in the 70s regardless of prose quality. Fix those first, then run review_node. Accepts node id (GUID) or slug. max_chars controls how much of the assembled node text each check sees (default 40000 chars ≈ 10k tokens — covers most chapter-length nodes; lower to reduce cost, raise for very long nodes).
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-- `maxChars` (int, optional) — Max characters of assembled node text each check reads. Default 40000 (~10k tokens). Lower to reduce cost; raise for very long nodes (max practical: ~160000).
-
-### `examine_emotional_depth`
-
-Emotional Intelligence Examination (SS-A15). Scores prose against an 8-dimension, 0–4 rubric — per beat, character-aware (Want/Need/Wound/Flaw from the node bible), register-adaptive (CODA/JOY/SORROW/Fantasy anchors). Returns: EmotionalDepthScore 0–100, per-dimension 0–4 scores with strongest evidence, weakest evidence, weakest beat number, and a beat-scoped craft fix; a per-beat emotional depth curve (Standard/Deep effort); character ledgers. Blocking dimensions (WantNeedDivergence=want/need gap, CostFeltNotAsserted=wins felt not stated) file Findings at /findings. Does NOT change Node.Score or the 82/85 reader-panel gate. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-- `effort` (string, optional) — Effort tier: 'draft' (Pass 1 only, cheapest), 'standard' (Pass 1 + beat curve, default), 'deep' (Pass 1 + beat curve + ledger refresh + weakest fixes).
-- `maxChars` (int, optional) — Max characters of assembled node text each check reads. Default 40000 (~10k tokens).
 
 ### `get_review_settings`
 
@@ -2090,23 +2050,6 @@ Mark a survey question as applied (or skipped) after the fix has been made. appl
 - `questionKey` (string, required) — Question key, e.g. 'Q-001'.
 - `applyNotes` (string, required) — Description of what was changed.
 - `applyStatus` (string, optional) — 'Applied' or 'Skipped'. Defaults to 'Applied'.
-
-## Swain
-
-<sub>`SwainTools`</sub>
-
-### `swain_audit`
-
-Classify every enabled beat in a book against Dwight Swain's Scene/Sequel doctrine via a Haiku pass. Scene (Goal→Conflict→Disaster) and Sequel (Reaction→Dilemma→Decision) both pass; Ambiguous (one element weak/underwritten) is MODERATE; Deficient (neither pattern executes) is BLOCKER. Returns per-beat classification plus book-level pass/MODERATE/BLOCKER counts and compliance rate. Accepts node id (GUID) or slug/NodeCode.
-
-- `nodeIdOrSlug` (string, required) — Book node id (GUID), slug, or NodeCode.
-- `useOpus` (bool, optional) — Set true to use Opus instead of Haiku for classification (stubborn/ambiguous beats).
-
-### `swain_audit_all`
-
-Run the Swain Scene/Sequel doctrine audit across every book node in the current universe scope. Returns a per-book summary (beat count, pass/MODERATE/BLOCKER counts, compliance rate) plus corpus-wide totals. Use this first to see which books need attention before calling swain_audit on a specific one.
-
-- `useOpus` (bool, optional) — Set true to use Opus instead of Haiku for classification (slower, costlier, more accurate on stubborn beats).
 
 ## Universe
 
