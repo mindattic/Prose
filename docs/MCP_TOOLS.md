@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**296 tools** across **52 tool families.**
+**295 tools** across **52 tool families.**
 
 ## Families
 
@@ -23,7 +23,7 @@
 | [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
 | [Book Audit](#book-audit) | 2 |
-| [Book Health](#book-health) | 2 |
+| [Book Health](#book-health) | 1 |
 | [Book Logic](#book-logic) | 3 |
 | [Canon](#canon) | 9 |
 | [Canon Doc](#canon-doc) | 7 |
@@ -179,14 +179,6 @@ Link a node to its predecessor, switching it from gateway mode to sequel mode. W
 ## Book Health
 
 <sub>`BookHealthTools`</sub>
-
-### `book_health`
-
-Run the full book-health battery and return one Structural Integrity Index (SII, 0-100) built from a fixed, documented formula over open Findings + a small number of deterministic rate metrics (Swain scene/sequel compliance, CraftChecklist DELIGHT-landing rate, StoryScope readiness) — NOT an LLM opinion vote (SS-A44). Every point of the score traces to a specific Findings category or rate metric in the response; there is no bare number. tier=free (default) runs only deterministic/near-zero-cost checks (plant-audit, prose-check, noun-consistency, timeline-check, beat-verification, outline-coordination). tier=deep adds one-LLM-call-per-check whole-node audits (examine-emotion, book-audit, diagnose-book, check-fidelity, logic-sweep, craft-checklist, check-canon, altitude-audit, reader-qa comprehension). tier=full adds the heaviest multi-call audits (storyscope-audit, swain-audit, chekhov-audit) — cost scales with book length. The SII itself is always computed from whatever is currently in the Findings table regardless of tier — a free-tier run still reflects a prior full-tier run's findings, it just won't refresh them.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug — a book or a lone chapter.
-- `tier` (string, optional) — free | deep | full
-- `model` (string, optional) — Optional model override for the deep/full tier's LLM calls.
 
 ### `publish_readiness`
 

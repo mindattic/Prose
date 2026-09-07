@@ -642,7 +642,7 @@ updated: 2026-08-08
   **Retired 2026-08-08** alongside SS-US-I8: the underlying `Node.Score` metric this command
   trended is itself retired (SS-A44), and the metric it measured was already shown flat-to-
   declining, never rising (see SS-US-I8). `ScoreTrendCli.cs` deleted; the replacement is
-  `prose --audit-book` / `book_health`'s Structural Integrity Index, a findings-based rollup
+  the former `prose --audit-book` / `book_health` Structural Integrity Index (torn out 2026-09-06, RFC 0010 — it graded a 5/5 publish-ready book 0), a findings-based rollup
   that isn't gated on the legacy panel-vote score at all.
 
 ## Epic K — Service Communication Law Compliance {#epic-k}

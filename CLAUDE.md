@@ -649,7 +649,8 @@ These shipped across Story Ledger Phases 0–5 and were absent from this file en
   cross-predicate contradiction pass. **`--dry` first, always**: it runs the whole deterministic
   half for free and reports candidate counts plus *why* an axiom was silent. A real run bills one
   Sonnet adjudication per uncached candidate; verdicts cache on
-  `(claim pair, axiom, both anchor TextHashes)`. FULL tier of `--audit-book`.
+  `(claim pair, axiom, both anchor TextHashes)`. Run it directly — the `--audit-book` battery
+  that used to bundle it was torn out 2026-09-06 (docs/rfc/0010).
 - `prose --continuity anchor-beats [--slug <s>] [--dry]` — **run this before trusting any
   tuned-read result.** Deterministic, zero LLM cost: recovers `SourceBeatId` by matching each
   claim's own snippet against its chapter's beats, using the same containment test the
@@ -676,7 +677,7 @@ These shipped across Story Ledger Phases 0–5 and were absent from this file en
 - `prose --provenance-audit [--slug <s>] --universe <u>` / `prose --provenance --grade <g>
   --entity <id>` — "everything in canon no human ever approved", and the promotion path.
 - `prose --fact-ledger-refresh --slug <s>` — re-run only the same-predicate check (free); the
-  alternative was the cost-gated `--audit-book --deep` bundle.
+  alternative was the since-deleted `--audit-book --deep` bundle (RFC 0010).
 - `prose --chapters --slug <s>` and `read_beats(groupByChapter:)` — chapter-grouped read path
   (Phase 1). Both read payloads now expose `eventSummary`; **`Beat.Description` is authorial
   intent with no binding to the prose and must not be read as a summary.**
@@ -721,7 +722,7 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)` — NOT BeatGeneratorService directly
 3. After writing, run `prose --examine-emotion --slug <slug>` to score emotional dimensions
 4. After book complete, run `prose --commandment-audit --slug <slug>` (renamed from --book-audit
-   2026-08-30 — it collided with the unrelated `--audit-book` full battery) to audit
+   2026-08-30 — it collided with the unrelated, since-deleted `--audit-book` full battery) to audit
    gateway/sequel commandments
 5. After book complete, run `prose --plant-audit --slug <slug>` to check for orphaned plants
 6. After book complete, run `prose --storyscope-audit --slug <slug>` to verify the structural

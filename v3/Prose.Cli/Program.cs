@@ -1110,7 +1110,7 @@ if (args.Contains("--migrate-blueprint-rows"))
 // QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears
 // in the beat it's attributed to, before that finding is trusted for triage/fix (SS-LOGIC-4a).
 // --verification-staleness: which books have BeatVerification rows computed under an older
-// CurrentRuleVersion and need a --verify-book/--audit-book re-run (2026-08-10 — added after the
+// CurrentRuleVersion and need a --verify-book re-run (2026-08-10 — added after the
 // same "book never re-run after a check-logic fix" gap was found and manually re-diffed twice
 // in one session; see BeatVerification.RuleVersion's doc comment).
 if (args.Contains("--verify-beat") || args.Contains("--verify-book")
@@ -1925,7 +1925,7 @@ if (args.Contains("--findings"))
 
 // prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of just the
 // fact-ledger check (see FactLedgerRefreshCli's own doc comment). Not cost-gated: it is the
-// deliberate cheap alternative to the cost-gated --audit-book --deep bundle.
+// deliberate cheap alternative to the (since-deleted, RFC 0010) --audit-book --deep bundle.
 if (args.Contains("--fact-ledger-refresh"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("FactLedgerRefreshCli", args);
@@ -2514,19 +2514,6 @@ if (args.Contains("--backfill-synopses") || args.Contains("--backfill-structure-
     return;
 }
 
-// prose --audit-book --slug <book-or-chapter-slug> [--deep] [--full] [--model <id>] [--out <path>] [--json]
-// The "Player Piano" — one repeatable command running the full QA battery + the
-// Structural Integrity Index (SII), a deterministic Findings rollup (BookHealthService).
-// See AuditNodeCli.cs's own header comment for the authoritative, kept-in-sync tier list
-// (10 FREE / 16 DEEP / 7 FULL checks as of 2026-08-30 — do not re-duplicate the list here,
-// it drifted stale from BookHealthService.RunAsync once already).
-// --model retargets the deep/full tier LLM calls (e.g. Haiku) for the run.
-if (args.Contains("--audit-book"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("AuditNodeCli", "--audit-book", args);
-    return;
-}
-
 // prose --publish-readiness --slug <slug> [--json]
 // docs/LOGIC.md §9's five-point publish-readiness convergence gate as a single readout
 // (2026-08-30) — see BookHealthService.PublishReadinessAsync and PublishReadinessCli.cs.
@@ -2553,7 +2540,7 @@ if (args.Contains("--estimate-cost"))
 
 // prose --commandment-audit --slug <nodeSlug> [--json]
 // Renamed from --book-audit (2026-08-30) — collided by verb/noun order with the unrelated
-// --audit-book (the full QA battery); a typo silently ran the wrong tool.
+// the former --audit-book (the full QA battery, torn out 2026-09-06 — RFC 0010); a typo silently ran the wrong tool.
 // Audits a node against 7 commandments — gateway (PreviousNodeId=null) or
 // sequel (PreviousNodeId set). Pass/warn/fail per commandment with fix hints.
 // Exit 0 = all pass, 1 = advisory warnings, 2 = blocking failures.
