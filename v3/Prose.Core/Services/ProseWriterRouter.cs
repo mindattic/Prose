@@ -94,6 +94,37 @@ public class ProseWriterRouter(
         bool allowUnblueprinted = false,
         CancellationToken ct = default)
     {
+        // Single-source-writer RFC, step one (2026-09-07): make one beat write observable.
+        // The ambient beat id used to be set only around the draft call, so every enrichment
+        // and post-write LLM call was recorded with no beat. It now brackets the whole write —
+        // including the fire-and-forget post-write cluster, which inherits it through the
+        // ExecutionContext captured at Task.Run. The stage collector receives one entry per
+        // traced stage (see TraceStage/TraceStageAsync) and is persisted as BeatWriteStageLog
+        // rows when the post-write cluster finishes.
+        var previousBeatId = LlmActionContext.CurrentBeatId;
+        var previousCollector = stageCollector.Value;
+        LlmActionContext.CurrentBeatId = beatId == Guid.Empty ? null : beatId;
+        stageCollector.Value = beatId == Guid.Empty ? null : new StageCollector();
+        try
+        {
+            return await WriteCoreAsync(context, beatId, beatIndex, totalBeats, universeId, allowUnblueprinted, ct);
+        }
+        finally
+        {
+            LlmActionContext.CurrentBeatId = previousBeatId;
+            stageCollector.Value = previousCollector;
+        }
+    }
+
+    private async Task<string> WriteCoreAsync(
+        BeatContext context,
+        Guid beatId,
+        int beatIndex,
+        int totalBeats,
+        Guid universeId,
+        bool allowUnblueprinted,
+        CancellationToken ct)
+    {
         // Locked-pipeline gate (2026-09-01, CLAUDE.md "New Story Workflow — LOCKED PIPELINE"):
         // previously this was documentation-only — nothing stopped prose generation for a book
         // that skipped straight from an empty shell to beats. Gates on "outline AND blueprint both
@@ -783,18 +814,27 @@ public class ProseWriterRouter(
 
         var sw = System.Diagnostics.Stopwatch.StartNew();
         string? result;
-        // Beat Context Archive, Part F1: ambient tag so LlmRouter's LlmPromptCapture rows for
-        // this call know which beat they belong to, without widening ILlmService's signature.
-        LlmActionContext.CurrentBeatId = beatId;
-        try
+        // The draft call is tagged as its own stage (so the generator's chat call and its
+        // style-anchor embedding are attributable) but NOT run through TraceStageAsync — that
+        // wrapper swallows exceptions, and a failed draft must propagate to the caller.
+        // (The ambient beat id is set by WriteAsync around the whole write since 2026-09-07.)
+        var collector = stageCollector.Value;
+        collector?.SetPhase("draft");
+        var draftOk = false;
+        using (LlmActionContext.BeginStage(DraftStageName))
         {
-            result = await generator.GenerateBeatAsync(enriched, ct);
+            try
+            {
+                result = await generator.GenerateBeatAsync(enriched, ct);
+                draftOk = true;
+            }
+            finally
+            {
+                sw.Stop();
+                collector?.Record(DraftStageName, (int)sw.ElapsedMilliseconds, draftOk);
+                collector?.SetPhase("post");
+            }
         }
-        finally
-        {
-            LlmActionContext.CurrentBeatId = null;
-        }
-        sw.Stop();
 
         // Telemetry: record exactly which docs + entities this beat pulled into working memory.
         // Beat Context Archive follow-up (2026-08-21): this block used to run only when
@@ -878,6 +918,7 @@ public class ProseWriterRouter(
         var capturedResult        = result;
         var capturedNodeId    = context.NodeId;
         var capturedBeatGoal  = context.BeatGoal;
+        var capturedCollector = stageCollector.Value;
         var capturedEntityRoster = entityStackContext.Length > 0 ? entityStackContext : null;
 
         _ = Task.Run(async () =>
@@ -1102,9 +1143,83 @@ public class ProseWriterRouter(
             }
           }
           catch (Exception ex) { log.LogWarning(ex, "Post-write side effects failed for beat {BeatId}", beatId); }
+          finally
+          {
+            // Persist the per-stage execution log for this write, then the terminal marker.
+            // Runs even when the cluster threw so a crash is visible as "rows but no marker".
+            await PersistStageLogAsync(capturedCollector, beatId, capturedNodeId, universeId);
+          }
         }, CancellationToken.None);
 
         return result ?? "";
+    }
+
+    /// <summary>Stage name the draft (generation) call is tagged with in
+    /// <see cref="LlmActionContext.CurrentStage"/> and <see cref="Data.Entities.BeatWriteStageLog"/>.</summary>
+    public const string DraftStageName = "Draft";
+
+    /// <summary>
+    /// Per-write collector of traced stages — one <see cref="StageCollector"/> per
+    /// <see cref="WriteAsync"/> call, carried on the async flow so the trace wrappers (and the
+    /// post-write <c>Task.Run</c>, via captured ExecutionContext) find it without a parameter on
+    /// ~45 call sites. Null outside a real beat write (preview writes, <see cref="LogCoverageAsync"/>),
+    /// where the wrappers simply don't record.
+    /// </summary>
+    private readonly AsyncLocal<StageCollector?> stageCollector = new();
+
+    private sealed class StageCollector
+    {
+        private readonly object gate = new();
+        private readonly List<(string Stage, string Phase, int ElapsedMs, bool Ok)> entries = [];
+        private string phase = "pre";
+
+        public void SetPhase(string p) { lock (gate) phase = p; }
+
+        public void Record(string stage, int elapsedMs, bool ok)
+        {
+            lock (gate) entries.Add((stage, phase, elapsedMs, ok));
+        }
+
+        public IReadOnlyList<(string Stage, string Phase, int ElapsedMs, bool Ok)> Snapshot()
+        {
+            lock (gate) return entries.ToArray();
+        }
+    }
+
+    /// <summary>Best-effort write of the collected stage entries plus the
+    /// <see cref="Data.Entities.BeatWriteStageLog.CompleteMarker"/> row. Never throws.</summary>
+    private async Task PersistStageLogAsync(StageCollector? collector, Guid beatId, Guid nodeId, Guid universeId)
+    {
+        if (collector == null || dbFactory == null || beatId == Guid.Empty) return;
+        try
+        {
+            var entries = collector.Snapshot();
+            await using var db = await dbFactory.CreateDbContextAsync(CancellationToken.None);
+            var now = DateTime.UtcNow;
+            var ordinal = 0;
+            foreach (var e in entries)
+            {
+                db.BeatWriteStageLogs.Add(new Data.Entities.BeatWriteStageLog
+                {
+                    BeatId = beatId, NodeId = nodeId, UniverseId = universeId,
+                    Stage = e.Stage.Length > 128 ? e.Stage[..128] : e.Stage,
+                    Ordinal = ordinal++, Phase = e.Phase, ElapsedMs = e.ElapsedMs, Succeeded = e.Ok,
+                    WrittenAt = now,
+                });
+            }
+            db.BeatWriteStageLogs.Add(new Data.Entities.BeatWriteStageLog
+            {
+                BeatId = beatId, NodeId = nodeId, UniverseId = universeId,
+                Stage = Data.Entities.BeatWriteStageLog.CompleteMarker,
+                Ordinal = ordinal, Phase = "post", ElapsedMs = 0, Succeeded = true,
+                WrittenAt = now,
+            });
+            await db.SaveChangesAsync(CancellationToken.None);
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex, "[ProseWriterRouter] failed to persist BeatWriteStageLog for beat {BeatId}", beatId);
+        }
     }
 
     /// <summary>
@@ -1181,31 +1296,50 @@ public class ProseWriterRouter(
     // this shows up live in the Logs tab and durably in log-*.txt for free. This answers "what's
     // executing when, in what order" without touching a single one of the individual services;
     // "what did each stage actually produce" is BeatContextTrace's job (Part F2), not this one's.
+    // Both wrappers (a) open an LlmActionContext stage scope so any LLM/embedding call the body
+    // makes is attributed to this stage in LlmCallHistory, and (b) record the stage's wall time
+    // and outcome into the per-write StageCollector (no-op when none is active). This is the
+    // single point that makes every stage of a beat write observable without touching ~45 call
+    // sites or any of the services themselves (2026-09-07).
     private void TraceStage(string serviceName, Action body)
     {
+        using var stage = LlmActionContext.BeginStage(serviceName);
         var sw = System.Diagnostics.Stopwatch.StartNew();
+        var ok = false;
         try
         {
             body();
+            ok = true;
             log.LogInformation("[beat-trace] {Service} ok in {Ms}ms", serviceName, sw.ElapsedMilliseconds);
         }
         catch (Exception ex)
         {
             log.LogWarning(ex, "[beat-trace] {Service} FAILED after {Ms}ms, continuing", serviceName, sw.ElapsedMilliseconds);
+        }
+        finally
+        {
+            stageCollector.Value?.Record(serviceName, (int)sw.ElapsedMilliseconds, ok);
         }
     }
 
     private async Task TraceStageAsync(string serviceName, Func<Task> body)
     {
+        using var stage = LlmActionContext.BeginStage(serviceName);
         var sw = System.Diagnostics.Stopwatch.StartNew();
+        var ok = false;
         try
         {
             await body();
+            ok = true;
             log.LogInformation("[beat-trace] {Service} ok in {Ms}ms", serviceName, sw.ElapsedMilliseconds);
         }
         catch (Exception ex)
         {
             log.LogWarning(ex, "[beat-trace] {Service} FAILED after {Ms}ms, continuing", serviceName, sw.ElapsedMilliseconds);
+        }
+        finally
+        {
+            stageCollector.Value?.Record(serviceName, (int)sw.ElapsedMilliseconds, ok);
         }
     }
 

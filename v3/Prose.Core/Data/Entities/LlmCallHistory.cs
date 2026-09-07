@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace Prose.Core.Data.Entities;
 
@@ -10,6 +11,7 @@ namespace Prose.Core.Data.Entities;
 /// granularity than <see cref="CommandCostHistory"/> (per LLM call, not per whole CLI
 /// command). Written best-effort — a failure to log must never break generation itself.
 /// </summary>
+[Index(nameof(BeatId))]
 public class LlmCallHistory
 {
     public int Id { get; set; }
@@ -28,4 +30,21 @@ public class LlmCallHistory
     public double Cost { get; set; }
     [MaxLength(512)]
     public string? ErrorMessage { get; set; }
+
+    /// <summary>Which pipeline stage made this call — see
+    /// <see cref="Services.LlmActionContext.CurrentStage"/>. Null = not made inside a traced
+    /// stage (the trace report lists such calls as UNATTRIBUTED rather than dropping them).
+    /// Added 2026-09-07 for the single-source-writer measurement.</summary>
+    [MaxLength(128)]
+    public string? Stage { get; set; }
+
+    /// <summary>The beat this call was made on behalf of — see
+    /// <see cref="Services.LlmActionContext.CurrentBeatId"/>. Previously only
+    /// <see cref="LlmPromptCapture"/> carried this, which meant answering "how many calls did
+    /// beat X make" required scanning the prompt-text table. Indexed.</summary>
+    public Guid? BeatId { get; set; }
+
+    /// <summary>Wall time of this provider hop, ms. Sibling of the same figure on
+    /// <see cref="LlmPromptCapture"/> so the hot table can be summed without a join.</summary>
+    public int? ElapsedMs { get; set; }
 }

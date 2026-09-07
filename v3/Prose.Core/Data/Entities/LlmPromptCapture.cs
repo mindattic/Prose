@@ -27,6 +27,13 @@ public class LlmPromptCapture
     /// <see cref="Services.LlmActionContext.CurrentBeatId"/>.</summary>
     public Guid? BeatId { get; set; }
 
+    /// <summary>Which pipeline stage made this call — see
+    /// <see cref="Services.LlmActionContext.CurrentStage"/>. Mirrors the same column on
+    /// <see cref="LlmCallHistory"/> so a captured prompt can be read as "the SceneCollision
+    /// prompt for beat X" without a join.</summary>
+    [MaxLength(128)]
+    public string? Stage { get; set; }
+
     public DateTime At { get; set; } = DateTime.UtcNow;
 
     [MaxLength(32)]

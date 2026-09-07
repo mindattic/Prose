@@ -42,6 +42,12 @@ public class EmbeddingService
     private readonly SettingsService settings;
     private readonly IHttpClientFactory httpFactory;
     private readonly ILogger<EmbeddingService> log;
+    private readonly TokenLedger? ledger;
+
+    /// <summary>ProviderId stamped on <see cref="LlmCallHistory"/> rows for OpenAI embedding calls.</summary>
+    public const string OpenAiProviderId = "openai-embed";
+    /// <summary>ProviderId stamped on <see cref="LlmCallHistory"/> rows for local-endpoint embedding calls.</summary>
+    public const string LocalProviderId  = "local-embed";
 
     // Schema-bootstrap latch: EnsureSchemaAsync is idempotent but cheap to skip
     // after the first hit. The lazy gate keeps every call site (ReembedCli,
@@ -59,12 +65,58 @@ public class EmbeddingService
         IDbContextFactory<ProseDbContext> dbFactory,
         SettingsService settings,
         IHttpClientFactory httpFactory,
-        ILogger<EmbeddingService> log)
+        ILogger<EmbeddingService> log,
+        TokenLedger? ledger = null)
     {
         this.dbFactory   = dbFactory;
         this.settings    = settings;
         this.httpFactory = httpFactory;
         this.log         = log;
+        this.ledger      = ledger;
+    }
+
+    /// <summary>
+    /// Record one embedding HTTP round-trip the same way <see cref="LlmRouter"/> records a chat
+    /// call: a best-effort <see cref="LlmCallHistory"/> row (tagged with the ambient action /
+    /// stage / beat from <see cref="LlmActionContext"/>) plus a <see cref="TokenLedger"/> entry.
+    /// Until 2026-09-07 embedding spend was recorded nowhere — not in the ledger, not in the
+    /// call history — so every per-beat and per-command cost figure silently omitted it, and the
+    /// single-source-writer measurement could not see the embedding fan-out at all.
+    /// Never throws: a failure to log must never break an embed.
+    /// </summary>
+    private async Task RecordCallAsync(
+        string providerId, string model, int inputChars, int? promptTokens,
+        int elapsedMs, bool success, string? error, CancellationToken ct)
+    {
+        var inputTok = promptTokens ?? Math.Max(1, (inputChars + 3) / 4);
+        try
+        {
+            if (success) ledger?.RecordActual(providerId, model, inputTok, 0);
+        }
+        catch (Exception ex) { log.LogDebug(ex, "EmbeddingService: ledger record failed"); }
+
+        try
+        {
+            var rates = ReviewCostEstimator.GetRatesFor(model);
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+            db.LlmCallHistories.Add(new LlmCallHistory
+            {
+                ProviderId = providerId,
+                Model = model,
+                Action = LlmActionContext.Current ?? "(unspecified)",
+                Stage = LlmActionContext.CurrentStage,
+                BeatId = LlmActionContext.CurrentBeatId,
+                ElapsedMs = elapsedMs,
+                Success = success,
+                FallbackHopIndex = 0,
+                InputTokens = inputTok,
+                OutputTokens = 0,
+                Cost = success ? inputTok / 1_000_000.0 * rates.InputPerMtok : 0,
+                ErrorMessage = error is { Length: > 500 } ? error[..500] : error,
+            });
+            await db.SaveChangesAsync(ct);
+        }
+        catch (Exception ex) { log.LogDebug(ex, "EmbeddingService: LlmCallHistory write failed"); }
     }
 
     /// <summary>
@@ -859,6 +911,7 @@ public class EmbeddingService
         };
         if (!string.IsNullOrWhiteSpace(key))
             req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
+        var sw = System.Diagnostics.Stopwatch.StartNew();
         try
         {
             var resp = await http.SendAsync(req, ct);
@@ -866,14 +919,17 @@ public class EmbeddingService
             {
                 var body = await resp.Content.ReadAsStringAsync(ct);
                 log.LogWarning("Local embedding {Code}: {Body}", (int)resp.StatusCode, Truncate(body, 400));
+                await RecordCallAsync(LocalProviderId, model, text.Length, null, (int)sw.ElapsedMilliseconds, success: false, $"HTTP {(int)resp.StatusCode}", ct);
                 return Array.Empty<float>();
             }
             var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
+            await RecordCallAsync(LocalProviderId, model, text.Length, payload?.Usage?.PromptTokens, (int)sw.ElapsedMilliseconds, success: true, null, ct);
             return NormalizeVector(payload?.Data?.FirstOrDefault()?.Embedding ?? Array.Empty<float>());
         }
         catch (Exception ex)
         {
             log.LogWarning(ex, "Local embedding call failed");
+            await RecordCallAsync(LocalProviderId, model, text.Length, null, (int)sw.ElapsedMilliseconds, success: false, ex.Message, CancellationToken.None);
             return Array.Empty<float>();
         }
     }
@@ -891,14 +947,18 @@ public class EmbeddingService
         };
         if (!string.IsNullOrWhiteSpace(key))
             req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        var inputChars = texts.Sum(t => t.Length);
         var resp = await http.SendAsync(req, ct);
         if (!resp.IsSuccessStatusCode)
         {
             var body = await resp.Content.ReadAsStringAsync(ct);
             log.LogWarning("Local batch embedding {Code}: {Body}", (int)resp.StatusCode, Truncate(body, 400));
+            await RecordCallAsync(LocalProviderId, model, inputChars, null, (int)sw.ElapsedMilliseconds, success: false, $"HTTP {(int)resp.StatusCode}", ct);
             return Array.Empty<float[]>();
         }
         var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
+        await RecordCallAsync(LocalProviderId, model, inputChars, payload?.Usage?.PromptTokens, (int)sw.ElapsedMilliseconds, success: true, null, ct);
         if (payload?.Data == null) return Array.Empty<float[]>();
         return payload.Data.OrderBy(d => d.Index).Select(d => d.Embedding).ToArray();
     }
@@ -924,14 +984,18 @@ public class EmbeddingService
         };
         req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
 
+        var sw = System.Diagnostics.Stopwatch.StartNew();
+        var inputChars = texts.Sum(t => t.Length);
         var resp = await http.SendAsync(req, ct);
         if (!resp.IsSuccessStatusCode)
         {
             var body = await resp.Content.ReadAsStringAsync(ct);
             log.LogWarning("OpenAI batch embedding {Code}: {Body}", (int)resp.StatusCode, Truncate(body, 400));
+            await RecordCallAsync(OpenAiProviderId, Model, inputChars, null, (int)sw.ElapsedMilliseconds, success: false, $"HTTP {(int)resp.StatusCode}", ct);
             return Array.Empty<float[]>();
         }
         var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
+        await RecordCallAsync(OpenAiProviderId, Model, inputChars, payload?.Usage?.PromptTokens, (int)sw.ElapsedMilliseconds, success: true, null, ct);
         if (payload?.Data == null) return Array.Empty<float[]>();
         // Sort by index to guarantee input-order alignment (OpenAI returns
         // already-ordered, but the docs are explicit that callers shouldn't rely
@@ -964,6 +1028,7 @@ public class EmbeddingService
         };
         req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", key);
 
+        var sw = System.Diagnostics.Stopwatch.StartNew();
         try
         {
             var resp = await http.SendAsync(req, ct);
@@ -971,14 +1036,17 @@ public class EmbeddingService
             {
                 var body = await resp.Content.ReadAsStringAsync(ct);
                 log.LogWarning("OpenAI embedding {Code}: {Body}", (int)resp.StatusCode, Truncate(body, 400));
+                await RecordCallAsync(OpenAiProviderId, Model, text.Length, null, (int)sw.ElapsedMilliseconds, success: false, $"HTTP {(int)resp.StatusCode}", ct);
                 return Array.Empty<float>();
             }
             var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
+            await RecordCallAsync(OpenAiProviderId, Model, text.Length, payload?.Usage?.PromptTokens, (int)sw.ElapsedMilliseconds, success: true, null, ct);
             return NormalizeVector(payload?.Data?.FirstOrDefault()?.Embedding ?? Array.Empty<float>());
         }
         catch (Exception ex)
         {
             log.LogWarning(ex, "Embedding API call failed");
+            await RecordCallAsync(OpenAiProviderId, Model, text.Length, null, (int)sw.ElapsedMilliseconds, success: false, ex.Message, CancellationToken.None);
             return Array.Empty<float>();
         }
     }
@@ -1044,7 +1112,14 @@ public class EmbeddingService
         [property: JsonPropertyName("dimensions")] int Dimensions = EmbeddingService.Dimensions);
 
     private sealed record EmbeddingResponse(
-        [property: JsonPropertyName("data")] List<EmbeddingDatum>? Data);
+        [property: JsonPropertyName("data")] List<EmbeddingDatum>? Data,
+        [property: JsonPropertyName("usage")] EmbeddingUsage? Usage = null);
+
+    /// <summary>OpenAI's usage block on an embeddings response — actual billed input tokens,
+    /// preferred over the chars/4 estimate when present.</summary>
+    private sealed record EmbeddingUsage(
+        [property: JsonPropertyName("prompt_tokens")] int PromptTokens,
+        [property: JsonPropertyName("total_tokens")] int TotalTokens);
 
     private sealed record EmbeddingDatum(
         [property: JsonPropertyName("embedding")] float[] Embedding,

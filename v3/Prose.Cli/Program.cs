@@ -171,6 +171,10 @@ if (UniverseBootstrap.RequestedSlug == null
         // and resolves the beat's own NodeId from BeatNodes directly — no ambient scope to
         // resolve, same shape as --merge-entity above.
         "--beat-archive",
+        // Single-source-writer RFC step one (2026-09-07): takes an explicit --beat <guid> (or
+        // --last) and resolves the beat's own chapter/book/universe via IgnoreQueryFilters() —
+        // same shape as --beat-archive above (see BeatWriteTraceCli).
+        "--beat-write-trace",
         // Strand Progress Dashboard: every non-archived book across every universe, by design
         // (IgnoreQueryFilters() — see ProgressCli's own doc comment).
         "--progress",
@@ -2341,6 +2345,16 @@ if (args.Contains("--log-search"))
 if (args.Contains("--beat-archive"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BeatArchiveCli", args);
+    return;
+}
+
+// prose --beat-write-trace (--beat <guid> | --last) [--json]
+// Single-source-writer RFC, step one: every LLM + embedding call one beat write made, by stage,
+// with tokens/cost/wall time, plus the per-stage execution log and gate-skipped stages.
+// Read-only, free.
+if (args.Contains("--beat-write-trace"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatWriteTraceCli", args);
     return;
 }
 

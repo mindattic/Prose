@@ -37,6 +37,11 @@ public static class ReviewCostEstimator
             ["deepseek-chat"]             = new("DeepSeek Chat", 0.28, 0.28, 0.28, 0.42),
             ["mistral-large-latest"]      = new("Mistral Large", 2.00, 2.00, 2.00, 6.00),
             ["sonar"]                     = new("Perplexity Sonar", 1.00, 1.00, 1.00, 1.00),
+            // Embeddings (2026-09-07): EmbeddingService bills OpenAI directly and used to be
+            // invisible to every ledger; it now records through the same pricing table. Input
+            // only — an embedding has no output tokens.
+            ["text-embedding-3-small"]    = new("OpenAI embed 3-small", 0.02, 0.02, 0.02, 0.00),
+            ["text-embedding-3-large"]    = new("OpenAI embed 3-large", 0.13, 0.13, 0.13, 0.00),
         };
 
     /// <summary>Register pricing for a model at runtime — used by

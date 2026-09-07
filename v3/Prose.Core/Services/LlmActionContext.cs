@@ -30,6 +30,47 @@ public static class LlmActionContext
     public static Guid? CurrentBeatId { get => currentBeatId.Value; set => currentBeatId.Value = value; }
 
     /// <summary>
+    /// Ambient "which pipeline stage is making this call" — the third sibling. Set by
+    /// <c>ProseWriterRouter</c>'s stage-trace wrappers (<c>TraceStage</c>/<c>TraceStageAsync</c>)
+    /// for the duration of each enrichment / draft / post-write stage, read by
+    /// <see cref="LlmRouter"/> and <see cref="EmbeddingService"/> when they write their
+    /// <see cref="Data.Entities.LlmCallHistory"/> rows. This is what makes "how many LLM calls
+    /// did one beat write make, and which stage made each" answerable from the data rather than
+    /// from reading the router (the single-source-writer RFC's step-one measurement, 2026-09-07).
+    /// Nested stages compose as <c>outer/inner</c> so a sub-call inside a stage stays
+    /// attributable to both. Null for any call not made inside a traced stage — a graceful
+    /// "unattributed", which the trace report surfaces as a plumbing gap rather than hiding.
+    /// </summary>
+    private static readonly AsyncLocal<string?> currentStage = new();
+    public static string? CurrentStage => currentStage.Value;
+
+    /// <summary>Opens a stage scope for the duration of the returned handle; restores the
+    /// enclosing stage on dispose so an early return or a throw cannot leak it.</summary>
+    public static StageScope BeginStage(string name) => new(name);
+
+    public sealed class StageScope : IDisposable
+    {
+        private readonly string? previous;
+        private bool disposed;
+
+        public string Name { get; }
+
+        internal StageScope(string name)
+        {
+            previous = currentStage.Value;
+            Name = string.IsNullOrEmpty(previous) ? name : $"{previous}/{name}";
+            currentStage.Value = Name;
+        }
+
+        public void Dispose()
+        {
+            if (disposed) return;
+            disposed = true;
+            currentStage.Value = previous;
+        }
+    }
+
+    /// <summary>
     /// The cost-attribution scopes currently open on this async flow, innermost last.
     ///
     /// <para><b>Why an ambient list rather than a before/after total.</b> Every cost-gated caller

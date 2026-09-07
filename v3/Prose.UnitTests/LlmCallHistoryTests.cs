@@ -84,6 +84,78 @@ public class LlmCallHistoryTests
     }
 
     [Test]
+    public async Task GenerateAsync_RecordsStageBeatAndElapsed_OnBothTables()
+    {
+        // Single-source-writer RFC step one (2026-09-07): every call made inside a traced
+        // stage of a beat write must carry the stage and the beat on the hot LlmCallHistory
+        // table (not only BeatId on the prompt-text table, as before), so "how many calls did
+        // beat X make, by stage" is one indexed query.
+        var beat = Guid.NewGuid();
+        var providers = new Dictionary<string, ILlmService> { ["claude-api"] = new StubLlm("STUB-OK") };
+        var router = new LlmRouter(providers, () => "claude-api", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
+
+        var previousBeat = LlmActionContext.CurrentBeatId;
+        LlmActionContext.CurrentBeatId = beat;
+        try
+        {
+            using (LlmActionContext.BeginStage("SceneCollisionService"))
+                await router.GenerateAsync("sys", "usr", model: "claude-sonnet-5");
+        }
+        finally { LlmActionContext.CurrentBeatId = previousBeat; }
+
+        await using var db = dbFactory.CreateDbContext();
+        var history = db.LlmCallHistories.Single();
+        Assert.That(history.Stage, Is.EqualTo("SceneCollisionService"));
+        Assert.That(history.BeatId, Is.EqualTo(beat));
+        Assert.That(history.ElapsedMs, Is.Not.Null);
+        Assert.That(history.ElapsedMs, Is.GreaterThanOrEqualTo(0));
+
+        var capture = db.LlmPromptCaptures.Single();
+        Assert.That(capture.Stage, Is.EqualTo("SceneCollisionService"));
+        Assert.That(capture.BeatId, Is.EqualTo(beat));
+        Assert.That(capture.LlmCallHistoryId, Is.EqualTo(history.Id));
+    }
+
+    [Test]
+    public async Task GenerateAsync_OutsideAnyStage_LeavesStageAndBeatNull()
+    {
+        // Unattributed calls are recorded as null (never a placeholder string) so the trace
+        // report can surface them as a plumbing gap rather than silently folding them in.
+        var providers = new Dictionary<string, ILlmService> { ["claude-api"] = new StubLlm("STUB-OK") };
+        var router = new LlmRouter(providers, () => "claude-api", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
+
+        await router.GenerateAsync("sys", "usr");
+
+        await using var db = dbFactory.CreateDbContext();
+        var history = db.LlmCallHistories.Single();
+        Assert.That(history.Stage, Is.Null);
+        Assert.That(history.BeatId, Is.Null);
+    }
+
+    [Test]
+    public async Task GenerateAsync_FailedHop_AlsoCarriesStageAndBeat()
+    {
+        var beat = Guid.NewGuid();
+        var providers = Providers("claude-api", "boom", "openai", "OPENAI-OK");
+        var router = new LlmRouter(providers, () => "claude-api", () => ["openai"], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
+
+        var previousBeat = LlmActionContext.CurrentBeatId;
+        LlmActionContext.CurrentBeatId = beat;
+        try
+        {
+            using (LlmActionContext.BeginStage("Draft"))
+                await router.GenerateAsync("sys", "usr");
+        }
+        finally { LlmActionContext.CurrentBeatId = previousBeat; }
+
+        await using var db = dbFactory.CreateDbContext();
+        var rows = db.LlmCallHistories.OrderBy(r => r.Id).ToList();
+        Assert.That(rows, Has.Count.EqualTo(2));
+        Assert.That(rows.Select(r => r.Stage), Is.All.EqualTo("Draft"));
+        Assert.That(rows.Select(r => r.BeatId), Is.All.EqualTo(beat));
+    }
+
+    [Test]
     public async Task GenerateAsync_ZeroCostsSubscriptionCliProviders()
     {
         var providers = new Dictionary<string, ILlmService> { ["codex-cli"] = new StubLlm("CODEX-OK") };

@@ -636,6 +636,11 @@ public class ProseDbContext : DbContext
     // prose --beat-archive / the get_beat_archive MCP tool.
     public DbSet<BeatContextTrace>        BeatContextTraces       => Set<BeatContextTrace>();
 
+    // Single-source-writer RFC, step one (2026-09-07) — per-stage execution log of one beat
+    // write (order, phase, wall time, threw?). Populated by ProseWriterRouter at the end of the
+    // post-write cluster. Query via prose --beat-write-trace.
+    public DbSet<BeatWriteStageLog>       BeatWriteStageLogs      => Set<BeatWriteStageLog>();
+
     // Command Ledger — append-only, best-effort audit trail of every command/tool call
     // Prose.Hub executes (CLI + MCP + cost-gated). Populated by Prose.Hub's
     // CliDispatch.ExecuteCoreAsync / ToolDispatch.InvokeAsync. Query via

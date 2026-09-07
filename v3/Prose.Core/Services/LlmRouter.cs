@@ -300,7 +300,7 @@ public class LlmRouter : ILlmService
                 sw.Stop();
                 prompts.Capture(id, modelLabel, temperature, maxTokens, capturedInput, user, response, (int)sw.ElapsedMilliseconds);
                 ledger?.Record(id, modelLabel, capturedInput + user, response);
-                var historyId = await RecordCallHistoryAsync(id, modelLabel, success: true, hopIndex, capturedInput, response, errorMessage: null);
+                var historyId = await RecordCallHistoryAsync(id, modelLabel, success: true, hopIndex, capturedInput, response, errorMessage: null, (int)sw.ElapsedMilliseconds);
                 await RecordPromptCaptureAsync(historyId, id, modelLabel, capturedInput, user, response, (int)sw.ElapsedMilliseconds);
                 if (attempted.Count > 0)
                     log.LogWarning(
@@ -313,7 +313,7 @@ public class LlmRouter : ILlmService
                 sw.Stop();
                 attempted.Add((id, ex));
                 prompts.Capture(id, modelLabel, temperature, maxTokens, capturedInput, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
-                var failedHistoryId = await RecordCallHistoryAsync(id, modelLabel, success: false, hopIndex, capturedInput, outputText: "", errorMessage: ex.Message);
+                var failedHistoryId = await RecordCallHistoryAsync(id, modelLabel, success: false, hopIndex, capturedInput, outputText: "", errorMessage: ex.Message, (int)sw.ElapsedMilliseconds);
                 await RecordPromptCaptureAsync(failedHistoryId, id, modelLabel, capturedInput, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
                 log.LogWarning(ex, "LlmRouter: provider={Provider} failed, trying next in fallback chain", id);
             }
@@ -343,7 +343,7 @@ public class LlmRouter : ILlmService
     /// itself failed — best-effort, never throws).</returns>
     private async Task<int?> RecordCallHistoryAsync(
         string providerId, string model, bool success, int hopIndex,
-        string inputText, string outputText, string? errorMessage)
+        string inputText, string outputText, string? errorMessage, int? elapsedMs = null)
     {
         if (dbFactory is null) return null;
         try
@@ -355,6 +355,9 @@ public class LlmRouter : ILlmService
                 ProviderId = providerId,
                 Model = model,
                 Action = LlmActionContext.Current ?? "(unspecified)",
+                Stage = LlmActionContext.CurrentStage,
+                BeatId = LlmActionContext.CurrentBeatId,
+                ElapsedMs = elapsedMs,
                 Success = success,
                 FallbackHopIndex = hopIndex,
                 InputTokens = inputTok,
@@ -390,6 +393,7 @@ public class LlmRouter : ILlmService
             {
                 LlmCallHistoryId = llmCallHistoryId,
                 BeatId = LlmActionContext.CurrentBeatId,
+                Stage = LlmActionContext.CurrentStage,
                 ProviderId = providerId,
                 Model = model,
                 System = systemText,
