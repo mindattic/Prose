@@ -791,6 +791,45 @@ public class EmbeddingService
             .ToList();
     }
 
+    /// <summary>
+    /// Top-<paramref name="k"/> entities most similar to an entity that ALREADY HAS a stored
+    /// vector — no HTTP call at all; the comparison runs entirely in SQL against
+    /// <c>EntityEmbeddings</c>. Returns an empty list when the entity has no stored vector, so
+    /// the caller can fall back to <see cref="FindSimilarAsync"/> (one embed call).
+    ///
+    /// <para>Why (RFC 0012, 2026-09-07): <c>EntityContextService.ExpandEdgesAsync</c> re-embedded
+    /// each depth-0 and depth-1 entity's NAME on every beat write to find its neighbours — on a
+    /// Bushido Coda beat that was <b>52 embedding round-trips per write</b> (about 15 s of wall
+    /// time), for vectors the table already held.</para>
+    /// </summary>
+    public async Task<IReadOnlyList<EmbeddingHit>> FindSimilarToEntityAsync(
+        Guid entityId, int k = 8, CancellationToken ct = default)
+    {
+        await EnsureSchemaOnceAsync(ct);
+        const string sql = """
+            SELECT TOP (@p_k)
+                emb.EntityId AS EntityId,
+                ent.Name     AS EntityName,
+                ent.EntityType AS EntityType,
+                1.0 - VECTOR_DISTANCE('cosine', emb.Vector, self.Vector) AS Similarity
+            FROM dbo.EntityEmbeddings emb
+            JOIN dbo.Entities ent ON ent.Id = emb.EntityId
+            CROSS JOIN (SELECT Vector FROM dbo.EntityEmbeddings WHERE EntityId = @p_self) AS self
+            WHERE emb.EntityId <> @p_self
+              AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR ent.UniverseId = @p_universe)
+            ORDER BY VECTOR_DISTANCE('cosine', emb.Vector, self.Vector) ASC;
+            """;
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var hits = await db.Database.SqlQueryRaw<EmbeddingRow>(sql,
+                new Microsoft.Data.SqlClient.SqlParameter("@p_k", Math.Max(1, k)),
+                new Microsoft.Data.SqlClient.SqlParameter("@p_self", entityId),
+                new Microsoft.Data.SqlClient.SqlParameter("@p_universe", QueryUniverseId()))
+            .ToListAsync(ct);
+        return hits
+            .Select(h => new EmbeddingHit(h.EntityId, h.EntityName ?? "", h.EntityType ?? "", h.Similarity))
+            .ToList();
+    }
+
     /// <summary>Row shape for the VECTOR_DISTANCE TOP-N query.</summary>
     private sealed class EmbeddingRow
     {

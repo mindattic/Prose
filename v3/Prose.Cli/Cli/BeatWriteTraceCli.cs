@@ -137,9 +137,10 @@ public static class BeatWriteTraceCli
         {
             var totalStageMs = stageRows.Sum(s => (long)s.ElapsedMs);
             // Stage log is written at the END of the cluster; calls for this write happened in
-            // [end − Σstage − slack, end]. Generous slack — the goal is to exclude an EARLIER
-            // write of the same beat, not to be tight.
-            writeStart = latestBatchAt.Value.AddMilliseconds(-(totalStageMs + 120_000));
+            // [end − Σstage − slack, end]. Slack covers untraced gaps (DB round-trips between
+            // stages), not a whole other write: an A/B writes the same beat twice about a minute
+            // apart, and a 120 s slack double-counted the other arm's calls (2026-09-07).
+            writeStart = latestBatchAt.Value.AddMilliseconds(-(totalStageMs + 15_000));
         }
         var calls = writeStart == null ? callsAll : callsAll.Where(c => c.At >= writeStart.Value && (latestBatchAt == null || c.At <= latestBatchAt.Value.AddSeconds(5))).ToList();
 

@@ -66,7 +66,10 @@ public class BriefVerifier
                        structured, what the stated conversation says, the gestures, the weather, a
                        passer-by who does nothing, an object noticed. When the brief lists WHAT
                        HAPPENS, anything on that list and anything needed to stage it is implied.
-                       Empty array if none.
+                       Test each candidate: would a later chapter be WRONG if it ignored this? If
+                       not — if you would call it minor, logistical, texture, a gesture, a passing
+                       remark, or "minimal impact" — it is NOT an added event; leave it out. Only
+                       events that fail that test belong here. Empty array if none.
           "contradictions": array of short strings, one per clear factual contradiction of an
                        ESTABLISHED FACT (not interpretive differences, not omissions). The brief's
                        own lines (POV, names) are instructions, not facts — a departure from them is

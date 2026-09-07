@@ -145,7 +145,12 @@ public sealed class EntityContextService(
             {
                 try
                 {
-                    var neighbors = await embeddings.FindSimilarAsync(entry.Name, k: 4, ct: ct);
+                    // Stored vector first (zero HTTP calls); re-embed the name only for an entity
+                    // that has no embedding row yet. RFC 0012, 2026-09-07: this loop was 52
+                    // OpenAI round-trips per Bushido Coda beat write.
+                    var neighbors = await embeddings.FindSimilarToEntityAsync(entry.EntityId, k: 4, ct: ct);
+                    if (neighbors.Count == 0)
+                        neighbors = await embeddings.FindSimilarAsync(entry.Name, k: 4, ct: ct);
                     await using var db = await dbFactory.CreateDbContextAsync(ct);
                     foreach (var hit in neighbors.Where(h => h.EntityId != entry.EntityId))
                     {

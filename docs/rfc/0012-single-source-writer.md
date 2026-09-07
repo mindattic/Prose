@@ -380,5 +380,27 @@ stopped them, so it is the thing that gates the door now.
 
 - §1 done 2026-09-07 (`32e2491d1`, `ad7a26e9a`).
 - §2–§8 written 2026-09-07 on the author's instruction (*"please fix this, write the plan; total
-  and complete"*). No code changed for §2–§8 yet. **Next action: §4 Phase 0** — needs the author
-  to name five beats or approve a scratch duplicate of one draft book.
+  and complete"*).
+- **Author instruction 2026-09-07: *"clone BCODA and make it a better book using this plan."*** The
+  clone is **BCODA2** (`01a07a27-de94-7fd9-944b-9028bc0941f4`, slug
+  `bushido-coda-writer-clone-01a07a27`, 38 chapters / 475 beats). `DuplicateNodeAsync` was fixed
+  first (`d5ac4d374`) — it had silently dropped the outline, narrative mode, default location,
+  blueprint and the beat brief fields, so no duplicate could have been a like-for-like testbed.
+  The real BCODA is not touched by anything below.
+- **Steps 1–3 shipped** (`9c81fd854`): `BeatBrief` / `BeatBriefBuilder`, brief first-and-last in
+  the prompt, `DraftPostProcessor`, `DraftGate`, `BriefVerifier`, `DraftAndGateAsync` with
+  retry-once / refuse, `LeanContext` + `SkipPostWrite`, `--expand-beat --lean --dry-run --out`.
+- **Step 6 shipped** (`7870f5aba`): `WriterFunnelTests`. Its first run found **eight** undeclared
+  beat writers beyond the three the code read had named; every one now stamps a reason (new
+  `Plan` member for seed-spine's empty beats). `--strip-beat-artifacts` goes through the door.
+- **Phase 0 run 1** (5 beats × full/lean, dry runs on BCODA2): 6 passed, 4 refused. The refusals
+  taught three things that changed the code the same night: (a) a description is intent, not
+  events — both arms wrote a good Kyle/Pixel scene and neither had the pediatric prosthetic arm
+  the beat is about, so the brief now carries the beat's CURRENT event summary as "what happens";
+  (b) the verifier called a fee split an "added event" — recalibrated to "something a later beat
+  would have to honour"; (c) the roster heuristic's POV row said Mrs. Chen on a Kyle scene and
+  the gate refused a correct draft — POV now comes only from the outline map. One refusal was a
+  true catch: the lean combat draft gave War Dog a fourth arm with a belt-fed weapon.
+- **Phase 0 run 2** in progress with the corrected brief; results and the author's blind read go
+  in §10. **Not started:** step 4 (cuts — waits on run 2), step 5 (tier ceilings), step 7 (docs),
+  step 8, and the full BCODA2 pass.
