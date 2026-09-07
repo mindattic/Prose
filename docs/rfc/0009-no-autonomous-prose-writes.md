@@ -209,7 +209,7 @@ separate from ordinary edits.
 | 0 — `--edit-distribution` | `bf26761e0` | shipped; baseline recorded in §1 |
 | 1–2 — the seven deletions | `24a97a9d4` | shipped; 28 files, +115 / −2,506; Hub redeployed |
 | 3 — required `BeatWriteReason` | `950e4911b` | shipped; migration `AddBeatLastWriteReason` applied at Hub start (confirmed by a full-entity read through the new Hub) |
-| 3b — direct `beat.Text =` writers | — | **open** (see below) |
+| 3b — direct `beat.Text =` writers | `c6d01515e` | shipped: `FindingApplyService` routed through the workbench (`FindingApply`); `DuplicateEntityScanService` stamps `TagMaintenance`; `DistributedWorkerCoordinator` stamps `Generation`; `BeatVerificationService` is `AsNoTracking` and never saves; the audiobook path writes `EpisodeBeats` and the legacy chapter store, not `Beats`. **Acceptance line 2 now holds for every write to `Beats`.** |
 | 4 — findings diet | — | open; the `[Cliche]` producers are gone and its rows dismissed |
 | 5 — deterministic reflow | — | superseded: reflow is now byte-identical-or-refused, so a model-free rewrite is no longer needed |
 
