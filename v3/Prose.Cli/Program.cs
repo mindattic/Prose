@@ -178,6 +178,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // RFC 0012 §3.4 standalone gate: explicit --beat-id, resolves everything from the beat's
         // own rows via IgnoreQueryFilters() (see GateCheckCli).
         "--gate-check",
+        // Explicit --slug, resolved via NodeRefResolver + IgnoreQueryFilters(); the pass walks
+        // exactly the named book's beats (see MergeBeatsCli).
+        "--merge-beats",
         // Strand Progress Dashboard: every non-archived book across every universe, by design
         // (IgnoreQueryFilters() — see ProgressCli's own doc comment).
         "--progress",
@@ -2364,6 +2367,15 @@ if (args.Contains("--log-search"))
 if (args.Contains("--beat-archive"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BeatArchiveCli", args);
+    return;
+}
+
+// prose --merge-beats --slug <slug> [--from N] [--to N] [--limit N] [--resume] --yes
+// RFC 0012 §11: per beat — two dry-run drafts, one merge against the book's own text as spine,
+// spine + gate test, save as AuthorMerge or keep the original. Expensive; requires --yes.
+if (args.Contains("--merge-beats"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MergeBeatsCli", args);
     return;
 }
 

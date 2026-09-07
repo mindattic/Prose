@@ -1208,6 +1208,7 @@ public static class ServiceCollectionExtensions
         // test router without them behaves as before); both resolve automatically in the Hub.
         services.AddSingleton<BeatBriefBuilder>();
         services.AddSingleton<BriefVerifier>();
+        services.AddSingleton<BeatMergeService>();
         // Portable-writing-service plan, Phase 2: standalone "write me a scene" entry point that
         // doesn't require a pre-existing Book/Chapter/Beat row — see prose --generate-scene.
         services.AddSingleton<OneShotGenerationService>();

@@ -63,6 +63,16 @@ public enum BeatWriteReason
     /// GUID a tag points at. Stamped without a Version bump, because no prose changed.</summary>
     TagMaintenance,
 
+    /// <summary>
+    /// The author's instructed merge (RFC 0012 §11, 2026-09-07): the beat as it stands is the
+    /// spine, two regenerations are a quarry, and the merged text must keep every fact, name,
+    /// number and event of the original — enforced by <see cref="SpineCheck"/> plus the writer's
+    /// gate before it can be saved. Distinct from <see cref="Generation"/> so
+    /// <c>--edit-distribution</c> can tell "the author had this beat polished against its own
+    /// text" apart from "an LLM wrote this beat".
+    /// </summary>
+    AuthorMerge,
+
     /// <summary>An empty planned beat created from the outline's beat spine
     /// (<c>NodeOutlineService</c> seed-spine). Carries no prose — the row exists so a later
     /// <see cref="Generation"/> has somewhere to land. Added 2026-09-07 (RFC 0012 §3.6) when the
