@@ -40,14 +40,22 @@ public class VerificationContextService(
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
+            // AS [Value]: Database.SqlQuery<T> for a scalar wraps the statement and projects
+            // [Value] from it. Without the alias every call threw "Invalid column name" and the
+            // catch below turned it into a silent null — so this beat's POV, and with it the
+            // Register layer DocContextService pins dominant (SS-A46 tier 4), was NEVER resolved
+            // through this path. Found 2026-09-07; the sibling queries in SceneContextAssembler
+            // and BeatBriefBuilder already alias correctly.
             var ids = await db.Database
-                .SqlQuery<Guid>($"SELECT TOP 1 EntityId FROM BeatEntityPresence WHERE BeatId = {beatId} AND PresenceType = 'pov'")
+                .SqlQuery<Guid>($"SELECT TOP 1 EntityId AS [Value] FROM BeatEntityPresence WHERE BeatId = {beatId} AND PresenceType = 'pov'")
                 .ToListAsync(ct);
             return ids.Count > 0 ? ids[0] : null;
         }
         catch (Exception ex)
         {
-            log.LogDebug(ex, "[VerificationContextService] POV lookup skipped for beat {BeatId}", beatId);
+            // Warning, not Debug: "no POV recorded" is a null return, so an exception here is
+            // always a defect, and logging it below the default level is what hid the bug above.
+            log.LogWarning(ex, "[VerificationContextService] POV lookup FAILED for beat {BeatId} — treating as no POV", beatId);
             return null;
         }
     }

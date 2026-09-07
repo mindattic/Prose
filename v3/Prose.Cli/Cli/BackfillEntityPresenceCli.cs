@@ -57,7 +57,7 @@ public static class BackfillEntityPresenceCli
         // via a raw scalar check per beat rather than a DbSet join.
         await using var checkDb = await dbFactory.CreateDbContextAsync();
         var withRoster = new HashSet<Guid>(
-            await checkDb.Database.SqlQuery<Guid>($"SELECT DISTINCT BeatId FROM BeatEntities").ToListAsync());
+            await checkDb.Database.SqlQuery<Guid>($"SELECT DISTINCT BeatId AS [Value] FROM BeatEntities").ToListAsync());
         var targets = beatIds.Where(id => !withRoster.Contains(id)).ToList();
 
         Console.WriteLine($"[backfill-entity-presence] {targets.Count} beat(s) with prose text and no existing roster.");

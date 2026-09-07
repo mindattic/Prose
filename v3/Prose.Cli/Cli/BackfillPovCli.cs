@@ -59,7 +59,7 @@ public static class BackfillPovCli
         // Beats already tagged 'pov' — skip these outright (don't touch existing legitimate data,
         // heuristic or otherwise).
         var alreadyTagged = new HashSet<Guid>(
-            await db2.Database.SqlQuery<Guid>($"SELECT DISTINCT BeatId FROM BeatEntityPresence WHERE PresenceType = 'pov'").ToListAsync());
+            await db2.Database.SqlQuery<Guid>($"SELECT DISTINCT BeatId AS [Value] FROM BeatEntityPresence WHERE PresenceType = 'pov'").ToListAsync());
 
         var candidateBeatIds = await BackfillEntityPresenceCli.SelectCandidateBeatIdsAsync(db2, nodeIdScope);
         var targets = candidateBeatIds.Where(id => !alreadyTagged.Contains(id)).ToList();
