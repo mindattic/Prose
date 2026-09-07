@@ -370,6 +370,9 @@ public class BeatRebuildService
                 SceneType = rb.SceneEnd ? "scene-end" : "scene",
                 Stale = true,
                 GapAfterMs = isLast ? null : GapFor(rb, text),
+                // RFC 0012 §3.6: re-segmenting existing text into new beat rows is a structural
+                // split, and every Beats.Text write declares itself (RFC 0009).
+                LastWriteReason = nameof(BeatWriteReason.StructuralSplit),
             };
             db.Beats.Add(beat);
             db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });

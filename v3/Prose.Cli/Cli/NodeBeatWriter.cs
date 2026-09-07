@@ -52,6 +52,9 @@ public static class NodeBeatWriter
                 PaceHint       = pb.PaceHint,
                 GapAfterMs     = pb.GapAfterMs,
                 VoiceId        = pb.VoiceId,
+                // RFC 0009 / RFC 0012 §3.6: every Beats.Text write declares itself. This is the
+                // one path that creates rows from an imported file, and it left the reason null.
+                LastWriteReason = nameof(BeatWriteReason.Import),
             };
             db.Beats.Add(beat);
             db.BeatNodes.Add(new BeatNode { NodeId = nodeId, BeatId = beat.Id, SortKey = sortKey });

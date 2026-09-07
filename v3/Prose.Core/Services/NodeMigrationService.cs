@@ -143,6 +143,7 @@ public class NodeMigrationService
                 {
                     Id            = cb.BeatGuid,
                     Number        = nextNumber++,
+                    LastWriteReason = nameof(BeatWriteReason.Import), // RFC 0009/0012 §3.6: legacy-model migration
                     Text          = cb.Text ?? "",
                     TextHash      = string.IsNullOrEmpty(cb.Text) ? null : ComputeTextHash(cb.Text),
                     Title         = cb.Title,
@@ -287,6 +288,7 @@ public class NodeMigrationService
                 {
                     Id            = beatId,
                     Number        = nextNumber++,
+                    LastWriteReason = nameof(BeatWriteReason.Import), // RFC 0009/0012 §3.6: legacy-model migration
                     Text          = eb.Text ?? "",
                     TextHash      = eb.TextHash ?? (string.IsNullOrEmpty(eb.Text) ? null : ComputeTextHash(eb.Text)),
                     Title         = eb.BeatTitle,

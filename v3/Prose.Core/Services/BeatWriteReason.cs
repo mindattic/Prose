@@ -62,4 +62,10 @@ public enum BeatWriteReason
     /// when two entity rows are merged (<c>--merge-entity</c>). The words never change; only the
     /// GUID a tag points at. Stamped without a Version bump, because no prose changed.</summary>
     TagMaintenance,
+
+    /// <summary>An empty planned beat created from the outline's beat spine
+    /// (<c>NodeOutlineService</c> seed-spine). Carries no prose — the row exists so a later
+    /// <see cref="Generation"/> has somewhere to land. Added 2026-09-07 (RFC 0012 §3.6) when the
+    /// one-door test found this creator undeclared.</summary>
+    Plan,
 }

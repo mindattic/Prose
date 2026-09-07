@@ -56,8 +56,12 @@ public static class BeatWriteTraceCli
         Guid? beatId = null;
         bool last = args.Contains("--last");
         bool json = args.Contains("--json");
+        int batchBack = 0; // --batch N: 0 = the latest write of this beat, 1 = the one before, …
         for (int i = 0; i < args.Length; i++)
+        {
             if (args[i] == "--beat-id" && i + 1 < args.Length && Guid.TryParse(args[i + 1], out var g)) beatId = g;
+            if (args[i] == "--batch" && i + 1 < args.Length && int.TryParse(args[i + 1], out var nb)) batchBack = Math.Max(0, nb);
+        }
 
         if (beatId == null && !last)
         {
@@ -112,7 +116,12 @@ public static class BeatWriteTraceCli
             .Where(s => s.BeatId == beatId.Value)
             .OrderByDescending(s => s.WrittenAt).ThenBy(s => s.Ordinal)
             .ToListAsync();
-        var latestBatchAt = stageRowsAll.Count > 0 ? stageRowsAll[0].WrittenAt : (DateTime?)null;
+        // Each write persists its rows with one shared WrittenAt; --batch N selects the Nth most
+        // recent write (the A/B writes the same beat twice, once per arm).
+        var batches = stageRowsAll.Select(s => s.WrittenAt).Distinct().OrderByDescending(t => t).ToList();
+        var latestBatchAt = batches.Count > batchBack ? batches[batchBack] : (DateTime?)null;
+        if (batchBack > 0 && latestBatchAt == null)
+            Console.Error.WriteLine($"[beat-write-trace] only {batches.Count} write batch(es) exist for this beat; showing none.");
         var stageRows = latestBatchAt == null
             ? []
             : stageRowsAll.Where(s => s.WrittenAt == latestBatchAt.Value).OrderBy(s => s.Ordinal).ToList();
@@ -132,7 +141,7 @@ public static class BeatWriteTraceCli
             // write of the same beat, not to be tight.
             writeStart = latestBatchAt.Value.AddMilliseconds(-(totalStageMs + 120_000));
         }
-        var calls = writeStart == null ? callsAll : callsAll.Where(c => c.At >= writeStart.Value).ToList();
+        var calls = writeStart == null ? callsAll : callsAll.Where(c => c.At >= writeStart.Value && (latestBatchAt == null || c.At <= latestBatchAt.Value.AddSeconds(5))).ToList();
 
         var callRows = calls.Select(c => new CallRow(
             c.Stage ?? Unattributed, c.At, c.ProviderId, c.Model, c.Success,

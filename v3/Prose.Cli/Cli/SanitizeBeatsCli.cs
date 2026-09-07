@@ -65,6 +65,9 @@ public static class SanitizeBeatsCli
                 beat.Text      = clean;
                 beat.TextHash  = ComputeHash(clean);
                 beat.UpdatedAt = DateTime.UtcNow;
+                // RFC 0009/0012 §3.6: mojibake repair is mechanical, meaning-preserving text
+                // maintenance — declared as such, never a silent write.
+                beat.LastWriteReason = nameof(BeatWriteReason.TagMaintenance);
                 fixed_++;
             }
         }

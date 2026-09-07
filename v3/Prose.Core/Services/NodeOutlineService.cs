@@ -324,6 +324,7 @@ public class NodeOutlineService
                 Description   = plan.Goal,
                 StructureRole = MapStructureRole(plan.StructureRole),
                 Text          = "",
+                LastWriteReason = nameof(BeatWriteReason.Plan), // RFC 0012 §3.6: empty planned beat from the spine
                 CreatedAt     = now,
                 UpdatedAt     = now,
             };

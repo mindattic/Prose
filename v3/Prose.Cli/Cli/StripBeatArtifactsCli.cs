@@ -39,6 +39,7 @@ public static class StripBeatArtifactsCli
         }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
         var reference = slug;
@@ -73,10 +74,11 @@ public static class StripBeatArtifactsCli
 
             changed++;
             Console.WriteLine($"  {(dryRun ? "[dry-run] would clean" : "clean")} beat #{beat.Number} ({beat.Title}): {text.Length} -> {cleaned.Length} chars.");
-            if (!dryRun) beat.Text = cleaned;
+            // RFC 0012 §3.6 — one door: through the workbench with a declared reason (this CLI
+            // is the author deliberately editing text), never a bare `beat.Text =` + SaveChanges.
+            if (!dryRun)
+                await workbench.UpdateBeatTextAsync(beat.Id, cleaned, BeatWriteReason.AuthorEdit, expectedUpdatedAt: null);
         }
-
-        if (!dryRun && changed > 0) await db.SaveChangesAsync();
 
         Console.WriteLine($"[strip-beat-artifacts] {beats.Count} beat(s) scanned, {changed} {(dryRun ? "would be " : "")}cleaned.");
         return 0;

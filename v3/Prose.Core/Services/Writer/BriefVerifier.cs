@@ -58,12 +58,19 @@ public class BriefVerifier
                        describes, or ends the chapter/book when told not to. false otherwise.
           "stop_evidence": the first sentence of the draft that belongs to the next beat, or null.
           "added_events": array of short strings, one per event the draft introduces that the brief
-                       does not state or clearly imply — an arrival, a message, a fight, a
-                       reversal, a new character acting, a decision that changes the plot. Small
-                       texture (weather, a passer-by who does nothing, an object noticed) is NOT an
-                       event. Empty array if none.
+                       does not state or clearly imply AND that changes the story's state — something
+                       a later beat would have to honour: a new named character or place, an arrival
+                       or departure, a message or call that carries plot information, a fight, an
+                       injury, a reversal, a decision the brief did not call for. The MECHANICS OF
+                       DRAMATIZING the brief's own event are NOT added events: how a stated deal is
+                       structured, what the stated conversation says, the gestures, the weather, a
+                       passer-by who does nothing, an object noticed. When the brief lists WHAT
+                       HAPPENS, anything on that list and anything needed to stage it is implied.
+                       Empty array if none.
           "contradictions": array of short strings, one per clear factual contradiction of an
-                       ESTABLISHED FACT (not interpretive differences, not omissions). Empty if none.
+                       ESTABLISHED FACT (not interpretive differences, not omissions). The brief's
+                       own lines (POV, names) are instructions, not facts — a departure from them is
+                       reported under missing_from_goal, never here. Empty if none.
           "missing_from_goal": array of short strings for anything the brief says HAPPENS that the
                        draft does not contain at all. Empty if none.
         Be strict about added_events and crosses_stop; be conservative about contradictions.

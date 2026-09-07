@@ -42,10 +42,23 @@ public class BeatBriefBuilder
         string? stopBefore = null;
         var closesChapter = false;
         string? pov = null;
+        string? events = null;
 
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+            // The beat's own CURRENT event summary — what actually happens — for regenerations.
+            // A stale or unverified summary is not used: it may describe a different beat (31 of
+            // BCODA's did on 2026-09-06), and a wrong "must occur" list is worse than none.
+            var self = await db.Beats.AsNoTracking().IgnoreQueryFilters()
+                .Where(b => b.Id == beatId)
+                .Select(b => new { b.EventSummary, b.EventSummaryHash, b.TextHash })
+                .FirstOrDefaultAsync(ct);
+            if (self != null && !string.IsNullOrWhiteSpace(self.EventSummary)
+                && !string.IsNullOrEmpty(self.EventSummaryHash) && self.EventSummaryHash == self.TextHash)
+                events = self.EventSummary.Trim();
+
             var membership = await db.BeatNodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(bn => bn.BeatId == beatId)
                 .Select(bn => new { bn.NodeId, bn.SortKey })
@@ -92,13 +105,14 @@ public class BeatBriefBuilder
                     stopBefore = FirstNonEmpty(next.Description, next.EventSummary, next.Title);
             }
 
-            if (verification != null)
-            {
-                var povId = await verification.GetPovEntityIdAsync(beatId, ct);
-                if (povId != null)
-                    pov = await db.Entities.AsNoTracking().IgnoreQueryFilters()
-                        .Where(e => e.Id == povId.Value).Select(e => e.Name).FirstOrDefaultAsync(ct);
-            }
+            // POV only from the outline POV map (Source = 'pov-map'). The 'auto-write' rows are
+            // the roster heuristic's guess (highest-scoring character in the room) and are wrong
+            // often enough to be dangerous as a brief line: on BCODA2 beat #17448 the heuristic
+            // row said Mrs. Chen for a Kyle scene and the gate refused a correct draft for it.
+            var povMap = await db.Database
+                .SqlQuery<string>($"SELECT TOP 1 EntityName AS [Value] FROM [dbo].[BeatEntityPresence] WHERE BeatId = {beatId} AND PresenceType = 'pov' AND Source = 'pov-map'")
+                .ToListAsync(ct);
+            pov = povMap.FirstOrDefault(s => !string.IsNullOrWhiteSpace(s));
         }
         catch (Exception ex) when (ex is not OperationCanceledException)
         {
@@ -109,9 +123,10 @@ public class BeatBriefBuilder
         return new BeatBrief
         {
             Goal = goal,
+            Events = events,
             StopBefore = stopBefore,
             ClosesChapter = closesChapter,
-            MustInclude = NamesIn(goal),
+            MustInclude = NamesIn(events == null ? goal : goal + " " + events),
             Pov = pov,
             Subtext = string.IsNullOrWhiteSpace(subtext) ? null : subtext,
             TargetWords = targetWords,

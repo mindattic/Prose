@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
+using Prose.Core.Services;
 
 namespace Prose.Cli;
 
@@ -344,6 +345,7 @@ public static class MigrateLegacyBookChapterCli
             {
                 Id            = beatId,
                 Number        = nextNumber++,
+                LastWriteReason = nameof(BeatWriteReason.Import), // RFC 0009/0012 §3.6: legacy Book/Chapter migration
                 Text          = text,
                 TextHash      = ComputeTextHash(text),
                 Title         = string.IsNullOrEmpty(bTitle) ? null : bTitle,

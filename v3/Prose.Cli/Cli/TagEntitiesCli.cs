@@ -209,6 +209,7 @@ public static class TagEntitiesCli
 
             beat.Text     = retagged;
             beat.TextHash = NodeWorkbenchService.ComputeTextHash(retagged);
+            beat.LastWriteReason = nameof(BeatWriteReason.TagMaintenance); // RFC 0009/0012 §3.6
             taggedBeatIds.Add(beat.Id);
         }
 

@@ -19,6 +19,14 @@ public sealed record BeatBrief
     /// <summary>What happens in this beat — the beat's Description (else Title).</summary>
     public required string Goal { get; init; }
 
+    /// <summary>The concrete events that occur in this beat, when known — the beat's CURRENT
+    /// event summary ("what happened", observational) as opposed to <see cref="Goal"/> (authorial
+    /// intent). Set when regenerating a beat that already has prose; null for a never-written beat.
+    /// Without it a regeneration honours the intent and loses the story: on BCODA2 beat #17369
+    /// both A/B arms wrote a Kyle/Pixel scene and neither contained the pediatric prosthetic arm
+    /// the beat is actually about.</summary>
+    public string? Events { get; init; }
+
     /// <summary>What the NEXT beat does. The draft must stop before this begins. Null = this is
     /// the last beat of the book (or nothing follows in the same book).</summary>
     public string? StopBefore { get; init; }
@@ -54,7 +62,15 @@ public sealed record BeatBrief
     {
         var sb = new StringBuilder();
         sb.AppendLine("THE BRIEF — this is the beat you are writing. Everything else in this prompt is context; this is the job.");
-        sb.Append("  WHAT HAPPENS: ").AppendLine(Goal.Trim());
+        if (!string.IsNullOrWhiteSpace(Events))
+        {
+            sb.Append("  WHAT HAPPENS (every event here must occur, in this order): ").AppendLine(Events.Trim());
+            sb.Append("  INTENT: ").AppendLine(Goal.Trim());
+        }
+        else
+        {
+            sb.Append("  WHAT HAPPENS: ").AppendLine(Goal.Trim());
+        }
         if (!string.IsNullOrWhiteSpace(StopBefore))
             sb.Append("  STOP BEFORE: ").Append(StopBefore.Trim()).AppendLine("  ← the next beat does this. Do not write it. Do not set it up with a new event.");
         else if (ClosesChapter)
@@ -87,6 +103,7 @@ public sealed record BeatBrief
         var stop = !string.IsNullOrWhiteSpace(StopBefore)
             ? $"Stop before: {StopBefore.Trim()}"
             : ClosesChapter ? "Land the chapter here." : "End the book here.";
-        return $"Write exactly the beat in THE BRIEF: {Goal.Trim()} {stop} Prose only — no heading, no label.";
+        var what = string.IsNullOrWhiteSpace(Events) ? Goal.Trim() : Events.Trim();
+        return $"Write exactly the beat in THE BRIEF: {what} {stop} Prose only — no heading, no label.";
     }
 }
