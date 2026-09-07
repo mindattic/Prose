@@ -101,6 +101,17 @@ public static class GateCheckCli
             if (claims.Count > 0) facts = string.Join("\n", claims.Select(c => $"- {c.EntityName}: {c.Predicate} = {c.Object}"));
         }
 
+        // A merge is judged against the book, not only against the ledger: everything in the
+        // original beat is already established for this beat (the "Gennaro rule" is in Bushido
+        // Coda's own text; the verifier refused a merge for "inventing" it, 2026-09-07). Hand the
+        // original to the verifier as canon so only genuinely new material can be flagged.
+        if (spine != null && File.Exists(spine))
+        {
+            var origText = Regex.Replace(await File.ReadAllTextAsync(spine), @"<entity[^>]*>|</entity>", "").Trim();
+            facts = (facts == null ? "" : facts + "\n\n") +
+                    "THE BEAT AS IT STANDS IN THE BOOK — every event, name, term and detail below is already established for this beat and is NOT an added event:\n" + origText;
+        }
+
         BriefVerifier.Verdict? verdict = null; string? verifierError = null;
         if (det.Passed && verifier != null)
         {
