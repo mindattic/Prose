@@ -1204,6 +1204,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<NarrativeForkService>();
         services.AddSingleton<ChapterCloseProcessorService>();
         services.AddSingleton<ProseWriterRouter>();
+        // RFC 0012 — the writer's brief and gate. Both optional dependencies of the router (a
+        // test router without them behaves as before); both resolve automatically in the Hub.
+        services.AddSingleton<BeatBriefBuilder>();
+        services.AddSingleton<BriefVerifier>();
         // Portable-writing-service plan, Phase 2: standalone "write me a scene" entry point that
         // doesn't require a pre-existing Book/Chapter/Beat row — see prose --generate-scene.
         services.AddSingleton<OneShotGenerationService>();

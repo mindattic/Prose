@@ -75,7 +75,10 @@ public class BeatGeneratorService
         // negotiation, same kind of confrontation, same kind of beat-of-quiet)
         // keeps the writer's register consistent without copying any specific
         // scene. Empty when the prose-embedding cache is cold.
-        var anchorBlock = await BuildBeatAnchorsAsync(context, ct);
+        // Tier E (opinion) — off under LeanContext (RFC 0012 §3.2): the anchors are three prior
+        // beats chosen by embedding similarity; whether they earn their embedding call is what §4
+        // measures.
+        var anchorBlock = context.LeanContext ? "" : await BuildBeatAnchorsAsync(context, ct);
 
         // Universal world facts — always injected regardless of which book is being written.
         // Facts that apply to every book in this universe (transport mechanics, vocabulary,
@@ -251,19 +254,40 @@ public class BeatGeneratorService
             ? context.SceneSoFar[^6000..]
             : context.SceneSoFar ?? "";
 
-        var user = $"""
-            SCENE SO FAR:
-            {sceneSoFar}
+        // RFC 0012 §3.1: with a brief, the job is the FIRST thing in the user message and is
+        // restated as the LAST line, so it can neither be crowded out by the context above nor
+        // forgotten under the craft instruction below. Without a brief (preview writes, legacy
+        // callers) the original single BEAT GOAL line is kept unchanged.
+        var brief = context.Brief;
+        var user = brief != null
+            ? $"""
+              {brief.ToPromptBlock()}
 
-            BEAT GOAL: {context.BeatGoal}{subtextBlock}
+              SCENE SO FAR (what the reader has just read — continue from its last line):
+              {sceneSoFar}{subtextBlock}
 
-            Write the next beat of the scene. Voice comes from the POV character's documented
-            speech_patterns and psychology — clipped or warm, deflective or direct, depending on
-            whose head we're in. If interiority is genuinely needed here, prefer showing the thought
-            as an action; a bare italic line is a last resort, at most one, never a paragraph.{dialogueInstruction}
+              Voice comes from the POV character's documented speech_patterns and psychology —
+              clipped or warm, deflective or direct, depending on whose head we're in. If interiority
+              is genuinely needed here, prefer showing the thought as an action; a bare italic line is
+              a last resort, at most one, never a paragraph.{dialogueInstruction}
 
-            {lengthInstruction}
-            """;
+              {lengthInstruction}
+
+              {brief.ToClosingLine()}
+              """
+            : $"""
+              SCENE SO FAR:
+              {sceneSoFar}
+
+              BEAT GOAL: {context.BeatGoal}{subtextBlock}
+
+              Write the next beat of the scene. Voice comes from the POV character's documented
+              speech_patterns and psychology — clipped or warm, deflective or direct, depending on
+              whose head we're in. If interiority is genuinely needed here, prefer showing the thought
+              as an action; a bare italic line is a last resort, at most one, never a paragraph.{dialogueInstruction}
+
+              {lengthInstruction}
+              """;
 
         // When TargetWords is explicit, scale to it (300 chars/word * 3).
         // Default (Swain doctrine): 4096 gives the model room to write a full
@@ -271,7 +295,8 @@ public class BeatGeneratorService
         var maxTokens = context.TargetWords > 0
             ? Math.Clamp(context.TargetWords * 3, 2048, 8192)
             : 4096;
-        return await llm.GenerateWithCachedPrefixAsync(stablePrefix, dynamicSystem, user, temperature: 0.85, maxTokens: maxTokens, ct: ct);
+        var temperature = brief?.Temperature ?? 0.85;
+        return await llm.GenerateWithCachedPrefixAsync(stablePrefix, dynamicSystem, user, temperature: temperature, maxTokens: maxTokens, ct: ct);
     }
 
     /// <summary>
@@ -891,6 +916,21 @@ public record BeatContext
     public string XRayContext { get; init; } = "";
     public string SceneSoFar { get; init; } = "";
     public string BeatGoal { get; init; } = "";
+
+    /// <summary>RFC 0012 §3.1 — the contract this write is held to. When set, the generator
+    /// renders it first and last in the user message and takes temperature/length from it, and
+    /// the router runs the gate before saving. Built by the router from the beat when null and a
+    /// real beat id is known; callers may pre-build it.</summary>
+    public BeatBrief? Brief { get; init; }
+
+    /// <summary>RFC 0012 §3.2 tier E off: skip the opinion blocks (finding loop-backs,
+    /// story-science, blueprint slice, offscreen chart, style anchors, tension, collision) so the
+    /// A/B in §4 can compare "brief + facts + memory + voice" against the full pile.</summary>
+    public bool LeanContext { get; init; }
+
+    /// <summary>Do not run the post-write cluster (extraction, mode log, coverage). For dry-run
+    /// A/B drafts that are never saved — a ledger must not learn from prose that does not exist.</summary>
+    public bool SkipPostWrite { get; init; }
 
     /// <summary>What is happening beneath the surface of this beat — foreshadowing,
     /// unspoken motivations, dramatic irony, hidden agendas. Injected as a SUBTEXT

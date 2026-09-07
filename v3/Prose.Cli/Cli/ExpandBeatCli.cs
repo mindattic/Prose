@@ -29,6 +29,12 @@ namespace Prose.Cli;
 ///   --local-model &lt;tag&gt;       Override the local model tag for this run only.
 ///   --allow-unblueprinted     Override the locked-pipeline gate (no outline + no structural
 ///                             blueprint on this book) — see ProseWriterRouter.WriteAsync.
+///   --lean                    RFC 0012 §3.2: drop the tier-E opinion blocks (finding loop-backs,
+///                             story-science, blueprint slice, offscreen chart, style anchors,
+///                             tension, collision). The A/B arm.
+///   --dry-run [--out <file>]  Write nothing to the beat and run no post-write extraction; the
+///                             draft goes to --out (or stdout). A gate refusal writes
+///                             <file>.refused.txt. For the §4 A/B.
 ///
 /// Exit codes:
 ///   0 — at least one beat expanded successfully.
@@ -43,11 +49,17 @@ public static class ExpandBeatCli
         bool force = args.Contains("--force");
         bool useLocal = args.Contains("--local");
         bool allowUnblueprinted = args.Contains("--allow-unblueprinted");
+        // RFC 0012 §4 A/B controls: --lean drops the tier-E opinion blocks; --dry-run writes
+        // nothing to the beat (and runs no post-write extraction) — the draft goes to --out.
+        bool lean = args.Contains("--lean");
+        bool dryRun = args.Contains("--dry-run");
+        string? outPath = null;
 
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
+                case "--out":          if (i + 1 < args.Length) outPath        = args[++i]; break;
                 case "--slug":         if (i + 1 < args.Length) slug           = args[++i]; break;
                 case "--id":           if (i + 1 < args.Length) id             = args[++i]; break;
                 case "--beat":         if (i + 1 < args.Length) beatId         = args[++i]; break;
@@ -193,6 +205,8 @@ public static class ExpandBeatCli
                     BeatGoal          = goal,
                     Subtext           = beat.Subtext ?? "",
                     CharactersInScene = protagonistName != null ? new[] { protagonistName } : Array.Empty<string>(),
+                    LeanContext       = lean,
+                    SkipPostWrite     = dryRun,
                 };
                 var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count, allowUnblueprinted: allowUnblueprinted);
                 if (string.IsNullOrWhiteSpace(prose))
@@ -202,10 +216,32 @@ public static class ExpandBeatCli
                     continue;
                 }
                 prose = prose.Trim();
+                if (dryRun)
+                {
+                    if (outPath != null) { await File.WriteAllTextAsync(outPath, prose); }
+                    Console.WriteLine($"dry-run ok ({prose.Length} chars){(outPath != null ? $" → {outPath}" : "")} — NOT saved.");
+                    if (outPath == null) { Console.WriteLine(); Console.WriteLine(prose); Console.WriteLine(); }
+                    expanded++;
+                    continue;
+                }
                 await workbench.UpdateBeatTextAsync(beat.Id, prose, BeatWriteReason.Generation, expectedUpdatedAt: null);
                 sceneSoFar += "\n\n" + prose;
                 expanded++;
                 Console.WriteLine($"ok ({prose.Length} chars).");
+            }
+            catch (BeatGateRefusedException refused)
+            {
+                // RFC 0012 §3.4: a draft that fails the gate twice is never saved. Show the
+                // author why, and keep the refused text where they can read it.
+                Console.WriteLine($"REFUSED by the gate after {refused.Attempts} attempts — not saved.");
+                foreach (var r in refused.Reasons) Console.WriteLine($"    - {r}");
+                if (outPath != null)
+                {
+                    var refusedPath = Path.ChangeExtension(outPath, ".refused.txt");
+                    await File.WriteAllTextAsync(refusedPath, refused.Draft);
+                    Console.WriteLine($"    refused draft → {refusedPath}");
+                }
+                skipped++;
             }
             catch (Exception ex)
             {

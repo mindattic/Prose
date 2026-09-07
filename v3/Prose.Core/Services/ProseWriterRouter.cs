@@ -64,7 +64,9 @@ public class ProseWriterRouter(
     ContinuityEnforcer? continuityEnforcer = null,
     FindingsService? findings = null,
     BeatPlaceService? beatPlace = null,
-    MotifLedgerService? motifLedger = null)
+    MotifLedgerService? motifLedger = null,
+    BeatBriefBuilder? briefBuilder = null,
+    BriefVerifier? briefVerifier = null)
 {
     // Built from CombatProseConstants — single source of truth shared with CombatSceneWriter.
     static readonly string CombatProseGuidance =
@@ -340,7 +342,7 @@ public class ProseWriterRouter(
 
         // Emotional depth feedback: pull prior examination findings for this node.
         var emotionalGuidanceContext = context.EmotionalGuidanceContext;
-        if (string.IsNullOrEmpty(emotionalGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
+        if (string.IsNullOrEmpty(emotionalGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty && !context.LeanContext)
         {
             await TraceStageAsync("EmotionalDepthLoopback", async () =>   // producer deleted 2026-09-06 (RFC 0010); reads prior findings only
             {
@@ -357,7 +359,7 @@ public class ProseWriterRouter(
         // forward-looking guidance block — same "prior findings become future generation
         // constraints" pattern as EMOTIONAL-DEPTH above and STORYSCOPE below.
         var readabilityGuidanceContext = context.ReadabilityGuidanceContext;
-        if (string.IsNullOrEmpty(readabilityGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
+        if (string.IsNullOrEmpty(readabilityGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty && !context.LeanContext)
         {
             await TraceStageAsync(nameof(BeatProseMetricsService), async () =>
             {
@@ -376,7 +378,7 @@ public class ProseWriterRouter(
         // loop-back mechanism — only EMOTIONAL-DEPTH/READABILITY/STORYSCOPE fed forward into later
         // beats. Same "prior findings become future generation constraints" pattern as those three.
         var readerProxyGuidanceContext = context.ReaderProxyGuidanceContext;
-        if (string.IsNullOrEmpty(readerProxyGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
+        if (string.IsNullOrEmpty(readerProxyGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty && !context.LeanContext)
         {
             await TraceStageAsync("ReaderProxyQA guidance", async () =>
             {
@@ -405,7 +407,7 @@ public class ProseWriterRouter(
         // guidance — same "prior findings become future generation constraints" pattern as
         // EMOTIONAL-DEPTH/READABILITY above and Reader-Proxy QA below.
         var continuityViolationGuidanceContext = context.ContinuityViolationGuidanceContext;
-        if (string.IsNullOrEmpty(continuityViolationGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
+        if (string.IsNullOrEmpty(continuityViolationGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty && !context.LeanContext)
         {
             await TraceStageAsync($"{nameof(ContinuityEnforcer)} guidance", async () =>
             {
@@ -483,7 +485,7 @@ public class ProseWriterRouter(
         // Tension escalation: warn when recent beats have stagnated at low intensity.
         // Gate: fewer than 3 prior beats means no escalation history to analyse.
         var tensionGuidanceContext = context.TensionGuidanceContext;
-        if (string.IsNullOrEmpty(tensionGuidanceContext) && tensionService != null && context.NodeId != Guid.Empty)
+        if (string.IsNullOrEmpty(tensionGuidanceContext) && tensionService != null && context.NodeId != Guid.Empty && !context.LeanContext)
         {
             if (beatIndex > 2)
                 TraceStage(nameof(TensionEscalationService), () =>
@@ -606,7 +608,7 @@ public class ProseWriterRouter(
         // Story Science: King + Storr craft laws — psychometric consistency, status dynamics,
         // curiosity gap, neural narrative, sensory specificity, prose anti-patterns, theory of mind.
         var storyScienceGuidance = context.StoryScienceGuidance;
-        if (string.IsNullOrEmpty(storyScienceGuidance) && storyScience != null && totalBeats > 0)
+        if (string.IsNullOrEmpty(storyScienceGuidance) && storyScience != null && totalBeats > 0 && !context.LeanContext)
         {
             TraceStage(nameof(StoryScienceService), () =>
                 { storyScienceGuidance = storyScience.GetBeatGuidance(context, beatIndex, totalBeats, mode); });
@@ -618,7 +620,7 @@ public class ProseWriterRouter(
         // "collision" needs at least two parties) and skipped for Combat (CombatProseGuidance
         // already owns that texture) and beats with no XRay roster to compute from.
         var sceneCollisionGuidance = context.SceneCollisionGuidance;
-        if (string.IsNullOrEmpty(sceneCollisionGuidance) && sceneCollision != null
+        if (string.IsNullOrEmpty(sceneCollisionGuidance) && sceneCollision != null && !context.LeanContext
             && mode != BeatMode.Combat && context.CharactersInScene.Count >= 2
             && !string.IsNullOrWhiteSpace(xRayContext) && !string.IsNullOrWhiteSpace(context.BeatGoal))
         {
@@ -642,7 +644,7 @@ public class ProseWriterRouter(
         // rows both keyed off the same merged value and could not distinguish which mechanism
         // actually fired. They are now tracked separately and merged only at prompt-assembly.
         var blueprintSliceGuidance = context.StructuralBlueprintGuidance;
-        if (string.IsNullOrEmpty(blueprintSliceGuidance) && structuralBlueprint != null
+        if (string.IsNullOrEmpty(blueprintSliceGuidance) && structuralBlueprint != null && !context.LeanContext
             && context.NodeId != Guid.Empty && totalBeats > 0)
         {
             await TraceStageAsync(nameof(StructuralBlueprintService), async () =>
@@ -653,7 +655,7 @@ public class ProseWriterRouter(
         // for this beat and augment the structural guidance with its declared purpose + pre-state.
         // Non-blocking: if the node has a blueprint but no decision row, log a warning only.
         var beatContractGuidance = "";
-        if (beatId != Guid.Empty && dbFactory != null)
+        if (beatId != Guid.Empty && dbFactory != null && !context.LeanContext)
         {
             await TraceStageAsync("BeatBlueprintDecision", async () =>
             {
@@ -691,7 +693,7 @@ public class ProseWriterRouter(
         // StoryScope audit loop-back: prior audit findings for this node become
         // generation constraints — the audit corrects future beats, not just reports.
         var storyScopeLoopbackGuidance = "";
-        if (context.NodeId != Guid.Empty && dbFactory != null)
+        if (context.NodeId != Guid.Empty && dbFactory != null && !context.LeanContext)
         {
             await TraceStageAsync("StoryScopeGuidance", async () =>
             {
@@ -717,7 +719,7 @@ public class ProseWriterRouter(
         if (string.IsNullOrEmpty(offscreenActivityContext) && narrativeChart != null
             && context.NodeId != Guid.Empty && totalBeats > 0)
         {
-            if (beatIndex > 2)
+            if (beatIndex > 2 && !context.LeanContext)
             {
                 await TraceStageAsync(nameof(NarrativeChartService), async () =>
                 {
@@ -767,6 +769,19 @@ public class ProseWriterRouter(
         };
 
         // ── C1: Entity pre-check (soft gate — warns, never blocks) ────────────────
+        // RFC 0012 §3.1 — the brief. Built from the beat itself (goal, the next beat's
+        // description as the stop line, canon names in the goal, POV) when the caller did not
+        // supply one and a real beat is being written. Preview writes (no beat id) keep the
+        // legacy single-line goal and are not gated.
+        if (enriched.Brief == null && beatId != Guid.Empty && briefBuilder != null && !string.IsNullOrWhiteSpace(context.BeatGoal))
+        {
+            await TraceStageAsync("BeatBrief", async () =>
+            {
+                var brief = await briefBuilder.BuildAsync(beatId, context.BeatGoal, context.Subtext, context.TargetWords, ct);
+                enriched = enriched with { Brief = brief };
+            });
+        }
+
         // Extract candidate proper nouns from BeatGoal and flag any that are not in
         // the canon WorldGraph. Unknown names get an ENTITY PRE-CHECK WARNINGS block
         // injected into the dynamic system prompt so the LLM keeps them ambiguous.
@@ -813,28 +828,18 @@ public class ProseWriterRouter(
         }
 
         var sw = System.Diagnostics.Stopwatch.StartNew();
-        string? result;
-        // The draft call is tagged as its own stage (so the generator's chat call and its
-        // style-anchor embedding are attributable) but NOT run through TraceStageAsync — that
-        // wrapper swallows exceptions, and a failed draft must propagate to the caller.
-        // (The ambient beat id is set by WriteAsync around the whole write since 2026-09-07.)
+        // DRAFT → GATE (RFC 0012 §3.3–3.4). The draft call is tagged as its own stage (so the
+        // generator's chat call and its style-anchor embedding are attributable) but NOT run
+        // through TraceStageAsync — that wrapper swallows exceptions, and a failed draft must
+        // propagate to the caller. With a brief: clean the draft, run the free checks, run the
+        // one verifier call, retry ONCE with the reasons as constraints, and REFUSE (throw) on a
+        // second failure so nothing failing is ever saved. Without a brief (preview/legacy):
+        // exactly the old behaviour, one call, no gate.
         var collector = stageCollector.Value;
         collector?.SetPhase("draft");
-        var draftOk = false;
-        using (LlmActionContext.BeginStage(DraftStageName))
-        {
-            try
-            {
-                result = await generator.GenerateBeatAsync(enriched, ct);
-                draftOk = true;
-            }
-            finally
-            {
-                sw.Stop();
-                collector?.Record(DraftStageName, (int)sw.ElapsedMilliseconds, draftOk);
-                collector?.SetPhase("post");
-            }
-        }
+        var result = await DraftAndGateAsync(enriched, beatId, context.NodeId, universeId, collector, ct);
+        sw.Stop();
+        collector?.SetPhase("post");
 
         // Telemetry: record exactly which docs + entities this beat pulled into working memory.
         // Beat Context Archive follow-up (2026-08-21): this block used to run only when
@@ -920,6 +925,15 @@ public class ProseWriterRouter(
         var capturedBeatGoal  = context.BeatGoal;
         var capturedCollector = stageCollector.Value;
         var capturedEntityRoster = entityStackContext.Length > 0 ? entityStackContext : null;
+
+        if (context.SkipPostWrite)
+        {
+            // Dry run (RFC 0012 §4 A/B): the draft is never saved, so no ledger, summary,
+            // thread, motif, mode or coverage table may learn from it. Persist the stage log so
+            // the trace still exists, then hand the text back.
+            await PersistStageLogAsync(capturedCollector, beatId, capturedNodeId, universeId);
+            return result ?? "";
+        }
 
         _ = Task.Run(async () =>
         {
@@ -1157,6 +1171,94 @@ public class ProseWriterRouter(
     /// <summary>Stage name the draft (generation) call is tagged with in
     /// <see cref="LlmActionContext.CurrentStage"/> and <see cref="Data.Entities.BeatWriteStageLog"/>.</summary>
     public const string DraftStageName = "Draft";
+    public const string RetryStageName = "Draft.Retry";
+    public const string GateStageName = "Gate";
+    public const string VerifierStageName = "Gate.Verifier";
+    public const string RefusedStageName = "Gate.Refused";
+
+    /// <summary>
+    /// One draft call, then the gate; at most one retry; refuse on the second failure.
+    /// Returns the cleaned, gate-passed text. Throws <see cref="BeatGateRefusedException"/>
+    /// (after persisting the stage log so the refusal is on the trace) when the second attempt
+    /// fails too. A verifier that cannot evaluate (empty/unparseable response, provider outage)
+    /// is recorded as <c>Gate.Verifier</c> failed-to-run and the draft is saved as "unverified" —
+    /// an infrastructure hiccup must not block the author's work, but it must not read as a pass.
+    /// </summary>
+    private async Task<string> DraftAndGateAsync(BeatContext enriched, Guid beatId, Guid nodeId, Guid universeId, StageCollector? collector, CancellationToken ct)
+    {
+        if (enriched.Brief == null)
+        {
+            // Legacy / preview path: one call, no gate, exceptions propagate.
+            var sw0 = System.Diagnostics.Stopwatch.StartNew();
+            var ok0 = false;
+            using (LlmActionContext.BeginStage(DraftStageName))
+            {
+                try { var r = await generator.GenerateBeatAsync(enriched, ct); ok0 = true; return r; }
+                finally { sw0.Stop(); collector?.Record(DraftStageName, (int)sw0.ElapsedMilliseconds, ok0); }
+            }
+        }
+
+        var constraints = new List<string>();
+        var known = briefBuilder?.KnownNames();
+        for (var attempt = 1; ; attempt++)
+        {
+            var stage = attempt == 1 ? DraftStageName : RetryStageName;
+            var attemptCtx = constraints.Count == 0 ? enriched : enriched with { Brief = enriched.Brief.WithConstraints(constraints) };
+
+            string raw;
+            var sw = System.Diagnostics.Stopwatch.StartNew();
+            var ok = false;
+            using (LlmActionContext.BeginStage(stage))
+            {
+                try { raw = await generator.GenerateBeatAsync(attemptCtx, ct); ok = true; }
+                finally { sw.Stop(); collector?.Record(stage, (int)sw.ElapsedMilliseconds, ok); }
+            }
+
+            var cleaned = DraftPostProcessor.Clean(raw);
+            foreach (var removed in cleaned.Removed)
+                log.LogInformation("[gate] beat {BeatId}: post-processor removed {What}", beatId, removed);
+
+            var det = DraftGate.Check(cleaned.Text, attemptCtx.Brief!, known);
+            var failures = new List<string>(det.Failures);
+            var verified = false;
+
+            if (det.Passed && briefVerifier != null)
+            {
+                var vsw = System.Diagnostics.Stopwatch.StartNew();
+                var vok = false;
+                using (LlmActionContext.BeginStage(VerifierStageName))
+                {
+                    try
+                    {
+                        var verdict = await briefVerifier.VerifyAsync(attemptCtx.Brief!, enriched.ContinuityContext, cleaned.Text, det.Warnings, ct);
+                        vok = true;
+                        verified = true;
+                        failures.AddRange(verdict.AsConstraints());
+                        log.LogInformation("[gate] beat {BeatId} attempt {Attempt}: verifier crosses_stop={Cross} added={Added} contradictions={Contra} — {Reasoning}",
+                            beatId, attempt, verdict.CrossesStop, verdict.AddedEvents.Count, verdict.Contradictions.Count, verdict.Reasoning);
+                    }
+                    catch (Exception ex) when (ex is not OperationCanceledException)
+                    {
+                        log.LogWarning(ex, "[gate] beat {BeatId}: verifier could not evaluate — saving as UNVERIFIED", beatId);
+                    }
+                    finally { vsw.Stop(); collector?.Record(VerifierStageName, (int)vsw.ElapsedMilliseconds, vok); }
+                }
+            }
+
+            var passed = failures.Count == 0;
+            collector?.Record(passed ? (verified ? GateStageName + ":pass" : GateStageName + ":unverified") : GateStageName + ":fail", 0, passed);
+            if (passed) return cleaned.Text;
+
+            log.LogWarning("[gate] beat {BeatId} attempt {Attempt} FAILED: {Reasons}", beatId, attempt, string.Join(" | ", failures));
+            if (attempt >= 2)
+            {
+                collector?.Record(RefusedStageName, 0, false);
+                await PersistStageLogAsync(collector, beatId, nodeId, universeId);
+                throw new BeatGateRefusedException(cleaned.Text, failures, attempt);
+            }
+            constraints.AddRange(failures);
+        }
+    }
 
     /// <summary>
     /// Per-write collector of traced stages — one <see cref="StageCollector"/> per
