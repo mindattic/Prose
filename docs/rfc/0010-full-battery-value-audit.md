@@ -120,6 +120,26 @@ learns its own number. Until then, treat the quote as noise.
 5. **Retire the SII from the report.** It is the only consumer most of these checks have, the
    author has already ruled scores meaningless, and it reads 0 on a book that just passed 5/5.
 
+## 6a. Status — executed 2026-09-06 (`ae9e5d223`)
+
+Author ruling on reading §1–§5: *"$135 to fuck up a book? nah; tear it out."*
+
+| Rec | State |
+|---|---|
+| 1 — stop routine `--full` | **done by deletion**: `--audit-book`, MCP `book_health`, `BookHealthService.RunAsync`, the tiers, and the 27 bundle-only check methods are gone (1,246 → 238 lines; 30 injected services → 4). The `/full-battery` skill is deleted. |
+| 2 — battery = what the gate reads | **done**: `PublishReadinessAsync` survives and was verified 5/5 on the slimmed Hub; logic-sweep, Story Ledger, tuned-read, reader-qa, lint each run under their own command. |
+| 3 — diet rule for the rest | **bundle-level done**; the standalone never-applied instruments (storyscope, swain classify, chekhov, five-act, dramatic-question, sacred-flaw, examine-emotion, commandment/book-audit, diagnose-book, check-fidelity, check-canon, theme-coherence, pov-audit, hook-audit) still exist under their own commands — the next cut. |
+| 4 — tier-keyed estimator | **moot for `--audit-book`** (gone); still applies to every other `ForwardWithCostGateAsync` command whose cost varies with flags. |
+| 5 — retire the SII | **done**: the formula and its records no longer exist. |
+
+Two principles the author added while this executed, recorded because they govern the next cuts:
+*"writing needs to be from a single source, not 20+ LLM calls doing whatever they want"* and
+*"everything that stays needs to support each other."* First measurement toward the former:
+`ProseWriterRouter` has **93 `await …Async(` sites per beat write**, at least **nine** of its
+enrichment services make their own LLM call per beat, and the coverage log
+(`--workflow-status`) instruments **five** of ~35 services — so the number of LLM calls one beat
+write makes is, today, unmeasurable. That measurement is step one of the next RFC.
+
 ## 7. What was not measured
 
 - Apply rate is a lower bound on value: a finding can inform a hand edit without ever being marked
