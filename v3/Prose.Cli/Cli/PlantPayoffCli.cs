@@ -102,63 +102,7 @@ public static class PlantPayoffCli
             return 0;
         }
 
-        // ── prose --plant-audit ───────────────────────────────────────────────────
-
-        if (!jsonMode) Console.WriteLine($"Auditing plant/payoff pairs for '{node.Title}'…\n");
-
-        var audit = await svc.AuditAsync(node.Id);
-
-        if (jsonMode)
-        {
-            Console.WriteLine(JsonSerializer.Serialize(new
-            {
-                node_slug          = audit.NodeSlug,
-                total_pairs          = audit.TotalPairs,
-                planted              = audit.Planted,
-                paid_off             = audit.PaidOff,
-                orphaned             = audit.Orphaned,
-                unplanted            = audit.Unplanted,
-                not_transparent      = audit.NotTransparentCount,
-                gateway_plant_ready  = audit.Orphaned == 0 && audit.Unplanted == 0 && audit.NotTransparentCount == 0,
-            }, new JsonSerializerOptions { WriteIndented = true }));
-            return audit.Orphaned > 0 || audit.Unplanted > 0 || audit.NotTransparentCount > 0 ? 1 : 0;
-        }
-
-        Console.WriteLine($"Total pairs:   {audit.TotalPairs}");
-        Console.WriteLine($"Seeded:        {audit.Planted}");
-        Console.WriteLine($"Paid off:      {audit.PaidOff}");
-        Console.WriteLine($"Orphaned:      {audit.Orphaned}");
-        Console.WriteLine($"Unplanted:     {audit.Unplanted}");
-        Console.WriteLine($"Not transparent: {audit.NotTransparentCount}");
-        Console.WriteLine();
-
-        if (audit.OrphanedPlants.Count > 0)
-        {
-            Console.WriteLine("ORPHANED (seeded, no payoff written):");
-            foreach (var p in audit.OrphanedPlants)
-                Console.WriteLine($"  [{p.Category.ToUpper()}] {p.PlantDescription} → {p.PayoffDescription}");
-            Console.WriteLine();
-        }
-
-        if (audit.UnplantedPayoffs.Count > 0)
-        {
-            Console.WriteLine("UNPLANTED (payoff written, no plant beat on record — every payoff must have been planted):");
-            foreach (var p in audit.UnplantedPayoffs)
-                Console.WriteLine($"  [{p.Category.ToUpper()}] {p.PlantDescription} → {p.PayoffDescription}");
-            Console.WriteLine();
-        }
-
-        if (audit.NotTransparentPayoffs.Count > 0)
-        {
-            Console.WriteLine("TRANSPARENCY ISSUES (payoff opaque without plant — fix before gateway publish):");
-            foreach (var p in audit.NotTransparentPayoffs)
-                Console.WriteLine($"  [{p.Category.ToUpper()}] {p.PlantDescription} → {p.PayoffDescription}");
-            Console.WriteLine();
-        }
-
-        if (audit.Orphaned == 0 && audit.Unplanted == 0 && audit.NotTransparentCount == 0)
-            Console.WriteLine("✅ All plants accounted for and transparent.");
-
-        return audit.Orphaned > 0 || audit.Unplanted > 0 || audit.NotTransparentCount > 0 ? 1 : 0;
+        Console.Error.WriteLine("Usage: prose --list-plants --slug <slug> | --add-plant ... (the --plant-audit mode was removed 2026-09-06, RFC 0010)");
+        return 2;
     }
 }

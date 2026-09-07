@@ -885,7 +885,6 @@ public static class ServiceCollectionExtensions
         // Reader-Proxy QA Instrument 2: hash-gated binary craft/delight checklist —
         // CRAFT §8 DON'Ts per beat + "≥1 applicable DELIGHT move" per beat + book-level
         // move-monotony counters (DELIGHT §14). One cheap call per CHANGED beat only.
-        services.AddSingleton<BeatChecklistGateService>();
 
         // Book Health — the single "does this book work" battery + Structural Integrity
         // Index (SII), consolidating the ~30 previously-scattered quality/scoring systems
@@ -969,7 +968,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<NodeMarkdownExporter>();
         services.AddSingleton<ReviewReportExporter>();
         services.AddSingleton<SynopsisExportService>();
-        services.AddSingleton<AltitudeAuditService>();
         services.AddSingleton<ExportCleanupService>();
         services.AddSingleton<DocxExportService>();
         services.AddSingleton<ManuscriptExportService>();
@@ -1046,7 +1044,6 @@ public static class ServiceCollectionExtensions
         // character-aware rubric. Advisory cap on blocking dimensions at Deep gate.
         // Available via `prose --examine-emotion` and the `examine_emotional_depth` MCP tool.
         services.AddSingleton<EmotionalLedgerService>();
-        services.AddSingleton<EmotionalDepthService>();
 
         // Narrative-science analysis (Will Storr frameworks): sacred flaw, dramatic
         // question, scene-engagement audit, five-act map, antihero empathy.
@@ -1085,7 +1082,6 @@ public static class ServiceCollectionExtensions
         // StoryScope audit — verifies the structural anti-tells held after writing
         // (deterministic checks + LLM-graded checks; findings loop back into future
         // beat prompts via the STORYSCOPE Findings prefix).
-        services.AddSingleton<StoryScopeAuditService>();
 
         // Beat duels — blind A/B panel gate for beat rewrites (3 voters, escalate
         // to 7 on dissent). SS-A44: duels are votes; allowVotes must be passed
@@ -1203,8 +1199,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatStoryPositionService>();
         services.AddSingleton<RepetitionLintService>();
         services.AddSingleton<MotifLedgerService>();
-        services.AddSingleton<PovVoiceAuditService>();
-        services.AddSingleton<ChapterHookService>();
         services.AddSingleton<PremiseToOutlineService>();
         services.AddSingleton<OutlineAdherenceService>();
         services.AddSingleton<NarrativeForkService>();

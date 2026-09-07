@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**285 tools** across **50 tool families.**
+**276 tools** across **48 tool families.**
 
 ## Families
 
@@ -22,7 +22,6 @@
 | [Beat Event List](#beat-event-list) | 3 |
 | [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
-| [Book Audit](#book-audit) | 2 |
 | [Book Health](#book-health) | 1 |
 | [Book Logic](#book-logic) | 3 |
 | [Canon](#canon) | 9 |
@@ -33,7 +32,7 @@
 | [Context](#context) | 5 |
 | [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 5 |
-| [Craft Instrument](#craft-instrument) | 6 |
+| [Craft Instrument](#craft-instrument) | 4 |
 | [Data Integrity](#data-integrity) | 4 |
 | [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
@@ -50,14 +49,13 @@
 | [Noun Consistency](#noun-consistency) | 3 |
 | [One Shot Generation](#one-shot-generation) | 1 |
 | [Planning](#planning) | 3 |
-| [Plant Payoff](#plant-payoff) | 6 |
+| [Plant Payoff](#plant-payoff) | 5 |
 | [Quality](#quality) | 8 |
-| [Reader Qa](#reader-qa) | 4 |
+| [Reader Qa](#reader-qa) | 3 |
 | [Repository](#repository) | 3 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
 | [Story](#story) | 4 |
-| [Story Scope](#story-scope) | 3 |
 | [Survey](#survey) | 7 |
 | [Universe](#universe) | 5 |
 | [Universe Interchange](#universe-interchange) | 4 |
@@ -155,24 +153,6 @@ Load the Story Bible — structural rules for narrative shape: act structure, be
 Load the Tone Bible — voice, register, sensory palette, what to do and what not to do for prose. Inject this into the system prompt when drafting prose.
 
 - _(no parameters)_
-
-## Book Audit
-
-<sub>`BookAuditTools`</sub>
-
-### `audit_book_commandments`
-
-Audit a node against all 7 commandments — gateway (for first/standalone books) or sequel (for books with a PreviousNodeId set). Auto-detected: null PreviousNodeId → gateway commandments; set → sequel commandments. Each commandment check returns status (pass/warn/fail), specific evidence from the prose, and a concrete one-sentence fix when not passing. Returns gateway_ready (no failing checks), blocking_count (failures), advisory_count (warnings), plus plant_count and orphaned_plants from the PlantPayoff registry (relevant for the 'reward re-reading' commandment). Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-
-### `set_previous_book`
-
-Link a node to its predecessor, switching it from gateway mode to sequel mode. When previous_node_id_or_slug is provided, Node.PreviousNodeId is set — the book will use sequel commandments in audits and beat-writing context. To clear (revert to gateway mode), pass clear=true. Accepts both node arguments as id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — The node to update — id (GUID) or slug.
-- `previousNodeIdOrSlug` (string, optional) — The preceding node — id (GUID) or slug. Omit or pass null to clear.
-- `clear` (bool, optional) — Set true to clear PreviousNodeId (revert to gateway mode).
 
 ## Book Health
 
@@ -629,13 +609,6 @@ Backfill the per-beat scene location (Beat.PlaceName + resolved Beat.PlaceEntity
 - `limit` (int, optional) — Optional cap on how many beats to process this call.
 - `dryRun` (bool, optional) — Preview without writing.
 
-### `hook_audit`
-
-Chapter-hook strength analysis (ChapterHookService): classifies every chapter's final passage (question/danger/decision/revelation/arrival/emotional/none, strength 0-3) in one batched Haiku call. Weak non-final endings file "HOOK " CraftChecklist findings.
-
-- `slug` (string, required) — Node slug or code.
-- `dryRun` (bool, optional) — Preview findings without writing them.
-
 ### `lint_prose`
 
 Deterministic prose linter (RepetitionLintService) — echo words, crutch phrases, pet words, unattributed dialogue runs, airless-narration runs, floating-heads beats. Zero LLM cost. Findings land in the Findings table (CraftChecklist, "LINT " prefix) and loop back into future generation. Run compute_metrics first so dialogue-proportion checks have data.
@@ -648,13 +621,6 @@ Deterministic prose linter (RepetitionLintService) — echo words, crutch phrase
 Runs the LocationContradictionService corpus scan — "a character can only be in one place at a time" — over located_at Edges and dated legacy chapter-beats. Corpus-wide by design, not scoped to one book. Conflicts are filed to the Findings inbox (Contradiction category). The scan reports its own data-coverage status honestly (empty result is common until in-world dates/locations are populated).
 
 - `minTravelMinutes` (int, optional) — Minimum minutes between two locations to NOT count as a contradiction (dramatic-license knob).
-
-### `pov_audit`
-
-POV discipline + voice distinctiveness audit (PovVoiceAuditService): head-hopping out of the recorded POV narrator, and same-scene characters speaking in interchangeable registers. Batched Haiku per chapter; findings ("POV " / "VOICE ", CraftChecklist) loop back into future generation. Explicit invocation only — an LLM-cost decision.
-
-- `slug` (string, required) — Node slug or code.
-- `dryRun` (bool, optional) — Preview findings without writing them.
 
 ## Data Integrity
 
@@ -1698,12 +1664,6 @@ Predict a character's likely behavior in a given scene. Pulls from the character
 
 <sub>`PlantPayoffTools`</sub>
 
-### `audit_plant_payoffs`
-
-Audit all plant/payoff pairs for a node. Returns: total_pairs, planted (seeded in a beat), paid_off (payoff also written), orphaned (planted but no payoff), not_transparent (payoff exists but is_transparent=false), a gateway_plant_ready boolean (all planted pairs have transparent payoffs), and detail lists for each problem category. Fix orphaned plants and transparency issues before the node passes gateway audit. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-
 ### `get_plant_payoffs`
 
 List all registered plant/payoff pairs for a node. A plant is a narrative detail seeded early (a behavioral tell, an object, a gloss) that resonates or resolves later — rewarding re-readers without requiring first-timers to catch it. Returns all pairs with their status (planned = not yet written, seeded = plant beat written but no payoff yet, paid-off = both beats written), is_transparent flag (must be true for the payoff to work for cold readers), and transparency_note (what the re-reader gains). Accepts node id (GUID) or slug.
@@ -1815,13 +1775,6 @@ Scan arbitrary prose against every world rule (no city police, no Behemoth-as-al
 ## Reader Qa
 
 <sub>`ReaderQaTools`</sub>
-
-### `beat_checklist_audit`
-
-Reader-Proxy QA binary craft/delight checklist per beat, hash-gated on Beat.TextHash + rule-set version — unchanged beats never re-bill; editing CRAFT.md §8 or a DELIGHT move re-evaluates the book. DON'Ts = CRAFT §8 banned mannerisms (literal binaries); DO = '≥1 applicable DELIGHT move lands' (short connective beats exempt); book level = move-monotony counters (DELIGHT §14 — a palette, not a stamp; never 'all 13 per beat'). Findings persist as CraftChecklist and auto-supersede per run. Emits NO scores. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
-- `force` (bool, optional) — Re-evaluate every beat even if unchanged (default false).
 
 ### `reader_qa_comprehension`
 
@@ -1952,29 +1905,6 @@ LEGACY. Load a book by id from the old pre-Nodes Records/Entities book shelf onl
 LEGACY. List books in the old pre-Nodes Records/Entities book shelf only (create_legacy_book/create_legacy_chapter write here). Does NOT include current Nodes-table books — use list_books for those. Returns id, title, premise, chapter count, status, protagonists.
 
 - _(no parameters)_
-
-## Story Scope
-
-<sub>`StoryScopeTools`</sub>
-
-### `generate_structural_blueprint`
-
-Generate the StructuralBlueprint for a book node — pre-prose structural anti-tell commitments (StoryScope countermeasures): thematically-parallel subplot with carrier beats, temporal scheme (linear/frame/nonlinear), resolution mode (external/unresolved/mixed — never internal-understanding), moral polarity (ambivalent default), per-beat 1-10 escalation curve (kills flat escalation, Claude's #1 fingerprint), per-beat event-type + revelation-mode palette (kills event monoculture), optional form device, ending style (avalanche default, no epilogue), and 3-5 intertextual anchors pulled from the entity DB. The blueprint is injected per-beat into prose generation and verified afterward by the storyscope audit. Requires Node.NodeOutline unless retrofit=true (infers from written prose). The docs/nodes/{CODE}.md mirror (Structural Blueprint section) and the MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-- `retrofit` (bool, optional) — Set true to infer the blueprint from already-written prose (for stories that predate the blueprint system).
-
-### `get_structural_blueprint`
-
-Read a book node's StructuralBlueprint (pre-prose anti-tell commitments) if one exists. Returns the full blueprint including per-beat tags, or exists=false. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-
-### `storyscope_audit`
-
-Audit a book against the measurable structural tells of AI fiction (StoryScope countermeasures verification). Deterministic checks: blueprint-vs-execution drift (subplot planned but unwritten = BLOCKER), beat-mode run-length, emotional-depth plateaus, social-network breadth, deviation surfacing. LLM-graded checks: per-beat stakes reading (flat escalation — Claude's #1 fingerprint), event-type diversity, information-dynamics flatline, narrator moral gloss, embodied-vs-labeled emotion ratio, character-introduction method, dialogue-as-philosophy, resolution mode as written, intertextual anchor presence, TTCW originality (form + takeaway), plot-function characters, subtext, single-track causality, LAMP line mechanics, consensus-cliché scan. Severity: BLOCKER/MODERATE/MINOR per logic-sweep SOP, plus DEVIATION (legal escape hatch, surfaced for human judgment) and PASS. Findings write to the Findings table with the STORYSCOPE prefix and automatically constrain future beat writes. Accepts node id (GUID) or slug. Requires written prose; run generate_structural_blueprint first for full coverage.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Survey
 

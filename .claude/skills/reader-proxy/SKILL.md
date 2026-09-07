@@ -16,7 +16,7 @@ This is the reader-facing half of QA; the Logic Sweep (`/logic-sweep`) is the co
 2. **Comprehension + checklist (cheap, hash-cached — run both every time):**
    ```
    prose --reader-qa --slug <slug> --universe <u>
-   prose --craft-checklist --slug <slug> --universe <u>
+   # (--craft-checklist was deleted 2026-09-06 (RFC 0010); CraftChecklist findings now come from --lint-prose only)
    ```
    Unchanged chapters/beats are cache hits and cost nothing. Exit 1 = findings filed.
 3. **Gripe jury (optional, ~$0.50 per full read of a big book — run when the user asks

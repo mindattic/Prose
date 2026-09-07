@@ -116,7 +116,7 @@ Audit every story against all six. Findings cite SortKeys and quote the offendin
    `ReconciliationDecision` row rather than a silent auto-win. This dimension is
    checked ACROSS ALTITUDES (see [§8](#SS-LOGIC-8)): chapter synopses
    (`NodeChapterSummaries` / `story-synopsis.txt`) are the 100-ft instrument, and
-   `prose --altitude-audit --slug <slug>` automates the 10,000↔100 ft comparison. Sweeps may
+   The sweep's `outline_agreement` dimension owns the 10,000↔100 ft comparison (the separate `--altitude-audit` was deleted 2026-09-06 (RFC 0010) — 100 % false-positive against a lossy synopsis). Sweeps may
    read `story-synopsis.txt` for cheap chapter-altitude scoping before deep beat reads.
 
 ## 4. Triage and fix protocol {#SS-LOGIC-4}
@@ -196,7 +196,7 @@ describing a superseded draft (10,000↔10), two chapters telling incompatible e
 authoritative — the divergence is judged case-by-case on evidence (which side is stale, and
 why), never by a blanket rule.
 
-**Instruments per comparison:** 10,000↔100 ft = `prose --altitude-audit` (designed vs told;
+**Instruments per comparison:** 10,000↔100 ft = the sweep's `outline_agreement` dimension (designed vs told; the former `--altitude-audit` was deleted 2026-09-06 (RFC 0010);
 findings filed as `OutlineDrift`); 100↔10 ft and 10↔10 ft = the logic sweep itself
 (dimensions 1–5). Planning and review START at chapter altitude — read
 `story-synopsis.txt` first, drop to beat altitude only where a finding points. The same

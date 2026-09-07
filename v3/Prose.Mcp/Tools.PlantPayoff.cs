@@ -170,44 +170,6 @@ public class PlantPayoffTools(
 
     // ── audit_plant_payoffs ───────────────────────────────────────────────────
 
-    /// <summary>Audit all plant/payoff pairs for a node. Returns orphaned plants (seeded but no payoff written), transparency violations (payoff written but is_transparent=false), total coverage, and a gateway-ready verdict. A node is plant-ready when: all plants have payoffs, and all payoffs are transparent.</summary>
-    [McpServerTool, Description("Audit all plant/payoff pairs for a node. Returns: total_pairs, planted (seeded in a beat), paid_off (payoff also written), orphaned (planted but no payoff), not_transparent (payoff exists but is_transparent=false), a gateway_plant_ready boolean (all planted pairs have transparent payoffs), and detail lists for each problem category. Fix orphaned plants and transparency issues before the node passes gateway audit. Accepts node id (GUID) or slug.")]
-    public Task<string> audit_plant_payoffs(
-        [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
-        hub.InvokeAsync(nameof(PlantPayoffTools), nameof(audit_plant_payoffsImpl), new { nodeIdOrSlug });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> audit_plant_payoffsImpl(string nodeIdOrSlug)
-    {
-        var nodeId = await ResolveNodeAsync(nodeIdOrSlug);
-        if (nodeId == null)
-            return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
-
-        try
-        {
-            var audit = await plantPayoffs.AuditAsync(nodeId.Value);
-            return JsonSerializer.Serialize(new
-            {
-                node_slug          = audit.NodeSlug,
-                node_title         = audit.NodeTitle,
-                total_pairs          = audit.TotalPairs,
-                planted              = audit.Planted,
-                paid_off             = audit.PaidOff,
-                orphaned             = audit.Orphaned,
-                not_transparent      = audit.NotTransparentCount,
-                gateway_plant_ready  = audit.Orphaned == 0 && audit.NotTransparentCount == 0,
-                orphaned_plants      = audit.OrphanedPlants.Select(p => new { p.Id, p.PlantDescription, p.PayoffDescription }),
-                transparency_issues  = audit.NotTransparentPayoffs.Select(p => new { p.Id, p.PlantDescription, p.PayoffDescription, p.TransparencyNote }),
-            }, JsonOpts);
-        }
-        catch (Exception ex)
-        {
-            return JsonSerializer.Serialize(new { error = ex.Message }, JsonOpts);
-        }
-    }
-
-    // ── Helper ────────────────────────────────────────────────────────────────
-
     /// <summary>
     /// 2026-08-24 consolidation — see the note on <c>BookAuditTools.ResolveNodeAsync</c>. This
     /// copy had no <c>IgnoreQueryFilters()</c> on either branch, so the plant/payoff tools

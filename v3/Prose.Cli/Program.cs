@@ -1350,14 +1350,6 @@ if (args.Contains("--seed-keywords"))
     return;
 }
 
-// CLI mode: three-altitudes agreement audit (designed story vs told story).
-//   prose --altitude-audit (--slug <slug> | --all) [--force-synopsis]
-if (args.Contains("--altitude-audit"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("AltitudeAuditCli", args);
-    return;
-}
-
 // CLI mode: chapter-by-chapter synopsis export (also runs inside --export-node).
 //   prose --export-synopsis (--slug <slug> | --all) [--force]
 if (args.Contains("--export-synopsis"))
@@ -2053,17 +2045,6 @@ if (args.Contains("--reader-qa"))
     return;
 }
 
-// prose --craft-checklist --slug <slug> [--force] [--json]
-// Reader-Proxy QA Instrument 2: binary craft/delight checklist per beat, hash-gated on
-// Beat.TextHash + rule-set version (unchanged beats never re-bill). CRAFT §8 DON'Ts +
-// "≥1 applicable DELIGHT move" + book-level move-monotony counters (DELIGHT §14).
-// Findings persist as CraftChecklist. No scores. Exit 0 = clean, 1 = findings, 2 = error.
-if (args.Contains("--craft-checklist"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatChecklistCli", args);
-    return;
-}
-
 // prose --unresolved-nouns (--slug <s> | --all) [--min N] [--limit N] [--json]
 // Report-only: capitalized phrases in a book's LIVE BEAT PROSE that resolve to no Entity row.
 // Deterministic, no LLM, writes nothing. The residue detector already existed but ran against
@@ -2091,16 +2072,6 @@ if (args.Contains("--check-duplicate-beats"))
 if (args.Contains("--check-temporal-hygiene"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("TemporalHygieneCli", args);
-    return;
-}
-
-// prose --examine-emotion --slug <nodeSlug> [--effort draft|standard|deep] [--json]
-// Emotional Intelligence Examination (SS-A15): 8-dimension 0–4 rubric, per-beat curve,
-// character ledger (Want/Need/Wound/Flaw), register-adaptive anchors.
-// Exit 0 = none blocking, 1 = advisory issues, 2 = blocking dimensions open.
-if (args.Contains("--examine-emotion"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ExamineEmotionCli", "--examine-emotion", args);
     return;
 }
 
@@ -2494,18 +2465,6 @@ if (args.Contains("--estimate-cost"))
     return;
 }
 
-// prose --commandment-audit --slug <nodeSlug> [--json]
-// Renamed from --book-audit (2026-08-30) — collided by verb/noun order with the unrelated
-// the former --audit-book (the full QA battery, torn out 2026-09-06 — RFC 0010); a typo silently ran the wrong tool.
-// Audits a node against 7 commandments — gateway (PreviousNodeId=null) or
-// sequel (PreviousNodeId set). Pass/warn/fail per commandment with fix hints.
-// Exit 0 = all pass, 1 = advisory warnings, 2 = blocking failures.
-if (args.Contains("--commandment-audit"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("BookAuditCli", args);
-    return;
-}
-
 // prose --generate-blueprint --slug <nodeSlug> [--retrofit] [--json]
 // Generates the StructuralBlueprint — pre-prose anti-tell commitments (subplot,
 // temporal scheme, resolution mode, escalation curve, event palette, ending,
@@ -2523,18 +2482,6 @@ if (args.Contains("--generate-blueprint"))
 if (args.Contains("--set-structural-blueprint"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SetStructuralBlueprintCli", args);
-    return;
-}
-
-// prose --storyscope-audit --slug <nodeSlug> [--json]
-// Verifies the book against measurable AI-fiction structural tells (StoryScope):
-// flat escalation, event monoculture, moral gloss, emotion ratio, char-intro
-// method, resolution mode, subplot execution, consensus clichés, TTCW originality.
-// Findings triaged BLOCKER/MODERATE/MINOR; loop back into future beat prompts.
-// Exit 0 = clean, 1 = moderate/minor, 2 = any blocker.
-if (args.Contains("--storyscope-audit"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("StoryScopeAuditCli", "--storyscope-audit", args);
     return;
 }
 
@@ -2694,7 +2641,7 @@ if (args.Contains("--backfill-missing-subtype-rows"))
 // prose --plant-audit   --slug <node> [--json]   audit plant/payoff pairs
 // prose --list-plants   --slug <node> [--json]   list all pairs
 // prose --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]
-if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Contains("--add-plant"))
+if (args.Contains("--list-plants") || args.Contains("--add-plant"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("PlantPayoffCli", args);
     return;
@@ -2868,22 +2815,6 @@ if (args.Contains("--location-scan"))
 if (args.Contains("--lint-prose"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("LintProseCli", args);
-    return;
-}
-
-// prose --pov-audit --slug <slug> [--dry-run]
-// Head-hopping + same-scene voice-sameness audit (batched Haiku; findings loop back).
-if (args.Contains("--pov-audit"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("PovVoiceAuditCli", args);
-    return;
-}
-
-// prose --hook-audit --slug <slug> [--dry-run]
-// Chapter-ending hook strength analysis; weak non-final endings file findings.
-if (args.Contains("--hook-audit"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("HookAuditCli", args);
     return;
 }
 

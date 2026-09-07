@@ -147,9 +147,9 @@ rule): no altitude is automatically authoritative.** Outline ⇄ Book ⇄ Entiti
 symbiosis — each corner is verified by the other two, and a divergence is resolved case-by-case
 on evidence (which side is actually stale, and why), never by a blanket rule. Trinity
 reconciliation is the canonical arbiter: every ruling is recorded as a revertible
-`ReconciliationDecision` row, not a silent auto-win. `prose --altitude-audit --slug <slug>`
-compares 10,000↔100 ft (findings filed as OutlineDrift, evidence-based recommendations); the
-logic sweep's `outline_agreement` dimension owns 100↔10 ft the same way. **Planning and review
+`ReconciliationDecision` row, not a silent auto-win. The logic sweep's `outline_agreement`
+dimension owns the altitude comparison (the separate `--altitude-audit` was deleted 2026-09-06 —
+RFC 0010 — after being found 100 % false-positive against a lossy synopsis). **Planning and review
 start at chapter altitude** — read `story-synopsis.txt` before deep beat reads; drop to beat
 altitude only where a finding points.
 
@@ -492,9 +492,9 @@ see if that fixes it" — author's words, binding).
    - **Relationship utilization** — every edge linked in Stage 2 is actually used somewhere in the
      synopsis. A linked-but-unused relationship is a planning defect: either the relationship or
      the plot beat that should exercise it is missing.
-   Use `prose --altitude-audit --slug <slug>` (existing 10,000↔100 ft drift check) as a starting
-   instrument, then read the synopsis directly — findings triage BLOCKER/MODERATE/MINOR exactly
-   like a logic sweep. **A book that fails this gate goes back to Stage 3/4 for an outline/spine
+   Read the synopsis directly — there is no shortcut instrument for this gate (the former
+   `--altitude-audit` was deleted 2026-09-06, RFC 0010; it read a lossy synopsis and was 100 %
+   false-positive on it). Findings triage BLOCKER/MODERATE/MINOR exactly like a logic sweep. **A book that fails this gate goes back to Stage 3/4 for an outline/spine
    rewrite. It does not proceed to Stage 6 "to see if it works out in the writing."**
 6. **Structural blueprint (StoryScope countermeasures)** — only once Stage 5 is clean at BLOCKER,
    run `prose --generate-blueprint --slug <slug>` (MCP `generate_structural_blueprint`). This
@@ -586,11 +586,9 @@ instead (see its `RELATIONSHIPS:` block, wired 2026-08-21 — previously the gra
 loaded `Edges` rows only to decide roster membership and discarded `RelationType`/`Description`
 before they ever reached the prompt).
 
-`EmotionalDepthService` (8-dim Want/Need/Wound rubric) is **not** called by ProseWriterRouter directly —
-it only runs via `--examine-emotion`, `BookHealthService` DEEP tier, or the hash-gated daily
-`SanityScanBackgroundService` sweep (draft tier, added 2026-08-21 — skips a book whose beat text is
-unchanged since its last examination), and its `EMOTIONAL-DEPTH`-prefixed findings become live
-guidance one beat later through the generic findings-loop-back mechanism.
+`EmotionalDepthService` (the 8-dim Want/Need/Wound rubric), its `--examine-emotion` CLI and its daily
+background sweep were **deleted 2026-09-06 (RFC 0010)** — zero applied findings, ever. The router's
+`EMOTIONAL-DEPTH` loopback still reads any finding already filed; nothing files new ones.
 
 **One other generation entry point exists and does NOT share this enrichment chain.** `StoryDirectorService`
 and `Write.razor` (the two entry points originally flagged here 2026-08-09) were both deleted
@@ -617,11 +615,8 @@ there is no live generation entry point outside `ProseWriterRouter` any more.
   (>90% false-positive on the first full BCODA read — they must not feed generation guidance).
   The findings themselves are in the Findings table (`prose --findings list --node <slug>`), not
   in the CLI's 60-line report tail.
-- `prose --pov-audit --slug <slug>` — PovVoiceAuditService: head-hopping out of the recorded
-  POV + same-scene voice sameness (batched Haiku; `POV `/`VOICE ` findings).
-- `prose --hook-audit --slug <slug>` — ChapterHookService: chapter-ending hook type + strength
-  0-3; weak non-final endings file `HOOK ` findings. Also fires automatically at chapter close
-  (`ChapterCloseProcessorService` step 3.5, one Haiku call, not vote-gated).
+- `--pov-audit` and `--hook-audit` (and the chapter-close hook check that ran automatically) were
+  **deleted 2026-09-06 (RFC 0010)** — zero applied findings, ever.
 - Motif ledger: `BookMotifs` table + `MotifLedgerService`; extraction via the MOTIFS slice of
   the consolidated call; recurring motifs (2+ beats) inject as "MOTIFS IN PLAY" guidance,
   automatic, no manual authoring. **Corrected 2026-09-01** (this row previously called the KV
@@ -637,8 +632,9 @@ there is no live generation entry point outside `ProseWriterRouter` any more.
   exists as a live Node) — not yet fixed.
 - Two EF migrations pending Hub redeploy: `AddBeatPlace`, `AddBookMotifs` (both plain nullable
   ADD COLUMN / new table; apply at next Hub restart).
-- Subplot-thread health was NOT added as a new instrument: `prose --storyscope-audit` already
-  covers it (`subplot_not_executed` carrier-beat check + the single-track/interleave check).
+- `--storyscope-audit` (and with it the subplot-thread checks) was **deleted 2026-09-06 (RFC 0010)**.
+  The structural *blueprint* (`--generate-blueprint`, `StructuralBlueprintService`) is untouched —
+  it shapes writing; the audit only graded it.
 
 ### Story Ledger instruments (2026-09-02→04) — full methodology in [docs/LEDGER.md](docs/LEDGER.md)
 
@@ -720,14 +716,14 @@ MCP: `workflow_status`, `workflow_status_global`, `workflow_beat_modes`
 ### Beat writing workflow
 1. Assemble `BeatContext` (XRayContext via SceneContextAssembler, NodeId always set)
 2. Call `ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)` — NOT BeatGeneratorService directly
-3. After writing, run `prose --examine-emotion --slug <slug>` to score emotional dimensions
-4. After book complete, run `prose --commandment-audit --slug <slug>` (renamed from --book-audit
-   2026-08-30 — it collided with the unrelated, since-deleted `--audit-book` full battery) to audit
-   gateway/sequel commandments
-5. After book complete, run `prose --plant-audit --slug <slug>` to check for orphaned plants
-6. After book complete, run `prose --storyscope-audit --slug <slug>` to verify the structural
-   anti-tells held (escalation monotonic, event types varied, no moral gloss, no epilogue,
-   subplot executed). BLOCKER findings fix per logic-sweep minimal-splice rules, then re-audit.
+3. After writing: nothing runs automatically against the prose. (Steps 3–6 of this list used to be
+   `--examine-emotion`, `--commandment-audit`, `--plant-audit`, `--storyscope-audit` — all deleted
+   2026-09-06 under RFC 0010, zero applied findings between them.)
+4. After book complete, run what the publish gate reads and nothing else:
+   `prose --logic-sweep --slug <slug> --until-dry` (re-run until it reports converged — it runs ONE
+   round per invocation by design), `prose --tuned-read --slug <slug>`, then
+   `prose --publish-readiness --slug <slug>`. The plant/payoff ledger is dimension 4 of the logic
+   sweep; it needs no separate audit.
 
 ## Prose Is Ground Truth — five HARD rules for anyone auditing a book (author ruling 2026-09-05)
 
@@ -790,8 +786,9 @@ persona panel — canonical methodology: [docs/READER-QA.md](docs/READER-QA.md).
 instruments (corrected 2026-08-30 — this said "four" and omitted instrument 5, which
 docs/READER-QA.md itself has documented since it shipped the same day), all findings-based,
 NO scores: (1) Haiku comprehension probes diffed against the Sonnet synopsis,
-Sonnet-arbitrated → `ComprehensionDefect` findings; (2) hash-gated binary craft/delight
-checklist (`prose --craft-checklist`) → `CraftChecklist` findings; (3) cross-family pairwise
+Sonnet-arbitrated → `ComprehensionDefect` findings; (2) **deleted 2026-09-06 (RFC 0010)** — the LLM binary craft/delight checklist
+(`--craft-checklist`); `CraftChecklist` findings now come only from the deterministic linter
+(`--lint-prose`) and the two native rules kept in `CraftNativeRules`; (3) cross-family pairwise
 duels for every splice (`prose --duel`, SS-A44-gated); (4) findings-only gripe jury
 (`prose --reader-qa --gripe-pass`) → `ReaderGripe` findings; (5) **Full-Order Read**
 (`prose --reader-qa --full-order-read`) — 3-5 cross-family readers narrate ONE continuous

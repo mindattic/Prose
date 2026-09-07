@@ -771,7 +771,7 @@ updated: 2026-08-08
 > several hundred dollars for the full corpus) and should not be run without that scope decision
 > and explicit cost sign-off first.
 
-- **SS-US-M1 ✅** As an author, `prose --examine-emotion --slug <slug> --effort deep` runs 8 dimension
+- **SS-US-M1 ✅ → RETIRED** (`--examine-emotion` deleted 2026-09-06 (RFC 0010) — zero applied findings, ever) As an author, `prose --examine-emotion --slug <slug> --effort deep` ran 8 dimension
   checks + a per-beat emotional curve + character ledger extraction, returning a 0–100
   `EmotionalDepthScore`, per-dimension 0–4 scores with strongest/weakest evidence and a beat-scoped
   craft fix, and a beat-by-beat depth curve. *(acceptance: `ExamineEmotionCli` dispatched from
@@ -780,7 +780,7 @@ updated: 2026-08-08
   on LLSS (6 beats, SCRY universe): 9 LLM calls completed, full JSON envelope with per-dimension
   scores/evidence/fixes and a 6-entry beat curve returned, cost $0.27 actual.)*
 
-- **SS-US-M2 ⬜** As an author, the `examine_emotional_depth` MCP tool returns the same examination
+- **SS-US-M2 ✗ RETIRED** (tool deleted 2026-09-06 (RFC 0010)) As an author, the `examine_emotional_depth` MCP tool would have returned the same examination
   envelope as the CLI. *(acceptance: `[McpServerTool]` in `Tools.Quality.cs`; GUID-or-slug
   resolution; same JSON envelope. **Checked 2026-08-08: no such tool exists in `Tools.Quality.cs`
   — CLI-only, MCP surface genuinely not built.**)*
@@ -853,7 +853,7 @@ updated: 2026-08-08
   reader-panel score as the default reader-facing QA — canonical doc `docs/READER-QA.md`, runbook
   `/reader-qa`. Four findings-based instruments, no scores: (1) Haiku comprehension probes
   diffed against a Sonnet-generated synopsis, Sonnet-arbitrated → `ComprehensionDefect` findings;
-  (2) hash-gated binary craft/delight checklist (`prose --craft-checklist`) → `CraftChecklist`
+  (2) the LLM craft/delight checklist (`prose --craft-checklist`) — **deleted 2026-09-06 (RFC 0010)**; `CraftChecklist` findings now come only from `--lint-prose` and `CraftNativeRules` →
   findings; (3) cross-family pairwise duels per splice (`prose --duel`, still SS-A44
   vote-gated); (4) findings-only gripe jury (`prose --reader-qa --gripe-pass`) → `ReaderGripe`
   findings. *(evidence: verified by CLI runs; commits `3bb9d2f19`/`7ef9078cd`/`484614b23`/

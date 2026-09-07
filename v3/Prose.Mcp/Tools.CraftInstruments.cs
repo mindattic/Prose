@@ -18,8 +18,6 @@ namespace Prose.Mcp;
 [McpServerToolType]
 public class CraftInstrumentTools(
     RepetitionLintService repetitionLint,
-    PovVoiceAuditService povVoiceAudit,
-    ChapterHookService chapterHook,
     BeatPlaceService beatPlace,
     LocationContradictionService locationContradiction,
     BeatProseMetricsService beatProseMetrics,
@@ -51,60 +49,6 @@ public class CraftInstrumentTools(
                 pet_word_findings = r.PetWordFindings, dialogue_findings = r.DialogueFindings,
                 structure_findings = r.StructureFindings,
                 lines = r.Lines,
-            }, JsonOpts);
-        }
-        catch (Exception ex) { return JsonSerializer.Serialize(new { error = ex.Message, slug }, JsonOpts); }
-    }
-
-    /// <summary>POV discipline + voice distinctiveness audit — head-hopping out of the recorded
-    /// POV, same-scene characters speaking in interchangeable registers.</summary>
-    [McpServerTool, Description(
-        "POV discipline + voice distinctiveness audit (PovVoiceAuditService): head-hopping out of " +
-        "the recorded POV narrator, and same-scene characters speaking in interchangeable registers. " +
-        "Batched Haiku per chapter; findings (\"POV \" / \"VOICE \", CraftChecklist) loop back into " +
-        "future generation. Explicit invocation only — an LLM-cost decision.")]
-    public Task<string> pov_audit(
-        [Description("Node slug or code.")] string slug,
-        [Description("Preview findings without writing them.")] bool dryRun = false) =>
-        hub.InvokeAsync(nameof(CraftInstrumentTools), nameof(pov_auditImpl), new { slug, dryRun });
-
-    public async Task<string> pov_auditImpl(string slug, bool dryRun = false)
-    {
-        try
-        {
-            var r = await povVoiceAudit.AuditAsync(slug, dryRun);
-            return JsonSerializer.Serialize(new
-            {
-                node_code = r.NodeCode, beats_audited = r.BeatsAudited,
-                head_hops = r.HeadHopFindings, voice_sameness = r.VoiceSamenessFindings,
-            }, JsonOpts);
-        }
-        catch (Exception ex) { return JsonSerializer.Serialize(new { error = ex.Message, slug }, JsonOpts); }
-    }
-
-    /// <summary>Chapter-ending hook strength analysis — question/danger/decision/revelation/
-    /// arrival/emotional/none, strength 0-3, one batched Haiku call.</summary>
-    [McpServerTool, Description(
-        "Chapter-hook strength analysis (ChapterHookService): classifies every chapter's final " +
-        "passage (question/danger/decision/revelation/arrival/emotional/none, strength 0-3) in one " +
-        "batched Haiku call. Weak non-final endings file \"HOOK \" CraftChecklist findings.")]
-    public Task<string> hook_audit(
-        [Description("Node slug or code.")] string slug,
-        [Description("Preview findings without writing them.")] bool dryRun = false) =>
-        hub.InvokeAsync(nameof(CraftInstrumentTools), nameof(hook_auditImpl), new { slug, dryRun });
-
-    public async Task<string> hook_auditImpl(string slug, bool dryRun = false)
-    {
-        try
-        {
-            var r = await chapterHook.AuditAsync(slug, dryRun);
-            return JsonSerializer.Serialize(new
-            {
-                node_code = r.NodeCode, chapters_audited = r.ChaptersAudited, weak_endings = r.WeakEndings,
-                results = r.Results.OrderBy(x => x.ChapterIndex).Select(c => new
-                {
-                    chapter = c.ChapterTitle, hook_type = c.HookType, strength = c.Strength, rationale = c.Rationale,
-                }),
             }, JsonOpts);
         }
         catch (Exception ex) { return JsonSerializer.Serialize(new { error = ex.Message, slug }, JsonOpts); }

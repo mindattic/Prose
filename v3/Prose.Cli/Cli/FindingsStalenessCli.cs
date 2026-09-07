@@ -31,11 +31,11 @@ public static class FindingsStalenessCli
         var isJson = args.Contains("--json");
 
         var findings = services.GetRequiredService<FindingsService>();
-        var checklist = services.GetRequiredService<BeatChecklistGateService>();
 
         var currentVersions = new Dictionary<string, string>
         {
-            ["CraftChecklist"] = await checklist.GetCurrentRuleSetVersionAsync(),
+            // CraftChecklist: the LLM checklist (BeatChecklistGateService) was deleted 2026-09-06 (RFC 0010);
+            // the category now holds only deterministic LINT rows, which are hash-gated on beat text, not a rule set.
             ["StructuralFailure"] = BeatVerificationService.CurrentRuleVersion,
         };
 

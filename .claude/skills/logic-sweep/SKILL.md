@@ -56,7 +56,7 @@ or reviews from this skill** — if the user wants a score, they will say so exp
    IsChapterStart stranded on disabled beats) / outline agreement.
    Findings: severity (BLOCKER/MODERATE/MINOR) + SortKeys + quoted text + minimal fix proposal.
    Instruct verbatim: "Do not invent problems — if the logic holds, say so."
-   Outline agreement is checked ACROSS ALTITUDES (docs/LOGIC.md §8): `prose --altitude-audit
+   Outline agreement is checked ACROSS ALTITUDES (docs/LOGIC.md §8): (the former `prose --altitude-audit` — deleted 2026-09-06 (RFC 0010); the sweep's own `outline_agreement` dimension covers this now) `prose --altitude-audit
    --slug <slug>` automates the 10,000↔100 ft comparison (outline/blueprint vs chapter
    synopses; findings filed as OutlineDrift; no side auto-wins — the divergence is judged
    case-by-case on evidence, per docs/LOGIC.md §3.6); agents may read the book's

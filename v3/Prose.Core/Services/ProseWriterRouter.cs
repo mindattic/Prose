@@ -311,7 +311,7 @@ public class ProseWriterRouter(
         var emotionalGuidanceContext = context.EmotionalGuidanceContext;
         if (string.IsNullOrEmpty(emotionalGuidanceContext) && dbFactory != null && context.NodeId != Guid.Empty)
         {
-            await TraceStageAsync(nameof(EmotionalDepthService), async () =>
+            await TraceStageAsync("EmotionalDepthLoopback", async () =>   // producer deleted 2026-09-06 (RFC 0010); reads prior findings only
             {
                 emotionalGuidanceContext = await BuildFindingsGuidanceAsync(
                     context.NodeId,
