@@ -74,7 +74,7 @@ public static class RestoreBeatTextCli
         if (dryRun) return 0;
 
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
-        await workbench.UpdateBeatTextAsync(id, historical.Text);
+        await workbench.UpdateBeatTextAsync(id, historical.Text, BeatWriteReason.Restore);
 
         Console.WriteLine($"[restore-beat-text] Restored {historical.Text.Length} chars to beat {id}.");
         return 0;

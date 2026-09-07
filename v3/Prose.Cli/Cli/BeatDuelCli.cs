@@ -137,7 +137,7 @@ public static class BeatDuelCli
             // entity-GUID tagging, blast-radius/logic-sweep, and continuity re-extraction — a
             // duel-applied replacement is exactly the kind of real content edit every other
             // prose-writing path in the app routes through UpdateBeatTextAsync.
-            await workbench.UpdateBeatTextAsync(beatId, candidateText);
+            await workbench.UpdateBeatTextAsync(beatId, candidateText, BeatWriteReason.AuthorEdit);   // the candidate is the author's own file; the duel only votes on it
             if (!jsonMode)
                 Console.WriteLine("\n✅ Applied — beat text replaced, TextHash recomputed, marked stale for narration.");
         }

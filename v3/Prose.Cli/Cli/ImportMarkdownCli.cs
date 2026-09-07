@@ -128,7 +128,7 @@ public static class ImportMarkdownCli
                 continue;
             }
 
-            await workbench.UpdateBeatTextAsync(beatId!.Value, newText, expectedUpdatedAt: null);
+            await workbench.UpdateBeatTextAsync(beatId!.Value, newText, BeatWriteReason.Import, expectedUpdatedAt: null);
             Console.WriteLine($"  Beat #{beatNo} ({id7}): updated ({newText.Length} chars).");
             updated++;
         }

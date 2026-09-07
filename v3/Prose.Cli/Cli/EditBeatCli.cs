@@ -74,7 +74,7 @@ public static class EditBeatCli
             }
 
             Console.Write($"[edit-beat] Updating beat {beatId}… ");
-            await wb.UpdateBeatTextAsync(beatId, proseById, expectedUpdatedAt: null);
+            await wb.UpdateBeatTextAsync(beatId, proseById, BeatWriteReason.AuthorEdit, expectedUpdatedAt: null);
             await sessionSvc.TryLogBeatAsync(beatId, priorVersion, priorHash);   // synchronous — reliably logged
             Console.WriteLine($"ok ({proseById.Length} chars).");
             return 0;
@@ -156,7 +156,7 @@ public static class EditBeatCli
 
         var target = ordered[beatNumber - 1].Beat;
         Console.Write($"[edit-beat] Updating beat #{beatNumber} (id {target.Id})… ");
-        await workbench.UpdateBeatTextAsync(target.Id, prose, expectedUpdatedAt: null);
+        await workbench.UpdateBeatTextAsync(target.Id, prose, BeatWriteReason.AuthorEdit, expectedUpdatedAt: null);
         Console.WriteLine($"ok ({prose.Length} chars).");
         return 0;
     }

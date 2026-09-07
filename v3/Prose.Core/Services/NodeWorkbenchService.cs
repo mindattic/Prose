@@ -274,7 +274,7 @@ public class NodeWorkbenchService
     /// text so the UI can surface a "keep yours or reload?" choice. Pass
     /// <c>null</c> to skip the check (fire-and-forget callers, migrations).</para>
     /// </summary>
-    public async Task UpdateBeatTextAsync(Guid beatId, string newText, DateTime? expectedUpdatedAt = null, CancellationToken ct = default)
+    public async Task UpdateBeatTextAsync(Guid beatId, string newText, BeatWriteReason reason, DateTime? expectedUpdatedAt = null, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
@@ -358,6 +358,7 @@ public class NodeWorkbenchService
         beat.Score         = null;  // text changed → prior score is for the old version
         beat.ScoredAt      = null;
         beat.Version++;
+        beat.LastWriteReason = reason.ToString();   // RFC 0009: every write names its authority
         InvalidateAudioOnBeat(beat);
         beat.UpdatedAt = DateTime.UtcNow;
         try
@@ -487,7 +488,7 @@ public class NodeWorkbenchService
     }
 
     public async Task UpdateBeatTextBatchAsync(
-        IReadOnlyList<(Guid BeatId, string NewText)> edits, string source, CancellationToken ct = default)
+        IReadOnlyList<(Guid BeatId, string NewText)> edits, BeatWriteReason reason, CancellationToken ct = default)
     {
         if (edits.Count == 0) return;
 
@@ -546,6 +547,7 @@ public class NodeWorkbenchService
             beat.Score        = null;
             beat.ScoredAt     = null;
             beat.Version++;
+            beat.LastWriteReason = reason.ToString();   // RFC 0009
             InvalidateAudioOnBeat(beat);
             beat.UpdatedAt = DateTime.UtcNow;
             await db.SaveChangesAsync(ct);
@@ -558,7 +560,7 @@ public class NodeWorkbenchService
 
         if (touchedBeatIds.Count == 0) return;
 
-        log.LogInformation("UpdateBeatTextBatchAsync: {Count} beat(s) edited by {Source}", touchedBeatIds.Count, source);
+        log.LogInformation("UpdateBeatTextBatchAsync: {Count} beat(s) edited by {Source}", touchedBeatIds.Count, reason);
 
         // One blast-radius + narrow-logic-sweep pass over the UNION of every touched beat's
         // radius, instead of one pass per beat — the whole point of the batch path.
@@ -1724,6 +1726,7 @@ public class NodeWorkbenchService
         var nextSk = pos + 1 < siblings.Count ? siblings[pos + 1].SortKey : prevSk + 100.0;
 
         target.Text         = firstHalf;
+        target.LastWriteReason = nameof(BeatWriteReason.StructuralSplit);   // RFC 0009
         target.TextHash     = ComputeTextHash(firstHalf);
         target.WasCorrected = true;
         target.Stale        = true;
@@ -1790,6 +1793,7 @@ public class NodeWorkbenchService
 
         // Shrink target.
         target.Text          = firstHalf;
+        target.LastWriteReason = nameof(BeatWriteReason.StructuralSplit);   // RFC 0009
         target.TextHash      = ComputeTextHash(firstHalf);
         target.WasCorrected  = true;
         target.Stale         = true;
@@ -1855,6 +1859,7 @@ public class NodeWorkbenchService
 
         // First paragraph stays in target.
         target.Text         = paragraphs[0];
+        target.LastWriteReason = nameof(BeatWriteReason.StructuralSplit);   // RFC 0009
         target.TextHash     = ComputeTextHash(paragraphs[0]);
         target.WasCorrected = true;
         target.Stale        = true;
@@ -2157,6 +2162,7 @@ public class NodeWorkbenchService
         var target = await db.Beats.FirstAsync(b => b.Id == beatId, ct);
 
         prev.Text         = string.Concat((prev.Text ?? "").TrimEnd(), " ", (target.Text ?? "").TrimStart()).Trim();
+        prev.LastWriteReason = nameof(BeatWriteReason.StructuralSplit);   // RFC 0009
         prev.TextHash     = ComputeTextHash(prev.Text);
         prev.WasCorrected = true;
         prev.Stale        = true;

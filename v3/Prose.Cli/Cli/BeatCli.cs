@@ -237,7 +237,7 @@ public static class BeatCli
         if (text == "-") text = await Console.In.ReadToEndAsync();
 
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
-        await workbench.UpdateBeatTextAsync(beatId, text);
+        await workbench.UpdateBeatTextAsync(beatId, text, BeatWriteReason.AuthorEdit);
         Console.WriteLine($"[beat update] Beat {beatId} updated ({text.Length} chars).");
         return 0;
     }

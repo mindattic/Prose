@@ -122,7 +122,7 @@ public class ProseReflowService
             }
 
             if (apply)
-                await workbench.UpdateBeatTextAsync(beat.Id, edited, expectedUpdatedAt: beat.UpdatedAt, ct);
+                await workbench.UpdateBeatTextAsync(beat.Id, edited, BeatWriteReason.Reflow, expectedUpdatedAt: beat.UpdatedAt, ct);
             changed++;
             results.Add(new(beat.Id, pos, "changed", 0, 0, "paragraphs only", Preview(original), Preview(edited)));
         }

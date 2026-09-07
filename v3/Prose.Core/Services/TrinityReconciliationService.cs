@@ -348,7 +348,7 @@ public class TrinityReconciliationService(
                 continue;
             }
 
-            await workbench.UpdateBeatTextAsync(beatId, patched, expectedUpdatedAt: null, ct);
+            await workbench.UpdateBeatTextAsync(beatId, patched, BeatWriteReason.TrinityArbitration, expectedUpdatedAt: null, ct);
             AddEditTarget(editTargets, "beat_patch", new { beatId, chapterNodeId, claimUid = losing.ClaimUid });
             resolvedLosingClaimUids.Add(losing.ClaimUid);
         }
@@ -632,7 +632,7 @@ public class TrinityReconciliationService(
                 log.LogWarning("[trinity] No Beats_History row for beat {BeatId} as of {AsOf} — cannot revert this beat.", beatId, asOf);
                 continue;
             }
-            await workbench.UpdateBeatTextAsync(beatId, priorText, expectedUpdatedAt: null, ct);
+            await workbench.UpdateBeatTextAsync(beatId, priorText, BeatWriteReason.Restore, expectedUpdatedAt: null, ct);
         }
     }
 

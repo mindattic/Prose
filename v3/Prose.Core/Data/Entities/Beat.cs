@@ -357,6 +357,13 @@ public class Beat
     /// creation. Surfaces in the writer's version cycler as a stable label.</summary>
     public int Version { get; set; }
 
+    /// <summary>The <c>BeatWriteReason</c> (stored as its enum name) declared by whoever last
+    /// wrote this beat's prose through <c>UpdateBeatTextAsync</c>. RFC 0009 (2026-09-06): every
+    /// write must name an authorised reason, so a beat's history in the system-versioned table
+    /// says not just <i>that</i> the text changed but <i>under what authority</i>. NULL = written
+    /// before the column existed (or created via <c>InsertBeatAsync</c> and never edited since).</summary>
+    public string? LastWriteReason { get; set; }
+
     [ConcurrencyCheck]
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 

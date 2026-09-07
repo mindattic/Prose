@@ -154,7 +154,7 @@ public class NodeCliRoundTripTests
         var first = ordered[0].Beat;
 
         // Same call the unified UI makes from SaveBeatEdit.
-        await workbench.UpdateBeatTextAsync(first.Id, "Rewrote the opening paragraph.");
+        await workbench.UpdateBeatTextAsync(first.Id, "Rewrote the opening paragraph.", BeatWriteReason.AuthorEdit);
 
         await using var probe = await dbFactory.CreateDbContextAsync();
         var refreshed = await probe.Beats.AsNoTracking().FirstAsync(b => b.Id == first.Id);
@@ -179,7 +179,7 @@ public class NodeCliRoundTripTests
         // Split the second beat (the original first paragraph) at its midpoint.
         var splittable = afterInsert[1].Beat.Id;
         await workbench.UpdateBeatTextAsync(splittable,
-            "First half is here so we have enough to split. Second half kicks in after the period.");
+            "First half is here so we have enough to split. Second half kicks in after the period.", BeatWriteReason.AuthorEdit);
         var split = await workbench.SplitBeatAsync(episodeId, splittable);
         var afterSplit = await workbench.GetOrderedBeatsAsync(episodeId);
         Assert.That(afterSplit, Has.Count.EqualTo(5));

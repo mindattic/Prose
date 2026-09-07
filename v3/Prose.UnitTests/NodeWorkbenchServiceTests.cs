@@ -120,7 +120,7 @@ public class NodeWorkbenchServiceTests
             await db.SaveChangesAsync();
         }
 
-        await svc.UpdateBeatTextAsync(b.Id, "Rewritten text.");
+        await svc.UpdateBeatTextAsync(b.Id, "Rewritten text.", BeatWriteReason.AuthorEdit);
 
         await using (var db2 = await dbFactory.CreateDbContextAsync())
         {
@@ -150,7 +150,7 @@ public class NodeWorkbenchServiceTests
             await db.SaveChangesAsync();
         }
 
-        await svc.UpdateBeatTextAsync(b.Id, "Same text.");
+        await svc.UpdateBeatTextAsync(b.Id, "Same text.", BeatWriteReason.AuthorEdit);
 
         await using (var db2 = await dbFactory.CreateDbContextAsync())
         {
@@ -287,7 +287,7 @@ public class NodeWorkbenchServiceTests
         await using (var db = await dbFactory.CreateDbContextAsync())
             captured = (await db.Beats.AsNoTracking().FirstAsync(x => x.Id == b.Id)).UpdatedAt;
 
-        await svc.UpdateBeatTextAsync(b.Id, "Rewritten.", expectedUpdatedAt: captured);
+        await svc.UpdateBeatTextAsync(b.Id, "Rewritten.", BeatWriteReason.AuthorEdit, expectedUpdatedAt: captured);
 
         await using var db2 = await dbFactory.CreateDbContextAsync();
         Assert.That((await db2.Beats.FirstAsync(x => x.Id == b.Id)).Text, Is.EqualTo("Rewritten."));
@@ -312,7 +312,7 @@ public class NodeWorkbenchServiceTests
         var staleExpectedAt = DateTime.UtcNow.AddHours(-1);
 
         var ex = Assert.ThrowsAsync<BeatConflictException>(() =>
-            svc.UpdateBeatTextAsync(b.Id, "User's edit", expectedUpdatedAt: staleExpectedAt));
+            svc.UpdateBeatTextAsync(b.Id, "User's edit", BeatWriteReason.AuthorEdit, expectedUpdatedAt: staleExpectedAt));
         Assert.That(ex!.BeatId, Is.EqualTo(b.Id));
         Assert.That(ex.CurrentText, Is.EqualTo("Someone-else wrote this."));
 
@@ -329,7 +329,7 @@ public class NodeWorkbenchServiceTests
 
         // Bypass-check call should succeed even if the row has been
         // touched — fire-and-forget callers (sync sweeps, migrations) use this.
-        await svc.UpdateBeatTextAsync(b.Id, "Rewritten.", expectedUpdatedAt: null);
+        await svc.UpdateBeatTextAsync(b.Id, "Rewritten.", BeatWriteReason.AuthorEdit, expectedUpdatedAt: null);
 
         await using var db = await dbFactory.CreateDbContextAsync();
         Assert.That((await db.Beats.FirstAsync(x => x.Id == b.Id)).Text, Is.EqualTo("Rewritten."));

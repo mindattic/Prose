@@ -432,7 +432,7 @@ public class NodeTools
     {
         if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
             return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
-        await workbench.UpdateBeatTextAsync(bid.Value, text ?? "");
+        await workbench.UpdateBeatTextAsync(bid.Value, text ?? "", BeatWriteReason.AuthorEdit);
         return JsonSerializer.Serialize(new { ok = true, id = bid.Value }, CanonTools.JsonOpts);
     }
 

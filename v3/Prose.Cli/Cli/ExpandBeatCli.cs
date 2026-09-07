@@ -202,7 +202,7 @@ public static class ExpandBeatCli
                     continue;
                 }
                 prose = prose.Trim();
-                await workbench.UpdateBeatTextAsync(beat.Id, prose, expectedUpdatedAt: null);
+                await workbench.UpdateBeatTextAsync(beat.Id, prose, BeatWriteReason.Generation, expectedUpdatedAt: null);
                 sceneSoFar += "\n\n" + prose;
                 expanded++;
                 Console.WriteLine($"ok ({prose.Length} chars).");
