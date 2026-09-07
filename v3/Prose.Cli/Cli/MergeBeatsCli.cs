@@ -116,6 +116,7 @@ public static class MergeBeatsCli
         var knownNames = briefBuilder.KnownNames();
 
         int merged = 0, unchanged = 0, kept = 0, failed = 0;
+        long grownFrom = 0, grownTo = 0;
         var startCost = ledger?.GetSummary().TotalCost ?? 0;
 
         foreach (var (ob, pos) in targets)
@@ -165,7 +166,7 @@ public static class MergeBeatsCli
 
                     for (attempts = 1; attempts <= 2; attempts++)
                     {
-                        var candidate = await merger.MergeAsync(original, candidates, goal, constraints, mergeModel);
+                        var candidate = await merger.MergeAsync(original, candidates, goal, constraints, mergeModel, brief);
                         if (string.IsNullOrWhiteSpace(candidate)) { status = "kept"; reason = "merger returned empty"; break; }
 
                         if (Normalise(candidate) == Normalise(SpineCheck.Strip(original)))
@@ -213,7 +214,9 @@ public static class MergeBeatsCli
 
             switch (status)
             {
-                case "merged": merged++; Console.WriteLine($"merged ({original.Length} → {mergedChars} chars, ${cost:F3})"); break;
+                case "merged":
+                    merged++; grownFrom += original.Length; grownTo += mergedChars;
+                    Console.WriteLine($"merged ({original.Length} → {mergedChars} chars, ${cost:F3})"); break;
                 case "unchanged": unchanged++; Console.WriteLine($"unchanged — the book's version stands (${cost:F3})"); break;
                 case "kept": kept++; Console.WriteLine($"KEPT ORIGINAL — {reason}" + (failures.Count > 0 ? $": {Truncate(failures[0], 90)}" : "")); break;
                 default: failed++; Console.WriteLine($"ERROR — {Truncate(reason ?? "", 90)}"); break;
@@ -223,6 +226,8 @@ public static class MergeBeatsCli
         var total = (ledger?.GetSummary().TotalCost ?? 0) - startCost;
         Console.WriteLine();
         Console.WriteLine($"[merge-beats] {merged} merged · {unchanged} unchanged · {kept} kept original · {failed} errors · ${total:F2}");
+        if (grownFrom > 0)
+            Console.WriteLine($"[merge-beats] merged beats grew {grownFrom:N0} → {grownTo:N0} chars ({(grownTo - grownFrom) * 100.0 / grownFrom:+0.0;-0.0}%) — the rule-of-cool and world-detail rules add material by design; watch the book's total length.");
         Console.WriteLine($"[merge-beats] report: {reportPath}");
         if (merged > 0)
             Console.WriteLine($"[merge-beats] Next: prose --generate-event-list --slug {slug} (the merged beats' summaries now describe older text).");

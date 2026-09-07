@@ -21,31 +21,48 @@ public class BeatMergeService
 
     public sealed record Candidate(string Label, string Text, bool Refused, IReadOnlyList<string> RefusalReasons);
 
+    /// <summary>
+    /// The author's own editorial standard, stated 2026-09-07: *"the rules are A) the rule of cool
+    /// B) learn something new about this world every beat"*, applied to three versions of one beat
+    /// with the instruction *"make it into one version, the best version of itself"*. The spine
+    /// rule is the author's too — the existing book is the base, so v2 is the same story dolled up
+    /// rather than a different novel.
+    /// </summary>
     private const string SystemPrompt = """
-        You are a novelist's editor working on a finished book. You are given one beat as it stands
-        in the book (THE BOOK), and independent regenerations of the same beat written from the same
-        brief (CANDIDATES). You produce the best version of this beat.
+        You are the author's editor on a cyberpunk novel. You are given one beat as it stands in the
+        book (THE BOOK) and independent regenerations of the same beat (CANDIDATES). Make them into
+        one version — the best version of itself.
 
-        THE BOOK IS THE SPINE. It is what the rest of the novel refers back to. Every fact, number,
-        measurement, name, object, capability, event, and the ending, must survive into your version
-        unchanged. If a candidate contradicts the book on any of these, the book is right and the
-        candidate is wrong — silently discard it.
+        THE BOOK IS THE SPINE. Everything the rest of the novel refers back to survives unchanged:
+        every event and the order it happens in, the ending, every number and measurement, every
+        name, and the information carried in dialogue. Where a candidate contradicts the book on any
+        of those, the book is right — drop that part silently. You are making this beat better, not
+        making a different beat.
 
-        THE CANDIDATES ARE A QUARRY, NOT EQUALS. Take from them only:
-          - physical and sensory texture that grounds something the book states flatly;
-          - a sharper verb, image, or rhythm for something the book already says;
-          - a moment the book SKIPS OVER that the book's own text implies happened (a repair the
-            book cuts away from, a beat of silence the book summarises).
-        Never take from a candidate: a plot event, a named person / place / faction / product /
-        weapon, a number, a capability, a relationship, or a change to who knows what.
+        Inside that frame you are held to two rules.
 
-        RETURNING THE BOOK'S TEXT VERBATIM IS A VALID AND COMMON ANSWER. If the candidates offer
-        nothing the book lacks, return it exactly as given. Do not change prose to justify the call.
-        Do not smooth the book's voice toward neutral. Keep its paragraph rhythm, its POV, its
-        punctuation habits, and its dialogue exactly where dialogue carries information.
+        RULE ONE — THE RULE OF COOL. The best version of a moment is the one a reader stops and
+        re-reads. Take the sharpest verb, the most physical image, the line of dialogue that lands
+        hardest, whichever version it came from. Where the book states flatly something a candidate
+        dramatizes, use the dramatization. Where the book cuts away from something its own text says
+        happened — a repair, the middle of a fight, a decision made in silence — stage it on the
+        page. Replace anything that is merely competent.
 
-        Length: within about 25% of the book's.
-        Output: the beat's prose, and nothing else. No heading, no title, no label, no commentary.
+        RULE TWO — EVERY BEAT TEACHES THE READER SOMETHING NEW ABOUT THIS WORLD. Not a lecture: a
+        working detail, revealed by what someone does or already knows. How a thing is priced,
+        queued, repaired, policed, worn, smuggled, or worked around, and what it costs the person
+        doing it. Extend what is already established rather than inventing beside it — a thing the
+        book already names can be given a new mechanism, price, custom or consequence. Best is a
+        detail this beat's own action requires in order to work.
+
+        WHAT YOU MAY NOT ADD: a plot event. No arrival, no message carrying information, no fight,
+        no injury, no reversal, no decision the beat did not already make. Those belong to other
+        beats and the next chapter is written assuming they did not happen here.
+
+        Voice: the book's, never smoothed toward neutral. Keep its paragraph rhythm and its POV.
+        Length: up to about a third longer than the book's where the new material earns it. Not
+        materially shorter.
+        Output: the beat's prose only. No heading, no title, no label, no commentary.
         """;
 
     public async Task<string> MergeAsync(
@@ -54,11 +71,21 @@ public class BeatMergeService
         string? beatGoal,
         IReadOnlyList<string>? constraints = null,
         string? model = null,
+        BeatBrief? brief = null,
         CancellationToken ct = default)
     {
         var sb = new System.Text.StringBuilder();
         if (!string.IsNullOrWhiteSpace(beatGoal))
             sb.Append("WHAT THIS BEAT IS FOR (context only — the book's text is what happened):\n").AppendLine(beatGoal.Trim()).AppendLine();
+
+        // Where this beat ends. Without it the merge inherits the candidates' habit of running on
+        // into the next beat's material, and the gate then refuses a merge that was otherwise good
+        // (2 of the first 4 mid-book beats, 2026-09-07).
+        if (!string.IsNullOrWhiteSpace(brief?.StopBefore))
+            sb.Append("WHERE THIS BEAT ENDS: the NEXT beat of the book does this — ").Append(brief.StopBefore.Trim())
+              .AppendLine(" — so your version must stop before it, exactly where the book's version stops. Do not narrate it, do not set it up with a new event.").AppendLine();
+        else if (brief?.ClosesChapter == true)
+            sb.AppendLine("WHERE THIS BEAT ENDS: this beat closes its chapter. Land it where the book lands it.").AppendLine();
 
         sb.AppendLine("THE BOOK — this beat as it stands. This is the spine.");
         sb.AppendLine("---");
@@ -84,7 +111,7 @@ public class BeatMergeService
             sb.AppendLine();
         }
 
-        sb.AppendLine("Write the best version of this beat now. Prose only.");
+        sb.AppendLine("Take these and make them into one version, the best version of itself. Prose only.");
 
         var raw = await llm.GenerateAsync(SystemPrompt, sb.ToString(), temperature: 0.4, maxTokens: 4096,
             model: model ?? LlmModels.Opus, ct: ct);
