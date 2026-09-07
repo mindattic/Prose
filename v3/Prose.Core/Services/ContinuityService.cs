@@ -1491,6 +1491,27 @@ public class ContinuityService
         db.SaveChanges();
     }
 
+    /// <summary>
+    /// Rewrites every ContinuityClaims row's EntityName for one EntityId to a new string.
+    /// EntityName is a text snapshot taken at extraction time, not derived live from the
+    /// entity's current canonical Name — so a later rename (a DeprecatedEntityNames ruling)
+    /// never propagates to old rows on its own; they carry the stale name forever (the
+    /// "Corbin-Vasik" residue: 66 rows on Kyle Ellen Corbin still read "Kyle Ellen Corbin-Vasik"
+    /// after the 2026-07-21 ruling). No sanctioned rename tool existed for this until now
+    /// (2026-09-06) — <c>ContinuityClaims</c> is system-versioned, so this is reversible.
+    /// Returns the number of rows actually changed (rows already carrying newName are skipped).
+    /// </summary>
+    public int RelabelEntityName(string entityId, string newName, string note = "")
+    {
+        using var db = dbFactory.CreateDbContext();
+        var rows = db.ContinuityClaims
+            .Where(c => c.EntityId == entityId && c.EntityName != newName)
+            .ToList();
+        foreach (var c in rows) c.EntityName = newName;
+        db.SaveChanges();
+        return rows.Count;
+    }
+
     private static void ApplyStatus(ContinuityClaim c, string status, string now, string note)
     {
         c.Status = status;

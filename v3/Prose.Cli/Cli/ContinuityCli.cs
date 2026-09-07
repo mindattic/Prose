@@ -29,6 +29,15 @@ namespace Prose.Cli;
 ///   prose --continuity extract --entity &lt;guid&gt;          Extract claims from one entity's Records.Json blob (by EntityId).
 ///   prose --continuity extract --outline &lt;nodeIdOrSlug&gt;   Extract claims from the story bible (SourceType="outline").
 ///   prose --continuity apply --claim &lt;uid&gt;              Apply a CANONICAL claim back to its entity record (Legion picks the field).
+///   prose --continuity relabel --entity &lt;id&gt; --set-name "&lt;name&gt;" [--yes] [--note "..."]
+///                                                       Rewrite every claim's stale EntityName
+///                                                       snapshot for one EntityId to the current
+///                                                       canonical name (a DeprecatedEntityNames
+///                                                       rename that never propagated to old
+///                                                       ledger rows — e.g. "Corbin-Vasik"
+///                                                       residue). Lists what will change; needs
+///                                                       --yes to actually write. Reversible
+///                                                       (ContinuityClaims is system-versioned).
 ///
 /// Backed by ContinuityService / ContinuityExtractionService / ContinuityApplyService —
 /// same code path the UI and MCP tools use.
@@ -59,6 +68,7 @@ public static class ContinuityCli
             "stale-snippets"  => CmdStaleSnippets(rest, services).GetAwaiter().GetResult(),
             "reassess"        => CmdReassess(rest, svc).GetAwaiter().GetResult(),
             "reject"          => CmdReject(rest, svc),
+            "relabel"         => CmdRelabel(rest, svc),
             "extract"         => CmdExtract(rest, services).GetAwaiter().GetResult(),
             "apply"           => CmdApply(rest, services).GetAwaiter().GetResult(),
             "sweep"           => CmdSweep(rest, services).GetAwaiter().GetResult(),
@@ -160,6 +170,64 @@ public static class ContinuityCli
         }
         Console.WriteLine($"[continuity] Rejected {rejected} of {uids.Count} claim(s).");
         return rejected == uids.Count ? 0 : 1;
+    }
+
+    /// <summary>
+    /// prose --continuity relabel --entity &lt;id&gt; --set-name "&lt;name&gt;" [--yes] [--note "..."]
+    ///
+    /// EntityName on ContinuityClaims is a text snapshot taken at extraction time, not derived
+    /// live from the entity's current canonical Name — so when a DeprecatedEntityNames ruling
+    /// renames a character, only NEW extractions pick up the fix; old rows keep the stale name
+    /// forever ("Corbin-Vasik" residue on Kyle Ellen Corbin: 66 rows, confirmed 2026-09-06). No
+    /// rename tool existed for this until now. Lists what will change and requires --yes to write
+    /// — same dry-run-by-default shape as `reject`'s family form. Reversible (system-versioned).
+    /// </summary>
+    static int CmdRelabel(string[] args, ContinuityService svc)
+    {
+        var entity = Flag(args, "--entity");
+        var newName = Flag(args, "--set-name");
+        var note = Flag(args, "--note") ?? "relabeled via prose --continuity relabel";
+
+        if (string.IsNullOrWhiteSpace(entity) || string.IsNullOrWhiteSpace(newName))
+        {
+            Console.Error.WriteLine("Usage: prose --continuity relabel --entity <id> --set-name \"<name>\" [--yes] [--note \"...\"]");
+            return 2;
+        }
+
+        var all = svc.GetByEntity(entity);
+        if (all.Count == 0)
+        {
+            Console.Error.WriteLine(
+                $"[continuity] No claims found for entity id '{entity}'. " +
+                "This form takes the ENTITY ID (the hex string --continuity entity prints in its header), not the display name.");
+            return 2;
+        }
+
+        var stale = all.Where(c => !string.Equals(c.EntityName, newName, StringComparison.Ordinal)).ToList();
+        if (stale.Count == 0)
+        {
+            Console.WriteLine($"[continuity] All {all.Count} claim(s) on {entity} already carry EntityName \"{newName}\". Nothing to do.");
+            return 0;
+        }
+
+        var oldNames = stale.Select(c => c.EntityName).Distinct(StringComparer.Ordinal).ToList();
+        Console.WriteLine($"[continuity] {stale.Count} of {all.Count} claim(s) on {entity} carry a stale EntityName:");
+        foreach (var name in oldNames)
+            Console.WriteLine($"  \"{name}\"  ({stale.Count(c => c.EntityName == name)} row(s))");
+        Console.WriteLine($"→ relabel to \"{newName}\"");
+
+        if (!args.Contains("--yes") && !args.Contains("--no-confirm"))
+        {
+            Console.WriteLine();
+            Console.WriteLine("Nothing changed. Re-run with --yes to relabel all of the above.");
+            return 0;
+        }
+
+        var changed = svc.RelabelEntityName(entity, newName, note);
+        Console.WriteLine();
+        Console.WriteLine($"[continuity] Relabeled {changed} claim(s) → \"{newName}\". ContinuityClaims is system-versioned — " +
+                          "the prior EntityName values are recoverable from ContinuityClaims_History.");
+        return 0;
     }
 
     static string? Flag(string[] args, string name)
@@ -963,6 +1031,11 @@ public static class ContinuityCli
                   falls back to the raw NodeOutline blob) — lands as SourceType="outline" in the same
                   ledger prose/entity-record claims use, so bible facts compete/reconcile automatically
               prose --continuity apply --claim <claimUid>
+              prose --continuity relabel --entity <entityId> --set-name "<name>" --yes [--note "..."]
+                  Rewrite every claim's stale EntityName snapshot for one entity to its current
+                  canonical name — a DeprecatedEntityNames rename never propagates to old ledger
+                  rows on its own (e.g. "Corbin-Vasik" residue). Lists what will change; needs
+                  --yes to write. Reversible (system-versioned).
               prose --continuity sweep [--book <id>] [--skip-records] [--skip-prose] [--skip-resolve] [--skip-apply] [--dry-run]
                   one-shot end-to-end pipeline: extract from records + chapters → auto-resolve via Legion DecideAsync → apply CANONICAL claims
             """);

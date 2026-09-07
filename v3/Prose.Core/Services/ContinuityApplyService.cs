@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MindAttic.Legion;
 using Prose.Core.Data;
+using Prose.Core.Data.Entities;
 using Prose.Core.Interfaces;
 
 namespace Prose.Core.Services;
@@ -90,7 +91,14 @@ public class ContinuityApplyService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var record = await LocateRecordAsync(db, claim, ct);
         if (record == null)
+        {
+            // Characters carry no Records.Json blob at all (fully relational since the 2026-05-08
+            // scalar drop — see Character.cs), so every character-kind claim landed here and failed
+            // identically. Try the deterministic belongings-bucket path before giving up.
+            var characterResult = await TryApplyToCharacterAsync(db, claim, ct);
+            if (characterResult != null) return characterResult;
             return new ApplyResult { Ok = false, Error = $"No Records.Json blob for {claim.EntityName} ({claim.EntityKind}) id={claim.EntityId}" };
+        }
 
         JsonNode? root;
         try { root = JsonNode.Parse(record.Json); }
@@ -327,9 +335,14 @@ public class ContinuityApplyService
             entityType = claim.EntityKind; // unmapped kind = already the raw EntityType value
 
         // Id route — accept hyphenated and unhyphenated formats.
+        // IgnoreQueryFilters(): this resolves an id the caller already holds (claim.EntityId), not
+        // a browse/list query — the universe global query filter on Entity must not silently turn
+        // a valid id into "not found" when the ambient scope doesn't happen to match (the same bug
+        // class fixed in BookArchiveService/NodeRefResolver/OutlineSyncService; see
+        // feedback_explicit_id_lookups_need_ignorequeryfilters memory).
         if (TryParseGuid(claim.EntityId, out var id))
         {
-            var rec = await db.Records.Include(r => r.Entity)
+            var rec = await db.Records.IgnoreQueryFilters().Include(r => r.Entity)
                 .FirstOrDefaultAsync(r => r.EntityId == id && r.Entity!.EntityType == entityType, ct);
             if (rec != null) return rec;
         }
@@ -338,13 +351,90 @@ public class ContinuityApplyService
         // and only stored the display name.
         if (!string.IsNullOrWhiteSpace(claim.EntityName))
         {
-            var rec = await db.Records.Include(r => r.Entity)
+            var rec = await db.Records.IgnoreQueryFilters().Include(r => r.Entity)
                 .FirstOrDefaultAsync(r =>
                     r.Entity!.EntityType == entityType
                     && r.Entity.Name == claim.EntityName, ct);
             if (rec != null) return rec;
         }
         return null;
+    }
+
+    // The "single primary X" belongings pointers (CharacterMapper.cs's post-2026-05-08-scalar-drop
+    // bucket list) — the only Character fields this apply path knows how to reach. Anything else
+    // (Role, Description, psychology, speech patterns, ...) has no generic fallback storage on
+    // Character the way continuity_facts[] does for Records.Json entities, so a claim whose
+    // predicate isn't one of these still falls through to the existing "no blob" error, honestly.
+    private static readonly HashSet<string> CharacterBelongingsBuckets = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "primary_weapon", "secondary_weapon", "armor", "vehicle", "residence", "clothing_style",
+        "favorite_drink", "favorite_food", "stimulant", "comm_device", "ranged_weapon", "tool_slot",
+    };
+
+    /// <summary>
+    /// Applies a claim directly to a Character's <see cref="CharacterBelongingsGear"/> bridge row
+    /// when the claim's predicate is a known single-value belongings bucket (e.g. "residence") —
+    /// the case <see cref="LocateRecordAsync"/> can never satisfy because Characters carry no
+    /// Records.Json blob at all. Deterministic, so no Legion vote is needed. Returns null (not a
+    /// failed <see cref="ApplyResult"/>) when the claim isn't this shape, so the caller falls
+    /// through to its normal "no blob" error for anything broader.
+    /// </summary>
+    private async Task<ApplyResult?> TryApplyToCharacterAsync(ProseDbContext db, ContinuityClaim claim, CancellationToken ct)
+    {
+        if (!KindToEntityType.TryGetValue(claim.EntityKind, out var entityType)) entityType = claim.EntityKind;
+        if (!string.Equals(entityType, "character", StringComparison.OrdinalIgnoreCase)) return null;
+
+        var bucket = claim.Predicate.Trim().ToLowerInvariant();
+        if (!CharacterBelongingsBuckets.Contains(bucket)) return null;
+        if (!TryParseGuid(claim.EntityId, out var characterId)) return null;
+
+        // IgnoreQueryFilters(): resolving an id the caller already holds, not browsing — see
+        // feedback_explicit_id_lookups_need_ignorequeryfilters.
+        var exists = await db.Characters.IgnoreQueryFilters().AnyAsync(c => c.Id == characterId, ct);
+        if (!exists) return null;
+
+        var row = await db.CharacterBelongingsGear
+            .Where(g => g.CharacterId == characterId && g.Bucket == bucket)
+            .OrderBy(g => g.Position)
+            .FirstOrDefaultAsync(ct);
+
+        if (row == null)
+            db.CharacterBelongingsGear.Add(new CharacterBelongingsGear
+            {
+                CharacterId = characterId, Bucket = bucket, Position = 0, GearName = claim.Object,
+            });
+        else
+            row.GearName = claim.Object;
+
+        await db.SaveChangesAsync(ct);
+
+        // Not optional: every read surface (get_character included) serves from
+        // CharacterReadModels, not this bridge table directly — see
+        // feedback_character_readmodel_refresh_required.
+        try { await CharacterMapper.RefreshReadModelAsync(db, characterId, ct); }
+        catch (Exception ex)
+        {
+            log.LogWarning(ex,
+                "Applied {Uid} to character {CharacterId} belongings.{Bucket} but the read-model refresh " +
+                "failed — readers may serve the old value until the projection is rebuilt",
+                claim.ClaimUid, characterId, bucket);
+        }
+
+        var fieldPath = $"belongings.{bucket}";
+        store.MarkApplied(claim.ClaimUid, fieldPath);
+        log.LogInformation("[continuity] Applied {Uid} → {Entity}#{Field} (Character belongings bucket)",
+            claim.ClaimUid, claim.EntityName, fieldPath);
+
+        return new ApplyResult
+        {
+            Ok                 = true,
+            ClaimUid           = claim.ClaimUid,
+            EntityFile         = $"db:Characters[{characterId}]",
+            FieldPath          = fieldPath,
+            DecisionReason     = "Deterministic Character belongings-bucket mapping — no Legion vote needed.",
+            DecisionConfidence = 1.0,
+            SimilarClaims      = new(),
+        };
     }
 
     private static bool TryParseGuid(string raw, out Guid id)
@@ -359,9 +449,26 @@ public class ContinuityApplyService
     private static List<(string field, string type, string preview)> BuildFieldMenu(JsonObject obj)
     {
         var menu = new List<(string field, string type, string preview)>();
+        CollectFields(obj, prefix: null, menu);
+        return menu;
+    }
+
+    /// <summary>
+    /// Walks one level into any nested object (e.g. a Character record's
+    /// <c>belongings.residence</c>) so those fields appear as pickable menu options
+    /// ("belongings.residence", not just "belongings"). Before this, a claim whose real
+    /// home was a nested field never showed up in the menu at all — Legion could only ever
+    /// choose the parent object, which <see cref="ApplyToField"/> refuses to write into and
+    /// diverts to continuity_facts instead, so the structured field was never populated
+    /// (Kyle's residence unit number, 2026-09). Only one level deep — bounded so the menu
+    /// stays legible and to match <see cref="ApplyToField"/>'s one-level dotted-path support.
+    /// </summary>
+    private static void CollectFields(JsonObject obj, string? prefix, List<(string field, string type, string preview)> menu)
+    {
         foreach (var kv in obj)
         {
-            var type    = kv.Value switch
+            var path = prefix == null ? kv.Key : $"{prefix}.{kv.Key}";
+            var type = kv.Value switch
             {
                 null            => "null",
                 JsonValue v     => v.ToString().Length > 0 && IsNumeric(v) ? "number" : "string",
@@ -371,9 +478,11 @@ public class ContinuityApplyService
             };
             var preview = (kv.Value?.ToJsonString() ?? "null");
             if (preview.Length > 80) preview = preview[..80] + "…";
-            menu.Add((kv.Key, type, preview));
+            menu.Add((path, type, preview));
+
+            if (prefix == null && kv.Value is JsonObject nested)
+                CollectFields(nested, path, menu);
         }
-        return menu;
     }
 
     private static bool IsNumeric(JsonValue v)
@@ -382,37 +491,45 @@ public class ContinuityApplyService
         catch { return false; }
     }
 
-    private static bool ApplyToField(JsonObject obj, string fieldPath, ContinuityClaim claim)
+    private static bool ApplyToField(JsonObject root, string fieldPath, ContinuityClaim claim)
     {
         if (fieldPath == "continuity_facts")
         {
-            var arr = obj["continuity_facts"] as JsonArray ?? new JsonArray();
-            arr.Add(new JsonObject
-            {
-                ["predicate"]   = claim.Predicate,
-                ["object"]      = claim.Object,
-                ["snippet"]     = claim.Snippet,
-                ["source_type"] = claim.SourceType,
-                ["source_chapter_id"] = claim.SourceChapterId,
-                ["claim_uid"]   = claim.ClaimUid,
-                ["applied_at"]  = DateTime.UtcNow.ToString("o"),
-            });
-            obj["continuity_facts"] = arr;
+            AppendContinuityFact(root, claim, note: null);
             return true;
         }
 
-        if (!obj.ContainsKey(fieldPath))
+        // Dotted path (e.g. "belongings.residence") from CollectFields' one-level walk — find
+        // (or create) the nested parent object under root, then apply the leaf there exactly as
+        // a top-level field would be applied. Only one level deep, matching CollectFields.
+        var target = root;
+        var leafKey = fieldPath;
+        var dot = fieldPath.IndexOf('.');
+        if (dot > 0)
+        {
+            var parentKey = fieldPath[..dot];
+            leafKey = fieldPath[(dot + 1)..];
+            var parent = root[parentKey] as JsonObject;
+            if (parent == null)
+            {
+                parent = new JsonObject();
+                root[parentKey] = parent;
+            }
+            target = parent;
+        }
+
+        if (!target.ContainsKey(leafKey))
         {
             // Create as a string field
-            obj[fieldPath] = claim.Object;
+            target[leafKey] = claim.Object;
             return true;
         }
 
-        var existing = obj[fieldPath];
+        var existing = target[leafKey];
         switch (existing)
         {
             case JsonValue:
-                obj[fieldPath] = claim.Object;
+                target[leafKey] = claim.Object;
                 return true;
             case JsonArray arr:
                 // Dedup case-insensitively
@@ -420,25 +537,32 @@ public class ContinuityApplyService
                     arr.Add(claim.Object);
                 return true;
             case JsonObject:
-                // Don't try to deep-write into an existing object — fall through to continuity_facts.
-                var arr2 = obj["continuity_facts"] as JsonArray ?? new JsonArray();
-                arr2.Add(new JsonObject
-                {
-                    ["predicate"]   = claim.Predicate,
-                    ["object"]      = claim.Object,
-                    ["snippet"]     = claim.Snippet,
-                    ["source_type"] = claim.SourceType,
-                    ["source_chapter_id"] = claim.SourceChapterId,
-                    ["claim_uid"]   = claim.ClaimUid,
-                    ["applied_at"]  = DateTime.UtcNow.ToString("o"),
-                    ["note"]        = $"Legion picked '{fieldPath}' but it's an object — stored here instead.",
-                });
-                obj["continuity_facts"] = arr2;
+                // Don't try to deep-write into an existing object — fall through to continuity_facts
+                // on the ROOT record, never on the nested `target` object.
+                AppendContinuityFact(root, claim, note: $"Legion picked '{fieldPath}' but it's an object — stored here instead.");
                 return true;
             default:
-                obj[fieldPath] = claim.Object;
+                target[leafKey] = claim.Object;
                 return true;
         }
+    }
+
+    private static void AppendContinuityFact(JsonObject root, ContinuityClaim claim, string? note)
+    {
+        var arr = root["continuity_facts"] as JsonArray ?? new JsonArray();
+        var entry = new JsonObject
+        {
+            ["predicate"]   = claim.Predicate,
+            ["object"]      = claim.Object,
+            ["snippet"]     = claim.Snippet,
+            ["source_type"] = claim.SourceType,
+            ["source_chapter_id"] = claim.SourceChapterId,
+            ["claim_uid"]   = claim.ClaimUid,
+            ["applied_at"]  = DateTime.UtcNow.ToString("o"),
+        };
+        if (note != null) entry["note"] = note;
+        arr.Add(entry);
+        root["continuity_facts"] = arr;
     }
 }
 

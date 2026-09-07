@@ -34,7 +34,23 @@ public class CommandCostEstimatorService
             ["--audit-book"]          = 1.50, // FULL tier: one call/beat for SWAIN, DRAMATIC-Q, and
                                                // several other checks — scales with book length,
                                                // easily the most expensive single audit command.
-            ["--booktok"]             = 3.00, // video-gen APIs (kling/runway/sora) charge dollars, not cents
+            // --booktok: video-gen APIs (kling/runway/sora) charge dollars, not cents, and their
+            // per-clip price differs by provider — keyed per provider so history doesn't blend.
+            ["--booktok --provider=kling"]   = 3.00,
+            ["--booktok --provider=runway"]  = 3.00,
+            ["--booktok --provider=sora"]    = 3.00,
+            ["--booktok --provider=unknown"] = 3.00,
+            // --tuned-read --dry runs the deterministic half only — no LLM call, always $0.
+            ["--tuned-read --dry"]        = 0.0,
+            // --harvest-voice: --pending/--apply/--reject/--apply-all are pure DB ops (no LLM
+            // call); --all-80/--canon/--canon-prose harvest every qualifying node (many books);
+            // a single --slug/--id run harvests one. Kept separate so history doesn't blend them.
+            ["--harvest-voice --free"]    = 0.0,
+            ["--harvest-voice --single"]  = 0.06,
+            ["--harvest-voice --bulk"]    = 2.00,
+            // --reconcile-book-entities: --all walks every book; a single --id/--slug run is one.
+            ["--reconcile-book-entities --single"] = 0.05,
+            ["--reconcile-book-entities --all"]    = 3.00,
         };
 
     public record CommandCostEstimate(double Estimated, string Confidence, int BasisRuns);
