@@ -475,3 +475,95 @@ missing, and the verifier moved between runs. Step 4 waits.
 The §6 target "≤ 10 total calls" is met on a first-try pass (9) and missed by one on a retry.
 The remaining wall time is the two model calls the design wants (draft, verifier) — the loop
 the writer pays for now is the loop that does the writing and the checking, and nothing else.
+
+## 11. The beat-by-beat polish — what "make it a better book" actually turned out to be
+
+**Author instruction, 2026-09-07:** *"clone BCODA and make it a better book using this plan"*,
+then, after reading five beats three ways: *"take the original, the lean and the full and then take
+the best, do a test and remove any errors, then move onto the next beat"* and *"we'll have a v1 of
+the book and a v2 of the book … same story, just v2 is dolled up."*
+
+### 11.1 The full regeneration pass was wrong, and the blind read is what proved it
+
+§10 was building toward regenerating all 475 beats. That would have been a mistake, and the
+author named it before a token was spent on it: **the three versions of a beat are different
+stories.** Same brief, same events line, and each attempt still commits to its own specifics —
+which family the arm belongs to, what the probe does when it slips, what Pixel says at the counter.
+Later beats lean on those specifics. Regenerate beat 77 and beat 78 refers to a scene that no
+longer happened; regenerate all 475 in order and the result is a coherent novel sitting on an
+outline, a ledger and 475 event summaries that all describe a different one.
+
+The blind read (§10, published as an artifact) produced a second finding that matters more than the
+one it was designed to get: at reader level the author could not separate the book's own text from
+two cold regenerations — *"every single one is really good."* Parity means the writer is no longer
+what makes the book worse, and it also means **taste cannot choose between them**. So the pass had
+to become something other than "write it again".
+
+### 11.2 The operation that is right for a finished book
+
+The book's version is the **spine**; the two regenerations are a **quarry**. Per beat:
+
+1. write the beat twice as dry runs (full context, then lean) — nothing saved, no post-write
+   extraction, so no ledger learns from prose that will not exist;
+2. **one merge call** given the book's text plus both drafts (`BeatMergeService`);
+3. **test** — `SpineCheck` (deterministic, free: every numeral, spelled-out number and multi-word
+   proper name of the original must survive) + `DraftGate` + one `BriefVerifier` call that is shown
+   the original *as established canon*; one retry with the failures as constraints;
+4. save as `BeatWriteReason.AuthorMerge`, or **keep the original** — a beat that cannot pass twice
+   is left exactly as it was.
+
+`prose --merge-beats --slug <slug> [--from N] [--to N] [--limit N] [--resume] --yes`, resumable
+from its JSONL report so a multi-hour run survives a Hub restart.
+
+### 11.3 The rules the merge is held to — the author's, not the engine's
+
+The first prompt was defensive ("returning the book verbatim is valid and common") and returned
+**100% unchanged** on a three-beat sample. The author supplied the real standard:
+
+> **A) The rule of cool. B) Learn something new about this world every beat.**
+
+with the working instruction *"take these 3 and make it into one version, the best version of
+itself."* Rewritten around those two rules inside the spine constraint, the same pipeline started
+producing merges. What may never be added is a **plot event** — an arrival, a message that carries
+information, a fight, an injury, a reversal, a decision the beat did not already make — because the
+next chapter is written assuming those did not happen here. New *world detail* is the point, and is
+allowed to extend anything the book already names.
+
+### 11.4 Measured
+
+| | |
+|---|---|
+| First prompt, 3 beats (book's opening) | 3 unchanged, 0 merged |
+| Two-rules prompt, 4 mid-book beats | 2 merged, 2 kept (both overran into the next beat) |
+| After the merger was shown the brief's stop line | 1 of those 2 now merges |
+| Cost | ~$0.20–0.35 per beat (2 drafts + Opus merge + Haiku verifier) |
+| Growth on a merged beat | #17535: 1,409 → 2,501 chars |
+
+Beat #17535 is the worked example: spine intact (the E.L.F. Dormant, the seam, eleven years, the
+carrier, Ledger's printout, the demand that closes it), and the added material is *world mechanism*
+— a bench modified with a pocket "by someone who understood how to make a space carry more than it
+said aloud", the registry taxonomy the device is absent from (not corpo, not Lotus, not the
+Continuity Office), signature degradation used to date it before the relay was installed — plus one
+line built to be re-read: *"Eleven years someone had been reading him like a chart, and he'd never
+felt the pen."*
+
+Four beats were merged by hand with the author first (#17369, #17399, #17402, #17442), and those
+merges are what the prompt was written from.
+
+### 11.5 The free audit the walk produces
+
+Every report row carries the beat's **pre-pass event-summary state** and every **capitalised name
+in the final prose that is not in the entity graph**. Walking 475 beats therefore also produces the
+outline and entity worklist the author asked for — as findings, never auto-applied. Already found
+this way: BCODA2 beat #17402's stored summary had War Dog retreating up the stairwell when the book
+has Kyle going up and the stair collapsing under him. Both regenerations dramatized the summary and
+the gate passed them, because the summary is what the brief is built from. **A lossy summary makes
+the gate enforce a fiction** — which is why the merge pass reads the book's text, not its index.
+
+### 11.6 What this settles about the writer
+
+`--merge-beats` is not a rewriter and does not weaken RFC 0009. It runs only when the author invokes
+it, only on the book they name, its output is admitted only if the spine survives and the gate
+passes, and its failure mode is *keep the original*. The generation writer (§3) remains for beats
+that do not exist yet. The two together are the answer to "make it a better book": the writer writes
+what is not written, and the merge polishes what is, against its own text.
