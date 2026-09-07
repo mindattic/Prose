@@ -199,3 +199,53 @@ separate from ordinary edits.
   `FindingApply`, or `TrinityArbitration`.
 - `prose --audit-book --full` on an unchanged book leaves `Beat.Version` unchanged for every beat.
   **This is the test that would have caught the whole defect**, and it does not exist today.
+
+---
+
+## 10. Status — 2026-09-06 (late)
+
+| Phase | Commit | State |
+|---|---|---|
+| 0 — `--edit-distribution` | `bf26761e0` | shipped; baseline recorded in §1 |
+| 1–2 — the seven deletions | `24a97a9d4` | shipped; 28 files, +115 / −2,506; Hub redeployed |
+| 3 — required `BeatWriteReason` | `950e4911b` | shipped; migration `AddBeatLastWriteReason` applied at Hub start (confirmed by a full-entity read through the new Hub) |
+| 3b — direct `beat.Text =` writers | — | **open** (see below) |
+| 4 — findings diet | — | open; the `[Cliche]` producers are gone and its rows dismissed |
+| 5 — deterministic reflow | — | superseded: reflow is now byte-identical-or-refused, so a model-free rewrite is no longer needed |
+
+**Acceptance (§9), measured:**
+
+- Line 1 — every `UpdateBeatText*Async` caller passes a reason: **13 / 13**, compiler-enforced.
+- Line 2 — no audit/score/checklist/finding path reaches beat text: **true for every path through
+  the workbench.** Not yet true for the direct writers in 3b.
+- Line 3 — FREE `--audit-book` on BCODA: **475 beats compared, 0 `Version` counters moved,
+  `TotalWrites` 1,920 → 1,920. PASS.** DEEP/FULL are where `SelfHealAsync` lived; it no longer
+  exists to run.
+
+**Corrections to this RFC as first written:**
+
+- §3 item 6 overstated `ProseReflowService`: it was never "free to change words" — a word-token
+  guard bounded it. What it *could* do was add `?` and swap said→asked on a model's reading of a
+  sentence, which is still an LLM altering accepted prose. Reduced to paragraph-only; the only
+  accepted output is byte-identical once whitespace is collapsed.
+- `prose --duel` was misdescribed in review as an LLM-candidate writer. Its candidate is the
+  **author's own file** (`--candidate <path>`); the vote can only block the write. Kept, as
+  `AuthorEdit`. An approval to delete it was given on the misdescription and was not acted on.
+- `FindingApply` is not a `BeatWriteReason` member: `FindingApplyService` writes `beat.Text`
+  directly and never passes through the workbench. It is a 3b item.
+
+**Phase 3b — the remaining gap.** These set `beat.Text` without the workbench and therefore
+without a reason. Each must either route through `UpdateBeatTextAsync` or stamp
+`LastWriteReason` itself before acceptance line 2 is fully true:
+
+| Writer | Nature | Proposed reason |
+|---|---|---|
+| `FindingApplyService` | deterministic application of a stored `SuggestedFix` | a new `FindingApply` member |
+| `EpisodeAudioService` (via `ChapterRecordingService`) | audiobook path writing canon text | `AuthorEdit` or a new `Narration` member — needs a read |
+| `DuplicateEntityScanService` | entity-tag GUID rename across beats | `StructuralSplit`-class: tags only, never words — needs a new `TagMaintenance` member |
+| `BeatVerificationService` | strips entity tags | same |
+| `DistributedWorkerCoordinator` | writes generated prose | `Generation` |
+
+Also noted while measuring: `Beat.WasCorrected` is set by the workbench on **every** write, author
+or otherwise. It is not evidence of automation and should not be read as such; `Version` and the
+retelling-book control group are.
