@@ -404,3 +404,70 @@ stopped them, so it is the thing that gates the door now.
 - **Phase 0 run 2** in progress with the corrected brief; results and the author's blind read go
   in §10. **Not started:** step 4 (cuts — waits on run 2), step 5 (tier ceilings), step 7 (docs),
   step 8, and the full BCODA2 pass.
+
+## 10. Phase 0 — run 2 (2026-09-07, brief with events, calibrated verifier, POV from map only)
+
+Five BCODA2 beats × two arms, dry runs, nothing saved. **Full** = every stage as today plus the
+brief and gate; **Lean** = tiers A–D only (no finding loop-backs, story-science, blueprint slice,
+offscreen chart, style anchors, tension, collision). The gate ran on both.
+
+| Beat | Role | Full | Lean |
+|---|---|---|---|
+| #17369 | dialogue (Kyle/Pixel, prosthetic arm) | **refused** ×2 — "Kyle leaves exact change on the workbench" | **refused** ×2 — "someone brings the arm in tomorrow (minimal impact)" |
+| #17402 | combat (War Dog opens) | pass after 1 retry | pass first try |
+| #17448 | transition (ride home) | pass | **refused** — Mira's warning, "the Antiquarian", the file moving through markets |
+| #17442 | chapter opener (Sable's contract) | pass | **refused** — the Lotus will contact him within 48 h |
+| #17399 | chapter close (Pixel returns) | pass | pass |
+
+Gate outcome: **Full 4/5 saved-able, Lean 2/5.** Run 1 (description-only brief) had been 6/10 with
+different casualties; the events line fixed the "wrote a fine scene about the wrong thing" failure
+(no run-2 refusal is about a missing event). The remaining refusals split two ways: three are
+plausibly right (an invented contact protocol; Mira/Antiquarian/markets pulled in from memory
+that the brief did not call for), and two are the verifier being stricter than a reader would be
+(exact change on a bench; "minimal impact" in its own words). The verifier prompt now carries a
+materiality test ("would a later chapter be wrong to ignore it?") — not yet re-measured.
+
+Per-write LLM calls (trace, `--batch`; the second arm always ran with a warm entity stack, so the
+Full/Lean embed difference is order, not tier E):
+
+| Beat / arm | Calls | Chat | Embed | of which `EntityContextService` embeds | Cost | Wall |
+|---|---|---|---|---|---|---|
+| #17369 full / lean | 56 / 31 | 4 / 6 | 52 / 25 | 44 / 22 | $0.049 / $0.071 | 53 s / 46 s |
+| #17402 full / lean | 56 / 29 | 4 / 4 | 52 / 25 | 44 / 22 | $0.049 / $0.048 | 39 s / 19 s |
+| #17448 full / lean | 54 / 32 | 2 / 6 | 52 / 26 | 45 / 23 | $0.024 / $0.072 | 22 s / 41 s |
+| #17442 full / lean | 54 / 31 | 3 / 6 | 51 / 25 | 44 / 22 | $0.030 / $0.077 | 34 s / 41 s |
+| #17399 full / lean | 45 / 29 | 2 / 4 | 43 / 25 | 39 / 22 | $0.024 / $0.046 | 24 s / 25 s |
+
+What the numbers say, and no more:
+
+- **Chat calls per write are now 2–6** (draft, verifier, at most one retry of each). On MxG they
+  were 15. The post-write cluster did not run here (dry run); with it, add the one extraction call.
+- **The fan-out that is left is embeddings, and it is one loop:** `EntityContextService.
+  ExpandEdgesAsync` re-embedded every depth-0 and depth-1 entity's *name* to find neighbours —
+  vectors the `EntityEmbeddings` table already held. 39–45 HTTP round-trips and 9–12 s per write.
+  Fixed the same night (`caa382fc9`, `FindSimilarToEntityAsync`: cosine against the stored vector,
+  in SQL, zero calls); measured below in §10.1.
+- **A refusal doubles the cost** (two drafts, two verifier calls): the lean arm's higher cost is
+  its refusal rate, not its prompt.
+- **Lean did not win on brief compliance in this sample.** Two of its three refusals pulled plot
+  from memory that the brief did not ask for. Five beats is not a verdict on tier E; it is a reason
+  not to cut tier E on the strength of the MxG intuition alone. The author's blind read (the page
+  published 2026-09-07, key in the scratchpad) is the fourth score in §4 and is pending.
+
+**Decision rule check (§4):** no tier-E block is re-admitted or removed yet — the blind read is
+missing, and the verifier moved between runs. Step 4 waits.
+
+### 10.1 After the stored-vector fix — one dry write of #17399 on the deployed Hub
+
+| | Before (run 2, full arm) | After (`caa382fc9`) |
+|---|---|---|
+| Total LLM+embedding calls | 45 | **11** |
+| Chat | 2 | 4 (draft, verifier, retry, verifier) |
+| Embedding | 43 | **7** (style anchors ×2, DocContext ×2, EntityContext ×2, X-ray ×1) |
+| `EntityContextService` embeds | 39 | **2** |
+| Cost | $0.024 | $0.048 (a retry doubled the draft) |
+| Wall time | 24 s | 52 s (two drafts + two verifier calls) |
+
+The §6 target "≤ 10 total calls" is met on a first-try pass (9) and missed by one on a retry.
+The remaining wall time is the two model calls the design wants (draft, verifier) — the loop
+the writer pays for now is the loop that does the writing and the checking, and nothing else.
