@@ -939,8 +939,46 @@ public class NodeWorkbenchService
         // One contiguous block of Beat.Number values, allocated as we walk the tree.
         var nextNumber = new[] { (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1 };
 
+        // Old→new beat id map, filled by the recursion, so the structural blueprint's per-beat
+        // tags can be carried over pointing at the copy's beats (2026-09-07).
+        var beatIdMap = new Dictionary<Guid, Guid>();
         var (rootId, rootSlug) = await CloneNodeSubtreeAsync(
-            db, sourceId, newTitle, source.ParentNodeId, siblingMaxSort + 100.0, nextNumber, code, status, isRoot: true, ct);
+            db, sourceId, newTitle, source.ParentNodeId, siblingMaxSort + 100.0, nextNumber, code, status, isRoot: true, beatIdMap, ct);
+
+        // Structural blueprint (RFC 0012 §4, 2026-09-07): a duplicate used as a writer testbed
+        // must satisfy the locked-pipeline gate and get the same per-beat blueprint slice the
+        // source gets, or the comparison is not like-for-like. Copied as a fresh row; beat tags
+        // are remapped through beatIdMap and dropped (not mis-pointed) when a source beat had no
+        // copy (e.g. a disabled membership).
+        var srcBlueprint = await db.NodeStructuralBlueprints.IgnoreQueryFilters().AsNoTracking()
+            .Include(bp => bp.BeatTags)
+            .FirstOrDefaultAsync(bp => bp.NodeId == sourceId, ct);
+        if (srcBlueprint != null)
+        {
+            var bpId = Guid.NewGuid();
+            db.NodeStructuralBlueprints.Add(new NodeStructuralBlueprint
+            {
+                Id = bpId, NodeId = rootId, UniverseId = srcBlueprint.UniverseId,
+                HasSubplot = srcBlueprint.HasSubplot, SubplotSummary = srcBlueprint.SubplotSummary, SubplotTheme = srcBlueprint.SubplotTheme,
+                TemporalScheme = srcBlueprint.TemporalScheme, AnachronyPlan = srcBlueprint.AnachronyPlan,
+                ResolutionMode = srcBlueprint.ResolutionMode, ResolutionNote = srcBlueprint.ResolutionNote,
+                MoralPolarity = srcBlueprint.MoralPolarity, MoralPolarityNote = srcBlueprint.MoralPolarityNote,
+                EscalationCurveJson = srcBlueprint.EscalationCurveJson, EventTypePaletteJson = srcBlueprint.EventTypePaletteJson,
+                FormDevice = srcBlueprint.FormDevice, EndingStyle = srcBlueprint.EndingStyle, NoEpilogue = srcBlueprint.NoEpilogue, EndingNote = srcBlueprint.EndingNote,
+                IntertextualAnchorsJson = srcBlueprint.IntertextualAnchorsJson, Granularity = srcBlueprint.Granularity,
+                GeneratedBy = srcBlueprint.GeneratedBy, GeneratedAt = srcBlueprint.GeneratedAt, UpdatedAt = DateTime.UtcNow,
+            });
+            foreach (var tag in srcBlueprint.BeatTags)
+            {
+                if (!beatIdMap.TryGetValue(tag.BeatId, out var newBeatId)) continue;
+                db.Set<NodeStructuralBlueprintBeatTag>().Add(new NodeStructuralBlueprintBeatTag
+                {
+                    Id = Guid.NewGuid(), BlueprintId = bpId, BeatId = newBeatId,
+                    TagType = tag.TagType, Note = tag.Note,
+                    Confirmed = tag.Confirmed, ConfirmedAt = tag.ConfirmedAt, ConfirmedBySessionId = tag.ConfirmedBySessionId,
+                });
+            }
+        }
 
         await db.SaveChangesAsync(ct);
         await tx.CommitAsync(ct);
@@ -952,7 +990,8 @@ public class NodeWorkbenchService
     /// entities on <paramref name="db"/>. The caller owns the transaction + save.</summary>
     private async Task<(Guid Id, string Slug)> CloneNodeSubtreeAsync(
         ProseDbContext db, Guid srcNodeId, string? titleOverride,
-        Guid? newParentId, double sortKey, int[] nextNumber, string? rootNodeCode, string status, bool isRoot, CancellationToken ct)
+        Guid? newParentId, double sortKey, int[] nextNumber, string? rootNodeCode, string status, bool isRoot,
+        Dictionary<Guid, Guid> beatIdMap, CancellationToken ct)
     {
         // IgnoreQueryFilters(): explicit srcNodeId, not an ambient scope (same bug class found
         // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
@@ -979,6 +1018,16 @@ public class NodeWorkbenchService
         clone.TtsEngine       = src.TtsEngine;
         clone.ParentNodeId    = newParentId;
         clone.SortKey         = sortKey;
+        // The plan, not just the prose (2026-09-07, RFC 0012 §4): a duplicate without the
+        // outline fails the locked-pipeline gate and loses the DCM node tier; without the
+        // narrative mode and default location the writer's gates evaluate differently from the
+        // source. These were silently dropped before, which made any duplicate useless as a
+        // like-for-like testbed.
+        clone.NodeOutline            = src.NodeOutline;
+        clone.NodeOutlineGeneratedAt = src.NodeOutlineGeneratedAt;
+        clone.NarrativeMode          = src.NarrativeMode;
+        clone.DefaultLocation        = src.DefaultLocation;
+        clone.PreviousNodeId         = src.PreviousNodeId;
         db.Nodes.Add(clone);
 
         // Direct beats in reading order → fresh Beat rows. Audio
@@ -1011,11 +1060,26 @@ public class NodeWorkbenchService
                 PaceHint       = s.PaceHint,
                 GapAfterMs     = s.GapAfterMs,
                 VoiceId        = s.VoiceId,
+                // Authorial-intent and derived-summary fields (2026-09-07): the brief a writer
+                // testbed reads comes from Description/Subtext/TargetWords; the event summary and
+                // place are hash-stamped derivatives that stay valid because TextHash is copied.
+                Subtext                = s.Subtext,
+                DescriptionHash        = s.DescriptionHash,
+                EventSummary           = s.EventSummary,
+                EventSummaryHash       = s.EventSummaryHash,
+                PlaceName              = s.PlaceName,
+                PlaceEntityId          = s.PlaceEntityId,
+                PlaceExtractedFromHash = s.PlaceExtractedFromHash,
+                StoryPosition          = s.StoryPosition,
+                // RFC 0009: every Beats.Text write declares itself. A copied row is text that
+                // arrived verbatim from elsewhere — Import is the honest member.
+                LastWriteReason        = nameof(BeatWriteReason.Import),
                 CreatedAt      = now,
                 UpdatedAt      = now,
             };
             db.Beats.Add(nb);
             db.BeatNodes.Add(new BeatNode { NodeId = newId, BeatId = nb.Id, SortKey = row.SortKey });
+            beatIdMap[s.Id] = nb.Id;
         }
 
         // Recurse into child nodes, preserving their order.
@@ -1027,7 +1091,7 @@ public class NodeWorkbenchService
             .Select(s => new { s.Id, s.SortKey })
             .ToListAsync(ct);
         foreach (var child in children)
-            await CloneNodeSubtreeAsync(db, child.Id, null, newId, child.SortKey, nextNumber, rootNodeCode, status, isRoot: false, ct);
+            await CloneNodeSubtreeAsync(db, child.Id, null, newId, child.SortKey, nextNumber, rootNodeCode, status, isRoot: false, beatIdMap, ct);
 
         return (newId, slug);
     }
