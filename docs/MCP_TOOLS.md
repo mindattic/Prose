@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**288 tools** across **50 tool families.**
+**285 tools** across **50 tool families.**
 
 ## Families
 
@@ -45,7 +45,7 @@
 | [Hub](#hub) | 3 |
 | [Ledger](#ledger) | 4 |
 | [Lore Triple](#lore-triple) | 8 |
-| [Narrative Science](#narrative-science) | 4 |
+| [Narrative Science](#narrative-science) | 1 |
 | [Node](#node) | 39 |
 | [Noun Consistency](#noun-consistency) | 3 |
 | [One Shot Generation](#one-shot-generation) | 1 |
@@ -1315,32 +1315,12 @@ Resolve a contradiction. Winner = A | B (one claim wins → CANONICAL, the other
 
 <sub>`NarrativeScienceTools`</sub>
 
-### `analyze_sacred_flaw`
-
-Analyze or scaffold a character's Sacred Flaw (their theory of control) per Will Storr's Science of Storytelling. The Sacred Flaw is the character's core false belief about reality — the strategy they use to control their environment. Returns: theory_of_control (the false belief), origin_damage (the formative wound), secret_dread (what they fear if they drop the flaw), hero_maker_narrative (how they frame it as a strength), material_gains (career/status advantages that make change terrifying), confidence (high/medium/low), and a diagnostic paragraph on what story arc this flaw enables. Pass scaffold=true to generate a plausible flaw from the character's existing description when none is explicitly documented.
-
-- `characterIdOrSlug` (string, required) — Character entity ID (GUID) or slug.
-- `scaffold` (bool, optional) — If true, generate a plausible flaw scaffold from available description (use when flaw is not yet documented). Default false = analyze existing data.
-
 ### `check_antihero_empathy`
 
 Evaluate whether a beat activates the four antihero empathy levers per Will Storr. The four levers: (1) pre_deflation — a worse villain or more selfish character is visible, making the antihero look better; (2) vulnerability_pain — the beat shows the wound or fear beneath the surface; (3) genuine_virtue — the antihero acts selflessly, even briefly; (4) altruistic_punishment — the antihero punishes selfishness the reader also wants punished. Returns per-lever verdict with evidence, levers_active count (0–4), empathy_score 1–10, a diagnosis paragraph, and an improvement hint. Accepts character id (GUID) or slug.
 
 - `characterIdOrSlug` (string, required) — Character entity ID (GUID) or slug.
 - `beatText` (string, required) — The beat's prose text to evaluate.
-
-### `check_dramatic_question`
-
-Score how well a beat poses or answers the Dramatic Question ('who is this person REALLY?') per Will Storr's framework. The question operates on two levels simultaneously: surface (plot — what is happening) and subconscious (character — what this reveals about the character's core belief / theory of control). Strong beats address both; weak beats address only the surface. Returns: surface_score 1–10, subconscious_score 1–10, overall_score 1–10, plain-English summaries of each level, dramatic_question_active flag, and one concrete improvement hint. Optionally provide character_id_or_slug to give the LLM context about whose theory of control is being tested.
-
-- `beatText` (string, required) — The beat's prose text to evaluate.
-- `characterIdOrSlug` (string, optional) — Optional character entity ID or slug for additional context (improves subconscious scoring). Omit to score blind.
-
-### `map_five_act_structure`
-
-Map a node's beats to Will Storr's five-act character-change arc. Act I: establish the protagonist's flaw + ignition event (unexpected change that pressures the flaw). Act II: character applies old theory of control, it partially works. Act III: transformation trigger — the flaw fails catastrophically or wins at too high a cost. Act IV: dark night — all fears realized, old theory stripped. Act V: God moment — dramatic question answered definitively (comic: transformation; tragic: doubling down). Returns: beat assignments per act, ignition_beat / trigger_beat / god_moment_beat numbers, structural_gaps list, structural_strengths list, resolution type (comic/tragic/unclear), and an overall assessment paragraph. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Node
 

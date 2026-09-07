@@ -2700,19 +2700,6 @@ if (args.Contains("--plant-audit") || args.Contains("--list-plants") || args.Con
     return;
 }
 
-// CLI mode: Will Storr narrative-science frameworks — sacred flaw, dramatic question,
-// five-act structure. Three subcommands (scene-anatomy removed 2026-08-13 — redundant
-// per-beat cost sink with no automated caller, see NarrativeScienceService.cs):
-//   prose --narrative-science sacred-flaw --character <slug|id> [--scaffold]
-//   prose --narrative-science dramatic-question (--slug <s> | --id <beatId>) [--character <slug|id>]
-//   prose --narrative-science five-act --slug <nodeSlug>
-//   (add --json to any subcommand for raw JSON output)
-if (args.Contains("--narrative-science"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("NarrativeScienceCli", args);
-    return;
-}
-
 // prose --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-code SM1] [--draft] [--status ready]
 if (args.Contains("--clone-book"))
 {

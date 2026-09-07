@@ -1058,7 +1058,6 @@ public static class ServiceCollectionExtensions
         // instead of dramatized, flags an ending that never engages the opening's
         // value-question. Wired into BookHealthService's DEEP tier — no standalone CLI,
         // same as its FiveAct/DramaticQuestion siblings.
-        services.AddSingleton<ThemeCoherenceService>();
 
         // Plant/Payoff registry — tracks seeded narrative details and their payoffs.
         // Enforces "reward re-reading without requiring it."
