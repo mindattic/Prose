@@ -175,6 +175,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // --last) and resolves the beat's own chapter/book/universe via IgnoreQueryFilters() —
         // same shape as --beat-archive above (see BeatWriteTraceCli).
         "--beat-write-trace",
+        // RFC 0012 §3.4 standalone gate: explicit --beat-id, resolves everything from the beat's
+        // own rows via IgnoreQueryFilters() (see GateCheckCli).
+        "--gate-check",
         // Strand Progress Dashboard: every non-archived book across every universe, by design
         // (IgnoreQueryFilters() — see ProgressCli's own doc comment).
         "--progress",
@@ -601,7 +604,11 @@ if (args.Contains("--description-drift"))
 //   prose --tuned-read --slug <slug> [--dry] [--no-extract] [--max-candidates N] [--json]
 if (args.Contains("--tuned-read"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("TunedReadCli", "--tuned-read", args);
+    // --dry runs the whole deterministic half for free; a real run bills one Sonnet call per
+    // uncached candidate. Same name for both would teach the estimator the command is free.
+    var dry = args.Contains("--dry");
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync(
+        "TunedReadCli", dry ? "--tuned-read --dry" : "--tuned-read", args);
     return;
 }
 
@@ -976,7 +983,11 @@ if (args.Contains("--booktok"))
         Environment.ExitCode = await HubCliClient.ForwardAsync("BookTokCli", args);
         return;
     }
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("BookTokCli", "--booktok", args);
+    // kling/runway/sora charge very different $/clip — one blended name/history mis-teaches
+    // the estimator whichever provider runs most often is the price for all three.
+    var providerIdx = Array.IndexOf(args, "--provider");
+    var provider = providerIdx >= 0 && providerIdx + 1 < args.Length ? args[providerIdx + 1] : "unknown";
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("BookTokCli", $"--booktok --provider={provider}", args);
     return;
 }
 
@@ -1633,7 +1644,15 @@ if (args.Contains("--mark-canon"))
 //   prose --harvest-voice (--slug <s> | --id <id> | --all-80 | --pending | --apply <guid> | --reject <guid>) [--force]
 if (args.Contains("--harvest-voice"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("HarvestVoiceCli", "--harvest-voice", args);
+    // --pending/--apply/--reject/--apply-all are pure DB reads/writes, no LLM call; --all-80/
+    // --canon/--canon-prose harvest every qualifying node (many books); --slug/--id harvests one.
+    // One blended name taught the estimator the whole command was as cheap as the free ops.
+    string key = args.Contains("--pending") || args.Contains("--apply") || args.Contains("--reject") || args.Contains("--apply-all")
+        ? "--harvest-voice --free"
+        : args.Contains("--all-80") || args.Contains("--canon") || args.Contains("--canon-prose")
+            ? "--harvest-voice --bulk"
+            : "--harvest-voice --single";
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("HarvestVoiceCli", key, args);
     return;
 }
 
@@ -2348,6 +2367,15 @@ if (args.Contains("--beat-archive"))
     return;
 }
 
+// prose --gate-check --beat-id <guid> --file <candidate.txt> [--spine <original.txt>] [--json]
+// RFC 0012 §3.4: run the writer's gate (brief, free checks, one verifier call, optional spine
+// test against an original) on any text, without saving. One Haiku call.
+if (args.Contains("--gate-check"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("GateCheckCli", args);
+    return;
+}
+
 // prose --beat-write-trace (--beat-id <guid> | --last) [--json]
 // Single-source-writer RFC, step one: every LLM + embedding call one beat write made, by stage,
 // with tokens/cost/wall time, plus the per-stage execution log and gate-skipped stages.
@@ -2582,7 +2610,10 @@ if (args.Contains("--duplicate-entity-scan-broad"))
 // BookEntityReconciliationService for the two-stage cost-bounded design.
 if (args.Contains("--reconcile-book-entities"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ReconcileBookEntitiesCli", "--reconcile-book-entities", args);
+    // --all walks every book in the universe; --id/--slug reconciles one. Blended history under
+    // one name taught the estimator the whole-corpus run cost the same as a single book.
+    var key = args.Contains("--all") ? "--reconcile-book-entities --all" : "--reconcile-book-entities --single";
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ReconcileBookEntitiesCli", key, args);
     return;
 }
 
