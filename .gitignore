@@ -117,3 +117,6 @@ audit-haiku-*/
 tools/kdp/manifest.json
 tools/kdp/kdp-panel.user.js
 .claude/quicksave.md
+
+# Portable agent session state (command definitions under .prose/commands are tracked).
+.prose/agent-session.json

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mindattic:prose-agent-operation-catalog",
+  "protocolVersion": "1.0",
+  "description": "Portable agent operations. The complete raw MCP/CLI inventories remain generated separately.",
+  "operations": [
+    {"id":"bootstrap","transport":["cli"],"access":"read","scope":"optional","cost":"none","approval":"none","status":"active","cli":"prose agent bootstrap --json"},
+    {"id":"provider_status","transport":["cli"],"access":"read","scope":"global","cost":"optional","approval":"none","status":"active","cli":"prose --provider-status --json"},
+    {"id":"list_universes","transport":["mcp","cli"],"access":"read","scope":"global","cost":"none","approval":"none","mcp":"list_universes"},
+    {"id":"read_context","transport":["mcp","cli","http"],"access":"read","scope":"required","cost":"none","approval":"none","mcp":"doc_context_status"},
+    {"id":"create_change_proposal","transport":["mcp","cli","http"],"access":"proposal","scope":"required","cost":"none","approval":"none","status":"planned"},
+    {"id":"approve_change_proposal","transport":["cli"],"access":"approval","scope":"required","cost":"none","approval":"human-interactive","status":"planned"},
+    {"id":"apply_change_proposal","transport":["mcp","cli","http"],"access":"write","scope":"required","cost":"reported","approval":"grant-required","status":"planned"},
+    {"id":"verify_change","transport":["mcp","cli","http"],"access":"read","scope":"required","cost":"none","approval":"none","status":"planned"},
+    {"id":"generate_scene","transport":["mcp","cli","http"],"access":"ephemeral-write","scope":"required","cost":"reported","approval":"none","mcp":"generate_scene","http":"POST /api/generate-scene"},
+    {"id":"save_handoff","transport":["mcp","cli"],"access":"session-write","scope":"required","cost":"none","approval":"none","status":"planned"},
+    {"id":"load_handoff","transport":["mcp","cli"],"access":"read","scope":"required","cost":"none","approval":"none","status":"planned"}
+  ]
+}

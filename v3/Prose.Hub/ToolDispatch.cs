@@ -25,7 +25,12 @@ namespace Prose.Hub;
 /// </summary>
 public static class ToolDispatch
 {
-    public sealed record InvokeRequest(string ToolClass, string Method, JsonElement? Args);
+    public sealed record InvokeRequest(
+        string ToolClass,
+        string Method,
+        JsonElement? Args,
+        string? Universe = null,
+        bool ScopeExplicit = false);
 
     private static readonly JsonSerializerOptions JsonOpts = new(JsonSerializerDefaults.Web);
 
@@ -84,6 +89,51 @@ public static class ToolDispatch
     }
 
     private static async Task<(IResult Result, bool Success, string? Output, string? Error)> InvokeCoreAsync(InvokeRequest req, IServiceProvider sp)
+    {
+        var universe = sp.GetRequiredService<Prose.Core.Services.IUniverseContext>();
+        var requiresScope = LooksMutating(req.Method);
+        if (requiresScope && !req.ScopeExplicit)
+        {
+            return (Results.Json(new
+            {
+                error = "missing_universe",
+                operation = req.ToolClass + "." + req.Method,
+                message = "This operation can change Prose state and requires an explicit universe scope. " +
+                          "Select a universe in the MCP session before retrying."
+            }, statusCode: 400), false, null, "missing_universe");
+        }
+
+        Guid? flowUniverse = null;
+        if (!string.IsNullOrWhiteSpace(req.Universe))
+        {
+            var match = universe.ListUniverses()
+                .FirstOrDefault(u => string.Equals(u.Slug, req.Universe, StringComparison.OrdinalIgnoreCase));
+            if (match == null)
+                return (Results.Json(new { error = "unknown_universe", universe = req.Universe }, statusCode: 400), false, null, "unknown_universe");
+            flowUniverse = match.Id;
+            universe.SetFlowUniverse(flowUniverse);
+        }
+
+        try
+        {
+            return await InvokeCoreUnscopedAsync(req, sp);
+        }
+        finally
+        {
+            if (flowUniverse != null) universe.SetFlowUniverse(null);
+        }
+    }
+
+    private static bool LooksMutating(string method)
+    {
+        var name = method.EndsWith("Impl", StringComparison.Ordinal)
+            ? method[..^4]
+            : method;
+        var verbs = new[] { "create", "insert", "update", "delete", "remove", "set", "add", "apply", "write", "generate", "sync", "import", "restore", "reflow", "rebeat", "split", "join", "close", "start" };
+        return verbs.Any(v => name.StartsWith(v, StringComparison.OrdinalIgnoreCase));
+    }
+
+    private static async Task<(IResult Result, bool Success, string? Output, string? Error)> InvokeCoreUnscopedAsync(InvokeRequest req, IServiceProvider sp)
     {
         // Tool classes live in Prose.Mcp.dll (referenced project); search loaded assemblies by
         // simple name so callers don't need to know the fully-qualified namespace.

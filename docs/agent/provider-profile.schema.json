@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mindattic:prose-provider-profile",
+  "title": "Prose provider capability profile",
+  "type": "object",
+  "required": ["id", "role", "provider", "model", "capabilities", "fallbacks"],
+  "properties": {
+    "id": {"type":"string", "pattern":"^[a-z0-9._-]+$"},
+    "role": {"enum":["prose_generation","structured_extraction","reader_probe","review_judge","embedding"]},
+    "provider": {"type":"string"},
+    "model": {"type":"string"},
+    "capabilities": {"type":"array", "items":{"enum":["text","json","embeddings","prompt_cache","vision","tool_calling"]}},
+    "maxInputTokens": {"type":"integer", "minimum":1},
+    "maxOutputTokens": {"type":"integer", "minimum":1},
+    "costClass": {"enum":["free","local","low","standard","premium"]},
+    "fallbacks": {"type":"array", "items":{"type":"string"}}
+  },
+  "additionalProperties": false
+}

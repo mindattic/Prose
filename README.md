@@ -1,5 +1,9 @@
 # Prose
 
+> **Provider-neutral agent entrypoint:** start with [`AGENTS.md`](AGENTS.md) and
+> [`docs/agent/PROSE_PROTOCOL.md`](docs/agent/PROSE_PROTOCOL.md). MCP is the preferred transport;
+> `prose agent bootstrap --json` is the CLI fallback for any agent host.
+
 **A canon-grounded, voice-disciplined story-generation engine for a cyberpunk century — and every other universe stood up alongside it.**
 
 > **This README is the engineering tour — exhaustive, current, and stored in the database.**

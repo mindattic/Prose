@@ -1,0 +1,1423 @@
+﻿{
+    "standard":  "MindAttic Agent Standard",
+    "protocolVersion":  "1.0",
+    "generatedAt":  "2026-09-08T04:18:36.4118164Z",
+    "items":  [
+                  {
+                      "scope":  "project",
+                      "project":  "Audible-To-GoodReads",
+                      "kind":  "command",
+                      "path":  "Audible-To-GoodReads\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Audible-To-GoodReads",
+                      "kind":  "command",
+                      "path":  "Audible-To-GoodReads\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Audible-To-GoodReads",
+                      "kind":  "hook",
+                      "path":  "Audible-To-GoodReads\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Automata",
+                      "kind":  "command",
+                      "path":  "Automata\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Automata",
+                      "kind":  "command",
+                      "path":  "Automata\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Automata",
+                      "kind":  "skill",
+                      "path":  "Automata\\.claude\\skills\\verify-automata-ui\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Automata",
+                      "kind":  "hook",
+                      "path":  "Automata\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ChiMesh",
+                      "kind":  "command",
+                      "path":  "ChiMesh\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ChiMesh",
+                      "kind":  "command",
+                      "path":  "ChiMesh\\.claude\\commands\\do.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ChiMesh",
+                      "kind":  "command",
+                      "path":  "ChiMesh\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ChiMesh",
+                      "kind":  "command",
+                      "path":  "ChiMesh\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ChiMesh",
+                      "kind":  "hook",
+                      "path":  "ChiMesh\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ChiMesh",
+                      "kind":  "hook",
+                      "path":  "ChiMesh\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ChiMesh",
+                      "kind":  "instructions",
+                      "path":  "ChiMesh\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Claudia",
+                      "kind":  "command",
+                      "path":  "Claudia\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Claudia",
+                      "kind":  "command",
+                      "path":  "Claudia\\.claude\\commands\\do.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Claudia",
+                      "kind":  "command",
+                      "path":  "Claudia\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Claudia",
+                      "kind":  "command",
+                      "path":  "Claudia\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Claudia",
+                      "kind":  "hook",
+                      "path":  "Claudia\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Claudia",
+                      "kind":  "hook",
+                      "path":  "Claudia\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Claudia",
+                      "kind":  "instructions",
+                      "path":  "Claudia\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Cursory",
+                      "kind":  "command",
+                      "path":  "Cursory\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Cursory",
+                      "kind":  "command",
+                      "path":  "Cursory\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Cursory",
+                      "kind":  "command",
+                      "path":  "Cursory\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Cursory",
+                      "kind":  "hook",
+                      "path":  "Cursory\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Cursory",
+                      "kind":  "hook",
+                      "path":  "Cursory\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Cursory",
+                      "kind":  "instructions",
+                      "path":  "Cursory\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ExperimentEve",
+                      "kind":  "command",
+                      "path":  "ExperimentEve\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ExperimentEve",
+                      "kind":  "command",
+                      "path":  "ExperimentEve\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ExperimentEve",
+                      "kind":  "hook",
+                      "path":  "ExperimentEve\\.claude\\hooks\\prose-outbox.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ExperimentEve",
+                      "kind":  "hook",
+                      "path":  "ExperimentEve\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ExperimentRTS",
+                      "kind":  "command",
+                      "path":  "ExperimentRTS\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ExperimentRTS",
+                      "kind":  "command",
+                      "path":  "ExperimentRTS\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ExperimentRTS",
+                      "kind":  "hook",
+                      "path":  "ExperimentRTS\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Formicarium",
+                      "kind":  "command",
+                      "path":  "Formicarium\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Formicarium",
+                      "kind":  "command",
+                      "path":  "Formicarium\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Formicarium",
+                      "kind":  "hook",
+                      "path":  "Formicarium\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "GridGame2026",
+                      "kind":  "command",
+                      "path":  "GridGame2026\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "GridGame2026",
+                      "kind":  "command",
+                      "path":  "GridGame2026\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "GridGame2026",
+                      "kind":  "command",
+                      "path":  "GridGame2026\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "GridGame2026",
+                      "kind":  "skill",
+                      "path":  "GridGame2026\\.claude\\skills\\commit\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "GridGame2026",
+                      "kind":  "skill",
+                      "path":  "GridGame2026\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "GridGame2026",
+                      "kind":  "skill",
+                      "path":  "GridGame2026\\.claude\\skills\\revert\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "GridGame2026",
+                      "kind":  "hook",
+                      "path":  "GridGame2026\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "GridGame2026",
+                      "kind":  "hook",
+                      "path":  "GridGame2026\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "GridGame2026",
+                      "kind":  "instructions",
+                      "path":  "GridGame2026\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Hyperspace",
+                      "kind":  "command",
+                      "path":  "Hyperspace\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Hyperspace",
+                      "kind":  "command",
+                      "path":  "Hyperspace\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Hyperspace",
+                      "kind":  "hook",
+                      "path":  "Hyperspace\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "command",
+                      "path":  "IdiotProof\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "command",
+                      "path":  "IdiotProof\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "command",
+                      "path":  "IdiotProof\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "command",
+                      "path":  "IdiotProof\\.claude\\commands\\replays.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "skill",
+                      "path":  "IdiotProof\\.claude\\skills\\commit\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "skill",
+                      "path":  "IdiotProof\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "skill",
+                      "path":  "IdiotProof\\.claude\\skills\\discard\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "skill",
+                      "path":  "IdiotProof\\.claude\\skills\\replays\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "skill",
+                      "path":  "IdiotProof\\.claude\\skills\\revert\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "skill",
+                      "path":  "IdiotProof\\.claude\\skills\\run\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "hook",
+                      "path":  "IdiotProof\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "hook",
+                      "path":  "IdiotProof\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "IdiotProof",
+                      "kind":  "instructions",
+                      "path":  "IdiotProof\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "JoyceFit",
+                      "kind":  "command",
+                      "path":  "JoyceFit\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "JoyceFit",
+                      "kind":  "command",
+                      "path":  "JoyceFit\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "JoyceFit",
+                      "kind":  "hook",
+                      "path":  "JoyceFit\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MediaButler",
+                      "kind":  "command",
+                      "path":  "MediaButler\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MediaButler",
+                      "kind":  "command",
+                      "path":  "MediaButler\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MediaButler",
+                      "kind":  "command",
+                      "path":  "MediaButler\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MediaButler",
+                      "kind":  "skill",
+                      "path":  "MediaButler\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MediaButler",
+                      "kind":  "skill",
+                      "path":  "MediaButler\\.claude\\skills\\run\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MediaButler",
+                      "kind":  "hook",
+                      "path":  "MediaButler\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MediaButler",
+                      "kind":  "hook",
+                      "path":  "MediaButler\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MediaButler",
+                      "kind":  "instructions",
+                      "path":  "MediaButler\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Authentication",
+                      "kind":  "command",
+                      "path":  "MindAttic.Authentication\\.claude\\commands\\publish.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Authentication",
+                      "kind":  "command",
+                      "path":  "MindAttic.Authentication\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Authentication",
+                      "kind":  "command",
+                      "path":  "MindAttic.Authentication\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Authentication",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Authentication\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Authentication",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Authentication\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Authentication",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Authentication\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Bob",
+                      "kind":  "command",
+                      "path":  "MindAttic.Bob\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Bob",
+                      "kind":  "command",
+                      "path":  "MindAttic.Bob\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Bob",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Bob\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "command",
+                      "path":  "mindattic.com\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "command",
+                      "path":  "mindattic.com\\.claude\\commands\\fetch.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "command",
+                      "path":  "mindattic.com\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "command",
+                      "path":  "mindattic.com\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "skill",
+                      "path":  "mindattic.com\\.claude\\skills\\commit\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "skill",
+                      "path":  "mindattic.com\\.claude\\skills\\discard\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "skill",
+                      "path":  "mindattic.com\\.claude\\skills\\revert\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "skill",
+                      "path":  "mindattic.com\\.claude\\skills\\run\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "hook",
+                      "path":  "mindattic.com\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "hook",
+                      "path":  "mindattic.com\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindattic.com",
+                      "kind":  "instructions",
+                      "path":  "mindattic.com\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Cryptography",
+                      "kind":  "command",
+                      "path":  "MindAttic.Cryptography\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Cryptography",
+                      "kind":  "command",
+                      "path":  "MindAttic.Cryptography\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Cryptography",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Cryptography\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Deploy",
+                      "kind":  "command",
+                      "path":  "MindAttic.Deploy\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Deploy",
+                      "kind":  "command",
+                      "path":  "MindAttic.Deploy\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Deploy",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Deploy\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Deploy",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Deploy\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Deploy",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Deploy\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Helpers",
+                      "kind":  "command",
+                      "path":  "MindAttic.Helpers\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Helpers",
+                      "kind":  "command",
+                      "path":  "MindAttic.Helpers\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Helpers",
+                      "kind":  "command",
+                      "path":  "MindAttic.Helpers\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Helpers",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Helpers\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Helpers",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Helpers\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Helpers",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Helpers\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Ideas",
+                      "kind":  "command",
+                      "path":  "MindAttic.Ideas\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Ideas",
+                      "kind":  "command",
+                      "path":  "MindAttic.Ideas\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Ideas",
+                      "kind":  "command",
+                      "path":  "MindAttic.Ideas\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Ideas",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Ideas\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Ideas",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Ideas\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Ideas",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Ideas\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Launcher",
+                      "kind":  "command",
+                      "path":  "MindAttic.Launcher\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Launcher",
+                      "kind":  "command",
+                      "path":  "MindAttic.Launcher\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Launcher",
+                      "kind":  "command",
+                      "path":  "MindAttic.Launcher\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Launcher",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Launcher\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Launcher",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Launcher\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Launcher",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Launcher\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Legion",
+                      "kind":  "command",
+                      "path":  "MindAttic.Legion\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Legion",
+                      "kind":  "command",
+                      "path":  "MindAttic.Legion\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Legion",
+                      "kind":  "command",
+                      "path":  "MindAttic.Legion\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Legion",
+                      "kind":  "skill",
+                      "path":  "MindAttic.Legion\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Legion",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Legion\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Legion",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Legion\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Legion",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Legion\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Media",
+                      "kind":  "command",
+                      "path":  "MindAttic.Media\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Media",
+                      "kind":  "command",
+                      "path":  "MindAttic.Media\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Media",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Media\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Media",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Media\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Mobile",
+                      "kind":  "command",
+                      "path":  "MindAttic.Mobile\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Mobile",
+                      "kind":  "command",
+                      "path":  "MindAttic.Mobile\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Mobile",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Mobile\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Psst",
+                      "kind":  "command",
+                      "path":  "MindAttic.Psst\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Psst",
+                      "kind":  "command",
+                      "path":  "MindAttic.Psst\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Psst",
+                      "kind":  "command",
+                      "path":  "MindAttic.Psst\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Psst",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Psst\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Psst",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Psst\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Psst",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Psst\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.UiUx",
+                      "kind":  "command",
+                      "path":  "MindAttic.UiUx\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.UiUx",
+                      "kind":  "command",
+                      "path":  "MindAttic.UiUx\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.UiUx",
+                      "kind":  "hook",
+                      "path":  "MindAttic.UiUx\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.UiUx",
+                      "kind":  "hook",
+                      "path":  "MindAttic.UiUx\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.UiUx",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.UiUx\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Vault",
+                      "kind":  "command",
+                      "path":  "MindAttic.Vault\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Vault",
+                      "kind":  "command",
+                      "path":  "MindAttic.Vault\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Vault",
+                      "kind":  "command",
+                      "path":  "MindAttic.Vault\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Vault",
+                      "kind":  "skill",
+                      "path":  "MindAttic.Vault\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Vault",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Vault\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Vault",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Vault\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "MindAttic.Vault",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Vault\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "command",
+                      "path":  "mindatticcares.com\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "command",
+                      "path":  "mindatticcares.com\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "command",
+                      "path":  "mindatticcares.com\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "skill",
+                      "path":  "mindatticcares.com\\.claude\\skills\\commit\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "skill",
+                      "path":  "mindatticcares.com\\.claude\\skills\\discard\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "skill",
+                      "path":  "mindatticcares.com\\.claude\\skills\\revert\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "skill",
+                      "path":  "mindatticcares.com\\.claude\\skills\\run\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "hook",
+                      "path":  "mindatticcares.com\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "hook",
+                      "path":  "mindatticcares.com\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "mindatticcares.com",
+                      "kind":  "instructions",
+                      "path":  "mindatticcares.com\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "OpenCredentials",
+                      "kind":  "command",
+                      "path":  "OpenCredentials\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "OpenCredentials",
+                      "kind":  "command",
+                      "path":  "OpenCredentials\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "OpenCredentials",
+                      "kind":  "skill",
+                      "path":  "OpenCredentials\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "OpenCredentials",
+                      "kind":  "skill",
+                      "path":  "OpenCredentials\\.claude\\skills\\scan\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "OpenCredentials",
+                      "kind":  "hook",
+                      "path":  "OpenCredentials\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "OpenCredentials",
+                      "kind":  "hook",
+                      "path":  "OpenCredentials\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "OpenCredentials",
+                      "kind":  "instructions",
+                      "path":  "OpenCredentials\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "command",
+                      "path":  "Prose\\.claude\\commands\\dcm.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "command",
+                      "path":  "Prose\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "command",
+                      "path":  "Prose\\.claude\\commands\\eve.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "command",
+                      "path":  "Prose\\.claude\\commands\\kdp-publish.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "command",
+                      "path":  "Prose\\.claude\\commands\\progress.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "command",
+                      "path":  "Prose\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "command",
+                      "path":  "Prose\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "command",
+                      "path":  "Prose\\.claude\\commands\\show.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "command",
+                      "path":  "Prose\\.claude\\commands\\storm.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "skill",
+                      "path":  "Prose\\.claude\\skills\\commit\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "skill",
+                      "path":  "Prose\\.claude\\skills\\completeness\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "skill",
+                      "path":  "Prose\\.claude\\skills\\discard\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "skill",
+                      "path":  "Prose\\.claude\\skills\\logic-sweep\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "skill",
+                      "path":  "Prose\\.claude\\skills\\reader-proxy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "skill",
+                      "path":  "Prose\\.claude\\skills\\reader-qa\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "skill",
+                      "path":  "Prose\\.claude\\skills\\revert\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "skill",
+                      "path":  "Prose\\.claude\\skills\\review-node\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "skill",
+                      "path":  "Prose\\.claude\\skills\\run\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "hook",
+                      "path":  "Prose\\.claude\\hooks\\build-prose-mcp.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "hook",
+                      "path":  "Prose\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "hook",
+                      "path":  "Prose\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "hook",
+                      "path":  "Prose\\.claude\\hooks\\start-prose-hub.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Prose",
+                      "kind":  "instructions",
+                      "path":  "Prose\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "command",
+                      "path":  "ryandebraal.com\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "command",
+                      "path":  "ryandebraal.com\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "command",
+                      "path":  "ryandebraal.com\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "skill",
+                      "path":  "ryandebraal.com\\.claude\\skills\\commit\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "skill",
+                      "path":  "ryandebraal.com\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "skill",
+                      "path":  "ryandebraal.com\\.claude\\skills\\discard\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "skill",
+                      "path":  "ryandebraal.com\\.claude\\skills\\revert\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "skill",
+                      "path":  "ryandebraal.com\\.claude\\skills\\run\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "hook",
+                      "path":  "ryandebraal.com\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "hook",
+                      "path":  "ryandebraal.com\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ryandebraal.com",
+                      "kind":  "instructions",
+                      "path":  "ryandebraal.com\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "TaxRateCollector",
+                      "kind":  "command",
+                      "path":  "TaxRateCollector\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "TaxRateCollector",
+                      "kind":  "command",
+                      "path":  "TaxRateCollector\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "TaxRateCollector",
+                      "kind":  "command",
+                      "path":  "TaxRateCollector\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "TaxRateCollector",
+                      "kind":  "skill",
+                      "path":  "TaxRateCollector\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "TaxRateCollector",
+                      "kind":  "hook",
+                      "path":  "TaxRateCollector\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "TaxRateCollector",
+                      "kind":  "hook",
+                      "path":  "TaxRateCollector\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "TaxRateCollector",
+                      "kind":  "instructions",
+                      "path":  "TaxRateCollector\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "command",
+                      "path":  "ThinkTank\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "command",
+                      "path":  "ThinkTank\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "command",
+                      "path":  "ThinkTank\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "skill",
+                      "path":  "ThinkTank\\.claude\\skills\\commit\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "skill",
+                      "path":  "ThinkTank\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "skill",
+                      "path":  "ThinkTank\\.claude\\skills\\discard\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "skill",
+                      "path":  "ThinkTank\\.claude\\skills\\revert\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "skill",
+                      "path":  "ThinkTank\\.claude\\skills\\run\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "hook",
+                      "path":  "ThinkTank\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "hook",
+                      "path":  "ThinkTank\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "ThinkTank",
+                      "kind":  "instructions",
+                      "path":  "ThinkTank\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "command",
+                      "path":  "Tutor\\.claude\\commands\\deploy.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "command",
+                      "path":  "Tutor\\.claude\\commands\\quickload.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "command",
+                      "path":  "Tutor\\.claude\\commands\\quicksave.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "skill",
+                      "path":  "Tutor\\.claude\\skills\\commit\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "skill",
+                      "path":  "Tutor\\.claude\\skills\\deploy\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "skill",
+                      "path":  "Tutor\\.claude\\skills\\discard\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "skill",
+                      "path":  "Tutor\\.claude\\skills\\revert\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "skill",
+                      "path":  "Tutor\\.claude\\skills\\run\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "hook",
+                      "path":  "Tutor\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "hook",
+                      "path":  "Tutor\\.claude\\hooks\\quickload-on-do.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "Tutor",
+                      "kind":  "instructions",
+                      "path":  "Tutor\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "com.unity.timeline@8cd8509afae5",
+                      "kind":  "skill",
+                      "path":  "GridGame2026\\Library\\PackageCache\\com.unity.timeline@8cd8509afae5\\.claude\\skills\\changelog\\SKILL.md"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "agent-a9647addb306575cf",
+                      "kind":  "hook",
+                      "path":  "MindAttic.Ideas\\.claude\\worktrees\\agent-a9647addb306575cf\\.claude\\hooks\\inject-digest.ps1"
+                  },
+                  {
+                      "scope":  "project",
+                      "project":  "agent-a9647addb306575cf",
+                      "kind":  "instructions",
+                      "path":  "MindAttic.Ideas\\.claude\\worktrees\\agent-a9647addb306575cf\\CLAUDE.md"
+                  },
+                  {
+                      "scope":  "global",
+                      "project":  "global",
+                      "kind":  "command",
+                      "path":  "C:\\Users\\ryand\\.claude\\commands\\commit.md"
+                  },
+                  {
+                      "scope":  "global",
+                      "project":  "global",
+                      "kind":  "instructions",
+                      "path":  "C:\\Users\\ryand\\.claude\\CLAUDE.md"
+                  }
+              ]
+}

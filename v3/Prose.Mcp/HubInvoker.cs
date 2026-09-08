@@ -1,4 +1,5 @@
 using System.Net.Http.Json;
+using Prose.Core.Services;
 
 namespace Prose.Mcp;
 
@@ -13,7 +14,7 @@ namespace Prose.Mcp;
 /// is what's supposed to prevent this process from even starting without a healthy Hub; this
 /// is a second line of defense for a Hub that dies mid-session.
 /// </summary>
-public sealed class HubInvoker(IHttpClientFactory httpFactory)
+public sealed class HubInvoker(IHttpClientFactory httpFactory, IUniverseContext universeContext)
 {
     private readonly HttpClient http = httpFactory.CreateClient("ProseHub");
 
@@ -21,8 +22,37 @@ public sealed class HubInvoker(IHttpClientFactory httpFactory)
     {
         try
         {
-            var resp = await http.PostAsJsonAsync("api/mcp-invoke", new { toolClass, method, args });
-            return await resp.Content.ReadAsStringAsync();
+            // Carry the caller's explicit scope across the process boundary. The Hub owns the
+            // resident services; a process-local switch otherwise leaves the Hub on its default
+            // universe and can make a valid MCP call mutate the wrong corpus.
+            var universe = universeContext.IsExplicitlyScoped ? universeContext.CurrentSlug : null;
+            var resp = await http.PostAsJsonAsync("api/mcp-invoke", new
+            {
+                toolClass,
+                method,
+                args,
+                universe,
+                scopeExplicit = universe != null,
+            });
+            var body = await resp.Content.ReadAsStringAsync();
+
+            // `switch_universe` executes in the Hub process, but the MCP session also needs to
+            // remember the selection so every later forward carries the same explicit scope.
+            if (string.Equals(method, "SwitchUniverseImpl", StringComparison.Ordinal)
+                && args is not null)
+            {
+                try
+                {
+                    using var doc = System.Text.Json.JsonDocument.Parse(
+                        System.Text.Json.JsonSerializer.Serialize(args));
+                    if (doc.RootElement.TryGetProperty("slug", out var slug)
+                        && slug.ValueKind == System.Text.Json.JsonValueKind.String)
+                        universeContext.UseUniverseBySlug(slug.GetString()!);
+                }
+                catch (System.Text.Json.JsonException) { /* preserve the Hub response */ }
+            }
+
+            return body;
         }
         catch (HttpRequestException ex)
         {

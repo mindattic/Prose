@@ -295,6 +295,22 @@ app.MapGet("/api/health", async (IDbContextFactory<ProseDbContext> dbFactory) =>
     }
 });
 
+// Provider-neutral discovery endpoint. It is intentionally read-only and unauthenticated, like
+// /api/health, so an unfamiliar agent can learn the protocol before it has a shared key. All
+// state-changing operations remain behind the authenticated dispatchers and their write gates.
+app.MapGet("/api/agent/bootstrap", () => Results.Ok(new
+{
+    protocolVersion = "1.0",
+    transports = new[] { "mcp-stdio", "cli", "hub-http" },
+    scopePolicy = "explicit-universe-required",
+    writePolicy = "proposal-then-human-approval-grant",
+    protocol = "docs/agent/PROSE_PROTOCOL.md",
+    catalog = "docs/agent/operation-catalog.json",
+    rawMcpCatalog = "docs/MCP_TOOLS.md",
+    rawCliCatalog = "docs/CLI_COMMANDS.md",
+    next = new[] { "Select an explicit universe before scoped work.", "Use MCP when available; otherwise use CLI or named Hub HTTP operations." }
+}));
+
 app.MapGet("/api/universes", () =>
     Results.Ok(uc.ListUniverses().Select(u => new { id = u.Id, slug = u.Slug, name = u.Name })));
 

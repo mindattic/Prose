@@ -17,6 +17,53 @@ using MindAttic.Vault.Configuration;
 Console.InputEncoding  = System.Text.Encoding.UTF8;
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+// Provider-neutral agent bootstrap. This intentionally runs before the normal universe guard
+// and command dispatch: its job is to tell a new client how to become ready, including when the
+// Hub is unavailable. It is the CLI fallback for MCP clients and contains no database access.
+if (args.Length >= 2 && string.Equals(args[0], "agent", StringComparison.OrdinalIgnoreCase)
+    && string.Equals(args[1], "bootstrap", StringComparison.OrdinalIgnoreCase))
+{
+    var json = args.Contains("--json", StringComparer.OrdinalIgnoreCase);
+    var hubStatus = "unreachable";
+    var hubDetail = (string?)null;
+    try
+    {
+        using var client = new HttpClient { BaseAddress = new Uri("http://127.0.0.1:5900/"), Timeout = TimeSpan.FromSeconds(3) };
+        using var response = await client.GetAsync("api/health");
+        hubStatus = response.IsSuccessStatusCode ? "healthy" : "unhealthy";
+        if (!response.IsSuccessStatusCode) hubDetail = await response.Content.ReadAsStringAsync();
+    }
+    catch (Exception ex) { hubDetail = ex.Message; }
+
+    var universe = Environment.GetEnvironmentVariable("PROSE_UNIVERSE");
+    var payload = new
+    {
+        protocolVersion = "1.0",
+        status = hubStatus == "healthy" ? "ready" : "blocked",
+        hub = new { url = "http://127.0.0.1:5900", status = hubStatus, detail = hubDetail },
+        universe = string.IsNullOrWhiteSpace(universe) ? null : universe,
+        scopePolicy = "explicit-universe-required",
+        writePolicy = "proposal-then-human-approval-grant",
+        transports = new[] { "mcp-stdio", "cli", "hub-http" },
+        protocol = "docs/agent/PROSE_PROTOCOL.md",
+        catalog = "docs/agent/operation-catalog.json",
+        rawMcpCatalog = "docs/MCP_TOOLS.md",
+        rawCliCatalog = "docs/CLI_COMMANDS.md",
+        next = new[] { "Set --universe <slug> or PROSE_UNIVERSE before scoped work.", "Read the operation catalog.", "Use MCP when available; otherwise use the CLI or named Hub HTTP operations." }
+    };
+    if (json)
+        Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(payload, new System.Text.Json.JsonSerializerOptions { WriteIndented = true }));
+    else
+    {
+        Console.WriteLine($"Prose agent bootstrap: {payload.status}");
+        Console.WriteLine($"  Hub: {hubStatus} ({payload.hub.url})");
+        Console.WriteLine($"  Universe: {universe ?? "unset (required for scoped work)"}");
+        Console.WriteLine("  Protocol: docs/agent/PROSE_PROTOCOL.md");
+        Console.WriteLine("  Catalog:  docs/agent/operation-catalog.json");
+    }
+    return;
+}
+
 // QuestPDF Community license — required call before the first Document.Create.
 // This project is the non-commercial indie use case the Community tier exists for.
 QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
@@ -2945,4 +2992,3 @@ static IServiceProvider BuildCoreServices(string[] args)
         .ConfigureServices((_, svc) => svc.AddProseServices())
         .Build()
         .Services);
-

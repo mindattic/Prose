@@ -1,4 +1,9 @@
-# Prose Project Rules
+# Prose Project Rules (legacy compatibility reference)
+
+> New sessions on every provider must begin with [`AGENTS.md`](AGENTS.md) and
+> [`docs/agent/PROSE_PROTOCOL.md`](docs/agent/PROSE_PROTOCOL.md). This file is retained during
+> migration as historical Claude-layer material; do not add new rules here. The portable protocol
+> governs universe scope, approvals, Hub-only data access, context loading, and verification.
 
 ## Conversation
 - A bare "do" / "do it" / "yes" from the user means "continue", "keep going", "proceed". Resume the current task without asking for clarification.
