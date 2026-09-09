@@ -544,6 +544,93 @@ app.MapPost("/api/mcp-invoke", async (ToolDispatch.InvokeRequest req, IServicePr
     await ToolDispatch.InvokeAsync(req, sp))
     .AddEndpointFilter<HubApiKeyFilter>();
 
+// Proposal-first mutation workflow. This is intentionally a narrow, durable operation: it
+// records exactly what a human must review but cannot edit canon or prose itself. Applying a
+// proposal remains unavailable until a separate human-interactive approval grant is implemented.
+app.MapGet("/api/change-proposals/{id:guid}", async (
+    Guid id,
+    IDbContextFactory<ProseDbContext> dbFactory) =>
+{
+    await using var db = await dbFactory.CreateDbContextAsync();
+    var proposal = await db.ChangeProposals.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+    return proposal is null
+        ? Results.NotFound(new { error = "proposal_not_found", proposalId = id })
+        : Results.Ok(new
+        {
+            proposal.Id,
+            proposal.UniverseId,
+            proposal.Target,
+            proposal.OldValue,
+            proposal.NewValue,
+            proposal.Rationale,
+            proposal.VerificationPlan,
+            proposal.Status,
+            proposal.RequestId,
+            proposal.CreatedAt,
+        });
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
+
+app.MapPost("/api/change-proposals", async (
+    ChangeProposalRequest request,
+    IDbContextFactory<ProseDbContext> dbFactory) =>
+{
+    if (!string.Equals(request.ProtocolVersion, "1.0", StringComparison.Ordinal))
+        return Results.BadRequest(new { error = "unsupported_protocol_version", request.ProtocolVersion });
+    if (!string.Equals(request.Operation, "create_change_proposal", StringComparison.Ordinal))
+        return Results.BadRequest(new { error = "unknown_operation", request.Operation });
+    if (!string.IsNullOrWhiteSpace(request.ApprovalGrant))
+        return Results.BadRequest(new { error = "unexpected_approval_grant", message = "Creating a proposal does not accept an approval grant." });
+    if (string.IsNullOrWhiteSpace(request.Universe))
+        return Results.BadRequest(new { error = "missing_universe" });
+    if (string.IsNullOrWhiteSpace(request.RequestId))
+        return Results.BadRequest(new { error = "missing_request_id" });
+    if (request.Arguments is null || new[]
+        {
+            request.Arguments.Target, request.Arguments.OldValue, request.Arguments.NewValue,
+            request.Arguments.Rationale, request.Arguments.VerificationPlan
+        }.Any(string.IsNullOrWhiteSpace))
+        return Results.BadRequest(new { error = "missing_required_argument", message = "target, oldValue, newValue, rationale, and verificationPlan are required." });
+
+    var universeId = ResolveUniverseId(request.Universe);
+    if (universeId == null)
+        return Results.NotFound(new { error = "unknown_universe", universe = request.Universe });
+
+    await using var db = await dbFactory.CreateDbContextAsync();
+    var existing = await db.ChangeProposals.AsNoTracking()
+        .FirstOrDefaultAsync(x => x.RequestId == request.RequestId);
+    if (existing != null)
+        return Results.Conflict(new { error = "duplicate_request_id", requestId = request.RequestId, proposalId = existing.Id });
+
+    var proposal = new ChangeProposal
+    {
+        UniverseId = universeId.Value,
+        Target = request.Arguments.Target.Trim(),
+        OldValue = request.Arguments.OldValue.Trim(),
+        NewValue = request.Arguments.NewValue.Trim(),
+        Rationale = request.Arguments.Rationale.Trim(),
+        VerificationPlan = request.Arguments.VerificationPlan.Trim(),
+        RequestId = request.RequestId.Trim(),
+    };
+    db.ChangeProposals.Add(proposal);
+    await db.SaveChangesAsync();
+
+    return Results.Created($"/api/change-proposals/{proposal.Id}", new
+    {
+        protocolVersion = "1.0",
+        operation = request.Operation,
+        universe = request.Universe,
+        requestId = request.RequestId,
+        status = proposal.Status,
+        result = new { proposalId = proposal.Id, proposal.Target, proposal.CreatedAt },
+        warnings = new[] { "Proposal recorded only; no canon or prose has been changed. Human-interactive approval is required before apply." },
+        findings = Array.Empty<object>(),
+        ledgerIdentifiers = new { proposalId = proposal.Id },
+        provider = new { cost = "none" },
+    });
+})
+    .AddEndpointFilter<HubApiKeyFilter>();
+
 // The missing generic edge-creation tool (RelationshipDiscoveryService's auto-link path
 // doesn't cover every entity type, e.g. Transportation) - writes to SQL first, then applies
 // the same edge to the resident in-memory graph immediately so it's visible without waiting

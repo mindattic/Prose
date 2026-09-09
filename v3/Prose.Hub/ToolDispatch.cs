@@ -129,7 +129,7 @@ public static class ToolDispatch
         var name = method.EndsWith("Impl", StringComparison.Ordinal)
             ? method[..^4]
             : method;
-        var verbs = new[] { "create", "insert", "update", "delete", "remove", "set", "add", "apply", "write", "generate", "sync", "import", "restore", "reflow", "rebeat", "split", "join", "close", "start" };
+        var verbs = new[] { "create", "insert", "update", "delete", "remove", "set", "add", "apply", "write", "generate", "sync", "import", "restore", "reflow", "rebeat", "split", "join", "close", "start", "rename" };
         return verbs.Any(v => name.StartsWith(v, StringComparison.OrdinalIgnoreCase));
     }
 

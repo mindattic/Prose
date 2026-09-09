@@ -59,12 +59,16 @@ public static class PublishManuscriptCli
         Console.WriteLine($"[{tag}] Rendering \"{nodeTitle}\" to {ext}…");
         try
         {
-            await cleanup.CleanAsync(nodeId);
+            var nodeDir = await cleanup.CleanAsync(nodeId);
             var path = format switch
             {
                 Format.Markdown => await export.ExportMarkdownAsync(nodeId, author),
                 _               => await export.ExportPdfAsync(nodeId, author),
             };
+            await using var dbVersion = await dbFactory.CreateDbContextAsync();
+            var version = await dbVersion.Nodes.AsNoTracking().Where(n => n.Id == nodeId)
+                .Select(n => n.Version).FirstOrDefaultAsync();
+            cleanup.ArchiveCurrent(nodeDir, version);
             Console.WriteLine($"[{tag}] Wrote: {path}");
             return 0;
         }

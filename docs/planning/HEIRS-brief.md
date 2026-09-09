@@ -71,9 +71,9 @@ should ever have gone upstairs after dark.
 
 | Character | Entry State |
 |---|---|
-| Helena Ashcombe | Introduced fresh: eldest sibling, organizing the clearance of her late mother's house. |
-| Simon Ashcombe | Introduced fresh: younger brother, more willing than Helena to dismiss the diary as their mother's late-life confusion. |
-| Vivienne Ashcombe (deceased) | Exists only as diary author — voice, not presence. Wrote the diary entries that structure the story. |
+| <entity repo="character" guid="01a04108-5a9c-7201-8e39-1e9081c81c21">Helena Ashcombe</entity> | Introduced fresh: eldest sibling, organizing the clearance of her late mother's house. |
+| <entity repo="character" guid="01a04108-62eb-72da-b4f8-1cf76587b7fd">Simon Ashcombe</entity> | Introduced fresh: younger brother, more willing than <entity repo="character" guid="01a04108-5a9c-7201-8e39-1e9081c81c21">Helena</entity> to dismiss the diary as their mother's late-life confusion. |
+| <entity repo="character" guid="01a04108-69dc-73e9-9f3b-8425b6d6c595">Vivienne Ashcombe</entity> (deceased) | Exists only as diary author — voice, not presence. Wrote the diary entries that structure the story. |
 
 ---
 
@@ -81,9 +81,9 @@ should ever have gone upstairs after dark.
 
 | Character | Exit State | Ledger Update Needed? |
 |---|---|---|
-| Helena Ashcombe | Locks the room herself before leaving — for reasons she cannot articulate and does not try to. Unresolved/open ending. | No — HEIRS has no ledger; retired with the story. |
-| Simon Ashcombe | Goes upstairs after dark once, against the diary's rule, to prove there's nothing to it. What he sees afterward is never described — only that he never goes upstairs again. | No. |
-| Vivienne Ashcombe | Remains dead; her diary's final entry (found last, out of chronological order) recontextualizes everything the siblings believed about why she never let them upstairs. | No. |
+| <entity repo="character" guid="01a04108-5a9c-7201-8e39-1e9081c81c21">Helena Ashcombe</entity> | Locks the room herself before leaving — for reasons she cannot articulate and does not try to. Unresolved/open ending. | No — HEIRS has no ledger; retired with the story. |
+| <entity repo="character" guid="01a04108-62eb-72da-b4f8-1cf76587b7fd">Simon Ashcombe</entity> | Goes upstairs after dark once, against the diary's rule, to prove there's nothing to it. What he sees afterward is never described — only that he never goes upstairs again. | No. |
+| <entity repo="character" guid="01a04108-69dc-73e9-9f3b-8425b6d6c595">Vivienne Ashcombe</entity> | Remains dead; her diary's final entry (found last, out of chronological order) recontextualizes everything the siblings believed about why she never let them upstairs. | No. |
 
 ---
 
@@ -122,7 +122,7 @@ as a structural frame.
 **Resolution mode:** Unresolved/open — the siblings never learn what was truly upstairs; only
 that the diary's rule was correct.
 
-**Moral polarity:** Ambivalent (default) — Vivienne's silence protected her children at a cost
+**Moral polarity:** Ambivalent (default) — <entity repo="character" guid="01a04108-69dc-73e9-9f3b-8425b6d6c595">Vivienne</entity>'s silence protected her children at a cost
 she alone paid; no clean villain.
 
 **Ending style:** Avalanche (default) — the final, out-of-order diary entry reframes everything
@@ -130,7 +130,7 @@ right before the story ends; no epilogue, no resolution scene after it.
 
 **Escalation curve shape:** Routine clearance of the house → the newly-locked room is found →
 early diary entries are dismissed as sentimental → entries grow stranger and more specific about
-"after dark" → Simon breaks the rule once → the last entry (read last, dated first) recontextualizes
+"after dark" → <entity repo="character" guid="01a04108-62eb-72da-b4f8-1cf76587b7fd">Simon</entity> breaks the rule once → the last entry (read last, dated first) recontextualizes
 the whole house.
 
 **Event-type palette:** Discovery → revelation (via document) → transgression → recontextualization
@@ -152,10 +152,10 @@ diary entries read out of chronological order, oldest-last).
 
 | Entity | Type | In DB? | DB seed command / MCP tool |
 |---|---|---|---|
-| Helena Ashcombe | character | [ ] | `create_character` (originNodeSlug=heirs) |
-| Simon Ashcombe | character | [ ] | `create_character` (originNodeSlug=heirs) |
-| Vivienne Ashcombe | character | [ ] | `create_character` (originNodeSlug=heirs, status=deceased) |
-| The Ashcombe House | place | [ ] | `create_place` (originNodeSlug=heirs) |
+| <entity repo="character" guid="01a04108-5a9c-7201-8e39-1e9081c81c21">Helena Ashcombe</entity> | character | [ ] | `create_character` (originNodeSlug=heirs) |
+| <entity repo="character" guid="01a04108-62eb-72da-b4f8-1cf76587b7fd">Simon Ashcombe</entity> | character | [ ] | `create_character` (originNodeSlug=heirs) |
+| <entity repo="character" guid="01a04108-69dc-73e9-9f3b-8425b6d6c595">Vivienne Ashcombe</entity> | character | [ ] | `create_character` (originNodeSlug=heirs, status=deceased) |
+| <entity repo="place" guid="01a04108-70bb-7dcc-8b10-bf8c18d5fed9">The Ashcombe House</entity> | place | [ ] | `create_place` (originNodeSlug=heirs) |
 
 Run entity-mention scan after the draft to confirm coverage.
 

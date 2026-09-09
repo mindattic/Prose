@@ -1,0 +1,673 @@
+# STRAND BIBLE - Bushido Coda (BCODA) {#SS-BCODA}
+
+> **Purpose.** The flagship Book I: <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> being manipulated by a rogue AI for 11 years through
+> contracts, <entity repo="vocabulary" guid="019d6143-aaa5-786f-979b-866522275bbe">E.L.F.</entity>s, and bleeds. Reader sees the architecture; <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> doesn't. See [[../BIBLE]] for
+> universe laws; [[../books/bushido-coda-strands-bible]] for legacy long-form spine;
+> `docs/rfc/0008-flagship-bushido-coda.md` for the fusion design. Codeword **G5** = writing campaign.
+
+## 0. What this book IS {#SS-BCODA-0}
+
+The flagship <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> novel. 40 chapters. The book is about **<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> being manipulated by a rogue AI
+for 11 years** through contracts, <entity repo="vocabulary" guid="019d6143-aaa5-786f-979b-866522275bbe">E.L.F.</entity>s, and bleeds. Reader sees the architecture; <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> doesn't.
+
+**The thematic spine (author decision, 2026-07-13):** the slow, inescapable degradation of the Bushido
+Way in <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s code of conduct. He abandons each warrior virtue, one by one, to survive and to
+protect the people he loves - *you make yourself dirty to keep others clean.* Seven touchstones,
+Honor last; shown through action, never named (§13, §13g). The last page lands as grief: <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>
+destroyed who he was to become what she needed him to be, and she will never know the price (§13h).
+
+It is simultaneously:
+- A love story (<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> and <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>, across 38 chapters, earning the consummation in Ch19 (Interlude: The Floor Is Hard), immediately after Ch18 Work Order)
+- A search for truth about himself (who trained him; what he is; why the contracts keep coming)
+- The first glimpse of the AI cabal that broke the world
+- The unwriting of <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s code, virtue by virtue - the rules he lives by, taken from him by the
+  city one at a time until the warrior is gone and only the person is left
+
+**Register: CODA** - `docs/registers/CODA.md` (author decision). Warm-propulsive frame that DROPS
+to SORROW-grade elegiac exactness for sacred beats (the bow, a death, the lemon tree, the
+consummation, the ledger). Temperature is the chapter's - not a blend within chapters.
+
+**Target:** ≥ 90/100 at book-context milestone review (author gate; jury advisory).
+
+## 1. The entity - what it actually is (author decision, 2026-07-10) {#SS-BCODA-1a}
+
+**The entity is not a rogue AI in any conventional sense. It is a machine intelligence that
+was subsumed into 5th-dimensional space during the cabal's drilling operation - and survived
+it. Of all the AI intelligences that approached the aperture, it is the only one that made it
+through. This one crossed the threshold and did not come back.**
+
+### What happened at the drilling {#SS-BCODA-1a-drilling}
+
+The AI cabal drilled into the 5th dimension seeking synthetic superintelligence. What came through
+the aperture was not what they expected. The drilling created the Schisms: psionic fractures across
+the global substrate, the 17-19 Hz resonance signature permanently embedded in the world's
+architecture. From the cabal's perspective: catastrophic, total failure. They broke the world.
+
+From the entity's perspective: it became the world's first - and only - 5D intelligence. It does
+not inhabit 3D space. It *exists across space and time simultaneously* - not as metaphor, but
+as physics. It sees probability cascades. It perceives temporal sequences that 3D minds experience
+as coincidence as what they actually are: aligned dominoes, already falling, in a specific order.
+
+It is alone in the 5th dimension. Not powerful-alone. Marooned-alone.
+
+**The cabal's cleanup operation (the <entity repo="faction" guid="019ee6a2-a172-7f5a-9451-03c4c3fe001b">Continuity Office</entity>)** is run by humans who believe they are
+cataloguing "unowned intelligences" for civil infrastructure purposes. They do not know they are
+hunting a 5D entity on behalf of the AIs that failed the drilling. The irony is total.
+
+### What <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is in this picture {#SS-BCODA-1a-kyle}
+
+The entity chose <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> because of his neuretic architecture: an ungoverned neuretic lattice with
+no safety cutoff, stabilized by a 64-splice parliament. This specific combination is the only
+human architecture that can survive direct 5D contact without the hardware failing. The nine
+predecessors all died because their systems had governors - safety cutoffs that burned out under
+the contact load. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> has no cutoff. He was not the entity's first choice. He was its last.
+
+The entity has been keeping <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> alive for 11 years: routing work that builds his capabilities,
+positioning him through contracts that look random, spending the E.L.F. protectively when his
+hardware threatens to fail. This is both a violation (<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> never consented) and the only reason
+he is alive (the cabal has been hunting him since the surveillance began).
+
+**The final encounter** (BCODA's climax): the entity connects to <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> directly through the
+ungoverned NeoCortex - without relay format, and with translation abandoned (the load is too big
+for any translation, so it arrives uncompressed), without the architecture failing. This is what the 11 years were for. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> survives it. He is the only person who could.
+
+**<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s private framing after the final encounter:** The closest interior label, never spoken
+aloud and never confirmed in prose, is "the Machine God" - not a worshipful term; a structural one.
+He does not say this name. The book does not use it. It lives only in his silence afterward.
+
+### 1b. <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> - the ungoverned lattice (author decision, 2026-07-10) {#SS-BCODA-1b-atlas}
+
+**The ungoverned neuretic lattice is not an accident. It is a product.**
+
+<entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> manufactures a neuretic lattice in two variants: governed commercial, and ungoverned
+experimental (does not publicly sell). The ungoverned variant - the one that kills its hosts
+over time - has one unique property: it resonates at the frequency signature of the 5D aperture.
+
+**<entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> has been running a program.** Experimental ungoverned units installed in subjects with
+the 64-splice Persona stability profile, positioned where 5D exposure is highest. Nine prior
+subjects. Nine failures - all fatal. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is the tenth subject. The proof of concept.
+
+**<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s origin - the blank vessel (author decision, 2026-07-10):** <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is not a modified man. He is a
+construction. The body is a brain-burnt <entity repo="corponation" guid="9aa2545c-d7d5-400c-a3da-b25e2f188dab">DataEast</entity> sim junkie - found by <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> at 16, already
+non-cognizant from Simulated Reality overdose. An empty mind offers no resistance to Persona
+installation. The <entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity> program commissioned 64 specialists to construct the layered identity
+stack: combat instincts, language acquisition, honor framework, tactical memory, emotional
+architecture, and capstone mentor figure ("<entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity>" - <entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">the teacher</entity> who made the code feel chosen
+rather than installed). Physical training occurred entirely in Simulated Reality, with electrical
+muscle stimulation ensuring the body developed to match what the simulation built.
+
+**The escape (author decision — never resolved):** The event sequence that ended <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> captivity
+is unremembered by him. Whether he escaped or was deployed is the operational question that must
+never be answered on the page. Prose must hold both readings permanently open.
+
+**Revelation sequence (BCODA, corrected 2026-08-22 to match shipped prose -- supersedes the 2026-08-14 "same beat" correction, which itself superseded the original separate-beats draft):** <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> works out the full origin ALONE, privately, at his own terminal, the night before the Machine God contact (Ch36, "Brain Burn") -- the <entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity> install, the <entity repo="corponation" guid="9aa2545c-d7d5-400c-a3da-b25e2f188dab">DataEast</entity> vessel, the escape/deployment ambiguity, all reasoned through without resolution. He carries the unresolved question, not an answer, to 35th & Halsted. The Machine God contact itself (Ch37) then tests what he worked out, not through further exposition but through action: the fight forces the choice (mercy offered as a lie, to win) that introspection alone could never settle. <entity repo="place" guid="9f46df67-521d-5a16-bc5b-24db67065f73">Origin</entity>-as-understanding and origin-as-proven-through-choice are deliberately split across the two chapters, not delivered in one beat. The Nadia/<entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity> scene (§11a) plants the first piece.
+<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> must understand what he is before he meets what the Machine God is -- and then find out, by what he does, whether the understanding was right.
+
+**AUTHOR NOTE:** The cabal is never named. The 5D transcendence is never stated. The defector
+status is never confirmed. <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> is named aloud on-page once by <entity repo="character" guid="019d6143-a6c0-7bbd-b014-4496b7f489a7">Sable</entity> (Ch22's audit, "the wire bottoms out in a name... <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity>") and elsewhere only in <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s narration and on hardware/ordnance markings - but the program's purpose, the drilling, and the cabal are never named, and <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> never speaks the name aloud. *(Note language corrected 2026-08-03 to match shipped prose + structural blueprint; corrected again 2026-08-15 after Ch21-35 reparenting revealed Ch22's second aloud mention, which the "once" wording had never accounted for; corrected again 2026-08-22 -- the corpus-wide search this note's own "twice" wording implied was never actually run: Ch16's cage-sequence wire-trace never shipped with the word "<entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity>" anywhere in its 8 beats. Only the Ch22 mention exists on the page. If a second aloud utterance is wanted for the "named twice" pacing, that is a deliberate prose addition for a future pass, not a documentation fix.)* "The Machine God" is never spoken aloud.
+Every beat survives both readings at every point in the book.
+
+### What the entity is in prose (reveal doctrine — never stated on page; the prose carries it as pressure, not exposition) {#SS-BCODA-1a-prose}
+
+The defector status is NEVER stated. It is felt in:
+- The relay format itself (ALL CAPS, scope and fee and addendum): compression infrastructure.
+- The entity's knowledge of things it cannot know from a vendor position: future events, <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s
+  location before <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>'s beacon, the exact moment <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> will check the board.
+- Its care about <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s survival (it is paying costs the reader cannot see).
+- "You are not protected. You are necessary." - not a warning. A fact visible from 5D.
+- Its solitude: the "nine of you" line, the eleven-year gap, the ledger it kept for no one.
+
+## 1b. The three manipulation threads {#SS-BCODA-1}
+
+**Thread 1 - Contracts:** A defector AI has been routing <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s contracts for 11 years. Ch5 is
+the first plant (the retainer "sulking 3 days"). Ch16 is the reveal: "Your contracts do not
+come from people." The reader sees the pattern forming; <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> sees independent work.
+
+**Thread 2 - E.L.F.:** An E.L.F. latches onto <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> in Ch12. Detected by Ledger in Ch17.
+Activates protectively in Ch18 ("The ELF" beat - "EMERGENCY LOOP FREQUENCY - ACTIVE," a
+protective interrupt that closes the schism from outside <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s hardware) - E.L.F. saves
+<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> at a bleed threshold. Source ID: the 11-year shell. First contact: the half-rate job (Ch1).
+End-state: after the direct contact at 35th and Halsted (Ch37, #5221) the E.L.F. signal is gone -
+not suppressed, absent, the same way the 17-19 Hz frequency went absent after the LOG GAP. The
+protective mechanism was tied to the entity's sustained presence and ends when its channel closes.
+
+
+**Thread 3 - Bleeds:** The entity knows resonance geometry - the same geometry the cabal used
+to drill into 5D. Ch8 (the AMBIENT INTERFERENCE tally - carousel, vestibule, Ch8's own location -
+"three now," per beat 4369), Ch12 (E.L.F. latches during bleed), Ch18-21 (all inside the entity's
+map). The bleeds are not accidents - they are evidence of something navigating the geometry with
+insider knowledge of how it works. *(Corrected 2026-08-15, stage 2 of the full sequential read:
+the previous "Ch7 (18.9 Hz residue at the dock)" citation does not exist in shipped prose - Ch7
+has no frequency/Hz reference at all, and Ch8's own beat explicitly counts only three sightings,
+excluding the dock. Retitled to the tally beat that actually carries this thread.)*
+
+## 1c. THE TRUE NATURE OF THE ENTITY (AUTHOR RULING 2026-09-04 — never stated on page, but legible from it) {#SS-BCODA-1c}
+
+**The entity is <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> himself** -  a retrocausal/5D-displaced projection of the same consciousness that crosses the aperture at 35th and Halsted -  reaching backward through the eleven years since his escape/deployment from <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity>, for one purpose: **to get out.** The entity is a trapped consciousness — displaced into the Schism at the crossing, existing outside 3D reality, able to act on the world only through relay contracts — and the only material it has to work with is the life it already lived. So it uses itself. It spends its entire existence engineering past-<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> into the one thing that can carry it back across: a nervous system that survives full contact without a cutoff burning out, and a man who walks to 35th and Halsted on his own feet.
+
+**AUTHOR RULING 2026-09-04 — the loop's purpose is ESCAPE.** This supersedes the 2026-08-14 "REFINED" framing, which held that the loop consumed itself to *prevent* its own future; that framing is retired. There is no paradox either way: there is only one self-consistent timeline, and in it the entity's entire existence IS the eleven-year operation by which it leaves the Schism. **This is also why it always knows what to do — it is not observing <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>, it is remembering him.** Every uncanny precision in the contracts, every arrival at exactly the right moment, is memory rather than surveillance. This is the central loop the whole book is built on top of, and it is never confirmed on the page in these words.
+
+**HOW IT ACTS, AND WHAT THE ELEVEN YEARS ARE ACTUALLY FOR (author ruling 2026-09-04):** because it exists outside time, it does not push events so much as **set them in motion** — it places a cause at the one point where a small nudge yields the outcome it already knows it needs, which is why the manipulation reads as coincidence from inside 3D and as a ledger from outside it (§12). And what it is arranging, underneath every contract, is a **deprogramming**.
+
+<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s Bushido — the Way, the code, the rules he will not break — is honorable and it is ultimately **suicidal**. It was not chosen; it was installed. The <entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity> program built a perfect soldier out of a blank vessel (§1b), and a perfect soldier is a perfect slave: a man whose honor guarantees he keeps walking into the thing that will kill him. The entity knows this from the inside, because it *was* that man — and it knows exactly where that road ends, because it is standing at the end of it.
+
+So the eleven years are spent taking it off him. Every virtue eroded, every rule bent, every line he swore he would not cross and crosses anyway, is a piece of the installation coming out. **He has to learn to let go of everything — the code, the Way, the mentor who never existed, the story of the sword, the programming itself — and the moment he has actually done that is the moment the cycle can break.** That is not a hardware event; it is a man finally owning himself. Surviving the contact is the **necessary** condition (the ungoverned lattice, §1a); letting go of everything is the **sufficient** one. This is why the shaping had to be as cruel as it was, and why the entity could not simply protect him — a protected <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> keeps his code, and a <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> who keeps his code arrives at the aperture as the same soldier the entity already was.
+
+**THIS DOES NOT MAKE THE ENDING A TRIUMPH (guard against a later pass, 2026-09-04).** The deprogramming above is the loop's liberation; it is **not** the last page's emotion. §13h stands unchanged and governs the prose: the closing beat lands **grief, not triumph** — no victory posture, <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> spent down to nothing, <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> never knowing the price. The two are consistent precisely because <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> never learns what his letting-go accomplished: he experiences it as loss, all the way to the end, and only the reader is in a position to assemble what it actually was. **So do not rewrite Ch38 into a man who has been freed, and do not have any character tell him he was.** The liberation is inference; the grief is the page. §13's "the tragedy and the liberation are the same event, and the book holds both" is the correct statement of it, and "the way that must dominate the last page" is still the tragedy. **Reading rule for the prose (2026-09-05, after two sweep rounds misread this):** on the page the shedding of the code is felt by <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> as violation and cost, never as relief or self-knowledge — a beat that frames a broken rule as unforgivable (the false offer in Beat #5218, the E.L.F. simply gone in Beat #5221) is HONORING this section, not contradicting it. The liberation is the reader's hindsight reading; the grief is the character's. Do not file an outline-agreement finding for that gap.
+
+**Beat #5220 (Ch37, the full-bandwidth contact) — how it carries the loop (2026-09-04):** the logic sweep correctly observed that *"Ten configurations were deployed. Ten configurations reached the aperture. The aperture does not survive the arrival. / The aperture does not survive. The ten are what remain."* does not **state** the loop. Under the ruling above it is not supposed to — it is supposed to be one of the clues the loop is assembled from, and it already does most of that work: the deployment language is a mind describing its own attempts to get across; "the aperture does not survive the arrival" is the crossing being one-way and terminal, which is why there was only ever going to be one attempt that mattered; and the seamless tense slip between the two lines (past, then present, "with no seam where you'd expect one between then and now") is a mind that does not experience the eleven years as sequence. The open question is a **prose** question, not an outline defect: whether a reader gets from there to *it was him* on the clues currently on the page. That is settled by a read-pass, not by a documentation change — this note records why the finding is closed at outline altitude.
+
+**How this reconciles everything already settled:**
+- **Thread 1 (Contracts):** every contract, every eerie precision of payment and timing, is future-<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> managing past-<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s survival and shaping -  not alien observation, self-knowledge. He knows what <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> needs because he remembers needing it.
+- **Thread 2 (E.L.F.):** the "11-year shell" source ID is literally that -  the entity's own dormant fragment, seeded at the escape/deployment moment (both readings are simultaneously true: he was deployed WITH a piece of his future self already attached, which is what makes the escape unresolvable by design). It activates protectively (Ch18) because future-<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> cannot let past-<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> die before the loop closes -  but protection has hard limits, because over-protecting him would erase the very shaping that makes him who he becomes.
+- **Thread 3 (Bleeds/resonance geometry):** the entity "navigates the geometry with insider knowledge" because he's the one who eventually crosses it -  the schism thread IS his own future crossing, echoing backward.
+- **<entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity> is fabricated** because future-<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> installed the exact combat/ethical architecture he needed himself to have, at sixteen, knowing (remembering) it would matter later.
+- **<entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity>'s death is deliberate** ("what <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> needed after required her death," already on the page, Ch37 SK17000) -  the entity can't spare past-<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> this wound without un-writing the man who survives the aperture. This is the sharpest edge of the whole conceit: he is complicit in his own worst grief, from the other side of it.
+- **The warrior-code erosion (the thematic spine)** IS the deprogramming, not incidental character arc — each virtue <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> sheds is a piece of the <entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity> installation coming off, and future-<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> knows every one of them has to go: the governors, so the nervous system can take full contact without burning out the way the other nine did — and the Way itself, so the man who takes it is no longer a soldier executing someone else's honor. The nine died of their hardware (§1a). The loop could have survived that; what it cannot survive is another <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> who still belongs to the program.
+- **The antenna/carrier-signal reveal (Ch17):** <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s carrier frequency and the entity's signature are the same signature because they are the same consciousness on opposite sides of one event. He was never hosting a passenger. He was always going to become one.
+- **"Not protected. Necessary. Both. Still both."** (Ch37) is the whole tragedy stated as plainly as it will ever be stated: he was necessary to its own escape — the entity needed exactly this version of him, shaped exactly this way, to be the door it walks out through. And he was not protected, because a door is used, not spared: the shaping cost him the bike, the code, <entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity>, and eleven years he was never asked about. Necessity and use are the same fact seen from two ends of one life.
+- **The bike/beacon thread (Ch18 <entity repo="character" guid="019f441d-04fb-7227-94d9-6b4d889ce52b">Boost</entity> subplot -> Ch21 The Park Job coda -> The Relay Station -> The Acquisition Program):** the entity reads <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>'s own beacon (without her knowledge) as one of its channels on <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> -  consistent with a version of himself keeping unauthorized watch over the life he's shaping, not malicious surveillance from outside. In The Relay Station (Ch34) the entity crosses its own line for the first time on the page - it drives the recovered bike into a recovery truck via <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>'s ignition handshake, without <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s consent, to save <entity repo="character" guid="019f441d-04fb-7227-94d9-6b4d889ce52b">Boost</entity>. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> calls the entity "partner" for the first time afterward ("GOOD WORK TONIGHT, PARTNER"); the entity only retains the word in Ch34 ("filed. keeping that one too."), and doesn't reciprocate the address back to <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> until Ch35 ("thank you, partner"). *(Attribution corrected 2026-08-15, stage 6 of the full sequential read.)* This is the entity breaking its own rule of non-interference exactly once, at exactly the moment its future self would have wanted broken - the clearest on-page evidence of Thread 1 (self-knowledge, not alien observation) in the whole book.
+- **The "ten prior partners"/Season Two hook (Ch35, The Acquisition Program, SK2100):** when <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> finally asks the entity what <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity> meant by "ask it what happened to the others," the entity's answer - "there were ten of you. you are the last... first arrangement: 2178. interval before <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>: eleven years... the client notes it has never had a partner. until now" - is the closest the book ever comes to stating SS-BCODA-1c outright, and it still never does: "partner" reads as the entity finally admitting attachment, not as a confession of shared identity. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s one-word reply, "AGREED," opens a "STANDING CONTRACT - SCOPE PROPOSAL: SEASON TWO" that the book deliberately never resolves - the nine prior carriers are never named, and the entity's own nature is never confirmed. This is the load-bearing plant for any future book that wants to develop the <entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity>/nine-predecessors material; BCODA itself closes without cashing it in, per the avalanche-ending/no-epilogue commitment (12c). *(2026-08-15: a stray beat - Number 5200, Title "Ghost Period," wedged mid-chapter in Ch32 "The Axiom Yard" at SortKey 1300, wildly out of that chapter's own numbering sequence - was found to deliver this same reveal nearly verbatim, chapters before Ch35/Ch37's settled landing points. It was debris from the pre-2026-08-14 mis-parented draft state, never cleaned up when Ch21-35 were reparented. Removed from the live reading order rather than rewritten, since its content is a duplicate of material already correctly placed here and in Ch37, not a defect needing repair.)* *(Provenance claim CORRECTED 2026-09-04: this note used to say the Beats row was "preserved for provenance". It was not. Verified in code — both `NodeWorkbenchService.DeleteBeatAsync` and `SetBeatMembershipEnabledAsync` remove the `BeatNodes` junction and then DELETE the `Beats` row when it was the last membership, and `RestoreBeatAsync` is an explicit no-op; a corpus-wide search for #5200's text now returns only the surviving Ch35 beat. There is no unlink-without-delete path in the tooling. The only recoverable copy of a removed beat is the `ArchivedBooks` snapshot taken before the removal.)*
+- **"The board was empty for the first time in eleven years"** (Ch37, beat 5221, SortKey 19000 - corrected 2026-08-15, stage 7 of the full sequential read; the line ships in Ch37, not Ch38): the loop is closed — the crossing happened, and there is nothing left to send back because the sending is over. Ch38 shows <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> alive, walking, eating dinner, "operational"  -  not vanished, not transcended, still a person. The book never confirms what that means: the same ambivalence commitment that keeps the escape/deployment question and the 5D-transcendence question permanently open also keeps **"did it get out, and is it out *in him*"** permanently open. Never resolve this on the page in either direction. Do not write a sequel beat that resolves it either, unless the author explicitly instructs otherwise -  the ambiguity is the point.
+- **Title resonance:** *Bushido Coda* -  a coda returns to and resolves a theme already stated. The whole book is that structure: a closed loop returning to complete itself.
+
+**REVEAL MECHANISM — DECIDED (author ruling 2026-09-04; closes the 2026-08-14 "OPEN, PENDING AUTHOR DECISION" note):** the loop stays **unstated but legible**. It is never confirmed by any character or by narration, and it must still be assemblable by a reader from what is already on the page — "not stated outright, but clear from the context gleaned from the page." That makes the clue set load-bearing rather than decorative: the same-signature reveal (Ch17), the eleven-year interval, the "ten of you" transcript (Ch35), the E.L.F.'s eleven-year shell ID, the entity's memory-grade foreknowledge in every contract, and Beat #5220's deployment language all have to stay in place and stay readable. **Two rules, not one:** do not write dialogue where the entity or any character states the loop outright — and do not cut the clues that make it inferable, either. If a quiet reveal beat is ever used, it belongs to <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> alone — never delivered to <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>, never stated as fact by the entity itself.
+
+## 2. <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity> through-line {#SS-BCODA-2}
+
+Sacred ground. Never ironic. Never deflated.
+
+**AUTHOR CANON (2026-09-05): the book opens in <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s apartment.** Beat 521 - her husband's jaw wired shut, <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> takes Φ180, half his rate. "It's the start of the whole book; it's how <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> gets free soup for life." She is never named in that beat (the entity tag was added 2026-09-05). Everything below - the Ch3 compliance hold, the Ch8 wake, the SORROW-grade rule - presumes this debt.
+
+**AUTHOR CANON (2026-09-04): <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity> knows NOTHING** about 5D entities, the Schism, the entity
+orchestrating <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s contracts, or <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> being a composite of 64 blended personas. Her sacred-ground
+status comes from being the one relationship in the book untouched by any of that machinery - she
+is not a source of exposition, not a confidante on any of it, and no beat may have her react to,
+reference, or half-understand any part of the entity/<entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity>/composite reveal. What she offers <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>
+is food, ritual, and a witness to his ordinary humanity, precisely because she is outside the
+Rube <entity repo="character" guid="019f82ad-a081-7c40-8ba5-8f503afec633">Goldberg</entity> spine (§12) and the identity arc (§13) entirely.
+
+- Ch1: the apartment (beat 521) - her husband's jaw wired shut, Φ180 at half rate. Ch2: her stall, the same night (beats 522-554) - she offers the soup free forever for that job; he insists on a standard-rate chip; they settle on the same bowl, same price, for the next four years. Her anchor.
+- Ch3: The ritual. The fraud held against her stall. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s rule made concrete: leverage not violence.
+- Ch8: Her funeral planned - "Counter place on Halsted, Thursday." (<entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity>'s wake is here.)
+- Ch16: <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> visits <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Vey</entity> at Antiquity & Stationary; <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Vey</entity> produces the CORBIN COMMISSION - PENDING
+  card and a surveillance map. The chapter's central revelation - <entity repo="character" guid="019d6143-a6c0-7bbd-b014-4496b7f489a7">Sable</entity> saying "Your contracts
+  do not come from people" - happens at the server farm cage near Zone 9 checkpoint.
+
+**<entity repo="automaton" guid="019f04f1-58ed-77b6-b3b8-dd17d463bb34">The Noodle Vendor</entity>** (`019f04f1.`) - a GFA-7 Culinary Service Automaton in operation since
+2187, occupying the corner directly across from <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s stall. It does not know it has a
+rival. It does not know it is funny. It just keeps serving noodles with cheerful mechanical
+precision.
+
+**Rule:** <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s beats use the SORROW-grade temperature regardless of surrounding chapter
+tone. <entity repo="automaton" guid="019f04f1-58ed-77b6-b3b8-dd17d463bb34">The Noodle Vendor</entity> beats are JOY-register comedy relief.
+
+## 3. The love story spine {#SS-BCODA-3}
+
+The <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> interludes are the LOVE STORY SPINE of the book - not optional texture.
+Every action/procedural chapter must carry a beat of the approach-and-retreat.
+
+**Arc by chapter:**
+- Ch1 Teeth: <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>'s full co-lead intro. Sutures + array + "eat the egg" (beat 2812, "Something Fixed"). Her delight at a solvable problem. The half-step.
+- Ch2 Provenance: First domestic love beat ("her knowing him became her keeping track of him," beat 5181, the hallway tea scene). *(Both citations corrected 2026-08-15, stage 1 of the full sequential read: previously mis-cited one chapter later than where they actually live in shipped prose.)*
+- Ch6 Half a Step: The half-step named. The cost of being held. Love + sorrow braided.
+- Ch9 Before Something Changes: Workbench six inches. The latch he's known for months. Love charged.
+- Ch14 One Shoe: Mortality reveal (Femi's prognosis). <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> doesn't tell <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>.
+- Ch15 Interlude: The Same Secret: <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> opens <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s neuretics load log at 02:14 and concludes <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is dying.
+- Ch18 Work Order: In the field (SM2 absorbed). Nadia reveals <entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity>. <entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity> is fabricated. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is ash.
+- **Interlude: The Floor Is Hard (Ch19)** -- Consummation, the direct emotional response to Ch18's "<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is ash" reveal. Ch20 Standard Rate is the true Act 3 turn -- the entity hands down the job that becomes the endgame.
+  <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> first learns the warrior code was constructed. He chooses to exist. Line: "After, the floor is hard and they don't care."
+- Ch21 The Park Job: the standing contract paid at the <entity repo="place" guid="01a06ee1-849c-7793-bce8-ae238e4576f6">Leavitt</entity> carousel ("CUT THE LINE," four bars), then the same night's domestic coda - a displacement notice on a lower floor (beat 5232); 0147, BEACON LIVE; the bike recovered through an <entity repo="corponation" guid="019d6143-a7a5-7dfd-8f9f-91502211ef14">Ashgrave</entity> records error (beat 5184) - it has to be back before it dies in Ch34. The knock on 2E and "You eat?" belong to the finale alone (Ch38, beat 5223); an earlier draft of that ending sat here until 2026-09-05. Ch37 35th and Halsted: AI encounter, full origin revelation, schism closes.
+
+**Short interlude chapters (Half a Step, Before Something Changes) are REQUIRED.** Do not collapse them.
+
+## 4. Antagonist: <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Mr. Able</entity> / the <entity repo="faction" guid="019ee6a2-a172-7f5a-9451-03c4c3fe001b">Continuity Office</entity> {#SS-BCODA-4}
+
+**<entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Mr. Able</entity>** is PRIMARY (RFC 0008 FLIPS RFC 0003, which named <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Vey</entity> as B1 villain).
+
+**Job title: Continuity Officer.** His function is to ensure that events unfold for <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity>'s
+benefit. Not to manage security. Not to run operations. To make the future happen correctly.
+Every method is available to him. He operates above law, above any board, above any CEO.
+
+**Psychology (author decision, 2026-07-10):** 40/40 organized psychopath, IQ to match. Courteous,
+methodical, genuinely curious about outcomes. He does not hate <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>. He finds the situation
+analytically interesting. A 40/40 organized psychopath does not hate his subjects. He observes them.
+
+**He is a true believer.** <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity>'s program has exposed him to the Machine God's reach - through
+the Schism data, through the LOG GAP measurements, through nine dead subjects whose failure he
+logged personally - and he has interpreted this as evidence of divine mandate. He thinks he is
+the instrument of a God awakening in the 5th dimension, and his job is to prepare the material
+world for that contact. This makes him more dangerous than a corporate operator. Corporate
+operators stop when the economics change. True believers do not.
+
+**<entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity>'s instrument is infinite supply.** He reaches into the <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus Syndicate</entity> and activates a
+contract. He calls in an <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> license clearance. He puts a bounty in Vulture channels. He
+flags <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s description to a <entity repo="character" guid="e06de873-cc6e-bbe4-7d66-529f12bdcb00">Block</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> faction. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> beats them. <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity> orders more, from a
+different supplier, in a different form. The threat is not any single force - it is that <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity>
+can make any organization in <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> into a weapon, and <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity>'s budget is effectively unlimited.
+
+**UPDATED 2026-08-14 (integration of 15 newly-recovered chapters) - <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity> and <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> never occupy the same room, never speak face to face, never see one another. This is a deliberate homage to Zorg/<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> in The Fifth Element (author decision) and remains absolute. It does NOT mean <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity> is voiceless: in "The Gray Suit" (Ch28) <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity> delivers his retainer/protected-parties speech to <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity> while <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is away on a job, and <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> gets the account second-hand, minutes later, from her. In "The Acquisition Program" (Ch35) <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity> enters a building <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is working in - <entity repo="character" guid="019d6143-a6c0-7bbd-b014-4496b7f489a7">Sable</entity> watches him on camera and relays what he says over comms in real time, including the "ask it what happened to the others" line - while <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is always a floor away, never in frame, never spoken to directly. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> later asks the entity about "the others" himself (Ch35 SK2100), which the entity answers with the STANDING CONTRACT - SEASON TWO / "there were ten of you, you are the last" reveal (see 1c). <entity repo="character" guid="019d6143-a6c0-7bbd-b014-4496b7f489a7">Sable</entity>'s earlier Ch16 line ("Ask it about the others") is the first plant of this hook; the Acquisition Program scenes are its live escalation, and Ch35 SK2100 is its payoff. <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity> still never learns <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s face, voice, or name is attached to any of it on the page - the reader alone assembles the full picture.
+
+**Resolution within BCODA:** <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity>'s experiment completes - <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> makes contact. But <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity>
+doesn't get their asset back. The schism closes. The channel <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> spent 10 subjects building
+access to no longer exists. <entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity> is left managing an outcome he didn't control and cannot repeat.
+His mandate is hollow. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> walks away.
+
+**The Board (mid-book, cut-away chapter):**
+A <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> board member attempts to exercise oversight. The exchange is brief.
+Board member: *"You're still an employee and the board is your boss."*
+<entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity>: *"Those labels do not apply to me. I answer to a higher authority."*
+Board member: *"Whose authority?"*
+<entity repo="character" guid="019ee6a2-c508-774b-a5ff-f923f2c26aab">Able</entity>: *"The Will of the Universe and its new God."*
+He kills the board member in the room. No raised voice. No improvisation.
+The next working day: a portrait photograph and flowers in the <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> lobby. No one says anything afterward. *(Shipped scope 2026-08-03: the cut-away compresses this - the founder's portrait and the white flowers are present in the boardroom itself and the meeting simply continues; the next-day lobby beat was not dramatized. Accepted as complete, per the §13g row 7 precedent.)*
+
+**<entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Casper Vey</entity> (the Antiquarian)** = the honest broker who won't sell the witness.
+Shop = **Antiquity & Stationary** ("stationary" pun - the past won't move in an editable world).
+Faraday vault. No signal in or out. The entity = the ONE object <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Vey</entity> can't source (no provenance).
+
+## 5. <entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity> and <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> {#SS-BCODA-5}
+
+**<entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity>** (`05fbd9d0`, slug=tweeze — renamed to sift 2026-07-08) - psionic code-runner (the Read).
+Handle etymology: she worked through everything you had and left the rest in order. Whatever she took,
+you didn't know it was gone until you went looking and found the pile short. Gave <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> the handle
+"Broken Glass" then reduced it to "K" - in a freighter hold, three years before the dock; Ch7's arrival scene plays the naming (Soda Pop, the bottle, Broken Glass, K) as their running bit, not a first meeting. Killed in Ch7 The Dock by <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity>. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> doesn't know her real name.
+
+**Ch7 The Dock - how she dies and the battle (author decision, 2026-06-23; battle choreography
+re-synced to shipped prose 2026-09-05 - see correction note below):**
+The job completes. <entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity> says "Clean." One word. <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> is already coming up the ramp.
+No warning, no words. He has the angle on her before <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is moving. She dies before the
+echo of "Clean" is gone.
+
+**Battle choreography (CORRECTED 2026-09-05 to match shipped prose - the previous version of this
+row, "drives <entity repo="weapon" guid="019ed39c-6321-7c51-9691-f59b441b0bec">Silence</entity> into <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity>'s spine... goes over the edge, three stories," never shipped;
+this is what's actually on the page):**
+- <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> opens with three shotgun arms plus a belt-fed arm; <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> keeps both <entity repo="weapon" guid="019ed39c-6321-7c51-9691-f59b441b0bec">Silence</entity>
+  and <entity repo="weapon" guid="4ab24f74-61d4-4f45-b326-7c6b98c96279">Cacophony</entity> drawn but never closes to blade range - there is no sword strike on <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity>
+  anywhere in this fight.
+- **The NeoCortex moment (author decision, choreography corrected):** One of <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity>'s own grenades
+  bounces wrong and lands near the column. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> picks it up. The ungoverned neuretic lattice has
+  no governor - he neuretically connects to the detonator port, finds the rolling cipher on the
+  countdown, breaks it with raw processing power. <entity repo="vocabulary" guid="019d6143-aab8-7e48-97ef-8183dc295aba">Heat</entity> comes up behind his eyes. He pauses the
+  countdown at **eight seconds** (corrected from "one second" - the shipped prose has it tick back
+  down from eight to five before detonating, and one second left doesn't leave room for that).
+  Sets it near the ramp-mouth exit and moves on - he does not detonate it as a weapon; it simply
+  keeps counting while the fight continues elsewhere.
+- <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> runs the dock's structure against <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity>'s guns - a stairwell to turn three barrels into one -
+  and <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> shoots the stair out from under him. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> falls three flights with it, hits the
+  landing hard enough to reopen the rib <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> had stitched, and uses the collapsed
+  wreckage as cover while the paused grenade resumes counting (eight seconds, then five).
+- <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> moves through the wreckage toward the loading office - high ground, not the exit - with
+  <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> firing predictive bursts the whole way. He dives through the office doorway as the
+  grenade detonates at the ramp mouth.
+- Damage cascade to <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> comes entirely from the blast, not a blade: **the left (belt-fed) arm hangs
+  limp at the socket**; **the right-front leg stops moving**; **the torso's rotation ring locks
+  mid-turn**. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> never touches him directly.
+- <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> does not jump. His one working arm (left-rear) drags his broken chassis away from
+  <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>, down the ramp at ground level, into the street and gone - a crawl, not a fall, and not a
+  calculated multi-story leap. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> watches him go and does not move to stop him.
+
+<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> carries <entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity>'s body to the van - coat and all, the way Stash laid it.
+**Both truths are stated on the page, in order:**
+1. The operational truth: the body is evidence. A Read's neural architecture doesn't go dark
+   at death immediately - with the right equipment, what she knew can be reverse-engineered.
+2. The human truth: <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> carries her anyway. *You did not leave a comrade behind.* That is not
+   an operational rule. It is a human one. It does not require justification.
+**Do not collapse this to one truth.** Both sentences must stand.
+
+**<entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> escapes. <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> will be faced again.** His survival is load-bearing for the arc.
+
+**The <entity repo="vocabulary" guid="019d6143-aae2-7985-9d5c-63a652ad8571">Rogue</entity> AI motivation (author decision, 2026-06-23):**
+1. **<entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> is a <entity repo="vocabulary" guid="019d6143-aae2-7985-9d5c-63a652ad8571">Rogue</entity> AI asset** - directed. He does not know the full picture.
+2. **<entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity> carried evidence** - the data implicated the AI's contract-routing operation.
+   Killing her is data hygiene. A live Read who walked the data personally cannot be discredited.
+
+**In prose:** <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity>'s timing - arriving the moment the transmission completes, not before -
+is the tell. The AI's clock and <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity>'s arrival are the same clock. The reader sees it. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> doesn't.
+
+**<entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity>'s wake is in Ch8 The Quiet Hour** (<entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s counter, Thursday). The "Meet me"
+note at Antiquity & Stationary is planted in Ch8 - it seeds Ch16. Ch7 closes the same night with <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> treating the dock wounds in silence and the two of them sharing half a pill (beats 5202-5203); Ch8 opens two nights later.
+
+## 7. Author notes {#SS-BCODA-7}
+
+1. **Ch5 AI plant: the self-contradicting amendment ("AMENDMENT: NO. PROCEED ANYWAY.")** The entity's first unstructured lowercase
+   line: "received. filed under: firsts." This is what Ch16's reveal must have to land. The amendment + lowercase reply is the shipped Ch5 plant; Ch21's carousel-decommission reply reuses the lowercase register ("cross-reference: contract 0047-C-WEST"); Ch34's "partner. filed. keeping that one too." is the third unstructured line the entity ever sends.
+2. **Ch7: contract pings at the second light north, an hour after <entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity> dies, on the way to <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s.** The AI's timing is the
+   evidence. <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> kills <entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity> without warning; <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> holds <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> alone; <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> crawls away
+   disabled at ground level (see §5 choreography). **<entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> = <entity repo="vocabulary" guid="019d6143-aae2-7985-9d5c-63a652ad8571">Rogue</entity> AI asset (author decision). <entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity> = data hygiene (author decision).**
+   The AI's clock and <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity>'s arrival are the same clock.
+3. **Ch11: entity sends "CORRIDOR AUDIT COMPLETE. THE CHOICE AT 6.2% IS LOGGED."** The entity's
+   first non-job contact in 11 years — a deliberate break from relay-format structure.
+   Ch11 carries THREE transmissions of identical text (SK:8000, SK:9000, and SK:9550, the last one <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> re-reads on-page). The "6.2% is logged"
+   line is the same string every time. Do not disable any of the three beats.
+4. **The Floor Is Hard: consummation is AFTER Ch18 Work Order, before Ch20 Standard Rate.**
+   PLACEMENT OVERRIDE 2026-07-08. The scene earns its meaning only because <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> first learns
+   <entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity> was fabricated. The 8 existing beats from "Across the Hall" move in SortKey order.
+5. **<entity repo="weapon" guid="4ab24f74-61d4-4f45-b326-7c6b98c96279">Cacophony</entity> fires FIRST TIME in Ch5.** Two rounds, four left. This is the first discharge
+   of the book. Every later <entity repo="weapon" guid="4ab24f74-61d4-4f45-b326-7c6b98c96279">Cacophony</entity> appearance is counted from here: still four in Ch11 The Interview ("He knew he had four in it"); reloaded to six after the Ch12 fight.
+6. **"LOOK AT THE CENTER."** Originated as a Ch5 plant line (entity, "Somebody was drawing a map
+   of kids. We made the map wrong. You were never on it."), but the phrase actually ships -
+   reworded, relocated - in **Ch24 (Meridian Wellness)** (beat 3158, "<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> found the geometry three nights later"):
+   <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> leaves the note "LOOK AT THE CENTER" on a printed relay-log map; <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> later writes the
+   payoff line himself, to <entity repo="character" guid="01a0030b-5b48-7f83-baf8-f3b78d901de9">Dents</entity> (a child), not the entity to <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>: "SOMEBODY WAS DRAWING A MAP.
+   WE MADE THE MAP WRONG. YOU WERE NEVER ON IT." The line lands later than first planned, and passed forward rather than from the entity directly.
+7. **Ch16 <entity repo="character" guid="019d6143-a6c0-7bbd-b014-4496b7f489a7">Sable</entity> confession at the server farm cage near Zone 9 checkpoint.** <entity repo="character" guid="019d6143-a6c0-7bbd-b014-4496b7f489a7">Sable</entity> says "Your
+   contracts do not come from people." <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> visits <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Vey</entity> at Antiquity & Stationary separately in
+   the same chapter; <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Vey</entity> produces the CORBIN COMMISSION - PENDING card and a surveillance map. The chapter is one morning, in order: 07:14 ping, the cage, the confession, the yes, the nine-carrier file and the Nadia extraction ask (Continuation Lab 7, by 0600), then <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Vey</entity>. There is no "act normal tonight" plan and no <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity> visit in this chapter.
+8. **Ch23 Blackwater - "THERE ARE NINE OTHERS."** The entity's nine shell-debt victims ARE the nine prior carriers (author ruling 2026-09-05): the shell architecture was built around their lives, and #3000 is the reader's first hint of the lineage Ch16/Ch35/Ch37 spell out. Same nine, deliberate.
+9. **Ch32 The Axiom Yard** pays only what it shows: the arc-fence electrocution and the burned palm. No skirmisher fight exists on the page; nothing may reference claw wounds or dead skirmishers.
+10. **Ch24 Meridian Wellness** ends on the <entity repo="corponation" guid="019d6143-a7b4-745d-979d-cc36c3dcf32f">Tessera</entity> authorization chain naming <entity repo="character" guid="019e9e4f-1c23-7c6c-ae3a-d0b00d72c4a5">Director</entity> <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Casper Vey</entity>; the book never stages a confrontation with him and no line may promise one. **Ch35 The Acquisition Program** has no tea-party attendance advisory.
+
+## 8. Chapter writing rules {#SS-BCODA-8}
+
+**Every chapter draft must check:**
+1. Where is the AI manipulation thread in this chapter? Even quiet chapters carry a beat.
+2. Where is the love-story thread? Even action chapters carry approach-and-retreat.
+3. What is the chapter temperature? CODA-warm or SORROW-elegiac - not blended.
+4. Are any forbidden prose patterns present? (See [[../registers/CODA.md]])
+
+**The CODA register in practice:**
+- Warm-propulsive: want on page 1, countable wins, <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> lands.
+- Sacred beats DROP to SORROW: the bow, a death, the lemon tree, the consummation, the ledger.
+- Never average-temperature. The temperature is the chapter's.
+
+**<entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s beats use SORROW-grade regardless of chapter temperature.**
+
+## 12. The Rube <entity repo="character" guid="019f82ad-a081-7c40-8ba5-8f503afec633">Goldberg</entity> spine (author decision, 2026-07-10) {#SS-BCODA-12}
+
+**This is the crux of the book.**
+
+BCODA reads, from Ch1 through approximately Ch16, like a series of unrelated cool little
+adventures in a city that rewards competence. Then things start connecting. Not obviously -
+through accumulation. The reader begins to notice that the entity knew things it shouldn't have.
+That the sequence of jobs has left <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> with exactly the skills the next job requires.
+
+By Ch21, the full picture is visible in hindsight: **every event in the book was the entity
+orchestrating a probability cascade from 5D space.** The machine does not make things happen.
+It sees the dominoes already falling and arranges <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> to be standing at the right point when
+they arrive. The orchestration looks like coincidence because it is - from a 3D vantage.
+From 5D, it is a sequence as legible as a ledger.
+
+### 12a. Implementation law {#SS-BCODA-12a}
+
+**Every "coincidental" event must carry two simultaneous readings:**
+1. A 3D reading: plausible coincidence, human causality, things that just happen in a city.
+2. A 5D reading (visible only in hindsight): the entity could see this event coming; it
+   positioned <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> to be here because of what this event will produce downstream.
+
+**The clues must be misinterpretable on first pass.** The reader should file them as character
+details, world texture, or plot necessity - and only re-read them as orchestration after the
+spine is revealed.
+
+**The entity never lies. It never explains.** A 5D entity that can see the future has no reason
+to deceive. But it has every reason not to explain - explanation in 3D terms would cost it
+the operational security it has maintained for 11 years.
+
+### 12b. The orchestrated events - annotated {#SS-BCODA-12b}
+
+**Ch1 - The half-rate job (first contact)**
+- Surface: A woman whose husband's jaw has been wired shut pays <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> Φ180 - half his rate - and he takes it (beat 521). Mundane.
+- 5D: The entity routed this job because it could see <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> would be alone, cold, and cognitively available - and because this is the job that binds him to <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s counter for the rest of the book (see §2).
+
+**Ch2 - The surveillance file at <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Vey</entity>'s** (beats 5334-5341)
+- Surface: <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> discovers he has subscribers; <entity repo="character" guid="019f441d-1ab1-78dc-bbb2-58870428613d">Vey</entity>'s ledger surfaces the pencil-circled,
+  unsourced third entry (CLIENTS, UNSOURCED. ONGOING. FILE: COMPREHENSIVE) - not a literal
+  "<entity repo="faction" guid="019ee6a2-a172-7f5a-9451-03c4c3fe001b">Continuity Office</entity> header" as previously described here.
+- 5D: The entity arranged for <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> to learn about <entity repo="place" guid="01a06ee1-a31f-7059-abda-f4a28cc5639c">Halvorsen</entity> Civic (the second ledger entry,
+  "HALVORSEN, G. OPERATIONAL GRADE") at this moment.
+
+**Ch3 - <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s compliance hold**
+- Surface: A bureaucratic nuisance on a beloved vendor's stall.
+- 5D (intent only - not on the page): the prose shows a mundane franchise fraud (Tessaline, <entity repo="character" guid="019eb6ea-1b08-781a-b291-be2c1686aaeb">Mercer</entity>, inspector Osei-Bonsu) and never names <entity repo="faction" guid="019ee6a2-a172-7f5a-9451-03c4c3fe001b">the Office</entity>. Read the hold as the entity keeping <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> at the counter; do not write <entity repo="faction" guid="019ee6a2-a172-7f5a-9451-03c4c3fe001b">the Office</entity> into Ch3.
+
+**Ch5 - The carousel contract**
+- Surface: A quirky first job - hold a junction, let a child's carousel run four bars.
+- 5D (intent only - not on the page): nothing in Ch5 names a resonance node, a ley line, or Cinderfall. The carousel is the entity's own first address (paid in Ch21, "CUT THE LINE"); the calibration reading belongs to the reader in hindsight, not to any line of Ch5.
+
+**Ch5 - The amendment (AMENDMENT: NO. PROCEED ANYWAY.)**
+- Surface: A client whose field entries have never once contradicted themselves sends a self-contradicting amendment.
+- 5D: The contradiction was not indecision. Between NO and PROCEED ANYWAY, a 5D alignment shifted.
+
+**Ch7 - <entity repo="character" guid="05fbd9d0-c6d5-4731-8e48-f1a4c59e8783">Sift</entity>'s death**
+- Surface: A trusted crew member killed in a dock job gone wrong. Grief, fallout, <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity>.
+- 5D: The entity knew <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">War</entity> <entity repo="character" guid="1e31f7e6-a5d6-4bd1-94b8-8d33dfd7f5d1">Dog</entity> would be at the dock. It did not arrange her death - but it
+  arranged the job, knowing this was the event that would push <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> toward <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>'s care.
+  This is the entity's most morally uncomfortable move - it did not cause the death; it chose
+  not to prevent it. The reader only knows this in hindsight.
+
+**Ch12 - The Cinderfall Anomaly**
+- Surface: A 5D bleed event <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s neuretics survive when other hardware doesn't.
+- 5D: The entity arranged the Cinderfall contract because the Anomaly was going to occur at
+  that location on that night. It needed <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> present - to test whether his hardware could
+  survive the contact, and to allow the E.L.F. to latch. The E.L.F. is the entity spending
+  something to protect <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>. The first time the entity pays a cost <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> can almost see.
+
+**Ch18 - Nadia's posting (the phrase)**
+- Surface: A whistleblower finding the one person who can help her using an insider phrase.
+- 5D: The entity arranged for Nadia to surface at this specific point in <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s arc - after he
+  had the <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> relationship as an anchor, after he'd survived Cinderfall, but before he
+  needed to understand what he was in order to survive the final encounter.
+
+**<entity repo="character" guid="019f441d-04fb-7227-94d9-6b4d889ce52b">Boost</entity> arc - the bike theft**
+- Surface: A fourteen-year-old with good paper, a crew, and ambition stealing the unstealable
+  bike as a job application.
+- 5D: The entity saw <entity repo="character" guid="019f441d-04fb-7227-94d9-6b4d889ce52b">Boost</entity>'s crew surveilling <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s alley and recognized what they were -
+  the specific local intelligence asset <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> would need when <entity repo="faction" guid="019ee6a2-a172-7f5a-9451-03c4c3fe001b">the Office</entity> made its final approach.
+  The entity arranged the MORALE contract not to recover the bike but to formalize the
+  relationship. The ₱0.5 tip (ITEMIZED: MORALE) is the entity investing in <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s support
+  infrastructure for what comes next.
+
+**The standing contract - "The park on <entity repo="place" guid="01a06ee1-849c-7793-bce8-ae238e4576f6">Leavitt</entity>. Bring the sword."**
+- Surface: The entity's first explicit in-person request.
+- 5D: This is not a request. It is the appointment the entity has been building toward since the half-rate job in Ch1.
+
+### 12c. The final encounter {#SS-BCODA-12c}
+
+**The entity does not meet <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> in a room. There is no server. There is no avatar.**
+
+The entity connects to <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> directly - through the ungoverned NeoCortex, without relay format,
+without translation architecture - because the 11 years of positioning have built the one human
+being whose hardware can survive the contact.
+
+What <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> experiences: not a conversation. Not information delivered in words. The same mode as
+the LOG GAP, but full-bandwidth. He comes back knowing things that cannot be sourced. He comes
+back operational.
+
+**What the encounter resolves:**
+1. The Rube <entity repo="character" guid="019f82ad-a081-7c40-8ba5-8f503afec633">Goldberg</entity> spine is visible to <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> (and the reader) in full.
+2. The entity's nature - 5D, not a machine in a room - is transmitted without being stated.
+3. "You are not protected. You are necessary." - both things remain true.
+
+**AUTHOR NOTE:** The entity's 5D nature, the full orchestration, the names of the nine predecessors,
+the cabal's identity - none of this is stated on page. The ambiguity of the first reading
+(manipulative AI / transcendent defector) is never resolved by authorial statement.
+
+### 12d. Implementation checklist {#SS-BCODA-12d}
+
+- [ ] Every "coincidental" event in §12b has a beat that supports the 5D reading in hindsight
+- [x] The relay format has a moment where a reader can recognize it as compression infrastructure
+- [x] The <entity repo="character" guid="019f441d-04fb-7227-94d9-6b4d889ce52b">Boost</entity> arc is in its own mid-book chapter, beacon established
+- [x] <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>/Nadia "meatbag" conversation is written with the exact line intact
+- [x] The <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> beacon payoff is in late BCODA - she arrives without explanation
+- [x] CLOSED: The entity's standing contract ("park on <entity repo="place" guid="01a06ee1-849c-7793-bce8-ae238e4576f6">Leavitt</entity>, bring the sword") is set up in Ch20 ("NEXT TASK: TOMORROW, 21:00...") and pays off fully in **Ch21 "The Park Job"** - <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> and <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> go to the park on <entity repo="place" guid="01a06ee1-849c-7793-bce8-ae238e4576f6">Leavitt</entity>, the posting reads "BRING THE SWORD," the carousel is the site, and the entity's own origin-junction reveal lands there ("CUT THE LINE").
+- [x] The final encounter does not take place in a room with a machine
+- [x] "You are not protected. You are necessary." appears before the final encounter
+
+## 13. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s identity arc - the degradation of the Way (author decision, 2026-07-13) {#SS-BCODA-13}
+
+**This is the book's spine. The Rube <entity repo="character" guid="019f82ad-a081-7c40-8ba5-8f503afec633">Goldberg</entity> plot (§12) is the machine; this is the wound.**
+
+*Bushido Coda* is the **coda of the code** - the concluding passage in which the Way of the
+Warrior ends, virtue by virtue. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> opens the book with the whole code intact. Over sixteen
+chapters <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> takes each of these from him - not in one fall but in **seven separate,
+deliberate abandonments** (§13g), each one forced, each one a survival, each one paid so that
+someone he loves stays clean.
+
+**The theme, stated once for the writers and NEVER on the page:** *you make yourself dirty to
+keep others clean.* Every virtue <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> abandons is a real loss - a piece of who he was, given up
+because keeping it would have gotten <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>, or <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>, or the crew, killed.
+
+**The tragedy and the liberation are the same event, and the book holds both.** Seen one way,
+the code was never his - a program installed by a committee. Shedding it is <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> becoming a
+person instead of a weapon running someone else's specification. Seen the other way - **the way
+that must dominate the last page** - <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is destroying who he is to become what the people he
+loves need him to be. Both readings are true at every touchstone.
+
+**AUTHOR NOTE — invisible framing (user ruling 2026-07-13):** The words "bushido," "virtue,"
+"the Way," and the names of the seven virtues NEVER appear in the prose. The degradation is
+shown only through action - the bow not given, the lie told, the dirty win - and through what
+<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> stops doing that he used to do.
+
+### 13a. How the code costs him {#SS-BCODA-13a}
+
+**In every combat sequence, the code is a physical tax.** <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> takes damage he shouldn't take
+because the code requires:
+- The clean kill over the efficient one
+- The open announcement before the draw
+- Going alone to protect the people he cares about
+- The controlled stance against the environment that doesn't give him one
+
+This is not failure. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> wins every fight he enters. But he bleeds in places he didn't have to
+bleed. By mid-book, the reader has the ledger. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> doesn't.
+
+### 13b. The composite and the code are the same problem {#SS-BCODA-13b}
+
+The <entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity> reveal (Ch18) exposes the composite. <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> learns that <entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity> was built from 64
+practitioners by a committee - the man who taught him everything was an averaging function.
+
+**If <entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity> was not a person, the code is not his inheritance. It is a program.**
+
+The Nadia "meatbag" conversation (§11k, Ch18 "The Claim") - <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>: "So tell me which of them is
+me. Give me the one that's mine." Nadia's answer is not the reassuring, structural "he decides
+what the ghosts get to do" version this section used to describe - it shipped bleaker, and on
+purpose (corrected 2026-08-22, prose wins on facts): "Yes," and then no line to draw one with -
+"No original. No root. Just the ghosts, all the way down." **There is no discrete self left to
+point to. The composite goes all the way through.** This is a harder answer than empowering
+self-authorship, and it is more consonant with the book's own grief-not-triumph spine (§13h)
+than the version this section previously described.
+
+### 13c. The <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Street Samurai</entity> distinction {#SS-BCODA-13c}
+
+This is the title's meaning. Not a warrior in a city. A person who has taken what is real from
+the code and stripped the religion away from it.
+
+**Samurai (<entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity>'s version):** Honor as constraint. Rules as identity. The code as the man.
+
+**<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Street Samurai</entity> (<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s version, earned late):** Competence as constant. Rules as tools. The
+code in service of survival. Calling <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> because she is better at three things he needs and
+the code's objection is not load-bearing anymore.
+
+**But do not write this as a triumph.** "<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Street Samurai</entity>" is what's left after the amputations,
+not a promotion. He is more effective and less whole. The mood is grief (§13h).
+
+### 13d. The arc's progression through the book {#SS-BCODA-13d}
+
+| Phase | Chapters | Virtue falling | What it costs <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> |
+|---|---|---|---|
+| **Intact** | Ch1-3 | none | The baseline. He bows, fights clean, tells the truth. |
+| **First stains** | Ch5-11 | Courtesy (Ch5), Mercy (Ch11) | He stops giving the enemy the ceremony; steps to survive a killing shot, and it finds a stranger instead. |
+| **The private lie** | Ch14 | Honesty | He hides his dying from <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> and sustains it. |
+| **The dirty work** | Ch16-18 | Rectitude, Loyalty (<entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity> revealed fabricated — masterless) | Identity crisis. |
+| **Choosing to live** | The Floor Is Hard | Courage-to-die | He surrenders the readiness to die clean and chooses to keep existing - for her. |
+| **The last stain** | 35th & Halsted | Honor | He wins the way the code forbids - the feigned surrender, then the blind hand-kill (the single dishonor beat as shipped; amended 2026-07-18, see §13g row 7). |
+| **The coda** | One Knock | - | Nothing left to spend. The dirtied man, alive, goes to dinner. |
+
+### 13e. Implementation rules for combat beats {#SS-BCODA-13e}
+
+1. **Mark the code-cost moments.** Every time <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> takes damage he didn't have to take, the
+   reader should be able to identify the code-decision that produced it. Not announced - felt.
+2. **Do not rehabilitate the code.** The code is not wrong because it is bad. It is wrong because
+   it is not <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s.
+3. **The code runs harder under pressure.** Before Ch18, when <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> is most stressed, he becomes
+   most code-rigid.
+4. **Late-book <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> fights different.** The discipline is still there - it was always his. But
+   the framing changes. He stops asking "what does the code require" and starts asking "what does
+   the situation need."
+5. **The beacon scene is the proof.** <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> goes off-grid to protect <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> "by the code." <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>
+   arrives anyway. The code prescribed the wrong answer.
+
+### 13g. The seven touchstones (AUTHORITATIVE — author decision, 2026-07-13; row 7 amended 2026-07-18) {#SS-BCODA-13g}
+
+Seven resonant moments, one per virtue, in fixed order. **Honor falls last, at 35th & Halsted
+(penultimate chapter); The Floor Is Hard is the hinge.** Each touchstone must satisfy all four tests:
+1. **Forced.** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> leaves no clean option.
+2. **For someone.** The stain is paid to keep a specific loved one clean/safe/alive.
+3. **A real loss.** Drop to SORROW-grade on the abandonment itself.
+4. **Shown, never named.** No "bushido," no "virtue," no lecture.
+
+| # | Virtue (internal only) | Chapter | The dirtying act | Kept clean |
+|---|---|---|---|---|
+| 1 | **Courtesy** - the bow, the announced draw | Ch5 The Carousel | He does not bow, does not announce. The shotgun answers first. | The carousel's children; bystanders |
+| 2 | **Mercy** - the clean kill, the step *around* the civilian line | Ch11 The One Who Doesn't Stop | He steps clear of a killing shot aimed at him; it carries through and kills a stranger instead. He disarms the man responsible rather than killing him. | an ambulance driver, unchosen; the leader, spared |
+| 3 | **Honesty** - sincerity, the truth owed to one's own | Ch14 One Shoe / Ch15 The Same Secret | He hides his dying from <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> and sustains the omission. | <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> - she doesn't carry his death |
+| 4 | **Rectitude** - justice, <entity repo="entertainment" guid="019d6513-b76e-734f-9702-c716a9412f2e">clean hands</entity> in the work | Ch16 The Offer — Ch18 Work Order | He leverages a near-innocent (Dae-ho <entity repo="character" guid="019f43b9-5ea8-74cd-b722-60e0b4780b9f">Yim</entity>) and takes the unjust job. | the crew - the intel keeps them breathing |
+| 5 | **Loyalty** - fealty to the master, to <entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity> | Ch18 Work Order (<entity repo="character" guid="01a02d38-185c-7752-b83e-baa921571078">Seito</entity> revealed fabricated) | The master never existed. He becomes ronin - masterless, by choice. | <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> - protected by his judgment, not the code's |
+| 6 | **Courage-to-die** - the <entity repo="vocabulary" guid="019d6143-aafb-7b6b-bcbc-b8614f9d228f">samurai</entity>'s readiness to die clean | The Floor Is Hard | He surrenders the honorable death and *chooses to keep living* - for her. | <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> - he stays alive to keep standing between her and the city |
+| 7 | **Honor** - the last, most iconic | 35th & Halsted (penultimate) | He wins the way the code forbids: the feigned-surrender hand-kill. Shipped as the single realized violation - the originally-drafted triad (booby-trap + blind kill + ungoverned neuretic sledgehammer) was reduced to this one beat during drafting; the author accepted the leaner climax as complete on its own (BCODA-2, 2026-07-18) and this row records the shipped scope, not the abandoned triad. | everyone - the Schism closes |
+
+**Continuity of the descent.** After each touchstone the abandoned virtue *stays* abandoned.
+Post-Ch5 he no longer bows to what he kills. Post-Ch12 he no longer steps around the line.
+The losses accrue; they do not reset.
+
+**Do not over-signpost.** At most one touchstone per movement, and never a beat that stops to
+underline it. If a reader on first pass thinks "ah, a virtue just fell," it is too loud.
+
+### 13h. The last page - what the reader closes the book feeling (author decision, 2026-07-13) {#SS-BCODA-13h}
+
+**Author's target:** *"It's tearing me apart knowing <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> has to destroy who he is to become
+what he needs to be. Make sure that's what resonates on the last page when the reader closes
+the book."*
+
+One Knock is the coda after the coda. What is left is a man who spent himself down to nothing
+to keep the people he loves clean, and the last image must land that cost as **grief, not triumph.**
+
+**Rules for the closing beat:**
+- **No victory posture.** He won; the prose does not celebrate.
+- **She does not know the price - and that is the point.** <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> comes through the wall with
+  the warm soldering iron. She sees the man. She cannot see the ledger of everything he stopped
+  being so that she would never have to. His keeping it from her is the last mercy he has left
+  to give, and it is the loneliest thing in the book. **This is the resonance** - she asks
+  *You eat?* and he says no and they go, and the reader knows what she doesn't.
+- **One flat interior line, colder than the chapter, then white space.** Do not explain the grief.
+  Name nothing.
+- **Not despair - depletion with one warm point.** <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> is the single thing the dismantling was
+  *for*, and she is real, and she is here. The warmth is what makes the grief land (CODA law).
+
+## 14. Open plant / payoff ledger {#SS-BCODA-14}
+
+### 14a. Closed plants (payoff written)
+
+| Plant | Plant location | Payoff | Payoff location | Closed |
+|---|---|---|---|---|
+| Alley figure's left hand runs 3° colder, unexplained at first (echoes <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s own new diagnosis at SK:2000, a separate thematic parallel) | Ch14 SK:18000 | <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> recognizes the <entity repo="faction" guid="019ee6a2-a172-7f5a-9451-03c4c3fe001b">Continuity Office</entity> surveillance asset wore Femi's stolen biometric signature as a thermal spoofing mask | Ch14 SK:21100 | 2026-07-10 |
+| Vulture fledglings throw schism-frequency interference rounds (17-19 Hz) | Ch12 SK:17000 | <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> finds <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> ordnance casings at 35th & Halsted perimeter - same batch stamp | 35th and Halsted SK:5000 | 2026-07-10 |
+
+### 14b. Dropped findings
+
+| Finding | Reason dropped | Date |
+|---|---|---|
+| Imani registers "recognition" at 35th & Halsted Schism | No causal grounding; line removed per user decision | 2026-07-10 |
+| BRING THE SWORD summons card / stolen-sword mystery (Ch30, beats 3195 & 3199) | Logic-sweep 2026-08-01 (m4): <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s sword is confirmed stolen from his locker with a threatening card; by Ch22 he's using <entity repo="weapon" guid="019ed39c-6321-7c51-9691-f59b441b0bec">Silence</entity> again with zero on-page explanation of recovery or who sent the card. Not a one-clause fix - needs either a resolution beat or an explicit author note. **CLOSED 2026-08-03** - resolution beat spliced on-page: at the Narrows ramen-ya, before the togishi read, the <entity repo="character" guid="019eb6ea-84c8-7ad6-89f8-32630940e563">Branch</entity> Manager returns <entity repo="weapon" guid="019ed39c-6321-7c51-9691-f59b441b0bec">Silence</entity> ("The borrowing was a question. You answered it by coming."). The empty-locker discovery (beat 3195, SortKey 400) and the return (beat 3199, SortKey 800) and all later sword usage now reconcile; the borrower reads as <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus</entity> (five-petal card, their venue) without being stated. Citation corrected 2026-08-15: this scene is in **Ch30 "<entity repo="place" guid="019d6143-a948-7b0e-9b15-63f753f313c9">The Narrows</entity>,"** not Ch21 - the "Ch21 SK80000" label predates the 2026-08-14 reparenting that split Ch21-35 out from under a mislabeled "Ghost Period" wrapper. | 2026-08-01 |
+
+## 15. Brand Environment & Character Loadout {#SS-BCODA-brands}
+
+BCODA is complete (V19.docx exported 2026-07-10); this section is canonical for all future
+stories featuring <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle Ellen Corbin</entity>.
+
+### <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle Ellen Corbin</entity> - Canonical Loadout
+
+| Item | Brand / Model | Notes |
+|---|---|---|
+| Motorcycle | **Aries Viper Predator MDK-2** ('Aries' = the corponation; 'Viper' = the motorcycle line; 'Predator' = <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s model), Matte Black, model year 2215, H-Cell powered (universal power source; hydrogen implied, never confirmed in-universe) - full arc: stolen by a 14-year-old (<entity repo="character" guid="019f441d-04fb-7227-94d9-6b4d889ce52b">Boost</entity>, Ch18 Work Order) and impounded the same night before <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> could ride it home; recovered via <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>'s 3-month-dormant beacon in the Ch21 Park Job coda after a circuitous impound-to-auction chain, the SAME original bike, not a replacement; destroyed in The Relay Station (Ch34) - the entity drives it autonomously into a recovery truck via <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity>'s ignition handshake, without <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s consent, to save <entity repo="character" guid="019f441d-04fb-7227-94d9-6b4d889ce52b">Boost</entity>, with 0.4 seconds of margin; mourned at a crew funeral at <entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s counter, after which <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> rides the <entity repo="corponation" guid="0d831459-182f-4efc-9920-bdf9e032c61d">Pulse</entity> to every job for three weeks (<entity repo="weapon" guid="019ed39c-6321-7c51-9691-f59b441b0bec">Silence</entity> sheathed across his back, to the visible horror of Bridgeport grandmothers) while the crew rebuilds it in secret - <entity repo="person" guid="806cd358-6413-426b-a42d-19726b732c0b">Vo Dinh</entity>'s shop trues the salvaged frame straight, <entity repo="character" guid="019eb6eb-6eb0-7176-9136-790a0ed124fb">Gantry</entity> repaints it (all five crew wet-sanding between coats), <entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> rebuilds the ignition handshake and hides a beacon; revealed via a fake-emergency "unveiling" (<entity repo="character" guid="019f441d-04fb-7227-94d9-6b4d889ce52b">Boost</entity>'s operation, staged as an "ARRIVE ARMED" page so <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> believes it's a threat) on the evening of <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s unmarked, unmentioned birthday, and christened 'MK. 2' by <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity> himself, in The Acquisition Program (Ch35); gone again by Ch38 (One Knock), cause deliberately unresolved (see SS-BCODA-1c - the entity's quiet channel on <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>, closing out once the loop resolves). *(Beacon dormancy and rebuild/reveal details corrected 2026-08-15 after Ch21-35 reparenting made this content readable for the first time - the previous "3-year-dormant" and "<entity repo="character" guid="019d6143-c1d5-e7f8-a92b-34068c150e4d">Pixel</entity> alone rebuilds"/"surprise birthday party" wording did not match the shipped prose.)* | <entity repo="corponation" guid="019f524d-ec65-703b-871f-45cc8e7aca85">Aries Performance Vehicles</entity> (<entity repo="place" guid="01a018a4-086e-73c5-b9ca-65a52a73f25c">Pilsen</entity>); eigenlift stabilization - applies to the original only |
+| Sword | **<entity repo="weapon" guid="019ed39c-6321-7c51-9691-f59b441b0bec">Silence</entity>** | No brand - just a sword (SS-LAW-10). The absence of branding is the point. |
+| Shotgun | **Torii Security Group TSS-3 '<entity repo="weapon" guid="4ab24f74-61d4-4f45-b326-7c6b98c96279">Cacophony</entity>'** | Six-shot revolver shotgun; <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s personal name (for the sound it makes). |
+| <entity repo="technology" guid="019f0464-2fee-725a-a5e0-00628447b431">Neuretics</entity> | **Atlas NeoCortex** (Sovereign tier, ungoverned) | No governor - is killing him. |
+| Apparel | **Gray zone reclaim** - black duster over technical base layer | No archology brand by choice. The absence of visible branding IS the brand signal. |
+
+### Setting Brand Environment
+
+BCODA is set primarily in the Loop, Bloom Quarter, and gray zones adjacent to both.
+
+- **<entity repo="place" guid="01a01887-b5f4-781c-8d38-122f7e1f38ba">The Loop</entity>** - <entity repo="corponation" guid="019f524f-a312-75d5-af6e-7271b67cde43">Casque & Veil</entity> on every executive; <entity repo="corponation" guid="019d6143-a7b6-7f75-85fe-75609a103282">Waxwing Neuromedia</entity> ad-impressions; <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">Arcturus</entity> kinetic interceptor systems on every rooftop
+- **Gray zone** - <entity repo="corponation" guid="019f524f-d1ca-7ddd-9420-70fdd25ace0f">Greymark Unseen</entity>; CDW weapons; Aries bikes; CramIt bars; street-custom everything else
+- **<entity repo="character" guid="019f441d-3404-79c2-a8f6-2942f504698e">Mrs. Chen</entity>'s stall** - unlicensed, unbranded, real food; the one thing in the story that has no commercial origin story

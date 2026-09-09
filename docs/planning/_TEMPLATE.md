@@ -4,7 +4,7 @@ project: Prose
 layer: planning
 code: <CODE>
 title: <Story Title>
-universe: GLMZ
+universe: <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>
 updated: <YYYY-MM-DD>
 ---
 
@@ -12,19 +12,19 @@ updated: <YYYY-MM-DD>
 
 > **This brief is mandatory before creating a node bible or any DB records.**
 > A story that cannot answer all 10 sections does not belong in the roster yet.
-> After filing, update `docs/series/GLMZ.md` §1–2 (roster) and §3 (character ledger exit states).
+> After filing, update `docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md` §1–2 (roster) and §3 (character ledger exit states).
 
 ---
 
 ## 1. Series Position {#SS-BRIEF-<CODE>-§1}
 
-**Universe:** GLMZ
+**Universe:** <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>
 
 **Story type** (pick one):
 - [ ] Main series chapter — part of Book N (specify which book: ___)
 - [ ] Caper-of-the-week — standalone adventure that fits within a book's tone
 - [ ] Season arc beat — directly advances the season villain or book-level arc
-- [ ] Standalone — independent GLMZ story, feeds into the universe but not a specific book chapter
+- [ ] Standalone — independent <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> story, feeds into the universe but not a specific book chapter
 
 **Book(s) this story serves:** ___ (cite NodeCode or Book number; "none" is valid for pure world-builds)
 
@@ -34,12 +34,12 @@ updated: <YYYY-MM-DD>
 
 ## 2. Arc Contribution {#SS-BRIEF-<CODE>-§2}
 
-Which of the 5 overarching GLMZ arcs does this story advance?
+Which of the 5 overarching <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> arcs does this story advance?
 Check all that apply and describe how.
 
-- [ ] **Rogue AI** (the entity, the Unanimity, the Consensus, UNDERTOW, Sparrow) — how: ___
-- [ ] **Kyle-Atlas** (ATLAS-9, terminal neuretics, the curriculum, the correspondence) — how: ___
-- [ ] **Lotus Syndicate** (the syndicate, Lotus civil war, Reiko Oka, Lotus characters) — how: ___
+- [ ] **<entity repo="vocabulary" guid="019d6143-aae2-7985-9d5c-63a652ad8571">Rogue</entity> AI** (the entity, the Unanimity, the Consensus, UNDERTOW, <entity repo="character" guid="8556c863-afa0-4c23-8140-9ce70642bea8">Sparrow</entity>) — how: ___
+- [ ] **<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>-Atlas** (ATLAS-9, terminal neuretics, the curriculum, the correspondence) — how: ___
+- [ ] **<entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus Syndicate</entity>** (the syndicate, <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus</entity> civil war, Reiko Oka, <entity repo="faction" guid="019d6143-a893-7801-860b-0eda6a216393">Lotus</entity> characters) — how: ___
 - [ ] **Sable-Axiom** (Sable's network, the Axiom thread, Year One / Lullaby) — how: ___
 - [ ] **Riven** (the thin spots, Schism, 5D physics, Reads as instruments) — how: ___
 - [ ] **None** — this is pure world texture / character introduction (describe value): ___
@@ -63,7 +63,7 @@ enters production.
 ## 4. Character Entry States {#SS-BRIEF-<CODE>-§4}
 
 For each recurring character who appears, copy their end state from the Character Arc Ledger
-(`docs/series/GLMZ.md §3`) for the book/period preceding this story.
+(`docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md §3`) for the book/period preceding this story.
 
 | Character | Entry State (from ledger) |
 |---|---|
@@ -77,7 +77,7 @@ If their current state is TBD in the ledger, resolve it here and update the ledg
 
 Where are recurring characters going out of this story?
 These states must be consistent with their arc trajectories in the ledger.
-After filing this brief, copy exit states into `docs/series/GLMZ.md §3`.
+After filing this brief, copy exit states into `docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md §3`.
 
 | Character | Exit State | Ledger Update Needed? |
 |---|---|---|
@@ -88,21 +88,21 @@ After filing this brief, copy exit states into `docs/series/GLMZ.md §3`.
 ## 6. What It Plants {#SS-BRIEF-<CODE>-§6}
 
 Cross-story plants this story seeds. For each plant, the payoff story must already exist in the
-Story Roster (`docs/series/GLMZ.md §1–2`). If the payoff story doesn't exist yet, the plant
+Story Roster (`docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md §1–2`). If the payoff story doesn't exist yet, the plant
 cannot be written.
 
 | Plant Description | Payoff Story (NodeCode) | Payoff Chapter/Beat (if known) |
 |---|---|---|
 | | | |
 
-After filing, add these rows to `docs/series/GLMZ.md §5`.
+After filing, add these rows to `docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md §5`.
 
 ---
 
 ## 7. What It Pays {#SS-BRIEF-<CODE>-§7}
 
 Cross-story payoffs delivered in this story. Cite the planting story.
-Update the Status column in `docs/series/GLMZ.md §5` when each payoff is written.
+Update the Status column in `docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md §5` when each payoff is written.
 
 | Payoff Description | Plant Story (NodeCode) | Plant Description |
 |---|---|---|
@@ -160,7 +160,7 @@ betrayal / loss / reunion / heist / escape / etc.): ___
 ## 10. Entity Seeding Required {#SS-BRIEF-<CODE>-§10}
 
 Every named character, CorpoNation, place, weapon, or document in this story must be in the DB
-before prose begins. Cross-check against the Entity Seeding Roadmap in `docs/series/GLMZ.md §7`.
+before prose begins. Cross-check against the Entity Seeding Roadmap in `docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md §7`.
 
 | Entity | Type | In DB? | DB seed command / MCP tool |
 |---|---|---|---|
@@ -175,9 +175,9 @@ Run `prose --scan-entity-mentions --slug <slug>` after each chapter draft to kee
 ## Checklist Before Proceeding
 
 - [ ] All 10 sections filled (no blank answers — "None" or "TBD with justification" is acceptable)
-- [ ] `docs/series/GLMZ.md` Story Roster updated with this story's Code and status
-- [ ] `docs/series/GLMZ.md` Character Arc Ledger updated with exit states from §5
-- [ ] `docs/series/GLMZ.md` Plant/Payoff Registry updated with rows from §6 and §7
-- [ ] World-Revelation Sequencing in `docs/series/GLMZ.md §6` checked — this story doesn't spoil a locked revelation
+- [ ] `docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md` Story Roster updated with this story's Code and status
+- [ ] `docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md` Character Arc Ledger updated with exit states from §5
+- [ ] `docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md` Plant/Payoff Registry updated with rows from §6 and §7
+- [ ] World-Revelation Sequencing in `docs/series/<entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>.md §6` checked — this story doesn't spoil a locked revelation
 - [ ] Entity seeding list (§10) complete and cross-checked against the Seeding Roadmap
 - [ ] Node bible (`docs/nodes/<CODE>.md`) does NOT exist yet — brief precedes bible

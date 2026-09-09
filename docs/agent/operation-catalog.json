@@ -8,7 +8,7 @@
     {"id":"provider_status","transport":["cli"],"access":"read","scope":"global","cost":"optional","approval":"none","status":"active","cli":"prose --provider-status --json"},
     {"id":"list_universes","transport":["mcp","cli"],"access":"read","scope":"global","cost":"none","approval":"none","mcp":"list_universes"},
     {"id":"read_context","transport":["mcp","cli","http"],"access":"read","scope":"required","cost":"none","approval":"none","mcp":"doc_context_status"},
-    {"id":"create_change_proposal","transport":["mcp","cli","http"],"access":"proposal","scope":"required","cost":"none","approval":"none","status":"planned"},
+    {"id":"create_change_proposal","transport":["http"],"access":"proposal","scope":"required","cost":"none","approval":"none","status":"active","http":"POST /api/change-proposals"},
     {"id":"approve_change_proposal","transport":["cli"],"access":"approval","scope":"required","cost":"none","approval":"human-interactive","status":"planned"},
     {"id":"apply_change_proposal","transport":["mcp","cli","http"],"access":"write","scope":"required","cost":"reported","approval":"grant-required","status":"planned"},
     {"id":"verify_change","transport":["mcp","cli","http"],"access":"read","scope":"required","cost":"none","approval":"none","status":"planned"},

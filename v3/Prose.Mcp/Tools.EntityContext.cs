@@ -17,9 +17,49 @@ namespace Prose.Mcp;
 public class EntityContextTools(
     EntityContextService entityContext,
     EntityMentionService mentionService,
+    EntityLookupService entityLookup,
+    EntityRenameService entityRename,
     IDbContextFactory<ProseDbContext> dbFactory,
     HubInvoker hub)
 {
+    [McpServerTool, Description("Find canonical entities by a case-insensitive partial name or character alias. Returns name, GUID7 id, slug, entity type, and alias match when applicable.")]
+    public Task<string> FindEntities(
+        [Description("Partial canonical name or character alias.")] string query,
+        [Description("Optional entity type, for example character or place.")] string? entityType = null,
+        [Description("Maximum results, 1-200; default 40.")] int limit = 40) =>
+        hub.InvokeAsync(nameof(EntityContextTools), nameof(FindEntitiesImpl), new { query, entityType, limit });
+
+    public async Task<string> FindEntitiesImpl(string query, string? entityType = null, int limit = 40)
+    {
+        var matches = await entityLookup.FindAsync(query, entityType, limit);
+        return JsonSerializer.Serialize(new { ok = true, count = matches.Count, matches }, new JsonSerializerOptions { WriteIndented = true });
+    }
+
+    [McpServerTool, Description("Preview a deterministic entity rename. Finds exact full-name references in one book's hand-authored outline and descendant beats, plus linked Story Ledger claims. Does not write.")]
+    public Task<string> PreviewEntityRename(
+        [Description("Canonical entity GUID7 or slug.")] string entityIdOrSlug,
+        [Description("Book GUID, slug, or NodeCode that scopes outline and beats.")] string nodeIdOrSlug,
+        [Description("New canonical full name.")] string newName) =>
+        hub.InvokeAsync(nameof(EntityContextTools), nameof(PreviewEntityRenameImpl), new { entityIdOrSlug, nodeIdOrSlug, newName });
+
+    public async Task<string> PreviewEntityRenameImpl(string entityIdOrSlug, string nodeIdOrSlug, string newName) =>
+        JsonSerializer.Serialize(await entityRename.PreviewAsync(entityIdOrSlug, nodeIdOrSlug, newName), new JsonSerializerOptions { WriteIndented = true });
+
+    [McpServerTool, Description("Apply a reviewed deterministic entity rename. Requires confirmed=true and an explicit active universe. Replaces exact full-name references in the selected book's outline and beats, relabels linked Story Ledger claims, and registers the old name as deprecated.")]
+    public Task<string> ApplyEntityRename(
+        [Description("Canonical entity GUID7 or slug.")] string entityIdOrSlug,
+        [Description("Book GUID, slug, or NodeCode that scopes outline and beats.")] string nodeIdOrSlug,
+        [Description("New canonical full name.")] string newName,
+        [Description("Must be true after reviewing preview_entity_rename.")] bool confirmed = false,
+        [Description("Optional audit note.")] string? note = null) =>
+        hub.InvokeAsync(nameof(EntityContextTools), nameof(ApplyEntityRenameImpl), new { entityIdOrSlug, nodeIdOrSlug, newName, confirmed, note });
+
+    public async Task<string> ApplyEntityRenameImpl(string entityIdOrSlug, string nodeIdOrSlug, string newName, bool confirmed = false, string? note = null)
+    {
+        if (!confirmed) return JsonSerializer.Serialize(new { ok = false, error = "approval_required", message = "Preview the rename and call again with confirmed=true." });
+        return JsonSerializer.Serialize(await entityRename.ApplyAsync(entityIdOrSlug, nodeIdOrSlug, newName, note), new JsonSerializerOptions { WriteIndented = true });
+    }
+
     [McpServerTool, Description("Inspect the entity working memory currently active for a node. Shows depth-0 (directly named), depth-1 (semantic neighbors), and depth-2 (neighbors of neighbors) entities with their canon descriptions. Call after generating beats to see what was in scope.")]
     public Task<string> get_entity_context(
         [Description("Node slug (e.g. 'ATTE', 'BCODA')")] string slug) =>

@@ -936,6 +936,15 @@ if (args.Contains("--find-entity"))
     Environment.ExitCode = await HubCliClient.ForwardAsync("FindEntityCli", args);
     return;
 }
+
+// prose --rename-entity --entity <guid|slug> --node <book-guid|slug|code> --new-name "..." [--apply --yes]
+// Preview is the default; the apply form replaces exact full-name references in this book's
+// hand-authored outline and descendant beats, then relabels linked ledger claims.
+if (args.Contains("--rename-entity"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RenameEntityCli", args);
+    return;
+}
 if (args.Contains("--set-canon-section"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SetCanonSectionCli", args);

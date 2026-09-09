@@ -55,18 +55,18 @@ N/A — first book, no ledger yet.
 
 | Character | Exit State |
 |---|---|
-| Gordan Rosniak (protagonist, POV) | Gone dark — no radio, no logs, months of self-imposed silence, believing withdrawal is safety |
-| Priya Standish (corroborating ham) | Unwittingly reports "working" Dara on a night Dara never touched the rig — last word in the book |
-| Owen Bui (corroborating ham) | Reports a private detail Dara never transmitted, triggering the Act 4 turn; unaware of what he's confirmed |
-| Sal Ferraro (corroborating ham) | Same function as Owen — independent second corroboration, so the reader can't dismiss one witness as unreliable |
-| The Overlap (entity, DB stub only — never named on-page) | Unresolved; last confirmed active after Dara's silence began |
+| <entity repo="character" guid="019fca41-b018-700b-8c99-d8cc397c7df8">Gordan Rosniak</entity> (protagonist, POV) | Gone dark — no radio, no logs, months of self-imposed silence, believing withdrawal is safety |
+| <entity repo="character" guid="019fca41-b44e-7851-9660-5e3172ed607c">Priya Standish</entity> (corroborating ham) | Unwittingly reports "working" Dara on a night Dara never touched the rig — last word in the book |
+| <entity repo="character" guid="019fca41-b412-7362-913b-38be54ba3276">Owen Bui</entity> (corroborating ham) | Reports a private detail Dara never transmitted, triggering the Act 4 turn; unaware of what he's confirmed |
+| <entity repo="character" guid="019fca41-b4a7-7aa2-95d7-24f38504ca89">Sal Ferraro</entity> (corroborating ham) | Same function as <entity repo="character" guid="019fca41-b412-7362-913b-38be54ba3276">Owen</entity> — independent second corroboration, so the reader can't dismiss one witness as unreliable |
+| <entity repo="character" guid="019fca41-b533-7652-a2d3-a4aa96d06ad4">The Overlap</entity> (entity, DB stub only — never named on-page) | Unresolved; last confirmed active after Dara's silence began |
 
 ---
 
 ## 6. What It Plants {#SS-BRIEF-QRT-§6}
 
 N/A — no future HORROR book exists yet to pay off into. If a second HORROR book is ever written
-that reuses the Observer-Effect mechanic or "The Overlap," record that decision here retroactively
+that reuses the Observer-Effect mechanic or "<entity repo="character" guid="019fca41-b533-7652-a2d3-a4aa96d06ad4">The Overlap</entity>," record that decision here retroactively
 and create `docs/series/HORROR.md`.
 
 ---
@@ -106,7 +106,7 @@ the pattern future HORROR books can either follow or deliberately break.
 Never internal-understanding; the protagonist's withdrawal is a failed countermeasure, not growth.
 
 **Moral polarity:** N/A / not applicable — no antagonist with intent is confirmed to exist as a
-moral actor; the story never adjudicates whether "The Overlap" has agency, hostility, or any
+moral actor; the story never adjudicates whether "<entity repo="character" guid="019fca41-b533-7652-a2d3-a4aa96d06ad4">The Overlap</entity>" has agency, hostility, or any
 motive at all.
 
 **Ending style:** Cold/ambiguous (HORROR default, `docs/HORROR.md` §4) — the threat drops off-page,
@@ -133,10 +133,10 @@ it, because it was never dependent on the protagonist's participation.
 4. Shirley Jackson's method generally (*The Haunting of Hill House*) — psychological ambiguity
    sustained by never confirming the haunting is external to the protagonist.
 
-**Subplot thread:** The corroborating hams (Priya, Owen, Sal) form a thematically parallel
+**Subplot thread:** The corroborating hams (<entity repo="character" guid="019fca41-b44e-7851-9660-5e3172ed607c">Priya</entity>, <entity repo="character" guid="019fca41-b412-7362-913b-38be54ba3276">Owen</entity>, <entity repo="character" guid="019fca41-b4a7-7aa2-95d7-24f38504ca89">Sal</entity>) form a thematically parallel
 carrier — each one's unwitting testimony is a small, human-scale echo of the protagonist's own
-crisis of "how do I know what's real on this medium," escalating from mundane (Priya just misses
-a scheduled contact) to devastating (Owen repeats a private thought verbatim).
+crisis of "how do I know what's real on this medium," escalating from mundane (<entity repo="character" guid="019fca41-b44e-7851-9660-5e3172ed607c">Priya</entity> just misses
+a scheduled contact) to devastating (<entity repo="character" guid="019fca41-b412-7362-913b-38be54ba3276">Owen</entity> repeats a private thought verbatim).
 
 **Form device:** Document interleave (confirmed by blueprint retrofit after prose was drafted) —
 quoted logbook entries, a spreadsheet-building beat, and a verbatim-quoted QSL card function as
@@ -150,14 +150,14 @@ Ending.
 
 | Entity | Type | In DB? | DB seed command |
 |---|---|---|---|
-| Gordan Rosniak (KJ7ROS) | character | [x] | `prose --add-character --file ... --universe horror` |
-| Aimes Rosniak-Bishop (husband) | character | [x] | `prose --add-character --file ... --universe horror` |
-| Min-jun and Ji-ho Rosniak-Bishop (twins, grouped) | character | [x] | `prose --add-character --file ... --universe horror` |
-| Priya Standish | character | [x] | `prose --add-character --file ... --universe horror` |
-| Owen Bui | character | [x] | `prose --add-character --file ... --universe horror` |
-| Sal Ferraro | character | [x] | `prose --add-character --file ... --universe horror` |
-| The Overlap (DB stub, never named on-page) | character (entity stub) | [x] | `prose --add-character --file ... --universe horror` |
-| Aldergrove Flats, WA (fictional unincorporated community) | place | [x] | `prose --add-place --file ... --universe horror` |
+| <entity repo="character" guid="019fca41-b018-700b-8c99-d8cc397c7df8">Gordan Rosniak</entity> (<entity repo="character" guid="019fca41-b018-700b-8c99-d8cc397c7df8">KJ7ROS</entity>) | character | [x] | `prose --add-character --file ... --universe horror` |
+| <entity repo="character" guid="019fca53-1d3e-7800-9d70-27d8dae15f28">Aimes Rosniak-Bishop</entity> (husband) | character | [x] | `prose --add-character --file ... --universe horror` |
+| <entity repo="character" guid="019fca53-21a6-7bd6-aae0-c0c2dd80bbef">Min-jun and Ji-ho Rosniak-Bishop</entity> (twins, grouped) | character | [x] | `prose --add-character --file ... --universe horror` |
+| <entity repo="character" guid="019fca41-b44e-7851-9660-5e3172ed607c">Priya Standish</entity> | character | [x] | `prose --add-character --file ... --universe horror` |
+| <entity repo="character" guid="019fca41-b412-7362-913b-38be54ba3276">Owen Bui</entity> | character | [x] | `prose --add-character --file ... --universe horror` |
+| <entity repo="character" guid="019fca41-b4a7-7aa2-95d7-24f38504ca89">Sal Ferraro</entity> | character | [x] | `prose --add-character --file ... --universe horror` |
+| <entity repo="character" guid="019fca41-b533-7652-a2d3-a4aa96d06ad4">The Overlap</entity> (DB stub, never named on-page) | character (entity stub) | [x] | `prose --add-character --file ... --universe horror` |
+| <entity repo="place" guid="019fca41-d352-7b3e-b69c-1c9adcb72dad">Aldergrove Flats</entity>, WA (fictional unincorporated community) | place | [x] | `prose --add-place --file ... --universe horror` |
 
 ---
 
@@ -166,8 +166,8 @@ Ending.
 - [x] All 10 sections filled (N/A recorded explicitly where HORROR has no equivalent machinery yet)
 - [x] `docs/HORROR.md` + `docs/universes/HORROR.md` created (first HORROR book — no pre-existing
       craft/world docs to update instead)
-- [x] Entity seeding — 6 entities (Gordan, Aimes Rosniak-Bishop, twins Min-jun/Ji-ho grouped,
-      Priya, Owen, Sal) + The Overlap (DB stub) + Aldergrove Flats (place)
+- [x] Entity seeding — 6 entities (<entity repo="character" guid="019fca41-b018-700b-8c99-d8cc397c7df8">Gordan</entity>, <entity repo="character" guid="019fca53-1d3e-7800-9d70-27d8dae15f28">Aimes Rosniak-Bishop</entity>, twins <entity repo="character" guid="019fca53-21a6-7bd6-aae0-c0c2dd80bbef">Min-jun</entity>/Ji-ho grouped,
+      <entity repo="character" guid="019fca41-b44e-7851-9660-5e3172ed607c">Priya</entity>, <entity repo="character" guid="019fca41-b412-7362-913b-38be54ba3276">Owen</entity>, <entity repo="character" guid="019fca41-b4a7-7aa2-95d7-24f38504ca89">Sal</entity>) + <entity repo="character" guid="019fca41-b533-7652-a2d3-a4aa96d06ad4">The Overlap</entity> (DB stub) + <entity repo="place" guid="019fca41-d352-7b3e-b69c-1c9adcb72dad">Aldergrove Flats</entity> (place)
 - [x] BookNode `QRT` created (`019fca42-10a2-7aff-9aa9-8e796d96b1e0`)
 - [x] ChapterNodes created (5, mapping to the 4 Acts + Ending)
 - [x] Node bible hand-authored (arc, POV/voice register, locks, beat spine) — direct

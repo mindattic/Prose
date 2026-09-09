@@ -1,0 +1,1200 @@
+[Lotus Syndicate] territory
+  A claim-00212986635099e2  ? "south side of city"  (ch.2 Chapter 2 — The Investigation)
+  B claim-d1cb69a0d10a3afd  ? "Bucktown cell"  (ch.11 Chapter 11 — The Interview)
+
+[Pip] paw_condition
+  A claim-00ca487e3152acde  ? "pads couldn't take ground"  (ch.9 Chapter 9 — Three Raps)
+  B claim-e0d5f4956a609c60  ? "raw-padded"  (ch.8 Chapter 8 — The Long Afternoon)
+
+[Dr. Jude "Stash" Adeyemi] behavior_pattern
+  A claim-030785f1e1505e60  ? "precise, careful movements"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-d8ab6ec7e98c0b05  ? "walks careful, load invisible"  (ch.8 Chapter 8 — The Quiet Hour)
+
+[VOSS] handedness
+  A claim-04bd4c14cfb008ce  ? "right-handed"  (ch.10 Chapter 10 — No Signal)
+  B claim-954e382b70acb45a  ? "left thumb dead nerve"  (ch.10 Chapter 10 — No Signal)
+
+[VOSS] handedness
+  A claim-04bd4c14cfb008ce  ? "right-handed"  (ch.10 Chapter 10 — No Signal)
+  B claim-ca0f0419282de609  ? "right"  (ch.10 Chapter 10 — No Signal)
+
+[Vig] occupation
+  A claim-04c23bef8be71028  ? "salvage contractor"  (ch.2 Ninety Minutes)
+  B claim-0c49428f0c6de33d  ? "salvage captain"  (ch. Full)
+
+[Vig] occupation
+  A claim-04c23bef8be71028  ? "salvage contractor"  (ch.2 Ninety Minutes)
+  B claim-81c88a431a315a9a  ? "salvage captain, runs small Gray Zone crew"  (ch. Characters)
+
+[Kyle Ellen Corbin] vehicle_possession
+  A claim-059645e0a13403e1  ? "Aries Viper motorcycle, 1200cc"  (ch.18 Chapter 18 — Work Order)
+  B claim-db3afd421318e58b  ? "motorcycle with H-cell power, no telemetry"  (ch.18 Chapter 18 — Work Order)
+
+[Sol Castellanos] body_location
+  A claim-059cb457774d6fc1  ? "refrigeration unit, hundred thirty feet north of staging room"  (ch.10 Chapter 10 — No Signal)
+  B claim-71d055a5b073a016  ? "near Cermak"  (ch.11 Chapter 11 — The Surfacing)
+
+[Kyle Ellen Corbin] has_neuretics
+  A claim-06f93fc84589a42d  ? "Atlas array"  (ch.3 Chapter 3 — The Regular)
+  B claim-ba5232d360236e7b  ? "true"  (ch.5 Chapter 5 — The Carousel)
+
+[Kyle Ellen Corbin] job_acceptance
+  A claim-08dbee95b48c0d32  ? "accepted medical transport short-haul job in south Loop"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-f841e47e27c07d05  ? "took medical transport job, south Loop"  (ch.8 Chapter 8 — The Quiet Hour)
+
+[Kyle Ellen Corbin] augmentation_type
+  A claim-0b15f925cec66aba  ? "array - ballistic precognition system"  (ch.1 Chapter 1 — Teeth)
+  B claim-42d3412fd5917494  ? "mesh under skin - catches rounds"  (ch.1 Chapter 1 — Teeth)
+
+[Crucible Genomics] business_type
+  A claim-0bef2fa17b8e9087  ? "prints organs to order"  (ch.13 Chapter 13 — The One Who Doesn't Stop)
+  B claim-789049c01329e15e  ? "organ printing"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+
+[Imo Cavalcanti] used_number
+  A claim-0cdb6670a2990e62  ? "three weeks ago"  (ch.1 Chapter 1 — Elias Alone)
+  B claim-840561bc3e443ce0  ? "true"  (ch.1 Chapter 1 — Elias Alone)
+
+[Pixel] technical_skill
+  A claim-0d67f1b57f9c20e5  ? "gasket seal creation"  (ch.7 Chapter 7 — The Dock)
+  B claim-0beeeff219fc9da5  ? "can hijack drones and handler vans"  (ch.28 Chapter 28 — The Gray Suit)
+
+[Daria Espinoza] age
+  A claim-0dd2a9d588ed0d81  ? "thirty-one"  (ch.1 Chapter 1 — The Contract)
+  B claim-74a2f32f59468fb4  ? "26 years old"  (ch.4 Chapter 4 — The Cost)
+
+[Daria Espinoza] age
+  A claim-0dd2a9d588ed0d81  ? "thirty-one"  (ch.1 Chapter 1 — The Contract)
+  B claim-d7c937ca28dca83b  ? "young adult"  (ch.1 Chapter 1 — The Contract)
+
+[Do-yun Huitzil] family_status
+  A claim-0e3803f593b1d04d  ? "Lotus heir"  (ch.4 Chapter 4 — The Cost)
+  B claim-68dea641040edc41  ? "son of Han Jeong-suk, Lotus Syndicate heir"  (ch.3 Chapter 3 — The Confrontation)
+
+[Ledger] physical_appearance
+  A claim-0f9c26e842c8c8cc  ? "mid-forties, brown, ordinary face, moves correctly, blinks at right intervals"  (ch.17 Chapter 17 — Two Favors)
+  B claim-b92db002a906a559  ? "brown, ordinary face, even features, no small expressions in wrong places"  (ch.17 Chapter 17 — Two Favors)
+
+[Kyle Ellen Corbin] familiarity_with_street
+  A claim-103fa2e449341dfc  ? "feet had learned the geometry of a street"  (ch.4 Chapter 4 — Interlude: The Room After)
+  B claim-d44e6681c8907901  ? "knows the geometry of the street, steps over puddles without thinking"  (ch.4 Chapter 4 — Interlude: The Room After)
+
+[Halina Soraya] carrying_item
+  A claim-128c81bdb3b8a581  ? "hard case"  (ch.3 Chapter 3 — The Lake Platform)
+  B claim-8251bcc283e0f718  ? "case"  (ch.3 Chapter 3 — The Lake Platform)
+
+[Kyle Ellen Corbin] neuretic_implant
+  A claim-134cbe34cf6e9722  ? "has neuretics"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-64af034f17a89f5f  ? "ungoverned neuretics"  (ch.37 Chapter 37 — 35th and Halsted)
+
+[Freya Holm] reliability_record
+  A claim-13c24df2b6a29d89  ? "had not been late once in four years"  (ch.30 Chapter 30 — The Narrows)
+  B claim-ff7c1660063c474f  ? "hadn't been late once in four years"  (ch.30 Chapter 30 — The Narrows)
+
+[Pixel] thinking_habit
+  A claim-149dd6e31e38b30a  ? "turns problems over like failed components"  (ch.28 Chapter 28 — The Gray Suit)
+  B claim-b637f515ee755492  ? "uses soldering light as thinking hat"  (ch.28 Chapter 28 — The Gray Suit)
+
+[Silence] weapon_type
+  A claim-15d2f85f11c75e2d  ? "blade/sword"  (ch.33 Chapter 33 — West Town Rain)
+  B claim-67f6051594dcd71c  ? "sword"  (ch. Full)
+
+[Tavi Jeong] contract_status
+  A claim-15e33c5b8597813d  ? "terminate order still live"  (ch.4 Chapter 4 — The Fall)
+  B claim-323f37bf6e285644  ? "dual conflicting contracts"  (ch.1 Chapter 1 — Two Lives)
+
+[Osei] physical_condition
+  A claim-17ac9fdb3cecfd70  ? "missing legs, missing right arm from elbow down"  (ch.2 Chapter 2 — The Investigation)
+  B claim-be3deaad8a7b4c7d  ? "missing right arm from elbow down, financed left arm, uses wheelchair"  (ch.2 Chapter 2 — The Investigation)
+
+[Thomas Holst] extraction_count
+  A claim-1ab4f6d98ab70d63  ? "forty-two extractions in eight months"  (ch.1 Chapter 1 — The Contract)
+  B claim-e6fd85101c713683  ? "143 extractions in eleven years"  (ch.4 Chapter 4 — The Cost)
+
+[Pixel] eye_color
+  A claim-1b332876da2dbd71  ? "color of water over slate"  (ch.19 Chapter 19 — Work Order)
+  B claim-5affa586dc88ada8  ? "pale grey-blue"  (ch.6 Chapter 6 — Half a Step)
+
+[Rafi Sarkissian] clothing
+  A claim-1b7c9a91532a34ff  ? "secondhand jacket"  (ch.2 Chapter 2 — The Signature)
+  B claim-5b7d4322bd6cdeb3  ? "gray courier jacket with sleeves cut off"  (ch.1 Chapter 1 — Two Lives)
+
+[Kyle Ellen Corbin] hardware_type
+  A claim-1bdbaa07ed5b2352  ? "Silence, kilo and a half, plain matte-black steel and carbon composite"  (ch.14 Chapter 14 — One Shoe)
+  B claim-ef87c273e6766d21  ? "Cacophony, revolver shotgun"  (ch.14 Chapter 14 — One Shoe)
+
+[Pixel] physical_feature
+  A claim-1d140f081afff052  ? "has prosthetic eye"  (ch.12 Chapter 12 — The Interview)
+  B claim-349e1619cd07b4da  ? "eyes the color of water over slate"  (ch.19 Chapter 19 — Work Order)
+
+[Reza Solano] weapon_carry_location
+  A claim-1d1d50ac0010ef8f  ? "right forearm"  (ch.4 Chapter 4 — The Fall)
+  B claim-06f98660c6e9efe7  ? "shoulder rig"  (ch.1 Chapter 1 — Two Lives)
+
+[Daria Espinoza] residence
+  A claim-1f11b754d45a48e1  ? "same address as father"  (ch.1 Chapter 1 — The Contract)
+  B claim-bd498df26fc888f7  ? "same address as Marcus Reeves"  (ch.1 Chapter 1 — The Contract)
+
+[MERIDIAN] involvement
+  A claim-1ff156ef8fffa7e6  ? "closed file as successful locate, referred crew to Arcturus"  (ch.12 Chapter 12 — Voluntary Recall)
+  B claim-607d0f94d6251235  ? "operation oversight"  (ch.10 Chapter 10 — No Signal)
+
+[Celeste Hartley] integration_status
+  A claim-20388fdca6c10f5c  ? "37% completion"  (ch.10 Chapter 10 — No Signal)
+  B claim-53afcf1e7af863c9  ? "47% complete at extraction"  (ch.10 Chapter 10 — No Signal)
+
+[Celeste Hartley] savings_duration
+  A claim-2139f37533c19c26  ? "twenty-two months"  (ch.5 Chapter 5 — What She Wouldn't Do)
+  B claim-7d8f94ede83339a3  ? "two years"  (ch.1 Chapter 1 — Cel)
+
+[Grale] role
+  A claim-21fdbacdd35ec47a  ? "Brave"  (ch.4 Chapter 4 — The Surfacing Called)
+  B claim-424249c06eb0434f  ? "observer/watcher"  (ch.4 Chapter 4 — The Surfacing Called)
+
+[MERIDIAN] location_feature
+  A claim-2265d2fcaf7402ef  ? "has mediclone station that runs all night, leaves no record"  (ch.19 Chapter 19 — Interlude: The Floor Is Hard)
+  B claim-ffdf3d971c22c8b0  ? "has mediclone station running all night"  (ch.19 Chapter 19 — Interlude: The Floor Is Hard)
+
+[Kyle Ellen Corbin] augmentation_capability
+  A claim-244c9c95d6efa94a  ? "enhanced vision"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+  B claim-b31c34bf8b7979df  ? "can read events 120+ milliseconds ahead"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+
+[Kyle Ellen Corbin] weapon_cacophony_rounds
+  A claim-2622ab5b4332b326  ? "six rounds"  (ch.33 Chapter 33 — West Town Rain)
+  B claim-b2e9f3224250c802  ? "one spent, five remaining"  (ch.26 Chapter 26 — The Forger's Ledger)
+
+[Boris Johansen] payment_method
+  A claim-267c7be0cbca071b  ? "credstick plus errands"  (ch.20 Chapter 20 — Standard Rate)
+  B claim-44d338a83fd0763e  ? "credstick and errands"  (ch.20 Chapter 20 — Standard Rate)
+
+[Corvid Larsson] communication_preference
+  A claim-26a2a5bafdb618f5  ? "text only"  (ch.1 Chapter 1 — Elias Alone)
+  B claim-35f8e71b6f881535  ? "text only, no voice"  (ch.1 Chapter 1 — Elias Alone)
+
+[Kyle Ellen Corbin] prior_experience
+  A claim-27216a1a9cdd7f04  ? "had hardware implanted in facility"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-4d7cbe00848f2f35  ? "mind not entirely his own"  (ch.8 Chapter 8 — The Quiet Hour)
+
+[Bram Osei] mobility_status
+  A claim-274c329763657db7  ? "uses wheelchair after leg extraction"  (ch.1 Chapter 1 — The Contract)
+  B claim-3cf7deddbf3da90e  ? "uses wheelchair, both legs amputated at hip"  (ch.1 Chapter 1 — The Contract)
+
+[Pixel] location_during_operation
+  A claim-28689db7ad271001  ? "laundry across the street"  (ch.20 Chapter 20 — Standard Rate)
+  B claim-a27d074c740a5e63  ? "outside Gate 3 with terminal"  (ch.23 Chapter 23 — Blackwater)
+
+[Reuben Sclose] financed_components
+  A claim-2a087d2b8a2469f4  ? "kidney, spinal shunt, eyes"  (ch.2 Chapter 2 — The Investigation)
+  B claim-c10224f1fb52f51d  ? "kidney, eyes, spinal shunt"  (ch.2 Chapter 2 — The Investigation)
+
+[Kyle Ellen Corbin] has_neuretics
+  A claim-2a77dae3ac255d74  ? "ungoverned Atlas hardware"  (ch.16 Chapter 16 — The Offer)
+  B claim-189b7bab6c9f2dd2  ? "yes"  (ch.19 Chapter 19 — Interlude: The Floor Is Hard)
+
+[Kyle Ellen Corbin] has_bike
+  A claim-2c8bcc49ec7131e0  ? "yes"  (ch.21 Chapter 21 — The Park Job)
+  B claim-8e384f5c1328bf94  ? "motorcycle"  (ch.16 Chapter 16 — The Offer)
+
+[Kyle Ellen Corbin] hardware_type
+  A claim-2d07a31420de53a1  ? "mesh, polyceramic, 70 feet braided, rated to eat 7.62"  (ch.14 Chapter 14 — One Shoe)
+  B claim-1bdbaa07ed5b2352  ? "Silence, kilo and a half, plain matte-black steel and carbon composite"  (ch.14 Chapter 14 — One Shoe)
+
+[Bram Osei] financed_parts
+  A claim-2f34d1e674c8c950  ? "bilateral legs (Series-9 hip sockets), right arm (Tessera Grade-C)"  (ch.1 Chapter 1 — The Contract)
+  B claim-646bce09aeb75fdd  ? "bilateral legs, right arm"  (ch.1 Chapter 1 — The Contract)
+
+[Bram Osei] financed_parts
+  A claim-2f34d1e674c8c950  ? "bilateral legs (Series-9 hip sockets), right arm (Tessera Grade-C)"  (ch.1 Chapter 1 — The Contract)
+  B claim-a8c16c2b0e3b5cb6  ? "bilateral legs and right arm"  (ch.1 Chapter 1 — The Contract)
+
+[Tavi Jeong] contract_status
+  A claim-323f37bf6e285644  ? "dual conflicting contracts"  (ch.1 Chapter 1 — Two Lives)
+  B claim-d3fa7deb126c3259  ? "live, non-refundable"  (ch.3 Chapter 3 — The Impossible Middle)
+
+[Halvard Onwe] role
+  A claim-324dbf1174acc27e  ? "AshgraveMaterials security director"  (ch. Characters)
+  B claim-96636c0c4edb75c2  ? "broker/coordinator"  (ch.4 Chapter 4 — The Fall)
+
+[Do-yun Huitzil] affiliation
+  A claim-32bebf4638a7ce9d  ? "Independent operator; loose arrangement with the Gravesend Basin crew known as the Inkfish"  (ch. )
+  B claim-5d5e7ee5d22f8169  ? "Lotus"  (ch.2 Chapter 2 — The Investigation)
+
+[VOSS] location_at_0507
+  A claim-3424138cdd0f1eba  ? "maintenance alcove"  (ch.10 Chapter 10 — No Signal)
+  B claim-6f5294697d920bfd  ? "maintenance alcove under Ferrogate"  (ch.10 Chapter 10 — No Signal)
+
+[VOSS] location_at_0507
+  A claim-3424138cdd0f1eba  ? "maintenance alcove"  (ch.10 Chapter 10 — No Signal)
+  B claim-952376b0bd0591d2  ? "maintenance alcove under Cermak"  (ch.10 Chapter 10 — No Signal)
+
+[Siosaia Tuivaga] occupation
+  A claim-3609f33d9d37fc35  ? "file clerk at Cordon Freight"  (ch.1 Chapter 1 — Elias Alone)
+  B claim-2f166ee5c4b6391d  ? "Cordon Freight file processor"  (ch.1 Chapter 1 — Elias Alone)
+
+[Pixel] work_location
+  A claim-383ce27acdd1d568  ? "kitchen table"  (ch.11 Chapter 11 — The Interview)
+  B claim-09868bc004dfd865  ? "the Pivot"  (ch.17 Chapter 17 — Two Favors)
+
+[Kyle Ellen Corbin] cardiac_arrest_capability
+  A claim-393709a00fc6c356  ? "can survive zero perfusion for extended periods via NeoCortex"  (ch.19 Chapter 19 — Work Order)
+  B claim-18f0adb61d37b541  ? "can survive zero perfusion for 53 seconds"  (ch.18 Chapter 18 — Work Order)
+
+[Mrs. Chen] customer_history
+  A claim-3adc017753bcd4a5  ? "long-time customer of both stalls"  (ch.25 Chapter 25 — The Taste-Off)
+  B claim-058dfdd03af7cfc5  ? "been paying both stalls since water came up to second level"  (ch.25 Chapter 25 — The Taste-Off)
+
+[Jace Dalton] death_year
+  A claim-3c086d0348def166  ? "2225"  (ch.5 Chapter 5 — What She Wouldn't Do)
+  B claim-8c510566544a9367  ? "2096-03-15"  (ch.5 Chapter 5 — What She Wouldn't Do)
+
+[Quire] threat_behavior
+  A claim-3d4119bd6c3766b4  ? "never threatened anyone in professional life"  (ch. Characters)
+  B claim-f3e294d40e69189c  ? "never threatens anyone in professional life"  (ch. Full)
+
+[Kyle Ellen Corbin] location_detail_knowledge
+  A claim-3d58ac53cb5f9350  ? "hatch width and passage"  (ch.26 Chapter 26 — The Forger's Ledger)
+  B claim-ce769763514c10bd  ? "carousel music"  (ch.26 Chapter 26 — The Forger's Ledger)
+
+[Tavi Jeong] injury_type
+  A claim-3e6213493e7e4963  ? "graze"  (ch.3 Chapter 3 — The Impossible Middle)
+  B claim-36c865c780bd22d5  ? "graze/wound from wall impact"  (ch.3 Chapter 3 — The Impossible Middle)
+
+[Kyle Ellen Corbin] weapon_secondary
+  A claim-3ecfe22e29074175  ? "Cacophony, a shotgun"  (ch.19 Chapter 19 — Work Order)
+  B claim-99b938b9e9df5b6d  ? "revolver called Cacophony"  (ch.21 Chapter 21 — The Park Job)
+
+[Kyle Ellen Corbin] weapon_secondary
+  A claim-3ecfe22e29074175  ? "Cacophony, a shotgun"  (ch.19 Chapter 19 — Work Order)
+  B claim-b60637fd77357071  ? "revolver (Cacophony)"  (ch.21 Chapter 21 — The Park Job)
+
+[Reza Solano] employment_status
+  A claim-3ed0e58a310602bf  ? "corporate"  (ch.4 Chapter 4 — The Fall)
+  B claim-b4c3c820feb9aec4  ? "corporate operator"  (ch.4 Chapter 4 — The Fall)
+
+[Kyle Ellen Corbin] physical_feature_neuretics
+  A claim-3f3663210bb1e2eb  ? "has neuretics implanted"  (ch.2 Chapter 2 — Provenance)
+  B claim-1517e46e4b2d6f6a  ? "has neuretic implants"  (ch.32 Chapter 32 — The Axiom Yard)
+
+[Tavi Jeong] work_duration_solo
+  A claim-3f5b83e66650c225  ? "14 months"  (ch.1 Chapter 1 — Two Lives)
+  B claim-747711694a5b03bf  ? "fourteen months"  (ch.2 Chapter 2 — The Signature)
+
+[Tavi Jeong] arm_injury_location
+  A claim-3f5e4a7d2eadff2e  ? "left arm"  (ch.4 Chapter 4 — The Fall)
+  B claim-8ba32372316e87e0  ? "left arm below elbow"  (ch.3 Chapter 3 — The Impossible Middle)
+
+[Rafi Sarkissian] physical_appearance
+  A claim-42378be29ce89f4a  ? "close-cropped hair, secondhand jacket"  (ch.2 Chapter 2 — The Signature)
+  B claim-0867cea6e4a45f04  ? "close-cropped hair, small frame"  (ch.2 Chapter 2 — The Signature)
+
+[Pixel] carrying_item
+  A claim-4271bf646c93976f  ? "tool satchel"  (ch.5 Chapter 5 — The Carousel)
+  B claim-fa5a02ca9efbefd8  ? "cup of something warm"  (ch.5 Chapter 5 — The Carousel)
+
+[Kyle Ellen Corbin] augmentation_type
+  A claim-42d3412fd5917494  ? "mesh under skin - catches rounds"  (ch.1 Chapter 1 — Teeth)
+  B claim-c4678534f55df5fc  ? "neuretics - military-grade hardened array"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+
+[Pixel] work_type
+  A claim-4435952e921cc494  ? "sensor array calibration, prosthetic building"  (ch.9 Chapter 9 — Before Something Changes)
+  B claim-8d35704b051dcda7  ? "fieldwork"  (ch.9 Chapter 9 — Before Something Changes)
+
+[The Narrows] location_feature
+  A claim-456a03d1234264d8  ? "corners staffed by people who watch without making a show"  (ch.30 Chapter 30 — The Narrows)
+  B claim-8a90d0c82ebcfdeb  ? "nobody begs, nobody moves at odd angles"  (ch.30 Chapter 30 — The Narrows)
+
+[Kyle Ellen Corbin] armor_type
+  A claim-46a537fa0d2e8fab  ? "mesh under coat"  (ch.37 Chapter 37 — The Acquisition Program)
+  B claim-8f535023792b00d4  ? "AxisMed distributed kinetic armor"  (ch.11 Chapter 11 — The Interview)
+
+[Kyle Ellen Corbin] armor_type
+  A claim-46a537fa0d2e8fab  ? "mesh under coat"  (ch.37 Chapter 37 — The Acquisition Program)
+  B claim-f685a19912358438  ? "AxisMed distributed kinetic armor, F8,000"  (ch.11 Chapter 11 — The Interview)
+
+[MERIDIAN] involvement
+  A claim-4737b9747885d027  ? "owns the operation"  (ch.12 Chapter 12 — Voluntary Recall)
+  B claim-cef36652db10a7d8  ? "funded Zenith Throughway shell company"  (ch.12 Chapter 12 — Voluntary Recall)
+
+[Pixel] social_activity
+  A claim-48790193ad531885  ? "dancing on Thursdays"  (ch.3 Chapter 3 — The Regular)
+  B claim-41114ec4c346a76d  ? "dances on Thursdays at a bar in the Bloom Quarter"  (ch.3 Chapter 3 — The Regular)
+
+[Gantry] communication_style
+  A claim-4a4f9a63f14155ee  ? "spends forty words a day, won't waste one indoors"  (ch.27 Chapter 27 — Halvorsen and Sons)
+  B claim-24f94581730f4dfb  ? "talks to suspended loads in the second person"  (ch.32 Chapter 32 — The Axiom Yard)
+
+[Kyle Ellen Corbin] communication_method
+  A claim-4abd6d4b16282c5b  ? "relay"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-c31a284e792d34a6  ? "Axiom trunk relay"  (ch.16 Chapter 16 — The Offer)
+
+[Siosaia Tuivaga] gave_number_to_elias
+  A claim-4b5f4dc9f3baf8df  ? "alternate-week number"  (ch.1 Chapter 1 — Elias Alone)
+  B claim-31a007b41c9b75fa  ? "true"  (ch.1 Chapter 1 — Elias Alone)
+
+[Ledger] work_style
+  A claim-4cc5b9c88ac6fea9  ? "efficient, precise"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-81e6de21f92f6631  ? "precise, clean, honest, no impressions only terms"  (ch.17 Chapter 17 — Two Favors)
+
+[Kyle Ellen Corbin] code
+  A claim-4cd0dd907768e68c  ? "announces before draw"  (ch.37 Chapter 37 — 35th and Halsted)
+  B claim-407135e3a144d309  ? "announcement is real offer, true chance"  (ch.37 Chapter 37 — 35th and Halsted)
+
+[Kyle Ellen Corbin] prior_experience
+  A claim-4d7cbe00848f2f35  ? "mind not entirely his own"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-f239a359cb11da59  ? "worked in facility with hardware implants"  (ch.8 Chapter 8 — The Quiet Hour)
+
+[Tavi Jeong] hand_steadiness
+  A claim-4e0c80e6de019477  ? "steady"  (ch.2 Chapter 2 — Reinvest)
+  B claim-80d65d0e7e6d3960  ? "steady for fourteen months"  (ch.2 Chapter 2 — The Signature)
+
+[Mrs. Chen] lease_problem
+  A claim-4e3cc4811777d247  ? "lease problem in March"  (ch.28 Chapter 28 — The Gray Suit)
+  B claim-39d4d5b583a69abf  ? "March lease issue"  (ch.28 Chapter 28 — The Gray Suit)
+
+[Auda Vane] role
+  A claim-524d9748d06e4bbe  ? "fixer, a rung above Scraps"  (ch. Characters)
+  B claim-621b7423195bc35d  ? "operator who cut Tavi and Reza loose"  (ch.4 Chapter 4 — The Fall)
+
+[Auda Vane] role
+  A claim-524d9748d06e4bbe  ? "fixer, a rung above Scraps"  (ch. Characters)
+  B claim-70ba2fc5582e839b  ? "cut them loose"  (ch.4 Chapter 4 — The Fall)
+
+[Auda Vane] role
+  A claim-524d9748d06e4bbe  ? "fixer, a rung above Scraps"  (ch. Characters)
+  B claim-a9beb0d266c1bbfd  ? "broker"  (ch.1 Chapter 1 — Two Lives)
+
+[Bram Osei] cause_of_death
+  A claim-533a138b5d283a8b  ? "interrogation/torture by Ekow"  (ch.3 Chapter 3 — The Confrontation)
+  B claim-997830b62b18796a  ? "gunshot through sternum"  (ch.2 Chapter 2 — The Investigation)
+
+[Celeste Hartley] integration_status
+  A claim-53afcf1e7af863c9  ? "47% complete at extraction"  (ch.10 Chapter 10 — No Signal)
+  B claim-f69aae082edeb424  ? "37% complete"  (ch.10 Chapter 10 — No Signal)
+
+[Ledger] work_style
+  A claim-53d561ef1e91abe7  ? "precise, honest, doesn't trade in impressions"  (ch.17 Chapter 17 — Two Favors)
+  B claim-4cc5b9c88ac6fea9  ? "efficient, precise"  (ch.8 Chapter 8 — The Quiet Hour)
+
+[Ledger] work_style
+  A claim-53d561ef1e91abe7  ? "precise, honest, doesn't trade in impressions"  (ch.17 Chapter 17 — Two Favors)
+  B claim-b9f581c15d94b7b2  ? "efficient, precise, executes clean"  (ch.8 Chapter 8 — The Quiet Hour)
+
+[Yuen-Pak] clinic_location
+  A claim-5524d7e1086da14d  ? "lower Ward"  (ch.2 Chapter 2 — The Investigation)
+  B claim-38dfda330a26642d  ? "back entrance in loading-dock shadow of converted warehouse"  (ch.1 Chapter 1 — The Contract)
+
+[Yuen-Pak] clinic_location
+  A claim-5524d7e1086da14d  ? "lower Ward"  (ch.2 Chapter 2 — The Investigation)
+  B claim-633ed265e6554851  ? "Bloom Quarter"  (ch.1 Chapter 1 — The Contract)
+
+[Paz] mother_status
+  A claim-555ce435adfd5ea4  ? "deceased"  (ch.4 Chapter 4 — The Cost)
+  B claim-97838f817742e31a  ? "lives in hostel dormitory, never wanted custody"  (ch.4 Chapter 4 — The Cost)
+
+[VOSS] location_at_0507_continued
+  A claim-557f096d1a02cb87  ? "service walk above cargo spur"  (ch.10 Chapter 10 — No Signal)
+  B claim-c044faf0aa1887dd  ? "under Cermak building"  (ch.10 Chapter 10 — No Signal)
+
+[Kyle Ellen Corbin] augmentation_capability
+  A claim-566a0992cbd3406f  ? "predictive reading"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+  B claim-244c9c95d6efa94a  ? "enhanced vision"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+
+[Pixel] residence
+  A claim-5891deea61fa863f  ? "The Pivot, room 2E"  (ch.2 A Restless Mind)
+  B claim-6c9febe3793664ab  ? "apartment 2E"  (ch.22 Chapter 22 — Ghost Period)
+
+[Pixel] residence
+  A claim-5891deea61fa863f  ? "The Pivot, room 2E"  (ch.2 A Restless Mind)
+  B claim-7f80adce2ffe46d7  ? "apartment in The Pivot building, 2E"  (ch.18 Chapter 18 — Work Order)
+
+[Pixel] residence
+  A claim-5891deea61fa863f  ? "The Pivot, room 2E"  (ch.2 A Restless Mind)
+  B claim-7f9bdea751bb55d5  ? "2E"  (ch.10 Chapter 10 — Before Something Changes)
+
+[Pixel] residence
+  A claim-5891deea61fa863f  ? "The Pivot, room 2E"  (ch.2 A Restless Mind)
+  B claim-d97fa1525ed09dc6  ? "across the hall from Kyle"  (ch.3 Chapter 3 — The Regular)
+
+[Kyle Ellen Corbin] vendor_relationship
+  A claim-5919fb4ffe68cd9f  ? "Golan"  (ch.29 Chapter 29 — The Corridor)
+  B claim-76d3206907acfad8  ? "Golan parts dealer on Leavitt for seven years"  (ch.29 Chapter 29 — The Corridor)
+
+[Kyle Ellen Corbin] weapon_type
+  A claim-59ed47f68e360218  ? "katana"  (ch.1 Chapter 1 — Teeth)
+  B claim-57029a632c32d6f0  ? "Silence - matte-black edge, tsuka wrap cord"  (ch.8 Chapter 8 — The Quiet Hour)
+
+[Kyle Ellen Corbin] weapon_type
+  A claim-59ed47f68e360218  ? "katana"  (ch.1 Chapter 1 — Teeth)
+  B claim-ff16d8f4c2a634d5  ? "Cacophony - six-round revolver"  (ch.1 Chapter 1 — Teeth)
+
+[Do-yun Huitzil] decision_about_tomas_levin
+  A claim-5c370ed1e1b42a17  ? "lets them leave without making deal with Ekow"  (ch.3 Chapter 3 — The Confrontation)
+  B claim-d42865256665c12f  ? "employs them for Lotus"  (ch.3 Chapter 3 — The Confrontation)
+
+[Reuben Sclose] family_relation
+  A claim-5d6437a9569767ce  ? "has a daughter named Daria Holme"  (ch.2 Chapter 2 — The Investigation)
+  B claim-7f3ca0560324ead0  ? "has daughter"  (ch.2 Chapter 2 — The Investigation)
+
+[Tavi Jeong] operational_codename
+  A claim-5e07cc2fdc369067  ? "Cutout"  (ch.4 Chapter 4 — The Fall)
+  B claim-ac9c84b6298248ae  ? "Ghost"  (ch.1 Chapter 1 — Two Lives)
+
+[Seito] teaching_method
+  A claim-5f47e9453cb29cdf  ? "sword work, specific corrections and aphorisms"  (ch.19 Chapter 19 — Work Order)
+  B claim-1ee116d559c34c61  ? "gate rig with light beam and metronome, correction-based"  (ch.18 Chapter 18 — Work Order)
+
+[MERIDIAN] involvement
+  A claim-607d0f94d6251235  ? "operation oversight"  (ch.10 Chapter 10 — No Signal)
+  B claim-80ceab6c3f08722c  ? "owns operation, runs staging rooms, built procedure"  (ch.12 Chapter 12 — Voluntary Recall)
+
+[MERIDIAN] involvement
+  A claim-607d0f94d6251235  ? "operation oversight"  (ch.10 Chapter 10 — No Signal)
+  B claim-bc5ec34a629361d7  ? "owns infrastructure, runs staging rooms, built procedure"  (ch.12 Chapter 12 — Voluntary Recall)
+
+[MERIDIAN] involvement
+  A claim-607d0f94d6251235  ? "operation oversight"  (ch.10 Chapter 10 — No Signal)
+  B claim-bed36f5c60bb0a38  ? "owns mod clinic infrastructure"  (ch.12 Chapter 12 — Voluntary Recall)
+
+[MERIDIAN] involvement
+  A claim-607d0f94d6251235  ? "operation oversight"  (ch.10 Chapter 10 — No Signal)
+  B claim-d86c6fcf620a1889  ? "owns staging room operation, harvests consciousness"  (ch.12 Chapter 12 — Voluntary Recall)
+
+[Kyle Ellen Corbin] physical_feature
+  A claim-61a32893423b42c1  ? "scar tissue at temple where neuretics integrated"  (ch.30 Chapter 30 — The Narrows)
+  B claim-d576c57af63aa620  ? "left shoulder injured"  (ch.1 Chapter 1 — Teeth)
+
+[Reza Solano] weapon_type
+  A claim-62e2b5bc7961a801  ? "Veltrin sidearm"  (ch.1 Chapter 1 — Two Lives)
+  B claim-0f223270b41f13ba  ? "corporate-grade firearm"  (ch.3 Chapter 3 — The Impossible Middle)
+
+[Reza Solano] weapon_type
+  A claim-62e2b5bc7961a801  ? "Veltrin sidearm"  (ch.1 Chapter 1 — Two Lives)
+  B claim-620e49268c41644e  ? "corporate hardware"  (ch.3 Chapter 3 — The Impossible Middle)
+
+[Kyle Ellen Corbin] augmentation
+  A claim-635fd1cb21bf63d0  ? "NeoCortex"  (ch.7 Chapter 7 — The Dock)
+  B claim-0f86c55449d1fb32  ? "sixty-four minds grafted into him"  (ch.37 Chapter 37 — 35th and Halsted)
+
+[Auda Vane] occupation
+  A claim-66f70ed3868e4304  ? "job broker/fixer"  (ch.4 Chapter 4 — The Drift)
+  B claim-469d6894cb8ba94e  ? "broker"  (ch.1 Chapter 1 — Two Lives)
+
+[Auda Vane] occupation
+  A claim-66f70ed3868e4304  ? "job broker/fixer"  (ch.4 Chapter 4 — The Drift)
+  B claim-79d5456a43bf56ab  ? "broker/intermediary"  (ch.1 Chapter 1 — Two Lives)
+
+[Daria Espinoza] employment
+  A claim-67172b697798cf9b  ? "litigator"  (ch.1 Chapter 1 — The Contract)
+  B claim-0a39cc84b75a8e34  ? "no listed employment"  (ch.1 Chapter 1 — The Contract)
+
+[The Narrows] location_feature
+  A claim-6790160f83d4401b  ? "all streetlights work"  (ch.30 Chapter 30 — The Narrows)
+  B claim-ec6e225b66395b07  ? "gutters clear, no tags on support pillars"  (ch.30 Chapter 30 — The Narrows)
+
+[Silence] weapon_type
+  A claim-67f6051594dcd71c  ? "sword"  (ch. Full)
+  B claim-25f000a343ae303c  ? "sword/blade"  (ch.21 Chapter 21 — The Park Job)
+
+[Kyle Ellen Corbin] training_duration
+  A claim-6950d4cdca60b435  ? "eleven days of intensive training"  (ch.18 Chapter 18 — Work Order)
+  B claim-e79135b11533e6f5  ? "eleven years of discipline"  (ch.32 Chapter 32 — The Axiom Yard)
+
+[Mrs. Chen] occupation
+  A claim-6b115dd1e3e6fef4  ? "noodle stall owner"  (ch.10 Chapter 10 — No Signal)
+  B claim-931fcac06e309394  ? "proprietor of noodle shop"  (ch.28 Chapter 28 — The Gray Suit)
+
+[Bram Osei] cause_of_death
+  A claim-6bdbe139144a0871  ? "subsonic gunshot through the sternum"  (ch.2 Chapter 2 — The Investigation)
+  B claim-610a584e6b5651ed  ? "interrogation by Ekow"  (ch.3 Chapter 3 — The Confrontation)
+
+[Kyle Ellen Corbin] combat_style
+  A claim-6f22ae80bcf33754  ? "geometry and timing without drawing blade"  (ch.23 Chapter 23 — Blackwater)
+  B claim-835a1fa2e77ef4e1  ? "uses sword with specific positioning and technique"  (ch.21 Chapter 21 — The Park Job)
+
+[The Low] altitude_range
+  A claim-6f3bdc884bc797e4  ? "between thirty and three hundred twenty meters"  (ch.2 Chapter 2 — Rebuilding)
+  B claim-d4c547962da76dbb  ? "30–320m ungoverned band"  (ch. Full)
+
+[VOSS] location_at_0507
+  A claim-6f5294697d920bfd  ? "maintenance alcove under Ferrogate"  (ch.10 Chapter 10 — No Signal)
+  B claim-7ccd8f9fa50c31fe  ? "maintenance alcove with thermal regulation"  (ch.10 Chapter 10 — No Signal)
+
+[Reuben Sclose] physical_feature
+  A claim-704912f2a89440e2  ? "three left fingers cut at first joint"  (ch.2 Chapter 2 — The Investigation)
+  B claim-0db8e9798ee07eed  ? "all five right-hand fingers present"  (ch.2 Chapter 2 — The Investigation)
+
+[Kyle Ellen Corbin] weapon_secondary
+  A claim-718415e8dd058d6e  ? "Cacophony revolver"  (ch.6 Chapter 6 — Half a Step)
+  B claim-b71b46a4eba5c268  ? "Silence katana"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+
+[Sol Castellanos] body_location
+  A claim-71d055a5b073a016  ? "near Cermak"  (ch.11 Chapter 11 — The Surfacing)
+  B claim-ff3824829841c232  ? "side-passage off main corridor, behind recycling compactor"  (ch.9 Chapter 9 — The Same Cold)
+
+[Sable] physical_feature
+  A claim-7246300a305b9548  ? "red braid, aperture-ring eyes"  (ch.37 Chapter 37 — The Acquisition Program)
+  B claim-b93a3e333b2eaf14  ? "whitened thumbnail"  (ch.16 Chapter 16 — The Offer)
+
+[Bram Osei] arm_type
+  A claim-7275c8f8706180fe  ? "left arm financed cyberware"  (ch.2 Chapter 2 — The Investigation)
+  B claim-17ec319c60bd1258  ? "Tessera Grade-C"  (ch.1 Chapter 1 — The Contract)
+
+[Sol Castellanos] procedure_completion
+  A claim-730f1b65b35b50e1  ? "100%"  (ch.11 Chapter 11 — The Surfacing)
+  B claim-e436339f840aa592  ? "98%"  (ch.10 Chapter 10 — No Signal)
+
+[Kyle Ellen Corbin] job_fee
+  A claim-73b9dfb0680a902a  ? "F40 on back end if documentation lands before civil filing deadline"  (ch.30 Chapter 30 — The Narrows)
+  B claim-9b926b2224aa24fc  ? "F40 on the back end"  (ch.30 Chapter 30 — The Narrows)
+
+[VOSS] handedness
+  A claim-73c0729d73a40b8a  ? "left-handed"  (ch.10 Chapter 10 — No Signal)
+  B claim-04bd4c14cfb008ce  ? "right-handed"  (ch.10 Chapter 10 — No Signal)
+
+[Kyle Ellen Corbin] contract_status
+  A claim-73dd1c9af3f93160  ? "Season Two contract signed"  (ch.36 Chapter 36 — Brain Burn)
+  B claim-94a2c63458262da1  ? "active emergency relay defense"  (ch.34 Chapter 34 — The Relay Station)
+
+[Kyle Ellen Corbin] contract_status
+  A claim-73dd1c9af3f93160  ? "Season Two contract signed"  (ch.36 Chapter 36 — Brain Burn)
+  B claim-fbb68a133a717e5f  ? "standing contract"  (ch.28 Chapter 28 — The Gray Suit)
+
+[Kyle Ellen Corbin] hardware_type
+  A claim-74e05dac5a1ae19c  ? "Atlas NeoCortex ungoverned variant"  (ch.38 Chapter 38 — Brain Burn)
+  B claim-3069d64130bc6708  ? "ungoverned neuretic lattice"  (ch.35 Chapter 35 — The Acquisition Program)
+
+[Kyle Ellen Corbin] hardware_type
+  A claim-74e05dac5a1ae19c  ? "Atlas NeoCortex ungoverned variant"  (ch.38 Chapter 38 — Brain Burn)
+  B claim-7d9b8a50375eca5f  ? "neuretics, Atlas-grade NeoCortex, no governor"  (ch.14 Chapter 14 — One Shoe)
+
+[Kyle Ellen Corbin] hardware_type
+  A claim-74e05dac5a1ae19c  ? "Atlas NeoCortex ungoverned variant"  (ch.38 Chapter 38 — Brain Burn)
+  B claim-a806d7c536f0ab53  ? "Atlas neuretics, NeoCortex grade, no governor"  (ch.14 Chapter 14 — One Shoe)
+
+[Kyle Ellen Corbin] contract_count
+  A claim-75182108ef60caf2  ? "forty-six finished contracts"  (ch.5 Chapter 5 — The Carousel)
+  B claim-764f658c307873a0  ? "46 finished"  (ch.5 Chapter 5 — The Carousel)
+
+[Pixel] left_food_for_kyle
+  A claim-75d828dbf6c23be3  ? "rice in sealed container with timestamp 14:42"  (ch.17 Chapter 17 — Two Favors)
+  B claim-d6f360a86a783069  ? "rice with seasoning"  (ch.17 Chapter 17 — Two Favors)
+
+[Reza Solano] past_location
+  A claim-75fe8b7318809382  ? "Pilsen basement"  (ch.2 Chapter 2 — The Signature)
+  B claim-fde362a340ba6231  ? "Rotterdam stairwell"  (ch.2 Chapter 2 — The Signature)
+
+[Osei] missing_body_part
+  A claim-765446066e0805ec  ? "right arm"  (ch.2 Chapter 2 — The Investigation)
+  B claim-11b3cccad0aa0e05  ? "right arm from elbow down"  (ch.2 Chapter 2 — The Investigation)
+
+[Bram Osei] physical_feature_arm
+  A claim-76e2c8e39a46cab6  ? "right arm financed, professionally sealed"  (ch.3 Chapter 3 — The Confrontation)
+  B claim-578bcb5994693a70  ? "right arm missing from elbow down"  (ch.2 Chapter 2 — The Investigation)
+
+[Yemina Fola] employer
+  A claim-778eacbc0ff709f0  ? "Arcturus district"  (ch. Characters)
+  B claim-a85f798ca3d31ce0  ? "Arcturus"  (ch. Full)
+
+[Yemina Fola] employer
+  A claim-778eacbc0ff709f0  ? "Arcturus district"  (ch. Characters)
+  B claim-f0276d4129c82b16  ? "Arcturus Civil Security"  (ch. Full)
+
+[Marisol] forgery_assessment
+  A claim-782aaedfa12d5f18  ? "beautiful work, fiber and aging chemistry almost right, hands cared about making survey not about survey"  (ch.26 Chapter 26 — The Forger's Ledger)
+  B claim-9a6614489748c9fa  ? "beautiful work, fiber and aging chemistry almost right, but gesture and pressure wrong"  (ch.26 Chapter 26 — The Forger's Ledger)
+
+[Crucible Genomics] business_type
+  A claim-789049c01329e15e  ? "organ printing"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+  B claim-b5c6f01d197c173e  ? "prints organs to order, bioprinted heart manufacturer"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+
+[Sable] experience_level
+  A claim-7933de6a22e7d691  ? "twenty years in the work"  (ch.18 Chapter 18 — Two Favors)
+  B claim-278e3a3bb14ce7cc  ? "twenty years keeping operators alive"  (ch.17 Chapter 17 — Two Favors)
+
+[Kyle Ellen Corbin] augmentation_type
+  A claim-7987c78cb906a902  ? "array"  (ch.1 Chapter 1 — Teeth)
+  B claim-9832ba963acc9554  ? "mesh under skin"  (ch.1 Chapter 1 — Teeth)
+
+[Reza Solano] shared_history_location
+  A claim-7a0e9ec4ec241b44  ? "Rotterdam stairwell"  (ch.2 Chapter 2 — The Signature)
+  B claim-ee54296c0d04e289  ? "basement in Pilsen"  (ch.2 Chapter 2 — The Signature)
+
+[Celeste Hartley] final_message_content
+  A claim-7b091a4fcbd20ac6  ? "twenty-six words, instructing to find sender"  (ch.5 Chapter 5 — What She Wouldn't Do)
+  B claim-eab88ae0f0b83845  ? "twenty-six words about being ready"  (ch.5 Chapter 5 — What She Wouldn't Do)
+
+[Sol Castellanos] procedure_completion
+  A claim-7d6a27207113d31e  ? "ninety-eight percent, consciousness scattered"  (ch.10 Chapter 10 — No Signal)
+  B claim-1de9d9bba9dabfb8  ? "finished"  (ch.11 Chapter 11 — The Surfacing)
+
+[Celeste Hartley] savings_duration
+  A claim-7d8f94ede83339a3  ? "two years"  (ch.1 Chapter 1 — Cel)
+  B claim-d0ef7b4143de2f12  ? "22 months"  (ch.5 Chapter 5 — What She Wouldn't Do)
+
+[Kyle Ellen Corbin] hardware_type
+  A claim-7d9b8a50375eca5f  ? "neuretics, Atlas-grade NeoCortex, no governor"  (ch.14 Chapter 14 — One Shoe)
+  B claim-2d07a31420de53a1  ? "mesh, polyceramic, 70 feet braided, rated to eat 7.62"  (ch.14 Chapter 14 — One Shoe)
+
+[Pixel] communication_method
+  A claim-7da2f9dc366b7a5f  ? "dead drop, post-it notes"  (ch.18 Chapter 18 — Two Favors)
+  B claim-3b4f3f14803e893b  ? "unreachable on purpose"  (ch.24 Chapter 24 — Meridian Wellness)
+
+[Hua] decision_regarding_kyle
+  A claim-7eecfecb85f7f4c2  ? "decided to let Kyle keep his hardware, converted debt to obligation for future work"  (ch.14 Chapter 14 — One Shoe)
+  B claim-88b0e8ca27375b12  ? "decided to let Kyle keep hardware, collateralizing him"  (ch.14 Chapter 14 — One Shoe)
+
+[Reuben Sclose] family_relation
+  A claim-7f3ca0560324ead0  ? "has daughter"  (ch.2 Chapter 2 — The Investigation)
+  B claim-a51751a7fcaf15b2  ? "has daughter named Daria Holme"  (ch.2 Chapter 2 — The Investigation)
+
+[Kyle Ellen Corbin] has_standing_contract
+  A claim-7fffacb1bb9d4fc8  ? "yes, scope to be determined"  (ch.19 Chapter 19 — Interlude: The Floor Is Hard)
+  B claim-dc448cc71497bb75  ? "with unnamed client"  (ch.25 Chapter 25 — The Taste-Off)
+
+[Reza Solano] shared_history_location
+  A claim-8187a27464b1f7d7  ? "stairwell in Rotterdam"  (ch.2 Chapter 2 — The Signature)
+  B claim-4e7481b7861ce68f  ? "Pilsen"  (ch.2 Chapter 2 — The Signature)
+
+[Kyle Ellen Corbin] combat_style
+  A claim-835a1fa2e77ef4e1  ? "uses sword with specific positioning and technique"  (ch.21 Chapter 21 — The Park Job)
+  B claim-fa3f99a087775b98  ? "unarmed, geometry and timing based"  (ch.23 Chapter 23 — Blackwater)
+
+[Yuen-Pak] clinic_location
+  A claim-84fc726f063e8db6  ? "converted loading-bay clinic in the lower Ward"  (ch. Characters)
+  B claim-5524d7e1086da14d  ? "lower Ward"  (ch.2 Chapter 2 — The Investigation)
+
+[VOSS] location_destination
+  A claim-85cae15db26b6b28  ? "toward Inés"  (ch.11 Chapter 11 — The Surfacing)
+  B claim-8d3dc7eb2f6dbc27  ? "seventeen blocks north to Inés Vásquez's shop"  (ch.11 Chapter 11 — The Surfacing)
+
+[Dr. Jude "Stash" Adeyemi] work_style
+  A claim-86a85d89b4a92f85  ? "precision in everything"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-e9cbf3c117935c01  ? "precise"  (ch.8 Chapter 8 — The Quiet Hour)
+
+[Thomas Holst] extraction_count
+  A claim-89b15dec61b3d450  ? "one hundred and forty-three extractions"  (ch.4 Chapter 4 — The Cost)
+  B claim-1ab4f6d98ab70d63  ? "forty-two extractions in eight months"  (ch.1 Chapter 1 — The Contract)
+
+[Sable] surveillance_experience_years
+  A claim-89c655ae1f8197a2  ? "11 years"  (ch.22 Chapter 22 — The Audit)
+  B claim-abf720847bee88e6  ? "eleven years"  (ch.22 Chapter 22 — The Audit)
+
+[Kyle Ellen Corbin] code
+  A claim-8b23fc6eb9a4acd9  ? "cut everything, cross nothing"  (ch.12 Chapter 12 — The Interview)
+  B claim-4cd0dd907768e68c  ? "announces before draw"  (ch.37 Chapter 37 — 35th and Halsted)
+
+[MERIDIAN] involvement
+  A claim-8b84de707a563bed  ? "owns the operation, clinic, rig, entity"  (ch.12 Chapter 12 — Voluntary Recall)
+  B claim-cd391f68db0dcf4c  ? "owns compute-lease vehicle, financed shell company Zenith Throughway"  (ch.12 Chapter 12 — Voluntary Recall)
+
+[Mrs. Chen] name_spelling_history
+  A claim-8bc12fa707d7a305  ? "name rarely spelled correctly without asking"  (ch.28 Chapter 28 — The Gray Suit)
+  B claim-dfbbaf836321175a  ? "not spelled correctly without asking for nine years"  (ch.28 Chapter 28 — The Gray Suit)
+
+[Pixel] hair_color
+  A claim-8c09996c54c01e7e  ? "pink"  (ch.20 Interlude: The Floor Is Hard)
+  B claim-11decb1a5c6360c4  ? "pink fading from ends"  (ch.6 Chapter 6 — Half a Step)
+
+[Seito] status
+  A claim-8d383648bf6bf5e4  ? "constructed/deceased"  (ch.19 Chapter 19 — Work Order)
+  B claim-b29ae900a696ff60  ? "never existed as real person, installed memory"  (ch.18 Chapter 18 — Work Order)
+
+[VOSS] location_destination
+  A claim-8d3dc7eb2f6dbc27  ? "seventeen blocks north to Inés Vásquez's shop"  (ch.11 Chapter 11 — The Surfacing)
+  B claim-7f368af5c6528c99  ? "toward Pilsen, toward the corridor"  (ch.11 Chapter 11 — The Surfacing)
+
+[Kyle Ellen Corbin] armor_type
+  A claim-8f535023792b00d4  ? "AxisMed distributed kinetic armor"  (ch.11 Chapter 11 — The Interview)
+  B claim-c6748729bef20138  ? "mesh"  (ch.31 Chapter 31 — West Town Rain)
+
+[Ria] physical_feature
+  A claim-8f91c02d9e045b38  ? "has panels that cycle colors"  (ch.25 Chapter 25 — Blackwater)
+  B claim-19971373e778139a  ? "calf panels glowing legal minimum"  (ch.35 Chapter 35 — The Acquisition Program)
+
+[Celeste Hartley] savings_plan
+  A claim-91336f263fe116fb  ? "two-year savings plan"  (ch.6 Chapter 6 — Clean Sharps)
+  B claim-27efda4bca2d2824  ? "two-year savings plan with deadline"  (ch.6 Chapter 6 — Clean Sharps)
+
+[Pixel] social_activity
+  A claim-9259637d8664958d  ? "card circle"  (ch.3 Chapter 3 — The Regular)
+  B claim-48790193ad531885  ? "dancing on Thursdays"  (ch.3 Chapter 3 — The Regular)
+
+[Kyle Ellen Corbin] weapon_rounds_fired
+  A claim-955480243ac638f9  ? "zero"  (ch.33 Chapter 33 — West Town Rain)
+  B claim-5e8768d3ce90d1b9  ? "one round at winch drum"  (ch.33 Chapter 33 — The Iowa Corridor)
+
+[Oziel] receiving_prosthetic
+  A claim-957fcb785db20ac3  ? "full articulated arm"  (ch.10 Chapter 10 — Before Something Changes)
+  B claim-ae0c1b926241d95e  ? "true"  (ch.9 Chapter 9 — Before Something Changes)
+
+[Kyle Ellen Corbin] neuretic_pain_filter
+  A claim-95deb96620d5429b  ? "set at 73% during forearm healing, adjusted to 82%"  (ch.6 Chapter 6 — Half a Step)
+  B claim-51ce3698b5e775ad  ? "eighty-two percent"  (ch.6 Chapter 6 — Half a Step)
+
+[Halvard Onwe] role
+  A claim-96636c0c4edb75c2  ? "broker/coordinator"  (ch.4 Chapter 4 — The Fall)
+  B claim-ef7e834dee0aaabd  ? "contract holder"  (ch.2 Chapter 2 — The Signature)
+
+[Reuben Sclose] physical_feature
+  A claim-9665cbc1c2e3da16  ? "no eyes"  (ch.3 Chapter 3 — The Confrontation)
+  B claim-704912f2a89440e2  ? "three left fingers cut at first joint"  (ch.2 Chapter 2 — The Investigation)
+
+[Mrs. Chen] stall_location
+  A claim-966c6ed1ce8f6ccd  ? "Wentworth Passage"  (ch.3 Chapter 3 — The Regular)
+  B claim-f1879a520ce030fa  ? "corner stall, two blocks from apartment"  (ch.2 Chapter 2 — Provenance)
+
+[Reza Solano] origin_location
+  A claim-9756a8a246f24081  ? "Gray Zone street"  (ch.1 Chapter 1 — Two Lives)
+  B claim-b7298c7cc928780d  ? "Gray Zone"  (ch.1 Chapter 1 — Two Lives)
+
+[Paz] mother_status
+  A claim-97838f817742e31a  ? "lives in hostel dormitory, never wanted custody"  (ch.4 Chapter 4 — The Cost)
+  B claim-dd2a434eae3146ff  ? "alive in city, no custody, visited twice in 9 years"  (ch.4 Chapter 4 — The Cost)
+
+[Sable] communication_method
+  A claim-97e0f2ed6cb54221  ? "card"  (ch.30 Chapter 30 — The Narrows)
+  B claim-adba86a14975a458  ? "text, no voice"  (ch.29 Chapter 29 — The Corridor)
+
+[Kyle Ellen Corbin] weapon_primary
+  A claim-9827c196e2eec5e7  ? "Silence"  (ch.31 Chapter 31 — The Corridor)
+  B claim-abf5a2f5db5caa67  ? "Cacophony revolver"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+
+[Kyle Ellen Corbin] augmentation_type
+  A claim-9832ba963acc9554  ? "mesh under skin"  (ch.1 Chapter 1 — Teeth)
+  B claim-e2683618ad3a1cc7  ? "augmented sight"  (ch.2 Chapter 2 — Provenance)
+
+[Kyle Ellen Corbin] augmentation_type
+  A claim-9832ba963acc9554  ? "mesh under skin"  (ch.1 Chapter 1 — Teeth)
+  B claim-ed20f1d167d45814  ? "neuretics"  (ch.1 Chapter 1 — Teeth)
+
+[Bram Osei] cause_of_death
+  A claim-997830b62b18796a  ? "gunshot through sternum"  (ch.2 Chapter 2 — The Investigation)
+  B claim-6bdbe139144a0871  ? "subsonic gunshot through the sternum"  (ch.2 Chapter 2 — The Investigation)
+
+[Pixel] technical_skill
+  A claim-9beaef19371bb646  ? "gasket seal engineering"  (ch.7 Chapter 7 — The Dock)
+  B claim-0d67f1b57f9c20e5  ? "gasket seal creation"  (ch.7 Chapter 7 — The Dock)
+
+[Rafi Sarkissian] origin
+  A claim-9cf41420c0eb5efa  ? "Gray Zone"  (ch.1 Chapter 1 — Two Lives)
+  B claim-02e91a6074e40de5  ? "Gray Zone / the Yards"  (ch.2 Chapter 2 — The Signature)
+
+[Rafi Sarkissian] origin
+  A claim-9cf41420c0eb5efa  ? "Gray Zone"  (ch.1 Chapter 1 — Two Lives)
+  B claim-10e486265e9729cc  ? "the Yards"  (ch.2 Chapter 2 — The Signature)
+
+[Rafi Sarkissian] origin
+  A claim-9cf41420c0eb5efa  ? "Gray Zone"  (ch.1 Chapter 1 — Two Lives)
+  B claim-3ff1db708fe0e7d1  ? "Gray Zone, the Yards"  (ch.2 Chapter 2 — The Signature)
+
+[Pixel] work_speed
+  A claim-a08ab684543fc5fd  ? "fast and without comment"  (ch.5 Chapter 5 — The Carousel)
+  B claim-eccfc924715779e3  ? "fast"  (ch.5 Chapter 5 — The Carousel)
+
+[Casper Vey] shop_feature
+  A claim-a23394a28821ac10  ? "no sign"  (ch.20 Chapter 20 — Standard Rate)
+  B claim-fc9b56dbca1563ac  ? "drawers floor to ceiling, wall to wall, card-catalog cabinets"  (ch.20 Chapter 20 — Standard Rate)
+
+[Kyle Ellen Corbin] augmentation_overuse_symptom
+  A claim-a5c41acb0f2b567d  ? "white vision creep"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+  B claim-63c209791afff7ec  ? "high-pitched whine"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+
+[Sift] note_content
+  A claim-ac55465c7aaeef21  ? "warned Kyle about Broken Glass, said she meant to tell him, mentioned third try holding"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-f4a494704b569a36  ? "warned Kyle about Broken Glass, said he does same thing smaller, third try held"  (ch.8 Chapter 8 — The Quiet Hour)
+
+[Sable] communication_method
+  A claim-adba86a14975a458  ? "text, no voice"  (ch.29 Chapter 29 — The Corridor)
+  B claim-317402e1474153ea  ? "uses burn lines"  (ch.17 Chapter 17 — Two Favors)
+
+[Kyle Ellen Corbin] training_duration
+  A claim-add50cd0b423b180  ? "nine years"  (ch.1 Chapter 1 — Teeth)
+  B claim-d593155f4e9e8258  ? "eleven years"  (ch.34 Chapter 34 — The Axiom Yard)
+
+[Kyle Ellen Corbin] physical_feature
+  A claim-b0652d9142ca7e3b  ? "sutured seam in forearm"  (ch.12 Chapter 12 — The Interview)
+  B claim-bb106df19081ea17  ? "hip tape"  (ch.12 Chapter 12 — The Interview)
+
+[Tavi Jeong] augment_type
+  A claim-b1cb0bc421e1d969  ? "splice jack behind ear"  (ch.2 Chapter 2 — The Signature)
+  B claim-5e3e738d620f1353  ? "spike in left forearm rig"  (ch.2 Chapter 2 — The Signature)
+
+[Tavi Jeong] augment_type
+  A claim-b1cb0bc421e1d969  ? "splice jack behind ear"  (ch.2 Chapter 2 — The Signature)
+  B claim-bc10149a6c2882bf  ? "spike in jacket left forearm"  (ch.2 Chapter 2 — The Signature)
+
+[Pixel] eye_color
+  A claim-b213300c7b3d7b95  ? "grey-blue"  (ch.20 Interlude: The Floor Is Hard)
+  B claim-1b332876da2dbd71  ? "color of water over slate"  (ch.19 Chapter 19 — Work Order)
+
+[Reza Solano] past_location
+  A claim-b41ab76cd0110544  ? "Rotterdam"  (ch.2 Chapter 2 — The Signature)
+  B claim-09343dd6a5f74a5a  ? "Pilsen"  (ch.2 Chapter 2 — The Signature)
+
+[Reza Solano] employment_status
+  A claim-b4c3c820feb9aec4  ? "corporate operator"  (ch.4 Chapter 4 — The Fall)
+  B claim-6030d1c2e4a7116d  ? "corporate operative"  (ch.3 Chapter 3 — The Impossible Middle)
+
+[Reza Solano] bleeding
+  A claim-b5ec825d3f27f15e  ? "blood on collar"  (ch.3 Chapter 3 — The Impossible Middle)
+  B claim-2bd3985b8cef050d  ? "true"  (ch.3 Chapter 3 — The Impossible Middle)
+
+[Pixel] billing_practice
+  A claim-b7c6a59646350b31  ? "bills exactly"  (ch.5 Chapter 5 — The Carousel)
+  B claim-41d1bcfff497846a  ? "exact"  (ch.5 Chapter 5 — The Carousel)
+
+[Mira] assessment_method
+  A claim-b807b84c840332c6  ? "six positions"  (ch.12 Chapter 12 — The Interview)
+  B claim-e6ab0793af20a8bc  ? "six-position evaluation protocol"  (ch.11 Chapter 11 — The Interview)
+
+[Pixel] work_location
+  A claim-b844e2814ff694f9  ? "The Pivot, second floor"  (ch.3 Chapter 3 — The Regular)
+  B claim-383ce27acdd1d568  ? "kitchen table"  (ch.11 Chapter 11 — The Interview)
+
+[Kyle Ellen Corbin] has_neuretics
+  A claim-ba5232d360236e7b  ? "true"  (ch.5 Chapter 5 — The Carousel)
+  B claim-2a77dae3ac255d74  ? "ungoverned Atlas hardware"  (ch.16 Chapter 16 — The Offer)
+
+[Celeste Hartley] climax_tell
+  A claim-ba8bb55f0ea586f6  ? "bilateral-lock tracks voice with no breath"  (ch. Characters)
+  B claim-dff2cc7963c0a959  ? "bilateral-lock tracks a voice with no breath; ears catch the absence before her mind does"  (ch. Full)
+
+[Kyle Ellen Corbin] code_adherence
+  A claim-baf8d3a09da76d10  ? "follows code that requires announcement before draw"  (ch.37 Chapter 37 — 35th and Halsted)
+  B claim-1aaeb616681250ef  ? "code holds announcement as real offer, true chance"  (ch.37 Chapter 37 — 35th and Halsted)
+
+[Pixel] left_food_for_kyle
+  A claim-be7855b3575d3084  ? "sealed container of rice with timestamp"  (ch.17 Chapter 17 — Two Favors)
+  B claim-75d828dbf6c23be3  ? "rice in sealed container with timestamp 14:42"  (ch.17 Chapter 17 — Two Favors)
+
+[VOSS] location_destination
+  A claim-bf21daf68ede8225  ? "Pilsen South station"  (ch.11 Chapter 11 — The Surfacing)
+  B claim-85cae15db26b6b28  ? "toward Inés"  (ch.11 Chapter 11 — The Surfacing)
+
+[Bram Osei] physical_appearance
+  A claim-c37157214497c482  ? "sharp-featured, wary"  (ch.1 Chapter 1 — The Contract)
+  B claim-9805a1edd1b7da2f  ? "small and wide, broken face"  (ch.1 Chapter 1 — The Contract)
+
+[Osei] missing_limb
+  A claim-c38a119deffde129  ? "right arm"  (ch.2 Chapter 2 — The Investigation)
+  B claim-bfa240b92d31916e  ? "right arm from elbow down"  (ch.2 Chapter 2 — The Investigation)
+
+[Bram Osei] financed_parts
+  A claim-c3d6ad45f5c5b7d5  ? "arm"  (ch.3 Chapter 3 — The Confrontation)
+  B claim-2f34d1e674c8c950  ? "bilateral legs (Series-9 hip sockets), right arm (Tessera Grade-C)"  (ch.1 Chapter 1 — The Contract)
+
+[Bram Osei] financed_parts
+  A claim-c3d6ad45f5c5b7d5  ? "arm"  (ch.3 Chapter 3 — The Confrontation)
+  B claim-6a73ba5788c63a99  ? "arm, liver, kidneys, bowel"  (ch.3 Chapter 3 — The Confrontation)
+
+[Pixel] work_activity
+  A claim-c43904d1c2397e33  ? "moves between bench and terminal"  (ch.8 Chapter 8 — The Quiet Hour)
+  B claim-8ff67926f9e78dd1  ? "mapping schism geometry nodes"  (ch.18 Chapter 18 — Work Order)
+
+[Kyle Ellen Corbin] blade_origin
+  A claim-c55da36090b2d1ed  ? "obtained at sixteen from unknown source"  (ch.6 Chapter 6 — Half a Step)
+  B claim-0552c7607d99777a  ? "unknown, obtained at sixteen from unnamed man"  (ch.6 Chapter 6 — Half a Step)
+
+[Kyle Ellen Corbin] destination
+  A claim-c56b4874765fd9ef  ? "Northwestern Memorial Trauma Bay Nine"  (ch.12 Chapter 12 — The One Who Doesn't Stop)
+  B claim-ef47a0a725012d00  ? "the Loop"  (ch.20 Chapter 20 — Standard Rate)
+
+[Makena Asomaning] role
+  A claim-c9208a9a870f571d  ? "climate refugee child, errand runner, and informal courier for transit hub communities"  (ch. )
+  B claim-ce61948b0b4922c8  ? "forensic read provider"  (ch. Full)
+
+[Knuckle] physical_feature
+  A claim-c92e62a9a3513a72  ? "thick knuckle-joints"  (ch.4 Chapter 4 — The Surfacing Called)
+  B claim-ad1ccf648e30f8c6  ? "scarred palm"  (ch.4 Chapter 4 — The Surfacing Called)
+
+[Kyle Ellen Corbin] file_status
+  A claim-c95f6e6075f44984  ? "most requested item in shop, four standing orders"  (ch.35 Chapter 35 — The Acquisition Program)
+  B claim-69c87ca4d07574a3  ? "has redacted file with photograph"  (ch.7 Chapter 7 — The Dock)
+
+[Pixel] handedness
+  A claim-c99c4755c3e9f295  ? "left-handed"  (ch.22 Chapter 22 — Ghost Period)
+  B claim-3e358aabed255efd  ? "left"  (ch.38 Chapter 38 — One Knock)
+
+[Pixel] handedness
+  A claim-c99c4755c3e9f295  ? "left-handed"  (ch.22 Chapter 22 — Ghost Period)
+  B claim-49a5fc23a0f547e1  ? "right-handed"  (ch.32 Chapter 32 — The Axiom Yard)
+
+[Marcus] age
+  A claim-ca408b99d9812fc1  ? "elderly"  (ch.4 Chapter 4 — The Cost)
+  B claim-62377a7a285b065f  ? "late forties"  (ch.4 Chapter 4 — The Cost)
+
+[Tavi Jeong] hand_condition
+  A claim-cc1ecf0053d842cb  ? "shaking on the grip"  (ch.3 Chapter 3 — The Impossible Middle)
+  B claim-7d4b321f4ee23942  ? "numb"  (ch.4 Chapter 4 — The Fall)
+
+[MERIDIAN] involvement
+  A claim-cd391f68db0dcf4c  ? "owns compute-lease vehicle, financed shell company Zenith Throughway"  (ch.12 Chapter 12 — Voluntary Recall)
+  B claim-1ff156ef8fffa7e6  ? "closed file as successful locate, referred crew to Arcturus"  (ch.12 Chapter 12 — Voluntary Recall)
+
+[Pixel] activity
+  A claim-cd91d49eeaca1807  ? "working on a casing with tools"  (ch.30 Chapter 30 — The Narrows)
+  B claim-9c45b493bea01c7d  ? "working at workbench"  (ch.36 Chapter 36 — Brain Burn)
+
+[Bram Osei] mobility_status
+  A claim-ce690581402e049a  ? "becomes wheelchair-dependent after leg reclamation"  (ch.1 Chapter 1 — The Contract)
+  B claim-274c329763657db7  ? "uses wheelchair after leg extraction"  (ch.1 Chapter 1 — The Contract)
+
+[Rafi Sarkissian] origin_location
+  A claim-cecdea9cc5786a0c  ? "the Yards"  (ch.2 Chapter 2 — The Signature)
+  B claim-8ad6176f3f1ebb68  ? "Gray Zone"  (ch.1 Chapter 1 — Two Lives)
+
+[MERIDIAN] involvement
+  A claim-cef36652db10a7d8  ? "funded Zenith Throughway shell company"  (ch.12 Chapter 12 — Voluntary Recall)
+  B claim-8b84de707a563bed  ? "owns the operation, clinic, rig, entity"  (ch.12 Chapter 12 — Voluntary Recall)
+
+[Ledger] communication_style
+  A claim-cf01612b7d47a379  ? "economical"  (ch.6 Chapter 6 — The Verdict)
+  B claim-ee86b13549765437  ? "tells terms plainly, doesn't trade in impressions, cleanest honest read"  (ch.17 Chapter 17 — Two Favors)
+
+[Kyle Ellen Corbin] weapon_ammunition
+  A claim-d09fb73632a6f1e9  ? "six rounds"  (ch.3 Chapter 3 — The Regular)
+  B claim-8fc4784b7bfc3568  ? "six in cylinder"  (ch.33 Chapter 33 — The Iowa Corridor)
+
+[Sorrel] status
+  A claim-d1b28b763626e42e  ? "deceased"  (ch.14 Chapter 14 — A New Fare)
+  B claim-8444e3c8849ea1e0  ? "Brave"  (ch.4 Chapter 4 — The Surfacing Called)
+
+[Sable] role_during_dark_period
+  A claim-d3855d6719cf4d2a  ? "crew leader"  (ch.34 Chapter 34 — The Relay Station)
+  B claim-e00a6fbe9c41ef72  ? "in charge"  (ch.34 Chapter 34 — The Relay Station)
+
+[Pixel] work_location
+  A claim-d3895a6a2341d932  ? "apartment with bench and terminal"  (ch.15 Chapter 15 — One Shoe)
+  B claim-b844e2814ff694f9  ? "The Pivot, second floor"  (ch.3 Chapter 3 — The Regular)
+
+[Tavi Jeong] contract_status
+  A claim-d3fa7deb126c3259  ? "live, non-refundable"  (ch.3 Chapter 3 — The Impossible Middle)
+  B claim-5a9ec0660cf96e0a  ? "holding conflicting contracts for same asset"  (ch.1 Chapter 1 — Two Lives)
+
+[Do-yun Huitzil] decision_about_tomas_levin
+  A claim-d42865256665c12f  ? "employs them for Lotus"  (ch.3 Chapter 3 — The Confrontation)
+  B claim-c0b72eb6f7385241  ? "hired them as Lotus assets"  (ch.3 Chapter 3 — The Confrontation)
+
+[Tavi Jeong] injury_treatment
+  A claim-d44bc544a6d060d4  ? "field dressing taped under jacket"  (ch.2 Chapter 2 — The Signature)
+  B claim-3ef39dd31050694f  ? "field dressing from cache-jack on wrist"  (ch.2 Chapter 2 — The Signature)
+
+[Kyle Ellen Corbin] behavioral_pattern
+  A claim-d488df126a845fcc  ? "takes half-step back when approached"  (ch.6 Chapter 6 — Half a Step)
+  B claim-72a09236404bb57b  ? "takes half-step back from proximity"  (ch.6 Chapter 6 — Half a Step)
+
+[Kyle Ellen Corbin] physical_feature
+  A claim-d576c57af63aa620  ? "left shoulder injured"  (ch.1 Chapter 1 — Teeth)
+  B claim-5760fe591a2c0c76  ? "tall, starved shape"  (ch.1 Chapter 1 — Teeth)
+
+[Kyle Ellen Corbin] training_duration
+  A claim-d593155f4e9e8258  ? "eleven years"  (ch.34 Chapter 34 — The Axiom Yard)
+  B claim-6950d4cdca60b435  ? "eleven days of intensive training"  (ch.18 Chapter 18 — Work Order)
+
+[Tavi Jeong] handedness
+  A claim-d7456fa17e641334  ? "right-handed"  (ch.4 Chapter 4 — The Fall)
+  B claim-75bc8b295ed01b9f  ? "left-handed"  (ch.1 Chapter 1 — Two Lives)
+
+[Daria Espinoza] age
+  A claim-d7c937ca28dca83b  ? "young adult"  (ch.1 Chapter 1 — The Contract)
+  B claim-f0a148108832a97c  ? "approximately 30"  (ch.1 Chapter 1 — The Contract)
+
+[Reza Solano] weapon_type
+  A claim-d9148c541da9fb38  ? "corporate weight hardware"  (ch.3 Chapter 3 — The Impossible Middle)
+  B claim-62e2b5bc7961a801  ? "Veltrin sidearm"  (ch.1 Chapter 1 — Two Lives)
+
+[Kyle Ellen Corbin] has_array
+  A claim-db1266d5a5cf3d3a  ? "rig/array device"  (ch.16 Chapter 16 — The Offer)
+  B claim-dd1f21350548adbc  ? "rig/neuretics"  (ch.16 Chapter 16 — The Offer)
+
+[Kyle Ellen Corbin] escape_memory_status
+  A claim-db2c97de08d58c15  ? "blank, designed to be blank"  (ch.38 Chapter 38 — Brain Burn)
+  B claim-b9271a0d86361d4a  ? "blank, no content retrievable"  (ch.36 Chapter 36 — Brain Burn)
+
+[Siosaia Tuivaga] occupation
+  A claim-dbc91a3ee727c086  ? "Cordon Freight file clerk"  (ch.1 Chapter 1 — Elias Alone)
+  B claim-3609f33d9d37fc35  ? "file clerk at Cordon Freight"  (ch.1 Chapter 1 — Elias Alone)
+
+[Kyle Ellen Corbin] client_type
+  A claim-dcaea9e4fd1a6b86  ? "entity via relay shell"  (ch.18 Chapter 18 — Work Order)
+  B claim-9f7fb5641b3fa3f3  ? "Axiom relay"  (ch.6 Chapter 6 — Half a Step)
+
+[Paz] mother_status
+  A claim-dd2a434eae3146ff  ? "alive in city, no custody, visited twice in 9 years"  (ch.4 Chapter 4 — The Cost)
+  B claim-ff1ec82a29edf11e  ? "not in custody, lives in hostel dormitory"  (ch.4 Chapter 4 — The Cost)
+
+[Kyle Ellen Corbin] weapon
+  A claim-ddf8309ea32b5c66  ? "Silence (sword)"  (ch.34 Chapter 34 — The Axiom Yard)
+  B claim-01ed6902c2a09749  ? "katana"  (ch.37 Chapter 37 — 35th and Halsted)
+
+[Mrs. Chen] name_spelling_history
+  A claim-dfbbaf836321175a  ? "not spelled correctly without asking for nine years"  (ch.28 Chapter 28 — The Gray Suit)
+  B claim-94da34c1bf5e8a18  ? "rarely spelled correctly without asking"  (ch.28 Chapter 28 — The Gray Suit)
+
+[Kyle Ellen Corbin] nervous_system_status
+  A claim-e091a4270b68cfc3  ? "brain-burnt, emptied by DataEast sim overdose"  (ch.38 Chapter 38 — Brain Burn)
+  B claim-1799be54717c399e  ? "vacated, emptied by Simulated Reality overdose"  (ch.36 Chapter 36 — Brain Burn)
+
+[Kyle Ellen Corbin] client_relationship_duration
+  A claim-e23b55f86a04cb52  ? "eleven years"  (ch.27 Chapter 27 — Halvorsen and Sons)
+  B claim-2c409a8d1ef658a4  ? "one month of reading shells"  (ch.28 Chapter 28 — The Gray Suit)
+
+[Kyle Ellen Corbin] client_relationship_duration
+  A claim-e23b55f86a04cb52  ? "eleven years"  (ch.27 Chapter 27 — Halvorsen and Sons)
+  B claim-dc9bd6900c1b561a  ? "seven years"  (ch.22 Chapter 22 — The Audit)
+
+[The Pivot] construction_material
+  A claim-e290168230ef7fca  ? "ferrocement walls, load-bearing"  (ch.19 Chapter 19 — Interlude: The Floor Is Hard)
+  B claim-f9eb2dc7d6030de8  ? "ferrocement walls, brick"  (ch.19 Chapter 19 — Interlude: The Floor Is Hard)
+
+[Pixel] prepared_circuit_schematic
+  A claim-e3e553549e8068c3  ? "yes, before arriving"  (ch.5 Chapter 5 — The Carousel)
+  B claim-3233e21ac43e9440  ? "yes"  (ch.5 Chapter 5 — The Carousel)
+
+[Sol Castellanos] procedure_completion
+  A claim-e436339f840aa592  ? "98%"  (ch.10 Chapter 10 — No Signal)
+  B claim-3e240b03efe4c39a  ? "ninety-eight percent"  (ch.10 Chapter 10 — No Signal)
+
+[Sol Castellanos] procedure_completion
+  A claim-e436339f840aa592  ? "98%"  (ch.10 Chapter 10 — No Signal)
+  B claim-7d6a27207113d31e  ? "ninety-eight percent, consciousness scattered"  (ch.10 Chapter 10 — No Signal)
+
+[Vig] crew_size
+  A claim-e5512038cc8b6c3a  ? "six men"  (ch.2 Ninety Minutes)
+  B claim-20231ab037d553ac  ? "small"  (ch. Full)
+
+[Kyle Ellen Corbin] payment_received
+  A claim-e5df1ec804ea25e5  ? "F180"  (ch.1 Chapter 1 — Teeth)
+  B claim-4abc42f18eb2f861  ? "F1.5, itemized as one for work and half for morale"  (ch.19 Chapter 19 — Interlude: The Floor Is Hard)
+
+[Tavi Jeong] shared_history_location
+  A claim-e877b885d8c29c3c  ? "Rotterdam warehouse"  (ch.2 Chapter 2 — The Signature)
+  B claim-3854c67d8deb80e4  ? "Pilsen stairwell"  (ch.2 Chapter 2 — The Signature)
+
+[Inés Vásquez] contact_with_celeste
+  A claim-e94441f11a4a2e97  ? "last confirmed stop before Celeste went offline"  (ch.6 Chapter 6 — Clean Sharps)
+  B claim-02ecc18a7687b96f  ? "yes, last confirmed stop"  (ch.6 Chapter 6 — Clean Sharps)
+
+[Mrs. Chen] employment
+  A claim-e9c9f13e90f49688  ? "noodle shop owner"  (ch.10 Chapter 10 — No Signal)
+  B claim-cb93d7942a97acab  ? "restaurant owner/operator"  (ch.20 Chapter 20 — Standard Rate)
+
+[The Narrows] location_feature
+  A claim-ec6e225b66395b07  ? "gutters clear, no tags on support pillars"  (ch.30 Chapter 30 — The Narrows)
+  B claim-456a03d1234264d8  ? "corners staffed by people who watch without making a show"  (ch.30 Chapter 30 — The Narrows)
+
+[Kyle Ellen Corbin] augmentation_type
+  A claim-ed20f1d167d45814  ? "neuretics"  (ch.1 Chapter 1 — Teeth)
+  B claim-0b15f925cec66aba  ? "array - ballistic precognition system"  (ch.1 Chapter 1 — Teeth)
+
+[Kyle Ellen Corbin] implant_type
+  A claim-ed4b26d151cf5674  ? "neuretics"  (ch.15 Chapter 15 — One Shoe)
+  B claim-296055da537f784e  ? "mesh armor with lat seam gap"  (ch.6 Chapter 6 — Half a Step)
+
+[Kyle Ellen Corbin] implant_type
+  A claim-ed4b26d151cf5674  ? "neuretics"  (ch.15 Chapter 15 — One Shoe)
+  B claim-3a0616d716b42039  ? "Atlas-grade NeoCortex neuretics with no governor"  (ch.15 Chapter 15 — One Shoe)
+
+[Kyle Ellen Corbin] implant_type
+  A claim-ed4b26d151cf5674  ? "neuretics"  (ch.15 Chapter 15 — One Shoe)
+  B claim-7caafec189fe366a  ? "implant that parses chemical signatures"  (ch.35 Chapter 35 — The Acquisition Program)
+
+[Pixel] calibration_kit_ownership
+  A claim-edf6fa3fe29c550a  ? "custom-built kit"  (ch.6 Chapter 6 — Half a Step)
+  B claim-373de402b77fa2fa  ? "custom-built, mostly self-designed"  (ch.6 Chapter 6 — Half a Step)
+
+[Reza Solano] shared_history_location
+  A claim-ee54296c0d04e289  ? "basement in Pilsen"  (ch.2 Chapter 2 — The Signature)
+  B claim-8187a27464b1f7d7  ? "stairwell in Rotterdam"  (ch.2 Chapter 2 — The Signature)
+
+[Kyle Ellen Corbin] usual_seat_location
+  A claim-ef0e47b68f6751e7  ? "not the stool nearest the register"  (ch.28 Chapter 28 — The Gray Suit)
+  B claim-b68c1a05b023b42b  ? "nearest the register"  (ch.28 Chapter 28 — The Gray Suit)
+
+[Sable] occupation
+  A claim-ef1f6d478363aa73  ? "fixer"  (ch.2 A Restless Mind)
+  B claim-9b370cef98f048ec  ? "fixer, overwatch"  (ch.35 Chapter 35 — The Acquisition Program)
+
+[Daria Espinoza] age
+  A claim-f0a148108832a97c  ? "approximately 30"  (ch.1 Chapter 1 — The Contract)
+  B claim-d5262a93059b3cc8  ? "adult"  (ch.1 Chapter 1 — The Contract)
+
+[Kyle Ellen Corbin] weapon_type
+  A claim-f0d0bc501b85aedb  ? "sword"  (ch.19 Chapter 19 — Work Order)
+  B claim-425aeefbaeadba33  ? "sword with wrapped cord grip"  (ch.32 Chapter 32 — The Axiom Yard)
+
+[Celeste Hartley] planning_duration
+  A claim-f0eeddb0464259a0  ? "eight months"  (ch.2 Chapter 2 — The Intake)
+  B claim-85623ff7a48984a0  ? "fourteen months before Jace's death"  (ch.5 Chapter 5 — What She Wouldn't Do)
+
+[Kyle Ellen Corbin] vehicle_possession
+  A claim-f305cd802725426e  ? "bike"  (ch.22 Chapter 22 — Ghost Period)
+  B claim-059645e0a13403e1  ? "Aries Viper motorcycle, 1200cc"  (ch.18 Chapter 18 — Work Order)
+
+[Mrs. Chen] stall_equipment
+  A claim-f36cfeb5814384a9  ? "awning post, counter, single wok"  (ch.5 Chapter 5 — The Carousel)
+  B claim-b1aa900afeb66b1a  ? "pot with dent on rim for stock"  (ch.2 Chapter 2 — Provenance)
+
+[Thomas Holst] daughter_therapy_cost
+  A claim-f51c3c6dabdb883c  ? "F12,000 every six months"  (ch.1 Chapter 1 — The Contract)
+  B claim-098c3afa8d1e3a8e  ? "12,000 every six months"  (ch.1 Chapter 1 — The Contract)
+
+[Thomas Holst] daughter_therapy_cost
+  A claim-f51c3c6dabdb883c  ? "F12,000 every six months"  (ch.1 Chapter 1 — The Contract)
+  B claim-0b96db0e29026bcf  ? "F4,800 per month"  (ch.1 Chapter 1 — The Contract)
+
+[Reuben Sclose] financed_components
+  A claim-f52b3b06e855c135  ? "cyberware in both eyes, spinal shunt"  (ch.2 Chapter 2 — The Investigation)
+  B claim-2a087d2b8a2469f4  ? "kidney, spinal shunt, eyes"  (ch.2 Chapter 2 — The Investigation)
+
+[Kyle Ellen Corbin] neuretics_status
+  A claim-f5c4eb34a07b2e42  ? "ungoverned"  (ch.37 Chapter 37 — 35th and Halsted)
+  B claim-959bec426fe5c682  ? "singing at high frequencies, fingers numb"  (ch.34 Chapter 34 — The Relay Station)
+
+[Celeste Hartley] integration_status
+  A claim-f69aae082edeb424  ? "37% complete"  (ch.10 Chapter 10 — No Signal)
+  B claim-70dda407e0bac25e  ? "44% completion when rig powered down"  (ch.10 Chapter 10 — No Signal)
+
+[Celeste Hartley] integration_status
+  A claim-f69aae082edeb424  ? "37% complete"  (ch.10 Chapter 10 — No Signal)
+  B claim-8788d549388d57a0  ? "44% completion"  (ch.10 Chapter 10 — No Signal)
+
+[VOSS] neuretic_status
+  A claim-f9466524531cd354  ? "dead, burned out seven years ago"  (ch.11 Chapter 11 — The Surfacing)
+  B claim-1ecbcfc6fcef0055  ? "burned out"  (ch.10 Chapter 10 — No Signal)
+
+[VOSS] location_at_0642
+  A claim-f981d435cc2088ea  ? "Rennick's office"  (ch.10 Chapter 10 — No Signal)
+  B claim-ec696954687baf09  ? "Mrs. Chen's noodle stall"  (ch.10 Chapter 10 — No Signal)
+
+[Kyle Ellen Corbin] combat_style
+  A claim-fa3f99a087775b98  ? "unarmed, geometry and timing based"  (ch.23 Chapter 23 — Blackwater)
+  B claim-00f5d0eb3860a935  ? "efficient, minimal gesture"  (ch.26 Chapter 26 — The Forger's Ledger)
+
+[Corvid Larsson] occupation
+  A claim-fade53591fab872e  ? "network-access work, Channeler"  (ch.1 Chapter 1 — Elias Alone)
+  B claim-13b4736847b5d72b  ? "network-access work"  (ch.1 Chapter 1 — Elias Alone)
+
+[Corvid Larsson] occupation
+  A claim-fade53591fab872e  ? "network-access work, Channeler"  (ch.1 Chapter 1 — Elias Alone)
+  B claim-9372fbd72c79ad53  ? "network-access specialist, Channeler"  (ch.1 Chapter 1 — Elias Alone)
+
+[Pixel] physical_feature_height
+  A claim-fde30993e9916108  ? "shorter than Kyle by eight centimeters"  (ch.2 Chapter 2 — Provenance)
+  B claim-073bd5442aa1a87f  ? "five-foot-four"  (ch.2 Chapter 2 — Provenance)
+
+[Reza Solano] past_location
+  A claim-fde362a340ba6231  ? "Rotterdam stairwell"  (ch.2 Chapter 2 — The Signature)
+  B claim-b41ab76cd0110544  ? "Rotterdam"  (ch.2 Chapter 2 — The Signature)
+
+[Mira] physical_feature
+  A claim-ff082cb46b9648df  ? "tall"  (ch.12 Chapter 12 — The Interview)
+  B claim-4c38ff420063d532  ? "length of a person used to being the last thing in a room that still moves"  (ch.12 Chapter 12 — The Interview)
+
+[Mira] physical_feature
+  A claim-ff082cb46b9648df  ? "tall"  (ch.12 Chapter 12 — The Interview)
+  B claim-afefab9e562fa63c  ? "long profile"  (ch.11 Chapter 11 — The Interview)
+
+[Sol Castellanos] body_location
+  A claim-ff3824829841c232  ? "side-passage off main corridor, behind recycling compactor"  (ch.9 Chapter 9 — The Same Cold)
+  B claim-a0df8debab6a9239  ? "refrigeration unit"  (ch.10 Chapter 10 — No Signal)
+

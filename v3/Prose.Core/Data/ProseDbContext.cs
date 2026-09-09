@@ -559,6 +559,10 @@ public class ProseDbContext : DbContext
     // divergence resolution. See TrinityReconciliationService / ReconcileTrinityCli.
     public DbSet<ReconciliationDecision> ReconciliationDecisions => Set<ReconciliationDecision>();
 
+    // Proposal-first canon/prose mutation workflow. Rows are inert review records until a
+    // separately approved apply operation exists and receives a human approval grant.
+    public DbSet<ChangeProposal> ChangeProposals => Set<ChangeProposal>();
+
     // Trinity Reconciliation — genuine-vs-false-positive contradiction cache. See
     // ContinuityCompatibilityService.
     public DbSet<ContinuityCompatibilityJudgment> ContinuityCompatibilityJudgments => Set<ContinuityCompatibilityJudgment>();
@@ -2947,6 +2951,21 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => x.BookSlug);
             e.HasIndex(x => new { x.EntityId, x.Predicate });
             e.HasIndex(x => x.Reverted);
+        });
+
+        // ── ChangeProposal (proposal-first write workflow) ──────────────────
+        b.Entity<ChangeProposal>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Target).HasMaxLength(500).IsRequired();
+            e.Property(x => x.OldValue).IsRequired();
+            e.Property(x => x.NewValue).IsRequired();
+            e.Property(x => x.Rationale).IsRequired();
+            e.Property(x => x.VerificationPlan).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(20).IsRequired();
+            e.Property(x => x.RequestId).HasMaxLength(100).IsRequired();
+            e.HasIndex(x => new { x.UniverseId, x.Status, x.CreatedAt });
+            e.HasIndex(x => x.RequestId).IsUnique();
         });
 
         // ── ContinuityCompatibilityJudgment (genuine-vs-false-positive contradiction cache) ──

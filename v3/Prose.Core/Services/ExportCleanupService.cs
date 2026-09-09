@@ -1,97 +1,74 @@
+using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
-using System.Text.RegularExpressions;
 
 namespace Prose.Core.Services;
 
-/// <summary>
-/// Wipes all manuscript formats (.docx, .epub, .pdf, .txt) from a node's export folder
-/// before any export writes happen — ensures only the current version survives regardless
-/// of which export path is taken.
-/// </summary>
+/// <summary>Archives the existing per-book export bundle before a new export writes files.</summary>
 public class ExportCleanupService
 {
-    static readonly string[] ManuscriptPatterns = ["*.docx", "*.epub", "*.pdf", "*.txt"];
-
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly SettingsService settings;
+    public ExportCleanupService(IDbContextFactory<ProseDbContext> dbFactory, SettingsService settings)
+    { this.dbFactory = dbFactory; this.settings = settings; }
 
-    public ExportCleanupService(
-        IDbContextFactory<ProseDbContext> dbFactory,
-        SettingsService settings)
-    {
-        this.dbFactory = dbFactory;
-        this.settings = settings;
-    }
-
-    /// <summary>
-    /// Resolves the node's export folder (honouring the ancestor-walk path nesting)
-    /// and deletes all prior-version manuscript files. Returns the resolved directory path.
-    /// </summary>
     public async Task<string> CleanAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-
-        var node = await db.Nodes.AsNoTracking()
-            .Where(s => s.Id == nodeId)
-            .Select(s => new { s.Title, s.ParentNodeId, s.UniverseId })
+        var node = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId)
             .FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
-
-        var universeSlug = await db.Universes.AsNoTracking()
-            .Where(u => u.Id == node.UniverseId)
-            .Select(u => u.Slug)
-            .FirstOrDefaultAsync(ct);
-
-        var ancestors = new List<string>();
-        var parentId = node.ParentNodeId;
-        for (var guard = 0; parentId is Guid pid && guard < 8; guard++)
-        {
-            var parent = await db.Nodes.AsNoTracking()
-                .Where(s => s.Id == pid)
-                .Select(s => new { s.Title, s.ParentNodeId })
-                .FirstOrDefaultAsync(ct);
-            if (parent is null) break;
-            ancestors.Insert(0, SanitizeTitle(parent.Title));
-            parentId = parent.ParentNodeId;
-        }
-
-        // Must resolve the SAME per-universe base dir the exporters use — otherwise
-        // cleanup wipes (or misses) the wrong universe's folder.
+        var universeSlug = await db.Universes.AsNoTracking().Where(u => u.Id == node.UniverseId)
+            .Select(u => u.Slug).FirstOrDefaultAsync(ct);
         var baseDir = settings.GetExportDirectory(universeSlug);
-        var safeTitle = SanitizeTitle(node.Title);
-        var pathParts = new List<string> { baseDir };
-        pathParts.AddRange(ancestors);
-        pathParts.Add(safeTitle);
-        var nodeDir = Path.Combine(pathParts.ToArray());
-
-        Clean(nodeDir);
+        var (nodeDir, _) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct);
+        Clean(nodeDir, node.Version);
         return nodeDir;
     }
 
-    /// <summary>
-    /// Creates the directory (if absent) and deletes all manuscript formats from it.
-    /// Safe to call on a dir that has already been cleaned.
-    /// </summary>
-    public void Clean(string nodeDir)
+    /// <summary>Copies existing export artifacts into Archives\v&lt;version&gt;, then removes live copies.</summary>
+    public void Clean(string nodeDir, int? fallbackVersion = null)
     {
         Directory.CreateDirectory(nodeDir);
-        foreach (var pattern in ManuscriptPatterns)
-        foreach (var file in Directory.EnumerateFiles(nodeDir, pattern))
+        foreach (var file in Directory.EnumerateFiles(nodeDir, "*", SearchOption.TopDirectoryOnly))
         {
-            if (Path.GetFileName(file).Equals("description.txt", StringComparison.OrdinalIgnoreCase)) continue;
-            try { File.Delete(file); }
+            var name = Path.GetFileName(file);
+            var version = ExtractVersion(name) ?? fallbackVersion ?? 0;
+            var archiveDir = Path.Combine(nodeDir, "Archives", $"v{version}");
+            Directory.CreateDirectory(archiveDir);
+            var destination = Path.Combine(archiveDir, name);
+            if (File.Exists(destination)) destination = Path.Combine(archiveDir, $"{Path.GetFileNameWithoutExtension(name)}__{DateTime.UtcNow:yyyyMMddHHmmssfff}{Path.GetExtension(name)}");
+            try
+            {
+                File.Copy(file, destination, overwrite: false);
+                if (!name.Equals("cover.jpg", StringComparison.OrdinalIgnoreCase)) File.Delete(file);
+            }
             catch (IOException) { }
             catch (UnauthorizedAccessException) { }
         }
     }
 
-    private static string SanitizeTitle(string title)
+    /// <summary>Copies the completed live export bundle into its permanent version archive.</summary>
+    public void ArchiveCurrent(string nodeDir, int version)
     {
-        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
-        invalid.Add('\''); invalid.Add('’');
-        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
-        kept = Regex.Replace(kept, @"\s+", " ").Trim();
-        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
+        Directory.CreateDirectory(nodeDir);
+        var archiveDir = Path.Combine(nodeDir, "Archives", $"v{version}");
+        Directory.CreateDirectory(archiveDir);
+        foreach (var file in Directory.EnumerateFiles(nodeDir, "*", SearchOption.TopDirectoryOnly))
+        {
+            var name = Path.GetFileName(file);
+            var destination = Path.Combine(archiveDir, name);
+            if (File.Exists(destination))
+                destination = Path.Combine(archiveDir, $"{Path.GetFileNameWithoutExtension(name)}__{DateTime.UtcNow:yyyyMMddHHmmssfff}{Path.GetExtension(name)}");
+            try { File.Copy(file, destination, overwrite: false); }
+            catch (IOException) { }
+            catch (UnauthorizedAccessException) { }
+        }
+    }
+
+    private static int? ExtractVersion(string fileName)
+    {
+        var match = Regex.Match(fileName, @"(?:^|\s)[Vv](\d+)(?:\.|\s|$)");
+        return match.Success && int.TryParse(match.Groups[1].Value, out var v) ? v : null;
     }
 }

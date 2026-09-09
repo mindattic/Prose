@@ -105,11 +105,11 @@ is each character/system's documentation in today**, before this book is written
 
 | Character / System | Entry State |
 |---|---|
-| Kat (Katie "Kat" Weiss) | One-paragraph interchange summary + `details` (voice line, what she carries, that she "clearly knows" what the Experiment was and never says). Movement/dodge/bicycle mechanics exist in code (`playerController.ts`) but are undocumented outside comments. |
-| The Observer | Interchange summary only ("proves existence by intervening"). The CCTV fixed-camera variant (`cameraZone.ts` `cctv` mode — servo-lag panning, fisheye) that mechanically *is* the Observer's presence is real, working code, entirely undocumented as a design system. |
-| SOAK / REN | Interchange summaries (graffiti duel, blueprint-bearing stencils). The actual duel escalation (`level/props/graffiti.ts`) is implemented; not documented as a system. |
-| The Pawnbroker | Interchange summary only. The bauble economy it anchors (`gameplay/inventory.ts` — pocket watches, pearls, 1998-nostalgia baubles, one unsellable keepsake) is a real, implemented item taxonomy with zero design documentation. |
-| M. / Ray | Interchange summaries (absent NPCs, environmental-storytelling only — notes, an unclaimed card). No mechanical system attached beyond being fixed narrative content inside Level 1. |
+| Kat (<entity repo="character" guid="01a03d2c-a7d5-783d-9409-0e778ab2d425">Katie</entity> "Kat" <entity repo="character" guid="01a03d2c-a7d5-783d-9409-0e778ab2d425">Weiss</entity>) | One-paragraph interchange summary + `details` (voice line, what she carries, that she "clearly knows" what the Experiment was and never says). Movement/dodge/bicycle mechanics exist in code (`playerController.ts`) but are undocumented outside comments. |
+| <entity repo="character" guid="01a03d2c-a88c-7403-b774-a5d7bf6d3771">The Observer</entity> | Interchange summary only ("proves existence by intervening"). The CCTV fixed-camera variant (`cameraZone.ts` `cctv` mode — servo-lag panning, fisheye) that mechanically *is* the Observer's presence is real, working code, entirely undocumented as a design system. |
+| <entity repo="character" guid="01a03d2c-a8a4-782b-9a71-9565b3e5d2e7">SOAK</entity> / <entity repo="character" guid="01a03d2c-a8ae-7050-8a7e-4951e90f6b2b">REN</entity> | Interchange summaries (graffiti duel, blueprint-bearing stencils). The actual duel escalation (`level/props/graffiti.ts`) is implemented; not documented as a system. |
+| <entity repo="character" guid="01a03d2c-a8b4-78f4-b6d0-b20393355816">The Pawnbroker</entity> | Interchange summary only. The bauble economy it anchors (`gameplay/inventory.ts` — pocket watches, pearls, 1998-nostalgia baubles, one unsellable keepsake) is a real, implemented item taxonomy with zero design documentation. |
+| M. / <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity> | Interchange summaries (absent NPCs, environmental-storytelling only — notes, an unclaimed card). No mechanical system attached beyond being fixed narrative content inside Level 1. |
 | Battle system | **No entity at all yet** — a real, substantial ATB system (`battle/battle.ts`, 603 lines, Parasite-Eve-inspired) exists in code with no canon representation. This book's Chapter 3 is its first documentation; §10 below flags whether it warrants its own `concept`-typed entity. |
 | Chimera Ecology / A-Life | Faction entity exists (`chimera-ecology`) with a one-line summary. The real simulation (`worldAI.ts`, 484 lines — packs, rival factions, corpse-eating, growth stages, nests, noise/alarm) is undocumented as a system beyond that summary. |
 
@@ -123,10 +123,10 @@ real implemented mechanics**, not left at interchange-summary depth:
 | Character / System | Exit State |
 |---|---|
 | Kat | Ch. 2 fully specifies movement, dodge-roll (i-frames/cooldown), bicycle mode (momentum/wide turns), and her position inside the fixed-camera system — grounded in `playerController.ts`/`playerRig.ts`, not re-invented. |
-| The Observer | Ch. 2 documents the CCTV camera-zone mode (hysteresis, servo-lag, fisheye) explicitly as the Observer's diegetic mechanism — the point where "mystery framing device" and "camera system" are the same design object. |
-| SOAK / REN | Ch. 9 (Cast & Narrative Delivery) documents the graffiti-duel as a live-environment storytelling system (escalates over the night), citing `graffiti.ts`. |
-| The Pawnbroker | Ch. 8 (Crafting, Economy & Blueprints) fully specifies the bauble taxonomy, the unsellable-keepsake exception (Kat's card), and how baubles convert to bullets/currency — grounded in `inventory.ts`. |
-| M. / Ray | Ch. 9 documents them as the model case for "no dialogue trees, only environmental/document narrative" — the design rule this game runs on, illustrated by a real example already built. |
+| <entity repo="character" guid="01a03d2c-a88c-7403-b774-a5d7bf6d3771">The Observer</entity> | Ch. 2 documents the CCTV camera-zone mode (hysteresis, servo-lag, fisheye) explicitly as the Observer's diegetic mechanism — the point where "mystery framing device" and "camera system" are the same design object. |
+| <entity repo="character" guid="01a03d2c-a8a4-782b-9a71-9565b3e5d2e7">SOAK</entity> / <entity repo="character" guid="01a03d2c-a8ae-7050-8a7e-4951e90f6b2b">REN</entity> | Ch. 9 (Cast & Narrative Delivery) documents the graffiti-duel as a live-environment storytelling system (escalates over the night), citing `graffiti.ts`. |
+| <entity repo="character" guid="01a03d2c-a8b4-78f4-b6d0-b20393355816">The Pawnbroker</entity> | Ch. 8 (Crafting, Economy & Blueprints) fully specifies the bauble taxonomy, the unsellable-keepsake exception (Kat's card), and how baubles convert to bullets/currency — grounded in `inventory.ts`. |
+| M. / <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity> | Ch. 9 documents them as the model case for "no dialogue trees, only environmental/document narrative" — the design rule this game runs on, illustrated by a real example already built. |
 | Battle system | Ch. 3 fully specifies the ATB phase machine (active/menu/aim/sweepH/sweepV/fire), part-targeting/weak points, Precision Aim, and the Limit gauge — this is the single largest documentation gap this book closes. |
 | Chimera Ecology / A-Life | Ch. 4 fully specifies the simulation (wandering, packs, rival-faction combat, corpse-eating/growth, nests, the `ring()` noise/alarm mechanic) against all 20 implemented creature classes, cross-referenced to their existing entity records. |
 
@@ -137,8 +137,8 @@ real implemented mechanics**, not left at interchange-summary depth:
 | Plant | Payoff |
 |---|---|
 | Shared mechanics vocabulary (battle terms, creature telegraph language, save/ApertureOS conventions, the built-vs-planned district map) | **EVE — Night One (Game Script)** — cannot be written consistently without this book's Ch. 2–9 existing first. |
-| The built-vs-aspirational district map (Ch. 6, Ch. 11) | Any future level-design work, and eventually **EVE — Prequel Novella** if/when it draws on world geography beyond the North End slice. |
-| The "no-exposition, environmental-only narrative" design law, illustrated with real examples (M./Ray, ApertureOS trash-folder lore) | Night One's script — a screenplay-format temptation to write exposition dialogue is exactly what this book's Ch. 9 exists to prevent. |
+| The built-vs-aspirational district map (Ch. 6, Ch. 11) | Any future level-design work, and eventually **EVE — Prequel Novella** if/when it draws on world geography beyond <entity repo="place" guid="01a03d2c-a998-7e3d-a338-9745098d04cd">the North End</entity> slice. |
+| The "no-exposition, environmental-only narrative" design law, illustrated with real examples (M./<entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>, ApertureOS trash-folder lore) | Night One's script — a screenplay-format temptation to write exposition dialogue is exactly what this book's Ch. 9 exists to prevent. |
 
 ---
 
@@ -185,7 +185,7 @@ needs them, and does no later chapter depend on an undefined term from an earlie
    including the Observer's CCTV variant; the one-real-time-night world clock
 3. Battle System — the ATB phase machine, part-targeting, Precision Aim, Limit gauge
    (Parasite-Eve lineage stated explicitly as an intertextual anchor)
-4. The Chimera Ecology & Bestiary — the A-Life simulation plus all 20 creature classes,
+4. <entity repo="faction" guid="01a03d2c-a8ca-7e24-9619-7f68d529c289">The Chimera Ecology</entity> & Bestiary — the A-Life simulation plus all 20 creature classes,
    cross-referenced to their entity records
 5. Erasure Team & Stealth — the human antagonist faction, view-cone detection, the
    off-guard execution mechanic
@@ -197,13 +197,13 @@ needs them, and does no later chapter depend on an undefined term from an earlie
 8. Crafting, Economy & Blueprints — component/crafted items, the bauble pawnshop economy,
    the drip-feed blueprint-discovery design law in practice
 9. Cast & Narrative Delivery — the seven characters, and the "environmental/document-only,
-   no dialogue trees" rule illustrated against real examples (M./Ray, ApertureOS files)
+   no dialogue trees" rule illustrated against real examples (M./<entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>, ApertureOS files)
 10. Technical Architecture & Art Direction — Vite/TypeScript/Three.js, the PS1 shader
     pipeline (vertex snap, affine texture mapping), the procedural-only asset philosophy
     (one CC0 kit, everything else generated or synthesized)
 11. Roadmap & Future Episodes — the built-vs-aspirational gap made explicit as a punch list
     (14 unbuilt districts, faction-war depth beyond Erasure, skill-tree depth, vehicle/boat
-    content, sequel hooks like the Out Island)
+    content, sequel hooks like <entity repo="place" guid="01a03d2c-aa23-70af-bbd5-a77c26d1f595">the Out Island</entity>)
 
 **Event-type palette:** N/A (nonfiction). Each chapter's internal shape instead: stated
 purpose → mechanic description grounded in a named source file → design-law connection (which
@@ -245,7 +245,7 @@ link a scene to "the battle system" the way it might link to a character or plac
 
 | Entity | Type | In DB? |
 |---|---|---|
-| All 7 characters (Kat, Observer, SOAK, REN, Pawnbroker, M., Ray) | character | [x] |
+| All 7 characters (Kat, Observer, <entity repo="character" guid="01a03d2c-a8a4-782b-9a71-9565b3e5d2e7">SOAK</entity>, <entity repo="character" guid="01a03d2c-a8ae-7050-8a7e-4951e90f6b2b">REN</entity>, Pawnbroker, M., <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>) | character | [x] |
 | Both factions (Erasure Team, Chimera Ecology) | faction | [x] |
 | All 20 creatures | creature | [x] |
 | All 30 locations | place | [x] |

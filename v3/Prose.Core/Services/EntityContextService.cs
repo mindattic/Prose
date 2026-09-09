@@ -73,7 +73,13 @@ public sealed class EntityContextService(
         // 3. Expand edges: for each depth-0 entity, find its semantic neighbors
         await ExpandEdgesAsync(nodeId, maxDepth: 2, ct);
 
-        return BuildContextBlock(nodeId);
+        // Join the active entity roster to the relational continuity ledger.  Entity descriptions
+        // are intentionally broad; the ledger carries the small, scene-critical facts (which
+        // hand draws a weapon, what a tool is called, how a vehicle is powered).  Select only
+        // facts whose predicate/object intersects the current beat so DCM does not flood the
+        // writer with unrelated biography.
+        var relationalFacts = await LoadRelevantFactsAsync(nodeId, beatGoal, sceneSoFar, ct);
+        return BuildContextBlock(nodeId, relationalFacts);
     }
 
     // ── Post-generation: reconcile prose against entity canon ─────────────────
@@ -119,7 +125,7 @@ public sealed class EntityContextService(
     // ── Public utility: inspect the active stack ──────────────────────────────
 
     /// <summary>Returns the formatted entity context block for a node without advancing the beat counter.</summary>
-    public string GetContextBlock(Guid nodeId) => BuildContextBlock(nodeId);
+    public string GetContextBlock(Guid nodeId) => BuildContextBlock(nodeId, "");
 
     /// <summary>Returns all active stack entries for a node (for monitoring/debug).</summary>
     public IReadOnlyList<EntityContextStack.StackEntry> GetActiveEntities(Guid nodeId) =>
@@ -218,7 +224,53 @@ public sealed class EntityContextService(
     // node (observed ~160/beat) and floods the prompt with noise.
     public const int MaxInjectedEntities = 24;
 
-    private string BuildContextBlock(Guid nodeId)
+    private async Task<string> LoadRelevantFactsAsync(Guid nodeId, string beatGoal, string sceneSoFar, CancellationToken ct)
+    {
+        var active = stack.GetActive(nodeId).Take(MaxInjectedEntities).ToList();
+        if (active.Count == 0) return "";
+        var entityIds = active.Select(e => e.EntityId.ToString()).ToHashSet(StringComparer.OrdinalIgnoreCase);
+        var cueText = $"{beatGoal}\n{sceneSoFar}".ToLowerInvariant();
+        var cueWords = cueText.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries)
+            .Select(w => new string(w.Where(char.IsLetterOrDigit).ToArray()))
+            .Where(w => w.Length >= 3).ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var claims = await db.ContinuityClaims.AsNoTracking()
+            .Where(c => entityIds.Contains(c.EntityId) && (c.Status == "CANONICAL" || c.Status == "CONFIRMED"))
+            .Select(c => new { c.ClaimUid, c.EntityId, c.EntityName, c.Predicate, c.Object, c.Provenance, c.StoryDate })
+            .ToListAsync(ct);
+
+        var durableCue = new[] { "hand", "handed", "weapon", "sword", "pistol", "sheath", "solder", "tool", "armor", "augment", "neuretic", "vehicle", "bike", "motorcycle", "interface", "hr" };
+        var ranked = claims.Select(c =>
+        {
+            var hay = $"{c.Predicate} {c.Object}".ToLowerInvariant();
+            var score = cueWords.Count(w => hay.Contains(w, StringComparison.OrdinalIgnoreCase));
+            if (durableCue.Any(k => hay.Contains(k, StringComparison.OrdinalIgnoreCase) && cueText.Contains(k, StringComparison.OrdinalIgnoreCase))) score += 4;
+            if (c.Provenance.Equals(ClaimProvenance.Authored, StringComparison.OrdinalIgnoreCase)) score += 2;
+            return (Claim: c, Score: score);
+        }).Where(x => x.Score > 0)
+          // A predicate may have several historical extraction rows.  Keep one deterministic
+          // winner per entity/predicate so stale or duplicate rows cannot compete in the prompt.
+          .GroupBy(x => new { x.Claim.EntityId, Predicate = x.Claim.Predicate.Trim().ToLowerInvariant() })
+          .Select(g => g.OrderByDescending(x => x.Score)
+              .ThenByDescending(x => x.Claim.Provenance.Equals(ClaimProvenance.Authored, StringComparison.OrdinalIgnoreCase))
+              .ThenByDescending(x => x.Claim.StoryDate ?? DateTime.MinValue)
+              .ThenBy(x => x.Claim.ClaimUid)
+              .First())
+          .OrderByDescending(x => x.Score)
+          .ThenBy(x => x.Claim.EntityName)
+          .Take(48)
+          .ToList();
+        if (ranked.Count == 0) return "";
+
+        var sb = new StringBuilder();
+        sb.AppendLine("RELATIONAL ENTITY FACTS — joined by active EntityId and selected for this beat:");
+        foreach (var x in ranked)
+            sb.AppendLine($"  {x.Claim.EntityName}.{x.Claim.Predicate}: {x.Claim.Object}");
+        return sb.ToString().TrimEnd();
+    }
+
+    private string BuildContextBlock(Guid nodeId, string relationalFacts)
     {
         var entries = stack.GetActive(nodeId).Take(MaxInjectedEntities).ToList();
         if (entries.Count == 0) return "";
@@ -256,6 +308,12 @@ public sealed class EntityContextService(
             sb.AppendLine();
         }
 
+        if (!string.IsNullOrWhiteSpace(relationalFacts))
+        {
+            sb.AppendLine();
+            sb.AppendLine();
+            sb.Append(relationalFacts);
+        }
         return sb.ToString().TrimEnd();
     }
 

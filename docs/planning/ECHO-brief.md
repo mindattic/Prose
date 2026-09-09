@@ -73,7 +73,7 @@ consciously entered.
 
 | Character | Entry State |
 |---|---|
-| Odessa Frey | Introduced fresh: early 30s, insomniac, has had the same recurring basement dream for weeks, dismisses it as stress until its details start matching a real house for sale two streets over. |
+| <entity repo="character" guid="01a0410d-13ef-7fdb-80da-d365d05abedd">Odessa Frey</entity> | Introduced fresh: early 30s, insomniac, has had the same recurring basement dream for weeks, dismisses it as stress until its details start matching a real house for sale two streets over. |
 
 Minimal cast by design — this story runs on one point-of-view consciousness; a second named
 character would dilute the unreliable-narration effect the Author Persona's bio calls for.
@@ -84,7 +84,7 @@ character would dilute the unreliable-narration effect the Author Persona's bio 
 
 | Character | Exit State | Ledger Update Needed? |
 |---|---|---|
-| Odessa Frey | Goes to view the house in person; is let inside by a realtor who addresses her by a name that is not hers — and is not corrected, because some part of her recognizes it. External/situational ending: a door closes behind her; no return, no epilogue. | No — ECHO has no ledger; retired with the story. |
+| <entity repo="character" guid="01a0410d-13ef-7fdb-80da-d365d05abedd">Odessa Frey</entity> | Goes to view the house in person; is let inside by a realtor who addresses her by a name that is not hers — and is not corrected, because some part of her recognizes it. External/situational ending: a door closes behind her; no return, no epilogue. | No — ECHO has no ledger; retired with the story. |
 
 ---
 
@@ -155,8 +155,8 @@ folded into narration.
 
 | Entity | Type | In DB? | DB seed command / MCP tool |
 |---|---|---|---|
-| Odessa Frey | character | [ ] | `create_character` (originNodeSlug=echo) |
-| The house two streets over | place | [ ] | `create_place` (originNodeSlug=echo) |
+| <entity repo="character" guid="01a0410d-13ef-7fdb-80da-d365d05abedd">Odessa Frey</entity> | character | [ ] | `create_character` (originNodeSlug=echo) |
+| <entity repo="place" guid="01a0410d-a881-7f2a-a50a-4046a62b1fb8">The house two streets over</entity> | place | [ ] | `create_place` (originNodeSlug=echo) |
 
 Run entity-mention scan after the draft to confirm coverage.
 

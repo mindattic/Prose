@@ -82,7 +82,9 @@ public class DocxExportService
             .FirstOrDefaultAsync(ct);
         var baseDir = settings.GetExportDirectory(universeSlug);
         var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct);
-        cleanup.Clean(nodeDir);
+        // Archive the previous live bundle before writing the next version. The node's current
+        // version is the fallback for metadata files without a V<N> filename.
+        cleanup.Clean(nodeDir, node.Version);
         var exportPath = Path.Combine(nodeDir, $"{fileBaseName} V{nextVersion}.docx");
 
         using (var doc = WordprocessingDocument.Create(exportPath, WordprocessingDocumentType.Document))

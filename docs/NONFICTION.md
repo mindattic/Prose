@@ -31,9 +31,9 @@ Prose's citation-grounded **nonfiction** universe —
 home for ANY exhaustively researched, popular narrative nonfiction book where every factual claim
 traces to a real, verifiable source, "something you would use as an APA citation." It is not
 scoped to religious or historical subject matter specifically — that has simply been every book
-produced here so far. **Gospel: History vs. Heritage** (Matthew/Mark/Luke/John) was the first
-production line; **Sons of God, Daughters of Men: A Cultural History of the Nephilim** (NEPH) is
-the second; further Old Testament and cross-cutting topics (the Exodus, David and Solomon's
+produced here so far. **Gospel: History vs. Heritage** (<entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>/Mark/Luke/John) was the first
+production line; **Sons of God, Daughters of Men: A Cultural History of the <entity repo="vocabulary" guid="c9514d5a-667d-40db-bfdc-bc786a6252f7">Nephilim</entity>** (NEPH) is
+the second; further Old Testament and cross-cutting topics (the Exodus, David and <entity repo="character" guid="019fa1c6-ffdf-757d-8978-9e104468af3c">Solomon</entity>'s
 kingdom, the Dead Sea Scrolls, the Council of Nicaea) are queued — but a future NONFICTION book could
 just as easily be about science, true crime, biography, or any other nonfiction subject. The one
 requirement is the discipline below: every claim cited, every gap in the record stated honestly.
@@ -67,8 +67,8 @@ source is not evocative prose, it's an error, full stop.
   prose, not just the research doc.
 - When the grounding research doesn't know something (the Gap Table's "Open Questions"), the
   prose should render that as genuine, interesting uncertainty — not paper over it with an
-  invented specific to make the scene feel more complete. Uncertainty, written well, is itself
-  a source of narrative tension ("no one knows what happened to Pilate after Rome recalled him
+  invented specific to make the scene feel more complete. Uncertainty, written <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity>, is itself
+  a source of narrative tension ("no one knows what happened to <entity repo="character" guid="019f9ff0-7723-746c-b941-8a1a9308ea1e">Pilate</entity> after Rome recalled him
   — and two different churches invented two opposite endings for him, centuries apart, for two
   entirely different reasons") — use it, don't hide it.
 - A citation-grounding check (mirroring the existing quote-grounding guard, `prose --verify-quote`)
@@ -90,32 +90,32 @@ unless the brackets differ.
 
 - **Numbering is one flat sequence per book, restarting at each Gospel** — plain `(1)`, `(2)`,
   `(3)`..., assigned once within that book and never renumbered or reused, running straight
-  through that book's own chapters in canonical order. Matthew, Mark, Luke, and John are each
+  through that book's own chapters in canonical order. <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>, Mark, Luke, and John are each
   their own `BookNode` (siblings under the NONFICTION series root), published as separate KDP titles
-  ("Gospel: History vs. Heritage — Matthew" / "— Mark" / "— Luke" / "— John"), so each restarts
+  ("Gospel: History vs. Heritage — <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>" / "— Mark" / "— Luke" / "— John"), so each restarts
   its own numbering at `[1]` rather than continuing a series-wide count — a reader of the Mark
-  volume alone has no use for a note sequence that starts in the thousands because Matthew came
+  volume alone has no use for a note sequence that starts in the thousands because <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity> came
   first. (Superseded 2026-07-26, twice, before the 4-separate-books decision: a first pass tried
   book-prefixed codes like `MTW-16`/`MRK-1`; dropped because the prefix added a lookup layer
   without solving anything a plain running number doesn't already solve on its own. Superseded
   again 2026-07-28: the running-number-across-the-whole-series design was reconsidered once each
   Gospel shipped as its own standalone book rather than one combined volume.)
-- **One number per claim instance, not one per source.** If the same source (say, Ehrman, 2006)
+- **<entity repo="character" guid="a4390d4b-ab8b-40c5-b116-1920a363e13c">One</entity> number per claim instance, not one per source.** If the same source (say, Ehrman, 2006)
   supports five different claims across the book, each gets its own number with the specific
   page/detail relevant to that claim — not one shared number reused five times. Standard
   "Notes" convention for annotated nonfiction, not a Vancouver-style numbered bibliography,
   because each claim's specific locator (page, verse, inscription line) usually differs even
   when the source doesn't.
-- **This applies to every claim type** — modern scholarship, ancient primary sources (Josephus,
-  Tacitus, Philo), and scripture references alike all get a number and a Notes-chapter entry.
+- **This applies to every claim type** — modern scholarship, ancient primary sources (<entity repo="character" guid="019fa00a-0259-727e-a257-aeed556bc859">Josephus</entity>,
+  <entity repo="character" guid="51e737fc-5598-4c74-b1cb-2bab6a946993">Tacitus</entity>, <entity repo="character" guid="019fa22f-5509-72ed-8fa0-6d3ee8693c60">Philo</entity>), and scripture references alike all get a number and a Notes-chapter entry.
   This supersedes the in-line book:chapter:verse convention used in the *grounding research
   docs* under `docs/gospel/` (those remain APA-style research documents, unchanged) — the
   numbered-note convention applies specifically to finished, reader-facing NONFICTION prose (beats).
 - **Where notes actually live:** a single **Notes chapter** per book — a `ChapterNode` sibling
-  to that book's own numbered chapters (e.g. Matthew's `Chapter 1`...`Chapter 28`), positioned
+  to that book's own numbered chapters (e.g. <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>'s `Chapter 1`...`Chapter 28`), positioned
   *last* within that book — holds every note from that Gospel alone as one growing, addressable
   pool, one beat per note. Not a per-chapter Notes beat, and not a single Notes chapter shared
-  across Matthew/Mark/Luke/John: each book gets its own destination, appended to as that book
+  across <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>/Mark/Luke/John: each book gets its own destination, appended to as that book
   grows, so a later beat within the same book can cite a number from that book's own running
   sequence — never a number belonging to a different Gospel's book.
 - A Notes-chapter entry contains the full citation (APA-formatted for modern sources; standard
@@ -134,30 +134,30 @@ unless the brackets differ.
 
 **Prose names people, places, and terms without stopping to explain them — that's what makes it
 prose. The Glossary is where the explanation lives**, one layer down, so a reader who doesn't
-know what a Moabite is, or where Jericho sits, can look it up without the sentence they were
+know what a Moabite is, or where <entity repo="place" guid="019f9ff0-a248-79be-b561-62deb720c705">Jericho</entity> sits, can look it up without the sentence they were
 reading having to carry that weight itself.
 
 - **The Glossary tier is the existing Entity/Character/Place records, not a new structure.**
   Every named person, place, or people-group mentioned in NONFICTION prose must have an entity record
   (per `docs/gospel/entity-catalog.md`'s seeding pattern) whose `Description` is a genuine,
   citation-backed glossary entry — not the terse one-line catalog summary these records start
-  with. "Ruth was a Moabite" in prose should be immediately resolvable to a Ruth glossary entry
+  with. "<entity repo="character" guid="019fa1e9-69cc-78b6-8fd1-3d2716246771">Ruth</entity> was a Moabite" in prose should be immediately resolvable to a <entity repo="character" guid="019fa1e9-69cc-78b6-8fd1-3d2716246771">Ruth</entity> glossary entry
   that explains what a Moabite was, when, and where, which in turn cites the Notes chapter for
   its own evidentiary claims.
 - **Each book has its own Glossary chapter; the underlying entity record is shared.** Jesus,
-  Pilate, Herod, and Jerusalem recur across Matthew/Mark/Luke/John — one entity record per
+  <entity repo="character" guid="019f9ff0-7723-746c-b941-8a1a9308ea1e">Pilate</entity>, Herod, and <entity repo="place" guid="019f9ff0-a173-74ec-9e1d-29e8c0f31e26">Jerusalem</entity> recur across <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>/Mark/Luke/John — one entity record per
   name, reused everywhere — but each Gospel's own Glossary chapter carries its own beat/entry
   for any name that book actually uses, citing that book's own Notes sequence (§1a). A name that
-  only recurs (no new evidentiary claim in this book beyond what Matthew's Glossary already
+  only recurs (no new evidentiary claim in this book beyond what <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>'s Glossary already
   covered) still gets its own entry in this book's Glossary — written fresh against this book's
   own Notes numbers — not a cross-reference back to another book's chapter, since a reader of
-  the Mark volume alone won't have Matthew's Notes chapter in hand.
+  the Mark volume alone won't have <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>'s Notes chapter in hand.
 - **Three tiers, three jobs, no skipping:** Prose asserts a claim and cites a note code for it
   directly when the claim is central to that beat's own argument. Terms/figures/places used only
   in passing (a name mentioned without being the beat's subject) don't need an inline note code
   in the prose itself — they need a Glossary entry that a reader can reach, and it's the
-  Glossary entry that carries the note codes. Don't make every mention of "Jericho" carry its own
-  inline citation; make sure "Jericho" resolves to a Glossary entry that does.
+  Glossary entry that carries the note codes. <entity repo="character" guid="019ff720-6444-7060-9883-51ada46a6bff">Don</entity>'t make every mention of "<entity repo="place" guid="019f9ff0-a248-79be-b561-62deb720c705">Jericho</entity>" carry its own
+  inline citation; make sure "<entity repo="place" guid="019f9ff0-a248-79be-b561-62deb720c705">Jericho</entity>" resolves to a Glossary entry that does.
 - **Every mention gets tracked**, not just first appearance — this reuses the existing
   entity-presence system (`BeatEntityPresence`, whole-word + alias scan) already built into the
   engine for fiction; it applies unchanged to NONFICTION. A term or figure that turns out to have no
@@ -184,7 +184,7 @@ real argument — never a strawman stand-in for "faith" opposite a strawman stan
   built around watching a single claim (an apostle's grave, a governor's fate, a border) refract
   differently depending on who's answering, without resolving which answer is "right."
 
-## 3. Tone (NONFICTION addition to CRAFT §0–2)
+## 3. <entity repo="character" guid="019fc93e-a5e8-7725-8446-9992acb97b46">Tone</entity> (NONFICTION addition to CRAFT §0–2)
 
 **Curious, not adversarial.** The reader should feel like they're in the room with someone who
 finds this stuff genuinely fascinating and is leveling with them — not someone building a case
@@ -203,7 +203,7 @@ trusted; that trust is the whole product.
 
 ## 3a. Publishing Imprint (NONFICTION-specific exception to the global "author = MindAttic" rule)
 
-**Every book-level node under NONFICTION (Matthew, Mark, Luke, John) has `Node.Author` set to
+**Every book-level node under NONFICTION (<entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>, Mark, Luke, John) has `Node.Author` set to
 `"Pulpit Press"`**, not `"MindAttic"`. This is a deliberate, explicit exception to this project's
 global export-author rule, scoped to NONFICTION only — set once per book node (`UPDATE Nodes SET Author
 = 'Pulpit Press' WHERE Slug = '<book-slug>'`) so `prose --export-node` picks it up automatically
@@ -214,11 +214,11 @@ this via the book node's own `Author` field; a brand-new book node needs the sam
 ## 3b. Levity — the dry-wit register {#SS-NONFICTION-3b}
 
 **This material would be a dry report by default, and a dry report is a failed book.** The
-antidote is not jokes; it's *dryness deployed on purpose* — the register of a very well-read
+antidote is not jokes; it's *dryness deployed on purpose* — the register of a very <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity>-read
 friend who finds a fact funny because it is genuinely funny, and trusts you to catch it without
 being nudged. Mark chapter 4's "Thirtyfold was already exceptional; sixty- and a hundredfold
 were the stuff of stories, not spreadsheets" is the standard: the wit is carried entirely by an
-accurate fact and a well-chosen noun.
+accurate fact and a <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity>-chosen noun.
 
 **The four moves that work:**
 
@@ -303,18 +303,18 @@ they were" is condescension, and one that only says "people never change" is wal
   narrative, per §0. (The tables belong in the grounding research docs under `docs/gospel/`,
   not in the reader-facing beat.)
 
-## 5. Production Workflow (how Matthew was actually built — reuse this for Mark/Luke/John)
+## 5. Production Workflow (how <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity> was actually built — reuse this for Mark/Luke/John)
 
-This section documents the concrete mechanics that worked writing Matthew end to end, so the
+This section documents the concrete mechanics that worked writing <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity> end to end, so the
 next book doesn't have to rediscover them. Read this before starting Mark.
 
 ### 5a. Node structure and SortKey spacing
 
 **Series root, then one BookNode per Gospel.** `gospel-history-vs-heritage-<id>` (`ParentNodeId`
 NULL) is the series-organizing node only — it is never itself exported and carries no
-Title/Subtitle/Author metadata of its own. Each Gospel (Matthew, Mark, Luke, John) is its own
+Title/Subtitle/Author metadata of its own. Each Gospel (<entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>, Mark, Luke, John) is its own
 `BookNode`, a *child* of that series root, with `Title = "Gospel: History vs. Heritage"` and its
-own `Subtitle` (`"Matthew"` / `"Mark"` / `"Luke"` / `"John"`) and `Author = "Pulpit Press"` — this
+own `Subtitle` (`"<entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>"` / `"Mark"` / `"Luke"` / `"John"`) and `Author = "Pulpit Press"` — this
 is the node `prose --export-node` actually targets, one per published KDP title.
 
 A NONFICTION book is one `BookNode` (created via `prose --create-book --kind book --parent <series-slug>`)
@@ -322,11 +322,11 @@ with `ChapterNode` children, one per source chapter (`--kind chapter --parent <b
 **plus two trailing structural chapters**: a **Notes** chapter and a **Glossary** chapter, both
 siblings of the numbered chapters *within that same book*, both positioned with a `SortKey`
 *higher than every chapter's*. Notes and Glossary belong to their own book only (§1a, §1b) — Mark's
-Notes chapter is a sibling of Mark's own chapters, never a sibling of Matthew's. This is the one
+Notes chapter is a sibling of Mark's own chapters, never a sibling of <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>'s. This is the one
 mistake most likely to recur: `prose --create-book` assigns default SortKeys that can tie with an
 already-created chapter (e.g., Notes created at the same SortKey as Chapter 2), which makes the
 exported order interleave Notes/Glossary into the middle of the book instead of appending them
-at the end. **Always explicitly set SortKey after creating Notes/Glossary**, well above the
+at the end. **Always explicitly set SortKey after creating Notes/Glossary**, <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity> above the
 highest chapter (chapters run 100, 200, 300... one per chapter number; put Notes at chapter-count
 +2 rounded up, e.g. `3000` for a 28-chapter book, Glossary at `3100`):
 
@@ -374,7 +374,7 @@ order before moving to the next chapter — do not assume the insert calls lande
 
 ### 5c. Per-chapter depth standard (the failure mode this section exists to prevent)
 
-The single biggest quality failure in Matthew's first full pass was writing one short,
+The single biggest quality failure in <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>'s first full pass was writing one short,
 single-paragraph summary beat per chapter once early momentum was established (chapters 1-3 got
 the full method; chapters 4-25 initially got a bare "here's what happens, nothing here is
 checkable" paragraph each). **A finished chapter needs one beat per pericope with a genuine
@@ -384,7 +384,7 @@ at the method once and then asserts "nothing here is checkable" for the rest of 
 content. Concretely: before writing a chapter, list every named person, place, artifact,
 custom, or dated event in it; for each one, either (a) it's genuinely pure ethical/parabolic
 teaching with nothing to check — say so honestly, briefly — or (b) it names something
-real-world-checkable (a place with archaeology, a custom with a rabbinic/Josephus parallel, a
+real-world-checkable (a place with archaeology, a custom with a rabbinic/<entity repo="character" guid="019fa00a-0259-727e-a257-aeed556bc859">Josephus</entity> parallel, a
 coin, a citation the source text itself gets wrong) — in which case it earns its own paragraph
 and, where the fact is non-obvious, its own Note citation. A chapter with zero new Note citations
 across dozens of verses is almost always under-researched, not genuinely free of checkable
@@ -395,11 +395,11 @@ appropriately unweighed.
 
 ### 5d. Research-then-write, every claim WebSearch-verified before citing
 
-Do not write a Note or a prose claim from memory alone, even for well-known facts — verify via
+Do not write a Note or a prose claim from memory alone, even for <entity repo="character" guid="019f9ff0-7938-72f1-b82e-e7009f2184d5">well</entity>-known facts — verify via
 WebSearch first (site, date range, specific figures) and only then draft the Note and the prose
-paragraph together. This caught real errors during Matthew (e.g., confirming the Field of Blood
-citation is misattributed to Jeremiah rather than assuming it) and surfaced genuinely richer
-material than memory alone would have (e.g., the Tyrian shekel's pagan imagery, Josephus's mundane
+paragraph together. This caught real errors during <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity> (e.g., confirming the Field of Blood
+citation is misattributed to <entity repo="character" guid="019fa1c7-0000-7fe8-8031-5a76f39822c2">Jeremiah</entity> rather than assuming it) and surfaced genuinely richer
+material than memory alone would have (e.g., the Tyrian shekel's pagan imagery, <entity repo="character" guid="019fa00a-0259-727e-a257-aeed556bc859">Josephus</entity>'s mundane
 explanation for "not one stone upon another"). Two searches per new claim (one for the core fact,
 one for a specific number/date/name if the first result is vague) is the typical cost.
 
@@ -419,7 +419,7 @@ that tag is what lets a future beat correctly characterize whose reading a citat
 **Every chapter title is evocative, not descriptive** (series-wide standard, set 2026-07-28 — all
 89 chapters across the four Gospels were retitled to it in one pass). A NONFICTION table of contents is
 the first thing a browsing reader sees, and a contents page reading "The Temptation, the First
-Disciples, and the Capernaum Ministry" advertises a reference work, which is the one thing §0 says
+Disciples, and the <entity repo="place" guid="019f9ff0-a1be-750e-b6c4-9c098a4d1f12">Capernaum</entity> Ministry" advertises a reference work, which is the one thing §0 says
 this is not. Mark's chapters 4–16 — written later than the rest and to a better instinct — set the
 pattern that became the rule: `Chapter 4 — Seeds, Lamps, and a Sea That Would Not Behave`,
 `Chapter 16 — The Ending That Isn't`.
@@ -489,7 +489,7 @@ produce a stray quote character.
 **Fix, verified working:** prepend a UTF-8 BOM (`EF BB BF`) to the `.ps1` file before running it —
 this forces PowerShell 5.1 to correctly recognize and decode the file as UTF-8. The `Write` tool
 does not add one, so do it as a separate step after every `.ps1` write that contains any
-non-ASCII character (em dashes, curly quotes, accented names like "Győző Vörös"):
+non-ASCII character (em dashes, curly quotes, accented names like "<entity repo="character" guid="559b6ef5-96c5-4e5f-9820-831e2abc3a7b">Győző Vörös</entity>"):
 
 ```bash
 printf '\xef\xbb\xbf' | cat - script.ps1 > script.ps1.bom && mv script.ps1.bom script.ps1
@@ -503,7 +503,7 @@ and Hungarian/German-style diacritics in a live test during the Mark chapter 4-7
 
 ### 5g1. Hard line-wrap corruption when authoring beat text directly (not via subagent)
 
-When Claude Code authors a Notes/Glossary entry's text directly in a `Write` tool call (as
+When <entity repo="character" guid="67982789-c56c-4b3a-959b-bd55a88f9fe0">Claude</entity> Code authors a Notes/Glossary entry's text directly in a `Write` tool call (as
 opposed to a subagent returning its final message text), the content sometimes comes out with a
 literal line break (`\n`) every ~90-100 characters mid-paragraph — an artifact of how the content
 gets composed, not something the model intends. Piped through `--beat insert`/`--beat update
@@ -518,7 +518,7 @@ the main thread into a `Write` call.
 few matches indicates hard-wrap corruption, not intentional paragraph breaks. Run this across
 every beat under the book node, not just the entries just written — the very first "depth pass"
 session had this same bug and it silently affected all 51 original Notes plus the original 3
-Glossary entries (Jericho/Moab/Ruth) until caught here.
+Glossary entries (<entity repo="place" guid="019f9ff0-a248-79be-b561-62deb720c705">Jericho</entity>/<entity repo="place" guid="019fa026-de54-716f-aa82-ad1daf075ca4">Moab</entity>/<entity repo="character" guid="019fa1e9-69cc-78b6-8fd1-3d2716246771">Ruth</entity>) until caught here.
 
 **Fix:** collapse each offending lone `\n` into a single space — EXCEPT when the character
 immediately before it is a hyphen, in which case concatenate directly with no space (word-wrap

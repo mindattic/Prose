@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**276 tools** across **48 tool families.**
+**279 tools** across **48 tool families.**
 
 ## Families
 
@@ -36,7 +36,7 @@
 | [Data Integrity](#data-integrity) | 4 |
 | [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
-| [Entity Context](#entity-context) | 4 |
+| [Entity Context](#entity-context) | 7 |
 | [Entity Tag](#entity-tag) | 3 |
 | [Findings](#findings) | 6 |
 | [Gear Entity Crud](#gear-entity-crud) | 7 |
@@ -914,11 +914,29 @@ List every weapon in canon. Returns name + category + manufacturer. Use this to 
 
 <sub>`EntityContextTools`</sub>
 
+### `apply_entity_rename`
+
+Apply a reviewed deterministic entity rename. Requires confirmed=true and an explicit active universe. Replaces exact full-name references in the selected book's outline and beats, relabels linked Story Ledger claims, and registers the old name as deprecated.
+
+- `entityIdOrSlug` (string, required) — Canonical entity GUID7 or slug.
+- `nodeIdOrSlug` (string, required) — Book GUID, slug, or NodeCode that scopes outline and beats.
+- `newName` (string, required) — New canonical full name.
+- `confirmed` (bool, optional) — Must be true after reviewing preview_entity_rename.
+- `note` (string, optional) — Optional audit note.
+
 ### `clear_entity_context`
 
 Clear the entity context stack for a node. Use when starting a new writing session for a node to reset the LRU working memory.
 
 - `slug` (string, required) — Node slug
+
+### `find_entities`
+
+Find canonical entities by a case-insensitive partial name or character alias. Returns name, GUID7 id, slug, entity type, and alias match when applicable.
+
+- `query` (string, required) — Partial canonical name or character alias.
+- `entityType` (string, optional) — Optional entity type, for example character or place.
+- `limit` (int, optional) — Maximum results, 1-200; default 40.
 
 ### `get_entity_beat_mentions`
 
@@ -932,6 +950,14 @@ Find every beat in the narrative where a specific entity is mentioned. Returns a
 Inspect the entity working memory currently active for a node. Shows depth-0 (directly named), depth-1 (semantic neighbors), and depth-2 (neighbors of neighbors) entities with their canon descriptions. Call after generating beats to see what was in scope.
 
 - `slug` (string, required) — Node slug (e.g. 'ATTE', 'BCODA')
+
+### `preview_entity_rename`
+
+Preview a deterministic entity rename. Finds exact full-name references in one book's hand-authored outline and descendant beats, plus linked Story Ledger claims. Does not write.
+
+- `entityIdOrSlug` (string, required) — Canonical entity GUID7 or slug.
+- `nodeIdOrSlug` (string, required) — Book GUID, slug, or NodeCode that scopes outline and beats.
+- `newName` (string, required) — New canonical full name.
 
 ### `scan_entity_context`
 

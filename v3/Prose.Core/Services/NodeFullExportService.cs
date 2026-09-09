@@ -18,6 +18,7 @@ public class NodeFullExportService
     private readonly SynopsisExportService synopsis;
     private readonly CoverImageService coverSvc;
     private readonly NodeWorkbenchService workbench;
+    private readonly ExportCleanupService cleanup;
 
     public NodeFullExportService(
         IDbContextFactory<ProseDbContext> dbFactory,
@@ -25,7 +26,8 @@ public class NodeFullExportService
         ManuscriptExportService manuscript,
         SynopsisExportService synopsis,
         CoverImageService coverSvc,
-        NodeWorkbenchService workbench)
+        NodeWorkbenchService workbench,
+        ExportCleanupService cleanup)
     {
         this.dbFactory = dbFactory;
         this.docx = docx;
@@ -33,6 +35,7 @@ public class NodeFullExportService
         this.synopsis = synopsis;
         this.coverSvc = coverSvc;
         this.workbench = workbench;
+        this.cleanup = cleanup;
     }
 
     public record Result(
@@ -141,6 +144,16 @@ public class NodeFullExportService
         string? coverPath = null;
         try { coverPath = await coverSvc.EnsureExportCoverAsync(nodeId, outDir, ct); }
         catch { /* non-fatal, mirrors CLI behavior */ }
+
+        // Persist the completed bundle immediately so the newest export is protected even if no
+        // later export occurs. The next export may create a collision suffix while archiving this
+        // same bundle again; that is intentional and preserves every export event.
+        await using (var dbArchive = await dbFactory.CreateDbContextAsync(ct))
+        {
+            var version = await dbArchive.Nodes.AsNoTracking().Where(n => n.Id == nodeId)
+                .Select(n => n.Version).FirstOrDefaultAsync(ct);
+            cleanup.ArchiveCurrent(outDir, version);
+        }
 
         return new Result(docxPath, epubPath, pdfPath, txtPath, mdPath, docxMojibakeHits,
             descPath, descriptionRepaired, synPath, kwPath, keywordCount, coverPath);

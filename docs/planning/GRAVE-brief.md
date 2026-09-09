@@ -74,8 +74,8 @@ ANTHOLOGY story can reuse them, even by name collision.
 
 | Character | Entry State |
 |---|---|
-| Denny Holt | Introduced fresh: mid-30s, inherits his estranged uncle's farmhouse, begins a basement renovation with his wife. |
-| Callie Holt | Introduced fresh: Denny's wife, skeptical of the move, first to notice something's wrong with the new dig. |
+| <entity repo="character" guid="01a04108-2ad7-758a-8adb-d4b414502da3">Denny Holt</entity> | Introduced fresh: mid-30s, inherits his estranged uncle's farmhouse, begins a basement renovation with his wife. |
+| <entity repo="character" guid="01a04108-326e-725d-8ee4-913c8e5dc8ca">Callie Holt</entity> | Introduced fresh: <entity repo="character" guid="01a04108-2ad7-758a-8adb-d4b414502da3">Denny</entity>'s wife, skeptical of the move, first to notice something's wrong with the new dig. |
 
 ---
 
@@ -83,8 +83,8 @@ ANTHOLOGY story can reuse them, even by name collision.
 
 | Character | Exit State | Ledger Update Needed? |
 |---|---|---|
-| Denny Holt | Goes down into the shaft after Callie disappears into it; does not come back up. Avalanche ending — no rescue, no explanation delivered to the reader. | No — GRAVE has no ledger; this character is retired with the story. |
-| Callie Holt | Descends first, drawn by something under the warm dirt; last seen from Denny's POV, not recovered. | No. |
+| <entity repo="character" guid="01a04108-2ad7-758a-8adb-d4b414502da3">Denny Holt</entity> | Goes down into the shaft after <entity repo="character" guid="01a04108-326e-725d-8ee4-913c8e5dc8ca">Callie</entity> disappears into it; does not come back up. Avalanche ending — no rescue, no explanation delivered to the reader. | No — GRAVE has no ledger; this character is retired with the story. |
+| <entity repo="character" guid="01a04108-326e-725d-8ee4-913c8e5dc8ca">Callie Holt</entity> | Descends first, drawn by something under the warm dirt; last seen from <entity repo="character" guid="01a04108-2ad7-758a-8adb-d4b414502da3">Denny</entity>'s POV, not recovered. | No. |
 
 ---
 
@@ -124,16 +124,16 @@ anthology's theme — the other three approach it as identity, family secret, an
 
 **Resolution mode:** External/situational resolution — the shaft/land wins; no internal epiphany.
 
-**Moral polarity:** Ambivalent (default) — Denny and Callie did nothing to deserve this beyond
+**Moral polarity:** Ambivalent (default) — <entity repo="character" guid="01a04108-2ad7-758a-8adb-d4b414502da3">Denny</entity> and <entity repo="character" guid="01a04108-326e-725d-8ee4-913c8e5dc8ca">Callie</entity> did nothing to deserve this beyond
 disturbing ground that wanted to stay undisturbed.
 
-**Ending style:** Avalanche (default) — escalating physical wrongness culminating in Callie's
-disappearance and Denny's descent; no epilogue, no explanation.
+**Ending style:** Avalanche (default) — escalating physical wrongness culminating in <entity repo="character" guid="01a04108-326e-725d-8ee4-913c8e5dc8ca">Callie</entity>'s
+disappearance and <entity repo="character" guid="01a04108-2ad7-758a-8adb-d4b414502da3">Denny</entity>'s descent; no epilogue, no explanation.
 
 **Escalation curve shape:** Begins with mundane renovation friction (cost, permits, an odd smell)
 → the sealed shaft is found and doesn't match any blueprint → small wrongnesses accumulate (warm
-dirt in a cold month, tool losses, a smell like a held breath) → Callie hears something and goes
-down alone → Denny follows and the story ends mid-descent.
+dirt in a cold month, tool losses, a smell like a held breath) → <entity repo="character" guid="01a04108-326e-725d-8ee4-913c8e5dc8ca">Callie</entity> hears something and goes
+down alone → <entity repo="character" guid="01a04108-2ad7-758a-8adb-d4b414502da3">Denny</entity> follows and the story ends mid-descent.
 
 **Event-type palette:** Discovery → escalating dread → loss/disappearance (2–3 types, no combat
 set-piece — this is atmospheric, not violent, horror).
@@ -152,9 +152,9 @@ consequence) 3. *The Descent* (film) — literal underground claustrophobia as h
 
 | Entity | Type | In DB? | DB seed command / MCP tool |
 |---|---|---|---|
-| Denny Holt | character | [ ] | `create_character` (originNodeSlug=grave) |
-| Callie Holt | character | [ ] | `create_character` (originNodeSlug=grave) |
-| The Holt Farmhouse | place | [ ] | `create_place` (originNodeSlug=grave) |
+| <entity repo="character" guid="01a04108-2ad7-758a-8adb-d4b414502da3">Denny Holt</entity> | character | [ ] | `create_character` (originNodeSlug=grave) |
+| <entity repo="character" guid="01a04108-326e-725d-8ee4-913c8e5dc8ca">Callie Holt</entity> | character | [ ] | `create_character` (originNodeSlug=grave) |
+| <entity repo="place" guid="01a04108-8052-7cc5-a864-1f8926c66420">The Holt Farmhouse</entity> | place | [ ] | `create_place` (originNodeSlug=grave) |
 
 Run entity-mention scan after the draft to confirm coverage.
 

@@ -1173,6 +1173,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();
         services.AddScoped<EntityMentionService>();
+        services.AddSingleton<EntityLookupService>();
+        services.AddSingleton<EntityRenameService>();
         services.AddSingleton<DocContextStack>();
         services.AddSingleton<UserContextService>();
         services.AddSingleton<EntityDocService>();

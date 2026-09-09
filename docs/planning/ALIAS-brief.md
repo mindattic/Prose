@@ -68,8 +68,8 @@ the old name.
 
 | Character | Entry State |
 |---|---|
-| Iris Calder (assumed name) | Introduced fresh: mid-30s, has lived under this name for six years, believes her old life is sealed off and unreachable. |
-| Thomas Reyes | Introduced fresh: quiet, patient, moves into her building; not there to expose her — there to collect on something from her old identity. |
+| <entity repo="character" guid="01a04108-3182-746e-b9b9-baa8772617a2">Iris Calder</entity> (assumed name) | Introduced fresh: mid-30s, has lived under this name for six years, believes her old life is sealed off and unreachable. |
+| <entity repo="character" guid="01a04108-38b2-7196-ae8e-b08c3e32986e">Thomas Reyes</entity> | Introduced fresh: quiet, patient, moves into her building; not there to expose her — there to collect on something from her old identity. |
 
 ---
 
@@ -77,8 +77,8 @@ the old name.
 
 | Character | Exit State | Ledger Update Needed? |
 |---|---|---|
-| Iris Calder | Pays the debt in a way that isn't money — the story ends with her walking out of her own apartment under a third name, the "Iris Calder" identity discarded the way the first one was. External/situational resolution, no internal peace. | No — ALIAS has no ledger; retired with the story. |
-| Thomas Reyes | Departs having collected what he came for; his own nature/agency is never fully explained (ambivalent — human enforcer or something else, left open). | No. |
+| <entity repo="character" guid="01a04108-3182-746e-b9b9-baa8772617a2">Iris Calder</entity> | Pays the debt in a way that isn't money — the story ends with her walking out of her own apartment under a third name, the "<entity repo="character" guid="01a04108-3182-746e-b9b9-baa8772617a2">Iris Calder</entity>" identity discarded the way the first one was. External/situational resolution, no internal peace. | No — ALIAS has no ledger; retired with the story. |
+| <entity repo="character" guid="01a04108-38b2-7196-ae8e-b08c3e32986e">Thomas Reyes</entity> | Departs having collected what he came for; his own nature/agency is never fully explained (ambivalent — human enforcer or something else, left open). | No. |
 
 ---
 
@@ -116,9 +116,9 @@ theme — the others read it as soil, family, and memory, not a constructed name
 **Resolution mode:** External/situational resolution — a transaction is completed; nothing is
 internally resolved or understood.
 
-**Moral polarity:** Ambivalent (default) — Iris isn't purely a victim; the debt is real.
+**Moral polarity:** Ambivalent (default) — <entity repo="character" guid="01a04108-3182-746e-b9b9-baa8772617a2">Iris</entity> isn't purely a victim; the debt is real.
 
-**Ending style:** Avalanche (default) — the reveal of what Thomas actually wants accelerates
+**Ending style:** Avalanche (default) — the reveal of what <entity repo="character" guid="01a04108-38b2-7196-ae8e-b08c3e32986e">Thomas</entity> actually wants accelerates
 fast once it starts; no epilogue.
 
 **Escalation curve shape:** Mundane wariness of a new, too-attentive neighbor → small tells that
@@ -141,8 +141,8 @@ procedural true-crime writing (flat affect describing extraordinary things).
 
 | Entity | Type | In DB? | DB seed command / MCP tool |
 |---|---|---|---|
-| Iris Calder | character | [ ] | `create_character` (originNodeSlug=alias) |
-| Thomas Reyes | character | [ ] | `create_character` (originNodeSlug=alias) |
+| <entity repo="character" guid="01a04108-3182-746e-b9b9-baa8772617a2">Iris Calder</entity> | character | [ ] | `create_character` (originNodeSlug=alias) |
+| <entity repo="character" guid="01a04108-38b2-7196-ae8e-b08c3e32986e">Thomas Reyes</entity> | character | [ ] | `create_character` (originNodeSlug=alias) |
 
 Run entity-mention scan after the draft to confirm coverage.
 

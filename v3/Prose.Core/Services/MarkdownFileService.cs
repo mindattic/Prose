@@ -224,8 +224,24 @@ public class MarkdownFileService
             {
                 if (!File.Exists(f.FilePath)) continue;
                 var content = TextSanitizerService.Sanitize(await File.ReadAllTextAsync(f.FilePath, ct));
-                var hash    = ComputeHash(content);
                 var cls     = ClassifyFile(f, content);
+                var universeId = UniverseForFile(cls);
+
+                // Markdown is part of the canon context, not an unstructured escape hatch.
+                // Strip and re-derive tags on every sync just as beat and outline saves do, so a
+                // renamed entity cannot leave stale display text or a stale GUID behind.
+                var tagged = await TagEntitiesAsync(db, content, universeId, cls.Scope, ct);
+                if (!string.Equals(content, tagged, StringComparison.Ordinal))
+                {
+                    content = tagged;
+                    if (!dryRun)
+                    {
+                        var wasReadOnly = File.GetAttributes(f.FilePath).HasFlag(FileAttributes.ReadOnly);
+                        if (wasReadOnly) await GeneratedFileWriter.WriteReadOnlyAsync(f.FilePath, content, ct);
+                        else await File.WriteAllTextAsync(f.FilePath, content, ct);
+                    }
+                }
+                var hash = ComputeHash(content);
 
                 // Match on (FileRoot, RelativePath): the project and global CLAUDE.md
                 // share RelativePath "CLAUDE.md" and would otherwise clobber each other,
@@ -261,7 +277,7 @@ public class MarkdownFileService
                             Scope        = cls.Scope,
                             Triggers     = cls.Triggers,
                             AutoTier     = cls.AutoTier,
-                            UniverseId   = UniverseForFile(cls),
+                            UniverseId   = universeId,
                         });
                         await db.SaveChangesAsync(ct);
                     }
@@ -269,7 +285,6 @@ public class MarkdownFileService
                 }
                 else
                 {
-                    var universeId     = UniverseForFile(cls);
                     var contentChanged = existing.ContentHash != hash;
                     var classChanged   = existing.Tier != cls.Tier || existing.Scope != cls.Scope
                                       || existing.Triggers != cls.Triggers || existing.AutoTier != cls.AutoTier
@@ -735,6 +750,25 @@ public class MarkdownFileService
     private static string NormalizeCsv(string s) =>
         string.Join(", ", (s ?? "").Split([',', ';'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
                                     .Distinct(StringComparer.OrdinalIgnoreCase));
+
+    private static async Task<string> TagEntitiesAsync(
+        ProseDbContext db, string content, Guid universeId, string? nodeScope, CancellationToken ct)
+    {
+        // A shared document has no universe context. Preserve existing deliberate tags instead
+        // of guessing between same-named entities from different universes.
+        if (universeId == Universe.SharedId) return content;
+
+        var plain = BeatMarkup.StripEntityTags(content);
+        Guid? nodeId = null;
+        if (!string.IsNullOrWhiteSpace(nodeScope))
+        {
+            nodeId = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+                .Where(n => n.UniverseId == universeId && (n.NodeCode == nodeScope || n.Slug == nodeScope))
+                .Select(n => (Guid?)n.Id).FirstOrDefaultAsync(ct);
+        }
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, nodeId, ct);
+        return EntityMentionScanner.ApplyTags(plain, EntityMentionScanner.Scan(plain, candidates));
+    }
 
     // ── List ──────────────────────────────────────────────────────────────
 

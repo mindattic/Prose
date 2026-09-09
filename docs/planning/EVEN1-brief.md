@@ -27,11 +27,11 @@ updated: 2026-08-26
 > (`D:\Projects\MindAttic\ExperimentEve`), confirmed live: `docs/GAZETTEER.md`,
 > `src/level/level01.ts` (428 lines, the built North End level — 12 camera zones), the
 > `timedEvents` story clock in `src/main.ts`, the `garageMachine` ApertureOS files, the
-> `graffiti.ts` SOAK/REN duel text, and `src/core/worldClock.ts` (real-time 1:1, 8:00 PM arrival,
+> `graffiti.ts` <entity repo="character" guid="01a03d2c-a8a4-782b-9a71-9565b3e5d2e7">SOAK</entity>/<entity repo="character" guid="01a03d2c-a8ae-7050-8a7e-4951e90f6b2b">REN</entity> duel text, and `src/core/worldClock.ts` (real-time 1:1, 8:00 PM arrival,
 > sunrise/deadline 5:11 AM). Every quoted line in this brief is verbatim from source, not
 > paraphrase. This book's job is to script the **built vertical slice** — it does not extend past
-> what `docs/GAZETTEER.md` and the code actually contain. Providence, the Bell Bridge crossing,
-> and the *Providence Belle* are confirmed **not implemented** beyond design-intent text — this
+> what `docs/GAZETTEER.md` and the code actually contain. <entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity>, <entity repo="place" guid="01a03d2c-a984-7a67-b0a3-91e5e0931960">the Bell Bridge</entity> crossing,
+> and the *<entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity> Belle* are confirmed **not implemented** beyond design-intent text — this
 > book's ending must not pretend otherwise (see §1, §9).
 
 ---
@@ -44,7 +44,7 @@ drafted 2026-08-26), which this book depends on directly for terminology and sys
 
 **Story type:** Screenplay-format narrative script for the game's playable vertical slice — not
 a caper-of-the-week, not a standalone short story. It dramatizes the one level that actually
-exists (Level 1 / the North End) across the real-time hours the game's own `timedEvents` clock
+exists (Level 1 / <entity repo="place" guid="01a03d2c-a998-7e3d-a338-9745098d04cd">the North End</entity>) across the real-time hours the game's own `timedEvents` clock
 defines, from arrival to the level's actual, built stopping point.
 
 **Book(s) this story serves:** Itself (first EVE fiction) and the future, currently-deferred
@@ -65,18 +65,18 @@ Reinterpreted per the adaptation note: EVE's equivalent of GLMZ's 5 arcs is the 
 tracked in `docs/series/EVE.md` §2. This book is the one every law's "Dramatized by" column
 points to — EVEGDD only *documents* the laws; Night One is where they're *obeyed in practice*:
 
-- **[x] No Exposition Dumps.** Every scene direction below routes lore through inspectable
+- **[x] <entity repo="rule" guid="01a03d2c-aa9f-7fe9-bac4-2ec47e27e6e8">No Exposition Dumps</entity>.** Every scene direction below routes lore through inspectable
   objects (the `dadCard`, `megahitVideo`, `zelnaPoster`) or overheard fragments (the payphone),
   never a character explaining the Experiment aloud. Kat herself never gets an internal-monologue
   info-dump — see Locks (§9).
-- **[x] Father's Day Is the Through-Line.** Dramatized, not stated: `kats-card` (her own unsigned
+- **[x] <entity repo="rule" guid="01a03d2c-aac4-7241-b918-3a128c7e8629">Father's Day Is the Through-Line</entity>.** Dramatized, not stated: `kats-card` (her own unsigned
   card) is carried the whole night; the `for_ray.txt`/`note_to_ray.txt` beat (Ch. 6) is the
   night's emotional core — a father who never came back, on the same day.
 - **[x] Night Deadline / Hourly Chimes.** The chapter spine (§9) is built directly from the real
   `timedEvents` schedule — this is not backfilled onto invented scenes, the scenes exist because
   the clock exists.
-- **[x] The World Is at War With Itself (A-Life).** The three Grafted debuts (9:30, 10:30, 11:30
-  PM) and the Chimera Ecology's presence throughout are load-bearing plot events, not flavor.
+- **[x] <entity repo="rule" guid="01a03d2c-aad6-748b-96b0-35d5ffcde0a3">The World Is at War With Itself</entity> (A-Life).** The three Grafted debuts (9:30, 10:30, 11:30
+  PM) and <entity repo="faction" guid="01a03d2c-a8ca-7e24-9619-7f68d529c289">the Chimera Ecology</entity>'s presence throughout are load-bearing plot events, not flavor.
 - **[ ] None** — not applicable.
 
 ---
@@ -86,7 +86,7 @@ points to — EVEGDD only *documents* the laws; Night One is where they're *obey
 | Prerequisite | NodeCode | Why Required |
 |---|---|---|
 | EVEGDD complete | EVEGDD | Terminology/system source of truth (battle, camera, save, A-Life) this script must not contradict. **Complete** — 46 beats drafted 2026-08-26. |
-| EVE entity seeding | RFC 0007 import | All named characters/places/factions/artifacts this script references. **Complete and current** — Kat, the Observer, SOAK, REN, the Pawnbroker, M., Ray, the Erasure Team, the Grafted (10 named variants), North End, the Bell Bridge, the Island, `kats-card`, ApertureOS 98, `the-march`/`the-night`/`six-forty-seven` events all already exist as entities (verified via `--universe-export eve`, 2026-08-26 — the roster has grown well past the original 75 via a later ExperimentEve push). |
+| EVE entity seeding | RFC 0007 import | All named characters/places/factions/artifacts this script references. **Complete and current** — Kat, the Observer, <entity repo="character" guid="01a03d2c-a8a4-782b-9a71-9565b3e5d2e7">SOAK</entity>, <entity repo="character" guid="01a03d2c-a8ae-7050-8a7e-4951e90f6b2b">REN</entity>, the Pawnbroker, M., <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>, <entity repo="faction" guid="01a03d2c-a8c0-762f-a7b1-ecca43733a35">the Erasure Team</entity>, the Grafted (10 named variants), North End, <entity repo="place" guid="01a03d2c-a984-7a67-b0a3-91e5e0931960">the Bell Bridge</entity>, the Island, `kats-card`, <entity repo="artifact" guid="01a03d2c-aa51-7933-bc81-47e4653aab0f">ApertureOS 98</entity>, `the-march`/`the-night`/`six-forty-seven` events all already exist as entities (verified via `--universe-export eve`, 2026-08-26 — the roster has grown well past the original 75 via a later ExperimentEve push). |
 
 ---
 
@@ -97,11 +97,11 @@ states for the first time:
 
 | Character | Entry State (this book's opening) |
 |---|---|
-| Kat (Katie "Kat" Weiss) | Arrives 8:00 PM, alone. Carries `kats-card` — unsigned, unsealed, three weeks carried, not for sale (confirmed in `inventory.ts` flavor text). Reaction to the district on arrival, per source: *"What a shit hole."* |
-| The Observer | Payphone-only presence at the start — voice, not yet a body. First line (recurring, per `main.ts`): *"Keep moving, Katherine."* — followed by dial tone and Kat's own irritation: *"Nobody calls me Katherine."* |
-| SOAK / REN | Off-page, known only through their escalating graffiti duel (`graffiti.ts`, 3-stage). Neither appears in person in the built slice. |
-| The Pawnbroker | Voice-only behind bars: *"Baubles only. Bullets back."* Never seen. |
-| M. / Ray | Both absent from the level in person. M.'s presence is entirely the ApertureOS notes left in the garage; Ray never appears — only his empty workbench and the unclaimed card. |
+| Kat (<entity repo="character" guid="01a03d2c-a7d5-783d-9409-0e778ab2d425">Katie</entity> "Kat" <entity repo="character" guid="01a03d2c-a7d5-783d-9409-0e778ab2d425">Weiss</entity>) | Arrives 8:00 PM, alone. Carries `kats-card` — unsigned, unsealed, three weeks carried, not for sale (confirmed in `inventory.ts` flavor text). Reaction to the district on arrival, per source: *"What a shit hole."* |
+| <entity repo="character" guid="01a03d2c-a88c-7403-b774-a5d7bf6d3771">The Observer</entity> | Payphone-only presence at the start — voice, not yet a body. First line (recurring, per `main.ts`): *"Keep moving, Katherine."* — followed by dial tone and Kat's own irritation: *"Nobody calls me Katherine."* |
+| <entity repo="character" guid="01a03d2c-a8a4-782b-9a71-9565b3e5d2e7">SOAK</entity> / <entity repo="character" guid="01a03d2c-a8ae-7050-8a7e-4951e90f6b2b">REN</entity> | Off-page, known only through their escalating graffiti duel (`graffiti.ts`, 3-stage). Neither appears in person in the built slice. |
+| <entity repo="character" guid="01a03d2c-a8b4-78f4-b6d0-b20393355816">The Pawnbroker</entity> | Voice-only behind bars: *"Baubles only. Bullets back."* Never seen. |
+| M. / <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity> | Both absent from the level in person. M.'s presence is entirely the ApertureOS notes left in the garage; <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity> never appears — only his empty workbench and the unclaimed card. |
 
 ---
 
@@ -109,9 +109,9 @@ states for the first time:
 
 | Character | Exit State | Ledger Update Needed? |
 |---|---|---|
-| Kat | Exits this book's content at the slice's real stopping point (`sliceEnd` trigger, `main.ts`): *"Providence. Right."* / HUD: *"SLICE COMPLETE — the route continues toward the bridge."* Not at Providence — mid-journey, deliberately unresolved. | Yes — first entry in a future EVE Character Arc Ledger equivalent (not yet built; note in `docs/series/EVE.md` §3 instead per its existing shape). |
-| The Observer | Still voice-only; CCTV mechanism established as its diegetic form (per EVEGDD Ch. 2) but the Observer never physically confronts Kat in this book's content. | No — matches the built slice exactly. |
-| M. / Ray | Unresolved. `note_to_ray.txt` ("If you get back before me... Keep it lit") and `for_ray.txt` (the boys' gift, still on the bench) are both live, neither paid off — Ray's fate is explicitly not known even to M. | Yes — plant, not payoff (see §6). |
+| Kat | Exits this book's content at the slice's real stopping point (`sliceEnd` trigger, `main.ts`): *"<entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity>. Right."* / HUD: *"SLICE COMPLETE — the route continues toward the bridge."* Not at <entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity> — mid-journey, deliberately unresolved. | Yes — first entry in a future EVE Character Arc Ledger equivalent (not yet built; note in `docs/series/EVE.md` §3 instead per its existing shape). |
+| <entity repo="character" guid="01a03d2c-a88c-7403-b774-a5d7bf6d3771">The Observer</entity> | Still voice-only; CCTV mechanism established as its diegetic form (per EVEGDD Ch. 2) but the Observer never physically confronts Kat in this book's content. | No — matches the built slice exactly. |
+| M. / <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity> | Unresolved. `note_to_ray.txt` ("If you get back before me... Keep it lit") and `for_ray.txt` (the boys' gift, still on the bench) are both live, neither paid off — <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>'s fate is explicitly not known even to M. | Yes — plant, not payoff (see §6). |
 
 ---
 
@@ -119,9 +119,9 @@ states for the first time:
 
 | Plant Description | Payoff Story (NodeCode) | Payoff Chapter/Beat (if known) |
 |---|---|---|
-| Ray's disappearance (`shift_log.txt`: "He did not bring it back") and M.'s unanswered vigil | Future EVE work (Prequel Novella or a later episode — not yet scheduled) | Unknown — deliberately left open; the built slice never answers it. |
-| Kat's unsigned card, still uncarried-to-Providence | Deferred Prequel Novella, per `docs/series/EVE.md` §4 ("What she does with it at Providence") | Not this book — Providence isn't built. |
-| SOAK/REN's third graffiti line — "THEN WHY DO THE BOATS GO NORTH?" — raises a routing/geography question the built slice never answers | Future EVE work (a built-out World & Districts episode) | Unknown. |
+| <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>'s disappearance (`shift_log.txt`: "He did not bring it back") and M.'s unanswered vigil | Future EVE work (Prequel Novella or a later episode — not yet scheduled) | Unknown — deliberately left open; the built slice never answers it. |
+| Kat's unsigned card, still uncarried-to-<entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity> | Deferred Prequel Novella, per `docs/series/EVE.md` §4 ("What she does with it at <entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity>") | Not this book — <entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity> isn't built. |
+| <entity repo="character" guid="01a03d2c-a8a4-782b-9a71-9565b3e5d2e7">SOAK</entity>/<entity repo="character" guid="01a03d2c-a8ae-7050-8a7e-4951e90f6b2b">REN</entity>'s third graffiti line — "THEN WHY DO THE BOATS GO NORTH?" — raises a routing/geography question the built slice never answers | Future EVE work (a built-out World & Districts episode) | Unknown. |
 | The Island's "THEY TAKE THEM TO THE ISLAND" / "the island was FIRST" tag | Future EVE work — `the-island-asylum`'s 180-year history entity already exists in canon, unused narratively until dramatized | Unknown. |
 
 After filing, these rows are mirrored into `docs/series/EVE.md` §4.
@@ -138,7 +138,7 @@ plants no narrative threads of its own.)
 ## 8. Thematic Complement {#SS-BRIEF-EVEN1-§8}
 
 **Theme:** A night that keeps almost being about a father and never says so. Every location Kat
-passes through is someone else's unfinished Father's Day — a stranger's sealed card, Ray's
+passes through is someone else's unfinished Father's Day — a stranger's sealed card, <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>'s
 unclaimed gift, her own unsigned one — and the game never lets a character state that pattern
 aloud (see Locks, §9).
 
@@ -159,12 +159,12 @@ mechanics, applied here to story.
 ## 9. Structural Blueprint Seed {#SS-BRIEF-EVEN1-§9}
 
 **Resolution mode:** **Unresolved / open** — not a craft choice, a fact: the built slice's real
-ending (`sliceEnd`: *"Providence. Right." / "the route continues toward the bridge"*) is a
+ending (`sliceEnd`: *"<entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity>. Right." / "the route continues toward the bridge"*) is a
 mid-journey cliffhanger by construction, not a climax. Writing a false resolution (Kat reaching
-Providence, confronting the Observer, resolving Ray's fate) would violate the built-vs-planned
+<entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity>, confronting the Observer, resolving <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>'s fate) would violate the built-vs-planned
 discipline EVEGDD's Ch. 11 exists to protect. **This book ends where the game ends.**
 
-**Moral polarity:** Ambivalent (default) — the Erasure Team's execution bark (*"One less."* →
+**Moral polarity:** Ambivalent (default) — <entity repo="faction" guid="01a03d2c-a8c0-762f-a7b1-ecca43733a35">the Erasure Team</entity>'s execution bark (*"One less."* →
 *"A folded paper falls out of his helmet. Crayon."*) is the clearest statement of this: even the
 antagonists are somebody's parent. No clean villain framing.
 
@@ -191,10 +191,10 @@ documentation):
    dominant narrative delivery mechanism — never a cutscene monologue.
 2. *Kentucky Route Zero*'s treatment of found objects (the pawnshop, the ApertureOS files) as
    carrying more emotional weight than any spoken line.
-3. *Twin Peaks*' placeless-but-specific small-town dread — matches the "Placeless, Wink-Named"
+3. *Twin Peaks*' placeless-but-specific small-town dread — matches the "<entity repo="rule" guid="01a03d2c-aaa9-76a1-aff3-94a80329548f">Placeless, Wink-Named</entity>"
    design law directly.
 
-**Subplot thread:** M. and Ray's unanswered story, running underneath Kat's own — thematically
+**Subplot thread:** M. and <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>'s unanswered story, running underneath Kat's own — thematically
 parallel (both are "a parent and a Father's Day that didn't resolve"), never intersecting Kat
 directly (she never meets either), which is itself the point: she reads their story the way the
 player reads hers.
@@ -212,12 +212,12 @@ All named entities this book references are **already seeded** (confirmed via
 
 | Entity | Type | In DB? |
 |---|---|---|
-| Kat, the Observer, SOAK, REN, the Pawnbroker, M., Ray | character | [x] |
-| The Erasure Team, the Grafted (faction) | faction | [x] |
-| The 10 named Grafted variants (The Quarrel, The Applause, etc.) | creature | [x] |
-| North End, the Bell Bridge, the Island (old Asylum), Kingsport, Providence | place | [x] |
-| `kats-card`, ApertureOS 98 | artifact | [x] |
-| The June 20th March, The Night (June 21 1998), 6:47, The Experiment, The Collapse | event | [x] |
+| Kat, the Observer, <entity repo="character" guid="01a03d2c-a8a4-782b-9a71-9565b3e5d2e7">SOAK</entity>, <entity repo="character" guid="01a03d2c-a8ae-7050-8a7e-4951e90f6b2b">REN</entity>, the Pawnbroker, M., <entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity> | character | [x] |
+| <entity repo="faction" guid="01a03d2c-a8c0-762f-a7b1-ecca43733a35">The Erasure Team</entity>, the Grafted (faction) | faction | [x] |
+| The 10 named Grafted variants (<entity repo="creature" guid="01a03f76-0dbe-7832-bce9-5e3d6859889b">The Quarrel</entity>, <entity repo="creature" guid="01a03f76-0dc5-7204-b485-4765a9f05511">The Applause</entity>, etc.) | creature | [x] |
+| North End, <entity repo="place" guid="01a03d2c-a984-7a67-b0a3-91e5e0931960">the Bell Bridge</entity>, the Island (old Asylum), <entity repo="place" guid="01a03d2c-a95d-7bbc-8668-46d79089e9b3">Kingsport</entity>, <entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity> | place | [x] |
+| `kats-card`, <entity repo="artifact" guid="01a03d2c-aa51-7933-bc81-47e4653aab0f">ApertureOS 98</entity> | artifact | [x] |
+| <entity repo="event" guid="01a03d2c-aa81-71e6-9a7e-f4daa68ed1db">The June 20th March</entity>, The Night (June 21 1998), <entity repo="event" guid="01a03d2c-aa8a-7ef5-bf99-2b3a6ba96568">6:47</entity>, <entity repo="event" guid="01a03d2c-aa6f-7ac8-a508-a7b22b3595d7">The Experiment</entity>, <entity repo="event" guid="01a03d2c-aa78-71b1-83eb-969dbede1763">The Collapse</entity> | event | [x] |
 
 No new entity seeding required. `prose --scan-entity-mentions` (corpus-wide) will be re-run after
 prose drafting, per standard practice.
@@ -230,14 +230,14 @@ prose drafting, per standard practice.
 - [x] `docs/series/EVE.md` §1 roster row to be updated (this brief filed) — pending this edit
 - [x] Entity seeding confirmed complete — no ledger update needed (§10)
 - [x] Plant/Payoff rows drafted (§6) — to be mirrored into `docs/series/EVE.md` §4
-- [x] World-Revelation Sequencing: this book does not spoil anything — Providence/the ending
+- [x] World-Revelation Sequencing: this book does not spoil anything — <entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity>/the ending
       remain explicitly unreached, matching the built slice
 - [x] BookNode `EVEN1` created in DB (universe `eve`, slug
       `experiment-eve-night-one-game-script-01a03fa5`)
 - [x] ChapterNodes created (7 chapters per §9's clock-driven spine)
 - [x] Node bible authored (`set_book_bible`) — arc/mission, chapter spine, Locks
 - [x] Structural blueprint committed via `--set-structural-blueprint` (beat-granularity, 30
-      beats): subplot=M./Ray, temporal=linear, resolution=unresolved, moral=ambivalent,
+      beats): subplot=M./<entity repo="character" guid="01a03d2c-a8bc-75d2-b818-42b6f427e59e">Ray</entity>, temporal=linear, resolution=unresolved, moral=ambivalent,
       ending=quiet/no-epilogue — matches §9 exactly
 - [x] Prose: all 30 beats drafted (`--auto-run --no-repair`), **then corrected** — see below.
 
@@ -257,7 +257,7 @@ beat — never got written, replaced by more monster-chase filler.
 
 **Fixed**: beats 11–17, 19, 20, and 22–30 (18 of 30 beats) hand-rewritten from the real source
 material, strictly within the built North End geography, with the actual "One Less" execution
-beat restored and the real verbatim `sliceEnd` line (`"Providence. Right." / "SLICE COMPLETE —
+beat restored and the real verbatim `sliceEnd` line (`"<entity repo="place" guid="01a03d2c-a964-7988-8c33-59385120531a">Providence</entity>. Right." / "SLICE COMPLETE —
 the route continues toward the bridge."`) now the book's actual final beat. Re-verified via a
 full contamination grep (logbook/warehouse/Blue Dress/maintenance-structure/bridge-approach/
 duplicate-paragraph) across the corrected text — clean. Re-exported to manuscript.

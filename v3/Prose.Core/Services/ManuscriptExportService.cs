@@ -147,12 +147,6 @@ public class ManuscriptExportService
         // .md, in one place per SS-A-whatever-this-becomes.
         var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, dir, ct);
         Directory.CreateDirectory(nodeDir);
-        foreach (var existing in Directory.EnumerateFiles(nodeDir, "*.md"))
-        {
-            try { File.Delete(existing); }
-            catch (IOException) { }
-            catch (UnauthorizedAccessException) { }
-        }
         var path = Path.Combine(nodeDir, $"{fileBaseName} V{node.Version}.md");
         var mdText = md.ToString().TrimEnd() + "\n";
         await File.WriteAllTextAsync(path, mdText, new UTF8Encoding(false), ct);
@@ -615,16 +609,6 @@ public class ManuscriptExportService
         var dir = ResolveExportDir(universeSlug);
         var (nodeDir, fileBaseName) = await ExportPathResolver.ResolveAsync(db, node, dir, ct);
         Directory.CreateDirectory(nodeDir);
-
-        // Delete stale prior-version files of this format so the node folder keeps
-        // only the current export (mirrors DocxExportService, which already prunes *.docx).
-        foreach (var existing in Directory.EnumerateFiles(nodeDir, $"*.{ext}"))
-        {
-            if (Path.GetFileName(existing).Equals("description.txt", StringComparison.OrdinalIgnoreCase)) continue;
-            try { File.Delete(existing); }
-            catch (IOException) { }
-            catch (UnauthorizedAccessException) { }
-        }
 
         var path = Path.Combine(nodeDir, $"{fileBaseName} V{node.Version}.{ext}");
 
