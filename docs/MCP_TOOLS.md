@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**279 tools** across **48 tool families.**
+**281 tools** across **48 tool families.**
 
 ## Families
 
@@ -45,7 +45,7 @@
 | [Ledger](#ledger) | 4 |
 | [Lore Triple](#lore-triple) | 8 |
 | [Narrative Science](#narrative-science) | 1 |
-| [Node](#node) | 39 |
+| [Node](#node) | 41 |
 | [Noun Consistency](#noun-consistency) | 3 |
 | [One Shot Generation](#one-shot-generation) | 1 |
 | [Planning](#planning) | 3 |
@@ -1499,6 +1499,13 @@ List nodes with their latest review score, word count, and estimated page count 
 - `includeArchived` (bool, optional) — Include archived nodes. Default false.
 - `limit` (int, optional) — Maximum rows to return. Default 200.
 
+### `move_node_after_sibling`
+
+Reposition an existing node (typically a chapter) to sit immediately after a named sibling under the same parent — a fractional SortKey midpoint is computed automatically, so callers never need to know or guess raw SortKey values. Use this to insert a newly created chapter into the middle of a book's reading order instead of it landing at the end (create_chapter always appends). Accepts GUID id or slug for both nodeIdOrSlug and afterSiblingIdOrSlug.
+
+- `nodeIdOrSlug` (string, required) — Node Guid id or slug to reposition.
+- `afterSiblingIdOrSlug` (string, required) — Guid id or slug of the sibling this node should immediately follow. Must share the same parent as nodeIdOrSlug's new position (the node is moved under that same parent).
+
 ### `narrate_book`
 
 Kick off TTS narration for every un-narrated beat in this node (and its child nodes recursively). Returns immediately — narration runs in the background; poll get_node to observe progress. Returns an error response (without spawning anything) if TTS is not configured.
@@ -1569,6 +1576,14 @@ Set (replace) the user stories / acceptance criteria for a node. Write this befo
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
 - `userStoriesText` (string, required) — Full user stories markdown. Will replace any existing content.
+
+### `set_previous_node`
+
+Set (or clear) a book node's sequel link (Node.PreviousNodeId). Needed before deleting or reparenting a book that another book's PreviousNodeId points at — the FK is a DB-level Restrict, so delete_node's force flag alone cannot bypass it; repoint or clear the referencing node's link first. Pass clear=true to detach instead of setting a new previous node.
+
+- `nodeIdOrSlug` (string, required) — Node Guid id or slug whose PreviousNodeId to set.
+- `previousNodeIdOrSlug` (string, optional) — Guid id or slug of the book this node continues. Ignored when clear=true.
+- `clear` (bool, optional) — Set true to clear PreviousNodeId (detach) instead of setting one.
 
 ### `split_beat`
 

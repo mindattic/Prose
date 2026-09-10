@@ -13,7 +13,7 @@ for the *next* consumer.
 ## 0. Prerequisites
 
 - **Prose Hub must be running** on `http://127.0.0.1:5900` (loopback only). In this repo it's kept
-  alive automatically by `.claude/hooks/start-prose-hub.ps1` (a SessionStart hook) — check
+  alive automatically by `.prose/hooks/start-prose-hub.ps1` (a SessionStart hook) — check
   `GET /api/health` returns 200 if you're unsure.
 - **Get the shared Hub API key.** The Hub generates one automatically on first startup and stores
   it in the shared settings file at `%LOCALAPPDATA%\MindAttic\Prose\Settings.json`

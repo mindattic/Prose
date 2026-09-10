@@ -1,6 +1,9 @@
 # do
 
-Resume the current portable Prose agent session. Print the saved task, decisions, state, and next
-action. The host agent continues the work in its own conversation context.
+Typing a bare `do` (optionally `do it`) restores the last `/quicksave` transcript, the same as
+running `/quickload`. A prompt-submit hook (`.prose/hooks/quickload-on-do.ps1`) reads
+`.prose/quicksave.md`, injects it as authoritative resume context for the model, and deletes the
+file (one-shot — it will not refill on its own). See `.prose/commands/quicksave.md` and
+`.prose/commands/quickload.md` for the full mechanism.
 
-Implementation: `tools/prose-agent.ps1 do`.
+Any other prompt passes through untouched — this only fires on an exact bare `do`/`do it`.

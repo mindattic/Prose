@@ -3,9 +3,5 @@ name: revert
 description: Revert a specific commit by hash. Usage /revert <commit-hash>
 ---
 
-When invoked with `$ARGUMENTS` (a commit hash):
-
-1. Run `git log --oneline -5` to confirm the commit exists
-2. Run `git revert <commit-hash>` to create a revert commit
-3. Push to remote
-4. Print confirmation with the new revert commit hash
+Canonical definition: **`.prose/commands/revert.md`**. Read it and follow it — this file is a thin
+pointer only; the real, maintained runbook lives in `.prose/` so every client shares one copy.

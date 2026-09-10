@@ -1,5 +1,27 @@
-﻿# Portable command: /eve
+# /eve — build the Universe Interchange
 
-This alias is provider-neutral. Read the legacy source at $source for this project's intent,
-then execute it using the available client tools and the shared MindAttic Agent Standard.
-Do not require Claude, Codex, or a specific vendor to interpret this command.
+This is a handoff from the ExperimentEve session. The complete, Prose-convention-
+aware plan is **docs/rfc/0007-universe-interchange.md**. Read it fully, then
+execute Phase 1 end to end (steps 1–8, in order), respecting every hard rule in
+this project's own agent entrypoint docs (Hub-only DB access; Book→Chapter→Beat
+untouched; additive only — no existing command, tool, table, or behavior changes).
+
+Key inputs:
+- Seed data (75 validated entities): `D:\Projects\MindAttic\ExperimentEve\universe\eve.universe.json`
+- Schema (copy to docs/schemas/): `D:\Projects\MindAttic\ExperimentEve\universe\universe.schema.json`
+- The consumer side is already installed in ExperimentEve:
+  `npm run universe -- push|pull` and a prompt-submit hook draining
+  `GET /api/outbox/eve` — your job includes making those real (import CLI flag,
+  snapshot already exists, outbox endpoints per RFC step 5).
+
+Work milestone-by-milestone with tests (`dotnet test v3/Prose.UnitTests`) and
+commit directly to the default branch as you complete each RFC step. When done:
+1. Verify the acceptance list at the bottom of the RFC.
+2. Enqueue a first outbox event for consumer `eve`:
+   kind `hello`, summary "EVE universe live in Prose: 75 entities. Pull when ready."
+3. Mark the RFC implemented (note any deviations).
+
+If anything in the RFC conflicts with an existing Prose law or convention, the
+law wins — deviate minimally and record the deviation in the RFC. Phase 2
+(GDD / game script / barks export / prequel novella books) is design-approved
+but starts only after Phase 1 acceptance passes.

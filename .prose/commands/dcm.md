@@ -1,5 +1,60 @@
-﻿# Portable command: /dcm
+# /dcm — write it into Dynamic Context Memory, not a scratch file
 
-This alias is provider-neutral. Read the legacy source at $source for this project's intent,
-then execute it using the available client tools and the shared MindAttic Agent Standard.
-Do not require Claude, Codex, or a specific vendor to interpret this command.
+Usage: `/dcm [what to log, or omit to log whatever was just discussed/discovered]`
+
+**The point of this command**: this project has hundreds of ephemeral `.md` files under `docs/`
+and `docs/nodes/` that are all GENERATED MIRRORS, gitignored, and regenerated on demand (SS-A45).
+They are not memory — they are a cache. The actual persistent memory is the SQL database:
+`CanonDocumentSections` (world/craft/universe facts), `Nodes.NodeOutline` (per-book facts),
+character/entity records (`Speech*`/`Psychology*` fields, wounds, continuity claims). **When you
+learn or decide something worth remembering across sessions, write it to the DB row that owns it,
+then regenerate the mirror — never the reverse, and never leave it living only in a hand-edited
+`.md` file, a scratchpad note, or a client's own private memory system.** A client's own memory
+(e.g. `~/.claude/projects/.../memory/`) is for facts about how to collaborate with the user, not
+for project canon — canon belongs in this project's own DB so the prose engine itself can see it.
+
+## Step 0 — figure out which table owns the fact
+
+| The fact is about... | Lives in | Write via |
+|---|---|---|
+| Engine invariant, GLMZ world fact, Fantasy/Entos world fact | `CanonDocuments`/`CanonDocumentSections` | `set_canon_section` (MCP), then `prose --generate-canon-md --type <Type>` |
+| One book's arc, characters, voice register, structural notes, blueprint, Event Sequence, or a **structural/state discrepancy note** (like "this book's chapter split regressed in the live DB") | `Nodes.NodeOutline` (that book's row) | `set_book_outline` (MCP, preferred, full-body write) — or CLI `prose --set-book-outline --slug <slug> --file <path>` (also a FULL OVERWRITE — read the current outline first, append/edit, write the whole thing back). Always follow with `prose --generate-node-doc --slug <slug> --universe <u>` + `prose --sync-markdown` so the mirror and `MarkdownFiles` (what DocContextService actually injects) pick it up |
+| A character's voice, psychology, wounds, relationships | That character's `Entity`/`Character` record | `create_character` (MCP, pass the id + the changed field) — never a `docs/registers/*.md` file, those are retired (SS-A46) |
+| A craft principle (universal prose rule, or a universe-specific craft addition) | `CanonDocumentSections` row inside the CraftGuide/GLMZ-craft/SCRY-craft document | Same as row 1 — **do NOT hand-edit `docs/CRAFT.md`/`docs/GLMZ.md`/`docs/SCRY.md` directly**; those files carry a "GENERATED — do not hand-edit" banner (verify DB-backed generation is still true via `Program.cs`'s `--generate-canon-md` handler before trusting either source blindly) |
+
+If genuinely unsure which table owns it, query `CanonDocuments`/`CanonDocumentSections` for the
+right `SectionKey`/document, or ask — don't guess and don't default to "just leave it in a memory
+file" as the easy way out.
+
+## Step 1 — check whether the Hub/MCP path is actually connected
+
+Try the relevant MCP tool first. If the Prose MCP server isn't connected this session, **stop and
+tell the user the MCP path is unavailable — do not fall back to a direct/raw/parameterized DB
+write of any kind.** Nothing reaches the database except through Prose.Hub (HARD, absolute rule,
+2026-08-22 — see project memory `feedback_all_writes_through_hub`). An earlier version of this
+step told readers to fall back to a parameterized `sqlcmd`/`SqlClient` write when MCP wasn't
+connected — that guidance caused a real incident and is retired. The user decides whether to
+reconnect MCP, use the CLI instead, or grant a one-time documented exception.
+
+## Step 2 — regenerate the mirror, don't skip it
+
+A DB write with no regeneration means the DCM injection pipeline (`DocContextService`) still sees
+the OLD content via `MarkdownFiles` until the next sync. Always finish with the narrowest
+regeneration command that covers what you changed:
+- `prose --generate-canon-md --type <Type>` (not `--all` unless you touched more than one canon doc)
+- `prose --generate-node-doc --slug <slug> --universe <glmz|scry|nonfiction|...>`
+- `prose --sync-markdown` (pushes the regenerated `.md` into `MarkdownFiles`, which is what
+  `DocContextService.PrepareForNodeAsync` actually reads at generation time)
+
+## Step 3 — report exactly what you wrote and where
+
+State: which table/row changed, what the new content says (or a summary if it's long), which
+regeneration commands ran, and confirmation the mirror file now reflects it (e.g. grep the
+regenerated `docs/nodes/<CODE>.md` for the new content, or check `SyncedAt`/row count from
+`--sync-markdown`'s own output). Do not just say "logged it" — show the verification.
+
+## Argument handling
+
+If an argument was given, that's the fact/decision to log — go straight to Step 0 for it. If
+invoked bare, log whatever was just discussed, decided, or discovered immediately before this
+command in the conversation — don't ask the user to repeat it.

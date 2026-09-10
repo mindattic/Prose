@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prose — Engineering Reference</title>
 <meta name="description" content="Full engineering reference for the Prose literary fiction engine.">
-<meta name="generated" content="2026-08-27">
+<meta name="generated" content="2026-09-10">
 <style>
 :root{
   --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;
@@ -136,6 +136,11 @@ pre:hover .cpbtn{opacity:1}
   </nav>
   <main id="content">
 <h1 id="prose">Prose</h1>
+<blockquote>
+<p><strong>Provider-neutral agent entrypoint:</strong> start with <a href="AGENTS.md"><code>AGENTS.md</code></a> and
+<a href="docs/agent/PROSE_PROTOCOL.md"><code>docs/agent/PROSE_PROTOCOL.md</code></a>. MCP is the preferred transport;
+<code>prose agent bootstrap --json</code> is the CLI fallback for any agent host.</p>
+</blockquote>
 <p><strong>A canon-grounded, voice-disciplined story-generation engine for a cyberpunk century — and every other universe stood up alongside it.</strong></p>
 <blockquote>
 <p><strong>This README is the engineering tour — exhaustive, current, and stored in the database.</strong>
@@ -556,7 +561,9 @@ the Blazor UIs in Epoch 4.</p>
 <li>Assemble <code>BeatContext</code> (X-Ray context via <code>SceneContextAssembler</code>, <code>NodeId</code> always set).</li>
 <li>Call <code>ProseWriterRouter.WriteAsync(context, beatId, beatIndex, totalBeats)</code>.</li>
 <li><code>prose --examine-emotion --slug &lt;slug&gt;</code> — 8-dimension emotional scoring.</li>
-<li><code>prose --book-audit --slug &lt;slug&gt;</code> — gateway/sequel commandments once the book is complete.</li>
+<li><code>prose --commandment-audit --slug &lt;slug&gt;</code> — gateway/sequel commandments once the book is
+complete (renamed from <code>--book-audit</code> 2026-08-30 — it collided with the unrelated
+<code>--audit-book</code> full battery).</li>
 <li><code>prose --plant-audit --slug &lt;slug&gt;</code> — orphaned-plant check.</li>
 <li><code>prose --storyscope-audit --slug &lt;slug&gt;</code> — verifies the structural anti-tells held (monotonic
 escalation, varied event types, no moral gloss, no epilogue, subplot executed). BLOCKER
@@ -1044,8 +1051,8 @@ line-by-line dump — <code>Program.cs</code> is the exhaustive source, and the 
 <td>Hash-gated binary craft/delight checklist</td>
 </tr>
 <tr>
-<td><code>prose --duel --slug &lt;slug&gt;</code></td>
-<td>Cross-provider pairwise splice duels</td>
+<td><code>prose --duel --beat-id &lt;guid&gt; --candidate &lt;file&gt; [--goal &quot;...&quot;] [--apply]</code></td>
+<td>Vote-gated (SS-A44) blind A/B duel between a beat&#39;s current text and one candidate revision</td>
 </tr>
 <tr>
 <td><code>prose --diagnose-book --slug &lt;slug&gt;</code></td>
@@ -1056,8 +1063,12 @@ line-by-line dump — <code>Program.cs</code> is the exhaustive source, and the 
 <td>Repeatable full-QA orchestrator — every audit tool in one pass</td>
 </tr>
 <tr>
-<td><code>prose --book-audit --slug &lt;slug&gt;</code></td>
-<td>Gateway/sequel commandment audit</td>
+<td><code>prose --publish-readiness --slug &lt;slug&gt;</code></td>
+<td>docs/LOGIC.md §9&#39;s five-point publish-readiness gate as one readout</td>
+</tr>
+<tr>
+<td><code>prose --commandment-audit --slug &lt;slug&gt;</code></td>
+<td>Gateway/sequel commandment audit (renamed from <code>--book-audit</code> 2026-08-30)</td>
 </tr>
 <tr>
 <td><code>prose --plant-audit --slug &lt;slug&gt;</code></td>
@@ -1116,8 +1127,8 @@ line-by-line dump — <code>Program.cs</code> is the exhaustive source, and the 
 <td>Repairs cross-universe roster/POV leaks (the fail-closed scoping fix from Epoch 4)</td>
 </tr>
 <tr>
-<td><code>prose --review-book</code> / <code>--review-node</code> / <code>--review-entity</code></td>
-<td><strong>Quarantined legacy vote panels</strong> — SS-A44-gated, explicit request only</td>
+<td><code>prose --review-node</code> / <code>--review-entity</code></td>
+<td><strong>Quarantined legacy vote panels</strong> — SS-A44-gated, explicit request only (<code>--review-book</code>/<code>--run-panel</code> aliases retired 2026-08-30)</td>
 </tr>
 </tbody></table>
 <h3 id="canon-amp-world">Canon &amp; world</h3>
@@ -2376,7 +2387,7 @@ retire) — the answer is retire; there is no browser surface, and there is no s
 one to.</p>
 <p>The only &quot;deployment&quot; that exists is local: <code>v3/Prose.Hub/tools/deploy.ps1</code> publishes
 <code>Prose.Hub.exe</code> (bundling <code>Prose.Cli</code> + <code>Prose.Mcp</code> + <code>Prose.Core</code>) to <code>C:\Apps\Prose\Prose.Hub\</code>
-and launches it — see <code>.claude/hooks/start-prose-hub.ps1</code> for how this happens automatically at
+and launches it — see <code>.prose/hooks/start-prose-hub.ps1</code> for how this happens automatically at
 the start of every Claude Code session. <code>dotnet test v3/Prose.UnitTests</code> still runs locally the
 same way it always has; there is no CI runner and no <code>master</code>-push automation of any kind.</p>
 <hr>

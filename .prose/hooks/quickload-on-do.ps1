@@ -3,7 +3,7 @@
 
   After /quicksave + /clear, the next session restores by typing "do" (this hook) or running
   /quickload (the command). Any other prompt passes through untouched. Reads
-  <repo>\.claude\quicksave.md, injects it as authoritative resume context, then DELETES it so
+  <repo>\.prose\quicksave.md, injects it as authoritative resume context, then DELETES it so
   the refill is one-shot. Person-of-Interest protocol: the Machine reloads its printed stack.
 
   Emits Claude Code hook JSON on stdout. PowerShell 5.1 / Win-1252 safe: every non-ASCII char
@@ -18,9 +18,9 @@ $prompt = if ($j -and $j.prompt) { [string]$j.prompt } else { '' }
 # Only a bare "do" / "do it" triggers the restore - everything else passes through.
 if ($prompt -notmatch '^\s*(do|do it)\s*[.!]*\s*$') { Write-Output '{}'; exit 0 }
 
-# repo root = two levels up from this script (<repo>\.claude\hooks\quickload-on-do.ps1)
+# repo root = two levels up from this script (<repo>\.prose\hooks\quickload-on-do.ps1)
 $repoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
-$save     = Join-Path $repoRoot '.claude\quicksave.md'
+$save     = Join-Path $repoRoot '.prose\quicksave.md'
 
 if (-not (Test-Path $save)) { Write-Output '{}'; exit 0 }
 $body = Get-Content -LiteralPath $save -Raw -Encoding UTF8

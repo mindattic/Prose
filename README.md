@@ -1394,7 +1394,7 @@ one to.
 
 The only "deployment" that exists is local: `v3/Prose.Hub/tools/deploy.ps1` publishes
 `Prose.Hub.exe` (bundling `Prose.Cli` + `Prose.Mcp` + `Prose.Core`) to `C:\Apps\Prose\Prose.Hub\`
-and launches it — see `.claude/hooks/start-prose-hub.ps1` for how this happens automatically at
+and launches it — see `.prose/hooks/start-prose-hub.ps1` for how this happens automatically at
 the start of every Claude Code session. `dotnet test v3/Prose.UnitTests` still runs locally the
 same way it always has; there is no CI runner and no `master`-push automation of any kind.
 

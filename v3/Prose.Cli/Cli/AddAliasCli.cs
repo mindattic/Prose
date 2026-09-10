@@ -16,7 +16,7 @@ namespace Prose.Cli;
 /// serving a schema older than the parameter, because the client then strips the property and the
 /// call still returns <c>ok:true</c> having done nothing (found 2026-08-24 while re-binding the
 /// bare alias "Kofi" from Kofi Sesay, a canon-only noodle vendor, to Kofi Mensah, the loader the
-/// BCODA Ch24–25 prose actually means; see <c>.claude/hooks/build-prose-mcp.ps1</c> for the
+/// BCODA Ch24–25 prose actually means; see <c>.prose/hooks/build-prose-mcp.ps1</c> for the
 /// stale-schema failure itself). Only the non-character entity types still lack an add path at
 /// all, which is why this discovers its target table from the EF model rather than hard-coding
 /// <c>CharacterAlias</c>.

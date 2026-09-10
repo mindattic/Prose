@@ -12,7 +12,7 @@ namespace Prose.Mcp;
 /// in-process copy of these singletons), these tools read/write the Hub's ONE shared
 /// copy directly, so edits made through the Hub (or by another Prose.Mcp/Prose.Cli
 /// session hitting the Hub) are visible here without waiting on this process's own
-/// staleness probe. Requires the Hub to be running (see .claude/hooks/start-prose-hub.ps1,
+/// staleness probe. Requires the Hub to be running (see .prose/hooks/start-prose-hub.ps1,
 /// which auto-starts it on SessionStart) — falls back to a clear error if it isn't.
 /// </summary>
 [McpServerToolType]
