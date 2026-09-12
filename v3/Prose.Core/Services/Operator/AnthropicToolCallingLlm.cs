@@ -1,6 +1,5 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
-using MindAttic.Legion;
 
 namespace Prose.Core.Services.Operator;
 
@@ -19,7 +18,7 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
     public string Name => "Claude";
 
     public AnthropicToolCallingLlm(AnthropicToolClient client, string model = "claude-opus-4-7")
-        : this(client, ResolveApiKey, model) { }
+        : this(client, static () => null, model) { }
 
     /// <summary>Test-friendly constructor — injects the API-key resolver instead of reading the
     /// real Claude Code OAuth session / shared credential store.</summary>
@@ -42,10 +41,11 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
     {
         var apiKey = resolveApiKey()
             ?? throw new InvalidOperationException(
-                "No Claude Code Team OAuth session found (~/.claude/.credentials.json missing, " +
-                "malformed, or refresh failed). This operator intentionally never falls back to " +
-                "the pay-per-token 'claude-api' key — fix the Team OAuth session rather than " +
-                "spending API credit.");
+                "No Anthropic API key configured for this operator. A Claude Code Team subscription " +
+                "OAuth session cannot authenticate direct calls to the Anthropic Messages API — a " +
+                "Team seat and an API key are different credential types, not interchangeable — so " +
+                "this operator never falls back to one. Run 'prose --set-byo-key --provider claude " +
+                "--key <key>' to opt a personal API key in explicitly.");
 
         var messages = ToAnthropicMessages(history);
         var toolsArray = ToAnthropicTools(tools);
@@ -53,12 +53,6 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
         var turn = await client.CreateAsync(apiKey, model, systemPrompt, messages, toolsArray, maxTokens, ct);
         return new ToolTurnResult(FromAnthropicContent(turn.Content));
     }
-
-    // Author ruling 2026-08-25: this operator drives a long-running, many-book tool-calling loop
-    // (KdpPublish) and must NEVER silently fall through to the pay-per-token 'claude-api' key —
-    // a single unattended run could burn real money with no visible warning. Team OAuth only;
-    // if it's unavailable, CreateTurnAsync throws instead of spending credit.
-    private static string? ResolveApiKey() => LegionClient.GetClaudeTeamOAuthToken();
 
     private static JsonArray ToAnthropicTools(IReadOnlyList<ToolDefinition> tools)
     {

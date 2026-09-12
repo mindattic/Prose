@@ -56,7 +56,7 @@ public class AuditRunnerPersistenceTests
         public string Key => key;
         public string Title => key;
         public Task<IReadOnlyList<AuditVerdict>> EvaluateAsync(AuditContext ctx, CancellationToken ct) =>
-            throw new InvalidOperationException("Circuit breaker open for provider 'claude-api'.");
+            throw new InvalidOperationException("Circuit breaker open for provider 'claude'.");
     }
 
     [Test]

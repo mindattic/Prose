@@ -24,31 +24,9 @@ public class ClaudeService : ILlmService
     }
 
     public Task<bool> IsConfiguredAsync()
-        => Task.FromResult(legion.IsProviderConfigured(settings.ActiveLlmProvider));
+        => Task.FromResult(legion.IsProviderConfigured("claude"));
 
-    /// <summary>Forced-provider-id variant, used by <see cref="LlmRouter"/>'s per-variant adapters.</summary>
-    public Task<bool> IsConfiguredAsync(string providerId)
-        => Task.FromResult(legion.IsProviderConfigured(providerId));
-
-    public Task<string> GenerateAsync(
-        string system,
-        string user,
-        double temperature = 0.8,
-        int maxTokens = 4096,
-        string? model = null,
-        CancellationToken ct = default)
-        => GenerateAsync(
-            settings.ActiveLlmProvider is "claude-api" or "claude-team" ? settings.ActiveLlmProvider : "claude-team",
-            system, user, temperature, maxTokens, model, ct);
-
-    /// <summary>
-    /// Same as <see cref="GenerateAsync(string,string,double,int,string?,CancellationToken)"/>
-    /// but with the Claude variant (claude-api vs claude-team) forced by the caller instead of
-    /// read from <see cref="SettingsService.ActiveLlmProvider"/> — used by <see cref="LlmRouter"/>
-    /// so the two variants can be tried as independent fallback-chain tiers.
-    /// </summary>
     public async Task<string> GenerateAsync(
-        string providerId,
         string system,
         string user,
         double temperature = 0.8,
@@ -58,19 +36,19 @@ public class ClaudeService : ILlmService
     {
         var activeModel = model ?? settings.Model;
 
-        if (providerId == "claude-api" && string.IsNullOrWhiteSpace(settings.ApiKey))
+        if (string.IsNullOrWhiteSpace(settings.ApiKey))
         {
-            log.LogError("Claude API key not configured for provider claude-api");
+            log.LogError("Claude API key not configured");
             throw new InvalidOperationException("API key not configured.");
         }
 
-        log.LogDebug("Claude request via Legion: provider={Provider}, model={Model}, maxTokens={MaxTokens}, temp={Temperature}, systemLen={SystemLen}, userLen={UserLen}",
-            providerId, activeModel, maxTokens, temperature, system.Length, user.Length);
+        log.LogDebug("Claude request via Legion: model={Model}, maxTokens={MaxTokens}, temp={Temperature}, systemLen={SystemLen}, userLen={UserLen}",
+            activeModel, maxTokens, temperature, system.Length, user.Length);
 
         try
         {
             var text = (await legion.CallAsync(
-                providerId: providerId,
+                providerId: "claude",
                 systemPrompt: system,
                 userMessage: user,
                 maxTokens: maxTokens,
@@ -94,21 +72,7 @@ public class ClaudeService : ILlmService
         }
     }
 
-    public Task<string> GenerateWithCachedPrefixAsync(
-        string cachedPrefix,
-        string dynamicSystem,
-        string user,
-        double temperature = 0.8,
-        int maxTokens = 4096,
-        string? model = null,
-        CancellationToken ct = default)
-        => GenerateWithCachedPrefixAsync(
-            settings.ActiveLlmProvider is "claude-api" or "claude-team" ? settings.ActiveLlmProvider : "claude-team",
-            cachedPrefix, dynamicSystem, user, temperature, maxTokens, model, ct);
-
-    /// <summary>Forced-provider-id variant — see the non-cached overload's remarks.</summary>
     public async Task<string> GenerateWithCachedPrefixAsync(
-        string providerId,
         string cachedPrefix,
         string dynamicSystem,
         string user,
@@ -119,14 +83,14 @@ public class ClaudeService : ILlmService
     {
         var activeModel = model ?? settings.Model;
 
-        if (providerId == "claude-api" && string.IsNullOrWhiteSpace(settings.ApiKey))
+        if (string.IsNullOrWhiteSpace(settings.ApiKey))
             throw new InvalidOperationException("API key not configured.");
 
-        log.LogDebug("Claude cached-prefix request: provider={Provider}, model={Model}, prefixLen={PrefixLen}, dynamicLen={DynamicLen}",
-            providerId, activeModel, cachedPrefix.Length, dynamicSystem.Length);
+        log.LogDebug("Claude cached-prefix request: model={Model}, prefixLen={PrefixLen}, dynamicLen={DynamicLen}",
+            activeModel, cachedPrefix.Length, dynamicSystem.Length);
 
         var text = (await legion.CallAsync(
-            providerId:          providerId,
+            providerId:          "claude",
             systemPrompt:        dynamicSystem,
             userMessage:         user,
             maxTokens:           maxTokens,

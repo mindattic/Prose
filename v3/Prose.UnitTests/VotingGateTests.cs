@@ -60,7 +60,7 @@ public class VotingGateTests
     [Test]
     public void ReadVotingEnabledDefault_KeyFalse_ReturnsFalse()
     {
-        var dir = WriteLegionJson("{ \"votingEnabled\": false, \"voters\": [\"claude-team\"] }");
+        var dir = WriteLegionJson("{ \"votingEnabled\": false, \"voters\": [\"claude\"] }");
         try { Assert.That(VotingGate.ReadVotingEnabledDefault(dir), Is.False); }
         finally { CleanUp(dir); }
     }
@@ -68,7 +68,7 @@ public class VotingGateTests
     [Test]
     public void ReadVotingEnabledDefault_KeyTrue_ReturnsTrue()
     {
-        var dir = WriteLegionJson("{ \"votingEnabled\": true, \"voters\": [\"claude-team\"] }");
+        var dir = WriteLegionJson("{ \"votingEnabled\": true, \"voters\": [\"claude\"] }");
         try { Assert.That(VotingGate.ReadVotingEnabledDefault(dir), Is.True); }
         finally { CleanUp(dir); }
     }
@@ -77,7 +77,7 @@ public class VotingGateTests
     public void ReadVotingEnabledDefault_KeyAbsent_ReturnsFalse()
     {
         // File present but the key is missing → OFF (fail-safe).
-        var dir = WriteLegionJson("{ \"voters\": [\"claude-team\"], \"judge\": \"claude-team\" }");
+        var dir = WriteLegionJson("{ \"voters\": [\"claude\"], \"judge\": \"claude\" }");
         try { Assert.That(VotingGate.ReadVotingEnabledDefault(dir), Is.False); }
         finally { CleanUp(dir); }
     }

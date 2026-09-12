@@ -47,15 +47,15 @@ public class LlmCallHistoryTests
     public async Task GenerateAsync_WritesSuccessRow_TaggedWithCurrentAction()
     {
         LlmActionContext.Current = "--write-story";
-        var providers = new Dictionary<string, ILlmService> { ["claude-api"] = new StubLlm("STUB-OK") };
-        var router = new LlmRouter(providers, () => "claude-api", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
+        var providers = new Dictionary<string, ILlmService> { ["claude"] = new StubLlm("STUB-OK") };
+        var router = new LlmRouter(providers, () => "claude", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
 
         await router.GenerateAsync("sys", "usr", model: "claude-sonnet-5");
 
         await using var db = dbFactory.CreateDbContext();
         var rows = db.LlmCallHistories.ToList();
         Assert.That(rows, Has.Count.EqualTo(1));
-        Assert.That(rows[0].ProviderId, Is.EqualTo("claude-api"));
+        Assert.That(rows[0].ProviderId, Is.EqualTo("claude"));
         Assert.That(rows[0].Action, Is.EqualTo("--write-story"));
         Assert.That(rows[0].Success, Is.True);
         Assert.That(rows[0].FallbackHopIndex, Is.EqualTo(0));
@@ -65,8 +65,8 @@ public class LlmCallHistoryTests
     [Test]
     public async Task GenerateAsync_WritesOneFailureRowAndOneSuccessRow_OnFallback()
     {
-        var providers = Providers("claude-api", "boom", "openai", "OPENAI-OK");
-        var router = new LlmRouter(providers, () => "claude-api", () => ["openai"], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
+        var providers = Providers("claude", "boom", "openai", "OPENAI-OK");
+        var router = new LlmRouter(providers, () => "claude", () => ["openai"], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
 
         var response = await router.GenerateAsync("sys", "usr");
 
@@ -74,7 +74,7 @@ public class LlmCallHistoryTests
         await using var db = dbFactory.CreateDbContext();
         var rows = db.LlmCallHistories.OrderBy(r => r.Id).ToList();
         Assert.That(rows, Has.Count.EqualTo(2));
-        Assert.That(rows[0].ProviderId, Is.EqualTo("claude-api"));
+        Assert.That(rows[0].ProviderId, Is.EqualTo("claude"));
         Assert.That(rows[0].Success, Is.False);
         Assert.That(rows[0].FallbackHopIndex, Is.EqualTo(0));
         Assert.That(rows[0].ErrorMessage, Does.Contain("boom"));
@@ -91,8 +91,8 @@ public class LlmCallHistoryTests
         // table (not only BeatId on the prompt-text table, as before), so "how many calls did
         // beat X make, by stage" is one indexed query.
         var beat = Guid.NewGuid();
-        var providers = new Dictionary<string, ILlmService> { ["claude-api"] = new StubLlm("STUB-OK") };
-        var router = new LlmRouter(providers, () => "claude-api", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
+        var providers = new Dictionary<string, ILlmService> { ["claude"] = new StubLlm("STUB-OK") };
+        var router = new LlmRouter(providers, () => "claude", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
 
         var previousBeat = LlmActionContext.CurrentBeatId;
         LlmActionContext.CurrentBeatId = beat;
@@ -121,8 +121,8 @@ public class LlmCallHistoryTests
     {
         // Unattributed calls are recorded as null (never a placeholder string) so the trace
         // report can surface them as a plumbing gap rather than silently folding them in.
-        var providers = new Dictionary<string, ILlmService> { ["claude-api"] = new StubLlm("STUB-OK") };
-        var router = new LlmRouter(providers, () => "claude-api", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
+        var providers = new Dictionary<string, ILlmService> { ["claude"] = new StubLlm("STUB-OK") };
+        var router = new LlmRouter(providers, () => "claude", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
 
         await router.GenerateAsync("sys", "usr");
 
@@ -136,8 +136,8 @@ public class LlmCallHistoryTests
     public async Task GenerateAsync_FailedHop_AlsoCarriesStageAndBeat()
     {
         var beat = Guid.NewGuid();
-        var providers = Providers("claude-api", "boom", "openai", "OPENAI-OK");
-        var router = new LlmRouter(providers, () => "claude-api", () => ["openai"], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
+        var providers = Providers("claude", "boom", "openai", "OPENAI-OK");
+        var router = new LlmRouter(providers, () => "claude", () => ["openai"], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
 
         var previousBeat = LlmActionContext.CurrentBeatId;
         LlmActionContext.CurrentBeatId = beat;
@@ -173,8 +173,8 @@ public class LlmCallHistoryTests
     [Test]
     public async Task GenerateAsync_DefaultsActionToUnspecified_WhenNoAmbientContextSet()
     {
-        var providers = new Dictionary<string, ILlmService> { ["claude-api"] = new StubLlm("OK") };
-        var router = new LlmRouter(providers, () => "claude-api", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
+        var providers = new Dictionary<string, ILlmService> { ["claude"] = new StubLlm("OK") };
+        var router = new LlmRouter(providers, () => "claude", () => [], new LastPromptStore(), dbFactory, NullLogger<LlmRouter>.Instance);
 
         await router.GenerateAsync("sys", "usr");
 

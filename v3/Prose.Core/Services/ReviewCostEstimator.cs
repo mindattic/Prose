@@ -198,12 +198,7 @@ public static class ReviewCostEstimator
     }
 
     /// <summary>Looks up the cheapest configured model for a given provider.</summary>
-    public static string CheapModelFor(string providerId) => providerId.ToLowerInvariant() switch
-    {
-        "claude-api"  => "claude-haiku-4-5-20251001",
-        "claude-team" => "claude-haiku-4-5-20251001",
-        _             => "claude-haiku-4-5-20251001",
-    };
+    public static string CheapModelFor(string providerId) => "claude-haiku-4-5-20251001";
 
     // ── Formatting helpers ────────────────────────────────────────────────────────
 

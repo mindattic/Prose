@@ -88,7 +88,7 @@ public class SettingsServiceTests
     public void Defaults_ActiveLlmProvider_IsClaudeApi()
     {
         using var fresh = new SettingsService(tempDir);
-        Assert.That(fresh.ActiveLlmProvider, Is.EqualTo("claude-api"));
+        Assert.That(fresh.ActiveLlmProvider, Is.EqualTo("claude"));
     }
 
     [Test]

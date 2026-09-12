@@ -77,11 +77,11 @@ public class LlmRouterModelFamilyTests
         var openAi = new ModelRecordingLlm("OPENAI-OK");
         var providers = new Dictionary<string, ILlmService>
         {
-            ["claude-api"] = new ModelRecordingLlm(throwMessage: "503 overloaded_error"),
+            ["claude"] = new ModelRecordingLlm(throwMessage: "503 overloaded_error"),
             ["openai"] = openAi,
         };
 
-        var response = await Router(providers, "claude-api", "openai")
+        var response = await Router(providers, "claude", "openai")
             .GenerateAsync("sys", "usr", model: "claude-sonnet-5");
 
         Assert.That(response, Is.EqualTo("OPENAI-OK"),
@@ -89,22 +89,6 @@ public class LlmRouterModelFamilyTests
         Assert.That(openAi.Called, Is.True);
         Assert.That(openAi.SeenModel, Is.Null,
             "the OpenAI hop must be asked with its OWN default — forwarding 'claude-sonnet-5' is a guaranteed model_not_found");
-    }
-
-    [Test]
-    public async Task PinnedClaudeModel_IsPreservedForTheOtherAnthropicProvider()
-    {
-        var claudeTeam = new ModelRecordingLlm("TEAM-OK");
-        var providers = new Dictionary<string, ILlmService>
-        {
-            ["claude-api"] = new ModelRecordingLlm(throwMessage: "boom"),
-            ["claude-team"] = claudeTeam,
-        };
-
-        await Router(providers, "claude-api", "claude-team").GenerateAsync("sys", "usr", model: "claude-sonnet-5");
-
-        Assert.That(claudeTeam.SeenModel, Is.EqualTo("claude-sonnet-5"),
-            "claude-team serves the same family — dropping the pin here would silently downgrade the model");
     }
 
     [Test]
@@ -126,7 +110,7 @@ public class LlmRouterModelFamilyTests
             ("mistral",    "mistral-large",      "mistral-large"),
             ("kimi",       "moonshot-v2",        "moonshot-v2"),
             ("perplexity", "sonar-pro",          "sonar-pro"),
-            ("claude-api", "gpt-5",              null),
+            ("claude", "gpt-5",              null),
         };
 
         foreach (var (provider, model, expected) in cases)
@@ -170,11 +154,11 @@ public class LlmRouterModelFamilyTests
     {
         var providers = new Dictionary<string, ILlmService>
         {
-            ["claude-api"] = new ModelRecordingLlm(throwMessage: "503 overloaded_error"),
+            ["claude"] = new ModelRecordingLlm(throwMessage: "503 overloaded_error"),
             ["openai"] = new ModelRecordingLlm("OPENAI-OK"),
         };
 
-        await Router(providers, "claude-api", "openai").GenerateAsync("sys", "usr", model: "claude-sonnet-5");
+        await Router(providers, "claude", "openai").GenerateAsync("sys", "usr", model: "claude-sonnet-5");
 
         await using var db = dbFactory.CreateDbContext();
         var rows = db.LlmCallHistories.OrderBy(r => r.Id).ToList();

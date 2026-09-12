@@ -14,7 +14,7 @@ namespace Prose.Core.Services;
 ///
 /// <para>Three wire paths, never mixed inside a call:</para>
 /// <list type="bullet">
-/// <item><see cref="CloudReviewLlm"/> — Legion trusted providers (claude-api/claude-team/openai/gemini/deepseek/…)</item>
+/// <item><see cref="CloudReviewLlm"/> — Legion trusted providers (claude/openai/gemini/deepseek/…)</item>
 /// <item><see cref="RegistryReviewLlm"/> — settings-declared OpenAI-compatible families (kimi, grok, …)</item>
 /// <item><see cref="LocalReviewLlm"/> — the <c>--local</c> Ollama/vLLM box</item>
 /// </list>
@@ -68,8 +68,7 @@ public sealed class ReviewLlmTransport
     /// providers carry their own cheap model in their declaration.</summary>
     private static readonly Dictionary<string, string> TrustedCheapModels = new(StringComparer.OrdinalIgnoreCase)
     {
-        ["claude-api"]  = "claude-haiku-4-5-20251001",
-        ["claude-team"] = "claude-haiku-4-5-20251001",
+        ["claude"]   = "claude-haiku-4-5-20251001",
         ["openai"]   = "gpt-4.1-nano",
         ["gemini"]   = "gemini-2.0-flash",
         ["deepseek"] = "deepseek-chat",
@@ -109,7 +108,7 @@ public sealed class ReviewLlmTransport
     /// <summary>Providers eligible for review runs: all active Legion trusted providers
     /// PLUS registry providers that have a stored key, filtered by the allowed list
     /// (per-run override → persisted setting). Same semantics the legacy panel always
-    /// had — the default allowed list ("claude-api") keeps legacy behavior identical.</summary>
+    /// had — the default allowed list ("claude") keeps legacy behavior identical.</summary>
     public List<string> ProviderIds(string? allowedOverride = null)
     {
         var active = cfg.ActiveProviderIds.ToList();
@@ -123,13 +122,9 @@ public sealed class ReviewLlmTransport
         return filtered.Count > 0 ? filtered : cfg.ActiveProviderIds.ToList();
     }
 
-    /// <summary>Resolve the API key for any provider — trusted, registry, or OAuth.</summary>
+    /// <summary>Resolve the API key for any provider — trusted or registry.</summary>
     public string? ResolveKey(string provider)
     {
-        // OAuth providers must always be resolved fresh — the token in cfg.ApiKeys is a
-        // startup snapshot that expires mid-session.
-        if (string.Equals(provider, "claude-team", StringComparison.OrdinalIgnoreCase))
-            return LegionClient.GetClaudeTeamOAuthToken();
         if (cfg.ApiKeys.TryGetValue(provider, out var k) && !string.IsNullOrWhiteSpace(k)) return k;
         return MindAtticCredentialStore.GetKey(provider);
     }

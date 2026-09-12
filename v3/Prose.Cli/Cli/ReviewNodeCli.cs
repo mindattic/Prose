@@ -20,10 +20,10 @@ namespace Prose.Cli;
 ///   --effort TIER       Cost tier for the sampled default (RFC 0009): draft|standard|deep.
 ///                       Scales ballots/prose/diagnosis to the task's importance. Explicit
 ///                       --ballots/--prose/--skip-diagnosis still win over the tier.
-///   --providers LIST    Comma-separated provider override for this run only (e.g. claude-team,openai).
+///   --providers LIST    Comma-separated provider override for this run only (e.g. claude,openai).
 ///                       Overrides both the effort profile and ReviewAllowedProviders settings.
 ///   --model ID          Force a specific model for all cloud providers this run.
-///   --model-map MAP     Per-provider model overrides: "claude-team=claude-opus-4-7,openai=gpt-4.1".
+///   --model-map MAP     Per-provider model overrides: "claude=claude-opus-4-7,openai=gpt-4.1".
 ///                       Takes precedence over --model for providers named in the map.
 ///   --experts           Run ONLY the fixed Expert Reader Panel for the current --universe
 ///                       (3 calibrated genre/domain superfans; see ExpertReaderCatalog) instead
@@ -333,7 +333,7 @@ public static class ReviewNodeCli
             {
                 try
                 {
-                    var costModel = useLocal ? null : ReviewCostEstimator.CheapModelFor("claude-api");
+                    var costModel = useLocal ? null : ReviewCostEstimator.CheapModelFor("claude");
                     var estimate  = await reviewer.EstimateCostAsync(nodeId, ballots, ballotOnly: prose <= 0, model: costModel);
                     Console.WriteLine();
                     Console.WriteLine(ReviewCostEstimator.RenderTable(estimate));

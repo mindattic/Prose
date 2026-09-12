@@ -299,7 +299,7 @@ public class NodeReviewService
         var export = await exporter.ExportAsync(nodeId, numberBeats: false, ct);
         var storyTokens = export.Markdown.Length / 4;
         var effectiveModel = string.IsNullOrWhiteSpace(model)
-            ? ReviewCostEstimator.CheapModelFor("claude-api")
+            ? ReviewCostEstimator.CheapModelFor("claude")
             : model;
         return ReviewCostEstimator.Estimate(export.Title, export.BeatCount, storyTokens, voterCount, effectiveModel, ballotOnly);
     }
@@ -551,7 +551,7 @@ public class NodeReviewService
         var totalCallsMade = saved.Count + proseAdded;
         var actualOutputTokens = (int)(rawOutputChars / 4);
         var receiptModel = saved.FirstOrDefault()?.Model
-                           ?? ReviewCostEstimator.CheapModelFor("claude-api");
+                           ?? ReviewCostEstimator.CheapModelFor("claude");
         var ballotOnlyRun = proseAdded == 0;
         string? actualCostTable = null;
         try
@@ -743,7 +743,7 @@ public class NodeReviewService
         {
             var storyTokens = seg.Segments.Sum(s => s.Markdown?.Length ?? 0) / 4;
             var votersFired = saved.Count + proseAdded;
-            var receiptModel = saved.FirstOrDefault()?.Model ?? ReviewCostEstimator.CheapModelFor("claude-api");
+            var receiptModel = saved.FirstOrDefault()?.Model ?? ReviewCostEstimator.CheapModelFor("claude");
             var ballotOnly = proseAdded == 0;
             var actualOutputTokens = (int)(rawOutputChars / 4);
             var actualEstimate = ReviewCostEstimator.EstimateActual(
@@ -961,9 +961,7 @@ Be honest and use the whole scale.";
         var providers = ReviewProviderIds();
         if (providers.Count == 0)
             throw new InvalidOperationException("No trusted LLM providers are configured with API keys — cannot edit.");
-        var editProvider = providers.Contains("claude-api") ? "claude-api"
-                         : providers.Contains("claude-team") ? "claude-team"
-                         : providers[0];
+        var editProvider = providers.Contains("claude") ? "claude" : providers[0];
 
         var export = await exporter.ExportAsync(nodeId, numberBeats: true, ct);
 
@@ -1649,7 +1647,7 @@ Return ONLY a JSON object and nothing else:
             var judgeId = settings.ReviewJudgeProvider;
             var judge = cfg.ActiveProviderIds.Contains(judgeId)
                 ? judgeId
-                : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude-api";
+                : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude";
             var key = ResolveKey(judge);
             if (string.IsNullOrWhiteSpace(key)) return RenderGripesFlat(reviews);
 
@@ -1775,7 +1773,7 @@ Return ONLY a JSON object and nothing else:
             var judgeId = settings.ReviewJudgeProvider;
             judge = cfg.ActiveProviderIds.Contains(judgeId)
                 ? judgeId
-                : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude-api";
+                : cfg.ActiveProviderIds.FirstOrDefault() ?? "claude";
             key = ResolveKey(judge);
             if (string.IsNullOrWhiteSpace(key)) return FallbackSummary(reviews, avg, dist);
             model = cfg.ModelOverrides.TryGetValue(judge, out var ov) && !string.IsNullOrWhiteSpace(ov)

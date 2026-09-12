@@ -31,8 +31,7 @@ public class LlmRouter : ILlmService
 
     private static readonly IReadOnlyDictionary<string, string> DisplayNames = new Dictionary<string, string>
     {
-        ["claude-team"] = "Claude (Team)",
-        ["claude-api"]  = "Claude (API)",
+        ["claude"]      = "Claude",
         ["openai"]      = "OpenAI",
         ["gemini"]      = "Gemini",
         ["deepseek"]    = "DeepSeek",
@@ -106,8 +105,7 @@ public class LlmRouter : ILlmService
         ILlmService perplexity, ILlmService codexCli, ILlmService geminiCli) =>
         new Dictionary<string, ILlmService>(StringComparer.OrdinalIgnoreCase)
         {
-            ["claude-api"]  = new ClaudeVariantAdapter(claude, "claude-api"),
-            ["claude-team"] = new ClaudeVariantAdapter(claude, "claude-team"),
+            ["claude"]      = claude,
             ["openai"]      = openAi,
             ["gemini"]      = gemini,
             ["deepseek"]    = deepSeek,
@@ -123,8 +121,7 @@ public class LlmRouter : ILlmService
     {
         var map = new Dictionary<string, ILlmService>(StringComparer.OrdinalIgnoreCase)
         {
-            ["claude-api"]  = claude,
-            ["claude-team"] = claude,
+            ["claude"]      = claude,
             ["openai"]      = openAi,
         };
         if (local is not null) map["local"] = local;
@@ -161,8 +158,7 @@ public class LlmRouter : ILlmService
     private static readonly IReadOnlyDictionary<string, string[]> ProviderFamilies =
         new Dictionary<string, string[]>(StringComparer.OrdinalIgnoreCase)
         {
-            ["claude-api"]  = ["anthropic"],
-            ["claude-team"] = ["anthropic"],
+            ["claude"]      = ["anthropic"],
             ["openai"]      = ["openai"],
             ["codex-cli"]   = ["openai"],
             ["gemini"]      = ["google"],
@@ -433,7 +429,7 @@ public class LlmRouter : ILlmService
     private string ResolvePrimary()
     {
         var primary = runProvider ?? activeProviderFunc();
-        return string.IsNullOrWhiteSpace(primary) ? "claude-api" : primary;
+        return string.IsNullOrWhiteSpace(primary) ? "claude" : primary;
     }
 
     /// <summary>Primary provider first, then the fallback chain, de-duplicated, in order.</summary>
@@ -486,31 +482,6 @@ public class LlmRouter : ILlmService
         return result;
     }
 
-    /// <summary>
-    /// Binds a fixed Claude variant (claude-api vs claude-team) so the two can be tried as
-    /// independent fallback-chain tiers — <see cref="ClaudeService"/>'s own default-reading
-    /// methods always defer to whichever variant <see cref="SettingsService.ActiveLlmProvider"/>
-    /// currently names, which isn't useful once there are two distinct tiers to try in order.
-    /// </summary>
-    private sealed class ClaudeVariantAdapter : ILlmService
-    {
-        private readonly ClaudeService claude;
-        private readonly string providerId;
-
-        public ClaudeVariantAdapter(ClaudeService claude, string providerId)
-        {
-            this.claude = claude;
-            this.providerId = providerId;
-        }
-
-        public Task<bool> IsConfiguredAsync() => claude.IsConfiguredAsync(providerId);
-
-        public Task<string> GenerateAsync(string system, string user, double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default)
-            => claude.GenerateAsync(providerId, system, user, temperature, maxTokens, model, ct);
-
-        public Task<string> GenerateWithCachedPrefixAsync(string cachedPrefix, string dynamicSystem, string user, double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default)
-            => claude.GenerateWithCachedPrefixAsync(providerId, cachedPrefix, dynamicSystem, user, temperature, maxTokens, model, ct);
-    }
 }
 
 public record LlmProviderStatus

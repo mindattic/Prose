@@ -19,8 +19,7 @@ namespace Prose.LlmCli;
 ///
 /// Credentials resolve through the same shared MindAttic credential store Prose.Core
 /// uses (%APPDATA%/MindAttic/LLM/) — a key already configured for Prose just works here,
-/// no extra setup. claude-team additionally rides the Claude Code CLI's own OAuth
-/// session automatically (LegionClient.ResolveKey handles this internally).
+/// no extra setup.
 /// </summary>
 internal static class Program
 {
@@ -148,7 +147,7 @@ internal static class Program
               prose-llm --provider <id> --prompt <text|@file|-> [options]
 
             Options:
-              --provider <id>       claude-api | claude-team | openai | gemini | deepseek |
+              --provider <id>       claude | openai | gemini | deepseek |
                                     mistral | kimi | perplexity | cohere | xai | groq |
                                     together | openrouter | fireworks
               --prompt <value>      literal text, "@path/to/file", or "-" for stdin

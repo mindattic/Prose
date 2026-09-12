@@ -6,7 +6,7 @@ namespace Prose.UnitTests;
 
 /// <summary>
 /// Live validation that Prose's trusted voting panel (providers listed in
-/// <c>legion.json</c> voters — currently claude-api / openai / gemini) actually
+/// <c>legion.json</c> voters — currently claude / openai / gemini) actually
 /// authenticate against their real endpoints, using the keys resolved through
 /// the shared MindAttic Vault store.
 ///
@@ -48,7 +48,7 @@ public class LiveKeyValidationTests
         var health = new LlmHealthCheck(client);
 
         // Load the actual voter list from legion.json so this test tracks the project config,
-        // not Legion's static DefaultIds (which may include retired providers like claude-team).
+        // not Legion's static DefaultIds.
         var legion = LegionConfig.LoadFromDirectory();
         var providerIds = legion?.Voters is { Count: > 0 }
             ? legion.Voters
@@ -57,13 +57,10 @@ public class LiveKeyValidationTests
 
         // Quota/billing failures mean the key is valid — the account just needs a
         // top-up. These don't block a commit; only dead/invalid/missing keys do.
-        // Exception: claude-team uses CLI OAuth — MissingCredential = not logged in, not a dead key.
         static bool IsKeyDead(LlmHealthResult r) =>
             !r.IsHealthy &&
             r.Diagnosis is not LlmHealthDiagnosis.QuotaExhausted
-                       and not LlmHealthDiagnosis.RateLimited &&
-            !(string.Equals(r.ProviderId, "claude-team", StringComparison.OrdinalIgnoreCase)
-              && r.Diagnosis == LlmHealthDiagnosis.MissingCredential);
+                       and not LlmHealthDiagnosis.RateLimited;
 
         var broken = results
             .Where(IsKeyDead)

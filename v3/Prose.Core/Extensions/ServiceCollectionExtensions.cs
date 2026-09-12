@@ -755,7 +755,25 @@ public static class ServiceCollectionExtensions
         // corporate proxy, so detection is simply disabled rather than worked around later.
         services.AddHttpClient<Services.Operator.AnthropicToolClient>(c => c.Timeout = TimeSpan.FromMinutes(15))
             .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler { UseProxy = false });
-        services.AddSingleton<Services.Operator.AnthropicToolCallingLlm>();
+        // BYO-key: prose --set-byo-key lets a human opt a personal key in ahead of the default
+        // chain — resolved live per call (SettingsKvStore.Get, not cached), so setting one needs
+        // no restart. This is an explicit opt-in; there is no automatic fallback for Claude below
+        // it — this operator drives a long-running, many-book tool-calling loop (KdpPublish) and
+        // must NEVER silently spend real API money unattended (2026-08-25 ruling). A prior fallback
+        // to a Claude Code Team subscription OAuth token was removed: a Team seat cannot
+        // authenticate direct Anthropic Messages API calls at all (confirmed in practice — the two
+        // are different credential types, not interchangeable), so it never actually provided the
+        // safety net it was meant to.
+        // One resolver factory shared by every provider below so a fix to the null/empty check or
+        // fallback order can't land in only one of them (mirrors Automata.Core's KeyResolver).
+        static Func<string?> ByoKeyResolver(IServiceProvider sp, Func<Services.Operator.OperatorByoKeys, string?> byo, Func<string?> fallback) =>
+            () => sp.GetRequiredService<SettingsKvStore>().Get<Services.Operator.OperatorByoKeys>("operator.byokeys") is { } keys && byo(keys) is { Length: > 0 } byoKey
+                ? byoKey
+                : fallback();
+
+        services.AddSingleton(sp => new Services.Operator.AnthropicToolCallingLlm(
+            sp.GetRequiredService<Services.Operator.AnthropicToolClient>(),
+            ByoKeyResolver(sp, k => k.AnthropicApiKey, static () => null)));
 
         // Multi-LLM Master Switch-Over: the KDP operator's tool-calling loop tries each of
         // these, in order, and uses whichever one has usable credentials right now — Claude
@@ -775,7 +793,8 @@ public static class ServiceCollectionExtensions
             .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler { UseProxy = false });
         services.AddSingleton<Services.Operator.OpenAiToolCallingLlm>(sp => new Services.Operator.OpenAiToolCallingLlm(
             sp.GetRequiredService<IHttpClientFactory>().CreateClient(nameof(Services.Operator.OpenAiToolCallingLlm)),
-            sp.GetRequiredService<ILogger<Services.Operator.OpenAiToolCallingLlm>>()));
+            sp.GetRequiredService<ILogger<Services.Operator.OpenAiToolCallingLlm>>(),
+            ByoKeyResolver(sp, k => k.OpenAiApiKey, () => MindAtticCredentialStore.GetKey("openai"))));
         services.AddSingleton<IReadOnlyList<Services.Operator.IToolCallingLlm>>(sp =>
         [
             sp.GetRequiredService<Services.Operator.AnthropicToolCallingLlm>(),
@@ -905,12 +924,7 @@ public static class ServiceCollectionExtensions
             {
                 ApiKeys =
                 {
-                    ["claude-api"]  = s.ApiKey,
-                    // claude-team uses the Claude Code CLI OAuth token (~/.claude/.credentials.json).
-                    // No API key exists; Legion resolves auth via ClaudeCodeOAuthSource. We seed the
-                    // token here so VotingConfiguration.ActiveProviderIds includes claude-team when
-                    // the OAuth token is present, and ResolveKey returns it to the review ballot call.
-                    ["claude-team"] = LegionClient.GetClaudeTeamOAuthToken() ?? "",
+                    ["claude"]     = s.ApiKey,
                     ["openai"]     = s.OpenAiApiKey,
                     ["gemini"]     = s.GeminiApiKey,
                     ["deepseek"]   = s.DeepSeekApiKey,
@@ -922,7 +936,7 @@ public static class ServiceCollectionExtensions
                     ["fireworks"]  = s.FireworksApiKey,
                     ["cohere"]     = s.CohereApiKey,
                 },
-                JudgeProviderId = "claude-team",
+                JudgeProviderId = "claude",
                 // AllowedProviderIds defaults to { claude, openai, deepseek }.
                 // legion.json (when present at the project root) overrides this
                 // so each app declares its own voter panel.

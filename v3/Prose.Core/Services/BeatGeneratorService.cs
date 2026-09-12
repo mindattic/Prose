@@ -449,7 +449,7 @@ public class BeatGeneratorService
                 "contradict canon or repeat a beat that already fired."),
         };
 
-        var providers = new[] { "claude-api", "openai", "gemini", "deepseek" };
+        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
         var voters = new List<VoterProfile>(experts.Length);
         for (int i = 0; i < experts.Length; i++)
         {
@@ -477,7 +477,7 @@ public class BeatGeneratorService
     /// </summary>
     private static string? HighTierModelFor(string providerId) => providerId switch
     {
-        "claude-api" => "claude-opus-4-7",
+        "claude" => "claude-opus-4-7",
         "openai"     => "gpt-4.1",
         "gemini"     => "gemini-2.5-pro",
         "deepseek"   => "deepseek-reasoner",
@@ -493,7 +493,7 @@ public class BeatGeneratorService
     /// </summary>
     private static IReadOnlyList<VoterProfile> BuildExpertPanelFromTable(IReadOnlyList<Models.ExpertPersona> picked)
     {
-        var providers = new[] { "claude-api", "openai", "gemini", "deepseek" };
+        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
         var voters = new List<VoterProfile>(picked.Count);
         for (int i = 0; i < picked.Count; i++)
         {
@@ -535,8 +535,8 @@ public class BeatGeneratorService
         {
             VoterId             = $"preview-{persona.Id}-{Guid.NewGuid().ToString("N")[..8]}",
             Name                = persona.Name,
-            ProviderId          = "claude-api",
-            ModelOverride       = HighTierModelFor("claude-api"),
+            ProviderId          = "claude",
+            ModelOverride       = HighTierModelFor("claude"),
             PersonalityMarkdown = persona.Lens,
         };
         var request = new VoteRequest
@@ -670,7 +670,7 @@ public class BeatGeneratorService
     /// </summary>
     private static IReadOnlyList<VoterProfile> BuildStorytellerPanel(int count)
     {
-        var providers = new[] { "claude-api", "openai", "gemini", "deepseek" };
+        var providers = new[] { "claude", "openai", "gemini", "deepseek" };
         var voters = new List<VoterProfile>(count);
         for (int i = 0; i < count; i++)
         {
@@ -699,7 +699,7 @@ public class BeatGeneratorService
     /// </summary>
     private static string? LowTierModelFor(string providerId) => providerId switch
     {
-        "claude-api" => "claude-haiku-4-5-20251001",
+        "claude" => "claude-haiku-4-5-20251001",
         "openai"     => "gpt-4.1-nano",
         "gemini"     => "gemini-2.5-flash-lite",
         "deepseek"   => "deepseek-chat",

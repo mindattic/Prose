@@ -25,7 +25,7 @@ public class TokenLedgerCostScopeTests
 {
     /// <summary>One Sonnet-priced call, big enough that its cost is comfortably non-zero.</summary>
     private static void RecordOneCall(TokenLedger ledger)
-        => ledger.RecordActual("claude-api", "claude-sonnet-5", inputTokens: 100_000, outputTokens: 2_000);
+        => ledger.RecordActual("claude", "claude-sonnet-5", inputTokens: 100_000, outputTokens: 2_000);
 
     [Test]
     public void CostForScope_ChargesOnlyTheCallsMadeInsideThatScope()

@@ -155,7 +155,7 @@ if (UniverseBootstrap.RequestedSlug == null
         // same shape as --sync-markdown/--generate-canon-md above.
         "--verification-staleness", "--findings-staleness",
         // Provider health/config touch no universe-scoped data at all.
-        "--provider-status", "--set-llm-provider",
+        "--provider-status",
         // Corpus-wide relationship backfill: resolves each row against its OWNER's own universe,
         // not an ambient scope (see BackfillCharacterRelationshipsCli).
         "--backfill-character-relationships",
@@ -1200,16 +1200,6 @@ if (args.Contains("--provider-status"))
     return;
 }
 
-// prose --set-llm-provider claude-api|claude-team [--dry-run]
-// Switches every Settings.json field governing which Claude credential path is active in one
-// command (ActiveLlmProvider always; ReviewJudgeProvider/ReviewAllowedProviders/
-// ReaderQaJuryProviders only where they currently hold the other Claude variant).
-if (args.Contains("--set-llm-provider"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SetLlmProviderCli", args);
-    return;
-}
-
 // prose --backfill-character-relationships [--dry-run] [--json]
 // One-time repair for CharacterRelationships.TargetEntityId never being resolved at save time.
 if (args.Contains("--backfill-character-relationships"))
@@ -1484,6 +1474,15 @@ if (args.Contains("--reparent-node"))
     return;
 }
 
+
+//   prose --set-byo-key --provider claude|openai (--key <apiKey> | --clear)
+// Personal API key the operator tool-calling loop (KdpOperatorService et al.) tries before its
+// own default credential chain (Claude: Team OAuth; OpenAI: Vault 'openai').
+if (args.Contains("--set-byo-key"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetByoKeyCli", args);
+    return;
+}
 
 // CLI mode: render the WHOLE node as one continuous audiobook (one TTS pass,
 // tiered to ElevenLabs limits — one request, else per-chapter, else split) and

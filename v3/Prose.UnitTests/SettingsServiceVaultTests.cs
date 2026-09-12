@@ -70,7 +70,7 @@ public class SettingsServiceVaultTests
     {
         Environment.SetEnvironmentVariable("PROSE_CLAUDE_API_KEY", "env-claude");
         SettingsService.VaultConfiguration = BuildConfig(
-            ("MindAttic:Vault:LLM:claude-api:apiKey", "vault-claude"));
+            ("MindAttic:Vault:LLM:claude:apiKey", "vault-claude"));
 
         Assert.That(svc.ApiKey, Is.EqualTo("vault-claude"));
     }
@@ -153,7 +153,7 @@ public class SettingsServiceVaultTests
     public void Vault_TrimsWhitespaceAroundValue()
     {
         SettingsService.VaultConfiguration = BuildConfig(
-            ("MindAttic:Vault:LLM:claude-api:apiKey", "  vault-claude  "));
+            ("MindAttic:Vault:LLM:claude:apiKey", "  vault-claude  "));
 
         Assert.That(svc.ApiKey, Is.EqualTo("vault-claude"));
     }
@@ -189,7 +189,7 @@ public class SettingsServiceVaultTests
     // Locks the provider-id contract. If any provider's key path drifts away
     // from "MindAttic:Vault:LLM:<id>:apiKey" this matrix fails fast.
 
-    [TestCase("claude-api", nameof(SettingsService.ApiKey))]
+    [TestCase("claude", nameof(SettingsService.ApiKey))]
     [TestCase("openai",     nameof(SettingsService.OpenAiApiKey))]
     [TestCase("gemini",     nameof(SettingsService.GeminiApiKey))]
     [TestCase("deepseek",   nameof(SettingsService.DeepSeekApiKey))]

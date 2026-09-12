@@ -130,7 +130,7 @@ public class BeatDuelServiceTests
         public Task<bool> IsConfiguredAsync() => Task.FromResult(true);
         public Task<string> GenerateAsync(string system, string user,
             double temperature = 0.8, int maxTokens = 4096, string? model = null, CancellationToken ct = default) =>
-            throw new InvalidOperationException("Circuit breaker open for provider 'claude-api'.");
+            throw new InvalidOperationException("Circuit breaker open for provider 'claude'.");
     }
 
     private sealed class FixedResponseLlm(string response) : ILlmService

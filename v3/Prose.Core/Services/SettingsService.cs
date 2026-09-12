@@ -41,6 +41,7 @@ public class SettingsService : IDisposable
         defaultsPath = Path.Combine(storageDir, "Defaults.json");
         Load();
         MigrateLegacyCredentialsToSharedStore();
+        NormalizeLegacyClaudeProviderIds();
 
         // Auto-detect canon root if not set or current path has insufficient data.
         // Post-archival, "valid canon" means the engine dir exists and has the
@@ -127,8 +128,8 @@ public class SettingsService : IDisposable
     // Models, voice prefs, and other non-credential settings stay in Settings.json (per-app).
     public string ApiKey
     {
-        get => ResolveApiKey("PROSE_CLAUDE_API_KEY", "claude-api", data.ApiKey);
-        set { MindAtticCredentialStore.SetKey("claude-api", value); data.ApiKey = value; ScheduleSave(); }
+        get => ResolveApiKey("PROSE_CLAUDE_API_KEY", "claude", data.ApiKey);
+        set { MindAtticCredentialStore.SetKey("claude", value); data.ApiKey = value; ScheduleSave(); }
     }
     public string Model { get => data.Model; set { data.Model = value; ScheduleSave(); } }
     /// <summary>Raised when the theme changes so layout components can update without a full reload.</summary>
@@ -757,7 +758,7 @@ public class SettingsService : IDisposable
 
     private void SyncCredentialStoreFromData()
     {
-        MindAtticCredentialStore.SetKey("claude-api",   data.ApiKey);
+        MindAtticCredentialStore.SetKey("claude",       data.ApiKey);
         MindAtticCredentialStore.SetKey("openai",      data.OpenAiApiKey);
         MindAtticCredentialStore.SetKey("gemini",      data.GeminiApiKey);
         MindAtticCredentialStore.SetKey("ideogram",    data.IdeogramApiKey);
@@ -807,7 +808,7 @@ public class SettingsService : IDisposable
             MindAtticCredentialStore.SetKey(providerId, legacyKey);
         }
 
-        MigrateIfMissing("claude-api",   data.ApiKey);
+        MigrateIfMissing("claude",       data.ApiKey);
         MigrateIfMissing("openai",      data.OpenAiApiKey);
         MigrateIfMissing("gemini",      data.GeminiApiKey);
         MigrateIfMissing("ideogram",    data.IdeogramApiKey);
@@ -828,6 +829,51 @@ public class SettingsService : IDisposable
         MigrateIfMissing("elevenlabs",  data.ElevenLabsApiKey);
         MigrateIfMissing("here-maps",   data.MapApiKey);
         MigrateIfMissing("google-maps", data.GoogleMapsApiKey);
+    }
+
+    /// <summary>
+    /// One-time upgrade for a real, already-persisted <c>Settings.json</c> written before Legion's
+    /// provider ids were unified: <c>"claude-team"</c> (a Claude Code Team subscription OAuth
+    /// token used as a substitute API credential) never actually worked for calling the public
+    /// Anthropic API and has been removed outright; <c>"claude-api"</c> is now just
+    /// <c>"claude"</c>. Rewrites <see cref="SettingsData.ActiveLlmProvider"/>,
+    /// <see cref="SettingsData.ActiveLlmProviderChain"/>, <see cref="SettingsData.ReviewAllowedProviders"/>,
+    /// and <see cref="SettingsData.ReaderQaJuryProviders"/> in place (deduplicating the chain/list
+    /// fields, since both old ids may already appear side by side) and saves once if anything
+    /// changed. Idempotent — a no-op on every subsequent load.
+    /// </summary>
+    private void NormalizeLegacyClaudeProviderIds()
+    {
+        static string NormalizeSingle(string providerId) =>
+            providerId is "claude-api" or "claude-team" ? "claude" : providerId;
+
+        static string NormalizeList(string csv)
+        {
+            var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            var result = new List<string>();
+            foreach (var raw in csv.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+            {
+                var id = NormalizeSingle(raw);
+                if (seen.Add(id)) result.Add(id);
+            }
+            return string.Join(",", result);
+        }
+
+        var changed = false;
+
+        var normalizedActive = NormalizeSingle(data.ActiveLlmProvider);
+        if (normalizedActive != data.ActiveLlmProvider) { data.ActiveLlmProvider = normalizedActive; changed = true; }
+
+        var normalizedChain = NormalizeList(data.ActiveLlmProviderChain);
+        if (normalizedChain != data.ActiveLlmProviderChain) { data.ActiveLlmProviderChain = normalizedChain; changed = true; }
+
+        var normalizedAllowed = NormalizeList(data.ReviewAllowedProviders);
+        if (normalizedAllowed != data.ReviewAllowedProviders) { data.ReviewAllowedProviders = normalizedAllowed; changed = true; }
+
+        var normalizedJury = NormalizeList(data.ReaderQaJuryProviders);
+        if (normalizedJury != data.ReaderQaJuryProviders) { data.ReaderQaJuryProviders = normalizedJury; changed = true; }
+
+        if (changed) Flush();
     }
 
     private void ScheduleSave()
@@ -978,9 +1024,9 @@ public class SettingsService : IDisposable
         public string DefaultVoiceProfileId { get; set; } = "";
         public string OpenAiApiKey { get; set; } = "";
         public string OpenAiModel { get; set; } = "gpt-4.1-mini";
-        public string ActiveLlmProvider { get; set; } = "claude-api";
+        public string ActiveLlmProvider { get; set; } = "claude";
         public string ActiveLlmProviderChain { get; set; } =
-            "claude-team,claude-api,codex-cli,openai,gemini-cli,gemini,kimi,deepseek,mistral,perplexity";
+            "claude,codex-cli,openai,gemini-cli,gemini,kimi,deepseek,mistral,perplexity";
         public int EditorFontSize { get; set; } = 14;
         public int AutoSaveIntervalMs { get; set; } = 2000;
         public string GeminiApiKey { get; set; } = "";
@@ -1043,10 +1089,10 @@ public class SettingsService : IDisposable
         public int ReviewPanel { get; set; } = 128;
         public int ReviewReaders { get; set; } = 50;
         public string ReviewJudgeProvider { get; set; } = "gemini";
-        public string ReviewAllowedProviders { get; set; } = "claude-api";
+        public string ReviewAllowedProviders { get; set; } = "claude";
         public int ReviewMaxConcurrency { get; set; } = 10;
         // Reader-Proxy QA jury roster (cross-family; dead/keyless providers auto-skip)
-        public string ReaderQaJuryProviders { get; set; } = "claude-api,openai,gemini,deepseek,kimi";
+        public string ReaderQaJuryProviders { get; set; } = "claude,openai,gemini,deepseek,kimi";
         // Registry of OpenAI-compatible jury families outside the Legion catalog.
         // Kimi K2.6 pricing per platform.moonshot.ai 2026-08: $0.60/M in, $0.16/M cache read, $2.50/M out.
         public string ExtraJuryProvidersJson { get; set; } =

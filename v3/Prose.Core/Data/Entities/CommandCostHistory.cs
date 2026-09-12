@@ -16,5 +16,5 @@ public class CommandCostHistory
     public double   ActualCost    { get; set; }
     public double   AccuracyRatio { get; set; }         // ActualCost / EstimatedCost; 0 when estimated is zero
     public DateTime RunAt         { get; set; } = DateTime.UtcNow;
-    public string   Provider      { get; set; } = "";   // e.g. "claude-api", "claude-team"
+    public string   Provider      { get; set; } = "";   // e.g. "claude", "openai"
 }

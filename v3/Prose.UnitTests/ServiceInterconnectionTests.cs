@@ -33,7 +33,7 @@ public class LlmRouterCaptureTests
 
         // Build LlmRouter with stub providers that respond instantly.
         var fake = new StubLlm("STUB-RESPONSE");
-        var router = TestRouterFactory.Build(fake, fake, store, activeProvider: "claude-api");
+        var router = TestRouterFactory.Build(fake, fake, store, activeProvider: "claude");
 
         var response = await router.GenerateAsync("system-prompt-text", "user-prompt-text", temperature: 0.42, maxTokens: 1234, model: "claude-opus-4-7");
 
@@ -41,7 +41,7 @@ public class LlmRouterCaptureTests
         var snap = store.Snapshot();
         Assert.That(snap.Count, Is.EqualTo(1));
         var p = snap[0];
-        Assert.That(p.Provider, Is.EqualTo("claude-api"));
+        Assert.That(p.Provider, Is.EqualTo("claude"));
         Assert.That(p.Model, Is.EqualTo("claude-opus-4-7"));
         Assert.That(p.Temperature, Is.EqualTo(0.42));
         Assert.That(p.MaxTokens, Is.EqualTo(1234));
@@ -56,7 +56,7 @@ public class LlmRouterCaptureTests
     {
         var store = new LastPromptStore();
         var failing = new StubLlm(throwMessage: "boom");
-        var router = TestRouterFactory.Build(failing, failing, store, activeProvider: "claude-api");
+        var router = TestRouterFactory.Build(failing, failing, store, activeProvider: "claude");
 
         try { await router.GenerateAsync("sys", "usr"); }
         catch { /* expected */ }
@@ -72,14 +72,14 @@ public class LlmRouterCaptureTests
         var store = new LastPromptStore();
         var providers = new Dictionary<string, ILlmService>
         {
-            ["claude-api"] = new StubLlm(throwMessage: "claude-api down"),
-            ["claude-team"] = new StubLlm(throwMessage: "claude-team also down"),
+            ["claude"] = new StubLlm(throwMessage: "claude down"),
+            ["gemini"] = new StubLlm(throwMessage: "gemini also down"),
             ["openai"] = new StubLlm("OPENAI-RESPONSE"),
         };
         var router = new LlmRouter(
             providers,
-            activeProvider: () => "claude-api",
-            fallbackChain: () => ["claude-team", "openai"],
+            activeProvider: () => "claude",
+            fallbackChain: () => ["gemini", "openai"],
             prompts: store,
             log: NullLogger<LlmRouter>.Instance);
 
@@ -87,14 +87,14 @@ public class LlmRouterCaptureTests
 
         Assert.That(response, Is.EqualTo("OPENAI-RESPONSE"));
         var snap = store.Snapshot();
-        // Newest-first: openai (success), claude-team (error), claude-api (error).
+        // Newest-first: openai (success), gemini (error), claude (error).
         Assert.That(snap.Count, Is.EqualTo(3));
         Assert.That(snap[0].Provider, Is.EqualTo("openai"));
         Assert.That(snap[0].Response, Is.EqualTo("OPENAI-RESPONSE"));
-        Assert.That(snap[1].Provider, Is.EqualTo("claude-team"));
-        Assert.That(snap[1].Response, Does.Contain("claude-team also down"));
-        Assert.That(snap[2].Provider, Is.EqualTo("claude-api"));
-        Assert.That(snap[2].Response, Does.Contain("claude-api down"));
+        Assert.That(snap[1].Provider, Is.EqualTo("gemini"));
+        Assert.That(snap[1].Response, Does.Contain("gemini also down"));
+        Assert.That(snap[2].Provider, Is.EqualTo("claude"));
+        Assert.That(snap[2].Response, Does.Contain("claude down"));
     }
 
     [Test]
@@ -103,12 +103,12 @@ public class LlmRouterCaptureTests
         var store = new LastPromptStore();
         var providers = new Dictionary<string, ILlmService>
         {
-            ["claude-api"] = new StubLlm(throwMessage: "claude-api down"),
+            ["claude"] = new StubLlm(throwMessage: "claude down"),
             ["openai"] = new StubLlm(throwMessage: "openai down"),
         };
         var router = new LlmRouter(
             providers,
-            activeProvider: () => "claude-api",
+            activeProvider: () => "claude",
             fallbackChain: () => ["openai"],
             prompts: store,
             log: NullLogger<LlmRouter>.Instance);
@@ -124,14 +124,14 @@ public class LlmRouterCaptureTests
         var store = new LastPromptStore();
         var providers = new Dictionary<string, ILlmService>
         {
-            ["claude-api"] = new StubLlm(throwMessage: "down"),
+            ["claude"] = new StubLlm(throwMessage: "down"),
             ["gemini"] = new StubLlm("GEMINI-RESPONSE"),
             // "kimi" deliberately absent from the map — simulates a chain entry for a
             // provider not configured/registered in this process; must be skipped, not throw.
         };
         var router = new LlmRouter(
             providers,
-            activeProvider: () => "claude-api",
+            activeProvider: () => "claude",
             fallbackChain: () => ["kimi", "gemini"],
             prompts: store,
             log: NullLogger<LlmRouter>.Instance);

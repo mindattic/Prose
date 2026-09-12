@@ -17,7 +17,7 @@ public class LlmCallHistory
     public int Id { get; set; }
     public DateTime At { get; set; } = DateTime.UtcNow;
     [MaxLength(32)]
-    public string ProviderId { get; set; } = "";        // e.g. "claude-team", "codex-cli", "gemini"
+    public string ProviderId { get; set; } = "";        // e.g. "claude", "codex-cli", "gemini"
     [MaxLength(128)]
     public string Model { get; set; } = "";              // resolved model id, or "(provider default)"
     [MaxLength(256)]
