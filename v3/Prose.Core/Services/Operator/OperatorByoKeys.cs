@@ -20,5 +20,32 @@ namespace Prose.Core.Services.Operator;
 /// (2026-08-25 author ruling — an unattended multi-book run could burn real money with no visible
 /// warning) — an explicit BYO key is a deliberate opt-in a human typed in, not a silent fallback,
 /// so it sits ahead of that guard rather than defeating it.
+///
+/// 2026-09-13: gained a rotation/failover pool per provider (<see cref="AnthropicApiKeys"/> /
+/// <see cref="OpenAiApiKeys"/>), managed via <see cref="OperatorByoKeyPoolService"/> (CLI:
+/// <c>prose --set-byo-key --provider claude|openai --key &lt;key&gt; [--key &lt;key&gt; ...] |
+/// --add-key &lt;key&gt; | --remove-key &lt;key&gt; | --list | --clear</c>; MCP: the
+/// <c>OperatorKeyTools</c> tool class). The original singular fields are kept, unused by any new
+/// writer, purely so a value saved before this pool existed still resolves — see
+/// <see cref="ResolvedAnthropicKeys"/>/<see cref="ResolvedOpenAiKeys"/>.
 /// </summary>
-public record OperatorByoKeys(string? AnthropicApiKey = null, string? OpenAiApiKey = null);
+public record OperatorByoKeys(
+    string? AnthropicApiKey = null,
+    string? OpenAiApiKey = null,
+    IReadOnlyList<string>? AnthropicApiKeys = null,
+    IReadOnlyList<string>? OpenAiApiKeys = null)
+{
+    /// <summary>Every Claude key in priority order: the pool when set, else the legacy
+    /// single-key field wrapped as a one-element list, else empty.</summary>
+    public IReadOnlyList<string> ResolvedAnthropicKeys =>
+        AnthropicApiKeys is { Count: > 0 } pool ? pool
+        : AnthropicApiKey is { Length: > 0 } single ? new[] { single }
+        : Array.Empty<string>();
+
+    /// <summary>Every OpenAI key in priority order: the pool when set, else the legacy
+    /// single-key field wrapped as a one-element list, else empty.</summary>
+    public IReadOnlyList<string> ResolvedOpenAiKeys =>
+        OpenAiApiKeys is { Count: > 0 } pool ? pool
+        : OpenAiApiKey is { Length: > 0 } single ? new[] { single }
+        : Array.Empty<string>();
+}

@@ -31,9 +31,6 @@ public class NodeTools
     private readonly AudiblePackageService audible;
     private readonly NodeDocService nodeDoc;
     private readonly MarkdownFileService markdownFiles;
-    private readonly CoverPromptService coverPrompts;
-    private readonly CoverImageService coverImages;
-    private readonly CoverTitleCompositorService titleCompositor;
     private readonly Prose.Core.Interfaces.IPathProvider paths;
     private readonly CanonDocumentService canonDocs;
     private readonly HubInvoker hub;
@@ -51,9 +48,6 @@ public class NodeTools
         AudiblePackageService audible,
         NodeDocService nodeDoc,
         MarkdownFileService markdownFiles,
-        CoverPromptService coverPrompts,
-        CoverImageService coverImages,
-        CoverTitleCompositorService titleCompositor,
         Prose.Core.Interfaces.IPathProvider paths,
         CanonDocumentService canonDocs,
         HubInvoker hub,
@@ -70,9 +64,6 @@ public class NodeTools
         this.audible = audible;
         this.nodeDoc = nodeDoc;
         this.markdownFiles = markdownFiles;
-        this.coverPrompts = coverPrompts;
-        this.coverImages = coverImages;
-        this.titleCompositor = titleCompositor;
         this.paths = paths;
         this.canonDocs = canonDocs;
         this.hub = hub;
@@ -125,6 +116,64 @@ public class NodeTools
         string parentNodeIdOrSlug,
         string description = "")
         => CreateNodeCoreAsync(title, "chapter", description, seed: "", targetBeats: 0, parentNodeIdOrSlug: parentNodeIdOrSlug, code: "", previous: "");
+
+    [McpServerTool, Description("Reposition an existing node (typically a chapter) to sit immediately after a named sibling under the same parent — a fractional SortKey midpoint is computed automatically, so callers never need to know or guess raw SortKey values. Use this to insert a newly created chapter into the middle of a book's reading order instead of it landing at the end (create_chapter always appends). Accepts GUID id or slug for both nodeIdOrSlug and afterSiblingIdOrSlug.")]
+    public Task<string> MoveNodeAfterSibling(
+        [Description("Node Guid id or slug to reposition.")] string nodeIdOrSlug,
+        [Description("Guid id or slug of the sibling this node should immediately follow. Must share the same parent as nodeIdOrSlug's new position (the node is moved under that same parent).")] string afterSiblingIdOrSlug)
+        => hub.InvokeAsync(nameof(NodeTools), nameof(MoveNodeAfterSiblingImpl), new { nodeIdOrSlug, afterSiblingIdOrSlug });
+
+    public async Task<string> MoveNodeAfterSiblingImpl(string nodeIdOrSlug, string afterSiblingIdOrSlug)
+    {
+        var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
+        if (nodeId == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+        var afterSiblingId = await ResolveNodeIdAsync(afterSiblingIdOrSlug);
+        if (afterSiblingId == null) return JsonSerializer.Serialize(new { error = "sibling_not_found", afterSiblingIdOrSlug }, CanonTools.JsonOpts);
+
+        try
+        {
+            await workbench.ReparentNodeAfterSiblingAsync(nodeId.Value, afterSiblingId.Value);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return JsonSerializer.Serialize(new { error = "reparent_failed", message = ex.Message }, CanonTools.JsonOpts);
+        }
+
+        return JsonSerializer.Serialize(new { ok = true, node_id = nodeId.Value, after_sibling_id = afterSiblingId.Value }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Set (or clear) a book node's sequel link (Node.PreviousNodeId). Needed before deleting or reparenting a book that another book's PreviousNodeId points at — the FK is a DB-level Restrict, so delete_node's force flag alone cannot bypass it; repoint or clear the referencing node's link first. Pass clear=true to detach instead of setting a new previous node.")]
+    public Task<string> SetPreviousNode(
+        [Description("Node Guid id or slug whose PreviousNodeId to set.")] string nodeIdOrSlug,
+        [Description("Guid id or slug of the book this node continues. Ignored when clear=true.")] string previousNodeIdOrSlug = "",
+        [Description("Set true to clear PreviousNodeId (detach) instead of setting one.")] bool clear = false)
+        => hub.InvokeAsync(nameof(NodeTools), nameof(SetPreviousNodeImpl), new { nodeIdOrSlug, previousNodeIdOrSlug, clear });
+
+    public async Task<string> SetPreviousNodeImpl(string nodeIdOrSlug, string previousNodeIdOrSlug = "", bool clear = false)
+    {
+        var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
+        if (nodeId == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+
+        if (clear)
+        {
+            await workbench.SetPreviousNodeAsync(nodeId.Value, null);
+            return JsonSerializer.Serialize(new { ok = true, node_id = nodeId.Value, previous_node_id = (Guid?)null }, CanonTools.JsonOpts);
+        }
+
+        var previousId = await ResolveNodeIdAsync(previousNodeIdOrSlug);
+        if (previousId == null) return JsonSerializer.Serialize(new { error = "previous_node_not_found", previousNodeIdOrSlug }, CanonTools.JsonOpts);
+
+        try
+        {
+            await workbench.SetPreviousNodeAsync(nodeId.Value, previousId.Value);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return JsonSerializer.Serialize(new { error = "set_previous_failed", message = ex.Message }, CanonTools.JsonOpts);
+        }
+
+        return JsonSerializer.Serialize(new { ok = true, node_id = nodeId.Value, previous_node_id = previousId.Value }, CanonTools.JsonOpts);
+    }
 
     /// <summary>Resolve a node reference (GUID or slug) to its id. Empty input → null.</summary>
     /// <summary>
@@ -846,8 +895,8 @@ public class NodeTools
             : JsonSerializer.Serialize(new { chapters = reports.Select(Shape).ToList() }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Export a node to every KDP-ready format (docx/epub/pdf/txt) plus description.txt/keywords.txt/cover.jpg, to the configured export directory (defaults to Desktop). Same pipeline as the CLI's `prose --export-node`, via the shared NodeFullExportService. Local file rendering only — no KDP API integration. Blocked (returns ok:false) unless the docs/LOGIC.md §9 publish-readiness gate passes, or forceExport is true (2026-09-01 — this MCP path used to skip every export gate the CLI enforced).</summary>
-    [McpServerTool, Description("Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), keywords.txt (from seeded NodeKeywords), and cover.jpg (only if missing), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Blocked with ok:false unless the publish-readiness gate (docs/LOGIC.md §9) passes or forceExport is true — call publish_readiness first if unsure. Use get_node first to confirm the node exists.")]
+    /// <summary>Export a node to every KDP-ready format (docx/epub/pdf/txt) plus description.txt/keywords.txt, to the configured export directory (defaults to Desktop). Same pipeline as the CLI's `prose --export-node`, via the shared NodeFullExportService. Local file rendering only — no KDP API integration. Blocked (returns ok:false) unless the docs/LOGIC.md §9 publish-readiness gate passes, or forceExport is true (2026-09-01 — this MCP path used to skip every export gate the CLI enforced).</summary>
+    [McpServerTool, Description("Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), and keywords.txt (from seeded NodeKeywords), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Blocked with ok:false unless the publish-readiness gate (docs/LOGIC.md §9) passes or forceExport is true — call publish_readiness first if unsure. Use get_node first to confirm the node exists.")]
     public Task<string> ExportNode(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Author name to embed in the document properties. Optional.")] string author = "",
@@ -887,7 +936,6 @@ public class NodeTools
             synopsis_path = result.SynopsisPath,
             keywords_path = result.KeywordsPath,
             keyword_count = result.KeywordCount,
-            cover_path = result.CoverPath,
         }, CanonTools.JsonOpts);
     }
 
@@ -981,7 +1029,7 @@ public class NodeTools
         return JsonSerializer.Serialize(new { count = rows.Count, nodes = rows }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count, cover_prompt. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
+    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
     public Task<string> UpdateBook(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("New title. Omit to leave unchanged.")] string? title = null,
@@ -992,9 +1040,8 @@ public class NodeTools
         [Description("Generation seed (one-line premise). Omit to leave unchanged; pass empty string to clear.")] string? seed = null,
         [Description("Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.")] string? code = null,
         [Description("ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.")] string? voiceId = null,
-        [Description("KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.")] int? kdpPageCount = null,
-        [Description("Hand-set cover art image prompt (overrides the generated one). Omit to leave unchanged; pass empty string to clear. Prefer generate_cover_prompt to derive this from the book itself.")] string? coverPrompt = null) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBookImpl), new { idOrSlug, title, subtitle, description, kind, status, seed, code, voiceId, kdpPageCount, coverPrompt });
+        [Description("KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.")] int? kdpPageCount = null) =>
+        hub.InvokeAsync(nameof(NodeTools), nameof(UpdateBookImpl), new { idOrSlug, title, subtitle, description, kind, status, seed, code, voiceId, kdpPageCount });
 
     public async Task<string> UpdateBookImpl(
         string idOrSlug,
@@ -1006,8 +1053,7 @@ public class NodeTools
         string? seed = null,
         string? code = null,
         string? voiceId = null,
-        int? kdpPageCount = null,
-        string? coverPrompt = null)
+        int? kdpPageCount = null)
     {
         try
         {
@@ -1027,11 +1073,6 @@ public class NodeTools
             if (code         != null) row.NodeCode     = string.IsNullOrEmpty(code) ? null : code.Trim().ToUpperInvariant();
             if (voiceId      != null) row.VoiceId      = string.IsNullOrEmpty(voiceId) ? null : voiceId;
             if (kdpPageCount != null) row.KdpPageCount = kdpPageCount == 0 ? null : kdpPageCount;
-            if (coverPrompt  != null)
-            {
-                row.CoverPrompt            = string.IsNullOrEmpty(coverPrompt) ? null : coverPrompt;
-                row.CoverPromptGeneratedAt = DateTime.UtcNow;
-            }
             row.UpdatedAt = DateTime.UtcNow;
 
             await db.SaveChangesAsync();
@@ -1052,80 +1093,11 @@ public class NodeTools
         }
     }
 
-    [McpServerTool, Description("Generate and save a book-cover image prompt (Node.CoverPrompt) from the book's own Title/Summary/Description and universe — a single paragraph describing subject, setting, mood, palette, and composition for an image model. Kept commercial-cover-safe (never explicit) regardless of interior content. Overwrites any existing CoverPrompt. Accepts node id (GUID) or slug.")]
-    public Task<string> GenerateCoverPrompt(
-        [Description("Node id (GUID) or slug.")] string idOrSlug) =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(GenerateCoverPromptImpl), new { idOrSlug });
-
-    public async Task<string> GenerateCoverPromptImpl(string idOrSlug)
-    {
-        try
-        {
-            var node = await ResolveNodeAsync(idOrSlug);
-            if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
-
-            var prompt = await coverPrompts.GenerateAndSaveAsync(node.Id);
-            return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, coverPrompt = prompt }, CanonTools.JsonOpts);
-        }
-        catch (Exception ex)
-        {
-            return JsonSerializer.Serialize(new { error = "generate_cover_prompt_failed", message = ex.Message, idOrSlug }, CanonTools.JsonOpts);
-        }
-    }
-
-    [McpServerTool, Description("Render and save a book cover image (png/jpg) via a chosen image provider, using Node.CoverPrompt as the prompt (generating one first via generate_cover_prompt if it's not set yet). Requires that provider's API key to be configured in Settings — costs real money per call. Saves to the media dir under covers/{slug}.{ext} and records the path/provider on the node. Accepts node id (GUID) or slug.")]
-    public async Task<string> GenerateCoverImage(
-        [Description("Node id (GUID) or slug.")] string idOrSlug,
-        [Description("Image provider: \"openai\" (gpt-image-1), \"stability\" (Stable Image SD3.5), or \"google\" (Imagen via Gemini API).")] string provider)
-    {
-        try
-        {
-            var node = await ResolveNodeAsync(idOrSlug);
-            if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
-
-            var relativePath = await coverImages.GenerateAndSaveAsync(node.Id, provider);
-            return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, provider, coverImagePath = relativePath }, CanonTools.JsonOpts);
-        }
-        catch (Exception ex)
-        {
-            return JsonSerializer.Serialize(new { error = "generate_cover_image_failed", message = ex.Message, idOrSlug, provider }, CanonTools.JsonOpts);
-        }
-    }
-
-    [McpServerTool, Description("Redraw the book title onto an already-saved cover image file in place, without calling an image-generation API again. Useful after tweaking the compositor or for a cover saved before title-compositing existed. Requires Node.CoverImagePath to already be set (run generate_cover_image first). Accepts node id (GUID) or slug.")]
-    public async Task<string> CompositeCoverTitle(
-        [Description("Node id (GUID) or slug.")] string idOrSlug)
-    {
-        try
-        {
-            var node = await ResolveNodeAsync(idOrSlug);
-            if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
-            if (string.IsNullOrWhiteSpace(node.CoverImagePath))
-                return JsonSerializer.Serialize(new { error = "no_cover_image_yet", idOrSlug }, CanonTools.JsonOpts);
-
-            var fullPath  = Path.Combine(paths.MediaDir, node.CoverImagePath);
-            var extension = Path.GetExtension(fullPath).TrimStart('.');
-            var bytes     = await File.ReadAllBytesAsync(fullPath);
-            var composited = await titleCompositor.CompositeTitleAsync(bytes, node.Title, extension);
-            await File.WriteAllBytesAsync(fullPath, composited);
-
-            return JsonSerializer.Serialize(new { ok = true, id = node.Id, slug = node.Slug, coverImagePath = node.CoverImagePath }, CanonTools.JsonOpts);
-        }
-        catch (Exception ex)
-        {
-            return JsonSerializer.Serialize(new { error = "composite_cover_title_failed", message = ex.Message, idOrSlug }, CanonTools.JsonOpts);
-        }
-    }
-
-    [McpServerTool, Description("Return the current status of the cover pipeline: for each registered image provider, its id and whether an API key is configured. Use before calling generate_cover_image to know which providers are actually usable.")]
-    public Task<string> GetCoverProviderStatus() =>
-        hub.InvokeAsync(nameof(NodeTools), nameof(GetCoverProviderStatusImpl), new { });
-
-    public string GetCoverProviderStatusImpl()
-    {
-        var rows = coverImages.AvailableProviders.Select(p => new { id = p.Id, configured = p.Configured });
-        return JsonSerializer.Serialize(new { providers = rows }, CanonTools.JsonOpts);
-    }
+    // The four cover tools — generate_cover_prompt, generate_cover_image,
+    // composite_cover_title and get_cover_provider_status — were DELETED 2026-09-13 on the
+    // author's instruction: cover generation "just doesn't work" and is now a manual step with
+    // no plan to reincorporate. Cover art is imported with `prose --import-cover`, which writes
+    // Node.CoverImagePath; KDP publishing reads it from there. Do not re-add these.
 
     [McpServerTool, Description("Return the score history for a node as a time-series — every review run that produced a summary, with its mean score, SD, review count, and date. Use to track whether an edit moved the needle, or to compare pre/post-edit trajectories. Accepts node id (GUID) or slug.")]
     public Task<string> GetScoreHistory(

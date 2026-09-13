@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Prose.WriterUi</RootNamespace>
+    <AssemblyName>Prose.WriterUi</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Unlike Prose.ObserverUi (deliberately Core-free so a second process could host it), the
+         editor talks to NodeWorkbenchService / EntityLookupService / FindingsService directly.
+         It is hosted ONLY inside Prose.Hub, which is what makes that legal: "only Hub reaches the
+         DB" is satisfied by construction, with no HTTP hop and no API key to get wrong. The cost
+         of that choice is that this library cannot be hosted out-of-process. -->
+    <ProjectReference Include="..\Prose.Core\Prose.Core.csproj" />
+  </ItemGroup>
+
+</Project>

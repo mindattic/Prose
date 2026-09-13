@@ -284,6 +284,7 @@ public class ProseDbContext : DbContext
     // Runtime-defined entity types (custom repos). Global (not universe-scoped);
     // board display is filtered by active-entity-count in the current universe.
     public DbSet<RepositoryDefinition>   RepositoryDefinitions  => Set<RepositoryDefinition>();
+    public DbSet<LogIssue>               LogIssues              => Set<LogIssue>();
 
     // Universal layer
     public DbSet<Entity>          Entities         => Set<Entity>();
@@ -2100,6 +2101,23 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Icon).HasMaxLength(60);
             e.Property(x => x.RoutePath).HasMaxLength(120);
             e.HasIndex(x => x.Slug).IsUnique();
+        });
+
+        // Queued engine errors — operational triage state, global (no universe scope: a stack
+        // trace belongs to the engine, not to a story). Occurrence counts and last-seen times are
+        // deliberately absent; they are recomputed from the Serilog files on every read so that
+        // "is this still happening?" cannot be answered by a stale copy. See LogIssue's own doc.
+        b.Entity<LogIssue>(e =>
+        {
+            e.ToTable("LogIssues");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Signature).HasMaxLength(64).IsRequired();
+            e.Property(x => x.Title).HasMaxLength(400);
+            e.Property(x => x.Level).HasMaxLength(20);
+            e.Property(x => x.Status).HasMaxLength(20);
+            // One row per distinct fault: re-tracking the same signature updates, never duplicates.
+            e.HasIndex(x => x.Signature).IsUnique();
+            e.HasIndex(x => x.Status);
         });
 
         // ── WeaponSpec (per-weapon structured key/value spec rows) ───────────

@@ -14,8 +14,9 @@ namespace Prose.Core.Services;
 /// every book's cover.jpg is warped into that same quad. The resulting frame is both a
 /// standalone still and the seed image handed to <see cref="BookTokVideoService"/>.
 ///
-/// Pipeline (three <c>magick</c> shell-outs, same ProcessStartInfo/ArgumentList idiom as
-/// <see cref="CoverImageService"/>):
+/// Pipeline (three <c>magick</c> shell-outs, the same ProcessStartInfo/ArgumentList idiom used
+/// elsewhere for external tools; note this CONSUMES a finished cover.jpg and never makes one —
+/// cover generation was deleted 2026-09-13 and cover art is supplied by hand):
 ///   1. Force-resize cover.jpg to the template's flat CoverWidth x CoverHeight rectangle.
 ///   2. Perspective-warp that rectangle's four corners onto the template's Corners quad,
 ///      on a transparent canvas the same size as the template.

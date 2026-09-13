@@ -1184,17 +1184,27 @@ Mostly deterministic (DB-only, no LLM cost).
 
 | Service | Role |
 |---|---|
-| `LlmRouter` | The live fallback chain (also an `ILlmService` itself): tries the primary provider (`SettingsService.ActiveLlmProvider`, default `claude-api`), then walks `ActiveLlmProviderChain` in configured order, de-duplicated. **Any** exception on a hop (auth, quota, rate-limit, network — not typed/discriminated) triggers the next hop; no fallback on success. Every hop, success or failure, is logged to `LlmCallHistories` (provider, model, hop index, token estimate, cost) |
+| `LlmRouter` | The live fallback chain (also an `ILlmService` itself): tries the primary provider (`SettingsService.ActiveLlmProvider`, default `claude`), then walks `ActiveLlmProviderChain` in configured order, de-duplicated. **Any** exception on a hop (auth, quota, rate-limit, network — not typed/discriminated) triggers the next hop; no fallback on success. Every hop, success or failure, is logged to `LlmCallHistories` (provider, model, hop index, token estimate, cost) |
 | `ClaudeService` / `OpenAiService` / `GeminiService` / `DeepSeekService` / `MistralService` / `KimiService` / `PerplexityService` | Metered API-key providers, each a thin `ILlmService` HTTP client over its vendor's completions endpoint |
 | `CodexCliService` / `GeminiCliService` | "CLI-shelling" providers — same `ILlmService` interface, but shell out to the `codex`/`gemini` CLI binary (`Process.Start`, prompt piped via stdin, JSONL parsed from stdout) and ride an existing subscription OAuth session (`codex login`) instead of a metered API key. Always costed at $0 in `LlmCallHistories` |
 | `MultiLlmService` | Multi-provider fan-out via `MindAttic.Legion` (broader provider set than `LlmRouter`'s: adds Grok, Groq, Together, OpenRouter, Fireworks, Cohere) |
 | `AssignTiersService` | Assigns Haiku/Sonnet/Opus class to actions per settings |
 
-`--set-llm-provider claude-api|claude-team` (`SetLlmProviderCli.cs`) is the only CLI surface for
-switching providers, and **only accepts those two Claude variants** — it was not extended when
-Gemini/DeepSeek/Mistral/Kimi/Perplexity/the CLI-shelling providers were added, so switching to any
-of them today means editing `ActiveLlmProviderChain` directly. No MCP tool exposes provider
-selection or queries `LlmCallHistories`. See [docs/PROVIDERS.md](docs/PROVIDERS.md) for the
+There is no CLI or MCP surface for switching the active LLM provider today. The old
+`--set-llm-provider claude-api|claude-team` command (`SetLlmProviderCli.cs`) toggled between the
+two Claude credential variants; now that those have collapsed into a single `"claude"` provider
+id, there's nothing left for that command to switch between, and it has been removed. Switching to
+Gemini/DeepSeek/Mistral/Kimi/Perplexity/a CLI-shelling provider as the active default still means
+editing `ActiveLlmProviderChain` (or `Settings.json`'s `ActiveLlmProvider` field) directly, and no
+MCP tool exposes provider selection or queries `LlmCallHistories`. API keys themselves aren't set
+via any Prose CLI command either — they resolve through `SettingsService.ResolveApiKey`'s chain:
+Vault `IConfiguration` override → Prose's own app-scoped key (`AppScopedCredentialStore("prose",
+…)`, checked before every other tier but never colliding with another app's key) → env var (e.g.
+`PROSE_CLAUDE_API_KEY`) → the shared, unscoped `MindAtticCredentialStore` at
+`%APPDATA%/MindAttic/LLM/` (kept for installs with a key already saved there) → a legacy
+`Settings.json` field. So a key is put in place by setting the env var, saving it under Prose's
+own scoped id, writing to the shared credential store (as another MindAttic app's credential UI
+does), or via Vault config — not by a Prose command. See [docs/PROVIDERS.md](docs/PROVIDERS.md) for the
 checked-in table of which services depend on which external provider — **written before this
 provider expansion, so it still only describes the Anthropic/OpenAI-only/both split** and needs a
 pass to cover Gemini/DeepSeek/Mistral/Kimi/Perplexity/the CLI-shelling pair.
@@ -1517,10 +1527,12 @@ In active development. **Command-line only** since 2026-08-13 (Epoch 4) — no l
    Anthropic/OpenAI-only/both split, with no mention of Gemini/DeepSeek/Mistral/Kimi/Perplexity,
    the CLI-shelling providers, or `LlmCallHistories` (see
    [10. LLM providers & routing](#10-llm-providers--routing)).
-8. `--set-llm-provider` only accepts `claude-api`/`claude-team` — it was never extended to the
-   new providers, so switching to Gemini/DeepSeek/Mistral/Kimi/Perplexity/a CLI-shelling provider
-   as the active default requires editing `ActiveLlmProviderChain` directly; no CLI or MCP surface
-   does it today.
+8. There is no CLI or MCP surface for switching the active LLM provider. The old
+   `--set-llm-provider` command only ever toggled between `claude-api`/`claude-team`, and now that
+   those have collapsed into a single `"claude"` provider id it has been removed outright rather
+   than extended to the new providers — switching to Gemini/DeepSeek/Mistral/Kimi/Perplexity/a
+   CLI-shelling provider as the active default still requires editing `ActiveLlmProviderChain`
+   directly.
 9. `prose --archive-book --reason "<text>"` (and the `BookArchiveService.ArchiveAsync` call
    behind it) does not validate or truncate the reason string before insert, while
    `ArchivedBooks.Reason` is `nvarchar(40)` — a reason over 40 characters fails at

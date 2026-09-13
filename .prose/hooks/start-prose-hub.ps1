@@ -11,20 +11,32 @@
 
   Staleness must be automatic, not a manual step (explicit user requirement - "you must
   make deployment seamless and easy"): Prose.Hub bundles Prose.Cli + Prose.Mcp +
-  Prose.Core into ONE deployed exe (C:\Apps\Prose\Prose.Hub\Prose.Hub.exe, written by
-  v3\Prose.Hub\tools\deploy.ps1 - same pattern as Prose.KdpPublish). Any source change
-  to any of those four projects means the deployed exe no longer reflects reality until
-  redeployed. This hook compares the deployed exe's timestamp against the newest .cs
-  file across all four project trees and redeploys automatically when it's behind -
-  the fast path (nothing changed) just health-checks and starts the existing exe
-  directly, never re-invoking the full rebuild+republish for no reason.
+  Prose.Core into ONE deployed exe (C:\Apps\MindAttic\Prose\Hub.exe, written by
+  v3\tools\deploy-apps.ps1). Any source change to any of those four projects means the
+  deployed exe no longer reflects reality until redeployed. This hook compares the
+  deployed exe's timestamp against the newest .cs file across all four project trees and
+  redeploys automatically when it's behind - the fast path (nothing changed) just
+  health-checks and starts the existing exe directly, never re-invoking the full
+  rebuild+republish for no reason.
+
+  Scope, 2026-09-12 (explicit user decision): this hook deploys and runs THE HUB ONLY, and
+  a session then uses that build for its whole life. Writer.exe and KdpPublish.exe are
+  never touched here - they are separate single-file bundles, a session that never opens
+  them should not pay to republish them, and republishing an exe the user is looking at
+  would stop it. Rebuilding all of them together is what the /redeploy skill is for
+  (.prose/commands/redeploy.md).
 #>
 $ErrorActionPreference = 'Continue'
 
 $repoRoot   = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 $healthUrl  = 'http://127.0.0.1:5900/api/health'
-$deployedExe = 'C:\Apps\Prose\Prose.Hub\Prose.Hub.exe'
-$deployPs1  = Join-Path $repoRoot 'v3\Prose.Hub\tools\deploy.ps1'
+# Moved 2026-09-11 from C:\Apps\Prose\Prose.Hub\Prose.Hub.exe: every Prose app now deploys into
+# one folder, C:\Apps\MindAttic\Prose\, and the Hub's assembly is Hub. The old location is still
+# checked so a machine that has not run the new deploy yet still finds a Hub to start.
+$deployedExe = 'C:\Apps\MindAttic\Prose\Hub.exe'
+$legacyExe   = 'C:\Apps\Prose\Prose.Hub\Prose.Hub.exe'
+if (-not (Test-Path $deployedExe) -and (Test-Path $legacyExe)) { $deployedExe = $legacyExe }
+$deployPs1  = Join-Path $repoRoot 'v3\tools\deploy-apps.ps1'
 $proj       = Join-Path $repoRoot 'v3\Prose.Hub\Prose.Hub.csproj'
 
 function Test-HubHealthy {
@@ -69,7 +81,9 @@ try {
     }
 
     if ($needsRedeploy -and (Test-Path $deployPs1)) {
-        & powershell -NoProfile -ExecutionPolicy Bypass -File $deployPs1 *> $null
+        # Only the Hub: a session start has no reason to republish Writer/Launcher/KdpPublish,
+        # and each one is a separate single-file bundle.
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $deployPs1 -Apps Hub *> $null
     }
 
     if (-not (Test-HubHealthy)) {
@@ -81,7 +95,7 @@ try {
             # an ad-hoc source build so the Hub is at least running somehow.
             & dotnet build $proj --configuration Release *> $null
             $exeDir = Join-Path $repoRoot 'v3\Prose.Hub\bin\Release\net10.0'
-            $exe    = Join-Path $exeDir 'Prose.Hub.exe'
+            $exe    = Join-Path $exeDir 'Hub.exe'
             if (Test-Path $exe) {
                 Start-Process -FilePath $exe -WorkingDirectory $exeDir -WindowStyle Normal
                 $startedSomething = $true
@@ -108,11 +122,17 @@ if (-not $healthy -and $startedSomething) {
 }
 
 if ($healthy) {
-    $msg = "[Prose Hub] MCP reachable - $healthUrl responded OK."
+    # Name the build that is actually serving. The whole point of deploying to a fixed path is
+    # that a session is never unknowingly talking to a debug build from `dotnet run`.
+    $serving = Get-Process 'Hub', 'Prose.Hub' -ErrorAction SilentlyContinue |
+               Where-Object { $_.Path } | Select-Object -First 1 -ExpandProperty Path
+    $from = if ($serving) { $serving } else { $deployedExe }
+    $msg  = "[Prose Hub] MCP reachable - $healthUrl responded OK. Serving from $from " +
+            "(rebuild everything with /redeploy)."
 } else {
     $msg = "[Prose Hub] MCP UNREACHABLE - $healthUrl did not respond. Prose MCP tools and " +
            "`prose` CLI commands will fail until the Hub is running (see Prose.Core.Services.HubGate). " +
-           "Check for a stuck Prose.Hub.exe process or a port 5900 conflict."
+           "Check for a stuck Hub.exe process or a port 5900 conflict."
 }
 
 @{

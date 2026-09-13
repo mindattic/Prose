@@ -29,7 +29,7 @@ InterpersonalDynamicsService) · BeatRebuildService · BeatStateExtractor · Blu
 BehavioralInvariantEnforcer · BibleSyncService · BookStateLedgerService ·
 CanonContradictionService · CanonGroundingService · ChapterCloseProcessorService ·
 ChapterSummaryService · ChekhovAuditService · CombatSceneWriter · ComprehensionProbeService ·
-ContextAnalyzerService · ContinuityValidatorService · ContractGenerator · CoverPromptService ·
+ContextAnalyzerService · ContinuityValidatorService · ContractGenerator ·
 CoWriterService · DateBackfillService · DynamicPlaceGenerator · EmotionalLedgerService ·
 EmotionalDepthService · EntityRamificationService · EventLogService · GripePassService ·
 LibertyReportService · MeaningBackfillService · NarrativeForkService · NarrativeScienceService ·

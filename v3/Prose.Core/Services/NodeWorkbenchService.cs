@@ -273,8 +273,17 @@ public class NodeWorkbenchService
     /// <see cref="BeatConflictException"/> carrying the freshly-loaded
     /// text so the UI can surface a "keep yours or reload?" choice. Pass
     /// <c>null</c> to skip the check (fire-and-forget callers, migrations).</para>
+    ///
+    /// <para><paramref name="deferAnalysis"/> suppresses ONLY the three fire-and-forget LLM tails
+    /// below (intent-drift, the blast-radius logic sweep, continuity re-extraction). Everything
+    /// that defines the row — text, hash, version, write reason, tag re-derivation,
+    /// <c>BeatEntityMentions</c>, edit-session logging — still happens. It exists for an
+    /// interactive editor, where a person saves every few seconds and each save would otherwise
+    /// bill six LLM rules and file a fresh round of near-duplicate findings; that caller runs the
+    /// analysis once, when the author leaves the beat. Defaults to <c>false</c>, so every existing
+    /// caller keeps the behaviour it was written against.</para>
     /// </summary>
-    public async Task UpdateBeatTextAsync(Guid beatId, string newText, BeatWriteReason reason, DateTime? expectedUpdatedAt = null, CancellationToken ct = default)
+    public async Task UpdateBeatTextAsync(Guid beatId, string newText, BeatWriteReason reason, DateTime? expectedUpdatedAt = null, bool deferAnalysis = false, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
@@ -409,7 +418,7 @@ public class NodeWorkbenchService
         // Embedding findings for why raw tags are unsafe to feed into text-matching/LLM prompts).
         var strippedForAnalysis = BeatMarkup.StripEntityTags(trimmed);
 
-        if (semanticFidelity != null && beatSlug != null && !string.IsNullOrWhiteSpace(beat.Description))
+        if (!deferAnalysis && semanticFidelity != null && beatSlug != null && !string.IsNullOrWhiteSpace(beat.Description))
         {
             var number   = beat.Number;
             var slug2    = beatSlug;
@@ -428,7 +437,7 @@ public class NodeWorkbenchService
         // (also used to scope the entity-mention scanner) — the background task below gets its
         // own contexts via blastRadius/logicSweep's own dbFactory, since `db` is disposed once
         // this method returns.
-        if (blastRadius != null && logicSweep != null && bookNodeId.HasValue)
+        if (!deferAnalysis && blastRadius != null && logicSweep != null && bookNodeId.HasValue)
         {
             var bnId = bookNodeId.Value;
             _ = Task.Run(async () =>
@@ -445,7 +454,7 @@ public class NodeWorkbenchService
         // (ContinuityExtractionService.ReExtractChapterIfChangedAsync is itself a no-op for a book
         // that's never been extracted, and hash-gated for a chapter whose text didn't actually
         // change) — see ContinuityExtractionCursor's doc comment for why this exists.
-        if (continuityExtraction != null && directNodeId != Guid.Empty)
+        if (!deferAnalysis && continuityExtraction != null && directNodeId != Guid.Empty)
         {
             var chapterNodeId = directNodeId;
             _ = Task.Run(() => continuityExtraction.ReExtractChapterIfChangedAsync(chapterNodeId, ct: CancellationToken.None), CancellationToken.None)
@@ -718,6 +727,10 @@ public class NodeWorkbenchService
             var parentExists = await db.Nodes.IgnoreQueryFilters().AnyAsync(n => n.Id == newParentNodeId.Value, ct);
             if (!parentExists)
                 throw new InvalidOperationException($"New parent node {newParentNodeId.Value} not found.");
+            if (await WouldCreateCycleAsync(db, nodeId, newParentNodeId.Value, ct))
+                throw new InvalidOperationException(
+                    $"Cannot reparent {nodeId} under {newParentNodeId.Value} — that node is {nodeId}'s own " +
+                    "descendant (or is the node itself), which would make the tree cyclic.");
         }
 
         node.ParentNodeId = newParentNodeId;
@@ -725,6 +738,65 @@ public class NodeWorkbenchService
         node.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
         log.LogInformation("Reparented node {NodeId} -> parent {NewParentId} (SortKey={SortKey})", nodeId, newParentNodeId, sortKey);
+    }
+
+    /// <summary>
+    /// Reposition a node to sit immediately after <paramref name="afterSiblingId"/> among that
+    /// sibling's own children (typically chapter nodes under a book), via a fractional SortKey
+    /// midpoint — same pattern already used for beat insertion (<c>InsertBeatCore</c> et al.),
+    /// just not previously exposed at the Node/chapter level. Callers (e.g. chapter-insertion
+    /// work) no longer have to know or guess a sibling's raw SortKey value.
+    /// </summary>
+    public async Task ReparentNodeAfterSiblingAsync(Guid nodeId, Guid afterSiblingId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"Node {nodeId} not found.");
+        var afterSibling = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == afterSiblingId, ct)
+            ?? throw new InvalidOperationException($"Sibling node {afterSiblingId} not found.");
+
+        var siblings = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(n => n.ParentNodeId == afterSibling.ParentNodeId && n.Id != nodeId)
+            .OrderBy(n => n.SortKey)
+            .Select(n => new { n.Id, n.SortKey })
+            .ToListAsync(ct);
+        var pos = siblings.FindIndex(s => s.Id == afterSiblingId);
+        if (pos < 0)
+            throw new InvalidOperationException($"Sibling node {afterSiblingId} not found under its own parent.");
+
+        if (await WouldCreateCycleAsync(db, nodeId, afterSibling.ParentNodeId, ct))
+            throw new InvalidOperationException(
+                $"Cannot reparent {nodeId} after sibling {afterSiblingId} — that sibling's parent is " +
+                $"{nodeId}'s own descendant (or is the node itself), which would make the tree cyclic.");
+
+        var prevSk = siblings[pos].SortKey;
+        var nextSk = pos + 1 < siblings.Count ? siblings[pos + 1].SortKey : prevSk + 100.0;
+
+        node.ParentNodeId = afterSibling.ParentNodeId;
+        node.SortKey = (prevSk + nextSk) / 2.0;
+        node.UpdatedAt = DateTime.UtcNow;
+        await db.SaveChangesAsync(ct);
+        log.LogInformation("Reparented node {NodeId} -> after sibling {AfterSiblingId} (SortKey={SortKey})", nodeId, afterSiblingId, node.SortKey);
+    }
+
+    /// <summary>
+    /// True if <paramref name="candidateNewParentId"/> is <paramref name="nodeId"/> itself or one
+    /// of its descendants — i.e. assigning it as the new parent would make the tree cyclic. Walks
+    /// UP from the candidate through ParentNodeId (cheap: book trees are a handful of levels deep)
+    /// rather than walking every descendant of nodeId down. A depth cap fails safe (treats a
+    /// runaway chain as a cycle) rather than looping forever on already-corrupt data.
+    /// </summary>
+    private static async Task<bool> WouldCreateCycleAsync(ProseDbContext db, Guid nodeId, Guid? candidateNewParentId, CancellationToken ct)
+    {
+        var current = candidateNewParentId;
+        for (var depth = 0; current.HasValue; depth++)
+        {
+            if (current.Value == nodeId) return true;
+            if (depth > 500) return true;
+            current = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+                .Where(n => n.Id == current.Value).Select(n => n.ParentNodeId).FirstOrDefaultAsync(ct);
+        }
+        return false;
     }
 
     /// <summary>
@@ -865,6 +937,17 @@ public class NodeWorkbenchService
                 log.LogInformation("DeleteNodeAsync: deleting {Count} exclusive beat(s) for {NodeId}", beats.Count, id);
             }
 
+            // BookSequentialReads.NodeId -> Nodes(Id) is a raw-SQL-created FK (no cascade, no
+            // EF model at all — see create_book_sequential_reads_20260815.sql) and the column is
+            // NOT NULL, so unlike Edge/PlantPayoff's beat-bound-clearing above there is no
+            // "orphaned but present" state to preserve: once the node itself is gone, a read-audit
+            // record about it is meaningless, not merely dangling. Delete outright, not null out.
+            // Found deleting BCODA/BCODA2/BCODA3's consolidation, 2026-09-09 — same "one FK short
+            // of covering" class of gap as the PlantPayoffs fix above, just discovered later
+            // because no prior corpus-wide node delete had hit a book with a recorded sequential
+            // read before.
+            await db.BookSequentialReads.Where(r => r.NodeId == id).ExecuteDeleteAsync(ct);
+
             var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == id, ct);
             if (node != null)
             {
@@ -873,8 +956,16 @@ public class NodeWorkbenchService
             }
         }
 
+        // The recursive walk mixes staged EF removals (only committed by SaveChangesAsync below)
+        // with an immediately-EXECUTING ExecuteDeleteAsync call per node (BookSequentialReads,
+        // above) — without a transaction spanning both, a failure partway through the walk would
+        // leave some nodes' audit rows already gone (committed) while their Node/BeatNodes/Beats
+        // rows (never staged-committed) survive: exactly the "orphaned but present vs. meaningless
+        // once gone" split the adjacent comment argues the delete-outright choice avoids.
+        await using var tx = await db.Database.BeginTransactionAsync(ct);
         await DeleteNodeSubtreeAsync(nodeId, 0);
         await db.SaveChangesAsync(ct);
+        await tx.CommitAsync(ct);
         log.LogInformation("DeleteNodeAsync: deleted {Title} ({NodeId})", target.Title, nodeId);
     }
 
@@ -1299,9 +1390,10 @@ public class NodeWorkbenchService
                 // Found while splitting Vigil's End: the 25 new chapters all needed a manual
                 // rename afterward. Always emit the canonical format now so no post-split
                 // rename is ever needed again.
-                var subtitle = (r.Title ?? "").Trim();
-                var chapterNum = segments.Count + 1;
-                var t = subtitle.Length == 0 ? $"Chapter {chapterNum}" : $"Chapter {chapterNum} — {subtitle}";
+                //
+                // The format itself now lives in ChapterTitle, which also PARSES it — this was the
+                // only place in the codebase that knew the standard, and nothing could read it back.
+                var t = ChapterTitle.Format(segments.Count + 1, r.Title);
                 segments.Add((t, new List<Guid>()));
             }
             segments[^1].Beats.Add(r.BeatId);

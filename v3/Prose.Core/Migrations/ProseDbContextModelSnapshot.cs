@@ -7270,6 +7270,53 @@ namespace Prose.Core.Migrations
                     b.ToTable("LlmPromptCaptures");
                 });
 
+            modelBuilder.Entity("Prose.Core.Data.Entities.LogIssue", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Level")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Note")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ResolvedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Signature")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<DateTime>("TrackedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Signature")
+                        .IsUnique();
+
+                    b.HasIndex("Status");
+
+                    b.ToTable("LogIssues", (string)null);
+                });
+
             modelBuilder.Entity("Prose.Core.Data.Entities.MarkdownFile", b =>
                 {
                     b.Property<Guid>("Id")
@@ -7825,20 +7872,8 @@ namespace Prose.Core.Migrations
                         .HasMaxLength(400)
                         .HasColumnType("nvarchar(400)");
 
-                    b.Property<DateTime?>("CoverImageGeneratedAt")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("CoverImagePath")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CoverImageProvider")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CoverPrompt")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CoverPromptGeneratedAt")
-                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");

@@ -7,6 +7,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <!-- Embedded into the .exe as its Win32 resource icon; WPF windows inherit it. -->
+    <ApplicationIcon>..\..\assets\kdp.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

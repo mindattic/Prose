@@ -195,11 +195,6 @@ public static class ExportNodeCli
             else
                 Console.Error.WriteLine("[export-node] ⚠ No keywords found for this node — run prose --seed-keywords --slug <slug> first.");
 
-            if (result.CoverPath != null)
-                Console.WriteLine($"[export-node] Wrote cover: {result.CoverPath}");
-            else
-                Console.WriteLine("[export-node] Cover already present or no image provider configured — skipped.");
-
             // DCM lifecycle Gantt (<CODE>-dcm-viz.htm) into the same folder.
             try
             {

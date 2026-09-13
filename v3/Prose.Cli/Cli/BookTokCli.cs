@@ -83,7 +83,7 @@ public static class BookTokCli
             }
             if (string.IsNullOrWhiteSpace(node.CoverImagePath))
             {
-                Console.Error.WriteLine($"[booktok] Node '{slug}' has no CoverImagePath yet — run --generate-cover-image first.");
+                Console.Error.WriteLine($"[booktok] Node '{slug}' has no CoverImagePath yet — import a cover with --import-cover first.");
                 return 1;
             }
 

@@ -6,8 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>Prose.Hub</RootNamespace>
-    <AssemblyName>Prose.Hub</AssemblyName>
-    <ApplicationIcon>icons\prose-hub.ico</ApplicationIcon>
+    <!-- Hub.exe, not Prose.Hub.exe: it deploys to C:\Apps\MindAttic\Prose\ alongside Writer.exe
+         and Launcher.exe, and the folder already says Prose. Renaming the assembly also renames
+         the CSS-isolation bundle the Razor SDK emits, so App.razor links Hub.styles.css. -->
+    <AssemblyName>Hub</AssemblyName>
+    <!-- Every app's icon lives in the repo-root assets\ folder, one copy each, and is embedded
+         into the .exe as its Win32 resource icon by ApplicationIcon. -->
+    <ApplicationIcon>..\..\assets\hub.ico</ApplicationIcon>
     <!-- Explicit (not just a publish-time flag): Prose.Hub references Prose.Mcp, another Exe
          project, and publishing framework-dependent for win-x64 fails with NETSDK1151
          ("referenced project is a self-contained executable") unless both ends of an Exe-to-Exe
@@ -37,6 +42,11 @@
          Blazor Server web head at /app, no separate process (see Program.cs). The same
          library is referenced by Prose.Maui's native head later. -->
     <ProjectReference Include="..\Prose.ObserverUi\Prose.ObserverUi.csproj" />
+    <!-- The hand-editing surface (Razor Class Library), served at /writer. Unlike ObserverUi it
+         references Prose.Core and calls the workbench directly, so it is Hub-hosted only - that
+         is the point: the editor writes prose, and every prose write goes through the Hub's own
+         services, never a second DB connection. Prose.Writer.exe is only a WebView2 window. -->
+    <ProjectReference Include="..\Prose.WriterUi\Prose.WriterUi.csproj" />
   </ItemGroup>
 
 </Project>

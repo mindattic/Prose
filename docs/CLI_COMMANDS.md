@@ -13,7 +13,7 @@
 > routes through the cost gate; everything else is deterministic or read-only.
 > Most commands require a `--universe <slug>` scope.
 
-**277 commands.** 15 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**272 commands.** 9 cost-gated. 14 have no description in their dispatch comment (7 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -105,16 +105,6 @@ insert a Weapon from a WeaponryData JSON file.
 
 <sub>handler `AddWeaponryCli`</sub>
 
-### `--altitude-audit`
-
-```
-prose --altitude-audit (--slug <slug> | --all) [--force-synopsis]
-```
-
-three-altitudes agreement audit (designed story vs told story).
-
-<sub>handler `AltitudeAuditCli`</sub>
-
 ### `--ambient-palette`
 
 prose --ambient-palette --character <characterId> [--as-of date]
@@ -161,12 +151,6 @@ set the ParentNodeId on an existing node (move it into a collection). X-Ray scen
 
 <sub>handler `AssembleSceneCli`</sub>
 
-### `--audit-book`
-
-prose --audit-book --slug <book-or-chapter-slug> [--deep] [--full] [--model <id>] [--out <path>] [--json] The "Player Piano" — one repeatable command running the full QA battery + the Structural Integrity Index (SII), a deterministic Findings rollup (BookHealthService). See AuditNodeCli.cs's own header comment for the authoritative, kept-in-sync tier list (10 FREE / 15 DEEP / 8 FULL checks as of 2026-09-06 — do not re-duplicate the list here, it drifted stale from BookHealthService.RunAsync once already). --model retargets the deep/full tier LLM calls (e.g. Haiku) for the run.
-
-<sub>handler `AuditNodeCli` · **cost-gated (spends LLM money)**</sub>
-
 ### `--audit-consistency`
 
 ```
@@ -198,6 +182,12 @@ prose --audit-drift --json    JSON dump
 report Character columns that disagree with their latest matching EntityStateEvents row. Lights up the static-vs-dynamic recipe only for columns that actually drifted.
 
 <sub>handler `AuditDriftCli`</sub>
+
+### `--audit-event-summaries`
+
+prose --audit-event-summaries --slug <slug> Read-only, free: find stored EventSummary lines that describe a DIFFERENT beat (batch ref shift).
+
+<sub>handler `AuditEventSummariesCli`</sub>
 
 ### `--auto-correct-nightly`
 
@@ -369,6 +359,11 @@ stamp Beat.StoryPosition — a book's reading order as a number, which is the en
 
 <sub>handler `BeatPositionsCli`</sub>
 
+### `--beat-write-trace`
+
+prose --beat-write-trace (--beat-id <guid> | --last) [--json] Single-source-writer RFC, step one: every LLM + embedding call one beat write made, by stage, with tokens/cost/wall time, plus the per-stage execution log and gate-skipped stages. Read-only, free.
+
+<sub>handler `BeatWriteTraceCli`</sub>
 
 ### `--book`
 
@@ -428,6 +423,16 @@ list a book's chapter units in reading order — the 100 ft rung of the Three Al
 
 <sub>handler `ChaptersCli`</sub>
 
+### `--character-depth-audit`
+
+```
+prose --character-depth-audit --universe <slug> [--json]
+```
+
+read-only survey — which characters have zero rows across every relational depth bridge (PsychologyTraits/StatScalars/ArchetypeScores/StoryHooks/SpeechPhrases), cross-referenced against BeatEntityMentions to separate "actually used in prose" from inert stub rows. Built to size the blast radius of a 2026-09-05 incident where --rebuild-readmodel overwrote a character's cached read-model (which held rich content) with an empty relational projection. Writes nothing.
+
+<sub>handler `CharacterDepthAuditCli`</sub>
+
 ### `--character-gear`
 
 ```
@@ -440,27 +445,11 @@ surgical CRUD over a character's signature-gear / pharmaceuticals list. Added 20
 
 <sub>handler `CharacterGearCli`</sub>
 
-### `--check-canon`
-
-```
-prose --check-canon (--slug <s> | --id <guid> | --all)
-```
-
-sweep a node's prose against canon (all entity types) and queue contradictions as approval-gated findings — the self-correction pass.
-
-<sub>handler `CheckCanonCli`</sub>
-
 ### `--check-duplicate-beats`
 
 prose --check-duplicate-beats --slug <nodeSlug> [--threshold 0.90] [--json] Corpus-wide near-duplicate-scene detector over prose embeddings (BeatDuplicateService). Candidate generator, not a verdict — verify by reading both beats before acting.
 
 <sub>handler `CheckDuplicateBeatsCli`</sub>
-
-### `--check-fidelity`
-
-prose --check-fidelity (--slug <nodeSlug> | --id <nodeId>) [--json] Detects the Semantic Fidelity Gap — beats scoring high but drifting from the story's original meaning (Goodhart's Law in prose). Two checks: Bible alignment: prose vs Seed/Description (north-star drift) Intent alignment: prose vs beat Description (purpose drift) Files SEMANTIC-DRIFT findings; also runs automatically after every review.
-
-<sub>handler `CheckFidelityCli`</sub>
 
 ### `--check-temporal-hygiene`
 
@@ -473,12 +462,6 @@ prose --check-temporal-hygiene [--json] Enforces (not just documents) the two ru
 prose --check-text-integrity [--fix] [--json]
 
 <sub>handler `TextIntegrityCli`</sub>
-
-### `--chekhov-audit`
-
-prose --chekhov-audit --slug <nodeSlug> Chekhov's Gun audit: extract all concrete props/anchors/traits and test whether each earns its place. ORPHANED = appears with no payoff; DECORATION = repeated without new function; EARNS_IT = each appearance serves a distinct narrative purpose. Run before trimming any prose detail.
-
-<sub>handler `ChekhovAuditCli` · **cost-gated (spends LLM money)**</sub>
 
 ### `--clone-book`
 
@@ -514,22 +497,6 @@ generate a resource-tracked combat sequence via CombatSceneWriter.
 prose --command-log [--since <dt>] [--handler <name>] [--take N] [--json] Read back the Command Ledger — every CLI/MCP/cost-gated call Prose.Hub has executed.
 
 <sub>handler `CommandLogCli`</sub>
-
-### `--commandment-audit`
-
-prose --commandment-audit --slug <nodeSlug> [--json] Renamed from --book-audit (2026-08-30) — collided by verb/noun order with the unrelated --audit-book (the full QA battery); a typo silently ran the wrong tool. Audits a node against 7 commandments — gateway (PreviousNodeId=null) or sequel (PreviousNodeId set). Pass/warn/fail per commandment with fix hints. Exit 0 = all pass, 1 = advisory warnings, 2 = blocking failures.
-
-<sub>handler `BookAuditCli`</sub>
-
-### `--composite-cover-title`
-
-```
-prose --composite-cover-title --slug <slug>
-```
-
-redraw the title onto an already-saved cover image without calling an image-generation API again.
-
-<sub>handler `CompositeCoverTitleCli`</sub>
 
 ### `--compute-metrics`
 
@@ -586,12 +553,6 @@ prose --coverage
 per-entity-type reachability matrix (how much canon is embedded and thus pullable into prose). The standing gap-finder.
 
 <sub>handler `CoverageCli`</sub>
-
-### `--craft-checklist`
-
-prose --craft-checklist --slug <slug> [--force] [--json] Reader-Proxy QA Instrument 2: binary craft/delight checklist per beat, hash-gated on Beat.TextHash + rule-set version (unchanged beats never re-bill). CRAFT §8 DON'Ts + "≥1 applicable DELIGHT move" + book-level move-monotony counters (DELIGHT §14). Findings persist as CraftChecklist. No scores. Exit 0 = clean, 1 = findings, 2 = error.
-
-<sub>handler `BeatChecklistCli`</sub>
 
 ### `--create-book`
 
@@ -706,12 +667,6 @@ report beats whose Beat.Description was verified against prose that has since ch
 
 <sub>handler `DescriptionDriftCli`</sub>
 
-### `--diagnose-book`
-
-prose --diagnose-book --slug <nodeSlug> [--json] Pre-flight structural analysis before running the review panel. Runs 12 targeted checks (antagonist cost, protagonist behavior change, exposition density, etc.) and reports Pass/Warn/Fail with evidence + fixes. Exit 0 = ready, 1 = warnings, 2 = blocking failures.
-
-<sub>handler `DiagnoseNodeCli`</sub>
-
 ### `--doc-context`
 
 _(no description in the dispatch comment — add one above the guard in `Program.cs`)_
@@ -788,11 +743,27 @@ review-driven auto-editor. Weight the latest reviews, target the lowest / most-f
 
 <sub>handler `EditNodeCli`</sub>
 
+### `--edit-distribution`
+
+prose --edit-distribution [--slug <slug>] [--top N] [--json] RFC 0009 Phase 0: Beat.Version histogram per book + corpus-wide, and the most-rewritten beats. Read-only, free. The baseline that must not rise once the autonomous rewriters are deleted.
+
+<sub>handler `EditDistributionCli`</sub>
+
 ### `--ensure-chapter`
 
 prose --ensure-chapter --slug <slug> | --all Enforce "every story has >= 1 chapter": wrap a flat story's direct beats into a single ChapterNode child (no-op if already chaptered). No LLM.
 
 <sub>handler `EnsureChapterCli`</sub>
+
+### `--entity-history`
+
+```
+prose --entity-history (--id <guid> | --type <t> --slug <s>) [--as-of <utc>] [--diff <utc>]
+```
+
+an entity's version history, read from the system-versioned _History tables.
+
+<sub>handler `EntityHistoryCli`</sub>
 
 ### `--entity-mentions`
 
@@ -838,12 +809,6 @@ prose --entity-tree (--id <guid> | --slug <slug>) [--depth N] [--rel-types type1
 
 prose --estimate-cost [--beats <N>] [--pov-characters <M>] [--tier free|deep|full] Cost-governance check (RFC 0009 §9.5, 2026-08-13): prints the LLM call count implied by BookHealthService's current wiring for a book of N beats — no DB access, pure arithmetic against the tier shapes read directly out of the code. Run this before merging a new per-beat service so the cost jump is visible before it ships, not discovered by totaling a bill months later.
 
-
-### `--examine-emotion`
-
-prose --examine-emotion --slug <nodeSlug> [--effort draft|standard|deep] [--json] Emotional Intelligence Examination (SS-A15): 8-dimension 0–4 rubric, per-beat curve, character ledger (Want/Need/Wound/Flaw), register-adaptive anchors. Exit 0 = none blocking, 1 = advisory issues, 2 = blocking dimensions open.
-
-<sub>handler `ExamineEmotionCli` · **cost-gated (spends LLM money)**</sub>
 
 ### `--exclusion-rules`
 
@@ -934,7 +899,7 @@ prose --extract-beat-locations --slug <slug> [--force] [--limit N] [--dry-run] B
 
 ### `--fact-ledger-refresh`
 
-prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of just the fact-ledger check (see FactLedgerRefreshCli's own doc comment). Not cost-gated: it is the deliberate cheap alternative to the cost-gated --audit-book --deep bundle.
+prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of just the fact-ledger check (see FactLedgerRefreshCli's own doc comment). Not cost-gated: it is the deliberate cheap alternative to the (since-deleted, RFC 0010) --audit-book --deep bundle.
 
 <sub>handler `FactLedgerRefreshCli`</sub>
 
@@ -1002,6 +967,12 @@ Corpus-wide repair: remove CharacterAlias/PlaceAlias/FactionAlias/WeaponAlias ro
 
 <sub>handler `FixSelfAliasesCli`</sub>
 
+### `--gate-check`
+
+prose --gate-check --beat-id <guid> --file <candidate.txt> [--spine <original.txt>] [--json] RFC 0012 §3.4: run the writer's gate (brief, free checks, one verifier call, optional spine test against an original) on any text, without saving. One Haiku call.
+
+<sub>handler `GateCheckCli`</sub>
+
 ### `--gear-check`
 
 prose --gear-check --slug <nodeSlug> --character <characterId> [--story-time date]
@@ -1045,27 +1016,6 @@ prose --generate-canon-md --all
 regenerate canon document .md files from DB (CanonDocuments + CanonDocumentSections). The disk files are generated read-only mirrors; source of truth is the DB.
 
 <sub>handler `CanonDocumentCli`</sub>
-
-### `--generate-cover-image`
-
-```
-prose --generate-cover-image --slug <slug> --provider openai|stability|google
-```
-
-render Node.CoverPrompt through an image provider (openai/stability/google) and save the cover under the media dir. Costs real money — requires an API key.
-
-<sub>handler `GenerateCoverImageCli`</sub>
-
-### `--generate-cover-prompt`
-
-```
-prose --generate-cover-prompt --slug <slug>
-prose --generate-cover-prompt --all
-```
-
-generate Node.CoverPrompt (image-model cover description) from the book's own Title/Summary/Description/universe.
-
-<sub>handler `GenerateCoverPromptCli` · **cost-gated (spends LLM money)**</sub>
 
 ### `--generate-event-list`
 
@@ -1193,12 +1143,6 @@ prose --harvest-voice (--slug <s> | --id <id> | --all-80 | --pending | --apply <
 distill voice rules from winning (≥80%) nodes into the codified DB-backed rules the generator reads. Propose-then-approve.
 
 <sub>handler `HarvestVoiceCli` · **cost-gated (spends LLM money)**</sub>
-
-### `--hook-audit`
-
-prose --hook-audit --slug <slug> [--dry-run] Chapter-ending hook strength analysis; weak non-final endings file findings.
-
-<sub>handler `HookAuditCli`</sub>
 
 ### `--image-prompts`
 
@@ -1374,6 +1318,12 @@ read/edit CanonDocumentSections directly — the CLI equivalent of the MCP tools
 
 <sub>handler `ListCanonSectionsCli`</sub>
 
+### `--list-plants` / `--add-plant`
+
+prose --plant-audit   --slug <node> [--json]   audit plant/payoff pairs prose --list-plants   --slug <node> [--json]   list all pairs prose --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]
+
+<sub>handler `PlantPayoffCli`</sub>
+
 ### `--list-sessions`
 
 prose --list-sessions --slug <slug> [--limit N]
@@ -1421,6 +1371,17 @@ prose --logic-sweep --slug <nodeSlug> [--json] Codifies docs/LOGIC.md's six-dime
 
 <sub>handler `LogicSweepCli`</sub>
 
+### `--logs`
+
+```
+prose --logs [--since 2h] [--level Error] [--search <text>] [--detail <sig>] [--raw]
+prose --logs --track <sig> [--note "..."] | --issues [--all] | --resolve|--ignore|--reopen <id>
+```
+
+engine-error triage — group Serilog errors into distinct faults, queue them, and re-check "fixed" against the logs rather than trusting the flag.
+
+<sub>handler `LogsCli`</sub>
+
 ### `--make-group`
 
 ```
@@ -1441,6 +1402,12 @@ author-only Canon trust gate — mark a node strong enough to draw conclusions a
 
 <sub>handler `MarkCanonCli`</sub>
 
+### `--merge-beats`
+
+prose --merge-beats --slug <slug> [--from N] [--to N] [--limit N] [--resume] --yes RFC 0012 §11: per beat — two dry-run drafts, one merge against the book's own text as spine, spine + gate test, save as AuthorMerge or keep the original. Expensive; requires --yes.
+
+<sub>handler `MergeBeatsCli`</sub>
+
 ### `--merge-edge`
 
 prose --merge-edge --keep <edgeId> --dedupe <edgeId> [--as <canonicalRelationType>] [--register-alias] The execution half of --scan-edge-duplicates — collapses two Edge rows describing the same relationship under different wording into one. See MergeEdgeCli.
@@ -1452,6 +1419,12 @@ prose --merge-edge --keep <edgeId> --dedupe <edgeId> [--as <canonicalRelationTyp
 prose --merge-entity --winner <guid> --loser <guid> The execution half of the report-only duplicate-scan tools — a human, having confirmed two rows are the same identity from real book/prose knowledge, executes the merge. No LLM call, no fuzzy matching. See MergeEntityCli.
 
 <sub>handler `MergeEntityCli`</sub>
+
+### `--merge-entity-into-vocabulary`
+
+prose --merge-entity-into-vocabulary --from <sourceGuid> --into <targetVocabularyGuid> --universe <slug> --term "<term>" --definition "<text>" [--origin "<text>"] [--usage "<text>"] [--category "<text>"] [--example "<text>"] [--dry-run] One-off duplicate resolution: merges --from's content/edges onto an existing `vocabulary` entity and deletes --from. See MergeEntityIntoVocabularyCli.
+
+<sub>handler `MergeEntityIntoVocabularyCli`</sub>
 
 ### `--migrate-blueprint-rows`
 
@@ -1551,29 +1524,11 @@ prose --narrate-book (--id <guid|prefix> | --slug <slug>)
 
 <sub>handler `NarrateNodeCli`</sub>
 
-### `--narrative-science`
-
-```
-prose --narrative-science sacred-flaw --character <slug|id> [--scaffold]
-prose --narrative-science dramatic-question (--slug <s> | --id <beatId>) [--character <slug|id>]
-prose --narrative-science five-act --slug <nodeSlug>
-```
-
-Will Storr narrative-science frameworks — sacred flaw, dramatic question, five-act structure. Three subcommands (scene-anatomy removed 2026-08-13 — redundant per-beat cost sink with no automated caller, see NarrativeScienceService.cs): (add --json to any subcommand for raw JSON output)
-
-<sub>handler `NarrativeScienceCli`</sub>
-
 ### `--orphan-beats`
 
 prose --orphan-beats [--min-number N] [--max-number N] [--limit N] [--contains "text"] — read-only diagnostic: Beats rows with no BeatNodes membership. See OrphanBeatsCli's own doc comment for why this exists (VIGL fact-ledger investigation, 2026-09-01).
 
 <sub>handler `OrphanBeatsCli`</sub>
-
-### `--plant-audit` / `--list-plants` / `--add-plant`
-
-prose --plant-audit   --slug <node> [--json]   audit plant/payoff pairs prose --list-plants   --slug <node> [--json]   list all pairs prose --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]
-
-<sub>handler `PlantPayoffCli`</sub>
 
 ### `--populate-queue`
 
@@ -1584,12 +1539,6 @@ prose --populate-queue --entity-review|--story-review|--beat-write|--status [opt
 _(no description in the dispatch comment — add one above the guard in `Program.cs`)_
 
 <sub>handler `PopulateQueueCli`</sub>
-
-### `--pov-audit`
-
-prose --pov-audit --slug <slug> [--dry-run] Head-hopping + same-scene voice-sameness audit (batched Haiku; findings loop back).
-
-<sub>handler `PovVoiceAuditCli`</sub>
 
 ### `--prepare-audible`
 
@@ -1626,12 +1575,6 @@ print the voice context the generator/re-beater receive — the verification tha
 Strand Progress Dashboard: every non-archived book, code/title/kind/status/score/pages, sorted by score descending. Cross-universe by design. See .claude/commands/progress.md.
 
 <sub>handler `ProgressCli`</sub>
-
-### `--prose-check`
-
-prose --prose-check (--slug <nodeSlug> | --id <beatId>) [--all] [--json]
-
-<sub>handler `ProseCheckCli`</sub>
 
 ### `--prose-health`
 
@@ -1724,10 +1667,10 @@ dotnet run --project ... -- --rebuild-graph [--universe <slug>] Rebuilds the sco
 ### `--rebuild-readmodel`
 
 ```
-prose --rebuild-readmodel [--archived]
+prose --rebuild-readmodel [--archived] [--force]
 ```
 
-(re)build the materialized character read-model projection from the relational source of truth. Run after a bulk import / relational migration, or whenever ReadModelVersion is bumped. Backfills missing/stale rows, prunes orphans. The steady-state path self-heals, so this is a one-time / maintenance op.
+(re)build the materialized character read-model projection from the relational source of truth. Run after a bulk import / relational migration, or whenever ReadModelVersion is bumped. Backfills missing/stale rows, prunes orphans. The steady-state path self-heals, so this is a one-time / maintenance op. Any character whose relational read is poorer than its current cache is SKIPPED and named in the output, not silently overwritten — pass --force only once you've reviewed that list (see the 2026-09-05 incident note on RebuildReadModelCli).
 
 <sub>handler `RebuildReadModelCli`</sub>
 
@@ -1795,6 +1738,12 @@ prose --relation-aliases --remove --id <id>
 CRUD for RelationTypeAliases — normalizes link_entities free-text RelationType wording (e.g. "has" -> "owns") so the same relationship doesn't fork into multiple Edge rows.
 
 <sub>handler `RelationAliasCli`</sub>
+
+### `--rename-entity`
+
+prose --rename-entity --entity <guid|slug> --node <book-guid|slug|code> --new-name "..." [--apply --yes] Preview is the default; the apply form replaces exact full-name references in this book's hand-authored outline and descendant beats, then relabels linked ledger claims.
+
+<sub>handler `RenameEntityCli`</sub>
 
 ### `--rename-universe`
 
@@ -1921,6 +1870,12 @@ prose --retire-records-blobs [--rebuild] [--validate] [--apply]
 RFC 0007 unified blob-retirement gate — backfill all 29 relational types from Records.Json, validate, and delete the blobs in a single pass. (RFC 0007)
 
 <sub>handler `RetireRecordsBlobsCli`</sub>
+
+### `--retype-document-to-vocabulary`
+
+prose --retype-document-to-vocabulary --id <entityGuid> --universe <slug> --term "<term>" --definition "<text>" [--origin "<text>"] [--usage "<text>"] [--category "<text>"] [--example "<text>"] [--dry-run] One-off recategorization for a populated `document`-type entity whose Name is a generic in-world common noun (e.g. "CorpoNation") — moves it to `vocabulary` type without touching its existing Edge relationships. See RetypeDocumentToVocabularyCli.
+
+<sub>handler `RetypeDocumentToVocabularyCli`</sub>
 
 ### `--review-entity`
 
@@ -2091,6 +2046,16 @@ hand-write the node bible verbatim (CLI mirror of MCP SetBookOutline).
 
 <sub>handler `SetBookOutlineCli`</sub>
 
+### `--set-byo-key`
+
+```
+prose --set-byo-key --provider claude|openai
+```
+
+(--key <apiKey> [--key <apiKey> ...] | --add-key <apiKey> | --remove-key <apiKey> | --list | --clear) Personal API key (or rotation/failover pool of several, tried in order) the operator tool-calling loop (KdpOperatorService et al.) tries before its own default credential chain (Claude: Team OAuth; OpenAI: Vault 'openai').
+
+<sub>handler `SetByoKeyCli`</sub>
+
 ### `--set-canon-section`
 
 _(no description in the dispatch comment — add one above the guard in `Program.cs`)_
@@ -2102,12 +2067,6 @@ _(no description in the dispatch comment — add one above the guard in `Program
 prose --set-edge-validity --edge <edgeId> [--slug <slug>] [--from-beat-number <N>] [--until-beat-number <N>] [--clear-from] [--clear-until] Sets/adjusts/clears an existing edge's beat-scoped validity window (2026-09-02, replaces the dead DateTime story-time mechanism). See SetEdgeValidityCli.
 
 <sub>handler `SetEdgeValidityCli`</sub>
-
-### `--set-llm-provider`
-
-prose --set-llm-provider claude-api|claude-team [--dry-run] Switches every Settings.json field governing which Claude credential path is active in one command (ActiveLlmProvider always; ReviewJudgeProvider/ReviewAllowedProviders/ ReaderQaJuryProviders only where they currently hold the other Claude variant).
-
-<sub>handler `SetLlmProviderCli`</sub>
 
 ### `--set-narrative-mode`
 
@@ -2124,6 +2083,27 @@ prose --set-node-author --slug <slug|code|guid> --author "<Name>"
 set Node.Author — the pen name exports fall through to instead of "MindAttic". See SetNodeAuthorCli class doc.
 
 <sub>handler `SetNodeAuthorCli`</sub>
+
+### `--set-node-version`
+
+```
+prose --set-node-version (--slug <slug> | --id <id>) --version <N>
+```
+
+Directly sets Node.Version — the counter DocxExportService reads as nextVersion = Version + 1. For continuing a book's real version lineage after its local export folder was reset (e.g. a rename/regen) while the live KDP listing's history continues from an earlier number.
+
+<sub>handler `SetNodeVersionCli`</sub>
+
+### `--set-previous-node`
+
+```
+prose --set-previous-node (--slug <slug> | --id <id>) (--previous-slug <slug> | --previous-id <id>)
+prose --set-previous-node --slug <slug> --clear   — detach sequel link
+```
+
+Unblocks deleting/renaming a book another book's PreviousNodeId points at (FK_Nodes_PreviousNode is a DB-level Restrict, not just a C# guard — --delete-node --force cannot bypass it).
+
+<sub>handler `SetPreviousNodeCli`</sub>
 
 ### `--set-structural-blueprint`
 
@@ -2171,12 +2151,6 @@ dump the entire Prose DB to a re-runnable .sql script.
 
 <sub>handler `StartSessionCli`</sub>
 
-### `--storyscope-audit`
-
-prose --storyscope-audit --slug <nodeSlug> [--json] Verifies the book against measurable AI-fiction structural tells (StoryScope): flat escalation, event monoculture, moral gloss, emotion ratio, char-intro method, resolution mode, subplot execution, consensus clichés, TTCW originality. Findings triaged BLOCKER/MODERATE/MINOR; loop back into future beat prompts. Exit 0 = clean, 1 = moderate/minor, 2 = any blocker.
-
-<sub>handler `StoryScopeAuditCli` · **cost-gated (spends LLM money)**</sub>
-
 ### `--strip-beat-artifacts`
 
 ```
@@ -2186,12 +2160,6 @@ prose --strip-beat-artifacts --slug <slug> [--dry-run]
 one-off cleanup of a generation-artifact heading/marker leaking into Beats.Text — see StripBeatArtifactsCli class doc.
 
 <sub>handler `StripBeatArtifactsCli`</sub>
-
-### `--swain-audit`
-
-prose --swain-audit [--slug <slug> | --code <code> | --all] [--repair] [--blockers] Classifies every enabled beat as Scene / Sequel / Ambiguous / Deficient against Dwight Swain's Scene/Sequel doctrine. Deficient = BLOCKER; Ambiguous = MODERATE. Add --repair to auto-splice the missing structural element (disaster turn, decision, etc.) into BLOCKER beats via Haiku (classify) + Sonnet (splice). Exit 0 = success. MUST appear before the bare --repair handler below.
-
-<sub>handler `SwainAuditCli`</sub>
 
 ### `--sync-audio`
 
@@ -2263,7 +2231,6 @@ prose --tuned-read --slug <slug> [--dry] [--no-extract] [--max-candidates N] [--
 
 the Story Ledger's Tuned Read (Phase 2) — walks a book in reading order, keeps its fact ledger fresh, pairs claims an exclusion axiom says cannot both be true, adjudicates only those pairs, and files a finding for each contradiction whose quote survives the mechanical grounding gate. Report-only (docs/LOGIC.md §4). Cost-gated: a real run spends one Sonnet call per uncached candidate. --dry runs the whole deterministic half for free.
 
-<sub>handler `TunedReadCli` · **cost-gated (spends LLM money)**</sub>
 
 ### `--universe-export`
 
@@ -2289,6 +2256,12 @@ prose --unresolved-nouns (--slug <s> | --all) [--min N] [--limit N] [--json] Rep
 
 <sub>handler `UnresolvedNounsCli`</sub>
 
+### `--validate-chapters`
+
+prose --validate-chapters (--slug <book> | --universe <slug> | --all) [--json] Report-only, free: chapter structure and title-standard conformance, from BookSpineService. Never repairs — every finding is an author decision. See ValidateChaptersCli.
+
+<sub>handler `ValidateChaptersCli`</sub>
+
 ### `--validate-nouns`
 
 ```
@@ -2309,7 +2282,7 @@ prose --verify-quotes-batch --json-file <path> [--json]
 prose --verification-staleness [--json]
 ```
 
-Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision contract. Results upserted to BeatVerification table. BLOCKER findings block --export-node. QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears in the beat it's attributed to, before that finding is trusted for triage/fix (SS-LOGIC-4a). --verification-staleness: which books have BeatVerification rows computed under an older CurrentRuleVersion and need a --verify-book/--audit-book re-run (2026-08-10 — added after the same "book never re-run after a check-logic fix" gap was found and manually re-diffed twice in one session; see BeatVerification.RuleVersion's doc comment).
+Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision contract. Results upserted to BeatVerification table. BLOCKER findings block --export-node. QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears in the beat it's attributed to, before that finding is trusted for triage/fix (SS-LOGIC-4a). --verification-staleness: which books have BeatVerification rows computed under an older CurrentRuleVersion and need a --verify-book re-run (2026-08-10 — added after the same "book never re-run after a check-logic fix" gap was found and manually re-diffed twice in one session; see BeatVerification.RuleVersion's doc comment).
 
 <sub>handler `VerifyBeatCli`</sub>
 

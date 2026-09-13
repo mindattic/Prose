@@ -253,6 +253,13 @@ if (UniverseBootstrap.RequestedSlug == null
         // Entity beat mentions (2026-08-26): resolves an explicit --entity id/slug directly,
         // same shape as --merge-entity/--restore-entity above — no ambient scope needed.
         "--entity-mentions",
+        // EntityHistoryCli (2026-09-12): direct-id (or type+slug) lookup against the entity
+        // tables' own _History shadows via IgnoreQueryFilters() — same shape as
+        // --restore-entity above, and a historical row's universe comes from the row itself.
+        "--entity-history",
+        // LogsCli (2026-09-12): engine errors and their triage state. A stack trace belongs to the
+        // engine, not to any story, and LogIssues carries no UniverseId — nothing to scope.
+        "--logs",
         // CreateUniverseCli (2026-08-30): inserts a brand-new Universe row keyed by its own
         // --slug; there is no existing universe to scope to yet.
         "--create-universe",
@@ -278,6 +285,12 @@ if (UniverseBootstrap.RequestedSlug == null
         // registrations, CLI verbs, MCP tools, scripts) — touches no DB row and no
         // universe-scoped data at all, same rationale as --estimate-cost above.
         "--architecture-scan",
+        // ValidateChaptersCli (2026-09-13): read-only structural check that resolves each book's
+        // own universe per row via IgnoreQueryFilters, and whose --all mode is deliberately
+        // corpus-wide — "is any book in the corpus still flat" is a question you cannot ask one
+        // universe at a time. Same shape and rationale as --grep-beats above. --universe <slug>
+        // still works and still narrows; this only stops the gate from DEMANDING one.
+        "--validate-chapters",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -715,6 +728,24 @@ if (args.Contains("--entity-mentions"))
     return;
 }
 
+// CLI mode: an entity's version history, read from the system-versioned _History tables.
+//   prose --entity-history (--id <guid> | --type <t> --slug <s>) [--as-of <utc>] [--diff <utc>]
+if (args.Contains("--entity-history"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("EntityHistoryCli", args);
+    return;
+}
+
+// CLI mode: engine-error triage — group Serilog errors into distinct faults, queue them, and
+// re-check "fixed" against the logs rather than trusting the flag.
+//   prose --logs [--since 2h] [--level Error] [--search <text>] [--detail <sig>] [--raw]
+//   prose --logs --track <sig> [--note "..."] | --issues [--all] | --resolve|--ignore|--reopen <id>
+if (args.Contains("--logs"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("LogsCli", args);
+    return;
+}
+
 // CLI mode: DataConsistencyService SSOT-drift audit (SQL-only, no LLM calls).
 //   prose --audit-consistency [--json]
 if (args.Contains("--audit-consistency"))
@@ -1009,24 +1040,10 @@ if (args.Contains("--generate-book-glossary"))
     return;
 }
 
-// CLI mode: generate Node.CoverPrompt (image-model cover description) from the book's
-// own Title/Summary/Description/universe.
-//   prose --generate-cover-prompt --slug <slug>
-//   prose --generate-cover-prompt --all
-if (args.Contains("--generate-cover-prompt"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("GenerateCoverPromptCli", "--generate-cover-prompt", args);
-    return;
-}
-
-// CLI mode: render Node.CoverPrompt through an image provider (openai/stability/google)
-// and save the cover under the media dir. Costs real money — requires an API key.
-//   prose --generate-cover-image --slug <slug> --provider openai|stability|google
-if (args.Contains("--generate-cover-image"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("GenerateCoverImageCli", args);
-    return;
-}
+// --generate-cover-prompt, --generate-cover-image and --composite-cover-title were DELETED
+// 2026-09-13: cover generation never worked well enough to keep, and cover art is now a manual
+// step with no plan to reincorporate it. Import one with `prose --import-cover`, which writes
+// Node.CoverImagePath for KDP publishing to read.
 
 // CLI mode: composite a book's cover onto a 3D mockup template, generate a short AI
 // image-to-video clip (hand shows the cover, opens it, flips pages) via a chosen video
@@ -1047,15 +1064,6 @@ if (args.Contains("--booktok"))
     var providerIdx = Array.IndexOf(args, "--provider");
     var provider = providerIdx >= 0 && providerIdx + 1 < args.Length ? args[providerIdx + 1] : "unknown";
     Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("BookTokCli", $"--booktok --provider={provider}", args);
-    return;
-}
-
-// CLI mode: redraw the title onto an already-saved cover image without calling an
-// image-generation API again.
-//   prose --composite-cover-title --slug <slug>
-if (args.Contains("--composite-cover-title"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("CompositeCoverTitleCli", args);
     return;
 }
 
@@ -1474,10 +1482,31 @@ if (args.Contains("--reparent-node"))
     return;
 }
 
+//   prose --set-previous-node (--slug <slug> | --id <id>) (--previous-slug <slug> | --previous-id <id>)
+//   prose --set-previous-node --slug <slug> --clear   — detach sequel link
+// Unblocks deleting/renaming a book another book's PreviousNodeId points at (FK_Nodes_PreviousNode
+// is a DB-level Restrict, not just a C# guard — --delete-node --force cannot bypass it).
+if (args.Contains("--set-previous-node"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetPreviousNodeCli", args);
+    return;
+}
 
-//   prose --set-byo-key --provider claude|openai (--key <apiKey> | --clear)
-// Personal API key the operator tool-calling loop (KdpOperatorService et al.) tries before its
-// own default credential chain (Claude: Team OAuth; OpenAI: Vault 'openai').
+//   prose --set-node-version (--slug <slug> | --id <id>) --version <N>
+// Directly sets Node.Version — the counter DocxExportService reads as nextVersion = Version + 1.
+// For continuing a book's real version lineage after its local export folder was reset (e.g. a
+// rename/regen) while the live KDP listing's history continues from an earlier number.
+if (args.Contains("--set-node-version"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetNodeVersionCli", args);
+    return;
+}
+
+//   prose --set-byo-key --provider claude|openai
+//     (--key <apiKey> [--key <apiKey> ...] | --add-key <apiKey> | --remove-key <apiKey> | --list | --clear)
+// Personal API key (or rotation/failover pool of several, tried in order) the operator
+// tool-calling loop (KdpOperatorService et al.) tries before its own default credential chain
+// (Claude: Team OAuth; OpenAI: Vault 'openai').
 if (args.Contains("--set-byo-key"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SetByoKeyCli", args);
@@ -2694,6 +2723,15 @@ if (args.Contains("--merge-entity"))
     return;
 }
 
+// prose --validate-chapters (--slug <book> | --universe <slug> | --all) [--json]
+// Report-only, free: chapter structure and title-standard conformance, from BookSpineService.
+// Never repairs — every finding is an author decision. See ValidateChaptersCli.
+if (args.Contains("--validate-chapters"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ValidateChaptersCli", args);
+    return;
+}
+
 // prose --scan-edge-duplicates --universe <slug> [--json]
 // Report-only: flags (Source, Target) pairs with more than one live RelationType wording
 // (link_entities free-text drift, e.g. "owns" vs "has"). See ScanEdgeDuplicatesCli.
@@ -2738,6 +2776,29 @@ if (args.Contains("--export-entity-cluster"))
 if (args.Contains("--delete-entity-cluster"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("DeleteEntityClusterCli", args);
+    return;
+}
+
+// prose --retype-document-to-vocabulary --id <entityGuid> --universe <slug> --term "<term>"
+//     --definition "<text>" [--origin "<text>"] [--usage "<text>"] [--category "<text>"]
+//     [--example "<text>"] [--dry-run]
+// One-off recategorization for a populated `document`-type entity whose Name is a generic
+// in-world common noun (e.g. "CorpoNation") — moves it to `vocabulary` type without touching its
+// existing Edge relationships. See RetypeDocumentToVocabularyCli.
+if (args.Contains("--retype-document-to-vocabulary"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RetypeDocumentToVocabularyCli", args);
+    return;
+}
+
+// prose --merge-entity-into-vocabulary --from <sourceGuid> --into <targetVocabularyGuid>
+//     --universe <slug> --term "<term>" --definition "<text>" [--origin "<text>"]
+//     [--usage "<text>"] [--category "<text>"] [--example "<text>"] [--dry-run]
+// One-off duplicate resolution: merges --from's content/edges onto an existing `vocabulary`
+// entity and deletes --from. See MergeEntityIntoVocabularyCli.
+if (args.Contains("--merge-entity-into-vocabulary"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("MergeEntityIntoVocabularyCli", args);
     return;
 }
 

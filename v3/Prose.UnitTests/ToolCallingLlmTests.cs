@@ -101,8 +101,11 @@ public class ToolCallingLlmTests
         var handler = new StubHandler(_ => Json(HttpStatusCode.Unauthorized, """{"error":"bad key"}"""));
         var llm = new OpenAiToolCallingLlm(new HttpClient(handler), NullLogger<OpenAiToolCallingLlm>.Instance, () => "fake-key");
 
+        // HttpRequestException (carrying the status code), not InvalidOperationException — this
+        // is what lets KeyPoolFailover classify it as a key-level failure worth trying the next
+        // key on, for callers with more than one key configured.
         Assert.That(async () => await llm.CreateTurnAsync("sys", [], [], 4096, CancellationToken.None),
-            Throws.InvalidOperationException.With.Message.Contains("401"));
+            Throws.TypeOf<HttpRequestException>().With.Message.Contains("401"));
     }
 
     // ── Anthropic ─────────────────────────────────────────────────────────────

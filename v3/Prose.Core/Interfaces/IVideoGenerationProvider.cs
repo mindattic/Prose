@@ -14,9 +14,9 @@ public record VideoJobStatus(VideoJobState State, string? Error = null);
 /// <summary>
 /// One image-to-video generation backend. Implementations: <c>kling</c>, <c>runway</c>, <c>sora</c>.
 /// All three vendors run generation as an async job — submit, poll until done, then download —
-/// so the interface mirrors that shape directly rather than pretending it's a single call like
-/// <see cref="ICoverImageProvider"/>. <see cref="Services.BookTokVideoService"/> owns the shared
-/// poll loop; each provider only implements its own three REST calls.
+/// so the interface mirrors that shape directly rather than pretending it's a single call.
+/// <see cref="Services.BookTokVideoService"/> owns the shared poll loop; each provider only
+/// implements its own three REST calls.
 /// </summary>
 public interface IVideoGenerationProvider
 {

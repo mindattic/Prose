@@ -20,7 +20,7 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
     private readonly HttpClient http;
     private readonly ILogger<OpenAiToolCallingLlm> log;
     private readonly string model;
-    private readonly Func<string?> resolveApiKey;
+    private readonly Func<IReadOnlyList<string>> resolveApiKeys;
     private const string Endpoint = "https://api.openai.com/v1/chat/completions";
     private const int MaxRetries = 5;
     private static readonly TimeSpan BaseDelay = TimeSpan.FromSeconds(5);
@@ -32,22 +32,36 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
     {
         this.http = http;
         this.log = log;
-        this.resolveApiKey = () => MindAtticCredentialStore.GetKey("openai");
+        this.resolveApiKeys = AsPool(() => MindAtticCredentialStore.GetKey("openai"));
         this.model = "gpt-4.1";
     }
 
-    /// <summary>Test-friendly constructor — injects the API-key resolver instead of reading the
+    /// <summary>Test-friendly constructor — injects a single-key resolver instead of reading the
     /// real shared credential store.</summary>
     public OpenAiToolCallingLlm(HttpClient http, ILogger<OpenAiToolCallingLlm> log, Func<string?> resolveApiKey, string model = "gpt-4.1")
+        : this(http, log, AsPool(resolveApiKey), model) { }
+
+    /// <summary>
+    /// Key-pool constructor: when more than one key is configured (a human's BYO-key pool, see
+    /// <see cref="OperatorByoKeyPoolService"/>), a key that fails with an auth/rate-limit/server
+    /// error causes the NEXT key to be tried ("sticky failover") — see <see cref="KeyPoolFailover"/>.
+    /// </summary>
+    public OpenAiToolCallingLlm(HttpClient http, ILogger<OpenAiToolCallingLlm> log, Func<IReadOnlyList<string>> resolveApiKeys, string model = "gpt-4.1")
     {
         this.http = http;
         this.log = log;
-        this.resolveApiKey = resolveApiKey;
+        this.resolveApiKeys = resolveApiKeys;
         this.model = model;
     }
 
+    private static Func<IReadOnlyList<string>> AsPool(Func<string?> resolveApiKey) => () =>
+    {
+        var key = resolveApiKey();
+        return string.IsNullOrWhiteSpace(key) ? Array.Empty<string>() : new[] { key };
+    };
+
     public Task<bool> IsConfiguredAsync() =>
-        Task.FromResult(!string.IsNullOrWhiteSpace(resolveApiKey()));
+        Task.FromResult(resolveApiKeys().Count > 0);
 
     public async Task<ToolTurnResult> CreateTurnAsync(
         string systemPrompt,
@@ -56,8 +70,8 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
         int maxTokens,
         CancellationToken ct)
     {
-        var apiKey = resolveApiKey();
-        if (string.IsNullOrWhiteSpace(apiKey))
+        var keys = resolveApiKeys();
+        if (keys.Count == 0)
             throw new InvalidOperationException("No OpenAI API key configured ('openai' provider key in Settings).");
 
         var messages = ToOpenAiMessages(systemPrompt, history);
@@ -71,6 +85,11 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
         };
         if (toolsArray.Count > 0) body["tools"] = toolsArray;
 
+        return await KeyPoolFailover.ExecuteAsync(keys, ct, apiKey => CallOnceAsync(apiKey, body, ct));
+    }
+
+    private async Task<ToolTurnResult> CallOnceAsync(string apiKey, JsonObject body, CancellationToken ct)
+    {
         for (int attempt = 0; ; attempt++)
         {
             using var req = new HttpRequestMessage(HttpMethod.Post, Endpoint)
@@ -94,7 +113,7 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
                     continue;
                 }
                 log.LogWarning("OpenAI {Status}: {Body}", (int)resp.StatusCode, Truncate(raw, 500));
-                throw new InvalidOperationException($"OpenAI API {(int)resp.StatusCode}: {Truncate(raw, 500)}");
+                throw new HttpRequestException($"OpenAI API {(int)resp.StatusCode}: {Truncate(raw, 500)}", inner: null, statusCode: resp.StatusCode);
             }
 
             var doc = JsonNode.Parse(raw) ?? throw new InvalidOperationException("OpenAI response was null JSON");

@@ -1,0 +1,772 @@
+@* The render mode is set by the host page, not here — this library intentionally has no
+   FrameworkReference to the ASP.NET Core server assemblies, matching Prose.ObserverUi. *@
+@inject WriterService Writer
+@inject WikiService Wiki
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<div class="writer">
+
+    <header class="menubar">
+        <div class="menu">
+            <button class="menu-title" @onclick="ToggleBookMenu">Book</button>
+            @if (bookMenuOpen)
+            {
+                <div class="menu-drop" role="menu">
+                    @if (books is null)
+                    {
+                        <div class="menu-note">Loading…</div>
+                    }
+                    else
+                    {
+                        @foreach (var b in books)
+                        {
+                            <button role="menuitem" @onclick="() => OpenBookAsync(b)">
+                                @b.Title <span class="muted">@b.NodeCode</span>
+                            </button>
+                        }
+                    }
+                </div>
+            }
+        </div>
+
+        @if (book is not null)
+        {
+            <span class="book-title">@book.Title</span>
+            <span class="muted">@(spine?.Count ?? 0) beats</span>
+        }
+
+        <div class="spacer"></div>
+
+        @if (beat is not null)
+        {
+            <div class="modes" role="group" aria-label="View mode">
+                <button class="@ModeClass(Mode.Read)" @onclick="() => SetModeAsync(Mode.Read)">Display</button>
+                <button class="@ModeClass(Mode.Raw)" @onclick="() => SetModeAsync(Mode.Raw)">Markdown</button>
+            </div>
+            <button class="primary" disabled="@(!Dirty || saving)" @onclick="() => SaveAsync(false)">
+                @(saving ? "Saving…" : Dirty ? "Save" : "Saved")
+            </button>
+        }
+
+        @if (book is not null)
+        {
+            <button class="mini" disabled="@(exporting || saving)" @onclick="ExportAsync"
+                    title="Render this book to the publish folder — docx, epub and pdf">
+                @(exporting ? "Exporting…" : "Export")
+            </button>
+        }
+
+        <button class="mini" @onclick="ToggleThemeAsync" title="Light / dark">@(theme == "light" ? "☾" : "☀")</button>
+    </header>
+
+    @if (beat is not null)
+    {
+        <div class="toolbar" role="toolbar" aria-label="Formatting">
+            <button class="mini" @onclick="AddEntityAsync" title="Link the selected text to an entity">
+                ＠ Entity
+            </button>
+            <span class="tb-sep"></span>
+            <button class="mini bold" @onclick='() => FormatAsync("bold")' title="Bold (Ctrl+B) — **text**">B</button>
+            <button class="mini ital" @onclick='() => FormatAsync("italic")' title="Italic (Ctrl+I) — *text*">I</button>
+            <button class="mini undl" @onclick='() => FormatAsync("underline")' title="Underline (Ctrl+U)">U</button>
+            <button class="mini strk" @onclick='() => FormatAsync("strikeThrough")' title="Strikethrough — ~~text~~">S</button>
+            <span class="tb-sep"></span>
+            <button class="mini" @onclick="InsertEmDashAsync" title="Insert an em dash">—</button>
+        </div>
+    }
+
+    <div class="body">
+
+        <nav class="spine" aria-label="Beats">
+            @if (spine is null)
+            {
+                <div class="empty">Open a book to begin.</div>
+            }
+            else
+            {
+                <ul>
+                    @foreach (var item in spine)
+                    {
+                        <li>
+                            <button class="@(item.BeatId == beatId ? "spine-row current" : "spine-row")"
+                                    @onclick="() => OpenBeatAsync(item.BeatId)">
+                                @item.Label
+                            </button>
+                        </li>
+                    }
+                </ul>
+            }
+        </nav>
+
+        <main class="pane">
+            @if (beat is null)
+            {
+                <div class="empty">No beat selected.</div>
+            }
+            else
+            {
+                @if (conflict is not null)
+                {
+                    <div class="banner danger">
+                        <strong>This beat changed underneath you.</strong>
+                        Something else wrote to it while you had it open — another session, a CLI
+                        command, or a tool.
+                        <button class="mini" @onclick="ReloadFromConflictAsync">Load theirs (discard mine)</button>
+                        <button class="mini" @onclick="OverwriteConflictAsync">Keep mine (overwrite)</button>
+                    </div>
+                }
+
+                @if (problems.Count > 0)
+                {
+                    <div class="banner danger">
+                        <strong>Not saved — the markup is malformed.</strong>
+                        <ul>
+                            @foreach (var p in problems)
+                            {
+                                <li>@p.Message <span class="muted">(at character @p.Offset)</span></li>
+                            }
+                        </ul>
+                    </div>
+                }
+
+                @if (jsError is not null)
+                {
+                    <div class="banner danger">
+                        <strong>The Display editor could not start — switched to Markdown mode.</strong>
+                        <div class="muted">@jsError</div>
+                        Your text is safe and still editable here. This is usually a stale cached
+                        script: reload the window (Ctrl+R) to pick up the current build.
+                    </div>
+                }
+
+                @if (tagNote is not null)
+                {
+                    <div class="banner info">@tagNote</div>
+                }
+
+                @if (exportNote is not null)
+                {
+                    <div class="banner info">
+                        @exportNote
+                        @if (exportDir is not null)
+                        {
+                            <button class="mini" @onclick="OpenExportFolderAsync">Open folder</button>
+                        }
+                    </div>
+                }
+
+                @if (mode == Mode.Read)
+                {
+                    <article class="prose" contenteditable="true" spellcheck="true"
+                             @ref="editorRef" @oncontextmenu:preventDefault="false"></article>
+                }
+                else
+                {
+                    <textarea class="raw-editor" spellcheck="false" @ref="rawRef"
+                              @bind="draft" @bind:event="oninput"></textarea>
+                }
+            }
+        </main>
+    </div>
+
+    <footer class="statusbar">
+        <span class="dot @(connected ? "ok" : "bad")"></span>
+        <span>ID: @hubProcessId</span>
+        <span class="sep">·</span>
+        <span>@(connected ? "Connected" : "Disconnected")</span>
+        <span class="sep">·</span>
+        <span>@activity</span>
+        @if (beat is not null)
+        {
+            <div class="spacer"></div>
+            <span class="muted">@WordCount words</span>
+            <span class="sep">·</span>
+            <span class="muted">v@beat.Version</span>
+            @if (Dirty)
+            {
+                <span class="sep">·</span>
+                <span class="dirty">unsaved</span>
+            }
+        }
+    </footer>
+</div>
+
+@if (entityModal is not null)
+{
+    <div class="scrim" @onclick="CloseEntityModal"></div>
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Entity link">
+        <h2>@(entityModal.IsNew ? "Link text to an entity" : "Entity link")</h2>
+
+        <label class="field">
+            <span>Text</span>
+            <input type="text" @bind="entityModal.Text" @bind:event="oninput"
+                   readonly="@entityModal.IsNew" />
+        </label>
+
+        <label class="field">
+            <span>Repo</span>
+            <input type="text" value="@entityModal.Repo" readonly />
+        </label>
+
+        <label class="field">
+            <span>GUID</span>
+            <input type="text" class="mono" value="@entityModal.Guid" readonly />
+        </label>
+
+        <label class="field">
+            <span>Search</span>
+            <input type="text" placeholder="Name or alias…" @bind="entitySearch"
+                   @bind:event="oninput" @onkeyup="SearchEntitiesAsync" />
+        </label>
+
+        @if (searching)
+        {
+            <div class="menu-note">Searching…</div>
+        }
+        else if (matches is not null)
+        {
+            @if (matches.Count == 0)
+            {
+                <div class="menu-note">No entity matches that.</div>
+            }
+            else
+            {
+                <ul class="matches">
+                    @foreach (var m in matches)
+                    {
+                        <li>
+                            <button class="@(m.Id.ToString() == entityModal.Guid ? "match current" : "match")"
+                                    @onclick="() => ChooseEntity(m)">
+                                <span class="match-name">@m.Name</span>
+                                <span class="muted">@m.EntityType</span>
+                                @if (m.MatchedAlias is not null)
+                                {
+                                    <span class="muted">alias: @m.MatchedAlias</span>
+                                }
+                            </button>
+                        </li>
+                    }
+                </ul>
+            }
+        }
+
+        <div class="modal-actions">
+            @if (!entityModal.IsNew)
+            {
+                <button class="mini danger-btn" @onclick="RemoveEntityAsync">Remove link</button>
+            }
+            <div class="spacer"></div>
+            <button class="mini" @onclick="CloseEntityModal">Cancel</button>
+            <button class="primary" disabled="@(!entityModal.CanApply)" @onclick="ApplyEntityAsync">
+                @(entityModal.IsNew ? "Link" : "Apply")
+            </button>
+        </div>
+    </div>
+}
+
+@code {
+    private enum Mode { Read, Raw }
+
+    private sealed class EntityModalState
+    {
+        public bool IsNew { get; init; }
+        public string Guid { get; set; } = "";
+        public string Repo { get; set; } = "";
+        public string Text { get; set; } = "";
+        public bool CanApply => System.Guid.TryParse(Guid, out var g) && g != System.Guid.Empty;
+    }
+
+    private List<WriterService.BookListItem>? books;
+    private WriterService.BookListItem? book;
+    private List<WriterService.SpineItem>? spine;
+
+    private Guid beatId;
+    private WriterService.OpenBeat? beat;
+    private string draft = "";
+    private Mode mode = Mode.Read;
+
+    private ElementReference editorRef;
+    private ElementReference rawRef;
+    private DotNetObjectReference<WriterShell>? selfRef;
+    private bool editorWired;
+    private string renderedFor = "";
+
+    private bool bookMenuOpen;
+    private bool saving;
+    private bool exporting;
+    private string? exportNote;
+    private string? exportDir;
+    private bool analysisPending;
+    private string theme = "dark";
+    private string? tagNote;
+    private string? jsError;
+    private WriterService.OpenBeat? conflict;
+    private IReadOnlyList<Prose.Core.Services.BeatMarkup.MarkupProblem> problems = [];
+
+    private EntityModalState? entityModal;
+    private string entitySearch = "";
+    private bool searching;
+    private List<Prose.Core.Services.EntityLookupMatch>? matches;
+
+    // The UI runs inside the Hub, so this process IS the Hub the status bar is reporting on.
+    private readonly int hubProcessId = Environment.ProcessId;
+    private bool connected = true;
+    private string activity = "Idle";
+
+    private bool Dirty => beat is not null && draft != beat.Text;
+
+    private int WordCount =>
+        Prose.Core.Services.ProseInline.StripFormatting(
+            Prose.Core.Services.BeatMarkup.StripEntityTags(draft))
+            .Split([' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
+
+    private string ModeClass(Mode m) => m == mode ? "mode current" : "mode";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try { theme = await JS.InvokeAsync<string>("proseWriter.getTheme"); StateHasChanged(); }
+            catch (JSDisconnectedException) { connected = false; return; }
+            catch (JSException) { /* theme is a preference; never worth failing a render over */ }
+        }
+
+        if (beat is null || mode != Mode.Read) { editorWired = false; return; }
+
+        try
+        {
+            if (!editorWired)
+            {
+                selfRef ??= DotNetObjectReference.Create(this);
+                await JS.InvokeVoidAsync("proseEditor.init", editorRef, selfRef);
+                editorWired = true;
+                renderedFor = "";
+            }
+
+            // Only push HTML when the text changed for a reason other than the author typing.
+            // Rewriting innerHTML on every keystroke would throw the caret to the top of the beat.
+            if (renderedFor != draft)
+            {
+                renderedFor = draft;
+                await JS.InvokeVoidAsync("proseEditor.setHtml", editorRef, ProseRenderer.ToHtml(draft));
+            }
+        }
+        catch (JSDisconnectedException) { connected = false; }
+        catch (JSException ex)
+        {
+            // An interop failure used to escape OnAfterRenderAsync, which tears down the whole
+            // circuit: the page stops responding entirely, with nothing on screen to say why.
+            // A broken editor surface is bad; a dead application is worse. Degrade to Markdown
+            // mode, which needs no JS at all, and say what happened.
+            editorWired = false;
+            jsError = ex.Message;
+            mode = Mode.Raw;
+            StateHasChanged();
+        }
+    }
+
+    /// <summary>The editor's DOM, serialized back to beat markup. Fired on every input.</summary>
+    [JSInvokable]
+    public Task OnEditorInput(string text)
+    {
+        draft = text;
+        renderedFor = text; // authored by the DOM itself — don't push it back and move the caret
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    [JSInvokable]
+    public async Task OnEntityContextMenu(string guid, string repo, string text)
+    {
+        entityModal = new EntityModalState { IsNew = false, Guid = guid, Repo = repo, Text = text };
+        entitySearch = text;
+        await SearchEntitiesAsync();
+    }
+
+    /// <summary>
+    /// Left-click on an entity chip: open that entity's wiki page in the default browser.
+    ///
+    /// <para>Launched from the Hub rather than with <c>window.open</c> because this page is
+    /// normally displayed inside Writer.exe's WebView2 host, which may swallow a popup or divert
+    /// it into a second WebView2 window. The Hub is always on the author's own machine, so
+    /// shelling to the shell is both available and predictable.</para>
+    /// </summary>
+    [JSInvokable]
+    public async Task OnEntityClick(string guid, string repo)
+    {
+        if (!Guid.TryParse(guid, out var id)) return;
+
+        // The chip carries the guid and a repo hint, but the wiki is addressed by slug, and the
+        // hint is explicitly non-authoritative (see BeatMarkup) — so resolve it properly.
+        var route = await Wiki.GetRouteAsync(id);
+        if (route is null)
+        {
+            activity = "That tag points at an entity that no longer exists.";
+            StateHasChanged();
+            return;
+        }
+
+        var url = $"http://127.0.0.1:5900/repo/{Uri.EscapeDataString(route.Value.Type)}/{Uri.EscapeDataString(route.Value.Slug)}";
+        try
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(url)
+            {
+                UseShellExecute = true,
+            });
+            activity = "Opened in browser";
+        }
+        catch (Exception ex)
+        {
+            // No default browser, or the shell refused. Say so — a click that silently does
+            // nothing is worse than one that explains itself.
+            activity = $"Could not open a browser: {ex.Message}";
+        }
+        StateHasChanged();
+    }
+
+    private async Task ToggleBookMenu()
+    {
+        bookMenuOpen = !bookMenuOpen;
+        if (bookMenuOpen && books is null)
+        {
+            activity = "Loading books…";
+            books = await Writer.ListBooksAsync();
+            activity = "Idle";
+        }
+    }
+
+    private async Task OpenBookAsync(WriterService.BookListItem b)
+    {
+        bookMenuOpen = false;
+        book = b;
+        spine = null;
+        beat = null;
+        beatId = default;
+        exportNote = null;   // book-scoped, unlike the beat banners ClearBeatState handles
+        exportDir = null;
+        activity = "Loading book…";
+        StateHasChanged();
+
+        spine = await Writer.GetSpineAsync(b.Id);
+        activity = "Idle";
+        if (spine.Count > 0) await OpenBeatAsync(spine[0].BeatId);
+    }
+
+    private async Task OpenBeatAsync(Guid id)
+    {
+        // Leaving a beat is when the deferred analysis runs — one pass per finished edit, rather
+        // than one per save. A beat with unsaved changes is saved on the way out, not dropped.
+        if (beat is not null && id != beatId)
+        {
+            if (Dirty) await SaveAsync(finishing: true);
+            else RunDeferredAnalysis();
+        }
+
+        ClearBeatState();
+        beatId = id;
+        beat = await Writer.GetBeatAsync(id);
+        draft = beat?.Text ?? "";
+        renderedFor = "";
+        editorWired = false;
+    }
+
+    private void ClearBeatState()
+    {
+        problems = [];
+        tagNote = null;
+        conflict = null;
+    }
+
+    private async Task SetModeAsync(Mode m)
+    {
+        mode = m;
+        renderedFor = "";
+        editorWired = false;
+        await Task.CompletedTask;
+    }
+
+    private async Task SaveAsync(bool finishing)
+    {
+        if (book is null || beat is null || saving) return;
+        saving = true;
+        activity = "Saving…";
+        ClearBeatState();
+
+        try
+        {
+            var result = await Writer.SaveBeatAsync(book.Id, beat.Id, draft, beat.UpdatedAt,
+                                                    deferAnalysis: !finishing);
+            problems = result.Problems;
+            if (problems.Count > 0) return;
+
+            beat = result.Beat;
+            draft = result.Beat.Text;
+            renderedFor = "";           // the scanner may have rewritten tags — re-render
+            analysisPending = !finishing && result.Changed;
+            tagNote = DescribeTagDiff(result);
+        }
+        catch (Prose.Core.Services.BeatConflictException ex)
+        {
+            conflict = new WriterService.OpenBeat(beat.Id, beat.ChapterNodeId, ex.CurrentText,
+                                                  ex.CurrentUpdatedAt, beat.Version);
+        }
+        finally
+        {
+            saving = false;
+            activity = "Idle";
+        }
+    }
+
+    private static string? DescribeTagDiff(WriterService.SaveResult r)
+    {
+        if (!r.Changed) return "No change — the text you saved matches what was already stored.";
+
+        var parts = new List<string>();
+        if (r.Tags.Added.Count > 0) parts.Add($"tagged {string.Join(", ", r.Tags.Added)}");
+        if (r.Tags.Removed.Count > 0) parts.Add($"dropped the tag on {string.Join(", ", r.Tags.Removed)}");
+        return parts.Count == 0 ? null : "Saved. The entity scanner " + string.Join("; ", parts) + ".";
+    }
+
+    // ── Export ─────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Render the open book to the publish folder and say where it went.
+    ///
+    /// <para>Saves first when the beat is dirty: "export the newest version" has to mean the words
+    /// currently on screen, and an export of the text as it was two keystrokes ago is worse than
+    /// no export, because it looks like it worked.</para>
+    ///
+    /// <para>Free and deterministic — docx, epub, pdf, no LLM call. See
+    /// <see cref="WriterService.ExportBookAsync"/> for why this is not the full export bundle.</para>
+    /// </summary>
+    private async Task ExportAsync()
+    {
+        if (book is null || exporting) return;
+
+        if (Dirty)
+        {
+            await SaveAsync(finishing: false);
+            // A markup problem already blocked the save and is on screen; exporting stale text now
+            // would quietly contradict that banner.
+            if (problems.Count > 0) return;
+        }
+
+        exporting = true;
+        exportNote = null;
+        exportDir = null;
+        activity = "Exporting…";
+        StateHasChanged();
+
+        try
+        {
+            var result = await Writer.ExportBookAsync(book.Id);
+            exportDir = result.Directory;
+            exportNote = $"Exported {string.Join(", ", result.Files)} to {result.Directory} " +
+                         $"in {result.Elapsed.TotalSeconds:0.0}s.";
+        }
+        catch (Exception ex)
+        {
+            // Export reaches QuestPDF, OpenXML and the file system; a locked output file (the
+            // author has the docx open) is the everyday failure and must not kill the circuit.
+            exportNote = $"Export failed: {ex.Message}";
+        }
+        finally
+        {
+            exporting = false;
+            activity = "Idle";
+        }
+    }
+
+    /// <summary>Open the publish folder in Explorer. Same reasoning as the entity-chip click: the
+    /// Hub is on the author's own machine, and a WebView2 host may swallow anything else.</summary>
+    private async Task OpenExportFolderAsync()
+    {
+        if (exportDir is null) return;
+        try
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(exportDir)
+            {
+                UseShellExecute = true,
+            });
+        }
+        catch (Exception ex)
+        {
+            exportNote = $"Could not open {exportDir}: {ex.Message}";
+        }
+        await Task.CompletedTask;
+    }
+
+    private void RunDeferredAnalysis()
+    {
+        if (book is null || !analysisPending) return;
+
+        // Deliberately not awaited: six logic rules over a blast radius take minutes and the author
+        // has already moved on. Ids are captured now because the fields will have changed by then.
+        var (bookId, finished) = (book.Id, beatId);
+        analysisPending = false;
+        _ = Task.Run(() => Writer.RunDeferredAnalysisAsync(bookId, finished));
+    }
+
+    private async Task ReloadFromConflictAsync()
+    {
+        if (conflict is null) return;
+        beat = conflict;
+        draft = conflict.Text;
+        conflict = null;
+        renderedFor = "";
+        await Task.CompletedTask;
+    }
+
+    private async Task OverwriteConflictAsync()
+    {
+        if (conflict is null) return;
+        var mine = draft;
+        beat = conflict;
+        draft = mine;
+        conflict = null;
+        await SaveAsync(finishing: false);
+    }
+
+    /// <summary>
+    /// Every call into the editor's JavaScript goes through here. An unhandled
+    /// <see cref="JSException"/> inside a Blazor Server event handler tears down the circuit and
+    /// the page simply stops responding — no error, no clue. A toolbar button that does nothing is
+    /// a far better failure than an application that dies.
+    /// </summary>
+    private async Task<T?> JsAsync<T>(string identifier, params object?[] args)
+    {
+        try
+        {
+            return await JS.InvokeAsync<T>(identifier, args);
+        }
+        catch (JSDisconnectedException) { connected = false; }
+        catch (JSException ex) { jsError = ex.Message; }
+        return default;
+    }
+
+    private async Task JsVoidAsync(string identifier, params object?[] args)
+    {
+        try
+        {
+            await JS.InvokeVoidAsync(identifier, args);
+        }
+        catch (JSDisconnectedException) { connected = false; }
+        catch (JSException ex) { jsError = ex.Message; }
+    }
+
+    // ── Toolbar ────────────────────────────────────────────────────────────
+
+    private async Task FormatAsync(string command)
+    {
+        if (mode != Mode.Read) { await WrapRawAsync(command); return; }
+        await JsVoidAsync("proseEditor.format", command);
+    }
+
+    private async Task WrapRawAsync(string command)
+    {
+        var (before, after) = command switch
+        {
+            "bold"          => ("**", "**"),
+            "italic"        => ("*", "*"),
+            "underline"     => ("<u>", "</u>"),
+            "strikeThrough" => ("~~", "~~"),
+            _               => ("", "")
+        };
+        if (before == "") return;
+        await JsVoidAsync("proseEditor.wrapTextarea", rawRef, before, after);
+    }
+
+    private async Task InsertEmDashAsync()
+    {
+        if (mode == Mode.Read) await JsVoidAsync("proseEditor.insert", "—");
+        else await JsVoidAsync("proseEditor.wrapTextarea", rawRef, "—", "");
+    }
+
+    private async Task AddEntityAsync()
+    {
+        if (mode != Mode.Read)
+        {
+            tagNote = "Switch to Display mode to link an entity — Markdown mode edits the raw tags directly.";
+            return;
+        }
+
+        var sel = await JsAsync<SelectionDto>("proseEditor.selection");
+        if (sel is null || !sel.Ok || string.IsNullOrWhiteSpace(sel.Text))
+        {
+            tagNote = "Select the words you want to link first.";
+            return;
+        }
+
+        entityModal = new EntityModalState { IsNew = true, Text = sel.Text.Trim() };
+        entitySearch = sel.Text.Trim();
+        await SearchEntitiesAsync();
+    }
+
+    private sealed record SelectionDto(string Text, bool Ok);
+
+    // ── Entity modal ───────────────────────────────────────────────────────
+
+    private async Task SearchEntitiesAsync()
+    {
+        if (book is null || string.IsNullOrWhiteSpace(entitySearch)) { matches = null; return; }
+        searching = true;
+        activity = "Searching entities…";
+        StateHasChanged();
+        try
+        {
+            matches = (await Writer.SearchEntitiesAsync(book.Id, entitySearch)).ToList();
+        }
+        finally
+        {
+            searching = false;
+            activity = "Idle";
+        }
+    }
+
+    private void ChooseEntity(Prose.Core.Services.EntityLookupMatch m)
+    {
+        if (entityModal is null) return;
+        entityModal.Guid = m.Id.ToString();
+        entityModal.Repo = m.EntityType;
+    }
+
+    private async Task ApplyEntityAsync()
+    {
+        if (entityModal is null || !entityModal.CanApply) return;
+
+        if (entityModal.IsNew)
+            await JsAsync<bool>("proseEditor.wrapSelection", entityModal.Guid, entityModal.Repo);
+        else
+            await JsAsync<bool>("proseEditor.applyEntity", entityModal.Guid, entityModal.Repo, entityModal.Text);
+
+        CloseEntityModal();
+    }
+
+    private async Task RemoveEntityAsync()
+    {
+        await JsAsync<bool>("proseEditor.removeEntity");
+        CloseEntityModal();
+    }
+
+    private void CloseEntityModal()
+    {
+        entityModal = null;
+        matches = null;
+        entitySearch = "";
+    }
+
+    private async Task ToggleThemeAsync()
+    {
+        theme = theme == "light" ? "dark" : "light";
+        await JsVoidAsync("proseWriter.setTheme", theme);
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        // Closing the book is the other "you are done with this beat" moment.
+        RunDeferredAnalysis();
+        selfRef?.Dispose();
+        await ValueTask.CompletedTask;
+    }
+}

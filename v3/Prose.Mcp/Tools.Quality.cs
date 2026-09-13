@@ -203,7 +203,7 @@ public class QualityTools
         {
             var actualCost = tokenLedger.CostForScope(costScope.Id);
             if (actualCost > 0)
-                await costEstimator.RecordActualAsync(costCommandName, costEstimate.Estimated, actualCost, "claude-api");
+                await costEstimator.RecordActualAsync(costCommandName, costEstimate.Estimated, actualCost, "claude");
         }
 
         string? synopsis = null;

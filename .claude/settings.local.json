@@ -11,7 +11,8 @@
       "Bash(sqlcmd -S \"\\(localdb\\)\\\\MSSQLLocalDB\" -d Prose -y0 -Q \"SELECT NodeBible FROM Nodes WHERE NodeCode='VIGL'\")",
       "Bash(grep -n -B2 -A2 \"Averlyne\" /tmp_vigl_bible.txt)",
       "Bash(xargs grep -l \"SaveChangesAsync\\\\|ExecuteDeleteAsync\\\\|ExecuteUpdateAsync\")",
-      "Bash(awk -F: '{sum+=$2} END {print sum}')"
+      "Bash(awk -F: '{sum+=$2} END {print sum}')",
+      "mcp__prose__get_entity_tree"
     ]
   }
 }

@@ -13,24 +13,40 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
 {
     private readonly AnthropicToolClient client;
     private readonly string model;
-    private readonly Func<string?> resolveApiKey;
+    private readonly Func<IReadOnlyList<string>> resolveApiKeys;
 
     public string Name => "Claude";
 
     public AnthropicToolCallingLlm(AnthropicToolClient client, string model = "claude-opus-4-7")
-        : this(client, static () => null, model) { }
+        : this(client, (Func<string?>)(static () => null), model) { }
 
-    /// <summary>Test-friendly constructor — injects the API-key resolver instead of reading the
+    /// <summary>Test-friendly constructor — injects a single-key resolver instead of reading the
     /// real Claude Code OAuth session / shared credential store.</summary>
     public AnthropicToolCallingLlm(AnthropicToolClient client, Func<string?> resolveApiKey, string model = "claude-opus-4-7")
+        : this(client, AsPool(resolveApiKey), model) { }
+
+    /// <summary>
+    /// Key-pool constructor: when more than one key is configured (a human's BYO-key pool, see
+    /// <see cref="OperatorByoKeyPoolService"/>), a key that fails with an auth/rate-limit/server
+    /// error causes the NEXT key to be tried ("sticky failover"). Each key still gets
+    /// <see cref="AnthropicToolClient"/>'s own 429/529 retry budget before being considered
+    /// "failed" — see <see cref="KeyPoolFailover"/>.
+    /// </summary>
+    public AnthropicToolCallingLlm(AnthropicToolClient client, Func<IReadOnlyList<string>> resolveApiKeys, string model = "claude-opus-4-7")
     {
         this.client = client;
-        this.resolveApiKey = resolveApiKey;
+        this.resolveApiKeys = resolveApiKeys;
         this.model = model;
     }
 
+    private static Func<IReadOnlyList<string>> AsPool(Func<string?> resolveApiKey) => () =>
+    {
+        var key = resolveApiKey();
+        return string.IsNullOrWhiteSpace(key) ? Array.Empty<string>() : new[] { key };
+    };
+
     public Task<bool> IsConfiguredAsync() =>
-        Task.FromResult(!string.IsNullOrWhiteSpace(resolveApiKey()));
+        Task.FromResult(resolveApiKeys().Count > 0);
 
     public async Task<ToolTurnResult> CreateTurnAsync(
         string systemPrompt,
@@ -39,8 +55,9 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
         int maxTokens,
         CancellationToken ct)
     {
-        var apiKey = resolveApiKey()
-            ?? throw new InvalidOperationException(
+        var keys = resolveApiKeys();
+        if (keys.Count == 0)
+            throw new InvalidOperationException(
                 "No Anthropic API key configured for this operator. A Claude Code Team subscription " +
                 "OAuth session cannot authenticate direct calls to the Anthropic Messages API — a " +
                 "Team seat and an API key are different credential types, not interchangeable — so " +
@@ -50,8 +67,11 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
         var messages = ToAnthropicMessages(history);
         var toolsArray = ToAnthropicTools(tools);
 
-        var turn = await client.CreateAsync(apiKey, model, systemPrompt, messages, toolsArray, maxTokens, ct);
-        return new ToolTurnResult(FromAnthropicContent(turn.Content));
+        return await KeyPoolFailover.ExecuteAsync(keys, ct, async key =>
+        {
+            var turn = await client.CreateAsync(key, model, systemPrompt, messages, toolsArray, maxTokens, ct);
+            return new ToolTurnResult(FromAnthropicContent(turn.Content));
+        });
     }
 
     private static JsonArray ToAnthropicTools(IReadOnlyList<ToolDefinition> tools)

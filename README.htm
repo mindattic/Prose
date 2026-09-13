@@ -2081,7 +2081,7 @@ registration step; a new project just starts calling <code>/api/outbox/&lt;its-o
 </thead>
 <tbody><tr>
 <td><code>LlmRouter</code></td>
-<td>The live fallback chain (also an <code>ILlmService</code> itself): tries the primary provider (<code>SettingsService.ActiveLlmProvider</code>, default <code>claude-api</code>), then walks <code>ActiveLlmProviderChain</code> in configured order, de-duplicated. <strong>Any</strong> exception on a hop (auth, quota, rate-limit, network — not typed/discriminated) triggers the next hop; no fallback on success. Every hop, success or failure, is logged to <code>LlmCallHistories</code> (provider, model, hop index, token estimate, cost)</td>
+<td>The live fallback chain (also an <code>ILlmService</code> itself): tries the primary provider (<code>SettingsService.ActiveLlmProvider</code>, default <code>claude</code>), then walks <code>ActiveLlmProviderChain</code> in configured order, de-duplicated. <strong>Any</strong> exception on a hop (auth, quota, rate-limit, network — not typed/discriminated) triggers the next hop; no fallback on success. Every hop, success or failure, is logged to <code>LlmCallHistories</code> (provider, model, hop index, token estimate, cost)</td>
 </tr>
 <tr>
 <td><code>ClaudeService</code> / <code>OpenAiService</code> / <code>GeminiService</code> / <code>DeepSeekService</code> / <code>MistralService</code> / <code>KimiService</code> / <code>PerplexityService</code></td>
@@ -2100,11 +2100,21 @@ registration step; a new project just starts calling <code>/api/outbox/&lt;its-o
 <td>Assigns Haiku/Sonnet/Opus class to actions per settings</td>
 </tr>
 </tbody></table>
-<p><code>--set-llm-provider claude-api|claude-team</code> (<code>SetLlmProviderCli.cs</code>) is the only CLI surface for
-switching providers, and <strong>only accepts those two Claude variants</strong> — it was not extended when
-Gemini/DeepSeek/Mistral/Kimi/Perplexity/the CLI-shelling providers were added, so switching to any
-of them today means editing <code>ActiveLlmProviderChain</code> directly. No MCP tool exposes provider
-selection or queries <code>LlmCallHistories</code>. See <a href="docs/PROVIDERS.md">docs/PROVIDERS.md</a> for the
+<p>There is no CLI or MCP surface for switching the active LLM provider today. The old
+<code>--set-llm-provider claude-api|claude-team</code> command (<code>SetLlmProviderCli.cs</code>) toggled between the
+two Claude credential variants; now that those have collapsed into a single <code>&quot;claude&quot;</code> provider
+id, there&#39;s nothing left for that command to switch between, and it has been removed. Switching to
+Gemini/DeepSeek/Mistral/Kimi/Perplexity/a CLI-shelling provider as the active default still means
+editing <code>ActiveLlmProviderChain</code> (or <code>Settings.json</code>&#39;s <code>ActiveLlmProvider</code> field) directly, and no
+MCP tool exposes provider selection or queries <code>LlmCallHistories</code>. API keys themselves aren&#39;t set
+via any Prose CLI command either — they resolve through <code>SettingsService.ResolveApiKey</code>&#39;s chain:
+Vault <code>IConfiguration</code> override → Prose&#39;s own app-scoped key (<code>AppScopedCredentialStore(&quot;prose&quot;,
+…)</code>, checked before every other tier but never colliding with another app&#39;s key) → env var (e.g.
+<code>PROSE_CLAUDE_API_KEY</code>) → the shared, unscoped <code>MindAtticCredentialStore</code> at
+<code>%APPDATA%/MindAttic/LLM/</code> (kept for installs with a key already saved there) → a legacy
+<code>Settings.json</code> field. So a key is put in place by setting the env var, saving it under Prose&#39;s
+own scoped id, writing to the shared credential store (as another MindAttic app&#39;s credential UI
+does), or via Vault config — not by a Prose command. See <a href="docs/PROVIDERS.md">docs/PROVIDERS.md</a> for the
 checked-in table of which services depend on which external provider — <strong>written before this
 provider expansion, so it still only describes the Anthropic/OpenAI-only/both split</strong> and needs a
 pass to cover Gemini/DeepSeek/Mistral/Kimi/Perplexity/the CLI-shelling pair.</p>
@@ -2581,10 +2591,12 @@ its own freshness.</li>
 Anthropic/OpenAI-only/both split, with no mention of Gemini/DeepSeek/Mistral/Kimi/Perplexity,
 the CLI-shelling providers, or <code>LlmCallHistories</code> (see
 <a href="#10-llm-providers--routing">10. LLM providers &amp; routing</a>).</li>
-<li><code>--set-llm-provider</code> only accepts <code>claude-api</code>/<code>claude-team</code> — it was never extended to the
-new providers, so switching to Gemini/DeepSeek/Mistral/Kimi/Perplexity/a CLI-shelling provider
-as the active default requires editing <code>ActiveLlmProviderChain</code> directly; no CLI or MCP surface
-does it today.</li>
+<li>There is no CLI or MCP surface for switching the active LLM provider. The old
+<code>--set-llm-provider</code> command only ever toggled between <code>claude-api</code>/<code>claude-team</code>, and now that
+those have collapsed into a single <code>&quot;claude&quot;</code> provider id it has been removed outright rather
+than extended to the new providers — switching to Gemini/DeepSeek/Mistral/Kimi/Perplexity/a
+CLI-shelling provider as the active default still requires editing <code>ActiveLlmProviderChain</code>
+directly.</li>
 <li><code>prose --archive-book --reason &quot;&lt;text&gt;&quot;</code> (and the <code>BookArchiveService.ArchiveAsync</code> call
 behind it) does not validate or truncate the reason string before insert, while
 <code>ArchivedBooks.Reason</code> is <code>nvarchar(40)</code> — a reason over 40 characters fails at

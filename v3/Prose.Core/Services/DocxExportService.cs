@@ -557,22 +557,26 @@ public class DocxExportService
 
     private static IEnumerable<Run> InlineRuns(string text)
     {
-        var segments = text.Split('*');
+        // Was: text.Split('*') alternating italic. That read "**SCREEN TEXT**" as two empty
+        // segments around a plain one, so every bold span in the corpus — the notes and screen
+        // readouts characters are shown reading — exported as ordinary body text. Fixed
+        // 2026-09-12; ProseInline is now the single parser the editor shares.
         var runs = new List<Run>();
-        bool italic = false;
-        foreach (var seg in segments)
+        foreach (var span in ProseInline.Parse(text))
         {
-            if (seg.Length > 0)
-            {
-                runs.Add(MakeRun(seg, Body12, italic: italic));
-                italic = !italic;
-            }
+            if (span.Text.Length == 0) continue;
+            runs.Add(MakeRun(span.Text, Body12,
+                             bold: span.Style.HasFlag(ProseInline.Style.Bold),
+                             italic: span.Style.HasFlag(ProseInline.Style.Italic),
+                             underline: span.Style.HasFlag(ProseInline.Style.Underline),
+                             strike: span.Style.HasFlag(ProseInline.Style.Strikethrough)));
         }
         if (runs.Count == 0) runs.Add(MakeRun(text, Body12));
         return runs;
     }
 
-    private static Run MakeRun(string text, string halfPt, bool bold = false, bool italic = false)
+    private static Run MakeRun(string text, string halfPt, bool bold = false, bool italic = false,
+                               bool underline = false, bool strike = false)
     {
         var rPr = new RunProperties(
             new RunFonts { Ascii = Serif, HighAnsi = Serif, ComplexScript = Serif },
@@ -580,6 +584,8 @@ public class DocxExportService
             new FontSizeComplexScript { Val = halfPt });
         if (bold) rPr.AppendChild(new Bold());
         if (italic) rPr.AppendChild(new Italic());
+        if (underline) rPr.AppendChild(new Underline { Val = UnderlineValues.Single });
+        if (strike) rPr.AppendChild(new Strike());
         var run = new Run(rPr);
         run.AppendChild(new Text(text) { Space = SpaceProcessingModeValues.Preserve });
         return run;

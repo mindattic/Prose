@@ -161,6 +161,8 @@ public static class UniverseScope
         {
             "action_configs", "tts.rules", "users.accounts",
             "current_universe", // the global default-universe selector — inherently cross-universe
+            "operator.byokeys", // BYO LLM credentials for the tool-calling operator loop — a
+                                 // machine-wide credential, not per-universe content.
         };
 }
 

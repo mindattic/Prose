@@ -9,6 +9,9 @@ namespace Prose.Cli;
 /// — sets ParentNodeId on an existing node.
 /// Use --clear to detach from any parent.
 /// Use --sort-key N to set the node's SortKey (can combine with parent change or use standalone).
+/// Use --after-slug &lt;slug&gt; to slot the node immediately after a named sibling (fractional
+/// SortKey midpoint, no need to know or guess raw SortKey values) — mutually exclusive with
+/// --sort-key/--parent-id/--parent-slug/--clear.
 ///
 /// Write-gate Phase 2 (2026-08-22): the actual write is now
 /// <see cref="NodeWorkbenchService.ReparentNodeAsync"/> — node resolution (slug/id/prefix lookup)
@@ -18,7 +21,7 @@ public static class ReparentNodeCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        string? id = null, slug = null, parentId = null, parentSlug = null;
+        string? id = null, slug = null, parentId = null, parentSlug = null, afterSlug = null;
         bool clear = false;
         double? sortKey = null;
         for (int i = 0; i < args.Length; i++)
@@ -31,6 +34,7 @@ public static class ReparentNodeCli
                 case "--parent-slug": if (i + 1 < args.Length) parentSlug = args[++i]; break;
                 case "--clear":       clear = true; break;
                 case "--sort-key":    if (i + 1 < args.Length && double.TryParse(args[++i], out var sk)) sortKey = sk; break;
+                case "--after-slug":  if (i + 1 < args.Length) afterSlug = args[++i]; break;
             }
         }
 
@@ -39,9 +43,9 @@ public static class ReparentNodeCli
             Console.Error.WriteLine("[reparent-node] --id or --slug required to identify the child node.");
             return 1;
         }
-        if (!clear && sortKey == null && string.IsNullOrWhiteSpace(parentId) && string.IsNullOrWhiteSpace(parentSlug))
+        if (!clear && sortKey == null && string.IsNullOrWhiteSpace(parentId) && string.IsNullOrWhiteSpace(parentSlug) && string.IsNullOrWhiteSpace(afterSlug))
         {
-            Console.Error.WriteLine("[reparent-node] --parent-id or --parent-slug required (or --clear to detach, or --sort-key N to reorder).");
+            Console.Error.WriteLine("[reparent-node] --parent-id or --parent-slug required (or --clear to detach, or --sort-key N to reorder, or --after-slug <slug>).");
             return 1;
         }
 
@@ -58,6 +62,20 @@ public static class ReparentNodeCli
                     is { Count: 1 } cm ? cm[0] : null;
 
         if (child == null) { Console.Error.WriteLine("[reparent-node] Child node not found."); return 1; }
+
+        if (!string.IsNullOrWhiteSpace(afterSlug))
+        {
+            if (clear || sortKey != null || !string.IsNullOrWhiteSpace(parentId) || !string.IsNullOrWhiteSpace(parentSlug))
+            {
+                Console.Error.WriteLine("[reparent-node] --after-slug is mutually exclusive with --clear/--sort-key/--parent-id/--parent-slug — drop the others.");
+                return 1;
+            }
+            var afterSibling = await db.Nodes.AsQueryable().FirstOrDefaultAsync(s => s.Slug == afterSlug);
+            if (afterSibling == null) { Console.Error.WriteLine($"[reparent-node] --after-slug '{afterSlug}' not found."); return 1; }
+            await workbench.ReparentNodeAfterSiblingAsync(child.Id, afterSibling.Id);
+            Console.WriteLine($"[reparent-node] \"{child.Title}\" -> immediately after \"{afterSibling.Title}\".");
+            return 0;
+        }
 
         if (clear)
         {

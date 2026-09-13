@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**281 tools** across **48 tool families.**
+**282 tools** across **49 tool families.**
 
 ## Families
 
@@ -45,9 +45,10 @@
 | [Ledger](#ledger) | 4 |
 | [Lore Triple](#lore-triple) | 8 |
 | [Narrative Science](#narrative-science) | 1 |
-| [Node](#node) | 41 |
+| [Node](#node) | 37 |
 | [Noun Consistency](#noun-consistency) | 3 |
 | [One Shot Generation](#one-shot-generation) | 1 |
+| [Operator Key](#operator-key) | 5 |
 | [Planning](#planning) | 3 |
 | [Plant Payoff](#plant-payoff) | 5 |
 | [Quality](#quality) | 8 |
@@ -1341,12 +1342,6 @@ Clone a node into a fully independent copy: new Node row + new Beat rows, same p
 - `nodeCode` (string, optional) — Optional short reference code for the clone (e.g. 'SM1'). Rejected if already in use.
 - `status` (string, optional) — Status value to stamp on the clone: 'ready', 'draft', etc. Default 'ready'.
 
-### `composite_cover_title`
-
-Redraw the book title onto an already-saved cover image file in place, without calling an image-generation API again. Useful after tweaking the compositor or for a cover saved before title-compositing existed. Requires Node.CoverImagePath to already be set (run generate_cover_image first). Accepts node id (GUID) or slug.
-
-- `idOrSlug` (string, required) — Node id (GUID) or slug.
-
 ### `create_book`
 
 Create a BookNode — a single book arc (book / novella / standalone). Pass 'seed' to also generate a book bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.
@@ -1399,7 +1394,7 @@ Render the whole node as one continuous narration (no per-beat voice drift) and 
 
 ### `export_node`
 
-Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), keywords.txt (from seeded NodeKeywords), and cover.jpg (only if missing), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Blocked with ok:false unless the publish-readiness gate (docs/LOGIC.md §9) passes or forceExport is true — call publish_readiness first if unsure. Use get_node first to confirm the node exists.
+Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), and keywords.txt (from seeded NodeKeywords), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Blocked with ok:false unless the publish-readiness gate (docs/LOGIC.md §9) passes or forceExport is true — call publish_readiness first if unsure. Use get_node first to confirm the node exists.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `author` (string, optional) — Author name to embed in the document properties. Optional.
@@ -1411,19 +1406,6 @@ Generate (or regenerate) the node bible for a node. Uses the node's Seed field (
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 - `targetBeats` (int, optional) — Target number of beats in the spine. 0 = auto (use existing beat count or 12).
-
-### `generate_cover_image`
-
-Render and save a book cover image (png/jpg) via a chosen image provider, using Node.CoverPrompt as the prompt (generating one first via generate_cover_prompt if it's not set yet). Requires that provider's API key to be configured in Settings — costs real money per call. Saves to the media dir under covers/{slug}.{ext} and records the path/provider on the node. Accepts node id (GUID) or slug.
-
-- `idOrSlug` (string, required) — Node id (GUID) or slug.
-- `provider` (string, required) — Image provider: "openai" (gpt-image-1), "stability" (Stable Image SD3.5), or "google" (Imagen via Gemini API).
-
-### `generate_cover_prompt`
-
-Generate and save a book-cover image prompt (Node.CoverPrompt) from the book's own Title/Summary/Description and universe — a single paragraph describing subject, setting, mood, palette, and composition for an image model. Kept commercial-cover-safe (never explicit) regardless of interior content. Overwrites any existing CoverPrompt. Accepts node id (GUID) or slug.
-
-- `idOrSlug` (string, required) — Node id (GUID) or slug.
 
 ### `generate_node_doc`
 
@@ -1454,12 +1436,6 @@ Get the node bible for a node — the dry structural plan (logline, premise, reg
 Return the full narrative spine for a node: bible, user stories, all amendments (in order), and the latest spine version pin (which records the content hashes and amendment count at the last docx export). Use this before writing prose to understand the narrative contract.
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
-
-### `get_cover_provider_status`
-
-Return the current status of the cover pipeline: for each registered image provider, its id and whether an API key is configured. Use before calling generate_cover_image to know which providers are actually usable.
-
-- _(no parameters)_
 
 ### `get_score_history`
 
@@ -1618,7 +1594,7 @@ Update one beat's prose. Recomputes the hash, marks the beat stale, and invalida
 
 ### `update_book`
 
-Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count, cover_prompt. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
+Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
 - `title` (string, optional) — New title. Omit to leave unchanged.
@@ -1630,7 +1606,6 @@ Update a node's metadata fields. Pass only the fields you want to change — omi
 - `code` (string, optional) — Short author reference code (e.g. 'ATTE'). Uppercased; pass empty string to clear. Omit to leave unchanged.
 - `voiceId` (string, optional) — ElevenLabs or local TTS voice id. Omit to leave unchanged; pass empty string to clear.
 - `kdpPageCount` (int, optional) — KDP print-page count from Word (File → Info → Properties → Pages). Used to calculate the correct inside margin on the next export. Pass 0 to clear.
-- `coverPrompt` (string, optional) — Hand-set cover art image prompt (overrides the generated one). Omit to leave unchanged; pass empty string to clear. Prefer generate_cover_prompt to derive this from the book itself.
 
 ## Noun Consistency
 
@@ -1673,6 +1648,43 @@ Write a scene or line of dialog without a pre-existing Book/Chapter/Beat row. Ep
 - `universe` (string, optional) — Optional universe slug override; defaults to the session's current universe.
 - `beatIndex` (int, optional) — Zero-based position in an imagined beat sequence, for pacing guidance. 0 if unknown.
 - `totalBeats` (int, optional) — Total beats in that imagined sequence, for pacing guidance. 0 disables positional pacing.
+
+## Operator Key
+
+<sub>`OperatorKeyTools`</sub>
+
+### `add_operator_byo_key`
+
+Append one key to the end of an operator provider's BYO key pool (tried last, after every key already configured). No-op if the exact key is already present.
+
+- `provider` (string, required) — 'claude' or 'openai'.
+- `key` (string, required) — The raw API key to add.
+
+### `clear_operator_byo_keys`
+
+Clear the ENTIRE BYO key pool for one operator provider (claude or openai) — falls back to that adapter's own default credential chain (never the shared pay-per-token Vault key, for Claude).
+
+- `provider` (string, required) — 'claude' or 'openai'.
+
+### `list_operator_byo_keys`
+
+List the BYO API key pool configured for the KDP operator's tool-calling loop (claude or openai) — the keys tried BEFORE that provider's own default credential chain, in priority order, failing over to the next on an auth/rate-limit/server error. Keys are returned masked (last 4 chars only). Pass no provider to list both.
+
+- `provider` (string, optional) — 'claude' or 'openai'. Omit to list both providers.
+
+### `remove_operator_byo_key`
+
+Remove one key (by exact value) from an operator provider's BYO key pool. Returns removed=false if that key wasn't configured.
+
+- `provider` (string, required) — 'claude' or 'openai'.
+- `key` (string, required) — The exact raw API key to remove.
+
+### `set_operator_byo_keys`
+
+Replace the WHOLE BYO API key pool for one operator provider (claude or openai) with the given keys, tried in that order and failing over on error. Use add_operator_byo_key / remove_operator_byo_key instead to edit the pool incrementally without retyping every key.
+
+- `provider` (string, required) — 'claude' or 'openai'.
+- `keys` (String[], required) — The full pool, in priority order. An empty list clears the provider (same as clear_operator_byo_keys).
 
 ## Planning
 

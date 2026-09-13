@@ -63,6 +63,12 @@ public static class CliDispatch
     private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, Type?> HandlerTypeCache = new();
 
     private static Type? ResolveHandlerType(string handlerClass) =>
+        // A request whose body omits or misspells HandlerClass deserialises it as null, and
+        // ConcurrentDictionary.GetOrAdd(null, …) throws ArgumentNullException — which surfaced as
+        // an unhandled 500 with a stack trace rather than "you sent the wrong field". Returning
+        // null here lets the caller's existing unknown_handler_class path answer properly.
+        // (Found 2026-09-12 by `prose --logs`, from a malformed call this session made.)
+        string.IsNullOrWhiteSpace(handlerClass) ? null :
         HandlerTypeCache.GetOrAdd(handlerClass, static name =>
             AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(a => { try { return a.GetTypes(); } catch { return []; } })

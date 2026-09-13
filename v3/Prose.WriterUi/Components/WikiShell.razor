@@ -1,0 +1,626 @@
+@* The render mode is set by the host page, not here — this library intentionally has no
+   FrameworkReference to the ASP.NET Core server assemblies, matching WriterShell.
+
+   NOTE: the entity being shown is deliberately NOT called `page`. Razor parses `@page.Anything`
+   as the @page directive, so a field by that name breaks the whole file with errors that point
+   at routing rather than at the name. *@
+@using Prose.Core.Services
+@inject WikiService Wiki
+@inject IJSRuntime JS
+
+<div class="wiki">
+
+    <header class="menubar">
+        <a class="menu-title" href="/repo">Repositories</a>
+        @if (entity is not null)
+        {
+            <span class="crumb-sep">›</span>
+            <a class="crumb" href="/repo/@entity.Header.Type">@Humanise(entity.Header.Type)</a>
+            <span class="crumb-sep">›</span>
+            <span class="book-title">@entity.Header.Name</span>
+        }
+        else if (Type is not null)
+        {
+            <span class="crumb-sep">›</span>
+            <span class="book-title">@Humanise(Type)</span>
+        }
+
+        <div class="spacer"></div>
+
+        @if (entity is not null)
+        {
+            <button class="@HistoryClass" @onclick="ToggleHistoryAsync"
+                    title="Every recorded change to this entity">
+                History @VersionCountLabel
+            </button>
+            <button class="@EditClass" @onclick="ToggleEditing">
+                @(editing ? "Cancel" : "Edit")
+            </button>
+        }
+        <a class="mini" href="/writer" title="Back to the editor">Writer</a>
+        <button class="mini" @onclick="ToggleThemeAsync" title="Light / dark">@(theme == "light" ? "☾" : "☀")</button>
+    </header>
+
+    @if (error is not null)
+    {
+        <div class="banner error">@error</div>
+    }
+
+    @* ── Repository index ──────────────────────────────────────────────────── *@
+    @if (Type is null)
+    {
+        <section class="pane">
+            <h1>Repositories</h1>
+            @if (repos is null)
+            {
+                <p class="muted">Loading…</p>
+            }
+            else
+            {
+                <p class="muted">
+                    @repos.Sum(r => r.Count).ToString("N0") entities across @repos.Count repositories
+                    in this universe.
+                </p>
+                @foreach (var group in repos.GroupBy(r => r.Category))
+                {
+                    <h2 class="cat">@group.Key</h2>
+                    <div class="repo-grid">
+                        @foreach (var r in group)
+                        {
+                            <a class="repo-card" href="/repo/@r.Type">
+                                <span class="repo-name">@r.Name</span>
+                                <span class="repo-count">@r.Count.ToString("N0")</span>
+                            </a>
+                        }
+                    </div>
+                }
+            }
+        </section>
+    }
+
+    @* ── One repository's entities ─────────────────────────────────────────── *@
+    else if (Slug is null)
+    {
+        <section class="pane">
+            <h1>@Humanise(Type)</h1>
+            <div class="searchbar">
+                <input placeholder="Filter by name or description…" value="@search"
+                       @oninput="OnSearchInput" @onkeydown="OnSearchKey" />
+                <span class="muted">@total.ToString("N0") total</span>
+            </div>
+
+            @if (rows is null)
+            {
+                <p class="muted">Loading…</p>
+            }
+            else if (rows.Count == 0)
+            {
+                <p class="muted">Nothing here@(string.IsNullOrWhiteSpace(search) ? "." : $" matching “{search}”.")</p>
+            }
+            else
+            {
+                <ul class="entity-list">
+                    @foreach (var r in rows)
+                    {
+                        <li>
+                            <a href="/repo/@Type/@r.Slug">
+                                <span class="e-name">@r.Name</span>
+                                @if (r.Status != "canon")
+                                {
+                                    <span class="chip status-@r.Status">@r.Status</span>
+                                }
+                                <span class="e-desc">@Excerpt(r.Description, 160)</span>
+                            </a>
+                        </li>
+                    }
+                </ul>
+
+                @if (total > PageSize)
+                {
+                    <div class="pager">
+                        <button class="mini" disabled="@(pageNo <= 1)" @onclick="() => GoPageAsync(pageNo - 1)">Prev</button>
+                        <span class="muted">Page @pageNo of @(((total - 1) / PageSize) + 1)</span>
+                        <button class="mini" disabled="@(pageNo * PageSize >= total)" @onclick="() => GoPageAsync(pageNo + 1)">Next</button>
+                    </div>
+                }
+            }
+        </section>
+    }
+
+    @* ── One entity ────────────────────────────────────────────────────────── *@
+    else if (entity is null)
+    {
+        <section class="pane"><p class="muted">@(loading ? "Loading…" : "No such entity.")</p></section>
+    }
+    else
+    {
+        <div class="entity">
+            <main class="pane">
+                <h1>@entity.Header.Name</h1>
+                <p class="ident">
+                    <span class="chip">@Humanise(entity.Header.Type)</span>
+                    <span class="chip status-@entity.Header.Status">@entity.Header.Status</span>
+                    <span class="muted">@entity.Header.UniverseSlug</span>
+                    <span class="muted mono">@entity.Header.Slug</span>
+                </p>
+
+                @if (asOf is not null)
+                {
+                    <div class="banner asof">
+                        Showing this record as the database held it at <b>@asOf.Value.ToString("u")</b>.
+                        <button class="linkish" @onclick="ClearAsOfAsync">Back to current</button>
+                    </div>
+                }
+
+                @if (editing)
+                {
+                    <div class="edit-form">
+                        <label>
+                            Description
+                            <textarea rows="6" @bind="editDescription" @bind:event="oninput"></textarea>
+                        </label>
+                        <label>
+                            Status
+                            <select @bind="editStatus">
+                                <option value="canon">canon</option>
+                                <option value="stub">stub</option>
+                                <option value="archived">archived</option>
+                            </select>
+                        </label>
+                        <label>
+                            Grammar note
+                            <input @bind="editGrammarNote" @bind:event="oninput" />
+                        </label>
+                        <div class="edit-actions">
+                            <button class="primary" disabled="@saving" @onclick="SaveAsync">
+                                @(saving ? "Saving…" : "Save")
+                            </button>
+                            <span class="muted">
+                                Saving records a new version and flags every beat that mentions this
+                                entity for review. No LLM call, no charge.
+                            </span>
+                        </div>
+                        <p class="muted small">
+                            Renaming is deliberately not here — a name change cascades through entity
+                            tags in prose, aliases and the ledger, so it belongs behind the rename
+                            preview, not a text box.
+                        </p>
+                    </div>
+                }
+                else if (!string.IsNullOrWhiteSpace(entity.Header.Description))
+                {
+                    <p class="description">@entity.Header.Description</p>
+                }
+
+                @if (saveNote is not null)
+                {
+                    <div class="banner ok">@saveNote</div>
+                }
+
+                <h2>Record</h2>
+                @if (!entity.RecordFound && asOf is not null)
+                {
+                    <p class="muted">
+                        This entity did not exist in the database at @asOf.Value.ToString("u") —
+                        there is nothing to show at that instant, which is different from having
+                        no record now.
+                    </p>
+                }
+                else if (entity.Fields.Count == 0)
+                {
+                    <p class="muted">No stored record for this entity.</p>
+                }
+                else
+                {
+                    <table class="fields">
+                        <tbody>
+                            @foreach (var f in entity.Fields.Where(f => !Hidden(f.Key) && !string.IsNullOrWhiteSpace(f.Value)))
+                            {
+                                <tr>
+                                    <th>@f.Key</th>
+                                    <td>@f.Value</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+            </main>
+
+            <aside class="side">
+                <h2>Related</h2>
+                @if (entity.Related.Count == 0)
+                {
+                    <p class="muted">No edges recorded.</p>
+                }
+                else
+                {
+                    <ul class="related">
+                        @foreach (var r in entity.Related)
+                        {
+                            <li>
+                                <a href="/repo/@r.Type/@r.Slug">@r.Name</a>
+                                <span class="muted small">@r.Relation</span>
+                            </li>
+                        }
+                    </ul>
+                }
+
+                <h2>Appears in</h2>
+                <p class="muted">@entity.MentionCount.ToString("N0") beat@(entity.MentionCount == 1 ? "" : "s") mention this entity.</p>
+                @if (entity.Appearances.Count > 0)
+                {
+                    <ul class="mentions">
+                        @foreach (var m in entity.Appearances)
+                        {
+                            <li>
+                                <span class="m-where">@m.NodeTitle · #@m.BeatNumber</span>
+                                <span class="m-text">@m.Excerpt</span>
+                            </li>
+                        }
+                    </ul>
+                    @if (entity.MentionCount > entity.Appearances.Count)
+                    {
+                        <p class="muted small">Showing the first @entity.Appearances.Count.</p>
+                    }
+                }
+
+                <h2>Contradiction check</h2>
+                @if (scanResult is null)
+                {
+                    <p class="muted small">
+                        Checks each of the @entity.MentionCount.ToString("N0") mentioning beats against this
+                        record, once each. This one <b>costs money</b> — everything else on this entity is free.
+                    </p>
+                    <label class="cap">
+                        Check at most
+                        <input type="number" min="1" max="500" @bind="scanCap" />
+                        beats
+                    </label>
+                    <button class="mini" disabled="@(scanning || entity.MentionCount == 0)" @onclick="ScanAsync">
+                        @(scanning ? $"Checking… {scanDone}/{scanTotal}" : "Run check")
+                    </button>
+                }
+                else
+                {
+                    <p class="muted small">
+                        Checked @scanResult.Checked, skipped @scanResult.Skipped,
+                        cost <b>@scanResult.CostUsd.ToString("C4")</b>@(scanResult.Cancelled ? " (cancelled)" : "").
+                    </p>
+                    @if (scanResult.Hits.Count == 0)
+                    {
+                        <p class="muted">No contradictions reported.</p>
+                    }
+                    else
+                    {
+                        <ul class="hits">
+                            @foreach (var h in scanResult.Hits)
+                            {
+                                <li>
+                                    <span class="m-where">#@h.BeatNumber</span>
+                                    <span class="m-text">@h.Reason</span>
+                                </li>
+                            }
+                        </ul>
+                        <p class="muted small">
+                            Reported only. Nothing here has changed any prose.
+                        </p>
+                    }
+                    <button class="mini" @onclick="() => scanResult = null">Reset</button>
+                }
+            </aside>
+
+            @if (showHistory)
+            {
+                <section class="history">
+                    <h2>History</h2>
+                    @if (versions is null)
+                    {
+                        <p class="muted">Loading…</p>
+                    }
+                    else if (versions.Count == 0)
+                    {
+                        <p class="muted">
+                            No recorded history. (History is a SQL Server feature — on any other
+                            provider this list is always empty.)
+                        </p>
+                    }
+                    else
+                    {
+                        <p class="muted small">
+                            @versions.Count version@(versions.Count == 1 ? "" : "s"). Rows dated
+                            @ProseDbContext_TemporalAnchor are the corpus as it stood when versioning
+                            was switched on, not an edit.
+                        </p>
+                        <ul class="versions">
+                            @foreach (var v in versions)
+                            {
+                                <li class="@VersionClass(v.SysStart)">
+                                    <button class="linkish" @onclick="() => SelectVersionAsync(v.SysStart)">
+                                        @v.SysStart.ToString("u")
+                                    </button>
+                                    <span class="muted small">@string.Join(", ", v.Tables)</span>
+                                    <a class="mini" href="/repo/@Type/@Slug?at=@Uri.EscapeDataString(v.SysStart.ToString("o"))">view</a>
+                                </li>
+                            }
+                        </ul>
+
+                        @if (selectedVersion is not null)
+                        {
+                            <h3>Changes since @selectedVersion.Value.ToString("u")</h3>
+                            @if (diff is null)
+                            {
+                                <p class="muted">Comparing…</p>
+                            }
+                            else if (diff.Count == 0)
+                            {
+                                <p class="muted">
+                                    Nothing differs in the fields this view covers. A change to a
+                                    bridge table — aliases, knowledge, conditions and the like — shows
+                                    on the timeline but is not yet diffed field by field.
+                                </p>
+                            }
+                            else
+                            {
+                                <table class="diff">
+                                    <thead><tr><th>Field</th><th>Then</th><th>Now</th></tr></thead>
+                                    <tbody>
+                                        @foreach (var d in diff)
+                                        {
+                                            <tr class="@d.Kind.ToString().ToLowerInvariant()">
+                                                <th>@d.Field</th>
+                                                <td>@Excerpt(d.Before, 300)</td>
+                                                <td>@Excerpt(d.After, 300)</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            }
+                        }
+                    }
+                </section>
+            }
+        </div>
+    }
+
+    <footer class="statusbar">
+        <span class="mono">/repo@(Type is null ? "" : "/" + Type)@(Slug is null ? "" : "/" + Slug)</span>
+        <div class="spacer"></div>
+        <span class="muted">Live from the database — no export, no sync.</span>
+    </footer>
+</div>
+
+@code {
+    [Parameter] public string? Type { get; set; }
+    [Parameter] public string? Slug { get; set; }
+    [Parameter] public string? At { get; set; }
+
+    private const int PageSize = 50;
+    private const string ProseDbContext_TemporalAnchor = "2026-01-01";
+
+    private List<WikiService.RepoSummary>? repos;
+    private List<WikiService.EntityListItem>? rows;
+    private int total;
+    private int pageNo = 1;
+    private string search = "";
+
+    private WikiService.EntityPage? entity;
+    private IReadOnlyList<EntityVersion>? versions;
+    private IReadOnlyList<FieldChange>? diff;
+    private DateTime? selectedVersion;
+    private DateTime? asOf;
+
+    private bool loading = true, showHistory, editing, saving, scanning;
+    private string? error, saveNote;
+    private string theme = "dark";
+
+    private string editDescription = "", editStatus = "canon", editGrammarNote = "";
+
+    private int scanCap = 25, scanDone, scanTotal;
+    private ContradictionScanResult? scanResult;
+
+    // Route values arrive as parameters (no <Router>), so a navigation re-runs this rather than
+    // OnInitialized — every load path must be here.
+    protected override async Task OnParametersSetAsync()
+    {
+        error = null;
+        saveNote = null;
+
+        if (!string.IsNullOrWhiteSpace(At) && DateTime.TryParse(
+                At, null, System.Globalization.DateTimeStyles.AdjustToUniversal
+                    | System.Globalization.DateTimeStyles.AssumeUniversal, out var parsed))
+            asOf = parsed;
+        else
+            asOf = null;
+
+        try
+        {
+            if (Type is null) repos ??= await Wiki.ListRepositoriesAsync();
+            else if (Slug is null) await LoadListAsync();
+            else await LoadEntityAsync();
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+        finally
+        {
+            loading = false;
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        try
+        {
+            theme = await JS.InvokeAsync<string>("proseWriter.getTheme");
+            StateHasChanged();
+        }
+        catch (JSException)
+        {
+            // theme.js missing or blocked — the dark default stands. Never let a preference
+            // take the circuit down (see HubAssets for what that cost last time).
+        }
+    }
+
+    private async Task LoadListAsync()
+    {
+        var (r, t) = await Wiki.ListEntitiesAsync(Type!, search, pageNo, PageSize);
+        rows = r;
+        total = t;
+    }
+
+    private async Task LoadEntityAsync()
+    {
+        var id = await Wiki.ResolveAsync(Type!, Slug!);
+        if (id is null) { entity = null; return; }
+
+        entity = await Wiki.GetPageAsync(id.Value, asOf);
+        if (entity is not null)
+        {
+            editDescription = entity.Header.Description ?? "";
+            editStatus = entity.Header.Status;
+            editGrammarNote = entity.Header.GrammarNote ?? "";
+            versions = entity.Versions;
+        }
+    }
+
+    private async Task GoPageAsync(int n)
+    {
+        pageNo = Math.Max(1, n);
+        await LoadListAsync();
+    }
+
+    private void OnSearchInput(ChangeEventArgs e) => search = e.Value?.ToString() ?? "";
+
+    private async Task OnSearchKey(KeyboardEventArgs e)
+    {
+        if (e.Key != "Enter") return;
+        pageNo = 1;
+        await LoadListAsync();
+    }
+
+    private async Task ToggleHistoryAsync()
+    {
+        showHistory = !showHistory;
+        if (showHistory && versions is null && entity is not null)
+            versions = await Wiki.GetVersionsAsync(entity.Header.Id);
+    }
+
+    private async Task SelectVersionAsync(DateTime when)
+    {
+        selectedVersion = when;
+        diff = null;
+        StateHasChanged();
+        if (entity is not null)
+            diff = await Wiki.DiffAgainstCurrentAsync(entity.Header.Id, when);
+    }
+
+    private void ToggleEditing()
+    {
+        editing = !editing;
+        saveNote = null;
+        if (editing && entity is not null)
+        {
+            editDescription = entity.Header.Description ?? "";
+            editStatus = entity.Header.Status;
+            editGrammarNote = entity.Header.GrammarNote ?? "";
+        }
+    }
+
+    private async Task SaveAsync()
+    {
+        if (entity is null) return;
+        saving = true;
+        saveNote = null;
+        error = null;
+        try
+        {
+            var result = await Wiki.SaveEntityAsync(
+                entity.Header.Id, editDescription, editStatus, editGrammarNote,
+                expectedModifiedAt: entity.Header.ModifiedAt);
+
+            if (result.Conflict is not null) { error = result.Conflict; return; }
+
+            if (!result.Changed) { saveNote = "Nothing changed."; return; }
+
+            saveNote = result.BeatsFlagged == 0
+                ? "Saved. No beats mention this entity."
+                : $"Saved. {result.BeatsFlagged:N0} beat(s) that mention this entity are flagged for review.";
+
+            editing = false;
+            versions = null;
+            await LoadEntityAsync();
+            if (showHistory && entity is not null)
+                versions = await Wiki.GetVersionsAsync(entity.Header.Id);
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+        finally
+        {
+            saving = false;
+        }
+    }
+
+    private async Task ScanAsync()
+    {
+        if (entity is null) return;
+        scanning = true;
+        scanDone = 0;
+        scanTotal = Math.Min(scanCap, entity.MentionCount);
+        try
+        {
+            var progress = new Progress<(int done, int total)>(p =>
+            {
+                scanDone = p.done;
+                scanTotal = p.total;
+                InvokeAsync(StateHasChanged);
+            });
+            scanResult = await Wiki.ScanForContradictionsAsync(entity.Header.Id, scanCap, progress);
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+        finally
+        {
+            scanning = false;
+        }
+    }
+
+    private async Task ClearAsOfAsync()
+    {
+        asOf = null;
+        await LoadEntityAsync();
+    }
+
+    private async Task ToggleThemeAsync()
+    {
+        var next = theme == "light" ? "dark" : "light";
+        try { theme = await JS.InvokeAsync<string>("proseWriter.setTheme", next); }
+        catch (JSException) { theme = next; }
+    }
+
+    // Razor cannot parse a ternary containing double quotes inside an attribute value, so any
+    // conditional class is computed here rather than inline.
+    private string HistoryClass => showHistory ? "mini on" : "mini";
+    private string EditClass => editing ? "mini on" : "mini";
+    private string VersionClass(DateTime when) => selectedVersion == when ? "sel" : "";
+    private string VersionCountLabel => versions is null ? "" : $"({versions.Count})";
+
+    /// <summary>Columns already shown in the header, or pure plumbing — repeating them in the
+    /// record table is noise.</summary>
+    private static bool Hidden(string field) =>
+        field is "Id" or "UniverseId" or "Name" or "Slug" or "EntityType" or "Status"
+              or "Description" or "GrammarNote"
+        || field.EndsWith(".Id", StringComparison.Ordinal);
+
+    private static string Excerpt(string? s, int max) =>
+        string.IsNullOrEmpty(s) ? "" : s.Length <= max ? s : s[..max] + "…";
+
+    private static string Humanise(string slug) =>
+        string.Join(' ', slug.Split('_', '-', StringSplitOptions.RemoveEmptyEntries)
+            .Select(w => w.Length == 0 ? w : char.ToUpperInvariant(w[0]) + w[1..]));
+}

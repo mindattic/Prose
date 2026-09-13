@@ -83,8 +83,23 @@ public sealed class ObserverHttpClient(HttpClient http)
     private async Task<string> InvokeMcpRawAsync(string toolClass, string method, object? args)
     {
         var resp = await http.PostAsJsonAsync("api/mcp-invoke", new { toolClass, method, args });
-        return await resp.Content.ReadAsStringAsync();
+        var body = await resp.Content.ReadAsStringAsync();
+
+        // A transport failure is not a tool result. Returning the raw body here let a 401 (no
+        // X-Prose-Key) reach TryDeserialize, where it either parsed as "not JSON" and became a
+        // silent empty tab, or threw JsonException and 500'd the page — either way hiding the
+        // actual cause. Say what happened instead.
+        if (!resp.IsSuccessStatusCode)
+            throw new HttpRequestException(
+                $"{toolClass}.{method} → HTTP {(int)resp.StatusCode} {resp.StatusCode}. " +
+                (resp.StatusCode == System.Net.HttpStatusCode.Unauthorized
+                    ? "The Hub rejected the X-Prose-Key header — check that this host passes the key to AddProseObserverUi."
+                    : Truncate(body, 400)));
+
+        return body;
     }
+
+    private static string Truncate(string s, int max) => s.Length <= max ? s : s[..max] + "…";
 
     /// <summary>Deserializes only if the JSON doesn't look like an error payload (no "error"
     /// field, and — when given — the expected success field IS present). Returns null rather

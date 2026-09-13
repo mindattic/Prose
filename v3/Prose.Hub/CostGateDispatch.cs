@@ -70,7 +70,7 @@ public static class CostGateDispatch
             try
             {
                 var settings = sp.GetRequiredService<SettingsService>();
-                await estimator.RecordActualAsync(req.CommandName, estimate.Estimated, actualCost, settings.ActiveLlmProvider ?? "claude-api");
+                await estimator.RecordActualAsync(req.CommandName, estimate.Estimated, actualCost, settings.ActiveLlmProvider ?? "claude");
 
                 // CostGateCli.RecordActualAsync prints this line to the real console after the
                 // command finishes. Here, Console.Out was already restored by the time this

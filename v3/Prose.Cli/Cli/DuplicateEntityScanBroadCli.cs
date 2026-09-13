@@ -12,7 +12,7 @@ namespace Prose.Cli;
 /// or otherwise different name for the same person ("Dame Lyra" vs. "Dame Lyra of House
 /// Ocipheus"), not a 1-character typo. See <see cref="DuplicateEntityScanService.ScanBroadAsync"/>
 /// for the two-stage cost-bounded design. Costs real LLM calls — gated the same way as other
-/// LLM-calling commands (e.g. --generate-cover-prompt) via HubCliClient.ForwardWithCostGateAsync
+/// LLM-calling commands (e.g. --tuned-read) via HubCliClient.ForwardWithCostGateAsync
 /// in Program.cs, do not skip the gate.
 ///
 /// Nothing is merged by this command — it only reports candidate groups + an LLM judge verdict

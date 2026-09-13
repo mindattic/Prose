@@ -1,6 +1,6 @@
 ---
 name: run
-description: Launch the Prose Writer host and open it in Chrome at localhost. No arguments needed.
+description: Alias for /launch writer — opens the Prose Writer. The old port-5200 dotnet-run behaviour is retired; Prose.Writer is a WebView2 window onto the Hub, not a web host.
 ---
 
 Canonical definition: **`.prose/commands/run.md`**. Read it and follow it — this file is a thin

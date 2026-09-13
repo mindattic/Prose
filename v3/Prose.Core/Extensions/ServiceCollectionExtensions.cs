@@ -580,12 +580,19 @@ public static class ServiceCollectionExtensions
         // Entity-update → beat EntityStale propagation.
         // Single factory creates the service AND wires OnEntitySaved on every
         // canon repository so entity patches automatically flag referencing beats.
+        //
+        // This handler is FREE (pure SQL) and must stay free: it runs on every entity save, so
+        // any LLM call here multiplies by the number of beats mentioning the entity. The
+        // judgment-based check is EntityRamificationService.ScanForContradictionsAsync, which is
+        // only ever invoked deliberately — see that class's doc comment for what the old
+        // fire-and-forget version cost.
         services.AddSingleton<EntityRamificationService>(sp =>
         {
             var ramLog = sp.GetRequiredService<Microsoft.Extensions.Logging.ILogger<EntityRamificationService>>();
             var ramSvc = new EntityRamificationService(
                 sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),
                 sp.GetRequiredService<ILlmService>(),
+                sp.GetRequiredService<TokenLedger>(),
                 ramLog);
 
             // async void is the correct pattern for sync event handlers that need
@@ -629,23 +636,16 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<DallEService>();
         services.AddSingleton<TokenLedger>();
 
-        // Cover image providers (openai/stability/google) — CoverImageService picks by id.
-        // All three call their REST APIs directly via IHttpClientFactory.CreateClient(name)
-        // (not the typed-client pattern), so they're named clients + plain singletons, not
-        // AddHttpClient<T>(). OpenAI bypasses Legion's image transport (see class doc) since
-        // Legion sends a `response_format` field OpenAI's current endpoint rejects outright.
-        services.AddHttpClient(nameof(Services.CoverImage.OpenAiCoverImageProvider));
-        services.AddSingleton<Services.CoverImage.OpenAiCoverImageProvider>();
-        services.AddHttpClient(nameof(Services.CoverImage.StabilityCoverImageProvider));
-        services.AddSingleton<Services.CoverImage.StabilityCoverImageProvider>();
-        services.AddHttpClient(nameof(Services.CoverImage.GoogleImagenCoverImageProvider));
-        services.AddSingleton<Services.CoverImage.GoogleImagenCoverImageProvider>();
-        services.AddSingleton<ICoverImageProvider>(sp => sp.GetRequiredService<Services.CoverImage.OpenAiCoverImageProvider>());
-        services.AddSingleton<ICoverImageProvider>(sp => sp.GetRequiredService<Services.CoverImage.StabilityCoverImageProvider>());
-        services.AddSingleton<ICoverImageProvider>(sp => sp.GetRequiredService<Services.CoverImage.GoogleImagenCoverImageProvider>());
-        services.AddSingleton<CoverPromptService>();
-        services.AddSingleton<CoverTitleCompositorService>();
-        services.AddSingleton<CoverImageService>();
+        // Cover-image generation was DELETED 2026-09-13 on the author's instruction ("it just
+        // doesn't work; this remains a manual step with no future plans to reincorporate"). Gone:
+        // the three providers (OpenAI/Stability/Google Imagen), ICoverImageProvider,
+        // CoverImageService, CoverPromptService and CoverTitleCompositorService, plus the CLI verbs
+        // and MCP tools that drove them. Do not re-add a provider here without the author asking.
+        //
+        // Cover art is now supplied by hand: `prose --import-cover` writes Node.CoverImagePath,
+        // ExportCleanupService preserves cover.jpg while archiving an export bundle, and KDP
+        // publishing reads it. The BookTok video providers below are a SEPARATE feature that
+        // consumes a finished cover; they were not touched.
         services.AddSingleton<BookEntityReconciliationService>();
 
         // BookTok video providers (kling/runway/sora) — same named-client + singleton +
@@ -732,6 +732,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatGeneratorService>();
         services.AddSingleton<NodeOutlineService>();
         services.AddSingleton<NodeDocService>();
+        // The one answer to "where do this book's chapters begin" — see BookSpineService for why
+        // four call sites used to answer it separately.
+        services.AddSingleton<BookSpineService>();
         services.AddSingleton<GlossaryService>();
         services.AddSingleton<CanonDocumentTypeRegistry>();
         services.AddSingleton<CanonDocumentService>();
@@ -755,25 +758,30 @@ public static class ServiceCollectionExtensions
         // corporate proxy, so detection is simply disabled rather than worked around later.
         services.AddHttpClient<Services.Operator.AnthropicToolClient>(c => c.Timeout = TimeSpan.FromMinutes(15))
             .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler { UseProxy = false });
-        // BYO-key: prose --set-byo-key lets a human opt a personal key in ahead of the default
-        // chain — resolved live per call (SettingsKvStore.Get, not cached), so setting one needs
-        // no restart. This is an explicit opt-in; there is no automatic fallback for Claude below
+        // BYO-key: prose --set-byo-key lets a human opt a personal key (or a rotation/failover
+        // pool of several — see OperatorByoKeyPoolService) in ahead of the default chain —
+        // resolved live per call (SettingsKvStore.Get, not cached), so setting one needs no
+        // restart. This is an explicit opt-in; there is no automatic fallback for Claude below
         // it — this operator drives a long-running, many-book tool-calling loop (KdpPublish) and
         // must NEVER silently spend real API money unattended (2026-08-25 ruling). A prior fallback
         // to a Claude Code Team subscription OAuth token was removed: a Team seat cannot
         // authenticate direct Anthropic Messages API calls at all (confirmed in practice — the two
         // are different credential types, not interchangeable), so it never actually provided the
         // safety net it was meant to.
-        // One resolver factory shared by every provider below so a fix to the null/empty check or
-        // fallback order can't land in only one of them (mirrors Automata.Core's KeyResolver).
-        static Func<string?> ByoKeyResolver(IServiceProvider sp, Func<Services.Operator.OperatorByoKeys, string?> byo, Func<string?> fallback) =>
-            () => sp.GetRequiredService<SettingsKvStore>().Get<Services.Operator.OperatorByoKeys>("operator.byokeys") is { } keys && byo(keys) is { Length: > 0 } byoKey
-                ? byoKey
-                : fallback();
+        services.AddSingleton<Services.Operator.OperatorByoKeyPoolService>();
+
+        // One resolver factory shared by every provider below so a fix to the empty-pool check or
+        // fallback order can't land in only one of them (mirrors Automata.Core's KeyPoolResolver).
+        static Func<IReadOnlyList<string>> ByoKeyPoolResolver(IServiceProvider sp, string provider, Func<IReadOnlyList<string>> fallback) =>
+            () =>
+            {
+                var pool = sp.GetRequiredService<Services.Operator.OperatorByoKeyPoolService>().GetPool(provider);
+                return pool.Count > 0 ? pool : fallback();
+            };
 
         services.AddSingleton(sp => new Services.Operator.AnthropicToolCallingLlm(
             sp.GetRequiredService<Services.Operator.AnthropicToolClient>(),
-            ByoKeyResolver(sp, k => k.AnthropicApiKey, static () => null)));
+            ByoKeyPoolResolver(sp, "claude", static () => Array.Empty<string>())));
 
         // Multi-LLM Master Switch-Over: the KDP operator's tool-calling loop tries each of
         // these, in order, and uses whichever one has usable credentials right now — Claude
@@ -794,7 +802,11 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Services.Operator.OpenAiToolCallingLlm>(sp => new Services.Operator.OpenAiToolCallingLlm(
             sp.GetRequiredService<IHttpClientFactory>().CreateClient(nameof(Services.Operator.OpenAiToolCallingLlm)),
             sp.GetRequiredService<ILogger<Services.Operator.OpenAiToolCallingLlm>>(),
-            ByoKeyResolver(sp, k => k.OpenAiApiKey, () => MindAtticCredentialStore.GetKey("openai"))));
+            ByoKeyPoolResolver(sp, "openai", () =>
+            {
+                var shared = MindAtticCredentialStore.GetKey("openai");
+                return string.IsNullOrWhiteSpace(shared) ? Array.Empty<string>() : new[] { shared };
+            })));
         services.AddSingleton<IReadOnlyList<Services.Operator.IToolCallingLlm>>(sp =>
         [
             sp.GetRequiredService<Services.Operator.AnthropicToolCallingLlm>(),
@@ -1189,6 +1201,10 @@ public static class ServiceCollectionExtensions
         services.AddScoped<EntityMentionService>();
         services.AddSingleton<EntityLookupService>();
         services.AddSingleton<EntityRenameService>();
+        // Reads the FOR SYSTEM_TIME history the entity tables have always written.
+        services.AddSingleton<EntityHistoryService>();
+        // Groups Serilog errors into distinct faults and tracks which have been fixed.
+        services.AddSingleton<LogIssueService>();
         services.AddSingleton<DocContextStack>();
         services.AddSingleton<UserContextService>();
         services.AddSingleton<EntityDocService>();

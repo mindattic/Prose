@@ -94,7 +94,7 @@ public sealed class EntityRenameService(
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
             var text = await db.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync(ct);
-            await workbench.UpdateBeatTextAsync(beatId, matcher.Replace(text ?? "", preview.NewName), BeatWriteReason.AuthorEdit, null, ct);
+            await workbench.UpdateBeatTextAsync(beatId, matcher.Replace(text ?? "", preview.NewName), BeatWriteReason.AuthorEdit, null, ct: ct);
         }
 
         // The rule prevents later prose from reintroducing the old canonical form.

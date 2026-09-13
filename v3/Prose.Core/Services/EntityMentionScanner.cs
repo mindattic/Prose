@@ -76,8 +76,20 @@ public static class EntityMentionScanner
     // as him. All 3 of that character's beat mentions corpus-wide were this false positive; he has no
     // real on-page appearance, so the derived token had nothing to lose and 5 spans to stop mistagging.
     // The full name "Judas Gate" still tags normally; only the bare derived token is suppressed.
+    //
+    // "director" joined 2026-09-10 (BCODA Able-arc consolidation), same exact failure mode as
+    // "first": tokens[0] of the real multi-word character "Director Harlan Cross" (a different,
+    // unrelated book) derives bare "Director" as a standalone tag, so every ordinary corpo-title
+    // use of the word ("a Director", "the Director") anywhere in the corpus mistagged as him --
+    // independently of, and in addition to, a since-removed CharacterAlias row ("the director" on
+    // an unrelated "Marcus") that was poisoning the same word through the alias path. Both had to
+    // go: the alias row was deleted as a data fix (see feedback_no_duplicate_first_names-class
+    // cleanup), and this stopword entry is the code-side half, because a re-save/re-tag kept
+    // re-deriving the same bare token straight from Harlan Cross's own canonical Name regardless
+    // of the alias fix. The full name "Director Harlan Cross" still tags normally; only the bare
+    // derived token is suppressed.
     private static readonly HashSet<string> Stopwords =
-        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can", "gate" };
+        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can", "gate", "director" };
 
     public sealed record MentionCandidate(string Text, Guid EntityId, string Name, string EntityType, bool RequiresStrictCase);
 

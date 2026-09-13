@@ -91,4 +91,61 @@ public static class BeatMarkup
     private static readonly Regex EntityTagWithGuidPattern =
         new(@"<entity\b[^>]*\bguid=""([^""]*)""[^>]*>(.*?)</entity>",
             RegexOptions.Compiled | RegexOptions.Singleline);
+
+    private static readonly Regex EntityOpenPattern = new(@"<entity\b", RegexOptions.Compiled);
+    private static readonly Regex EntityClosePattern = new(@"</entity\s*>", RegexOptions.Compiled);
+
+    /// <summary>One reason a piece of hand-edited text is not safe to save.
+    /// <paramref name="Offset"/> is a character index into the text, for putting a caret on it.</summary>
+    public sealed record MarkupProblem(int Offset, string Message);
+
+    /// <summary>
+    /// Well-formedness check for hand-edited beat text. Everything else in this class is
+    /// deliberately forgiving — the read patterns simply don't match malformed markup — which is
+    /// correct for machine-written text but silently destructive for hand-written text: an unclosed
+    /// <c>&lt;entity guid="…"&gt;</c> matches nothing, survives <see cref="StripEntityTags"/>
+    /// untouched, and is persisted into the prose as literal visible angle brackets.
+    ///
+    /// <para>Call this before any save that originated from a human editing markup directly. It is
+    /// the only place in the system that asserts the tags are balanced; nothing downstream will
+    /// catch it.</para>
+    /// </summary>
+    public static IReadOnlyList<MarkupProblem> Validate(string? text)
+    {
+        var problems = new List<MarkupProblem>();
+        if (string.IsNullOrEmpty(text)) return problems;
+
+        var opens = EntityOpenPattern.Matches(text);
+        var closes = EntityClosePattern.Matches(text);
+        var whole = EntityTagPattern.Matches(text);
+
+        // Balanced counts are necessary but not sufficient — "</entity>foo<entity guid=..>" counts
+        // 1 and 1 — so the number of COMPLETE tags has to agree with both as well.
+        if (opens.Count != closes.Count)
+            problems.Add(new MarkupProblem(
+                (opens.Count > closes.Count ? opens[^1] : closes[^1]).Index,
+                opens.Count > closes.Count
+                    ? $"{opens.Count - closes.Count} <entity> tag(s) are never closed."
+                    : $"{closes.Count - opens.Count} </entity> tag(s) have no opening tag."));
+        else if (whole.Count != opens.Count)
+            problems.Add(new MarkupProblem(opens.Count > 0 ? opens[0].Index : 0,
+                "An </entity> appears before its opening <entity> tag."));
+
+        foreach (Match m in whole)
+        {
+            var guid = EntityGuidPattern.Match(m.Value);
+            if (!guid.Success)
+                problems.Add(new MarkupProblem(m.Index, "This <entity> tag has no guid attribute."));
+            else if (!Guid.TryParse(guid.Groups[1].Value, out var parsed) || parsed == Guid.Empty)
+                problems.Add(new MarkupProblem(m.Index, $"\"{guid.Groups[1].Value}\" is not a valid entity guid."));
+
+            var inner = m.Groups[1].Value;
+            if (string.IsNullOrWhiteSpace(inner))
+                problems.Add(new MarkupProblem(m.Index, "This <entity> tag wraps no text."));
+            else if (inner.Contains('<'))
+                problems.Add(new MarkupProblem(m.Index, "Entity tags cannot be nested or contain '<'."));
+        }
+
+        return problems;
+    }
 }

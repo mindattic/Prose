@@ -1,0 +1,55 @@
+@* No @page here — same reason as Writer.razor. Prose.Hub maps Blazor with
+   MapRazorComponents<App>() and App.razor carries no <Router>, so EVERY discovered page route
+   renders App.razor: a @page "/repo" would be found, return 200, and serve the observability
+   document instead of the wiki. Program.cs gives this component its own endpoints. *@
+@using Microsoft.AspNetCore.Components.Web
+@using Prose.WriterUi.Components
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <title>@PageTitle</title>
+    @* Stamped before the stylesheets so a light-theme user never sees a frame of dark. Same key
+       as the editor: one theme choice across every Hub-served page. *@
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('prose.writer.theme');
+                document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+            } catch (e) { /* blocked site data — the dark default in the markup stands */ }
+        })();
+    </script>
+    <link rel="stylesheet" href="_content/Prose.WriterUi/tokens.css?v=@AssetVersion" />
+    <link rel="stylesheet" href="_content/Prose.WriterUi/writer.css?v=@AssetVersion" />
+    <link rel="stylesheet" href="_content/Prose.WriterUi/wiki.css?v=@AssetVersion" />
+    @* Theme only — the wiki has no editor, so it does not load writer.js. *@
+    <script src="_content/Prose.WriterUi/js/theme.js?v=@AssetVersion"></script>
+    <HeadOutlet @rendermode="RenderMode.InteractiveServer" />
+</head>
+<body>
+    @* Route values reach this component on the static prerender pass only. With no <Router>,
+       the interactive circuit never re-reads the URL, so they must be handed down as parameters. *@
+    <WikiShell @rendermode="RenderMode.InteractiveServer" Type="@Type" Slug="@Slug" At="@At" />
+    <script src="_framework/blazor.web.js"></script>
+</body>
+</html>
+
+@code {
+    /// <summary>Repository slug, e.g. <c>character</c>. Null renders the repository index.</summary>
+    [Parameter] public string? Type { get; set; }
+
+    /// <summary>Entity slug within <see cref="Type"/>. Null renders that repository's list.</summary>
+    [Parameter] public string? Slug { get; set; }
+
+    /// <summary>Optional ISO instant — renders the record as the database held it then.</summary>
+    [Parameter] public string? At { get; set; }
+
+    private static string AssetVersion => HubAssets.Version;
+
+    private string PageTitle =>
+        Slug != null ? $"{Slug} — Prose" :
+        Type != null ? $"{Type} — Prose" :
+                       "Prose Repositories";
+}

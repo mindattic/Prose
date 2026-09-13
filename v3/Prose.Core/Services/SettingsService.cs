@@ -2,12 +2,31 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using Microsoft.Extensions.Configuration;
 using MindAttic.Legion;
+using MindAttic.Vault.Credentials;
+using MindAttic.Vault.Paths;
 using Prose.Core.Interfaces;
 
 namespace Prose.Core.Services;
 
 public class SettingsService : IDisposable
 {
+    private const string AppId = "prose";
+
+    /// <summary>
+    /// Fresh <see cref="AppScopedCredentialStore"/> over the shared LLM keyring, namespaced
+    /// under <c>"prose-"</c> (mirrors <c>ThinkTank.Core.Services.SettingsService.OwnProviderStore</c>).
+    /// Constructed per call (not cached) so it re-resolves <c>MINDATTIC_LLM_CREDENTIALS</c> on
+    /// every access — matters for tests that redirect that env var to a per-run sandbox.
+    /// Gives Prose its own key tier for every provider, tried before the shared/unscoped id
+    /// every other MindAttic app falls back to, without ever colliding with another app's key
+    /// or the shared default.
+    /// </summary>
+    private static AppScopedCredentialStore OwnProviderStore() => new(
+        AppId,
+        new LlmCredentialStore(
+            Environment.GetEnvironmentVariable(LlmCredentialStore.DirectoryEnvVar)
+            ?? VaultPaths.RoamingBucket(LlmCredentialStore.Bucket)));
+
     /// <summary>
     /// Optional cloud-native configuration source. When set (typically once at host
     /// startup via <c>SettingsService.VaultConfiguration = builder.Configuration</c>),
@@ -108,15 +127,21 @@ public class SettingsService : IDisposable
     private static string Env(string key, string fallback) =>
         Environment.GetEnvironmentVariable(key) is { Length: > 0 } v ? v : fallback;
 
-    // Credential resolution: VaultConfiguration → env var → shared %APPDATA%/MindAttic/LLM/
-    // store → legacy Settings.json. VaultConfiguration is the cloud-native primary; when
-    // unset (e.g. in unit tests that construct SettingsService directly), the chain
-    // falls back to the prior env-var-first behaviour with no observable difference.
-    // Override the store location with the MINDATTIC_LLM_CREDENTIALS env var.
+    // Credential resolution: VaultConfiguration → Prose's own app-scoped key → env var →
+    // shared %APPDATA%/MindAttic/LLM/ store → legacy Settings.json. VaultConfiguration is the
+    // cloud-native primary and always wins (an admin-pushed override should never be shadowed
+    // by a per-app key); when unset (e.g. in unit tests that construct SettingsService
+    // directly), the chain falls back to the prior env-var-first behaviour with no observable
+    // difference for installs that never set a Prose-scoped key. Existing installs with a key
+    // already saved under the shared/unscoped id keep resolving it via the shared-store fallback
+    // below, unchanged. Override the store location with the MINDATTIC_LLM_CREDENTIALS env var.
     private static string ResolveApiKey(string envVar, string providerId, string legacyValue)
     {
         var fromConfig = VaultConfiguration?[$"MindAttic:Vault:LLM:{providerId}:apiKey"];
         if (!string.IsNullOrWhiteSpace(fromConfig)) return fromConfig.Trim();
+
+        var ownKey = OwnProviderStore().GetKey(providerId);
+        if (!string.IsNullOrWhiteSpace(ownKey)) return ownKey;
 
         if (Environment.GetEnvironmentVariable(envVar) is { Length: > 0 } v) return v;
         var fromStore = MindAtticCredentialStore.GetKey(providerId);
@@ -129,7 +154,7 @@ public class SettingsService : IDisposable
     public string ApiKey
     {
         get => ResolveApiKey("PROSE_CLAUDE_API_KEY", "claude", data.ApiKey);
-        set { MindAtticCredentialStore.SetKey("claude", value); data.ApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("claude", value); data.ApiKey = value; ScheduleSave(); }
     }
     public string Model { get => data.Model; set { data.Model = value; ScheduleSave(); } }
     /// <summary>Raised when the theme changes so layout components can update without a full reload.</summary>
@@ -140,7 +165,7 @@ public class SettingsService : IDisposable
     public string ElevenLabsApiKey
     {
         get => ResolveApiKey("PROSE_ELEVENLABS_API_KEY", "elevenlabs", data.ElevenLabsApiKey);
-        set { MindAtticCredentialStore.SetKey("elevenlabs", value); data.ElevenLabsApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("elevenlabs", value); data.ElevenLabsApiKey = value; ScheduleSave(); }
     }
     public string ElevenLabsVoiceId { get => data.ElevenLabsVoiceId; set { data.ElevenLabsVoiceId = value; ScheduleSave(); } }
     public string NarratorVoiceName { get => data.NarratorVoiceName; set { data.NarratorVoiceName = value; ScheduleSave(); } }
@@ -374,7 +399,7 @@ public class SettingsService : IDisposable
     public string OpenAiApiKey
     {
         get => ResolveApiKey("PROSE_OPENAI_API_KEY", "openai", data.OpenAiApiKey);
-        set { MindAtticCredentialStore.SetKey("openai", value); data.OpenAiApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("openai", value); data.OpenAiApiKey = value; ScheduleSave(); }
     }
     public string OpenAiModel { get => data.OpenAiModel; set { data.OpenAiModel = value; ScheduleSave(); } }
     public string ActiveLlmProvider { get => data.ActiveLlmProvider; set { data.ActiveLlmProvider = value; ScheduleSave(); } }
@@ -390,76 +415,81 @@ public class SettingsService : IDisposable
     public string GeminiApiKey
     {
         get => ResolveApiKey("PROSE_GEMINI_API_KEY", "gemini", data.GeminiApiKey);
-        set { MindAtticCredentialStore.SetKey("gemini", value); data.GeminiApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("gemini", value); data.GeminiApiKey = value; ScheduleSave(); }
     }
     public string DeepSeekApiKey
     {
         get => ResolveApiKey("PROSE_DEEPSEEK_API_KEY", "deepseek", data.DeepSeekApiKey);
-        set { MindAtticCredentialStore.SetKey("deepseek", value); data.DeepSeekApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("deepseek", value); data.DeepSeekApiKey = value; ScheduleSave(); }
     }
     public string MistralApiKey
     {
         get => ResolveApiKey("PROSE_MISTRAL_API_KEY", "mistral", data.MistralApiKey);
-        set { MindAtticCredentialStore.SetKey("mistral", value); data.MistralApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("mistral", value); data.MistralApiKey = value; ScheduleSave(); }
     }
     public string KimiApiKey
     {
         get => ResolveApiKey("PROSE_KIMI_API_KEY", "kimi", data.KimiApiKey);
-        set { MindAtticCredentialStore.SetKey("kimi", value); data.KimiApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("kimi", value); data.KimiApiKey = value; ScheduleSave(); }
     }
     public string KimiModel { get => data.KimiModel; set { data.KimiModel = value; ScheduleSave(); } }
     public string PerplexityApiKey
     {
         get => ResolveApiKey("PROSE_PERPLEXITY_API_KEY", "perplexity", data.PerplexityApiKey);
-        set { MindAtticCredentialStore.SetKey("perplexity", value); data.PerplexityApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("perplexity", value); data.PerplexityApiKey = value; ScheduleSave(); }
     }
     public string PerplexityModel { get => data.PerplexityModel; set { data.PerplexityModel = value; ScheduleSave(); } }
     public string GrokApiKey
     {
         get => ResolveApiKey("PROSE_GROK_API_KEY", "xai", data.GrokApiKey);
-        set { MindAtticCredentialStore.SetKey("xai", value); data.GrokApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("xai", value); data.GrokApiKey = value; ScheduleSave(); }
     }
     public string GroqApiKey
     {
         get => ResolveApiKey("PROSE_GROQ_API_KEY", "groq", data.GroqApiKey);
-        set { MindAtticCredentialStore.SetKey("groq", value); data.GroqApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("groq", value); data.GroqApiKey = value; ScheduleSave(); }
     }
     public string TogetherApiKey
     {
         get => ResolveApiKey("PROSE_TOGETHER_API_KEY", "together", data.TogetherApiKey);
-        set { MindAtticCredentialStore.SetKey("together", value); data.TogetherApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("together", value); data.TogetherApiKey = value; ScheduleSave(); }
     }
     public string OpenRouterApiKey
     {
         get => ResolveApiKey("PROSE_OPENROUTER_API_KEY", "openrouter", data.OpenRouterApiKey);
-        set { MindAtticCredentialStore.SetKey("openrouter", value); data.OpenRouterApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("openrouter", value); data.OpenRouterApiKey = value; ScheduleSave(); }
     }
     public string FireworksApiKey
     {
         get => ResolveApiKey("PROSE_FIREWORKS_API_KEY", "fireworks", data.FireworksApiKey);
-        set { MindAtticCredentialStore.SetKey("fireworks", value); data.FireworksApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("fireworks", value); data.FireworksApiKey = value; ScheduleSave(); }
     }
     public string CohereApiKey
     {
         get => ResolveApiKey("PROSE_COHERE_API_KEY", "cohere", data.CohereApiKey);
-        set { MindAtticCredentialStore.SetKey("cohere", value); data.CohereApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("cohere", value); data.CohereApiKey = value; ScheduleSave(); }
     }
     public string IdeogramApiKey
     {
         get => ResolveApiKey("PROSE_IDEOGRAM_API_KEY", "ideogram", data.IdeogramApiKey);
-        set { MindAtticCredentialStore.SetKey("ideogram", value); data.IdeogramApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("ideogram", value); data.IdeogramApiKey = value; ScheduleSave(); }
     }
     public string FalApiKey
     {
         get => ResolveApiKey("PROSE_FAL_API_KEY", "fal", data.FalApiKey);
-        set { MindAtticCredentialStore.SetKey("fal", value); data.FalApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("fal", value); data.FalApiKey = value; ScheduleSave(); }
     }
-    /// <summary>Stability AI (Stable Image / SD3) API key. Used by CoverImageService's
-    /// "stability" provider — https://api.stability.ai — for cover art generation.</summary>
+    /// <summary>Stability AI API key — https://api.stability.ai.
+    ///
+    /// <para>Its only consumer, the "stability" cover-image provider, was deleted 2026-09-13 with
+    /// the rest of the cover pipeline. The key itself is KEPT: it is ordinary provider credential
+    /// plumbing shared with the credential store and its migration path, and Stability also offers
+    /// the image2video endpoints the BookTok feature uses. Removing a key from the store's
+    /// migration is a different and riskier change than deleting a feature.</para></summary>
     public string StabilityApiKey
     {
         get => ResolveApiKey("PROSE_STABILITY_API_KEY", "stability", data.StabilityApiKey);
-        set { MindAtticCredentialStore.SetKey("stability", value); data.StabilityApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("stability", value); data.StabilityApiKey = value; ScheduleSave(); }
     }
     /// <summary>Kling AI (image2video) API key, stored as "{accessKey}:{secretKey}" — Kling
     /// authenticates with a short-lived JWT minted from that pair, not a plain bearer token.
@@ -467,14 +497,14 @@ public class SettingsService : IDisposable
     public string KlingApiKey
     {
         get => ResolveApiKey("PROSE_KLING_API_KEY", "kling", data.KlingApiKey);
-        set { MindAtticCredentialStore.SetKey("kling", value); data.KlingApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("kling", value); data.KlingApiKey = value; ScheduleSave(); }
     }
     /// <summary>Runway (Gen-4 image_to_video) API key. Used by BookTokVideoService's
     /// "runway" provider.</summary>
     public string RunwayApiKey
     {
         get => ResolveApiKey("PROSE_RUNWAY_API_KEY", "runway", data.RunwayApiKey);
-        set { MindAtticCredentialStore.SetKey("runway", value); data.RunwayApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("runway", value); data.RunwayApiKey = value; ScheduleSave(); }
     }
     public string GeminiModel { get => data.GeminiModel; set { data.GeminiModel = value; ScheduleSave(); } }
     public string DeepSeekModel { get => data.DeepSeekModel; set { data.DeepSeekModel = value; ScheduleSave(); } }
@@ -490,12 +520,12 @@ public class SettingsService : IDisposable
     public string MapApiKey
     {
         get => ResolveApiKey("PROSE_MAP_API_KEY", "here-maps", data.MapApiKey);
-        set { MindAtticCredentialStore.SetKey("here-maps", value); data.MapApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("here-maps", value); data.MapApiKey = value; ScheduleSave(); }
     }
     public string GoogleMapsApiKey
     {
         get => ResolveApiKey("PROSE_GOOGLE_MAPS_API_KEY", "google-maps", data.GoogleMapsApiKey);
-        set { MindAtticCredentialStore.SetKey("google-maps", value); data.GoogleMapsApiKey = value; ScheduleSave(); }
+        set { OwnProviderStore().SetKey("google-maps", value); data.GoogleMapsApiKey = value; ScheduleSave(); }
     }
     public string MapMode { get => data.MapMode; set { data.MapMode = value; ScheduleSave(); } }
     public string TimestampFormat { get => data.TimestampFormat; set { data.TimestampFormat = value; ScheduleSave(); } }
@@ -656,10 +686,8 @@ public class SettingsService : IDisposable
     /// <summary>When true, WorldTickService advances the story clock and writes EntityStateEvents per active character on each tick.
     /// Off by default — enable deliberately once the rule layer is ready.</summary>
     public bool WorldTickEnabled { get => data.WorldTickEnabled; set { data.WorldTickEnabled = value; ScheduleSave(); } }
-    /// <summary>When true, CoverImageService.EnsureExportCoverAsync auto-generates a missing cover.jpg
-    /// during --export-node/export_node. Off by default — the author controls cover art manually
-    /// until they opt back in.</summary>
-    public bool AutoGenerateCoverOnExport { get => data.AutoGenerateCoverOnExport; set { data.AutoGenerateCoverOnExport = value; ScheduleSave(); } }
+    // AutoGenerateCoverOnExport removed 2026-09-13 with the cover-generation pipeline it gated.
+    // Cover art is a manual step; there is no longer anything for a flag to switch on.
 
     // SMTP — outbound email for password reset codes
     public string SmtpHost { get => Env("PROSE_SMTP_HOST", data.SmtpHost); set { data.SmtpHost = value; ScheduleSave(); } }
@@ -738,9 +766,13 @@ public class SettingsService : IDisposable
     }
 
     /// <summary>Reset all settings to the saved defaults snapshot (includes secrets).
-    /// Also overwrites the shared MindAttic credential store with the reset values so
-    /// the next read doesn't pick up stale "first-stop" keys. This intentionally
-    /// affects every MindAttic app — resetting one app's credentials is a fresh slate.</summary>
+    /// Also overwrites the shared MindAttic credential store <em>and</em> this app's own
+    /// scoped tier (<see cref="OwnProviderStore"/>) with the reset values, so the next read
+    /// doesn't pick up a stale "first-stop" key from either tier — <see cref="ResolveApiKey"/>
+    /// checks the own-scoped key before the shared store, so leaving it behind would make a
+    /// reset silently no-op for any provider with a Prose-scoped override on file. The shared
+    /// store write intentionally affects every MindAttic app — resetting one app's credentials
+    /// is a fresh slate.</summary>
     public void ResetToDefaults()
     {
         if (File.Exists(defaultsPath))
@@ -779,6 +811,29 @@ public class SettingsService : IDisposable
         MindAtticCredentialStore.SetKey("elevenlabs",  data.ElevenLabsApiKey);
         MindAtticCredentialStore.SetKey("here-maps",   data.MapApiKey);
         MindAtticCredentialStore.SetKey("google-maps", data.GoogleMapsApiKey);
+
+        var own = OwnProviderStore();
+        own.SetKey("claude",       data.ApiKey);
+        own.SetKey("openai",       data.OpenAiApiKey);
+        own.SetKey("gemini",       data.GeminiApiKey);
+        own.SetKey("ideogram",     data.IdeogramApiKey);
+        own.SetKey("fal",          data.FalApiKey);
+        own.SetKey("stability",    data.StabilityApiKey);
+        own.SetKey("kling",        data.KlingApiKey);
+        own.SetKey("runway",       data.RunwayApiKey);
+        own.SetKey("deepseek",     data.DeepSeekApiKey);
+        own.SetKey("mistral",      data.MistralApiKey);
+        own.SetKey("kimi",         data.KimiApiKey);
+        own.SetKey("perplexity",   data.PerplexityApiKey);
+        own.SetKey("xai",          data.GrokApiKey);
+        own.SetKey("groq",         data.GroqApiKey);
+        own.SetKey("together",     data.TogetherApiKey);
+        own.SetKey("openrouter",   data.OpenRouterApiKey);
+        own.SetKey("fireworks",    data.FireworksApiKey);
+        own.SetKey("cohere",       data.CohereApiKey);
+        own.SetKey("elevenlabs",   data.ElevenLabsApiKey);
+        own.SetKey("here-maps",    data.MapApiKey);
+        own.SetKey("google-maps",  data.GoogleMapsApiKey);
     }
 
     private void Load()
@@ -1128,7 +1183,7 @@ public class SettingsService : IDisposable
         public bool AutoCanonGrounding { get; set; } = false;
         /// <summary>When true, SceneContextAssembler.HarvestRevealedDetailsAsync fires after each beat write to propose XRAY-REVEAL findings. Default OFF.</summary>
         public bool AutoHarvestRevealedDetails { get; set; } = false;
-        /// <summary>When true, CoverImageService.EnsureExportCoverAsync auto-generates a missing cover.jpg during export. Default OFF — author controls cover art manually.</summary>
-        public bool AutoGenerateCoverOnExport { get; set; } = false;
+        // AutoGenerateCoverOnExport removed 2026-09-13 with the cover-generation pipeline. An
+        // existing settings file that still carries the key simply ignores it on load.
     }
 }

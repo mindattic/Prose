@@ -11,6 +11,7 @@ using Prose.Core.Models.Graph;
 using Prose.Core.Services;
 using Prose.Hub;
 using Prose.ObserverUi;
+using Prose.WriterUi;
 using Serilog;
 using Serilog.Events;
 
@@ -41,13 +42,50 @@ using Serilog.Events;
 // agent-driven process spawn, a service host, etc.), not just a genuine interactive console.
 // That unhandled exception took the whole Hub down before it ever bound its port. A cosmetic
 // repaint must never be fatal to startup; skip it silently when there's no buffer to clear.
-try
+void ApplyHubConsoleTheme(bool repaint)
 {
-    Console.BackgroundColor = ConsoleColor.Yellow;
-    Console.ForegroundColor = ConsoleColor.Black;
-    Console.Clear();
+    try
+    {
+        Console.BackgroundColor = ConsoleColor.Yellow;
+        Console.ForegroundColor = ConsoleColor.Black;
+        // Only at startup. Re-asserting the colours later is free and invisible; clearing later
+        // would erase the startup log and the echoed command history, which is the entire reason
+        // this window is kept open.
+        if (repaint) Console.Clear();
+    }
+    catch (IOException) { }
+    catch (PlatformNotSupportedException) { }
 }
-catch (IOException) { }
+
+ApplyHubConsoleTheme(repaint: true);
+
+// Explicit user requirement (2026-09-13): the window title carries this process's PID, so the
+// author can point an agent at the right Hub — "the one in the title bar" — instead of guessing
+// between a stale instance and the one actually serving. That ambiguity is real: a redeploy stops
+// the Hub by executable path and starts a new one, and a CLI or MCP call that reaches an older
+// surviving process fails in ways that look like a code bug (a 200 from /api/health only proves
+// SOME Hub is up). The same id already shows in the Writer's status bar as "ID: {pid}"
+// (WriterShell.razor), so the two can be compared at a glance — keep the formats in step.
+//
+// Called twice, from ONE definition: once here so the window is identifiable during startup (which
+// is slow — the resident graph loads first), and once again after the endpoints are mapped, because
+// that second assignment already existed and would otherwise silently win. Two literals is exactly
+// how this drifted the first time.
+//
+// The URL that used to be in the title lives in the startup banner below it, so nothing is lost.
+//
+// Guarded for the same reason as the repaint above: with no real Win32 screen buffer — any launch
+// whose parent redirects or pipes stdout — the setter throws, and a cosmetic title must never be
+// fatal to startup. The pre-existing late assignment was NOT guarded, which put an unhandled
+// IOException immediately before app.Run() on exactly those launches.
+void SetHubWindowTitle()
+{
+    try { Console.Title = $"Hub - ID:{Environment.ProcessId}"; }
+    catch (IOException) { }
+    catch (PlatformNotSupportedException) { }
+}
+
+SetHubWindowTitle();
 
 // Explicit user requirement (2026-08-21): visible window + live command echo. Must run before
 // anything else touches Console — see HubConsoleEcho's own doc comment for why capturing the
@@ -92,7 +130,19 @@ var hubSerilogLogger = new LoggerConfiguration()
     .WriteTo.File(hubLogPath, rollingInterval: RollingInterval.Day, retainedFileCountLimit: 14, shared: true)
     .CreateLogger();
 
-var builder = WebApplication.CreateBuilder(args);
+// ContentRootPath is pinned to the executable's own folder rather than left to default to
+// Directory.GetCurrentDirectory(). The Hub is started detached — by deploy.ps1 -Launch, by the
+// SessionStart hook, by launch.bat's `start ""` (which inherits the shell's cwd, not the script's
+// folder) — so the working directory is almost never the install folder, and the default made
+// ContentRoot point somewhere with no wwwroot. Everything served from disk then 404s: the
+// index.html dashboard, every RCL asset under _content/, and _framework/blazor.web.js, which
+// silently leaves both Blazor pages non-interactive. Found 2026-09-11 with /app and /writer both
+// returning their HTML and none of their assets.
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+{
+    Args = args,
+    ContentRootPath = AppContext.BaseDirectory
+});
 builder.WebHost.UseUrls("http://127.0.0.1:5900");
 
 // Added as ONE additional provider (deliberately no ClearProviders() - unlike Mcp, which
@@ -100,16 +150,27 @@ builder.WebHost.UseUrls("http://127.0.0.1:5900");
 // the same pipeline: one for live-tail, one for durable/searchable history.
 builder.Logging.AddSerilog(hubSerilogLogger, dispose: true);
 
-// Bug fix (2026-08-28): the default Console logger provider (added implicitly by
-// WebApplication.CreateBuilder) colors each "info:"/"warn:" level tag per LogLevel and calls
-// Console.ResetColor() afterward. ResetColor() reverts to the console's ORIGINAL attribute pair
-// captured the first time any Console.*Color setter ran in this process - i.e. the terminal's
-// real default (whatever it was before line 39's Console.BackgroundColor = Yellow) - not to our
-// custom yellow/black scheme. Net effect: every logged line's level tag, and everything the
-// framework writes right after it, snapped back to plain default colors instead of staying
-// yellow/black. Disabling the formatter's own color behavior stops it from touching the console
-// colors at all, so our scheme (set once, above) simply stays in effect for the whole process.
-builder.Services.Configure<Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions>(
+// Bug fix (2026-08-28, root cause finally found 2026-09-13): the default Console logger provider
+// (added implicitly by WebApplication.CreateBuilder) writes ANSI colour codes around each
+// "info:"/"warn:" level tag — literally ESC[40m ESC[32m info ESC[39m ESC[22m ESC[49m. The trailing
+// 39/49 reset the console to the TERMINAL's default attribute pair (white on black), not to the
+// yellow/black scheme ApplyHubConsoleTheme set above, so from the first log line onward every
+// character cell the Hub writes is painted white-on-black while the rest of the buffer stays
+// yellow — the author's "something keeps resetting text to white on black".
+//
+// The original fix was Configure<SimpleConsoleFormatterOptions>(ColorBehavior = Disabled), and it
+// silently did nothing for two weeks. IOptionsMonitor really does resolve to Disabled — verified —
+// but ConsoleLoggerProvider.ReloadLoggerOptions THROWS THAT OBJECT AWAY when
+// ConsoleLoggerOptions.FormatterName is null, which is the default: it falls into its
+// back-compat branch and rebuilds SimpleConsoleFormatter.FormatterOptions from the obsolete
+// ConsoleLoggerOptions.DisableColors flag (false → ColorBehavior.Enabled). Configuring the
+// formatter options alone can never win that race.
+//
+// AddSimpleConsole is the fix precisely because it also pins FormatterName = "simple", which skips
+// the back-compat branch entirely and leaves our options in place. Confirmed end to end with
+// DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION=1 on a minimal net10 repro: the old pattern
+// still emitted the escape sequences above, this one emits none.
+builder.Logging.AddSimpleConsole(
     options => options.ColorBehavior = Microsoft.Extensions.Logging.Console.LoggerColorBehavior.Disabled);
 
 // Stage C completion: the 9 CLI commands that used Program.cs's BuildServicesWithVault(AndAuth)
@@ -187,7 +248,11 @@ builder.Services.AddSingleton<Prose.Hub.ObservabilityBridge>();
 // this same process's own loopback address; Prose.Maui (a different process, Phase 9) calls
 // it with the same base URL from the outside instead.
 builder.Services.AddRazorComponents().AddInteractiveServerComponents();
-builder.Services.AddProseObserverUi("http://127.0.0.1:5900");
+// The key is resolved per circuit, not here: it's generated further down (after app.Build()),
+// so anything captured at registration time would be null on a first-ever startup.
+builder.Services.AddProseObserverUi("http://127.0.0.1:5900",
+    sp => sp.GetRequiredService<SettingsService>().HubApiKey);
+builder.Services.AddProseWriterUi();
 
 var app = builder.Build();
 
@@ -224,6 +289,26 @@ app.MapHub<Prose.Hub.Hubs.ObservabilityHub>("/hubs/observability");
 // maps exactly one addressable route without needing a Router/Routes indirection. "/"
 // keeps serving the existing static wwwroot/index.html dashboard untouched.
 app.MapRazorComponents<Prose.Hub.Components.App>().AddInteractiveServerRenderMode();
+
+// The editor, at /writer. Mapped explicitly rather than with a second @page: because App.razor is
+// the root component and has no <Router>, every route MapRazorComponents discovers renders
+// App.razor, so a @page "/writer" would answer 200 with the observability page. A component
+// result is its own document and sidesteps the root entirely.
+app.MapGet("/writer", () =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Writer>());
+
+// The entity wiki, at /repo. Same explicit-endpoint reasoning as /writer above. The route shape
+// matches RepositoryDefinition.RoutePath ("/repo/{slug}"), which the database has been handing out
+// since 2026-06-16 without anything ever serving it. Pages render live from SQL — there is no
+// export or sync step, and no API key: HubApiKeyFilter is a per-endpoint filter, not middleware.
+app.MapGet("/repo", () =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Wiki>());
+app.MapGet("/repo/{type}", (string type) =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Wiki>(
+        new { Type = type }));
+app.MapGet("/repo/{type}/{slug}", (string type, string slug, string? at) =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Wiki>(
+        new { Type = type, Slug = slug, At = at }));
 
 var uc = app.Services.GetRequiredService<IUniverseContext>();
 
@@ -799,13 +884,39 @@ app.MapPost("/api/generate-scene", async (GenerateSceneRequest req, OneShotGener
 })
     .AddEndpointFilter<HubApiKeyFilter>();
 
-Console.Title = "Prose Hub — http://127.0.0.1:5900";
+SetHubWindowTitle();
 HubConsoleEcho.Out.WriteLine();
 HubConsoleEcho.Out.WriteLine("========================================================");
 HubConsoleEcho.Out.WriteLine(" Prose Hub is running — http://127.0.0.1:5900");
 HubConsoleEcho.Out.WriteLine(" Every CLI/MCP command is echoed below as it runs.");
 HubConsoleEcho.Out.WriteLine("========================================================");
 HubConsoleEcho.Out.WriteLine();
+
+// Re-assert the title and colours on a short timer (2026-09-13). Setting them once here is not
+// enough in practice: the author reported the PID title being overwritten immediately, and the
+// yellow scheme reverting to white-on-black, by something that writes to the console AFTER this
+// point — app.Run() binds the port and the hosting/Kestrel startup logging continues past it, so
+// "last writer wins" is not us. Rather than guess which component does it, we simply keep winning
+// for the first 20 seconds.
+//
+// The colour half of that was the console logger's ANSI resets, fixed at its source where
+// AddSimpleConsole is configured above; this ticker stays as a cheap guard for the title and for
+// any other component that decides to emit an ANSI reset, not as the fix.
+//
+// Bounded on purpose: ten passes, then it stops for the life of the process. An unbounded ticker
+// re-colouring a console forever is a thing nobody would be able to find later, and the window
+// only needs to settle once. Never repaints (see ApplyHubConsoleTheme) — this must not erase the
+// command echo. Fire-and-forget: nothing downstream waits on cosmetics, and every call inside is
+// individually guarded, so a console-less launch spins harmlessly and changes nothing.
+_ = Task.Run(async () =>
+{
+    for (var attempt = 0; attempt < 10; attempt++)
+    {
+        await Task.Delay(TimeSpan.FromSeconds(2));
+        SetHubWindowTitle();
+        ApplyHubConsoleTheme(repaint: false);
+    }
+});
 
 app.Run();
 
