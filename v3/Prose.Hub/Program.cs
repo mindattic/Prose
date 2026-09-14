@@ -64,7 +64,7 @@ ApplyHubConsoleTheme(repaint: true);
 // between a stale instance and the one actually serving. That ambiguity is real: a redeploy stops
 // the Hub by executable path and starts a new one, and a CLI or MCP call that reaches an older
 // surviving process fails in ways that look like a code bug (a 200 from /api/health only proves
-// SOME Hub is up). The same id already shows in the Writer's status bar as "ID: {pid}"
+// SOME Hub is up). The same id already shows in the Writer's status bar as "PID: {pid}"
 // (WriterShell.razor), so the two can be compared at a glance — keep the formats in step.
 //
 // Called twice, from ONE definition: once here so the window is identifiable during startup (which
@@ -80,7 +80,7 @@ ApplyHubConsoleTheme(repaint: true);
 // IOException immediately before app.Run() on exactly those launches.
 void SetHubWindowTitle()
 {
-    try { Console.Title = $"Hub - ID:{Environment.ProcessId}"; }
+    try { Console.Title = $"Hub - PID: {Environment.ProcessId}"; }
     catch (IOException) { }
     catch (PlatformNotSupportedException) { }
 }

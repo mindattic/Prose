@@ -188,7 +188,7 @@ public partial class MainWindow : Window
             ShowSplash(
                 hubs.Count > 0
                     ? $"Lost the connection to Prose Hub. It is still running " +
-                      $"({string.Join(", ", hubs.Select(h => $"ID:{h.Pid}"))}) but is not answering " +
+                      $"({string.Join(", ", hubs.Select(h => $"PID: {h.Pid}"))}) but is not answering " +
                       $"{HubProcess.BaseUrl} — most often SQL Server."
                     : "Lost the connection to Prose Hub — the process is no longer running.",
                 offerConnect: true);

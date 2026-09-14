@@ -22,6 +22,7 @@ public class ManuscriptExportService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly NodeWorkbenchService workbench;
+    private readonly BookSpineService spineService;
     private readonly SettingsService settings;
     private readonly GlossaryService glossary;
     private readonly ILogger<ManuscriptExportService> log;
@@ -31,6 +32,7 @@ public class ManuscriptExportService
     public ManuscriptExportService(
         IDbContextFactory<ProseDbContext> dbFactory,
         NodeWorkbenchService workbench,
+        BookSpineService spineService,
         SettingsService settings,
         GlossaryService glossary,
         ClaudeService claudeService,
@@ -38,6 +40,7 @@ public class ManuscriptExportService
     {
         this.dbFactory = dbFactory;
         this.workbench = workbench;
+        this.spineService = spineService;
         this.settings = settings;
         this.glossary = glossary;
         this.claudeService = claudeService;
@@ -76,52 +79,40 @@ public class ManuscriptExportService
         // Synopsis is intentionally NOT printed on the title page — it is a back-cover/catalog
         // blurb, exported separately as "Back Cover.txt" and as the ebook <dc:description>.
 
-        // Chapter/Interlude boundaries are Node transitions ONLY — never a bare
-        // Beat.IsChapterStart, which is also (ab)used for mid-chapter sub-headings and, on some
-        // legacy beats, a leftover pre-Node-hierarchy chapter marker. See LoadAsync for the full
-        // rationale (the shared epub/pdf/txt path); this method mirrors that logic for .md.
-        var srcIds = ordered.Select(o => o.NodeId).Distinct().ToList();
-        var nodeTitles = await db.Nodes.AsNoTracking()
-            .Where(s => srcIds.Contains(s.Id))
-            .ToDictionaryAsync(s => s.Id, s => s.Title, ct);
+        // Chapter boundaries come from BookSpineService. This method used to carry a THIRD
+        // derivation of them — "(nodeChanged && multiChapter) || flatMarker", where LoadAsync
+        // below used "nodeChanged || flatMarker" and DocxExportService used bare "nodeChanged" —
+        // so the same book could export with three different chapter structures depending on which
+        // file you asked for. One walk now answers for all of them.
+        var spine = await spineService.GetAsync(nodeId, ct);
 
-        // A story that resolves to a single chapter prints no chapter heading — we
-        // never emit "Chapter 1". Only mark headings when there are 2+ real chapter/interlude nodes.
-        bool multiChapter = srcIds.Count > 1;
+        // A story that resolves to a single chapter prints no chapter heading — we never emit
+        // "Chapter 1". Unchanged rule, now asked of the spine rather than of a distinct-node count.
+        bool multiChapter = spine.ChapterCount > 1;
+        var headingAt = new Dictionary<Guid, string>();
+        var subHeadingAt = new Dictionary<Guid, string>();
+        foreach (var chapter in spine.Chapters)
+        {
+            if (multiChapter && chapter.Beats.Count > 0)
+                headingAt[chapter.Beats[0].BeatId] = chapter.Heading;
+            foreach (var beat in chapter.Beats)
+                if (beat.IsSubHeading && beat.Title is not null)
+                    subHeadingAt[beat.BeatId] = beat.Title;
+        }
+
         int beatNo = 0;
-        int chapterNo = 0;
-        Guid? prevNode = null;
         foreach (var ob in ordered)
         {
             var beat = ob.Beat;
-            var nodeChanged = prevNode is null || ob.NodeId != prevNode.Value;
-            prevNode = ob.NodeId;
-            var beatTitle = string.IsNullOrWhiteSpace(beat.Title) ? null : beat.Title!.Trim();
-            // Single-node books (the current "flat beats, chapters are just
-            // IsChapterStart beats" model — see Beat.IsChapterStart's own doc
-            // comment) have no node transitions to key off at all, so a real
-            // chapter marker here can ONLY show up as a same-node IsChapterStart
-            // beat whose title is itself chapter-shaped. Gated on !multiChapter
-            // so this never fires for legacy multi-node books, where the same
-            // signal is documented (above) as leftover pre-Node-hierarchy noise.
-            var isFlatBookChapterStart = !multiChapter && beat.IsChapterStart
-                && beatTitle is not null && LooksLikeChapterHeading(beatTitle);
-            if ((nodeChanged && multiChapter) || isFlatBookChapterStart)
+            if (headingAt.TryGetValue(beat.Id, out var heading))
             {
-                chapterNo++;
-                var nodeTitle = nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim() : null;
-                var heading =
-                    (beatTitle is not null && LooksLikeChapterHeading(beatTitle)) ? beatTitle
-                    : nodeTitle
-                    ?? beatTitle
-                    ?? $"Chapter {chapterNo}";
                 md.AppendLine($"## {heading}");
                 md.AppendLine();
             }
-            else if (beat.IsChapterStart && beatTitle is not null && !LooksLikeChapterHeading(beatTitle))
+            else if (subHeadingAt.TryGetValue(beat.Id, out var subHeading))
             {
                 // Genuine mid-chapter sub-heading — its own heading text, not a new chapter.
-                md.AppendLine($"### {beatTitle}");
+                md.AppendLine($"### {subHeading}");
                 md.AppendLine();
             }
             var text = (beat.Text ?? "").Trim();
@@ -531,64 +522,34 @@ public class ManuscriptExportService
             .FirstOrDefaultAsync(ct);
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
 
-        // Chapter/Interlude boundaries are Node transitions ONLY (nodeChanged) — never a bare
-        // Beat.IsChapterStart, which is also (ab)used for two other things: genuine mid-chapter
-        // sub-headings (e.g. BCODA's "Three Barrels", "Crucible Genomics") and, on some legacy
-        // beats, a leftover pre-Node-hierarchy chapter marker that duplicates the real chapter
-        // title (e.g. a beat titled "Chapter 2 - Provenance" sitting a few beats into the
-        // already-open "Chapter 2" node). Conflating all three used to run chapter numbering
-        // far past the real count and to skip every Interlude's real name (its lead beat has no
-        // Beat.Title, so the old fallback hit the generic "Chapter {n}" branch instead of the
-        // Node's own "Interlude: …" Title).
-        var srcIds = ordered.Select(o => o.NodeId).Distinct().ToList();
-        var nodeTitles = await db.Nodes.AsNoTracking()
-            .Where(s => srcIds.Contains(s.Id))
-            .ToDictionaryAsync(s => s.Id, s => s.Title, ct);
-        // See ExportMarkdownAsync's identical flag — same-node IsChapterStart beats only
-        // count as real chapter boundaries for single-node books (the current flat-beats
-        // model). Multi-node legacy books keep the original nodeChanged-only behavior.
-        bool multiChapter = srcIds.Count > 1;
+        // Chapter boundaries come from BookSpineService — the shared walk that docx, markdown and
+        // print_book now read too. This method's own derivation ("nodeChanged || flatMarker") was
+        // the one that survived the reconciliation, so epub/pdf/txt output is unchanged by the move;
+        // what changed is that the other three agree with it instead of each deciding for itself.
+        var spine = await spineService.GetAsync(nodeId, ct);
+        var beatsById = ordered.ToDictionary(o => o.Beat.Id, o => o.Beat);
 
         var chapters = new List<Chapter>();
-        Chapter? current = null;
-        int chapterNo = 0;
-        Guid? prevNode = null;
-        foreach (var ob in ordered)
+        foreach (var unit in spine.Chapters)
         {
-            var beat = ob.Beat;
-            var nodeChanged = prevNode is null || ob.NodeId != prevNode.Value;
-            prevNode = ob.NodeId;
-            var beatTitle = string.IsNullOrWhiteSpace(beat.Title) ? null : beat.Title!.Trim();
-            var isFlatBookChapterStart = !multiChapter && beat.IsChapterStart
-                && beatTitle is not null && LooksLikeChapterHeading(beatTitle);
-            if (nodeChanged || isFlatBookChapterStart)
+            var current = new Chapter(unit.Heading, new List<ContentBlock>());
+            chapters.Add(current);
+
+            foreach (var spineBeat in unit.Beats)
             {
-                chapterNo++;
-                var nodeTitle = nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim() : null;
-                // Prefer the beat's own title only when it is ITSELF a properly-formatted
-                // "Chapter N …" / "Interlude: …" heading; otherwise the Node's canonical Title
-                // wins (keeps an unrelated beat title from replacing the real chapter heading,
-                // and makes every Interlude — whose lead beat carries no title — print its name).
-                var heading =
-                    (beatTitle is not null && LooksLikeChapterHeading(beatTitle)) ? beatTitle
-                    : nodeTitle
-                    ?? beatTitle
-                    ?? $"Chapter {chapterNo}";
-                current = new Chapter(heading, new List<ContentBlock>());
-                chapters.Add(current);
+                if (!beatsById.TryGetValue(spineBeat.BeatId, out var beat)) continue;
+
+                // Genuine mid-chapter sub-heading — its own heading text, not a new chapter. The
+                // spine has already excluded the chapter's opening beat, which is where the old
+                // `else if` did that job.
+                if (spineBeat.IsSubHeading && spineBeat.Title is not null)
+                    current.Blocks.Add(new ContentBlock(true, spineBeat.Title.Trim()));
+
+                var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
+                if (text.Length == 0) continue;
+                foreach (var para in SplitParagraphs(text))
+                    current.Blocks.Add(new ContentBlock(false, para));
             }
-            else if (beat.IsChapterStart && beatTitle is not null && !LooksLikeChapterHeading(beatTitle))
-            {
-                // Genuine mid-chapter sub-heading — its own heading text, not a new chapter.
-                current ??= AddLeadChapter(chapters);
-                current.Blocks.Add(new ContentBlock(true, beatTitle));
-            }
-            var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
-            if (text.Length == 0) continue;
-            // Beats before the first chapter start land in an untitled lead chapter.
-            current ??= AddLeadChapter(chapters);
-            foreach (var para in SplitParagraphs(text))
-                current.Blocks.Add(new ContentBlock(false, para));
         }
 
         // Resolve the final display heading for every chapter, centrally. A story
@@ -618,21 +579,9 @@ public class ManuscriptExportService
     private string ResolveExportDir(string? universeSlug = null)
         => settings.GetExportDirectory(universeSlug);
 
-    private static Chapter AddLeadChapter(List<Chapter> chapters)
-    {
-        var lead = new Chapter(null, new List<ContentBlock>());
-        chapters.Add(lead);
-        return lead;
-    }
-
-    // Beats sometimes carry a leftover pre-Node-hierarchy "Chapter N …" / "Interlude: …" title
-    // even though a real Node boundary now owns that role. Matching this pattern is how we tell
-    // a genuine chapter/interlude heading apart from an ordinary mid-chapter sub-heading name.
-    private static readonly Regex ChapterOrInterludeHeadingPattern =
-        new(@"^(Chapter\s+\d+\b|Interlude\s*:)", RegexOptions.IgnoreCase);
-
-    private static bool LooksLikeChapterHeading(string title) =>
-        ChapterOrInterludeHeadingPattern.IsMatch(title);
+    // AddLeadChapter and the "leftover pre-Node-hierarchy heading" regex both retired here: the
+    // spine gives every beat a unit, so there is no pre-first-chapter remainder to catch, and the
+    // regex now lives once as ChapterTitle.IsLegacyBeatHeading.
 
     private static IEnumerable<string> SplitParagraphs(string text) =>
         text.Replace("\r\n", "\n").Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);

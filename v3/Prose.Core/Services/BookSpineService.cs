@@ -75,7 +75,8 @@ public sealed class BookSpineService(IDbContextFactory<ProseDbContext> dbFactory
     /// <param name="IsSubHeading">The honest meaning of <c>Beat.IsChapterStart</c>: a sub-heading
     /// inside a chapter, carrying its own title ("Three Barrels"). Never a chapter boundary. This
     /// is the exporters' test — the flag AND a title that is not itself chapter-shaped — not the
-    /// raw flag, which is also set on legacy heading beats.</param>
+    /// raw flag, which is also set on legacy heading beats. Never true for a chapter's opening
+    /// beat: the unit heading already prints there.</param>
     /// <param name="LooksLikeStrayHeading">This beat's first line reads as a unit heading
     /// ("Chapter 7", "## Interlude: Static"). On the first beat of a chapter that is almost always
     /// draft debris duplicating the node title. Reported, never acted on.</param>
@@ -202,6 +203,14 @@ public sealed class BookSpineService(IDbContextFactory<ProseDbContext> dbFactory
             beatOrdinal++;
             var plain = ProseWordCount.ToPlainText(beat.Text);
 
+            // A chapter's OPENING beat is never also a sub-heading, even when it carries the flag
+            // and a plain title: the unit heading is already printing above it, and a sub-heading
+            // block there would print the beat's title twice over. This is the `else if` both
+            // exporters have always had — stated here once instead, so a consumer that walks
+            // chapter.Beats cannot forget it. `open` is empty exactly when this beat opens the
+            // chapter, because CloseChapter drains it at every boundary.
+            var opensThisChapter = open.Count == 0;
+
             open.Add(new SpineBeat(
                 beat.Id,
                 entry.NodeId,
@@ -210,7 +219,7 @@ public sealed class BookSpineService(IDbContextFactory<ProseDbContext> dbFactory
                 beat.Title,
                 Preview(plain),
                 ProseWordCount.CountPlain(plain),
-                IsSubHeading: beat.IsChapterStart && beatTitle is not null && !titleIsChapterShaped,
+                IsSubHeading: !opensThisChapter && beat.IsChapterStart && beatTitle is not null && !titleIsChapterShaped,
                 LooksLikeStrayHeading: ChapterTitle.LooksLikeHeading(ChapterTitle.FirstLine(plain))));
         }
 

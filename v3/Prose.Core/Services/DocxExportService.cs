@@ -22,6 +22,7 @@ public class DocxExportService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly NodeWorkbenchService workbench;
+    private readonly BookSpineService spineService;
     private readonly SettingsService settings;
     private readonly ExportCleanupService cleanup;
     private readonly GlossaryService glossary;
@@ -42,6 +43,7 @@ public class DocxExportService
     public DocxExportService(
         IDbContextFactory<ProseDbContext> dbFactory,
         NodeWorkbenchService workbench,
+        BookSpineService spineService,
         SettingsService settings,
         ExportCleanupService cleanup,
         GlossaryService glossary,
@@ -49,6 +51,7 @@ public class DocxExportService
     {
         this.dbFactory = dbFactory;
         this.workbench = workbench;
+        this.spineService = spineService;
         this.settings = settings;
         this.cleanup = cleanup;
         this.glossary = glossary;
@@ -187,57 +190,51 @@ public class DocxExportService
                 body.AppendChild(Centered(author!, Author14, italic: true));
             body.AppendChild(PageBreak());
 
-            // Determine chapter boundaries.
-            var srcIds = ordered.Select(o => o.NodeId).Distinct().ToList();
-            var nodeTitles = await db.Nodes.AsNoTracking()
-                .Where(s => srcIds.Contains(s.Id))
-                .ToDictionaryAsync(s => s.Id, s => s.Title, ct);
+            // Chapter boundaries come from BookSpineService — the ONE place they are computed.
+            // This file used to derive them itself, as did ManuscriptExportService (twice: once for
+            // epub/pdf, once for markdown) and print_book (which emitted none at all), by three
+            // different rules; the same book therefore exported with a different chapter structure
+            // depending on the file extension. The rule that survived is epub/pdf's, because it is
+            // the one that yields a usable book in the legacy flat shape — docx's silent collapse to
+            // a single chapter was the bug. See BookSpineService's own header for the full table.
+            //
+            // What the spine already decided, so that nothing here re-guesses it: the heading text
+            // (chapter-shaped beat title → node title → any beat title → ordinal), and the honest
+            // reading of Beat.IsChapterStart — a mid-chapter sub-heading carrying its own title,
+            // never a chapter boundary, which is what keeps a 25-chapter book from numbering itself
+            // to "Chapter 49" and every Interlude from losing its name.
+            //
+            // Mapped back onto `ordered` by beat id rather than consumed directly: everything below
+            // this point indexes these four parallel arrays, and keeping that shape is what makes
+            // this a boundary change and not a rewrite of the docx writer.
+            var spine = await spineService.GetAsync(nodeId, ct);
+            var chapterCount = spine.ChapterCount;
 
-            // Chapter/Interlude boundaries are Node transitions ONLY (nodeChanged) — never a
-            // bare Beat.IsChapterStart, which is also (ab)used for two other things: genuine
-            // mid-chapter sub-headings (e.g. BCODA's "Three Barrels", "Crucible Genomics") and,
-            // on some legacy beats, a leftover pre-Node-hierarchy chapter marker that duplicates
-            // the real chapter title (e.g. a beat titled "Chapter 2 - Provenance" sitting a few
-            // beats into the already-open "Chapter 2" node). Conflating all three used to run
-            // the numbering to "Chapter 49"/"Chapter 56" on a 25-chapter book and to skip every
-            // Interlude's real name (its first beat has no Beat.Title, so the old fallback hit
-            // the generic "Chapter {n}" branch instead of the Node's own "Interlude: …" Title).
             var isChapterStart = new bool[ordered.Count];   // real, page-breaking Chapter/Interlude heading
             var chapterTitle = new string?[ordered.Count];
             var isSubHeading = new bool[ordered.Count];     // in-flow sub-heading text — not counted, not paginated
             var subHeadingTitle = new string?[ordered.Count];
-            Guid? prevNode = null;
-            int chapterCount = 0;
-            for (int i = 0; i < ordered.Count; i++)
+
+            var indexOfBeat = new Dictionary<Guid, int>(ordered.Count);
+            for (int i = 0; i < ordered.Count; i++) indexOfBeat[ordered[i].Beat.Id] = i;
+
+            foreach (var chapter in spine.Chapters)
             {
-                var ob = ordered[i];
-                var nodeChanged = prevNode is null || ob.NodeId != prevNode.Value;
-                var beatTitle = string.IsNullOrWhiteSpace(ob.Beat.Title) ? null : ob.Beat.Title!.Trim();
-                if (nodeChanged)
+                if (chapter.Beats.Count > 0 && indexOfBeat.TryGetValue(chapter.Beats[0].BeatId, out var head))
                 {
-                    isChapterStart[i] = true;
-                    chapterCount++;
-                    var nodeTitle = nodeTitles.TryGetValue(ob.NodeId, out var t) && !string.IsNullOrWhiteSpace(t) ? t.Trim() : null;
-                    // Prefer the beat's own title only when it is ITSELF a properly-formatted
-                    // "Chapter N …" / "Interlude: …" heading (nicer author punctuation, e.g. the
-                    // em dash); otherwise the Node's canonical Title wins. This is what keeps an
-                    // unrelated beat title (e.g. "Across the Hall") from replacing the real
-                    // chapter heading ("Chapter 20 - The Floor Is Hard"), and what makes every
-                    // Interlude — whose lead beat carries no title at all — print its own name.
-                    chapterTitle[i] =
-                        (beatTitle is not null && LooksLikeChapterHeading(beatTitle)) ? beatTitle
-                        : nodeTitle
-                        ?? beatTitle
-                        ?? $"Chapter {chapterCount}";
+                    isChapterStart[head] = true;
+                    chapterTitle[head] = chapter.Heading;
                 }
-                else if (ob.Beat.IsChapterStart && beatTitle is not null && !LooksLikeChapterHeading(beatTitle))
+
+                foreach (var beat in chapter.Beats)
                 {
-                    // A genuine mid-chapter sub-heading (its own heading text) — NOT a new
-                    // chapter: no page break, no TOC entry, no bump to chapterCount.
-                    isSubHeading[i] = true;
-                    subHeadingTitle[i] = beatTitle;
+                    if (!beat.IsSubHeading) continue;
+                    if (indexOfBeat.TryGetValue(beat.BeatId, out var sub))
+                    {
+                        isSubHeading[sub] = true;
+                        subHeadingTitle[sub] = beat.Title;
+                    }
                 }
-                prevNode = ob.NodeId;
             }
 
             // Pre-build the TOC entry list so both the SDT and the chapter headings
@@ -385,14 +382,10 @@ public class DocxExportService
                 new Justification { Val = JustificationValues.Center }),
             MakeRun(text, Body12, bold: true));
 
-    // Beats sometimes carry a leftover pre-Node-hierarchy "Chapter N …" / "Interlude: …" title
-    // even though a real Node boundary now owns that role. Matching this pattern is how we tell
-    // a genuine chapter/interlude heading apart from an ordinary mid-chapter sub-heading name.
-    private static readonly Regex ChapterOrInterludeHeadingPattern =
-        new(@"^(Chapter\s+\d+\b|Interlude\s*:)", RegexOptions.IgnoreCase);
-
-    private static bool LooksLikeChapterHeading(string title) =>
-        ChapterOrInterludeHeadingPattern.IsMatch(title);
+    // The "leftover pre-Node-hierarchy heading" test that used to live here — the regex
+    // ^(Chapter\s+\d+\b|Interlude\s*:) — now lives once, as ChapterTitle.IsLegacyBeatHeading, and
+    // is applied by BookSpineService. It is deliberately narrower than ChapterTitle.LooksLikeHeading:
+    // widening it here would change which beat titles win over their node's title.
 
     /// <summary>
     /// Builds a Structured Document Tag containing a pre-populated Word TOC field — the

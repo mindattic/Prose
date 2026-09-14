@@ -58,7 +58,7 @@ public static class HubProcess
     /// than silently filtered away.</para>
     ///
     /// <para>The PID this returns is the one the Hub prints in its own window title
-    /// (<c>Hub - ID:{pid}</c>), so the two can be matched up by eye.</para>
+    /// (<c>Hub - PID: {pid}</c>), so the two can be matched up by eye.</para>
     /// </summary>
     public static IReadOnlyList<HubInstance> RunningHubs()
     {
@@ -122,7 +122,7 @@ public static class HubProcess
         var existing = RunningHubs();
         if (existing.Count > 0)
         {
-            var ids = string.Join(", ", existing.Select(h => $"ID:{h.Pid}"));
+            var ids = string.Join(", ", existing.Select(h => $"PID: {h.Pid}"));
             progress?.Report($"Found Prose Hub ({ids}) — waiting for it to answer…");
 
             if (await WaitForHealthyAsync("Waiting for Prose Hub", progress, ct)) { progress?.Report("Hub is up."); return; }
