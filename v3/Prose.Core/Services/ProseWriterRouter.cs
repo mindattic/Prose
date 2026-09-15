@@ -45,7 +45,7 @@ public class ProseWriterRouter(
     NarrativeSummaryService? narrativeSummary = null,
     WorldStateAtBeatService? worldStateAtBeat = null,
     ChapterSummaryService? chapterSummary = null,
-    OpenThreadsService? openThreads = null,
+    Obligations.NarrativeObligationService? obligations = null,
     SceneContextAssembler? sceneAssembler = null,
     ContinuityService? continuity = null,
     StoryScienceService? storyScience = null,
@@ -579,12 +579,15 @@ public class ProseWriterRouter(
                 log.LogDebug("[gate] ChapterSummaryService skipped (beatIndex=0, no prior chapters yet)");
         }
 
-        // Open threads: unresolved promises/plants/questions from prior beats.
+        // Open obligations (RFC 0013): what the story owes the reader — promises, plants, unnamed
+        // referents, questions — from every prior beat of the BOOK, ordered by urgency, with the
+        // plant/payoff pairs folded in. Replaces both the OPEN THREADS block and the separate
+        // PLANTED DETAILS block that BeatGeneratorService used to build.
         var openThreadsContext = context.OpenThreadsContext;
-        if (string.IsNullOrEmpty(openThreadsContext) && openThreads != null && context.NodeId != Guid.Empty)
+        if (string.IsNullOrEmpty(openThreadsContext) && obligations != null && context.NodeId != Guid.Empty)
         {
-            await TraceStageAsync(nameof(OpenThreadsService), async () =>
-                { openThreadsContext = await openThreads.BuildContextAsync(context.NodeId, ct); });
+            await TraceStageAsync(nameof(Obligations.NarrativeObligationService), async () =>
+                { openThreadsContext = await obligations.BuildBriefBlockAsync(context.NodeId, beatId == Guid.Empty ? null : beatId, beatIndex, totalBeats, ct); });
         }
 
         // Motifs in play (2026-08-28): recurring images from the BookMotifs ledger — the LLM
@@ -892,10 +895,12 @@ public class ProseWriterRouter(
         // or was unwired for a book. Mirror BeatGeneratorService's own computation (same
         // services, same non-blocking try/catch) so coverage logging measures the real content
         // length like every other entry in the table below.
+        // Plants ride inside the obligations block since RFC 0013; the coverage row reports the
+        // registry's own size so a book with hand-registered pairs still shows them counted.
         var plantBlockLen = 0;
         if (plantPayoffs != null && context.NodeId != Guid.Empty)
         {
-            try { plantBlockLen = (await plantPayoffs.BuildPlantContextAsync(context.NodeId, beatIndex, totalBeats, ct)).Length; }
+            try { plantBlockLen = (await plantPayoffs.GetByNodeAsync(context.NodeId, ct)).Count; }
             catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
         }
         var commandmentBlockLen = 0;
@@ -960,7 +965,7 @@ public class ProseWriterRouter(
                 new("WorldState",          IsApplicable: beatId != Guid.Empty,  IsActive: worldStateContext.Length > 0,                                       BlockSizeChars: worldStateContext.Length),
                 new("NarrativeSummary",    IsApplicable: nodeApplicable,    IsActive: narrativeSummaryContext.Length > 0,                                     BlockSizeChars: narrativeSummaryContext.Length),
                 new("ChapterSummary",      IsApplicable: nodeApplicable,    IsActive: chapterSummaryContext.Length > 0,                                       BlockSizeChars: chapterSummaryContext.Length),
-                new("OpenThreads",         IsApplicable: nodeApplicable,    IsActive: openThreadsContext.Length > 0,                                          BlockSizeChars: openThreadsContext.Length),
+                new("Obligations",         IsApplicable: nodeApplicable,    IsActive: openThreadsContext.Length > 0,                                          BlockSizeChars: openThreadsContext.Length),
                 new("MotifLedger",         IsApplicable: nodeApplicable,    IsActive: motifContext.Length > 0,                                                BlockSizeChars: motifContext.Length),
                 new("StoryStateLedger",    IsApplicable: nodeApplicable,    IsActive: plotEventsContext.Length > 0,                                           BlockSizeChars: plotEventsContext.Length),
                 new("SceneContextAssembler", IsApplicable: beatId != Guid.Empty, IsActive: xRayContext.Length > 0,                                            BlockSizeChars: xRayContext.Length),

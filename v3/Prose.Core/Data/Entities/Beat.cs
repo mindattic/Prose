@@ -253,6 +253,13 @@ public class Beat
     /// different = prose changed, re-extract. Never marks the beat Stale.</summary>
     public string? PlaceExtractedFromHash { get; set; }
 
+    /// <summary>Hash of the whitespace-collapsed, tag-stripped text when the narrative-obligation
+    /// extractor last scanned this beat (RFC 0013). Same gate pattern as
+    /// <see cref="EventSummaryHash"/>: equal = skip (free); different = prose changed, re-scan.
+    /// Collapsed whitespace so a Reflow (paragraph breaks only) never bills a scan. Never marks
+    /// the beat Stale.</summary>
+    public string? ObligationScanHash { get; set; }
+
     /// <summary>What is happening beneath the surface of this beat —
     /// foreshadowing, unspoken motivations, dramatic irony, hidden agendas.
     /// Visible to the prose writer LLM but never printed; it informs the

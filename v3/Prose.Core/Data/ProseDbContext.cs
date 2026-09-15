@@ -340,7 +340,9 @@ public class ProseDbContext : DbContext
     public DbSet<NodeKeyword>         NodeKeywords         => Set<NodeKeyword>();
     // Autonomous pipeline — chapter summaries + open threads + plot-state ledger.
     public DbSet<NodeChapterSummary>      NodeChapterSummaries      => Set<NodeChapterSummary>();
-    public DbSet<NodeOpenThread>          NodeOpenThreads           => Set<NodeOpenThread>();
+    // Narrative Obligation Ledger (RFC 0013) — replaces NodeOpenThreads.
+    public DbSet<NarrativeObligation>      NarrativeObligations      => Set<NarrativeObligation>();
+    public DbSet<NarrativeObligationEvent> NarrativeObligationEvents => Set<NarrativeObligationEvent>();
     public DbSet<BookPlotEvent>           BookPlotEvents            => Set<BookPlotEvent>();
     public DbSet<BookMotif>               BookMotifs                => Set<BookMotif>();
     public DbSet<NarrativeSummaryEntry>   NarrativeSummaryEntries   => Set<NarrativeSummaryEntry>();
@@ -883,6 +885,10 @@ public class ProseDbContext : DbContext
             e.HasIndex(x => x.NodeId);
             e.HasIndex(x => x.PlantBeatId);
             e.HasIndex(x => x.PayoffBeatId);
+            // RFC 0013 bridge: one ledger row per pair, at most.
+            e.HasOne(x => x.Obligation).WithMany()
+                .HasForeignKey(x => x.ObligationId).OnDelete(DeleteBehavior.NoAction);
+            e.HasIndex(x => x.ObligationId).IsUnique().HasFilter("[ObligationId] IS NOT NULL");
         });
 
         // ── Structural blueprints (StoryScope countermeasures) ───────────────
@@ -3061,15 +3067,53 @@ public class ProseDbContext : DbContext
                 .HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
         });
 
-        // ── NodeOpenThread ─────────────────────────────────────────────────
-        b.Entity<NodeOpenThread>(e =>
+        // ── NarrativeObligation (RFC 0013) ───────────────────────────────────
+        // Beat FKs are NoAction, like PlantPayoffs' — SQL Server refuses a second SET NULL path
+        // to Beats, and a promise whose origin beat is deleted must be CLEARED (then Withdrawn if
+        // nothing ever advanced it), never block the delete or vanish. See
+        // NodeWorkbenchService.ClearEdgeBeatBoundsAsync.
+        b.Entity<NarrativeObligation>(e =>
         {
             e.HasKey(x => x.Id);
-            e.Property(x => x.Category).HasMaxLength(50);
+            e.Property(x => x.Kind).HasMaxLength(32).IsRequired();
             e.Property(x => x.Description).HasMaxLength(500).IsRequired();
-            e.HasIndex(x => new { x.NodeId, x.IsResolved });
+            e.Property(x => x.Provenance).HasMaxLength(20).IsRequired();
+            e.Property(x => x.OriginQuote).HasMaxLength(400);
+            e.Property(x => x.OriginTextHash).HasMaxLength(80);
+            e.Property(x => x.TriggerCondition).HasMaxLength(300);
+            e.Property(x => x.DueByKind).HasMaxLength(16).IsRequired();
+            e.Property(x => x.State).HasMaxLength(16).IsRequired();
+            e.Property(x => x.ClosingQuote).HasMaxLength(400);
+            e.Property(x => x.ClosingTextHash).HasMaxLength(80);
+            e.Property(x => x.AuthorNote).HasMaxLength(1000);
+            e.Property(x => x.DroppedReason).HasMaxLength(64);
+            e.Property(x => x.DedupKey).HasMaxLength(40).IsRequired();
             e.HasOne(x => x.Node).WithMany()
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+            e.HasOne(x => x.OriginBeat).WithMany()
+                .HasForeignKey(x => x.OriginBeatId).OnDelete(DeleteBehavior.NoAction);
+            e.HasOne(x => x.ClosingBeat).WithMany()
+                .HasForeignKey(x => x.ClosingBeatId).OnDelete(DeleteBehavior.NoAction);
+            e.HasOne(x => x.Entity).WithMany()
+                .HasForeignKey(x => x.EntityId).OnDelete(DeleteBehavior.NoAction);
+            e.HasIndex(x => new { x.NodeId, x.State });
+            e.HasIndex(x => new { x.NodeId, x.DedupKey }).IsUnique();
+            e.HasIndex(x => x.OriginBeatId);
+            e.HasIndex(x => x.ClosingBeatId);
+        });
+
+        b.Entity<NarrativeObligationEvent>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Action).HasMaxLength(16).IsRequired();
+            e.Property(x => x.Quote).HasMaxLength(400);
+            e.Property(x => x.BeatTextHash).HasMaxLength(80);
+            e.Property(x => x.Actor).HasMaxLength(32).IsRequired();
+            e.Property(x => x.Note).HasMaxLength(1000);
+            e.HasOne(x => x.Obligation).WithMany()
+                .HasForeignKey(x => x.ObligationId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => new { x.ObligationId, x.CreatedAt });
+            e.HasIndex(x => x.BeatId);
         });
 
         // ── BookMotif ──────────────────────────────────────────────────────

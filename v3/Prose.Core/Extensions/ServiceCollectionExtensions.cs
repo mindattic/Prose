@@ -1220,10 +1220,14 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<TensionEscalationService>();
         services.AddSingleton<ReaderKnowledgeService>();
         services.AddSingleton<ChapterSummaryService>();
-        services.AddSingleton<OpenThreadsService>();
+        // Narrative Obligation Ledger (RFC 0013) — replaces OpenThreadsService. The extractor is
+        // its one LLM call; the service is hooked from NodeWorkbenchService.UpdateBeatTextAsync so
+        // every BeatWriteReason, not just Generation, registers the promises it makes.
+        services.AddSingleton<Prose.Core.Services.Obligations.NarrativeObligationExtractor>();
+        services.AddSingleton<Prose.Core.Services.Obligations.NarrativeObligationService>();
         services.AddSingleton<BookStateLedgerService>();
-        // Consolidates ReaderKnowledgeService/NarrativeSummaryService/OpenThreadsService/
-        // BookStateLedgerService's post-write extraction into one call — RFC 0009 §9.4 "item 1".
+        // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's
+        // post-write extraction into one call — RFC 0009 §9.4 "item 1".
         services.AddSingleton<BeatExtractionService>();
         services.AddSingleton<BeatPlaceService>();
         // Beat.StoryPosition — the authoritative story clock (author ruling 2026-09-04: time is

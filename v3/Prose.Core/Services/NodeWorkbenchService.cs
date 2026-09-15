@@ -75,7 +75,8 @@ public class NodeWorkbenchService
         LogicSweepService? logicSweep,
         ContinuityExtractionService? continuityExtraction,
         SettingsService? settings = null,
-        EditSessionService? editSession = null)
+        EditSessionService? editSession = null,
+        Obligations.NarrativeObligationService? obligations = null)
     {
         this.dbFactory = dbFactory;
         this.tts = tts;
@@ -89,6 +90,7 @@ public class NodeWorkbenchService
         this.blastRadius = blastRadius;
         this.logicSweep = logicSweep;
         this.continuityExtraction = continuityExtraction;
+        this.obligations = obligations;
     }
 
     private readonly PostBeatValidationService? postBeatValidator;
@@ -97,6 +99,7 @@ public class NodeWorkbenchService
     private readonly BlastRadiusService? blastRadius;
     private readonly LogicSweepService? logicSweep;
     private readonly ContinuityExtractionService? continuityExtraction;
+    private readonly Obligations.NarrativeObligationService? obligations;
 
     /// <summary>Call before every Beats.Remove/RemoveRange — Edge.ValidFromBeatId/
     /// ValidUntilBeatId and PlantPayoffs.PlantBeatId/PayoffBeatId are all NoAction (not SetNull;
@@ -127,6 +130,9 @@ public class NodeWorkbenchService
             .ExecuteUpdateAsync(s => s.SetProperty(p => p.PlantBeatId, (Guid?)null), ct);
         await db.PlantPayoffs.Where(p => p.PayoffBeatId != null && beatIds.Contains(p.PayoffBeatId.Value))
             .ExecuteUpdateAsync(s => s.SetProperty(p => p.PayoffBeatId, (Guid?)null), ct);
+        // RFC 0013: same posture for the obligation ledger — clear the anchor, withdraw only an
+        // open row nothing ever advanced, never delete.
+        await Obligations.NarrativeObligationService.ClearBeatReferencesAsync(db, beatIds, ct);
     }
 
     // ── Reads ────────────────────────────────────────────────────────────
@@ -461,6 +467,22 @@ public class NodeWorkbenchService
                 .ContinueWith(t => log.LogError(t.Exception, "ReExtractChapterIfChangedAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
         }
+
+        // Fire-and-forget: the narrative obligation ledger (RFC 0013). Runs for EVERY write reason
+        // — this is the door, so a hand splice or an import registers the promises it makes just
+        // as a Generation does; the old OpenThreads extraction only ever ran after Generation,
+        // which is how a hand-spliced BCODA opened debts nothing ever recorded. Hash-gated inside
+        // on the collapsed text, so a Reflow or a no-op re-save costs nothing. TagMaintenance and
+        // Plan writes carry no new prose and are skipped outright.
+        if (!deferAnalysis && obligations != null && bookNodeId.HasValue
+            && reason is not (BeatWriteReason.TagMaintenance or BeatWriteReason.Plan))
+        {
+            var bnId = bookNodeId.Value;
+            var actor = reason == BeatWriteReason.Generation ? ObligationActor.SystemExtract : ObligationActor.SystemRescan;
+            _ = Task.Run(() => obligations.ScanBeatAsync(bnId, beatId, strippedForAnalysis, actor, CancellationToken.None), CancellationToken.None)
+                .ContinueWith(t => log.LogError(t.Exception, "NarrativeObligationService.ScanBeatAsync background task failed"),
+                    TaskContinuationOptions.OnlyOnFaulted);
+        }
     }
 
     /// <summary>
@@ -565,6 +587,18 @@ public class NodeWorkbenchService
             _ = Task.Run(() => EntityMentionScanner.DeriveAndSaveMentionsAsync(dbFactory, beatId, trimmed, CancellationToken.None), CancellationToken.None)
                 .ContinueWith(t => log.LogError(t.Exception, "EntityMentionScanner.DeriveAndSaveMentionsAsync background task failed (batch)"),
                     TaskContinuationOptions.OnlyOnFaulted);
+
+            // RFC 0013: a batch edit registers its promises too (per beat — the ledger's running
+            // open list is what each scan reads, so order matters and there is no union shortcut).
+            if (obligations != null && thisBookNodeId.HasValue
+                && reason is not (BeatWriteReason.TagMaintenance or BeatWriteReason.Plan))
+            {
+                var bnId = thisBookNodeId.Value;
+                var stripped = BeatMarkup.StripEntityTags(trimmed);
+                _ = Task.Run(() => obligations.ScanBeatAsync(bnId, beatId, stripped, ObligationActor.SystemRescan, CancellationToken.None), CancellationToken.None)
+                    .ContinueWith(t => log.LogError(t.Exception, "NarrativeObligationService.ScanBeatAsync background task failed (batch)"),
+                        TaskContinuationOptions.OnlyOnFaulted);
+            }
         }
 
         if (touchedBeatIds.Count == 0) return;

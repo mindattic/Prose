@@ -118,6 +118,26 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
             SortKey          = await NextSortKeyAsync(db, nodeId, ct),
         };
         db.PlantPayoffs.Add(pp);
+
+        // RFC 0013: a hand-registered pair IS an obligation of kind "plant" — one row, author
+        // provenance, locked, so the trial balance and the Brief see it beside extracted promises.
+        var bookNodeId = await BookRootAsync(db, nodeId, ct);
+        var ob = new NarrativeObligation
+        {
+            NodeId = bookNodeId, Kind = ObligationKind.Plant,
+            Description = $"{pp.PlantDescription} → {pp.PayoffDescription}",
+            Provenance = ClaimProvenance.Authored, AuthorLocked = true,
+            OriginBeatId = plantBeatId, ClosingBeatId = payoffBeatId,
+            State = payoffBeatId != null ? ObligationState.Closed : ObligationState.Open,
+            DueByKind = ObligationDueKind.BookEnd,
+            DedupKey = Obligations.NarrativeObligationService.DedupKey(bookNodeId, ObligationKind.Plant, $"{pp.PlantDescription} → {pp.PayoffDescription}"),
+        };
+        if (!await db.NarrativeObligations.AnyAsync(o => o.NodeId == bookNodeId && o.DedupKey == ob.DedupKey, ct))
+        {
+            db.NarrativeObligations.Add(ob);
+            db.NarrativeObligationEvents.Add(new NarrativeObligationEvent { ObligationId = ob.Id, Action = ObligationEventAction.Open, BeatId = plantBeatId, Actor = ObligationActor.AuthorMcp, Note = "registered plant/payoff pair" });
+            pp.ObligationId = ob.Id;
+        }
         await db.SaveChangesAsync(ct);
         return pp;
     }
@@ -129,6 +149,16 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
             ?? throw new InvalidOperationException($"PlantPayoff {id} not found.");
         pp.PlantBeatId = beatId;
         pp.UpdatedAt   = DateTime.UtcNow;
+        if (pp.ObligationId is Guid obId)
+        {
+            var ob = await db.NarrativeObligations.FirstOrDefaultAsync(o => o.Id == obId, ct);
+            if (ob != null)
+            {
+                var hash = await db.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.TextHash).FirstOrDefaultAsync(ct);
+                ob.OriginBeatId = beatId; ob.OriginTextHash = hash; ob.UpdatedAt = DateTime.UtcNow;
+                db.NarrativeObligationEvents.Add(new NarrativeObligationEvent { ObligationId = ob.Id, Action = ObligationEventAction.Reanchor, BeatId = beatId, BeatTextHash = hash, Actor = ObligationActor.AuthorMcp, Note = "plant beat linked" });
+            }
+        }
         await db.SaveChangesAsync(ct);
     }
 
@@ -139,7 +169,30 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
             ?? throw new InvalidOperationException($"PlantPayoff {id} not found.");
         pp.PayoffBeatId = beatId;
         pp.UpdatedAt    = DateTime.UtcNow;
+        if (pp.ObligationId is Guid obId)
+        {
+            var ob = await db.NarrativeObligations.FirstOrDefaultAsync(o => o.Id == obId, ct);
+            if (ob != null)
+            {
+                var hash = await db.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.TextHash).FirstOrDefaultAsync(ct);
+                ob.ClosingBeatId = beatId; ob.ClosingTextHash = hash; ob.State = ObligationState.Closed; ob.UpdatedAt = DateTime.UtcNow;
+                db.NarrativeObligationEvents.Add(new NarrativeObligationEvent { ObligationId = ob.Id, Action = ObligationEventAction.Close, BeatId = beatId, BeatTextHash = hash, Actor = ObligationActor.AuthorMcp, Note = "payoff beat linked" });
+            }
+        }
         await db.SaveChangesAsync(ct);
+    }
+
+    /// <summary>Plants may be registered on a chapter node; the ledger is book-scoped.</summary>
+    private static async Task<Guid> BookRootAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
+    {
+        var walk = nodeId;
+        for (var depth = 0; depth < 10; depth++)
+        {
+            var parent = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == walk).Select(n => n.ParentNodeId).FirstOrDefaultAsync(ct);
+            if (parent == null) return walk;
+            walk = parent.Value;
+        }
+        return walk;
     }
 
     public async Task SetTransparencyAsync(Guid id, bool isTransparent, string? note, CancellationToken ct = default)

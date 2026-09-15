@@ -87,15 +87,9 @@ public class BeatGeneratorService
             ? await universalFacts.BuildWorldFactsBlockAsync(ct)
             : "";
 
-        // Plant/payoff context: seeded details awaiting payoff, or registered payoffs
-        // to honour in this beat. Injected when NodeId is set + PlantPayoffService
-        // is wired. Non-blocking — silently empty on first-write or cold starts.
-        var plantBlock = "";
-        if (plantPayoffs != null && context.NodeId != Guid.Empty)
-        {
-            try { plantBlock = await plantPayoffs.BuildPlantContextAsync(context.NodeId, context.BeatIndex, context.TotalBeats, ct); }
-            catch (Exception ex) when (ex is not OperationCanceledException) { /* non-blocking */ }
-        }
+        // Plant/payoff context now arrives inside context.OpenThreadsContext — the RFC 0013
+        // obligations block ProseWriterRouter builds — so plants and extracted promises are one
+        // urgency-ordered list instead of two blocks describing the same debts.
 
         // Book commandment context: gateway (null PreviousNodeId) or sequel
         // commandments, injected as writing goals for this node.
@@ -210,7 +204,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{plantBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{readabilityBlock}{readerProxyBlock}{continuityViolationBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{motifBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{readabilityBlock}{readerProxyBlock}{continuityViolationBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{motifBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -1054,8 +1048,10 @@ public record BeatContext
 
     /// <summary>Open threads from OpenThreadsService.
     /// Unresolved promises, plants, and questions detected in earlier beats —
-    /// the generator should address or advance at least one per beat.
-    /// Empty when OpenThreadsService is not wired or no open threads exist.</summary>
+    /// the generator should address or advance at least one per beat. Since RFC 0013 this is the
+    /// "[OPEN OBLIGATIONS]" block from NarrativeObligationService.BuildBriefBlockAsync — promises,
+    /// plants, unnamed referents and questions from every prior beat of the book, split into
+    /// DUE NOW / NOT YET. Empty when the ledger is not wired or nothing is outstanding.</summary>
     public string OpenThreadsContext { get; init; } = "";
 
     /// <summary>"MOTIFS IN PLAY" block from MotifLedgerService — recurring images already

@@ -572,15 +572,9 @@ public class LogicSweepService(
     /// misattribution like this one.</summary>
     internal static bool QuotedEvidenceAppearsInBeat(string evidence, string beatText)
     {
-        var doubleQuoted = Regex.Matches(evidence, "\"([^\"]{8,})\"").Select(m => m.Groups[1].Value);
-        var singleQuoted = Regex.Matches(evidence, @"(?<!\w)'([^']{8,})'(?!\w)").Select(m => m.Groups[1].Value);
-        var quotes = doubleQuoted.Concat(singleQuoted)
-            .Select(q => Regex.Replace(q, @"\s+", " ").Trim())
-            .Where(q => q.Length > 0)
-            .ToList();
+        var quotes = QuoteGrounding.ExtractQuotedSpans(evidence);
         if (quotes.Count == 0) return true;
-        var normalizedBeat = Regex.Replace(beatText, @"\s+", " ");
-        return quotes.Any(q => normalizedBeat.Contains(q, StringComparison.OrdinalIgnoreCase));
+        return quotes.Any(q => QuoteGrounding.Contains(beatText, q));
     }
 
     // ── The six dimensions ────────────────────────────────────────────────────────

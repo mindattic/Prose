@@ -32,32 +32,8 @@ public class NodeChapterSummary
     public DateTime UpdatedAt      { get; set; } = DateTime.UtcNow;
 }
 
-/// <summary>
-/// An open narrative thread — a setup, promise, or unresolved question introduced
-/// in prose that the system auto-detected. IsResolved flips when a later beat
-/// closes the loop. Injected into BeatContext so the generator knows what it
-/// must eventually pay off.
-/// </summary>
-public class NodeOpenThread
-{
-    public Guid     Id              { get; set; }
-    public Guid     NodeId        { get; set; }
-    public Node?  Node          { get; set; }
-
-    /// <summary>Beat where this thread was first detected. Null = seeded manually.</summary>
-    public Guid?    OriginBeatId    { get; set; }
-
-    /// <summary>Human-readable description of the open thread.</summary>
-    public string   Description     { get; set; } = "";
-
-    /// <summary>Category hint: "promise" | "plant" | "question" | "wound" | "foreshadow".</summary>
-    public string   Category        { get; set; } = "promise";
-
-    public bool     IsResolved      { get; set; }
-
-    /// <summary>Beat where this thread was marked resolved. Null = still open.</summary>
-    public Guid?    ResolvedBeatId  { get; set; }
-
-    public DateTime CreatedAt       { get; set; } = DateTime.UtcNow;
-    public DateTime UpdatedAt       { get; set; } = DateTime.UtcNow;
-}
+// NodeOpenThread lived here until 2026-09-15. It is replaced by NarrativeObligation (RFC 0013):
+// same idea — a promise the prose made that the book still owes — with the verbatim quote, the
+// due point, the entity and the author's decision that the old rows never carried. The
+// AddNarrativeObligations migration moves every NodeOpenThreads row across as provenance
+// "inferred" and drops the table.

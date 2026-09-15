@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**282 tools** across **49 tool families.**
+**293 tools** across **50 tool families.**
 
 ## Families
 
@@ -47,6 +47,7 @@
 | [Narrative Science](#narrative-science) | 1 |
 | [Node](#node) | 37 |
 | [Noun Consistency](#noun-consistency) | 3 |
+| [Obligation](#obligation) | 11 |
 | [One Shot Generation](#one-shot-generation) | 1 |
 | [Operator Key](#operator-key) | 5 |
 | [Planning](#planning) | 3 |
@@ -1631,6 +1632,97 @@ List all registered deprecated noun rules. Filter by universeSlug ('glmz' or 'fa
 Scan a node's prose beats for deprecated or renamed noun references. Returns ok:true when clean; ok:false with a violations list (beatNumber, deprecatedName, canonicalName, snippet) when stale names are found. Register rules first with add_deprecated_name.
 
 - `nodeIdOrSlug` (string, required) — Node slug or GUID to scan.
+
+## Obligation
+
+<sub>`ObligationTools`</sub>
+
+### `accept_obligation`
+
+Accept an extracted obligation as-is: locks it so no automated rescan can withdraw, re-anchor or re-state it.
+
+- `obligationId` (string, required) — Obligation id (GUID).
+
+### `close_obligation`
+
+Pay an obligation: name the beat that pays it and quote the sentence verbatim. Refused with quote_not_found if the quote is not in that beat's text — closure is verified against the artifact, never asserted.
+
+- `obligationId` (string, required) — Obligation id (GUID).
+- `beatId` (string, required) — Closing beat GUID.
+- `quote` (string, required) — Verbatim quote from the closing beat (≥12 chars).
+- `note` (string, optional) — Optional note.
+
+### `defer_obligation`
+
+Defer an obligation to a later due point — 'I'll pay this in Ch12' is defer to chapter:12; a deliberate slow burn is defer to book-end. A note is required. Deferred rows are never flagged before their new due point.
+
+- `obligationId` (string, required) — Obligation id (GUID).
+- `note` (string, required) — Why, in your words.
+- `due` (string, optional) — chapter:N | beats:N | book-end
+
+### `drop_obligation`
+
+Intentionally abandon an obligation. reason: background-texture | pov-limited | genre-convention | intentional-mystery | series-deferred | false-extraction | duplicate-of:<id>. A note in your words is required. 'false-extraction' and 'background-texture' feed the extractor's stop-list for this universe.
+
+- `obligationId` (string, required) — Obligation id (GUID).
+- `reason` (string, required) — Dropped reason (see description).
+- `note` (string, required) — Why, in your words.
+
+### `get_obligation`
+
+One obligation with its full journal (every open/advance/close/drop/defer/withdraw event, who did it, and the quote that justified it).
+
+- `obligationId` (string, required) — Obligation id (GUID).
+
+### `link_obligation_entity`
+
+Point an obligation at the entity it is about (e.g. after naming an '(unnamed) girl behind the curtain' stub, or merging it into a canon character).
+
+- `obligationId` (string, required) — Obligation id (GUID).
+- `entityId` (string, required) — Entity id (GUID).
+
+### `list_obligations`
+
+List the narrative obligations of a book — every promise the prose has made that the ledger tracks (RFC 0013). Each row: id, kind (promise|plant|question|wound|foreshadow|introduced-referent|unexplained-presence), description, state (Open|Advanced|Closed|Dropped|Deferred), provenance (authored|observed|inferred), origin chapter/beat and the verbatim quote that made the promise, due point, overdue flag, and whether the author has locked it. Filters: state, kind, overdueOnly, chapter (origin chapter ordinal). Accepts a book or chapter node id/slug/code — always reports the whole book.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode of the book (a chapter resolves to its book).
+- `state` (string, optional) — Optional state filter: Open, Advanced, Closed, Dropped, Deferred.
+- `kind` (string, optional) — Optional kind filter.
+- `overdueOnly` (bool, optional) — Only rows past their due point with no author decision.
+- `chapter` (int, optional) — Only rows whose origin is in this chapter ordinal (1-based).
+
+### `obligation_trial_balance`
+
+The chapter trial balance (RFC 0013): opened − closed − dropped − deferred = carried forward, plus the rows the hard gate reads — obligations past their due point at the end of this chapter with no author decision. Also lists what this chapter opened and closed, closures whose quote is no longer on the page, and rows whose origin beat was deleted. balanced=false means the chapter cannot close until each overdue row is closed, dropped or deferred. could_not_look=true means the ledger is empty for this book — an empty ledger FAILS, it does not pass; run a rescan first. Omit chapter for the whole book.
+
+- `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode of the book.
+- `chapter` (int, optional) — Chapter ordinal (1-based). Omit for the whole book.
+
+### `open_obligation`
+
+Declare an obligation yourself (provenance authored, locked): a promise the outline or you intend the book to keep. Optionally anchor it to a beat with the verbatim quote that makes the promise — refused if the quote is not in that beat's text. due: 'chapter:7', 'beats:12', or 'book-end' (default).
+
+- `nodeIdOrSlug` (string, required) — Book node id/slug/code.
+- `kind` (string, required) — promise | plant | question | wound | foreshadow | introduced-referent | unexplained-presence
+- `description` (string, required) — What is owed, one line.
+- `beatId` (string, optional) — Origin beat GUID (optional).
+- `quote` (string, optional) — Verbatim quote from that beat (optional; ≥12 chars).
+- `trigger` (string, optional) — Narrative condition under which paying this becomes natural (optional).
+- `due` (string, optional) — chapter:N | beats:N | book-end
+
+### `reopen_obligation`
+
+Reopen a closed, dropped or deferred obligation (author decision; locks the row).
+
+- `obligationId` (string, required) — Obligation id (GUID).
+- `note` (string, optional) — Optional note.
+
+### `set_obligation_due`
+
+Change an obligation's due point without changing its state. due: chapter:N | beats:N | book-end.
+
+- `obligationId` (string, required) — Obligation id (GUID).
+- `due` (string, required) — chapter:N | beats:N | book-end
 
 ## One Shot Generation
 

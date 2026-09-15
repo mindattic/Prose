@@ -39,8 +39,14 @@ public class PlantPayoff
     public DateTime CreatedAt  { get; set; } = DateTime.UtcNow;
     public DateTime UpdatedAt  { get; set; } = DateTime.UtcNow;
 
+    /// <summary>The ledger row this pair annotates (RFC 0013). A plant pair IS an obligation of
+    /// kind <c>plant</c>; this back-link lets the trial balance and the Brief treat hand-curated
+    /// pairs and extracted promises as one population.</summary>
+    public Guid? ObligationId { get; set; }
+
     // Navigation
     public Node? Node     { get; set; }
     public Beat?   PlantBeat  { get; set; }
     public Beat?   PayoffBeat { get; set; }
+    public NarrativeObligation? Obligation { get; set; }
 }

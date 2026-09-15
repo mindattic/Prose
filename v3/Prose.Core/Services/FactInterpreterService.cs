@@ -372,54 +372,10 @@ public class FactInterpreterService
         return null;
     }
 
-    /// <summary>
-    /// Insert a minimal Entity row + the matching subtype row for the named
-    /// type. Just enough to be a valid foreign-key target; details get filled
-    /// in by later writers (the dictionary editor, an LLM enrichment pass, etc.).
-    /// </summary>
-    private async Task<Guid> CreateStubAsync(
+    /// <summary>Stub creation lives in <see cref="EntityStubFactory"/> (shared with the
+    /// narrative-obligation extractor since 2026-09-15). UniverseId is left for the ambient-scope
+    /// fill on SaveChanges, exactly as this method always did.</summary>
+    private static Task<Guid> CreateStubAsync(
         ProseDbContext db, string name, string entityType, string? description, string sourceTag, CancellationToken ct)
-    {
-        var id = Guid.CreateVersion7();
-        var slug = UniverseGraphService.Slugify(name);
-        // Disambiguate against any stale matching slug
-        if (await db.Entities.AnyAsync(e => e.EntityType == entityType && e.Slug == slug, ct))
-            slug = $"{slug}-{id:N}";
-
-        db.Entities.Add(new Entity
-        {
-            Id          = id,
-            EntityType  = entityType,
-            Name        = name,
-            Slug        = slug,
-            Status      = "stub",
-            Description = description,
-            CreatedAt   = DateTime.UtcNow,
-            ModifiedAt  = DateTime.UtcNow,
-        });
-
-        // Add a matching subtype row when one is known. Each subtype has its
-        // own PK = Id; we just need Id + Name (Slug column was added via the
-        // schema-rollout SQL ALTER and is nullable, so the EF classes don't
-        // expose it as a property — the stub just inherits NULL slug, which
-        // can be backfilled later by the canonical importer or a UI edit).
-        switch (entityType)
-        {
-            case "character":      db.Characters     .Add(new Character     { Id = id, Name = name }); break;
-            case "place":          db.Places         .Add(new Place         { Id = id, Name = name }); break;
-            case "faction":        db.Factions       .Add(new Faction       { Id = id, Name = name }); break;
-            case "corponation":    db.Corponations   .Add(new Corponation   { Id = id, Name = name }); break;
-            case "subsidiary":     db.Subsidiaries   .Add(new Subsidiary    { Id = id, Name = name }); break;
-            case "automaton":      db.Automata       .Add(new Automaton     { Id = id, Name = name }); break;
-            case "weapon":         db.Weapons        .Add(new Weapon        { Id = id, Name = name }); break;
-            case "equipment":      db.EquipmentItems .Add(new Equipment     { Id = id, Name = name }); break;
-            case "cyberware":      db.CyberwareItems .Add(new Cyberware     { Id = id, Name = name }); break;
-            case "apparel":        db.Apparels       .Add(new Apparel       { Id = id, Name = name }); break;
-            case "ammunition":     db.Ammunitions    .Add(new Ammunition    { Id = id, Name = name }); break;
-            // Other types either lack a strict subtype table or use generic
-            // Entity rows directly; the universal Entity insert above is enough.
-        }
-        await db.SaveChangesAsync(ct);
-        return id;
-    }
+        => EntityStubFactory.CreateStubAsync(db, Guid.Empty, name, entityType, description, ct: ct);
 }

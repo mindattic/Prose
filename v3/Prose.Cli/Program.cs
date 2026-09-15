@@ -485,6 +485,14 @@ if (args.Contains("--detect-mojibake"))
     return;
 }
 
+// Narrative Obligation Ledger (RFC 0013) — what the story owes the reader.
+//   prose --obligations list|trial-balance|history|open|close|drop|defer|reopen|due|accept|rescan …
+if (args.Contains("--obligations"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ObligationCli", args);
+    return;
+}
+
 if (args.Contains("--repair"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RepairCli", args);

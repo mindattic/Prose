@@ -4,14 +4,18 @@ using Prose.Core.Interfaces;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// One consolidated post-write extraction call, replacing five separate per-beat Haiku calls
-/// that were each asking the model to look at the same just-written beat and pull out a
-/// different slice of structured fact:
+/// One consolidated post-write extraction call, replacing separate per-beat Haiku calls that
+/// were each asking the model to look at the same just-written beat and pull out a different
+/// slice of structured fact:
 ///   - ReaderKnowledgeService.ExtractAsync        (reader-knowledge revelations)
 ///   - NarrativeSummaryService.SummarizeSceneAsync (rolling scene summary)
-///   - OpenThreadsService.DetectAndRegisterAsync   (new setups/promises)
-///   - OpenThreadsService.MarkResolvedAsync        (which open threads this beat closed)
 ///   - BookStateLedgerService.ExtractAndRecordAsync (arc-level plot-state transitions)
+///
+/// The NEW-THREADS / RESOLVED-THREADS slices moved out on 2026-09-15 (RFC 0013): they only ever
+/// ran here, after Generation, so a hand-spliced or imported beat never registered its promises.
+/// Promise extraction now runs from the beat-write door for every BeatWriteReason
+/// (NarrativeObligationService.ScanBeatAsync), with a verbatim-quote gate this loose
+/// eight-lines-of-free-text contract never had.
 ///
 /// This was RFC 0009 §9.4's "item 1" — deliberately deferred in the 2026-08-13 cost-reduction
 /// pass until the safer audit-side cuts (items 2-6) had been verified. Implemented 2026-08-13
@@ -29,7 +33,6 @@ public class BeatExtractionService(
     ILlmService llm,
     ReaderKnowledgeService readerKnowledge,
     NarrativeSummaryService narrativeSummary,
-    OpenThreadsService openThreads,
     BookStateLedgerService bookStateLedger,
     ILogger<BeatExtractionService> log,
     BeatPlaceService? beatPlace = null,
@@ -37,15 +40,13 @@ public class BeatExtractionService(
 {
     private const string ReaderFactsHeader   = "=== READER-FACTS ===";
     private const string SceneSummaryHeader  = "=== SCENE-SUMMARY ===";
-    private const string NewThreadsHeader    = "=== NEW-THREADS ===";
-    private const string ResolvedHeader      = "=== RESOLVED-THREADS ===";
     private const string PlotEventsHeader    = "=== PLOT-EVENTS ===";
     private const string SceneLocationHeader = "=== SCENE-LOCATION ===";
     private const string MotifsHeader        = "=== MOTIFS ===";
 
     private static readonly string System = $"""
-        You are a story continuity editor. Read the beat of prose below ONCE and extract seven
-        different kinds of structured fact from it. Output exactly seven sections, in this order,
+        You are a story continuity editor. Read the beat of prose below ONCE and extract five
+        different kinds of structured fact from it. Output exactly five sections, in this order,
         each starting with its own header line exactly as shown, and "NONE" under a section (or
         for SCENE-SUMMARY, an empty line) if that section has nothing to report.
 
@@ -58,16 +59,6 @@ public class BeatExtractionService(
         {SceneSummaryHeader}
         Compress this beat into exactly 3-4 sentences: what happened, to whom, what changed, what
         tension remains. Specific — names, consequences, emotional state. No editorializing.
-
-        {NewThreadsHeader}
-        Up to 8 NEW setups, promises, unresolved questions, wounds, or foreshadowing introduced in
-        THIS beat that a reader will expect addressed later. Do not list things already resolved
-        within this same excerpt. One per line, max 120 chars each.
-
-        {ResolvedHeader}
-        Given the OPEN THREADS list below (numbered), output ONLY the 1-based numbers of threads
-        that are fully resolved (closed, paid off, definitively answered) by this beat. One number
-        per line.
 
         {PlotEventsHeader}
         Given the CURRENT PLOT STATE below (already recorded — do not repeat), list ONLY NEW
@@ -108,11 +99,9 @@ public class BeatExtractionService(
     {
         if (string.IsNullOrWhiteSpace(prose) || nodeId == Guid.Empty) return;
 
-        List<Data.Entities.NodeOpenThread> openList;
         Dictionary<string, Data.Entities.BookPlotEvent> existingState;
         try
         {
-            openList     = await openThreads.GetOpenThreadsAsync(nodeId, ct);
             existingState = await bookStateLedger.GetCurrentStateAsync(nodeId, ct);
         }
         catch (Exception ex)
@@ -121,9 +110,6 @@ public class BeatExtractionService(
             return;
         }
 
-        var threadListBlock = openList.Count == 0
-            ? "None."
-            : string.Join("\n", openList.Select((t, i) => $"{i + 1}. {t.Description}"));
         var stateBlock = existingState.Count == 0
             ? "None yet."
             : string.Join("\n", existingState.Values
@@ -131,9 +117,6 @@ public class BeatExtractionService(
                 .Select(e => $"  {e.StateType}|{e.StateKey}|{e.NewValue}: {e.Label}"));
 
         var user = $"""
-            OPEN THREADS (numbered, for RESOLVED-THREADS):
-            {threadListBlock}
-
             CURRENT PLOT STATE (for PLOT-EVENTS — do not repeat these):
             {stateBlock}
 
@@ -144,7 +127,7 @@ public class BeatExtractionService(
         string raw;
         try
         {
-            raw = await llm.GenerateAsync(System, user, temperature: 0.15, maxTokens: 1100, model: LlmModels.Haiku, ct: ct);
+            raw = await llm.GenerateAsync(System, user, temperature: 0.15, maxTokens: 900, model: LlmModels.Haiku, ct: ct);
         }
         catch (Exception ex)
         {
@@ -174,29 +157,6 @@ public class BeatExtractionService(
         {
             try { await narrativeSummary.PersistSummaryAsync(summaryBlock.Trim(), nodeId, beatId == Guid.Empty ? null : beatId, ct); }
             catch (Exception ex) { log.LogWarning(ex, "BeatExtractionService: scene-summary persist failed for beat {BeatId}", beatId); }
-        }
-
-        if (sections.TryGetValue(NewThreadsHeader, out var newThreadsBlock) && beatId != Guid.Empty)
-        {
-            var lines = newThreadsBlock.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-                .Where(l => l.Length > 5 && !l.Equals("NONE", StringComparison.OrdinalIgnoreCase))
-                .Take(8)
-                .ToList();
-            if (lines.Count > 0)
-            {
-                try { await openThreads.PersistNewThreadsAsync(lines, nodeId, beatId, ct); }
-                catch (Exception ex) { log.LogWarning(ex, "BeatExtractionService: new-threads persist failed for beat {BeatId}", beatId); }
-            }
-        }
-
-        if (sections.TryGetValue(ResolvedHeader, out var resolvedBlock) && openList.Count > 0 && beatId != Guid.Empty)
-        {
-            var resolvedIds = OpenThreadsService.ParseResolvedNumbers(resolvedBlock, openList);
-            if (resolvedIds.Count > 0)
-            {
-                try { await openThreads.PersistResolutionsAsync(resolvedIds, beatId, ct); }
-                catch (Exception ex) { log.LogWarning(ex, "BeatExtractionService: resolved-threads persist failed for beat {BeatId}", beatId); }
-            }
         }
 
         if (sections.TryGetValue(SceneLocationHeader, out var locationBlock) && beatPlace != null && beatId != Guid.Empty)
@@ -237,12 +197,12 @@ public class BeatExtractionService(
         }
     }
 
-    /// <summary>Splits the model's response on the seven known header lines. Tolerant of a
+    /// <summary>Splits the model's response on the five known header lines. Tolerant of a
     /// missing section (older/degraded response) — callers TryGetValue and skip what's absent
     /// rather than failing the whole extraction over one missing header.</summary>
     private static Dictionary<string, string> SplitSections(string raw)
     {
-        var headers = new[] { ReaderFactsHeader, SceneSummaryHeader, NewThreadsHeader, ResolvedHeader, PlotEventsHeader, SceneLocationHeader, MotifsHeader };
+        var headers = new[] { ReaderFactsHeader, SceneSummaryHeader, PlotEventsHeader, SceneLocationHeader, MotifsHeader };
         var result = new Dictionary<string, string>();
         var positions = headers
             .Select(h => (Header: h, Index: raw.IndexOf(h, StringComparison.Ordinal)))
