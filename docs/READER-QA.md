@@ -121,6 +121,16 @@ key on "genuine"/"genuinely": the arbiter uses those words to mean *the text rea
 does under-establish this*, which is a confirmation. If a real finding is ever
 suppressed, the phrase that did it is in one of those two lists.
 
+**What "intentional" now means (2026-09-15, RFC 0013).** Demoting a self-declared mystery
+kept it out of the findings inbox — and out of every other record too, which is how an
+unresolved setup in BCODA Ch1 stayed invisible for 475 beats. Whether a mystery is
+deliberate is an *author* decision, recorded on the
+[Narrative Obligation Ledger](rfc/0013-narrative-obligation-ledger.md) as a `Deferred` row or a
+`Drop` with reason `intentional-mystery` — never inferred from the prose's own language.
+Demoted `intentional-ambiguity` items should therefore be opened as `question` obligations
+so the chapter trial balance can age them; the demotion guard above still keeps them out
+of the Reader-Proxy report.
+
 **Known false-positive source, not yet fixed:** the probe reads each chapter cold with
 a recap of only the previous three chapters, and the arbiter judges against that
 chapter's text alone. So a term established early and paid off late (Cacophony,

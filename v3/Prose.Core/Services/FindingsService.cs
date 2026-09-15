@@ -16,7 +16,11 @@ namespace Prose.Core.Services;
 // services independently parsed the same CRAFT.md §8 rules, and the checklist's per-beat,
 // hash-cached implementation is the more complete one. No historical backlog existed under
 // CraftAudit at the time of the merge, so the value was removed rather than kept for history.
-public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, SemanticDrift, StructuralFailure, Liberty, Causality, Interpersonal, AffectBehavior, Xray, BookAudit, StoryScope, Craft, EntityDrift, Other }
+// NarrativeObligation (2026-09-15, RFC 0013): a promise the prose made that is past due with no
+// author decision, a payoff with no origin, a closure whose quote is no longer on the page — the
+// obligation reconciler's own category, so its delete-then-recreate cycle never touches another
+// instrument's rows and the publish gate can count it by name instead of by summary prefix alone.
+public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, SemanticDrift, StructuralFailure, Liberty, Causality, Interpersonal, AffectBehavior, Xray, BookAudit, StoryScope, Craft, EntityDrift, Other, NarrativeObligation }
 public enum FindingSeverity { Low, Medium, High }
 public enum FindingStatus   { New, Triaged, Applied, Dismissed }
 

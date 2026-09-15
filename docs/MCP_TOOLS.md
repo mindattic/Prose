@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**293 tools** across **50 tool families.**
+**295 tools** across **50 tool families.**
 
 ## Families
 
@@ -47,7 +47,7 @@
 | [Narrative Science](#narrative-science) | 1 |
 | [Node](#node) | 37 |
 | [Noun Consistency](#noun-consistency) | 3 |
-| [Obligation](#obligation) | 11 |
+| [Obligation](#obligation) | 13 |
 | [One Shot Generation](#one-shot-generation) | 1 |
 | [Operator Key](#operator-key) | 5 |
 | [Planning](#planning) | 3 |
@@ -1674,6 +1674,13 @@ One obligation with its full journal (every open/advance/close/drop/defer/withdr
 
 - `obligationId` (string, required) — Obligation id (GUID).
 
+### `ground_entity_records`
+
+Ground entity records in prose (RFC 0013): decompose every character/place/faction record tagged in the book into atomic claims and check each against the beats with a quote-gated entailment call. Unentailed/contradicted claims are filed under EntityDrift (node:{slug}#recordground) and matching non-authored ledger claims are quarantined to 'inferred'. The record text is never edited — you accept or strike. Optional entity name filter. Costs a few cents per entity.
+
+- `nodeIdOrSlug` (string, required) — Book node id/slug/code.
+- `entityName` (string, optional) — Only entities whose name contains this (optional).
+
 ### `link_obligation_entity`
 
 Point an obligation at the entity it is about (e.g. after naming an '(unnamed) girl behind the curtain' stub, or merging it into a canon character).
@@ -1709,6 +1716,13 @@ Declare an obligation yourself (provenance authored, locked): a promise the outl
 - `quote` (string, optional) — Verbatim quote from that beat (optional; ≥12 chars).
 - `trigger` (string, optional) — Narrative condition under which paying this becomes natural (optional).
 - `due` (string, optional) — chapter:N | beats:N | book-end
+
+### `reconcile_obligations`
+
+Run the obligation reconciliation instrument on a book (RFC 0013): six free deterministic rules over the ledger — overdue_open, open_at_end, stale_closure, dangling_beat, unplanted_payoff, deferred_expired — filed as NarrativeObligation findings under node:{slug}#obligations, plus a health snapshot. deep=true first runs the paid resurfacing judge (one Haiku call per open obligation, quote-gated, cached by candidate text) so payoffs the extractor missed are closed before the balance is struck. Reports 'examined N obligations over M beats'; could_not_look=true means the ledger is empty — rescan first.
+
+- `nodeIdOrSlug` (string, required) — Book node id/slug/code.
+- `deep` (bool, optional) — Also run the resurfacing judge (costs cents).
 
 ### `reopen_obligation`
 

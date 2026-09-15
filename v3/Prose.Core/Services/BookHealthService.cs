@@ -143,6 +143,11 @@ public class BookHealthService(
         checks.Add(new PublishReadinessCheck("Reader-Proxy QA High/BLOCKER = 0", readerBad == 0,
             readerBad == 0 ? "clean" : $"{readerBad} open High-severity Reader-Proxy QA finding(s)"));
 
+        // 6. Obligation ledger balanced (RFC 0013 / LOGIC.md §9 item 6): every beat scanned, and
+        // zero obligations past due without an author decision. A book whose ledger has no rows
+        // FAILS — an empty ledger is "could not look", never "nothing owed".
+        checks.Add(await ObligationLedgerCheckAsync(db, nodeId, ct));
+
         return new PublishReadinessReport(nodeId, slug, checks.All(c => c.Pass), checks);
     }
 
@@ -164,6 +169,30 @@ public class BookHealthService(
         if (tunedReadFindings > 0) parts.Add($"{tunedReadFindings} open tuned-read contradiction(s)");
         return new PublishReadinessCheck("story-ledger CONTRADICTED = 0", parts.Count == 0,
             parts.Count == 0 ? "clean" : string.Join("; ", parts));
+    }
+
+    /// <summary>Check 6. Reads the ledger directly rather than the findings inbox so a book that
+    /// was never reconciled still fails honestly.</summary>
+    private static async Task<PublishReadinessCheck> ObligationLedgerCheckAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
+    {
+        const string name = "obligation ledger balanced";
+        var clock = await Obligations.NarrativeObligationService.LoadClockAsync(db, nodeId, ct);
+        if (clock.BeatCount == 0) return new PublishReadinessCheck(name, false, "no beats");
+
+        var beatIds = clock.Beats.Keys.ToList();
+        var scanned = await db.Beats.AsNoTracking().CountAsync(b => beatIds.Contains(b.Id) && b.ObligationScanHash != null, ct);
+        var rows = await db.NarrativeObligations.AsNoTracking().Where(o => o.NodeId == nodeId && o.State != Data.Entities.ObligationState.Withdrawn).ToListAsync(ct);
+        if (rows.Count == 0 || scanned == 0)
+            return new PublishReadinessCheck(name, false, $"COULD NOT LOOK — ledger empty (scan coverage {scanned}/{clock.BeatCount}); run prose --obligations rescan --slug <slug>");
+
+        var overdue = rows.Count(o => Data.Entities.ObligationState.IsOutstanding(o.State) && !o.AuthorLocked
+                                      && Obligations.NarrativeObligationService.IsPastDue(o, clock, clock.ChapterCount, clock.BeatCount - 1));
+        var openBookEnd = rows.Count(o => Data.Entities.ObligationState.IsOutstanding(o.State) && !o.AuthorLocked && o.DueByKind == Data.Entities.ObligationDueKind.BookEnd);
+        var parts = new List<string>();
+        if (scanned < clock.BeatCount) parts.Add($"scan coverage {scanned}/{clock.BeatCount}");
+        if (overdue > 0) parts.Add($"{overdue} obligation(s) past due with no author decision");
+        if (openBookEnd > 0) parts.Add($"{openBookEnd} book-end obligation(s) still open at publish");
+        return new PublishReadinessCheck(name, parts.Count == 0, parts.Count == 0 ? $"balanced ({rows.Count} obligations, {scanned}/{clock.BeatCount} beats scanned)" : string.Join("; ", parts));
     }
 
     /// <summary>Wires ContinuityService's ledger of atomic (entity, predicate, object) claims —

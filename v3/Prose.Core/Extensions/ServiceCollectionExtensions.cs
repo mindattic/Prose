@@ -1225,6 +1225,15 @@ public static class ServiceCollectionExtensions
         // every BeatWriteReason, not just Generation, registers the promises it makes.
         services.AddSingleton<Prose.Core.Services.Obligations.NarrativeObligationExtractor>();
         services.AddSingleton<Prose.Core.Services.Obligations.NarrativeObligationService>();
+        // Instruments around the ledger (RFC 0013 D6/D7): free reconciliation rules, the paid
+        // resurfacing judge (embedding + lexical candidates, quote-gated), the entity-record
+        // grounding audit, and the gutenberg-only calibration harness.
+        services.AddSingleton<Prose.Core.Services.Obligations.LexicalCandidateFinder>();
+        services.AddSingleton<Prose.Core.Services.Obligations.IObligationCandidateFinder, Prose.Core.Services.Obligations.EmbeddingCandidateFinder>();
+        services.AddSingleton<Prose.Core.Services.Obligations.ObligationResurfacingJudge>();
+        services.AddSingleton<Prose.Core.Services.Audit.ObligationReconciliationService>();
+        services.AddSingleton<Prose.Core.Services.Obligations.EntityRecordGroundingService>();
+        services.AddSingleton<Prose.Core.Services.Calibration.ObligationCalibrationService>();
         services.AddSingleton<BookStateLedgerService>();
         // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's
         // post-write extraction into one call — RFC 0009 §9.4 "item 1".

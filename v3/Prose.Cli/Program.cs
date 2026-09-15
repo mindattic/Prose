@@ -493,6 +493,42 @@ if (args.Contains("--obligations"))
     return;
 }
 
+// RFC 0013 instruments. The free trial-balance rules forward plainly; --deep adds the paid
+// resurfacing judge and is cost-gated under its own command name (the gate keys estimates on the
+// name alone, so a cheap and an expensive mode must not share one — RFC 0010 §5).
+if (args.Contains("--reconcile-obligations"))
+{
+    Environment.ExitCode = args.Contains("--deep")
+        ? await HubCliClient.ForwardWithCostGateAsync("ReconcileObligationsCli", "--reconcile-obligations-deep", args)
+        : await HubCliClient.ForwardAsync("ReconcileObligationsCli", args);
+    return;
+}
+if (args.Contains("--scan-unnamed-referents"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("UnnamedReferentsCli", args);
+    return;
+}
+if (args.Contains("--ground-entity-records"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("GroundEntityRecordsCli", "--ground-entity-records", args);
+    return;
+}
+if (args.Contains("--inject-calibration-defects") || args.Contains("--revert-calibration-defects"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ObligationCalibrationCli", args);
+    return;
+}
+if (args.Contains("--calibrate-obligations"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ObligationCalibrationCli", "--calibrate-obligations", args);
+    return;
+}
+if (args.Contains("--narrative-health"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("NarrativeHealthCli", args);
+    return;
+}
+
 if (args.Contains("--repair"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RepairCli", args);

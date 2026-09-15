@@ -27,6 +27,8 @@ namespace Prose.Mcp;
 [McpServerToolType]
 public class ObligationTools(
     NarrativeObligationService obligations,
+    Prose.Core.Services.Audit.ObligationReconciliationService reconciler,
+    EntityRecordGroundingService grounding,
     IDbContextFactory<ProseDbContext> dbFactory,
     HubInvoker hub)
 {
@@ -186,6 +188,43 @@ public class ObligationTools(
     {
         if (!Guid.TryParse(obligationId, out var id) || !Guid.TryParse(entityId, out var e)) return JsonSerializer.Serialize(new { error = "invalid_guid" }, JsonOpts);
         return Result(await obligations.LinkEntityAsync(id, e, Actor));
+    }
+
+    // ── instruments ───────────────────────────────────────────────────────────
+
+    [McpServerTool, Description("Run the obligation reconciliation instrument on a book (RFC 0013): six free deterministic rules over the ledger — overdue_open, open_at_end, stale_closure, dangling_beat, unplanted_payoff, deferred_expired — filed as NarrativeObligation findings under node:{slug}#obligations, plus a health snapshot. deep=true first runs the paid resurfacing judge (one Haiku call per open obligation, quote-gated, cached by candidate text) so payoffs the extractor missed are closed before the balance is struck. Reports 'examined N obligations over M beats'; could_not_look=true means the ledger is empty — rescan first.")]
+    public Task<string> reconcile_obligations(
+        [Description("Book node id/slug/code.")] string nodeIdOrSlug,
+        [Description("Also run the resurfacing judge (costs cents).")] bool deep = false) =>
+        hub.InvokeAsync(nameof(ObligationTools), nameof(reconcile_obligationsImpl), new { nodeIdOrSlug, deep });
+
+    public async Task<string> reconcile_obligationsImpl(string nodeIdOrSlug, bool deep = false)
+    {
+        var nodeId = await ResolveBookAsync(nodeIdOrSlug);
+        if (nodeId == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+        var r = await reconciler.RunAsync(nodeId.Value, deep);
+        return JsonSerializer.Serialize(new
+        {
+            r.NodeId, r.Slug, r.Title, examined = r.Examined, total_beats = r.TotalBeats, scanned_beats = r.ScannedBeats,
+            could_not_look = r.CouldNotLook, book_at_end = r.BookAtEnd, balanced = r.Balance.Balanced,
+            overdue_without_decision = r.Balance.OverdueWithoutDecision, rule_counts = r.RuleCounts,
+            findings = r.Verdicts.Where(v => v.Severity != "PASS").Select(v => new { v.RuleKey, v.Severity, v.Evidence, beat_id = v.Location }),
+            deep = r.Deep, snapshot = r.Snapshot,
+        }, JsonOpts);
+    }
+
+    [McpServerTool, Description("Ground entity records in prose (RFC 0013): decompose every character/place/faction record tagged in the book into atomic claims and check each against the beats with a quote-gated entailment call. Unentailed/contradicted claims are filed under EntityDrift (node:{slug}#recordground) and matching non-authored ledger claims are quarantined to 'inferred'. The record text is never edited — you accept or strike. Optional entity name filter. Costs a few cents per entity.")]
+    public Task<string> ground_entity_records(
+        [Description("Book node id/slug/code.")] string nodeIdOrSlug,
+        [Description("Only entities whose name contains this (optional).")] string? entityName = null) =>
+        hub.InvokeAsync(nameof(ObligationTools), nameof(ground_entity_recordsImpl), new { nodeIdOrSlug, entityName });
+
+    public async Task<string> ground_entity_recordsImpl(string nodeIdOrSlug, string? entityName = null)
+    {
+        var nodeId = await ResolveBookAsync(nodeIdOrSlug);
+        if (nodeId == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+        var r = await grounding.RunAsync(nodeId.Value, entityName);
+        return JsonSerializer.Serialize(r, JsonOpts);
     }
 
     // ── helpers ───────────────────────────────────────────────────────────────

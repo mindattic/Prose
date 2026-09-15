@@ -210,7 +210,7 @@ Added 2026-08-14 in direct response to an observed failure mode: five independen
 run on a book, and a sixth still found a new continuity error. "Run the sweep N times" was never
 a real stopping criterion — a single-shot LLM sweep is a sample of what a fresh read notices, not
 a proof nothing is wrong, and a fix pass introduces new regressions about as often as it removes
-old ones. A book is publish-ready only when ALL FIVE of the following hold simultaneously —
+old ones. A book is publish-ready only when ALL SEVEN of the following hold simultaneously —
 this replaces the older, looser "logic sweep clean at BLOCKER" language everywhere it appears:
 
 1. Zero open BLOCKER/MODERATE logic-sweep findings (§3–4, unchanged).
@@ -230,6 +230,17 @@ this replaces the older, looser "logic sweep clean at BLOCKER" language everywhe
 4. Every fix applied since the last dry round passed its own blast-radius mechanical re-check
    (§1) with no new contradiction.
 5. Zero open High/BLOCKER Reader-Proxy QA findings (docs/READER-QA.md, unchanged).
+6. **The Narrative Obligation Ledger is balanced** ([docs/rfc/0013](rfc/0013-narrative-obligation-ledger.md),
+   added 2026-09-15): every beat carries a scan stamp (coverage 100%), zero obligations past their
+   due point without a recorded author decision (Close / Drop-with-reason / Defer), and zero
+   book-end obligations still open at publish. **A book whose ledger has no rows FAILS** — an empty
+   ledger is "could not look", never "nothing owed" — the same rule as condition 2.
+   `prose --reconcile-obligations --slug <slug>` files the offending rows as `OBLIGATION …`
+   findings; `prose --obligations trial-balance --slug <slug>` is the period close the author
+   works from.
+7. Zero unentailed entity-record claims, or every one quarantined
+   (`prose --ground-entity-records --slug <slug>`, RFC 0013 §4): a character record may not assert
+   a backstory no beat contains.
 
 **The safety valve.** If a book hits a round-count cap (default 8) without ever reaching 2
 consecutive dry rounds, that is itself surfaced as a `LOGICSWEEP-CONVERGENCE [not-converging]`

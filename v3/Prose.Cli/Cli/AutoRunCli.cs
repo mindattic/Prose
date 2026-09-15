@@ -21,6 +21,10 @@ namespace Prose.Cli;
 ///   --no-repair              Accepted and ignored: the self-repair pass was deleted (RFC 0009, 2026-09-06).
 ///   --allow-unblueprinted    Override the locked-pipeline gate (no outline + no structural
 ///                            blueprint on this book) — see ProseWriterRouter.WriteAsync.
+///   --obligation-gate hard|soft|off
+///                            RFC 0013 chapter trial balance. hard (default) stops the run when a
+///                            chapter ends with obligations past due and undecided (exit 3);
+///                            soft prints and continues; off skips the balance.
 /// </summary>
 public static class AutoRunCli
 {
@@ -38,11 +42,13 @@ public static class AutoRunCli
         string? slug = null, id = null, effort = "draft";
         bool dryRun = false, force = false, allowVotes = false, noRepair = false, allowUnblueprinted = false;
         int forks = 0, targetWords = 0;
+        var obligationGate = "hard";
 
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
+                case "--obligation-gate": if (i + 1 < args.Length) obligationGate = args[++i].ToLowerInvariant(); break;
                 case "--slug":   if (i + 1 < args.Length) slug   = args[++i]; break;
                 case "--id":     if (i + 1 < args.Length) id     = args[++i]; break;
                 case "--effort": if (i + 1 < args.Length) effort = args[++i]; break;
@@ -163,6 +169,33 @@ public static class AutoRunCli
                     chapterClose, beatAudit, stats, force, dryRun, targetWords,
                     forks, allowVotes, noRepair, totalChapters, chapters.Count, allowUnblueprinted);
                 totalChapters++;
+
+                // RFC 0013 chapter trial balance — the hard stop (author decision 2026-09-15). The
+                // per-beat scan is fire-and-forget on the write door, so scan this chapter's beats
+                // synchronously first (hash-gated: already-scanned beats are free), then strike the
+                // balance. hard = stop the run; soft = print and continue; off = skip.
+                if (!dryRun && obligationGate != "off")
+                {
+                    var obligationsSvc = services.GetService<Prose.Core.Services.Obligations.NarrativeObligationService>();
+                    if (obligationsSvc != null)
+                    {
+                        foreach (var ob in await workbench.GetOrderedBeatsAsync(chapterId))
+                            if (!string.IsNullOrWhiteSpace(ob.Beat.Text))
+                                await obligationsSvc.ScanBeatAsync(nodeId, ob.Beat.Id, BeatMarkup.StripEntityTags(ob.Beat.Text), Prose.Core.Data.Entities.ObligationActor.SystemExtract);
+
+                        var tb = await obligationsSvc.TrialBalanceAsync(nodeId, totalChapters);
+                        Console.WriteLine($"[auto-run]   obligation trial balance (Ch{totalChapters}): opened {tb.Opened} − closed {tb.Closed} − dropped {tb.Dropped} − deferred {tb.Deferred} = carried {tb.CarriedForward}; overdue without decision {tb.OverdueWithoutDecision.Count}{(tb.CouldNotLook ? " — COULD NOT LOOK (ledger empty)" : "")}");
+                        foreach (var v in tb.OverdueWithoutDecision.Take(10))
+                            Console.WriteLine($"[auto-run]     ! [{v.Kind}] Ch{v.OriginChapter} due {v.Due} — {v.Description}");
+                        if (obligationGate == "hard" && tb.OverdueWithoutDecision.Count > 0)
+                        {
+                            Console.WriteLine($"[auto-run] STOP — Ch{totalChapters} owes the reader {tb.OverdueWithoutDecision.Count} obligation(s) past due with no author decision (hard gate).");
+                            Console.WriteLine("[auto-run]        Decide each with `prose --obligations close|drop|defer --id <guid> …` (or the MCP tools), then re-run. `--obligation-gate soft` continues anyway; the debt is still recorded.");
+                            PrintSessionReport(nodeTitle, nodeSlug, stats, started, costScope.Id, ledger);
+                            return 3;
+                        }
+                    }
+                }
             }
             Console.WriteLine();
             Console.WriteLine($"[auto-run] Done: {stats.Written} beats expanded across {totalChapters} chapters.");

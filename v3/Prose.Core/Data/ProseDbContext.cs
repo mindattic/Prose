@@ -343,6 +343,9 @@ public class ProseDbContext : DbContext
     // Narrative Obligation Ledger (RFC 0013) — replaces NodeOpenThreads.
     public DbSet<NarrativeObligation>      NarrativeObligations      => Set<NarrativeObligation>();
     public DbSet<NarrativeObligationEvent> NarrativeObligationEvents => Set<NarrativeObligationEvent>();
+    public DbSet<ObligationJudgeCache>     ObligationJudgeCache      => Set<ObligationJudgeCache>();
+    public DbSet<NarrativeHealthSnapshot>  NarrativeHealthSnapshots  => Set<NarrativeHealthSnapshot>();
+    public DbSet<CalibrationInjection>     CalibrationInjections     => Set<CalibrationInjection>();
     public DbSet<BookPlotEvent>           BookPlotEvents            => Set<BookPlotEvent>();
     public DbSet<BookMotif>               BookMotifs                => Set<BookMotif>();
     public DbSet<NarrativeSummaryEntry>   NarrativeSummaryEntries   => Set<NarrativeSummaryEntry>();
@@ -3114,6 +3117,34 @@ public class ProseDbContext : DbContext
                 .HasForeignKey(x => x.ObligationId).OnDelete(DeleteBehavior.Cascade);
             e.HasIndex(x => new { x.ObligationId, x.CreatedAt });
             e.HasIndex(x => x.BeatId);
+        });
+
+        // Instruments around the ledger (RFC 0013 D6/D7): judge cache, health snapshots, and the
+        // calibration harness's injection manifest. No FKs to Beats — these are bookkeeping rows
+        // that must never block a beat delete; the harness reverts by prior text, not by FK.
+        b.Entity<ObligationJudgeCache>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.CandidateTextHash).HasMaxLength(80).IsRequired();
+            e.Property(x => x.PromptVersion).HasMaxLength(32).IsRequired();
+            e.Property(x => x.Relation).HasMaxLength(16).IsRequired();
+            e.Property(x => x.Quote).HasMaxLength(400);
+            e.HasIndex(x => new { x.ObligationId, x.CandidateBeatId, x.CandidateTextHash, x.PromptVersion }).IsUnique();
+        });
+        b.Entity<NarrativeHealthSnapshot>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.BookTextHash).HasMaxLength(80).IsRequired();
+            e.Property(x => x.InstrumentVersion).HasMaxLength(32).IsRequired();
+            e.HasIndex(x => new { x.NodeId, x.TakenAt });
+        });
+        b.Entity<CalibrationInjection>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Kind).HasMaxLength(16).IsRequired();
+            e.Property(x => x.Sentence).HasMaxLength(500).IsRequired();
+            e.Property(x => x.PayoffSentence).HasMaxLength(500);
+            e.HasIndex(x => x.NodeId);
         });
 
         // ── BookMotif ──────────────────────────────────────────────────────

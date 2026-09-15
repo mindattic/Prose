@@ -322,6 +322,7 @@ free is the difference between a useful instrument and a bill.
 | **Generation loop-back** | `ProseWriterRouter` injects prior `TUNEDREAD` findings as forward guidance, so the beat that would create the next contradiction is written knowing about the last one. |
 | **Write gates** | `CharacterRelationshipTargetCheck` rejects a relationship row with an unresolvable or empty target; `UnscopedUniverseWriteCheck` fails closed on an ambiently-scoped write. |
 | **Caching** | Adjudication verdicts key on `(claim pair, axiom, both anchor TextHashes)`; extraction is hash-gated per chapter. **An unchanged book costs nothing to re-read** — including the verdicts that came back clean, or a clean book would cost the same as a broken one forever. |
+| **The obligation ledger** ([RFC 0013](rfc/0013-narrative-obligation-ledger.md), 2026-09-15) | The sibling ledger for the defect class this one cannot represent (§9): an *absence*. `NarrativeObligations` records every promise the prose makes — quote + origin beat — when it is made, and the reconciler ages the ones never paid. Publish gate 6 reads it. `--ground-entity-records` downgrades a non-authored claim here to `inferred` when no beat entails the record text it came from. |
 
 ## 9. Honest limits {#SS-LEDGER-9}
 
@@ -337,3 +338,8 @@ free is the difference between a useful instrument and a bill.
   sweep and craft checklist.
 - **Entity-record and bible claims carry no beat**, so a cross-source pair (a prose claim against
   an entity-record claim) is adjudicable only from the prose side.
+- **It cannot see an absence.** Both detectors are pairwise over rows that exist; a promise the
+  prose made and never kept produces no row and therefore no finding — BCODA's curtain-girl sat
+  unrecorded for 475 beats while every claim about her reconciled. That class belongs to the
+  [Narrative Obligation Ledger](rfc/0013-narrative-obligation-ledger.md), which records the promise
+  when it is made.

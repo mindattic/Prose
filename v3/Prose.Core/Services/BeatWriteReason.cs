@@ -78,4 +78,13 @@ public enum BeatWriteReason
     /// <see cref="Generation"/> has somewhere to land. Added 2026-09-07 (RFC 0012 §3.6) when the
     /// one-door test found this creator undeclared.</summary>
     Plan,
+
+    /// <summary>
+    /// The obligation calibration harness (RFC 0013 D7) appending a seeded synthetic sentence to
+    /// — or restoring the exact prior text of — a beat in the <c>gutenberg</c> calibration
+    /// universe. <c>ObligationCalibrationService</c> throws before any write if the node is in any
+    /// other universe; this reason can never touch an author's book. Kept distinct from
+    /// <see cref="Import"/> so <c>--edit-distribution</c> shows harness writes for what they are.
+    /// </summary>
+    Calibration,
 }
