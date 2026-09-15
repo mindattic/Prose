@@ -1234,6 +1234,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.Audit.ObligationReconciliationService>();
         services.AddSingleton<Prose.Core.Services.Obligations.EntityRecordGroundingService>();
         services.AddSingleton<Prose.Core.Services.Calibration.ObligationCalibrationService>();
+        // The bible §14 plant/payoff tables → authored, locked ledger rows (BCODA runbook step 3).
+        services.AddSingleton<Prose.Core.Services.Obligations.BibleLedgerImporter>();
         services.AddSingleton<BookStateLedgerService>();
         // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's
         // post-write extraction into one call — RFC 0009 §9.4 "item 1".

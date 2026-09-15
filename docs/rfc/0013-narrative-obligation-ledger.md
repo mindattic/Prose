@@ -93,6 +93,17 @@ beat), `drop_obligation` (reason + note required), `defer_obligation`, `reopen_o
 row and journals the actor. "I'll pay it in Ch12" is a Defer to Ch12 — no state, no code path,
 could write the payoff.
 
+**The bible's own ledger.** `prose --obligations import-bible-ledger --slug S [--dry-run]`
+(`BibleLedgerImporter`) reads the node bible's §14a "Closed plants" and §14b "Dropped findings"
+tables from `NodeOutlineSections` (or the legacy `Nodes.NodeOutline`) and lands them as authored,
+locked rows: §14a → `plant`, Closed, mirrored into `PlantPayoffs`; §14b → Dropped with
+`DroppedReason = author-note` and the bible's reason verbatim. Anchors resolve only when a
+`Ch<n> SK:<k>` label matches a beat's SortKey exactly in the current reading order; anything else
+is imported with a null anchor and printed first as NEEDS ANCHOR — a lossy label is never
+guessed. Rows carry no page quote (the bible is the author's word), so the trial balance treats
+them as neither stale nor dangling. Idempotent via `DedupKey`; no §14 table at all is COULD NOT
+LOOK, exit 1.
+
 ## 3. The trial balance and the hard gate (author decision: hard)
 
 `TrialBalanceAsync(book, chapter)`: opened − closed − dropped − deferred = carried forward, plus

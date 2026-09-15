@@ -22,6 +22,9 @@ namespace Prose.Cli;
 ///   due           --id g --due chapter:7|beats:12|book-end
 ///   accept        --id g                  lock an extracted row as-is
 ///   rescan        [--beat-id g] [--force]  re-run the extractor over one beat / the whole book
+///   import-bible-ledger [--dry-run]       the bible's §14a closed plants / §14b dropped findings →
+///                                         authored, locked Closed / Dropped rows (BCODA runbook step 3);
+///                                         anchors resolved from "Ch<n> SK:<k>" exactly or listed as NEEDS ANCHOR
 ///
 /// Runs inside the Hub via CliDispatch. Every write is an author write: it locks the row and
 /// journals the actor. Nothing here touches prose.
@@ -116,11 +119,39 @@ public static class ObligationCli
                 if (scanned == 0 && skipped == 0) Console.WriteLine("  COULD NOT LOOK — no beats.");
                 return notEvaluated > 0 ? 1 : 0;
             }
+            case "import-bible-ledger":
+            {
+                var importer = services.GetRequiredService<BibleLedgerImporter>();
+                var dryRun = args.Contains("--dry-run");
+                var report = await importer.ImportAsync(nodeId, dryRun);
+                if (json) { Console.WriteLine(JsonSerializer.Serialize(new { title, report.NodeId, report.Source, report.DryRun, report.CouldNotLook, closed_rows = report.ClosedRows, dropped_rows = report.DroppedRows, report.Created, report.Existing, needs_anchor_rows = report.NeedsAnchorRows, report.Outcomes, report.Warnings }, Json)); return report.CouldNotLook ? 1 : 0; }
+                Console.WriteLine($"[obligations] import-bible-ledger — {title}{(dryRun ? " (DRY RUN — nothing written)" : "")}");
+                if (report.CouldNotLook)
+                {
+                    Console.WriteLine("  COULD NOT LOOK — no §14a/§14b table in this node's bible (NodeOutlineSections or NodeOutline). Nothing imported.");
+                    return 1;
+                }
+                Console.WriteLine($"  source: {report.Source}");
+                Console.WriteLine($"  §14a closed plants: {report.ClosedRows}   §14b dropped findings: {report.DroppedRows}   created {report.Created}, already present {report.Existing}, NEED AN ANCHOR {report.NeedsAnchorRows}");
+                foreach (var o in report.Outcomes)
+                {
+                    var anchors = $"origin {(o.OriginBeatId is Guid ob ? ob.ToString("N") : "—")} · closing {(o.ClosingBeatId is Guid cb ? cb.ToString("N") : "—")}";
+                    Console.WriteLine($"  {(o.NeedsAnchor.Count > 0 ? "!" : " ")} §{o.Table} [{o.Kind}] {o.State,-7} {o.Action,-8} {(o.ObligationId is Guid id ? id.ToString("N") : new string(' ', 32))}  {Trunc(o.Description, 110)}");
+                    Console.WriteLine($"        {anchors}");
+                    foreach (var n in o.NeedsAnchor) Console.WriteLine($"        NEEDS ANCHOR: {n}");
+                    if (o.Warning != null) Console.WriteLine($"        WARNING: {o.Warning}");
+                }
+                foreach (var w in report.Warnings) Console.WriteLine($"  warning: {w}");
+                if (report.NeedsAnchorRows > 0) Console.WriteLine("  Rows marked ! carry a null anchor on purpose — the bible label no longer matches the tree. Anchor them by hand (`prose --obligations close --id … --beat-id … --quote …`) or leave them; they raise no finding.");
+                return 0;
+            }
             default:
                 Console.Error.WriteLine($"[obligations] unknown mode '{mode}'.");
                 return 2;
         }
     }
+
+    private static string Trunc(string s, int max) => s.Length <= max ? s : s[..(max - 1)] + "…";
 
     private static async Task<int> RunByIdAsync(string mode, Guid id, string[] args, Func<string, string?> Flag, bool json, NarrativeObligationService svc)
     {
