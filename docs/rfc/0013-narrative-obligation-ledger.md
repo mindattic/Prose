@@ -160,6 +160,14 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   folded into `ObligationScanHash` so the rescan is not skipped; (2) every persisted quote is now
   `QuoteGrounding.ClampForStorage` (≤400, word boundary; a prefix of a substring still grounds). The
   116 control findings are open obligations the free rules cannot close — the deep judge is the
-  instrument that closes them, and it never ran; that number is unmeasured, not failed. Cost priors
+  instrument that closes them, and it never ran; that number is unmeasured, not failed. Measured
+  beat lengths (raw chars) attribute the misses precisely: the lantern boy (6,597) and stopped
+  clock (6,648) setups and the brass-whistle (6,603) and tan-coat (6,825) payoffs sat past the cut;
+  so did the one-eyed-cat setup (6,347), which the score counted "ok — never opened" and was in
+  fact a hidden miss. Two failures were NOT truncation: the violet-seal setup (5,525 chars, fully
+  visible; that beat logged 2 ungrounded quotes — quote fidelity, e.g. "recognised" respelled) and
+  the tin-soldier payoff (5,815, visible, not recognised as closing — suspect `MaxOpenListed = 40`
+  saturating the listed open set on a 116-open book, or an "advanced" verdict). Run 2 decides
+  whether those two need extractor work; the windowing alone cannot fix them. Cost priors
   added for `--calibrate-obligations` ($2.50) and `--reconcile-obligations-deep` ($1.50). Next: author
   redeploys the Hub → `--revert-calibration-defects` → `--inject` → `--calibrate-obligations --deep`.
