@@ -479,6 +479,12 @@ if (args.Contains("--sql-export"))
 // records with timeline entries and (optionally) LLM-extracted continuity claims.
 //   prose --repair                # cheap timeline-only pass
 //   prose --repair --continuity   # also run continuity extraction (LLM-heavy)
+if (args.Contains("--detect-mojibake"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DetectMojibakeCli", args);
+    return;
+}
+
 if (args.Contains("--repair"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RepairCli", args);

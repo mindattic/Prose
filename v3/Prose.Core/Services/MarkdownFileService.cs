@@ -37,6 +37,10 @@ public class MarkdownFileService
         "LastSyncedAt, SyncedBy, Tier, Scope, Triggers, AutoTier, RelatedIds, UniverseId, EntityId";
 
     public record SyncResult(int Inserted, int Updated, int Unchanged, List<string> Errors);
+
+    // Explicit on both read and write so the intent is auditable; .NET already defaults to
+    // UTF-8, so this is documentation, not the fix — the fix is refusing/reporting residue.
+    private static readonly Encoding Utf8NoBom = new UTF8Encoding(false);
     public record RestoreResult(int Written, int Skipped, List<string> Errors);
 
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
@@ -223,7 +227,14 @@ public class MarkdownFileService
             try
             {
                 if (!File.Exists(f.FilePath)) continue;
-                var content = TextSanitizerService.Sanitize(await File.ReadAllTextAsync(f.FilePath, ct));
+                var content = TextSanitizerService.Sanitize(await File.ReadAllTextAsync(f.FilePath, Utf8NoBom, ct));
+                // Sanitize peels one layer of known patterns. Anything still carrying the
+                // lead-byte signature is multi-layer corruption that would now be synced into
+                // every DCM context window — say so, loudly, in the same errors list a caller
+                // already prints, rather than persisting it silently (BCODA bible, 2026-09-15).
+                var residue = MojibakeRepairService.FirstMojibakeExcerpt(content);
+                if (residue != null)
+                    errors.Add($"{f.RelativePath}: mojibake residue after sanitize near \"…{residue}…\" — run `prose --repair --fix-mojibake` and re-sync");
                 var cls     = ClassifyFile(f, content);
                 var universeId = UniverseForFile(cls);
 
@@ -238,7 +249,7 @@ public class MarkdownFileService
                     {
                         var wasReadOnly = File.GetAttributes(f.FilePath).HasFlag(FileAttributes.ReadOnly);
                         if (wasReadOnly) await GeneratedFileWriter.WriteReadOnlyAsync(f.FilePath, content, ct);
-                        else await File.WriteAllTextAsync(f.FilePath, content, ct);
+                        else await File.WriteAllTextAsync(f.FilePath, content, Utf8NoBom, ct);
                     }
                 }
                 var hash = ComputeHash(content);

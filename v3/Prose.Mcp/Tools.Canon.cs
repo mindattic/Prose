@@ -219,6 +219,16 @@ public class CanonDocTools
         if (nodeId == null)
             return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
 
+        // Refuse mojibake at the door — see SetBookOutlineImpl for the incident this guards.
+        var mojibake = MojibakeRepairService.FirstMojibakeExcerpt(content);
+        if (mojibake != null)
+            return JsonSerializer.Serialize(new
+            {
+                error   = "mojibake_detected",
+                message = "The section text contains UTF-8-read-as-Windows-1252 corruption; re-read the source as UTF-8 and retry.",
+                excerpt = mojibake,
+            }, CanonTools.JsonOpts);
+
         var result = await canonDocs.SetNodeOutlineSectionAsync(nodeId.Value, sectionType, content);
 
         if (!result.Ok)

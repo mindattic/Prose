@@ -46,6 +46,9 @@ public class MojibakeRepairService
         public int RowsScanned       { get; set; }
         public int CellsRepaired     { get; set; }
         public int CellsLeftAlone    { get; set; }
+        /// <summary>How many encoding layers the worst cell needed peeled. 1 is ordinary
+        /// mojibake; the BCODA bible needed 4 (a §13 stored as "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§13").</summary>
+        public int MaxPassesForOneCell { get; set; }
         public List<string> Errors   { get; } = new();
         public Dictionary<string, int> PerTable { get; } = new();
     }
@@ -172,9 +175,12 @@ public class MojibakeRepairService
                 {
                     if (rdr.IsDBNull(pkCount + i)) continue;
                     var current = rdr.GetString(pkCount + i);
-                    var repaired = TryReverseMojibake(current) ?? RepairMixed(current);
+                    var repaired = RepairToStable(current, out var passes);
                     if (repaired != null && repaired != current)
+                    {
                         dirtyCols.Add((t.TextCols[i], repaired));
+                        if (passes > result.MaxPassesForOneCell) result.MaxPassesForOneCell = passes;
+                    }
                     else
                         result.CellsLeftAlone++;
                 }
@@ -290,13 +296,81 @@ public class MojibakeRepairService
         catch { return 0; }
     }
 
-    /// <summary>Fast check: returns true if the string contains the â€ mojibake prefix.</summary>
-    public static bool ContainsMojibake(string s)
+    /// <summary>
+    /// Returns true when the string carries the signature of UTF-8 bytes decoded as cp1252:
+    /// a mis-decoded lead byte (U+00C2–U+00DF for two-byte sequences, U+00E0–U+00EF for
+    /// three-byte) immediately followed by characters whose cp1252 byte is a UTF-8
+    /// continuation byte (0x80–0xBF). The old check looked only for "â€" — the em-dash /
+    /// smart-quote family — and so never saw a double-encoded "Ã‚Â§" (§) or "Ã‚Â¦" (¦), which is
+    /// exactly why the outline repair stalled one layer short.
+    /// </summary>
+    public static bool ContainsMojibake(string s) => IndexOfMojibake(s) >= 0;
+
+    /// <summary>Index of the first mojibake lead character, or -1.</summary>
+    public static int IndexOfMojibake(string s)
     {
+        if (string.IsNullOrEmpty(s)) return -1;
         for (int i = 0; i < s.Length - 1; i++)
-            if (s[i] == 'â' && s[i + 1] == '€') return true;
-        return false;
+        {
+            var c = s[i];
+            if (c == 'â' && s[i + 1] == '€') return i;
+            if (c >= 'Â' && c <= 'ß')
+            {
+                if (IsContinuation(s[i + 1])) return i;
+            }
+            else if (c >= 'à' && c <= 'ï' && i + 2 < s.Length)
+            {
+                if (IsContinuation(s[i + 1]) && IsContinuation(s[i + 2])) return i;
+            }
+        }
+        return -1;
     }
+
+    private static bool IsContinuation(char ch)
+    {
+        var b = ToCp1252Byte(ch);
+        return b is >= 0x80 and <= 0xBF;
+    }
+
+    /// <summary>
+    /// A short excerpt around the first mojibake hit, for refusal messages — or null when the
+    /// text is clean. Combines this class's byte-signature check with
+    /// <see cref="TextSanitizerService.HasMojibake"/>'s generated pattern table so a single-layer
+    /// hit on any corpus code point is caught too.
+    /// </summary>
+    public static string? FirstMojibakeExcerpt(string? text, int radius = 30)
+    {
+        if (string.IsNullOrEmpty(text)) return null;
+        var idx = IndexOfMojibake(text);
+        if (idx < 0 && !TextSanitizerService.HasMojibake(text)) return null;
+        if (idx < 0) idx = 0;
+        var start = Math.Max(0, idx - radius);
+        var end   = Math.Min(text.Length, idx + radius);
+        return text[start..end].Replace('\r', ' ').Replace('\n', ' ');
+    }
+
+    /// <summary>
+    /// Peels every encoding layer off <paramref name="s"/> in one call — each pass of
+    /// <see cref="TryReverseMojibake"/> / <see cref="RepairMixed"/> removes exactly one layer, and
+    /// text that went through a bad pipeline N times needs N passes. Returns null when nothing
+    /// changed. <paramref name="passes"/> reports how many layers were removed.
+    /// </summary>
+    public static string? RepairToStable(string s, out int passes, int maxPasses = 8)
+    {
+        passes = 0;
+        if (string.IsNullOrEmpty(s)) return null;
+        var current = s;
+        for (; passes < maxPasses; )
+        {
+            var next = TryReverseMojibake(current) ?? RepairMixed(current);
+            if (next == null || next == current) break;
+            current = next;
+            passes++;
+        }
+        return passes == 0 ? null : current;
+    }
+
+    public static string? RepairToStable(string s) => RepairToStable(s, out _);
 
     // ── core mojibake reversal ─────────────────────────────────────────────────
 
@@ -341,15 +415,17 @@ public class MojibakeRepairService
                 i++;
             }
 
-            // Try to decode the run as strict UTF-8.
-            string? decoded = null;
-            try { decoded = Utf8.GetString(run.ToArray()); }
-            catch { /* not valid UTF-8 — leave run as-is */ }
-
+            // Decode the longest prefix of the run that is strict UTF-8 and actually shrinks.
+            // A run often ends in a character that is legitimately cp1252-range — an ellipsis
+            // or an em dash that was already correct — and the old whole-run decode threw on
+            // it, leaving the entire run (mojibake included) untouched.
             var original = s.Substring(runStart, i - runStart);
-            if (decoded != null && decoded != original)
+            var bytes    = run.ToArray();
+            var decodedPrefix = DecodeLongestValidPrefix(bytes, out var consumedChars);
+            if (decodedPrefix != null && consumedChars > 0 && decodedPrefix.Length < consumedChars)
             {
-                sb.Append(decoded);
+                sb.Append(decodedPrefix);
+                sb.Append(original, consumedChars, original.Length - consumedChars);
                 changed = true;
             }
             else
@@ -359,6 +435,75 @@ public class MojibakeRepairService
         }
 
         return changed ? sb.ToString() : null;
+    }
+
+    /// <summary>
+    /// Strict-UTF-8-decode the longest prefix of <paramref name="bytes"/> that decodes cleanly
+    /// AND ends on a complete sequence, trying the full run first and trimming one byte at a time.
+    /// One char per byte in this run (each char came from one cp1252 byte), so the byte count
+    /// consumed equals the char count consumed.
+    /// </summary>
+    private static string? DecodeLongestValidPrefix(byte[] bytes, out int consumed)
+    {
+        for (var len = bytes.Length; len >= 2; len--)
+        {
+            try
+            {
+                var decoded = Utf8.GetString(bytes, 0, len);
+                consumed = len;
+                return decoded;
+            }
+            catch { /* trim and retry */ }
+        }
+        consumed = 0;
+        return null;
+    }
+
+    // ── outline / bible detection ─────────────────────────────────────────────
+
+    public sealed record OutlineHit(string Source, string Excerpt);
+
+    public sealed class OutlineDetectResult
+    {
+        public int SectionsAffected { get; set; }
+        public List<OutlineHit> Hits { get; } = new();
+    }
+
+    /// <summary>
+    /// Scan a node's hand-authored bible — every <c>NodeOutlineSections</c> row and the legacy
+    /// <c>Nodes.NodeOutline</c> blob — for mojibake, without modifying anything.
+    /// <see cref="DetectNodeAsync"/> only looks at beats; the BCODA bible sat corrupted for weeks
+    /// because nothing looked here.
+    /// </summary>
+    public async Task<OutlineDetectResult> DetectOutlineAsync(Guid nodeId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var result = new OutlineDetectResult();
+
+        var sections = await db.NodeOutlineSections.AsNoTracking()
+            .Where(s => s.NodeId == nodeId)
+            .Select(s => new { s.SectionType, s.Content })
+            .ToListAsync(ct);
+        foreach (var s in sections)
+        {
+            var excerpt = FirstMojibakeExcerpt(s.Content);
+            if (excerpt == null) continue;
+            result.SectionsAffected++;
+            result.Hits.Add(new OutlineHit($"NodeOutlineSections.{s.SectionType}", excerpt));
+        }
+
+        var blob = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.Id == nodeId)
+            .Select(n => n.NodeOutline)
+            .FirstOrDefaultAsync(ct);
+        var blobExcerpt = FirstMojibakeExcerpt(blob);
+        if (blobExcerpt != null)
+        {
+            result.SectionsAffected++;
+            result.Hits.Add(new OutlineHit("Nodes.NodeOutline", blobExcerpt));
+        }
+
+        return result;
     }
 
     /// <summary>Returns the CP1252 byte for <paramref name="ch"/>, or <c>null</c> if the

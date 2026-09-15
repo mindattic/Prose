@@ -39,7 +39,19 @@ public static class SetBookOutlineCli
             Console.Error.WriteLine($"[set-book-bible] File not found: {filePath}");
             return 1;
         }
-        var bibleText = await File.ReadAllTextAsync(filePath);
+        var bibleText = await File.ReadAllTextAsync(filePath, System.Text.Encoding.UTF8);
+
+        // Refuse, don't repair: a bible that arrives already double-encoded came from a pipeline
+        // that read UTF-8 as ANSI (the BCODA §/Φ/em-dash corruption, 2026-09-15). Saving it here
+        // would store the corruption as canon and re-sync it into every context window.
+        var mojibake = MojibakeRepairService.FirstMojibakeExcerpt(bibleText);
+        if (mojibake != null)
+        {
+            Console.Error.WriteLine("[set-book-bible] REFUSED: the file contains mojibake (UTF-8 read as Windows-1252).");
+            Console.Error.WriteLine($"[set-book-bible]   near: …{mojibake}…");
+            Console.Error.WriteLine("[set-book-bible]   Re-save the file as UTF-8 (or run it through TextSanitizerService) and retry.");
+            return 1;
+        }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var nodeDoc = services.GetRequiredService<NodeDocService>();

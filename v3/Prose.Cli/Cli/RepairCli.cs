@@ -220,6 +220,7 @@ public static class RepairCli
             Console.WriteLine($"  rows scanned     : {rm.RowsScanned}");
             Console.WriteLine($"  cells repaired   : {rm.CellsRepaired}");
             Console.WriteLine($"  cells left alone : {rm.CellsLeftAlone}");
+            Console.WriteLine($"  deepest layering : {rm.MaxPassesForOneCell} encoding pass(es) peeled from one cell");
             if (rm.Errors.Count > 0)
             {
                 Console.WriteLine($"  errors           : {rm.Errors.Count}");

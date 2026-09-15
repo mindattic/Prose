@@ -732,6 +732,17 @@ public class NodeTools
         var node = await ResolveNodeAsync(idOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
+        // Refuse mojibake at the door (2026-09-15): the BCODA bible was saved with §, Φ and em
+        // dashes quadruple-encoded and nothing between the caller and the table ever looked.
+        var mojibake = MojibakeRepairService.FirstMojibakeExcerpt(bibleText);
+        if (mojibake != null)
+            return JsonSerializer.Serialize(new
+            {
+                error   = "mojibake_detected",
+                message = "The bible text contains UTF-8-read-as-Windows-1252 corruption; re-read the source as UTF-8 and retry.",
+                excerpt = mojibake,
+            }, CanonTools.JsonOpts);
+
         // Route through CanonDocumentService.SetNodeOutlineSectionAsync (sectionType "Full") rather
         // than writing Nodes.NodeOutline directly — that method keeps NodeOutlineSections' "Full" row
         // in lockstep with Nodes.NodeOutline. Writing only the latter (as this method used to) left
