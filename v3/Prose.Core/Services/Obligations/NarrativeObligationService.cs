@@ -167,8 +167,7 @@ public class NarrativeObligationService(
         if (extractor != null && !string.IsNullOrWhiteSpace(collapsed))
         {
             var open = await OutstandingAsync(db, bookNodeId, ct);
-            var openOrdered = OrderByUrgency(open, clock, clock.ChapterOf(beatId), clock.PositionOf(beatId))
-                .Take(NarrativeObligationExtractor.MaxOpenListed).ToList();
+            var openOrdered = SelectForListing(open, clock, clock.ChapterOf(beatId), clock.PositionOf(beatId), collapsed);
 
             var tagged = BeatMarkup.ExtractTaggedMentions(beat.Text ?? "").Select(m => m.Text).Distinct().ToList();
             var aliases = await KnownAliasesAsync(db, bookNodeId, ct);
@@ -385,6 +384,40 @@ public class NarrativeObligationService(
             // A book-end promise with no trigger becomes fair game once it is a chapter old.
             _ => string.IsNullOrWhiteSpace(o.TriggerCondition) && o.OriginBeatId is Guid ob2 && atChapter > clock.ChapterOf(ob2),
         };
+    }
+
+    /// <summary>The open rows the extractor is shown for one beat: the most urgent first, then —
+    /// when there are more outstanding rows than <see cref="NarrativeObligationExtractor.MaxOpenListed"/>
+    /// — the last <see cref="NarrativeObligationExtractor.MaxLexicalListed"/> slots go to rows whose
+    /// content words (description + origin quote) occur in this beat's text, most overlap first.
+    /// Unused lexical slots fall back to the next most urgent rows. The numbering the model sees
+    /// is the index into the returned list, so callers must pass this exact list on.</summary>
+    internal static List<NarrativeObligation> SelectForListing(IReadOnlyList<NarrativeObligation> open, BookClock clock, int atChapter, int atPosition, string beatText)
+    {
+        var max = NarrativeObligationExtractor.MaxOpenListed;
+        var ordered = OrderByUrgency(open, clock, atChapter, atPosition).ToList();
+        if (ordered.Count <= max) return ordered;
+
+        var urgentSlots = max - NarrativeObligationExtractor.MaxLexicalListed;
+        var listed = ordered.Take(urgentSlots).ToList();
+        var rest = ordered.Skip(urgentSlots).ToList();
+
+        var relevant = rest
+            .Select(o => (Row: o, Score: LexicalCandidateFinder.ContentWords(o.Description + " " + (o.OriginQuote ?? ""))
+                                             .Count(w => beatText.Contains(w, StringComparison.OrdinalIgnoreCase))))
+            .Where(x => x.Score >= 2)
+            .OrderByDescending(x => x.Score)
+            .Take(NarrativeObligationExtractor.MaxLexicalListed)
+            .Select(x => x.Row)
+            .ToList();
+        listed.AddRange(relevant);
+
+        foreach (var o in rest)
+        {
+            if (listed.Count >= max) break;
+            if (!listed.Contains(o)) listed.Add(o);
+        }
+        return listed;
     }
 
     private static IEnumerable<NarrativeObligation> OrderByUrgency(IEnumerable<NarrativeObligation> rows, BookClock clock, int atChapter, int atPosition) =>

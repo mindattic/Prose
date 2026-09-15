@@ -92,8 +92,13 @@ public class ObligationResurfacingJudge(
     IObligationCandidateFinder finder,
     ILogger<ObligationResurfacingJudge> log)
 {
-    public const string PromptVersion = "obl-judge-v1";
+    /// <summary>Cache key. v2 (2026-09-15): a candidate longer than <see cref="MaxCandidateWords"/>
+    /// is listed as consecutive parts instead of being cut — v1's cut dropped the tail of every
+    /// ~1,100-word beat, which is where GCSH calibration run 2 had all four injected payoffs
+    /// (4/4 "not recognised" with the judge running). v1 verdicts on cut passages are void.</summary>
+    public const string PromptVersion = "obl-judge-v2";
     public const int CandidatesPerObligation = 8;
+    /// <summary>Words per listed passage. Never a cut: see <see cref="SplitPassages"/>.</summary>
     public const int MaxCandidateWords = 600;
 
     public sealed record DeepResult(int Examined, int Closed, int Advanced, int NotAddressed, int DiscardedUngrounded, int CacheHits, int LlmCalls, bool Evaluated);
@@ -147,17 +152,27 @@ public class ObligationResurfacingJudge(
 
             if (toJudge.Count > 0)
             {
-                var listed = toJudge.Select((c, i) => (Number: i + 1, c.Id, Text: Clamp(BeatMarkup.StripEntityTags(c.Text)), c.TextHash)).ToList();
+                // Every candidate is listed WHOLE: a long beat becomes consecutive numbered parts.
+                // Quotes are gated against the full beat text, and the verdicts for one beat's
+                // parts merge into one cache row (closes > advances > not_addressed).
+                var fullText = toJudge.ToDictionary(c => c.Id, c => BeatMarkup.StripEntityTags(c.Text));
+                var listed = new List<(int Number, Guid BeatId, string Text, string? TextHash, int Part, int Parts)>();
+                foreach (var c in toJudge)
+                {
+                    var parts = SplitPassages(fullText[c.Id], MaxCandidateWords);
+                    for (var i = 0; i < parts.Count; i++)
+                        listed.Add((listed.Count + 1, c.Id, parts[i], c.TextHash, i + 1, parts.Count));
+                }
                 var user = $"""
                     OBLIGATION [{o.Kind}] (opened Ch{(o.OriginBeatId is Guid ob ? clock.ChapterOf(ob) : 0)}):
                     {o.Description}
                     {(string.IsNullOrEmpty(o.OriginQuote) ? "" : $"Origin quote: \"{o.OriginQuote}\"")}
 
-                    LATER PASSAGES:
-                    {string.Join("\n\n", listed.Select(l => $"[{l.Number}] (Ch{clock.ChapterOf(l.Id)})\n{l.Text}"))}
+                    LATER PASSAGES (a long passage is split into consecutive parts; judge each part on its own text):
+                    {string.Join("\n\n", listed.Select(l => $"[{l.Number}] (Ch{clock.ChapterOf(l.BeatId)}{(l.Parts > 1 ? $", part {l.Part} of {l.Parts}" : "")})\n{l.Text}"))}
                     """;
                 string raw;
-                try { raw = await llm.GenerateAsync(SystemPrompt, user, temperature: 0.1, maxTokens: 700, model: LlmModels.Haiku, ct: ct); calls++; }
+                try { raw = await llm.GenerateAsync(SystemPrompt, user, temperature: 0.1, maxTokens: 1200, model: LlmModels.Haiku, ct: ct); calls++; }
                 catch (Exception ex) when (ex is not OperationCanceledException)
                 {
                     log.LogWarning(ex, "Resurfacing judge call failed for obligation {Id}", o.Id);
@@ -165,6 +180,7 @@ public class ObligationResurfacingJudge(
                     continue;
                 }
 
+                var perBeat = new Dictionary<Guid, (string Relation, string? Quote)>();
                 foreach (var (number, relation, quote) in Parse(raw))
                 {
                     if (number < 1 || number > listed.Count) continue;
@@ -173,21 +189,22 @@ public class ObligationResurfacingJudge(
                     string? q = quote;
                     if (rel is "closes" or "advances")
                     {
-                        if (!QuoteGrounding.Contains(cand.Text, q, QuoteGrounding.MinObligationQuoteLength)) { rel = "ungrounded"; q = null; discarded++; }
+                        if (!QuoteGrounding.Contains(fullText[cand.BeatId], q, QuoteGrounding.MinObligationQuoteLength)) { rel = "ungrounded"; q = null; discarded++; }
                         else q = QuoteGrounding.ClampForStorage(q);   // nvarchar(400) — a paragraph is not a quote
                     }
+                    if (!perBeat.TryGetValue(cand.BeatId, out var best) || Rank(rel) > Rank(best.Relation))
+                        perBeat[cand.BeatId] = (rel, q);
+                }
+                foreach (var c in toJudge)
+                {
+                    // A candidate the model did not mention in any part counts as not addressed.
+                    var (rel, q) = perBeat.TryGetValue(c.Id, out var v) ? v : ("not_addressed", null);
                     db.ObligationJudgeCache.Add(new ObligationJudgeCache
                     {
-                        ObligationId = o.Id, CandidateBeatId = cand.Id, CandidateTextHash = cand.TextHash ?? "",
+                        ObligationId = o.Id, CandidateBeatId = c.Id, CandidateTextHash = c.TextHash ?? "",
                         PromptVersion = PromptVersion, Relation = rel, Quote = q,
                     });
-                    verdicts.Add((cand.Id, rel, q));
-                }
-                // Candidates the model did not mention at all count as not addressed.
-                foreach (var l in listed.Where(l => verdicts.All(v => v.BeatId != l.Id)))
-                {
-                    db.ObligationJudgeCache.Add(new ObligationJudgeCache { ObligationId = o.Id, CandidateBeatId = l.Id, CandidateTextHash = l.TextHash ?? "", PromptVersion = PromptVersion, Relation = "not_addressed" });
-                    verdicts.Add((l.Id, "not_addressed", null));
+                    verdicts.Add((c.Id, rel, q));
                 }
                 await db.SaveChangesAsync(ct);
             }
@@ -250,9 +267,17 @@ public class ObligationResurfacingJudge(
         return list;
     }
 
-    private static string Clamp(string text)
+    /// <summary>Consecutive word-windows of at most <paramref name="maxWords"/> words. Every word
+    /// of the input appears in exactly one part; nothing is cut.</summary>
+    internal static List<string> SplitPassages(string text, int maxWords)
     {
         var words = text.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries);
-        return words.Length <= MaxCandidateWords ? text : string.Join(' ', words.Take(MaxCandidateWords)) + " …";
+        if (words.Length <= maxWords) return [string.Join(' ', words)];
+        var parts = new List<string>((words.Length + maxWords - 1) / maxWords);
+        for (var i = 0; i < words.Length; i += maxWords)
+            parts.Add(string.Join(' ', words.Skip(i).Take(maxWords)));
+        return parts;
     }
+
+    private static int Rank(string relation) => relation switch { "closes" => 3, "advances" => 2, "ungrounded" => 1, _ => 0 };
 }

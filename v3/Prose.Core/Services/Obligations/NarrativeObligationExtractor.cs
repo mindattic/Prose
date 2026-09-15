@@ -20,15 +20,24 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     /// so changing how this extractor reads a beat invalidates every stamp and the next rescan
     /// actually rescans. v2 (2026-09-15): long beats are scanned in windows instead of being cut
     /// at <see cref="MaxBeatChars"/> — the v1 cut silently dropped the tail of every beat over
-    /// 6,000 chars, which is where the GCSH calibration injected its defects (recall 0.25).</summary>
-    public const string PromptVersion = "obl-extract-v2";
+    /// 6,000 chars, which is where the GCSH calibration injected its defects (recall 0.25).
+    /// v3 (same day): the OPEN OBLIGATIONS list is chosen by <c>SelectForListing</c> (urgency +
+    /// lexical relevance) instead of urgency alone — what the model is shown changed, so the
+    /// stamp changes.</summary>
+    public const string PromptVersion = "obl-extract-v3";
 
     /// <summary>Characters of beat text per LLM window. A beat longer than this is scanned in
     /// consecutive windows cut at sentence boundaries (<see cref="SplitIntoWindows"/>); every quote
     /// is still gated against the WHOLE beat. Nothing is ever dropped.</summary>
     public const int MaxBeatChars = 6000;
     public const int MaxPreviousTailChars = 1500;
+    /// <summary>Open obligations shown to the model per beat. The model can only pay a debt it is
+    /// shown, so <see cref="NarrativeObligationService.SelectForListing"/> fills the first slots
+    /// by urgency and the last <see cref="MaxLexicalListed"/> with rows whose content words occur
+    /// in this beat — on a 257-outstanding book (GCSH run 2) pure urgency never listed a single
+    /// book-end plant, so no payoff could ever be recognised at scan time.</summary>
     public const int MaxOpenListed = 40;
+    public const int MaxLexicalListed = 15;
 
     public sealed record OpenItem(
         string Kind, string Description, string Quote,

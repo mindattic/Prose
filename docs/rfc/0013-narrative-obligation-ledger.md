@@ -169,5 +169,17 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   the tin-soldier payoff (5,815, visible, not recognised as closing — suspect `MaxOpenListed = 40`
   saturating the listed open set on a 116-open book, or an "advanced" verdict). Run 2 decides
   whether those two need extractor work; the windowing alone cannot fix them. Cost priors
-  added for `--calibrate-obligations` ($2.50) and `--reconcile-obligations-deep` ($1.50). Next: author
-  redeploys the Hub → `--revert-calibration-defects` → `--inject` → `--calibrate-obligations --deep`.
+  added for `--calibrate-obligations` ($2.50) and `--reconcile-obligations-deep` ($1.50).
+- 2026-09-15 (run 2, after redeploy, $2.61) — **still BELOW BAR, but the shape moved:** recall 0.75
+  (3/4 abandoned setups opened; the violet seal is still the miss), yet **all four resolved payoffs
+  "not recognised" with the judge running**, and control MODERATE+ rose to 205 (455 opened, 198
+  closed, 257 outstanding). Two more tail-cuts, same class as run 1: (3) the judge clamped every
+  candidate passage to 600 words; the payoff beats are ~1,100 words with the payoff last. v2 lists
+  a long candidate as consecutive numbered parts, gates quotes against the whole beat, and merges
+  one beat's parts into one cache row (closes > advances > not_addressed); `obl-judge-v2` voids the
+  cut verdicts. (4) At scan time the extractor is shown the 40 most URGENT open rows; on a
+  257-outstanding book no book-end plant ever made the list, so the payoff beat could not "touch"
+  the debt it pays. `SelectForListing` now keeps 25 urgent slots and fills 15 with rows whose
+  content words occur in the beat (falling back to urgency); `obl-extract-v3` restamps. Tests pin
+  both. The 205 controls remain unmeasured until the judge sees whole beats. Run 3 (~$2.6) needs
+  another redeploy.
