@@ -174,7 +174,7 @@ public class ObligationResurfacingJudge(
                     if (rel is "closes" or "advances")
                     {
                         if (!QuoteGrounding.Contains(cand.Text, q, QuoteGrounding.MinObligationQuoteLength)) { rel = "ungrounded"; q = null; discarded++; }
-                        else q = QuoteGrounding.Normalize(q);
+                        else q = QuoteGrounding.ClampForStorage(q);   // nvarchar(400) — a paragraph is not a quote
                     }
                     db.ObligationJudgeCache.Add(new ObligationJudgeCache
                     {

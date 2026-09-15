@@ -51,6 +51,12 @@ public class CommandCostEstimatorService
             // --reconcile-book-entities: --all walks every book; a single --id/--slug run is one.
             ["--reconcile-book-entities --single"] = 0.05,
             ["--reconcile-book-entities --all"]    = 3.00,
+            // RFC 0013 obligation instruments. --calibrate-obligations rescans every beat (one
+            // Haiku call each) and then runs the resurfacing judge: measured $2.02 on the 96-beat,
+            // 104k-word GCSH fixture 2026-09-15 against the $0.05 default (+3932%). The deep
+            // reconcile is the judge half of that run on its own; history replaces both after 3 runs.
+            ["--calibrate-obligations"]      = 2.50,
+            ["--reconcile-obligations-deep"] = 1.50,
         };
 
     public record CommandCostEstimate(double Estimated, string Confidence, int BasisRuns);

@@ -16,7 +16,16 @@ namespace Prose.Core.Services.Obligations;
 /// </summary>
 public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObligationExtractor> log)
 {
-    public const string PromptVersion = "obl-extract-v1";
+    /// <summary>Folded into <c>Beat.ObligationScanHash</c> by <see cref="NarrativeObligationService.ScanBeatAsync"/>,
+    /// so changing how this extractor reads a beat invalidates every stamp and the next rescan
+    /// actually rescans. v2 (2026-09-15): long beats are scanned in windows instead of being cut
+    /// at <see cref="MaxBeatChars"/> — the v1 cut silently dropped the tail of every beat over
+    /// 6,000 chars, which is where the GCSH calibration injected its defects (recall 0.25).</summary>
+    public const string PromptVersion = "obl-extract-v2";
+
+    /// <summary>Characters of beat text per LLM window. A beat longer than this is scanned in
+    /// consecutive windows cut at sentence boundaries (<see cref="SplitIntoWindows"/>); every quote
+    /// is still gated against the WHOLE beat. Nothing is ever dropped.</summary>
     public const int MaxBeatChars = 6000;
     public const int MaxPreviousTailChars = 1500;
     public const int MaxOpenListed = 40;
@@ -81,8 +90,88 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
 
     public async Task<Result> ExtractAsync(Input input, CancellationToken ct = default)
     {
-        var beat = input.BeatText.Length > MaxBeatChars ? input.BeatText[..MaxBeatChars] : input.BeatText;
-        var prev = input.PreviousTail is { Length: > MaxPreviousTailChars } p ? p[^MaxPreviousTailChars..] : input.PreviousTail;
+        var windows = SplitIntoWindows(input.BeatText, MaxBeatChars);
+        if (windows.Count == 0) return new Result([], [], 0, "", Evaluated: false);
+        if (windows.Count > 1)
+            log.LogInformation("Obligation extraction: {Chars}-char beat scanned in {Windows} windows of ≤{Max} chars", input.BeatText.Length, windows.Count, MaxBeatChars);
+
+        var parts = new List<Result>(windows.Count);
+        for (var w = 0; w < windows.Count; w++)
+        {
+            // Each window sees the tail of the previous one as context so a promise that straddles
+            // the cut is still legible; quotes are gated against the full beat, not the window.
+            var prev = w == 0 ? input.PreviousTail : windows[w - 1];
+            var part = await ExtractWindowAsync(input, windows[w], prev, w, windows.Count, ct);
+            if (!part.Evaluated) return new Result([], [], part.DiscardedUngrounded, part.Reasoning, Evaluated: false);
+            parts.Add(part);
+        }
+        return parts.Count == 1 ? parts[0] : Merge(parts);
+    }
+
+    /// <summary>Cut <paramref name="text"/> into consecutive pieces of at most <paramref name="max"/>
+    /// chars, each ending at a sentence boundary where one exists in the back half of the window.
+    /// The pieces concatenate (modulo trimmed spaces) back to the input — nothing is dropped.</summary>
+    internal static List<string> SplitIntoWindows(string text, int max)
+    {
+        var windows = new List<string>();
+        if (string.IsNullOrWhiteSpace(text)) return windows;
+        var pos = 0;
+        while (text.Length - pos > max)
+        {
+            var end = pos + max;
+            var cut = LastSentenceEnd(text, pos + max / 2, end);
+            if (cut < 0) cut = end;
+            var piece = text[pos..cut].Trim();
+            if (piece.Length > 0) windows.Add(piece);
+            pos = cut;
+        }
+        var last = text[pos..].Trim();
+        if (last.Length > 0) windows.Add(last);
+        return windows;
+    }
+
+    /// <summary>Index just past the last sentence terminator (. ! ? plus any closing quote marks)
+    /// that is followed by whitespace, searching <c>[min, end)</c>; -1 when none.</summary>
+    private static int LastSentenceEnd(string text, int min, int end)
+    {
+        for (var i = end - 2; i >= min; i--)
+        {
+            if (text[i] is not ('.' or '!' or '?')) continue;
+            var j = i + 1;
+            while (j < end && text[j] is '"' or '”' or '’' or '\'' or ')' ) j++;
+            if (j < text.Length && char.IsWhiteSpace(text[j])) return j;
+        }
+        return -1;
+    }
+
+    /// <summary>Combine per-window results for one beat: opened items de-duplicated by description
+    /// or quote; a touched index reported by several windows keeps "closed" over "advanced".</summary>
+    internal static Result Merge(IReadOnlyList<Result> parts)
+    {
+        var discarded = parts.Sum(p => p.DiscardedUngrounded);
+        var reasoning = string.Join(" ", parts.Select(p => p.Reasoning).Where(r => !string.IsNullOrWhiteSpace(r)));
+        if (parts.Any(p => !p.Evaluated)) return new Result([], [], discarded, reasoning, Evaluated: false);
+
+        var opened = new List<OpenItem>();
+        var seenDesc = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        var seenQuote = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var o in parts.SelectMany(p => p.Opened))
+        {
+            if (!seenDesc.Add(o.Description) || !seenQuote.Add(o.Quote)) continue;
+            opened.Add(o);
+        }
+        var touched = parts.SelectMany(p => p.Touched)
+            .GroupBy(t => t.Index)
+            .Select(g => g.FirstOrDefault(t => t.Verdict == "closed") ?? g.First())
+            .OrderBy(t => t.Index)
+            .ToList();
+        return new Result(opened, touched, discarded, reasoning, Evaluated: true);
+    }
+
+    private async Task<Result> ExtractWindowAsync(Input input, string window, string? previous, int index, int count, CancellationToken ct)
+    {
+        var prev = previous is { Length: > MaxPreviousTailChars } p ? p[^MaxPreviousTailChars..] : previous;
+        var windowNote = count == 1 ? "" : $" (part {index + 1} of {count} of one long beat — the earlier parts are the PREVIOUS TEXT)";
 
         var openBlock = input.OpenObligations.Count == 0
             ? "None."
@@ -111,8 +200,8 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
             PREVIOUS TEXT (context only — never quote from it):
             {(string.IsNullOrWhiteSpace(prev) ? "(start of chapter)" : prev)}
 
-            THIS BEAT:
-            {beat}
+            THIS BEAT{windowNote}:
+            {window}
             """;
 
         string raw;
@@ -122,11 +211,12 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
         }
         catch (Exception ex) when (ex is not OperationCanceledException)
         {
-            log.LogWarning(ex, "Obligation extraction call failed");
+            log.LogWarning(ex, "Obligation extraction call failed (window {Index}/{Count})", index + 1, count);
             return new Result([], [], 0, "", Evaluated: false);
         }
 
-        return Parse(raw, beat, input.OpenObligations.Count);
+        // Gate against the WHOLE beat: a quote is a literal substring of the text the row anchors to.
+        return Parse(raw, input.BeatText, input.OpenObligations.Count);
     }
 
     /// <summary>Parse leniently (first '{' to last '}') and apply the quote gate. Internal so the
@@ -173,7 +263,7 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
                     if (due is not ("soon" or "chapter" or "book")) due = null;
 
                     opened.Add(new OpenItem(
-                        kind!, Truncate(desc!.Trim(), 500), QuoteGrounding.Normalize(quote),
+                        kind!, Truncate(desc!.Trim(), 500), QuoteGrounding.ClampForStorage(quote),
                         refLabel, refType, NullIfBlank(Str(item, "trigger")), due));
                 }
             }
@@ -187,7 +277,7 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
                     var quote = Str(item, "quote");
                     if (idx < 1 || idx > openCount || verdict is not ("advanced" or "closed")) { discarded++; continue; }
                     if (!QuoteGrounding.Contains(beatText, quote, QuoteGrounding.MinObligationQuoteLength)) { discarded++; continue; }
-                    touched.Add(new TouchedItem(idx, verdict!, QuoteGrounding.Normalize(quote)));
+                    touched.Add(new TouchedItem(idx, verdict!, QuoteGrounding.ClampForStorage(quote)));
                 }
             }
 

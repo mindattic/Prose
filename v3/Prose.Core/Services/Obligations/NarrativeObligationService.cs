@@ -108,7 +108,10 @@ public class NarrativeObligationService(
     public async Task<ScanResult> ScanBeatAsync(Guid bookNodeId, Guid beatId, string strippedText, string actor, CancellationToken ct = default)
     {
         var collapsed = QuoteGrounding.Normalize(strippedText);
-        var scanHash  = NodeWorkbenchService.ComputeTextHash(collapsed);
+        // The stamp covers the text AND the extractor version: a change in how beats are read
+        // (v1 → v2 windowing, 2026-09-15) must make every "unchanged" beat rescannable, or a
+        // calibration run silently re-uses the flawed read and scores the fix as if it never landed.
+        var scanHash  = NodeWorkbenchService.ComputeTextHash(collapsed + "\n" + NarrativeObligationExtractor.PromptVersion);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
@@ -543,7 +546,7 @@ public class NarrativeObligationService(
         var row = new NarrativeObligation
         {
             NodeId = bookNodeId, Kind = kind, Description = description.Trim(), Provenance = ClaimProvenance.Authored,
-            OriginBeatId = originBeatId, OriginQuote = quote is null ? null : QuoteGrounding.Normalize(quote), OriginTextHash = textHash,
+            OriginBeatId = originBeatId, OriginQuote = quote is null ? null : QuoteGrounding.ClampForStorage(quote), OriginTextHash = textHash,
             EntityId = entityId, TriggerCondition = trigger, DueByKind = dueKind, DueByValue = dueValue,
             State = ObligationState.Open, AuthorLocked = true, DedupKey = dedup,
         };
@@ -563,7 +566,7 @@ public class NarrativeObligationService(
         if (!QuoteGrounding.Contains(BeatMarkup.StripEntityTags(beat.Text), quote, QuoteGrounding.MinObligationQuoteLength))
             return new(false, "quote_not_found: the quote is not in that beat's text", null);
 
-        row.State = ObligationState.Closed; row.ClosingBeatId = closingBeatId; row.ClosingQuote = QuoteGrounding.Normalize(quote); row.ClosingTextHash = beat.TextHash;
+        row.State = ObligationState.Closed; row.ClosingBeatId = closingBeatId; row.ClosingQuote = QuoteGrounding.ClampForStorage(quote); row.ClosingTextHash = beat.TextHash;
         row.AuthorNote = note ?? row.AuthorNote; row.AuthorLocked = true; row.UpdatedAt = DateTime.UtcNow;
         db.NarrativeObligationEvents.Add(Event(row.Id, ObligationEventAction.Close, closingBeatId, row.ClosingQuote, beat.TextHash, actor, note));
         await db.SaveChangesAsync(ct);

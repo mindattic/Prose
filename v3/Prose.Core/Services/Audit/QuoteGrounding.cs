@@ -19,8 +19,28 @@ public static class QuoteGrounding
     /// row's permanent grounding, so a fragment like "the girl" must not qualify.</summary>
     public const int MinObligationQuoteLength = 12;
 
+    /// <summary>Every persisted quote column (<c>NarrativeObligations.OriginQuote/ClosingQuote</c>,
+    /// <c>NarrativeObligationEvents.Quote</c>, <c>ObligationJudgeCache.Quote</c>) is nvarchar(400).
+    /// A "quote" longer than this is a paragraph the model pasted, not the sentence the contract
+    /// asks for; storing it raw failed the whole SaveChanges batch mid-calibration (2026-09-15,
+    /// $2 of judge calls lost to one 'String or binary data would be truncated').</summary>
+    public const int MaxStoredQuoteLength = 400;
+
     public static string Normalize(string? text) =>
         string.IsNullOrEmpty(text) ? "" : Regex.Replace(text, @"\s+", " ").Trim();
+
+    /// <summary>Normalise and bound a quote for storage. Cuts at the last word boundary that fits
+    /// in <see cref="MaxStoredQuoteLength"/>. Grounding survives the cut: a prefix of a literal
+    /// substring is still a literal substring, so <see cref="Contains"/> keeps holding for the
+    /// stored value. Call this at every site that writes a quote column, AFTER the grounding check.</summary>
+    public static string ClampForStorage(string? quote)
+    {
+        var q = Normalize(quote);
+        if (q.Length <= MaxStoredQuoteLength) return q;
+        var cut = q.LastIndexOf(' ', MaxStoredQuoteLength - 1);
+        if (cut < MinObligationQuoteLength) cut = MaxStoredQuoteLength;
+        return q[..cut].TrimEnd();
+    }
 
     /// <summary>True when <paramref name="quote"/> (whitespace-collapsed, case-insensitive) is a
     /// literal substring of <paramref name="text"/> and at least <paramref name="minLength"/>

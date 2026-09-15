@@ -147,3 +147,19 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
 - 2026-09-15 — Phase 0 `93c7cdb74`; Phase 1 `fae87dc55`; Phase 2 this commit. Hub redeploy and
   calibration run are the author's next steps; then the BCODA retrofit runbook (plan file
   `mellow-sauteeing-squirrel.md`, "BCODA retrofit runbook").
+- 2026-09-15 (later) — Hub redeployed; BCODA bible mojibake CLEAN in one pass. The gutenberg fixtures
+  were one beat per chapter (12/6/3) and the harness needs ≥20, so GCSH was split to 96 beats and
+  GCTOC to 17 at sentence boundaries (deterministic `split_beat`, verbatim); both marked
+  "Complete - publication ready" so book-end rules age. **Calibration run 1 on GCSH: BELOW BAR.**
+  `--deep` died after $2.02 (est $0.05) on `ObligationJudgeCache.Quote` nvarchar(400) overflow; the
+  free-rules score was TP 1 / FN 3 / resolved mis-flagged 2 / 116 control MODERATE+ (11.1 per 10k
+  words), P 0.008 R 0.25. Two root causes found by reading, both fixed in this commit: (1) the
+  extractor cut every beat at 6,000 chars before the prompt AND the quote gate, so the tail of any
+  longer beat — where injection appends — could never be opened or recognised as a payoff; v2 scans
+  long beats in sentence-boundary windows gated against the whole beat, and `PromptVersion` is now
+  folded into `ObligationScanHash` so the rescan is not skipped; (2) every persisted quote is now
+  `QuoteGrounding.ClampForStorage` (≤400, word boundary; a prefix of a substring still grounds). The
+  116 control findings are open obligations the free rules cannot close — the deep judge is the
+  instrument that closes them, and it never ran; that number is unmeasured, not failed. Cost priors
+  added for `--calibrate-obligations` ($2.50) and `--reconcile-obligations-deep` ($1.50). Next: author
+  redeploys the Hub → `--revert-calibration-defects` → `--inject` → `--calibrate-obligations --deep`.
