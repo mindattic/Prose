@@ -211,6 +211,35 @@ Write-Host ''
 Write-Host '  Published successfully.' -ForegroundColor Green
 Write-Host ''
 
+# -- Hub health -------------------------------------------------------------
+# The Hub is the one process every CLI command, MCP tool and Writer window forwards into, and
+# /api/health is fail-closed (503 when SQL Server is unreachable), so a 200 means "usable", not
+# merely "listening". Mirrors Prose.Writer\HubProcess.cs, which applies the same rule for the app.
+$HubBaseUrl   = 'http://127.0.0.1:5900'
+$HubHealthUrl = "$HubBaseUrl/api/health"
+
+function Test-HubHealthy {
+    try {
+        $resp = Invoke-WebRequest -Uri $HubHealthUrl -UseBasicParsing -TimeoutSec 3
+        return ($resp.StatusCode -ge 200 -and $resp.StatusCode -lt 300)
+    } catch { return $false }
+}
+
+# Poll until the Hub answers. Startup includes an EF migration check against SQL Server, so this
+# is seconds - and after a schema change (pending migrations apply on start) it can be longer.
+function Wait-HubHealthy {
+    param([int]$TimeoutSeconds = 90)
+    $deadline = (Get-Date).AddSeconds($TimeoutSeconds)
+    $tick = 0
+    while ((Get-Date) -lt $deadline) {
+        if (Test-HubHealthy) { return $true }
+        Start-Sleep -Milliseconds 500
+        $tick++
+        if ($tick % 6 -eq 0) { Write-Host "    waiting for $HubHealthUrl ... ($([int]($tick / 2))s)" -ForegroundColor DarkYellow }
+    }
+    return $false
+}
+
 if ($Start) {
     $startApp = $catalog[$Start]
     $startExe = Join-Path $startApp.Out $startApp.Exe
@@ -221,6 +250,31 @@ if ($Start) {
     # if it is not already up, and a child process inherits this.
     $env:ASPNETCORE_ENVIRONMENT = 'Development'
 
-    Write-Host "  Starting $Start..." -ForegroundColor Cyan
-    Start-Process $startExe -WorkingDirectory $startApp.Out
+    if ($Start -eq 'Hub') {
+        # Stop-App above matched by exact path; a Hub running from another install location, or
+        # one that outlived the file-lock wait, may still own port 5900. Never start a second one
+        # to fight it - connect to what is there. And do not report success until the new Hub
+        # actually answers: a launched exe that never becomes healthy is a failed deploy, not a
+        # started one, and the desktop icon's "DEPLOY FAILED" branch is what should fire.
+        if (Test-HubHealthy) {
+            Write-Host "  Prose Hub is already running and healthy at $HubBaseUrl - connecting to it, not starting a second." -ForegroundColor Green
+        }
+        else {
+            Write-Host "  Starting Hub..." -ForegroundColor Cyan
+            Start-Process $startExe -WorkingDirectory $startApp.Out
+            if (-not (Wait-HubHealthy -TimeoutSeconds 90)) {
+                Write-Host ''
+                Write-Host "  Prose Hub was started but never answered $HubHealthUrl within 90s." -ForegroundColor Red
+                Write-Host "  /api/health is fail-closed - it returns 503 while SQL Server is unreachable or a" -ForegroundColor Red
+                Write-Host "  migration is still applying. Check the Hub's own console window, then re-run this" -ForegroundColor Red
+                Write-Host "  icon: it will reconnect to a Hub that has since come up instead of starting another." -ForegroundColor Red
+                exit 1
+            }
+        }
+        Write-Host "  Prose Hub is up and reachable at $HubBaseUrl." -ForegroundColor Green
+    }
+    else {
+        Write-Host "  Starting $Start..." -ForegroundColor Cyan
+        Start-Process $startExe -WorkingDirectory $startApp.Out
+    }
 }
