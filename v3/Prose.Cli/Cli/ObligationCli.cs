@@ -22,6 +22,14 @@ namespace Prose.Cli;
 ///   due           --id g --due chapter:7|beats:12|book-end
 ///   accept        --id g                  lock an extracted row as-is
 ///   rescan        [--beat-id g] [--force]  re-run the extractor over one beat / the whole book
+///   candidates    --id g [--payoff-beat g …]  READ-ONLY retrieval diagnostic: what the resurfacing
+///                                         judge's candidate finder returns for one obligation, what
+///                                         the judge cache recorded, and — for each --payoff-beat —
+///                                         whether that beat was ever in the candidate set, plus its
+///                                         lexical and embedding rank when it was not. Separates
+///                                         "retrieved but not recognised" (a judge/granularity
+///                                         problem) from "never retrieved" (a retrieval-budget
+///                                         problem). No LLM call, no writes.
 ///   import-bible-ledger [--dry-run]       the bible's §14a closed plants / §14b dropped findings →
 ///                                         authored, locked Closed / Dropped rows (BCODA runbook step 3);
 ///                                         anchors resolved from "Ch<n> SK:<k>" exactly or listed as NEEDS ANCHOR
@@ -41,6 +49,14 @@ public static class ObligationCli
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var svc = services.GetRequiredService<NarrativeObligationService>();
+
+        // Read-only retrieval diagnostic. Keyed by obligation id (the row carries its own node),
+        // and it needs the finder + embeddings from DI, so it routes ahead of the author modes.
+        if (mode == "candidates")
+        {
+            if (!Guid.TryParse(Flag("--id"), out var oid)) { Console.Error.WriteLine("[obligations] --id <guid> is required."); return 2; }
+            return await RunCandidatesAsync(oid, args, json, services, dbFactory);
+        }
 
         // Modes keyed by obligation id don't need a slug.
         if (mode is "history" or "close" or "drop" or "defer" or "reopen" or "due" or "accept")
@@ -149,6 +165,159 @@ public static class ObligationCli
                 Console.Error.WriteLine($"[obligations] unknown mode '{mode}'.");
                 return 2;
         }
+    }
+
+    private sealed record CacheRow(string PromptVersion, string Relation, string? Quote);
+
+    private sealed record PayoffProbe(
+        string BeatId, bool InBook, int Chapter, int Position, bool AfterOrigin, bool InFinder,
+        IReadOnlyList<CacheRow> CacheRows, int? LexicalScore, int? LexicalRank, bool MeetsLexicalFloor,
+        double? EmbeddingSimilarity, int? EmbeddingRank, string Verdict);
+
+    /// <summary>
+    /// READ-ONLY retrieval diagnostic (RFC 0013). Re-runs the resurfacing judge's candidate finder
+    /// for one obligation and reports, for each named payoff beat, whether it was ever in the
+    /// candidate set. A payoff the judge saw and still called not_addressed is a recognition or
+    /// granularity problem; a payoff the finder never surfaced is a retrieval-budget problem. The
+    /// two demand opposite fixes, so the ranks below are the evidence that picks one. Costs one
+    /// embedding query and no LLM call; writes nothing.
+    /// </summary>
+    private static async Task<int> RunCandidatesAsync(Guid oid, string[] args, bool json, IServiceProvider services, IDbContextFactory<ProseDbContext> dbFactory)
+    {
+        var payoffs = new List<Guid>();
+        for (var i = 0; i < args.Length - 1; i++)
+            if (args[i] == "--payoff-beat" && Guid.TryParse(args[i + 1], out var pb)) payoffs.Add(pb);
+
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var o = await db.NarrativeObligations.AsNoTracking().FirstOrDefaultAsync(x => x.Id == oid);
+        if (o == null) { Console.Error.WriteLine("[obligations] not found."); return 1; }
+
+        var clock = await NarrativeObligationService.LoadClockAsync(db, o.NodeId, CancellationToken.None);
+        var finder = services.GetRequiredService<IObligationCandidateFinder>();
+        var k = ObligationResurfacingJudge.CandidatesPerObligation;
+        var found = await finder.FindAsync(o, clock, k, CancellationToken.None);
+
+        var cache = await db.ObligationJudgeCache.AsNoTracking()
+            .Where(c => c.ObligationId == oid).OrderBy(c => c.CreatedAt).ToListAsync();
+
+        // The deterministic half of the finder, recomputed over every later beat so a payoff that
+        // missed the cut gets a rank instead of a bare "absent".
+        var originPos = o.OriginBeatId is Guid ob ? clock.PositionOf(ob) : -1;
+        var laterIds = clock.Beats.Where(kv => kv.Value.Position > originPos).Select(kv => kv.Key).ToList();
+        var words = LexicalCandidateFinder.ContentWords(o.Description + " " + (o.OriginQuote ?? ""));
+        var texts = await db.Beats.AsNoTracking().Where(b => laterIds.Contains(b.Id))
+            .Select(b => new { b.Id, b.Text }).ToListAsync();
+        var lexRank = texts
+            .Select(b => (b.Id, Score: words.Count(w => (b.Text ?? "").Contains(w, StringComparison.OrdinalIgnoreCase))))
+            .OrderByDescending(x => x.Score)
+            .Select((x, i) => (x.Id, x.Score, Rank: i + 1))
+            .ToDictionary(x => x.Id, x => (x.Score, x.Rank));
+
+        // Embedding ranks over a deep sweep: the finder only ever asks for k*4, so a payoff outside
+        // that budget is invisible to it — this says how far outside.
+        const int DeepK = 400;
+        var embRank = new Dictionary<Guid, (double Similarity, int Rank)>();
+        string embNote;
+        var embeddings = services.GetService<EmbeddingService>();
+        if (embeddings == null) embNote = "EmbeddingService not registered — lexical only";
+        else
+        {
+            try
+            {
+                var hits = await embeddings.FindSimilarBeatNodesAsync(o.Description + " " + (o.OriginQuote ?? ""), DeepK, null, CancellationToken.None);
+                var later = hits.Where(h => clock.Beats.TryGetValue(h.ScopeId, out var p) && p.Position > originPos)
+                                .OrderByDescending(h => h.Similarity).ToList();
+                for (var i = 0; i < later.Count; i++) embRank[later[i].ScopeId] = (later[i].Similarity, i + 1);
+                embNote = $"{later.Count} of {hits.Count} top-{DeepK} corpus hits fall after the origin";
+            }
+            catch (Exception ex) { embNote = "embedding sweep FAILED (lexical ranks still valid): " + ex.Message; }
+        }
+
+        var probes = new List<PayoffProbe>();
+        foreach (var p in payoffs)
+        {
+            var inBook = clock.Beats.ContainsKey(p);
+            var pos = clock.PositionOf(p);
+            var after = pos > originPos;
+            var inFinder = found.Contains(p);
+            var rows = cache.Where(c => c.CandidateBeatId == p)
+                .Select(c => new CacheRow(c.PromptVersion, c.Relation, c.Quote)).ToList();
+            var lex = lexRank.TryGetValue(p, out var lr) ? lr : ((int Score, int Rank)?)null;
+            var emb = embRank.TryGetValue(p, out var er) ? er : ((double Similarity, int Rank)?)null;
+            var verdict =
+                !inBook  ? "NOT IN THIS BOOK — the beat id does not belong to this obligation's tree"
+                : !after ? "BEFORE THE ORIGIN — the finder only ever looks after the opening beat, so this can never be a candidate"
+                : inFinder ? (rows.Count > 0
+                    ? "RETRIEVED AND JUDGED — the judge saw this text and still did not close on it: a recognition/granularity problem, not retrieval"
+                    : "RETRIEVED, NOT YET JUDGED — in the candidate set but no cache row at any prompt version")
+                : rows.Count > 0 ? "NOT IN THE CURRENT CANDIDATE SET, but judged earlier — retrieval moved under it"
+                : "NEVER RETRIEVED — the judge was never shown this text: a retrieval-budget problem, not recognition";
+            probes.Add(new PayoffProbe(p.ToString("N"), inBook, clock.ChapterOf(p), pos, after, inFinder,
+                rows, lex?.Score, lex?.Rank, lex is { Score: >= 2 }, emb?.Similarity, emb?.Rank, verdict));
+        }
+
+        if (json)
+        {
+            Console.WriteLine(JsonSerializer.Serialize(new
+            {
+                obligation = new
+                {
+                    id = o.Id.ToString("N"), node_id = o.NodeId, kind = o.Kind, state = o.State.ToString(),
+                    description = o.Description, origin_quote = o.OriginQuote,
+                    origin_beat = o.OriginBeatId?.ToString("N"), origin_chapter = o.OriginBeatId is Guid g ? clock.ChapterOf(g) : 0,
+                },
+                retrieval = new
+                {
+                    finder = finder.GetType().Name, candidates_per_obligation = k,
+                    later_beats = laterIds.Count, content_words = words, embedding_note = embNote,
+                    candidates = found.Select(id => new
+                    {
+                        beat_id = id.ToString("N"), chapter = clock.ChapterOf(id), position = clock.PositionOf(id),
+                        lexical_score = lexRank.TryGetValue(id, out var l) ? l.Score : (int?)null,
+                        embedding_rank = embRank.TryGetValue(id, out var e) ? e.Rank : (int?)null,
+                        relation = cache.FirstOrDefault(c => c.CandidateBeatId == id)?.Relation,
+                    }).ToList(),
+                },
+                judge_cache = cache.Select(c => new { beat_id = c.CandidateBeatId.ToString("N"), chapter = clock.ChapterOf(c.CandidateBeatId), c.PromptVersion, c.Relation, c.Quote }).ToList(),
+                payoffs = probes,
+            }, Json));
+            return 0;
+        }
+
+        Console.WriteLine($"[obligations] candidates — {o.Kind} · {o.State} · {o.Id:N}");
+        Console.WriteLine($"  {Trunc(o.Description, 150)}");
+        if (!string.IsNullOrEmpty(o.OriginQuote)) Console.WriteLine($"  origin quote: \"{Trunc(o.OriginQuote, 130)}\"");
+        Console.WriteLine($"  origin: {(o.OriginBeatId is Guid g2 ? $"Ch{clock.ChapterOf(g2)} beat {g2:N} (position {originPos})" : "— none")}");
+        Console.WriteLine($"  finder: {finder.GetType().Name}, k={k} · {laterIds.Count} later beat(s) in range · {embNote}");
+        Console.WriteLine($"  content words ({words.Count}): {string.Join(" ", words.Take(24))}{(words.Count > 24 ? " …" : "")}");
+        Console.WriteLine($"\n  CANDIDATE SET ({found.Count}):");
+        foreach (var id in found)
+        {
+            var rel = cache.FirstOrDefault(c => c.CandidateBeatId == id)?.Relation ?? "—";
+            var l = lexRank.TryGetValue(id, out var lv) ? lv.Score.ToString() : "—";
+            var e = embRank.TryGetValue(id, out var ev) ? $"#{ev.Rank} ({ev.Similarity:F3})" : "—";
+            Console.WriteLine($"    Ch{clock.ChapterOf(id),-3} {id:N}  lex {l,-3} emb {e,-16} judged {rel}");
+        }
+        if (found.Count == 0) Console.WriteLine("    (none — the finder returned nothing; the judge counts this obligation not addressed without a call)");
+
+        if (cache.Count > 0)
+        {
+            Console.WriteLine($"\n  JUDGE CACHE ({cache.Count} row(s)):");
+            foreach (var c in cache)
+                Console.WriteLine($"    Ch{clock.ChapterOf(c.CandidateBeatId),-3} {c.CandidateBeatId:N}  {c.PromptVersion,-14} {c.Relation,-13} {(c.Quote == null ? "" : "\"" + Trunc(c.Quote, 90) + "\"")}");
+        }
+        else Console.WriteLine("\n  JUDGE CACHE: empty — this obligation has never been judged (a reset drops the cache).");
+
+        foreach (var p in probes)
+        {
+            Console.WriteLine($"\n  PAYOFF {p.BeatId} — Ch{p.Chapter}, position {p.Position}");
+            Console.WriteLine($"    in candidate set: {(p.InFinder ? "YES" : "no")}   lexical: {(p.LexicalScore is int s ? $"score {s}, rank #{p.LexicalRank} of {lexRank.Count}{(p.MeetsLexicalFloor ? "" : " — BELOW the score>=2 floor, the lexical finder can never return it")}" : "not scored")}");
+            Console.WriteLine($"    embedding: {(p.EmbeddingRank is int r ? $"rank #{r} of the later-beat sweep (similarity {p.EmbeddingSimilarity:F3}) — the finder only takes the top {k}" : $"outside the top {DeepK} of the corpus")}");
+            foreach (var row in p.CacheRows) Console.WriteLine($"    cached verdict: {row.PromptVersion} → {row.Relation}");
+            Console.WriteLine($"    → {p.Verdict}");
+        }
+        if (probes.Count == 0) Console.WriteLine("\n  (no --payoff-beat given — pass one or more to probe whether a specific payoff was ever retrievable)");
+        return 0;
     }
 
     private static string Trunc(string s, int max) => s.Length <= max ? s : s[..(max - 1)] + "…";
