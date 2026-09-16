@@ -23,8 +23,13 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     /// 6,000 chars, which is where the GCSH calibration injected its defects (recall 0.25).
     /// v3 (same day): the OPEN OBLIGATIONS list is chosen by <c>SelectForListing</c> (urgency +
     /// lexical relevance) instead of urgency alone — what the model is shown changed, so the
-    /// stamp changes.</summary>
-    public const string PromptVersion = "obl-extract-v3";
+    /// stamp changes.
+    /// v4 (2026-09-16): added an explicit rule that a detail the prose says went unnoticed
+    /// ("nobody set it going again", "none of them recognised it") is a strong plant signal — GCSH
+    /// calibration run 3 missed a seeded "violet seal ... no one remarked upon it" plant three
+    /// runs in a row even after v2's windowing fix, so this was a recall gap in the prompt itself,
+    /// not truncation.</summary>
+    public const string PromptVersion = "obl-extract-v4";
 
     /// <summary>Characters of beat text per LLM window. A beat longer than this is scanned in
     /// consecutive windows cut at sentence boundaries (<see cref="SplitIntoWindows"/>); every quote
@@ -69,6 +74,12 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
         behind a curtain; a child hidden in a vent with no reason to be there), a question raised,
         a promise or threat made, a wound taken, a detail planted to pay off later. Background
         texture — a passer-by who does nothing, weather, furniture — is NOT a debt.
+
+        One signal is easy to miss and almost always real: the prose explicitly saying a detail
+        went UNNOTICED — "nobody set it going again", "none of them recognised it", "no one
+        remarked upon it", "he did not ask why". A narrator does not spend a sentence telling you
+        a thing was ignored unless it matters later. Treat this phrasing as a strong plant signal
+        even when the detail itself (a clock, a seal, a color) looks like minor texture.
 
         Return ONE JSON object and nothing else, keys in this order:
           "reasoning": 3-6 sentences. What this beat sets up that is not resolved inside it; which

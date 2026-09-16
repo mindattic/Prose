@@ -140,14 +140,62 @@ public class ObligationCalibrationService(
         return rows.Count;
     }
 
+    /// <summary>Drop every machine-produced ledger row for the calibration book, and clear the scan
+    /// stamps, so the next rescan rebuilds the ledger from nothing.
+    ///
+    /// <para>Without this a run inherits the previous run's verdicts and is not an independent
+    /// measurement. GCSH runs 1–4 (2026-09-15/16) were all contaminated this way: run 3's judge
+    /// closed the injected "stopped clock" plant on an unrelated quote, and run 4 then scored that
+    /// same row as a miss — its close event was still run 3's, hours old, with no run-4 event on it
+    /// at all. A false close is terminal, because <see cref="ObligationResurfacingJudge"/> only
+    /// revisits Open/Advanced rows, so nothing could ever correct it.</para>
+    ///
+    /// <para>Authored and author-locked rows are human ground truth, not instrument output, and are
+    /// never touched. Beat text and the <see cref="CalibrationInjection"/> manifest are untouched
+    /// too — the injections live in the prose, not in the ledger.</para></summary>
+    public async Task<int> ResetLedgerAsync(Guid bookNodeId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        await GuardAsync(db, bookNodeId, ct);
+        var clock = await NarrativeObligationService.LoadClockAsync(db, bookNodeId, ct);
+        return await ResetLedgerAsync(db, bookNodeId, clock, ct);
+    }
+
+    private async Task<int> ResetLedgerAsync(ProseDbContext db, Guid bookNodeId, NarrativeObligationService.BookClock clock, CancellationToken ct)
+    {
+        var doomed = await db.NarrativeObligations
+            .Where(o => o.NodeId == bookNodeId && !o.AuthorLocked && o.Provenance != ClaimProvenance.Authored)
+            .Select(o => o.Id)
+            .ToListAsync(ct);
+        if (doomed.Count > 0)
+        {
+            // Children first: judge verdicts and journal events both point at the obligation.
+            await db.ObligationJudgeCache.Where(c => doomed.Contains(c.ObligationId)).ExecuteDeleteAsync(ct);
+            await db.NarrativeObligationEvents.Where(e => doomed.Contains(e.ObligationId)).ExecuteDeleteAsync(ct);
+            await db.NarrativeObligations.Where(o => doomed.Contains(o.Id)).ExecuteDeleteAsync(ct);
+        }
+        // The stamps must go too: ScanBeatAsync short-circuits on a current ObligationScanHash, so
+        // an un-stamped reset would rescan nothing and score an empty ledger.
+        var beatIds = clock.Beats.Keys.ToList();
+        await db.Beats.Where(b => beatIds.Contains(b.Id))
+            .ExecuteUpdateAsync(s => s.SetProperty(b => b.ObligationScanHash, (string?)null), ct);
+        log.LogInformation("Calibration: ledger reset for {Node} — dropped {Rows} machine row(s), cleared {Beats} scan stamp(s)", bookNodeId, doomed.Count, beatIds.Count);
+        return doomed.Count;
+    }
+
     /// <summary>Rescan the whole book (synchronously, in reading order), reconcile, and score the
-    /// instrument against the injection manifest. Findings are written so the run is auditable.</summary>
+    /// instrument against the injection manifest. Findings are written so the run is auditable.
+    /// The ledger is reset first (<see cref="ResetLedgerAsync(Guid, CancellationToken)"/>) so the
+    /// score measures this instrument, not the residue of every run before it.</summary>
     public async Task<Score> ScoreAsync(Guid bookNodeId, bool deep, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         await GuardAsync(db, bookNodeId, ct);
         var injections = await db.CalibrationInjections.AsNoTracking().Where(i => i.NodeId == bookNodeId).ToListAsync(ct);
         var clock = await NarrativeObligationService.LoadClockAsync(db, bookNodeId, ct);
+
+        // 0. Clean slate — every run is an independent measurement.
+        await ResetLedgerAsync(db, bookNodeId, clock, ct);
 
         // 1. Rescan in reading order so each beat sees the running ledger.
         foreach (var beatId in clock.Beats.OrderBy(kv => kv.Value.Position).Select(kv => kv.Key))

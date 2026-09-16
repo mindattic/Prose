@@ -142,6 +142,37 @@ public class ObligationResurfacingJudgeTests
         Assert.That((await db.ObligationJudgeCache.SingleAsync()).Relation, Is.EqualTo("ungrounded"));
     }
 
+    /// <summary>Pinned after GCSH calibration run 3 (2026-09-16): the judge closed a seeded "stopped
+    /// clock" plant using a real-but-unrelated sentence about a cigar and a tree — grounded (it is
+    /// literal text from that beat) but never actually about the debt. A "closes"/"advances" verdict
+    /// must now also share a content word with the obligation it claims to resolve, or it is vetoed
+    /// the same as an ungrounded quote. Must not recur.</summary>
+    [Test]
+    public async Task Judge_ClosesWithAGroundedButUnrelatedQuote_IsVetoed_ObligationStaysOpen()
+    {
+        var llm = new ScriptedLlm();
+        // beatIds[1] is real text, and the quote below is a literal substring of it (passes
+        // grounding) but shares no content word with the brass-whistle obligation.
+        var unrelatedButReal = "Watson read the paper and said nothing of consequence for a long while.";
+        Assert.That(unrelatedButReal, Is.EqualTo(await GetBeatTextAsync(beatIds[1])), "fixture assumption");
+        var judge = new ObligationResurfacingJudge(dbFactory, llm, new FixedFinder([beatIds[1]]), NullLogger<ObligationResurfacingJudge>.Instance);
+        llm.Enqueue($$"""{"reasoning":"r","verdicts":[{"beat_number":1,"relation":"closes","quote":"{{unrelatedButReal}}"}]}""");
+
+        var r = await judge.RunAsync(bookId);
+
+        Assert.That(r.Closed, Is.EqualTo(0), "a grounded-but-irrelevant quote must not close the debt");
+        Assert.That(r.DiscardedUngrounded, Is.EqualTo(1));
+        await using var db = dbFactory.CreateDbContext();
+        Assert.That((await db.NarrativeObligations.SingleAsync()).State, Is.EqualTo(ObligationState.Open));
+        Assert.That((await db.ObligationJudgeCache.SingleAsync()).Relation, Is.EqualTo("irrelevant"));
+    }
+
+    private async Task<string> GetBeatTextAsync(Guid beatId)
+    {
+        await using var db = dbFactory.CreateDbContext();
+        return (await db.Beats.SingleAsync(b => b.Id == beatId)).Text!;
+    }
+
     // ── scan-time listing ─────────────────────────────────────────────────────────
 
     [Test]

@@ -95,8 +95,12 @@ public class ObligationResurfacingJudge(
     /// <summary>Cache key. v2 (2026-09-15): a candidate longer than <see cref="MaxCandidateWords"/>
     /// is listed as consecutive parts instead of being cut — v1's cut dropped the tail of every
     /// ~1,100-word beat, which is where GCSH calibration run 2 had all four injected payoffs
-    /// (4/4 "not recognised" with the judge running). v1 verdicts on cut passages are void.</summary>
-    public const string PromptVersion = "obl-judge-v2";
+    /// (4/4 "not recognised" with the judge running). v1 verdicts on cut passages are void.
+    /// v3 (2026-09-16): a "closes"/"advances" verdict is now also vetoed when the quote shares no
+    /// content word with the obligation (see <see cref="SharesContent"/>) — run 3 closed "the
+    /// stopped clock" with an unrelated grounded-but-irrelevant quote. Bumped so every open
+    /// obligation is re-judged under the new gate rather than replaying v2's ungated verdicts.</summary>
+    public const string PromptVersion = "obl-judge-v3";
     public const int CandidatesPerObligation = 8;
     /// <summary>Words per listed passage. Never a cut: see <see cref="SplitPassages"/>.</summary>
     public const int MaxCandidateWords = 600;
@@ -190,6 +194,7 @@ public class ObligationResurfacingJudge(
                     if (rel is "closes" or "advances")
                     {
                         if (!QuoteGrounding.Contains(fullText[cand.BeatId], q, QuoteGrounding.MinObligationQuoteLength)) { rel = "ungrounded"; q = null; discarded++; }
+                        else if (!SharesContent(o, q!)) { rel = "irrelevant"; q = null; discarded++; }
                         else q = QuoteGrounding.ClampForStorage(q);   // nvarchar(400) — a paragraph is not a quote
                     }
                     if (!perBeat.TryGetValue(cand.BeatId, out var best) || Rank(rel) > Rank(best.Relation))
@@ -280,4 +285,18 @@ public class ObligationResurfacingJudge(
     }
 
     private static int Rank(string relation) => relation switch { "closes" => 3, "advances" => 2, "ungrounded" => 1, _ => 0 };
+
+    /// <summary>Hard veto on a "closes"/"advances" verdict whose quote is real text (grounding
+    /// passed) but shares no content word with the obligation it claims to resolve. This is the
+    /// gap that let the judge close "the stopped clock at a quarter past three" using an unrelated
+    /// sentence about smoking a cigar behind a tree (GCSH calibration run 3, 2026-09-15): grounded,
+    /// but never actually about the debt. Relevance is deliberately checked separately from
+    /// grounding — a quote can be real without being an answer.</summary>
+    internal static bool SharesContent(NarrativeObligation o, string quote)
+    {
+        var obligationWords = LexicalCandidateFinder.ContentWords(o.Description + " " + (o.OriginQuote ?? ""));
+        if (obligationWords.Count == 0) return true;
+        var quoteWords = new HashSet<string>(LexicalCandidateFinder.ContentWords(quote), StringComparer.OrdinalIgnoreCase);
+        return obligationWords.Any(quoteWords.Contains);
+    }
 }
