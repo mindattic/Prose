@@ -240,6 +240,23 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   coverage --slug <slug>` reports read-only and free which beats were read and the length
   distribution of the read vs unread groups — the evidence that confirms or kills the truncation
   hypothesis from run 6's residue before run 7 spends anything.
+- 2026-09-16 (GCTOC, ~$0.15 — **root cause of the unread beats, found by changing books**) — Run 6's
+  coverage hole had an unknown cause and a wrong leading suspect (truncation at the token ceiling).
+  Building the ledger on **GCTOC — A Tale of Two Cities, Book the First** (17 beats, 17,300 words,
+  ~1,018 words/beat — structurally comparable to GCSH's ~1,100, but one continuous narrative rather
+  than twelve self-contained mysteries) named it in one command: `scanned 17 of 17 … not evaluated 5`,
+  against exactly **5 beats over the 6,000-char window limit**. Computing each split: 6,255 → 5,900 +
+  **355**; 6,126 → 5,985 + **141**; 6,248 → 5,931 + **317**; 6,277 → 5,883 + **394**; 6,168 → 5,881 +
+  **287**. A beat a few percent over the limit splits into a real window plus a *scrap*; handed a
+  scrap with nothing in it the model answers in prose rather than JSON, `Parse` returns
+  `Evaluated: false`, and one unreadable window voids the **whole** beat — discarding the ~5,900
+  chars that read perfectly and leaving it unstamped. It is the opposite end of the beat from the
+  suspected truncation. GCSH's beats measure 5,525–6,825 chars, so roughly half cross 6,000: that is
+  exactly why run 6 read 55 of 96. The bias is systematic and was invisible — **the beats that vanish
+  are the long ones, in every book.** Fixed: `SplitIntoWindows` folds a trailing window under
+  `max/5` into its predecessor (an oversized window costs a few hundred tokens; a scrap costs the
+  beat), `obl-extract-v6` so every over-length beat is re-read. **Lesson: a second fixture of a
+  different shape found in one cheap command what six paid runs on one book could not.**
 - 2026-09-16 (harness defects fixed between runs 6 and 7, no LLM cost) — Two instrument problems
   that no amount of spending would have surfaced. (1) **The scorer could not fail.** Of the eight
   injections only the four ABANDONED ones were ever tallied TP/FN; of the four RESOLVED ones, only a
