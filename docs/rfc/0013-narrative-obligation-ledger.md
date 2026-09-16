@@ -137,6 +137,50 @@ On GCNEG / GCSH / GCTOC with N = 8–20 injected defects (half abandoned, half r
 10k words on the un-injected text, ≤ 10% of resolved injections mis-flagged. Any extractor or
 judge prompt change re-runs the harness before it ships (RFC 0010: re-admission by evidence).
 
+## 6a. GCTOC answer key — what Book the First actually owes (hand-read 2026-09-16)
+
+Written by reading the whole fixture **before** looking at any extracted ledger, so the instrument is
+graded against the book rather than against a rationalisation of its own output.
+
+**Opened AND paid inside Book the First** — a competent ledger must open and close each of these:
+
+| # | debt | origin quote | paid by |
+|---|---|---|---|
+| 1 | What "RECALLED TO LIFE" means | `Jerry, say that my answer was, RECALLED TO LIFE.` | `he has been--been found. He is alive.` (Ch4) |
+| 2 | Who "Mam'selle" is | `Wait at Dover for Mam'selle.` | `Miss Manette had arrived from London` (Ch4) |
+| 3 | Who the buried man of Lorry's dream is | `Buried how long?` / `Almost eighteen years.` | Dr Manette, 18 years in the North Tower (Ch4–6) |
+| 4 | Whether Lucie's father is really dead | `my poor father, whom I never saw--so long dead` | `Your father has been taken to the house of an old servant in Paris` (Ch4) |
+| 5 | Who the white-haired shoemaker is | `a white-haired man sat on a low bench, stooping forward and very busy, making shoes` | `Monsieur Manette, do you remember nothing of me?` (Ch6) |
+| 6 | What the golden hairs in the folded rag are | `it contained a very little quantity of hair` | `She had laid her head upon my shoulder, that night when I was summoned out` (Ch6) |
+
+**Legitimately CARRIED past the end of Book the First** — Dickens pays these in Books Two and Three.
+A correct ledger must hold them OPEN, and must not be scored for doing so:
+
+| # | debt | origin quote | paid in |
+|---|---|---|---|
+| 7 | Why Manette was imprisoned, and by whom | `worse than useless to seek to know whether he has been for years overlooked, or always designedly held prisoner` | Book the Third (the letter) |
+| 8 | Jerry Cruncher's night trade | `Jerry, you honest tradesman, it wouldn't suit _your_ line of business!` | Book the Second (Resurrection-Man) |
+| 9 | The wine-cask / BLOOD foreshadow | `scrawled upon a wall with his finger dipped in muddy wine-lees--BLOOD` | Book the Third |
+| 10 | The Woodman and the Farmer | `to make a certain movable framework with a sack and a knife in it, terrible in history` | Book the Third (guillotine, tumbrils) |
+| 11 | The lamplighter's ropes and pulleys | `hauling up men by those ropes and pulleys` | Book the Second (Foulon) |
+| 12 | Madame Defarge's knitting | `took up her knitting with great apparent calmness and repose of spirit, and became absorbed in it` | Books Two/Three (the register) |
+| 13 | "Jacques" as a shared name | `I choose them as real men, of my name--Jacques is my name` | Book the Second (the Jacquerie) |
+| 14 | The unnamed red-haired woman | `a wild-looking woman … all of a red colour` | Book the Second (Miss Pross) |
+| 15 | Manette's relapse risk | `he would be frightened--rave--tear himself to pieces--die` | Book the Second (after the wedding) |
+
+**The consequence for the bar, and it is not about the instrument.** A *perfect* reader of this
+fixture ends with **≈9 obligations outstanding** across 17,300 words. The calibration bar allows
+**≤ 1.0 MODERATE+ control finding per 10k words ≈ 1.7 for the whole book.** So a flawless ledger on
+A Tale of Two Cities, Book the First scores roughly **five times** the permitted control rate — by
+being right. The control metric treats outstanding-at-end as a false positive, which holds for GCSH
+(twelve self-contained stories that close what they open) and is simply false for the first act of a
+three-book novel, where unpaid debts are the structure. **BCODA is a novel, not a story collection.**
+Before any further tuning is bought, the bar needs a rule that distinguishes a debt the text
+abandons from a debt the text has not reached yet — most likely by scoring control findings only
+against a text that is structurally complete, or by scoring "outstanding at end" separately from
+"contradicted / abandoned". Until then, every precision number in this log is measured against a
+target that penalises correct behaviour on exactly the shape of book the engine exists to write.
+
 ## 7. Out of scope, by law
 
 Automatic payoff generation; rewriting accepted prose; a "fix all orphans" command; LLM ranking of
