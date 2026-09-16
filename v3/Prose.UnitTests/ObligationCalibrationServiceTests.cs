@@ -235,6 +235,53 @@ public class ObligationCalibrationServiceTests
     }
 
     [Test]
+    public void APartialRead_CannotMeetTheBar_HoweverGoodTheArithmetic()
+    {
+        // Perfect numbers: 8 TP, no misses, no mis-flags, no control findings.
+        var perfect = new ObligationCalibrationService.Score(
+            bookId, 8, 4, 4, TruePositives: 8, FalseNegatives: 0, ResolvedMisflagged: 0,
+            ControlFindingsModeratePlus: 0, WordCount: 100_000,
+            Precision: 1.0, Recall: 1.0, F1: 1.0, ControlFalsePositivesPer10k: 0, Details: Array.Empty<string>());
+
+        Assert.That((perfect with { BeatsTotal = 96, BeatsRead = 96 }).MeetsBar(), Is.True,
+            "a complete read with perfect numbers passes");
+
+        var partial = perfect with { BeatsTotal = 96, BeatsRead = 55 };
+        Assert.That(partial.CouldNotLook, Is.True);
+        Assert.That(partial.MeetsBar(), Is.False,
+            "GCSH run 6 read 55 of 96 beats and reported a score as if it had read the book; numbers over a partial read describe the beats that were read and nothing else");
+    }
+
+    [Test]
+    public void AFullRead_IsNotCouldNotLook()
+    {
+        var score = new ObligationCalibrationService.Score(
+            bookId, 8, 4, 4, 0, 0, 0, 0, 1000, 0, 0, 0, 0, Array.Empty<string>())
+            { BeatsTotal = 96, BeatsRead = 96 };
+
+        Assert.That(score.CouldNotLook, Is.False);
+    }
+
+    [Test]
+    public void ExtractorRecordsWhyABeatCouldNotBeRead()
+    {
+        // A response cut off at the token ceiling: an opening brace, no closing one.
+        var truncated = NarrativeObligationExtractor.Parse(
+            "{\"reasoning\":\"the beat opens a great many debts and the list runs on", beatText: "irrelevant", openCount: 0);
+        Assert.That(truncated.Evaluated, Is.False);
+        Assert.That(truncated.Failure, Does.Contain("truncated"),
+            "the truncation signature must be named in the log, or a half-read book looks like a clean one");
+
+        var garbage = NarrativeObligationExtractor.Parse("I'm sorry, I can't help with that.", "irrelevant", 0);
+        Assert.That(garbage.Evaluated, Is.False);
+        Assert.That(garbage.Failure, Is.Not.Null.And.Not.Empty);
+
+        var empty = NarrativeObligationExtractor.Parse("", "irrelevant", 0);
+        Assert.That(empty.Evaluated, Is.False);
+        Assert.That(empty.Failure, Is.EqualTo("empty response"));
+    }
+
+    [Test]
     public void ScorerVersion_IsStampedOnEveryScore()
     {
         var score = new ObligationCalibrationService.Score(

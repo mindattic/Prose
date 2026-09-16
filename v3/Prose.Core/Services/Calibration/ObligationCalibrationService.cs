@@ -69,8 +69,21 @@ public class ObligationCalibrationService(
         /// Under v1 both fell through as "ok", so recall counted only the abandoned half.</summary>
         public string ScorerVersion { get; init; } = ObligationCalibrationService.ScorerVersion;
 
+        /// <summary>Beats in the book, and how many the extractor actually READ during this run.
+        /// A beat whose extractor call returned an unreadable response is left unstamped and
+        /// contributes nothing — so an instrument that read half the book still produces a
+        /// full-looking score. GCSH run 6 read 55 of 96 and said nothing about it.</summary>
+        public int BeatsTotal { get; init; }
+        public int BeatsRead  { get; init; }
+        public bool CouldNotLook => BeatsTotal > 0 && BeatsRead < BeatsTotal;
+
+        /// <summary>An incomplete read can never meet the bar, whatever the arithmetic says: the
+        /// numbers describe the beats the instrument managed to read, and say nothing about the rest.
+        /// A partial run is void, not passing and not failing (RFC 0010 — zero findings can mean
+        /// "could not look").</summary>
         public bool MeetsBar(double minPrecision = 0.85, double minRecall = 0.70, double minF1 = 0.678, double maxControlPer10k = 1.0, double maxResolvedMisflagRate = 0.10) =>
-            Precision >= minPrecision && Recall >= minRecall && F1 >= minF1
+            !CouldNotLook
+            && Precision >= minPrecision && Recall >= minRecall && F1 >= minF1
             && ControlFalsePositivesPer10k <= maxControlPer10k
             && (Resolved == 0 || (double)ResolvedMisflagged / Resolved <= maxResolvedMisflagRate);
     }
@@ -255,13 +268,20 @@ public class ObligationCalibrationService(
         // 0. Clean slate — every run is an independent measurement.
         await ResetLedgerAsync(db, bookNodeId, clock, ct);
 
-        // 1. Rescan in reading order so each beat sees the running ledger.
+        // 1. Rescan in reading order so each beat sees the running ledger. Count what was actually
+        //    READ: a beat whose extractor call came back unreadable contributes nothing to the
+        //    ledger, and a score computed over a partial read is not a measurement of anything.
+        var beatsTotal = 0; var beatsRead = 0;
         foreach (var beatId in clock.Beats.OrderBy(kv => kv.Value.Position).Select(kv => kv.Key))
         {
             var text = await db.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstOrDefaultAsync(ct);
             if (text == null) continue;
-            await obligations.ScanBeatAsync(bookNodeId, beatId, BeatMarkup.StripEntityTags(text), ObligationActor.SystemRescan, ct);
+            beatsTotal++;
+            var scan = await obligations.ScanBeatAsync(bookNodeId, beatId, BeatMarkup.StripEntityTags(text), ObligationActor.SystemRescan, ct);
+            if (scan.Evaluated) beatsRead++;
         }
+        if (beatsRead < beatsTotal)
+            log.LogWarning("Calibration read only {Read} of {Total} beats — the score below describes the beats that were read and nothing else.", beatsRead, beatsTotal);
 
         // 2. Reconcile (+ deep judge).
         var report = await reconciler.RunAsync(bookNodeId, deep, writeFindings: true, ct);
@@ -299,7 +319,8 @@ public class ObligationCalibrationService(
         var f1 = precision + recall == 0 ? 0 : 2 * precision * recall / (precision + recall);
 
         return new Score(bookNodeId, injections.Count, injections.Count(i => i.Kind == "abandoned"), injections.Count(i => i.Kind == "resolved"),
-            tp, fn, resolvedMisflagged, control, words, precision, recall, f1, per10k, details);
+            tp, fn, resolvedMisflagged, control, words, precision, recall, f1, per10k, details)
+            { BeatsTotal = beatsTotal, BeatsRead = beatsRead };
     }
 
     private static async Task GuardAsync(ProseDbContext db, Guid bookNodeId, CancellationToken ct)

@@ -64,7 +64,14 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
         IReadOnlyList<TouchedItem> Touched,
         int DiscardedUngrounded,
         string Reasoning,
-        bool Evaluated);
+        bool Evaluated)
+    {
+        /// <summary>Why <see cref="Evaluated"/> is false, for the log. Null when the read succeeded.
+        /// Before 2026-09-16 every parse failure returned <c>Evaluated: false</c> silently, so a beat
+        /// the extractor could not read was indistinguishable from a beat that owed nothing — and
+        /// GCSH run 6 left 41 of 96 beats unread with nothing in the output saying so.</summary>
+        public string? Failure { get; init; }
+    }
 
     public sealed record Input(
         string BeatText,
@@ -131,7 +138,15 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
             // the cut is still legible; quotes are gated against the full beat, not the window.
             var prev = w == 0 ? input.PreviousTail : windows[w - 1];
             var part = await ExtractWindowAsync(input, windows[w], prev, w, windows.Count, ct);
-            if (!part.Evaluated) return new Result([], [], part.DiscardedUngrounded, part.Reasoning, Evaluated: false);
+            if (!part.Evaluated)
+            {
+                // One unreadable window voids the whole beat, including the windows that DID read —
+                // the beat goes unstamped so a later pass retries it as a unit rather than banking a
+                // partial read as complete.
+                log.LogWarning("Obligation extraction UNREAD: window {Window}/{Count} of a {Chars}-char beat — {Failure}. The whole beat is discarded and left unstamped.",
+                    w + 1, windows.Count, input.BeatText.Length, part.Failure ?? "no reason recorded");
+                return new Result([], [], part.DiscardedUngrounded, part.Reasoning, Evaluated: false) { Failure = part.Failure };
+            }
             parts.Add(part);
         }
         return parts.Count == 1 ? parts[0] : Merge(parts);
@@ -140,7 +155,7 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     /// <summary>Cut <paramref name="text"/> into consecutive pieces of at most <paramref name="max"/>
     /// chars, each ending at a sentence boundary where one exists in the back half of the window.
     /// The pieces concatenate (modulo trimmed spaces) back to the input — nothing is dropped.</summary>
-    internal static List<string> SplitIntoWindows(string text, int max)
+    public static List<string> SplitIntoWindows(string text, int max)
     {
         var windows = new List<string>();
         if (string.IsNullOrWhiteSpace(text)) return windows;
@@ -252,14 +267,19 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     /// contract is unit-testable without an LLM.</summary>
     internal static Result Parse(string? raw, string beatText, int openCount)
     {
-        if (string.IsNullOrWhiteSpace(raw)) return new Result([], [], 0, "", Evaluated: false);
+        if (string.IsNullOrWhiteSpace(raw)) return new Result([], [], 0, "", Evaluated: false) { Failure = "empty response" };
         var start = raw.IndexOf('{');
         var end   = raw.LastIndexOf('}');
-        if (start < 0 || end <= start) return new Result([], [], 0, "", Evaluated: false);
+        // No closing brace after an opening one is the signature of a response cut off at the token
+        // ceiling — which happens on exactly the beats that open the MOST obligations, so the reads
+        // this drops are the richest ones in the book, not a random sample.
+        if (start < 0 || end <= start)
+            return new Result([], [], 0, "", Evaluated: false)
+                { Failure = $"no JSON object in {raw.Length}-char response{(start >= 0 ? " (opened but never closed — truncated at the token ceiling)" : "")}" };
 
         JsonDocument doc;
         try { doc = JsonDocument.Parse(raw[start..(end + 1)]); }
-        catch (JsonException) { return new Result([], [], 0, "", Evaluated: false); }
+        catch (JsonException ex) { return new Result([], [], 0, "", Evaluated: false) { Failure = $"malformed JSON in {raw.Length}-char response: {ex.Message}" }; }
 
         using (doc)
         {

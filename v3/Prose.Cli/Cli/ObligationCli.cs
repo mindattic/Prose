@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
+using Prose.Core.Services.Audit;
 using Prose.Core.Services.Obligations;
 
 namespace Prose.Cli;
@@ -22,6 +23,10 @@ namespace Prose.Cli;
 ///   due           --id g --due chapter:7|beats:12|book-end
 ///   accept        --id g                  lock an extracted row as-is
 ///   rescan        [--beat-id g] [--force]  re-run the extractor over one beat / the whole book
+///   coverage                              READ-ONLY: which beats the extractor actually READ on the
+///                                         last scan, with the length distribution of the read vs
+///                                         unread groups. An unread beat contributes nothing and is
+///                                         otherwise indistinguishable from a beat that owes nothing.
 ///   candidates    --id g [--payoff-beat g …]  READ-ONLY retrieval diagnostic: what the resurfacing
 ///                                         judge's candidate finder returns for one obligation, what
 ///                                         the judge cache recorded, and — for each --payoff-beat —
@@ -134,6 +139,76 @@ public static class ObligationCli
                 Console.WriteLine($"  scanned {scanned} of {ordered.Count} (skipped {skipped} unchanged) — opened {opened}, advanced {advanced}, closed {closed}, ungrounded discarded {ungrounded}, not evaluated {notEvaluated}");
                 if (scanned == 0 && skipped == 0) Console.WriteLine("  COULD NOT LOOK — no beats.");
                 return notEvaluated > 0 ? 1 : 0;
+            }
+            case "coverage":
+            {
+                // READ-ONLY. Which beats the extractor actually READ, from the stamps the last scan
+                // left behind. A beat whose extractor response could not be parsed is left unstamped
+                // and contributes nothing, so an unread beat is indistinguishable from a beat that
+                // owes nothing — except here. Lengths are reported because the leading suspect is
+                // truncation at the token ceiling, which would make the UNREAD beats systematically
+                // longer than the read ones.
+                await using var db = await dbFactory.CreateDbContextAsync();
+                var clock = await NarrativeObligationService.LoadClockAsync(db, nodeId, CancellationToken.None);
+                var ids = clock.Beats.Keys.ToList();
+                var beats = await db.Beats.AsNoTracking().Where(b => ids.Contains(b.Id))
+                    .Select(b => new { b.Id, b.Text, b.ObligationScanHash }).ToListAsync();
+                var openedBy = (await db.NarrativeObligations.AsNoTracking()
+                        .Where(o => o.NodeId == nodeId && o.OriginBeatId != null)
+                        .Select(o => o.OriginBeatId!.Value).ToListAsync())
+                    .GroupBy(x => x).ToDictionary(g => g.Key, g => g.Count());
+
+                var rows = beats.Select(b =>
+                {
+                    var collapsed = QuoteGrounding.Normalize(BeatMarkup.StripEntityTags(b.Text ?? ""));
+                    return new
+                    {
+                        b.Id,
+                        Read = !string.IsNullOrEmpty(b.ObligationScanHash),
+                        Chapter = clock.ChapterOf(b.Id),
+                        Position = clock.PositionOf(b.Id),
+                        Chars = collapsed.Length,
+                        Windows = NarrativeObligationExtractor.SplitIntoWindows(collapsed, NarrativeObligationExtractor.MaxBeatChars).Count,
+                        Opened = openedBy.TryGetValue(b.Id, out var n) ? n : 0,
+                    };
+                }).OrderBy(r => r.Position).ToList();
+
+                var read = rows.Where(r => r.Read).ToList();
+                var unread = rows.Where(r => !r.Read).ToList();
+                static string Stats(IReadOnlyList<int> xs)
+                {
+                    if (xs.Count == 0) return "—";
+                    var s = xs.OrderBy(x => x).ToList();
+                    return $"median {s[s.Count / 2]:N0}, mean {xs.Average():N0}, max {xs.Max():N0}";
+                }
+
+                if (json)
+                {
+                    Console.WriteLine(JsonSerializer.Serialize(new
+                    {
+                        node_id = nodeId, title, beats_total = rows.Count, beats_read = read.Count, beats_unread = unread.Count,
+                        max_beat_chars = NarrativeObligationExtractor.MaxBeatChars,
+                        unread = unread.Select(r => new { beat_id = r.Id.ToString("N"), r.Chapter, r.Position, r.Chars, r.Windows }),
+                        read_chars = read.Select(r => r.Chars), unread_chars = unread.Select(r => r.Chars),
+                    }, Json));
+                    return unread.Count == 0 ? 0 : 1;
+                }
+
+                Console.WriteLine($"[obligations] COVERAGE — {title}");
+                Console.WriteLine($"  beats read by the extractor: {read.Count}/{rows.Count}" + (unread.Count == 0 ? "" : $"   UNREAD: {unread.Count}"));
+                Console.WriteLine($"  read   beat length (chars): {Stats(read.Select(r => r.Chars).ToList())}");
+                Console.WriteLine($"  unread beat length (chars): {Stats(unread.Select(r => r.Chars).ToList())}");
+                Console.WriteLine($"  window size: {NarrativeObligationExtractor.MaxBeatChars} chars · multi-window beats: {rows.Count(r => r.Windows > 1)} of {rows.Count} (unread: {unread.Count(r => r.Windows > 1)})");
+                if (unread.Count > 0)
+                {
+                    Console.WriteLine("\n  UNREAD BEATS (nothing in them was ever extracted):");
+                    foreach (var r in unread)
+                        Console.WriteLine($"    Ch{r.Chapter,-3} pos {r.Position,-4} {r.Id:N}  {r.Chars,6:N0} chars  {r.Windows} window(s)");
+                    Console.WriteLine("\n  If the unread beats are systematically longer than the read ones, the extractor response is");
+                    Console.WriteLine("  being cut at the token ceiling and the parse fails — a defect in the instrument, not the book.");
+                }
+                else Console.WriteLine("\n  Every beat was read. A finding of zero here means zero, not \"could not look\".");
+                return unread.Count == 0 ? 0 : 1;
             }
             case "import-bible-ledger":
             {
