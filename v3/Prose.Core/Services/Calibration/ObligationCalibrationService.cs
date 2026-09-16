@@ -77,6 +77,19 @@ public class ObligationCalibrationService(
         public int BeatsRead  { get; init; }
         public bool CouldNotLook => BeatsTotal > 0 && BeatsRead < BeatsTotal;
 
+        /// <summary>Control findings by rule key, and how many of them are merely "the text has not
+        /// paid this yet" (<c>overdue_open</c>, <c>open_at_end</c>). The distinction is not
+        /// cosmetic: on the first act of a novel an unpaid debt is the structure, not a defect.
+        /// Hand-reading GCTOC Book the First found ~9 debts Dickens deliberately carries into Books
+        /// Two and Three, against a whole-book control budget of ~1.7 — so a PERFECT ledger there
+        /// misses the bar by ~5x for being right. Everything outside those two rules is a genuine
+        /// false positive on any book: a closure on text that changed, an origin pointing nowhere,
+        /// a payoff with no plant.</summary>
+        public IReadOnlyDictionary<string, int> ControlByRule { get; init; } = new Dictionary<string, int>();
+        public int ControlStillOpen { get; init; }
+        /// <summary>Control findings that indicate a broken ledger rather than an unpaid debt.</summary>
+        public int ControlStructural => ControlFindingsModeratePlus - ControlStillOpen;
+
         /// <summary>An incomplete read can never meet the bar, whatever the arithmetic says: the
         /// numbers describe the beats the instrument managed to read, and say nothing about the rest.
         /// A partial run is void, not passing and not failing (RFC 0010 — zero findings can mean
@@ -308,8 +321,19 @@ public class ObligationCalibrationService(
         }
 
         // Control false positives: MODERATE+ verdicts whose origin is NOT an injected beat.
-        var control = report.Verdicts.Count(v => v.Severity is "BLOCKER" or "MODERATE"
-            && (v.Location == null || !Guid.TryParse(v.Location, out var loc) || !injectedBeatIds.Contains(loc)));
+        var controlVerdicts = report.Verdicts.Where(v => v.Severity is "BLOCKER" or "MODERATE"
+            && (v.Location == null || !Guid.TryParse(v.Location, out var loc) || !injectedBeatIds.Contains(loc))).ToList();
+        var control = controlVerdicts.Count;
+        // Split by rule, because the two halves mean opposite things. "overdue_open"/"open_at_end"
+        // say the text has not paid a debt YET — correct on the first act of a novel, where the
+        // unpaid debts are the structure (hand-reading GCTOC Book the First found ~9 that Dickens
+        // pays in Books Two and Three, against a whole-book budget of ~1.7). Every other rule says
+        // the LEDGER is broken — a closure on vanished text, an origin pointing nowhere, a payoff
+        // with no plant — and those are false positives on any book. Run 6 scored 99 control
+        // findings of which every one was the first kind and none the second.
+        var controlByRule = controlVerdicts.GroupBy(v => v.RuleKey ?? "(none)")
+            .ToDictionary(g => g.Key, g => g.Count());
+        var controlStillOpen = controlVerdicts.Count(v => v.RuleKey is "overdue_open" or "open_at_end");
         var words = report.Snapshot?.WordCount ?? await WordCountAsync(db, clock, ct);
         var per10k = words > 0 ? control * 10_000.0 / words : 0;
 
@@ -320,7 +344,7 @@ public class ObligationCalibrationService(
 
         return new Score(bookNodeId, injections.Count, injections.Count(i => i.Kind == "abandoned"), injections.Count(i => i.Kind == "resolved"),
             tp, fn, resolvedMisflagged, control, words, precision, recall, f1, per10k, details)
-            { BeatsTotal = beatsTotal, BeatsRead = beatsRead };
+            { BeatsTotal = beatsTotal, BeatsRead = beatsRead, ControlByRule = controlByRule, ControlStillOpen = controlStillOpen };
     }
 
     private static async Task GuardAsync(ProseDbContext db, Guid bookNodeId, CancellationToken ct)

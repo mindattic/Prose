@@ -62,6 +62,11 @@ public static class ObligationCalibrationCli
                 Console.WriteLine($"  TP {score.TruePositives}  FN {score.FalseNegatives}  resolved mis-flagged {score.ResolvedMisflagged}  control MODERATE+ findings {score.ControlFindingsModeratePlus} ({score.ControlFalsePositivesPer10k:F2}/10k words)");
                 Console.WriteLine($"  precision {score.Precision:F3}  recall {score.Recall:F3}  F1 {score.F1:F3}");
                 Console.WriteLine($"  beats READ by the extractor: {score.BeatsRead}/{score.BeatsTotal}");
+                Console.WriteLine($"  control split: {score.ControlStillOpen} \"not paid yet\" (overdue_open/open_at_end) + {score.ControlStructural} structural (broken ledger)");
+                if (score.ControlByRule.Count > 0)
+                    Console.WriteLine("    by rule: " + string.Join(", ", score.ControlByRule.OrderByDescending(kv => kv.Value).Select(kv => $"{kv.Key}={kv.Value}")));
+                if (score.ControlStructural == 0 && score.ControlStillOpen > 0)
+                    Console.WriteLine("    NOTE: every control finding is an unpaid debt, none is a broken ledger. On a self-contained text that is over-extraction; on the first act of a novel it is the structure. The bar does not currently tell these apart.");
                 foreach (var d in score.Details) Console.WriteLine("  " + d);
                 if (score.CouldNotLook)
                     Console.WriteLine($"  RESULT: VOID — COULD NOT LOOK. The extractor never read {score.BeatsTotal - score.BeatsRead} of {score.BeatsTotal} beats, so every number above describes a partial book. This is not a pass and not a fail: fix the unread beats and re-run before tuning anything.");
