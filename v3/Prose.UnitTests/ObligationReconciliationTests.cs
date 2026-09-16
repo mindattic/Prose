@@ -202,7 +202,9 @@ public class ObligationReconciliationTests
     public void JudgeParse_KeepsOnlyKnownRelations()
     {
         var raw = """{"reasoning":"r","verdicts":[{"beat_number":1,"relation":"closes","quote":"nowhere else to leave her"},{"beat_number":2,"relation":"maybe","quote":null},{"beat_number":3,"relation":"not_addressed","quote":null}]}""";
-        var v = ObligationResurfacingJudge.Parse(raw);
+        var parsed = ObligationResurfacingJudge.Parse(raw);
+        Assert.That(parsed.Parsed, Is.True);
+        var v = parsed.Verdicts;
         Assert.That(v.Select(x => x.Number), Is.EqualTo(new[] { 1, 3 }));
         Assert.That(v[0].Relation, Is.EqualTo("closes"));
     }

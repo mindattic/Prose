@@ -252,6 +252,64 @@ public class ObligationResurfacingJudgeTests
         return new NarrativeObligationService.BookClock { BookNodeId = Guid.CreateVersion7(), ChapterIds = chapterIds, Beats = dict, ChapterTitles = titles };
     }
 
+    // ── a response the judge cannot read is NOT the model saying "not addressed" ──────────────
+
+    [Test]
+    public void Parse_TruncatedResponse_IsReportedAsUnread_NotAsAnEmptyVerdictList()
+    {
+        // The exact shape the GCTOC logs recorded: the object opens, the token ceiling arrives,
+        // nothing closes it. Before this, the empty list that came back was indistinguishable from
+        // a model that had genuinely found nothing — and every candidate was then CACHED as
+        // not_addressed, which the judge never revisits.
+        var cut = """{"reasoning":"The passage returns to the debt at length, and the""";
+
+        var parsed = ObligationResurfacingJudge.Parse(cut);
+
+        Assert.That(parsed.Parsed, Is.False, "a cut-off answer is an unread answer");
+        Assert.That(parsed.Verdicts, Is.Empty);
+        Assert.That(parsed.Failure, Does.Contain("token ceiling"));
+    }
+
+    [Test]
+    public void Parse_MalformedAndEmptyResponses_AreUnread_AndAGenuineEmptyVerdictListIsNot()
+    {
+        Assert.That(ObligationResurfacingJudge.Parse("").Parsed, Is.False, "empty");
+        Assert.That(ObligationResurfacingJudge.Parse("I'm sorry, I can't help with that.").Parsed, Is.False, "no JSON at all");
+        Assert.That(ObligationResurfacingJudge.Parse("""{"reasoning":"x","verdicts":[{"beat_number":1,""").Parsed, Is.False, "malformed");
+        Assert.That(ObligationResurfacingJudge.Parse("""{"reasoning":"x"}""").Parsed, Is.False, "no verdicts array is not a verdict of none");
+
+        // The one case that IS a real answer of "nothing here".
+        var none = ObligationResurfacingJudge.Parse("""{"reasoning":"nothing addresses it","verdicts":[]}""");
+        Assert.That(none.Parsed, Is.True, "an explicit empty verdicts array is the model answering, and must still count");
+        Assert.That(none.Verdicts, Is.Empty);
+        Assert.That(none.Failure, Is.Null);
+    }
+
+    [Test]
+    public async Task Judge_AnswerCutOffAtTheTokenCeiling_CachesNothing_AndLeavesTheDebtStanding()
+    {
+        var llm = new ScriptedLlm();
+        var finder = new FixedFinder([beatIds[2]]);
+        var judge = new ObligationResurfacingJudge(dbFactory, llm, finder, NullLogger<ObligationResurfacingJudge>.Instance);
+
+        // The GCTOC shape: the object opens, the ceiling arrives, nothing closes it.
+        llm.Enqueue("""{"reasoning":"The passage does return to the whistle, and the coachman""");
+
+        var r = await judge.RunAsync(bookId);
+
+        Assert.That(r.Evaluated, Is.False, "the run must admit it could not read the answer");
+        Assert.That(r.Closed, Is.EqualTo(0));
+
+        await using var db = dbFactory.CreateDbContext();
+        var cache = await db.ObligationJudgeCache.ToListAsync();
+        Assert.That(cache, Is.Empty,
+            "an unreadable answer must cache NOTHING — recording not_addressed would bury a real payoff behind a row the judge never revisits");
+
+        var row = await db.NarrativeObligations.SingleAsync();
+        Assert.That(row.State, Is.EqualTo(ObligationState.Open),
+            "the debt stands exactly as it was: neither closed nor written off");
+    }
+
     private static NarrativeObligationService.BookClock OneChapterClock(int beats)
     {
         var ch = Guid.CreateVersion7();

@@ -99,8 +99,12 @@ public class ObligationResurfacingJudge(
     /// v3 (2026-09-16): a "closes"/"advances" verdict is now also vetoed when the quote shares no
     /// content word with the obligation (see <see cref="SharesContent"/>) — run 3 closed "the
     /// stopped clock" with an unrelated grounded-but-irrelevant quote. Bumped so every open
-    /// obligation is re-judged under the new gate rather than replaying v2's ungated verdicts.</summary>
-    public const string PromptVersion = "obl-judge-v3";
+    /// obligation is re-judged under the new gate rather than replaying v2's ungated verdicts.
+    /// v4 (2026-09-16): the output ceiling rose from 1200 tokens, and a response that cannot be
+    /// parsed no longer counts as "not addressed". Both defects pushed the same way — toward
+    /// silently declaring a debt unpaid — and every v3 verdict was cast under them, so they are
+    /// re-judged rather than replayed.</summary>
+    public const string PromptVersion = "obl-judge-v4";
     public const int CandidatesPerObligation = 8;
     /// <summary>Words per listed passage. Never a cut: see <see cref="SplitPassages"/>.</summary>
     public const int MaxCandidateWords = 600;
@@ -176,7 +180,7 @@ public class ObligationResurfacingJudge(
                     {string.Join("\n\n", listed.Select(l => $"[{l.Number}] (Ch{clock.ChapterOf(l.BeatId)}{(l.Parts > 1 ? $", part {l.Part} of {l.Parts}" : "")})\n{l.Text}"))}
                     """;
                 string raw;
-                try { raw = await llm.GenerateAsync(SystemPrompt, user, temperature: 0.1, maxTokens: 1200, model: LlmModels.Haiku, ct: ct); calls++; }
+                try { raw = await llm.GenerateAsync(SystemPrompt, user, temperature: 0.1, maxTokens: NarrativeObligationExtractor.MaxResponseTokens, model: LlmModels.Haiku, ct: ct); calls++; }
                 catch (Exception ex) when (ex is not OperationCanceledException)
                 {
                     log.LogWarning(ex, "Resurfacing judge call failed for obligation {Id}", o.Id);
@@ -184,8 +188,20 @@ public class ObligationResurfacingJudge(
                     continue;
                 }
 
+                var parsed = Parse(raw);
+                if (!parsed.Parsed)
+                {
+                    // Cache nothing. An unreadable answer leaves these candidates UNJUDGED, so a
+                    // later pass asks again; recording them as not_addressed would bury a real
+                    // payoff behind a cache row that is never revisited.
+                    log.LogWarning("Resurfacing judge UNREAD for obligation {Id} ({Candidates} candidate(s)): {Failure}. Nothing cached; the candidates stay unjudged.",
+                        o.Id, toJudge.Count, parsed.Failure);
+                    evaluated = false;
+                    continue;
+                }
+
                 var perBeat = new Dictionary<Guid, (string Relation, string? Quote)>();
-                foreach (var (number, relation, quote) in Parse(raw))
+                foreach (var (number, relation, quote) in parsed.Verdicts)
                 {
                     if (number < 1 || number > listed.Count) continue;
                     var cand = listed[number - 1];
@@ -249,16 +265,26 @@ public class ObligationResurfacingJudge(
         return new DeepResult(examined, closed, advanced, notAddressed, discarded, cacheHits, calls, evaluated);
     }
 
-    internal static List<(int Number, string Relation, string? Quote)> Parse(string? raw)
+    /// <summary>Whether the model's answer could be read at all, and why not when it could not.
+    /// The distinction is the whole point: a response that failed to parse is NOT the model saying
+    /// "not addressed". Before 2026-09-16 the two were identical here — a truncated response
+    /// yielded an empty verdict list, every candidate fell through to not_addressed, and those
+    /// verdicts were WRITTEN TO THE CACHE, so a real payoff was permanently recorded as unrecognised
+    /// and never re-judged. That is the silent half of "payoff not recognised" across runs 2-6.</summary>
+    internal sealed record JudgeParse(bool Parsed, string? Failure, List<(int Number, string Relation, string? Quote)> Verdicts);
+
+    internal static JudgeParse Parse(string? raw)
     {
         var list = new List<(int, string, string?)>();
-        if (string.IsNullOrWhiteSpace(raw)) return list;
+        if (string.IsNullOrWhiteSpace(raw)) return new JudgeParse(false, "empty response", list);
         var start = raw.IndexOf('{'); var end = raw.LastIndexOf('}');
-        if (start < 0 || end <= start) return list;
+        if (start < 0 || end <= start)
+            return new JudgeParse(false, $"no JSON object in {raw.Length}-char response{(start >= 0 ? " (opened but never closed — cut at the token ceiling)" : "")}", list);
         try
         {
             using var doc = JsonDocument.Parse(raw[start..(end + 1)]);
-            if (!doc.RootElement.TryGetProperty("verdicts", out var arr) || arr.ValueKind != JsonValueKind.Array) return list;
+            if (!doc.RootElement.TryGetProperty("verdicts", out var arr) || arr.ValueKind != JsonValueKind.Array)
+                return new JudgeParse(false, "response carried no \"verdicts\" array", list);
             foreach (var v in arr.EnumerateArray())
             {
                 var n = v.TryGetProperty("beat_number", out var bn) && bn.ValueKind == JsonValueKind.Number && bn.TryGetInt32(out var i) ? i : 0;
@@ -268,8 +294,8 @@ public class ObligationResurfacingJudge(
                 list.Add((n, rel!, q));
             }
         }
-        catch (JsonException) { }
-        return list;
+        catch (JsonException ex) { return new JudgeParse(false, $"malformed JSON in {raw.Length}-char response: {ex.Message}", list); }
+        return new JudgeParse(true, null, list);
     }
 
     /// <summary>Consecutive word-windows of at most <paramref name="maxWords"/> words. Every word

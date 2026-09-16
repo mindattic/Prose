@@ -37,13 +37,27 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     /// predecessor. Beats a few percent over the limit were splitting into a full window plus a
     /// 141–394-char scrap; the scrap came back as prose rather than JSON, and one unreadable window
     /// voids the whole beat — which is why GCSH run 6 read only 55 of 96 beats and GCTOC 12 of 17.
-    /// Every beat over the limit must be re-read, so the stamp changes.</summary>
-    public const string PromptVersion = "obl-extract-v6";
+    /// Every beat over the limit must be re-read, so the stamp changes.
+    /// v7 (2026-09-16): the real cause of the unread beats — <see cref="MaxResponseTokens"/> raised
+    /// from 1400. The scrap-window fix in v6 removed windowing entirely on GCTOC (0 multi-window
+    /// beats) and the failure rate did not move, because the responses were being cut at the OUTPUT
+    /// ceiling, not the input one. Every beat must be re-read under the raised ceiling.</summary>
+    public const string PromptVersion = "obl-extract-v7";
 
     /// <summary>Characters of beat text per LLM window. A beat longer than this is scanned in
     /// consecutive windows cut at sentence boundaries (<see cref="SplitIntoWindows"/>); every quote
     /// is still gated against the WHOLE beat. Nothing is ever dropped.</summary>
     public const int MaxBeatChars = 6000;
+
+    /// <summary>Output ceiling for one extraction call. Was 1400, which is ~5,600 characters of
+    /// JSON — and the GCTOC warnings show every unread beat died at exactly that wall: responses of
+    /// 5,270–5,671 chars, all "an open JSON object or array that should be closed", against
+    /// successes of 1,900–5,262. A dense beat's reasoning plus its opened rows with verbatim quotes
+    /// simply does not fit, the object is cut mid-write, the parse fails, and the WHOLE beat is
+    /// discarded. The ceiling silently decided how much of a book the ledger was allowed to see —
+    /// and it cut hardest on the beats that owe the most. Output is billed per token generated, so
+    /// headroom costs nothing on a response that was already short.</summary>
+    public const int MaxResponseTokens = 8000;
     public const int MaxPreviousTailChars = 1500;
     /// <summary>Open obligations shown to the model per beat. The model can only pay a debt it is
     /// shown, so <see cref="NarrativeObligationService.SelectForListing"/> fills slots by locality,
@@ -272,7 +286,7 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
         string raw;
         try
         {
-            raw = await llm.GenerateAsync(SystemPrompt, user, temperature: 0.1, maxTokens: 1400, model: LlmModels.Haiku, ct: ct);
+            raw = await llm.GenerateAsync(SystemPrompt, user, temperature: 0.1, maxTokens: MaxResponseTokens, model: LlmModels.Haiku, ct: ct);
         }
         catch (Exception ex) when (ex is not OperationCanceledException)
         {
