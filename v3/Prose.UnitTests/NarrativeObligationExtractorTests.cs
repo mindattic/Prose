@@ -63,6 +63,35 @@ public class NarrativeObligationExtractorTests
     }
 
     [Test]
+    public void SplitIntoWindows_ABeatJustOverTheLimit_IsOneWindow_NotAWindowPlusAScrap()
+    {
+        // The GCTOC shape: 6,255 chars against a 6,000 limit. Before the fold this split into
+        // ~5,900 + a 355-char scrap. The model answers a scrap in prose, not JSON, and ONE
+        // unreadable window voids the whole beat — which is how GCSH run 6 lost 41 of 96 beats
+        // and GCTOC 5 of 17, in both cases exactly the over-length ones.
+        var sentence = "The mail coach laboured up the hill through the mud and the steam of its own horses. ";
+        var text = string.Concat(Enumerable.Repeat(sentence, 75));   // ~6,300 chars
+        Assert.That(text.Length, Is.GreaterThan(6000).And.LessThan(7200), "the just-over-the-limit shape");
+
+        var windows = NarrativeObligationExtractor.SplitIntoWindows(text, 6000);
+
+        Assert.That(windows, Has.Count.EqualTo(1), "a 4% overflow must not cost the beat its whole read");
+        Assert.That(windows[0], Is.EqualTo(text.Trim()), "nothing dropped by the fold");
+    }
+
+    [Test]
+    public void SplitIntoWindows_FoldsOnlyAScrap_NotASubstantialTail()
+    {
+        var sentence = "The mail coach laboured up the hill through the mud and the steam of its own horses. ";
+        var text = string.Concat(Enumerable.Repeat(sentence, 200));   // ~16,800 chars
+        var windows = NarrativeObligationExtractor.SplitIntoWindows(text, 6000);
+
+        Assert.That(windows.Count, Is.GreaterThanOrEqualTo(3), "a genuinely long beat still windows");
+        Assert.That(windows[^1].Length, Is.GreaterThanOrEqualTo(6000 / 5), "a real tail is left alone");
+        Assert.That(string.Join(" ", windows), Is.EqualTo(text.Trim()), "nothing dropped, nothing duplicated");
+    }
+
+    [Test]
     public void SplitIntoWindows_NoSentenceBoundary_HardCutsRatherThanDropping()
     {
         var text = new string('x', 15000);

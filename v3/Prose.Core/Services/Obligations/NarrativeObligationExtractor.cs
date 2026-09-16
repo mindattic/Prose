@@ -32,8 +32,13 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     /// v5 (2026-09-16): <c>SelectForListing</c> leads with LOCALITY (debts opened in this chapter)
     /// instead of urgency — run 5 showed closing degrades as the open pile grows (ch1 82%, later
     /// chapters 15–59% on twelve identical self-contained stories). What the model is shown
-    /// changed, so the stamp changes.</summary>
-    public const string PromptVersion = "obl-extract-v5";
+    /// changed, so the stamp changes.
+    /// v6 (2026-09-16): a trailing window shorter than <c>max/5</c> is folded back into its
+    /// predecessor. Beats a few percent over the limit were splitting into a full window plus a
+    /// 141–394-char scrap; the scrap came back as prose rather than JSON, and one unreadable window
+    /// voids the whole beat — which is why GCSH run 6 read only 55 of 96 beats and GCTOC 12 of 17.
+    /// Every beat over the limit must be re-read, so the stamp changes.</summary>
+    public const string PromptVersion = "obl-extract-v6";
 
     /// <summary>Characters of beat text per LLM window. A beat longer than this is scanned in
     /// consecutive windows cut at sentence boundaries (<see cref="SplitIntoWindows"/>); every quote
@@ -154,7 +159,10 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
 
     /// <summary>Cut <paramref name="text"/> into consecutive pieces of at most <paramref name="max"/>
     /// chars, each ending at a sentence boundary where one exists in the back half of the window.
-    /// The pieces concatenate (modulo trimmed spaces) back to the input — nothing is dropped.</summary>
+    /// The pieces concatenate (modulo trimmed spaces) back to the input — nothing is dropped.
+    /// One exception to the size cap: a trailing piece under <paramref name="max"/>/5 is folded into
+    /// its predecessor, which may then run over. A scrap window is far more expensive than an
+    /// oversized one — see the comment at the fold.</summary>
     public static List<string> SplitIntoWindows(string text, int max)
     {
         var windows = new List<string>();
@@ -171,6 +179,19 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
         }
         var last = text[pos..].Trim();
         if (last.Length > 0) windows.Add(last);
+
+        // A beat a few percent over the limit used to split into a full window plus a SCRAP — on the
+        // GCTOC fixture, tails of 141-394 chars. Handed a scrap with nothing in it, the model answers
+        // in prose rather than JSON; Parse finds no object, and one unreadable window voids the WHOLE
+        // beat (see ExtractAsync), throwing away the ~5,900 chars that read perfectly. That is why
+        // GCSH run 6 read 55 of 96 beats and GCTOC 12 of 17: in both books it was exactly the
+        // over-length beats that vanished. A slightly oversized window costs a few hundred tokens;
+        // a scrap costs the whole beat. Fold it back.
+        if (windows.Count > 1 && windows[^1].Length < max / 5)
+        {
+            windows[^2] = windows[^2] + " " + windows[^1];
+            windows.RemoveAt(windows.Count - 1);
+        }
         return windows;
     }
 
