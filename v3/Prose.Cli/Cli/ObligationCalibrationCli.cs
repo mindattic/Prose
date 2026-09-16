@@ -58,7 +58,7 @@ public static class ObligationCalibrationCli
             {
                 var score = await svc.ScoreAsync(root, args.Contains("--deep"));
                 if (args.Contains("--json")) { Console.WriteLine(JsonSerializer.Serialize(new { score, meets_bar = score.MeetsBar() }, new JsonSerializerOptions { WriteIndented = true })); return score.MeetsBar() ? 0 : 1; }
-                Console.WriteLine($"[calibration] {slug} — {score.Injected} injection(s): {score.Abandoned} abandoned, {score.Resolved} resolved · {score.WordCount:N0} words");
+                Console.WriteLine($"[calibration] {slug} — {score.Injected} injection(s): {score.Abandoned} abandoned, {score.Resolved} resolved · {score.WordCount:N0} words · scorer {score.ScorerVersion}");
                 Console.WriteLine($"  TP {score.TruePositives}  FN {score.FalseNegatives}  resolved mis-flagged {score.ResolvedMisflagged}  control MODERATE+ findings {score.ControlFindingsModeratePlus} ({score.ControlFalsePositivesPer10k:F2}/10k words)");
                 Console.WriteLine($"  precision {score.Precision:F3}  recall {score.Recall:F3}  F1 {score.F1:F3}");
                 foreach (var d in score.Details) Console.WriteLine("  " + d);

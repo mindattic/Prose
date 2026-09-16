@@ -149,6 +149,101 @@ public class ObligationCalibrationServiceTests
         Assert.That(ex.Message, Does.Contain("Refusing to write"));
     }
 
+    // ── The scoring rule (ObligationCalibrationService.Classify) ──────────────────────────────
+    // Pinned after GCSH run 5 reported "recall 1.000" that covered only the four ABANDONED
+    // injections. The resolved half never reached the tally at all: a row the extractor never
+    // opened — a total miss — printed "ok — no row (never opened)" and scored as a PASS.
+
+    private static CalibrationInjection Injection(string kind) => new()
+    {
+        NodeId = Guid.CreateVersion7(), BeatId = Guid.CreateVersion7(), Kind = kind,
+        Sentence = "The letter carried a violet seal that none of them recognised, and no one remarked upon it.",
+        PayoffBeatId = Guid.CreateVersion7(),
+    };
+
+    private static NarrativeObligation Row(string state) => new()
+    {
+        Id = Guid.CreateVersion7(), NodeId = Guid.CreateVersion7(), Kind = ObligationKind.Plant,
+        Description = "The violet seal.", State = state,
+    };
+
+    [Test]
+    public void Classify_ResolvedInjectionNeverOpened_IsAMiss_NotAPass()
+    {
+        var (outcome, detail) = ObligationCalibrationService.Classify(Injection("resolved"), match: null, flaggedByRule: false);
+
+        Assert.That(outcome, Is.EqualTo(ObligationCalibrationService.InjectionOutcome.FalseNegative),
+            "a planted debt the extractor never opened is the worst outcome available; scoring it 'ok' hid extraction misses behind a perfect recall number");
+        Assert.That(detail, Does.StartWith("FN"));
+        Assert.That(detail, Does.Contain("never opened"));
+    }
+
+    [Test]
+    public void Classify_ResolvedInjectionOpenedAndClosed_IsATruePositive()
+    {
+        var (outcome, detail) = ObligationCalibrationService.Classify(
+            Injection("resolved"), Row(ObligationState.Closed), flaggedByRule: false);
+
+        Assert.That(outcome, Is.EqualTo(ObligationCalibrationService.InjectionOutcome.TruePositive),
+            "counting the miss as FN without crediting the success as TP would bias recall the other way");
+        Assert.That(detail, Does.StartWith("TP"));
+    }
+
+    [Test]
+    public void Classify_ResolvedInjectionLeftOutstanding_IsAMisflag_NotAMiss()
+    {
+        foreach (var state in new[] { ObligationState.Open, ObligationState.Advanced })
+        {
+            var (outcome, detail) = ObligationCalibrationService.Classify(
+                Injection("resolved"), Row(state), flaggedByRule: false);
+
+            Assert.That(outcome, Is.EqualTo(ObligationCalibrationService.InjectionOutcome.ResolvedMisflagged),
+                $"{state}: the debt was opened correctly — the defect is the unrecognised payoff, which costs precision, not recall");
+            Assert.That(detail, Does.StartWith("FP"));
+        }
+    }
+
+    [Test]
+    public void Classify_ResolvedInjectionNeitherCarriedNorPaid_IsAMiss()
+    {
+        foreach (var state in new[] { ObligationState.Dropped, ObligationState.Withdrawn })
+        {
+            var (outcome, _) = ObligationCalibrationService.Classify(
+                Injection("resolved"), Row(state), flaggedByRule: false);
+
+            Assert.That(outcome, Is.EqualTo(ObligationCalibrationService.InjectionOutcome.FalseNegative),
+                $"{state}: the row is gone without the payoff ever being recognised");
+        }
+    }
+
+    [Test]
+    public void Classify_AbandonedInjection_ScoresOnOutstandingOrTheFiredRule()
+    {
+        var inj = Injection("abandoned");
+
+        Assert.That(ObligationCalibrationService.Classify(inj, Row(ObligationState.Open), false).Outcome,
+            Is.EqualTo(ObligationCalibrationService.InjectionOutcome.TruePositive),
+            "outstanding at the end is the right answer even when no rule fired — due=book-end may not be overdue yet");
+        Assert.That(ObligationCalibrationService.Classify(inj, Row(ObligationState.Open), true).Outcome,
+            Is.EqualTo(ObligationCalibrationService.InjectionOutcome.TruePositive));
+        Assert.That(ObligationCalibrationService.Classify(inj, null, false).Outcome,
+            Is.EqualTo(ObligationCalibrationService.InjectionOutcome.FalseNegative),
+            "a debt the text never pays and the ledger never opened is a miss");
+        Assert.That(ObligationCalibrationService.Classify(inj, Row(ObligationState.Closed), false).Outcome,
+            Is.EqualTo(ObligationCalibrationService.InjectionOutcome.FalseNegative),
+            "closing a debt the text never pays is a miss — this is the false-close class that run 3 hit");
+    }
+
+    [Test]
+    public void ScorerVersion_IsStampedOnEveryScore()
+    {
+        var score = new ObligationCalibrationService.Score(
+            bookId, 8, 4, 4, 0, 0, 0, 0, 1000, 0, 0, 0, 0, Array.Empty<string>());
+
+        Assert.That(score.ScorerVersion, Is.EqualTo(ObligationCalibrationService.ScorerVersion),
+            "a recall number is only comparable to another computed under the same rules");
+    }
+
     private sealed class TestFactory(SqliteConnection conn) : IDbContextFactory<ProseDbContext>
     {
         private readonly DbContextOptions<ProseDbContext> opts = new DbContextOptionsBuilder<ProseDbContext>().UseSqlite(conn).Options;

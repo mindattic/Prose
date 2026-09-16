@@ -29,6 +29,10 @@ public class ObligationCalibrationService(
 {
     public const string CalibrationUniverseSlug = "gutenberg";
 
+    /// <summary>See <see cref="Score.ScorerVersion"/>. Bump whenever what counts as TP/FN/FP changes:
+    /// a recall number is only comparable to another computed under the same rules.</summary>
+    public const string ScorerVersion = "obl-score-v2";
+
     // Nouns chosen to be absent from Doyle and Dickens. Each abandoned setup has a payoff twin.
     private static readonly (string Setup, string Payoff)[] Templates =
     [
@@ -59,6 +63,12 @@ public class ObligationCalibrationService(
         int WordCount, double Precision, double Recall, double F1, double ControlFalsePositivesPer10k,
         IReadOnlyList<string> Details)
     {
+        /// <summary>Stamps which scoring rules produced these numbers, so runs either side of a
+        /// scorer change are never silently compared. v2 (2026-09-16): resolved injections now score
+        /// — never opened or left in a non-paying terminal state is FN, opened-and-Closed is TP.
+        /// Under v1 both fell through as "ok", so recall counted only the abandoned half.</summary>
+        public string ScorerVersion { get; init; } = ObligationCalibrationService.ScorerVersion;
+
         public bool MeetsBar(double minPrecision = 0.85, double minRecall = 0.70, double minF1 = 0.678, double maxControlPer10k = 1.0, double maxResolvedMisflagRate = 0.10) =>
             Precision >= minPrecision && Recall >= minRecall && F1 >= minF1
             && ControlFalsePositivesPer10k <= maxControlPer10k
@@ -187,6 +197,54 @@ public class ObligationCalibrationService(
     /// instrument against the injection manifest. Findings are written so the run is auditable.
     /// The ledger is reset first (<see cref="ResetLedgerAsync(Guid, CancellationToken)"/>) so the
     /// score measures this instrument, not the residue of every run before it.</summary>
+    public enum InjectionOutcome { TruePositive, FalseNegative, ResolvedMisflagged }
+
+    /// <summary>The ledger row an injection produced, matched by origin beat and grounded quote.
+    /// Null means the extractor never opened anything for that planted sentence.</summary>
+    public static NarrativeObligation? MatchRow(IEnumerable<NarrativeObligation> rows, CalibrationInjection inj) =>
+        rows.FirstOrDefault(o => o.OriginBeatId == inj.BeatId && o.OriginQuote != null
+            && (QuoteGrounding.Contains(inj.Sentence, o.OriginQuote) || QuoteGrounding.Contains(o.OriginQuote, inj.Sentence.Split('.')[0])));
+
+    /// <summary>
+    /// The scoring rule for ONE injection — pure, so it can be tested without the LLM pipeline that
+    /// produces the ledger it reads.
+    ///
+    /// An <b>abandoned</b> injection is a debt the text never pays: the instrument is right when it
+    /// still holds the row outstanding at the end, wrong otherwise.
+    ///
+    /// A <b>resolved</b> injection is a debt the text does pay ten or more beats later, and it has
+    /// three outcomes, all of which must score. Through GCSH run 6, only one did: a row left
+    /// outstanding counted as a false flag, but "never opened" and "opened and Closed" both printed
+    /// "ok" and fell through, counting as neither TP nor FN. That had two consequences — recall was
+    /// a statistic over the abandoned injections alone (run 5's "recall 1.000" says nothing about
+    /// the resolved half), and a total extraction miss, the worst outcome available, was scored as a
+    /// PASS. Scoring the miss as FN without also crediting the success as TP would just bias the
+    /// estimator the other way, so both are counted. See <see cref="ScorerVersion"/>.
+    /// </summary>
+    public static (InjectionOutcome Outcome, string Detail) Classify(CalibrationInjection inj, NarrativeObligation? match, bool flaggedByRule)
+    {
+        var outstanding = match != null && ObligationState.IsOutstanding(match.State);
+        if (inj.Kind == "abandoned")
+        {
+            // Outstanding at the end is the correct answer whether or not a rule fired: the book may
+            // not be at its end yet with due=book-end, so the flag is sufficient, not necessary.
+            return outstanding || flaggedByRule
+                ? (InjectionOutcome.TruePositive,  $"TP  abandoned @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → {match!.State}{(flaggedByRule ? " (flagged)" : "")}")
+                : (InjectionOutcome.FalseNegative, $"FN  abandoned @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → {(match == null ? "no row" : match.State)}");
+        }
+
+        if (match == null)
+            return (InjectionOutcome.FalseNegative, $"FN  resolved  @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → no row (never opened — the extractor missed a planted debt)");
+        if (outstanding)
+            return (InjectionOutcome.ResolvedMisflagged, $"FP  resolved  @ {inj.BeatId:N} — payoff at {inj.PayoffBeatId:N} not recognised; row {match.State}");
+        if (match.State == ObligationState.Closed)
+            return (InjectionOutcome.TruePositive, $"TP  resolved  @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → opened and Closed on the payoff");
+        // Dropped / Withdrawn: the debt was neither carried nor paid. (Deferred also lands here —
+        // IsOutstanding covers Open and Advanced only — but nothing in a calibration run defers a
+        // row, since that takes an author action and the harness makes none.)
+        return (InjectionOutcome.FalseNegative, $"FN  resolved  @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → {match.State} (neither carried nor paid)");
+    }
+
     public async Task<Score> ScoreAsync(Guid bookNodeId, bool deep, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -216,24 +274,17 @@ public class ObligationCalibrationService(
 
         foreach (var inj in injections)
         {
-            var match = rows.FirstOrDefault(o => o.OriginBeatId == inj.BeatId && o.OriginQuote != null
-                && (QuoteGrounding.Contains(inj.Sentence, o.OriginQuote) || QuoteGrounding.Contains(o.OriginQuote, inj.Sentence.Split('.')[0])));
-            if (inj.Kind == "abandoned")
+            var match = MatchRow(rows, inj);
+            var flagged = match != null && ObligationState.IsOutstanding(match.State)
+                          && report.Verdicts.Any(v => v.RuleKey is "overdue_open" or "open_at_end" && v.Location == inj.BeatId.ToString("D"));
+            var (outcome, detail) = Classify(inj, match, flagged);
+            switch (outcome)
             {
-                var flagged = match != null && ObligationState.IsOutstanding(match.State)
-                              && report.Verdicts.Any(v => v.RuleKey is "overdue_open" or "open_at_end" && v.Location == inj.BeatId.ToString("D"));
-                // An abandoned injection also counts as found when the ledger holds it Open past due
-                // even if the rule did not fire yet (e.g. book not at end and due=book-end).
-                var found = match != null && ObligationState.IsOutstanding(match.State);
-                if (found || flagged) { tp++; details.Add($"TP  abandoned @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → {match!.State}{(flagged ? " (flagged)" : "")}"); }
-                else { fn++; details.Add($"FN  abandoned @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → {(match == null ? "no row" : match.State)}"); }
+                case InjectionOutcome.TruePositive:       tp++; break;
+                case InjectionOutcome.FalseNegative:      fn++; break;
+                case InjectionOutcome.ResolvedMisflagged: resolvedMisflagged++; break;
             }
-            else
-            {
-                var stillOpen = match != null && ObligationState.IsOutstanding(match.State);
-                if (stillOpen) { resolvedMisflagged++; details.Add($"FP  resolved  @ {inj.BeatId:N} — payoff at {inj.PayoffBeatId:N} not recognised; row {match!.State}"); }
-                else details.Add($"ok  resolved  @ {inj.BeatId:N} — {(match == null ? "no row (never opened)" : match.State)}");
-            }
+            details.Add(detail);
         }
 
         // Control false positives: MODERATE+ verdicts whose origin is NOT an injected beat.
