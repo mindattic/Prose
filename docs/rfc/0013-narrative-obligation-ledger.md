@@ -183,3 +183,60 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   content words occur in the beat (falling back to urgency); `obl-extract-v3` restamps. Tests pin
   both. The 205 controls remain unmeasured until the judge sees whole beats. Run 3 (~$2.6) needs
   another redeploy.
+- 2026-09-16 (runs 3 and 4 — **void; they measured nothing**) — The harness never reset ledger
+  state between runs, so every run inherited the verdicts of the one before it. Run 3's judge
+  CLOSED the injected stopped-clock plant on "…smoked a cigar and waited behind a tree…" — a real
+  sentence from the book, and entirely unrelated to the debt. Run 4 then scored that same row as a
+  miss, on run 3's close event, with no run-4 event on the row at all. **A false close is
+  terminal:** `ObligationResurfacingJudge` only ever revisits `Open|Advanced` rows, so nothing could
+  correct it. Do not reason from any run 1–4 number; cumulative spend to that point was $14.38 for
+  no measurement. Two fixes: `ObligationCalibrationService.ResetLedgerAsync` drops machine rows,
+  their journal and the judge cache and clears `ObligationScanHash` before every score — preserving
+  authored and author-locked rows, and refusing any book outside the `gutenberg` universe — and the
+  judge gained a relevance veto. **Grounding is not relevance:** `QuoteGrounding.Contains` proves a
+  quote is real text in the candidate, never that it answers the debt. `SharesContent` now vetoes a
+  closes/advances verdict whose quote shares no content word with the obligation; `obl-judge-v3`
+  restamps so ungated v2 verdicts are re-judged rather than replayed. The underlying product risk is
+  noted, not fixed: outside calibration, one bad auto-close still drops a real obligation forever.
+- 2026-09-16 (run 5, $3.10) — **the first valid measurement. BELOW BAR:** TP 4, FN 0, resolved
+  mis-flagged 2, control MODERATE+ 103 (9.85/10k), P 0.037, R 1.000, F1 0.071. Ledger 229 rows (not
+  the old cumulative 563): 134 outstanding, 95 closed. The stopped clock came back `Advanced
+  (flagged)` and the violet seal `Open (flagged)` — the first time in five runs — but the extractor
+  prompt was byte-identical to run 4's, so the credit belongs to the reset, not to any prompt fix.
+  **Diagnosis corrected: over-extraction is not the dominant term.** Close rate by chapter is ch1
+  **82%** against 15–59% for every later chapter, across twelve structurally identical self-contained
+  Holmes stories. Doyle did not get worse at resolving his own plots; the only variable is how many
+  older debts compete for the same 40 slots, and outstanding-left-behind climbs with it (ch1 leaves
+  3, ch7 15, ch12 18). Reading the starved rows confirms they are real debts the story does pay —
+  the masked visitor who unmasks as the King of Bohemia, Spaulding's cellar (he is digging the
+  tunnel), the typewriter wear that convicts Hosmer Angel, the locked attic room. The extractor was
+  right; the model was never shown the row it was paying. `SelectForListing` now fills three tiers —
+  LOCAL (≤15 debts opened in this chapter, newest origin first), then lexically relevant rows from
+  anywhere, then urgency for the remainder — on the principle that proximity, not urgency, predicts
+  which debt a beat pays. `obl-extract-v5` restamps. Left untouched so run 6 stays attributable: the
+  judge's candidate finder, `MaxOpenListed` itself, and the off-page back-reference false-plant class
+  ("the Tankerville Club scandal", "the Irene Adler photograph") — prose gesturing at stories it will
+  never tell, which can never be paid and should never be opened.
+- 2026-09-16 (harness defects fixed between runs 6 and 7, no LLM cost) — Two instrument problems
+  that no amount of spending would have surfaced. (1) **The scorer could not fail.** Of the eight
+  injections only the four ABANDONED ones were ever tallied TP/FN; of the four RESOLVED ones, only a
+  row left outstanding scored (as a mis-flag), while both "never opened" and "opened and Closed"
+  printed `ok` and fell through as neither. So recall was a statistic over half the manifest, and a
+  planted debt the extractor missed entirely — the worst outcome available — counted as a PASS. An
+  extractor that missed every resolved injection outright would have reported exactly run 5's
+  "recall 1.000". `Classify` now scores all three resolved outcomes (never opened or left in a
+  non-paying terminal state → FN, opened-and-Closed → TP, still outstanding → mis-flag as before),
+  and is a pure static tested without the LLM pipeline — the reason the gap survived five paid runs
+  is that nothing could exercise the scorer without spending $3. `Score.ScorerVersion`
+  (`obl-score-v2`) is stamped on every result and printed: **run 6 and everything before it are v1,
+  and their recall is not comparable to run 7's.** (2) `prose --obligations candidates --id <guid>
+  [--payoff-beat <guid> …]` is a read-only retrieval diagnostic — no writes, no LLM call. "Payoff
+  not recognised" hides two opposite defects: if the judge was shown the payoff text and still said
+  not_addressed, the fix is recognition or granularity (a ~1,100-word beat carries one embedding, so
+  a two-sentence payoff inside it is a rounding error against the whole beat's meaning); if the
+  finder never surfaced the beat, the judge never had the chance, and the fix is retrieval budget.
+  The verse-index proposal is only worth building under the first diagnosis. The command prints the
+  candidate set, the `ObligationJudgeCache` rows behind it, and per payoff its lexical score and rank
+  over every later beat (flagging when it sits below the finder's `score >= 2` floor) plus its rank
+  in a deep top-400 embedding sweep, so a payoff outside the k=8 budget reports how far outside
+  rather than merely absent.
