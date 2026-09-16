@@ -28,8 +28,12 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     /// ("nobody set it going again", "none of them recognised it") is a strong plant signal — GCSH
     /// calibration run 3 missed a seeded "violet seal ... no one remarked upon it" plant three
     /// runs in a row even after v2's windowing fix, so this was a recall gap in the prompt itself,
-    /// not truncation.</summary>
-    public const string PromptVersion = "obl-extract-v4";
+    /// not truncation.
+    /// v5 (2026-09-16): <c>SelectForListing</c> leads with LOCALITY (debts opened in this chapter)
+    /// instead of urgency — run 5 showed closing degrades as the open pile grows (ch1 82%, later
+    /// chapters 15–59% on twelve identical self-contained stories). What the model is shown
+    /// changed, so the stamp changes.</summary>
+    public const string PromptVersion = "obl-extract-v5";
 
     /// <summary>Characters of beat text per LLM window. A beat longer than this is scanned in
     /// consecutive windows cut at sentence boundaries (<see cref="SplitIntoWindows"/>); every quote
@@ -37,11 +41,16 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     public const int MaxBeatChars = 6000;
     public const int MaxPreviousTailChars = 1500;
     /// <summary>Open obligations shown to the model per beat. The model can only pay a debt it is
-    /// shown, so <see cref="NarrativeObligationService.SelectForListing"/> fills the first slots
-    /// by urgency and the last <see cref="MaxLexicalListed"/> with rows whose content words occur
-    /// in this beat — on a 257-outstanding book (GCSH run 2) pure urgency never listed a single
-    /// book-end plant, so no payoff could ever be recognised at scan time.</summary>
+    /// shown, so <see cref="NarrativeObligationService.SelectForListing"/> fills slots by locality,
+    /// then lexical relevance, then urgency — on a 257-outstanding book (GCSH run 2) pure urgency
+    /// never listed a single book-end plant, so no payoff could ever be recognised at scan time.</summary>
     public const int MaxOpenListed = 40;
+    /// <summary>Slots reserved for debts opened in the CURRENT chapter, newest origin first. A
+    /// story pays what it has just promised. GCSH run 5 (the first uncontaminated measurement,
+    /// 2026-09-16) closed 82% of what chapter 1 opened and 15–59% thereafter across twelve
+    /// structurally identical self-contained stories — the only variable being how many older
+    /// debts were competing for the same 40 slots. Locality is the fix for that starvation.</summary>
+    public const int MaxLocalListed = 15;
     public const int MaxLexicalListed = 15;
 
     public sealed record OpenItem(

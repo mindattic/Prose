@@ -175,30 +175,55 @@ public class ObligationResurfacingJudgeTests
 
     // ── scan-time listing ─────────────────────────────────────────────────────────
 
+    /// <summary>Locality tier, pinned after GCSH run 5 (2026-09-16, the first uncontaminated run):
+    /// chapter 1 closed 82% of what it opened and every later chapter 15–59%, across twelve
+    /// structurally identical self-contained stories. The starved rows were the ones the current
+    /// chapter had just opened — not urgent by any measure, and not always lexically obvious.</summary>
     [Test]
-    public void SelectForListing_ReservesSlotsForRowsThisBeatMentions_WhenUrgencyWouldStarveThem()
+    public void SelectForListing_ShowsADebtThisChapterOpened_EvenWhenOlderUrgentRowsWouldFillEverySlot()
     {
-        var clock = OneChapterClock(beats: 200);
+        var clock = MultiChapterClock(chapters: 10, beatsPerChapter: 20);
         var open = new List<NarrativeObligation>();
-        // 60 urgent chapter-due questions, all past due, all "about" something else.
+        // 60 past-due questions from the early chapters — enough to fill the list on urgency alone.
+        var earlyBeats = clock.Beats.Where(kv => kv.Value.Chapter <= 3).OrderBy(kv => kv.Value.Position).Select(kv => kv.Key).ToList();
         for (var i = 0; i < 60; i++)
-            open.Add(new NarrativeObligation { Kind = ObligationKind.Question, Description = $"question number {i} about the harbour and the ledger", DueByKind = ObligationDueKind.Chapter, DueByValue = 1, OriginBeatId = clock.Beats.Keys.ElementAt(i), State = ObligationState.Open });
-        // One book-end plant that pure urgency never lists.
-        var tinSoldier = new NarrativeObligation { Kind = ObligationKind.Plant, Description = "the tin soldier left on the third step, bayonet pointing at the door", OriginQuote = "Someone had left a single tin soldier on the third step", DueByKind = ObligationDueKind.BookEnd, OriginBeatId = clock.Beats.Keys.ElementAt(70), State = ObligationState.Open };
+            open.Add(new NarrativeObligation { Kind = ObligationKind.Question, Description = $"question number {i} about the harbour and the ledger", DueByKind = ObligationDueKind.Chapter, DueByValue = 1, OriginBeatId = earlyBeats[i], State = ObligationState.Open });
+
+        // A plant this chapter just opened: not past due, and the beat text does not echo it.
+        var localBeat = clock.Beats.First(kv => kv.Value.Chapter == 9).Key;
+        var tinSoldier = new NarrativeObligation { Kind = ObligationKind.Plant, Description = "the tin soldier left on the third step, bayonet pointing at the door", OriginQuote = "Someone had left a single tin soldier on the third step", DueByKind = ObligationDueKind.BookEnd, TriggerCondition = "when the letters are found", OriginBeatId = localBeat, State = ObligationState.Open };
         open.Add(tinSoldier);
 
-        var beatText = "The tin soldier had been the child's, set on the step to mark the room where the letters were kept.";
-        var listed = NarrativeObligationService.SelectForListing(open, clock, atChapter: 1, atPosition: 150, beatText);
+        var unrelatedBeat = "Holmes lit his pipe and said nothing about anything for an hour.";
+        var listed = NarrativeObligationService.SelectForListing(open, clock, atChapter: 9, atPosition: 170, unrelatedBeat);
 
         Assert.That(listed, Has.Count.EqualTo(NarrativeObligationExtractor.MaxOpenListed));
-        Assert.That(listed, Does.Contain(tinSoldier), "a debt this beat pays must be shown to the model");
-        Assert.That(listed.Take(NarrativeObligationExtractor.MaxOpenListed - NarrativeObligationExtractor.MaxLexicalListed), Does.Not.Contain(tinSoldier), "urgent slots stay urgent");
+        Assert.That(listed, Does.Contain(tinSoldier), "a debt THIS chapter opened must be shown even with no urgency and no lexical echo");
         Assert.That(listed.Distinct().Count(), Is.EqualTo(listed.Count));
+    }
+
+    /// <summary>The run-2 guarantee, preserved: a debt from an EARLIER chapter that this beat's
+    /// text actually echoes still reaches the model, via the lexical tier.</summary>
+    [Test]
+    public void SelectForListing_StillReachesAnOlderDebtThisBeatMentions_AndDropsItWhenUnmentioned()
+    {
+        var clock = MultiChapterClock(chapters: 10, beatsPerChapter: 20);
+        var open = new List<NarrativeObligation>();
+        var earlyBeats = clock.Beats.Where(kv => kv.Value.Chapter <= 3).OrderBy(kv => kv.Value.Position).Select(kv => kv.Key).ToList();
+        for (var i = 0; i < 60; i++)
+            open.Add(new NarrativeObligation { Kind = ObligationKind.Question, Description = $"question number {i} about the harbour and the ledger", DueByKind = ObligationDueKind.Chapter, DueByValue = 1, OriginBeatId = earlyBeats[i], State = ObligationState.Open });
+
+        var tinSoldier = new NarrativeObligation { Kind = ObligationKind.Plant, Description = "the tin soldier left on the third step, bayonet pointing at the door", OriginQuote = "Someone had left a single tin soldier on the third step", DueByKind = ObligationDueKind.BookEnd, TriggerCondition = "when the letters are found", OriginBeatId = clock.Beats.First(kv => kv.Value.Chapter == 2).Key, State = ObligationState.Open };
+        open.Add(tinSoldier);
+
+        var payoffBeat = "The tin soldier had been the child's, set on the step to mark the room where the letters were kept.";
+        var listed = NarrativeObligationService.SelectForListing(open, clock, atChapter: 9, atPosition: 170, payoffBeat);
+        Assert.That(listed, Does.Contain(tinSoldier), "an older debt this beat pays must still be shown");
 
         var unrelatedBeat = "Holmes lit his pipe and said nothing about anything for an hour.";
-        var fallback = NarrativeObligationService.SelectForListing(open, clock, 1, 150, unrelatedBeat);
+        var fallback = NarrativeObligationService.SelectForListing(open, clock, atChapter: 9, atPosition: 170, unrelatedBeat);
         Assert.That(fallback, Has.Count.EqualTo(NarrativeObligationExtractor.MaxOpenListed), "unused lexical slots fall back to urgency");
-        Assert.That(fallback, Does.Not.Contain(tinSoldier));
+        Assert.That(fallback, Does.Not.Contain(tinSoldier), "an unmentioned older debt yields its slot to urgency");
     }
 
     [Test]
@@ -209,6 +234,22 @@ public class ObligationResurfacingJudgeTests
         var b = new NarrativeObligation { Kind = ObligationKind.Question, Description = "urgent question", DueByKind = ObligationDueKind.Chapter, DueByValue = 1, OriginBeatId = clock.Beats.Keys.ElementAt(0), State = ObligationState.Open };
         var listed = NarrativeObligationService.SelectForListing([a, b], clock, 1, 9, "nothing relevant here");
         Assert.That(listed, Is.EqualTo(new[] { b, a }));
+    }
+
+    private static NarrativeObligationService.BookClock MultiChapterClock(int chapters, int beatsPerChapter)
+    {
+        var chapterIds = new List<Guid>();
+        var titles = new Dictionary<Guid, string>();
+        var dict = new Dictionary<Guid, (int Chapter, int Position)>();
+        var pos = 0;
+        for (var c = 1; c <= chapters; c++)
+        {
+            var ch = Guid.CreateVersion7();
+            chapterIds.Add(ch);
+            titles[ch] = $"Chapter {c}";
+            for (var i = 0; i < beatsPerChapter; i++) dict[Guid.CreateVersion7()] = (c, pos++);
+        }
+        return new NarrativeObligationService.BookClock { BookNodeId = Guid.CreateVersion7(), ChapterIds = chapterIds, Beats = dict, ChapterTitles = titles };
     }
 
     private static NarrativeObligationService.BookClock OneChapterClock(int beats)

@@ -386,37 +386,54 @@ public class NarrativeObligationService(
         };
     }
 
-    /// <summary>The open rows the extractor is shown for one beat: the most urgent first, then —
-    /// when there are more outstanding rows than <see cref="NarrativeObligationExtractor.MaxOpenListed"/>
-    /// — the last <see cref="NarrativeObligationExtractor.MaxLexicalListed"/> slots go to rows whose
-    /// content words (description + origin quote) occur in this beat's text, most overlap first.
-    /// Unused lexical slots fall back to the next most urgent rows. The numbering the model sees
-    /// is the index into the returned list, so callers must pass this exact list on.</summary>
+    /// <summary>The open rows the extractor is shown for one beat, filled in three tiers when there
+    /// are more outstanding rows than <see cref="NarrativeObligationExtractor.MaxOpenListed"/>:
+    /// <list type="number">
+    /// <item><b>Local</b> — up to <see cref="NarrativeObligationExtractor.MaxLocalListed"/> debts
+    /// opened in THIS chapter, newest origin first. A story pays what it has just promised.</item>
+    /// <item><b>Lexically relevant</b> — up to <see cref="NarrativeObligationExtractor.MaxLexicalListed"/>
+    /// rows from anywhere whose content words occur in this beat, most overlap first.</item>
+    /// <item><b>Urgent</b> — whatever slots remain, in urgency order.</item>
+    /// </list>
+    /// Locality leads because proximity, not urgency, predicts which debt a beat pays: on GCSH —
+    /// twelve structurally identical self-contained stories — chapter 1 closed 82% of what it
+    /// opened while later chapters managed 15–59%, the only variable being how many older debts
+    /// were competing for the same 40 slots (run 5, 2026-09-16, the first uncontaminated run).
+    /// The numbering the model sees is the index into the returned list, so callers must pass this
+    /// exact list on.</summary>
     internal static List<NarrativeObligation> SelectForListing(IReadOnlyList<NarrativeObligation> open, BookClock clock, int atChapter, int atPosition, string beatText)
     {
         var max = NarrativeObligationExtractor.MaxOpenListed;
         var ordered = OrderByUrgency(open, clock, atChapter, atPosition).ToList();
         if (ordered.Count <= max) return ordered;
 
-        var urgentSlots = max - NarrativeObligationExtractor.MaxLexicalListed;
-        var listed = ordered.Take(urgentSlots).ToList();
-        var rest = ordered.Skip(urgentSlots).ToList();
-
-        var relevant = rest
-            .Select(o => (Row: o, Score: LexicalCandidateFinder.ContentWords(o.Description + " " + (o.OriginQuote ?? ""))
-                                             .Count(w => beatText.Contains(w, StringComparison.OrdinalIgnoreCase))))
-            .Where(x => x.Score >= 2)
-            .OrderByDescending(x => x.Score)
-            .Take(NarrativeObligationExtractor.MaxLexicalListed)
-            .Select(x => x.Row)
-            .ToList();
-        listed.AddRange(relevant);
-
-        foreach (var o in rest)
+        var listed = new List<NarrativeObligation>(max);
+        var seen = new HashSet<Guid>();
+        void Take(IEnumerable<NarrativeObligation> rows, int cap)
         {
-            if (listed.Count >= max) break;
-            if (!listed.Contains(o)) listed.Add(o);
+            var taken = 0;
+            foreach (var o in rows)
+            {
+                if (taken >= cap || listed.Count >= max) return;
+                if (!seen.Add(o.Id)) continue;
+                listed.Add(o);
+                taken++;
+            }
         }
+
+        Take(open.Where(o => o.OriginBeatId is Guid ob && clock.ChapterOf(ob) == atChapter)
+                 .OrderByDescending(o => o.OriginBeatId is Guid ob2 ? clock.PositionOf(ob2) : -1),
+             NarrativeObligationExtractor.MaxLocalListed);
+
+        Take(ordered
+                .Select(o => (Row: o, Score: LexicalCandidateFinder.ContentWords(o.Description + " " + (o.OriginQuote ?? ""))
+                                                 .Count(w => beatText.Contains(w, StringComparison.OrdinalIgnoreCase))))
+                .Where(x => x.Score >= 2)
+                .OrderByDescending(x => x.Score)
+                .Select(x => x.Row),
+             NarrativeObligationExtractor.MaxLexicalListed);
+
+        Take(ordered, max);
         return listed;
     }
 
