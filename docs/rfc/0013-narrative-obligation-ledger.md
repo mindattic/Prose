@@ -217,6 +217,29 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   judge's candidate finder, `MaxOpenListed` itself, and the off-page back-reference false-plant class
   ("the Tankerville Club scandal", "the Irene Adler photograph") — prose gesturing at stories it will
   never tell, which can never be paid and should never be opened.
+- 2026-09-16 (run 6, $3.03) — **VOID: the extractor read 55 of 96 beats.** The printed score was
+  TP 2, FN 2, resolved mis-flagged 1, control MODERATE+ 99 (9.47/10k), P 0.020, R 0.500, F1 0.038 —
+  and it describes 57% of a book. The trial balance immediately after the run reported `ledger scan
+  coverage : 55/96 beats`; the calibration output itself said nothing, because it never reported
+  coverage at all. `ScanBeatAsync` stamps a beat only when the extractor reports `Evaluated` — by
+  design, so an outage re-scans rather than banking a bad read — but every `Evaluated: false` path in
+  `Parse` returned silently (empty response, no JSON object, malformed JSON), and `ExtractAsync`
+  discards **all** windows of a beat when any one of them fails. An unread beat was therefore
+  indistinguishable from a beat that owed nothing. Leading suspect: truncation at `maxTokens = 1400`,
+  since a response cut off mid-object has an opening brace and no closing one and lands on the "no
+  JSON object" path — which would be the worst available sampling bias, because the beats that blow
+  the ceiling are the ones opening the MOST obligations, so the instrument would be dropping the
+  densest beats in the book rather than a random 43%. **Do not attribute run 6's numbers to the
+  locality fix, and do not compare them with run 5.** Not yet known: whether run 5 (and every earlier
+  run) had the same partial coverage — nothing recorded it, so runs 1–6 all lack a coverage figure.
+  Fixed here, without guessing at the cause: `Result.Failure` records why a read failed and
+  `ExtractAsync` logs a warning naming the window, beat length and reason; `Score` carries
+  `BeatsTotal`/`BeatsRead`, `CouldNotLook` is true when they differ, and `MeetsBar` is false whenever
+  `CouldNotLook`, so a partial run is **void — not passing and not failing**; the CLI prints
+  `beats READ by the extractor: 55/96` and `RESULT: VOID — COULD NOT LOOK`. `prose --obligations
+  coverage --slug <slug>` reports read-only and free which beats were read and the length
+  distribution of the read vs unread groups — the evidence that confirms or kills the truncation
+  hypothesis from run 6's residue before run 7 spends anything.
 - 2026-09-16 (harness defects fixed between runs 6 and 7, no LLM cost) — Two instrument problems
   that no amount of spending would have surfaced. (1) **The scorer could not fail.** Of the eight
   injections only the four ABANDONED ones were ever tallied TP/FN; of the four RESOLVED ones, only a
