@@ -40,6 +40,15 @@ if (args.Length == 0 || args[0] is "-h" or "--help")
               or any book — this is a preview only, by design (see BeatWriteOrchestrator's doc
               comment). Prints the exact prompt block lengths and the chapter span the window
               covers, so a chapter-boundary reset (v3's bug) would be visibly absent here.
+
+          generate-and-save --node <slug|guid> --after-beat <guid> --goal "<text>"
+              --characters <guid>=<Name>[,<guid>=<Name>...] [--pov "<name>"] [--location "<name>"]
+              [--size N]
+              Phase 2: same as preview-generate, but ACTUALLY INSERTS the generated beat (via
+              NodeWorkbenchService, the same save path every other write uses) and runs one narrow
+              follow-up call asking the writer to self-report what it just changed, recording those
+              as declared EntityStateEvents rows. Only ever point this at the BCODA2 sandbox — never
+              a live book — until Phase 5 passes review.
         """);
     return;
 }
@@ -173,6 +182,49 @@ switch (verb)
         Console.WriteLine(result.GeneratedText);
         break;
     }
+    case "generate-and-save":
+    {
+        var nodeRef = Flag(args, "--node");
+        var afterArg = Flag(args, "--after-beat");
+        var goal = Flag(args, "--goal");
+        var charsArg = Flag(args, "--characters");
+        var pov = Flag(args, "--pov");
+        var location = Flag(args, "--location");
+        var sizeArg = Flag(args, "--size");
+        var size = int.TryParse(sizeArg, out var s) ? s : 15;
+
+        if (!Guid.TryParse(afterArg, out var afterBeatId)) { Console.Error.WriteLine("--after-beat <guid> is required."); return; }
+        if (string.IsNullOrWhiteSpace(goal)) { Console.Error.WriteLine("--goal \"<text>\" is required."); return; }
+        if (string.IsNullOrWhiteSpace(charsArg)) { Console.Error.WriteLine("--characters <guid>=<Name>[,...] is required."); return; }
+
+        var characters = new Dictionary<Guid, string>();
+        foreach (var pair in charsArg.Split(',', StringSplitOptions.RemoveEmptyEntries))
+        {
+            var kv = pair.Split('=', 2);
+            if (kv.Length != 2 || !Guid.TryParse(kv[0], out var gid)) { Console.Error.WriteLine($"Bad --characters entry '{pair}', expected <guid>=<Name>."); return; }
+            characters[gid] = kv[1];
+        }
+
+        await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
+        var nodeId = await NodeRefResolver.ResolveAsync(db0, nodeRef);
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); return; }
+        var afterBeatPos = await db0.Beats.AsNoTracking().Where(b => b.Id == afterBeatId).Select(b => b.StoryPosition).FirstOrDefaultAsync();
+        var asOf = afterBeatPos ?? int.MaxValue;
+
+        const string universeLine = "You are writing a beat in a literary cyberpunk scene set in GLMZ (Great Lakes Metropolitan Zone, 2226).";
+
+        var orchestrator = services.GetRequiredService<BeatWriteOrchestrator>();
+        Console.WriteLine("[generate-and-save] Two real, billed LLM calls (generate + declared-delta self-report). This WILL insert a new beat.");
+        var result = await orchestrator.GenerateAndSaveAsync(nodeId.Value, afterBeatId, characters, asOf, pov, location, goal, universeLine, size);
+
+        Console.WriteLine();
+        Console.WriteLine($"── NEW BEAT SAVED: {result.NewBeatId} (StoryPosition {asOf}) ──");
+        Console.WriteLine(result.Preview.GeneratedText);
+        Console.WriteLine();
+        Console.WriteLine($"── DECLARED DELTAS ({result.DeclaredDeltas.Count}) ──");
+        foreach (var d in result.DeclaredDeltas) Console.WriteLine($"  {d.EntityName} | {d.Aspect} = {d.Value}");
+        break;
+    }
     default:
         Console.Error.WriteLine($"Unknown verb '{verb}'. Run with --help.");
         break;
@@ -200,7 +252,7 @@ static void PrintWindow(Guid beatId, int size, IReadOnlyList<WindowedBeat> windo
 {
     Console.WriteLine($"[window-query] {window.Count} beat(s) before {beatId} (requested size {size}):");
     foreach (var w in window)
-        Console.WriteLine($"  [{w.ChapterTitle}] pos {w.StoryPosition?.ToString() ?? "?"}  {Truncate(w.Text, 100)}");
+        Console.WriteLine($"  [{w.ChapterTitle} / {w.ChapterNodeId}] pos {w.StoryPosition?.ToString() ?? "?"}  {Truncate(w.Text, 100)}");
 }
 
 static string Truncate(string s, int n) => string.IsNullOrEmpty(s) ? "" : (s.Length <= n ? s : s[..n] + "…");
