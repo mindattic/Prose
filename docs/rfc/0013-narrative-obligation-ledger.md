@@ -330,12 +330,21 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   *shown* the payoff and still failed. It was shown nothing. Both GCSH resolved injections left
   outstanding come back **NEVER RETRIEVED**, for two different reasons, and neither is recognition:
   1. **Brass whistle** (`01a0ab6e3c1a7db7bebaa99ac13ca174`, Open, origin Ch1 pos 2). Payoff is Ch11
-     pos 81. Lexical **rank #15 of 93** — outside `CandidatesPerObligation = 8`. Embedding: **outside
-     the top 400 of the corpus.** The ten candidates actually retrieved scored 0.300–0.355 — a flat,
-     near-random spread over nine one-per-chapter beats — while the true payoff did not place at all.
-     This is the granularity argument, now **measured rather than suspected**: one vector per
-     ~1,100-word beat cannot locate a two-sentence payoff, and the embedding tier then *consumes the
-     whole budget with noise*, crowding out the lexical tier where the payoff at least ranked #15.
+     pos 81. Lexical **rank #15 of 93** — outside `CandidatesPerObligation = 8`. Embedding: outside
+     the top 400 of the corpus. **The reason is not granularity — the index is empty.** The first
+     reading of this run blamed one-vector-per-1,100-word-beat being too coarse to locate a
+     two-sentence payoff. That was wrong, and the diagnostic's own output disproves it: the deep
+     sweep is `FindSimilarBeatNodesAsync(…, k = 400)` and it returned **12 hits** — the same 12 in
+     both probes. The `gutenberg` universe holds 116 beats (GCSH 96 + GCTOC 17 + GCNEG 3), and only
+     **12** carry a row in `ProseEmbeddings`: precisely GCSH's twelve original one-per-chapter beats,
+     from *before* it was split to 96. **`split_beat` never backfilled the embedding index.** Every
+     candidate that scored (`01a0514d7…`) is one of those twelve chapter blobs; every split beat
+     shows `emb —`. That also explains the flat 0.300–0.355 spread: it was not ranking passages, it
+     was returning all twelve chapters in near-arbitrary order. The embedding tier of the retrieval
+     finder has been operating on a 12-row index of chapter-sized blobs for this entire programme,
+     and the payoff beat has no vector at all — it cannot rank because it does not exist to the query.
+     **Consequence: we still do not know whether beat-granularity embeddings are adequate, because
+     they have never once been tested.** The fix is a backfill, not an architecture.
   2. **One-eyed cat** (`01a0ab7ba3ef7743b645f7c22197fbae`, Open) — worse, and a **cascade from the
      coverage bug that survives the coverage fix**. Its origin quote *is the payoff sentence*: the
      row is anchored to Ch9 pos 64, the payoff beat itself. The finder only ever looks *after* the
@@ -345,10 +354,17 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
      was read with no open row to close → the extractor opened a *new* row on the payoff → the judge
      can never reach behind it. The scorer then reported "payoff not recognised", blaming recognition
      for a coverage failure three steps upstream.
-  **Consequences.** (a) The indexing question is settled in favour of retrieval: finer-grained
-  embeddings (sub-beat passages) and a larger, lexical-protected candidate budget are warranted, and
-  that is now evidence rather than a guess. (b) A new defect class: **an obligation anchored to the
-  wrong end of its own arc**, which no amount of judge improvement can fix. Inside calibration
-  `ResetLedgerAsync` clears it; **on a real book there is no reset, so this corruption is
-  permanent** — the same shape of risk already logged for a false close. (c) Every "payoff not
-  recognised" number in runs 1–6 is now suspect as mis-attributed coverage damage.
+  **Consequences.** (a) The failure is retrieval, not recognition — in neither case did the judge
+  ever see the text. But the first-order fix is **backfilling the embedding index and making
+  beat-creation maintain it**, not building a finer one; the verse-index proposal stays unbought
+  until an actually-populated index has been measured and found wanting. Raising
+  `CandidatesPerObligation` and protecting the lexical tier from being crowded out are cheap and
+  independently justified — the brass-whistle payoff placed #15 of 93 lexically, so lexical alone
+  would have found it at k=16. (b) A new defect class: **an obligation anchored to the wrong end of
+  its own arc**, which no amount of judge improvement can fix. Inside calibration `ResetLedgerAsync`
+  clears it; **on a real book there is no reset, so this corruption is permanent** — the same shape
+  of risk already logged for a false close. (c) Every "payoff not recognised" number in runs 1–6 is
+  now suspect as mis-attributed coverage damage. (d) **A silent-index class joins the silent-failure
+  classes:** a retrieval tier that returns 12 rows for a 400-row request reported no error, and
+  nothing in six paid runs noticed. `ProseEmbeddings` coverage belongs in `--obligations coverage`
+  alongside beats read.
