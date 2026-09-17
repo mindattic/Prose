@@ -394,3 +394,20 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   payoff. Wrong-end anchoring needs its own re-anchor path. Remaining before the brass whistle can
   actually close: the judge has no cache row for that candidate at any prompt version, so a `--deep`
   pass must now be bought to find out whether it *recognises* the payoff it can finally see.
+- 2026-09-16 (**GCTOC beat 3: the blind spot explained, and partly closed — ~$0.02**) — Re-scanning
+  the one beat under `obl-extract-v8`: `opened 1, advanced 2, ungrounded discarded 3, not evaluated
+  0`. It had reported `opened 0` under v7. **The beat was never empty — its entire harvest was being
+  thrown out by the quote gate, and that reported identically to a beat that owed nothing.** Defect
+  confirmed; it is now an `ObligationScanAttempt` row with outcome `read-all-discarded` rather than
+  an invisible one. Graded honestly against the §6a key, this is partial credit, not a fix:
+  - The new row `01a0ad7351377d79ad2bd12ebfd16c65` carries key row #1's **exact** origin quote,
+    `"Jerry, say that my answer was, RECALLED TO LIFE."` — but describes the debt as *Jerry's
+    identity*, not *what "RECALLED TO LIFE" means*. Right quote, arguably the wrong debt.
+  - **Key row #2, `Wait at Dover for Mam'selle`, is still not opened at all.**
+  - **3 items were still discarded ungrounded.** Quote fidelity on Dickens — em-dashes, archaic
+    spelling, nested quotation — remains a live defect, now measured instead of hidden. A9's typed
+    filter is not the fix for this; the quote gate needs a normalisation pass of its own.
+  Do not report GCTOC as 14 or 15 of 15 on this evidence: one beat was re-read under v8 while the
+  other sixteen still carry v7 rows, so the book is a mixture and not a measurement. `PromptVersion`
+  is folded into `ObligationScanHash`, so every GCTOC beat is already due a re-read; a clean grade
+  costs one full run (~$0.41).
