@@ -57,6 +57,15 @@ public abstract class Node
     /// "stopped". Mirrors the old Episode.Status semantics.</summary>
     public string Status { get; set; } = "draft";
 
+    /// <summary>This node's slug was chosen by hand, not derived from its Title.
+    ///
+    /// <para><c>--repair-slugs</c> regenerates every slug from its owning row's Title, which is
+    /// right for drift and wrong for a deliberate choice: BCODA is titled "Street Samurai", so an
+    /// unpinned repair pass would rename a hand-picked slug to <c>street-samurai</c> without being
+    /// asked. A pinned node is skipped by that pass. Set by
+    /// <c>SlugRepairService.SetNodeSlugAsync</c> / <c>prose --set-node-slug</c>.</para></summary>
+    public bool SlugPinned { get; set; }
+
     /// <summary>Does this text finish its own story? (RFC 0013 §6a, author ruling 2026-09-16.)
     ///
     /// <para><b>Not the same question as <c>Status</c>.</b> <c>ObligationReconciliationService

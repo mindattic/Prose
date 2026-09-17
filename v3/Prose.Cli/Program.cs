@@ -832,6 +832,15 @@ if (args.Contains("--repair-slugs"))
     return;
 }
 
+// prose --set-node-slug --slug <current-slug-or-id> --to <new-slug> [--apply] [--json]
+// Name a node deliberately and move its slug-carrying references with it. Dry-run by default.
+// The result is PINNED, so --repair-slugs will not regenerate it from the Title.
+if (args.Contains("--set-node-slug"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SetNodeSlugCli", args);
+    return;
+}
+
 // CLI mode: survey management.
 //   prose --list-surveys [--status Open|Completed]
 //   prose --get-survey --slug <slug>

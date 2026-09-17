@@ -207,6 +207,12 @@ public class SlugRepairService(
         foreach (var n in rows)
         {
             ct.ThrowIfCancellationRequested();
+
+            // A hand-set slug is not drift to be corrected. Without this, `--repair-slugs --apply`
+            // would silently rename a deliberately chosen slug back to whatever the Title happens to
+            // slugify to — which for BCODA ("Street Samurai") is not the slug anyone asked for.
+            if (n.SlugPinned) continue;
+
             var desired = SlugifyTitle(n.Title);
             if (desired == n.Slug) continue;
 
@@ -224,6 +230,21 @@ public class SlugRepairService(
                 n.UpdatedAt = DateTime.UtcNow;
             }
 
+            await MoveNodeSlugReferencesAsync(db, n, old, unique, apply, effects, warnings, ct);
+            changes.Add(new SlugChange("nodes", n.Id, n.Title, old, unique, effects));
+        }
+    }
+
+    /// <summary>
+    /// Move everything that carries a node's slug: beat audio paths, the node's combined-audio
+    /// path, publication paths, and the on-disk audio directories. Shared by the regenerate-from-
+    /// Title pass and by <see cref="SetNodeSlugAsync"/>, so a hand-set slug moves its references by
+    /// exactly the same code the repair pass uses — one implementation, one bug surface.
+    /// </summary>
+    private async Task MoveNodeSlugReferencesAsync(
+        ProseDbContext db, Node n, string old, string unique, bool apply,
+        List<string> effects, List<string> warnings, CancellationToken ct)
+    {
             if (!string.IsNullOrEmpty(old))
             {
                 // Slug-prefixed relative paths in the DB.
@@ -269,9 +290,62 @@ public class SlugRepairService(
                     RenameDirIfExists(root, old, unique, apply, effects, warnings);
                 }
             }
+    }
 
-            changes.Add(new SlugChange("nodes", n.Id, n.Title, old, unique, effects));
+    /// <summary>
+    /// Set ONE node's slug to an exact value and move every slug-carrying reference with it, then
+    /// pin it so the regenerate-from-Title pass leaves it alone.
+    ///
+    /// <para>This exists because there was no supported way to name a node. <c>update_book</c> has
+    /// no slug parameter, and <c>--repair-slugs</c> derives the slug from the Title — so the only
+    /// way to get a chosen slug was to rename the book, which is an editorial act, not a naming
+    /// one. A slug is a loose key (the UUIDv7 id is the real key), but it is the key a human types,
+    /// and it should be possible to choose it.</para>
+    ///
+    /// <para>Refuses rather than guesses: an empty or non-slug-shaped value, or a collision with
+    /// another node in the same universe, throws instead of silently disambiguating with a suffix —
+    /// the caller asked for a specific name and deserves to hear that it is not available.</para>
+    /// </summary>
+    public async Task<SlugChange> SetNodeSlugAsync(Guid nodeId, string desiredSlug, bool apply, CancellationToken ct = default)
+    {
+        var slug = (desiredSlug ?? "").Trim().ToLowerInvariant();
+        if (string.IsNullOrWhiteSpace(slug))
+            throw new InvalidOperationException("A slug cannot be empty.");
+        if (slug != SlugifyTitle(slug))
+            throw new InvalidOperationException(
+                $"'{desiredSlug}' is not slug-shaped. Expected lowercase words joined by hyphens, e.g. '{SlugifyTitle(desiredSlug ?? "")}'.");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var n = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == nodeId, ct)
+            ?? throw new InvalidOperationException($"No node with id {nodeId}.");
+
+        var clash = await db.Nodes.IgnoreQueryFilters()
+            .FirstOrDefaultAsync(x => x.UniverseId == n.UniverseId && x.Slug == slug && x.Id != nodeId, ct);
+        if (clash != null)
+            throw new InvalidOperationException($"'{slug}' is already taken in this universe by {clash.Kind} \"{clash.Title}\" ({clash.Id}).");
+
+        var old = n.Slug;
+        var effects = new List<string>();
+        var warnings = new List<string>();
+
+        if (old == slug && n.SlugPinned)
+            return new SlugChange("nodes", n.Id, n.Title, old, slug, ["already set and pinned — nothing to do"]);
+
+        if (apply)
+        {
+            n.Slug = slug;
+            n.SlugPinned = true;
+            n.UpdatedAt = DateTime.UtcNow;
         }
+
+        await MoveNodeSlugReferencesAsync(db, n, old, slug, apply, effects, warnings, ct);
+        if (apply) await db.SaveChangesAsync(ct);
+
+        foreach (var w in warnings) log.LogWarning("Set slug: {Warning}", w);
+        log.LogInformation("Set node slug ({Mode}): {Old} → {New} ({Effects})",
+            apply ? "APPLY" : "dry-run", old, slug, effects.Count == 0 ? "no side effects" : string.Join(", ", effects));
+
+        return new SlugChange("nodes", n.Id, n.Title, old, slug, effects);
     }
 
     // ── books / series ───────────────────────────────────────────────────
