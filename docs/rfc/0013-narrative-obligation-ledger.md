@@ -368,3 +368,29 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   classes:** a retrieval tier that returns 12 rows for a 400-row request reported no error, and
   nothing in six paid runs noticed. `ProseEmbeddings` coverage belongs in `--obligations coverage`
   alongside beats read.
+- 2026-09-16 (**the backfill, and the answer: beat-granularity embeddings are ADEQUATE**) — Hub
+  redeployed (PID 54284) with `obl-extract-v8`, `ObligationScanAttempts`, `Node.StructurallyComplete`
+  and `prose --reembed --beats`. Backfilling the index took **seconds and cents**: GCSH 96 beats,
+  GCTOC 17. The corpus sweep went from **12 hits to 113**. Re-running the identical brass-whistle
+  probe against the populated index:
+
+  | | before | after |
+  |---|---|---|
+  | corpus hits (k=400) | 12 | **113** (93 after the origin) |
+  | payoff embedding rank | outside top 400 | **#1 of 93** (similarity 0.415) |
+  | payoff lexical rank | #15 of 93 | #15 of 93 (unchanged) |
+  | in candidate set | no | **YES** |
+  | verdict | NEVER RETRIEVED | RETRIEVED, NOT YET JUDGED |
+
+  **One vector per ~1,100-word beat put the true payoff FIRST out of 93 later beats.** The
+  similarity spread is now a real gradient (0.415 at #1 → 0.297 at #64) where before it was a flat
+  0.300–0.355 across twelve chapter blobs — which is what a meaningless ranking looks like, and
+  should have been the tell. **So the verse-index / sub-beat-passage proposal is not needed, and
+  that is now measured rather than assumed.** Note also that the payoff's *lexical* rank did not
+  move: at `k = 8` lexical alone would still have missed it. The embedding tier found it — once it
+  existed. The earlier note that "lexical alone would have found it at k=16" holds only at k≥16.
+  **The one-eyed cat is unchanged — `BEFORE THE ORIGIN`** — against the same populated index,
+  confirming the two defects are independent: a full index cannot fix a row anchored to its own
+  payoff. Wrong-end anchoring needs its own re-anchor path. Remaining before the brass whistle can
+  actually close: the judge has no cache row for that candidate at any prompt version, so a `--deep`
+  pass must now be bought to find out whether it *recognises* the payoff it can finally see.
