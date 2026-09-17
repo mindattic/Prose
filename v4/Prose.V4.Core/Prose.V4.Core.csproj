@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- v4 Phase 0: read-path services only (StoryStateQuery, SceneWindowService). See
+       C:\Users\ryand\.claude\plans\graceful-coalescing-liskov.md for the full plan. This project
+       adds NO new DbContext and NO schema changes — it reads through v3's existing
+       IDbContextFactory<ProseDbContext> and reuses v3's NodeWorkbenchService for beat ordering. -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\v3\Prose.Core\Prose.Core.csproj" />
+  </ItemGroup>
+
+</Project>
