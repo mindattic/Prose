@@ -41,8 +41,19 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     /// v7 (2026-09-16): the real cause of the unread beats — <see cref="MaxResponseTokens"/> raised
     /// from 1400. The scrap-window fix in v6 removed windowing entirely on GCTOC (0 multi-window
     /// beats) and the failure rate did not move, because the responses were being cut at the OUTPUT
-    /// ceiling, not the input one. Every beat must be re-read under the raised ceiling.</summary>
-    public const string PromptVersion = "obl-extract-v7";
+    /// ceiling, not the input one. Every beat must be re-read under the raised ceiling.
+    /// v8 (2026-09-16): the read stops being all-or-nothing. Until now ONE unreadable window
+    /// discarded the whole beat, there was no retry anywhere in this pipeline, and
+    /// <c>LlmRouter</c>'s provider failover does not help — a response truncated at the token
+    /// ceiling is a *successful* HTTP call, so nothing retried it. Now a failed window is retried
+    /// once, then halved and read in two (a response cut at the ceiling is a function of how much
+    /// that window has to say, so halving it is the targeted fix), and only then given up on — and
+    /// giving up costs that window alone: the windows that DID read are banked. Every beat must be
+    /// re-read to pick up what the old all-or-nothing path threw away.</summary>
+    public const string PromptVersion = "obl-extract-v8";
+
+    /// <summary>A window shorter than this is not worth halving — the failure is not length.</summary>
+    public const int MinResplitChars = 800;
 
     /// <summary>Characters of beat text per LLM window. A beat longer than this is scanned in
     /// consecutive windows cut at sentence boundaries (<see cref="SplitIntoWindows"/>); every quote
@@ -90,6 +101,15 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
         /// the extractor could not read was indistinguishable from a beat that owed nothing — and
         /// GCSH run 6 left 41 of 96 beats unread with nothing in the output saying so.</summary>
         public string? Failure { get; init; }
+
+        /// <summary>How many windows this beat was cut into, and how many were successfully read.
+        /// <c>WindowsRead &lt; WindowsTotal</c> with <c>WindowsRead &gt; 0</c> is a PARTIAL read: the
+        /// opened items from the windows that read are banked (v8), but <see cref="Evaluated"/> is
+        /// still false so the beat stays unstamped and is re-read rather than banked as complete.
+        /// Persisted per attempt by <c>NarrativeObligationService</c> — a count that only ever
+        /// reached an ILogger is a count nobody can query after the fact.</summary>
+        public int WindowsTotal { get; init; } = 1;
+        public int WindowsRead  { get; init; } = 1;
     }
 
     public sealed record Input(
@@ -146,29 +166,98 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
     public async Task<Result> ExtractAsync(Input input, CancellationToken ct = default)
     {
         var windows = SplitIntoWindows(input.BeatText, MaxBeatChars);
-        if (windows.Count == 0) return new Result([], [], 0, "", Evaluated: false);
+        if (windows.Count == 0)
+            return new Result([], [], 0, "", Evaluated: false)
+                { Failure = "beat text is empty or whitespace", WindowsTotal = 0, WindowsRead = 0 };
         if (windows.Count > 1)
             log.LogInformation("Obligation extraction: {Chars}-char beat scanned in {Windows} windows of ≤{Max} chars", input.BeatText.Length, windows.Count, MaxBeatChars);
 
         var parts = new List<Result>(windows.Count);
+        var failures = new List<string>();
         for (var w = 0; w < windows.Count; w++)
         {
             // Each window sees the tail of the previous one as context so a promise that straddles
             // the cut is still legible; quotes are gated against the full beat, not the window.
             var prev = w == 0 ? input.PreviousTail : windows[w - 1];
-            var part = await ExtractWindowAsync(input, windows[w], prev, w, windows.Count, ct);
+            var part = await ReadWindowWithRetryAsync(input, windows[w], prev, w, windows.Count, ct);
+            if (part.Evaluated) { parts.Add(part); continue; }
+
+            // v8: do NOT abandon the siblings. Until now one unreadable window discarded every
+            // window of the beat — on GCTOC that threw away ~5,900 chars that read perfectly
+            // because a 141-char scrap would not parse. Record the failure, keep reading.
+            failures.Add($"window {w + 1}/{windows.Count}: {part.Failure ?? "no reason recorded"}");
+        }
+
+        if (failures.Count == 0)
+        {
+            var whole = parts.Count == 1 ? parts[0] : Merge(parts);
+            return whole with { WindowsTotal = windows.Count, WindowsRead = windows.Count };
+        }
+
+        var banked = parts.Count switch
+        {
+            0 => new Result([], [], 0, "", Evaluated: false),
+            1 => parts[0],
+            _ => Merge(parts),
+        };
+        var reason = string.Join(" | ", failures);
+        if (parts.Count == 0)
+            log.LogWarning("Obligation extraction UNREAD: no window of a {Chars}-char beat could be read — {Failure}. The beat stays unstamped.",
+                input.BeatText.Length, reason);
+        else
+            log.LogWarning("Obligation extraction PARTIAL: {Read} of {Count} windows of a {Chars}-char beat read — {Failure}. Banking {Opened} opened item(s) from the windows that did read; the beat stays unstamped so it is re-read.",
+                parts.Count, windows.Count, input.BeatText.Length, reason, banked.Opened.Count);
+
+        // Evaluated stays false either way: a partial read must never stamp the beat as done, and
+        // must never let a calibration run report a clean number (Score.CouldNotLook).
+        return banked with { Evaluated = false, Failure = reason, WindowsTotal = windows.Count, WindowsRead = parts.Count };
+    }
+
+    /// <summary>Read one window, retrying before giving up on it. There was no retry anywhere in
+    /// this pipeline until v8, and <c>LlmRouter</c>'s provider failover does not cover this case: a
+    /// response truncated at the token ceiling is a *successful* HTTP call, so the router hands the
+    /// bad text straight back and nothing asks again.
+    /// <para>Three attempts, escalating: the same window twice (a truncation is partly sampling, so
+    /// a plain retry sometimes lands), then the window halved and read in two — a response cut at
+    /// the ceiling is a function of how much that window has to say, so halving what it must say is
+    /// the targeted fix rather than a hopeful repeat.</para></summary>
+    private async Task<Result> ReadWindowWithRetryAsync(Input input, string window, string? previous, int index, int count, CancellationToken ct)
+    {
+        var first = await ExtractWindowAsync(input, window, previous, index, count, ct);
+        if (first.Evaluated) return first;
+
+        log.LogWarning("Obligation extraction: window {Index}/{Count} ({Chars} chars) failed — {Failure}. Retrying.",
+            index + 1, count, window.Length, first.Failure ?? "no reason recorded");
+
+        var second = await ExtractWindowAsync(input, window, previous, index, count, ct);
+        if (second.Evaluated)
+        {
+            log.LogInformation("Obligation extraction: window {Index}/{Count} recovered on retry.", index + 1, count);
+            return second;
+        }
+
+        if (window.Length < MinResplitChars) return second;
+
+        var halves = SplitIntoWindows(window, window.Length / 2 + 1);
+        if (halves.Count < 2) return second;
+
+        var halfParts = new List<Result>(halves.Count);
+        for (var h = 0; h < halves.Count; h++)
+        {
+            var prev = h == 0 ? previous : halves[h - 1];
+            var part = await ExtractWindowAsync(input, halves[h], prev, index, count, ct);
             if (!part.Evaluated)
             {
-                // One unreadable window voids the whole beat, including the windows that DID read —
-                // the beat goes unstamped so a later pass retries it as a unit rather than banking a
-                // partial read as complete.
-                log.LogWarning("Obligation extraction UNREAD: window {Window}/{Count} of a {Chars}-char beat — {Failure}. The whole beat is discarded and left unstamped.",
-                    w + 1, windows.Count, input.BeatText.Length, part.Failure ?? "no reason recorded");
-                return new Result([], [], part.DiscardedUngrounded, part.Reasoning, Evaluated: false) { Failure = part.Failure };
+                log.LogWarning("Obligation extraction: window {Index}/{Count} still unreadable after halving — {Failure}.",
+                    index + 1, count, part.Failure ?? "no reason recorded");
+                return second;
             }
-            parts.Add(part);
+            halfParts.Add(part);
         }
-        return parts.Count == 1 ? parts[0] : Merge(parts);
+
+        log.LogInformation("Obligation extraction: window {Index}/{Count} recovered by halving into {Halves} parts.",
+            index + 1, count, halves.Count);
+        return Merge(halfParts);
     }
 
     /// <summary>Cut <paramref name="text"/> into consecutive pieces of at most <paramref name="max"/>
@@ -291,7 +380,7 @@ public class NarrativeObligationExtractor(ILlmService llm, ILogger<NarrativeObli
         catch (Exception ex) when (ex is not OperationCanceledException)
         {
             log.LogWarning(ex, "Obligation extraction call failed (window {Index}/{Count})", index + 1, count);
-            return new Result([], [], 0, "", Evaluated: false);
+            return new Result([], [], 0, "", Evaluated: false) { Failure = $"LLM call threw: {ex.Message}" };
         }
 
         // Gate against the WHOLE beat: a quote is a literal substring of the text the row anchors to.

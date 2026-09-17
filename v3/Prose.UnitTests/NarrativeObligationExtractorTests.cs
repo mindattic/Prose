@@ -120,20 +120,70 @@ public class NarrativeObligationExtractorTests
         Assert.That(llm.LastUser, Does.Contain(Promise), "the tail actually reached the prompt");
     }
 
+    // ── v8: retry, halve, and bank what read ──────────────────────────────────────
+    // Until v8 a window got exactly one attempt and one bad window discarded the whole beat. There
+    // was no retry anywhere in this pipeline, and LlmRouter's provider failover does not cover it:
+    // a response truncated at the token ceiling is a *successful* HTTP call, so nothing asked again.
+
     [Test]
-    public async Task ExtractAsync_LongBeat_OneWindowFails_WholeBeatIsNotEvaluated()
+    public async Task AFailedWindow_IsRetried_AndASecondGoodAnswerIsAccepted()
     {
-        var text = LongBeat(140);
+        var text = "A short beat. " + Promise;
         var llm = new ScriptedLlm();
-        llm.Enqueue(Nothing);
-        llm.Enqueue(null);   // the second window's call throws
+        llm.Enqueue("I'm afraid I can't answer that.");   // unparseable — no JSON object
+        llm.Enqueue(OpenedJson(Promise));
         var extractor = new NarrativeObligationExtractor(llm, NullLogger<NarrativeObligationExtractor>.Instance);
 
         var r = await extractor.ExtractAsync(new NarrativeObligationExtractor.Input(text, null, [], [], [], []));
 
-        Assert.That(r.Evaluated, Is.False, "a half-read beat is COULD NOT LOOK, not a partial ledger");
-        Assert.That(r.Opened, Is.Empty);
-        Assert.That(llm.Calls, Is.EqualTo(2), "stops at the failure instead of paying for the rest");
+        Assert.That(r.Evaluated, Is.True, "a retry that lands is a read, not a failure");
+        Assert.That(r.Opened, Has.Count.EqualTo(1));
+        Assert.That(llm.Calls, Is.EqualTo(2));
+        Assert.That(r.WindowsRead, Is.EqualTo(1));
+        Assert.That(r.WindowsTotal, Is.EqualTo(1));
+    }
+
+    [Test]
+    public async Task AShortWindowThatNeverParses_IsUnread_AndIsNotHalved()
+    {
+        var text = "A short beat that never parses. " + Promise;
+        Assert.That(text.Length, Is.LessThan(NarrativeObligationExtractor.MinResplitChars),
+            "this test is about the no-halving path; keep the beat under the threshold");
+        var llm = new ScriptedLlm();
+        llm.Enqueue("not json"); llm.Enqueue("still not json");
+        var extractor = new NarrativeObligationExtractor(llm, NullLogger<NarrativeObligationExtractor>.Instance);
+
+        var r = await extractor.ExtractAsync(new NarrativeObligationExtractor.Input(text, null, [], [], [], []));
+
+        Assert.That(r.Evaluated, Is.False);
+        Assert.That(r.WindowsRead, Is.EqualTo(0), "nothing was read, so this is UNREAD and not PARTIAL");
+        Assert.That(r.Failure, Is.Not.Null.And.Contains("window 1/1"));
+        Assert.That(llm.Calls, Is.EqualTo(2), "two attempts, then give up — a short window is not worth halving");
+    }
+
+    [Test]
+    public async Task OneUnreadableWindow_NoLongerDiscardsTheWindowsThatRead()
+    {
+        // The GCTOC defect in miniature: a beat whose first window reads perfectly and whose
+        // second cannot be parsed. Before v8 this returned nothing at all, throwing away a
+        // completely good read of ~5,900 characters because of what came after it.
+        var text = LongBeat(140);
+        var total = NarrativeObligationExtractor.SplitIntoWindows(text, NarrativeObligationExtractor.MaxBeatChars).Count;
+        Assert.That(total, Is.GreaterThanOrEqualTo(3));
+
+        var llm = new ScriptedLlm();
+        llm.Enqueue(OpenedJson(Promise));        // window 1 reads, and opens something
+        llm.Enqueue(null); llm.Enqueue(null); llm.Enqueue(null);  // window 2: attempt, retry, first half
+        var extractor = new NarrativeObligationExtractor(llm, NullLogger<NarrativeObligationExtractor>.Instance);
+
+        var r = await extractor.ExtractAsync(new NarrativeObligationExtractor.Input(text, null, [], [], [], []));
+
+        Assert.That(r.Evaluated, Is.False, "a partial read must never stamp the beat as done");
+        Assert.That(r.WindowsRead, Is.EqualTo(total - 1), "every window but the broken one was read");
+        Assert.That(r.WindowsTotal, Is.EqualTo(total));
+        Assert.That(r.Opened, Has.Count.EqualTo(1),
+            "the opened item from the window that DID read is banked rather than discarded");
+        Assert.That(r.Failure, Is.Not.Null.And.Contains("window 2/"));
     }
 
     [Test]

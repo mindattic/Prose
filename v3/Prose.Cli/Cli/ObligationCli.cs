@@ -175,6 +175,19 @@ public static class ObligationCli
 
                 var read = rows.Where(r => r.Read).ToList();
                 var unread = rows.Where(r => !r.Read).ToList();
+
+                // Index coverage, not just read coverage. The resurfacing judge retrieves candidate
+                // payoff beats from ProseEmbeddings, and nothing maintains that index when a beat is
+                // created — SemanticFidelityService is the only path that refreshes it, and
+                // UpdateBeatTextAsync runs it only when !deferAnalysis AND the beat has a
+                // Description. Beats made by split_beat have neither. GCSH was split from 12 beats
+                // to 96 and the index kept the 12, so the judge has been choosing candidates from a
+                // stub for the whole calibration programme, reporting no error to anyone.
+                var embeddedIds = await db.ProseEmbeddings.AsNoTracking()
+                    .Where(e => e.ScopeKind == EmbeddingService.ScopeBeatNode && ids.Contains(e.ScopeId))
+                    .Select(e => e.ScopeId).ToListAsync();
+                var embedded = embeddedIds.ToHashSet();
+                var unembedded = rows.Where(r => !embedded.Contains(r.Id)).ToList();
                 static string Stats(IReadOnlyList<int> xs)
                 {
                     if (xs.Count == 0) return "—";
@@ -188,10 +201,11 @@ public static class ObligationCli
                     {
                         node_id = nodeId, title, beats_total = rows.Count, beats_read = read.Count, beats_unread = unread.Count,
                         max_beat_chars = NarrativeObligationExtractor.MaxBeatChars,
+                        beats_embedded = embedded.Count, beats_unembedded = unembedded.Count,
                         unread = unread.Select(r => new { beat_id = r.Id.ToString("N"), r.Chapter, r.Position, r.Chars, r.Windows }),
                         read_chars = read.Select(r => r.Chars), unread_chars = unread.Select(r => r.Chars),
                     }, Json));
-                    return unread.Count == 0 ? 0 : 1;
+                    return unread.Count == 0 && unembedded.Count == 0 ? 0 : 1;
                 }
 
                 Console.WriteLine($"[obligations] COVERAGE — {title}");
@@ -208,7 +222,17 @@ public static class ObligationCli
                     Console.WriteLine("  being cut at the token ceiling and the parse fails — a defect in the instrument, not the book.");
                 }
                 else Console.WriteLine("\n  Every beat was read. A finding of zero here means zero, not \"could not look\".");
-                return unread.Count == 0 ? 0 : 1;
+
+                Console.WriteLine($"\n  RETRIEVAL INDEX — beats with a ProseEmbeddings row: {embedded.Count}/{rows.Count}"
+                    + (unembedded.Count == 0 ? "" : $"   MISSING: {unembedded.Count}"));
+                if (unembedded.Count > 0)
+                {
+                    Console.WriteLine("  The resurfacing judge picks candidate payoff beats from this index. A beat that is not in");
+                    Console.WriteLine("  it can never be retrieved, so its payoff can never be recognised — and the judge reports");
+                    Console.WriteLine("  \"not_addressed\", which reads as a recognition failure rather than a missing index.");
+                    Console.WriteLine($"  Backfill (cheap, drift-skipped): prose --reembed --beats --slug <slug>");
+                }
+                return unread.Count == 0 && unembedded.Count == 0 ? 0 : 1;
             }
             case "import-bible-ledger":
             {

@@ -57,6 +57,27 @@ public abstract class Node
     /// "stopped". Mirrors the old Episode.Status semantics.</summary>
     public string Status { get; set; } = "draft";
 
+    /// <summary>Does this text finish its own story? (RFC 0013 §6a, author ruling 2026-09-16.)
+    ///
+    /// <para><b>Not the same question as <c>Status</c>.</b> <c>ObligationReconciliationService
+    /// .IsBookAtEnd</c> reads <c>Status</c> to answer "have we reached the end of the text we
+    /// hold" — a different thing entirely. GCTOC is marked "Complete - publication ready" purely
+    /// so book-end due rules would age, but it is <i>A Tale of Two Cities, Book the First</i>: act
+    /// one of three. It is at its end AND structurally incomplete, and until now nothing could say
+    /// so.</para>
+    ///
+    /// <para><b>Why it matters.</b> The obligation calibration bar treats a debt still outstanding
+    /// at the end of the text as a false positive. That is right for a story collection that
+    /// closes what it opens, and simply wrong for the first act of a novel, where unpaid debts ARE
+    /// the structure — hand-reading GCTOC found ~9 that Dickens deliberately carries into Books
+    /// Two and Three, against a whole-book budget of ~1.7, so a PERFECT ledger missed the bar by
+    /// ~5x for being right.</para>
+    ///
+    /// <para><c>null</c> means nobody has said. Scoring treats null as the STRICT case (every
+    /// control finding counts) and prints that it did so — an unset flag must never silently
+    /// loosen a bar.</para></summary>
+    public bool? StructurallyComplete { get; set; }
+
     /// <summary>Latest-run overall reader score as a percentage (0-100): the mean
     /// of the most-recent focus-group reviews (one per persona). Null = not yet
     /// reviewed. Shown on the node; clicking it opens the full reviews.</summary>

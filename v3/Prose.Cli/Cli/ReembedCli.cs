@@ -13,6 +13,17 @@ namespace Prose.Cli;
 ///                                    a new API call)
 ///   prose --reembed --force             same as above but invalidates every
 ///                                    cached hash (use after model upgrade)
+///   prose --reembed --beats --slug S    backfill ProseEmbeddings for ONE book's beats
+///
+/// <para><b>Why <c>--beats</c> exists</b> (RFC 0013, 2026-09-16). Nothing maintains the beat
+/// embedding index on beat creation. The only production path that refreshes it is
+/// <c>SemanticFidelityService</c>, which <c>NodeWorkbenchService.UpdateBeatTextAsync</c> runs only
+/// when <c>!deferAnalysis</c> AND the beat carries a non-empty <c>Description</c>. Beats made by
+/// <c>split_beat</c> have neither, so they are never embedded. The GCSH calibration fixture was
+/// split from 12 chapter-sized beats to 96 and the index kept the original 12: a <c>k=400</c>
+/// similarity sweep over the whole <c>gutenberg</c> universe returned twelve rows, and the
+/// obligation resurfacing judge has been retrieving candidates from that stub index for the entire
+/// calibration programme. A retrieval tier serving 12 of 116 beats reported no error to anyone.</para>
 /// </summary>
 public static class ReembedCli
 {
@@ -22,6 +33,40 @@ public static class ReembedCli
         var force = args.Contains("--force");
         var prose = args.Contains("--prose");
         var markdown = args.Contains("--markdown");
+        var beats = args.Contains("--beats");
+
+        if (beats)
+        {
+            var slugIdx = Array.IndexOf(args, "--slug");
+            if (slugIdx < 0 || slugIdx + 1 >= args.Length)
+            {
+                Console.Error.WriteLine("[reembed] --beats requires --slug <book>.");
+                return 2;
+            }
+            var slug = args[slugIdx + 1];
+            var dbFactory = sp.GetRequiredService<IDbContextFactory<Prose.Core.Data.ProseDbContext>>();
+            Guid bookId;
+            await using (var db = await dbFactory.CreateDbContextAsync())
+            {
+                var resolved = await NodeRefResolver.ResolveAsync(db, slug);
+                if (resolved == null) { Console.Error.WriteLine($"[reembed] {NodeRefResolver.NotFoundMessage(slug)}"); return 1; }
+                bookId = resolved.Value;
+            }
+
+            var bsw = System.Diagnostics.Stopwatch.StartNew();
+            int embedded;
+            try { embedded = await svc.ReembedBeatNodesAsync(bookId); }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"[reembed] beat pass failed: {ex.Message}");
+                return 1;
+            }
+            bsw.Stop();
+            Console.WriteLine($"[reembed] {slug} — {embedded} beat embedding(s) written/refreshed in {bsw.Elapsed:mm\\:ss}.");
+            Console.WriteLine("  Drift-skipped: a beat whose source text is unchanged costs nothing.");
+            Console.WriteLine("  Verify with: prose --obligations coverage --slug " + slug);
+            return 0;
+        }
 
         if (markdown)
         {

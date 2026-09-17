@@ -53,6 +53,65 @@ public class NarrativeHealthSnapshot
 }
 
 /// <summary>
+/// What happened the last time the extractor tried to read one beat (RFC 0013, 2026-09-16).
+///
+/// <para><b>Why this exists.</b> The only durable evidence an unread beat left was the *absence* of
+/// <c>Beat.ObligationScanHash</c>, and the reason for the failure reached an <c>ILogger</c> and
+/// stopped there. That made two very different beats identical in the database: one that was read
+/// and owed nothing, and one the extractor could not read at all. Worse, a third case had no
+/// representation anywhere — a beat that WAS read, found debts, and had every one of them thrown
+/// out by the quote gate, which reports <c>opened = 0</c> exactly like a beat that owed nothing.
+/// That is the leading explanation for the GCTOC beat-3 blind spot (the beat carrying
+/// <c>RECALLED TO LIFE</c>, which opened nothing at all).</para>
+///
+/// <para>One row per attempt, not per beat: the history is the point. A beat that needed a retry,
+/// or that only read after being halved, is a beat whose budget is marginal.</para>
+/// </summary>
+public class ObligationScanAttempt
+{
+    public Guid     Id                  { get; set; } = Guid.CreateVersion7();
+    /// <summary>The BOOK node, matching every other obligation row's scoping.</summary>
+    public Guid     NodeId              { get; set; }
+    public Guid     BeatId              { get; set; }
+    /// <summary>Extractor <c>PromptVersion</c> this attempt ran under. A number is only comparable
+    /// to another computed under the same rules.</summary>
+    public string   PromptVersion       { get; set; } = "";
+    public int      BeatChars           { get; set; }
+    public int      WindowsTotal        { get; set; }
+    public int      WindowsRead         { get; set; }
+    /// <summary>See <see cref="ObligationScanOutcome"/>.</summary>
+    public string   Outcome             { get; set; } = ObligationScanOutcome.Read;
+    /// <summary>Why, when the read failed or was partial. Null on a clean read.</summary>
+    public string?  Failure             { get; set; }
+    public int      Opened              { get; set; }
+    public int      Advanced            { get; set; }
+    public int      Closed              { get; set; }
+    /// <summary>Items the model produced that could not quote the beat and were thrown away. When
+    /// this is positive and <see cref="Opened"/> is zero, the beat was read and its entire harvest
+    /// discarded — which is NOT the same as a beat that owed nothing.</summary>
+    public int      DiscardedUngrounded { get; set; }
+    public DateTime CreatedAt           { get; set; } = DateTime.UtcNow;
+}
+
+/// <summary>The four distinguishable outcomes of trying to read one beat. Before these existed the
+/// database could only say "stamped" or "not stamped".</summary>
+public static class ObligationScanOutcome
+{
+    /// <summary>Every window read. The beat is stamped.</summary>
+    public const string Read = "read";
+    /// <summary>Every window read, the model produced items, and the quote gate discarded all of
+    /// them. Stamped — the read was real — but this is a fidelity defect, not an empty beat.</summary>
+    public const string ReadAllDiscarded = "read-all-discarded";
+    /// <summary>Some windows read and are banked; at least one could not be read after retry and
+    /// halving. NOT stamped — the beat is re-read.</summary>
+    public const string Partial = "partial";
+    /// <summary>No window could be read. NOT stamped.</summary>
+    public const string Unread = "unread";
+
+    public static bool CouldNotLook(string outcome) => outcome is Partial or Unread;
+}
+
+/// <summary>
 /// A synthetic defect the calibration harness injected into a gutenberg-universe book (RFC 0013
 /// D7): the sentence appended, where, the exact text it replaced (so the revert is byte-exact),
 /// and for a "resolved" injection the payoff sentence and its beat. The harness scores the

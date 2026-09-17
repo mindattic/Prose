@@ -164,6 +164,7 @@ public class NarrativeObligationService(
 
         // 2. Extract what the new text opens / pays.
         var opened = 0; var advanced = 0; var closed = 0; var discarded = 0; var evaluated = false;
+        NarrativeObligationExtractor.Result? extraction = null;
         if (extractor != null && !string.IsNullOrWhiteSpace(collapsed))
         {
             var open = await OutstandingAsync(db, bookNodeId, ct);
@@ -177,10 +178,15 @@ public class NarrativeObligationService(
 
             var result = await extractor.ExtractAsync(new NarrativeObligationExtractor.Input(
                 collapsed, previousTail, openOrdered, tagged, hints, stopList), ct);
+            extraction = result;
             evaluated = result.Evaluated;
             discarded = result.DiscardedUngrounded;
 
-            if (result.Evaluated)
+            // v8: apply what the extractor DID read, even on a partial beat. The rows below are
+            // banked; `evaluated` stays false so the stamp is withheld and the beat is re-read,
+            // and the exact-DedupKey check inside the loop keeps that re-read from duplicating
+            // anything already banked here.
+            if (result.Evaluated || result.Opened.Count > 0 || result.Touched.Count > 0)
             {
                 var universeId = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
                     .Where(n => n.Id == bookNodeId).Select(n => n.UniverseId).FirstOrDefaultAsync(ct);
@@ -259,9 +265,33 @@ public class NarrativeObligationService(
             await db.Beats.Where(b => b.Id == beatId)
                 .ExecuteUpdateAsync(s => s.SetProperty(b => b.ObligationScanHash, scanHash), ct);
 
+        // 4. Record WHAT HAPPENED, durably. Until 2026-09-16 this reached an ILogger and stopped,
+        //    so the only queryable evidence of a failed read was a missing stamp — and a beat that
+        //    was read and threw its whole harvest away at the quote gate had no representation at
+        //    all. See ObligationScanAttempt.
+        if (extraction != null)
+        {
+            db.ObligationScanAttempts.Add(new ObligationScanAttempt
+            {
+                NodeId              = bookNodeId,
+                BeatId              = beatId,
+                PromptVersion       = NarrativeObligationExtractor.PromptVersion,
+                BeatChars           = collapsed.Length,
+                WindowsTotal        = extraction.WindowsTotal,
+                WindowsRead         = extraction.WindowsRead,
+                Outcome             = ClassifyOutcome(extraction, opened),
+                Failure             = extraction.Failure is { } f ? Truncate(f, 1000) : null,
+                Opened              = opened,
+                Advanced            = advanced,
+                Closed              = closed,
+                DiscardedUngrounded = discarded,
+            });
+            await db.SaveChangesAsync(ct);
+        }
+
         var res = new ScanResult(false, opened, advanced, closed, withdrawn, reopened, reanchored, discarded, evaluated);
-        log.LogInformation("Obligation scan beat {BeatId}: opened={Opened} advanced={Advanced} closed={Closed} withdrawn={Withdrawn} reopened={Reopened} ungrounded={Discarded} evaluated={Evaluated}",
-            beatId, opened, advanced, closed, withdrawn, reopened, discarded, evaluated);
+        log.LogInformation("Obligation scan beat {BeatId}: opened={Opened} advanced={Advanced} closed={Closed} withdrawn={Withdrawn} reopened={Reopened} ungrounded={Discarded} evaluated={Evaluated} windows={Read}/{Total}",
+            beatId, opened, advanced, closed, withdrawn, reopened, discarded, evaluated, extraction?.WindowsRead ?? 0, extraction?.WindowsTotal ?? 0);
         return res;
     }
 
@@ -699,6 +729,26 @@ public class NarrativeObligationService(
     }
 
     // ── Helpers ───────────────────────────────────────────────────────────────────
+
+    /// <summary>Which of the four distinguishable things happened to this beat. Pure and static so
+    /// it is testable without a database or an LLM — the same reason <c>Parse</c>,
+    /// <c>SplitIntoWindows</c> and the calibration scorer's <c>Classify</c> are pure. The gap that
+    /// survived five paid runs survived because nothing could exercise the scorer without spending
+    /// $3; this classification must never be in that position.
+    /// <para>The case worth naming is <see cref="ObligationScanOutcome.ReadAllDiscarded"/>: the
+    /// extractor read the beat, produced items, and the quote gate threw every one of them out.
+    /// That reports <c>opened = 0</c> exactly like a beat that owed nothing, and it is the leading
+    /// explanation for GCTOC beat 3 — the beat carrying <c>RECALLED TO LIFE</c>, which opened
+    /// nothing at all. Dickens' em-dashes, archaic spelling and nested quotation are precisely what
+    /// breaks verbatim quote fidelity, and GCSH run 1 already logged the class.</para></summary>
+    public static string ClassifyOutcome(NarrativeObligationExtractor.Result r, int opened)
+    {
+        if (!r.Evaluated)
+            return r.WindowsRead > 0 ? ObligationScanOutcome.Partial : ObligationScanOutcome.Unread;
+        return opened == 0 && r.DiscardedUngrounded > 0
+            ? ObligationScanOutcome.ReadAllDiscarded
+            : ObligationScanOutcome.Read;
+    }
 
     public static string DedupKey(Guid nodeId, string kind, string description)
     {

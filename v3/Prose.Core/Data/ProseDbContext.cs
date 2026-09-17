@@ -346,6 +346,7 @@ public class ProseDbContext : DbContext
     public DbSet<ObligationJudgeCache>     ObligationJudgeCache      => Set<ObligationJudgeCache>();
     public DbSet<NarrativeHealthSnapshot>  NarrativeHealthSnapshots  => Set<NarrativeHealthSnapshot>();
     public DbSet<CalibrationInjection>     CalibrationInjections     => Set<CalibrationInjection>();
+    public DbSet<ObligationScanAttempt>    ObligationScanAttempts    => Set<ObligationScanAttempt>();
     public DbSet<BookPlotEvent>           BookPlotEvents            => Set<BookPlotEvent>();
     public DbSet<BookMotif>               BookMotifs                => Set<BookMotif>();
     public DbSet<NarrativeSummaryEntry>   NarrativeSummaryEntries   => Set<NarrativeSummaryEntry>();
@@ -3137,6 +3138,18 @@ public class ProseDbContext : DbContext
             e.Property(x => x.BookTextHash).HasMaxLength(80).IsRequired();
             e.Property(x => x.InstrumentVersion).HasMaxLength(32).IsRequired();
             e.HasIndex(x => new { x.NodeId, x.TakenAt });
+        });
+        // What happened the last time the extractor tried to read a beat. One row per ATTEMPT: a
+        // beat that only read after a retry or a halving is a beat whose budget is marginal, and
+        // that history is exactly what six paid runs had no way to see.
+        b.Entity<ObligationScanAttempt>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.PromptVersion).HasMaxLength(32).IsRequired();
+            e.Property(x => x.Outcome).HasMaxLength(24).IsRequired();
+            e.Property(x => x.Failure).HasMaxLength(1000);
+            e.HasIndex(x => new { x.NodeId, x.CreatedAt });
+            e.HasIndex(x => new { x.BeatId, x.CreatedAt });
         });
         b.Entity<CalibrationInjection>(e =>
         {

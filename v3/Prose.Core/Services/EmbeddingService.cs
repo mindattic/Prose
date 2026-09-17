@@ -36,7 +36,11 @@ public class EmbeddingService
     /// <summary>ProseEmbeddings ScopeKind for a node beat (Beat.Id keyed). Distinct
     /// from 'beat' (which keys ChapterBeat.BeatGuid) so the two content models
     /// never collide in the polymorphic prose table.</summary>
-    private const string ScopeBeatNode = "BeatNode";
+    /// <summary>Public so instruments can REPORT index coverage rather than assume it. A
+    /// retrieval tier that silently serves a stub index looks exactly like one that found nothing
+    /// (RFC 0013, 2026-09-16: a k=400 sweep over the gutenberg universe returned 12 of 116 beats,
+    /// and six paid calibration runs never noticed).</summary>
+    public const string ScopeBeatNode = "BeatNode";
 
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly SettingsService settings;

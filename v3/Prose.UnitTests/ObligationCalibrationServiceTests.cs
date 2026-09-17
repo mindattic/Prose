@@ -253,6 +253,34 @@ public class ObligationCalibrationServiceTests
     }
 
     [Test]
+    public void TheBar_SplitsByStructuralCompleteness()
+    {
+        // 9 control findings on a 17,300-word text, every one of them "the book has not paid this
+        // yet" — the measured shape of a PERFECT hand-read of A Tale of Two Cities, Book the First
+        // (RFC 0013 §6a). The bar allows ~1.0 MODERATE+ per 10k words, i.e. ~1.7 for this book.
+        var base9 = new ObligationCalibrationService.Score(
+            bookId, 8, 4, 4, TruePositives: 8, FalseNegatives: 0, ResolvedMisflagged: 0,
+            ControlFindingsModeratePlus: 9, WordCount: 17_300,
+            Precision: 1.0, Recall: 1.0, F1: 1.0, ControlFalsePositivesPer10k: 0, Details: Array.Empty<string>())
+            { BeatsTotal = 17, BeatsRead = 17, ControlStillOpen = 9 };
+
+        var incomplete = base9 with { StructurallyComplete = false };
+        Assert.That(incomplete.ControlStructural, Is.EqualTo(0));
+        Assert.That(incomplete.ControlAgainstBar, Is.EqualTo(0),
+            "act one of a novel carries its unpaid debts forward; they are the structure, not defects");
+        Assert.That(incomplete.BarBasis, Does.Contain("INCOMPLETE"));
+
+        var complete = base9 with { StructurallyComplete = true };
+        Assert.That(complete.ControlAgainstBar, Is.EqualTo(9),
+            "a text that finishes its own story and still owes 9 debts really did abandon them");
+
+        var unset = base9 with { StructurallyComplete = null };
+        Assert.That(unset.ControlAgainstBar, Is.EqualTo(9),
+            "unset takes the STRICT branch — an unset flag must never silently loosen a bar");
+        Assert.That(unset.BarBasis, Does.Contain("NOT SET"));
+    }
+
+    [Test]
     public void AFullRead_IsNotCouldNotLook()
     {
         var score = new ObligationCalibrationService.Score(

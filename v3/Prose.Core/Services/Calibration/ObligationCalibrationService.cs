@@ -90,6 +90,32 @@ public class ObligationCalibrationService(
         /// <summary>Control findings that indicate a broken ledger rather than an unpaid debt.</summary>
         public int ControlStructural => ControlFindingsModeratePlus - ControlStillOpen;
 
+        /// <summary>Whether the scored text finishes its own story (<c>Node.StructurallyComplete</c>).
+        /// Null when nobody has said.</summary>
+        public bool? StructurallyComplete { get; init; }
+
+        /// <summary>The control count the bar is actually measured against (author ruling
+        /// 2026-09-16 — split by structural completeness).
+        /// <list type="bullet">
+        /// <item>On a text that <b>finishes its own story</b>, a debt left outstanding at the end
+        /// IS abandoned — the book ended and never paid it — so every control finding counts.</item>
+        /// <item>On a text that <b>does not</b> (act one of a novel), outstanding-at-end means "not
+        /// reached yet". Only <see cref="ControlStructural"/> counts: a broken ledger is broken on
+        /// any book, but an unpaid debt is the structure.</item>
+        /// <item><c>null</c> — nobody has said — takes the STRICT branch. An unset flag never
+        /// loosens a bar; it just makes the run say which branch it took.</item>
+        /// </list></summary>
+        public int ControlAgainstBar => StructurallyComplete == false ? ControlStructural : ControlFindingsModeratePlus;
+
+        /// <summary>Human-readable statement of which branch the bar took and why, so a score is
+        /// never a number without its rule.</summary>
+        public string BarBasis => StructurallyComplete switch
+        {
+            false => $"structurally INCOMPLETE — {ControlStructural} structural control finding(s) counted; {ControlStillOpen} outstanding-at-end excluded as not-yet-reached",
+            true  => $"structurally complete — all {ControlFindingsModeratePlus} control finding(s) counted, including {ControlStillOpen} outstanding at the end",
+            null  => $"completeness NOT SET on this book — scored STRICT: all {ControlFindingsModeratePlus} control finding(s) counted. Set Node.StructurallyComplete to score it properly.",
+        };
+
         /// <summary>An incomplete read can never meet the bar, whatever the arithmetic says: the
         /// numbers describe the beats the instrument managed to read, and say nothing about the rest.
         /// A partial run is void, not passing and not failing (RFC 0010 — zero findings can mean
@@ -335,16 +361,28 @@ public class ObligationCalibrationService(
             .ToDictionary(g => g.Key, g => g.Count());
         var controlStillOpen = controlVerdicts.Count(v => v.RuleKey is "overdue_open" or "open_at_end");
         var words = report.Snapshot?.WordCount ?? await WordCountAsync(db, clock, ct);
-        var per10k = words > 0 ? control * 10_000.0 / words : 0;
 
-        var precisionDen = tp + resolvedMisflagged + control;
+        // Author ruling 2026-09-16 (RFC 0013 §6a): the bar is measured against the control findings
+        // that mean something on THIS SHAPE of text. On a book that finishes its own story, an
+        // outstanding debt at the end is abandoned and counts. On act one of a novel it is the
+        // structure, and counting it fails a perfect reader for being right. Unset takes the strict
+        // branch — an unset flag must never loosen a bar.
+        var structurallyComplete = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(n => n.Id == bookNodeId).Select(n => n.StructurallyComplete).FirstOrDefaultAsync(ct);
+        var controlForBar = structurallyComplete == false ? control - controlStillOpen : control;
+        var per10k = words > 0 ? controlForBar * 10_000.0 / words : 0;
+
+        // Precision uses the same count: leaving the full control tally in the denominator would
+        // punish precision on an incomplete text for exactly the findings the bar just excused.
+        var precisionDen = tp + resolvedMisflagged + controlForBar;
         var precision = precisionDen == 0 ? 1.0 : (double)tp / precisionDen;
         var recall = tp + fn == 0 ? 1.0 : (double)tp / (tp + fn);
         var f1 = precision + recall == 0 ? 0 : 2 * precision * recall / (precision + recall);
 
         return new Score(bookNodeId, injections.Count, injections.Count(i => i.Kind == "abandoned"), injections.Count(i => i.Kind == "resolved"),
             tp, fn, resolvedMisflagged, control, words, precision, recall, f1, per10k, details)
-            { BeatsTotal = beatsTotal, BeatsRead = beatsRead, ControlByRule = controlByRule, ControlStillOpen = controlStillOpen };
+            { BeatsTotal = beatsTotal, BeatsRead = beatsRead, ControlByRule = controlByRule, ControlStillOpen = controlStillOpen,
+              StructurallyComplete = structurallyComplete };
     }
 
     private static async Task GuardAsync(ProseDbContext db, Guid bookNodeId, CancellationToken ct)

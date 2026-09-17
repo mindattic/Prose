@@ -216,13 +216,36 @@ public class NarrativeObligationServiceTests
     [Test]
     public async Task ProviderOutage_DoesNotStampTheGate_SoTheBeatIsRescannedNextTime()
     {
-        llm.Enqueue(null); // throws
+        // A real outage fails every attempt. Since v8 the extractor retries a failed window before
+        // giving up on it, so one enqueued failure is a blip that recovers — which is the point of
+        // the retry, and why this test has to exhaust the attempts to still describe an outage.
+        llm.Enqueue(null); llm.Enqueue(null); llm.Enqueue(null);
         var r = await svc.ScanBeatAsync(bookId, CurtainBeatId, CurtainBeat, ObligationActor.SystemExtract);
         Assert.That(r.Evaluated, Is.False);
 
         await using var db = dbFactory.CreateDbContext();
         var beat = await db.Beats.SingleAsync(b => b.Id == CurtainBeatId);
         Assert.That(beat.ObligationScanHash, Is.EqualTo("seeded"), "an outage must not look like a completed scan");
+
+        var attempt = await db.ObligationScanAttempts.SingleAsync(a => a.BeatId == CurtainBeatId);
+        Assert.That(attempt.Outcome, Is.EqualTo(ObligationScanOutcome.Unread),
+            "the reason a beat went unread is now a row, not just a log line");
+        Assert.That(attempt.Failure, Is.Not.Null.And.Not.Empty);
+    }
+
+    [Test]
+    public async Task ATransientFailure_IsRetried_AndTheBeatIsStampedNormally()
+    {
+        llm.Enqueue(null); // one blip
+        llm.Enqueue(OpenedJson("promise", "x", "gap where the curtain didn't quite meet the frame"));
+        var r = await svc.ScanBeatAsync(bookId, CurtainBeatId, CurtainBeat, ObligationActor.SystemExtract);
+
+        Assert.That(r.Evaluated, Is.True, "the retry landed, so the beat WAS read");
+        await using var db = dbFactory.CreateDbContext();
+        var beat = await db.Beats.SingleAsync(b => b.Id == CurtainBeatId);
+        Assert.That(beat.ObligationScanHash, Is.Not.EqualTo("seeded"));
+        var attempt = await db.ObligationScanAttempts.SingleAsync(a => a.BeatId == CurtainBeatId);
+        Assert.That(attempt.Outcome, Is.EqualTo(ObligationScanOutcome.Read));
     }
 
     [Test]
@@ -430,6 +453,70 @@ public class NarrativeObligationServiceTests
         private readonly DbContextOptions<ProseDbContext> opts = new DbContextOptionsBuilder<ProseDbContext>().UseSqlite(conn).Options;
         public ProseDbContext CreateDbContext() => new(opts);
         public Task<ProseDbContext> CreateDbContextAsync(CancellationToken ct = default) => Task.FromResult(CreateDbContext());
+    }
+}
+
+/// <summary>
+/// <c>ClassifyOutcome</c> is pure and static so the four distinguishable things that can happen to
+/// a beat are testable without a database or an LLM. The gap that survived five paid calibration
+/// runs survived because nothing could exercise the scorer without spending $3; this must never be
+/// in that position.
+/// </summary>
+[TestFixture]
+public class ObligationScanOutcomeTests
+{
+    private static NarrativeObligationExtractor.Result R(bool evaluated, int windowsRead, int windowsTotal, int discarded) =>
+        new([], [], discarded, "", evaluated) { WindowsRead = windowsRead, WindowsTotal = windowsTotal };
+
+    [Test]
+    public void EveryWindowRead_AndSomethingOpened_IsARead()
+    {
+        Assert.That(NarrativeObligationService.ClassifyOutcome(R(true, 2, 2, 0), opened: 3),
+            Is.EqualTo(ObligationScanOutcome.Read));
+    }
+
+    [Test]
+    public void ReadAndGenuinelyEmpty_IsARead_NotAFailure()
+    {
+        Assert.That(NarrativeObligationService.ClassifyOutcome(R(true, 1, 1, 0), opened: 0),
+            Is.EqualTo(ObligationScanOutcome.Read),
+            "a beat that owes nothing is a real, successful read");
+    }
+
+    [Test]
+    public void ReadButEveryItemFailedTheQuoteGate_IsItsOwnOutcome()
+    {
+        // The case with no representation before 2026-09-16, and the leading explanation for the
+        // GCTOC beat-3 blind spot: the beat carrying RECALLED TO LIFE was read (evaluated = true)
+        // and opened nothing at all. Dickens' em-dashes, archaic spelling and nested quotation are
+        // exactly what breaks verbatim quote fidelity, and GCSH run 1 already logged the class.
+        // In the database this was indistinguishable from a beat that owed nothing.
+        Assert.That(NarrativeObligationService.ClassifyOutcome(R(true, 1, 1, discarded: 6), opened: 0),
+            Is.EqualTo(ObligationScanOutcome.ReadAllDiscarded));
+    }
+
+    [Test]
+    public void SomeWindowsRead_IsPartial_AndCountsAsCouldNotLook()
+    {
+        var outcome = NarrativeObligationService.ClassifyOutcome(R(false, 2, 3, 0), opened: 1);
+        Assert.That(outcome, Is.EqualTo(ObligationScanOutcome.Partial));
+        Assert.That(ObligationScanOutcome.CouldNotLook(outcome), Is.True);
+    }
+
+    [Test]
+    public void NoWindowRead_IsUnread_AndCountsAsCouldNotLook()
+    {
+        var outcome = NarrativeObligationService.ClassifyOutcome(R(false, 0, 3, 0), opened: 0);
+        Assert.That(outcome, Is.EqualTo(ObligationScanOutcome.Unread));
+        Assert.That(ObligationScanOutcome.CouldNotLook(outcome), Is.True);
+    }
+
+    [Test]
+    public void ARead_IsNeverCouldNotLook()
+    {
+        Assert.That(ObligationScanOutcome.CouldNotLook(ObligationScanOutcome.Read), Is.False);
+        Assert.That(ObligationScanOutcome.CouldNotLook(ObligationScanOutcome.ReadAllDiscarded), Is.False,
+            "the read really happened — the defect is quote fidelity, not coverage");
     }
 }
 
