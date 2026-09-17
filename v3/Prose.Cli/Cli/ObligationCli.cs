@@ -23,6 +23,10 @@ namespace Prose.Cli;
 ///   due           --id g --due chapter:7|beats:12|book-end
 ///   accept        --id g                  lock an extracted row as-is
 ///   rescan        [--beat-id g] [--force]  re-run the extractor over one beat / the whole book
+///   completeness  [--complete t|f|unset]  Does this text finish its own story? The one fact the
+///                                         calibration bar needs and could not ask for (§6a). With
+///                                         no flag it reports; it is NOT derived from Status, which
+///                                         answers a different question. Free.
 ///   coverage                              READ-ONLY: which beats the extractor actually READ on the
 ///                                         last scan, with the length distribution of the read vs
 ///                                         unread groups. An unread beat contributes nothing and is
@@ -139,6 +143,49 @@ public static class ObligationCli
                 Console.WriteLine($"  scanned {scanned} of {ordered.Count} (skipped {skipped} unchanged) — opened {opened}, advanced {advanced}, closed {closed}, ungrounded discarded {ungrounded}, not evaluated {notEvaluated}");
                 if (scanned == 0 && skipped == 0) Console.WriteLine("  COULD NOT LOOK — no beats.");
                 return notEvaluated > 0 ? 1 : 0;
+            }
+            case "completeness":
+            {
+                // Does this text finish its own story? It is the one fact the calibration bar needs
+                // and could not ask for (RFC 0013 §6a). Deliberately NOT derived from Status: that
+                // answers "have we reached the end of the text we hold", which is a different
+                // question — GCTOC is "Complete - publication ready" AND is act one of three.
+                await using var db = await dbFactory.CreateDbContextAsync();
+                var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId);
+                if (node == null) { Console.Error.WriteLine("[obligations] node not found."); return 1; }
+
+                var arg = args.SkipWhile(a => a != "--complete").Skip(1).FirstOrDefault();
+                if (arg != null)
+                {
+                    bool? value = arg.ToLowerInvariant() switch
+                    {
+                        "true" or "yes" or "1"  => true,
+                        "false" or "no" or "0"  => false,
+                        "unset" or "null"       => null,
+                        _ => throw new ArgumentException($"--complete expects true|false|unset, got '{arg}'"),
+                    };
+                    node.StructurallyComplete = value;
+                    await db.SaveChangesAsync();
+                    Console.WriteLine($"[obligations] {title}: StructurallyComplete = {Describe(value)}");
+                    return 0;
+                }
+
+                Console.WriteLine($"[obligations] COMPLETENESS — {title}");
+                Console.WriteLine($"  Status (is the text at its end?):      {node.Status}");
+                Console.WriteLine($"  StructurallyComplete (does it finish its own story?): {Describe(node.StructurallyComplete)}");
+                if (node.StructurallyComplete == null)
+                {
+                    Console.WriteLine("  NOT SET — calibration scores this book STRICT (every control finding counts).");
+                    Console.WriteLine("  Set it: prose --obligations completeness --slug <slug> --complete true|false");
+                }
+                return node.StructurallyComplete == null ? 1 : 0;
+
+                static string Describe(bool? v) => v switch
+                {
+                    true  => "true — finishes its own story; a debt still open at the end was abandoned and counts against the bar",
+                    false => "false — a fragment of a larger work; outstanding-at-end is expected and is scored separately",
+                    null  => "(not set)",
+                };
             }
             case "coverage":
             {
