@@ -411,3 +411,86 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   other sixteen still carry v7 rows, so the book is a mixture and not a measurement. `PromptVersion`
   is folded into `ObligationScanHash`, so every GCTOC beat is already due a re-read; a clean grade
   costs one full run (~$0.41).
+- 2026-09-17 (**literature pass — seven research expeditions; four rulings changed on evidence**) —
+  The author asked for the field surveyed and the design derived scientifically rather than by taste.
+  Condensed here; full version with citations in the plan file.
+
+  **(a) Our quote-gate discard rate is normal, and the specific cause is probably typography.**
+  Published baseline: **22–28% of an unconstrained model's "verbatim" quotes are not verbatim**
+  (ReClaim, NAACL 2025 Findings — CR 75.5/72.1/77.5). Every such measurement is on Wikipedia-style
+  text. `QuoteGrounding.Normalize` collapsed whitespace but **not Unicode**, and Dickens is dense in
+  em-dashes and curly quotes — so a substantively correct claim was mechanically invisible, which is
+  exactly beat 3's `opened = 0`. Fixed this session (`FoldTypography` + `TryAlign`). The recovery
+  strategy is the measured best: FullCite scored post-hoc word-Jaccard alignment **61.87** against
+  **12.80** for prompting and **55.11** for constrained decoding — and constrained decoding *refused*
+  on up to 56.6% of cases. CiteFix separately measured deterministic matching beating an LLM
+  re-matcher **8× on quality at 100× lower latency**.
+
+  **(b) RULING REVERSED — finer granularity is measurably WORSE on narrative.** Decomposing beats
+  into sentence-level "verses" is rejected for retrieval and decomposition alike. On **GutenQA (100
+  Project Gutenberg narrative books)**, proposition-level chunking has the **worst Recall@20 of five
+  methods — 55.54, below plain paragraph at 64.34** (LumberChunker, EMNLP 2024 Findings), attributed
+  to pronoun ambiguity in narrative. Citation granularity peaks at **paragraph scale, 4–8 sentences**,
+  and fine granularity penalises *larger* models hardest (Llama-70B **+70.1%** from k=2→k=4; 120B
+  **+96.7%**). Atomic units verify worse exactly where it matters: **22.4%** accuracy on the
+  not-supported class vs 38.8% molecular. **The target unit is paragraph-scale. Our ~400-word beats
+  are near it; the 6,000-char outliers are the defect.**
+
+  **(c) THE <1% BAR HAS A MEASURED CEILING.** FABLES (COLM 2024) is the closest published measurement
+  of our exact task — claims about book-length fiction, annotators who read the whole book. Best
+  auto-verifier, **Claude-3-Opus with the entire book in context: F1 0.967 on faithful claims but
+  0.476–0.582 on UNFAITHFUL ones**; GPT-4-Turbo **0.109**. Authors' verdict: *"too poorly to be a
+  reliable auto-rater."* The irreducible part — annotator agreement on *subjective* narrative claims
+  is **26.56%** (Subbiah et al. 2025). **<1% is unreachable on the interpretive fraction by anyone,
+  by any method.** It must be scoped to the objective, span-checkable fraction, and the two reported
+  separately, or the noise floor silently caps every number we publish.
+
+  **(d) Chekhov's gun is misquoted, and the real rule fixes our precision problem.** The 1889 letter
+  criticises a superfluous **monologue**, not a prop, and its operative clause is *«Нельзя обещать»* —
+  **"one must not make promises."** The act-numbered version comes from two memoirs published 15 and
+  22 years later; Chekhov's own plays leave guns unfired on purpose. **The defensible rule is about
+  SALIENCE, not inventory: a text must not foreground what it will not use.** That is the fix for our
+  texture false-plants — the guard's blunderbuss was never foregrounded, so it was never a debt.
+  Corroborated computationally: filtering non-salient events improved narrative prediction by ~5
+  points, with a measurable over-filtering point (Zhang et al., EMNLP 2021).
+
+  **(e) Do not build narrative event chains.** The Chambers & Jurafsky lineage fails on stories: a
+  **unigram model beats PMI chains** on narrative cloze (rank 400 vs 1115); on ROCStories C&J chains
+  score **0.478, below the 0.513 "always pick the first option" constant**; on non-news narrative
+  both published script models lose to a most-frequent baseline. What finally beat it was **typing
+  the participants**, not refining the event representation. Also: a verbs-only literary event
+  baseline gets **recall 76.2 at precision 17.7**, and *"thought"* is a realis event only **32%** of
+  the time. A lemma is not an event.
+
+  **(f) Coreference is the hard ceiling, and it dictates an architecture.** Whole-book coreference
+  tops out at **67.0 CoNLL F1** fine-tuned and **41–47 off the shelf**, while the *same models on
+  1,500-token windows* score **82.2** (BookCoref, ACL 2025) — the entire 15–21 point loss is in
+  stitching. So: **window, then merge globally.** Two further consequences: **MUC is worthless at book
+  length** (BookNLP scores MUC 83.1 with CEAF_φ4 **2.4** — a catastrophic merge reading as a good
+  score, the same failure shape as "zero findings can mean could not look"), and **a bounded memory
+  of ~20 entity slots suffices**, costing ~1.4 F1, because LitBank documents never have more than 18
+  entities simultaneously active. **Singleton warning:** OntoNotes annotates **0%** singletons by
+  design — and a referent introduced once and never returned to is precisely what we hunt. The
+  curtain girl is a singleton.
+
+  **(g) The entity "web" is sparser than the metaphor, and professional practice is not a graph.**
+  Fictional network density **collapses with cast size** (plays 0.21–0.72; epics 0.01–0.06), fictional
+  networks *"do not exhibit realistic topological properties"*, and Moretti never published node/edge
+  counts while his own epilogue calls the weighted-directed version *"a dead end, pure and simple."*
+  Every professional continuity system — the Star Wars Holocron (FileMaker, ~120k entries), OHOTMU,
+  Dragonsteel's Cosmere timeline — is **a flat record store with a small field set plus free prose.**
+  The one to steal is **Karen Ahlstrom's row schema, which is our obligation row independently
+  invented**: every row carries *the quote that justifies it, the chapter that quote is in, and a flag
+  for whether the event happened then or is merely referenced.* And every one of those systems
+  degrades into "ask the one person" — DC's continuity index was 3×5 cards, and someone threw the
+  drawer out during an office move.
+
+  **(h) Build nothing on percentage marks.** TRIPOD annotated 99 films against Hauge's five turning
+  points: a **content-blind baseline placing beats at the observed mean beats the textbook
+  percentages outright**, and is competitive with a neural model that reads the screenplay. Two of
+  five turning points are significantly displaced; the middle three carry SDs of ±8 to ±12 points.
+  The schemes agree that 50% is the middle and assign it five incompatible functions. The three craft
+  rules that *are* checkable: **Swain/Bickham stimulus→reaction clause ordering** (nearly pure
+  dependency-parse), **McKee's per-scene value-charge turn** (he supplies the algorithm and names
+  exposition as the dominant false positive), and **Sanderson's First Law read as plant-before-payoff**,
+  which maps straight onto `PlantPayoffs`.
