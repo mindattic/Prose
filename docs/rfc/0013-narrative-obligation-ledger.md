@@ -324,3 +324,31 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   over every later beat (flagging when it sits below the finder's `score >= 2` floor) plus its rank
   in a deep top-400 embedding sweep, so a payoff outside the k=8 budget reports how far outside
   rather than merely absent.
+- 2026-09-16 (**the retrieval diagnostic, run at last — free, no LLM, and it answers the question the
+  wrong way round**) — `--obligations candidates` had never been run. §8's own note said "the
+  verse-index proposal is only worth building under the first diagnosis" — i.e. only if the judge was
+  *shown* the payoff and still failed. It was shown nothing. Both GCSH resolved injections left
+  outstanding come back **NEVER RETRIEVED**, for two different reasons, and neither is recognition:
+  1. **Brass whistle** (`01a0ab6e3c1a7db7bebaa99ac13ca174`, Open, origin Ch1 pos 2). Payoff is Ch11
+     pos 81. Lexical **rank #15 of 93** — outside `CandidatesPerObligation = 8`. Embedding: **outside
+     the top 400 of the corpus.** The ten candidates actually retrieved scored 0.300–0.355 — a flat,
+     near-random spread over nine one-per-chapter beats — while the true payoff did not place at all.
+     This is the granularity argument, now **measured rather than suspected**: one vector per
+     ~1,100-word beat cannot locate a two-sentence payoff, and the embedding tier then *consumes the
+     whole budget with noise*, crowding out the lexical tier where the payoff at least ranked #15.
+  2. **One-eyed cat** (`01a0ab7ba3ef7743b645f7c22197fbae`, Open) — worse, and a **cascade from the
+     coverage bug that survives the coverage fix**. Its origin quote *is the payoff sentence*: the
+     row is anchored to Ch9 pos 64, the payoff beat itself. The finder only ever looks *after* the
+     origin, so this debt is **structurally unclosable forever**. Traced end to end: the setup beat
+     is `01a0a698e81f7935b8a05270b53b9e0a`, Ch2 pos 12, **6,186 chars — over the 6,000 window, and on
+     the unread list**. So: the setup was never read → the debt was never opened → the payoff beat
+     was read with no open row to close → the extractor opened a *new* row on the payoff → the judge
+     can never reach behind it. The scorer then reported "payoff not recognised", blaming recognition
+     for a coverage failure three steps upstream.
+  **Consequences.** (a) The indexing question is settled in favour of retrieval: finer-grained
+  embeddings (sub-beat passages) and a larger, lexical-protected candidate budget are warranted, and
+  that is now evidence rather than a guess. (b) A new defect class: **an obligation anchored to the
+  wrong end of its own arc**, which no amount of judge improvement can fix. Inside calibration
+  `ResetLedgerAsync` clears it; **on a real book there is no reset, so this corruption is
+  permanent** — the same shape of risk already logged for a false close. (c) Every "payoff not
+  recognised" number in runs 1–6 is now suspect as mis-attributed coverage damage.
