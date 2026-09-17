@@ -6,6 +6,7 @@ using Prose.Core.Data;
 using Prose.Core.Extensions;
 using Prose.Core.Services;
 using Prose.V4.Core.Ledger;
+using Prose.V4.Core.Orchestration;
 using Prose.V4.Core.Window;
 
 Console.InputEncoding = System.Text.Encoding.UTF8;
@@ -31,6 +32,14 @@ if (args.Length == 0 || args[0] is "-h" or "--help")
               Phase 0 acceptance test: runs ledger-query + window-query on N beats spread evenly
               across the book, for manual review (the plan's own acceptance test: confirm zero
               fabricated facts by inspection).
+
+          preview-generate --node <slug|guid> --after-beat <guid> --goal "<text>"
+              [--characters <guid>[,<guid>...]] [--pov "<name>"] [--location "<name>"] [--size N]
+              Phase 1: assembles the real window (chapter-blind) + on-screen facts for the given
+              characters, calls the LLM ONCE, and PRINTS the result. Never writes to the database
+              or any book — this is a preview only, by design (see BeatWriteOrchestrator's doc
+              comment). Prints the exact prompt block lengths and the chapter span the window
+              covers, so a chapter-boundary reset (v3's bug) would be visibly absent here.
         """);
     return;
 }
@@ -42,6 +51,7 @@ var host = Host.CreateDefaultBuilder(args)
         svc.AddProseServices();
         svc.AddSingleton<StoryStateQuery>();
         svc.AddSingleton<SceneWindowService>();
+        svc.AddSingleton<BeatWriteOrchestrator>();
     })
     .Build();
 
@@ -116,6 +126,51 @@ switch (verb)
             Console.WriteLine($"  WINDOW: {window.Count} beat(s), spanning {(window.Count > 0 ? window[0].ChapterTitle : "-")}"
                 + (window.Count > 0 && window[0].ChapterTitle != window[^1].ChapterTitle ? $" .. {window[^1].ChapterTitle}" : ""));
         }
+        break;
+    }
+    case "preview-generate":
+    {
+        var nodeRef = Flag(args, "--node");
+        var afterArg = Flag(args, "--after-beat");
+        var goal = Flag(args, "--goal");
+        var charsArg = Flag(args, "--characters");
+        var pov = Flag(args, "--pov");
+        var location = Flag(args, "--location");
+        var sizeArg = Flag(args, "--size");
+        var size = int.TryParse(sizeArg, out var s) ? s : 15;
+
+        if (!Guid.TryParse(afterArg, out var afterBeatId)) { Console.Error.WriteLine("--after-beat <guid> is required."); return; }
+        if (string.IsNullOrWhiteSpace(goal)) { Console.Error.WriteLine("--goal \"<text>\" is required."); return; }
+
+        await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
+        var nodeId = await NodeRefResolver.ResolveAsync(db0, nodeRef);
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); return; }
+
+        var afterBeat = await db0.Beats.AsNoTracking().Where(b => b.Id == afterBeatId).Select(b => b.StoryPosition).FirstOrDefaultAsync();
+        var asOf = afterBeat ?? int.MaxValue;
+
+        var characterIds = string.IsNullOrWhiteSpace(charsArg)
+            ? []
+            : charsArg.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(Guid.Parse).ToList();
+
+        // Same GLMZ default line v3's BeatGeneratorService.UniverseLine() uses when no other
+        // universe is wired — kept byte-identical deliberately, this isn't the thing under test.
+        const string universeLine = "You are writing a beat in a literary cyberpunk scene set in GLMZ (Great Lakes Metropolitan Zone, 2226).";
+
+        var orchestrator = services.GetRequiredService<BeatWriteOrchestrator>();
+        Console.WriteLine("[preview-generate] Calling the LLM once — this is a real, billed call. Nothing will be saved.");
+        var result = await orchestrator.PreviewGenerateAsync(
+            nodeId.Value, afterBeatId, characterIds, asOf, pov, location, goal, universeLine, size);
+
+        Console.WriteLine();
+        Console.WriteLine("── PROMPT BLOCK LENGTHS (chars) ──");
+        foreach (var (k, v) in result.Prompt.BlockLengths) Console.WriteLine($"  {k,-12} {v}");
+        Console.WriteLine();
+        Console.WriteLine("── FULL USER PROMPT SENT TO THE MODEL ──");
+        Console.WriteLine(result.Prompt.User);
+        Console.WriteLine();
+        Console.WriteLine("── GENERATED TEXT (NOT SAVED) ──");
+        Console.WriteLine(result.GeneratedText);
         break;
     }
     default:

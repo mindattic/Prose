@@ -85,6 +85,28 @@ public sealed class StoryStateQuery
         entityIds = entityIds.Distinct().ToList();
         if (entityIds.Count == 0) return new OnScreenSnapshot();
 
+        return await GetOnScreenFactsForEntitiesAsync(db, nodeId, entityIds, asOf, ct);
+    }
+
+    /// <summary>
+    /// Same query as <see cref="GetOnScreenFactsAsync(Guid,Guid,CancellationToken)"/>, but for a
+    /// beat that doesn't exist yet — the generation-time case, where the caller already knows (from
+    /// the beat brief, mirroring v3's <c>BeatContext.CharactersInScene</c>) who's about to be on
+    /// screen, rather than deriving it from an already-written beat's tags.
+    /// </summary>
+    public async Task<OnScreenSnapshot> GetOnScreenFactsForEntitiesAsync(
+        Guid nodeId, IReadOnlyList<Guid> entityIds, int asOfStoryPosition, CancellationToken ct = default)
+    {
+        if (entityIds.Count == 0) return new OnScreenSnapshot();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        return await GetOnScreenFactsForEntitiesAsync(db, nodeId, entityIds, asOfStoryPosition, ct);
+    }
+
+    private static async Task<OnScreenSnapshot> GetOnScreenFactsForEntitiesAsync(
+        ProseDbContext db, Guid nodeId, IReadOnlyList<Guid> rawEntityIds, int asOf, CancellationToken ct)
+    {
+        var entityIds = rawEntityIds.Distinct().ToList();
+
         var names = await db.Entities.AsNoTracking()
             .Where(e => entityIds.Contains(e.Id))
             .ToDictionaryAsync(e => e.Id, e => e.Name, ct);
