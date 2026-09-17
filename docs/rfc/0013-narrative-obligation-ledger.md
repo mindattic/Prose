@@ -494,3 +494,36 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
   dependency-parse), **McKee's per-scene value-charge turn** (he supplies the algorithm and names
   exposition as the dominant false positive), and **Sanderson's First Law read as plant-before-payoff**,
   which maps straight onto `PlantPayoffs`.
+- 2026-09-17 (**GCNEG run for the first time — ~$0.06 — and §6 names the wrong fixture**) — The
+  negative control had never been scanned in the programme's history (`0/3`). Rescanned:
+  `scanned 3 of 3 — opened 9, advanced 5, closed 2, ungrounded discarded 0, not evaluated 0`.
+
+  **Nine rows from a "negative control" looks catastrophic and is not.** Reading the fixture before
+  judging it — the discipline that has paid every time this week — GCNEG's own header says what it
+  is: *"Synthetic negative-control fixture for the **Full-Order Read instrument** (docs/LOGIC.md §10
+  Phase 2): Ch1/Ch3 are deliberately engaging, Ch2 is deliberately flat."* **Its design axis is
+  engaging-vs-flat, not owes-debts-vs-owes-nothing.** Ch1 is a locked-room murder saturated with
+  genuine promises (*"tell her it's tonight"*, the untouched key, the unburned scrap, *"someone was
+  still lying"*); Ch3 solves the locked room and opens two more. A competent ledger **must** open
+  rows there.
+
+  **Where the rows landed is the actual result: 7 from Ch1, 2 from Ch3, and ZERO from Ch2.** Ch2 —
+  the deliberately flat Margaret beat, and at 1,903 chars the *longest* of the three — produced
+  nothing. Every Ch1/Ch3 row is defensible on inspection (*"Who is 'her' and what event is planned
+  for 'tonight'?"*; *"How was Whitfield killed in a locked room?"*), **two are correctly Closed** —
+  Ch3's fishing-line mechanism paying Ch1's locked-room question — and there are **no texture
+  false-plants at all**: no row on the butler's wringing hands, the cold ash, or the painted window
+  as scenery. Worth noting against §6a's Dickens result, where texture false-plants were ~7 of 27:
+  GCNEG is modern plain prose, and this is consistent with the salience finding above — Victorian
+  prose foregrounds texture far more, so the over-extraction is partly a property of the register.
+
+  **Two findings:**
+  1. **The extractor passes a true obligation negative control cleanly, and demonstrates a full
+     open→close arc inside one fixture** — the first time the programme has shown either. Caveat:
+     this is **one beat, n=1**; it is a datapoint, not a validated false-positive floor.
+  2. **§6 is wrong: it names GCNEG as a calibration fixture for this instrument, and GCNEG belongs
+     to a different one.** Only 1 of its 3 beats is a valid obligation negative control. **The
+     programme has no purpose-built obligation negative control**, and has been listing a borrowed
+     fixture with an orthogonal design axis as though it were one. A real one is cheap to build:
+     competent, readable prose that closes everything it opens in-scene and foregrounds nothing it
+     does not use — Ch2 is the template, and it needs to be ~20 beats, not one.
