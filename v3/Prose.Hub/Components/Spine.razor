@@ -1,0 +1,39 @@
+@* No @page here, for the same reason Writer.razor has none: Prose.Hub maps Blazor with
+   MapRazorComponents<App>() and App.razor carries no <Router>, so EVERY discovered page route
+   renders App.razor. Program.cs gives this component its own endpoint instead. *@
+@using Microsoft.AspNetCore.Components.Web
+@using Prose.WriterUi.Components
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <title>Prose Spine</title>
+    @* Stamped before the stylesheets so a light-theme user never sees a frame of dark. *@
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('prose.writer.theme');
+                document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+            } catch (e) { /* blocked site data — the dark default in the markup stands */ }
+        })();
+    </script>
+    @* Cache-busted per deployed build — see HubAssets. This page has no JS interop of its own, but
+       it shares tokens.css with the editor and a stale copy would render it in the wrong theme. *@
+    <link rel="stylesheet" href="_content/Prose.WriterUi/tokens.css?v=@AssetVersion" />
+    <link rel="stylesheet" href="_content/Prose.WriterUi/spine.css?v=@AssetVersion" />
+    <script src="_content/Prose.WriterUi/js/theme.js?v=@AssetVersion"></script>
+    <HeadOutlet @rendermode="RenderMode.InteractiveServer" />
+</head>
+<body>
+    <SpineShell @rendermode="RenderMode.InteractiveServer" />
+    <script src="_framework/blazor.web.js"></script>
+</body>
+</html>
+
+@code {
+    // Shared with /writer and /repo so the root documents cannot drift — see HubAssets for why a
+    // stale asset is a frozen window, not a cosmetic problem.
+    private static string AssetVersion => HubAssets.Version;
+}

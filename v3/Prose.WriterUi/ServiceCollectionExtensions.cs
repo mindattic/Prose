@@ -22,6 +22,9 @@ public static class ServiceCollectionExtensions
         // Same reasoning: the wiki pins the flow universe to whichever entity the page is showing,
         // so two windows browsing two universes must not share one instance.
         services.AddScoped<WikiService>();
+        // And again: the spine view pins the flow universe to the book whose order of events it is
+        // showing. Two windows reading two books must not share the pin.
+        services.AddScoped<SpineService>();
         return services;
     }
 }

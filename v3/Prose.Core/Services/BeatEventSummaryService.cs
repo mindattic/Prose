@@ -454,7 +454,14 @@ Output STRICT JSON, no fences, no commentary:
         var povRows = await db.Database.SqlQueryRaw<PovRow>(
             "SELECT BeatId, EntityName FROM BeatEntityPresence WHERE PresenceType = 'pov'")
             .ToListAsync(ct);
-        var povByBeat = povRows.ToDictionary(p => p.BeatId, p => p.EntityName);
+        // GroupBy, not ToDictionary (2026-09-18). Nothing constrains BeatEntityPresence to one
+        // 'pov' row per beat, and a beat carrying two threw "An item with the same key has already
+        // been added" — killing the whole export rather than the one beat. Found on BCODA4, where
+        // a clone of a history-reconstructed book has beats with duplicate pov presence. Joining
+        // the names keeps the defect VISIBLE in the event list instead of silently picking one.
+        var povByBeat = povRows
+            .GroupBy(p => p.BeatId)
+            .ToDictionary(g => g.Key, g => string.Join(" / ", g.Select(p => p.EntityName).Distinct()));
 
         var entries = rows.Select(r => new BeatEventListEntry(
             (int)r.SortKey, r.Title, povByBeat.GetValueOrDefault(r.Id), r.EventSummary)).ToList();
