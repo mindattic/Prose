@@ -7,6 +7,7 @@ using Prose.Core.Extensions;
 using Prose.Core.Services;
 using Prose.V4.Core.Contradiction;
 using Prose.V4.Core.Ledger;
+using Prose.V4.Core.Obligations;
 using Prose.V4.Core.Orchestration;
 using Prose.V4.Core.Window;
 
@@ -56,6 +57,12 @@ if (args.Length == 0 || args[0] is "-h" or "--help")
               be caught, 3 must not be flagged) — the GCTOC/GCSH/GCOBN discipline applied to this
               checker specifically. Real, billed LLM calls, one per fixture. Run this BEFORE trusting
               the gate on BCODA2 content.
+
+          calibrate-plants --node <slug|guid>
+              Phase 4: runs SelfReportedPlantService over EVERY beat of the given book, in reading
+              order, one real billed LLM call per beat. Prints each plant found and the total open
+              count. Run on GCOBN (expect near-zero, vs the blanket miner's 25/20) and on
+              GCTOC/GCSH (expect the known real plants still caught) before trusting this mechanism.
         """);
     return;
 }
@@ -69,6 +76,7 @@ var host = Host.CreateDefaultBuilder(args)
         svc.AddSingleton<SceneWindowService>();
         svc.AddSingleton<BeatWriteOrchestrator>();
         svc.AddSingleton<NarrativeContradictionChecker>();
+        svc.AddSingleton<SelfReportedPlantService>();
     })
     .Build();
 
@@ -267,6 +275,33 @@ switch (verb)
         }
         Console.WriteLine();
         Console.WriteLine($"[calibrate-gate] {pass}/{CalibrationFixtures.All.Count} correct.");
+        break;
+    }
+    case "calibrate-plants":
+    {
+        var nodeRef = Flag(args, "--node");
+        await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
+        var nodeId = await NodeRefResolver.ResolveAsync(db0, nodeRef);
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); return; }
+
+        var workbench = services.GetRequiredService<NodeWorkbenchService>();
+        var plants = services.GetRequiredService<SelfReportedPlantService>();
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId.Value);
+        Console.WriteLine($"[calibrate-plants] {ordered.Count} beat(s) — {ordered.Count} real, billed LLM calls.");
+
+        var totalOpens = 0;
+        foreach (var o in ordered)
+        {
+            var found = await plants.ExtractAsync(o.Beat.Text);
+            totalOpens += found.Count;
+            if (found.Count > 0)
+            {
+                Console.WriteLine($"  beat {o.Beat.Id} (pos {o.Beat.StoryPosition?.ToString() ?? "?"}): {found.Count} plant(s)");
+                foreach (var p in found) Console.WriteLine($"    PLANT: {p.Description}");
+            }
+        }
+        Console.WriteLine();
+        Console.WriteLine($"[calibrate-plants] {totalOpens} total plant(s) opened across {ordered.Count} beats.");
         break;
     }
     default:
