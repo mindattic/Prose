@@ -3,6 +3,7 @@ using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Interfaces;
 using Prose.Core.Services;
+using Prose.V4.Core.Contradiction;
 using Prose.V4.Core.Ledger;
 using Prose.V4.Core.Prompt;
 using Prose.V4.Core.Window;
@@ -16,8 +17,21 @@ public sealed record PreviewResult(AssembledPrompt Prompt, string GeneratedText)
 /// <summary>One declared state change the writer reported about the beat it just wrote.</summary>
 public sealed record DeclaredDelta(Guid EntityId, string EntityName, string Aspect, string Value);
 
-/// <summary>Result of an actual generate-and-save call (Phase 2).</summary>
-public sealed record SavedBeatResult(Guid NewBeatId, PreviewResult Preview, IReadOnlyList<DeclaredDelta> DeclaredDeltas);
+/// <summary>Result of an actual generate-and-save call (Phase 2-3). <see cref="GateRetried"/> is
+/// true when the first attempt was rejected and a second, corrected attempt is what got saved.</summary>
+public sealed record SavedBeatResult(Guid NewBeatId, PreviewResult Preview, IReadOnlyList<DeclaredDelta> DeclaredDeltas, bool GateRetried);
+
+/// <summary>Both candidate texts and the checker's reasoning when a contradiction survives a retry.
+/// Per the v4 plan's Decisions: this is a hard stop, not a Finding-and-continue — the caller (an
+/// --auto-run-style batch) is expected to halt on this, not swallow it.</summary>
+public sealed class NarrativeContradictionRejectedException(ContradictionVerdict firstVerdict, string firstAttemptText, ContradictionVerdict secondVerdict, string secondAttemptText)
+    : Exception($"Contradiction confirmed after retry: {secondVerdict.ViolatedFact ?? secondVerdict.Reasoning}")
+{
+    public ContradictionVerdict FirstVerdict { get; } = firstVerdict;
+    public string FirstAttemptText { get; } = firstAttemptText;
+    public ContradictionVerdict SecondVerdict { get; } = secondVerdict;
+    public string SecondAttemptText { get; } = secondAttemptText;
+}
 
 /// <summary>
 /// v4 plan Phases 1-2: windowed generation. <see cref="PreviewGenerateAsync"/> (Phase 1) writes
@@ -36,10 +50,12 @@ public sealed class BeatWriteOrchestrator
     private readonly NodeWorkbenchService workbench;
     private readonly WorldStateLedger worldState;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly NarrativeContradictionChecker gate;
 
     public BeatWriteOrchestrator(
         SceneWindowService window, StoryStateQuery storyState, ILlmService llm,
-        NodeWorkbenchService workbench, WorldStateLedger worldState, IDbContextFactory<ProseDbContext> dbFactory)
+        NodeWorkbenchService workbench, WorldStateLedger worldState, IDbContextFactory<ProseDbContext> dbFactory,
+        NarrativeContradictionChecker gate)
     {
         this.window = window;
         this.storyState = storyState;
@@ -47,6 +63,7 @@ public sealed class BeatWriteOrchestrator
         this.workbench = workbench;
         this.worldState = worldState;
         this.dbFactory = dbFactory;
+        this.gate = gate;
     }
 
     public async Task<PreviewResult> PreviewGenerateAsync(
@@ -70,7 +87,8 @@ public sealed class BeatWriteOrchestrator
     }
 
     /// <summary>
-    /// Phase 2: generate, INSERT the beat (via the same <c>NodeWorkbenchService</c> every other
+    /// Phase 2-3: generate, run the write gate (Phase 3 — retry once on a confirmed contradiction,
+    /// hard-stop on a second), INSERT the beat (via the same <c>NodeWorkbenchService</c> every other
     /// write path uses), stamp a StoryPosition so later queries can order against it (v3's
     /// InsertBeatAsync leaves it null), then run one narrow follow-up LLM call asking the writer to
     /// self-report what it just changed — the "declared" write path the v4 plan's Story State
@@ -78,6 +96,9 @@ public sealed class BeatWriteOrchestrator
     /// 96% false-positive rate this same session: this call is scoped to the one beat just written,
     /// not arbitrary already-written prose.
     /// </summary>
+    /// <exception cref="NarrativeContradictionRejectedException">A contradiction was confirmed on
+    /// both attempts. Nothing is saved. Per the v4 plan's Decisions, an --auto-run-style caller is
+    /// expected to let this propagate and halt the batch, not swallow it.</exception>
     public async Task<SavedBeatResult> GenerateAndSaveAsync(
         Guid bookNodeId,
         Guid afterBeatId,
@@ -90,9 +111,27 @@ public sealed class BeatWriteOrchestrator
         int windowSizeBeats = 15,
         CancellationToken ct = default)
     {
+        var charIds = charactersInScene.Keys.ToList();
+        var facts = await storyState.GetOnScreenFactsForEntitiesAsync(bookNodeId, charIds, asOfStoryPosition, ct);
+
         var preview = await PreviewGenerateAsync(
-            bookNodeId, afterBeatId, charactersInScene.Keys.ToList(), asOfStoryPosition,
+            bookNodeId, afterBeatId, charIds, asOfStoryPosition,
             povCharacter, location, beatGoal, universeLine, windowSizeBeats, ct);
+
+        var verdict = await gate.CheckAsync(facts.EntityStateFacts.Concat(facts.ContinuityFacts).ToList(), preview.GeneratedText, ct);
+        var gateRetried = false;
+        if (verdict.Contradicts)
+        {
+            gateRetried = true;
+            var correctedGoal = $"{beatGoal}\n\nIMPORTANT — a prior attempt at this beat contradicted an established fact ({verdict.ViolatedFact ?? verdict.Reasoning}). Do not repeat that contradiction.";
+            var retryPreview = await PreviewGenerateAsync(
+                bookNodeId, afterBeatId, charIds, asOfStoryPosition,
+                povCharacter, location, correctedGoal, universeLine, windowSizeBeats, ct);
+            var retryVerdict = await gate.CheckAsync(facts.EntityStateFacts.Concat(facts.ContinuityFacts).ToList(), retryPreview.GeneratedText, ct);
+            if (retryVerdict.Contradicts)
+                throw new NarrativeContradictionRejectedException(verdict, preview.GeneratedText, retryVerdict, retryPreview.GeneratedText);
+            preview = retryPreview;
+        }
 
         // InsertBeatAsync's nodeId is the BEAT'S OWN chapter (the BeatNode.NodeId it's actually a
         // member of), not the book root — a book-level node holds no BeatNodes rows of its own once
@@ -133,7 +172,7 @@ public sealed class BeatWriteOrchestrator
             await worldState.RecordManyAsync(events, ct);
         }
 
-        return new SavedBeatResult(newBeat.Id, preview, deltas);
+        return new SavedBeatResult(newBeat.Id, preview, deltas, gateRetried);
     }
 
     private async Task<IReadOnlyList<DeclaredDelta>> ExtractDeclaredDeltasAsync(

@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Extensions;
 using Prose.Core.Services;
+using Prose.V4.Core.Contradiction;
 using Prose.V4.Core.Ledger;
 using Prose.V4.Core.Orchestration;
 using Prose.V4.Core.Window;
@@ -49,6 +50,12 @@ if (args.Length == 0 || args[0] is "-h" or "--help")
               follow-up call asking the writer to self-report what it just changed, recording those
               as declared EntityStateEvents rows. Only ever point this at the BCODA2 sandbox — never
               a live book — until Phase 5 passes review.
+
+          calibrate-gate
+              Phase 3: runs NarrativeContradictionChecker against 6 hand-planted fixtures (3 must
+              be caught, 3 must not be flagged) — the GCTOC/GCSH/GCOBN discipline applied to this
+              checker specifically. Real, billed LLM calls, one per fixture. Run this BEFORE trusting
+              the gate on BCODA2 content.
         """);
     return;
 }
@@ -61,6 +68,7 @@ var host = Host.CreateDefaultBuilder(args)
         svc.AddSingleton<StoryStateQuery>();
         svc.AddSingleton<SceneWindowService>();
         svc.AddSingleton<BeatWriteOrchestrator>();
+        svc.AddSingleton<NarrativeContradictionChecker>();
     })
     .Build();
 
@@ -214,15 +222,51 @@ switch (verb)
         const string universeLine = "You are writing a beat in a literary cyberpunk scene set in GLMZ (Great Lakes Metropolitan Zone, 2226).";
 
         var orchestrator = services.GetRequiredService<BeatWriteOrchestrator>();
-        Console.WriteLine("[generate-and-save] Two real, billed LLM calls (generate + declared-delta self-report). This WILL insert a new beat.");
-        var result = await orchestrator.GenerateAndSaveAsync(nodeId.Value, afterBeatId, characters, asOf, pov, location, goal, universeLine, size);
+        Console.WriteLine("[generate-and-save] Real, billed LLM calls (generate + gate check + declared-delta self-report, more if the gate retries). This WILL insert a new beat, unless the gate rejects it twice.");
+        try
+        {
+            var result = await orchestrator.GenerateAndSaveAsync(nodeId.Value, afterBeatId, characters, asOf, pov, location, goal, universeLine, size);
 
+            Console.WriteLine();
+            Console.WriteLine($"── NEW BEAT SAVED: {result.NewBeatId} (StoryPosition {asOf}){(result.GateRetried ? " — gate retried once" : "")} ──");
+            Console.WriteLine(result.Preview.GeneratedText);
+            Console.WriteLine();
+            Console.WriteLine($"── DECLARED DELTAS ({result.DeclaredDeltas.Count}) ──");
+            foreach (var d in result.DeclaredDeltas) Console.WriteLine($"  {d.EntityName} | {d.Aspect} = {d.Value}");
+        }
+        catch (NarrativeContradictionRejectedException ex)
+        {
+            Console.Error.WriteLine();
+            Console.Error.WriteLine("── GATE REJECTED — NOTHING SAVED ──");
+            Console.Error.WriteLine($"First attempt violated: {ex.FirstVerdict.ViolatedFact ?? ex.FirstVerdict.Reasoning}");
+            Console.Error.WriteLine($"Retry still violated:   {ex.SecondVerdict.ViolatedFact ?? ex.SecondVerdict.Reasoning}");
+            Console.Error.WriteLine();
+            Console.Error.WriteLine("First attempt text:");
+            Console.Error.WriteLine(Truncate(ex.FirstAttemptText, 500));
+            Console.Error.WriteLine();
+            Console.Error.WriteLine("Retry text:");
+            Console.Error.WriteLine(Truncate(ex.SecondAttemptText, 500));
+            Environment.ExitCode = 1;
+        }
+        break;
+    }
+    case "calibrate-gate":
+    {
+        var checker = services.GetRequiredService<NarrativeContradictionChecker>();
+        Console.WriteLine($"[calibrate-gate] Running {CalibrationFixtures.All.Count} fixtures — {CalibrationFixtures.All.Count} real, billed LLM calls.");
+        var pass = 0;
+        foreach (var fixture in CalibrationFixtures.All)
+        {
+            var verdict = await checker.CheckAsync(fixture.Facts, fixture.BeatText);
+            var ok = verdict.Contradicts == fixture.ExpectedContradicts;
+            pass += ok ? 1 : 0;
+            Console.WriteLine();
+            Console.WriteLine($"[{(ok ? "PASS" : "FAIL")}] {fixture.Name} — expected {(fixture.ExpectedContradicts ? "CONTRADICTS" : "CONSISTENT")}, got {(verdict.Contradicts ? "CONTRADICTS" : "CONSISTENT")}");
+            if (verdict.ViolatedFact != null) Console.WriteLine($"       violated: {verdict.ViolatedFact}");
+            Console.WriteLine($"       reasoning: {Truncate(verdict.Reasoning, 200)}");
+        }
         Console.WriteLine();
-        Console.WriteLine($"── NEW BEAT SAVED: {result.NewBeatId} (StoryPosition {asOf}) ──");
-        Console.WriteLine(result.Preview.GeneratedText);
-        Console.WriteLine();
-        Console.WriteLine($"── DECLARED DELTAS ({result.DeclaredDeltas.Count}) ──");
-        foreach (var d in result.DeclaredDeltas) Console.WriteLine($"  {d.EntityName} | {d.Aspect} = {d.Value}");
+        Console.WriteLine($"[calibrate-gate] {pass}/{CalibrationFixtures.All.Count} correct.");
         break;
     }
     default:
