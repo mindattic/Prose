@@ -283,6 +283,26 @@ public class DocxExportService
                 {
                     body.AppendChild(SubHeading(subHeadingTitle[i]!));
                 }
+
+                // A tenet page: the kanji of a virtue Kyle has just broken, struck through, alone on
+                // the page. Claims a whole leaf on purpose — the device is the silence around it, and
+                // it is the only place in the book that names the code, since Kyle never says
+                // "Bushido" aloud. Kind is the discriminator so nothing has to parse the prose to
+                // recognise one. Author decision, 2026-09-18.
+                if (string.Equals(beat.Kind, TenetKind, StringComparison.OrdinalIgnoreCase))
+                {
+                    var struckText = BeatMarkup.StripEntityTags(beat.Text).Trim();
+                    if (struckText.Length == 0) continue;
+                    body.AppendChild(PageBreak());
+                    foreach (var p in TenetPage(struckText)) body.AppendChild(p);
+                    // Only break out if the next beat is not a chapter start — that one emits its own
+                    // break, and two in a row would leave a blank leaf in the paperback.
+                    var nextStartsChapter = i + 1 < ordered.Count && isChapterStart[i + 1] && chapterCount >= 2;
+                    if (!nextStartsChapter) body.AppendChild(PageBreak());
+                    continue; // deliberately uncounted: a struck page is not prose and must not
+                              // inflate the KDP page estimate as though it were.
+                }
+
                 var text = BeatMarkup.StripEntityTags(beat.Text).Trim();
                 if (text.Length == 0) continue;
                 wordCount += CountWords(text);
@@ -350,6 +370,52 @@ public class DocxExportService
     }
 
     private static Paragraph PageBreak() => new(new Run(new Break { Type = BreakValues.Page }));
+
+    /// <summary><see cref="Beat.Kind"/> of a struck-tenet page.</summary>
+    public const string TenetKind = "tenet";
+
+    private const string Kanji72 = "144";  // half-points → 72pt
+    private const string Gloss11 = "22";
+
+    /// <summary>A CJK-capable face for the kanji. Garamond has no glyphs for 礼/義/勇/仁/誠, and a
+    /// missing glyph renders as a box — which would put a row of tofu where the whole device is.</summary>
+    private const string KanjiFont = "Yu Mincho";
+
+    /// <summary>
+    /// The struck-tenet page. First line of the beat is the kanji; any remaining lines are the
+    /// gloss beneath it (romaji and the English virtue). Centered, pushed down the page, the kanji
+    /// struck through — the tenet is legible and cancelled at the same time, which is the point.
+    /// </summary>
+    private static IEnumerable<Paragraph> TenetPage(string text)
+    {
+        var lines = text.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        if (lines.Length == 0) yield break;
+
+        // Roughly a third of the way down a 9" page, so the mark sits in the optical centre.
+        yield return new Paragraph(new ParagraphProperties(
+            new SpacingBetweenLines { Before = "3600", After = "0" }));
+
+        var kanji = new Paragraph(new ParagraphProperties(
+            new Justification { Val = JustificationValues.Center },
+            new SpacingBetweenLines { Before = "0", After = "360" }));
+        kanji.AppendChild(KanjiRun(lines[0]));
+        yield return kanji;
+
+        for (var i = 1; i < lines.Length; i++)
+            yield return Centered(lines[i], Gloss11, italic: true);
+    }
+
+    private static Run KanjiRun(string text)
+    {
+        var rPr = new RunProperties(
+            new RunFonts { Ascii = KanjiFont, HighAnsi = KanjiFont, EastAsia = KanjiFont, ComplexScript = KanjiFont },
+            new FontSize { Val = Kanji72 },
+            new FontSizeComplexScript { Val = Kanji72 },
+            new Strike());
+        var run = new Run(rPr);
+        run.AppendChild(new Text(text) { Space = SpaceProcessingModeValues.Preserve });
+        return run;
+    }
 
     private static Paragraph Centered(string text, string halfPt, bool bold = false, bool italic = false) =>
         new(new ParagraphProperties(new Justification { Val = JustificationValues.Center }),
