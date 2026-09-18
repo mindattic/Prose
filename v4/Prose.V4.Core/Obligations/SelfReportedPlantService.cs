@@ -28,26 +28,49 @@ public sealed class SelfReportedPlantService
 
     public async Task<IReadOnlyList<SelfReportedPlant>> ExtractAsync(string beatText, CancellationToken ct = default)
     {
+        // Tightened 2026-09-17 after GCTOC/GCSH calibration measured real, repeated over-triggering
+        // (~3.1-3.2 plants/beat, vs. GCOBN's ~0.05) on classic/mystery-register prose — the false
+        // positives read were consistently broad thematic/allegorical/backdrop commentary with no
+        // single concrete, nameable referent (e.g. "the unresolved political tension between England
+        // and France," "the Woodman and Farmer as Fate and Death"), never a texture-vs-plant error of
+        // the GCOBN kind. The two-part HARD RULE + contrastive examples below target that specific
+        // failure shape rather than re-deriving the whole prompt from scratch.
         const string system = "You identify narrative promises a piece of prose makes to its reader — nothing else. Most beats promise nothing; say so plainly when that's true.";
         var user = $"""
             BEAT TEXT (one scene from a story):
             {beatText}
 
-            Question: did THIS beat introduce something — an object, an unnamed person, an unresolved
-            question, a foreshadowed event — that a reader will actively expect to see explained,
-            used, or resolved LATER in the story? This is about SALIENCE, not description. A room
-            being described, a character doing something mundane, or an object being used and set
-            back down is NOT a plant. A plant is something the text itself marks as mattering: an
-            unanswered question stated outright, an object given unusual narrative weight, a person
-            introduced in a way that signals they matter beyond this scene.
+            Question: did THIS beat introduce something a reader will actively expect to see
+            explained, used, or resolved LATER in the story?
 
-            List each one on its own line, in the form:
-            PLANT: <one sentence describing what was planted and why it reads as a promise, not texture>
+            HARD RULE, both parts must hold: (1) the plant must be a SPECIFIC, CONCRETE thing — one
+            named or nameable object, person, place, or an explicit question the text itself poses in
+            those terms ("what did it mean?", "who was she?") — never a theme, mood, historical
+            backdrop, or authorial commentary with no single referent; and (2) the text must mark that
+            specific thing as unresolved or mysterious RIGHT NOW, not merely mention it while telling
+            the story.
 
-            If this beat plants nothing, output exactly:
+            EXAMPLE — a real plant: "A message arrives reading only 'RECALLED TO LIFE.' The messenger
+            frowns — he doesn't understand it either." → PLANT (one concrete message, explicitly
+            marked as not understood).
+
+            EXAMPLE — NOT a plant: "The chapter opens on how both England and France were ruled by
+            kings convinced their nations were untroubled, while want and revolution gathered beneath
+            them." → NOT a plant (a thematic/historical backdrop with no single object, person, or
+            posed question to track and resolve).
+
+            EXAMPLE — NOT a plant: "A room being described, a character doing something mundane, or
+            an object being used and set back down" is texture, not a promise, even if described at
+            length.
+
+            List each real plant on its own line, in the form:
+            PLANT: <the one concrete referent> — <the specific unresolved question about it>
+
+            If this beat plants nothing meeting BOTH parts of the rule, output exactly:
             NONE
 
-            Do not pad the list to find something. Most ordinary beats plant nothing at all.
+            Do not pad the list to find something. Most beats — including most beats in classic or
+            densely-plotted fiction — plant nothing by this stricter standard.
             """;
 
         var raw = await llm.GenerateAsync(system, user, temperature: 0.0, maxTokens: 400, ct: ct);
