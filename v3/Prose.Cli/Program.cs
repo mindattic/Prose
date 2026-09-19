@@ -3034,6 +3034,18 @@ if (args.Contains("--beat-positions"))
     return;
 }
 
+// prose --beat-index --slug <slug> [--json] [--tsv]
+// Read-only, FREE dump of one book's per-beat metadata in reading order: position, chapter,
+// chars, PlaceName + whether it resolved to a canon Place, SceneType/StructureRole/Act, and the
+// trust state of Description and EventSummary against the beat's current TextHash. Exists because
+// Beat.PlaceName had no read path at all — --extract-beat-locations wrote it and nothing could
+// show you the result.
+if (args.Contains("--beat-index"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("BeatIndexCli", args);
+    return;
+}
+
 // prose --location-scan [--min-travel-minutes N]
 // Character-in-two-places-at-once contradiction scan; conflicts land in Findings.
 if (args.Contains("--location-scan"))
