@@ -84,8 +84,17 @@ public class WorldStateAtBeatService
     /// Returns a snapshot of world state at the given beat.
     /// If <paramref name="storyTime"/> is null, the service infers the story time from
     /// the most recent EntityStateEvent that references this beatId.
-    /// Pass <paramref name="entityIds"/> to scope the snapshot to specific entities;
-    /// omit for the full universe state (expensive on large DBs — scope in production).
+    ///
+    /// <para><paramref name="entityIds"/> scopes the snapshot. Omitting it does NOT mean "the
+    /// whole universe" — that was the behaviour until 2026-09-05, and on BCODA it returned a
+    /// 1M-character, 8,929-line alphabetical roster of background NPCs as "what is true right
+    /// now", which is a fail-open: a snapshot nobody can read is not an answer. Omitted, the
+    /// scope is now derived from the entities actually tagged in the beat's own chapter.</para>
+    ///
+    /// <para>When neither is available — no entityIds passed and no entity tags in the chapter —
+    /// the result is an EMPTY snapshot whose <c>Scope</c> says "COULD NOT LOOK". That is
+    /// deliberate and load-bearing: an empty snapshot that looked and found nothing must stay
+    /// distinguishable from one that never got to look at all.</para>
     /// </summary>
     public async Task<WorldStateSnapshot> SnapshotAsync(
         Guid beatId,

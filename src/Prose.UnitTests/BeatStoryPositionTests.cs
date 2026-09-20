@@ -187,7 +187,11 @@ public class BeatStoryPositionTests
     {
         await BuildStamper().StampBookAsync(bookId, apply: true);
 
-        var snap = await worldState.SnapshotAsync(firstBeat);
+        // Scoped to Kyle explicitly. These beats are plain prose with no inline entity tags, and
+        // since 2026-09-05 an unscoped call derives its scope from those tags — untagged, it
+        // correctly reports COULD NOT LOOK, which is a different question than the one this test
+        // asks. What is under test is the story CLOCK: an early beat must not see a late event.
+        var snap = await worldState.SnapshotAsync(firstBeat, entityIds: [kyle]);
 
         var bike = snap.EntityStates.SingleOrDefault(s => s.AspectKey == "motorcycle");
         Assert.That(bike, Is.Not.Null, "the early beat's own state should still resolve");
@@ -201,7 +205,7 @@ public class BeatStoryPositionTests
     {
         await BuildStamper().StampBookAsync(bookId, apply: true);
 
-        var snap = await worldState.SnapshotAsync(lastBeat);
+        var snap = await worldState.SnapshotAsync(lastBeat, entityIds: [kyle]);
 
         var bike = snap.EntityStates.Single(s => s.AspectKey == "motorcycle");
         Assert.That(bike.Value, Is.EqualTo("lost"), "the duration is a difference of two positions");

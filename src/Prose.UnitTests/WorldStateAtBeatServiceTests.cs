@@ -67,7 +67,9 @@ public class WorldStateAtBeatServiceTests
             await db.SaveChangesAsync();
         }
 
-        var snap = await svc.SnapshotAsync(Guid.CreateVersion7(), storyTime: t);
+        // Scoped explicitly: this test is about picking the latest value per aspect, not about
+        // how an unscoped call chooses its scope (see CouldNotLook_* below for that contract).
+        var snap = await svc.SnapshotAsync(Guid.CreateVersion7(), storyTime: t, entityIds: [kyle]);
 
         var kyleStatus = snap.EntityStates.Single(s => s.EntityId == kyle && s.AspectKey == "status");
         Assert.That(kyleStatus.Value, Is.EqualTo("recovering"));
@@ -88,7 +90,7 @@ public class WorldStateAtBeatServiceTests
             await db.SaveChangesAsync();
         }
 
-        var snap = await svc.SnapshotAsync(Guid.CreateVersion7(), storyTime: t);
+        var snap = await svc.SnapshotAsync(Guid.CreateVersion7(), storyTime: t, entityIds: [kyle]);
 
         var kyleStatus = snap.EntityStates.Single(s => s.EntityId == kyle && s.AspectKey == "status");
         Assert.That(kyleStatus.Value, Is.EqualTo("second"),
@@ -96,16 +98,16 @@ public class WorldStateAtBeatServiceTests
     }
 
     [Test]
-    public async Task SnapshotAsync_Unscoped_DoesNotDropOlderEntityBehindManyRecentUnrelatedEvents()
+    public async Task SnapshotAsync_DoesNotDropOlderEntityBehindManyRecentUnrelatedEvents()
     {
         // Regresses the silent-truncation bug fixed by delegating to
-        // WorldStateLedger.SnapshotManyAsync: this service used to Take(2000) the most-recent
-        // events by AtStoryTime BEFORE grouping by (EntityId, AspectKey), in an UNSCOPED
-        // (entityIds: null) call. An entity whose only/latest event was older than the cutoff
-        // vanished from the snapshot entirely, even though it has a perfectly well-defined
-        // "latest known state."
+        // WorldStateLedger.SnapshotManyAsync: this service used to cap the most-recent events by
+        // AtStoryTime BEFORE grouping by (EntityId, AspectKey). An entity whose only/latest event
+        // was older than the cutoff vanished from the snapshot entirely, even though it has a
+        // perfectly well-defined "latest known state."
         var quiet = Guid.CreateVersion7();
         var t = new DateTime(2225, 6, 1, 0, 0, 0, DateTimeKind.Utc);
+        var everyone = new List<Guid> { quiet };
 
         await using (var db = dbFactory.CreateDbContext())
         {
@@ -115,6 +117,7 @@ public class WorldStateAtBeatServiceTests
             for (int i = 0; i < 50; i++)
             {
                 var noisyId = Guid.CreateVersion7();
+                everyone.Add(noisyId);
                 db.Entities.Add(Person(noisyId, $"Noisy {i}"));
                 db.EntityStateEvents.Add(Ev(noisyId, "status", $"noisy-{i}", t.AddDays(-i)));
             }
@@ -122,12 +125,41 @@ public class WorldStateAtBeatServiceTests
             await db.SaveChangesAsync();
         }
 
-        // Unscoped (entityIds: null) — the exact shape that used to trigger the bug.
-        var snap = await svc.SnapshotAsync(Guid.CreateVersion7(), storyTime: t, entityIds: null);
+        // The whole cast in scope: the quiet one is the OLDEST event of the 51, so if the cap is
+        // ever re-applied before grouping it is the first row to disappear.
+        var snap = await svc.SnapshotAsync(Guid.CreateVersion7(), storyTime: t, entityIds: everyone);
 
         var quietState = snap.EntityStates.SingleOrDefault(s => s.EntityId == quiet);
-        Assert.That(quietState, Is.Not.Null, "an entity's latest known state must survive an unscoped snapshot regardless of how many other entities have more-recent events");
+        Assert.That(quietState, Is.Not.Null, "an entity's latest known state must survive regardless of how many other entities have more-recent events");
         Assert.That(quietState!.Value, Is.EqualTo("dormant"));
+    }
+
+    // ── the scope contract itself (2026-09-05) ───────────────────────────────
+
+    [Test]
+    public async Task SnapshotAsync_Unscoped_WithNoEntityTagsInTheChapter_SaysItCouldNotLook()
+    {
+        // The load-bearing half of the 2026-09-05 change. Omitting entityIds no longer means
+        // "the whole universe" — it derives scope from the entities tagged in the beat's own
+        // chapter. When there is nothing to derive from, the snapshot must SAY it could not
+        // look, because an empty result that never got to look is not the same answer as an
+        // empty result that looked and found nothing. Nothing else in the suite pins this.
+        var kyle = Guid.CreateVersion7();
+        var t = new DateTime(2225, 3, 1, 0, 0, 0, DateTimeKind.Utc);
+
+        await using (var db = dbFactory.CreateDbContext())
+        {
+            db.Entities.Add(Person(kyle, "Kyle"));
+            db.EntityStateEvents.Add(Ev(kyle, "status", "wounded", t.AddDays(-1)));
+            await db.SaveChangesAsync();
+        }
+
+        var snap = await svc.SnapshotAsync(Guid.CreateVersion7(), storyTime: t);
+
+        Assert.That(snap.EntityStates, Is.Empty);
+        Assert.That(snap.Scope, Does.Contain("COULD NOT LOOK"),
+            "an unscoped snapshot with nothing to scope to must announce that it could not look, "
+            + "not quietly return zero facts that read like 'nothing is true here'");
     }
 
     [Test]
