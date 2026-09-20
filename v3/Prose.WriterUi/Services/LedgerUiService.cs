@@ -20,10 +20,33 @@ namespace Prose.WriterUi.Services;
 public sealed class LedgerUiService(
     IDbContextFactory<ProseDbContext> dbFactory,
     IUniverseContext universe,
+    NodeWorkbenchService workbench,
     NarrativeObligationService obligations)
 {
+    /// <summary>
+    /// One obligation with the SHAPE of it — how far the book held the promise open.
+    /// </summary>
+    /// <param name="Span">
+    /// Beats between the plant and its payoff, or between the plant and the end of the written
+    /// book for one still open.
+    ///
+    /// <para>This is the number the ledger was missing. A count of obligations says how many
+    /// promises a book makes; it says nothing about weight, and weight is time under tension. A
+    /// promise planted and paid two beats later is a beat, not a thread; the same promise carried
+    /// three hundred beats is the spine of the book. Both are one row in a count.</para>
+    /// </param>
+    /// <param name="Open">True when the span is measured to the end of the book rather than to a
+    /// payoff — the distance is real either way, but one of them is still growing.</param>
+    public sealed record Shape(
+        NarrativeObligationService.ObligationView Obligation,
+        int? PlantedAt,
+        int? PaidAt,
+        int? Span,
+        bool Open);
+
     public async Task<(NarrativeObligationService.TrialBalance Balance,
-                       IReadOnlyList<NarrativeObligationService.ObligationView> All)>
+                       IReadOnlyList<NarrativeObligationService.ObligationView> All,
+                       IReadOnlyList<Shape> Shapes)>
         LoadAsync(Guid bookNodeId, CancellationToken ct = default)
     {
         await ScopeToBookAsync(bookNodeId, ct);
@@ -32,7 +55,45 @@ public sealed class LedgerUiService(
         // and a per-chapter close is a different instrument with a different answer.
         var balance = await obligations.TrialBalanceAsync(bookNodeId, chapterOrdinal: null, ct);
         var all = await obligations.ListAsync(bookNodeId, ct: ct);
-        return (balance, all);
+        return (balance, all, await ShapeAsync(bookNodeId, all, ct));
+    }
+
+    /// <summary>
+    /// Distances, in beats, from the book's own reading order.
+    /// </summary>
+    /// <remarks>
+    /// Measured in BEATS rather than chapters, which the obligation rows already carry. A chapter
+    /// is not a unit of time — BCODA's run from a handful of beats to a hundred and fifty — so
+    /// "planted chapter 3, paid chapter 5" describes two completely different distances depending
+    /// on where in the book it happens.
+    /// </remarks>
+    private async Task<IReadOnlyList<Shape>> ShapeAsync(
+        Guid bookNodeId,
+        IReadOnlyList<NarrativeObligationService.ObligationView> all,
+        CancellationToken ct)
+    {
+        var ordered = await workbench.GetOrderedBeatsAsync(bookNodeId, ct);
+        if (ordered.Count == 0) return [];
+
+        var ordinal = new Dictionary<Guid, int>(ordered.Count);
+        for (var i = 0; i < ordered.Count; i++) ordinal[ordered[i].Beat.Id] = i + 1;
+        var lastBeat = ordered.Count;
+
+        var shapes = new List<Shape>(all.Count);
+        foreach (var o in all)
+        {
+            int? planted = o.OriginBeatId is { } p && ordinal.TryGetValue(p, out var pi) ? pi : null;
+            int? paid = o.ClosingBeatId is { } c && ordinal.TryGetValue(c, out var ci) ? ci : null;
+
+            var stillOpen = paid is null;
+            // An unplanted obligation has no span at all. Reporting zero would put it at the top
+            // of a list sorted by distance, which is the opposite of what it means.
+            var span = planted is null ? (int?)null : (paid ?? lastBeat) - planted;
+
+            shapes.Add(new Shape(o, planted, paid, span, stillOpen));
+        }
+
+        return shapes.OrderByDescending(s => s.Span ?? -1).ToList();
     }
 
     private async Task ScopeToBookAsync(Guid bookNodeId, CancellationToken ct)

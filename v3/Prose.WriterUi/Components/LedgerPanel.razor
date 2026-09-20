@@ -62,7 +62,83 @@
             }
         </div>
 
-        @if (Shown.Count == 0)
+        @if (filter == "Shape")
+        {
+            @* Distance, not count. A count says how many promises a book makes and nothing about
+               weight — and weight is time under tension. A promise planted and paid two beats
+               later is a beat; the same promise carried three hundred beats is the spine of the
+               book, and both are one row in a count. Longest first. *@
+            <p class="ledger-shape-lede muted">
+                How far each promise is held open, in beats. Longest first.
+            </p>
+
+            @if (shapes.Count == 0)
+            {
+                <div class="empty">Nothing to measure.</div>
+            }
+            else
+            {
+                <ul class="ledger-list">
+                    @foreach (var shape in shapes)
+                    {
+                        <li class="oblig">
+                            <div class="oblig-head">
+                                <span class="oblig-kind">@shape.Obligation.Kind</span>
+                                @if (shape.Span is { } span)
+                                {
+                                    <span class="shape-span">@span beats@(shape.Open ? " and counting" : "")</span>
+                                }
+                                else
+                                {
+                                    @* No plant beat means no distance at all. Shown as absent
+                                       rather than as zero, which would sort it with the tightest
+                                       promises in the book. *@
+                                    <span class="muted">not anchored to a beat</span>
+                                }
+                                <div class="spacer"></div>
+                                <span class="muted oblig-state">@shape.Obligation.State</span>
+                            </div>
+
+                            <div class="oblig-desc">@shape.Obligation.Description</div>
+
+                            @if (shape.Span is { } bars && LongestSpan > 0)
+                            {
+                                @* A bar, drawn from the number beside it. The eye finds the two or
+                                   three long threads in a list of eighty far faster than it reads
+                                   eighty numbers. *@
+                                <div class="shape-bar" aria-hidden="true">
+                                    <div class="shape-bar-fill @(shape.Open ? "open" : "")"
+                                         style="@($"width:{100.0 * bars / LongestSpan:0.#}%")"></div>
+                                </div>
+                            }
+
+                            <div class="oblig-meta">
+                                <span class="muted">
+                                    @(shape.PlantedAt is { } at ? $"planted #{at}" : "no plant beat")
+                                    @(shape.PaidAt is { } paid ? $" · paid #{paid}" : " · unpaid")
+                                </span>
+                            </div>
+
+                            <div class="oblig-actions">
+                                @if (shape.Obligation.OriginBeatId is { } origin)
+                                {
+                                    <button class="mini" @onclick="() => OnJumpToBeat.InvokeAsync(origin)">
+                                        Opened here
+                                    </button>
+                                }
+                                @if (shape.Obligation.ClosingBeatId is { } closing)
+                                {
+                                    <button class="mini" @onclick="() => OnJumpToBeat.InvokeAsync(closing)">
+                                        Paid off here
+                                    </button>
+                                }
+                            </div>
+                        </li>
+                    }
+                </ul>
+            }
+        }
+        else if (Shown.Count == 0)
         {
             <div class="empty">Nothing @filter.ToLowerInvariant().</div>
         }
@@ -132,10 +208,11 @@
     [Parameter] public EventCallback<Guid> OnJumpToBeat { get; set; }
     [Parameter] public EventCallback OnClose { get; set; }
 
-    private static readonly string[] Filters = ["Outstanding", "Overdue", "Closed", "All"];
+    private static readonly string[] Filters = ["Outstanding", "Overdue", "Closed", "Shape", "All"];
 
     private NarrativeObligationService.TrialBalance? balance;
     private IReadOnlyList<NarrativeObligationService.ObligationView> all = [];
+    private IReadOnlyList<LedgerUiService.Shape> shapes = [];
     private string filter = "Outstanding";
 
     private Guid loadedFor;
@@ -156,8 +233,12 @@
         loadedFor = BookNodeId;
         if (BookNodeId == Guid.Empty) { balance = null; all = []; return; }
 
-        (balance, all) = await Ledger.LoadAsync(BookNodeId);
+        (balance, all, shapes) = await Ledger.LoadAsync(BookNodeId);
     }
+
+    /// <summary>The longest span in the book, so every bar is drawn against the same scale.
+    /// Per-row normalisation would make every promise look equally load-bearing.</summary>
+    private int LongestSpan => shapes.Count == 0 ? 0 : shapes.Max(s => s.Span ?? 0);
 
     private void SetFilter(string next) => filter = next;
 }

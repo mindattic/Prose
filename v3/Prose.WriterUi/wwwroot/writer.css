@@ -941,3 +941,26 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 }
 
 .trust-stale { background: var(--color-danger-bg); color: #fff; }
+
+/* Plant-to-payoff distance. The bar is drawn against the longest span in the BOOK, not per row —
+   normalising each row would make every promise look equally load-bearing, which is the exact
+   misreading the view exists to prevent. */
+.ledger-shape-lede { padding: 0 var(--space-3) var(--space-2); line-height: 1.5; }
+.shape-span { color: var(--color-fg-strong); font-family: var(--font-mono); }
+
+.shape-bar {
+    height: 6px;
+    margin: var(--space-1) 0;
+    background: var(--color-bg-3);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.shape-bar-fill { height: 100%; background: var(--color-accent); }
+
+/* An open promise is still growing, so its bar is hatched rather than solid — the length is a
+   measurement in progress, not a result. */
+.shape-bar-fill.open {
+    background: repeating-linear-gradient(
+        90deg, var(--color-warning) 0 4px, transparent 4px 8px);
+}
