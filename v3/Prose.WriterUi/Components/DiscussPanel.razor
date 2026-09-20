@@ -636,19 +636,22 @@
     /// </summary>
     private async Task ApproveAsync(Guid proposalId)
     {
-        if (busy) return;
+        if (busy || openThread is null) return;
         busy = true;
         error = null;
         try
         {
-            var outcome = await Discuss.ApproveAsync(BookNodeId, proposalId);
+            var outcome = await Discuss.ApproveAsync(BookNodeId, BeatId, openThread.Id, proposalId);
 
             // A refusal is not a failure of the author's intent — the beat moved underneath the
             // proposal, and writing anyway is exactly what must not happen. It is said plainly
             // rather than logged, because the author is standing right here waiting for it.
             heard = outcome.Reason;
 
-            await LoadProposalsAsync();
+            // Reloaded rather than patched: approving may have appended an assistant turn
+            // listing what the change left disagreeing with the record.
+            await LoadTurnsAsync(openThread.Id);
+
             // The beat on screen is now stale in the editor as well as here.
             if (outcome.Applied) await OnBeatWritten.InvokeAsync(BeatId);
         }

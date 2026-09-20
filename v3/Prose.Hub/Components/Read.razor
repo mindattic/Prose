@@ -1,0 +1,41 @@
+@* No @page here, for the same reason Writer.razor and Spine.razor have none: Prose.Hub maps
+   Blazor with MapRazorComponents<App>() and App.razor carries no <Router>, so EVERY discovered
+   page route renders App.razor. Program.cs gives this component its own endpoint instead. *@
+@using Microsoft.AspNetCore.Components.Web
+@using Prose.WriterUi.Components
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <title>Prose Read</title>
+    @* Stamped before the stylesheets so a light-theme user never sees a frame of dark. *@
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('prose.writer.theme');
+                document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+            } catch (e) { /* blocked site data — the dark default in the markup stands */ }
+        })();
+    </script>
+    <link rel="stylesheet" href="_content/Prose.WriterUi/tokens.css?v=@AssetVersion" />
+    @* writer.css first: it carries the global :focus-visible rule, .visually-hidden, and the
+       shared .mini/.primary chrome that read.css builds on. *@
+    <link rel="stylesheet" href="_content/Prose.WriterUi/writer.css?v=@AssetVersion" />
+    <link rel="stylesheet" href="_content/Prose.WriterUi/read.css?v=@AssetVersion" />
+    <script src="_content/Prose.WriterUi/js/theme.js?v=@AssetVersion"></script>
+    @* writer.js for window.proseSpeech alone — this page speaks but does not edit. Listening to
+       the book IS the felt pass, so the audio is not an extra here; it is half the point. *@
+    <script src="_content/Prose.WriterUi/js/writer.js?v=@AssetVersion"></script>
+    <HeadOutlet @rendermode="RenderMode.InteractiveServer" />
+</head>
+<body>
+    <ReadShell @rendermode="RenderMode.InteractiveServer" />
+    <script src="_framework/blazor.web.js"></script>
+</body>
+</html>
+
+@code {
+    private static string AssetVersion => HubAssets.Version;
+}

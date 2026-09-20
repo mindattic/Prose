@@ -23,6 +23,7 @@ public sealed class DiscussionUiService(
     DiscussionService discussions,
     DiscussionChatService chat,
     ProposalService proposals,
+    PostWriteReviewService review,
     DiscussTargetRegistry targets)
 {
     /// <summary>Raised when the exchange could not happen because no provider has a key. The
@@ -217,10 +218,40 @@ public sealed class DiscussionUiService(
     /// where not writing is the correct outcome.
     /// </summary>
     public async Task<SpanWriteOutcome> ApproveAsync(
-        Guid bookNodeId, Guid proposalId, CancellationToken ct = default)
+        Guid bookNodeId, Guid beatId, Guid threadId, Guid proposalId, CancellationToken ct = default)
     {
         await ScopeToBookAsync(bookNodeId, ct);
-        return await proposals.ApplyAsync(proposalId, ct);
+        var outcome = await proposals.ApplyAsync(proposalId, ct);
+        if (!outcome.Applied) return outcome;
+
+        // A request must not close with a mismatch unresolved — so the checks run here, inside the
+        // approval, and what they find goes into the conversation as the assistant's own turn
+        // rather than into a findings table nobody is looking at.
+        var mismatches = await review.ReviewAsync(bookNodeId, beatId, outcome.RemovedText, ct);
+        if (mismatches.Count == 0) return outcome;
+
+        var blocks = new List<DiscussionBlock>
+        {
+            new DiscussionBlock.Text(
+                mismatches.Count == 1
+                    ? "That change left one thing disagreeing with the record."
+                    : $"That change left {mismatches.Count} things disagreeing with the record."),
+        };
+
+        foreach (var m in mismatches)
+        {
+            blocks.Add(new DiscussionBlock.Text(
+                $"**{m.Headline}**" + (m.Detail is null ? "" : $"  \n{m.Detail}")));
+            // A choice, not a decision. Which way a mismatch resolves is a judgement about the
+            // story, and the author's pick is recorded as their own turn in the same log as the
+            // reasoning that produced it.
+            blocks.Add(new DiscussionBlock.Choice(
+                "How should that be settled?",
+                [.. m.Fork.Select(f => new ChoiceOption(f))]));
+        }
+
+        await discussions.AddTurnAsync(threadId, DiscussionRole.Assistant, blocks, ct: ct);
+        return outcome;
     }
 
     public async Task RejectProposalAsync(

@@ -1,0 +1,231 @@
+@* Read Mode — the felt pass.
+
+   THE DISCUSS PANEL IS ABSENT HERE, AND THAT IS A CORRECTNESS PROPERTY, NOT A LAYOUT CHOICE.
+
+   Every other surface in Prose answers "what is wrong with this paragraph". This one answers
+   "where did attention die", which can only be measured by reading or listening in sequence,
+   without stopping — and which is destroyed by any affordance that invites analysis. A Discuss
+   box in the corner of this page would not be a convenience; it would break the only instrument
+   the project has for measuring deadness, and it would break it invisibly, because the page would
+   still look like it was working.
+
+   So: no discussion, no find, no entity chips, no navigator, no toolbar. One control that moves
+   forward, one that speaks, and one that records that you stopped caring. *@
+
+@using Prose.Core.Services.Discussion
+@inject ReadService Read
+@inject ReadAloudUiService ReadAloud
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<div class="read">
+
+    @if (book is null)
+    {
+        <div class="read-picker">
+            <h1>Read</h1>
+            <p class="read-lede">
+                The book, straight through. Nothing here analyses anything — the only thing you can
+                record is where you stopped caring.
+            </p>
+
+            @if (books is null)
+            {
+                <p class="muted">Loading…</p>
+            }
+            else
+            {
+                <ul class="read-books">
+                    @foreach (var b in books)
+                    {
+                        <li>
+                            <button class="read-book" @onclick="() => OpenAsync(b)">
+                                <span class="read-book-title">@b.Title</span>
+                                <span class="muted">@b.BeatCount beats</span>
+                            </button>
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+    }
+    else
+    {
+        <header class="read-bar">
+            <button class="mini" @onclick="CloseAsync" aria-label="Back to the book list">← Books</button>
+            <span class="read-title">@book.Title</span>
+            <div class="spacer"></div>
+            <span class="muted read-pos" role="status">
+                @(current + 1) of @pages.Count
+            </span>
+        </header>
+
+        <main class="read-page" id="read-page" tabindex="-1" aria-live="polite">
+            @if (pages.Count == 0)
+            {
+                <p class="muted">This book has no prose yet.</p>
+            }
+            else
+            {
+                @* Not named "page": Razor reads "@page." in markup as the @page directive. *@
+                var showing = pages[current];
+                @if (showing.ChapterTitle is { Length: > 0 } chapter && ShowsChapter(current))
+                {
+                    <h2 class="read-chapter">@chapter</h2>
+                }
+                <article class="read-prose">@showing.Text</article>
+            }
+        </main>
+
+        <footer class="read-transport">
+            <button class="mini" @onclick="PreviousAsync" disabled="@(current == 0)"
+                    aria-label="Previous beat">← Back</button>
+
+            <button class="primary" @onclick="ToggleSpeakingAsync" aria-label="@(speaking ? "Stop reading aloud" : "Read aloud")">
+                @(speaking ? "■ Stop" : "▶ Listen")
+            </button>
+
+            <button class="mini" @onclick="NextAsync" disabled="@(current >= pages.Count - 1)"
+                    aria-label="Next beat">Next →</button>
+
+            <div class="spacer"></div>
+
+            @* The whole instrument. No note, no severity, no category: asking why turns a
+               measurement into an opinion, and the opinion is available from every other screen. *@
+            <button class="read-mark @(markedHere ? "on" : "")" @onclick="MarkAsync"
+                    aria-pressed="@markedHere"
+                    title="I stopped caring here">
+                @(markedHere ? "Marked" : "I stopped here")
+            </button>
+
+            @if (MarksFor(current) is > 0 and var n && !markedHere)
+            {
+                <span class="muted read-prior" title="Marked on previous passes">@n prior</span>
+            }
+        </footer>
+    }
+</div>
+
+@code {
+    private IReadOnlyList<ReadService.BookChoice>? books;
+    private ReadService.BookChoice? book;
+    private IReadOnlyList<ReadService.Page> pages = [];
+    private IReadOnlyDictionary<int, int> priorMarks = new Dictionary<int, int>();
+
+    private int current;
+    private bool speaking;
+    private readonly HashSet<Guid> markedThisPass = [];
+
+    private bool markedHere =>
+        pages.Count > 0 && markedThisPass.Contains(pages[current].BeatId);
+
+    protected override async Task OnInitializedAsync() => books = await Read.BooksAsync();
+
+    private async Task OpenAsync(ReadService.BookChoice choice)
+    {
+        book = choice;
+        current = 0;
+        markedThisPass.Clear();
+        pages = await Read.PagesAsync(choice.Id);
+        priorMarks = await Read.MarksByBeatAsync(choice.Id);
+    }
+
+    private async Task CloseAsync()
+    {
+        await StopAsync();
+        book = null;
+        pages = [];
+        current = 0;
+    }
+
+    /// <summary>The chapter heading, only where it changes. A heading on every beat would turn the
+    /// read into a list of fragments, which is the thing it is measuring the absence of.</summary>
+    private bool ShowsChapter(int index)
+        => index == 0 || pages[index].ChapterTitle != pages[index - 1].ChapterTitle;
+
+    private int MarksFor(int index)
+        => pages.Count == 0 ? 0 : priorMarks.GetValueOrDefault(pages[index].Number);
+
+    private async Task NextAsync()
+    {
+        if (current >= pages.Count - 1) return;
+        current++;
+        if (speaking) await SpeakCurrentAsync();
+        else await StopAsync();
+    }
+
+    private async Task PreviousAsync()
+    {
+        if (current == 0) return;
+        current--;
+        if (speaking) await SpeakCurrentAsync();
+        else await StopAsync();
+    }
+
+    private async Task ToggleSpeakingAsync()
+    {
+        if (speaking) { await StopAsync(); return; }
+        speaking = true;
+        await SpeakCurrentAsync();
+    }
+
+    /// <summary>
+    /// Speak this beat, sentence by sentence.
+    ///
+    /// <para>Chunked for the same reason the conversation is: synthesis of a whole beat takes long
+    /// enough to be a pause, and a pause between beats is an interruption in the one pass that
+    /// must not have any.</para>
+    /// </summary>
+    private async Task SpeakCurrentAsync()
+    {
+        if (pages.Count == 0) return;
+
+        await JsAsync("proseSpeech.stop");
+
+        var chunker = new SentenceChunker();
+        var sentences = new List<string>(chunker.Add(pages[current].Text));
+        if (chunker.Flush() is { Length: > 0 } tail) sentences.Add(tail);
+
+        foreach (var sentence in sentences)
+        {
+            if (!speaking) return;
+            try
+            {
+                var audio = await ReadAloud.SpeakAsync(sentence);
+                await JsAsync("proseSpeech.enqueue", audio.Base64, audio.MimeType);
+            }
+            catch
+            {
+                // No voice installed. The page still reads; it just does not speak, and saying so
+                // in a banner would be an interruption in the pass this exists to protect.
+                speaking = false;
+                return;
+            }
+        }
+    }
+
+    private async Task StopAsync()
+    {
+        speaking = false;
+        await JsAsync("proseSpeech.stop");
+    }
+
+    private async Task MarkAsync()
+    {
+        if (book is null || pages.Count == 0) return;
+
+        var page = pages[current];
+        if (!markedThisPass.Add(page.BeatId)) return;   // one mark per beat per pass
+
+        await Read.MarkAsync(book.Id, page);
+    }
+
+    private async Task JsAsync(string identifier, params object?[] args)
+    {
+        try { await JS.InvokeVoidAsync(identifier, args); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+    }
+
+    public async ValueTask DisposeAsync() => await JsAsync("proseSpeech.stop");
+}

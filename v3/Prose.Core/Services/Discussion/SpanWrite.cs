@@ -34,11 +34,15 @@ public enum SpanWriteRefusal
 
 /// <param name="NewText">The whole beat as it should now be stored. Null when refused.</param>
 /// <param name="Reason">Sentence the author reads. Always set, including on success.</param>
+/// <param name="RemovedText">The stored text the edit took out. Carried because the post-write
+/// check needs to know which entity links went with it, and by the time it runs the beat's own
+/// mentions index has already been re-derived against the NEW text.</param>
 public sealed record SpanWriteOutcome(
     bool Applied,
     string? NewText,
     string Reason,
-    SpanWriteRefusal Refusal = SpanWriteRefusal.None)
+    SpanWriteRefusal Refusal = SpanWriteRefusal.None,
+    string? RemovedText = null)
 {
     public static SpanWriteOutcome Refuse(SpanWriteRefusal why, string reason)
         => new(false, null, reason, why);
@@ -159,7 +163,7 @@ public static class SpanWrite
                 "The edit would have changed text outside the passage. Nothing was written. "
                 + "This is a bug — please report it.");
 
-        return new SpanWriteOutcome(true, updated, report);
+        return new SpanWriteOutcome(true, updated, report, RemovedText: removed);
     }
 
     /// <summary>

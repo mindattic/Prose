@@ -1263,6 +1263,9 @@ public static class ServiceCollectionExtensions
         // Turning an agreed change into a written one — and not one character further. Nothing
         // here writes prose on its own: the author approves a specific proposal (RFC 0009).
         services.AddSingleton<Prose.Core.Services.Discussion.ProposalService>();
+        // What an approved edit left disagreeing with the record. Exact checks only — no model
+        // decides whether the prose still means what it meant.
+        services.AddSingleton<Prose.Core.Services.Discussion.PostWriteReviewService>();
 
         // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's
         // post-write extraction into one call — RFC 0009 §9.4 "item 1".

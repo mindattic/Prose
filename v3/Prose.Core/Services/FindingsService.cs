@@ -20,7 +20,18 @@ namespace Prose.Core.Services;
 // author decision, a payoff with no origin, a closure whose quote is no longer on the page — the
 // obligation reconciler's own category, so its delete-then-recreate cycle never touches another
 // instrument's rows and the publish gate can count it by name instead of by summary prefix alone.
-public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, SemanticDrift, StructuralFailure, Liberty, Causality, Interpersonal, AffectBehavior, Xray, BookAudit, StoryScope, Craft, EntityDrift, Other, NarrativeObligation }
+public enum FindingCategory { Contradiction, Cliche, Anachronism, Voice, OutlineDrift, GearContradiction, BehaviorContradiction, ProseHealth, NearDuplicate, ComprehensionDefect, CraftChecklist, ReaderGripe, SemanticDrift, StructuralFailure, Liberty, Causality, Interpersonal, AffectBehavior, Xray, BookAudit, StoryScope, Craft, EntityDrift, Other, NarrativeObligation,
+
+    /// <summary>
+    /// A place where the author's attention died while reading or listening to the book straight
+    /// through (Read Mode).
+    ///
+    /// <para>Distinct from <see cref="ReaderGripe"/>, which carries a complaint. This carries only
+    /// a POSITION — deadness is a property of the sequence, and the moment you ask someone to say
+    /// what is wrong with it you have stopped measuring it and started analysing it. The mark is
+    /// deliberately the only thing Read Mode can record.</para>
+    /// </summary>
+    ReadDeadness }
 public enum FindingSeverity { Low, Medium, High }
 public enum FindingStatus   { New, Triaged, Applied, Dismissed }
 

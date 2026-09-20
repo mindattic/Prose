@@ -1,0 +1,126 @@
+/* Read Mode — the felt pass.
+
+   Everything here is subtractive. The editor's three columns, its chrome, its chips and its
+   panels all exist to help someone work on the prose; this page exists to find out whether the
+   prose holds attention, and every one of those affordances is a way of not finding out. What is
+   left is a measure of text, a way forward, and one button. */
+
+.read {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--color-bg-1);
+    color: var(--color-fg);
+}
+
+/* ── choosing a book ──────────────────────────────────────────────────── */
+
+.read-picker {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: var(--space-4);
+}
+
+.read-lede { color: var(--color-fg-soft); line-height: 1.5; }
+
+.read-books { list-style: none; margin: var(--space-4) 0 0; padding: 0; }
+
+.read-book {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    width: 100%;
+    min-height: var(--target-min);
+    padding: var(--space-2) var(--space-3);
+    background: none;
+    border: 0;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-fg);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.read-book:hover { background: var(--color-bg-2); }
+.read-book:focus-visible { outline: var(--focus-ring); outline-offset: calc(var(--focus-ring-offset) * -1); }
+.read-book-title { flex: 1; color: var(--color-fg-strong); }
+
+/* ── reading ──────────────────────────────────────────────────────────── */
+
+.read-bar,
+.read-transport {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--color-bg-1);
+    flex: 0 0 auto;
+}
+
+.read-bar { border-bottom: 1px solid var(--color-border); }
+.read-transport { border-top: 1px solid var(--color-border); }
+
+.read-bar .spacer,
+.read-transport .spacer { flex: 1; }
+
+.read-title { color: var(--color-fg-strong); font-weight: 600; }
+.read-pos { font-family: var(--font-mono); font-size: var(--text-xs); }
+.read-prior { font-size: var(--text-xs); }
+
+.read-page {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    /* A measure, centred. A 500-page manuscript read at full window width is a different reading
+       experience from the book, and this page's whole job is to be the book. */
+    padding: var(--space-4) var(--space-3);
+}
+
+.read-chapter {
+    max-width: 34rem;
+    margin: 0 auto var(--space-4);
+    font-size: var(--text-md);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-fg-muted);
+    font-weight: 600;
+}
+
+.read-prose {
+    max-width: 34rem;
+    margin: 0 auto;
+    font-family: var(--font-prose);
+    /* Larger and looser than the editor: this is reading, not working. */
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--color-fg-strong);
+    white-space: pre-wrap;
+}
+
+/* The instrument. Given real presence in the chrome — it is the only thing this page records, and
+   a mark the author has to hunt for is a mark they do not make. */
+.read-mark {
+    min-height: var(--target-min);
+    padding: 0 var(--space-4);
+    background: var(--color-mini-bg);
+    color: var(--color-mini-fg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font: inherit;
+    cursor: pointer;
+}
+
+.read-mark:hover { background: var(--color-mini-bg-hover); }
+.read-mark:focus-visible { outline: var(--focus-ring); outline-offset: var(--focus-ring-offset); }
+
+/* Marked is a state with a consequence, so it is not carried by colour alone — the label changes
+   from "I stopped here" to "Marked", and aria-pressed carries it to a screen reader. */
+.read-mark.on {
+    background: var(--color-warning-bg, var(--color-mini-bg));
+    border-color: var(--color-warning);
+    color: var(--color-fg-strong);
+}
+
+@media (max-width: 40rem) {
+    .read-prose, .read-chapter { max-width: none; }
+}

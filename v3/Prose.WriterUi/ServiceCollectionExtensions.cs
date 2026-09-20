@@ -37,6 +37,9 @@ public static class ServiceCollectionExtensions
         // Hearing a spoken turn. Scoped for the flow-universe pin it needs to read the book's own
         // proper nouns — the priming that makes invented names transcribe at all.
         services.AddScoped<SpeechUiService>();
+        // Read Mode. Scoped for the flow-universe pin, like the rest — and deliberately a separate
+        // service from WriterService, because the read must not be able to reach an editing verb.
+        services.AddScoped<ReadService>();
         return services;
     }
 }

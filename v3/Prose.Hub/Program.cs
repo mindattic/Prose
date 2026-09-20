@@ -305,6 +305,14 @@ app.MapGet("/writer", () =>
 app.MapGet("/spine", () =>
     new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Spine>());
 
+// Read Mode, at /read. Same explicit-endpoint reasoning as /writer above. The book straight
+// through, read or listened to, with NO discussion panel and no analysis affordance of any kind —
+// deadness is a property of the sequence, and anything that invites analysis destroys the only
+// instrument that measures it. Its own route rather than a mode of the editor for exactly that
+// reason: a toggle leaves the editor's chrome one click away, and one click away is present.
+app.MapGet("/read", () =>
+    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Read>());
+
 // The entity wiki, at /repo. Same explicit-endpoint reasoning as /writer above. The route shape
 // matches RepositoryDefinition.RoutePath ("/repo/{slug}"), which the database has been handing out
 // since 2026-06-16 without anything ever serving it. Pages render live from SQL — there is no
