@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: var(--bg);
-    color: var(--fg);
-    font: 14px/1.5 var(--ui-font, system-ui, sans-serif);
+    background: var(--color-bg-2);
+    color: var(--color-fg);
+    font: 14px/1.5 var(--font-ui, system-ui, sans-serif);
 }
 
 .spine .menubar {
@@ -14,13 +14,13 @@
     align-items: center;
     gap: .75rem;
     padding: .4rem .75rem;
-    border-bottom: 1px solid var(--rule);
-    background: var(--bg-raised, var(--bg));
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-bg-3, var(--color-bg-2));
     flex: 0 0 auto;
 }
 
 .spine .spacer { flex: 1 1 auto; }
-.spine .muted { color: var(--fg-muted); font-size: .85em; }
+.spine .muted { color: var(--color-fg-muted); font-size: .85em; }
 .spine .book-title { font-weight: 600; }
 
 .spine .menu { position: relative; }
@@ -34,7 +34,7 @@
     padding: .25rem .6rem;
     cursor: pointer;
 }
-.spine .menu-title:hover { background: var(--bg-hover, rgba(127,127,127,.15)); }
+.spine .menu-title:hover { background: var(--color-bg-3, rgba(127,127,127,.15)); }
 .spine .menu-drop {
     position: absolute;
     top: 100%;
@@ -43,30 +43,30 @@
     min-width: 22rem;
     max-height: 60vh;
     overflow: auto;
-    background: var(--bg-raised, var(--bg));
-    border: 1px solid var(--rule);
+    background: var(--color-bg-3, var(--color-bg-2));
+    border: 1px solid var(--color-border-input);
     border-radius: 6px;
     box-shadow: 0 8px 24px rgba(0,0,0,.35);
     padding: .25rem;
 }
 .spine .menu-drop button { display: block; width: 100%; text-align: left; }
-.spine .menu-drop button:hover { background: var(--bg-hover, rgba(127,127,127,.15)); }
-.spine .menu-note { padding: .5rem .6rem; color: var(--fg-muted); }
+.spine .menu-drop button:hover { background: var(--color-bg-3, rgba(127,127,127,.15)); }
+.spine .menu-note { padding: .5rem .6rem; color: var(--color-fg-muted); }
 
 .spine .filter {
     font: inherit;
     color: inherit;
-    background: var(--bg);
-    border: 1px solid var(--rule);
+    background: var(--color-bg-2);
+    border: 1px solid var(--color-border-input);
     border-radius: 4px;
     padding: .25rem .5rem;
     min-width: 16rem;
 }
 
-.spine .status { font-size: .85em; color: var(--fg-muted); }
-.spine .status.err { color: var(--danger, #e06c75); }
+.spine .status { font-size: .85em; color: var(--color-fg-muted); }
+.spine .status.err { color: var(--color-danger, #e06c75); }
 
-.spine .empty { padding: 2rem; color: var(--fg-muted); }
+.spine .empty { padding: 2rem; color: var(--color-fg-muted); }
 .spine .empty.small { padding: .6rem 1rem; }
 
 /* Two panes: outline on the left, order of events on the right. */
@@ -84,35 +84,37 @@
     min-height: 0;
     min-width: 0;
 }
-.spine .outline { border-right: 1px solid var(--rule); }
+.spine .outline { border-right: 1px solid var(--color-border); }
 
 .spine .pane-head {
     display: flex;
     align-items: center;
     gap: .6rem;
     padding: .4rem .75rem;
-    border-bottom: 1px solid var(--rule);
+    border-bottom: 1px solid var(--color-border);
     flex: 0 0 auto;
 }
 .spine .pane-head h2 { font-size: .95rem; margin: 0; font-weight: 600; }
 
 .spine button.primary {
-    border-color: var(--rule);
-    background: var(--bg-hover, rgba(127,127,127,.12));
+    border-color: var(--color-border);
+    background: var(--color-bg-3, rgba(127,127,127,.12));
 }
 .spine button.primary:disabled { opacity: .5; cursor: default; }
-.spine button.danger { color: var(--danger, #e06c75); border-color: transparent; }
-.spine button.danger:hover { border-color: var(--danger, #e06c75); }
+.spine button.danger { color: var(--color-danger, #e06c75); border-color: transparent; }
+.spine button.danger:hover { border-color: var(--color-danger, #e06c75); }
 
 .spine .outline-text {
     flex: 1 1 auto;
     resize: none;
     border: 0;
-    outline: none;
+    /* `outline: none` was here with no replacement — this is the control the author edits the
+       book outline in, and it had no focus indicator at all. The ring comes from writer.css's
+       global :focus-visible, which Spine.razor now loads. */
     padding: .75rem;
-    background: var(--bg);
-    color: var(--fg);
-    font: 13px/1.6 var(--mono-font, ui-monospace, monospace);
+    background: var(--color-bg-2);
+    color: var(--color-fg);
+    font: 13px/1.6 var(--font-mono, ui-monospace, monospace);
     white-space: pre-wrap;
 }
 
@@ -124,13 +126,13 @@
     z-index: 1;
     padding: .45rem .75rem;
     font-weight: 600;
-    background: var(--bg-raised, var(--bg));
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
+    background: var(--color-bg-3, var(--color-bg-2));
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 }
 
-.spine .row { border-bottom: 1px solid var(--rule-faint, rgba(127,127,127,.15)); }
-.spine .row.open { background: var(--bg-hover, rgba(127,127,127,.06)); }
+.spine .row { border-bottom: 1px solid var(--color-border, rgba(127,127,127,.15)); }
+.spine .row.open { background: var(--color-bg-3, rgba(127,127,127,.06)); }
 
 .spine .rowhead {
     display: grid;
@@ -142,14 +144,14 @@
     padding: .35rem .75rem;
     border-radius: 0;
 }
-.spine .rowhead:hover { background: var(--bg-hover, rgba(127,127,127,.12)); }
+.spine .rowhead:hover { background: var(--color-bg-3, rgba(127,127,127,.12)); }
 
-.spine .ord { color: var(--fg-muted); font: 12px var(--mono-font, ui-monospace, monospace); }
+.spine .ord { color: var(--color-fg-muted); font: 12px var(--font-mono, ui-monospace, monospace); }
 .spine .summary { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 /* A summary whose hash no longer matches its beat text is describing prose that has since
    changed — the one thing that makes this whole view lie. Say so loudly. */
-.spine .summary.stale { color: var(--warn, #d19a66); font-style: italic; }
-.spine .chars { color: var(--fg-muted); font: 12px var(--mono-font, ui-monospace, monospace); text-align: right; }
+.spine .summary.stale { color: var(--color-warning, #d19a66); font-style: italic; }
+.spine .chars { color: var(--color-fg-muted); font: 12px var(--font-mono, ui-monospace, monospace); text-align: right; }
 
 .spine .badge {
     justify-self: end;
@@ -157,31 +159,34 @@
     text-align: center;
     padding: 0 .35rem;
     border-radius: 999px;
-    font: 11px var(--mono-font, ui-monospace, monospace);
-    background: var(--accent-soft, rgba(97,175,239,.18));
-    color: var(--accent, #61afef);
+    font: 11px var(--font-mono, ui-monospace, monospace);
+    background: var(--color-entity-bg);
+    /* --color-entity is the token measured AGAINST that tint (7.02:1 dark, 5.92:1 light);
+       --color-accent is measured on bg-2 and drops to 3.95:1 here. */
+    color: var(--color-entity);
 }
-.spine .badge.zero { background: transparent; color: var(--fg-muted); }
+.spine .badge.zero { background: transparent; color: var(--color-fg-muted); }
 
 .spine .ledger { padding: .25rem .75rem .75rem 4.2rem; overflow-x: auto; }
 .spine .ledger table { border-collapse: collapse; width: 100%; font-size: 12px; }
 .spine .ledger th {
     text-align: left;
     font-weight: 600;
-    color: var(--fg-muted);
+    color: var(--color-fg-muted);
     padding: .2rem .35rem;
-    border-bottom: 1px solid var(--rule);
+    border-bottom: 1px solid var(--color-border);
     white-space: nowrap;
 }
 .spine .ledger td { padding: .15rem .35rem; vertical-align: top; }
 .spine .ledger td.ent { white-space: nowrap; font-weight: 600; }
-.spine .ledger td.src { color: var(--fg-muted); white-space: nowrap; }
+.spine .ledger td.src { color: var(--color-fg-muted); white-space: nowrap; }
 .spine .ledger td.acts { white-space: nowrap; }
 .spine .ledger input {
-    font: 12px var(--mono-font, ui-monospace, monospace);
+    min-height: var(--target-min);
+    font: 12px var(--font-mono, ui-monospace, monospace);
     color: inherit;
-    background: var(--bg);
-    border: 1px solid var(--rule);
+    background: var(--color-bg-2);
+    border: 1px solid var(--color-border-input);
     border-radius: 3px;
     padding: .1rem .3rem;
     width: 100%;
@@ -190,12 +195,12 @@
 .spine .ledger input.narrow { min-width: 4rem; }
 .spine .ledger input.when { min-width: 11rem; }
 .spine .ledger tr.snip td {
-    color: var(--fg-muted);
+    color: var(--color-fg-muted);
     font-style: italic;
     padding-bottom: .5rem;
 }
 
 @media (max-width: 900px) {
     .spine .panes { grid-template-columns: 1fr; grid-template-rows: 14rem 1fr; }
-    .spine .outline { border-right: 0; border-bottom: 1px solid var(--rule); }
+    .spine .outline { border-right: 0; border-bottom: 1px solid var(--color-border); }
 }

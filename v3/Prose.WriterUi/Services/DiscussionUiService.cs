@@ -1,0 +1,188 @@
+using Microsoft.EntityFrameworkCore;
+using Prose.Core.Data;
+using Prose.Core.Data.Entities;
+using Prose.Core.Services;
+using Prose.Core.Services.Discussion;
+
+namespace Prose.WriterUi.Services;
+
+/// <summary>
+/// What the Discuss panel needs, in the shapes it needs them.
+///
+/// <para>Scoped, like <see cref="WriterService"/> and for the same reason: it pins the flow
+/// universe for whichever book the circuit has open, and two windows on two books must not share
+/// that pin.</para>
+///
+/// <para>Holds no conversation state of its own. A thread is rows in the database from the moment
+/// it is opened, so closing the window mid-exchange loses nothing, and a second window looking at
+/// the same beat sees the same discussion.</para>
+/// </summary>
+public sealed class DiscussionUiService(
+    IDbContextFactory<ProseDbContext> dbFactory,
+    IUniverseContext universe,
+    DiscussionService discussions,
+    DiscussionChatService chat,
+    DiscussTargetRegistry targets)
+{
+    /// <summary>Raised when the exchange could not happen because no provider has a key. The
+    /// panel turns this into a link to Settings; nothing was spent.</summary>
+    public sealed class NoCredentialsException() : Exception(
+        "No API key is configured. Add one in Settings — Claude deliberately has no fallback, "
+        + "so nothing is spent until you do.");
+
+    /// <param name="Anchor">Where the thread currently points, and how confident that is.</param>
+    public sealed record ThreadRow(
+        DiscussionThread Thread,
+        AnchorResult Anchor,
+        int TurnCount,
+        string? LastLine);
+
+    /// <param name="Spoken">This turn arrived by microphone. Shown, because a transcription error
+    /// reads exactly like a change of mind six weeks later.</param>
+    public sealed record TurnRow(
+        string Role,
+        IReadOnlyList<DiscussionBlock> Blocks,
+        DateTime At,
+        double Cost,
+        bool Spoken);
+
+    /// <summary>
+    /// Pin the ambient universe to the book being discussed.
+    ///
+    /// <para>Non-optional, exactly as in <see cref="WriterService"/>: every universe-scoped read
+    /// behind this service returns nothing at all when the flow universe is unset, so an unpinned
+    /// call looks like "this beat has no discussions" rather than like an error.</para>
+    /// </summary>
+    private async Task ScopeToBookAsync(Guid bookNodeId, CancellationToken ct)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var universeId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.Id == bookNodeId)
+            .Select(n => (Guid?)n.UniverseId)
+            .FirstOrDefaultAsync(ct);
+        if (universeId is { } id && id != Guid.Empty) universe.SetFlowUniverse(id);
+    }
+
+    /// <summary>Every thread on a beat, re-anchored against the beat as it stands now.</summary>
+    public async Task<IReadOnlyList<ThreadRow>> ForBeatAsync(
+        Guid bookNodeId, Guid beatId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        var rows = await discussions.ForTargetAsync(DiscussionTargetKind.Beat, beatId, null, ct);
+        return rows.Select(r => new ThreadRow(r.Thread, r.Anchor, r.TurnCount, r.LastLine)).ToList();
+    }
+
+    public async Task<IReadOnlyList<TurnRow>> TurnsAsync(Guid threadId, CancellationToken ct = default)
+    {
+        var turns = await discussions.TurnsAsync(threadId, ct);
+        return turns
+            .Select(t => new TurnRow(t.Role, DiscussionContent.Deserialize(t.ContentJson), t.At, t.Cost,
+                                     t.InputMode == DiscussionInputMode.Voice))
+            .ToList();
+    }
+
+    /// <summary>
+    /// Open a thread on a passage the author selected, and answer their first question.
+    /// </summary>
+    /// <param name="inputMode">Typed or spoken. Recorded because a transcription error reads
+    /// exactly like a change of mind, and this column plus <paramref name="audioPath"/> are the
+    /// only things that can tell them apart later.</param>
+    /// <returns>Null when the selection can no longer be found in the beat — which means the text
+    /// moved between the right-click and the question, and silently anchoring somewhere else would
+    /// be worse than saying so.</returns>
+    public async Task<DiscussionThread?> StartAsync(
+        Guid bookNodeId, Guid beatId,
+        ProseEditorSpan span, string question, string intent,
+        string inputMode = DiscussionInputMode.Typed,
+        string? audioPath = null,
+        CancellationToken ct = default)
+    {
+        // Checked before the thread is created, not after: an unconfigured install would
+        // otherwise leave a question anchored in the book that was never asked of anyone.
+        if (!await chat.IsConfiguredAsync()) throw new NoCredentialsException();
+
+        await ScopeToBookAsync(bookNodeId, ct);
+
+        var handler = targets.For(DiscussionTargetKind.Beat);
+        if (handler is null) return null;
+
+        var subject = await handler.LoadAsync(beatId, null, ct);
+        if (subject is null) return null;
+
+        var anchor = TextAnchoring.Locate(subject.Text, Plain(span.Quote), Plain(span.Prefix), Plain(span.Suffix));
+        if (anchor is null) return null;
+
+        var thread = await discussions.StartAsync(
+            bookNodeId, DiscussionTargetKind.Beat, beatId, null,
+            anchor, subject.TextHash,
+            [new DiscussionBlock.Text(question)],
+            intent: intent,
+            inputMode: inputMode,
+            audioPath: audioPath,
+            ct: ct);
+
+        await AnswerAsync(bookNodeId, beatId, thread.Id, anchor.Quote, question, intent, ct);
+        return thread;
+    }
+
+    /// <summary>Ask a follow-up on an existing thread.</summary>
+    public async Task AskAsync(
+        Guid bookNodeId, Guid beatId, Guid threadId, string question, string intent,
+        string inputMode = DiscussionInputMode.Typed,
+        string? audioPath = null,
+        CancellationToken ct = default)
+    {
+        if (!await chat.IsConfiguredAsync()) throw new NoCredentialsException();
+
+        await ScopeToBookAsync(bookNodeId, ct);
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var quote = await db.DiscussionThreads.AsNoTracking()
+            .Where(t => t.Id == threadId).Select(t => t.AnchorQuote).FirstOrDefaultAsync(ct) ?? "";
+
+        await discussions.AddTurnAsync(threadId, DiscussionRole.Author,
+            [new DiscussionBlock.Text(question)], intent: intent,
+            inputMode: inputMode, audioPath: audioPath, ct: ct);
+
+        await AnswerAsync(bookNodeId, beatId, threadId, quote, question, intent, ct);
+    }
+
+    private async Task AnswerAsync(
+        Guid bookNodeId, Guid beatId, Guid threadId, string quote, string question,
+        string intent, CancellationToken ct)
+    {
+        var prior = await discussions.TurnsAsync(threadId, ct);
+
+        // The turn just written is the question being asked; including it again as history would
+        // have the model answer it twice.
+        var history = prior.Count > 0 ? prior.Take(prior.Count - 1).ToList() : prior;
+
+        var reply = await chat.AskAsync(bookNodeId, beatId, quote, question, intent, history, ct);
+
+        // Nothing was spent and nothing was said — do not record an empty assistant turn that
+        // would read, later, as the assistant having had nothing to say.
+        if (reply.CredentialsMissing) throw new NoCredentialsException();
+
+        await discussions.AddTurnAsync(threadId, DiscussionRole.Assistant, reply.Blocks,
+            cost: reply.Cost, ct: ct);
+
+        // Stamp the author's turn with what it turned out to be. Only "auto" needs this; an
+        // explicit toggle was already right when the turn was written.
+        if (intent == DiscussionIntent.Auto)
+            await discussions.SetLatestAuthorIntentAsync(threadId, reply.ResolvedIntent, ct);
+    }
+
+    public Task ResolveAsync(Guid threadId, CancellationToken ct = default)
+        => discussions.SetStateAsync(threadId, DiscussionThreadState.Resolved, ct);
+
+    public Task ReopenAsync(Guid threadId, CancellationToken ct = default)
+        => discussions.SetStateAsync(threadId, DiscussionThreadState.Live, ct);
+
+    /// <summary>The editor sends beat markup; anchors live in reader-visible text.</summary>
+    private static string Plain(string markup)
+        => BeatDiscussTarget.PlainText(markup);
+
+    /// <summary>Mirror of the editor component's selected-span record, so Core types do not have
+    /// to know about a Razor component.</summary>
+    public sealed record ProseEditorSpan(string Quote, string Prefix, string Suffix);
+}

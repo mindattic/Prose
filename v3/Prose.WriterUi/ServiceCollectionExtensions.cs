@@ -25,6 +25,18 @@ public static class ServiceCollectionExtensions
         // And again: the spine view pins the flow universe to the book whose order of events it is
         // showing. Two windows reading two books must not share the pin.
         services.AddScoped<SpineService>();
+        // Same reasoning once more: the Discuss panel reads and writes conversations scoped to the
+        // book the circuit has open.
+        services.AddScoped<DiscussionUiService>();
+        // Credentials are machine-wide rather than per-book, but this stays Scoped so every
+        // service this library exposes has one lifetime and no one has to remember which.
+        services.AddScoped<SettingsUiService>();
+        // Reading a passage aloud. Stateless — it synthesizes, hands the bytes to the browser,
+        // and keeps nothing.
+        services.AddScoped<ReadAloudUiService>();
+        // Hearing a spoken turn. Scoped for the flow-universe pin it needs to read the book's own
+        // proper nouns — the priming that makes invented names transcribe at all.
+        services.AddScoped<SpeechUiService>();
         return services;
     }
 }

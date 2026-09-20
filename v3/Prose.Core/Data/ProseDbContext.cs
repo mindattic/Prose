@@ -83,6 +83,7 @@ public class ProseDbContext : DbContext
                 case GlossaryTerm gt when gt.UniverseId == Guid.Empty: gt.UniverseId = target; break;
                 case BeatServiceLog bsl when bsl.UniverseId == Guid.Empty: bsl.UniverseId = target; break;
                 case BeatModeLog bml when bml.UniverseId == Guid.Empty:    bml.UniverseId = target; break;
+                case DiscussionThread dt when dt.UniverseId == Guid.Empty: dt.UniverseId = target; break;
                 // Config rows: operational/shared keys are tagged with the SHARED sentinel so every
                 // universe sees the one copy; all other keys are scoped to the current universe.
                 case Setting st when st.UniverseId == Guid.Empty:
@@ -629,6 +630,12 @@ public class ProseDbContext : DbContext
     public DbSet<BeatServiceLog>         BeatServiceLogs         => Set<BeatServiceLog>();
     public DbSet<BeatModeLog>            BeatModeLogs            => Set<BeatModeLog>();
 
+    // Author/assistant conversations anchored to a span of prose, an entity field, a beat's stated
+    // intent. The prose-level counterpart to DecisionLedgerEntry: why a change was made, kept
+    // where the change happened. Nothing here writes prose — see RFC 0009.
+    public DbSet<DiscussionThread>       DiscussionThreads       => Set<DiscussionThread>();
+    public DbSet<DiscussionTurn>         DiscussionTurns         => Set<DiscussionTurn>();
+
     // Cost tracking — append-only log of CLI command cost history.
     // Populated by Prose.Hub's CostGateDispatch; queried by CommandCostEstimatorService to self-calibrate.
     public DbSet<CommandCostHistory>     CommandCostHistories    => Set<CommandCostHistory>();
@@ -1109,6 +1116,38 @@ public class ProseDbContext : DbContext
             e.Property(x => x.Mode).HasMaxLength(50).IsRequired();
             e.Property(x => x.DetectionMethod).HasMaxLength(50).IsRequired();
             e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        // ── Discussions ──────────────────────────────────────────────────────
+        b.Entity<DiscussionThread>(e =>
+        {
+            e.ToTable("DiscussionThreads");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.TargetKind).HasMaxLength(40).IsRequired();
+            e.Property(x => x.TargetField).HasMaxLength(100);
+            e.Property(x => x.State).HasMaxLength(20).IsRequired().HasDefaultValue(DiscussionThreadState.Live);
+            e.Property(x => x.Title).HasMaxLength(200);
+            e.Property(x => x.AnchoredTextHash).HasMaxLength(64);
+            e.Property(x => x.CreatedAt).HasDefaultValueSql("GETUTCDATE()");
+
+            e.HasOne<Node>().WithMany().HasForeignKey(x => x.BookNodeId).OnDelete(DeleteBehavior.Cascade);
+            // Same shape as BeatServiceLog's nullable beat key, and for the same reason: a
+            // conversation must never be the thing that blocks a legitimate beat deletion.
+            e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId)
+                .IsRequired(false).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        b.Entity<DiscussionTurn>(e =>
+        {
+            e.ToTable("DiscussionTurns");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Role).HasMaxLength(16).IsRequired();
+            e.Property(x => x.Intent).HasMaxLength(16);
+            e.Property(x => x.InputMode).HasMaxLength(16).IsRequired().HasDefaultValue(DiscussionInputMode.Typed);
+            e.Property(x => x.AudioPath).HasMaxLength(512);
+            e.Property(x => x.At).HasDefaultValueSql("GETUTCDATE()");
+            e.HasOne(x => x.Thread).WithMany(x => x.Turns)
+                .HasForeignKey(x => x.ThreadId).OnDelete(DeleteBehavior.Cascade);
         });
 
         // ── Media assets ─────────────────────────────────────────────────────

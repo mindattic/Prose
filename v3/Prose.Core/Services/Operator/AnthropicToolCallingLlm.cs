@@ -1,4 +1,4 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Nodes;
 
 namespace Prose.Core.Services.Operator;
@@ -16,6 +16,9 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
     private readonly Func<IReadOnlyList<string>> resolveApiKeys;
 
     public string Name => "Claude";
+
+    /// <inheritdoc />
+    public string Model => model;
 
     public AnthropicToolCallingLlm(AnthropicToolClient client, string model = "claude-opus-4-7")
         : this(client, (Func<string?>)(static () => null), model) { }
@@ -70,7 +73,7 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
         return await KeyPoolFailover.ExecuteAsync(keys, ct, async key =>
         {
             var turn = await client.CreateAsync(key, model, systemPrompt, messages, toolsArray, maxTokens, ct);
-            return new ToolTurnResult(FromAnthropicContent(turn.Content));
+            return new ToolTurnResult(FromAnthropicContent(turn.Content), turn.Usage);
         });
     }
 

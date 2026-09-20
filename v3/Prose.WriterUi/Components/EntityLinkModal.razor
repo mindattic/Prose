@@ -1,0 +1,149 @@
+@* Linking selected prose to an entity, or repointing an existing chip.
+
+   Presentational by design: searching reaches EntityLookupService and applying reaches the
+   editor's JavaScript, and neither belongs in a dialog. The shell owns both and hands this
+   component the state plus the callbacks, which keeps the "one place decides what a write means"
+   rule intact even for a write as small as a tag. *@
+
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+@* aria-hidden, not a click handler: the scrim is decoration. Dismissal lives on Cancel and on
+   Escape, both of which a keyboard user can actually reach. *@
+<div class="scrim" aria-hidden="true" @onclick="() => OnCancel.InvokeAsync()"></div>
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="entity-modal-title"
+     tabindex="-1" @ref="dialog" @onkeydown="OnKeyDown">
+    <h2 id="entity-modal-title">@(Model.IsNew ? "Link text to an entity" : "Entity link")</h2>
+
+    <label class="field">
+        <span>Text</span>
+        <input type="text" value="@Model.Text" readonly="@Model.IsNew"
+               @oninput="e => Model.Text = e.Value?.ToString() ?? string.Empty" />
+    </label>
+
+    <label class="field">
+        <span>Repo</span>
+        <input type="text" value="@Model.Repo" readonly />
+    </label>
+
+    <label class="field">
+        <span>GUID</span>
+        <input type="text" class="mono" value="@Model.Guid" readonly />
+    </label>
+
+    <label class="field">
+        <span>Search</span>
+        <input type="text" placeholder="Name or alias…" value="@Search"
+               @oninput="e => SearchChanged.InvokeAsync(e.Value?.ToString() ?? string.Empty)"
+               @onkeyup="() => OnSearch.InvokeAsync()" />
+    </label>
+
+    @* The outcome of a search arrives without focus moving, so it has to be announced. *@
+    <div class="visually-hidden" role="status">
+        @(Searching ? "Searching…"
+          : Matches is null ? ""
+          : Matches.Count == 0 ? "No entity matches that."
+          : $"{Matches.Count} match{(Matches.Count == 1 ? "" : "es")}.")
+    </div>
+
+    @if (Searching)
+    {
+        <div class="menu-note">Searching…</div>
+    }
+    else if (Matches is not null)
+    {
+        @if (Matches.Count == 0)
+        {
+            <div class="menu-note">No entity matches that.</div>
+        }
+        else
+        {
+            <ul class="matches">
+                @foreach (var m in Matches)
+                {
+                    <li>
+                        @* Which match is chosen was a background colour and nothing else. *@
+                        <button class="@(m.Id.ToString() == Model.Guid ? "match current" : "match")"
+                                aria-pressed="@(m.Id.ToString() == Model.Guid)"
+                                @onclick="() => OnChoose.InvokeAsync(m)">
+                            <span class="match-name">@m.Name</span>
+                            <span class="muted">@m.EntityType</span>
+                            @if (m.MatchedAlias is not null)
+                            {
+                                <span class="muted">alias: @m.MatchedAlias</span>
+                            }
+                        </button>
+                    </li>
+                }
+            </ul>
+        }
+    }
+
+    <div class="modal-actions">
+        @if (!Model.IsNew)
+        {
+            <button class="mini danger-btn" @onclick="() => OnRemove.InvokeAsync()">Remove link</button>
+        }
+        <div class="spacer"></div>
+        <button class="mini" @onclick="() => OnCancel.InvokeAsync()">Cancel</button>
+        <button class="primary" disabled="@(!Model.CanApply)" @onclick="() => OnApply.InvokeAsync()">
+            @(Model.IsNew ? "Link" : "Apply")
+        </button>
+    </div>
+</div>
+
+@code {
+    /// <summary>
+    /// What the dialog is editing. A mutable reference rather than a value so the two editable
+    /// fields can write straight back without a round of callbacks for every keystroke.
+    /// </summary>
+    public sealed class State
+    {
+        /// <summary>True when wrapping a fresh selection; false when a chip was right-clicked.</summary>
+        public bool IsNew { get; init; }
+        public string Guid { get; set; } = "";
+        public string Repo { get; set; } = "";
+        public string Text { get; set; } = "";
+
+        /// <summary>The guid is the truth — <c>repo</c> is only a hint (see <c>BeatMarkup</c>),
+        /// so an empty guid is the one thing that makes the link meaningless.</summary>
+        public bool CanApply => System.Guid.TryParse(Guid, out var g) && g != System.Guid.Empty;
+    }
+
+    [Parameter, EditorRequired] public State Model { get; set; } = default!;
+
+    [Parameter] public string Search { get; set; } = "";
+    [Parameter] public EventCallback<string> SearchChanged { get; set; }
+    [Parameter] public bool Searching { get; set; }
+    [Parameter] public IReadOnlyList<Prose.Core.Services.EntityLookupMatch>? Matches { get; set; }
+
+    [Parameter] public EventCallback OnSearch { get; set; }
+    [Parameter] public EventCallback<Prose.Core.Services.EntityLookupMatch> OnChoose { get; set; }
+    [Parameter] public EventCallback OnApply { get; set; }
+    [Parameter] public EventCallback OnRemove { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+
+    private ElementReference dialog;
+    private bool wired;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (wired) return;
+        wired = true;
+        // Moves focus in and holds it: aria-modal describes a dialog, it does not make Tab behave
+        // like one. Without this, Tab walks out into the editor behind the scrim.
+        try { await JS.InvokeVoidAsync("proseModal.open", dialog); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { /* the dialog still works; only the focus niceties are lost */ }
+    }
+
+    private Task OnKeyDown(KeyboardEventArgs e)
+        => e.Key == "Escape" ? OnCancel.InvokeAsync() : Task.CompletedTask;
+
+    public async ValueTask DisposeAsync()
+    {
+        try { await JS.InvokeVoidAsync("proseModal.close"); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+    }
+}

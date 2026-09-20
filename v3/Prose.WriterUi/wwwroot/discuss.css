@@ -1,0 +1,389 @@
+/* The Discuss panel — the third column of the Writer, beside the beat list and the prose.
+   Loaded after writer.css, and using only tokens.css names so it follows the theme. */
+
+.discuss {
+    flex: 0 0 26rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow-y: auto;
+    background: var(--color-bg-1);
+    border-left: 1px solid var(--color-border);
+    font-size: var(--text-sm);
+}
+
+.d-head {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    background: var(--color-bg-1);
+    z-index: 1;
+}
+
+/* An <h2>, so the panel has a real heading — reset to the size it looked before. */
+.d-title { margin: 0; font-size: var(--text-sm); color: var(--color-fg-strong); font-weight: 600; }
+.d-head .spacer { flex: 1; }
+
+.d-empty,
+.d-note {
+    padding: var(--space-4) var(--space-3);
+    color: var(--color-fg-subtle);
+    line-height: 1.5;
+}
+
+/* ── asking about a fresh selection ───────────────────────────────────── */
+
+.d-pending {
+    padding: var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-bg-2);
+}
+
+.d-pending-quote {
+    font-family: var(--font-prose);
+    color: var(--color-fg-soft);
+    line-height: 1.5;
+    margin-bottom: var(--space-2);
+    /* The passage under discussion is quoted, not re-editable — this panel reads, it does not
+       write. Any change it leads to goes through a proposal the author approves. */
+    border-left: 2px solid var(--color-accent);
+    padding-left: var(--space-2);
+}
+
+.d-ask {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    background: var(--color-bg-4);
+    color: var(--color-fg);
+    border: 1px solid var(--color-border-input);
+    border-radius: var(--radius);
+    padding: var(--space-2);
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+}
+
+.d-ask:focus-visible { outline: var(--focus-ring); outline-offset: var(--focus-ring-offset); }
+
+.d-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+}
+
+.d-actions .spacer { flex: 1; }
+.d-cost { font-family: var(--font-mono); font-size: var(--text-xs); }
+
+/* ── the list of threads on this beat ─────────────────────────────────── */
+
+.d-list { list-style: none; margin: 0; padding: 0; }
+
+.d-row {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-3);
+    cursor: pointer;
+    color: var(--color-fg-soft);
+}
+
+.d-row:hover { background: var(--color-bg-3); }
+
+.d-row-quote {
+    display: block;
+    font-family: var(--font-prose);
+    color: var(--color-fg);
+    line-height: 1.45;
+}
+
+.d-row-last {
+    display: block;
+    margin-top: var(--space-1);
+    color: var(--color-fg-subtle);
+    font-size: var(--text-xs);
+}
+
+.d-row-meta {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-1);
+    color: var(--color-fg-muted);
+    font-size: var(--text-xs);
+}
+
+/* A thread whose passage has been cut is kept and shown, never deleted: the conversation about
+   a line is part of the record of why it went. */
+.d-row.detached .d-row-quote { color: var(--color-fg-subtle); text-decoration: line-through; }
+.d-detached { color: var(--color-warning); }
+.d-uncertain { color: var(--color-warning); }
+.d-resolved { color: var(--color-success); }
+
+/* ── one open thread ──────────────────────────────────────────────────── */
+
+.d-thread { padding: var(--space-3); }
+
+.d-anchor {
+    font-family: var(--font-prose);
+    color: var(--color-fg-soft);
+    line-height: 1.5;
+    border-left: 2px solid var(--color-accent);
+    padding-left: var(--space-2);
+    margin-bottom: var(--space-3);
+}
+
+.d-turn { margin-bottom: var(--space-3); }
+
+.d-turn-who {
+    color: var(--color-fg-muted);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    margin-bottom: var(--space-1);
+}
+
+.d-turn.author .d-md {
+    background: var(--color-bg-3);
+    border-radius: var(--radius);
+    padding: var(--space-2);
+}
+
+.d-md { color: var(--color-fg); line-height: 1.55; }
+.d-md p { margin: 0 0 var(--space-2); }
+.d-md p:last-child { margin-bottom: 0; }
+.d-md ul, .d-md ol { margin: 0 0 var(--space-2); padding-left: 1.2rem; }
+.d-md code {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    background: var(--color-bg-3);
+    padding: 0 .2em;
+    border-radius: 2px;
+}
+.d-md strong { color: var(--color-fg-strong); }
+
+/* ── evidence blocks ──────────────────────────────────────────────────── */
+
+/* Measured, not generated: these come from a search over the book, so they are always clickable
+   and always real. Styled as evidence rather than as prose for exactly that reason. */
+.d-quote {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: var(--color-bg-2);
+    border: 1px solid var(--color-border);
+    border-left: 2px solid var(--color-entity-underline);
+    border-radius: var(--radius);
+    padding: var(--space-2);
+    margin: var(--space-2) 0;
+    cursor: pointer;
+    color: var(--color-fg-soft);
+}
+
+.d-quote:hover { background: var(--color-bg-3); }
+.d-quote-text { display: block; font-family: var(--font-prose); }
+.d-quote-where {
+    display: block;
+    margin-top: var(--space-1);
+    color: var(--color-fg-muted);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+}
+
+/* ── a question the assistant asked back ──────────────────────────────── */
+
+.d-choice {
+    margin: var(--space-2) 0;
+    padding: var(--space-2);
+    background: var(--color-bg-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+.d-choice-q { color: var(--color-fg-strong); margin-bottom: var(--space-2); }
+
+.d-choice-opt {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: var(--color-mini-bg);
+    color: var(--color-mini-fg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-2);
+    margin-bottom: var(--space-1);
+    cursor: pointer;
+    min-height: var(--target-min);
+}
+
+.d-choice-opt:hover { background: var(--color-mini-bg-hover); }
+.d-choice-label { display: block; color: var(--color-fg); }
+/* --color-fg-muted is measured on bg-1/bg-2 only; on --color-mini-bg it is 3.99:1 and 3.11:1
+   on hover. --color-mini-fg is the token measured against that fill. */
+.d-choice-detail {
+    display: block;
+    margin-top: 2px;
+    color: var(--color-mini-fg);
+    font-size: var(--text-xs);
+}
+
+/* ── what the author is asking for ────────────────────────────────────── */
+
+/* Clarify vs Edit is the whole distinction between talking about the book and asking to change
+   it, so it is a visible switch rather than something inferred from the wording. */
+.d-intent { display: flex; gap: 2px; margin-bottom: var(--space-2); }
+
+.d-intent-btn {
+    flex: 1;
+    background: var(--color-mini-bg);
+    color: var(--color-mini-fg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-1) var(--space-2);
+    font-size: var(--text-xs);
+    cursor: pointer;
+    min-height: var(--target-min);
+}
+
+.d-intent-btn:hover { background: var(--color-mini-bg-hover); }
+
+.d-intent-btn.on {
+    background: var(--color-accent-bg);
+    border-color: var(--color-accent);
+    color: #fff;
+}
+
+/* Not a failure — nothing was attempted and nothing was spent. */
+.d-nokey { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+
+/* ── confirming a request ─────────────────────────────────────────────── */
+
+/* This block is the only error correction a spoken request has, so it is built to be READ, not
+   skimmed past: its own surface, its own border, and the restatement set larger than the prose
+   around it. */
+.d-confirm {
+    margin: var(--space-2) 0;
+    padding: var(--space-2);
+    background: var(--color-bg-3);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius);
+}
+
+.d-confirm-head {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-fg-muted);
+}
+
+.d-confirm-said {
+    font-size: var(--text-md);
+    line-height: 1.5;
+    color: var(--color-fg-strong);
+    margin: var(--space-1) 0 var(--space-2);
+}
+
+.d-confirm-steps {
+    margin: 0 0 var(--space-2);
+    padding-left: var(--space-4);
+    line-height: 1.5;
+}
+
+.d-confirm-steps li { margin-bottom: var(--space-1); }
+
+.d-confirm-caution {
+    margin-bottom: var(--space-2);
+    padding-left: var(--space-2);
+    border-left: 2px solid var(--color-danger);
+    line-height: 1.5;
+}
+
+.d-confirm-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+
+/* An answered confirmation keeps its words — it is the record of what was agreed — but loses the
+   accent that says something is waiting. */
+.d-confirm.spent { border-color: var(--color-border); }
+.d-confirm-spent { font-size: var(--text-xs); }
+
+.d-spoken { margin-left: var(--space-1); }
+
+/* ── dictation ────────────────────────────────────────────────────────── */
+
+/* Recording is a state with real consequences — the machine's microphone is open — so it is
+   never signalled by colour alone: the button's own label changes from 🎤 to "■ Stop", and
+   aria-pressed carries it to a screen reader. The fill and the pulse are reinforcement. */
+.d-mic.on {
+    background: var(--color-danger-bg);
+    border-color: var(--color-danger);
+    color: #fff;
+    animation: d-mic-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes d-mic-pulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.72; }
+}
+
+/* A pulsing control is exactly the kind of persistent motion that makes a UI unusable for some
+   readers, and the label already says everything the animation does. */
+@media (prefers-reduced-motion: reduce) {
+    .d-mic.on { animation: none; }
+}
+
+/* ── settings ─────────────────────────────────────────────────────────── */
+
+.modal.settings { max-width: 34rem; }
+
+.set-block { margin-bottom: var(--space-4); }
+.set-block h3 {
+    margin: 0 0 var(--space-2);
+    font-size: var(--text-md);
+    color: var(--color-fg-strong);
+}
+
+.set-note { margin: 0 0 var(--space-3); color: var(--color-fg-muted); line-height: 1.5; }
+.set-ok   { color: var(--color-success); }
+.set-warn { color: var(--color-warning); }
+
+.set-provider {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+.set-provider-head {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+    color: var(--color-fg);
+}
+
+.set-keys { list-style: none; margin: 0 0 var(--space-2); padding: 0; }
+.set-keys li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-1) 0;
+}
+.set-keys .spacer { flex: 1; }
+
+.set-add { display: flex; gap: var(--space-2); }
+.set-add input {
+    flex: 1;
+    background: var(--color-bg-4);
+    color: var(--color-fg);
+    border: 1px solid var(--color-border-input);
+    border-radius: var(--radius);
+    padding: var(--space-2);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+}
+.set-add input:focus-visible { outline: var(--focus-ring); outline-offset: var(--focus-ring-offset); }

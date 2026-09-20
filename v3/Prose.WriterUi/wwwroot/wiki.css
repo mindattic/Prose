@@ -7,29 +7,34 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: var(--color-bg);
-    color: var(--color-text);
+    background: var(--color-bg-2);
+    color: var(--color-fg);
 }
 
 .wiki .crumb,
 .wiki .menu-title {
-    color: var(--color-text-dim);
+    color: var(--color-fg-muted);
     text-decoration: none;
     padding: 0 .25rem;
 }
 
 .wiki .crumb:hover,
-.wiki .menu-title:hover { color: var(--color-text); }
+.wiki .menu-title:hover { color: var(--color-fg); }
 
+/* The .6 opacity pushed this to 2.99:1 dark / 2.44:1 light. It is real text content in the
+   breadcrumb, not decoration, so it carries the full token. */
 .wiki .crumb-sep {
-    color: var(--color-text-dim);
-    opacity: .6;
+    color: var(--color-fg-muted);
     padding: 0 .1rem;
 }
 
+/* A fill that carries text uses the -bg accent, not the glyph accent: tokens.css keeps two
+   families on purpose, because one value cannot be both 4.5:1 with white text and 4.5:1 as a
+   glyph on a dark surface. (The colour here previously named a token that was never defined, so
+   the declaration was invalid and the label simply inherited its colour.) */
 .wiki .mini.on {
-    background: var(--color-accent);
-    color: var(--color-bg);
+    background: var(--color-accent-bg);
+    color: #fff;
 }
 
 /* ── Panes ─────────────────────────────────────────────────────────────── */
@@ -49,7 +54,7 @@
     font-size: .95rem;
     text-transform: uppercase;
     letter-spacing: .06em;
-    color: var(--color-text-dim);
+    color: var(--color-fg-muted);
     margin: 1.5rem 0 .5rem;
     font-weight: 600;
 }
@@ -71,9 +76,12 @@
     font-size: .875rem;
 }
 
+/* --color-danger-bg is measured with WHITE text only (tokens.css). As a banner fill under the
+   inherited body colour it was 4.40:1 dark and 2.53:1 light. --color-bg-fail is the failed-row
+   tint, built to carry --color-fg: 10.99:1 dark, 13.56:1 light. */
 .wiki .banner.error {
-    background: var(--color-danger-bg, rgba(220, 60, 60, .14));
-    border: 1px solid var(--color-danger, #dc3c3c);
+    background: var(--color-bg-fail);
+    border: 1px solid var(--color-danger);
 }
 
 .wiki .banner.ok {
@@ -83,8 +91,10 @@
 
 /* A rewound record must never be mistaken for the live one. */
 .wiki .banner.asof {
-    background: var(--color-surface-2, rgba(255, 200, 0, .10));
-    border: 1px solid var(--color-warning, #c9a227);
+    /* A literal tint, not a token: the palette has --color-bg-fail and --color-bg-rec but no
+       warning wash, and a neutral surface would lose the "this is not the live record" signal. */
+    background: rgba(255, 200, 0, .10);
+    border: 1px solid var(--color-warning);
 }
 
 .wiki .linkish {
@@ -111,16 +121,16 @@
     align-items: baseline;
     gap: .5rem;
     padding: .6rem .75rem;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border-input);
     border-radius: 4px;
-    background: var(--color-surface);
-    color: var(--color-text);
+    background: var(--color-bg-3);
+    color: var(--color-fg);
     text-decoration: none;
 }
 
 .repo-card:hover { border-color: var(--color-accent); }
 .repo-name { font-weight: 500; }
-.repo-count { color: var(--color-text-dim); font-variant-numeric: tabular-nums; }
+.repo-count { color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
 
 /* ── Entity list ───────────────────────────────────────────────────────── */
 
@@ -134,9 +144,9 @@
 .searchbar input {
     flex: 1;
     padding: .4rem .6rem;
-    background: var(--color-surface);
-    color: var(--color-text);
-    border: 1px solid var(--color-border);
+    background: var(--color-bg-3);
+    color: var(--color-fg);
+    border: 1px solid var(--color-border-input);
     border-radius: 4px;
     font: inherit;
 }
@@ -151,13 +161,13 @@
     gap: .6rem;
     align-items: baseline;
     padding: .45rem .25rem;
-    color: var(--color-text);
+    color: var(--color-fg);
     text-decoration: none;
 }
 
-.entity-list a:hover { background: var(--color-surface); }
+.entity-list a:hover { background: var(--color-bg-3); }
 .e-name { font-weight: 500; }
-.e-desc { color: var(--color-text-dim); font-size: .85rem; }
+.e-desc { color: var(--color-fg-muted); font-size: .85rem; }
 
 .pager {
     display: flex;
@@ -207,7 +217,7 @@ table.fields { border-collapse: collapse; width: 100%; }
 table.fields th {
     text-align: left;
     font-weight: 500;
-    color: var(--color-text-dim);
+    color: var(--color-fg-muted);
     vertical-align: top;
     padding: .3rem .75rem .3rem 0;
     white-space: nowrap;
@@ -239,13 +249,13 @@ table.fields tr + tr td { border-top: 1px solid var(--color-border); }
 .related a { color: var(--color-accent); text-decoration: none; }
 .related a:hover { text-decoration: underline; }
 
-.m-where { display: block; color: var(--color-text-dim); font-size: .78rem; }
+.m-where { display: block; color: var(--color-fg-muted); font-size: .78rem; }
 .m-text { display: block; line-height: 1.4; }
 
-.cap { display: block; margin: .4rem 0; font-size: .8rem; color: var(--color-text-dim); }
+.cap { display: block; margin: .4rem 0; font-size: .8rem; color: var(--color-fg-muted); }
 .cap input { width: 4.5rem; margin: 0 .3rem; padding: .2rem .3rem;
-             background: var(--color-surface); color: var(--color-text);
-             border: 1px solid var(--color-border); border-radius: 3px; font: inherit; }
+             background: var(--color-bg-3); color: var(--color-fg);
+             border: 1px solid var(--color-border-input); border-radius: 3px; font: inherit; }
 
 /* ── Editing ───────────────────────────────────────────────────────────── */
 
@@ -256,15 +266,15 @@ table.fields tr + tr td { border-top: 1px solid var(--color-border); }
     flex-direction: column;
     gap: .25rem;
     font-size: .8rem;
-    color: var(--color-text-dim);
+    color: var(--color-fg-muted);
 }
 
 .edit-form textarea,
 .edit-form input,
 .edit-form select {
-    background: var(--color-surface);
-    color: var(--color-text);
-    border: 1px solid var(--color-border);
+    background: var(--color-bg-3);
+    color: var(--color-fg);
+    border: 1px solid var(--color-border-input);
     border-radius: 4px;
     padding: .45rem .6rem;
     font: inherit;
@@ -282,7 +292,7 @@ table.fields tr + tr td { border-top: 1px solid var(--color-border); }
     margin-top: 1rem;
 }
 
-.versions li.sel { background: var(--color-surface); }
+.versions li.sel { background: var(--color-bg-3); }
 
 .versions li {
     display: flex;
@@ -301,7 +311,7 @@ table.diff th, table.diff td {
     overflow-wrap: anywhere;
 }
 
-table.diff thead th { color: var(--color-text-dim); font-size: .78rem; text-transform: uppercase; }
+table.diff thead th { color: var(--color-fg-muted); font-size: .78rem; text-transform: uppercase; }
 table.diff tr.added   td:last-child { color: var(--color-entity); }
 table.diff tr.removed td:nth-child(2) { text-decoration: line-through; opacity: .75; }
 table.diff tr.changed td:last-child { color: var(--color-entity); }
@@ -321,4 +331,24 @@ table.diff tr.changed td:last-child { color: var(--color-entity); }
     }
 
     .entity-list a { grid-template-columns: 1fr; gap: .15rem; }
+}
+
+/* The diff's Change column. Added and Changed previously rendered identically — same accent
+   colour, no column naming which was which — so the two states were indistinguishable by any
+   means at all, colour or otherwise. */
+table.diff .diff-kind {
+    color: var(--color-fg-muted);
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    white-space: nowrap;
+}
+
+/* 2.5.8: .linkish and .crumb are standalone controls, not links inside a sentence, so the
+   inline exception does not apply and they were ~16-20px tall. */
+.wiki .linkish,
+.wiki .crumb {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--target-min);
 }

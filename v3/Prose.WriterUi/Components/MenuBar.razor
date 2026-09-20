@@ -1,0 +1,131 @@
+@* The chrome above the editor: book picker, mode switch, save/export, theme, and the formatting
+   toolbar. All of it reports outward — the shell decides what any of these mean. *@
+
+<header class="menubar">
+    <div class="menu">
+        <button class="menu-title" aria-haspopup="true" aria-expanded="@BookMenuOpen"
+                @onclick="() => OnToggleBookMenu.InvokeAsync()">Book</button>
+        @if (BookMenuOpen)
+        {
+            <div class="menu-drop">
+                @if (Books is null)
+                {
+                    <div class="menu-note" role="status">Loading…</div>
+                }
+                else
+                {
+                    @foreach (var b in Books)
+                    {
+                        <button @onclick="() => OnOpenBook.InvokeAsync(b)">
+                            @b.Title <span class="muted">@b.NodeCode</span>
+                        </button>
+                    }
+                }
+            </div>
+        }
+    </div>
+
+    @if (Book is not null)
+    {
+        <span class="book-title">@Book.Title</span>
+        <span class="muted">@BeatCount beats</span>
+    }
+
+    <div class="spacer"></div>
+
+    @if (HasBeat)
+    {
+        <div class="modes" role="group" aria-label="View mode">
+            <button class="@ModeClass(EditorMode.Display)" aria-pressed="@(Mode == EditorMode.Display)"
+                    @onclick="() => OnSetMode.InvokeAsync(EditorMode.Display)">Display</button>
+            <button class="@ModeClass(EditorMode.Markdown)" aria-pressed="@(Mode == EditorMode.Markdown)"
+                    @onclick="() => OnSetMode.InvokeAsync(EditorMode.Markdown)">Markdown</button>
+        </div>
+        <button class="primary" disabled="@(!Dirty || Saving)" @onclick="() => OnSave.InvokeAsync()">
+            @(Saving ? "Saving…" : Dirty ? "Save" : "Saved")
+        </button>
+    }
+
+    @if (Book is not null)
+    {
+        <button class="mini" disabled="@(Exporting || Saving)" @onclick="() => OnExport.InvokeAsync()"
+                title="Render this book to the publish folder — docx, epub and pdf">
+            @(Exporting ? "Exporting…" : "Export")
+        </button>
+    }
+
+    <button class="mini" @onclick="() => OnToggleTheme.InvokeAsync()" title="Light / dark"
+            aria-label="Dark theme" aria-pressed="@(Theme == "dark")">
+        @(Theme == "light" ? "☾" : "☀")
+    </button>
+
+    <button class="mini" @onclick="() => OnOpenSettings.InvokeAsync()"
+            title="Settings — API keys" aria-label="Settings">⚙</button>
+</header>
+
+@if (HasBeat)
+{
+    <div class="toolbar" role="toolbar" aria-label="Formatting">
+        <button class="mini" @onclick="() => OnAddEntity.InvokeAsync()"
+                title="Link the selected text to an entity" aria-label="Link to an entity">
+            <span aria-hidden="true">＠</span> Entity
+        </button>
+        <span class="tb-sep"></span>
+        <button class="mini bold" @onclick='() => OnFormat.InvokeAsync("bold")'
+                title="Bold (Ctrl+B)" aria-label="Bold">B</button>
+        <button class="mini ital" @onclick='() => OnFormat.InvokeAsync("italic")'
+                title="Italic (Ctrl+I)" aria-label="Italic">I</button>
+        <button class="mini undl" @onclick='() => OnFormat.InvokeAsync("underline")'
+                title="Underline (Ctrl+U)" aria-label="Underline">U</button>
+        <button class="mini strk" @onclick='() => OnFormat.InvokeAsync("strikeThrough")'
+                title="Strikethrough" aria-label="Strikethrough">S</button>
+        <span class="tb-sep"></span>
+        <button class="mini" @onclick="() => OnInsertEmDash.InvokeAsync()"
+                title="Insert an em dash" aria-label="Insert an em dash">—</button>
+        <span class="tb-sep"></span>
+        @* Reading a line back is how you hear that it does not scan. Free with the local voice,
+           which is why it sits in the toolbar rather than behind a confirmation. *@
+        <button class="mini" @onclick="() => OnReadAloud.InvokeAsync()"
+                title="Read the selection aloud" aria-label="Read the selection aloud">
+            <span aria-hidden="true">▶</span> Read
+        </button>
+        @if (Speaking)
+        {
+            <button class="mini" @onclick="() => OnStopReading.InvokeAsync()"
+                    title="Stop reading" aria-label="Stop reading">
+                <span aria-hidden="true">■</span> Stop
+            </button>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public IReadOnlyList<WriterService.BookListItem>? Books { get; set; }
+    [Parameter] public bool BookMenuOpen { get; set; }
+    [Parameter] public WriterService.BookListItem? Book { get; set; }
+    [Parameter] public int BeatCount { get; set; }
+    [Parameter] public bool HasBeat { get; set; }
+    [Parameter] public EditorMode Mode { get; set; }
+    [Parameter] public bool Dirty { get; set; }
+    [Parameter] public bool Saving { get; set; }
+    [Parameter] public bool Exporting { get; set; }
+    [Parameter] public string Theme { get; set; } = "dark";
+
+    [Parameter] public EventCallback OnToggleBookMenu { get; set; }
+    [Parameter] public EventCallback<WriterService.BookListItem> OnOpenBook { get; set; }
+    [Parameter] public EventCallback<EditorMode> OnSetMode { get; set; }
+    [Parameter] public EventCallback OnSave { get; set; }
+    [Parameter] public EventCallback OnExport { get; set; }
+    [Parameter] public EventCallback OnToggleTheme { get; set; }
+    [Parameter] public EventCallback OnOpenSettings { get; set; }
+    [Parameter] public EventCallback<string> OnFormat { get; set; }
+    [Parameter] public EventCallback OnInsertEmDash { get; set; }
+    [Parameter] public EventCallback OnAddEntity { get; set; }
+    [Parameter] public EventCallback OnReadAloud { get; set; }
+    [Parameter] public EventCallback OnStopReading { get; set; }
+
+    /// <summary>Shows the Stop control only while something is actually playing.</summary>
+    [Parameter] public bool Speaking { get; set; }
+
+    private string ModeClass(EditorMode m) => m == Mode ? "mode current" : "mode";
+}

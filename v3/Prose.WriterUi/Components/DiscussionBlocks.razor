@@ -1,0 +1,132 @@
+@using Markdig
+@* Renders one turn's blocks.
+
+   Assistant output is DATA here, never markup. Markdown goes through Markdig with HTML disabled,
+   and every other block is a typed component — nothing the model produces is handed to
+   MarkupString unexamined. Beat prose already round-trips HTML-escaped through ProseRenderer; a
+   conversation about the prose holds the same line. *@
+
+@foreach (var block in Blocks)
+{
+    switch (block)
+    {
+        case DiscussionBlock.Text t:
+            <div class="d-md">@RenderMarkdown(t.Markdown)</div>
+            break;
+
+        case DiscussionBlock.Quote q:
+            <button class="d-quote" @onclick="() => OnJumpToBeat.InvokeAsync(q.BeatId)"
+                    title="Open this beat">
+                <span class="d-quote-text">@q.Excerpt</span>
+                @if (q.Label is not null)
+                {
+                    <span class="d-quote-where">@q.Label</span>
+                }
+            </button>
+            break;
+
+        case DiscussionBlock.Choice c:
+            <div class="d-choice">
+                <div class="d-choice-q">@c.Question</div>
+                @foreach (var opt in c.Options)
+                {
+                    <button class="d-choice-opt" @onclick="() => OnChoose.InvokeAsync(opt.Label)">
+                        <span class="d-choice-label">@opt.Label</span>
+                        @if (opt.Detail is not null)
+                        {
+                            <span class="d-choice-detail">@opt.Detail</span>
+                        }
+                    </button>
+                }
+            </div>
+            break;
+
+        case DiscussionBlock.Confirm k:
+            @* The safety mechanism for a spoken request, so it is rendered as a thing that must be
+               answered, not a summary that can be skimmed past. Nothing acts until Confirm. *@
+            <div class="d-confirm @(Actionable ? "" : "spent")">
+                <div class="d-confirm-head">I heard</div>
+                <div class="d-confirm-said">@k.Restatement</div>
+
+                @if (k.Steps.Count > 0)
+                {
+                    <ol class="d-confirm-steps">
+                        @foreach (var step in k.Steps)
+                        {
+                            <li>@step</li>
+                        }
+                    </ol>
+                }
+
+                @if (k.Caution is not null)
+                {
+                    <div class="d-confirm-caution"><strong>Worth knowing:</strong> @k.Caution</div>
+                }
+
+                @if (Actionable)
+                {
+                    <div class="d-confirm-actions">
+                        <button class="primary" @onclick="() => OnConfirm.InvokeAsync(k)">Confirm</button>
+                        <button class="mini" @onclick="() => OnAdjust.InvokeAsync(k)">Adjust</button>
+                        <button class="mini" @onclick="() => OnCancel.InvokeAsync(k)">Cancel</button>
+                    </div>
+                }
+                else
+                {
+                    @* An old confirmation keeps its text — it is the record of what was agreed —
+                       but never its buttons. A stale Confirm that still looks pressable is an
+                       invitation to approve something twice. *@
+                    <div class="d-confirm-spent muted">Answered above.</div>
+                }
+            </div>
+            break;
+
+        case DiscussionBlock.Proposal p:
+            @* The ticket itself arrives with the request pipeline; until then, say plainly that
+               something was proposed rather than rendering a control that cannot act. *@
+            <div class="d-note">A change was proposed (@p.ProposalId).</div>
+            break;
+    }
+}
+
+@code {
+    [Parameter, EditorRequired] public IReadOnlyList<DiscussionBlock> Blocks { get; set; } = [];
+    [Parameter] public EventCallback<Guid> OnJumpToBeat { get; set; }
+    [Parameter] public EventCallback<string> OnChoose { get; set; }
+
+    /// <summary>True only for the last turn in the thread. A confirmation earlier in the
+    /// conversation has already been answered, and re-offering its buttons would let the author
+    /// approve the same request a second time, out of order.</summary>
+    [Parameter] public bool Actionable { get; set; }
+
+    [Parameter] public EventCallback<DiscussionBlock.Confirm> OnConfirm { get; set; }
+    [Parameter] public EventCallback<DiscussionBlock.Confirm> OnAdjust { get; set; }
+    [Parameter] public EventCallback<DiscussionBlock.Confirm> OnCancel { get; set; }
+
+    private static readonly Markdig.MarkdownPipeline Pipeline =
+        new Markdig.MarkdownPipelineBuilder()
+            .UseAdvancedExtensions()    // matches MarkdownService, the only other renderer here
+            .Build();
+
+    /// <summary>
+    /// Render an assistant turn's markdown, with any HTML in it neutralised first.
+    ///
+    /// <para>The angle brackets are escaped in the SOURCE rather than disabled in the pipeline:
+    /// this Markdig (1.1.2) predates <c>DisableHtml()</c>, and escaping is version-proof besides.
+    /// Markdown's own syntax is punctuation Markdig still sees — <c>*</c>, <c>_</c>, <c>#</c>,
+    /// backticks — so emphasis, lists and code spans all survive; only raw markup dies, which is
+    /// the entire point.</para>
+    ///
+    /// <para>This matters more here than it looks. Beat prose carries real
+    /// <c>&lt;entity guid="…"&gt;</c> markup, so a turn quoting a beat back to the author would
+    /// otherwise inject live tags into the panel.</para>
+    /// </summary>
+    private MarkupString RenderMarkdown(string? markdown)
+    {
+        var safe = (markdown ?? "")
+            .Replace("&", "&amp;")
+            .Replace("<", "&lt;")
+            .Replace(">", "&gt;");
+        return (MarkupString)Markdig.Markdown.ToHtml(safe, Pipeline);
+    }
+}

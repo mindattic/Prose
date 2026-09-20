@@ -107,7 +107,17 @@ public class AnthropicToolClient
                 ?? throw new InvalidOperationException("Anthropic response was null JSON");
             var content = doc["content"] as JsonArray ?? new JsonArray();
             var stopReason = doc["stop_reason"]?.GetValue<string>() ?? "";
-            return new AnthropicTurnResponse(content, stopReason);
+
+            // usage is reported per turn and was previously discarded. Without it a tool-calling
+            // turn is invisible to TokenLedger (this path never touches LlmRouter), so an
+            // interactive caller could only show the author an estimate or a zero.
+            var usage = doc["usage"] is { } u
+                ? new TokenUsage(
+                    u["input_tokens"]?.GetValue<int>() ?? 0,
+                    u["output_tokens"]?.GetValue<int>() ?? 0)
+                : null;
+
+            return new AnthropicTurnResponse(content, stopReason, usage);
         }
     }
 
@@ -133,4 +143,4 @@ public class AnthropicToolClient
 /// array — each block is either {type:"text", text:"..."} or
 /// {type:"tool_use", id, name, input:{...}}.
 /// </summary>
-public sealed record AnthropicTurnResponse(JsonArray Content, string StopReason);
+public sealed record AnthropicTurnResponse(JsonArray Content, string StopReason, TokenUsage? Usage = null);

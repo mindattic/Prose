@@ -22,6 +22,10 @@
     @* Cache-busted per deployed build — see HubAssets. This page has no JS interop of its own, but
        it shares tokens.css with the editor and a stale copy would render it in the wrong theme. *@
     <link rel="stylesheet" href="_content/Prose.WriterUi/tokens.css?v=@AssetVersion" />
+    @* writer.css before spine.css: it carries the global :focus-visible rule, the .visually-hidden
+       and .skip-link utilities, and the shared .mini/.primary/.banner chrome. Without it this page
+       had no token focus ring at all and fell back to whatever the UA drew. *@
+    <link rel="stylesheet" href="_content/Prose.WriterUi/writer.css?v=@AssetVersion" />
     <link rel="stylesheet" href="_content/Prose.WriterUi/spine.css?v=@AssetVersion" />
     <script src="_content/Prose.WriterUi/js/theme.js?v=@AssetVersion"></script>
     <HeadOutlet @rendermode="RenderMode.InteractiveServer" />

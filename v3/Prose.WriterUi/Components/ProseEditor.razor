@@ -1,0 +1,220 @@
+@* The editing surface itself, and the only component that talks to window.proseEditor.
+
+   Everything here is about one beat's text. The shell owns which beat that is, what saving means
+   and what a chip click should do; this component owns the DOM, the caret, and the interop. That
+   seam is deliberate: the Discuss panel attaches to a *selection*, which is this component's
+   business, while what a discussion then does is not. *@
+
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+@if (Mode == EditorMode.Display)
+{
+    <article class="prose" contenteditable="true" spellcheck="true"
+             role="textbox" aria-multiline="true" aria-label="Beat text"
+             @ref="editorRef" @oncontextmenu:preventDefault="false"></article>
+}
+else
+{
+    <textarea class="raw-editor" spellcheck="false" aria-label="Beat markup source"
+              @ref="rawRef" value="@Text" @oninput="OnRawInput"></textarea>
+}
+
+@code {
+    /// <summary>A chip the author clicked or right-clicked. <c>Repo</c> is a hint only — the guid
+    /// is the truth (see <c>BeatMarkup</c>).</summary>
+    public sealed record EntityChip(string Guid, string Repo, string Text);
+
+    /// <summary>What <c>proseEditor.selection</c> hands back.</summary>
+    public sealed record Selection(string Text, bool Ok);
+
+    /// <summary>
+    /// A passage the author right-clicked, with what surrounds it. All three are beat markup, as
+    /// the editor's own serializer produces it — the server strips them and works out the position,
+    /// so no character offsets cross this boundary.
+    /// </summary>
+    public sealed record SelectedSpan(string Quote, string Prefix, string Suffix);
+
+    [Parameter] public string Text { get; set; } = "";
+    [Parameter] public EventCallback<string> TextChanged { get; set; }
+    [Parameter] public EditorMode Mode { get; set; }
+
+    // Named without the On- prefix because the [JSInvokable] handlers below must keep the exact
+    // names writer.js already calls, and a property cannot share a name with a method.
+    [Parameter] public EventCallback<EntityChip> EntityContextMenu { get; set; }
+    [Parameter] public EventCallback<EntityChip> EntityClick { get; set; }
+
+    /// <summary>The author right-clicked a selection: they want to talk about that passage.</summary>
+    [Parameter] public EventCallback<SelectedSpan> DiscussRequested { get; set; }
+
+    /// <summary>The circuit lost its browser. The shell greys the status dot.</summary>
+    [Parameter] public EventCallback OnDisconnected { get; set; }
+
+    /// <summary>Interop failed. The shell shows the message and falls back to Markdown mode —
+    /// a surface that needs no JavaScript at all.</summary>
+    [Parameter] public EventCallback<string> OnJsError { get; set; }
+
+    private ElementReference editorRef;
+    private ElementReference rawRef;
+    private DotNetObjectReference<ProseEditor>? selfRef;
+
+    private bool editorWired;
+    private string renderedFor = "";
+    private EditorMode lastMode;
+
+    protected override void OnParametersSet()
+    {
+        // Switching modes destroys the contenteditable and builds a fresh one, so the listeners
+        // attached to the old element are gone with it and init has to run again.
+        //
+        // Deliberately NOT reset when Text changes. init() adds listeners to whatever element it
+        // is handed, and the <article> survives a move from one beat to the next — re-initialising
+        // there would stack a second set of listeners on the same element every time the author
+        // opened a beat. setHtml already covers a content change on its own.
+        if (lastMode != Mode)
+        {
+            lastMode = Mode;
+            editorWired = false;
+            renderedFor = "";
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (Mode != EditorMode.Display) return;
+
+        try
+        {
+            if (!editorWired)
+            {
+                selfRef ??= DotNetObjectReference.Create(this);
+                await JS.InvokeVoidAsync("proseEditor.init", editorRef, selfRef);
+                editorWired = true;
+                renderedFor = "";
+            }
+
+            // Only push HTML when the text changed for a reason other than the author typing.
+            // Rewriting innerHTML on every keystroke would throw the caret to the top of the beat.
+            if (renderedFor != Text)
+            {
+                renderedFor = Text;
+                await JS.InvokeVoidAsync("proseEditor.setHtml", editorRef, ProseRenderer.ToHtml(Text));
+            }
+        }
+        catch (JSDisconnectedException)
+        {
+            await OnDisconnected.InvokeAsync();
+        }
+        catch (JSException ex)
+        {
+            // An interop failure escaping OnAfterRenderAsync tears down the whole circuit: the page
+            // stops responding entirely, with nothing on screen to say why. A broken editor surface
+            // is bad; a dead application is worse.
+            editorWired = false;
+            await OnJsError.InvokeAsync(ex.Message);
+        }
+    }
+
+    // ── Called from JavaScript ─────────────────────────────────────────────
+
+    /// <summary>The editor's DOM, serialized back to beat markup. Fired on every input.</summary>
+    [JSInvokable]
+    public Task OnEditorInput(string text)
+    {
+        // Recorded before the parent is told, so the round trip back down as a parameter does not
+        // look like an outside change and push HTML over the author's caret.
+        renderedFor = text;
+        return TextChanged.InvokeAsync(text);
+    }
+
+    [JSInvokable]
+    public Task OnEntityContextMenu(string guid, string repo, string text)
+        => EntityContextMenu.InvokeAsync(new EntityChip(guid, repo, text));
+
+    [JSInvokable]
+    public Task OnEntityClick(string guid, string repo)
+        => EntityClick.InvokeAsync(new EntityChip(guid, repo, ""));
+
+    [JSInvokable]
+    public Task OnDiscussRequested(string quote, string prefix, string suffix)
+        => DiscussRequested.InvokeAsync(new SelectedSpan(quote, prefix, suffix));
+
+    // ── Called by the shell (toolbar, entity dialog) ───────────────────────
+
+    public async Task FormatAsync(string command)
+    {
+        if (Mode != EditorMode.Display)
+        {
+            var (before, after) = command switch
+            {
+                "bold"          => ("**", "**"),
+                "italic"        => ("*", "*"),
+                "underline"     => ("<u>", "</u>"),
+                "strikeThrough" => ("~~", "~~"),
+                _               => ("", "")
+            };
+            if (before == "") return;
+            await JsVoidAsync("proseEditor.wrapTextarea", rawRef, before, after);
+            return;
+        }
+        await JsVoidAsync("proseEditor.format", command);
+    }
+
+    public async Task InsertEmDashAsync()
+    {
+        if (Mode == EditorMode.Display) await JsVoidAsync("proseEditor.insert", "—");
+        else await JsVoidAsync("proseEditor.wrapTextarea", rawRef, "—", "");
+    }
+
+    public Task<Selection?> GetSelectionAsync() => JsAsync<Selection>("proseEditor.selection");
+
+    public Task WrapSelectionAsync(string guid, string repo)
+        => JsAsync<bool>("proseEditor.wrapSelection", guid, repo);
+
+    public Task ApplyEntityAsync(string guid, string repo, string text)
+        => JsAsync<bool>("proseEditor.applyEntity", guid, repo, text);
+
+    public Task RemoveEntityAsync() => JsAsync<bool>("proseEditor.removeEntity");
+
+    // ── Interop plumbing ───────────────────────────────────────────────────
+
+    private Task OnRawInput(ChangeEventArgs e)
+    {
+        var text = e.Value?.ToString() ?? string.Empty;
+        renderedFor = text;
+        return TextChanged.InvokeAsync(text);
+    }
+
+    /// <summary>
+    /// Every call into the editor's JavaScript goes through here. An unhandled
+    /// <see cref="JSException"/> inside a Blazor Server event handler tears down the circuit and
+    /// the page simply stops responding — no error, no clue. A toolbar button that does nothing is
+    /// a far better failure than an application that dies.
+    /// </summary>
+    private async Task<T?> JsAsync<T>(string identifier, params object?[] args)
+    {
+        try
+        {
+            return await JS.InvokeAsync<T>(identifier, args);
+        }
+        catch (JSDisconnectedException) { await OnDisconnected.InvokeAsync(); }
+        catch (JSException ex) { await OnJsError.InvokeAsync(ex.Message); }
+        return default;
+    }
+
+    private async Task JsVoidAsync(string identifier, params object?[] args)
+    {
+        try
+        {
+            await JS.InvokeVoidAsync(identifier, args);
+        }
+        catch (JSDisconnectedException) { await OnDisconnected.InvokeAsync(); }
+        catch (JSException ex) { await OnJsError.InvokeAsync(ex.Message); }
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        selfRef?.Dispose();
+        return ValueTask.CompletedTask;
+    }
+}

@@ -1,4 +1,4 @@
-using System.Net.Http.Headers;
+﻿using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json.Nodes;
 using Microsoft.Extensions.Logging;
@@ -27,6 +27,9 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
     private static readonly TimeSpan MaxDelay = TimeSpan.FromSeconds(60);
 
     public string Name => "OpenAI";
+
+    /// <inheritdoc />
+    public string Model => model;
 
     public OpenAiToolCallingLlm(HttpClient http, ILogger<OpenAiToolCallingLlm> log)
     {
@@ -119,7 +122,16 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
             var doc = JsonNode.Parse(raw) ?? throw new InvalidOperationException("OpenAI response was null JSON");
             var message = doc["choices"]?[0]?["message"]
                 ?? throw new InvalidOperationException("OpenAI response had no choices[0].message");
-            return new ToolTurnResult(FromOpenAiMessage(message));
+
+            // Same reasoning as the Anthropic client: this path never reaches LlmRouter, so the
+            // reported usage is the only way the token ledger learns what the turn cost.
+            var usage = doc["usage"] is { } u
+                ? new TokenUsage(
+                    u["prompt_tokens"]?.GetValue<int>() ?? 0,
+                    u["completion_tokens"]?.GetValue<int>() ?? 0)
+                : null;
+
+            return new ToolTurnResult(FromOpenAiMessage(message), usage);
         }
     }
 

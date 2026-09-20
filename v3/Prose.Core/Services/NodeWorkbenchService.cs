@@ -2441,35 +2441,95 @@ public class NodeWorkbenchService
 
     private sealed class BeatVersionCountRow { public Guid Id { get; set; } public int Cnt { get; set; } }
 
+    // Un-stubbed 2026-09-19. All three returned their "no history" default unconditionally, under
+    // a comment asserting that Beats/Nodes/BeatNodes were no longer system-versioned. That
+    // contradicted both ProseDbContext.SystemVersionedTables (which lists all three) and the
+    // section header eight lines above this one.
+    //
+    // The cost was not only the retired ◀ ▶ cycler: VoiceHarvestService's first step — "mine
+    // generated→final edits from the temporal beat history" — found every count missing and
+    // `continue`d past every beat, so voice harvesting has been learning from an empty edit set
+    // on every run, silently.
+    //
+    // EF does not surface FOR SYSTEM_TIME here (versioning is applied by raw DDL in
+    // ProseDbContext, not by IsTemporal()), so these read raw SQL — same shape as
+    // RestoreBeatTextCli.
+
     /// <summary>Count of stored versions (current + history) for every beat in
     /// a node, keyed by beat id. Drives the cycler arrows' disabled state in
     /// one grouped query. A beat never edited since versioning was enabled has
     /// count 1 (just the current row → both arrows dead).</summary>
-    // Retired: Beats/Nodes/BeatNodes are no longer system-versioned (see
-    // ProseDbContext.SystemVersionedTables) — there is no history for the
-    // cycler to read anymore. All three methods below now return their
-    // "no history" default unconditionally rather than querying FOR
-    // SYSTEM_TIME, which would throw against a non-temporal table.
-    public Task<Dictionary<Guid, int>> GetBeatVersionCountsAsync(Guid nodeId, CancellationToken ct = default) =>
-        Task.FromResult(new Dictionary<Guid, int>());
+    /// <remarks>SS-A43: resolves beats through <c>BeatNodes</c> by <paramref name="nodeId"/>
+    /// directly, which finds nothing for a book-mode story whose beats hang off ChapterNode
+    /// children. Use <see cref="GetBeatVersionCountsByIdsAsync"/> with the ids from
+    /// <see cref="GetOrderedBeatsAsync"/> for those.</remarks>
+    public async Task<Dictionary<Guid, int>> GetBeatVersionCountsAsync(Guid nodeId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var ids = await db.BeatNodes.AsNoTracking()
+            .Where(bn => bn.NodeId == nodeId)
+            .Select(bn => bn.BeatId)
+            .ToListAsync(ct);
+        return await GetBeatVersionCountsByIdsAsync(ids, ct);
+    }
 
     /// <summary>Like <see cref="GetBeatVersionCountsAsync"/> but scoped to an explicit set of beat IDs.
     /// Use this for book-mode nodes where beats live on ChapterNode children (SS-A43).</summary>
-    public Task<Dictionary<Guid, int>> GetBeatVersionCountsByIdsAsync(IEnumerable<Guid> beatIds, CancellationToken ct = default) =>
-        Task.FromResult(new Dictionary<Guid, int>());
+    public async Task<Dictionary<Guid, int>> GetBeatVersionCountsByIdsAsync(IEnumerable<Guid> beatIds, CancellationToken ct = default)
+    {
+        var ids = beatIds.Distinct().ToList();
+        if (ids.Count == 0) return [];
 
-    /// <summary>The beat's prose at a newest-first version index. Always null now
-    /// that Beats carries no history — kept as a stub so the writer's ◀ ▶ cycler
-    /// UI doesn't need its own null-check for a retired feature.</summary>
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // Temporal history is a SQL Server feature; the SQLite test fixtures have none, and
+        // FOR SYSTEM_TIME would be a syntax error there. Empty is the documented contract.
+        if (!db.Database.IsSqlServer()) return [];
+
+        // The id list is inlined rather than parameterised. Safe by construction here and nowhere
+        // else: these are Guid values, and Guid.ToString("D") can only ever produce hex digits and
+        // hyphens, so no value can close the quote. A parameterised IN list would need one
+        // placeholder per beat and this is called with a whole book's worth.
+        var inList = string.Join("','", ids.Select(i => i.ToString("D")));
+
+        var rows = await db.Database.SqlQueryRaw<BeatVersionCountRow>(
+            $"""
+             SELECT [Id], COUNT(*) AS [Cnt]
+             FROM [dbo].[Beats] FOR SYSTEM_TIME ALL
+             WHERE [Id] IN ('{inList}')
+             GROUP BY [Id]
+             """).ToListAsync(ct);
+
+        return rows.ToDictionary(r => r.Id, r => r.Cnt);
+    }
+
+    /// <summary>The beat's prose at a newest-first version index — 0 is the live row, 1 the
+    /// revision before it, and so on.</summary>
     public async Task<string?> GetBeatVersionTextAsync(Guid beatId, int index, CancellationToken ct = default)
     {
         var v = await GetBeatVersionAsync(beatId, index, ct);
         return v?.Text;
     }
 
-    /// <summary>Always null — see <see cref="GetBeatVersionTextAsync"/>.</summary>
-    public Task<BeatVersion?> GetBeatVersionAsync(Guid beatId, int index, CancellationToken ct = default) =>
-        Task.FromResult<BeatVersion?>(null);
+    /// <summary>One revision of a beat, newest-first by <paramref name="index"/>. Null when the
+    /// beat has fewer revisions than that.</summary>
+    public async Task<BeatVersion?> GetBeatVersionAsync(Guid beatId, int index, CancellationToken ct = default)
+    {
+        if (index < 0) return null;
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        if (!db.Database.IsSqlServer()) return null;
+
+        var rows = await db.Database.SqlQueryRaw<BeatVersionRow>(
+            """
+            SELECT [Text], [SysStart] AS ValidFrom
+            FROM [dbo].[Beats] FOR SYSTEM_TIME ALL
+            WHERE [Id] = {0}
+            ORDER BY [SysStart] DESC
+            """, beatId).ToListAsync(ct);
+
+        return index < rows.Count ? new BeatVersion(rows[index].Text ?? "", rows[index].ValidFrom) : null;
+    }
 
     public sealed record BeatVersion(string Text, DateTime ValidFrom);
     private sealed class BeatVersionRow { public string? Text { get; set; } public DateTime ValidFrom { get; set; } }

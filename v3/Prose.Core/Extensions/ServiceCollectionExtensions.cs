@@ -1237,6 +1237,27 @@ public static class ServiceCollectionExtensions
         // The bible §14 plant/payoff tables → authored, locked ledger rows (BCODA runbook step 3).
         services.AddSingleton<Prose.Core.Services.Obligations.BibleLedgerImporter>();
         services.AddSingleton<BookStateLedgerService>();
+
+        // ── Discussions ─────────────────────────────────────────────────────
+        // Author/assistant conversations anchored to a span. Nothing here writes prose: a thread
+        // that reaches an agreed change raises a ChangeProposal for the author to approve.
+        // Adding a discussable surface = one IDiscussTarget + one line here, never a migration,
+        // because DiscussionThread.TargetKind is a string.
+        services.AddSingleton<Prose.Core.Services.Discussion.IDiscussTarget,
+                              Prose.Core.Services.Discussion.BeatDiscussTarget>();
+        services.AddSingleton<Prose.Core.Services.Discussion.DiscussTargetRegistry>();
+        services.AddSingleton<Prose.Core.Services.Discussion.DiscussionService>();
+        services.AddSingleton<Prose.Core.Services.Discussion.DiscussionContextBuilder>();
+        services.AddSingleton<Prose.Core.Services.Discussion.DiscussionChatService>();
+        // Speaking a passage back. Local voice first — read-aloud is used constantly, and a
+        // metered one gets rationed.
+        services.AddSingleton<Prose.Core.Services.Discussion.ReadAloudService>();
+        // Hearing the author. Hosted rather than local, unlike read-aloud: transcription happens
+        // once per utterance, and latency matters more here than the fraction of a cent does.
+        services.AddHttpClient<Prose.Core.Services.Discussion.SpeechService>(
+            c => c.Timeout = TimeSpan.FromMinutes(2));
+        services.AddSingleton<Prose.Core.Services.Discussion.SpeechVocabularyService>();
+
         // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's
         // post-write extraction into one call — RFC 0009 §9.4 "item 1".
         services.AddSingleton<BeatExtractionService>();

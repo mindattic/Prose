@@ -38,12 +38,13 @@
             </button>
         }
         <a class="mini" href="/writer" title="Back to the editor">Writer</a>
-        <button class="mini" @onclick="ToggleThemeAsync" title="Light / dark">@(theme == "light" ? "☾" : "☀")</button>
+        <button class="mini" @onclick="ToggleThemeAsync" title="Light / dark"
+                aria-label="Dark theme" aria-pressed="@(theme == "dark")">@(theme == "light" ? "☾" : "☀")</button>
     </header>
 
     @if (error is not null)
     {
-        <div class="banner error">@error</div>
+        <div class="banner error" role="alert"><strong>Error:</strong> @error</div>
     }
 
     @* ── Repository index ──────────────────────────────────────────────────── *@
@@ -84,7 +85,7 @@
         <section class="pane">
             <h1>@Humanise(Type)</h1>
             <div class="searchbar">
-                <input placeholder="Filter by name or description…" value="@search"
+                <input aria-label="Filter by name or description" placeholder="Filter by name or description…" value="@search"
                        @oninput="OnSearchInput" @onkeydown="OnSearchKey" />
                 <span class="muted">@total.ToString("N0") total</span>
             </div>
@@ -194,7 +195,7 @@
 
                 @if (saveNote is not null)
                 {
-                    <div class="banner ok">@saveNote</div>
+                    <div class="banner ok" role="status">@saveNote</div>
                 }
 
                 <h2>Record</h2>
@@ -279,6 +280,9 @@
                     <button class="mini" disabled="@(scanning || entity.MentionCount == 0)" @onclick="ScanAsync">
                         @(scanning ? $"Checking… {scanDone}/{scanTotal}" : "Run check")
                     </button>
+                    <span class="visually-hidden" role="status">
+                        @(scanning ? $"Checking beat {scanDone} of {scanTotal}." : "")
+                    </span>
                 }
                 else
                 {
@@ -362,12 +366,13 @@
                             else
                             {
                                 <table class="diff">
-                                    <thead><tr><th>Field</th><th>Then</th><th>Now</th></tr></thead>
+                                    <thead><tr><th scope="col">Change</th><th scope="col">Field</th><th scope="col">Then</th><th scope="col">Now</th></tr></thead>
                                     <tbody>
                                         @foreach (var d in diff)
                                         {
                                             <tr class="@d.Kind.ToString().ToLowerInvariant()">
-                                                <th>@d.Field</th>
+                                                <td class="diff-kind">@d.Kind</td>
+                                                <th scope="row">@d.Field</th>
                                                 <td>@Excerpt(d.Before, 300)</td>
                                                 <td>@Excerpt(d.After, 300)</td>
                                             </tr>

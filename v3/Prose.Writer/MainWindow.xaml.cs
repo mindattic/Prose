@@ -100,11 +100,27 @@ public partial class MainWindow : Window
             await Web.EnsureCoreWebView2Async(env);
 
             // This window is an app, not a browser: no context menu of page actions, no
-            // Ctrl+F browser find competing with the editor's own, no zoom-on-scroll.
+            // Ctrl+F browser find competing with the editor's own.
             Web.CoreWebView2.Settings.AreDefaultContextMenusEnabled = false;
             Web.CoreWebView2.Settings.AreBrowserAcceleratorKeysEnabled = false;
-            Web.CoreWebView2.Settings.IsZoomControlEnabled = false;
             Web.CoreWebView2.Settings.IsStatusBarEnabled = false;
+
+            // Zoom stays ENABLED (WCAG 1.4.4, Resize Text). Every font size in this UI is an
+            // absolute px value, so the browser's minimum-font-size setting cannot move it
+            // either — with IsZoomControlEnabled = false, as it was, the 13px chrome and 11px
+            // status bar were literally unresizable and the criterion failed outright.
+            //
+            // AreBrowserAcceleratorKeysEnabled = false still suppresses Ctrl+plus/minus/0, so
+            // Ctrl+scroll is the remaining gesture. An in-app text-size control is the proper
+            // fix and is tracked separately.
+            Web.CoreWebView2.Settings.IsZoomControlEnabled = true;
+
+            // The microphone. WebView2 has no permission UI of its own in a hosted app: with
+            // PermissionRequested unhandled it applies its default, which for a WPF host is to
+            // DENY, silently — getUserMedia rejects and the page cannot tell a refusal from a
+            // machine with no microphone. Nothing in the editor could fix that from the browser
+            // side, which is why the voice loop's first blocker lives in the WPF shell.
+            Web.CoreWebView2.PermissionRequested += OnPermissionRequested;
 
             Web.CoreWebView2.NavigationCompleted += (_, args) =>
             {
@@ -137,6 +153,34 @@ public partial class MainWindow : Window
                        offerConnect: true);
             return false;
         }
+    }
+
+    /// <summary>
+    /// Grant the microphone to the Hub's own page, and nothing else to anyone.
+    ///
+    /// <para>Allow-list rather than allow-all. This window has no address bar and only ever
+    /// navigates to the local Hub, but a page it loads can still frame or redirect elsewhere, and
+    /// a blanket Allow would hand the camera, the clipboard and geolocation to whatever ends up
+    /// in the frame. The microphone is the only thing the editor asks for.</para>
+    ///
+    /// <para><c>Handled = true</c> is what suppresses WebView2's own prompt and makes
+    /// <see cref="CoreWebView2PermissionRequestedEventArgs.State"/> the answer; leaving it false
+    /// shows the default dialog on every recording, which is exactly the friction a press-and-hold
+    /// loop cannot carry.</para>
+    /// </summary>
+    private static void OnPermissionRequested(object? sender, CoreWebView2PermissionRequestedEventArgs args)
+    {
+        var fromHub =
+            Uri.TryCreate(args.Uri, UriKind.Absolute, out var origin)
+            && Uri.TryCreate(HubProcess.BaseUrl, UriKind.Absolute, out var hub)
+            && origin.IsLoopback
+            && origin.Port == hub.Port;
+
+        args.State = fromHub && args.PermissionKind == CoreWebView2PermissionKind.Microphone
+            ? CoreWebView2PermissionState.Allow
+            : CoreWebView2PermissionState.Deny;
+
+        args.Handled = true;
     }
 
     /// <summary>Put the splash back in front of the editor with a message, and decide whether the

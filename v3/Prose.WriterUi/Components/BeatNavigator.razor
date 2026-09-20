@@ -1,0 +1,39 @@
+@* The beat list down the left. Purely presentational: it renders the spine it is handed and
+   reports which row was clicked. It holds no state of its own, so the shell remains the single
+   place that decides what "open a beat" means (saving the outgoing one, running its analysis). *@
+
+<nav class="spine" aria-label="Beats">
+    @if (Spine is null)
+    {
+        <div class="empty">Open a book to begin.</div>
+    }
+    else
+    {
+        <ul>
+            @foreach (var item in Spine)
+            {
+                <li>
+                    <button class="@(item.BeatId == CurrentBeatId ? "spine-row current" : "spine-row")"
+                            aria-current="@(item.BeatId == CurrentBeatId ? "true" : null)"
+                            @onclick="() => OnSelect.InvokeAsync(item.BeatId)">
+                        @item.Label
+                        @if (item.BeatId == CurrentBeatId)
+                        {
+                            <span class="visually-hidden"> (open)</span>
+                        }
+                    </button>
+                </li>
+            }
+        </ul>
+    }
+</nav>
+
+@code {
+    /// <summary>Every beat in manuscript order, or null when no book is open.</summary>
+    [Parameter] public IReadOnlyList<WriterService.SpineItem>? Spine { get; set; }
+
+    /// <summary>The beat currently in the editor, so its row can be marked.</summary>
+    [Parameter] public Guid CurrentBeatId { get; set; }
+
+    [Parameter] public EventCallback<Guid> OnSelect { get; set; }
+}

@@ -1,105 +1,54 @@
 @* The render mode is set by the host page, not here — this library intentionally has no
-   FrameworkReference to the ASP.NET Core server assemblies, matching Prose.ObserverUi. *@
+   FrameworkReference to the ASP.NET Core server assemblies, matching Prose.ObserverUi.
+
+   This component is composition and state: which book, which beat, what saving means, and what a
+   chip click should do. The surfaces themselves live in MenuBar / BeatNavigator / ProseEditor /
+   EntityLinkModal, so that adding a pane or a panel does not mean growing one file without end. *@
 @inject WriterService Writer
 @inject WikiService Wiki
+@inject ReadAloudUiService ReadAloud
 @inject IJSRuntime JS
 @implements IAsyncDisposable
 
 <div class="writer">
 
-    <header class="menubar">
-        <div class="menu">
-            <button class="menu-title" @onclick="ToggleBookMenu">Book</button>
-            @if (bookMenuOpen)
-            {
-                <div class="menu-drop" role="menu">
-                    @if (books is null)
-                    {
-                        <div class="menu-note">Loading…</div>
-                    }
-                    else
-                    {
-                        @foreach (var b in books)
-                        {
-                            <button role="menuitem" @onclick="() => OpenBookAsync(b)">
-                                @b.Title <span class="muted">@b.NodeCode</span>
-                            </button>
-                        }
-                    }
-                </div>
-            }
-        </div>
+    <a class="skip-link" href="#beat-pane">Skip to the beat</a>
 
-        @if (book is not null)
-        {
-            <span class="book-title">@book.Title</span>
-            <span class="muted">@(spine?.Count ?? 0) beats</span>
-        }
+    <h1 class="visually-hidden">
+        @(book is null ? "Prose Writer" : $"{book.Title} — Prose Writer")
+    </h1>
 
-        <div class="spacer"></div>
-
-        @if (beat is not null)
-        {
-            <div class="modes" role="group" aria-label="View mode">
-                <button class="@ModeClass(Mode.Read)" @onclick="() => SetModeAsync(Mode.Read)">Display</button>
-                <button class="@ModeClass(Mode.Raw)" @onclick="() => SetModeAsync(Mode.Raw)">Markdown</button>
-            </div>
-            <button class="primary" disabled="@(!Dirty || saving)" @onclick="() => SaveAsync(false)">
-                @(saving ? "Saving…" : Dirty ? "Save" : "Saved")
-            </button>
-        }
-
-        @if (book is not null)
-        {
-            <button class="mini" disabled="@(exporting || saving)" @onclick="ExportAsync"
-                    title="Render this book to the publish folder — docx, epub and pdf">
-                @(exporting ? "Exporting…" : "Export")
-            </button>
-        }
-
-        <button class="mini" @onclick="ToggleThemeAsync" title="Light / dark">@(theme == "light" ? "☾" : "☀")</button>
-    </header>
-
-    @if (beat is not null)
-    {
-        <div class="toolbar" role="toolbar" aria-label="Formatting">
-            <button class="mini" @onclick="AddEntityAsync" title="Link the selected text to an entity">
-                ＠ Entity
-            </button>
-            <span class="tb-sep"></span>
-            <button class="mini bold" @onclick='() => FormatAsync("bold")' title="Bold (Ctrl+B) — **text**">B</button>
-            <button class="mini ital" @onclick='() => FormatAsync("italic")' title="Italic (Ctrl+I) — *text*">I</button>
-            <button class="mini undl" @onclick='() => FormatAsync("underline")' title="Underline (Ctrl+U)">U</button>
-            <button class="mini strk" @onclick='() => FormatAsync("strikeThrough")' title="Strikethrough — ~~text~~">S</button>
-            <span class="tb-sep"></span>
-            <button class="mini" @onclick="InsertEmDashAsync" title="Insert an em dash">—</button>
-        </div>
-    }
+    <MenuBar Books="books"
+             BookMenuOpen="bookMenuOpen"
+             Book="book"
+             BeatCount="@(spine?.Count ?? 0)"
+             HasBeat="@(beat is not null)"
+             Mode="mode"
+             Dirty="Dirty"
+             Saving="saving"
+             Exporting="exporting"
+             Theme="theme"
+             OnToggleBookMenu="ToggleBookMenu"
+             OnOpenBook="OpenBookAsync"
+             OnSetMode="SetMode"
+             OnSave="() => SaveAsync(false)"
+             OnExport="ExportAsync"
+             OnToggleTheme="ToggleThemeAsync"
+             OnOpenSettings="() => settingsOpen = true"
+             OnFormat="FormatAsync"
+             OnInsertEmDash="InsertEmDashAsync"
+             OnAddEntity="AddEntityAsync"
+             OnReadAloud="ReadAloudAsync"
+             OnStopReading="StopReadingAsync"
+             Speaking="speaking" />
 
     <div class="body">
 
-        <nav class="spine" aria-label="Beats">
-            @if (spine is null)
-            {
-                <div class="empty">Open a book to begin.</div>
-            }
-            else
-            {
-                <ul>
-                    @foreach (var item in spine)
-                    {
-                        <li>
-                            <button class="@(item.BeatId == beatId ? "spine-row current" : "spine-row")"
-                                    @onclick="() => OpenBeatAsync(item.BeatId)">
-                                @item.Label
-                            </button>
-                        </li>
-                    }
-                </ul>
-            }
-        </nav>
+        <BeatNavigator Spine="spine" CurrentBeatId="beatId" OnSelect="OpenBeatAsync" />
 
-        <main class="pane">
+        @* tabindex="-1" so the skip link can actually move focus here; without it the browser
+           scrolls but focus stays in the menubar and the next Tab returns to Export. *@
+        <main class="pane" id="beat-pane" tabindex="-1">
             @if (beat is null)
             {
                 <div class="empty">No beat selected.</div>
@@ -108,7 +57,7 @@
             {
                 @if (conflict is not null)
                 {
-                    <div class="banner danger">
+                    <div class="banner danger" role="alert">
                         <strong>This beat changed underneath you.</strong>
                         Something else wrote to it while you had it open — another session, a CLI
                         command, or a tool.
@@ -119,7 +68,7 @@
 
                 @if (problems.Count > 0)
                 {
-                    <div class="banner danger">
+                    <div class="banner danger" role="alert">
                         <strong>Not saved — the markup is malformed.</strong>
                         <ul>
                             @foreach (var p in problems)
@@ -132,7 +81,7 @@
 
                 @if (jsError is not null)
                 {
-                    <div class="banner danger">
+                    <div class="banner danger" role="alert">
                         <strong>The Display editor could not start — switched to Markdown mode.</strong>
                         <div class="muted">@jsError</div>
                         Your text is safe and still editable here. This is usually a stale cached
@@ -142,12 +91,12 @@
 
                 @if (tagNote is not null)
                 {
-                    <div class="banner info">@tagNote</div>
+                    <div class="banner info" role="status">@tagNote</div>
                 }
 
                 @if (exportNote is not null)
                 {
-                    <div class="banner info">
+                    <div class="banner info" role="status">
                         @exportNote
                         @if (exportDir is not null)
                         {
@@ -156,27 +105,35 @@
                     </div>
                 }
 
-                @if (mode == Mode.Read)
-                {
-                    <article class="prose" contenteditable="true" spellcheck="true"
-                             @ref="editorRef" @oncontextmenu:preventDefault="false"></article>
-                }
-                else
-                {
-                    <textarea class="raw-editor" spellcheck="false" @ref="rawRef"
-                              @bind="draft" @bind:event="oninput"></textarea>
-                }
+                <ProseEditor @ref="editor"
+                             Text="draft"
+                             TextChanged="OnDraftChanged"
+                             Mode="mode"
+                             EntityContextMenu="OnEntityChipContextMenu"
+                             EntityClick="OnEntityChipClick"
+                             DiscussRequested="OnDiscussRequested"
+                             OnDisconnected="OnEditorDisconnected"
+                             OnJsError="OnEditorJsError" />
             }
         </main>
+
+        @if (book is not null && beat is not null)
+        {
+            <DiscussPanel @ref="discussPanel"
+                          BookNodeId="book.Id"
+                          BeatId="beat.Id"
+                          OnJumpToBeat="OpenBeatAsync"
+                          OnOpenSettings="() => settingsOpen = true" />
+        }
     </div>
 
     <footer class="statusbar">
-        <span class="dot @(connected ? "ok" : "bad")"></span>
+        <span class="dot @(connected ? "ok" : "bad")" aria-hidden="true"></span>
         <span>PID: @hubProcessId</span>
         <span class="sep">·</span>
         <span>@(connected ? "Connected" : "Disconnected")</span>
         <span class="sep">·</span>
-        <span>@activity</span>
+        <span role="status">@activity</span>
         @if (beat is not null)
         {
             <div class="spacer"></div>
@@ -192,91 +149,26 @@
     </footer>
 </div>
 
+@if (settingsOpen)
+{
+    <SettingsPanel OnClose="() => settingsOpen = false" />
+}
+
 @if (entityModal is not null)
 {
-    <div class="scrim" @onclick="CloseEntityModal"></div>
-    <div class="modal" role="dialog" aria-modal="true" aria-label="Entity link">
-        <h2>@(entityModal.IsNew ? "Link text to an entity" : "Entity link")</h2>
-
-        <label class="field">
-            <span>Text</span>
-            <input type="text" @bind="entityModal.Text" @bind:event="oninput"
-                   readonly="@entityModal.IsNew" />
-        </label>
-
-        <label class="field">
-            <span>Repo</span>
-            <input type="text" value="@entityModal.Repo" readonly />
-        </label>
-
-        <label class="field">
-            <span>GUID</span>
-            <input type="text" class="mono" value="@entityModal.Guid" readonly />
-        </label>
-
-        <label class="field">
-            <span>Search</span>
-            <input type="text" placeholder="Name or alias…" @bind="entitySearch"
-                   @bind:event="oninput" @onkeyup="SearchEntitiesAsync" />
-        </label>
-
-        @if (searching)
-        {
-            <div class="menu-note">Searching…</div>
-        }
-        else if (matches is not null)
-        {
-            @if (matches.Count == 0)
-            {
-                <div class="menu-note">No entity matches that.</div>
-            }
-            else
-            {
-                <ul class="matches">
-                    @foreach (var m in matches)
-                    {
-                        <li>
-                            <button class="@(m.Id.ToString() == entityModal.Guid ? "match current" : "match")"
-                                    @onclick="() => ChooseEntity(m)">
-                                <span class="match-name">@m.Name</span>
-                                <span class="muted">@m.EntityType</span>
-                                @if (m.MatchedAlias is not null)
-                                {
-                                    <span class="muted">alias: @m.MatchedAlias</span>
-                                }
-                            </button>
-                        </li>
-                    }
-                </ul>
-            }
-        }
-
-        <div class="modal-actions">
-            @if (!entityModal.IsNew)
-            {
-                <button class="mini danger-btn" @onclick="RemoveEntityAsync">Remove link</button>
-            }
-            <div class="spacer"></div>
-            <button class="mini" @onclick="CloseEntityModal">Cancel</button>
-            <button class="primary" disabled="@(!entityModal.CanApply)" @onclick="ApplyEntityAsync">
-                @(entityModal.IsNew ? "Link" : "Apply")
-            </button>
-        </div>
-    </div>
+    <EntityLinkModal Model="entityModal"
+                     Search="entitySearch"
+                     SearchChanged="v => entitySearch = v"
+                     Searching="searching"
+                     Matches="matches"
+                     OnSearch="SearchEntitiesAsync"
+                     OnChoose="ChooseEntity"
+                     OnApply="ApplyEntityAsync"
+                     OnRemove="RemoveEntityAsync"
+                     OnCancel="CloseEntityModal" />
 }
 
 @code {
-    private enum Mode { Read, Raw }
-
-    private sealed class EntityModalState
-    {
-        public bool IsNew { get; init; }
-        public string Guid { get; set; } = "";
-        public string Repo { get; set; } = "";
-        public string Text { get; set; } = "";
-        public bool CanApply => System.Guid.TryParse(Guid, out var g) && g != System.Guid.Empty;
-    }
-
     private List<WriterService.BookListItem>? books;
     private WriterService.BookListItem? book;
     private List<WriterService.SpineItem>? spine;
@@ -284,13 +176,13 @@
     private Guid beatId;
     private WriterService.OpenBeat? beat;
     private string draft = "";
-    private Mode mode = Mode.Read;
+    private EditorMode mode = EditorMode.Display;
 
-    private ElementReference editorRef;
-    private ElementReference rawRef;
-    private DotNetObjectReference<WriterShell>? selfRef;
-    private bool editorWired;
-    private string renderedFor = "";
+    private ProseEditor? editor;
+    private DiscussPanel? discussPanel;
+    private bool settingsOpen;
+    private bool speaking;
+    private System.Threading.Timer? autosave;
 
     private bool bookMenuOpen;
     private bool saving;
@@ -304,7 +196,7 @@
     private WriterService.OpenBeat? conflict;
     private IReadOnlyList<Prose.Core.Services.BeatMarkup.MarkupProblem> problems = [];
 
-    private EntityModalState? entityModal;
+    private EntityLinkModal.State? entityModal;
     private string entitySearch = "";
     private bool searching;
     private List<Prose.Core.Services.EntityLookupMatch>? matches;
@@ -321,66 +213,65 @@
             Prose.Core.Services.BeatMarkup.StripEntityTags(draft))
             .Split([' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
 
-    private string ModeClass(Mode m) => m == mode ? "mode current" : "mode";
+    /// <summary>
+    /// How often unsaved prose is written back. Costs nothing: an autosave passes
+    /// <c>deferAnalysis: true</c>, which is exactly what that parameter was built for — the
+    /// paid logic sweep still waits until the author leaves the beat.
+    /// </summary>
+    private static readonly TimeSpan AutosaveInterval = TimeSpan.FromSeconds(20);
+
+    protected override void OnInitialized()
+    {
+        // Before this existed, everything since the last manual Save was lost on Alt+F4, on the
+        // window X, and whenever the Hub health check flipped the splash back over the editor.
+        autosave = new System.Threading.Timer(
+            _ => _ = InvokeAsync(AutosaveTickAsync), null, AutosaveInterval, AutosaveInterval);
+    }
+
+    private async Task AutosaveTickAsync()
+    {
+        if (!Dirty || saving || book is null || beat is null) return;
+        await SaveAsync(finishing: false, quiet: true);
+        StateHasChanged();
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender)
-        {
-            try { theme = await JS.InvokeAsync<string>("proseWriter.getTheme"); StateHasChanged(); }
-            catch (JSDisconnectedException) { connected = false; return; }
-            catch (JSException) { /* theme is a preference; never worth failing a render over */ }
-        }
-
-        if (beat is null || mode != Mode.Read) { editorWired = false; return; }
-
-        try
-        {
-            if (!editorWired)
-            {
-                selfRef ??= DotNetObjectReference.Create(this);
-                await JS.InvokeVoidAsync("proseEditor.init", editorRef, selfRef);
-                editorWired = true;
-                renderedFor = "";
-            }
-
-            // Only push HTML when the text changed for a reason other than the author typing.
-            // Rewriting innerHTML on every keystroke would throw the caret to the top of the beat.
-            if (renderedFor != draft)
-            {
-                renderedFor = draft;
-                await JS.InvokeVoidAsync("proseEditor.setHtml", editorRef, ProseRenderer.ToHtml(draft));
-            }
-        }
+        if (!firstRender) return;
+        try { theme = await JS.InvokeAsync<string>("proseWriter.getTheme"); StateHasChanged(); }
         catch (JSDisconnectedException) { connected = false; }
-        catch (JSException ex)
+        catch (JSException) { /* theme is a preference; never worth failing a render over */ }
+    }
+
+    // ── Editor callbacks ───────────────────────────────────────────────────
+
+    private void OnDraftChanged(string text) => draft = text;
+
+    private void OnEditorDisconnected() => connected = false;
+
+    private void OnEditorJsError(string message)
+    {
+        // A broken editor surface is bad; a dead application is worse. Markdown mode needs no
+        // JavaScript at all, so it is always a safe place to land.
+        jsError = message;
+        mode = EditorMode.Markdown;
+    }
+
+    /// <summary>
+    /// The author right-clicked a selection. Unsaved edits are not a problem here — the anchor is
+    /// located in the beat as STORED, and a passage the author has just typed and not yet saved
+    /// simply will not be found, which the panel reports rather than guessing at.
+    /// </summary>
+    private void OnDiscussRequested(ProseEditor.SelectedSpan span)
+        => discussPanel?.BeginFor(span);
+
+    private async Task OnEntityChipContextMenu(ProseEditor.EntityChip chip)
+    {
+        entityModal = new EntityLinkModal.State
         {
-            // An interop failure used to escape OnAfterRenderAsync, which tears down the whole
-            // circuit: the page stops responding entirely, with nothing on screen to say why.
-            // A broken editor surface is bad; a dead application is worse. Degrade to Markdown
-            // mode, which needs no JS at all, and say what happened.
-            editorWired = false;
-            jsError = ex.Message;
-            mode = Mode.Raw;
-            StateHasChanged();
-        }
-    }
-
-    /// <summary>The editor's DOM, serialized back to beat markup. Fired on every input.</summary>
-    [JSInvokable]
-    public Task OnEditorInput(string text)
-    {
-        draft = text;
-        renderedFor = text; // authored by the DOM itself — don't push it back and move the caret
-        StateHasChanged();
-        return Task.CompletedTask;
-    }
-
-    [JSInvokable]
-    public async Task OnEntityContextMenu(string guid, string repo, string text)
-    {
-        entityModal = new EntityModalState { IsNew = false, Guid = guid, Repo = repo, Text = text };
-        entitySearch = text;
+            IsNew = false, Guid = chip.Guid, Repo = chip.Repo, Text = chip.Text,
+        };
+        entitySearch = chip.Text;
         await SearchEntitiesAsync();
     }
 
@@ -391,11 +282,13 @@
     /// normally displayed inside Writer.exe's WebView2 host, which may swallow a popup or divert
     /// it into a second WebView2 window. The Hub is always on the author's own machine, so
     /// shelling to the shell is both available and predictable.</para>
+    ///
+    /// <para>Phase 6 replaces this with an entity pane in this same window — losing your place in
+    /// the manuscript is the worst possible answer to "tell me about this character".</para>
     /// </summary>
-    [JSInvokable]
-    public async Task OnEntityClick(string guid, string repo)
+    private async Task OnEntityChipClick(ProseEditor.EntityChip chip)
     {
-        if (!Guid.TryParse(guid, out var id)) return;
+        if (!Guid.TryParse(chip.Guid, out var id)) return;
 
         // The chip carries the guid and a repo hint, but the wiki is addressed by slug, and the
         // hint is explicitly non-authoritative (see BeatMarkup) — so resolve it properly.
@@ -403,7 +296,6 @@
         if (route is null)
         {
             activity = "That tag points at an entity that no longer exists.";
-            StateHasChanged();
             return;
         }
 
@@ -422,8 +314,9 @@
             // nothing is worse than one that explains itself.
             activity = $"Could not open a browser: {ex.Message}";
         }
-        StateHasChanged();
     }
+
+    // ── Book and beat ──────────────────────────────────────────────────────
 
     private async Task ToggleBookMenu()
     {
@@ -459,7 +352,18 @@
         // than one per save. A beat with unsaved changes is saved on the way out, not dropped.
         if (beat is not null && id != beatId)
         {
-            if (Dirty) await SaveAsync(finishing: true);
+            if (Dirty)
+            {
+                await SaveAsync(finishing: true);
+
+                // SaveAsync reports failure by setting state, never by throwing: malformed markup
+                // leaves `problems`, and a concurrent write leaves `conflict`. Falling through
+                // would run ClearBeatState() over both banners and then overwrite `draft` with the
+                // beat that was clicked — destroying the author's edit AND the explanation for why
+                // it could not be saved, with nothing on screen afterwards to say either happened.
+                // Stay on this beat; the banner already says why.
+                if (problems.Count > 0 || conflict is not null) return;
+            }
             else RunDeferredAnalysis();
         }
 
@@ -467,8 +371,6 @@
         beatId = id;
         beat = await Writer.GetBeatAsync(id);
         draft = beat?.Text ?? "";
-        renderedFor = "";
-        editorWired = false;
     }
 
     private void ClearBeatState()
@@ -478,19 +380,16 @@
         conflict = null;
     }
 
-    private async Task SetModeAsync(Mode m)
-    {
-        mode = m;
-        renderedFor = "";
-        editorWired = false;
-        await Task.CompletedTask;
-    }
+    private void SetMode(EditorMode m) => mode = m;
 
-    private async Task SaveAsync(bool finishing)
+    /// <param name="quiet">An autosave the author did not ask for. Suppresses the tag-diff
+    /// banner, which would otherwise pop up every few seconds saying nothing new. Failures are
+    /// never quiet: malformed markup and conflicts still raise their banners.</param>
+    private async Task SaveAsync(bool finishing, bool quiet = false)
     {
         if (book is null || beat is null || saving) return;
         saving = true;
-        activity = "Saving…";
+        activity = quiet ? "Autosaving…" : "Saving…";
         ClearBeatState();
 
         try
@@ -500,11 +399,13 @@
             problems = result.Problems;
             if (problems.Count > 0) return;
 
+            // The scanner may have rewritten tags. Assigning the stored text back into the draft
+            // is what re-renders the editor — ProseEditor pushes HTML whenever the text it is
+            // handed differs from what it last drew.
             beat = result.Beat;
             draft = result.Beat.Text;
-            renderedFor = "";           // the scanner may have rewritten tags — re-render
             analysisPending = !finishing && result.Changed;
-            tagNote = DescribeTagDiff(result);
+            if (!quiet) tagNote = DescribeTagDiff(result);
         }
         catch (Prose.Core.Services.BeatConflictException ex)
         {
@@ -526,6 +427,25 @@
         if (r.Tags.Added.Count > 0) parts.Add($"tagged {string.Join(", ", r.Tags.Added)}");
         if (r.Tags.Removed.Count > 0) parts.Add($"dropped the tag on {string.Join(", ", r.Tags.Removed)}");
         return parts.Count == 0 ? null : "Saved. The entity scanner " + string.Join("; ", parts) + ".";
+    }
+
+    private async Task ReloadFromConflictAsync()
+    {
+        if (conflict is null) return;
+        beat = conflict;
+        draft = conflict.Text;
+        conflict = null;
+        await Task.CompletedTask;
+    }
+
+    private async Task OverwriteConflictAsync()
+    {
+        if (conflict is null) return;
+        var mine = draft;
+        beat = conflict;
+        draft = mine;
+        conflict = null;
+        await SaveAsync(finishing: false);
     }
 
     // ── Export ─────────────────────────────────────────────────────────────
@@ -608,102 +528,71 @@
         _ = Task.Run(() => Writer.RunDeferredAnalysisAsync(bookId, finished));
     }
 
-    private async Task ReloadFromConflictAsync()
-    {
-        if (conflict is null) return;
-        beat = conflict;
-        draft = conflict.Text;
-        conflict = null;
-        renderedFor = "";
-        await Task.CompletedTask;
-    }
-
-    private async Task OverwriteConflictAsync()
-    {
-        if (conflict is null) return;
-        var mine = draft;
-        beat = conflict;
-        draft = mine;
-        conflict = null;
-        await SaveAsync(finishing: false);
-    }
-
-    /// <summary>
-    /// Every call into the editor's JavaScript goes through here. An unhandled
-    /// <see cref="JSException"/> inside a Blazor Server event handler tears down the circuit and
-    /// the page simply stops responding — no error, no clue. A toolbar button that does nothing is
-    /// a far better failure than an application that dies.
-    /// </summary>
-    private async Task<T?> JsAsync<T>(string identifier, params object?[] args)
-    {
-        try
-        {
-            return await JS.InvokeAsync<T>(identifier, args);
-        }
-        catch (JSDisconnectedException) { connected = false; }
-        catch (JSException ex) { jsError = ex.Message; }
-        return default;
-    }
-
-    private async Task JsVoidAsync(string identifier, params object?[] args)
-    {
-        try
-        {
-            await JS.InvokeVoidAsync(identifier, args);
-        }
-        catch (JSDisconnectedException) { connected = false; }
-        catch (JSException ex) { jsError = ex.Message; }
-    }
-
     // ── Toolbar ────────────────────────────────────────────────────────────
 
-    private async Task FormatAsync(string command)
-    {
-        if (mode != Mode.Read) { await WrapRawAsync(command); return; }
-        await JsVoidAsync("proseEditor.format", command);
-    }
+    private Task FormatAsync(string command)
+        => editor is null ? Task.CompletedTask : editor.FormatAsync(command);
 
-    private async Task WrapRawAsync(string command)
+    private Task InsertEmDashAsync()
+        => editor is null ? Task.CompletedTask : editor.InsertEmDashAsync();
+
+    /// <summary>
+    /// Speak the selected passage — or the whole beat when nothing is selected, since "read it
+    /// back to me" almost always means the beat when the caret is just sitting in it.
+    /// </summary>
+    private async Task ReadAloudAsync()
     {
-        var (before, after) = command switch
+        if (editor is null || beat is null) return;
+
+        var sel = await editor.GetSelectionAsync();
+        var text = sel is { Ok: true } && !string.IsNullOrWhiteSpace(sel.Text) ? sel.Text : draft;
+        if (string.IsNullOrWhiteSpace(text)) return;
+
+        activity = "Speaking…";
+        try
         {
-            "bold"          => ("**", "**"),
-            "italic"        => ("*", "*"),
-            "underline"     => ("<u>", "</u>"),
-            "strikeThrough" => ("~~", "~~"),
-            _               => ("", "")
-        };
-        if (before == "") return;
-        await JsVoidAsync("proseEditor.wrapTextarea", rawRef, before, after);
+            var audio = await ReadAloud.SpeakAsync(text);
+            speaking = true;
+            await JsVoidAsync("proseSpeech.play", audio.Base64, audio.MimeType);
+            activity = audio.Free ? "Idle" : $"Read aloud in the book voice ({audio.Engine}) — this one cost characters.";
+        }
+        catch (Exception ex)
+        {
+            // Reaching a voice is an everyday failure (no engine installed, no key, ffmpeg gone).
+            // It must not take the circuit down, and the message has to say what to install.
+            speaking = false;
+            tagNote = ex.Message;
+            activity = "Idle";
+        }
     }
 
-    private async Task InsertEmDashAsync()
+    private async Task StopReadingAsync()
     {
-        if (mode == Mode.Read) await JsVoidAsync("proseEditor.insert", "—");
-        else await JsVoidAsync("proseEditor.wrapTextarea", rawRef, "—", "");
+        speaking = false;
+        await JsVoidAsync("proseSpeech.stop");
     }
 
     private async Task AddEntityAsync()
     {
-        if (mode != Mode.Read)
+        if (editor is null) return;
+
+        if (mode != EditorMode.Display)
         {
             tagNote = "Switch to Display mode to link an entity — Markdown mode edits the raw tags directly.";
             return;
         }
 
-        var sel = await JsAsync<SelectionDto>("proseEditor.selection");
+        var sel = await editor.GetSelectionAsync();
         if (sel is null || !sel.Ok || string.IsNullOrWhiteSpace(sel.Text))
         {
             tagNote = "Select the words you want to link first.";
             return;
         }
 
-        entityModal = new EntityModalState { IsNew = true, Text = sel.Text.Trim() };
+        entityModal = new EntityLinkModal.State { IsNew = true, Text = sel.Text.Trim() };
         entitySearch = sel.Text.Trim();
         await SearchEntitiesAsync();
     }
-
-    private sealed record SelectionDto(string Text, bool Ok);
 
     // ── Entity modal ───────────────────────────────────────────────────────
 
@@ -733,19 +622,19 @@
 
     private async Task ApplyEntityAsync()
     {
-        if (entityModal is null || !entityModal.CanApply) return;
+        if (entityModal is null || !entityModal.CanApply || editor is null) return;
 
         if (entityModal.IsNew)
-            await JsAsync<bool>("proseEditor.wrapSelection", entityModal.Guid, entityModal.Repo);
+            await editor.WrapSelectionAsync(entityModal.Guid, entityModal.Repo);
         else
-            await JsAsync<bool>("proseEditor.applyEntity", entityModal.Guid, entityModal.Repo, entityModal.Text);
+            await editor.ApplyEntityAsync(entityModal.Guid, entityModal.Repo, entityModal.Text);
 
         CloseEntityModal();
     }
 
     private async Task RemoveEntityAsync()
     {
-        await JsAsync<bool>("proseEditor.removeEntity");
+        if (editor is not null) await editor.RemoveEntityAsync();
         CloseEntityModal();
     }
 
@@ -756,17 +645,38 @@
         entitySearch = "";
     }
 
+    private async Task JsVoidAsync(string identifier, params object?[] args)
+    {
+        try { await JS.InvokeVoidAsync(identifier, args); }
+        catch (JSDisconnectedException) { connected = false; }
+        catch (JSException ex) { jsError = ex.Message; }
+    }
+
     private async Task ToggleThemeAsync()
     {
         theme = theme == "light" ? "dark" : "light";
-        await JsVoidAsync("proseWriter.setTheme", theme);
+        try { await JS.InvokeVoidAsync("proseWriter.setTheme", theme); }
+        catch (JSDisconnectedException) { connected = false; }
+        catch (JSException ex) { jsError = ex.Message; }
     }
 
     public async ValueTask DisposeAsync()
     {
+        if (autosave is not null) await autosave.DisposeAsync();
+
+        // Last chance to keep the open beat. Best-effort: circuit teardown is not guaranteed to
+        // run to completion, which is why the periodic autosave above is the real guarantee and
+        // this is only the tail of it.
+        try
+        {
+            if (Dirty) await SaveAsync(finishing: true, quiet: true);
+        }
+        catch
+        {
+            // Nothing can be shown and nothing can be retried — the circuit is going away.
+        }
+
         // Closing the book is the other "you are done with this beat" moment.
         RunDeferredAnalysis();
-        selfRef?.Dispose();
-        await ValueTask.CompletedTask;
     }
 }

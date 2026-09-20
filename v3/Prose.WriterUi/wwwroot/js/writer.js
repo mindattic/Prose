@@ -96,6 +96,42 @@ window.proseEditor = (() => {
         if (dotnet) dotnet.invokeMethodAsync('OnEditorInput', serialize(host));
     }
 
+    // The selected passage and what surrounds it, each serialized with the SAME function that
+    // produces the beat's stored markup. Deliberately no character offsets: turning a DOM range
+    // into a position in the serialized beat would mean a second serializer living here and
+    // drifting from that one. The server strips these three strings with the code it already
+    // uses everywhere else and finds the passage itself — one implementation, and the fiddly part
+    // stays where it is tested.
+    function selectionSpan() {
+        const sel = window.getSelection();
+        if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return null;
+
+        const range = sel.getRangeAt(0);
+        if (!host.contains(range.commonAncestorContainer)) return null;
+
+        const quote = serialize(rangeFragment(range));
+        if (!quote.trim()) return null;
+
+        const before = document.createRange();
+        before.setStart(host, 0);
+        before.setEnd(range.startContainer, range.startOffset);
+
+        const after = document.createRange();
+        after.setStart(range.endContainer, range.endOffset);
+        after.setEnd(host, host.childNodes.length);
+
+        return {
+            quote: quote,
+            prefix: serialize(rangeFragment(before)),
+            suffix: serialize(rangeFragment(after)),
+        };
+    }
+
+    // serialize() walks childNodes, so a DocumentFragment works as-is.
+    function rangeFragment(range) {
+        return range.cloneContents();
+    }
+
     return {
         init(element, dotNetRef) {
             host = element;
@@ -121,6 +157,13 @@ window.proseEditor = (() => {
                     }
                     node = node.parentNode;
                 }
+
+                // Not a chip. A right-click over a selection is the author asking about that
+                // passage; a right-click over nothing is left to the browser.
+                const span = selectionSpan();
+                if (!span) return;
+                e.preventDefault();
+                dotnet.invokeMethodAsync('OnDiscussRequested', span.quote, span.prefix, span.suffix);
             });
 
             // Left-click an entity chip to open its wiki page in the default browser.
@@ -258,5 +301,257 @@ window.proseEditor = (() => {
             notifyChanged();
             return true;
         }
+    };
+})();
+
+// ── Modal focus management ─────────────────────────────────────────────────────────────────
+//
+// role="dialog" + aria-modal describes a dialog; it does not behave like one. aria-modal has no
+// effect on the Tab order, so without this a keyboard user tabs straight out of the dialog and
+// into the editor and toolbar sitting behind the scrim, with no way to tell they have left.
+//
+// Escape is handled in the component rather than here, because only the component knows what
+// cancelling means — this module owns the focus, not the lifecycle.
+window.proseModal = (() => {
+    const FOCUSABLE = [
+        'a[href]', 'button:not([disabled])', 'input:not([disabled])',
+        'select:not([disabled])', 'textarea:not([disabled])', '[tabindex]:not([tabindex="-1"])',
+    ].join(',');
+
+    let restoreTo = null;
+    let trapped = null;
+
+    function focusable(dialog) {
+        return Array.from(dialog.querySelectorAll(FOCUSABLE))
+                    .filter(el => el.offsetParent !== null || el === document.activeElement);
+    }
+
+    function onKeyDown(e) {
+        if (e.key !== 'Tab' || !trapped) return;
+        const items = focusable(trapped);
+        if (items.length === 0) { e.preventDefault(); return; }
+
+        const first = items[0], last = items[items.length - 1];
+        // Shift+Tab off the first element wraps to the last, and vice versa, so focus can
+        // circle the dialog forever but never leave it.
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+
+    return {
+        open(dialog) {
+            if (!dialog) return;
+            // Remembered before focus moves, so closing returns the author to the control they
+            // opened the dialog from rather than dropping them at the top of the document.
+            restoreTo = document.activeElement;
+            trapped = dialog;
+            document.addEventListener('keydown', onKeyDown, true);
+            const items = focusable(dialog);
+            (items[0] || dialog).focus();
+        },
+
+        close() {
+            document.removeEventListener('keydown', onKeyDown, true);
+            trapped = null;
+            if (restoreTo && typeof restoreTo.focus === 'function') restoreTo.focus();
+            restoreTo = null;
+        },
+    };
+})();
+
+// ── Speaking ───────────────────────────────────────────────────────────────────────────────
+//
+// Audio arrives as a data: URL over the Blazor circuit rather than from an endpoint. The UI runs
+// inside the Hub, so the bytes are already in this process — a route would mean an API key, CORS
+// and a second way to get the universe scope wrong, for nothing. A whole chapter would need real
+// streaming; a selected paragraph does not.
+window.proseSpeech = (() => {
+    let current = null;
+
+    function stop() {
+        if (!current) return;
+        current.pause();
+        // Release the element before dropping the reference, or a long clip keeps decoding.
+        current.src = '';
+        current = null;
+    }
+
+    return {
+        /** Play base64 audio, replacing whatever was already speaking. */
+        play(base64, mime) {
+            stop();
+            const audio = new Audio(`data:${mime};base64,${base64}`);
+            current = audio;
+            // A rejected play() is normal (autoplay policy, or stop() landing first) and must not
+            // surface as an unhandled rejection that takes the circuit's JS down with it.
+            audio.play().catch(() => { });
+            return true;
+        },
+
+        /** Barge-in: the author started talking again, or moved on. */
+        stop() { stop(); return true; },
+
+        speaking() { return current !== null && !current.paused; },
+    };
+})();
+
+// ── Listening ──────────────────────────────────────────────────────────────────────────────
+//
+// MediaRecorder into memory, then base64 back over the circuit — the mirror of proseSpeech, and
+// for the same reason: the Hub is this process, so an upload endpoint would buy nothing but a key
+// and a CORS rule. An utterance is seconds long; a whole dictated chapter would need streaming.
+//
+// Every entry point resolves rather than throws. A microphone can be absent, denied by the host,
+// grabbed by another app or unplugged mid-sentence, and an unhandled rejection crossing the JS
+// interop boundary tears the Blazor circuit down and freezes the window — so the failure is
+// returned as data and the panel says what happened.
+window.proseMic = (() => {
+    let stream = null;
+    let recorder = null;
+    let chunks = [];
+    let startedAt = 0;
+
+    // Chromium gives webm/opus; the list is ordered by what Whisper handles most happily.
+    const PREFERRED = ['audio/webm;codecs=opus', 'audio/webm', 'audio/ogg;codecs=opus', 'audio/mp4'];
+
+    function pickMime() {
+        if (typeof MediaRecorder === 'undefined') return null;
+        for (const t of PREFERRED) {
+            if (MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(t)) return t;
+        }
+        return '';   // let the browser choose; recorder.mimeType still reports what it picked
+    }
+
+    function release() {
+        if (stream) {
+            // Without this the OS microphone indicator stays lit after the turn is over, which is
+            // the single most alarming thing a writing app can do.
+            stream.getTracks().forEach(t => { try { t.stop(); } catch { } });
+        }
+        stream = null;
+        recorder = null;
+    }
+
+    function toBase64(blob) {
+        return new Promise(resolve => {
+            const reader = new FileReader();
+            reader.onerror = () => resolve(null);
+            // readAsDataURL, not readAsArrayBuffer + manual encode: the browser's own base64 is
+            // faster than any loop here and cannot overflow the argument list on a long clip.
+            reader.onloadend = () => {
+                const s = String(reader.result || '');
+                const comma = s.indexOf(',');
+                resolve(comma < 0 ? null : s.slice(comma + 1));
+            };
+            reader.readAsDataURL(blob);
+        });
+    }
+
+    return {
+        /** True when this browser could record at all — asked before a button is offered. */
+        supported() {
+            return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia
+                      && typeof MediaRecorder !== 'undefined');
+        },
+
+        /**
+         * Begin recording. Resolves { ok, error } — a denied permission is an expected outcome,
+         * not an exception.
+         */
+        async start() {
+            if (recorder) return { ok: true, error: null };
+
+            if (!this.supported()) {
+                return { ok: false, error: 'This window cannot record audio — MediaRecorder is unavailable.' };
+            }
+
+            // Whatever was being read aloud stops the moment the author starts talking. Barge-in
+            // is the difference between a conversation and a walkie-talkie.
+            try { window.proseSpeech && window.proseSpeech.stop(); } catch { }
+
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({
+                    audio: {
+                        // Dictation into a headset or a laptop mic in a room with a fan. These are
+                        // hints, not guarantees, and cost nothing when the device ignores them.
+                        echoCancellation: true,
+                        noiseSuppression: true,
+                        autoGainControl: true,
+                    },
+                });
+            } catch (e) {
+                release();
+                const name = (e && e.name) || '';
+                if (name === 'NotAllowedError' || name === 'SecurityError') {
+                    return {
+                        ok: false,
+                        error: 'The microphone was refused. In the Writer window this is granted by '
+                             + 'the app itself — if you are seeing this, the running Writer.exe '
+                             + 'predates microphone support and needs a redeploy.',
+                    };
+                }
+                if (name === 'NotFoundError' || name === 'OverconstrainedError') {
+                    return { ok: false, error: 'No microphone was found on this machine.' };
+                }
+                if (name === 'NotReadableError') {
+                    return { ok: false, error: 'The microphone is in use by another application.' };
+                }
+                return { ok: false, error: `The microphone could not be opened: ${e}` };
+            }
+
+            try {
+                const mimeType = pickMime();
+                recorder = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream);
+                chunks = [];
+                recorder.ondataavailable = e => { if (e.data && e.data.size > 0) chunks.push(e.data); };
+                recorder.start();
+                startedAt = Date.now();
+                return { ok: true, error: null };
+            } catch (e) {
+                release();
+                return { ok: false, error: `Recording could not start: ${e}` };
+            }
+        },
+
+        /**
+         * Stop and hand back the audio. Resolves { ok, base64, mime, durationMs, error }.
+         * base64 is null when nothing was captured — a tap rather than a hold.
+         */
+        async stop() {
+            if (!recorder) return { ok: false, base64: null, mime: '', durationMs: 0, error: 'Not recording.' };
+
+            const rec = recorder;
+            const mime = rec.mimeType || 'audio/webm';
+            const durationMs = Date.now() - startedAt;
+
+            const blob = await new Promise(resolve => {
+                // onstop fires after the last ondataavailable, which is the only point at which
+                // the chunk list is complete.
+                rec.onstop = () => resolve(new Blob(chunks, { type: mime }));
+                try { rec.stop(); } catch { resolve(null); }
+            });
+
+            release();
+            chunks = [];
+
+            if (!blob || blob.size === 0) {
+                return { ok: false, base64: null, mime, durationMs, error: 'Nothing was recorded.' };
+            }
+
+            const base64 = await toBase64(blob);
+            return base64
+                ? { ok: true, base64, mime, durationMs, error: null }
+                : { ok: false, base64: null, mime, durationMs, error: 'The recording could not be read.' };
+        },
+
+        /** Abandon a recording without transcribing it. */
+        cancel() {
+            if (recorder) { try { recorder.stop(); } catch { } }
+            release();
+            chunks = [];
+            return true;
+        },
+
+        recording() { return recorder !== null; },
     };
 })();

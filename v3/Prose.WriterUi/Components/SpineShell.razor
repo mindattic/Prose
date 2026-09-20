@@ -8,19 +8,20 @@
 
     <header class="menubar">
         <div class="menu">
-            <button class="menu-title" @onclick="() => bookMenuOpen = !bookMenuOpen">Book</button>
+            <button class="menu-title" aria-haspopup="true" aria-expanded="@bookMenuOpen"
+                @onclick="() => bookMenuOpen = !bookMenuOpen">Book</button>
             @if (bookMenuOpen)
             {
-                <div class="menu-drop" role="menu">
+                <div class="menu-drop">
                     @if (books is null)
                     {
-                        <div class="menu-note">Loading…</div>
+                        <div class="menu-note" role="status">Loading…</div>
                     }
                     else
                     {
                         @foreach (var b in books)
                         {
-                            <button role="menuitem" @onclick="() => OpenBookAsync(b)">
+                            <button @onclick="() => OpenBookAsync(b)">
                                 @b.Title <span class="muted">@b.NodeCode</span>
                             </button>
                         }
@@ -37,10 +38,16 @@
 
         <div class="spacer"></div>
 
-        <input class="filter" type="search" placeholder="Filter the spine…"
+        <input class="filter" type="search" aria-label="Filter the spine" placeholder="Filter the spine…"
                value="@filter" @oninput="OnFilterInput" />
 
-        <span class="status @(statusIsError ? "err" : "")">@status</span>
+        <span class="status @(statusIsError ? "err" : "")" role="status">
+            @if (statusIsError && !string.IsNullOrWhiteSpace(status))
+            {
+                <span>Error: </span>
+            }
+            @status
+        </span>
     </header>
 
     @if (book is null)
@@ -60,7 +67,7 @@
                         @(busy ? "Saving…" : outlineDirty ? "Save outline" : "Saved")
                     </button>
                 </div>
-                <textarea class="outline-text" spellcheck="false"
+                <textarea class="outline-text" aria-label="Book outline" spellcheck="false"
                           value="@outlineText" @oninput="OnOutlineInput"
                           placeholder="No outline yet. This book's order of events has never been written down."></textarea>
             </section>
@@ -88,12 +95,16 @@
                             {
                                 var id = r.BeatId.Value;
                                 <div class="row @(expanded == id ? "open" : "")">
-                                    <button class="rowhead" @onclick="() => ToggleAsync(id)">
+                                    <button class="rowhead" aria-expanded="@(expanded == id)" @onclick="() => ToggleAsync(id)">
                                         <span class="ord">@r.Ordinal.ToString("D4")</span>
                                         <span class="summary @(r.SummaryState == "stale" ? "stale" : "")">
                                             @(string.IsNullOrWhiteSpace(r.EventSummary)
                                                 ? "(no event summary)"
                                                 : r.EventSummary)
+                                            @if (r.SummaryState == "stale")
+                                            {
+                                                <span class="visually-hidden"> (stale — written before the beat last changed)</span>
+                                            }
                                         </span>
                                         <span class="chars">@r.Chars.ToString("N0")</span>
                                         <span class="badge @(r.LedgerCount == 0 ? "zero" : "")">@r.LedgerCount</span>
@@ -115,9 +126,10 @@
                                                 <table>
                                                     <thead>
                                                         <tr>
-                                                            <th>Entity</th><th>Aspect</th><th>Verb</th>
-                                                            <th>From</th><th>To</th><th>Story time</th>
-                                                            <th>Source</th><th></th>
+                                                            <th scope="col">Entity</th><th scope="col">Aspect</th><th scope="col">Verb</th>
+                                                            <th scope="col">From</th><th scope="col">To</th><th scope="col">Story time</th>
+                                                            <th scope="col">Source</th>
+                                                            <th scope="col"><span class="visually-hidden">Actions</span></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -126,9 +138,9 @@
                                                             var draft = Draft(e);
                                                             <tr>
                                                                 <td class="ent" title="@e.EntityType">@e.EntityName</td>
-                                                                <td><input value="@draft.AspectKey" @oninput="ev => SetAspect(draft, ev)" /></td>
-                                                                <td><input class="narrow" value="@draft.Verb" @oninput="ev => SetVerb(draft, ev)" /></td>
-                                                                <td><input value="@draft.OldValue" @oninput="ev => SetOld(draft, ev)" /></td>
+                                                                <td><input aria-label="Aspect for @e.EntityName" value="@draft.AspectKey" @oninput="ev => SetAspect(draft, ev)" /></td>
+                                                                <td><input class="narrow" aria-label="Verb for @e.EntityName" value="@draft.Verb" @oninput="ev => SetVerb(draft, ev)" /></td>
+                                                                <td><input aria-label="Previous value for @e.EntityName" value="@draft.OldValue" @oninput="ev => SetOld(draft, ev)" /></td>
                                                                 <td><input value="@draft.NewValue" @oninput="ev => SetNew(draft, ev)" /></td>
                                                                 <td><input class="when" value="@FormatWhen(draft)" @oninput="ev => SetWhen(draft, ev)" /></td>
                                                                 <td class="src">@e.Source</td>

@@ -1,0 +1,625 @@
+@* A local alias, not a namespace import: Prose.Core.Data.Entities also contains Entity, Beat and
+   Node, which would shadow or collide with names already in scope here. *@
+@using DiscussionIntent = Prose.Core.Data.Entities.DiscussionIntent
+@* The conversation about this beat.
+
+   A cold-ledger instrument: it is for interrogating a passage, and it must NOT appear in Read
+   Mode, where the only question is where attention died and any invitation to analyse destroys
+   the measurement. *@
+
+@inject DiscussionUiService Discuss
+@inject SpeechUiService Speech
+@inject ReadAloudUiService ReadAloud
+@inject IJSRuntime JS
+
+<aside class="discuss" aria-label="Discussion">
+    <header class="d-head">
+        <h2 class="d-title">Discussion</h2>
+        @if (threads.Count > 0)
+        {
+            <span class="muted">@threads.Count<span class="visually-hidden"> threads</span></span>
+        }
+        <div class="spacer"></div>
+        @if (openThread is not null)
+        {
+            <button class="mini" @onclick="CloseThread" title="Back to all discussions">← All</button>
+        }
+    </header>
+
+    @if (pending is not null)
+    {
+        <div class="d-pending">
+            <div class="d-pending-quote">“@Shorten(pending.Quote, 220)”</div>
+            @* Auto is the default and the usual path: "cut that line" is not ambiguous, and
+               reaching for a toggle mid-sentence is the thing hands-free exists to avoid. The
+               other two are an override for when the inference got it wrong. *@
+            <div class="d-intent" role="group" aria-label="What are you asking for">
+                <button class="@IntentClass(DiscussionIntent.Auto)"
+                        aria-pressed="@(intent == DiscussionIntent.Auto)"
+                        @onclick="() => intent = DiscussionIntent.Auto"
+                        title="Work out from what you say whether this is a question or a request.">Auto</button>
+                <button class="@IntentClass(DiscussionIntent.Clarify)"
+                        aria-pressed="@(intent == DiscussionIntent.Clarify)"
+                        @onclick="() => intent = DiscussionIntent.Clarify"
+                        title="Explain, defend or check this passage. Nothing changes.">Clarify</button>
+                <button class="@IntentClass(DiscussionIntent.Edit)"
+                        aria-pressed="@(intent == DiscussionIntent.Edit)"
+                        @onclick="() => intent = DiscussionIntent.Edit"
+                        title="Ask for a change. You approve it before anything is written — and it may argue back.">Edit</button>
+            </div>
+            <textarea class="d-ask" rows="3" value="@question"
+                      aria-label="@(intent == DiscussionIntent.Edit ? "What should change about this passage" : "Your question about this passage")"
+                      placeholder="@(intent == DiscussionIntent.Edit
+                                     ? "What should change about this passage?"
+                                     : "What do you want to know about this passage?")"
+                      @oninput="e => question = e.Value?.ToString() ?? string.Empty"></textarea>
+            <div class="d-actions">
+                <button class="mini" @onclick="CancelPending">Cancel</button>
+                @if (micSupported)
+                {
+                    <button class="@MicClass(AskBox)" @onclick="() => ToggleMicAsync(AskBox)"
+                            disabled="@(transcribing || (recordingIn is not null && recordingIn != AskBox))"
+                            aria-pressed="@(recordingIn == AskBox)"
+                            title="@MicTitle(AskBox)">@MicLabel(AskBox)</button>
+                }
+                <div class="spacer"></div>
+                <button class="primary" disabled="@(busy || string.IsNullOrWhiteSpace(question))"
+                        @onclick="StartAsync">
+                    @(busy ? "Asking…" : "Ask")
+                </button>
+            </div>
+        </div>
+    }
+
+    @if (heard is not null)
+    {
+        @* An aside, not an alert: it reports how the words got here, which the author needs when
+           the transcript is wrong but must not have to dismiss when it is right. *@
+        <div class="banner info" role="status">@heard</div>
+    }
+
+    @if (needsKey)
+    {
+        @* Claude deliberately has no fallback below a BYO key, so nothing was spent getting
+           here. Say what to do rather than showing a failure. *@
+        <div class="banner danger d-nokey" role="alert">
+            <strong>No API key configured.</strong>
+            Discussion needs one — nothing has been spent.
+            <button class="mini" @onclick="() => OnOpenSettings.InvokeAsync()">Open Settings</button>
+        </div>
+    }
+    else if (error is not null)
+    {
+        <div class="banner danger" role="alert">@error</div>
+    }
+
+    @if (openThread is null)
+    {
+        @if (threads.Count == 0 && pending is null)
+        {
+            <div class="d-empty">
+                Select a sentence in the beat and right-click it — or press Shift+F10 — to ask
+                about it.
+            </div>
+        }
+        else
+        {
+            <ul class="d-list">
+                @foreach (var row in threads)
+                {
+                    <li>
+                        <button class="d-row @(row.Thread.State == "detached" ? "detached" : "")"
+                                @onclick="() => OpenThreadAsync(row.Thread.Id)">
+                            <span class="d-row-quote">“@Shorten(row.Thread.AnchorQuote, 90)”</span>
+                            @if (row.LastLine is not null)
+                            {
+                                <span class="d-row-last">@Shorten(row.LastLine, 110)</span>
+                            }
+                            <span class="d-row-meta">
+                                @row.TurnCount turn@(row.TurnCount == 1 ? "" : "s")
+                                @if (row.Thread.State == "detached")
+                                {
+                                    <span class="d-detached">detached<span class="visually-hidden"> — the quoted text is no longer in this beat</span></span>
+                                }
+                                else if (row.Anchor.Outcome == AnchorOutcome.Ambiguous)
+                                {
+                                    <span class="d-uncertain">uncertain<span class="visually-hidden"> — this passage occurs more than once, so the anchor may not be exact</span></span>
+                                }
+                                @if (row.Thread.State == "resolved")
+                                {
+                                    <span class="d-resolved">resolved</span>
+                                }
+                            </span>
+                        </button>
+                    </li>
+                }
+            </ul>
+        }
+    }
+    else
+    {
+        <div class="d-thread" aria-live="polite" aria-busy="@busy">
+            <div class="d-anchor">“@Shorten(openThread.AnchorQuote, 300)”</div>
+
+            @for (var i = 0; i < turns.Count; i++)
+            {
+                var turn = turns[i];
+                var last = i == turns.Count - 1;
+                <div class="d-turn @(turn.Role == "author" ? "author" : "assistant")">
+                    <div class="d-turn-who">
+                        @(turn.Role == "author" ? "You" : "Claude")
+                        @if (turn.Spoken)
+                        {
+                            @* A transcription error reads exactly like a change of mind. Marking
+                               the spoken turns is what lets the author tell them apart later. *@
+                            <span class="d-spoken" title="Spoken">🎤<span class="visually-hidden"> — spoken</span></span>
+                        }
+                    </div>
+                    <DiscussionBlocks Blocks="turn.Blocks" OnJumpToBeat="OnJumpToBeat"
+                                      OnChoose="AnswerChoiceAsync"
+                                      Actionable="@(last && !busy)"
+                                      OnConfirm="ConfirmAsync"
+                                      OnAdjust="AdjustAsync"
+                                      OnCancel="CancelRequestAsync" />
+                </div>
+            }
+
+            <textarea class="d-ask" placeholder="Ask a follow-up…" rows="2" value="@followUp"
+                      aria-label="Follow-up question"
+                      @oninput="e => followUp = e.Value?.ToString() ?? string.Empty"></textarea>
+            <div class="d-actions">
+                @if (openThread.State == "resolved")
+                {
+                    <button class="mini" @onclick="ReopenAsync">Reopen</button>
+                }
+                else
+                {
+                    <button class="mini" @onclick="ResolveAsync">Mark resolved</button>
+                }
+                @if (micSupported)
+                {
+                    <button class="@MicClass(FollowUpBox)" @onclick="() => ToggleMicAsync(FollowUpBox)"
+                            disabled="@(transcribing || (recordingIn is not null && recordingIn != FollowUpBox))"
+                            aria-pressed="@(recordingIn == FollowUpBox)"
+                            title="@MicTitle(FollowUpBox)">@MicLabel(FollowUpBox)</button>
+                }
+                <div class="spacer"></div>
+                @if (cost > 0)
+                {
+                    <span class="muted d-cost"><span class="visually-hidden">Cost so far: </span>@cost.ToString("C4")</span>
+                }
+                <button class="primary" disabled="@(busy || string.IsNullOrWhiteSpace(followUp))"
+                        @onclick="AskAsync">
+                    @(busy ? "Asking…" : "Ask")
+                </button>
+            </div>
+        </div>
+    }
+</aside>
+
+@code {
+    [Parameter] public Guid BookNodeId { get; set; }
+    [Parameter] public Guid BeatId { get; set; }
+
+    /// <summary>A quote block was clicked — the shell moves the editor to that beat.</summary>
+    [Parameter] public EventCallback<Guid> OnJumpToBeat { get; set; }
+
+    /// <summary>No key is configured and the author wants to fix that.</summary>
+    [Parameter] public EventCallback OnOpenSettings { get; set; }
+
+    private IReadOnlyList<DiscussionUiService.ThreadRow> threads = [];
+    private Prose.Core.Data.Entities.DiscussionThread? openThread;
+    private IReadOnlyList<DiscussionUiService.TurnRow> turns = [];
+
+    private DiscussionUiService.ProseEditorSpan? pending;
+    private string question = "";
+    private string followUp = "";
+    private bool busy;
+    private string? error;
+    private bool needsKey;
+    private double cost;
+
+    /// <summary>Auto by author ruling: intent is inferred, and the toggle is an override. A
+    /// spoken turn cannot realistically set it any other way.</summary>
+    private string intent = DiscussionIntent.Auto;
+
+    private string IntentClass(string k) => k == intent ? "d-intent-btn on" : "d-intent-btn";
+
+    private Guid loadedFor;
+
+    // ── Voice ──────────────────────────────────────────────────────────────
+    //
+    // Two boxes can be dictated into, and only one at a time. Which one is recording is the whole
+    // state machine; everything else hangs off it.
+
+    private const string AskBox = "ask";
+    private const string FollowUpBox = "follow-up";
+
+    private bool micSupported;
+    private string? recordingIn;
+
+    /// <summary>Which box is waiting on a transcript. Separate from <see cref="recordingIn"/>
+    /// because the microphone is already closed by then — showing the recording state through
+    /// the wait would leave a red pulsing button over a mic that is off.</summary>
+    private string? transcribingIn;
+
+    private string? heard;
+
+    private bool transcribing => transcribingIn is not null;
+
+    /// <summary>Where the recording of each box's dictated text went, so the turn can be stored
+    /// with the audio that produced it. Cleared when the box is sent or abandoned.</summary>
+    private readonly Dictionary<string, string?> spokenAudio = new();
+
+    private string MicClass(string box)
+        => recordingIn == box ? "mini d-mic on" : "mini d-mic";
+
+    private string MicLabel(string box)
+        => transcribingIn == box ? "…"
+         : recordingIn == box ? "■ Stop"
+         : "🎤";
+
+    private string MicTitle(string box)
+        => transcribingIn == box ? "Transcribing…"
+         : recordingIn == box ? "Stop recording and transcribe"
+         : "Dictate — transcribed with this book's own names";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+
+        // Asked once, of the browser, rather than assumed from the host: the same component is
+        // served to Writer.exe (where the mic is granted) and to any browser pointed at /writer
+        // (where it may not be). A button that cannot work should not be offered.
+        micSupported = await JsAsync<bool>("proseMic.supported");
+        if (micSupported) StateHasChanged();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (BeatId == loadedFor) return;
+        loadedFor = BeatId;
+        // Moving to another beat abandons whatever was half-asked about the previous one.
+        pending = null;
+        openThread = null;
+        turns = [];
+        question = followUp = "";
+        error = null;
+        heard = null;
+        await AbandonRecordingAsync();
+        await ReloadAsync();
+    }
+
+    /// <summary>Called by the shell when the author right-clicks a selection.</summary>
+    public void BeginFor(ProseEditor.SelectedSpan span)
+    {
+        pending = new DiscussionUiService.ProseEditorSpan(span.Quote, span.Prefix, span.Suffix);
+        openThread = null;
+        question = "";
+        error = null;
+        heard = null;
+        // A recording from an abandoned question must not follow the author onto the next one —
+        // a turn stamped with someone else's audio is worse than a turn with none.
+        spokenAudio.Remove(AskBox);
+        StateHasChanged();
+    }
+
+    private async Task ReloadAsync()
+    {
+        if (BookNodeId == Guid.Empty || BeatId == Guid.Empty) { threads = []; return; }
+        threads = await Discuss.ForBeatAsync(BookNodeId, BeatId);
+    }
+
+    private void CancelPending()
+    {
+        pending = null;
+        question = "";
+        spokenAudio.Remove(AskBox);
+    }
+
+    private async Task StartAsync()
+    {
+        if (pending is null || busy) return;
+        busy = true;
+        error = null;
+        needsKey = false;
+        try
+        {
+            var audio = spokenAudio.GetValueOrDefault(AskBox);
+            var thread = await Discuss.StartAsync(
+                BookNodeId, BeatId, pending, question.Trim(), intent,
+                inputMode: ModeFor(AskBox), audioPath: audio);
+            if (thread is null)
+            {
+                error = "That passage could not be found in the beat any more — it may have changed "
+                      + "since you selected it. Select it again.";
+                return;
+            }
+            pending = null;
+            question = "";
+            spokenAudio.Remove(AskBox);
+            await ReloadAsync();
+            await OpenThreadAsync(thread.Id);
+        }
+        catch (DiscussionUiService.NoCredentialsException)
+        {
+            needsKey = true;
+        }
+        catch (Exception ex)
+        {
+            // Reaching an LLM provider is the everyday failure here. It must not take the circuit
+            // with it, and the author must be told rather than left watching a spinner.
+            error = $"Could not ask: {ex.Message}";
+        }
+        finally { busy = false; }
+    }
+
+    private async Task AskAsync()
+    {
+        if (openThread is null || busy) return;
+        busy = true;
+        error = null;
+        needsKey = false;
+        try
+        {
+            await Discuss.AskAsync(
+                BookNodeId, BeatId, openThread.Id, followUp.Trim(), intent,
+                inputMode: ModeFor(FollowUpBox), audioPath: spokenAudio.GetValueOrDefault(FollowUpBox));
+            followUp = "";
+            spokenAudio.Remove(FollowUpBox);
+            await LoadTurnsAsync(openThread.Id);
+        }
+        catch (DiscussionUiService.NoCredentialsException) { needsKey = true; }
+        catch (Exception ex) { error = $"Could not ask: {ex.Message}"; }
+        finally { busy = false; }
+    }
+
+    private Task AnswerChoiceAsync(string label)
+    {
+        followUp = label;
+        return AskAsync();
+    }
+
+    // ── Confirming a request ───────────────────────────────────────────────
+    //
+    // All three answers are ordinary author turns, written in the author's voice, for one reason:
+    // a decision and the reasoning that produced it belong in the same log, and a confirmation
+    // recorded as a hidden flag could not be read back six weeks later. It also means Adjust needs
+    // no machinery at all — it is the author about to type, with the restatement in front of them.
+
+    private Task ConfirmAsync(DiscussionBlock.Confirm confirm)
+    {
+        followUp = "Yes — that is what I want. Go ahead.";
+        return AskAsync();
+    }
+
+    /// <summary>
+    /// Nearly right. Puts the restatement in the box for the author to correct rather than sending
+    /// anything — the whole value of Adjust is that it is the one path where nothing happens until
+    /// they have typed or said what was wrong.
+    /// </summary>
+    private void AdjustAsync(DiscussionBlock.Confirm confirm)
+    {
+        followUp = $"Not quite. {confirm.Restatement}";
+        error = null;
+        StateHasChanged();
+    }
+
+    private Task CancelRequestAsync(DiscussionBlock.Confirm confirm)
+    {
+        followUp = "No — leave it as it is.";
+        return AskAsync();
+    }
+
+    private async Task OpenThreadAsync(Guid threadId)
+    {
+        openThread = threads.FirstOrDefault(t => t.Thread.Id == threadId)?.Thread;
+        if (openThread is null)
+        {
+            await ReloadAsync();
+            openThread = threads.FirstOrDefault(t => t.Thread.Id == threadId)?.Thread;
+        }
+        if (openThread is not null) await LoadTurnsAsync(threadId);
+    }
+
+    private async Task LoadTurnsAsync(Guid threadId)
+    {
+        turns = await Discuss.TurnsAsync(threadId);
+        cost = turns.Sum(t => t.Cost);
+        await SpeakReplyAsync();
+    }
+
+    /// <summary>
+    /// Say the reply out loud — but only when the author spoke first.
+    ///
+    /// <para>The rule is that simple on purpose. Someone who typed is looking at the screen and
+    /// does not need their own editor reading to them; someone who spoke may not be. Answering a
+    /// spoken turn in silence is the thing that makes a voice loop feel broken.</para>
+    ///
+    /// <para>A confirmation is spoken in preference to the prose around it. It is the one part the
+    /// author has to act on, it is short, and hearing it is what catches a misheard word before it
+    /// reaches the manuscript.</para>
+    /// </summary>
+    private async Task SpeakReplyAsync()
+    {
+        if (turns.Count == 0) return;
+
+        var reply = turns[^1];
+        if (reply.Role != "assistant") return;
+
+        // The last AUTHOR turn is the one that set the mode for this exchange.
+        var asked = turns.LastOrDefault(t => t.Role == "author");
+        if (asked is null || !asked.Spoken) return;
+
+        var confirm = reply.Blocks.OfType<DiscussionBlock.Confirm>().FirstOrDefault();
+        var text = confirm is not null
+            ? Speakable(confirm)
+            : reply.Blocks.OfType<DiscussionBlock.Text>().FirstOrDefault()?.Markdown;
+        if (string.IsNullOrWhiteSpace(text)) return;
+
+        try
+        {
+            var audio = await ReadAloud.SpeakAsync(text);
+            await JsAsync<bool>("proseSpeech.play", audio.Base64, audio.MimeType);
+        }
+        catch (Exception ex)
+        {
+            // No voice installed is the common case and must not look like the answer failing —
+            // the reply is on screen either way.
+            heard = $"The reply was not spoken: {ex.Message}";
+        }
+    }
+
+    private static string Speakable(DiscussionBlock.Confirm c)
+    {
+        var said = $"I heard: {c.Restatement}";
+        if (c.Steps.Count > 0)
+            said += " I'd do: " + string.Join(". Then, ", c.Steps) + ".";
+        if (c.Caution is not null) said += $" Worth knowing: {c.Caution}";
+        return said + " Confirm, adjust, or cancel?";
+    }
+
+    private async Task CloseThread()
+    {
+        openThread = null;
+        turns = [];
+        await ReloadAsync();
+    }
+
+    private async Task ResolveAsync()
+    {
+        if (openThread is null) return;
+        await Discuss.ResolveAsync(openThread.Id);
+        openThread.State = "resolved";
+        await ReloadAsync();
+    }
+
+    private async Task ReopenAsync()
+    {
+        if (openThread is null) return;
+        await Discuss.ReopenAsync(openThread.Id);
+        openThread.State = "live";
+        await ReloadAsync();
+    }
+
+    private static string Shorten(string? s, int max)
+    {
+        s = (s ?? "").Replace('\n', ' ').Replace('\r', ' ').Trim();
+        return s.Length <= max ? s : s[..(max - 1)] + "…";
+    }
+
+    // ── Dictation ──────────────────────────────────────────────────────────
+
+    /// <summary>A turn is spoken if any of its words arrived by microphone, even if the author
+    /// then corrected them by hand — the point of the column is to mark text that passed through
+    /// a transcriber at all.</summary>
+    private string ModeFor(string box)
+        => spokenAudio.ContainsKey(box)
+            ? Prose.Core.Data.Entities.DiscussionInputMode.Voice
+            : Prose.Core.Data.Entities.DiscussionInputMode.Typed;
+
+    private Task ToggleMicAsync(string box)
+        => recordingIn == box ? StopMicAsync(box) : StartMicAsync(box);
+
+    private async Task StartMicAsync(string box)
+    {
+        if (recordingIn is not null || transcribing) return;
+
+        heard = null;
+        error = null;
+
+        // Checked before the microphone opens rather than after the author has spoken: a recording
+        // made with no transcription key is a sentence they have to say again.
+        var availability = Speech.Probe();
+        if (!availability.Ready) { error = availability.Blocker; return; }
+
+        var started = await JsAsync<MicStart>("proseMic.start");
+        if (started is null || !started.Ok)
+        {
+            error = started?.Error ?? "The microphone could not be opened.";
+            return;
+        }
+
+        recordingIn = box;
+    }
+
+    private async Task StopMicAsync(string box)
+    {
+        if (recordingIn != box) return;
+
+        transcribingIn = box;
+        recordingIn = null;
+        StateHasChanged();
+
+        try
+        {
+            var clip = await JsAsync<MicResult>("proseMic.stop");
+
+            if (clip is null || !clip.Ok || string.IsNullOrEmpty(clip.Base64))
+            {
+                error = clip?.Error ?? "Nothing was recorded.";
+                return;
+            }
+
+            var result = await Speech.TranscribeAsync(
+                BookNodeId, clip.Base64, clip.Mime ?? "audio/webm", clip.DurationMs);
+
+            if (string.IsNullOrWhiteSpace(result.Text))
+            {
+                heard = "Nothing was heard in that recording.";
+                return;
+            }
+
+            // Appended, not replaced. Dictating a second sentence onto a first is the normal way
+            // to build a request, and overwriting would make every correction a retype.
+            if (box == AskBox) question = Append(question, result.Text);
+            else followUp = Append(followUp, result.Text);
+
+            // The audio is kept whether or not the transcript was right — that is the point of it.
+            if (result.RecordingPath is not null) spokenAudio[box] = result.RecordingPath;
+            else spokenAudio.TryAdd(box, null);
+
+            heard = result.Primed > 0
+                ? null
+                : "Transcribed without this book's names — nothing is tagged in it yet, so invented "
+                + "nouns may have come back wrong.";
+        }
+        catch (Exception ex)
+        {
+            // Reaching a transcription provider is an everyday failure, and it must not take the
+            // circuit with it.
+            error = $"Could not transcribe: {ex.Message}";
+        }
+        finally
+        {
+            transcribingIn = null;
+        }
+    }
+
+    /// <summary>Drop a recording in progress without transcribing it — leaving the OS microphone
+    /// light on after the author has moved to another beat is not acceptable.</summary>
+    private async Task AbandonRecordingAsync()
+    {
+        if (recordingIn is null) return;
+        recordingIn = null;
+        spokenAudio.Clear();
+        await JsAsync<bool>("proseMic.cancel");
+    }
+
+    private static string Append(string existing, string addition)
+        => string.IsNullOrWhiteSpace(existing) ? addition.Trim() : existing.TrimEnd() + " " + addition.Trim();
+
+    /// <summary>Every interop call goes through here. An unhandled <c>JSException</c> tears down
+    /// the Blazor circuit and the window silently freezes — a failed microphone must cost a
+    /// message, not the editor.</summary>
+    private async Task<T?> JsAsync<T>(string identifier, params object?[] args)
+    {
+        try { return await JS.InvokeAsync<T>(identifier, args); }
+        catch (JSDisconnectedException) { return default; }
+        catch (JSException ex) { error = ex.Message; return default; }
+    }
+
+    private sealed record MicStart(bool Ok, string? Error);
+
+    private sealed record MicResult(bool Ok, string? Base64, string? Mime, int DurationMs, string? Error);
+}

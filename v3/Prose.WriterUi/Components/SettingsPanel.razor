@@ -1,0 +1,225 @@
+@* Credentials.
+
+   Keys are write-only from here: the service hands back a mask, never the key, so nothing on this
+   screen — or in the circuit's payload, or in a screenshot — carries a usable secret. *@
+
+@inject SettingsUiService Settings
+@inject ReadAloudUiService ReadAloud
+@inject SpeechUiService Speech
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<div class="scrim" aria-hidden="true" @onclick="() => OnClose.InvokeAsync()"></div>
+<div class="modal settings" role="dialog" aria-modal="true" aria-labelledby="settings-title"
+     tabindex="-1" @ref="dialog" @onkeydown="OnKeyDown">
+    <h2 id="settings-title">Settings</h2>
+
+    <section class="set-block">
+        <h3>Discussion</h3>
+        <p class="set-note">
+            Claude is tried first, then OpenAI. A key set here works immediately — the pool is read
+            on every call, so there is nothing to restart.
+            @if (Settings.ActiveProvider is { } active)
+            {
+                <span class="set-ok">Currently using <strong>@active</strong>.</span>
+            }
+            else
+            {
+                <span class="set-warn">No key set, so discussion is unavailable and nothing can be spent.</span>
+            }
+        </p>
+
+        @foreach (var provider in Settings.Providers)
+        {
+            <div class="set-provider">
+                <div class="set-provider-head">
+                    <strong>@provider</strong>
+                    @if (provider == "claude")
+                    {
+                        <span class="muted">no fallback — a key is required</span>
+                    }
+                </div>
+
+                @{ var keys = Settings.KeysFor(provider); }
+                @if (keys.Count == 0)
+                {
+                    <div class="menu-note">No key.</div>
+                }
+                else
+                {
+                    <ul class="set-keys">
+                        @foreach (var row in keys)
+                        {
+                            <li>
+                                <span class="mono">@row.Masked</span>
+                                @if (row.Index == 0 && keys.Count > 1)
+                                {
+                                    <span class="muted">first</span>
+                                }
+                                <div class="spacer"></div>
+                                @* Every one of these is named "Remove"; which key it removes was
+                                   adjacent text, not part of the name. *@
+                                <button class="mini danger-btn"
+                                        aria-label="Remove @provider key ending @row.Masked"
+                                        @onclick="() => Remove(row.Provider, row.Index)">Remove</button>
+                            </li>
+                        }
+                    </ul>
+                    @if (keys.Count > 1)
+                    {
+                        <div class="set-note muted">
+                            Extra keys are failover: one that hits a rate limit or an auth error
+                            hands off to the next.
+                        </div>
+                    }
+                }
+
+                @* Both the field and the button are rendered once per provider. Named only by an
+                   identical placeholder, they were indistinguishable: a screen reader announced
+                   "Paste a key, edit, password" two or three times with nothing to tell the
+                   Claude field from the OpenAI one. *@
+                <div class="set-add">
+                    <label class="visually-hidden" for="key-@provider">@provider API key</label>
+                    <input type="password" id="key-@provider" placeholder="Paste a key…"
+                           autocomplete="off" value="@Draft(provider)"
+                           @oninput="e => drafts[provider] = e.Value?.ToString() ?? string.Empty" />
+                    <button class="mini" disabled="@(string.IsNullOrWhiteSpace(Draft(provider)))"
+                            aria-label="Add a @provider key"
+                            @onclick="() => Add(provider)">Add</button>
+                </div>
+            </div>
+        }
+    </section>
+
+    <section class="set-block">
+        <h3>Reading aloud</h3>
+        <p class="set-note">
+            Read-aloud uses a local voice by default — free, offline, and unlimited. An ElevenLabs
+            key is only needed to hear a passage in the book's own narration voice.
+        </p>
+
+        @{ var voice = ReadAloud.Probe(); }
+        <p class="set-note">
+            @if (voice.LocalReady)
+            {
+                <span class="set-ok">Local voice ready — replays cost nothing.</span>
+            }
+            else if (voice.CloudReady)
+            {
+                <span class="set-warn">
+                    No local voice, so read-aloud uses ElevenLabs and spends characters on every
+                    replay.
+                </span>
+                <br />
+                <span class="muted">@voice.LocalBlocker</span>
+            }
+            else
+            {
+                <span class="set-warn">Nothing can speak yet.</span>
+                <br />
+                <span class="muted">@voice.LocalBlocker</span>
+            }
+        </p>
+        @* "A key is already set" was communicated only by a placeholder, which disappears on the
+           first keystroke and is never a label. It is real text now. *@
+        <p class="set-note">
+            @(Settings.HasElevenLabsKey
+              ? "A key is set. Entering one here replaces it."
+              : "No ElevenLabs key is set.")
+        </p>
+        <div class="set-add">
+            <label class="visually-hidden" for="key-elevenlabs">ElevenLabs API key</label>
+            <input type="password" id="key-elevenlabs" autocomplete="off"
+                   placeholder="ElevenLabs key…" value="@elevenDraft"
+                   @oninput="e => elevenDraft = e.Value?.ToString() ?? string.Empty" />
+            <button class="mini" disabled="@(string.IsNullOrWhiteSpace(elevenDraft))"
+                    @onclick="SaveElevenLabs">Save</button>
+        </div>
+    </section>
+
+    <section class="set-block">
+        <h3>Dictation</h3>
+        <p class="set-note">
+            Spoken turns are transcribed with this book's own proper nouns supplied to the model,
+            so invented names come back spelled the way the manuscript spells them. The recording
+            itself is kept beside the turn — a transcription error otherwise reads exactly like a
+            change of mind.
+        </p>
+
+        @{ var ear = Speech.Probe(); }
+        <p class="set-note">
+            @if (ear.Ready)
+            {
+                <span class="set-ok">Dictation ready — @ear.Engine.</span>
+                <span class="muted">About four cents per hour of audio on Groq.</span>
+            }
+            else
+            {
+                <span class="set-warn">Nothing can transcribe yet.</span>
+                <br />
+                <span class="muted">@ear.Blocker</span>
+            }
+        </p>
+    </section>
+
+    @* Adding or removing a key destroys the button that was just pressed, so focus drops to the
+       body — the confirmation was silent AND the focus was gone. *@
+    <div class="banner info" role="status" style="@(note is null ? "display:none" : null)">@note</div>
+
+    <div class="modal-actions">
+        <div class="spacer"></div>
+        <button class="primary" @onclick="() => OnClose.InvokeAsync()">Done</button>
+    </div>
+</div>
+
+@code {
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private readonly Dictionary<string, string> drafts = new();
+    private string elevenDraft = "";
+    private string? note;
+
+    private string Draft(string provider) => drafts.TryGetValue(provider, out var v) ? v : "";
+
+    private void Add(string provider)
+    {
+        Settings.AddKey(provider, Draft(provider));
+        drafts[provider] = "";
+        note = $"Added a {provider} key. It is in use from the next question — no restart needed.";
+    }
+
+    private void Remove(string provider, int index)
+    {
+        Settings.RemoveAt(provider, index);
+        note = $"Removed a {provider} key.";
+    }
+
+    private void SaveElevenLabs()
+    {
+        Settings.SetElevenLabsKey(elevenDraft);
+        elevenDraft = "";
+        note = "Saved the ElevenLabs key.";
+    }
+
+    private ElementReference dialog;
+    private bool wired;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (wired) return;
+        wired = true;
+        try { await JS.InvokeVoidAsync("proseModal.open", dialog); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+    }
+
+    private Task OnKeyDown(KeyboardEventArgs e)
+        => e.Key == "Escape" ? OnClose.InvokeAsync() : Task.CompletedTask;
+
+    public async ValueTask DisposeAsync()
+    {
+        try { await JS.InvokeVoidAsync("proseModal.close"); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+    }
+}

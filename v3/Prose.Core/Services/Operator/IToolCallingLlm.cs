@@ -16,6 +16,11 @@ public interface IToolCallingLlm
     /// <summary>Display name for logging/diagnostics (e.g. "Claude", "OpenAI").</summary>
     string Name { get; }
 
+    /// <summary>The resolved model id this instance calls. Needed to price a turn: the ledger
+    /// looks rates up by model, and this path never reaches <c>LlmRouter</c>, which is where every
+    /// other call in the system gets priced.</summary>
+    string Model { get; }
+
     /// <summary>True if this provider has usable credentials right now.</summary>
     Task<bool> IsConfiguredAsync();
 
@@ -65,5 +70,17 @@ public abstract record AssistantPart
 /// <summary>One tool's result, keyed back to the <see cref="AssistantPart.ToolCall"/> that requested it.</summary>
 public sealed record ToolResultPart(string ToolCallId, string Content, bool IsError);
 
+/// <summary>
+/// What a turn actually consumed, as the provider reported it.
+///
+/// <para>Real counts, never an estimate from text length. This path does not go through
+/// <c>LlmRouter</c>, so it is also the only place the token ledger can learn what a tool-calling
+/// turn cost — and an interactive surface that shows the author a running total must not show
+/// them a guess.</para>
+/// </summary>
+public sealed record TokenUsage(int InputTokens, int OutputTokens);
+
 /// <summary>Everything the assistant did in the turn just completed.</summary>
-public sealed record ToolTurnResult(IReadOnlyList<AssistantPart> Parts);
+/// <param name="Usage">Null when the provider did not report it; callers must tolerate that
+/// rather than assuming zero cost.</param>
+public sealed record ToolTurnResult(IReadOnlyList<AssistantPart> Parts, TokenUsage? Usage = null);
