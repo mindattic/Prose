@@ -45,6 +45,8 @@
              OnToggleFind="OpenFind"
              FindingsOpen="findingsOpen"
              OnToggleFindings="() => findingsOpen = !findingsOpen"
+             LedgerOpen="ledgerOpen"
+             OnToggleLedger="() => ledgerOpen = !ledgerOpen"
              Scale="scale"
              OnScale="StepScaleAsync" />
 
@@ -140,6 +142,13 @@
             }
         </main>
 
+        @if (ledgerOpen && book is not null)
+        {
+            <LedgerPanel BookNodeId="book.Id"
+                         OnJumpToBeat="OpenBeatAsync"
+                         OnClose="() => ledgerOpen = false" />
+        }
+
         @if (findingsOpen && book is not null)
         {
             <FindingsPanel BookNodeId="book.Id"
@@ -170,6 +179,16 @@
         <span>PID: @hubProcessId</span>
         <span class="sep">·</span>
         <span>@(connected ? "Connected" : "Disconnected")</span>
+        @if (otherSessions.Count > 0)
+        {
+            @* Presence. The session rows have existed for a long time and nothing read them, so
+               the first the author knew of a second editor was a conflict banner. *@
+            <span class="sep">·</span>
+            <span class="presence" role="status"
+                  title="@string.Join(" · ", otherSessions.Select(s => $"{s.Label} ({s.Kind}), since {s.StartedAt.ToLocalTime():HH:mm}"))">
+                ⚠ @otherSessions.Count other editing session@(otherSessions.Count == 1 ? "" : "s") open
+            </span>
+        }
         <span class="sep">·</span>
         <span role="status">@activity</span>
         @if (sweepNote is not null)
@@ -352,6 +371,14 @@
     /// at, not a thing that should sit beside the prose demanding attention while they write.</summary>
     private bool findingsOpen;
 
+    /// <summary>The obligation ledger. Closed by default, like Findings — it is a thing the
+    /// author goes and consults, not a thing that should sit beside the prose while they write.</summary>
+    private bool ledgerOpen;
+
+    /// <summary>Editing passes already open on this book, from anywhere — another window, a CLI
+    /// command, an MCP tool.</summary>
+    private IReadOnlyList<WriterService.OtherSession> otherSessions = [];
+
     // ── Editor callbacks ───────────────────────────────────────────────────
 
     private void OnDraftChanged(string text) => draft = text;
@@ -451,6 +478,11 @@
         StateHasChanged();
 
         spine = await Writer.GetSpineAsync(b.Id);
+
+        // Checked on open, once. Two windows editing the same beat surfaces as a conflict banner
+        // after the fact; knowing beforehand is what lets the author avoid it.
+        otherSessions = await Writer.OpenSessionsAsync(b.Id);
+
         activity = "Idle";
         if (spine.Count > 0) await OpenBeatAsync(spine[0].BeatId);
     }

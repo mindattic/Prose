@@ -199,6 +199,10 @@
                 {
                     <button class="mini" @onclick="ResolveAsync">Mark resolved</button>
                 }
+                @* A conversation the author cannot take out of this panel is a record only this
+                   panel can read. *@
+                <button class="mini" @onclick="ExportAsync"
+                        title="Copy this whole discussion as markdown">Copy</button>
                 @if (micSupported)
                 {
                     <button class="@MicClass(FollowUpBox)" @onclick="() => ToggleMicAsync(FollowUpBox)"
@@ -555,6 +559,27 @@
         if (chunker?.Flush() is { Length: > 0 } tail) _ = SpeakChunkAsync(tail);
         chunker = null;
         streaming.Clear();
+    }
+
+    /// <summary>
+    /// Put the whole thread on the clipboard as markdown.
+    /// </summary>
+    private async Task ExportAsync()
+    {
+        if (openThread is null) return;
+        try
+        {
+            var markdown = await Discuss.ExportThreadAsync(BookNodeId, openThread.Id);
+            if (markdown is null) { error = "That discussion could not be exported."; return; }
+
+            var ok = await JsAsync<bool>("proseClipboard.write", markdown);
+            heard = ok
+                ? "The discussion is on the clipboard as markdown."
+                // Clipboard access can be refused, and silently failing to copy is the kind of
+                // thing the author only discovers when they paste nothing into a document.
+                : "The clipboard could not be written to.";
+        }
+        catch (Exception ex) { error = $"Could not export: {ex.Message}"; }
     }
 
     private Task AnswerChoiceAsync(string label)

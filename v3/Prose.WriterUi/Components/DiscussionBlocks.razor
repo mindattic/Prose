@@ -81,6 +81,68 @@
             </div>
             break;
 
+        case DiscussionBlock.Table t2:
+            <figure class="d-table-wrap">
+                @if (t2.Caption is { Length: > 0 })
+                {
+                    <figcaption class="d-table-caption">@t2.Caption</figcaption>
+                }
+                <table class="d-table">
+                    <thead>
+                        <tr>
+                            @foreach (var col in t2.Columns)
+                            {
+                                <th scope="col">@col</th>
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var row in t2.Rows)
+                        {
+                            <tr>
+                                @for (var c = 0; c < t2.Columns.Count; c++)
+                                {
+                                    @* Padded rather than indexed blindly: a short row from a model
+                                       must not take the panel down mid-render. *@
+                                    <td>@(c < row.Count ? row[c] : "")</td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </figure>
+            break;
+
+        case DiscussionBlock.Chart c3:
+            @* Inline SVG, drawn here from the numbers. No charting library: this UI runs inside a
+               desktop window that may have no network at all, and a chart that silently fails to
+               draw is worse than the table it replaced. *@
+            <figure class="d-chart">
+                <figcaption class="d-chart-title">@c3.Title</figcaption>
+                <svg viewBox="@($"0 0 100 {ChartHeight(c3)}")" role="img"
+                     aria-label="@ChartDescription(c3)" class="d-chart-svg"
+                     preserveAspectRatio="none">
+                    @{ var max = c3.Bars.Count == 0 ? 1 : Math.Max(1, c3.Bars.Max(b => b.Value)); }
+                    @for (var i = 0; i < c3.Bars.Count; i++)
+                    {
+                        var bar = c3.Bars[i];
+                        var width = Math.Max(0.5, 100 * Math.Max(0, bar.Value) / max);
+                        <rect x="0" y="@(i * 14 + 2)" width="@width.ToString("0.##", Invariant)"
+                              height="8" rx="1" class="d-chart-bar"></rect>
+                    }
+                </svg>
+                @* The numbers in text beside the picture, always. An SVG alone is unreadable to a
+                   screen reader whatever its aria-label says, and these are counts, not trends. *@
+                <ul class="d-chart-legend">
+                    @foreach (var bar in c3.Bars)
+                    {
+                        <li><span class="d-chart-label">@bar.Label</span>
+                            <span class="d-chart-value">@bar.Value.ToString("0.##")@c3.Unit</span></li>
+                    }
+                </ul>
+            </figure>
+            break;
+
         case DiscussionBlock.Proposal p:
             @* The only thing in the Writer that can change prose, so it shows the exact words
                that would be written and nothing acts until Approve. *@
@@ -150,6 +212,17 @@
         "refused" => "Could not be applied — the passage had changed. Nothing was written.",
         _ => status,
     };
+
+    private static readonly System.Globalization.CultureInfo Invariant =
+        System.Globalization.CultureInfo.InvariantCulture;
+
+    private static int ChartHeight(DiscussionBlock.Chart c) => Math.Max(14, c.Bars.Count * 14 + 4);
+
+    /// <summary>What the picture says, for anyone not looking at it. Not "bar chart" — the values,
+    /// because they are the content and the shape is only how they are arranged.</summary>
+    private static string ChartDescription(DiscussionBlock.Chart c)
+        => $"{c.Title}: " + string.Join(", ",
+            c.Bars.Select(b => $"{b.Label} {b.Value.ToString("0.##", Invariant)}{c.Unit}"));
 
     private static readonly Markdig.MarkdownPipeline Pipeline =
         new Markdig.MarkdownPipelineBuilder()

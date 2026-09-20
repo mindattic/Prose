@@ -25,6 +25,8 @@ namespace Prose.Core.Services.Discussion;
 [JsonDerivedType(typeof(Choice), "choice")]
 [JsonDerivedType(typeof(Proposal), "proposal")]
 [JsonDerivedType(typeof(Confirm), "confirm")]
+[JsonDerivedType(typeof(Table), "table")]
+[JsonDerivedType(typeof(Chart), "chart")]
 public abstract record DiscussionBlock
 {
     /// <summary>Prose. Markdown, rendered through a restricted pipeline.</summary>
@@ -73,7 +75,38 @@ public abstract record DiscussionBlock
         string Restatement,
         IReadOnlyList<string> Steps,
         string? Caution = null) : DiscussionBlock;
+
+    /// <summary>
+    /// Measured rows. For the answers that are counts rather than prose — where a term appears,
+    /// how many places, which chapters — because a table of eight rows read out as a paragraph is
+    /// the least usable form the same facts could take.
+    /// </summary>
+    /// <param name="Rows">Each the same length as <paramref name="Columns"/>; a short row is
+    /// padded and a long one truncated by the renderer rather than throwing.</param>
+    public sealed record Table(
+        IReadOnlyList<string> Columns,
+        IReadOnlyList<IReadOnlyList<string>> Rows,
+        string? Caption = null) : DiscussionBlock;
+
+    /// <summary>
+    /// A bar chart of labelled values.
+    /// </summary>
+    /// <remarks>
+    /// <para>Rendered as inline SVG, server-side, from these numbers. Deliberately not a charting
+    /// library from a CDN: this UI runs inside a desktop window that may have no network at all,
+    /// and a chart that silently fails to draw is worse than a table.</para>
+    ///
+    /// <para>Bars only. The one shape this conversation actually produces is "this term, in these
+    /// places, this many times", and a chart type the data does not call for is decoration.</para>
+    /// </remarks>
+    public sealed record Chart(
+        string Title,
+        IReadOnlyList<ChartBar> Bars,
+        string? Unit = null) : DiscussionBlock;
 }
+
+/// <param name="Value">Non-negative. A negative count is not a thing this conversation measures.</param>
+public sealed record ChartBar(string Label, double Value);
 
 /// <param name="Label">Short, and the thing the author actually picks.</param>
 /// <param name="Detail">What choosing it means or costs. Optional.</param>
@@ -150,6 +183,18 @@ public static class DiscussionContent
 
                 case DiscussionBlock.Proposal p:
                     sb.AppendLine($"[A change was proposed: {p.ProposalId}]");
+                    break;
+
+                case DiscussionBlock.Table t:
+                    if (t.Caption is not null) sb.AppendLine(t.Caption);
+                    sb.AppendLine(string.Join(" | ", t.Columns));
+                    foreach (var row in t.Rows) sb.AppendLine(string.Join(" | ", row));
+                    break;
+
+                case DiscussionBlock.Chart c2:
+                    sb.AppendLine(c2.Title);
+                    foreach (var bar in c2.Bars)
+                        sb.AppendLine($"  {bar.Label}: {bar.Value:0.##}{c2.Unit}");
                     break;
             }
         }

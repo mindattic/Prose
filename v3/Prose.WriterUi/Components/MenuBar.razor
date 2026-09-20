@@ -116,6 +116,11 @@
                 @onclick="() => OnToggleFindings.InvokeAsync()"
                 title="What the instruments have found in this book"
                 aria-label="Findings">Findings</button>
+        @* The ledger has had a service, a schema, a CLI and MCP tools for months and no window. *@
+        <button class="mini @(LedgerOpen ? "on" : "")" aria-pressed="@LedgerOpen"
+                @onclick="() => OnToggleLedger.InvokeAsync()"
+                title="What this book has promised and what it has paid off"
+                aria-label="Obligations">Owed</button>
     </div>
 }
 
@@ -154,6 +159,9 @@
 
     [Parameter] public bool FindingsOpen { get; set; }
     [Parameter] public EventCallback OnToggleFindings { get; set; }
+
+    [Parameter] public bool LedgerOpen { get; set; }
+    [Parameter] public EventCallback OnToggleLedger { get; set; }
 
     [Parameter] public EventCallback OnReadAloud { get; set; }
     [Parameter] public EventCallback OnStopReading { get; set; }

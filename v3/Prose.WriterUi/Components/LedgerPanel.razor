@@ -1,0 +1,163 @@
+@* The narrative obligation ledger, in the editor.
+
+   The ledger has had a service, a schema, a CLI, MCP tools and a trial balance for a long time and
+   ZERO user interface. Every promise the book makes and every one it pays off has been sitting in
+   a table the author could only reach from a terminal — which, for a thing whose whole value is
+   "what has this book promised that it has not delivered", is close to not having it.
+
+   Read-only. Opening, closing, dropping and deferring an obligation are authored decisions with
+   their own audit trail, and the way to make one from here is to talk about the beat. *@
+
+@using Prose.Core.Services.Obligations
+@inject LedgerUiService Ledger
+
+<aside class="ledger" aria-label="Obligations">
+    <header class="ledger-head">
+        <h2 class="ledger-title">Obligations</h2>
+        <div class="spacer"></div>
+        <button class="mini" @onclick="() => OnClose.InvokeAsync()" aria-label="Close obligations">✕</button>
+    </header>
+
+    @if (balance is null)
+    {
+        <div class="empty">Loading…</div>
+    }
+    else if (balance.CouldNotLook)
+    {
+        @* Not "this book owes nothing". The trial balance carries its own CouldNotLook precisely
+           because an empty ledger and an unscanned one look identical from the outside, and
+           reporting the second as the first is the whole failure mode of the instrument. *@
+        <div class="empty">
+            <strong>This book has not been scanned.</strong>
+            Nothing here means nothing was looked at — not that the book owes nothing.
+            @if (balance.TotalBeats > 0)
+            {
+                <span> @balance.ScannedBeats of @balance.TotalBeats beats carry a scan.</span>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="ledger-balance">
+            <span class="@(balance.Balanced ? "set-ok" : "set-warn")">
+                @(balance.Balanced ? "Balanced" : $"{balance.OverdueWithoutDecision.Count} overdue without a decision")
+            </span>
+            <span class="muted">
+                @balance.Opened opened · @balance.Closed closed · @balance.CarriedForward carried
+            </span>
+            @if (balance.ScannedBeats < balance.TotalBeats)
+            {
+                <span class="set-warn">
+                    Only @balance.ScannedBeats of @balance.TotalBeats beats have been scanned.
+                </span>
+            }
+        </div>
+
+        <div class="ledger-filter" role="group" aria-label="Which obligations">
+            @foreach (var option in Filters)
+            {
+                <button class="@(filter == option ? "d-intent-btn on" : "d-intent-btn")"
+                        aria-pressed="@(filter == option)"
+                        @onclick="() => SetFilter(option)">@option</button>
+            }
+        </div>
+
+        @if (Shown.Count == 0)
+        {
+            <div class="empty">Nothing @filter.ToLowerInvariant().</div>
+        }
+        else
+        {
+            <ul class="ledger-list">
+                @foreach (var o in Shown)
+                {
+                    <li class="oblig @(o.Overdue ? "overdue" : "")">
+                        <div class="oblig-head">
+                            <span class="oblig-kind">@o.Kind</span>
+                            <span class="muted">ch @o.OriginChapter</span>
+                            @if (o.Overdue)
+                            {
+                                <span class="oblig-overdue">overdue</span>
+                            }
+                            <div class="spacer"></div>
+                            <span class="muted oblig-state">@o.State</span>
+                        </div>
+
+                        <div class="oblig-desc">@o.Description</div>
+
+                        @if (o.OriginQuote is { Length: > 0 })
+                        {
+                            <blockquote class="oblig-quote">@o.OriginQuote</blockquote>
+                        }
+
+                        <div class="oblig-meta">
+                            <span class="muted">due: @o.Due</span>
+                            @if (o.EntityName is { Length: > 0 })
+                            {
+                                <span class="muted">· @o.EntityName</span>
+                            }
+                            @* Provenance, always. An obligation an instrument inferred and one the
+                               author declared are different kinds of claim, and the ledger is only
+                               worth reading if it says which is which. *@
+                            <span class="muted">· @o.Provenance</span>
+                            @if (o.AuthorLocked)
+                            {
+                                <span class="muted">· your decision</span>
+                            }
+                        </div>
+
+                        <div class="oblig-actions">
+                            @if (o.OriginBeatId is { } origin)
+                            {
+                                <button class="mini" @onclick="() => OnJumpToBeat.InvokeAsync(origin)">
+                                    Opened here
+                                </button>
+                            }
+                            @if (o.ClosingBeatId is { } closing)
+                            {
+                                <button class="mini" @onclick="() => OnJumpToBeat.InvokeAsync(closing)">
+                                    Paid off here
+                                </button>
+                            }
+                        </div>
+                    </li>
+                }
+            </ul>
+        }
+    }
+</aside>
+
+@code {
+    [Parameter] public Guid BookNodeId { get; set; }
+    [Parameter] public EventCallback<Guid> OnJumpToBeat { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private static readonly string[] Filters = ["Outstanding", "Overdue", "Closed", "All"];
+
+    private NarrativeObligationService.TrialBalance? balance;
+    private IReadOnlyList<NarrativeObligationService.ObligationView> all = [];
+    private string filter = "Outstanding";
+
+    private Guid loadedFor;
+
+    private IReadOnlyList<NarrativeObligationService.ObligationView> Shown => filter switch
+    {
+        "Overdue" => all.Where(o => o.Overdue).ToList(),
+        "Closed" => all.Where(o => o.State == "closed").ToList(),
+        "All" => all,
+        // Outstanding is the default because it is the question the ledger exists to answer:
+        // what has this book promised that it has not delivered.
+        _ => all.Where(o => o.State is not ("closed" or "dropped" or "withdrawn")).ToList(),
+    };
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (BookNodeId == loadedFor) return;
+        loadedFor = BookNodeId;
+        if (BookNodeId == Guid.Empty) { balance = null; all = []; return; }
+
+        (balance, all) = await Ledger.LoadAsync(BookNodeId);
+    }
+
+    private void SetFilter(string next) => filter = next;
+}

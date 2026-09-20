@@ -774,7 +774,7 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 @media (max-width: 78rem) {
     .body { flex-wrap: wrap; }
 
-    .discuss, .find, .findings {
+    .discuss, .find, .findings, .ledger {
         flex: 1 1 100%;
         max-height: 60vh;
         border-left: 0;
@@ -802,3 +802,80 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 
     .conflict { flex-direction: column; }
 }
+
+/* ── the obligation ledger ────────────────────────────────────────────── */
+
+.ledger {
+    flex: 0 0 26rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow-y: auto;
+    background: var(--color-bg-1);
+    border-left: 1px solid var(--color-border);
+    font-size: var(--text-sm);
+}
+
+.ledger-head {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    background: var(--color-bg-1);
+    z-index: 1;
+}
+
+.ledger-title { margin: 0; font-size: var(--text-sm); color: var(--color-fg-strong); font-weight: 600; }
+
+.ledger-balance {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    line-height: 1.5;
+}
+
+.ledger-filter { display: flex; gap: 2px; padding: var(--space-2) var(--space-3); }
+
+.ledger-list { list-style: none; margin: 0; padding: 0; }
+
+.oblig { padding: var(--space-2) var(--space-3); border-top: 1px solid var(--color-border); }
+
+/* An overdue promise is the one thing in here that is actually wrong, so it is marked on the
+   edge as well as in the row — a colour word among colour words is easy to read past. */
+.oblig.overdue { border-left: 2px solid var(--color-warning); }
+
+.oblig-head { display: flex; align-items: baseline; gap: var(--space-2); font-size: var(--text-xs); }
+.oblig-head .spacer { flex: 1; }
+
+.oblig-kind {
+    padding: 0 4px;
+    background: var(--color-mini-bg);
+    color: var(--color-mini-fg);
+    border-radius: var(--radius);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.oblig-overdue { color: var(--color-warning); }
+.oblig-state, .oblig-meta { font-family: var(--font-mono); font-size: var(--text-xs); }
+.oblig-desc { margin: var(--space-1) 0; line-height: 1.5; overflow-wrap: anywhere; }
+
+.oblig-quote {
+    margin: var(--space-1) 0;
+    padding-left: var(--space-2);
+    border-left: 2px solid var(--color-border);
+    font-family: var(--font-prose);
+    color: var(--color-fg-soft);
+    line-height: 1.5;
+}
+
+.oblig-meta { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-bottom: var(--space-1); }
+.oblig-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+
+/* Presence: another window, a CLI command or an MCP tool has this book open. */
+.presence { color: var(--color-warning); }

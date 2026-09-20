@@ -789,3 +789,34 @@ window.proseHotkeys = (() => {
         key() { return PTT; },
     };
 })();
+
+// ── Clipboard ──────────────────────────────────────────────────────────────────────────────
+//
+// navigator.clipboard is not available on every origin and can be refused outright, so this
+// reports failure as a value rather than throwing across the interop boundary — and falls back to
+// the old execCommand path, which still works in WebView2 where the async API is gated.
+window.proseClipboard = {
+    async write(text) {
+        try {
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(text);
+                return true;
+            }
+        } catch { /* fall through to the textarea route */ }
+
+        try {
+            const scratch = document.createElement('textarea');
+            scratch.value = text;
+            // Off-screen rather than display:none — a hidden element cannot be selected.
+            scratch.style.position = 'fixed';
+            scratch.style.left = '-9999px';
+            document.body.appendChild(scratch);
+            scratch.select();
+            const ok = document.execCommand('copy');
+            document.body.removeChild(scratch);
+            return ok;
+        } catch {
+            return false;
+        }
+    }
+};

@@ -40,6 +40,10 @@ public static class ServiceCollectionExtensions
         // Read Mode. Scoped for the flow-universe pin, like the rest — and deliberately a separate
         // service from WriterService, because the read must not be able to reach an editing verb.
         services.AddScoped<ReadService>();
+        // The findings inbox and the obligation ledger. Both read data the rest of the system has
+        // been writing for months with nothing in the editor reading it back.
+        services.AddScoped<FindingsUiService>();
+        services.AddScoped<LedgerUiService>();
         return services;
     }
 }

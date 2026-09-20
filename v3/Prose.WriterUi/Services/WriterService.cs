@@ -24,6 +24,7 @@ public sealed class WriterService(
     DocxExportService docx,
     ManuscriptExportService manuscript,
     TokenLedger ledger,
+    EditSessionService editSessions,
     IUniverseContext universe)
 {
     /// <summary>A book the author can open.</summary>
@@ -138,6 +139,33 @@ public sealed class WriterService(
 
     private static string Shorten(string s, int max)
         => s.Length <= max ? s : s[..(max - 1)].TrimEnd() + "…";
+
+    /// <param name="Label">What the other session called itself.</param>
+    public sealed record OtherSession(string Label, string Kind, DateTime StartedAt);
+
+    /// <summary>
+    /// Editing sessions already open on this book.
+    /// </summary>
+    /// <remarks>
+    /// <para>Read, never started. EditSessionService is a record of a named editing PASS, not
+    /// per-beat presence, and its StartSessionAsync deliberately closes any open auto-session
+    /// first — so a Writer that opened one would evict whatever the CLI or another window had
+    /// running, which is the opposite of presence.</para>
+    ///
+    /// <para>What it can honestly answer is the question that matters: is something else working
+    /// on this tree right now. Two sessions editing the same beat is a conflict banner after the
+    /// fact; knowing beforehand is worth a line in the status bar.</para>
+    /// </remarks>
+    public async Task<IReadOnlyList<OtherSession>> OpenSessionsAsync(
+        Guid bookNodeId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        var sessions = await editSessions.GetSessionsAsync(bookNodeId, limit: 10, ct);
+        return sessions
+            .Where(s => s.ClosedAt is null)
+            .Select(s => new OtherSession(s.Label, s.SessionType, s.StartedAt))
+            .ToList();
+    }
 
     public async Task<OpenBeat?> GetBeatAsync(Guid beatId, CancellationToken ct = default)
     {

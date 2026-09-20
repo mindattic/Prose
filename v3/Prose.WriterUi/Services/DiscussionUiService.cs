@@ -261,6 +261,37 @@ public sealed class DiscussionUiService(
         await proposals.RejectAsync(proposalId, ct: ct);
     }
 
+    /// <summary>
+    /// The whole conversation as markdown.
+    /// </summary>
+    /// <remarks>
+    /// A thread is the record of WHY a passage is the way it is, and that record is worth nothing
+    /// if it can only be read inside one panel of one window. Rendered rather than copied: the
+    /// evidence blocks — measured counts, a confirmation and its steps — have no text form until
+    /// something makes one.
+    /// </remarks>
+    public async Task<string?> ExportThreadAsync(
+        Guid bookNodeId, Guid threadId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var thread = await db.DiscussionThreads.AsNoTracking()
+            .FirstOrDefaultAsync(t => t.Id == threadId, ct);
+        if (thread is null) return null;
+
+        var bookTitle = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.Id == bookNodeId).Select(n => n.Title).FirstOrDefaultAsync(ct);
+
+        var beatLabel = thread.BeatId is { } beatId
+            ? await db.Beats.AsNoTracking().Where(b => b.Id == beatId)
+                .Select(b => $"Beat #{b.Number}").FirstOrDefaultAsync(ct)
+            : null;
+
+        var turns = await discussions.TurnsAsync(threadId, ct);
+        return DiscussionExport.ToMarkdown(thread, turns, bookTitle, beatLabel);
+    }
+
     public Task ResolveAsync(Guid threadId, CancellationToken ct = default)
         => discussions.SetStateAsync(threadId, DiscussionThreadState.Resolved, ct);
 
