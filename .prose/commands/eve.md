@@ -14,7 +14,7 @@ Key inputs:
   `GET /api/outbox/eve` — your job includes making those real (import CLI flag,
   snapshot already exists, outbox endpoints per RFC step 5).
 
-Work milestone-by-milestone with tests (`dotnet test v3/Prose.UnitTests`) and
+Work milestone-by-milestone with tests (`dotnet test src/Prose.UnitTests`) and
 commit directly to the default branch as you complete each RFC step. When done:
 1. Verify the acceptance list at the bottom of the RFC.
 2. Enqueue a first outbox event for consumer `eve`:

@@ -10,7 +10,7 @@ updated: 2026-08-08
 # Prose — User Stories
 > ✅ done (shipped & tested) · 🟡 partial · ⬜ planned · 🗑️ cut. Every ✅ cites the test.
 > Migrated from `ARCHITECTURE.md` §4 (goals table) on 2026-06-07. Test tokens are NUnit
-> methods/classes in `v3/Prose.UnitTests/`. CLI smokes run against LocalDB.
+> methods/classes in `src/Prose.UnitTests/`. CLI smokes run against LocalDB.
 
 ## Epic A — Canon-as-database foundation
 
@@ -99,7 +99,7 @@ updated: 2026-08-08
 
 - **SS-US-G1 ✅** As the author, Book One is an 8-chapter spine, canon-consistent against the
   continuity laws. *Given all 8 chapters, When scanned for forbidden Silence/Chorus power terms,
-  Then CLEAN.* *(verified by the forbidden-term scan recorded in `v3/canon_writes/story_state.md`,
+  Then CLEAN.* *(verified by the forbidden-term scan recorded in `src/canon_writes/story_state.md`,
   2026-05-16; one benign `piezo` substring noted as non-Silence worldbuilding.)*
 - **SS-US-G2 ✅** As the author, *Silence*/*Chorus* canon specs match [SS-LAW-10](BIBLE.md#SS-§5)/
   [SS-LAW-11](BIBLE.md#SS-§5). *(verified by `story_state.md` REWRITTEN 2026-05-16 entries.)*
@@ -128,7 +128,7 @@ updated: 2026-08-08
     at Class-2 schism threshold, 127s LOG GAP, source ID matches 11-year relay shell, first contact
     sent at 01:14, job accepted in morning). *(2026-06-21)*
   - **G5g ⬜** Full 16-chapter review campaign: each chapter ≥82% standalone; cumulative ≥85%.
-    Use: `dotnet run --project v3/Prose.Cli -- --review-strand --slug <slug> --readers 20`
+    Use: `dotnet run --project src/Prose.Cli -- --review-strand --slug <slug> --readers 20`
 
 ## Epic U — Multi-Universe support
 
@@ -498,7 +498,7 @@ updated: 2026-08-08
   Entos, discovers what the Liturgy actually is, and refuses the Canon's writ in the Sinter
   quarantine zone. *Acceptance: book structure seeded + full prose drafted + fact ledger clean +
   logic-sweep verified + exported. (verified by `--archive-book`: 25 leaf nodes / 318 beats /
-  132,504 words; `dotnet test v3/Prose.UnitTests`: 2034/2034 passing; exported VIGL V47.docx/epub/
+  132,504 words; `dotnet test src/Prose.UnitTests`: 2034/2034 passing; exported VIGL V47.docx/epub/
   pdf/txt/md 2026-08-15, mojibake check passed.)*
   - **P1a ✅** Book node + 25 chapter sub-nodes seeded, 318 beats (~132,504 words), SortKey
     100–3000 per chapter. *(structural fix 2026-08-14: all 25 chapters had been silently
@@ -523,7 +523,7 @@ updated: 2026-08-08
     single-quote + short-fragment verification once each gap surfaced against a real finding).
     `--logic-sweep --until-dry` findings dropped 45→20→16→10 across rounds 4-8 before hitting the
     tool's own 8-round safety cap; zero real prose defects found across the whole session.
-    *(verified by `dotnet test v3/Prose.UnitTests`: 2034/2034 passing.)*
+    *(verified by `dotnet test src/Prose.UnitTests`: 2034/2034 passing.)*
   - **P1d ✅** Exported: *VIGL V47.docx/epub/pdf/txt/md* → `R:\Desktop\EPub\MindAttic\SCRY\VIGL\`;
     mojibake check passed; description + keywords + DCM-viz written. *(2026-08-15.)*
 
@@ -873,7 +873,7 @@ updated: 2026-08-08
   extended; seeded 27 GLMZ + 24 SCRY terms same day, both from primary-source docs, no invented
   definitions.)*
 
-- **SS-US-O3 ✅** As the author, KdpPublish (`v3/StreetSamurai.KdpPublish`, WPF/WebView2)
+- **SS-US-O3 ✅** As the author, KdpPublish (`src/StreetSamurai.KdpPublish`, WPF/WebView2)
   automates a book's **first-time** KDP listing, not just republishing an existing one — no
   ASIN/KdpTitleId required going in. *(evidence: `KdpOperatorService.ProcessBookAsync` branches to
   a 25-step `BuildNewListingSystemPrompt` flow when `Asin`/`KdpTitleId`/`PublishUrl` are all null;
@@ -892,7 +892,7 @@ updated: 2026-08-08
 ### Audit log
 
 - **2026-07-04 — Voting kill-switch SHIPPED ([SS-A44](BIBLE.md#SS-LAW-17)).** Central `VotingGate`
-  (`v3/Prose.Core/Services/VotingGate.cs`) reads `legion.json` `"votingEnabled"` (default
+  (`src/Prose.Core/Services/VotingGate.cs`) reads `legion.json` `"votingEnabled"` (default
   OFF). Gated at service entry: `NodeReviewService` (4 ballot methods), `EntityReviewService`,
   `EntityRatingService`, `StoryQualityService`, `BookReviewService`, and `ChapterCloseProcessorService`
   (skips the tiered panel + narrative fork gracefully). CLI `--allow-votes` on `--review-node`

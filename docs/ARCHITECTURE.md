@@ -9,7 +9,7 @@
 
 ## 1. The project map
 
-Nine C# projects live under `v3/`. Four are the system; the rest are auxiliary tools or generated
+Nine C# projects live under `src/`. Four are the system; the rest are auxiliary tools or generated
 contract types.
 
 | Project | Kind | Role |
@@ -33,12 +33,12 @@ Neither `CliDispatch` nor `ToolDispatch` makes any decision about *which* code t
 "resolve this exact string to a type/method and call it." There is no request routing,
 inference, or fallback logic in either.
 
-- **`CliDispatch.ExecuteCoreInnerAsync`** (`v3/Prose.Hub/CliDispatch.cs`): resolves a handler
+- **`CliDispatch.ExecuteCoreInnerAsync`** (`src/Prose.Hub/CliDispatch.cs`): resolves a handler
   `Type` by exact name (`ResolveHandlerType`, cached in a `ConcurrentDictionary`), reflects its
   `RunAsync`/`Run` method, redirects `Console.Out`/`Error`/`In` and the working directory for the
   call's duration (serialized through `ConsoleGate`, a single global semaphore â€” one CLI command
   runs inside Hub at a time), invokes it, restores state, and writes a `CommandLedgerEntry` row.
-- **`ToolDispatch.InvokeCoreAsync`** (`v3/Prose.Hub/ToolDispatch.cs`): identical shape for MCP â€”
+- **`ToolDispatch.InvokeCoreAsync`** (`src/Prose.Hub/ToolDispatch.cs`): identical shape for MCP â€”
   resolve `{ToolClass}` type, resolve `{Method}Impl`, JSON-deserialize args positionally by
   parameter name, invoke, log to the same ledger table.
 
@@ -97,11 +97,11 @@ the Blazor UI (`ed22bd4f6`). `ProseWriterRouter` is the only live generation ent
 ## 5. The WriteGate â€” the one chokepoint for writes
 
 Shipped 2026-08-22 (commits `06959f65a`, `eac584be0`). `ProseDbContext.SaveChanges`/
-`SaveChangesAsync` (`v3/Prose.Core/Data/ProseDbContext.cs`) run two extra steps beyond the base
+`SaveChangesAsync` (`src/Prose.Core/Data/ProseDbContext.cs`) run two extra steps beyond the base
 EF save, for **every** write on a `ProseDbContext` regardless of caller:
 
 - **Sync, pre-save, can reject**: walks `ChangeTracker.Entries()` against every registered
-  `IWriteGateSyncCheck` (`v3/Prose.Core/Services/WriteGate/`); a failing check throws
+  `IWriteGateSyncCheck` (`src/Prose.Core/Services/WriteGate/`); a failing check throws
   `WriteGateRejectedException` and aborts the save. Three checks are live:
   `SelfAliasSyncCheck` (alias can't equal its own entity's name), `CrossUniverseOriginCheck`
   (`Entity.OriginNodeId` must be in the entity's own universe), `PreviousNodeCycleCheck` (a
@@ -171,5 +171,5 @@ access to fix via `set_canon_section`, not a raw SQL workaround.
 | Logic-sweep / QA methodology | `docs/LOGIC.md`, `docs/READER-QA.md`, `docs/LEDGER.md` |
 | Story Ledger â€” the record of what is true, and cross-predicate contradiction detection | `docs/LEDGER.md` (added 2026-09-04, third peer of LOGIC/READER-QA) |
 | MCP tool reference (auto-generated, current) | `docs/MCP_TOOLS.md` (309 tools) |
-| CLI command reference (auto-generated, current) | `docs/CLI_COMMANDS.md` (274 commands) â€” **gap closed 2026-09-04.** `CommandDocGenerator` parses the dispatch chain in `Program.cs` rather than reflecting over attributes, because CLI handlers carry none; refresh with `dotnet run --project v3/Prose.Cli -- --export-commands docs/CLI_COMMANDS.md` |
+| CLI command reference (auto-generated, current) | `docs/CLI_COMMANDS.md` (274 commands) â€” **gap closed 2026-09-04.** `CommandDocGenerator` parses the dispatch chain in `Program.cs` rather than reflecting over attributes, because CLI handlers carry none; refresh with `dotnet run --project src/Prose.Cli -- --export-commands docs/CLI_COMMANDS.md` |
 | Story/feature status | `docs/USER_STORIES.md` (stale ~1 week as of 2026-08-23 â€” missing this week's write-gate/architecture work) |

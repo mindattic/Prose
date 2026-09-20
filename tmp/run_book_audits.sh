@@ -33,7 +33,7 @@ SLUGS[VIGL]="vigil-s-end-019f5767|scry"
 for code in "${!SLUGS[@]}"; do
   IFS='|' read -r slug universe <<< "${SLUGS[$code]}"
   echo "=== $code ($slug, $universe) ==="
-  dotnet run --project v3/Prose.Cli -- --book-audit --slug "$slug" --universe "$universe" --json \
+  dotnet run --project src/Prose.Cli -- --book-audit --slug "$slug" --universe "$universe" --json \
     > "tmp/audits/${code}.json" 2> "tmp/audits/${code}.log"
   echo "  exit=$? done"
 done

@@ -1,11 +1,11 @@
 # Prose CLI Commands
 
 > **GENERATED — do not hand-edit.** Produced by `CommandDocGenerator` from the
-> dispatch chain in `v3/Prose.Cli/Program.cs`, which is the single source of truth
+> dispatch chain in `src/Prose.Cli/Program.cs`, which is the single source of truth
 > for what the CLI actually does. To refresh:
 > 
 > ```powershell
-> dotnet run --project v3/Prose.Cli -- --export-commands docs/CLI_COMMANDS.md
+> dotnet run --project src/Prose.Cli -- --export-commands docs/CLI_COMMANDS.md
 > ```
 >
 > Every command executes **inside Prose.Hub** — `Prose.Cli` forwards to it and never
@@ -878,7 +878,7 @@ render a node to .docx + .epub + .pdf + .txt + metadata artifacts (description.t
 
 ### `--export-personas-json`
 
-prose --export-personas-json [--out <path>] Exports all 1024 Legion persona details + OCEAN psychometric profiles to JSON for consumption by the Python ML package (v3/ml/artifacts/personas.json).
+prose --export-personas-json [--out <path>] Exports all 1024 Legion persona details + OCEAN psychometric profiles to JSON for consumption by the Python ML package (src/ml/artifacts/personas.json).
 
 
 ### `--export-synopsis`

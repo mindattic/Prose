@@ -23,5 +23,5 @@ no score) unless doing so would leave fewer than 10 rows — relay the table as 
 
 **Note on history:** this command previously ran a raw `sqlcmd` query against `Strands`/
 `StrandBeats`/`StrandReviewSummaries` — tables that predate the current Book/Chapter/Beat model
-and no longer exist. `prose --progress` (`v3/Prose.Cli/Cli/ProgressCli.cs`) is the real
+and no longer exist. `prose --progress` (`src/Prose.Cli/Cli/ProgressCli.cs`) is the real
 replacement against the live schema, not a resurrection of the old query.

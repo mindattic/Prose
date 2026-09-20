@@ -137,12 +137,12 @@ reconciled.
 ## Architecture at a Glance
 
 ```
-prose CLI  (dotnet run --project v3/Prose.Cli -- <args>)          Prose.Mcp  (MCP server)
-        │  265 dispatched --flag handlers, v3/Prose.Cli/Program.cs      │  322 [McpServerTool] methods,
-        │  + v3/Prose.Cli/Cli/ (227 handler files)                      │  ~40 tool families, v3/Prose.Mcp/Tools*.cs
+prose CLI  (dotnet run --project src/Prose.Cli -- <args>)          Prose.Mcp  (MCP server)
+        │  265 dispatched --flag handlers, src/Prose.Cli/Program.cs      │  322 [McpServerTool] methods,
+        │  + src/Prose.Cli/Cli/ (227 handler files)                      │  ~40 tool families, src/Prose.Mcp/Tools*.cs
         └──────────────────────────┬───────────────────────────────────┘
                                     ▼
-                    Core services  (v3/Prose.Core/)
+                    Core services  (src/Prose.Core/)
                     │  311 services directly under Services/, 353 including
                     │  Services/Audit, /CoverImage, /Local, /Operator (KDP-automation
                     │  tool-calling only), /VideoGen — see The Subsystems below
@@ -166,10 +166,10 @@ doesn't:
 
 | Project | Type | Purpose |
 |---|---|---|
-| `Prose.KdpPublish` | WPF + WebView2 desktop app | Automates the Amazon KDP publishing workflow via `KdpOperatorService`'s tool-calling loop over `IToolCallingLlm` (`v3/Prose.Core/Services/Operator/`) — a provider-neutral agentic contract implemented by `AnthropicToolCallingLlm` (tried first) and `OpenAiToolCallingLlm` (in-process fallback), so the tool loop/prompts never change when the vendor does; tools live in `KdpTools/` (`FindAndOpenBookTool`, `UploadManuscriptTool`, `SetPriceTool`, `SelectCategoriesTool`, `MarkPublishedTool`, …). Unrelated to the deleted prose-writing Operator from Epoch 2 |
+| `Prose.KdpPublish` | WPF + WebView2 desktop app | Automates the Amazon KDP publishing workflow via `KdpOperatorService`'s tool-calling loop over `IToolCallingLlm` (`src/Prose.Core/Services/Operator/`) — a provider-neutral agentic contract implemented by `AnthropicToolCallingLlm` (tried first) and `OpenAiToolCallingLlm` (in-process fallback), so the tool loop/prompts never change when the vendor does; tools live in `KdpTools/` (`FindAndOpenBookTool`, `UploadManuscriptTool`, `SetPriceTool`, `SelectCategoriesTool`, `MarkPublishedTool`, …). Unrelated to the deleted prose-writing Operator from Epoch 2 |
 | `Prose.LlmCli` (`prose-llm`) | Standalone console app, **no** `Prose.Core` reference | Generic multi-provider LLM CLI escape hatch over `MindAttic.Legion`'s `LegionClient` — works even if `Prose.Core`/the DB/EF migrations are broken, since its only dependencies are `MindAttic.Legion` + `MindAttic.Vault`. Syntax: `prose-llm --provider <id> --prompt <text\|@file\|-> [--system <text>] [--temperature <n>] [--max-tokens <n>] [--model <id>] [--json]`; speaks every provider Legion knows (broader than `LlmRouter`'s set — adds cohere/xai/groq/together/openrouter/fireworks). The last-resort fallback tier in `LlmRouter`'s chain, and a manual terminal tool during an outage |
 
-A handful of small one-off maintenance console apps also live under `v3/` (`PromoteEsperanza`,
+A handful of small one-off maintenance console apps also live under `src/` (`PromoteEsperanza`,
 `PurgeOldNames`, `RunRepair`, `SyncSableProse`, `WriteSableOrigin`) — narrow, single-purpose data
 migration utilities, not part of the standing architecture.
 
@@ -305,7 +305,7 @@ MCP equivalents: `workflow_status`, `workflow_status_global`, `workflow_beat_mod
 
 ## World Graph and Interconnectivity
 
-`WorldGraphService` (`v3/Prose.Core/Services/WorldGraphService.cs`) builds an in-memory
+`WorldGraphService` (`src/Prose.Core/Services/WorldGraphService.cs`) builds an in-memory
 [QuikGraph](https://github.com/KeraLua/QuikGraph) `AdjacencyGraph<string, WorldEdge>` over every
 entity in the active universe. Per [SS-LAW-1](docs/BIBLE.md#SS-§5) and
 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) §2a, **it is never the store of record** — a pure
@@ -324,7 +324,7 @@ the JSON graph snapshots** (`engine/data/graph/*.json`) — those are an output 
 written by `--rebuild-graph`, never an input.
 
 There is a second, separate SQL-backed relationship representation: the generic `Edge` entity
-(`v3/Prose.Core/Data/Entities/Edge.cs`) — polymorphic `SourceId`/`TargetId` into the universal
+(`src/Prose.Core/Data/Entities/Edge.cs`) — polymorphic `SourceId`/`TargetId` into the universal
 `Entities` table, bi-temporal validity, a free-string `RelationType`. Its own doc comment states
 the intent (and [RFC 0007](docs/rfc/0007-fully-relational-canon.md) §1b names the same goal): it
 should eventually **replace** the per-type bridge tables as the graph's actual read path, with a
@@ -388,7 +388,7 @@ bug-fixed, and verified against that one real example.
 **Three separate temporal-relationship systems exist in this codebase.** Don't rebuild a fourth
 without checking which of these already covers the need:
 
-1. **`Edges`** (SQL, `v3/Prose.Core/Data/Entities/Edge.cs`) — `SourceId`/`TargetId`/`RelationType`
+1. **`Edges`** (SQL, `src/Prose.Core/Data/Entities/Edge.cs`) — `SourceId`/`TargetId`/`RelationType`
    with real `DateTime? StoryValidFrom`/`StoryValidUntil`. System-versioned temporal table. This
    is the one that's live and wired in (below).
 2. **`EntityStateEvents`** (SQL) — an append-only ledger for quantity/status facts (`AspectKey`/
@@ -458,7 +458,7 @@ live, since before the fix (see the Dynamic Edge State section above for that st
 corpus-wide check the same day found **zero of the 22 books in this corpus had ever had a
 verified sequential read** — this wasn't a BCODA-specific gap.
 
-`SequentialReadTrackingService` (`v3/Prose.Core/Services/SequentialReadTrackingService.cs`) +
+`SequentialReadTrackingService` (`src/Prose.Core/Services/SequentialReadTrackingService.cs`) +
 the `BookSequentialReads` table now make "has this book actually been read front-to-back" a
 tracked, queryable fact instead of an assumption. The freshness check is self-invalidating by
 construction: `ComputeBeatSequenceHashAsync` walks the book's full chapter/beat sequence **fresh
@@ -509,7 +509,7 @@ corpus-wide re-scan confirms **0 remaining** as of this writing, across BOTH sig
 **false negatives** for U+FFFD under this DB's collation — `CHARINDEX(NCHAR(65533), text)`
 returned 0 even when a direct `UNICODE(SUBSTRING(text, pos, 1))` at that exact position confirmed
 65533. Any ad-hoc SQL check written the "obvious" way would silently miss real corruption.
-`TextIntegrityService` (`v3/Prose.Core/Services/TextIntegrityService.cs`) never uses those SQL
+`TextIntegrityService` (`src/Prose.Core/Services/TextIntegrityService.cs`) never uses those SQL
 functions for detection — it pulls text into memory via EF Core and does a plain C# char
 comparison against BOTH known corruption signatures (U+FFFD, and any control char below 32 other
 than tab/LF/CR), which has no collation involved and cannot have the same bug. It scans with
@@ -627,7 +627,7 @@ snapshot:
 
 1. **Zero open BLOCKER/MODERATE logic-sweep findings.**
 2. **Zero open `CONTRADICTED` fact-ledger claims.** The "fact ledger" is `ContinuityService` /
-   the `ContinuityClaims` table (`v3/Prose.Core/Services/ContinuityService.cs`) — `Upsert` checks
+   the `ContinuityClaims` table (`src/Prose.Core/Services/ContinuityService.cs`) — `Upsert` checks
    an incoming `(EntityId, Predicate, Object)` claim against any other live claim on the same
    `(EntityId, Predicate)`; a mismatch files the *incoming* claim as `CONTRADICTED` (a `CANONICAL`
    existing claim is never demoted). **Numeric-safe** (fixed 2026-08-14 after a real VIGL false
@@ -669,7 +669,7 @@ snapshot:
 
 ### AutoCorrect — the nightly self-heal pass (pure ML/deterministic, zero LLM calls)
 
-`AutoCorrectOrchestratorService` (`v3/Prose.Core/Services/AutoCorrectOrchestratorService.cs`)
+`AutoCorrectOrchestratorService` (`src/Prose.Core/Services/AutoCorrectOrchestratorService.cs`)
 runs per-universe, nightly: refresh statistical baselines
 (`UniverseProfileService.RefreshDensityBaselinesAsync` — mean/stdev over Flesch reading-ease,
 Flesch-Kincaid grade, type-token ratio, dialogue proportion, and words-per-sentence, from at least
@@ -721,9 +721,9 @@ for manual invocations with a long custom reason.
 
 ## CLI Reference
 
-The canonical invocation `prose` expands to `dotnet run --project v3/Prose.Cli -- <args>`. **265
-distinct `--flag` handlers** are dispatched from `v3/Prose.Cli/Program.cs`, backed by **227 handler
-files** under `v3/Prose.Cli/Cli/` (2026-08-15 count). What follows is a categorized tour, not an exhaustive
+The canonical invocation `prose` expands to `dotnet run --project src/Prose.Cli -- <args>`. **265
+distinct `--flag` handlers** are dispatched from `src/Prose.Cli/Program.cs`, backed by **227 handler
+files** under `src/Prose.Cli/Cli/` (2026-08-15 count). What follows is a categorized tour, not an exhaustive
 line-by-line dump — `Program.cs` is the exhaustive source, and the CLI has no built-in
 `--help` listing every flag; grep `Program.cs` for the authoritative, always-current list.
 
@@ -834,13 +834,13 @@ of endpoint.
 into [docs/MCP_TOOLS.md](docs/MCP_TOOLS.md) and re-exported on demand:
 
 ```powershell
-dotnet run --project v3/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
+dotnet run --project src/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
 ```
 
 Register in Claude Code:
 
 ```
-claude mcp add prose dotnet run --project <path-to-your-clone>/v3/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release
+claude mcp add prose dotnet run --project <path-to-your-clone>/src/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release
 ```
 
 All tools are surfaced to a client as `mcp__prose__<name>`; most return a JSON string; the canon
@@ -1060,7 +1060,7 @@ sibling project, no Prose-side code changes needed per new consumer — full run
 
 ## The Subsystems
 
-**309 services** live directly under `v3/Prose.Core/Services/` (351 including the `Audit/`,
+**309 services** live directly under `src/Prose.Core/Services/` (351 including the `Audit/`,
 `CoverImage/`, `Local/`, `Operator/`, and `VideoGen/` subfolders), grouped here by role.
 
 ### 1. Canon & data layer
@@ -1240,7 +1240,7 @@ Without this, `pre-commit`'s live-LLM-key gate and `post-commit`'s markdown-sync
 fire — no error, they just silently don't run.
 
 ```powershell
-cd v3
+cd src
 dotnet restore
 
 # Schema (creates the DB from nothing + applies all EF Core migrations + enables
@@ -1269,7 +1269,7 @@ cross-platform) are run independently — see [Architecture at a Glance](#archit
 Run tests:
 
 ```powershell
-dotnet test v3/Prose.UnitTests   # NUnit + bUnit, 185 test files
+dotnet test src/Prose.UnitTests   # NUnit + bUnit, 185 test files
 ```
 
 > The Cypress suite (`npx cypress run`) predates Epoch 4 and exercises routes on the now-deleted
@@ -1305,7 +1305,7 @@ powershell -File tools/codex.ps1 doctor   # must pass
 
 ```
 Prose/
-├── v3/                          # Active engine — command-line only (Epoch 4)
+├── src/                          # Active engine — command-line only (Epoch 4)
 │   ├── Prose.slnx
 │   ├── Prose.Core/      # Canon services, generation, embeddings, review, continuity
 │   │   ├── Services/            # 309 services directly here, 351 incl. subfolders
@@ -1337,11 +1337,12 @@ Prose/
 > Local TTS via these tools needs a from-scratch Python environment rebuilt by hand; ElevenLabs TTS
 > (cloud) works out of the box. Flagged for cleanup, not yet fixed.
 
-> **`v3/python/`:** no Python source remains — only a `__pycache__/` leftover and two cached
-> SQLite artifacts (`lore-triples.db`, `truth.db`, the larger one >500MB) from a since-deleted SPO
-> (Subject-Predicate-Object) triple-extraction pipeline. The `.py` scripts and their own README are
-> gone; only their output cache survives. Orphaned cruft, not a live subsystem — safe to delete,
-> not yet done.
+> **`python/` — resolved 2026-09-20.** It held no Python source: only two cached SQLite
+> artifacts (`lore-triples.db` at >500MB, and `truth.db`) left behind by the SPO
+> (Subject-Predicate-Object) triple-extraction pipeline, whose scripts were deleted when
+> `extract-lore-triples.js` was retired on 2026-04-30. Nothing in the tree referenced them.
+> Moved to `archives/retired-lore-triples/` rather than deleted, and the folder is gone from
+> the source tree.
 
 ---
 
@@ -1377,8 +1378,8 @@ audited here — see the project's own `.csproj` if working on it directly.
 
 ## Database Migrations
 
-Raw T-SQL files live under `v3/Prose.Core/Data/Sql/`. Most are historical, pre-EF-migration schema
-deltas superseded by `v3/Prose.Core/Migrations/` — run individually via `prose --seed <name>`
+Raw T-SQL files live under `src/Prose.Core/Data/Sql/`. Most are historical, pre-EF-migration schema
+deltas superseded by `src/Prose.Core/Migrations/` — run individually via `prose --seed <name>`
 (see `SqlSeedService.Seeds` for registered names) only if a specific older environment needs them.
 A few small data-only scripts (e.g. universe seed inserts) are not yet registered anywhere.
 **Nothing reaches the database except through Prose.Hub — reads AND writes, no exceptions (HARD,
@@ -1387,7 +1388,7 @@ register it in `SqlSeedService.Seeds` and run it via `prose --seed <name>` — d
 hand with `sqlcmd`.
 
 ```powershell
-dotnet run --project v3/Prose.Cli -- --migrate-sql --schema
+dotnet run --project src/Prose.Cli -- --migrate-sql --schema
 ```
 
 ---
@@ -1402,10 +1403,10 @@ break had left unanswered (deploy the MCP server web-facing vs. build+test+migra
 retire) — the answer is retire; there is no browser surface, and there is no second user to serve
 one to.
 
-The only "deployment" that exists is local: `v3/Prose.Hub/tools/deploy.ps1` publishes
+The only "deployment" that exists is local: `src/Prose.Hub/tools/deploy.ps1` publishes
 `Prose.Hub.exe` (bundling `Prose.Cli` + `Prose.Mcp` + `Prose.Core`) to `C:\Apps\Prose\Prose.Hub\`
 and launches it — see `.prose/hooks/start-prose-hub.ps1` for how this happens automatically at
-the start of every Claude Code session. `dotnet test v3/Prose.UnitTests` still runs locally the
+the start of every Claude Code session. `dotnet test src/Prose.UnitTests` still runs locally the
 same way it always has; there is no CI runner and no `master`-push automation of any kind.
 
 ---
@@ -1413,7 +1414,7 @@ same way it always has; there is no CI runner and no `master`-push automation of
 ## Tests
 
 ```powershell
-dotnet test v3/Prose.UnitTests   # NUnit + bUnit, 185 test files
+dotnet test src/Prose.UnitTests   # NUnit + bUnit, 185 test files
 ```
 
 CI is DB-independent by design: `TestDbFactory` backs most tests with in-memory SQLite; the
@@ -1484,7 +1485,7 @@ In active development. **Command-line only** since 2026-08-13 (Epoch 4) — no l
 - **DB:** 263 base tables + 168 system-versioned history tables (264 FKs, 263 PKs; live-queried
   2026-08-15 — `docs/schema.md` itself is dated 2026-08-14 and needs a re-run, see
   [Schema reference](#schema-reference)).
-- **MCP:** 322 `[McpServerTool]` methods across 40 files under `v3/Prose.Mcp/` (live-counted
+- **MCP:** 322 `[McpServerTool]` methods across 40 files under `src/Prose.Mcp/` (live-counted
   2026-08-15 — `docs/MCP_TOOLS.md` and the per-family breakdown table in
   [MCP Reference](#mcp-reference) predate this jump from 273/43; regenerate via `--export-tools`).
 - **CLI:** 265 dispatched `--flag` handlers across 227 handler files (live-counted 2026-08-15).
@@ -1514,8 +1515,8 @@ In active development. **Command-line only** since 2026-08-13 (Epoch 4) — no l
 2. The Cypress e2e suite exercises deleted Blazor UI routes (see [Tests](#tests)).
 3. `docs/BIBLE.md §3` and `CLAUDE.md`'s Code Style section still assert "Web-only project (Blazor
    Server). No MAUI host." — true through Epoch 3, false since Epoch 4's command-line-only pivot.
-4. `v3/Prose.Mcp/README.md` still describes the deleted `Prose.Shared`/`Prose.Writer`/`Prose.Codex`
-   projects and a stale, pre-273-tool MCP tool-group table. (`v3/README.md` itself was folded into
+4. `src/Prose.Mcp/README.md` still describes the deleted `Prose.Shared`/`Prose.Writer`/`Prose.Codex`
+   projects and a stale, pre-273-tool MCP tool-group table. (`src/README.md` itself was folded into
    this document and reduced to a stub in this pass — no longer a separate source of drift.)
 5. `CLAUDE.md`'s "Key schema facts for queries" section still cites `BeatNodes(NodeId, BeatId,
    SortKey, IsEnabled)` — migration `20260813053520_DropBeatNodeIsEnabled` (Epoch 4, same day)
@@ -1545,7 +1546,7 @@ In active development. **Command-line only** since 2026-08-13 (Epoch 4) — no l
     (`scripts/run-autocorrect-nightly.ps1`), not a code change, once a few mornings' `--dry-run`
     output has been reviewed via `prose --morning-report`.
 11. `BookSequentialReads` was created via a raw T-SQL script
-    (`v3/Prose.Core/Data/Sql/create_book_sequential_reads_20260815.sql`, applied directly to the
+    (`src/Prose.Core/Data/Sql/create_book_sequential_reads_20260815.sql`, applied directly to the
     live dev DB at the time) rather than an EF Core migration, and is not registered in
     `SqlSeedService.Seeds` — a fresh clone/environment is currently missing this table until it's
     registered as a proper `--seed` entry and run via `prose --seed <name>`. **Nothing reaches the
@@ -1590,7 +1591,7 @@ to parse back into structured sections via its heading IDs.
 
 **To regenerate this document after the codebase changes:**
 
-1. Re-run the counting commands used to build it (MCP: `dotnet run --project v3/Prose.Mcp --
+1. Re-run the counting commands used to build it (MCP: `dotnet run --project src/Prose.Mcp --
    export-tools docs/MCP_TOOLS.md`; schema: `powershell -File tools/gen-schema.ps1`; CLI/service
    counts: grep `Program.cs` and `Services/` as shown in each section above).
 2. Update the affected sections and the [Status](#status) counts.

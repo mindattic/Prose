@@ -1,7 +1,7 @@
 version: 2
 updates:
-  # v3/*.csproj packages (NuGet resolves relative to each project, but the ecosystem
-  # scan is directory-scoped — v3/ is the common ancestor of every csproj in the solution).
+  # src/*.csproj packages (NuGet resolves relative to each project, but the ecosystem
+  # scan is directory-scoped — src/ is the common ancestor of every csproj in the solution).
   - package-ecosystem: "nuget"
     directory: "/v3"
     schedule:

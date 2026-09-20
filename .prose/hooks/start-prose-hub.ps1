@@ -1,5 +1,5 @@
 <#
-  SessionStart hook - ensures the Prose Hub (v3/Prose.Hub, the standalone always-on
+  SessionStart hook - ensures the Prose Hub (src/Prose.Hub, the standalone always-on
   service holding the resident UniverseGraphService/DocContextStack/EntityContextStack
   "Trinity" + the migrated MCP-tool/CLI-command dispatch) is running AND current,
   redeploying automatically when source has changed since the last deploy.
@@ -12,7 +12,7 @@
   Staleness must be automatic, not a manual step (explicit user requirement - "you must
   make deployment seamless and easy"): Prose.Hub bundles Prose.Cli + Prose.Mcp +
   Prose.Core into ONE deployed exe (C:\Apps\MindAttic\Prose\Hub.exe, written by
-  v3\tools\deploy-apps.ps1). Any source change to any of those four projects means the
+  src\tools\deploy-apps.ps1). Any source change to any of those four projects means the
   deployed exe no longer reflects reality until redeployed. This hook compares the
   deployed exe's timestamp against the newest .cs file across all four project trees and
   redeploys automatically when it's behind - the fast path (nothing changed) just
@@ -36,8 +36,8 @@ $healthUrl  = 'http://127.0.0.1:5900/api/health'
 $deployedExe = 'C:\Apps\MindAttic\Prose\Hub.exe'
 $legacyExe   = 'C:\Apps\Prose\Prose.Hub\Prose.Hub.exe'
 if (-not (Test-Path $deployedExe) -and (Test-Path $legacyExe)) { $deployedExe = $legacyExe }
-$deployPs1  = Join-Path $repoRoot 'v3\tools\deploy-apps.ps1'
-$proj       = Join-Path $repoRoot 'v3\Prose.Hub\Prose.Hub.csproj'
+$deployPs1  = Join-Path $repoRoot 'src\tools\deploy-apps.ps1'
+$proj       = Join-Path $repoRoot 'src\Prose.Hub\Prose.Hub.csproj'
 
 function Test-HubHealthy {
     try {
@@ -48,7 +48,7 @@ function Test-HubHealthy {
 
 function Get-NewestSourceMtime {
     $roots = @('Prose.Hub', 'Prose.Mcp', 'Prose.Cli', 'Prose.Core') |
-        ForEach-Object { Join-Path $repoRoot "v3\$_" } | Where-Object { Test-Path $_ }
+        ForEach-Object { Join-Path $repoRoot "src\$_" } | Where-Object { Test-Path $_ }
     $newest = [DateTime]::MinValue
     foreach ($root in $roots) {
         $files = Get-ChildItem -Path $root -Recurse -Filter '*.cs' -File -ErrorAction SilentlyContinue |
@@ -94,7 +94,7 @@ try {
             # Deployed copy doesn't exist and deploy.ps1 isn't available/failed - fall back to
             # an ad-hoc source build so the Hub is at least running somehow.
             & dotnet build $proj --configuration Release *> $null
-            $exeDir = Join-Path $repoRoot 'v3\Prose.Hub\bin\Release\net10.0'
+            $exeDir = Join-Path $repoRoot 'src\Prose.Hub\bin\Release\net10.0'
             $exe    = Join-Path $exeDir 'Hub.exe'
             if (Test-Path $exe) {
                 Start-Process -FilePath $exe -WorkingDirectory $exeDir -WindowStyle Normal

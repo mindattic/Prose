@@ -2,7 +2,7 @@
 
 Deploy Prose via **MindAttic.Deploy** (sibling repo at `D:\Projects\MindAttic\MindAttic.Deploy`). MindAttic.Deploy is the source of truth for every MindAttic deploy; this command shims into it.
 
-The deploy fires the project's existing GitHub Actions workflow (`azure-deploy.yml`) by committing the synced wwwroot and pushing master. The workflow is a **three-stage pipeline — build → migrate → deploy**: `migrate` runs `v3/ApplyMigrations` against Azure SQL (idempotent `Data/Sql/*.sql` column migrations + nested-strand fold + `EnableSystemVersioningAsync()`, which turns on SYSTEM_VERSIONING for Beats/Strands/StrandBeats and the canon temporal set), authenticated via the GitHub OIDC service principal (`db_ddladmin`); `deploy` then ships the artifact to the `prose` Azure App Service (Production slot). The App Service managed identity stays read/write only — schema changes ride the OIDC principal.
+The deploy fires the project's existing GitHub Actions workflow (`azure-deploy.yml`) by committing the synced wwwroot and pushing master. The workflow is a **three-stage pipeline — build → migrate → deploy**: `migrate` runs `src/ApplyMigrations` against Azure SQL (idempotent `Data/Sql/*.sql` column migrations + nested-strand fold + `EnableSystemVersioningAsync()`, which turns on SYSTEM_VERSIONING for Beats/Strands/StrandBeats and the canon temporal set), authenticated via the GitHub OIDC service principal (`db_ddladmin`); `deploy` then ships the artifact to the `prose` Azure App Service (Production slot). The App Service managed identity stays read/write only — schema changes ride the OIDC principal.
 
 Run this command and report the result:
 

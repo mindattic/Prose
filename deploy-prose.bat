@@ -8,7 +8,7 @@ rem
 rem Lives in the repo, not in C:\Apps: that folder is a build output that can be regenerated at any
 rem time, so an icon pointing into it breaks the first time someone clears it.
 title Deploy Prose
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0v3\tools\deploy-apps.ps1" -Apps Hub,Writer,Launcher,KdpPublish -Start Launcher
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0src\tools\deploy-apps.ps1" -Apps Hub,Writer,Launcher,KdpPublish -Start Launcher
 if errorlevel 1 (
     echo.
     echo   DEPLOY FAILED -- see the output above. Nothing was launched.

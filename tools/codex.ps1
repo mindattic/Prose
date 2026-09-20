@@ -74,7 +74,7 @@ function Invoke-Doctor {
   # Generate BIBLE.md + digest from DB if missing (e.g. after gc or fresh clone)
   if (-not (Test-Path $Bible)) {
     Write-Host "doctor: docs/BIBLE.md missing - regenerating canon docs from DB..." -ForegroundColor Yellow
-    & dotnet run --project "$RepoRoot\v3\Prose.Cli" -- --generate-canon-md --all --quiet
+    & dotnet run --project "$RepoRoot\src\Prose.Cli" -- --generate-canon-md --all --quiet
     if ($LASTEXITCODE -ne 0) { Write-Host "doctor: --generate-canon-md failed" -ForegroundColor Red }
   }
   if (-not (Test-Path $Digest)) {
@@ -167,7 +167,7 @@ function Invoke-Doctor {
   }
 
   # 7. stories: every line with a check-mark names a test token; (best-effort) test exists
-  $testTree = Join-Path $RepoRoot 'v3\Prose.UnitTests'
+  $testTree = Join-Path $RepoRoot 'src\Prose.UnitTests'
   $testIndex = $null
   if (Test-Path $testTree) {
     $testCs = Get-ChildItem -LiteralPath $testTree -Filter '*.cs' -Recurse -ErrorAction SilentlyContinue
@@ -410,7 +410,7 @@ function Invoke-Digest {
   # Generate canon docs from DB first so BIBLE.md is always current
   if (-not (Test-Path $Bible)) {
     Write-Host "digest: docs/BIBLE.md missing - regenerating canon docs from DB..." -ForegroundColor Yellow
-    & dotnet run --project "$RepoRoot\v3\Prose.Cli" -- --generate-canon-md --all --quiet
+    & dotnet run --project "$RepoRoot\src\Prose.Cli" -- --generate-canon-md --all --quiet
     if ($LASTEXITCODE -ne 0) { Write-Host "digest: --generate-canon-md failed" -ForegroundColor Red; exit 1 }
   }
   if (-not (Test-Path $Bible)) { Write-Host "digest: docs/BIBLE.md not found after generation" -ForegroundColor Red; exit 1 }

@@ -448,7 +448,7 @@ raw `SELECT UNICODE(...)`, must show an em dash, not a hyphen).
 
 ### 5g0. PowerShell pipe corruption when bulk-inserting beats (`--beat insert`/`--beat update --text -`)
 
-`Get-Content <file> -Raw | & dotnet run --project v3/Prose.Cli -- ... --text -` is the
+`Get-Content <file> -Raw | & dotnet run --project src/Prose.Cli -- ... --text -` is the
 right pattern (Program.cs sets `Console.InputEncoding`/`OutputEncoding` to UTF-8 specifically for
 it — see the comment at the top of `Program.cs`), but **Windows PowerShell 5.1's own pipe-to-native-process
 encoding is a separate, independent setting** (`$OutputEncoding`, a preference variable, not the

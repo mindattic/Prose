@@ -1,11 +1,11 @@
 # Prose MCP Tools
 
 > **GENERATED — do not hand-edit.** Produced by `ToolDocGenerator` from the
-> `[McpServerTool]` + `[Description]` attributes in `v3/Prose.Mcp/Tools*.cs`,
+> `[McpServerTool]` + `[Description]` attributes in `src/Prose.Mcp/Tools*.cs`,
 > the same source the MCP host registers via `WithToolsFromAssembly()`. To refresh:
 > 
 > ```powershell
-> dotnet run --project v3/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
+> dotnet run --project src/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
 > ```
 >
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a

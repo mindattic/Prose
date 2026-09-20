@@ -1,0 +1,37 @@
+<Solution>
+  <!-- Every project in the tree, so "build the solution" means what it says. Until 2026-09-20 this
+       listed only 6 of 12: Hub, Hub.Contracts, KdpPublish, Launcher, ObserverUi, Writer and
+       WriterUi were absent, so a clean solution build could pass while an app was broken.
+
+       Dev-only: the first entry lets Visual Studio resolve the Debug-conditional source
+       ProjectReference in Prose.Core (the MA_DEV_AUTH bypass). Release/CI build the .csproj
+       directly and never read this .slnx, so isolation is preserved — Release still binds the
+       NuGet package. Command-line entry points remain Prose.Cli + Prose.Mcp. -->
+  <Project Path="../../MindAttic.Authentication/src/MindAttic.Authentication/MindAttic.Authentication.csproj" />
+
+  <!-- Engine -->
+  <Project Path="Prose.Core/Prose.Core.csproj" />
+  <Project Path="Prose.Hub.Contracts/Prose.Hub.Contracts.csproj" />
+
+  <!-- Front doors -->
+  <Project Path="Prose.Cli/Prose.Cli.csproj" />
+  <Project Path="Prose.Mcp/Prose.Mcp.csproj" />
+  <Project Path="Prose.Hub/Prose.Hub.csproj" />
+
+  <!-- UI libraries (Razor class libraries hosted by the Hub) -->
+  <Project Path="Prose.ObserverUi/Prose.ObserverUi.csproj" />
+  <Project Path="Prose.WriterUi/Prose.WriterUi.csproj" />
+
+  <!-- Desktop shells -->
+  <Project Path="Prose.Writer/Prose.Writer.csproj" />
+  <Project Path="Prose.Launcher/Prose.Launcher.csproj" />
+  <Project Path="Prose.KdpPublish/Prose.KdpPublish.csproj" />
+
+  <!-- Standalone escape hatch: deliberately has no Prose.Core reference. -->
+  <Project Path="Prose.LlmCli/Prose.LlmCli.csproj" />
+
+  <!-- Transitional: composition-pipeline verbs, being folded into Prose.Cli. -->
+  <Project Path="Prose.V4.Cli/Prose.V4.Cli.csproj" />
+
+  <Project Path="Prose.UnitTests/Prose.UnitTests.csproj" />
+</Solution>

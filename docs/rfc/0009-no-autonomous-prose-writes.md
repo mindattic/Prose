@@ -194,7 +194,7 @@ separate from ordinary edits.
 
 ## 9. Acceptance
 
-- `grep -rn "UpdateBeatTextAsync" v3/` returns only callers passing a `BeatWriteReason`.
+- `grep -rn "UpdateBeatTextAsync" src/` returns only callers passing a `BeatWriteReason`.
 - No path from an audit, score, checklist, or finding reaches beat text without `AuthorEdit`,
   `FindingApply`, or `TrinityArbitration`.
 - `prose --audit-book --full` on an unchanged book leaves `Beat.Version` unchanged for every beat.

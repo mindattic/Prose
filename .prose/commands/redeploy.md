@@ -3,7 +3,7 @@
 Rebuilds and republishes **Hub, Writer, KdpPublish and Launcher** to `C:\Apps\MindAttic\Prose\`,
 then restarts the Hub so the session is talking to the build you just made.
 
-Use it after changing any C# under `v3/`. The SessionStart hook
+Use it after changing any C# under `src/`. The SessionStart hook
 (`.prose/hooks/start-prose-hub.ps1`) only ever redeploys **the Hub**, and only when source is newer
 than the deployed exe — it deliberately never touches Writer or KdpPublish, because republishing an
 exe the author is looking at would stop it mid-edit. `/redeploy` is the explicit "refresh
@@ -23,7 +23,7 @@ Valid names: `Hub`, `Writer`, `Launcher`, `KdpPublish` (case-sensitive, as the s
 From the repository root:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File v3\tools\deploy-apps.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1
 ```
 
 with `-Apps Hub,Writer` when the user named a subset.
@@ -91,4 +91,4 @@ UI while believing you had redeployed it.
   the others. It ships its own `wwwroot\` and `launch.bat`, both of which would collide with the
   Hub's. Don't "tidy" it into the parent folder.
 - **Only the Launcher gets a `launch.bat`** at the root, for the same reason.
-- The old `v3\Prose.Hub\tools\deploy.ps1` still works — it forwards here with `-Apps Hub`.
+- The old `src\Prose.Hub\tools\deploy.ps1` still works — it forwards here with `-Apps Hub`.

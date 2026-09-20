@@ -4,7 +4,7 @@ All clients use the same Prose MCP stdio server and the same protocol document. 
 needs to provide a way to launch this command from the repository root:
 
 ```text
-dotnet run --project v3/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release
+dotnet run --project src/Prose.Mcp/Prose.Mcp.csproj --no-build --configuration Release
 ```
 
 Claude, Codex/OpenAI, Gemini, Kimi, and other MCP-capable hosts should register that command in

@@ -13,13 +13,13 @@ and description work is done** — do not export prematurely.
 ## Decisions locked this session
 
 - **GOSPEL universe created**: Id `0197e9c9-0007-7000-8000-000000000007`, slug `gospel`, seed
-  script `v3\Prose.Core\Data\Sql\add_universe_gospel_20260812.sql`, registered in
+  script `src\Prose.Core\Data\Sql\add_universe_gospel_20260812.sql`, registered in
   `SqlSeedService.Seeds["universe_gospel"]`. Already applied (seed ran successfully).
 - **Matthew/Mark/Luke/John moved into GOSPEL**: all 117 rows (4 books + 113 chapter descendants)
   had `Nodes.UniverseId` updated from `nonfiction` to `gospel` via a recursive-CTE UPDATE. Verified
   — confirmed 4 books + 113 chapters now show `gospel`.
 - **Glossary detection is plural-insensitive**: `GlossaryService.AppearsInText` (in
-  `v3\Prose.Core\Services\GlossaryService.cs`) strips a trailing "s" from the headword before
+  `src\Prose.Core\Services\GlossaryService.cs`) strips a trailing "s" from the headword before
   matching, with an optional trailing "s" back on the match — so "neuretic"/"neuretics" (or any
   singular/plural pair) are one entry regardless of which form was authored. Shipped and built.
 - **Glossary detection is now recursive/cross-referencing**: `GetUsedTermsCoreAsync` (same file)
@@ -30,7 +30,7 @@ and description work is done** — do not export prematurely.
   `(UniverseId, Term)`) — confirmed no cross-universe term sharing is possible; this was already
   correct, no code change needed.
 - **Epub/PDF now get a Glossary back-matter section** (previously only .docx did) — added
-  `BuildGlossaryChapter` to `v3\Prose.Core\Services\ManuscriptExportService.cs`, wired into
+  `BuildGlossaryChapter` to `src\Prose.Core\Services\ManuscriptExportService.cs`, wired into
   `ExportEpubAsync`/`ExportPdfAsync` only (NOT `ExportAudioTxtAsync` — that's the TTS narration
   script, glossary entries read aloud would be wrong; NOT `ExportMarkdownAsync` — editing aid,
   not a KDP deliverable). Verified end-to-end on RTR (GLMZ): epub TOC + chapter + PDF page all
@@ -59,7 +59,7 @@ and description work is done** — do not export prematurely.
   book will supersede that manual value with the properly-computed one, which is expected and fine.
 - **KdpPublish app fully restyled to match the real KDP portal** — light theme (#EAEDED bg, teal
   #007185 links, Amazon yellow #FFD814 CTA, Squid Ink #131A22 log), Amazon Ember font family
-  downloaded locally to `v3\Prose.KdpPublish\wwwroot\fonts\` (28 files, all weights/styles/both
+  downloaded locally to `src\Prose.KdpPublish\wwwroot\fonts\` (28 files, all weights/styles/both
   "Modern Display" and "Modern Text" variants) with `@font-face` rules pointing at local paths —
   no more CDN dependency. Sidebar widened +150px (410px), code-column ellipsis removed, redundant
   header branding removed, notes and cover preview-modal icons added per row, Select All
@@ -77,7 +77,7 @@ the `gospel` row existed in the DB). The user has now restarted the MCP server/s
 action on resuming: call `list_universes` — if `gospel` now appears, proceed
 immediately with the upserts below. If it still doesn't appear, that's a real bug (an agent was
 mid-investigation into `list_universes`'s exact data source/DI lifetime — check for that agent's
-findings if available, otherwise re-investigate `v3\Prose.Mcp\Tools.Universe.cs` or wherever
+findings if available, otherwise re-investigate `src\Prose.Mcp\Tools.Universe.cs` or wherever
 `list_universes`/`switch_universe` are implemented, and `IUniverseContext`'s DI registration).**
 
 **Everything else is done and built** (GLMZ/SCRY glossary expansion, epub/pdf glossary wiring,
@@ -96,9 +96,9 @@ re-export as sufficient; a fresh full corpus re-export is still needed** (task b
    research agents (one per Matthew/Mark/Luke/John, each reading that book's
    `story-synopsis.txt`) — duplicates across books (Sanhedrin, Pharisees, Denarius, Titulus, etc.
    appeared in 2-4 of the four lists) were merged into single canonical entries.
-4. `dotnet run --project v3/Prose.Cli -- --generate-glossary --universe gospel` — regenerate the
+4. `dotnet run --project src/Prose.Cli -- --generate-glossary --universe gospel` — regenerate the
    master glossary docs.
-5. `dotnet run --project v3/Prose.Cli -- --universe gospel --generate-book-glossary --all` —
+5. `dotnet run --project src/Prose.Cli -- --universe gospel --generate-book-glossary --all` —
    regenerate each Gospel book's per-book glossary subset, sanity-check term-hit counts.
 6. **Full corpus re-export** (deferred task #11): every book with live prose, every universe
    (GLMZ's 22 + SCRY's 4 already done once earlier but now stale — redo; GOSPEL's 4; plus
@@ -204,11 +204,11 @@ re-export as sufficient; a fresh full corpus re-export is still needed** (task b
 ## Anchors
 
 - Task list: #11 (full corpus re-export, pending), #12 (full logic sweep, pending) — both still open.
-- Key files touched this session: `v3\Prose.Core\Services\GlossaryService.cs`,
-  `v3\Prose.Core\Services\ManuscriptExportService.cs`, `v3\Prose.Core\Services\NodeFullExportService.cs`,
-  `v3\Prose.Core\Data\Entities\Node.cs`, `v3\Prose.Core\Data\Sql\add_universe_gospel_20260812.sql`,
-  `v3\Prose.Core\Services\SqlSeedService.cs`, `v3\Prose.KdpPublish\wwwroot\app.css`,
-  `v3\Prose.KdpPublish\wwwroot\panel.html`, `v3\Prose.KdpPublish\MainWindow.xaml(.cs)`.
+- Key files touched this session: `src\Prose.Core\Services\GlossaryService.cs`,
+  `src\Prose.Core\Services\ManuscriptExportService.cs`, `src\Prose.Core\Services\NodeFullExportService.cs`,
+  `src\Prose.Core\Data\Entities\Node.cs`, `src\Prose.Core\Data\Sql\add_universe_gospel_20260812.sql`,
+  `src\Prose.Core\Services\SqlSeedService.cs`, `src\Prose.KdpPublish\wwwroot\app.css`,
+  `src\Prose.KdpPublish\wwwroot\panel.html`, `src\Prose.KdpPublish\MainWindow.xaml(.cs)`.
 - Migration: `20260812152501_AddKindlePagesAndReadingMinutes` (applied). Note it originally also
   tried to re-add `Findings.SourceRuleVersion`/its index (already existed from an earlier raw-SQL
   seed, RFC 0011 brick B2) — that part was manually stripped from the migration's Up/Down before

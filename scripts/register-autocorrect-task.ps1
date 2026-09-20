@@ -3,7 +3,7 @@
     Registers (or updates) the Windows Task Scheduler task that runs the nightly AutoCorrect pass.
 
 .DESCRIPTION
-    The Prose app is CLI/MCP-only (v3/Prose.Writer and v3/Prose.Codex were deleted in commit
+    The Prose app is CLI/MCP-only (src/Prose.Writer and src/Prose.Codex were deleted in commit
     ed22bd4f6, "Command-line only") - there is no continuously-running host process to hang an
     in-process wall-clock scheduler off of, unlike ContinuityLongSweepService/
     SanityScanBackgroundService's PeriodicTimer pattern. Windows Task Scheduler is the trigger
@@ -32,7 +32,7 @@ $ErrorActionPreference = 'Stop'
 $TaskName    = 'ProseAutoCorrectNightly'
 $TriggerTime = '03:00'
 $RepoRoot    = 'D:\Projects\MindAttic\Prose'
-$CliProject  = Join-Path $RepoRoot 'v3\Prose.Cli'
+$CliProject  = Join-Path $RepoRoot 'src\Prose.Cli'
 $LogDir      = Join-Path $RepoRoot 'logs\autocorrect'
 
 if (-not (Test-Path $LogDir)) {
@@ -80,7 +80,7 @@ if ($existing) {
 else {
     Write-Host "[register-autocorrect-task] Registering new task '$TaskName' at $TriggerTime local (Central) daily."
     Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Settings $settings `
-        -Description 'Nightly AutoCorrect pass for Prose: pure-ML/deterministic detection + a whitelisted set of auto-fixes (duplicate entity merge, dangling-edge cleanup, cross-book continuity majority resolution). Zero LLM calls. Undo via prose --auto-correct-undo. See v3/Prose.Core/Services/AutoCorrectOrchestratorService.cs.' `
+        -Description 'Nightly AutoCorrect pass for Prose: pure-ML/deterministic detection + a whitelisted set of auto-fixes (duplicate entity merge, dangling-edge cleanup, cross-book continuity majority resolution). Zero LLM calls. Undo via prose --auto-correct-undo. See src/Prose.Core/Services/AutoCorrectOrchestratorService.cs.' `
         | Out-Null
 }
 

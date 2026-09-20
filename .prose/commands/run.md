@@ -4,13 +4,13 @@ Opens the Prose Writer. This command is a **forwarder**: follow
 [`.prose/commands/launch.md`](launch.md) and run it with `-App writer`.
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File v3\tools\launch-app.ps1 -App writer
+powershell -NoProfile -ExecutionPolicy Bypass -File src\tools\launch-app.ps1 -App writer
 ```
 
 ## Why this is now an alias
 
 The previous version of this command was stale and would have failed. It described starting
-`v3/Prose.Writer` with `dotnet run --launch-profile http` and opening **http://localhost:5200** —
+`src/Prose.Writer` with `dotnet run --launch-profile http` and opening **http://localhost:5200** —
 a Blazor web host with launch profiles.
 
 `Prose.Writer` stopped being that on 2026-09-11. It is now a **WPF + WebView2 window** with no

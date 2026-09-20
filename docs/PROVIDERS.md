@@ -2,7 +2,7 @@
 
 > RFC 0011 Brick 3, item 1: an explicit, checked-in table of which services depend on which
 > external provider — replacing tribal knowledge with something anyone can read before assuming
-> a service is safe to call. Generated 2026-08-10 by grepping every `v3/Prose.Core/Services/*.cs`
+> a service is safe to call. Generated 2026-08-10 by grepping every `src/Prose.Core/Services/*.cs`
 > constructor for `ILlmService`/`EmbeddingService` parameters. Update this file when a service's
 > provider dependency changes; it is hand-maintained, not regenerated.
 

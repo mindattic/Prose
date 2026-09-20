@@ -15,7 +15,7 @@ rem Lives in the repo, not in C:\Apps\MindAttic\Prose\: that folder is a build o
 rem deleted and regenerated at any time, so an icon pointing into it breaks the first time someone
 rem clears it.
 title Deploy Prose Hub
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0v3\tools\deploy-apps.ps1" -Apps Hub -Start Hub
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0src\tools\deploy-apps.ps1" -Apps Hub -Start Hub
 if errorlevel 1 (
     echo.
     echo   DEPLOY FAILED -- see the output above. Nothing was launched.

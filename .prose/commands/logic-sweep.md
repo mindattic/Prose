@@ -24,7 +24,7 @@ or reviews from this runbook** — if the user wants a score, they will say so e
   on cross-book `Beat.Number` confusion). This describes the correct ordering ANY tool must use,
   not an invitation to hand-write the join yourself.
 - Reports → `audit-outlines-<today>/logic/<CODE>.md`. Fix files → `.../fixes/<CODE>/`.
-- Text pushes via built exe `v3\Prose.Cli\bin\Release\net10.0\Prose.Cli.exe
+- Text pushes via built exe `src\Prose.Cli\bin\Release\net10.0\Prose.Cli.exe
   --beat update --id <guid> --text -` with OS-level `<` redirection (PowerShell pipelines inject
   BOM; verify `UNICODE(SUBSTRING(Text,1,1)) != 65279` after every push). One CLI invocation at a
   time (port). `dotnet run` may silently drop args — prefer the exe.

@@ -43,15 +43,15 @@ If any step would require modifying existing behavior, stop and redesign.
 
 ## What already exists (do not rebuild)
 
-- `Universe` + SS-LAW-15 scoping (`v3/Prose.Core/Data/Entities/Universe.cs`,
+- `Universe` + SS-LAW-15 scoping (`src/Prose.Core/Data/Entities/Universe.cs`,
   global query filter in `ProseDbContext`).
 - Generic `Entity` spine + typed subtypes (`Character`, `Place`, `Faction`,
   `Species`, `Gear`, ...) + runtime `RepositoryDefinition` for new types with
   zero migrations.
 - `Edge` typed relation graph, `Tag`, `Record` JSON round-trip blob.
 - Hub-only DB access (HARD RULE) with reflection dispatch:
-  CLI handlers `v3/Prose.Cli/Cli/*Cli.cs` via `HubCliClient.ForwardAsync`,
-  MCP tools `v3/Prose.Mcp/Tools.*.cs` via `HubInvoker` → `{Method}Impl`.
+  CLI handlers `src/Prose.Cli/Cli/*Cli.cs` via `HubCliClient.ForwardAsync`,
+  MCP tools `src/Prose.Mcp/Tools.*.cs` via `HubInvoker` → `{Method}Impl`.
 - Hub HTTP reads: `GET /api/universes`, `/api/universes/{slug}/entities/{id}`,
   `/neighbors/{id}`, `/search`, `/snapshot`.
 
@@ -117,7 +117,7 @@ EntityType has no interchange core type export with their EntityType string
 verbatim. Round-trip test: import → export → import produces zero changes.
 
 ### 3. CLI (Prose.Cli)
-- New handler `v3/Prose.Cli/Cli/UniverseInterchangeCli.cs` (convention:
+- New handler `src/Prose.Cli/Cli/UniverseInterchangeCli.cs` (convention:
   `RunAsync(string[] args, IServiceProvider services)`).
 - New dispatch lines in `Prose.Cli/Program.cs` (pure additions):
   - `prose --universe-import <path> [--universe <slug>]` (slug defaults to the
@@ -127,7 +127,7 @@ verbatim. Round-trip test: import → export → import produces zero changes.
     (normalizes the file; the game commits the normalized copy)
 
 ### 4. MCP (Prose.Mcp)
-New `v3/Prose.Mcp/Tools.UniverseInterchange.cs` (`[McpServerToolType]`,
+New `src/Prose.Mcp/Tools.UniverseInterchange.cs` (`[McpServerToolType]`,
 one-line forwards + `Impl` siblings), only adding what generic tools don't
 already cover — audit `Tools.Universe.cs`, `Tools.EntityCrud.cs`,
 `Tools.Repository.cs` first:
@@ -222,7 +222,7 @@ generation-side anything new — Prose's normal writing flow authors these
 books; the export is just a filter.
 
 ## Acceptance
-1. `dotnet test v3/Prose.UnitTests` green, including the new tests.
+1. `dotnet test src/Prose.UnitTests` green, including the new tests.
 2. All 7 pre-existing universes and every existing command/tool behave
    identically (spot-check `--book`, a generation command, `--universe list`).
 3. EVE queryable from Prose CLI, MCP, and Hub HTTP; `npm run universe -- pull`
@@ -232,7 +232,7 @@ books; the export is just a filter.
 ## Phase 1 — implemented 2026-08-26
 
 All four acceptance points verified live:
-1. `dotnet test v3/Prose.UnitTests` — 2212 passed, 24 skipped, 0 regressions. 14
+1. `dotnet test src/Prose.UnitTests` — 2212 passed, 24 skipped, 0 regressions. 14
    pre-existing failures confirmed unrelated (12 environment-dependent log-search
    tests reading real Serilog files; 2 a structurally pre-existing DI-registration
    test bug in files this RFC never touched — `Prose.Core.Extensions.AddProseServices()`
@@ -391,7 +391,7 @@ before touching anything — neither is a defect in `UniverseInterchangeService`
 
    Applied instead: each of the seven `EfRepository<T>` singletons behind `db.Characters`/
    `Districts`/`Factions`/`Corponations`/`Weaponry`/`Equipment`/`Technology`
-   (`v3/Prose.Core/Services/Repositories.cs`) now keys its `GetAll()`/`GetAllLite()` cache by
+   (`src/Prose.Core/Services/Repositories.cs`) now keys its `GetAll()`/`GetAllLite()` cache by
    `UniverseScope.EffectiveId` in addition to the existing `UniverseScope.Epoch` check — a
    `mappedCacheUniverseId`/`mappedCacheLiteUniverseId` field set alongside the existing epoch
    field, checked in the same condition. Strictly additive (only ever causes *more* cache misses

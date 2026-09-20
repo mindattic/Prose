@@ -18,7 +18,7 @@ updated: 2026-08-04
 > "historic research engine" (citation-grounded, real-world claims); TFAH is fiction built from a
 > poem. The two need genuinely different entities for same-named figures (e.g. NONFICTION's
 > historically-researched Raphael vs. FICTION's <entity repo="character" guid="019fc13e-bb8e-705d-b9e7-94f4caa1ebf0">Milton</entity>-literary-character Raphael in TFAH) — see
-> `EntityDisambiguationService` (`v3/Prose.Core/Services/EntityDisambiguationService.cs`)
+> `EntityDisambiguationService` (`src/Prose.Core/Services/EntityDisambiguationService.cs`)
 > and the `OriginNodeId` field on `Entity`. **Everything below this notice describes the original
 > GSPL framing and is kept as historical record of the reasoning** (the citation-grounding
 > discipline, the "spectrum not verdict" methodology, the entity-origin research) — still
@@ -361,7 +361,7 @@ sourcing category (biblical / apocryphal / classical / Miltonic-invention) once
       (chapters never carry one, per §5a), so the node tier never matched for ANY beat generated
       on a chapter, in any universe, for any book. Added `ResolveEffectiveNodeCodeAsync` ancestor
       walk (same technique as the existing `ResolveSeriesScopeKeysAsync`) —
-      `v3/Prose.Core/Services/DocContextService.cs`. Kept; this is a genuine, generalizable
+      `src/Prose.Core/Services/DocContextService.cs`. Kept; this is a genuine, generalizable
       fix independent of TFAH.
 - [x] **Pipeline abandoned for this book's prose** — even after the fix (verified: `docs/nodes/
       TFAH.md` correctly node-tier/scope-matched), `ProseWriterRouter`/`BeatGeneratorService`

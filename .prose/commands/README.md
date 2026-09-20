@@ -18,5 +18,5 @@ rather than the generic stubs the cross-project installer scaffolds elsewhere.
 Run the CLI-backed ones from the repository root, e.g.:
 
 ```powershell
-dotnet run --project v3/Prose.Cli -- --progress
+dotnet run --project src/Prose.Cli -- --progress
 ```

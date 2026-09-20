@@ -14,9 +14,11 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Continue"
 
 $ROOT    = Split-Path $PSScriptRoot -Parent
-$ML_ROOT = Join-Path $ROOT "v3\ml"
+# ml\ sits at the repo root, not inside the source tree — it is a Python package plus its
+# artifacts, not C#. The old path pointed inside the former v3\ folder, where it never existed.
+$ML_ROOT = Join-Path $ROOT "ml"
 $VENV    = Join-Path $ML_ROOT ".venv\Scripts\Activate.ps1"
-$LOG     = Join-Path $ROOT "v3\ml_nightly.log"
+$LOG     = Join-Path $ROOT "logs\ml_nightly.log"
 $SS      = Join-Path $ROOT "prose.cmd"
 
 # ── Display helpers ────────────────────────────────────────────────────────────

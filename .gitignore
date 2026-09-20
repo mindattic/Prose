@@ -1,4 +1,4 @@
-﻿.env
+.env
 __pycache__/
 *.pyc
 sessions/*/facet_responses/
@@ -54,7 +54,7 @@ canon_queue/rejected/
 **/obj/
 **/bin_*/
 **/obj_*/
-v3/.vs/
+src/.vs/
 *.user
 
 # DB backups (1GB+ .bak files, never commit)
@@ -82,7 +82,7 @@ venv/
 *.onnx
 
 # ML artifacts â€” all generated data lives in %APPDATA%\MindAttic\ML, never the repo
-v3/ml/artifacts/
+ml/artifacts/
 *.parquet
 *.pkl
 *.npy

@@ -22,7 +22,7 @@ was never backfilled and `prose --kdp-status` is effectively dead — it filters
 silently returns zero rows). Rebuild live:
 
 ```
-dotnet run --project v3/Prose.Cli -- --kdp-manifest
+dotnet run --project src/Prose.Cli -- --kdp-manifest
 ```
 
 This reconciles DB + the export folders + `tools/kdp/title-ids.json` and writes
@@ -71,7 +71,7 @@ Only after confirmation. First redeploy from source to avoid ever running a stal
 past session — a multi-day-stale `Prose.KdpPublish.exe` silently missing a whole feature):
 
 ```
-powershell -ExecutionPolicy Bypass -File v3\Prose.KdpPublish\tools\deploy.ps1
+powershell -ExecutionPolicy Bypass -File src\Prose.KdpPublish\tools\deploy.ps1
 ```
 
 Then launch with the confirmed comma-separated codes as `argv[0]` — this drives the exact same
@@ -88,7 +88,7 @@ Windows desktop session (this machine, not a headless box) since it drives live 
 
 The app's own status is not observable from here. After launching, wait (the app processes books
 sequentially and each one is a real multi-step browser interaction — minutes each, not seconds), then
-verify by re-running `dotnet run --project v3/Prose.Cli -- --kdp-manifest` and/or reading each
+verify by re-running `dotnet run --project src/Prose.Cli -- --kdp-manifest` and/or reading each
 target book's `<exportFolder>/<CODE>/.publish` marker JSON directly
 (`{"File":...,"Asin":...,"PublishedAtUtc":...,"Version":...}`) — a marker is only ever written after
 a genuine confirmed-publish modal, never speculatively, so it's the trustworthy signal, not

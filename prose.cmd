@@ -18,7 +18,7 @@ setlocal
 
 rem Locate this script's directory (the repo root) so `prose` works from anywhere.
 set "REPO_ROOT=%~dp0"
-set "CLI_PROJ=%REPO_ROOT%v3\Prose.Cli"
+set "CLI_PROJ=%REPO_ROOT%src\Prose.Cli"
 
 rem `dotnet run` does an incremental build automatically — fast on warm builds,
 rem and always up-to-date when source has changed. Pass-through every arg.

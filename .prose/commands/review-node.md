@@ -11,7 +11,7 @@ One call that grades a node and tells you what to fix — cheaply. The default i
 
 ## Fixed facts for this engine
 - DB: `Server=(localdb)\MSSQLLocalDB;Database=Prose;Trusted_Connection=True;TrustServerCertificate=True;`
-- CLI host project: `D:\Projects\MindAttic\Prose\v3\Prose.Cli`
+- CLI host project: `D:\Projects\MindAttic\Prose\src\Prose.Cli`
 - **Invoke the CLI with `dotnet run --project <proj> -- <args>` directly. Do NOT use `prose.cmd`** — the shim mis-parses its own `rem` lines when spawned from a non-interactive shell and exits 255. Use `--no-build` if a VS instance holds the build lock. The CLI (`Prose.Cli`) is a separate project — the Writer/Codex web host running never blocks CLI builds.
 - **Providers: all trusted-4** (round-robined for model + temperament diversity across the four connected LLM providers). One runs harsh and one generous; the spread is expected — read the pooled mean, not any single provider. (Single chokepoint to narrow if ever needed: `NodeReviewService.ReviewProviderIds()`.)
 - Reviews are **psychometric-grounded**: each persona reviews through its OCEAN/HEXACO/MBTI/Enneagram/DISC profile (delivered by the review-persona package, injected via `BuildWhoBlock`).

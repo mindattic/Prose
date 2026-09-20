@@ -1,0 +1,246 @@
+using Microsoft.EntityFrameworkCore;
+using Prose.Core.Data;
+using Prose.Core.Interfaces;
+
+namespace Prose.Core.Services;
+
+/// <summary>
+/// Single C# code path for the canonical SQL seeds under
+/// <c>src/Prose.Core/Data/Sql/*.sql</c>. Replaces the old
+/// "run sqlcmd against the file by hand" workflow — every seed now goes through
+/// <see cref="RunAsync"/>, which:
+/// <list type="bullet">
+/// <item>resolves the file from the project's Data/Sql folder via
+///   <see cref="IPathProvider"/>;</item>
+/// <item>checks the <c>SeedRuns</c> audit table to skip already-applied
+///   seeds (idempotent);</item>
+/// <item>executes the raw SQL inside a transaction with the SET options the
+///   seeds expect (<c>QUOTED_IDENTIFIER ON</c>, <c>ANSI_NULLS ON</c>);</item>
+/// <item>writes a <c>SeedRuns</c> row on success so the next call is a no-op.</item>
+/// </list>
+/// CLI surface: <c>prose --seed &lt;name&gt;</c> (see <c>SeedCli</c>).
+/// </summary>
+public class SqlSeedService
+{
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly IPathProvider paths;
+    private readonly IUniverseContext universe;
+
+    public SqlSeedService(
+        IDbContextFactory<ProseDbContext> dbFactory,
+        IPathProvider paths,
+        IUniverseContext universe)
+    {
+        this.dbFactory = dbFactory;
+        this.paths     = paths;
+        this.universe  = universe;
+    }
+
+    /// <summary>
+    /// Catalogue of known seed names → relative-to-project SQL filenames.
+    /// Add a new entry when introducing a new seed; the <c>SeedRuns</c> audit
+    /// table keys on the seed name, so renaming an existing entry causes the
+    /// seed to re-run.
+    /// </summary>
+    public static readonly IReadOnlyDictionary<string, string> Seeds =
+        new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["ammunition_45_acp"]            = "insert_ammunition_45_acp.sql",
+            ["weapon_sw_governor_2211"]      = "insert_weapon_sw_governor_2211.sql",
+            ["weapon_sw_governor_2211_fks"]  = "fix_weapon_sw_governor_2211_fks.sql",
+            ["performance_indexes_20260516"] = "add_performance_indexes_20260516.sql",
+            ["episode_tables_20260518"]      = "create_episode_tables_20260518.sql",
+            ["episodebeat_duration_20260518"] = "add_episodebeat_duration_20260518.sql",
+            ["episode_export_paths_20260518"] = "add_episode_export_paths_20260518.sql",
+            ["episode_slug_20260518"]         = "add_episode_slug_20260518.sql",
+            ["episode_guid_id_20260518"]      = "rebuild_episode_tables_as_guid_20260518.sql",
+            ["episode_resume_columns_20260518"] = "add_episode_resume_columns_20260518.sql",
+            ["episode_book_chapter_20260518"]   = "add_episode_book_chapter_20260518.sql",
+            ["episodebeat_sortkey_20260518"]    = "add_episodebeat_sortkey_20260518.sql",
+            ["beat_narrative_metadata_20260518"] = "add_beat_narrative_metadata_20260518.sql",
+            ["chapter_beats_table_20260518"]    = "create_chapter_beats_table_20260518.sql",
+            ["extend_chapter_beats_for_recording_20260518"] = "extend_chapter_beats_for_recording_20260518.sql",
+            ["episodebeat_hash_stale_20260518"] = "add_episodebeat_hash_stale_20260518.sql",
+            ["node_schema_20260518"]          = "create_node_schema_20260518.sql",
+            ["beat_number_20260522"]            = "add_beat_number_20260522.sql",
+            ["gaps_table_20260522"]             = "add_gaps_table_20260522.sql",
+            // 2026-08-09: universe rows have no EF-migration equivalent (Universe is seed DATA,
+            // not schema) and were previously unregistered anywhere — a fresh DB built via
+            // --migrate-sql --schema + --seed --all was silently missing NONFICTION/HORROR/
+            // EROTICA. Found via a fresh-machine reproducibility audit; see the .sql files'
+            // own headers for per-universe context. GLMZ/SCRY are seeded elsewhere (bootstrap
+            // fast path); FICTION has no script at all yet — created via app tooling with a
+            // non-sequential Guid, not one of these hand-authored inserts — flagged separately.
+            ["universe_nonfiction"]              = "add_universe_gspl_20260726.sql",
+            ["universe_horror"]                  = "add_universe_horror_20260803.sql",
+            ["universe_erotica"]                 = "add_universe_erotica_20260804.sql",
+            ["universe_gospel"]                  = "add_universe_gospel_20260812.sql",
+            // RFC 0007 (2026-08-26): 8th Universe — EVE (Experiment Eve), the first non-literary
+            // (game) consumer of the Prose engine. See the .sql file's own header for context.
+            ["universe_eve"]                     = "add_universe_eve_20260826.sql",
+        };
+
+    public class SeedResult
+    {
+        public string Name        { get; set; } = "";
+        public bool   AlreadyRan  { get; set; }
+        public bool   Success     { get; set; }
+        public string Message     { get; set; } = "";
+    }
+
+    public async Task<SeedResult> RunAsync(string name, bool force = false, CancellationToken ct = default)
+    {
+        var result = new SeedResult { Name = name };
+
+        if (!Seeds.TryGetValue(name, out var fileName))
+        {
+            result.Message = $"Unknown seed '{name}'. Known: {string.Join(", ", Seeds.Keys)}";
+            return result;
+        }
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        await EnsureSeedRunsTableAsync(db, ct);
+
+        if (!force && await HasRunAsync(db, name, ct))
+        {
+            result.AlreadyRan = true;
+            result.Success    = true;
+            result.Message    = $"Seed '{name}' already applied — skipping (pass --force to re-run).";
+            return result;
+        }
+
+        var sqlPath = ResolveSqlPath(fileName);
+        if (!File.Exists(sqlPath))
+        {
+            result.Message = $"Seed file not found: {sqlPath}";
+            return result;
+        }
+
+        var script = await File.ReadAllTextAsync(sqlPath, ct);
+        // Strip GO batch separators — ExecuteSqlRawAsync runs everything as one
+        // batch. Existing seeds use GO at end-of-file for sqlcmd; safe to remove.
+        script = StripGo(script);
+        var prelude = "SET QUOTED_IDENTIFIER ON; SET ANSI_NULLS ON; SET XACT_ABORT ON;\n";
+
+        try
+        {
+            // 2026-08-09 bug fix: ExecuteSqlRawAsync(string, ct) resolves to the
+            // params-object[]-plus-implicit-default-token overload, NOT "sql + cancellation
+            // token" — the compiler happily boxes `ct` as a lone SQL parameter, and EF Core
+            // then throws "no store type mapping for CancellationToken" the instant any seed
+            // actually runs. This meant --seed (and every registered seed) has never worked —
+            // found while wiring up the universe_nonfiction/horror/erotica seeds live. Must
+            // pass an explicit empty parameter array to disambiguate.
+            await db.Database.ExecuteSqlRawAsync(prelude + script, Array.Empty<object>(), ct);
+            await RecordRunAsync(db, name, ct);
+            result.Success = true;
+            result.Message = $"Seed '{name}' applied.";
+
+            // A seed script can insert a new Universe row (every add_universe_*.sql does).
+            // IUniverseContext caches its catalog for the Hub process's lifetime and only
+            // reloads on an explicit Refresh() — without this, a freshly-seeded universe is
+            // invisible to `prose --universe list/use` and every ambient-scope resolution
+            // until the Hub restarts. Found live seeding EVE (RFC 0007): the seed applied
+            // successfully but `--universe use --slug eve` still reported "Unknown slug".
+            // Cheap and safe to do unconditionally — any seed could touch Universe rows.
+            universe.Refresh();
+        }
+        catch (Exception ex)
+        {
+            result.Message = $"Seed '{name}' failed: {ex.Message}";
+        }
+        return result;
+    }
+
+    private string ResolveSqlPath(string fileName)
+    {
+        // Seed .sql files live in the source tree at
+        // <repo>/src/Prose.Core/Data/Sql/. The runtime entry point
+        // varies — Blazor host, Core test runner, one-shot CLI — so try a
+        // handful of candidate roots. Each candidate is a directory we hope
+        // ends in (…/Prose.Core), to which we append Data/Sql/X.
+        // AppContext.BaseDirectory, not Assembly.Location (2026-08-30 fix, IL3000): Location
+        // always returns "" for an assembly embedded in a single-file publish (the Hub's actual
+        // deployed form via deploy.ps1), which silently made this whole candidate-root strategy
+        // dead weight in production while still emitting a trim-analyzer warning on every
+        // publish. BaseDirectory is the single-file-safe equivalent and works in every other
+        // host (dotnet run, unit tests) too.
+        var assemblyDir = AppContext.BaseDirectory;
+        var candidateRoots = new List<string>();
+
+        // 1. Walk up from the assembly. From any src/<ProjectName>/bin/.../
+        //    going up 3 finds <ProjectName>. From there step sideways into
+        //    ../Prose.Core. Also try walking up further (some host
+        //    layouts publish to bin/Debug/net10.0/win-x64/publish/).
+        var dir = assemblyDir;
+        for (int up = 0; up < 6 && !string.IsNullOrEmpty(dir); up++)
+        {
+            candidateRoots.Add(dir); // case: dll is already inside Core/
+            candidateRoots.Add(Path.Combine(dir, "..", "Prose.Core"));
+            candidateRoots.Add(Path.Combine(dir, "Prose.Core"));
+            dir = Path.GetDirectoryName(dir) ?? "";
+        }
+
+        // 2. Source-tree fall-back relative to current working dir, so a
+        //    "dotnet run --project src/X" from the repo root still resolves.
+        var cwd = Directory.GetCurrentDirectory();
+        candidateRoots.Add(Path.Combine(cwd, "src", "Prose.Core"));
+        candidateRoots.Add(Path.Combine(cwd, "Prose.Core"));
+        candidateRoots.Add(cwd);
+
+        foreach (var root in candidateRoots)
+        {
+            var probe = Path.GetFullPath(Path.Combine(root, "Data", "Sql", fileName));
+            if (File.Exists(probe)) return probe;
+        }
+        // Return the first candidate so the error message points somewhere
+        // useful when the file truly is missing.
+        return Path.GetFullPath(Path.Combine(candidateRoots[0], "Data", "Sql", fileName));
+    }
+
+    private static string StripGo(string sql)
+    {
+        var lines = sql.Split('\n');
+        var keep = lines.Where(l => !l.Trim().Equals("GO", StringComparison.OrdinalIgnoreCase));
+        return string.Join('\n', keep);
+    }
+
+    // ── SeedRuns audit table ────────────────────────────────────────────────
+
+    private static async Task EnsureSeedRunsTableAsync(ProseDbContext db, CancellationToken ct)
+    {
+        await db.Database.ExecuteSqlRawAsync("""
+            IF OBJECT_ID(N'[dbo].[SeedRuns]', N'U') IS NULL
+            BEGIN
+                CREATE TABLE [dbo].[SeedRuns] (
+                    [Name]    NVARCHAR(200) NOT NULL PRIMARY KEY,
+                    [RanAt]   DATETIME2     NOT NULL DEFAULT SYSUTCDATETIME()
+                );
+            END;
+            """, ct);
+    }
+
+    private static async Task<bool> HasRunAsync(ProseDbContext db, string name, CancellationToken ct)
+    {
+        var rows = await db.Database
+            .SqlQueryRaw<int>("SELECT COUNT(*) AS Value FROM [dbo].[SeedRuns] WHERE [Name] = {0};", name)
+            .ToListAsync(ct);
+        return rows.FirstOrDefault() > 0;
+    }
+
+    private static async Task RecordRunAsync(ProseDbContext db, string name, CancellationToken ct)
+    {
+        // 2026-08-09 bug fix: `ct` and `name` were swapped into the params-object[] overload —
+        // `ct` was bound as SQL parameter {0} (the CancellationToken itself, which EF Core has
+        // no store mapping for) and `name` was silently ignored as an unused second parameter.
+        // Every successful seed insert above this call still threw here, so --seed reported
+        // "failed" on every run despite the actual script succeeding, and SeedRuns never
+        // recorded anything — re-running any seed re-applied its (idempotent, so harmless, but
+        // never actually skipped) INSERT every time. Same root cause as the fix a few lines up.
+        await db.Database.ExecuteSqlRawAsync(
+            "MERGE [dbo].[SeedRuns] AS t USING (SELECT {0} AS [Name]) AS s ON t.[Name] = s.[Name] " +
+            "WHEN MATCHED THEN UPDATE SET RanAt = SYSUTCDATETIME() " +
+            "WHEN NOT MATCHED THEN INSERT ([Name], [RanAt]) VALUES (s.[Name], SYSUTCDATETIME());",
+            new object[] { name }, ct);
+    }
+}

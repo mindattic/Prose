@@ -29,10 +29,10 @@ documentation of intent for building the real replacement, not something to exec
 - Coordination is `prose --coordinate --slug <slug>` — read-only, no LLM. It writes
   `reports/coordination/<CODE>.coordination.json` and stamps `## Beat Coordination Index` into
   the node outline. Run against the **built** DLL for speed:
-  `DLL=$(ls v3/Prose.Cli/bin/Debug/net*/Prose.Cli.dll | head -1)` then
+  `DLL=$(ls src/Prose.Cli/bin/Debug/net*/Prose.Cli.dll | head -1)` then
   `dotnet "$DLL" --coordinate --slug <slug>` with `export Logging__LogLevel__Default=Warning
   Logging__LogLevel__Microsoft=Warning` to mute EF chatter. Build once if missing:
-  `dotnet build v3/Prose.Cli -c Debug -v q --nologo`.
+  `dotnet build src/Prose.Cli -c Debug -v q --nologo`.
 - Score lives on `Nodes.Score` (trimmed panel figure). SD + ballot count are NOT in
   `NodeScoreHistory` (that table is empty) — compute them from the individual persona ballots in
   `NodeReviews`, EXCLUDING failed 0-score ballots (draft contamination inflates SD to 30-40).

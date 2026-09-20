@@ -1,6 +1,6 @@
 <#
   SessionStart hook - keeps Prose.Mcp pre-built so its `--no-build` MCP registration
-  (see v3/Prose.Mcp/README.md) always launches against fresh code instead of failing
+  (see src/Prose.Mcp/README.md) always launches against fresh code instead of failing
   the stdio handshake on `dotnet run`'s own restore/build preamble polluting stdout.
   Incremental build - a few seconds when nothing changed. Never blocks session start:
   a build failure is reported (see below) but does not stop the session.
@@ -29,7 +29,7 @@
 $ErrorActionPreference = 'Continue'
 
 $repoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
-$proj     = Join-Path $repoRoot 'v3\Prose.Mcp\Prose.Mcp.csproj'
+$proj     = Join-Path $repoRoot 'src\Prose.Mcp\Prose.Mcp.csproj'
 $notice   = ''
 
 if (Test-Path $proj) {
