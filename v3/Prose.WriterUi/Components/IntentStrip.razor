@@ -1,0 +1,113 @@
+@* What this beat is FOR, and whether the record still matches the prose.
+
+   Two claims live on every beat and neither had a window. Description is the author's stated
+   intent — why this beat exists. EventSummary is what happens in it. Both are stamped with the
+   hash of the prose they were written against, so the system already knows when one has gone
+   stale; nothing was showing it.
+
+   The asymmetry below is the whole point, and it is a correctness property:
+
+     EventSummary can be regenerated freely. It is a derivable claim about what happens, and
+     re-deriving it from the prose costs nothing but a call.
+
+     Description must NEVER be regenerated silently. Intent is what the prose is checked AGAINST.
+     Backfilling it from the prose makes the check tautological — the beat would then agree with
+     its intent by construction, forever, and the one instrument that can say "this beat is not
+     doing what it was for" would be reporting on itself. *@
+
+@inject WriterService Writer
+
+<section class="intent" aria-label="What this beat is for">
+    <div class="intent-row">
+        <span class="intent-label">Intent</span>
+
+        @if (editingIntent)
+        {
+            <textarea class="intent-edit" rows="2" value="@intentDraft" aria-label="The beat's stated intent"
+                      @oninput="e => intentDraft = e.Value?.ToString() ?? string.Empty"></textarea>
+            <button class="mini" @onclick="SaveIntentAsync" disabled="@busy">Save</button>
+            <button class="mini" @onclick="() => editingIntent = false">Cancel</button>
+        }
+        else
+        {
+            <span class="intent-value @(string.IsNullOrWhiteSpace(Description) ? "absent" : "")">
+                @(string.IsNullOrWhiteSpace(Description) ? "Not stated." : Description)
+            </span>
+            <TrustBadge State="DescriptionState" />
+            @* Edit, never "regenerate". There is deliberately no button here that would write
+               the author's intent from the prose. *@
+            <button class="mini" @onclick="BeginEditIntent" disabled="@busy">Edit</button>
+        }
+    </div>
+
+    <div class="intent-row">
+        <span class="intent-label">Event</span>
+        <span class="intent-value @(string.IsNullOrWhiteSpace(EventSummary) ? "absent" : "")">
+            @(string.IsNullOrWhiteSpace(EventSummary) ? "Not recorded." : EventSummary)
+        </span>
+        <TrustBadge State="EventSummaryState" />
+        <button class="mini" @onclick="RegenerateEventAsync" disabled="@busy"
+                title="Re-derive what happens in this beat from its prose">
+            @(busy ? "…" : "Refresh")
+        </button>
+    </div>
+
+    @if (note is not null)
+    {
+        <div class="intent-note muted" role="status">@note</div>
+    }
+</section>
+
+@code {
+    [Parameter] public Guid BookNodeId { get; set; }
+    [Parameter] public Guid BeatId { get; set; }
+    [Parameter] public int BeatNumber { get; set; }
+
+    [Parameter] public string? Description { get; set; }
+    [Parameter] public string? DescriptionState { get; set; }
+    [Parameter] public string? EventSummary { get; set; }
+    [Parameter] public string? EventSummaryState { get; set; }
+
+    /// <summary>Something on the beat changed, so the shell should reload it.</summary>
+    [Parameter] public EventCallback OnChanged { get; set; }
+
+    private bool editingIntent;
+    private string intentDraft = "";
+    private bool busy;
+    private string? note;
+
+    private void BeginEditIntent()
+    {
+        intentDraft = Description ?? "";
+        editingIntent = true;
+        note = null;
+    }
+
+    private async Task SaveIntentAsync()
+    {
+        busy = true;
+        note = null;
+        try
+        {
+            await Writer.SetBeatIntentAsync(BookNodeId, BeatId, intentDraft.Trim());
+            editingIntent = false;
+            await OnChanged.InvokeAsync();
+        }
+        catch (Exception ex) { note = $"Could not save that: {ex.Message}"; }
+        finally { busy = false; }
+    }
+
+    private async Task RegenerateEventAsync()
+    {
+        busy = true;
+        note = "Re-deriving…";
+        try
+        {
+            var written = await Writer.RefreshEventSummaryAsync(BookNodeId, BeatNumber);
+            note = written is { Length: > 0 } ? null : "Nothing came back for that beat.";
+            await OnChanged.InvokeAsync();
+        }
+        catch (Exception ex) { note = $"Could not re-derive that: {ex.Message}"; }
+        finally { busy = false; }
+    }
+}

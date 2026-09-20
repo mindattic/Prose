@@ -1,0 +1,30 @@
+@* How far a recorded claim can be trusted against the prose it describes.
+
+   Beat.SummaryTrustState already computes this by comparing the hash a summary was stamped with
+   against the beat's current text hash. Nothing was showing it, so a summary written three
+   rewrites ago read exactly like one written a minute ago.
+
+   "unverified" is its own state and not folded into "stale", deliberately: with no fingerprint for
+   the prose there is nothing to compare against, and calling that drift would be a claim about
+   text we cannot see. *@
+
+@if (State is { Length: > 0 })
+{
+    <span class="trust trust-@State" title="@Explain(State)">
+        @State<span class="visually-hidden"> — @Explain(State)</span>
+    </span>
+}
+
+@code {
+    /// <summary>"current", "stale" or "unverified". Null when there is no summary to trust.</summary>
+    [Parameter] public string? State { get; set; }
+
+    private static string Explain(string state) => state switch
+    {
+        "current" => "Written against the prose as it stands.",
+        "stale" => "The prose has changed since this was written.",
+        "unverified" => "There is no fingerprint for the prose this was written against, so it "
+                        + "cannot be checked either way.",
+        _ => state,
+    };
+}

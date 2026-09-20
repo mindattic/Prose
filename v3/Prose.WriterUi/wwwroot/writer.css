@@ -879,3 +879,65 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 
 /* Presence: another window, a CLI command or an MCP tool has this book open. */
 .presence { color: var(--color-warning); }
+
+/* ── what this beat is for ────────────────────────────────────────────── */
+
+.intent {
+    margin-bottom: var(--space-3);
+    padding: var(--space-2);
+    background: var(--color-bg-1);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: var(--text-sm);
+}
+
+.intent-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: var(--space-1) 0;
+}
+
+.intent-label {
+    flex: 0 0 3.5rem;
+    color: var(--color-fg-muted);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.intent-value { flex: 1; min-width: 12rem; line-height: 1.5; overflow-wrap: anywhere; }
+
+/* Absent is a state worth seeing: a beat with no stated intent cannot be checked against one. */
+.intent-value.absent { color: var(--color-fg-subtle); font-style: italic; }
+
+.intent-edit {
+    flex: 1;
+    min-width: 12rem;
+    box-sizing: border-box;
+    resize: vertical;
+    padding: var(--space-2);
+    background: var(--color-bg-4);
+    color: var(--color-fg);
+    border: 1px solid var(--color-border-input);
+    border-radius: var(--radius);
+    font: inherit;
+    font-size: var(--text-sm);
+}
+
+.intent-note { margin-top: var(--space-1); font-size: var(--text-xs); }
+
+/* How far a recorded claim can be trusted. "unverified" is its own state rather than folded into
+   "stale": with no fingerprint there is nothing to compare, and calling that drift would be a
+   claim about text we cannot see. */
+.trust {
+    padding: 0 4px;
+    border-radius: var(--radius);
+    font-size: var(--text-xs);
+    font-family: var(--font-mono);
+    background: var(--color-mini-bg);
+    color: var(--color-mini-fg);
+}
+
+.trust-stale { background: var(--color-danger-bg); color: #fff; }

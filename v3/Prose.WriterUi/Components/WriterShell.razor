@@ -129,6 +129,17 @@
                     </div>
                 }
 
+                @* What this beat is FOR, above the prose it is about. Both claims carry their
+                   trust state, which the system already computed and nothing was showing. *@
+                <IntentStrip BookNodeId="@(book?.Id ?? Guid.Empty)"
+                             BeatId="beat.Id"
+                             BeatNumber="beat.Number"
+                             Description="beat.Description"
+                             DescriptionState="beat.DescriptionState"
+                             EventSummary="beat.EventSummary"
+                             EventSummaryState="beat.EventSummaryState"
+                             OnChanged="ReloadBeatMetadataAsync" />
+
                 <ProseEditor @ref="editor"
                              Text="draft"
                              TextChanged="OnDraftChanged"
@@ -530,6 +541,21 @@
         beat = await Writer.GetBeatAsync(id);
         draft = beat?.Text ?? "";
         activity = "Change applied.";
+        StateHasChanged();
+    }
+
+    /// <summary>
+    /// Re-read the beat's metadata after the intent strip changed one of its claims.
+    ///
+    /// <para>Deliberately does NOT touch `draft`. The author may be mid-sentence in the editor,
+    /// and editing an intent line has nothing to do with their prose — overwriting the draft here
+    /// would silently discard whatever they had typed.</para>
+    /// </summary>
+    private async Task ReloadBeatMetadataAsync()
+    {
+        if (beat is null) return;
+        var fresh = await Writer.GetBeatAsync(beat.Id);
+        if (fresh is not null) beat = fresh with { Text = beat.Text };
         StateHasChanged();
     }
 
