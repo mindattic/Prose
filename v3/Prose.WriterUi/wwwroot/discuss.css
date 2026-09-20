@@ -101,7 +101,7 @@
     display: block;
     font-family: var(--font-prose);
     color: var(--color-fg);
-    line-height: 1.45;
+    line-height: 1.5;
 }
 
 .d-row-last {

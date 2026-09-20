@@ -23,15 +23,36 @@ public sealed class WriterService(
     Prose.Core.Services.Audit.LogicSweepService logicSweep,
     DocxExportService docx,
     ManuscriptExportService manuscript,
+    TokenLedger ledger,
     IUniverseContext universe)
 {
     /// <summary>A book the author can open.</summary>
     public sealed record BookListItem(Guid Id, string Slug, string Title, string? NodeCode);
 
-    /// <summary>One row in the left-hand list. <paramref name="Label"/> is pre-rendered as
-    /// <c>#0122 - Chapter 3: Teeth</c> — the whole point of the list is that you can find your
-    /// place in a 500-page book you have not read.</summary>
-    public sealed record SpineItem(Guid BeatId, Guid ChapterNodeId, int Ordinal, string Label);
+    /// <summary>
+    /// One row in the left-hand list.
+    /// </summary>
+    /// <param name="Label">Pre-rendered as <c>#0122 - Chapter 3: Teeth</c>.</param>
+    /// <param name="ChapterTitle">So the list can GROUP by chapter instead of repeating the
+    /// chapter's name on all thirty of its rows.</param>
+    /// <param name="Summary">The beat's recorded event line, or its opening words when there is
+    /// none. This is what makes the list navigable at all: five hundred rows reading
+    /// <c>#0122 - Chapter 3: Teeth</c>, <c>#0123 - Chapter 3: Teeth</c> carry one bit of
+    /// information between them, which is that the book is long.</param>
+    /// <param name="SummaryIsProse">True when <paramref name="Summary"/> is the beat's own opening
+    /// words rather than a recorded summary. Shown differently: a first line is evidence, an event
+    /// summary is a claim, and 31 of BCODA's described the wrong beat.</param>
+    /// <param name="Words">Length at a glance — the thing that makes an oversized beat findable.</param>
+    public sealed record SpineItem(
+        Guid BeatId,
+        Guid ChapterNodeId,
+        int Ordinal,
+        string Label,
+        string ChapterTitle,
+        string Summary,
+        bool SummaryIsProse,
+        int Words,
+        bool Empty);
 
     /// <summary>An open beat. <paramref name="Text"/> is the RAW tagged prose — reads do not
     /// strip markup, which is exactly what the display/markdown toggle needs.</summary>
@@ -81,12 +102,42 @@ public sealed class WriterService(
         var items = new List<SpineItem>(ordered.Count);
         for (var i = 0; i < ordered.Count; i++)
         {
-            var chapter = chapterTitles.GetValueOrDefault(ordered[i].NodeId, "(unfiled)");
-            items.Add(new SpineItem(ordered[i].Beat.Id, ordered[i].NodeId, i + 1,
-                                    $"#{i + 1:D4} - {chapter}"));
+            var beat = ordered[i].Beat;
+            var chapter = chapterTitles.GetValueOrDefault(ordered[i].NodeId, "(unfiled)") ?? "(unfiled)";
+            var plain = ProseInline.StripFormatting(BeatMarkup.StripEntityTags(beat.Text ?? ""));
+
+            // The recorded event line when there is one, the beat's own opening words otherwise.
+            // Which of the two is showing is carried separately rather than blurred: an event
+            // summary is a claim about the beat and 31 of BCODA's described the wrong one, while
+            // a first line cannot be wrong about what it is.
+            var recorded = !string.IsNullOrWhiteSpace(beat.EventSummary);
+            var summary = recorded ? beat.EventSummary!.Trim() : FirstLine(plain);
+
+            items.Add(new SpineItem(
+                beat.Id, ordered[i].NodeId, i + 1,
+                $"#{i + 1:D4} - {chapter}",
+                chapter,
+                Shorten(summary, 110),
+                SummaryIsProse: !recorded,
+                Words: plain.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries).Length,
+                Empty: plain.Trim().Length == 0));
         }
         return items;
     }
+
+    /// <summary>The beat's opening sentence-ish, for a list row. Cut at a sentence end when there
+    /// is one nearby, so the row reads as a line rather than as a truncation.</summary>
+    private static string FirstLine(string plain)
+    {
+        var text = plain.Replace('\n', ' ').Trim();
+        if (text.Length == 0) return "";
+
+        var stop = text.IndexOfAny(['.', '!', '?'], 0);
+        return stop > 20 && stop < 140 ? text[..(stop + 1)] : text;
+    }
+
+    private static string Shorten(string s, int max)
+        => s.Length <= max ? s : s[..(max - 1)].TrimEnd() + "…";
 
     public async Task<OpenBeat?> GetBeatAsync(Guid beatId, CancellationToken ct = default)
     {
@@ -167,12 +218,125 @@ public sealed class WriterService(
     /// author leaves a beat they actually changed, closes the book, or makes an edit the
     /// ramifications check flagged as risky.</para>
     /// </summary>
-    public async Task RunDeferredAnalysisAsync(Guid bookNodeId, Guid beatId, CancellationToken ct = default)
+    // ── Structural editing ─────────────────────────────────────────────────
+    //
+    // The workbench has had all of these since long before the Writer existed, and the Writer
+    // called none of them: a drafting novelist could change the words in a beat and nothing else.
+    // Ordered here by what that actually costs them — split first, because the commonest real act
+    // in drafting is "this is two beats"; delete last, because it is the one the author can do by
+    // emptying a beat and the only one that destroys something.
+    //
+    // Every one of these is a WHOLE-BEAT structural act, which is why none of them goes through
+    // SpanWrite: there is no span, and nothing here rewords anything.
+
+    /// <summary>
+    /// Split the beat at the caret, leaving the text before it here and the rest in a new beat
+    /// immediately after.
+    /// </summary>
+    /// <param name="splitPosition">A character offset into the beat's STORED text. The editor
+    /// reports the caret in reader-visible coordinates, so callers map it first — see
+    /// <c>PlainTextMap</c>. Splitting at a raw plain offset would land inside an entity tag.</param>
+    /// <returns>The new beat that holds the tail.</returns>
+    public async Task<Beat> SplitBeatAsync(
+        Guid bookNodeId, Guid chapterNodeId, Guid beatId, int splitPosition,
+        CancellationToken ct = default)
     {
         await ScopeToBookAsync(bookNodeId, ct);
-        var radius = await blastRadius.GetBlastRadiusBeatIdsAsync(beatId, ct: ct);
-        if (radius.Count > 0)
-            await logicSweep.RunNarrowAsync(bookNodeId, radius, beatId, ct);
+        return await workbench.SplitBeatAtAsync(chapterNodeId, beatId, splitPosition, ct);
+    }
+
+    /// <summary>Split down the middle, at the nearest paragraph break the workbench can find.
+    /// What the toolbar offers when there is no caret to split at.</summary>
+    public async Task<Beat> SplitBeatAsync(
+        Guid bookNodeId, Guid chapterNodeId, Guid beatId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        return await workbench.SplitBeatAsync(chapterNodeId, beatId, ct);
+    }
+
+    /// <summary>A new, empty beat after this one — the "and then" a drafting session runs on.</summary>
+    public async Task<Beat> InsertBeatAsync(
+        Guid bookNodeId, Guid chapterNodeId, Guid? afterBeatId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        return await workbench.InsertBeatAsync(chapterNodeId, afterBeatId, ct: ct);
+    }
+
+    /// <summary>Move a beat to sit after another one, or to the front when
+    /// <paramref name="afterBeatId"/> is null.</summary>
+    public async Task MoveBeatAsync(
+        Guid bookNodeId, Guid chapterNodeId, Guid beatId, Guid? afterBeatId,
+        CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        await workbench.MoveBeatAsync(chapterNodeId, beatId, afterBeatId, ct);
+    }
+
+    /// <summary>Fold this beat into the one before it. The inverse of a split, and the reason a
+    /// split is safe to try: getting it wrong costs one click to undo.</summary>
+    public async Task JoinWithPreviousAsync(
+        Guid bookNodeId, Guid chapterNodeId, Guid beatId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        await workbench.JoinBeatWithPreviousAsync(chapterNodeId, beatId, ct);
+    }
+
+    /// <summary>
+    /// Delete a beat outright.
+    /// </summary>
+    /// <remarks>
+    /// The only verb here that destroys something, and the UI confirms it by showing the prose
+    /// rather than by asking "are you sure" — a confirmation that does not show what is about to
+    /// be lost is a confirmation nobody reads.
+    /// </remarks>
+    public async Task DeleteBeatAsync(
+        Guid bookNodeId, Guid chapterNodeId, Guid beatId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        await workbench.DeleteBeatAsync(chapterNodeId, beatId, ct);
+    }
+
+    /// <summary>What a deferred sweep did, so the UI can say so.</summary>
+    /// <param name="Cost">Dollars, from the ledger's own scope total — not an estimate.</param>
+    public sealed record SweepReport(
+        bool Ran, int BeatsChecked, int Findings, double Cost, TimeSpan Elapsed, string? Error);
+
+    /// <summary>
+    /// The logic sweep over everything the last edit could have broken.
+    /// </summary>
+    /// <remarks>
+    /// <para>Now returns what it did. It used to return void: six logic rules over a blast radius
+    /// take minutes and spend real money, and the author had no indication that it had started,
+    /// finished, failed or cost anything. A background task that silently bills you is not a
+    /// feature the author can reason about, and the first thing they do when they notice is turn
+    /// the whole thing off.</para>
+    /// </remarks>
+    public async Task<SweepReport> RunDeferredAnalysisAsync(
+        Guid bookNodeId, Guid beatId, CancellationToken ct = default)
+    {
+        var started = System.Diagnostics.Stopwatch.StartNew();
+        try
+        {
+            await ScopeToBookAsync(bookNodeId, ct);
+            var radius = await blastRadius.GetBlastRadiusBeatIdsAsync(beatId, ct: ct);
+            if (radius.Count == 0)
+                return new SweepReport(false, 0, 0, 0, started.Elapsed, null);
+
+            // One scope around the whole sweep, so the cost reported is this sweep's and not the
+            // session's running total.
+            using var scope = LlmActionContext.BeginCostScope();
+            var report = await logicSweep.RunNarrowAsync(bookNodeId, radius, beatId, ct);
+
+            return new SweepReport(
+                true, radius.Count, report.Findings.Count,
+                ledger.CostForScope(scope.Id), started.Elapsed, null);
+        }
+        catch (OperationCanceledException) { throw; }
+        catch (Exception ex)
+        {
+            // A sweep that fell over used to be indistinguishable from one that found nothing.
+            return new SweepReport(false, 0, 0, 0, started.Elapsed, ex.Message);
+        }
     }
 
     /// <summary>Candidates for "assign this highlighted text to an entity". Ranked exact → prefix

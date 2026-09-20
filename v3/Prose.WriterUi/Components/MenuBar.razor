@@ -54,6 +54,17 @@
         </button>
     }
 
+    @* Text size. Every font size here is absolute and the host has browser accelerator keys off,
+       so without this the only way to resize was Ctrl+scroll — a mouse gesture, and therefore not
+       a resize mechanism at all for someone who does not use one (WCAG 1.4.4). *@
+    <div class="textsize" role="group" aria-label="Text size">
+        <button class="mini" @onclick="() => OnScale.InvokeAsync(-1)"
+                title="Smaller text" aria-label="Make the text smaller">A−</button>
+        <span class="muted textsize-value" role="status">@($"{Scale * 100:0}%")</span>
+        <button class="mini" @onclick="() => OnScale.InvokeAsync(1)"
+                title="Larger text" aria-label="Make the text larger">A+</button>
+    </div>
+
     <button class="mini" @onclick="() => OnToggleTheme.InvokeAsync()" title="Light / dark"
             aria-label="Dark theme" aria-pressed="@(Theme == "dark")">
         @(Theme == "light" ? "☾" : "☀")
@@ -101,6 +112,10 @@
         <button class="mini @(FindOpen ? "on" : "")" aria-pressed="@FindOpen"
                 @onclick="() => OnToggleFind.InvokeAsync()"
                 title="Find in this book (Ctrl+F)" aria-label="Find in this book">Find</button>
+        <button class="mini @(FindingsOpen ? "on" : "")" aria-pressed="@FindingsOpen"
+                @onclick="() => OnToggleFindings.InvokeAsync()"
+                title="What the instruments have found in this book"
+                aria-label="Findings">Findings</button>
     </div>
 }
 
@@ -116,6 +131,14 @@
     [Parameter] public bool Exporting { get; set; }
     [Parameter] public string Theme { get; set; } = "dark";
 
+    /// <summary>The current text-size multiplier, shown as a percentage so the author can tell
+    /// how far they have gone and get back.</summary>
+    [Parameter] public double Scale { get; set; } = 1;
+
+    /// <summary>-1 for smaller, +1 for larger. A step rather than a value so the shell owns the
+    /// increment and the clamp.</summary>
+    [Parameter] public EventCallback<int> OnScale { get; set; }
+
     [Parameter] public EventCallback OnToggleBookMenu { get; set; }
     [Parameter] public EventCallback<WriterService.BookListItem> OnOpenBook { get; set; }
     [Parameter] public EventCallback<EditorMode> OnSetMode { get; set; }
@@ -128,6 +151,9 @@
     [Parameter] public EventCallback OnAddEntity { get; set; }
     [Parameter] public bool FindOpen { get; set; }
     [Parameter] public EventCallback OnToggleFind { get; set; }
+
+    [Parameter] public bool FindingsOpen { get; set; }
+    [Parameter] public EventCallback OnToggleFindings { get; set; }
 
     [Parameter] public EventCallback OnReadAloud { get; set; }
     [Parameter] public EventCallback OnStopReading { get; set; }

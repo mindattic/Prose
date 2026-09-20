@@ -198,6 +198,10 @@ else
 
     public Task<Selection?> GetSelectionAsync() => JsAsync<Selection>("proseEditor.selection");
 
+    /// <summary>Reader-visible characters before the caret, or -1 when the caret is elsewhere.
+    /// Mapped to a stored offset by the caller — see <c>PlainTextMap</c>.</summary>
+    public async Task<int> GetCaretOffsetAsync() => await JsAsync<int>("proseEditor.caretOffset");
+
     public Task WrapSelectionAsync(string guid, string repo)
         => JsAsync<bool>("proseEditor.wrapSelection", guid, repo);
 

@@ -1,6 +1,16 @@
-@* The beat list down the left. Purely presentational: it renders the spine it is handed and
-   reports which row was clicked. It holds no state of its own, so the shell remains the single
-   place that decides what "open a beat" means (saving the outgoing one, running its analysis). *@
+@* The beat list down the left.
+
+   It used to be five hundred rows reading "#0122 - Chapter 3: Teeth", "#0123 - Chapter 3: Teeth",
+   "#0124 - Chapter 3: Teeth". Those rows carry one bit of information between them, which is that
+   the book is long — and the whole point of the list is that you can find your place in a
+   500-page manuscript you have not read.
+
+   So: grouped by chapter, with the chapter's name said ONCE and collapsible; each beat showing
+   what happens in it; a filter over the summaries; and length, because an oversized beat is the
+   thing you most often go looking for and there was previously no way to see one.
+
+   Still purely presentational. The shell remains the single place that decides what "open a beat"
+   means — saving the outgoing one, running its analysis. *@
 
 <nav class="spine" aria-label="Beats">
     @if (Spine is null)
@@ -9,19 +19,71 @@
     }
     else
     {
-        <ul>
-            @foreach (var item in Spine)
+        <div class="spine-filter">
+            <label class="visually-hidden" for="spine-filter">Filter beats</label>
+            <input id="spine-filter" type="search" value="@filter" placeholder="Filter…"
+                   autocomplete="off" spellcheck="false"
+                   @oninput="e => filter = e.Value?.ToString() ?? string.Empty" />
+            @if (filter.Length > 0)
             {
+                <button class="mini" @onclick="() => filter = string.Empty"
+                        aria-label="Clear the filter">✕</button>
+            }
+        </div>
+
+        var groups = Grouped();
+
+        @if (groups.Count == 0)
+        {
+            <div class="empty">No beat matches “@filter”.</div>
+        }
+
+        <ul class="spine-chapters">
+            @foreach (var group in groups)
+            {
+                var open = IsOpen(group.Chapter);
                 <li>
-                    <button class="@(item.BeatId == CurrentBeatId ? "spine-row current" : "spine-row")"
-                            aria-current="@(item.BeatId == CurrentBeatId ? "true" : null)"
-                            @onclick="() => OnSelect.InvokeAsync(item.BeatId)">
-                        @item.Label
-                        @if (item.BeatId == CurrentBeatId)
-                        {
-                            <span class="visually-hidden"> (open)</span>
-                        }
+                    <button class="spine-chapter" @onclick="() => Toggle(group.Chapter)"
+                            aria-expanded="@open">
+                        <span class="spine-caret" aria-hidden="true">@(open ? "▾" : "▸")</span>
+                        <span class="spine-chapter-name">@group.Chapter</span>
+                        <span class="muted">@group.Items.Count</span>
                     </button>
+
+                    @if (open)
+                    {
+                        <ul class="spine-beats">
+                            @foreach (var item in group.Items)
+                            {
+                                <li>
+                                    <button class="@(item.BeatId == CurrentBeatId ? "spine-row current" : "spine-row")"
+                                            aria-current="@(item.BeatId == CurrentBeatId ? "true" : null)"
+                                            @onclick="() => OnSelect.InvokeAsync(item.BeatId)">
+                                        <span class="spine-row-head">
+                                            <span class="spine-no">#@item.Ordinal.ToString("D4")</span>
+                                            @if (item.Empty)
+                                            {
+                                                @* A planned beat with nothing in it yet. Worth
+                                                   seeing from the list — it is where the work is. *@
+                                                <span class="spine-empty">empty</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="muted spine-words">@item.Words w</span>
+                                            }
+                                        </span>
+                                        <span class="spine-summary @(item.SummaryIsProse ? "prose" : "")">
+                                            @item.Summary
+                                        </span>
+                                        @if (item.BeatId == CurrentBeatId)
+                                        {
+                                            <span class="visually-hidden"> (open)</span>
+                                        }
+                                    </button>
+                                </li>
+                            }
+                        </ul>
+                    }
                 </li>
             }
         </ul>
@@ -36,4 +98,63 @@
     [Parameter] public Guid CurrentBeatId { get; set; }
 
     [Parameter] public EventCallback<Guid> OnSelect { get; set; }
+
+    private string filter = "";
+
+    /// <summary>Chapters the author has collapsed. Held as the EXCEPTIONS rather than as the whole
+    /// state, so a book that gains a chapter shows it open rather than hidden.</summary>
+    private readonly HashSet<string> collapsed = [];
+
+    private sealed record Group(string Chapter, List<WriterService.SpineItem> Items);
+
+    /// <summary>
+    /// The chapter holding the open beat is always expanded, whatever the author collapsed. A
+    /// list that hides the row you are looking at is worse than one with no grouping at all.
+    /// </summary>
+    private bool IsOpen(string chapter)
+        => !collapsed.Contains(chapter)
+           || (Spine?.Any(s => s.BeatId == CurrentBeatId && s.ChapterTitle == chapter) ?? false);
+
+    private void Toggle(string chapter)
+    {
+        if (!collapsed.Add(chapter)) collapsed.Remove(chapter);
+    }
+
+    /// <summary>
+    /// Grouped in manuscript order, filtered.
+    /// </summary>
+    /// <remarks>
+    /// Consecutive runs, not a GroupBy: a chapter title can legitimately recur later in a book
+    /// (a split mega-chapter, a deliberately repeated heading), and collapsing those into one
+    /// group would reorder the manuscript in the one list whose job is to show its order.
+    /// </remarks>
+    private List<Group> Grouped()
+    {
+        var groups = new List<Group>();
+        if (Spine is null) return groups;
+
+        var needle = filter.Trim();
+        foreach (var item in Spine)
+        {
+            if (needle.Length > 0 && !Matches(item, needle)) continue;
+
+            if (groups.Count == 0 || groups[^1].Chapter != item.ChapterTitle)
+                groups.Add(new Group(item.ChapterTitle, []));
+            groups[^1].Items.Add(item);
+        }
+        return groups;
+    }
+
+    /// <summary>
+    /// Matches the summary, the chapter or the beat number.
+    /// </summary>
+    /// <remarks>
+    /// Deliberately NOT the beat's full prose. That is what Find is for, and it searches the
+    /// stored text of every beat in the book — doing it here, on every keystroke, over a list
+    /// that re-renders as you type, is how a 500-beat manuscript stutters.
+    /// </remarks>
+    private static bool Matches(WriterService.SpineItem item, string needle)
+        => item.Summary.Contains(needle, StringComparison.OrdinalIgnoreCase)
+           || item.ChapterTitle.Contains(needle, StringComparison.OrdinalIgnoreCase)
+           || item.Ordinal.ToString().Contains(needle, StringComparison.Ordinal);
 }

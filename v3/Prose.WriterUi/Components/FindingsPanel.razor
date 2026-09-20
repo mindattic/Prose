@@ -1,0 +1,127 @@
+@* The findings inbox, in the editor.
+
+   Every instrument in Prose writes findings — including the logic sweep this editor kicks off on
+   every finished beat, which costs real money — and until now nothing in the Writer read one back.
+   The author was paying for analysis they could only see by running a CLI command in another
+   window, which is the same as not having it.
+
+   Read-only plus triage. Applying a finding's suggested fix is a prose write and belongs behind
+   the same proposal-and-approval path as everything else that changes words; what was missing was
+   simply being able to SEE them. *@
+
+@inject FindingsUiService Findings
+
+<aside class="findings" aria-label="Findings">
+    <header class="findings-head">
+        <h2 class="findings-title">Findings</h2>
+        @if (rows.Count > 0)
+        {
+            <span class="muted">@rows.Count</span>
+        }
+        <div class="spacer"></div>
+        <label class="findings-opt">
+            <input type="checkbox" checked="@includeTriaged"
+                   @onchange="ToggleTriagedAsync" />
+            <span>Seen</span>
+        </label>
+        <button class="mini" @onclick="() => OnClose.InvokeAsync()" aria-label="Close findings">✕</button>
+    </header>
+
+    @if (loading)
+    {
+        <div class="empty">Loading…</div>
+    }
+    else if (rows.Count == 0)
+    {
+        @* Not "this book is clean". Nothing has necessarily looked — the sweep runs when a beat is
+           finished, and a book nobody has edited today has simply not been checked today. *@
+        <div class="empty">
+            Nothing untriaged for this book. That means nothing is waiting, not that nothing is
+            wrong — findings only exist where an instrument has run.
+        </div>
+    }
+    else
+    {
+        <ul class="findings-list">
+            @foreach (var row in rows)
+            {
+                <li class="finding">
+                    <div class="finding-head">
+                        <span class="finding-sev @row.Severity.ToLowerInvariant()">@row.Severity</span>
+                        <span class="muted finding-cat">@row.Category</span>
+                        @if (row.BeatNumber is { } n)
+                        {
+                            <span class="muted">#@n</span>
+                        }
+                        <div class="spacer"></div>
+                        <span class="muted finding-when">@row.DetectedAt.ToLocalTime().ToString("MMM d")</span>
+                    </div>
+
+                    <div class="finding-summary">@row.Summary</div>
+
+                    @if (row.Snippet is { Length: > 0 })
+                    {
+                        <pre class="finding-snippet">@row.Snippet</pre>
+                    }
+
+                    <div class="finding-actions">
+                        @if (row.BeatId is { } id)
+                        {
+                            <button class="mini" @onclick="() => OnJumpToBeat.InvokeAsync(id)">Open the beat</button>
+                        }
+                        <div class="spacer"></div>
+                        <button class="mini" @onclick="() => TriageAsync(row.Id)"
+                                title="I have read this and am leaving it">Seen</button>
+                        <button class="mini" @onclick="() => DismissAsync(row.Id)"
+                                title="Not a problem">Dismiss</button>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+</aside>
+
+@code {
+    [Parameter] public Guid BookNodeId { get; set; }
+    [Parameter] public EventCallback<Guid> OnJumpToBeat { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private IReadOnlyList<FindingsUiService.Row> rows = [];
+    private bool includeTriaged;
+    private bool loading = true;
+
+    private Guid loadedFor;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (BookNodeId == loadedFor) return;
+        loadedFor = BookNodeId;
+        await ReloadAsync();
+    }
+
+    private async Task ReloadAsync()
+    {
+        if (BookNodeId == Guid.Empty) { rows = []; loading = false; return; }
+        loading = true;
+        try { rows = await Findings.ForBookAsync(BookNodeId, includeTriaged); }
+        finally { loading = false; }
+    }
+
+    private async Task ToggleTriagedAsync(ChangeEventArgs e)
+    {
+        includeTriaged = e.Value is bool b && b;
+        await ReloadAsync();
+    }
+
+    private async Task TriageAsync(long id)
+    {
+        Findings.Triage(id);
+        await ReloadAsync();
+    }
+
+    private async Task DismissAsync(long id)
+    {
+        Findings.Dismiss(id);
+        await ReloadAsync();
+    }
+}

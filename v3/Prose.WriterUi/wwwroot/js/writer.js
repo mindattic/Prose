@@ -142,6 +142,37 @@ window.proseEditor = (() => {
     }
 
     /**
+     * The entity chip the caret is in or immediately beside.
+     *
+     * A chip is contenteditable="false", so the caret never lands INSIDE it — it lands in the text
+     * node before or after. Both neighbours are checked, which is what makes "arrow over to the
+     * name, press Shift+F10" reach the chip a mouse user would have right-clicked.
+     */
+    function chipAtCaret() {
+        const sel = window.getSelection();
+        if (!host || !sel || sel.rangeCount === 0) return null;
+
+        const range = sel.getRangeAt(0);
+        if (!host.contains(range.startContainer)) return null;
+
+        const direct = chipAt(range.startContainer);
+        if (direct) return direct;
+
+        // Element containers index child nodes; text containers are between them.
+        const node = range.startContainer;
+        if (node.nodeType === Node.ELEMENT_NODE) {
+            const kids = node.childNodes;
+            const before = kids[range.startOffset - 1];
+            const after = kids[range.startOffset];
+            return chipAt(after) || chipAt(before);
+        }
+
+        if (range.startOffset === 0) return chipAt(node.previousSibling);
+        if (range.startOffset === (node.textContent || '').length) return chipAt(node.nextSibling);
+        return null;
+    }
+
+    /**
      * Where to put a keyboard-invoked menu. The caret's own rectangle when there is one — a menu
      * that opens in the corner of the screen is technically keyboard-accessible and useless.
      */
@@ -164,7 +195,11 @@ window.proseEditor = (() => {
      * afterwards is not reliably the one the author right-clicked.
      */
     function openContextMenu(target, x, y) {
-        const chip = chipAt(target);
+        // From the pointer's target first, then from the CARET. Without the second, Shift+F10 with
+        // the caret inside a chip offered no chip actions at all — document.activeElement is the
+        // contenteditable host, never the chip, so the keyboard route reached none of them. Entity
+        // chips are otherwise click-only, and this is what makes them operable without a mouse.
+        const chip = chipAt(target) || chipAtCaret();
         if (chip) contextTarget = chip;
 
         const span = selectionSpan();
@@ -250,6 +285,32 @@ window.proseEditor = (() => {
             // document on every keystroke.
             if (element.dataset.skipNext === '1') { element.dataset.skipNext = '0'; return; }
             element.innerHTML = html;
+        },
+
+        /**
+         * How many reader-visible characters precede the caret.
+         *
+         * Reported in PLAIN coordinates on purpose. A markup offset computed here would have to
+         * serialize a partial fragment, and a partial serialization is not guaranteed to equal
+         * the same substring of the whole — which, for a split, would cut inside a tag. The server
+         * maps this through PlainTextMap instead, which is built from the real parsers.
+         *
+         * Range.toString() gives rendered text: entity chips contribute their words and the
+         * formatting markers are not in the DOM at all, which is exactly what PlainText() strips.
+         *
+         * @returns the offset, or -1 when the caret is not in the editor.
+         */
+        caretOffset() {
+            const sel = window.getSelection();
+            if (!host || !sel || sel.rangeCount === 0) return -1;
+
+            const caret = sel.getRangeAt(0);
+            if (!host.contains(caret.commonAncestorContainer)) return -1;
+
+            const before = document.createRange();
+            before.setStart(host, 0);
+            before.setEnd(caret.startContainer, caret.startOffset);
+            return before.toString().length;
         },
 
         /** True when the author has selected something that is safe to act on. */

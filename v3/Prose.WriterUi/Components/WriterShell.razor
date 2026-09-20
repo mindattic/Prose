@@ -42,7 +42,11 @@
              OnStopReading="StopReadingAsync"
              Speaking="speaking"
              FindOpen="findOpen"
-             OnToggleFind="OpenFind" />
+             OnToggleFind="OpenFind"
+             FindingsOpen="findingsOpen"
+             OnToggleFindings="() => findingsOpen = !findingsOpen"
+             Scale="scale"
+             OnScale="StepScaleAsync" />
 
     <div class="body">
 
@@ -59,12 +63,28 @@
             {
                 @if (conflict is not null)
                 {
+                    @* Both texts, side by side. This banner used to offer "discard mine" and
+                       "overwrite" while showing NEITHER — asking the author to choose which of two
+                       versions to destroy without letting them see either one, when conflict.Text
+                       was sitting in memory the whole time. *@
                     <div class="banner danger" role="alert">
                         <strong>This beat changed underneath you.</strong>
                         Something else wrote to it while you had it open — another session, a CLI
-                        command, or a tool.
-                        <button class="mini" @onclick="ReloadFromConflictAsync">Load theirs (discard mine)</button>
-                        <button class="mini" @onclick="OverwriteConflictAsync">Keep mine (overwrite)</button>
+                        command, or a tool. Read both before choosing; one of them is about to go.
+                    </div>
+
+                    <div class="conflict">
+                        <section class="conflict-side">
+                            <h3>Yours <span class="muted">@WordsIn(draft) words, unsaved</span></h3>
+                            <pre class="conflict-text">@Plain(draft)</pre>
+                            <button class="mini" @onclick="OverwriteConflictAsync">Keep mine — overwrite theirs</button>
+                        </section>
+
+                        <section class="conflict-side">
+                            <h3>Theirs <span class="muted">@WordsIn(conflict.Text) words, saved · v@conflict.Version</span></h3>
+                            <pre class="conflict-text">@Plain(conflict.Text)</pre>
+                            <button class="mini" @onclick="ReloadFromConflictAsync">Take theirs — discard mine</button>
+                        </section>
                     </div>
                 }
 
@@ -120,6 +140,13 @@
             }
         </main>
 
+        @if (findingsOpen && book is not null)
+        {
+            <FindingsPanel BookNodeId="book.Id"
+                           OnJumpToBeat="OpenBeatAsync"
+                           OnClose="() => findingsOpen = false" />
+        }
+
         @if (findOpen && book is not null)
         {
             <FindPanel BookNodeId="book.Id" CurrentBeatId="beatId"
@@ -145,6 +172,15 @@
         <span>@(connected ? "Connected" : "Disconnected")</span>
         <span class="sep">·</span>
         <span role="status">@activity</span>
+        @if (sweepNote is not null)
+        {
+            @* The background sweep, said out loud. It spends real money for minutes and used to
+               do so with no indication it had started, finished, failed or cost anything. *@
+            <span class="sep">·</span>
+            <span role="status" class="muted">@sweepNote</span>
+            <button class="mini" @onclick="() => sweepNote = null"
+                    aria-label="Dismiss the consistency check result">✕</button>
+        }
         @if (beat is not null)
         {
             <div class="spacer"></div>
@@ -167,6 +203,24 @@
 
 <ContextMenu Items="contextItems" X="contextAt.X" Y="contextAt.Y"
              OnClose="() => contextItems = []" />
+
+@if (pendingDelete is not null)
+{
+    @* Shows the prose. A confirmation that asks "are you sure" without showing what is about to
+       be lost is one the author learns to click through — which is exactly when it stops
+       protecting them. Same reason the conflict banner now shows both texts. *@
+    <div class="scrim" aria-hidden="true" @onclick="() => pendingDelete = null"></div>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-title">
+        <h2 id="delete-title">Delete this beat?</h2>
+        <p class="muted">This removes the beat and its prose from the book. It cannot be undone here.</p>
+        <pre class="delete-preview">@Shorten(Prose.Core.Services.BeatMarkup.StripEntityTags(pendingDelete.Text), 1200)</pre>
+        <div class="modal-actions">
+            <button class="mini" @onclick="() => pendingDelete = null">Keep it</button>
+            <div class="spacer"></div>
+            <button class="danger-btn" @onclick="ConfirmDeleteAsync">Delete the beat</button>
+        </div>
+    </div>
+}
 
 @if (entityModal is not null)
 {
@@ -205,6 +259,10 @@
     private string? exportDir;
     private bool analysisPending;
     private string theme = "dark";
+
+    /// <summary>The text-size multiplier. Read back from the browser on first render so the
+    /// author's choice survives a reload, and clamped by the JS side.</summary>
+    private double scale = 1;
     private string? tagNote;
     private string? jsError;
     private WriterService.OpenBeat? conflict;
@@ -256,6 +314,10 @@
         catch (JSDisconnectedException) { connected = false; }
         catch (JSException) { /* theme is a preference; never worth failing a render over */ }
 
+        try { scale = await JS.InvokeAsync<double>("proseWriter.applyScale"); StateHasChanged(); }
+        catch (JSDisconnectedException) { connected = false; }
+        catch (JSException) { /* a text size is a preference; never worth failing a render over */ }
+
         // Ctrl+F belongs to the shell rather than to a panel: it has to work whether or not Find
         // is already open, and it is the shell that knows which book to search.
         shellRef ??= DotNetObjectReference.Create(this);
@@ -263,6 +325,16 @@
     }
 
     private DotNetObjectReference<WriterShell>? shellRef;
+
+    /// <summary>One notch bigger or smaller. 10% a press: small enough to land where the author
+    /// wants, large enough that reaching 200% is six presses rather than twenty.</summary>
+    private async Task StepScaleAsync(int direction)
+    {
+        var wanted = scale + (direction >= 0 ? 0.1 : -0.1);
+        try { scale = await JS.InvokeAsync<double>("proseWriter.setScale", wanted); }
+        catch (JSDisconnectedException) { connected = false; }
+        catch (JSException ex) { jsError = ex.Message; }
+    }
 
     /// <summary>Ctrl+F. Toggling rather than only opening: pressing it again with Find already up
     /// is how everyone closes a find bar.</summary>
@@ -275,6 +347,10 @@
     }
 
     private bool findOpen;
+
+    /// <summary>The findings inbox. Closed by default — it is a thing the author goes and looks
+    /// at, not a thing that should sit beside the prose demanding attention while they write.</summary>
+    private bool findingsOpen;
 
     // ── Editor callbacks ───────────────────────────────────────────────────
 
@@ -481,6 +557,14 @@
         return parts.Count == 0 ? null : "Saved. The entity scanner " + string.Join("; ", parts) + ".";
     }
 
+    /// <summary>Reader-visible, for the conflict panels: the author is comparing what they WROTE,
+    /// and entity wrappers are ~55 characters of difference per link that they did not type.</summary>
+    private static string Plain(string? markup)
+        => Prose.Core.Services.Discussion.BeatDiscussTarget.PlainText(markup);
+
+    private static int WordsIn(string? markup)
+        => Plain(markup).Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries).Length;
+
     private async Task ReloadFromConflictAsync()
     {
         if (conflict is null) return;
@@ -569,15 +653,55 @@
         await Task.CompletedTask;
     }
 
+    /// <summary>What the background sweep is doing, in the status bar. Null when nothing is.</summary>
+    private string? sweepNote;
+
+    /// <summary>
+    /// Run the logic sweep over everything the finished edit could have broken.
+    ///
+    /// <para>Still not awaited — six logic rules over a blast radius take minutes and the author
+    /// has already moved on — but no longer silent. It used to start, spend real money for
+    /// minutes, and finish or fail with no indication of any of it, which is not something an
+    /// author can reason about and is the first thing they turn off when they notice.</para>
+    /// </summary>
     private void RunDeferredAnalysis()
     {
         if (book is null || !analysisPending) return;
 
-        // Deliberately not awaited: six logic rules over a blast radius take minutes and the author
-        // has already moved on. Ids are captured now because the fields will have changed by then.
+        // Ids captured now because the fields will have changed by the time this finishes.
         var (bookId, finished) = (book.Id, beatId);
         analysisPending = false;
-        _ = Task.Run(() => Writer.RunDeferredAnalysisAsync(bookId, finished));
+        sweepNote = "Checking what that edit could have broken…";
+
+        _ = Task.Run(async () =>
+        {
+            try
+            {
+                var report = await Writer.RunDeferredAnalysisAsync(bookId, finished);
+                sweepNote = Describe(report);
+            }
+            catch (Exception ex)
+            {
+                sweepNote = $"The consistency check failed: {ex.Message}";
+            }
+
+            // InvokeAsync: this is a thread-pool continuation, and touching the render tree from
+            // one without marshalling is how a Blazor circuit dies with no message.
+            await InvokeAsync(StateHasChanged);
+        });
+    }
+
+    private static string Describe(WriterService.SweepReport r)
+    {
+        if (r.Error is not null) return $"The consistency check failed: {r.Error}";
+        if (!r.Ran) return "Nothing downstream of that edit needed checking.";
+
+        var cost = r.Cost > 0 ? $" · {r.Cost:C4}" : "";
+        var took = $" · {r.Elapsed.TotalSeconds:0}s";
+        return r.Findings == 0
+            ? $"Checked {r.BeatsChecked} beats — nothing found{took}{cost}."
+            : $"Checked {r.BeatsChecked} beats — {r.Findings} finding" +
+              $"{(r.Findings == 1 ? "" : "s")} recorded{took}{cost}.";
     }
 
     // ── Toolbar ────────────────────────────────────────────────────────────
@@ -675,6 +799,22 @@
             "Read the whole beat aloud", () => ReadTextAsync(draft),
             Disabled: string.IsNullOrWhiteSpace(draft)));
 
+        // Structure. Ordered by what a drafting novelist actually reaches for: "this is two
+        // beats" is the commonest real act, and delete is last because it is the only one that
+        // destroys something.
+        items.Add(ContextMenu.Item.Separator());
+        items.Add(new ContextMenu.Item(
+            "Split the beat here", SplitAtCaretAsync,
+            Disabled: beat is null || mode != EditorMode.Display,
+            Hint: mode == EditorMode.Display ? "at the caret" : "Display mode only"));
+        items.Add(new ContextMenu.Item(
+            "Insert a beat after this one", InsertBeatAsync, Disabled: beat is null));
+        items.Add(new ContextMenu.Item(
+            "Merge into the beat before", JoinPreviousAsync,
+            Disabled: beat is null || IsFirstBeat));
+        items.Add(new ContextMenu.Item(
+            "Delete this beat…", BeginDeleteAsync, Disabled: beat is null));
+
         contextItems = items;
         StateHasChanged();
         return Task.CompletedTask;
@@ -720,6 +860,143 @@
     {
         s = (s ?? "").Replace('\n', ' ').Trim();
         return s.Length <= max ? s : s[..max] + "…";
+    }
+
+    // ── Structure ──────────────────────────────────────────────────────────
+
+    private bool IsFirstBeat => spine is { Count: > 0 } && spine[0].BeatId == beatId;
+
+    /// <summary>
+    /// Split at the caret.
+    ///
+    /// <para>The caret arrives in reader-visible coordinates and is mapped to a stored offset
+    /// here. Handing the raw plain offset to the workbench would cut inside an entity tag on any
+    /// beat with a link before the caret — which is most of them.</para>
+    /// </summary>
+    private async Task SplitAtCaretAsync()
+    {
+        if (book is null || beat is null || editor is null) return;
+
+        // Unsaved text first: the split is a database operation on the STORED beat, and splitting
+        // stored text the author has already edited past would silently discard the edit.
+        if (Dirty)
+        {
+            await SaveAsync(finishing: false);
+            if (problems.Count > 0 || conflict is not null) return;
+        }
+
+        var caret = await editor.GetCaretOffsetAsync();
+        if (caret <= 0)
+        {
+            tagNote = "Put the caret where the split should go first.";
+            return;
+        }
+
+        var stored = beat.Text ?? "";
+        var map = Prose.Core.Services.Discussion.PlainTextMap.Build(stored);
+        if (caret >= map.Plain.Length)
+        {
+            tagNote = "The caret is at the end of the beat — there would be nothing to split off.";
+            return;
+        }
+
+        var at = map.ToSource(caret);
+        await StructuralAsync(
+            () => Writer.SplitBeatAsync(book.Id, beat.ChapterNodeId, beat.Id, at),
+            "Split.");
+    }
+
+    private Task InsertBeatAsync()
+    {
+        if (book is null || beat is null) return Task.CompletedTask;
+        return StructuralAsync(async () =>
+        {
+            var created = await Writer.InsertBeatAsync(book.Id, beat.ChapterNodeId, beat.Id);
+            return created.Id;   // open the new beat — inserting one means writing in it
+        }, "Beat inserted.");
+    }
+
+    private Task JoinPreviousAsync()
+    {
+        if (book is null || beat is null) return Task.CompletedTask;
+        var target = beat;
+        return StructuralAsync(async () =>
+        {
+            await Writer.JoinWithPreviousAsync(book.Id, target.ChapterNodeId, target.Id);
+            // The merged text lives in the PREVIOUS beat now, which is where the author is
+            // looking — landing them on a deleted beat would show an empty editor.
+            var index = spine?.FindIndex(s => s.BeatId == target.Id) ?? -1;
+            return index > 0 ? spine![index - 1].BeatId : Guid.Empty;
+        }, "Merged into the beat before.");
+    }
+
+    /// <summary>
+    /// Ask before deleting, by SHOWING the prose that would go.
+    ///
+    /// <para>A confirmation that does not show what is about to be lost is a confirmation nobody
+    /// reads. This one puts the beat's own first lines in the dialog.</para>
+    /// </summary>
+    private Task BeginDeleteAsync()
+    {
+        if (beat is null) return Task.CompletedTask;
+        pendingDelete = beat;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    private WriterService.OpenBeat? pendingDelete;
+
+    private Task ConfirmDeleteAsync()
+    {
+        if (book is null || pendingDelete is null) return Task.CompletedTask;
+
+        var doomed = pendingDelete;
+        pendingDelete = null;
+        return StructuralAsync(async () =>
+        {
+            var index = spine?.FindIndex(s => s.BeatId == doomed.Id) ?? -1;
+            await Writer.DeleteBeatAsync(book.Id, doomed.ChapterNodeId, doomed.Id);
+
+            // Land on a neighbour rather than on nothing.
+            if (spine is null || spine.Count <= 1) return Guid.Empty;
+            return index > 0 ? spine[index - 1].BeatId : spine[1].BeatId;
+        }, "Beat deleted.");
+    }
+
+    /// <summary>
+    /// The shape every structural act shares: do it, reload the spine because the beat list has
+    /// changed underneath the author, and open wherever the act says they should now be.
+    /// </summary>
+    private Task StructuralAsync(Func<Task<Prose.Core.Data.Entities.Beat>> act, string note)
+        => StructuralAsync(async () => (await act()).Id, note);
+
+    private async Task StructuralAsync(Func<Task<Guid>> act, string note)
+    {
+        if (book is null) return;
+
+        activity = "Restructuring…";
+        try
+        {
+            var land = await act();
+
+            // The spine is the beat list AND the ordering; a structural act invalidates both, and
+            // a stale list is one where clicking row nine opens row ten.
+            spine = await Writer.GetSpineAsync(book.Id);
+
+            ClearBeatState();
+            if (land != Guid.Empty) { beatId = land; beat = await Writer.GetBeatAsync(land); }
+            else { beat = spine.Count > 0 ? await Writer.GetBeatAsync(spine[0].BeatId) : null; beatId = beat?.Id ?? Guid.Empty; }
+            draft = beat?.Text ?? "";
+
+            tagNote = note;
+        }
+        catch (Exception ex)
+        {
+            // Structural operations touch several rows. Failing loudly and leaving the author on
+            // the beat they started from is the only safe outcome.
+            tagNote = $"That could not be done: {ex.Message}";
+        }
+        finally { activity = "Idle"; }
     }
 
     private async Task AddEntityAsync()
