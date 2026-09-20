@@ -109,6 +109,55 @@ public static class DiscussionContent
         }
     }
 
+    /// <summary>
+    /// A turn flattened to plain text, for replaying the conversation back to the model.
+    ///
+    /// <para><b>Not <see cref="Summarize"/>.</b> Summarize returns the first text block and is for
+    /// list rows. Using it as history silently dropped everything a turn said beyond its opening
+    /// paragraph — which, once confirmations existed, meant the assistant could not see the
+    /// restatement and steps it had just offered. The author's "yes, go ahead" then arrived as
+    /// agreement to something the model had no record of proposing.</para>
+    /// </summary>
+    public static string Transcribe(IReadOnlyList<DiscussionBlock> blocks, int max = 4000)
+    {
+        var sb = new System.Text.StringBuilder();
+
+        foreach (var block in blocks)
+        {
+            switch (block)
+            {
+                case DiscussionBlock.Text t:
+                    sb.AppendLine(t.Markdown);
+                    break;
+
+                // Measured, not recalled — replayed as the counts they are so a later turn can
+                // still reason from them without re-running the search.
+                case DiscussionBlock.Quote q:
+                    sb.AppendLine($"[{q.Label ?? "elsewhere in the book"}] {q.Excerpt}");
+                    break;
+
+                case DiscussionBlock.Choice c:
+                    sb.AppendLine(c.Question);
+                    foreach (var o in c.Options)
+                        sb.AppendLine($"  - {o.Label}{(o.Detail is null ? "" : $" ({o.Detail})")}");
+                    break;
+
+                case DiscussionBlock.Confirm k:
+                    sb.AppendLine($"[You asked the author to confirm] {k.Restatement}");
+                    for (var i = 0; i < k.Steps.Count; i++) sb.AppendLine($"  {i + 1}. {k.Steps[i]}");
+                    if (k.Caution is not null) sb.AppendLine($"  Caution: {k.Caution}");
+                    break;
+
+                case DiscussionBlock.Proposal p:
+                    sb.AppendLine($"[A change was proposed: {p.ProposalId}]");
+                    break;
+            }
+        }
+
+        var text = sb.ToString().Trim();
+        return text.Length <= max ? text : text[..max] + "…";
+    }
+
     /// <summary>The one-line summary used for thread titles and list rows.</summary>
     public static string Summarize(IReadOnlyList<DiscussionBlock> blocks, int max = 120)
     {

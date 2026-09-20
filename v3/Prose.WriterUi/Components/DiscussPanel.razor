@@ -11,6 +11,7 @@
 @inject SpeechUiService Speech
 @inject ReadAloudUiService ReadAloud
 @inject IJSRuntime JS
+@implements IAsyncDisposable
 
 <aside class="discuss" aria-label="Discussion">
     <header class="d-head">
@@ -20,6 +21,14 @@
             <span class="muted">@threads.Count<span class="visually-hidden"> threads</span></span>
         }
         <div class="spacer"></div>
+        @if (micSupported)
+        {
+            @* A hold-to-talk key is undiscoverable unless it is written down somewhere, and the
+               one place it is certain to be read is beside the conversation it drives. *@
+            <span class="d-ptt muted" title="Hold F4 and speak — it sends when you let go">
+                Hold <kbd>F4</kbd> to talk
+            </span>
+        }
         @if (openThread is not null)
         {
             <button class="mini" @onclick="CloseThread" title="Back to all discussions">← All</button>
@@ -164,6 +173,17 @@
                 </div>
             }
 
+            @if (streaming.Length > 0)
+            {
+                @* The answer as it arrives. Replaced by the stored turn the moment it lands, so
+                   this is never the thing anyone reads twice — it exists so the panel is not
+                   blank for the several seconds a full answer takes to write. *@
+                <div class="d-turn assistant">
+                    <div class="d-turn-who">Claude<span class="d-live" aria-hidden="true">▍</span></div>
+                    <div class="d-md d-streaming">@streaming.ToString()</div>
+                </div>
+            }
+
             <textarea class="d-ask" placeholder="Ask a follow-up…" rows="2" value="@followUp"
                       aria-label="Follow-up question"
                       @oninput="e => followUp = e.Value?.ToString() ?? string.Empty"></textarea>
@@ -264,6 +284,72 @@
          : recordingIn == box ? "Stop recording and transcribe"
          : "Dictate — transcribed with this book's own names";
 
+    /// <summary>
+    /// True while a turn is being driven by the push-to-talk key rather than the buttons.
+    ///
+    /// <para>It is what makes hands-free hands-free: a dictated turn sends itself instead of
+    /// waiting for a click. Safe because sending is not acting — a question is answered and a
+    /// request comes back as a confirmation that still has to be agreed to.</para>
+    /// </summary>
+    private bool handsFree;
+
+    private DotNetObjectReference<DiscussPanel>? selfRef;
+
+    // ── Streaming ──────────────────────────────────────────────────────────
+
+    /// <summary>The answer so far, shown live. Discarded once the real turn is stored.</summary>
+    private readonly System.Text.StringBuilder streaming = new();
+
+    /// <summary>Cuts the stream into sentences so the first can be spoken while the rest is still
+    /// being written — the difference between ~1.7s of perceived silence and five to ten.</summary>
+    private SentenceChunker? chunker;
+
+    /// <summary>
+    /// Handle one fragment of a streaming answer.
+    ///
+    /// <para>Re-rendering on every token would be one circuit round trip per token. Batched to a
+    /// repaint when a sentence completes, plus a floor so a long sentence still shows progress.</para>
+    /// </summary>
+    private async Task OnReplyDeltaAsync(string fragment)
+    {
+        streaming.Append(fragment);
+
+        if (chunker is null) { StateHasChanged(); return; }
+
+        var sentences = chunker.Add(fragment);
+        if (sentences.Count == 0)
+        {
+            // ~12 tokens between repaints: enough that the text visibly moves, few enough that the
+            // circuit is not carrying a render per token.
+            if (streaming.Length % 48 < fragment.Length) StateHasChanged();
+            return;
+        }
+
+        StateHasChanged();
+        foreach (var sentence in sentences) await SpeakChunkAsync(sentence);
+    }
+
+    /// <summary>
+    /// Synthesize one sentence and put it at the end of what is already being said.
+    ///
+    /// <para>Failures are swallowed on purpose. Read-aloud is an enhancement to an answer that is
+    /// already on screen, and turning "no local voice installed" into a visible error halfway
+    /// through a reply would be worse than the silence.</para>
+    /// </summary>
+    private async Task SpeakChunkAsync(string sentence)
+    {
+        try
+        {
+            var audio = await ReadAloud.SpeakAsync(sentence);
+            await JsAsync<bool>("proseSpeech.enqueue", audio.Base64, audio.MimeType);
+        }
+        catch
+        {
+            // Stop trying for the rest of this reply rather than failing once per sentence.
+            chunker = null;
+        }
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (!firstRender) return;
@@ -272,7 +358,65 @@
         // served to Writer.exe (where the mic is granted) and to any browser pointed at /writer
         // (where it may not be). A button that cannot work should not be offered.
         micSupported = await JsAsync<bool>("proseMic.supported");
-        if (micSupported) StateHasChanged();
+        if (!micSupported) return;
+
+        selfRef = DotNetObjectReference.Create(this);
+        await JsAsync<bool>("proseHotkeys.register", selfRef);
+        StateHasChanged();
+    }
+
+    /// <summary>Hold the key: start listening, into whichever box the author would have typed in.
+    /// Called from JS, so it must never throw back across the boundary.</summary>
+    [JSInvokable]
+    public async Task PushToTalkDown()
+    {
+        var box = openThread is not null ? FollowUpBox : pending is not null ? AskBox : null;
+        if (box is null)
+        {
+            error = "Select a passage in the beat first — there is nothing to talk about yet.";
+            StateHasChanged();
+            return;
+        }
+
+        handsFree = true;
+        await StartMicAsync(box);
+        StateHasChanged();
+    }
+
+    /// <summary>Let go: transcribe and send.</summary>
+    /// <param name="reason">"released" normally, "lost-focus" when the window went away
+    /// mid-sentence — which is a dropped utterance, not a request.</param>
+    [JSInvokable]
+    public async Task PushToTalkUp(string? reason = null)
+    {
+        var box = recordingIn;
+        if (box is null) { handsFree = false; return; }
+
+        if (reason == "lost-focus")
+        {
+            // Half a sentence, spoken while the author was looking at something else. Sending it
+            // would put a fragment into the manuscript's conversation as though it were meant.
+            handsFree = false;
+            await AbandonRecordingAsync();
+            heard = "The window lost focus mid-sentence, so that recording was dropped.";
+            StateHasChanged();
+            return;
+        }
+
+        await StopMicAsync(box);
+
+        // Auto-send only if something was actually heard. A silent hold must not fire off an
+        // empty turn and spend a call on it.
+        var text = box == AskBox ? question : followUp;
+        if (handsFree && !string.IsNullOrWhiteSpace(text) && error is null)
+        {
+            handsFree = false;
+            if (box == AskBox) await StartAsync();
+            else await AskAsync();
+        }
+
+        handsFree = false;
+        StateHasChanged();
     }
 
     protected override async Task OnParametersSetAsync()
@@ -326,9 +470,11 @@
         try
         {
             var audio = spokenAudio.GetValueOrDefault(AskBox);
+            BeginStreaming(ModeFor(AskBox));
             var thread = await Discuss.StartAsync(
                 BookNodeId, BeatId, pending, question.Trim(), intent,
-                inputMode: ModeFor(AskBox), audioPath: audio);
+                inputMode: ModeFor(AskBox), audioPath: audio,
+                onTextDelta: OnReplyDeltaAsync);
             if (thread is null)
             {
                 error = "That passage could not be found in the beat any more — it may have changed "
@@ -351,7 +497,7 @@
             // with it, and the author must be told rather than left watching a spinner.
             error = $"Could not ask: {ex.Message}";
         }
-        finally { busy = false; }
+        finally { busy = false; EndStreaming(); }
     }
 
     private async Task AskAsync()
@@ -362,16 +508,45 @@
         needsKey = false;
         try
         {
+            BeginStreaming(ModeFor(FollowUpBox));
             await Discuss.AskAsync(
                 BookNodeId, BeatId, openThread.Id, followUp.Trim(), intent,
-                inputMode: ModeFor(FollowUpBox), audioPath: spokenAudio.GetValueOrDefault(FollowUpBox));
+                inputMode: ModeFor(FollowUpBox), audioPath: spokenAudio.GetValueOrDefault(FollowUpBox),
+                onTextDelta: OnReplyDeltaAsync);
             followUp = "";
             spokenAudio.Remove(FollowUpBox);
             await LoadTurnsAsync(openThread.Id);
         }
         catch (DiscussionUiService.NoCredentialsException) { needsKey = true; }
         catch (Exception ex) { error = $"Could not ask: {ex.Message}"; }
-        finally { busy = false; }
+        finally { busy = false; EndStreaming(); }
+    }
+
+    /// <summary>
+    /// Arm the live view, and the chunked speech if the author spoke.
+    ///
+    /// <para>The chunker is created only for a spoken turn, and that decision is made here rather
+    /// than inside the delta handler because it has to hold for the whole reply — deciding
+    /// per-sentence would let a long answer start speaking halfway through.</para>
+    /// </summary>
+    private void BeginStreaming(string inputMode)
+    {
+        streaming.Clear();
+        spokeWhileStreaming = inputMode == Prose.Core.Data.Entities.DiscussionInputMode.Voice;
+        chunker = spokeWhileStreaming ? new SentenceChunker() : null;
+    }
+
+    /// <summary>
+    /// Tear it down, speaking whatever the last sentence left behind.
+    ///
+    /// <para>The flush matters: an answer whose final sentence has no full stop — a list, a fenced
+    /// block, a trailing clause — would otherwise be heard to stop one sentence early.</para>
+    /// </summary>
+    private void EndStreaming()
+    {
+        if (chunker?.Flush() is { Length: > 0 } tail) _ = SpeakChunkAsync(tail);
+        chunker = null;
+        streaming.Clear();
     }
 
     private Task AnswerChoiceAsync(string label)
@@ -452,6 +627,17 @@
         if (asked is null || !asked.Spoken) return;
 
         var confirm = reply.Blocks.OfType<DiscussionBlock.Confirm>().FirstOrDefault();
+
+        if (spokeWhileStreaming)
+        {
+            // The prose has already been said, sentence by sentence, as it was written. Only the
+            // confirmation is left — it was deliberately held back from the stream, because its
+            // trailer is protocol and reading "dash dash dash REQUEST" aloud is the obvious way to
+            // get this wrong.
+            if (confirm is not null) await SpeakChunkAsync(Speakable(confirm));
+            return;
+        }
+
         var text = confirm is not null
             ? Speakable(confirm)
             : reply.Blocks.OfType<DiscussionBlock.Text>().FirstOrDefault()?.Markdown;
@@ -469,6 +655,10 @@
             heard = $"The reply was not spoken: {ex.Message}";
         }
     }
+
+    /// <summary>Whether this exchange's prose was already spoken as it streamed, so the tail-end
+    /// speak-back has only the confirmation left to say.</summary>
+    private bool spokeWhileStreaming;
 
     private static string Speakable(DiscussionBlock.Confirm c)
     {
@@ -622,4 +812,19 @@
     private sealed record MicStart(bool Ok, string? Error);
 
     private sealed record MicResult(bool Ok, string? Base64, string? Mime, int DurationMs, string? Error);
+
+    public async ValueTask DisposeAsync()
+    {
+        // The hotkey listeners live on the document, not on this component's markup, so they
+        // outlive it unless they are taken down here — two panels' worth of listeners would open
+        // the microphone twice on one keypress.
+        if (selfRef is not null)
+        {
+            await JsAsync<bool>("proseHotkeys.unregister");
+            // And close the microphone if the author navigated away mid-sentence.
+            if (recordingIn is not null) await JsAsync<bool>("proseMic.cancel");
+            selfRef.Dispose();
+            selfRef = null;
+        }
+    }
 }

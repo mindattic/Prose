@@ -313,6 +313,33 @@
 
 .d-spoken { margin-left: var(--space-1); }
 
+/* ── the answer arriving ──────────────────────────────────────────────── */
+
+/* Deliberately not styled as a finished turn: it is a preview of one, replaced the moment the
+   real turn is stored, and it should not read as something worth going back to. */
+.d-streaming { white-space: pre-wrap; opacity: 0.88; }
+
+.d-live { margin-left: 2px; animation: d-blink 1s step-end infinite; }
+
+@keyframes d-blink { 50% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+    .d-live { animation: none; }
+}
+
+/* The hold-to-talk hint. Small, but it is the only place the key is written down. */
+.d-ptt { font-size: var(--text-xs); white-space: nowrap; }
+
+.d-ptt kbd {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    padding: 0 4px;
+    background: var(--color-mini-bg);
+    color: var(--color-mini-fg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
 /* ── dictation ────────────────────────────────────────────────────────── */
 
 /* Recording is a state with real consequences — the machine's microphone is open — so it is

@@ -90,11 +90,15 @@ public sealed class DiscussionUiService(
     /// <returns>Null when the selection can no longer be found in the beat — which means the text
     /// moved between the right-click and the question, and silently anchoring somewhere else would
     /// be worse than saying so.</returns>
+    /// <param name="onTextDelta">Fed the answer as it is generated, so the panel can show it
+    /// arriving and speak the first sentence while the rest is still being written. Null for the
+    /// buffered path.</param>
     public async Task<DiscussionThread?> StartAsync(
         Guid bookNodeId, Guid beatId,
         ProseEditorSpan span, string question, string intent,
         string inputMode = DiscussionInputMode.Typed,
         string? audioPath = null,
+        Func<string, Task>? onTextDelta = null,
         CancellationToken ct = default)
     {
         // Checked before the thread is created, not after: an unconfigured install would
@@ -121,7 +125,7 @@ public sealed class DiscussionUiService(
             audioPath: audioPath,
             ct: ct);
 
-        await AnswerAsync(bookNodeId, beatId, thread.Id, anchor.Quote, question, intent, ct);
+        await AnswerAsync(bookNodeId, beatId, thread.Id, anchor.Quote, question, intent, onTextDelta, ct);
         return thread;
     }
 
@@ -130,6 +134,7 @@ public sealed class DiscussionUiService(
         Guid bookNodeId, Guid beatId, Guid threadId, string question, string intent,
         string inputMode = DiscussionInputMode.Typed,
         string? audioPath = null,
+        Func<string, Task>? onTextDelta = null,
         CancellationToken ct = default)
     {
         if (!await chat.IsConfiguredAsync()) throw new NoCredentialsException();
@@ -144,12 +149,12 @@ public sealed class DiscussionUiService(
             [new DiscussionBlock.Text(question)], intent: intent,
             inputMode: inputMode, audioPath: audioPath, ct: ct);
 
-        await AnswerAsync(bookNodeId, beatId, threadId, quote, question, intent, ct);
+        await AnswerAsync(bookNodeId, beatId, threadId, quote, question, intent, onTextDelta, ct);
     }
 
     private async Task AnswerAsync(
         Guid bookNodeId, Guid beatId, Guid threadId, string quote, string question,
-        string intent, CancellationToken ct)
+        string intent, Func<string, Task>? onTextDelta, CancellationToken ct)
     {
         var prior = await discussions.TurnsAsync(threadId, ct);
 
@@ -157,7 +162,8 @@ public sealed class DiscussionUiService(
         // have the model answer it twice.
         var history = prior.Count > 0 ? prior.Take(prior.Count - 1).ToList() : prior;
 
-        var reply = await chat.AskAsync(bookNodeId, beatId, quote, question, intent, history, ct);
+        var reply = await chat.AskAsync(
+            bookNodeId, beatId, quote, question, intent, history, ct, onTextDelta);
 
         // Nothing was spent and nothing was said — do not record an empty assistant turn that
         // would read, later, as the assistant having had nothing to say.

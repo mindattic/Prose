@@ -368,7 +368,15 @@ window.proseModal = (() => {
 window.proseSpeech = (() => {
     let current = null;
 
+    // Sentence-chunked speech arrives faster than it can be played: three clips can be synthesized
+    // while the first is still speaking. They queue, in order — playing them as they land would
+    // talk over itself, and it is the ORDER that carries the meaning.
+    let queue = [];
+    let draining = false;
+
     function stop() {
+        queue = [];
+        draining = false;
         if (!current) return;
         current.pause();
         // Release the element before dropping the reference, or a long clip keeps decoding.
@@ -376,22 +384,55 @@ window.proseSpeech = (() => {
         current = null;
     }
 
+    function playOne(src) {
+        return new Promise(resolve => {
+            const audio = new Audio(src);
+            current = audio;
+            // Resolve on any ending, including failure: one clip that will not decode must not
+            // strand every sentence behind it.
+            audio.onended = resolve;
+            audio.onerror = resolve;
+            audio.play().catch(resolve);
+        });
+    }
+
+    async function drain() {
+        if (draining) return;
+        draining = true;
+        try {
+            while (queue.length > 0) {
+                const next = queue.shift();
+                await playOne(next);
+                // stop() clears the queue and nulls current; that is how barge-in cuts a reply off
+                // mid-sentence rather than after it.
+                if (current === null) break;
+            }
+        } finally {
+            draining = false;
+            current = null;
+        }
+    }
+
     return {
         /** Play base64 audio, replacing whatever was already speaking. */
         play(base64, mime) {
             stop();
-            const audio = new Audio(`data:${mime};base64,${base64}`);
-            current = audio;
-            // A rejected play() is normal (autoplay policy, or stop() landing first) and must not
-            // surface as an unhandled rejection that takes the circuit's JS down with it.
-            audio.play().catch(() => { });
+            queue = [`data:${mime};base64,${base64}`];
+            drain();
+            return true;
+        },
+
+        /** Add a clip to the end of what is already being said. */
+        enqueue(base64, mime) {
+            queue.push(`data:${mime};base64,${base64}`);
+            drain();
             return true;
         },
 
         /** Barge-in: the author started talking again, or moved on. */
         stop() { stop(); return true; },
 
-        speaking() { return current !== null && !current.paused; },
+        speaking() { return draining || (current !== null && !current.paused); },
     };
 })();
 
@@ -553,5 +594,67 @@ window.proseMic = (() => {
         },
 
         recording() { return recorder !== null; },
+    };
+})();
+
+// ── Push to talk ───────────────────────────────────────────────────────────────────────────
+//
+// A hold-to-speak key, so a follow-up costs no mouse and no click. F4 because the editor is a
+// contenteditable — any printable key would be text the author was trying to write — and because
+// AreBrowserAcceleratorKeysEnabled is false in the Writer host, so the function keys are free.
+//
+// Listeners are capturing and the event is consumed, so the key never reaches the prose.
+window.proseHotkeys = (() => {
+    const PTT = 'F4';
+
+    let dotnet = null;
+    let held = false;
+
+    function release(reason) {
+        if (!held) return;
+        held = false;
+        if (dotnet) dotnet.invokeMethodAsync('PushToTalkUp', reason).catch(() => { });
+    }
+
+    function onKeyDown(e) {
+        if (e.key !== PTT) return;
+        e.preventDefault();
+        // Holding a key fires keydown on repeat. Without this guard a two-second hold starts the
+        // recorder thirty times.
+        if (e.repeat || held) return;
+        held = true;
+        if (dotnet) dotnet.invokeMethodAsync('PushToTalkDown').catch(() => { });
+    }
+
+    function onKeyUp(e) {
+        if (e.key !== PTT) return;
+        e.preventDefault();
+        release('released');
+    }
+
+    // Alt-tabbing away mid-sentence never delivers the keyup, and the microphone would stay open
+    // until the author noticed the indicator. Treat losing the window as letting go.
+    function onBlur() { release('lost-focus'); }
+
+    return {
+        register(ref) {
+            if (dotnet) return true;
+            dotnet = ref;
+            document.addEventListener('keydown', onKeyDown, true);
+            document.addEventListener('keyup', onKeyUp, true);
+            window.addEventListener('blur', onBlur);
+            return true;
+        },
+
+        unregister() {
+            document.removeEventListener('keydown', onKeyDown, true);
+            document.removeEventListener('keyup', onKeyUp, true);
+            window.removeEventListener('blur', onBlur);
+            dotnet = null;
+            held = false;
+            return true;
+        },
+
+        key() { return PTT; },
     };
 })();

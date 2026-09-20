@@ -36,6 +36,40 @@ public interface IToolCallingLlm
         IReadOnlyList<ToolDefinition> tools,
         int maxTokens,
         CancellationToken ct);
+
+    /// <summary>
+    /// The same turn, with text handed over as it is generated.
+    ///
+    /// <para>For interactive surfaces only. A batch caller wants the whole turn and should use
+    /// <see cref="CreateTurnAsync"/>; a conversation cannot afford to wait for it, because three
+    /// to eight seconds of silence reads as broken rather than as thinking.</para>
+    ///
+    /// <para><b>The default implementation is not streaming — it is honest about not being.</b>
+    /// It calls <see cref="CreateTurnAsync"/> and delivers the finished text in one go, so a
+    /// provider that has no SSE support still works and no caller has to branch on whether it
+    /// does. The result is identical either way; only the timing differs.</para>
+    /// </summary>
+    /// <param name="onTextDelta">Called with each fragment, in order, before the turn returns.
+    /// Awaited, so a slow consumer applies backpressure rather than racing ahead of itself.</param>
+    async Task<ToolTurnResult> CreateTurnStreamingAsync(
+        string systemPrompt,
+        IReadOnlyList<ToolLoopMessage> history,
+        IReadOnlyList<ToolDefinition> tools,
+        int maxTokens,
+        Func<string, Task> onTextDelta,
+        CancellationToken ct)
+    {
+        var result = await CreateTurnAsync(systemPrompt, history, tools, maxTokens, ct);
+        foreach (var text in result.Parts.OfType<AssistantPart.Text>())
+            if (!string.IsNullOrEmpty(text.Value))
+                await onTextDelta(text.Value);
+        return result;
+    }
+
+    /// <summary>Whether <see cref="CreateTurnStreamingAsync"/> actually streams on this provider,
+    /// or falls back to delivering the finished turn at once. Surfaced so a UI can say "thinking"
+    /// honestly instead of showing a cursor that will never move.</summary>
+    bool SupportsStreaming => false;
 }
 
 /// <summary>One callable tool. <paramref name="InputSchema"/> is a standard JSON Schema object —

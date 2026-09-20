@@ -184,6 +184,9 @@ public sealed class DiscussionChatService(
     /// asked of anyone.</summary>
     public async Task<bool> IsConfiguredAsync() => await PickProviderAsync() is not null;
 
+    /// <param name="onTextDelta">Fed each fragment as it is generated, for a caller that wants to
+    /// start speaking or showing the answer before it is finished. Null asks for the whole turn at
+    /// once, which is what a non-interactive caller should do.</param>
     public async Task<DiscussionReply> AskAsync(
         Guid bookNodeId,
         Guid beatId,
@@ -191,7 +194,8 @@ public sealed class DiscussionChatService(
         string question,
         string intent,
         IReadOnlyList<DiscussionTurn> priorTurns,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        Func<string, Task>? onTextDelta = null)
     {
         var provider = await PickProviderAsync();
         if (provider is null)
@@ -217,7 +221,9 @@ public sealed class DiscussionChatService(
             var history = new List<ToolLoopMessage>();
             foreach (var t in priorTurns)
             {
-                var line = DiscussionContent.Summarize(DiscussionContent.Deserialize(t.ContentJson), 4000);
+                // Transcribe, not Summarize: the latter returns only the first text block, which
+                // hid every confirmation the assistant had offered from its own history.
+                var line = DiscussionContent.Transcribe(DiscussionContent.Deserialize(t.ContentJson));
                 if (string.IsNullOrWhiteSpace(line)) continue;
                 history.Add(t.Role == DiscussionRole.Author
                     ? new ToolLoopMessage.UserText(line)
@@ -234,7 +240,30 @@ public sealed class DiscussionChatService(
 
             for (var round = 0; round < MaxToolRounds; round++)
             {
-                var turn = await provider.CreateTurnAsync(system, history, [FindInBook], 1500, ct);
+                // Streamed only when someone is listening. A caller with no delta handler gets the
+                // buffered path, which is one fewer moving part for anything non-interactive.
+                //
+                // The gate is what keeps the confirmation protocol out of the author's ears: the
+                // trailer arrives in the same token stream as the prose, and a voice reading
+                // "dash dash dash REQUEST" aloud is the obvious failure. The full text still
+                // reaches the parse below, which works on the assembled turn.
+                var gate = new TrailerGate(TrailerMarker);
+                var turn = onTextDelta is null
+                    ? await provider.CreateTurnAsync(system, history, [FindInBook], 1500, ct)
+                    : await provider.CreateTurnStreamingAsync(
+                        system, history, [FindInBook], 1500,
+                        async fragment =>
+                        {
+                            var visible = gate.Admit(fragment);
+                            if (visible.Length > 0) await onTextDelta(visible);
+                        },
+                        ct);
+
+                if (onTextDelta is not null)
+                {
+                    var tail = gate.Flush();
+                    if (tail.Length > 0) await onTextDelta(tail);
+                }
 
                 // Real reported usage, priced by the shared rate table. Null usage records
                 // nothing rather than recording zero — an unknown cost must not read as free.

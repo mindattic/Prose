@@ -59,13 +59,7 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
         CancellationToken ct)
     {
         var keys = resolveApiKeys();
-        if (keys.Count == 0)
-            throw new InvalidOperationException(
-                "No Anthropic API key configured for this operator. A Claude Code Team subscription " +
-                "OAuth session cannot authenticate direct calls to the Anthropic Messages API — a " +
-                "Team seat and an API key are different credential types, not interchangeable — so " +
-                "this operator never falls back to one. Run 'prose --set-byo-key --provider claude " +
-                "--key <key>' to opt a personal API key in explicitly.");
+        if (keys.Count == 0) throw NoKey();
 
         var messages = ToAnthropicMessages(history);
         var toolsArray = ToAnthropicTools(tools);
@@ -76,6 +70,42 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
             return new ToolTurnResult(FromAnthropicContent(turn.Content), turn.Usage);
         });
     }
+
+    /// <inheritdoc />
+    public bool SupportsStreaming => true;
+
+    /// <inheritdoc />
+    public async Task<ToolTurnResult> CreateTurnStreamingAsync(
+        string systemPrompt,
+        IReadOnlyList<ToolLoopMessage> history,
+        IReadOnlyList<ToolDefinition> tools,
+        int maxTokens,
+        Func<string, Task> onTextDelta,
+        CancellationToken ct)
+    {
+        var keys = resolveApiKeys();
+        if (keys.Count == 0) throw NoKey();
+
+        var messages = ToAnthropicMessages(history);
+        var toolsArray = ToAnthropicTools(tools);
+
+        // Key-pool failover still applies, and still works: a key that fails does so on the
+        // response status, before any delta has been dispatched, so falling through to the next
+        // key cannot replay text the caller has already spoken.
+        return await KeyPoolFailover.ExecuteAsync(keys, ct, async key =>
+        {
+            var turn = await client.CreateStreamingAsync(
+                key, model, systemPrompt, messages, toolsArray, maxTokens, onTextDelta, ct);
+            return new ToolTurnResult(FromAnthropicContent(turn.Content), turn.Usage);
+        });
+    }
+
+    private static InvalidOperationException NoKey() => new(
+        "No Anthropic API key configured for this operator. A Claude Code Team subscription " +
+        "OAuth session cannot authenticate direct calls to the Anthropic Messages API — a " +
+        "Team seat and an API key are different credential types, not interchangeable — so " +
+        "this operator never falls back to one. Run 'prose --set-byo-key --provider claude " +
+        "--key <key>' to opt a personal API key in explicitly.");
 
     private static JsonArray ToAnthropicTools(IReadOnlyList<ToolDefinition> tools)
     {
