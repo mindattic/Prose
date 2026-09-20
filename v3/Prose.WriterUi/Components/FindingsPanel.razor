@@ -9,7 +9,9 @@
    the same proposal-and-approval path as everything else that changes words; what was missing was
    simply being able to SEE them. *@
 
+@using Prose.Core.Services.Discussion
 @inject FindingsUiService Findings
+@inject WriterService Writer
 
 <aside class="findings" aria-label="Findings">
     <header class="findings-head">
@@ -26,6 +28,48 @@
         </label>
         <button class="mini" @onclick="() => OnClose.InvokeAsync()" aria-label="Close findings">✕</button>
     </header>
+
+    <div class="findings-check">
+        @* Free, however large the book — the exact checks only. A version of this that spent a
+           model call per beat would cost real money on a 521-beat manuscript and be pressed once. *@
+        <button class="mini" @onclick="CheckBookAsync" disabled="@checking">
+            @(checking ? "Checking…" : "Check this book")
+        </button>
+        <button class="mini" @onclick="CheckRecentAsync" disabled="@checking"
+                title="Only beats written to in the last day">Check today's edits</button>
+    </div>
+
+    @if (check is not null)
+    {
+        <div class="findings-checked">
+            @* Coverage, always. A pass that finds nothing and cannot say what it examined is
+               indistinguishable from one that could not look. *@
+            <div class="muted">Checked @check.Checked of @check.Total beats.</div>
+            @if (check.Findings.Count == 0)
+            {
+                <div class="set-ok">Nothing carried is broken in what was checked.</div>
+            }
+            else
+            {
+                <ul class="findings-list">
+                    @foreach (var (number, finding) in check.Findings)
+                    {
+                        <li class="finding">
+                            <div class="finding-head">
+                                <span class="finding-sev">@finding.Kind</span>
+                                <span class="muted">#@number</span>
+                            </div>
+                            <div class="finding-summary">@finding.Headline</div>
+                            @if (finding.Detail is { Length: > 0 })
+                            {
+                                <pre class="finding-snippet">@finding.Detail</pre>
+                            }
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+    }
 
     @if (loading)
     {
@@ -89,6 +133,8 @@
     private IReadOnlyList<FindingsUiService.Row> rows = [];
     private bool includeTriaged;
     private bool loading = true;
+    private bool checking;
+    private WriterService.BookCheckResult? check;
 
     private Guid loadedFor;
 
@@ -111,6 +157,25 @@
     {
         includeTriaged = e.Value is bool b && b;
         await ReloadAsync();
+    }
+
+    private Task CheckBookAsync() => RunCheckAsync(null);
+
+    /// <summary>The catch-up case: beats edited before the gate existed, or while it was off.</summary>
+    private Task CheckRecentAsync() => RunCheckAsync(DateTime.UtcNow.AddDays(-1));
+
+    private async Task RunCheckAsync(DateTime? since)
+    {
+        if (BookNodeId == Guid.Empty || checking) return;
+        checking = true;
+        check = null;
+        try { check = await Writer.CheckBookAsync(BookNodeId, since); }
+        catch (Exception ex)
+        {
+            check = new WriterService.BookCheckResult(0, 0,
+                [(0, new Mismatch("error", $"The check could not run: {ex.Message}", null, []))]);
+        }
+        finally { checking = false; }
     }
 
     private async Task TriageAsync(long id)

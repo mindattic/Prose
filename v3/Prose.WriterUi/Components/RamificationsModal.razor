@@ -1,0 +1,117 @@
+@* What the save found, and what it wants you to say about it.
+
+   This is the only modal in the Writer that cannot be dismissed by clicking away — no scrim
+   handler, no Escape — because it is the one thing the author asked to be stopped by. Your text is
+   already saved; what is held is the beat being FINISHED. Nothing here can be lost by reading it.
+
+   Each finding carries its evidence verbatim and the three ways out in the author's own words.
+   Which way it resolves is a judgement about the story, and RFC 0009 puts that with them: a
+   finding describes, it never instructs. *@
+
+@using Prose.Core.Services.Discussion
+
+<div class="scrim" aria-hidden="true"></div>
+<div class="modal gate" role="alertdialog" aria-modal="true" aria-labelledby="gate-title"
+     tabindex="-1" @ref="dialog">
+
+    <h2 id="gate-title">
+        @(Findings.Count == 1
+            ? "One thing to settle before this beat is done"
+            : $"{Findings.Count} things to settle before this beat is done")
+    </h2>
+
+    <p class="muted gate-lede">
+        Your prose is saved. What is waiting is whether these were deliberate — say so and they
+        will not stop you again at this wording.
+    </p>
+
+    <ul class="gate-list">
+        @foreach (var f in Findings)
+        {
+            var key = RamificationService.KeyFor(f);
+            <li class="gate-item @(answered.Contains(key) ? "answered" : "")">
+                <div class="gate-kind">@f.Kind</div>
+                <div class="gate-headline">@f.Headline</div>
+
+                @if (f.Detail is { Length: > 0 })
+                {
+                    @* Verbatim. A gate that paraphrases its own evidence is a gate the author
+                       cannot check, and one they will start clicking through. *@
+                    <pre class="gate-detail">@f.Detail</pre>
+                }
+
+                @if (answered.Contains(key))
+                {
+                    <div class="gate-answered muted">Marked deliberate.</div>
+                }
+                else
+                {
+                    <div class="gate-actions">
+                        <button class="mini" @onclick="() => DismissAsync(f)">
+                            I meant that
+                        </button>
+                        <button class="mini" @onclick="() => OnGoToBeat.InvokeAsync()">
+                            Show me the beat
+                        </button>
+                    </div>
+                }
+            </li>
+        }
+    </ul>
+
+    @if (Checked is { Length: > 0 })
+    {
+        @* What was actually looked at. An empty or short result that cannot name its own coverage
+           is indistinguishable from not having looked, and that confusion is how a contradiction
+           survived five clean sweeps. *@
+        <p class="muted gate-coverage">Checked: @Checked.</p>
+    }
+
+    <div class="modal-actions">
+        @if (Cost > 0)
+        {
+            <span class="muted gate-cost">@Cost.ToString("C4")</span>
+        }
+        <div class="spacer"></div>
+        <button class="mini" @onclick="() => OnRevert.InvokeAsync()"
+                title="Put the beat back to the last saved version">Undo my edit</button>
+        <button class="primary" disabled="@(!AllAnswered)" @onclick="() => OnDone.InvokeAsync()">
+            @(AllAnswered ? "Done" : $"{Remaining} left")
+        </button>
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public IReadOnlyList<Mismatch> Findings { get; set; } = [];
+    [Parameter] public string? Checked { get; set; }
+    [Parameter] public double Cost { get; set; }
+
+    /// <summary>Mark one finding deliberate. The shell records it against the beat's text hash.</summary>
+    [Parameter] public EventCallback<Mismatch> OnDismiss { get; set; }
+
+    [Parameter] public EventCallback OnGoToBeat { get; set; }
+    [Parameter] public EventCallback OnRevert { get; set; }
+    [Parameter] public EventCallback OnDone { get; set; }
+
+    private ElementReference dialog;
+    private readonly HashSet<string> answered = [];
+
+    private int Remaining => Findings.Count(f => !answered.Contains(RamificationService.KeyFor(f)));
+    private bool AllAnswered => Remaining == 0;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        // No focus trap helper here: proseModal.open would also give a route out via the scrim,
+        // and this dialog deliberately has none. Focus goes to it and stays until answered.
+        try { await dialog.FocusAsync(); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+    }
+
+    private async Task DismissAsync(Mismatch f)
+    {
+        answered.Add(RamificationService.KeyFor(f));
+        await OnDismiss.InvokeAsync(f);
+    }
+}

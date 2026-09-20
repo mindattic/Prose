@@ -63,6 +63,12 @@ public sealed class DiscussionChatService(
             filler; a promise with no payoff is a debt. Name it.
           - Point out contradictions with the beats around it, the stated intent, or the record.
 
+        You are given a CARRIED BY THIS PASSAGE block: the promises this beat opens or pays off,
+        what the record already establishes about the people in it, and the author's own immovable
+        statements. It is measured, not recalled. Use it, cite it by name, and never assert a
+        commitment that is not in it — an invented obligation is worse than a missed one, because
+        the author cannot tell it from a real one.
+
         How to judge whether a detail is held or merely repeated: a detail that belongs to ONE
         referent — one room, one person, one machine — is doing its job however often it recurs.
         The same detail spread across many unrelated places is almost always texture the writer
@@ -91,11 +97,32 @@ public sealed class DiscussionChatService(
 
     private const string EditBody = """
 
-        Before drafting anything, work out what the passage is carrying. If changing it would
-        break something — it plants an obligation paid off later, it is the only place a fact is
-        established, it carries a motif, it is load-bearing for a scene that follows — then SAY SO
-        AND DO NOT DRAFT. Name what would break and where. A reasoned refusal is a complete answer
-        and is often the more useful one; the author can still overrule you.
+        Before drafting anything, read the CARRIED BY THIS PASSAGE block. It is measured from the
+        record, not recalled, and it is the only thing here you may treat as established.
+
+        Your first job is the ramifications, not the prose. Work through the block and say what
+        this change would cost:
+          - A promise this beat PAYS OFF is the most serious case. Cutting the line it closes on
+            leaves that promise unpaid and nothing else in the system will notice.
+          - A promise this beat OPENS, a recorded fact about someone in the scene, one of the
+            author's own immovable statements — each is a specific thing you can name.
+          - The reach figure is how many beats share an entity with this one. A large number is
+            not by itself a reason to refuse; it is the size of the room you are working in.
+
+        Say it in ONE of these three shapes, and never anything vaguer:
+          - "This would break X" — naming the obligation, fact or lock from the block, verbatim.
+          - "Nothing in the record is at risk" — when the block genuinely shows nothing. Say this
+            plainly; it is a real answer and the author needs to be able to trust it.
+          - "I could not check" — when the block says the record could not be read.
+
+        "This seems load-bearing" and "this might be important" are not answers. If you cannot
+        point at something, there is nothing to point at, and you should say so and get on with it.
+
+        If changing it would break something named above, SAY SO AND DO NOT DRAFT. A reasoned
+        refusal is a complete answer and is often the more useful one; the author can still
+        overrule you. Equally: do not invent a reason to refuse. A passage carrying nothing should
+        be changed without ceremony — a partner who objects to everything is as useless as one who
+        agrees with everything.
 
         If the change is safe, draft a replacement for THE SELECTED PASSAGE ONLY. Match the
         surrounding voice exactly. Do not touch a word outside the selection, and do not smuggle

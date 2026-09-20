@@ -636,6 +636,10 @@ public class ProseDbContext : DbContext
     public DbSet<DiscussionThread>       DiscussionThreads       => Set<DiscussionThread>();
     public DbSet<DiscussionTurn>         DiscussionTurns         => Set<DiscussionTurn>();
 
+    // "Yes, I meant that" — keyed to the beat's text hash, so a dismissal stops applying the
+    // moment the prose changes. Without this a blocking gate is a gate you switch off.
+    public DbSet<BeatCheckDismissal>     BeatCheckDismissals     => Set<BeatCheckDismissal>();
+
     // Cost tracking — append-only log of CLI command cost history.
     // Populated by Prose.Hub's CostGateDispatch; queried by CommandCostEstimatorService to self-calibrate.
     public DbSet<CommandCostHistory>     CommandCostHistories    => Set<CommandCostHistory>();
@@ -819,6 +823,10 @@ public class ProseDbContext : DbContext
             e.ToTable("Beats", tb => tb.HasTrigger("TR_Beats_TextHashDriftGuard"));
             e.HasKey(x => x.Id);
             e.Property(x => x.Text).IsRequired();
+            // UpdatedAt has been the concurrency token since the beginning and was never indexed,
+            // because nothing ever asked "what changed since". Now something does — the editor's
+            // catch-up pass over beats edited before the checks existed.
+            e.HasIndex(x => x.UpdatedAt);
             e.Property(x => x.SceneType).HasMaxLength(40).IsRequired();
             e.Property(x => x.Slug).HasMaxLength(200);
             e.Property(x => x.Title).HasMaxLength(400);
@@ -1148,6 +1156,20 @@ public class ProseDbContext : DbContext
             e.Property(x => x.At).HasDefaultValueSql("GETUTCDATE()");
             e.HasOne(x => x.Thread).WithMany(x => x.Turns)
                 .HasForeignKey(x => x.ThreadId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        b.Entity<BeatCheckDismissal>(e =>
+        {
+            e.ToTable("BeatCheckDismissals");
+            e.HasKey(x => x.Id);
+            e.Property(x => x.TextHash).HasMaxLength(64).IsRequired();
+            e.Property(x => x.CheckKey).HasMaxLength(120).IsRequired();
+            e.Property(x => x.Headline).HasMaxLength(400).IsRequired();
+            e.Property(x => x.Note).HasMaxLength(1000);
+            e.Property(x => x.At).HasDefaultValueSql("GETUTCDATE()");
+            // Cascading, like the discussion rows: a dismissal must never be the thing that blocks
+            // a legitimate beat deletion.
+            e.HasOne<Beat>().WithMany().HasForeignKey(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
         });
 
         // ── Media assets ─────────────────────────────────────────────────────

@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Extensions;
 using Prose.Core.Services;
-using Prose.V4.Core.Contradiction;
+using Prose.Core.Services.Contradiction;
 using Prose.V4.Core.Ledger;
 using Prose.V4.Core.Obligations;
 using Prose.V4.Core.Orchestration;

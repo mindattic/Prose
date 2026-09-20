@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
+using Prose.Core.Services.Discussion;
 
 namespace Prose.WriterUi.Services;
 
@@ -26,6 +27,9 @@ public sealed class WriterService(
     TokenLedger ledger,
     EditSessionService editSessions,
     BeatEventSummaryService eventSummaries,
+    Prose.Core.Services.Discussion.RamificationService ramifications,
+    Prose.Core.Services.Contradiction.NarrativeContradictionChecker contradictions,
+    FindingsService findings,
     IUniverseContext universe)
 {
     /// <summary>A book the author can open.</summary>
@@ -212,6 +216,165 @@ public sealed class WriterService(
             .Select(b => b.EventSummary)
             .FirstOrDefaultAsync(ct);
     }
+
+    // ── The save gate ──────────────────────────────────────────────────────
+
+    /// <param name="Blocking">Everything the author has to answer before this beat is finished.
+    /// Already filtered by what they have said they meant at this exact wording.</param>
+    /// <param name="Cost">What the judgement tier spent. Zero when the exact checks found the
+    /// answer on their own or there were no facts to check against.</param>
+    /// <param name="Checked">What was actually looked at, so an empty result can say which. A
+    /// zero that cannot name its own coverage is indistinguishable from not having looked.</param>
+    public sealed record SaveGateResult(
+        IReadOnlyList<Mismatch> Blocking, double Cost, string Checked);
+
+    /// <summary>
+    /// Everything that should stop the author on a beat they have just finished.
+    /// </summary>
+    /// <remarks>
+    /// <para><b>Manual save only.</b> Autosave keeps <c>deferAnalysis: true</c> and spends nothing
+    /// — at twenty-second intervals an LLM tier would be ~180 calls an hour of writing, and the
+    /// full battery historically cost $27–135 a run for zero applied findings.</para>
+    ///
+    /// <para>Three tiers, in descending order of how much they can be trusted. The exact ones run
+    /// first and cost nothing; the judgement tier runs once, at temperature 0, and only when there
+    /// are recorded facts for it to check against.</para>
+    /// </remarks>
+    public async Task<SaveGateResult> RunSaveGateAsync(
+        Guid bookNodeId, Guid beatId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        using var scope = LlmActionContext.BeginCostScope();
+
+        // Tier A — exact, free, and the only tier this would be worth gating on by itself.
+        var blocking = new List<Mismatch>(await ramifications.GateAsync(bookNodeId, beatId, ct));
+        var looked = new List<string> { "obligations, continuity, entity links, gear, summaries" };
+
+        // Tier B — one call, calibrated 7/7, reasoning before verdict, and no call at all when the
+        // record holds nothing about the people in this beat.
+        var carried = await ramifications.CarriedByAsync(bookNodeId, beatId, ct);
+        if (carried.EstablishedFacts.Count > 0)
+        {
+            var text = await GetBeatAsync(beatId, ct);
+            if (text is not null)
+            {
+                try
+                {
+                    var verdict = await contradictions.CheckAsync(
+                        carried.EstablishedFacts,
+                        Prose.Core.Services.Discussion.BeatDiscussTarget.PlainText(text.Text), ct);
+
+                    looked.Add($"{carried.EstablishedFacts.Count} recorded facts");
+                    if (verdict.Contradicts)
+                        blocking.Add(new Mismatch(
+                            "contradiction",
+                            "This contradicts something already on the record: "
+                            + (verdict.ViolatedFact ?? "a fact given for this beat"),
+                            verdict.Reasoning,
+                            ["The prose is right — update the record.",
+                             "The record is right — put the prose back.",
+                             "Leave both for now, and remember why."]));
+                }
+                catch (Exception ex)
+                {
+                    // "Could not look" is a different answer from "nothing found" and must be
+                    // shown as one — it is the failure mode that laundered unchecked into verified
+                    // and let the Dae-jung Seo contradiction survive five clean sweeps.
+                    blocking.Add(new Mismatch(
+                        "contradiction",
+                        "The contradiction check could not run, so nothing was checked against the record.",
+                        ex.Message, ["Carry on anyway.", "Stop and look into it."]));
+                }
+            }
+        }
+        else
+        {
+            looked.Add("no recorded facts for anyone in this beat, so nothing to contradict");
+        }
+
+        // Tier C — the six-rule sweep already ran inline as part of this save. Its findings are
+        // scoped to this beat, so they are read back rather than re-run; running it twice would
+        // double the bill for the same answer.
+        blocking.AddRange(await BlastFindingsAsync(beatId, ct));
+        looked.Add("the logic sweep over this beat's blast radius");
+
+        return new SaveGateResult(blocking, ledger.CostForScope(scope.Id), string.Join(" · ", looked));
+    }
+
+    /// <summary>
+    /// What the narrow logic sweep filed against this beat.
+    /// </summary>
+    /// <remarks>
+    /// Read by the sweep's own scope key — <c>beat:{id:N}:blast</c> — not by timestamp. The sweep
+    /// deletes and recreates its findings per scope, so this is always that beat's current set and
+    /// never a neighbour's.
+    /// </remarks>
+    private Task<IReadOnlyList<Mismatch>> BlastFindingsAsync(Guid beatId, CancellationToken ct)
+    {
+        var rows = findings.List(FindingStatus.New, limit: 20, filePathPrefix: $"beat:{beatId:N}:blast");
+        return Task.FromResult<IReadOnlyList<Mismatch>>(rows
+            .Select(f => new Mismatch(
+                "logic-sweep",
+                f.Summary,
+                f.Snippet,
+                ["It reads the book in 100,000-character windows — it may not have seen the rest.",
+                 "It is right; I will fix it.",
+                 "Leave it for now."]))
+            .ToList());
+    }
+
+    /// <param name="Checked">How many beats were actually looked at, and out of how many. Reported
+    /// because a pass that finds nothing and cannot say what it examined is indistinguishable from
+    /// a pass that could not look — the failure that let a contradiction survive five clean sweeps.</param>
+    public sealed record BookCheckResult(
+        int Checked, int Total, IReadOnlyList<(int Number, Mismatch Finding)> Findings);
+
+    /// <summary>
+    /// Run the exact checks over a whole book, or over the part of it edited recently.
+    /// </summary>
+    /// <remarks>
+    /// <para>Tier A only, so it is free however large the book. That is what makes it safe to
+    /// offer as a button: a version of this that spent a model call per beat would cost real money
+    /// on a 521-beat manuscript and would be pressed exactly once.</para>
+    /// </remarks>
+    /// <param name="since">Only beats written to since this instant. Null checks the whole book.</param>
+    public async Task<BookCheckResult> CheckBookAsync(
+        Guid bookNodeId, DateTime? since = null, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+
+        var all = await workbench.GetOrderedBeatsAsync(bookNodeId, ct);
+        var target = since is { } t
+            ? await workbench.GetBeatsChangedSinceAsync(bookNodeId, t, ct)
+            : all.Select(o => o.Beat).ToList();
+
+        var found = new List<(int, Mismatch)>();
+        foreach (var beat in target)
+        {
+            ct.ThrowIfCancellationRequested();
+            foreach (var m in await ramifications.GateAsync(bookNodeId, beat.Id, ct))
+                found.Add((beat.Number, m));
+        }
+
+        return new BookCheckResult(target.Count, all.Count, found);
+    }
+
+    /// <summary>
+    /// The beat's prose one revision back, for the gate's Undo.
+    /// </summary>
+    /// <remarks>
+    /// From the temporal history, which is where the previous wording actually lives — index 1 is
+    /// the revision before the live row. Returns null on a beat with no history, and on SQLite,
+    /// where <c>FOR SYSTEM_TIME</c> does not exist; the caller says so rather than silently
+    /// offering an undo that would do nothing.
+    /// </remarks>
+    public Task<string?> PreviousBeatTextAsync(Guid beatId, CancellationToken ct = default)
+        => workbench.GetBeatVersionTextAsync(beatId, 1, ct);
+
+    /// <summary>Record that the author meant it, for this beat at this exact wording.</summary>
+    public Task DismissGateFindingAsync(
+        Guid beatId, Mismatch mismatch, string? note = null, CancellationToken ct = default)
+        => ramifications.DismissAsync(beatId, mismatch, note, ct);
 
     /// <param name="Label">What the other session called itself.</param>
     public sealed record OtherSession(string Label, string Kind, DateTime StartedAt);

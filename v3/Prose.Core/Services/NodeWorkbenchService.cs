@@ -2463,6 +2463,37 @@ public class NodeWorkbenchService
     /// directly, which finds nothing for a book-mode story whose beats hang off ChapterNode
     /// children. Use <see cref="GetBeatVersionCountsByIdsAsync"/> with the ids from
     /// <see cref="GetOrderedBeatsAsync"/> for those.</remarks>
+    /// <summary>
+    /// Which beats of this book have been written to since <paramref name="sinceUtc"/>.
+    /// </summary>
+    /// <remarks>
+    /// <para>The first timestamp-ranged query over beats in the codebase. <c>Beat.UpdatedAt</c> has
+    /// been the concurrency token since the beginning and was never used in a <c>Where</c> and
+    /// never indexed, because nothing ever asked the question — the save path always knew which
+    /// beat had changed, and the affected set came from <c>BlastRadiusService</c>. What needs this
+    /// is the catch-up case: beats edited before the checks existed, or while they were off.</para>
+    ///
+    /// <para>Reads the live rows rather than <c>FOR SYSTEM_TIME</c>. The history table would
+    /// answer "was edited in this window" including beats since reverted; the live row answers
+    /// "stands changed since then", which is the one a re-check wants. It also works on SQLite,
+    /// where temporal queries are a syntax error — the <c>GetBeatVersion*</c> family returns empty
+    /// there and a catch-up pass that silently found nothing would be the worse failure.</para>
+    /// </remarks>
+    public async Task<List<Beat>> GetBeatsChangedSinceAsync(
+        Guid nodeId, DateTime sinceUtc, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        // Through the ordered walk, not a one-level child query: a book with a split mega-chapter
+        // holds its beats two levels down, and the shallow idiom silently misses them.
+        var ordered = await GetOrderedBeatsAsync(nodeId, ct);
+        return ordered
+            .Select(o => o.Beat)
+            .Where(b => b.UpdatedAt >= sinceUtc)
+            .OrderBy(b => b.Number)
+            .ToList();
+    }
+
     public async Task<Dictionary<Guid, int>> GetBeatVersionCountsAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);

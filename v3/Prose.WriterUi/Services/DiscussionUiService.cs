@@ -23,7 +23,7 @@ public sealed class DiscussionUiService(
     DiscussionService discussions,
     DiscussionChatService chat,
     ProposalService proposals,
-    PostWriteReviewService review,
+    RamificationService ramifications,
     DiscussTargetRegistry targets)
 {
     /// <summary>Raised when the exchange could not happen because no provider has a key. The
@@ -227,7 +227,7 @@ public sealed class DiscussionUiService(
         // A request must not close with a mismatch unresolved — so the checks run here, inside the
         // approval, and what they find goes into the conversation as the assistant's own turn
         // rather than into a findings table nobody is looking at.
-        var mismatches = await review.ReviewAsync(bookNodeId, beatId, outcome.RemovedText, ct);
+        var mismatches = await ramifications.ReviewAsync(bookNodeId, beatId, outcome.RemovedText, ct);
         if (mismatches.Count == 0) return outcome;
 
         var blocks = new List<DiscussionBlock>

@@ -1,6 +1,4 @@
-using Prose.V4.Core.Ledger;
-
-namespace Prose.V4.Core.Contradiction;
+namespace Prose.Core.Services.Contradiction;
 
 /// <summary>One hand-planted calibration case for <see cref="NarrativeContradictionChecker"/>:
 /// a fact set, a beat text, and the verdict a correct checker must reach. Same discipline as

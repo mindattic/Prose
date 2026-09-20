@@ -29,7 +29,8 @@ public sealed record DiscussionContext(
     string Selection,
     IReadOnlyList<string> Before,
     IReadOnlyList<string> After,
-    IReadOnlyList<EchoHit> Echoes);
+    IReadOnlyList<EchoHit> Echoes,
+    CarriedWeight? Carried);
 
 /// <summary>
 /// Assembles the evidence for a discussion.
@@ -48,7 +49,8 @@ public sealed record DiscussionContext(
 public sealed class DiscussionContextBuilder(
     IDbContextFactory<ProseDbContext> dbFactory,
     NodeWorkbenchService workbench,
-    BeatSearchService search)
+    BeatSearchService search,
+    RamificationService ramifications)
 {
     private const int NeighbourCount = 2;
 
@@ -76,6 +78,15 @@ public sealed class DiscussionContextBuilder(
 
         var echoes = await FindEchoesAsync(ordered, beatId, selection, ct);
 
+        // What this passage is CARRYING. Until this existed the assistant was asked whether a
+        // passage was load-bearing while being shown the beat, its two neighbours and some word
+        // counts — it could not see a single obligation, recorded fact or lock, so it guessed, and
+        // a confident guess is exactly the blind agreement the author does not want. Every read
+        // behind this is free, which is why it can run on every question.
+        CarriedWeight? carried = null;
+        try { carried = await ramifications.CarriedByAsync(bookNodeId, beatId, ct); }
+        catch (Exception) { /* the prompt says so below rather than pretending nothing is carried */ }
+
         return new DiscussionContext(
             BookTitle: bookTitle,
             BeatLabel: beat is null ? "(unknown beat)" : $"Beat #{beat.Number}",
@@ -87,7 +98,8 @@ public sealed class DiscussionContextBuilder(
             Selection: selection,
             Before: before,
             After: after,
-            Echoes: echoes);
+            Echoes: echoes,
+            Carried: carried);
     }
 
     private static string Describe(Data.Entities.Beat b)
@@ -195,6 +207,19 @@ public sealed class DiscussionContextBuilder(
 
         sb.AppendLine().AppendLine("FULL BEAT TEXT:").AppendLine(c.BeatText);
         sb.AppendLine().AppendLine("THE SELECTED PASSAGE:").AppendLine(c.Selection);
+
+        sb.AppendLine();
+        if (c.Carried is { } carried)
+        {
+            sb.Append(RamificationService.ToPrompt(carried));
+        }
+        else
+        {
+            // "Could not look" and "nothing to find" are the same output unless one of them says
+            // so. An assistant told nothing is carried will happily agree to anything.
+            sb.AppendLine("CARRIED BY THIS PASSAGE: the record could not be read. Do NOT treat this "
+                          + "as the passage being free of commitments — say that you could not check.");
+        }
 
         if (c.Echoes.Count > 0)
         {

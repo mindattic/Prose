@@ -6,6 +6,11 @@
         ResizeMode="NoResize"
         Background="#1e1e1e">
     <Window.Resources>
+        <!-- The tile needs its own ControlTemplate, and that is the actual fix here.
+             Setting Background on the Style alone does nothing on hover: WPF's default Button
+             template has its own IsMouseOver trigger that paints the system pale blue, and it
+             wins over anything the Style says. That is where the washed-out highlight came
+             from — it was never our colour at all. -->
         <Style x:Key="Tile" TargetType="Button">
             <Setter Property="Height" Value="64" />
             <Setter Property="Margin" Value="0,0,0,10" />
@@ -18,6 +23,55 @@
             <Setter Property="HorizontalContentAlignment" Value="Left" />
             <Setter Property="Padding" Value="16,0,0,0" />
             <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Shell"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="3"
+                                Padding="{TemplateBinding Padding}"
+                                SnapsToDevicePixels="True">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Shell" Property="Background" Value="#ff0033" />
+                                <Setter TargetName="Shell" Property="BorderBrush" Value="#ff0033" />
+                                <!-- The title inherits this. The subtitle sets its own colour and
+                                     is lifted separately by TileSub below. -->
+                                <Setter Property="Foreground" Value="#ffffff" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Shell" Property="Background" Value="#d10029" />
+                                <Setter TargetName="Shell" Property="BorderBrush" Value="#d10029" />
+                                <Setter Property="Foreground" Value="#ffffff" />
+                            </Trigger>
+                            <!-- Templating away the default also throws away its focus visual, and
+                                 this window is three buttons and nothing else — a keyboard user
+                                 would have had no idea which one was selected. -->
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter TargetName="Shell" Property="BorderBrush" Value="#7ab8ff" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- The subtitles hardcoded #999999, which is 1.6:1 on #ff0033 — the same unreadable
+             result as before in a different colour. They follow the hover up to white. -->
+        <Style x:Key="TileSub" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#999999" />
+            <Setter Property="FontSize" Value="11" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource AncestorType=Button}}"
+                             Value="True">
+                    <Setter Property="Foreground" Value="#ffffff" />
+                </DataTrigger>
+            </Style.Triggers>
         </Style>
     </Window.Resources>
 
@@ -29,21 +83,21 @@
         <Button x:Name="WriterButton" Style="{StaticResource Tile}" Click="OpenWriter">
             <StackPanel>
                 <TextBlock Text="Writer" FontSize="15" />
-                <TextBlock Text="Read and hand-edit a book, beat by beat" Foreground="#999999" FontSize="11" />
+                <TextBlock Text="Read and hand-edit a book, beat by beat" Style="{StaticResource TileSub}" />
             </StackPanel>
         </Button>
 
         <Button x:Name="KdpButton" Style="{StaticResource Tile}" Click="OpenKdp">
             <StackPanel>
                 <TextBlock Text="KDP Publish" FontSize="15" />
-                <TextBlock Text="Publish and update books on Amazon" Foreground="#999999" FontSize="11" />
+                <TextBlock Text="Publish and update books on Amazon" Style="{StaticResource TileSub}" />
             </StackPanel>
         </Button>
 
         <Button x:Name="HubButton" Style="{StaticResource Tile}" Click="OpenHubDashboard">
             <StackPanel>
                 <TextBlock Text="Hub dashboard" FontSize="15" />
-                <TextBlock Text="Logs, DCM, findings — opens in your browser" Foreground="#999999" FontSize="11" />
+                <TextBlock Text="Logs, DCM, findings — opens in your browser" Style="{StaticResource TileSub}" />
             </StackPanel>
         </Button>
     </StackPanel>

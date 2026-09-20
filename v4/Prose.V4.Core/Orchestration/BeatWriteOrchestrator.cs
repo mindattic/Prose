@@ -3,7 +3,7 @@ using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Interfaces;
 using Prose.Core.Services;
-using Prose.V4.Core.Contradiction;
+using Prose.Core.Services.Contradiction;
 using Prose.V4.Core.Ledger;
 using Prose.V4.Core.Prompt;
 using Prose.V4.Core.Window;

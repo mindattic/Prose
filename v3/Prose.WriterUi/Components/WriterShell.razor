@@ -31,7 +31,7 @@
              OnToggleBookMenu="ToggleBookMenu"
              OnOpenBook="OpenBookAsync"
              OnSetMode="SetMode"
-             OnSave="() => SaveAsync(false)"
+             OnSave="ManualSaveAsync"
              OnExport="ExportAsync"
              OnToggleTheme="ToggleThemeAsync"
              OnOpenSettings="() => settingsOpen = true"
@@ -229,6 +229,15 @@
 @if (settingsOpen)
 {
     <SettingsPanel OnClose="() => settingsOpen = false" />
+}
+
+@if (gate is not null)
+{
+    <RamificationsModal Findings="gate.Blocking" Checked="gate.Checked" Cost="gate.Cost"
+                        OnDismiss="DismissGateFindingAsync"
+                        OnGoToBeat="() => gate = null"
+                        OnRevert="RevertFromGateAsync"
+                        OnDone="() => gate = null" />
 }
 
 <ContextMenu Items="contextItems" X="contextAt.X" Y="contextAt.Y"
@@ -500,6 +509,15 @@
 
     private async Task OpenBeatAsync(Guid id)
     {
+        // The gate. Your words are already saved — autosave wrote them twenty seconds ago — so
+        // what is held here is the beat being FINISHED, not the bytes. Walking away from an
+        // unanswered finding is exactly the circuit break the loop exists to prevent.
+        if (gate is not null && id != beatId)
+        {
+            tagNote = "Settle what the last save found before moving on.";
+            return;
+        }
+
         // Leaving a beat is when the deferred analysis runs — one pass per finished edit, rather
         // than one per save. A beat with unsaved changes is saved on the way out, not dropped.
         if (beat is not null && id != beatId)
@@ -713,6 +731,75 @@
 
     /// <summary>What the background sweep is doing, in the status bar. Null when nothing is.</summary>
     private string? sweepNote;
+
+    /// <summary>Findings from the last manual save that the author has not answered yet. While
+    /// this is set the beat is not finished and they cannot move off it.</summary>
+    private WriterService.SaveGateResult? gate;
+
+    /// <summary>
+    /// The Save button, and Ctrl+S: "I am done with this beat."
+    ///
+    /// <para>This is the expensive pass, by the author's own instruction. It saves with
+    /// <c>finishing: true</c> so the workbench runs its own tails — intent drift, continuity
+    /// re-extraction, the obligation scan, and the six-rule sweep over the blast radius — and then
+    /// reads what all of that found. Autosave still defers every one of them and spends nothing.</para>
+    ///
+    /// <para>It is awaited rather than fired and forgotten. That is the whole difference: the
+    /// sweep has been running on this path for weeks, filing into a table nothing in the Writer
+    /// read, so the author paid for an answer they were never shown.</para>
+    /// </summary>
+    private async Task ManualSaveAsync()
+    {
+        if (book is null || beat is null || saving) return;
+
+        await SaveAsync(finishing: true);
+        // A save that could not happen has already said why in its own banner; checking prose that
+        // was refused would report on text that is not in the book.
+        if (problems.Count > 0 || conflict is not null) return;
+
+        activity = "Checking what that changed…";
+        StateHasChanged();
+        try
+        {
+            var result = await Writer.RunSaveGateAsync(book.Id, beat.Id);
+            gate = result.Blocking.Count > 0 ? result : null;
+            sweepNote = result.Blocking.Count > 0
+                ? null
+                : $"Nothing to settle. Checked: {result.Checked}."
+                  + (result.Cost > 0 ? $" {result.Cost:C4}." : "");
+        }
+        catch (Exception ex)
+        {
+            // The checks failing is not the save failing, and must never read as one.
+            sweepNote = $"The checks could not run: {ex.Message}. Your text is saved.";
+        }
+        finally { activity = "Idle"; }
+    }
+
+    private async Task DismissGateFindingAsync(Prose.Core.Services.Discussion.Mismatch finding)
+    {
+        if (beat is null) return;
+        try { await Writer.DismissGateFindingAsync(beat.Id, finding); }
+        catch (Exception ex) { tagNote = $"That could not be recorded: {ex.Message}"; }
+    }
+
+    /// <summary>Put the beat back to what the database had before this editing pass.</summary>
+    private async Task RevertFromGateAsync()
+    {
+        if (beat is null) return;
+        gate = null;
+
+        var previous = await Writer.PreviousBeatTextAsync(beat.Id);
+        if (previous is null)
+        {
+            tagNote = "There is no earlier version of this beat on record to go back to.";
+            return;
+        }
+
+        draft = previous;
+        tagNote = "Reverted to the previous saved version. Save again to keep it.";
+        StateHasChanged();
+    }
 
     /// <summary>
     /// Run the logic sweep over everything the finished edit could have broken.

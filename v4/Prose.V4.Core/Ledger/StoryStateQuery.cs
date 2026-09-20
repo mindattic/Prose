@@ -2,13 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
+using Prose.Core.Services.Contradiction;
 
 namespace Prose.V4.Core.Ledger;
-
-/// <summary>One fact about an on-screen entity, from either the state ledger or the continuity
-/// claims table. <see cref="Predicate"/> is <see cref="EntityStateEvent.AspectKey"/> or
-/// <see cref="Prose.Core.Services.ContinuityClaim.Predicate"/> depending on <see cref="Source"/>.</summary>
-public sealed record OnScreenFact(string EntityName, string Predicate, string Value, string Source, string? Snippet);
 
 /// <summary>One open/advanced promise the story owes, scoped to an on-screen entity.</summary>
 public sealed record OnScreenObligation(Guid Id, string Kind, string Description, string State, string? TriggerCondition);
