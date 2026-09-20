@@ -82,9 +82,32 @@
             break;
 
         case DiscussionBlock.Proposal p:
-            @* The ticket itself arrives with the request pipeline; until then, say plainly that
-               something was proposed rather than rendering a control that cannot act. *@
-            <div class="d-note">A change was proposed (@p.ProposalId).</div>
+            @* The only thing in the Writer that can change prose, so it shows the exact words
+               that would be written and nothing acts until Approve. *@
+            <div class="d-proposal">
+                <div class="d-proposal-head">Proposed replacement</div>
+                <pre class="d-proposal-text">@ProposalText(p.ProposalId)</pre>
+
+                @if (ProposalStatus(p.ProposalId) is { } status && status != "proposed")
+                {
+                    <div class="d-proposal-done muted">@StatusLine(status)</div>
+                }
+                else if (Actionable)
+                {
+                    <div class="d-proposal-actions">
+                        <button class="primary" @onclick="() => OnApprove.InvokeAsync(p.ProposalId)">
+                            Approve and write
+                        </button>
+                        <button class="mini" @onclick="() => OnReject.InvokeAsync(p.ProposalId)">
+                            Reject
+                        </button>
+                    </div>
+                    <div class="muted d-proposal-note">
+                        Only the quoted passage is written. Everything else in the beat must come
+                        back byte-identical or the write is refused.
+                    </div>
+                }
+            </div>
             break;
     }
 }
@@ -102,6 +125,31 @@
     [Parameter] public EventCallback<DiscussionBlock.Confirm> OnConfirm { get; set; }
     [Parameter] public EventCallback<DiscussionBlock.Confirm> OnAdjust { get; set; }
     [Parameter] public EventCallback<DiscussionBlock.Confirm> OnCancel { get; set; }
+
+    /// <summary>Proposals the panel has already loaded, by id. Passed in rather than fetched here
+    /// so one render of a thread is one query, not one per block.</summary>
+    [Parameter] public IReadOnlyDictionary<Guid, DiscussionUiService.ProposalRow> Proposals { get; set; }
+        = new Dictionary<Guid, DiscussionUiService.ProposalRow>();
+
+    [Parameter] public EventCallback<Guid> OnApprove { get; set; }
+    [Parameter] public EventCallback<Guid> OnReject { get; set; }
+
+    private string ProposalText(Guid id)
+        => Proposals.TryGetValue(id, out var p)
+            ? p.Replacement
+            : "(this proposal could not be loaded)";
+
+    private string? ProposalStatus(Guid id)
+        => Proposals.TryGetValue(id, out var p) ? p.Status : null;
+
+    private static string StatusLine(string status) => status switch
+    {
+        "applied" => "Written to the beat.",
+        "rejected" => "Rejected. Nothing was written.",
+        // A refusal is not a rejection: the author said yes and the guard said the beat had moved.
+        "refused" => "Could not be applied — the passage had changed. Nothing was written.",
+        _ => status,
+    };
 
     private static readonly Markdig.MarkdownPipeline Pipeline =
         new Markdig.MarkdownPipelineBuilder()

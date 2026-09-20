@@ -169,7 +169,10 @@
                                       Actionable="@(last && !busy)"
                                       OnConfirm="ConfirmAsync"
                                       OnAdjust="AdjustAsync"
-                                      OnCancel="CancelRequestAsync" />
+                                      OnCancel="CancelRequestAsync"
+                                      Proposals="proposals"
+                                      OnApprove="ApproveAsync"
+                                      OnReject="RejectAsync" />
                 </div>
             }
 
@@ -226,6 +229,11 @@
 
     /// <summary>No key is configured and the author wants to fix that.</summary>
     [Parameter] public EventCallback OnOpenSettings { get; set; }
+
+    /// <summary>A proposal was applied, so the beat on screen is now behind the database. The
+    /// shell reloads it — leaving the editor showing the old prose would mean the next save
+    /// silently overwrote the change the author just approved.</summary>
+    [Parameter] public EventCallback<Guid> OnBeatWritten { get; set; }
 
     private IReadOnlyList<DiscussionUiService.ThreadRow> threads = [];
     private Prose.Core.Data.Entities.DiscussionThread? openThread;
@@ -597,11 +605,68 @@
         if (openThread is not null) await LoadTurnsAsync(threadId);
     }
 
+    /// <summary>The proposals this thread's turns refer to. A turn carries only the id, so a
+    /// stored turn can never disagree with the ticket it points at.</summary>
+    private Dictionary<Guid, DiscussionUiService.ProposalRow> proposals = new();
+
     private async Task LoadTurnsAsync(Guid threadId)
     {
         turns = await Discuss.TurnsAsync(threadId);
         cost = turns.Sum(t => t.Cost);
+        await LoadProposalsAsync();
         await SpeakReplyAsync();
+    }
+
+    private async Task LoadProposalsAsync()
+    {
+        var ids = turns
+            .SelectMany(t => t.Blocks.OfType<DiscussionBlock.Proposal>())
+            .Select(p => p.ProposalId)
+            .Distinct()
+            .ToList();
+
+        var loaded = new Dictionary<Guid, DiscussionUiService.ProposalRow>();
+        foreach (var id in ids)
+            if (await Discuss.ProposalAsync(id) is { } row) loaded[id] = row;
+        proposals = loaded;
+    }
+
+    /// <summary>
+    /// The one action in the Writer that changes prose the author did not type.
+    /// </summary>
+    private async Task ApproveAsync(Guid proposalId)
+    {
+        if (busy) return;
+        busy = true;
+        error = null;
+        try
+        {
+            var outcome = await Discuss.ApproveAsync(BookNodeId, proposalId);
+
+            // A refusal is not a failure of the author's intent — the beat moved underneath the
+            // proposal, and writing anyway is exactly what must not happen. It is said plainly
+            // rather than logged, because the author is standing right here waiting for it.
+            heard = outcome.Reason;
+
+            await LoadProposalsAsync();
+            // The beat on screen is now stale in the editor as well as here.
+            if (outcome.Applied) await OnBeatWritten.InvokeAsync(BeatId);
+        }
+        catch (Exception ex) { error = $"Could not apply that change: {ex.Message}"; }
+        finally { busy = false; }
+    }
+
+    private async Task RejectAsync(Guid proposalId)
+    {
+        if (busy) return;
+        busy = true;
+        try
+        {
+            await Discuss.RejectProposalAsync(BookNodeId, proposalId);
+            await LoadProposalsAsync();
+        }
+        catch (Exception ex) { error = $"Could not reject that change: {ex.Message}"; }
+        finally { busy = false; }
     }
 
     /// <summary>

@@ -30,6 +30,36 @@ public static class BeatMarkup
     public static string StripEntityTags(string? text) =>
         string.IsNullOrEmpty(text) ? text ?? "" : EntityTagPattern.Replace(text, "$1");
 
+    /// <summary>
+    /// The kept ranges of <paramref name="text"/> once entity tags are stripped — every stretch
+    /// that survives <see cref="StripEntityTags"/>, in order, as (start, length) in the ORIGINAL.
+    ///
+    /// <para>Shares <see cref="EntityTagPattern"/> with the stripper on purpose. A constrained
+    /// span write has to turn a position in reader-visible text back into a position in stored
+    /// markup, and a second pattern that disagreed with this one by a character would put an edit
+    /// one character off — inside a tag, where it would break it.</para>
+    /// </summary>
+    public static List<(int Start, int Length)> KeptRanges(string? text)
+    {
+        var kept = new List<(int, int)>();
+        if (string.IsNullOrEmpty(text)) return kept;
+
+        var at = 0;
+        foreach (Match m in EntityTagPattern.Matches(text))
+        {
+            // Everything before this tag survives untouched.
+            if (m.Index > at) kept.Add((at, m.Index - at));
+            // Of the tag itself, only the inner text survives — group 1 is that inner text, and
+            // taking its position from the match keeps this exactly in step with the replace.
+            var inner = m.Groups[1];
+            if (inner.Length > 0) kept.Add((inner.Index, inner.Length));
+            at = m.Index + m.Length;
+        }
+        if (at < text.Length) kept.Add((at, text.Length - at));
+
+        return kept;
+    }
+
     /// <summary>Every distinct Entity Guid tagged in this text, in first-occurrence order. This is
     /// the derivation path for <c>BeatEntityMentions</c> once a beat is tagged — parse tags, don't
     /// re-run a name/alias scan.</summary>
@@ -40,6 +70,31 @@ public static class BeatMarkup
         foreach (Match m in EntityGuidPattern.Matches(text))
             if (Guid.TryParse(m.Groups[1].Value, out var g) && seen.Add(g))
                 yield return g;
+    }
+
+    /// <summary>
+    /// The entity tag whose INNER text wholly contains <paramref name="start"/>..<paramref name="end"/>,
+    /// or null when the range is not inside one.
+    /// </summary>
+    /// <remarks>
+    /// Used by the constrained span write to notice that an edit is landing inside a link. Changing
+    /// the words a tag wraps while leaving the tag alone produces a link that points at one entity
+    /// and reads as another — and because the save path treats an incoming tag as the caller's
+    /// deliberate disambiguation (see <see cref="ExtractTaggedMentions"/>), that wrong pairing gets
+    /// PINNED rather than corrected on the next save.
+    /// </remarks>
+    public static (int Start, int Length, int InnerStart, int InnerLength)? TagAround(
+        string? text, int start, int end)
+    {
+        if (string.IsNullOrEmpty(text)) return null;
+
+        foreach (Match m in EntityTagPattern.Matches(text))
+        {
+            var inner = m.Groups[1];
+            if (start >= inner.Index && end <= inner.Index + inner.Length)
+                return (m.Index, m.Length, inner.Index, inner.Length);
+        }
+        return null;
     }
 
     /// <summary>One tag already present in a caller's text: the surface words it wraps, and the

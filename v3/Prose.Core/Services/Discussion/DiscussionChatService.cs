@@ -12,12 +12,16 @@ namespace Prose.Core.Services.Discussion;
 /// <param name="ResolvedIntent">What the request turned out to be — <c>clarify</c> or
 /// <c>edit</c>, never <c>auto</c>. When the author picked one, this is that; when they left it on
 /// auto, this is what the assistant decided, and it is what gets written to the turn.</param>
+/// <param name="Draft">The fenced replacement the assistant offered for the selected passage, if
+/// any. Extracted here rather than left in the prose so nothing downstream has to re-parse an
+/// answer to find out whether it contained an edit.</param>
 public sealed record DiscussionReply(
     IReadOnlyList<DiscussionBlock> Blocks,
     double Cost,
     string? Provider = null,
     bool CredentialsMissing = false,
-    string ResolvedIntent = DiscussionIntent.Clarify);
+    string ResolvedIntent = DiscussionIntent.Clarify,
+    string? Draft = null);
 
 /// <summary>
 /// One turn of conversation about a span of the book.
@@ -319,8 +323,16 @@ public sealed class DiscussionChatService(
                 ? (confirm is not null ? DiscussionIntent.Edit : DiscussionIntent.Clarify)
                 : intent;
 
+            // A fenced block in an edit reply is the replacement prose — the system prompt asks for
+            // it on its own, exactly so it can be lifted out whole rather than guessed at from the
+            // surrounding sentences. A reply still asking for confirmation carries no draft: it has
+            // not been agreed to yet.
+            var draft = confirm is null && resolved == DiscussionIntent.Edit
+                ? FencedBlock.Last(blocks.OfType<DiscussionBlock.Text>().LastOrDefault()?.Markdown)
+                : null;
+
             return new DiscussionReply(blocks, ledger.CostForScope(scope.Id), provider.Name,
-                                       ResolvedIntent: resolved);
+                                       ResolvedIntent: resolved, Draft: draft);
         }
         finally
         {

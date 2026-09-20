@@ -1260,6 +1260,9 @@ public static class ServiceCollectionExtensions
         // Finding a passage. A service, not a console command: the editor, the Discuss panel's
         // find_in_book tool and a spoken "find the camphor line" all need rows, not printed text.
         services.AddSingleton<BeatSearchService>();
+        // Turning an agreed change into a written one — and not one character further. Nothing
+        // here writes prose on its own: the author approves a specific proposal (RFC 0009).
+        services.AddSingleton<Prose.Core.Services.Discussion.ProposalService>();
 
         // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's
         // post-write extraction into one call — RFC 0009 §9.4 "item 1".

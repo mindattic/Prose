@@ -313,6 +313,45 @@
 
 .d-spoken { margin-left: var(--space-1); }
 
+/* ── a proposal ───────────────────────────────────────────────────────── */
+
+/* The only thing in the Writer that changes prose the author did not type, so the words that
+   would be written are shown verbatim and in the prose face — not paraphrased, not rendered as
+   markdown, not summarised. */
+.d-proposal {
+    margin: var(--space-2) 0;
+    padding: var(--space-2);
+    background: var(--color-bg-3);
+    border: 1px solid var(--color-warning);
+    border-radius: var(--radius);
+}
+
+.d-proposal-head {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-fg-muted);
+    margin-bottom: var(--space-1);
+}
+
+.d-proposal-text {
+    margin: 0 0 var(--space-2);
+    padding: var(--space-2);
+    background: var(--color-bg-4);
+    border-radius: var(--radius);
+    font-family: var(--font-prose);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    /* pre-wrap, not pre: a replacement is prose and must wrap, but its own line breaks are part
+       of what is being approved. */
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.d-proposal-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.d-proposal-note { margin-top: var(--space-2); font-size: var(--text-xs); line-height: 1.5; }
+.d-proposal-done { font-size: var(--text-xs); }
+
 /* ── the answer arriving ──────────────────────────────────────────────── */
 
 /* Deliberately not styled as a finished turn: it is a preview of one, replaced the moment the

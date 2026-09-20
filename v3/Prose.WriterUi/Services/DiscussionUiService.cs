@@ -22,6 +22,7 @@ public sealed class DiscussionUiService(
     IUniverseContext universe,
     DiscussionService discussions,
     DiscussionChatService chat,
+    ProposalService proposals,
     DiscussTargetRegistry targets)
 {
     /// <summary>Raised when the exchange could not happen because no provider has a key. The
@@ -169,13 +170,64 @@ public sealed class DiscussionUiService(
         // would read, later, as the assistant having had nothing to say.
         if (reply.CredentialsMissing) throw new NoCredentialsException();
 
-        await discussions.AddTurnAsync(threadId, DiscussionRole.Assistant, reply.Blocks,
+        var blocks = reply.Blocks;
+
+        // An agreed change becomes a ticket, not a write. The proposal is raised here so the
+        // turn that offered it and the proposal itself are stored together — a turn saying
+        // "here is the replacement" with no proposal behind it would be a dead end the author
+        // could read but not act on.
+        if (reply.Draft is { Length: > 0 } draft)
+        {
+            var proposal = await proposals.RaiseAsync(
+                threadId, beatId, draft,
+                rationale: DiscussionContent.Summarize(reply.Blocks, 400), ct);
+            blocks = [.. reply.Blocks, new DiscussionBlock.Proposal(proposal.Id)];
+        }
+
+        await discussions.AddTurnAsync(threadId, DiscussionRole.Assistant, blocks,
             cost: reply.Cost, ct: ct);
 
         // Stamp the author's turn with what it turned out to be. Only "auto" needs this; an
         // explicit toggle was already right when the turn was written.
         if (intent == DiscussionIntent.Auto)
             await discussions.SetLatestAuthorIntentAsync(threadId, reply.ResolvedIntent, ct);
+    }
+
+    // ── Proposals ──────────────────────────────────────────────────────────
+
+    /// <param name="Applied">Already written. Kept in the thread as the record of what was done.</param>
+    public sealed record ProposalRow(
+        Guid Id, string Replacement, string Status, bool Applied, string? Blocker);
+
+    /// <summary>One proposal, with whether it could still be applied right now.</summary>
+    public async Task<ProposalRow?> ProposalAsync(Guid proposalId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var p = await db.ChangeProposals.AsNoTracking()
+            .FirstOrDefaultAsync(x => x.Id == proposalId, ct);
+        if (p is null) return null;
+
+        return new ProposalRow(p.Id, p.NewValue, p.Status,
+                               p.Status == ProposalService.StatusApplied, null);
+    }
+
+    /// <summary>
+    /// Write it. The author has confirmed the request in conversation and approved this specific
+    /// replacement; a refusal from here means the beat moved underneath it, which is the one case
+    /// where not writing is the correct outcome.
+    /// </summary>
+    public async Task<SpanWriteOutcome> ApproveAsync(
+        Guid bookNodeId, Guid proposalId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        return await proposals.ApplyAsync(proposalId, ct);
+    }
+
+    public async Task RejectProposalAsync(
+        Guid bookNodeId, Guid proposalId, CancellationToken ct = default)
+    {
+        await ScopeToBookAsync(bookNodeId, ct);
+        await proposals.RejectAsync(proposalId, ct: ct);
     }
 
     public Task ResolveAsync(Guid threadId, CancellationToken ct = default)

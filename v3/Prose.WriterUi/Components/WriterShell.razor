@@ -133,7 +133,8 @@
                           BookNodeId="book.Id"
                           BeatId="beat.Id"
                           OnJumpToBeat="OpenBeatAsync"
-                          OnOpenSettings="() => settingsOpen = true" />
+                          OnOpenSettings="() => settingsOpen = true"
+                          OnBeatWritten="ReloadAfterProposalAsync" />
         }
     </div>
 
@@ -403,6 +404,25 @@
         beatId = id;
         beat = await Writer.GetBeatAsync(id);
         draft = beat?.Text ?? "";
+    }
+
+    /// <summary>
+    /// Pick up a beat that an approved proposal just rewrote underneath the editor.
+    ///
+    /// <para>Not optional, and not the same as <see cref="OpenBeatAsync"/>: this beat is already
+    /// open, so that method's "leaving a beat" path would not run. Without the reload the editor
+    /// keeps showing the pre-approval prose, and the next autosave — twenty seconds later, with no
+    /// one touching anything — writes it straight back over the change the author just approved.</para>
+    /// </summary>
+    private async Task ReloadAfterProposalAsync(Guid id)
+    {
+        if (id != beatId) return;
+
+        ClearBeatState();
+        beat = await Writer.GetBeatAsync(id);
+        draft = beat?.Text ?? "";
+        activity = "Change applied.";
+        StateHasChanged();
     }
 
     private void ClearBeatState()

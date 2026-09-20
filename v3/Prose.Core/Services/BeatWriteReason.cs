@@ -58,6 +58,24 @@ public enum BeatWriteReason
     /// directly, bypassing entity re-tagging, the Version counter, and the blast-radius recheck.)</summary>
     FindingApply,
 
+    /// <summary>
+    /// The author approving one anchored span the assistant drafted, in a discussion
+    /// (<c>ProposalService</c>).
+    ///
+    /// <para>Deliberately NOT <see cref="AuthorEdit"/>. The decision is the author's — nothing is
+    /// written until they press Confirm and then approve the proposal — but the WORDS came from a
+    /// model, and stamping them as the author's own hand would make LLM-drafted prose
+    /// indistinguishable from typing in the one record that is kept forever. That distinction is
+    /// the entire reason this enum exists, and <c>--edit-distribution</c> is the thing that would
+    /// have been lied to.</para>
+    ///
+    /// <para>Blast radius is enforced mechanically by <see cref="Discussion.SpanWrite"/>: every
+    /// character outside the anchored passage comes back byte-identical or nothing is written. This
+    /// matters more here than on any other path, because a request can arrive by VOICE — and then
+    /// there is no draft on screen for the author to compare against what they meant.</para>
+    /// </summary>
+    AuthorApprovedProposal,
+
     /// <summary>Entity-tag maintenance: <c>&lt;entity guid="…"&gt;</c> attributes rewritten in place
     /// when two entity rows are merged (<c>--merge-entity</c>). The words never change; only the
     /// GUID a tag points at. Stamped without a Version bump, because no prose changed.</summary>

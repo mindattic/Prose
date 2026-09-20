@@ -38,17 +38,39 @@ public static class ProseInline
     /// editor, not silently eat the rest of the paragraph.</para>
     /// </summary>
     public static List<Span> Parse(string? text)
+        => ParseRuns(text).Select(r => new Span(r.Text, r.Style)).ToList();
+
+    /// <summary>
+    /// A run of styled text, and where it started in the source.
+    ///
+    /// <para>Every character of <see cref="Text"/> came from <c>source[Start + k]</c> — the parser
+    /// only ever copies literal characters one at a time, so a run is contiguous in the source and
+    /// the offset is exact rather than approximate.</para>
+    /// </summary>
+    public sealed record Run(int Start, string Text, Style Style);
+
+    /// <summary>
+    /// <see cref="Parse"/>, with source positions.
+    ///
+    /// <para>The positions are what makes a constrained span write possible: a span selected in
+    /// the text a READER sees has to be turned back into a range in the text that is STORED, and
+    /// guessing at that mapping is how an edit lands on the wrong characters. This is the same
+    /// walk <see cref="Parse"/> performs — deliberately one implementation, because two would
+    /// drift and the drift would be invisible until an edit corrupted a beat.</para>
+    /// </summary>
+    public static List<Run> ParseRuns(string? text)
     {
-        var spans = new List<Span>();
+        var spans = new List<Run>();
         if (string.IsNullOrEmpty(text)) return spans;
 
         var style = Style.None;
         var buffer = new StringBuilder();
+        var runStart = 0;
 
         void Flush()
         {
             if (buffer.Length == 0) return;
-            spans.Add(new Span(buffer.ToString(), style));
+            spans.Add(new Run(runStart, buffer.ToString(), style));
             buffer.Clear();
         }
 
@@ -71,6 +93,9 @@ public static class ProseInline
             if (style.HasFlag(Style.Underline) && StartsWith(text, i, "</u>"))
             { Flush(); style &= ~Style.Underline; i += 4; continue; }
 
+            // The start of a run is the position of its first literal character, recorded as it
+            // is appended rather than inferred afterwards from the marker lengths.
+            if (buffer.Length == 0) runStart = i;
             buffer.Append(text[i]);
             i++;
         }
