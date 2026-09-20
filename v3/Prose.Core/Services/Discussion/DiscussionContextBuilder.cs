@@ -47,7 +47,8 @@ public sealed record DiscussionContext(
 /// </summary>
 public sealed class DiscussionContextBuilder(
     IDbContextFactory<ProseDbContext> dbFactory,
-    NodeWorkbenchService workbench)
+    NodeWorkbenchService workbench,
+    BeatSearchService search)
 {
     private const int NeighbourCount = 2;
 
@@ -150,34 +151,24 @@ public sealed class DiscussionContextBuilder(
     /// Every beat of this book whose prose contains <paramref name="query"/>.
     ///
     /// <para>Backs the <c>find_in_book</c> tool, so the assistant can go and look instead of
-    /// recalling. Deliberately lexical and book-scoped: the corpus-wide
-    /// <c>prose --grep-beats</c> loads every beat in the database and returns console text, and
-    /// the semantic tier cannot be trusted until the beat embedding index is maintained on write
-    /// (RFC 0013 — a k=400 sweep over gutenberg returned twelve rows of 116).</para>
+    /// recalling. The search itself is <see cref="BeatSearchService"/> — the same one behind the
+    /// editor's Find, deliberately, because the assistant and the author asking "is this anywhere
+    /// else" must not be able to get different answers.</para>
+    ///
+    /// <para>Lexical and book-scoped. The corpus-wide <c>prose --grep-beats</c> loads every beat
+    /// in the database and returns console text, and the semantic tier cannot be trusted until the
+    /// beat embedding index is maintained on write (RFC 0013 — a k=400 sweep over gutenberg
+    /// returned twelve rows of 116).</para>
     /// </summary>
     public async Task<IReadOnlyList<BookSearchHit>> FindInBookAsync(
         Guid bookNodeId, string query, int max = 12, CancellationToken ct = default)
     {
         if (string.IsNullOrWhiteSpace(query)) return [];
 
-        var ordered = await workbench.GetOrderedBeatsAsync(bookNodeId, ct);
-        var hits = new List<BookSearchHit>();
-
-        foreach (var o in ordered)
-        {
-            if (hits.Count >= max) break;
-            var plain = BeatMarkup.StripEntityTags(o.Beat.Text ?? "");
-            var at = plain.IndexOf(query, StringComparison.OrdinalIgnoreCase);
-            if (at < 0) continue;
-
-            var from = Math.Max(0, at - 60);
-            var to = Math.Min(plain.Length, at + query.Length + 60);
-            hits.Add(new BookSearchHit(
-                o.Beat.Id, o.Beat.Number, o.Beat.PlaceName,
-                (from > 0 ? "…" : "") + plain[from..to].Replace('\n', ' ') + (to < plain.Length ? "…" : "")));
-        }
-
-        return hits;
+        var found = await search.SearchAsync(bookNodeId, query, max: max, ct: ct);
+        return found.Hits
+            .Select(h => new BookSearchHit(h.BeatId, h.Number, h.PlaceName, h.Excerpt))
+            .ToList();
     }
 
     /// <summary>Renders the context into the block the model is given.</summary>

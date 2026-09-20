@@ -96,6 +96,11 @@
                 <span aria-hidden="true">■</span> Stop
             </button>
         }
+        <span class="tb-sep"></span>
+        @* Ctrl+F works too, but a keystroke nobody is told about is not a feature. *@
+        <button class="mini @(FindOpen ? "on" : "")" aria-pressed="@FindOpen"
+                @onclick="() => OnToggleFind.InvokeAsync()"
+                title="Find in this book (Ctrl+F)" aria-label="Find in this book">Find</button>
     </div>
 }
 
@@ -121,6 +126,9 @@
     [Parameter] public EventCallback<string> OnFormat { get; set; }
     [Parameter] public EventCallback OnInsertEmDash { get; set; }
     [Parameter] public EventCallback OnAddEntity { get; set; }
+    [Parameter] public bool FindOpen { get; set; }
+    [Parameter] public EventCallback OnToggleFind { get; set; }
+
     [Parameter] public EventCallback OnReadAloud { get; set; }
     [Parameter] public EventCallback OnStopReading { get; set; }
 

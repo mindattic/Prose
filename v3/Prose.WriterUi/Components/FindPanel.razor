@@ -1,0 +1,196 @@
+@* Find, across the whole book.
+
+   Ctrl+F was taken away from the author when AreBrowserAcceleratorKeysEnabled was turned off, and
+   nothing replaced it. This is the replacement, and it is better than what it replaces: the
+   browser's find searched the one beat on screen, and a novelist looking for the camphor line does
+   not know which beat it is in.
+
+   Lexical, and it says so. The semantic tier is not wired in because beat embeddings are not
+   maintained on write, and a semantic search over a stale index returns a short plausible list
+   that looks exactly like a search that worked. *@
+
+@* Not in _Imports: Prose.Core.Services also contains Entity, Beat and Node lookalikes that would
+   shadow names already in scope across every component in this library. *@
+@using Prose.Core.Services
+@inject BeatSearchService Search
+
+<div class="find" role="search" aria-label="Find in this book" @onkeydown="OnKeyDownAsync">
+    <div class="find-bar">
+        <label class="visually-hidden" for="find-input">Find in this book</label>
+        <input id="find-input" type="search" class="find-input" value="@query" @ref="inputRef"
+               placeholder="Find in this book…" autocomplete="off" spellcheck="false"
+               @oninput="OnQueryInput" />
+
+        <label class="find-opt">
+            <input type="checkbox" checked="@matchCase"
+                   @onchange="e => Toggle(ref matchCase, e)" />
+            <span>Aa<span class="visually-hidden"> — match case</span></span>
+        </label>
+
+        <label class="find-opt">
+            <input type="checkbox" checked="@wholeWord"
+                   @onchange="e => Toggle(ref wholeWord, e)" />
+            <span>W<span class="visually-hidden">hole words only</span></span>
+        </label>
+
+        <button class="mini" @onclick="RunAsync" disabled="@(busy || query.Trim().Length == 0)">
+            @(busy ? "…" : "Find")
+        </button>
+        <button class="mini" @onclick="() => OnClose.InvokeAsync()" aria-label="Close find">✕</button>
+    </div>
+
+    <div class="find-status" role="status">
+        @if (result is null)
+        {
+            <span class="muted">Searches every beat of the open book.</span>
+        }
+        else if (result.Scanned == 0)
+        {
+            @* Not "no matches". Nothing was looked at, which is a different answer and must never
+               be shown as though the book had been searched and found wanting. *@
+            <span class="set-warn">Nothing was searched — this book has no beats loaded.</span>
+        }
+        else if (result.Hits.Count == 0)
+        {
+            <span>No match in @result.Scanned beats.</span>
+        }
+        else
+        {
+            <span>
+                @result.TotalMatches match@(result.TotalMatches == 1 ? "" : "es")
+                in @result.Hits.Count beat@(result.Hits.Count == 1 ? "" : "s"),
+                of @result.Scanned searched.
+            </span>
+            @if (result.Truncated)
+            {
+                <span class="set-warn"> More beats matched than are listed.</span>
+            }
+        }
+
+        @if (coverage is { Total: > 0 } c && !c.Complete)
+        {
+            @* Said plainly rather than left for the author to discover. An index that covers a
+               fraction of the book cannot answer "is this anywhere else", and the honest version
+               of that is a sentence, not a silently short list. *@
+            <div class="muted find-note">
+                Matching exact text. Meaning-based search is unavailable — @c.Indexed of @c.Total
+                beats are indexed.
+            </div>
+        }
+    </div>
+
+    @if (result is { Hits.Count: > 0 })
+    {
+        <ul class="find-list">
+            @foreach (var hit in result.Hits)
+            {
+                <li>
+                    <button class="find-hit @(hit.BeatId == CurrentBeatId ? "current" : "")"
+                            @onclick="() => OnJumpToBeat.InvokeAsync(hit.BeatId)">
+                        <span class="find-where">
+                            #@hit.Number
+                            @if (hit.ChapterTitle is { Length: > 0 })
+                            {
+                                <span class="muted"> · @hit.ChapterTitle</span>
+                            }
+                            @if (hit.PlaceName is { Length: > 0 })
+                            {
+                                <span class="muted"> · @hit.PlaceName</span>
+                            }
+                            @if (hit.MatchesInBeat > 1)
+                            {
+                                <span class="find-count">@hit.MatchesInBeat</span>
+                            }
+                        </span>
+                        <span class="find-excerpt">@RenderExcerpt(hit)</span>
+                    </button>
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+@code {
+    [Parameter] public Guid BookNodeId { get; set; }
+    [Parameter] public Guid CurrentBeatId { get; set; }
+    [Parameter] public EventCallback<Guid> OnJumpToBeat { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private ElementReference inputRef;
+    private string query = "";
+    private bool matchCase;
+    private bool wholeWord;
+    private bool busy;
+    private BeatSearchResult? result;
+    private SearchIndexCoverage? coverage;
+
+    private Guid openedFor;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (BookNodeId == openedFor) return;
+        openedFor = BookNodeId;
+        result = null;
+        // Asked once per book rather than per search: it is a count over the whole book, and the
+        // answer does not change between two presses of Find.
+        coverage = BookNodeId == Guid.Empty ? null : await Search.CoverageAsync(BookNodeId);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // Opening Find and having to click into its box would make Ctrl+F worse than useless.
+        if (!firstRender) return;
+        try { await inputRef.FocusAsync(); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+    }
+
+    private void OnQueryInput(ChangeEventArgs e) => query = e.Value?.ToString() ?? "";
+
+    private void Toggle(ref bool flag, ChangeEventArgs e)
+        => flag = e.Value is bool b && b;
+
+    private async Task OnKeyDownAsync(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter") await RunAsync();
+        else if (e.Key == "Escape") await OnClose.InvokeAsync();
+    }
+
+    /// <summary>
+    /// Run on Enter or the button, never as the author types.
+    ///
+    /// <para>This walks every beat of the book. Search-as-you-type would do that on each
+    /// keystroke, and on a 521-beat manuscript the editor would stutter while someone typed a
+    /// word.</para>
+    /// </summary>
+    private async Task RunAsync()
+    {
+        var needle = query.Trim();
+        if (busy || needle.Length == 0 || BookNodeId == Guid.Empty) return;
+
+        busy = true;
+        try
+        {
+            result = await Search.SearchAsync(BookNodeId, needle, matchCase, wholeWord);
+        }
+        finally { busy = false; }
+    }
+
+    /// <summary>
+    /// The excerpt with the match marked — using the offset the search returned, not by searching
+    /// the excerpt again. Re-finding it here would highlight the first occurrence in the excerpt,
+    /// which is not necessarily the one that was found.
+    /// </summary>
+    private RenderFragment RenderExcerpt(BeatSearchHit hit) => builder =>
+    {
+        var text = hit.Excerpt;
+        var start = Math.Clamp(hit.MatchStart, 0, text.Length);
+        var end = Math.Clamp(start + hit.MatchLength, start, text.Length);
+
+        builder.AddContent(0, text[..start]);
+        builder.OpenElement(1, "mark");
+        builder.AddContent(2, text[start..end]);
+        builder.CloseElement();
+        builder.AddContent(3, text[end..]);
+    };
+}

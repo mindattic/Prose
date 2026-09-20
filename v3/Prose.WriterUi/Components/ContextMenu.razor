@@ -1,0 +1,210 @@
+@* The editor's context menu.
+
+   AreDefaultContextMenusEnabled is false in the Writer host, so this is not an enhancement over
+   the browser's menu — it is the only one there is. Nothing falls back behind it.
+
+   role="menu" is used here and NOT on the toolbar dropdowns, and the difference is deliberate:
+   the role promises an arrow-key model, and promising one that is not implemented is worse than
+   using no role at all. This component implements it — Up/Down wrap, Home/End, Escape restores
+   focus to where it came from, Enter and Space activate, Tab closes. *@
+
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+@if (Items.Count > 0)
+{
+    @* A full-window scrim so a click anywhere dismisses the menu. aria-hidden because it is not
+       a target for assistive technology — Escape is. *@
+    <div class="ctx-scrim" aria-hidden="true" @onclick="CloseAsync"
+         @oncontextmenu:preventDefault="true" @oncontextmenu="CloseAsync"></div>
+
+    <div class="ctx-menu" role="menu" aria-label="@Label" @ref="menuRef"
+         style="@Position" @onkeydown="OnKeyDownAsync">
+        @for (var i = 0; i < Items.Count; i++)
+        {
+            var index = i;
+            var item = Items[i];
+
+            if (item.IsSeparator)
+            {
+                <div class="ctx-sep" role="separator"></div>
+            }
+            else
+            {
+                <button class="ctx-item" role="menuitem" type="button"
+                        tabindex="@(index == focused ? 0 : -1)"
+                        disabled="@item.Disabled"
+                        @ref="itemRefs[index]"
+                        @onclick="() => ChooseAsync(item)">
+                    <span class="ctx-label">@item.Label</span>
+                    @if (item.Hint is not null)
+                    {
+                        <span class="ctx-hint">@item.Hint</span>
+                    }
+                </button>
+            }
+        }
+    </div>
+}
+
+@code {
+    /// <param name="Hint">A keystroke or a note, shown right-aligned. Never the only place an
+    /// action's meaning is given.</param>
+    public sealed record Item(
+        string Label,
+        Func<Task> Invoke,
+        string? Hint = null,
+        bool Disabled = false,
+        bool IsSeparator = false)
+    {
+        public static Item Separator() => new("", () => Task.CompletedTask, IsSeparator: true);
+    }
+
+    [Parameter] public IReadOnlyList<Item> Items { get; set; } = [];
+    [Parameter] public int X { get; set; }
+    [Parameter] public int Y { get; set; }
+    [Parameter] public string Label { get; set; } = "Editor actions";
+
+    /// <summary>The menu closed, however it closed. The shell clears its items.</summary>
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private ElementReference menuRef;
+
+    /// <summary>One slot per item. An array rather than a dictionary because <c>@ref</c> needs an
+    /// assignable storage location, and an indexer into a fixed array is one.</summary>
+    private ElementReference[] itemRefs = [];
+    private int focused;
+    private bool opened;
+
+    /// <summary>Captured so Escape and a chosen item both return the author to the prose rather
+    /// than dropping them at the top of the document.</summary>
+    private bool focusTrapped;
+
+    private string Position => $"left:{X}px; top:{Y}px;";
+
+    protected override void OnParametersSet()
+    {
+        if (Items.Count == 0) { opened = false; focusTrapped = false; itemRefs = []; return; }
+
+        if (itemRefs.Length != Items.Count) itemRefs = new ElementReference[Items.Count];
+
+        // Reopening at a new position is a new menu, and focus belongs on its first item again.
+        if (!opened) focused = FirstEnabled(0, 1);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (Items.Count == 0 || opened) return;
+        opened = true;
+
+        // proseModal does the remembering and restoring; reusing it means the context menu and
+        // the dialogs cannot drift apart on what "give focus back" means.
+        await JsAsync("proseModal.open", menuRef);
+        focusTrapped = true;
+        await FocusAsync(focused);
+    }
+
+    private async Task OnKeyDownAsync(KeyboardEventArgs e)
+    {
+        switch (e.Key)
+        {
+            case "Escape":
+                await CloseAsync();
+                break;
+
+            case "ArrowDown":
+                await MoveAsync(+1);
+                break;
+
+            case "ArrowUp":
+                await MoveAsync(-1);
+                break;
+
+            case "Home":
+                focused = FirstEnabled(0, 1);
+                await FocusAsync(focused);
+                break;
+
+            case "End":
+                focused = FirstEnabled(Items.Count - 1, -1);
+                await FocusAsync(focused);
+                break;
+
+            // Tab out of a menu closes it. Trapping Tab is right for a dialog, which the author
+            // is working inside; a menu is a decision they are making and leaving it is an answer.
+            case "Tab":
+                await CloseAsync();
+                break;
+        }
+    }
+
+    /// <summary>Move focus, wrapping, skipping separators and disabled items. Wrapping is what the
+    /// role promises and the reason the toolbar dropdowns could not claim it.</summary>
+    private async Task MoveAsync(int step)
+    {
+        if (Items.Count == 0) return;
+        var next = focused;
+        for (var i = 0; i < Items.Count; i++)
+        {
+            next = (next + step + Items.Count) % Items.Count;
+            if (!Items[next].IsSeparator && !Items[next].Disabled) break;
+        }
+        focused = next;
+        await FocusAsync(focused);
+    }
+
+    private int FirstEnabled(int from, int step)
+    {
+        for (var i = 0; i < Items.Count; i++)
+        {
+            var at = (from + i * step + Items.Count * Items.Count) % Items.Count;
+            if (!Items[at].IsSeparator && !Items[at].Disabled) return at;
+        }
+        return 0;
+    }
+
+    private async Task FocusAsync(int index)
+    {
+        StateHasChanged();
+        if (index < 0 || index >= itemRefs.Length) return;
+        try { await itemRefs[index].FocusAsync(); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+    }
+
+    private async Task ChooseAsync(Item item)
+    {
+        // Closed BEFORE the action runs. Several items open a dialog, and a menu still on screen
+        // behind a modal would have focus in two places at once.
+        await CloseAsync();
+        await item.Invoke();
+    }
+
+    private async Task CloseAsync()
+    {
+        if (focusTrapped)
+        {
+            await JsAsync("proseModal.close");
+            focusTrapped = false;
+        }
+        opened = false;
+        // The refs array is deliberately NOT cleared here. A render can still run against the old
+        // Items before the parent's OnClose lands, and @ref="itemRefs[index]" over an empty array
+        // would throw out of the render tree. OnParametersSet resizes it instead.
+        await OnClose.InvokeAsync();
+    }
+
+    private async Task JsAsync(string identifier, params object?[] args)
+    {
+        // A menu that cannot reach its JavaScript must still close. An unhandled JSException here
+        // would tear the circuit down and freeze the window with the menu still painted on it.
+        try { await JS.InvokeVoidAsync(identifier, args); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (focusTrapped) await JsAsync("proseModal.close");
+    }
+}

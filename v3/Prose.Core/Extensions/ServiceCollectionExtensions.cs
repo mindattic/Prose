@@ -1257,6 +1257,9 @@ public static class ServiceCollectionExtensions
         services.AddHttpClient<Prose.Core.Services.Discussion.SpeechService>(
             c => c.Timeout = TimeSpan.FromMinutes(2));
         services.AddSingleton<Prose.Core.Services.Discussion.SpeechVocabularyService>();
+        // Finding a passage. A service, not a console command: the editor, the Discuss panel's
+        // find_in_book tool and a spoken "find the camphor line" all need rows, not printed text.
+        services.AddSingleton<BeatSearchService>();
 
         // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's
         // post-write extraction into one call — RFC 0009 §9.4 "item 1".

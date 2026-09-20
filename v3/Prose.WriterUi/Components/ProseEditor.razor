@@ -47,6 +47,33 @@ else
     /// <summary>The author right-clicked a selection: they want to talk about that passage.</summary>
     [Parameter] public EventCallback<SelectedSpan> DiscussRequested { get; set; }
 
+    /// <summary>
+    /// Everything the context menu needs, gathered at the moment of the click.
+    ///
+    /// <para>Gathered then and carried, rather than asked for again when an item is chosen:
+    /// opening a menu moves focus, and a selection read back afterwards is not reliably the one
+    /// the author right-clicked.</para>
+    /// </summary>
+    /// <param name="EntityGuid">Null unless the click landed on an entity chip.</param>
+    /// <param name="Quote">Null unless something was selected. Beat markup, like
+    /// <see cref="SelectedSpan"/>.</param>
+    public sealed record ContextTarget(
+        int X, int Y,
+        string? EntityGuid, string? EntityRepo, string? EntityText,
+        string? Quote, string? Prefix, string? Suffix,
+        string? SelectedText)
+    {
+        public bool HasSelection => !string.IsNullOrWhiteSpace(SelectedText);
+        public bool OnEntity => !string.IsNullOrEmpty(EntityGuid);
+
+        public SelectedSpan? Span => Quote is null
+            ? null
+            : new SelectedSpan(Quote, Prefix ?? "", Suffix ?? "");
+    }
+
+    /// <summary>The author asked for the context menu, by right-click or by Shift+F10.</summary>
+    [Parameter] public EventCallback<ContextTarget> ContextMenuRequested { get; set; }
+
     /// <summary>The circuit lost its browser. The shell greys the status dot.</summary>
     [Parameter] public EventCallback OnDisconnected { get; set; }
 
@@ -138,6 +165,9 @@ else
     [JSInvokable]
     public Task OnDiscussRequested(string quote, string prefix, string suffix)
         => DiscussRequested.InvokeAsync(new SelectedSpan(quote, prefix, suffix));
+
+    [JSInvokable]
+    public Task OnContextMenu(ContextTarget target) => ContextMenuRequested.InvokeAsync(target);
 
     // ── Called by the shell (toolbar, entity dialog) ───────────────────────
 

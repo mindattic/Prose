@@ -282,6 +282,154 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 .dot.ok { background: var(--color-success); }
 .dot.bad { background: var(--color-danger); }
 
+/* ── find ─────────────────────────────────────────────────────────────── */
+
+/* A column beside the prose rather than a floating bar over it. The browser's find searched the
+   one beat on screen; this searches the book, so its results are a list and a list needs room. */
+.find {
+    flex: 0 0 24rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow-y: auto;
+    background: var(--color-bg-1);
+    border-left: 1px solid var(--color-border);
+    font-size: var(--text-sm);
+}
+
+.find-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    background: var(--color-bg-1);
+    z-index: 1;
+}
+
+.find-input {
+    flex: 1;
+    min-width: 0;
+    min-height: var(--target-min);
+    padding: 0 var(--space-2);
+    background: var(--color-bg-4);
+    color: var(--color-fg);
+    border: 1px solid var(--color-border-input);
+    border-radius: var(--radius);
+    font: inherit;
+}
+
+.find-input:focus-visible { outline: var(--focus-ring); outline-offset: var(--focus-ring-offset); }
+
+.find-opt {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    min-height: var(--target-min);
+    color: var(--color-mini-fg);
+    font-size: var(--text-xs);
+    cursor: pointer;
+}
+
+.find-status { padding: var(--space-2) var(--space-3); line-height: 1.5; }
+.find-note { margin-top: var(--space-1); }
+
+.find-list { list-style: none; margin: 0; padding: 0; }
+
+.find-hit {
+    display: block;
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    background: none;
+    border: 0;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-fg);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.find-hit:hover { background: var(--color-bg-2); }
+.find-hit.current { background: var(--color-bg-sel); }
+.find-hit:focus-visible { outline: var(--focus-ring); outline-offset: calc(var(--focus-ring-offset) * -1); }
+
+.find-where { display: block; font-size: var(--text-xs); margin-bottom: 2px; }
+
+.find-count {
+    margin-left: var(--space-1);
+    padding: 0 4px;
+    background: var(--color-mini-bg);
+    color: var(--color-mini-fg);
+    border-radius: var(--radius);
+}
+
+.find-excerpt {
+    display: block;
+    font-family: var(--font-prose);
+    color: var(--color-fg-soft);
+    line-height: 1.5;
+}
+
+/* The match itself. A background alone would fail 1.4.1 for anyone who cannot distinguish it, so
+   the weight carries it too. */
+.find-excerpt mark {
+    background: var(--color-bg-sel);
+    color: var(--color-fg-strong);
+    font-weight: 600;
+}
+
+/* ── context menu ─────────────────────────────────────────────────────── */
+
+/* Below the modal layer (20/21) but above everything else: choosing "Link to an entity…" opens a
+   dialog, and the dialog must come out in front of the menu that opened it. */
+
+/* Invisible, unlike .scrim — a context menu does not dim the page. It exists so a click anywhere
+   dismisses the menu, which is the behaviour every context menu has and none of them announce. */
+.ctx-scrim { position: fixed; inset: 0; z-index: 15; background: transparent; }
+
+.ctx-menu {
+    position: fixed;
+    z-index: 16;
+    min-width: 13rem;
+    max-width: 22rem;
+    padding: var(--space-1) 0;
+    background: var(--color-bg-3);
+    border: 1px solid var(--color-border-modal);
+    border-radius: var(--radius);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    font-size: var(--text-sm);
+}
+
+.ctx-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    width: 100%;
+    min-height: var(--target-min);
+    padding: 0 var(--space-3);
+    background: none;
+    border: 0;
+    color: var(--color-fg);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.ctx-item:hover:not(:disabled) { background: var(--color-bg-sel); }
+.ctx-item:focus-visible { outline: var(--focus-ring); outline-offset: calc(var(--focus-ring-offset) * -1); }
+
+/* A disabled item stays VISIBLE and says why in its hint — "Display mode only" is information,
+   and hiding the item would leave the author wondering where the action went. */
+.ctx-item:disabled { color: var(--color-fg-subtle); cursor: default; }
+
+.ctx-label { flex: 1; }
+.ctx-hint { color: var(--color-fg-muted); font-size: var(--text-xs); }
+.ctx-item:disabled .ctx-hint { color: var(--color-fg-subtle); }
+
+.ctx-sep { height: 1px; margin: var(--space-1) 0; background: var(--color-border); }
+
 /* ── entity modal ─────────────────────────────────────────────────────── */
 
 .scrim {

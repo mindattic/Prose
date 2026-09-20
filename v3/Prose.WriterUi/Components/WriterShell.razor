@@ -40,7 +40,9 @@
              OnAddEntity="AddEntityAsync"
              OnReadAloud="ReadAloudAsync"
              OnStopReading="StopReadingAsync"
-             Speaking="speaking" />
+             Speaking="speaking"
+             FindOpen="findOpen"
+             OnToggleFind="OpenFind" />
 
     <div class="body">
 
@@ -112,10 +114,18 @@
                              EntityContextMenu="OnEntityChipContextMenu"
                              EntityClick="OnEntityChipClick"
                              DiscussRequested="OnDiscussRequested"
+                             ContextMenuRequested="OnContextMenuAsync"
                              OnDisconnected="OnEditorDisconnected"
                              OnJsError="OnEditorJsError" />
             }
         </main>
+
+        @if (findOpen && book is not null)
+        {
+            <FindPanel BookNodeId="book.Id" CurrentBeatId="beatId"
+                       OnJumpToBeat="OpenBeatAsync"
+                       OnClose="() => findOpen = false" />
+        }
 
         @if (book is not null && beat is not null)
         {
@@ -153,6 +163,9 @@
 {
     <SettingsPanel OnClose="() => settingsOpen = false" />
 }
+
+<ContextMenu Items="contextItems" X="contextAt.X" Y="contextAt.Y"
+             OnClose="() => contextItems = []" />
 
 @if (entityModal is not null)
 {
@@ -241,7 +254,26 @@
         try { theme = await JS.InvokeAsync<string>("proseWriter.getTheme"); StateHasChanged(); }
         catch (JSDisconnectedException) { connected = false; }
         catch (JSException) { /* theme is a preference; never worth failing a render over */ }
+
+        // Ctrl+F belongs to the shell rather than to a panel: it has to work whether or not Find
+        // is already open, and it is the shell that knows which book to search.
+        shellRef ??= DotNetObjectReference.Create(this);
+        await JsVoidAsync("proseHotkeys.registerShell", shellRef);
     }
+
+    private DotNetObjectReference<WriterShell>? shellRef;
+
+    /// <summary>Ctrl+F. Toggling rather than only opening: pressing it again with Find already up
+    /// is how everyone closes a find bar.</summary>
+    [JSInvokable]
+    public Task OpenFind()
+    {
+        findOpen = !findOpen;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    private bool findOpen;
 
     // ── Editor callbacks ───────────────────────────────────────────────────
 
@@ -572,6 +604,104 @@
         await JsVoidAsync("proseSpeech.stop");
     }
 
+    // ── Context menu ───────────────────────────────────────────────────────
+
+    private IReadOnlyList<ContextMenu.Item> contextItems = [];
+    private (int X, int Y) contextAt;
+
+    /// <summary>
+    /// Build the menu for what was actually right-clicked.
+    ///
+    /// <para>The items are closures over <paramref name="target"/>, so each one acts on the span
+    /// the author clicked rather than on whatever the selection has become by the time they pick.
+    /// Opening the menu moves focus, which is enough to lose a selection.</para>
+    /// </summary>
+    private Task OnContextMenuAsync(ProseEditor.ContextTarget target)
+    {
+        contextAt = (target.X, target.Y);
+
+        var items = new List<ContextMenu.Item>();
+
+        if (target.HasSelection)
+        {
+            items.Add(new ContextMenu.Item(
+                "Talk about this", () => TalkAboutAsync(target),
+                Hint: "asks, or proposes a change"));
+            items.Add(new ContextMenu.Item(
+                "Read aloud", () => ReadTextAsync(target.SelectedText!)));
+        }
+
+        if (target.OnEntity)
+        {
+            if (items.Count > 0) items.Add(ContextMenu.Item.Separator());
+            items.Add(new ContextMenu.Item(
+                $"Edit link — {Shorten(target.EntityText, 28)}…",
+                () => EditEntityAsync(target)));
+            items.Add(new ContextMenu.Item("Remove link", RemoveEntityAsync));
+            items.Add(new ContextMenu.Item(
+                "Open in the wiki", () => OpenEntityAsync(target),
+                Hint: "also: click the chip"));
+        }
+        else if (target.HasSelection)
+        {
+            items.Add(new ContextMenu.Item(
+                "Link to an entity…", AddEntityAsync,
+                Disabled: mode != EditorMode.Display,
+                Hint: mode == EditorMode.Display ? null : "Display mode only"));
+        }
+
+        if (items.Count > 0) items.Add(ContextMenu.Item.Separator());
+        items.Add(new ContextMenu.Item(
+            "Read the whole beat aloud", () => ReadTextAsync(draft),
+            Disabled: string.IsNullOrWhiteSpace(draft)));
+
+        contextItems = items;
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
+    private Task TalkAboutAsync(ProseEditor.ContextTarget target)
+    {
+        if (target.Span is { } span) OnDiscussRequested(span);
+        return Task.CompletedTask;
+    }
+
+    private Task EditEntityAsync(ProseEditor.ContextTarget target)
+        => OnEntityChipContextMenu(
+            new ProseEditor.EntityChip(target.EntityGuid!, target.EntityRepo ?? "", target.EntityText ?? ""));
+
+    private Task OpenEntityAsync(ProseEditor.ContextTarget target)
+        => OnEntityChipClick(
+            new ProseEditor.EntityChip(target.EntityGuid!, target.EntityRepo ?? "", ""));
+
+    /// <summary>Speak an explicit passage — the menu already knows what was selected, so unlike
+    /// the toolbar button this never has to ask the editor again.</summary>
+    private async Task ReadTextAsync(string text)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return;
+
+        activity = "Speaking…";
+        try
+        {
+            var audio = await ReadAloud.SpeakAsync(text);
+            speaking = true;
+            await JsVoidAsync("proseSpeech.play", audio.Base64, audio.MimeType);
+            activity = audio.Free ? "Idle" : $"Read aloud in the book voice ({audio.Engine}) — this one cost characters.";
+        }
+        catch (Exception ex)
+        {
+            speaking = false;
+            tagNote = ex.Message;
+            activity = "Idle";
+        }
+    }
+
+    private static string Shorten(string? s, int max)
+    {
+        s = (s ?? "").Replace('\n', ' ').Trim();
+        return s.Length <= max ? s : s[..max] + "…";
+    }
+
     private async Task AddEntityAsync()
     {
         if (editor is null) return;
@@ -663,6 +793,15 @@
     public async ValueTask DisposeAsync()
     {
         if (autosave is not null) await autosave.DisposeAsync();
+
+        // The Ctrl+F listener lives on the document, so it outlives this component unless it is
+        // taken down here.
+        if (shellRef is not null)
+        {
+            await JsVoidAsync("proseHotkeys.unregisterShell");
+            shellRef.Dispose();
+            shellRef = null;
+        }
 
         // Last chance to keep the open beat. Best-effort: circuit teardown is not guaranteed to
         // run to completion, which is why the periodic autosave above is the real guarantee and

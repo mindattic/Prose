@@ -132,6 +132,56 @@ window.proseEditor = (() => {
         return range.cloneContents();
     }
 
+    /** The entity chip at or above a node, or null. */
+    function chipAt(node) {
+        while (node && node !== host) {
+            if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains('ent')) return node;
+            node = node.parentNode;
+        }
+        return null;
+    }
+
+    /**
+     * Where to put a keyboard-invoked menu. The caret's own rectangle when there is one — a menu
+     * that opens in the corner of the screen is technically keyboard-accessible and useless.
+     */
+    function caretPoint() {
+        const sel = window.getSelection();
+        if (sel && sel.rangeCount > 0) {
+            const rects = sel.getRangeAt(0).getClientRects();
+            const r = rects.length > 0 ? rects[rects.length - 1] : null;
+            if (r) return { x: r.left, y: r.bottom };
+        }
+        const h = host ? host.getBoundingClientRect() : { left: 0, top: 0 };
+        return { x: h.left + 8, y: h.top + 8 };
+    }
+
+    /**
+     * Tell the shell what was right-clicked and where, so it can render the menu.
+     *
+     * Everything the menu needs is gathered HERE, at the moment of the click, and not asked for
+     * again when an item is chosen: opening the menu moves focus, and a selection read back
+     * afterwards is not reliably the one the author right-clicked.
+     */
+    function openContextMenu(target, x, y) {
+        const chip = chipAt(target);
+        if (chip) contextTarget = chip;
+
+        const span = selectionSpan();
+
+        dotnet.invokeMethodAsync('OnContextMenu', {
+            x: Math.round(x),
+            y: Math.round(y),
+            entityGuid: chip ? (chip.getAttribute('data-guid') || '') : null,
+            entityRepo: chip ? (chip.getAttribute('data-repo') || '') : null,
+            entityText: chip ? (chip.textContent || '') : null,
+            quote: span ? span.quote : null,
+            prefix: span ? span.prefix : null,
+            suffix: span ? span.suffix : null,
+            selectedText: span ? window.getSelection().toString() : null,
+        });
+    }
+
     return {
         init(element, dotNetRef) {
             host = element;
@@ -143,27 +193,21 @@ window.proseEditor = (() => {
 
             host.addEventListener('input', notifyChanged);
 
+            // The context menu. AreDefaultContextMenusEnabled is false in the Writer host, so this
+            // is the ONLY menu the editor has — there is no browser one behind it to fall back on.
             host.addEventListener('contextmenu', e => {
-                let node = e.target;
-                while (node && node !== host) {
-                    if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains('ent')) {
-                        e.preventDefault();
-                        contextTarget = node;
-                        dotnet.invokeMethodAsync('OnEntityContextMenu',
-                            node.getAttribute('data-guid') || '',
-                            node.getAttribute('data-repo') || '',
-                            node.textContent || '');
-                        return;
-                    }
-                    node = node.parentNode;
-                }
-
-                // Not a chip. A right-click over a selection is the author asking about that
-                // passage; a right-click over nothing is left to the browser.
-                const span = selectionSpan();
-                if (!span) return;
                 e.preventDefault();
-                dotnet.invokeMethodAsync('OnDiscussRequested', span.quote, span.prefix, span.suffix);
+                openContextMenu(e.target, e.clientX, e.clientY);
+            });
+
+            // Shift+F10 and the Menu key are how a keyboard reaches a context menu, and a voice
+            // user cannot chase a mouse menu at all. Same payload, positioned at the caret.
+            host.addEventListener('keydown', e => {
+                const wanted = e.key === 'ContextMenu' || (e.shiftKey && e.key === 'F10');
+                if (!wanted) return;
+                e.preventDefault();
+                const at = caretPoint();
+                openContextMenu(document.activeElement, at.x, at.y);
             });
 
             // Left-click an entity chip to open its wiki page in the default browser.
@@ -607,7 +651,12 @@ window.proseMic = (() => {
 window.proseHotkeys = (() => {
     const PTT = 'F4';
 
+    // Two consumers, because the two keys belong to two components: push-to-talk is the Discuss
+    // panel's (it owns the microphone state) and Ctrl+F is the shell's (it owns which book is
+    // open). One shared registration would mean one of them routing the other's key through
+    // itself, which is how a panel ends up knowing about Find.
     let dotnet = null;
+    let shell = null;
     let held = false;
 
     function release(reason) {
@@ -632,6 +681,14 @@ window.proseHotkeys = (() => {
         release('released');
     }
 
+    // Ctrl+F. The browser's own find was taken away with AreBrowserAcceleratorKeysEnabled, and
+    // nothing replaced it — so the key reaches the page, and the page owes the author a Find.
+    function onFind(e) {
+        if (!(e.ctrlKey || e.metaKey) || e.key.toLowerCase() !== 'f' || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        if (shell) shell.invokeMethodAsync('OpenFind').catch(() => { });
+    }
+
     // Alt-tabbing away mid-sentence never delivers the keyup, and the microphone would stay open
     // until the author noticed the indicator. Treat losing the window as letting go.
     function onBlur() { release('lost-focus'); }
@@ -652,6 +709,19 @@ window.proseHotkeys = (() => {
             window.removeEventListener('blur', onBlur);
             dotnet = null;
             held = false;
+            return true;
+        },
+
+        registerShell(ref) {
+            if (shell) return true;
+            shell = ref;
+            document.addEventListener('keydown', onFind, true);
+            return true;
+        },
+
+        unregisterShell() {
+            document.removeEventListener('keydown', onFind, true);
+            shell = null;
             return true;
         },
 
