@@ -252,6 +252,21 @@ Output STRICT JSON, no fences, no commentary:
     public sealed record AttributionMismatch(int Number, string Chapter, string Summary, string Name, int MatchesBeatNumber);
 
     /// <summary>
+    /// The audit's findings together with what it was able to inspect.
+    ///
+    /// <para><see cref="BeatsExamined"/> counts beats carrying an EventSummary — the only ones this
+    /// check can say anything about. When it is 0 the audit has proved nothing, and an empty
+    /// <see cref="Mismatches"/> means "could not look", not "all correct". Reporting the coverage is
+    /// what makes the difference visible to the caller.</para>
+    /// </summary>
+    public sealed record AttributionAuditResult(
+        List<AttributionMismatch> Mismatches, int BeatsExamined, int BeatsWithProse)
+    {
+        /// <summary>True when no beat carried a summary, so the check could not run at all.</summary>
+        public bool CouldNotLook => BeatsExamined == 0;
+    }
+
+    /// <summary>
     /// Scan a book's ALREADY-STORED event summaries for the shift this service now guards against
     /// at write time. The guard only protects new writes; every summary written before it is
     /// stamped EventSummaryHash == TextHash, so the hash gate will never re-derive it, and a wrong
@@ -261,15 +276,25 @@ Output STRICT JSON, no fences, no commentary:
     /// the scope a reader judges continuity in. Reports which OTHER beat each stray name actually
     /// belongs to, which is what makes a shift legible rather than just "suspicious".</para>
     /// </summary>
-    public async Task<List<AttributionMismatch>> AuditAttributionAsync(
+    public async Task<AttributionAuditResult> AuditAttributionAsync(
         string slugOrCode, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(
             n => n.Slug == slugOrCode || (n.NodeCode != null && n.NodeCode.ToUpper() == slugOrCode.ToUpper()), ct)
             ?? throw new InvalidOperationException($"Node not found: {slugOrCode}");
 
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
+
+        // How many beats this audit could even look at. Without it, a book whose beats carry no
+        // EventSummary at all produces an empty row set and the audit reports "no misattributed
+        // summaries found" — indistinguishable from a clean bill of health. Zero findings must
+        // never be allowed to mean "could not look".
+        var beatsWithProse = await (
+            from bn in db.BeatNodes.AsNoTracking()
+            join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
+            where searchIds.Contains(bn.NodeId) && b.Text != null && b.Text != ""
+            select b.Id).CountAsync(ct);
         var rows = await (
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
@@ -328,7 +353,7 @@ Output STRICT JSON, no fences, no commentary:
                 }
             }
         }
-        return found;
+        return new AttributionAuditResult(found, rows.Count, beatsWithProse);
     }
 
     /// <summary>

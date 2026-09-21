@@ -79,15 +79,32 @@ public static class AuditEventSummariesCli
         }
 
         var svc = services.GetRequiredService<BeatEventSummaryService>();
-        var mismatches = await svc.AuditAttributionAsync(slug);
+        var result = await svc.AuditAttributionAsync(slug);
+        var mismatches = result.Mismatches;
+
+        // An audit that inspected nothing has proved nothing. Saying so is the whole point: the
+        // previous wording ("no misattributed summaries found") read identically whether the book
+        // was clean or whether not one beat carried a summary to check.
+        if (result.CouldNotLook)
+        {
+            Console.WriteLine($"[audit-event-summaries] {slug}: COULD NOT LOOK — 0 of {result.BeatsWithProse} " +
+                              "beats carry an EventSummary, so nothing was checked. This is not a pass.");
+            Console.WriteLine("Generate them first: prose --generate-event-list --slug " + slug);
+            return 2;
+        }
 
         if (mismatches.Count == 0)
         {
-            Console.WriteLine($"[audit-event-summaries] {slug}: no misattributed summaries found.");
+            Console.WriteLine($"[audit-event-summaries] {slug}: no misattributed summaries found " +
+                              $"(examined {result.BeatsExamined} of {result.BeatsWithProse} beats).");
+            if (result.BeatsExamined < result.BeatsWithProse)
+                Console.WriteLine($"  NOTE: {result.BeatsWithProse - result.BeatsExamined} beat(s) carry no " +
+                                  "EventSummary and were not checked.");
             return 0;
         }
 
-        Console.WriteLine($"[audit-event-summaries] {slug}: {mismatches.Count} summary/beat mismatch(es)\n");
+        Console.WriteLine($"[audit-event-summaries] {slug}: {mismatches.Count} summary/beat mismatch(es) " +
+                          $"across {result.BeatsExamined} of {result.BeatsWithProse} beats\n");
         foreach (var m in mismatches.OrderBy(m => m.Number))
         {
             Console.WriteLine($"  beat #{m.Number}  ({m.Chapter})");
