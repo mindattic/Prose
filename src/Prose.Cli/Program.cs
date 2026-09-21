@@ -3043,6 +3043,16 @@ if (args.Contains("--audit-event-summaries"))
     return;
 }
 
+// prose --derive-scenes --slug <slug|id> [--apply] [--gap-minutes N]
+// Free and deterministic: group a chapter's existing beats into scenes by place change and time
+// gap. Derives structure only — no beat is split, merged, reworded or reordered. Dry run unless
+// --apply is passed.
+if (args.Contains("--derive-scenes"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("DeriveScenesCli", args);
+    return;
+}
+
 // prose --edit-distribution [--slug <slug>] [--top N] [--json]
 // RFC 0009 Phase 0: Beat.Version histogram per book + corpus-wide, and the most-rewritten beats.
 // Read-only, free. The baseline that must not rise once the autonomous rewriters are deleted.

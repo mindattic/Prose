@@ -1278,6 +1278,10 @@ public static class ServiceCollectionExtensions
         // reaches the database and serves both the editor and every forwarded command, could not
         // construct them at all. Nothing routes through BeatWriteOrchestrator yet (that is the
         // per-book flag, still to come); this is what makes routing to it possible.
+        // Derives the scene layer from beats that already exist. Deterministic and free, so it can
+        // be re-run on any book in any universe without cost or drift.
+        services.AddSingleton<SceneDerivationService>();
+
         services.AddSingleton<Prose.Core.Composition.Ledger.StoryStateQuery>();
         services.AddSingleton<Prose.Core.Composition.Window.SceneWindowService>();
         services.AddSingleton<Prose.Core.Composition.Obligations.SelfReportedPlantService>();
