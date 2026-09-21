@@ -138,17 +138,63 @@ public static class CompositionCli
         // universe is wired — kept byte-identical deliberately, this isn't the thing under test.
         const string universeLine = "You are writing a beat in a literary cyberpunk scene set in GLMZ (Great Lakes Metropolitan Zone, 2226).";
 
+        // --beat <guid>: the beat being (re)written. With it the brief can say where to STOP,
+        // which names must appear, and what the beat is actually about; without it the brief has
+        // only the goal. Regenerating a beat that exists is also what makes an A/B possible.
+        Guid.TryParse(Flag(args, "--beat"), out var briefBeatId);
+        var showPrompt = args.Contains("--show-prompt");
+
         var orchestrator = services.GetRequiredService<BeatWriteOrchestrator>();
         Console.WriteLine("[preview-generate] Calling the LLM once — this is a real, billed call. Nothing will be saved.");
         var result = await orchestrator.PreviewGenerateAsync(
-            nodeId.Value, afterBeatId, characterIds, asOf, pov, location, goal, universeLine, size);
+            nodeId.Value, afterBeatId, characterIds, asOf, pov, location, goal, universeLine, size,
+            briefBeatId: briefBeatId == Guid.Empty ? null : briefBeatId);
 
         Console.WriteLine();
         Console.WriteLine("── PROMPT BLOCK LENGTHS (chars) ──");
-        foreach (var (k, v) in result.Prompt.BlockLengths) Console.WriteLine($"  {k,-12} {v}");
+        var total = result.Prompt.BlockLengths.Values.Sum();
+        foreach (var (k, v) in result.Prompt.BlockLengths)
+            Console.WriteLine($"  {k,-12} {v,7}  {(total > 0 ? v * 100.0 / total : 0),5:F1}%");
+        Console.WriteLine($"  {"TOTAL",-12} {total,7}");
+
+        // The contract, and whether the draft honoured it. This is the whole point of the change:
+        // the previous shape could not tell you that the instruction was 0.5% of the prompt, that
+        // nothing forbade inventing a name, or that no gate ran.
         Console.WriteLine();
-        Console.WriteLine("── FULL USER PROMPT SENT TO THE MODEL ──");
-        Console.WriteLine(result.Prompt.User);
+        Console.WriteLine("── CONTRACT ──");
+        if (result.Brief is null)
+        {
+            Console.WriteLine("  NO BRIEF — bare goal line only, and therefore NO GATE. This is the fallback path.");
+        }
+        else
+        {
+            Console.WriteLine($"  target words   : {(result.TargetWords > 0 ? result.TargetWords.ToString() : "none (120-word floor only)")}");
+            Console.WriteLine($"  stop before    : {result.Brief.StopBefore ?? (result.Brief.ClosesChapter ? "(closes the chapter)" : "(nothing follows)")}");
+            Console.WriteLine($"  must appear    : {(result.Brief.MustInclude.Count == 0 ? "—" : string.Join(", ", result.Brief.MustInclude))}");
+            Console.WriteLine($"  voice exemplars: {result.VoiceExemplars}{(result.VoiceExemplars == 0 ? "  ← NO sample of how this book sounds" : "")}");
+            Console.WriteLine($"  words written  : {result.GeneratedText.Split([' ', '\n', '\t'], StringSplitOptions.RemoveEmptyEntries).Length}");
+
+            if (result.RemovedArtefacts.Count > 0)
+                Console.WriteLine($"  stripped       : {string.Join("; ", result.RemovedArtefacts)}  ← model ignored OUTPUT-prose-only");
+
+            var gate = result.Gate;
+            if (gate is null) Console.WriteLine("  gate           : not run");
+            else if (gate.Passed && gate.Warnings.Count == 0) Console.WriteLine("  gate           : PASSED");
+            else
+            {
+                Console.WriteLine($"  gate           : {(gate.Passed ? "passed with warnings" : "FAILED")}");
+                foreach (var f in gate.Failures) Console.WriteLine($"      FAIL  {f}");
+                foreach (var w in gate.Warnings) Console.WriteLine($"      warn  {w}");
+            }
+        }
+
+        if (showPrompt)
+        {
+            Console.WriteLine();
+            Console.WriteLine("── FULL USER PROMPT SENT TO THE MODEL ──");
+            Console.WriteLine(result.Prompt.User);
+        }
+
         Console.WriteLine();
         Console.WriteLine("── GENERATED TEXT (NOT SAVED) ──");
         Console.WriteLine(result.GeneratedText);

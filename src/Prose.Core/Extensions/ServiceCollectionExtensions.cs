@@ -1282,6 +1282,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Composition.Window.SceneWindowService>();
         services.AddSingleton<Prose.Core.Composition.Obligations.SelfReportedPlantService>();
         services.AddSingleton<Prose.Core.Composition.Obligations.OutlineSpineService>();
+        services.AddSingleton<Prose.Core.Composition.Prompt.VoiceAnchorService>();
         services.AddSingleton<Prose.Core.Composition.Orchestration.BeatWriteOrchestrator>();
 
         // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's

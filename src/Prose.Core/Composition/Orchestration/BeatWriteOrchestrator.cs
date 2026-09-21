@@ -5,14 +5,47 @@ using Prose.Core.Interfaces;
 using Prose.Core.Services;
 using Prose.Core.Services.Contradiction;
 using Prose.Core.Composition.Ledger;
+using Prose.Core.Composition.Obligations;
 using Prose.Core.Composition.Prompt;
 using Prose.Core.Composition.Window;
 
 namespace Prose.Core.Composition.Orchestration;
 
-/// <summary>Result of a preview generation — deliberately carries the assembled prompt back so a
-/// caller (or a human) can inspect exactly what the model saw, not just what it produced.</summary>
-public sealed record PreviewResult(AssembledPrompt Prompt, string GeneratedText);
+/// <summary>
+/// Result of a preview generation — deliberately carries the assembled prompt back so a caller
+/// (or a human) can inspect exactly what the model saw, not just what it produced.
+///
+/// <para>The properties below exist so a run is auditable without a second pass over it: whether
+/// a brief was built at all, what the free gate said about the draft, what the post-processor had
+/// to strip, and whether the voice tier actually returned exemplars. That last one is not
+/// decoration — v3's style anchor returned zero hits for the entire history of the project without
+/// anyone noticing, because nothing counted.</para>
+/// </summary>
+public sealed record PreviewResult(AssembledPrompt Prompt, string GeneratedText)
+{
+    /// <summary>The contract this beat was written to. Null means the prompt fell back to a bare
+    /// goal line — the shape that produced word salad — and that no gate ran.</summary>
+    public BeatBrief? Brief { get; init; }
+
+    /// <summary>The free deterministic checks: heading residue, length band, required names,
+    /// and capitalised words absent from canon. Null when there was no brief to check against.</summary>
+    public DraftGate.Report? Gate { get; init; }
+
+    /// <summary>Artefacts the post-processor removed (a leading heading, a trailing note).
+    /// Non-empty means the model ignored OUTPUT-prose-only and was cleaned up after.</summary>
+    public IReadOnlyList<string> RemovedArtefacts { get; init; } = [];
+
+    /// <summary>How many of the author's own beats were shown as voice exemplars. Zero means the
+    /// draft was written with no sample of how this book sounds.</summary>
+    public int VoiceExemplars { get; init; }
+
+    /// <summary>The length the brief asked for, in words. Zero means it asked for none.</summary>
+    public int TargetWords { get; init; }
+
+    /// <summary>The model's reply before post-processing, kept so a stripped artefact can be
+    /// seen rather than inferred.</summary>
+    public string RawText { get; init; } = "";
+}
 
 /// <summary>One declared state change the writer reported about the beat it just wrote.</summary>
 public sealed record DeclaredDelta(Guid EntityId, string EntityName, string Aspect, string Value);
@@ -51,11 +84,19 @@ public sealed class BeatWriteOrchestrator
     private readonly WorldStateLedger worldState;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly NarrativeContradictionChecker gate;
+    private readonly BeatBriefBuilder? briefBuilder;
+    private readonly BeatGranularityService? granularity;
+    private readonly VoiceAnchorService? voice;
+    private readonly OutlineSpineService? outlineSpine;
 
     public BeatWriteOrchestrator(
         SceneWindowService window, StoryStateQuery storyState, ILlmService llm,
         NodeWorkbenchService workbench, WorldStateLedger worldState, IDbContextFactory<ProseDbContext> dbFactory,
-        NarrativeContradictionChecker gate)
+        NarrativeContradictionChecker gate,
+        BeatBriefBuilder? briefBuilder = null,
+        BeatGranularityService? granularity = null,
+        VoiceAnchorService? voice = null,
+        OutlineSpineService? outlineSpine = null)
     {
         this.window = window;
         this.storyState = storyState;
@@ -64,8 +105,47 @@ public sealed class BeatWriteOrchestrator
         this.worldState = worldState;
         this.dbFactory = dbFactory;
         this.gate = gate;
+        this.briefBuilder = briefBuilder;
+        this.granularity = granularity;
+        this.voice = voice;
+        this.outlineSpine = outlineSpine;
     }
 
+    /// <summary>
+    /// How many words this book's beats actually run, so the brief can say so and
+    /// <see cref="DraftGate"/>'s 0.5x-1.6x band becomes live.
+    ///
+    /// <para>Uses the book's own measured average rather than
+    /// <see cref="BeatGranularityService.TargetWordsRecommended"/>: the recommendation describes
+    /// the 4,000-7,500-character scene this project considers ideal, and several books — BCODA
+    /// among them, at ~1,621 characters a beat — are not written that way. Asking for a 950-word
+    /// scene where every neighbouring beat runs 300 would produce something correct by the band and
+    /// wrong for the book. Whether those beats SHOULD be scenes is a question about the book, not
+    /// something to settle inside a prompt builder.</para>
+    ///
+    /// <para>Zero when the measurement is unavailable, which leaves the brief silent about length
+    /// and the gate on its 120-word floor — the pre-existing behaviour.</para>
+    /// </summary>
+    private async Task<int> ResolveTargetWordsAsync(Guid bookNodeId, CancellationToken ct)
+    {
+        if (granularity == null) return 0;
+        try
+        {
+            var report = await granularity.AnalyzeByIdAsync(bookNodeId, ct);
+            if (report is null || report.AvgChars <= 0) return 0;
+            // ~5 characters per word, the same divisor BeatGranularityService uses for its own
+            // word-count fallback.
+            return (int)Math.Round(report.AvgChars / 5.0);
+        }
+        catch (OperationCanceledException) { throw; }
+        catch { return 0; }
+    }
+
+    /// <param name="briefBeatId">The beat being written, when it already exists (a regeneration or
+    /// an A/B run). Supplying it is what lets <see cref="BeatBriefBuilder"/> fill in STOP BEFORE
+    /// from the following beat, the POV from the outline map, and the names that must appear — so
+    /// the writer is told where to stop instead of being left to run on. Omit for a genuinely new
+    /// beat; the brief is then built from the goal alone.</param>
     public async Task<PreviewResult> PreviewGenerateAsync(
         Guid bookNodeId,
         Guid afterBeatId,
@@ -76,14 +156,77 @@ public sealed class BeatWriteOrchestrator
         string beatGoal,
         string universeLine,
         int windowSizeBeats = 15,
-        CancellationToken ct = default)
+        CancellationToken ct = default,
+        Guid? briefBeatId = null)
     {
         var win = await this.window.GetWindowAsync(bookNodeId, afterBeatId, windowSizeBeats, ct);
         var facts = await storyState.GetOnScreenFactsForEntitiesAsync(bookNodeId, charactersInScene, asOfStoryPosition, ct);
-        var prompt = PromptAssembler.Assemble(universeLine, win, facts, povCharacter, location, beatGoal);
 
-        var generated = await llm.GenerateAsync(prompt.System, prompt.User, temperature: 0.8, maxTokens: 1200, ct: ct);
-        return new PreviewResult(prompt, generated);
+        var targetWords = await ResolveTargetWordsAsync(bookNodeId, ct);
+
+        // THE BRIEF. Everything the demo produced that the author did not ask for — an invented
+        // character, an invented vehicle, a markdown heading, three times the length — is forbidden
+        // by a line this object renders. It was simply never built on this path.
+        BeatBrief? brief = null;
+        if (briefBuilder != null && !string.IsNullOrWhiteSpace(beatGoal))
+        {
+            try
+            {
+                brief = briefBeatId is Guid bid && bid != Guid.Empty
+                    ? await briefBuilder.BuildAsync(bid, beatGoal, subtext: null, targetWords, ct)
+                    : new BeatBrief { Goal = beatGoal, TargetWords = targetWords, Pov = string.IsNullOrWhiteSpace(povCharacter) ? null : povCharacter };
+            }
+            catch (OperationCanceledException) { throw; }
+            // A brief built from the goal alone is still a brief, and still carries NO NEW NAMES /
+            // OUTPUT-prose-only. Never let bookkeeping stop the write.
+            catch { brief = new BeatBrief { Goal = beatGoal, TargetWords = targetWords, Pov = string.IsNullOrWhiteSpace(povCharacter) ? null : povCharacter }; }
+        }
+
+        // Voice: the author's own nearby prose. Retrieval is keyed on what is being written plus
+        // the tail of the window, so exemplars match this moment rather than the book's average.
+        var voiceQuery = string.Join("\n\n", new[] { beatGoal, win.Count > 0 ? win[^1].Text : "" }
+            .Where(s => !string.IsNullOrWhiteSpace(s)));
+        var anchor = voice == null ? VoiceAnchor.None : await voice.BuildAsync(bookNodeId, voiceQuery, 3, ct);
+
+        var spine = outlineSpine == null
+            ? null
+            : await outlineSpine.GetSliceAsync(bookNodeId, briefBeatId ?? afterBeatId, 3, ct);
+
+        var prompt = PromptAssembler.Assemble(
+            universeLine, win, facts, povCharacter, location, beatGoal,
+            brief, anchor.Block, spine?.Block ?? "");
+
+        // maxTokens followed the old flat 1200 regardless of what was asked for, which silently
+        // truncated any beat longer than that. Scale it to the target, with the same floor/ceiling
+        // BeatGeneratorService uses.
+        var maxTokens = targetWords > 0 ? Math.Clamp(targetWords * 3, 2048, 8192) : 4096;
+        var temperature = brief?.Temperature ?? 0.8;
+
+        var raw = await llm.GenerateAsync(prompt.System, prompt.User, temperature, maxTokens, ct: ct);
+
+        // Deterministic clean-up before anything judges it: strip a leading heading or "Beat:"
+        // label, trailing meta commentary after a ---, normalise whitespace.
+        var cleaned = DraftPostProcessor.Clean(raw);
+
+        // The free half of the gate. This path had none at all: ProseWriterRouter treats a null
+        // brief as the "legacy / preview" path and skips the gate entirely, so composition writes
+        // were ungated by construction rather than by choice.
+        var knownNames = facts.EntityStateFacts.Select(f => f.EntityName)
+            .Concat(facts.ContinuityFacts.Select(f => f.EntityName))
+            .Where(n => !string.IsNullOrWhiteSpace(n))
+            .Distinct(StringComparer.Ordinal)
+            .ToList();
+        var report = brief == null ? null : DraftGate.Check(cleaned.Text, brief, knownNames);
+
+        return new PreviewResult(prompt, cleaned.Text)
+        {
+            Brief = brief,
+            Gate = report,
+            RemovedArtefacts = cleaned.Removed,
+            VoiceExemplars = anchor.ExemplarCount,
+            TargetWords = targetWords,
+            RawText = raw,
+        };
     }
 
     /// <summary>
