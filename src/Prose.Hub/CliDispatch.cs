@@ -247,7 +247,14 @@ public static class CliDispatch
         }
         catch (Exception ex)
         {
-            errWriter.WriteLine($"[cli-invoke] invoke failed: {ex.Message}");
+            // EF's DbUpdateException.Message is always the generic "An error occurred while
+            // saving the entity changes. See the inner exception for details." — the actual
+            // constraint/column detail lives in InnerException (often nested one level deeper
+            // for a wrapped SqlException). Surface both so a CLI caller isn't stuck guessing.
+            var detail = ex.InnerException?.InnerException?.Message ?? ex.InnerException?.Message;
+            errWriter.WriteLine(detail != null
+                ? $"[cli-invoke] invoke failed: {ex.Message} -- {detail}"
+                : $"[cli-invoke] invoke failed: {ex.Message}");
             exitCode = 1;
         }
         finally
