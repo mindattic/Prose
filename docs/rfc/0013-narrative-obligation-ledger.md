@@ -527,3 +527,32 @@ obligations by importance; per-universe rulebooks. Findings describe, never inst
      fixture with an orthogonal design axis as though it were one. A real one is cheap to build:
      competent, readable prose that closes everything it opens in-scene and foregrounds nothing it
      does not use — Ch2 is the template, and it needs to be ~20 beats, not one.
+- 2026-09-17 (**GCOBN built and scanned — the purpose-built obligation negative control §6 called
+  for — and it is the cleanest, worst result yet**) — Built `gutenberg-calibration-obligation-negative-control-synthetic-01a0af36`
+  (NodeCode `GCOBN`): 20 beats, one ordinary day for a retired man, every beat hand-written to close
+  whatever it raises in-scene ("nothing decided and nothing owed on either end", "that was the whole
+  of their acquaintance", "the ordinary amounts he expected") and to introduce no object with more
+  weight than the sentence describing it. Rescanned (~\$0.2): `scanned 20 of 20 — opened 25, advanced
+  32, closed 1, ungrounded discarded 0`.
+
+  **25 rows from 20 beats engineered to owe nothing.** Reading every row (the discipline that has
+  paid every time this week): all 25 are the same failure shape. The extractor is not finding plot
+  debts — it is converting *any* described object or *explicit closure sentence* into an interpretive
+  "why does this matter" question. It opened a row asking why the room's temperature "signifies"
+  neutrality, why the bench "will come to represent" something because it is empty, why Walter's
+  never-asked name for the register clerk "signifies about Walter's life" — and, most tellingly, it
+  opened rows *on the closures themselves*: `"nothing decided and nothing owed on either end"` became
+  "whether this non-decision will have consequences"; `"that was the whole of their acquaintance"`
+  became "whether she will return or represent a crack in his isolation." The one row it Closed is
+  itself the same artifact wearing the other hat: it opened *and closed* a row on `"nothing about it
+  was different from any other Tuesday's"` — treating a sentence that denies anything happened as
+  both a promise and its own payoff.
+
+  **This is not a recall problem and no amount of explicit in-text closure defeats it.** Every
+  sentence in GCOBN whose entire grammatical job was to foreclose a question was read as proof one
+  was open. The extractor has no operating notion of *salience* (RFC 0013 §8g's Chekhov correction —
+  "do not make promises," not "do not describe objects") — it is scoring textual attention itself as
+  the plant. On this fixture the false-positive rate is effectively 24/25 (96%), an order of magnitude
+  past the GCTOC §6a Dickens texture-false-plant rate (~7/27, ~26%) and two past the <1% bar. GCOBN
+  is now the calibration fixture for this number — GCNEG's borrowed 1/3 valid beat is retired from
+  this role.

@@ -554,12 +554,17 @@ public static class ObligationCli
 
     private static async Task<Guid> BookRootAsync(ProseDbContext db, Guid nodeId)
     {
+        // Stops at the nearest ancestor whose Kind == "book" (RFC 0013 §2: book-scoped).
+        // Falls back to the topmost ancestor only if no "book" node is found in the chain —
+        // matches GrepBeatsCli.BookTitleFor's walk so every command scopes the same way.
         var walk = nodeId;
         for (var depth = 0; depth < 10; depth++)
         {
-            var parent = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == walk).Select(n => n.ParentNodeId).FirstOrDefaultAsync();
-            if (parent == null) return walk;
-            walk = parent.Value;
+            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == walk).Select(n => new { n.Kind, n.ParentNodeId }).FirstOrDefaultAsync();
+            if (node == null) return walk;
+            if (node.Kind == "book") return walk;
+            if (node.ParentNodeId == null) return walk;
+            walk = node.ParentNodeId.Value;
         }
         return walk;
     }
