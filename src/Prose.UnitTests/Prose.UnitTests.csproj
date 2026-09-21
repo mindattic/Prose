@@ -32,6 +32,12 @@
          verified (see DataIntegrityToolsRegistrationTests) — same "Exe reference is fine, entry
          point ignored" rationale as Cli above. -->
     <ProjectReference Include="..\Prose.Mcp\Prose.Mcp.csproj" />
+    <!-- Hub.Contracts carries DispatchResolution: the rules by which a forwarded CLI command
+         finds its handler. CliWiringTests proves every command string in Prose.Cli's dispatch
+         chain resolves, and it has to do that with the Hub's OWN rules — a test carrying a copy
+         of them passes while the Hub answers unknown_handler_class. Contracts is deliberately
+         dependency-free, so this reference costs the test project nothing. -->
+    <ProjectReference Include="..\Prose.Hub.Contracts\Prose.Hub.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

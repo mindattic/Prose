@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
+using Prose.Hub.Contracts;
 
 namespace Prose.Hub;
 
@@ -62,6 +63,10 @@ public static class CliDispatch
     // same lookup shape the uncached version used.
     private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, Type?> HandlerTypeCache = new();
 
+    // The resolution rules themselves live in Prose.Hub.Contracts.DispatchResolution so the unit
+    // tests can prove every command string in Prose.Cli's dispatch chain actually resolves, using
+    // THIS code rather than a copy of it. A test with its own copy of these rules passes while the
+    // Hub returns unknown_handler_class — which is the exact failure the test exists to catch.
     private static Type? ResolveHandlerType(string handlerClass) =>
         // A request whose body omits or misspells HandlerClass deserialises it as null, and
         // ConcurrentDictionary.GetOrAdd(null, …) throws ArgumentNullException — which surfaced as
@@ -70,9 +75,7 @@ public static class CliDispatch
         // (Found 2026-09-12 by `prose --logs`, from a malformed call this session made.)
         string.IsNullOrWhiteSpace(handlerClass) ? null :
         HandlerTypeCache.GetOrAdd(handlerClass, static name =>
-            AppDomain.CurrentDomain.GetAssemblies()
-                .SelectMany(a => { try { return a.GetTypes(); } catch { return []; } })
-                .FirstOrDefault(t => t.Name == name && t.Namespace == "Prose.Cli"));
+            DispatchResolution.ResolveCliHandlerType(AppDomain.CurrentDomain.GetAssemblies(), name));
 
     public static async Task<IResult> InvokeAsync(InvokeRequest req, IServiceProvider sp)
     {
@@ -162,45 +165,30 @@ public static class CliDispatch
         if (type == null)
             return new ExecuteOutcome("unknown_handler_class", new { error = "unknown_handler_class", req.HandlerClass }, null);
 
-        var candidateNames = string.IsNullOrWhiteSpace(req.Method)
-            ? ["RunAsync", "Run"]
-            : new[] { req.Method };
-        var methods = type.GetMethods(BindingFlags.Public | BindingFlags.Static)
-            .Where(m => candidateNames.Contains(m.Name))
-            .ToList();
-        if (methods.Count == 0)
-            return new ExecuteOutcome("no_run_method", new { error = "no_run_method", req.HandlerClass, req.Method }, null);
+        // Method selection and parameter binding are both DispatchResolution's rules — handlers
+        // vary in parameter shape beyond the common (string[] args, IServiceProvider services)
+        // case: some take the two in the opposite order, some only one, one (PublishManuscriptCli)
+        // takes a third enum. Matching by parameter TYPE rather than position or count covers all
+        // of them with one dispatch path instead of a special case per handler.
+        if (!DispatchResolution.TryBindCli(type, req.Method, req.ExtraParamValue != null, out var binding, out var bindError))
+            return new ExecuteOutcome(bindError, new { error = bindError, req.HandlerClass, req.Method }, null);
 
-        // Handlers vary in parameter shape beyond the ~150-command common case
-        // (string[] args, IServiceProvider services): some take the two params in the opposite
-        // order, some take only one of the two, one (PublishManuscriptCli) takes a third enum
-        // parameter - found live while migrating Stage C rather than assumed. Matching by
-        // parameter TYPE (not position/count) covers all of them with one dispatch path instead
-        // of a special case per handler.
-        var method = methods.FirstOrDefault(m => m.GetParameters().Length <= 3);
-        if (method == null)
-            return new ExecuteOutcome("unsupported_signature", new { error = "unsupported_signature", req.HandlerClass, req.Method }, null);
-
+        var method = binding!.Method;
         var callParams = method.GetParameters();
         var callArgs = new object?[callParams.Length];
         for (var i = 0; i < callParams.Length; i++)
         {
-            var pt = callParams[i].ParameterType;
-            // IsAssignableFrom(string[]), not `pt == typeof(string[])`: several handlers
-            // (SeedCli, ResetPasswordCli, AuditDenormCli) type their args
-            // parameter as IReadOnlyList<string>/IEnumerable<string> rather than the concrete
-            // array — a strict type-equality check left those silently bound to null (the
-            // final `: null` branch), which for an async handler doesn't throw synchronously
-            // from Invoke() but instead surfaces as a plain ArgumentNullException the first
-            // time the null args is enumerated, once the returned Task is awaited below. Found
-            // live: `prose --seed <name>` failing with "Value cannot be null (Parameter
-            // 'source')" via the Hub-forwarding path since the Stage C CLI migration — this
-            // silently broke every handler using a non-array args type until now.
-            callArgs[i] = pt == typeof(IServiceProvider) ? sp
-                : pt.IsAssignableFrom(typeof(string[])) ? req.Args
-                : pt.IsEnum && req.ExtraParamValue != null ? Enum.Parse(pt, req.ExtraParamValue, ignoreCase: true)
-                : pt == typeof(string) && req.ExtraParamValue != null ? req.ExtraParamValue
-                : null;
+            callArgs[i] = binding.Parameters[i] switch
+            {
+                DispatchResolution.ParamSource.Services => sp,
+                DispatchResolution.ParamSource.Args => req.Args,
+                DispatchResolution.ParamSource.ExtraEnum => Enum.Parse(callParams[i].ParameterType, req.ExtraParamValue!, ignoreCase: true),
+                DispatchResolution.ParamSource.ExtraString => req.ExtraParamValue,
+                // Unbound. Passing null does not throw here; it surfaces later as an
+                // ArgumentNullException from inside the handler once its Task is awaited. The
+                // CliWiringTests guard exists to make this unreachable in practice.
+                _ => null,
+            };
         }
 
         Guid? universeId = null;
