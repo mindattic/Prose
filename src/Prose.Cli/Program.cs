@@ -869,6 +869,16 @@ if (args.Contains("--set-node-slug"))
     return;
 }
 
+// prose --fix-location-aspect --character <name> --find <text> --replace <text> [--apply]
+// Corrects a character's current 'location' EntityStateEvent.NewValue via an exact,
+// single-occurrence substring replace. Dry-run by default. See FixLocationAspectCli's doc
+// comment for why this exists.
+if (args.Contains("--fix-location-aspect"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FixLocationAspectCli", args);
+    return;
+}
+
 // CLI mode: survey management.
 //   prose --list-surveys [--status Open|Completed]
 //   prose --get-survey --slug <slug>
