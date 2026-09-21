@@ -376,10 +376,33 @@ static object EdgeDto(UniverseEdge e) => new
     weight = e.Weight,
 };
 
+// Build identity, computed once at startup. The PID note at the top of this file records the
+// problem: "a 200 from /api/health only proves SOME Hub is up". That left every post-redeploy
+// verification resting on the author eyeballing a window title, and a check that costs attention
+// is a check that gets skipped — after which a stale Hub silently invalidates every result taken
+// against it, with no error anywhere saying why.
+//
+// MVID is the right identifier, not a git sha. The compiler regenerates it on EVERY build, so it
+// changes on every redeploy even when the version string does not, and — unlike a sha — it also
+// distinguishes a binary built from uncommitted changes from one built from the same commit
+// clean. Twelve hex chars is far more than enough to tell two builds apart by eye.
+var hubBuildId = System.Reflection.Assembly.GetExecutingAssembly()
+    .ManifestModule.ModuleVersionId.ToString("N")[..12];
+// Environment.ProcessPath, not Assembly.Location: the Hub ships as PublishSingleFile, where
+// Location is the empty string.
+DateTime? hubBuiltUtc = null;
+try
+{
+    if (Environment.ProcessPath is { } exePath) hubBuiltUtc = File.GetLastWriteTimeUtc(exePath);
+}
+catch (IOException) { /* build stamp is diagnostic; never fail health over it */ }
+catch (UnauthorizedAccessException) { }
+
 // Fail-closed contract (Phase 2): "the Hub is up" must mean "the Hub can do work", not just
 // "the process didn't crash" - Prose.Cli/Prose.Mcp gate every startup on this endpoint and
 // exit immediately if it isn't a clean 200, so a Hub process that's alive but can't reach SQL
 // must report unhealthy rather than silently accepting requests it can't actually serve.
+// Every caller checks only the status code, so the build fields below are additive and safe.
 app.MapGet("/api/health", async (IDbContextFactory<ProseDbContext> dbFactory) =>
 {
     try
@@ -387,12 +410,12 @@ app.MapGet("/api/health", async (IDbContextFactory<ProseDbContext> dbFactory) =>
         await using var ctx = await dbFactory.CreateDbContextAsync();
         var dbOk = await ctx.Database.CanConnectAsync();
         if (!dbOk)
-            return Results.Json(new { status = "unhealthy", reason = "db_unreachable" }, statusCode: 503);
-        return Results.Ok(new { status = "ok", time = DateTime.UtcNow });
+            return Results.Json(new { status = "unhealthy", reason = "db_unreachable", pid = Environment.ProcessId, build = hubBuildId, builtUtc = hubBuiltUtc }, statusCode: 503);
+        return Results.Ok(new { status = "ok", time = DateTime.UtcNow, pid = Environment.ProcessId, build = hubBuildId, builtUtc = hubBuiltUtc });
     }
     catch (Exception ex)
     {
-        return Results.Json(new { status = "unhealthy", reason = "db_error", detail = ex.Message }, statusCode: 503);
+        return Results.Json(new { status = "unhealthy", reason = "db_error", detail = ex.Message, pid = Environment.ProcessId, build = hubBuildId, builtUtc = hubBuiltUtc }, statusCode: 503);
     }
 });
 
