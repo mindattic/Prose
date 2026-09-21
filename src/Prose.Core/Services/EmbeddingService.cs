@@ -424,13 +424,24 @@ public class EmbeddingService
 
     /// <summary>
     /// Top-<paramref name="k"/> node beats most similar to <paramref name="queryText"/>,
-    /// optionally restricted to a single node. Returns hits keyed on Beat.Id.
+    /// optionally restricted to a node <i>and everything beneath it</i>. Returns hits keyed on Beat.Id.
     /// <see cref="BeatNode"/> has no enabled/disabled state (a removed beat's row is hard-deleted,
     /// per that class's own doc comment) — the join needs no extra filter beyond the key match.
     /// This method previously carried a broken "AND true = 1" placeholder join condition here
     /// (T-SQL has no bare true/false literal; SQL Server parsed it as an invalid column
     /// reference), which made every call to this method throw and get silently swallowed by
     /// whatever caught it -- found live 2026-09-07 via a Hub command-log capture.
+    ///
+    /// <para><b>Why <paramref name="nodeScope"/> is a subtree and not an equality.</b> It was
+    /// <c>sb.NodeId = @p_node</c> until 2026-09-21. But <c>BeatNodes.NodeId</c> is the node a beat
+    /// actually hangs off — a <i>chapter</i> — while every caller that scopes this call passes the
+    /// <i>book</i> (<c>VoiceAnchorService</c>, <c>SemanticFidelityService</c>). A book node owns no
+    /// beats directly, so the filter matched zero rows for every book-scoped caller, always, and
+    /// each one degrades to an empty result rather than an error: the voice tier shipped no
+    /// exemplars and the bible-alignment map came back empty, both silently. The write side
+    /// (<see cref="ReembedBeatNodesAsync"/>) has always walked descendants via
+    /// <c>GetLeafDescendantIdsAsync</c>; the read side now matches it, which is the invariant that
+    /// was missing. Leaf scopes are unaffected — the anchor member of the CTE is the node itself.</para>
     /// </summary>
     public async Task<IReadOnlyList<ProseEmbeddingHit>> FindSimilarBeatNodesAsync(
         string queryText, int k = 6, Guid? nodeScope = null, CancellationToken ct = default)
@@ -450,15 +461,48 @@ public class EmbeddingService
             new("@p_query", queryJson),
             new("@p_universe", QueryUniverseId()),
         };
-        var scopeFilter = "";
         if (nodeScope is Guid sid)
-        {
-            scopeFilter = " AND sb.NodeId = @p_node";
             parameters.Add(new Microsoft.Data.SqlClient.SqlParameter("@p_node", sid));
-        }
 
-        var sql = $"""
-            SELECT TOP (@p_k)
+        var sql = BuildBeatNodeSimilaritySql(scoped: nodeScope is not null);
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var rows = await db.Database.SqlQueryRaw<ProseScopeRow>(sql, parameters.ToArray<object>())
+            .ToListAsync(ct);
+        return rows
+            .GroupBy(r => r.ScopeId).Select(g => g.First())
+            .Take(Math.Max(1, k))
+            .Select(r => new ProseEmbeddingHit(ScopeBeatNode, r.ScopeId, r.Similarity))
+            .ToList();
+    }
+
+    /// <summary>
+    /// The node-beat similarity query, extracted so its scoping contract can be asserted without a
+    /// live database. The scoped form must walk the subtree: a flat <c>sb.NodeId = @p_node</c>
+    /// matches nothing when the caller passes a book, because beats hang off chapters — and every
+    /// caller of this path degrades an empty result to "no exemplars" rather than raising, so the
+    /// mistake is invisible at runtime. See <see cref="FindSimilarBeatNodesAsync"/>.
+    /// </summary>
+    /// <param name="scoped">Whether a <c>@p_node</c> subtree restriction is applied.</param>
+    public static string BuildBeatNodeSimilaritySql(bool scoped)
+    {
+        // A recursive CTE rather than a resolved id list — the subtree is walked in the same round
+        // trip, and no book is wide enough to risk the 2,100-parameter ceiling an IN list would.
+        var scopeCte = !scoped ? "" : """
+            WITH Subtree AS (
+                SELECT Id FROM dbo.Nodes WHERE Id = @p_node
+                UNION ALL
+                SELECT c.Id FROM dbo.Nodes c JOIN Subtree s ON c.ParentNodeId = s.Id
+            )
+
+            """;
+        var scopeFilter = scoped ? " AND sb.NodeId IN (SELECT Id FROM Subtree)" : "";
+        // Story trees are series → book → chapter; 64 is far past any real depth, and the bound
+        // turns a corrupt parent cycle into a fast error instead of a 100-deep spin.
+        var recursionLimit = scoped ? "\nOPTION (MAXRECURSION 64)" : "";
+
+        return $"""
+            {scopeCte}SELECT TOP (@p_k)
                 pe.ScopeId AS ScopeId,
                 1.0 - VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) AS Similarity
             FROM dbo.ProseEmbeddings pe
@@ -471,17 +515,8 @@ public class EmbeddingService
               -- FindSimilarAsync above (SS-A46). n.UniverseId is the single source of truth for
               -- which universe a beat actually belongs to.
               AND (@p_universe = '00000000-0000-0000-0000-000000000000' OR n.UniverseId = @p_universe){scopeFilter}
-            ORDER BY VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) ASC;
+            ORDER BY VECTOR_DISTANCE('cosine', pe.Vector, CAST(@p_query AS VECTOR(1536))) ASC{recursionLimit};
             """;
-
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var rows = await db.Database.SqlQueryRaw<ProseScopeRow>(sql, parameters.ToArray<object>())
-            .ToListAsync(ct);
-        return rows
-            .GroupBy(r => r.ScopeId).Select(g => g.First())
-            .Take(Math.Max(1, k))
-            .Select(r => new ProseEmbeddingHit(ScopeBeatNode, r.ScopeId, r.Similarity))
-            .ToList();
     }
 
     /// <summary>Row shape for the node-beat VECTOR_DISTANCE query.</summary>
