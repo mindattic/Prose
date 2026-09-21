@@ -1,4 +1,4 @@
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
@@ -60,7 +60,7 @@ public class BeatProseMetricsService
         // ordering needed, unlike DcmVizCli/NarrativeForkService's SortKey-sensitive fixes).
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatRows = await db.BeatNodes
-            .Where(bn => leafIds.Contains(bn.NodeId) && true)
+            .Where(bn => leafIds.Contains(bn.NodeId))
             .Join(db.Beats, bn => bn.BeatId, b => b.Id, (bn, b) => new { b.Id, b.Text, b.Number })
             .ToListAsync(ct);
 

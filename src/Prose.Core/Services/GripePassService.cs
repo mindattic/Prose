@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
@@ -94,7 +94,7 @@ public sealed class GripePassService(
         // chapterOrder below relies on (2026-08-09 fix).
         var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatRows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => sourceIds.Contains(bn.NodeId) && true && bn.Beat != null)
+            .Where(bn => sourceIds.Contains(bn.NodeId) && bn.Beat != null)
             .Select(bn => new { bn.NodeId, bn.SortKey, bn.Beat!.Id, bn.Beat.Text })
             .ToListAsync(ct);
         var chapterOrder = sourceIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
@@ -198,7 +198,7 @@ public sealed class GripePassService(
 
         var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         var beatRows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => sourceIds.Contains(bn.NodeId) && true && bn.Beat != null)
+            .Where(bn => sourceIds.Contains(bn.NodeId) && bn.Beat != null)
             .Select(bn => new { bn.NodeId, bn.SortKey, bn.Beat!.Id, bn.Beat.Text })
             .ToListAsync(ct);
         var chapterOrder = sourceIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);

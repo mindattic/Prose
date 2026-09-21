@@ -81,7 +81,7 @@ public abstract class BeatLensService
         var rows = await (
             from sb in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-            where leafIds.Contains(sb.NodeId) && true
+            where leafIds.Contains(sb.NodeId)
             select new { sb.NodeId, sb.SortKey, b.Text, b.Number }
         ).ToListAsync(ct);
         List<(int Num, string Text)> beats = rows

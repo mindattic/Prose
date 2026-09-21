@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Prose.Core.Data;
 using Prose.Core.Services;
@@ -116,7 +116,7 @@ public static class BackfillEntityDocsCli
         foreach (var leafId in sourceIds)
         {
             var rows = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.NodeId == leafId && true)
+                .Where(bn => bn.NodeId == leafId)
                 .OrderBy(bn => bn.SortKey)
                 .Select(bn => new { bn.Beat!.Description, bn.Beat.Text })
                 .ToListAsync();

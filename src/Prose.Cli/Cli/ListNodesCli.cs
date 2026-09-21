@@ -68,7 +68,7 @@ public static class ListNodesCli
         var ids = nodes.Select(s => s.Id).ToList();
         var charCounts = await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => ids.Contains(sb.NodeId) && true)
+            .Where(sb => ids.Contains(sb.NodeId))
             .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
                   sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.NodeId, b.Text })
             .GroupBy(x => x.NodeId)

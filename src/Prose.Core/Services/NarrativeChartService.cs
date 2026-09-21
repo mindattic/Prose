@@ -109,7 +109,7 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
         var chapterOrder = beatNodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
         var beatRows = (await db.BeatNodes
                 .AsNoTracking()
-                .Where(nb => beatNodeIds.Contains(nb.NodeId) && true)
+                .Where(nb => beatNodeIds.Contains(nb.NodeId))
                 .Include(nb => nb.Beat)
                 .Select(nb => new
                 {

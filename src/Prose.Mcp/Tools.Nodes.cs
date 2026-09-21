@@ -200,7 +200,7 @@ public class NodeTools
 
         var ids = rows.Select(r => r.Id).ToList();
         var beatCounts = await db.BeatNodes
-            .Where(sb => ids.Contains(sb.NodeId) && true)
+            .Where(sb => ids.Contains(sb.NodeId))
             .GroupBy(sb => sb.NodeId)
             .Select(g => new { NodeId = g.Key, Count = g.Count() })
             .ToDictionaryAsync(x => x.NodeId, x => x.Count);
@@ -420,7 +420,7 @@ public class NodeTools
         // Resolve the node that owns this beat — either the one from the
         // dotted handle (if any), or the first BeatNode junction.
         var nodeId = parsedNode ?? (await db.BeatNodes.AsNoTracking()
-            .Where(sb => sb.BeatId == beat.Id && true)
+            .Where(sb => sb.BeatId == beat.Id)
             .Select(sb => (Guid?)sb.NodeId)
             .FirstOrDefaultAsync());
         Node? node = null;
@@ -1010,7 +1010,7 @@ public class NodeTools
         // Word counts from beats
         var wordCounts = await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => ids.Contains(sb.NodeId) && true)
+            .Where(sb => ids.Contains(sb.NodeId))
             .Join(db.Beats.AsNoTracking().Where(b => b.Text != null && b.Text != ""),
                   sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.NodeId, b.Text })
             .GroupBy(x => x.NodeId)
@@ -1379,7 +1379,7 @@ public class NodeTools
         // inside the query pipeline.
         var rows = await db.BeatNodes
             .AsNoTracking()
-            .Where(sb => searchIds.Contains(sb.NodeId) && true)
+            .Where(sb => searchIds.Contains(sb.NodeId))
             .Join(db.Beats.AsNoTracking(),
                   sb => sb.BeatId,
                   b  => b.Id,

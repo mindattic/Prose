@@ -112,7 +112,7 @@ public static class BeatCli
         {
             var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
             await using var db = await dbFactory.CreateDbContextAsync();
-            pairs = await db.BeatNodes.Where(bn => bn.NodeId == nodeId.Value && true)
+            pairs = await db.BeatNodes.Where(bn => bn.NodeId == nodeId.Value)
                 .Select(bn => new ValueTuple<Guid, Guid>(bn.NodeId, bn.BeatId)).ToListAsync();
         }
         else

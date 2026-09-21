@@ -300,7 +300,7 @@ public class NodeOutlineService
         // depth-first) so beat distribution below stays deterministic; also recurses past any
         // nested Collection (2026-08-09 fix).
         var childIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var existing = await db.BeatNodes.CountAsync(sb => childIds.Contains(sb.NodeId) && true, ct);
+        var existing = await db.BeatNodes.CountAsync(sb => childIds.Contains(sb.NodeId), ct);
         if (existing > 0)
         {
             log.LogInformation("[bible] Node {NodeId} already has {Count} beats — skipping planned beat creation.", nodeId, existing);

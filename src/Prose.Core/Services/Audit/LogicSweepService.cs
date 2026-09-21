@@ -1,4 +1,4 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
@@ -61,7 +61,7 @@ public class LogicSweepService(
         var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var beatRowsUnordered = await db.BeatNodes.AsNoTracking().Include(bn => bn.Beat)
-            .Where(bn => nodeIds.Contains(bn.NodeId) && true && bn.Beat != null
+            .Where(bn => nodeIds.Contains(bn.NodeId) && bn.Beat != null
                       && bn.Beat!.Text != null && bn.Beat.Text != "")
             .Select(bn => new { bn.Beat!.Id, bn.Beat.Number, bn.Beat.Text, bn.SortKey, bn.NodeId })
             .ToListAsync(ct);
@@ -369,7 +369,7 @@ public class LogicSweepService(
         // defeating the whole point of a hash-gated "did anything change" check.
         var chapterOrder = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
         var rows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => nodeIds.Contains(bn.NodeId) && true && bn.Beat != null
+            .Where(bn => nodeIds.Contains(bn.NodeId) && bn.Beat != null
                       && bn.Beat!.Text != null && bn.Beat.Text != "")
             .Select(bn => new { bn.NodeId, bn.SortKey, Text = bn.Beat!.Text })
             .ToListAsync(ct);

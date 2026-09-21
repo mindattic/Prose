@@ -356,7 +356,6 @@ public class DataConsistencyService
                        ROW_NUMBER() OVER (PARTITION BY bn.NodeId ORDER BY bn.SortKey) AS Pos,
                        COUNT(*) OVER (PARTITION BY bn.NodeId) AS TotalBeats
                 FROM BeatNodes bn JOIN Beats b ON bn.BeatId = b.Id
-                WHERE bn.IsEnabled = 1
             ),
             neighbors AS (
                 SELECT o.NodeId, o.Number AS FirstNum,
@@ -375,7 +374,6 @@ public class DataConsistencyService
                        ROW_NUMBER() OVER (PARTITION BY bn.NodeId ORDER BY bn.SortKey) AS Pos,
                        COUNT(*) OVER (PARTITION BY bn.NodeId) AS TotalBeats
                 FROM BeatNodes bn JOIN Beats b ON bn.BeatId = b.Id
-                WHERE bn.IsEnabled = 1
             ),
             neighbors AS (
                 SELECT o.NodeId, o.Number AS FirstNum,

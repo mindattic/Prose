@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
@@ -136,7 +136,7 @@ public static class ExportNodeCli
             var allNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(dbV, nodeId);
 
             var beatIds = await dbV.BeatNodes.AsNoTracking()
-                .Where(bn => allNodeIds.Contains(bn.NodeId) && true)
+                .Where(bn => allNodeIds.Contains(bn.NodeId))
                 .Select(bn => bn.BeatId).Distinct().ToListAsync();
 
             // QuoteGrounding checks whether an audit's quoted claim can still be found verbatim

@@ -118,7 +118,7 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
         var beats = await db.BeatNodes
             .AsNoTracking()
             .Include(nb => nb.Beat)
-            .Where(nb => nodeIds.Contains(nb.NodeId) && true && nb.Beat != null)
+            .Where(nb => nodeIds.Contains(nb.NodeId) && nb.Beat != null)
             .OrderBy(nb => nb.SortKey)
             .Select(nb => new { nb.Beat!.Id, nb.Beat.Number, nb.Beat.Text })
             .ToListAsync(ct);

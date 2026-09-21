@@ -289,7 +289,7 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
             var childBeats = await (
                 from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                where childIds.Contains(sb.NodeId) && true
+                where childIds.Contains(sb.NodeId)
                 orderby sb.SortKey
                 select b
             ).ToListAsync(ct);

@@ -247,7 +247,7 @@ public class EntityRamificationService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         return await db.BeatNodes
-            .Where(sb => sb.Beat!.EntityStale && true)
+            .Where(sb => sb.Beat!.EntityStale)
             .Select(sb => new EntityStaleBeatDto
             {
                 BeatId      = sb.BeatId,

@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json;
 using Prose.Core.Data;
@@ -72,7 +72,7 @@ public static class BeatDuelCli
             // Resolve owning story (walking up from the beat's owner chapter) for
             // title + register notes; pull the preceding beat for continuity context.
             var owner = await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.BeatId == beatId && true)
+                .Where(bn => bn.BeatId == beatId)
                 .Join(db.Nodes.AsNoTracking(), bn => bn.NodeId, n => n.Id, (bn, n) => new { bn.SortKey, Node = n })
                 .FirstOrDefaultAsync();
             storyTitle = owner?.Node.Title ?? "(unknown story)";
@@ -91,7 +91,7 @@ public static class BeatDuelCli
                 }
 
                 var prev = await db.BeatNodes.AsNoTracking()
-                    .Where(bn => bn.NodeId == owner.Node.Id && true && bn.SortKey < owner.SortKey)
+                    .Where(bn => bn.NodeId == owner.Node.Id && bn.SortKey < owner.SortKey)
                     .OrderByDescending(bn => bn.SortKey)
                     .Join(db.Beats.AsNoTracking(), bn => bn.BeatId, b => b.Id, (bn, b) => b.Text)
                     .FirstOrDefaultAsync();

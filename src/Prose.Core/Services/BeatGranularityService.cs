@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 
@@ -125,7 +125,7 @@ public class BeatGranularityService(IDbContextFactory<ProseDbContext> factory)
 
         // 2. Enabled beats ordered by position — char count from Text.Length → LEN()
         var beatRows = await db.BeatNodes
-            .Where(bn => chapterIds.Contains(bn.NodeId) && true)
+            .Where(bn => chapterIds.Contains(bn.NodeId))
             .OrderBy(bn => bn.SortKey)
             .Join(db.Beats, bn => bn.BeatId, b => b.Id,
                 (bn, b) => new { b.Id, b.Title, CharCount = b.Text.Length })

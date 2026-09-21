@@ -75,7 +75,7 @@ public static class NodeOutlineCli
         // Determine target beat count
         if (targetBeats <= 0)
         {
-            targetBeats = await db.BeatNodes.CountAsync(sb => searchIds.Contains(sb.NodeId) && true);
+            targetBeats = await db.BeatNodes.CountAsync(sb => searchIds.Contains(sb.NodeId));
             if (targetBeats <= 0) targetBeats = 12;
         }
 

@@ -376,7 +376,7 @@ public class EmbeddingService
 
         var beats = await (from sb in db.BeatNodes.AsNoTracking()
                            join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
-                           where searchIds.Contains(sb.NodeId) && true
+                           where searchIds.Contains(sb.NodeId)
                            orderby sb.SortKey
                            select new { b.Id, b.Title, b.Description, b.Text }).ToListAsync(ct);
         if (beats.Count == 0) return 0;

@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Services;
 
@@ -60,14 +60,14 @@ public static class FixCrossUniverseContaminationCli
         var beatEntityRows = await db.Database.SqlQuery<ContaminationRow>($"""
             SELECT be.BeatId AS BeatId, be.EntityId AS EntityId, bn.NodeId AS NodeId, e.UniverseId AS EntityUniverse, 'BeatEntities' AS TableName
             FROM BeatEntities be
-            JOIN BeatNodes bn ON bn.BeatId = be.BeatId AND bn.IsEnabled = 1
+            JOIN BeatNodes bn ON bn.BeatId = be.BeatId
             JOIN Entities e ON e.Id = be.EntityId
             """).ToListAsync();
 
         var presenceRows = await db.Database.SqlQuery<ContaminationRow>($"""
             SELECT bep.BeatId AS BeatId, bep.EntityId AS EntityId, bn.NodeId AS NodeId, e.UniverseId AS EntityUniverse, 'BeatEntityPresence' AS TableName
             FROM BeatEntityPresence bep
-            JOIN BeatNodes bn ON bn.BeatId = bep.BeatId AND bn.IsEnabled = 1
+            JOIN BeatNodes bn ON bn.BeatId = bep.BeatId
             JOIN Entities e ON e.Id = bep.EntityId
             """).ToListAsync();
 

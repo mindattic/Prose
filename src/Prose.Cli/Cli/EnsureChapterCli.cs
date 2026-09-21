@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
@@ -43,7 +43,7 @@ public static class EnsureChapterCli
         {
             var flat = await db.Nodes.OfType<BookNode>().AsNoTracking().IgnoreQueryFilters()
                 .Where(n => !db.Nodes.IgnoreQueryFilters().Any(c => c.ParentNodeId == n.Id)
-                    && db.BeatNodes.Any(b => b.NodeId == n.Id && true))
+                    && db.BeatNodes.Any(b => b.NodeId == n.Id))
                 .Select(n => new { n.Id, n.Slug, n.Title }).ToListAsync();
             foreach (var f in flat) targets.Add((f.Id, f.Slug, f.Title));
         }

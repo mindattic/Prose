@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
@@ -199,7 +199,7 @@ public class BeatVerificationService
         // LogicSweepService.RunAsync / CheckEscalationMonotonicAsync below).
         var chapterOrderForBeatIds = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
         var beatIds = (await db.BeatNodes
-                .Where(bn => nodeIds.Contains(bn.NodeId) && true)
+                .Where(bn => nodeIds.Contains(bn.NodeId))
                 .Select(bn => new { bn.BeatId, bn.NodeId, bn.SortKey })
                 .ToListAsync(ct))
             .OrderBy(x => chapterOrderForBeatIds.TryGetValue(x.NodeId, out var idx) ? idx : int.MaxValue)
@@ -424,7 +424,7 @@ public class BeatVerificationService
         // across chapters since every chapter's beats restart near the same values.
         var chapterOrder = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
         var decisionRows = await db.BeatNodes
-            .Where(bn => nodeIds.Contains(bn.NodeId) && true)
+            .Where(bn => nodeIds.Contains(bn.NodeId))
             .Join(db.BeatBlueprintDecisions, bn => bn.BeatId, d => d.BeatId, (bn, d) => new
             {
                 d.BeatId,

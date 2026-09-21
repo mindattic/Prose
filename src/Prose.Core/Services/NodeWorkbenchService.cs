@@ -1,4 +1,4 @@
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
@@ -314,11 +314,12 @@ public class NodeWorkbenchService
     }
 
     /// <summary>Cheap count without loading the beats — for tile/badge displays.
-    /// Only counts enabled beats (soft-deleted excluded).</summary>
+    /// Counts every beat on the node: BeatNodes has no soft-delete flag, a row exists or it
+    /// does not (IsEnabled was dropped in 20260813053520_DropBeatNodeIsEnabled).</summary>
     public async Task<int> CountBeatsAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId && true, ct);
+        return await db.BeatNodes.CountAsync(sb => sb.NodeId == nodeId, ct);
     }
 
     // ── Edits ────────────────────────────────────────────────────────────
@@ -461,7 +462,7 @@ public class NodeWorkbenchService
         if (postBeatValidator != null || semanticFidelity != null)
         {
             beatSlug = await db.BeatNodes.AsNoTracking()
-                .Where(sb => sb.BeatId == beatId && true)
+                .Where(sb => sb.BeatId == beatId)
                 .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
                 .FirstOrDefaultAsync(ct);
         }
@@ -1450,7 +1451,7 @@ public class NodeWorkbenchService
                 $"'{parent.Title}' already has {existingChildren} child node(s) — it's already a Collection. " +
                 "Splitting its direct beats would duplicate chapters. Reconcile the existing children first.");
 
-        var rows = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && true)
+        var rows = await db.BeatNodes.Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
                   (sb, b) => new { sb.BeatId, sb.SortKey, b.IsChapterStart, b.Title })
@@ -1483,7 +1484,7 @@ public class NodeWorkbenchService
             throw new InvalidOperationException($"Node has {segments.Count} chapter segment(s) — nothing to split. Mark IsChapterStart on beats first.");
 
         // Drop only enabled beat links — disabled (soft-deleted) rows stay on the parent so they remain restorable.
-        var oldLinks = await db.BeatNodes.Where(sb => sb.NodeId == nodeId && true).ToListAsync(ct);
+        var oldLinks = await db.BeatNodes.Where(sb => sb.NodeId == nodeId).ToListAsync(ct);
         db.BeatNodes.RemoveRange(oldLinks);
 
         double parentSort = 100.0;
@@ -1554,7 +1555,7 @@ public class NodeWorkbenchService
         var existingChildren = await db.Nodes.CountAsync(s => s.ParentNodeId == storyId, ct);
         if (existingChildren > 0) return null; // already chaptered — nothing to do
 
-        var enabled = await db.BeatNodes.Where(sb => sb.NodeId == storyId && true)
+        var enabled = await db.BeatNodes.Where(sb => sb.NodeId == storyId)
             .OrderBy(sb => sb.SortKey).ToListAsync(ct);
         if (enabled.Count == 0) throw new InvalidOperationException($"'{story.Title}' has no direct beats to wrap.");
 
@@ -1609,7 +1610,7 @@ public class NodeWorkbenchService
         initialText = TextSanitizerService.Sanitize(initialText ?? "");
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var ordered = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && true)
+            .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
 
@@ -1642,7 +1643,7 @@ public class NodeWorkbenchService
             // rows with the post-restripe ladder.
             db.ChangeTracker.Clear();
             ordered = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId && true)
+                .Where(sb => sb.NodeId == nodeId)
                 .OrderBy(sb => sb.SortKey)
                 .ToListAsync(ct);
             if (afterBeatId == null)
@@ -1707,7 +1708,7 @@ public class NodeWorkbenchService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && true)
+            .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         if (siblings.Count == 0) return 0;
@@ -1738,7 +1739,7 @@ public class NodeWorkbenchService
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && true)
+            .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var subject = siblings.FirstOrDefault(sb => sb.BeatId == beatId)
@@ -1770,7 +1771,7 @@ public class NodeWorkbenchService
             // values from the first ToListAsync above.
             db.ChangeTracker.Clear();
             siblings = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId && true)
+                .Where(sb => sb.NodeId == nodeId)
                 .OrderBy(sb => sb.SortKey)
                 .ToListAsync(ct);
             subject = siblings.First(sb => sb.BeatId == beatId);
@@ -1954,7 +1955,7 @@ public class NodeWorkbenchService
             throw new InvalidOperationException("Split would leave one half empty — pick a different cursor position.");
 
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && true)
+            .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -2020,7 +2021,7 @@ public class NodeWorkbenchService
 
         // Find the target's SortKey in this node to slot the new beat.
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && true)
+            .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -2086,7 +2087,7 @@ public class NodeWorkbenchService
         if (paragraphs.Count < 2) return new List<Guid>();
 
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && true)
+            .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -2210,7 +2211,7 @@ public class NodeWorkbenchService
         var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == chapterNodeId, ct)
             ?? throw new InvalidOperationException($"Node {chapterNodeId} not found.");
 
-        var existingCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == chapterNodeId && true, ct);
+        var existingCount = await db.BeatNodes.CountAsync(sb => sb.NodeId == chapterNodeId, ct);
         if (existingCount > 0)
         {
             log.LogInformation("Node {S} ({T}) already has {N} beats; not materialising.",
@@ -2387,7 +2388,7 @@ public class NodeWorkbenchService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
-            .Where(sb => sb.NodeId == nodeId && true)
+            .Where(sb => sb.NodeId == nodeId)
             .OrderBy(sb => sb.SortKey)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
@@ -2411,7 +2412,7 @@ public class NodeWorkbenchService
 
         // Delete the absorbed beat row if no other node still holds it.
         var otherMemberships = await db.BeatNodes
-            .Where(sb => sb.BeatId == beatId && sb.NodeId != nodeId && true)
+            .Where(sb => sb.BeatId == beatId && sb.NodeId != nodeId)
             .AnyAsync(ct);
         if (!otherMemberships)
         {

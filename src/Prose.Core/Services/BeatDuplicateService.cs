@@ -1,4 +1,4 @@
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
@@ -85,7 +85,7 @@ public class BeatDuplicateService(
         var scopeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
         var enabledBeatIds = await db.BeatNodes.AsNoTracking()
-            .Where(bn => scopeIds.Contains(bn.NodeId) && true)
+            .Where(bn => scopeIds.Contains(bn.NodeId))
             .Select(bn => bn.BeatId).Distinct().ToListAsync(ct);
 
         if (enabledBeatIds.Count < 2)

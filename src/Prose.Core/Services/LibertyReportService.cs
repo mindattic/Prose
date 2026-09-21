@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
@@ -153,7 +153,7 @@ public class LibertyReportService(
             var beatNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId!.Value, ct);
 
             var beatIds = await db.BeatNodes.AsNoTracking()
-                .Where(bn => beatNodeIds.Contains(bn.NodeId) && true)
+                .Where(bn => beatNodeIds.Contains(bn.NodeId))
                 .Select(bn => bn.BeatId)
                 .ToListAsync(ct);
 

@@ -1,4 +1,4 @@
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
@@ -135,7 +135,7 @@ public sealed class SynopsisExportService(
         for (int i = 0; i < sources.Count; i++)
         {
             var beats = (await db.BeatNodes.AsNoTracking()
-                .Where(bn => bn.NodeId == sources[i].Id && true)
+                .Where(bn => bn.NodeId == sources[i].Id)
                 .OrderBy(bn => bn.SortKey)
                 .Select(bn => bn.Beat!.Text)
                 .ToListAsync(ct))

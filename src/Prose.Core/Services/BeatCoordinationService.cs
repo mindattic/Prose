@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
@@ -127,7 +127,7 @@ public class BeatCoordinationService
             var leafRows = await (
                 from bn in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
-                where bn.NodeId == leafId && true
+                where bn.NodeId == leafId
                 orderby bn.SortKey
                 select new
                 {

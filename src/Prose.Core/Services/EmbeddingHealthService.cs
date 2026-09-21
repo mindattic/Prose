@@ -48,7 +48,7 @@ public class EmbeddingHealthService
         StoryBeats AS (
             SELECT pe.ScopeId, pe.Vector
             FROM dbo.ProseEmbeddings pe
-            JOIN dbo.BeatNodes nb ON nb.BeatId = pe.ScopeId AND nb.IsEnabled = 1
+            JOIN dbo.BeatNodes nb ON nb.BeatId = pe.ScopeId
             WHERE pe.ScopeKind = @p_scope
               AND nb.NodeId IN (SELECT Id FROM SubtreeNodes)
         )

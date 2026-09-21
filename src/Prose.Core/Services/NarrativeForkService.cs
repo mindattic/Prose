@@ -79,7 +79,7 @@ public class NarrativeForkService(
                 foreach (var leafId in nextLeafIds)
                 {
                     var rows = await db.BeatNodes.AsNoTracking()
-                        .Where(sb => sb.NodeId == leafId && true)
+                        .Where(sb => sb.NodeId == leafId)
                         .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                               sb => sb.BeatId, b => b.Id,
                               (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
@@ -128,7 +128,7 @@ public class NarrativeForkService(
             var forkSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
             var rows = await db.BeatNodes.AsNoTracking()
-                .Where(sb => forkSearchIds.Contains(sb.NodeId) && true)
+                .Where(sb => forkSearchIds.Contains(sb.NodeId))
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
                       (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })

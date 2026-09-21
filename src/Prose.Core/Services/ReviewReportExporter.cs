@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
@@ -111,7 +111,7 @@ public sealed class ReviewReportExporter
             var rows = await (
                 from bn in db.BeatNodes
                 join b in db.Beats on bn.BeatId equals b.Id
-                where bn.NodeId == nodeId && true
+                where bn.NodeId == nodeId
                 orderby bn.SortKey
                 select new { b.Number, b.Title }
             ).ToListAsync(ct);

@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Interfaces;
@@ -51,7 +51,7 @@ public class NarrativeSynopsisService(ILlmService llm, IDbContextFactory<ProseDb
         else
         {
             var rows = await db.BeatNodes.AsNoTracking()
-                .Where(sb => leafIds.Contains(sb.NodeId) && true)
+                .Where(sb => leafIds.Contains(sb.NodeId))
                 .Include(sb => sb.Beat)
                 .ToListAsync(ct);
             indexedBeats = rows

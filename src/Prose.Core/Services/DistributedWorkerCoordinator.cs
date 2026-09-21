@@ -117,7 +117,7 @@ public class DistributedWorkerCoordinator
             // Recurses past any nested Collection (2026-08-09 fix).
             var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
             var beatTexts = await db.BeatNodes
-                .Where(sb => searchIds.Contains(sb.NodeId) && true)
+                .Where(sb => searchIds.Contains(sb.NodeId))
                 .OrderBy(sb => sb.SortKey)
                 .Select(sb => sb.Beat!.Text ?? "")
                 .ToListAsync(ct);
