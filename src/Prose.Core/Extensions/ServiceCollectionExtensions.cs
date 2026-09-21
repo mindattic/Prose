@@ -1281,6 +1281,7 @@ public static class ServiceCollectionExtensions
         // Derives the scene layer from beats that already exist. Deterministic and free, so it can
         // be re-run on any book in any universe without cost or drift.
         services.AddSingleton<SceneDerivationService>();
+        services.AddSingleton<ChapterRenumberService>();
 
         services.AddSingleton<Prose.Core.Composition.Ledger.StoryStateQuery>();
         services.AddSingleton<Prose.Core.Composition.Window.SceneWindowService>();

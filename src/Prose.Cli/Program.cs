@@ -3053,6 +3053,15 @@ if (args.Contains("--derive-scenes"))
     return;
 }
 
+// prose --renumber-chapters --slug <slug|id> [--apply]
+// Titles only, no prose: close the gaps a reader sees when unnumbered units consumed chapter
+// numbers ("Chapter 3", an interlude, then "Chapter 5"). Dry run unless --apply.
+if (args.Contains("--renumber-chapters"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RenumberChaptersCli", args);
+    return;
+}
+
 // prose --edit-distribution [--slug <slug>] [--top N] [--json]
 // RFC 0009 Phase 0: Beat.Version histogram per book + corpus-wide, and the most-rewritten beats.
 // Read-only, free. The baseline that must not rise once the autonomous rewriters are deleted.
