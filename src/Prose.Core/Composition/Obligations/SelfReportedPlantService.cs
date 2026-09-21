@@ -2,8 +2,43 @@ using Prose.Core.Interfaces;
 
 namespace Prose.Core.Composition.Obligations;
 
-/// <summary>One plant the writer reported immediately after generating the beat that made it.</summary>
-public sealed record SelfReportedPlant(string Description);
+/// <summary>
+/// One plant the writer reported immediately after generating the beat that made it, split at the
+/// em dash the prompt asks for: the concrete thing, and the question left open about it.
+/// </summary>
+/// <param name="Referent">The one concrete object, person, place or posed question.</param>
+/// <param name="Question">What the text leaves unresolved about it. Empty when the model gave no dash.</param>
+public sealed record SelfReportedPlant(string Referent, string Question)
+{
+    /// <summary>The whole line as reported, for display and for storing as an obligation.</summary>
+    public string Description => string.IsNullOrEmpty(Question) ? Referent : $"{Referent} — {Question}";
+
+    /// <summary>Split a reported line on the first em/en dash or double hyphen. A model that
+    /// ignores the format still yields a usable referent rather than being dropped.</summary>
+    public static SelfReportedPlant Parse(string line)
+    {
+        var idx = line.IndexOfAny(['—', '–']);
+        if (idx < 0)
+        {
+            var dbl = line.IndexOf("--", StringComparison.Ordinal);
+            if (dbl >= 0) return new SelfReportedPlant(line[..dbl].Trim(), line[(dbl + 2)..].Trim());
+            return new SelfReportedPlant(line.Trim(), "");
+        }
+        return new SelfReportedPlant(line[..idx].Trim(), line[(idx + 1)..].Trim());
+    }
+}
+
+/// <summary>
+/// One distinct plant after the same referent reported in several beats has been collapsed.
+/// </summary>
+/// <param name="Referent">The referent as first reported.</param>
+/// <param name="Question">The question as first reported.</param>
+/// <param name="ReportedInBeats">Every beat that reported it, in the order encountered.</param>
+public sealed record MergedPlant(string Referent, string Question, IReadOnlyList<Guid> ReportedInBeats)
+{
+    public int ReportCount => ReportedInBeats.Count;
+    public string Description => string.IsNullOrEmpty(Question) ? Referent : $"{Referent} — {Question}";
+}
 
 /// <summary>
 /// v4 plan Phase 4, the "self-reported" half of explicit obligations. This is a deliberately
@@ -76,7 +111,81 @@ public sealed class SelfReportedPlantService
         var raw = await llm.GenerateAsync(system, user, temperature: 0.0, maxTokens: 400, ct: ct);
         return raw.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
             .Where(l => l.StartsWith("PLANT:", StringComparison.OrdinalIgnoreCase))
-            .Select(l => new SelfReportedPlant(l[6..].Trim()))
+            .Select(l => SelfReportedPlant.Parse(l[6..].Trim()))
             .ToList();
+    }
+
+    // ── merging repeat reports of one plant ──────────────────────────────────────────────────
+
+    /// <summary>
+    /// Words that carry no identity. Dropped before comparing two referents so "the message" and
+    /// "a message" are the same thing.
+    /// </summary>
+    private static readonly HashSet<string> Ignorable = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "a", "an", "the", "of", "to", "in", "on", "at", "by", "for", "from", "with", "and", "or",
+        "that", "which", "who", "whom", "whose", "this", "these", "those", "it", "its",
+        "his", "her", "hers", "their", "theirs", "him", "them", "he", "she", "they",
+        "is", "was", "are", "were", "be", "been", "being", "as", "about",
+    };
+
+    /// <summary>
+    /// How much two referents' significant words must overlap to be judged the same plant.
+    ///
+    /// <para>Set high on purpose. Over-merging is the more dangerous error here: this number is
+    /// used to measure a FALSE-POSITIVE rate, and collapsing two distinct false positives into one
+    /// row makes the instrument look better than it is. Under-merging only leaves the count
+    /// pessimistic, which is the safe direction to be wrong in. 0.6 is a starting point chosen to
+    /// be conservative, not a calibrated constant — it is itself subject to measurement.</para>
+    /// </summary>
+    public const double MergeSimilarityThreshold = 0.6;
+
+    private static HashSet<string> Significant(string referent) =>
+        new(referent
+                .Split([' ', '\t', ',', '.', ';', ':', '"', '\'', '(', ')', '[', ']', '“', '”', '‘', '’', '/', '\\'],
+                    StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .Select(w => w.Trim().ToLowerInvariant())
+                .Where(w => w.Length > 0 && !Ignorable.Contains(w)),
+            StringComparer.Ordinal);
+
+    /// <summary>Jaccard overlap of two referents' significant words. 1.0 when identical.</summary>
+    internal static double Similarity(string a, string b)
+    {
+        var sa = Significant(a);
+        var sb = Significant(b);
+        if (sa.Count == 0 || sb.Count == 0) return string.Equals(a.Trim(), b.Trim(), StringComparison.OrdinalIgnoreCase) ? 1.0 : 0.0;
+        var intersection = sa.Count(sb.Contains);
+        var union = sa.Count + sb.Count - intersection;
+        return union == 0 ? 0.0 : (double)intersection / union;
+    }
+
+    /// <summary>
+    /// Collapse repeat reports of one plant into a single row.
+    ///
+    /// <para><b>Why this is not optional.</b> A plant introduced in one beat is frequently reported
+    /// again by every later beat that touches it, so the raw per-beat total counts one promise many
+    /// times. Compared against an answer key of DISTINCT plants, that raw number is not a
+    /// false-positive rate — it is a false-positive rate plus an unknown amount of repetition, and
+    /// the two cannot be separated after the fact. Calibration numbers taken before this existed
+    /// (GCTOC 53, then 34 after the prompt was tightened) are raw counts and were never comparable
+    /// to the 15-row key.</para>
+    ///
+    /// <para>Deterministic and free: no second LLM call. Reports arrive in beat order and the first
+    /// wording of a referent wins, so the row reads as the plant was first stated.</para>
+    /// </summary>
+    public static IReadOnlyList<MergedPlant> Merge(IEnumerable<(Guid BeatId, SelfReportedPlant Plant)> reports)
+    {
+        var merged = new List<(string Referent, string Question, List<Guid> Beats)>();
+
+        foreach (var (beatId, plant) in reports)
+        {
+            var hit = merged.FirstOrDefault(m => Similarity(m.Referent, plant.Referent) >= MergeSimilarityThreshold);
+            if (hit.Beats is null)
+                merged.Add((plant.Referent, plant.Question, [beatId]));
+            else if (!hit.Beats.Contains(beatId))
+                hit.Beats.Add(beatId);
+        }
+
+        return merged.Select(m => new MergedPlant(m.Referent, m.Question, m.Beats)).ToList();
     }
 }

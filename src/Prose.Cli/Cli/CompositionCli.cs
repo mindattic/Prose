@@ -245,19 +245,34 @@ public static class CompositionCli
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId.Value);
         Console.WriteLine($"[calibrate-plants] {ordered.Count} beat(s) — {ordered.Count} real, billed LLM calls.");
 
-        var totalOpens = 0;
+        var reports = new List<(Guid BeatId, SelfReportedPlant Plant)>();
         foreach (var o in ordered)
         {
             var found = await plants.ExtractAsync(o.Beat.Text);
-            totalOpens += found.Count;
+            foreach (var p in found) reports.Add((o.Beat.Id, p));
             if (found.Count > 0)
             {
                 Console.WriteLine($"  beat {o.Beat.Id} (pos {o.Beat.StoryPosition?.ToString() ?? "?"}): {found.Count} plant(s)");
                 foreach (var p in found) Console.WriteLine($"    PLANT: {p.Description}");
             }
         }
+
+        // The raw total counts one promise once per beat that mentions it again. An answer key
+        // lists DISTINCT plants, so only the merged number can be compared to it — reporting the
+        // raw figure alone is what made "34 vs a 15-row key" look like a measurement.
+        var merged = SelfReportedPlantService.Merge(reports);
+        var repeats = merged.Where(m => m.ReportCount > 1).ToList();
+
         Console.WriteLine();
-        Console.WriteLine($"[calibrate-plants] {totalOpens} total plant(s) opened across {ordered.Count} beats.");
+        Console.WriteLine($"[calibrate-plants] {reports.Count} raw report(s) across {ordered.Count} beats.");
+        Console.WriteLine($"[calibrate-plants] {merged.Count} DISTINCT plant(s) after merge — this is the number to compare against an answer key.");
+        if (repeats.Count > 0)
+        {
+            Console.WriteLine();
+            Console.WriteLine($"── {repeats.Count} plant(s) reported more than once ──");
+            foreach (var m in repeats.OrderByDescending(m => m.ReportCount))
+                Console.WriteLine($"  ×{m.ReportCount}  {Truncate(m.Description, 120)}");
+        }
         break;
     }
             default:
