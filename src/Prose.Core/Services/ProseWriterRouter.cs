@@ -966,6 +966,14 @@ public class ProseWriterRouter(
                 new("NarrativeSummary",    IsApplicable: nodeApplicable,    IsActive: narrativeSummaryContext.Length > 0,                                     BlockSizeChars: narrativeSummaryContext.Length),
                 new("ChapterSummary",      IsApplicable: nodeApplicable,    IsActive: chapterSummaryContext.Length > 0,                                       BlockSizeChars: chapterSummaryContext.Length),
                 new("Obligations",         IsApplicable: nodeApplicable,    IsActive: openThreadsContext.Length > 0,                                          BlockSizeChars: openThreadsContext.Length),
+                // The prior prose the next beat is grounded in — the one input the whole v4
+                // diagnosis turns on, and until now the only major block with no activation rate
+                // at all. BeatContextTrace stores it verbatim per beat, but nothing aggregated it,
+                // so "what fraction of beats were written with no scene behind them" was a
+                // question the engine could not answer about itself. Measured raw (not the 6000-
+                // char tail BeatGeneratorService trims to) because the defect being watched for is
+                // an EMPTY window at a chapter boundary, not an oversized one.
+                new("SceneWindow",         IsApplicable: nodeApplicable,    IsActive: (context.SceneSoFar?.Length ?? 0) > 0,                                  BlockSizeChars: context.SceneSoFar?.Length ?? 0),
                 new("MotifLedger",         IsApplicable: nodeApplicable,    IsActive: motifContext.Length > 0,                                                BlockSizeChars: motifContext.Length),
                 new("StoryStateLedger",    IsApplicable: nodeApplicable,    IsActive: plotEventsContext.Length > 0,                                           BlockSizeChars: plotEventsContext.Length),
                 new("SceneContextAssembler", IsApplicable: beatId != Guid.Empty, IsActive: xRayContext.Length > 0,                                            BlockSizeChars: xRayContext.Length),
