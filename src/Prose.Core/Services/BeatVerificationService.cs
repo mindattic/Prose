@@ -697,8 +697,9 @@ public class BeatVerificationService
         var bookByLeaf = new Dictionary<Guid, Guid>();
         foreach (var leafId in nodeIds)
         {
-            var bookId = await ResolveBookAncestorIdAsync(db, leafId, ct);
-            bookByLeaf[leafId] = bookId;
+            // Falls back to the leaf itself when nothing above it is a book, which is what the
+            // previous root-walk effectively did for an orphaned node.
+            bookByLeaf[leafId] = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, leafId, ct) ?? leafId;
         }
 
         var byBook = rows.GroupBy(r => bookByLeaf[r.NodeId]).Select(g => new
@@ -725,16 +726,7 @@ public class BeatVerificationService
     /// <summary>Walks ParentNodeId up from a leaf (chapter) node to its book ancestor (no parent,
     /// or a Collection-kind root) — same walk-up shape as the rest of this service's book-scoping,
     /// inverted (leaf-to-root instead of root-to-leaf via GetLeafDescendantIdsAsync).</summary>
-    private static async Task<Guid> ResolveBookAncestorIdAsync(ProseDbContext db, Guid leafId, CancellationToken ct)
-    {
-        var currentId = leafId;
-        for (var i = 0; i < 10; i++)
-        {
-            var parentId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                .Where(n => n.Id == currentId).Select(n => n.ParentNodeId).FirstOrDefaultAsync(ct);
-            if (parentId is not { } p) return currentId;
-            currentId = p;
-        }
-        return currentId;
-    }
+    // Book resolution now lives in NodeWorkbenchService.ResolveBookAncestorIdAsync. The copy that
+    // was here walked to the TREE ROOT, so for a book under a series it returned the series and
+    // every stale-book grouping below was keyed on the wrong node.
 }

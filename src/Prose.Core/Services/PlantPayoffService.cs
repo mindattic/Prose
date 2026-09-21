@@ -121,7 +121,7 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
 
         // RFC 0013: a hand-registered pair IS an obligation of kind "plant" — one row, author
         // provenance, locked, so the trial balance and the Brief see it beside extracted promises.
-        var bookNodeId = await BookRootAsync(db, nodeId, ct);
+        var bookNodeId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, nodeId, ct) ?? nodeId;
         var ob = new NarrativeObligation
         {
             NodeId = bookNodeId, Kind = ObligationKind.Plant,
@@ -183,17 +183,9 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
     }
 
     /// <summary>Plants may be registered on a chapter node; the ledger is book-scoped.</summary>
-    private static async Task<Guid> BookRootAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
-    {
-        var walk = nodeId;
-        for (var depth = 0; depth < 10; depth++)
-        {
-            var parent = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == walk).Select(n => n.ParentNodeId).FirstOrDefaultAsync(ct);
-            if (parent == null) return walk;
-            walk = parent.Value;
-        }
-        return walk;
-    }
+    // Book resolution now lives in NodeWorkbenchService.ResolveBookAncestorIdAsync. The copy that
+    // was here walked to the TREE ROOT, so a plant/payoff obligation registered inside a book that
+    // sits under a series was filed against the series node instead of the book.
 
     public async Task SetTransparencyAsync(Guid id, bool isTransparent, string? note, CancellationToken ct = default)
     {

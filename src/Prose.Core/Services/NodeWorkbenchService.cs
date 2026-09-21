@@ -258,6 +258,61 @@ public class NodeWorkbenchService
             await CollectLeavesAsync(db, childId, result, visited, ct);
     }
 
+    /// <summary>
+    /// The book a node belongs to: walk up to the nearest ancestor that IS a book. Returns null if
+    /// there is no book above it.
+    ///
+    /// <para>This is the upward companion to <see cref="GetLeafDescendantIdsAsync"/>, and it exists
+    /// for the same reason: the same walk was reimplemented privately in half a dozen services,
+    /// and they did not agree.</para>
+    ///
+    /// <para><b>Two ways the private copies were wrong.</b> Several stopped at the <em>tree root</em>
+    /// (<c>ParentNodeId == null</c>) rather than at a book — which is only the same thing when the
+    /// book has no parent. Books sitting under a SeriesNode are common, and for those the root walk
+    /// returns the series, so everything book-scoped downstream silently addressed the wrong node.
+    /// Others matched on <see cref="Node.Kind"/>, the free-form display label, rather than on the
+    /// TPH type, which is the structural truth.</para>
+    ///
+    /// <para>Depth is not assumable: the ladder is Series → Book → Chapter → Sequence → Scene →
+    /// Beat with every layer below Book optional, so this hops until it finds a book rather than a
+    /// fixed number of times. The bound only guards a corrupt parent cycle.</para>
+    ///
+    /// <para><c>IgnoreQueryFilters()</c>: the id is one the caller already holds, so the ambient
+    /// universe scope is irrelevant — and applying it here would make a node in another universe
+    /// look parentless.</para>
+    /// </summary>
+    public static async Task<Guid?> ResolveBookAncestorIdAsync(
+        ProseDbContext db, Guid nodeId, CancellationToken ct = default)
+    {
+        var current = nodeId;
+        var visited = new HashSet<Guid>();
+        while (visited.Add(current))
+        {
+            var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+                .Where(n => n.Id == current)
+                .Select(n => new { n.Id, n.ParentNodeId, IsBook = n is BookNode })
+                .FirstOrDefaultAsync(ct);
+            if (node == null) return null;
+            if (node.IsBook) return node.Id;
+            if (node.ParentNodeId is not { } parent) return null; // reached the root, found no book
+            current = parent;
+        }
+        return null; // cycle
+    }
+
+    /// <summary>The book a beat belongs to, via the node it hangs on.
+    /// See <see cref="ResolveBookAncestorIdAsync(ProseDbContext, Guid, CancellationToken)"/>.</summary>
+    public static async Task<Guid?> ResolveBookAncestorForBeatAsync(
+        ProseDbContext db, Guid beatId, CancellationToken ct = default)
+    {
+        var nodeId = await db.BeatNodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(bn => bn.BeatId == beatId)
+            .OrderBy(bn => bn.SortKey).ThenBy(bn => bn.NodeId)
+            .Select(bn => (Guid?)bn.NodeId)
+            .FirstOrDefaultAsync(ct);
+        return nodeId is { } id ? await ResolveBookAncestorIdAsync(db, id, ct) : null;
+    }
+
     /// <summary>Cheap count without loading the beats — for tile/badge displays.
     /// Only counts enabled beats (soft-deleted excluded).</summary>
     public async Task<int> CountBeatsAsync(Guid nodeId, CancellationToken ct = default)
@@ -311,24 +366,16 @@ public class NodeWorkbenchService
         // entity-mention scanner's candidate list (corpus-trust-recovery Phase 1a) and, further
         // down, for the blast-radius mini re-check. Walk ParentNodeId up from the beat's direct
         // chapter node to the book root while `db` is still open.
-        Guid? bookNodeId = null;
+        // The node the beat actually hangs on — a chapter, or a scene once the book has been given
+        // a finer structure.
         var directNodeId = await db.BeatNodes.AsNoTracking()
             .Where(bn => bn.BeatId == beatId)
             .Select(bn => bn.NodeId)
             .FirstOrDefaultAsync(ct);
-        if (directNodeId != Guid.Empty)
-        {
-            var walkId = directNodeId;
-            for (var depth = 0; depth < 10; depth++)
-            {
-                var parent = await db.Nodes.AsNoTracking()
-                    .Where(n => n.Id == walkId)
-                    .Select(n => n.ParentNodeId)
-                    .FirstOrDefaultAsync(ct);
-                if (parent == null) { bookNodeId = walkId; break; }
-                walkId = parent.Value;
-            }
-        }
+        // Walks to the nearest BOOK, not to the tree root: a book under a series would otherwise
+        // resolve to the series, and the ladder below a book (chapter → sequence → scene) means
+        // the number of hops is not fixed either.
+        var bookNodeId = await ResolveBookAncestorForBeatAsync(db, beatId, ct);
         // IgnoreQueryFilters(): explicit bookNodeId, not an ambient scope — without this, saving a
         // beat on any non-ambient-universe book resolves universeId to Guid.Empty, which silently
         // SKIPS entity-GUID tagging entirely for that save (candidates short-circuits to [] below

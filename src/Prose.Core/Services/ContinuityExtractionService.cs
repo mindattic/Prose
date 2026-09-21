@@ -323,10 +323,19 @@ public class ContinuityExtractionService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var chapter = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .FirstOrDefaultAsync(n => n.Id == chapterNodeId, ct);
-        if (chapter?.ParentNodeId == null) return false;
+        if (chapter == null) return false;
+
+        // The owning BOOK, found by walking up to the nearest one — not by assuming it is this
+        // node's parent. That assumption was already wrong for a chapter inside a collection, and
+        // is wrong by up to three levels now that a beat's node may be a scene inside a sequence
+        // inside a chapter. When it resolved the wrong node, `HasAnyClaimsForBook` was asked about
+        // a slug that owns no claims, returned false, and this whole live re-extraction silently
+        // did nothing.
+        var bookId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, chapterNodeId, ct);
+        if (bookId is not { } resolvedBookId) return false;
 
         var book = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .FirstOrDefaultAsync(n => n.Id == chapter.ParentNodeId.Value, ct);
+            .FirstOrDefaultAsync(n => n.Id == resolvedBookId, ct);
         if (book == null || string.IsNullOrEmpty(book.Slug)) return false;
         var bookSlug = book.Slug;
 
@@ -341,12 +350,12 @@ public class ContinuityExtractionService
             .FirstOrDefaultAsync(c => c.BookSlug == bookSlug && c.SourceKind == "chapter" && c.SourceKey == sourceKey, ct);
         if (cursor != null && cursor.ContentHash == hash) return false; // unchanged — no re-bill
 
-        var siblingChapterIds = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.ParentNodeId == book.Id)
-            .OrderBy(n => n.SortKey)
-            .Select(n => n.Id)
-            .ToListAsync(ct);
-        var chapterNumber = siblingChapterIds.IndexOf(chapterNodeId) + 1; // 1-indexed; 0 if not found (moved/detached)
+        // Reading-order position among every beat-holding node in the book, depth-first. For a book
+        // whose chapters hold beats directly this is identical to the old one-level sibling list;
+        // for a book with scenes it keeps working, where the one-level list returned nothing and
+        // numbered every chapter 0.
+        var readingOrder = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, book.Id, ct);
+        var chapterNumber = readingOrder.IndexOf(chapterNodeId) + 1; // 1-indexed; 0 if not found (moved/detached)
 
         log.LogInformation("[continuity] Re-extracting chapter {Title} ({Chapter}) for {BookSlug} — content changed since last extraction.",
             chapter.Title, chapterNumber, bookSlug);
@@ -403,11 +412,11 @@ public class ContinuityExtractionService
         var book = await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == bookNodeId, ct);
         if (book == null || string.IsNullOrEmpty(book.Slug)) return;
 
-        var chapterIds = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.ParentNodeId == bookNodeId)
-            .OrderBy(n => n.SortKey)
-            .Select(n => n.Id)
-            .ToListAsync(ct);
+        // Every beat-holding node in the book, in reading order — a one-level child list missed
+        // everything inside a collection, and misses every scene now that a chapter can hold them.
+        // A book whose chapters were skipped here got no cursor baseline, so the hash gate treated
+        // each of them as changed and re-billed extraction on the next save.
+        var chapterIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, bookNodeId, ct);
 
         foreach (var chapterId in chapterIds)
         {

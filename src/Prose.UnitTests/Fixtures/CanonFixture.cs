@@ -33,13 +33,17 @@ namespace Prose.UnitTests.Fixtures;
 /// fixture proves both that deep nesting is reachable and that the older chapter-holds-beats shape
 /// still works. Five beats; the book node owns none of them:</para>
 /// <code>
-/// BookA  "trap-book"                        ← owns NO beats (the trap)
-///   ├── Chapter  "Part One"                 ← holds a sequence, no beats of its own
-///   │     └── Sequence "The Approach"
-///   │           ├── Scene  "Arrival"        → beats 1, 2
-///   │           └── Sequel "The Reckoning"  → beat 3      (Kind="sequel")
-///   └── Chapter  "Flat Chapter"             → beats 4, 5  (legacy shape, still valid)
+/// Series "trap-series"                        ← the book is NOT the tree root
+///   └── BookA  "trap-book"                    ← owns NO beats (the trap)
+///         ├── Chapter  "Part One"             ← holds a sequence, no beats of its own
+///         │     └── Sequence "The Approach"
+///         │           ├── Scene  "Arrival"        → beats 1, 2
+///         │           └── Sequel "The Reckoning"  → beat 3      (Kind="sequel")
+///         └── Chapter  "Flat Chapter"         → beats 4, 5  (legacy shape, still valid)
 /// </code>
+/// <para>The series parent is deliberate: several real books sit under one, so any "walk up to the
+/// tree root to find the book" resolves the <em>series</em> instead. Walking to the nearest
+/// <c>BookNode</c> is the only correct rule.</para>
 /// <para>Depth from book to beat is 4 on one branch and 1 on the other. Any walk that assumes a
 /// fixed depth gets a wrong answer from one of them.</para>
 /// </summary>
@@ -57,6 +61,9 @@ public sealed class CanonFixture : IDisposable
     public IDbContextFactory<ProseDbContext> Factory { get; }
 
     // ── Universe A ────────────────────────────────────────────────────────────
+    /// <summary>Parent of <see cref="BookA"/>. A walk that stops at the tree root lands here — wrongly.</summary>
+    public Guid SeriesA { get; private set; }
+
     public Guid BookA { get; private set; }
     public Guid DeepChapter { get; private set; }
     public Guid Sequence { get; private set; }
@@ -105,7 +112,8 @@ public sealed class CanonFixture : IDisposable
         {
             using var db = Factory.CreateDbContext();
 
-            BookA = AddNode(db, new BookNode(), UniverseA, SharedBookSlug, "Trap Book", null, 100);
+            SeriesA = AddNode(db, new SeriesNode(), UniverseA, "trap-series", "Trap Series", null, 100);
+            BookA = AddNode(db, new BookNode(), UniverseA, SharedBookSlug, "Trap Book", SeriesA, 100);
             DeepChapter = AddNode(db, new ChapterNode(), UniverseA, "part-one", "Part One", BookA, 100);
             Sequence = AddNode(db, new SequenceNode(), UniverseA, "the-approach", "The Approach", DeepChapter, 100);
             Scene = AddNode(db, new SceneNode(), UniverseA, "arrival", "Arrival", Sequence, 100);
