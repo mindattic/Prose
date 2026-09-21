@@ -142,7 +142,10 @@ public class BeatGranularityService(IDbContextFactory<ProseDbContext> factory)
             .ToDictionaryAsync(m => m.BeatId, m => m.WordCount, ct);
 
         // 4. Optional review score stats
-        var reviewIds = await db.NodeReviews
+        // IgnoreQueryFilters: book.Id is an explicit id the caller already resolved, so the ambient
+        // universe scope is irrelevant here — without this, analysing a book outside the current
+        // scope returns no reviews and reports "no score data" rather than the scores that exist.
+        var reviewIds = await db.NodeReviews.IgnoreQueryFilters()
             .Where(r => r.NodeId == book.Id)
             .Select(r => r.Id)
             .ToListAsync(ct);

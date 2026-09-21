@@ -93,8 +93,12 @@ public static class ValidateChaptersCli
             // exporter — it simply never appears in the spine, so it can only be found by
             // comparing the node tree against the walk.
             var present = spine.Chapters.Select(c => c.NodeId).ToHashSet();
+            // Every node beneath the book that could hold beats, at any depth — a one-level child
+            // list never saw a chapter inside a collection, or any scene, so exactly the nodes
+            // most likely to be silently empty were the ones it could not report on.
+            var leafIds = await Prose.Core.Services.NodeWorkbenchService.GetLeafDescendantIdsAsync(db, book.Id);
             var declared = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                .Where(n => n.ParentNodeId == book.Id && n.Kind != "book")
+                .Where(n => leafIds.Contains(n.Id) && n.Id != book.Id)
                 .Select(n => new { n.Id, n.Title })
                 .ToListAsync();
             foreach (var node in declared.Where(n => !present.Contains(n.Id)))

@@ -692,7 +692,12 @@ public class NodeTools
         if (targetBeats <= 0)
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            targetBeats = await db.BeatNodes.CountAsync(sb => sb.NodeId == node.Id && true);
+            // Count across every beat-holding descendant. Asking the BOOK node for its own beats
+            // returns 0 by definition — beats belong to chapters and scenes — so this silently fell
+            // through to the 12 default for every book, however long, and the generated outline was
+            // sized for a book nobody has.
+            var leafIds = await Prose.Core.Services.NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id);
+            targetBeats = await db.BeatNodes.CountAsync(sb => leafIds.Contains(sb.NodeId));
             if (targetBeats <= 0) targetBeats = 12;
         }
 
