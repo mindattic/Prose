@@ -61,7 +61,13 @@ public static class ReadBeatsCli
             var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == g);
             nodeId = byId?.Id;
         }
-        nodeId ??= (await db.Nodes.AsNoTracking()
+        // IgnoreQueryFilters() here too: a slug/NodeCode is every bit as explicit as an id, and the
+        // convention cited above applies to both. Without it this lookup alone stayed subject to the
+        // ambient universe filter, so a book whose UniverseId does not match the --universe scope
+        // reported "Node not found" — indistinguishable from a typo. Found 2026-09-21: BCODA2 reads
+        // fine through --beat-positions and --archive-book (which resolve explicitly) but was
+        // unreadable here, which blocked a corpus-wide prose fix mid-pass.
+        nodeId ??= (await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .FirstOrDefaultAsync(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug))?.Id;
         if (nodeId == null)
         {
