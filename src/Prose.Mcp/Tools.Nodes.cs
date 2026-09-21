@@ -1040,7 +1040,7 @@ public class NodeTools
         return JsonSerializer.Serialize(new { count = rows.Count, nodes = rows }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.")]
+    [McpServerTool, Description("Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio. Does NOT rename slugs — use the CLI `prose --set-node-slug --slug <current> --to <new> --apply` (SlugRepairService), which pins the slug and moves every slug-carrying reference (beat audio paths, publication paths, on-disk directories) with it.")]
     public Task<string> UpdateBook(
         [Description("Node id (GUID) or slug.")] string idOrSlug,
         [Description("New title. Omit to leave unchanged.")] string? title = null,
@@ -1072,7 +1072,9 @@ public class NodeTools
             if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 
             await using var db = await dbFactory.CreateDbContextAsync();
-            var row = await db.Nodes.FindAsync(node.Id);
+            // IgnoreQueryFilters(): explicit id, not ambient scope (2026-08-17 convention) — plain
+            // FindAsync() respects the universe query filter (same bug class as DeleteNodeCli).
+            var row = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == node.Id);
             if (row == null) return JsonSerializer.Serialize(new { error = "node_row_missing", id = node.Id }, CanonTools.JsonOpts);
 
             if (title        != null) row.Title        = title;

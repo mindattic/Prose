@@ -33,7 +33,11 @@ public static class DeleteNodeCli
         var dbFactory = scope.ServiceProvider.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var workbench = scope.ServiceProvider.GetRequiredService<NodeWorkbenchService>();
         await using var db = await dbFactory.CreateDbContextAsync();
-        var target = await db.Nodes.FindAsync(deleteNodeId);
+        // IgnoreQueryFilters(): explicit --id, not ambient scope (2026-08-17 convention). Plain
+        // FindAsync() respects the universe query filter, so a node whose UniverseId doesn't
+        // match --universe reported "not found" even though it exists (same bug class fixed in
+        // ReadBeatsCli, commit 3b653ef29 — found again 2026-09-21 on BCODA2 here too).
+        var target = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == deleteNodeId);
         if (target == null) { Console.Error.WriteLine($"Node {deleteNodeId} not found."); return 1; }
 
         try

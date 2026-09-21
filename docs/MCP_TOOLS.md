@@ -1595,7 +1595,7 @@ Update one beat's prose. Recomputes the hash, marks the beat stale, and invalida
 
 ### `update_book`
 
-Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio.
+Update a node's metadata fields. Pass only the fields you want to change — omit the rest to leave them unchanged. Editable fields: title, description, kind, status, seed, code (NodeCode), voice_id, kdp_page_count. Status valid values: draft | ready | canon | archived. Code is uppercased and must be unique across non-null values — pass empty string to clear it. Does NOT touch beats or audio. Does NOT rename slugs — use the CLI `prose --set-node-slug --slug <current> --to <new> --apply` (SlugRepairService), which pins the slug and moves every slug-carrying reference (beat audio paths, publication paths, on-disk directories) with it.
 
 - `idOrSlug` (string, required) — Node id (GUID) or slug.
 - `title` (string, optional) — New title. Omit to leave unchanged.
@@ -2042,7 +2042,7 @@ List all species in the current universe. Returns canonical name (key used on Ch
 
 ### `delete_book_permanently`
 
-Permanently delete a book: hard-deletes its Books and Entities rows. This is DESTRUCTIVE — chapters/beats are not touched but the book record itself is gone from normal queries, recoverable only via Entities_History / prose --restore-entity. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). If you want a non-destructive backup instead, do not use this tool. Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.
+LEGACY. Permanently delete a book from the old pre-Nodes Records/Entities book shelf only (create_legacy_book writes here) — hard-deletes its Books and Entities rows. Does NOT reach current Nodes-table books: those will report error:'not_found' here even though they exist. For a current book, use the CLI `prose --delete-node --id <guid> [--force]` instead (never raw sqlcmd DELETE on Nodes). This tool is DESTRUCTIVE for what it does reach — chapters/beats are not touched but the book record itself is gone from normal queries, recoverable only via Entities_History / prose --restore-entity. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.
 
 - `id` (string, required) — Book id (32-char hex).
 - `confirmId` (string, required) — Confirmation token — must equal the same full book id. Mismatched or missing values abort the deletion.
