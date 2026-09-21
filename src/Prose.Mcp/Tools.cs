@@ -233,8 +233,8 @@ public class StoryTools
         return JsonSerializer.Serialize(c, CanonTools.JsonOpts);
     }
 
-    /// <summary>Permanently deletes a book — hard-deletes the Books and Entities rows (recoverable only via Entities_History / prose --restore-entity, not via this tool). Requires the caller to retype the full book id as a confirmation token, matching the UI's type-the-guid modal. This is destructive — for a non-destructive pre-edit snapshot instead, use prose --archive-book (BookArchiveService), not this tool.</summary>
-    [McpServerTool, Description("Permanently delete a book: hard-deletes its Books and Entities rows. This is DESTRUCTIVE — chapters/beats are not touched but the book record itself is gone from normal queries, recoverable only via Entities_History / prose --restore-entity. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). If you want a non-destructive backup instead, do not use this tool. Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.")]
+    /// <summary>LEGACY — permanently deletes a book from the old pre-Nodes Records/Entities shelf only (hard-deletes the Books and Entities rows, recoverable only via Entities_History / prose --restore-entity, not via this tool). Real books live in the Nodes table now and will always come back not_found here even though they exist — use `prose --delete-node --id &lt;guid&gt; [--force]` for those (see DeleteNodeCli / NodeWorkbenchService.DeleteNodeAsync; HARD RULE: never raw sqlcmd DELETE on Nodes). Requires the caller to retype the full book id as a confirmation token, matching the UI's type-the-guid modal. For a non-destructive pre-edit snapshot instead, use prose --archive-book (BookArchiveService).</summary>
+    [McpServerTool, Description("LEGACY. Permanently delete a book from the old pre-Nodes Records/Entities book shelf only (create_legacy_book writes here) — hard-deletes its Books and Entities rows. Does NOT reach current Nodes-table books: those will report error:'not_found' here even though they exist. For a current book, use the CLI `prose --delete-node --id <guid> [--force]` instead (never raw sqlcmd DELETE on Nodes). This tool is DESTRUCTIVE for what it does reach — chapters/beats are not touched but the book record itself is gone from normal queries, recoverable only via Entities_History / prose --restore-entity. Requires the caller to retype the full book id as a confirmation token (matches the UI's type-the-guid modal). Returns ok:true on success or error:'confirmation_mismatch' / error:'not_found' otherwise.")]
     public Task<string> DeleteBookPermanently(
         [Description("Book id (32-char hex).")] string id,
         [Description("Confirmation token — must equal the same full book id. Mismatched or missing values abort the deletion.")] string confirmId) =>
@@ -291,7 +291,13 @@ public class ContextTools
 
     public string SearchSemanticImpl(string query, int topK = 8)
     {
-        graph.EnsureLoaded();
+        // EnsureLoaded() trusts a non-empty on-disk graph cache file forever and never checks
+        // Records.UpdatedAt — a retired/merged entity (Entities row gone) stays in the cached
+        // TF-IDF index and can outrank its replacement indefinitely, surviving even a Hub
+        // restart (the cache is a file, not process memory). EnsureFresh() rebuilds when canon
+        // has moved since the snapshot. Found 2026-09-21: kyle-s-apartment-2f ranked #1 here
+        // while get_place/find_entities both correctly reported it gone.
+        graph.EnsureFresh();
         var hits = semanticIndex.Search(query, topK);
         var enriched = hits.Select(h =>
         {
