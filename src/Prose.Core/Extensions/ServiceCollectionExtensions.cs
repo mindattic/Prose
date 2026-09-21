@@ -1271,6 +1271,18 @@ public static class ServiceCollectionExtensions
         // sandbox so v3 can reach it at all. One call, temperature 0, 400 output tokens.
         services.AddSingleton<Prose.Core.Services.Contradiction.NarrativeContradictionChecker>();
 
+        // ── Composition: the rebuilt beat-write pipeline ─────────────────────────────────────
+        // Registered here rather than in one CLI's own container, which is where they lived while
+        // they were a separate v4\ project. That arrangement meant the ONLY process that could
+        // resolve them was a standalone diagnostic CLI — the Hub, which is the one process that
+        // reaches the database and serves both the editor and every forwarded command, could not
+        // construct them at all. Nothing routes through BeatWriteOrchestrator yet (that is the
+        // per-book flag, still to come); this is what makes routing to it possible.
+        services.AddSingleton<Prose.Core.Composition.Ledger.StoryStateQuery>();
+        services.AddSingleton<Prose.Core.Composition.Window.SceneWindowService>();
+        services.AddSingleton<Prose.Core.Composition.Obligations.SelfReportedPlantService>();
+        services.AddSingleton<Prose.Core.Composition.Orchestration.BeatWriteOrchestrator>();
+
         // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's
         // post-write extraction into one call — RFC 0009 §9.4 "item 1".
         services.AddSingleton<BeatExtractionService>();

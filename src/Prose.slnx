@@ -30,8 +30,5 @@
   <!-- Standalone escape hatch: deliberately has no Prose.Core reference. -->
   <Project Path="Prose.LlmCli/Prose.LlmCli.csproj" />
 
-  <!-- Transitional: composition-pipeline verbs, being folded into Prose.Cli. -->
-  <Project Path="Prose.V4.Cli/Prose.V4.Cli.csproj" />
-
   <Project Path="Prose.UnitTests/Prose.UnitTests.csproj" />
 </Solution>

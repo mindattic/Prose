@@ -244,6 +244,14 @@ if (UniverseBootstrap.RequestedSlug == null
         // (the file's own universe.id for import, a required positional slug for export/sync) —
         // an ambient scope would defeat the point of a cross-app interchange format.
         "--universe-import", "--universe-export", "--universe-sync",
+        // The composition pipeline's own verbs: every one takes an explicit --beat/--node and
+        // resolves the book root from the beat's own rows via IgnoreQueryFilters()
+        // (see CompositionCli).
+        "--composition",
+        // Temporal-history forensics: raw FOR SYSTEM_TIME queries keyed by an explicit beat or
+        // node id — history rows predate whatever the ambient universe is now (see
+        // TemporalHistoryCli).
+        "--history",
         // Portable-writing-service plan, Phase 4: takes an explicit positional universe slug
         // (BarksExportService.ExportAsync), same shape as --universe-export above.
         "--barks-export",
@@ -490,6 +498,26 @@ if (args.Contains("--detect-mojibake"))
 if (args.Contains("--obligations"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("ObligationCli", args);
+    return;
+}
+
+// prose --composition <verb> …
+// The rebuilt beat-write pipeline's verbs. These ran as their own Prose.V4.Cli executable with a
+// local DbContext while the pipeline lived in a separate v4\ folder; folded in 2026-09-20 they
+// forward like every other command, so the Hub's resident services do the work and the rule that
+// only the Hub reaches the database holds for them too.
+if (args.Contains("--composition"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CompositionCli", args);
+    return;
+}
+
+// prose --history <verb> …
+// Read-only SQL Server temporal-history forensics — what a beat used to say, which day a book was
+// rewritten wholesale. Free: no LLM call, no write.
+if (args.Contains("--history"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("TemporalHistoryCli", args);
     return;
 }
 

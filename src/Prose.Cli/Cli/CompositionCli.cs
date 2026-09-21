@@ -1,90 +1,46 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Prose.Core.Data;
-using Prose.Core.Extensions;
-using Prose.Core.Services;
-using Prose.Core.Services.Contradiction;
 using Prose.Core.Composition.Ledger;
 using Prose.Core.Composition.Obligations;
 using Prose.Core.Composition.Orchestration;
 using Prose.Core.Composition.Window;
+using Prose.Core.Data;
+using Prose.Core.Services;
+using Prose.Core.Services.Contradiction;
 
-Console.InputEncoding = System.Text.Encoding.UTF8;
-Console.OutputEncoding = System.Text.Encoding.UTF8;
+namespace Prose.Cli;
 
-// Phase 0 acceptance-test CLI (v4 plan). Standalone, local DB access — see the .csproj comment
-// for why this deliberately does NOT go through HubCliClient's Stage C forwarding.
-string Flag(string[] a, string name) { var i = Array.IndexOf(a, name); return i >= 0 && i + 1 < a.Length ? a[i + 1] : ""; }
-
-if (args.Length == 0 || args[0] is "-h" or "--help")
+/// <summary>
+/// <c>prose --composition &lt;verb&gt; …</c> — the rebuilt beat-write pipeline's own commands.
+///
+/// <para>These ran as a separate <c>Prose.V4.Cli</c> executable while the pipeline lived in a
+/// separate <c>v4\</c> folder. Folded in here 2026-09-20 with the rest of that tree: as a handler
+/// class in this namespace they are reached by <c>Prose.Hub</c>'s <c>CliDispatch</c> reflection
+/// like every other command, which means they run against the Hub's resident services instead of
+/// a second process opening its own connection to the same database.</para>
+///
+/// <list type="bullet">
+///   <item><c>ledger-query --node &lt;slug|guid&gt; --beat &lt;guid&gt;</c> — the OnScreenSnapshot for one beat.</item>
+///   <item><c>window-query --node &lt;ref&gt; --beat &lt;guid&gt; [--size N]</c> — the verbatim prior-beat window.</item>
+///   <item><c>sample --node &lt;ref&gt; [--count N] [--size N]</c> — both of the above across N beats, for review.</item>
+///   <item><c>preview-generate …</c> — one real billed call; prints the prompt and the result, saves NOTHING.</item>
+///   <item><c>generate-and-save …</c> — inserts the beat through NodeWorkbenchService. Sandbox books only.</item>
+///   <item><c>calibrate-gate</c> — the contradiction checker against 6 hand-planted fixtures.</item>
+///   <item><c>calibrate-plants --node &lt;ref&gt;</c> — self-reported plants over every beat, one call each.</item>
+/// </list>
+///
+/// <para>The two <c>calibrate-*</c> verbs and both <c>*-generate</c> verbs spend real money, one
+/// LLM call at a time, and say so before they start.</para>
+/// </summary>
+public static class CompositionCli
 {
-    Console.WriteLine("""
-        prose-v4 <verb> [options]
-
-        Verbs:
-          ledger-query --node <slug|guid> --beat <guid>
-              Print the OnScreenSnapshot (StoryStateQuery) for one beat.
-
-          window-query --node <slug|guid> --beat <guid> [--size N (default 15)]
-              Print the SceneWindowService window (verbatim prior beats) before one beat.
-
-          sample --node <slug|guid> [--count N (default 10)] [--size N (default 15)]
-              Phase 0 acceptance test: runs ledger-query + window-query on N beats spread evenly
-              across the book, for manual review (the plan's own acceptance test: confirm zero
-              fabricated facts by inspection).
-
-          preview-generate --node <slug|guid> --after-beat <guid> --goal "<text>"
-              [--characters <guid>[,<guid>...]] [--pov "<name>"] [--location "<name>"] [--size N]
-              Phase 1: assembles the real window (chapter-blind) + on-screen facts for the given
-              characters, calls the LLM ONCE, and PRINTS the result. Never writes to the database
-              or any book — this is a preview only, by design (see BeatWriteOrchestrator's doc
-              comment). Prints the exact prompt block lengths and the chapter span the window
-              covers, so a chapter-boundary reset (v3's bug) would be visibly absent here.
-
-          generate-and-save --node <slug|guid> --after-beat <guid> --goal "<text>"
-              --characters <guid>=<Name>[,<guid>=<Name>...] [--pov "<name>"] [--location "<name>"]
-              [--size N]
-              Phase 2: same as preview-generate, but ACTUALLY INSERTS the generated beat (via
-              NodeWorkbenchService, the same save path every other write uses) and runs one narrow
-              follow-up call asking the writer to self-report what it just changed, recording those
-              as declared EntityStateEvents rows. Only ever point this at the BCODA2 sandbox — never
-              a live book — until Phase 5 passes review.
-
-          calibrate-gate
-              Phase 3: runs NarrativeContradictionChecker against 6 hand-planted fixtures (3 must
-              be caught, 3 must not be flagged) — the GCTOC/GCSH/GCOBN discipline applied to this
-              checker specifically. Real, billed LLM calls, one per fixture. Run this BEFORE trusting
-              the gate on BCODA2 content.
-
-          calibrate-plants --node <slug|guid>
-              Phase 4: runs SelfReportedPlantService over EVERY beat of the given book, in reading
-              order, one real billed LLM call per beat. Prints each plant found and the total open
-              count. Run on GCOBN (expect near-zero, vs the blanket miner's 25/20) and on
-              GCTOC/GCSH (expect the known real plants still caught) before trusting this mechanism.
-        """);
-    return;
-}
-
-var host = Host.CreateDefaultBuilder(args)
-    .ConfigureLogging(lb => lb.ClearProviders()) // quiet — this is a read-only diagnostic CLI
-    .ConfigureServices((_, svc) =>
+    public static async Task RunAsync(string[] args, IServiceProvider services)
     {
-        svc.AddProseServices();
-        svc.AddSingleton<StoryStateQuery>();
-        svc.AddSingleton<SceneWindowService>();
-        svc.AddSingleton<BeatWriteOrchestrator>();
-        svc.AddSingleton<NarrativeContradictionChecker>();
-        svc.AddSingleton<SelfReportedPlantService>();
-    })
-    .Build();
+        var verb = args.SkipWhile(a => a != "--composition").Skip(1).FirstOrDefault() ?? "";
+        if (string.IsNullOrWhiteSpace(verb) || verb is "-h" or "--help") { PrintHelp(); return; }
 
-var services = host.Services;
-var verb = args[0];
-
-switch (verb)
-{
+        switch (verb)
+        {
     case "ledger-query":
     {
         var nodeRef = Flag(args, "--node");
@@ -304,10 +260,56 @@ switch (verb)
         Console.WriteLine($"[calibrate-plants] {totalOpens} total plant(s) opened across {ordered.Count} beats.");
         break;
     }
-    default:
-        Console.Error.WriteLine($"Unknown verb '{verb}'. Run with --help.");
-        break;
-}
+            default:
+                Console.Error.WriteLine($"Unknown composition verb '{verb}'.");
+                PrintHelp();
+                break;
+        }
+    }
+
+    private static string Flag(string[] a, string name)
+    {
+        var i = Array.IndexOf(a, name);
+        return i >= 0 && i + 1 < a.Length ? a[i + 1] : "";
+    }
+
+    private static void PrintHelp() => Console.WriteLine("""
+        prose --composition <verb> [options]
+
+          ledger-query --node <slug|guid> --beat <guid>
+              Print the OnScreenSnapshot (StoryStateQuery) for one beat.
+
+          window-query --node <slug|guid> --beat <guid> [--size N (default 15)]
+              Print the SceneWindowService window (verbatim prior beats) before one beat.
+
+          sample --node <slug|guid> [--count N (default 10)] [--size N (default 15)]
+              Runs ledger-query + window-query on N beats spread evenly across the book, for
+              manual review: confirm by inspection that no fact is fabricated.
+
+          preview-generate --node <slug|guid> --after-beat <guid> --goal "<text>"
+              [--characters <guid>[,<guid>...]] [--pov "<name>"] [--location "<name>"] [--size N]
+              Assembles the real window (chapter-blind) + on-screen facts, calls the LLM ONCE and
+              PRINTS the result. Never writes to the database. Prints each prompt block's length
+              and the chapter span the window covers, so a chapter-boundary reset would be
+              visibly absent.
+
+          generate-and-save --node <slug|guid> --after-beat <guid> --goal "<text>"
+              --characters <guid>=<Name>[,<guid>=<Name>...] [--pov "<name>"] [--location "<name>"]
+              [--size N]
+              As preview-generate, but INSERTS the beat via NodeWorkbenchService — the same save
+              path every other write uses — then asks the writer to self-report what it changed
+              and records those as declared EntityStateEvents. Sandbox books only.
+
+          calibrate-gate
+              NarrativeContradictionChecker against 6 hand-planted fixtures (3 must be caught,
+              3 must not be flagged). Real billed calls, one per fixture. Run this before
+              trusting the gate on real content.
+
+          calibrate-plants --node <slug|guid>
+              SelfReportedPlantService over EVERY beat in reading order, one billed call each.
+              Run on GCOBN (expect near-zero) and GCTOC/GCSH (expect the known plants) before
+              trusting the mechanism.
+        """);
 
 static void PrintSnapshot(Guid beatId, OnScreenSnapshot snapshot, string indent = "")
 {
@@ -350,4 +352,5 @@ static async Task<Guid?> ResolveBookRootForBeatAsync(ProseDbContext db, Guid bea
         walk = node.ParentNodeId.Value;
     }
     return walk;
+}
 }
