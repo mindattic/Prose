@@ -380,9 +380,14 @@ public static class NodeFactory
     {
         var node = kind?.Trim().ToLowerInvariant() switch
         {
-            "series" or "saga" or "anthology"            => (Node)new SeriesNode(),
-            "chapter" or "scene" or "episode" or "snippet" => new ChapterNode(),
-            _                                            => new BookNode(),
+            "series" or "saga" or "anthology"   => (Node)new SeriesNode(),
+            "sequence" or "act"                 => new SequenceNode(),
+            // "scene" used to land on ChapterNode — the label existed, the structure did not.
+            // Existing rows keep whatever NodeType they were written with; only new nodes are
+            // affected by this mapping.
+            "scene" or "sequel"                 => new SceneNode(),
+            "chapter" or "episode" or "snippet" => new ChapterNode(),
+            _                                   => new BookNode(),
         };
         if (!string.IsNullOrWhiteSpace(kind)) node.Kind = kind.Trim();
         return node;
@@ -391,9 +396,11 @@ public static class NodeFactory
     /// <summary>New empty node of the same concrete type as <paramref name="like"/>.</summary>
     public static Node CreateLike(Node like) => like switch
     {
-        SeriesNode  => new SeriesNode(),
-        ChapterNode => new ChapterNode(),
-        _           => new BookNode(),
+        SeriesNode   => new SeriesNode(),
+        SequenceNode => new SequenceNode(),
+        SceneNode    => new SceneNode(),
+        ChapterNode  => new ChapterNode(),
+        _            => new BookNode(),
     };
 }
 
@@ -414,11 +421,45 @@ public class BookNode : Node
     public BookNode() { Kind = "book"; }
 }
 
-/// <summary>Organizational unit inside a book. Parent is a BookNode; holds
-/// beats, never child nodes.</summary>
+/// <summary>Organizational unit inside a book. Parent is a BookNode.
+///
+/// <para>Holds beats directly, or — where the book has been given a finer structure — holds
+/// <see cref="SequenceNode"/>s or <see cref="SceneNode"/>s that hold the beats. It may also hold
+/// child ChapterNodes (the Collection pattern, ARCHITECTURE §2c). Anything walking down to beats
+/// must therefore recurse; a one-level descent is the single most common bug in this codebase.</para></summary>
 public class ChapterNode : Node
 {
     public ChapterNode() { Kind = "chapter"; }
+}
+
+/// <summary>
+/// A cluster of scenes building to a mid-sized turning point — the screenwriting sense, useful for
+/// a multi-scene chapter or an act. Optional: a chapter may hold scenes directly.
+/// Parent is a ChapterNode; children are <see cref="SceneNode"/>s. Never holds beats itself.
+/// </summary>
+public class SequenceNode : Node
+{
+    public SequenceNode() { Kind = "sequence"; }
+}
+
+/// <summary>
+/// The unit that actually plays: a run of beats in one continuous time and place, with a goal, an
+/// obstacle and an outcome. Parent is a ChapterNode or a <see cref="SequenceNode"/>; children are
+/// beats.
+///
+/// <para><b>Scene vs. sequel.</b> Swain's sequel — the reaction/dilemma/decision unit that follows a
+/// scene's disaster — is modelled as this same type with <see cref="Node.Kind"/> set to
+/// <c>"sequel"</c> rather than as a node type of its own. A sequel is scene-sized, sits at the same
+/// level, and holds beats identically; only its dramatic function differs. Kind is the free-form
+/// label, NodeType is the structural truth, so this costs no schema change and keeps one set of
+/// behaviour instead of two that must be kept in step.</para>
+/// </summary>
+public class SceneNode : Node
+{
+    public SceneNode() { Kind = "scene"; }
+
+    /// <summary>The Swain reaction unit: same structure, different dramatic job.</summary>
+    public static SceneNode Sequel() => new() { Kind = "sequel" };
 }
 
 // ── NodeAmendment ───────────────────────────────────────────────────────

@@ -317,6 +317,8 @@ public class ProseDbContext : DbContext
     public DbSet<SeriesNode>       SeriesNodes       => Set<SeriesNode>();
     public DbSet<BookNode>         BookNodes         => Set<BookNode>();
     public DbSet<ChapterNode>      ChapterNodes      => Set<ChapterNode>();
+    public DbSet<SequenceNode>     SequenceNodes     => Set<SequenceNode>();
+    public DbSet<SceneNode>        SceneNodes        => Set<SceneNode>();
     public DbSet<BeatNode>         BeatNodes         => Set<BeatNode>();
     public DbSet<NodePublication>  NodePublications  => Set<NodePublication>();
     public DbSet<NodeAudioEvent>   NodeAudioEvents   => Set<NodeAudioEvent>();
@@ -847,14 +849,23 @@ public class ProseDbContext : DbContext
         });
         b.Entity<Node>(e =>
         {
-            // Table-per-hierarchy: SeriesNode / BookNode / ChapterNode share
-            // the Nodes table, discriminated by NodeType. Kind remains the
-            // free-form display label; NodeType is the structural truth.
+            // Table-per-hierarchy: every node type shares the Nodes table, discriminated by
+            // NodeType. Kind remains the free-form display label; NodeType is the structural truth.
+            //
+            // The full ladder is Series → Book → Chapter → Sequence → Scene → Beat, with every
+            // layer below Book optional: a chapter may hold beats directly, or hold scenes, or
+            // hold sequences that hold scenes. Adding a layer costs nothing here — TPH means a new
+            // node type is a discriminator value, not a column — but it does mean NOTHING may
+            // assume a fixed depth between a book and its beats. Walk with
+            // NodeWorkbenchService.GetLeafDescendantIdsAsync; a one-level descent silently returns
+            // zero and reads as "nothing to do".
             e.ToTable("Nodes");
             e.HasDiscriminator<string>("NodeType")
                 .HasValue<SeriesNode>("series")
                 .HasValue<BookNode>("book")
-                .HasValue<ChapterNode>("chapter");
+                .HasValue<ChapterNode>("chapter")
+                .HasValue<SequenceNode>("sequence")
+                .HasValue<SceneNode>("scene");
             e.Property("NodeType").HasMaxLength(20);
             e.HasKey(x => x.Id);
             e.Property(x => x.Slug).HasMaxLength(200).IsRequired();
