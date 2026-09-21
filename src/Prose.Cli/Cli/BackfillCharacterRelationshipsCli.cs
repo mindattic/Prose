@@ -33,18 +33,51 @@ public static class BackfillCharacterRelationshipsCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
+        // --universe was advertised in this command's own usage line but never parsed, so passing it
+        // silently produced a corpus-wide run and a corpus-wide count. Anyone scoping a question to
+        // one book got an answer about all 57, which is how "307 unresolved" first read as Bushido
+        // Coda's number when almost none of it was. Reject what we do not understand, and honour it
+        // when we do.
+        var known = new[] { "--backfill-character-relationships", "--dry-run", "--json", "--universe" };
+        var unknown = args.Where(a => a.StartsWith("--", StringComparison.Ordinal) && !known.Contains(a)).ToList();
+        if (unknown.Count > 0)
+        {
+            Console.Error.WriteLine($"unknown flag(s): {string.Join(", ", unknown)}");
+            Console.Error.WriteLine("usage: prose --backfill-character-relationships [--universe <slug>] [--dry-run]");
+            return 2;
+        }
+
         var dryRun = args.Contains("--dry-run");
+        var universeArg = Array.IndexOf(args, "--universe") is var ui && ui >= 0 && ui + 1 < args.Length
+            ? args[ui + 1] : null;
+
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
+
+        Guid? scopeUniverseId = null;
+        if (!string.IsNullOrWhiteSpace(universeArg))
+        {
+            var uc = services.GetRequiredService<IUniverseContext>();
+            var match = uc.ListUniverses()
+                .FirstOrDefault(u => string.Equals(u.Slug, universeArg, StringComparison.OrdinalIgnoreCase));
+            if (match == null)
+            {
+                Console.Error.WriteLine($"unknown universe: {universeArg}");
+                return 1;
+            }
+            scopeUniverseId = match.Id;
+        }
 
         var unresolved = await (
             from cr in db.CharacterRelationships.IgnoreQueryFilters()
             where cr.TargetEntityId == null
             join owner in db.Entities.IgnoreQueryFilters() on cr.CharacterId equals owner.Id
+            where scopeUniverseId == null || owner.UniverseId == scopeUniverseId
             select new { cr.Id, cr.CharacterId, cr.TargetName, OwnerUniverseId = owner.UniverseId }
         ).ToListAsync();
 
-        Console.WriteLine($"[backfill-character-relationships] {unresolved.Count} unresolved row(s) found.");
+        var scopeLabel = universeArg == null ? "corpus-wide (all universes)" : $"universe {universeArg}";
+        Console.WriteLine($"[backfill-character-relationships] {unresolved.Count} unresolved row(s) found in {scopeLabel}.");
         if (unresolved.Count == 0) return 0;
 
         int resolved = 0, resolvedByAlias = 0, ambiguous = 0, notFound = 0;
