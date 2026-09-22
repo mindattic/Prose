@@ -58,7 +58,13 @@ public class BookArchiveService(IDbContextFactory<ProseDbContext> dbFactory)
                 snapshotMd.AppendLine(beat.Text.Trim());
                 snapshotMd.AppendLine();
                 beatCount++;
-                wordCount += beat.Text.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries).Length;
+                // ProseWordCount, not a bare Split: beat text carries <entity> wrappers, and
+                // splitting the raw string counts repo="character" and guid="019d6143-…" as
+                // words. It overstated a heavily-tagged 192,148-word book by 7,260 words (3.8%),
+                // and the error moves with the TAGS — every beat save re-derives entity mentions,
+                // so this number could change while not one word of prose had. That made the one
+                // figure an author is told to check losslessness against unfit for the job.
+                wordCount += ProseWordCount.Count(beat.Text);
             }
         }
 

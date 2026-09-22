@@ -7,10 +7,12 @@ namespace Prose.Core.Services;
 /// <summary>
 /// A book's reading order with its chapter boundaries made explicit, computed in one place.
 ///
-/// <para><b>The node transition is the chapter boundary</b>, with one documented legacy exception
-/// below. Before this service, four call sites each decided that question for themselves — and they
-/// had already drifted apart, which is the defect this exists to end. On a flat single-node book
-/// carrying <c>IsChapterStart</c> markers, the three of them produced three different books:</para>
+/// <para><b>The chapter boundary is a transition between UNITS, and a unit is the nearest
+/// ancestor-or-self of a beat's node that is not a sub-chapter layer</b> (see
+/// <see cref="IsSubChapterLayer"/>), with one documented legacy exception below. Before this
+/// service, four call sites each decided that question for themselves — and they had already
+/// drifted apart, which is the defect this exists to end. On a flat single-node book carrying
+/// <c>IsChapterStart</c> markers, the three of them produced three different books:</para>
 /// <list type="bullet">
 ///   <item><c>DocxExportService</c> — <c>if (nodeChanged)</c>: one chapter.</item>
 ///   <item><c>ManuscriptExportService.LoadAsync</c> (epub/pdf) — <c>nodeChanged || flatMarker</c>: N chapters.</item>
@@ -28,9 +30,23 @@ namespace Prose.Core.Services;
 /// on: the author decides whether a beat that opens with "Chapter 7" is a heading or a sentence
 /// (RFC 0009).</para>
 ///
-/// <para>Grouping is "a consecutive run of beats sharing a node id", which is what the exporters
-/// already did. That falls out correctly for a chapter that has been split into a nested Collection:
-/// each leaf becomes its own group, in reading order, exactly as it prints today.</para>
+/// <para>Grouping is "a consecutive run of beats sharing a UNIT id". It used to be "sharing a node
+/// id", which was the same thing only while the ladder was Book → Chapter → Beat. It stopped being
+/// the same thing the first time a chapter was given a scene layer: <c>SceneDerivationService</c>
+/// repoints the beats onto new <see cref="SceneNode"/>s, so N scene ids arrive where one chapter id
+/// used to, and the parent chapter — now holding no beats of its own — never appears in the walk at
+/// all and so could not appear in the spine. A 46-chapter novel exported as 66 chapters headed
+/// <c>sidewalk</c>, <c>home terminal</c>, <c>transit platform</c>, and lost the heading of the
+/// chapter that had been split. Rolling sub-chapter layers up to their chapter fixes every exporter
+/// at once, because they all walk this.</para>
+///
+/// <para>The roll-up is stated <b>negatively</b> — skip upward past scene/sequence layers only —
+/// so a chapter split into a nested Collection (Chapter → Chapter → Beat) is untouched: each leaf
+/// sub-chapter is still its own unit, in reading order, exactly as it prints today.</para>
+///
+/// <para>The scene layer is not lost: <see cref="SpineBeat.NodeId"/> remains the beat's <i>direct</i>
+/// node, so the spine reports both altitudes at once, and <see cref="SpineChapter.SubUnitNodeIds"/>
+/// is the named way to ask which nodes a unit's beats actually hang off.</para>
 /// </summary>
 public sealed class BookSpineService(IDbContextFactory<ProseDbContext> dbFactory)
 {
@@ -67,6 +83,13 @@ public sealed class BookSpineService(IDbContextFactory<ProseDbContext> dbFactory
         IReadOnlyList<SpineBeat>        Beats)
     {
         public int WordCount => Beats.Sum(b => b.WordCount);
+
+        /// <summary>The nodes this unit's beats actually hang off, in first-sighting order. For a
+        /// plain chapter that is just <see cref="NodeId"/>; for a chapter with a scene layer it is
+        /// the scenes. This is how a consumer sees the sub-chapter structure the spine rolled up —
+        /// notably <c>--validate-chapters</c>, which would otherwise report every scene as an
+        /// <c>empty_chapter</c> that "prints in no export" when in fact its prose prints fine.</summary>
+        public IEnumerable<Guid> SubUnitNodeIds => Beats.Select(b => b.NodeId).Distinct();
     }
 
     /// <summary>One beat in reading-order context.</summary>
@@ -141,18 +164,25 @@ public sealed class BookSpineService(IDbContextFactory<ProseDbContext> dbFactory
         // book outside whatever universe the ambient scope happens to hold loses every title — the
         // same bug class the walk itself documents.
         var nodeIds = ordered.Select(o => o.NodeId).Distinct().ToList();
-        var titles = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => nodeIds.Contains(n.Id))
-            .ToDictionaryAsync(n => n.Id, n => n.Title, ct);
+        var nodes = await LoadWithAncestorsAsync(db, nodeIds, ct);
 
         // The legacy exception: only a book whose beats all hang off ONE node can have a chapter
         // opened by a beat marker. A properly chaptered book ignores the markers entirely.
+        //
+        // Computed on the raw BEAT-BEARING node ids, deliberately, not on unit ids: a single-chapter
+        // book that has been scene-derived hangs its beats off several scene nodes that all roll up
+        // to one unit, and testing units would call that flat and let stray IsChapterStart markers
+        // shatter it into chapters it never had.
         var flatBook = nodeIds.Count == 1;
+
+        // Each beat-bearing node's unit — itself, or the nearest ancestor that is not a scene or
+        // sequence. This is the whole fix; everything below is unchanged except for asking it.
+        var unitOf = nodeIds.ToDictionary(id => id, id => ResolveUnit(id, nodes, bookNodeId));
 
         var chapters = new List<SpineChapter>();
         var open = new List<SpineBeat>();
         SpineChapter? pending = null;
-        var currentNodeId = Guid.Empty;
+        var currentUnitId = Guid.Empty;
         var beatOrdinal = 0;
 
         void CloseChapter()
@@ -169,15 +199,16 @@ public sealed class BookSpineService(IDbContextFactory<ProseDbContext> dbFactory
             var beatTitle = string.IsNullOrWhiteSpace(beat.Title) ? null : beat.Title!.Trim();
             var titleIsChapterShaped = ChapterTitle.IsLegacyBeatHeading(beatTitle);
 
-            var nodeChanged = entry.NodeId != currentNodeId;
+            var unitId = unitOf[entry.NodeId];
+            var unitChanged = unitId != currentUnitId;
             var flatMarker = flatBook && beat.IsChapterStart && titleIsChapterShaped;
 
-            if (nodeChanged || flatMarker)
+            if (unitChanged || flatMarker)
             {
                 CloseChapter();
-                currentNodeId = entry.NodeId;
+                currentUnitId = unitId;
 
-                var nodeTitle = titles.GetValueOrDefault(entry.NodeId, "").Trim();
+                var nodeTitle = nodes.GetValueOrDefault(unitId)?.Title.Trim() ?? "";
                 var ordinal = chapters.Count + 1;
 
                 // The precedence both exporters already implement. A beat title only outranks the
@@ -190,13 +221,13 @@ public sealed class BookSpineService(IDbContextFactory<ProseDbContext> dbFactory
                     : beatTitle                  ?? ChapterTitle.Format(ordinal, null);
 
                 pending = new SpineChapter(
-                    entry.NodeId,
+                    unitId,
                     ordinal,
                     nodeTitle,
                     heading,
                     ChapterTitle.Parse(nodeTitle),
-                    entry.NodeId == bookNodeId,
-                    OpenedByBeatMarker: flatMarker && !nodeChanged,
+                    unitId == bookNodeId,
+                    OpenedByBeatMarker: flatMarker && !unitChanged,
                     Beats: []);
             }
 
@@ -225,6 +256,91 @@ public sealed class BookSpineService(IDbContextFactory<ProseDbContext> dbFactory
 
         CloseChapter();
         return new BookSpine(bookNodeId, chapters);
+    }
+
+    /// <summary>What a node is for the purpose of chapter boundaries, read off the TPH
+    /// discriminator.</summary>
+    private sealed record NodeRow(Guid Id, Guid? ParentNodeId, string Title, string NodeType);
+
+    /// <summary>The layers that sit BELOW a chapter and must never print as one.
+    ///
+    /// <para>Tested on <c>NodeType</c>, the discriminator, and never on <c>Kind</c>. <c>Node</c>'s
+    /// own header states the rule — the CLR type is the structural truth, <c>Kind</c> is a
+    /// free-form category hint the author can edit — and three consequences follow. Legacy rows
+    /// where <c>Kind="scene"</c> sits on a <c>ChapterNode</c> have printed as chapters their whole
+    /// life and keep doing so, so this change is a no-op for them. <c>SceneNode.Sequel()</c> keeps
+    /// <c>Kind="sequel"</c> on a <c>SceneNode</c>, so sequels roll up without naming them here. And
+    /// a <c>ChapterNode</c> somebody typed <c>Kind="scene"</c> on does not silently vanish from the
+    /// manuscript.</para>
+    ///
+    /// <para>A <c>SequenceNode</c> holds scenes rather than beats today, but it is listed because a
+    /// Chapter → Sequence → Scene book must roll up two levels, and because a sequence that is
+    /// given beats by hand must not become a chapter either.</para></summary>
+    private static bool IsSubChapterLayer(NodeRow node) =>
+        node.NodeType is "scene" or "sequence";
+
+    /// <summary>The nodes the walk found, plus every ancestor needed to resolve their units.
+    ///
+    /// <para>The walk hands out each beat's DIRECT node id and nothing else, so the parent chain is
+    /// not available from it. Closing over ancestors here — rather than widening
+    /// <c>OrderedBeat</c> — keeps the walk dumb and confines a fact only the spine needs to the
+    /// spine. The ladder tops out at Series → Book → Chapter → Sequence → Scene, so this is one
+    /// extra cheap read per level, usually one in total and none at all for a book with no scene
+    /// layer.</para></summary>
+    private static async Task<Dictionary<Guid, NodeRow>> LoadWithAncestorsAsync(
+        ProseDbContext db, List<Guid> nodeIds, CancellationToken ct)
+    {
+        var known = new Dictionary<Guid, NodeRow>();
+        var wanted = new List<Guid>(nodeIds);
+
+        // Bounded by the ladder's depth; the visited set makes a cyclic parent chain terminate
+        // rather than hang, the same guard WalkAsync carries for the same reason.
+        while (wanted.Count > 0)
+        {
+            // IgnoreQueryFilters(): these ids came out of the walk, already resolved. Without it a
+            // book outside whatever universe the ambient scope happens to hold loses every title —
+            // the same bug class the walk itself documents.
+            var rows = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+                .Where(n => wanted.Contains(n.Id))
+                .Select(n => new NodeRow(n.Id, n.ParentNodeId, n.Title, EF.Property<string>(n, "NodeType")))
+                .ToListAsync(ct);
+
+            foreach (var row in rows) known[row.Id] = row;
+
+            wanted = rows
+                .Where(r => r.ParentNodeId is not null && !known.ContainsKey(r.ParentNodeId.Value))
+                .Select(r => r.ParentNodeId!.Value)
+                .Distinct()
+                .ToList();
+        }
+
+        return known;
+    }
+
+    /// <summary>The unit a beat-bearing node belongs to: itself, or the nearest ancestor that is
+    /// not a sub-chapter layer.
+    ///
+    /// <para>Never rolls up into the book root. A scene parented straight to a book is creatable,
+    /// and merging those would collapse a whole book into one headingless unit and trip
+    /// <c>--validate-chapters</c>'s <c>unfiled_beats</c> blocker. A scene with no real chapter
+    /// ancestor stays its own unit — visibly wrong in the validator's terms, which is where a
+    /// structural defect belongs, rather than silently wrong in the manuscript.</para></summary>
+    private static Guid ResolveUnit(Guid nodeId, IReadOnlyDictionary<Guid, NodeRow> nodes, Guid bookNodeId)
+    {
+        if (!nodes.TryGetValue(nodeId, out var node) || !IsSubChapterLayer(node)) return nodeId;
+
+        var visited = new HashSet<Guid> { nodeId };
+        var current = node;
+        while (current.ParentNodeId is { } parentId
+               && visited.Add(parentId)
+               && parentId != bookNodeId
+               && nodes.TryGetValue(parentId, out var parent))
+        {
+            if (!IsSubChapterLayer(parent)) return parentId;
+            current = parent;
+        }
+
+        return nodeId;
     }
 
     /// <summary>The first line of a beat, short enough to sit in a list. This is what makes a beat

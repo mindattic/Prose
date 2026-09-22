@@ -92,7 +92,16 @@ public static class ValidateChaptersCli
             // A chapter node that holds no beats anywhere beneath it is invisible to every
             // exporter — it simply never appears in the spine, so it can only be found by
             // comparing the node tree against the walk.
-            var present = spine.Chapters.Select(c => c.NodeId).ToHashSet();
+            //
+            // A unit's own node id is not enough: a chapter with a scene layer holds its beats on
+            // its scenes, and the spine rolls those up, so the scenes are leaves that are correctly
+            // not units. Counting only unit ids would report every one of them as an empty chapter
+            // that "prints in no export" while its prose prints fine. SubUnitNodeIds is the nodes
+            // the beats actually hang off — present means "its prose reaches a reader", which is
+            // what this finding is about.
+            var present = spine.Chapters
+                .SelectMany(c => c.SubUnitNodeIds.Append(c.NodeId))
+                .ToHashSet();
             // Every node beneath the book that could hold beats, at any depth — a one-level child
             // list never saw a chapter inside a collection, or any scene, so exactly the nodes
             // most likely to be silently empty were the ones it could not report on.

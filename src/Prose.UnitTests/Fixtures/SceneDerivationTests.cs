@@ -119,6 +119,41 @@ public class SceneDerivationTests
         }
     }
 
+    /// <summary>
+    /// The whole requirement in one test: <b>derivation is invisible to the reader.</b>
+    ///
+    /// <para>Deriving scenes changes the node tree under a chapter and nothing else, so the spine
+    /// every exporter walks must come out identical — same units, same headings, same word count.
+    /// It did not: the derived scenes became chapters of their own, headed by their location
+    /// strings, and the chapter they were split out of lost its heading entirely because it no
+    /// longer held beats.</para>
+    /// </summary>
+    [Test]
+    public async Task DerivingScenes_LeavesTheSpineTheReaderSeesUnchanged()
+    {
+        using var _ = CanonFixture.ScopeTo(CanonFixture.UniverseA);
+        await GivePlacesAsync((3, "The Noodle Counter"), (4, "The Rain Outside"));
+
+        var spines = new BookSpineService(fixture.Factory);
+        var before = await spines.GetAsync(fixture.BookA);
+        var headingsBefore = before.Chapters.Select(c => c.Heading).ToArray();
+
+        await svc.DeriveAsync(fixture.BookA, apply: true);
+
+        var after = await spines.GetAsync(fixture.BookA);
+
+        Assert.Multiple(() =>
+        {
+            Assert.That(after.ChapterCount, Is.EqualTo(before.ChapterCount));
+            Assert.That(after.Chapters.Select(c => c.Heading), Is.EqualTo(headingsBefore));
+            Assert.That(after.BeatCount, Is.EqualTo(before.BeatCount));
+            Assert.That(after.WordCount, Is.EqualTo(before.WordCount));
+            Assert.That(after.Chapters.Select(c => c.Heading),
+                        Has.None.EqualTo("The Noodle Counter"),
+                        "A derived scene's location must never print as a chapter heading.");
+        });
+    }
+
     [Test]
     public async Task ASingleChapterCanBeDerivedOnItsOwn()
     {

@@ -6,9 +6,12 @@ using Prose.Core.Services;
 namespace Prose.UnitTests;
 
 /// <summary>
-/// Where a chapter begins. The node transition is the answer and nothing else is — these tests pin
-/// that against the two things that used to be mistaken for it: a beat flagged
-/// <c>IsChapterStart</c>, and a beat whose prose opens with the words "Chapter 7".
+/// Where a chapter begins. The transition between UNITS is the answer and nothing else is — where a
+/// unit is a beat's node, or the nearest ancestor of it that is not a scene or a sequence. These
+/// tests pin that against the three things that have been mistaken for it: a beat flagged
+/// <c>IsChapterStart</c>, a beat whose prose opens with the words "Chapter 7", and — the reason the
+/// rule is stated in units rather than nodes — a scene layer derived under a chapter, which used to
+/// turn one chapter into twenty-one chapters headed <c>sidewalk</c> and <c>home terminal</c>.
 /// </summary>
 [TestFixture]
 public class BookSpineServiceTests
@@ -69,6 +72,39 @@ public class BookSpineServiceTests
         db.Nodes.Add(chapter);
         await db.SaveChangesAsync();
         return chapter;
+    }
+
+    private async Task<SceneNode> MakeSceneAsync(Guid parentId, string title, double sortKey,
+                                                 bool sequel = false)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var scene = sequel ? SceneNode.Sequel() : new SceneNode();
+        scene.Id = Guid.CreateVersion7();
+        scene.Slug = "sc-" + Guid.NewGuid().ToString("N")[..8];
+        scene.Title = title;
+        scene.Status = "draft";
+        scene.ParentNodeId = parentId;
+        scene.SortKey = sortKey;
+        db.Nodes.Add(scene);
+        await db.SaveChangesAsync();
+        return scene;
+    }
+
+    private async Task<SequenceNode> MakeSequenceAsync(Guid parentId, string title, double sortKey)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var sequence = new SequenceNode
+        {
+            Id = Guid.CreateVersion7(),
+            Slug = "sq-" + Guid.NewGuid().ToString("N")[..8],
+            Title = title,
+            Status = "draft",
+            ParentNodeId = parentId,
+            SortKey = sortKey,
+        };
+        db.Nodes.Add(sequence);
+        await db.SaveChangesAsync();
+        return sequence;
     }
 
     private async Task<Beat> AddBeatAsync(Guid nodeId, string text, double sortKey,
@@ -296,6 +332,176 @@ public class BookSpineServiceTests
         Assert.That(spine.ChapterCount, Is.EqualTo(2));
         Assert.That(spine.Chapters.Select(c => c.Title),
                     Is.EqualTo(new[] { "Chapter 1 — Part One", "Chapter 2 — Part Two" }));
+    }
+
+    // ── The scene layer: structure the reader must never see ──────────────
+
+    /// <summary>The defect this rule exists for. A chapter given a scene layer holds its beats on
+    /// its scenes, so the walk reports scene ids where the chapter id used to be and the chapter —
+    /// now holding no beats of its own — never appears at all. Before the unit rule that exported as
+    /// three chapters headed "sidewalk", "kitchen" and "transit platform", with the chapter's own
+    /// title nowhere in the book.</summary>
+    [Test]
+    public async Task SceneChildren_RollUpIntoTheirChapter()
+    {
+        var book = await MakeBookAsync();
+        var chapter = await MakeChapterAsync(book.Id, ChapterTitle.Format(15, "Work Order"), 100);
+        var sidewalk = await MakeSceneAsync(chapter.Id, "sidewalk", 100);
+        var kitchen = await MakeSceneAsync(chapter.Id, "kitchen, apartment below Halsted", 200);
+        var platform = await MakeSceneAsync(chapter.Id, "transit platform", 300);
+        await AddBeatAsync(sidewalk.Id, "a", 100);
+        await AddBeatAsync(sidewalk.Id, "b", 200);
+        await AddBeatAsync(kitchen.Id, "c", 100);
+        await AddBeatAsync(platform.Id, "d", 100);
+
+        var spine = await svc.GetAsync(book.Id);
+
+        Assert.That(spine.ChapterCount, Is.EqualTo(1));
+        Assert.That(spine.BeatCount, Is.EqualTo(4));
+        Assert.That(spine.Chapters[0].Heading, Is.EqualTo("Chapter 15 — Work Order"));
+        Assert.That(spine.Chapters[0].NodeId, Is.EqualTo(chapter.Id));
+        // The number the validator checks is parsed off the unit's title, which is why it was
+        // reading "sidewalk" and reporting a numbering gap where there was none.
+        Assert.That(spine.Chapters[0].Parsed.Number, Is.EqualTo(15));
+        Assert.That(spine.Chapters.Select(c => c.Heading), Has.None.EqualTo("sidewalk"));
+        // Reading order is unbroken across the scene boundaries.
+        Assert.That(spine.Chapters[0].Beats.Select(b => b.Ordinal), Is.EqualTo(new[] { 1, 2, 3, 4 }));
+        // And the scene layer survives, on the beats, for anything that needs it.
+        Assert.That(spine.Chapters[0].SubUnitNodeIds,
+                    Is.EqualTo(new[] { sidewalk.Id, kitchen.Id, platform.Id }));
+    }
+
+    /// <summary>Two levels roll up, and a sequel rolls up with them. A sequel is a SceneNode with
+    /// Kind "sequel", so a NodeType test covers it without naming it — which is the argument for
+    /// testing the discriminator rather than Kind.</summary>
+    [Test]
+    public async Task SequenceAndSequelLayers_BothRollUp()
+    {
+        var book = await MakeBookAsync();
+        var chapter = await MakeChapterAsync(book.Id, ChapterTitle.Format(1, "Part One"), 100);
+        var sequence = await MakeSequenceAsync(chapter.Id, "The Approach", 100);
+        var scene = await MakeSceneAsync(sequence.Id, "Arrival", 100);
+        var sequel = await MakeSceneAsync(sequence.Id, "The Reckoning", 200, sequel: true);
+        await AddBeatAsync(scene.Id, "a", 100);
+        await AddBeatAsync(sequel.Id, "b", 100);
+
+        var spine = await svc.GetAsync(book.Id);
+
+        Assert.That(spine.ChapterCount, Is.EqualTo(1));
+        Assert.That(spine.Chapters[0].Heading, Is.EqualTo("Chapter 1 — Part One"));
+        Assert.That(spine.Chapters[0].Beats, Has.Count.EqualTo(2));
+        Assert.That(spine.Chapters[0].SubUnitNodeIds, Is.EqualTo(new[] { scene.Id, sequel.Id }));
+    }
+
+    /// <summary>A mixed book: one chapter with a scene layer, one without. Both print as one unit
+    /// each, and the roll-up does not leak across the boundary between them.</summary>
+    [Test]
+    public async Task MixedBook_SceneChapterAndPlainChapter_AreOneUnitEach()
+    {
+        var book = await MakeBookAsync();
+        var deep = await MakeChapterAsync(book.Id, ChapterTitle.Format(1, "Deep"), 100);
+        var scene = await MakeSceneAsync(deep.Id, "a rooftop", 100);
+        await AddBeatAsync(scene.Id, "a", 100);
+        var flat = await MakeChapterAsync(book.Id, ChapterTitle.Format(2, "Flat"), 200);
+        await AddBeatAsync(flat.Id, "b", 100);
+
+        var spine = await svc.GetAsync(book.Id);
+
+        Assert.That(spine.Chapters.Select(c => c.Heading),
+                    Is.EqualTo(new[] { "Chapter 1 — Deep", "Chapter 2 — Flat" }));
+    }
+
+    /// <summary>A chapter holding its own beats AND scene children stays ONE contiguous unit. The
+    /// walk emits a node's direct beats before recursing into its children, so a naive rule reopens
+    /// the chapter when the scenes arrive.</summary>
+    [Test]
+    public async Task ChapterWithOwnBeatsAndScenes_IsOneContiguousUnit()
+    {
+        var book = await MakeBookAsync();
+        var chapter = await MakeChapterAsync(book.Id, ChapterTitle.Format(3, "Both"), 100);
+        await AddBeatAsync(chapter.Id, "direct", 100);
+        var scene = await MakeSceneAsync(chapter.Id, "a stairwell", 100);
+        await AddBeatAsync(scene.Id, "in the scene", 100);
+
+        var spine = await svc.GetAsync(book.Id);
+
+        Assert.That(spine.ChapterCount, Is.EqualTo(1));
+        Assert.That(spine.Chapters[0].Beats, Has.Count.EqualTo(2));
+    }
+
+    /// <summary>The flat-book exception is computed on the beat-bearing nodes, not on units. A
+    /// single scene-derived chapter hangs its beats off several scenes, so a unit-based test would
+    /// call this book flat and let a stray legacy marker shatter it.</summary>
+    [Test]
+    public async Task SceneDerivedSingleChapter_IsNotTreatedAsFlat()
+    {
+        var book = await MakeBookAsync();
+        var chapter = await MakeChapterAsync(book.Id, ChapterTitle.Format(1, "Only"), 100);
+        var first = await MakeSceneAsync(chapter.Id, "a dock", 100);
+        var second = await MakeSceneAsync(chapter.Id, "a van", 200);
+        await AddBeatAsync(first.Id, "a", 100);
+        await AddBeatAsync(second.Id, "b", 100, isChapterStart: true, title: "Chapter 9 — Stray");
+
+        var spine = await svc.GetAsync(book.Id);
+
+        Assert.That(spine.ChapterCount, Is.EqualTo(1));
+        Assert.That(spine.Chapters.Select(c => c.OpenedByBeatMarker), Is.All.False);
+        Assert.That(spine.Chapters[0].Heading, Is.EqualTo("Chapter 1 — Only"));
+    }
+
+    /// <summary>A scene parented straight to the book has no chapter to roll up into, and must not
+    /// collapse into the book root — that would merge a whole book into one headingless unit. It
+    /// stays its own unit, where --validate-chapters can see and report it.</summary>
+    [Test]
+    public async Task SceneParentedToTheBook_StaysItsOwnUnit()
+    {
+        var book = await MakeBookAsync();
+        var loose = await MakeSceneAsync(book.Id, "an alley", 100);
+        var other = await MakeSceneAsync(book.Id, "a roof", 200);
+        await AddBeatAsync(loose.Id, "a", 100);
+        await AddBeatAsync(other.Id, "b", 100);
+
+        var spine = await svc.GetAsync(book.Id);
+
+        Assert.That(spine.ChapterCount, Is.EqualTo(2));
+        Assert.That(spine.Chapters.Select(c => c.IsBookRoot), Is.All.False);
+        Assert.That(spine.Chapters.Select(c => c.Heading), Is.EqualTo(new[] { "an alley", "a roof" }));
+    }
+
+    // ── Counting the words in a beat ──────────────────────────────────────
+
+    /// <summary>Beat text is tagged, so a bare whitespace split counts the tags. On a heavily
+    /// tagged 192,148-word book that overstated the total by 7,260 words — and the error moves
+    /// with the TAGS, which every beat save re-derives, so the number could change while not one
+    /// word of prose had. That is why this is a named helper and not an inline Split.</summary>
+    [Test]
+    public void ProseWordCount_DoesNotCountEntityTagsAsWords()
+    {
+        const string tagged =
+            "<entity repo=\"character\" guid=\"019d6143-a648-7876-9688-0f6d38d70075\">Kyle</entity> " +
+            "didn't correct her.";
+
+        Assert.That(ProseWordCount.Count(tagged), Is.EqualTo(4), "Kyle / didn't / correct / her.");
+        Assert.That(tagged.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries).Length,
+                    Is.GreaterThan(4),
+                    "The naive split this replaced — kept as the contrast that makes the rule readable.");
+    }
+
+    [Test]
+    public void ProseWordCount_IsUnchangedByRetagging()
+    {
+        const string plain = "He looked at it in the hall.";
+        const string retagged = "He looked at <entity repo=\"place\" guid=\"019d6143-a927\">it</entity> in the hall.";
+
+        Assert.That(ProseWordCount.Count(retagged), Is.EqualTo(ProseWordCount.Count(plain)),
+                    "Re-deriving entity mentions must never move a word count.");
+    }
+
+    [Test]
+    public void ProseWordCount_EmptyAndNull_AreZero()
+    {
+        Assert.That(ProseWordCount.Count(null), Is.Zero);
+        Assert.That(ProseWordCount.Count("   \n\t "), Is.Zero);
     }
 
     [Test]
