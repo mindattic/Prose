@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**296 tools** across **50 tool families.**
+**297 tools** across **50 tool families.**
 
 ## Families
 
@@ -64,7 +64,7 @@
 | [Verification](#verification) | 5 |
 | [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
-| [World Entity Crud](#world-entity-crud) | 5 |
+| [World Entity Crud](#world-entity-crud) | 6 |
 | [World Modelling](#world-modelling) | 13 |
 | [Writing](#writing) | 3 |
 
@@ -2362,6 +2362,20 @@ Create or update a transportation entry (vehicle, transit line, Pulse station, i
 - `manufacturer` (string, optional) — Manufacturer name.
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing transportation id to update.
+
+### `create_vocabulary`
+
+Create or update a vocabulary entry in canon — slang, jargon, craft terms, street cant. This is the entity type prose tags as repo="vocabulary", so an entry here gives the word a GUID that beats can reference. Matching on an existing term updates it. Omitted fields are LEFT UNCHANGED. NOTE: this is not the reader-facing glossary — for a definition in a book's back matter, also call upsert_glossary_term; a craft term usually wants both.
+
+- `term` (string, required) — The term as it appears in prose. Required. An existing term updates that entry.
+- `definition` (string, optional) — What it means.
+- `origin` (string, optional) — Where it comes from — language, trade, subculture.
+- `usage` (string, optional) — How it is actually used, and by whom.
+- `category` (string, optional) — Grouping category (e.g. 'Swordsmithing', 'Street', 'Enforcement').
+- `example` (string, optional) — A short example of the term in use.
+- `tier` (string, optional) — Tier availability or currency of the term.
+- `tags` (string, optional) — Comma-separated tags. '[]' clears; appendTags merges instead of replacing.
+- `appendTags` (bool, optional) — Merge tags into the existing list instead of replacing. Default false.
 
 ## World Modelling
 

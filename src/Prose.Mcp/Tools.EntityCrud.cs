@@ -1017,6 +1017,7 @@ public class WorldEntityCrudTools
     private readonly ConsumerGoodRepository consumerGoods;
     private readonly WorldbuildingDocRepository documents;
     private readonly SubsidiaryRepository subsidiaries;
+    private readonly VocabularyRepository vocabulary;
     private readonly HubInvoker hub;
 
     public WorldEntityCrudTools(
@@ -1025,6 +1026,7 @@ public class WorldEntityCrudTools
         ConsumerGoodRepository consumerGoods,
         WorldbuildingDocRepository documents,
         SubsidiaryRepository subsidiaries,
+        VocabularyRepository vocabulary,
         HubInvoker hub)
     {
         this.automata = automata;
@@ -1032,7 +1034,93 @@ public class WorldEntityCrudTools
         this.consumerGoods = consumerGoods;
         this.documents = documents;
         this.subsidiaries = subsidiaries;
+        this.vocabulary = vocabulary;
         this.hub = hub;
+    }
+
+    /// <summary>
+    /// Create or update a vocabulary entry — the MCP twin of <c>prose --create-vocabulary</c>.
+    ///
+    /// <para>Vocabulary is the entity type prose tags as <c>&lt;entity repo="vocabulary"&gt;</c>,
+    /// and it had the same gap materials did: a repository that could write it
+    /// (<c>VocabularyRepository.Save</c>), read surfaces that could show it, and no write path.
+    /// Added 2026-09-22.</para>
+    /// </summary>
+    [McpServerTool, Description(
+        "Create or update a vocabulary entry in canon — slang, jargon, craft terms, street cant. " +
+        "This is the entity type prose tags as repo=\"vocabulary\", so an entry here gives the word " +
+        "a GUID that beats can reference. Matching on an existing term updates it. Omitted fields " +
+        "are LEFT UNCHANGED. NOTE: this is not the reader-facing glossary — for a definition in a " +
+        "book's back matter, also call upsert_glossary_term; a craft term usually wants both.")]
+    public Task<string> create_vocabulary(
+        [Description("The term as it appears in prose. Required. An existing term updates that entry.")] string term,
+        [Description("What it means.")] string definition = "",
+        [Description("Where it comes from — language, trade, subculture.")] string origin = "",
+        [Description("How it is actually used, and by whom.")] string usage = "",
+        [Description("Grouping category (e.g. 'Swordsmithing', 'Street', 'Enforcement').")] string category = "",
+        [Description("A short example of the term in use.")] string example = "",
+        [Description("Tier availability or currency of the term.")] string tier = "",
+        [Description("Comma-separated tags. '[]' clears; appendTags merges instead of replacing.")] string tags = "",
+        [Description("Merge tags into the existing list instead of replacing. Default false.")] bool appendTags = false) =>
+        hub.InvokeAsync(nameof(WorldEntityCrudTools), nameof(create_vocabularyImpl), new
+        {
+            term, definition, origin, usage, category, example, tier, tags, appendTags,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string create_vocabularyImpl(
+        string term,
+        string definition = "",
+        string origin = "",
+        string usage = "",
+        string category = "",
+        string example = "",
+        string tier = "",
+        string tags = "",
+        bool appendTags = false)
+    {
+        var v = vocabulary.GetAll().FirstOrDefault(x =>
+            string.Equals(x.Term, term, StringComparison.OrdinalIgnoreCase));
+        var isNew = v is null;
+        v ??= new VocabularyData { Term = term };
+        v.Term = term;
+
+        if (!string.IsNullOrEmpty(definition)) v.Definition = definition;
+        if (!string.IsNullOrEmpty(origin))     v.Origin     = origin;
+        if (!string.IsNullOrEmpty(usage))      v.Usage      = usage;
+        if (!string.IsNullOrEmpty(category))   v.Category   = category;
+        if (!string.IsNullOrEmpty(example))    v.Example    = example;
+        if (!string.IsNullOrEmpty(tier))       v.Tier       = tier;
+
+        if (!string.IsNullOrEmpty(tags))
+        {
+            if (tags.Trim() == "[]") v.Tags = [];
+            else
+            {
+                var parsed = tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0).ToList();
+                if (!appendTags) v.Tags = parsed;
+                else foreach (var t in parsed)
+                    if (!v.Tags.Contains(t, StringComparer.OrdinalIgnoreCase)) v.Tags.Add(t);
+            }
+        }
+
+        vocabulary.Save(v);
+
+        var after = vocabulary.GetAll().FirstOrDefault(x =>
+            string.Equals(x.Term, term, StringComparison.OrdinalIgnoreCase));
+        if (after is null)
+            return JsonSerializer.Serialize(new
+            {
+                ok = false,
+                error = "write_not_readable",
+                detail = $"Save reported success but vocabulary term '{term}' could not be read back.",
+            }, CanonTools.JsonOpts);
+
+        return JsonSerializer.Serialize(new
+        {
+            ok = true, created = isNew, id = after.Id, term = after.Term,
+            category = after.Category, tags = after.Tags,
+        }, CanonTools.JsonOpts);
     }
 
     /// <summary>Create or update an automaton record. Pass empty id to create new; pass an existing id to update.</summary>

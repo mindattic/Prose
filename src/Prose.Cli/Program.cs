@@ -1600,6 +1600,16 @@ if (args.Contains("--create-material"))
     return;
 }
 
+//   prose --create-vocabulary --term "<term>" [--definition …] [--origin …] [--usage …]
+//     [--category …] [--example …] [--tier …] [--tags a,b,c] [--append-tags]
+// Create or update a vocabulary entry — the CLI twin of MCP create_vocabulary. Same gap as
+// material: VocabularyRepository.Save existed with nothing exposing it.
+if (args.Contains("--create-vocabulary"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CreateVocabularyCli", args);
+    return;
+}
+
 //   prose --set-node-version (--slug <slug> | --id <id>) --version <N>
 // Directly sets Node.Version — the counter DocxExportService reads as nextVersion = Version + 1.
 // For continuing a book's real version lineage after its local export folder was reset (e.g. a
