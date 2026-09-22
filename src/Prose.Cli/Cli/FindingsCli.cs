@@ -9,6 +9,17 @@ namespace Prose.Cli;
 /// CLI surface for the autonomous quality findings inbox.
 ///
 ///   prose --findings list [--status new|triaged|applied|dismissed] [--node &lt;slug-or-code&gt;]
+///                         [--file-prefix &lt;raw FilePath prefix&gt;] [--limit N]
+///                                                                    --node resolves a LIVE node
+///                                                                    to "node:{slug}".
+///                                                                    --file-prefix takes that
+///                                                                    path prefix raw, so rows
+///                                                                    belonging to a renamed or
+///                                                                    deleted node stay reachable.
+///                                                                    NB --prefix (bulk-dismiss)
+///                                                                    matches the SUMMARY;
+///                                                                    --file-prefix matches the
+///                                                                    PATH.
 ///                                                                    List findings, optionally
 ///                                                                    scoped to one book. Without
 ///                                                                    --node, thousands of
@@ -89,6 +100,14 @@ public static class FindingsCli
             filePathPrefix = await ResolveNodeFilePathPrefixAsync(nodeRef, services);
             if (filePathPrefix is null) return Fail($"node not found: {nodeRef}");
         }
+        // --file-prefix: the raw FilePath prefix, for the case --node cannot serve — a node that
+        // has been RENAMED or DELETED. Findings keep the FilePath they were written with, so a
+        // book's own history accumulates under every slug it has ever had, and the rows belonging
+        // to generations that no longer exist are unreachable by --node (it resolves live nodes
+        // only). Added 2026-09-22 after "node:bushido-coda" was found to prefix-match both the
+        // live book's rows and four deleted clones, making --node unusable as a dismiss filter.
+        var fpIdx = Array.IndexOf(rest, "--file-prefix");
+        if (fpIdx >= 0 && fpIdx + 1 < rest.Length) filePathPrefix = rest[fpIdx + 1];
 
         var limit = 200;
         var lIdx = Array.IndexOf(rest, "--limit");
@@ -176,9 +195,14 @@ public static class FindingsCli
             filePathPrefix = await ResolveNodeFilePathPrefixAsync(nodeRef, services);
             if (filePathPrefix is null) return Fail($"node not found: {nodeRef}");
         }
+        // See CmdList: --file-prefix reaches rows whose node has been renamed or deleted, which
+        // --node cannot. Note --prefix matches the SUMMARY and --file-prefix matches the PATH;
+        // they are not interchangeable, and the difference matters when sweeping dead rows.
+        var fpIdx2 = Array.IndexOf(rest, "--file-prefix");
+        if (fpIdx2 >= 0 && fpIdx2 + 1 < rest.Length) filePathPrefix = rest[fpIdx2 + 1];
 
         if (category is null && string.IsNullOrWhiteSpace(prefix) && filePathPrefix is null)
-            return Fail("bulk-dismiss requires --category and/or --prefix and/or --node");
+            return Fail("bulk-dismiss requires --category and/or --prefix and/or --node and/or --file-prefix");
 
         var n = await store.BulkSetStatusAsync(FindingStatus.Dismissed, category, prefix, filePathPrefix);
         Console.WriteLine($"[findings] dismissed {n} finding(s)"
