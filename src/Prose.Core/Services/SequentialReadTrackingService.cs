@@ -45,55 +45,54 @@ public class SequentialReadReport
 /// verifiable fact instead of an assumption.
 ///
 /// The freshness check is self-invalidating by construction: <see cref="ComputeBeatSequenceHashAsync"/>
-/// walks the book's full chapter/beat sequence FRESH every time (recursive descendant walk per
-/// CLAUDE.md's HARD RULE — never a flat ParentNodeId=book query, which would silently miss
-/// anything nested deeper). Any structural change changes the hash automatically, so staleness
-/// is detected, not trusted — no invalidation trigger or manual "mark stale" step is needed.
+/// walks the book's full chapter/beat sequence FRESH every time. Any structural change changes the
+/// hash automatically, so staleness is detected, not trusted — no invalidation trigger or manual
+/// "mark stale" step is needed.
+///
+/// It gets that walk from <see cref="BookSpineService"/> rather than running its own (2026-09-22).
+/// The hand-rolled walk this replaced found chapters with a recursive CTE but then took only the
+/// beats hanging DIRECTLY off each chapter node (<c>WHERE bn.NodeId = chapter.Id</c>), and selected
+/// chapters on <c>Kind = 'chapter'</c> instead of the NodeType discriminator. Once a chapter gained
+/// a scene or sequence layer, its beats moved onto those child nodes and vanished from the hash:
+/// Bushido Coda hashed 476 of its 521 beats, and all 45 missing ones were Chapter 15's, sitting
+/// under 21 derived scene nodes. Every word of that chapter could have been rewritten and this
+/// service would still have reported "Current" — the precise failure it exists to prevent, silently.
+/// The spine is now the one walk that decides what a chapter is, for exporters and for this.
 /// </summary>
 public class SequentialReadTrackingService(IDbContextFactory<ProseDbContext> dbFactory)
 {
     /// <summary>
-    /// Walks every chapter under <paramref name="bookNodeId"/> (recursive descendant walk — finds
-    /// chapters nested at any depth, not just direct children), then every beat under each chapter
-    /// in reading order, and hashes the resulting (chapter, beat) sequence. Returns the hash plus
-    /// the beat/chapter counts it was computed from.
+    /// Hashes the book's reading-order (chapter, beat) sequence exactly as <see cref="BookSpineService"/>
+    /// resolves it — so a chapter's beats are counted whether they hang off the chapter itself or off
+    /// a scene/sequence layer beneath it. Returns the hash plus the beat/chapter counts it was
+    /// computed from.
     /// </summary>
     public async Task<(string Hash, int BeatCount, int ChapterCount)> ComputeBeatSequenceHashAsync(
         Guid bookNodeId, CancellationToken ct = default)
     {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-
-        var chapters = await db.Database.SqlQuery<ChapterRow>($"""
-            WITH descendants AS (
-                SELECT Id, ParentNodeId, Kind, Title, SortKey FROM Nodes WHERE Id = {bookNodeId}
-                UNION ALL
-                SELECT n.Id, n.ParentNodeId, n.Kind, n.Title, n.SortKey
-                FROM Nodes n JOIN descendants d ON n.ParentNodeId = d.Id
-            )
-            SELECT Id, Title, SortKey FROM descendants WHERE Kind = 'chapter'
-            ORDER BY SortKey
-            """).ToListAsync(ct);
+        // Constructed rather than injected, the same way BookSpineService reaches NodeWorkbenchService:
+        // its only dependency is the factory this service already holds, and taking it through DI here
+        // would add an edge to a graph that already documents a cycle at that seam.
+        var spine = await new BookSpineService(dbFactory).GetAsync(bookNodeId, ct);
 
         var sb = new StringBuilder();
         int beatCount = 0;
-        foreach (var chapter in chapters)
+        foreach (var chapter in spine.Chapters)
         {
-            sb.Append("CH|").Append(chapter.Id).Append('|').Append(chapter.SortKey).Append('\n');
-            var beats = await db.Database.SqlQuery<BeatRow>($"""
-                SELECT bn.BeatId AS Id, bn.SortKey
-                FROM BeatNodes bn
-                WHERE bn.NodeId = {chapter.Id}
-                ORDER BY bn.SortKey
-                """).ToListAsync(ct);
-            foreach (var beat in beats)
+            sb.Append("CH|").Append(chapter.NodeId).Append('|').Append(chapter.Ordinal).Append('\n');
+            foreach (var beat in chapter.Beats)
             {
-                sb.Append("B|").Append(beat.Id).Append('|').Append(beat.SortKey).Append('\n');
+                // NodeId is included so that moving a beat between scenes inside one chapter — which
+                // changes nothing about reading order — still invalidates the recorded read, because
+                // it changes what a re-reader would have to re-check.
+                sb.Append("B|").Append(beat.BeatId).Append('|').Append(beat.NodeId)
+                  .Append('|').Append(beat.Ordinal).Append('\n');
                 beatCount++;
             }
         }
 
         var hash = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(sb.ToString())));
-        return (hash, beatCount, chapters.Count);
+        return (hash, beatCount, spine.Chapters.Count);
     }
 
     /// <summary>
@@ -165,16 +164,4 @@ public class SequentialReadTrackingService(IDbContextFactory<ProseDbContext> dbF
         await db.SaveChangesAsync(ct);
     }
 
-    private sealed class ChapterRow
-    {
-        public Guid Id { get; set; }
-        public string Title { get; set; } = "";
-        public double SortKey { get; set; }
-    }
-
-    private sealed class BeatRow
-    {
-        public Guid Id { get; set; }
-        public double SortKey { get; set; }
-    }
 }

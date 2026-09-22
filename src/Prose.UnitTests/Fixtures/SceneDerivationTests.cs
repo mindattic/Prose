@@ -199,4 +199,59 @@ public class SceneDerivationTests
         Assert.That(scenes, Is.Zero,
             "Wrapping a whole chapter in one scene adds a tree level and says nothing.");
     }
+
+    /// <summary>
+    /// The read-freshness hash has to see a scene-derived chapter's beats, or it reports "Current"
+    /// for a chapter nobody can prove was read. Found live on Bushido Coda 2026-09-22: the tracker
+    /// hashed 476 of 521 beats and the 45 it missed were Chapter 15's, sitting under 21 derived
+    /// scene nodes, because the old walk took only beats hanging directly off a chapter node.
+    /// </summary>
+    [Test]
+    public async Task DerivingScenes_DoesNotHideBeatsFromTheReadFreshnessHash()
+    {
+        using var _ = CanonFixture.ScopeTo(CanonFixture.UniverseA);
+        await GivePlacesAsync((3, "The Noodle Counter"), (4, "The Rain Outside"));
+
+        var tracker = new SequentialReadTrackingService(fixture.Factory);
+        var (hashBefore, beatsBefore, chaptersBefore) =
+            await tracker.ComputeBeatSequenceHashAsync(fixture.BookA);
+
+        await svc.DeriveAsync(fixture.BookA, apply: true);
+
+        var (hashAfter, beatsAfter, chaptersAfter) =
+            await tracker.ComputeBeatSequenceHashAsync(fixture.BookA);
+
+        Assert.Multiple(() =>
+        {
+            Assert.That(beatsAfter, Is.EqualTo(beatsBefore),
+                "Derivation moves beats onto scene nodes without adding or removing one. If the "
+                + "count drops, the hash has gone blind to a chapter and will report a read it "
+                + "cannot vouch for.");
+            Assert.That(chaptersAfter, Is.EqualTo(chaptersBefore),
+                "A derived scene is not a chapter.");
+            Assert.That(hashAfter, Is.Not.EqualTo(hashBefore),
+                "The structure did change, so a recorded read must go Stale — staleness is "
+                + "detected, not trusted.");
+        });
+    }
+
+    /// <summary>The count the hash reports has to be every beat in the book, not every beat the
+    /// walk happened to reach.</summary>
+    [Test]
+    public async Task ReadFreshnessHash_CountsEveryBeatInTheBook()
+    {
+        using var _ = CanonFixture.ScopeTo(CanonFixture.UniverseA);
+        await GivePlacesAsync((3, "The Noodle Counter"), (4, "The Rain Outside"));
+        await svc.DeriveAsync(fixture.BookA, apply: true);
+
+        var (_, beatCount, _) =
+            await new SequentialReadTrackingService(fixture.Factory)
+                .ComputeBeatSequenceHashAsync(fixture.BookA);
+
+        await using var db = fixture.Factory.CreateDbContext();
+        var spine = await new BookSpineService(fixture.Factory).GetAsync(fixture.BookA);
+
+        Assert.That(beatCount, Is.EqualTo(spine.BeatCount),
+            "The tracker and the exporters must agree on what the book is. They are the same walk.");
+    }
 }
