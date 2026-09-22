@@ -1628,7 +1628,7 @@ render a node to Markdown or PDF in Downloads. Markdown output embeds <!-- beat:
 
 ### `--publish-readiness`
 
-prose --publish-readiness --slug <slug> [--json] docs/LOGIC.md §9's five-point publish-readiness convergence gate as a single readout (2026-08-30) — see BookHealthService.PublishReadinessAsync and PublishReadinessCli.cs. Read-only, no LLM calls, no cost gate needed.
+prose --publish-readiness --slug <slug> [--json] docs/LOGIC.md §9's six-check publish-readiness convergence gate as a single readout (2026-08-30) — see BookHealthService.PublishReadinessAsync and PublishReadinessCli.cs. Read-only, no LLM calls, no cost gate needed.
 
 <sub>handler `PublishReadinessCli`</sub>
 

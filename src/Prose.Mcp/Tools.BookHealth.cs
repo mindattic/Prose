@@ -21,15 +21,19 @@ public class BookHealthTools(
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
 
-    /// <summary>docs/LOGIC.md §9's five-point publish-readiness convergence gate as one answer
+    /// <summary>docs/LOGIC.md §9's six-check publish-readiness convergence gate as one answer
     /// (2026-08-30) — see BookHealthService.PublishReadinessAsync and its CLI mirror
     /// PublishReadinessCli.cs. Read-only, no LLM calls.</summary>
     [McpServerTool, Description(
-        "docs/LOGIC.md §9's five-point publish-readiness convergence gate, computed as one answer: " +
+        "docs/LOGIC.md §9's six-check publish-readiness convergence gate, computed as one answer: " +
         "(1) zero open BLOCKER/MODERATE logic-sweep findings, (2) zero open CONTRADICTED fact-ledger " +
         "claims, (3) two consecutive dry logic-sweep rounds against the book's current text, " +
         "(4) blast-radius recheck clean on every beat, (5) zero open High/BLOCKER Reader-Proxy QA " +
-        "findings. Read-only — makes no LLM calls and runs no new checks, only reads what earlier " +
+        "findings, (6) the narrative obligation ledger balanced (RFC 0013). Each check answers Pass, " +
+        "Fail, or CouldNotLook — the last meaning its instrument never ran on this book, read " +
+        "nothing, read only part, or read prose that has since changed. CouldNotLook blocks like a " +
+        "failure; a zero from an instrument that did not look is not evidence of anything. " +
+        "Read-only — makes no LLM calls and runs no new checks, only reads what earlier " +
         "sweep/audit/ledger runs already filed or persisted.")]
     public Task<string> publish_readiness(
         [Description("Node id (GUID) or slug — a book or a lone chapter.")] string nodeIdOrSlug) =>

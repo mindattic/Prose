@@ -931,9 +931,30 @@ public class NodeTools
             {
                 ok = false,
                 error = "not_publish_ready",
-                checks = readiness.Checks.Select(c => new { name = c.Name, pass = c.Pass, detail = c.Detail }),
+                checks = readiness.Checks.Select(c => new { name = c.Name, outcome = c.Outcome.ToString(), pass = c.Pass, detail = c.Detail }),
                 hint = "Fix the failing checks (see prose --publish-readiness --slug <slug>), or pass forceExport:true to override.",
             }, CanonTools.JsonOpts);
+        }
+
+        // An override here used to be completely silent — unlike the CLI, which at least printed
+        // the overridden checks to stderr, this path returned a plain ok:true with no indication
+        // the gate had been bypassed at all. Record it, and say so in the response.
+        string[]? bypassed = null;
+        if (!readiness.Ready)
+        {
+            var failing = readiness.Checks.Where(c => !c.Pass).ToList();
+            bypassed = failing.Select(c => $"[{c.Outcome}] {c.Name} — {c.Detail}").ToArray();
+            await using var dbGate = await dbFactory.CreateDbContextAsync();
+            dbGate.DecisionLedgerEntries.Add(new Prose.Core.Data.Entities.DecisionLedgerEntry
+            {
+                Summary = $"Publish gate BYPASSED for \"{node.Title}\" ({node.Slug}) — " +
+                          $"exported V{node.Version + 1} with {failing.Count} check(s) unmet",
+                Rationale = "forceExport:true was passed to the MCP ExportNode tool. Unmet at export time:\n" +
+                            string.Join("\n", bypassed),
+                Category = "publish-gate-bypass",
+                Actor = "mcp:ExportNode",
+            });
+            await dbGate.SaveChangesAsync();
         }
 
         var result = await fullExport.ExportAllAsync(node.Id, string.IsNullOrWhiteSpace(author) ? null : author);
@@ -952,6 +973,9 @@ public class NodeTools
             synopsis_path = result.SynopsisPath,
             keywords_path = result.KeywordsPath,
             keyword_count = result.KeywordCount,
+            // Null on a clean export. Present means this shipped past a failing gate, and the
+            // caller should not read ok:true as "it was ready".
+            gate_bypassed = bypassed,
         }, CanonTools.JsonOpts);
     }
 

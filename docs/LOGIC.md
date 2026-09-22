@@ -210,8 +210,17 @@ Added 2026-08-14 in direct response to an observed failure mode: five independen
 run on a book, and a sixth still found a new continuity error. "Run the sweep N times" was never
 a real stopping criterion — a single-shot LLM sweep is a sample of what a fresh read notices, not
 a proof nothing is wrong, and a fix pass introduces new regressions about as often as it removes
-old ones. A book is publish-ready only when ALL SEVEN of the following hold simultaneously —
+old ones. A book is publish-ready only when ALL SIX of the following hold simultaneously —
 this replaces the older, looser "logic sweep clean at BLOCKER" language everywhere it appears:
+
+**Every condition answers one of three things, not two** (2026-09-22): Pass, Fail, or
+**COULD NOT LOOK** — the instrument behind it never ran on this book, read nothing, read only
+part of it, or read prose that has since changed. COULD NOT LOOK blocks publication exactly like
+a failure, because a zero from an instrument that did not look is not evidence of anything; it
+reads differently only because the remedy is to run the thing, not to fix the prose. Conditions 2
+and 6 always worked this way, each with its own private evidence. Conditions 1, 4 and 5 did not,
+and reported "clean" on books their instruments had never been pointed at — see the
+`InstrumentRuns` table, which is now the shared evidence all of them read.
 
 1. Zero open BLOCKER/MODERATE logic-sweep findings (§3–4, unchanged).
 2. Zero open `CONTRADICTED` claims for the book in the **Story Ledger**
@@ -238,9 +247,16 @@ this replaces the older, looser "logic sweep clean at BLOCKER" language everywhe
    `prose --reconcile-obligations --slug <slug>` files the offending rows as `OBLIGATION …`
    findings; `prose --obligations trial-balance --slug <slug>` is the period close the author
    works from.
-7. Zero unentailed entity-record claims, or every one quarantined
-   (`prose --ground-entity-records --slug <slug>`, RFC 0013 §4): a character record may not assert
-   a backstory no beat contains.
+**A seventh condition used to be listed here and was never implemented.** "Zero unentailed
+entity-record claims, or every one quarantined" (`prose --ground-entity-records`, RFC 0013 §4) was
+documented as a gate condition from 2026-09-15, but `BookHealthService.PublishReadinessAsync`
+computed six checks and never called `EntityRecordGroundingService`; what stood in the code was a
+doc comment with no method under it. The instrument is real and runs standalone — it simply was
+never wired in. It is deliberately not being wired in now: entity-record grounding has no
+calibration behind it (no seeded-defect recall, no negative control, no measured false-positive
+rate), and adding unmeasured conditions to a gate is how this gate came to report "clean" on books
+nothing had read. An instrument earns a place here with evidence. Until it has some, the count
+is six.
 
 **The safety valve.** If a book hits a round-count cap (default 8) without ever reaching 2
 consecutive dry rounds, that is itself surfaced as a `LOGICSWEEP-CONVERGENCE [not-converging]`

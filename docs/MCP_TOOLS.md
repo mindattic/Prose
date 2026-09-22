@@ -162,7 +162,7 @@ Load the Tone Bible — voice, register, sensory palette, what to do and what no
 
 ### `publish_readiness`
 
-docs/LOGIC.md §9's five-point publish-readiness convergence gate, computed as one answer: (1) zero open BLOCKER/MODERATE logic-sweep findings, (2) zero open CONTRADICTED fact-ledger claims, (3) two consecutive dry logic-sweep rounds against the book's current text, (4) blast-radius recheck clean on every beat, (5) zero open High/BLOCKER Reader-Proxy QA findings. Read-only — makes no LLM calls and runs no new checks, only reads what earlier sweep/audit/ledger runs already filed or persisted.
+docs/LOGIC.md §9's six-check publish-readiness convergence gate, computed as one answer: (1) zero open BLOCKER/MODERATE logic-sweep findings, (2) zero open CONTRADICTED fact-ledger claims, (3) two consecutive dry logic-sweep rounds against the book's current text, (4) blast-radius recheck clean on every beat, (5) zero open High/BLOCKER Reader-Proxy QA findings, (6) the narrative obligation ledger balanced (RFC 0013). Each check answers Pass, Fail, or CouldNotLook — the last meaning its instrument never ran on this book, read nothing, read only part, or read prose that has since changed. CouldNotLook blocks like a failure; a zero from an instrument that did not look is not evidence of anything. Read-only — makes no LLM calls and runs no new checks, only reads what earlier sweep/audit/ledger runs already filed or persisted.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug — a book or a lone chapter.
 

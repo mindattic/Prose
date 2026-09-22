@@ -8,7 +8,7 @@ namespace Prose.Cli;
 /// <summary>
 /// <c>prose --publish-readiness --slug &lt;slug&gt; [--json]</c>
 ///
-/// docs/LOGIC.md §9's five-point publish-readiness convergence gate as a single readout
+/// docs/LOGIC.md §9's six-check publish-readiness convergence gate as a single readout
 /// (2026-08-30 fix) — before this, a user/agent had to manually cross-reference at least four
 /// different tool outputs (audit-book's findings rollup, --logic-sweep --until-dry's round
 /// history, fact-ledger findings, Reader-Proxy QA findings) to answer "is this book actually

@@ -55,7 +55,7 @@ public class BookHealthService(
     ContinuityService continuity)
 {
     /// <summary>
-    /// docs/LOGIC.md §9's five-point publish-readiness convergence gate, computed as one answer
+    /// docs/LOGIC.md §9's six-check publish-readiness convergence gate, computed as one answer
     /// (2026-08-30 fix) — previously nothing in the codebase computed this as a single readout;
     /// a user/agent had to manually cross-reference audit-book's findings rollup, the
     /// --until-dry round history, fact-ledger findings, and Reader-Proxy QA findings by hand.
@@ -318,11 +318,23 @@ public class BookHealthService(
         return Task.CompletedTask;
     }
 
-    /// <summary>Phase D of the Bible/Book/Entities validation triangle: for every claim already
-    /// applied to its entity's canon record (<c>ContinuityApplyService.ApplyAsync</c>, which sets
-    /// AppliedAt/AppliedToField), verify the field still says what the claim asserted. Answers
-    /// "are all entities mentioned actually correct in the repo" for the applied subset —
-    /// deterministic (JSON field comparison), no LLM call. Same honest-gap framing as
-    /// FactLedgerAsync/HasAnyClaimsForBook: zero applied claims for a book means "nothing has ever
-    /// been applied here," not "verified clean."</summary>
+    // ── The seventh condition, which is documentation and not code ────────────────────────
+    //
+    // docs/LOGIC.md §9 said for a while that a book is publish-ready only when ALL SEVEN
+    // conditions hold, the seventh being "zero unentailed entity-record claims, or every one
+    // quarantined" (RFC 0013 §4). This method computes SIX. The seventh never existed: what stood
+    // here was a doc comment describing "Phase D of the Bible/Book/Entities validation triangle"
+    // with no method body under it, and nothing in PublishReadinessAsync ever called
+    // EntityRecordGroundingService. The instrument is real and runs standalone
+    // (prose --ground-entity-records); it simply was never wired to the gate.
+    //
+    // It is deliberately NOT being wired now. Entity-record grounding has no calibration behind
+    // it — no seeded-defect recall, no negative control, no measured false-positive rate — and
+    // adding an unmeasured condition to a gate is how the gate got into this state. An instrument
+    // earns a place in the gate by evidence. The remaining work is to measure it; until then the
+    // honest count is six, and §9 now says six.
+    //
+    // Doc comment removed rather than left dangling, because a summary with nothing beneath it
+    // reads as an implementation to anyone scanning the file, and that is exactly how a
+    // documented seven-condition gate came to ship six.
 }

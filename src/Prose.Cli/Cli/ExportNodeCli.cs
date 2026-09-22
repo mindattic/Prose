@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Services;
@@ -14,7 +14,7 @@ namespace Prose.Cli;
 /// (<c>UniverseExportDirectories[slug]</c>), never the shared global — so
 /// exporting a Scry book can't redirect where GLMZ books land, and vice versa.
 /// <para>Blocks (exit 1) unless <see cref="BookHealthService.PublishReadinessAsync"/>'s
-/// five-point gate (docs/LOGIC.md §9) reports Ready, or <c>--force-export</c> is passed to
+/// six-check gate (docs/LOGIC.md §9) reports Ready, or <c>--force-export</c> is passed to
 /// override with a visible warning (2026-09-01 — closes the gap where this gate was computed by
 /// <c>prose --publish-readiness</c> but nothing actually blocked export on it).</para>
 /// <para>NOTE: this is local file rendering only — there is no KDP API
@@ -51,7 +51,7 @@ public static class ExportNodeCli
         var mojiChecker = services.GetRequiredService<MojibakeRepairService>();
         var bookHealth = services.GetRequiredService<BookHealthService>();
 
-        Guid nodeId; string nodeTitle; string nodeSlug; string? universeSlug;
+        Guid nodeId; string nodeTitle; string nodeSlug; string? universeSlug; int nodeVersion;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             var q = db.Nodes.AsNoTracking();
@@ -61,7 +61,7 @@ public static class ExportNodeCli
             else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
             { { Count: 1 } m => m[0], _ => null };
             if (node == null) { Console.Error.WriteLine("[export-node] Node not found."); return 1; }
-            nodeId = node.Id; nodeTitle = node.Title; nodeSlug = node.Slug;
+            nodeId = node.Id; nodeTitle = node.Title; nodeSlug = node.Slug; nodeVersion = node.Version;
             universeSlug = await db.Universes.AsNoTracking()
                 .Where(u => u.Id == node.UniverseId)
                 .Select(u => u.Slug)
@@ -100,7 +100,7 @@ public static class ExportNodeCli
             return 1;
         }
 
-        // ── pre-export publish-readiness gate (docs/LOGIC.md §9, five-point convergence gate) ──
+        // ── pre-export publish-readiness gate (docs/LOGIC.md §9, six-check convergence gate) ──
         // Reads existing findings/convergence state — does NOT re-run any sweep. Run
         // 'prose --logic-sweep --slug <slug> --until-dry' first to refresh, then fix what's open.
         var readiness = await bookHealth.PublishReadinessAsync(nodeId);
@@ -119,6 +119,24 @@ public static class ExportNodeCli
             Console.Error.WriteLine($"[export-node] ⚠ --force-export: overriding {failing.Count} failing publish-readiness check(s):");
             foreach (var c in failing)
                 Console.Error.WriteLine($"  ⚠ {c.Name} — {c.Detail}");
+
+            // Record the override where a later session can find it. Until now a forced export
+            // warned to stderr and vanished: nothing in the database knew a manuscript had
+            // shipped past a failing gate, which check was failing at the time, or that it had
+            // happened at all. The decision ledger exists for exactly this — "reconstruct not
+            // just what ran, but why", without depending on a chat transcript.
+            await using var dbGate = await dbFactory.CreateDbContextAsync();
+            dbGate.DecisionLedgerEntries.Add(new Prose.Core.Data.Entities.DecisionLedgerEntry
+            {
+                Summary = Truncate($"Publish gate BYPASSED for \"{nodeTitle}\" ({nodeSlug}) — " +
+                                   $"exported V{nodeVersion + 1} with {failing.Count} check(s) unmet", 256),
+                Rationale = "--force-export was passed. Unmet at export time:\n" +
+                            string.Join("\n", failing.Select(c =>
+                                $"  [{c.Outcome}] {c.Name} — {c.Detail}")),
+                Category = "publish-gate-bypass",
+                Actor = "prose --export-node",
+            });
+            await dbGate.SaveChangesAsync();
         }
 
         // ── pre-export BLOCKER verification gate (Track C — Truth-First Architecture) ──
@@ -207,4 +225,6 @@ public static class ExportNodeCli
         }
         catch (Exception ex) { Console.Error.WriteLine($"[export-node] Failed: {ex.Message}"); return 1; }
     }
+
+    private static string Truncate(string s, int max) => s.Length <= max ? s : s[..(max - 1)] + "…";
 }
