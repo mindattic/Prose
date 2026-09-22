@@ -74,6 +74,9 @@ public sealed class GripePassService(
     // generic by design — RunFullOrderReadAsync has no plant/payoff or page-distance data in
     // scope at this point, and computing it per-finding would be a second query per finding for
     // marginal specificity over what the finding's own beat number + note already tell a fixer.
+    //
+    // This goes in the finding's SUMMARY, never its SuggestedFix — see the comment at the Upsert
+    // in RunFullOrderReadAsync for why that distinction is load-bearing.
     private const string WeightByLengthFix =
         "Fix structurally, not stylistically: give this beat more page-time to accrue pressure " +
         "before it lands, or cut the correct-but-inert scene immediately in front of it. Do NOT " +
@@ -263,12 +266,19 @@ public sealed class GripePassService(
         foreach (var s in confirmed)
         {
             var recovery = s.RecoveredAtBeat is int r ? $"recovered at B{r}" : "never recovered";
+            // suggestedFix stays NULL. It used to carry WeightByLengthFix, and because this
+            // FilePath contains "beat:" and the snippet is quote-grounded, FindingApplyService
+            // would have replaced that quoted paragraph of the novel with the instruction text
+            // itself. Guidance belongs in the Summary, which is the field a human reads; the
+            // Snippet/SuggestedFix pair is a splice instruction and must only ever hold prose.
+            // (Found by audit 2026-09-22, before it fired. Backstopped in
+            // FindingApplyService.IsInstructionalFix.)
             findings.Upsert(
                 $"{filePathPrefix}/beat:{s.BeatId:N}", chapterId: null, FindingCategory.ReaderGripe,
                 s.Severity switch { "blocker" => FindingSeverity.High, "moderate" => FindingSeverity.Medium, _ => FindingSeverity.Low },
-                $"{EngagementFindingSummaryPrefix} beat #{s.StartBeat} ({s.Voters} voter(s), {recovery}): {s.Note}",
+                $"{EngagementFindingSummaryPrefix} beat #{s.StartBeat} ({s.Voters} voter(s), {recovery}): {s.Note} — {WeightByLengthFix}",
                 snippet: s.Quote,
-                suggestedFix: WeightByLengthFix);
+                suggestedFix: null);
         }
 
         log.LogInformation("[full-order-read] {Slug}: {Raw} raw → {Grounded} grounded → {Unique} unique → {Confirmed} confirmed ({Kills} quote-grounding kills).",

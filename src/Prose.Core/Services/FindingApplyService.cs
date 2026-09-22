@@ -13,6 +13,7 @@ public enum ApplyOutcome
     SnippetNotFound,    // snippet not present in the target (LLM paraphrased — needs manual edit)
     NoSuggestedFix,     // finding has no suggested fix to apply
     NoSnippet,          // finding has no snippet to anchor the replacement
+    FixIsNotProse,      // the "fix" is editorial instruction ABOUT the prose, not replacement prose
     FileMissing,        // the source file no longer exists (legacy on-disk findings only)
     BeatMissing,        // the beat this finding was anchored to no longer exists
     Failed,             // unexpected error during write
@@ -68,11 +69,59 @@ public class FindingApplyService
         if (f is null) return new(ApplyOutcome.Failed, "Finding not found.");
         if (string.IsNullOrWhiteSpace(f.SuggestedFix)) return new(ApplyOutcome.NoSuggestedFix);
         if (string.IsNullOrWhiteSpace(f.Snippet))      return new(ApplyOutcome.NoSnippet);
+        if (IsInstructionalFix(f.SuggestedFix!))
+            return new(ApplyOutcome.FixIsNotProse,
+                "This finding's SuggestedFix is editorial instruction about the prose, not prose to " +
+                "put in its place — applying it would paste the instruction into the manuscript. " +
+                "Read the finding and edit the beat by hand.");
 
         var beatId = ExtractBeatId(f.FilePath);
         return beatId.HasValue
             ? await ApplyToBeatAsync(f, beatId.Value, ct)
             : await ApplyToFileAsync(f, ct);
+    }
+
+    /// <summary>
+    /// True when a finding's SuggestedFix is editorial instruction <em>about</em> the prose rather
+    /// than prose to stand in its place — in which case applying it would splice the instruction
+    /// into the manuscript at the snippet's location.
+    ///
+    /// <para>This is not hypothetical. <c>GripePassService.RunFullOrderReadAsync</c> filed its
+    /// ENGAGEMENT findings with a real quote-grounded <c>Snippet</c> and a static instructional
+    /// <c>SuggestedFix</c> ("Fix structurally, not stylistically: give this beat more page-time…"),
+    /// under a FilePath containing <c>beat:</c>. Every precondition of
+    /// <see cref="ApplyToBeatAsync"/> was satisfied by construction — the snippet is grounded, so
+    /// the Contains guard passes — and one <c>prose --findings apply &lt;id&gt;</c> would have
+    /// replaced a paragraph of the novel with that instruction. Found 2026-09-22 by audit, before
+    /// it fired. The producer was fixed too; this guard is the backstop that stops the same shape
+    /// arriving from a different instrument.</para>
+    ///
+    /// <para>Deliberately biased toward rejecting: a false reject costs a manual edit, a false
+    /// accept corrupts a book. Real replacement prose does not cite documentation, does not
+    /// address the author in the second person, and does not tell them what not to do.</para>
+    /// </summary>
+    internal static bool IsInstructionalFix(string fix)
+    {
+        if (string.IsNullOrWhiteSpace(fix)) return false;
+
+        // A documentation or spec reference — prose never carries one.
+        if (fix.Contains("docs/", StringComparison.OrdinalIgnoreCase) ||
+            fix.Contains("docs\\", StringComparison.OrdinalIgnoreCase) ||
+            fix.Contains('§') ||
+            fix.Contains("RFC ", StringComparison.Ordinal))
+            return true;
+
+        // Second-person editorial direction aimed at the author, not the reader.
+        string[] directives =
+        [
+            "do not rewrite", "don't rewrite", "do not change", "rewrite this beat",
+            "fix structurally", "fix this by", "consider cutting", "consider adding",
+            "give this beat", "cut the ", "that is the wrong fix",
+        ];
+        foreach (var d in directives)
+            if (fix.Contains(d, StringComparison.OrdinalIgnoreCase)) return true;
+
+        return false;
     }
 
     /// <summary>Pulls a beat guid out of "node:{slug}/beat:{guid}" or "beat:{guid}" — the two
