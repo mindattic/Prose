@@ -40,7 +40,8 @@ public sealed class ComprehensionProbeService(
     SynopsisExportService synopsis,
     FindingsService findings,
     SettingsService settings,
-    ILogger<ComprehensionProbeService> log)
+    ILogger<ComprehensionProbeService> log,
+    Audit.InstrumentRunLedger? runLedger = null)
 {
     private const int MaxSourceChars = 150_000;
     private const string FindingSummaryPrefix = "COMPREHENSION";
@@ -114,6 +115,16 @@ public sealed class ComprehensionProbeService(
             findings.Upsert($"node:{slug}", chapterId: null, FindingCategory.Other, FindingSeverity.Low,
                 $"{FindingSummaryPrefix} [incomplete]: {errored}/{results.Count} chapters could not be arbitrated (LLM errors) — re-run once resolved.",
                 snippet: null, suggestedFix: null);
+
+        // A chapter that errored out was NOT read, and the gate has to be able to see that. This
+        // check gates publication on zero High-severity findings while RFC 0010 records it has
+        // never produced a single applied finding corpus-wide — the least it can do is be honest
+        // about how much of the book it managed to look at.
+        if (runLedger != null)
+            await runLedger.RecordAsync(bookNodeId, Audit.InstrumentRunLedger.ReaderQaProbes,
+                itemsExamined: results.Count - errored, itemsTotal: results.Count,
+                findingsFiled: filed,
+                detail: $"{probed} probed, {cached} from cache, {errored} could not be arbitrated", ct: ct);
 
         return new ProbeRunResult(bookNodeId, slug, title, results, filed, probed, cached);
     }

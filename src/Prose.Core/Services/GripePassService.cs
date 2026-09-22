@@ -36,7 +36,8 @@ public sealed class GripePassService(
     ILlmService llm,
     FindingsService findings,
     SettingsService settings,
-    ILogger<GripePassService> log)
+    ILogger<GripePassService> log,
+    Audit.InstrumentRunLedger? runLedger = null)
 {
     private const string FindingSummaryPrefix = "GRIPE";
     private const string EngagementFindingSummaryPrefix = "ENGAGEMENT";
@@ -174,6 +175,12 @@ public sealed class GripePassService(
         log.LogInformation("[gripe] {Slug}: {Raw} raw → {Grounded} grounded → {Unique} unique → {Confirmed} confirmed ({Kills} quote-grounding kills).",
             slug, raw.Count, grounded.Count, deduped.Count, confirmed.Count, groundingKills);
 
+        if (runLedger != null)
+            await runLedger.RecordAsync(nodeId, Audit.InstrumentRunLedger.ReaderQaGripe,
+                itemsExamined: ordered.Count, itemsTotal: ordered.Count,
+                findingsFiled: confirmed.Count,
+                detail: $"{seats.Count} reader(s); {raw.Count} raw → {confirmed.Count} confirmed", ct: ct);
+
         return new GripeRunResult(nodeId, slug, node.Title, seats.Count,
             string.Join(" · ", seats.Select(s => $"{s.Provider}:{s.Model}")),
             confirmed, rejected, raw.Count, groundingKills, confirmed.Count);
@@ -283,6 +290,12 @@ public sealed class GripePassService(
 
         log.LogInformation("[full-order-read] {Slug}: {Raw} raw → {Grounded} grounded → {Unique} unique → {Confirmed} confirmed ({Kills} quote-grounding kills).",
             slug, raw.Count, grounded.Count, deduped.Count, confirmed.Count, groundingKills);
+
+        if (runLedger != null)
+            await runLedger.RecordAsync(nodeId, Audit.InstrumentRunLedger.ReaderQaFullOrder,
+                itemsExamined: ordered.Count, itemsTotal: ordered.Count,
+                findingsFiled: confirmed.Count,
+                detail: $"{seats.Count} reader(s); {raw.Count} raw → {confirmed.Count} confirmed", ct: ct);
 
         return new EngagementRunResult(nodeId, slug, node.Title, seats.Count,
             string.Join(" · ", seats.Select(s => $"{s.Provider}:{s.Model}")),

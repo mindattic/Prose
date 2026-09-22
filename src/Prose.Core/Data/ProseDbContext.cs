@@ -329,6 +329,9 @@ public class ProseDbContext : DbContext
     public DbSet<NodeScoreHistory>    NodeScoreHistories   => Set<NodeScoreHistory>();
     // Logic-sweep loop-until-dry convergence state — one row per book node.
     public DbSet<NodeConvergenceState> NodeConvergenceStates => Set<NodeConvergenceState>();
+    // Append-only record of every QA instrument run — the publish gate's evidence that an
+    // instrument LOOKED, as opposed to finding nothing. See InstrumentRun.cs.
+    public DbSet<InstrumentRun>       InstrumentRuns       => Set<InstrumentRun>();
     // Per-node narrative spine: amendment log + version pins (bridge).
     public DbSet<NodeAmendment>       NodeAmendments       => Set<NodeAmendment>();
     public DbSet<NodeSpineVersion>    NodeSpineVersions    => Set<NodeSpineVersion>();
@@ -1253,6 +1256,17 @@ public class ProseDbContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.ContentHash).HasMaxLength(64);
             e.HasIndex(x => new { x.NodeId, x.RecordedAt });
+            e.HasOne(x => x.Node).WithMany()
+                .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
+        });
+        b.Entity<InstrumentRun>(e =>
+        {
+            e.HasKey(x => x.Id);
+            e.Property(x => x.Instrument).HasMaxLength(64).IsRequired();
+            e.Property(x => x.BookFingerprint).HasMaxLength(64);
+            e.Property(x => x.Detail).HasMaxLength(1000);
+            // The gate's read is always "newest run of instrument X on node Y".
+            e.HasIndex(x => new { x.NodeId, x.Instrument, x.CompletedAt });
             e.HasOne(x => x.Node).WithMany()
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
         });

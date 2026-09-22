@@ -6,7 +6,28 @@ using Prose.Core.Services.Audit;
 
 namespace Prose.Core.Services;
 
-public sealed record PublishReadinessCheck(string Name, bool Pass, string Detail);
+/// <summary>
+/// A gate check has three answers, not two. <see cref="CouldNotLook"/> is the one the gate was
+/// missing: the instrument behind this check never ran (or read nothing, or read a version of the
+/// book that no longer exists), so its zero findings are not evidence of anything.
+///
+/// <para>It blocks like a failure, because an unexamined book is not a ready one — but it reads
+/// differently in the report, because the remedy is "go run the thing", not "go fix the prose".</para>
+/// </summary>
+public enum CheckOutcome { Pass, Fail, CouldNotLook }
+
+public sealed record PublishReadinessCheck(string Name, CheckOutcome Outcome, string Detail)
+{
+    /// <summary>Kept so every existing consumer (CLI, MCP, the export pre-flight) still reads
+    /// <c>c.Pass</c> unchanged. CouldNotLook is not a pass.</summary>
+    public bool Pass => Outcome == CheckOutcome.Pass;
+
+    /// <summary>Convenience for the checks whose evidence really is binary — the ones that read a
+    /// persisted state rather than count findings.</summary>
+    public PublishReadinessCheck(string name, bool pass, string detail)
+        : this(name, pass ? CheckOutcome.Pass : CheckOutcome.Fail, detail) { }
+}
+
 public sealed record PublishReadinessReport(Guid NodeId, string Slug, bool Ready, IReadOnlyList<PublishReadinessCheck> Checks);
 
 /// <summary>
@@ -63,10 +84,21 @@ public class BookHealthService(
         // FindingCategory.Contradiction sources (e.g. ContinuityEnforcer's "CONTINUITY-VIOLATION"
         // findings, or the blast-radius mini-sweep's own "LOGICSWEEP-BLAST" prefix, which does
         // NOT match "LOGICSWEEP " since it has a hyphen, not a space, after the word).
+        //
+        // Zero here used to mean "clean" unconditionally. It doesn't: a book nobody has ever swept
+        // also has zero sweep findings. That produced BCODA's 2026-09-22 report, which printed
+        // "✅ logic-sweep BLOCKER/MODERATE = 0 — clean" three lines above "❌ 2 consecutive dry
+        // sweep rounds — not converged", about the same sweep. The run ledger is the evidence that
+        // was missing; the fingerprint makes a sweep of prose that has since been rewritten count
+        // as not having looked at THIS book, which is the honest reading.
+        var currentFingerprint = await Audit.LogicSweepService.ComputeBookFingerprintAsync(db, nodeId, ct);
         var sweepBad = openFindings.Count(f => f.Summary.StartsWith("LOGICSWEEP ", StringComparison.Ordinal)
             && (f.Severity == "High" || f.Severity == "Medium"));
-        checks.Add(new PublishReadinessCheck("logic-sweep BLOCKER/MODERATE = 0", sweepBad == 0,
-            sweepBad == 0 ? "clean" : $"{sweepBad} open BLOCKER/MODERATE logic-sweep finding(s)"));
+        var sweepRun = await Audit.InstrumentRunLedger.LastRunAsync(db, nodeId, Audit.InstrumentRunLedger.LogicSweep, ct);
+        var (sweepOutcome, sweepDetail) = Audit.InstrumentRunLedger.Evaluate(
+            "the logic sweep", Audit.InstrumentRunLedger.InstrumentRunSummary.From(sweepRun), sweepBad,
+            "run prose --logic-sweep --slug <slug>", currentFingerprint);
+        checks.Add(new PublishReadinessCheck("logic-sweep BLOCKER/MODERATE = 0", sweepOutcome, sweepDetail));
 
         // 2. Zero open CONTRADICTED claims in the STORY LEDGER (Phase 4, 2026-09-03).
         //
@@ -130,8 +162,22 @@ public class BookHealthService(
             .Select(f => f.FilePath)
             .ToListAsync(ct);
         var blastBad = openBlastPaths.Count(blastPaths.Contains);
-        checks.Add(new PublishReadinessCheck("blast-radius recheck clean", blastBad == 0,
-            blastBad == 0 ? "clean" : $"{blastBad} open blast-radius finding(s) on this book's beats"));
+        // Same false-green as check 1: a beat the narrow sweep has never been pointed at has zero
+        // blast findings. The recheck fires automatically on every save through the workbench, so
+        // any book edited since that landed has a run to show; a book that has none has not been
+        // checked clean. No fingerprint — this instrument is scoped to a beat radius, never the
+        // whole book, so book-level staleness is the wrong question to ask of it.
+        //
+        // KNOWN GAP, deliberately not papered over: docs/LOGIC.md §9 scopes this condition to
+        // "every fix applied SINCE THE LAST DRY ROUND". This counts any currently-open blast
+        // finding on any beat, whenever it was raised. Narrowing it needs a per-beat check stamp;
+        // recorded in docs/rfc/0014 rather than half-implemented here.
+        var blastRun = await Audit.InstrumentRunLedger.LastRunAsync(db, nodeId, Audit.InstrumentRunLedger.BlastRadius, ct);
+        var (blastOutcome, blastDetail) = Audit.InstrumentRunLedger.Evaluate(
+            "the blast-radius recheck", Audit.InstrumentRunLedger.InstrumentRunSummary.From(blastRun), blastBad,
+            "edit a beat, or run prose --logic-sweep --slug <slug>");
+        checks.Add(new PublishReadinessCheck("blast-radius recheck clean", blastOutcome,
+            blastBad == 0 ? blastDetail : $"{blastBad} open blast-radius finding(s) on this book's beats"));
 
         // 5. Zero open High/BLOCKER Reader-Proxy QA findings (comprehension, craft-checklist —
         // incl. the LINT/POV/VOICE/HOOK sub-instruments, gripe jury).
@@ -140,8 +186,23 @@ public class BookHealthService(
              || f.Category == nameof(FindingCategory.CraftChecklist)
              || f.Category == nameof(FindingCategory.ReaderGripe))
             && f.Severity == "High");
-        checks.Add(new PublishReadinessCheck("Reader-Proxy QA High/BLOCKER = 0", readerBad == 0,
-            readerBad == 0 ? "clean" : $"{readerBad} open High-severity Reader-Proxy QA finding(s)"));
+        // Third instance of the same false green, and the one with the least excuse: RFC 0010
+        // records that the comprehension probes have never produced a single applied finding,
+        // corpus-wide, all time — yet this check gates publication, and on a book they had never
+        // read it gated it GREEN. Any one of the three reader-proxy instruments having run counts
+        // as having looked; none of them having run does not.
+        var readerRuns = new[]
+        {
+            await Audit.InstrumentRunLedger.LastRunAsync(db, nodeId, Audit.InstrumentRunLedger.ReaderQaProbes, ct),
+            await Audit.InstrumentRunLedger.LastRunAsync(db, nodeId, Audit.InstrumentRunLedger.ReaderQaGripe, ct),
+            await Audit.InstrumentRunLedger.LastRunAsync(db, nodeId, Audit.InstrumentRunLedger.ReaderQaFullOrder, ct),
+        };
+        var newestReaderRun = readerRuns.Where(r => r != null).MaxBy(r => r!.CompletedAt);
+        var (readerOutcome, readerDetail) = Audit.InstrumentRunLedger.Evaluate(
+            "Reader-Proxy QA", Audit.InstrumentRunLedger.InstrumentRunSummary.From(newestReaderRun), readerBad,
+            "run prose --reader-qa --slug <slug>");
+        checks.Add(new PublishReadinessCheck("Reader-Proxy QA High/BLOCKER = 0", readerOutcome,
+            readerBad == 0 ? readerDetail : $"{readerBad} open High-severity Reader-Proxy QA finding(s)"));
 
         // 6. Obligation ledger balanced (RFC 0013 / LOGIC.md §9 item 6): every beat scanned, and
         // zero obligations past due without an author decision. A book whose ledger has no rows

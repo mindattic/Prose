@@ -31,7 +31,8 @@ public class LogicSweepService(
     AuditRunner auditRunner,
     PlantPayoffService plantPayoffs,
     IDbContextFactory<ProseDbContext> dbFactory,
-    FindingsService findingsSvc)
+    FindingsService findingsSvc,
+    InstrumentRunLedger? runLedger = null)
 {
     /// <summary>Consecutive clean (zero-finding) rounds required before a book is considered
     /// converged. 2, not 1 — a single clean round could just be the sample variance any one
@@ -146,6 +147,21 @@ public class LogicSweepService(
         var verdicts = await auditRunner.RunAsync(
             "LOGICSWEEP", $"node:{node.Slug}", FindingCategory.Contradiction, rules, ctx, ct: ct);
 
+        // Stamp the run. Without this the publish gate cannot tell a swept-clean book from one
+        // nobody has ever pointed this at, and it spent a long time reporting the second as the
+        // first. ItemsExamined is beats the model actually SAW, not beats it was handed — on a
+        // book past the 100k-char clamp those are very different numbers, and recording the
+        // larger one is how a sweep of a tenth of a manuscript gets filed as a full-book sweep.
+        var visibleBeats = VisibleBeatCount(beats);
+        if (runLedger != null)
+            await runLedger.RecordAsync(nodeId, InstrumentRunLedger.LogicSweep,
+                itemsExamined: visibleBeats, itemsTotal: beats.Count,
+                bookFingerprint: await ComputeBookFingerprintAsync(db, nodeId, ct),
+                findingsFiled: verdicts.Count(v => v.Severity != "PASS"),
+                detail: visibleBeats < beats.Count
+                    ? $"{rules.Count} dimensions; prose clamped to 100k chars — {beats.Count - visibleBeats} beats never reached the model"
+                    : $"{rules.Count} dimensions; whole book fit under the 100k-char clamp", ct: ct);
+
         return new LogicSweepReport(nodeId, node.Slug, node.Title, beats.Count, verdicts);
     }
 
@@ -231,6 +247,15 @@ public class LogicSweepService(
         var scopeKey = $"beat:{anchorBeatId:N}:blast";
         var verdicts = await auditRunner.RunAsync(
             "LOGICSWEEP-BLAST", scopeKey, FindingCategory.Contradiction, rules, ctx, ct: ct);
+
+        // No book fingerprint: this is scoped to a beat radius by design, so "has the book changed
+        // since?" is the wrong question to ask of it. What the gate needs from here is only that
+        // the recheck has ever actually fired on this book.
+        if (runLedger != null)
+            await runLedger.RecordAsync(nodeId, InstrumentRunLedger.BlastRadius,
+                itemsExamined: beats.Count, itemsTotal: beatIds.Count,
+                findingsFiled: verdicts.Count(v => v.Severity != "PASS"),
+                detail: $"anchor beat {anchorBeatId:N}, {rules.Count} dimensions", ct: ct);
 
         return new LogicSweepReport(nodeId, node.Slug, node.Title, beats.Count, verdicts);
     }
@@ -359,7 +384,10 @@ public class LogicSweepService(
     /// beat text change anywhere in the book changes this fingerprint. Computed from live
     /// Beat.Text directly rather than trusting the stored Beat.TextHash column, which can be
     /// null or stale for a beat that predates the stamping mechanism.</summary>
-    private static async Task<string> ComputeBookFingerprintAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
+    /// <summary>Internal (was private) so the publish gate can ask "was this instrument's last run
+    /// against the prose the book has now?" — the same freshness question convergence already
+    /// asks, which every other check was answering by assumption.</summary>
+    internal static async Task<string> ComputeBookFingerprintAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
     {
         var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
         // Ordered chapter-then-SortKey, matching RunAsync's own fix below — raw SortKey alone
@@ -393,10 +421,25 @@ public class LogicSweepService(
     /// sometimes fabricates a plausible-sounding quote for one rather than staying silent. This
     /// is the prevention half of the fix; <see cref="QuotedEvidenceAppearsInBeat"/> is the
     /// post-hoc catch for whatever gets through anyway.</summary>
-    internal static string BuildClampedProse(IReadOnlyList<AuditBeat> beats)
+    internal static string BuildClampedProse(IReadOnlyList<AuditBeat> beats) => Clamp(beats).Prose;
+
+    /// <summary>
+    /// How many beats the model actually <em>saw</em> after clamping — which on a long book is
+    /// nowhere near how many it was handed.
+    ///
+    /// <para>The publish gate needs this number and never had it. A 193k-word manuscript is over
+    /// a million characters; the clamp shows the model 100k of them, so a "full-book logic sweep"
+    /// of such a book reads under a tenth of it and the gate recorded the result as a clean sweep
+    /// of the whole thing. Reporting beats-given as beats-examined is the same mistake the
+    /// obligation ledger made for six calibration runs, where an extractor that had read 55 of 96
+    /// beats produced a precision/recall pair nobody could tell was meaningless.</para>
+    /// </summary>
+    internal static int VisibleBeatCount(IReadOnlyList<AuditBeat> beats) => Clamp(beats).Visible;
+
+    private static (string Prose, int Visible) Clamp(IReadOnlyList<AuditBeat> beats)
     {
         var full = string.Join("\n\n", beats.Select(b => $"{BeatHeader(b)}\n{b.Text}"));
-        if (full.Length <= 100_000) return full;
+        if (full.Length <= 100_000) return (full, beats.Count);
 
         var head = full[..50_000];
         var tail = full[^50_000..];
@@ -407,11 +450,11 @@ public class LogicSweepService(
             ? "an unspecified range of beats"
             : $"beats #{elided.Min()}-#{elided.Max()} ({elided.Count} beats)";
 
-        return head
+        return (head
             + $"\n\n[... middle of the manuscript elided for length: {rangeNote} were NOT shown to "
             + "you. Do NOT report a finding citing any beat number in that range - you cannot see "
             + "its actual text, and any quote you attribute to it would be fabricated. ...]\n\n"
-            + tail;
+            + tail, visible.Count);
     }
 
     /// <summary>

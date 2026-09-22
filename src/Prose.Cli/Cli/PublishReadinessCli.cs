@@ -53,16 +53,34 @@ public static class PublishReadinessCli
 
         Console.WriteLine($"# Publish Readiness — {node.Title} ({slug})");
         Console.WriteLine();
+        // Three markers, not two. "?" is a check whose instrument never ran — it blocks like a
+        // failure, but the remedy is to go run the thing, not to go fix the prose, and reading
+        // those two as the same thing is what let a book export on an unexamined gate.
         foreach (var c in report.Checks)
-            Console.WriteLine($"{(c.Pass ? "✅" : "❌")} {c.Name} — {c.Detail}");
+            Console.WriteLine($"{Marker(c.Outcome)} {c.Name} — {c.Detail}");
         Console.WriteLine();
-        var blocked = report.Checks.Where(c => !c.Pass).Select(c => c.Name).ToList();
-        Console.WriteLine(report.Ready
-            ? "PUBLISH READY: yes"
-            : $"PUBLISH READY: no — blocked on: {string.Join("; ", blocked)}");
+        var failed = report.Checks.Where(c => c.Outcome == CheckOutcome.Fail).Select(c => c.Name).ToList();
+        var neverChecked = report.Checks.Where(c => c.Outcome == CheckOutcome.CouldNotLook).Select(c => c.Name).ToList();
+        if (report.Ready)
+        {
+            Console.WriteLine("PUBLISH READY: yes");
+        }
+        else
+        {
+            if (failed.Count > 0) Console.WriteLine($"PUBLISH READY: no — failing: {string.Join("; ", failed)}");
+            if (neverChecked.Count > 0)
+                Console.WriteLine($"{(failed.Count > 0 ? "" : "PUBLISH READY: no — ")}never checked: {string.Join("; ", neverChecked)}");
+        }
 
         return report.Ready ? 0 : 1;
     }
+
+    private static string Marker(CheckOutcome outcome) => outcome switch
+    {
+        CheckOutcome.Pass => "✅",
+        CheckOutcome.Fail => "❌",
+        _                 => "❓",   // COULD NOT LOOK — blocks, but for a different reason
+    };
 
     private static string? GetArg(string[] args, string flag)
     {

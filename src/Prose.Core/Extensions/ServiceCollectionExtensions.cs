@@ -1317,6 +1317,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BarksExportService>();
         services.AddSingleton<LibertyReportService>();
         services.AddSingleton<NarrativeSynopsisService>();
+        // Append-only record of which QA instruments have actually run against which book — the
+        // evidence the publish gate needs to tell "looked and found nothing" from "never looked".
+        services.AddSingleton<Prose.Core.Services.Audit.InstrumentRunLedger>();
         services.AddSingleton<Prose.Core.Services.Audit.LogicSweepService>();
         // Story Ledger Phase 2 — the exclusion ontology and the Tuned Read over it.
         services.AddSingleton<Prose.Core.Services.Audit.PredicateExclusionService>();
