@@ -64,8 +64,15 @@ public class SequentialReadTrackingService(IDbContextFactory<ProseDbContext> dbF
     /// <summary>
     /// Hashes the book's reading-order (chapter, beat) sequence exactly as <see cref="BookSpineService"/>
     /// resolves it — so a chapter's beats are counted whether they hang off the chapter itself or off
-    /// a scene/sequence layer beneath it. Returns the hash plus the beat/chapter counts it was
-    /// computed from.
+    /// a scene/sequence layer beneath it — AND the text of each beat. Returns the hash plus the
+    /// beat/chapter counts it was computed from.
+    ///
+    /// Each beat's <c>TextHash</c> is part of the hash (2026-09-22). Without it this service answered
+    /// a question nobody asked: it certified that the same beats still sat in the same order, which
+    /// stays true through a rewrite of every word in the book. A 45-beat fix pass ran against Bushido
+    /// Coda and the recorded read went on reporting "Current" throughout — the record said a human had
+    /// read this book front to back, and what they had read no longer existed. A read is a claim about
+    /// prose, so prose is what has to invalidate it.
     /// </summary>
     public async Task<(string Hash, int BeatCount, int ChapterCount)> ComputeBeatSequenceHashAsync(
         Guid bookNodeId, CancellationToken ct = default)
@@ -74,6 +81,14 @@ public class SequentialReadTrackingService(IDbContextFactory<ProseDbContext> dbF
         // its only dependency is the factory this service already holds, and taking it through DI here
         // would add an edge to a graph that already documents a cycle at that seam.
         var spine = await new BookSpineService(dbFactory).GetAsync(bookNodeId, ct);
+
+        var beatIds = spine.Chapters.SelectMany(c => c.Beats.Select(b => b.BeatId)).ToList();
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // IgnoreQueryFilters(): explicit ids resolved from the spine, not an ambient universe scope.
+        var textHashes = await db.Beats.IgnoreQueryFilters().AsNoTracking()
+            .Where(b => beatIds.Contains(b.Id))
+            .Select(b => new { b.Id, b.TextHash })
+            .ToDictionaryAsync(x => x.Id, x => x.TextHash ?? "", ct);
 
         var sb = new StringBuilder();
         int beatCount = 0;
@@ -86,7 +101,9 @@ public class SequentialReadTrackingService(IDbContextFactory<ProseDbContext> dbF
                 // changes nothing about reading order — still invalidates the recorded read, because
                 // it changes what a re-reader would have to re-check.
                 sb.Append("B|").Append(beat.BeatId).Append('|').Append(beat.NodeId)
-                  .Append('|').Append(beat.Ordinal).Append('\n');
+                  .Append('|').Append(beat.Ordinal)
+                  .Append('|').Append(textHashes.TryGetValue(beat.BeatId, out var th) ? th : "")
+                  .Append('\n');
                 beatCount++;
             }
         }

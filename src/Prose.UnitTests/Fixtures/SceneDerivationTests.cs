@@ -254,4 +254,37 @@ public class SceneDerivationTests
         Assert.That(beatCount, Is.EqualTo(spine.BeatCount),
             "The tracker and the exporters must agree on what the book is. They are the same walk.");
     }
+
+    /// <summary>
+    /// A recorded read is a claim about prose. Rewriting a beat has to invalidate it, or the record
+    /// says someone read this book front to back when what they read no longer exists. Found live
+    /// 2026-09-22: a 45-beat fix pass ran against Bushido Coda and the read stayed "Current" the
+    /// whole way through, because the hash only covered beat ids and their order.
+    /// </summary>
+    [Test]
+    public async Task EditingABeat_MakesARecordedReadStale()
+    {
+        using var _ = CanonFixture.ScopeTo(CanonFixture.UniverseA);
+        var tracker = new SequentialReadTrackingService(fixture.Factory);
+
+        var (hashBefore, beatsBefore, _) = await tracker.ComputeBeatSequenceHashAsync(fixture.BookA);
+
+        await using (var db = fixture.Factory.CreateDbContext())
+        {
+            var beat = await db.Beats.IgnoreQueryFilters().FirstAsync(b => b.Id == fixture.BeatsA[0]);
+            beat.Text = beat.Text + " One more sentence, which a reader would have to read.";
+            beat.TextHash = Guid.NewGuid().ToString("N");   // what a real save recomputes
+            await db.SaveChangesAsync();
+        }
+
+        var (hashAfter, beatsAfter, _) = await tracker.ComputeBeatSequenceHashAsync(fixture.BookA);
+
+        Assert.Multiple(() =>
+        {
+            Assert.That(beatsAfter, Is.EqualTo(beatsBefore), "Editing prose adds no beats.");
+            Assert.That(hashAfter, Is.Not.EqualTo(hashBefore),
+                "The structure did not move, but the words did. A read recorded against the old words "
+                + "no longer covers this book.");
+        });
+    }
 }

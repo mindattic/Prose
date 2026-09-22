@@ -17,6 +17,17 @@ namespace Prose.Cli;
 ///   --insert-after &lt;N&gt;      Insert a new beat after position N (0 = insert at top).
 ///   --file &lt;path&gt;           Path to a text file whose contents become the new beat prose.
 ///
+/// Either mode:
+///   --defer-analysis        Skip the four post-save analysis tails (intent drift, blast-radius
+///                           logic sweep, continuity re-extract, obligation scan). Each is an LLM
+///                           call, so a hand-edit costs roughly $0.02–0.03 without this flag.
+///                           For a multi-beat docket that is real money spent re-analysing a book
+///                           mid-splice, when what the author wants is one analysis pass at the
+///                           end. Use it for batches; leave it off for a one-off edit where the
+///                           immediate feedback is the point. <c>deferAnalysis</c> has always been
+///                           a parameter on <see cref="NodeWorkbenchService.UpdateBeatTextAsync"/>;
+///                           it simply had no CLI surface until 2026-09-22.
+///
 /// Exit codes: 0 = success, 1 = bad args / node not found / beat not found.
 /// </summary>
 public static class EditBeatCli
@@ -26,6 +37,7 @@ public static class EditBeatCli
         string? slug = null, filePath = null, idStr = null;
         int beatNumber = 0, insertAfter = -1;
         bool insertMode = false;
+        var deferAnalysis = args.Contains("--defer-analysis");
 
         for (int i = 0; i < args.Length; i++)
         {
@@ -74,9 +86,10 @@ public static class EditBeatCli
             }
 
             Console.Write($"[edit-beat] Updating beat {beatId}… ");
-            await wb.UpdateBeatTextAsync(beatId, proseById, BeatWriteReason.AuthorEdit, expectedUpdatedAt: null);
+            await wb.UpdateBeatTextAsync(beatId, proseById, BeatWriteReason.AuthorEdit,
+                                         expectedUpdatedAt: null, deferAnalysis: deferAnalysis);
             await sessionSvc.TryLogBeatAsync(beatId, priorVersion, priorHash);   // synchronous — reliably logged
-            Console.WriteLine($"ok ({proseById.Length} chars).");
+            Console.WriteLine($"ok ({proseById.Length} chars){(deferAnalysis ? ", analysis deferred" : "")}.");
             return 0;
         }
 
@@ -156,8 +169,9 @@ public static class EditBeatCli
 
         var target = ordered[beatNumber - 1].Beat;
         Console.Write($"[edit-beat] Updating beat #{beatNumber} (id {target.Id})… ");
-        await workbench.UpdateBeatTextAsync(target.Id, prose, BeatWriteReason.AuthorEdit, expectedUpdatedAt: null);
-        Console.WriteLine($"ok ({prose.Length} chars).");
+        await workbench.UpdateBeatTextAsync(target.Id, prose, BeatWriteReason.AuthorEdit,
+                                            expectedUpdatedAt: null, deferAnalysis: deferAnalysis);
+        Console.WriteLine($"ok ({prose.Length} chars){(deferAnalysis ? ", analysis deferred" : "")}.");
         return 0;
     }
 }
