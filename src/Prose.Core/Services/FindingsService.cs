@@ -365,6 +365,51 @@ public class FindingsService
         return row == null ? null : ToFinding(row);
     }
 
+    /// <summary>
+    /// Findings grouped by the instrument that filed them, with how many of each were ever acted
+    /// on — the value audit's core table (docs/rfc/0014).
+    ///
+    /// <para>The instrument is identified by the first token of <c>Summary</c>, because that is
+    /// how every producer in the tree actually labels itself: <c>LOGICSWEEP </c>,
+    /// <c>LOGICSWEEP-BLAST </c>, <c>FACT-LEDGER [</c>, <c>TUNEDREAD </c>, <c>LEDGER-CONFLICT </c>,
+    /// <c>COMPREHENSION </c>, <c>GRIPE </c>, <c>ENGAGEMENT </c>, <c>LINT </c>, <c>SANITY </c>,
+    /// <c>OBLIGATION </c>. <see cref="FindingRow.Category"/> is too coarse — Contradiction alone
+    /// covers the logic sweep, both ledger detectors and the blast recheck, so a category rollup
+    /// cannot tell you which of them earned its place.</para>
+    ///
+    /// <para>The number that matters is Applied. Corpus-wide it has been 8 out of ~30,000 since
+    /// this table existed, and an instrument's worth is measured by its share of that 8, not by
+    /// how much it produces — a high New count with a zero Applied count is a landfill, not a
+    /// backlog.</para>
+    /// </summary>
+    public IReadOnlyList<(string Instrument, int Total, int New, int Applied, int Dismissed)> StatsByInstrument()
+    {
+        using var db = dbFactory.CreateDbContext();
+        var rows = db.Findings.AsNoTracking()
+            .Select(f => new { f.Summary, f.Status })
+            .ToList();
+        return rows
+            .GroupBy(r => InstrumentOf(r.Summary))
+            .Select(g => (
+                Instrument: g.Key,
+                Total: g.Count(),
+                New: g.Count(r => r.Status == nameof(FindingStatus.New)),
+                Applied: g.Count(r => r.Status == nameof(FindingStatus.Applied)),
+                Dismissed: g.Count(r => r.Status == nameof(FindingStatus.Dismissed))))
+            .OrderByDescending(x => x.Applied).ThenByDescending(x => x.Total)
+            .ToList();
+    }
+
+    /// <summary>First whitespace-delimited token of a summary, with any trailing '[' or ':' cut —
+    /// the producer's self-applied label. Pure and internal so the census can be tested.</summary>
+    internal static string InstrumentOf(string summary)
+    {
+        if (string.IsNullOrWhiteSpace(summary)) return "(unlabelled)";
+        var token = summary.Split(' ', StringSplitOptions.RemoveEmptyEntries)[0];
+        token = token.TrimEnd('[', ':', ']');
+        return token.Length == 0 ? "(unlabelled)" : token;
+    }
+
     public int CountByStatus(FindingStatus status)
     {
         using var db = dbFactory.CreateDbContext();

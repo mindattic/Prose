@@ -28,7 +28,9 @@ namespace Prose.Cli;
 ///                                                                    single book's own (esp.
 ///                                                                    Medium-severity) findings
 ///                                                                    past the default limit.
-///   prose --findings stats                                            Counts per status.
+///   prose --findings stats [--by-instrument]                           Counts per status; --by-instrument
+///                                                                     adds the value-audit rollup (findings
+///                                                                     filed vs ever applied, per producer).
 ///   prose --findings show &lt;id&gt;                                       Full detail for one finding.
 ///   prose --findings apply &lt;id&gt;                                      Apply the suggested fix to the source file.
 ///   prose --findings dismiss &lt;id&gt;                                    Mark dismissed.
@@ -53,7 +55,7 @@ public static class FindingsCli
         return sub switch
         {
             "list"         => await CmdList(rest, store, services),
-            "stats"        => CmdStats(store),
+            "stats"        => CmdStats(store, rest.Contains("--by-instrument")),
             "show"         => CmdShow(rest, store),
             "apply"        => await CmdApply(rest, services),
             "dismiss"      => CmdSetStatus(rest, store, FindingStatus.Dismissed),
@@ -127,13 +129,24 @@ public static class FindingsCli
         return 0;
     }
 
-    static int CmdStats(FindingsService store)
+    static int CmdStats(FindingsService store, bool byInstrument = false)
     {
         Console.WriteLine($"[findings] new:       {store.CountByStatus(FindingStatus.New)}");
         Console.WriteLine($"[findings] triaged:   {store.CountByStatus(FindingStatus.Triaged)}");
         Console.WriteLine($"[findings] applied:   {store.CountByStatus(FindingStatus.Applied)}");
         Console.WriteLine($"[findings] dismissed: {store.CountByStatus(FindingStatus.Dismissed)}");
+        if (!byInstrument) return 0;
+
+        // The value audit's table. Applied is the column that matters: an instrument with a large
+        // New count and a zero Applied count has produced a landfill, not a backlog.
+        Console.WriteLine();
+        Console.WriteLine($"{"INSTRUMENT",-22}{"TOTAL",8}{"NEW",8}{"APPLIED",9}{"DISMISSED",11}  APPLY RATE");
+        foreach (var (instrument, total, @new, applied, dismissed) in store.StatsByInstrument())
+            Console.WriteLine($"{Trim(instrument, 21),-22}{total,8}{@new,8}{applied,9}{dismissed,11}  " +
+                              $"{(total == 0 ? 0 : 100.0 * applied / total):0.000}%");
         return 0;
+
+        static string Trim(string s, int n) => s.Length <= n ? s : s[..n];
     }
 
     static int CmdShow(string[] rest, FindingsService store)
@@ -230,7 +243,7 @@ public static class FindingsCli
     {
         Console.WriteLine("Usage:");
         Console.WriteLine("  prose --findings list [--status new|triaged|applied|dismissed] [--node <slug-or-code>] [--limit <n>]");
-        Console.WriteLine("  prose --findings stats");
+        Console.WriteLine("  prose --findings stats [--by-instrument]");
         Console.WriteLine("  prose --findings show <id>");
         Console.WriteLine("  prose --findings apply <id>");
         Console.WriteLine("  prose --findings triage <id>");

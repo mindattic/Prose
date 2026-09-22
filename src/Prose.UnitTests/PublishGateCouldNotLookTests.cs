@@ -97,6 +97,22 @@ public class PublishGateCouldNotLookTests
     }
 
     [Test]
+    public void OpenFindingsWithNoRunRow_FailRatherThanClaimingTheInstrumentNeverRan()
+    {
+        // Findings are themselves proof the instrument looked — nothing else could have filed
+        // them. Without this the gate would print "never ran" and "3 open findings" about the
+        // same check, which is the exact shape of contradiction this whole exercise is about.
+        // It also matters in practice: the run ledger was added after years of runs that left
+        // findings and no row.
+        var (outcome, detail) = InstrumentRunLedger.Evaluate(
+            "the blast-radius recheck", null, 3, "run it");
+
+        Assert.That(outcome, Is.EqualTo(CheckOutcome.Fail));
+        Assert.That(detail, Does.Contain("3 open finding(s)"));
+        Assert.That(detail, Does.Not.Contain("never run"));
+    }
+
+    [Test]
     public void CouldNotLook_BlocksPublication_JustLikeAFailure()
     {
         var check = new PublishReadinessCheck("x", CheckOutcome.CouldNotLook, "never ran");

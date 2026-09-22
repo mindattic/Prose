@@ -176,8 +176,7 @@ public class BookHealthService(
         var (blastOutcome, blastDetail) = Audit.InstrumentRunLedger.Evaluate(
             "the blast-radius recheck", Audit.InstrumentRunLedger.InstrumentRunSummary.From(blastRun), blastBad,
             "edit a beat, or run prose --logic-sweep --slug <slug>");
-        checks.Add(new PublishReadinessCheck("blast-radius recheck clean", blastOutcome,
-            blastBad == 0 ? blastDetail : $"{blastBad} open blast-radius finding(s) on this book's beats"));
+        checks.Add(new PublishReadinessCheck("blast-radius recheck clean", blastOutcome, blastDetail));
 
         // 5. Zero open High/BLOCKER Reader-Proxy QA findings (comprehension, craft-checklist —
         // incl. the LINT/POV/VOICE/HOOK sub-instruments, gripe jury).
@@ -201,8 +200,7 @@ public class BookHealthService(
         var (readerOutcome, readerDetail) = Audit.InstrumentRunLedger.Evaluate(
             "Reader-Proxy QA", Audit.InstrumentRunLedger.InstrumentRunSummary.From(newestReaderRun), readerBad,
             "run prose --reader-qa --slug <slug>");
-        checks.Add(new PublishReadinessCheck("Reader-Proxy QA High/BLOCKER = 0", readerOutcome,
-            readerBad == 0 ? readerDetail : $"{readerBad} open High-severity Reader-Proxy QA finding(s)"));
+        checks.Add(new PublishReadinessCheck("Reader-Proxy QA High/BLOCKER = 0", readerOutcome, readerDetail));
 
         // 6. Obligation ledger balanced (RFC 0013 / LOGIC.md §9 item 6): every beat scanned, and
         // zero obligations past due without an author decision. A book whose ledger has no rows

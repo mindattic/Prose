@@ -84,6 +84,14 @@ public class InstrumentRunLedger(IDbContextFactory<ProseDbContext> dbFactory)
         string instrumentLabel, InstrumentRunSummary? run, int openFindings, string remediation,
         string? currentFingerprint = null)
     {
+        // Open findings are themselves proof the instrument looked — nothing else could have
+        // filed them. This has to come first, and not only for tidiness: the run ledger was added
+        // after years of runs that left findings but no row, so without this an instrument with
+        // real open findings would report "never ran" until it happened to run again. It would
+        // also read as a flat contradiction, which is how the gate lost trust in the first place.
+        if (openFindings > 0)
+            return (CheckOutcome.Fail, $"{openFindings} open finding(s) from {instrumentLabel}");
+
         if (run is null)
             return (CheckOutcome.CouldNotLook,
                 $"COULD NOT LOOK — {instrumentLabel} has never run on this book — {remediation}");
@@ -104,9 +112,8 @@ public class InstrumentRunLedger(IDbContextFactory<ProseDbContext> dbFactory)
                 $"COULD NOT LOOK — {instrumentLabel} last ran {run.CompletedAt:yyyy-MM-dd} against " +
                 $"different prose; the book has changed since — {remediation}");
 
-        return openFindings == 0
-            ? (CheckOutcome.Pass, $"clean — {instrumentLabel} read {run.ItemsExamined}/{run.ItemsTotal} on {run.CompletedAt:yyyy-MM-dd}")
-            : (CheckOutcome.Fail, $"{openFindings} open finding(s) from {instrumentLabel}");
+        return (CheckOutcome.Pass,
+            $"clean — {instrumentLabel} read {run.ItemsExamined}/{run.ItemsTotal} on {run.CompletedAt:yyyy-MM-dd}");
     }
 
     /// <summary>The fields <see cref="Evaluate"/> needs, so the decision can be unit-tested
