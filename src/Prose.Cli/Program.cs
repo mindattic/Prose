@@ -1589,6 +1589,17 @@ if (args.Contains("--set-previous-node"))
     return;
 }
 
+//   prose --create-material --name "<name>" [--category …] [--description …] [--properties a,b,c]
+//     [--applications a,b,c] [--tier …] [--cost …] [--tags a,b,c] [--append-lists]
+// Create or update a material — the CLI twin of MCP create_material. Material was the one canon
+// entity type with a relational table, a repository that could write it (MaterialRepository.Save),
+// read surfaces on both CLI and MCP — and no write path at all.
+if (args.Contains("--create-material"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CreateMaterialCli", args);
+    return;
+}
+
 //   prose --set-node-version (--slug <slug> | --id <id>) --version <N>
 // Directly sets Node.Version — the counter DocxExportService reads as nextVersion = Version + 1.
 // For continuing a book's real version lineage after its local export folder was reset (e.g. a

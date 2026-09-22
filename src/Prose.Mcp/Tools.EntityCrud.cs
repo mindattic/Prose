@@ -505,6 +505,7 @@ public class GearEntityCrudTools
     private readonly ApparelRepository apparel;
     private readonly PharmaceuticalRepository pharmaceuticals;
     private readonly AmmunitionRepository ammunition;
+    private readonly MaterialRepository materials;
     private readonly HubInvoker hub;
 
     public GearEntityCrudTools(
@@ -515,6 +516,7 @@ public class GearEntityCrudTools
         ApparelRepository apparel,
         PharmaceuticalRepository pharmaceuticals,
         AmmunitionRepository ammunition,
+        MaterialRepository materials,
         HubInvoker hub)
     {
         this.weapons = weapons;
@@ -524,6 +526,7 @@ public class GearEntityCrudTools
         this.apparel = apparel;
         this.pharmaceuticals = pharmaceuticals;
         this.ammunition = ammunition;
+        this.materials = materials;
         this.hub = hub;
     }
 
@@ -597,6 +600,119 @@ public class GearEntityCrudTools
         weapons.Save(w);
         return JsonSerializer.Serialize(
             new { ok = true, id = w.Id, name = w.Name, known_users = w.KnownUsers }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>
+    /// Create or update a material record — the MCP twin of <c>prose --create-material</c>.
+    ///
+    /// <para>Material was the one canon entity type with a fully relational table, a repository
+    /// that could write it (<c>MaterialRepository.Save</c>), and read surfaces on both CLI and MCP
+    /// (<c>list_materials</c>, <c>get_material</c>) — but <b>no write path of any kind</b>. Every
+    /// other gear type had a <c>create_*</c> tool; material had none, so the only way to correct a
+    /// material record was a relational rebuild from the legacy JSON blob. Added 2026-09-22.</para>
+    /// </summary>
+    [McpServerTool, Description(
+        "Create or update a material in canon (alloys, composites, ceramics, fabrics, biomaterials). " +
+        "Pass empty id to create new; pass an existing id, or just an existing name, to update. " +
+        "Omitted scalar fields are LEFT UNCHANGED. List fields are comma-delimited and REPLACE the " +
+        "existing list; pass '[]' to clear one, or appendLists:true to merge instead of replacing.")]
+    public Task<string> create_material(
+        [Description("Material name. Required. An existing name updates that record.")] string name,
+        [Description("Category (e.g. 'metal', 'ceramic', 'composite', 'advanced', 'nano_material', 'exotic', 'future').")] string category = "",
+        [Description("Prose description of the material.")] string description = "",
+        [Description("Comma-separated physical properties (e.g. 'extreme_hardness,electrically_insulating').")] string properties = "",
+        [Description("Comma-separated applications.")] string applications = "",
+        [Description("Comma-separated developers.")] string developers = "",
+        [Description("Tier availability (e.g. 'Tier 3-5', 'black market').")] string tierAvailability = "",
+        [Description("Cost, e.g. 'Φ 200 per kg'.")] string cost = "",
+        [Description("Comma-separated tags.")] string tags = "",
+        [Description("Comma-separated aliases.")] string aliases = "",
+        [Description("Brand name.")] string brandName = "",
+        [Description("Product model name.")] string productName = "",
+        [Description("Merge list fields into the existing lists instead of replacing them. Default false.")] bool appendLists = false,
+        [Description("Optional existing material id to update.")] string id = "") =>
+        hub.InvokeAsync(nameof(GearEntityCrudTools), nameof(create_materialImpl), new
+        {
+            name, category, description, properties, applications, developers, tierAvailability,
+            cost, tags, aliases, brandName, productName, appendLists, id,
+        });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public string create_materialImpl(
+        string name,
+        string category = "",
+        string description = "",
+        string properties = "",
+        string applications = "",
+        string developers = "",
+        string tierAvailability = "",
+        string cost = "",
+        string tags = "",
+        string aliases = "",
+        string brandName = "",
+        string productName = "",
+        bool appendLists = false,
+        string id = "")
+    {
+        // Resolve by id first, then by exact name — so a caller who knows only the name (which is
+        // all get_material takes) updates the record rather than silently creating a duplicate.
+        var m = !string.IsNullOrEmpty(id) ? materials.GetById(id) : null;
+        m ??= materials.GetAll().FirstOrDefault(x => string.Equals(x.Name, name, StringComparison.OrdinalIgnoreCase));
+        var isNew = m is null;
+        m ??= new MaterialData();
+
+        m.Name = name;
+        if (!string.IsNullOrEmpty(category))         m.Category         = category;
+        if (!string.IsNullOrEmpty(description))      m.Description      = description;
+        if (!string.IsNullOrEmpty(tierAvailability)) m.TierAvailability = tierAvailability;
+        if (!string.IsNullOrEmpty(cost))             m.Cost             = cost;
+        if (!string.IsNullOrEmpty(brandName))        m.BrandName        = brandName;
+        if (!string.IsNullOrEmpty(productName))      m.ProductName      = productName;
+
+        m.Properties   = MergeList(m.Properties,   properties,   appendLists);
+        m.Applications = MergeList(m.Applications, applications, appendLists);
+        m.Developers   = MergeList(m.Developers,   developers,   appendLists);
+        m.Tags         = MergeList(m.Tags,         tags,         appendLists);
+        m.Aliases      = MergeList(m.Aliases,      aliases,      appendLists);
+
+        materials.Save(m);
+
+        // Read back rather than reporting ok:true on faith — an entity write that returns success
+        // having changed nothing is a documented failure mode of this system's MCP surface.
+        var after = materials.GetById(m.Id);
+        if (after is null)
+            return JsonSerializer.Serialize(new
+            {
+                ok = false,
+                error = "write_not_readable",
+                detail = $"Save reported success but material '{name}' could not be read back.",
+            }, CanonTools.JsonOpts);
+
+        return JsonSerializer.Serialize(new
+        {
+            ok = true,
+            created = isNew,
+            id = after.Id,
+            name = after.Name,
+            category = after.Category,
+            properties = after.Properties,
+            applications = after.Applications,
+            tags = after.Tags,
+        }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>Empty input leaves the list untouched; "[]" clears it; otherwise replace, or merge
+    /// when <paramref name="append"/> is set.</summary>
+    private static List<string> MergeList(List<string> current, string? incoming, bool append)
+    {
+        if (string.IsNullOrEmpty(incoming)) return current;
+        if (incoming.Trim() == "[]") return [];
+        var parsed = incoming.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0).ToList();
+        if (!append) return parsed;
+        var merged = new List<string>(current);
+        foreach (var p in parsed)
+            if (!merged.Contains(p, StringComparer.OrdinalIgnoreCase)) merged.Add(p);
+        return merged;
     }
 
     /// <summary>Create or update a cyberware record. Pass empty id to create new; pass an existing id to update.</summary>

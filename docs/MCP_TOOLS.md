@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**295 tools** across **50 tool families.**
+**296 tools** across **50 tool families.**
 
 ## Families
 
@@ -39,7 +39,7 @@
 | [Entity Context](#entity-context) | 7 |
 | [Entity Tag](#entity-tag) | 3 |
 | [Findings](#findings) | 6 |
-| [Gear Entity Crud](#gear-entity-crud) | 7 |
+| [Gear Entity Crud](#gear-entity-crud) | 8 |
 | [Glossary](#glossary) | 4 |
 | [Hub](#hub) | 3 |
 | [Ledger](#ledger) | 4 |
@@ -1096,6 +1096,25 @@ Create or update a piece of equipment (gear, tools, devices, accessories) in can
 - `tierAvailability` (string, optional) — Tier availability.
 - `tags` (string, optional) — Comma-separated tags.
 - `id` (string, optional) — Optional existing equipment id to update.
+
+### `create_material`
+
+Create or update a material in canon (alloys, composites, ceramics, fabrics, biomaterials). Pass empty id to create new; pass an existing id, or just an existing name, to update. Omitted scalar fields are LEFT UNCHANGED. List fields are comma-delimited and REPLACE the existing list; pass '[]' to clear one, or appendLists:true to merge instead of replacing.
+
+- `name` (string, required) — Material name. Required. An existing name updates that record.
+- `category` (string, optional) — Category (e.g. 'metal', 'ceramic', 'composite', 'advanced', 'nano_material', 'exotic', 'future').
+- `description` (string, optional) — Prose description of the material.
+- `properties` (string, optional) — Comma-separated physical properties (e.g. 'extreme_hardness,electrically_insulating').
+- `applications` (string, optional) — Comma-separated applications.
+- `developers` (string, optional) — Comma-separated developers.
+- `tierAvailability` (string, optional) — Tier availability (e.g. 'Tier 3-5', 'black market').
+- `cost` (string, optional) — Cost, e.g. 'Φ 200 per kg'.
+- `tags` (string, optional) — Comma-separated tags.
+- `aliases` (string, optional) — Comma-separated aliases.
+- `brandName` (string, optional) — Brand name.
+- `productName` (string, optional) — Product model name.
+- `appendLists` (bool, optional) — Merge list fields into the existing lists instead of replacing them. Default false.
+- `id` (string, optional) — Optional existing material id to update.
 
 ### `create_pharmaceutical`
 
