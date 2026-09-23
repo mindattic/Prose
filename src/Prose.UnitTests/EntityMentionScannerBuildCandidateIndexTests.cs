@@ -202,6 +202,27 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_AnArchetype_IsNeverACandidate_SoACharacterOfTheSameNameIsNotAmbiguous()
+    {
+        // Found live 2026-09-23 (BCODA read): the archetype "War Dog" and the character War Dog
+        // shared a whole name, so the character's mentions were dropped as ambiguous or given to
+        // the archetype.
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var archetype = Guid.NewGuid();
+        var dog = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = archetype, UniverseId = universeId, EntityType = "archetype", Name = "War Dog", Slug = "war-dog-archetype", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Entities.Add(new Entity { Id = dog, UniverseId = universeId, EntityType = "character", Name = "War Dog", Slug = "war-dog", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = dog, Name = "War Dog" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => c.EntityId == archetype), Is.False, "an archetype is never named in prose");
+        var match = EntityMentionScanner.Scan("War Dog went over the rail.", candidates).Single();
+        Assert.That((match.EntityId, match.Length), Is.EqualTo((dog, "War Dog".Length)), "the whole name, as one mention of the character");
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_ShortAlias_IsExcludedAcrossAllTypes()
     {
         // The >=3-char guard must apply uniformly to the new alias sources too, not just Character.

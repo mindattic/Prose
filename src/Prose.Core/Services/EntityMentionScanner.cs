@@ -35,9 +35,13 @@ public static class EntityMentionScanner
     /// "Kressida Haun matches 46 entities in the same universe", which reads like a duplicate-data
     /// disaster and is really just this. A quote is a record ABOUT a speaker, never a thing prose
     /// refers to by name.</para>
+    /// <para>An archetype joined 2026-09-23 (BCODA read) for the same reason: it is a
+    /// classification OF characters ("War Dog", "Ghost", "Fence", "dead weight"), never a thing
+    /// the prose names. BCODA carried 13 archetype tags and none was right — five of them sat on
+    /// the character War Dog.</para>
     /// </summary>
     private static readonly HashSet<string> ExcludedTypes =
-        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat", "quote" };
+        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat", "quote", "archetype" };
 
     // A bare article/connective is never a valid standalone tagging anchor, no matter which source
     // offers it as a candidate: given-name/surname derivation skips these when splitting a full name
