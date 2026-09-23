@@ -322,8 +322,11 @@ public static class EntityMentionScanner
 
         // Final guard, independent of source: a candidate whose entire text is nothing but a bare
         // article/connective can never safely anchor a tag. See the Stopwords doc comment for why
-        // this is a real, not hypothetical, live data hazard.
-        candidates.RemoveAll(c => Stopwords.Contains(c.Text.Trim()));
+        // this is a real, not hypothetical, live data hazard. A bare numeral or calendar word is the
+        // same hazard from a curated alias (2026-09-23: the AI "August Kade" carries the alias
+        // "August", so "July or August" re-tagged as him on every save); a tag a writer placed by
+        // hand still survives through WithPinnedMentions.
+        candidates.RemoveAll(c => Stopwords.Contains(c.Text.Trim()) || NumberWords.Contains(c.Text.Trim()));
 
         return candidates;
     }

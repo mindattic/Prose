@@ -202,6 +202,25 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_ACuratedAliasThatIsABareNumeralOrMonth_CannotAnchorATag()
+    {
+        // The AI "August Kade" carries the curated alias "August"; "Sumi Okeke" once carried "Eight".
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var id = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = id, UniverseId = universeId, EntityType = "character", Name = "August Kade", Slug = "august-kade-alias", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = id, Name = "August Kade" });
+        db.CharacterAliases.Add(new CharacterAlias { CharacterId = id, Position = 0, Value = "August" });
+        db.CharacterAliases.Add(new CharacterAlias { CharacterId = id, Position = 1, Value = "Eight" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => c.Text is "August" or "Eight"), Is.False);
+        Assert.That(EntityMentionScanner.Scan("Eight days in August, and then August Kade called.", candidates).Single().Length,
+            Is.EqualTo("August Kade".Length), "the full name still tags");
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_WholeName_OutranksADerivedFragment_EvenABookScopedOne()
     {
         // Found live 2026-09-23 (BCODA read): "Praxis" is the corporation's whole name and only the
