@@ -13,21 +13,25 @@ public sealed record BundleEntity(Guid Id, string Name, string Type, DateTime Mo
 public sealed record ContextManifest(
     string Path, Guid BookId, string Book, int Unit, string UnitHeading,
     int? PriorFromUnit, int? PriorToUnit, int PriorChars, int PriorCharsAvailable, bool PriorTruncated,
-    IReadOnlyList<BundleEntity> Entities, int Laws, IReadOnlyList<string> CanonDocuments, int TotalChars, string Hash);
+    IReadOnlyList<BundleEntity> Entities, int Laws, int TotalChars, string Hash,
+    string WorldPath, IReadOnlyList<string> CanonDocuments, int WorldChars, string WorldHash);
 
 /// <summary>
-/// The writer's working memory for one unit (RFC 0015 §3.9): one derived file, rebuilt on every
-/// call and never edited, holding everything the prose must answer to —
-/// <list type="number">
-///   <item>the book's law (its law and page-law rulings, verbatim),</item>
-///   <item>the universe's world and craft canon,</item>
-///   <item>the canonical records of every entity the unit tags, as they stand,</item>
-///   <item>the prose before the unit — the previous unit, or every preceding unit within the budget,
-///         oldest dropped first — which is never cut at a chapter boundary,</item>
-///   <item>the unit itself: its prose, or its planned beats.</item>
+/// The writer's working memory for one unit (RFC 0015 §3.9), derived, rebuilt on every call and
+/// never edited. Two files:
+/// <list type="bullet">
+///   <item><c>{slug}.world.md</c> — the book's law and the universe's world and craft canon. The
+///         same for every unit of the book, so a writer reads it once per session.</item>
+///   <item><c>{slug}.context.md</c> — the unit's own working memory, within the budget: the law
+///         again (it is short and binds every line), the records of every entity the unit tags as
+///         they stand, the prose before the unit — the previous unit, or every preceding unit within
+///         the budget, oldest dropped first, never cut at a chapter boundary — and the unit itself
+///         (its prose, or its planned beats).</item>
 /// </list>
 /// <para>This is the fix for the old writer's blindness: its "scene so far" reset to empty at every
-/// chapter and was capped at 6KB, so each chapter was written without the one before it.</para>
+/// chapter and was capped at 6KB, so each chapter was written without the one before it. The canon
+/// lives in its own file because in one file it crowded the previous chapter out of the budget —
+/// BCODA's first bundle for unit 2 held 190K of canon and none of unit 1.</para>
 /// </summary>
 public sealed class ContextBundleService(IDbContextFactory<ProseDbContext> dbFactory, BookSpineService spine, RulingService rulings)
 {
@@ -37,10 +41,13 @@ public sealed class ContextBundleService(IDbContextFactory<ProseDbContext> dbFac
     public static readonly string[] CanonTypes =
         ["WorldMaster", "UniverseCanon", "WorldBible", "UniverseCraft", "CraftGuide", "CharacterDoctrine", "DelightGuide"];
 
+    /// <summary>The unit file's budget in characters (the world file has none: it is what the canon is).</summary>
     public const int DefaultBudget = 400_000;
 
     public static string DefaultDirectory =>
         System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Prose", "factory", "context");
+
+    private static readonly JsonSerializerOptions RecordJson = new() { WriteIndented = false };
 
     public async Task<ContextManifest> BuildAsync(Guid bookId, int unitOrdinal, bool allPrior = false, int budgetChars = DefaultBudget,
         string? outDir = null, CancellationToken ct = default)
@@ -58,38 +65,52 @@ public sealed class ContextBundleService(IDbContextFactory<ProseDbContext> dbFac
         var beats = await db.Beats.AsNoTracking().Where(b => ids.Contains(b.Id))
             .Select(b => new { b.Id, b.Text, b.Title, b.Description }).ToDictionaryAsync(b => b.Id, ct);
         string Plain(Guid id) => beats.TryGetValue(id, out var b) ? BeatMarkup.StripEntityTags(b.Text ?? "").Trim() : "";
-
-        var sb = new StringBuilder();
         var bookName = node.NodeCode ?? node.Slug;
-        sb.AppendLine($"# Context — {node.Title} ({bookName}), unit {unit.Ordinal}: {unit.Heading}");
-        sb.AppendLine();
-        sb.AppendLine("Derived, rebuilt on every call, never edited. The prose answers to everything below.");
-        sb.AppendLine();
+        var dir = outDir ?? DefaultDirectory;
+        Directory.CreateDirectory(dir);
 
-        // 1. Law.
+        // Law, shared by both files.
         var laws = (await rulings.ListAsync(bookId, null, ct)).Where(r => RulingKinds.BindThePage.Contains(r.Kind)).ToList();
-        sb.AppendLine("## Law");
+        var law = new StringBuilder();
+        law.AppendLine("## Law");
         foreach (var r in laws)
-            sb.AppendLine($"- {(r.Kind == RulingKinds.PageLaw ? "[page only] " : "")}{r.Text}{(r.Pattern is null ? "" : $"  (never matches /{r.Pattern}/)")}");
-        sb.AppendLine();
+            law.AppendLine($"- {(r.Kind == RulingKinds.PageLaw ? "[page only] " : "")}{r.Text}{(r.Pattern is null ? "" : $"  (never matches /{r.Pattern}/)")}");
+        law.AppendLine();
 
-        // 2. World and craft.
+        // The world file: law, then world and craft.
         var docs = await db.Set<CanonDocument>().AsNoTracking().Include(d => d.Sections)
             .Where(d => (d.UniverseId == node.UniverseId || d.UniverseId == Universe.SharedId) && CanonTypes.Contains(d.DocumentType))
             .ToListAsync(ct);
-        sb.AppendLine("## World and craft");
+        var world = new StringBuilder();
+        world.AppendLine($"# World — {node.Title} ({bookName})");
+        world.AppendLine();
+        world.AppendLine("Derived, rebuilt on every call, never edited. The same for every unit of the book: read it once per session.");
+        world.AppendLine();
+        world.Append(law);
+        world.AppendLine("## World and craft");
         foreach (var d in docs.OrderBy(d => Array.IndexOf(CanonTypes, d.DocumentType)))
         {
-            sb.AppendLine($"### {d.Title}");
+            world.AppendLine($"### {d.Title}");
             foreach (var s in d.Sections.OrderBy(s => s.SortKey))
             {
-                sb.AppendLine($"#### {s.SectionTitle ?? s.SectionKey}");
-                sb.AppendLine(s.Content.Trim());
-                sb.AppendLine();
+                if (string.IsNullOrWhiteSpace(s.Content)) continue;
+                world.AppendLine($"#### {s.SectionTitle ?? s.SectionKey}");
+                world.AppendLine(s.Content.Trim());
+                world.AppendLine();
             }
         }
+        var worldText = world.ToString();
+        var worldPath = System.IO.Path.Combine(dir, $"{node.Slug}.world.md");
+        await File.WriteAllTextAsync(worldPath, worldText, new UTF8Encoding(false), ct);
 
-        // 3. The unit's world.
+        // The unit file.
+        var sb = new StringBuilder();
+        sb.AppendLine($"# Context — {node.Title} ({bookName}), unit {unit.Ordinal}: {unit.Heading}");
+        sb.AppendLine();
+        sb.AppendLine($"Derived, rebuilt on every call, never edited. The prose answers to everything below, and to the world file ({System.IO.Path.GetFileName(worldPath)}).");
+        sb.AppendLine();
+        sb.Append(law);
+
         var tagged = unit.Beats.SelectMany(b => beats.TryGetValue(b.BeatId, out var r) ? BeatMarkup.ExtractEntityGuids(r.Text) : Enumerable.Empty<Guid>())
             .Distinct().ToList();
         var rows = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => tagged.Contains(e.Id))
@@ -101,13 +122,11 @@ public sealed class ContextBundleService(IDbContextFactory<ProseDbContext> dbFac
         {
             var record = CanonRecordLoader.Load(db, e.Type, e.Id);
             sb.AppendLine($"### {e.Name} ({e.Type}, record of {e.ModifiedAt:u})");
-            sb.AppendLine("```json");
-            sb.AppendLine(record?.ToJsonString(new JsonSerializerOptions { WriteIndented = true }) ?? "{}");
-            sb.AppendLine("```");
+            sb.AppendLine(record?.ToJsonString(RecordJson) ?? "{}");
         }
         sb.AppendLine();
 
-        // 5 before 4: the unit's own text is fixed, so the prior prose gets whatever budget is left.
+        // The unit's own text is fixed, so the prose before it gets whatever budget is left.
         var unitText = new StringBuilder();
         unitText.AppendLine($"## This unit — {unit.Heading}");
         foreach (var b in unit.Beats)
@@ -119,7 +138,7 @@ public sealed class ContextBundleService(IDbContextFactory<ProseDbContext> dbFac
             unitText.AppendLine();
         }
 
-        // 4. Before this unit — never reset at a chapter boundary.
+        // Before this unit — never reset at a chapter boundary.
         var priorUnits = allPrior ? chapters.Take(unitIndex).ToList() : chapters.Skip(Math.Max(0, unitIndex - 1)).Take(unitIndex == 0 ? 0 : 1).ToList();
         var priorTexts = priorUnits.Select(c => (c.Ordinal, c.Heading,
             Text: string.Join("\n\n", c.Beats.Select(b => Plain(b.BeatId)).Where(t => t.Length > 0)))).ToList();
@@ -147,13 +166,13 @@ public sealed class ContextBundleService(IDbContextFactory<ProseDbContext> dbFac
         sb.Append(unitText);
 
         var content = sb.ToString();
-        var dir = outDir ?? DefaultDirectory;
-        Directory.CreateDirectory(dir);
         var path = System.IO.Path.Combine(dir, $"{node.Slug}.context.md");
         await File.WriteAllTextAsync(path, content, new UTF8Encoding(false), ct);
-        var hash = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(content))).ToLowerInvariant();
         return new ContextManifest(path, bookId, bookName, unit.Ordinal, unit.Heading,
             kept.Count > 0 ? kept[0].Ordinal : null, kept.Count > 0 ? kept[^1].Ordinal : null, used, available,
-            truncated || kept.Count < priorTexts.Count, entities, laws.Count, docs.Select(d => d.Title).ToList(), content.Length, hash);
+            truncated || kept.Count < priorTexts.Count, entities, laws.Count, content.Length, Hash(content),
+            worldPath, docs.Select(d => d.Title).ToList(), worldText.Length, Hash(worldText));
     }
+
+    private static string Hash(string s) => Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(s))).ToLowerInvariant();
 }

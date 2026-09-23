@@ -74,7 +74,7 @@ public class FactoryTools(
         return JsonSerializer.Serialize(next, JsonOpts);
     }
 
-    [McpServerTool, Description("The writer's working memory for one unit (RFC 0015 §3.9), rebuilt on every call and never edited: the book's law, the universe's world and craft canon, the records of every entity the unit tags as they stand now, the prose before the unit — the previous unit, or with priorUnits 'all' every preceding unit within the budget, oldest dropped first, never cut at a chapter boundary — and the unit itself (its prose, or its planned beats). Writes one file and returns its path and a manifest of exactly what it holds and what it left out.")]
+    [McpServerTool, Description("The writer's working memory for one unit (RFC 0015 §3.9), rebuilt on every call and never edited. Writes two files: {slug}.world.md — the book's law and the universe's world and craft canon, the same for every unit (read it once per session) — and {slug}.context.md, within the budget: the law, the records of every entity the unit tags as they stand now, the prose before the unit (the previous unit, or with priorUnits 'all' every preceding unit that fits, oldest dropped first, never cut at a chapter boundary) and the unit itself (its prose, or its planned beats). Returns both paths and a manifest of exactly what they hold and what was left out.")]
     public Task<string> factory_context(
         [Description("Book id, slug or NodeCode.")] string nodeIdOrSlug,
         [Description("Unit ordinal, as factory_status prints it.")] int unit,

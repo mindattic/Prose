@@ -136,6 +136,34 @@ public class ContextBundleTests : PressFixture
     }
 
     [Test]
+    public async Task A_large_canon_never_crowds_the_previous_unit_out_of_the_budget()
+    {
+        // BCODA's first bundle for unit 2 held 190K of canon and none of unit 1: the old blindness again.
+        var (book, _) = await BookAsync("Unit one ends with the door shut.");
+        await ChapterAsync(book, "Chapter 2 — Two", 2, "Unit two opens.");
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var universe = await db.Nodes.Where(n => n.Id == book).Select(n => n.UniverseId).SingleAsync();
+            if (!await db.CanonDocumentTypes.AnyAsync(t => t.DocumentType == "WorldMaster"))
+                db.CanonDocumentTypes.Add(new CanonDocumentType { DocumentType = "WorldMaster", PathTemplate = "docs/WORLD.md", TitleTemplate = "World", Scope = "universe" });
+            var doc = new CanonDocument { UniverseId = universe, DocumentType = "WorldMaster", Title = "The World" };
+            doc.Sections.Add(new CanonDocumentSection { SectionKey = "s1", SectionTitle = "Everything", Content = "CANON " + new string('w', 500_000), SortKey = 1 });
+            db.CanonDocuments.Add(doc);
+            await db.SaveChangesAsync();
+        }
+
+        var m = await bundles.BuildAsync(book, 2, outDir: tempRoot);
+        Assert.That(m.PriorFromUnit, Is.EqualTo(1), "the chapter before is what the budget is for");
+        var text = await File.ReadAllTextAsync(m.Path);
+        Assert.That(text, Does.Contain("Unit one ends with the door shut."));
+        Assert.That(text, Does.Not.Contain("CANON "), "the canon lives in the world file");
+        Assert.That(m.TotalChars, Is.LessThanOrEqualTo(ContextBundleService.DefaultBudget));
+        Assert.That(await File.ReadAllTextAsync(m.WorldPath), Does.Contain("#### Everything").And.Contain("CANON "));
+        Assert.That(m.CanonDocuments, Is.EqualTo(new[] { "The World" }));
+        Assert.That(m.WorldChars, Is.GreaterThan(500_000));
+    }
+
+    [Test]
     public async Task The_budget_drops_the_oldest_prose_first_and_says_so()
     {
         var (book, _) = await BookAsync("OLDEST " + new string('a', 3000));
@@ -168,6 +196,7 @@ public class ContextBundleTests : PressFixture
         Assert.That(m.Entities.Select(e => e.Id), Is.EqualTo(new[] { Guid.Parse(renko.Id) }));
         Assert.That(m.Laws, Is.EqualTo(1));
         Assert.That(text, Does.Contain("Renko never owns a car."));
+        Assert.That(await File.ReadAllTextAsync(m.WorldPath), Does.Contain("Renko never owns a car."), "the law heads both files");
         Assert.That(text, Does.Contain("A courier with a bad knee."), "the record as it stands");
         Assert.That(text, Does.Contain("Renko Moss drove north."), "the prose, tags stripped");
         Assert.That(text, Does.Not.Contain("<entity"));

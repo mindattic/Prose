@@ -281,12 +281,13 @@ public static class FactoryCli
                         var m = await services.GetRequiredService<ContextBundleService>()
                             .BuildAsync(book, unit, string.Equals(Flag("--prior"), "all", StringComparison.OrdinalIgnoreCase), budget, Flag("--out-dir"));
                         Console.WriteLine($"[context] {m.Path}");
-                        Console.WriteLine($"  {m.Book} unit {m.Unit} ({m.UnitHeading}): {m.TotalChars:N0} chars, hash {m.Hash[..12]}");
-                        Console.WriteLine($"  law: {m.Laws} ruling(s) · canon: {string.Join(", ", m.CanonDocuments)}");
-                        Console.WriteLine($"  records: {m.Entities.Count} entit{(m.Entities.Count == 1 ? "y" : "ies")} the unit tags");
+                        Console.WriteLine($"  {m.Book} unit {m.Unit} ({m.UnitHeading}): {m.TotalChars:N0} of {budget:N0} chars, hash {m.Hash[..12]}");
+                        Console.WriteLine($"  law: {m.Laws} ruling(s) · records: {m.Entities.Count} entit{(m.Entities.Count == 1 ? "y" : "ies")} the unit tags");
                         Console.WriteLine(m.PriorFromUnit is null
                             ? "  before this unit: none"
                             : $"  before this unit: units {m.PriorFromUnit}–{m.PriorToUnit}, {m.PriorChars:N0} of {m.PriorCharsAvailable:N0} chars{(m.PriorTruncated ? " (the oldest dropped to fit the budget)" : "")}");
+                        Console.WriteLine($"[world] {m.WorldPath}");
+                        Console.WriteLine($"  law + canon, {m.WorldChars:N0} chars, hash {m.WorldHash[..12]}: {string.Join(", ", m.CanonDocuments)}");
                         return 0;
                     }
                     case "journal":
