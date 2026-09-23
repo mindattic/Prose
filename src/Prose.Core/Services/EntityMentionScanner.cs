@@ -108,6 +108,11 @@ public static class EntityMentionScanner
         "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth",
         "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentieth",
         "hundredth", "thousandth",
+        // Calendar words are the same kind of closed class (2026-09-23, BCODA read): "August Kade"
+        // derived bare "August", so "the light you get in July or August" tagged as him. "sunday"
+        // had been patched in as a one-off stopword in August; the class covers it now.
+        "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december",
+        "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday",
     };
 
     public sealed record MentionCandidate(string Text, Guid EntityId, string Name, string EntityType, bool RequiresStrictCase);

@@ -181,6 +181,27 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_AMonthOrWeekday_IsNeverDerivedAsABareName()
+    {
+        // Found live 2026-09-23 (BCODA read): "August Kade" derived bare "August", so "the light the
+        // specific kind you get in July or August" tagged as him.
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var id = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = id, UniverseId = universeId, EntityType = "character", Name = "August Kade", Slug = "august-kade", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = id, Name = "August Kade" });
+        var friday = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = friday, UniverseId = universeId, EntityType = "character", Name = "Mara Friday", Slug = "mara-friday", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = friday, Name = "Mara Friday" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => c.Text is "August" or "Friday"), Is.False, "a calendar word is never a name on its own");
+        Assert.That(candidates.Any(c => c.Text == "Kade" && c.EntityId == id), Is.True, "the other derived token still tags");
+        Assert.That(EntityMentionScanner.Scan("the light you get in July or August, every Friday", candidates), Is.Empty);
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_WholeName_OutranksADerivedFragment_EvenABookScopedOne()
     {
         // Found live 2026-09-23 (BCODA read): "Praxis" is the corporation's whole name and only the
