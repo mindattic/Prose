@@ -161,6 +161,22 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
         return sb.ToString();
     }
 
+    private static readonly System.Text.RegularExpressions.Regex TagWithGuid =
+        new(@"<entity\b[^>]*\bguid=""([^""]*)""[^>]*>(.*?)</entity>", System.Text.RegularExpressions.RegexOptions.Singleline);
+
+    /// <summary>The inverse of <see cref="PinName"/>: every tag that wraps exactly
+    /// <paramref name="surface"/> and points at <paramref name="from"/> is pointed at
+    /// <paramref name="to"/> instead, or — with no <paramref name="to"/> — taken off, leaving the
+    /// words. Tags on other surfaces or other entities are untouched, and so is every word: the
+    /// result strips to the same text as <paramref name="stored"/>.</summary>
+    public static string RetagName(string stored, string surface, Guid from, Guid? to = null, string? toType = null) =>
+        TagWithGuid.Replace(stored, m =>
+        {
+            if (!Guid.TryParse(m.Groups[1].Value, out var id) || id != from) return m.Value;
+            if (!string.Equals(m.Groups[2].Value, surface, StringComparison.Ordinal)) return m.Value;
+            return to is { } target ? $"<entity repo=\"{toType}\" guid=\"{target}\">{surface}</entity>" : surface;
+        });
+
     /// <summary>Capitalized words that are never a missing entity in GLMZ prose: languages and
     /// nationalities, titles and forms of address, and in-world common nouns the prose capitalizes
     /// by convention. Positional capitals are already suppressed upstream; this is what is left.</summary>

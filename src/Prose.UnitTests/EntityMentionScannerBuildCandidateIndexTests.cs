@@ -162,6 +162,46 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_NumeralInCharacterName_IsNeverDerived_AndNoWordIsPromotedInItsPlace()
+    {
+        // Found live 2026-09-23 (BCODA read): "Praxis Operator Five" derived bare "Five", so every
+        // sentence that began with the number five ("Five shells meant five chances") tagged as him.
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var id = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = id, UniverseId = universeId, EntityType = "character", Name = "Praxis Operator Five", Slug = "praxis-operator-five", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = id, Name = "Praxis Operator Five" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => c.Text == "Five"), Is.False, "a numeral is never a name on its own");
+        Assert.That(candidates.Any(c => c.Text == "Operator"), Is.False, "the middle word is not promoted into the numeral's place");
+        Assert.That(candidates.Any(c => c.Text == "Praxis Operator Five" && c.EntityId == id), Is.True, "the full name still tags");
+        Assert.That(EntityMentionScanner.Scan("Five shells meant five chances.", candidates), Is.Empty);
+    }
+
+    [Test]
+    public async Task BuildCandidateIndexAsync_WholeName_OutranksADerivedFragment_EvenABookScopedOne()
+    {
+        // Found live 2026-09-23 (BCODA read): "Praxis" is the corporation's whole name and only the
+        // first word of the book-scoped "Praxis Operator Five"; book scope gave "Praxis soldiers" to him.
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var book = Guid.NewGuid();
+        var corp = Guid.NewGuid();
+        var op = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = corp, UniverseId = universeId, EntityType = "corponation", Name = "Praxis", Slug = "praxis", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Corponations.Add(new Corponation { Id = corp, Name = "Praxis" });
+        db.Entities.Add(new Entity { Id = op, UniverseId = universeId, EntityType = "character", Name = "Praxis Operator Five", Slug = "praxis-operator-five", Status = "canon", OriginNodeId = book, CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = op, Name = "Praxis Operator Five" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: book);
+
+        Assert.That(candidates.Where(c => c.Text == "Praxis").Select(c => c.EntityId), Is.EqualTo(new[] { corp }));
+        Assert.That(EntityMentionScanner.Scan("The Praxis soldiers held the line.", candidates).Single().EntityId, Is.EqualTo(corp));
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_ShortAlias_IsExcludedAcrossAllTypes()
     {
         // The >=3-char guard must apply uniformly to the new alias sources too, not just Character.

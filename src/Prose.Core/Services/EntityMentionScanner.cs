@@ -91,6 +91,21 @@ public static class EntityMentionScanner
     private static readonly HashSet<string> Stopwords =
         new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can", "gate", "director" };
 
+    // Numerals are a closed class, never a name on their own, so they are excluded as a class
+    // rather than one incident at a time (2026-09-23, BCODA read): "Praxis Operator Five" derived
+    // bare "Five", and every sentence that began with the number five tagged as him — 18 of the
+    // 23 "Five" tags in the book ("Five shells meant five chances"). The full name, and a tag a
+    // writer placed by hand, still tag normally; only the bare derived numeral is suppressed.
+    private static readonly HashSet<string> NumberWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+        "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen",
+        "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety", "hundred", "thousand", "million", "billion",
+        "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth",
+        "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentieth",
+        "hundredth", "thousandth",
+    };
+
     public sealed record MentionCandidate(string Text, Guid EntityId, string Name, string EntityType, bool RequiresStrictCase);
 
     public sealed record MentionMatch(int Start, int Length, Guid EntityId, string Name, string EntityType);
@@ -225,13 +240,24 @@ public static class EntityMentionScanner
                 .ToList();
             if (tokens.Count < 2) continue;
 
-            foreach (var tok in new[] { tokens[0], tokens[^1] }.Distinct(StringComparer.OrdinalIgnoreCase))
+            // The numeral is dropped from the first/last pair, not from the name: "Praxis Operator
+            // Five" offers "Praxis", never "Five" — and never "Operator" by promotion.
+            foreach (var tok in new[] { tokens[0], tokens[^1] }.Where(t => !NumberWords.Contains(t)).Distinct(StringComparer.OrdinalIgnoreCase))
             {
                 ClaimToken(tok, e.Id);
                 if (!derivedByEntity.TryGetValue(e.Id, out var list))
                     derivedByEntity[e.Id] = list = [];
                 list.Add(tok);
             }
+        }
+        // Who holds each text as a WHOLE name (a canonical name or a curated alias), as opposed to a
+        // fragment derived from a longer name. Read by the ambiguity guard below.
+        var wholeClaims = new Dictionary<string, HashSet<Guid>>(StringComparer.OrdinalIgnoreCase);
+        foreach (var c in candidates)
+        {
+            if (!wholeClaims.TryGetValue(c.Text, out var holders))
+                wholeClaims[c.Text] = holders = [];
+            holders.Add(c.EntityId);
         }
         foreach (var (id, tokens) in derivedByEntity)
         {
@@ -267,10 +293,20 @@ public static class EntityMentionScanner
                 textOwners[c.Text] = owners = [];
             owners.Add(c.EntityId);
         }
+        // A whole name outranks a fragment (2026-09-23, BCODA read): when some entity's canonical
+        // name or curated alias IS this text, an entity that only derives it from a longer name is
+        // out of the contest before book scope is consulted. "Praxis" is the corporation's whole
+        // name and only the first word of the book-scoped "Praxis Operator Five"; book scope alone
+        // gave every "Praxis soldiers" and "Praxis dissolved the architecture group" to him.
         candidates.RemoveAll(c =>
         {
             if (!textOwners.TryGetValue(c.Text, out var owners) || owners.Count <= 1) return false;
-            var bookScopedOwners = owners.Where(bookScopedIds.Contains).ToList();
+            var contenders = wholeClaims.TryGetValue(c.Text, out var whole) && whole.Count > 0
+                ? owners.Where(whole.Contains).ToHashSet()
+                : owners;
+            if (!contenders.Contains(c.EntityId)) return true;
+            if (contenders.Count == 1) return false;
+            var bookScopedOwners = contenders.Where(bookScopedIds.Contains).ToList();
             if (bookScopedOwners.Count == 1) return c.EntityId != bookScopedOwners[0];
             return true; // 0 or 2+ book-scoped contenders — genuinely ambiguous, drop all.
         });

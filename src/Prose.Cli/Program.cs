@@ -1121,6 +1121,8 @@ if (args.Contains("--booktok"))
 //   prose --universe <u> --factory capture --node X [--pin] [--pin-name "<name>" --entity <id>] [--retag] [--limit N]
 //     (station F4's worklist; --pin extends tags the book already uses for a name; --pin-name tags a name as one entity
 //      book-wide; --retag re-saves beats with untagged known names; all tags only, through the one door)
+//   prose --universe <u> --factory capture --node X --retag-name "<name>" --from <id> [--to <id>] [--except-beats N,M]
+//     (moves or removes the tags one surface name carries for the wrong entity; tags only, read back)
 //   prose --factory context --node X --unit N [--prior all] [--budget N]   (the writer's working memory, one derived file)
 //   prose --factory journal --since <ISO|6h|2d> [--until …] [--node X] [--out f]   (what happened, from the records)
 //   prose --factory usage [--report-only]   (use or delete: every factory tool against the ledger)

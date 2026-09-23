@@ -559,6 +559,53 @@ public class CaptureScannerTests : WorldFixture
 }
 
 [TestFixture]
+public class CaptureRetagTests : WorldFixture
+{
+    [Test]
+    public void RetagName_moves_or_removes_only_that_surface_for_that_entity_and_changes_no_words()
+    {
+        var five = Guid.CreateVersion7();
+        var corp = Guid.CreateVersion7();
+        var other = Guid.CreateVersion7();
+        var stored = $"<entity repo=\"character\" guid=\"{five}\">Five</entity> shells. <entity repo=\"character\" guid=\"{five}\">Praxis</entity> soldiers. " +
+                     $"<entity repo=\"character\" guid=\"{other}\">Five</entity> is someone else's.";
+
+        var off = CaptureScanner.RetagName(stored, "Five", five);
+        Assert.That(BeatMarkup.StripEntityTags(off), Is.EqualTo(BeatMarkup.StripEntityTags(stored)), "no word changes");
+        Assert.That(BeatMarkup.CountTagsByEntity(off).GetValueOrDefault(five), Is.EqualTo(1), "only the Five surface came off; his Praxis tag stays");
+        Assert.That(BeatMarkup.CountTagsByEntity(off)[other], Is.EqualTo(1), "another entity's tag on the same word is untouched");
+
+        var moved = CaptureScanner.RetagName(stored, "Praxis", five, corp, "corponation");
+        Assert.That(moved, Does.Contain($"<entity repo=\"corponation\" guid=\"{corp}\">Praxis</entity>"));
+        Assert.That(BeatMarkup.CountTagsByEntity(moved).GetValueOrDefault(five), Is.EqualTo(1));
+        Assert.That(BeatMarkup.StripEntityTags(moved), Is.EqualTo(BeatMarkup.StripEntityTags(stored)));
+    }
+
+    [Test]
+    public async Task A_numeral_tag_taken_off_stays_off_through_the_save()
+    {
+        var op = NewCharacter("Praxis Operator Five", "An operator.");
+        var opId = Guid.Parse(op.Id);
+        var (book, _) = await BookAsync("drove.");
+        var beat = (await BeatIdsAsync(book))[0];
+        async Task<string> TextAsync()
+        {
+            await using var db = await dbFactory.CreateDbContextAsync();
+            return await db.Beats.Where(b => b.Id == beat).Select(b => b.Text).SingleAsync();
+        }
+
+        await workbench.UpdateBeatTextAsync(beat, $"<entity repo=\"character\" guid=\"{opId}\">Five</entity> shells meant five chances.",
+            BeatWriteReason.TagMaintenance, deferAnalysis: true);
+        Assert.That(BeatMarkup.CountTagsByEntity(await TextAsync()).GetValueOrDefault(opId), Is.EqualTo(1), "a tag placed by hand is pinned");
+
+        await workbench.UpdateBeatTextAsync(beat, CaptureScanner.RetagName(await TextAsync(), "Five", opId), BeatWriteReason.TagMaintenance, deferAnalysis: true);
+        var text = await TextAsync();
+        Assert.That(BeatMarkup.CountTagsByEntity(text).GetValueOrDefault(opId), Is.EqualTo(0), "the scan no longer derives a numeral, so the tag stays off");
+        Assert.That(BeatMarkup.StripEntityTags(text), Is.EqualTo("Five shells meant five chances."));
+    }
+}
+
+[TestFixture]
 public class CapturePinTests : WorldFixture
 {
     [Test]
@@ -574,10 +621,14 @@ public class CapturePinTests : WorldFixture
     [Test]
     public async Task A_name_the_universe_makes_ambiguous_is_resolved_from_what_the_book_already_tags()
     {
-        // "Sable" alone is claimed by Sable and derived from "Sable Whitfield", so the save's scan
-        // drops it as ambiguous — but the book already tags it, once, as Sable. Found live on BCODA.
+        // "Sable" is Sable's whole name and also a curated alias of "Sable Whitfield": two whole
+        // claims, so the save's scan drops it as ambiguous — but the book already tags it, once, as
+        // Sable. (A name that is only DERIVED from "Sable Whitfield" is no longer a contest: the whole
+        // name wins it outright. Found live on BCODA.)
         var sable = NewCharacter("Sable", "A fixer.");
-        NewCharacter("Sable Whitfield", "Someone else entirely.");
+        var whitfield = NewCharacter("Sable Whitfield", "Someone else entirely.");
+        whitfield.Aliases = ["Sable"];
+        characters.Save(whitfield);
         var (book, _) = await BookAsync("waited.", "Later, Sable left.", "Nobody saw Sable go.");
         var ids = await BeatIdsAsync(book);
         await TagAsync(ids[0], sable);

@@ -14,6 +14,8 @@ namespace Prose.Cli;
 ///
 ///   prose --factory status --node &lt;slug|code|guid&gt;
 ///   prose --factory next [--node X] [--format block|line|json]
+///   prose --universe glmz --factory capture --node X --retag-name "&lt;surface&gt;" --from &lt;id&gt; [--to &lt;id&gt;] [--except-beats N,M]
+///     (the inverse of --pin-name: where the surface is tagged as --from, tag it as --to, or take the tag off; tags only)
 ///   prose --factory context --node X --unit N [--prior all] [--budget N] [--out-dir d]
 ///   prose --factory journal --since &lt;ISO|90m|6h|2d&gt; [--until …] [--node X] [--limit N | --out f]
 ///   prose --factory usage [--report-only]
@@ -190,6 +192,55 @@ public static class FactoryCli
                             }
                             report = await scanner.ScanAsync(book);
                             Console.WriteLine($"[capture] pinned \"{pinName}\" to {pinTo} ({pinType}) in {pinnedBeats} beat(s). Unresolved now: {report.Unresolved.Count}.");
+                        }
+                        if (Flag("--retag-name") is { } surface && Guid.TryParse(Flag("--from"), out var fromId))
+                        {
+                            // A named correction, the inverse of --pin-name: where this surface is tagged as
+                            // --from, tag it as --to instead, or take the tag off. --except-beats keeps the
+                            // beats where the tag is right. Tags only, through the one door, read back.
+                            Guid? toId = Guid.TryParse(Flag("--to"), out var tid) ? tid : null;
+                            var workbench = services.GetRequiredService<NodeWorkbenchService>();
+                            var dbf = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+                            string? toType = null;
+                            if (toId is { } target)
+                            {
+                                await using var dbt = await dbf.CreateDbContextAsync();
+                                toType = await dbt.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == target).Select(e => e.EntityType).FirstOrDefaultAsync();
+                                if (toType == null) { Console.Error.WriteLine($"[capture] no entity {target}."); return 1; }
+                            }
+                            var except = (Flag("--except-beats") ?? "").Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                                .Select(s => int.TryParse(s.TrimStart('#'), out var n) ? n : -1).Where(n => n > 0).ToHashSet();
+                            var sp = await services.GetRequiredService<BookSpineService>().GetAsync(book);
+                            int moved = 0, beatsSaved = 0, kept = 0, cameBack = 0;
+                            foreach (var beatId in sp.Chapters.SelectMany(c => c.Beats).Select(b => b.BeatId))
+                            {
+                                string before;
+                                int number;
+                                await using (var db0 = await dbf.CreateDbContextAsync())
+                                {
+                                    var row = await db0.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => new { b.Text, b.Number }).FirstAsync();
+                                    (before, number) = (row.Text, row.Number);
+                                }
+                                var after = CaptureScanner.RetagName(before, surface, fromId, toId, toType);
+                                if (after == before) continue;
+                                if (except.Contains(number)) { kept++; continue; }
+                                moved += BeatMarkup.CountTagsByEntity(before).GetValueOrDefault(fromId) - BeatMarkup.CountTagsByEntity(after).GetValueOrDefault(fromId);
+                                await workbench.UpdateBeatTextAsync(beatId, after, BeatWriteReason.TagMaintenance, deferAnalysis: true);
+                                beatsSaved++;
+                                // The save re-derives tags: prove the wrong ones did not come back.
+                                string stored;
+                                await using (var db1 = await dbf.CreateDbContextAsync())
+                                    stored = await db1.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync();
+                                if (CaptureScanner.RetagName(stored, surface, fromId, toId, toType) != stored)
+                                {
+                                    cameBack++;
+                                    Console.Error.WriteLine($"[capture] #{number}: the save put \"{surface}\" back on {fromId} (the scanner still derives it).");
+                                }
+                            }
+                            Console.WriteLine($"[capture] \"{surface}\": {moved} tag(s) {(toId is null ? "taken off" : $"moved to {toId} ({toType})")} in {beatsSaved} beat(s); " +
+                                              $"{kept} beat(s) kept as they were (--except-beats).");
+                            if (cameBack > 0) return 3;
+                            report = await scanner.ScanAsync(book);
                         }
                         if (args.Contains("--pin") && report.Unresolved.Any(n => n.BookSays != null))
                         {
