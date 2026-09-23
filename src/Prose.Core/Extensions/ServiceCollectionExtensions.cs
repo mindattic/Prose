@@ -519,6 +519,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.Factory.FactoryService>();
         services.AddSingleton<Prose.Core.Services.Factory.EntityVerificationService>();   // F1 begin/commit
         services.AddSingleton<CharacterFieldWriter>();                                   // set_character_fields
+        services.AddSingleton<EntityFieldWriter>();                                      // set_entity_fields (every repository type)
         services.AddSingleton<Prose.Core.Services.Factory.WorkOrderService>(sp => new Prose.Core.Services.Factory.WorkOrderService(
             sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),
             (book, station) => sp.GetRequiredService<Prose.Core.Services.Factory.FactoryService>().StationPassesAsync(book, station)));

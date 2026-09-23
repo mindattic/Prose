@@ -417,8 +417,92 @@ public class EntityVerificationTests : WorldFixture
 }
 
 [TestFixture]
+public class EntityFieldWriterTests : WorldFixture
+{
+    private FactionRepository factions = null!;
+    private DistrictRepository places = null!;
+    private EntityFieldWriter entityWriter = null!;
+
+    [SetUp]
+    public void SetUpEntityWriter()
+    {
+        factions = new FactionRepository(dbFactory);
+        places = new DistrictRepository(dbFactory);
+        var services = new Microsoft.Extensions.DependencyInjection.ServiceCollection();
+        Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, factions);
+        Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, places);
+        var sp = Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(services);
+        entityWriter = new EntityFieldWriter(sp, gate, dbFactory, writer);
+    }
+
+    [Test]
+    public void Every_repository_type_has_a_field_writer_and_a_record_loader()
+    {
+        var repoTypes = typeof(CharacterRepository).Assembly.GetTypes()
+            .Where(t => !t.IsAbstract && t.BaseType is { IsGenericType: true } b && b.GetGenericTypeDefinition() == typeof(EfRepository<>))
+            .ToList();
+        Assert.That(repoTypes, Has.Count.GreaterThanOrEqualTo(29));
+        var covered = EntityFieldWriter.Repositories.Values.Append(typeof(CharacterRepository)).ToHashSet();
+        Assert.That(repoTypes.Where(t => !covered.Contains(t)).Select(t => t.Name), Is.Empty,
+            "a repository type with no field writer is a record that can be read but not corrected");
+        Assert.That(EntityFieldWriter.Repositories.Keys.Append("character"), Is.SubsetOf(CanonRecordLoader.MappedTypes));
+    }
+
+    [Test]
+    public async Task A_faction_list_item_with_commas_stays_one_item_and_siblings_are_untouched()
+    {
+        var f = new FactionData { Id = Guid.NewGuid().ToString("N"), Name = "The Vultures", Description = "Body pickup.",
+            Methods = ["Body pickup", "Discreet delivery, used once by Hua to insert a False Death Protocol subject"], StoryHooks = ["Doorstep"] };
+        factions.Save(f);
+
+        var r = await entityWriter.SetFieldsAsync(f.Id, """{"methods":["Body pickup","Discreet contract delivery, to a non-standard destination, no questions asked"]}""");
+        Assert.That(r.Ok, Is.True, r.Error);
+        Assert.That(r.Changed, Is.EqualTo(new[] { "methods" }));
+        var back = factions.GetById(f.Id)!;
+        Assert.That(back.Methods, Has.Count.EqualTo(2));
+        Assert.That(back.Methods[1], Does.Contain("no questions asked"));
+        Assert.That(back.StoryHooks, Is.EqualTo(new[] { "Doorstep" }), "a key not given is untouched");
+    }
+
+    [Test]
+    public async Task A_place_takes_tags_away_and_refuses_unknown_keys()
+    {
+        var p = new DistrictData { Id = Guid.NewGuid().ToString("N"), Name = "Northpoint", Description = "A body farm.", Tags = ["carrion", "street-meat"] };
+        places.Save(p);
+        var r = await entityWriter.SetFieldsAsync(p.Id, """{"tags":["carrion"]}""");
+        Assert.That(r.Ok, Is.True, r.Error);
+        Assert.That(places.GetById(p.Id)!.Tags, Is.EqualTo(new[] { "carrion" }));
+
+        var bad = await entityWriter.SetFieldsAsync(p.Id, """{"methods":["x"]}""");
+        Assert.That(bad.Ok, Is.False);
+        Assert.That(bad.Error, Does.Contain("unknown field"));
+    }
+
+    [Test]
+    public async Task A_character_id_gets_the_character_rules()
+    {
+        var c = NewCharacter();
+        var r = await entityWriter.SetFieldsAsync(c.Id, """{"location":"Halsted"}""");
+        Assert.That(r.Ok, Is.False);
+        Assert.That(r.Error, Does.Contain("location"));
+    }
+}
+
+[TestFixture]
 public class RecordLawTests : WorldFixture
 {
+    [Test]
+    public async Task A_search_reads_the_tagged_records_for_one_pattern_and_records_nothing()
+    {
+        var c = NewCharacter("Hua Test", "She runs the south-arm chamber.");
+        var (book, _) = await BookAsync("Nothing here.");
+        await TagAsync((await BeatIdsAsync(book))[0], c);
+        var hits = await rulings.FindRecordViolationsAsync(book, searchPattern: @"south-arm");
+        Assert.That(hits.Single().Field, Is.EqualTo("description"));
+        Assert.That(await rulings.ListAsync(book), Is.Empty, "a search is not a ruling");
+        Assert.That(await rulings.FindRecordViolationsAsync(book), Is.Empty, "and the laws, of which there are none, find nothing");
+    }
+
     [Test]
     public async Task A_law_binds_the_records_a_book_tags_and_a_page_law_binds_only_the_page()
     {

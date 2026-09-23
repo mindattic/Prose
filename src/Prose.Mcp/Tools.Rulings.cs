@@ -90,13 +90,14 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     [McpServerTool, Description("Every place an active law's pattern matches the canonical record of an entity the book tags (the world must not hold what the page may not say). Page-laws are not applied to records: they name facts the record is meant to hold. Each hit is fixed on the record (set_character_fields / create_*), or the pattern is superseded if too broad.")]
     public Task<string> record_law_violations(
         [Description("Book id, slug or NodeCode.")] string nodeIdOrSlug,
-        [Description("Narrow to one entity's record.")] string? entityId = null) =>
-        hub.InvokeAsync(nameof(RulingTools), nameof(RecordLawViolationsImpl), new { nodeIdOrSlug, entityId });
+        [Description("Narrow to one entity's record.")] string? entityId = null,
+        [Description("Search the records for this one .NET regex instead of the laws (read-only, recorded nowhere).")] string? searchPattern = null) =>
+        hub.InvokeAsync(nameof(RulingTools), nameof(RecordLawViolationsImpl), new { nodeIdOrSlug, entityId, searchPattern });
 
-    public async Task<string> RecordLawViolationsImpl(string nodeIdOrSlug, string? entityId = null)
+    public async Task<string> RecordLawViolationsImpl(string nodeIdOrSlug, string? entityId = null, string? searchPattern = null)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
-        var hits = await rulings.FindRecordViolationsAsync(id, Guid.TryParse(entityId, out var e) ? e : null);
+        var hits = await rulings.FindRecordViolationsAsync(id, Guid.TryParse(entityId, out var e) ? e : null, searchPattern);
         return JsonSerializer.Serialize(new { count = hits.Count, records = hits.Select(h => h.EntityId).Distinct().Count(), hits }, JsonOpts);
     }
 

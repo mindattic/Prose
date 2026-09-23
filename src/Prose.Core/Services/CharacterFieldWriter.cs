@@ -8,13 +8,13 @@ using Prose.Core.Models.Canon;
 
 namespace Prose.Core.Services;
 
-/// <summary>What one <see cref="CharacterFieldWriter.SetFieldsAsync"/> call did. <c>Record</c> is the
-/// read-back: the character as the database holds it after the write.</summary>
-public sealed record CharacterFieldWriteResult(
+/// <summary>What one field-writer call did (<see cref="CharacterFieldWriter"/>, <see cref="EntityFieldWriter"/>).
+/// <c>Record</c> is the read-back: the record as the database holds it after the write.</summary>
+public sealed record FieldWriteResult(
     bool Ok, string? Error, IReadOnlyList<string> Changed, IReadOnlyList<string> NotLanded, IReadOnlyList<string> Warnings,
     int UnreadCost, string? UnreadBeats, JsonNode? Record)
 {
-    public static CharacterFieldWriteResult Fail(string error, int cost = 0, string? beats = null) =>
+    public static FieldWriteResult Fail(string error, int cost = 0, string? beats = null) =>
         new(false, error, [], [], [], cost, beats, null);
 }
 
@@ -66,23 +66,23 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
     /// <summary>Every key <c>get_character</c> returns.</summary>
     public static IReadOnlyCollection<string> AllKeys => Properties.Keys;
 
-    public async Task<CharacterFieldWriteResult> SetFieldsAsync(string id, string fieldsJson, bool confirmUnread = false,
+    public async Task<FieldWriteResult> SetFieldsAsync(string id, string fieldsJson, bool confirmUnread = false,
         CancellationToken ct = default)
     {
         JsonObject fields;
         try { fields = JsonNode.Parse(fieldsJson ?? "") as JsonObject ?? throw new JsonException(); }
-        catch (JsonException) { return CharacterFieldWriteResult.Fail("fields must be one JSON object: {\"field\": value, …}."); }
-        if (fields.Count == 0) return CharacterFieldWriteResult.Fail("no fields given.");
+        catch (JsonException) { return FieldWriteResult.Fail("fields must be one JSON object: {\"field\": value, …}."); }
+        if (fields.Count == 0) return FieldWriteResult.Fail("no fields given.");
 
         var unknown = fields.Select(f => f.Key).Where(k => !Properties.ContainsKey(k)).ToList();
         if (unknown.Count > 0)
-            return CharacterFieldWriteResult.Fail($"unknown field(s): {string.Join(", ", unknown)}. Writable: {string.Join(", ", WritableKeys)}.");
+            return FieldWriteResult.Fail($"unknown field(s): {string.Join(", ", unknown)}. Writable: {string.Join(", ", WritableKeys)}.");
         var refused = fields.Select(f => f.Key).Where(Refused.ContainsKey).ToList();
         if (refused.Count > 0)
-            return CharacterFieldWriteResult.Fail(string.Join(" ", refused.Select(k => $"'{k}' is not written here: {Refused[k]}")));
+            return FieldWriteResult.Fail(string.Join(" ", refused.Select(k => $"'{k}' is not written here: {Refused[k]}")));
 
         var current = characters.GetById(id);
-        if (current == null) return CharacterFieldWriteResult.Fail($"no character with id {id} in this universe.");
+        if (current == null) return FieldWriteResult.Fail($"no character with id {id} in this universe.");
         var entityId = Guid.Parse(current.Id);
 
         var before = (JsonObject)JsonSerializer.SerializeToNode(current, Opts)!;
@@ -91,21 +91,21 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
         var warnings = new List<string>();
         foreach (var (key, value) in fields)
         {
-            if (value == null && key == "name") return CharacterFieldWriteResult.Fail("'name' cannot be cleared.");
+            if (value == null && key == "name") return FieldWriteResult.Fail("'name' cannot be cleared.");
             var next = MergePatch(after[key], value, empty[key]);
             try { JsonSerializer.Deserialize(next?.ToJsonString() ?? "null", Properties[key].PropertyType, Opts); }
             catch (JsonException ex)
             {
-                return CharacterFieldWriteResult.Fail($"'{key}' has the wrong shape for {Describe(Properties[key].PropertyType)}: {ex.Message}");
+                return FieldWriteResult.Fail($"'{key}' has the wrong shape for {Describe(Properties[key].PropertyType)}: {ex.Message}");
             }
             after[key] = next;
         }
 
         var updated = after.Deserialize<CharacterData>(Opts)!;
         updated.Id = current.Id;
-        if (string.IsNullOrWhiteSpace(updated.Name)) return CharacterFieldWriteResult.Fail("'name' cannot be empty.");
+        if (string.IsNullOrWhiteSpace(updated.Name)) return FieldWriteResult.Fail("'name' cannot be empty.");
         var blank = updated.Relationships.FindIndex(r => string.IsNullOrWhiteSpace(r.Name));
-        if (blank >= 0) return CharacterFieldWriteResult.Fail($"relationships[{blank}] has no 'name' (the relationship target).");
+        if (blank >= 0) return FieldWriteResult.Fail($"relationships[{blank}] has no 'name' (the relationship target).");
         // The write gate rejects an alias equal to the character's own name; drop it rather than fail the call.
         var self = updated.Aliases.Where(a => string.Equals(a.Trim(), updated.Name.Trim(), StringComparison.OrdinalIgnoreCase)).ToList();
         if (self.Count > 0)
@@ -117,13 +117,13 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
         var intended = (JsonObject)JsonSerializer.SerializeToNode(updated, Opts)!;
         var changed = fields.Select(f => f.Key).Where(k => !JsonNode.DeepEquals(before[k], intended[k])).ToList();
         if (changed.Count == 0)
-            return new CharacterFieldWriteResult(true, null, [], [], [.. warnings, "nothing changed; nothing was written."], 0, null,
+            return new FieldWriteResult(true, null, [], [], [.. warnings, "nothing changed; nothing was written."], 0, null,
                 CanonRecordLoader.Prune(before));
 
         var cost = await gate.ReadBeatsMentioningAsync(entityId, ct);
         var costRuns = cost.Count == 0 ? null : ReadGateService.Runs(cost.Select(c => c.Number));
         if (cost.Count > 0 && !confirmUnread)
-            return CharacterFieldWriteResult.Fail(
+            return FieldWriteResult.Fail(
                 $"this edit un-reads {cost.Count} beat(s) that mention {current.Name} (#{costRuns}). " +
                 "Pass confirmUnread to make it, then re-read them.", cost.Count, costRuns);
 
@@ -136,13 +136,13 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
         }
         catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
         {
-            return CharacterFieldWriteResult.Fail($"the save was refused: {ex.Message}", cost.Count, costRuns);
+            return FieldWriteResult.Fail($"the save was refused: {ex.Message}", cost.Count, costRuns);
         }
 
         var fresh = characters.GetById(current.Id);
         var saved = fresh == null ? null : (JsonObject)JsonSerializer.SerializeToNode(fresh, Opts)!;
         var notLanded = saved == null ? changed : changed.Where(k => !JsonNode.DeepEquals(intended[k], saved[k])).ToList();
-        return new CharacterFieldWriteResult(notLanded.Count == 0,
+        return new FieldWriteResult(notLanded.Count == 0,
             notLanded.Count == 0 ? null : $"saved, but {notLanded.Count} field(s) read back different from what was written: {string.Join(", ", notLanded)}.",
             changed, notLanded, warnings, cost.Count, costRuns, CanonRecordLoader.Prune(saved));
     }
@@ -150,13 +150,7 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
     /// <summary>Detach every tag the new list does not name (the save already attached the new ones).</summary>
     private async Task ReplaceTagsAsync(Guid entityId, IReadOnlyCollection<string> tags, CancellationToken ct)
     {
-        var keep = tags.Where(t => !string.IsNullOrWhiteSpace(t)).Select(t => t.Trim()).ToHashSet(StringComparer.OrdinalIgnoreCase);
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var rows = await db.EntityTags.Include(t => t.Tag).Where(t => t.EntityId == entityId).ToListAsync(ct);
-        var drop = rows.Where(r => r.Tag == null || !keep.Contains(r.Tag.Name)).ToList();
-        if (drop.Count == 0) return;
-        db.EntityTags.RemoveRange(drop);
-        await db.SaveChangesAsync(ct);
+        await FieldPatch.ReplaceTagsAsync(dbFactory, entityId, tags, ct);
         characters.Reload();
     }
 
@@ -181,10 +175,5 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
         return result;
     }
 
-    private static string Describe(Type t) =>
-        t == typeof(string) ? "a string"
-        : t == typeof(int) || t == typeof(double) ? "a number"
-        : t.IsGenericType && t.GetGenericTypeDefinition() == typeof(List<>) ? "a JSON array"
-        : t.IsGenericType && t.GetGenericTypeDefinition() == typeof(Dictionary<,>) ? "a JSON object of key → value"
-        : "a JSON object";
+    private static string Describe(Type t) => FieldPatch.Describe(t);
 }

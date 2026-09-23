@@ -11,6 +11,7 @@ namespace Prose.Cli;
 /// (RFC 0015 §3.3–3.4). Runs in the Hub, so it works right after a Hub deploy.
 ///
 ///   prose --universe glmz --set-character-fields --id &lt;character id&gt; --file fields.json [--confirm-unread]
+///   prose --universe glmz --set-entity-fields --id &lt;any entity id&gt; --file fields.json [--confirm-unread]
 ///   prose --universe glmz --verify-entity begin --entity &lt;id&gt; --node &lt;book&gt; [--text-budget N] [--out packet.json]
 ///   prose --universe glmz --verify-entity commit --nonce &lt;nonce&gt; [--by claude]
 ///
@@ -26,17 +27,19 @@ public static class WorldCli
     {
         string? Flag(string name) { var i = Array.IndexOf(args, name); return i >= 0 && i + 1 < args.Length ? args[i + 1] : null; }
 
-        if (args.Contains("--set-character-fields"))
+        if (args.Contains("--set-character-fields") || args.Contains("--set-entity-fields"))
         {
             var id = Flag("--id");
             var file = Flag("--file");
             if (string.IsNullOrWhiteSpace(id) || file == null || !File.Exists(file))
             {
-                Console.Error.WriteLine("[world] usage: --set-character-fields --id <character id> --file fields.json [--confirm-unread]");
+                Console.Error.WriteLine("[world] usage: --set-character-fields | --set-entity-fields --id <entity id> --file fields.json [--confirm-unread]");
                 return 1;
             }
-            var r = await services.GetRequiredService<CharacterFieldWriter>()
-                .SetFieldsAsync(id, await File.ReadAllTextAsync(file), args.Contains("--confirm-unread"));
+            var json = await File.ReadAllTextAsync(file);
+            var r = args.Contains("--set-entity-fields")
+                ? await services.GetRequiredService<EntityFieldWriter>().SetFieldsAsync(id, json, args.Contains("--confirm-unread"))
+                : await services.GetRequiredService<CharacterFieldWriter>().SetFieldsAsync(id, json, args.Contains("--confirm-unread"));
             Console.WriteLine(JsonSerializer.Serialize(r, Json));
             if (r.Ok) Console.Error.WriteLine($"[world] {(r.Changed.Count == 0 ? "nothing changed" : "changed: " + string.Join(", ", r.Changed))}" +
                                               (r.UnreadCost > 0 ? $" · un-read {r.UnreadCost} beat(s): #{r.UnreadBeats}" : ""));

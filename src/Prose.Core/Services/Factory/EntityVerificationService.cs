@@ -109,7 +109,7 @@ public sealed class EntityVerificationService(
                 $"{ReadGateService.Runs(unreadMentions.Select(m => m.Position))}). A record is verified against the book as read: read them first.");
 
         // The record must not hold what the book's law forbids (RFC 0015 §3.6).
-        var breaches = await rulings.FindRecordViolationsAsync(bookId, entityId, ct);
+        var breaches = await rulings.FindRecordViolationsAsync(bookId, entityId, ct: ct);
         if (breaches.Count > 0)
             throw new InvalidOperationException(
                 $"{entity.Name}'s record breaks {breaches.Select(b => b.RulingId).Distinct().Count()} law(s): " +

@@ -1129,9 +1129,9 @@ if (LeadingFlagIgnoringUniverse(args) is "--factory" or "--order" or "--session"
 }
 
 // CLI mode: the world's write path and station F1 (RFC 0015 §3.3–3.4).
-//   prose --universe glmz --set-character-fields --id <id> --file fields.json [--confirm-unread]
+//   prose --universe glmz --set-character-fields | --set-entity-fields --id <id> --file fields.json [--confirm-unread]
 //   prose --universe glmz --verify-entity begin --entity <id> --node <book> | commit --nonce <nonce>
-if (args.Contains("--set-character-fields") || args.Contains("--verify-entity"))
+if (args.Contains("--set-character-fields") || args.Contains("--set-entity-fields") || args.Contains("--verify-entity"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("WorldCli", args);
     return;

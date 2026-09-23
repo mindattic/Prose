@@ -2058,10 +2058,10 @@ _(no description in the dispatch comment — add one above the guard in `Program
 
 <sub>handler `SetCanonSectionCli`</sub>
 
-### `--set-character-fields` / `--verify-entity`
+### `--set-character-fields` / `--set-entity-fields` / `--verify-entity`
 
 ```
-prose --universe glmz --set-character-fields --id <id> --file fields.json [--confirm-unread]
+prose --universe glmz --set-character-fields | --set-entity-fields --id <id> --file fields.json [--confirm-unread]
 prose --universe glmz --verify-entity begin --entity <id> --node <book> | commit --nonce <nonce>
 ```
 

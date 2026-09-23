@@ -125,12 +125,17 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
     /// Every place an active law's pattern matches the canonical record of an entity the book tags
     /// (RFC 0015 §3.6): the world the writer draws on must not hold what the page may not say.
     /// Page-laws are not applied here — they name facts the record is meant to hold.
-    /// <paramref name="entityId"/> narrows the scan to one record.
+    /// <paramref name="entityId"/> narrows the scan to one record. <paramref name="searchPattern"/>
+    /// replaces the laws with one ad-hoc pattern: a read-only search of the book's world (for the
+    /// residue of a retired storyline, say), recorded nowhere.
     /// </summary>
-    public async Task<List<RecordLawHit>> FindRecordViolationsAsync(Guid bookId, Guid? entityId = null, CancellationToken ct = default)
+    public async Task<List<RecordLawHit>> FindRecordViolationsAsync(Guid bookId, Guid? entityId = null, string? searchPattern = null,
+        CancellationToken ct = default)
     {
-        var laws = (await ListAsync(bookId, RulingKinds.Law, ct)).Where(r => r.Pattern != null)
-            .Select(r => (Law: r, Rx: Compile(r.Pattern!))).ToList();
+        var laws = !string.IsNullOrWhiteSpace(searchPattern)
+            ? [(Law: new Ruling { Id = Guid.Empty, Kind = "search", Text = $"search /{searchPattern}/", Pattern = searchPattern }, Rx: Compile(searchPattern))]
+            : (await ListAsync(bookId, RulingKinds.Law, ct)).Where(r => r.Pattern != null)
+                .Select(r => (Law: r, Rx: Compile(r.Pattern!))).ToList();
         if (laws.Count == 0) return [];
         List<Guid> ids = entityId is { } one ? [one]
             : (await BookBeatsAsync(bookId, ct)).SelectMany(b => BeatMarkup.ExtractEntityGuids(b.Raw)).Distinct().ToList();

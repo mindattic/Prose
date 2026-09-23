@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**273 tools** across **49 tool families.**
+**274 tools** across **49 tool families.**
 
 ## Families
 
@@ -62,7 +62,7 @@
 | [Verification](#verification) | 2 |
 | [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
-| [World](#world) | 3 |
+| [World](#world) | 4 |
 | [World Entity Crud](#world-entity-crud) | 6 |
 | [World Modelling](#world-modelling) | 11 |
 | [Writing](#writing) | 3 |
@@ -1837,6 +1837,7 @@ Every place an active law's pattern matches the canonical record of an entity th
 
 - `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
 - `entityId` (string, optional) — Narrow to one entity's record.
+- `searchPattern` (string, optional) — Search the records for this one .NET regex instead of the laws (read-only, recorded nowhere).
 
 ### `record_ruling`
 
@@ -2154,6 +2155,14 @@ Set any fields of a character's record, by the same snake_case keys get_characte
 
 - `id` (string, required) — Character id (32-char hex or UUID).
 - `fieldsJson` (string, required) — JSON object of field → value, e.g. {"age":27,"story_hooks":["…"],"behavioral":{…}}.
+- `confirmUnread` (bool, optional) — Make the write even though it un-reads the listed beats (then re-read them).
+
+### `set_entity_fields`
+
+Set any fields of ANY entity's record — faction, place, weapon, corponation, cyberware, and every other repository type (characters are routed to set_character_fields' rules) — by the same snake_case keys its get_* tool returns. JSON Merge Patch (RFC 7396): a key present sets it, null clears it, a key absent is untouched, objects merge, lists replace whole (JSON arrays; nothing is split on commas). Refused: id, type, rating, vote_count. Cost-visible: refused with the count if it would un-read read beats, unless confirmUnread. Returns what changed and the record as read back.
+
+- `id` (string, required) — Entity id (32-char hex or UUID).
+- `fieldsJson` (string, required) — JSON object of field → value.
 - `confirmUnread` (bool, optional) — Make the write even though it un-reads the listed beats (then re-read them).
 
 ### `verify_entity_begin`
