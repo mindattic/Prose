@@ -46,7 +46,10 @@ foreach ($line in @($status)) {
     if (-not $covered) { $violations.Add("uncovered change: $p") }
 }
 
-# (2) raw sqlcmd writes in this session's own tool calls
+# (2) raw sqlcmd writes in this session's own tool calls. sqlcmd counts where it runs - at a line
+# start, after ; & | ( or cmd /c - with a write keyword before that command ends. A command that only
+# names sqlcmd inside a string (a commit message, a test fixture, a grep) is not a write.
+$sqlcmdWrite = '(?im)(^|[;&|(]|\bcmd(\.exe)?\s+/c)\s*(&\s*)?["'']?sqlcmd(\.exe)?["'']?\s[^\r\n;|]*\b(update|insert|delete|merge|drop|alter)\b'
 $tp = "$($in.transcript_path)"
 if ($tp -and (Test-Path $tp)) {
     foreach ($l in [IO.File]::ReadLines($tp)) {
@@ -55,7 +58,7 @@ if ($tp -and (Test-Path $tp)) {
         foreach ($c in @($e.message.content)) {
             if ($c.type -eq 'tool_use' -and ($c.name -eq 'Bash' -or $c.name -eq 'PowerShell')) {
                 $cmd = "$($c.input.command)"
-                if ($cmd -match '(?i)sqlcmd' -and $cmd -match '(?i)\b(update|insert|delete|merge|drop|alter)\b') {
+                if ($cmd -match $sqlcmdWrite) {
                     $violations.Add("raw sqlcmd write in this session: $($cmd.Substring(0, [Math]::Min(120, $cmd.Length)))")
                 }
             }
