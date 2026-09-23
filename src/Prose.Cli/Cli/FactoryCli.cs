@@ -158,10 +158,41 @@ public static class FactoryCli
                         Console.WriteLine($"[capture] {report.BeatsScanned} beats, {report.Candidates} known names/aliases, {report.Millis} ms.");
                         Console.WriteLine($"  (a) {report.Unresolved.Count} unresolved name(s) used in {CaptureScanner.MinBeats}+ beats:");
                         foreach (var n in report.Unresolved.Take(limit))
-                            Console.WriteLine($"  {n.Beats,4}x  {n.Name,-36} e.g. {string.Join(", ", n.Numbers.Take(5).Select(x => "#" + x))}");
+                            Console.WriteLine($"  {n.Beats,4}x  {n.Name,-36} e.g. {string.Join(", ", n.Numbers.Take(5).Select(x => "#" + x))}" +
+                                              (n.BookSays is { } says ? $"   [the book tags it elsewhere as {n.BookSaysName} ({n.BookSaysType} {says}) — --pin]" : ""));
                         Console.WriteLine($"  (b) {report.Untagged.Sum(t => t.Missing)} untagged mention(s) of known entities in {report.Untagged.Select(t => t.BeatId).Distinct().Count()} beat(s):");
                         foreach (var g in report.Untagged.GroupBy(t => t.EntityName).OrderByDescending(g => g.Sum(t => t.Missing)).Take(limit))
                             Console.WriteLine($"  {g.Sum(t => t.Missing),4}x  {g.Key,-36} in {string.Join(", ", g.Take(6).Select(t => "#" + t.Number))}{(g.Count() > 6 ? ", …" : "")}");
+                        if (args.Contains("--pin") && report.Unresolved.Any(n => n.BookSays != null))
+                        {
+                            // Only where the book has already said who a surface name is (exactly one
+                            // entity across its own tags): extend that tag to the untagged uses. No guess.
+                            var workbench = services.GetRequiredService<NodeWorkbenchService>();
+                            var dbf = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+                            int beatsSaved = 0, names = 0, wordsChanged = 0;
+                            foreach (var n in report.Unresolved.Where(n => n.BookSays != null))
+                            {
+                                names++;
+                                foreach (var beatId in n.BeatIds.Distinct())
+                                {
+                                    string before;
+                                    await using (var db0 = await dbf.CreateDbContextAsync())
+                                        before = await db0.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync();
+                                    var pinned = CaptureScanner.PinName(before, n.Name, n.BookSays!.Value, n.BookSaysType ?? "character");
+                                    if (pinned == before) continue;
+                                    await workbench.UpdateBeatTextAsync(beatId, pinned, BeatWriteReason.TagMaintenance, deferAnalysis: true);
+                                    string after;
+                                    await using (var db1 = await dbf.CreateDbContextAsync())
+                                        after = await db1.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync();
+                                    beatsSaved++;
+                                    if (BeatMarkup.StripEntityTags(after) != BeatMarkup.StripEntityTags(before)) wordsChanged++;
+                                }
+                            }
+                            var again = await scanner.ScanAsync(book);
+                            Console.WriteLine($"[capture] pinned {names} name(s) the book already resolves, re-saving {beatsSaved} beat(s) " +
+                                              $"({wordsChanged} also normalized by the save's sanitizer). Unresolved now: {again.Unresolved.Count}.");
+                            report = again;
+                        }
                         if (args.Contains("--retag") && report.Untagged.Count > 0)
                         {
                             var workbench = services.GetRequiredService<NodeWorkbenchService>();

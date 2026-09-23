@@ -9,8 +9,11 @@ using Prose.Core.Data.Entities;
 namespace Prose.Core.Services.Factory;
 
 /// <summary>A capitalized name the book uses in two or more beats that no entity, alias, tag or
-/// incidental ruling accounts for.</summary>
-public sealed record UnresolvedName(string Name, int Beats, IReadOnlyList<int> Numbers);
+/// incidental ruling accounts for. <c>BookSays</c> is set when the book already tags this exact
+/// surface text as one entity elsewhere (the scan dropped it as ambiguous across the universe):
+/// the book itself has said who it is, so <c>--pin</c> can extend that tag without a guess.</summary>
+public sealed record UnresolvedName(string Name, int Beats, IReadOnlyList<int> Numbers, IReadOnlyList<Guid> BeatIds,
+    Guid? BookSays = null, string? BookSaysName = null, string? BookSaysType = null);
 
 /// <summary>Occurrences of a known entity in one beat that the save path would tag and the stored
 /// text does not.</summary>
@@ -78,6 +81,14 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
 
         var beatsByName = new Dictionary<string, List<(Guid Id, int Number)>>(StringComparer.OrdinalIgnoreCase);
         var untagged = new List<UntaggedMention>();
+        // Which entities the book's own tags give each exact surface text.
+        var surfaceOwners = new Dictionary<string, HashSet<Guid>>(StringComparer.Ordinal);
+        foreach (var b in beats)
+            foreach (var t in BeatMarkup.ExtractTaggedMentions(b.Text))
+            {
+                if (!surfaceOwners.TryGetValue(t.Text, out var owners)) surfaceOwners[t.Text] = owners = [];
+                owners.Add(t.EntityId);
+            }
         foreach (var b in beats)
         {
             if (string.IsNullOrWhiteSpace(b.Text)) continue;
@@ -108,9 +119,18 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
             }
         }
 
+        var says = surfaceOwners.Where(kv => kv.Value.Count == 1).ToDictionary(kv => kv.Key, kv => kv.Value.First(), StringComparer.Ordinal);
+        var sayIds = says.Values.Distinct().ToList();
+        var sayEntities = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => sayIds.Contains(e.Id))
+            .Select(e => new { e.Id, e.Name, e.EntityType }).ToDictionaryAsync(e => e.Id, ct);
         var unresolved = beatsByName.Where(kv => kv.Value.Count >= MinBeats)
             .OrderByDescending(kv => kv.Value.Count).ThenBy(kv => kv.Key, StringComparer.OrdinalIgnoreCase)
-            .Select(kv => new UnresolvedName(kv.Key, kv.Value.Count, kv.Value.Select(v => v.Number).ToList())).ToList();
+            .Select(kv =>
+            {
+                var owner = says.TryGetValue(kv.Key, out var o) && sayEntities.ContainsKey(o) ? o : (Guid?)null;
+                return new UnresolvedName(kv.Key, kv.Value.Count, kv.Value.Select(v => v.Number).ToList(), kv.Value.Select(v => v.Id).ToList(),
+                    owner, owner is { } oid ? sayEntities[oid].Name : null, owner is { } tid ? sayEntities[tid].EntityType : null);
+            }).ToList();
         var byBeat = new Dictionary<Guid, (int Unresolved, int Untagged)>();
         foreach (var kv in beatsByName.Where(kv => kv.Value.Count >= MinBeats))
             foreach (var (beatId, _) in kv.Value)
@@ -121,6 +141,24 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
         var report = new CaptureReport(beats.Count, candidates.Count, unresolved, untagged, byBeat, watch.ElapsedMilliseconds);
         Memo[bookId] = (key, report);
         return report;
+    }
+
+    /// <summary>The stored text with every untagged, whole-word, exact-case occurrence of
+    /// <paramref name="name"/> wrapped in a tag for <paramref name="entityId"/>. Text inside existing
+    /// tags is left alone, so no tag is ever nested or re-pointed. The words do not change.</summary>
+    public static string PinName(string stored, string name, Guid entityId, string entityType)
+    {
+        var spans = BeatMarkup.TagSpans(stored);
+        var hits = System.Text.RegularExpressions.Regex.Matches(stored, $@"\b{System.Text.RegularExpressions.Regex.Escape(name)}\b")
+            .Where(m => !spans.Any(s => m.Index >= s.Start && m.Index < s.Start + s.Length))
+            .OrderByDescending(m => m.Index).ToList();
+        var sb = new StringBuilder(stored);
+        foreach (var m in hits)
+        {
+            sb.Remove(m.Index, m.Length);
+            sb.Insert(m.Index, $"<entity repo=\"{entityType}\" guid=\"{entityId}\">{m.Value}</entity>");
+        }
+        return sb.ToString();
     }
 
     /// <summary>Capitalized words that are never a missing entity in GLMZ prose: languages and

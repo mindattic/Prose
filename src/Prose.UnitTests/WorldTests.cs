@@ -549,6 +549,48 @@ public class CaptureScannerTests : WorldFixture
     }
 }
 
+[TestFixture]
+public class CapturePinTests : WorldFixture
+{
+    [Test]
+    public void PinName_wraps_only_untagged_whole_word_uses_and_changes_no_words()
+    {
+        var id = Guid.CreateVersion7();
+        var stored = $"<entity repo=\"character\" guid=\"{id}\">Sable</entity> and Sable's coat, not Sables or sable.";
+        var pinned = CaptureScanner.PinName(stored, "Sable", id, "character");
+        Assert.That(BeatMarkup.CountTagsByEntity(pinned)[id], Is.EqualTo(2), "the tagged use stays one tag; the untagged one is wrapped");
+        Assert.That(BeatMarkup.StripEntityTags(pinned), Is.EqualTo(BeatMarkup.StripEntityTags(stored)));
+    }
+
+    [Test]
+    public async Task A_name_the_universe_makes_ambiguous_is_resolved_from_what_the_book_already_tags()
+    {
+        // "Sable" alone is claimed by Sable and derived from "Sable Whitfield", so the save's scan
+        // drops it as ambiguous — but the book already tags it, once, as Sable. Found live on BCODA.
+        var sable = NewCharacter("Sable", "A fixer.");
+        NewCharacter("Sable Whitfield", "Someone else entirely.");
+        var (book, _) = await BookAsync("waited.", "Later, Sable left.", "Nobody saw Sable go.");
+        var ids = await BeatIdsAsync(book);
+        await TagAsync(ids[0], sable);
+
+        var name = (await capture.ScanAsync(book)).Unresolved.Single();
+        Assert.That(name.Name, Is.EqualTo("Sable"));
+        Assert.That(name.BookSays, Is.EqualTo(Guid.Parse(sable.Id)), "the book has said who it is");
+
+        foreach (var beatId in name.BeatIds)
+        {
+            string text;
+            await using (var db = await dbFactory.CreateDbContextAsync())
+                text = await db.Beats.Where(b => b.Id == beatId).Select(b => b.Text).SingleAsync();
+            await workbench.UpdateBeatTextAsync(beatId, CaptureScanner.PinName(text, "Sable", name.BookSays!.Value, "character"),
+                BeatWriteReason.TagMaintenance, deferAnalysis: true);
+        }
+        var after = await capture.ScanAsync(book);
+        Assert.That(after.Unresolved, Is.Empty);
+        Assert.That(after.Untagged, Is.Empty, "the save kept the pinned tags");
+    }
+}
+
 [TestFixture, NonParallelizable]
 public class BannedNameForwardOnlyTests : WorldFixture
 {

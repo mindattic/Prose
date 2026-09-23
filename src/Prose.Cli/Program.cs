@@ -1118,7 +1118,7 @@ if (args.Contains("--booktok"))
 // --session are also sub-flags of other commands (--schema, --decision-log).
 //   prose --factory status --node <slug|code|guid>
 //   prose --factory next [--node X] [--format block|line|json]
-//   prose --universe <u> --factory capture --node X [--retag] [--limit N]   (station F4's worklist; --retag re-saves untagged beats, tags only)
+//   prose --universe <u> --factory capture --node X [--pin] [--retag] [--limit N]   (station F4's worklist; --pin extends tags the book already uses for a name; --retag re-saves untagged beats; tags only)
 //   prose --order add|list|close|abandon|seed …
 //   prose --session end --file summary.json
 //   prose --ruling add|list|supersede|violations|metrics|seed …
