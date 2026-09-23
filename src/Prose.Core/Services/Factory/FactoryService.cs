@@ -36,7 +36,7 @@ public sealed record NextAction(
 /// reports "not-built" — shown, never faked.</para>
 /// </summary>
 public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, BookSpineService spine, ReadGateService gate,
-    RulingService rulings, MetricsReport metrics)
+    RulingService rulings, MetricsReport metrics, CaptureScanner capture)
 {
     /// <summary>Unit stations in the order the line works them.</summary>
     public static readonly string[] UnitStationOrder = ["F2", "F3", "F4", "F5", "F6", "F1"];
@@ -45,7 +45,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
     public static readonly string[] BookStationOrder = ["F7", "A"];
 
     /// <summary>Stations whose evaluators exist. Grows one increment at a time (RFC 0015 §10).</summary>
-    public static readonly HashSet<string> Built = ["F2", "F3", "F5", "F6", "F1"];
+    public static readonly HashSet<string> Built = ["F2", "F3", "F4", "F5", "F6", "F1"];
 
     public static readonly IReadOnlyDictionary<string, string> StationNames = new Dictionary<string, string>
     {
@@ -191,6 +191,9 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         "F5" => [$"prose --read-beats --slug {s.Slug} --from {u!.FirstPosition} --to {u.LastPosition} --mark-read --read-by claude",
                  $"(MCP after restart) read_beats(idOrSlug:\"{s.Slug}\", from:{u.FirstPosition}, to:{u.LastPosition}, markRead:true, readBy:\"claude\")",
                  "read every beat against the entity records and the book's law; file defects with add_read_note"],
+        "F4" => [$"prose --universe <u> --factory capture --node {s.Slug}  (every unresolved name and untagged mention, by beat)",
+                 $"untagged mentions: prose --universe <u> --factory capture --node {s.Slug} --retag  (re-saves those beats through the one door; tags only)",
+                 "each unresolved name: make it an entity (create_* then set_entity_fields), or record_ruling(kind: incidental, pattern: <the name>) when it intentionally has none"],
         "F1" => [$"prose --universe <u> --verify-entity begin --entity <id from the detail> --node {s.Slug}  (the record and its mention beats)",
                  "examine the record against the book as read; if it is wrong, fix the record (set_character_fields), re-read what that un-reads, begin again",
                  "prose --universe <u> --verify-entity commit --nonce <nonce from begin>"],
@@ -276,6 +279,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         public Dictionary<Guid, (string Name, DateTime ModifiedAt)> Entities = [];
         public Dictionary<Guid, string> Fingerprints = [];
         public Dictionary<Guid, EntityVerification> Verified = [];
+        public CaptureReport? Capture;
     }
 
     private async Task<BookContext> LoadAsync(Guid bookId, CancellationToken ct)
@@ -326,6 +330,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         }
         ctx.LawHits = (await rulings.FindLawViolationsAsync(bookId, ct)).ToLookup(h => h.BeatId);
         ctx.Metrics = await metrics.ComputeAsync(bookId, ct);
+        ctx.Capture = await capture.ScanAsync(bookId, ct);
         return ctx;
     }
 
@@ -348,6 +353,26 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
                 return empty.Count == 0
                     ? new(code, "pass", $"{beats.Count} beats written.")
                     : new(code, "fail", $"{empty.Count} of {beats.Count} beat(s) have no prose yet (first #{empty[0].Number}).");
+            }
+            case "F4":
+            {
+                var cap = ctx.Capture!;
+                var unresolved = u.BeatIds.Sum(id => cap.ByBeat.GetValueOrDefault(id).Unresolved);
+                var untagged = u.BeatIds.Sum(id => cap.ByBeat.GetValueOrDefault(id).Untagged);
+                if (unresolved == 0 && untagged == 0) return new(code, "pass", "every name in the unit is an entity, a tag, or an incidental ruling.");
+                var inUnit = u.BeatIds.ToHashSet();
+                var parts = new List<string>();
+                if (unresolved > 0)
+                {
+                    var first = cap.Unresolved.First(n => n.Numbers.Any(num => ctx.Beats.Values.Any(b => b.Number == num && inUnit.Contains(b.Id))));
+                    parts.Add($"{unresolved} unresolved name use(s), first \"{first.Name}\" ({first.Beats} beats in the book)");
+                }
+                if (untagged > 0)
+                {
+                    var first = cap.Untagged.First(t => inUnit.Contains(t.BeatId));
+                    parts.Add($"{untagged} untagged mention(s) of known entities, first {first.EntityName} in #{first.Number}");
+                }
+                return new(code, "fail", string.Join("; ", parts) + ".");
             }
             case "F5":
             {

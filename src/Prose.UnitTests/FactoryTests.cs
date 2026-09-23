@@ -40,7 +40,7 @@ public class FactoryTests
         gate = new ReadGateService(dbFactory, workbench);
         var spine = new BookSpineService(dbFactory);
         rulings = new RulingService(dbFactory, spine);
-        factory = new FactoryService(dbFactory, spine, gate, rulings, new MetricsReport(rulings));
+        factory = new FactoryService(dbFactory, spine, gate, rulings, new MetricsReport(rulings), new CaptureScanner(dbFactory, spine, rulings));
         orders = new WorkOrderService(dbFactory, (book, station) => factory.StationPassesAsync(book, station));
         sessions = new FactorySessionService(dbFactory);
         HubBuildInfo.Build = "build-a";
@@ -279,7 +279,7 @@ public class FactoryTests
         Assert.That(s.Units[1].Stations["F2"].Pass, Is.False, "an empty beat with no title/description is unplanned");
         Assert.That(s.Units[1].Stations["F3"].Pass, Is.False);
         Assert.That(s.Units[0].Stations["F5"].Pass, Is.False, "nothing has been read");
-        Assert.That(s.Units[0].Stations["F4"].State, Is.EqualTo("not-built"));
+        Assert.That(s.Units[0].Stations["F4"].State, Is.EqualTo("pass"), "a unit whose prose names nothing is captured");
 
         var ordered = await workbench.GetOrderedBeatsAsync(book);
         await gate.MarkReadAsync(book, ordered.Where(o => o.Beat.Id != beats[2]).Select(o => (o.Beat.Id, o.Beat.TextHash ?? "")), "test");

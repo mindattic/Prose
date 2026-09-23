@@ -516,6 +516,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.Factory.FactorySessionService>();
         services.AddSingleton<Prose.Core.Services.Factory.RulingService>();
         services.AddSingleton<Prose.Core.Services.Factory.MetricsReport>();
+        services.AddSingleton<Prose.Core.Services.Factory.CaptureScanner>();   // F4 Captured
         services.AddSingleton<Prose.Core.Services.Factory.FactoryService>();
         services.AddSingleton<Prose.Core.Services.Factory.EntityVerificationService>();   // F1 begin/commit
         services.AddSingleton<CharacterFieldWriter>();                                   // set_character_fields

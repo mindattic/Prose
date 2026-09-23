@@ -18,6 +18,7 @@ public abstract class RulingFixture
     protected MetricsReport metrics = null!;
     protected FactoryService factory = null!;
     protected ReadGateService gate = null!;
+    protected CaptureScanner capture = null!;
 
     [SetUp]
     public void SetUpFixture()
@@ -33,7 +34,8 @@ public abstract class RulingFixture
         rulings = new RulingService(dbFactory, spine);
         metrics = new MetricsReport(rulings);
         gate = new ReadGateService(dbFactory, workbench);
-        factory = new FactoryService(dbFactory, spine, gate, rulings, metrics);
+        capture = new CaptureScanner(dbFactory, spine, rulings);
+        factory = new FactoryService(dbFactory, spine, gate, rulings, metrics, capture);
     }
 
     [TearDown]

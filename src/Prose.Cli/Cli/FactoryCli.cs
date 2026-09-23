@@ -147,6 +147,44 @@ public static class FactoryCli
                 var factory = services.GetRequiredService<FactoryService>();
                 switch (Verb("--factory"))
                 {
+                    case "capture":
+                    {
+                        // Station F4's worklist, and the one repair it has a mechanical answer for:
+                        // --retag re-saves each beat with untagged mentions through the one door, tags only.
+                        if (await Node(Flag("--node")) is not { } book) { Console.Error.WriteLine("[capture] --node <slug|code|guid> is required."); return 1; }
+                        var scanner = services.GetRequiredService<CaptureScanner>();
+                        var report = await scanner.ScanAsync(book);
+                        var limit = int.TryParse(Flag("--limit"), out var lim) ? lim : 200;
+                        Console.WriteLine($"[capture] {report.BeatsScanned} beats, {report.Candidates} known names/aliases, {report.Millis} ms.");
+                        Console.WriteLine($"  (a) {report.Unresolved.Count} unresolved name(s) used in {CaptureScanner.MinBeats}+ beats:");
+                        foreach (var n in report.Unresolved.Take(limit))
+                            Console.WriteLine($"  {n.Beats,4}x  {n.Name,-36} e.g. {string.Join(", ", n.Numbers.Take(5).Select(x => "#" + x))}");
+                        Console.WriteLine($"  (b) {report.Untagged.Sum(t => t.Missing)} untagged mention(s) of known entities in {report.Untagged.Select(t => t.BeatId).Distinct().Count()} beat(s):");
+                        foreach (var g in report.Untagged.GroupBy(t => t.EntityName).OrderByDescending(g => g.Sum(t => t.Missing)).Take(limit))
+                            Console.WriteLine($"  {g.Sum(t => t.Missing),4}x  {g.Key,-36} in {string.Join(", ", g.Take(6).Select(t => "#" + t.Number))}{(g.Count() > 6 ? ", …" : "")}");
+                        if (args.Contains("--retag") && report.Untagged.Count > 0)
+                        {
+                            var workbench = services.GetRequiredService<NodeWorkbenchService>();
+                            var dbf = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+                            int saved = 0, wordsChanged = 0;
+                            foreach (var beatId in report.Untagged.Select(t => t.BeatId).Distinct())
+                            {
+                                string before;
+                                await using (var db0 = await dbf.CreateDbContextAsync())
+                                    before = await db0.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync();
+                                await workbench.UpdateBeatTextAsync(beatId, before, BeatWriteReason.TagMaintenance, deferAnalysis: true);
+                                string after;
+                                await using (var db1 = await dbf.CreateDbContextAsync())
+                                    after = await db1.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync();
+                                if (after != before) saved++;
+                                if (BeatMarkup.StripEntityTags(after) != BeatMarkup.StripEntityTags(before)) wordsChanged++;
+                            }
+                            var again = await scanner.ScanAsync(book);
+                            Console.WriteLine($"[capture] re-tagged {saved} beat(s) through the one door ({wordsChanged} of them also normalized by the save's sanitizer). " +
+                                              $"Untagged mentions now: {again.Untagged.Sum(t => t.Missing)}.");
+                        }
+                        return report.Unresolved.Count == 0 && report.Untagged.Count == 0 ? 0 : 2;
+                    }
                     case "status":
                     {
                         if (await Node(Flag("--node")) is not { } id) { Console.Error.WriteLine("[factory] --node <slug|code|guid> is required."); return 1; }

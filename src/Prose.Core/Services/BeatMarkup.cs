@@ -72,6 +72,17 @@ public static class BeatMarkup
                 yield return g;
     }
 
+    /// <summary>How many tags point at each entity in this text — every occurrence, not distinct.</summary>
+    public static Dictionary<Guid, int> CountTagsByEntity(string? text)
+    {
+        var counts = new Dictionary<Guid, int>();
+        if (string.IsNullOrEmpty(text)) return counts;
+        foreach (Match m in EntityGuidPattern.Matches(text))
+            if (Guid.TryParse(m.Groups[1].Value, out var g))
+                counts[g] = counts.GetValueOrDefault(g) + 1;
+        return counts;
+    }
+
     /// <summary>
     /// The entity tag whose INNER text wholly contains <paramref name="start"/>..<paramref name="end"/>,
     /// or null when the range is not inside one.

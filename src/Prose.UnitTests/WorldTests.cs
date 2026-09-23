@@ -33,6 +33,20 @@ public abstract class WorldFixture : RulingFixture
     {
         var c = new CharacterData { Id = Guid.NewGuid().ToString("N"), Name = name, Description = description, Age = 27 };
         characters.Save(c);
+        // Live entities belong to a universe; the book fixtures use the first one. Without this the
+        // save path's scan cannot see the character, so its tagged name reads as an unknown name.
+        using (var db = dbFactory.CreateDbContext())
+        {
+            var universe = db.Universes.Select(u => u.Id).FirstOrDefault();
+            if (universe == Guid.Empty)
+            {
+                universe = Guid.CreateVersion7();
+                db.Universes.Add(new Universe { Id = universe, Slug = "u-" + universe.ToString("N")[..6], Name = "U" });
+            }
+            var e = db.Entities.IgnoreQueryFilters().Single(x => x.Id == Guid.Parse(c.Id));
+            e.UniverseId = universe;
+            db.SaveChanges();
+        }
         return characters.GetById(c.Id)!;
     }
 
@@ -490,6 +504,48 @@ public class EntityFieldWriterTests : WorldFixture
         var r = await entityWriter.SetFieldsAsync(c.Id, """{"location":"Halsted"}""");
         Assert.That(r.Ok, Is.False);
         Assert.That(r.Error, Does.Contain("location"));
+    }
+}
+
+[TestFixture]
+public class CaptureScannerTests : WorldFixture
+{
+    [Test]
+    public async Task A_name_used_in_two_beats_that_nothing_accounts_for_is_unresolved_until_a_ruling_names_it()
+    {
+        var (book, _) = await BookAsync("He met Halvorsen at the dock.", "Later that night, Halvorsen left.", "Only once did he see Quillfeather.");
+        var r = await capture.ScanAsync(book);
+        Assert.That(r.Unresolved.Select(n => n.Name), Is.EqualTo(new[] { "Halvorsen" }), "a hapax is not a finding");
+        Assert.That((await factory.StatusAsync(book)).Units.Single().Stations["F4"].Pass, Is.False);
+
+        await rulings.RecordAsync(new RulingDraft("incidental", "Halvorsen is a one-off dock foreman with no entity", book, Pattern: "Halvorsen", Source: "session:test"));
+        Assert.That((await capture.ScanAsync(book)).Unresolved, Is.Empty, "the memo is keyed on the incidental rulings");
+        Assert.That((await factory.StatusAsync(book)).Units.Single().Stations["F4"].Pass, Is.True);
+    }
+
+    [Test]
+    public async Task A_known_entity_named_without_its_tag_is_untagged_until_the_beat_is_saved_again()
+    {
+        var c = NewCharacter("Renko Moss", "A crew chief.");
+        var (book, _) = await BookAsync("drove.", "Nobody spoke to Renko Moss on the way back.");
+        var ids = await BeatIdsAsync(book);
+        await TagAsync(ids[0], c);   // tagged in the first beat, named untagged in the second
+
+        var r = await capture.ScanAsync(book);
+        var miss = r.Untagged.Single();
+        Assert.That(miss.BeatId, Is.EqualTo(ids[1]));
+        Assert.That(miss.EntityName, Is.EqualTo("Renko Moss"));
+
+        string text;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+            text = await db.Beats.Where(b => b.Id == ids[1]).Select(b => b.Text).SingleAsync();
+        await workbench.UpdateBeatTextAsync(ids[1], text, BeatWriteReason.TagMaintenance, deferAnalysis: true);
+
+        var after = await capture.ScanAsync(book);
+        Assert.That(after.Untagged, Is.Empty, "the scan is the save path's own, so a re-save clears exactly what it reports");
+        await using (var db = await dbFactory.CreateDbContextAsync())
+            Assert.That(BeatMarkup.StripEntityTags(await db.Beats.Where(b => b.Id == ids[1]).Select(b => b.Text).SingleAsync()),
+                Is.EqualTo(BeatMarkup.StripEntityTags(text)), "tags only; no word changed");
     }
 }
 
