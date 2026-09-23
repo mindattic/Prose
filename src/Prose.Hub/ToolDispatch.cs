@@ -69,8 +69,12 @@ public static class ToolDispatch
         {
             var dbFactory = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();
             await using var db = await dbFactory.CreateDbContextAsync();
+            // RFC 0015: stamp the factory session (see CliDispatch.WriteLedgerEntryAsync).
+            var sessions = sp.GetService<Prose.Core.Services.Factory.FactorySessionService>();
+            var actor = sessions != null ? await sessions.ActorTagAsync("mcp") : "mcp";
             db.CommandLedgerEntries.Add(new CommandLedgerEntry
             {
+                Actor = actor,
                 Source = "mcp",
                 HandlerClass = req.ToolClass,
                 Method = req.Method,

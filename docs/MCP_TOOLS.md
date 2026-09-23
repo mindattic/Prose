@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**257 tools** across **46 tool families.**
+**264 tools** across **47 tool families.**
 
 ## Families
 
@@ -35,6 +35,7 @@
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 7 |
 | [Entity Tag](#entity-tag) | 3 |
+| [Factory](#factory) | 7 |
 | [Findings](#findings) | 5 |
 | [Gear Entity Crud](#gear-entity-crud) | 8 |
 | [Glossary](#glossary) | 4 |
@@ -866,6 +867,67 @@ REMOVE tags from an entity — the only path that can take a tag off, since crea
 
 - `entity` (string, required) — Entity GUID or exact name.
 - `tagNames` (string, required) — Comma-separated tag names to remove, e.g. 'vigl,battle-rig'.
+
+## Factory
+
+<sub>`FactoryTools`</sub>
+
+### `factory_next`
+
+The single next action, computed: the first open blocking work order (during the factory's own build), otherwise the first failing station of the earliest unit of a book an author order has put on the line — with the exact calls that clear it. Ask this instead of deciding from memory.
+
+- `nodeIdOrSlug` (string, optional) — Optional book id, slug or NodeCode to ask about one book only.
+
+### `factory_status`
+
+The Novel Factory's matrix for one book: every unit (chapter, as the exporters print it) × every station (F2 Planned, F3 Written, F4 Captured, F5 Read, F6 Clean, F1 Verified) plus the book stations (F7 Pressed, A Audio). Every verdict is computed from the prose, the world and the read receipts; a station not built yet says not-built.
+
+- `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
+
+### `session_end`
+
+End the current factory session (what /quicksave does). summaryJson = {done:[...], decisions:[{text, rulingId|orderId}], next:"..."}. Refused while any decision is not backed by a ruling or work order recorded this session.
+
+- `summaryJson` (string, required) — The summary JSON.
+- `sessionId` (string, optional) — Optional session id (defaults to the open one).
+
+### `work_order_abandon`
+
+Abandon an open work order. A reason is required and recorded.
+
+- `id` (string, required) — Order id.
+- `reason` (string, required) — Why.
+
+### `work_order_add`
+
+Open a work order. kind engine = code or docs in the repo (must declare paths; must descend from an author-approved root); kind author = a request about a book (pass nodeIdOrSlug to put the book on the factory line). checksJson is an array of typed checks validated Hub-side at close: commit, tests {names[]}, ledger {handler, method?, minCalls}, factory {book, station}, deploy, author.
+
+- `kind` (string, required) — engine | author
+- `title` (string, required) — Short title.
+- `parentId` (string, optional) — Parent order id (required unless this is a root the author approved).
+- `rootApprovedBy` (string, optional) — Roots only: 'author' — only when the author has approved this root.
+- `nodeIdOrSlug` (string, optional) — Book for an author order.
+- `paths` (string, optional) — Semicolon-separated repo-relative globs the order may touch (engine).
+- `checksJson` (string, optional) — JSON array of checks.
+- `blocking` (bool, optional) — True = this order is the factory's next action until it closes.
+- `detail` (string, optional) — Longer description.
+
+### `work_order_close`
+
+Close a work order. The Hub validates every check itself (commit on HEAD within declared paths, TRX tests passed, real ledger use, station passes, Hub redeployed, author confirmation relayed). Refused — and the order stays open — if any check fails.
+
+- `id` (string, required) — Order id.
+- `commitHash` (string, optional) — Commit hash for a commit check.
+- `trxPath` (string, optional) — Path to a dotnet test TRX file for a tests check.
+- `authorConfirmation` (string, optional) — The author's words, for an author check (trust point: relayed).
+- `note` (string, optional) — Optional note.
+
+### `work_order_list`
+
+List work orders as a tree (depth-first, in the order the factory works them).
+
+- `status` (string, optional) — open (default) | closed | abandoned | all
+- `kind` (string, optional) — engine | author
 
 ## Findings
 

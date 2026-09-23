@@ -656,6 +656,13 @@ public class ProseDbContext : DbContext
     public DbSet<BeatReadReceipt>        BeatReadReceipts        => Set<BeatReadReceipt>();
     public DbSet<BeatReadNote>           BeatReadNotes           => Set<BeatReadNote>();
 
+    // The Novel Factory (RFC 0015): law, verifications, work orders, sessions, exports.
+    public DbSet<Ruling>                 Rulings                 => Set<Ruling>();
+    public DbSet<EntityVerification>     EntityVerifications     => Set<EntityVerification>();
+    public DbSet<WorkOrder>              WorkOrders              => Set<WorkOrder>();
+    public DbSet<FactorySession>         FactorySessions         => Set<FactorySession>();
+    public DbSet<ExportRecord>           Exports                 => Set<ExportRecord>();
+
     // Cost tracking — append-only log of CLI command cost history.
     // Populated by Prose.Hub's CostGateDispatch; queried by CommandCostEstimatorService to self-calibrate.
     public DbSet<CommandCostHistory>     CommandCostHistories    => Set<CommandCostHistory>();
@@ -1211,6 +1218,57 @@ public class ProseDbContext : DbContext
             e.Property(x => x.ReadBy).HasMaxLength(120).IsRequired();
             e.HasOne<Beat>().WithOne().HasForeignKey<BeatReadReceipt>(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
         });
+        // ── The Novel Factory (RFC 0015) ─────────────────────────────────────
+        b.Entity<Ruling>(e =>
+        {
+            e.ToTable("Rulings");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => new { x.BookId, x.Kind, x.SupersededById });
+            e.Property(x => x.Kind).HasMaxLength(16).IsRequired();
+            e.Property(x => x.Text).HasMaxLength(2000).IsRequired();
+            e.Property(x => x.Pattern).HasMaxLength(400);
+            e.Property(x => x.MaxPer1kWords).HasPrecision(9, 3);
+            e.Property(x => x.Source).HasMaxLength(64).IsRequired();
+        });
+        b.Entity<EntityVerification>(e =>
+        {
+            e.ToTable("EntityVerifications");
+            e.HasKey(x => new { x.EntityId, x.BookId });
+            e.Property(x => x.MentionsFingerprint).HasMaxLength(64).IsRequired();
+            e.Property(x => x.By).HasMaxLength(64).IsRequired();
+        });
+        b.Entity<WorkOrder>(e =>
+        {
+            e.ToTable("WorkOrders");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => new { x.Status, x.Kind });
+            e.HasIndex(x => x.ParentId);
+            e.Property(x => x.Kind).HasMaxLength(16).IsRequired();
+            e.Property(x => x.Title).HasMaxLength(200).IsRequired();
+            e.Property(x => x.Status).HasMaxLength(16).IsRequired();
+            e.Property(x => x.RootApprovedBy).HasMaxLength(64);
+            e.Property(x => x.OpenedHubBuild).HasMaxLength(32);
+            e.Property(x => x.CommitHash).HasMaxLength(40);
+        });
+        b.Entity<FactorySession>(e =>
+        {
+            e.ToTable("FactorySessions");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => x.StartedAt);
+            e.Property(x => x.ClaudeSessionId).HasMaxLength(64);
+            e.Property(x => x.GitHeadStart).HasMaxLength(40);
+            e.Property(x => x.GitHeadEnd).HasMaxLength(40);
+        });
+        b.Entity<ExportRecord>(e =>
+        {
+            e.ToTable("Exports");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => new { x.BookId, x.Format, x.At });
+            e.Property(x => x.Format).HasMaxLength(8).IsRequired();
+            e.Property(x => x.BookFingerprint).HasMaxLength(64).IsRequired();
+            e.Property(x => x.Path).HasMaxLength(400).IsRequired();
+        });
+
         b.Entity<BeatReadNote>(e =>
         {
             e.ToTable("BeatReadNotes");

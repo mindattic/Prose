@@ -8,12 +8,7 @@ or skill discovery requires, each one just saying "read `.prose/commands/<name>.
 If you find real content duplicated into a client-specific folder, that's a bug — move the content
 here and reduce the client-specific file back to a pointer.
 
-`quicksave` / `quickload` / `do` in this project use a richer **paper-transcript** convention (a
-full markdown handoff written to `.prose/quicksave.md`) rather than the shared
-`mindattic-agent-standard/prose-agent.ps1` JSON-state runner described in the standard's own
-README — that's a deliberate per-project override, not a fork of the standard. `progress` and
-`show` here are also project-specific, richer implementations (`prose --progress` / `prose --show`)
-rather than the generic stubs the cross-project installer scaffolds elsewhere.
+`quicksave` / `quickload` / `do` / `queue` in this project run through the **Novel Factory** (RFC 0015): a session is a `FactorySessions` row in the Hub, `/quicksave` ends it (`prose --session end`), the SessionStart hook shows the factory's live next action on resume, and `/queue` adds an author work order. There are no transcript files any more (the old ones are in `.prose/archive/`). `progress` and `show` here are project-specific, richer implementations (`prose --progress` / `prose --show`) rather than the generic stubs the cross-project installer scaffolds elsewhere.
 
 Run the CLI-backed ones from the repository root, e.g.:
 

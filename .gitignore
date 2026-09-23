@@ -120,3 +120,6 @@ tools/kdp/kdp-panel.user.js
 
 # Portable agent session state (command definitions under .prose/commands are tracked).
 .prose/agent-session.json
+
+# RFC 0015: retired quicksave transcripts and queue files, kept locally for history only
+.prose/archive/

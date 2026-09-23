@@ -1,58 +1,37 @@
 ---
-description: Print the current discussion to a paper transcript, so it survives /clear and restores on 'do' or /quickload.
+description: End the factory session — record what was done, every decision (as a ruling or work order), and what comes next. Replaces the old paper-transcript quicksave.
 argument-hint: "[optional note to emphasize what matters most]"
-allowed-tools: Write
+allowed-tools: Write, PowerShell, Bash
 ---
 
-# Quicksave — the paper transcript
+# Quicksave — end the factory session (RFC 0015)
 
-Person-of-Interest protocol: the context window is about to be wiped by `/clear`. Before it is,
-print the live discussion to a "paper transcript" on disk. On the other side of the wipe, the
-next session restores it when the user types a bare `do` (a prompt-submit hook injects the
-transcript) or runs `/quickload`. The transcript is consumed on read — one-shot, no residue.
+The session's memory is not a markdown file any more. It is a `FactorySessions` row in the Hub,
+opened by the SessionStart hook, and this command closes it. The next session's start hook shows
+this summary automatically, next to the factory's live next action.
 
 ## Do this now
 
-Write a handoff file to **`.prose/quicksave.md` in the current project root** — construct the
-absolute path from your current working directory (`<cwd>\.prose\quicksave.md`). Overwrite it if
-it exists.
+1. **Record every decision first.** For each decision made this session (an author ruling, a
+   change of plan, a book request), make sure it exists in the factory:
+   - an author ruling or book law → `record_ruling` (law / metric / incidental), or the entity
+     record itself (`set_character_fields` / `create_*`) with a read-back;
+   - new work, or a plan change → `work_order_add` (engine or author, under an approved root).
+   Note each id.
+2. **Write the summary** to a scratch file (your scratchpad, never the repo):
 
-Capture the *current* discussion — not the whole session, just what a fresh instance of you needs
-to resume seamlessly. Be concrete: names, ids, file paths, exact commands. No vague summaries.
+   ```json
+   {
+     "done": ["one line per completed thing, with its evidence (commit, order id, counts)"],
+     "decisions": [{ "text": "what was decided", "rulingId": "<guid>" }, { "text": "…", "orderId": "<guid>" }],
+     "next": "the single next step, in one line"
+   }
+   ```
 
-Use this structure:
+   `$ARGUMENTS`, if given, goes into `next` or `done` as the user meant it.
+3. **End the session:** `prose --session end --file <summary.json>` (MCP: `session_end`).
+   - If it is refused, it lists each decision that is not backed by a ruling or order recorded
+     this session. Record those (step 1) and run it again. Do not drop a decision to get past it.
+4. Tell the user in one line that the session is saved, and what `next` says.
 
-```markdown
-# Quicksave — <one-line title of what we're doing>
-_Printed: <fill the actual date>_
-
-## Current task
-<The single thing we are mid-work on, stated as a resumable instruction. If the user gave a note
-in $ARGUMENTS, lead with it.>
-
-## Decisions locked this session
-- <decisions already made that must not be re-litigated>
-
-## State / where we are
-- <what's done, what's in flight, last action taken and its result>
-
-## Open questions / pending
-- <anything unresolved the next session must decide or ask>
-
-## Next concrete steps
-1. <the very next action to take on resume>
-2. ...
-
-## Anchors
-- Files: <paths touched or relevant>
-- Names / ids: <symbols, tickets, entities relevant to the work>
-- Commands to re-run: <exact CLI/build/test calls>
-```
-
-If `$ARGUMENTS` is non-empty, weave that emphasis into **Current task** so the most important
-thread is unmistakable after the wipe.
-
-## After writing
-
-Tell the user, in one line, that the quicksave is written and armed: run `/clear`, then type
-`do` (or `/quickload`) on the other side to restore. Do not do anything else.
+The old `.prose/quicksave.md*` transcripts are archived in `.prose/archive/` and no longer used.

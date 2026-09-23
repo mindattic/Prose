@@ -1,59 +1,50 @@
 # Prose Agent Protocol
 
-Version: `1.0`  
+Version: `2.0` (RFC 0015, the Novel Factory, 2026-09-23)
 Status: active
 
-The complete legacy inventory, including both project and global Claude commands, skills, and
-hooks, is [`command-catalog.json`](command-catalog.json). Refresh it with
-`powershell -File tools/export-agent-catalog.ps1` after adding a legacy entry; new commands belong
-in `.prose/commands`.
-
-Prose is a Hub-backed canon and prose engine. The database is authoritative and all database
-access goes through `Prose.Hub`; an agent must never use direct SQL, EF, or a private copy of the
-database.
+Prose is a Hub-backed prose engine. The database is authoritative and all database access goes
+through `Prose.Hub`; an agent must never use direct SQL, EF, or a private copy of the database.
+The design is `docs/rfc/0015-novel-factory.md`. **The plan is not this file or any file: it is the
+factory's live state in the Hub.**
 
 ## Start every session
 
-1. Run `prose agent bootstrap --json` when available. Until that command is installed, run the
-   equivalent checks below.
-2. Confirm `GET http://127.0.0.1:5900/api/health` is healthy.
-3. Select an explicit universe (`--universe <slug>` or `PROSE_UNIVERSE`) before any
-   universe-scoped operation. An omitted or invalid scope is an error.
-4. Read the returned agent brief and operation catalog. Load only the canon and book context
-   needed for the current task; Dynamic Context Memory is assembled by Prose for beat generation.
-5. Check provider readiness with `prose --provider-status --json` before spending an LLM-backed
-   operation.
+1. The SessionStart hook opens a factory session and injects the FACTORY block: the next action
+   (computed from the book's state), the books on the line, the last session's summary, the laws.
+   If it says FACTORY UNREACHABLE, start the Hub (`src\tools\deploy-apps.ps1 -Start Hub`) and do no
+   story work from memory.
+2. Without the hook: `prose --factory next` (MCP `factory_next`) and `prose --order list`.
+3. Do the next action. A bare `do` means exactly that.
 
-## Operating rules
+## The laws
 
-- The hierarchy is Book → Chapter → Beat. Chapters never contain chapters.
-- Generated canon and node markdown are read-only mirrors. Edit their database source through a
-  sanctioned operation and regenerate the mirror.
-- Reads, deterministic validation, and reports are allowed by default.
-- A durable prose, canon, entity, relationship, or structural mutation must first be represented
-  as a change proposal. Present the exact target, old value, new value, rationale, and verification
-  plan to the human.
-- Apply a proposal only after the human has approved it through the local interactive approval
-  command. Never treat an agent's own statement as approval.
-- Use the existing WriteGate, cost gate, command ledger, findings, temporal history, and
-  convergence checks. A successful tool response is not proof that the requested change was
-  applied: verify the resulting state through Hub-routed reads.
-- For an unresolved command or data gap, report the gap. Do not invent a SQL workaround.
+1. The book is its beats; the world is its entities. Nothing else is stored about the story — no
+   outline, spine, blueprint, ledger, summary or reconciler.
+2. Every story change is a logged Hub call (MCP or the prose CLI). Never raw SQL.
+3. Repo changes need an open engine work order whose paths cover them, and a commit that names it
+   (`WO:<id>`). The Stop hook refuses changes no open order covers.
+4. Done is computed (a station passes) or Hub-validated (a work order's checks). Claims do not count.
+5. A decision goes into the world the moment it is made: `record_ruling`, or the entity record,
+   with a read-back.
+6. The book is read and written whole: a chapter is a unit of work, never a boundary of sight.
+7. Deterministic checks only. No LLM judges, votes, or scores.
+8. A failed check is reported, never compensated with a new system.
+9. No override on the read gate. Export only what has been read as it stands.
+10. End every session with `/quicksave` (`session_end`): every decision references a ruling or order.
 
-## Canon and prose workflow
+## The line (per chapter)
 
-A book is its beats, drawing on canon entities; there is no outline, bible, structural blueprint
-or stored summary of it (author ruling 2026-09-22). For a new or materially changed book, work in
-this order: resolve universe; verify entities and relationships; plan beats (a title and a
-description of what happens, no text); generate or edit beats through the ProseWriterRouter path;
-run deterministic checks and the logic sweep; repair named findings with minimal edits; read the
-book front to back with read receipts (`read_beats` with `markRead`); then export, which refuses
-while any beat is unread.
+F2 Planned → F3 Written → F4 Captured → F5 Read → F6 Clean → F1 Verified, then F7 Pressed and
+A Audio for the book. `prose --factory status --node <book>` shows the matrix.
 
-At beat scope, the engine writes from the beat's own description and loads the universal engine
-rules, base craft, universe craft, applicable entity records, narrator register, and recent beat
-window.
-Do not paste the entire corpus into a prompt to bypass this process.
+- **Heal a written book:** read it in order with `read_beats(markRead)` / `prose --read-beats …
+  --mark-read --read-by claude`; file defects as read notes; fix with `splice_beats` (dry run,
+  then apply); re-read what changed; entity corrections are filed as notes during the pass and
+  applied as one batch after it; verify each record; export.
+- **Write a new book:** create the book and chapters; plan beats (title + description); write each
+  chapter in-session with the full prior prose and the cast's records in view; capture new names and
+  facts into the world; then heal it as above.
 
 ## Transport-neutral operation envelope
 
@@ -61,22 +52,21 @@ Every adapter should preserve this envelope, whether it is MCP, CLI, or HTTP:
 
 ```json
 {
-  "protocolVersion": "1.0",
-  "operation": "read_context",
+  "protocolVersion": "2.0",
+  "operation": "factory_next",
   "universe": "glmz",
   "arguments": {},
-  "requestId": "client-generated-id",
-  "approvalGrant": null
+  "requestId": "client-generated-id"
 }
 ```
 
-Responses must identify `requestId`, operation, universe, status, result, warnings, findings,
-ledger identifiers, and provider/cost metadata when applicable. Errors are structured and must
-name the failed precondition (`hub_unreachable`, `missing_universe`, `unknown_argument`,
-`approval_required`, `write_gate_rejected`, `provider_unavailable`, or `verification_failed`).
+Responses must identify `requestId`, operation, universe, status, result, warnings and ledger
+identifiers. Errors are structured and name the failed precondition (`hub_unreachable`,
+`missing_universe`, `unknown_argument`, `write_gate_rejected`, `unread_beats`,
+`check_failed`, `decision_unrecorded`).
 
 ## Handoff
 
-Save resumable work through the Hub-routed agent-session operation. A handoff records the task,
-universe, node, decisions, inspected evidence, proposed changes, last verification, and next
-action. Do not depend on Claude hook state, editor memory, or an untracked transcript.
+There is no transcript file. The session is a `FactorySessions` row; `/quicksave` ends it with a
+summary whose every decision references a recorded ruling or work order, and the next session's
+start hook shows that summary beside the live next action.

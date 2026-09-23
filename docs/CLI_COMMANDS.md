@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**271 commands.** 30 deactivated. 10 cost-gated. 19 have no description in their dispatch comment (13 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**272 commands.** 30 deactivated. 10 cost-gated. 20 have no description in their dispatch comment (14 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -935,6 +935,12 @@ prose --extract-beat-locations --slug <slug> [--force] [--limit N] [--dry-run] B
 prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of just the fact-ledger check (see FactLedgerRefreshCli's own doc comment). Not cost-gated: it is the deliberate cheap alternative to the (since-deleted, RFC 0010) --audit-book --deep bundle.
 
 <sub>handler `FactLedgerRefreshCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
+
+### `--factory` / `--order` / `--session`
+
+_(no description in the dispatch comment — add one above the guard in `Program.cs`)_
+
+<sub>handler `FactoryCli`</sub>
 
 ### `--family`
 

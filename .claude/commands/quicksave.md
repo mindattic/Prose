@@ -1,7 +1,7 @@
 ---
-description: Print the current discussion to a paper transcript, so it survives /clear and restores on 'do' or /quickload.
+description: End the factory session — record what was done, every decision (as a ruling or work order), and what comes next.
 argument-hint: "[optional note to emphasize what matters most]"
-allowed-tools: Write
+allowed-tools: Write, PowerShell, Bash
 ---
 
 Canonical definition: **`.prose/commands/quicksave.md`**. Read it and follow it — this file is a

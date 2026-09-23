@@ -380,6 +380,8 @@ static object EdgeDto(UniverseEdge e) => new
 // clean. Twelve hex chars is far more than enough to tell two builds apart by eye.
 var hubBuildId = System.Reflection.Assembly.GetExecutingAssembly()
     .ManifestModule.ModuleVersionId.ToString("N")[..12];
+// The factory's `deploy` check (RFC 0015 §5.2) compares a work order's opening build to this.
+Prose.Core.Services.Factory.HubBuildInfo.Build = hubBuildId;
 // Environment.ProcessPath, not Assembly.Location: the Hub ships as PublishSingleFile, where
 // Location is the empty string.
 DateTime? hubBuiltUtc = null;
@@ -411,6 +413,45 @@ app.MapGet("/api/health", async (IDbContextFactory<ProseDbContext> dbFactory) =>
     }
 });
 
+// ── The Novel Factory (RFC 0015 §5.3) ──────────────────────────────────────────────────────
+// Local-only endpoints for the session hooks. The plan a session sees is computed here from the
+// book's state, never read from a document. session/start opens a FactorySessions row and
+// returns the text block the SessionStart hook injects.
+app.MapGet("/api/factory/next", async (string? format, string? node,
+    Prose.Core.Services.Factory.FactoryService factory, IDbContextFactory<ProseDbContext> dbf) =>
+{
+    var bookId = string.IsNullOrWhiteSpace(node) ? null : await NodeRefResolver.ResolveAsync(dbf, node);
+    var next = await factory.NextAsync(bookId);
+    if (format == "line") return Results.Text(Prose.Core.Services.Factory.FactoryService.RenderLine(next));
+    if (format == "json") return Results.Ok(next);
+    var books = new List<Prose.Core.Services.Factory.BookStatus>();
+    foreach (var b in await factory.BooksOnTheLineAsync()) books.Add(await factory.StatusAsync(b));
+    return Results.Text(Prose.Core.Services.Factory.FactoryService.RenderBlock(next, books));
+});
+app.MapGet("/api/factory/status", async (string node, Prose.Core.Services.Factory.FactoryService factory,
+    IDbContextFactory<ProseDbContext> dbf) =>
+{
+    if (await NodeRefResolver.ResolveAsync(dbf, node) is not { } id) return Results.NotFound(new { error = "node_not_found", node });
+    return Results.Ok(await factory.StatusAsync(id));
+});
+app.MapGet("/api/factory/orders", async (string? status, string? kind, Prose.Core.Services.Factory.WorkOrderService orders) =>
+    Results.Ok((await orders.ListAsync(status ?? "open", kind))
+        .Select(o => new { o.Id, o.ParentId, o.Kind, o.Status, o.Blocking, o.Title, o.PathsJson })));
+app.MapPost("/api/factory/session/start", async (FactorySessionStartBody body,
+    Prose.Core.Services.Factory.FactoryService factory, Prose.Core.Services.Factory.FactorySessionService sessions) =>
+{
+    var next = await factory.NextAsync();
+    var started = await sessions.StartAsync(body.ClaudeSessionId, body.GitHead, System.Text.Json.JsonSerializer.Serialize(next));
+    var books = new List<Prose.Core.Services.Factory.BookStatus>();
+    foreach (var b in await factory.BooksOnTheLineAsync()) books.Add(await factory.StatusAsync(b));
+    return Results.Text(Prose.Core.Services.Factory.FactoryService.RenderBlock(next, books, started));
+});
+app.MapPost("/api/factory/session/end", async (FactorySessionEndBody body, Prose.Core.Services.Factory.FactorySessionService sessions) =>
+{
+    var (ok, problems, id) = await sessions.EndAsync(body.SessionId, body.SummaryJson ?? "", body.GitHead);
+    return ok ? Results.Ok(new { ok, sessionId = id }) : Results.UnprocessableEntity(new { ok, sessionId = id, problems });
+});
+
 // Provider-neutral discovery endpoint. It is intentionally read-only and unauthenticated, like
 // /api/health, so an unfamiliar agent can learn the protocol before it has a shared key. All
 // state-changing operations remain behind the authenticated dispatchers and their write gates.
@@ -419,12 +460,13 @@ app.MapGet("/api/agent/bootstrap", () => Results.Ok(new
     protocolVersion = "1.0",
     transports = new[] { "mcp-stdio", "cli", "hub-http" },
     scopePolicy = "explicit-universe-required",
-    writePolicy = "proposal-then-human-approval-grant",
+    writePolicy = "hub-logged-calls-only; repo changes under an open engine work order (RFC 0015)",
     protocol = "docs/agent/PROSE_PROTOCOL.md",
+    factory = "GET /api/factory/next — the plan is the factory's live state, not a document",
     catalog = "docs/agent/operation-catalog.json",
     rawMcpCatalog = "docs/MCP_TOOLS.md",
     rawCliCatalog = "docs/CLI_COMMANDS.md",
-    next = new[] { "Select an explicit universe before scoped work.", "Use MCP when available; otherwise use CLI or named Hub HTTP operations." }
+    next = new[] { "Ask the factory for the next action (factory_next / GET /api/factory/next).", "Select an explicit universe before scoped work.", "Use MCP when available; otherwise use CLI or named Hub HTTP operations." }
 }));
 
 app.MapGet("/api/universes", () =>
@@ -958,3 +1000,7 @@ sealed record OutboxEnqueueRequest(string Kind, string Summary, object? Data);
 sealed record GenerateSceneRequest(
     string BeatGoal, string[]? Characters, string? Location, string? Subtext,
     string? Node, string? Universe, int? BeatIndex, int? TotalBeats);
+
+// RFC 0015 session hook bodies.
+sealed record FactorySessionStartBody(string? ClaudeSessionId, string? GitHead);
+sealed record FactorySessionEndBody(Guid? SessionId, string? SummaryJson, string? GitHead);

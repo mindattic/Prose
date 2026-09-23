@@ -512,6 +512,12 @@ public static class ServiceCollectionExtensions
             settings: sp.GetService<SettingsService>()));
         services.AddSingleton<BeatSpliceService>();   // prose --splice-beats / MCP splice_beats
         services.AddSingleton<ReadGateService>();     // read receipts + the no-override export gate (2026-09-22)
+        // The Novel Factory (RFC 0015): the computed line, work orders, sessions.
+        services.AddSingleton<Prose.Core.Services.Factory.FactorySessionService>();
+        services.AddSingleton<Prose.Core.Services.Factory.FactoryService>();
+        services.AddSingleton<Prose.Core.Services.Factory.WorkOrderService>(sp => new Prose.Core.Services.Factory.WorkOrderService(
+            sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),
+            (book, station) => sp.GetRequiredService<Prose.Core.Services.Factory.FactoryService>().StationPassesAsync(book, station)));
         services.AddSingleton<WritingQualityService>();
         services.AddSingleton(sp => new AuthoredMotifRegistry(
             sp.GetRequiredService<SettingsKvStore>(),

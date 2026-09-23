@@ -1,15 +1,18 @@
 ---
-description: Restore the last /quicksave transcript and resume exactly where it left off.
-allowed-tools: Read, PowerShell, Bash
+description: Resume from the factory — the live next action and the last session's summary. Replaces the old paper-transcript quickload.
+allowed-tools: PowerShell, Bash
 ---
 
-# Quickload — restore the paper transcript
+# Quickload — resume from the factory (RFC 0015)
 
-Read **`.prose/quicksave.md` in the current project root** (`<cwd>\.prose\quicksave.md`).
+There is nothing to load from disk. The SessionStart hook already injected the factory block:
+the NEXT ACTION (computed by the Hub from the book's state), the books on the line, the last
+session's summary, and the laws. Resume from that.
 
-- If it does not exist: tell the user there is no quicksave to restore, and stop.
-- If it exists: treat its contents as your authoritative working memory for this session.
-  1. Delete the file (one-shot — it must not refill again).
-  2. Briefly confirm to the user what you're resuming (one line).
-  3. Pick up the **Current task**, honor every **Decision locked**, and continue from
-     **Next concrete steps** without re-asking anything already settled.
+If the block is missing (the hook did not run, or the Hub was down):
+
+1. Make sure the Hub is up: `powershell -NoProfile -File D:\Projects\MindAttic\Prose\src\tools\deploy-apps.ps1 -Start Hub`.
+2. Run `prose --factory next` (or MCP `factory_next`) and `prose --order list`.
+3. Do exactly the next action it names. Do not work from memory or from an old transcript.
+
+The old `.prose/quicksave.md*` transcripts are archived in `.prose/archive/` for history only.

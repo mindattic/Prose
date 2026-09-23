@@ -310,6 +310,9 @@ if (UniverseBootstrap.RequestedSlug == null
         // universe at a time. Same shape and rationale as --grep-beats above. --universe <slug>
         // still works and still narrows; this only stops the gate from DEMANDING one.
         "--validate-chapters",
+        // The Novel Factory (RFC 0015): work orders and sessions are engine-wide rows with no
+        // universe; --factory status/next resolve an explicit --node via NodeRefResolver.
+        "--factory", "--order", "--session",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -1107,6 +1110,20 @@ if (args.Contains("--booktok"))
     var providerIdx = Array.IndexOf(args, "--provider");
     var provider = providerIdx >= 0 && providerIdx + 1 < args.Length ? args[providerIdx + 1] : "unknown";
     Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("BookTokCli", $"--booktok --provider={provider}", args);
+    return;
+}
+
+// CLI mode: the Novel Factory (RFC 0015) — the computed line, work orders, sessions. Dispatched
+// only when the factory flag LEADS (after an optional --universe <slug>), because --order and
+// --session are also sub-flags of other commands (--schema, --decision-log).
+//   prose --factory status --node <slug|code|guid>
+//   prose --factory next [--node X] [--format block|line|json]
+//   prose --order add|list|close|abandon|seed …
+//   prose --session end --file summary.json
+static string? LeadingFlagIgnoringUniverse(string[] a) => a.Where((x, i) => x != "--universe" && (i == 0 || a[i - 1] != "--universe")).FirstOrDefault();
+if (LeadingFlagIgnoringUniverse(args) is "--factory" or "--order" or "--session")
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("FactoryCli", args);
     return;
 }
 

@@ -135,8 +135,13 @@ public static class CliDispatch
             var dbFactory = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();
             await using var db = await dbFactory.CreateDbContextAsync();
             var output = outcome.Response?.Output ?? "";
+            // RFC 0015: every ledger row names the factory session it happened in (the latest open
+            // FactorySessions row), so the journal can say which session changed what.
+            var sessions = sp.GetService<Prose.Core.Services.Factory.FactorySessionService>();
+            var actor = sessions != null ? await sessions.ActorTagAsync(source) : source;
             db.CommandLedgerEntries.Add(new CommandLedgerEntry
             {
+                Actor = actor,
                 Source = source,
                 HandlerClass = req.HandlerClass,
                 Method = req.Method,
