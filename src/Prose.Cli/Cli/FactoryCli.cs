@@ -163,6 +163,31 @@ public static class FactoryCli
                         Console.WriteLine($"  (b) {report.Untagged.Sum(t => t.Missing)} untagged mention(s) of known entities in {report.Untagged.Select(t => t.BeatId).Distinct().Count()} beat(s):");
                         foreach (var g in report.Untagged.GroupBy(t => t.EntityName).OrderByDescending(g => g.Sum(t => t.Missing)).Take(limit))
                             Console.WriteLine($"  {g.Sum(t => t.Missing),4}x  {g.Key,-36} in {string.Join(", ", g.Take(6).Select(t => "#" + t.Number))}{(g.Count() > 6 ? ", …" : "")}");
+                        if (Flag("--pin-name") is { } pinName && Guid.TryParse(Flag("--entity"), out var pinTo))
+                        {
+                            // A named decision: this surface name, in this book, is this entity. Every
+                            // untagged whole-word use in every beat is wrapped in its tag, tags only.
+                            var workbench = services.GetRequiredService<NodeWorkbenchService>();
+                            var dbf = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
+                            string? pinType;
+                            await using (var dbt = await dbf.CreateDbContextAsync())
+                                pinType = await dbt.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == pinTo).Select(e => e.EntityType).FirstOrDefaultAsync();
+                            if (pinType == null) { Console.Error.WriteLine($"[capture] no entity {pinTo}."); return 1; }
+                            var sp = await services.GetRequiredService<BookSpineService>().GetAsync(book);
+                            int pinnedBeats = 0;
+                            foreach (var beatId in sp.Chapters.SelectMany(c => c.Beats).Select(b => b.BeatId))
+                            {
+                                string before;
+                                await using (var db0 = await dbf.CreateDbContextAsync())
+                                    before = await db0.Beats.AsNoTracking().Where(b => b.Id == beatId).Select(b => b.Text).FirstAsync();
+                                var pinned = CaptureScanner.PinName(before, pinName, pinTo, pinType);
+                                if (pinned == before) continue;
+                                await workbench.UpdateBeatTextAsync(beatId, pinned, BeatWriteReason.TagMaintenance, deferAnalysis: true);
+                                pinnedBeats++;
+                            }
+                            report = await scanner.ScanAsync(book);
+                            Console.WriteLine($"[capture] pinned \"{pinName}\" to {pinTo} ({pinType}) in {pinnedBeats} beat(s). Unresolved now: {report.Unresolved.Count}.");
+                        }
                         if (args.Contains("--pin") && report.Unresolved.Any(n => n.BookSays != null))
                         {
                             // Only where the book has already said who a surface name is (exactly one

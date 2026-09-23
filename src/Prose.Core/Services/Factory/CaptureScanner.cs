@@ -166,6 +166,16 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
     /// by convention. Positional capitals are already suppressed upstream; this is what is left.</summary>
     public static readonly HashSet<string> CaptureStopWords = new(StringComparer.OrdinalIgnoreCase)
     {
+        // Calibrated on BCODA 2026-09-23 (108 unresolved before, under the 150 ceiling): the words
+        // left once the real names had entities, aliases, pins or incidental rulings — units,
+        // grades and formats ("Mach six", "Class-2", "Tier 3", "Gate 3", "Unit 2E", "Addendum A"),
+        // the generic tail of a proper name whose head is already an entity ("Markel Street",
+        // "Branch Manager", "Halvorsen Civic", "Kessler and Sons"), bare compass words left behind
+        // by "West Town West" or "South Loop", and weekday plurals.
+        "Mach", "Class", "Tier", "Unit", "Gate", "Addendum",
+        "Street", "Avenue", "Road", "Boulevard", "Manager", "Civic", "Sons",
+        "North", "South", "East", "West",
+        "Mondays", "Tuesdays", "Wednesdays", "Thursdays", "Fridays", "Saturdays", "Sundays",
     };
 
     private static string Fingerprint(IEnumerable<string> parts) =>

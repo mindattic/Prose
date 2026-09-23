@@ -523,6 +523,15 @@ public class CaptureScannerTests : WorldFixture
         Assert.That((await factory.StatusAsync(book)).Units.Single().Stations["F4"].Pass, Is.True);
     }
 
+    [TestCase("It hit Mach six.", "They flew at Mach three.")]
+    [TestCase("A cheap Tier 3 implant.", "Nothing above Tier 2 here.")]
+    [TestCase("Meet me on Thursdays.", "He came by on Thursdays.")]
+    public async Task A_format_word_capitalized_by_convention_is_not_a_missing_entity(string first, string second)
+    {
+        var (book, _) = await BookAsync(first, second);
+        Assert.That((await capture.ScanAsync(book)).Unresolved, Is.Empty);
+    }
+
     [Test]
     public async Task A_known_entity_named_without_its_tag_is_untagged_until_the_beat_is_saved_again()
     {
