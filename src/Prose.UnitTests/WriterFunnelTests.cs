@@ -33,7 +33,6 @@ public class WriterFunnelTests
         ["Prose.Core/Services/DistributedWorkerCoordinator.cs"] = "worker-generated prose into an EMPTY beat, stamps Generation (RFC 0009 Phase 3b)",
         ["Prose.Core/Services/BeatRebuildService.cs"]           = "re-segments existing text into new rows, stamps StructuralSplit",
         ["Prose.Core/Services/NodeMigrationService.cs"]         = "legacy Chapter/Episode model → Beats, stamps Import",
-        ["Prose.Core/Services/NodeOutlineService.cs"]           = "seed-spine: empty planned beats from the outline, stamps Plan",
         ["Prose.Cli/Cli/MigrateLegacyBookChapterCli.cs"]        = "legacy Book/Chapter migration, stamps Import",
         ["Prose.Cli/Cli/SanitizeBeatsCli.cs"]                   = "mojibake repair, stamps TagMaintenance",
         ["Prose.Cli/Cli/TagEntitiesCli.cs"]                     = "entity-tag rescan, stamps TagMaintenance",

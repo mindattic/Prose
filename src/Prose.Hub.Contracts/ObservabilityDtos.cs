@@ -92,4 +92,4 @@ public sealed record BeatArchiveDto(
     BeatArchiveBeatDto Beat, Guid NodeId, DateTime AsOf, BeatArchiveModeDto? Mode,
     List<BeatArchiveServiceCoverageDto> ServiceCoverage, string? ContextTrace,
     List<BeatArchivePromptDto> Prompts, List<BeatArchiveEntityDto> EntityRoster,
-    List<BeatArchiveEdgeDto> Edges, List<BeatArchiveDocDto> Docs, string? Bible);
+    List<BeatArchiveEdgeDto> Edges, List<BeatArchiveDocDto> Docs);

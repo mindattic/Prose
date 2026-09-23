@@ -157,35 +157,4 @@ public class StoryMethodologyServiceTests
         var guidance = svc.GetBeatGenerationGuidance(0, 12);
         Assert.That(guidance.Length, Is.GreaterThan(20));
     }
-
-    // ── Outline methodology prompt ───────────────────────────────────────────
-
-    [Test]
-    public void GetOutlineMethodologyPrompt_ContainsAllBeatNumbers()
-    {
-        var prompt = svc.GetOutlineMethodologyPrompt(8);
-        for (int i = 1; i <= 8; i++)
-            Assert.That(prompt, Does.Contain($"Beat {i}/8"), $"Missing Beat {i}/8 in prompt");
-    }
-
-    [Test]
-    public void GetOutlineMethodologyPrompt_ContainsWantVsNeed()
-    {
-        var prompt = svc.GetOutlineMethodologyPrompt(8);
-        Assert.That(prompt, Does.Contain("WANT").And.Contain("NEED"));
-    }
-
-    [Test]
-    public void GetOutlineMethodologyPrompt_ContainsSceneSequelRule()
-    {
-        var prompt = svc.GetOutlineMethodologyPrompt(8);
-        Assert.That(prompt, Does.Contain("Scene").And.Contain("Sequel"));
-    }
-
-    [Test]
-    public void GetOutlineMethodologyPrompt_ContainsTensionCurveGuidance()
-    {
-        var prompt = svc.GetOutlineMethodologyPrompt(8);
-        Assert.That(prompt, Does.Contain("TENSION").Or.Contain("tension"));
-    }
 }

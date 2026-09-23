@@ -222,12 +222,6 @@ if (UniverseBootstrap.RequestedSlug == null
         // Explicit --id/--slug/--all targeting via IgnoreQueryFilters(), never an ambient
         // universe default — see ArchiveBookCli/TagEntitiesCli's own doc comments.
         "--archive-book", "--tag-entities",
-        // Explicit --slug (or corpus-wide) targeting via IgnoreQueryFilters(), same exemption
-        // shape as --tag-entities above — see RetireLockedMarkersCli's own doc comment.
-        "--retire-locked-markers",
-        // Same exemption shape as --retire-locked-markers above — see
-        // RetireBibleTitleHeaderCli's own doc comment.
-        "--retire-bible-title-header",
         // Corpus-wide data-repair backfill: finds orphaned character/place rows via
         // IgnoreQueryFilters() across every universe by design — see BackfillMissingSubtypeRowsCli.
         "--backfill-missing-subtype-rows",
@@ -922,27 +916,6 @@ if (args.Contains("--tag-entities"))
     return;
 }
 
-// CLI mode: Bible->Outline refactor Phase 6a -- retire "LOCKED" markers (author ruling
-// 2026-08-29, decision #3: the LOCK concept is retired, no corner auto-wins). Dry-run first.
-//   prose --retire-locked-markers --dry-run [--slug <slug>]
-//   prose --retire-locked-markers --apply [--slug <slug>]
-if (args.Contains("--retire-locked-markers"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("RetireLockedMarkersCli", args);
-    return;
-}
-
-// CLI mode: retire the stale "# NODE BIBLE: [Title]" header baked into pre-fix generated
-// outlines (NodeOutlineService's LLM prompt template). Dry-run first, same shape as
-// --retire-locked-markers above.
-//   prose --retire-bible-title-header --dry-run [--slug <slug>]
-//   prose --retire-bible-title-header --apply [--slug <slug>]
-if (args.Contains("--retire-bible-title-header"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("RetireBibleTitleHeaderCli", args);
-    return;
-}
-
 // CLI mode: backfill Entities.Status = 'stub' / 'canon' based on BeatEntityMentions.
 //   prose --backfill-stubs
 // Entities with no BeatEntityMentions row → Status='stub' (excluded from universe graph).
@@ -988,32 +961,11 @@ if (args.Contains("--legion"))
 //   prose --seed                     list known seeds
 //   prose --seed <name>              apply one
 //   prose --seed --all [--force]     apply every known seed in order
-// NOTE: --seed is also the prompt flag of --write-node / --write-story /
-// --create-book — those commands must win the dispatch or their calls get
-// hijacked by the SQL seeder.
-if (args.Contains("--seed") && !args.Contains("--write-node")
-    && !args.Contains("--write-story") && !args.Contains("--create-book")
-    && !args.Contains("--run-corpus"))
+// NOTE: --seed is also a flag of --create-book — that command must win the dispatch or its
+// calls get hijacked by the SQL seeder.
+if (args.Contains("--seed") && !args.Contains("--create-book"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SeedCli", args);
-    return;
-}
-
-// CLI mode: (re)generate the node bible for an existing node.
-// Renamed from --book-outline (2026-08-30) — too easily confused with the read-only
-// --get-book-outline; this one calls an LLM and can destructively regenerate the bible.
-//   prose --generate-book-outline --slug <slug> [--beats N] [--replace-beats]
-if (args.Contains("--generate-book-outline"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("NodeOutlineCli", args);
-    return;
-}
-
-// CLI mode: hand-write the node bible verbatim (CLI mirror of MCP SetBookOutline).
-//   prose --set-book-outline --slug <slug> --file <path-to-bible.md>
-if (args.Contains("--set-book-outline"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SetBookOutlineCli", args);
     return;
 }
 
@@ -1034,16 +986,6 @@ if (args.Contains("--delete-alias"))
 if (args.Contains("--add-alias"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("AddAliasCli", args);
-    return;
-}
-
-// CLI mode: dump the node bible VERBATIM (the read half of --set-book-outline's round trip).
-// NOT --generate-book-outline (renamed from --book-outline 2026-08-30), which generates a
-// fresh bible via an LLM instead of reading the existing one.
-//   prose --get-book-outline --slug <slug|code|guid> [--out <path>]
-if (args.Contains("--get-book-outline"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("GetBookOutlineCli", args);
     return;
 }
 
@@ -1084,7 +1026,7 @@ if (args.Contains("--find-entity"))
 
 // prose --rename-entity --entity <guid|slug> --node <book-guid|slug|code> --new-name "..." [--apply --yes]
 // Preview is the default; the apply form replaces exact full-name references in this book's
-// hand-authored outline and descendant beats, then relabels linked ledger claims.
+// descendant beats, then relabels linked ledger claims.
 if (args.Contains("--rename-entity"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RenameEntityCli", args);
@@ -1093,19 +1035,6 @@ if (args.Contains("--rename-entity"))
 if (args.Contains("--set-canon-section"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SetCanonSectionCli", args);
-    return;
-}
-
-// CLI mode: assemble the unified Book Context Document for a node.
-// Merges hand-authored NodeOutline + Structural Blueprint + Beat Spine into one document,
-// writes the merged view to docs/nodes/{CODE}.md (read-only disk mirror) only. Nodes.NodeOutline
-// itself stays pure hand-authored content (fixed 2026-08-14 — it used to get the merged blob
-// written back, so the column named "the bible" stopped meaning only the bible).
-//   prose --generate-node-doc --slug <slug>
-//   prose --generate-node-doc --all
-if (args.Contains("--generate-node-doc"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("NodeDocCli", args);
     return;
 }
 
@@ -1181,16 +1110,26 @@ if (args.Contains("--booktok"))
     return;
 }
 
-// CLI mode: generate a new node (bible-first: plan → planned beats → expand in UI).
-// CLI mode: autonomous corpus loop — generate N nodes end-to-end and review them.
-//   prose --run-corpus --count N [--seed "..."] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]
-if (args.Contains("--run-corpus"))
+// CLI mode: which beats are unread (never read / text changed / moved / entity changed), and the
+// notes a read filed. Export refuses while any beat is unread; there is no override.
+//   prose --read-status --node <slug|code|guid> [--list]
+//   prose --read-note add|list|resolve --node <x> [--beat N --kind defect|question|note --text "…" --read-by <name>]
+if (args.Contains("--read-status") || args.Contains("--read-note"))
 {
-    Environment.ExitCode = await HubCliClient.ForwardAsync("RunCorpusCli", args);
+    Environment.ExitCode = await HubCliClient.ForwardAsync("ReadStatusCli", args);
     return;
 }
 
-// CLI mode: expand planned beats in a node to prose (headless ✨ for each beat).
+// CLI mode: a docket of exact-text replacements across a book, guarded all-or-nothing, dry-run
+// unless --apply, verified by read-back. Replaces the 2026-09-22 scratchpad splice.py.
+//   prose --splice-beats --node <slug|code|guid> --file <docket.json> [--apply] [--analyze]
+if (args.Contains("--splice-beats"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SpliceBeatsCli", args);
+    return;
+}
+
+// CLI mode: overwrite one beat's prose from a file, or insert a new beat after a position.
 //   prose --edit-beat --slug <slug> (--beat-number N | --insert-after N) --file <path>
 if (args.Contains("--edit-beat"))
 {
@@ -1225,8 +1164,9 @@ if (args.Contains("--set-beat-enabled"))
     return;
 }
 
-// CLI mode: create a new empty root node (bible-first; no beats yet).
-//   prose --create-book --title "..." [--code SRZR] [--kind book] [--description "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
+// CLI mode: create a new, EMPTY book — no outline, no beats. Plan it with planned beats (a title and
+// a description, no text: prose --beat insert / MCP insert_beat), then write them.
+//   prose --create-book --title "..." [--code SRZR] [--kind book] [--description "..."] [--logline "..."] [--previous <slug|id>] [--parent <slug|id>]
 if (args.Contains("--create-book"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("CreateNodeCli", args);
@@ -1244,13 +1184,6 @@ if (args.Contains("--expand-beat"))
 if (args.Contains("--auto-run"))
 {
     Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("AutoRunCli", "--auto-run", args);
-    return;
-}
-
-//   prose --write-node --seed "..." [--title "..."] [--kind episode] [--beats 12] [--outline-only]
-if (args.Contains("--write-node"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("WriteNodeCli", args);
     return;
 }
 
@@ -1274,31 +1207,16 @@ if (args.Contains("--migrate-canon-docs"))
     return;
 }
 
-// Truth-First Architecture — Step B2: decompose EscalationCurveJson /
-// EventTypePaletteJson blobs and BeatTags into per-beat BeatBlueprintDecision rows.
-// Idempotent; skips beats that already have a decision row.
-//   prose --migrate-blueprint-rows [--slug <slug>] [--dry-run]
-if (args.Contains("--migrate-blueprint-rows"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("MigrateBlueprintRowsCli", args);
-    return;
-}
-
-//   prose --verify-beat --id <beatId> [--json]
-//   prose --verify-book --slug <slug> [--json]
 //   prose --verify-quote --id <beatId> --quote "<claimed text>" [--claimed-by <name>] [--json]
 //   prose --verify-quotes-batch --json-file <path> [--json]
 //   prose --verification-staleness [--json]
-// Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision
-// contract. Results upserted to BeatVerification table. BLOCKER findings block --export-node.
 // QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears
 // in the beat it's attributed to, before that finding is trusted for triage/fix (SS-LOGIC-4a).
 // --verification-staleness: which books have BeatVerification rows computed under an older
-// CurrentRuleVersion and need a --verify-book re-run (2026-08-10 — added after the
+// CurrentRuleVersion and need a re-run (2026-08-10 — added after the
 // same "book never re-run after a check-logic fix" gap was found and manually re-diffed twice
 // in one session; see BeatVerification.RuleVersion's doc comment).
-if (args.Contains("--verify-beat") || args.Contains("--verify-book")
-    || args.Contains("--verify-quote") || args.Contains("--verify-quotes-batch")
+if (args.Contains("--verify-quote") || args.Contains("--verify-quotes-batch")
     || args.Contains("--verification-staleness"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("VerifyBeatCli", args);
@@ -1533,14 +1451,6 @@ if (args.Contains("--publish-book"))
 if (args.Contains("--seed-keywords"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("SeedKeywordsCli", args);
-    return;
-}
-
-// CLI mode: chapter-by-chapter synopsis export (also runs inside --export-node).
-//   prose --export-synopsis (--slug <slug> | --all) [--force]
-if (args.Contains("--export-synopsis"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("ExportSynopsisCli", args);
     return;
 }
 
@@ -2004,11 +1914,11 @@ if (args.Contains("--list-archives"))
     return;
 }
 
-// CLI mode: restore a Node content field (Description/NodeOutline/Summary/Seed/Subtitle) from a
+// CLI mode: restore a Node content field (Description/Summary/Seed/Subtitle) from a
 // named ArchivedBook snapshot back onto the live node. Explicit archive-id, never "latest" —
 // see RestoreNodeFieldCli class doc.
 //   prose --restore-node-field (--id ... | --slug ...) --archive-id <guid>
-//       --field description|nodeoutline|summary|seed|subtitle|all --universe <u>
+//       --field description|summary|seed|subtitle|all --universe <u>
 if (args.Contains("--restore-node-field"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RestoreNodeFieldCli", args);
@@ -2222,14 +2132,6 @@ if (args.Contains("--world-state"))
     return;
 }
 
-// prose --sequential-read-status --slug <slug> | --all [--json]
-// prose --sequential-read-record --slug <slug> --read-by <name> [--stages N] [--summary "text"]
-if (args.Contains("--sequential-read-status") || args.Contains("--sequential-read-record"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SequentialReadCli", args);
-    return;
-}
-
 // prose --check-text-integrity [--fix] [--json]
 if (args.Contains("--check-text-integrity"))
 {
@@ -2254,9 +2156,9 @@ if (args.Contains("--write-synopsis"))
 }
 
 // prose --logic-sweep --slug <nodeSlug> [--json]
-// Codifies docs/LOGIC.md's six-dimension sweep (SS-A44) as one LLM call per dimension:
-// causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references,
-// bible agreement. A single-pass approximation over the whole node's prose — for a large
+// Codifies docs/LOGIC.md's sweep (SS-A44) as one LLM call per dimension: causality chain,
+// knowledge states, timeline, plant/payoff (two-way), orphan references, inserted-beat drift.
+// A single-pass approximation over the whole node's prose — for a large
 // book or a thorough pass, prefer the /logic-sweep Claude Code skill (range-scoped
 // subagents + quote verification + fix + re-verify). Findings persist to Findings and
 // auto-heal on re-run. Exit 0 = clean, 1 = MODERATE/MINOR only, 2 = any BLOCKER.
@@ -2271,7 +2173,7 @@ if (args.Contains("--logic-sweep"))
 // --edit-beat / --import-md bypass ProseWriterRouter, so step-0 entity inference never
 // ran — PURSUED shipped 127 beats with zero entity docs this way). Runs
 // EntityDocService.InferFromTextAsync over every enabled beat's prose; hash-gated,
-// no prose touched. Run after --generate-node-doc + --sync-markdown.
+// no prose touched. Run after --sync-markdown.
 if (args.Contains("--dcm-backfill"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("DcmBackfillCli", args);
@@ -2422,7 +2324,7 @@ if (args.Contains("--harvest-entities"))
 // real universe subcommand. Elsewhere in argv, --universe <slug> is the scoping flag other
 // commands accept (parsed at line 28 into UniverseBootstrap.RequestedSlug) —
 // args.Contains("--universe") would incorrectly steal dispatch from every command block defined
-// after this one (e.g. --coordinate).
+// after this one.
 //
 // The subcommand check matters because --universe is ALSO valid in first position as a scoping
 // flag: `prose --universe source --export-node --slug x` is a legitimate export, not a malformed
@@ -2581,8 +2483,8 @@ if (args.Contains("--log-search"))
 // prose --beat-archive --beat-id <guid>
 // The Beat Context Archive (observability Part F5): everything that fed one beat, resolved
 // as-of that beat's own BeatContextTrace timestamp — prose, per-service trace, full LLM
-// prompt/response, entity roster resolved to that moment's canon, DCM doc content as of that
-// moment, and the bible section active at that time.
+// prompt/response, entity roster resolved to that moment's canon, and DCM doc content as of that
+// moment.
 if (args.Contains("--beat-archive"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BeatArchiveCli", args);
@@ -2738,26 +2640,6 @@ if (args.Contains("--estimate-cost"))
     return;
 }
 
-// prose --generate-blueprint --slug <nodeSlug> [--retrofit] [--json]
-// Generates the StructuralBlueprint — pre-prose anti-tell commitments (subplot,
-// temporal scheme, resolution mode, escalation curve, event palette, ending,
-// intertextual anchors). StoryScope countermeasures; bible → blueprint → prose.
-// --retrofit infers the blueprint from already-written prose.
-if (args.Contains("--generate-blueprint"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("GenerateBlueprintCli", "--generate-blueprint", args);
-    return;
-}
-
-// prose --set-structural-blueprint --slug <nodeSlug> --file <path.json>
-// Hand-author a blueprint with no LLM call, matching GenerateBlueprintCli's response contract —
-// for when the generation provider is unavailable but the structural decisions are already made.
-if (args.Contains("--set-structural-blueprint"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SetStructuralBlueprintCli", args);
-    return;
-}
-
 // prose --duel --beat-id <guid> --candidate <file> [--goal "..."] [--apply] [--json]
 // Blind A/B duel: beat's current prose vs a candidate revision. 3 voters
 // (register/goal/reader lenses), three-way ballot; replace needs >=2 better
@@ -2831,20 +2713,6 @@ if (args.Contains("--duplicate-entity-scan"))
 if (args.Contains("--duplicate-entity-scan-broad"))
 {
     Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("DuplicateEntityScanBroadCli", "--duplicate-entity-scan-broad", args);
-    return;
-}
-
-// prose --reconcile-book-entities (--id <guid> | --slug <slug>) [--universe <u>]
-// Phase 0 (repair) of the corpus-trust-recovery plan: finds Entity rows describing a FORMER
-// identity of a character this book's current bible names differently (a full rename, not a
-// typo — name-based dedup structurally can't catch this). Report-only. See
-// BookEntityReconciliationService for the two-stage cost-bounded design.
-if (args.Contains("--reconcile-book-entities"))
-{
-    // --all walks every book in the universe; --id/--slug reconciles one. Blended history under
-    // one name taught the estimator the whole-corpus run cost the same as a single book.
-    var key = args.Contains("--all") ? "--reconcile-book-entities --all" : "--reconcile-book-entities --single";
-    Environment.ExitCode = await HubCliClient.ForwardWithCostGateAsync("ReconcileBookEntitiesCli", key, args);
     return;
 }
 
@@ -2991,35 +2859,11 @@ if (args.Contains("--session-beats"))
     return;
 }
 
-// prose --sync-outline-from-session --session-id <guid> [--dry-run]
-if (args.Contains("--sync-outline-from-session"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SyncOutlineFromSessionCli", args);
-    return;
-}
-
-// prose --sync-blueprint-from-session --session-id <guid>
-if (args.Contains("--sync-blueprint-from-session"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("SyncBlueprintFromSessionCli", args);
-    return;
-}
-
 // prose --close-all-sessions
-// Called by the /commit skill before every commit to flush open edit sessions,
-// run bible + blueprint sync for each, and draw a clean 3B coordination boundary.
+// Called by the /commit skill before every commit to close open edit sessions.
 if (args.Contains("--close-all-sessions"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("CloseAllSessionsCli", args);
-    return;
-}
-
-// prose --coordinate --slug <slug> [--json <path>] [--no-stamp]
-// Full-coverage bible↔blueprint↔beat coordination: correlate every beat's meaning,
-// construction, and prose; emit JSON + stamp the "## Beat Coordination Index".
-if (args.Contains("--coordinate"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("CoordinateCli", args);
     return;
 }
 
@@ -3062,22 +2906,6 @@ if (args.Contains("--ensure-chapter"))
 if (args.Contains("--backfill-meaning"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BackfillMeaningCli", args);
-    return;
-}
-
-// prose --generate-event-list --slug <slug> [--force] [--limit N] [--dry-run] [--model <id>]
-// Fill the per-beat plot-EVENT one-liner (Beat.EventSummary) — "what happened".
-if (args.Contains("--generate-event-list"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("GenerateEventListCli", args);
-    return;
-}
-
-// prose --audit-event-summaries --slug <slug>
-// Read-only, free: find stored EventSummary lines that describe a DIFFERENT beat (batch ref shift).
-if (args.Contains("--audit-event-summaries"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("AuditEventSummariesCli", args);
     return;
 }
 
@@ -3132,7 +2960,7 @@ if (args.Contains("--beat-positions"))
 // prose --beat-index --slug <slug> [--json] [--tsv]
 // Read-only, FREE dump of one book's per-beat metadata in reading order: position, chapter,
 // chars, PlaceName + whether it resolved to a canon Place, SceneType/StructureRole/Act, and the
-// trust state of Description and EventSummary against the beat's current TextHash. Exists because
+// trust state of Description against the beat's current TextHash. Exists because
 // Beat.PlaceName had no read path at all — --extract-beat-locations wrote it and nothing could
 // show you the result.
 if (args.Contains("--beat-index"))
@@ -3157,14 +2985,6 @@ if (args.Contains("--lint-prose"))
     return;
 }
 
-// prose --export-event-list --slug <slug>
-// Write the current per-beat event list to {CODE}-Events.txt in the publish-export folder (no LLM call).
-if (args.Contains("--export-event-list"))
-{
-    Environment.ExitCode = await HubCliClient.ForwardAsync("ExportEventListCli", args);
-    return;
-}
-
 // CLI mode: show running token cost tally for the current process, or the durable per-command
 // calibration data the cost gate estimates from.
 //   prose --cost              print session cost table
@@ -3172,7 +2992,7 @@ if (args.Contains("--export-event-list"))
 //   prose --cost --reset      clear the ledger
 //   prose --cost --history [--command <name>] [--take N] [--json]
 //                             print CommandCostHistories — what each cost gate calibrates from
-// When appended to another command (e.g. prose --write-node --slug foo --cost),
+// When appended to another command (e.g. prose --expand-beat --slug foo --cost),
 // the cost of that command's LLM calls is printed after the command finishes.
 if (args.Contains("--cost") && (args.Contains("--history")
     || args.Length == 1 || (args.Length == 2 && (args.Contains("--json") || args.Contains("--reset")))))

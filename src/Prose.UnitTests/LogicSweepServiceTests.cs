@@ -3,10 +3,10 @@ using Prose.Core.Services.Audit;
 namespace Prose.UnitTests;
 
 /// <summary>
-/// Tests for LogicSweepService's deterministic, LLM-free helper. The six audit dimensions
-/// themselves (causality, knowledge states, timeline, plant/payoff, orphan references, outline
-/// agreement) are each a single LLM call and aren't practically unit-testable, but
-/// <c>ParseFindingsArray</c> — the ONE parser all six dimensions share for their untrusted LLM
+/// Tests for LogicSweepService's deterministic, LLM-free helper. The audit dimensions
+/// themselves (causality, knowledge states, timeline, plant/payoff, orphan references, inserted-
+/// beat drift) are each a single LLM call and aren't practically unit-testable, but
+/// <c>ParseFindingsArray</c> — the ONE parser every dimension shares for their untrusted LLM
 /// JSON output — is pure logic worth covering directly. Made <c>internal</c> (was <c>private</c>);
 /// <c>InternalsVisibleTo</c> already covers this project. (Prose truncation is now the shared
 /// <c>AuditProseUtils.ClampProse</c> — see <c>AuditProseUtilsTests.cs</c>.)
@@ -20,37 +20,6 @@ public class LogicSweepServiceTests
         new AuditBeat(Guid.Parse("00000000-0000-0000-0000-000000000002"), 2, "Beat two text."),
         new AuditBeat(Guid.Parse("00000000-0000-0000-0000-000000000003"), 3, "Beat three text."),
     ];
-
-    // ── WithholdSubtextSections ───────────────────────────────────────────────
-
-    [Test]
-    public void WithholdSubtextSections_RemovesNeverStatedSectionBodyUntilNextPeerHeading()
-    {
-        var outline = string.Join("\n",
-            "## 1b. Facts {#a}",
-            "Kyle arrived in GLMZ in 2215.",
-            "## 1c. THE TRUE NATURE OF THE ENTITY (AUTHOR RULING — never stated on page, but legible from it) {#b}",
-            "The entity is Kyle himself.",
-            "### 1c-i. sub-point",
-            "Still doctrine.",
-            "## 2. Mrs. Chen {#c}",
-            "Sacred ground.");
-        var kept = LogicSweepService.WithholdSubtextSections(outline);
-
-        Assert.That(kept, Does.Contain("Kyle arrived in GLMZ in 2215."));
-        Assert.That(kept, Does.Contain("Sacred ground."));
-        Assert.That(kept, Does.Not.Contain("The entity is Kyle himself."));
-        Assert.That(kept, Does.Not.Contain("Still doctrine."));
-        Assert.That(kept, Does.Contain("## 1c. THE TRUE NATURE"), "heading stub stays so the model knows the section exists");
-        Assert.That(kept, Does.Contain("withheld from this dimension"));
-    }
-
-    [Test]
-    public void WithholdSubtextSections_LeavesOrdinaryOutlineUntouched()
-    {
-        var outline = "## 1. Arc\nA fact.\n## 2. Cast\nAnother fact.\n";
-        Assert.That(LogicSweepService.WithholdSubtextSections(outline).Trim(), Is.EqualTo(outline.Trim()));
-    }
 
     // ── ParseFindingsArray ─────────────────────────────────────────────────────
 
@@ -128,7 +97,7 @@ public class LogicSweepServiceTests
     [Test]
     public void ParseFindingsArray_NullBeatNumber_LocationIsNull()
     {
-        // plant/payoff and outline-agreement findings can be whole-node (beat_number: null)
+        // plant/payoff findings can be whole-node (beat_number: null)
         var raw = """[{"beat_number":null,"severity":"moderate","evidence":"whole-book issue","fix":null}]""";
         var results = LogicSweepService.ParseFindingsArray("plant_payoff", "Plant/payoff ledger", raw, Beats);
 
@@ -328,17 +297,17 @@ public class LogicSweepServiceTests
 
     // ── Self-declared non-findings (2026-08-24) ─────────────────────────────────
     // Models persistently return confirmations and non-verifications as findings, sometimes at
-    // BLOCKER severity — a real VIGL round filed a BLOCKER whose evidence concluded "the prose is
-    // consistent with the outline's locked kill choreography." Persisting those makes every other
+    // BLOCKER severity — a real VIGL round filed a BLOCKER whose evidence concluded that the prose
+    // was consistent with what it was checked against. Persisting those makes every other
     // finding untrustworthy, which is what made prior reports say "don't run --until-dry."
 
     [Test]
     public void ParseFindingsArray_ConfirmationReportedAsFinding_IsDropped()
     {
         var raw = """
-            [{"beat_number":1,"severity":"blocker","evidence":"This matches the outline's description of the kill sequence exactly. The prose is consistent with the outline's locked kill choreography.","fix":null}]
+            [{"beat_number":1,"severity":"blocker","evidence":"This matches beat three's description of the kill sequence exactly. The prose is consistent with the established kill choreography.","fix":null}]
             """;
-        var results = LogicSweepService.ParseFindingsArray("outline_agreement", "Outline agreement", raw, Beats);
+        var results = LogicSweepService.ParseFindingsArray("causality", "Causality chain", raw, Beats);
         Assert.That(results, Is.Empty, "a confirmation is not a finding, whatever severity the model stamped on it");
     }
 
@@ -348,7 +317,7 @@ public class LogicSweepServiceTests
         var raw = """
             [{"beat_number":null,"severity":"moderate","evidence":"Cannot verify whether beat #4369 contains the tally; those beats were not provided.","fix":"Provide beats from Ch16 to verify."}]
             """;
-        var results = LogicSweepService.ParseFindingsArray("outline_agreement", "Outline agreement", raw, Beats);
+        var results = LogicSweepService.ParseFindingsArray("causality", "Causality chain", raw, Beats);
         Assert.That(results, Is.Empty, "a gap in the model's window is not a defect in the book");
     }
 
@@ -356,9 +325,9 @@ public class LogicSweepServiceTests
     public void ParseFindingsArray_NoFixNeededInTheFixField_IsDropped()
     {
         var raw = """
-            [{"beat_number":1,"severity":"minor","evidence":"Beat one text.","fix":"No fix needed; outline and prose align on the separation."}]
+            [{"beat_number":1,"severity":"minor","evidence":"Beat one text.","fix":"No fix needed; the two beats align on the separation."}]
             """;
-        var results = LogicSweepService.ParseFindingsArray("outline_agreement", "Outline agreement", raw, Beats);
+        var results = LogicSweepService.ParseFindingsArray("causality", "Causality chain", raw, Beats);
         Assert.That(results, Is.Empty);
     }
 
@@ -369,7 +338,7 @@ public class LogicSweepServiceTests
         var raw = """
             [{"beat_number":2,"severity":"blocker","evidence":"Beat two text. states the grace period is eight days, but the sale on day nine is called inside the window.","fix":"Change eight to ten."}]
             """;
-        var results = LogicSweepService.ParseFindingsArray("outline_agreement", "Outline agreement", raw, Beats);
+        var results = LogicSweepService.ParseFindingsArray("causality", "Causality chain", raw, Beats);
         Assert.That(results, Has.Count.EqualTo(1));
         Assert.That(results[0].Severity, Is.EqualTo("BLOCKER"));
     }
@@ -411,11 +380,10 @@ public class LogicSweepServiceTests
     }
 
     // ── Chapter attribution in the beat header (2026-08-23) ──────────────────────
-    // The outline cites scenes BY CHAPTER, but Beat.Number is not chapter-local, so a
-    // prompt labelling prose with only "[Beat #N]" let OutlineAgreementRule compare a beat against
-    // a different chapter's description and report a mismatch between two unrelated things. Diagnosed
-    // on both BCODA's and VIGL's 2026-08-22 sweeps (beat #3033 is really in Ch30, matching the very
-    // Ch30 passage the finding claimed it contradicted) and recommended for fix in both reports.
+    // Beat.Number is not chapter-local, so a prompt labelling prose with only "[Beat #N]" left the
+    // model unable to tell which chapter it was reading and let it compare a beat against a
+    // different chapter's material. Diagnosed on both BCODA's and VIGL's 2026-08-22 sweeps (beat
+    // #3033 is really in Ch30) and recommended for fix in both reports.
 
     [Test]
     public void BuildClampedProse_WhenBeatHasChapterTitle_LabelsTheBeatWithItsChapter()
@@ -428,7 +396,7 @@ public class LogicSweepServiceTests
         var result = LogicSweepService.BuildClampedProse(beats);
 
         Assert.That(result, Does.Contain("[Beat #3033 | Chapter 30 — The Gray Suit]"),
-            "the model can only match prose to a chapter-keyed outline passage if the header names the chapter");
+            "the model can only tell which chapter it is reading if the header names the chapter");
     }
 
     [Test]

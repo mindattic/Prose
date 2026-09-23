@@ -38,7 +38,7 @@ public static class LintProseCli
         Console.WriteLine($"Crutch phrases  : {r.PhraseFindings}");
         Console.WriteLine($"Pet words       : {r.PetWordFindings}");
         Console.WriteLine($"Dialogue issues : {r.DialogueFindings}");
-        Console.WriteLine($"Structure       : {r.StructureFindings}   (ALT-SCENE / OUTLINE-HOOK / FIRST-TIME / BATCH-OUTLIER)");
+        Console.WriteLine($"Structure       : {r.StructureFindings}   (ALT-SCENE / FIRST-TIME / BATCH-OUTLIER)");
         // The structural checks print what they examined; those lines are the difference between
         // "clean" and "could not look", so they are never truncated.
         foreach (var line in r.Lines.Where(l => l.StartsWith("[structure]"))) Console.WriteLine($"  {line}");

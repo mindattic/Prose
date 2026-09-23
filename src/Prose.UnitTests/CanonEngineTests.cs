@@ -198,10 +198,6 @@ public class CanonEngineTests
         => Assert.That(typeof(Beat).GetProperty("FacetTag"), Is.Null, "FacetTag was retired — must not return on Beat");
 
     [Test]
-    public void OutlineBeat_HasNoFacetHint()
-        => Assert.That(typeof(OutlineBeat).GetProperty("FacetHint"), Is.Null, "FacetHint was retired from the outline model");
-
-    [Test]
     public void CoreAssembly_HasNoFacetTypes()
     {
         var facetTypes = typeof(VoiceHarvestService).Assembly.GetTypes()

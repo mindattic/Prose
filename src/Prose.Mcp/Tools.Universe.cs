@@ -70,7 +70,7 @@ public class UniverseTools
         return JsonSerializer.Serialize(new { slug = universe.CurrentSlug, name = u?.Name, theme = u?.Theme }, JsonOpts);
     }
 
-    [McpServerTool, Description("Return the universal world facts for the current universe — world mechanics, vocabulary, and social rules injected into every beat generation prompt. These apply to all books in the universe. Book-specific facts live in each book's node bible instead.")]
+    [McpServerTool, Description("Return the universal world facts for the current universe — world mechanics, vocabulary, and social rules injected into every beat generation prompt. These apply to all books in the universe. Book-specific facts live in that book's beats and its canon entities instead.")]
     public Task<string> GetUniversalFacts() =>
         hub.InvokeAsync(nameof(UniverseTools), nameof(GetUniversalFactsImpl));
 
@@ -88,7 +88,7 @@ public class UniverseTools
         }, JsonOpts);
     }
 
-    [McpServerTool, Description("Set the universal world facts for the current universe. These facts are injected into every beat generation prompt for any book in this universe, so they should cover mechanics and vocabulary that apply everywhere (transport, technology, social structure, prose vocabulary). Book-specific content belongs in the book's node bible, not here.")]
+    [McpServerTool, Description("Set the universal world facts for the current universe. These facts are injected into every beat generation prompt for any book in this universe, so they should cover mechanics and vocabulary that apply everywhere (transport, technology, social structure, prose vocabulary). Book-specific content belongs in that book's beats and canon entities, not here.")]
     public Task<string> SetUniversalFacts(
         [Description("The full world facts text in Markdown. Replaces any existing content. Pass empty string to clear.")] string facts) =>
         hub.InvokeAsync(nameof(UniverseTools), nameof(SetUniversalFactsImpl), new { facts });

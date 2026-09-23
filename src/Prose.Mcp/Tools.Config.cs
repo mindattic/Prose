@@ -144,12 +144,12 @@ public class ConfigTools
     [McpServerTool, Description(
         "Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs for a topic/scene. " +
         "Returns one budgeted block plus the resident docs (tier + why each loaded). Pass nodeCode (e.g. " +
-        "'BCODA') to include that book's bible + its one register; pass text (scene/goal/conversation) to " +
+        "'BCODA') to include that book's register and book-scoped docs; pass text (scene/goal/conversation) to " +
         "trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that " +
         "matter now instead of dumping hundreds.")]
     public Task<string> DocContextPrepare(
         [Description("Scene/goal/conversation text to trigger topic docs against.")] string text,
-        [Description("Optional node CODE (e.g. 'BCODA') to also load that book's bible + register.")] string? nodeCode = null,
+        [Description("Optional node CODE (e.g. 'BCODA') to also load that book's register and book-scoped docs.")] string? nodeCode = null,
         [Description("Token budget for the assembled block. Default 2000.")] int budget = 2000) =>
         hub.InvokeAsync(nameof(ConfigTools), nameof(DocContextPrepareImpl), new { text, nodeCode, budget });
 

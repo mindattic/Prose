@@ -47,6 +47,7 @@ public class DocxExportService
         SettingsService settings,
         ExportCleanupService cleanup,
         GlossaryService glossary,
+        ReadGateService readGate,
         ILogger<DocxExportService> log)
     {
         this.dbFactory = dbFactory;
@@ -55,12 +56,18 @@ public class DocxExportService
         this.settings = settings;
         this.cleanup = cleanup;
         this.glossary = glossary;
+        this.readGate = readGate;
         this.log = log;
     }
 
-    /// <summary>Render the node to a KDP-ready .docx in the export directory; returns the path.</summary>
+    private readonly ReadGateService readGate;
+
+    /// <summary>Render the node to a KDP-ready .docx in the export directory; returns the path.
+    /// Refuses (<see cref="UnreadBeatsException"/>) if any beat is unread — no override.</summary>
     public async Task<string> ExportNodeAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
+        await readGate.EnsureReadAsync(nodeId, ct);
+
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // IgnoreQueryFilters(): explicit nodeId, not an ambient scope — a book outside whatever
         // universe the ambient default resolves to would otherwise 404 here even with a correct id

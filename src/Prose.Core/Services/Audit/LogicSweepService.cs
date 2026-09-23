@@ -10,7 +10,7 @@ namespace Prose.Core.Services.Audit;
 /// <summary>
 /// Codifies docs/LOGIC.md's six-dimension sweep (SS-A44) as six independent
 /// <see cref="ILlmAuditRule"/>s on the shared <see cref="AuditRunner"/> — causality chain,
-/// knowledge states, timeline, plant/payoff (two-way), orphan references, outline agreement.
+/// knowledge states, timeline, plant/payoff (two-way), orphan references, plus inserted-beat drift.
 ///
 /// <b>Honest scope note:</b> this is a single LLM call per dimension over the WHOLE node's
 /// prose (truncated for an oversized book, like BookAuditService's ClampProse). The
@@ -85,10 +85,8 @@ public class LogicSweepService(
             .ThenBy(b => b.SortKey)
             .ToList();
 
-        // Chapter titles for the leaf nodes these beats hang off. The outline cites scenes by
-        // CHAPTER while Beat.Number is not chapter-local, so without this the model can't tell
-        // which chapter it's reading and OutlineAgreementRule compares a beat to the wrong chapter's
-        // lock — see AuditBeat.ChapterTitle for the two sweeps that diagnosed this.
+        // Chapter titles for the leaf nodes these beats hang off. Beat.Number is not chapter-local,
+        // so without this the model can't tell which chapter it's reading — see AuditBeat.ChapterTitle.
         var chapterTitles = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => nodeIds.Contains(n.Id))
             .Select(n => new { n.Id, n.Title })
@@ -127,7 +125,6 @@ public class LogicSweepService(
 
         var extra = new Dictionary<string, object?>
         {
-            ["outline"]             = node.NodeOutline,
             ["plants"]            = plants,
             ["disabledSnippets"]  = disabledSnippets,
         };
@@ -140,7 +137,6 @@ public class LogicSweepService(
             new TimelineRule(),
             new PlantPayoffRule(),
             new OrphanReferencesRule(),
-            new OutlineAgreementRule(),
             new InsertedBeatDriftRule(),
         ];
 
@@ -167,8 +163,8 @@ public class LogicSweepService(
 
     /// <summary>
     /// Blast-radius mini re-check (2026-08-14) — the same five whole-book-agnostic dimensions as
-    /// <see cref="RunAsync"/> (causality, knowledge states, timeline, plant/payoff, orphan refs,
-    /// outline agreement), but scoped to a caller-supplied beat-ID subset instead of the whole
+    /// <see cref="RunAsync"/> (causality, knowledge states, timeline, plant/payoff, orphan refs),
+    /// but scoped to a caller-supplied beat-ID subset instead of the whole
     /// book's prose. Exists so a fix pass (an --edit-beat, or the /logic-sweep skill's own Step 5)
     /// can verify its own side effects against its immediate neighbors in the SAME turn, instead
     /// of waiting for the next independent full-book sweep round to catch a regression it
@@ -228,7 +224,6 @@ public class LogicSweepService(
         var plants = await plantPayoffs.GetByNodeAsync(nodeId, ct);
         var extra = new Dictionary<string, object?>
         {
-            ["outline"]            = node.NodeOutline,
             ["plants"]           = plants,
             ["disabledSnippets"] = new List<string>(),
         };
@@ -241,7 +236,6 @@ public class LogicSweepService(
             new TimelineRule(),
             new PlantPayoffRule(),
             new OrphanReferencesRule(),
-            new OutlineAgreementRule(),
         ];
 
         var scopeKey = $"beat:{anchorBeatId:N}:blast";
@@ -459,10 +453,10 @@ public class LogicSweepService(
 
     /// <summary>
     /// True when a returned entry is the model reporting a NON-defect — either a confirmation
-    /// that prose and outline agree, or an admission it could not check something because the
+    /// that two things agree, or an admission it could not check something because the
     /// relevant beats weren't in its window. Neither is a finding, and persisting them is worse
-    /// than useless: a reader who sees a BLOCKER whose evidence says "this matches the outline
-    /// exactly" stops believing the other findings too.
+    /// than useless: a reader who sees a BLOCKER whose evidence says "no contradiction"
+    /// stops believing the other findings too.
     ///
     /// Phrase-matched deliberately narrowly, on explicit VERDICT language rather than anything
     /// that merely mentions agreement, so a genuine finding that happens to note "beat X is
@@ -491,12 +485,6 @@ public class LogicSweepService(
             "beats provided do not",
             "were not provided",
             "not provided in the beats",
-            "matches the bible",
-            "prose is consistent with the bible",
-            "consistent with the bible's",
-            "matches the outline",
-            "prose is consistent with the outline",
-            "consistent with the outline's",
         ];
         if (verdicts.Any(v => hay.Contains(v, StringComparison.Ordinal))) return true;
 
@@ -514,8 +502,8 @@ public class LogicSweepService(
     }
 
     /// <summary>The per-beat header the audit prompts see. Carries the chapter title when known
-    /// ("[Beat #3033 | Chapter 30 — The Gray Suit]") so a rule comparing prose against a
-    /// chapter-keyed outline passage can tell which chapter it is actually reading — Beat.Number alone
+    /// ("[Beat #3033 | Chapter 30 — The Gray Suit]") so a rule can tell which chapter it is
+    /// actually reading — Beat.Number alone
     /// does not track chapter order on a large or restructured book. Falls back to the bare
     /// "[Beat #N]" form when no chapter title is available, which is also what every existing
     /// test fixture and the narrow blast-radius path produce.</summary>
@@ -539,7 +527,7 @@ public class LogicSweepService(
                 try
                 {
                     // beat_number is documented to the LLM as "<int or null>" for whole-book
-                    // findings (plant/payoff, outline agreement) — JsonElement.TryGetInt32 THROWS
+                    // findings (plant/payoff) — JsonElement.TryGetInt32 THROWS
                     // InvalidOperationException on a JSON null (it doesn't fail soft like the
                     // name implies), so this must check ValueKind first or one whole-book finding
                     // silently discards every other finding in the same response via the outer
@@ -571,11 +559,10 @@ public class LogicSweepService(
                     // Post-hoc catch for self-declared non-findings, the companion to the prompt's
                     // "an entry is a defect or it does not exist" rule (prevention) — same pairing
                     // as the hallucinated-citation guard above. Models persistently return
-                    // CONFIRMATIONS ("this matches the outline exactly", "no contradiction") and
+                    // CONFIRMATIONS ("no contradiction") and
                     // NON-VERIFICATIONS ("cannot verify — those beats weren't provided") as
                     // findings, sometimes at BLOCKER severity: a 2026-08-24 VIGL round filed a
-                    // BLOCKER whose own evidence concluded "the prose is consistent with the
-                    // outline's locked kill choreography." Persisting those destroys trust in the
+                    // BLOCKER whose own evidence concluded the prose was consistent. Persisting those destroys trust in the
                     // whole instrument, which is what made every prior report say "don't run
                     // --until-dry on this book."
                     if (IsSelfDeclaredNonFinding(evidence, fix)) continue;
@@ -805,119 +792,6 @@ public class LogicSweepService(
                 $"Beats:\n{ctx.Prose}");
         }
         public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
-    }
-
-    sealed class OutlineAgreementRule : ILlmAuditRule
-    {
-        public string Key => "outline_agreement";
-        public string Title => "Outline agreement";
-        public int MaxResponseTokens => 4096;
-
-        public (string System, string User) BuildPrompt(AuditContext ctx)
-        {
-            var outlineText = ctx.Extra.TryGetValue("outline", out var b) ? (string?)b : null;
-            if (!string.IsNullOrWhiteSpace(outlineText)) outlineText = WithholdSubtextSections(outlineText!);
-            var outlineBlock = string.IsNullOrWhiteSpace(outlineText)
-                ? "\n\n(No NodeOutline recorded for this node.)"
-                : $"\n\nNode outline (hand-authored facts, arc, structural notes):\n{Clamp(outlineText!, 30000)}";
-            return (
-                $$"""
-                You are auditing one dimension of a story: OUTLINE AGREEMENT.
-                The prose and the node's hand-authored outline must tell the same story. Find
-                contradictions — a fact the outline states that the prose contradicts, or prose
-                that establishes something the outline doesn't know about and should.
-                No side is automatically authoritative (Outline ⇄ Book ⇄ Entities is a three-way
-                symbiosis; Trinity reconciliation is the canonical case-by-case arbiter). For each
-                contradiction, say which side you think is stale and WHY, citing evidence from
-                both — never apply a blanket "prose wins" or "outline wins" rule.{{outlineBlock}}
-
-                CHAPTER ATTRIBUTION — READ THIS BEFORE COMPARING ANYTHING.
-                Each beat below is labeled "[Beat #N | Chapter Title]". The beat NUMBER is a
-                global id: it is NOT chapter-local and does NOT tell you which chapter a beat is
-                in, nor its reading order. Only the chapter title in that header does.
-                The outline describes its scenes BY CHAPTER. So before reporting that a beat
-                contradicts an outline passage, confirm the beat's own chapter title matches the
-                chapter the outline passage is talking about. If the outline describes a scene as
-                happening in one chapter and the beat you are looking at is labeled a different
-                chapter, those are two DIFFERENT scenes — that is not a contradiction, and
-                reporting it as one is the single most common false positive on this dimension.
-                If a beat carries no chapter title, do not guess its chapter from its number.
-
-                AN ENTRY IS A DEFECT OR IT DOES NOT EXIST. Two kinds of non-finding keep getting
-                reported; never emit either one:
-                1. CONFIRMATIONS. If outline and prose agree, say nothing at all about it. Do not
-                   emit an entry whose evidence concludes "this is consistent" or "no fix needed".
-                2. NON-VERIFICATION. You are shown an excerpt, not the whole book. If checking an
-                   outline claim would need a beat you were not given, STAY SILENT about it. Do not
-                   emit an entry saying you "cannot verify", that a beat "is not visible in the
-                   beats provided", or asking to be given more beats. A gap in what you were shown
-                   is not a defect in the book, and reporting it as one is a false positive.
-                3. SUBTEXT DOCTRINE. An outline passage that is marked as never stated on the page
-                   ("never stated on page", "unstated but legible", "never confirmed by any
-                   character or by narration", "author ruling ... reveal mechanism", "the reader
-                   assembles it in hindsight") describes what a reader should be able to INFER,
-                   not what the prose must SAY. For such passages the prose complying means the
-                   prose stays silent. Never report "the prose does not explain X", "the prose
-                   treats X as ambiguous", or propose adding a line that states the mechanism —
-                   that would break the doctrine the outline itself lays down. Report against
-                   such a passage ONLY if the prose states the opposite outright, or if the
-                   outline says a specific clue must be on the page and it is not. (Found live
-                   2026-09-05: four consecutive sweep rounds filed the same §1c "the prose leaves
-                   the loop ambiguous" finding against a section whose first line is that the loop
-                   is never stated; each one was a false positive.)
-                Report a contradiction only when you can see BOTH sides of it in front of you: the
-                outline text, and the prose that actually conflicts with it.
-
-                Return ONLY a JSON array (no prose wrapper), one entry per real problem found:
-                [{"beat_number": <int or null>, "severity": "BLOCKER"|"MODERATE"|"MINOR", "evidence": "quote the outline claim and the contradicting prose, name the beat's chapter and the outline passage's chapter, and say which side appears stale", "fix": "one concrete sentence or null"}]
-                Return [] if outline and prose agree, or if you were not shown enough to judge.
-                Returning [] is a correct and common answer. Do not invent problems you cannot
-                cite specific outline text and prose for. When uncertain, err toward fewer findings.
-                """,
-                $"Beats:\n{ctx.Prose}");
-        }
-        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
-
-        static string Clamp(string s, int max) => s.Length <= max ? s : s[..max] + "\n[...elided...]";
-    }
-
-    // An outline section whose HEADING declares its content is never stated on the page is
-    // reveal doctrine — instructions to the writer about what the reader must be able to infer
-    // and what the prose must NOT say. Comparing prose against it can only ever produce
-    // "the prose does not explain X" findings, which are the doctrine working as designed. The
-    // prompt rule (SUBTEXT DOCTRINE) was not enough: after it shipped, BCODA rounds 2–3 still
-    // filed §1c findings from fresh angles each time (2026-09-05). Withholding the section is
-    // deterministic; the model sees a one-line stub so it knows the section exists.
-    static readonly System.Text.RegularExpressions.Regex SubtextHeading =
-        new(@"never stated|unstated but legible|reveal mechanism|never confirmed on( the)? page",
-            System.Text.RegularExpressions.RegexOptions.IgnoreCase);
-
-    internal static string WithholdSubtextSections(string outline)
-    {
-        var sb = new System.Text.StringBuilder();
-        int skipLevel = 0;
-        foreach (var raw in outline.Replace("\r", "").Split('\n'))
-        {
-            var m = System.Text.RegularExpressions.Regex.Match(raw, @"^(#{2,6})\s");
-            if (m.Success)
-            {
-                int lvl = m.Groups[1].Value.Length;
-                if (skipLevel > 0 && lvl <= skipLevel) skipLevel = 0;
-                if (skipLevel == 0 && SubtextHeading.IsMatch(raw))
-                {
-                    skipLevel = lvl;
-                    // Neutral stub. The earlier wording ("the prose is required NOT to state it")
-                    // read to the model as a rule to enforce, and it filed a MODERATE against BCODA's
-                    // finale contact beat (#5220) for *stating* the entity's nature — the mirror image
-                    // of the absence-findings this method exists to stop (2026-09-05). What the withheld
-                    // section says on the page is the author's call, not this dimension's.
-                    sb.Append(raw).Append("  [section withheld from this dimension — authorial subtext, not on-page claims; make no finding about its absence or its presence]").Append('\n');
-                    continue;
-                }
-            }
-            if (skipLevel == 0) sb.Append(raw).Append('\n'); // explicit LF: AppendLine would emit CRLF on Windows and re-introduce the \r stripped above
-        }
-        return sb.ToString();
     }
 
     /// <summary>

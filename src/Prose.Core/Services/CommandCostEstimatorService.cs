@@ -29,7 +29,6 @@ public class CommandCostEstimatorService
             ["--affect-check"]        = 0.05,
             ["--interpersonal-check"] = 0.05,
             ["--harvest-entities"]    = 0.08,
-            ["--generate-blueprint"]  = 0.04,
             ["--storyscope-audit"]    = 0.05,
             ["--audit-book"]          = 1.50, // FULL tier: one call/beat for SWAIN, DRAMATIC-Q, and
                                                // several other checks — scales with book length,
@@ -48,9 +47,6 @@ public class CommandCostEstimatorService
             ["--harvest-voice --free"]    = 0.0,
             ["--harvest-voice --single"]  = 0.06,
             ["--harvest-voice --bulk"]    = 2.00,
-            // --reconcile-book-entities: --all walks every book; a single --id/--slug run is one.
-            ["--reconcile-book-entities --single"] = 0.05,
-            ["--reconcile-book-entities --all"]    = 3.00,
             // RFC 0013 obligation instruments. --calibrate-obligations rescans every beat (one
             // Haiku call each) and then runs the resurfacing judge: measured $2.02 on the 96-beat,
             // 104k-word GCSH fixture 2026-09-15 against the $0.05 default (+3932%). The deep

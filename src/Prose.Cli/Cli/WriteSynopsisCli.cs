@@ -10,9 +10,8 @@ namespace Prose.Cli;
 /// prose --write-synopsis --slug &lt;nodeSlug&gt; [--json]
 ///
 /// Generates a beat-by-beat narrative synopsis of a node — a post-hoc description of the
-/// written prose (renamed from --write-outline 2026-08-29; "Outline" now names the per-book
-/// pre-writing plan formerly called the Node Bible). For a real logic check
-/// (causality/knowledge-states/timeline/plant-payoff/orphan-refs/outline-agreement),
+/// written prose. Printed only — nothing is stored. For a real logic check
+/// (causality/knowledge-states/timeline/plant-payoff/orphan-refs/inserted-beat drift),
 /// use prose --logic-sweep instead.
 /// </summary>
 public static class WriteSynopsisCli

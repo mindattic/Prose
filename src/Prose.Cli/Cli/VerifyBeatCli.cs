@@ -5,24 +5,14 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// prose --verify-beat --id &lt;beatId&gt; [--json]
-/// prose --verify-book --slug &lt;slug&gt; [--json]
+/// prose --verify-quote --id &lt;beatId&gt; --quote "..." [--claimed-by &lt;name&gt;] [--json]
+/// prose --verify-quotes-batch --json-file &lt;path&gt; [--json]
+/// prose --verification-staleness [--json]
 ///
-/// Beat Verification Engine (Track C — Truth-First Architecture).
-/// Checks whether generated prose fulfilled its declared BeatBlueprintDecision contract.
-///
-/// Mechanical checks (SQL/pattern):
-///   BannedPattern      — internal_understanding, epilogue, false-reassurance close
-///   EventType          — BeatModeLog.Mode vs declared EventType (approximate)
-///   SubplotCarrier     — subplot entities present when SubplotCarrier=true
-///   EscalationFloor    — EmotionalBeatScore.Depth vs declared floor (when scored)
-///   EscalationMonotonic — book-wide curve regression (--verify-book only)
-///
-/// Semantic checks (embedding similarity):
-///   DeclaredPurpose    — cosine similarity: declared purpose vs prose (requires embeddings)
-///
-/// Results are written to BeatVerification table (upsert — re-running refreshes).
-/// Severity: BLOCKER = blocks export gate | MODERATE | MINOR
+/// Mechanical quote grounding for audit claims (does the quoted text really appear in the beat it
+/// is attributed to?), plus the BeatVerification rule-version staleness report. The blueprint-
+/// contract checks behind --verify-beat / --verify-book were removed 2026-09-22 with the
+/// structural blueprint (author ruling: the book is the beats, drawing on entities).
 /// </summary>
 public static class VerifyBeatCli
 {
@@ -33,7 +23,6 @@ public static class VerifyBeatCli
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        bool isBook = args.Contains("--verify-book");
         bool isJson  = args.Contains("--json");
         bool isQuote = args.Contains("--verify-quote");
         bool isQuoteBatch = args.Contains("--verify-quotes-batch");
@@ -42,7 +31,7 @@ public static class VerifyBeatCli
         var svc = services.GetRequiredService<BeatVerificationService>();
 
         // ── Staleness report: which books have BeatVerification rows computed under
-        //    old check logic and need a --verify-book/--audit-book re-run ───────────
+        //    old check logic and need an --audit-book re-run ───────────
         if (isStaleness)
         {
             var stale = await svc.GetStaleBookSlugsAsync();
@@ -65,7 +54,7 @@ public static class VerifyBeatCli
             foreach (var b in stale)
                 Console.WriteLine($"  {b.StaleRows,4}/{b.TotalRows,-4} stale — {b.Title} ({b.Slug})");
             Console.WriteLine();
-            Console.WriteLine("Re-run: prose --audit-book --slug <slug>  (or --verify-book) for each.");
+            Console.WriteLine("Re-run: prose --audit-book --slug <slug> for each.");
             return 1;
         }
 
@@ -149,82 +138,9 @@ public static class VerifyBeatCli
             return failed.Count > 0 ? 1 : 0;
         }
 
-        // ── Book mode ─────────────────────────────────────────────────────────
-        if (isBook)
-        {
-            string? slug = null;
-            for (int i = 0; i < args.Length - 1; i++)
-                if (args[i] == "--slug") { slug = args[i + 1]; i++; }
-
-            if (string.IsNullOrEmpty(slug))
-            {
-                Console.Error.WriteLine("Usage: prose --verify-book --slug <slug>");
-                return 2;
-            }
-
-            Console.WriteLine($"[verify-book] Running verification for: {slug}");
-            var summary = await svc.VerifyBookAsync(slug);
-
-            if (isJson)
-            {
-                Console.WriteLine(JsonSerializer.Serialize(summary, JsonOpts));
-                return summary.Blockers > 0 ? 1 : 0;
-            }
-
-            Console.WriteLine($"Beats checked:  {summary.BeatsChecked}");
-            Console.WriteLine($"BLOCKER:        {summary.Blockers}");
-            Console.WriteLine($"MODERATE:       {summary.Moderates}");
-            Console.WriteLine($"MINOR:          {summary.Minors}");
-            Console.WriteLine($"Pass:           {summary.Passed}");
-            Console.WriteLine($"Partial:        {summary.Partials}");
-            Console.WriteLine($"Skipped:        {summary.Skipped}");
-            Console.WriteLine();
-
-            if (summary.Findings.Count == 0)
-            {
-                Console.WriteLine("No failures.");
-                return 0;
-            }
-
-            Console.WriteLine("Findings (Fail + Partial):");
-            foreach (var f in summary.Findings.OrderByDescending(f => f.Severity == "BLOCKER" ? 2 : f.Severity == "MODERATE" ? 1 : 0))
-            {
-                Console.WriteLine($"  [{f.Severity,-8}] {f.Result,-8} {f.CheckType,-22} Beat {f.BeatId}");
-                if (!string.IsNullOrEmpty(f.Evidence))
-                    Console.WriteLine($"            {f.Evidence}");
-            }
-
-            return summary.Blockers > 0 ? 1 : 0;
-        }
-
-        // ── Single beat mode ──────────────────────────────────────────────────
-        string? beatIdStr = null;
-        for (int i = 0; i < args.Length - 1; i++)
-            if (args[i] == "--id") { beatIdStr = args[i + 1]; i++; }
-
-        if (!Guid.TryParse(beatIdStr, out var beatId))
-        {
-            Console.Error.WriteLine("Usage: prose --verify-beat --id <beatId-guid>");
-            return 2;
-        }
-
-        Console.WriteLine($"[verify-beat] Running verification for beat: {beatId}");
-        var results = await svc.VerifyBeatAsync(beatId);
-
-        if (isJson)
-        {
-            Console.WriteLine(JsonSerializer.Serialize(results, JsonOpts));
-            return results.Any(r => r.Result == "Fail" && r.Severity == "BLOCKER") ? 1 : 0;
-        }
-
-        foreach (var r in results)
-        {
-            var icon = r.Result switch { "Pass" => "✓", "Fail" => "✗", "Partial" => "~", _ => "-" };
-            Console.WriteLine($"  {icon} [{r.Severity,-8}] {r.CheckType,-22} {r.Result}");
-            if (!string.IsNullOrEmpty(r.Evidence))
-                Console.WriteLine($"    {r.Evidence}");
-        }
-
-        return results.Any(r => r.Result == "Fail" && r.Severity == "BLOCKER") ? 1 : 0;
+        Console.Error.WriteLine("Usage: prose --verify-quote --id <beatId> --quote \"<text>\" [--claimed-by <name>] [--json]");
+        Console.Error.WriteLine("       prose --verify-quotes-batch --json-file <path> [--json]");
+        Console.Error.WriteLine("       prose --verification-staleness [--json]");
+        return 2;
     }
 }

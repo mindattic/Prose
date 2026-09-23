@@ -129,15 +129,12 @@
                     </div>
                 }
 
-                @* What this beat is FOR, above the prose it is about. Both claims carry their
-                   trust state, which the system already computed and nothing was showing. *@
+                @* What this beat is FOR, above the prose it is about, with its trust state. *@
                 <IntentStrip BookNodeId="@(book?.Id ?? Guid.Empty)"
                              BeatId="beat.Id"
                              BeatNumber="beat.Number"
                              Description="beat.Description"
                              DescriptionState="beat.DescriptionState"
-                             EventSummary="beat.EventSummary"
-                             EventSummaryState="beat.EventSummaryState"
                              OnChanged="ReloadBeatMetadataAsync" />
 
                 <ProseEditor @ref="editor"

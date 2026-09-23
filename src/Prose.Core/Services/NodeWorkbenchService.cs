@@ -218,8 +218,7 @@ public class NodeWorkbenchService
     /// should keep using GetOrderedBeatsAsync.
     ///
     /// Returns leaves in proper reading order (depth-first, SortKey-ordered at each level) —
-    /// callers that need "chapter position" for sorting (e.g. OutlineAdherenceService.
-    /// RecalibrateAsync's chapter-then-beat ordering) can rely on list position directly
+    /// callers that need "chapter position" for sorting can rely on list position directly
     /// instead of re-deriving it.
     /// </summary>
     public static async Task<List<Guid>> GetLeafDescendantIdsAsync(
@@ -527,9 +526,9 @@ public class NodeWorkbenchService
         // }
         //
         // Narrative obligation ledger (RFC 0013) — ran for every write reason except
-        // TagMaintenance/Plan, hash-gated on the collapsed text.
+        // TagMaintenance, hash-gated on the collapsed text.
         // if (!deferAnalysis && obligations != null && bookNodeId.HasValue
-        //     && reason is not (BeatWriteReason.TagMaintenance or BeatWriteReason.Plan))
+        //     && reason is not BeatWriteReason.TagMaintenance)
         // {
         //     var bnId = bookNodeId.Value;
         //     var actor = reason == BeatWriteReason.Generation ? ObligationActor.SystemExtract : ObligationActor.SystemRescan;
@@ -646,7 +645,7 @@ public class NodeWorkbenchService
             // RFC 0013: a batch edit registers its promises too (per beat — the ledger's running
             // open list is what each scan reads, so order matters and there is no union shortcut).
             if (obligations != null && thisBookNodeId.HasValue
-                && reason is not (BeatWriteReason.TagMaintenance or BeatWriteReason.Plan))
+                && reason is not BeatWriteReason.TagMaintenance)
             {
                 var bnId = thisBookNodeId.Value;
                 var stripped = BeatMarkup.StripEntityTags(trimmed);
@@ -713,7 +712,7 @@ public class NodeWorkbenchService
     /// Fires the same blast-radius + narrow logic-sweep hook as
     /// <see cref="UpdateBeatTextAsync"/> (added 2026-08-22, write-gate Phase 0) — this method
     /// previously had zero validation hooks, but <c>StructureRole</c>/<c>IsChapterStart</c>/
-    /// <c>Act</c> are exactly the fields a structural-blueprint or chapter-boundary check depends
+    /// <c>Act</c> are exactly the fields a chapter-boundary check depends
     /// on, and a metadata-only edit could silently invalidate them with nothing ever re-checking.</summary>
     public async Task UpdateBeatMetadataAsync(Guid beatId, BeatMetadataUpdate update, CancellationToken ct = default)
     {
@@ -727,9 +726,7 @@ public class NodeWorkbenchService
         // wiped that beat's Description, StructureRole, tone and pace, and — because the CLI and
         // the MCP tool both default isChapterStart to false — silently set IsChapterStart=false,
         // demoting a chapter-opening beat and breaking the book's chapter structure on what the
-        // caller thought was a title edit. The footgun was already known: Tools.Nodes.cs's
-        // eventSummary parameter documents these exact semantics for itself and was deliberately
-        // kept OUT of this record to dodge the clobber, rather than the record being fixed.
+        // caller thought was a title edit.
         static string? Blank(string s) => string.IsNullOrWhiteSpace(s) ? null : s.Trim();
 
         if (update.Title          is not null) beat.Title          = Blank(update.Title);
@@ -1010,6 +1007,9 @@ public class NodeWorkbenchService
             var sharedIds = await db.BeatNodes.Where(bn => beatIds.Contains(bn.BeatId) && bn.NodeId != id).Select(bn => bn.BeatId).Distinct().ToListAsync(ct);
             var exclusiveIds = beatIds.Except(sharedIds).ToList();
 
+            // PENDING DROP (author ruling 2026-09-22): nothing reads or writes blueprints any more;
+            // these orphan rows are cleared only so a node delete cannot trip their FKs before the
+            // drop migration removes the tables.
             var blueprintIds = await db.NodeStructuralBlueprints.Where(bp => bp.NodeId == id).Select(bp => bp.Id).ToListAsync(ct);
             if (blueprintIds.Count > 0)
             {
@@ -1026,6 +1026,9 @@ public class NodeWorkbenchService
                 log.LogInformation("DeleteNodeAsync: deleting {Count} exclusive beat(s) for {NodeId}", beats.Count, id);
             }
 
+            // PENDING DROP (author ruling 2026-09-22): BookSequentialReads is superseded by
+            // BeatReadReceipts and nothing else touches it; this delete stays only so a node delete
+            // cannot trip its FK before the drop migration removes the table.
             // BookSequentialReads.NodeId -> Nodes(Id) is a raw-SQL-created FK (no cascade, no
             // EF model at all — see create_book_sequential_reads_20260815.sql) and the column is
             // NOT NULL, so unlike Edge/PlantPayoff's beat-bound-clearing above there is no
@@ -1119,46 +1122,8 @@ public class NodeWorkbenchService
         // One contiguous block of Beat.Number values, allocated as we walk the tree.
         var nextNumber = new[] { (await db.Beats.MaxAsync(b => (int?)b.Number, ct) ?? 0) + 1 };
 
-        // Old→new beat id map, filled by the recursion, so the structural blueprint's per-beat
-        // tags can be carried over pointing at the copy's beats (2026-09-07).
-        var beatIdMap = new Dictionary<Guid, Guid>();
         var (rootId, rootSlug) = await CloneNodeSubtreeAsync(
-            db, sourceId, newTitle, source.ParentNodeId, siblingMaxSort + 100.0, nextNumber, code, status, isRoot: true, beatIdMap, ct);
-
-        // Structural blueprint (RFC 0012 §4, 2026-09-07): a duplicate used as a writer testbed
-        // must satisfy the locked-pipeline gate and get the same per-beat blueprint slice the
-        // source gets, or the comparison is not like-for-like. Copied as a fresh row; beat tags
-        // are remapped through beatIdMap and dropped (not mis-pointed) when a source beat had no
-        // copy (e.g. a disabled membership).
-        var srcBlueprint = await db.NodeStructuralBlueprints.IgnoreQueryFilters().AsNoTracking()
-            .Include(bp => bp.BeatTags)
-            .FirstOrDefaultAsync(bp => bp.NodeId == sourceId, ct);
-        if (srcBlueprint != null)
-        {
-            var bpId = Guid.NewGuid();
-            db.NodeStructuralBlueprints.Add(new NodeStructuralBlueprint
-            {
-                Id = bpId, NodeId = rootId, UniverseId = srcBlueprint.UniverseId,
-                HasSubplot = srcBlueprint.HasSubplot, SubplotSummary = srcBlueprint.SubplotSummary, SubplotTheme = srcBlueprint.SubplotTheme,
-                TemporalScheme = srcBlueprint.TemporalScheme, AnachronyPlan = srcBlueprint.AnachronyPlan,
-                ResolutionMode = srcBlueprint.ResolutionMode, ResolutionNote = srcBlueprint.ResolutionNote,
-                MoralPolarity = srcBlueprint.MoralPolarity, MoralPolarityNote = srcBlueprint.MoralPolarityNote,
-                EscalationCurveJson = srcBlueprint.EscalationCurveJson, EventTypePaletteJson = srcBlueprint.EventTypePaletteJson,
-                FormDevice = srcBlueprint.FormDevice, EndingStyle = srcBlueprint.EndingStyle, NoEpilogue = srcBlueprint.NoEpilogue, EndingNote = srcBlueprint.EndingNote,
-                IntertextualAnchorsJson = srcBlueprint.IntertextualAnchorsJson, Granularity = srcBlueprint.Granularity,
-                GeneratedBy = srcBlueprint.GeneratedBy, GeneratedAt = srcBlueprint.GeneratedAt, UpdatedAt = DateTime.UtcNow,
-            });
-            foreach (var tag in srcBlueprint.BeatTags)
-            {
-                if (!beatIdMap.TryGetValue(tag.BeatId, out var newBeatId)) continue;
-                db.Set<NodeStructuralBlueprintBeatTag>().Add(new NodeStructuralBlueprintBeatTag
-                {
-                    Id = Guid.NewGuid(), BlueprintId = bpId, BeatId = newBeatId,
-                    TagType = tag.TagType, Note = tag.Note,
-                    Confirmed = tag.Confirmed, ConfirmedAt = tag.ConfirmedAt, ConfirmedBySessionId = tag.ConfirmedBySessionId,
-                });
-            }
-        }
+            db, sourceId, newTitle, source.ParentNodeId, siblingMaxSort + 100.0, nextNumber, code, status, isRoot: true, ct);
 
         await db.SaveChangesAsync(ct);
         await tx.CommitAsync(ct);
@@ -1171,7 +1136,7 @@ public class NodeWorkbenchService
     private async Task<(Guid Id, string Slug)> CloneNodeSubtreeAsync(
         ProseDbContext db, Guid srcNodeId, string? titleOverride,
         Guid? newParentId, double sortKey, int[] nextNumber, string? rootNodeCode, string status, bool isRoot,
-        Dictionary<Guid, Guid> beatIdMap, CancellationToken ct)
+        CancellationToken ct)
     {
         // IgnoreQueryFilters(): explicit srcNodeId, not an ambient scope (same bug class found
         // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
@@ -1198,13 +1163,8 @@ public class NodeWorkbenchService
         clone.TtsEngine       = src.TtsEngine;
         clone.ParentNodeId    = newParentId;
         clone.SortKey         = sortKey;
-        // The plan, not just the prose (2026-09-07, RFC 0012 §4): a duplicate without the
-        // outline fails the locked-pipeline gate and loses the DCM node tier; without the
-        // narrative mode and default location the writer's gates evaluate differently from the
-        // source. These were silently dropped before, which made any duplicate useless as a
-        // like-for-like testbed.
-        clone.NodeOutline            = src.NodeOutline;
-        clone.NodeOutlineGeneratedAt = src.NodeOutlineGeneratedAt;
+        // Without the narrative mode and default location the writer's gates evaluate differently
+        // from the source, which made any duplicate useless as a like-for-like testbed.
         clone.NarrativeMode          = src.NarrativeMode;
         clone.DefaultLocation        = src.DefaultLocation;
         clone.PreviousNodeId         = src.PreviousNodeId;
@@ -1240,13 +1200,11 @@ public class NodeWorkbenchService
                 PaceHint       = s.PaceHint,
                 GapAfterMs     = s.GapAfterMs,
                 VoiceId        = s.VoiceId,
-                // Authorial-intent and derived-summary fields (2026-09-07): the brief a writer
-                // testbed reads comes from Description/Subtext/TargetWords; the event summary and
-                // place are hash-stamped derivatives that stay valid because TextHash is copied.
+                // Authorial-intent fields (2026-09-07): the brief a writer testbed reads comes from
+                // Description/Subtext/TargetWords; the place is a hash-stamped derivative that stays
+                // valid because TextHash is copied.
                 Subtext                = s.Subtext,
                 DescriptionHash        = s.DescriptionHash,
-                EventSummary           = s.EventSummary,
-                EventSummaryHash       = s.EventSummaryHash,
                 PlaceName              = s.PlaceName,
                 PlaceEntityId          = s.PlaceEntityId,
                 PlaceExtractedFromHash = s.PlaceExtractedFromHash,
@@ -1259,7 +1217,6 @@ public class NodeWorkbenchService
             };
             db.Beats.Add(nb);
             db.BeatNodes.Add(new BeatNode { NodeId = newId, BeatId = nb.Id, SortKey = row.SortKey });
-            beatIdMap[s.Id] = nb.Id;
         }
 
         // Recurse into child nodes, preserving their order.
@@ -1271,7 +1228,7 @@ public class NodeWorkbenchService
             .Select(s => new { s.Id, s.SortKey })
             .ToListAsync(ct);
         foreach (var child in children)
-            await CloneNodeSubtreeAsync(db, child.Id, null, newId, child.SortKey, nextNumber, rootNodeCode, status, isRoot: false, beatIdMap, ct);
+            await CloneNodeSubtreeAsync(db, child.Id, null, newId, child.SortKey, nextNumber, rootNodeCode, status, isRoot: false, ct);
 
         return (newId, slug);
     }

@@ -173,7 +173,6 @@ public static class ReimportNodeCli
             BeatCount = oldLinks.Count,
             WordCount = oldWordCount,
             Description = node.Description,
-            NodeOutline = node.NodeOutline,
             Summary = node.Summary,
             Seed = node.Seed,
             Subtitle = node.Subtitle,

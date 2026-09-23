@@ -184,28 +184,4 @@ public class BeatDuelServiceTests
         var cached = await db.BeatDuelVerdicts.CountAsync();
         Assert.That(cached, Is.EqualTo(1), "a genuine (non-error) verdict should be cached normally");
     }
-
-    // ── Blueprint JSON extraction (multi-fragment / truncated responses) ──
-
-    [Test]
-    public void ExtractBalancedObjects_FindsMultipleAndSkipsTruncated()
-    {
-        var text = """
-            Here's my reasoning: {"step": 0} first.
-            {"subplot": {"summary": "the {real} payload"}, "temporal": {"scheme": "linear"}}
-            And a truncated trailer: {"oops": [1, 2
-            """;
-        var objects = StructuralBlueprintService.ExtractBalancedObjects(text);
-        Assert.That(objects, Has.Count.EqualTo(2));
-        Assert.That(objects[1], Does.Contain("subplot"));
-    }
-
-    [Test]
-    public void ExtractBalancedObjects_IgnoresBracesInsideStrings()
-    {
-        var text = """{"note": "a } inside a string", "n": 1}""";
-        var objects = StructuralBlueprintService.ExtractBalancedObjects(text);
-        Assert.That(objects, Has.Count.EqualTo(1));
-        Assert.That(objects[0], Does.EndWith("1}"));
-    }
 }

@@ -27,10 +27,8 @@ namespace Prose.Cli;
 ///   --local-url &lt;url&gt;         Override the local endpoint URL for this run only (implies --local).
 ///   --local-key &lt;key&gt;         Override the local API/bearer key for this run only.
 ///   --local-model &lt;tag&gt;       Override the local model tag for this run only.
-///   --allow-unblueprinted     Override the locked-pipeline gate (no outline + no structural
-///                             blueprint on this book) — see ProseWriterRouter.WriteAsync.
 ///   --lean                    RFC 0012 §3.2: drop the tier-E opinion blocks (finding loop-backs,
-///                             story-science, blueprint slice, offscreen chart, style anchors,
+///                             story-science, StoryScope loop-back, offscreen chart, style anchors,
 ///                             tension, collision). The A/B arm.
 ///   --dry-run [--out <file>]  Write nothing to the beat and run no post-write extraction; the
 ///                             draft goes to --out (or stdout). A gate refusal writes
@@ -48,7 +46,6 @@ public static class ExpandBeatCli
         string? localUrl = null, localKey = null, localModel = null;
         bool force = args.Contains("--force");
         bool useLocal = args.Contains("--local");
-        bool allowUnblueprinted = args.Contains("--allow-unblueprinted");
         // RFC 0012 §4 A/B controls: --lean drops the tier-E opinion blocks; --dry-run writes
         // nothing to the beat (and runs no post-write extraction) — the draft goes to --out.
         bool lean = args.Contains("--lean");
@@ -208,7 +205,7 @@ public static class ExpandBeatCli
                     LeanContext       = lean,
                     SkipPostWrite     = dryRun,
                 };
-                var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count, allowUnblueprinted: allowUnblueprinted);
+                var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
                 if (string.IsNullOrWhiteSpace(prose))
                 {
                     Console.WriteLine("LLM returned empty — skipped.");

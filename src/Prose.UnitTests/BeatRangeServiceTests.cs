@@ -10,8 +10,7 @@ namespace Prose.UnitTests;
 /// Unit tests for <see cref="BeatRangeService"/> (2026-09-02) — the beat-scoped Edge validity
 /// mechanism that replaces the dead DateTime StoryValidFrom/StoryValidUntil path (see that
 /// service's own doc comment for the investigation). Covers the tri-state contract: real
-/// bool for a same-book, non-anachrony window; null (indeterminate) for a cross-book bound or a
-/// flagged anachrony beat.
+/// bool for a same-book window; null (indeterminate) for a cross-book bound.
 /// </summary>
 [TestFixture]
 public class BeatRangeServiceTests
@@ -113,57 +112,6 @@ public class BeatRangeServiceTests
 
         Assert.That(result.InRange, Is.Null);
         Assert.That(result.Reason, Does.Contain("different book"));
-    }
-
-    [Test]
-    public async Task FlaggedAnachronyBeat_IsIndeterminate()
-    {
-        var (bookId, beats) = await BuildBookAsync(dbFactory, 10);
-
-        await using (var db = await dbFactory.CreateDbContextAsync())
-        {
-            var blueprint = new NodeStructuralBlueprint { Id = Guid.NewGuid(), NodeId = bookId, UniverseId = Guid.NewGuid() };
-            db.NodeStructuralBlueprints.Add(blueprint);
-            db.BeatBlueprintDecisions.Add(new BeatBlueprintDecision
-            {
-                Id = Guid.NewGuid(),
-                BeatId = beats[5].Id,
-                BlueprintId = blueprint.Id,
-                AnachronyType = "Flashback",
-            });
-            await db.SaveChangesAsync();
-        }
-
-        var result = await svc.CheckBeatInRangeAsync(beats[5].Id, beats[3].Id, beats[7].Id);
-
-        Assert.That(result.InRange, Is.Null);
-        Assert.That(result.Reason, Does.Contain("anachrony"));
-    }
-
-    [Test]
-    public async Task LinearAnachronyType_IsTreatedAsOrdinary()
-    {
-        // AnachronyType == "Linear" is the explicit non-anachrony value (BeatBlueprintDecision's
-        // own doc comment: "Linear | Flashback | FlashForward | Parallel") — must not trip the
-        // indeterminate path the way an actual flagged anachrony does.
-        var (bookId, beats) = await BuildBookAsync(dbFactory, 10);
-
-        await using (var db = await dbFactory.CreateDbContextAsync())
-        {
-            var blueprint = new NodeStructuralBlueprint { Id = Guid.NewGuid(), NodeId = bookId, UniverseId = Guid.NewGuid() };
-            db.NodeStructuralBlueprints.Add(blueprint);
-            db.BeatBlueprintDecisions.Add(new BeatBlueprintDecision
-            {
-                Id = Guid.NewGuid(),
-                BeatId = beats[5].Id,
-                BlueprintId = blueprint.Id,
-                AnachronyType = "Linear",
-            });
-            await db.SaveChangesAsync();
-        }
-
-        var result = await svc.CheckBeatInRangeAsync(beats[5].Id, beats[3].Id, beats[7].Id);
-        Assert.That(result.InRange, Is.True);
     }
 
     // ── SQLite in-memory factory (same pattern as WorldStateAtBeatServiceTests) ──────

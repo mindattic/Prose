@@ -66,7 +66,7 @@ public static class ArchiveBookCli
         else
         {
             // NodeRefResolver accepts slug, NodeCode, GUID, or unique GUID prefix — the same
-            // resolution --get-book-outline/--set-book-outline use. 2026-09-04: this was
+            // resolution every other node-targeting command uses. 2026-09-04: this was
             // slug-or-GUID only, so `--archive-book --slug bcoda` (a NodeCode, the identifier
             // used everywhere else) failed with "Target node not found" — a bad failure for the
             // one command CLAUDE.md makes mandatory before every prose edit.

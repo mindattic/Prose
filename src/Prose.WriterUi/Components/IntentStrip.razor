@@ -1,19 +1,14 @@
-@* What this beat is FOR, and whether the record still matches the prose.
+@* What this beat is FOR, and whether that statement still matches the prose.
 
-   Two claims live on every beat and neither had a window. Description is the author's stated
-   intent — why this beat exists. EventSummary is what happens in it. Both are stamped with the
-   hash of the prose they were written against, so the system already knows when one has gone
-   stale; nothing was showing it.
+   Description is the author's stated intent — why this beat exists, and the goal a beat is
+   written FROM. It is stamped with the hash of the prose it was written against, so the system
+   knows when it has gone stale. (The stored per-beat event summary that used to sit beside it was
+   removed 2026-09-22: the beats are the story, and nothing stores a retelling of them.)
 
-   The asymmetry below is the whole point, and it is a correctness property:
-
-     EventSummary can be regenerated freely. It is a derivable claim about what happens, and
-     re-deriving it from the prose costs nothing but a call.
-
-     Description must NEVER be regenerated silently. Intent is what the prose is checked AGAINST.
-     Backfilling it from the prose makes the check tautological — the beat would then agree with
-     its intent by construction, forever, and the one instrument that can say "this beat is not
-     doing what it was for" would be reporting on itself. *@
+   Description must NEVER be regenerated silently. Intent is what the prose is checked AGAINST.
+   Backfilling it from the prose makes the check tautological — the beat would then agree with
+   its intent by construction, forever, and the one instrument that can say "this beat is not
+   doing what it was for" would be reporting on itself. *@
 
 @inject WriterService Writer
 
@@ -40,18 +35,6 @@
         }
     </div>
 
-    <div class="intent-row">
-        <span class="intent-label">Event</span>
-        <span class="intent-value @(string.IsNullOrWhiteSpace(EventSummary) ? "absent" : "")">
-            @(string.IsNullOrWhiteSpace(EventSummary) ? "Not recorded." : EventSummary)
-        </span>
-        <TrustBadge State="EventSummaryState" />
-        <button class="mini" @onclick="RegenerateEventAsync" disabled="@busy"
-                title="Re-derive what happens in this beat from its prose">
-            @(busy ? "…" : "Refresh")
-        </button>
-    </div>
-
     @if (note is not null)
     {
         <div class="intent-note muted" role="status">@note</div>
@@ -65,8 +48,6 @@
 
     [Parameter] public string? Description { get; set; }
     [Parameter] public string? DescriptionState { get; set; }
-    [Parameter] public string? EventSummary { get; set; }
-    [Parameter] public string? EventSummaryState { get; set; }
 
     /// <summary>Something on the beat changed, so the shell should reload it.</summary>
     [Parameter] public EventCallback OnChanged { get; set; }
@@ -94,20 +75,6 @@
             await OnChanged.InvokeAsync();
         }
         catch (Exception ex) { note = $"Could not save that: {ex.Message}"; }
-        finally { busy = false; }
-    }
-
-    private async Task RegenerateEventAsync()
-    {
-        busy = true;
-        note = "Re-deriving…";
-        try
-        {
-            var written = await Writer.RefreshEventSummaryAsync(BookNodeId, BeatNumber);
-            note = written is { Length: > 0 } ? null : "Nothing came back for that beat.";
-            await OnChanged.InvokeAsync();
-        }
-        catch (Exception ex) { note = $"Could not re-derive that: {ex.Message}"; }
         finally { busy = false; }
     }
 }

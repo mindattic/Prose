@@ -88,7 +88,7 @@ public class ObligationTools(
         }, JsonOpts);
     }
 
-    [McpServerTool, Description("Declare an obligation yourself (provenance authored, locked): a promise the outline or you intend the book to keep. Optionally anchor it to a beat with the verbatim quote that makes the promise — refused if the quote is not in that beat's text. due: 'chapter:7', 'beats:12', or 'book-end' (default).")]
+    [McpServerTool, Description("Declare an obligation yourself (provenance authored, locked): a promise you intend the book to keep. Optionally anchor it to a beat with the verbatim quote that makes the promise — refused if the quote is not in that beat's text. due: 'chapter:7', 'beats:12', or 'book-end' (default).")]
     public Task<string> open_obligation(
         [Description("Book node id/slug/code.")] string nodeIdOrSlug,
         [Description("promise | plant | question | wound | foreshadow | introduced-referent | unexplained-presence")] string kind,

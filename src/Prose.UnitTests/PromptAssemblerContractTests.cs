@@ -119,11 +119,12 @@ public class PromptAssemblerContractTests
     {
         var p = PromptAssembler.Assemble(
             "universe", Window("prior"), EmptyFacts, "Kyle", "The Narrows", "goal", Brief(),
-            voiceAnchorBlock: "voice", outlineSpineBlock: "spine");
+            voiceAnchorBlock: "voice");
 
         // Being able to SEE that the instruction was 0.5% of the prompt is what made the defect
         // findable at all; it must stay visible without adding log lines and redeploying.
-        Assert.That(p.BlockLengths.Keys, Is.SupersetOf(new[] { "brief", "facts", "window", "voice", "spine", "closing" }));
+        Assert.That(p.BlockLengths.Keys, Is.SupersetOf(new[] { "brief", "facts", "obligations", "scene", "window", "voice", "closing" }));
+        Assert.That(p.BlockLengths.ContainsKey("spine"), Is.False, "the outline slice was removed 2026-09-22; nothing may re-add it");
         Assert.That(p.BlockLengths["brief"], Is.GreaterThan(0));
     }
 

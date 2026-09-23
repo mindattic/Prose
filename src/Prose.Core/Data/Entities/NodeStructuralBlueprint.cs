@@ -16,6 +16,7 @@ namespace Prose.Core.Data.Entities;
 /// One row per book node. Sidecar table by design — never columns on the
 /// system-versioned Nodes temporal table.
 /// </summary>
+// PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
 public class NodeStructuralBlueprint
 {
     public Guid Id         { get; set; } = Guid.NewGuid();
@@ -116,6 +117,7 @@ public class NodeStructuralBlueprint
 /// where the anachrony cut lands, which beat touches an intertextual anchor, which
 /// beat is the escalation peak. Mirrors PlantPayoff's beat-FK pattern.
 /// </summary>
+// PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
 public class NodeStructuralBlueprintBeatTag
 {
     public Guid Id          { get; set; } = Guid.NewGuid();

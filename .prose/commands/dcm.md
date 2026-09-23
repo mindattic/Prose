@@ -2,11 +2,11 @@
 
 Usage: `/dcm [what to log, or omit to log whatever was just discussed/discovered]`
 
-**The point of this command**: this project has hundreds of ephemeral `.md` files under `docs/`
-and `docs/nodes/` that are all GENERATED MIRRORS, gitignored, and regenerated on demand (SS-A45).
-They are not memory — they are a cache. The actual persistent memory is the SQL database:
-`CanonDocumentSections` (world/craft/universe facts), `Nodes.NodeOutline` (per-book facts),
-character/entity records (`Speech*`/`Psychology*` fields, wounds, continuity claims). **When you
+**The point of this command**: this project has many ephemeral `.md` files under `docs/` that are
+GENERATED MIRRORS, regenerated on demand (SS-A45). They are not memory — they are a cache. The
+actual persistent memory is the SQL database: `CanonDocumentSections` (world/craft/universe facts),
+the beats themselves (a book IS its beats — there is no per-book outline or bible, author ruling
+2026-09-22), character/entity records (`Speech*`/`Psychology*` fields, wounds, continuity claims). **When you
 learn or decide something worth remembering across sessions, write it to the DB row that owns it,
 then regenerate the mirror — never the reverse, and never leave it living only in a hand-edited
 `.md` file, a scratchpad note, or a client's own private memory system.** A client's own memory
@@ -18,7 +18,8 @@ for project canon — canon belongs in this project's own DB so the prose engine
 | The fact is about... | Lives in | Write via |
 |---|---|---|
 | Engine invariant, GLMZ world fact, Fantasy/Entos world fact | `CanonDocuments`/`CanonDocumentSections` | `set_canon_section` (MCP), then `prose --generate-canon-md --type <Type>` |
-| One book's arc, characters, voice register, structural notes, blueprint, Event Sequence, or a **structural/state discrepancy note** (like "this book's chapter split regressed in the live DB") | `Nodes.NodeOutline` (that book's row) | `set_book_outline` (MCP, preferred, full-body write) — or CLI `prose --set-book-outline --slug <slug> --file <path>` (also a FULL OVERWRITE — read the current outline first, append/edit, write the whole thing back). Always follow with `prose --generate-node-doc --slug <slug> --universe <u>` + `prose --sync-markdown` so the mirror and `MarkdownFiles` (what DocContextService actually injects) pick it up |
+| Something that happens in one book | The beats — the prose IS the record; there is no outline, bible, blueprint or stored summary to log it in | Nothing to log. If the prose should change, that is a hand edit of the beat (`prose --edit-beat` / `prose --splice-beats`), not a /dcm entry. A planned beat's intent goes in its Description (`update_beat_metadata`) |
+| A **structural/state note about a book** (like "this book's chapter split regressed in the live DB") | `BeatReadNotes` | `prose --read-note add --node <slug> [--beat N] --kind note --text "..." --read-by <name>` |
 | A character's voice, psychology, wounds, relationships | That character's `Entity`/`Character` record | `create_character` (MCP, pass the id + the changed field) — never a `docs/registers/*.md` file, those are retired (SS-A46) |
 | A craft principle (universal prose rule, or a universe-specific craft addition) | `CanonDocumentSections` row inside the CraftGuide/GLMZ-craft/SCRY-craft document | Same as row 1 — **do NOT hand-edit `docs/CRAFT.md`/`docs/GLMZ.md`/`docs/SCRY.md` directly**; those files carry a "GENERATED — do not hand-edit" banner (verify DB-backed generation is still true via `Program.cs`'s `--generate-canon-md` handler before trusting either source blindly) |
 
@@ -42,7 +43,6 @@ A DB write with no regeneration means the DCM injection pipeline (`DocContextSer
 the OLD content via `MarkdownFiles` until the next sync. Always finish with the narrowest
 regeneration command that covers what you changed:
 - `prose --generate-canon-md --type <Type>` (not `--all` unless you touched more than one canon doc)
-- `prose --generate-node-doc --slug <slug> --universe <glmz|scry|nonfiction|...>`
 - `prose --sync-markdown` (pushes the regenerated `.md` into `MarkdownFiles`, which is what
   `DocContextService.PrepareForNodeAsync` actually reads at generation time)
 
@@ -50,7 +50,7 @@ regeneration command that covers what you changed:
 
 State: which table/row changed, what the new content says (or a summary if it's long), which
 regeneration commands ran, and confirmation the mirror file now reflects it (e.g. grep the
-regenerated `docs/nodes/<CODE>.md` for the new content, or check `SyncedAt`/row count from
+regenerated canon `.md` for the new content, or check `SyncedAt`/row count from
 `--sync-markdown`'s own output). Do not just say "logged it" — show the verification.
 
 ## Argument handling

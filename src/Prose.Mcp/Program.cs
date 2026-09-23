@@ -9,7 +9,7 @@ using Prose.Core.Services;
 using Prose.Mcp;
 
 // ── Prose MCP server ─────────────────────────────────────────────────
-// Exposes the canon (characters, places, factions, books, outlines, motifs,
+// Exposes the canon (characters, places, factions, books, motifs,
 // literary rules) plus the semantic index as Model Context Protocol tools so
 // Claude (Desktop / Code / API clients) can call into the world without the
 // caller copy-pasting JSON blobs into the prompt.

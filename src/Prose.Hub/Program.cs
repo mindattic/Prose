@@ -297,14 +297,6 @@ app.MapRazorComponents<Prose.Hub.Components.App>().AddInteractiveServerRenderMod
 app.MapGet("/writer", () =>
     new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Writer>());
 
-// The spine, at /spine. Same explicit-endpoint reasoning as /writer above. This is the view that
-// answers "can the order of events be summed up simply?" — the book's outline, editable, beside
-// every beat in manuscript order with the ledger rows each one declared. Added 2026-09-18 after a
-// book reconstructed from database history turned out to narrate the same job in two separate
-// chapters, which is not findable by reading one chapter at a time.
-app.MapGet("/spine", () =>
-    new Microsoft.AspNetCore.Http.HttpResults.RazorComponentResult<Prose.Hub.Components.Spine>());
-
 // Read Mode, at /read. Same explicit-endpoint reasoning as /writer above. The book straight
 // through, read or listened to, with NO discussion panel and no analysis affordance of any kind —
 // deadness is a property of the sequence, and anything that invites analysis destroys the only

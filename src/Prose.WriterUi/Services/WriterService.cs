@@ -26,7 +26,6 @@ public sealed class WriterService(
     ManuscriptExportService manuscript,
     TokenLedger ledger,
     EditSessionService editSessions,
-    BeatEventSummaryService eventSummaries,
     Prose.Core.Services.Discussion.RamificationService ramifications,
     Prose.Core.Services.Contradiction.NarrativeContradictionChecker contradictions,
     FindingsService findings,
@@ -41,13 +40,11 @@ public sealed class WriterService(
     /// <param name="Label">Pre-rendered as <c>#0122 - Chapter 3: Teeth</c>.</param>
     /// <param name="ChapterTitle">So the list can GROUP by chapter instead of repeating the
     /// chapter's name on all thirty of its rows.</param>
-    /// <param name="Summary">The beat's recorded event line, or its opening words when there is
-    /// none. This is what makes the list navigable at all: five hundred rows reading
-    /// <c>#0122 - Chapter 3: Teeth</c>, <c>#0123 - Chapter 3: Teeth</c> carry one bit of
-    /// information between them, which is that the book is long.</param>
-    /// <param name="SummaryIsProse">True when <paramref name="Summary"/> is the beat's own opening
-    /// words rather than a recorded summary. Shown differently: a first line is evidence, an event
-    /// summary is a claim, and 31 of BCODA's described the wrong beat.</param>
+    /// <param name="Summary">The beat's own opening words. This is what makes the list navigable
+    /// at all: five hundred rows reading <c>#0122 - Chapter 3: Teeth</c>,
+    /// <c>#0123 - Chapter 3: Teeth</c> carry one bit of information between them, which is that
+    /// the book is long. Always the prose itself — there is no stored summary of a beat (author
+    /// ruling 2026-09-22), and a first line cannot be wrong about what it is.</param>
     /// <param name="Words">Length at a glance — the thing that makes an oversized beat findable.</param>
     public sealed record SpineItem(
         Guid BeatId,
@@ -56,7 +53,6 @@ public sealed class WriterService(
         string Label,
         string ChapterTitle,
         string Summary,
-        bool SummaryIsProse,
         int Words,
         bool Empty);
 
@@ -65,12 +61,10 @@ public sealed class WriterService(
     /// <param name="Description">The author's stated intent: why this beat exists.</param>
     /// <param name="DescriptionState">Whether that intent was written against the prose as it
     /// stands — "current", "stale" or "unverified". Computed by the beat itself.</param>
-    /// <param name="EventSummary">What happens in the beat.</param>
     public sealed record OpenBeat(
         Guid Id, Guid ChapterNodeId, string Text, DateTime UpdatedAt, int Version,
         int Number = 0,
-        string? Description = null, string? DescriptionState = null,
-        string? EventSummary = null, string? EventSummaryState = null);
+        string? Description = null, string? DescriptionState = null);
 
     /// <summary>What the entity scanner did to the text on the way in. The author sees this after
     /// every save, because the save rewrites their markup and hiding that would make the editor a
@@ -120,19 +114,12 @@ public sealed class WriterService(
             var chapter = chapterTitles.GetValueOrDefault(ordered[i].NodeId, "(unfiled)") ?? "(unfiled)";
             var plain = ProseInline.StripFormatting(BeatMarkup.StripEntityTags(beat.Text ?? ""));
 
-            // The recorded event line when there is one, the beat's own opening words otherwise.
-            // Which of the two is showing is carried separately rather than blurred: an event
-            // summary is a claim about the beat and 31 of BCODA's described the wrong one, while
-            // a first line cannot be wrong about what it is.
-            var recorded = !string.IsNullOrWhiteSpace(beat.EventSummary);
-            var summary = recorded ? beat.EventSummary!.Trim() : FirstLine(plain);
 
             items.Add(new SpineItem(
                 beat.Id, ordered[i].NodeId, i + 1,
                 $"#{i + 1:D4} - {chapter}",
                 chapter,
-                Shorten(summary, 110),
-                SummaryIsProse: !recorded,
+                Shorten(FirstLine(plain), 110),
                 Words: plain.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries).Length,
                 Empty: plain.Trim().Length == 0));
         }
@@ -161,8 +148,7 @@ public sealed class WriterService(
     /// what the prose is checked AGAINST: back-filling it from the beat would make the check
     /// tautological — the beat would agree with its intent by construction, forever — and the one
     /// instrument that can say "this beat is not doing what it was for" would be reporting on
-    /// itself. EventSummary has no such problem and is re-derived freely; see
-    /// <see cref="RefreshEventSummaryAsync"/>.</para>
+    /// itself.</para>
     ///
     /// <para>The hash is stamped with it, so the trust state reads "current" until the prose moves
     /// again. Writing the text without the hash is what makes a summary look verified when it was
@@ -180,41 +166,6 @@ public sealed class WriterService(
         beat.Description = string.IsNullOrWhiteSpace(intent) ? null : intent.Trim();
         beat.DescriptionHash = beat.Description is null ? null : Beat.ComputeHash(beat.Text ?? "");
         await db.SaveChangesAsync(ct);
-    }
-
-    /// <summary>
-    /// Re-derive what happens in one beat.
-    /// </summary>
-    /// <remarks>
-    /// Freely, and on demand. An event summary is a claim about the prose that the prose can
-    /// settle, so regenerating it costs nothing but a call and cannot make any check circular —
-    /// which is exactly the opposite of the intent above.
-    /// </remarks>
-    /// <returns>The summary as written, or null when nothing came back.</returns>
-    public async Task<string?> RefreshEventSummaryAsync(
-        Guid bookNodeId, int beatNumber, CancellationToken ct = default)
-    {
-        await ScopeToBookAsync(bookNodeId, ct);
-
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var slug = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.Id == bookNodeId).Select(n => n.Slug).FirstOrDefaultAsync(ct);
-        if (string.IsNullOrEmpty(slug)) return null;
-
-        // force: the author pressed a button, which is a request to redo it even if the service
-        // would otherwise skip a beat it considers already summarised.
-        var report = await eventSummaries.GenerateAsync(
-            slug, onlyNumbers: [beatNumber], force: true, ct: ct);
-        if (report.Generated == 0) return null;
-
-        // Read back rather than trusting the report, which counts rows and does not carry them.
-        // A caller told "generated 1" that then shows the old summary is worse than one told
-        // nothing happened.
-        await using var after = await dbFactory.CreateDbContextAsync(ct);
-        return await after.Beats.AsNoTracking()
-            .Where(b => b.Number == beatNumber)
-            .Select(b => b.EventSummary)
-            .FirstOrDefaultAsync(ct);
     }
 
     // ── The save gate ──────────────────────────────────────────────────────
@@ -416,8 +367,7 @@ public sealed class WriterService(
         return new OpenBeat(
             beat.Id, chapterNodeId, beat.Text ?? "", beat.UpdatedAt, beat.Version,
             beat.Number,
-            beat.Description, beat.DescriptionState,
-            beat.EventSummary, beat.EventSummaryState);
+            beat.Description, beat.DescriptionState);
     }
 
     /// <summary>

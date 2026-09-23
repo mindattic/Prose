@@ -63,8 +63,10 @@ For a **node** (`"source": "node"`, a book or chapter): `name`, `kind`, `univers
 extension to `ShowCli.cs` rather than a workaround here): `wounds` (`WoundLedger`), `speech`/
 `voice` (a character's `Speech*`/`Psychology*` columns), `timeline`
 (`CharacterTimeline`/`CharacterTimelineBodyChanges`), and node-specific aspects beyond chapter
-count/score (POV/protagonist, full outline). If the user asks for one of these, say plainly that
-this specific lens isn't wired up yet rather than improvising a raw query.
+count/score (POV/protagonist). If the user asks for one of these, say plainly that this specific
+lens isn't wired up yet rather than improvising a raw query. A book has no outline to show: it was
+removed 2026-09-22 (a book is its beats, drawing on entities), so a request for a book's "outline"
+or "bible" is answered with its chapters and beats (`read_beats` with `groupByChapter: true`).
 
 ## 4. Render as an Artifact (or equivalent rendered page)
 

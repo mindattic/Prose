@@ -6,13 +6,13 @@ using System.Collections.Concurrent;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// Manages the separation between universal facts (world mechanics, vocabulary, social structure
-/// that apply to EVERY book in this universe) and book-specific facts (<c>Node.NodeOutline</c>).
+/// Manages universal facts: world mechanics, vocabulary, and social structure that apply to EVERY
+/// book in this universe.
 ///
 /// Universal facts live in <c>Universe.WorldFacts</c> and are injected into every beat-generation
 /// prompt regardless of which book is being written — so a fact like "Pulse pods are individual
 /// spheres with a neuretic train hallucination" is always present without requiring each book
-/// bible to repeat it. Book facts (<c>Node.NodeOutline</c>) stay book-scoped.
+/// to repeat it.
 ///
 /// The human-editable source is <c>docs/universes/&lt;slug&gt;.md</c>; <c>prose --sync-markdown</c>
 /// syncs it into <c>Universe.WorldFacts</c>.
@@ -54,23 +54,6 @@ public class UniversalFactsService
         var value = facts ?? "";
         worldFactsCache[id] = value;
         return value;
-    }
-
-    /// <summary>
-    /// Returns the book-specific bible text for <paramref name="nodeId"/>, or empty string
-    /// if the node has no bible yet. Book facts are distinct from universal facts — they
-    /// cover only the arc, characters, and rules for that specific book node.
-    /// </summary>
-    public async Task<string> GetBookOutlineAsync(Guid nodeId, CancellationToken ct = default)
-    {
-        if (nodeId == Guid.Empty) return "";
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var bible = await db.Nodes
-            .AsNoTracking()
-            .Where(n => n.Id == nodeId)
-            .Select(n => n.NodeOutline)
-            .FirstOrDefaultAsync(ct);
-        return bible ?? "";
     }
 
     /// <summary>

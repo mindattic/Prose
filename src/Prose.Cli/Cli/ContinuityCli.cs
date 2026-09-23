@@ -27,7 +27,6 @@ namespace Prose.Cli;
 ///   prose --continuity extract --book &lt;bookId&gt;          Extract claims from every chapter in a book (legacy Book/Chapter model).
 ///   prose --continuity extract --node &lt;nodeIdOrSlug&gt;    Extract claims from every leaf chapter under a modern SS-A43 BookNode.
 ///   prose --continuity extract --entity &lt;guid&gt;          Extract claims from one entity's Records.Json blob (by EntityId).
-///   prose --continuity extract --outline &lt;nodeIdOrSlug&gt;   Extract claims from the story bible (SourceType="outline").
 ///   prose --continuity apply --claim &lt;uid&gt;              Apply a CANONICAL claim back to its entity record (Legion picks the field).
 ///   prose --continuity relabel --entity &lt;id&gt; --set-name "&lt;name&gt;" [--yes] [--note "..."]
 ///                                                       Rewrite every claim's stale EntityName
@@ -651,7 +650,6 @@ public static class ContinuityCli
         var bookId    = ArgValue(args, "--book");
         var nodeRef   = ArgValue(args, "--node");
         var entityRef = ArgValue(args, "--entity");
-        var bibleRef  = ArgValue(args, "--outline");
 
         if (!string.IsNullOrEmpty(chapterId))
         {
@@ -719,33 +717,7 @@ public static class ContinuityCli
             }
             catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
         }
-        if (!string.IsNullOrEmpty(bibleRef))
-        {
-            var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-            await using var db = await dbFactory.CreateDbContextAsync();
-            Guid nodeId;
-            if (!Guid.TryParse(bibleRef, out nodeId))
-            {
-                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17 pattern).
-                var found = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
-                    .FirstOrDefaultAsync(n => n.Slug == bibleRef || n.NodeCode == bibleRef);
-                if (found == null) return Fail($"node not found: {bibleRef}");
-                nodeId = found.Id;
-            }
-            var sectionType = ArgValue(args, "--section") ?? "Characters";
-            Console.WriteLine($"[continuity] Extracting from bible for {bibleRef} (section={sectionType})…");
-            try
-            {
-                var r = await ext.ExtractFromOutlineAsync(nodeId, sectionType);
-                if (r.Error != null) return Fail(r.Error);
-                Console.WriteLine($"[continuity] {r.ChapterTitle} — candidates {r.CandidatesProposed}, validated {r.CandidatesValidated}");
-                Console.WriteLine($"[continuity] {r.NewClaims} new, {r.ConfirmedClaims} confirmed, {r.ContradictedClaims} contradicted, {r.UnknownEntities.Count} unknown entity references");
-                if (r.UnknownEntities.Count > 0) Console.WriteLine("[continuity] unknown: " + string.Join(", ", r.UnknownEntities));
-                return r.ContradictedClaims > 0 ? 1 : 0;
-            }
-            catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
-        }
-        return Fail("extract requires one of: --chapter <id> | --book <id> | --node <nodeIdOrSlug> | --entity <guid> | --outline <slug>");
+        return Fail("extract requires one of: --chapter <id> | --book <id> | --node <nodeIdOrSlug> | --entity <guid>");
     }
 
     static async Task<int> CmdApply(string[] args, IServiceProvider services)
@@ -1026,10 +998,6 @@ public static class ContinuityCli
               prose --continuity extract --book <bookId>
               prose --continuity extract --node <nodeIdOrSlug>
               prose --continuity extract --entity <path-to-entity-json>
-              prose --continuity extract --outline <nodeIdOrSlug> [--section Characters|ArcSummary|VoiceRegister|NarrativeLocks|BeatSpine]
-                  extract claims from the story bible (NodeOutlineSections, default section Characters,
-                  falls back to the raw NodeOutline blob) — lands as SourceType="outline" in the same
-                  ledger prose/entity-record claims use, so bible facts compete/reconcile automatically
               prose --continuity apply --claim <claimUid>
               prose --continuity relabel --entity <entityId> --set-name "<name>" --yes [--note "..."]
                   Rewrite every claim's stale EntityName snapshot for one entity to its current

@@ -49,10 +49,6 @@ public static class RepairCli
         await stateLedger.EnsureSchemaAsync(ct);
         var eventLog = sp.GetRequiredService<Prose.Core.Services.EventLogService>();
         await eventLog.EnsureEventsJsonColumnAsync(ct);
-        var outlineSvc = sp.GetRequiredService<Prose.Core.Services.OutlineService>();
-        await outlineSvc.EnsureOutlineJsonColumnAsync(ct);
-        var readerKnowledge = sp.GetRequiredService<Prose.Core.Services.ReaderKnowledgeService>();
-        await readerKnowledge.MigrateLegacyFindingsAsync(ct);
 
         var timeline = repair.RepairTimelines(ct);
         Console.WriteLine();

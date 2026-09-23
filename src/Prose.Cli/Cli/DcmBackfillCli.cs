@@ -20,7 +20,7 @@ namespace Prose.Cli;
 /// MarkdownFiles). Deterministic + cheap: no prose is touched, no LLM prose calls;
 /// re-runs are hash-gated no-ops.
 ///
-/// Run AFTER `--generate-node-doc` + `--sync-markdown` so the node bible row exists;
+/// Run AFTER `--sync-markdown`;
 /// verify with `prose --dcm-viz --slug &lt;slug&gt;` — the Gantt should now show entity docs
 /// loading and evicting across the book instead of a flat static set.
 /// </summary>

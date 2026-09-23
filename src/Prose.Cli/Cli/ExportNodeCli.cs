@@ -6,18 +6,15 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>prose --export-node (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;] [--force-export]</c>
+/// <c>prose --export-node (--id &lt;guid|prefix&gt; | --slug &lt;slug&gt;) [--author "Name"] [--export-dir &lt;path&gt;]</c>
 /// — render a node to .docx + .epub + .pdf + .txt in the configured export
 /// directory (Desktop fallback). Also writes <c>description.txt</c> when
 /// <c>Node.Description</c> is set. <c>--export-dir</c> overrides and persists the
 /// export directory <em>for the node's universe</em>
 /// (<c>UniverseExportDirectories[slug]</c>), never the shared global — so
 /// exporting a Scry book can't redirect where GLMZ books land, and vice versa.
-/// <para>The <see cref="BookHealthService.PublishReadinessAsync"/> pre-flight is DEACTIVATED
-/// (2026-09-22, RFC 0014 — the gate's instruments produced 8 applied findings out of 30,745).
-/// Export no longer blocks on it and <c>--force-export</c> is a no-op; the block is commented
-/// out in place, and <c>prose --publish-readiness</c> still computes the report on demand.
-/// The mojibake guard and the BLOCKER verification gate are unaffected and still block.</para>
+/// <para>Refuses while any beat is unread (<see cref="ReadGateService"/>) — there is no
+/// override and no <c>--force-export</c> (author ruling 2026-09-22). The mojibake guard still blocks.</para>
 /// <para>NOTE: this is local file rendering only — there is no KDP API
 /// integration. "Export" is the correct name; it does not touch
 /// <see cref="Node.PublishUrl"/> or <see cref="Node.PublicationStatus"/>, which
@@ -29,7 +26,6 @@ public static class ExportNodeCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? id = null, slug = null, author = null, exportDir = null;
-        var forceExport = false;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -38,7 +34,6 @@ public static class ExportNodeCli
                 case "--slug":       if (i + 1 < args.Length) slug = args[++i]; break;
                 case "--author":     if (i + 1 < args.Length) author = args[++i]; break;
                 case "--export-dir": if (i + 1 < args.Length) exportDir = args[++i]; break;
-                case "--force-export": forceExport = true; break;
             }
         }
         if (string.IsNullOrWhiteSpace(id) && string.IsNullOrWhiteSpace(slug))
@@ -50,7 +45,7 @@ public static class ExportNodeCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var fullExport = services.GetRequiredService<NodeFullExportService>();
         var mojiChecker = services.GetRequiredService<MojibakeRepairService>();
-        var bookHealth = services.GetRequiredService<BookHealthService>();
+        var readGate = services.GetRequiredService<ReadGateService>();
 
         Guid nodeId; string nodeTitle; string nodeSlug; string? universeSlug; int nodeVersion;
         await using (var db = await dbFactory.CreateDbContextAsync())
@@ -101,90 +96,18 @@ public static class ExportNodeCli
             return 1;
         }
 
-        // ── pre-export publish-readiness gate — DEACTIVATED 2026-09-22 ───────────────
-        // RFC 0014, author ruling: "just comment out all of these, they've never proven
-        // their worth." The gate blocked export on findings from instruments that have
-        // produced 8 applied findings out of 30,745 — it cost real publishing time and
-        // bought nothing. Nothing here is deleted: uncomment this block (and restore the
-        // --force-export path below) to put the gate back.
-        //
-        // var readiness = await bookHealth.PublishReadinessAsync(nodeId);
-        // if (!readiness.Ready)
-        // {
-        //     if (!forceExport)
-        //     {
-        //         Console.Error.WriteLine("[export-node] ❌ Publish-readiness gate failed — fix before exporting, or pass --force-export to override:");
-        //         foreach (var c in readiness.Checks.Where(c => !c.Pass))
-        //             Console.Error.WriteLine($"  ❌ {c.Name} — {c.Detail}");
-        //         Console.Error.WriteLine("[export-node] Run 'prose --publish-readiness --slug <slug>' for the full report.");
-        //         return 1;
-        //     }
-        //
-        //     var failing = readiness.Checks.Where(c => !c.Pass).ToList();
-        //     Console.Error.WriteLine($"[export-node] ⚠ --force-export: overriding {failing.Count} failing publish-readiness check(s):");
-        //     foreach (var c in failing)
-        //         Console.Error.WriteLine($"  ⚠ {c.Name} — {c.Detail}");
-        //
-        //     // Record the override where a later session can find it. Until now a forced export
-        //     // warned to stderr and vanished: nothing in the database knew a manuscript had
-        //     // shipped past a failing gate, which check was failing at the time, or that it had
-        //     // happened at all. The decision ledger exists for exactly this — "reconstruct not
-        //     // just what ran, but why", without depending on a chat transcript.
-        //     await using var dbGate = await dbFactory.CreateDbContextAsync();
-        //     dbGate.DecisionLedgerEntries.Add(new Prose.Core.Data.Entities.DecisionLedgerEntry
-        //     {
-        //         Summary = Truncate($"Publish gate BYPASSED for \"{nodeTitle}\" ({nodeSlug}) — " +
-        //                            $"exported V{nodeVersion + 1} with {failing.Count} check(s) unmet", 256),
-        //         Rationale = "--force-export was passed. Unmet at export time:\n" +
-        //                     string.Join("\n", failing.Select(c =>
-        //                         $"  [{c.Outcome}] {c.Name} — {c.Detail}")),
-        //         Category = "publish-gate-bypass",
-        //         Actor = "prose --export-node",
-        //     });
-        //     await dbGate.SaveChangesAsync();
-        // }
-        if (forceExport)
-            Console.WriteLine("[export-node] --force-export accepted (no-op: the publish-readiness gate is deactivated).");
-
-        // ── pre-export BLOCKER verification gate (Track C — Truth-First Architecture) ──
-        // Reads existing BeatVerification rows — does NOT re-run checks. Run
-        // 'prose --verify-book --slug <slug>' first to refresh, then fix any BLOCKERs.
-        await using (var dbV = await dbFactory.CreateDbContextAsync())
+        // ── the read gate (author ruling 2026-09-22) ───────────────────────────────
+        // Every beat must have been read as it stands, where it stands. Enforced inside the
+        // export services themselves (ReadGateService.EnsureReadAsync), so no entry point can
+        // skip it; checked here first only to print the list of what to read. No override.
+        var readStatus = await readGate.GetStatusAsync(nodeId);
+        if (!readStatus.AllRead)
         {
-            // 2026-08-09 bug fix: this used to gather only nodeId + its DIRECT children, so a
-            // book whose chapter is itself a split Collection (chapter -> N sub-chapters ->
-            // beats) let BLOCKER findings living in those sub-chapters slip past this gate
-            // entirely — the export would succeed while real, unresolved BLOCKER verification
-            // failures sat unreported one level deeper than this query looked. Found during
-            // the shallow-hierarchy audit that followed the Vigil's End split. Use the shared
-            // recursive helper so this gate sees every leaf, at any depth.
-            var allNodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(dbV, nodeId);
-
-            var beatIds = await dbV.BeatNodes.AsNoTracking()
-                .Where(bn => allNodeIds.Contains(bn.NodeId))
-                .Select(bn => bn.BeatId).Distinct().ToListAsync();
-
-            // QuoteGrounding checks whether an audit's quoted claim can still be found verbatim
-            // in the beat text — it fails whenever the beat is edited at all (word choice,
-            // splices, re-exports), not when the prose has an actual defect. It gets stamped
-            // Severity=BLOCKER by the auditor that writes it, which made this gate block export
-            // on stale, meaningless findings twice now (2026-08-11 and 2026-08-16, after this
-            // session's corpus-wide sequential-read fix pass). Excluded here at the consumer
-            // rather than hand-downgrading the rows again, since the false-positive is inherent
-            // to what this CheckType measures, not a one-off mis-severity mistake.
-            var blockers = await dbV.BeatVerifications.AsNoTracking()
-                .Where(v => beatIds.Contains(v.BeatId) && v.Result == "Fail" && v.Severity == "BLOCKER"
-                    && v.CheckType != "QuoteGrounding")
-                .OrderBy(v => v.CheckType).ToListAsync();
-
-            if (blockers.Count > 0)
-            {
-                Console.Error.WriteLine($"[export-node] ❌ {blockers.Count} BLOCKER verification finding(s) — fix before exporting:");
-                foreach (var b in blockers.Take(10))
-                    Console.Error.WriteLine($"  [{b.CheckType,-22}] Beat {b.BeatId}: {b.Evidence ?? "(no detail)"}");
-                Console.Error.WriteLine("[export-node] Run 'prose --verify-book --slug <slug>' for full report.");
-                return 1;
-            }
+            Console.Error.WriteLine($"[export-node] ❌ {ReadGateService.Describe(readStatus)}");
+            foreach (var g in readStatus.Unread.GroupBy(u => u.Reason))
+                Console.Error.WriteLine($"  {g.Key}: positions {ReadGateService.Runs(g.Select(u => u.Position))}");
+            Console.Error.WriteLine($"[export-node] Read them: prose --read-beats --slug {nodeSlug} --from N --to M --mark-read --read-by <name>");
+            return 1;
         }
 
         Console.WriteLine($"[export-node] Rendering \"{nodeTitle}\" to .docx + .epub + .pdf + .txt…");
@@ -212,9 +135,6 @@ public static class ExportNodeCli
                 Console.WriteLine($"[export-node] Wrote description: {result.DescriptionPath}");
             }
 
-            if (result.SynopsisPath != null)
-                Console.WriteLine($"[export-node] Wrote synopsis: {result.SynopsisPath}");
-
             if (result.KeywordsPath != null)
                 Console.WriteLine($"[export-node] Wrote keywords: {result.KeywordsPath} ({result.KeywordCount} phrases)");
             else
@@ -233,5 +153,4 @@ public static class ExportNodeCli
         catch (Exception ex) { Console.Error.WriteLine($"[export-node] Failed: {ex.Message}"); return 1; }
     }
 
-    private static string Truncate(string s, int max) => s.Length <= max ? s : s[..(max - 1)] + "…";
 }

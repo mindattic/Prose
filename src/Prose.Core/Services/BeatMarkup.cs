@@ -97,6 +97,18 @@ public static class BeatMarkup
         return null;
     }
 
+    /// <summary>Every entity tag in <paramref name="text"/> as (whole-tag start, whole-tag length,
+    /// inner start, inner length), in order. Same pattern as the stripper, so a position computed
+    /// from these spans cannot disagree with <see cref="StripEntityTags"/>.</summary>
+    public static List<(int Start, int Length, int InnerStart, int InnerLength)> TagSpans(string? text)
+    {
+        var spans = new List<(int, int, int, int)>();
+        if (string.IsNullOrEmpty(text)) return spans;
+        foreach (Match m in EntityTagPattern.Matches(text))
+            spans.Add((m.Index, m.Length, m.Groups[1].Index, m.Groups[1].Length));
+        return spans;
+    }
+
     /// <summary>One tag already present in a caller's text: the surface words it wraps, and the
     /// entity guid the caller asserted they mean.</summary>
     public sealed record TaggedMention(string Text, Guid EntityId);

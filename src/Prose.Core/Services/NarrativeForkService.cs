@@ -9,7 +9,7 @@ namespace Prose.Core.Services;
 /// At chapter boundaries, generates N competing alternative arcs for the next
 /// chapter, scores each with a quick LLM call, and applies the winning arc's
 /// beat goals to the DB — letting Legion pick the best narrative direction rather
-/// than always committing to the original outline.
+/// than always committing to the originally planned beat goals.
 ///
 /// Integrates into ChapterCloseProcessorService (opt-in via ForkCount > 1).
 /// Also callable directly for flat nodes via PickNextBeatsArcAsync.
@@ -34,18 +34,11 @@ public class NarrativeForkService(
     {
         forkCount = Math.Clamp(forkCount, 2, 5);
 
-        string? bibleText;
         Guid? nextChapterId;
         List<(Guid BeatId, string CurrentGoal)> nextBeats;
 
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var node = await db.Nodes.AsNoTracking()
-                .Where(s => s.Id == parentNodeId)
-                .Select(s => new { s.NodeOutline })
-                .FirstOrDefaultAsync(ct);
-            bibleText = node?.NodeOutline;
-
             // Descend to LEAF nodes, not just direct children — a split-collection book
             // (parentNodeId -> "Chapter N" container with 0 direct beats -> real chapters ->
             // beats, e.g. BLST/ICFI/RTR/VIGL) has its real chapters two levels down.
@@ -98,7 +91,7 @@ public class NarrativeForkService(
         if (nextChapterId == null || nextBeats.Count == 0)
             return ForkResult.Empty;
 
-        return await RunForkAsync(nextChapterId.Value, writtenSoFar, bibleText, nextBeats, forkCount, ct);
+        return await RunForkAsync(nextChapterId.Value, writtenSoFar, nextBeats, forkCount, ct);
     }
 
     /// <summary>
@@ -113,17 +106,10 @@ public class NarrativeForkService(
     {
         forkCount = Math.Clamp(forkCount, 2, 5);
 
-        string? bibleText;
         List<(Guid BeatId, string CurrentGoal)> nextBeats;
 
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var node = await db.Nodes.AsNoTracking()
-                .Where(s => s.Id == nodeId)
-                .Select(s => new { s.NodeOutline })
-                .FirstOrDefaultAsync(ct);
-            bibleText = node?.NodeOutline;
-
             // Recurses past any nested Collection (2026-08-09 fix).
             var forkSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
@@ -142,25 +128,23 @@ public class NarrativeForkService(
         if (nextBeats.Count == 0)
             return ForkResult.Empty;
 
-        return await RunForkAsync(nodeId, writtenSoFar, bibleText, nextBeats, forkCount, ct);
+        return await RunForkAsync(nodeId, writtenSoFar, nextBeats, forkCount, ct);
     }
 
     private async Task<ForkResult> RunForkAsync(
         Guid chapterId,
         string writtenSoFar,
-        string? bibleText,
         List<(Guid BeatId, string CurrentGoal)> beats,
         int forkCount,
         CancellationToken ct)
     {
         var currentGoals = string.Join("\n", beats.Take(8).Select((b, i) => $"{i + 1}. {b.CurrentGoal}"));
-        var bibleExcerpt = bibleText?.Length > 1500 ? bibleText[..1500] : bibleText ?? "";
         var contextSnippet = writtenSoFar.Length > 3000 ? writtenSoFar[^3000..] : writtenSoFar;
 
         Console.WriteLine($"[fork] Generating {forkCount} alternative arcs…");
 
         var arcTasks = Enumerable.Range(0, forkCount)
-            .Select(i => GenerateArcAsync(i, contextSnippet, bibleExcerpt, currentGoals, beats.Count, ct))
+            .Select(i => GenerateArcAsync(i, contextSnippet, currentGoals, beats.Count, ct))
             .ToList();
         var arcs = await Task.WhenAll(arcTasks);
 
@@ -181,7 +165,6 @@ public class NarrativeForkService(
     private async Task<string> GenerateArcAsync(
         int index,
         string contextSnippet,
-        string bibleExcerpt,
         string currentGoals,
         int beatCount,
         CancellationToken ct)
@@ -189,7 +172,7 @@ public class NarrativeForkService(
         var raw = await llm.GenerateAsync(
             system: $"""
                 You are a story architect proposing a next-chapter arc.
-                Given the story so far and the original bible, propose a compelling alternative arc
+                Given the story so far, propose a compelling alternative arc
                 for the next chapter that creates fresh dramatic tension and advances character transformation.
                 Variant index {index + 1}: explore a genuinely different narrative direction — not a rephrasing of the current goals.
 
@@ -200,7 +183,7 @@ public class NarrativeForkService(
                 2. <beat goal>
                 ...up to {beatCount} beats.
                 """,
-            user: $"BIBLE EXCERPT:\n{bibleExcerpt}\n\nSTORY SO FAR:\n{contextSnippet}\n\nCURRENT PLANNED BEATS (to improve or replace):\n{currentGoals}",
+            user: $"STORY SO FAR:\n{contextSnippet}\n\nCURRENT PLANNED BEATS (to improve or replace):\n{currentGoals}",
             temperature: 0.82,
             maxTokens: 600,
             ct: ct);

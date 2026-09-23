@@ -13,7 +13,7 @@ namespace Prose.Cli;
 /// accumulates every LLM call. In a one-shot CLI invocation the ledger captures only
 /// the calls made during that run — use <c>--cost</c> as a suffix on any command to
 /// see how much that operation spent, e.g.:
-///   <code>prose --write-node --slug foo --cost</code>
+///   <code>prose --expand-beat --slug foo --cost</code>
 ///
 /// Usage:
 ///   prose --cost             print the session cost table

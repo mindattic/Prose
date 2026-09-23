@@ -213,10 +213,6 @@ public class Beat
     [System.ComponentModel.DataAnnotations.Schema.NotMapped]
     public string? DescriptionState => SummaryTrustState(Description, DescriptionHash, TextHash);
 
-    /// <summary>Trust state of <see cref="EventSummary"/> — see <see cref="SummaryTrustState"/>.</summary>
-    [System.ComponentModel.DataAnnotations.Schema.NotMapped]
-    public string? EventSummaryState => SummaryTrustState(EventSummary, EventSummaryHash, TextHash);
-
     /// <summary>Terse, present-tense, name-anchored plot-EVENT line — "what happened" in
     /// this beat, not why it matters. Distinct register from <see cref="Description"/>
     /// (authorial intent). Written by BeatEventSummaryService; null = not yet generated.
@@ -225,6 +221,7 @@ public class Beat
     /// legitimate pacing diagnostic, not a prompt bug to eliminate. Deliberately kept out
     /// of the node bible / DCM prose-generation context path — this is a human-readable
     /// QA artifact, not a story-generation input.</summary>
+    // PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
     public string? EventSummary { get; set; }
 
     /// <summary>TextHash value at the time EventSummary was last generated (or last
@@ -233,6 +230,7 @@ public class Beat
     /// different = beat's prose changed since — regenerate. Same shape/maxlength as
     /// TextHash; NOT a general Version/Stale signal — touching this field must never
     /// mark the beat Stale or invalidate audio (see BeatEventSummaryService).</summary>
+    // PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
     public string? EventSummaryHash { get; set; }
 
     /// <summary>Where this beat's scene takes place, as free text (e.g. "Doc Stash's clinic,

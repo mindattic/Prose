@@ -35,20 +35,20 @@ public class EntityContextTools(
         return JsonSerializer.Serialize(new { ok = true, count = matches.Count, matches }, new JsonSerializerOptions { WriteIndented = true });
     }
 
-    [McpServerTool, Description("Preview a deterministic entity rename. Finds exact full-name references in one book's hand-authored outline and descendant beats, plus linked Story Ledger claims. Does not write.")]
+    [McpServerTool, Description("Preview a deterministic entity rename. Finds exact full-name references in one book's descendant beats, plus linked Story Ledger claims. Does not write.")]
     public Task<string> PreviewEntityRename(
         [Description("Canonical entity GUID7 or slug.")] string entityIdOrSlug,
-        [Description("Book GUID, slug, or NodeCode that scopes outline and beats.")] string nodeIdOrSlug,
+        [Description("Book GUID, slug, or NodeCode that scopes the beats.")] string nodeIdOrSlug,
         [Description("New canonical full name.")] string newName) =>
         hub.InvokeAsync(nameof(EntityContextTools), nameof(PreviewEntityRenameImpl), new { entityIdOrSlug, nodeIdOrSlug, newName });
 
     public async Task<string> PreviewEntityRenameImpl(string entityIdOrSlug, string nodeIdOrSlug, string newName) =>
         JsonSerializer.Serialize(await entityRename.PreviewAsync(entityIdOrSlug, nodeIdOrSlug, newName), new JsonSerializerOptions { WriteIndented = true });
 
-    [McpServerTool, Description("Apply a reviewed deterministic entity rename. Requires confirmed=true and an explicit active universe. Replaces exact full-name references in the selected book's outline and beats, relabels linked Story Ledger claims, and registers the old name as deprecated.")]
+    [McpServerTool, Description("Apply a reviewed deterministic entity rename. Requires confirmed=true and an explicit active universe. Replaces exact full-name references in the selected book's beats, relabels linked Story Ledger claims, and registers the old name as deprecated.")]
     public Task<string> ApplyEntityRename(
         [Description("Canonical entity GUID7 or slug.")] string entityIdOrSlug,
-        [Description("Book GUID, slug, or NodeCode that scopes outline and beats.")] string nodeIdOrSlug,
+        [Description("Book GUID, slug, or NodeCode that scopes the beats.")] string nodeIdOrSlug,
         [Description("New canonical full name.")] string newName,
         [Description("Must be true after reviewing preview_entity_rename.")] bool confirmed = false,
         [Description("Optional audit note.")] string? note = null) =>

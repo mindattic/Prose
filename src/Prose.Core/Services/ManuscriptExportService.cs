@@ -36,6 +36,7 @@ public class ManuscriptExportService
         SettingsService settings,
         GlossaryService glossary,
         ClaudeService claudeService,
+        ReadGateService readGate,
         ILogger<ManuscriptExportService> log)
     {
         this.dbFactory = dbFactory;
@@ -44,8 +45,13 @@ public class ManuscriptExportService
         this.settings = settings;
         this.glossary = glossary;
         this.claudeService = claudeService;
+        this.readGate = readGate;
         this.log = log;
     }
+
+    /// <summary>Every shippable format (pdf, epub, audio txt) calls this first; Markdown, the pre-edit
+    /// backup format, does not. No override exists — see <see cref="ReadGateService"/>.</summary>
+    private readonly ReadGateService readGate;
 
     /// <summary>
     /// Export the node as Markdown to the publish directory; returns the path.
@@ -167,6 +173,7 @@ public class ManuscriptExportService
     /// <summary>Export the node as a KDP-ready PDF to Downloads; returns the path.</summary>
     public async Task<string> ExportPdfAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
+        await readGate.EnsureReadAsync(nodeId, ct);
         var (manuscript, path) = await LoadAsync(nodeId, "pdf", ct);
         // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
         author = string.IsNullOrWhiteSpace(author)
@@ -247,6 +254,7 @@ public class ManuscriptExportService
     /// <summary>Export the node as a KDP-ready EPUB 3 to Downloads; returns the path.</summary>
     public async Task<string> ExportEpubAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
+        await readGate.EnsureReadAsync(nodeId, ct);
         var (manuscript, path) = await LoadAsync(nodeId, "epub", ct);
         // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
         author = string.IsNullOrWhiteSpace(author)
@@ -293,6 +301,7 @@ public class ManuscriptExportService
     /// </summary>
     public async Task<string> ExportAudioTxtAsync(Guid nodeId, string? author = null, CancellationToken ct = default)
     {
+        await readGate.EnsureReadAsync(nodeId, ct);
         var (manuscript, path) = await LoadAsync(nodeId, "txt", ct);
         // Resolution order: explicit param → node.Author (via manuscript) → "MindAttic" (pen name)
         author = string.IsNullOrWhiteSpace(author)

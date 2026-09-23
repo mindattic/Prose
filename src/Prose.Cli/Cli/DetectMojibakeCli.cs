@@ -9,9 +9,7 @@ namespace Prose.Cli;
 /// <summary>
 /// prose --detect-mojibake --slug &lt;slug|code|id&gt; [--json]
 ///
-/// Read-only. Reports UTF-8-read-as-Windows-1252 corruption in a node's beats AND in its
-/// hand-authored bible (NodeOutlineSections + Nodes.NodeOutline). The export gate only ever
-/// checked beats, which is how the BCODA bible stayed quadruple-encoded for weeks. Exit code 0
+/// Read-only. Reports UTF-8-read-as-Windows-1252 corruption in a node's beats. Exit code 0
 /// when clean, 1 when anything is found — so a retrofit runbook can loop
 /// <c>prose --repair --fix-mojibake</c> until this returns 0.
 /// </summary>
@@ -48,8 +46,7 @@ public static class DetectMojibakeCli
         }
 
         var beats   = await detector.DetectNodeAsync(nodeId);
-        var outline = await detector.DetectOutlineAsync(nodeId);
-        var dirty   = beats.BeatsAffected > 0 || outline.SectionsAffected > 0;
+        var dirty   = beats.BeatsAffected > 0;
 
         if (json)
         {
@@ -60,19 +57,14 @@ public static class DetectMojibakeCli
                 clean = !dirty,
                 beats_affected = beats.BeatsAffected,
                 beat_hits = beats.Hits.Take(20).Select(h => new { beat_id = h.BeatId, excerpt = h.Excerpt }),
-                outline_sections_affected = outline.SectionsAffected,
-                outline_hits = outline.Hits.Select(h => new { source = h.Source, excerpt = h.Excerpt }),
             }, new JsonSerializerOptions { WriteIndented = true }));
             return dirty ? 1 : 0;
         }
 
         Console.WriteLine($"[detect-mojibake] {title}");
-        Console.WriteLine($"  beats affected           : {beats.BeatsAffected}");
+        Console.WriteLine($"  beats affected: {beats.BeatsAffected}");
         foreach (var h in beats.Hits.Take(10))
             Console.WriteLine($"    beat {h.BeatId}: {h.Excerpt}");
-        Console.WriteLine($"  outline sections affected: {outline.SectionsAffected}");
-        foreach (var h in outline.Hits)
-            Console.WriteLine($"    {h.Source}: …{h.Excerpt}…");
         Console.WriteLine(dirty
             ? "  RESULT: DIRTY — run `prose --repair --fix-mojibake` (one run now peels every layer), then re-check."
             : "  RESULT: CLEAN");

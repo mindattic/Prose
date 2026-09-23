@@ -107,11 +107,9 @@ public class MarkdownFileService
                 foreach (var f in Directory.EnumerateFiles(rfcDir, "*.md"))
                     yield return new(f, "project", ToRelative(projectRoot, f), "rfc");
 
-            // docs/strands/*.md — per-node bibles
-            var nodesDir = Path.Combine(docsDir, "nodes");
-            if (Directory.Exists(nodesDir))
-                foreach (var f in Directory.EnumerateFiles(nodesDir, "*.md"))
-                    yield return new(f, "project", ToRelative(projectRoot, f), "node-bible");
+            // docs/nodes/*.md — the generated per-book outline mirrors — are no longer discovered:
+            // the outline was removed (author ruling 2026-09-22). docs/nodes/ still holds the
+            // glossary artifacts (.htm/.json/.txt), which were never markdown-synced.
 
             // docs/books/*.md — legacy long-form book spines
             var booksDir = Path.Combine(docsDir, "books");
@@ -446,95 +444,6 @@ public class MarkdownFileService
                             existing.Triggers      = resolvedTrigs;
                             existing.AutoTier      = resolvedAuto;
                             existing.UniverseId    = doc.UniverseId;
-                            await db.SaveChangesAsync(ct);
-                        }
-                    }
-                    if (isNew) inserted++; else updated++;
-                }
-                else
-                {
-                    unchanged++;
-                }
-            }
-            catch (Exception ex)
-            {
-                errors.Add($"{relPath}: {ex.Message}");
-            }
-        }
-
-        // ── Node bibles (NodeOutlineSections) ───────────────────────────────────
-        var nodeBibles = await db.NodeOutlineSections
-            .Join(db.Nodes, s => s.NodeId, n => n.Id, (s, n) => new
-            {
-                s.NodeId,
-                s.SectionType,
-                s.Content,
-                NodeCode = (n.NodeCode ?? n.Slug).ToUpperInvariant(),
-                n.Slug,
-                n.UniverseId,
-            })
-            .ToListAsync(ct);
-
-        // Group by node — assemble "Full" section as primary, skip if no Full
-        var nodeGroups = nodeBibles
-            .GroupBy(r => r.NodeCode)
-            .ToList();
-
-        foreach (var group in nodeGroups)
-        {
-            var nodeCode = group.Key;
-            var full     = group.FirstOrDefault(r => r.SectionType == "Full");
-            if (full == null) continue;
-
-            var relPath  = $"docs/nodes/{nodeCode}.md";
-            try
-            {
-                var content  = full.Content;
-                var hash     = ComputeHash(content);
-                // IgnoreQueryFilters — upsert on the non-universe-scoped unique index; see the
-                // matching note in SyncAllAsync.
-                var existing = await db.MarkdownFiles.IgnoreQueryFilters()
-                    .FirstOrDefaultAsync(x => x.RelativePath == relPath && x.FileRoot == "project", ct);
-
-                var isNew          = existing == null;
-                var contentChanged = !isNew && (existing!.ContentHash != hash
-                    || existing.UniverseId != full.UniverseId);
-                if (isNew || contentChanged)
-                {
-                    if (!dryRun)
-                    {
-                        if (isNew)
-                        {
-                            db.MarkdownFiles.Add(new MarkdownFile
-                            {
-                                Id           = Guid.NewGuid(),
-                                FilePath     = Path.Combine(paths.DataRoot, "docs", "nodes", $"{nodeCode}.md"),
-                                FileRoot     = "project",
-                                RelativePath = relPath,
-                                FileName     = $"{nodeCode}.md",
-                                Category     = "node-bible",
-                                Content      = content,
-                                ContentHash  = hash,
-                                LastSyncedAt = DateTime.UtcNow,
-                                SyncedBy     = "db-canon",
-                                Tier         = "node",
-                                Scope        = nodeCode,
-                                Triggers     = "",
-                                AutoTier     = true,
-                                // A book bible belongs to its book's universe.
-                                UniverseId   = full.UniverseId,
-                            });
-                            await db.SaveChangesAsync(ct);
-                        }
-                        else
-                        {
-                            existing!.Content      = content;
-                            existing.ContentHash   = hash;
-                            existing.LastSyncedAt  = DateTime.UtcNow;
-                            existing.SyncedBy      = "db-canon";
-                            existing.Tier          = "node";
-                            existing.Scope         = nodeCode;
-                            existing.UniverseId    = full.UniverseId;
                             await db.SaveChangesAsync(ct);
                         }
                     }

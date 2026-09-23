@@ -4,7 +4,7 @@ Usage: `/commit` for an auto-generated message, or `/commit "Message"` for a cus
 
 When invoked:
 
-0. **3B sync (Beat ↔ Bible ↔ Blueprint):** run `dotnet run --project src/Prose.Cli -- --close-all-sessions`. This flushes any open edit sessions: extracts canon facts from edited beats and appends them to the relevant node bible, confirms or flags blueprint tags, then closes the sessions. If there are no open sessions it exits instantly. This step draws the coordination boundary so every commit is fully aligned. **Skip this step** only if the changes are purely code/infrastructure (no `docs/nodes/*.md` or beat-related files in the diff).
+0. **Close edit sessions:** run `dotnet run --project src/Prose.Cli -- --close-all-sessions`. This closes any open edit sessions so the commit draws a clean session boundary; if there are none it exits instantly. (The Beat ↔ Bible ↔ Blueprint sync that used to run here is gone: the outline and blueprint were removed 2026-09-22, and a book is only its beats plus the canon entities they draw on.) **Skip this step** if the changes are purely code/infrastructure with no beat edits.
 1. Run `git status` and `git diff --stat` to see what changed.
 2. Stage changed tracked files (use specific filenames, not `git add -A`).
 3. **If arguments were provided**, use that as the commit message.

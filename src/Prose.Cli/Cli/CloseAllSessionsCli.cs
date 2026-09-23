@@ -8,10 +8,9 @@ namespace Prose.Cli;
 /// <summary>
 /// prose --close-all-sessions
 ///
-/// Closes every open edit session across all nodes, runs bible + blueprint sync
-/// for each session that has beats, then marks each session closed.
-/// Called automatically by the /commit skill so every commit draws a clean
-/// coordination boundary between Beats, Bible, and Blueprint.
+/// Closes every open edit session across all nodes. Called automatically by the /commit skill
+/// so every commit draws a clean edit-session boundary. (The Beat↔Bible↔Blueprint sync that
+/// used to run here was removed with the outline and blueprint, author ruling 2026-09-22.)
 /// </summary>
 public static class CloseAllSessionsCli
 {
@@ -19,8 +18,6 @@ public static class CloseAllSessionsCli
     {
         var dbFactory  = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var sessionSvc = services.GetRequiredService<EditSessionService>();
-        var bibleSvc   = services.GetRequiredService<OutlineSyncService>();
-        var bpSvc      = services.GetRequiredService<BlueprintSyncService>();
         var universes  = services.GetRequiredService<IUniverseContext>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
@@ -32,13 +29,13 @@ public static class CloseAllSessionsCli
 
         if (openSessions.Count == 0)
         {
-            Console.WriteLine("[sessions] No open sessions — nothing to sync.");
+            Console.WriteLine("[sessions] No open sessions — nothing to close.");
             return 0;
         }
 
-        Console.WriteLine($"[sessions] {openSessions.Count} open session(s) — syncing before commit...");
+        Console.WriteLine($"[sessions] {openSessions.Count} open session(s) — closing before commit...");
 
-        int synced = 0, skipped = 0, errors = 0;
+        int closed = 0, skipped = 0, errors = 0;
 
         foreach (var session in openSessions)
         {
@@ -56,10 +53,8 @@ public static class CloseAllSessionsCli
                 var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == session.NodeId);
                 if (node == null)
                 {
-                    // Node was deleted after this session opened — nothing left to sync
-                    // against. Close it directly rather than retrying a bible/blueprint
-                    // sync that will fail the same way on every future run.
-                    Console.WriteLine($"  [orphaned] {session.Label} (node {session.NodeId} no longer exists) — closing without sync.");
+                    // Node was deleted after this session opened — close it directly.
+                    Console.WriteLine($"  [orphaned] {session.Label} (node {session.NodeId} no longer exists) — closing.");
                     await sessionSvc.CloseSessionAsync(sessionId: session.EditSessionId);
                     skipped++;
                     continue;
@@ -72,19 +67,9 @@ public static class CloseAllSessionsCli
                 var uSlug = universes.ListUniverses().FirstOrDefault(u => u.Id == node.UniverseId)?.Slug ?? "?";
                 Console.WriteLine($"  [{uSlug}/{node.NodeCode ?? node.Slug}] {session.Label} ({session.BeatCount} beat(s))");
 
-                // Bible sync: extract facts and append to docs/nodes/<CODE>.md
-                var bibleReport = await bibleSvc.ExtractFromSessionAsync(session.EditSessionId);
-                if (bibleReport.Facts.Count > 0)
-                    Console.WriteLine($"    Bible : {bibleReport.Facts.Count} fact(s) → {(bibleReport.WroteToFile ? "appended" : "no file")}");
-
-                // Blueprint sync: confirm tags or file BLUEPRINT-DRIFT findings
-                var bpReport = await bpSvc.SyncFromSessionAsync(session.EditSessionId);
-                if (bpReport.Confirmed + bpReport.Diverged > 0)
-                    Console.WriteLine($"    Blueprint: {bpReport.Confirmed} confirmed, {bpReport.Diverged} drift(s)");
-
                 // Close the session
                 await sessionSvc.CloseSessionAsync(sessionId: session.EditSessionId);
-                synced++;
+                closed++;
             }
             catch (Exception ex)
             {
@@ -93,7 +78,7 @@ public static class CloseAllSessionsCli
             }
         }
 
-        Console.WriteLine($"[sessions] Done — {synced} synced, {skipped} empty, {errors} error(s).");
+        Console.WriteLine($"[sessions] Done — {closed} closed, {skipped} empty, {errors} error(s).");
         return errors > 0 ? 1 : 0;
     }
 }

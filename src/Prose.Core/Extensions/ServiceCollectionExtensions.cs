@@ -460,7 +460,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<SceneContextBuilder>();
         services.AddSingleton<BeatRangeService>();
         services.AddSingleton<ConsequenceService>();
-        services.AddSingleton<NarrativeSummaryService>();
         services.AddSingleton<ExportService>();
         services.AddSingleton<HtmlExportService>();
         services.AddSingleton<IChapterRepository>(sp => new ChapterRepository(
@@ -511,6 +510,8 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<Prose.Core.Services.Audit.LogicSweepService>(),
             sp.GetRequiredService<ContinuityExtractionService>(),
             settings: sp.GetService<SettingsService>()));
+        services.AddSingleton<BeatSpliceService>();   // prose --splice-beats / MCP splice_beats
+        services.AddSingleton<ReadGateService>();     // read receipts + the no-override export gate (2026-09-22)
         services.AddSingleton<WritingQualityService>();
         services.AddSingleton(sp => new AuthoredMotifRegistry(
             sp.GetRequiredService<SettingsKvStore>(),
@@ -649,7 +650,6 @@ public static class ServiceCollectionExtensions
         // ExportCleanupService preserves cover.jpg while archiving an export bundle, and KDP
         // publishing reads it. The BookTok video providers below are a SEPARATE feature that
         // consumes a finished cover; they were not touched.
-        services.AddSingleton<BookEntityReconciliationService>();
 
         // BookTok video providers (kling/runway/sora) — same named-client + singleton +
         // AddSingleton<TInterface> pattern as the cover-image providers above.
@@ -720,10 +720,8 @@ public static class ServiceCollectionExtensions
         // Narrative intelligence — story model layer. 2026-08-28: StoryStateService,
         // KnowledgeMapService (and TriviaService, CrewAssessmentService, ThematicIndexService,
         // ConversationalWriterService above) deleted — legacy projectId-keyed dead code with
-        // zero live callers; ReaderKnowledgeService is the DB-backed successor for
-        // dramatic-irony bookkeeping.
+        // zero live callers.
         services.AddSingleton<EventLogService>();
-        services.AddSingleton<OutlineService>();
 
         // Universal facts — world mechanics / vocabulary injected into every generation prompt
         services.AddSingleton<UniversalFactsService>();
@@ -733,8 +731,6 @@ public static class ServiceCollectionExtensions
         // TextAnalysisService removed 2026-09-01 for the same reason (Blazor rich-text-editor
         // companion, no CLI/MCP caller).
         services.AddSingleton<BeatGeneratorService>();
-        services.AddSingleton<NodeOutlineService>();
-        services.AddSingleton<NodeDocService>();
         // The one answer to "where do this book's chapters begin" — see BookSpineService for why
         // four call sites used to answer it separately.
         services.AddSingleton<BookSpineService>();
@@ -1027,13 +1023,11 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<EntityRelationshipService>();
         services.AddSingleton<AmbientDetailInjector>();
         services.AddSingleton<WorldStateAtBeatService>();
-        services.AddSingleton<SequentialReadTrackingService>();
         services.AddSingleton<TextIntegrityService>();
         services.AddSingleton<GearCarryEnforcer>();
         services.AddSingleton<ContinuityEnforcer>();
         services.AddSingleton<WeaponAmmoCompatibilityService>();
         services.AddSingleton<MarkdownFileService>();
-        services.AddSingleton<NodeSpineService>();
 
         // Auto-validation pipeline (2026-06-20): orchestrates prose guard + gear carry +
         // behavior enforcer after every beat save; files violations as Findings.
@@ -1069,11 +1063,6 @@ public static class ServiceCollectionExtensions
         // wired into BookHealthService's FREE tier.
         services.AddSingleton<BeatDuplicateService>();
 
-        // Emotional Intelligence Examination (SS-A15): 8-dimension, 0–4, per-beat,
-        // character-aware rubric. Advisory cap on blocking dimensions at Deep gate.
-        // Available via `prose --examine-emotion` and the `examine_emotional_depth` MCP tool.
-        services.AddSingleton<EmotionalLedgerService>();
-
         // Narrative-science analysis (Will Storr frameworks): sacred flaw, dramatic
         // question, scene-engagement audit, five-act map, antihero empathy.
         // Available via `prose --narrative-science` and the Tools.NarrativeScience MCP tools.
@@ -1101,12 +1090,6 @@ public static class ServiceCollectionExtensions
         // Available via `prose --commandment-audit` (renamed from --book-audit 2026-08-30) and
         // the Tools.StoryAudit MCP tools.
         services.AddSingleton<BookAuditService>();
-
-        // Structural blueprints — pre-prose StoryScope anti-tell commitments
-        // (subplot, chronology, resolution mode, escalation curve, event palette,
-        // ending style, intertextual anchors). Generated via `prose --generate-blueprint`;
-        // injected per-beat by ProseWriterRouter; verified via `prose --storyscope-audit`.
-        services.AddSingleton<StructuralBlueprintService>();
 
         // StoryScope audit — verifies the structural anti-tells held after writing
         // (deterministic checks + LLM-graded checks; findings loop back into future
@@ -1193,12 +1176,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatModeDetector>();
         services.AddSingleton<WorkflowMonitorService>();
         services.AddSingleton<EditSessionService>();
-        services.AddSingleton<OutlineSyncService>();
-        services.AddSingleton<BlueprintSyncService>();
-        services.AddSingleton<BeatCoordinationService>();
         services.AddSingleton<BlastRadiusService>();
         services.AddSingleton<MeaningBackfillService>();
-        services.AddSingleton<BeatEventSummaryService>();
         services.AddSingleton<EntityContextStack>();
         services.AddSingleton<EntityContextService>();
         services.AddScoped<EntityMentionService>();
@@ -1221,8 +1200,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatArchiveService>();
         services.AddSingleton<DcmVisualizationService>();
         services.AddSingleton<TensionEscalationService>();
-        services.AddSingleton<ReaderKnowledgeService>();
-        services.AddSingleton<ChapterSummaryService>();
         // Narrative Obligation Ledger (RFC 0013) — replaces OpenThreadsService. The extractor is
         // its one LLM call; the service is hooked from NodeWorkbenchService.UpdateBeatTextAsync so
         // every BeatWriteReason, not just Generation, registers the promises it makes.
@@ -1237,8 +1214,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.Audit.ObligationReconciliationService>();
         services.AddSingleton<Prose.Core.Services.Obligations.EntityRecordGroundingService>();
         services.AddSingleton<Prose.Core.Services.Calibration.ObligationCalibrationService>();
-        // The bible §14 plant/payoff tables → authored, locked ledger rows (BCODA runbook step 3).
-        services.AddSingleton<Prose.Core.Services.Obligations.BibleLedgerImporter>();
         services.AddSingleton<BookStateLedgerService>();
 
         // ── Discussions ─────────────────────────────────────────────────────
@@ -1289,11 +1264,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Composition.Ledger.StoryStateQuery>();
         services.AddSingleton<Prose.Core.Composition.Window.SceneWindowService>();
         services.AddSingleton<Prose.Core.Composition.Obligations.SelfReportedPlantService>();
-        services.AddSingleton<Prose.Core.Composition.Obligations.OutlineSpineService>();
         services.AddSingleton<Prose.Core.Composition.Prompt.VoiceAnchorService>();
         services.AddSingleton<Prose.Core.Composition.Orchestration.BeatWriteOrchestrator>();
 
-        // Consolidates ReaderKnowledgeService/NarrativeSummaryService/BookStateLedgerService's
+        // Consolidates BookStateLedgerService/BeatPlaceService/MotifLedgerService's
         // post-write extraction into one call — RFC 0009 §9.4 "item 1".
         services.AddSingleton<BeatExtractionService>();
         services.AddSingleton<BeatPlaceService>();
@@ -1302,8 +1276,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<BeatStoryPositionService>();
         services.AddSingleton<RepetitionLintService>();
         services.AddSingleton<MotifLedgerService>();
-        services.AddSingleton<PremiseToOutlineService>();
-        services.AddSingleton<OutlineAdherenceService>();
         services.AddSingleton<NarrativeForkService>();
         services.AddSingleton<ChapterCloseProcessorService>();
         services.AddSingleton<ProseWriterRouter>();

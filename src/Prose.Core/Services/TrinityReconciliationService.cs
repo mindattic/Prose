@@ -101,7 +101,7 @@ public class TrinityReconciliationService(
 
     // ── Phase 1: extraction sweep ────────────────────────────────────────────
 
-    /// <summary>Extracts prose + bible claims for one book, but ONLY if it has never had any
+    /// <summary>Extracts prose claims for one book, but ONLY if it has never had any
     /// claims extracted (<see cref="ContinuityService.HasAnyClaimsForBook"/>) — re-running this on
     /// an already-extracted book would just re-confirm existing claims at LLM cost for no new
     /// signal. No voting gate: extraction is a single-LLM analyzer, not a ballot.</summary>
@@ -115,13 +115,12 @@ public class TrinityReconciliationService(
             return new ExtractionSweepEntry(node.Slug, Skipped: true, 0, 0, 0, 0);
 
         var proseResults = await extraction.ExtractFromBookNodeAsync(nodeId, ct: ct);
-        var bibleResult = await extraction.ExtractFromOutlineAsync(nodeId, ct: ct);
 
         // Seeds the continuous-re-extraction hash cursors so a save the moment after this
         // finishes compares against a real baseline, not "no cursor → treat as changed."
         await extraction.SeedExtractionCursorsAsync(nodeId, ct);
 
-        var all = proseResults.Append(bibleResult).ToList();
+        var all = proseResults;
         return new ExtractionSweepEntry(
             node.Slug, Skipped: false,
             ChaptersProcessed: proseResults.Count,
@@ -353,57 +352,9 @@ public class TrinityReconciliationService(
             resolvedLosingClaimUids.Add(losing.ClaimUid);
         }
 
-        // bible loses → snapshot the section, patch it, write it back.
+        // An "outline"-sourced losing claim (from before the outline was removed, 2026-09-22) has
+        // nothing left to patch; it is left for the ledger removal pass.
         string? preEditSnapshotJson = null;
-        var patchedSections = new HashSet<(Guid NodeId, string SectionType)>();
-        foreach (var losing in losingClaims.Where(c => c.SourceType == "outline"))
-        {
-            var sectionType = ParseOutlineSectionType(losing.SourcePath);
-
-            // GetContradictionGroups groups purely by (EntityId, Predicate), not by book — a
-            // crossover character asserted in two books (e.g. Auda Vane in both high-five and
-            // the-fall-down) can put a losing claim from a DIFFERENT book than the one currently
-            // being reconciled into this same group. Using the outer bookNodeId here would patch
-            // the wrong book's bible and always refuse (snippet never present there) — found live
-            // 2026-08-19: 4 of 19 zero-mechanism decisions were exactly this. Resolve the node the
-            // losing claim actually belongs to instead.
-            var targetNodeId = await ResolveClaimBookNodeIdAsync(losing.BookSlug, bookSlug, bookNodeId, ct);
-            if (targetNodeId == null)
-            {
-                log.LogWarning("[trinity] Losing bible claim {Uid} belongs to book '{Book}', which could not be resolved to a node — cannot patch bible.",
-                    losing.ClaimUid, losing.BookSlug);
-                continue;
-            }
-
-            if (!patchedSections.Add((targetNodeId.Value, sectionType))) continue; // already patched this section this pass
-
-            var sections = await canonDocs.GetNodeOutlineSectionsAsync(targetNodeId.Value, ct);
-            var section = sections.FirstOrDefault(s => s.SectionType == sectionType);
-            if (section == null)
-            {
-                log.LogWarning("[trinity] No NodeOutlineSection '{Section}' found for node {NodeId} — cannot patch bible.", sectionType, targetNodeId.Value);
-                continue;
-            }
-
-            var patched = await PatchOutlineSectionAsync(section.Content, losing, winner, group, ct);
-            if (patched == null)
-            {
-                log.LogWarning(
-                    "[trinity] Losing bible claim {Uid}'s snippet is no longer present verbatim in section '{Section}' " +
-                    "(node {NodeId}) — refusing to guess which line to patch; bible left untouched.",
-                    losing.ClaimUid, sectionType, targetNodeId.Value);
-                continue;
-            }
-
-            var snapshot = new { nodeId = targetNodeId.Value, sectionType, content = section.Content };
-            preEditSnapshotJson = preEditSnapshotJson == null
-                ? JsonSerializer.Serialize(new[] { snapshot })
-                : JsonSerializer.Serialize(JsonSerializer.Deserialize<List<object>>(preEditSnapshotJson)!.Append(snapshot));
-
-            await canonDocs.SetNodeOutlineSectionAsync(targetNodeId.Value, sectionType, patched, ct);
-            AddEditTarget(editTargets, "outline_section", new { nodeId = targetNodeId.Value, sectionType });
-            resolvedLosingClaimUids.Add(losing.ClaimUid);
-        }
 
         // entity_record loses → apply the WINNING claim's value onto the entity record (same
         // EntityId for every claim in the group, since GetContradictionGroups groups by it).
@@ -554,8 +505,7 @@ public class TrinityReconciliationService(
 
     /// <summary>Undoes one decision's edit(s) and flips the ledger side back. A prose/entity edit
     /// restores from its own table's temporal history (<c>FOR SYSTEM_TIME AS OF</c> just before the
-    /// edit); a bible edit restores from <see cref="ReconciliationDecision.PreEditSnapshotJson"/>
-    /// directly, since <c>NodeOutlineSections</c> is not a system-versioned table.</summary>
+    /// edit).</summary>
     public async Task<bool> RevertDecisionAsync(Guid decisionId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -577,7 +527,7 @@ public class TrinityReconciliationService(
                     await RevertBeatTextEditAsync(db, row, "beat_patch", asOf, ct);
                     break;
                 case "outline_section":
-                    await RevertOutlineSectionAsync(db, row, ct);
+                    log.LogWarning("[trinity] Decision {Id} edited a book outline section; outlines were removed 2026-09-22, so that segment cannot be reverted.", row.Id);
                     break;
                 case "entity_record":
                     await RevertEntityRecordAsync(db, row, asOf, ct);
@@ -636,19 +586,6 @@ public class TrinityReconciliationService(
         }
     }
 
-    private async Task RevertOutlineSectionAsync(ProseDbContext db, ReconciliationDecision row, CancellationToken ct)
-    {
-        if (string.IsNullOrEmpty(row.PreEditSnapshotJson)) return;
-        var snapshots = JsonSerializer.Deserialize<List<JsonElement>>(row.PreEditSnapshotJson) ?? new();
-        foreach (var snap in snapshots)
-        {
-            var nodeId = Guid.Parse(snap.GetProperty("nodeId").GetString()!);
-            var sectionType = snap.GetProperty("sectionType").GetString()!;
-            var content = snap.GetProperty("content").GetString() ?? "";
-            await canonDocs.SetNodeOutlineSectionAsync(nodeId, sectionType, content, ct);
-        }
-    }
-
     private async Task RevertEntityRecordAsync(ProseDbContext db, ReconciliationDecision row, string asOf, CancellationToken ct)
     {
         var targets = ExtractEditTargets(row.EditTargetJson, "entity_record");
@@ -692,40 +629,6 @@ public class TrinityReconciliationService(
     {
         if (!targets.TryGetValue(mechanism, out var list)) targets[mechanism] = list = new();
         list.Add(target);
-    }
-
-    /// <summary>Resolves which BookNode a losing bible claim's edit should target. Most of the
-    /// time the claim's own <see cref="ContinuityClaim.BookSlug"/> matches the book currently being
-    /// reconciled and this is a no-op lookup; it only diverges for a crossover-entity contradiction
-    /// group spanning two books (see the caller's remarks). Returns null if the claim's book can't
-    /// be resolved to a live node at all (e.g. the orphaned pre-SS-A43 legacy-extraction claims that
-    /// were never tagged with a BookSlug in the first place).</summary>
-    internal async Task<Guid?> ResolveClaimBookNodeIdAsync(string? claimBookSlug, string currentBookSlug, Guid currentBookNodeId, CancellationToken ct)
-    {
-        if (string.IsNullOrEmpty(claimBookSlug) || string.Equals(claimBookSlug, currentBookSlug, StringComparison.OrdinalIgnoreCase))
-            return currentBookNodeId;
-
-        // The early return above is this method's own logic; the lookup itself is just node
-        // reference resolution, so it delegates (2026-08-24 consolidation — twelve hand-rolled
-        // copies of that lookup existed and six were broken). Gains GUID / unique-GUID-prefix
-        // and case-insensitive matching for free.
-        return await NodeRefResolver.ResolveAsync(dbFactory, claimBookSlug, ct);
-    }
-
-    private static string ParseOutlineSectionType(string? sourcePath)
-    {
-        const string sectionPrefix = "bible-section:";
-        if (!string.IsNullOrEmpty(sourcePath) && sourcePath.StartsWith(sectionPrefix, StringComparison.Ordinal))
-            return sourcePath[sectionPrefix.Length..];
-        // "bible-full:fallback" (ExtractFromOutlineAsync's fallback when no typed NodeOutlineSection row
-        // exists yet) extracted from the raw Nodes.NodeOutline blob — CanonDocumentService.
-        // SetNodeOutlineSectionAsync's "Full" sectionType is the one that writes back to that same
-        // blob, so that's the section to patch, not the "Characters" default (found live 2026-08-19:
-        // patching "Characters" here silently no-opped for every book whose bible predates a typed
-        // Characters section, since GetNodeOutlineSectionsAsync never has one to match against).
-        if (string.Equals(sourcePath, "bible-full:fallback", StringComparison.Ordinal))
-            return "Full";
-        return "Characters"; // ExtractFromOutlineAsync's own default section
     }
 
     /// <summary>Finds which beat under a chapter-scoped continuity claim's <c>SourceChapterId</c>
@@ -783,8 +686,7 @@ public class TrinityReconciliationService(
         newLength > Math.Max(oldLength * 2, oldLength + 200)
         || (oldLength >= 20 && newLength < oldLength * 0.4);
 
-    /// <summary>Surgical single-PARAGRAPH patch for the prose-losing case — the direct mirror of
-    /// <see cref="PatchOutlineSectionAsync"/> below, applied to beat text instead of a bible section.
+    /// <summary>Surgical single-PARAGRAPH patch for the prose-losing case.
     /// Confirmed against the live corpus that beats store exactly one paragraph per non-empty
     /// <c>\n</c>-delimited line, so line-granularity is paragraph-granularity here, not an
     /// arbitrary split. Operates on <see cref="BeatMarkup.StripEntityTags"/>-stripped plain text
@@ -797,8 +699,7 @@ public class TrinityReconciliationService(
     /// regeneration) for every prose-losing claim: proven unsafe live 2026-08-19 on the very first
     /// hand-picked-divergence proof run — it silently replaced a 2,848-char beat with an unrelated
     /// 10,482-char invented scene, dropping the fact it was meant to fix. Scoping the LLM call to
-    /// exactly one already-located paragraph removes that failure mode the same way
-    /// <see cref="PatchOutlineSectionAsync"/> already removed it for the bible-losing case.</summary>
+    /// exactly one already-located paragraph removes that failure mode.</summary>
     private async Task<string?> PatchBeatAsync(string beatText, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
     {
         var snippet = losingClaim.Snippet ?? "";
@@ -848,44 +749,6 @@ public class TrinityReconciliationService(
                 losingClaim.ClaimUid, oldLine.Length, newLine.Length);
             return null;
         }
-
-        lines[lineIndex] = newLine;
-        return string.Join('\n', lines);
-    }
-
-    /// <summary>Strips markdown bold/backtick decoration (<c>**</c>, <c>`</c>) so bible-line
-    /// matching survives a bible regenerating its character-bullet formatting (e.g. <c>Name (slug)
-    /// - desc</c> → <c>**Name** (`slug`) - desc</c>) without the underlying fact changing. Found
-    /// live 2026-08-19: 5 losing bible claims (Ruslan Adeyinka, Breckenridge, Ferko Nzambe, Auda
-    /// Vane, Coeli Vantanen) all refused with "snippet no longer present verbatim" purely because
-    /// of this decoration, not because the asserted fact had actually changed. Only ever makes the
-    /// match MORE permissive than a raw <see cref="string.Contains(string)"/> — never a new false
-    /// refusal.</summary>
-    internal static string StripMarkdownDecoration(string s) => s.Replace("**", "").Replace("`", "");
-
-    private async Task<string?> PatchOutlineSectionAsync(string sectionContent, ContinuityClaim losingClaim, ContinuityClaim winner, ContradictionGroup group, CancellationToken ct)
-    {
-        var snippet = losingClaim.Snippet ?? "";
-        if (string.IsNullOrEmpty(snippet)) return null;
-
-        var lines = sectionContent.Split('\n');
-        var normalizedSnippet = StripMarkdownDecoration(snippet);
-        var lineIndex = Array.FindIndex(lines, l =>
-        {
-            var normalizedLine = StripMarkdownDecoration(l);
-            return normalizedLine.Contains(normalizedSnippet, StringComparison.Ordinal) || normalizedLine.Contains(normalizedSnippet, StringComparison.OrdinalIgnoreCase);
-        });
-        if (lineIndex < 0) return null;
-
-        var oldLine = lines[lineIndex];
-        var question =
-            $"Rewrite ONLY this one line so {group.EntityName}'s \"{group.Predicate}\" reads as \"{winner.Object}\" " +
-            $"instead of \"{losingClaim.Object}\", changing nothing else about the line's structure, punctuation, or voice. " +
-            "Output ONLY the corrected line — no commentary, no surrounding quotes.";
-        var context = $"LINE TO CORRECT:\n{oldLine}";
-        var newLine = await llm.GenerateAsync(question, context, temperature: 0.1, maxTokens: 512, ct: ct);
-        if (string.IsNullOrWhiteSpace(newLine)) return null;
-        newLine = newLine.Trim().Trim('"');
 
         lines[lineIndex] = newLine;
         return string.Join('\n', lines);

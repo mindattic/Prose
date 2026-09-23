@@ -37,8 +37,6 @@ namespace Prose.Core.Services.Audit;
 /// lossless in FACTS and free of prose, so it spans a 500-beat book without growing with it:</para>
 /// <list type="bullet">
 /// <item><b>Carrier</b> — the anchor beat ± <see cref="CarrierRadius"/>, full verbatim prose.</item>
-/// <item><b>Near sideband</b> — the surrounding chapter's <c>Beat.EventSummary</c> lines
-/// ("what happened", hash-gated), never <c>Beat.Description</c>.</item>
 /// <item><b>Far band</b> — the accumulated ledger claims for the entity under question. No prose.
 /// O(distinct facts), not O(beats).</item>
 /// </list>
@@ -465,11 +463,6 @@ false is a correct, common answer.
         if (anchorB != null) user.AppendLine($"  beat #{anchorB.Number}{ChapterSuffix(anchorB, chapterOfBeat)}");
         user.AppendLine();
 
-        // Near sideband: what happened around each fact, from the hash-gated observational
-        // EventSummary line — never Beat.Description, which is unbound authorial intent.
-        AppendSideband(user, "CONTEXT AROUND FACT 1 (what happened, beat by beat)", anchorA, beatOrder);
-        AppendSideband(user, "CONTEXT AROUND FACT 2 (what happened, beat by beat)", anchorB, beatOrder);
-
         // Far band: everything else the ledger believes about this entity. No prose, so it costs
         // O(facts) and can span the whole book. This is what lets the model see that a reveal
         // elsewhere reconciles the pair — the information the clamped logic sweep never had.
@@ -580,35 +573,6 @@ false is a correct, common answer.
             sb.AppendLine();
         }
         return sb.ToString();
-    }
-
-    /// <summary>Near sideband: the observational one-liners around the anchor. Uses
-    /// <c>Beat.EventSummary</c> exclusively — <c>Beat.Description</c> is authorial intent and,
-    /// before Phase 1, had no binding to the prose at all. A stale summary is labelled rather
-    /// than silently trusted (see <c>Beat.SummaryTrustState</c>).</summary>
-    private static void AppendSideband(StringBuilder sb, string header, Beat? anchor, List<Beat> beatOrder)
-    {
-        if (anchor == null) return;
-        var idx = beatOrder.FindIndex(b => b.Id == anchor.Id);
-        if (idx < 0) return;
-
-        var from = Math.Max(0, idx - 40);
-        var to = Math.Min(beatOrder.Count - 1, idx + 40);
-
-        var lines = new List<string>();
-        for (var i = from; i <= to; i++)
-        {
-            var b = beatOrder[i];
-            if (string.IsNullOrWhiteSpace(b.EventSummary)) continue;
-            var state = b.EventSummaryState;
-            var flag = state == "stale" ? " [stale — prose changed since this was written]" : "";
-            lines.Add($"  #{b.Number}: {b.EventSummary}{flag}");
-        }
-        if (lines.Count == 0) return;
-
-        sb.AppendLine(header + ":");
-        foreach (var l in lines) sb.AppendLine(l);
-        sb.AppendLine();
     }
 
     // ── helpers ──────────────────────────────────────────────────────────────

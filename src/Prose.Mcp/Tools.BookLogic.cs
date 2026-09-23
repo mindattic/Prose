@@ -11,9 +11,8 @@ namespace Prose.Mcp;
 // ── Narrative Synopsis + Logic Sweep tools ─────────────────────────────────────
 //
 //   write_synopsis — generate a beat-by-beat narrative synopsis (act-grouped) FROM
-//                    the written prose (renamed from write_outline 2026-08-29;
-//                    "outline" now names the per-book pre-writing plan).
-//   logic_sweep    — docs/LOGIC.md's six-dimension sweep (SS-A44) as a single-pass
+//                    the written prose. Ephemeral: returned, never stored.
+//   logic_sweep    — docs/LOGIC.md's logic sweep (SS-A44) as a single-pass
 //                    LLM-per-dimension check. For a large book or a thorough pass,
 //                    prefer the /logic-sweep Claude Code skill instead (range-scoped
 //                    subagents + quote verification + fix + re-verify).
@@ -27,8 +26,8 @@ public class BookLogicTools(
 {
     static readonly JsonSerializerOptions JsonOpts = CanonTools.JsonOpts;
 
-    [McpServerTool, Description("Generate a beat-by-beat narrative synopsis (act-grouped) of a node's written prose. " +
-        "For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/outline-agreement), " +
+    [McpServerTool, Description("Generate a beat-by-beat narrative synopsis (act-grouped) of a node's written prose. Returned only — nothing is stored. " +
+        "For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/inserted-beat drift), " +
         "call logic_sweep instead. Accepts node id (GUID) or slug.")]
     public Task<string> write_synopsis(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug) =>
@@ -57,8 +56,8 @@ public class BookLogicTools(
         }
     }
 
-    [McpServerTool, Description("Run docs/LOGIC.md's six-dimension logic sweep on a node: causality chain, " +
-        "knowledge states, timeline, plant/payoff (two-way), orphan references, bible agreement. " +
+    [McpServerTool, Description("Run docs/LOGIC.md's logic sweep on a node: causality chain, " +
+        "knowledge states, timeline, plant/payoff (two-way), orphan references, inserted-beat drift. " +
         "This is a single LLM call per dimension over the whole node's prose — a coarse, automatable gate, " +
         "NOT a replacement for the full /logic-sweep Claude Code skill on a large book (that skill splits " +
         "the book across range-scoped subagents, verifies quotes, and does a separate fix + re-verify pass). " +

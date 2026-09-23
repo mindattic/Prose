@@ -164,21 +164,6 @@
         </div>
 
         <div class="section">
-            <div class="section-head">Bible</div>
-            @if (string.IsNullOrWhiteSpace(archive.Bible))
-            {
-                <p class="muted small">No bible content resolved as of this beat.</p>
-            }
-            else
-            {
-                <details class="card">
-                    <summary>Node bible as of this beat</summary>
-                    <pre>@archive.Bible</pre>
-                </details>
-            }
-        </div>
-
-        <div class="section">
             <div class="section-head">Raw context trace</div>
             @if (string.IsNullOrWhiteSpace(archive.ContextTrace))
             {

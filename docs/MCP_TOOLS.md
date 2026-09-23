@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**268 tools** across **46 tool families.**
+**257 tools** across **46 tool families.**
 
 ## Families
 
@@ -19,12 +19,11 @@
 | --- | --- |
 | [Barks Export](#barks-export) | 1 |
 | [Beat Archive](#beat-archive) | 1 |
-| [Beat Event List](#beat-event-list) | 3 |
 | [Bible](#bible) | 3 |
 | [Book Health](#book-health) | 1 |
 | [Book Logic](#book-logic) | 3 |
 | [Canon](#canon) | 9 |
-| [Canon Doc](#canon-doc) | 7 |
+| [Canon Doc](#canon-doc) | 5 |
 | [Character Gear](#character-gear) | 3 |
 | [Combat](#combat) | 1 |
 | [Config](#config) | 13 |
@@ -32,7 +31,7 @@
 | [Core Entity Crud](#core-entity-crud) | 5 |
 | [Craft Instrument](#craft-instrument) | 3 |
 | [Data Integrity](#data-integrity) | 2 |
-| [Edit Session](#edit-session) | 6 |
+| [Edit Session](#edit-session) | 4 |
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 7 |
 | [Entity Tag](#entity-tag) | 3 |
@@ -42,7 +41,7 @@
 | [Hub](#hub) | 3 |
 | [Ledger](#ledger) | 4 |
 | [Lore Triple](#lore-triple) | 4 |
-| [Node](#node) | 37 |
+| [Node](#node) | 30 |
 | [Noun Consistency](#noun-consistency) | 2 |
 | [Obligation](#obligation) | 11 |
 | [One Shot Generation](#one-shot-generation) | 1 |
@@ -50,6 +49,7 @@
 | [Planning](#planning) | 2 |
 | [Plant Payoff](#plant-payoff) | 5 |
 | [Quality](#quality) | 5 |
+| [Reading](#reading) | 4 |
 | [Repository](#repository) | 3 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
@@ -57,7 +57,7 @@
 | [Survey](#survey) | 7 |
 | [Universe](#universe) | 5 |
 | [Universe Interchange](#universe-interchange) | 4 |
-| [Verification](#verification) | 3 |
+| [Verification](#verification) | 2 |
 | [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 6 |
@@ -81,32 +81,9 @@ Walk a universe's (or one book/chapter's) beats and return every beat with a sin
 
 ### `get_beat_archive`
 
-Get the Beat Context Archive for one beat — everything that fed it, resolved as of that beat's own trace timestamp: prose, per-service coverage trace, the full LLM system/user prompt and response, the entity roster resolved to that moment's canon (including psychology/speech fields), the DCM doc list resolved to that moment's content, and the bible section active then. Use this to audit exactly what the prose engine saw and did for a specific beat, after the fact.
+Get the Beat Context Archive for one beat — everything that fed it, resolved as of that beat's own trace timestamp: prose, per-service coverage trace, the full LLM system/user prompt and response, the entity roster resolved to that moment's canon (including psychology/speech fields), and the DCM doc list resolved to that moment's content. Use this to audit exactly what the prose engine saw and did for a specific beat, after the fact.
 
 - `beatId` (string, required) — The beat's Guid id.
-
-## Beat Event List
-
-<sub>`BeatEventListTools`</sub>
-
-### `export_event_list`
-
-Export the current per-beat plot-event list for a node to {CODE}-Events.txt in the node's publish-export folder (same layout as description.txt / {CODE}-dcm-viz.htm — not docs/nodes; deliberately .txt, not .md, so it's never picked up by sync_markdown_files / DCM). No LLM call — reads current DB state only.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-
-### `generate_event_list`
-
-Generate/refresh the per-beat plot-event list (Beat.EventSummary) for a node — terse, present-tense, name-anchored 'what happened' lines (e.g. 'Thieves steal Relic.'), hash-gated so unchanged beats cost nothing on re-run. Distinct from Description (authorial-intent register — 'why this beat exists'). Accepts node id (GUID) or slug. force=true regenerates every beat's line regardless of cache.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-- `force` (bool, optional) — Regenerate every beat's line even if its TextHash hasn't changed.
-
-### `get_event_list`
-
-Return the current per-beat plot-event list for a node as ordered structured data — one entry per enabled beat with its SortKey, title, POV, and EventSummary line. Reads DB state only, no LLM call, no disk write — the fast, in-session way to read a whole book's plot flow without opening the exported {CODE}-Events.txt or reading the raw prose. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
 ## Bible
 
@@ -146,7 +123,7 @@ docs/LOGIC.md §9's six-check publish-readiness convergence gate, computed as on
 
 ### `logic_sweep`
 
-Run docs/LOGIC.md's six-dimension logic sweep on a node: causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references, bible agreement. This is a single LLM call per dimension over the whole node's prose — a coarse, automatable gate, NOT a replacement for the full /logic-sweep Claude Code skill on a large book (that skill splits the book across range-scoped subagents, verifies quotes, and does a separate fix + re-verify pass). Findings persist to the Findings table and auto-heal on re-run. Accepts node id (GUID) or slug.
+Run docs/LOGIC.md's logic sweep on a node: causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references, inserted-beat drift. This is a single LLM call per dimension over the whole node's prose — a coarse, automatable gate, NOT a replacement for the full /logic-sweep Claude Code skill on a large book (that skill splits the book across range-scoped subagents, verifies quotes, and does a separate fix + re-verify pass). Findings persist to the Findings table and auto-heal on re-run. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
@@ -160,7 +137,7 @@ Run ONE round of a loop-until-dry logic-sweep convergence campaign (2026-08-14) 
 
 ### `write_synopsis`
 
-Generate a beat-by-beat narrative synopsis (act-grouped) of a node's written prose. For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/outline-agreement), call logic_sweep instead. Accepts node id (GUID) or slug.
+Generate a beat-by-beat narrative synopsis (act-grouped) of a node's written prose. Returned only — nothing is stored. For a real logic check (causality/knowledge-states/timeline/plant-payoff/orphan-refs/inserted-beat drift), call logic_sweep instead. Accepts node id (GUID) or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
@@ -240,12 +217,6 @@ Get a full world-canon document assembled from its DB sections. Call list_canon_
 - `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
 
-### `list_book_outline_sections`
-
-List all NodeOutlineSections for a book node. Shows section types, content lengths, and last-updated timestamps. Use this to see which typed sections exist before calling set_book_outline_section.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
-
 ### `list_canon_document_types`
 
 List every registered canon DocumentType (e.g. WorldBible, CraftGuide) — the current valid values for the documentType parameter on every other tool in this file. Data-driven (CanonDocumentTypes table), so this grows as new document types are migrated; don't rely on a hardcoded list from memory.
@@ -258,14 +229,6 @@ List all sections in a world-canon document with their keys, titles, sort order,
 
 - `documentType` (string, required) — Document type — call list_canon_document_types for the current valid values.
 - `universeSlug` (string, optional) — Universe slug: glmz, scry/caul/fantasy, or universe GUID. Defaults to glmz.
-
-### `set_book_outline_section`
-
-Update or create a structured section in a book's node bible (NodeOutlineSections table). sectionType: Full | ArcSummary | Characters | VoiceRegister | NarrativeLocks | BeatSpine. Use 'Full' to replace the entire hand-authored bible blob; use typed sections to maintain structured per-category content. The docs/nodes/<CODE>.md artifact and the MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
-- `sectionType` (string, required) — Section type: Full, ArcSummary, Characters, VoiceRegister, NarrativeLocks, or BeatSpine.
-- `content` (string, required) — Section content (markdown). Replaces any existing content for this sectionType.
 
 ### `set_canon_section`
 
@@ -338,10 +301,10 @@ Clear ALL active context overrides for this session (both pins and excludes). Pa
 
 ### `doc_context_prepare`
 
-Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs for a topic/scene. Returns one budgeted block plus the resident docs (tier + why each loaded). Pass nodeCode (e.g. 'BCODA') to include that book's bible + its one register; pass text (scene/goal/conversation) to trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that matter now instead of dumping hundreds.
+Prepare the Doc Context Stack — the rotating cast of pertinent canon .md docs for a topic/scene. Returns one budgeted block plus the resident docs (tier + why each loaded). Pass nodeCode (e.g. 'BCODA') to include that book's register and book-scoped docs; pass text (scene/goal/conversation) to trigger topic docs by keyword and semantic embedding. This is how you load only the few docs that matter now instead of dumping hundreds.
 
 - `text` (string, required) — Scene/goal/conversation text to trigger topic docs against.
-- `nodeCode` (string, optional) — Optional node CODE (e.g. 'BCODA') to also load that book's bible + register.
+- `nodeCode` (string, optional) — Optional node CODE (e.g. 'BCODA') to also load that book's register and book-scoped docs.
 - `budget` (int, optional) — Token budget for the assembled block. Default 2000.
 
 ### `doc_context_status`
@@ -604,24 +567,11 @@ List the beats that were edited in a session, with timestamps and version deltas
 
 ### `start_edit_session`
 
-Start a named edit session for a node. A session groups all prose edits until closed, enabling bible/blueprint sync afterward. Session types: prose-pass, gripes-cleanup, logic-sweep, custom.
+Start a named edit session for a node. A session groups all prose edits until closed. Session types: prose-pass, gripes-cleanup, logic-sweep, custom.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `label` (string, required) — Human-readable label, e.g. 'prose-pass-1' or 'gripes-cleanup-2026-07-13'.
 - `sessionType` (string, optional) — Session type: prose-pass | gripes-cleanup | logic-sweep | custom (default).
-
-### `sync_blueprint_from_session`
-
-Map a session's beats to their blueprint tags. Confirmed decisions are recorded; divergences file BLUEPRINT-DRIFT findings.
-
-- `sessionId` (string, required) — Session GUID.
-
-### `sync_outline_from_session`
-
-Extract narrative facts from a session's beats and append them as '## Session Extracts' to the node bible .md file. Use --dry-run to preview without writing.
-
-- `sessionId` (string, required) — Session GUID.
-- `dryRun` (bool, optional) — If true, returns extracted facts without writing to the bible file.
 
 ## Encyclopedia
 
@@ -843,10 +793,10 @@ List every weapon in canon. Returns name + category + manufacturer. Use this to 
 
 ### `apply_entity_rename`
 
-Apply a reviewed deterministic entity rename. Requires confirmed=true and an explicit active universe. Replaces exact full-name references in the selected book's outline and beats, relabels linked Story Ledger claims, and registers the old name as deprecated.
+Apply a reviewed deterministic entity rename. Requires confirmed=true and an explicit active universe. Replaces exact full-name references in the selected book's beats, relabels linked Story Ledger claims, and registers the old name as deprecated.
 
 - `entityIdOrSlug` (string, required) — Canonical entity GUID7 or slug.
-- `nodeIdOrSlug` (string, required) — Book GUID, slug, or NodeCode that scopes outline and beats.
+- `nodeIdOrSlug` (string, required) — Book GUID, slug, or NodeCode that scopes the beats.
 - `newName` (string, required) — New canonical full name.
 - `confirmed` (bool, optional) — Must be true after reviewing preview_entity_rename.
 - `note` (string, optional) — Optional audit note.
@@ -880,10 +830,10 @@ Inspect the entity working memory currently active for a node. Shows depth-0 (di
 
 ### `preview_entity_rename`
 
-Preview a deterministic entity rename. Finds exact full-name references in one book's hand-authored outline and descendant beats, plus linked Story Ledger claims. Does not write.
+Preview a deterministic entity rename. Finds exact full-name references in one book's descendant beats, plus linked Story Ledger claims. Does not write.
 
 - `entityIdOrSlug` (string, required) — Canonical entity GUID7 or slug.
-- `nodeIdOrSlug` (string, required) — Book GUID, slug, or NodeCode that scopes outline and beats.
+- `nodeIdOrSlug` (string, required) — Book GUID, slug, or NodeCode that scopes the beats.
 - `newName` (string, required) — New canonical full name.
 
 ### `scan_entity_context`
@@ -1219,14 +1169,6 @@ Resolve a contradiction. Winner = A | B (one claim wins → CANONICAL, the other
 
 <sub>`NodeTools`</sub>
 
-### `append_book_amendment`
-
-Append an amendment to the node's narrative spine. Amendments are append-only — they form an auditable change log of narrative decisions. Use when: changing a character's motivation after beats are written, retconning world rules, or noting why a section was expanded or cut.
-
-- `idOrSlug` (string, required) — Node id (GUID) or slug.
-- `summary` (string, required) — One-line summary of the change.
-- `body` (string, required) — Full amendment body (markdown). Explain what changed and why.
-
 ### `clear_beat_gap_after`
 
 Clear an explicit gap-after-beat override. The audio engine falls back to the auto-computed silence from SceneType + terminator punctuation.
@@ -1244,12 +1186,10 @@ Clone a node into a fully independent copy: new Node row + new Beat rows, same p
 
 ### `create_book`
 
-Create a BookNode — a single book arc (book / novella / standalone). Pass 'seed' to also generate a book bible and planned beats immediately. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, url, and (if generated) the bible text.
+Create a BookNode — a single book arc (book / novella / standalone). The book is created EMPTY: plan it by adding chapters (create_chapter) and planned beats (insert_beat with a title and description and no text), then write the beats. There is no outline or bible — a beat is written from its own description plus the canon entities it draws on. Optional parent makes it part of a series; optional previous marks it a sequel (sequel commandments apply). Returns the new id, slug, and url.
 
 - `title` (string, required) — Book title. Required.
 - `description` (string, optional) — Optional back-of-book description.
-- `seed` (string, optional) — One-line generation seed. When provided, the book bible and planned beats are created immediately after the row is inserted.
-- `targetBeats` (int, optional) — Target beat count for the bible spine (only used when seed is provided). Default 12.
 - `parentNodeIdOrSlug` (string, optional) — Optional parent SeriesNode Guid id (or slug). Empty = standalone.
 - `code` (string, optional) — Optional short author-assigned reference code (e.g. 'ATTE'). Uppercased, unique lookup key.
 - `previous` (string, optional) — Optional prior book this one continues (slug or GUID) — sequel commandments apply.
@@ -1294,24 +1234,10 @@ Render the whole node as one continuous narration (no per-beat voice drift) and 
 
 ### `export_node`
 
-Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), and keywords.txt (from seeded NodeKeywords), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. The publish-readiness gate no longer blocks export (deactivated 2026-09-22) — run publish_readiness yourself if you want that report. Use get_node first to confirm the node exists.
+Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), and keywords.txt (from seeded NodeKeywords), all written to the configured export directory. Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Refuses while any beat is unread as it stands (never read, text changed, moved, or a mentioned entity changed) and returns which ones — read them with read_beats(markRead:true) first. There is no override. Local files only; nothing is published to Amazon/KDP.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `author` (string, optional) — Author name to embed in the document properties. Optional.
-- `forceExport` (bool, optional) — Accepted and ignored — the publish-readiness gate it overrode is deactivated.
-
-### `generate_book_outline`
-
-Generate (or regenerate) the node bible for a node. Uses the node's Seed field (falls back to Synopsis then Title) plus the literary rules to produce a dry structural plan: logline, premise, register, characters, numbered beat spine, seeds & payoffs. Creates planned Beat rows from the spine when the node has no beats yet. Returns the generated bible text.
-
-- `idOrSlug` (string, required) — Node Guid id or slug.
-- `targetBeats` (int, optional) — Target number of beats in the spine. 0 = auto (use existing beat count or 12).
-
-### `generate_node_doc`
-
-Assemble the unified Book Context Document for a node: merges hand-authored NodeOutline content with the Structural Blueprint and Beat Spine from the DB, then writes the result to both Nodes.NodeOutline and docs/nodes/{CODE}.md. The MarkdownFiles sync (what DocContextService reads at generation time) runs automatically as part of this call — no follow-up call needed. Run this before editing a book to get a fresh, complete context document. The disk file is a read-only generated mirror — never hand-edit it.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID), slug, or NodeCode.
 
 ### `get_beat`
 
@@ -1325,18 +1251,6 @@ Get a single node with its beats in reading order. Accepts a Guid id OR a slug. 
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 
-### `get_book_outline`
-
-Get the node bible for a node — the dry structural plan (logline, premise, register, characters, beat spine, seeds & payoffs). Returns the raw markdown text plus the parsed beat spine entries so you can see the planned arc at a glance. Returns has_outline=false when no bible exists yet.
-
-- `idOrSlug` (string, required) — Node Guid id or slug.
-
-### `get_book_spine`
-
-Return the full narrative spine for a node: bible, user stories, all amendments (in order), and the latest spine version pin (which records the content hashes and amendment count at the last docx export). Use this before writing prose to understand the narrative contract.
-
-- `idOrSlug` (string, required) — Node id (GUID) or slug.
-
 ### `get_score_history`
 
 Return the score history for a node as a time-series — every review run that produced a summary, with its mean score, SD, review count, and date. Use to track whether an edit moved the needle, or to compare pre/post-edit trajectories. Accepts node id (GUID) or slug.
@@ -1346,11 +1260,13 @@ Return the score history for a node as a time-series — every review run that p
 
 ### `insert_beat`
 
-Insert a new beat into a node. Pass an empty afterBeatId to insert at the top. Returns the new beat's id.
+Insert a new beat into a node. Pass an empty afterBeatId to insert at the top. Returns the new beat's id. To PLAN a beat (the only planning there is — no outline exists), leave text empty and give it a title and a description of what happens; the writer later writes the beat from that description plus the canon entities it names. A beat with neither title nor description cannot be written.
 
 - `nodeIdOrSlug` (string, required) — Node Guid id or slug.
 - `afterBeatId` (string, optional) — Beat Guid id to insert after, or empty for top-of-node.
-- `text` (string, optional) — Initial prose text for the new beat. May be empty.
+- `text` (string, optional) — Initial prose text for the new beat. Leave empty for a planned beat.
+- `title` (string, optional) — Optional beat title (for a planned beat: a short name for what it is).
+- `description` (string, optional) — Optional description — what happens in this beat. This is what the writer writes the beat FROM.
 
 ### `join_beat`
 
@@ -1388,13 +1304,6 @@ Kick off TTS narration for every un-narrated beat in this node (and its child no
 
 - `nodeIdOrSlug` (string, required) — Node Guid id or slug.
 
-### `pin_book_spine_version`
-
-Create a spine version pin for the node's current docx version. Records the SHA-256 hashes of the current bible and user stories, plus the amendment count, so future drift checks can tell when prose was written against a stale spine. Call this after every significant prose session or whenever the spine changes.
-
-- `idOrSlug` (string, required) — Node id (GUID) or slug.
-- `notes` (string, optional) — Optional human note explaining what changed at this version.
-
 ### `prepare_audible`
 
 Build an Audible AI-narration hand-off package for a node. Produces three files in {publishDir}/{Title}/Audible/: (1) a narration-clean manuscript (.audible.txt) with markdown artifacts stripped and Φ expanded to 'QUANTA'; (2) a pronunciation guide (.pronunciation.md) listing entity names with plain-English respellings; (3) AUDIBLE_README.md with submission instructions. No API is called on Audible's side — the author uploads the .audible.txt via ACX/Audible publisher portal. Returns paths + word/term counts.
@@ -1410,13 +1319,15 @@ Print all beats of a node as continuous prose — each beat's Text joined by a b
 
 ### `read_beats`
 
-Read a book's beats directly, in reading order, with ids/titles/text - no --publish-md export round-trip required. The 'Writer' capability: browse prose without exporting first. Unlike print_book (plain joined text only), this returns structured per-beat rows and supports a from/to range, or direct lookup of specific beats by their global Beat.Number (the id logic-sweep findings quote, e.g. 'Beat #14664') via numbersCsv, which takes precedence over from/to when both are given. Each beat carries event_summary (the observational 'what happened' line) with an event_summary_state of current/stale/unverified - prefer it over description, which is authorial intent. Pass groupByChapter:true for the chapter-altitude view: the same beats nested under their chapter nodes, so a large book can be read chapter by chapter instead of as one flat list.
+Read a book's beats directly, in reading order, with ids/titles/text - no --publish-md export round-trip required. The 'Writer' capability: browse prose without exporting first. Unlike print_book (plain joined text only), this returns structured per-beat rows and supports a from/to range, or direct lookup of specific beats by their global Beat.Number (the id logic-sweep findings quote, e.g. 'Beat #14664') via numbersCsv, which takes precedence over from/to when both are given. Pass groupByChapter:true for the chapter-altitude view: the same beats nested under their chapter nodes, so a large book can be read chapter by chapter instead of as one flat list.
 
 - `idOrSlug` (string, required) — Node Guid id or slug.
 - `from` (int, optional) — 1-based position to start at (default 1).
 - `to` (int, optional) — 1-based position to end at, inclusive (default: last beat).
 - `numbersCsv` (string, optional) — Optional comma-separated Beat.Number values to look up directly, ignoring from/to.
 - `groupByChapter` (bool, optional) — When true, nest the returned beats under their chapter nodes instead of returning one flat list. Positions are identical either way.
+- `markRead` (bool, optional) — When true, record a read receipt for exactly the beats returned, at the hash of the text returned — only pass it when the text is actually being read. Export refuses while any beat is unread (see read_status). Requires readBy.
+- `readBy` (string, optional) — Who is reading (required with markRead).
 
 ### `rebeat_book`
 
@@ -1439,20 +1350,6 @@ Set the silence (in ms) the audio engine inserts AFTER this beat, before the nex
 - `beatHandle` (string, required) — Beat Guid OR 'node-guid.beat-guid' handle.
 - `durationMs` (int, required) — Silence in milliseconds, 0..6000.
 
-### `set_book_outline`
-
-Manually set or replace the node bible text. Use when you want to hand-write the plan instead of generating it. The text is saved verbatim; beat spine parsing still applies for planned-beat creation. Pass an empty string to clear the bible. The docs/nodes/{CODE}.md mirror and MarkdownFiles sync (what DocContextService reads) are regenerated automatically as part of this call.
-
-- `idOrSlug` (string, required) — Node Guid id or slug.
-- `bibleText` (string, required) — Full bible markdown text to store. Empty string clears the bible.
-
-### `set_book_user_stories`
-
-Set (replace) the user stories / acceptance criteria for a node. Write this before starting prose — it defines what scenes, arcs, and voice moments must be present for the node to reach ≥82% standalone and ≥85% cumulative book score.
-
-- `idOrSlug` (string, required) — Node id (GUID) or slug.
-- `userStoriesText` (string, required) — Full user stories markdown. Will replace any existing content.
-
 ### `set_previous_node`
 
 Set (or clear) a book node's sequel link (Node.PreviousNodeId). Needed before deleting or reparenting a book that another book's PreviousNodeId points at — the FK is a DB-level Restrict, so delete_node's force flag alone cannot bypass it; repoint or clear the referencing node's link first. Pass clear=true to detach instead of setting a new previous node.
@@ -1460,6 +1357,15 @@ Set (or clear) a book node's sequel link (Node.PreviousNodeId). Needed before de
 - `nodeIdOrSlug` (string, required) — Node Guid id or slug whose PreviousNodeId to set.
 - `previousNodeIdOrSlug` (string, optional) — Guid id or slug of the book this node continues. Ignored when clear=true.
 - `clear` (bool, optional) — Set true to clear PreviousNodeId (detach) instead of setting one.
+
+### `splice_beats`
+
+Apply a hand-written docket of exact-text replacements across a book — the multi-beat hand edit. Each edit names a beat by its global Beat.Number; 'old' is matched against the beat text with entity tags stripped (inline *italic* markers kept) and must occur exactly 'count' times (default 1), counted after the earlier edits to the same beat. ANY count mismatch aborts the whole docket with nothing written. Dry run unless apply=true. Entity tags an edit does not touch are kept; touched ones are re-derived on save. Each beat is written once as an AuthorEdit, refused if another session changed it since it was read, then re-read and checked against the promised text. CLI parity: prose --splice-beats.
+
+- `nodeIdOrSlug` (string, required) — Book (or any node) slug, NodeCode, or Guid whose beats the docket targets.
+- `docketJson` (string, required) — JSON array: [{"beat": 20420, "old": "exact text", "new": "replacement", "count": 1}]. Empty 'new' deletes.
+- `apply` (bool, optional) — false (default) = plan and guard only; true = write.
+- `analyze` (bool, optional) — true = run the per-save LLM analysis tails on every beat. Default false: a docket wants one analysis pass at the end.
 
 ### `split_beat`
 
@@ -1483,7 +1389,6 @@ Update a beat's metadata: Title, Description, EmotionalTone, PaceHint, Structure
 - `sceneType` (string, optional) — Scene type: scene | summary | transition | interstitial. Omit to leave unchanged; "" resets to 'scene'.
 - `isChapterStart` (bool, optional) — True = this beat begins a new chapter / section. The writer renders a divider above it with Title as the heading. OMIT to leave unchanged — passing false demotes a chapter opener, which until 2026-08-24 happened on every call that didn't set it.
 - `kind` (string, optional) — Beat kind: prose | book-title | dedication | quote. Free-form so new kinds add no schema cost. Omit to leave unchanged; "" resets to 'prose'.
-- `eventSummary` (string, optional) — Optional manual override for the plot-event line (EventSummary — 'what happened', distinct from Description's authorial-intent register). When provided, sets Beat.EventSummary and stamps EventSummaryHash to the beat's CURRENT TextHash, which 'freezes' the manual line so the next generate_event_list run sees it as already current and skips it (no LLM call, no clobber). Pass empty string to clear. Omit (leave null) to leave the beat's event line untouched.
 
 ### `update_beat_text`
 
@@ -1593,7 +1498,7 @@ The chapter trial balance (RFC 0013): opened − closed − dropped − deferred
 
 ### `open_obligation`
 
-Declare an obligation yourself (provenance authored, locked): a promise the outline or you intend the book to keep. Optionally anchor it to a beat with the verbatim quote that makes the promise — refused if the quote is not in that beat's text. due: 'chapter:7', 'beats:12', or 'book-end' (default).
+Declare an obligation yourself (provenance authored, locked): a promise you intend the book to keep. Optionally anchor it to a beat with the verbatim quote that makes the promise — refused if the quote is not in that beat's text. due: 'chapter:7', 'beats:12', or 'book-end' (default).
 
 - `nodeIdOrSlug` (string, required) — Book node id/slug/code.
 - `kind` (string, required) — promise | plant | question | wound | foreshadow | introduced-referent | unexplained-presence
@@ -1774,6 +1679,43 @@ Scan arbitrary prose against every world rule (no city police, no Behemoth-as-al
 
 - `text` (string, required) — The prose to scan. Pass an entire chapter or a single beat.
 
+## Reading
+
+<sub>`ReadingTools`</sub>
+
+### `add_read_note`
+
+File what a read found on one beat: kind defect | question | note. Stamped with the beat's current text hash, so list_read_notes shows when the beat has changed since. This records what a reader noticed; it is not canon.
+
+- `nodeIdOrSlug` (string, required) — Book or chapter id, slug, or NodeCode.
+- `beat` (int, required) — Global Beat.Number of the beat.
+- `kind` (string, required) — defect | question | note
+- `text` (string, required) — What the reader noticed.
+- `readBy` (string, required) — Who read it.
+
+### `list_read_notes`
+
+Read notes on a book's beats in reading order. beat_changed_since = the beat's text no longer matches what the note was written against.
+
+- `nodeIdOrSlug` (string, required) — Book or chapter id, slug, or NodeCode.
+- `status` (string, optional) — open (default) | resolved | all
+- `kind` (string, optional) — Optional: defect | question | note
+
+### `read_status`
+
+Which beats of a book (or chapter) are unread as they stand now, and why: never read, text changed since it was read, moved (the beat before or after it changed — a chapter move or an insert/delete beside it), or an entity it mentions was edited after it was read. Computed on demand from text hashes; nothing is stored that could drift. Export refuses while any beat is unread, with no override — read the listed beats with read_beats(markRead:true) first.
+
+- `nodeIdOrSlug` (string, required) — Book or chapter id, slug, or NodeCode.
+- `limit` (int, optional) — Max unread beats to list individually (default 200). Counts are always complete.
+
+### `resolve_read_note`
+
+Resolve a read note: a question answered or a defect fixed. Optionally name the beat (global Beat.Number) that answered it.
+
+- `nodeIdOrSlug` (string, required) — Book or chapter id, slug, or NodeCode.
+- `noteId` (string, required) — Note id from list_read_notes.
+- `byBeat` (int, optional) — Optional Beat.Number of the beat that answered or fixed it.
+
 ## Repository
 
 <sub>`RepositoryTools`</sub>
@@ -1950,7 +1892,7 @@ Return the universe currently active for this session (slug + name).
 
 ### `get_universal_facts`
 
-Return the universal world facts for the current universe — world mechanics, vocabulary, and social rules injected into every beat generation prompt. These apply to all books in the universe. Book-specific facts live in each book's node bible instead.
+Return the universal world facts for the current universe — world mechanics, vocabulary, and social rules injected into every beat generation prompt. These apply to all books in the universe. Book-specific facts live in that book's beats and its canon entities instead.
 
 - _(no parameters)_
 
@@ -1962,7 +1904,7 @@ List every registered universe (slug, name, theme) and which one is currently ac
 
 ### `set_universal_facts`
 
-Set the universal world facts for the current universe. These facts are injected into every beat generation prompt for any book in this universe, so they should cover mechanics and vocabulary that apply everywhere (transport, technology, social structure, prose vocabulary). Book-specific content belongs in the book's node bible, not here.
+Set the universal world facts for the current universe. These facts are injected into every beat generation prompt for any book in this universe, so they should cover mechanics and vocabulary that apply everywhere (transport, technology, social structure, prose vocabulary). Book-specific content belongs in that book's beats and canon entities, not here.
 
 - `facts` (string, required) — The full world facts text in Markdown. Replaces any existing content. Pass empty string to clear.
 
@@ -2007,12 +1949,6 @@ Search a specific universe's entities by name substring. Cross-universe — does
 ## Verification
 
 <sub>`VerificationTools`</sub>
-
-### `truth_status`
-
-Get the current truth status for a book: how many beats have verified contracts, how many have BeatBlueprintDecision rows, how many are in violation. Use this as a quick dashboard check before writing or exporting.
-
-- `slugOrCode` (string, required) — Book node slug or NodeCode.
 
 ### `verify_quote_grounding`
 

@@ -169,14 +169,14 @@ public class RamificationServiceTests
     }
 
     [Test]
-    public async Task Catches_a_summary_written_against_prose_that_has_since_changed()
+    public async Task Catches_an_intent_written_against_prose_that_has_since_changed()
     {
         using (var ctx = new ProseDbContext(options))
         {
             var beat = ctx.Beats.Single(b => b.Id == beatId);
-            beat.EventSummary = "Kyle waits in the dock.";
+            beat.Description = "Kyle waits in the dock.";
             // Stamped against the ORIGINAL wording, which the edit below then moves.
-            beat.EventSummaryHash = Beat.ComputeHash(BeatText);
+            beat.DescriptionHash = Beat.ComputeHash(BeatText);
             ctx.SaveChanges();
         }
         Edit("Kyle never went to the dock at all.");

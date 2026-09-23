@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**289 commands.** 33 deactivated. 12 cost-gated. 20 have no description in their dispatch comment (13 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**271 commands.** 30 deactivated. 10 cost-gated. 19 have no description in their dispatch comment (13 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -189,12 +189,6 @@ report Character columns that disagree with their latest matching EntityStateEve
 
 <sub>handler `AuditDriftCli`</sub>
 
-### `--audit-event-summaries`
-
-prose --audit-event-summaries --slug <slug> Read-only, free: find stored EventSummary lines that describe a DIFFERENT beat (batch ref shift).
-
-<sub>handler `AuditEventSummariesCli`</sub>
-
 ### `--auto-correct-nightly` — **DEACTIVATED**
 
 ```
@@ -345,7 +339,7 @@ prose --beat <subcommand> — fine-grained beat manipulation: insert  --node <sl
 
 ### `--beat-archive`
 
-prose --beat-archive --beat-id <guid> The Beat Context Archive (observability Part F5): everything that fed one beat, resolved as-of that beat's own BeatContextTrace timestamp — prose, per-service trace, full LLM prompt/response, entity roster resolved to that moment's canon, DCM doc content as of that moment, and the bible section active at that time.
+prose --beat-archive --beat-id <guid> The Beat Context Archive (observability Part F5): everything that fed one beat, resolved as-of that beat's own BeatContextTrace timestamp — prose, per-service trace, full LLM prompt/response, entity roster resolved to that moment's canon, and DCM doc content as of that moment.
 
 <sub>handler `BeatArchiveCli`</sub>
 
@@ -357,7 +351,7 @@ prose --beat-granularity [--slug <slug> | --code <code> | --all] [--beats] Analy
 
 ### `--beat-index`
 
-prose --beat-index --slug <slug> [--json] [--tsv] Read-only, FREE dump of one book's per-beat metadata in reading order: position, chapter, chars, PlaceName + whether it resolved to a canon Place, SceneType/StructureRole/Act, and the trust state of Description and EventSummary against the beat's current TextHash. Exists because Beat.PlaceName had no read path at all — --extract-beat-locations wrote it and nothing could show you the result.
+prose --beat-index --slug <slug> [--json] [--tsv] Read-only, FREE dump of one book's per-beat metadata in reading order: position, chapter, chars, PlaceName + whether it resolved to a canon Place, SceneType/StructureRole/Act, and the trust state of Description against the beat's current TextHash. Exists because Beat.PlaceName had no read path at all — --extract-beat-locations wrote it and nothing could show you the result.
 
 <sub>handler `BeatIndexCli`</sub>
 
@@ -489,7 +483,7 @@ prose --clone-book (--id <guid> | --slug <slug>) [--title "New Title"] [--book-c
 
 ### `--close-all-sessions`
 
-prose --close-all-sessions Called by the /commit skill before every commit to flush open edit sessions, run bible + blueprint sync for each, and draw a clean 3B coordination boundary.
+prose --close-all-sessions Called by the /commit skill before every commit to close open edit sessions.
 
 <sub>handler `CloseAllSessionsCli`</sub>
 
@@ -549,12 +543,6 @@ unified continuity store — migrate / stats / contradictions / resolve / entity
 
 <sub>handler `ContinuityCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
-### `--coordinate`
-
-prose --coordinate --slug <slug> [--json <path>] [--no-stamp] Full-coverage bible↔blueprint↔beat coordination: correlate every beat's meaning, construction, and prose; emit JSON + stamp the "## Beat Coordination Index".
-
-<sub>handler `CoordinateCli`</sub>
-
 ### `--cost` / `--history`
 
 ```
@@ -564,7 +552,7 @@ prose --cost --reset      clear the ledger
 prose --cost --history [--command <name>] [--take N] [--json]
 ```
 
-show running token cost tally for the current process, or the durable per-command calibration data the cost gate estimates from. print CommandCostHistories — what each cost gate calibrates from When appended to another command (e.g. prose --write-node --slug foo --cost), the cost of that command's LLM calls is printed after the command finishes.
+show running token cost tally for the current process, or the durable per-command calibration data the cost gate estimates from. print CommandCostHistories — what each cost gate calibrates from When appended to another command (e.g. prose --expand-beat --slug foo --cost), the cost of that command's LLM calls is printed after the command finishes.
 
 <sub>handler `CostCli`</sub>
 
@@ -581,10 +569,10 @@ per-entity-type reachability matrix (how much canon is embedded and thus pullabl
 ### `--create-book`
 
 ```
-prose --create-book --title "..." [--code SRZR] [--kind book] [--description "..."] [--seed "..."] [--previous <slug|id>] [--parent <slug|id>]
+prose --create-book --title "..." [--code SRZR] [--kind book] [--description "..."] [--logline "..."] [--previous <slug|id>] [--parent <slug|id>]
 ```
 
-create a new empty root node (bible-first; no beats yet).
+create a new, EMPTY book — no outline, no beats. Plan it with planned beats (a title and a description, no text: prose --beat insert / MCP insert_beat), then write them.
 
 <sub>handler `CreateNodeCli`</sub>
 
@@ -646,7 +634,7 @@ DataScanUtility family (fix-phi/fix-identity/tag-lethality/tag-normalize/ assign
 
 ### `--dcm-backfill`
 
-prose --dcm-backfill --slug <slug> [--dry-run] Retroactive DCM footprint for books written OUTSIDE the engine (update_beat_text / --edit-beat / --import-md bypass ProseWriterRouter, so step-0 entity inference never ran — PURSUED shipped 127 beats with zero entity docs this way). Runs EntityDocService.InferFromTextAsync over every enabled beat's prose; hash-gated, no prose touched. Run after --generate-node-doc + --sync-markdown.
+prose --dcm-backfill --slug <slug> [--dry-run] Retroactive DCM footprint for books written OUTSIDE the engine (update_beat_text / --edit-beat / --import-md bypass ProseWriterRouter, so step-0 entity inference never ran — PURSUED shipped 127 beats with zero entity docs this way). Runs EntityDocService.InferFromTextAsync over every enabled beat's prose; hash-gated, no prose touched. Run after --sync-markdown.
 
 <sub>handler `DcmBackfillCli`</sub>
 
@@ -790,7 +778,7 @@ prose --duplicate-entity-scan-broad --universe <slug> [--entity-type <type>] [--
 prose --edit-beat --slug <slug> (--beat-number N | --insert-after N) --file <path>
 ```
 
-expand planned beats in a node to prose (headless ✨ for each beat).
+overwrite one beat's prose from a file, or insert a new beat after a position.
 
 <sub>handler `EditBeatCli`</sub>
 
@@ -921,12 +909,6 @@ prose --export-entity-cluster --root <entityGuid> --universe <slug> --out <path.
 
 <sub>handler `ExportEntityClusterCli`</sub>
 
-### `--export-event-list`
-
-prose --export-event-list --slug <slug> Write the current per-beat event list to {CODE}-Events.txt in the publish-export folder (no LLM call).
-
-<sub>handler `ExportEventListCli`</sub>
-
 ### `--export-node`
 
 ```
@@ -941,16 +923,6 @@ render a node to .docx + .epub + .pdf + .txt + metadata artifacts (description.t
 
 prose --export-personas-json [--out <path>] Exports all 1024 Legion persona details + OCEAN psychometric profiles to JSON for consumption by the Python ML package (ml/artifacts/personas.json).
 
-
-### `--export-synopsis`
-
-```
-prose --export-synopsis (--slug <slug> | --all) [--force]
-```
-
-chapter-by-chapter synopsis export (also runs inside --export-node).
-
-<sub>handler `ExportSynopsisCli`</sub>
 
 ### `--extract-beat-locations`
 
@@ -1046,12 +1018,6 @@ prose --gear-check --slug <nodeSlug> --character <characterId> [--story-time dat
 
 <sub>handler `GearCheckCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
-### `--generate-blueprint`
-
-prose --generate-blueprint --slug <nodeSlug> [--retrofit] [--json] Generates the StructuralBlueprint — pre-prose anti-tell commitments (subplot, temporal scheme, resolution mode, escalation curve, event palette, ending, intertextual anchors). StoryScope countermeasures; bible → blueprint → prose. --retrofit infers the blueprint from already-written prose.
-
-<sub>handler `GenerateBlueprintCli` · **cost-gated (spends LLM money)**</sub>
-
 ### `--generate-book-glossary`
 
 ```
@@ -1062,16 +1028,6 @@ prose --generate-book-glossary --all
 regenerate a book's Glossary (docs/nodes/{CODE}-Glossary.htm/.json/.txt) — the subset of its universe's Master Glossary whose terms appear in the book's live prose.
 
 <sub>handler `GlossaryCli`</sub>
-
-### `--generate-book-outline`
-
-```
-prose --generate-book-outline --slug <slug> [--beats N] [--replace-beats]
-```
-
-(re)generate the node bible for an existing node. Renamed from --book-outline (2026-08-30) — too easily confused with the read-only --get-book-outline; this one calls an LLM and can destructively regenerate the bible.
-
-<sub>handler `NodeOutlineCli`</sub>
 
 ### `--generate-canon-md`
 
@@ -1084,12 +1040,6 @@ regenerate canon document .md files from DB (CanonDocuments + CanonDocumentSecti
 
 <sub>handler `CanonDocumentCli`</sub>
 
-### `--generate-event-list`
-
-prose --generate-event-list --slug <slug> [--force] [--limit N] [--dry-run] [--model <id>] Fill the per-beat plot-EVENT one-liner (Beat.EventSummary) — "what happened".
-
-<sub>handler `GenerateEventListCli`</sub>
-
 ### `--generate-glossary`
 
 ```
@@ -1099,17 +1049,6 @@ prose --generate-glossary --universe <slug>   (omit --universe for all)
 regenerate a universe's Master Glossary (Glossary.htm/.json/.txt under docs/universes/{SLUG}/) from the GlossaryTerms table.
 
 <sub>handler `GlossaryCli`</sub>
-
-### `--generate-node-doc`
-
-```
-prose --generate-node-doc --slug <slug>
-prose --generate-node-doc --all
-```
-
-assemble the unified Book Context Document for a node. Merges hand-authored NodeOutline + Structural Blueprint + Beat Spine into one document, writes the merged view to docs/nodes/{CODE}.md (read-only disk mirror) only. Nodes.NodeOutline itself stays pure hand-authored content (fixed 2026-08-14 — it used to get the merged blob written back, so the column named "the bible" stopped meaning only the bible).
-
-<sub>handler `NodeDocCli`</sub>
 
 ### `--generate-scene`
 
@@ -1134,16 +1073,6 @@ propagate genetic_ancestry from parents to children via the family graph (with �
 prose --get <type> <name-or-id> — targeted entity lookup. Types: character | place | weapon | faction | corponation
 
 <sub>handler `GetEntityCli`</sub>
-
-### `--get-book-outline`
-
-```
-prose --get-book-outline --slug <slug|code|guid> [--out <path>]
-```
-
-dump the node bible VERBATIM (the read half of --set-book-outline's round trip). NOT --generate-book-outline (renamed from --book-outline 2026-08-30), which generates a fresh bible via an LLM instead of reading the existing one.
-
-<sub>handler `GetBookOutlineCli`</sub>
 
 ### `--get-canon-section`
 
@@ -1452,7 +1381,7 @@ prose --log-search [--since <dt>] [--severity <lvl>] [--text <q>] [--take N] [--
 
 ### `--logic-sweep`
 
-prose --logic-sweep --slug <nodeSlug> [--json] Codifies docs/LOGIC.md's six-dimension sweep (SS-A44) as one LLM call per dimension: causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references, bible agreement. A single-pass approximation over the whole node's prose — for a large book or a thorough pass, prefer the /logic-sweep Claude Code skill (range-scoped subagents + quote verification + fix + re-verify). Findings persist to Findings and auto-heal on re-run. Exit 0 = clean, 1 = MODERATE/MINOR only, 2 = any BLOCKER.
+prose --logic-sweep --slug <nodeSlug> [--json] Codifies docs/LOGIC.md's sweep (SS-A44) as one LLM call per dimension: causality chain, knowledge states, timeline, plant/payoff (two-way), orphan references, inserted-beat drift. A single-pass approximation over the whole node's prose — for a large book or a thorough pass, prefer the /logic-sweep Claude Code skill (range-scoped subagents + quote verification + fix + re-verify). Findings persist to Findings and auto-heal on re-run. Exit 0 = clean, 1 = MODERATE/MINOR only, 2 = any BLOCKER.
 
 <sub>handler `LogicSweepCli`</sub>
 
@@ -1510,16 +1439,6 @@ prose --merge-entity --winner <guid> --loser <guid> The execution half of the re
 prose --merge-entity-into-vocabulary --from <sourceGuid> --into <targetVocabularyGuid> --universe <slug> --term "<term>" --definition "<text>" [--origin "<text>"] [--usage "<text>"] [--category "<text>"] [--example "<text>"] [--dry-run] One-off duplicate resolution: merges --from's content/edges onto an existing `vocabulary` entity and deletes --from. See MergeEntityIntoVocabularyCli.
 
 <sub>handler `MergeEntityIntoVocabularyCli`</sub>
-
-### `--migrate-blueprint-rows`
-
-```
-prose --migrate-blueprint-rows [--slug <slug>] [--dry-run]
-```
-
-Truth-First Architecture — Step B2: decompose EscalationCurveJson / EventTypePaletteJson blobs and BeatTags into per-beat BeatBlueprintDecision rows. Idempotent; skips beats that already have a decision row.
-
-<sub>handler `MigrateBlueprintRowsCli`</sub>
 
 ### `--migrate-canon-docs`
 
@@ -1743,6 +1662,17 @@ print beat text WITH its authoritative POV character attached (sourced fresh fro
 
 <sub>handler `ReadBeatsCli`</sub>
 
+### `--read-status` / `--read-note`
+
+```
+prose --read-status --node <slug|code|guid> [--list]
+prose --read-note add|list|resolve --node <x> [--beat N --kind defect|question|note --text "…" --read-by <name>]
+```
+
+which beats are unread (never read / text changed / moved / entity changed), and the notes a read filed. Export refuses while any beat is unread; there is no override.
+
+<sub>handler `ReadStatusCli`</sub>
+
 ### `--reader-qa` — **DEACTIVATED**
 
 prose --reader-qa (--slug <slug> | --all) [--force] [--json] Reader-Proxy QA (docs/READER-QA.md) — the default reader-facing quality instrument. Phase 1: comprehension probes — a cheap model reads each chapter cold, diffed against the Sonnet synopsis ground truth, Sonnet-arbitrated, filed as ComprehensionDefect findings. NO scores (measurement, not vote — SS-A44 exempt). Hash-cached per chapter. Exit 0 = clean, 1 = defects found, 2 = error.
@@ -1784,12 +1714,6 @@ prose --recall <keyword> [--content] [--to-disk] [--as-of <datetime-utc>]
 keyword recall — call up (print) or create (--to-disk) the select few tracked .md files relevant to a topic, straight from the DB.
 
 <sub>handler `RecallMarkdownCli`</sub>
-
-### `--reconcile-book-entities` — **DEACTIVATED**
-
-prose --reconcile-book-entities (--id <guid> | --slug <slug>) [--universe <u>] Phase 0 (repair) of the corpus-trust-recovery plan: finds Entity rows describing a FORMER identity of a character this book's current bible names differently (a full rename, not a typo — name-based dedup structurally can't catch this). Report-only. See BookEntityReconciliationService for the two-stage cost-bounded design.
-
-<sub>handler `ReconcileBookEntitiesCli` · **cost-gated (spends LLM money)** · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
 ### `--reconcile-obligations` — **DEACTIVATED**
 
@@ -1848,7 +1772,7 @@ CRUD for RelationTypeAliases — normalizes link_entities free-text RelationType
 
 ### `--rename-entity`
 
-prose --rename-entity --entity <guid|slug> --node <book-guid|slug|code> --new-name "..." [--apply --yes] Preview is the default; the apply form replaces exact full-name references in this book's hand-authored outline and descendant beats, then relabels linked ledger claims.
+prose --rename-entity --entity <guid|slug> --node <book-guid|slug|code> --new-name "..." [--apply --yes] Preview is the default; the apply form replaces exact full-name references in this book's descendant beats, then relabels linked ledger claims.
 
 <sub>handler `RenameEntityCli`</sub>
 
@@ -1943,31 +1867,9 @@ restore .md files from DB back to disk. Supports point-in-time recovery from the
 prose --restore-node-field (--id ... | --slug ...) --archive-id <guid>
 ```
 
-restore a Node content field (Description/NodeOutline/Summary/Seed/Subtitle) from a named ArchivedBook snapshot back onto the live node. Explicit archive-id, never "latest" — see RestoreNodeFieldCli class doc. --field description|nodeoutline|summary|seed|subtitle|all --universe <u>
+restore a Node content field (Description/Summary/Seed/Subtitle) from a named ArchivedBook snapshot back onto the live node. Explicit archive-id, never "latest" — see RestoreNodeFieldCli class doc. --field description|summary|seed|subtitle|all --universe <u>
 
 <sub>handler `RestoreNodeFieldCli`</sub>
-
-### `--retire-bible-title-header`
-
-```
-prose --retire-bible-title-header --dry-run [--slug <slug>]
-prose --retire-bible-title-header --apply [--slug <slug>]
-```
-
-retire the stale "# NODE BIBLE: [Title]" header baked into pre-fix generated outlines (NodeOutlineService's LLM prompt template). Dry-run first, same shape as --retire-locked-markers above.
-
-<sub>handler `RetireBibleTitleHeaderCli`</sub>
-
-### `--retire-locked-markers`
-
-```
-prose --retire-locked-markers --dry-run [--slug <slug>]
-prose --retire-locked-markers --apply [--slug <slug>]
-```
-
-Bible->Outline refactor Phase 6a -- retire "LOCKED" markers (author ruling 2026-08-29, decision #3: the LOCK concept is retired, no corner auto-wins). Dry-run first.
-
-<sub>handler `RetireLockedMarkersCli`</sub>
 
 ### `--retire-records-blobs`
 
@@ -2020,16 +1922,6 @@ prose --review-report (--slug <slug> | --id <guid> | --code <CODE>) [--provider 
 prose --review-settings [--set <key> <value>] — view or update review voting settings. Keys: ballots, prose, panel, readers, max-concurrency, judge-provider, allowed-providers
 
 <sub>handler `ReviewSettingsCli`</sub>
-
-### `--run-corpus` — **DEACTIVATED**
-
-```
-prose --run-corpus --count N [--seed "..."] [--kind episode] [--beats 12] [--ballots 20] [--resume] [--dry-run]
-```
-
-generate a new node (bible-first: plan → planned beats → expand in UI). CLI mode: autonomous corpus loop — generate N nodes end-to-end and review them.
-
-<sub>handler `RunCorpusCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
 ### `--runpod`
 
@@ -2090,7 +1982,7 @@ per-table schema operations (snapshot + safe column-reorder rebuild).
 
 <sub>handler `SchemaCli`</sub>
 
-### `--seed` / `--write-node`
+### `--seed` / `--create-book`
 
 ```
 prose --seed                     list known seeds
@@ -2098,7 +1990,7 @@ prose --seed <name>              apply one
 prose --seed --all [--force]     apply every known seed in order
 ```
 
-apply canonical SQL seeds via C# (replaces sqlcmd-by-hand workflow). NOTE: --seed is also the prompt flag of --write-node / --write-story / --create-book — those commands must win the dispatch or their calls get hijacked by the SQL seeder.
+apply canonical SQL seeds via C# (replaces sqlcmd-by-hand workflow). NOTE: --seed is also a flag of --create-book — that command must win the dispatch or its calls get hijacked by the SQL seeder.
 
 <sub>handler `SeedCli`</sub>
 
@@ -2128,12 +2020,6 @@ codify the GLMZ house voice + world rules from the memory rubric into the DB sto
 
 <sub>handler `SeedVoiceRulesCli`</sub>
 
-### `--sequential-read-status` / `--sequential-read-record`
-
-prose --sequential-read-status --slug <slug> | --all [--json] prose --sequential-read-record --slug <slug> --read-by <name> [--stages N] [--summary "text"]
-
-<sub>handler `SequentialReadCli`</sub>
-
 ### `--session-beats`
 
 prose --session-beats --session-id <guid>
@@ -2149,16 +2035,6 @@ prose --set-beat-enabled --slug <slug> (--beat-number N | --beat-id <guid>) [--e
 enable/disable a beat's membership in a node's reading order without touching the Beat row itself (wraps NodeWorkbenchService.SetBeatMembershipEnabledAsync).
 
 <sub>handler `SetBeatEnabledCli`</sub>
-
-### `--set-book-outline`
-
-```
-prose --set-book-outline --slug <slug> --file <path-to-bible.md>
-```
-
-hand-write the node bible verbatim (CLI mirror of MCP SetBookOutline).
-
-<sub>handler `SetBookOutlineCli`</sub>
 
 ### `--set-byo-key`
 
@@ -2225,12 +2101,6 @@ Unblocks deleting/renaming a book another book's PreviousNodeId points at (FK_No
 
 <sub>handler `SetPreviousNodeCli`</sub>
 
-### `--set-structural-blueprint`
-
-prose --set-structural-blueprint --slug <nodeSlug> --file <path.json> Hand-author a blueprint with no LLM call, matching GenerateBlueprintCli's response contract — for when the generation provider is unavailable but the structural decisions are already made.
-
-<sub>handler `SetStructuralBlueprintCli`</sub>
-
 ### `--show`
 
 /show lookup: resolve a subject (name/slug/alias) to one Entity or Node and return a structured profile. See .claude/commands/show.md.
@@ -2242,6 +2112,16 @@ prose --set-structural-blueprint --slug <nodeSlug> --file <path.json> Hand-autho
 Scene Collision engine manual test harness (2026-08-10): runs SceneCollisionService against one real beat without a full ProseWriterRouter pass. See SimulateCollisionCli for details.
 
 <sub>handler `SimulateCollisionCli` · **cost-gated (spends LLM money)**</sub>
+
+### `--splice-beats`
+
+```
+prose --splice-beats --node <slug|code|guid> --file <docket.json> [--apply] [--analyze]
+```
+
+a docket of exact-text replacements across a book, guarded all-or-nothing, dry-run unless --apply, verified by read-back. Replaces the 2026-09-22 scratchpad splice.py.
+
+<sub>handler `SpliceBeatsCli`</sub>
 
 ### `--split-collection`
 
@@ -2291,12 +2171,6 @@ reconcile audio bytes between local disk and Azure Blob storage. Companion to Du
 
 <sub>handler `SyncAudioCli`</sub>
 
-### `--sync-blueprint-from-session`
-
-prose --sync-blueprint-from-session --session-id <guid>
-
-<sub>handler `SyncBlueprintFromSessionCli`</sub>
-
 ### `--sync-markdown`
 
 ```
@@ -2306,12 +2180,6 @@ prose --sync-markdown [--dry-run]
 sync project-rule, Codex, and Claude Code memory .md files to DB. Upserts by RelativePath; only changed files (hash diff) produce a history row.
 
 <sub>handler `SyncMarkdownCli`</sub>
-
-### `--sync-outline-from-session`
-
-prose --sync-outline-from-session --session-id <guid> [--dry-run]
-
-<sub>handler `SyncOutlineFromSessionCli`</sub>
 
 ### `--tag-entities`
 
@@ -2393,19 +2261,17 @@ scan beats for deprecated/renamed noun references.
 
 <sub>handler `ValidateNounsCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
-### `--verify-beat` / `--verify-book` — **DEACTIVATED**
+### `--verify-quote` / `--verify-quotes-batch`
 
 ```
-prose --verify-beat --id <beatId> [--json]
-prose --verify-book --slug <slug> [--json]
 prose --verify-quote --id <beatId> --quote "<claimed text>" [--claimed-by <name>] [--json]
 prose --verify-quotes-batch --json-file <path> [--json]
 prose --verification-staleness [--json]
 ```
 
-Beat Verification Engine (Track C): checks prose against declared BeatBlueprintDecision contract. Results upserted to BeatVerification table. BLOCKER findings block --export-node. QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears in the beat it's attributed to, before that finding is trusted for triage/fix (SS-LOGIC-4a). --verification-staleness: which books have BeatVerification rows computed under an older CurrentRuleVersion and need a --verify-book re-run (2026-08-10 — added after the same "book never re-run after a check-logic fix" gap was found and manually re-diffed twice in one session; see BeatVerification.RuleVersion's doc comment).
+QuoteGrounding checks: confirm a logic-sweep audit agent's claimed quote actually appears in the beat it's attributed to, before that finding is trusted for triage/fix (SS-LOGIC-4a). --verification-staleness: which books have BeatVerification rows computed under an older CurrentRuleVersion and need a re-run (2026-08-10 — added after the same "book never re-run after a check-logic fix" gap was found and manually re-diffed twice in one session; see BeatVerification.RuleVersion's doc comment).
 
-<sub>handler `VerifyBeatCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
+<sub>handler `VerifyBeatCli`</sub>
 
 ### `--weapon-network`
 
@@ -2435,16 +2301,6 @@ prose --world-state --beat <beatId> [--story-time "date"] [--json]
 prose --wound <subcommand> — character wound ledger: list    --character <id|name> [--as-of "date"] log     --character <id|name> --description "..." [--location "chest"] [--severity moderate] ... status  --wound <id> --status active|healed|noted
 
 <sub>handler `WoundCli`</sub>
-
-### `--write-node`
-
-```
-prose --write-node --seed "..." [--title "..."] [--kind episode] [--beats 12] [--outline-only]
-```
-
-_(no description in the dispatch comment — add one above the guard in `Program.cs`)_
-
-<sub>handler `WriteNodeCli`</sub>
 
 ### `--write-synopsis`
 

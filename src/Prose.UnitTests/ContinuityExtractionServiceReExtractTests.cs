@@ -9,8 +9,8 @@ namespace Prose.UnitTests;
 /// <summary>
 /// Regression cover for the 2026-08-19/20 finding: ContinuityExtractionService only ever
 /// extracted a book ONCE — a duplicated sentence in a published, complete book's prose sat
-/// undetected until an unrelated investigation happened to snag on it. These two methods keep
-/// an already-opted-in book's claims fresh as its prose/bible actually changes, without ever
+/// undetected until an unrelated investigation happened to snag on it. These methods keep
+/// an already-opted-in book's claims fresh as its prose actually changes, without ever
 /// silently extracting a book for the first time (that stays ExtractBookIfNeededAsync's job).
 /// </summary>
 [TestFixture]
@@ -151,71 +151,6 @@ public class ContinuityExtractionServiceReExtractTests
         }
 
         var result = await ext.ReExtractChapterIfChangedAsync(chapterId);
-
-        Assert.That(result, Is.True);
-        Assert.That(llm.CallCount, Is.EqualTo(2));
-    }
-
-    // ── ReExtractOutlineSectionIfChangedAsync ──────────────────────────────────
-
-    [Test]
-    public async Task ReExtractOutlineSectionIfChangedAsync_BookNeverExtracted_ReturnsFalseWithoutCallingLlm()
-    {
-        var (bookId, _, _) = await SeedBookWithChapterAsync();
-        await using (var db = await dbFactory.CreateDbContextAsync())
-        {
-            db.NodeOutlineSections.Add(new NodeOutlineSection { NodeId = bookId, SectionType = "Full", Content = "Some bible text." });
-            await db.SaveChangesAsync();
-        }
-
-        var result = await ext.ReExtractOutlineSectionIfChangedAsync(bookId, "Full");
-
-        Assert.That(result, Is.False);
-        Assert.That(llm.CallCount, Is.EqualTo(0));
-    }
-
-    [Test]
-    public async Task ReExtractOutlineSectionIfChangedAsync_UnchangedContentOnSecondCall_IsANoOp()
-    {
-        var (bookId, _, slug) = await SeedBookWithChapterAsync();
-        await using (var db = await dbFactory.CreateDbContextAsync())
-        {
-            db.NodeOutlineSections.Add(new NodeOutlineSection { NodeId = bookId, SectionType = "Full", Content = "Some bible text." });
-            await db.SaveChangesAsync();
-        }
-        MarkBookAsAlreadyExtracted(slug);
-
-        var first = await ext.ReExtractOutlineSectionIfChangedAsync(bookId, "Full");
-        Assert.That(first, Is.True);
-        Assert.That(llm.CallCount, Is.EqualTo(1));
-
-        var second = await ext.ReExtractOutlineSectionIfChangedAsync(bookId, "Full");
-
-        Assert.That(second, Is.False);
-        Assert.That(llm.CallCount, Is.EqualTo(1));
-    }
-
-    [Test]
-    public async Task ReExtractOutlineSectionIfChangedAsync_ContentChanged_ReExtractsAgain()
-    {
-        var (bookId, _, slug) = await SeedBookWithChapterAsync();
-        await using (var db = await dbFactory.CreateDbContextAsync())
-        {
-            db.NodeOutlineSections.Add(new NodeOutlineSection { NodeId = bookId, SectionType = "Full", Content = "Original bible text." });
-            await db.SaveChangesAsync();
-        }
-        MarkBookAsAlreadyExtracted(slug);
-        await ext.ReExtractOutlineSectionIfChangedAsync(bookId, "Full");
-        Assert.That(llm.CallCount, Is.EqualTo(1));
-
-        await using (var db = await dbFactory.CreateDbContextAsync())
-        {
-            var section = await db.NodeOutlineSections.FirstAsync();
-            section.Content = "Updated bible text with a new fact.";
-            await db.SaveChangesAsync();
-        }
-
-        var result = await ext.ReExtractOutlineSectionIfChangedAsync(bookId, "Full");
 
         Assert.That(result, Is.True);
         Assert.That(llm.CallCount, Is.EqualTo(2));

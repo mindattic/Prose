@@ -26,7 +26,7 @@ public enum BeatWriteReason
     AuthorEdit,
 
     /// <summary>Prose that was asked for: <c>ProseWriterRouter</c> via <c>--auto-run</c>,
-    /// <c>--expand-beat</c>, <c>--run-corpus</c>. Writing a beat that was empty or explicitly
+    /// <c>--expand-beat</c>. Writing a beat that was empty or explicitly
     /// queued for (re)generation is not a rewrite of accepted prose.</summary>
     Generation,
 
@@ -90,12 +90,6 @@ public enum BeatWriteReason
     /// text" apart from "an LLM wrote this beat".
     /// </summary>
     AuthorMerge,
-
-    /// <summary>An empty planned beat created from the outline's beat spine
-    /// (<c>NodeOutlineService</c> seed-spine). Carries no prose — the row exists so a later
-    /// <see cref="Generation"/> has somewhere to land. Added 2026-09-07 (RFC 0012 §3.6) when the
-    /// one-door test found this creator undeclared.</summary>
-    Plan,
 
     /// <summary>
     /// The obligation calibration harness (RFC 0013 D7) appending a seeded synthetic sentence to

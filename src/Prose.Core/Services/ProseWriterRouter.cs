@@ -19,7 +19,6 @@ namespace Prose.Core.Services;
 ///   - DialogueService auto-fire on Dialogue/EmotionalClimax beats (when CharactersInScene is set)
 ///   - EmotionalDepthService feedback loop: prior examination findings injected as generation constraints
 ///   - TensionEscalationService: warns when consecutive non-escalating beats detected
-///   - ReaderKnowledgeService: injects current reader knowledge state for dramatic irony management
 ///   - BeatServiceLog coverage tracking (WorkflowMonitorService)
 ///   - BeatModeLog persistence (BeatModeDetector)
 ///
@@ -40,17 +39,13 @@ public class ProseWriterRouter(
     DialogueService? dialogue = null,
     IDbContextFactory<ProseDbContext>? dbFactory = null,
     TensionEscalationService? tensionService = null,
-    ReaderKnowledgeService? readerKnowledge = null,
     ConsequenceService? consequence = null,
-    NarrativeSummaryService? narrativeSummary = null,
     WorldStateAtBeatService? worldStateAtBeat = null,
-    ChapterSummaryService? chapterSummary = null,
     Obligations.NarrativeObligationService? obligations = null,
     SceneContextAssembler? sceneAssembler = null,
     ContinuityService? continuity = null,
     StoryScienceService? storyScience = null,
     NarrativeChartService? narrativeChart = null,
-    StructuralBlueprintService? structuralBlueprint = null,
     BookStateLedgerService? bookStateLedger = null,
     UniverseGraphService? universeGraph = null,
     CanonGroundingService? canonGrounding = null,
@@ -83,9 +78,6 @@ public class ProseWriterRouter(
     /// <param name="beatIndex">Zero-based position of this beat in the node. 0 if unknown.</param>
     /// <param name="totalBeats">Total beats in the node. 0 disables positional pacing/structural injection.</param>
     /// <param name="universeId">Current universe for log stamping. Guid.Empty = GLMZ (default).</param>
-    /// <param name="allowUnblueprinted">Override for the locked-pipeline gate below. Default false
-    /// (gate active) — additive parameter, so no existing caller's behavior changes unless it
-    /// explicitly opts in.</param>
     /// <param name="ct">Cancellation token.</param>
     public async Task<string> WriteAsync(
         BeatContext context,
@@ -93,7 +85,6 @@ public class ProseWriterRouter(
         int beatIndex        = 0,
         int totalBeats       = 0,
         Guid universeId      = default,
-        bool allowUnblueprinted = false,
         CancellationToken ct = default)
     {
         // Single-source-writer RFC, step one (2026-09-07): make one beat write observable.
@@ -109,7 +100,7 @@ public class ProseWriterRouter(
         stageCollector.Value = beatId == Guid.Empty ? null : new StageCollector();
         try
         {
-            return await WriteCoreAsync(context, beatId, beatIndex, totalBeats, universeId, allowUnblueprinted, ct);
+            return await WriteCoreAsync(context, beatId, beatIndex, totalBeats, universeId, ct);
         }
         finally
         {
@@ -124,31 +115,13 @@ public class ProseWriterRouter(
         int beatIndex,
         int totalBeats,
         Guid universeId,
-        bool allowUnblueprinted,
         CancellationToken ct)
     {
-        // Locked-pipeline gate (2026-09-01, CLAUDE.md "New Story Workflow — LOCKED PIPELINE"):
-        // previously this was documentation-only — nothing stopped prose generation for a book
-        // that skipped straight from an empty shell to beats. Gates on "outline AND blueprint both
-        // missing" (not blueprint alone) so the corpus's existing outlined-but-not-yet-blueprinted
-        // books are unaffected — this only fires for a book that has genuinely never been planned.
-        if (context.NodeId != Guid.Empty && totalBeats > 0 && !allowUnblueprinted && dbFactory != null)
-        {
-            await using var gateDb = await dbFactory.CreateDbContextAsync(ct);
-            var bookId = await ResolveBookAncestorAsync(gateDb, context.NodeId, ct) ?? context.NodeId;
-            var book = await gateDb.Nodes.AsNoTracking().IgnoreQueryFilters()
-                .Where(n => n.Id == bookId)
-                .Select(n => new { n.NodeOutline })
-                .FirstOrDefaultAsync(ct);
-            var hasBlueprint = await gateDb.NodeStructuralBlueprints.AnyAsync(bp => bp.NodeId == bookId, ct);
-            if (book != null && string.IsNullOrWhiteSpace(book.NodeOutline) && !hasBlueprint)
-            {
-                throw new InvalidOperationException(
-                    $"Book {bookId} has no outline (set_book_outline) and no structural blueprint " +
-                    "(--generate-blueprint) — the locked pipeline (CLAUDE.md) requires at least one " +
-                    "before prose generation. Pass allowUnblueprinted:true / --allow-unblueprinted to override.");
-            }
-        }
+        // A beat is written from its own goal (Description) plus the canon entities it draws on —
+        // there is no book outline or structural blueprint behind it (author ruling 2026-09-22).
+        // A beat that has neither a Description nor a Title has nothing to be written FROM, so it
+        // is refused rather than generated blind. A Title alone stands in as the goal.
+        context = await EnsureBeatGoalAsync(context, beatId, ct);
 
         var (mode, confidence, method, pacingGuidance, structuralGuidance) =
             ComputeEnrichment(context.BeatGoal, context.SceneSoFar, beatIndex, totalBeats);
@@ -230,39 +203,6 @@ public class ProseWriterRouter(
                     ? await docContext.PrepareForNodeAsync(context.NodeId, triggerText, tokenBudget: 8000, povEntityId: povEntityId, ct: ct)
                     : await docContext.PrepareContextAsync(context.NodeId, context.DocScopeCode, triggerText, tokenBudget: 8000, ct: ct);
                 docStackContext = docResult.Block;
-            });
-        }
-
-        // Node-bible fallback: an empty doc stack means the book's bible never reached the prompt
-        // (typically docs/nodes/<CODE>.md not yet synced into MarkdownFiles). A book node must never
-        // generate bible-blind — fall back to Nodes.NodeOutline and warn so the missing sync stays visible.
-        if (docStackContext.Length == 0 && settings?.DocContextEnabled == true
-            && context.NodeId != Guid.Empty && dbFactory != null)
-        {
-            await TraceStageAsync("NodeOutlineFallback", async () =>
-            {
-                await using var bibleDb = await dbFactory.CreateDbContextAsync(ct);
-                // IgnoreQueryFilters(): context.NodeId is an already-resolved explicit id, not an
-                // ambient scope — same rule as NodeWorkbenchService's explicit-id lookups.
-                var nodeBible = await bibleDb.Nodes.AsNoTracking().IgnoreQueryFilters()
-                    .Where(n => n.Id == context.NodeId)
-                    .Select(n => n.NodeOutline)
-                    .FirstOrDefaultAsync(ct);
-                if (!string.IsNullOrWhiteSpace(nodeBible))
-                {
-                    const int maxBibleChars = 16000;
-                    docStackContext = "## NODE BIBLE (authoritative for this book — do not contradict)\n"
-                        + (nodeBible.Length > maxBibleChars ? nodeBible[..maxBibleChars] : nodeBible);
-                    log.LogWarning(
-                        "Doc context stack EMPTY for node {NodeId} — fell back to Nodes.NodeOutline ({Chars} chars). Run 'prose --sync-markdown' to restore the full doc stack.",
-                        context.NodeId, docStackContext.Length);
-                }
-                else
-                {
-                    log.LogWarning(
-                        "Doc context stack EMPTY for node {NodeId} and no NodeOutline on the node — prose will generate WITHOUT canon context.",
-                        context.NodeId);
-                }
             });
         }
 
@@ -494,14 +434,6 @@ public class ProseWriterRouter(
                 log.LogDebug("[gate] TensionEscalationService skipped (beatIndex={BeatIndex} ≤ 2, insufficient history)", beatIndex);
         }
 
-        // Reader knowledge state: what the reader knows so far in this node.
-        var readerKnowledgeContext = context.ReaderKnowledgeContext;
-        if (string.IsNullOrEmpty(readerKnowledgeContext) && readerKnowledge != null && context.NodeId != Guid.Empty)
-        {
-            await TraceStageAsync(nameof(ReaderKnowledgeService), async () =>
-                { readerKnowledgeContext = await readerKnowledge.BuildKnowledgeBlockAsync(context.NodeId, ct); });
-        }
-
         // Character state constraints: gear, cyberware, status — zero LLM cost, pure DB query.
         var consequenceContext = context.ConsequenceContext;
         if (string.IsNullOrEmpty(consequenceContext) && consequence != null && context.CharactersInScene.Count > 0)
@@ -550,33 +482,6 @@ public class ProseWriterRouter(
                 var snapshot = await worldStateAtBeat.SnapshotAsync(beatId, entityIds: sceneEntityIds, ct: ct);
                 worldStateContext = snapshot.FormatAsContextBlock();
             });
-        }
-
-        // Narrative summary: rolling compressed memory of prior beats — long-node coherence.
-        // LoadAsync restores the chain from DB so it survives app restarts.
-        var narrativeSummaryContext = context.NarrativeSummaryContext;
-        if (narrativeSummary != null && context.NodeId != Guid.Empty)
-        {
-            await TraceStageAsync(nameof(NarrativeSummaryService), async () =>
-            {
-                await narrativeSummary.LoadAsync(context.NodeId, ct);
-                if (string.IsNullOrEmpty(narrativeSummaryContext))
-                    narrativeSummaryContext = narrativeSummary.GetSummaryChain();
-            });
-        }
-
-        // Chapter summaries: DB-backed prior-chapter memory (cross-session coherence).
-        // Gate: beat 0 cannot have prior chapter summaries to inject; skip the DB query.
-        var chapterSummaryContext = context.ChapterSummaryContext;
-        if (string.IsNullOrEmpty(chapterSummaryContext) && chapterSummary != null && context.NodeId != Guid.Empty)
-        {
-            if (beatIndex > 0)
-            {
-                await TraceStageAsync(nameof(ChapterSummaryService), async () =>
-                    { chapterSummaryContext = await chapterSummary.BuildPriorSummaryContextAsync(context.NodeId, ct); });
-            }
-            else
-                log.LogDebug("[gate] ChapterSummaryService skipped (beatIndex=0, no prior chapters yet)");
         }
 
         // Open obligations (RFC 0013): what the story owes the reader — promises, plants, unnamed
@@ -637,66 +542,10 @@ public class ProseWriterRouter(
             });
         }
 
-        // Structural Blueprint: this book's pre-committed anti-tell decisions (StoryScope
-        // countermeasures) — subplot carrier, anachrony cut, escalation floor, event type,
-        // ending/resolution mode. Empty when the node has no blueprint; never blocks writing.
-        //
-        // 2026-08-28: the three structural mechanisms below (blueprint slice, Track B beat
-        // contract, STORYSCOPE findings loop-back) used to be concatenated into one string as
-        // they were computed, so the coverage log's "StructuralBlueprint" and "BeatContract"
-        // rows both keyed off the same merged value and could not distinguish which mechanism
-        // actually fired. They are now tracked separately and merged only at prompt-assembly.
-        var blueprintSliceGuidance = context.StructuralBlueprintGuidance;
-        if (string.IsNullOrEmpty(blueprintSliceGuidance) && structuralBlueprint != null && !context.LeanContext
-            && context.NodeId != Guid.Empty && totalBeats > 0)
-        {
-            await TraceStageAsync(nameof(StructuralBlueprintService), async () =>
-                { blueprintSliceGuidance = await structuralBlueprint.BuildBeatInjectionAsync(context.NodeId, beatId, beatIndex, totalBeats, ct); });
-        }
-
-        // Beat contract (Track B — Truth-First Architecture): load the BeatBlueprintDecision row
-        // for this beat and augment the structural guidance with its declared purpose + pre-state.
-        // Non-blocking: if the node has a blueprint but no decision row, log a warning only.
-        var beatContractGuidance = "";
-        if (beatId != Guid.Empty && dbFactory != null && !context.LeanContext)
-        {
-            await TraceStageAsync("BeatBlueprintDecision", async () =>
-            {
-                await using var bdDb = await dbFactory.CreateDbContextAsync(ct);
-                var decision = await bdDb.BeatBlueprintDecisions
-                    .AsNoTracking()
-                    .FirstOrDefaultAsync(d => d.BeatId == beatId, ct);
-
-                if (decision == null)
-                {
-                    // Check whether the node has a blueprint at all (only warn when blueprint exists)
-                    var hasBlueprint = await bdDb.NodeStructuralBlueprints
-                        .AnyAsync(bp => bp.NodeId == context.NodeId, ct);
-                    if (hasBlueprint)
-                        log.LogWarning(
-                            "[ProseWriterRouter] Beat {BeatId} has a structural blueprint but no BeatBlueprintDecision row. " +
-                            "Run prose --generate-blueprint --slug <slug> to generate per-beat contracts, or " +
-                            "prose --migrate-blueprint-rows to backfill existing stories.",
-                            beatId);
-                }
-                else
-                {
-                    var contractLines = new List<string>();
-                    if (!string.IsNullOrWhiteSpace(decision.DeclaredPurpose))
-                        contractLines.Add($"BEAT CONTRACT — declared purpose: {decision.DeclaredPurpose}");
-                    if (!string.IsNullOrWhiteSpace(decision.WorldStatePre))
-                        contractLines.Add($"WORLD STATE ENTERING: {decision.WorldStatePre}");
-
-                    if (contractLines.Count > 0)
-                        beatContractGuidance = string.Join("\n", contractLines);
-                }
-            });
-        }
-
         // StoryScope audit loop-back: prior audit findings for this node become
         // generation constraints — the audit corrects future beats, not just reports.
-        var storyScopeLoopbackGuidance = "";
-        if (context.NodeId != Guid.Empty && dbFactory != null && !context.LeanContext)
+        var storyScopeLoopbackGuidance = context.StoryScopeGuidance;
+        if (string.IsNullOrEmpty(storyScopeLoopbackGuidance) && context.NodeId != Guid.Empty && dbFactory != null && !context.LeanContext)
         {
             await TraceStageAsync("StoryScopeGuidance", async () =>
             {
@@ -709,11 +558,6 @@ public class ProseWriterRouter(
                     ct: ct);
             });
         }
-
-        // Merge the three structural signals for the prompt (tracked separately for coverage).
-        var structuralBlueprintGuidance = string.Join("\n\n",
-            new[] { blueprintSliceGuidance, beatContractGuidance, storyScopeLoopbackGuidance }
-                .Where(s => !string.IsNullOrEmpty(s)));
 
         // Narrative Chart: offscreen character parallel activity — what characters not in this
         // scene are doing in parallel. Keeps the world continuous; injected as subtext context.
@@ -754,18 +598,15 @@ public class ProseWriterRouter(
             ReaderProxyGuidanceContext = readerProxyGuidanceContext,
             ContinuityViolationGuidanceContext = continuityViolationGuidanceContext,
             TensionGuidanceContext = tensionGuidanceContext,
-            ReaderKnowledgeContext = readerKnowledgeContext,
             ConsequenceContext     = consequenceContext,
             WorldStateContext        = worldStateContext,
-            NarrativeSummaryContext  = narrativeSummaryContext,
-            ChapterSummaryContext    = chapterSummaryContext,
-            OpenThreadsContext       = openThreadsContext,
+            OpenThreadsContext      = openThreadsContext,
             MotifContext             = motifContext,
             PlotEventsContext        = plotEventsContext,
             ContinuityContext        = continuityContext,
             StoryScienceGuidance     = storyScienceGuidance,
             OffscreenActivityContext = offscreenActivityContext,
-            StructuralBlueprintGuidance = structuralBlueprintGuidance,
+            StoryScopeGuidance       = storyScopeLoopbackGuidance,
             SceneCollisionGuidance   = sceneCollisionGuidance,
             BeatIndex                = beatIndex,
             TotalBeats               = totalBeats,
@@ -924,7 +765,6 @@ public class ProseWriterRouter(
         var structApplicable      = totalBeats > 0;
         var combatApplicable      = mode == BeatMode.Combat;
         var nodeApplicable        = context.NodeId != Guid.Empty;
-        var beatContractApplicable = beatId != Guid.Empty;
         var capturedResult        = result;
         var capturedNodeId    = context.NodeId;
         var capturedBeatGoal  = context.BeatGoal;
@@ -960,11 +800,8 @@ public class ProseWriterRouter(
                 new("ReaderProxyGuidance", IsApplicable: nodeApplicable,    IsActive: readerProxyGuidanceContext.Length > 0,                                  BlockSizeChars: readerProxyGuidanceContext.Length),
                 new("ContinuityViolationGuidance", IsApplicable: nodeApplicable, IsActive: continuityViolationGuidanceContext.Length > 0,                     BlockSizeChars: continuityViolationGuidanceContext.Length),
                 new("TensionEscalation",   IsApplicable: nodeApplicable,    IsActive: tensionGuidanceContext.Length > 0,                                      BlockSizeChars: tensionGuidanceContext.Length),
-                new("ReaderKnowledge",     IsApplicable: nodeApplicable,    IsActive: readerKnowledgeContext.Length > 0,                                      BlockSizeChars: readerKnowledgeContext.Length),
                 new("Consequence",         IsApplicable: nodeApplicable,    IsActive: consequenceContext.Length > 0,                                          BlockSizeChars: consequenceContext.Length),
                 new("WorldState",          IsApplicable: beatId != Guid.Empty,  IsActive: worldStateContext.Length > 0,                                       BlockSizeChars: worldStateContext.Length),
-                new("NarrativeSummary",    IsApplicable: nodeApplicable,    IsActive: narrativeSummaryContext.Length > 0,                                     BlockSizeChars: narrativeSummaryContext.Length),
-                new("ChapterSummary",      IsApplicable: nodeApplicable,    IsActive: chapterSummaryContext.Length > 0,                                       BlockSizeChars: chapterSummaryContext.Length),
                 new("Obligations",         IsApplicable: nodeApplicable,    IsActive: openThreadsContext.Length > 0,                                          BlockSizeChars: openThreadsContext.Length),
                 // The prior prose the next beat is grounded in — the one input the whole v4
                 // diagnosis turns on, and until now the only major block with no activation rate
@@ -980,10 +817,6 @@ public class ProseWriterRouter(
                 new("ContinuityService",   IsApplicable: nodeApplicable,    IsActive: continuityContext.Length > 0,                                           BlockSizeChars: continuityContext.Length),
                 new("StoryScience",        IsApplicable: totalBeats > 0,    IsActive: storyScienceGuidance.Length > 0,                                        BlockSizeChars: storyScienceGuidance.Length),
                 new("NarrativeChart",      IsApplicable: nodeApplicable,    IsActive: offscreenActivityContext.Length > 0,                                    BlockSizeChars: offscreenActivityContext.Length),
-                // Three independent structural signals (2026-08-28 — previously all three rows'
-                // IsActive derived from the same merged string, over-counting each mechanism).
-                new("StructuralBlueprint", IsApplicable: nodeApplicable && totalBeats > 0, IsActive: !string.IsNullOrEmpty(blueprintSliceGuidance),              BlockSizeChars: blueprintSliceGuidance?.Length ?? 0),
-                new("BeatContract",        IsApplicable: beatContractApplicable,           IsActive: beatContractApplicable && !string.IsNullOrEmpty(beatContractGuidance), BlockSizeChars: beatContractGuidance.Length),
                 new("StoryScopeLoopback",  IsApplicable: nodeApplicable,                   IsActive: !string.IsNullOrEmpty(storyScopeLoopbackGuidance),          BlockSizeChars: storyScopeLoopbackGuidance.Length),
             ], CancellationToken.None); });
 
@@ -1011,43 +844,6 @@ public class ProseWriterRouter(
             {
                 await TraceStageAsync($"{nameof(BeatExtractionService)}.ExtractAllAsync", async () =>
                     { await beatExtraction.ExtractAllAsync(capturedNodeId, beatId, beatIndex, capturedResult, CancellationToken.None); });
-            }
-
-            // Chapter-close summary extraction (2026-08-22 fix): ChapterSummaryService's write
-            // side previously only ran inside `prose --auto-run`'s own ChapterCloseProcessorService
-            // call — a beat written via --expand-beat/--run-corpus never persisted a
-            // NodeChapterSummaries row, even though the READ side (BuildPriorSummaryContextAsync
-            // above) fires unconditionally every beat. Fires here when this was the chapter's
-            // LAST beat (beatIndex == totalBeats - 1, scoped to whatever node context.NodeId is —
-            // the chapter, for every real call site except the flat-book legacy path), keyed by
-            // the resolved book id + this chapter's position among its book's leaf chapters —
-            // the same numbering AutoRunCli itself uses — so both paths write the same
-            // (nodeId, chapterIndex) row. Harmless if AutoRunCli's own explicit call also fires
-            // for the same chapter later (ExtractAndSaveAsync upserts) — that call runs AFTER
-            // reflow, so it naturally supersedes this pre-reflow snapshot with the final text.
-            if (chapterSummary != null && dbFactory != null && capturedNodeId != Guid.Empty
-                && totalBeats > 0 && beatIndex == totalBeats - 1 && !string.IsNullOrWhiteSpace(capturedResult))
-            {
-                await TraceStageAsync($"{nameof(ChapterSummaryService)}.ExtractAndSaveAsync", async () =>
-                {
-                    await using var chDb = await dbFactory.CreateDbContextAsync(CancellationToken.None);
-                    var bookId = await ResolveBookAncestorAsync(chDb, capturedNodeId, CancellationToken.None);
-                    if (bookId == null) return;
-
-                    var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(chDb, bookId.Value, CancellationToken.None);
-                    var chapterIndex = leafIds.IndexOf(capturedNodeId);
-                    if (chapterIndex < 0) return; // not a real chapter under this book — nothing to key by
-
-                    var chapterBeats = await (
-                        from bn in chDb.BeatNodes.AsNoTracking()
-                        join b in chDb.Beats.AsNoTracking() on bn.BeatId equals b.Id
-                        where bn.NodeId == capturedNodeId
-                        orderby bn.SortKey
-                        select b.Text).ToListAsync(CancellationToken.None);
-                    var chapterProse = string.Join("\n\n", chapterBeats.Where(t => !string.IsNullOrWhiteSpace(t)));
-
-                    await chapterSummary.ExtractAndSaveAsync(bookId.Value, chapterIndex, chapterProse, CancellationToken.None);
-                });
             }
 
             // ContinuityEnforcer (2026-08-22 fix): closes the "ContinuityService constraints are
@@ -1560,9 +1356,41 @@ public class ProseWriterRouter(
     }
 
     /// <summary>
+    /// The beat's own goal is the only plan a write has. When the caller supplied no goal, fall
+    /// back to the stored beat's Description, then its Title; a beat with neither is refused.
+    /// </summary>
+    private async Task<BeatContext> EnsureBeatGoalAsync(BeatContext context, Guid beatId, CancellationToken ct)
+    {
+        if (!string.IsNullOrWhiteSpace(context.BeatGoal)) return context;
+
+        string? title = null;
+        if (beatId != Guid.Empty && dbFactory != null)
+        {
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+            var row = await db.Beats.AsNoTracking().IgnoreQueryFilters()
+                .Where(b => b.Id == beatId)
+                .Select(b => new { b.Title, b.Description })
+                .FirstOrDefaultAsync(ct);
+            if (row != null)
+            {
+                if (!string.IsNullOrWhiteSpace(row.Description))
+                    return context with { BeatGoal = row.Description.Trim() };
+                title = row.Title;
+            }
+        }
+
+        if (!string.IsNullOrWhiteSpace(title))
+            return context with { BeatGoal = title.Trim() };
+
+        throw new InvalidOperationException(
+            (beatId == Guid.Empty ? "This write" : $"Beat {beatId}") +
+            " has no Description and no Title, so there is nothing to write it from. Give the beat a " +
+            "title and a description of what happens (update_beat_metadata / --edit-beat) and write it again.");
+    }
+
+    /// <summary>
     /// Walk ParentNodeId from any node (typically a chapter) up to the nearest "book" or
-    /// "series" ancestor. Shared by the DefaultLocation fallback and the chapter-close summary
-    /// extraction below — same shape as EntityDisambiguationService.ResolveNearestBookOrSeriesNodeIdAsync,
+    /// "series" ancestor. Used by the DefaultLocation fallback — same shape as EntityDisambiguationService.ResolveNearestBookOrSeriesNodeIdAsync,
     /// duplicated locally (rather than taking a dependency on that service) since ProseWriterRouter
     /// already opens its own short-lived DbContext for each of these one-off lookups.
     /// </summary>

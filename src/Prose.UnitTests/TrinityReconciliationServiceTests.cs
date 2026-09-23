@@ -17,16 +17,15 @@ namespace Prose.UnitTests;
 /// ReconcileAppliedDriftAsync's real-run branches) are NOT covered here — LlmVotingService is an
 /// external MindAttic.Legion type with no test double in this suite, matching the established
 /// pattern (ContinuityApplyServiceCheckAppliedClaimsTests passes voting: null! and only exercises
-/// methods that never call it). The outline_section revert path is covered (no SQL Server temporal
-/// query involved); beat_repair/beat_patch/entity_record revert (FOR SYSTEM_TIME AS OF) require a
+/// methods that never call it). A legacy outline_section decision (outlines were removed
+/// 2026-09-22) must still reopen the ledger on revert; beat_repair/beat_patch/entity_record revert (FOR SYSTEM_TIME AS OF) require a
 /// real SQL Server temporal table and are exercised live in the Phase 3/4 hand-picked-divergence
 /// proof instead of here, since SQLite (this suite's in-memory provider) has no temporal-table
 /// support. <see cref="TrinityReconciliationService.IsUnsafeLinePatch"/> (the surgical
 /// single-paragraph beat-patch guard) is a pure static predicate and is covered directly in
 /// <c>TrinityPatchGuardTests</c>, mirroring how the (since-deleted, RFC 0009) <c>BeatRepairService.IsUnsafeShrink</c> was
-/// covered in <c>BeatRepairServiceTests</c>; <c>PatchBeatAsync</c> itself is not, for the same
-/// reason <c>PatchOutlineSectionAsync</c> isn't — both call the external <c>ILlmService</c> with no
-/// test double in this suite.
+/// covered in <c>BeatRepairServiceTests</c>; <c>PatchBeatAsync</c> itself is not — it calls the
+/// external <c>ILlmService</c>, which has no test double in this suite.
 /// </summary>
 [TestFixture]
 public class TrinityReconciliationServiceTests
@@ -148,63 +147,14 @@ public class TrinityReconciliationServiceTests
         Assert.That(await svc.LocateBeatForClaimAsync(claim), Is.Null);
     }
 
-    // ── ResolveClaimBookNodeIdAsync — cross-book contradiction-group targeting ──
-    // GetContradictionGroups groups purely by (EntityId, Predicate), not by book, so a losing
-    // outline claim from a DIFFERENT book than the one currently being reconciled can land in the
-    // same group (a crossover character asserted in two books). Found live 2026-08-19: patching
-    // via the outer book's NodeId silently targeted the wrong book's outline and always refused.
-
-    [Test]
-    public async Task ResolveClaimBookNodeIdAsync_SameBookSlug_ReturnsCurrentBookNodeId()
-    {
-        var (bookId, _) = await SeedBookWithChapterAsync();
-        var result = await svc.ResolveClaimBookNodeIdAsync("TESTBOOK", "TESTBOOK", bookId, CancellationToken.None);
-        Assert.That(result, Is.EqualTo(bookId));
-    }
-
-    [Test]
-    public async Task ResolveClaimBookNodeIdAsync_NullClaimBookSlug_FallsBackToCurrentBookNodeId()
-    {
-        var (bookId, _) = await SeedBookWithChapterAsync();
-        var result = await svc.ResolveClaimBookNodeIdAsync(null, "TESTBOOK", bookId, CancellationToken.None);
-        Assert.That(result, Is.EqualTo(bookId));
-    }
-
-    [Test]
-    public async Task ResolveClaimBookNodeIdAsync_DifferentBookSlug_ResolvesToThatBooksOwnNodeId()
-    {
-        var (currentBookId, _) = await SeedBookWithChapterAsync();
-
-        await using var db = await dbFactory.CreateDbContextAsync();
-        var otherBook = new BookNode { Id = Guid.NewGuid(), UniverseId = Universe.GlmzId, Slug = "OTHERBOOK", Title = "Other Book" };
-        db.Nodes.Add(otherBook);
-        await db.SaveChangesAsync();
-
-        var result = await svc.ResolveClaimBookNodeIdAsync("OTHERBOOK", "TESTBOOK", currentBookId, CancellationToken.None);
-
-        Assert.That(result, Is.EqualTo(otherBook.Id));
-        Assert.That(result, Is.Not.EqualTo(currentBookId));
-    }
-
-    [Test]
-    public async Task ResolveClaimBookNodeIdAsync_UnresolvableBookSlug_ReturnsNull()
-    {
-        var (bookId, _) = await SeedBookWithChapterAsync();
-        var result = await svc.ResolveClaimBookNodeIdAsync("NO-SUCH-BOOK", "TESTBOOK", bookId, CancellationToken.None);
-        Assert.That(result, Is.Null);
-    }
-
     // ── RevertDecisionAsync — ledger-resolution dispatch ─────────────────────
 
     [Test]
-    public async Task RevertDecisionAsync_OutlineSectionMechanism_RestoresContentAndFlipsLedgerBackToNew()
+    public async Task RevertDecisionAsync_LegacyOutlineSectionMechanism_StillFlipsLedgerBackToNew()
     {
-        var (bookId, _) = await SeedBookWithChapterAsync();
-        var originalContent = "Rook has dark red hair.";
-        await canonDocs.SetNodeOutlineSectionAsync(bookId, "Characters", originalContent);
-
-        // Seed the ledger state as if a real ReconcileContradictionGroupAsync already ran:
-        // winner (prose, "platinum blonde") CANONICAL, loser (outline, "dark red") REJECTED.
+        // Outlines were removed 2026-09-22 (author ruling), so a decision recorded before then that
+        // edited an outline section has nothing left to restore. Undoing it must still reopen the
+        // ledger side — the part of a revert that does not depend on the edited artifact existing.
         var winner = continuityStore.Upsert(new ContinuityClaim
         {
             EntityId = "e1", EntityName = "Rook", EntityKind = "person", Predicate = "hair_color",
@@ -220,9 +170,6 @@ public class TrinityReconciliationServiceTests
         Assert.That(continuityStore.GetByEntity("e1").First(c => c.ClaimUid == winner.ClaimUid).Status, Is.EqualTo("CANONICAL"));
         Assert.That(continuityStore.GetByEntity("e1").First(c => c.ClaimUid == loser.ClaimUid).Status, Is.EqualTo("REJECTED"));
 
-        // Simulate the edit having landed (the section now says the winning value).
-        await canonDocs.SetNodeOutlineSectionAsync(bookId, "Characters", "Rook has platinum blonde hair.");
-
         var decisionId = Guid.NewGuid();
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
@@ -235,11 +182,7 @@ public class TrinityReconciliationServiceTests
                 EditMechanism = "outline_section",
                 EditTargetJson = JsonSerializer.Serialize(new Dictionary<string, object>
                 {
-                    ["outline_section"] = new[] { new { nodeId = bookId, sectionType = "Characters" } },
-                }),
-                PreEditSnapshotJson = JsonSerializer.Serialize(new[]
-                {
-                    new { nodeId = bookId, sectionType = "Characters", content = originalContent },
+                    ["outline_section"] = new[] { new { nodeId = Guid.NewGuid(), sectionType = "Characters" } },
                 }),
                 DryRun = false, Reverted = false, CreatedAt = DateTime.UtcNow,
             });
@@ -249,10 +192,6 @@ public class TrinityReconciliationServiceTests
         var reverted = await svc.RevertDecisionAsync(decisionId);
 
         Assert.That(reverted, Is.True);
-
-        var sections = await canonDocs.GetNodeOutlineSectionsAsync(bookId);
-        Assert.That(sections.First(s => s.SectionType == "Characters").Content, Is.EqualTo(originalContent));
-
         Assert.That(continuityStore.GetByEntity("e1").First(c => c.ClaimUid == winner.ClaimUid).Status, Is.EqualTo("NEW"));
         Assert.That(continuityStore.GetByEntity("e1").First(c => c.ClaimUid == loser.ClaimUid).Status, Is.EqualTo("NEW"));
 

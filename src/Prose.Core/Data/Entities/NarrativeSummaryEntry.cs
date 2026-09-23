@@ -5,6 +5,7 @@ namespace Prose.Core.Data.Entities;
 /// Persisted so the summary chain survives app restarts — without this, the chain
 /// resets between sessions and coherence falls back to the (now capped) SceneSoFar.
 /// </summary>
+// PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
 public class NarrativeSummaryEntry
 {
     public Guid   Id        { get; set; }

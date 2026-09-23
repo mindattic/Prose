@@ -5,9 +5,9 @@ using Prose.Core.Services;
 namespace Prose.Cli;
 
 /// <summary>
-/// <c>prose --create-book</c> — create a new empty root node (no beats). The
-/// bible-first entry point for a brand-new book; write the bible + beats
-/// afterward (UI, <c>--edit-beat</c>, or <c>--write-story</c>).
+/// <c>prose --create-book</c> — create a new empty root node (no beats, no outline — a book is
+/// its beats, drawing on entities, author ruling 2026-09-22). Plan it afterward with planned beats
+/// (a title + description, no text: <c>prose --beat insert</c> / MCP <c>insert_beat</c>), then write them.
 ///
 ///   --title "..."          Display title. Required.
 ///   --code &lt;CODE&gt;          Optional short reference code (e.g. SRZR). Upper-cased; must be unique.

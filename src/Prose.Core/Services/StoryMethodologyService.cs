@@ -98,56 +98,6 @@ public class StoryMethodologyService
     }
 
     /// <summary>
-    /// Builds the full methodology context block for injection into the OutlineService prompt.
-    /// Tells the LLM exactly what beats need to be at what positions.
-    /// </summary>
-    public string GetOutlineMethodologyPrompt(int targetBeats)
-    {
-        var beatAssignments = Enumerable.Range(0, targetBeats)
-            .Select(i =>
-            {
-                var role = GetBeatRole(i, targetBeats);
-                return $"  Beat {i + 1}/{targetBeats}: {role.Name} — {role.Description}";
-            })
-            .ToList();
-
-        return $"""
-            STORYTELLING METHODOLOGY — STRUCTURAL REQUIREMENTS:
-
-            This story must follow the proven structure of emotionally satisfying narrative.
-            Each beat listed below has a specific structural role. Honor these roles exactly.
-
-            BEAT ASSIGNMENTS:
-            {string.Join("\n", beatAssignments)}
-
-            SCENE-SEQUEL RULE: Every beat is either a Scene or a Sequel.
-            - Scene: Character has Goal → faces Conflict → ends in Disaster (yes-but or no-and). Never "yes."
-            - Sequel: Character Reacts emotionally → weighs Dilemma → makes Decision. No action until the decision is made.
-            The alternation of Scene and Sequel creates the tension-release rhythm that keeps readers engaged.
-
-            WANT vs NEED: The protagonist must have:
-            - WANT: A concrete external goal they're consciously pursuing (the contract, the truth, the escape)
-            - NEED: An internal truth they are unconsciously avoiding (trust, forgiveness, accepting loss, belonging)
-            The story tests whether the protagonist can sacrifice their Want to achieve their Need.
-            State both in the character_arcs. The arc is the journey from Want-driven to Need-earned.
-
-            TENSION CURVE: Tension should follow a dramatic curve — not monotonically rising.
-            - Act 1 (setup): moderate rise, 3-5/10
-            - Catalyst: spike to 6-7/10
-            - Fun and Games: varies 4-7/10 with peaks
-            - Midpoint: either a false peak (7-8) or false valley (2-3)
-            - Bad Guys Close In: rising 6-8/10
-            - All Is Lost: 9/10
-            - Dark Night: low, 2-3/10 (quiet before the storm)
-            - Finale: 8-10/10, climax then resolution falls to 3-4/10
-
-            THEMATIC ARGUMENT: The theme is not a topic (loyalty, corruption). It is an argument:
-            "Loyalty without judgment destroys the people you love." The story must TEST this argument —
-            let the antagonist embody the counter-argument — and reach a conclusion.
-            """;
-    }
-
-    /// <summary>
     /// Returns ideal tension target for a beat based on the dramatic curve.
     /// Use as a suggestion, not a mandate — the outline beat's own tension field takes precedence.
     /// </summary>

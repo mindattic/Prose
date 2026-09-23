@@ -46,19 +46,18 @@ or reviews from this runbook** — if the user wants a score, they will say so e
    much of the book a human/agent-driven sweep round reads.
 
 2. **AUDIT (report-only agents, one per 1–2 books).** Each agent reads the book
-   end-to-end and reports on the six dimensions of `docs/LOGIC.md` §3:
+   end-to-end and reports on these dimensions of `docs/LOGIC.md` §3:
    causality chain / knowledge states (incl. names-before-coining) / timeline (respect
-   outline-marked deliberate impossibilities) / plant-payoff ledger incl. arithmetic walked
-   end-to-end / orphan references (grep distinctive phrases of every disabled beat; check
-   IsChapterStart stranded on disabled beats) / outline agreement.
+   deliberate impossibilities the prose itself marks as such) / plant-payoff ledger incl.
+   arithmetic walked end-to-end / orphan references (grep distinctive phrases of every disabled
+   beat; check IsChapterStart stranded on disabled beats). There is no outline-agreement
+   dimension: the outline was removed 2026-09-22 (author ruling — a book is its beats, drawing on
+   entities), so the prose is checked against itself and against the canon entity records only.
    Findings: severity (BLOCKER/MODERATE/MINOR) + SortKeys + quoted text + minimal fix proposal.
    Instruct verbatim: "Do not invent problems — if the logic holds, say so."
-   Outline agreement is checked ACROSS ALTITUDES (docs/LOGIC.md §8): (the former `prose --altitude-audit` — deleted 2026-09-06 (RFC 0010); the sweep's own `outline_agreement` dimension covers this now) `prose --altitude-audit
-   --slug <slug>` automates the 10,000↔100 ft comparison (outline/blueprint vs chapter
-   synopses; findings filed as OutlineDrift; no side auto-wins — the divergence is judged
-   case-by-case on evidence, per docs/LOGIC.md §3.6); agents may read the book's
-   `story-synopsis.txt` (or `NodeChapterSummaries`) for cheap chapter-altitude scoping
-   before deep beat reads.
+   For chapter-altitude scoping, read the chapter itself (`prose --read-beats --slug <slug>`
+   `--from N --to M`, or MCP `read_beats` with `groupByChapter: true`) — there is no stored
+   chapter synopsis to read instead.
    Cross-book canon (shared characters, series arcs): one additional cross-read agent over the
    affected set when a series book is in scope.
 
@@ -77,9 +76,9 @@ or reviews from this runbook** — if the user wants a score, they will say so e
 
 5. **FIX (separate agents, the audit report as input).** Minimal-splice discipline per
    `docs/LOGIC.md` §4: prefer data fix → clause → passage → rewrite; reassign to established
-   cast, reconcile counts to the load-bearing version; for an outline/prose divergence, state
+   cast, reconcile counts to the load-bearing version; for a prose/entity-record divergence, state
    which side the evidence shows is stale and fix that side in the same change (+ digest/doctor)
-   — never a blanket "outline always wins" or "prose always wins" shortcut.
+   — never a blanket "record always wins" or "prose always wins" shortcut.
 
 6. **VERIFY (inside each fix pass).** Changed passages re-read with neighbors; old-defect
    greps = 0; disabled-content greps = 0; repaired arithmetic walked and printed; BOM checks;

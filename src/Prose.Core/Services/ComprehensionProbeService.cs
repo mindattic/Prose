@@ -30,9 +30,8 @@ namespace Prose.Core.Services;
 ///
 /// <para>This is a MEASUREMENT, not a vote — it emits no scores and is deliberately
 /// outside the SS-A44 <see cref="VotingGate"/> (same exemption as craft_checklist and the
-/// logic sweep). Cost gate: probe results are cached per (chapter-source-hash, probe
-/// model) in <see cref="NodeChapterSummary.ComprehensionJson"/> — unchanged chapters
-/// never re-bill.</para>
+/// logic sweep). Nothing is cached: the ground-truth synopsis and the probe are both
+/// regenerated on every run (no stored retelling of the story — author ruling 2026-09-22).</para>
 /// </summary>
 public sealed class ComprehensionProbeService(
     IDbContextFactory<ProseDbContext> dbFactory,
@@ -60,8 +59,8 @@ public sealed class ComprehensionProbeService(
         IReadOnlyList<ChapterProbeResult> Chapters,
         int FindingsFiled, int ChaptersProbed, int ChaptersFromCache);
 
-    /// <summary>Probe every chapter of the book. Ensures the Sonnet ground-truth
-    /// synopsis exists first (hash-cached — only changed chapters bill), then runs
+    /// <summary>Probe every chapter of the book. Generates the Sonnet ground-truth
+    /// synopsis first (unstored — every chapter bills), then runs
     /// the Haiku probe + arbiter per chapter, files confirmed defects as findings,
     /// and supersedes stale COMPREHENSION findings per chapter (delete-then-recreate,
     /// same lifecycle as the craft audit).</summary>
@@ -79,10 +78,11 @@ public sealed class ComprehensionProbeService(
             title = node.Title;
         }
 
-        // Ground truth first (Sonnet, hash-cached). Also yields the rolling recaps.
-        var summaries = await synopsis.GetChapterSummariesAsync(bookNodeId, force: false, ct);
+        // Ground truth first (Sonnet, unstored). Also yields the rolling recaps.
+        var summaries = await synopsis.GetChapterSummariesAsync(bookNodeId, ct);
         var sources = await synopsis.GetChapterSourcesAsync(bookNodeId, ct);
         var summaryByIndex = summaries.ToDictionary(s => s.Index, s => s.Synopsis);
+        var factsByIndex = summaries.ToDictionary(s => s.Index, s => s.FactsJson);
 
         var results = new List<ChapterProbeResult>();
         int filed = 0, probed = 0, cached = 0;
@@ -97,7 +97,7 @@ public sealed class ComprehensionProbeService(
                 continue;
             }
 
-            var result = await ProbeChapterAsync(bookNodeId, slug, ch, summaryByIndex, force, ct);
+            var result = await ProbeChapterAsync(slug, ch, summaryByIndex, factsByIndex.GetValueOrDefault(ch.Index, "{}"), ct);
             results.Add(result);
             if (result.FromCache) cached++; else probed++;
             // Cached chapters' defects were filed on their original run — count only fresh filings.
@@ -130,44 +130,17 @@ public sealed class ComprehensionProbeService(
     }
 
     private async Task<ChapterProbeResult> ProbeChapterAsync(
-        Guid bookNodeId, string slug, SynopsisExportService.ChapterUnit ch,
-        IReadOnlyDictionary<int, string> summaryByIndex, bool force, CancellationToken ct)
+        string slug, SynopsisExportService.ChapterUnit ch,
+        IReadOnlyDictionary<int, string> summaryByIndex, string groundFactsJson, CancellationToken ct)
     {
         var probeModel = settings.ComprehensionProbeModel;
         var arbiterModel = settings.ComprehensionArbiterModel;
-        var sourceHash = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(ch.SourceText)));
-
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var row = await db.NodeChapterSummaries
-            .FirstOrDefaultAsync(s => s.NodeId == bookNodeId && s.ChapterIndex == ch.Index, ct);
-
-        // ── cache hit: unchanged chapter + same instruments = free re-run ──────────
-        if (!force && row?.ComprehensionJson is { Length: > 0 } cachedJson)
-        {
-            var parsed = TryParseCache(cachedJson);
-            if (parsed != null
-                && string.Equals(parsed.Value.hash, sourceHash, StringComparison.OrdinalIgnoreCase)
-                && string.Equals(parsed.Value.probeModel, probeModel, StringComparison.OrdinalIgnoreCase)
-                && string.Equals(parsed.Value.arbiterModel, arbiterModel, StringComparison.OrdinalIgnoreCase))
-            {
-                var (defects, confusions) = parsed.Value.payload;
-                // Applied on the cache path too, not just after a live arbitration: cache rows are
-                // keyed on (source hash, probe model, arbiter model), so rows written before this
-                // guard existed would otherwise keep reporting their self-refuting defects forever
-                // — the guard would only ever reach a chapter whose text happened to change.
-                defects = DemoteSelfDeclaredIntentional(defects);
-                return new ChapterProbeResult(ch.Index, ch.Title,
-                    defects.Any(d => d.ReaderPlausible) ? "cached-defects" : "cached-clean",
-                    defects, confusions, FromCache: true);
-            }
-        }
-
         // ── 1. the probe: a cold cheap reader with only the recap for context ─────
         var recap = BuildRollingRecap(ch.Index, summaryByIndex);
         var probe = await ProbeOnceAsync(ch, recap, probeModel, ct);
 
         // ── 2. deterministic prescreen: is arbitration even needed? ───────────────
-        var groundFacts = ParseFacts(row?.FactsJson ?? "{}");
+        var groundFacts = ParseFacts(groundFactsJson);
         var flags = Prescreen(groundFacts, probe);
 
         // ── 3. arbiter: candidate mismatches judged against the actual text ───────
@@ -208,23 +181,6 @@ public sealed class ComprehensionProbeService(
                 $"{FindingSummaryPrefix} [{d.Kind}] {ch.Title}: {d.Description}",
                 snippet: d.Evidence,
                 suggestedFix: null);
-        }
-
-        // ── 5. persist the cache row ───────────────────────────────────────────────
-        var cache = new
-        {
-            probeHash = sourceHash,
-            probeModel,
-            arbiterModel,
-            probe = new { summary = probe.Summary, facts = probe.FactsRaw, confusions = probe.Confusions, prediction = probe.Prediction },
-            defects = allDefects,
-            evaluatedAt = DateTime.UtcNow,
-        };
-        if (row != null)
-        {
-            row.ComprehensionJson = JsonSerializer.Serialize(cache);
-            row.UpdatedAt = DateTime.UtcNow;
-            await db.SaveChangesAsync(ct);
         }
 
         var live = allDefects.Where(d => d.ReaderPlausible).ToList();
@@ -509,32 +465,6 @@ public sealed class ComprehensionProbeService(
             }
         }
         return sb.Length > 0 ? sb.ToString() : "(No recap available.)";
-    }
-
-    // internal + static (not private instance) so the 2026-08-09 arbiterModel-cache-key fix
-    // is directly unit-testable without constructing the full service (ILlmService, etc).
-    internal static (string hash, string probeModel, string arbiterModel, (List<ProbeDefect>, List<string>) payload)? TryParseCache(string json)
-    {
-        try
-        {
-            using var doc = JsonDocument.Parse(json);
-            var root = doc.RootElement;
-            var hash = root.TryGetProperty("probeHash", out var h) ? h.GetString() ?? "" : "";
-            var model = root.TryGetProperty("probeModel", out var m) ? m.GetString() ?? "" : "";
-            // Stored alongside probeModel (see the write path below) but was never read back —
-            // the cache-hit check only compared hash+probeModel, so changing
-            // settings.ComprehensionArbiterModel (e.g. upgrading the arbiter for better
-            // judgment) silently kept serving defects judged under the OLD arbiter forever,
-            // until the chapter's own text happened to change.
-            var arbiter = root.TryGetProperty("arbiterModel", out var am) ? am.GetString() ?? "" : "";
-            var defects = new List<ProbeDefect>();
-            if (root.TryGetProperty("defects", out var arr) && arr.ValueKind == JsonValueKind.Array)
-                defects = JsonSerializer.Deserialize<List<ProbeDefect>>(arr.GetRawText()) ?? new();
-            var confusions = root.TryGetProperty("probe", out var p) && p.TryGetProperty("confusions", out var c)
-                ? StringList(c) : new List<string>();
-            return (hash, model, arbiter, (defects, confusions));
-        }
-        catch { return null; }
     }
 
     private static string Truncate(string s, int max) =>

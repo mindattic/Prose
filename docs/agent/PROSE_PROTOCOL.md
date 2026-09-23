@@ -42,14 +42,17 @@ database.
 
 ## Canon and prose workflow
 
-For a new or materially changed book, work in this order: resolve universe; inspect the book
-outline and chapter synopsis; verify entities and relationships; prepare the construction
-blueprint; generate or edit beats through the ProseWriterRouter path; run deterministic checks;
-run Reader-Proxy QA and the logic sweep; repair named findings with minimal edits; repeat until
-the convergence gate is satisfied; then export.
+A book is its beats, drawing on canon entities; there is no outline, bible, structural blueprint
+or stored summary of it (author ruling 2026-09-22). For a new or materially changed book, work in
+this order: resolve universe; verify entities and relationships; plan beats (a title and a
+description of what happens, no text); generate or edit beats through the ProseWriterRouter path;
+run deterministic checks and the logic sweep; repair named findings with minimal edits; read the
+book front to back with read receipts (`read_beats` with `markRead`); then export, which refuses
+while any beat is unread.
 
-At beat scope, the engine loads the universal engine rules, base craft, universe craft, book
-outline, applicable entity records, narrator register, blueprint slice, and recent beat window.
+At beat scope, the engine writes from the beat's own description and loads the universal engine
+rules, base craft, universe craft, applicable entity records, narrator register, and recent beat
+window.
 Do not paste the entire corpus into a prompt to bypass this process.
 
 ## Transport-neutral operation envelope

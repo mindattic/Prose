@@ -81,8 +81,8 @@ public class UniverseCliDispatchTests
     {
         Assert.Multiple(() =>
         {
-            Assert.That(WouldDispatchToUniverseCli("--universe", "source", "--generate-node-doc", "--slug", "x"), Is.False);
-            Assert.That(WouldDispatchToUniverseCli("--universe", "source", "--generate-blueprint", "--slug", "x"), Is.False);
+            Assert.That(WouldDispatchToUniverseCli("--universe", "source", "--read-status", "--node", "x"), Is.False);
+            Assert.That(WouldDispatchToUniverseCli("--universe", "source", "--expand-beat", "--slug", "x"), Is.False);
             Assert.That(WouldDispatchToUniverseCli("--universe", "glmz", "--beat", "list", "--node", "x"), Is.False);
         });
     }

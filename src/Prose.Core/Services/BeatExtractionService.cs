@@ -7,9 +7,11 @@ namespace Prose.Core.Services;
 /// One consolidated post-write extraction call, replacing separate per-beat Haiku calls that
 /// were each asking the model to look at the same just-written beat and pull out a different
 /// slice of structured fact:
-///   - ReaderKnowledgeService.ExtractAsync        (reader-knowledge revelations)
-///   - NarrativeSummaryService.SummarizeSceneAsync (rolling scene summary)
 ///   - BookStateLedgerService.ExtractAndRecordAsync (arc-level plot-state transitions)
+///   - BeatPlaceService (scene location) and MotifLedgerService (recurring-image candidates)
+///
+/// The READER-FACTS and SCENE-SUMMARY slices were removed 2026-09-22 (author ruling: no stored
+/// summary or retelling of the story — the beats are the story).
 ///
 /// The NEW-THREADS / RESOLVED-THREADS slices moved out on 2026-09-15 (RFC 0013): they only ever
 /// ran here, after Generation, so a hand-spliced or imported beat never registered its promises.
@@ -31,34 +33,20 @@ namespace Prose.Core.Services;
 /// </summary>
 public class BeatExtractionService(
     ILlmService llm,
-    ReaderKnowledgeService readerKnowledge,
-    NarrativeSummaryService narrativeSummary,
     BookStateLedgerService bookStateLedger,
     ILogger<BeatExtractionService> log,
     BeatPlaceService? beatPlace = null,
     MotifLedgerService? motifLedger = null)
 {
-    private const string ReaderFactsHeader   = "=== READER-FACTS ===";
-    private const string SceneSummaryHeader  = "=== SCENE-SUMMARY ===";
     private const string PlotEventsHeader    = "=== PLOT-EVENTS ===";
     private const string SceneLocationHeader = "=== SCENE-LOCATION ===";
     private const string MotifsHeader        = "=== MOTIFS ===";
 
     private static readonly string System = $"""
-        You are a story continuity editor. Read the beat of prose below ONCE and extract five
-        different kinds of structured fact from it. Output exactly five sections, in this order,
-        each starting with its own header line exactly as shown, and "NONE" under a section (or
-        for SCENE-SUMMARY, an empty line) if that section has nothing to report.
-
-        {ReaderFactsHeader}
-        Up to 3 concrete facts the READER now knows that are narratively significant — character
-        secrets revealed, plot mechanics exposed, relationship dynamics made explicit, world facts
-        established for the first time. Exclude atmosphere/setting description. One per line,
-        prefixed "FACT:".
-
-        {SceneSummaryHeader}
-        Compress this beat into exactly 3-4 sentences: what happened, to whom, what changed, what
-        tension remains. Specific — names, consequences, emotional state. No editorializing.
+        You are a story continuity editor. Read the beat of prose below ONCE and extract three
+        different kinds of structured fact from it. Output exactly three sections, in this order,
+        each starting with its own header line exactly as shown, and "NONE" under a section if
+        that section has nothing to report.
 
         {PlotEventsHeader}
         Given the CURRENT PLOT STATE below (already recorded — do not repeat), list ONLY NEW
@@ -87,7 +75,7 @@ public class BeatExtractionService(
         """;
 
     /// <summary>
-    /// Fire one consolidated Haiku call over the just-written beat and persist all five slices
+    /// Fire one consolidated Haiku call over the just-written beat and persist all three slices
     /// via each service's own Persist*-only method. Fire-and-forget from ProseWriterRouter;
     /// never blocks prose output. Non-fatal end-to-end — any failure is logged and swallowed so
     /// one bad response doesn't cost every downstream service its update for this beat; where
@@ -138,27 +126,6 @@ public class BeatExtractionService(
         if (string.IsNullOrWhiteSpace(raw)) return;
         var sections = SplitSections(raw);
 
-        if (sections.TryGetValue(ReaderFactsHeader, out var readerBlock))
-        {
-            var facts = readerBlock.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-                .Where(l => l.StartsWith("FACT:", StringComparison.OrdinalIgnoreCase))
-                .Select(l => l["FACT:".Length..].Trim())
-                .Where(f => f.Length > 10)
-                .Take(3)
-                .ToList();
-            if (facts.Count > 0)
-            {
-                try { await readerKnowledge.PersistFactsAsync(facts, nodeId, ct); }
-                catch (Exception ex) { log.LogWarning(ex, "BeatExtractionService: reader-facts persist failed for beat {BeatId}", beatId); }
-            }
-        }
-
-        if (sections.TryGetValue(SceneSummaryHeader, out var summaryBlock) && !string.IsNullOrWhiteSpace(summaryBlock))
-        {
-            try { await narrativeSummary.PersistSummaryAsync(summaryBlock.Trim(), nodeId, beatId == Guid.Empty ? null : beatId, ct); }
-            catch (Exception ex) { log.LogWarning(ex, "BeatExtractionService: scene-summary persist failed for beat {BeatId}", beatId); }
-        }
-
         if (sections.TryGetValue(SceneLocationHeader, out var locationBlock) && beatPlace != null && beatId != Guid.Empty)
         {
             var place = locationBlock.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
@@ -197,12 +164,12 @@ public class BeatExtractionService(
         }
     }
 
-    /// <summary>Splits the model's response on the five known header lines. Tolerant of a
+    /// <summary>Splits the model's response on the known header lines. Tolerant of a
     /// missing section (older/degraded response) — callers TryGetValue and skip what's absent
     /// rather than failing the whole extraction over one missing header.</summary>
     private static Dictionary<string, string> SplitSections(string raw)
     {
-        var headers = new[] { ReaderFactsHeader, SceneSummaryHeader, PlotEventsHeader, SceneLocationHeader, MotifsHeader };
+        var headers = new[] { PlotEventsHeader, SceneLocationHeader, MotifsHeader };
         var result = new Dictionary<string, string>();
         var positions = headers
             .Select(h => (Header: h, Index: raw.IndexOf(h, StringComparison.Ordinal)))

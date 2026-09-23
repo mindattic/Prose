@@ -25,7 +25,7 @@ public static class RenameEntityCli
             var preview = await rename.PreviewAsync(entity, node, newName);
             if (!preview.Ok) { Console.Error.WriteLine($"[rename-entity] {preview.Error}"); return 1; }
             Console.WriteLine($"[rename-entity] Preview: {preview.OldName} → {preview.NewName} ({preview.EntityId})");
-            Console.WriteLine($"  outline sections: {preview.OutlineSections.Count}; beats: {preview.BeatIds.Count}; ledger claims: {preview.LedgerCount}");
+            Console.WriteLine($"  beats: {preview.BeatIds.Count}; ledger claims: {preview.LedgerCount}");
             Console.WriteLine("Nothing changed. Re-run with --apply --yes after review.");
             return 0;
         }
@@ -37,7 +37,7 @@ public static class RenameEntityCli
 
         var result = await rename.ApplyAsync(entity, node, newName, Flag(args, "--note"));
         if (!result.Ok) { Console.Error.WriteLine($"[rename-entity] {result.Error}"); return 1; }
-        Console.WriteLine($"[rename-entity] Renamed {result.OldName} → {result.NewName}; outline={result.OutlineSectionsChanged}, beats={result.BeatsChanged}, ledger={result.LedgerClaimsRelabeled}.");
+        Console.WriteLine($"[rename-entity] Renamed {result.OldName} → {result.NewName}; beats={result.BeatsChanged}, ledger={result.LedgerClaimsRelabeled}.");
         return 0;
     }
 

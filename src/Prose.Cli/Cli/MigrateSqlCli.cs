@@ -51,10 +51,6 @@ public static class MigrateSqlCli
         // Codex docs, Claude Code memory) can be backed up + restored by timestamp.
         var markdownFiles = args.Contains("--markdown-files");
 
-        // Node spine: add NodeUserStories columns to Nodes + create
-        // NodeAmendments and NodeSpineVersions tables.
-        var nodeSpine = args.Contains("--node-spine");
-
         // Emotional examination (SS-A15): 4 new tables + Beat.EmotionalScore column.
         var emotionalExamination = args.Contains("--emotional-examination");
 
@@ -77,7 +73,7 @@ public static class MigrateSqlCli
         // RFC 0007 "Universe Interchange": create OutboxEvents (Hub → consumer-app queue).
         var outboxEvents = args.Contains("--outbox-events");
 
-        if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !markdownFiles && !nodeSpine && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue && !beatScoreDimensions && !outboxEvents)
+        if (!schema && !charRelational && !charDropLegacy && !BeatNodesoftDelete && !BeatNodeVersion && !entityGrammarNote && !nodeCode && !entityReviews && !markdownFiles && !emotionalExamination && !nodeDraftFlag && !reviewContradictions && !distributedQueue && !beatScoreDimensions && !outboxEvents)
         {
             Console.WriteLine("Usage:");
             Console.WriteLine("  prose --migrate-sql --schema                    apply EF migrations + enable SYSTEM_VERSIONING");
@@ -87,7 +83,6 @@ public static class MigrateSqlCli
             Console.WriteLine("  prose --migrate-sql --story-code               add NodeCode NVARCHAR(20) to Nodes (unique per non-null value)");
             Console.WriteLine("  prose --migrate-sql --entity-reviews            create EntityReviews + EntityReviewSummaries tables");
             Console.WriteLine("  prose --migrate-sql --markdown-files            create MarkdownFiles table (project-rules, Codex, memory backup)");
-            Console.WriteLine("  prose --migrate-sql --node-spine              add NodeUserStories to Nodes; create NodeAmendments + NodeSpineVersions");
             Console.WriteLine("  prose --migrate-sql --emotional-examination     create EmotionalExaminations/DimensionResults/BeatScores/CharacterEmotionalLedgers + Beat.EmotionalScore (SS-A15)");
             Console.WriteLine("  prose --migrate-sql --node-draft-flag         add IsDraft BIT to Nodes (+ history); draft subtrees are ignored by the tools");
             Console.WriteLine("  prose --migrate-sql --review-contradictions     add Contradictions to EntityReviews + NodeReviews; Gripes+Contradictions to NodeReviewBeatScores");
@@ -402,89 +397,6 @@ public static class MigrateSqlCli
             catch (Exception ex)
             {
                 Console.WriteLine($"  ✘ entity-reviews migration failed: {ex.Message}");
-                failures++;
-            }
-        }
-
-        if (nodeSpine)
-        {
-            using var scope = sp.CreateScope();
-            var db = scope.ServiceProvider.GetRequiredService<ProseDbContext>();
-
-            Console.WriteLine();
-            Console.WriteLine("[node-spine]");
-            try
-            {
-                // Phase A: add NodeUserStories + NodeUserStoriesUpdatedAt to Nodes
-                // (temporal table — must turn versioning off, alter both tables, then re-enable).
-                await db.Database.ExecuteSqlRawAsync("""
-                    IF NOT EXISTS (SELECT 1 FROM sys.columns
-                                   WHERE object_id = OBJECT_ID('Nodes') AND name = 'NodeUserStories')
-                    BEGIN
-                        ALTER TABLE [dbo].[Nodes] SET (SYSTEM_VERSIONING = OFF);
-                        ALTER TABLE [dbo].[Nodes]         ADD [NodeUserStories]           NVARCHAR(MAX)  NULL;
-                        ALTER TABLE [dbo].[Nodes_History] ADD [NodeUserStories]           NVARCHAR(MAX)  NULL;
-                        ALTER TABLE [dbo].[Nodes]         ADD [NodeUserStoriesUpdatedAt]  DATETIME2      NULL;
-                        ALTER TABLE [dbo].[Nodes_History] ADD [NodeUserStoriesUpdatedAt]  DATETIME2      NULL;
-                        ALTER TABLE [dbo].[Nodes]
-                            SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Nodes_History],
-                                                         DATA_CONSISTENCY_CHECK = OFF));
-                    END;
-                    """);
-                Console.WriteLine("  ✔ NodeUserStories columns added to Nodes (+ Nodes_History).");
-
-                // Phase B: create NodeAmendments table.
-                await db.Database.ExecuteSqlRawAsync("""
-                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[NodeAmendments]') AND type = N'U')
-                    BEGIN
-                        CREATE TABLE [dbo].[NodeAmendments] (
-                            [Id]         UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
-                            [NodeId]   UNIQUEIDENTIFIER NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
-                            [SequenceNo] INT              NOT NULL DEFAULT 0,
-                            [Code]       NVARCHAR(20)     NOT NULL DEFAULT '',
-                            [Summary]    NVARCHAR(500)    NOT NULL DEFAULT '',
-                            [Body]       NVARCHAR(MAX)    NOT NULL DEFAULT '',
-                            [CreatedAt]  DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
-                            [CreatedBy]  NVARCHAR(200)    NOT NULL DEFAULT '',
-                            CONSTRAINT [PK_NodeAmendments] PRIMARY KEY ([Id])
-                        );
-                        CREATE        INDEX [IX_NodeAmendments_NodeId]            ON [dbo].[NodeAmendments] ([NodeId]);
-                        CREATE UNIQUE INDEX [IX_NodeAmendments_NodeId_SequenceNo] ON [dbo].[NodeAmendments] ([NodeId], [SequenceNo]);
-                    END;
-                    """);
-                Console.WriteLine("  ✔ NodeAmendments table created (or already exists).");
-
-                // Phase C: create NodeSpineVersions table (bridge).
-                await db.Database.ExecuteSqlRawAsync("""
-                    IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[NodeSpineVersions]') AND type = N'U')
-                    BEGIN
-                        CREATE TABLE [dbo].[NodeSpineVersions] (
-                            [Id]               UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID(),
-                            [NodeId]         UNIQUEIDENTIFIER NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
-                            [NodeVersion]    INT              NOT NULL DEFAULT 0,
-                            [OutlineHash]        NVARCHAR(64)     NOT NULL DEFAULT '',
-                            [UserStoriesHash]  NVARCHAR(64)     NOT NULL DEFAULT '',
-                            [AmendmentCount]   INT              NOT NULL DEFAULT 0,
-                            [PinnedAt]         DATETIME2        NOT NULL DEFAULT SYSUTCDATETIME(),
-                            [PinnedBy]         NVARCHAR(100)    NOT NULL DEFAULT '',
-                            [Notes]            NVARCHAR(1000)   NOT NULL DEFAULT '',
-                            CONSTRAINT [PK_NodeSpineVersions] PRIMARY KEY ([Id])
-                        );
-                        CREATE        INDEX [IX_NodeSpineVersions_NodeId]              ON [dbo].[NodeSpineVersions] ([NodeId]);
-                        CREATE UNIQUE INDEX [IX_NodeSpineVersions_NodeId_NodeVersion] ON [dbo].[NodeSpineVersions] ([NodeId], [NodeVersion]);
-                    END;
-                    """);
-                Console.WriteLine("  ✔ NodeSpineVersions table created (or already exists).");
-
-                // Phase D: enable system versioning on the two new tables.
-                Console.WriteLine("  · enabling system versioning on NodeAmendments + NodeSpineVersions…");
-                await db.EnableSystemVersioningAsync(onError: (t, ex) =>
-                    Console.WriteLine($"  ✘ system versioning failed for {t}: {ex.Message}"));
-                Console.WriteLine("  ✔ both tables are temporal.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"  ✘ node-spine migration failed: {ex.Message}");
                 failures++;
             }
         }

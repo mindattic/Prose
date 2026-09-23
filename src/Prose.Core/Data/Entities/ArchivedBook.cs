@@ -46,6 +46,7 @@ public class ArchivedBook
     // (a description-generation feature overwrote Node.Description for ~30 books
     // with nothing anywhere to recover the prior text from). These 5 close that gap.
     public string? Description { get; set; }
+    // PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
     public string? NodeOutline { get; set; }
     public string? Summary { get; set; }
     public string? Seed { get; set; }
