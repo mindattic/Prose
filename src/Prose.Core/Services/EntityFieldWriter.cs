@@ -116,7 +116,7 @@ public sealed class EntityFieldWriter(
         var updated = after.Deserialize(dataType, Opts)!;
         dataType.GetProperty("Id")?.SetValue(updated, dataType.GetProperty("Id")?.GetValue(current));
         var intended = (JsonObject)JsonSerializer.SerializeToNode(updated, dataType, Opts)!;
-        var changed = fields.Select(f => f.Key).Where(k => !JsonNode.DeepEquals(before[k], intended[k])).ToList();
+        var changed = fields.Select(f => f.Key).Where(k => !FieldPatch.Same(k, before[k], intended[k])).ToList();
         if (changed.Count == 0)
             return new FieldWriteResult(true, null, [], [], ["nothing changed; nothing was written."], 0, null, CanonRecordLoader.Prune(before));
 
@@ -143,7 +143,7 @@ public sealed class EntityFieldWriter(
 
         var fresh = getById.Invoke(repo, [id]);
         var saved = fresh == null ? null : (JsonObject)JsonSerializer.SerializeToNode(fresh, dataType, Opts)!;
-        var notLanded = saved == null ? changed : changed.Where(k => !JsonNode.DeepEquals(intended[k], saved[k])).ToList();
+        var notLanded = saved == null ? changed : changed.Where(k => !FieldPatch.Same(k, intended[k], saved[k])).ToList();
         return new FieldWriteResult(notLanded.Count == 0,
             notLanded.Count == 0 ? null : $"saved, but {notLanded.Count} field(s) read back different from what was written: {string.Join(", ", notLanded)}.",
             changed, notLanded, [], cost.Count, costRuns, CanonRecordLoader.Prune(saved));
@@ -167,6 +167,16 @@ public static class FieldPatch
             .Where(p => p.CanWrite && p.GetCustomAttribute<JsonPropertyNameAttribute>() != null)
             .GroupBy(p => p.GetCustomAttribute<JsonPropertyNameAttribute>()!.Name)
             .ToDictionary(g => g.Key, g => g.First()));
+
+    /// <summary>Whether a field reads the same. Tags are a set — the repositories load them in
+    /// database order, not written order — so they compare without order or case.</summary>
+    public static bool Same(string key, JsonNode? a, JsonNode? b)
+    {
+        if (key == "tags" && a is JsonArray x && b is JsonArray y)
+            return x.Select(n => n?.ToString()?.Trim() ?? "").ToHashSet(StringComparer.OrdinalIgnoreCase)
+                .SetEquals(y.Select(n => n?.ToString()?.Trim() ?? ""));
+        return JsonNode.DeepEquals(a, b);
+    }
 
     public static string Describe(Type t) =>
         t == typeof(string) ? "a string"

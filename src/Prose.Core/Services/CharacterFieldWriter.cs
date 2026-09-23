@@ -115,7 +115,7 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
         }
 
         var intended = (JsonObject)JsonSerializer.SerializeToNode(updated, Opts)!;
-        var changed = fields.Select(f => f.Key).Where(k => !JsonNode.DeepEquals(before[k], intended[k])).ToList();
+        var changed = fields.Select(f => f.Key).Where(k => !FieldPatch.Same(k, before[k], intended[k])).ToList();
         if (changed.Count == 0)
             return new FieldWriteResult(true, null, [], [], [.. warnings, "nothing changed; nothing was written."], 0, null,
                 CanonRecordLoader.Prune(before));
@@ -141,7 +141,7 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
 
         var fresh = characters.GetById(current.Id);
         var saved = fresh == null ? null : (JsonObject)JsonSerializer.SerializeToNode(fresh, Opts)!;
-        var notLanded = saved == null ? changed : changed.Where(k => !JsonNode.DeepEquals(intended[k], saved[k])).ToList();
+        var notLanded = saved == null ? changed : changed.Where(k => !FieldPatch.Same(k, intended[k], saved[k])).ToList();
         return new FieldWriteResult(notLanded.Count == 0,
             notLanded.Count == 0 ? null : $"saved, but {notLanded.Count} field(s) read back different from what was written: {string.Join(", ", notLanded)}.",
             changed, notLanded, warnings, cost.Count, costRuns, CanonRecordLoader.Prune(saved));

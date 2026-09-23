@@ -211,6 +211,11 @@ public class CharacterFieldWriterTests : WorldFixture
         var r = await writer.SetFieldsAsync(c.Id, """{"tags":["fixer"]}""");
         Assert.That(r.Ok, Is.True, r.Error);
         Assert.That(characters.GetById(c.Id)!.Tags, Is.EqualTo(new[] { "fixer" }));
+
+        // Tags are a set: a new tag written first reads back last, and that is not a failed write.
+        var reordered = await writer.SetFieldsAsync(c.Id, """{"tags":["researcher","fixer"]}""");
+        Assert.That(reordered.Ok, Is.True, reordered.Error);
+        Assert.That(characters.GetById(c.Id)!.Tags, Is.EquivalentTo(new[] { "fixer", "researcher" }));
     }
 
     [Test]
