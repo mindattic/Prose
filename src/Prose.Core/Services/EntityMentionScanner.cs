@@ -328,6 +328,26 @@ public static class EntityMentionScanner
         // hand still survives through WithPinnedMentions.
         candidates.RemoveAll(c => Stopwords.Contains(c.Text.Trim()) || NumberWords.Contains(c.Text.Trim()));
 
+        // A book's incidental rulings name surfaces that, in that book, are nobody (2026-09-23,
+        // BCODA entity pass). The slang vocabulary entry "Cut" (a middleman's percentage) took Kyle's
+        // code, "Cut everything; cross nothing", on every save; "Big Rig" derived "Rig" onto "Rig up".
+        // These are the per-entity decisions the Stopwords note above says a stopword cannot make,
+        // made for one book: no candidate anchors a tag on that surface there, and other books keep
+        // their own reading. A tag a writer placed by hand still survives through WithPinnedMentions.
+        if (bookNodeId is Guid book)
+        {
+            var incidental = await db.Rulings.AsNoTracking()
+                .Where(r => r.Kind == RulingKinds.Incidental && r.SupersededById == null && r.Pattern != null
+                    && (r.BookId == book || (r.BookId == null && r.UniverseId == universeId)))
+                .Select(r => r.Pattern!)
+                .ToListAsync(ct);
+            if (incidental.Count > 0)
+            {
+                var nobody = incidental.Select(p => p.Trim()).Where(p => p.Length > 0).ToHashSet(StringComparer.OrdinalIgnoreCase);
+                candidates.RemoveAll(c => nobody.Contains(c.Text.Trim()));
+            }
+        }
+
         return candidates;
     }
 

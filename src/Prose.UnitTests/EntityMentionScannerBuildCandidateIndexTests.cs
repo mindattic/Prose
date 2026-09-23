@@ -263,6 +263,35 @@ public class EntityMentionScannerBuildCandidateIndexTests
     }
 
     [Test]
+    public async Task BuildCandidateIndexAsync_ABooksIncidentalRuling_KeepsThatSurfaceUntaggedInThatBookOnly()
+    {
+        // Found live 2026-09-23 (BCODA entity pass): the slang vocabulary entry "Cut" (a middleman's
+        // percentage) tagged Kyle's code, "Cut everything; cross nothing", on every save, and the
+        // character "Big Rig" derived "Rig" onto "Rig up".
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var book = Guid.NewGuid();
+        var other = Guid.NewGuid();
+        var cut = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = cut, UniverseId = universeId, EntityType = "vocabulary", Name = "Cut", Slug = "cut", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        var rig = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = rig, UniverseId = universeId, EntityType = "character", Name = "Big Rig", Slug = "big-rig", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = rig, Name = "Big Rig" });
+        db.Rulings.Add(new Ruling { UniverseId = universeId, BookId = book, Kind = RulingKinds.Incidental, Pattern = "Cut", Text = "the verb" });
+        db.Rulings.Add(new Ruling { UniverseId = universeId, BookId = book, Kind = RulingKinds.Incidental, Pattern = " rig ", Text = "the verb" });
+        db.Rulings.Add(new Ruling { UniverseId = universeId, BookId = book, Kind = RulingKinds.Incidental, Pattern = "Big Rig", Text = "superseded", SupersededById = Guid.NewGuid() });
+        await db.SaveChangesAsync();
+
+        var inBook = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: book);
+
+        Assert.That(EntityMentionScanner.Scan("Cut everything; cross nothing. \"Rig up,\" he said.", inBook), Is.Empty);
+        Assert.That(EntityMentionScanner.Scan("Big Rig came in.", inBook).Single().EntityId, Is.EqualTo(rig),
+            "the whole name still tags, and a superseded ruling is inert");
+
+        var elsewhere = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: other);
+        Assert.That(elsewhere.Any(c => c.Text == "Cut" && c.EntityId == cut), Is.True, "another book keeps its own reading");
+    }
+
+    [Test]
     public async Task BuildCandidateIndexAsync_ShortAlias_IsExcludedAcrossAllTypes()
     {
         // The >=3-char guard must apply uniformly to the new alias sources too, not just Character.
