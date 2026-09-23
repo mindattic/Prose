@@ -297,6 +297,9 @@ public class UsageProbeTools
     [FactoryTool("probe_cli_used", "2026-01-01", Cli = "ProbeCli --probe go")]
     public void CliUsedImpl() { }
 
+    [FactoryTool("probe_refuses", "2026-01-01", Cli = "ProbeCli --probe refuses")]
+    public void RefusesImpl() { }
+
     [FactoryTool("probe_new", "2026-09-20")]
     public void NewImpl() { }
 }
@@ -313,8 +316,10 @@ public class FactoryUsageTests : PressFixture
         {
             db.CommandLedgerEntries.Add(new CommandLedgerEntry { At = new DateTime(2026, 9, 1), Source = "mcp", HandlerClass = nameof(UsageProbeTools), Method = nameof(UsageProbeTools.McpUsedImpl), Success = true, Actor = "mcp:session:s" });
             db.CommandLedgerEntries.Add(new CommandLedgerEntry { At = new DateTime(2026, 9, 2), Source = "cli", HandlerClass = "ProbeCli", ArgsJson = "[\"--universe\",\"glmz\",\"--probe\",\"go\"]", Success = true, Actor = "cli:session:s" });
-            // Neither a failed call nor a test's call is use.
-            db.CommandLedgerEntries.Add(new CommandLedgerEntry { At = new DateTime(2026, 9, 3), Source = "cli", HandlerClass = "ProbeCli", ArgsJson = "[\"--probe\",\"unused\"]", Success = false, Actor = "cli:session:s" });
+            // A report or refusal (exit 2) is use: the tool ran and said no.
+            db.CommandLedgerEntries.Add(new CommandLedgerEntry { At = new DateTime(2026, 9, 4), Source = "cli", HandlerClass = "ProbeCli", ArgsJson = "[\"--probe\",\"refuses\"]", Success = false, ExitCode = 2, Actor = "cli:session:s" });
+            // Neither a call with bad arguments nor a test's call is use.
+            db.CommandLedgerEntries.Add(new CommandLedgerEntry { At = new DateTime(2026, 9, 3), Source = "cli", HandlerClass = "ProbeCli", ArgsJson = "[\"--probe\",\"unused\"]", Success = false, ExitCode = 1, Actor = "cli:session:s" });
             db.CommandLedgerEntries.Add(new CommandLedgerEntry { At = new DateTime(2026, 9, 3), Source = "mcp", HandlerClass = nameof(UsageProbeTools), Method = nameof(UsageProbeTools.UnusedImpl), Success = true, Actor = "test:fixture" });
             await db.SaveChangesAsync();
         }
@@ -322,9 +327,10 @@ public class FactoryUsageTests : PressFixture
         var now = new DateTime(2026, 9, 23, 8, 0, 0, DateTimeKind.Utc);
 
         var rows = (await check.RunAsync([typeof(UsageProbeTools).Assembly], now: now)).ToDictionary(r => r.Name);
-        Assert.That(rows.Keys, Is.EquivalentTo(new[] { "probe_unused", "probe_mcp_used", "probe_cli_used", "probe_new" }));
+        Assert.That(rows.Keys, Is.EquivalentTo(new[] { "probe_unused", "probe_mcp_used", "probe_cli_used", "probe_refuses", "probe_new" }));
         Assert.That(rows["probe_mcp_used"].Calls, Is.EqualTo(1));
         Assert.That(rows["probe_cli_used"].Calls, Is.EqualTo(1), "the CLI twin is a door too");
+        Assert.That(rows["probe_refuses"].Calls, Is.EqualTo(1), "a report or refusal is the tool doing its job");
         Assert.That(rows["probe_unused"].Calls, Is.EqualTo(0));
         Assert.That(rows["probe_unused"].OrderId, Is.Not.Null);
         Assert.That(rows["probe_new"].InGrace, Is.True);

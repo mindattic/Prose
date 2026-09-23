@@ -35,7 +35,8 @@ public sealed record ToolUsage(string Name, string Handler, string Method, DateT
 /// only by use (its check is a ledger check) or is abandoned with the commit that deleted the tool.
 /// Idempotent: a tool is filed once, whatever became of the order.
 /// <para>Test calls never count: tests run in-process and write no ledger rows, and a row whose
-/// actor starts with "test" is excluded.</para>
+/// actor starts with "test" is excluded. A call counts when it ran: an MCP call that returned, or a
+/// CLI call that exited 0 or 2 (2 = reported or refused, the factory CLI's convention).</para>
 /// </summary>
 public sealed class FactoryUsageCheck(IDbContextFactory<ProseDbContext> dbFactory, WorkOrderService orders)
 {
@@ -79,8 +80,10 @@ public sealed class FactoryUsageCheck(IDbContextFactory<ProseDbContext> dbFactor
                     DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal, out var since))
                 throw new InvalidOperationException($"{handler}.{method}: [FactoryTool] Since \"{tool.Since}\" is not yyyy-MM-dd.");
 
+            // A CLI exit 2 is the factory's "ran, and reported or refused" (metrics over their ceilings,
+            // capture with names left): the tool did its job. Exit 1 (bad arguments) and dispatch errors did not.
             var real = db.CommandLedgerEntries.AsNoTracking()
-                .Where(e => e.At >= since && e.Success && (e.Actor == null || !e.Actor.StartsWith("test")));
+                .Where(e => e.At >= since && (e.Success || e.ExitCode == 2) && (e.Actor == null || !e.Actor.StartsWith("test")));
             IQueryable<CommandLedgerEntry> hits;
             if (tool.Cli is { } cli && cli.Split(' ', 2, StringSplitOptions.RemoveEmptyEntries) is { Length: >= 1 } parts)
             {
