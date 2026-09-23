@@ -67,6 +67,17 @@
                                                              }
                                                          ]
                                            }
-                                       ]
+                                       ],
+                  "Stop":  [
+                               {
+                                   "hooks":  [
+                                                 {
+                                                     "type":  "command",
+                                                     "timeout":  30,
+                                                     "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File \"D:/Projects/MindAttic/Prose/.prose/hooks/factory-guard.ps1\""
+                                                 }
+                                             ]
+                               }
+                           ]
               }
 }
