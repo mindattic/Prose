@@ -2981,6 +2981,10 @@ public class NodeWorkbenchService
         }
     }
 
+    /// <summary>The export gate, built on demand: ReadGateService reads the book's order through this
+    /// service, so it cannot be a constructor dependency of it.</summary>
+    private ReadGateService readGate => new(dbFactory, this);
+
     /// <summary>
     /// Export a drift-free audiobook in the FEWEST TTS requests that fit
     /// ElevenLabs' per-request budget, so the narrator is one continuous
@@ -2994,6 +2998,8 @@ public class NodeWorkbenchService
     /// </summary>
     public async Task<string?> ExportAudiobookAsync(Guid nodeId, bool retuneRobust = false, string? ttsProvider = null, CancellationToken ct = default)
     {
+        await readGate.EnsureReadAsync(nodeId, ct);   // RFC 0015 §3.2 [RT#4]: audio ships only what has been read, same as the page.
+
         // --tts <engine>: free, fully-local narration (no API key, no per-char cost) —
         // piper | kokoro | chatterbox. Same segment/silence/encode assembly; the local
         // engine supplies the PCM. Omitted (or "elevenlabs") = the ElevenLabs path.

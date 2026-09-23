@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**269 tools** across **48 tool families.**
+**273 tools** across **49 tool families.**
 
 ## Families
 
@@ -52,7 +52,7 @@
 | [Quality](#quality) | 5 |
 | [Reading](#reading) | 4 |
 | [Repository](#repository) | 3 |
-| [Ruling](#ruling) | 5 |
+| [Ruling](#ruling) | 6 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
 | [Story](#story) | 4 |
@@ -62,6 +62,7 @@
 | [Verification](#verification) | 2 |
 | [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
+| [World](#world) | 3 |
 | [World Entity Crud](#world-entity-crud) | 6 |
 | [World Modelling](#world-modelling) | 11 |
 | [Writing](#writing) | 3 |
@@ -431,7 +432,7 @@ Create or update a character in canon. Pass empty id to create new; pass an exis
 - `pronouns` (string, optional) — Pronouns (e.g. 'he/him', 'she/her', 'they/them').
 - `age` (int, optional) — Age in years.
 - `status` (string, optional) — Status: alive, deceased, unknown, missing.
-- `location` (string, optional) — Current location or home territory.
+- `location` (string, optional) — Refused if given: location is not stored on the character (see set_character_fields).
 - `affiliation` (string, optional) — Faction, corp, or freelancer network affiliation.
 - `augmentations` (string, optional) — Augmentation summary — cyberware, genemods, neural enhancements.
 - `narrativeFunction` (string, optional) — Narrative function: what role this character plays in stories.
@@ -1828,13 +1829,20 @@ Every place an active law's zero-tolerance pattern matches the book's prose, in 
 The active rulings that apply to a book (its own plus universe-wide ones).
 
 - `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
-- `kind` (string, optional) — law | metric | incidental
+- `kind` (string, optional) — law | page-law | metric | incidental
+
+### `record_law_violations`
+
+Every place an active law's pattern matches the canonical record of an entity the book tags (the world must not hold what the page may not say). Page-laws are not applied to records: they name facts the record is meant to hold. Each hit is fixed on the record (set_character_fields / create_*), or the pattern is superseded if too broad.
+
+- `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
+- `entityId` (string, optional) — Narrow to one entity's record.
 
 ### `record_ruling`
 
-Record one of the author's rulings the moment it is made. kind law = a constraint (pattern-less text the writer is shown, or a zero-tolerance regex the prose must never match; case-insensitive unless the pattern starts with (?-i)); kind metric = a book-wide tic ceiling (pattern + maxPer1kWords); kind incidental = a proper name that intentionally has no entity (pattern = the name). Entity facts do NOT go here — write them on the entity record. Returns the stored row as the read-back.
+Record one of the author's rulings the moment it is made. kind law = a constraint (pattern-less text the writer is shown, or a zero-tolerance regex neither the prose nor any record the book tags may match; case-insensitive unless the pattern starts with (?-i)); kind page-law = a fact the world holds but the page must never say (its pattern binds the prose only); kind metric = a book-wide tic ceiling (pattern + maxPer1kWords); kind incidental = a proper name that intentionally has no entity (pattern = the name). Entity facts do NOT go here — write them on the entity record. Returns the stored row as the read-back.
 
-- `kind` (string, required) — law | metric | incidental
+- `kind` (string, required) — law | page-law | metric | incidental
 - `text` (string, required) — The author's words, verbatim.
 - `nodeIdOrSlug` (string, optional) — Book id, slug or NodeCode (omit only for a universe-wide ruling).
 - `pattern` (string, optional) — .NET regex (law/metric) or the name (incidental).
@@ -1846,7 +1854,7 @@ Record one of the author's rulings the moment it is made. kind law = a constrain
 Replace a ruling: the new one is recorded and the old one goes inert (history is kept).
 
 - `id` (string, required) — The ruling to replace.
-- `kind` (string, required) — law | metric | incidental
+- `kind` (string, required) — law | page-law | metric | incidental
 - `text` (string, required) — The author's new words, verbatim.
 - `pattern` (string, optional) — New pattern.
 - `maxPer1kWords` (Decimal, optional) — Metric only.
@@ -2135,6 +2143,33 @@ Get prose service coverage for a node. Returns, for every service the live write
 Get global prose workflow coverage across all nodes. Returns per-service utilization rates and a list of nodes with coverage gaps.
 
 - _(no parameters)_
+
+## World
+
+<sub>`WorldTools`</sub>
+
+### `set_character_fields`
+
+Set any fields of a character's record, by the same snake_case keys get_character returns (behavioral, timeline, cyberware_inventory, neural_abilities, genetic_ancestry, knowledge, psychology, relationships, story_hooks, aliases, …). JSON Merge Patch (RFC 7396): a key present sets that field; null clears it; a key absent is untouched; objects merge one level down the same way (so {"behavioral":{"habits":[…]}} leaves decision_rules alone); lists replace whole and are JSON arrays, so nothing is split on commas. Refused: id, type, location, rating, vote_count. Cost-visible: if the change would un-read beats that were read, it is refused with the count unless confirmUnread is true. Returns what changed and the record as read back from the database.
+
+- `id` (string, required) — Character id (32-char hex or UUID).
+- `fieldsJson` (string, required) — JSON object of field → value, e.g. {"age":27,"story_hooks":["…"],"behavioral":{…}}.
+- `confirmUnread` (bool, optional) — Make the write even though it un-reads the listed beats (then re-read them).
+
+### `verify_entity_begin`
+
+Station F1, step 1: deliver an entity's canonical record and the beats of a book that tag it (text up to a budget), with a nonce sealing both. Examine the record against the book as read, then verify_entity_commit(nonce). If the record is wrong, fix it instead (set_character_fields), re-read what that un-reads, and begin again.
+
+- `entityId` (string, required) — Entity id.
+- `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
+- `textBudgetChars` (int, optional) — Characters of mention text to include (default 40000; 0 = none).
+
+### `verify_entity_commit`
+
+Station F1, step 2: record that the entity's record was examined against the book. Refused if the record or any beat that mentions it changed since begin, or if any of those beats is unread.
+
+- `nonce` (string, required) — The nonce verify_entity_begin returned.
+- `by` (string, optional) — Who examined it.
 
 ## World Entity Crud
 

@@ -463,3 +463,17 @@ Every tool has an MCP name and a CLI twin, and every call goes to the ledger wit
 4. `prose --factory status --node BCODA` shows every unit green through F7, and the V73 files exist with an `Exports` row at the current fingerprint.
 5. `prose --factory journal --since <I1 start>` reconstructs every change: history rows, ledger calls and commits.
 6. Every I1–I7 work order is closed with Hub-validated evidence.
+
+## 13. As built: where the build differs from the text above
+
+Each note below records a decision made while building an increment, with its reason, so this document stays the design that is actually running.
+
+**I4 (the world true)**
+- **The no-op guard covers every relational repository**, not just the two §3.5 names. All 29 `Save` overrides in `Repositories.cs` open with `SaveGuard.IsUnchanged`: the item is compared with the repository's own `LoadOne` projection, and with the `Entities` row's name and (where that save syncs it) description. A unit test fails the build if an override loses the guard. The base `EfRepository.Save` compares its JSON blob.
+- **`set_character_fields` uses JSON Merge Patch (RFC 7396).** Objects merge one level at a time, so changing `behavioral.habits` leaves `behavioral.decision_rules` alone. Lists and plain values replace. `null` resets a member to empty and removes a dictionary key. Every write is read back: a field that did not land makes the call fail, never return ok.
+- **F1 waits for the full read.** While any beat of the book is unread, F1 reports `waiting`, not `fail`, and `factory_next` goes on to the reading. This is how [RT#1]'s deadlock is avoided in the computed line itself, not only in the protocol.
+- **F1 includes the mentions fingerprint.** A verification is current only while the record's `ModifiedAt` *and* the fingerprint of the beats that tag it (which beats, at which text) both match. Editing a beat therefore voids the verification of every entity that beat tags.
+- **Commit also requires the reading.** It is refused while any mention beat is unread. That makes a verification mean "the record was delivered after its beats were read", not only "the record was delivered".
+- **Records are held to the law.** `law` patterns now bind the canonical records of the entities a book tags, as well as the prose (`--ruling violations --records`, MCP `record_law_violations`). `verify_entity_commit` is refused while the record breaks one.
+- **A new ruling kind, `page-law`,** binds the prose only. It is for facts the world holds but the page never says, such as Seo making Silence, or Mrs. Chen's own child. Its pattern would otherwise flag the very records that are meant to hold the fact.
+- **Sessions resume on compaction.** A second SessionStart under the same Claude session id resumes that session's row. Before this, it opened a new row and reported the session to itself as "another session may be working in this tree".

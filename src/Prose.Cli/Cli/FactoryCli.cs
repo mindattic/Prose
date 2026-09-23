@@ -24,6 +24,8 @@ namespace Prose.Cli;
 ///   prose --session end --file summary.json [--id &lt;session&gt;]
 ///   prose --ruling add --kind law|metric|incidental --text "…" --node X [--pattern "…"] [--max-per-1k N] [--source author]
 ///   prose --ruling seed --node X --file rulings.json · list --node X [--kind k] · supersede --id … · violations --node X · metrics --node X
+///   prose --universe glmz --ruling violations --node X --records [--entity &lt;id&gt;]   (the tagged entities' records against the laws)
+///   (kinds: law = never true in page or record · page-law = true in the world, never said on the page · metric · incidental)
 ///
 /// Exit codes: 0 ok · 1 bad args / not found · 2 refused (a check failed, or a decision is unrecorded).
 /// </summary>
@@ -97,6 +99,19 @@ public static class FactoryCli
                             Source: Flag("--source") ?? "author"));
                         Console.WriteLine($"[ruling] {id} superseded by {row.Id}.");
                         return 0;
+                    }
+                    case "violations" when args.Contains("--records"):
+                    {
+                        // The records of the entities the book tags, against its laws (not its page-laws).
+                        if (await Node(Flag("--node")) is not { } book) { Console.Error.WriteLine("[ruling] --node is required."); return 1; }
+                        var hits = await rulings.FindRecordViolationsAsync(book, Guid.TryParse(Flag("--entity"), out var only) ? only : null);
+                        foreach (var g in hits.GroupBy(h => (h.EntityName, h.EntityId)))
+                        {
+                            Console.WriteLine($"{g.Count(),4}  {g.Key.EntityName} ({g.First().EntityType} {g.Key.EntityId})");
+                            foreach (var h in g) Console.WriteLine($"        {h.Field} \"{h.Match}\" — {h.Context}   [{(h.RulingText.Length > 60 ? h.RulingText[..60] + "…" : h.RulingText)}]");
+                        }
+                        Console.WriteLine($"[ruling] {hits.Count} record law hit(s) across {hits.Select(h => h.EntityId).Distinct().Count()} record(s).");
+                        return hits.Count == 0 ? 0 : 2;
                     }
                     case "violations":
                     {

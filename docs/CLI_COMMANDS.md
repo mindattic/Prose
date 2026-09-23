@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**272 commands.** 30 deactivated. 10 cost-gated. 20 have no description in their dispatch comment (14 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**273 commands.** 30 deactivated. 10 cost-gated. 20 have no description in their dispatch comment (14 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -2057,6 +2057,17 @@ prose --set-byo-key --provider claude|openai
 _(no description in the dispatch comment — add one above the guard in `Program.cs`)_
 
 <sub>handler `SetCanonSectionCli`</sub>
+
+### `--set-character-fields` / `--verify-entity`
+
+```
+prose --universe glmz --set-character-fields --id <id> --file fields.json [--confirm-unread]
+prose --universe glmz --verify-entity begin --entity <id> --node <book> | commit --nonce <nonce>
+```
+
+the world's write path and station F1 (RFC 0015 §3.3–3.4).
+
+<sub>handler `WorldCli`</sub>
 
 ### `--set-edge-validity`
 

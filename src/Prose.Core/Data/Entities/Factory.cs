@@ -39,10 +39,16 @@ public class Ruling
 
 public static class RulingKinds
 {
+    /// <summary>Never true in the world: its pattern must match neither the prose nor any record the book tags.</summary>
     public const string Law = "law";
+    /// <summary>True in the world, never said on the page (Seo made Silence; the record holds it, the prose must not).
+    /// Its pattern binds the prose only.</summary>
+    public const string PageLaw = "page-law";
     public const string Metric = "metric";
     public const string Incidental = "incidental";
-    public static readonly string[] All = [Law, Metric, Incidental];
+    public static readonly string[] All = [Law, PageLaw, Metric, Incidental];
+    /// <summary>The kinds whose patterns the prose must never match.</summary>
+    public static readonly string[] BindThePage = [Law, PageLaw];
 }
 
 /// <summary>"This record was examined against this book, as the record and its mention beats stood."

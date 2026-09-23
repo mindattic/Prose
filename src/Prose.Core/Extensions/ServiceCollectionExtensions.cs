@@ -517,6 +517,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.Factory.RulingService>();
         services.AddSingleton<Prose.Core.Services.Factory.MetricsReport>();
         services.AddSingleton<Prose.Core.Services.Factory.FactoryService>();
+        services.AddSingleton<Prose.Core.Services.Factory.EntityVerificationService>();   // F1 begin/commit
+        services.AddSingleton<CharacterFieldWriter>();                                   // set_character_fields
         services.AddSingleton<Prose.Core.Services.Factory.WorkOrderService>(sp => new Prose.Core.Services.Factory.WorkOrderService(
             sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),
             (book, station) => sp.GetRequiredService<Prose.Core.Services.Factory.FactoryService>().StationPassesAsync(book, station)));

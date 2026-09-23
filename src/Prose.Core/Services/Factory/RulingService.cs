@@ -17,6 +17,9 @@ public sealed record RulingDraft(
 /// <summary>One place a law's pattern matched in the prose.</summary>
 public sealed record LawHit(Guid RulingId, string RulingText, Guid BeatId, int Number, int Position, string Match, string Context);
 
+/// <summary>One place a law's pattern matched an entity record the book tags. Field is the JSON path.</summary>
+public sealed record RecordLawHit(Guid RulingId, string RulingText, Guid EntityId, string EntityName, string EntityType, string Field, string Match, string Context);
+
 /// <summary>
 /// The author's law as data (RFC 0015 §3.6). A law is a constraint: pattern-less text the writer
 /// is shown, or a zero-tolerance pattern the prose must never match. A metric is a book-level tic
@@ -98,10 +101,11 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         return row;
     }
 
-    /// <summary>Every place an active law's pattern matches the book's prose, in reading order.</summary>
+    /// <summary>Every place an active law's (or page-law's) pattern matches the book's prose, in reading order.</summary>
     public async Task<List<LawHit>> FindLawViolationsAsync(Guid bookId, CancellationToken ct = default)
     {
-        var laws = (await ListAsync(bookId, RulingKinds.Law, ct)).Where(r => r.Pattern != null).ToList();
+        var laws = (await ListAsync(bookId, null, ct))
+            .Where(r => RulingKinds.BindThePage.Contains(r.Kind) && r.Pattern != null).ToList();
         if (laws.Count == 0) return [];
         var text = await BookTextAsync(bookId, ct);
         var hits = new List<LawHit>();
@@ -117,15 +121,65 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         return hits.OrderBy(h => h.Position).ToList();
     }
 
+    /// <summary>
+    /// Every place an active law's pattern matches the canonical record of an entity the book tags
+    /// (RFC 0015 §3.6): the world the writer draws on must not hold what the page may not say.
+    /// Page-laws are not applied here — they name facts the record is meant to hold.
+    /// <paramref name="entityId"/> narrows the scan to one record.
+    /// </summary>
+    public async Task<List<RecordLawHit>> FindRecordViolationsAsync(Guid bookId, Guid? entityId = null, CancellationToken ct = default)
+    {
+        var laws = (await ListAsync(bookId, RulingKinds.Law, ct)).Where(r => r.Pattern != null)
+            .Select(r => (Law: r, Rx: Compile(r.Pattern!))).ToList();
+        if (laws.Count == 0) return [];
+        List<Guid> ids = entityId is { } one ? [one]
+            : (await BookBeatsAsync(bookId, ct)).SelectMany(b => BeatMarkup.ExtractEntityGuids(b.Raw)).Distinct().ToList();
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var entities = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => ids.Contains(e.Id))
+            .Select(e => new { e.Id, e.Name, e.EntityType }).ToListAsync(ct);
+        var hits = new List<RecordLawHit>();
+        foreach (var e in entities.OrderBy(e => e.Name, StringComparer.OrdinalIgnoreCase))
+        {
+            if (CanonRecordLoader.Load(db, e.EntityType, e.Id) is not { } record) continue;
+            foreach (var (field, value) in StringLeaves(record, ""))
+                foreach (var (law, rx) in laws)
+                    foreach (Match m in rx.Matches(value))
+                        hits.Add(new RecordLawHit(law.Id, law.Text, e.Id, e.Name, e.EntityType, field, m.Value, Context(value, m.Index, m.Length)));
+        }
+        return hits;
+    }
+
+    private static IEnumerable<(string Field, string Value)> StringLeaves(System.Text.Json.Nodes.JsonNode node, string path)
+    {
+        switch (node)
+        {
+            case System.Text.Json.Nodes.JsonObject o:
+                foreach (var (k, v) in o)
+                    if (v != null) foreach (var leaf in StringLeaves(v, path.Length == 0 ? k : $"{path}.{k}")) yield return leaf;
+                break;
+            case System.Text.Json.Nodes.JsonArray a:
+                for (var i = 0; i < a.Count; i++)
+                    if (a[i] is { } v) foreach (var leaf in StringLeaves(v, $"{path}[{i}]")) yield return leaf;
+                break;
+            case System.Text.Json.Nodes.JsonValue v when v.TryGetValue<string>(out var s):
+                yield return (path, s);
+                break;
+        }
+    }
+
     /// <summary>The book's beats in reading order as (id, number, position, tag-stripped text).</summary>
-    public async Task<List<(Guid BeatId, int Number, int Position, string Plain)>> BookTextAsync(Guid bookId, CancellationToken ct = default)
+    public async Task<List<(Guid BeatId, int Number, int Position, string Plain)>> BookTextAsync(Guid bookId, CancellationToken ct = default) =>
+        (await BookBeatsAsync(bookId, ct)).Select(b => (b.BeatId, b.Number, b.Position, BeatMarkup.StripEntityTags(b.Raw))).ToList();
+
+    private async Task<List<(Guid BeatId, int Number, int Position, string Raw)>> BookBeatsAsync(Guid bookId, CancellationToken ct)
     {
         var sp = await spine.GetAsync(bookId, ct);
         var order = sp.Chapters.SelectMany(c => c.Beats).ToList();
         var ids = order.Select(b => b.BeatId).ToList();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var texts = await db.Beats.AsNoTracking().Where(b => ids.Contains(b.Id)).Select(b => new { b.Id, b.Text }).ToDictionaryAsync(b => b.Id, b => b.Text ?? "", ct);
-        return order.Select(b => (b.BeatId, b.Number, b.Ordinal, BeatMarkup.StripEntityTags(texts.GetValueOrDefault(b.BeatId, "")))).ToList();
+        return order.Select(b => (b.BeatId, b.Number, b.Ordinal, texts.GetValueOrDefault(b.BeatId, ""))).ToList();
     }
 
     private static string Context(string text, int index, int length)

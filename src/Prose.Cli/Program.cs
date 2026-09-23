@@ -1128,6 +1128,15 @@ if (LeadingFlagIgnoringUniverse(args) is "--factory" or "--order" or "--session"
     return;
 }
 
+// CLI mode: the world's write path and station F1 (RFC 0015 §3.3–3.4).
+//   prose --universe glmz --set-character-fields --id <id> --file fields.json [--confirm-unread]
+//   prose --universe glmz --verify-entity begin --entity <id> --node <book> | commit --nonce <nonce>
+if (args.Contains("--set-character-fields") || args.Contains("--verify-entity"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("WorldCli", args);
+    return;
+}
+
 // CLI mode: which beats are unread (never read / text changed / moved / entity changed), and the
 // notes a read filed. Export refuses while any beat is unread; there is no override.
 //   prose --read-status --node <slug|code|guid> [--list]

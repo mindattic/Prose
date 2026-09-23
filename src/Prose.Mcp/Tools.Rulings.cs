@@ -24,9 +24,9 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
 
     Task<Guid?> Resolve(string? r) => string.IsNullOrWhiteSpace(r) ? Task.FromResult<Guid?>(null) : NodeRefResolver.ResolveAsync(dbFactory, r);
 
-    [McpServerTool, Description("Record one of the author's rulings the moment it is made. kind law = a constraint (pattern-less text the writer is shown, or a zero-tolerance regex the prose must never match; case-insensitive unless the pattern starts with (?-i)); kind metric = a book-wide tic ceiling (pattern + maxPer1kWords); kind incidental = a proper name that intentionally has no entity (pattern = the name). Entity facts do NOT go here — write them on the entity record. Returns the stored row as the read-back.")]
+    [McpServerTool, Description("Record one of the author's rulings the moment it is made. kind law = a constraint (pattern-less text the writer is shown, or a zero-tolerance regex neither the prose nor any record the book tags may match; case-insensitive unless the pattern starts with (?-i)); kind page-law = a fact the world holds but the page must never say (its pattern binds the prose only); kind metric = a book-wide tic ceiling (pattern + maxPer1kWords); kind incidental = a proper name that intentionally has no entity (pattern = the name). Entity facts do NOT go here — write them on the entity record. Returns the stored row as the read-back.")]
     public Task<string> record_ruling(
-        [Description("law | metric | incidental")] string kind,
+        [Description("law | page-law | metric | incidental")] string kind,
         [Description("The author's words, verbatim.")] string text,
         [Description("Book id, slug or NodeCode (omit only for a universe-wide ruling).")] string? nodeIdOrSlug = null,
         [Description(".NET regex (law/metric) or the name (incidental).")] string? pattern = null,
@@ -45,7 +45,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     }
 
     [McpServerTool, Description("The active rulings that apply to a book (its own plus universe-wide ones).")]
-    public Task<string> list_rulings([Description("Book id, slug or NodeCode.")] string nodeIdOrSlug, [Description("law | metric | incidental")] string? kind = null) =>
+    public Task<string> list_rulings([Description("Book id, slug or NodeCode.")] string nodeIdOrSlug, [Description("law | page-law | metric | incidental")] string? kind = null) =>
         hub.InvokeAsync(nameof(RulingTools), nameof(ListRulingsImpl), new { nodeIdOrSlug, kind });
 
     public async Task<string> ListRulingsImpl(string nodeIdOrSlug, string? kind = null)
@@ -58,7 +58,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     [McpServerTool, Description("Replace a ruling: the new one is recorded and the old one goes inert (history is kept).")]
     public Task<string> supersede_ruling(
         [Description("The ruling to replace.")] string id,
-        [Description("law | metric | incidental")] string kind,
+        [Description("law | page-law | metric | incidental")] string kind,
         [Description("The author's new words, verbatim.")] string text,
         [Description("New pattern.")] string? pattern = null,
         [Description("Metric only.")] decimal? maxPer1kWords = null,
@@ -85,6 +85,19 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
         var hits = await rulings.FindLawViolationsAsync(id);
         return JsonSerializer.Serialize(new { count = hits.Count, hits }, JsonOpts);
+    }
+
+    [McpServerTool, Description("Every place an active law's pattern matches the canonical record of an entity the book tags (the world must not hold what the page may not say). Page-laws are not applied to records: they name facts the record is meant to hold. Each hit is fixed on the record (set_character_fields / create_*), or the pattern is superseded if too broad.")]
+    public Task<string> record_law_violations(
+        [Description("Book id, slug or NodeCode.")] string nodeIdOrSlug,
+        [Description("Narrow to one entity's record.")] string? entityId = null) =>
+        hub.InvokeAsync(nameof(RulingTools), nameof(RecordLawViolationsImpl), new { nodeIdOrSlug, entityId });
+
+    public async Task<string> RecordLawViolationsImpl(string nodeIdOrSlug, string? entityId = null)
+    {
+        if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+        var hits = await rulings.FindRecordViolationsAsync(id, Guid.TryParse(entityId, out var e) ? e : null);
+        return JsonSerializer.Serialize(new { count = hits.Count, records = hits.Select(h => h.EntityId).Distinct().Count(), hits }, JsonOpts);
     }
 
     [McpServerTool, Description("Book-wide tic counts against the author's metric rulings (counting, not judging). Only author-sourced metrics gate the press.")]

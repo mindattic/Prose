@@ -225,6 +225,21 @@ public class FactoryTests
         Assert.That(await sessions.ActorTagAsync("cli"), Is.EqualTo($"cli:session:{s.SessionId}"));
     }
 
+    [Test]
+    public async Task A_compacted_session_resumes_its_own_row_and_is_not_its_own_other_session()
+    {
+        // SessionStart fires again under the same Claude session id after a compaction (found live
+        // 2026-09-23: the start block warned "another session may be working in this tree" about itself).
+        var first = await sessions.StartAsync("claude-1", "abc", null);
+        var again = await sessions.StartAsync("claude-1", "abc", null);
+        Assert.That(again.SessionId, Is.EqualTo(first.SessionId));
+        Assert.That(again.OtherOpenSessions, Is.Empty);
+
+        var other = await sessions.StartAsync("claude-2", "abc", null);
+        Assert.That(other.SessionId, Is.Not.EqualTo(first.SessionId));
+        Assert.That(other.OtherOpenSessions.Select(o => o.Id), Is.EqualTo(new[] { first.SessionId }));
+    }
+
     // ── stations and the next action ──────────────────────────────────────────
 
     private async Task<(Guid Book, List<Guid> Beats)> BookWithTwoChaptersAsync()

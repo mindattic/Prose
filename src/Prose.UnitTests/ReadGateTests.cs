@@ -126,33 +126,85 @@ public class ReadGateTests
         Assert.That(byId.ContainsKey(ids[2]), Is.False, "untouched beats stay read");
     }
 
+    /// <summary>Puts an entity tag into a beat's stored text, as a tagged save leaves it.</summary>
+    private async Task<Guid> TagBeatAsync(Guid beatId, string name, string type = "weapon")
+    {
+        var entityId = Guid.CreateVersion7();
+        await using var db = await dbFactory.CreateDbContextAsync();
+        db.Entities.Add(new Entity { Id = entityId, EntityType = type, Name = name, Slug = name.ToLowerInvariant(),
+            ModifiedAt = DateTime.UtcNow.AddDays(-1) });
+        var beat = await db.Beats.SingleAsync(b => b.Id == beatId);
+        beat.Text = $"<entity repo=\"{type}\" guid=\"{entityId}\">{name}</entity> {beat.Text}";
+        beat.TextHash = NodeWorkbenchService.ComputeTextHash(beat.Text);
+        await db.SaveChangesAsync();
+        return entityId;
+    }
+
+    private async Task TouchEntityAsync(Guid entityId)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var e = await db.Entities.IgnoreQueryFilters().SingleAsync(x => x.Id == entityId);
+        e.ModifiedAt = DateTime.UtcNow.AddMinutes(1);   // the respec
+        await db.SaveChangesAsync();
+    }
+
     [Test]
     public async Task Editing_an_entity_a_beat_mentions_makes_that_beat_unread()
     {
         var book = await MakeBookAsync();
         var ids = await ThreeBeatsAsync(book);
-        var entityId = Guid.CreateVersion7();
-        await using (var db = await dbFactory.CreateDbContextAsync())
-        {
-            db.Entities.Add(new Entity { Id = entityId, EntityType = "weapon", Name = "Silence", Slug = "silence",
-                ModifiedAt = DateTime.UtcNow.AddDays(-1) });
-            db.BeatEntityMentions.Add(new BeatEntityMention { BeatId = ids[2], EntityId = entityId, EntityName = "Silence", EntityType = "weapon" });
-            await db.SaveChangesAsync();
-        }
+        var entityId = await TagBeatAsync(ids[2], "Silence");
         await ReadAllAsync(book);
         Assert.That((await gate.GetStatusAsync(book)).AllRead, Is.True);
 
-        await using (var db = await dbFactory.CreateDbContextAsync())
-        {
-            var e = await db.Entities.IgnoreQueryFilters().SingleAsync(x => x.Id == entityId);
-            e.ModifiedAt = DateTime.UtcNow.AddMinutes(1);   // the respec
-            await db.SaveChangesAsync();
-        }
+        await TouchEntityAsync(entityId);
 
         var s = await gate.GetStatusAsync(book);
         Assert.That(s.Unread.Single().BeatId, Is.EqualTo(ids[2]));
         Assert.That(s.Unread.Single().Reason, Is.EqualTo(UnreadReason.EntityChanged));
         Assert.That(s.Unread.Single().Detail, Does.Contain("Silence"));
+    }
+
+    [Test]
+    public async Task Mentions_come_from_the_beat_tags_not_the_background_mention_table()
+    {
+        // RFC 0015 [RT#3]: BeatEntityMentions is written by a fire-and-forget task after each save.
+        // A stale row there must not un-read a beat, and a missing row must not hide a mention.
+        var book = await MakeBookAsync();
+        var ids = await ThreeBeatsAsync(book);
+        var tagged = await TagBeatAsync(ids[0], "Kyle", "character");
+        var staleOnly = Guid.CreateVersion7();
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            db.Entities.Add(new Entity { Id = staleOnly, EntityType = "character", Name = "Ghost", Slug = "ghost",
+                ModifiedAt = DateTime.UtcNow.AddDays(-1) });
+            db.BeatEntityMentions.Add(new BeatEntityMention { BeatId = ids[1], EntityId = staleOnly, EntityName = "Ghost", EntityType = "character" });
+            await db.SaveChangesAsync();
+        }
+        await ReadAllAsync(book);
+
+        await TouchEntityAsync(staleOnly);
+        Assert.That((await gate.GetStatusAsync(book)).AllRead, Is.True, "a mention row with no tag in the text is not a mention");
+
+        await TouchEntityAsync(tagged);
+        Assert.That((await gate.GetStatusAsync(book)).Unread.Single().BeatId, Is.EqualTo(ids[0]),
+            "a tag in the text is a mention, with no mention row at all");
+    }
+
+    [Test]
+    public async Task An_entity_write_knows_what_it_will_unread_before_it_is_made()
+    {
+        var book = await MakeBookAsync();
+        var ids = await ThreeBeatsAsync(book);
+        var entityId = await TagBeatAsync(ids[1], "Silence");
+        Assert.That(await gate.ReadBeatsMentioningAsync(entityId), Is.Empty, "nothing read yet, so nothing to lose");
+
+        await ReadAllAsync(book);
+        var cost = await gate.ReadBeatsMentioningAsync(entityId);
+        Assert.That(cost.Select(c => c.BeatId), Is.EqualTo(new[] { ids[1] }));
+
+        await TouchEntityAsync(entityId);
+        Assert.That(await gate.ReadBeatsMentioningAsync(entityId), Is.Empty, "already unread by the last change");
     }
 
     [Test]
@@ -184,10 +236,11 @@ public class ReadGateTests
     [TestCase("Prose.Core/Services/ManuscriptExportService.cs", "ExportPdfAsync")]
     [TestCase("Prose.Core/Services/ManuscriptExportService.cs", "ExportEpubAsync")]
     [TestCase("Prose.Core/Services/ManuscriptExportService.cs", "ExportAudioTxtAsync")]
+    [TestCase("Prose.Core/Services/NodeWorkbenchService.cs", "ExportAudiobookAsync")]
     public void Every_shippable_export_opens_with_the_read_gate(string file, string method)
     {
         var text = File.ReadAllText(Path.Combine(Src, file));
-        var m = Regex.Match(text, $@"public async Task<string> {method}\([^)]*\)\s*\{{\s*(?<first>[^;]*;)");
+        var m = Regex.Match(text, $@"public async Task<string\??> {method}\([^)]*\)\s*\{{\s*(?<first>[^;]*;)");
         Assert.That(m.Success, Is.True, $"{file}: could not find {method}");
         Assert.That(m.Groups["first"].Value, Does.Contain("readGate.EnsureReadAsync(nodeId"),
             $"{method} must call readGate.EnsureReadAsync as its first statement — the book ships only when every beat has been read.");

@@ -61,7 +61,7 @@ public class CoreEntityCrudTools
         [Description("Pronouns (e.g. 'he/him', 'she/her', 'they/them').")] string pronouns = "",
         [Description("Age in years.")] int age = 0,
         [Description("Status: alive, deceased, unknown, missing.")] string status = "alive",
-        [Description("Current location or home territory.")] string location = "",
+        [Description("Refused if given: location is not stored on the character (see set_character_fields).")] string location = "",
         [Description("Faction, corp, or freelancer network affiliation.")] string affiliation = "",
         [Description("Augmentation summary — cyberware, genemods, neural enhancements.")] string augmentations = "",
         [Description("Narrative function: what role this character plays in stories.")] string narrativeFunction = "",
@@ -105,6 +105,18 @@ public class CoreEntityCrudTools
         string originNodeSlug = "",
         string relationshipsJson = "")
     {
+        // RFC 0015 §3.4: location lives in EntityStateEvents, not on the character row, so the save
+        // below drops it — and this tool used to answer ok:true anyway. Refuse it out loud instead.
+        if (!string.IsNullOrWhiteSpace(location))
+            return JsonSerializer.Serialize(new
+            {
+                ok = false,
+                error = "location_not_writable",
+                message = "A character's location is not stored on the character (it lives in EntityStateEvents until RFC 0015 §11 " +
+                          "folds it in), so a location passed here would be silently dropped. Nothing was written. Retry without " +
+                          "location; to change any other field, including ones this tool cannot reach, use set_character_fields.",
+            }, CanonTools.JsonOpts);
+
         Guid? resolvedOrigin = null;
         if (!string.IsNullOrWhiteSpace(originNodeSlug))
         {
@@ -176,7 +188,6 @@ public class CoreEntityCrudTools
         if (!string.IsNullOrEmpty(pronouns)) c.Pronouns = pronouns;
         if (age > 0) c.Age = age;
         if (!string.IsNullOrEmpty(status)) c.Status = status;
-        if (!string.IsNullOrEmpty(location)) c.Location = location;
         if (!string.IsNullOrEmpty(affiliation)) c.Affiliation = affiliation;
         if (!string.IsNullOrEmpty(augmentations)) c.Augmentations = augmentations;
         if (!string.IsNullOrEmpty(narrativeFunction)) c.NarrativeFunction = narrativeFunction;

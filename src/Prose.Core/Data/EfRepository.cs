@@ -194,6 +194,12 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
         using var db = dbFactory.CreateDbContext();
 
         var existing = db.Entities.FirstOrDefault(e => e.Id == id);
+        var json = JsonSerializer.Serialize(item, jsonOpts);
+        var record = db.Records.FirstOrDefault(r => r.EntityId == id);
+        // RFC 0015 §3.5: the blob IS this type's stored state, so an identical blob under the same
+        // name is a save that changes nothing, and writes nothing (ModifiedAt is the read gate's signal).
+        if (existing != null && record != null && string.Equals(existing.Name, name, StringComparison.Ordinal)
+            && string.Equals(record.Json, json, StringComparison.Ordinal)) return;
         if (existing == null)
         {
             // Save() upserts by Id only — a caller that doesn't already know the
@@ -241,8 +247,6 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
             existing.ModifiedAt = DateTime.UtcNow;
         }
 
-        var json = JsonSerializer.Serialize(item, jsonOpts);
-        var record = db.Records.FirstOrDefault(r => r.EntityId == id);
         if (record == null)
             db.Records.Add(new Record { EntityId = id, Json = json, UpdatedAt = DateTime.UtcNow });
         else

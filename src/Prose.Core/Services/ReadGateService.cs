@@ -72,19 +72,24 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
 
         var ids = bookOrder.Select(o => o.Beat.Id).ToList();
         Dictionary<Guid, BeatReadReceipt> receipts;
-        List<(Guid BeatId, string Name, DateTime ModifiedAt)> mentions;
+        Dictionary<Guid, (string Name, DateTime ModifiedAt)> entities;
+        // RFC 0015 §3.2 [RT#3]: what a beat mentions is read from its own tags, now. The
+        // BeatEntityMentions table is written by a background task after each save, so a gate that
+        // read it could judge a just-saved beat against mentions that were not there yet.
+        var tagged = bookOrder.ToDictionary(o => o.Beat.Id, o => BeatMarkup.ExtractEntityGuids(o.Beat.Text).ToList());
+        var entityIds = tagged.Values.SelectMany(g => g).Distinct().ToList();
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             receipts = await db.BeatReadReceipts.AsNoTracking()
                 .Where(r => ids.Contains(r.BeatId)).ToDictionaryAsync(r => r.BeatId, ct);
-            mentions = (await db.BeatEntityMentions.AsNoTracking()
-                    .Where(m => ids.Contains(m.BeatId))
-                    .Join(db.Entities.IgnoreQueryFilters().AsNoTracking(), m => m.EntityId, e => e.Id,
-                        (m, e) => new { m.BeatId, e.Name, e.ModifiedAt })
-                    .ToListAsync(ct))
-                .Select(x => (x.BeatId, x.Name, x.ModifiedAt)).ToList();
+            entities = (await db.Entities.IgnoreQueryFilters().AsNoTracking()
+                    .Where(e => entityIds.Contains(e.Id)).Select(e => new { e.Id, e.Name, e.ModifiedAt }).ToListAsync(ct))
+                .ToDictionary(e => e.Id, e => (e.Name, e.ModifiedAt));
         }
-        var mentionsByBeat = mentions.ToLookup(m => m.BeatId);
+        var mentionsByBeat = tagged
+            .SelectMany(kv => kv.Value.Where(entities.ContainsKey)
+                .Select(g => (BeatId: kv.Key, entities[g].Name, entities[g].ModifiedAt)))
+            .ToLookup(m => m.BeatId);
 
         var unread = new List<UnreadBeat>();
         for (var i = 0; i < bookOrder.Count; i++)
@@ -110,6 +115,30 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
             return (UnreadReason.Moved, receipt.PrevBeatId != prev ? "the beat before it changed" : "the beat after it changed");
         var changed = mentions.Where(m => m.ModifiedAt > receipt.ReadAt).Select(m => m.Name).Distinct().ToList();
         return changed.Count > 0 ? (UnreadReason.EntityChanged, string.Join(", ", changed)) : null;
+    }
+
+    public sealed record ReadMention(Guid BeatId, int Number);
+
+    /// <summary>RFC 0015 §3.4 [RT#1]: what an entity write costs, before it is made. The beats that
+    /// count as read now and would stop counting the moment <paramref name="entityId"/>'s record
+    /// changes: tagged with it, text unchanged since the read, and read after the entity last changed.
+    /// Every book, since a record change un-reads its mentions everywhere.</summary>
+    public async Task<List<ReadMention>> ReadBeatsMentioningAsync(Guid entityId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var modifiedAt = await db.Entities.IgnoreQueryFilters().AsNoTracking()
+            .Where(e => e.Id == entityId).Select(e => (DateTime?)e.ModifiedAt).FirstOrDefaultAsync(ct);
+        if (modifiedAt == null) return [];
+        var dashed = entityId.ToString("D");
+        var bare = entityId.ToString("N");
+        var rows = await db.BeatReadReceipts.AsNoTracking()
+            .Join(db.Beats.IgnoreQueryFilters().AsNoTracking(), r => r.BeatId, b => b.Id,
+                (r, b) => new { r.ReadAt, ReadHash = r.TextHash, b.Id, b.Number, b.TextHash, b.Text })
+            .Where(x => x.ReadAt >= modifiedAt && x.ReadHash == x.TextHash
+                        && (x.Text.Contains(dashed) || x.Text.Contains(bare)))
+            .ToListAsync(ct);
+        return rows.Where(x => BeatMarkup.ExtractEntityGuids(x.Text).Contains(entityId))
+            .Select(x => new ReadMention(x.Id, x.Number)).OrderBy(x => x.Number).ToList();
     }
 
     /// <summary>The export gate. Throws <see cref="UnreadBeatsException"/> if anything in the node is

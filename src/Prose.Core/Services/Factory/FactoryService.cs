@@ -45,7 +45,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
     public static readonly string[] BookStationOrder = ["F7", "A"];
 
     /// <summary>Stations whose evaluators exist. Grows one increment at a time (RFC 0015 §10).</summary>
-    public static readonly HashSet<string> Built = ["F2", "F3", "F5", "F6"];
+    public static readonly HashSet<string> Built = ["F2", "F3", "F5", "F6", "F1"];
 
     public static readonly IReadOnlyDictionary<string, string> StationNames = new Dictionary<string, string>
     {
@@ -191,6 +191,9 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         "F5" => [$"prose --read-beats --slug {s.Slug} --from {u!.FirstPosition} --to {u.LastPosition} --mark-read --read-by claude",
                  $"(MCP after restart) read_beats(idOrSlug:\"{s.Slug}\", from:{u.FirstPosition}, to:{u.LastPosition}, markRead:true, readBy:\"claude\")",
                  "read every beat against the entity records and the book's law; file defects with add_read_note"],
+        "F1" => [$"prose --universe <u> --verify-entity begin --entity <id from the detail> --node {s.Slug}  (the record and its mention beats)",
+                 "examine the record against the book as read; if it is wrong, fix the record (set_character_fields), re-read what that un-reads, begin again",
+                 "prose --universe <u> --verify-entity commit --nonce <nonce from begin>"],
         _ => [$"see prose --factory status --node {s.Slug}"],
     };
 
@@ -253,7 +256,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
 
     // ── evaluation ────────────────────────────────────────────────────────────
 
-    private sealed record BeatRow(Guid Id, int Number, string Text, string? Title, string? Description);
+    private sealed record BeatRow(Guid Id, int Number, string Text, string? TextHash, string? Title, string? Description);
 
     private sealed class BookContext
     {
@@ -267,6 +270,12 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         public Dictionary<Guid, int> OpenDefects = [];
         public ILookup<Guid, LawHit> LawHits = Array.Empty<LawHit>().ToLookup(h => h.BeatId);
         public MetricsResult? Metrics;
+        // F1: what each beat tags (from its own text), the tagged entities as they stand, the
+        // fingerprint of each one's mentions in this book, and the verifications on file.
+        public Dictionary<Guid, List<Guid>> Tags = [];
+        public Dictionary<Guid, (string Name, DateTime ModifiedAt)> Entities = [];
+        public Dictionary<Guid, string> Fingerprints = [];
+        public Dictionary<Guid, EntityVerification> Verified = [];
     }
 
     private async Task<BookContext> LoadAsync(Guid bookId, CancellationToken ct)
@@ -286,8 +295,17 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             ctx.Beats = (await db.Beats.AsNoTracking().Where(b => ids.Contains(b.Id))
-                    .Select(b => new { b.Id, b.Number, b.Text, b.Title, b.Description }).ToListAsync(ct))
-                .ToDictionary(b => b.Id, b => new BeatRow(b.Id, b.Number, b.Text ?? "", b.Title, b.Description));
+                    .Select(b => new { b.Id, b.Number, b.Text, b.TextHash, b.Title, b.Description }).ToListAsync(ct))
+                .ToDictionary(b => b.Id, b => new BeatRow(b.Id, b.Number, b.Text ?? "", b.TextHash, b.Title, b.Description));
+
+            ctx.Tags = ctx.Beats.Values.ToDictionary(b => b.Id, b => BeatMarkup.ExtractEntityGuids(b.Text).ToList());
+            var tagged = ctx.Tags.Values.SelectMany(t => t).Distinct().ToList();
+            ctx.Entities = (await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => tagged.Contains(e.Id))
+                    .Select(e => new { e.Id, e.Name, e.ModifiedAt }).ToListAsync(ct))
+                .ToDictionary(e => e.Id, e => (e.Name, e.ModifiedAt));
+            ctx.Fingerprints = EntityVerificationService.Fingerprints(ctx.Beats.Values.Select(b => (b.Id, b.Text, b.TextHash)));
+            ctx.Verified = await db.EntityVerifications.AsNoTracking().Where(v => v.BookId == bookId)
+                .ToDictionaryAsync(v => v.EntityId, ct);
         }
         foreach (var ch in sp.Chapters)
         {
@@ -347,6 +365,24 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
                 if (defects > 0) parts.Add($"{defects} open defect note(s)");
                 if (hits.Count > 0) parts.Add($"{hits.Count} law hit(s), first #{hits[0].Number} \"{hits[0].Match}\" ({Short(hits[0].RulingText)})");
                 return new(code, "fail", string.Join("; ", parts) + ".");
+            }
+            case "F1":
+            {
+                var tagged = beats.SelectMany(b => ctx.Tags.GetValueOrDefault(b.Id) ?? []).Distinct()
+                    .Where(ctx.Entities.ContainsKey).ToList();
+                if (tagged.Count == 0) return new(code, "pass", "no entities are tagged in this unit.");
+                var unverified = tagged.Where(e => !(ctx.Verified.TryGetValue(e, out var v)
+                    && v.RecordModifiedAt == ctx.Entities[e].ModifiedAt
+                    && v.MentionsFingerprint == ctx.Fingerprints.GetValueOrDefault(e))).ToList();
+                if (unverified.Count == 0) return new(code, "pass", $"all {tagged.Count} tagged entities verified against the book as it stands.");
+                // Verification follows the full read: a record is examined against every beat that
+                // mentions it, so until the whole book reads as it stands this station waits. Waiting
+                // is not failing — factory_next moves on to the reading instead of stalling here [RT#1].
+                if (ctx.Unread.Count > 0)
+                    return new(code, "waiting", $"{unverified.Count} of {tagged.Count} tagged entities unverified; verification follows the full read ({ctx.Unread.Count} beats of the book unread).");
+                var first = unverified[0];
+                return new(code, "fail", $"{unverified.Count} of {tagged.Count} tagged entities are not verified as they stand; first: {ctx.Entities[first].Name} ({first}). " +
+                    $"Others: {string.Join(", ", unverified.Skip(1).Take(6).Select(e => ctx.Entities[e].Name))}{(unverified.Count > 7 ? ", …" : "")}");
             }
             default:
                 return StationResult.NotBuilt(code);

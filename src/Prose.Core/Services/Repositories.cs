@@ -182,6 +182,8 @@ public class CharacterRepository : EfRepository<CharacterData>
         // EfRepository.Save uses, kept here so the relational path doesn't
         // depend on the JSON-blob path being correct.
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, CharacterMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -418,6 +420,8 @@ public class CorponationRepository : EfRepository<CorponationData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, null, CorponationMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -583,6 +587,8 @@ public class DistrictRepository : EfRepository<DistrictData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, PlaceMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -759,6 +765,8 @@ public class FactionRepository : EfRepository<FactionData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, FactionMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -925,6 +933,8 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
 
         // Entity.Name mirrors FileName (per DocumentMapper.FillScalars contract)
         var name = item.FileName?.Length > 0 ? item.FileName : (item.Title ?? "");
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, null, DocumentMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -1087,6 +1097,8 @@ public class MotifRepository : EfRepository<MotifData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, MotifMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -1252,6 +1264,8 @@ public class WeaponryRepository : EfRepository<WeaponryData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, WeaponMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -1416,6 +1430,8 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, AmmunitionMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -1581,6 +1597,8 @@ public class EquipmentRepository : EfRepository<EquipmentData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, EquipmentMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -1746,6 +1764,8 @@ public class TechnologyRepository : EfRepository<TechnologyData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, TechnologyMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -1909,6 +1929,8 @@ public class CyberwareRepository : EfRepository<CyberwareData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, CyberwareMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -2074,6 +2096,8 @@ public class VocabularyRepository : EfRepository<VocabularyData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Term ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, null, VocabularyMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -2237,6 +2261,8 @@ public class GenemodRepository : EfRepository<GenemodData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.ProductName.Length > 0 ? item.ProductName : (item.Name ?? "");
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, GenemodMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -2401,6 +2427,8 @@ public class TransportationRepository : EfRepository<TransportationData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, TransportationMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -2567,6 +2595,8 @@ public class ContractRepository : EfRepository<ContractData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Codename ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, ContractMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -2732,6 +2762,8 @@ public class AutomatonRepository : EfRepository<AutomatonData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, AutomatonMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -2895,6 +2927,8 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, SubsidiaryMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -3059,6 +3093,8 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, EntertainmentMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -3223,6 +3259,8 @@ public class ApparelRepository : EfRepository<ApparelData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, ApparelMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -3388,6 +3426,8 @@ public class NewsRepository : EfRepository<NewsData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Headline ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, null, NewsMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -3551,6 +3591,8 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, ArchetypeMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -3715,6 +3757,8 @@ public class MaterialRepository : EfRepository<MaterialData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.ProductName.Length > 0 ? item.ProductName : (item.Name ?? "");
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, MaterialMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -3878,6 +3922,8 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, PharmaceuticalMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -4041,6 +4087,8 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, ConsumerGoodMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -4206,6 +4254,8 @@ public class QuoteRepository : EfRepository<QuoteData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Quote.Length > 40 ? item.Quote[..40] : item.Quote;
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, null, QuoteMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -4399,6 +4449,8 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, null, LabSpecimenMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -4561,6 +4613,8 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, null, FlyoverEntityMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -4723,6 +4777,8 @@ public class PsionicRepository : EfRepository<PsionicData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, null, PsionicMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
@@ -4925,6 +4981,8 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
         using var db = dbFactory.CreateDbContext();
 
         var name = item.Name ?? "";
+        // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
+        if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, SyntheticMapper.LoadOne)) return;
         var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {

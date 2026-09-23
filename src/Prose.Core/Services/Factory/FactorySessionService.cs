@@ -26,19 +26,27 @@ public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFa
         var last = await db.FactorySessions.AsNoTracking()
             .Where(s => s.EndedAt != null).OrderByDescending(s => s.EndedAt).FirstOrDefaultAsync(ct);
         var since = DateTime.UtcNow.AddHours(-24);
-        var others = await db.FactorySessions.AsNoTracking()
+        var claudeId = Trunc(claudeSessionId, 64);
+        var open = await db.FactorySessions.AsNoTracking()
             .Where(s => s.EndedAt == null && s.StartedAt >= since)
-            .OrderByDescending(s => s.StartedAt).Select(s => new { s.Id, s.StartedAt }).ToListAsync(ct);
+            .OrderByDescending(s => s.StartedAt).Select(s => new { s.Id, s.StartedAt, s.ClaudeSessionId }).ToListAsync(ct);
+        // A Claude session that compacts or resumes fires SessionStart again under the same id. That is
+        // this session continuing, not a second one: resume its row, and never report it as "other".
+        var mine = claudeId == null ? [] : open.Where(s => s.ClaudeSessionId == claudeId).ToList();
+        var others = open.Where(s => claudeId == null || s.ClaudeSessionId != claudeId).ToList();
+        currentCache = (DateTime.MinValue, null);
+        if (mine.Count > 0)
+            return new SessionStartResult(mine[0].Id, last?.EndSummaryJson, last?.EndedAt,
+                others.Select(o => (o.Id, o.StartedAt)).ToList());
 
         var row = new FactorySession
         {
-            ClaudeSessionId = Trunc(claudeSessionId, 64),
+            ClaudeSessionId = claudeId,
             GitHeadStart = Trunc(gitHead, 40),
             StartActionJson = startActionJson,
         };
         db.FactorySessions.Add(row);
         await db.SaveChangesAsync(ct);
-        currentCache = (DateTime.MinValue, null);
         return new SessionStartResult(row.Id, last?.EndSummaryJson, last?.EndedAt,
             others.Select(o => (o.Id, o.StartedAt)).ToList());
     }
