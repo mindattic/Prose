@@ -17,9 +17,9 @@ namespace Prose.Core.Services.WriteGate;
 /// "make the invariant structurally impossible at the one chokepoint every write passes
 /// through" reasoning as <see cref="SelfAliasSyncCheck"/>.
 ///
-/// Forward-only by author ruling (2026-08-26): this check only fires on NEW/MODIFIED rows —
-/// it never touches existing data, so a name banned today does not retroactively invalidate
-/// anything already in the database.
+/// Forward-only by author ruling (2026-08-26): this check only fires on a name the row did not
+/// already carry — a new row, a renamed entity, a new alias — so a name banned today does not
+/// retroactively invalidate anything already in the database, and does not block edits to it.
 /// </summary>
 public sealed class BannedNameSyncCheck : IWriteGateSyncCheck
 {
@@ -33,7 +33,44 @@ public sealed class BannedNameSyncCheck : IWriteGateSyncCheck
 
     public async Task CheckAsync(EntityEntry entry, CancellationToken ct)
     {
-        var value = entry.Entity switch
+        var value = ValueOf(entry.Entity);
+        if (string.IsNullOrWhiteSpace(value)) return;
+
+        // Forward-only means a name the row did not already carry. A modified Entities row whose
+        // Name did not change is not a new name: every save bumps ModifiedAt, so without this the
+        // one character the author let keep a banned name (Dr. Nadia Park) could never be edited
+        // at all — found live 2026-09-23 correcting her record. Likewise an alias row the mapper
+        // deletes and re-inserts with the same value in the same save is not a new alias.
+        if (entry.State == EntityState.Modified && entry.Entity is Entity)
+        {
+            var name = entry.Property(nameof(Entity.Name));
+            if (!name.IsModified || string.Equals(name.OriginalValue as string, value, StringComparison.OrdinalIgnoreCase)) return;
+        }
+        if (entry.State == EntityState.Added && entry.Entity is not Entity
+            && entry.Context.ChangeTracker.Entries().Any(e => e.State == EntityState.Deleted
+                && e.Entity.GetType() == entry.Entity.GetType()
+                && string.Equals(ValueOf(e.Entity), value, StringComparison.OrdinalIgnoreCase)))
+            return;
+
+        var db = (ProseDbContext)entry.Context;
+
+        // The list is small and rarely written to — re-query every time rather than caching,
+        // since a cache would go stale the instant someone adds a ban mid-session.
+        var banned = await db.BannedNames.AsNoTracking().Select(b => b.Name).ToListAsync(ct);
+        if (banned.Count == 0) return;
+
+        foreach (var name in banned)
+        {
+            if (Regex.IsMatch(value, $@"\b{Regex.Escape(name)}\b", RegexOptions.IgnoreCase))
+                throw new WriteGateRejectedException(
+                    $"Rejected: \"{value}\" contains the Prose-wide banned name \"{name}\" — " +
+                    "banned across every universe (forward-only; pre-existing rows using it are " +
+                    "unaffected). Choose a different name.");
+        }
+    }
+
+    private static string? ValueOf(object entity) =>
+        entity switch
         {
             Entity ent => ent.Name,
             CharacterAlias ca => ca.Value,
@@ -58,22 +95,4 @@ public sealed class BannedNameSyncCheck : IWriteGateSyncCheck
             SyntheticLifeAlias sla => sla.Value,
             _ => null,
         };
-        if (string.IsNullOrWhiteSpace(value)) return;
-
-        var db = (ProseDbContext)entry.Context;
-
-        // The list is small and rarely written to — re-query every time rather than caching,
-        // since a cache would go stale the instant someone adds a ban mid-session.
-        var banned = await db.BannedNames.AsNoTracking().Select(b => b.Name).ToListAsync(ct);
-        if (banned.Count == 0) return;
-
-        foreach (var name in banned)
-        {
-            if (Regex.IsMatch(value, $@"\b{Regex.Escape(name)}\b", RegexOptions.IgnoreCase))
-                throw new WriteGateRejectedException(
-                    $"Rejected: \"{value}\" contains the Prose-wide banned name \"{name}\" — " +
-                    "banned across every universe (forward-only; pre-existing rows using it are " +
-                    "unaffected). Choose a different name.");
-        }
-    }
 }

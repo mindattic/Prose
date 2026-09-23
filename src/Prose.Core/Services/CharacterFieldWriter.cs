@@ -134,7 +134,7 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
             // with a tag taken out would read back with it still there. Here tags replace.
             if (changed.Contains("tags")) await ReplaceTagsAsync(entityId, updated.Tags, ct);
         }
-        catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
+        catch (Exception ex) when (ex is InvalidOperationException or ArgumentException or WriteGate.WriteGateRejectedException)
         {
             return FieldWriteResult.Fail($"the save was refused: {ex.Message}", cost.Count, costRuns);
         }

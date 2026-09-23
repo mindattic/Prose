@@ -488,6 +488,36 @@ public class EntityFieldWriterTests : WorldFixture
     }
 }
 
+[TestFixture, NonParallelizable]
+public class BannedNameForwardOnlyTests : WorldFixture
+{
+    [Test]
+    public async Task A_name_that_predates_a_ban_can_still_be_edited_but_nobody_new_can_take_it()
+    {
+        // Found live 2026-09-23: every save bumps the Entities row, so the ban fired on the one
+        // character the author let keep "Nadia" and her record could not be corrected at all.
+        var nadia = NewCharacter("Dr. Nadia Park", "A researcher.");
+        var other = NewCharacter("Someone Else", "x");
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            db.BannedNames.Add(new BannedName { Name = "Nadia" });
+            await db.SaveChangesAsync();
+        }
+        var saved = Prose.Core.Services.WriteGate.WriteGateScope.SyncChecks;
+        Prose.Core.Services.WriteGate.WriteGateScope.SyncChecks = [new Prose.Core.Services.WriteGate.BannedNameSyncCheck()];
+        try
+        {
+            var edit = await writer.SetFieldsAsync(nadia.Id, """{"description":"She worked the architecture."}""");
+            Assert.That(edit.Ok, Is.True, edit.Error);
+
+            var taken = await writer.SetFieldsAsync(other.Id, """{"name":"Nadia Smith"}""");
+            Assert.That(taken.Ok, Is.False);
+            Assert.That(taken.Error, Does.Contain("banned name"));
+        }
+        finally { Prose.Core.Services.WriteGate.WriteGateScope.SyncChecks = saved; }
+    }
+}
+
 [TestFixture]
 public class RecordLawTests : WorldFixture
 {

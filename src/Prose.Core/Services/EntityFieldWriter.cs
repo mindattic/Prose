@@ -136,7 +136,7 @@ public sealed class EntityFieldWriter(
                 repoType.GetMethod("Reload", BindingFlags.Public | BindingFlags.Instance, Type.EmptyTypes)?.Invoke(repo, null);
             }
         }
-        catch (TargetInvocationException tie) when (tie.InnerException is InvalidOperationException or ArgumentException)
+        catch (TargetInvocationException tie) when (tie.InnerException is InvalidOperationException or ArgumentException or WriteGate.WriteGateRejectedException)
         {
             return FieldWriteResult.Fail($"the save was refused: {tie.InnerException!.Message}", cost.Count, costRuns);
         }
