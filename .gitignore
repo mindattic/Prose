@@ -36,6 +36,8 @@ engine/data/chapters/
 # Generated narration audio (WAV/MP3) â€” runtime output of Publish Audiobook /
 # combined export, regenerated from the beats in SQL Server. Never source.
 engine/data/strands/
+engine/data/nodes/*/node.mp3
+engine/data/nodes/*/node.wav
 
 # Runtime logs
 engine/data/logs/
