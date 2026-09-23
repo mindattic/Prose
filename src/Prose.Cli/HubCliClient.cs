@@ -25,6 +25,24 @@ public static class HubCliClient
     // this tier.
     private static readonly HttpClient Http = BuildClient();
 
+    /// <summary>Handlers whose input IS stdin, with no argument to say so (a hook reads its JSON there).</summary>
+    private static readonly HashSet<string> StdinHandlers = new(StringComparer.Ordinal) { "DocContextHookCli" };
+
+    /// <summary>
+    /// Whether a forwarded command reads stdin: an argument of exactly "-" (<c>--file -</c>,
+    /// <c>--text -</c>, the import commands) or a handler whose input is stdin by design.
+    /// <para>Every other command must not read it. Reading stdin to its end whenever it was
+    /// redirected blocked the command forever, before it ever reached the Hub, whenever the
+    /// caller's stdin was a pipe that never closes — which is an agent's shell. Found
+    /// 2026-09-23: three silent five-minute hangs in one session (--order add, --read-beats ×2),
+    /// each followed by an identical call that finished in a quarter of a second.</para>
+    /// </summary>
+    public static bool CommandReadsStdin(string handlerClass, string[] args) =>
+        StdinHandlers.Contains(handlerClass) || args.Any(a => a == "-");
+
+    private static async Task<string?> ReadStdinIfWantedAsync(string handlerClass, string[] args) =>
+        Console.IsInputRedirected && CommandReadsStdin(handlerClass, args) ? await Console.In.ReadToEndAsync() : null;
+
     // Portable-writing-service plan, Phase 1: the Hub's sensitive endpoints (cli-invoke among
     // them) require the shared X-Prose-Key header. Constructed directly (no DI available this
     // early — mirrors Prose.Hub/Prose.Mcp's own Program.cs pattern of instantiating
@@ -52,10 +70,9 @@ public static class HubCliClient
         // The Hub is a separate long-lived process with its own cwd and no real stdin of its
         // own — send this process's cwd unconditionally (cheap, makes every relative --file
         // path resolve exactly as it would running in-process) and this process's stdin only
-        // when actually redirected (piped/file), never when it's a real interactive terminal —
-        // reading Console.In here would otherwise block on a command that never asked for it.
+        // for a command that reads it (see CommandReadsStdin).
         var cwd = Environment.CurrentDirectory;
-        string? stdin = Console.IsInputRedirected ? await Console.In.ReadToEndAsync() : null;
+        var stdin = await ReadStdinIfWantedAsync(handlerClass, args);
 
         HttpResponseMessage resp;
         try
@@ -118,7 +135,7 @@ public static class HubCliClient
         var universe = Prose.Core.Services.UniverseBootstrap.RequestedSlug
             ?? Environment.GetEnvironmentVariable("PROSE_UNIVERSE");
         var cwd = Environment.CurrentDirectory;
-        var stdin = Console.IsInputRedirected ? await Console.In.ReadToEndAsync() : null;
+        var stdin = await ReadStdinIfWantedAsync(handlerClass, args);
         var preConfirmed = args.Contains("--no-confirm") || args.Contains("--yes");
 
         var gate = await PostCostGateAsync(handlerClass, commandName, args, universe, method, extraParamValue, cwd, stdin, preConfirmed);
