@@ -174,6 +174,7 @@ public class ContextBundleTests : PressFixture
         var overhead = probe.TotalChars - probe.PriorChars;
         var m = await bundles.BuildAsync(book, 3, allPrior: true, budgetChars: overhead + 4500, outDir: tempRoot);
         var text = await File.ReadAllTextAsync(m.Path);
+        Assert.That(m.TotalChars, Is.LessThanOrEqualTo(overhead + 4500), "headings are paid for out of the budget too");
         Assert.That(m.PriorTruncated, Is.True);
         Assert.That(m.PriorCharsAvailable, Is.GreaterThan(m.PriorChars));
         Assert.That(text, Does.Contain("END-OF-TWO"), "the newest prior prose survives");

@@ -143,15 +143,25 @@ public sealed class ContextBundleService(IDbContextFactory<ProseDbContext> dbFac
         var priorTexts = priorUnits.Select(c => (c.Ordinal, c.Heading,
             Text: string.Join("\n\n", c.Beats.Select(b => Plain(b.BeatId)).Where(t => t.Length > 0)))).ToList();
         var available = priorTexts.Sum(p => p.Text.Length);
-        var room = Math.Max(0, budgetChars - sb.Length - unitText.Length - 200);
+        var nl = Environment.NewLine.Length;
+        string Header(int ordinal, string heading) => $"### Unit {ordinal} — {heading}";
+        var room = Math.Max(0, budgetChars - sb.Length - unitText.Length - 100);
         var kept = new List<(int Ordinal, string Heading, string Text)>();
-        var used = 0;
+        var used = 0;    // prose characters kept
+        var spent = 0;   // budget spent, headings included
         var truncated = false;
         foreach (var p in Enumerable.Reverse(priorTexts))   // newest first; the oldest are what fall off
         {
-            if (used + p.Text.Length <= room) { kept.Insert(0, p); used += p.Text.Length; continue; }
-            var left = room - used;
-            if (left > 0) { kept.Insert(0, (p.Ordinal, p.Heading, "…" + p.Text[^left..])); used += left; }
+            var overhead = Header(p.Ordinal, p.Heading).Length + 3 * nl;
+            if (spent + overhead + p.Text.Length <= room)
+            {
+                kept.Insert(0, p);
+                used += p.Text.Length;
+                spent += overhead + p.Text.Length;
+                continue;
+            }
+            var left = room - spent - overhead - 1;
+            if (left > 0) { kept.Insert(0, (p.Ordinal, p.Heading, "…" + p.Text[^left..])); used += left; spent += overhead + left + 1; }
             truncated = true;
             break;
         }
@@ -159,7 +169,7 @@ public sealed class ContextBundleService(IDbContextFactory<ProseDbContext> dbFac
         if (kept.Count == 0) sb.AppendLine(unitIndex == 0 ? "(the book begins here)" : "(no room within the budget)");
         foreach (var p in kept)
         {
-            sb.AppendLine($"### Unit {p.Ordinal} — {p.Heading}");
+            sb.AppendLine(Header(p.Ordinal, p.Heading));
             sb.AppendLine(p.Text);
             sb.AppendLine();
         }
