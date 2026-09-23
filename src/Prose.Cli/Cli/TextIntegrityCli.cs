@@ -6,7 +6,7 @@ namespace Prose.Cli;
 /// <summary>
 /// prose --check-text-integrity [--fix] [--json]
 ///
-/// Scans every Beats.Text and every book's Nodes.NodeOutline, corpus-wide across ALL universes in
+/// Scans every Beats.Text, corpus-wide across ALL universes in
 /// one pass (TextIntegrityService.ScanAsync uses IgnoreQueryFilters — a data-integrity scan must
 /// never be universe-scoped), for TWO known corruption signatures left by past non-UTF-8 write
 /// paths mangling a multi-byte character: U+FFFD (the Unicode replacement character), and stray
@@ -65,7 +65,7 @@ public static class TextIntegrityCli
 
         if (findings.Count == 0)
         {
-            Console.WriteLine("[text-integrity] Clean — no U+FFFD or stray control characters found in any Beats.Text or Nodes.NodeOutline, corpus-wide.");
+            Console.WriteLine("[text-integrity] Clean — no U+FFFD or stray control characters found in any Beats.Text, corpus-wide.");
             return 0;
         }
 

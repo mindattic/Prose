@@ -83,12 +83,7 @@ public static class BeatDuelCli
                     ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == owner.Node.ParentNodeId.Value)
                     : owner.Node;
                 if (story != null)
-                {
                     storyTitle = story.Title;
-                    registerNotes = story.NodeOutline is { Length: > 0 } bible
-                        ? (bible.Length <= 3000 ? bible : bible[..3000])
-                        : null;
-                }
 
                 var prev = await db.BeatNodes.AsNoTracking()
                     .Where(bn => bn.NodeId == owner.Node.Id && bn.SortKey < owner.SortKey)

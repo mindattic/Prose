@@ -75,7 +75,7 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
             .Where(x => scopeIds.Contains(x.NodeId)).ToListAsync(ct);
         var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(s => s.Id == nodeId)
-            .Select(s => new { s.Slug, s.Title, s.NodeCode, s.NodeOutlineGeneratedAt })
+            .Select(s => new { s.Slug, s.Title })
             .FirstOrDefaultAsync(ct);
 
         var byService = logs
@@ -101,32 +101,6 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
         {
             if (!byService.Any(s => s.Service == svc))
                 gaps.Add($"{svc}: never logged (no calls recorded for this node — use ProseWriterRouter)");
-        }
-
-        // Health check: structural blueprint
-        // Blueprints are always keyed by the book's own NodeId (StructuralBlueprintService.
-        // GenerateAndSaveAsync/RetrofitAsync/SetManualAsync/GetAsync all take the book-level
-        // node, one row per book) — never by a leaf chapter/collection id. scopeIds above is
-        // leaf descendants ONLY, so for any book with real chapter structure (the book itself
-        // isn't a leaf) that Contains() check could never match, reporting a false "not found"
-        // even when a blueprint exists. Check the book's own id directly instead.
-        var hasBlueprint = await db.NodeStructuralBlueprints.AsNoTracking()
-            .AnyAsync(b => b.NodeId == nodeId, ct);
-        if (!hasBlueprint)
-            gaps.Add($"StructuralBlueprint: not found — run 'prose --generate-blueprint --slug {node?.Slug ?? "?"}'");
-
-        // Health check: NodeOutline freshness vs MarkdownFiles
-        var nodeCode = node?.NodeCode ?? "";
-        if (!string.IsNullOrEmpty(nodeCode) && node?.NodeOutlineGeneratedAt.HasValue == true)
-        {
-            var mdSynced = await db.MarkdownFiles.AsNoTracking()
-                .Where(m => m.Tier == "node" && m.Scope.Contains(nodeCode))
-                .Select(m => (DateTime?)m.LastSyncedAt)
-                .FirstOrDefaultAsync(ct);
-            if (mdSynced == null)
-                gaps.Add($"NodeOutline: generated but never synced — run 'prose --generate-node-doc --slug {node?.Slug ?? "?"} && prose --sync-markdown'");
-            else if (node!.NodeOutlineGeneratedAt!.Value > mdSynced.Value)
-                gaps.Add($"NodeOutline: generated {node.NodeOutlineGeneratedAt.Value:yyyy-MM-dd HH:mm} UTC but MarkdownFiles synced {mdSynced.Value:yyyy-MM-dd HH:mm} UTC — run 'prose --sync-markdown'");
         }
 
         return new NodeCoverageReport(

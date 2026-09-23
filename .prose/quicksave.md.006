@@ -1,0 +1,89 @@
+# Quicksave — Prose Writer: the voice plan is built
+
+_Printed: 2026-09-20_
+
+## Current task
+
+**The plan at `C:\Users\ryand\.claude\plans\atomic-waddling-stearns.md` is BUILT, committed and
+green.** Eight commits, `5bf2e3b27` → `991ca1b00`, all on master.
+
+Nothing is in flight. The next move is the author's: **redeploy and verify** (below).
+
+## What was built, and where
+
+| Plan item | State | Commit |
+|---|---|---|
+| V1 ear — mic, Groq, entity priming | done | `5bf2e3b27` |
+| V2 understand + confirm | done | `5bf2e3b27` |
+| V3 hands-free (F4 push-to-talk) | done | `f604f46db` |
+| V4 SSE streaming + sentence chunking | done | `f604f46db` |
+| 6 context menu | done | `1058d1881` |
+| 7 Find (`BeatSearchService`) | done | `1058d1881` |
+| 11 span guard + proposals | done | `67cbea42a` |
+| 12 scan + reconcile | done | `f410ec60f` |
+| 13 Read Mode `/read` | done | `f410ec60f` |
+| 8 structural editing | done | `2cd97af18` |
+| 10 navigator | done | `2cd97af18` |
+| P2 trust items (3 of 3) | done | `2cd97af18`, `8bcfb5cf1` |
+| accessibility remainder | done | `2cd97af18` |
+| 9 rich blocks + thread export | done | `8bcfb5cf1` |
+| 14+ ledger pane | done | `8bcfb5cf1` |
+| 14+ intent + backfill rule | done | `8014c461e` |
+| 14+ plant/payoff distance | done | `991ca1b00` |
+
+## NOT built — say so, do not rediscover
+
+- **Outline authority.** The plan names it in one phrase with no definition. Deliberately left.
+- **Thread grid** (the other half of "shape views"). Plant/payoff distance is built; the grid is not.
+- **Relationships pane.**
+- **The landing page and the `/app` observer** — accessibility untouched, as the plan said.
+- **`diagram` and `poll` blocks.** A poll needs more than one person; a diagram needs a renderer
+  and nothing in the conversation produces one.
+
+## AWAITING THE AUTHOR — three things only they can do
+
+1. **Redeploy `Hub` AND `Writer`.** Writer.exe is still 9/19 19:57. The mic permission lives in
+   `MainWindow.xaml.cs`, so without a Writer redeploy `getUserMedia` stays denied and the panel
+   will say the running Writer predates mic support. `/read` also needs the Hub redeploy.
+2. **V1 check:** speak a sentence containing *Togishi*, *Seito*, *Cacophony* → all three spelled
+   right. That is the measurement the entity priming exists for.
+3. **V4 check:** perceived silence under ~2s. Needs a Claude key in the BYO pool (still empty) and
+   Piper installed (still absent — `piper.exe` + the `.onnx.json` sidecars in
+   `%LOCALAPPDATA%\Prose\piper`).
+
+## Decisions locked (unchanged from the plan, plus what this session settled)
+
+- Intent is inferred, in the SAME call as the reply; the trailer comes LAST so reasoning precedes
+  the verdict. Auto is the default; Clarify/Edit are overrides.
+- **Questions never confirm.** Confirmation fatigue is the failure mode.
+- `BeatWriteReason.AuthorApprovedProposal` — NOT `AuthorEdit`. The decision is the author's, the
+  words are the model's, and the forever-record must be able to tell them apart.
+- Post-write checks are **exact and free only**. No LLM sweep: the obligation extractor measured
+  96% false positives, and a sweep firing four spurious findings per edit gets turned off.
+- Read Mode's absence of a Discuss panel is a **correctness property**, not layout.
+- `EditSessionService` is read, never started — `StartSessionAsync` evicts other auto-sessions.
+- Description is **never** regenerated from prose (it would make the intent check tautological);
+  EventSummary is regenerated freely.
+
+## HARD gotchas (do not rediscover)
+
+- **The author redeploys, not me.** A local build changes nothing.
+- **`@page.Text` in Razor markup is parsed as the `@page` directive.** Name the loop variable
+  anything else.
+- **`@ref` needs an assignable location** — `itemRefs[index]` over an array, not a dictionary.
+- **`@{ }` inside an existing Razor code block is a parse error.**
+- **`prose.cmd` + a heredoc in one Bash call DEADLOCKS.** Always `< /dev/null`.
+- **Every book-touching method must `SetFlowUniverse` first.**
+- **All JS interop through a try/catch helper** — an unhandled `JSException` kills the circuit.
+- The 5 failing tests are pre-existing (`WorldState*`, `Snapshot*`). Verified at HEAD. Leave them.
+
+## State
+
+- Suite: **2695 passing / 5 pre-existing failures / 19 skipped.** Builds clean.
+- New test files: `SpeechVocabularyTests`, `DiscussionTrailerTests`, `StreamingSpeechTests`,
+  `BeatSearchTextTests`, `SpanWriteTests`, `FencedBlockTests`, `DiscussionExportTests`.
+- The author's 8 pre-existing modified files were **never staged** and remain uncommitted:
+  `ObligationCli.cs`, `BeatGeneratorService.cs`, `ProseWriterRouter.cs`, `v4/…/Program.cs`,
+  `docs/rfc/0013`, and 3 `.prose/` files.
+- **Prose.Mcp could not rebuild at session start** — the running MCP server (PID 56392) holds its
+  output locked, so its advertised tool schema is stale. Nothing this session used MCP writes.

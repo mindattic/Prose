@@ -12,9 +12,8 @@ namespace Prose.Cli;
 ///
 /// <para>Added 2026-09-04 to close a real measurement gap. The residue detector
 /// <see cref="EntityMentionScanner.FindUnresolvedProperNouns"/> already existed and was already
-/// trusted, but both of its callers ran it against OUTLINE text only —
-/// <c>CanonDocumentService.SetNodeOutlineSectionAsync</c> (hand-authored sections) and
-/// <c>NodeDocService.GenerateAsync</c> (the generated Event Sequence). Nothing ran it against
+/// trusted, but its callers ran it against book-outline text only (the outline was removed
+/// 2026-09-22). Nothing ran it against
 /// <c>Beats.Text</c>, so "is every named thing in this book actually an entity?" had no answer:
 /// <c>--tag-entities</c> applies tags for what it CAN resolve and silently discards the rest
 /// without reporting it. A question you cannot measure reads exactly like a question with a

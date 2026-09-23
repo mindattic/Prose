@@ -29,7 +29,6 @@ public class CommandCostEstimatorService
             ["--affect-check"]        = 0.05,
             ["--interpersonal-check"] = 0.05,
             ["--harvest-entities"]    = 0.08,
-            ["--generate-blueprint"]  = 0.04,
             ["--storyscope-audit"]    = 0.05,
             ["--audit-book"]          = 1.50, // FULL tier: one call/beat for SWAIN, DRAMATIC-Q, and
                                                // several other checks — scales with book length,

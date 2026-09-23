@@ -132,9 +132,6 @@ public class BeatGeneratorService
         var tensionBlock = !string.IsNullOrWhiteSpace(context.TensionGuidanceContext)
             ? $"\n\n{context.TensionGuidanceContext}"
             : "";
-        var readerBlock = !string.IsNullOrWhiteSpace(context.ReaderKnowledgeContext)
-            ? $"\n\n{context.ReaderKnowledgeContext}"
-            : "";
         var consequenceBlock = !string.IsNullOrWhiteSpace(context.ConsequenceContext)
             ? $"\n\n{context.ConsequenceContext}"
             : "";
@@ -143,12 +140,6 @@ public class BeatGeneratorService
             : "";
         var worldStateBlock = !string.IsNullOrWhiteSpace(context.WorldStateContext)
             ? $"\n\n{context.WorldStateContext}"
-            : "";
-        var narrativeSummaryBlock = !string.IsNullOrWhiteSpace(context.NarrativeSummaryContext)
-            ? $"\n\n{context.NarrativeSummaryContext}"
-            : "";
-        var chapterSummaryBlock = !string.IsNullOrWhiteSpace(context.ChapterSummaryContext)
-            ? $"\n\n{context.ChapterSummaryContext}"
             : "";
         var openThreadsBlock = !string.IsNullOrWhiteSpace(context.OpenThreadsContext)
             ? $"\n\n{context.OpenThreadsContext}"
@@ -162,8 +153,8 @@ public class BeatGeneratorService
         var storyScienceBlock = !string.IsNullOrWhiteSpace(context.StoryScienceGuidance)
             ? $"\n\n{context.StoryScienceGuidance}"
             : "";
-        var structuralBlueprintBlock = !string.IsNullOrWhiteSpace(context.StructuralBlueprintGuidance)
-            ? $"\n\n{context.StructuralBlueprintGuidance}"
+        var storyScopeBlock = !string.IsNullOrWhiteSpace(context.StoryScopeGuidance)
+            ? $"\n\n{context.StoryScopeGuidance}"
             : "";
         var offscreenBlock = !string.IsNullOrWhiteSpace(context.OffscreenActivityContext)
             ? $"\n\n{context.OffscreenActivityContext}"
@@ -204,7 +195,7 @@ public class BeatGeneratorService
             {(context.XRayContext.Length > 0 ? "\nSCENE X-RAY — entities on screen RIGHT NOW. Every character below speaks in THEIR OWN documented register, not the narrator's:\n" + context.XRayContext : "")}{continuityBlock}
             {(context.EntityStackContext.Length > 0 ? "\nENTITY WORKING MEMORY — proper nouns active in this story thread and their canon facts. Treat these as hard constraints; do not contradict them:\n" + context.EntityStackContext : "")}
             {(context.DocStackContext.Length > 0 ? "\n" + context.DocStackContext : "")}
-            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{readabilityBlock}{readerProxyBlock}{continuityViolationBlock}{tensionBlock}{readerBlock}{narrativeSummaryBlock}{chapterSummaryBlock}{openThreadsBlock}{motifBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{structuralBlueprintBlock}
+            {(context.LocationContext.Length > 0 ? "\nADDITIONAL LOCATION DETAIL:\n" + context.LocationContext : "")}{ambientAnomalyBlock}{dialogueBlock}{anchorBlock}{consequenceBlock}{worldStateBlock}{sceneCollisionBlock}{emotionalBlock}{readabilityBlock}{readerProxyBlock}{continuityViolationBlock}{tensionBlock}{openThreadsBlock}{motifBlock}{plotEventsBlock}{pacingBlock}{structuralBlock}{offscreenBlock}{storyScopeBlock}
             """;
 
         var hasDialogue = context.DialogueContext.Length > 0;
@@ -918,7 +909,7 @@ public record BeatContext
     public BeatBrief? Brief { get; init; }
 
     /// <summary>RFC 0012 §3.2 tier E off: skip the opinion blocks (finding loop-backs,
-    /// story-science, blueprint slice, offscreen chart, style anchors, tension, collision) so the
+    /// story-science, StoryScope loop-back, offscreen chart, style anchors, tension, collision) so the
     /// A/B in §4 can compare "brief + facts + memory + voice" against the full pile.</summary>
     public bool LeanContext { get; init; }
 
@@ -958,7 +949,7 @@ public record BeatContext
 
     /// <summary>
     /// Doc Context Stack (DocContextService): the rotating cast of pertinent canon .md docs for
-    /// this beat — the universal always-tier core, the book's node bible + register, and any
+    /// this beat — the universal always-tier core, the book's register, and any
     /// topic docs triggered by the beat goal/scene. Empty when DocContextService is not wired or
     /// NodeId is empty. Injected by ProseWriterRouter alongside EntityStackContext.
     /// </summary>
@@ -1015,10 +1006,6 @@ public record BeatContext
     /// Non-empty when the last N beats have been at low intensity and the reader needs the stakes raised.</summary>
     public string TensionGuidanceContext { get; init; } = "";
 
-    /// <summary>Reader knowledge state from ReaderKnowledgeService.
-    /// Compact block of what the reader now knows vs what the POV character knows — dramatic irony management.</summary>
-    public string ReaderKnowledgeContext { get; init; } = "";
-
     // ── New ProseWriterRouter enrichment fields (SS-A29) ─────────────────────
 
     /// <summary>Character state constraints from ConsequenceService.
@@ -1034,17 +1021,7 @@ public record BeatContext
     /// Point-in-time aspect + relationship data from EntityStateEvents — drifted state, not canon baseline.</summary>
     public string WorldStateContext { get; init; } = "";
 
-    /// <summary>Rolling compressed scene memory from NarrativeSummaryService.
-    /// Last 10 beats summarized — orients the generator for long-node coherence without full prior prose.</summary>
-    public string NarrativeSummaryContext { get; init; } = "";
-
     // ── Autonomous pipeline enrichment fields ─────────────────────────────
-
-    /// <summary>DB-backed chapter summaries from ChapterSummaryService.
-    /// Summaries of prior chapters injected for long-form coherence — the engine
-    /// knows what happened before this chapter without the full prose in context.
-    /// Empty when ChapterSummaryService is not wired or no prior chapters exist.</summary>
-    public string ChapterSummaryContext { get; init; } = "";
 
     /// <summary>Open threads from OpenThreadsService.
     /// Unresolved promises, plants, and questions detected in earlier beats —
@@ -1095,14 +1072,11 @@ public record BeatContext
     public string OffscreenActivityContext { get; init; } = "";
 
     /// <summary>
-    /// Per-beat slice of this node's StructuralBlueprint — the pre-committed
-    /// StoryScope anti-tell decisions that apply to THIS beat (subplot carrier,
-    /// anachrony cut, escalation floor, event type, intertextual anchor,
-    /// ending/resolution mode on final beats). Built by StructuralBlueprintService
-    /// via ProseWriterRouter. Empty when the node has no blueprint; never blocks
-    /// generation.
+    /// STORYSCOPE audit loop-back: prior StoryScope findings for this book (AI-fiction tells a
+    /// structural audit found) formatted as do-not-repeat constraints by ProseWriterRouter.
+    /// Empty when there are none; never blocks generation.
     /// </summary>
-    public string StructuralBlueprintGuidance { get; init; } = "";
+    public string StoryScopeGuidance { get; init; } = "";
 
     /// <summary>
     /// Computed scene-collision guidance from SceneCollisionService: what specifically happens

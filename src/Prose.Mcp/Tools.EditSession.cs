@@ -10,12 +10,10 @@ namespace Prose.Mcp;
 [McpServerToolType]
 public class EditSessionTools(
     EditSessionService sessionSvc,
-    OutlineSyncService bibleSvc,
-    BlueprintSyncService blueprintSvc,
     IDbContextFactory<ProseDbContext> dbFactory,
     HubInvoker hub)
 {
-    [McpServerTool, Description("Start a named edit session for a node. A session groups all prose edits until closed, enabling bible/blueprint sync afterward. Session types: prose-pass, gripes-cleanup, logic-sweep, custom.")]
+    [McpServerTool, Description("Start a named edit session for a node. A session groups all prose edits until closed. Session types: prose-pass, gripes-cleanup, logic-sweep, custom.")]
     public Task<string> start_edit_session(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Human-readable label, e.g. 'prose-pass-1' or 'gripes-cleanup-2026-07-13'.")] string label,
@@ -103,49 +101,6 @@ public class EditSessionTools(
             priorVersion = esb.PriorVersion,
             currentVersion = esb.Beat?.Version,
         }), new JsonSerializerOptions { WriteIndented = true });
-    }
-
-    [McpServerTool, Description("Extract narrative facts from a session's beats and append them as '## Session Extracts' to the node bible .md file. Use --dry-run to preview without writing.")]
-    public Task<string> sync_outline_from_session(
-        [Description("Session GUID.")] string sessionId,
-        [Description("If true, returns extracted facts without writing to the bible file.")] bool dryRun = false) =>
-        hub.InvokeAsync(nameof(EditSessionTools), nameof(sync_outline_from_sessionImpl), new { sessionId, dryRun });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> sync_outline_from_sessionImpl(string sessionId, bool dryRun = false)
-    {
-        if (!Guid.TryParse(sessionId, out var sid)) return $"Invalid session ID: {sessionId}";
-        var report = await bibleSvc.ExtractFromSessionAsync(sid, dryRun);
-        var factLines = report.Facts.Count == 0
-            ? "  (no facts extracted)"
-            : string.Join("\n", report.Facts.Select(f => $"  [{f.Category}] Beat {f.BeatNumber}: {f.Fact}"));
-        var writeStatus = dryRun ? "(dry run — not written)" : report.WroteToFile ? $"Appended to {report.FilePath}" : "Not written (file not found or no facts)";
-        return $"Session : {report.SessionLabel}\nNode    : {report.NodeCode}\nFacts   : {report.Facts.Count}\nWrite   : {writeStatus}\n\n{factLines}";
-    }
-
-    [McpServerTool, Description("Map a session's beats to their blueprint tags. Confirmed decisions are recorded; divergences file BLUEPRINT-DRIFT findings.")]
-    public Task<string> sync_blueprint_from_session(
-        [Description("Session GUID.")] string sessionId) =>
-        hub.InvokeAsync(nameof(EditSessionTools), nameof(sync_blueprint_from_sessionImpl), new { sessionId });
-
-    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
-    public async Task<string> sync_blueprint_from_sessionImpl(string sessionId)
-    {
-        if (!Guid.TryParse(sessionId, out var sid)) return $"Invalid session ID: {sessionId}";
-        var report = await blueprintSvc.SyncFromSessionAsync(sid);
-        var sb = new System.Text.StringBuilder();
-        sb.AppendLine($"Session    : {report.SessionLabel}");
-        sb.AppendLine($"Confirmed  : {report.Confirmed}");
-        sb.AppendLine($"Diverged   : {report.Diverged}");
-        sb.AppendLine($"Unverified : {report.Unverified}");
-        if (report.DriftSummaries.Count > 0)
-        {
-            sb.AppendLine();
-            sb.AppendLine("BLUEPRINT-DRIFT findings:");
-            foreach (var d in report.DriftSummaries)
-                sb.AppendLine($"  ! {d}");
-        }
-        return sb.ToString().TrimEnd();
     }
 
     private async Task<Prose.Core.Data.Entities.Node?> ResolveNodeAsync(string nodeIdOrSlug)

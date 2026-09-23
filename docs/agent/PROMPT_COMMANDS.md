@@ -9,6 +9,7 @@ features. Their portable implementation is the `.prose/commands` registry and
 | `/do` | `do` | Resume the saved task and print the next action |
 | `/quicksave` | `save` | Save task, decisions, state, and next action as local handoff |
 | `/quickload` | `load` | Print and consume the handoff (`-Keep` preserves it) |
+| `/queue <text>` | `queue -Item` | Bookmark a future task without stopping; `-List` shows it; the next save/quicksave drains it into the handoff (archived, never deleted) |
 | `/progress` | `cli --progress` | Show the Hub-routed strand dashboard |
 | `/show <tuple>` | `cli --show` | Resolve and display an entity or book |
 | `/dcm` | `mcp doc_context_status` | Inspect active Dynamic Context Memory |

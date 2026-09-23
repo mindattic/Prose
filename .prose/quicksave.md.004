@@ -1,0 +1,130 @@
+# Quicksave — Make Prose actually write: the brief was 0.5% of the prompt
+_Printed: 2026-09-21_
+
+## Current task
+
+**Waiting on an author Hub redeploy, then run the A/B that proves (or disproves) the Phase 1
+prose fix.** Everything is committed and green; nothing has yet been verified against a live
+model, because `--composition` forwards into the Hub and the Hub is serving a build from before
+`BeatBrief` reached the composition path.
+
+The author's complaint is the north star and must not be lost: *"I feel like I'm talking to a
+person that knows the book I want but won't write the book I want… the output is entirely
+different like a completely random intelligence just made word salad."*
+
+## Decisions locked this session
+
+- **Gutenberg calibration is NOT the priority.** The author challenged it directly ("why do I care
+  about gutenberg stuff? is this going to prove you can actually write?"). It validates an
+  instrument; it says nothing about whether the book reads well. Deprioritised.
+- **The standard cannot be BCODA5.** Author: *"BCODA5 is 1000 AI iterations on an idea and might
+  be total nonsense. I can't know until you (Prose) works."* So the machine measures only
+  objectively checkable contract compliance; **the author judges quality**. Never declare prose good.
+- **End state = converse in the Writer while it drafts** (text + voice), pipeline underneath.
+- **Voice = retrieved exemplars** from the author's own book (not a hand-written spec).
+- **The whole-repo audit / 223 docs / 97 live-LLM service tests are KEPT but LAST**, after writing works.
+- Retire dead code by **commenting out in place**, never deleting (author's explicit choice).
+- Plan file: `C:\Users\ryand\.claude\plans\streamed-crunching-cloud.md` (approved, 6 phases).
+
+## State / where we are
+
+**Committed this session (all on master, suite green at 2,736 passed / 0 failed / 19 skipped):**
+
+| Commit | What |
+|---|---|
+| `9022b4883` | `v3/`+`v4/` → `src/`; `Prose.V4.Core.*` → `Prose.Core.Composition.*`; slnx 6→13 projects |
+| `1bce66664` | The 5 "known-fail" tests described behaviour deliberately removed 2026-09-05; suite went 5 fails → 0 |
+| `36e42e96c` | `[gate-0.1]` probes removed; added the missing `SceneWindow` coverage row |
+| `6d948845e` | Obligations scoped to the nearest `Kind=="book"`, not the series root |
+| `e51f0dc8f` | v4 CLI folded into `CompositionCli`/`TemporalHistoryCli`; Composition services registered in `AddProseServices()` |
+| `314b51e1b` | `OutlineSpineService` built (13 tests) |
+| `dee49254f` | `SelfReportedPlantService.Merge` — raw vs distinct plant counts (12 tests) |
+| `1cb3db208` | **Phase 1: the brief wired into the composition prompt** (8 tests) |
+
+**The measured defect that reframed everything** — a real `preview-generate` on BCODA5 Ch32:
+
+```
+window       40141   ← 94% of the prompt
+facts         2214
+obligations      0
+scene           38
+goal           219   ← 0.5%, and LAST
+```
+
+Output invented a character ("Cho") and a motorcycle, emitted `# The Narrows — Arcade Exit` and a
+`---`, explained its subtext for 3 paragraphs, ran ~3× length. **Every one of those is forbidden
+by `BeatBrief.ToPromptBlock()`**, which RFC 0012 built two weeks ago after diagnosing the identical
+defect on beat #17292. `PromptAssembler` simply never used it — and since `ProseWriterRouter`
+treats a null brief as the legacy path, **this route had no gate at all**.
+
+**Phase 1 (done, committed, unverified against a model):** brief first + `ToClosingLine()` last;
+ceilings in characters not item counts (facts 6,000 / window 8,000 / voice 3,000, trimming window
+from the FRONT); `TargetWords` wired from the book's own average (NOT `TargetWordsRecommended`
+950 — BCODA runs ~1,621 chars/beat); `DraftPostProcessor` + `DraftGate` now run;
+`VoiceAnchorService` created and reports an exemplar count.
+
+**Other findings logged for the later audit phase:** `EmotionalGuidance` fires **0/949** — it is a
+consumer whose producer was deleted in the 2026-09-06 instrument purge, still running a DB query
+per beat. `MlProseGuidance` 0/123. `DialogueService` 15%, `TensionEscalation` 18%, `BeatContract` 25%.
+
+## Open questions / pending
+
+- **Will the voice anchor return anything?** v3's `BuildBeatAnchorsAsync` queried
+  `ScopeKind='beat'` while the pipeline only wrote `'BeatNode'` — *"zero hits, silently, for every
+  beat ever generated."* Repointed, never verified. **If `voice exemplars: 0`, that is the next
+  fix** and the prose still won't sound like the author.
+- **Are BCODA's beats too small to be scenes?** `BeatGranularityService` puts a dramatic scene at
+  4,000–7,500 chars; BCODA measures ~1,621. Surface to the author as a structural question about
+  the book — do not "fix" it in a prompt builder.
+- **31 BCODA event summaries describe the WRONG beat** (memory). `BeatBriefBuilder` uses
+  `EventSummary` as *"WHAT HAPPENS — every event here must occur"*, so a wrong summary makes the
+  brief command the wrong story and the gate enforce it (RFC 0012 §11.5). Run the free
+  `prose --audit-event-summaries --slug BCODA5` before trusting briefs on that book.
+- B3 re-measurement (GCOBN/GCTOC/GCSH distinct counts) still unrun — needs ~$0.30–0.50 and the
+  author's go-ahead. Deprioritised per the Gutenberg pushback.
+- `v3/Prose.Mcp/` (786MB) is all that remains under `v3/` — the live MCP server runs from it.
+  Delete after MCP restarts from `src/`.
+
+## Next concrete steps
+
+1. **Ask the author to redeploy the Hub** (Prose Hub icon). Verify: new PID, `Hub.exe`
+   `LastWriteTime` fresh, `http://127.0.0.1:5900/api/health` ok.
+2. Re-run the identical beat and read the CONTRACT block — especially `voice exemplars` and the
+   gate verdict (command below).
+3. Put the output beside the author's real next beat (`01a0b68f-984a-7375-ab78-c668c9aaa709`) and
+   let the author judge. Do not pronounce it good.
+4. If voice exemplars = 0 → fix the embedding scope/coverage before anything else.
+5. Then Phase 2: build the same-beat A/B harness as a CLI verb (length ratio, invented proper
+   nouns, artefacts, stopped-before-next, gate pass without retry), cost-bookended.
+
+## Anchors
+
+- **Files:** `src/Prose.Core/Composition/Prompt/PromptAssembler.cs` ·
+  `src/Prose.Core/Composition/Prompt/VoiceAnchorService.cs` ·
+  `src/Prose.Core/Composition/Orchestration/BeatWriteOrchestrator.cs` ·
+  `src/Prose.Core/Composition/Obligations/OutlineSpineService.cs` ·
+  `src/Prose.Cli/Cli/CompositionCli.cs` · `src/Prose.Core/Services/Writer/BeatBrief.cs`,
+  `BeatBriefBuilder.cs`, `DraftGate.cs`, `DraftPostProcessor.cs` ·
+  `src/Prose.Core/Extensions/ServiceCollectionExtensions.cs` (Composition block ~line 1281)
+- **Ids:** book `BCODA5` (`bushido-coda-bcoda5-01a0b68f`, 46 ch / 521 beats) · Kyle
+  `019d6143-a648-7876-9688-0f6d38d70075` · the beat generated *after*:
+  `01a0b68f-984a-7077-8a66-8b17eeb3b671` (Ch32, togishi/Silence returned) · the real next beat to
+  compare against: `01a0b68f-984a-7375-ab78-c668c9aaa709`
+- **The A/B command (one billed call, saves nothing):**
+  ```
+  .\prose.cmd --composition preview-generate --node BCODA5 ^
+    --after-beat 01a0b68f-984a-7077-8a66-8b17eeb3b671 ^
+    --beat 01a0b68f-984a-7375-ab78-c668c9aaa709 ^
+    --goal "Kyle leaves the ramen-ya with Silence returned and counts what the evening bought him and what it cost him; before he reaches home, word reaches him that the freeze is lifted but he is still under assessment." ^
+    --characters 019d6143-a648-7876-9688-0f6d38d70075 --pov "Kyle" --location "The Narrows arcade" --size 15
+  ```
+- **Free commands:** `.\prose.cmd --composition sample --node BCODA5 --count 6` (proves the window
+  spans chapter boundaries) · `.\prose.cmd --workflow-status --universe glmz` (activation rates) ·
+  `.\prose.cmd --audit-event-summaries --slug BCODA5`
+- **Build/test:** `dotnet build src/Prose.slnx -v q --nologo` ·
+  `dotnet test src/Prose.UnitTests/Prose.UnitTests.csproj --no-build --nologo` (baseline 2,736/0/19)
+- **Hazards learned the hard way this session:** MSYS `sed` silently fails on `v3\tools`-style
+  backslash patterns and strips CRLF (`git show HEAD:` cannot detect it — use `git checkout-index`);
+  **never `git checkout-index -f -a`**, it destroyed 9 uncommitted files (recovered from loose
+  blobs `git add` had written); ReadOnly `docs/*.md` are DB-generated — edit via `set_canon_section`,
+  and MCP writes need `switch_universe` first.

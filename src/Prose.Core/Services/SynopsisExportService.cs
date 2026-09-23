@@ -11,25 +11,23 @@ using Prose.Core.Interfaces;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// Chapter-by-chapter synopsis layer — the middle altitude of the three-tier book
-/// understanding (book = bible/blueprint, chapter = this, beat = prose).
+/// Chapter segmentation of a book's live prose (<see cref="GetChapterSourcesAsync"/>, free, no
+/// LLM), plus an on-demand per-chapter what-happens synopsis for the audits that diff against one.
 ///
-/// For every chapter of a book node, generates a concrete what-happens summary from
-/// the live prose (events, decisions, reveals — spoiler-complete, no marketing tone),
-/// persists it to <see cref="NodeChapterSummary"/> (content-hash cached, so unchanged
-/// chapters never re-bill), and writes the assembled <c>story-synopsis.txt</c> into the
-/// book's export folder beside its .docx/.epub/.pdf exports. Runs as part of
-/// <c>prose --export-node</c> and standalone via <c>prose --export-synopsis</c>.
+/// <para>Nothing here is STORED (author ruling 2026-09-22: the book is the beats, drawing on
+/// entities — no stored summary or retelling of the story). Until then every synopsis was
+/// persisted to <c>NodeChapterSummaries</c> and written to the export folder as
+/// <c>story-synopsis.txt</c>; both are gone. <see cref="GetChapterSummariesAsync"/> now generates
+/// fresh each call, so its caller pays for it — only the (deactivated) comprehension probe calls it.</para>
 /// </summary>
 public sealed class SynopsisExportService(
     IDbContextFactory<ProseDbContext> dbFactory,
     ILlmService llm,
-    SettingsService settings,
     ILogger<SynopsisExportService> log)
 {
     // Synopses feed the altitude audit, so fate/motive fidelity is the job — Haiku
     // repeatedly upgraded "stopped" to "killed" and inferred motives (RTR, 2026-07-18);
-    // Sonnet holds the fidelity rules. Cost is per changed chapter only (hash cache).
+    // Sonnet holds the fidelity rules.
     private const string SynopsisModel = "claude-sonnet-5";
     private const int MaxSourceChars = 180_000;
 
@@ -42,58 +40,27 @@ public sealed class SynopsisExportService(
     public Task<List<ChapterUnit>> GetChapterSourcesAsync(Guid bookNodeId, CancellationToken ct = default) =>
         LoadChapterUnitsAsync(bookNodeId, ct);
 
-    /// <summary>Generates/refreshes all chapter summaries for the book (content-hash
-    /// cached in NodeChapterSummaries) and returns them in reading order. This is the
-    /// chapter-altitude view — consumed by story-synopsis.txt and the altitude audit.</summary>
-    public async Task<List<(int Index, string Title, string Synopsis)>> GetChapterSummariesAsync(
-        Guid bookNodeId, bool force = false, CancellationToken ct = default)
+    /// <summary>Generates a synopsis (plus its structured facts JSON) for every chapter of the
+    /// book, in reading order. Never stored — one LLM call per chapter, every call.</summary>
+    public async Task<List<(int Index, string Title, string Synopsis, string FactsJson)>> GetChapterSummariesAsync(
+        Guid bookNodeId, CancellationToken ct = default)
     {
         var chapters = await LoadChapterUnitsAsync(bookNodeId, ct);
-        var sections = new List<(int Index, string Title, string Synopsis)>(chapters.Count);
+        var sections = new List<(int Index, string Title, string Synopsis, string FactsJson)>(chapters.Count);
         foreach (var ch in chapters)
         {
             ct.ThrowIfCancellationRequested();
-            var synopsis = await GetOrGenerateAsync(bookNodeId, ch, force, ct);
-            sections.Add((ch.Index, ch.Title, synopsis));
+            var (synopsis, factsJson) = await GenerateAsync(ch, ct);
+            if (string.IsNullOrWhiteSpace(synopsis) || synopsis.Length < 200)
+            {
+                log.LogWarning("Synopsis: chapter '{Title}' came back {Chars} chars — skipped.", ch.Title, synopsis?.Length ?? 0);
+                continue;
+            }
+            sections.Add((ch.Index, ch.Title, synopsis, factsJson));
+            // Gentle pacing — bulk runs tripped the provider circuit breaker at full speed.
+            await Task.Delay(750, ct);
         }
         return sections;
-    }
-
-    /// <summary>Generates/refreshes all chapter summaries for the book and writes
-    /// story-synopsis.txt to its publish folder. Returns the file path, or null when
-    /// the book has no enabled prose.</summary>
-    public async Task<string?> ExportAsync(Guid bookNodeId, bool force = false, CancellationToken ct = default)
-    {
-        var sections = await GetChapterSummariesAsync(bookNodeId, force, ct);
-        if (sections.Count == 0) return null;
-
-        string bookTitle;
-        await using (var db = await dbFactory.CreateDbContextAsync(ct))
-            // IgnoreQueryFilters(): explicit bookNodeId, not an ambient scope (same bug class
-            // found and fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
-            bookTitle = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == bookNodeId)
-                .Select(n => n.Title).FirstAsync(ct);
-
-        var sb = new StringBuilder();
-        sb.AppendLine(bookTitle.ToUpperInvariant());
-        sb.AppendLine($"Chapter-by-chapter synopsis — generated {DateTime.UtcNow:yyyy-MM-dd} from the live prose.");
-        sb.AppendLine(new string('=', 72));
-        foreach (var (_, title, synopsis) in sections)
-        {
-            sb.AppendLine();
-            sb.AppendLine(title);
-            sb.AppendLine(new string('-', Math.Min(72, title.Length)));
-            sb.AppendLine(synopsis.Trim());
-        }
-
-        var dir = await NodePublishDirAsync(bookNodeId, ct);
-        Directory.CreateDirectory(dir);
-        var path = Path.Combine(dir, "story-synopsis.txt");
-        // BOM on purpose: this .txt is opened by humans in arbitrary Windows editors,
-        // and the em-dash-heavy prose garbles under an ANSI fallback.
-        await File.WriteAllTextAsync(path, sb.ToString(), new UTF8Encoding(true), ct);
-        log.LogInformation("Synopsis: wrote {Count} chapter(s) to {Path}", sections.Count, path);
-        return path;
     }
 
     // ── chapter loading ──────────────────────────────────────────────────────
@@ -154,59 +121,6 @@ public sealed class SynopsisExportService(
         return units;
     }
 
-    // ── per-chapter generation with content-hash cache ───────────────────────
-
-    private async Task<string> GetOrGenerateAsync(Guid bookNodeId, ChapterUnit ch, bool force, CancellationToken ct)
-    {
-        var hash = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(ch.SourceText)));
-
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var existing = await db.NodeChapterSummaries
-            .FirstOrDefaultAsync(s => s.NodeId == bookNodeId && s.ChapterIndex == ch.Index, ct);
-
-        // Cache key = source hash + generating model, so a model upgrade regenerates
-        // stale-quality summaries incrementally (resumable after provider hiccups).
-        if (!force && existing != null && !string.IsNullOrWhiteSpace(existing.SummaryText)
-            && existing.FactsJson.Contains(hash, StringComparison.OrdinalIgnoreCase)
-            && existing.FactsJson.Contains(SynopsisModel, StringComparison.OrdinalIgnoreCase))
-            return existing.SummaryText;
-
-        var (synopsis, factsJson) = await GenerateAsync(ch, ct);
-        // Never persist an empty/stub synopsis — 15 blank rows (pre-Legion-19 thinking-block
-        // responses) poisoned the altitude audit with phantom missing-chapter BLOCKERs.
-        if (string.IsNullOrWhiteSpace(synopsis) || synopsis.Length < 200)
-            throw new InvalidOperationException(
-                $"Synopsis generation returned {synopsis?.Length ?? 0} chars for chapter '{ch.Title}' — not storing.");
-        // Gentle pacing — bulk regens tripped the provider circuit breaker at full speed.
-        await Task.Delay(750, ct);
-
-        // Stamp the source hash into FactsJson so re-publishing unchanged prose is free.
-        var facts = ParseOrEmpty(factsJson);
-        facts["sourceHash"] = hash;
-        facts["model"] = SynopsisModel;
-        var storedFacts = JsonSerializer.Serialize(facts);
-
-        if (existing == null)
-        {
-            db.NodeChapterSummaries.Add(new NodeChapterSummary
-            {
-                Id = Guid.CreateVersion7(),
-                NodeId = bookNodeId,
-                ChapterIndex = ch.Index,
-                SummaryText = synopsis,
-                FactsJson = storedFacts,
-            });
-        }
-        else
-        {
-            existing.SummaryText = synopsis;
-            existing.FactsJson = storedFacts;
-            existing.UpdatedAt = DateTime.UtcNow;
-        }
-        await db.SaveChangesAsync(ct);
-        return synopsis;
-    }
-
     private async Task<(string Synopsis, string FactsJson)> GenerateAsync(ChapterUnit ch, CancellationToken ct)
     {
         // Word budget scales with chapter size — a 14-beat single-chapter book compressed
@@ -224,7 +138,7 @@ public sealed class SynopsisExportService(
             fate or motive is explicit, mirror its wording. End with one sentence stating the
             explicit final fate of every named character who was harmed, captured, or
             neutralized in this chapter (alive/wounded/dead/stopped — exactly as the text has
-            it). Your summary is used to audit the book against its bible, so precision on
+            it). Your summary is the ground truth a reader's comprehension is checked against, so precision on
             fates, motives, and counts is the job.
             Return STRICT JSON only, no markdown fence:
             {"synopsis":"...","facts":{"entities":["..."],"locations":["..."],"events":["..."],"state_changes":["..."]}}
@@ -251,32 +165,8 @@ public sealed class SynopsisExportService(
         }
         catch (JsonException)
         {
-            log.LogWarning("Synopsis: non-JSON response for chapter {Title}; storing raw text", ch.Title);
+            log.LogWarning("Synopsis: non-JSON response for chapter {Title}; using raw text", ch.Title);
         }
         return (raw, "{}");
-    }
-
-    private static Dictionary<string, object> ParseOrEmpty(string json)
-    {
-        try
-        {
-            return JsonSerializer.Deserialize<Dictionary<string, object>>(json) ?? new();
-        }
-        catch { return new(); }
-    }
-
-    // ── publish folder resolution (byte-for-byte the exporters' layout) ───────
-
-    private async Task<string> NodePublishDirAsync(Guid nodeId, CancellationToken ct)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
-        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
-        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(s => s.Id == nodeId).FirstAsync(ct);
-        var universeSlug = await db.Universes.AsNoTracking()
-            .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct);
-        var baseDir = settings.GetExportDirectory(universeSlug);
-        var (nodeDir, _) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct);
-        return nodeDir;
     }
 }

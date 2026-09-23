@@ -10,6 +10,7 @@ namespace Prose.Core.Data.Entities;
 /// Set BEFORE prose generation (B3 generates these rows; B5 blocks generation without one).
 /// Verified AFTER prose generation (Track C reads these rows to assess fulfillment).
 /// </summary>
+// PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
 public class BeatBlueprintDecision
 {
     public Guid Id          { get; set; } = Guid.NewGuid();

@@ -1,0 +1,145 @@
+# Quicksave — BCODA3 restored to pre-drift baseline; curation pass not started; v4 rebuild Phase 4 partial
+_Printed: 2026-09-18_
+
+## Current task
+
+**BCODA3's baseline is rebuilt (40 ch / 507 beats) from the original book's pre-Aug-29 database
+history. The curation pass — comparing it chapter-by-chapter against today's live BCODA, pulling in
+whatever's genuinely better (the Mr. Able arc chief among it), and shaping the result toward the
+author's stated throughline — has NOT started.** On resume, ask the author whether to continue into
+that curation pass now, or work on something else first (v4 Phase 4, or the Ledger editor UI — both
+also open, see below).
+
+The author's exact throughline to judge every keep/cut decision against (their words, 2026-09-18):
+> introduce the world and Kyle and Pixel, go on adventures, spot strange overlapping patterns which
+> eventually culminate into the realization that Kyle is the 5D entity trying to undo a thing by
+> deconstructing Kyle's own outed system of Bushido installed into him by Praxis and the Seito
+> construct to make him fiercely loyal — but not a good fit in a cyberpunk dystopia; it's all in
+> there somewhere, you just need to dredge out the good pieces and weave them together into
+> something beautiful.
+
+Full detail and evidence chain: memory `project_bcoda3_historical_reconstruction_2026_09_18.md`.
+
+## Decisions locked this session
+
+- **v4 architecture rebuild is APPROVED and in progress** — plan file
+  `C:\Users\ryand\.claude\plans\graceful-coalescing-liskov.md`. Rebuilds only the writer/generation
+  pipeline (`ProseWriterRouter`/`BeatGeneratorService`), wired to the Memory/Judgment infrastructure
+  (`WorldStateLedger`, `NarrativeObligation`) that already existed but was never gated on. v3 stays
+  running untouched for every book until Phase 6's per-book flag is flipped.
+- **BCODA3 restoration: do the full "curate, don't blindly rollback" version.** Base = original
+  book's state just-before-Aug-29 (confirmed: keeps the real "playing cards" scene). Explicitly told
+  to pull in current-version content where it's actually better ("make sure the story makes sense" is
+  the overriding constraint, not nostalgia for older text).
+- **Ledger editor UI (Writer app) — real, wanted feature, explicitly deferred until BCODA3 is done.**
+  See memory `project_ledger_editor_ui_2026_09_18.md`.
+- v4's forensic/diagnostic CLI verbs (`beat-history`, `search-history`, `node-edit-timeline`,
+  `find-node-history`, `check-temporal`, `reconstruct-book`) are added to `v4\Prose.V4.Cli\Program.cs`
+  but **UNCOMMITTED** — decide at commit time whether these belong in the v4 generation-pipeline
+  project or should live somewhere separate (they're book-archaeology tools, not writer-pipeline code).
+
+## State / where we are
+
+**v4 rebuild — Phases 0-3 DONE/PASSED and COMMITTED, Phase 4 partial and uncommitted-tuning-in-progress:**
+- Phase 0 (`StoryStateQuery`, `SceneWindowService`) — commit `7bbc188ba`.
+- Phase 1 (`PromptAssembler`, `BeatWriteOrchestrator.PreviewGenerateAsync`) — commit `bfbb5dc57`.
+  Proved the window survives a real Ch9→Ch10 boundary in BCODA (38KB of carried-forward content v3
+  would have dropped).
+- Phase 2 (`GenerateAndSaveAsync`, declared-delta self-report) — commit `f9571e955`. Verified
+  generate→save→self-report→query round-trip on beat `01a0b0e0-50af-7ae8-8cc2-83268e43b985` in the
+  **BCODA2 sandbox** (`bushido-coda-bcoda2-v4-sandbox-01a0b0d9` — all v4 generation testing happens
+  here, never touches live BCODA).
+- Phase 3 (`NarrativeContradictionChecker`, the real write gate) — commit `95561abd0`. Calibrated
+  7/7 on hand-planted fixtures incl. the volatile-predicate case; wired into `GenerateAndSaveAsync`
+  as generate→check→retry-once→save-or-throw.
+- Phase 4 (`SelfReportedPlantService`) — commits `bfc4fd7fc` (initial) + `e4f020fda` (salience
+  tightening). Measured: GCOBN 25→1→0 opens (blanket miner → first self-report pass → tightened
+  pass). GCTOC 53→34 opens after tightening (-36%, confirmed the specific false positives read out
+  earlier are gone) vs a 15-row hand-built answer key — **raw counts aren't dedup'd against that
+  key, so "34 vs 15" isn't a fair comparison yet.** GCSH (96 beats, 309 opens pre-tightening) was
+  NOT re-run with the tightened prompt. **Phase 4 is NOT done** — needs a merge/dedup step and a
+  direct BCODA2 measurement before trusting it.
+
+**BCODA3 historical reconstruction — baseline DONE, curation NOT started:**
+- Root cause found: original `bushido_coda` book (`eb91080d-9c9c-4f2b-9b40-5fa5996bdea1`) lived
+  Jan 1 2026 → deleted Sept 9 21:50. Full edit history recoverable via SQL Server temporal tables
+  (`Beats_History`, `Nodes_History`, `BeatNodes_History` all exist).
+- Full-life edit-wave scan (507 beats, whole history): Aug 18 (92%), Aug 19 (39%), Aug 22 (33%),
+  Aug 24 (26%), **Aug 29 (12% — the card-game→chrome-hand rewrite)**, Aug 31 (14%), **Sept 4 (100% —
+  every single beat), Sept 5 (98%)** — almost certainly the long-planned "Fable full rewrite" from
+  memory `project_bcoda_fable_rewrite.md`, and the most likely cause of the incoherence complaint.
+- Today's live BCODA (`bushido-coda-writer-clone-3-01a07e1b`) is a clone made Sept 7 23:01, renamed
+  to "Bushido Coda" Sept 9 21:51 — it is NOT a separate lost book, it IS today's book. Neither it nor
+  the deleted BCODA2 clone (`bushido-coda-writer-clone-01a07a27`, cloned Sept 7 04:37, also deleted
+  Sept 9) is a shortcut past the drift — only the original's own deep history reaches before it.
+- **New book built:** `bushido-coda-bcoda3-restoration-01a0b50d` (id
+  `01a0b50d-8b55-756c-87df-217c5e1353c2`, NodeCode `BCODA3`), reconstructed via the new
+  `reconstruct-book` CLI verb AS OF `2026-08-29T00:00:00`. **40 chapters, 507 beats, confirmed
+  correct** — the target scene is back verbatim at beat `01a0b50d-8d2a-764d-9724-aa5734c7deae`.
+  Chapter list (opens "Teeth," ends "One Knock," matching today's live book's own bookends — a real,
+  complete draft, not a fragment): Teeth · Provenance · The Regular · [Interlude: The Room After] ·
+  The Carousel · Half a Step · The Dock · The Quiet Hour · [Interlude: The Physical Damage] · Before
+  Something Changes · Eleven Seconds · The Interview · The One Who Doesn't Stop · [Interlude: A Fixed
+  Point] · One Shoe · [Interlude: The Same Secret] · The Offer · Two Favors · Work Order · [Interlude:
+  The Floor Is Hard] · Standard Rate · Ghost Period · The Park Job · The Audit · Blackwater · Meridian
+  Wellness · The Taste-Off · The Forger's Ledger · Halvorsen and Sons · The Gray Suit · The Corridor ·
+  The Narrows · West Town Rain · The Axiom Yard · The Iowa Corridor · The Relay Station · The
+  Acquisition Program · Brain Burn · 35th and Halsted · One Knock.
+- The 6 Mr. Able interludes (added Sept 9, live today, NOT in this Aug-29 baseline) go at Ch8/13/19/
+  23/37/43 per memory `project_able_arc_braided_bcoda3_2026_09_09.md` — exact insertion points for
+  when curation pulls them in.
+
+## Open questions / pending
+
+- **Immediate fork, asked at quicksave time, unanswered:** continue into the BCODA3 curation pass
+  now, or pause / work on something else (v4 Phase 4 tuning, or the Ledger editor UI)?
+- **BCODA3 curation itself has no defined process yet** — needs a concrete plan for HOW to compare
+  ~40 chapters against current (read both, judge coherence + throughline fit, decide keep/cut/blend)
+  without it turning into another unreviewed wholesale rewrite — the exact failure mode this whole
+  exercise exists to escape. Should probably go chapter-by-chapter with check-ins, not silently.
+- **Ledger editor UI has no design yet** — only that it should sit in `Prose.Writer`/`Prose.WriterUi`
+  on top of `EntityStateEvents` (and maybe `NarrativeObligations`), letting a human browse/edit ledger
+  rows and see which beat/quote each traces to, enforcing plain-fact (not prose) values.
+- v4 Phase 4's self-report mechanism still needs: a merge/dedup step (so raw per-beat opens compare
+  fairly against distinct-debt answer keys), a GCSH re-run with the tightened prompt, and a direct
+  BCODA2 measurement.
+- Two earlier-session changes remain uncommitted and undecided (author declined committing them,
+  wanted to see them proven working first): the ledger-scope walker fix and Gate 0.1 diagnostic
+  logging in `v3\Prose.Cli\Cli\ObligationCli.cs` / `v3\Prose.Core\Services\{BeatGeneratorService,
+  ProseWriterRouter}.cs` — these need a Hub redeploy to actually test (author redeploys, not me).
+
+## Next concrete steps
+
+1. Ask the author which thread to resume: BCODA3 curation, v4 Phase 4 tuning, or the Ledger editor UI.
+2. If BCODA3 curation: propose a concrete chapter-by-chapter comparison process before starting (read
+   old + current side by side, judge against the throughline, check in at natural intervals — do NOT
+   silently rewrite 40 chapters unattended).
+3. If v4 Phase 4: build the merge/dedup step for `calibrate-plants`, then re-run GCSH with the
+   tightened prompt, then measure directly on BCODA2.
+4. Either way: decide whether the forensic CLI verbs in `v4\Prose.V4.Cli\Program.cs` (added this
+   session, uncommitted) should be committed as-is, split into a separate tool, or something else.
+
+## Anchors
+
+- **v4 plan:** `C:\Users\ryand\.claude\plans\graceful-coalescing-liskov.md`
+- **v4 progress memory:** `project_v4_rebuild_plan_2026_09_17.md`
+- **BCODA3 memory:** `project_bcoda3_historical_reconstruction_2026_09_18.md`
+- **Ledger editor memory:** `project_ledger_editor_ui_2026_09_18.md`
+- **Key ids:** original book `eb91080d-9c9c-4f2b-9b40-5fa5996bdea1` (deleted, history intact) · live
+  BCODA `bushido-coda-writer-clone-3-01a07e1b` · BCODA2 v4-sandbox
+  `bushido-coda-bcoda2-v4-sandbox-01a0b0d9` · **new BCODA3**
+  `bushido-coda-bcoda3-restoration-01a0b50d` (`01a0b50d-8b55-756c-87df-217c5e1353c2`)
+- **Files:** `v4\Prose.V4.Core\{Ledger,Window,Prompt,Orchestration,Contradiction,Obligations}\*.cs` ·
+  `v4\Prose.V4.Cli\Program.cs` (all forensic verbs live here, uncommitted)
+- **Commands to re-run:**
+  - `dotnet run --project v4/Prose.V4.Cli -- reconstruct-book --source-node-id <guid> --as-of <date>
+    --new-title "<title>" [--code X] [--dry-run]`
+  - `dotnet run --project v4/Prose.V4.Cli -- node-edit-timeline --node-id <guid>` (full-life
+    day-bucketed edit scan, any node tree, deleted or not)
+  - `dotnet run --project v4/Prose.V4.Cli -- search-history --text "<substring>"` (full-corpus,
+    all-time, current+deleted beat text search)
+  - `dotnet run --project v4/Prose.V4.Cli -- calibrate-plants --node <slug>` (Phase 4 calibration,
+    real billed cost, ~$0.01-0.03/beat)
+  - `dotnet test v3\Prose.UnitTests\Prose.UnitTests.csproj -c Debug -p:BaseIntermediateOutputPath='obj_diag\' -p:BaseOutputPath='bin_diag\'`
+    — known-good baseline 2567 pass / 5 pre-existing fail, unaffected by any v4 work (v4 touches no
+    v3 files).

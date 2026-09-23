@@ -1,0 +1,125 @@
+# Quicksave — BCODA consolidation: delete 4 books, promote BCODA5 to canon (BLOCKED on MCP)
+_Printed: 2026-09-21_
+
+## Current task
+
+**MCP IS DISCONNECTED — that is why this session stopped.** The Hub itself is healthy
+(PID 64148, `http://127.0.0.1:5900/api/health` ok, `Hub.exe` LastWriteTime 09/21 09:26:27);
+it is only this session's MCP channel that dropped. Close and reopen Claude Code, `/quickload`,
+and **verify MCP is up before touching anything.**
+
+**The approved, confirmed job on resume:**
+
+> Delete **BCODA, BCODA2, BCODA3, BCODA4**. Rename **BCODA5** → title `Bushido Coda`,
+> slug `bushido_coda`.
+
+The author confirmed this explicitly when shown that it makes BCODA5 the only Bushido Coda
+that exists. **Do not re-litigate it.** Their reasoning: "we can't fix all BCODA books."
+
+## Decisions locked this session
+
+- **Kyle lives in 2D.** Author ruling, restated 2026-09-21: *"You know Kyle lives in 2D, if
+  anything, anywhere says differently obliterate it."* Pixel is 2E. `2F` and `2W` are both dead.
+- **Delete all four BCODA books and promote BCODA5** (above). Confirmed against the warning that
+  the canonical book is 492 beats / 261,994 words and that the author had earlier called BCODA5
+  *"1000 AI iterations on an idea and might be total nonsense."* They chose deletion anyway.
+- **The author judges prose quality, never the machine.** Report contract compliance; never
+  declare prose good.
+- **The AUTHOR redeploys the Hub**, not me. Ask for the Prose Hub icon and wait.
+- Gutenberg calibration stays deprioritised.
+
+## State / where we are
+
+**Committed this session (master, suite 2,742 passed / 0 failed / 19 skipped):**
+
+| Commit | What |
+|---|---|
+| `a9958d6af` | Voice-tier scope fix — `FindSimilarBeatNodesAsync` now walks the subtree (recursive CTE) instead of `sb.NodeId = @p_node`; +6 tests in `BeatNodeSimilarityScopeTests.cs` |
+| `3b653ef29` | `ReadBeatsCli` slug lookup now uses `IgnoreQueryFilters()` — "Node not found" was the ambient universe filter, not a typo |
+
+**Phase 1 is VERIFIED against a live model.** Same beat, before → after the fix:
+brief 0.5%-and-last → 6.6%-and-first; prompt 42,600 → 11,388 chars; length ~3× → 1.09×;
+markdown headings / `---` / explained subtext / invented entities all gone; gate ran and passed.
+
+**The voice tier now FIRES: `voice exemplars: 3`** (2,870-char block, 20.1% of prompt). It had
+**two independent causes**, both fixed:
+1. BCODA5 had **zero** beat embeddings — `prose --reembed --beats --slug BCODA5 --universe glmz`
+   wrote **521 of 521** in 8s (drift-skip had nothing to skip).
+2. The scope filter could never match a book node (commit `a9958d6af`).
+
+**2F / 2W obliteration — 14 of 16 beats DONE**, all dry-run first and asserted character-exact
+(stored length unchanged, only token chars differ). Books archived to `ArchivedBooks` first:
+Standing Contract V3 `8b379da5`, Bushido Coda V70 `0895cad6`, BCODA3 V0 `51849617`,
+BCODA2 V0 `a0800a01`.
+
+| Book | Beats fixed |
+|---|---|
+| Standing Contract (`standing-contract-01a02d2c`) | 6 (4× 2F, 2× 2W) |
+| Bushido Coda (`bushido-coda-writer-clone-3-01a07e1b`) | 1 (2F) |
+| BCODA3 (`bushido-coda-bcoda3-restoration-01a0b50d`) | 7 (2× 2F, 5× 2W) |
+
+**Correction made this session:** "Cho" was never invented — `Vega Cho` and `Bartosz Cho` are
+both canon characters, which is why the gate does not flag the name. The earlier claim that the
+broken output invented Cho was wrong.
+
+## Open questions / pending
+
+- **2 beats in BCODA2 still say `2F`** — #18601 `01a0b0d9-dec0-7d88-9ecb-6af394d9f7fd`,
+  #18869 `01a0b1cc-2fbf-754a-86a0-f8c707e6c71c`. **MOOT once BCODA2 is deleted.** Do not spend
+  effort here; just confirm they die with the book.
+- **The orphaned `kyle-s-apartment-2f` entity embedding is the one that still matters.**
+  `search_semantic` ranks it **top at 0.544**; the correct `unit-2d-the-upstairs` ranks **0.215**.
+  But `get_place` and `find_entities` both return *not_found* — it is reachable ONLY through
+  retrieval, the one path that feeds generation. Deleting books will NOT clear it. **Kill it.**
+- **Ledger / continuity claims never checked** for stale unit numbers. Memory rule: text-search
+  the ledger AND relationships before calling a purge done.
+- **`DraftGate` binds form, not canon facts.** It warned "Unit" was an uncanonical capitalised
+  word and passed a draft that said "Unit 2F" anyway. Open design question, not yet actioned.
+- **BCODA4 is NOT archived** (the other four are). Archive before deleting.
+- **5 "2W" hits in Irish Outlaws are longitude coordinates** (`55.0928N, 7.5442W`) — NOT
+  apartments. **Never touch them.** A blind replace corrupts five geographic citations.
+
+## Next concrete steps
+
+1. **Verify MCP is connected.** If not, stop again and say so.
+2. `prose --archive-book --slug bushido-coda-bcoda4-01a0b544 --reason "pre-deletion snapshot" --universe glmz`
+3. Export the canonical book's 261,994 words to `D:\Projects\MindAttic\ePub\MindAttic\` as a
+   readable copy outside the DB before it is destroyed.
+4. Sanity-check BCODA5 is structurally complete (46 ch / 521 beats) — it is about to be the only copy.
+5. Delete `BCODA`, `BCODA2`, `BCODA3`, `BCODA4` (MCP `delete_book_permanently`; no raw SQL deletes, ever).
+6. Rename BCODA5 → title `Bushido Coda`, slug `bushido_coda` (MCP `update_book`).
+7. Sweep references orphaned by the deletions: ledger claims, findings, entity `OriginNodeId`,
+   plant/payoff links, edit sessions.
+8. **Kill the `kyle-s-apartment-2f` embedding**, then re-run `search_semantic` to prove
+   `unit-2d-the-upstairs` now ranks first.
+9. Re-run the A/B and confirm the draft no longer says 2F.
+
+## Anchors
+
+- **Books:** BCODA5 `bushido-coda-bcoda5-01a0b68f` (node `01a0b68f-981a-7ac4-867d-ea87eeda21be`,
+  46 ch / 521 beats) · canonical BCODA `bushido-coda-writer-clone-3-01a07e1b`
+  (node `01a07e1b-0c2d-7c73-8d70-f41e1bf04606`, 492 beats) ·
+  BCODA2 `bushido-coda-bcoda2-v4-sandbox-01a0b0d9` (494 beats) ·
+  BCODA3 `bushido-coda-bcoda3-restoration-01a0b50d` (507 beats) ·
+  BCODA4 `bushido-coda-bcoda4-01a0b544` · Standing Contract `standing-contract-01a02d2c` (KEEP)
+- **Ids:** Kyle `019d6143-a648-7876-9688-0f6d38d70075` · Pixel `019d6143-c1d5-e7f8-a92b-34068c150e4d`
+- **Files:** `src/Prose.Core/Services/EmbeddingService.cs` (`BuildBeatNodeSimilaritySql`,
+  `FindSimilarBeatNodesAsync`, `ReembedBeatNodesAsync`) ·
+  `src/Prose.Core/Composition/Prompt/VoiceAnchorService.cs` ·
+  `src/Prose.Cli/Cli/ReadBeatsCli.cs` · `src/Prose.UnitTests/BeatNodeSimilarityScopeTests.cs`
+- **Splice tooling (reusable, in scratchpad):**
+  `C:\Users\ryand\AppData\Local\Temp\claude\D--Projects-MindAttic-Prose\f55fe0c3-e15b-418d-94eb-3d35c667050c\scratchpad\splice-unit.ps1`
+  (dry-run by default, `-Apply` to write; asserts length unchanged + counts differing chars) and
+  `run-all.ps1` (the 16-target manifest).
+- **Commands to re-run:**
+  - `.\prose.cmd --grep-beats --pattern "2F" --case-sensitive` (expect: only BCODA2, then zero)
+  - `.\prose.cmd --edit-beat --id <beat-guid> --file <path> --universe glmz`
+    (**by GUID — `--beat-number` is reading-order POSITION, not `Beat.Number`; using it writes the wrong beat**)
+  - `.\prose.cmd --read-beats --slug <slug> --numbers <n> --format json --universe glmz`
+  - `dotnet build src/Prose.slnx -v q --nologo` ·
+    `dotnet test src/Prose.UnitTests/Prose.UnitTests.csproj --no-build --nologo` (baseline 2,742/0/19)
+  - A/B: `.\prose.cmd --composition preview-generate --node BCODA5 --universe glmz --after-beat 01a0b68f-984a-7077-8a66-8b17eeb3b671 --beat 01a0b68f-984a-7375-ab78-c668c9aaa709 --goal "..." --characters 019d6143-a648-7876-9688-0f6d38d70075 --pov "Kyle" --location "The Narrows arcade" --size 15`
+    (one real billed call, saves nothing)
+- **Hazards:** archive-book BEFORE any prose edit · one `prose.cmd` at a time · always `--universe` ·
+  ONLY the Hub reaches the DB, never raw sqlcmd · no bulk-fix tools, hand-edit prose ·
+  read every hit before splicing (Irish Outlaws proved why).

@@ -8,14 +8,13 @@ namespace Prose.Core.Services;
 /// The full "export = ALL formats + ALL metadata" pipeline shared by <c>prose --export-node</c>
 /// (<see cref="Prose.Cli"/>) and the MCP <c>export_node</c> tool, so the two entry points
 /// can never silently diverge again — before this, the CLI wrote docx+epub+pdf+txt+description+
-/// synopsis+keywords+cover while the MCP tool wrote only docx.
+/// keywords+cover while the MCP tool wrote only docx.
 /// </summary>
 public class NodeFullExportService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly DocxExportService docx;
     private readonly ManuscriptExportService manuscript;
-    private readonly SynopsisExportService synopsis;
     private readonly NodeWorkbenchService workbench;
     private readonly ExportCleanupService cleanup;
 
@@ -23,14 +22,12 @@ public class NodeFullExportService
         IDbContextFactory<ProseDbContext> dbFactory,
         DocxExportService docx,
         ManuscriptExportService manuscript,
-        SynopsisExportService synopsis,
         NodeWorkbenchService workbench,
         ExportCleanupService cleanup)
     {
         this.dbFactory = dbFactory;
         this.docx = docx;
         this.manuscript = manuscript;
-        this.synopsis = synopsis;
         this.workbench = workbench;
         this.cleanup = cleanup;
     }
@@ -44,14 +41,13 @@ public class NodeFullExportService
         int DocxMojibakeHits,
         string? DescriptionPath,
         bool DescriptionMojibakeRepaired,
-        string? SynopsisPath,
         string? KeywordsPath,
         int KeywordCount);
 
     /// <summary>
     /// Renders every export artifact for a node: docx, epub, pdf, txt, md, description.txt (when
     /// <c>Node.Description</c> is set — mojibake-repaired and persisted back to the DB first),
-    /// story-synopsis.txt, and keywords.txt (when the node has seeded keywords). Cover art is NOT
+    /// and keywords.txt (when the node has seeded keywords). Cover art is NOT
     /// produced — that is a manual step; see the note beside the archive call. The .md is beat-ID-marked (same file <c>--publish-md</c> writes) so every
     /// full export doubles as a ready-made round-trip target for <c>--import-md</c> /
     /// <c>--reimport-node</c> — no separate step needed to get an editable whole-book copy.
@@ -114,10 +110,6 @@ public class NodeFullExportService
             await File.WriteAllTextAsync(descPath, description.Trim(), ct);
         }
 
-        string? synPath = null;
-        try { synPath = await synopsis.ExportAsync(nodeId, ct: ct); }
-        catch { /* non-fatal, mirrors CLI behavior */ }
-
         string? kwPath = null;
         var keywordCount = 0;
         try
@@ -153,7 +145,7 @@ public class NodeFullExportService
         }
 
         return new Result(docxPath, epubPath, pdfPath, txtPath, mdPath, docxMojibakeHits,
-            descPath, descriptionRepaired, synPath, kwPath, keywordCount);
+            descPath, descriptionRepaired, kwPath, keywordCount);
     }
 
     private static int CountWords(string text) =>

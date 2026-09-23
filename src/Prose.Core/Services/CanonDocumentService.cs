@@ -9,32 +9,23 @@ using Prose.Core.Interfaces;
 namespace Prose.Core.Services;
 
 /// <summary>
-/// Structured canon editing — read / upsert / regenerate CanonDocuments, CanonDocumentSections,
-/// and NodeOutlineSections. All canon edits flow through here; .md files are generated artifacts.
+/// Structured canon editing — read / upsert / regenerate CanonDocuments and CanonDocumentSections.
+/// All canon edits flow through here; .md files are generated artifacts.
 /// </summary>
 public class CanonDocumentService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly IPathProvider paths;
     private readonly CanonDocumentTypeRegistry typeRegistry;
-    private readonly ContinuityExtractionService? continuityExtraction;
-    private readonly FindingsService? findings;
-    private readonly ILogger<CanonDocumentService>? log;
 
     public CanonDocumentService(
         IDbContextFactory<ProseDbContext> dbFactory,
         IPathProvider paths,
-        CanonDocumentTypeRegistry typeRegistry,
-        ContinuityExtractionService? continuityExtraction = null,
-        FindingsService? findings = null,
-        ILogger<CanonDocumentService>? log = null)
+        CanonDocumentTypeRegistry typeRegistry)
     {
         this.dbFactory    = dbFactory;
         this.paths        = paths;
         this.typeRegistry = typeRegistry;
-        this.continuityExtraction = continuityExtraction;
-        this.findings     = findings;
-        this.log          = log;
     }
 
     // ── Resolve a universe slug or id string → Guid ───────────────────────────
@@ -212,112 +203,6 @@ public class CanonDocumentService
         await db.SaveChangesAsync(ct);
 
         return new GenerateResult(true, filePath, null, null, doc.Sections.Count, checksum);
-    }
-
-    // ── NodeOutlineSection upsert ───────────────────────────────────────────────
-
-    public async Task<UpsertResult> SetNodeOutlineSectionAsync(
-        Guid nodeId,
-        string sectionType,
-        string content,
-        CancellationToken ct = default)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-
-        // IgnoreQueryFilters(): explicit nodeId, not an ambient scope (same bug class found and
-        // fixed in BookArchiveService.ArchiveAsync, 2026-08-17).
-        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
-        if (node == null)
-            return new UpsertResult(false, null, "node_not_found", $"Node {nodeId} not found.");
-
-        var section = await db.NodeOutlineSections
-            .FirstOrDefaultAsync(s => s.NodeId == nodeId
-                                   && s.SectionType == sectionType, ct);
-
-        bool isNew = section == null;
-        if (isNew)
-        {
-            section = new NodeOutlineSection
-            {
-                NodeId      = nodeId,
-                SectionType = sectionType,
-            };
-            db.NodeOutlineSections.Add(section);
-        }
-
-        // Entity tags (Bible→Outline refactor Phase 4b): a hand-authored outline section is
-        // persisted TAGGED, unlike the auto-generated Event Sequence (which tags only at render
-        // time) — this is the single choke point every set_book_outline / set_book_outline_section
-        // caller (incl. Trinity's PatchOutlineSectionAsync) already runs through, so it stays the
-        // one place hand-authored content ever gets tagged. Strip-then-rescan first (same
-        // idempotency pattern as NodeWorkbenchService.SaveBeatDraftAsync) so a stale tag never
-        // survives an entity rename, and so re-saving already-tagged content doesn't double-wrap.
-        var plainContent = BeatMarkup.StripEntityTags(content);
-        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, node.UniverseId, nodeId, ct);
-        var matches = EntityMentionScanner.Scan(plainContent, candidates);
-        content = EntityMentionScanner.ApplyTags(plainContent, matches);
-
-        // Stage-1 "seed before reference" enforced at the outline layer: a name in a hand-authored
-        // section that resolves to no entity record is a finding, not a silent gap. Scoped to
-        // THIS node+section (not the auto-generated Event Sequence's own "#sequence" scope in
-        // NodeDocService.GenerateAsync) so the two sources never purge each other's findings.
-        if (findings != null)
-        {
-            var sectionScope = $"story:{node.Slug}#section:{sectionType}";
-            findings.DeleteBySummaryPrefix(sectionScope, "[outline-entity] ");
-            foreach (var name in EntityMentionScanner.FindUnresolvedProperNouns(plainContent, matches))
-                findings.Upsert(
-                    filePath: sectionScope,
-                    chapterId: null,
-                    category: FindingCategory.EntityDrift,
-                    severity: FindingSeverity.Low,
-                    summary: $"[outline-entity] \"{name}\" resolves to no entity record",
-                    snippet: null,
-                    suggestedFix: $"Seed \"{name}\" as an entity, or fix the name if it's a typo/renamed reference.");
-        }
-
-        section!.Content   = content;
-        section.UpdatedAt  = DateTime.UtcNow;
-
-        // NodeDocService.GenerateAsync (the cascade every caller of this method runs immediately
-        // after) reads hand-authored content exclusively from Nodes.NodeOutline — it never reads
-        // NodeOutlineSections. sectionType "Full" is documented as "replace the entire hand-authored
-        // bible blob", so it must also land here or the cascade regenerates from the stale blob
-        // and silently discards this write. (Typed sections below Full have no downstream reader
-        // yet — recording them in NodeOutlineSections is honest storage, not a composed bible edit.)
-        if (string.Equals(sectionType, "Full", StringComparison.OrdinalIgnoreCase))
-        {
-            node.NodeOutline = string.IsNullOrEmpty(content) ? null : content;
-            node.NodeOutlineGeneratedAt = DateTime.UtcNow;
-            node.UpdatedAt = DateTime.UtcNow;
-        }
-
-        await db.SaveChangesAsync(ct);
-
-        // Fire-and-forget: keep the continuity ledger fresh for any book that's already opted in.
-        // Closes the loop for free on every Trinity bible-patch and every bible revert, not just
-        // hand-authored edits — see ContinuityExtractionCursor's doc comment for why this exists.
-        if (continuityExtraction != null)
-        {
-            _ = Task.Run(() => continuityExtraction.ReExtractOutlineSectionIfChangedAsync(nodeId, sectionType, ct: CancellationToken.None), CancellationToken.None)
-                .ContinueWith(t => log?.LogError(t.Exception, "ReExtractOutlineSectionIfChangedAsync background task failed"),
-                    TaskContinuationOptions.OnlyOnFaulted);
-        }
-
-        return new UpsertResult(true, nodeId, null, null, isNew ? "created" : "updated", sectionType);
-    }
-
-    // ── Get all NodeOutlineSections for a node ──────────────────────────────────
-
-    public async Task<List<NodeOutlineSection>> GetNodeOutlineSectionsAsync(
-        Guid nodeId,
-        CancellationToken ct = default)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        return await db.NodeOutlineSections
-            .Where(s => s.NodeId == nodeId)
-            .OrderBy(s => s.SectionType)
-            .ToListAsync(ct);
     }
 
     // ── Helpers ───────────────────────────────────────────────────────────────

@@ -5,7 +5,7 @@ namespace Prose.Core.Services;
 
 /// <summary>Tri-state result of <see cref="BeatRangeService.CheckBeatInRangeAsync"/>.
 /// <see cref="InRange"/> is null when the window can't be reliably evaluated (a bound beat
-/// lives in a different book, or the checked beat / a bound beat is a flagged anachrony) —
+/// lives in a different book, or a beat is missing from its own book's reading order) —
 /// callers must not treat null as either true or false; see each consumer's own documented
 /// default for how it handles indeterminate.</summary>
 public sealed record BeatRangeResult(bool? InRange, string? Reason = null);
@@ -38,10 +38,7 @@ public class BeatRangeService(IDbContextFactory<ProseDbContext> dbFactory)
     ///  - a non-null bound beat resolves to a DIFFERENT book than <paramref name="beatId"/>
     ///    (cross-book chronology isn't resolved by this method — no code in this repo merges
     ///    two books' beats into one ordered sequence; Node.PreviousNodeId only gates
-    ///    gateway/sequel commandment selection, not ordering);
-    ///  - <paramref name="beatId"/> or a same-book bound beat has a
-    ///    BeatBlueprintDecision.AnachronyType of Flashback/FlashForward/Parallel — reading order
-    ///    (BeatNodes.SortKey) isn't a reliable proxy for story order there.
+    ///    gateway/sequel commandment selection, not ordering).
     /// </summary>
     public async Task<BeatRangeResult> CheckBeatInRangeAsync(
         Guid beatId, Guid? fromBeatId, Guid? untilBeatId, CancellationToken ct = default)
@@ -75,20 +72,6 @@ public class BeatRangeService(IDbContextFactory<ProseDbContext> dbFactory)
             if (untilBookId != bookId)
                 return new BeatRangeResult(null, $"ValidUntilBeatId {untilBeatId} is in a different book than beat {beatId} — cross-book bound, not resolved");
             untilOrdinal = ordered.FindIndex(ob => ob.Beat.Id == untilBeatId);
-        }
-
-        var anachronyCheckIds = new List<Guid> { beatId };
-        if (fromBeatId != null) anachronyCheckIds.Add(fromBeatId.Value);
-        if (untilBeatId != null) anachronyCheckIds.Add(untilBeatId.Value);
-        var anachronies = await db.BeatBlueprintDecisions.AsNoTracking()
-            .Where(d => anachronyCheckIds.Contains(d.BeatId)
-                     && d.AnachronyType != null && d.AnachronyType != "Linear")
-            .Select(d => new { d.BeatId, d.AnachronyType })
-            .ToListAsync(ct);
-        if (anachronies.Count > 0)
-        {
-            var flagged = string.Join(", ", anachronies.Select(a => $"{a.BeatId}={a.AnachronyType}"));
-            return new BeatRangeResult(null, $"reading order unreliable — flagged anachrony beat(s): {flagged}");
         }
 
         var inRange = (fromOrdinal == null || beatOrdinal >= fromOrdinal)

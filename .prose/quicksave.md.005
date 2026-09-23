@@ -1,0 +1,139 @@
+# Quicksave — a writing partner that pushes back, + the focus-stealing task
+
+_Printed: 2026-09-20_
+
+## Current task
+
+**Nothing is mid-edit. Everything is committed and green.** Three things are waiting on the
+AUTHOR, and one of them is the thing they were most annoyed about:
+
+1. **Run the elevated script that stops the 5-minute focus theft** (see *Next concrete steps*).
+2. **Redeploy** Hub + Writer + Launcher.
+3. **Apply two migrations** (created, not applied).
+
+Do NOT start new work before checking those three landed.
+
+## Decisions locked this session
+
+- **No "story pillars" registry.** The author was explicit: *"I didnt mean litteraly pillars,
+  christ just help me write the book."* The assessment uses the authority that already exists —
+  the obligation ledger, continuity claims, `NodeOutlineSections` (NarrativeLocks/AuthorNotes),
+  entity presence. Do not build a pillar table.
+- **Expensive checks on MANUAL save only.** Autosave keeps `deferAnalysis: true` and spends zero.
+- **The gate BLOCKS** — author's explicit choice, reaffirmed.
+- **Blocking the write is meaningless** (autosave already wrote it 20s ago). What is blocked is
+  the beat being FINISHED: `OpenBeatAsync` refuses to move while `gate is not null`.
+- **Dismissals key on `(beatId, TextHash, checkKey)`** — change a word and the question reopens.
+  Without this, one false positive blocks a beat forever and the feature gets switched off.
+- **`NarrativeContradictionChecker` MOVED (not copied) v4 → `Prose.Core/Services/Contradiction/`.**
+  Two copies of a calibrated checker = two things to re-calibrate.
+- The logic sweep is the weak tier (clamps at 100k chars; BCODA is ~1.9M, so it sees ~5%). It is
+  in the blocking modal as asked, but if it proves noisy the fix is one line — demote to advisory.
+
+## State / where we are
+
+**Commits this session** (all on master, all with the author's 8 pre-existing modified files left
+UNSTAGED — keep it that way):
+
+| Commit | What |
+|---|---|
+| `5bf2e3b27` | Writer: discussion layer, V0 mouth, V1 ear, V2 confirm |
+| `f604f46db` | V3 push-to-talk, V4 SSE streaming + sentence chunking |
+| `1058d1881` | Phase 6 context menu, Phase 7 Find |
+| `67cbea42a` | Phase 11 span guard + proposals |
+| `f410ec60f` | Phase 12 scan/reconcile, Phase 13 Read Mode `/read` |
+| `2cd97af18` | Phase 8 structure, Phase 10 navigator, P2 items, accessibility |
+| `8bcfb5cf1` | Phase 9 rich blocks + thread export, ledger pane, presence |
+| `8014c461e` | Intent pane + the backfill rule |
+| `991ca1b00` | Plant/payoff distance |
+| **`39fd9a107`** | **A writing partner that pushes back** — this session's main work |
+| **`573d1970c`** | **`scripts/fix-task-focus-stealing.ps1`** |
+
+**Suite: 2697 passing / 5 pre-existing failures** (`WorldState*`, `Snapshot*` — verified at HEAD,
+leave them) / 19 skipped. Hub, Launcher and v4 all build clean.
+
+### THE FOCUS-STEALING DIAGNOSIS — do not re-investigate
+
+The Prose codebase is NOT the cause. Every `ProcessStartInfo` in v3 already sets
+`CreateNoWindow = true`. The Launcher's two `UseShellExecute` spawns are a URL and WinExe apps.
+The Hub's console is deliberate.
+
+**It is `MindAttic.Automata.Tick`** — `automata-runner.exe tick`, repeat `PT5M`, principal
+`LogonType = Interactive`, so it runs on the desktop and its console takes focus every 5 minutes.
+`MindAtticBobNightlyBackup` is already `S4U` on the same machine and never flashes — that is both
+the proof and the shape of the fix.
+
+Also Interactive (daily, less noticeable): `ProseAutoCorrectNightly` (03:00),
+`StreetSamurai-NightlyFactSweep` (01:00 — **its last run exited 1; it has been failing nightly**).
+
+`Set-ScheduledTask` returned **Access is denied** from this session — it needs elevation.
+
+## Open questions / pending
+
+- **Did the elevated script run, and did all three verify `exit 0`?** S4U gets a logon token with
+  NO NETWORK credentials. If `automata-runner tick` needs remote Windows auth it will start
+  failing — then re-run with `-WrapInConhost`, which keeps Interactive and only hides the console.
+- **Launcher hover colour.** Done as asked (`#ff0033`). Told the author white-on-#ff0033 measures
+  **3.96:1**, under the 4.5:1 bar; `#d10029` gives 5.4:1. They have not answered — leave `#ff0033`
+  unless they say otherwise.
+- **Two migrations are NOT applied**: `20260920190142_AddBeatCheckDismissals`,
+  `AddBeatUpdatedAtIndex`. The gate throws without the first table.
+- V1 voice check never run (speak *Togishi*, *Seito*, *Cacophony* → all three spelled right).
+- V4 perceived-silence target unmeasured — needs a Claude BYO key (pool still empty) and Piper
+  installed (still absent).
+- **Not built, deliberately:** outline authority, thread-grid shape view, relationships pane,
+  `diagram`/`poll` blocks, landing page + `/app` accessibility. No NVDA pass, so no conformance claim.
+
+## Next concrete steps
+
+1. **Ask the author to run, elevated:**
+   ```
+   Start-Process powershell -Verb RunAs -ArgumentList '-NoProfile','-File','D:\Projects\MindAttic\Prose\scripts\fix-task-focus-stealing.ps1'
+   ```
+   Then confirm all three report `ran OK (exit 0)`.
+2. **Ask for a redeploy of Hub + Writer + Launcher.** The author redeploys, not me — a local build
+   changes nothing.
+3. **Apply the migrations** through the Hub once it is up.
+4. Then the V1 spelling check and the V4 latency measurement.
+
+## Anchors
+
+- **New this session:** `v3/Prose.Core/Services/Discussion/RamificationService.cs` (the engine —
+  `CarriedByAsync`, `ReviewAsync`, `GateAsync`, `DismissAsync`, `KeyFor`, `ToPrompt`),
+  `v3/Prose.Core/Services/Contradiction/NarrativeContradictionChecker.cs` + `CalibrationFixtures.cs`
+  (moved from v4), `v3/Prose.Core/Data/Entities/BeatCheckDismissal.cs`,
+  `v3/Prose.WriterUi/Components/RamificationsModal.razor`,
+  `scripts/fix-task-focus-stealing.ps1`
+- **Modified:** `DiscussionContextBuilder.cs` (the `CARRIED BY THIS PASSAGE` block),
+  `DiscussionChatService.cs` (`EditBody` / `SystemBase` — must NAME the thing or say it could not
+  check), `WriterService.cs` (`RunSaveGateAsync`, `CheckBookAsync`, `PreviousBeatTextAsync`),
+  `WriterShell.razor` (`ManualSaveAsync`, gate block in `OpenBeatAsync`),
+  `NodeWorkbenchService.cs` (`GetBeatsChangedSinceAsync`), `Prose.Launcher/MainWindow.xaml`
+- **Deleted:** `PostWriteReviewService.cs` (folded into `RamificationService`)
+- **Tests:** `RamificationServiceTests` (13, every one plants a real defect),
+  `NarrativeContradictionCheckerTests` (8)
+- **Commands:**
+  - `cd "D:/Projects/MindAttic/Prose/v3" && dotnet build Prose.Hub/Prose.Hub.csproj -c Debug --nologo -v q`
+  - `dotnet test Prose.UnitTests/Prose.UnitTests.csproj --nologo` (expect 2697 / 5 failed)
+  - `dotnet ef migrations add <Name> --project Prose.Core --startup-project Prose.Core --context ProseDbContext --no-build`
+  - `& "D:\Projects\MindAttic\Prose\scripts\fix-task-focus-stealing.ps1" -WhatIfOnly`
+
+## HARD gotchas (do not rediscover)
+
+- **The author redeploys, not me.** A local build changes nothing.
+- **Do not stage the author's 8 files:** `ObligationCli.cs`, `BeatGeneratorService.cs`,
+  `ProseWriterRouter.cs`, `v4/Prose.V4.Cli/Program.cs` (they have ~351 lines of unfinished
+  `beat-history` work in it — I staged ONLY my one `using` line via `git hash-object` +
+  `git update-index --cacheinfo`), `docs/rfc/0013`, 3 `.prose/` files.
+- **`.ps1` files MUST be written UTF-8 WITH BOM.** PS 5.1 decodes a BOM-less script as ANSI and
+  mangles every em dash. Hit and fixed this session.
+- **Razor: `@page.Text` in markup parses as the `@page` directive** — name the variable anything
+  else. **`@{ }` inside an existing code block is a parse error.** **`@ref` needs an assignable
+  location** (`array[i]`, not a dictionary).
+- **`BeatEntityPresence` has no EF mapping** — it does not exist on SQLite, so `BlastRadiusService`
+  throws there. `CarriedByAsync` isolates it and reports reach as UNKNOWN, never zero.
+- **`ef migrations add` needs `--startup-project Prose.Core --context ProseDbContext`** — using
+  `Prose.Cli` as startup tries to reach the Hub and fails.
+- **`prose.cmd` + a heredoc in one Bash call DEADLOCKS.** Always `< /dev/null`.
+- **Every book-touching method must `SetFlowUniverse` first.**
+- The 5 failing tests are pre-existing. Leave them.

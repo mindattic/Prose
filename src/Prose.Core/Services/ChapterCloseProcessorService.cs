@@ -7,10 +7,8 @@ namespace Prose.Core.Services;
 /// <summary>
 /// Orchestrates everything that runs after a chapter's prose is complete:
 ///
-///   1. ChapterSummaryService.ExtractAndSaveAsync   — persist chapter facts to DB
-///   2. CanonContradictionService.CheckNodeAsync  — flag contradictions
-///   3. OutlineAdherenceService.CheckAsync          — detect arc drift
-///   4. Tiered review gate:
+///   1. CanonContradictionService.CheckNodeAsync  — flag contradictions
+///   2. Tiered review gate:
 ///        Tier 1 (always): single Sonnet call scoring the chapter 0-100
 ///        Tier 2 (score < MinChapterScore=80): escalate to draft panel review
 ///        Tier 3 (score < HardFloor=75): escalate to standard panel review
@@ -18,10 +16,7 @@ namespace Prose.Core.Services;
 /// Returns a ChapterCloseResult with all diagnostics for the AutoRun log.
 /// </summary>
 public class ChapterCloseProcessorService(
-    IDbContextFactory<ProseDbContext> dbFactory,
-    ChapterSummaryService chapterSummary,
     CanonContradictionService canonChecker,
-    OutlineAdherenceService adherence,
     NodeReviewService reviewer,
     NarrativeForkService forkService,
     VotingGate votingGate,
@@ -42,24 +37,12 @@ public class ChapterCloseProcessorService(
     {
         var result = new ChapterCloseResult { ChapterIndex = chapterIndex };
 
-        // SS-A44: the tiered review gate (step 4) and the narrative fork (step 5)
-        // both solicit LLM scores/ballots. When voting is disabled and not
-        // explicitly overridden, skip them gracefully — the summary/contradiction/
-        // adherence audits (steps 1-3) still run. Auto-run must not fail.
+        // SS-A44: the tiered review gate and the narrative fork both solicit LLM scores/ballots.
+        // When voting is disabled and not explicitly overridden, skip them gracefully — the
+        // contradiction audit still runs. Auto-run must not fail.
         var votingAllowed = votingGate.IsAllowed(allowVotes);
 
-        // 1. Persist chapter summary
-        try
-        {
-            await chapterSummary.ExtractAndSaveAsync(parentNodeId, chapterIndex, chapterProse, ct);
-            result.SummaryPersisted = true;
-        }
-        catch (Exception ex)
-        {
-            result.Warnings.Add($"Summary: {ex.Message}");
-        }
-
-        // 2. Contradiction check (non-fatal)
+        // 1. Contradiction check (non-fatal)
         try
         {
             var cr = await canonChecker.CheckNodeAsync(chapterId, ct: ct);
@@ -70,40 +53,7 @@ public class ChapterCloseProcessorService(
             result.Warnings.Add($"Contradiction check: {ex.Message}");
         }
 
-        // 3. Outline adherence check
-        try
-        {
-            // Use the most recently saved chapter's summary text directly
-            await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var latest = await db.NodeChapterSummaries
-                .Where(s => s.NodeId == parentNodeId && s.ChapterIndex == chapterIndex)
-                .OrderByDescending(s => s.UpdatedAt)
-                .Select(s => s.SummaryText)
-                .FirstOrDefaultAsync(ct) ?? "";
-
-            var adherenceResult = await adherence.CheckAsync(parentNodeId, latest, ct);
-            result.AdherenceScore   = adherenceResult.Score;
-            result.AdherenceSummary = adherenceResult.Summary;
-
-            // Recalibrate if significantly off track
-            if (adherenceResult.Score < 60)
-            {
-                var node = await db.Nodes.AsNoTracking()
-                    .Where(s => s.Id == parentNodeId)
-                    .Select(s => new { s.NodeOutline })
-                    .FirstOrDefaultAsync(ct);
-
-                var recalibrated = await adherence.RecalibrateAsync(
-                    parentNodeId, adherenceResult.Summary, node?.NodeOutline, ct);
-                result.RecalibratedBeats = recalibrated;
-            }
-        }
-        catch (Exception ex)
-        {
-            result.Warnings.Add($"Adherence: {ex.Message}");
-        }
-
-        // 4. Tiered review gate (SS-A44: scoring — skipped when voting disabled)
+        // 2. Tiered review gate (SS-A44: scoring — skipped when voting disabled)
         if (!votingAllowed)
         {
             result.ReviewTier = 0;
@@ -133,7 +83,7 @@ public class ChapterCloseProcessorService(
             }
         }
 
-        // 5. Narrative fork — optional; generates N competing arcs for next chapter, keeps best.
+        // 3. Narrative fork — optional; generates N competing arcs for next chapter, keeps best.
         //    Fork selection scores candidates (SS-A44) — skipped when voting disabled.
         if (forkCount >= 2 && votingAllowed)
         {
@@ -211,11 +161,7 @@ public class ChapterCloseProcessorService(
 public class ChapterCloseResult
 {
     public int  ChapterIndex      { get; set; }
-    public bool SummaryPersisted  { get; set; }
     public int  ContradictionCount { get; set; }
-    public int  AdherenceScore    { get; set; } = 100;
-    public string AdherenceSummary { get; set; } = "";
-    public int  RecalibratedBeats { get; set; }
     public int  ChapterScore      { get; set; }   // Tier 1 quick score
     public int  ReviewTier        { get; set; }   // 1=pass, 2=draft panel, 3=standard panel
     public double PanelScore      { get; set; }   // Set when ReviewTier >= 2

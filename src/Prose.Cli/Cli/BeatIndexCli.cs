@@ -18,9 +18,8 @@ namespace Prose.Cli;
 /// WHERE a beat happens was write-only. The same was true of <c>SceneType</c>, <c>StructureRole</c>
 /// and <c>Act</c>: all three are on the row, none were readable in bulk.</para>
 ///
-/// <para>The summary-trust columns matter more than they look. <c>Beat.Description</c> is
-/// authorial intent and <c>Beat.EventSummary</c> is what the prose was observed to do; each
-/// carries a hash of the text it was written against, so a beat reports one of three states —
+/// <para>The description-trust column matters more than it looks. <c>Beat.Description</c> is
+/// authorial intent and carries a hash of the text it was written against, so a beat reports one of three states —
 /// absent, trustworthy (hash matches <c>TextHash</c>), or provably STALE (hash differs, i.e. the
 /// prose changed underneath it). A stale summary is worse than a missing one, because every
 /// consumer downstream treats it as current.</para>
@@ -86,7 +85,6 @@ public static class BeatIndexCli
                 StructureRole:  b.StructureRole ?? "",
                 Act:            b.Act,
                 Description:    Trust(b.Description, b.DescriptionHash, b.TextHash),
-                EventSummary:   Trust(b.EventSummary, b.EventSummaryHash, b.TextHash),
                 IsChapterStart: b.IsChapterStart));
         }
 
@@ -101,27 +99,26 @@ public static class BeatIndexCli
         if (args.Contains("--tsv"))
         {
             Console.WriteLine("pos\tch\tbeat\tbeat_id\tnum\tkind\tchars\tplace\tplace_resolved\t" +
-                              "scene_type\tstructure_role\tact\tdescription\tevent_summary\tchapter");
+                              "scene_type\tstructure_role\tact\tdescription\tchapter");
             foreach (var r in rows)
                 Console.WriteLine($"{r.Position}\t{r.ChapterOrdinal}\t{r.BeatInChapter}\t{r.BeatId}\t{r.Number}\t" +
                                   $"{r.Kind}\t{r.Chars}\t{r.PlaceName}\t{(r.PlaceResolved ? "canon" : "")}\t" +
-                                  $"{r.SceneType}\t{r.StructureRole}\t{r.Act}\t{r.Description}\t{r.EventSummary}\t" +
+                                  $"{r.SceneType}\t{r.StructureRole}\t{r.Act}\t{r.Description}\t" +
                                   $"{r.ChapterTitle}");
             return 0;
         }
 
         Console.WriteLine($"{book.Title}  [{book.Slug}]  {rows.Count} beats");
         Console.WriteLine();
-        Console.WriteLine($"{"pos",5} {"ch",3} {"#",4} {"chars",6}  {"place",-34} {"desc",-6} {"event",-6} kind");
+        Console.WriteLine($"{"pos",5} {"ch",3} {"#",4} {"chars",6}  {"place",-34} {"desc",-6} kind");
         foreach (var r in rows)
             Console.WriteLine($"{r.Position,5} {r.ChapterOrdinal,3} {r.BeatInChapter,4} {r.Chars,6}  " +
-                              $"{Clip(r.PlaceName, 34),-34} {r.Description,-6} {r.EventSummary,-6} {r.Kind}");
+                              $"{Clip(r.PlaceName, 34),-34} {r.Description,-6} {r.Kind}");
 
         Console.WriteLine();
         Console.WriteLine($"  place named        : {rows.Count(r => r.PlaceName.Length > 0)} / {rows.Count}");
         Console.WriteLine($"  place canon-linked : {rows.Count(r => r.PlaceResolved)} / {rows.Count}");
         Console.WriteLine($"  description        : {Tally(rows.Select(r => r.Description))}");
-        Console.WriteLine($"  event summary      : {Tally(rows.Select(r => r.EventSummary))}");
         Console.WriteLine($"  scene type set     : {rows.Count(r => r.SceneType.Length > 0)} / {rows.Count}");
         Console.WriteLine($"  chars/beat         : min {rows.Min(r => r.Chars)}  median " +
                           $"{rows.OrderBy(r => r.Chars).ElementAt(rows.Count / 2).Chars}  max {rows.Max(r => r.Chars)}  " +
@@ -159,5 +156,5 @@ public static class BeatIndexCli
         int? Position, int ChapterOrdinal, string ChapterTitle, Guid ChapterNodeId, int BeatInChapter,
         Guid BeatId, int Number, double SortKey, string Kind, int Chars, string Title,
         string PlaceName, bool PlaceResolved, string SceneType, string StructureRole, int Act,
-        string Description, string EventSummary, bool IsChapterStart);
+        string Description, bool IsChapterStart);
 }

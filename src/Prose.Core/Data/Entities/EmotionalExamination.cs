@@ -83,6 +83,7 @@ public class EmotionalBeatScore
 /// Per-(node, character) cache of Want/Need/Wound/Flaw parsed from the node bible.
 /// Cache-busted on <see cref="SourceOutlineHash"/>. Unique on (NodeId, Character).
 /// </summary>
+// PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
 public class CharacterEmotionalLedger
 {
     public Guid Id { get; set; }

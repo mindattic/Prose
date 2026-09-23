@@ -305,7 +305,7 @@ public class RepetitionLintService
         // elevator scene, Ch12's #5229 and #5346, the togishi "first time" line — was a
         // superseded draft left in the reading order after a rewrite pass. None of them was
         // caught by any instrument; all of them were caught by reading a chapter whole. These
-        // four checks are the mechanical version of that read. They are flags for a reader, not
+        // three checks are the mechanical version of that read. They are flags for a reader, not
         // verdicts, and each one prints what it examined so a zero is never mistaken for "clean".
         if (beats.Count == 0)
         {
@@ -315,7 +315,7 @@ public class RepetitionLintService
         {
             structureCount += StructuralChecks(beats.Select((b, i) => new StructBeat(
                     i, b.Id, b.Number, b.Chapter, b.ChapterId, b.StoryPosition, b.Text)).ToList(),
-                node.NodeOutline, entityRows.Select(e => (e.Id, e.Name, e.EntityType)).ToList(),
+                entityRows.Select(e => (e.Id, e.Name, e.EntityType)).ToList(),
                 entityNameTokens, File, lines);
         }
 
@@ -339,11 +339,8 @@ public class RepetitionLintService
     // first-time check — they are in every window by construction.
     private const double UbiquitousEntityShare = 0.30;
 
-    private static readonly Regex ChapterNumRx = new(@"^\s*Chapter\s+(\d+)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly Regex TimeRx = new(@"\b\d{1,2}:\d\d\b", RegexOptions.Compiled);
     private static readonly Regex QuoteSpanRx = new(@"[“""]([^”""\n]{16,200})[”""]", RegexOptions.Compiled);
-    private static readonly Regex OutlineChapterRx = new(@"\*\*Ch(\d+)\s*[-–—:]\s*([^*\n]{2,160})\*\*", RegexOptions.Compiled);
-    private static readonly Regex OutlineBeatRefRx = new(@"\bbeats?\s*#?\s*(\d{3,5})((?:\s*[/,]\s*#?\d{3,5})*)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly Regex FirstTimeRx = new(@"\b(for the first time|had never (?:spoken|met|seen)|never spoken to|never met)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly Regex GuidAttrRx = new(@"guid=""([0-9a-fA-F-]{36})""", RegexOptions.Compiled);
     private static readonly Regex WsRx = new(@"\s+", RegexOptions.Compiled);
@@ -351,7 +348,7 @@ public class RepetitionLintService
     private static string Norm(string s) => WsRx.Replace(s, " ").Trim().ToLowerInvariant();
 
     private int StructuralChecks(
-        List<StructBeat> beats, string? outline,
+        List<StructBeat> beats,
         List<(Guid Id, string Name, string EntityType)> entities,
         HashSet<string> entityNameTokens,
         Action<FindingSeverity, string, string?, string?> file,
@@ -414,85 +411,7 @@ public class RepetitionLintService
         }
         lines.Add($"[structure] alt-scene: examined {pairs} beat pair(s) across {beats.Select(b => b.ChapterId).Distinct().Count()} chapter(s).");
 
-        // 6b. Outline literal hooks — every **ChN - …** entry's timestamps, quoted lines and
-        // beat refs must exist in chapter N's prose. Zero hits means the prose dropped it or the
-        // outline is stale; either way the author decides, and the instrument must not.
-        var chapterBeats = new Dictionary<int, List<int>>();
-        for (int i = 0; i < beats.Count; i++)
-        {
-            var m = ChapterNumRx.Match(beats[i].Chapter ?? "");
-            if (m.Success && int.TryParse(m.Groups[1].Value, out var n))
-                (chapterBeats.TryGetValue(n, out var l) ? l : chapterBeats[n] = new List<int>()).Add(i);
-        }
-        var allNumbers = beats.Select(b => b.Number).ToHashSet();
-        int hooks = 0;
-        if (string.IsNullOrWhiteSpace(outline))
-        {
-            lines.Add("[structure] outline-hook: COULD NOT LOOK — node has no outline.");
-        }
-        else
-        {
-            var o = BeatMarkup.StripEntityTags(outline);
-            var entries = OutlineChapterRx.Matches(o).Cast<Match>().ToList();
-            for (int k = 0; k < entries.Count; k++)
-            {
-                var e = entries[k];
-                if (!int.TryParse(e.Groups[1].Value, out var chNum)) continue;
-                var end = k + 1 < entries.Count ? entries[k + 1].Index : Math.Min(o.Length, e.Index + 1500);
-                var block = o[e.Index..Math.Min(end, e.Index + 1500)];
-                // An entry ends where the outline's next numbered item or bold header begins — the
-                // Ch12 entry otherwise swallowed item 6 ("LOOK AT THE CENTER", which the outline
-                // itself places in Ch26) and filed three false OUTLINE-HOOK findings against Ch12.
-                var nextItem = Regex.Match(block[Math.Min(block.Length, e.Length)..], @"\n\s*(?:\d+\.\s+\*\*|\*\*[A-Z#])");
-                if (nextItem.Success) block = block[..(e.Length + nextItem.Index)];
-                // Italic parenthetical revision notes — "*(Revised 2026-09-05. The "01:14" entry
-                // was cut…)*" — are the outline talking about itself, not naming things the
-                // chapter must contain. Strip them before harvesting literals.
-                block = Regex.Replace(block, @"\*\((?:[^()]|\([^()]*\))*\)\*", " ");
-                var literals = new List<(string Kind, string Value)>();
-                foreach (Match m in TimeRx.Matches(block)) literals.Add(("time", m.Value));
-                foreach (Match m in QuoteSpanRx.Matches(block))
-                    if (WordRx.Matches(m.Groups[1].Value).Count >= 4) literals.Add(("quote", Norm(m.Groups[1].Value)));
-                foreach (Match m in OutlineBeatRefRx.Matches(block))
-                {
-                    // A ref the outline itself marks as cut/archived/deleted is provenance, not a
-                    // claim that the beat is in the book — e.g. "(beats 4368/512/497, archived V68)".
-                    var tail = block[m.Index..Math.Min(block.Length, m.Index + m.Length + 80)];
-                    if (Regex.IsMatch(tail, @"\b(cut|archived|deleted|removed|retired|superseded)\b", RegexOptions.IgnoreCase)) continue;
-                    literals.Add(("beat", m.Groups[1].Value));
-                    foreach (Match x in Regex.Matches(m.Groups[2].Value, @"\d{3,5}")) literals.Add(("beat", x.Value));
-                }
-                if (literals.Count == 0) continue;
-                hooks += literals.Count;
-
-                if (!chapterBeats.TryGetValue(chNum, out var idxs) || idxs.Count == 0)
-                {
-                    lines.Add($"[structure] outline-hook Ch{chNum}: COULD NOT LOOK — no beats under a node titled 'Chapter {chNum}'.");
-                    continue;
-                }
-                foreach (var (kind, value) in literals.Distinct())
-                {
-                    bool found = kind switch
-                    {
-                        "beat" => int.TryParse(value, out var bn) && allNumbers.Contains(bn),
-                        "time" => idxs.Any(i => stripped[i].Contains(value)),
-                        _ => idxs.Any(i => strippedLower[i].Contains(value)),
-                    };
-                    if (found) continue;
-                    count++;
-                    var shown = value.Length > 90 ? value[..90] + "…" : value;
-                    file(FindingSeverity.Medium,
-                        kind == "beat"
-                            ? $"OUTLINE-HOOK Ch{chNum} \"{e.Groups[2].Value.Trim()}\": the outline cites beat #{value}, which is not in this book."
-                            : $"OUTLINE-HOOK Ch{chNum} \"{e.Groups[2].Value.Trim()}\": the outline names {kind} \"{shown}\" for this chapter; no beat in Chapter {chNum} contains it (examined {idxs.Count} beat(s)).",
-                        null,
-                        "Either the prose dropped what the outline plans, or the outline is stale about what the book does. Show the author both sides; do not pick a winner here.");
-                }
-            }
-            lines.Add($"[structure] outline-hook: examined {hooks} literal(s) across {entries.Count} outline chapter entr(y/ies).");
-        }
-
-        // 6c. "First time" that isn't — a first-meeting phrase near an entity that already
+        // 6b. "First time" that isn't — a first-meeting phrase near an entity that already
         // appeared earlier in reading order. Ubiquitous entities are exempt.
         var tagCounts = new Dictionary<Guid, int>();
         var firstTagIdx = new Dictionary<Guid, int>();
@@ -564,7 +483,7 @@ public class RepetitionLintService
         }
         lines.Add($"[structure] first-time: examined {phrases} phrase(s) against {heads.Count} tagged entit(y/ies).");
 
-        // 6d. Cross-batch insertion — Beat.Number is a global creation counter, so a beat whose
+        // 6c. Cross-batch insertion — Beat.Number is a global creation counter, so a beat whose
         // number sits far outside its chapter's cluster was created in a different batch and
         // placed here later. Catches #4368-in-a-4xx-5xx-chapter; does NOT catch same-batch
         // alternates (Ch12's #5229 sat among its 5xxx siblings) — that is what 6a is for.

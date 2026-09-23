@@ -91,12 +91,6 @@ public enum BeatWriteReason
     /// </summary>
     AuthorMerge,
 
-    /// <summary>An empty planned beat created from the outline's beat spine
-    /// (<c>NodeOutlineService</c> seed-spine). Carries no prose — the row exists so a later
-    /// <see cref="Generation"/> has somewhere to land. Added 2026-09-07 (RFC 0012 §3.6) when the
-    /// one-door test found this creator undeclared.</summary>
-    Plan,
-
     /// <summary>
     /// The obligation calibration harness (RFC 0013 D7) appending a seeded synthetic sentence to
     /// — or restoring the exact prior text of — a beat in the <c>gutenberg</c> calibration

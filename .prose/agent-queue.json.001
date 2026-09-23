@@ -1,0 +1,17 @@
+﻿[
+    {
+        "id":  "1",
+        "addedAt":  "2026-09-23T02:32:53.8721391Z",
+        "item":  "Build prose --splice-beats CLI + MCP splice_beats to replace scratchpad splice.py (Foundations doctrine; never Python). Hand-written [{beat,old,new,count?}] docket vs tag-stripped text; read only affected beats; abort whole docket on any count mismatch; dry-run default; AuthorEdit per beat; read-back verify + miss report; unit tests; redeploy Hub (MVID check); delete splice.py/mkunits.py/sweep.py; move read-2 reader questions into the obligation ledger. Full spec: audit-outlines-2026-09-22\\full-order-read-2\\RESUME.md"
+    },
+    {
+        "id":  "2",
+        "addedAt":  "2026-09-23T02:45:31.4163562Z",
+        "item":  "Chapter move tool: add CLI parity for MCP move_node_after_sibling (prose --move-chapter --node \u003cx\u003e --after \u003csibling\u003e) that also renumbers every affected \u0027Chapter N — Title\u0027 in one step (dry-run default, --apply), leaves Interlude/Able/Coda titles alone, and verifies order by read-back + --validate-chapters; done when the Ghost Period move (9 manual update_book retitles, 2026-09-22) would have been one command."
+    },
+    {
+        "id":  "3",
+        "addedAt":  "2026-09-23T02:45:42.1937402Z",
+        "item":  "Research (author question): Does Able have enough impact on BCODA to earn his place? There is already a lot going on — what does Able provide, and is he necessary and quintessential to the plot? Done when: every Able beat is listed (Able: Compliance, Ch9 Eleven Seconds, Able: The Liturgy, Ch24 Gray Suit, Ch32 heist landing, Able: The Quiet Room, Coda question) with what each gives the reader that nothing else does, a cut-test (what breaks if he is removed), and a keep / trim / cut recommendation with the minimal splices — no prose changed until the author decides."
+    }
+]

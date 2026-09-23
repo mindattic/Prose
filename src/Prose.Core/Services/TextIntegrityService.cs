@@ -67,13 +67,6 @@ public class TextIntegrityService(IDbContextFactory<ProseDbContext> dbFactory)
         foreach (var beat in beats)
             ScanText(beat.Text, "Beats", beat.Id, "Text", $"Beat #{beat.Number}", findings);
 
-        var books = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.Kind == "book" && n.NodeOutline != null)
-            .Select(n => new { n.Id, n.Title, n.NodeOutline })
-            .ToListAsync(ct);
-        foreach (var book in books)
-            ScanText(book.NodeOutline, "Nodes", book.Id, "NodeOutline", book.Title, findings);
-
         return findings;
     }
 
@@ -146,11 +139,9 @@ public class TextIntegrityService(IDbContextFactory<ProseDbContext> dbFactory)
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var pos = finding.Position + 1;
         var repl = replacement.ToString();
-        if (finding.Table == "Beats")
-            await db.Database.ExecuteSqlInterpolatedAsync(
-                $"UPDATE Beats SET Text = STUFF(Text, {pos}, 1, {repl}) WHERE Id = {finding.RowId}", ct);
-        else
-            await db.Database.ExecuteSqlInterpolatedAsync(
-                $"UPDATE Nodes SET NodeOutline = STUFF(NodeOutline, {pos}, 1, {repl}) WHERE Id = {finding.RowId}", ct);
+        if (finding.Table != "Beats")
+            throw new InvalidOperationException($"Text integrity repairs only Beats.Text (got {finding.Table}).");
+        await db.Database.ExecuteSqlInterpolatedAsync(
+            $"UPDATE Beats SET Text = STUFF(Text, {pos}, 1, {repl}) WHERE Id = {finding.RowId}", ct);
     }
 }

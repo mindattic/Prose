@@ -4,6 +4,7 @@ namespace Prose.Core.Data.Entities;
 /// Records that a book was actually read front-to-back as one continuous sequence, as opposed
 /// to swept in scoped/parallel chunks. See <see cref="Services.SequentialReadTrackingService"/>.
 /// </summary>
+// PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
 public class BookSequentialRead
 {
     public long Id { get; set; }

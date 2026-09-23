@@ -13,8 +13,7 @@ namespace Prose.Core.Services;
 public class BeatArchiveService(
     IDbContextFactory<Data.ProseDbContext> dbFactory,
     WorldStateService worldState,
-    MarkdownFileService markdownFiles,
-    NodeOutlineService nodeBible)
+    MarkdownFileService markdownFiles)
 {
     private sealed class BeatEntityRosterRow
     {
@@ -57,8 +56,7 @@ public class BeatArchiveService(
         IReadOnlyList<PromptRow> Prompts,
         IReadOnlyList<EntityRosterRow> EntityRoster,
         IReadOnlyList<EdgeRow> Edges,
-        IReadOnlyList<DocRow> Docs,
-        string? Bible);
+        IReadOnlyList<DocRow> Docs);
 
     public async Task<Archive?> BuildArchiveAsync(Guid beatId, CancellationToken ct = default)
     {
@@ -133,24 +131,6 @@ public class BeatArchiveService(
             }
         }
 
-        // NodeOutline lives on the BOOK node only, never the chapter (Book -> Chapter -> Beat is a
-        // hard, no-exceptions hierarchy — see CLAUDE.md). `nodeId` above is the beat's chapter, so
-        // looking it up directly returned null for virtually every real beat in the corpus (only
-        // 43 legacy chapter rows anywhere carry a stray NodeOutline value; every real book bible
-        // lives one level up). Walk to the parent book before resolving.
-        Guid bibleNodeId = Guid.Empty;
-        if (nodeId != Guid.Empty)
-        {
-            var nodeInfo = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                .Where(n => n.Id == nodeId)
-                .Select(n => new { n.Kind, n.ParentNodeId })
-                .FirstOrDefaultAsync(ct);
-            bibleNodeId = nodeInfo == null ? nodeId
-                : nodeInfo.Kind == "book" ? nodeId
-                : nodeInfo.ParentNodeId ?? nodeId;
-        }
-        var bible = bibleNodeId != Guid.Empty ? await nodeBible.GetBibleAsync(bibleNodeId, asOf, ct) : null;
-
         return new Archive(
             Beat: new BeatRow(beat.Id, beat.Title, beat.Kind, beat.Text, beat.UpdatedAt),
             NodeId: nodeId,
@@ -161,7 +141,6 @@ public class BeatArchiveService(
             Prompts: prompts.Select(p => new PromptRow(p.At, p.ProviderId, p.Model, p.System, p.User, p.Response, p.ElapsedMs)).ToList(),
             EntityRoster: resolvedRoster,
             Edges: edges,
-            Docs: docs,
-            Bible: bible);
+            Docs: docs);
     }
 }

@@ -1,0 +1,113 @@
+# Quicksave — Silence respec + instrument deactivation (half-done)
+_Printed: 2026-09-22_
+
+## Current task
+
+**Finish deactivating the QA instruments.** The work is started, compiles, and is **UNCOMMITTED**.
+Done so far: the four per-save LLM tails in `NodeWorkbenchService.UpdateBeatTextAsync` are
+commented out in place (semantic-fidelity drift, blast-radius narrow sweep, continuity
+re-extraction, obligation scan — ~9 LLM calls per beat save, unasked and unmetered).
+
+Still to do, all authorised by the author, none started:
+1. **Daily unattended sweeps** — comment out `AddHostedService` for `ContinuityLongSweepService`
+   (daily LLM continuity re-scan) and `SanityScanBackgroundService` (daily, free but 5,211
+   findings) in `ServiceCollectionExtensions.AddProseBackgroundServices` (~line 53–64).
+2. **The publish gate** — author ruling: *"just comment out all of these they've never proven
+   their worth."* Comment out the gate pre-flight in `ExportNodeCli` (~line 106) and
+   `Tools.Nodes.ExportNodeImpl` (~line 927) so export never blocks.
+3. **Every zero-applied producer** — author: *"comment them all out."* Comment out CLI dispatch /
+   `[McpServerTool]` attributes for the ~40 producers with 0 applied findings.
+
+Author's exact words, which set the bar: *"tired of it burning $400 and fixing nothing."*
+Comment out — **never delete** — so anything can be uncommented and fixed later.
+
+## Decisions locked this session
+
+- **Instruments:** failing/unproven ones get **commented out in place, not deleted**. Scope =
+  every LLM-calling utility in the tree. The <$50 calibration budget is **moot** — author chose
+  deactivation over proving them ("when I need them I will uncomment them and fix them").
+- **Silence is NOT piezoelectric, stores no energy, does not glow, has no hamon.** The entire
+  PZT/TENG/spark-drag/draw-strop/ultracapacitor/glowing-hamon/cardiac design is RETIRED.
+- **Silence materials:** HE-BMG edge (self-sharpening by shear-banding) + CNT-Titanium yarn spine
+  (no crack path, perfect elastic memory) + Covalent Molecular Cross-Linking join (no seam).
+- **The blade CONDUCTS; the boron-nitride tsuka/habaki insulate.** That is what lets Kyle fight
+  shock rods and arc-fences. His *body* is still vulnerable.
+- **NO SAYA. Ever.** Magnetic back mount only — a shaped field holds the blade flat, rotates and
+  slides as he moves, never cuts him, releases on the genetic lock. This solves the impossible
+  back-draw (arm shorter than a 40-inch blade). Other characters keep their scabbards.
+- **STR-CRISPR genetic lock** in the hilt + electro-permanent magnets. Useless to anyone else.
+- **Maker's mark:** Dae-jung Seo signed it **prominently** — and someone **ERASED** it. That
+  reconciles the togishi scene (#20074: *"Someone erased it… I cannot find the seam"*). The
+  erasure IS the lie about how it reached Kyle. Canon only — **not discovered on the page**.
+- **Dae-jung Seo: status `unknown`, NOT deceased.** Legendary smith, late 2100s. No record of his
+  death — deliberately reserved as material for a future novel. Do not resolve his fate in BCODA.
+- **#20211 throat strike uses the mune** (spine), not a scabbard.
+- **THE OBSERVATION RULE** (outranks everything): the 5D entity is future Kyle; it can act only
+  because **Kyle never observes it**; the **reader** is the sole observer and the collapse happens
+  outside the story → no paradox. **Kyle may NEVER learn the entity is himself.**
+
+## State / where we are
+
+**Committed (5 commits on master):**
+- `e755376e1` — closed a live prose-corruption path: applying an ENGAGEMENT finding would have
+  pasted editorial instruction into the manuscript.
+- `36cda43d8` — `InstrumentRuns` table + `InstrumentRunLedger` + `CheckOutcome{Pass,Fail,CouldNotLook}`.
+  Gate no longer reports "clean" on instruments that never ran.
+- `6ebd5e66f` — gate was documented as 7 checks, coded as 6, advertised as 5. Reconciled.
+  `--force-export` now writes a `publish-gate-bypass` decision-ledger row.
+- `525352a9a` — RFC 0014 + `prose --findings stats --by-instrument`.
+- `8c0ce91a8` / `3f173f436` — `create_material` and `create_vocabulary` on CLI **and** MCP.
+
+**Uncommitted:** `src/Prose.Core/Services/NodeWorkbenchService.cs` (the 4 commented-out tails).
+Also pre-existing and NOT mine: `.prose/commands/*`, `scripts/fix-task-focus-stealing.ps1`.
+
+**Prose (all in DB, verified):** 26 beats spliced for the Silence respec + saya removal.
+`saya`=0, `piezo`=0, `strop`=0, `Seo`/`Dae-jung` in prose=0. **521 beats, 194,116 words.**
+Surviving `scabbard`×3 are deliberate negations; `sheath`×2 = one negation + the boss's own.
+
+**Hub redeployed 5×** this session. Last build `acb0cbb28008`+. CLI changes need a redeploy;
+**MCP tool changes need a Claude Code restart** (schema fixed at server start).
+
+## Open questions / pending
+
+- **`create_document` never recomputes `headings`.** The Silence schematic's stored TOC still
+  advertises "PART THREE: CHARGE AND DISCHARGE" and "PART FOUR: THE CARDIAC INTERFACE" over a body
+  containing neither. Fix is in `DocumentMapper.FillBridges` + a Hub redeploy. Author has not said go.
+- **Two orphaned materials** list but won't load via `get_material`: `Ferrocerium-Titanium
+  Pyrophoric Alloy (Blade Spine Substrate)` (leftover from the retired spark-drag design) and
+  `CNT-Steel Meta Alloy`. `--rebuild-material-relational` wrote 0 — no blob to rebuild from.
+  Do NOT write to them: `--create-material` resolves by name via `GetAll()` and would duplicate.
+- **`scripts\fix-task-focus-stealing.ps1` needs an ELEVATED run** by the user. It fixes the console
+  flashing every 5 min — `MindAttic.Automata.Tick` running `automata-runner.exe` as an Interactive
+  scheduled task (`PT5M`). NOT "autokey-runner" — that name finds nothing.
+- Offered and not taken: naming the fabricated teacher **Seito** after the real smith **Seo** whose
+  mark was on the tang.
+
+## Next concrete steps
+
+1. Comment out the two hosted services in `ServiceCollectionExtensions` (~line 53–64).
+2. Comment out the publish-gate pre-flight in `ExportNodeCli` + `Tools.Nodes.ExportNodeImpl`.
+3. Comment out the zero-applied producers' entry points (use `prose --findings stats
+   --by-instrument` for the list — LEDGER-CONFLICT 5 applied, LOGICSWEEP 2, LINT 1, all others 0).
+4. `dotnet build src\Prose.UnitTests -c Debug --artifacts-path "$env:LOCALAPPDATA\Prose\build-artifacts"`
+   then `dotnet test` — baseline is **2,787 pass / 43 known env-dependent fails**.
+5. Redeploy Hub, commit.
+
+## Anchors
+
+- **Files:** `src/Prose.Core/Services/NodeWorkbenchService.cs` (in flight),
+  `src/Prose.Core/Extensions/ServiceCollectionExtensions.cs`, `src/Prose.Cli/Cli/ExportNodeCli.cs`,
+  `src/Prose.Mcp/Tools.Nodes.cs`, `docs/rfc/0014-instrument-value-audit.md`,
+  `src/Prose.Cli/Cli/CreateMaterialCli.cs`, `src/Prose.Cli/Cli/CreateVocabularyCli.cs`
+- **Canon docs:** `the_observation_rule`, `anatomy_of_a_katana`,
+  `019dad495b16725b9f763bb237d0cfea` (Silence schematic — file_name IS the bare GUID)
+- **Ids:** Silence `019ed39c-6321-7c51-9691-f59b441b0bec` · Kyle `019d6143-a648-7876-9688-0f6d38d70075` ·
+  Seito `01a02d38-185c-7752-b83e-baa921571078` (status "Never existed") ·
+  Dae-jung Seo `01a0cb79-28a8-7194-bafb-86d12dc277c9` · book `bushido-coda` / node `01a0b68f-981a-7ac4-867d-ea87eeda21be`
+- **Archives:** before-respec `615dda7f` → latest `b7b236a1`
+- **Commands:**
+  - `cmd /c "cd /d D:\Projects\MindAttic\Prose && .\prose.cmd --<flag> --universe glmz > out.txt 2>&1"`
+    (PowerShell without `cmd /c`+redirect swallows all output; `.\` prefix required)
+  - `& "D:\Projects\MindAttic\Prose\src\tools\deploy-apps.ps1" -Apps Hub -Start Hub`
+    then confirm `(Invoke-RestMethod http://127.0.0.1:5900/api/health).build` **CHANGED**
+  - `prose --findings stats --by-instrument` · `prose --archive-book --slug bushido-coda --reason "..."`

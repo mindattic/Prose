@@ -87,7 +87,6 @@ public sealed class BeatWriteOrchestrator
     private readonly BeatBriefBuilder? briefBuilder;
     private readonly BeatGranularityService? granularity;
     private readonly VoiceAnchorService? voice;
-    private readonly OutlineSpineService? outlineSpine;
 
     public BeatWriteOrchestrator(
         SceneWindowService window, StoryStateQuery storyState, ILlmService llm,
@@ -95,8 +94,7 @@ public sealed class BeatWriteOrchestrator
         NarrativeContradictionChecker gate,
         BeatBriefBuilder? briefBuilder = null,
         BeatGranularityService? granularity = null,
-        VoiceAnchorService? voice = null,
-        OutlineSpineService? outlineSpine = null)
+        VoiceAnchorService? voice = null)
     {
         this.window = window;
         this.storyState = storyState;
@@ -108,7 +106,6 @@ public sealed class BeatWriteOrchestrator
         this.briefBuilder = briefBuilder;
         this.granularity = granularity;
         this.voice = voice;
-        this.outlineSpine = outlineSpine;
     }
 
     /// <summary>
@@ -143,7 +140,7 @@ public sealed class BeatWriteOrchestrator
 
     /// <param name="briefBeatId">The beat being written, when it already exists (a regeneration or
     /// an A/B run). Supplying it is what lets <see cref="BeatBriefBuilder"/> fill in STOP BEFORE
-    /// from the following beat, the POV from the outline map, and the names that must appear — so
+    /// from the following beat, the POV, and the names that must appear — so
     /// the writer is told where to stop instead of being left to run on. Omit for a genuinely new
     /// beat; the brief is then built from the goal alone.</param>
     public async Task<PreviewResult> PreviewGenerateAsync(
@@ -188,13 +185,9 @@ public sealed class BeatWriteOrchestrator
             .Where(s => !string.IsNullOrWhiteSpace(s)));
         var anchor = voice == null ? VoiceAnchor.None : await voice.BuildAsync(bookNodeId, voiceQuery, 3, ct);
 
-        var spine = outlineSpine == null
-            ? null
-            : await outlineSpine.GetSliceAsync(bookNodeId, briefBeatId ?? afterBeatId, 3, ct);
-
         var prompt = PromptAssembler.Assemble(
             universeLine, win, facts, povCharacter, location, beatGoal,
-            brief, anchor.Block, spine?.Block ?? "");
+            brief, anchor.Block);
 
         // maxTokens followed the old flat 1200 regardless of what was asked for, which silently
         // truncated any beat longer than that. Scale it to the target, with the same floor/ceiling

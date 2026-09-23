@@ -7,6 +7,7 @@ namespace Prose.Core.Data.Entities;
 /// corresponds to IsChapterStart segment index; for book/chapter nodes,
 /// ChapterIndex is the chapter child's ordinal (0-based) within the book.
 /// </summary>
+// PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
 public class NodeChapterSummary
 {
     public Guid     Id             { get; set; }

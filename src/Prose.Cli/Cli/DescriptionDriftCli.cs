@@ -16,8 +16,7 @@ namespace Prose.Cli;
 ///
 /// <para><b>Why this exists (Story Ledger Phase 1).</b> <c>Beat.Description</c> is the
 /// authorial-intent line ("what this beat is DOING"), and it was the only per-beat summary the
-/// read tools exposed. Unlike <c>Beat.EventSummary</c>, which has <c>EventSummaryHash</c>,
-/// nothing bound Description to the prose — so it could drift from <c>Beat.Text</c> permanently
+/// read tools exposed. Nothing bound Description to the prose — so it could drift from <c>Beat.Text</c> permanently
 /// and silently, and a reader relying on the Description spine had no way to know. That is
 /// exactly how a full-book read reported fabricated detail as established fact.
 /// <see cref="Beat.DescriptionHash"/> is the binding; this command is the report over it.</para>

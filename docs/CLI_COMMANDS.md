@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**289 commands.** 33 deactivated. 12 cost-gated. 20 have no description in their dispatch comment (13 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**290 commands.** 33 deactivated. 12 cost-gated. 20 have no description in their dispatch comment (13 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -790,7 +790,7 @@ prose --duplicate-entity-scan-broad --universe <slug> [--entity-type <type>] [--
 prose --edit-beat --slug <slug> (--beat-number N | --insert-after N) --file <path>
 ```
 
-expand planned beats in a node to prose (headless ✨ for each beat).
+overwrite one beat's prose from a file, or insert a new beat after a position.
 
 <sub>handler `EditBeatCli`</sub>
 
@@ -2242,6 +2242,16 @@ prose --set-structural-blueprint --slug <nodeSlug> --file <path.json> Hand-autho
 Scene Collision engine manual test harness (2026-08-10): runs SceneCollisionService against one real beat without a full ProseWriterRouter pass. See SimulateCollisionCli for details.
 
 <sub>handler `SimulateCollisionCli` · **cost-gated (spends LLM money)**</sub>
+
+### `--splice-beats`
+
+```
+prose --splice-beats --node <slug|code|guid> --file <docket.json> [--apply] [--analyze]
+```
+
+a docket of exact-text replacements across a book, guarded all-or-nothing, dry-run unless --apply, verified by read-back. Replaces the 2026-09-22 scratchpad splice.py.
+
+<sub>handler `SpliceBeatsCli`</sub>
 
 ### `--split-collection`
 

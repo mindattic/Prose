@@ -24,7 +24,6 @@ public sealed record DiscussionContext(
     int? BeatNumber,
     string? PlaceName,
     string? Intent,
-    string? EventSummary,
     string BeatText,
     string Selection,
     IReadOnlyList<string> Before,
@@ -80,7 +79,7 @@ public sealed class DiscussionContextBuilder(
 
         // What this passage is CARRYING. Until this existed the assistant was asked whether a
         // passage was load-bearing while being shown the beat, its two neighbours and some word
-        // counts — it could not see a single obligation, recorded fact or lock, so it guessed, and
+        // counts — it could not see a single obligation or recorded fact, so it guessed, and
         // a confident guess is exactly the blind agreement the author does not want. Every read
         // behind this is free, which is why it can run on every question.
         CarriedWeight? carried = null;
@@ -93,7 +92,6 @@ public sealed class DiscussionContextBuilder(
             BeatNumber: beat?.Number,
             PlaceName: beat?.PlaceName,
             Intent: beat?.Description,
-            EventSummary: beat?.EventSummary,
             BeatText: BeatMarkup.StripEntityTags(beat?.Text ?? ""),
             Selection: selection,
             Before: before,
@@ -104,10 +102,7 @@ public sealed class DiscussionContextBuilder(
 
     private static string Describe(Data.Entities.Beat b)
     {
-        var summary = !string.IsNullOrWhiteSpace(b.EventSummary)
-            ? b.EventSummary!
-            : Shorten(BeatMarkup.StripEntityTags(b.Text ?? ""), 160);
-        return $"#{b.Number}: {summary}";
+        return $"#{b.Number}: {Shorten(BeatMarkup.StripEntityTags(b.Text ?? ""), 160)}";
     }
 
     /// <summary>
@@ -191,8 +186,6 @@ public sealed class DiscussionContextBuilder(
         sb.AppendLine($"BEAT: {c.BeatLabel}{(c.PlaceName is null ? "" : $" — {c.PlaceName}")}");
         if (!string.IsNullOrWhiteSpace(c.Intent))
             sb.AppendLine($"STATED INTENT: {c.Intent}");
-        if (!string.IsNullOrWhiteSpace(c.EventSummary))
-            sb.AppendLine($"RECORDED EVENT: {c.EventSummary}");
 
         if (c.Before.Count > 0)
         {

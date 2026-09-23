@@ -19,8 +19,6 @@ namespace Prose.Cli;
 ///   --dry-run                List beats/chapters to process without generating prose.
 ///   --force                  Re-generate beats that already have prose.
 ///   --no-repair              Accepted and ignored: the self-repair pass was deleted (RFC 0009, 2026-09-06).
-///   --allow-unblueprinted    Override the locked-pipeline gate (no outline + no structural
-///                            blueprint on this book) — see ProseWriterRouter.WriteAsync.
 ///   --obligation-gate hard|soft|off
 ///                            RFC 0013 chapter trial balance. hard (default) stops the run when a
 ///                            chapter ends with obligations past due and undecided (exit 3);
@@ -40,7 +38,7 @@ public static class AutoRunCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? slug = null, id = null, effort = "draft";
-        bool dryRun = false, force = false, allowVotes = false, noRepair = false, allowUnblueprinted = false;
+        bool dryRun = false, force = false, allowVotes = false, noRepair = false;
         int forks = 0, targetWords = 0;
         var obligationGate = "hard";
 
@@ -58,7 +56,6 @@ public static class AutoRunCli
                 case "--force":      force     = true; break;
                 case "--allow-votes": allowVotes = true; break;
                 case "--no-repair":  noRepair  = true; break;
-                case "--allow-unblueprinted": allowUnblueprinted = true; break;
             }
         }
 
@@ -167,7 +164,7 @@ public static class AutoRunCli
                     : bookBible + "\n\n=== CHAPTER OUTLINE (BINDING — beats must fulfil these chapter goals) ===\n" + chapterSeed.Trim();
                 await ExpandAndRepairAsync(chapterId, nodeId, chapterBible, router, workbench, reflow,
                     chapterClose, beatAudit, stats, force, dryRun, targetWords,
-                    forks, allowVotes, noRepair, totalChapters, chapters.Count, allowUnblueprinted);
+                    forks, allowVotes, noRepair, totalChapters, chapters.Count);
                 totalChapters++;
 
                 // RFC 0013 chapter trial balance — the hard stop (author decision 2026-09-15). The
@@ -204,7 +201,7 @@ public static class AutoRunCli
         {
             await ExpandAndRepairAsync(nodeId, nodeId, bookBible, router, workbench, reflow,
                 chapterClose, beatAudit, stats, force, dryRun, targetWords,
-                forks, allowVotes, noRepair, chapterIndex: 0, totalChapters: 1, allowUnblueprinted: allowUnblueprinted);
+                forks, allowVotes, noRepair, chapterIndex: 0, totalChapters: 1);
             Console.WriteLine($"[auto-run] Done: {stats.Written} beats expanded.");
         }
 
@@ -220,9 +217,9 @@ public static class AutoRunCli
         SessionStats stats,
         bool force, bool dryRun, int targetWords,
         int forks, bool allowVotes, bool noRepair,
-        int chapterIndex, int totalChapters, bool allowUnblueprinted = false)
+        int chapterIndex, int totalChapters)
     {
-        var (written, skipped) = await ExpandBeatNodesAsync(chapterId, nodeId, bookBible, router, workbench, force, dryRun, targetWords, allowUnblueprinted);
+        var (written, skipped) = await ExpandBeatNodesAsync(chapterId, nodeId, bookBible, router, workbench, force, dryRun, targetWords);
         stats.Written  += written;
         stats.Skipped  += skipped;
 
@@ -273,8 +270,7 @@ public static class AutoRunCli
         NodeWorkbenchService workbench,
         bool force,
         bool dryRun,
-        int targetWords = 0,
-        bool allowUnblueprinted = false)
+        int targetWords = 0)
     {
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId);
         var sceneSoFar = "";
@@ -317,7 +313,7 @@ public static class AutoRunCli
                     Subtext           = beat.Subtext ?? "",
                     TargetWords       = targetWords,
                 };
-                var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count, allowUnblueprinted: allowUnblueprinted);
+                var prose = await router.WriteAsync(ctx, beat.Id, beatIndex, ordered.Count);
                 if (string.IsNullOrWhiteSpace(prose))
                 {
                     Console.WriteLine("empty — skipped.");
@@ -372,9 +368,7 @@ public static class AutoRunCli
     {
         var tier  = r.ReviewTier switch { 1 => "pass (no panel)", 2 => "draft panel", 3 => "standard panel", _ => "?" };
         var panel = r.ReviewTier >= 2 ? $" → panel {r.PanelScore:0.0}/100 ({r.PanelBallotsSaved} ballots)" : "";
-        Console.WriteLine($"[auto-run]   quick={r.ChapterScore}/100 tier={tier}{panel}  adherence={r.AdherenceScore}/100  contradictions={r.ContradictionCount}");
-        if (r.RecalibratedBeats > 0)
-            Console.WriteLine($"[auto-run]   recalibrated {r.RecalibratedBeats} remaining beat goals (drift detected)");
+        Console.WriteLine($"[auto-run]   quick={r.ChapterScore}/100 tier={tier}{panel}  contradictions={r.ContradictionCount}");
         if (r.ForkWinnerIndex > 0)
             Console.WriteLine($"[auto-run]   fork: arc {r.ForkWinnerIndex} selected (score {r.ForkWinnerScore}/100)  {r.ForkBeatsUpdated} next-chapter beats updated");
         foreach (var w in r.Warnings)

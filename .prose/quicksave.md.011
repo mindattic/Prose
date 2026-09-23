@@ -1,0 +1,171 @@
+# Quicksave — RFC 0013: instrument now reads a whole book; graded 13/15 on Dickens; one blind spot open
+_Printed: 2026-09-16_
+
+## Current task
+
+**Investigate why GCTOC beat 3 produced ZERO obligations.** It is the beat containing the book's
+central riddle — `RECALLED TO LIFE` — and `Wait at Dover for Mam'selle`. The beat WAS read this run
+(coverage 17/17, so `evaluated=true`); it simply opened nothing. This is not the coverage bug.
+
+- Beat id: `01a0a69fefd372959f501b3b691dd807` (Ch2, position 2, 5,608 chars, 1 window)
+- All three Ch2 ledger rows anchor in beat 2, none in beat 3.
+- I offered the author: pull the raw extraction for that beat and find out why it came back empty.
+  **Awaiting their answer.** The stated reason it matters: a system that misses *Recalled to life*
+  will miss BCODA's curtain-girl.
+
+## Decisions locked this session
+
+- **AUTHOR'S RULING (HARD): no shortcut to BCODA.** The instrument must prove it can follow the
+  ledger of truth and contradictions on universally praised literature before touching a damaged
+  manuscript. My suggestion to skip the fixtures and go straight at the known-real BCODA defects
+  was declined. Do not re-propose it.
+- **The author redeploys the Hub, never me.** They post the new PID in chat. Verify by behaviour,
+  not string-grepping — Release builds drop some const strings (`obl-judge-v3` was absent from a
+  deployed build that definitely contained it). The reliable check is a rescan: if the stamp
+  changed, `skipped 0 unchanged`.
+- **Run 6 (GCSH, $3.03) is VOID** — extractor read 55 of 96 beats. Runs 1–4 void (no ledger reset).
+  Run 5 lacks a coverage figure, so it is weaker than previously claimed. Do not reason from any
+  GCSH number to date.
+- **The scorer counted half the manifest** — resolved injections only scored when left outstanding;
+  "never opened" and "opened and Closed" both fell through as neither TP nor FN. Run 5's
+  "recall 1.000" could not have failed. Fixed; `Score.ScorerVersion = obl-score-v2` is stamped and
+  printed. **Runs 1–6 are scorer v1 and their recall is not comparable to run 7's.**
+- **THE BAR IS WRONG FOR NOVELS** (RFC 0013 §6a). A *perfect* ledger on GCTOC Book the First ends
+  ~9 outstanding over 17,300 words; the bar allows ≤1.0/10k ≈ 1.7 for the whole book. So a flawless
+  reader fails by ~5x for being right. Confirmed by the rule split: every control finding is
+  "not paid yet", zero are structural. **BCODA is a novel, not a story collection.** `MeetsBar` and
+  the 1.0/10k threshold were deliberately NOT changed — that is the author's call.
+- **TRAP: do NOT encode the answer key as authored open rows before a run.** `SelectForListing`
+  shows open obligations to the extractor at scan time, so ground-truth rows would hand the model
+  the answers while it reads the book.
+- **Write the answer key BEFORE seeing the output.** Grading after the fact invites rationalising
+  whatever the instrument produced. This is what made the beat-3 hole visible at all.
+
+## State / where we are
+
+**Hub: PID 39592, `Hub.exe` written 2026-09-16 20:18:30 UTC, process started 20:18:33. LIVE with
+`obl-extract-v7`, `obl-judge-v4`, `MaxResponseTokens`, `ControlStillOpen`, `JudgeParse`.**
+
+**Three root-cause defects found and fixed today (all made the instrument look away and report a
+clean number):**
+1. **Extractor `maxTokens: 1400`** (~5,600 chars) — THE main cause. Every unread beat died there:
+   failed responses 5270/5326/5455/5529/5539/5563/5569/5571/5666/5671 chars, all
+   `an open JSON object or array that should be closed`; successes 1900–5262. Raised to
+   `MaxResponseTokens = 8000`.
+2. **Judge `maxTokens: 1200` + `Parse` swallowed `JsonException`** → empty list → every candidate
+   marked `not_addressed` → **written to `ObligationJudgeCache`**, keyed by prompt version, never
+   revisited. A truncated answer recorded a real payoff as unrecognised *permanently* — the silent
+   half of "payoff not recognised" since run 2. Now `JudgeParse(Parsed, Failure, Verdicts)`: an
+   unreadable answer logs, caches NOTHING, leaves the debt standing; an explicit empty `verdicts`
+   array still counts as the model answering.
+3. **Trailing scrap window** (secondary, real) — a beat 4% over 6,000 chars split into a real window
+   plus a 141–394-char scrap; the model answers a scrap in prose, and one unreadable window voids
+   the whole beat. `SplitIntoWindows` now folds a tail under `max/5` into its predecessor.
+
+**GCTOC clean run (2026-09-16, $0.41, est −87%): FIRST FULL READ IN THE PROGRAM'S HISTORY.**
+```
+beats READ by the extractor: 17/17
+control MODERATE+ 27 (15.61/10k) — 27 "not paid yet" + 0 structural
+  by rule: open_at_end=20, overdue_open=7
+40 ledger rows total (30 outstanding, 10 closed)
+```
+TP/FN are 0 and meaningless — GCTOC carries no injections. That was intentional: the calibration
+path was used only because it calls `ResetLedgerAsync` first, which a bare rescan does not.
+
+**GRADE vs the 15-row hand-read answer key (RFC 0013 §6a): 13 of 15 found.**
+- Correctly held OPEN (the hard half): why Manette was imprisoned; wine-cask BLOOD; Woodman AND
+  Farmer (split into two rows); lamplighter's ropes; **Madame Defarge's knitting** (the subtlest);
+  "Jacques"; the red-haired woman (Miss Pross); Manette's relapse risk; Jerry Cruncher's night trade
+  (anchored on the *eyes* description, a better catch than my own key's quote).
+- Correctly CLOSED: the buried man; Lucie's father (two rows); Lorry/Lucie prior meeting; the child
+  on the Channel crossing; the golden hairs in the rag.
+- **MISSED: `RECALLED TO LIFE` and `Wait at Dover for Mam'selle` — both in beat 3, which opened
+  nothing at all.**
+
+**Real defects in the output (not metric artefacts):**
+- **3 false closes** (terminal class — the judge only revisits `Open|Advanced`):
+  `01a0abe299307f7984eb309ccdc6145b` (Lorry's role "through the Revolutionary period", Closed Ch2);
+  `01a0abe4a53b7c33bb205dc6f744b6b0` (Mme Defarge knitting "as a cover for espionage", Closed Ch5);
+  `01a0abe4a54d7a3796ed4621a6e768ef` (Manette's state "despite rescue", Closed Ch5).
+- **Duplication**: 3 rows on the knitting, 2 on Manette's restoration.
+- **Texture mistaken for debt**: the two unnamed mail passengers; the man sawing wood in Saint
+  Antoine; the guard's blunderbuss.
+- **Revised over-extraction estimate: 2–3x, NOT the 10x reported since run 4.** Of 27 outstanding:
+  ~9 genuine, ~7 defensible-but-duplicated, ~7 texture false-plants, ~4 marginal.
+
+**Commits landed (master):** `deb2e9cda` retrieval diagnostic · `9135339f5` scorer counts resolved
+injections + ScorerVersion · `8fa5873a8` coverage + COULD NOT LOOK + `--obligations coverage` ·
+`3e30bc08b` window-scrap fold (v6) · `b39a98889` token ceilings + judge JudgeParse (v7/judge-v4) ·
+`d08ba4a30` control split by rule · `41026fcca` §6a answer key · plus RFC status-log commits
+`268034c8c`, `dce1f0d46`, `6c115b28f`.
+
+**Tests:** obligation suite 61 pass / 0 fail. Build/test in isolation (Release DLLs are locked by
+the running Hub/MCP) with the repo's own convention:
+`-p:BaseIntermediateOutputPath='obj_diag\' -p:BaseOutputPath='bin_diag\'`.
+
+**Known environment gotchas hit this session:**
+- `mcp__prose__search_logs` **IGNORES its query and limit** — always returns the same recent tail.
+  Useful only for reading what just happened; burns ~15k tokens per call.
+- `mcp__prose__list_books` ignored `universe: gutenberg` and returned GLMZ books (stale MCP schema,
+  as the startup hook warns). Use the CLI with `--universe`.
+- First `--calibrate-obligations` attempt failed with a **SQL `Execution Timeout Expired`** inside
+  `ResetLedgerAsync` (before any LLM spend, nothing mutated — coverage still read 12/17). A plain
+  retry succeeded. Suspected lock contention with the Hub's background sweeps. If it recurs it is a
+  real defect: give the reset its own command timeout.
+
+## Open questions / pending
+
+- **Offered, unanswered: pull the raw extraction for beat 3 and find out why it opened nothing.**
+- **The author's call, not mine: should the bar change?** Specifically whether "outstanding at the
+  end of a text that is one third of a story" should count as a control false positive at all.
+  `Score.ControlByRule` / `ControlStillOpen` / `ControlStructural` now make the two distinguishable;
+  `MeetsBar` still counts them together.
+- GCSH has NOT been re-read under v7. Its 41 unread beats and every precision number from it remain
+  void. `--obligations coverage --slug GCSH` and `--obligations candidates` are free and unrun.
+- Run 7 on GCSH not started. Not obviously the right next spend given the bar question above.
+
+## Next concrete steps
+
+1. Ask the author whether to chase the beat-3 blind spot (offered, unanswered). If yes: re-scan just
+   that beat and capture the extractor's raw response —
+   `dotnet run --project v3\Prose.Cli -- --obligations rescan --slug GCTOC --beat-id 01a0a69fefd372959f501b3b691dd807 --force --universe gutenberg`
+   then read the Hub log tail for the `Obligation scan beat` line and any `UNREAD` warning.
+2. Free, unrun: `dotnet run --project v3\Prose.Cli -- --obligations coverage --slug GCSH --universe gutenberg`
+   — confirms whether GCSH's 41 unread beats were the over-length ones.
+3. Free, unrun: `--obligations candidates --id <guid> --payoff-beat <guid>` on a GCSH
+   "payoff not recognised" row, to separate retrieval budget from recognition.
+4. Do NOT buy run 7 until the bar question is settled — every precision number it produces is
+   measured against a target that penalises correct behaviour on a novel.
+
+## Anchors
+
+- **Files:**
+  - `docs/rfc/0013-narrative-obligation-ledger.md` — §6a is the GCTOC answer key (15 rows with
+    verbatim origin quotes); §8 status log has runs 1–6 and every defect.
+  - `v3/Prose.Core/Services/Obligations/NarrativeObligationExtractor.cs` — `PromptVersion`
+    (`obl-extract-v7`), `MaxResponseTokens = 8000`, `MaxBeatChars = 6000`, `SplitIntoWindows` (fold),
+    `Parse` (returns `Result` with `Failure`), `ExtractAsync` (one bad window voids the beat).
+  - `v3/Prose.Core/Services/Obligations/ObligationResurfacingJudge.cs` — `PromptVersion`
+    (`obl-judge-v4`), `JudgeParse`, `SharesContent` veto, open-rows query ~line 131 (`Open|Advanced`
+    ONLY — this is why a false close is terminal).
+  - `v3/Prose.Core/Services/Obligations/NarrativeObligationService.cs` — `SelectForListing`
+    (3 tiers: local 15 / lexical 15 / urgency), `ScanBeatAsync` (stamps ONLY when `evaluated`).
+  - `v3/Prose.Core/Services/Calibration/ObligationCalibrationService.cs` — `ResetLedgerAsync`,
+    `Classify` + `MatchRow` (pure statics), `ScorerVersion`, `ControlByRule`.
+  - `v3/Prose.Cli/Cli/ObligationCli.cs` — modes `coverage` and `candidates` (both read-only, free).
+  - `v3/Prose.Cli/Cli/ObligationCalibrationCli.cs` — the bar, the control split printout.
+- **Names / ids:**
+  - GCTOC = `GUTENBERG CALIBRATION — A Tale of Two Cities (Book the First)`, 6 chapters, 17 beats,
+    17,295 words, universe `gutenberg`, status "Complete - publication ready".
+  - **Beat 3 (the blind spot): `01a0a69fefd372959f501b3b691dd807`.**
+  - GCSH book node `01a0514c-fae9-77b9-8d68-277d84843f32`, 96 beats, 104,577 words.
+  - Text dump of GCTOC for hand-reading:
+    `<scratchpad>\gctoc.txt` (17 beats, split on `--- [n] ... ---`).
+- **Commands to re-run:**
+  - Ledger: `dotnet run --project v3\Prose.Cli -- --obligations list --slug GCTOC --universe gutenberg`
+  - Coverage (free): `... --obligations coverage --slug GCTOC --universe gutenberg`
+  - Trial balance (free): `... --obligations trial-balance --slug GCTOC --universe gutenberg`
+  - Clean full read (~$0.41): `... --calibrate-obligations --slug GCTOC --deep --no-confirm --universe gutenberg`
+  - Tests: `dotnet test v3\Prose.UnitTests\Prose.UnitTests.csproj -c Debug -p:BaseIntermediateOutputPath='obj_diag\' -p:BaseOutputPath='bin_diag\' --filter "FullyQualifiedName~Obligation"`
+  - Hub health: `curl -s http://127.0.0.1:5900/api/health`
+  - Cumulative calibration spend: $20.51 over 6 GCSH runs + ~$0.75 diagnostics/GCTOC.

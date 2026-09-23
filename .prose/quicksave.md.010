@@ -1,0 +1,140 @@
+# Quicksave — RFC 0013: instrument now honest; literature pass reversed two rulings; awaiting Hub redeploy
+_Printed: 2026-09-17_
+
+## Current task
+
+**Four commits are landed but NOT LIVE — the Hub must be redeployed by the AUTHOR before the quote-gate
+fix or the scan-attempt table take effect.** Hub is currently **PID 54284** (started 2026-09-16
+22:36:39), which serves `obl-extract-v8` + `ObligationScanAttempts` + `Node.StructurallyComplete` +
+`--reembed --beats` + `--set-node-slug`, but **NOT** the 2026-09-17 `QuoteGrounding` typography fix.
+
+On resume: ask for the **Prose Hub** icon, wait for the new PID, verify by behaviour (a rescan
+reporting `skipped 0 unchanged`, never by grepping a Release build), then run Gate 0.1/0.2 and
+re-measure GCTOC beat 3's discard count.
+
+The approved plan is **`C:\Users\ryand\.claude\plans\synthetic-bubbling-kay.md`** — "The Correctness
+Engine". Read it first; it is the spine of everything below.
+
+## Decisions locked this session
+
+- **AUTHOR'S STANDING RULING (HARD): no shortcut to BCODA.** Prove the instrument on universally
+  praised literature first. Do not re-propose skipping to the known-real defects.
+- **The AUTHOR redeploys the Hub, never me.** Verify by behaviour, not by string-grepping Release.
+- **FP metric = bogus rows ÷ rows opened** (author's ruling). Target <1%.
+- **The bar splits by structural completeness** (author's ruling). Shipped: `Node.StructurallyComplete`;
+  GCTOC=false, GCSH=true, set in the DB already. Unset takes the STRICT branch and says so.
+- **Grading = LLM adjudicator, human-audited**, validated against the GCTOC §6a hand key first.
+- **Corpus = ingest 100 Gutenberg (free), profile 100 (free), scan only the 1→2→4→8→16 ladder** (~$100).
+- **Slug ruling: `bushido-coda` (kebab), pinned, title unchanged.** Tool shipped (`--set-node-slug`),
+  **NOT YET RUN** — needs the redeploy + the `SlugPinned` migration.
+- **RULING REVERSED (evidence): verses/sentence-granularity are REJECTED.** See below.
+- **Do NOT build narrative event chains.** Measured: a unigram model beats them.
+- **Build nothing on percentage marks / beat sheets.** TRIPOD: a content-blind baseline beats them.
+
+## State / where we are
+
+**Commits landed on master this session** (all pushed to the local repo, none deployed):
+- `2ca8baf02` — **QuoteGrounding: `FoldTypography` + `TryAlign`.** The gate stays exact; recovery is
+  a separate, explicit call. 2567 tests pass (+11 new).
+- `cd1f7c3d6` — RFC 0013 §8: the literature pass, eight findings.
+- `7b56e177a` — RFC 0013 §8: GCNEG run for the first time.
+- Earlier same session: `4215ae09c` (Milestone A batch: v8 retry/halve/bank, `ObligationScanAttempts`,
+  bar split, embedding coverage reporting), `055acd2b7` (`--obligations completeness`),
+  `ad086067b` (`--set-node-slug` + `Node.SlugPinned` + migration), `1eea18cbb` / `b27ad2e0f`
+  (retrieval diagnostic + its correction), `08ef982b2` (beat-3 result).
+
+**Measured results this session:**
+- **GCTOC beat 3 solved.** v7 `opened 0` → v8 `opened 1, advanced 2, ungrounded discarded 3`. The
+  beat was never empty; its harvest was being thrown out by the quote gate. Still misses
+  `Wait at Dover for Mam'selle`. Do NOT report GCTOC as 14/15 — one beat is v8, sixteen are v7.
+- **The embedding index was empty, not coarse.** A `k=400` sweep returned 12 hits of 116 gutenberg
+  beats. After backfill: **113 hits; the brass-whistle payoff went from outside-top-400 to RANK #1
+  of 93.** Beat-granularity embeddings are adequate; the verse-index proposal stays unbought.
+- **Standing Contract (SCON) had `0/140` beats embedded. Now `140/140`.** Live corpus defect, fixed.
+- **GCNEG run for the first time (~$0.06):** `opened 9, advanced 5, closed 2, discarded 0`.
+  **7 rows from Ch1, 2 from Ch3, ZERO from Ch2** (the deliberately flat beat, longest of the three).
+  Two rows correctly Closed — a full open→close arc, first time in the programme. No texture
+  false-plants.
+
+**Literature pass — seven research expeditions, full detail in RFC 0013 §8 and the plan:**
+- **22–28% of an unconstrained model's "verbatim" quotes are not verbatim** (ReClaim). Our
+  `Normalize` folded whitespace but not Unicode; Dickens is em-dashes and curly quotes. Fixed.
+- **Finer granularity is measurably WORSE on narrative.** On GutenQA (100 Gutenberg books),
+  proposition chunking has the **worst Recall@20 of five methods, below plain paragraph.** Optimum is
+  **paragraph scale, 4–8 sentences.** Our ~400-word beats are near it; 6,000-char beats are the defect.
+- **THE <1% BAR HAS A MEASURED CEILING.** FABLES: best auto-verifier with the entire book in context
+  scores **F1 0.476–0.582 on UNFAITHFUL claims** (GPT-4-Turbo 0.109). Human agreement on *subjective*
+  narrative claims is **26.56%**. <1% is unreachable on the interpretive fraction by anyone. **It must
+  be scoped to the objective span-checkable fraction and reported separately.**
+- **Chekhov's gun is misquoted.** The real rule is *«Нельзя обещать»* — "do not make promises" —
+  about **salience, not inventory.** That is the fix for texture false-plants.
+- **Coreference dictates architecture:** whole-book 67 F1 vs 82.2 on 1,500-token windows → window,
+  then merge. ~20 entity slots suffice. **Never report MUC** (BookNLP: MUC 83.1 at CEAF_φ4 2.4).
+- **Every professional continuity system is a flat record store, not a graph.** Dragonsteel's Cosmere
+  timeline independently invented our obligation row (quote + chapter + happened-then flag).
+
+## Open questions / pending
+
+- **UNANSWERED, asked twice — the direction fork.** (a) fix the three scope keys then scan BCODA
+  (~$6–15), (b) finish the calibration ladder on fixtures, (c) ship `--ai-disclosure` first.
+  I recommended (a) with the scope-key fix first.
+- **UNANSWERED — ledger scope ruling (Gate 0.6).** `ObligationCli.BookRootAsync` (`:555-565`) walks to
+  the TOPMOST ancestor, so every `--obligations` command on BCODA silently operates on the **Street
+  Samurai series** (492 beats, not 475). RFC 0013 §2 says "book-scoped". **The correct walker already
+  exists**: `GrepBeatsCli.BookTitleFor` (`:68-76`) stops at `Kind == "book"`. Author decides
+  book-vs-series, then one walker used everywhere.
+- **§4 of the plan is INFERRED FROM CODE, NOT TRACED.** Three writer memory channels appear wired but
+  return nothing (SceneSoFar resets per chapter; `BuildBeatAnchorsAsync` scope mismatch; the
+  `[OPEN OBLIGATIONS]` brief never reaching `--expand-beat`). **Gate 0.1 must confirm with log lines
+  before anything is built on it.**
+- **RFC 0013 §6 names the wrong fixture.** GCNEG belongs to the Full-Order Read instrument. There is
+  **no purpose-built obligation negative control**; one needs building (~20 beats, Ch2 is the template).
+- MCP served a stale tool schema at session start (`Prose.Mcp` locked by the running server). Use the
+  CLI, or verify every MCP write by read-back.
+
+## Next concrete steps
+
+1. **Ask the author for the Hub redeploy** (Prose Hub icon), get the new PID, verify by behaviour.
+2. **Gate 0.1** — add log lines for `anchorBlock.Length`, `OpenThreadsContext.Length`,
+   `sceneSoFar.Length`, run one `--auto-run` and one `--expand-beat`, record the three numbers.
+3. **Re-measure GCTOC beat 3** under the typography fix: expect the 3 ungrounded discards to fall.
+   `--obligations rescan --slug GCTOC --beat-id 01a0a69fefd372959f501b3b691dd807 --force`
+4. **Run the slug rename** (dry-run first):
+   `--set-node-slug --slug bushido-coda-writer-clone-3-01a07e1b --to bushido-coda` then `--apply`.
+5. **Free and unblocked right now:** build the ~20-beat purpose-built obligation negative control.
+6. Do NOT buy a full paid run until the direction fork and the ledger-scope ruling are answered.
+
+## Anchors
+
+- **Plan (approved):** `C:\Users\ryand\.claude\plans\synthetic-bubbling-kay.md`
+- **RFC:** `docs/rfc/0013-narrative-obligation-ledger.md` — §6a is the GCTOC hand answer key (15 rows);
+  §8 is the status log and now carries the whole literature pass.
+- **Files changed this session:**
+  - `v3/Prose.Core/Services/Audit/QuoteGrounding.cs` — `FoldTypography`, `NormalizeForMatch`,
+    `TryAlign`, `MinAlignmentJaccard = 0.7`, `WordKey`
+  - `v3/Prose.Core/Services/Obligations/NarrativeObligationExtractor.cs` — `obl-extract-v8`,
+    `ReadWindowWithRetryAsync`, `MinResplitChars = 800`, partial-window banking
+  - `v3/Prose.Core/Services/Obligations/NarrativeObligationService.cs` — `ClassifyOutcome` (pure static),
+    attempt persistence
+  - `v3/Prose.Core/Data/Entities/ObligationInstruments.cs` — `ObligationScanAttempt`, `ObligationScanOutcome`
+  - `v3/Prose.Core/Data/Entities/Node.cs` — `StructurallyComplete`, `SlugPinned`
+  - `v3/Prose.Core/Services/Calibration/ObligationCalibrationService.cs` — `ControlAgainstBar`, `BarBasis`
+  - `v3/Prose.Core/Services/SlugRepairService.cs` — `SetNodeSlugAsync`, `MoveNodeSlugReferencesAsync`
+  - `v3/Prose.Cli/Cli/{ObligationCli,ReembedCli,SetNodeSlugCli,ObligationCalibrationCli}.cs`
+  - Migrations: `20260917024408_AddObligationScanAttempts`, `20260917044704_AddNodeSlugPinned`
+- **Ids:** GCTOC beat 3 = `01a0a69fefd372959f501b3b691dd807` · brass whistle obligation =
+  `01a0ab6e3c1a7db7bebaa99ac13ca174`, payoff beat `01a0a69e-ebde-7bf5-ab7e-fc7d456cc705` ·
+  one-eyed cat (wrong-end anchored, unclosable) = `01a0ab7ba3ef7743b645f7c22197fbae` ·
+  BCODA = `bushido-coda-writer-clone-3-01a07e1b` · SCON = `standing-contract-01a02d2c`
+- **Commands:**
+  - `curl -s http://127.0.0.1:5900/api/health`
+  - `dotnet run --project v3\Prose.Cli -- --obligations coverage --slug X --universe Y` (free; reports
+    beats-read AND embedding index coverage)
+  - `... --obligations candidates --id <guid> --payoff-beat <guid>` (free retrieval diagnostic)
+  - `... --obligations completeness --slug X [--complete true|false]`
+  - `... --reembed --beats --slug X` (cheap; **client may time out while the Hub keeps working —
+    re-run rather than concluding it failed**)
+  - Tests in isolation (running Hub locks Release DLLs):
+    `dotnet test v3\Prose.UnitTests\Prose.UnitTests.csproj -c Debug -p:BaseIntermediateOutputPath='obj_diag\' -p:BaseOutputPath='bin_diag\'`
+  - **Known-good baseline: 2567 pass / 5 fail.** The 5 (WorldState/SnapshotAsync) are PRE-EXISTING,
+    verified identical against a pristine worktree at HEAD. Do not chase them.

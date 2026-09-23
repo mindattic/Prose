@@ -1,0 +1,142 @@
+# Quicksave — RFC 0013 obligation ledger: calibration finally valid, locality fix committed, verse-index question open
+_Printed: 2026-09-16_
+
+## Current task
+
+Two live threads, in this order:
+
+1. **Run 6 is pending a Hub redeploy.** Commit `bfa88e18d` (locality-first open list) is in the
+   repo but NOT in the running Hub. The author must click the **Prose Hub** icon. Verify the new
+   build, then launch run 6 in the BACKGROUND (~42 min, ~$3).
+2. **Offered but unanswered: a free retrieval diagnostic** on run 5's two "payoff not recognised"
+   cases — was the payoff text ever in the judge's candidate set at all? Retrieved-but-not-recognised
+   ⇒ granularity problem (build verse-level retrieval). Never-retrieved ⇒ retrieval-budget problem.
+   Costs $0 and decides the verse-index question below with evidence instead of architecture debate.
+
+## Decisions locked this session
+
+- **Runs 1–4 measured NOTHING.** The calibration harness never reset ledger state between runs, so
+  each run inherited the previous run's verdicts. Do NOT reason from any run 1–4 number.
+- **A false close was terminal**: `ObligationResurfacingJudge` queries only `Open|Advanced`
+  (~line 127), so a wrongly-Closed row was never revisited. Fixed by the reset; the underlying
+  product risk (one bad auto-close silently drops a real obligation forever) is noted, not fixed.
+- **Grounding ≠ relevance.** `QuoteGrounding.Contains` proves a quote is real text, never that it
+  answers the debt. Run 3 closed "the stopped clock at a quarter past three" with "…smoked a cigar
+  and waited behind a tree…". Now vetoed by `ObligationResurfacingJudge.SharesContent`.
+- **Diagnosis corrected twice.** Over-extraction is NOT the dominant term. Run 5 close-rate by
+  chapter — ch1 **82%**, later chapters 15–59%, across twelve structurally identical self-contained
+  Holmes stories — shows the closer degrades as the open pile grows. The starved rows are real debts
+  the story does pay (masked visitor = King of Bohemia; Spaulding's cellar = the tunnel; typewriter
+  wear convicts Hosmer Angel; the locked attic room). The extractor was right; the model was never
+  shown the row it was paying.
+- **The author redeploys the Hub, never me.** Calibration executes inside
+  `C:\Apps\MindAttic\Prose\Hub.exe`; `Prose.Cli` is only a forwarder to `127.0.0.1:5900`. A local
+  build changes nothing at runtime.
+- **One variable per run**, so results stay attributable.
+- Verse-index recommendation given (see Open questions): build verses as a *derived retrieval
+  index*; do NOT store verse indices as obligation pointers.
+
+## State / where we are
+
+**Commits landed this session (on master):**
+- `2e074b1cd` — `ObligationCalibrationService.ResetLedgerAsync` (drops machine rows + journal +
+  judge cache, clears `ObligationScanHash`; preserves authored/author-locked rows; guarded to the
+  `gutenberg` universe) + judge relevance veto (`obl-judge-v3`) + regression tests.
+- `bfa88e18d` — `SelectForListing` three tiers: local (15, this chapter, newest origin first) →
+  lexical (15) → urgency (remainder). Extractor stamp bumped to `obl-extract-v5`.
+
+**Run 5 (2026-09-16, $3.10) — the FIRST valid measurement. BELOW BAR:**
+```
+TP 4  FN 0  resolved mis-flagged 2  control MODERATE+ 103 (9.85/10k)
+precision 0.037  recall 1.000  F1 0.071
+```
+- Stopped clock → `Advanced (flagged)` = TP (the false close is dead; veto works live).
+- Violet seal → `Open (flagged)` = TP, first time in 5 runs. **Do not credit the extractor prompt
+  fix** — runs 4 and 5 used the identical prompt; the only delta was the ledger reset.
+- Bar to beat: P ≥ 0.85, R ≥ 0.70, F1 ≥ 0.678, control ≤ 1.0/10k, resolved-misflag ≤ 10%.
+
+**Run 5 ledger shape:** 229 rows total (NOT the old cumulative 563), 134 outstanding, 95 closed.
+Outstanding by kind: plant 68, introduced-referent 23, promise 15, foreshadow 15, question 12,
+unexplained-presence 1. Opened per chapter 13–26; outstanding per chapter ch1=3 … ch7=15, ch12=18.
+
+**Known harness scoring gap (NOT yet fixed):** "recall 1.000" covers only the 4 *abandoned*
+injections. A *resolved* injection that is never extracted scores `ok — no row (never opened)` —
+a silent extraction miss counted as a PASS. Fix the scorer before trusting a future recall number.
+
+**Test state:** full suite 2,532 pass / 5 fail. The 5 failures are pre-existing and unrelated
+(`BeatStoryPositionTests` — WorldState/Snapshot; zero obligation references). Not regressions.
+
+**Uncommitted, deliberately left alone:** `.prose/commands/quicksave.md`,
+`.prose/commands/quickload.md`, `.prose/hooks/quickload-on-do.ps1` — pre-existing edits from an
+earlier session (quicksave archive rotation), not mine to commit.
+
+## Open questions / pending
+
+- **Verse/"verse-level addressing" proposal (author's idea).** My analysis: the system already has
+  sub-beat addressing — `OriginQuote`/`ClosingQuote` are content-addressed pointers that fail LOUDLY
+  (`Contains` returns false → `ScanBeatAsync` re-anchors or withdraws). Verse *indices* drift
+  silently on any insert unless given immutable IDs (split/merge/reword identity protocol =
+  CRDT territory). Recommendation: **build verses as a derived retrieval index** (per-verse
+  embeddings + `<entity>` tags as joins, used to find candidates — rebuildable, and measurable
+  without an LLM via recall@k); **skip verses as stored obligation pointers**. Awaiting the author's
+  decision.
+- If run 6 improves but does not clear the bar, next levers (one at a time): raise
+  `MaxLocalListed` (chapters open 13–26 but only 15 local slots, so heavy chapters can still starve
+  their oldest local debts), or raise `MaxOpenListed` (40; extra prompt cost is marginal).
+- Deliberately untouched so run 6 stays attributable: the judge's candidate finder, `MaxOpenListed`,
+  and the off-page back-reference false-plant class ("the Tankerville Club scandal", "the Irene
+  Adler photograph", "scores to settle with John Clay") — prose gesturing at stories it will never
+  tell, which can never be paid and should never be opened.
+
+## Next concrete steps
+
+1. Ask the author to click the **Prose Hub** icon (deploy). Do not deploy it yourself.
+2. Verify the NEW build actually serves before spending anything:
+   ```powershell
+   $h = Get-Item 'C:\Apps\MindAttic\Prose\Hub.exe'; $b=[System.IO.File]::ReadAllBytes($h.FullName)
+   $u16=[System.Text.Encoding]::Unicode.GetString($b); $u8=[System.Text.Encoding]::UTF8.GetString($b)
+   @('obl-extract-v5','MaxLocalListed','ResetLedgerAsync') | ForEach-Object {
+     [PSCustomObject]@{ Token=$_; UTF16=$u16.Contains($_); UTF8=$u8.Contains($_) } }
+   $h.LastWriteTimeUtc
+   ```
+   String literals (`obl-extract-v5`) live in UTF-16; method/field names (`MaxLocalListed`,
+   `ResetLedgerAsync`) in UTF-8 metadata. A health 200 alone proves only that *a* Hub is up.
+3. Launch run 6 in the BACKGROUND (the CLI prints nothing for ~42 min; that silence is normal):
+   ```
+   dotnet run --project v3\Prose.Cli -- --calibrate-obligations --slug GCSH --deep --no-confirm --universe gutenberg
+   ```
+4. Compare against run 5: close rate by chapter (does ch5–ch12 rise toward ch1's 82%?), control
+   findings (103 → ?), resolved mis-flagged (2/4 → ?), recall (hold at 1.000).
+5. Then decide the verse-index question, ideally after the free retrieval diagnostic.
+
+## Anchors
+
+- **Files:**
+  - `v3/Prose.Core/Services/Obligations/ObligationResurfacingJudge.cs` — `SharesContent` veto,
+    `PromptVersion = "obl-judge-v3"`, `CandidatesPerObligation = 8`, `MaxCandidateWords = 600`,
+    open-rows query at ~line 127 (`Open|Advanced` only).
+  - `v3/Prose.Core/Services/Obligations/NarrativeObligationExtractor.cs` —
+    `PromptVersion = "obl-extract-v5"`, `MaxBeatChars = 6000`, `MaxOpenListed = 40`,
+    `MaxLocalListed = 15`, `MaxLexicalListed = 15`, `SystemPrompt`.
+  - `v3/Prose.Core/Services/Obligations/NarrativeObligationService.cs` — `SelectForListing`
+    (3 tiers), `ScanBeatAsync` (stamp short-circuits on matching `ObligationScanHash`).
+  - `v3/Prose.Core/Services/Calibration/ObligationCalibrationService.cs` — `ResetLedgerAsync`,
+    `ScoreAsync`, `GuardAsync`, the 8 injection `Templates`.
+  - `v3/Prose.Cli/Cli/ObligationCalibrationCli.cs` — CLI entry + the bar in `MeetsBar`.
+  - `v3/Prose.Core/Services/Audit/QuoteGrounding.cs` — `Contains`, `ClampForStorage` (400).
+  - Tests: `v3/Prose.UnitTests/ObligationCalibrationServiceTests.cs`,
+    `v3/Prose.UnitTests/ObligationResurfacingJudgeTests.cs`.
+- **Names / ids:**
+  - GCSH book node `01a0514c-fae9-77b9-8d68-277d84843f32` (universe `gutenberg`).
+  - Run-5 unrecognised payoffs (the free-diagnostic targets):
+    `01a0a69b2b6f7a058b3bf8814b2baa54` → payoff `01a0a69d9c3d71ffa0402a4d9e90ad4f`;
+    `01a0a698e81f7935b8a05270b53b9e0a` → payoff `01a0514d785a7530a14b94be74422dac`.
+  - Stopped-clock obligation from the run-3 incident: `01a0a6d3-9c87-7d36-b434-8d195cc8bfd6`.
+- **Commands to re-run:**
+  - Tests (use **Debug** — the Release DLL is locked by the running `Prose.Mcp.exe`):
+    `dotnet test v3/Prose.UnitTests/Prose.UnitTests.csproj -c Debug --filter "FullyQualifiedName~Obligation"`
+  - Regenerate the obligations dump (free, ~seconds):
+    `dotnet run --project v3\Prose.Cli -- --obligations list --slug GCSH --universe gutenberg --json`
+  - Trial balance (free): `dotnet run --project v3\Prose.Cli -- --obligations trial-balance --slug GCSH --universe gutenberg`
+  - Hub health: `curl -s http://127.0.0.1:5900/api/health`
+  - Cumulative calibration spend so far: $17.48 over 5 runs; only run 5 measured anything.

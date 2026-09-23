@@ -1503,6 +1503,82 @@ namespace Prose.Core.Migrations
                     b.ToTable("BeatProseMetrics", (string)null);
                 });
 
+            modelBuilder.Entity("Prose.Core.Data.Entities.BeatReadNote", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("At")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Kind")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<string>("ReadBy")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
+
+                    b.Property<Guid?>("ResolvedByBeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
+
+                    b.Property<string>("TextHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BeatId");
+
+                    b.ToTable("BeatReadNotes", (string)null);
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.BeatReadReceipt", b =>
+                {
+                    b.Property<Guid>("BeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("NextBeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PrevBeatId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ReadAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ReadBy")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
+
+                    b.Property<string>("TextHash")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.HasKey("BeatId");
+
+                    b.ToTable("BeatReadReceipts", (string)null);
+                });
+
             modelBuilder.Entity("Prose.Core.Data.Entities.BeatServiceLog", b =>
                 {
                     b.Property<Guid>("Id")
@@ -12569,6 +12645,24 @@ namespace Prose.Core.Migrations
                     b.HasOne("Prose.Core.Data.Entities.Beat", null)
                         .WithOne()
                         .HasForeignKey("Prose.Core.Data.Entities.BeatProseMetrics", "BeatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.BeatReadNote", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Beat", null)
+                        .WithMany()
+                        .HasForeignKey("BeatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Prose.Core.Data.Entities.BeatReadReceipt", b =>
+                {
+                    b.HasOne("Prose.Core.Data.Entities.Beat", null)
+                        .WithOne()
+                        .HasForeignKey("Prose.Core.Data.Entities.BeatReadReceipt", "BeatId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

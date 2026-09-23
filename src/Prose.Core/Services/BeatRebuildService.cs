@@ -334,7 +334,9 @@ public class BeatRebuildService
             var toDelete = oldBeatIds.Except(stillReferenced).ToList();
             if (toDelete.Count > 0)
             {
-                // Clear all child-table references before deleting Beat rows.
+                // Clear all child-table references before deleting Beat rows. (BeatBlueprintDecisions
+                // and NodeStructuralBlueprintBeatTags are PENDING DROP, author ruling 2026-09-22 —
+                // cleared here only so their FKs cannot block the delete until the tables go.)
                 await db.BeatBlueprintDecisions.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);
                 await db.BeatEntityMentions.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);
                 await db.BeatProseMetrics.Where(e => toDelete.Contains(e.BeatId)).ExecuteDeleteAsync(ct);

@@ -1,7 +1,7 @@
 ---
 description: Print the current discussion to a paper transcript, so it survives /clear and restores on 'do' or /quickload.
 argument-hint: "[optional note to emphasize what matters most]"
-allowed-tools: Write
+allowed-tools: Write, Read, PowerShell, Bash
 ---
 
 # Quicksave — the paper transcript
@@ -9,13 +9,32 @@ allowed-tools: Write
 Person-of-Interest protocol: the context window is about to be wiped by `/clear`. Before it is,
 print the live discussion to a "paper transcript" on disk. On the other side of the wipe, the
 next session restores it when the user types a bare `do` (a prompt-submit hook injects the
-transcript) or runs `/quickload`. The transcript is consumed on read — one-shot, no residue.
+transcript) or runs `/quickload`. The transcript is archived on read, never deleted — nothing
+printed by `/quicksave` is ever thrown away.
 
 ## Do this now
 
-Write a handoff file to **`.prose/quicksave.md` in the current project root** — construct the
-absolute path from your current working directory (`<cwd>\.prose\quicksave.md`). Overwrite it if
-it exists.
+Write a handoff file to **`.prose\quicksave.md` in the current project root** — construct the
+absolute path from your current working directory (`<cwd>\.prose\quicksave.md`).
+
+**Never delete or silently overwrite an existing quicksave.** If `.prose\quicksave.md` already
+exists (an earlier save nobody consumed yet), archive it first — the same rotation `/quickload`
+uses when it consumes one. (The live `quicksave.md` is conceptually save `0`; archives run `.1`,
+`.2`, ... from there — see `/quickload`'s argument.)
+
+1. Find the highest existing `.prose\quicksave.md.NNN` (zero-padded, `.001`, `.002`, ...).
+2. Starting from the highest number down to `001`, rename each `quicksave.md.NNN` to
+   `quicksave.md.(NNN+1)` (shift everything up by one so nothing collides).
+3. Rename the current `quicksave.md` to `quicksave.md.001`.
+4. Now write the fresh transcript to the now-clear `quicksave.md`.
+
+If none exists yet, just write it directly.
+
+**Dump the bookmark queue.** Before writing, run `& .\tools\prose-agent.ps1 queue -List` from the
+project root. Every item it prints goes, verbatim with its `[N]`, into the transcript's **Queued**
+section below. After the transcript is written, run `& .\tools\prose-agent.ps1 queue -Drain` so
+the queue is archived (never deleted) and the same items are not dumped twice. An empty queue
+means an empty **Queued** section — write `- (none)`.
 
 Capture the *current* discussion — not the whole session, just what a fresh instance of you needs
 to resume seamlessly. Be concrete: names, ids, file paths, exact commands. No vague summaries.
@@ -42,6 +61,10 @@ in $ARGUMENTS, lead with it.>
 ## Next concrete steps
 1. <the very next action to take on resume>
 2. ...
+
+## Queued (bookmarked with /queue — pending, not the current task)
+- [N] <each item from `prose-agent.ps1 queue -List`, verbatim>
+
 
 ## Anchors
 - Files: <paths touched or relevant>

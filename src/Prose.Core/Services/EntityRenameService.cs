@@ -12,8 +12,6 @@ namespace Prose.Core.Services;
 public sealed class EntityRenameService(
     IDbContextFactory<ProseDbContext> dbFactory,
     NodeWorkbenchService workbench,
-    CanonDocumentService canonDocs,
-    NodeDocService nodeDocs,
     MarkdownFileService markdownFiles,
     ContinuityService continuity,
     NounConsistencyService nouns)
@@ -31,17 +29,15 @@ public sealed class EntityRenameService(
         if (string.Equals(entity.Name, newName.Trim(), StringComparison.Ordinal)) return EntityRenamePreview.Failure("name_unchanged");
 
         var matcher = NameRegex(entity.Name);
-        var sections = await db.NodeOutlineSections.AsNoTracking().Where(s => s.NodeId == node.Id).ToListAsync(ct);
         var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
         var beats = await db.BeatNodes.AsNoTracking().Where(bn => leafIds.Contains(bn.NodeId))
             .Join(db.Beats.AsNoTracking(), bn => bn.BeatId, b => b.Id, (_, b) => b)
             .Where(b => b.Text != null).Select(b => new { b.Id, b.Text }).ToListAsync(ct);
 
-        var outlineHits = sections.Where(s => matcher.IsMatch(s.Content ?? "")).Select(s => s.SectionType).ToList();
         var beatIds = beats.Where(b => matcher.IsMatch(b.Text!)).Select(b => b.Id).ToList();
         var ledgerCount = continuity.GetByEntity(entity.Id.ToString()).Count(c => !string.Equals(c.EntityName, newName.Trim(), StringComparison.Ordinal));
         return new EntityRenamePreview(true, null, entity.Id, entity.Name, entity.Slug, newName.Trim(), node.Id, node.Slug,
-            outlineHits, beatIds, ledgerCount, entity.EntityType);
+            beatIds, ledgerCount, entity.EntityType);
     }
 
     public async Task<EntityRenameResult> ApplyAsync(string entityIdOrSlug, string nodeIdOrSlug, string newName, string? note = null, CancellationToken ct = default)
@@ -81,15 +77,6 @@ public sealed class EntityRenameService(
         }
 
         var matcher = NameRegex(preview.OldName);
-        foreach (var sectionType in preview.OutlineSections)
-        {
-            await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var section = await db.NodeOutlineSections.AsNoTracking()
-                .FirstAsync(s => s.NodeId == preview.NodeId && s.SectionType == sectionType, ct);
-            await canonDocs.SetNodeOutlineSectionAsync(preview.NodeId, sectionType,
-                matcher.Replace(section.Content ?? "", preview.NewName), ct);
-        }
-
         foreach (var beatId in preview.BeatIds)
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -103,10 +90,9 @@ public sealed class EntityRenameService(
         var relabeled = continuity.RelabelEntityName(preview.EntityId.ToString(), preview.NewName,
             note ?? "relabeled by entity rename");
 
-        await nodeDocs.GenerateAsync(preview.NodeId, ct);
         await markdownFiles.SyncAllAsync(dryRun: false, ct: ct);
         return new EntityRenameResult(true, null, preview.EntityId, preview.OldName, preview.NewName,
-            preview.OutlineSections.Count, preview.BeatIds.Count, relabeled);
+            preview.BeatIds.Count, relabeled);
     }
 
     private async Task<Guid> NodeUniverseAsync(Guid nodeId, CancellationToken ct)
@@ -131,13 +117,13 @@ public sealed class EntityRenameService(
 }
 
 public sealed record EntityRenamePreview(bool Ok, string? Error, Guid EntityId, string OldName, string OldSlug, string NewName,
-    Guid NodeId, string NodeSlug, IReadOnlyList<string> OutlineSections, IReadOnlyList<Guid> BeatIds, int LedgerCount, string EntityType)
+    Guid NodeId, string NodeSlug, IReadOnlyList<Guid> BeatIds, int LedgerCount, string EntityType)
 {
-    public static EntityRenamePreview Failure(string error) => new(false, error, Guid.Empty, "", "", "", Guid.Empty, "", [], [], 0, "");
+    public static EntityRenamePreview Failure(string error) => new(false, error, Guid.Empty, "", "", "", Guid.Empty, "", [], 0, "");
 }
 
 public sealed record EntityRenameResult(bool Ok, string? Error, Guid EntityId, string OldName, string NewName,
-    int OutlineSectionsChanged, int BeatsChanged, int LedgerClaimsRelabeled)
+    int BeatsChanged, int LedgerClaimsRelabeled)
 {
-    public static EntityRenameResult Failure(string error) => new(false, error, Guid.Empty, "", "", 0, 0, 0);
+    public static EntityRenameResult Failure(string error) => new(false, error, Guid.Empty, "", "", 0, 0);
 }

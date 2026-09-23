@@ -12,6 +12,7 @@ namespace Prose.Core.Data.Entities;
 /// breaking the context-injection feature that depends on them staying New. Moved to its own
 /// table 2026-08-13 so the Findings inbox reflects only things a human should actually triage.
 /// </summary>
+// PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
 public class ReaderKnowledgeFact
 {
     public long Id { get; set; }

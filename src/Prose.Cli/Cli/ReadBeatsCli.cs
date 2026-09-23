@@ -8,7 +8,7 @@ namespace Prose.Cli;
 
 /// <summary>
 /// <c>prose --read-beats (--slug &lt;slug&gt; | --id &lt;guid&gt;) [--from N] [--to N]
-/// [--numbers &lt;csv&gt;] [--format text|json]</c> — read a book's beats directly, in reading
+/// [--numbers &lt;csv&gt;] [--format text|json] [--mark-read --read-by &lt;name&gt;]</c> — read a book's beats directly, in reading
 /// order, with no <c>--publish-md</c>/export round-trip required. The "Writer" capability the
 /// user asked for: browse prose without exporting first. <c>--numbers</c> looks up specific
 /// beats by their global <c>Beat.Number</c> (the id logic-sweep findings quote, e.g. "Beat
@@ -23,6 +23,8 @@ public static class ReadBeatsCli
         int? from = null, to = null;
         HashSet<int>? numbers = null;
         var format = "text";
+        string? readBy = null;
+        var markRead = args.Contains("--mark-read");
         for (var i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -43,6 +45,7 @@ public static class ReadBeatsCli
                     }
                     break;
                 case "--format": if (i + 1 < args.Length) format = args[++i]; break;
+                case "--read-by": if (i + 1 < args.Length) readBy = args[++i]; break;
             }
         }
         if (string.IsNullOrWhiteSpace(idOrSlug))
@@ -107,7 +110,7 @@ public static class ReadBeatsCli
                 text = x.Beat.Text,
             });
             Console.WriteLine(JsonSerializer.Serialize(payload, new JsonSerializerOptions { WriteIndented = true }));
-            return 0;
+            return await MarkAsync(services, nodeId.Value, slice, markRead, readBy, Console.Error);
         }
 
         foreach (var (position, beat) in slice)
@@ -117,6 +120,24 @@ public static class ReadBeatsCli
             Console.WriteLine();
         }
         Console.WriteLine($"[read-beats] {slice.Count} of {ordered.Count} beats.");
+        return await MarkAsync(services, nodeId.Value, slice, markRead, readBy, Console.Out);
+    }
+
+    /// <summary>--mark-read: record a read receipt for exactly the beats just printed, at the hash of
+    /// the text that was printed (see <see cref="ReadGateService"/>). Goes to stderr under --format json
+    /// so the JSON on stdout stays parseable.</summary>
+    private static async Task<int> MarkAsync(IServiceProvider services, Guid nodeId,
+        List<(int position, Prose.Core.Data.Entities.Beat Beat)> slice, bool markRead, string? readBy, TextWriter report)
+    {
+        if (!markRead) return 0;
+        if (string.IsNullOrWhiteSpace(readBy))
+        {
+            Console.Error.WriteLine("[read-beats] --mark-read needs --read-by <name> (who read it). Nothing marked.");
+            return 1;
+        }
+        var marked = await services.GetRequiredService<ReadGateService>()
+            .MarkReadAsync(nodeId, slice.Select(x => (x.Beat.Id, x.Beat.TextHash ?? "")), readBy);
+        report.WriteLine($"[read-beats] marked {marked} of {slice.Count} beat(s) read by {readBy}.");
         return 0;
     }
 }

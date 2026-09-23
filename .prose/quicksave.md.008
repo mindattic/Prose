@@ -1,0 +1,94 @@
+# Quicksave — writing BCODA5: line-editing the prose, chapter by chapter
+_Printed: 2026-09-19_
+
+## Current task
+
+**WRITE BCODA5. Prose only.** The author's last instruction was explicit and emphatic: *"I honestly
+do not care about any of this. WRITE BCODA5."* Stop all metadata/catalogue work. Continue the
+chapter-by-chapter hand line-edit of the manuscript, **resuming at Chapter 2** and working forward.
+
+The defect being fixed is measured and reader-visible: **house-move repetition**. Judge each
+instance — cut filler, KEEP the ones that are real images. Do not bulk-replace.
+
+## Decisions locked this session
+
+- **BCODA5 is the working book.** `bushido-coda-bcoda5-01a0b68f` /
+  `01a0b68f-981a-7ac4-867d-ea87eeda21be`. 46 units / 521 beats / 1,059,397 chars. Verified
+  identical to BCODA4 at clone. Pre-work archive `ArchivedBooks.Id = 8d62ede7-2d95-4095-8f11-cca877a2af0d`.
+- **The tenet ladder is FINAL and verified 7/7 distinct, last broken = HONOUR:**
+  1. 礼 Rei Ch6 · 2. 義 Gi Ch14 · 3. **勇 Yu Ch16** (courage — *"He'd had the chance and let it
+  pass"*) · 4. 仁 Jin Ch19 · 5. **誠 Makoto Ch20 SK:975** (Moss — coercion built to look like
+  candour) · 6. 忠義 Chugi Ch20 SK:1775 · 7. **名誉 Meiyo Ch43 — LAST.** Do not re-litigate.
+- **Do NOT bulk-fix prose.** Hand-edit only, `--edit-beat --id <guid> --file <path>`.
+- The metadata/entity-catalogue programme is **paused by author instruction**, not finished.
+
+## State / where we are
+
+**Prose edits pushed and verified (12 total):**
+- Ch1, 7 edits: removed `the way it always rested`, `the way they always were`, `the way it always
+  was down here`, `the way it was supposed to go`; `the way it read all chrome` → `as it read`;
+  `the way it went through anything` → `as it went through`; and rewrote
+  *"At the door she paused… the way she did when she'd already said the real thing with her hands"*
+  → *"At the door she paused, not quite looking at him. Whatever she had meant, she had already
+  said it with her hands."*
+- Book-wide, 5 beats / 6 edits on the `the way X always Y` filler (Ch3, Ch6, Ch11 ×2, Ch24, Ch25).
+- **Verified like-for-like: `the way X always Y` went 20 → 14.** Do NOT compare against the "313"
+  figure — that was measured on the exported `BCODA4 V7.txt`, not the raw beat dump. Not comparable.
+
+**KEEP list (already judged, do not cut):** *"the way a held breath stops"*, *"the way he felt
+weather"*, *"the way a man leaves a meeting that's over"* (this is the scorekeeper plant), *"the way
+you notice a refrigerator only when it stops"*, *"the way a man eases when the stranger across from
+him turns out to speak his language"*, *"the price arrived later, the way it always did — after the
+win had been counted"*.
+
+**Also done earlier this session (all verified by read-back):**
+- 50 dangling entity tags stripped across 38 beats (19 tagged the *numeral* "five" as a person).
+- **31 mentions repointed to Dr. Nadia Park** (`0260b3a7-2d4f-8e1c-9b50-a637c8de2f10`) — the whole
+  arc had been attributed to Nadia Migizi, who is not in this book. 5 "Park" tags (Leavitt Carousel
+  Park, a place) unwrapped.
+- 16-row authored plant/payoff ledger imported (§14a/§14b in the outline).
+- 4 Nadia renames + 19 duplicate-first-name renames executed.
+- New entity created: **Praxis Operator Five** `01a0b7d0582a7b52a9955c4666d3ac2a`.
+- New CLI shipped: `prose --beat-index` (commit `9895359f7`).
+
+## Open questions / pending
+
+- Nothing blocking the prose work. Author has not asked for a Hub redeploy and none is needed.
+- Paused (author said stop): ~92 remaining duplicate-first-name renames, 17 handle/codename
+  collisions, 4 mis-typed rows (Sable Industries + Echo Chamber are orgs filed as characters;
+  Vikram Nakamura (Ascended) + Cassandra Webb (Posthumous) are state-variants needing merge),
+  and quote-type entities named after their speakers polluting name resolution.
+
+## Next concrete steps
+
+1. Re-dump current prose: `prose --universe GLMZ --read-beats --slug bushido-coda-bcoda5-01a0b68f`
+   (ALWAYS `< /dev/null`) to a scratchpad file. **Always build edits from the CURRENT dump** — a
+   batch built from a stale dump silently reverted one Ch1 edit earlier this session.
+2. Extract Ch2's move sentences (`the way <pron>`, `the kind of X that`, `didn't answer`,
+   `not a question`), judge each, hand-rewrite the filler.
+3. Stage one file per beat, push with `--edit-beat --id <guid> --file <path>`, verify `ok (N chars)`.
+4. Re-measure and continue to Ch3, Ch4, … through Ch46.
+
+## Anchors
+
+- **Book:** slug `bushido-coda-bcoda5-01a0b68f`, id `01a0b68f-981a-7ac4-867d-ea87eeda21be`, code BCODA5
+- **Scratchpad:** `C:\Users\ryand\AppData\Local\Temp\claude\D--Projects-MindAttic-Prose\8a88cdf0-f4ef-487b-94e8-6acdd4d4b230\scratchpad\`
+  — `v9.txt` (latest beat dump), `bcoda5-index.json` / `.tsv` (per-beat metadata incl. SortKey),
+  `bcoda5-scenes.json` (254 derived scenes), `always.txt`, `ch1-edit.txt`
+- **Export folder:** `D:\Projects\MindAttic\ePub\MindAttic\GLMZ\BCODA4\` (BCODA4 V7.docx = the
+  verified reference manuscript)
+- **Commands:**
+  - `cd "D:/Projects/MindAttic/Prose" && ./prose.cmd --universe GLMZ --read-beats --slug bushido-coda-bcoda5-01a0b68f < /dev/null > <file>`
+  - `./prose.cmd --universe GLMZ --edit-beat --id <guid> --file <path> < /dev/null`
+  - `./prose.cmd --universe GLMZ --beat-index --slug bushido-coda-bcoda5-01a0b68f --tsv < /dev/null`
+
+## HARD gotchas learned this session (do not rediscover)
+
+- **`prose.cmd` + a shell heredoc in the same Bash call DEADLOCK** — the CLI waits on a stdin the
+  heredoc took. Always `< /dev/null`; never put `python - <<'PY'` in the same invocation.
+- **Build every prose edit from a fresh dump.** A batch built from a stale dump overwrites newer edits.
+- **MCP has its own ambient universe** and `--universe` does not set it. Call `current_universe`
+  first; it was stuck on `gutenberg`, making every entity lookup return empty.
+- **`create_character` as an update resets `status`→alive and `species`→human when omitted.**
+- **Stale inline entity tags are self-perpetuating** — `--tag-entities` returns `Tagged=0` on them;
+  only strip-wrapper + `--edit-beat` clears them.

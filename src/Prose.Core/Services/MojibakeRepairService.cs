@@ -302,7 +302,7 @@ public class MojibakeRepairService
     /// three-byte) immediately followed by characters whose cp1252 byte is a UTF-8
     /// continuation byte (0x80–0xBF). The old check looked only for "â€" — the em-dash /
     /// smart-quote family — and so never saw a double-encoded "Ã‚Â§" (§) or "Ã‚Â¦" (¦), which is
-    /// exactly why the outline repair stalled one layer short.
+    /// exactly why an earlier repair stalled one layer short.
     /// </summary>
     public static bool ContainsMojibake(string s) => IndexOfMojibake(s) >= 0;
 
@@ -457,53 +457,6 @@ public class MojibakeRepairService
         }
         consumed = 0;
         return null;
-    }
-
-    // ── outline / bible detection ─────────────────────────────────────────────
-
-    public sealed record OutlineHit(string Source, string Excerpt);
-
-    public sealed class OutlineDetectResult
-    {
-        public int SectionsAffected { get; set; }
-        public List<OutlineHit> Hits { get; } = new();
-    }
-
-    /// <summary>
-    /// Scan a node's hand-authored bible — every <c>NodeOutlineSections</c> row and the legacy
-    /// <c>Nodes.NodeOutline</c> blob — for mojibake, without modifying anything.
-    /// <see cref="DetectNodeAsync"/> only looks at beats; the BCODA bible sat corrupted for weeks
-    /// because nothing looked here.
-    /// </summary>
-    public async Task<OutlineDetectResult> DetectOutlineAsync(Guid nodeId, CancellationToken ct = default)
-    {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var result = new OutlineDetectResult();
-
-        var sections = await db.NodeOutlineSections.AsNoTracking()
-            .Where(s => s.NodeId == nodeId)
-            .Select(s => new { s.SectionType, s.Content })
-            .ToListAsync(ct);
-        foreach (var s in sections)
-        {
-            var excerpt = FirstMojibakeExcerpt(s.Content);
-            if (excerpt == null) continue;
-            result.SectionsAffected++;
-            result.Hits.Add(new OutlineHit($"NodeOutlineSections.{s.SectionType}", excerpt));
-        }
-
-        var blob = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.Id == nodeId)
-            .Select(n => n.NodeOutline)
-            .FirstOrDefaultAsync(ct);
-        var blobExcerpt = FirstMojibakeExcerpt(blob);
-        if (blobExcerpt != null)
-        {
-            result.SectionsAffected++;
-            result.Hits.Add(new OutlineHit("Nodes.NodeOutline", blobExcerpt));
-        }
-
-        return result;
     }
 
     /// <summary>Returns the CP1252 byte for <paramref name="ch"/>, or <c>null</c> if the

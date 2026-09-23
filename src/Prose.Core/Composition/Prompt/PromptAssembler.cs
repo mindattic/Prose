@@ -42,9 +42,9 @@ public static class PromptAssembler
     public const int WindowCeiling = 8_000;
     /// <summary>RFC 0012 §3.2 tier D — voice/style exemplars.</summary>
     public const int VoiceCeiling = 3_000;
-    /// <summary>The outline slice and open obligations are short by construction; this is a
-    /// backstop against a pathological book, not a working limit.</summary>
-    public const int SpineCeiling = 2_000;
+    /// <summary>Open obligations are short by construction; this is a backstop against a
+    /// pathological book, not a working limit.</summary>
+    public const int ObligationsCeiling = 2_000;
 
     /// <summary>Keep the tail — for prior prose, the lines nearest this beat matter most.</summary>
     private static string ClampTail(string s, int max) =>
@@ -62,8 +62,7 @@ public static class PromptAssembler
         string location,
         string beatGoal,
         BeatBrief? brief = null,
-        string voiceAnchorBlock = "",
-        string outlineSpineBlock = "")
+        string voiceAnchorBlock = "")
     {
         var lengths = new Dictionary<string, int>();
 
@@ -92,7 +91,7 @@ public static class PromptAssembler
             if (facts.OpenObligations.Count == 0) return "";
             var lines = new List<string> { "OPEN OBLIGATIONS — promises this story already made and hasn't paid off:" };
             foreach (var o in facts.OpenObligations) lines.Add($"  [{o.Kind}] {o.Description}");
-            return ClampHead(string.Join("\n", lines), SpineCeiling);
+            return ClampHead(string.Join("\n", lines), ObligationsCeiling);
         }
 
         string SceneBlock()
@@ -114,12 +113,10 @@ public static class PromptAssembler
         var obligationsBlock = ObligationsBlock();
         var sceneBlock = SceneBlock();
         var voiceBlock = ClampTail(voiceAnchorBlock ?? "", VoiceCeiling);
-        var spineBlock = ClampHead(outlineSpineBlock ?? "", SpineCeiling);
 
         lengths["brief"] = briefBlock.Length;
         lengths["facts"] = factsBlock.Length;
         lengths["obligations"] = obligationsBlock.Length;
-        lengths["spine"] = spineBlock.Length;
         lengths["scene"] = sceneBlock.Length;
         lengths["voice"] = voiceBlock.Length;
         lengths["window"] = windowBlock.Length;
@@ -129,7 +126,7 @@ public static class PromptAssembler
         // so the model's final reading before it writes is what just happened and what it must do.
         var user = string.Join("\n\n", new[]
             {
-                briefBlock, factsBlock, obligationsBlock, spineBlock, sceneBlock, voiceBlock,
+                briefBlock, factsBlock, obligationsBlock, sceneBlock, voiceBlock,
                 windowBlock, closingLine,
             }
             .Where(b => !string.IsNullOrWhiteSpace(b)));

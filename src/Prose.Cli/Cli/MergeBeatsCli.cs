@@ -41,7 +41,7 @@ public static class MergeBeatsCli
         int Number, string BeatId, int Position, string Status,
         int OriginalChars, int MergedChars, string? Reason,
         IReadOnlyList<string> Failures, IReadOnlyList<string> UnknownNames,
-        string? EventSummaryState, double Cost, int Attempts, DateTime At);
+        double Cost, int Attempts, DateTime At);
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -147,7 +147,7 @@ public static class MergeBeatsCli
                     };
                     try
                     {
-                        var text = await router.WriteAsync(ctx, beat.Id, pos - 1, ordered.Count, allowUnblueprinted: true);
+                        var text = await router.WriteAsync(ctx, beat.Id, pos - 1, ordered.Count);
                         if (!string.IsNullOrWhiteSpace(text)) candidates.Add(new(label, text, false, []));
                     }
                     catch (BeatGateRefusedException refused)
@@ -209,7 +209,7 @@ public static class MergeBeatsCli
             var cost = (ledger?.GetSummary().TotalCost ?? 0) - beatCost;
             var outcome = new BeatOutcome(beat.Number, beat.Id.ToString(), pos, status,
                 original.Length, mergedChars, reason, failures, unknownNames,
-                beat.EventSummaryState, Math.Round(cost, 4), attempts, DateTime.UtcNow);
+                Math.Round(cost, 4), attempts, DateTime.UtcNow);
             await File.AppendAllTextAsync(reportPath, JsonSerializer.Serialize(outcome) + Environment.NewLine);
 
             switch (status)

@@ -8,7 +8,7 @@ public sealed record BookArchiveResult(Guid ArchivedBookId, int LeafNodeCount, i
 
 /// <summary>
 /// Snapshots a book's ENTIRE current live prose, plus the Node's own content fields
-/// (Description, NodeOutline, Summary, Seed, Subtitle), into one <see cref="ArchivedBook"/> row —
+/// (Description, Summary, Seed, Subtitle), into one <see cref="ArchivedBook"/> row —
 /// a pre-edit backup. Extracted from <c>ArchiveBookCli</c> (manual `--archive-book`) so
 /// <see cref="AutoCorrectOrchestratorService"/> can call the exact same, tested logic before it
 /// touches a book, without going through the CLI. Read-only against Beats/Nodes/BeatNodes: never
@@ -18,7 +18,7 @@ public sealed record BookArchiveResult(Guid ArchivedBookId, int LeafNodeCount, i
 /// recover prior content later if something downstream goes wrong.
 ///
 /// Any future feature that bulk-overwrites a Node's content field(s) (e.g. a description
-/// generator, a bible-rewrite tool) should call <see cref="ArchiveAsync"/> with a
+/// generator) should call <see cref="ArchiveAsync"/> with a
 /// reason describing the operation (e.g. "pre-description-regen") before making the change —
 /// the same convention <see cref="AutoCorrectOrchestratorService"/> already follows. This is not
 /// enforced automatically; there is currently no such caller.
@@ -83,7 +83,6 @@ public class BookArchiveService(IDbContextFactory<ProseDbContext> dbFactory)
             BeatCount = beatCount,
             WordCount = wordCount,
             Description = node.Description,
-            NodeOutline = node.NodeOutline,
             Summary = node.Summary,
             Seed = node.Seed,
             Subtitle = node.Subtitle,

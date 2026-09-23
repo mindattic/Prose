@@ -1,0 +1,69 @@
+# Quicksave — BCODA full-order read 2: read + fixes DONE; V72 export in flight; 3 queued tasks
+_Printed: 2026-09-22 (evening)_
+
+## Current task
+Close out BCODA full-order read 2. The read (46/46 units) and all fixes are applied and verified.
+The only thing left in flight is the **V72 export**. After that, work the **Queued** list below —
+nothing in it is started.
+
+## Decisions locked this session
+- **Author rulings (mid-read, own memories):** Kyle meets Sift for the FIRST time on the Broken
+  Glass night (supersedes "three years"). Mrs. Chen is 79 ("in her 70s"). The Ch1 girl is Chen's
+  GRANDDAUGHTER; Chen's own child (the girl's parent) never appears on the page (future novel).
+- **Re-applied 09-05/06 rulings the BCODA5 rebuild had lost:** Kyle 27 · Silence came at SIXTEEN
+  (Ch1 "nineteen" was the outlier) · Chen's own Halsted counter sixty years + Wentworth stall 23 ·
+  2W eleven years · Pixel across the hall THREE years · 47 entity contracts / 69 messages · mesh
+  2215 · Mira tall · bike owned ELEVEN years (never fix an eleven).
+- **"Ghost Period" chapter MOVED after "The Gray Suit"**; Ch17–25 retitled (Park Job 17, Audit 18,
+  Blackwater 19, Meridian Wellness 20, Taste-Off 21, Forger's Ledger 22, Halvorsen and Sons 23,
+  Gray Suit 24, Ghost Period 25). Older notes use the old numbers.
+- **Boost's bike theft is PRESENT-DAY** (the dawn Kyle comes home from Nadia), not "a year ago".
+- **Observation Rule repairs** (Ch34 #20414 → client-side passage "He did not know. That was the
+  whole of what it had arranged for."; Coda: cut "name it still had for itself", "TEN OTHERS DID",
+  "I WRITE THEM DOWN"). "THERE WERE ELEVEN OF YOU" left untouched.
+- **Camphor closed:** Vey's theory, Ch13 #20159.
+- The sequential-read record stays **Stale** on purpose (nobody has read the fixed text in order).
+
+## State / where we are
+- **Done & verified:** ~377 hand splices across 207 beats (3 dockets + 2 direct edits), 0 verify
+  misses; residue sweep clean (six-shot, tablets/phones/slates, hand-reattachment, retired Silence
+  tech, Observation-Rule phrases); 7 kanji beats intact; `--validate-chapters` 4 findings / 0
+  blockers (the four `Able:`/`Coda:` title warnings, unchanged).
+- **Archives:** pre-read `97cc0b7e-46cd-4809-8386-a77e7293212f` → post-fix
+  `2d265c2d-8d34-4183-abfa-ff8f03f50e44`. 521 beats, 194,116 → **194,217** words.
+- **In flight:** `prose --export-node --slug bushido-coda --universe glmz --force-export` running in
+  the background (task b8bpzjf3o; output file empty when saved). Expect `…\ePub\MindAttic\GLMZ\BCODA\BCODA V72.*`
+  (Node.Version 71 → 72). `--force-export` because the publish-readiness gate's four failures are
+  "could not look" states that predate this pass.
+- **Built this session:** `/queue` — `tools\prose-agent.ps1 queue -Item|-List|-Drain` (shared
+  runner `mindattic-agent-standard\prose-agent.ps1`), state `.prose\agent-queue.json`,
+  `.prose\commands\queue.md` + pointer `.claude\commands\queue.md`, quicksave step + **Queued**
+  section, `docs\agent\PROMPT_COMMANDS.md` row. Tested (add/list/save-drain/load/drain; archive
+  never deletes). **Uncommitted** — as are the pre-existing 09-21 edits to quicksave.md/quickload.md/
+  quickload-on-do.ps1 (not mine; commit only my hunks).
+- Last action: queued items [1]–[3], then /quicksave.
+
+## Open questions / pending
+- Did the V72 export finish cleanly? If it hung (the full-book `--read-beats` hung 20 min once
+  tonight via `dotnet run --project` fallback), kill it and re-run; check `--set-node-version`
+  read-back says 72.
+- Commit of this session's own changes (queue feature, memory is outside the repo) — not asked yet.
+
+## Next concrete steps
+1. Check the export: `Get-Content <scratchpad>\..\tasks\b8bpzjf3o.output`; confirm `BCODA V72` files
+   in `D:\Projects\MindAttic\ePub\MindAttic\GLMZ\BCODA\` and
+   `cmd /c ".\prose.cmd --set-node-version --slug bushido-coda --version 72 --universe glmz"` read-back.
+2. Report the read to the author (and offer the Artifact of the ledger/defects).
+3. Then take Queued [1] first (it removes the Python scratchpad tooling this pass relied on).
+
+## Queued (bookmarked with /queue — pending, not the current task)
+- [1] Build prose --splice-beats CLI + MCP splice_beats to replace scratchpad splice.py (Foundations doctrine; never Python). Hand-written [{beat,old,new,count?}] docket vs tag-stripped text; read only affected beats; abort whole docket on any count mismatch; dry-run default; AuthorEdit per beat; read-back verify + miss report; unit tests; redeploy Hub (MVID check); delete splice.py/mkunits.py/sweep.py; move read-2 reader questions into the obligation ledger. Full spec: audit-outlines-2026-09-22\full-order-read-2\RESUME.md
+- [2] Chapter move tool: add CLI parity for MCP move_node_after_sibling (prose --move-chapter --node <x> --after <sibling>) that also renumbers every affected 'Chapter N — Title' in one step (dry-run default, --apply), leaves Interlude/Able/Coda titles alone, and verifies order by read-back + --validate-chapters; done when the Ghost Period move (9 manual update_book retitles, 2026-09-22) would have been one command.
+- [3] Research (author question): Does Able have enough impact on BCODA to earn his place? There is already a lot going on — what does Able provide, and is he necessary and quintessential to the plot? Done when: every Able beat is listed (Able: Compliance, Ch9 Eleven Seconds, Able: The Liturgy, Ch24 Gray Suit, Ch32 heist landing, Able: The Quiet Room, Coda question) with what each gives the reader that nothing else does, a cut-test (what breaks if he is removed), and a keep / trim / cut recommendation with the minimal splices — no prose changed until the author decides.
+
+## Anchors
+- Files: `audit-outlines-2026-09-22\full-order-read-2\{DEFECTS.md (D01–D176, PHASE 2, PHASE 3 APPLIED), LEDGER-QUESTIONS.md, LEDGER-FACTS.md, RESUME.md, read\unit-NN-*.md}`;
+  scratchpad `C:\Users\ryand\AppData\Local\Temp\claude\D--Projects-MindAttic-Prose\cf0b1c59-418b-4236-846c-8672455e8903\scratchpad\{splice.py, docket1-4.py, apply1-3.log, sweep.py}`.
+- Names / ids: book `bushido-coda` · code BCODA · `01a0b68f-981a-7ac4-867d-ea87eeda21be` · universe glmz · beats #19900–#20420 · Ghost Period node `01a0b68f-9840-7666-98d3-149f1276c7d4` · Gray Suit node `01a0b68f-9848-7d34-b2f8-fba7d8cf91f7`.
+- Memories: `project_bcoda_full_order_read_2_2026_09_22`, `project_sift_first_meeting_broken_glass_2026_09_22`, `project_mrs_chen_age_granddaughter_2026_09_22`, `feedback_queue_bookmarks_into_quicksave`, `feedback_foundations_doctrine` (violated: Python splice script).
+- Commands: `cmd /c ".\prose.cmd --validate-chapters --slug bushido-coda --universe glmz"` · `--archive-book … --reason "…"` · `--export-node --slug bushido-coda --universe glmz --force-export` · targeted read `--read-beats --slug bushido-coda --universe glmz --numbers <csv> --format json` (2.4 s vs a 20-min hang for the full book) · MCP writes need `switch_universe glmz` first.

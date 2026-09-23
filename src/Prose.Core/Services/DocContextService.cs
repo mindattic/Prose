@@ -17,7 +17,8 @@ namespace Prose.Core.Services;
 ///
 ///   0. PINNED  — caller-supplied override (score 999), e.g. the POV register.
 ///   1. ALWAYS  — the small universal core (every context).
-///   2. NODE  — docs whose Scope matches the active node CODE (the one bible + one register).
+///   2. NODE  — docs whose Scope matches the active node CODE (the book's register and book docs;
+///      never the book outline — that was removed 2026-09-22, see <see cref="IsRetiredOutlineMirror"/>).
 ///   2.5 SERIES — cross-book arc docs (`docs/series/*.md`) matching this book's series/universe.
 ///   3. TOPIC (keyword)    — topic docs whose Triggers appear in the scene/goal text.
 ///   4. TOPIC (embedding)  — topic docs semantically near the text (markdown embedding scope).
@@ -34,6 +35,17 @@ public sealed class DocContextService(
     EntityDocService? entityDocs = null,
     EntityDisambiguationService? disambiguation = null)
 {
+    /// <summary>
+    /// A MarkdownFiles row that mirrors a book outline (<c>docs/nodes/&lt;CODE&gt;.md</c>, category
+    /// <c>node-bible</c>). The outline was removed (author ruling 2026-09-22: the book is the beats,
+    /// drawing on entities), but rows synced before then still sit in the table, so they are
+    /// filtered here rather than trusted to be gone.
+    /// </summary>
+    internal static bool IsRetiredOutlineMirror(string? relativePath, string? category) =>
+        string.Equals(category, "node-bible", StringComparison.OrdinalIgnoreCase)
+        || (relativePath ?? "").Replace('\\', '/').StartsWith("docs/nodes/", StringComparison.OrdinalIgnoreCase)
+           && (relativePath ?? "").EndsWith(".md", StringComparison.OrdinalIgnoreCase);
+
     /// <summary>ProseEmbeddings ScopeKind for a tracked markdown file (MarkdownFile.Id keyed).</summary>
     public const string ScopeMarkdown = "markdown";
 
@@ -70,10 +82,12 @@ public sealed class DocContextService(
         stack.BeginAction(contextId, code);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var rows = await db.MarkdownFiles.AsNoTracking()
+        var rows = (await db.MarkdownFiles.AsNoTracking()
             .Where(m => m.Category != "memory")
             .Select(m => new { m.Id, m.RelativePath, m.Tier, m.Scope, m.Triggers, m.RelatedIds, m.Category, m.EntityId })
-            .ToListAsync(ct);
+            .ToListAsync(ct))
+            .Where(m => !IsRetiredOutlineMirror(m.RelativePath, m.Category))
+            .ToList();
 
         // Second, small, in-memory-joined query for the distinct entities behind this batch's
         // entity docs — avoids a risky EF GroupJoin translation, and both tables already share
@@ -110,7 +124,7 @@ public sealed class DocContextService(
             foreach (var c in candidates.Where(c => c.Tier == "always"))
                 stack.Push(contextId, MakeEntry(c, "always", 100));
 
-        // 2 — node (scope match): the book's one bible + one register + book docs
+        // 2 — node (scope match): the book's register + book docs
         if (includeNode)
             foreach (var c in candidates.Where(c => c.Tier == "node" && ScopeMatches(c.Scope, code)))
                 stack.Push(contextId, MakeEntry(c, string.IsNullOrEmpty(code) ? "node:*" : $"node:{code}", 90));

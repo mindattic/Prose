@@ -31,7 +31,6 @@ public sealed record Mismatch(
 /// <param name="EstablishedFacts">What the record already says about the people in this beat.
 /// Fed to the contradiction checker as ground truth, and shown to the assistant so it can point
 /// at a specific fact instead of saying "this seems load-bearing".</param>
-/// <param name="Locks">The author's own immovable statements for this book, verbatim.</param>
 /// <param name="DependentBeatCount">How many beats share an entity with this one — the reach of
 /// any change made here. NULL when the reach could not be determined, which is a different answer
 /// from zero and is reported as one.</param>
@@ -39,7 +38,6 @@ public sealed record CarriedWeight(
     IReadOnlyList<NarrativeObligation> ObligationsOpenedHere,
     IReadOnlyList<NarrativeObligation> ObligationsPaidHere,
     IReadOnlyList<OnScreenFact> EstablishedFacts,
-    IReadOnlyList<string> Locks,
     int? DependentBeatCount,
     IReadOnlyList<int> NearestDependents);
 
@@ -96,12 +94,6 @@ public sealed class RamificationService(
                         && (o.OriginBeatId == beatId || o.ClosingBeatId == beatId))
             .ToListAsync(ct);
 
-        var locks = await db.NodeOutlineSections.AsNoTracking()
-            .Where(n => n.NodeId == bookNodeId
-                        && (n.SectionType == "NarrativeLocks" || n.SectionType == "AuthorNotes"))
-            .Select(n => n.Content)
-            .ToListAsync(ct);
-
         var facts = await EstablishedFactsAsync(db, beatId, ct);
 
         // The blast radius is three cheap queries and is the honest answer to "how far does this
@@ -130,7 +122,6 @@ public sealed class RamificationService(
             citing.Where(o => o.OriginBeatId == beatId).ToList(),
             citing.Where(o => o.ClosingBeatId == beatId).ToList(),
             facts,
-            locks.Where(l => !string.IsNullOrWhiteSpace(l)).ToList(),
             reach,
             nearest);
     }
@@ -372,13 +363,6 @@ public sealed class RamificationService(
                 "The beat's stated intent was written against different prose.",
                 $"Intent: \"{Shorten(beat.Description, 140)}\"",
                 ProseFork));
-
-        if (!string.IsNullOrWhiteSpace(beat.EventSummary) && beat.EventSummaryState is "stale")
-            found.Add(new Mismatch(
-                "summary",
-                "The beat's recorded event summary was written against different prose.",
-                $"Recorded: \"{Shorten(beat.EventSummary, 140)}\"",
-                ProseFork));
     }
 
     private static async Task CheckOtherDiscussionsAsync(
@@ -517,12 +501,6 @@ public sealed class RamificationService(
             sb.AppendLine("  ALREADY ESTABLISHED ABOUT WHO IS HERE: nothing is on record. That means "
                           + "the ledger is empty for these entities, NOT that the passage is free of "
                           + "commitments.");
-        }
-
-        if (w.Locks.Count > 0)
-        {
-            sb.AppendLine("  THE AUTHOR'S OWN IMMOVABLE STATEMENTS FOR THIS BOOK:");
-            foreach (var l in w.Locks) sb.AppendLine("    " + l.Replace("\n", "\n    "));
         }
 
         sb.AppendLine(w.DependentBeatCount is { } reach

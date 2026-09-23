@@ -12,6 +12,7 @@ namespace Prose.Core.Data.Entities;
 ///   NarrativeLocks  — immovable story facts the engine must never contradict
 ///   BeatSpine       — 14-beat spine outline (hand-authored portion; blueprint is Track B)
 /// </summary>
+// PENDING DROP (author ruling 2026-09-22): no code reads/writes this; removed by the drop migration.
 public class NodeOutlineSection
 {
     public Guid   Id          { get; set; } = Guid.NewGuid();

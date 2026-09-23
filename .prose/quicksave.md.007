@@ -1,0 +1,131 @@
+# Quicksave — Prose Writer: building the voice-first discussion loop
+_Printed: 2026-09-20_
+
+## Current task
+
+**Building "a manuscript you can talk to" in Prose.Writer.** Approved plan lives at
+`C:\Users\ryand\.claude\plans\atomic-waddling-stearns.md` — read it first, it is the spine of
+this work and is current.
+
+**V0 (read-aloud) is DONE and built. The next step is V1 — the ear** (microphone capture +
+transcription). See *Next concrete steps*.
+
+> **NOTE ON A STALE QUICKSAVE:** an earlier `do` in this session restored a transcript about
+> *BCODA5 prose line-editing* (scratchpad `8a88cdf0…`). That is a **different, older session** and
+> is NOT this work. This session is scratchpad `2e47d4d0…`. Do not switch to BCODA5 line-editing
+> unless the author asks.
+
+## Decisions locked this session
+
+- **The conversation IS the request** (author ruling). No separate ticket-raising step. A turn
+  carries an intent: `clarify` (answer, nothing changes) or `edit` (may produce a proposal).
+- **Push back is a first-class outcome.** An edit request may return a reasoned refusal
+  ("this plants the payoff in Ch30") instead of a proposal. Refusing is a position, not a veto.
+- **Confirmation before acting on a request.** Restate what was heard + the steps, then wait. With
+  voice this is the *only* error correction — a misheard word otherwise edits the wrong sentence.
+  **Questions must never confirm** (confirmation fatigue).
+- **Intent is inferred, not chosen.** The Clarify/Edit toggle becomes an override; default `auto`.
+- **Seamless means free and fast.** Anything metered gets rationed. Local TTS (Piper) preferred;
+  ElevenLabs only for the deliberate "book voice". STT via **Groq `whisper-large-v3-turbo`**
+  (vault key exists, lowest latency) — not whisper.cpp.
+- **Transport is `IToolCallingLlm`, not `ILlmService`.** That one swap gives BYOK, key-pool
+  failover, Claude→OpenAI fallback, multi-turn, and tool calls.
+- **Claude has NO fallback below a BYO key** (2026-08-25 author ruling). Do not "fix" this. The UI
+  shows a no-key state and links to Settings; nothing is spent.
+- **Anchors resolve against reader-visible text**, not stored markup — entity-tag re-derivation
+  churns stored text ~55 chars per wrapper without moving what a reader sees.
+- **All UI lives in Prose.WriterUi compiled into Hub.exe.** Writer.exe is a WebView2 frame. No new
+  apps (Prose.Codex / Prose.Atlas were considered and dropped).
+- Blocks are typed + `[JsonDerivedType]`; `TargetKind`/block `type` are **strings**, so a new
+  surface costs no migration.
+
+## State / where we are
+
+**Phases 0–5 + V0 complete. Builds clean. Suite: 2587 passing / 5 pre-existing failures**
+(world-state snapshot tests — verified unrelated against a clean worktree at HEAD; do not chase).
+
+- **Phase 0** Shell decomposed: `MenuBar`, `BeatNavigator`, `ProseEditor`, `EntityLinkModal`.
+  `EditorMode.Display/Markdown` replaced `Mode.Read/Raw`. Fixed duplicate JS listeners on beat open.
+- **Phase 1** Discussion layer: `DiscussionThread`/`DiscussionTurn` (block `ContentJson`),
+  `TextAnchoring` (10 tests), `DiscussionService`, `BeatDiscussTarget`, `DiscussionContextBuilder`
+  (computed echo evidence: beat count AND distinct-place count), `DiscussPanel`.
+- **Phase 2** Transport → `IToolCallingLlm`; added `TokenUsage` to `ToolTurnResult` + `Model` to
+  the interface (both clients were discarding the `usage` the API returns, so cost would have read
+  zero); `find_in_book` tool; `Intent` column; **SettingsPanel — the first settings screen in any
+  Prose app**, keys write-only/masked.
+- **Phase 3** D1 data-loss guard in `OpenBeatAsync`; **un-stubbed 3 version-history methods**
+  (their comment contradicted `ProseDbContext.SystemVersionedTables`) which silently fixes
+  `VoiceHarvestService` mining zero edits on every run; autosave every 20s (`deferAnalysis: true`).
+- **Phases 4–5** Accessibility: zoom re-enabled (1.4.4 was failing outright), `/spine` now loads
+  `writer.css`, 7 contrast fixes + new `--color-border-input`, skip link, `.visually-hidden`,
+  16 live regions, 11 state attributes, 30 `aria-label`s, modal focus trap/restore/Escape,
+  `role="menu"` removed (promised an unimplemented arrow-key model).
+  **`TokenContrastTests`** parses the real `tokens.css` and was verified to fail on a reverted token.
+- **V0** `ReadAloudService` (local-first + honest `Probe()`), `proseSpeech` JS (`data:` URL,
+  barge-in), ▶ Read / ■ Stop in the toolbar, Settings shows whether replays are free.
+
+**Deployed Hub at last check: PID 40620, 20:21.** V0 is NOT yet deployed — needs a redeploy.
+
+## Open questions / pending
+
+- **Nothing is committed.** 29 modified + ~24 new files. The author's own 8 pre-existing modified
+  files (`ObligationCli.cs`, `BeatGeneratorService.cs`, `ProseWriterRouter.cs`, `v4/...Program.cs`,
+  `docs/rfc/0013`, 3 `.prose/` files) **must not be included** — commit own hunks only, to master.
+- **Piper is not installed**, so read-aloud will use ElevenLabs and cost characters. Needs three
+  things, author's call (do not download a third-party binary unprompted):
+  1. `piper.exe` (rhasspy/piper Windows release — a folder with DLLs)
+  2. the **`.onnx.json` sidecars** — the two voices in `tools\piper` are missing theirs, and
+     discovery requires them (`FirstOrDefault(m => File.Exists(m + ".json"))`)
+  3. placed in **`%LOCALAPPDATA%\Prose\piper`** — the deployed Hub runs from `C:\Apps\MindAttic\Prose`
+     and never sees the repo's `tools\piper`
+- **BYO pool is empty** — Discuss cannot run until a Claude key is added in Settings (⚙).
+- Author has not confirmed whether Win+H (OS dictation) into the Discuss box is good enough; if it
+  is, V1 narrows to recording *that* a turn was spoken, keeping audio, and invented nouns.
+- V4 streaming (SSE on `AnthropicToolClient`) is **unresearched** — the research agent hit a
+  session rate limit. Nothing in the repo parses SSE.
+
+## Next concrete steps
+
+1. **Ask the author to `/redeploy Hub`** and test V0: select a sentence → ▶ Read.
+2. **V1 — the ear:**
+   a. Handle `CoreWebView2.PermissionRequested` in `v3/Prose.Writer/MainWindow.xaml.cs` — it is
+      **not handled at all today**, so `getUserMedia` is denied. This needs a **Writer.exe**
+      redeploy, not just Hub.
+   b. `MediaRecorder` capture in `writer.js` → base64 over the circuit.
+   c. `SpeechService` in Core → Groq `whisper-large-v3-turbo`, **primed with every entity name and
+      alias in the universe** (`EntityLookupService`) so "Togishi"/"Seito"/"Cacophony" resolve.
+   d. Store the turn with `InputMode = voice` + audio path.
+3. **V2** — intent inference returned in the same call; `confirm` block type; spoken back.
+4. Then Phase 6 (context menu — the Writer has **none at all**) and Phase 7 (Find/Ctrl+F).
+
+## Anchors
+
+- **Plan:** `C:\Users\ryand\.claude\plans\atomic-waddling-stearns.md`
+- **New Core:** `v3/Prose.Core/Services/Discussion/` — `DiscussionService`, `DiscussionChatService`,
+  `DiscussionContextBuilder`, `TextAnchoring`, `IDiscussTarget`, `BeatDiscussTarget`,
+  `DiscussionBlock`, `ReadAloudService`
+- **New entities:** `v3/Prose.Core/Data/Entities/DiscussionThread.cs` (thread + turn + constants)
+- **Migration:** `v3/Prose.Core/Migrations/20260919234512_AddDiscussions.cs` — **applied already**
+- **New UI:** `v3/Prose.WriterUi/Components/` — `DiscussPanel`, `DiscussionBlocks`, `SettingsPanel`,
+  `MenuBar`, `BeatNavigator`, `ProseEditor`, `EntityLinkModal`, `EditorMode.cs`
+- **New UI services:** `DiscussionUiService`, `SettingsUiService`, `ReadAloudUiService`
+- **Tests:** `v3/Prose.UnitTests/TextAnchoringTests.cs`, `TokenContrastTests.cs`
+- **JS:** `v3/Prose.WriterUi/wwwroot/js/writer.js` — `proseEditor`, `proseModal`, `proseSpeech`
+- **Commands:**
+  - `cd "D:/Projects/MindAttic/Prose/v3" && dotnet build Prose.Hub/Prose.Hub.csproj -c Debug --nologo -v q`
+  - `dotnet test Prose.UnitTests/Prose.UnitTests.csproj --nologo -v q` (expect 2587 / 5 failed)
+  - `curl -s http://127.0.0.1:5900/api/health`
+  - `./prose.cmd --set-byo-key --provider claude --list --universe glmz < /dev/null`
+
+## HARD gotchas (do not rediscover)
+
+- **The author redeploys the Hub, not me.** A local build changes nothing — ask, wait, verify the
+  new build serves (compare `C:\Apps\MindAttic\Prose\Hub.exe` mtime to the running PID's start).
+- **`prose.cmd` + a heredoc in one Bash call DEADLOCKS.** Always `< /dev/null`.
+- **Every book-touching method must `SetFlowUniverse` first** — an unscoped beat save strips every
+  entity tag from the prose.
+- **All JS interop through `JsAsync<T>`/`JsVoidAsync`** — an unhandled `JSException` tears down the
+  Blazor circuit and the window silently freezes.
+- **`min-height` does not apply to non-replaced inline boxes** — `.mini` on an `<a>` was 16px.
+- **Do not add anything to `SystemVersionedTables`** — log tables are excluded by policy.
+- The 5 failing tests are pre-existing (`WorldState*`, `Snapshot*`). Verified at HEAD. Leave them.

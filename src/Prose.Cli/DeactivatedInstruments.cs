@@ -30,7 +30,7 @@ public static class DeactivatedInstruments
         // Reader-proxy / craft panels — COMPREHENSION 237, GRIPE 3, ENGAGEMENT 4, CRAFT 12,
         // HOOK 10, THEME 4, SWAIN 4, FIVEACT 6, SACRED-FLAW 6, EMOTIONAL-DEPTH 7, DRAMATIC-Q 8,
         // CHECKLIST 3,052, READABILITY 4,840 filed. 0 applied between them.
-        "--reader-qa", "--review-node", "--review-entity", "--review-report", "--run-corpus",
+        "--reader-qa", "--review-node", "--review-entity", "--review-report",
         "--dual-read", "--duel", "--character-depth-audit", "--narrative-health",
 
         // Beat lenses — CAUSALITY 22, AFFECT-BEHAVIOR 9, INTERPERSONAL 11 filed, 0 applied.
@@ -38,7 +38,7 @@ public static class DeactivatedInstruments
 
         // Continuity / contradiction finders — CONTINUITY-VIOLATION 528, CANON-CONTRADICTION 81,
         // ENTITY-CONFLICT 328, SEMANTIC-DRIFT 1,055, Entity 656 filed, 0 applied.
-        "--continuity", "--reconcile-book-entities", "--cross-book-consistency-audit",
+        "--continuity", "--cross-book-consistency-audit",
         "--timeline-check", "--description-drift",
 
         // Obligation ledger — RFC 0013 §8 measured 96% false positives on prose engineered to owe
@@ -55,7 +55,7 @@ public static class DeactivatedInstruments
         "--sanity-scan", "--check-duplicate-beats", "--duplicate-entity-scan",
         "--duplicate-entity-scan-broad", "--location-scan", "--validate-nouns",
         "--unresolved-nouns", "--scan-unnamed-referents", "--prose-health",
-        "--liberty-report", "--verify-beat", "--verify-book", "--gear-check",
+        "--liberty-report", "--gear-check",
 
         // The full battery — RFC 0010 measured $27–135 a run for zero applied findings.
         "--auto-run", "--auto-correct-nightly",

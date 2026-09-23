@@ -64,7 +64,7 @@ public class TunedReadServiceTests
     private TunedReadService Build(ILlmService llm)
     {
         var exclusions = new PredicateExclusionService(dbFactory, NullLogger<PredicateExclusionService>.Instance);
-        var synopsis = new SynopsisExportService(dbFactory, llm, null!, NullLogger<SynopsisExportService>.Instance);
+        var synopsis = new SynopsisExportService(dbFactory, llm, NullLogger<SynopsisExportService>.Instance);
         var workbench = new NodeWorkbenchService(
             dbFactory, null!, paths, null!, NullLogger<NodeWorkbenchService>.Instance,
             null!, null!, null!, null!, null!);
