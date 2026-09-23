@@ -438,13 +438,28 @@ app.MapGet("/api/factory/orders", async (string? status, string? kind, Prose.Cor
     Results.Ok((await orders.ListAsync(status ?? "open", kind))
         .Select(o => new { o.Id, o.ParentId, o.Kind, o.Status, o.Blocking, o.Title, o.PathsJson })));
 app.MapPost("/api/factory/session/start", async (FactorySessionStartBody body,
-    Prose.Core.Services.Factory.FactoryService factory, Prose.Core.Services.Factory.FactorySessionService sessions) =>
+    Prose.Core.Services.Factory.FactoryService factory, Prose.Core.Services.Factory.FactorySessionService sessions,
+    Prose.Core.Services.Factory.FactoryUsageCheck usage) =>
 {
     var next = await factory.NextAsync();
     var started = await sessions.StartAsync(body.ClaudeSessionId, body.GitHead, System.Text.Json.JsonSerializer.Serialize(next));
     var books = new List<Prose.Core.Services.Factory.BookStatus>();
     foreach (var b in await factory.BooksOnTheLineAsync()) books.Add(await factory.StatusAsync(b));
-    return Results.Text(Prose.Core.Services.Factory.FactoryService.RenderBlock(next, books, started));
+    var block = Prose.Core.Services.Factory.FactoryService.RenderBlock(next, books, started);
+    // RFC 0015 §3.13: use or delete. A factory tool no one has called seven days after it shipped
+    // gets one engine order; the banner says so, so an unused tool cannot go unnoticed.
+    try
+    {
+        var unused = (await usage.RunAsync([typeof(Prose.Mcp.FactoryTools).Assembly])).Where(u => u.Calls == 0 && !u.InGrace).ToList();
+        if (unused.Count > 0)
+            block += $"{Environment.NewLine}USE OR DELETE: {unused.Count} factory tool(s) unused 7 days after they shipped — " +
+                     string.Join(", ", unused.Select(u => u.Name)) + " (prose --order list)";
+    }
+    catch (Exception ex)
+    {
+        block += $"{Environment.NewLine}USE OR DELETE: the usage check failed ({ex.Message}).";
+    }
+    return Results.Text(block);
 });
 app.MapPost("/api/factory/session/end", async (FactorySessionEndBody body, Prose.Core.Services.Factory.FactorySessionService sessions) =>
 {

@@ -37,7 +37,8 @@ public class ManuscriptExportService
         GlossaryService glossary,
         ClaudeService claudeService,
         ReadGateService readGate,
-        ILogger<ManuscriptExportService> log)
+        ILogger<ManuscriptExportService> log,
+        Factory.ExportRecorder? recorder = null)
     {
         this.dbFactory = dbFactory;
         this.workbench = workbench;
@@ -47,7 +48,11 @@ public class ManuscriptExportService
         this.claudeService = claudeService;
         this.readGate = readGate;
         this.log = log;
+        this.recorder = recorder ?? new Factory.ExportRecorder(dbFactory);
     }
+
+    /// <summary>RFC 0015 §3.10: every completed press writes its proof (format, version, book fingerprint).</summary>
+    private readonly Factory.ExportRecorder recorder;
 
     /// <summary>Every shippable format (pdf, epub, audio txt) calls this first; Markdown, the pre-edit
     /// backup format, does not. No override exists — see <see cref="ReadGateService"/>.</summary>
@@ -246,6 +251,7 @@ public class ManuscriptExportService
                 });
             }
         }).GeneratePdf(path);
+        await recorder.RecordAsync(nodeId, "pdf", path, ct);
 
         log.LogInformation("Exported node {Node} to PDF {Path}", manuscript.Slug, path);
         return path;
@@ -287,6 +293,9 @@ public class ManuscriptExportService
             EpubWriteEntry(zip, $"OEBPS/chapter-{i + 1:D3}.xhtml", EpubChapterXhtml(manuscript.Chapters[i], manuscript.Title));
 
         EpubWriteEntry(zip, "OEBPS/content.opf", EpubContentOpf(manuscript, authorName, bookUuid));
+        zip.Dispose();   // finish the archive before the press is recorded
+        fs.Dispose();
+        await recorder.RecordAsync(nodeId, "epub", path, ct);
 
         log.LogInformation("Exported node {Node} to EPUB {Path}", manuscript.Slug, path);
         return path;
@@ -332,6 +341,7 @@ public class ManuscriptExportService
         }
 
         await File.WriteAllTextAsync(path, sb.ToString().TrimEnd() + "\n", new UTF8Encoding(false), ct);
+        await recorder.RecordAsync(nodeId, "txt", path, ct);
         log.LogInformation("Exported node {Node} to audio manuscript {Path}", manuscript.Slug, path);
         return path;
     }

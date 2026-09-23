@@ -519,6 +519,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<Prose.Core.Services.Factory.CaptureScanner>();   // F4 Captured
         services.AddSingleton<Prose.Core.Services.Factory.FactoryService>();
         services.AddSingleton<Prose.Core.Services.Factory.EntityVerificationService>();   // F1 begin/commit
+        services.AddSingleton<Prose.Core.Services.Factory.ExportRecorder>();             // F7/A: one Exports row per press
+        services.AddSingleton<Prose.Core.Services.Factory.ContextBundleService>();       // factory_context: the writer's working memory
+        services.AddSingleton<Prose.Core.Services.Factory.FactoryJournal>();             // factory_journal: what happened, from the records
+        services.AddSingleton<Prose.Core.Services.Factory.FactoryUsageCheck>();          // use-or-delete, run at session start
         services.AddSingleton<CharacterFieldWriter>();                                   // set_character_fields
         services.AddSingleton<EntityFieldWriter>();                                      // set_entity_fields (every repository type)
         services.AddSingleton<Prose.Core.Services.Factory.WorkOrderService>(sp => new Prose.Core.Services.Factory.WorkOrderService(

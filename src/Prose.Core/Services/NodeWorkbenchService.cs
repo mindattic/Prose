@@ -3210,6 +3210,8 @@ public class NodeWorkbenchService
             db.NodeAudioEvents.Add(NewAudioEvent(nodeId, null, pub.Id, "mp3-produced",
                 $"{node.Slug}/node.{ext}, {finalBytes.Length} bytes; copied to publish dir"));
             await db.SaveChangesAsync(ct);
+            // RFC 0015 station A: the proof of an audio press, at the book's fingerprint now.
+            await new Factory.ExportRecorder(dbFactory).RecordAsync(nodeId, ext == "wav" ? "wav" : "mp3", dl, ct);
             exportProgress[nodeId] = new ExportProgress(segments.Count, segments.Count, "done");
             log.LogInformation("Published one-pass audiobook for node {S}: {Seg} segment(s) -> {Path}", nodeId, segments.Count, dl);
             return dl;

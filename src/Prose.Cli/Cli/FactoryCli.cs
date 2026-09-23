@@ -14,6 +14,9 @@ namespace Prose.Cli;
 ///
 ///   prose --factory status --node &lt;slug|code|guid&gt;
 ///   prose --factory next [--node X] [--format block|line|json]
+///   prose --factory context --node X --unit N [--prior all] [--budget N] [--out-dir d]
+///   prose --factory journal --since &lt;ISO|90m|6h|2d&gt; [--until …] [--node X] [--limit N | --out f]
+///   prose --factory usage [--report-only]
 ///   prose --order add --kind engine|author --title "…" [--parent &lt;id&gt;] [--root-approved-by author]
 ///                     [--node X] [--paths "a/**;b.cs"] [--checks '&lt;json&gt;' | --checks-file f.json]
 ///                     [--blocking] [--sort N] [--detail "…"]
@@ -269,8 +272,68 @@ public static class FactoryCli
                         }
                         return 0;
                     }
+                    case "context":
+                    {
+                        // The writer's working memory for one unit: one derived file, rebuilt every call.
+                        if (await Node(Flag("--node")) is not { } book) { Console.Error.WriteLine("[context] --node <slug|code|guid> is required."); return 1; }
+                        if (!int.TryParse(Flag("--unit"), out var unit)) { Console.Error.WriteLine("[context] --unit <ordinal> is required."); return 1; }
+                        var budget = int.TryParse(Flag("--budget"), out var bg) ? bg : ContextBundleService.DefaultBudget;
+                        var m = await services.GetRequiredService<ContextBundleService>()
+                            .BuildAsync(book, unit, string.Equals(Flag("--prior"), "all", StringComparison.OrdinalIgnoreCase), budget, Flag("--out-dir"));
+                        Console.WriteLine($"[context] {m.Path}");
+                        Console.WriteLine($"  {m.Book} unit {m.Unit} ({m.UnitHeading}): {m.TotalChars:N0} chars, hash {m.Hash[..12]}");
+                        Console.WriteLine($"  law: {m.Laws} ruling(s) · canon: {string.Join(", ", m.CanonDocuments)}");
+                        Console.WriteLine($"  records: {m.Entities.Count} entit{(m.Entities.Count == 1 ? "y" : "ies")} the unit tags");
+                        Console.WriteLine(m.PriorFromUnit is null
+                            ? "  before this unit: none"
+                            : $"  before this unit: units {m.PriorFromUnit}–{m.PriorToUnit}, {m.PriorChars:N0} of {m.PriorCharsAvailable:N0} chars{(m.PriorTruncated ? " (the oldest dropped to fit the budget)" : "")}");
+                        return 0;
+                    }
+                    case "journal":
+                    {
+                        // What happened in a window, from the ledger, the factory rows and temporal history.
+                        if (!FactoryJournal.TryParseInstant(Flag("--since"), out var since)) { Console.Error.WriteLine("[journal] --since <ISO 8601 | 90m | 6h | 2d> is required."); return 1; }
+                        DateTime? until = null;
+                        if (Flag("--until") is { } u)
+                        {
+                            if (!FactoryJournal.TryParseInstant(u, out var ut)) { Console.Error.WriteLine("[journal] --until is not an instant."); return 1; }
+                            until = ut;
+                        }
+                        Guid? book = null;
+                        if (Flag("--node") is { } nr)
+                        {
+                            if (await Node(nr) is not { } b) { Console.Error.WriteLine($"[journal] no book {nr}."); return 1; }
+                            book = b;
+                        }
+                        var j = await services.GetRequiredService<FactoryJournal>().ReadAsync(since, until, book);
+                        var lines = j.Events.Select(e => $"{e.At:yyyy-MM-dd HH:mm:ss} {e.Kind,-7} {e.Detail}{(e.Actor is null ? "" : $"  [{e.Actor}]")}").ToList();
+                        Console.WriteLine($"[journal] {j.Since:u} → {j.Until:u}: {j.Events.Count} event(s) — " +
+                                          string.Join(", ", j.Events.GroupBy(e => e.Kind).OrderBy(g => g.Key).Select(g => $"{g.Key} {g.Count()}")));
+                        if (!j.TemporalHistoryRead) Console.WriteLine($"  (temporal history not read: {j.TemporalNote})");
+                        if (Flag("--out") is { } outPath)
+                        {
+                            await File.WriteAllLinesAsync(outPath, lines);
+                            Console.WriteLine($"[journal] written to {outPath}");
+                        }
+                        else
+                        {
+                            var limit = int.TryParse(Flag("--limit"), out var lim) ? lim : 200;
+                            if (lines.Count > limit) Console.WriteLine($"  … {lines.Count - limit} earlier event(s) not shown (--limit, or --out <file> for all)");
+                            foreach (var l in lines.Skip(Math.Max(0, lines.Count - limit))) Console.WriteLine("  " + l);
+                        }
+                        return 0;
+                    }
+                    case "usage":
+                    {
+                        // Use or delete: every [FactoryTool] against the ledger; files orders unless --report-only.
+                        var rows = await services.GetRequiredService<FactoryUsageCheck>().RunAsync(fileOrders: !args.Contains("--report-only"));
+                        foreach (var r in rows)
+                            Console.WriteLine($"  {r.Name,-24} since {r.Since:yyyy-MM-dd}  {r.Calls,5} call(s){(r.LastCall is { } lc ? $", last {lc:u}" : "")}  {r.Verdict}");
+                        Console.WriteLine($"[usage] {rows.Count} factory tool(s): {rows.Count(r => r.Calls > 0)} used, {rows.Count(r => r.Calls == 0)} not yet.");
+                        return 0;
+                    }
                     default:
-                        Console.Error.WriteLine("Usage: prose --factory status|next …");
+                        Console.Error.WriteLine("Usage: prose --factory status|next|capture|context|journal|usage …");
                         return 1;
                 }
             }

@@ -381,27 +381,10 @@ public class LogicSweepService(
     /// <summary>Internal (was private) so the publish gate can ask "was this instrument's last run
     /// against the prose the book has now?" — the same freshness question convergence already
     /// asks, which every other check was answering by assumption.</summary>
-    internal static async Task<string> ComputeBookFingerprintAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
-    {
-        var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        // Ordered chapter-then-SortKey, matching RunAsync's own fix below — raw SortKey alone
-        // is chapter-local (every chapter's beats restart near the same values), so ordering
-        // the whole book by it ties across chapters. A tie order SQL Server doesn't guarantee
-        // stable would make this fingerprint flap between two runs of unchanged content,
-        // defeating the whole point of a hash-gated "did anything change" check.
-        var chapterOrder = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
-        var rows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => nodeIds.Contains(bn.NodeId) && bn.Beat != null
-                      && bn.Beat!.Text != null && bn.Beat.Text != "")
-            .Select(bn => new { bn.NodeId, bn.SortKey, Text = bn.Beat!.Text })
-            .ToListAsync(ct);
-        var texts = rows
-            .OrderBy(b => chapterOrder.TryGetValue(b.NodeId, out var idx) ? idx : int.MaxValue)
-            .ThenBy(b => b.SortKey)
-            .Select(b => b.Text);
-        var combined = string.Join("|", texts.Select(Beat.ComputeHash));
-        return Beat.ComputeHash(combined);
-    }
+    /// <para>RFC 0015 §3.1: the definition now lives in <see cref="Factory.BookFingerprint"/>, shared
+    /// with the press, so the sweep and F7 can never disagree about what "the same book" means.</para>
+    internal static Task<string> ComputeBookFingerprintAsync(ProseDbContext db, Guid nodeId, CancellationToken ct) =>
+        Factory.BookFingerprint.ComputeAsync(db, nodeId, ct);
 
     // ── Shared JSON-array parsing for all six dimensions ──────────────────────────
 

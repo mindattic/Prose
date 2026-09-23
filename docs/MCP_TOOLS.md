@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**274 tools** across **49 tool families.**
+**278 tools** across **49 tool families.**
 
 ## Families
 
@@ -35,7 +35,7 @@
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 7 |
 | [Entity Tag](#entity-tag) | 3 |
-| [Factory](#factory) | 7 |
+| [Factory](#factory) | 11 |
 | [Findings](#findings) | 5 |
 | [Gear Entity Crud](#gear-entity-crud) | 8 |
 | [Glossary](#glossary) | 4 |
@@ -874,6 +874,31 @@ REMOVE tags from an entity — the only path that can take a tag off, since crea
 
 <sub>`FactoryTools`</sub>
 
+### `factory_capture`
+
+Station F4's worklist for a book: (a) capitalized names used in 2+ beats that no entity, alias or incidental ruling accounts for, and (b) uses of a book-tagged entity's name in a beat that does not tag it. Resolve (a) with create_* / an alias / record_ruling(kind: incidental), and (b) with tags (CLI: prose --factory capture --node X --retag | --pin | --pin-name "<name>" --entity <id>).
+
+- `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
+- `limit` (int, optional) — Most items per list (default 100).
+
+### `factory_context`
+
+The writer's working memory for one unit (RFC 0015 §3.9), rebuilt on every call and never edited: the book's law, the universe's world and craft canon, the records of every entity the unit tags as they stand now, the prose before the unit — the previous unit, or with priorUnits 'all' every preceding unit within the budget, oldest dropped first, never cut at a chapter boundary — and the unit itself (its prose, or its planned beats). Writes one file and returns its path and a manifest of exactly what it holds and what it left out.
+
+- `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
+- `unit` (int, required) — Unit ordinal, as factory_status prints it.
+- `priorUnits` (string, optional) — '1' (default) = the previous unit; 'all' = every preceding unit within the budget.
+- `budgetChars` (int, optional) — Character budget for the whole bundle (default 400000).
+
+### `factory_journal`
+
+What happened in a window, reconstructed from the records themselves, in time order: every Hub call in the command ledger (with the session that made it), every read receipt, read note, entity verification, press, ruling, work order and session written, and — on SQL Server — every stored version of a beat or an entity from the temporal history. With a book: only what touched it. Nothing here had to be remembered to be written.
+
+- `since` (string, required) — Start of the window, ISO 8601 (UTC unless it carries an offset).
+- `until` (string, optional) — End of the window (default now).
+- `nodeIdOrSlug` (string, optional) — Optional book id, slug or NodeCode.
+- `limit` (int, optional) — Most events to return, newest kept (default 400). Counts by kind always cover the whole window.
+
 ### `factory_next`
 
 The single next action, computed: the first open blocking work order (during the factory's own build), otherwise the first failing station of the earliest unit of a book an author order has put on the line — with the exact calls that clear it. Ask this instead of deciding from memory.
@@ -885,6 +910,12 @@ The single next action, computed: the first open blocking work order (during the
 The Novel Factory's matrix for one book: every unit (chapter, as the exporters print it) × every station (F2 Planned, F3 Written, F4 Captured, F5 Read, F6 Clean, F1 Verified) plus the book stations (F7 Pressed, A Audio). Every verdict is computed from the prose, the world and the read receipts; a station not built yet says not-built.
 
 - `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
+
+### `factory_usage`
+
+The use-or-delete check: every factory tool, the day it shipped, its real calls in the command ledger (either door, MCP or CLI) and its verdict. A tool with no real call seven days after it shipped gets one engine order, "Use or delete: <tool>", under the RFC's approved root; that order closes only by use, or is abandoned with the commit that deleted the tool. Runs at every session start.
+
+- `fileOrders` (bool, optional) — False = report only, file nothing.
 
 ### `session_end`
 

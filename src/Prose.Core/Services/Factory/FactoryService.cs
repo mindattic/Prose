@@ -45,7 +45,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
     public static readonly string[] BookStationOrder = ["F7", "A"];
 
     /// <summary>Stations whose evaluators exist. Grows one increment at a time (RFC 0015 §10).</summary>
-    public static readonly HashSet<string> Built = ["F2", "F3", "F4", "F5", "F6", "F1"];
+    public static readonly HashSet<string> Built = ["F2", "F3", "F4", "F5", "F6", "F1", "F7", "A"];
 
     public static readonly IReadOnlyDictionary<string, string> StationNames = new Dictionary<string, string>
     {
@@ -88,7 +88,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         }
         var book = new Dictionary<string, StationResult>();
         foreach (var code in BookStationOrder)
-            book[code] = Built.Contains(code) ? EvaluateBook(code, ctx) : StationResult.NotBuilt(code);
+            book[code] = Built.Contains(code) ? EvaluateBook(code, ctx, units, book) : StationResult.NotBuilt(code);
         return new BookStatus(ctx.BookId, ctx.Slug, ctx.Code, ctx.Title, ctx.Beats.Count,
             ctx.Units.Sum(u => u.Words), units, book, ctx.Metrics);
     }
@@ -197,6 +197,9 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         "F1" => [$"prose --universe <u> --verify-entity begin --entity <id from the detail> --node {s.Slug}  (the record and its mention beats)",
                  "examine the record against the book as read; if it is wrong, fix the record (set_character_fields), re-read what that un-reads, begin again",
                  "prose --universe <u> --verify-entity commit --nonce <nonce from begin>"],
+        "F7" => [$"metrics: prose --ruling metrics --node {s.Slug}  (cut tics by splice until every author ceiling holds)",
+                 $"press: prose --universe <u> --export-node --slug {s.Slug}  (docx, epub, pdf — the read gate must pass; there is no override)"],
+        "A" => [$"prose --universe <u> --export-mp3 --slug {s.Slug}  (one ElevenLabs pass, at the pressed book's fingerprint)"],
         _ => [$"see prose --factory status --node {s.Slug}"],
     };
 
@@ -280,6 +283,9 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         public Dictionary<Guid, string> Fingerprints = [];
         public Dictionary<Guid, EntityVerification> Verified = [];
         public CaptureReport? Capture;
+        // F7 / A: the book's fingerprint now, and the latest press of each format.
+        public string Fingerprint = "";
+        public Dictionary<string, ExportRecord> Exports = [];
     }
 
     private async Task<BookContext> LoadAsync(Guid bookId, CancellationToken ct)
@@ -331,6 +337,12 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         ctx.LawHits = (await rulings.FindLawViolationsAsync(bookId, ct)).ToLookup(h => h.BeatId);
         ctx.Metrics = await metrics.ComputeAsync(bookId, ct);
         ctx.Capture = await capture.ScanAsync(bookId, ct);
+        await using (var db = await dbFactory.CreateDbContextAsync(ct))
+        {
+            ctx.Fingerprint = await BookFingerprint.ComputeAsync(db, bookId, ct);
+            ctx.Exports = (await db.Exports.AsNoTracking().Where(e => e.BookId == bookId).ToListAsync(ct))
+                .GroupBy(e => e.Format).ToDictionary(g => g.Key, g => g.OrderByDescending(e => e.At).First());
+        }
         return ctx;
     }
 
@@ -416,7 +428,43 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
 
     private static string Short(string s) => s.Length <= 70 ? s : s[..70] + "…";
 
-    private static StationResult EvaluateBook(string code, BookContext ctx) => StationResult.NotBuilt(code);
+    private static StationResult EvaluateBook(string code, BookContext ctx, IReadOnlyList<UnitStatus> units,
+        IReadOnlyDictionary<string, StationResult> earlier)
+    {
+        switch (code)
+        {
+            case "F7":
+            {
+                var red = units.Where(u => UnitStationOrder.Any(s => !u.Stations[s].Pass)).ToList();
+                if (red.Count > 0)
+                {
+                    var first = red[0];
+                    var station = UnitStationOrder.First(s => !first.Stations[s].Pass);
+                    return new(code, "waiting", $"{red.Count} of {units.Count} units are not through the line yet (first: unit {first.Unit.Ordinal}, {station}).");
+                }
+                if (ctx.Metrics is { GatePasses: false } m)
+                    return new(code, "fail", "the author's metric ceilings are exceeded: " + string.Join(" · ",
+                        m.Metrics.Where(x => x.AuthorSourced && !x.Pass).Select(x => $"{Short(x.Text)} {x.Count}/{x.Max}")) + ".");
+                var stale = ExportRecorder.BookFormats
+                    .Where(f => !ctx.Exports.TryGetValue(f, out var e) || e.BookFingerprint != ctx.Fingerprint).ToList();
+                if (stale.Count > 0)
+                    return new(code, "fail", $"not pressed at the book as it stands: {string.Join(", ", stale)} missing or older than the current prose.");
+                return new(code, "pass", $"V{ctx.Exports["docx"].Version} pressed at the current fingerprint (docx, epub, pdf).");
+            }
+            case "A":
+            {
+                if (!earlier.TryGetValue("F7", out var f7) || !f7.Pass)
+                    return new(code, "waiting", "audio is pressed from a pressed book (F7).");
+                var audio = new[] { "mp3", "wav" }.Select(f => ctx.Exports.GetValueOrDefault(f)).Where(e => e != null)
+                    .OrderByDescending(e => e!.At).FirstOrDefault();
+                return audio != null && audio.BookFingerprint == ctx.Fingerprint
+                    ? new(code, "pass", $"audio V{audio.Version} at the current fingerprint: {Path.GetFileName(audio.Path)}.")
+                    : new(code, "fail", "no audio at the current fingerprint.");
+            }
+            default:
+                return StationResult.NotBuilt(code);
+        }
+    }
 
     private static bool HasText(BeatRow b) => !string.IsNullOrWhiteSpace(BeatMarkup.StripEntityTags(b.Text));
 }

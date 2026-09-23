@@ -473,6 +473,7 @@ public class NodeTools
         [Description("true = run the per-save LLM analysis tails on every beat. Default false: a docket wants one analysis pass at the end.")] bool analyze = false) =>
         hub.InvokeAsync(nameof(NodeTools), nameof(SpliceBeatsImpl), new { nodeIdOrSlug, docketJson, apply, analyze });
 
+    [Prose.Core.Services.Factory.FactoryTool("splice_beats", "2026-09-22", Cli = "SpliceBeatsCli --splice-beats")]
     public async Task<string> SpliceBeatsImpl(string nodeIdOrSlug, string docketJson, bool apply = false, bool analyze = false)
     {
         List<SpliceEdit> docket;

@@ -31,6 +31,7 @@ public class ReadingTools(ReadGateService gate, IDbContextFactory<ProseDbContext
         [Description("Max unread beats to list individually (default 200). Counts are always complete.")] int limit = 200) =>
         hub.InvokeAsync(nameof(ReadingTools), nameof(ReadStatusImpl), new { nodeIdOrSlug, limit });
 
+    [Prose.Core.Services.Factory.FactoryTool("read_status", "2026-09-22", Cli = "ReadStatusCli --read-status")]
     public async Task<string> ReadStatusImpl(string nodeIdOrSlug, int limit = 200)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
@@ -56,6 +57,7 @@ public class ReadingTools(ReadGateService gate, IDbContextFactory<ProseDbContext
         [Description("Who read it.")] string readBy) =>
         hub.InvokeAsync(nameof(ReadingTools), nameof(AddReadNoteImpl), new { nodeIdOrSlug, beat, kind, text, readBy });
 
+    [Prose.Core.Services.Factory.FactoryTool("add_read_note", "2026-09-22", Cli = "ReadStatusCli --read-note add")]
     public async Task<string> AddReadNoteImpl(string nodeIdOrSlug, int beat, string kind, string text, string readBy)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
@@ -74,6 +76,7 @@ public class ReadingTools(ReadGateService gate, IDbContextFactory<ProseDbContext
         [Description("Optional: defect | question | note")] string? kind = null) =>
         hub.InvokeAsync(nameof(ReadingTools), nameof(ListReadNotesImpl), new { nodeIdOrSlug, status, kind });
 
+    [Prose.Core.Services.Factory.FactoryTool("list_read_notes", "2026-09-22", Cli = "ReadStatusCli --read-note list")]
     public async Task<string> ListReadNotesImpl(string nodeIdOrSlug, string status = "open", string? kind = null)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
@@ -88,6 +91,7 @@ public class ReadingTools(ReadGateService gate, IDbContextFactory<ProseDbContext
         [Description("Optional Beat.Number of the beat that answered or fixed it.")] int? byBeat = null) =>
         hub.InvokeAsync(nameof(ReadingTools), nameof(ResolveReadNoteImpl), new { nodeIdOrSlug, noteId, byBeat });
 
+    [Prose.Core.Services.Factory.FactoryTool("resolve_read_note", "2026-09-22", Cli = "ReadStatusCli --read-note resolve")]
     public async Task<string> ResolveReadNoteImpl(string nodeIdOrSlug, string noteId, int? byBeat = null)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);

@@ -27,6 +27,7 @@ public class WorldTools(CharacterFieldWriter writer, EntityFieldWriter entityWri
         [Description("Make the write even though it un-reads the listed beats (then re-read them).")] bool confirmUnread = false) =>
         hub.InvokeAsync(nameof(WorldTools), nameof(SetCharacterFieldsImpl), new { id, fieldsJson, confirmUnread });
 
+    [FactoryTool("set_character_fields", "2026-09-23", Cli = "WorldCli --set-character-fields")]
     public async Task<string> SetCharacterFieldsImpl(string id, string fieldsJson, bool confirmUnread = false) =>
         JsonSerializer.Serialize(await writer.SetFieldsAsync(id, fieldsJson, confirmUnread), JsonOpts);
 
@@ -37,6 +38,7 @@ public class WorldTools(CharacterFieldWriter writer, EntityFieldWriter entityWri
         [Description("Make the write even though it un-reads the listed beats (then re-read them).")] bool confirmUnread = false) =>
         hub.InvokeAsync(nameof(WorldTools), nameof(SetEntityFieldsImpl), new { id, fieldsJson, confirmUnread });
 
+    [FactoryTool("set_entity_fields", "2026-09-23", Cli = "WorldCli --set-entity-fields")]
     public async Task<string> SetEntityFieldsImpl(string id, string fieldsJson, bool confirmUnread = false) =>
         JsonSerializer.Serialize(await entityWriter.SetFieldsAsync(id, fieldsJson, confirmUnread), JsonOpts);
 
@@ -47,6 +49,7 @@ public class WorldTools(CharacterFieldWriter writer, EntityFieldWriter entityWri
         [Description("Characters of mention text to include (default 40000; 0 = none).")] int textBudgetChars = 40_000) =>
         hub.InvokeAsync(nameof(WorldTools), nameof(VerifyEntityBeginImpl), new { entityId, nodeIdOrSlug, textBudgetChars });
 
+    [FactoryTool("verify_entity_begin", "2026-09-23", Cli = "WorldCli --verify-entity begin")]
     public async Task<string> VerifyEntityBeginImpl(string entityId, string nodeIdOrSlug, int textBudgetChars = 40_000)
     {
         if (!Guid.TryParse(entityId, out var eid)) return JsonSerializer.Serialize(new { ok = false, error = "bad_entity_id" }, JsonOpts);
@@ -62,6 +65,7 @@ public class WorldTools(CharacterFieldWriter writer, EntityFieldWriter entityWri
         [Description("Who examined it.")] string by = "claude") =>
         hub.InvokeAsync(nameof(WorldTools), nameof(VerifyEntityCommitImpl), new { nonce, by });
 
+    [FactoryTool("verify_entity_commit", "2026-09-23", Cli = "WorldCli --verify-entity commit")]
     public async Task<string> VerifyEntityCommitImpl(string nonce, string by = "claude")
     {
         try

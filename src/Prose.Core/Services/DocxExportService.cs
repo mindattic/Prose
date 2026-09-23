@@ -48,7 +48,8 @@ public class DocxExportService
         ExportCleanupService cleanup,
         GlossaryService glossary,
         ReadGateService readGate,
-        ILogger<DocxExportService> log)
+        ILogger<DocxExportService> log,
+        Factory.ExportRecorder? recorder = null)
     {
         this.dbFactory = dbFactory;
         this.workbench = workbench;
@@ -58,9 +59,13 @@ public class DocxExportService
         this.glossary = glossary;
         this.readGate = readGate;
         this.log = log;
+        this.recorder = recorder ?? new Factory.ExportRecorder(dbFactory);
     }
 
     private readonly ReadGateService readGate;
+
+    /// <summary>RFC 0015 §3.10: every completed press writes its proof (format, version, book fingerprint).</summary>
+    private readonly Factory.ExportRecorder recorder;
 
     /// <summary>Render the node to a KDP-ready .docx in the export directory; returns the path.
     /// Refuses (<see cref="UnreadBeatsException"/>) if any beat is unread — no override.</summary>
@@ -341,6 +346,7 @@ public class DocxExportService
         node.Version = nextVersion;
         node.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
+        await recorder.RecordAsync(nodeId, "docx", exportPath, ct);
 
         log.LogInformation("Exported node {Node} to {Path}", node.Slug, exportPath);
         return exportPath;

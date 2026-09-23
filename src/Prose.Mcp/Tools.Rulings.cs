@@ -34,6 +34,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
         [Description("author (default) or session:<id>.")] string source = "author") =>
         hub.InvokeAsync(nameof(RulingTools), nameof(RecordRulingImpl), new { kind, text, nodeIdOrSlug, pattern, maxPer1kWords, source });
 
+    [FactoryTool("record_ruling", "2026-09-23", Cli = "FactoryCli --ruling add")]
     public async Task<string> RecordRulingImpl(string kind, string text, string? nodeIdOrSlug = null, string? pattern = null, decimal? maxPer1kWords = null, string source = "author")
     {
         try
@@ -48,6 +49,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     public Task<string> list_rulings([Description("Book id, slug or NodeCode.")] string nodeIdOrSlug, [Description("law | page-law | metric | incidental")] string? kind = null) =>
         hub.InvokeAsync(nameof(RulingTools), nameof(ListRulingsImpl), new { nodeIdOrSlug, kind });
 
+    [FactoryTool("list_rulings", "2026-09-23", Cli = "FactoryCli --ruling list")]
     public async Task<string> ListRulingsImpl(string nodeIdOrSlug, string? kind = null)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
@@ -65,6 +67,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
         [Description("author (default) or session:<id>.")] string source = "author") =>
         hub.InvokeAsync(nameof(RulingTools), nameof(SupersedeRulingImpl), new { id, kind, text, pattern, maxPer1kWords, source });
 
+    [FactoryTool("supersede_ruling", "2026-09-23", Cli = "FactoryCli --ruling supersede")]
     public async Task<string> SupersedeRulingImpl(string id, string kind, string text, string? pattern = null, decimal? maxPer1kWords = null, string source = "author")
     {
         if (!Guid.TryParse(id, out var gid)) return JsonSerializer.Serialize(new { ok = false, error = "bad_id" }, JsonOpts);
@@ -80,6 +83,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     public Task<string> law_violations([Description("Book id, slug or NodeCode.")] string nodeIdOrSlug) =>
         hub.InvokeAsync(nameof(RulingTools), nameof(LawViolationsImpl), new { nodeIdOrSlug });
 
+    [FactoryTool("law_violations", "2026-09-23", Cli = "FactoryCli --ruling violations")]
     public async Task<string> LawViolationsImpl(string nodeIdOrSlug)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
@@ -94,6 +98,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
         [Description("Search the records for this one .NET regex instead of the laws (read-only, recorded nowhere).")] string? searchPattern = null) =>
         hub.InvokeAsync(nameof(RulingTools), nameof(RecordLawViolationsImpl), new { nodeIdOrSlug, entityId, searchPattern });
 
+    [FactoryTool("record_law_violations", "2026-09-23", Cli = "FactoryCli --records")]
     public async Task<string> RecordLawViolationsImpl(string nodeIdOrSlug, string? entityId = null, string? searchPattern = null)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
@@ -105,6 +110,7 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     public Task<string> book_metrics([Description("Book id, slug or NodeCode.")] string nodeIdOrSlug) =>
         hub.InvokeAsync(nameof(RulingTools), nameof(BookMetricsImpl), new { nodeIdOrSlug });
 
+    [FactoryTool("book_metrics", "2026-09-23", Cli = "FactoryCli --ruling metrics")]
     public async Task<string> BookMetricsImpl(string nodeIdOrSlug)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
