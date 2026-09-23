@@ -169,12 +169,27 @@ public static class FieldPatch
             .ToDictionary(g => g.Key, g => g.First()));
 
     /// <summary>Whether a field reads the same. Tags are a set — the repositories load them in
-    /// database order, not written order — so they compare without order or case.</summary>
+    /// database order, not written order — so they compare without order or case.
+    /// Relationships are a set too: the character store loads them sorted by target name, so a
+    /// list written in any other order read back "different" (Mrs. Chen, 2026-09-23). They compare
+    /// element by element without order; every other list keeps its order.</summary>
     public static bool Same(string key, JsonNode? a, JsonNode? b)
     {
         if (key == "tags" && a is JsonArray x && b is JsonArray y)
             return x.Select(n => n?.ToString()?.Trim() ?? "").ToHashSet(StringComparer.OrdinalIgnoreCase)
                 .SetEquals(y.Select(n => n?.ToString()?.Trim() ?? ""));
+        if (key == "relationships" && a is JsonArray written && b is JsonArray stored)
+        {
+            if (written.Count != stored.Count) return false;
+            var unmatched = stored.ToList();
+            foreach (var item in written)
+            {
+                var i = unmatched.FindIndex(s => JsonNode.DeepEquals(item, s));
+                if (i < 0) return false;
+                unmatched.RemoveAt(i);
+            }
+            return true;
+        }
         return JsonNode.DeepEquals(a, b);
     }
 

@@ -233,6 +233,38 @@ public class CharacterFieldWriterTests : WorldFixture
     }
 
     [Test]
+    public async Task Relationships_are_a_set_so_the_store_sorting_them_is_not_a_failed_write()
+    {
+        // Found live 2026-09-23 on Mrs. Chen: the store loads relationships sorted by name, so a
+        // correct write whose list ran in any other order read back "different" and answered not-ok.
+        var c = NewCharacter();
+        var first = await writer.SetFieldsAsync(c.Id,
+            """{"relationships":[{"name":"Kyle","type":"customer"},{"name":"Pixel","type":"neighbor"},{"name":"West Town","type":"block"}]}""");
+        Assert.That(first.Ok, Is.True, first.Error);
+
+        var stored = (JsonArray)first.Record!["relationships"]!;
+        var reversed = new JsonArray(stored.Reverse().Select(n => n!.DeepClone()).ToArray());
+        ((JsonObject)reversed[0]!)["description"] = "Half the block passes through her counter.";
+        var r = await writer.SetFieldsAsync(c.Id, new JsonObject { ["relationships"] = reversed }.ToJsonString());
+        Assert.That(r.Ok, Is.True, r.Error);
+        Assert.That(r.NotLanded, Is.Empty);
+        Assert.That(r.Changed, Does.Contain("relationships"));
+        Assert.That(characters.GetById(c.Id)!.Relationships.Single(x => x.Name == "West Town").Description,
+            Is.EqualTo("Half the block passes through her counter."));
+    }
+
+    [Test]
+    public void Relationships_compare_without_order_but_every_other_list_keeps_its_order()
+    {
+        var a = JsonNode.Parse("""[{"name":"A","type":"x"},{"name":"B","type":"y"}]""");
+        var sameSet = JsonNode.Parse("""[{"type":"y","name":"B"},{"name":"A","type":"x"}]""");
+        var changed = JsonNode.Parse("""[{"name":"A","type":"x"},{"name":"B","type":"z"}]""");
+        Assert.That(FieldPatch.Same("relationships", a, sameSet), Is.True);
+        Assert.That(FieldPatch.Same("relationships", a, changed), Is.False, "a changed relationship is still a difference");
+        Assert.That(FieldPatch.Same("timeline", a, sameSet), Is.False, "other lists are ordered");
+    }
+
+    [Test]
     public async Task Null_clears_a_field_and_absent_keys_are_untouched()
     {
         var c = NewCharacter();

@@ -292,6 +292,8 @@ public static class FactoryCli
                             var again = await scanner.ScanAsync(book);
                             Console.WriteLine($"[capture] re-tagged {saved} beat(s) through the one door ({wordsChanged} of them also normalized by the save's sanitizer). " +
                                               $"Untagged mentions now: {again.Untagged.Sum(t => t.Missing)}.");
+                            // The exit code reports the book as the repair left it, not as it was found.
+                            report = again;
                         }
                         return report.Unresolved.Count == 0 && report.Untagged.Count == 0 ? 0 : 2;
                     }
