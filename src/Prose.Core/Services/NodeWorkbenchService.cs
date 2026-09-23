@@ -323,6 +323,14 @@ public class NodeWorkbenchService
 
     // ── Edits ────────────────────────────────────────────────────────────
 
+    /// <summary>The beat's mention rows, derived from the tags it now carries, written before the
+    /// save returns. A failure is logged and swallowed: mentions are an index, the prose is the book.</summary>
+    private async Task DeriveMentionsLoggedAsync(Guid beatId, string taggedText)
+    {
+        try { await EntityMentionScanner.DeriveAndSaveMentionsAsync(dbFactory, beatId, taggedText, CancellationToken.None); }
+        catch (Exception ex) { log.LogError(ex, "EntityMentionScanner.DeriveAndSaveMentionsAsync failed for beat {BeatId}", beatId); }
+    }
+
     /// <summary>Update one beat's prose. Recomputes the hash, marks the beat
     /// Stale, nulls AudioPath, and deletes the on-disk audio file. The next
     /// narration pass re-records it.
@@ -446,13 +454,14 @@ public class NodeWorkbenchService
                 .ContinueWith(t => log.LogError(t.Exception, "EditSession.TryLogBeatAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
 
-        // Fire-and-forget: derive BeatEntityMentions from the tags just placed above — exact,
-        // not inferred (replaces the old EntityRamificationService.IndexBeatMentionsAsync name/
-        // alias re-scan for beats saved through this path; that scan remains intact and still
-        // used by --scan-entity-mentions for any beat not yet re-saved/tagged).
-        _ = Task.Run(() => EntityMentionScanner.DeriveAndSaveMentionsAsync(dbFactory, beatId, trimmed, CancellationToken.None), CancellationToken.None)
-            .ContinueWith(t => log.LogError(t.Exception, "EntityMentionScanner.DeriveAndSaveMentionsAsync background task failed"),
-                TaskContinuationOptions.OnlyOnFaulted);
+        // Derive BeatEntityMentions from the tags just placed above — exact, not inferred
+        // (replaces the old EntityRamificationService.IndexBeatMentionsAsync name/alias re-scan for
+        // beats saved through this path; that scan remains intact and still used by
+        // --scan-entity-mentions for any beat not yet re-saved/tagged). Awaited, not fired and
+        // forgotten (2026-09-23): the derive is local, and a background write raced the next read —
+        // stale mentions on SQL Server, "database is locked" under SQLite. A failure is still only
+        // logged; it never fails the prose save.
+        await DeriveMentionsLoggedAsync(beatId, trimmed);
 
         // Fire-and-forget: auto-engage prose quality checks. Resolve slug
         // here while the db context is still open; the validator only needs
@@ -638,9 +647,7 @@ public class NodeWorkbenchService
             await db.SaveChangesAsync(ct);
             touchedBeatIds.Add(beatId);
 
-            _ = Task.Run(() => EntityMentionScanner.DeriveAndSaveMentionsAsync(dbFactory, beatId, trimmed, CancellationToken.None), CancellationToken.None)
-                .ContinueWith(t => log.LogError(t.Exception, "EntityMentionScanner.DeriveAndSaveMentionsAsync background task failed (batch)"),
-                    TaskContinuationOptions.OnlyOnFaulted);
+            await DeriveMentionsLoggedAsync(beatId, trimmed);
 
             // RFC 0013: a batch edit registers its promises too (per beat — the ledger's running
             // open list is what each scan reads, so order matters and there is no union shortcut).

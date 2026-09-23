@@ -559,6 +559,24 @@ public class CaptureScannerTests : WorldFixture
 }
 
 [TestFixture]
+public class SaveMentionsTests : WorldFixture
+{
+    [Test]
+    public async Task A_save_writes_its_mention_rows_before_it_returns()
+    {
+        // Baseline B11: the rows were written by a fire-and-forget task, so the next read raced it
+        // ("database is locked" under SQLite, stale mentions on SQL Server).
+        var c = NewCharacter("Renko Moss", "A crew chief.");
+        var (book, _) = await BookAsync("drove.");
+        var beat = (await BeatIdsAsync(book))[0];
+        await workbench.UpdateBeatTextAsync(beat, "Renko Moss drove.", BeatWriteReason.AuthorEdit, deferAnalysis: true);
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var rows = await db.BeatEntityMentions.Where(m => m.BeatId == beat).Select(m => m.EntityId).ToListAsync();
+        Assert.That(rows, Is.EqualTo(new[] { Guid.Parse(c.Id) }), "nothing to wait for: the rows exist when the save returns");
+    }
+}
+
+[TestFixture]
 public class CaptureRetagTests : WorldFixture
 {
     [Test]
