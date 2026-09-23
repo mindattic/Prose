@@ -911,12 +911,12 @@ public class NodeTools
             : JsonSerializer.Serialize(new { chapters = reports.Select(Shape).ToList() }, CanonTools.JsonOpts);
     }
 
-    /// <summary>Export a node to every KDP-ready format (docx/epub/pdf/txt) plus description.txt/keywords.txt, to the configured export directory (defaults to Desktop). Same pipeline as the CLI's `prose --export-node`, via the shared NodeFullExportService. Local file rendering only — no KDP API integration. Blocked (returns ok:false) unless the docs/LOGIC.md §9 publish-readiness gate passes, or forceExport is true (2026-09-01 — this MCP path used to skip every export gate the CLI enforced).</summary>
-    [McpServerTool, Description("Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), and keywords.txt (from seeded NodeKeywords), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Blocked with ok:false unless the publish-readiness gate (docs/LOGIC.md §9) passes or forceExport is true — call publish_readiness first if unsure. Use get_node first to confirm the node exists.")]
+    /// <summary>Export a node to every KDP-ready format (docx/epub/pdf/txt) plus description.txt/keywords.txt, to the configured export directory (defaults to Desktop). Same pipeline as the CLI's `prose --export-node`, via the shared NodeFullExportService. Local file rendering only — no KDP API integration. The publish-readiness pre-flight is DEACTIVATED (2026-09-22, RFC 0014) — export no longer blocks on it; call publish_readiness explicitly if you want the report.</summary>
+    [McpServerTool, Description("Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), and keywords.txt (from seeded NodeKeywords), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. The publish-readiness gate no longer blocks export (deactivated 2026-09-22) — run publish_readiness yourself if you want that report. Use get_node first to confirm the node exists.")]
     public Task<string> ExportNode(
         [Description("Node id (GUID) or slug.")] string nodeIdOrSlug,
         [Description("Author name to embed in the document properties. Optional.")] string author = "",
-        [Description("Export even if the publish-readiness gate reports open findings. Default false.")] bool forceExport = false) =>
+        [Description("Accepted and ignored — the publish-readiness gate it overrode is deactivated.")] bool forceExport = false) =>
         hub.InvokeAsync(nameof(NodeTools), nameof(ExportNodeImpl), new { nodeIdOrSlug, author, forceExport });
 
     public async Task<string> ExportNodeImpl(string nodeIdOrSlug, string author = "", bool forceExport = false)
@@ -924,38 +924,45 @@ public class NodeTools
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
 
-        var readiness = await bookHealth.PublishReadinessAsync(node.Id);
-        if (!readiness.Ready && !forceExport)
-        {
-            return JsonSerializer.Serialize(new
-            {
-                ok = false,
-                error = "not_publish_ready",
-                checks = readiness.Checks.Select(c => new { name = c.Name, outcome = c.Outcome.ToString(), pass = c.Pass, detail = c.Detail }),
-                hint = "Fix the failing checks (see prose --publish-readiness --slug <slug>), or pass forceExport:true to override.",
-            }, CanonTools.JsonOpts);
-        }
-
-        // An override here used to be completely silent — unlike the CLI, which at least printed
-        // the overridden checks to stderr, this path returned a plain ok:true with no indication
-        // the gate had been bypassed at all. Record it, and say so in the response.
+        // ── pre-export publish-readiness gate — DEACTIVATED 2026-09-22 ───────────────
+        // RFC 0014, author ruling: "just comment out all of these, they've never proven
+        // their worth." Mirrors the same deactivation in ExportNodeCli. Nothing deleted:
+        // uncomment to restore. publish_readiness remains callable as an on-demand report.
+        //
+        // var readiness = await bookHealth.PublishReadinessAsync(node.Id);
+        // if (!readiness.Ready && !forceExport)
+        // {
+        //     return JsonSerializer.Serialize(new
+        //     {
+        //         ok = false,
+        //         error = "not_publish_ready",
+        //         checks = readiness.Checks.Select(c => new { name = c.Name, outcome = c.Outcome.ToString(), pass = c.Pass, detail = c.Detail }),
+        //         hint = "Fix the failing checks (see prose --publish-readiness --slug <slug>), or pass forceExport:true to override.",
+        //     }, CanonTools.JsonOpts);
+        // }
+        //
+        // // An override here used to be completely silent — unlike the CLI, which at least printed
+        // // the overridden checks to stderr, this path returned a plain ok:true with no indication
+        // // the gate had been bypassed at all. Record it, and say so in the response.
+        // string[]? bypassed = null;
+        // if (!readiness.Ready)
+        // {
+        //     var failing = readiness.Checks.Where(c => !c.Pass).ToList();
+        //     bypassed = failing.Select(c => $"[{c.Outcome}] {c.Name} — {c.Detail}").ToArray();
+        //     await using var dbGate = await dbFactory.CreateDbContextAsync();
+        //     dbGate.DecisionLedgerEntries.Add(new Prose.Core.Data.Entities.DecisionLedgerEntry
+        //     {
+        //         Summary = $"Publish gate BYPASSED for \"{node.Title}\" ({node.Slug}) — " +
+        //                   $"exported V{node.Version + 1} with {failing.Count} check(s) unmet",
+        //         Rationale = "forceExport:true was passed to the MCP ExportNode tool. Unmet at export time:\n" +
+        //                     string.Join("\n", bypassed),
+        //         Category = "publish-gate-bypass",
+        //         Actor = "mcp:ExportNode",
+        //     });
+        //     await dbGate.SaveChangesAsync();
+        // }
         string[]? bypassed = null;
-        if (!readiness.Ready)
-        {
-            var failing = readiness.Checks.Where(c => !c.Pass).ToList();
-            bypassed = failing.Select(c => $"[{c.Outcome}] {c.Name} — {c.Detail}").ToArray();
-            await using var dbGate = await dbFactory.CreateDbContextAsync();
-            dbGate.DecisionLedgerEntries.Add(new Prose.Core.Data.Entities.DecisionLedgerEntry
-            {
-                Summary = $"Publish gate BYPASSED for \"{node.Title}\" ({node.Slug}) — " +
-                          $"exported V{node.Version + 1} with {failing.Count} check(s) unmet",
-                Rationale = "forceExport:true was passed to the MCP ExportNode tool. Unmet at export time:\n" +
-                            string.Join("\n", bypassed),
-                Category = "publish-gate-bypass",
-                Actor = "mcp:ExportNode",
-            });
-            await dbGate.SaveChangesAsync();
-        }
+        _ = forceExport; // accepted for wire compatibility; the gate it overrode is deactivated.
 
         var result = await fullExport.ExportAllAsync(node.Id, string.IsNullOrWhiteSpace(author) ? null : author);
         return JsonSerializer.Serialize(new

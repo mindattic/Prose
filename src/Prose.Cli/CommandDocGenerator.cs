@@ -128,8 +128,16 @@ public static class CommandDocGenerator
         sb.AppendLine("> touches the database itself. A command marked **cost-gated** spends LLM money and");
         sb.AppendLine("> routes through the cost gate; everything else is deterministic or read-only.");
         sb.AppendLine("> Most commands require a `--universe <slug>` scope.");
+        sb.AppendLine(">");
+        sb.AppendLine("> A command marked **DEACTIVATED** still has its handler, but the gate at the top of");
+        sb.AppendLine("> `Program.cs` refuses it — see `src/Prose.Cli/DeactivatedInstruments.cs` for why and");
+        sb.AppendLine("> how to restore it. Reading that list from the same place the gate reads it is");
+        sb.AppendLine("> deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six");
+        sb.AppendLine("> and advertised as five, and this reference is not going to repeat that.");
         sb.AppendLine();
-        sb.AppendLine($"**{commands.Count} commands.** {commands.Count(c => c.CostGated)} cost-gated. " +
+        sb.AppendLine($"**{commands.Count} commands.** " +
+                      $"{commands.Count(c => c.Flags.Any(DeactivatedInstruments.Contains))} deactivated. " +
+                      $"{commands.Count(c => c.CostGated)} cost-gated. " +
                       $"{noDescription} have no description in their dispatch comment ({noneAtAll} have " +
                       "neither a description nor a usage line); they are listed anyway with whatever could " +
                       "be recovered, because a reference that silently omits what it could not parse is " +
@@ -138,7 +146,9 @@ public static class CommandDocGenerator
 
         foreach (var c in commands)
         {
-            sb.AppendLine($"### {string.Join(" / ", c.Flags.Select(f => $"`{f}`"))}");
+            var isDeactivated = c.Flags.Any(DeactivatedInstruments.Contains);
+            sb.AppendLine($"### {string.Join(" / ", c.Flags.Select(f => $"`{f}`"))}" +
+                          (isDeactivated ? " — **DEACTIVATED**" : ""));
             sb.AppendLine();
             if (c.Usage.Count > 0)
             {
@@ -154,6 +164,8 @@ public static class CommandDocGenerator
             var bits = new List<string>();
             if (c.Handler != null) bits.Add($"handler `{c.Handler}`");
             if (c.CostGated) bits.Add("**cost-gated (spends LLM money)**");
+            if (isDeactivated) bits.Add("**deactivated 2026-09-22 (RFC 0014)** — handler intact; " +
+                                        "remove its line from `DeactivatedInstruments.cs` to restore");
             if (bits.Count > 0) sb.AppendLine($"<sub>{string.Join(" · ", bits)}</sub>");
             sb.AppendLine();
         }

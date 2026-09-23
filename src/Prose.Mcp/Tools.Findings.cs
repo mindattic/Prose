@@ -176,7 +176,7 @@ public class FindingsTools
     /// chapter file. Normally the autonomous monitor runs this on every save;
     /// use this for ad-hoc rescans without modifying the file.
     /// </summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Manually trigger a quality scan (contradiction + cliché) on a single " +
         "chapter file. Normally the autonomous monitor runs this on every save; " +
         "use this for ad-hoc rescans without modifying the file.")]

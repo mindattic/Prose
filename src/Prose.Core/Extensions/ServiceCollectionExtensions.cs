@@ -55,13 +55,16 @@ public static class ServiceCollectionExtensions
         services.AddHostedService<AudioReconciliationBackgroundService>();
         // Global search index warmup.
         services.AddHostedService<GlobalSearchWarmupService>();
-        // Once-a-day continuity contradiction re-scan.
-        services.AddHostedService(sp => sp.GetRequiredService<ContinuityLongSweepService>());
+        // DEACTIVATED 2026-09-22 (RFC 0014, author ruling). Once-a-day continuity
+        // contradiction re-scan: unattended, unmetered LLM spend, zero applied findings
+        // in 30,745 rows. The service class is intact — uncomment to restore.
+        // services.AddHostedService(sp => sp.GetRequiredService<ContinuityLongSweepService>());
         // Living-world story-time tick (ships disabled-by-default).
         services.AddHostedService(sp => sp.GetRequiredService<WorldTickService>());
-        // Once-a-day corpus-wide sanity-scan (code-leak/mojibake/undefined-acronym/
-        // length-floor) — zero LLM calls, so no ongoing API cost from running unattended.
-        services.AddHostedService<SanityScanBackgroundService>();
+        // DEACTIVATED 2026-09-22 (RFC 0014, author ruling). Once-a-day corpus-wide
+        // sanity-scan: free of API cost, but it manufactured 5,211 findings nobody
+        // ever applied. The service class is intact — uncomment to restore.
+        // services.AddHostedService<SanityScanBackgroundService>();
         return services;
     }
 

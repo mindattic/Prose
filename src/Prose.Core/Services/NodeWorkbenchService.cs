@@ -472,65 +472,72 @@ public class NodeWorkbenchService
         // Embedding findings for why raw tags are unsafe to feed into text-matching/LLM prompts).
         var strippedForAnalysis = BeatMarkup.StripEntityTags(trimmed);
 
-        if (!deferAnalysis && semanticFidelity != null && beatSlug != null && !string.IsNullOrWhiteSpace(beat.Description))
-        {
-            var number   = beat.Number;
-            var slug2    = beatSlug;
-            var synopsis = beat.Description!;
-            _ = Task.Run(
-                    () => semanticFidelity.CheckBeatIntentDriftAsync(number, slug2, strippedForAnalysis, synopsis),
-                    CancellationToken.None)
-                .ContinueWith(t => log.LogError(t.Exception, "CheckBeatIntentDriftAsync background task failed"),
-                    TaskContinuationOptions.OnlyOnFaulted);
-        }
-
-        // Fire-and-forget: blast-radius mini re-check (2026-08-14). Every prose edit — not just
-        // an automated fix pass — is exactly where VIGL's regressions came from this session (the
-        // Ocipheus mis-fix, the Ch18 over-correction), so this runs for every save through this
-        // one write path, not a special "fix mode" flag. bookNodeId was already resolved above
-        // (also used to scope the entity-mention scanner) — the background task below gets its
-        // own contexts via blastRadius/logicSweep's own dbFactory, since `db` is disposed once
-        // this method returns.
-        if (!deferAnalysis && blastRadius != null && logicSweep != null && bookNodeId.HasValue)
-        {
-            var bnId = bookNodeId.Value;
-            _ = Task.Run(async () =>
-                {
-                    var radiusIds = await blastRadius.GetBlastRadiusBeatIdsAsync(beatId, ct: CancellationToken.None);
-                    if (radiusIds.Count > 0)
-                        await logicSweep.RunNarrowAsync(bnId, radiusIds, beatId, CancellationToken.None);
-                }, CancellationToken.None)
-                .ContinueWith(t => log.LogError(t.Exception, "Blast-radius RunNarrowAsync background task failed"),
-                    TaskContinuationOptions.OnlyOnFaulted);
-        }
-
-        // Fire-and-forget: keep the continuity ledger fresh for any book that's already opted in
-        // (ContinuityExtractionService.ReExtractChapterIfChangedAsync is itself a no-op for a book
-        // that's never been extracted, and hash-gated for a chapter whose text didn't actually
-        // change) — see ContinuityExtractionCursor's doc comment for why this exists.
-        if (!deferAnalysis && continuityExtraction != null && directNodeId != Guid.Empty)
-        {
-            var chapterNodeId = directNodeId;
-            _ = Task.Run(() => continuityExtraction.ReExtractChapterIfChangedAsync(chapterNodeId, ct: CancellationToken.None), CancellationToken.None)
-                .ContinueWith(t => log.LogError(t.Exception, "ReExtractChapterIfChangedAsync background task failed"),
-                    TaskContinuationOptions.OnlyOnFaulted);
-        }
-
-        // Fire-and-forget: the narrative obligation ledger (RFC 0013). Runs for EVERY write reason
-        // — this is the door, so a hand splice or an import registers the promises it makes just
-        // as a Generation does; the old OpenThreads extraction only ever ran after Generation,
-        // which is how a hand-spliced BCODA opened debts nothing ever recorded. Hash-gated inside
-        // on the collapsed text, so a Reflow or a no-op re-save costs nothing. TagMaintenance and
-        // Plan writes carry no new prose and are skipped outright.
-        if (!deferAnalysis && obligations != null && bookNodeId.HasValue
-            && reason is not (BeatWriteReason.TagMaintenance or BeatWriteReason.Plan))
-        {
-            var bnId = bookNodeId.Value;
-            var actor = reason == BeatWriteReason.Generation ? ObligationActor.SystemExtract : ObligationActor.SystemRescan;
-            _ = Task.Run(() => obligations.ScanBeatAsync(bnId, beatId, strippedForAnalysis, actor, CancellationToken.None), CancellationToken.None)
-                .ContinueWith(t => log.LogError(t.Exception, "NarrativeObligationService.ScanBeatAsync background task failed"),
-                    TaskContinuationOptions.OnlyOnFaulted);
-        }
+        // ══ DEACTIVATED 2026-09-22 — author ruling, RFC 0014 ══════════════════════════════════
+        //
+        // Four LLM tails used to fire here, in the background, on EVERY beat save: the
+        // semantic-fidelity drift check (1 call), the blast-radius narrow sweep (6 calls), the
+        // continuity re-extraction (1) and the obligation scan (1+). Roughly nine LLM calls per
+        // save, unasked, unmetered — none of them cost-scoped, so nothing could say what they had
+        // cost. Measured value, corpus-wide, all time: blast-radius 4,359 findings and 0 ever
+        // applied; obligations 140 and 0, against a measured 96% false-positive rate (RFC 0013
+        // §8); semantic-drift 1,055 and 0. Author: "tired of it burning $400 and fixing nothing."
+        //
+        // Left in place, commented, rather than deleted — the standing verdict policy is that a
+        // failed instrument comes back for review when someone wants it, so uncommenting one
+        // block is all it takes. If you bring one back, give it a BeginCostScope first: the
+        // reason nobody could argue for or against these is that no one could price them.
+        //
+        // Still running below this point, deliberately: EntityMentionScanner (deterministic, free,
+        // and other reads depend on the presence rows it derives) and the edit-session log (free).
+        //
+        // if (!deferAnalysis && semanticFidelity != null && beatSlug != null && !string.IsNullOrWhiteSpace(beat.Description))
+        // {
+        //     var number   = beat.Number;
+        //     var slug2    = beatSlug;
+        //     var synopsis = beat.Description!;
+        //     _ = Task.Run(
+        //             () => semanticFidelity.CheckBeatIntentDriftAsync(number, slug2, strippedForAnalysis, synopsis),
+        //             CancellationToken.None)
+        //         .ContinueWith(t => log.LogError(t.Exception, "CheckBeatIntentDriftAsync background task failed"),
+        //             TaskContinuationOptions.OnlyOnFaulted);
+        // }
+        //
+        // Blast-radius mini re-check (2026-08-14), scoped by BlastRadiusService and run through
+        // LogicSweepService.RunNarrowAsync — six audit dimensions per save.
+        // if (!deferAnalysis && blastRadius != null && logicSweep != null && bookNodeId.HasValue)
+        // {
+        //     var bnId = bookNodeId.Value;
+        //     _ = Task.Run(async () =>
+        //         {
+        //             var radiusIds = await blastRadius.GetBlastRadiusBeatIdsAsync(beatId, ct: CancellationToken.None);
+        //             if (radiusIds.Count > 0)
+        //                 await logicSweep.RunNarrowAsync(bnId, radiusIds, beatId, CancellationToken.None);
+        //         }, CancellationToken.None)
+        //         .ContinueWith(t => log.LogError(t.Exception, "Blast-radius RunNarrowAsync background task failed"),
+        //             TaskContinuationOptions.OnlyOnFaulted);
+        // }
+        //
+        // Continuity ledger refresh — no-op for a book never extracted, hash-gated per chapter.
+        // if (!deferAnalysis && continuityExtraction != null && directNodeId != Guid.Empty)
+        // {
+        //     var chapterNodeId = directNodeId;
+        //     _ = Task.Run(() => continuityExtraction.ReExtractChapterIfChangedAsync(chapterNodeId, ct: CancellationToken.None), CancellationToken.None)
+        //         .ContinueWith(t => log.LogError(t.Exception, "ReExtractChapterIfChangedAsync background task failed"),
+        //             TaskContinuationOptions.OnlyOnFaulted);
+        // }
+        //
+        // Narrative obligation ledger (RFC 0013) — ran for every write reason except
+        // TagMaintenance/Plan, hash-gated on the collapsed text.
+        // if (!deferAnalysis && obligations != null && bookNodeId.HasValue
+        //     && reason is not (BeatWriteReason.TagMaintenance or BeatWriteReason.Plan))
+        // {
+        //     var bnId = bookNodeId.Value;
+        //     var actor = reason == BeatWriteReason.Generation ? ObligationActor.SystemExtract : ObligationActor.SystemRescan;
+        //     _ = Task.Run(() => obligations.ScanBeatAsync(bnId, beatId, strippedForAnalysis, actor, CancellationToken.None), CancellationToken.None)
+        //         .ContinueWith(t => log.LogError(t.Exception, "NarrativeObligationService.ScanBeatAsync background task failed"),
+        //             TaskContinuationOptions.OnlyOnFaulted);
+        // }
+        // ══════════════════════════════════════════════════════════════════════════════════════
     }
 
     /// <summary>

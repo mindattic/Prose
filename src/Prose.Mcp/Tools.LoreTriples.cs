@@ -58,7 +58,7 @@ public class LoreTripleTools
     /// Same-(entity,predicate) with different `object` auto-flags a contradiction.
     /// Returns: new / confirmed / contradicted counts.
     /// </summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Extract atomic continuity claims (entity, predicate, object triples) from a chapter's prose. " +
         "Each triple's snippet is validated against the source prose; survivors are " +
         "upserted into the unified continuity store. Same-(entity,predicate) with different `object` " +
@@ -94,7 +94,7 @@ public class LoreTripleTools
     /// Extract continuity claims from every chapter in a book sequentially.
     /// Long-running; returns per-chapter results plus aggregate counts.
     /// </summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Extract continuity claims from every chapter in a book (sequential — long-running). " +
         "Returns per-chapter results plus aggregate counts.")]
     public Task<string> ExtractContinuityFromBook(
@@ -138,7 +138,7 @@ public class LoreTripleTools
     /// ledger prose/entity-record claims use, so a stale bible fact and a solid prose fact on the
     /// same (entity, predicate) compete and surface a contradiction automatically.
     /// </summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Extract continuity claims from a book's story bible (prefers the NodeOutlineSections " +
         "'Characters' section — settled character-sheet facts, not plot-forward arc/spine content " +
         "— falling back to the raw NodeOutline blob). Claims land with SourceType=\"bible\" in the " +
@@ -183,7 +183,7 @@ public class LoreTripleTools
     /// fields become direct claims; prose fields (description, personality,
     /// ideology…) go through the same single-call extraction as chapter prose.
     /// </summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Extract continuity claims from a single entity record by EntityId (canonical Records.Json blob in SQL). " +
         "Top-level scalar fields become direct claims; prose fields (description, personality, ideology…) " +
         "go through the same single-call extraction as chapter prose.")]

@@ -28,7 +28,7 @@ public class NounConsistencyTools(
     static readonly JsonSerializerOptions JsonOpts = new() { WriteIndented = false };
 
     /// <summary>Scan a node's prose beats for deprecated or renamed noun references.</summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Scan a node's prose beats for deprecated or renamed noun references. " +
         "Returns ok:true when clean; ok:false with a violations list (beatNumber, " +
         "deprecatedName, canonicalName, snippet) when stale names are found. " +

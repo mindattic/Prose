@@ -83,7 +83,7 @@ public class CraftInstrumentTools(
     }
 
     /// <summary>Corpus-wide "a character can only be in one place at a time" contradiction scan.</summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Runs the LocationContradictionService corpus scan — \"a character can only be in one place " +
         "at a time\" — over located_at Edges and dated legacy chapter-beats. Corpus-wide by design, " +
         "not scoped to one book. Conflicts are filed to the Findings inbox (Contradiction category). " +

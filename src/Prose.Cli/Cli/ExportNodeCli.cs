@@ -13,10 +13,11 @@ namespace Prose.Cli;
 /// export directory <em>for the node's universe</em>
 /// (<c>UniverseExportDirectories[slug]</c>), never the shared global — so
 /// exporting a Scry book can't redirect where GLMZ books land, and vice versa.
-/// <para>Blocks (exit 1) unless <see cref="BookHealthService.PublishReadinessAsync"/>'s
-/// six-check gate (docs/LOGIC.md §9) reports Ready, or <c>--force-export</c> is passed to
-/// override with a visible warning (2026-09-01 — closes the gap where this gate was computed by
-/// <c>prose --publish-readiness</c> but nothing actually blocked export on it).</para>
+/// <para>The <see cref="BookHealthService.PublishReadinessAsync"/> pre-flight is DEACTIVATED
+/// (2026-09-22, RFC 0014 — the gate's instruments produced 8 applied findings out of 30,745).
+/// Export no longer blocks on it and <c>--force-export</c> is a no-op; the block is commented
+/// out in place, and <c>prose --publish-readiness</c> still computes the report on demand.
+/// The mojibake guard and the BLOCKER verification gate are unaffected and still block.</para>
 /// <para>NOTE: this is local file rendering only — there is no KDP API
 /// integration. "Export" is the correct name; it does not touch
 /// <see cref="Node.PublishUrl"/> or <see cref="Node.PublicationStatus"/>, which
@@ -100,44 +101,50 @@ public static class ExportNodeCli
             return 1;
         }
 
-        // ── pre-export publish-readiness gate (docs/LOGIC.md §9, six-check convergence gate) ──
-        // Reads existing findings/convergence state — does NOT re-run any sweep. Run
-        // 'prose --logic-sweep --slug <slug> --until-dry' first to refresh, then fix what's open.
-        var readiness = await bookHealth.PublishReadinessAsync(nodeId);
-        if (!readiness.Ready)
-        {
-            if (!forceExport)
-            {
-                Console.Error.WriteLine("[export-node] ❌ Publish-readiness gate failed — fix before exporting, or pass --force-export to override:");
-                foreach (var c in readiness.Checks.Where(c => !c.Pass))
-                    Console.Error.WriteLine($"  ❌ {c.Name} — {c.Detail}");
-                Console.Error.WriteLine("[export-node] Run 'prose --publish-readiness --slug <slug>' for the full report.");
-                return 1;
-            }
-
-            var failing = readiness.Checks.Where(c => !c.Pass).ToList();
-            Console.Error.WriteLine($"[export-node] ⚠ --force-export: overriding {failing.Count} failing publish-readiness check(s):");
-            foreach (var c in failing)
-                Console.Error.WriteLine($"  ⚠ {c.Name} — {c.Detail}");
-
-            // Record the override where a later session can find it. Until now a forced export
-            // warned to stderr and vanished: nothing in the database knew a manuscript had
-            // shipped past a failing gate, which check was failing at the time, or that it had
-            // happened at all. The decision ledger exists for exactly this — "reconstruct not
-            // just what ran, but why", without depending on a chat transcript.
-            await using var dbGate = await dbFactory.CreateDbContextAsync();
-            dbGate.DecisionLedgerEntries.Add(new Prose.Core.Data.Entities.DecisionLedgerEntry
-            {
-                Summary = Truncate($"Publish gate BYPASSED for \"{nodeTitle}\" ({nodeSlug}) — " +
-                                   $"exported V{nodeVersion + 1} with {failing.Count} check(s) unmet", 256),
-                Rationale = "--force-export was passed. Unmet at export time:\n" +
-                            string.Join("\n", failing.Select(c =>
-                                $"  [{c.Outcome}] {c.Name} — {c.Detail}")),
-                Category = "publish-gate-bypass",
-                Actor = "prose --export-node",
-            });
-            await dbGate.SaveChangesAsync();
-        }
+        // ── pre-export publish-readiness gate — DEACTIVATED 2026-09-22 ───────────────
+        // RFC 0014, author ruling: "just comment out all of these, they've never proven
+        // their worth." The gate blocked export on findings from instruments that have
+        // produced 8 applied findings out of 30,745 — it cost real publishing time and
+        // bought nothing. Nothing here is deleted: uncomment this block (and restore the
+        // --force-export path below) to put the gate back.
+        //
+        // var readiness = await bookHealth.PublishReadinessAsync(nodeId);
+        // if (!readiness.Ready)
+        // {
+        //     if (!forceExport)
+        //     {
+        //         Console.Error.WriteLine("[export-node] ❌ Publish-readiness gate failed — fix before exporting, or pass --force-export to override:");
+        //         foreach (var c in readiness.Checks.Where(c => !c.Pass))
+        //             Console.Error.WriteLine($"  ❌ {c.Name} — {c.Detail}");
+        //         Console.Error.WriteLine("[export-node] Run 'prose --publish-readiness --slug <slug>' for the full report.");
+        //         return 1;
+        //     }
+        //
+        //     var failing = readiness.Checks.Where(c => !c.Pass).ToList();
+        //     Console.Error.WriteLine($"[export-node] ⚠ --force-export: overriding {failing.Count} failing publish-readiness check(s):");
+        //     foreach (var c in failing)
+        //         Console.Error.WriteLine($"  ⚠ {c.Name} — {c.Detail}");
+        //
+        //     // Record the override where a later session can find it. Until now a forced export
+        //     // warned to stderr and vanished: nothing in the database knew a manuscript had
+        //     // shipped past a failing gate, which check was failing at the time, or that it had
+        //     // happened at all. The decision ledger exists for exactly this — "reconstruct not
+        //     // just what ran, but why", without depending on a chat transcript.
+        //     await using var dbGate = await dbFactory.CreateDbContextAsync();
+        //     dbGate.DecisionLedgerEntries.Add(new Prose.Core.Data.Entities.DecisionLedgerEntry
+        //     {
+        //         Summary = Truncate($"Publish gate BYPASSED for \"{nodeTitle}\" ({nodeSlug}) — " +
+        //                            $"exported V{nodeVersion + 1} with {failing.Count} check(s) unmet", 256),
+        //         Rationale = "--force-export was passed. Unmet at export time:\n" +
+        //                     string.Join("\n", failing.Select(c =>
+        //                         $"  [{c.Outcome}] {c.Name} — {c.Detail}")),
+        //         Category = "publish-gate-bypass",
+        //         Actor = "prose --export-node",
+        //     });
+        //     await dbGate.SaveChangesAsync();
+        // }
+        if (forceExport)
+            Console.WriteLine("[export-node] --force-export accepted (no-op: the publish-readiness gate is deactivated).");
 
         // ── pre-export BLOCKER verification gate (Track C — Truth-First Architecture) ──
         // Reads existing BeatVerification rows — does NOT re-run checks. Run

@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**297 tools** across **50 tool families.**
+**268 tools** across **46 tool families.**
 
 ## Families
 
@@ -20,7 +20,6 @@
 | [Barks Export](#barks-export) | 1 |
 | [Beat Archive](#beat-archive) | 1 |
 | [Beat Event List](#beat-event-list) | 3 |
-| [Beat Lens](#beat-lens) | 3 |
 | [Bible](#bible) | 3 |
 | [Book Health](#book-health) | 1 |
 | [Book Logic](#book-logic) | 3 |
@@ -28,32 +27,29 @@
 | [Canon Doc](#canon-doc) | 7 |
 | [Character Gear](#character-gear) | 3 |
 | [Combat](#combat) | 1 |
-| [Config](#config) | 14 |
+| [Config](#config) | 13 |
 | [Context](#context) | 5 |
-| [Continuity](#continuity) | 2 |
 | [Core Entity Crud](#core-entity-crud) | 5 |
-| [Craft Instrument](#craft-instrument) | 4 |
-| [Data Integrity](#data-integrity) | 4 |
+| [Craft Instrument](#craft-instrument) | 3 |
+| [Data Integrity](#data-integrity) | 2 |
 | [Edit Session](#edit-session) | 6 |
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 7 |
 | [Entity Tag](#entity-tag) | 3 |
-| [Findings](#findings) | 6 |
+| [Findings](#findings) | 5 |
 | [Gear Entity Crud](#gear-entity-crud) | 8 |
 | [Glossary](#glossary) | 4 |
 | [Hub](#hub) | 3 |
 | [Ledger](#ledger) | 4 |
-| [Lore Triple](#lore-triple) | 8 |
-| [Narrative Science](#narrative-science) | 1 |
+| [Lore Triple](#lore-triple) | 4 |
 | [Node](#node) | 37 |
-| [Noun Consistency](#noun-consistency) | 3 |
-| [Obligation](#obligation) | 13 |
+| [Noun Consistency](#noun-consistency) | 2 |
+| [Obligation](#obligation) | 11 |
 | [One Shot Generation](#one-shot-generation) | 1 |
 | [Operator Key](#operator-key) | 5 |
-| [Planning](#planning) | 3 |
+| [Planning](#planning) | 2 |
 | [Plant Payoff](#plant-payoff) | 5 |
-| [Quality](#quality) | 8 |
-| [Reader Qa](#reader-qa) | 3 |
+| [Quality](#quality) | 5 |
 | [Repository](#repository) | 3 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
@@ -61,11 +57,11 @@
 | [Survey](#survey) | 7 |
 | [Universe](#universe) | 5 |
 | [Universe Interchange](#universe-interchange) | 4 |
-| [Verification](#verification) | 5 |
+| [Verification](#verification) | 3 |
 | [Voice](#voice) | 6 |
 | [Workflow Monitor](#workflow-monitor) | 3 |
 | [World Entity Crud](#world-entity-crud) | 6 |
-| [World Modelling](#world-modelling) | 13 |
+| [World Modelling](#world-modelling) | 11 |
 | [Writing](#writing) | 3 |
 
 ## Barks Export
@@ -109,28 +105,6 @@ Generate/refresh the per-beat plot-event list (Beat.EventSummary) for a node —
 ### `get_event_list`
 
 Return the current per-beat plot-event list for a node as ordered structured data — one entry per enabled beat with its SortKey, title, POV, and EventSummary line. Reads DB state only, no LLM call, no disk write — the fast, in-session way to read a whole book's plot flow without opening the exported {CODE}-Events.txt or reading the raw prose. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-
-## Beat Lens
-
-<sub>`BeatLensTools`</sub>
-
-### `affect_check`
-
-Check whether each character's EMOTION believably DRIVES their ACTION. Flags actions that ignore what just happened, unmotivated calm, feelings named but not enacted. Files advisory Findings; returns score 0-100 + issues. Arg: node GUID or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-
-### `causality_check`
-
-Check a node's CAUSE-AND-EFFECT: do beats follow by therefore/but rather than 'and then'? Flags episodic transitions, effects without setup, actions against established motive, implausible reactions. Files advisory Findings; returns score 0-100 + issues. Arg: node GUID or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-
-### `interpersonal_check`
-
-Check INTERPERSONAL DYNAMICS — the 90+ relational lever. Are exchanges doing real relational work on BOTH channels (verbal subtext + non-verbal body/gesture)? Flags info-only dead exchanges, missing non-verbal channel, on-the-nose emotion-naming, bonds that don't change. Files advisory Findings; returns score 0-100 + issues. Arg: node GUID or slug.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 
@@ -395,13 +369,6 @@ Show the running token cost tally for the current MCP server session. Returns ca
 
 - `reset` (bool, optional) — If true, clear the ledger after reporting. Default false.
 
-### `get_liberty_report`
-
-Show the liberty analysis (Rule of Cool) for a single beat or all beats in a book. A 'liberty' is any creative departure from the beat goal or entity roster: entity_invention (name not in DB), tech_departure (GLMZ physics violated), or creative_departure (plot beyond the beat goal). Each liberty is scored CoolFactor 0–10: ≥8 → CANON-ADDITION-CANDIDATE finding, 5–7 → LIBERTY-CONSIDER advisory, ≤4 entity invention → LIBERTY-WARNING. Reports are written automatically after each beat write; this tool reads them.
-
-- `beatId` (string, optional) — Beat GUID to retrieve the report for that specific beat.
-- `slug` (string, optional) — Book slug (e.g. 'icfi') to retrieve all reports for that book, newest first.
-
 ### `get_markdown_file`
 
 Get the content of a tracked markdown file from the database. Pass asOf (ISO 8601 UTC) to retrieve a historical version from the temporal table. relativePath examples: 'CLAUDE.md', 'docs/BIBLE.md', 'feedback_sequential_node_writing.md'
@@ -482,29 +449,6 @@ Search the world graph by theme, not by name. TF-IDF cosine similarity across ev
 
 - `query` (string, required) — Free-text query — describe the theme/scene/concept.
 - `topK` (int, optional) — Number of top hits to return. Default 8.
-
-## Continuity
-
-<sub>`ContinuityTools`</sub>
-
-### `find_contradictions`
-
-Find contradictions in a chapter against established canon. Pulls the characters from the chapter's `characters` field, plus the book's state_at_end and all prior chapters' synopses, builds a canon-context bundle, and dispatches a Legion Quorum vote with a contradiction-finding rubric (EPISTEMIC / TEMPORAL / CAPABILITY / CANON). Returns a JSON report with findings, citations, severity, and suggested fixes. Exit-code-equivalent convention: ok=true means no contradictions; ok=false means findings exist.
-
-- `chapterId` (string, required) — Chapter id (32-char hex), resolved from the SQL canon (IChapterRepository) — the pre-SS-A45 engine/data/chapters/<id>/chapter.json disk layout was retired 2026-05-08.
-- `quorum` (string, optional) — Quorum requirement for the contradiction vote: plurality | simplemajority | twothirds | unanimous. Default plurality (most permissive — surfaces every voter's concerns).
-- `maxTokens` (int, optional) — Max tokens per voter response. Default 4096. Larger values produce more thorough reports but cost more.
-- `maxContextChars` (int, optional) — Hard cap on canon-context characters before the draft text is appended. Default 80000. Lower this if hitting provider context limits.
-
-### `find_contradictions_book`
-
-Find contradictions across an entire book by running a pairwise sweep — every chapter is graded against the FULL PROSE of every OTHER chapter (forward AND backward). Catches things a single-chapter check misses: a character who dies in chapter 3 but speaks in chapter 5, a character revealed left-handed in chapter 6 catching a ball right-handed in chapter 2, a stated age that drifts between chapters, etc. Cross-chapter findings are consolidated so the same contradiction surfaces once with all chapter numbers attached. Expensive — dispatches N Legion votes per book. Use synopsisOnly=true for cheaper triage that skips prose-level facts. Returns a JSON report with per-chapter findings and a consolidated cross-book finding list. Exit-code-equivalent convention: ok=true means no contradictions; ok=false means findings exist.
-
-- `bookId` (string, required) — Book id (32-char hex), resolved from the SQL canon (IBookRepository) with its chapters — the pre-SS-A45 engine/data/books/<id>.json disk layout was retired 2026-05-08.
-- `quorum` (string, optional) — Quorum requirement for the contradiction vote: plurality | simplemajority | twothirds | unanimous. Default plurality (most permissive — surfaces every voter's concerns).
-- `maxTokens` (int, optional) — Max tokens per voter response. Default 4096. Larger values produce more thorough reports but cost more.
-- `maxContextChars` (int, optional) — Hard cap on canon-context characters per chapter pass. Default 0 = let the script choose (400000 with prose, 120000 with synopsisOnly). Lower this if hitting provider context limits.
-- `synopsisOnly` (bool, optional) — If true, feed only chapter synopses (not full prose) as canon. Cheaper but misses prose-level facts like handedness or specific physical actions. Default false (prose included).
 
 ## Core Entity Crud
 
@@ -618,12 +562,6 @@ Deterministic prose linter (RepetitionLintService) — echo words, crutch phrase
 - `slug` (string, required) — Node slug or code.
 - `dryRun` (bool, optional) — Preview findings without writing them.
 
-### `location_scan`
-
-Runs the LocationContradictionService corpus scan — "a character can only be in one place at a time" — over located_at Edges and dated legacy chapter-beats. Corpus-wide by design, not scoped to one book. Conflicts are filed to the Findings inbox (Contradiction category). The scan reports its own data-coverage status honestly (empty result is common until in-world dates/locations are populated).
-
-- `minTravelMinutes` (int, optional) — Minimum minutes between two locations to NOT count as a contradiction (dramatic-license knob).
-
 ## Data Integrity
 
 <sub>`DataIntegrityTools`</sub>
@@ -639,19 +577,6 @@ Audit SSOT drift across the SQL schema — denormalized display fields (Alias ca
 Check the active universe's world-graph health: orphaned nodes (zero edges), weakly-connected nodes (exactly one edge), and suspicious/malformed node names (sentence fragments, junk parses from free-text fields promoted verbatim into node identities). Rebuilds the graph from live SQL before analyzing, so results always reflect current data. Zero LLM calls; pure graph traversal + string heuristics.
 
 - _(no parameters)_
-
-### `duplicate_entity_scan`
-
-Scan a universe's Entities of one EntityType (default 'character'; also useful for 'faction', 'place', etc.) for duplicate or near-duplicate names (exact match, or exactly 1 edit apart, e.g. "Boris Johansen" vs "Boris Johanssen") that are NOT explained by legitimate cross-book disambiguation (Entity.OriginNodeId set to different values, meaning deliberately distinct characters in different books' continuity). Finds candidates only — it does not merge or delete anything; resolving a duplicate requires reading the actual prose to determine which row (if either) matches what was actually written, exactly as the investigation that motivated this tool did (TEST's 'Bear', 2026-08-10 — two draft entity rows, neither fully correct on its own). No LLM calls.
-
-- `universeSlug` (string, required) — Universe slug, e.g. 'glmz', 'scry', 'nonfiction'.
-- `entityType` (string, optional) — Entity type to scan. Defaults to 'character'.
-
-### `sanity_scan_node`
-
-Run the deterministic (no-LLM) sanity scan against one book's prose: internal dev-code leaks (an internal node code like 'BCODA' appearing as if it were an in-world name), undefined all-caps acronyms (excludes the book's own code, purely-numeric codes, glossaried terms, and acronyms inside an embedded found-document/log block written in sustained capitals), a 50-page length floor, and mojibake (encoding corruption). Fast enough for a pre-publish gate. Accepts a book node's slug or GUID.
-
-- `nodeIdOrSlug` (string, required) — Book node slug or GUID to scan.
 
 ## Edit Session
 
@@ -1022,12 +947,6 @@ List findings from the autonomous quality inbox. ContinuousQualityService auto-d
 - `status` (string, optional) — Filter by status: New, Triaged, Applied, Dismissed. Omit for all.
 - `limit` (int, optional) — Max number of findings to return. Default 100.
 
-### `scan_chapter_quality`
-
-Manually trigger a quality scan (contradiction + cliché) on a single chapter file. Normally the autonomous monitor runs this on every save; use this for ad-hoc rescans without modifying the file.
-
-- `filePath` (string, required) — Absolute path to a chapter.json file.
-
 ### `set_finding_status`
 
 Mark a finding triaged / applied / dismissed without writing to source files.
@@ -1273,34 +1192,6 @@ Apply a CANONICAL or CONFIRMED claim to its entity record file. Legion's panel p
 
 - `claimUid` (string, required) — Claim uid to apply.
 
-### `extract_continuity_from_book`
-
-Extract continuity claims from every chapter in a book (sequential — long-running). Returns per-chapter results plus aggregate counts.
-
-- `bookId` (string, required) — Book id (32-char hex).
-- `maxTokens` (int, optional) — Max tokens for the extraction response, per chapter. Default 4096.
-
-### `extract_continuity_from_chapter`
-
-Extract atomic continuity claims (entity, predicate, object triples) from a chapter's prose. Each triple's snippet is validated against the source prose; survivors are upserted into the unified continuity store. Same-(entity,predicate) with different `object` auto-flags a contradiction. Returns: new / confirmed / contradicted counts. ok=true when no new contradictions surfaced.
-
-- `chapterId` (string, required) — Chapter id (32-char hex).
-- `maxTokens` (int, optional) — Max tokens for the extraction response. Default 4096.
-
-### `extract_continuity_from_entity_record`
-
-Extract continuity claims from a single entity record by EntityId (canonical Records.Json blob in SQL). Top-level scalar fields become direct claims; prose fields (description, personality, ideology…) go through the same single-call extraction as chapter prose.
-
-- `entityId` (string, required) — EntityId (guid, hyphenated or 32-char hex) of the canon entity to extract from.
-
-### `extract_continuity_from_outline`
-
-Extract continuity claims from a book's story bible (prefers the NodeOutlineSections 'Characters' section — settled character-sheet facts, not plot-forward arc/spine content — falling back to the raw NodeOutline blob). Claims land with SourceType="bible" in the same ledger chapter-prose and entity-record extraction already populate, so a bible fact and a prose fact on the same (entity, predicate) compete/reconcile automatically — this is how the Bible gets validated against (and validates) the actual prose and the entity repo.
-
-- `nodeIdOrSlug` (string, required) — Book/series node id (guid) or slug/NodeCode.
-- `sectionType` (string, optional) — NodeOutlineSections section to prefer: Characters (default, settled fact) | ArcSummary | VoiceRegister | NarrativeLocks | BeatSpine. Falls back to the raw NodeOutline blob if the section doesn't exist yet.
-- `maxTokens` (int, optional) — Max tokens for the extraction response. Default 8192 — higher than chapter extraction's 4096, since a book's whole character roster commonly produces a larger fact list than a single beat/chapter does.
-
 ### `get_continuity_claims`
 
 List continuity claims. Optional filters: entity (id or name), status (NEW | CONFIRMED | CONTRADICTED | CANONICAL | REJECTED | SUPERSEDED). Returns the claims with their predicates, objects, sources, and statuses.
@@ -1323,17 +1214,6 @@ Resolve a contradiction. Winner = A | B (one claim wins → CANONICAL, the other
 - `winner` (string, required) — Winner: A | B | custom.
 - `customObject` (string, optional) — Required when winner=custom: the agreed value.
 - `note` (string, optional) — Optional resolution note (kept in audit trail).
-
-## Narrative Science
-
-<sub>`NarrativeScienceTools`</sub>
-
-### `check_antihero_empathy`
-
-Evaluate whether a beat activates the four antihero empathy levers per Will Storr. The four levers: (1) pre_deflation — a worse villain or more selfish character is visible, making the antihero look better; (2) vulnerability_pain — the beat shows the wound or fear beneath the surface; (3) genuine_virtue — the antihero acts selflessly, even briefly; (4) altruistic_punishment — the antihero punishes selfishness the reader also wants punished. Returns per-lever verdict with evidence, levers_active count (0–4), empathy_score 1–10, a diagnosis paragraph, and an improvement hint. Accepts character id (GUID) or slug.
-
-- `characterIdOrSlug` (string, required) — Character entity ID (GUID) or slug.
-- `beatText` (string, required) — The beat's prose text to evaluate.
 
 ## Node
 
@@ -1414,11 +1294,11 @@ Render the whole node as one continuous narration (no per-beat voice drift) and 
 
 ### `export_node`
 
-Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), and keywords.txt (from seeded NodeKeywords), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. Blocked with ok:false unless the publish-readiness gate (docs/LOGIC.md §9) passes or forceExport is true — call publish_readiness first if unsure. Use get_node first to confirm the node exists.
+Render a node to .docx + .epub + .pdf + .txt, plus description.txt (from Node.Description), and keywords.txt (from seeded NodeKeywords), all written to the configured export directory (defaults to Desktop). Same full pipeline as the CLI's `prose --export-node --slug <slug>`. Returns the path of every artifact written (nulls for the optional ones that had no source data). This only generates local files — it does not publish anything to Amazon/KDP. The publish-readiness gate no longer blocks export (deactivated 2026-09-22) — run publish_readiness yourself if you want that report. Use get_node first to confirm the node exists.
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `author` (string, optional) — Author name to embed in the document properties. Optional.
-- `forceExport` (bool, optional) — Export even if the publish-readiness gate reports open findings. Default false.
+- `forceExport` (bool, optional) — Accepted and ignored — the publish-readiness gate it overrode is deactivated.
 
 ### `generate_book_outline`
 
@@ -1646,12 +1526,6 @@ List all registered deprecated noun rules. Filter by universeSlug ('glmz' or 'fa
 
 - `universeSlug` (string, optional) — Optional universe slug to filter ('glmz' or 'fantasy'). Omit for all.
 
-### `validate_nouns`
-
-Scan a node's prose beats for deprecated or renamed noun references. Returns ok:true when clean; ok:false with a violations list (beatNumber, deprecatedName, canonicalName, snippet) when stale names are found. Register rules first with add_deprecated_name.
-
-- `nodeIdOrSlug` (string, required) — Node slug or GUID to scan.
-
 ## Obligation
 
 <sub>`ObligationTools`</sub>
@@ -1693,13 +1567,6 @@ One obligation with its full journal (every open/advance/close/drop/defer/withdr
 
 - `obligationId` (string, required) — Obligation id (GUID).
 
-### `ground_entity_records`
-
-Ground entity records in prose (RFC 0013): decompose every character/place/faction record tagged in the book into atomic claims and check each against the beats with a quote-gated entailment call. Unentailed/contradicted claims are filed under EntityDrift (node:{slug}#recordground) and matching non-authored ledger claims are quarantined to 'inferred'. The record text is never edited — you accept or strike. Optional entity name filter. Costs a few cents per entity.
-
-- `nodeIdOrSlug` (string, required) — Book node id/slug/code.
-- `entityName` (string, optional) — Only entities whose name contains this (optional).
-
 ### `link_obligation_entity`
 
 Point an obligation at the entity it is about (e.g. after naming an '(unnamed) girl behind the curtain' stub, or merging it into a canon character).
@@ -1735,13 +1602,6 @@ Declare an obligation yourself (provenance authored, locked): a promise the outl
 - `quote` (string, optional) — Verbatim quote from that beat (optional; ≥12 chars).
 - `trigger` (string, optional) — Narrative condition under which paying this becomes natural (optional).
 - `due` (string, optional) — chapter:N | beats:N | book-end
-
-### `reconcile_obligations`
-
-Run the obligation reconciliation instrument on a book (RFC 0013): six free deterministic rules over the ledger — overdue_open, open_at_end, stale_closure, dangling_beat, unplanted_payoff, deferred_expired — filed as NarrativeObligation findings under node:{slug}#obligations, plus a health snapshot. deep=true first runs the paid resurfacing judge (one Haiku call per open obligation, quote-gated, cached by candidate text) so payoffs the extractor missed are closed before the balance is struck. Reports 'examined N obligations over M beats'; could_not_look=true means the ledger is empty — rescan first.
-
-- `nodeIdOrSlug` (string, required) — Book node id/slug/code.
-- `deep` (bool, optional) — Also run the resurfacing judge (costs cents).
 
 ### `reopen_obligation`
 
@@ -1828,16 +1688,6 @@ List a node's edges filtered by relation type. Subset of get_neighbors that retu
 - `nodeId` (string, required) — Source node id (use search_semantic / list_characters / etc. to find).
 - `relationType` (string, required) — Relation type to filter on. Case-insensitive substring match (e.g. 'rival' matches 'rivalry').
 
-### `predict_behavior`
-
-Predict a character's likely behavior in a given scene. Pulls from the character's psychology (core_fears, core_desires, coping_mechanisms, blind_spots), behavioral (decision_rules, escalation_ladder, contradictions, habits, breaking_points, stress_responses), and archetype influences. Returns dominant_state, likely_actions, dialogue_mode, concealing, physical_behavior, relationship_dynamics, stress_response, near_breaking_point. No LLM call — pure structural inference. Use this BEFORE drafting a scene to know how a character will read.
-
-- `characterName` (string, required) — Character name — exact match against canon.
-- `sceneLocation` (string, required) — Scene location.
-- `othersPresent` (string, required) — Other characters present in the scene (comma-separated names).
-- `beatGoal` (string, required) — What this beat is trying to accomplish narratively.
-- `tensionLevel` (int, optional) — Tension level 1-10. Use 1-3 for low/calm, 4-6 for charged, 7-9 for crisis, 10 for breaking point.
-
 ## Plant Payoff
 
 <sub>`PlantPayoffTools`</sub>
@@ -1885,19 +1735,6 @@ Record whether a payoff beat stands alone for cold readers (is_transparent) and 
 
 <sub>`QualityTools`</sub>
 
-### `analyze_writing_quality`
-
-Run the writing-quality heuristic pass over a book's chapters. Same checks the BookReviewService runs before its LLM Quorum: first-line strength, tension delta (flags 4+ low-tension beats in a row), paragraph-serves audit (paragraphs with no dialogue / sensory detail / action / number / capitalized noun), motif reuse (chapters that drop registered motifs), voice cadence Jaccard (chapter prose drifting from POV character's documented vocabulary). Returns findings list. No LLM calls.
-
-- `bookId` (string, required) — Book id.
-
-### `check_duplicate_beats`
-
-Corpus-wide near-duplicate-scene detector. Flags beat pairs anywhere in a book whose prose embeddings are near-identical (default cosine similarity floor 0.90) — catches an abandoned early draft left enabled alongside its own developed, canonical rewrite written later. Excludes beat pairs merely adjacent within the same chapter (a continuous scene is supposed to share vocabulary — that's not a duplicate). The 0.90 default is deliberately high-precision/low-recall: real-corpus calibration found a genuine duplicate pair scoring only 0.84, while a lower floor also surfaces dozens of false positives from a book's own deliberate recurring formulaic devices (contract postings, logbook entries). Pass a lower threshold (e.g. 0.80) for an occasional deliberate deep pass, expecting more manual filtering. Candidate generator, NOT a verdict: read both beats in full before disabling either with set_beat_membership_enabled. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug — should be a BookNode; its descendant chapters are scanned together.
-- `threshold` (double, optional) — Cosine similarity floor for a candidate pair, 0–1. Default 0.90.
-
 ### `get_review_settings`
 
 Return the current review-voting configuration: how many score-ballots and prose upgrades a sampled run casts, the persona panel depth, default reader count, max parallel ballot slots, judge provider, the comma-separated list of allowed providers, and whether the continuous auto-review monitor is enabled. Use update_review_settings to change any value.
@@ -1918,19 +1755,6 @@ List individual ballot reviews for a node — one row per persona reader, showin
 - `contentHash` (string, optional) — Only return reviews from this content hash (i.e. one specific review run). Leave empty for all reviews.
 - `limit` (int, optional) — Maximum rows to return. Default 50.
 
-### `review_book`
-
-Run the sampled Legion review panel against a node. STRUCTURAL PRE-FLIGHT runs first: if blocking failures are found (missing antagonist cost, passive protagonist, purely-stated stakes, >70% exposition), the review is blocked and returns the diagnosis instead of ballots — fix the structure first. Non-blocking warnings are always appended to the report. Stratified personas cast score-only ballots then the most informative are upgraded to full prose. Use the 'effort' tier to scale cost to importance. BRAIN: by default ballots run on the CLOUD trusted-4 panel; set use_local=true to run them on the LOCAL LLM instead (Ollama — free, no API tokens, but ONE model = no temperament diversity, so local scores are a SEPARATE baseline, not comparable to cloud means). The response always states which brain ran ('brain': 'cloud'|'local', plus 'model'). Returns: blocked (bool), brain, model, mean_score, SD, CI, report_markdown (includes structural findings), synopsis. GOTCHA: do not edit beats while a review is running. Alias: also accepts node id (GUID) for the nodeIdOrSlug param.
-
-- `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
-- `ballots` (int, optional) — Number of score-only ballots to cast. 0 = use the effort tier (if given) or the ReviewBallots setting (default 20). A non-zero value overrides the tier.
-- `prose` (int, optional) — Number of full prose reviews to write (upgraded from ballots). 0 = use the effort tier (if given) else 0. A non-zero value overrides the tier.
-- `skipDiagnosis` (bool, optional) — Set true to skip structural pre-flight and run ballots unconditionally. Use only when you have already reviewed and accepted the structural findings.
-- `effort` (string, optional) — Cost tier (RFC 0009), scales calls + per-call model to importance: 'draft' = ~6 cheap-model ballots on claude+gemini, no diagnosis, NOT a gate; 'standard' = ~12 ballots + 2 prose, the >=82% standalone gate; 'deep' = ~37 ballots + 4 prose + full structural diagnosis, the >=85%/publish gate. Omit for the configured defaults.
-- `useLocal` (bool, optional) — Run ballots + synopsis on the LOCAL LLM (Ollama) instead of the cloud trusted-4 panel — free, no API tokens. ONE model = no temperament diversity, so the resulting score is a SEPARATE baseline (do NOT compare to cloud means). Default false (cloud).
-- `localModel` (string, optional) — Override the local model tag for this run (e.g. an Ollama tag). Ignored unless use_local=true. Omit to use the configured LocalReviewModel.
-- `allowVotes` (bool, optional) — SS-A44: score panels are DISABLED BY DEFAULT engine-wide. Set true to explicitly run this review; otherwise the call is refused. Default false.
-
 ### `update_review_settings`
 
 Update review-voting settings. Pass only the fields you want to change — omit the rest. ballots: score-only ballot count (≥1). prose: full prose upgrades per run (≥0). panel: persona pool depth (≥1). readers: default reader count (≥1). max_concurrency: parallel ballot slots 1–50. judge_provider: provider that synthesizes the summary (claude|openai|gemini|deepseek). allowed_providers: comma-separated provider whitelist (e.g. 'claude,openai'); empty = all active providers allowed. review_auto_run_enabled: set false to disable the continuous auto-review monitor (you call reviews manually); set true to re-enable.
@@ -1949,31 +1773,6 @@ Update review-voting settings. Pass only the fields you want to change — omit 
 Scan arbitrary prose against every world rule (no city police, no Behemoth-as-alive, no 'the Shelf' district, no wedding-cake tier architecture, no Ferrogate-as-railroad, no metro/city police, no phi/Greek-letter confusion). Returns the list of matched violations with the surrounding context. Call this on a chapter draft BEFORE delivering it — catches rule slips Claude might miss.
 
 - `text` (string, required) — The prose to scan. Pass an entire chapter or a single beat.
-
-## Reader Qa
-
-<sub>`ReaderQaTools`</sub>
-
-### `reader_qa_comprehension`
-
-Reader-Proxy QA comprehension probes: a cheap model reads each chapter cold (rolling recap only) and its GENUINE reading is diffed against the fidelity-strict Sonnet synopsis; a Sonnet arbiter confirms which mismatches the chapter text itself plausibly supports (reader-plausible confusion vs probe hallucination). Confirmed defects are filed as ComprehensionDefect findings (see list_findings) and auto-supersede on re-run. Hash-cached per chapter — unchanged chapters never re-bill. Emits NO scores: this is the default reader-facing QA, replacing persona score panels. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
-- `force` (bool, optional) — Re-probe every chapter even if unchanged (default false).
-
-### `reader_qa_full_order_read`
-
-Reader-Proxy QA Instrument 5 — the Full-Order Read (docs/LOGIC.md §10): an automated proxy for the felt-pass ritual of reading a book straight through at reader speed and marking only where engagement died. Unlike the gripe jury (a complaint list), each juror narrates a continuous read and reports only the beat where its own attention drifted and whether it ever recovered before the book ended. NO scores, ever. Spans are deduped, quote-grounded deterministically, then Sonnet-arbitrated and severity-triaged from the recovery signal (never recovered = blocker; recovers after a long stretch = moderate; a brief dip = minor). Confirmed spans persist as ReaderGripe findings under their own scope and supersede on re-run without touching the gripe jury's own findings. This is a proxy, not a replacement for an author's own full-order read — an LLM doesn't get bored the way a human reader does, but can be prompted to notice textual flatness. Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
-- `readers` (int, optional) — Jury size (default 4; one seat per live model family, Claude tiers fill in).
-
-### `reader_qa_gripe_pass`
-
-Reader-Proxy QA findings-only gripe jury: a small cross-family jury full-reads the book and emits ONLY page-anchored complaints (beat number + verbatim quote + what's wrong) — NO scores, ever. Complaints are deduped, quote-grounded deterministically (hallucinated quotes die free), then Sonnet-arbitrated against the actual beat text and triaged blocker/moderate/minor. Confirmed gripes persist as ReaderGripe findings (see list_findings) and supersede on re-run. Report-only — applying a fix is a separate deliberate action (update_beat_text, optionally gated by a duel). Accepts node id (GUID) or slug.
-
-- `nodeIdOrSlug` (string, required) — Book node id (GUID) or slug.
-- `readers` (int, optional) — Jury size (default 4; one seat per live model family, Claude tiers fill in).
 
 ## Repository
 
@@ -2215,18 +2014,6 @@ Get the current truth status for a book: how many beats have verified contracts,
 
 - `slugOrCode` (string, required) — Book node slug or NodeCode.
 
-### `verify_beat`
-
-Run all verification checks for a single beat against its declared BeatBlueprintDecision contract. Checks: BannedPattern (internal-understanding/epilogue anti-patterns), EventType (declared vs detected), SubplotCarrier (entities present when declared), EscalationFloor (emotional depth vs floor), DeclaredPurpose (embedding similarity — requires embeddings). Results are upserted to BeatVerification table. Returns Pass/Fail/Partial/Skipped per check with evidence. Exit 1 (blockers found) if any BLOCKER check fails.
-
-- `beatId` (string, required) — Beat GUID to verify.
-
-### `verify_book`
-
-Run verification checks for all enabled beats in a book. Returns a summary of BLOCKER/MODERATE/MINOR failures plus individual findings. Results are upserted to BeatVerification table. BLOCKER findings must be fixed before export. Includes EscalationMonotonic check (book-wide curve regression) not available per-beat.
-
-- `slugOrCode` (string, required) — Book node slug or NodeCode.
-
 ### `verify_quote_grounding`
 
 Verify that a logic-sweep audit agent's CLAIMED QUOTE actually appears in the beat it's attributed to, before that finding is trusted for triage/fix. Use this on every quoted finding an audit agent reports — agents occasionally misattribute a quote to the wrong beat or fabricate one under time pressure; this is the mechanical guard against that. Comparison is normalized (dash variants, curly/straight quotes, whitespace), so only a genuine misattribution fails — not console-display punctuation drift. Result is persisted to BeatVerification (CheckType='QuoteGrounding', always inserted, never overwritten — a beat accumulates one row per claim checked across every sweep). A Fail means: reject the finding and re-read the actual beat before acting on it.
@@ -2388,21 +2175,6 @@ Add an editorial prose lesson — an author ruling that reviewers must respect. 
 - `scope` (string, required) — Scope: 'global', 'node:<slug>', or 'beat:<guid>'
 - `kind` (string, required) — Kind: score-vs-function | delight | voice | pacing | continuity | other
 - `text` (string, required) — The ruling text — what reviewers must respect.
-
-### `check_gear_carry`
-
-Scans prose text for gear usage verbs (drew, fired, aimed…) and checks whether the subject character has a carry/wield edge for each named prop. Returns a JSON array of violations — empty array means clean.
-
-- `beatText` (string, required) — Beat prose text to scan
-- `characterId` (string, required) — Character entity GUID (the POV/subject character)
-- `storyTime` (string, optional) — Story-date for edge validation (ISO 8601). Legacy — confirmed dead in the live pipeline (2026-09-02); prefer beatId. Omit to use all-time carry edges.
-- `beatId` (string, optional) — Beat GUID this text belongs to — the live mechanism. Filters carry edges by beat-scoped validity (Edge.ValidFromBeatId/ValidUntilBeatId) via reading-order position. Omit for ad hoc text with no real beat.
-
-### `check_timeline`
-
-Deterministic timeline-consistency check for a node (RFC 0009 §5). Zero LLM calls. Detects two violation classes: (1) dead-character-acting — an entity whose status is 'dead'/'deceased' appears in a later beat; (2) wound-regression — a healed/none event precedes the injury-onset event for the same condition. Returns a list of findings with kind, entityId, entityName, beatNumber, detail, severity. Returns an empty array when no events are in the ledger for this node — never throws.
-
-- `slugOrId` (string, required) — Node slug or GUID
 
 ### `clear_entity_stale`
 

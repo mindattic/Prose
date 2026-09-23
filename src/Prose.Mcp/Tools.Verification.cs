@@ -21,7 +21,7 @@ public class VerificationTools
         this.hub = hub;
     }
 
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Run all verification checks for a single beat against its declared BeatBlueprintDecision contract. " +
         "Checks: BannedPattern (internal-understanding/epilogue anti-patterns), EventType (declared vs detected), " +
         "SubplotCarrier (entities present when declared), EscalationFloor (emotional depth vs floor), " +
@@ -59,7 +59,7 @@ public class VerificationTools
         }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Run verification checks for all enabled beats in a book. Returns a summary of " +
         "BLOCKER/MODERATE/MINOR failures plus individual findings. Results are upserted to " +
         "BeatVerification table. BLOCKER findings must be fixed before export. " +

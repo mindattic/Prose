@@ -87,7 +87,7 @@ public class WorldModellingTools(
             ?? JsonSerializer.Serialize(new { message = "No carry edges or sensory_hints found" }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Scans prose text for gear usage verbs (drew, fired, aimed…) and checks " +
         "whether the subject character has a carry/wield edge for each named prop. " +
         "Returns a JSON array of violations — empty array means clean.")]
@@ -377,7 +377,7 @@ public class WorldModellingTools(
         }, CanonTools.JsonOpts);
     }
 
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Deterministic timeline-consistency check for a node (RFC 0009 §5). " +
         "Zero LLM calls. " +
         "Detects two violation classes: " +

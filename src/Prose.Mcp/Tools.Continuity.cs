@@ -191,7 +191,7 @@ public class ContinuityTools
     /// CANON). Returns a JSON report with findings, citations, severity, and
     /// suggested fixes. ok=true means no contradictions; ok=false means findings exist.
     /// </summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Find contradictions in a chapter against established canon. Pulls the " +
         "characters from the chapter's `characters` field, plus the book's " +
         "state_at_end and all prior chapters' synopses, builds a canon-context " +
@@ -327,7 +327,7 @@ public class ContinuityTools
     /// chapters, etc. Cross-chapter findings are consolidated. Expensive — dispatches
     /// N Legion votes per book. Use synopsisOnly=true for cheaper triage.
     /// </summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Find contradictions across an entire book by running a pairwise sweep — every chapter " +
         "is graded against the FULL PROSE of every OTHER chapter (forward AND backward). " +
         "Catches things a single-chapter check misses: a character who dies in chapter 3 but " +

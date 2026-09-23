@@ -103,7 +103,7 @@ public class DataIntegrityTools(
     }
 
     /// <summary>Run the deterministic sanity scan against one book node's prose.</summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Run the deterministic (no-LLM) sanity scan against one book's prose: internal dev-code " +
         "leaks (an internal node code like 'BCODA' appearing as if it were an in-world name), " +
         "undefined all-caps acronyms (excludes the book's own code, purely-numeric codes, " +
@@ -152,7 +152,7 @@ public class DataIntegrityTools(
     }
 
     /// <summary>Scan a universe's Entities of one type for duplicate/near-duplicate names.</summary>
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Scan a universe's Entities of one EntityType (default 'character'; also useful for " +
         "'faction', 'place', etc.) for duplicate or near-duplicate names (exact match, or exactly " +
         "1 edit apart, e.g. \"Boris Johansen\" vs \"Boris Johanssen\") that are NOT explained by " +

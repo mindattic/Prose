@@ -15,7 +15,9 @@ namespace Prose.Mcp;
 //     allowVotes parameter by design (SS-A44 exemption, same as craft_checklist /
 //     logic_sweep). Emits no scores, ever.
 
-[McpServerToolType]
+// DEACTIVATED 2026-09-22 (RFC 0014): every tool in this class is a zero-applied
+// producer. Uncomment the line below to advertise them again.
+// [McpServerToolType]
 public class ReaderQaTools(
     ComprehensionProbeService probes,
     GripePassService gripes,

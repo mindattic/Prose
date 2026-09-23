@@ -192,7 +192,7 @@ public class ObligationTools(
 
     // ── instruments ───────────────────────────────────────────────────────────
 
-    [McpServerTool, Description("Run the obligation reconciliation instrument on a book (RFC 0013): six free deterministic rules over the ledger — overdue_open, open_at_end, stale_closure, dangling_beat, unplanted_payoff, deferred_expired — filed as NarrativeObligation findings under node:{slug}#obligations, plus a health snapshot. deep=true first runs the paid resurfacing judge (one Haiku call per open obligation, quote-gated, cached by candidate text) so payoffs the extractor missed are closed before the balance is struck. Reports 'examined N obligations over M beats'; could_not_look=true means the ledger is empty — rescan first.")]
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description("Run the obligation reconciliation instrument on a book (RFC 0013): six free deterministic rules over the ledger — overdue_open, open_at_end, stale_closure, dangling_beat, unplanted_payoff, deferred_expired — filed as NarrativeObligation findings under node:{slug}#obligations, plus a health snapshot. deep=true first runs the paid resurfacing judge (one Haiku call per open obligation, quote-gated, cached by candidate text) so payoffs the extractor missed are closed before the balance is struck. Reports 'examined N obligations over M beats'; could_not_look=true means the ledger is empty — rescan first.")]
     public Task<string> reconcile_obligations(
         [Description("Book node id/slug/code.")] string nodeIdOrSlug,
         [Description("Also run the resurfacing judge (costs cents).")] bool deep = false) =>
@@ -213,7 +213,7 @@ public class ObligationTools(
         }, JsonOpts);
     }
 
-    [McpServerTool, Description("Ground entity records in prose (RFC 0013): decompose every character/place/faction record tagged in the book into atomic claims and check each against the beats with a quote-gated entailment call. Unentailed/contradicted claims are filed under EntityDrift (node:{slug}#recordground) and matching non-authored ledger claims are quarantined to 'inferred'. The record text is never edited — you accept or strike. Optional entity name filter. Costs a few cents per entity.")]
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description("Ground entity records in prose (RFC 0013): decompose every character/place/faction record tagged in the book into atomic claims and check each against the beats with a quote-gated entailment call. Unentailed/contradicted claims are filed under EntityDrift (node:{slug}#recordground) and matching non-authored ledger claims are quarantined to 'inferred'. The record text is never edited — you accept or strike. Optional entity name filter. Costs a few cents per entity.")]
     public Task<string> ground_entity_records(
         [Description("Book node id/slug/code.")] string nodeIdOrSlug,
         [Description("Only entities whose name contains this (optional).")] string? entityName = null) =>

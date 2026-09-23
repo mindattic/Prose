@@ -394,7 +394,7 @@ public class ConfigTools
 
     // ── Liberty Report (Rule of Cool) ─────────────────────────────────────────
 
-    [McpServerTool, Description(
+    [/* McpServerTool DEACTIVATED 2026-09-22 (RFC 0014) - 0 applied findings, ever; delete these comment markers to restore */ Description(
         "Show the liberty analysis (Rule of Cool) for a single beat or all beats in a book. " +
         "A 'liberty' is any creative departure from the beat goal or entity roster: " +
         "entity_invention (name not in DB), tech_departure (GLMZ physics violated), " +

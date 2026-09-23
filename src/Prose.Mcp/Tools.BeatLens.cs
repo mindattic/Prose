@@ -18,7 +18,9 @@ namespace Prose.Mcp;
 /// MCP tools for the three story lenses (CausalityService, AffectBehaviorService,
 /// InterpersonalDynamicsService). Each accepts a node id (GUID) or slug.
 /// </summary>
-[McpServerToolType]
+// DEACTIVATED 2026-09-22 (RFC 0014): every tool in this class is a zero-applied
+// producer. Uncomment the line below to advertise them again.
+// [McpServerToolType]
 public class BeatLensTools
 {
     private readonly CausalityService causality;

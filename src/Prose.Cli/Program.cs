@@ -104,6 +104,23 @@ if (args.Contains("--export-commands"))
 if (!args.Contains("--worker-mode"))
     HubGate.EnsureReachableOrExit();
 
+// ── DEACTIVATED INSTRUMENTS (2026-09-22, RFC 0014) ───────────────────────────────
+// 30,745 findings filed corpus-wide, all time; 8 ever applied. The three producers that
+// earned those 8 stay live; everything on the list in DeactivatedInstruments.cs is off.
+// That file carries the ruling, the per-instrument counts and the restore instructions.
+if (args.Length > 0)
+{
+    var deactivated = args.FirstOrDefault(DeactivatedInstruments.Contains);
+    if (deactivated != null)
+    {
+        foreach (var line in DeactivatedInstruments.ExplainLines(deactivated))
+            Console.Error.WriteLine(line);
+        // Environment.Exit, not `return 2` — this file is top-level statements whose entry point
+        // is void, and giving it an int return type breaks every bare `return;` below it.
+        Environment.Exit(2);
+    }
+}
+
 // Multi-universe: a global `--universe <slug>` flag selects which universe this
 // process targets (SS-LAW-15). UniverseContext also honors the PROSE_UNIVERSE env
 // var (per terminal), so two CLIs can write different universes at once. Parsed

@@ -228,7 +228,45 @@ measurements).
 | TUNEDREAD | **UNPROVEN** | not separately measured |
 | ~30 other producers | **UNPROVEN** | 0 applied findings between them, all time |
 
-*Verdicts for the UNPROVEN rows are pending the §3 ladder. Nothing has been commented out yet.*
+*Every FAILED and UNPROVEN row above was deactivated on 2026-09-22 — see §4.1.*
+
+---
+
+## 4.1 Author ruling, 2026-09-22: deactivate, don't calibrate
+
+The §3 ladder was overtaken by the author's decision partway through gathering the above:
+
+> *"just comment out all of these they've never proven their worth … tired of it burning $400 and
+> fixing nothing … when I need them I will uncomment them and fix them."*
+
+So the <$50 calibration budget is moot for now, and UNPROVEN was collapsed into FAILED-by-default:
+an instrument that has filed thousands of findings over months without one being applied does not
+get the benefit of the doubt, it gets switched off until someone wants it enough to prove it.
+
+**What was switched off** (all of it commented in place; nothing deleted, every handler intact):
+
+| Surface | What changed |
+|---|---|
+| Per-beat-save tails | The four LLM tails in `NodeWorkbenchService.UpdateBeatTextAsync` — semantic-fidelity drift, blast-radius narrow sweep, continuity re-extraction, obligation scan. ~9 LLM calls on **every beat save**, unasked, unmetered, no cost scope. |
+| Unattended daily sweeps | `ContinuityLongSweepService` (daily LLM continuity re-scan) and `SanityScanBackgroundService` (daily, free, 5,211 findings) unregistered in `AddProseBackgroundServices`. |
+| The publish gate | The `PublishReadinessAsync` pre-flight in `ExportNodeCli` **and** `Tools.Nodes.ExportNodeImpl`. Export no longer blocks; `--force-export` / `forceExport:true` are accepted no-ops. |
+| 36 CLI commands | Listed in `src/Prose.Cli/DeactivatedInstruments.cs`, refused by one gate at the top of the dispatch chain. `docs/CLI_COMMANDS.md` is generated from that same list, so the reference cannot drift from the gate (§2.4 is exactly that failure). |
+| 25 MCP tools | `[McpServerTool]` commented out on each; two whole classes (`Tools.BeatLens`, `Tools.ReaderQa`) unadvertised at `[McpServerToolType]`. The methods still compile and still work if re-advertised. |
+
+**What stays live, and why:**
+
+- **`--logic-sweep`, `--ledger-adjudicate`, `--lint-prose`** — the only three producers that have
+  ever had a finding applied (2, 5 and 1 of the corpus's 8).
+- **`--findings`** (including `stats --by-instrument`) — the measurement, not the instrument.
+- **`--publish-readiness`** — still computes the six-check report on demand. It just no longer
+  decides whether a book may ship.
+- **`--calibrate-obligations` / `--inject-calibration-defects`** — the harness. Deactivating the
+  way back in would make this permanent, which is not what was decided.
+- **The mojibake guard and the BLOCKER verification gate on export** — deterministic, and they
+  block on things that are unambiguously wrong.
+
+**How to restore any of it:** delete the flag's line from `DeactivatedInstruments.cs`, or uncomment
+the named block. Each commented block carries the date, this RFC and the measured number.
 
 ---
 
