@@ -2,6 +2,7 @@ using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
 using Prose.Core.Models.Canon;
 
@@ -40,7 +41,7 @@ public sealed record CharacterFieldWriteResult(
 /// <para><b>Read back.</b> The saved record is reloaded and every changed field compared with what
 /// was asked for; a field that did not land is reported, never returned as ok.</para>
 /// </summary>
-public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGateService gate)
+public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGateService gate, IDbContextFactory<ProseDbContext> dbFactory)
 {
     static readonly JsonSerializerOptions Opts = new() { WriteIndented = false };
 
@@ -126,7 +127,13 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
                 $"this edit un-reads {cost.Count} beat(s) that mention {current.Name} (#{costRuns}). " +
                 "Pass confirmUnread to make it, then re-read them.", cost.Count, costRuns);
 
-        try { characters.Save(updated); }
+        try
+        {
+            characters.Save(updated);
+            // The repository's tag sync only ever adds (tag removal was a manual op), so a list
+            // with a tag taken out would read back with it still there. Here tags replace.
+            if (changed.Contains("tags")) await ReplaceTagsAsync(entityId, updated.Tags, ct);
+        }
         catch (Exception ex) when (ex is InvalidOperationException or ArgumentException)
         {
             return CharacterFieldWriteResult.Fail($"the save was refused: {ex.Message}", cost.Count, costRuns);
@@ -138,6 +145,19 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
         return new CharacterFieldWriteResult(notLanded.Count == 0,
             notLanded.Count == 0 ? null : $"saved, but {notLanded.Count} field(s) read back different from what was written: {string.Join(", ", notLanded)}.",
             changed, notLanded, warnings, cost.Count, costRuns, CanonRecordLoader.Prune(saved));
+    }
+
+    /// <summary>Detach every tag the new list does not name (the save already attached the new ones).</summary>
+    private async Task ReplaceTagsAsync(Guid entityId, IReadOnlyCollection<string> tags, CancellationToken ct)
+    {
+        var keep = tags.Where(t => !string.IsNullOrWhiteSpace(t)).Select(t => t.Trim()).ToHashSet(StringComparer.OrdinalIgnoreCase);
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var rows = await db.EntityTags.Include(t => t.Tag).Where(t => t.EntityId == entityId).ToListAsync(ct);
+        var drop = rows.Where(r => r.Tag == null || !keep.Contains(r.Tag.Name)).ToList();
+        if (drop.Count == 0) return;
+        db.EntityTags.RemoveRange(drop);
+        await db.SaveChangesAsync(ct);
+        characters.Reload();
     }
 
     /// <summary>RFC 7396 JSON Merge Patch, with one adaptation: the record's members are never null,

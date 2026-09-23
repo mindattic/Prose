@@ -24,7 +24,7 @@ public abstract class WorldFixture : RulingFixture
     public void SetUpWorld()
     {
         characters = new CharacterRepository(dbFactory);
-        writer = new CharacterFieldWriter(characters, gate);
+        writer = new CharacterFieldWriter(characters, gate, dbFactory);
         sessions = new FactorySessionService(dbFactory);
         verifier = new EntityVerificationService(dbFactory, new BookSpineService(dbFactory), gate, sessions, rulings);
     }
@@ -199,6 +199,18 @@ public class CharacterFieldWriterTests : WorldFixture
         r = await writer.SetFieldsAsync(c.Id, """{"genetic_ancestry":{"Martian":null}}""");
         Assert.That(r.Ok, Is.True, r.Error);
         Assert.That(characters.GetById(c.Id)!.GeneticAncestry.Keys, Is.EqualTo(new[] { "European" }), "null on a dictionary key removes it");
+    }
+
+    [Test]
+    public async Task Tags_replace_so_a_tag_taken_out_of_the_list_is_gone()
+    {
+        // Found live 2026-09-23 on Sable: the repository's tag sync only adds, so the write
+        // read back with the removed tags still attached — and said so instead of answering ok.
+        var c = NewCharacter();
+        Assert.That((await writer.SetFieldsAsync(c.Id, """{"tags":["fixer","doctor-safekeeper"]}""")).Ok, Is.True);
+        var r = await writer.SetFieldsAsync(c.Id, """{"tags":["fixer"]}""");
+        Assert.That(r.Ok, Is.True, r.Error);
+        Assert.That(characters.GetById(c.Id)!.Tags, Is.EqualTo(new[] { "fixer" }));
     }
 
     [Test]
