@@ -25,6 +25,7 @@ public class FactoryTests
     private FactoryService factory = null!;
     private WorkOrderService orders = null!;
     private FactorySessionService sessions = null!;
+    private RulingService rulings = null!;
 
     [SetUp]
     public void SetUp()
@@ -37,7 +38,9 @@ public class FactoryTests
         workbench = new NodeWorkbenchService(dbFactory, null!, paths, audioStore, NullLogger<NodeWorkbenchService>.Instance,
             null!, null!, null!, null!, null!);
         gate = new ReadGateService(dbFactory, workbench);
-        factory = new FactoryService(dbFactory, new BookSpineService(dbFactory), gate);
+        var spine = new BookSpineService(dbFactory);
+        rulings = new RulingService(dbFactory, spine);
+        factory = new FactoryService(dbFactory, spine, gate, rulings, new MetricsReport(rulings));
         orders = new WorkOrderService(dbFactory, (book, station) => factory.StationPassesAsync(book, station));
         sessions = new FactorySessionService(dbFactory);
         HubBuildInfo.Build = "build-a";

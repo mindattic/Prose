@@ -22,6 +22,8 @@ namespace Prose.Cli;
 ///   prose --order abandon --id &lt;id&gt; --reason "…"
 ///   prose --order seed --file tree.json        (a root plus nested children, one call)
 ///   prose --session end --file summary.json [--id &lt;session&gt;]
+///   prose --ruling add --kind law|metric|incidental --text "…" --node X [--pattern "…"] [--max-per-1k N] [--source author]
+///   prose --ruling seed --node X --file rulings.json · list --node X [--kind k] · supersede --id … · violations --node X · metrics --node X
 ///
 /// Exit codes: 0 ok · 1 bad args / not found · 2 refused (a check failed, or a decision is unrecorded).
 /// </summary>
@@ -37,6 +39,93 @@ public static class FactoryCli
 
         try
         {
+            if (args.Contains("--ruling"))
+            {
+                var rulings = services.GetRequiredService<RulingService>();
+                switch (Verb("--ruling"))
+                {
+                    case "add":
+                    {
+                        var row = await rulings.RecordAsync(new RulingDraft(
+                            Kind: Flag("--kind") ?? RulingKinds.Law,
+                            Text: Flag("--text") ?? "",
+                            BookId: await Node(Flag("--node")),
+                            UniverseId: null,
+                            Pattern: Flag("--pattern"),
+                            MaxPer1kWords: decimal.TryParse(Flag("--max-per-1k"), System.Globalization.NumberStyles.Number, System.Globalization.CultureInfo.InvariantCulture, out var mx) ? mx : null,
+                            Source: Flag("--source") ?? "author"));
+                        Console.WriteLine($"[ruling] recorded {row.Id} ({row.Kind}){(row.Pattern is null ? "" : $" /{row.Pattern}/")}: {row.Text}");
+                        return 0;
+                    }
+                    case "seed":
+                    {
+                        if (await Node(Flag("--node")) is not { } book) { Console.Error.WriteLine("[ruling] --node is required."); return 1; }
+                        var file = Flag("--file");
+                        if (file == null || !File.Exists(file)) { Console.Error.WriteLine("[ruling] --file rulings.json is required."); return 1; }
+                        var items = JsonNode.Parse(await File.ReadAllTextAsync(file)) as JsonArray ?? throw new ArgumentException("the file must be a JSON array.");
+                        var n = 0;
+                        foreach (var it in items)
+                        {
+                            var row = await rulings.RecordAsync(new RulingDraft(
+                                Kind: it?["kind"]?.GetValue<string>() ?? RulingKinds.Law,
+                                Text: it?["text"]?.GetValue<string>() ?? "",
+                                BookId: book,
+                                Pattern: it?["pattern"]?.GetValue<string>(),
+                                MaxPer1kWords: it?["maxPer1kWords"]?.GetValue<decimal>(),
+                                Source: it?["source"]?.GetValue<string>() ?? "author"));
+                            Console.WriteLine($"[ruling] {row.Id} {row.Kind}: {row.Text}");
+                            n++;
+                        }
+                        Console.WriteLine($"[ruling] recorded {n} ruling(s).");
+                        return 0;
+                    }
+                    case "list":
+                    {
+                        if (await Node(Flag("--node")) is not { } book) { Console.Error.WriteLine("[ruling] --node is required."); return 1; }
+                        var rows = await rulings.ListAsync(book, Flag("--kind"));
+                        foreach (var r in rows)
+                            Console.WriteLine($"{r.Id} {r.Kind,-10} {(r.Pattern is null ? "" : $"/{r.Pattern}/ ")}{(r.MaxPer1kWords is { } m ? $"≤{m}/1k " : "")}{r.Text}");
+                        Console.WriteLine($"[ruling] {rows.Count} active ruling(s).");
+                        return 0;
+                    }
+                    case "supersede":
+                    {
+                        if (!Guid.TryParse(Flag("--id"), out var id)) { Console.Error.WriteLine("[ruling] --id is required."); return 1; }
+                        var row = await rulings.SupersedeAsync(id, new RulingDraft(
+                            Kind: Flag("--kind") ?? RulingKinds.Law, Text: Flag("--text") ?? "", Pattern: Flag("--pattern"),
+                            MaxPer1kWords: decimal.TryParse(Flag("--max-per-1k"), System.Globalization.NumberStyles.Number, System.Globalization.CultureInfo.InvariantCulture, out var mx) ? mx : null,
+                            Source: Flag("--source") ?? "author"));
+                        Console.WriteLine($"[ruling] {id} superseded by {row.Id}.");
+                        return 0;
+                    }
+                    case "violations":
+                    {
+                        if (await Node(Flag("--node")) is not { } book) { Console.Error.WriteLine("[ruling] --node is required."); return 1; }
+                        var hits = await rulings.FindLawViolationsAsync(book);
+                        foreach (var g in hits.GroupBy(h => h.RulingText))
+                        {
+                            Console.WriteLine($"{g.Count(),4}  {g.Key}");
+                            foreach (var h in g.Take(int.TryParse(Flag("--show"), out var sh) ? sh : 5))
+                                Console.WriteLine($"        [{h.Position}] #{h.Number} \"{h.Match}\" — {h.Context}");
+                        }
+                        Console.WriteLine($"[ruling] {hits.Count} law hit(s).");
+                        return hits.Count == 0 ? 0 : 2;
+                    }
+                    case "metrics":
+                    {
+                        if (await Node(Flag("--node")) is not { } book) { Console.Error.WriteLine("[ruling] --node is required."); return 1; }
+                        var m = await services.GetRequiredService<MetricsReport>().ComputeAsync(book);
+                        Console.WriteLine($"{m.Words:N0} words");
+                        foreach (var x in m.Metrics)
+                            Console.WriteLine($"  {(x.Pass ? "✓" : "✗")} {x.Text}: {x.Count} (max {x.Max} at ≤{x.MaxPer1kWords}/1k){(x.AuthorSourced ? "" : "  [not author-sourced: does not gate]")}");
+                        return m.GatePasses ? 0 : 2;
+                    }
+                    default:
+                        Console.Error.WriteLine("Usage: prose --ruling add|seed|list|supersede|violations|metrics …");
+                        return 1;
+                }
+            }
+
             if (args.Contains("--factory"))
             {
                 var factory = services.GetRequiredService<FactoryService>();

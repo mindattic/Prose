@@ -18,7 +18,7 @@ public sealed record UnitStatus(FactoryUnit Unit, IReadOnlyDictionary<string, St
 
 public sealed record BookStatus(
     Guid BookId, string Slug, string? Code, string Title, int Beats, int Words,
-    IReadOnlyList<UnitStatus> Units, IReadOnlyDictionary<string, StationResult> BookStations);
+    IReadOnlyList<UnitStatus> Units, IReadOnlyDictionary<string, StationResult> BookStations, MetricsResult? Metrics = null);
 
 /// <summary>What the factory says to do next. Kind: order | station | none.</summary>
 public sealed record NextAction(
@@ -35,7 +35,8 @@ public sealed record NextAction(
 /// F1 Verified, then F7 Pressed and A Audio for the whole book. A station that is not built yet
 /// reports "not-built" — shown, never faked.</para>
 /// </summary>
-public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, BookSpineService spine, ReadGateService gate)
+public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, BookSpineService spine, ReadGateService gate,
+    RulingService rulings, MetricsReport metrics)
 {
     /// <summary>Unit stations in the order the line works them.</summary>
     public static readonly string[] UnitStationOrder = ["F2", "F3", "F4", "F5", "F6", "F1"];
@@ -44,7 +45,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
     public static readonly string[] BookStationOrder = ["F7", "A"];
 
     /// <summary>Stations whose evaluators exist. Grows one increment at a time (RFC 0015 §10).</summary>
-    public static readonly HashSet<string> Built = ["F2", "F3", "F5"];
+    public static readonly HashSet<string> Built = ["F2", "F3", "F5", "F6"];
 
     public static readonly IReadOnlyDictionary<string, string> StationNames = new Dictionary<string, string>
     {
@@ -89,7 +90,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         foreach (var code in BookStationOrder)
             book[code] = Built.Contains(code) ? EvaluateBook(code, ctx) : StationResult.NotBuilt(code);
         return new BookStatus(ctx.BookId, ctx.Slug, ctx.Code, ctx.Title, ctx.Beats.Count,
-            ctx.Units.Sum(u => u.Words), units, book);
+            ctx.Units.Sum(u => u.Words), units, book, ctx.Metrics);
     }
 
     /// <summary>For a work order's `factory` check: does <paramref name="station"/> pass for every
@@ -183,6 +184,10 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
     {
         "F2" => [$"plan every beat of unit {u!.Ordinal}: insert_beat(title, description) / update_beat_metadata"],
         "F3" => [$"write the empty beats of unit {u!.Ordinal} in-session and push them: update_beat_text (one door)"],
+        "F6" => [$"prose --read-note list --node {s.Slug}  (open defects) and prose --ruling violations --node {s.Slug}  (law hits)",
+                 $"fix each by hand: prose --splice-beats --node {s.Slug} --file <docket.json> (dry run, then --apply)",
+                 $"re-read what changed: prose --read-beats --slug {s.Slug} --from {u!.FirstPosition} --to {u.LastPosition} --mark-read --read-by claude",
+                 "resolve each note: prose --read-note resolve --node <book> --id <noteId>"],
         "F5" => [$"prose --read-beats --slug {s.Slug} --from {u!.FirstPosition} --to {u.LastPosition} --mark-read --read-by claude",
                  $"(MCP after restart) read_beats(idOrSlug:\"{s.Slug}\", from:{u.FirstPosition}, to:{u.LastPosition}, markRead:true, readBy:\"claude\")",
                  "read every beat against the entity records and the book's law; file defects with add_read_note"],
@@ -219,6 +224,9 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
                 }).Concat(BookStationOrder.Select(code =>
                     Built.Contains(code) ? $"{code} {b.BookStations[code].State}" : $"{code} not built"));
                 sb.AppendLine($"  {b.Code ?? b.Slug} ({b.Units.Count} units, {b.Beats} beats, {b.Words:N0} words): {string.Join(" · ", parts)}");
+                if (b.Metrics is { Metrics.Count: > 0 } m)
+                    sb.AppendLine("    metrics (book-wide): " + string.Join(" · ", m.Metrics.Select(x =>
+                        $"{Short(x.Text)} {x.Count}/{x.Max} {(x.Pass ? "✓" : "✗")}")));
             }
         }
         if (session != null)
@@ -256,6 +264,9 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         public List<FactoryUnit> Units = [];
         public Dictionary<Guid, BeatRow> Beats = [];
         public Dictionary<Guid, UnreadBeat> Unread = [];
+        public Dictionary<Guid, int> OpenDefects = [];
+        public ILookup<Guid, LawHit> LawHits = Array.Empty<LawHit>().ToLookup(h => h.BeatId);
+        public MetricsResult? Metrics;
     }
 
     private async Task<BookContext> LoadAsync(Guid bookId, CancellationToken ct)
@@ -287,6 +298,16 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
 
         var read = await gate.GetStatusAsync(bookId, ct);
         ctx.Unread = read.Unread.ToDictionary(u => u.BeatId);
+
+        await using (var db = await dbFactory.CreateDbContextAsync(ct))
+        {
+            ctx.OpenDefects = (await db.BeatReadNotes.AsNoTracking()
+                    .Where(n => ids.Contains(n.BeatId) && n.Kind == "defect" && n.Status == "open")
+                    .GroupBy(n => n.BeatId).Select(g => new { g.Key, N = g.Count() }).ToListAsync(ct))
+                .ToDictionary(x => x.Key, x => x.N);
+        }
+        ctx.LawHits = (await rulings.FindLawViolationsAsync(bookId, ct)).ToLookup(h => h.BeatId);
+        ctx.Metrics = await metrics.ComputeAsync(bookId, ct);
         return ctx;
     }
 
@@ -317,10 +338,22 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
                 var why = string.Join(", ", unread.GroupBy(x => x.Reason).Select(g => $"{g.Count()} {g.Key}"));
                 return new(code, "fail", $"{unread.Count} of {u.BeatIds.Count} beats unread ({why}); positions {ReadGateService.Runs(unread.Select(x => x.Position))}.");
             }
+            case "F6":
+            {
+                var defects = u.BeatIds.Sum(id => ctx.OpenDefects.GetValueOrDefault(id));
+                var hits = u.BeatIds.SelectMany(id => ctx.LawHits[id]).ToList();
+                if (defects == 0 && hits.Count == 0) return new(code, "pass", "no open defects and no law violations.");
+                var parts = new List<string>();
+                if (defects > 0) parts.Add($"{defects} open defect note(s)");
+                if (hits.Count > 0) parts.Add($"{hits.Count} law hit(s), first #{hits[0].Number} \"{hits[0].Match}\" ({Short(hits[0].RulingText)})");
+                return new(code, "fail", string.Join("; ", parts) + ".");
+            }
             default:
                 return StationResult.NotBuilt(code);
         }
     }
+
+    private static string Short(string s) => s.Length <= 70 ? s : s[..70] + "…";
 
     private static StationResult EvaluateBook(string code, BookContext ctx) => StationResult.NotBuilt(code);
 

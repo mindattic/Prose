@@ -514,6 +514,8 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ReadGateService>();     // read receipts + the no-override export gate (2026-09-22)
         // The Novel Factory (RFC 0015): the computed line, work orders, sessions.
         services.AddSingleton<Prose.Core.Services.Factory.FactorySessionService>();
+        services.AddSingleton<Prose.Core.Services.Factory.RulingService>();
+        services.AddSingleton<Prose.Core.Services.Factory.MetricsReport>();
         services.AddSingleton<Prose.Core.Services.Factory.FactoryService>();
         services.AddSingleton<Prose.Core.Services.Factory.WorkOrderService>(sp => new Prose.Core.Services.Factory.WorkOrderService(
             sp.GetRequiredService<IDbContextFactory<ProseDbContext>>(),

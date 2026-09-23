@@ -936,7 +936,7 @@ prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of ju
 
 <sub>handler `FactLedgerRefreshCli` · **deactivated 2026-09-22 (RFC 0014)** — handler intact; remove its line from `DeactivatedInstruments.cs` to restore</sub>
 
-### `--factory` / `--order` / `--session`
+### `--factory` / `--order` / `--session` / `--ruling`
 
 _(no description in the dispatch comment — add one above the guard in `Program.cs`)_
 

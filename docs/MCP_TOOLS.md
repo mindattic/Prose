@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**264 tools** across **47 tool families.**
+**269 tools** across **48 tool families.**
 
 ## Families
 
@@ -52,6 +52,7 @@
 | [Quality](#quality) | 5 |
 | [Reading](#reading) | 4 |
 | [Repository](#repository) | 3 |
+| [Ruling](#ruling) | 5 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
 | [Story](#story) | 4 |
@@ -1805,6 +1806,51 @@ Create a new repository (custom entity type). The slug is derived from the name 
 List all runtime-defined repositories (custom entity types): slug, name, category, route.
 
 - _(no parameters)_
+
+## Ruling
+
+<sub>`RulingTools`</sub>
+
+### `book_metrics`
+
+Book-wide tic counts against the author's metric rulings (counting, not judging). Only author-sourced metrics gate the press.
+
+- `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
+
+### `law_violations`
+
+Every place an active law's zero-tolerance pattern matches the book's prose, in reading order, with context. Each hit is either a real violation (fix the prose by splice) or a pattern that is too broad (supersede the ruling with a tighter pattern).
+
+- `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
+
+### `list_rulings`
+
+The active rulings that apply to a book (its own plus universe-wide ones).
+
+- `nodeIdOrSlug` (string, required) — Book id, slug or NodeCode.
+- `kind` (string, optional) — law | metric | incidental
+
+### `record_ruling`
+
+Record one of the author's rulings the moment it is made. kind law = a constraint (pattern-less text the writer is shown, or a zero-tolerance regex the prose must never match; case-insensitive unless the pattern starts with (?-i)); kind metric = a book-wide tic ceiling (pattern + maxPer1kWords); kind incidental = a proper name that intentionally has no entity (pattern = the name). Entity facts do NOT go here — write them on the entity record. Returns the stored row as the read-back.
+
+- `kind` (string, required) — law | metric | incidental
+- `text` (string, required) — The author's words, verbatim.
+- `nodeIdOrSlug` (string, optional) — Book id, slug or NodeCode (omit only for a universe-wide ruling).
+- `pattern` (string, optional) — .NET regex (law/metric) or the name (incidental).
+- `maxPer1kWords` (Decimal, optional) — Metric only: the ceiling per 1,000 words of the whole book.
+- `source` (string, optional) — author (default) or session:<id>.
+
+### `supersede_ruling`
+
+Replace a ruling: the new one is recorded and the old one goes inert (history is kept).
+
+- `id` (string, required) — The ruling to replace.
+- `kind` (string, required) — law | metric | incidental
+- `text` (string, required) — The author's new words, verbatim.
+- `pattern` (string, optional) — New pattern.
+- `maxPer1kWords` (Decimal, optional) — Metric only.
+- `source` (string, optional) — author (default) or session:<id>.
 
 ## Scene
 

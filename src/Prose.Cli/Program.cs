@@ -312,7 +312,7 @@ if (UniverseBootstrap.RequestedSlug == null
         "--validate-chapters",
         // The Novel Factory (RFC 0015): work orders and sessions are engine-wide rows with no
         // universe; --factory status/next resolve an explicit --node via NodeRefResolver.
-        "--factory", "--order", "--session",
+        "--factory", "--order", "--session", "--ruling",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -1120,8 +1120,9 @@ if (args.Contains("--booktok"))
 //   prose --factory next [--node X] [--format block|line|json]
 //   prose --order add|list|close|abandon|seed …
 //   prose --session end --file summary.json
+//   prose --ruling add|list|supersede|violations|metrics|seed …
 static string? LeadingFlagIgnoringUniverse(string[] a) => a.Where((x, i) => x != "--universe" && (i == 0 || a[i - 1] != "--universe")).FirstOrDefault();
-if (LeadingFlagIgnoringUniverse(args) is "--factory" or "--order" or "--session")
+if (LeadingFlagIgnoringUniverse(args) is "--factory" or "--order" or "--session" or "--ruling")
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("FactoryCli", args);
     return;
