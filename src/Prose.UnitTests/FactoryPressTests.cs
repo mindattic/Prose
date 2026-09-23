@@ -100,11 +100,22 @@ public class ExportRecorderTests : PressFixture
     }
 
     [Test]
-    public async Task A_chapter_export_is_recorded_against_its_book()
+    public async Task A_chapter_export_is_recorded_against_the_chapter_and_never_presses_its_book()
     {
         var (book, chapter) = await BookAsync("Words.");
-        var row = await recorder.RecordAsync(chapter, "txt", "x.txt");
-        Assert.That(row.BookId, Is.EqualTo(book));
+        await ReadBookAsync(book);
+        foreach (var f in new[] { "docx", "epub", "pdf", "mp3" })
+            Assert.That((await recorder.RecordAsync(chapter, f, "x." + f)).BookId, Is.EqualTo(chapter));
+
+        // A one-chapter book: the chapter's fingerprint is the book's, and still its files are not the book's.
+        var s = await factory.StatusAsync(book);
+        Assert.That(s.BookStations["F7"].State, Is.EqualTo("fail"), s.BookStations["F7"].Detail);
+        Assert.That(s.BookStations["A"].State, Is.EqualTo("waiting"), "no audio press without a pressed book");
+
+        await PressAsync(book, "docx", "epub", "pdf");
+        s = await factory.StatusAsync(book);
+        Assert.That(s.BookStations["F7"].State, Is.EqualTo("pass"));
+        Assert.That(s.BookStations["A"].State, Is.EqualTo("fail"), "the chapter's mp3 is not the book's audio");
     }
 }
 

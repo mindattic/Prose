@@ -43,8 +43,9 @@ public static class BookFingerprint
 
 /// <summary>
 /// Writes the proof of a press (RFC 0015 §3.10): after a shippable export has written its file —
-/// and therefore after it passed the read gate — one <see cref="ExportRecord"/> row with the book's
-/// fingerprint at that moment. Station F7 compares those rows with the book as it stands now.
+/// and therefore after it passed the read gate — one <see cref="ExportRecord"/> row with the exported
+/// node's fingerprint at that moment. Stations F7 and A compare the book's own rows with the book as
+/// it stands now, so only an export of the whole book can press it.
 /// </summary>
 public sealed class ExportRecorder(IDbContextFactory<ProseDbContext> dbFactory)
 {
@@ -53,15 +54,16 @@ public sealed class ExportRecorder(IDbContextFactory<ProseDbContext> dbFactory)
     public async Task<ExportRecord> RecordAsync(Guid nodeId, string format, string path, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var bookId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, nodeId, ct) ?? nodeId;
+        // The row belongs to the node that was exported. Filed against its book at the book's
+        // fingerprint, one chapter's mp3 passed station A for all 46 units (found 2026-09-23).
         var version = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == nodeId)
             .Select(n => n.Version).FirstOrDefaultAsync(ct);
         var row = new ExportRecord
         {
-            BookId = bookId,
+            BookId = nodeId,
             Format = format,
             Version = version,
-            BookFingerprint = await BookFingerprint.ComputeAsync(db, bookId, ct),
+            BookFingerprint = await BookFingerprint.ComputeAsync(db, nodeId, ct),
             Path = path,
             At = DateTime.UtcNow,
         };
