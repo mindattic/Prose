@@ -165,7 +165,7 @@ public sealed class WorkOrderService(
                 var paths = JsonSerializer.Deserialize<List<string>>(order.PathsJson) ?? [];
                 var changed = GitProbe.ChangedFiles(repo, hash);
                 if (changed.Count == 0) return new(type, false, "the commit changed no files.");
-                var outside = changed.Where(f => !PathGlob.MatchesAny(f, paths)).ToList();
+                var outside = changed.Where(f => !PathGlob.MatchesAny(f, paths) && !IsDerivedToolDoc(f, changed, paths)).ToList();
                 return outside.Count == 0
                     ? new(type, true, $"{hash[..Math.Min(10, hash.Length)]} on HEAD, {changed.Count} file(s), all within declared paths.")
                     : new(type, false, $"{outside.Count} changed file(s) outside the order's paths: {string.Join(", ", outside.Take(8))}");
@@ -297,4 +297,11 @@ public sealed class WorkOrderService(
     }
 
     private static string Type(JsonNode? check) => check?["type"]?.GetValue<string>() ?? "";
+
+    /// <summary>The pre-commit hook regenerates and stages docs/MCP_TOOLS.md whenever an MCP tool
+    /// source changes, so the doc is the hook's output, not the agent's edit. It counts as in scope
+    /// exactly when the same commit changes an MCP tool source that is itself inside the order's paths.</summary>
+    private static bool IsDerivedToolDoc(string file, IReadOnlyCollection<string> changed, IReadOnlyList<string> paths) =>
+        file == "docs/MCP_TOOLS.md"
+        && changed.Any(c => c.StartsWith("src/Prose.Mcp/Tools", StringComparison.Ordinal) && PathGlob.MatchesAny(c, paths));
 }

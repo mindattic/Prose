@@ -112,6 +112,41 @@ public class FactoryTests
     }
 
     [Test]
+    public async Task The_regenerated_MCP_tool_doc_rides_with_an_in_scope_tool_change()
+    {
+        var repo = Path.Combine(tempRoot, "repo-tooldoc");
+        Directory.CreateDirectory(Path.Combine(repo, "src", "Prose.Mcp"));
+        Directory.CreateDirectory(Path.Combine(repo, "docs"));
+        Git(repo, "init", "-q");
+        Git(repo, "config", "user.email", "t@t");
+        Git(repo, "config", "user.name", "t");
+        File.WriteAllText(Path.Combine(repo, "src", "Prose.Mcp", "Tools.Plant.cs"), "a");
+        File.WriteAllText(Path.Combine(repo, "docs", "MCP_TOOLS.md"), "a");
+        Git(repo, "add", "-A");
+        Git(repo, "commit", "-q", "-m", "tool + regenerated doc");
+        var withTool = Git(repo, "rev-parse", "HEAD").Trim();
+        File.WriteAllText(Path.Combine(repo, "docs", "MCP_TOOLS.md"), "b");
+        Git(repo, "add", "-A");
+        Git(repo, "commit", "-q", "-m", "doc alone");
+        var docAlone = Git(repo, "rev-parse", "HEAD").Trim();
+        Environment.SetEnvironmentVariable("PROSE_REPO_PATH", repo);
+
+        var inScope = await orders.AddAsync(new WorkOrderDraft("engine", "tool", RootApprovedBy: "author",
+            Paths: ["src/Prose.Mcp/Tools.Plant.cs"], ChecksJson: """[{"type":"commit"}]"""));
+        Assert.That((await orders.CloseAsync(inScope.Id, new CloseInputs(CommitHash: withTool))).Closed, Is.True);
+
+        var toolOutOfScope = await orders.AddAsync(new WorkOrderDraft("engine", "other", RootApprovedBy: "author",
+            Paths: ["src/Other/**"], ChecksJson: """[{"type":"commit"}]"""));
+        Assert.That((await orders.CloseAsync(toolOutOfScope.Id, new CloseInputs(CommitHash: withTool))).Closed, Is.False);
+
+        var docOnly = await orders.AddAsync(new WorkOrderDraft("engine", "doc", RootApprovedBy: "author",
+            Paths: ["src/Prose.Mcp/Tools.Plant.cs"], ChecksJson: """[{"type":"commit"}]"""));
+        var refused = await orders.CloseAsync(docOnly.Id, new CloseInputs(CommitHash: docAlone));
+        Assert.That(refused.Closed, Is.False, "a doc edit with no tool change is not the hook's output");
+        Assert.That(refused.Checks.Single().Detail, Does.Contain("docs/MCP_TOOLS.md"));
+    }
+
+    [Test]
     public async Task A_tests_check_reads_the_TRX_and_needs_every_named_test_passed()
     {
         var trx = Path.Combine(tempRoot, "run.trx");
