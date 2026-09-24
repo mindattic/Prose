@@ -2852,7 +2852,8 @@ if (args.Contains("--backfill-missing-subtype-rows"))
 // prose --plant-audit   --slug <node> [--json]   audit plant/payoff pairs
 // prose --list-plants   --slug <node> [--json]   list all pairs
 // prose --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]
-if (args.Contains("--list-plants") || args.Contains("--add-plant"))
+// prose --update-plant  --id <guid> [--plant "..."] [--payoff "..."]   correct a registered pair
+if (args.Contains("--list-plants") || args.Contains("--add-plant") || args.Contains("--update-plant"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("PlantPayoffCli", args);
     return;

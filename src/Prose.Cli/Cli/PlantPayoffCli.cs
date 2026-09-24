@@ -28,6 +28,29 @@ public static class PlantPayoffCli
         string? slug = null;
         bool    jsonMode = args.Contains("--json");
 
+        // ── prose --update-plant --id <guid> [--plant "..."] [--payoff "..."] ──────
+        // Correct a registered pair in place when the page and the register disagree.
+        if (args.Contains("--update-plant"))
+        {
+            string? id = null, newPlant = null, newPayoff = null;
+            for (int i = 0; i < args.Length - 1; i++)
+            {
+                if (args[i] == "--id")     { id        = args[i + 1]; i++; }
+                if (args[i] == "--plant")  { newPlant  = args[i + 1]; i++; }
+                if (args[i] == "--payoff") { newPayoff = args[i + 1]; i++; }
+            }
+            if (!Guid.TryParse(id, out var ppId) || (newPlant == null && newPayoff == null))
+            {
+                Console.Error.WriteLine("Usage: prose --update-plant --id <plant-payoff guid> [--plant \"...\"] [--payoff \"...\"]");
+                return 2;
+            }
+            var updated = await services.GetRequiredService<PlantPayoffService>().UpdateDescriptionsAsync(ppId, newPlant, newPayoff);
+            Console.WriteLine($"Updated {updated.Id}");
+            Console.WriteLine($"   Plant:  {updated.PlantDescription}");
+            Console.WriteLine($"   Payoff: {updated.PayoffDescription}");
+            return 0;
+        }
+
         for (int i = 0; i < args.Length - 1; i++)
             if (args[i] == "--slug") { slug = args[i + 1]; i++; }
 

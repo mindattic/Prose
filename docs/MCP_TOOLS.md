@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**278 tools** across **49 tool families.**
+**279 tools** across **49 tool families.**
 
 ## Families
 
@@ -48,7 +48,7 @@
 | [One Shot Generation](#one-shot-generation) | 1 |
 | [Operator Key](#operator-key) | 5 |
 | [Planning](#planning) | 2 |
-| [Plant Payoff](#plant-payoff) | 5 |
+| [Plant Payoff](#plant-payoff) | 6 |
 | [Quality](#quality) | 5 |
 | [Reading](#reading) | 4 |
 | [Repository](#repository) | 3 |
@@ -1730,6 +1730,14 @@ Record whether a payoff beat stands alone for cold readers (is_transparent) and 
 - `plantPayoffId` (string, required) — PlantPayoff id (GUID).
 - `isTransparent` (bool, required) — True = the payoff reads completely for a cold reader; false = it requires catching the plant (writing bug).
 - `note` (string, optional) — What the re-reader gains that the first-timer doesn't. Required when is_transparent=true.
+
+### `update_plant_payoff`
+
+Correct a registered plant/payoff pair's descriptions in place when the register disagrees with the page (the page wins). Omit a side to leave it unchanged. The pair's plant obligation follows. Returns the row as read back.
+
+- `plantPayoffId` (string, required) — PlantPayoff id (GUID).
+- `plantDescription` (string, optional) — New plant description (omit to keep).
+- `payoffDescription` (string, optional) — New payoff description (omit to keep).
 
 ## Quality
 

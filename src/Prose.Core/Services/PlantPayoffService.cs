@@ -198,6 +198,37 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
         await db.SaveChangesAsync(ct);
     }
 
+    /// <summary>
+    /// Correct a registered pair's descriptions in place, when the page and the register
+    /// disagree (the page wins). A null argument leaves that side alone. The pair's plant
+    /// obligation carries the same "plant → payoff" text and dedup key, so both follow.
+    /// </summary>
+    public async Task<PlantPayoff> UpdateDescriptionsAsync(Guid id, string? plantDesc, string? payoffDesc, CancellationToken ct = default)
+    {
+        if (string.IsNullOrWhiteSpace(plantDesc) && string.IsNullOrWhiteSpace(payoffDesc))
+            throw new ArgumentException("Give a new plant description, a new payoff description, or both.");
+
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var pp = await db.PlantPayoffs.FindAsync(new object[] { id }, ct)
+            ?? throw new InvalidOperationException($"PlantPayoff {id} not found.");
+        if (!string.IsNullOrWhiteSpace(plantDesc))  pp.PlantDescription  = plantDesc.Trim();
+        if (!string.IsNullOrWhiteSpace(payoffDesc)) pp.PayoffDescription = payoffDesc.Trim();
+        pp.UpdatedAt = DateTime.UtcNow;
+
+        if (pp.ObligationId is Guid obId)
+        {
+            var ob = await db.NarrativeObligations.FirstOrDefaultAsync(o => o.Id == obId, ct);
+            if (ob != null)
+            {
+                ob.Description = $"{pp.PlantDescription} → {pp.PayoffDescription}";
+                ob.DedupKey    = Obligations.NarrativeObligationService.DedupKey(ob.NodeId, ObligationKind.Plant, ob.Description);
+                ob.UpdatedAt   = DateTime.UtcNow;
+            }
+        }
+        await db.SaveChangesAsync(ct);
+        return pp;
+    }
+
     public async Task<PlantPayoffAudit> AuditAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);

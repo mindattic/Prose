@@ -168,6 +168,28 @@ public class PlantPayoffTools(
         catch (Exception ex) { return JsonSerializer.Serialize(new { error = ex.Message }, JsonOpts); }
     }
 
+    // ── update_plant_payoff ───────────────────────────────────────────────────
+
+    [McpServerTool, Description("Correct a registered plant/payoff pair's descriptions in place when the register disagrees with the page (the page wins). Omit a side to leave it unchanged. The pair's plant obligation follows. Returns the row as read back.")]
+    public Task<string> update_plant_payoff(
+        [Description("PlantPayoff id (GUID).")] string plantPayoffId,
+        [Description("New plant description (omit to keep).")] string? plantDescription = null,
+        [Description("New payoff description (omit to keep).")] string? payoffDescription = null) =>
+        hub.InvokeAsync(nameof(PlantPayoffTools), nameof(update_plant_payoffImpl), new { plantPayoffId, plantDescription, payoffDescription });
+
+    /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
+    public async Task<string> update_plant_payoffImpl(string plantPayoffId, string? plantDescription = null, string? payoffDescription = null)
+    {
+        if (!Guid.TryParse(plantPayoffId, out var ppId))
+            return JsonSerializer.Serialize(new { error = "invalid_guid" }, JsonOpts);
+        try
+        {
+            var pp = await plantPayoffs.UpdateDescriptionsAsync(ppId, plantDescription, payoffDescription);
+            return JsonSerializer.Serialize(new { status = "updated", id = pp.Id, plant_description = pp.PlantDescription, payoff_description = pp.PayoffDescription }, JsonOpts);
+        }
+        catch (Exception ex) { return JsonSerializer.Serialize(new { error = ex.Message }, JsonOpts); }
+    }
+
     // ── audit_plant_payoffs ───────────────────────────────────────────────────
 
     /// <summary>
