@@ -922,7 +922,7 @@ The use-or-delete check: every factory tool, the day it shipped, its real calls 
 End the current factory session (what /quicksave does). summaryJson = {done:[...], decisions:[{text, rulingId|orderId}], next:"..."}. Refused while any decision is not backed by a ruling or work order recorded this session.
 
 - `summaryJson` (string, required) — The summary JSON.
-- `sessionId` (string, optional) — Optional session id (defaults to the open one).
+- `sessionId` (string, optional) — The session id the start hook printed as THIS SESSION. May be omitted only when exactly one session is open; with several open the end is refused.
 
 ### `work_order_abandon`
 

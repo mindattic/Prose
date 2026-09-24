@@ -229,7 +229,7 @@ public class FactoryTools(
     }
 
     [McpServerTool, Description("End the current factory session (what /quicksave does). summaryJson = {done:[...], decisions:[{text, rulingId|orderId}], next:\"...\"}. Refused while any decision is not backed by a ruling or work order recorded this session.")]
-    public Task<string> session_end([Description("The summary JSON.")] string summaryJson, [Description("Optional session id (defaults to the open one).")] string? sessionId = null) =>
+    public Task<string> session_end([Description("The summary JSON.")] string summaryJson, [Description("The session id the start hook printed as THIS SESSION. May be omitted only when exactly one session is open; with several open the end is refused.")] string? sessionId = null) =>
         hub.InvokeAsync(nameof(FactoryTools), nameof(SessionEndImpl), new { summaryJson, sessionId });
 
     [FactoryTool("session_end", "2026-09-23", Cli = "FactoryCli --session end")]

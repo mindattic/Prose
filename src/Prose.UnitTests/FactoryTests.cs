@@ -218,6 +218,26 @@ public class FactoryTests
     }
 
     [Test]
+    public async Task A_session_end_without_an_id_is_refused_while_several_sessions_are_open()
+    {
+        var mine = await sessions.StartAsync("claude-1", null, null);
+        var theirs = await sessions.StartAsync("claude-2", null, null);
+        const string summary = """{"done":["x"],"decisions":[],"next":"read"}""";
+
+        var (ok, problems, _) = await sessions.EndAsync(null, summary, null);
+        Assert.That(ok, Is.False);
+        Assert.That(problems.Single(), Does.Contain(mine.SessionId.ToString()).And.Contain(theirs.SessionId.ToString()));
+
+        (ok, _, var ended) = await sessions.EndAsync(mine.SessionId, summary, null);
+        Assert.That(ok, Is.True);
+        Assert.That(ended, Is.EqualTo(mine.SessionId));
+
+        (ok, _, ended) = await sessions.EndAsync(null, summary, null);
+        Assert.That(ok, Is.True, "with one session left open, no id is unambiguous");
+        Assert.That(ended, Is.EqualTo(theirs.SessionId));
+    }
+
+    [Test]
     public async Task The_actor_tag_names_the_open_session()
     {
         Assert.That(await sessions.ActorTagAsync("mcp"), Is.EqualTo("mcp"));

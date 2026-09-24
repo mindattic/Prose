@@ -29,7 +29,10 @@ this summary automatically, next to the factory's live next action.
    ```
 
    `$ARGUMENTS`, if given, goes into `next` or `done` as the user meant it.
-3. **End the session:** `prose --session end --file <summary.json>` (MCP: `session_end`).
+3. **End the session:** `prose --session end --id <THIS SESSION> --file <summary.json>` (MCP:
+   `session_end` with `sessionId`). The id is the one the start hook printed as `THIS SESSION`.
+   Always pass it: other sessions may be open in the same tree, and without an id the end is
+   refused whenever more than one is open.
    - If it is refused, it lists each decision that is not backed by a ruling or order recorded
      this session. Record those (step 1) and run it again. Do not drop a decision to get past it.
 4. Tell the user in one line that the session is saved, and what `next` says.

@@ -61,9 +61,19 @@ public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFa
         catch { return (false, ["the summary must be a JSON object {done[], decisions[{text, rulingId|orderId}], next}."], sessionId); }
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var session = sessionId is { } sid
-            ? await db.FactorySessions.FirstOrDefaultAsync(s => s.Id == sid, ct)
-            : await db.FactorySessions.Where(s => s.EndedAt == null).OrderByDescending(s => s.StartedAt).FirstOrDefaultAsync(ct);
+        FactorySession? session;
+        if (sessionId is { } sid)
+            session = await db.FactorySessions.FirstOrDefaultAsync(s => s.Id == sid, ct);
+        else
+        {
+            // Without an id, "the open session" is only unambiguous when there is exactly one.
+            // Guessing the newest ended another session's row when several shared the tree.
+            var open = await db.FactorySessions.Where(s => s.EndedAt == null)
+                .OrderByDescending(s => s.StartedAt).Take(10).ToListAsync(ct);
+            if (open.Count > 1)
+                return (false, [$"{open.Count} sessions are open ({string.Join(", ", open.Select(s => s.Id))}); pass the id the start hook printed as THIS SESSION."], null);
+            session = open.FirstOrDefault();
+        }
         if (session == null) return (false, ["no open session to end."], sessionId);
 
         var problems = new List<string>();
