@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**273 commands.** 30 deactivated. 10 cost-gated. 20 have no description in their dispatch comment (14 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**277 commands.** 30 deactivated. 10 cost-gated. 20 have no description in their dispatch comment (14 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -1215,13 +1215,33 @@ prose → entities + edges. LLM-driven. add --commit to apply, --auto-create to 
 
 <sub>handler `InterpretCli`</sub>
 
+### `--kdp-export`
+
+```
+prose --kdp-export [--to <dir>] [--markers-in-place]
+```
+
+Writes the KDP store back out as JSON in the original shapes (default: a new folder under %LocalAppData%\MindAttic\Prose\kdp-export). --markers-in-place also rewrites book-folder markers.
+
+<sub>handler `KdpExportCli`</sub>
+
+### `--kdp-import`
+
+```
+prose --kdp-import [--from <dir>] [--legacy-markers]
+```
+
+Loads the KDP store from JSON (title-ids.json, category-tree-*.json, logs/, publish-markers/) in --from (default tools/kdp). --legacy-markers also reads each book folder's .publish marker.
+
+<sub>handler `KdpImportCli`</sub>
+
 ### `--kdp-manifest`
 
 ```
 prose --kdp-manifest [--out <path>] [--userscript]
 ```
 
-Reconciles DB + disk + tools/kdp/title-ids.json into tools/kdp/manifest.json (the ground truth for what needs to go up on KDP). --userscript also regenerates tools/kdp/kdp-panel.user.js from tools/kdp/kdp-panel.template.js.
+Reconciles DB + disk + the KDP store (title ids, sign-offs, publish records) into tools/kdp/manifest.json (a generated view of what needs to go up on KDP). --userscript also regenerates tools/kdp/kdp-panel.user.js from tools/kdp/kdp-panel.template.js.
 
 <sub>handler `KdpManifestCli`</sub>
 
@@ -1235,6 +1255,16 @@ Closes the loop after a republish actually completes on KDP.
 
 <sub>handler `KdpMarkPublishedCli`</sub>
 
+### `--kdp-signoff`
+
+```
+prose --kdp-signoff --code <CODE>[,<CODE>...] [--off]
+```
+
+Signs books off for KDP publishing (the gate a .publish marker file used to be); --off holds them.
+
+<sub>handler `KdpSignOffCli`</sub>
+
 ### `--kdp-status`
 
 ```
@@ -1244,6 +1274,16 @@ prose --kdp-status
 Show KDP publication status: Published / Outdated / WorkInProgress for all tracked nodes. Outdated = published but beats edited since last KDP push.
 
 <sub>handler `KdpStatusCli`</sub>
+
+### `--kdp-store`
+
+```
+prose --kdp-store [--code <CODE>]
+```
+
+Shows the KDP store's location, contents and import history; --code shows one book's sign-off, title id and publish history.
+
+<sub>handler `KdpStoreCli`</sub>
 
 ### `--ledger-adjudicate`
 

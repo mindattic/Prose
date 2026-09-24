@@ -41,8 +41,7 @@ public class MarkPublishedTool : IKdpTool
         var url = args.TryGetProperty("url", out var u) ? u.GetString() : null;
         var titleId = args.TryGetProperty("title_id", out var t) ? t.GetString() : null;
 
-        var repoRoot = KdpManifestService.FindRepoRoot();
-        var result = await service.MarkPublishedAsync(slug, url, titleId, repoRoot, ct);
+        var result = await service.MarkPublishedAsync(slug, url, titleId, ct);
         return JsonSerializer.Serialize(result);
     }
 }

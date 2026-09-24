@@ -153,6 +153,9 @@ if (UniverseBootstrap.RequestedSlug == null
         "--reset-password", "--sync-markdown", "--generate-canon-md", "--migrate-canon-docs",
         "--schema", "--universe", "--help", "-h", "--sql-export", "--gpu", "--runpod",
         "--kdp-status", "--kdp-manifest", "--kdp-mark-published", "--audit-consistency",
+        // The KDP store (machine-local SQLite) is keyed by NodeCode across every universe, like
+        // --kdp-manifest itself.
+        "--kdp-import", "--kdp-export", "--kdp-signoff", "--kdp-store",
         // 2026-08-09: --seed applies raw SqlSeedService.Seeds scripts, each of which either
         // touches no universe-scoped row (schema ALTER/CREATE) or targets its own explicit,
         // hardcoded row (e.g. add_universe_*.sql inserts a specific new Universe row) — there
@@ -1841,9 +1844,9 @@ if (args.Contains("--kdp-status"))
 }
 
 //   prose --kdp-manifest [--out <path>] [--userscript]
-//   Reconciles DB + disk + tools/kdp/title-ids.json into tools/kdp/manifest.json (the ground
-//   truth for what needs to go up on KDP). --userscript also regenerates
-//   tools/kdp/kdp-panel.user.js from tools/kdp/kdp-panel.template.js.
+//   Reconciles DB + disk + the KDP store (title ids, sign-offs, publish records) into
+//   tools/kdp/manifest.json (a generated view of what needs to go up on KDP). --userscript also
+//   regenerates tools/kdp/kdp-panel.user.js from tools/kdp/kdp-panel.template.js.
 if (args.Contains("--kdp-manifest"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("KdpManifestCli", args);
@@ -1855,6 +1858,41 @@ if (args.Contains("--kdp-manifest"))
 if (args.Contains("--kdp-mark-published"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("KdpMarkPublishedCli", args);
+    return;
+}
+
+//   prose --kdp-import [--from <dir>] [--legacy-markers]
+//   Loads the KDP store from JSON (title-ids.json, category-tree-*.json, logs/, publish-markers/)
+//   in --from (default tools/kdp). --legacy-markers also reads each book folder's .publish marker.
+if (args.Contains("--kdp-import"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("KdpImportCli", args);
+    return;
+}
+
+//   prose --kdp-export [--to <dir>] [--markers-in-place]
+//   Writes the KDP store back out as JSON in the original shapes (default: a new folder under
+//   %LocalAppData%\MindAttic\Prose\kdp-export). --markers-in-place also rewrites book-folder markers.
+if (args.Contains("--kdp-export"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("KdpExportCli", args);
+    return;
+}
+
+//   prose --kdp-signoff --code <CODE>[,<CODE>...] [--off]
+//   Signs books off for KDP publishing (the gate a .publish marker file used to be); --off holds them.
+if (args.Contains("--kdp-signoff"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("KdpSignOffCli", args);
+    return;
+}
+
+//   prose --kdp-store [--code <CODE>]
+//   Shows the KDP store's location, contents and import history; --code shows one book's
+//   sign-off, title id and publish history.
+if (args.Contains("--kdp-store"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("KdpStoreCli", args);
     return;
 }
 

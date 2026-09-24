@@ -196,7 +196,7 @@ their state as their respective conflict opens — see §10 for the full entity 
 | <entity repo="character" guid="019fc925-8cd6-7005-b330-61108b0194ca">Richard Mulcahy</entity> | War of Independence | IRA Chief of Staff, GHQ Dublin |
 | <entity repo="character" guid="019fc925-8cea-7c58-bfe3-24b123cd6a6a">Cathal Brugha</entity> | War of Independence | Dáil Minister for Defence |
 | Éamon de <entity repo="character" guid="019fc925-8d04-78ea-8445-a7066c7eb1d5">Valera</entity> | War of Independence | Dáil Éireann President; largely in the United States on a fundraising/diplomatic mission for much of 1919–20 |
-| <entity repo="character" guid="019fc925-8d18-7c30-9204-5376c544524f">William "Rick" Joyce</entity> | War of Independence | Rank-and-file Volunteer, West Mayo Brigade Flying Column under Michael Kilroy — named ("<entity repo="character" guid="019fc925-8d18-7c30-9204-5376c544524f">R. Joyce</entity>") in the Military Archives' 1920-21 roster/photograph, the same column that fought Tourmakeady, Kilmeena, and Carrowkennedy; individual actions beyond column membership not yet found in available sources — an openly stated gap, not smoothed over |
+| <entity repo="character" guid="019fc925-8d18-7c30-9204-5376c544524f">William "Rick" Joyce</entity> | War of Independence | Rank-and-file Volunteer, West Mayo Brigade Flying Column under <entity repo="character" guid="0de09e19-557e-40ff-a974-05c00665c49a">Michael</entity> Kilroy — named ("<entity repo="character" guid="019fc925-8d18-7c30-9204-5376c544524f">R. Joyce</entity>") in the Military Archives' 1920-21 roster/photograph, the same column that fought Tourmakeady, Kilmeena, and Carrowkennedy; individual actions beyond column membership not yet found in available sources — an openly stated gap, not smoothed over |
 | <entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">William Brooke Joyce</entity> | War of Independence | Teenage son of a strongly pro-Unionist <entity repo="place" guid="019fc925-c2b2-70db-a239-a16ab7c194ad">Galway</entity> family; scouts/informs for British forces against the local IRA — the counterinsurgent-side informer case this book uses (later "<entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">Lord Haw-Haw</entity>"; his post-1921 career is explicitly out of scope) |
 
 ---
@@ -290,7 +290,7 @@ survival.
 
 **HARD RULE, user's explicit instruction 2026-08-03 — even-handedness, not villain/hero framing:**
 "make sure to keep it neutral, its easy to make the british out to be villians - but history is
-more nuanced then that. <entity repo="character" guid="a4390d4b-ab8b-40c5-b116-1920a363e13c">One</entity> atrocity begets another and nobody gets out of war with their hands
+more nuanced then that. One atrocity begets another and nobody gets out of war with their hands
 clean." This book must NOT read as a one-sided nationalist narrative of British villainy and
 Irish victimhood, across any of the seven rounds. Concretely: every chapter that documents a
 Crown/English/British atrocity (<entity repo="place" guid="019fc925-c27e-75d8-964b-f3ca7f3d3c9b">Drogheda</entity> and <entity repo="place" guid="019fc925-c286-7c13-af59-b8b3d404af58">Wexford</entity>'s mass killings, 1649; <entity repo="character" guid="019fc94a-d2e8-7c85-b25e-45c3ac73974c">Mountjoy</entity>'s
@@ -357,7 +357,7 @@ now notes which of the six rounds (§1) it threads in beyond the two original an
 and 2's DB titles still read "Two Wars..." from the original build — RENAME THESE before drafting
 body prose (see Checklist); the content plan below already reflects the widened scope:**
 
-1. *(rename pending — was "Two Wars, <entity repo="character" guid="a4390d4b-ab8b-40c5-b116-1920a363e13c">One</entity> Question")* — method, terminology (tory vs. rapparee,
+1. *(rename pending — was "Two Wars, One Question")* — method, terminology (tory vs. rapparee,
    and the Restoration-era overlap the <entity repo="character" guid="019fc925-8c64-7d4a-bddb-4225d55304b5">O'Hanlon</entity> research surfaced), and the evidence-asymmetry
    problem stated up front. EXPANDED: introduce the full six-round span here, and preview the
    folk-hero-genesis lens (§2) as a thread the reader should watch for throughout.
@@ -372,7 +372,7 @@ body prose (see Checklist); the content plan below already reflects the widened 
 4. Wood, Bog, and Motor Lorry — the mobility contest. EXPANDED: <entity repo="character" guid="019fc93e-a9ee-7dca-a87f-e002d3063594">Michael Dwyer</entity>'s Wicklow terrain
    and the British Military Road (built specifically to reach him) becomes a THIRD case between
    the Cromwellian tories and the War of Independence columns — the road itself still exists.
-5. Eyes in the Barony — informers, intelligence, counterintelligence. EXPANDED: William Brooke
+5. Eyes in the Barony — informers, intelligence, counterintelligence. EXPANDED: <entity repo="character" guid="019ff720-63bc-72a7-b102-08acef2b03a4">William</entity> Brooke
    Joyce's <entity repo="place" guid="019fc925-c2b2-70db-a239-a16ab7c194ad">Galway</entity> informer case (<entity repo="character" guid="019fc925-8cc7-7d23-80a9-939adae4b4d4">Michael Collins</entity>'s counter-intelligence war) sits alongside the
    Fenian Rising's informer-riddled 1867 failure (Comerford) as a second, earlier case of an
    entire rising collapsing on bad information security.
@@ -403,7 +403,7 @@ body prose (see Checklist); the content plan below already reflects the widened 
     institutional and comparatively anonymous. That asymmetry, not just the tactical one, is the
     closing argument.
 12. (trailing) A Gazetteer of Three Centuries — <entity repo="place" guid="019fc925-c0d4-7272-b469-f830259c06a2">Glen of Aherlow</entity>, <entity repo="place" guid="019fc925-c261-7468-9fb9-2bff9c859455">Rathmines</entity>, <entity repo="place" guid="019fc925-c272-7763-90a3-d3f849342c20">Scarrifhollis</entity>,
-    <entity repo="place" guid="019fc925-c27e-75d8-964b-f3ca7f3d3c9b">Drogheda</entity>, <entity repo="place" guid="019fc925-c286-7c13-af59-b8b3d404af58">Wexford</entity>, <entity repo="place" guid="019fc925-c28d-7277-85f1-121b2f9d2b05">Connacht</entity>; <entity repo="place" guid="019fc93e-ba3c-7952-a8ff-45e17d339023">Vinegar Hill</entity>, Glen of Imaal, Thomas Street (Dublin), Manchester,
+    <entity repo="place" guid="019fc925-c27e-75d8-964b-f3ca7f3d3c9b">Drogheda</entity>, <entity repo="place" guid="019fc925-c286-7c13-af59-b8b3d404af58">Wexford</entity>, <entity repo="place" guid="019fc925-c28d-7277-85f1-121b2f9d2b05">Connacht</entity>; <entity repo="place" guid="019fc93e-ba3c-7952-a8ff-45e17d339023">Vinegar Hill</entity>, Glen of Imaal, <entity repo="character" guid="019f9ff0-75ad-7e78-bed0-99d6e73bbec3">Thomas</entity> Street (Dublin), <entity repo="place" guid="019fc93e-bc0e-7af7-94b1-eb89ef941b33">Manchester</entity>,
     County Mayo; <entity repo="place" guid="019fc925-c299-725f-a89d-e5d8a61ec5a4">Soloheadbeg</entity>, <entity repo="place" guid="019fc925-c29f-7369-b923-ae9cc36cb5eb">Kilmichael</entity>, <entity repo="place" guid="019fc925-c2a5-7872-a4b2-dd8fe3848397">Crossbarry</entity>, <entity repo="place" guid="019fc925-c2ab-7e17-9c18-7035f5cbdf57">Dublin Castle</entity> — with coordinates
 13. (trailing) What Survives — Dunlop, O Siochru, Pakenham, <entity repo="character" guid="019fc94a-d2c7-79c6-9cf9-5dc9901c3494">O'Donnell</entity> (x2), Elliott, Comerford,
     <entity repo="character" guid="019fc93e-aa6e-7e0a-a8e9-bbef62010ef9">Davitt</entity>'s own memoir, the Bureau of Military History Witness Statements, <entity repo="character" guid="019fc925-8c7d-7d78-b704-489c65087149">Barry</entity>'s *Guerilla
@@ -427,7 +427,7 @@ eras per chapter, not one invented dramatic palette.
    the control/collaboration/collective-reprisal theoretical model applied throughout
 3. <entity repo="character" guid="019fc925-8c7d-7d78-b704-489c65087149">Tom Barry</entity>, *Guerilla Days in Ireland* (The Irish Press, 1949; Anvil Books paperback from 1962) —
    the primary first-person tactical account of the ambush-as-capture-economy doctrine
-4. Robert Dunlop (ed.), *Ireland Under the Commonwealth* (Manchester University Press, 1913) —
+4. Robert Dunlop (ed.), *Ireland Under the Commonwealth* (<entity repo="place" guid="019fc93e-bc0e-7af7-94b1-eb89ef941b33">Manchester</entity> University Press, 1913) —
    the documentary calendar for the Cromwellian settlement/tory-suppression administrative record
 5. *(EXPANDED SCOPE, added 2026-08-03)* Ruán <entity repo="character" guid="019fc94a-d2c7-79c6-9cf9-5dc9901c3494">O'Donnell</entity>'s two-volume Wicklow study and Marianne
    Elliott's <entity repo="character" guid="019fc93e-aa11-73b0-8df9-a99bbb0aaf7c">Emmet</entity> biography — the model for how this book treats failure-into-legend across the
@@ -457,7 +457,7 @@ not strictly Cromwellian or Williamite — see corrected terminology note in §8
 structural bridge figure between the Cromwellian and War of Independence anchors), <entity repo="character" guid="019fc93e-aa11-73b0-8df9-a99bbb0aaf7c">Robert Emmet</entity>.
 
 ### People — Fenian Rising / Land War (EXPANDED SCOPE, seeded 2026-08-03)
-<entity repo="character" guid="019fc93e-aa2a-74f8-b52c-8c88e557d5dc">James Stephens</entity>, <entity repo="character" guid="019fc93e-aa44-7176-9f34-6dddd188a2b7">Thomas J. Kelly</entity>, the <entity repo="character" guid="019fc93e-aa5e-7e10-9b6a-bba1a280e7a4">Manchester Martyrs</entity> (William <entity repo="character" guid="bd5cebdc-8150-4f3b-8ac9-797377b0ff77">Allen</entity>, Michael Larkin, Michael
+<entity repo="character" guid="019fc93e-aa2a-74f8-b52c-8c88e557d5dc">James Stephens</entity>, <entity repo="character" guid="019fc93e-aa44-7176-9f34-6dddd188a2b7">Thomas J. Kelly</entity>, the <entity repo="character" guid="019fc93e-aa5e-7e10-9b6a-bba1a280e7a4">Manchester Martyrs</entity> (<entity repo="character" guid="019ff720-63bc-72a7-b102-08acef2b03a4">William</entity> <entity repo="character" guid="bd5cebdc-8150-4f3b-8ac9-797377b0ff77">Allen</entity>, <entity repo="character" guid="0de09e19-557e-40ff-a974-05c00665c49a">Michael</entity> Larkin, <entity repo="character" guid="0de09e19-557e-40ff-a974-05c00665c49a">Michael</entity>
 O'Brien — seeded as one grouped entity), <entity repo="character" guid="019fc93e-aa6e-7e0a-a8e9-bbef62010ef9">Michael Davitt</entity>.
 
 ### People — War of Independence era (seeded)
@@ -469,7 +469,7 @@ were all deleted/disabled 2026-08-03. Do not re-add him without the user asking 
 
 ### Places (seeded)
 <entity repo="place" guid="019fc925-c0d4-7272-b469-f830259c06a2">Glen of Aherlow</entity>, <entity repo="place" guid="019fc925-c261-7468-9fb9-2bff9c859455">Rathmines</entity>, <entity repo="place" guid="019fc925-c272-7763-90a3-d3f849342c20">Scarrifhollis</entity>, <entity repo="place" guid="019fc925-c27e-75d8-964b-f3ca7f3d3c9b">Drogheda</entity>, <entity repo="place" guid="019fc925-c286-7c13-af59-b8b3d404af58">Wexford</entity>, <entity repo="place" guid="019fc925-c28d-7277-85f1-121b2f9d2b05">Connacht</entity>; <entity repo="place" guid="019fc93e-ba3c-7952-a8ff-45e17d339023">Vinegar Hill</entity>, Glen of Imaal
-(Wicklow Mountains), Thomas Street (Dublin), Manchester, County Mayo (Land League origin);
+(Wicklow Mountains), <entity repo="character" guid="019f9ff0-75ad-7e78-bed0-99d6e73bbec3">Thomas</entity> Street (Dublin), <entity repo="place" guid="019fc93e-bc0e-7af7-94b1-eb89ef941b33">Manchester</entity>, County Mayo (Land League origin);
 <entity repo="place" guid="019fc925-c299-725f-a89d-e5d8a61ec5a4">Soloheadbeg</entity>, <entity repo="place" guid="019fc925-c29f-7369-b923-ae9cc36cb5eb">Kilmichael</entity>, <entity repo="place" guid="019fc925-c2a5-7872-a4b2-dd8fe3848397">Crossbarry</entity>, <entity repo="place" guid="019fc925-c2ab-7e17-9c18-7035f5cbdf57">Dublin Castle</entity>. **<entity repo="place" guid="019fc925-c2b2-70db-a239-a16ab7c194ad">Galway</entity> was seeded (for the Joyce informer
 case) then REMOVED alongside <entity repo="character" guid="019fc925-8d36-7b33-b806-2101afe9fd86">William Brooke Joyce</entity> — see above.**
 
@@ -479,7 +479,7 @@ Statements [2]; <entity repo="character" guid="019fc925-8c7d-7d78-b704-489c65087
 Freedom* [4]; <entity repo="character" guid="019fc925-8cb7-7702-83a8-7cef922c0100">Ernie O'Malley</entity>'s *On Another <entity repo="character" guid="019f9ff0-7965-74e9-a099-383dd10a6230">Man</entity>'s Wound* [5]; *An t-Óglach* [6]; Charles
 Townshend's *The British Campaign in Ireland 1919–1921* [7]; Stathis Kalyvas's *The Logic of
 Violence in Civil War* [8]; Micheál Ó Siochrú's *God's Executioner* [9]; the Military Archives'
-West Mayo Flying Column photograph [10]; Thomas Pakenham's *The Year of Liberty* (1798) [12];
+West Mayo Flying Column photograph [10]; <entity repo="character" guid="019f9ff0-75ad-7e78-bed0-99d6e73bbec3">Thomas</entity> Pakenham's *The Year of Liberty* (1798) [12];
 Ruán <entity repo="character" guid="019fc94a-d2c7-79c6-9cf9-5dc9901c3494">O'Donnell</entity>'s *The Rebellion in Wicklow, 1798* [13] and *Aftermath: Post-Rebellion Insurgency
 in Wicklow, 1799-1803* [14]; Marianne Elliott's *<entity repo="character" guid="019fc93e-aa11-73b0-8df9-a99bbb0aaf7c">Robert Emmet</entity>: The Making of a Legend* [15]; R. V.
 Comerford's *The Fenians in Context* [16]; <entity repo="character" guid="019fc93e-aa6e-7e0a-a8e9-bbef62010ef9">Michael Davitt</entity>'s own memoir *The Fall of Feudalism in
@@ -519,7 +519,7 @@ Checklist.
       about it").
 - [x] ChapterNodes created (11 numbered + Gazetteer + What Survives + Theoretical Frame + Notes
       + Glossary), SortKey-ordered and verified. **OUTSTANDING: Chapter 1 and Chapter 2's DB
-      titles still read "Two Wars, <entity repo="character" guid="a4390d4b-ab8b-40c5-b116-1920a363e13c">One</entity> Question" / "After the Field Armies Died" from the
+      titles still read "Two Wars, One Question" / "After the Field Armies Died" from the
       original two-war build — Chapter 1's title needs renaming to reflect the six-round scope
       before body prose is drafted (see §9); Chapter 2's title still works as-is.**
 - [ ] Node bible hand-authored (arc, chapter spine, locks, no-dramatization rule, terminology

@@ -13,13 +13,13 @@
   same user, same privilege level, same schedule, same executable.
 
   This is not a workaround. MindAtticBobNightlyBackup on this machine is already S4U and is the
-  reason it has never flashed. This just brings the other three into line with it.
+  reason it has never flashed. This just brings the remaining offender into line with it.
 
   WHAT S4U COSTS YOU — read this before running
   An S4U task gets a local logon token with no network credentials. Local resources (localhost
   SQL Server, the filesystem, loopback HTTP) work exactly as before; a task that authenticates to
-  a REMOTE machine with your Windows identity would start failing. None of these three look like
-  they do that, and the script verifies each one still exits 0 afterwards — but that is the one
+  a REMOTE machine with your Windows identity would start failing. The tick runner does not look
+  like it does that, and the script verifies it still exits 0 afterwards — but that is the one
   behaviour worth knowing about.
 
   An S4U task also runs when you are logged off, where an Interactive one does not. For a "tick"
@@ -46,9 +46,11 @@ param(
 $ErrorActionPreference = 'Stop'
 
 $Tasks = @(
+    # The only Interactive task left. The other two that were here are gone, not fixed:
+    # StreetSamurai-NightlyFactSweep pointed at a deleted repo and had been exiting 1 nightly;
+    # ProseAutoCorrectNightly wrote prose unattended, which is what RFC 0009 forbids. Both were
+    # unregistered 2026-09-20 on the author's instruction.
     'MindAttic.Automata.Tick'          # every 5 minutes — the one you actually notice
-    'ProseAutoCorrectNightly'          # daily 03:00
-    'StreetSamurai-NightlyFactSweep'   # daily 01:00
 )
 
 function Test-Elevated {

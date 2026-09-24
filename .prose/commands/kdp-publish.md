@@ -15,6 +15,35 @@ seconds each because the account had hit its usage cap — check whether that or
 similar standing block is still in effect before spending the confirmation on a run that can't
 succeed.
 
+## Where KDP state lives (since 2026-09-23)
+
+KDP-only state — the NodeCode → KDP titleId crosswalk, each book's **sign-off** (the publish gate),
+its last confirmed publish and full publish history, crawled category trees, and run logs — lives in
+the **KDP store**, a machine-local SQLite file: `%LocalAppData%\MindAttic\Prose\kdp.db`
+(`PROSE_KDP_DB` overrides it). Books themselves are still read from the Prose database. The old JSON
+files are import/export only:
+
+- `tools/kdp/title-ids.json`, `tools/kdp/category-tree-*.json`, `tools/kdp/logs/*.log` and every
+  book folder's `.publish` marker were imported **once**, automatically, the first time a KDP
+  command or KdpPublish opened the empty store. The files were left untouched as a backup, and
+  **no longer count**: creating or deleting a `.publish` file does nothing now (the manifest
+  warns when it sees one on a book the store has not signed off).
+- `prose --kdp-store [--code <CODE>]` — store location, contents, import history; with `--code`,
+  one book's sign-off, titleId and publish history.
+- `prose --kdp-signoff --code <CODE>[,<CODE>...] [--off]` — sign books off (or hold them back).
+  KdpPublish's **Sign Off** / **Hold** buttons do the same for the selected rows.
+- `prose --kdp-import [--from <dir>] [--legacy-markers]` and `prose --kdp-export [--to <dir>]
+  [--markers-in-place]` — load the store from / write it back to the JSON shapes (KdpPublish:
+  **Import JSON** / **Export JSON**). Export defaults to a new folder under
+  `%LocalAppData%\MindAttic\Prose\kdp-export\`; `--to tools/kdp` refreshes the committed
+  title-ids.json and category trees.
+- `manifest.json` and `kdp-panel.user.js` are generated outputs, rebuilt from the store.
+
+The `prose --kdp-*` commands execute inside the Prose Hub. If one answers `unknown_handler_class`
+(e.g. `--kdp-store`), the running Hub predates the KDP store — it must be redeployed before this
+runbook is used, or `--kdp-manifest` (old Hub, still reading the JSON files) and KdpPublish (new
+build, reading the store) will disagree.
+
 ## Step 0 — rebuild the manifest fresh
 
 Never trust a stale `tools/kdp/manifest.json` or the DB's `PublicationStatus` column directly (it
@@ -25,16 +54,17 @@ silently returns zero rows). Rebuild live:
 dotnet run --project src/Prose.Cli -- --kdp-manifest
 ```
 
-This reconciles DB + the export folders + `tools/kdp/title-ids.json` and writes
-`tools/kdp/manifest.json` (camelCase JSON, one entry per tracked book). Read that file.
+This reconciles DB + the export folders + the KDP store and writes `tools/kdp/manifest.json`
+(camelCase JSON, one entry per tracked book — same shape as before the store; `readyToPublish` is
+the store's sign-off and `localPublishMarker` its last confirmed publish). Read that file.
 
 ## Step 1 — classify every entry
 
 For each entry in `manifest.json`, sort into:
 
 - **Republish (stale)** — `needsRepublish == true`. This already encodes the full hard gate
-  (`.publish` marker + `cover.jpg` + `description.txt` on disk) plus "the current on-disk `.epub`
-  version is newer than what the local `.publish` marker last confirmed as actually published."
+  (signed off in the KDP store + `cover.jpg` + `description.txt` on disk) plus "the current on-disk
+  `.epub` version is newer than what the KDP store last confirmed as actually published."
   These are live on Amazon and out of date.
 - **New listing (ready)** — `meetsHardPublishGate == true` AND `publishUrl == null` AND
   `newListingPlan != null`. Never published before, hard gate passed, and a
@@ -44,9 +74,11 @@ For each entry in `manifest.json`, sort into:
   `newListingPlan == null`. Hard gate passed but nobody has authored the one-time first-publish
   metadata yet. **Do not include these in the run** — they will fail with "no first-time-publish
   plan configured." Report them separately so the user knows what's blocking them.
-- **Work in progress** — `meetsHardPublishGate == false` (missing `.publish` marker, cover, or
-  description, or no `.epub` on disk at all). Not eligible. Worth a one-line mention only if the
-  `warning` field says something actionable (e.g. "run `prose --export-node`").
+- **Work in progress** — `meetsHardPublishGate == false` (not signed off in the KDP store, missing
+  cover or description, or no `.epub` on disk at all). Not eligible. Worth a one-line mention only
+  if the `warning` field says something actionable (e.g. "run `prose --export-node`", or a legacy
+  `.publish` file sitting on a book the store never signed off — the owner decides whether to run
+  `prose --kdp-signoff --code <CODE>`; never sign a book off on their behalf).
 - **Already current** — `publishUrl != null`, `needsRepublish == false`. Nothing to do.
 
 If restricted to specific codes (comma-separated), filter the Republish/New-listing sets down to
@@ -88,11 +120,13 @@ Windows desktop session (this machine, not a headless box) since it drives live 
 
 The app's own status is not observable from here. After launching, wait (the app processes books
 sequentially and each one is a real multi-step browser interaction — minutes each, not seconds), then
-verify by re-running `dotnet run --project src/Prose.Cli -- --kdp-manifest` and/or reading each
-target book's `<exportFolder>/<CODE>/.publish` marker JSON directly
-(`{"File":...,"Asin":...,"PublishedAtUtc":...,"Version":...}`) — a marker is only ever written after
-a genuine confirmed-publish modal, never speculatively, so it's the trustworthy signal, not
-`Nodes.PublishUrl`/`KdpPublishedAt` alone.
+verify by re-running `dotnet run --project src/Prose.Cli -- --kdp-manifest` and/or
+`dotnet run --project src/Prose.Cli -- --kdp-store --code <CODE>` for each target book (its last
+publish — file, version, ASIN, confirmed time — and the full history; this replaces reading the
+book's `.publish` marker JSON, which is no longer written). A publish record is only ever written
+after a genuine confirmed-publish modal, never speculatively, so it's the trustworthy signal, not
+`Nodes.PublishUrl`/`KdpPublishedAt` alone. The run's own log is in the store too (and, as before,
+as a text file under `tools/kdp/logs/`).
 
 **Watch for the known failure signature**: if every targeted book fails within seconds of launch
 with no browser interaction ever happening, that is very likely the account hitting a usage cap —
@@ -100,8 +134,8 @@ this is a safe no-op (nothing touches the live KDP dashboard before the first AP
 not a destructive failure, but it means **stop and report it rather than retrying** — a usage-cap
 block doesn't clear by retrying, it clears at whatever reset time the account reports.
 
-Report back per code: Published (marker updated, version matches), still Outdated/blocked (no
-marker change — note the likely cause if visible), or unknown/needs a manual look (e.g. VATD's
+Report back per code: Published (new publish record, version matches), still Outdated/blocked (no
+new record — note the likely cause if visible), or unknown/needs a manual look (e.g. VATD's
 known intermittent `find_and_open_book` flakiness, or a "no first-time-publish plan configured"
 failure despite the plan appearing present in `SettingsKvStore` — both are recognized open issues,
 not new bugs to chase blindly).

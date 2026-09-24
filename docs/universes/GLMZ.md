@@ -149,14 +149,14 @@ and should be treated as exceptions with specific reasons (late arrival, religio
 failed integration, deliberate choice). The neuretic auto-identification overlay (see Consumer
 Culture §) is the default perceptual layer for nearly every character in every <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity> story.
 
-**ECT — Eigenstate Conscience Transfer (Ghosting):** The protocol for a Ghost operator to
+**ECT — Eigenstate Conscience Transfer (Ghosting):** The protocol for a <entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> operator to
 occupy a machine body. See [SS-LAW-26](../BIBLE.md#SS-§5) for operator class vocabulary.
-- **<entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>** — the biological body at rest while the Ghost is displaced
+- **<entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>** — the biological body at rest while the <entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> is displaced
 - **<entity repo="vocabulary" guid="019d6143-aaef-7492-a508-2a2812ae64a2">Shell</entity>** — the machine body being occupied
 - **Ghosting** — the act of ECT; street verb ("she ghosted the door green")
 - **Surfacing** — leaving a <entity repo="vocabulary" guid="019d6143-aaef-7492-a508-2a2812ae64a2">Shell</entity>; eigenstate reseats in the <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>
 
-Vocabulary rules: Ghost operators **ghost into** or **transit** Shells. They **surface** or
+Vocabulary rules: <entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> operators **ghost into** or **transit** Shells. They **surface** or
 **return** to their <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>. Never "transfer" or "upload" — those imply copying, not relocation.
 **Retired terms (SS-LAW-26):** "Rider", "Exo", "RFO", "inject/ride/slot" as operator vocabulary,
 "NSB (<entity repo="technology" guid="019f1b4e-fe79-7876-9228-db763bf04adc">Neuretic Substrate Bridging</entity>)", "CEP (<entity repo="technology" guid="019f1b4f-2c2a-7e2f-a3fc-bca8c85b6537">Coherent Eigenstate Projection</entity>)".
@@ -167,7 +167,7 @@ bus — the <entity repo="vocabulary" guid="019d6143-aaef-7492-a508-2a2812ae64a2
 way a standing wave can be sustained in a second medium. The <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity> drops to managed
 low-activity suspension for the duration — breathing, alive, absent. Return requires a clean
 handshake between the <entity repo="vocabulary" guid="019d6143-aaef-7492-a508-2a2812ae64a2">Shell</entity>'s neural bus and the waiting <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>; a disrupted handshake (Black
-Ice attack, hardware failure, forced extraction) carries seizure risk that scales with how
+<entity repo="vocabulary" guid="019d6143-aaba-77a3-aa0f-a5895e4e5acd">Ice</entity> attack, hardware failure, forced extraction) carries seizure risk that scales with how
 long the projection has been displaced, and extended forced displacement is fatal. The same
 underlying eigenstate physics governs <entity repo="technology" guid="019f3a83-1416-7959-856a-e2a11812359e">Eigenlift</entity> (see Aerostatic Architecture) — applied to
 mass instead of mind.
@@ -343,7 +343,7 @@ of illusions. Characters who have lived in <entity repo="place" guid="019d6143-a
 this any more than they register the smell of the city — it is the texture of the air.
 
 **Civic infrastructure layer (<entity repo="corponation" guid="019d6143-a7b6-7f75-85fe-75609a103282">Waxwing Neuromedia</entity>):**
-The Hyper Reality extends to public safety and civic management. Under the <entity repo="place" guid="0fb6cf26-aea9-e4d4-06a2-fd40d6bfe217">Corridor</entity> Authority
+The Hyper Reality extends to public safety and civic management. Under the Corridor Authority
 municipal contract, <entity repo="corponation" guid="019d6143-a7b6-7f75-85fe-75609a103282">Waxwing Neuromedia</entity> operates the civic AR layer: holographic stop signs
 hang at intersections (regulation red, neuretic-readable, legally binding the same as physical
 signs). Semi-transparent blue barriers materialize to designate pedestrian queues at transit
@@ -356,7 +356,7 @@ childhood to stop at a holographic sign. For the unaugmented, none of this exist
 residents navigate by following augmented people, by the faded physical infrastructure that was
 never fully decommissioned, and by the fact that the city does not particularly accommodate
 them. In <entity repo="place" guid="019d6143-a94e-7740-8aa9-4b82bbd9a223">the gray zone</entity>, the civic AR layer is absent entirely — hand-painted signs, physical
-barriers, and the <entity repo="archetype" guid="aec72c23-357f-d93b-ed0e-ec88fc4acb78">institutional memory</entity> of whoever lives there.
+barriers, and the institutional memory of whoever lives there.
 
 In gray zone territory, physical-layer AR emitters are absent or dead — the silence is
 conspicuous. First time a character arrives in a gray zone from inside the <entity repo="character" guid="019e9e4f-1cb6-70a9-a730-3b9197f0b875">Veil</entity>, they notice the
@@ -431,13 +431,13 @@ When she appears in a scene, describe what she's wearing.
 - **<entity repo="corponation" guid="019f5281-549a-7858-8b6f-7cbf1b838376">Velasca</entity>** — gray zone artisan; hand-finished; reputation-only; no storefront; found at Border Markets
 
 *Weapons:*
-- **<entity repo="corponation" guid="019d6143-a7a7-795b-b681-24c111525c79">Carrion Defense Works</entity> (CDW)** — brutal, functional, no corpo polish; CDW-RS5 'Chorus' is <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s revolver shotgun
+- **<entity repo="corponation" guid="019d6143-a7a7-795b-b681-24c111525c79">Carrion Defense Works</entity> (CDW)** — brutal, functional, no corpo polish; CDW-RS5 '<entity repo="character" guid="019e9e4f-1a6a-78c4-9ea8-e90a391045df">Chorus</entity>' is <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>'s revolver shotgun
 - **<entity repo="corponation" guid="019f5282-d770-7073-8851-5b7fadbd5218">Wyvern Arms</entity>** — the XS combat shotgun everyone knows; licensed street; civilian working weapons
 - **<entity repo="corponation" guid="019f5282-fa45-7680-804d-a763c7d2564e">Crucible Armaments</entity>** — institutional service weapons; NCID V-7 sidearm; <entity repo="corponation" guid="019d6143-a7a4-71f6-b46a-94ef8cb2348f">ArcSec</entity> secondary arms; telemetry built in
 
 *Ammunition:*
 - **Meridian Ordnance** — premium military-spec; MO-9 hollow point, MO-12 12-gauge slug, MO-556 5.56mm AP (most-stolen round in <entity repo="place" guid="019d6143-a927-73ac-abfa-37c77f9cff8d">GLMZ</entity>); archology-tier price
-- **<entity repo="corponation" guid="0d831459-182f-4efc-9920-bdf9e032c61d">Pulse</entity> <entity repo="archetype" guid="019d6143-a575-7718-9bdb-1783cf1872cd">Hollow</entity>** — standard licensed street ammo; adequate in every way; what Border Markets stock
+- **<entity repo="corponation" guid="0d831459-182f-4efc-9920-bdf9e032c61d">Pulse</entity> Hollow** — standard licensed street ammo; adequate in every way; what Border Markets stock
 - **<entity repo="corponation" guid="019f529a-8df7-7fa2-88d6-b9f9171dca9c">Ghost Grain Munitions</entity>** — gray zone specialty; subsonic loads for suppressed work; GG-9 9mm subsonic is the quiet-work standard; plain black cardboard box, ghost-white GG stamp; no storefront; Border Market only
 - **<entity repo="corponation" guid="019d6143-a7a7-795b-b681-24c111525c79">Carrion Defense Works</entity>** — CDW-14 Entropic <entity repo="vocabulary" guid="019d6143-aaef-7492-a508-2a2812ae64a2">Shell</entity> (14-gauge, proprietary; unpredictable fragmentation); matched to CDW revolver shotguns
 
@@ -465,7 +465,7 @@ When she appears in a scene, describe what she's wearing.
 - **<entity repo="corponation" guid="019d6143-a7b0-7987-99c7-c61219021012">Palladian Construction</entity>** — heavy infrastructure; PCS-3 concrete sprayer standard for wave maintenance and gray zone squatter sealing
 
 *<entity repo="technology" guid="019f0464-2fee-725a-a5e0-00628447b431">Neuretics</entity>:*
-- **<entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> NeoCortex** — consumer neuretics; Standard → Extend → Prime → Sovereign; <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> is the public face; <entity repo="character" guid="019ee6ce-ad71-7f25-a057-8e947a52b9eb">Marrow</entity> is the real product
+- **<entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> NeoCortex** — consumer neuretics; Standard → Extend → Prime → Sovereign; <entity repo="corponation" guid="34e17863-d822-4bed-a972-3649099b2444">Praxis</entity> is the public face; <entity repo="technology" guid="01a0d0ed-29d6-7b3f-bee4-ab9bb3aec6bd">Marrow</entity> is the real product
 
 *Technology:*
 - **<entity repo="corponation" guid="019f5283-7212-755d-90bf-5300f594718f">Lattice Systems</entity>** — the dominant consumer tech platform; what most personal devices run on; decade-old Lattice hardware still works
@@ -517,7 +517,7 @@ Bloom Quarter averages 31% coverage due to the known Substrate seam there.
 **Neural nano:** Bridges organic brain to neuretics. Without it, integration causes fatal
 autoimmune rejection. This is why neuretics can't just be "installed" like hardware.
 
-**<entity repo="archetype" guid="881c99a2-5a0a-f9ac-3550-a8bd24b99f27">Gray market</entity> nano:** Feral (escaped Substrate, unpredictable), Black (stolen corpo-grade),
+**Gray market nano:** Feral (escaped Substrate, unpredictable), Black (stolen corpo-grade),
 Cooked (artisanal street lab, variable quality).
 
 **Founding incidents:** São Paulo Event (2171) ~40k dead; Chengdu Sequence (2179); Lagos
@@ -696,7 +696,7 @@ is either freedom or a fall depending on wind and frame quality.
   unevenly tuned, no failure warning
 - *Vac-skin* — legacy term, now just meaning "expensive lightweight aerogel cladding," used for
   wealth signaling on high-end exteriors (the material outlived the vacuum tech it was named for)
-- *Ghost glass eyes* — insulated by altitude; can't see the street below
+- *<entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> glass eyes* — insulated by altitude; can't see the street below
 - *<entity repo="faction" guid="f7317df1-1307-4f9d-b06d-980cfb17635f">Webwalkers</entity>* — float maintenance workers who service the frame's node network; live between
   the mooring cables
 - *The Hold* — mooring system collectively
@@ -793,10 +793,10 @@ See [SS-LAW-26](../BIBLE.md#SS-§5) for the binding operator class vocabulary.
 
 | Term | Meaning |
 |---|---|
-| **Ghost** | <entity repo="vocabulary" guid="019d6143-aace-7670-992f-8ac6f4bd4a4f">Operator</entity> class: eigenstate conscience transfer (ECT); inhabits any machine with coherent circuitry. Body at rest = <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>. Street verb: ghosting. **Retired synonyms: Exo, RFO, Rider.** |
+| **<entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity>** | <entity repo="vocabulary" guid="019d6143-aace-7670-992f-8ac6f4bd4a4f">Operator</entity> class: eigenstate conscience transfer (ECT); inhabits any machine with coherent circuitry. Body at rest = <entity repo="vocabulary" guid="63c9d0ed-2e16-4e73-b7ca-a6bc40134ade">Husk</entity>. Street verb: ghosting. **Retired synonyms: Exo, RFO, Rider.** |
 | **Channeler** | <entity repo="vocabulary" guid="019d6143-aace-7670-992f-8ac6f4bd4a4f">Operator</entity> class: session-injection into networked frames; direct AI negotiation |
 | **Splicer** | <entity repo="vocabulary" guid="019d6143-aace-7670-992f-8ac6f4bd4a4f">Operator</entity> class: hardware/software attack surface, credential cracking, physical build; tech specialist |
-| **Jockey** | Alt street slang for a Ghost operator. ⚠️ Must never appear adjacent to camel imagery (SS-LAW-26 SLUR GUARD). |
+| **Jockey** | Alt street slang for a <entity repo="vocabulary" guid="019d6143-aaae-70cf-8c26-86f52ba52df0">Ghost</entity> operator. ⚠️ Must never appear adjacent to camel imagery (SS-LAW-26 SLUR GUARD). |
 | **operator / freelancer** | General term for independent runners doing Gray Zone work (combat, recon, extraction, coercion) |
 | **<entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">street samurai</entity>** | Nickname/title used for certain operators (notably <entity repo="character" guid="019d6143-a648-7876-9688-0f6d38d70075">Kyle</entity>); not a job category |
 | **scav** | Unaffiliated gray-zone opportunist; no gang; always lowercase |

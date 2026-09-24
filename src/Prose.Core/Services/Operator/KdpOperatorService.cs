@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 using Microsoft.Extensions.Logging;
+using Prose.Core.Kdp;
 using Prose.Core.Services;
 
 namespace Prose.Core.Services.Operator;
@@ -24,6 +25,7 @@ public class KdpOperatorService
 {
     private readonly IReadOnlyList<IToolCallingLlm> toolCallingProviders;
     private readonly KdpToolRegistry tools;
+    private readonly KdpStore kdpStore;
     private readonly ILogger<KdpOperatorService> log;
 
     private const int MaxTokens = 4096;
@@ -37,10 +39,11 @@ public class KdpOperatorService
     private const int MaxToolIterations = 60;
     private const int MaxToolIterationsNewListing = 80;
 
-    public KdpOperatorService(IReadOnlyList<IToolCallingLlm> toolCallingProviders, KdpToolRegistry tools, ILogger<KdpOperatorService> log)
+    public KdpOperatorService(IReadOnlyList<IToolCallingLlm> toolCallingProviders, KdpToolRegistry tools, KdpStore kdpStore, ILogger<KdpOperatorService> log)
     {
         this.toolCallingProviders = toolCallingProviders;
         this.tools = tools;
+        this.kdpStore = kdpStore;
         this.log = log;
     }
 
@@ -72,16 +75,16 @@ public class KdpOperatorService
 
         // Hard gate, enforced here (not just in the UI's RunSelectedAsync) so it can never be
         // bypassed by any other caller — see KdpManifestEntry.MeetsHardPublishGate for the single
-        // authoritative rule (never re-derive it inline): .publish marker + cover.jpg +
+        // authoritative rule (never re-derive it inline): KDP-store sign-off + cover.jpg +
         // description.txt all present on disk, an actual .epub (not a docx-only fallback — KDP
         // auto-converts docx, but that conversion is unverified and this is the format we
         // actually want live), and the current .epub version strictly higher than whatever the
-        // .publish marker recorded as last published. Each branch below gives a specific reason
+        // KDP store recorded as last published. Each branch below gives a specific reason
         // rather than one opaque "gate failed" so a human reviewing the log knows exactly what's
         // missing.
         if (!book.ReadyToPublish)
         {
-            yield return new OperatorEvent.Error($"{book.Code}: no .publish marker in {book.FolderPath} — not signed off for publish.");
+            yield return new OperatorEvent.Error($"{book.Code}: not signed off for publish in the KDP store — run `prose --kdp-signoff --code {book.Code}` once it is ready.");
             yield break;
         }
         if (string.IsNullOrWhiteSpace(book.EpubPath))
@@ -194,14 +197,14 @@ public class KdpOperatorService
 
                     yield return new OperatorEvent.ToolCompleted(name, resultJson, isError);
 
-                    // Update the .publish marker's cache only after a REAL confirmed publish —
+                    // Update the book's publish record only after a REAL confirmed publish —
                     // mark_published itself already enforces "only after get_page_status shows a
                     // genuine publish confirmation" (see both system prompts), so hooking its
                     // success here can never write this speculatively. Records the manuscript
                     // filename this run actually uploaded so a future manifest build can skip
                     // re-processing this book entirely once the same version is still current.
                     if (!isError && name == "mark_published")
-                        TryWritePublishMarker(book, manuscriptPath, resultJson);
+                        await TryRecordPublishAsync(book, manuscriptPath, resultJson);
 
                     toolResults.Add(new ToolResultPart(call.Id, resultJson, isError));
                 }
@@ -556,11 +559,12 @@ public class KdpOperatorService
           final text summary — that ends this book's processing.
         """;
 
-    /// <summary>Best-effort write of the .publish marker's JSON body (see
-    /// <see cref="KdpManifestService.PublishMarker"/>) right after a confirmed publish. Never
-    /// throws into the caller — a cache-write failure must not fail the actual publish run that
-    /// already succeeded on KDP's side.</summary>
-    private static void TryWritePublishMarker(KdpManifestEntry book, string manuscriptPath, string markPublishedResultJson)
+    /// <summary>Best-effort record, in the KDP store, of the manuscript this run actually uploaded
+    /// (was a write of the .publish marker's JSON body) right after a confirmed publish.
+    /// mark_published has usually just recorded the same publish; the store folds the two into one
+    /// history entry (<see cref="KdpStore.SamePublishWindow"/>). Never throws into the caller — a
+    /// bookkeeping failure must not fail the actual publish run that already succeeded on KDP's side.</summary>
+    private async Task TryRecordPublishAsync(KdpManifestEntry book, string manuscriptPath, string markPublishedResultJson)
     {
         try
         {
@@ -568,13 +572,16 @@ public class KdpOperatorService
             if (!doc.RootElement.TryGetProperty("Ok", out var okProp) || !okProp.GetBoolean()) return;
 
             var asin = doc.RootElement.TryGetProperty("Asin", out var asinProp) ? asinProp.GetString() : null;
-            var marker = new PublishMarker(
-                File: Path.GetFileName(manuscriptPath),
-                Asin: asin,
-                PublishedAtUtc: DateTime.UtcNow.ToString("o")
-            );
-            File.WriteAllText(Path.Combine(book.FolderPath, ".publish"), JsonSerializer.Serialize(marker));
+            var file = Path.GetFileName(manuscriptPath);
+            var versionMatch = KdpManifestService.VersionFileRx.Match(file);
+            await kdpStore.RecordPublishAsync(book.Code, new KdpPublishSnapshot
+            {
+                File = file,
+                Version = versionMatch.Success ? int.Parse(versionMatch.Groups["ver"].Value) : null,
+                Asin = asin,
+                PublishedAt = DateTimeOffset.UtcNow,
+            }, KdpPublishSource.Operator);
         }
-        catch { /* best-effort — see remarks */ }
+        catch (Exception ex) { log.LogWarning(ex, "Could not record the publish of {Code} in the KDP store", book.Code); }
     }
 }

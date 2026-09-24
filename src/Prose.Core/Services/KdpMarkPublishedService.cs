@@ -1,6 +1,6 @@
-using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Prose.Core.Data;
+using Prose.Core.Kdp;
 
 namespace Prose.Core.Services;
 
@@ -23,8 +23,9 @@ public record KdpMarkPublishedResult(
 /// Sets <c>KdpPublishedAt = now</c> and <c>PublicationStatus = "Published"</c> so the book drops
 /// off <see cref="KdpManifestService"/>'s "needs republish" list. Optionally updates
 /// <see cref="Prose.Core.Data.Entities.Node.PublishUrl"/> (only needed the first time a
-/// book goes live, or if the URL changed) and upserts <c>tools/kdp/title-ids.json</c> with a
-/// titleId so future manifests can deep-link straight to this book's KDP edit page.
+/// book goes live, or if the URL changed) and records a titleId in the KDP store's crosswalk
+/// (<see cref="KdpStore"/>; was tools/kdp/title-ids.json) so future manifests can deep-link
+/// straight to this book's KDP edit page.
 ///
 /// Shared by <c>prose --kdp-mark-published</c> (CLI: <c>KdpMarkPublishedCli</c>, a thin wrapper
 /// that prints the result) and the KdpPublish WPF app's <c>mark_published</c> tool.
@@ -33,15 +34,17 @@ public class KdpMarkPublishedService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly SettingsService settings;
+    private readonly KdpStore kdpStore;
 
-    public KdpMarkPublishedService(IDbContextFactory<ProseDbContext> dbFactory, SettingsService settings)
+    public KdpMarkPublishedService(IDbContextFactory<ProseDbContext> dbFactory, SettingsService settings, KdpStore kdpStore)
     {
         this.dbFactory = dbFactory;
         this.settings = settings;
+        this.kdpStore = kdpStore;
     }
 
     public async Task<KdpMarkPublishedResult> MarkPublishedAsync(
-        string slug, string? url, string? titleId, string repoRoot, CancellationToken ct = default)
+        string slug, string? url, string? titleId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
@@ -62,7 +65,8 @@ public class KdpMarkPublishedService
         }
         await db.SaveChangesAsync(ct);
 
-        // Hard-coded rule: the .publish marker's JSON body must be refreshed with exactly what
+        // Hard-coded rule: the book's publish record (the KDP store; was the .publish marker's
+        // JSON body) must be refreshed with exactly what
         // just went live — Filename, Version, ASIN, PublishedAtUtc — every time mark_published
         // fires, before the caller's book loop advances to the next book. This runs synchronously
         // inside this call (never speculatively — mark_published itself only fires after a real
@@ -93,39 +97,31 @@ public class KdpMarkPublishedService
 
             if (epubFile != null && Directory.Exists(nodeDir))
             {
-                var marker = new PublishMarker(
-                    File: epubFile,
-                    Asin: node.Asin,
-                    PublishedAtUtc: node.KdpPublishedAt?.ToString("O"),
-                    Version: version);
-                await File.WriteAllTextAsync(Path.Combine(nodeDir, ".publish"),
-                    JsonSerializer.Serialize(marker, new JsonSerializerOptions { WriteIndented = true }), ct);
+                await kdpStore.RecordPublishAsync(node.NodeCode ?? node.Slug, new KdpPublishSnapshot
+                {
+                    File = epubFile,
+                    Version = version,
+                    Asin = node.Asin,
+                    PublishedAt = node.KdpPublishedAt is DateTime at ? new DateTimeOffset(DateTime.SpecifyKind(at, DateTimeKind.Utc)) : null,
+                }, KdpPublishSource.MarkPublished, ct);
             }
         }
         catch
         {
-            // Marker refresh is best-effort bookkeeping, never a reason to fail a publish that
-            // has already gone live and been recorded in the DB above.
+            // Publish-record refresh is best-effort bookkeeping, never a reason to fail a publish
+            // that has already gone live and been recorded in the DB above.
         }
 
         string? recordedTitleId = null;
         if (!string.IsNullOrWhiteSpace(titleId) && !string.IsNullOrWhiteSpace(node.NodeCode))
         {
-            var path = Path.Combine(repoRoot, "tools", "kdp", "title-ids.json");
-            Dictionary<string, JsonElement> raw = File.Exists(path)
-                ? JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(await File.ReadAllTextAsync(path, ct)) ?? new()
-                : new();
-
-            var entry = new Dictionary<string, string?> { ["titleId"] = titleId };
+            string? asin = null;
             if (node.PublishUrl != null)
             {
                 var m = System.Text.RegularExpressions.Regex.Match(node.PublishUrl, @"/dp/([A-Z0-9]{10})");
-                if (m.Success) entry["asin"] = m.Groups[1].Value;
+                if (m.Success) asin = m.Groups[1].Value;
             }
-
-            var merged = raw.ToDictionary(kv => kv.Key, kv => (object)kv.Value);
-            merged[node.NodeCode] = entry;
-            await File.WriteAllTextAsync(path, JsonSerializer.Serialize(merged, new JsonSerializerOptions { WriteIndented = true }), ct);
+            await kdpStore.UpsertTitleAsync(node.NodeCode, titleId, asin, ct);
             recordedTitleId = titleId;
         }
 
@@ -134,11 +130,10 @@ public class KdpMarkPublishedService
 
     /// <summary>
     /// Records that <c>find_and_open_book</c> observed KDP hiding a book's edit-content link —
-    /// the "Live - Updates publishing" state, up to ~72 hours after a recent republish. Merges
-    /// <c>PublishingDetectedAtUtc = now</c> into the book's existing <c>.publish</c> marker
-    /// (preserving whatever publish history it already recorded) so <see cref="KdpManifestService"/>
-    /// reports "Publishing" instead of "Outdated" while the timestamp stays fresh. A no-op if the
-    /// book's export folder doesn't exist yet — there is nothing to annotate.
+    /// the "Live - Updates publishing" state, up to ~72 hours after a recent republish. Sets the
+    /// book's <see cref="KdpBook.PublishingDetectedAt"/> in the KDP store (keeping whatever publish
+    /// history it already recorded) so <see cref="KdpManifestService"/> reports "Publishing"
+    /// instead of "Outdated" while the timestamp stays fresh. False only for an unknown slug.
     /// </summary>
     public async Task<bool> MarkPublishingDetectedAsync(string slug, CancellationToken ct = default)
     {
@@ -146,30 +141,8 @@ public class KdpMarkPublishedService
         var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug, ct);
         if (node == null) return false;
 
-        var universeSlug = await db.Set<Prose.Core.Data.Entities.Universe>().AsNoTracking()
-            .Where(u => u.Id == node.UniverseId).Select(u => u.Slug).FirstOrDefaultAsync(ct) ?? "glmz";
-        var baseDir = settings.GetExportDirectory(universeSlug);
-        string nodeDir;
-        try { (nodeDir, _) = await ExportPathResolver.ResolveAsync(db, node, baseDir, ct); }
-        catch { nodeDir = Path.Combine(baseDir, node.NodeCode ?? node.Slug); }
-        if (!Directory.Exists(nodeDir)) return false;
-
-        var markerPath = Path.Combine(nodeDir, ".publish");
-        var existing = File.Exists(markerPath)
-            ? TryDeserializeMarker(await File.ReadAllTextAsync(markerPath, ct))
-            : null;
-
-        var updated = (existing ?? new PublishMarker(null, null, null))
-            with { PublishingDetectedAtUtc = DateTime.UtcNow.ToString("O") };
-        await File.WriteAllTextAsync(markerPath,
-            JsonSerializer.Serialize(updated, new JsonSerializerOptions { WriteIndented = true }), ct);
+        await kdpStore.MarkPublishingDetectedAsync(node.NodeCode ?? node.Slug, ct);
         return true;
-    }
-
-    private static PublishMarker? TryDeserializeMarker(string raw)
-    {
-        try { return JsonSerializer.Deserialize<PublishMarker>(raw, new JsonSerializerOptions { PropertyNameCaseInsensitive = true }); }
-        catch { return null; }
     }
 
     /// <summary>

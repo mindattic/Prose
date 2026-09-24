@@ -27,9 +27,9 @@ public static class KdpMarkPublishedCli
             return 1;
         }
 
+        await services.GetRequiredService<Prose.Core.Kdp.KdpStore>().EnsureReadyAsync();
         var service = services.GetRequiredService<KdpMarkPublishedService>();
-        var repoRoot = KdpManifestService.FindRepoRoot();
-        var result = await service.MarkPublishedAsync(slug, url, titleId, repoRoot);
+        var result = await service.MarkPublishedAsync(slug, url, titleId);
 
         if (!result.Ok)
         {
@@ -39,7 +39,7 @@ public static class KdpMarkPublishedCli
 
         Console.WriteLine($"[kdp-mark-published] {result.Code} \"{result.Title}\" marked Published at {result.KdpPublishedAt:yyyy-MM-dd HH:mm} UTC.");
         if (result.PublishUrl != null) Console.WriteLine($"[kdp-mark-published] PublishUrl: {result.PublishUrl}");
-        if (result.RecordedTitleId != null) Console.WriteLine($"[kdp-mark-published] Recorded titleId '{result.RecordedTitleId}' for {result.Code} in tools/kdp/title-ids.json");
+        if (result.RecordedTitleId != null) Console.WriteLine($"[kdp-mark-published] Recorded titleId '{result.RecordedTitleId}' for {result.Code} in the KDP store's title-id crosswalk");
 
         return 0;
     }

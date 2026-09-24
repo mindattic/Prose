@@ -17,6 +17,10 @@
             <div class="ss-toolbar">
                 <button id="btn-select-all">Select All</button>
                 <button id="btn-mark-unpublished">Mark Unpublished</button>
+                <button id="btn-sign-off" title="Sign the selected books off for publishing (the gate a .publish marker file used to be)">Sign Off</button>
+                <button id="btn-hold" title="Hold the selected books back: a run skips them">Hold</button>
+                <button id="btn-import-json" title="Merge tools/kdp JSON (title-ids.json, category trees, logs) into the KDP store">Import JSON</button>
+                <button id="btn-export-json" title="Write the KDP store out as JSON to a new folder under %LocalAppData%\MindAttic\Prose\kdp-export">Export JSON</button>
             </div>
 
             <div class="ss-checklist">
@@ -126,7 +130,7 @@
 
                         var tdCode = document.createElement('td');
                         tdCode.className = 'ss-col-code';
-                        tdCode.title = e.title + (e.readyToPublish ? '' : ' — no .publish marker, will be skipped');
+                        tdCode.title = e.title + (e.readyToPublish ? '' : ' — not signed off, will be skipped');
                         tdCode.textContent = e.code;
 
                         var tdIcons = document.createElement('td');
@@ -174,7 +178,7 @@
                 document.getElementById('btn-select-all').textContent = allSelected ? 'Unselect All' : 'Select All';
             }
 
-            // WorkInProgress books are missing a hard-gate requirement (.publish marker,
+            // WorkInProgress books are missing a hard-gate requirement (sign-off,
             // cover.jpg, description.txt, or an actual .epub) and will always be skipped by a
             // run — Select All shouldn't check boxes that can't do anything.
             function selectableEntries() {
@@ -190,6 +194,20 @@
             document.getElementById('btn-mark-unpublished').addEventListener('click', function () {
                 if (selected.size === 0) return;
                 post({ action: 'mark-unpublished', codes: Array.from(selected) });
+            });
+            document.getElementById('btn-sign-off').addEventListener('click', function () {
+                if (selected.size === 0) return;
+                post({ action: 'sign-off', codes: Array.from(selected) });
+            });
+            document.getElementById('btn-hold').addEventListener('click', function () {
+                if (selected.size === 0) return;
+                post({ action: 'hold', codes: Array.from(selected) });
+            });
+            document.getElementById('btn-import-json').addEventListener('click', function () {
+                post({ action: 'import-json' });
+            });
+            document.getElementById('btn-export-json').addEventListener('click', function () {
+                post({ action: 'export-json' });
             });
             document.getElementById('btn-start').addEventListener('click', function () {
                 post({ action: 'start', codes: Array.from(selected) });

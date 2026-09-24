@@ -12,7 +12,8 @@ namespace Prose.Core.Services.Operator.KdpTools;
 ///
 /// Deliberately NOT registered as an <see cref="IKdpTool"/> for the LLM operator — this is a
 /// documentation/reference-building pass run once by a human decision (see
-/// tools/kdp/category-tree-horror.json), not part of the autonomous publish flow. The JS query
+/// the KDP store's CategoryTrees, exported as tools/kdp/category-tree-*.json), not part of the
+/// autonomous publish flow. The JS query
 /// patterns mirror <see cref="SelectCategoriesTool"/>'s confirmed-live DOM shape (option values
 /// carry a "level":N marker; leaf options are native checkboxes under a closest label).
 /// </summary>

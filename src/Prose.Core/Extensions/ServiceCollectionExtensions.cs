@@ -1013,6 +1013,23 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<DocxExportService>();
         services.AddSingleton<ManuscriptExportService>();
         services.AddSingleton<NodeFullExportService>();
+        // KDP store: machine-local SQLite (%LocalAppData%\MindAttic\Prose\kdp.db, PROSE_KDP_DB
+        // overrides) for the KDP-only state that used to be loose JSON files — the title-id
+        // crosswalk, .publish markers, category trees, run logs. Books stay in ProseDbContext.
+        services.AddDbContextFactory<Kdp.KdpDbContext>(
+            o => o.UseSqlite(Kdp.KdpPaths.ConnectionString(Kdp.KdpPaths.ResolveDbPath())),
+            ServiceLifetime.Singleton);
+        services.AddSingleton<Kdp.IKdpBookFolderSource, Kdp.KdpBookFolderLocator>();
+        services.AddSingleton(new Kdp.KdpTransferOptions());
+        services.AddSingleton(sp => new Kdp.KdpJsonTransfer(
+            sp.GetRequiredService<IDbContextFactory<Kdp.KdpDbContext>>(),
+            sp.GetRequiredService<Kdp.IKdpBookFolderSource>(),
+            sp.GetRequiredService<Kdp.KdpTransferOptions>(),
+            clock: null,
+            sp.GetService<ILogger<Kdp.KdpJsonTransfer>>()));
+        services.AddSingleton(sp => new Kdp.KdpStore(
+            sp.GetRequiredService<IDbContextFactory<Kdp.KdpDbContext>>(),
+            sp.GetRequiredService<Kdp.KdpJsonTransfer>()));
         services.AddSingleton<KdpManifestService>();
         services.AddSingleton<KdpMarkPublishedService>();
         services.AddSingleton<KdpRunLogService>();

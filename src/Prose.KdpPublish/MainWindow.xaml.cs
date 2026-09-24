@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Web.WebView2.Core;
+using Prose.Core.Kdp;
 using Prose.Core.Services;
 using Prose.Core.Services.Operator;
 
@@ -134,7 +135,7 @@ public partial class MainWindow : Window
     private async Task RunProbeCategoriesAsync(string nodeCode)
     {
         if (kdpBrowser == null) { Console.WriteLine("Probe aborted: KDP browser pane not ready."); return; }
-        var detailsUrl = ResolveDetailsUrl(nodeCode);
+        var detailsUrl = await ResolveDetailsUrlAsync(nodeCode);
         if (detailsUrl == null) return;
 
         Console.WriteLine($"[probe-categories] Opening categories modal via {nodeCode}'s Details page…");
@@ -148,31 +149,29 @@ public partial class MainWindow : Window
         Console.WriteLine($"[probe-categories] Wrote {outPath}");
     }
 
-    private string? ResolveDetailsUrl(string nodeCode)
+    private async Task<string?> ResolveDetailsUrlAsync(string nodeCode)
     {
-        var repoRoot = Prose.Core.Services.KdpManifestService.FindRepoRoot();
-        var titleIdsPath = System.IO.Path.Combine(repoRoot, "tools", "kdp", "title-ids.json");
-        if (!System.IO.File.Exists(titleIdsPath)) { Console.WriteLine($"Aborted: {titleIdsPath} not found."); return null; }
-
-        using var doc = System.Text.Json.JsonDocument.Parse(System.IO.File.ReadAllText(titleIdsPath));
-        if (!doc.RootElement.TryGetProperty(nodeCode, out var entry) || !entry.TryGetProperty("titleId", out var tid))
+        await App.StoreReady;
+        var title = await App.Services.GetRequiredService<KdpStore>().GetTitleAsync(nodeCode);
+        if (string.IsNullOrWhiteSpace(title?.TitleId))
         {
-            Console.WriteLine($"Aborted: no titleId found for '{nodeCode}' in title-ids.json.");
+            Console.WriteLine($"Aborted: no titleId recorded for '{nodeCode}' in the KDP store (prose --kdp-store --code {nodeCode}).");
             return null;
         }
-        return $"https://kdp.amazon.com/en_US/title-setup/kindle/{tid.GetString()}/details";
+        return $"https://kdp.amazon.com/en_US/title-setup/kindle/{title.TitleId}/details";
     }
 
     /// <summary>
     /// One-off, read-only documentation pass — see <see cref="Prose.Core.Services.Operator.KdpTools.CategoryTreeCrawler"/>.
-    /// Resolves the given NodeCode's titleId from tools/kdp/title-ids.json purely to have a
-    /// Details page to open the Categories modal on; never touches that book's real category
-    /// assignment (every visit reloads the page fresh instead of saving).
+    /// Resolves the given NodeCode's titleId from the KDP store purely to have a Details page to
+    /// open the Categories modal on; never touches that book's real category assignment (every
+    /// visit reloads the page fresh instead of saving). The tree is saved to the KDP store and
+    /// exported to tools/kdp/category-tree-&lt;slug&gt;.json (the committed reference copy).
     /// </summary>
     private async Task RunCrawlCategoriesAsync(string nodeCode, string[] startPath, int? maxDepth)
     {
         if (kdpBrowser == null) { Console.WriteLine("Crawl aborted: KDP browser pane not ready."); return; }
-        var detailsUrl = ResolveDetailsUrl(nodeCode);
+        var detailsUrl = await ResolveDetailsUrlAsync(nodeCode);
         if (detailsUrl == null) return;
 
         var repoRoot = Prose.Core.Services.KdpManifestService.FindRepoRoot();
@@ -182,10 +181,17 @@ public partial class MainWindow : Window
             kdpBrowser, detailsUrl, startPath, msg => Console.WriteLine($"[crawl-categories] {msg}"), CancellationToken.None, maxDepth);
 
         var slug = string.Join("-", startPath).ToLowerInvariant().Replace(" ", "-").Replace("&", "and");
-        var outPath = System.IO.Path.Combine(repoRoot, "tools", "kdp", $"category-tree-{slug}.json");
-        var json = tree.ToJsonString(new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
-        await System.IO.File.WriteAllTextAsync(outPath, json);
-        Console.WriteLine($"[crawl-categories] Done. Wrote {outPath}");
+        var root = System.Text.Json.JsonSerializer.Deserialize<KdpCategoryNode>(tree.ToJsonString(), KdpJsonTransfer.CategoryTreeJson)!;
+        await App.Services.GetRequiredService<KdpStore>().SaveCategoryTreeAsync(new KdpCategoryTree
+        {
+            Slug = slug,
+            StartPath = startPath.ToList(),
+            Crawl = new KdpCrawlInfo { Via = nodeCode, MaxDepth = maxDepth, CrawledAt = DateTimeOffset.UtcNow },
+            Tree = root,
+        });
+        var outPath = System.IO.Path.Combine(repoRoot, "tools", "kdp", $"{KdpJsonTransfer.CategoryTreePrefix}{slug}.json");
+        await System.IO.File.WriteAllTextAsync(outPath, KdpJsonTransfer.RenderCategoryTree(root));
+        Console.WriteLine($"[crawl-categories] Done. Saved '{slug}' to the KDP store and exported {outPath}");
     }
 
     private async void OnControlPanelMessage(object? sender, CoreWebView2WebMessageReceivedEventArgs args)
@@ -200,6 +206,7 @@ public partial class MainWindow : Window
             switch (action)
             {
                 case "ready":
+                    await EnsureStoreAsync();
                     await RefreshManifestAsync();
                     if (autoRunCodes != null && !autoRunTriggered)
                     {
@@ -226,12 +233,72 @@ public partial class MainWindow : Window
                     var coverCode = msg!["code"]!.GetValue<string>();
                     await SendCoverImageAsync(coverCode);
                     break;
+                case "sign-off":
+                case "hold":
+                    var gateCodes = msg!["codes"]!.AsArray().Select(n => n!.GetValue<string>()).ToHashSet();
+                    await SetSignOffAsync(gateCodes, ready: action == "sign-off");
+                    break;
+                case "import-json":
+                    await ImportJsonAsync();
+                    break;
+                case "export-json":
+                    await ExportJsonAsync();
+                    break;
             }
         }
         catch (Exception ex)
         {
             await PostLogAsync($"⚠ Control panel message '{action}' failed: {ex.Message}");
         }
+    }
+
+    /// <summary>Waits for the KDP store's startup migration / first-run import (App.StoreReady)
+    /// and reports what it holds, or why it failed, in the panel log.</summary>
+    private async Task EnsureStoreAsync()
+    {
+        try
+        {
+            await App.StoreReady;
+            var status = await App.Services.GetRequiredService<KdpStore>().GetStatusAsync();
+            var firstRun = status.Imports.FirstOrDefault(i => i.Kind == KdpImportKind.FirstRun);
+            await PostLogAsync($"KDP store {KdpPaths.ResolveDbPath()} — {status.Counts}." +
+                               (firstRun == null ? " (First-run JSON import not done yet: tools/kdp/title-ids.json not found.)" : ""));
+        }
+        catch (Exception ex)
+        {
+            await PostLogAsync($"⚠ KDP store failed to open: {ex.Message}");
+        }
+    }
+
+    /// <summary>The panel's Sign Off / Hold buttons — the human publish gate that creating or
+    /// deleting a book's .publish marker file used to be.</summary>
+    private async Task SetSignOffAsync(HashSet<string> codes, bool ready)
+    {
+        if (codes.Count == 0) return;
+        var changed = await App.Services.GetRequiredService<KdpStore>().SetSignOffAsync(codes, ready, "kdppublish");
+        await PostLogAsync($"{(ready ? "Signed off" : "Held back")} {changed} book(s): {string.Join(", ", codes)}");
+        await RefreshManifestAsync();
+    }
+
+    /// <summary>"Import JSON": merges tools/kdp (title-ids.json, category trees, logs, and any
+    /// publish-markers/ folder an export left there) into the KDP store — the same as
+    /// <c>prose --kdp-import</c>.</summary>
+    private async Task ImportJsonAsync()
+    {
+        var from = KdpPaths.ResolveToolsDir();
+        var counts = await App.Services.GetRequiredService<KdpJsonTransfer>().ImportAsync(new KdpImportRequest { FromDir = from });
+        await PostLogAsync($"Imported JSON from {from}: {counts}.");
+        await RefreshManifestAsync();
+    }
+
+    /// <summary>"Export JSON": writes the KDP store out as JSON in the original shapes to a new
+    /// folder under %LocalAppData% — the same as <c>prose --kdp-export</c>.</summary>
+    private async Task ExportJsonAsync()
+    {
+        var to = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+            "MindAttic", "Prose", "kdp-export", DateTime.Now.ToString("yyyyMMdd-HHmmss"));
+        var counts = await App.Services.GetRequiredService<KdpJsonTransfer>().ExportAsync(new KdpExportRequest { ToDir = to });
+        await PostLogAsync($"Exported JSON to {to}: {counts}.");
     }
 
     private async Task RefreshManifestAsync()
@@ -323,21 +390,22 @@ public partial class MainWindow : Window
         {
             if (runCts.IsCancellationRequested) break;
 
-            // Human-controlled gate: an empty .publish marker file in the book's export folder.
-            // Authoritative — refuse to process a book lacking it even if it was checked in the
-            // UI, so a full automated sweep can never touch something nobody signed off on.
+            // Human-controlled gate: the book's sign-off in the KDP store (was: a .publish marker
+            // file in its export folder). Authoritative — refuse to process a book lacking it even
+            // if it was checked in the UI, so a full automated sweep can never touch something
+            // nobody signed off on.
             if (!book.ReadyToPublish)
             {
-                await PostLogAsync($"{book.Code}: skipped — no .publish marker in {book.FolderPath} (not signed off for publish).");
+                await PostLogAsync($"{book.Code}: skipped — not signed off for publish (Sign Off, or prose --kdp-signoff --code {book.Code}).");
                 continue;
             }
 
-            // Local cache fast-path: .publish already recorded this exact manuscript filename as
+            // Local fast-path: the KDP store already records this exact manuscript filename as
             // successfully published — skip opening the browser at all rather than spending a
             // whole run just to reach Content and discover the same thing three steps in.
             if (book.UpToDateViaLocalMarker)
             {
-                await PostLogAsync($"{book.Code}: skipped — .publish already shows \"{book.LocalPublishMarker?.File}\" published (current version on disk matches).");
+                await PostLogAsync($"{book.Code}: skipped — the KDP store already shows \"{book.LocalPublishMarker?.File}\" published (current version on disk matches).");
                 continue;
             }
 
@@ -382,7 +450,9 @@ public partial class MainWindow : Window
             await RefreshManifestAsync();
         }
 
-        await PostLogAsync("Run finished.");
+        await PostLogAsync(KdpRunLogFormat.FinishedMessage);
+        if (currentRunId is Guid finishedRun && runLog != null)
+            await runLog.FinishRunAsync(finishedRun);
         await SetRunningAsync(false);
         currentRunId = null;
     }

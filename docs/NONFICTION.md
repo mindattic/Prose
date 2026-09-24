@@ -33,7 +33,7 @@ traces to a real, verifiable source, "something you would use as an APA citation
 scoped to religious or historical subject matter specifically — that has simply been every book
 produced here so far. **Gospel: History vs. Heritage** (<entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>/Mark/Luke/John) was the first
 production line; **Sons of God, Daughters of Men: A Cultural History of the <entity repo="vocabulary" guid="c9514d5a-667d-40db-bfdc-bc786a6252f7">Nephilim</entity>** (NEPH) is
-the second; further Old Testament and cross-cutting topics (the Exodus, David and <entity repo="character" guid="019fa1c6-ffdf-757d-8978-9e104468af3c">Solomon</entity>'s
+the second; further Old Testament and cross-cutting topics (the Exodus, <entity repo="character" guid="019fa1c6-ffcf-78a5-b222-af7d1e5cf94d">David</entity> and <entity repo="character" guid="019fa1c6-ffdf-757d-8978-9e104468af3c">Solomon</entity>'s
 kingdom, the Dead Sea Scrolls, the Council of Nicaea) are queued — but a future NONFICTION book could
 just as easily be about science, true crime, biography, or any other nonfiction subject. The one
 requirement is the discipline below: every claim cited, every gap in the record stated honestly.
@@ -100,7 +100,7 @@ unless the brackets differ.
   without solving anything a plain running number doesn't already solve on its own. Superseded
   again 2026-07-28: the running-number-across-the-whole-series design was reconsidered once each
   Gospel shipped as its own standalone book rather than one combined volume.)
-- **<entity repo="character" guid="a4390d4b-ab8b-40c5-b116-1920a363e13c">One</entity> number per claim instance, not one per source.** If the same source (say, Ehrman, 2006)
+- **One number per claim instance, not one per source.** If the same source (say, Ehrman, 2006)
   supports five different claims across the book, each gets its own number with the specific
   page/detail relevant to that claim — not one shared number reused five times. Standard
   "Notes" convention for annotated nonfiction, not a Vancouver-style numbered bibliography,
@@ -144,7 +144,7 @@ reading having to carry that weight itself.
   with. "<entity repo="character" guid="019fa1e9-69cc-78b6-8fd1-3d2716246771">Ruth</entity> was a Moabite" in prose should be immediately resolvable to a <entity repo="character" guid="019fa1e9-69cc-78b6-8fd1-3d2716246771">Ruth</entity> glossary entry
   that explains what a Moabite was, when, and where, which in turn cites the Notes chapter for
   its own evidentiary claims.
-- **Each book has its own Glossary chapter; the underlying entity record is shared.** Jesus,
+- **Each book has its own Glossary chapter; the underlying entity record is shared.** <entity repo="character" guid="019f9ff0-6a50-702a-b7aa-8163dc907b97">Jesus</entity>,
   <entity repo="character" guid="019f9ff0-7723-746c-b941-8a1a9308ea1e">Pilate</entity>, Herod, and <entity repo="place" guid="019f9ff0-a173-74ec-9e1d-29e8c0f31e26">Jerusalem</entity> recur across <entity repo="character" guid="019f9ff0-7577-7d9f-a1aa-4e93356d753e">Matthew</entity>/Mark/Luke/John — one entity record per
   name, reused everywhere — but each Gospel's own Glossary chapter carries its own beat/entry
   for any name that book actually uses, citing that book's own Notes sequence (§1a). A name that

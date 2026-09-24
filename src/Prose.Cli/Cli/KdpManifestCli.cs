@@ -29,6 +29,8 @@ public static class KdpManifestCli
         Directory.CreateDirectory(kdpDir);
         outPath ??= Path.Combine(kdpDir, "manifest.json");
 
+        // Startup of a KDP command: migrate the KDP store and run its one-time JSON import.
+        await services.GetRequiredService<Prose.Core.Kdp.KdpStore>().EnsureReadyAsync();
         var manifestService = services.GetRequiredService<KdpManifestService>();
         var entries = await manifestService.BuildAsync(repoRoot);
 

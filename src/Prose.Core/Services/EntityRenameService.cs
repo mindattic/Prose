@@ -14,7 +14,8 @@ public sealed class EntityRenameService(
     NodeWorkbenchService workbench,
     MarkdownFileService markdownFiles,
     ContinuityService continuity,
-    NounConsistencyService nouns)
+    NounConsistencyService nouns,
+    EntityFieldWriter fieldWriter)
 {
     public async Task<EntityRenamePreview> PreviewAsync(string entityIdOrSlug, string nodeIdOrSlug, string newName, CancellationToken ct = default)
     {
@@ -45,11 +46,16 @@ public sealed class EntityRenameService(
         var preview = await PreviewAsync(entityIdOrSlug, nodeIdOrSlug, newName, ct);
         if (!preview.Ok) return EntityRenameResult.Failure(preview.Error!);
 
+        // The canonical record goes first: if its write door refuses, nothing else has changed yet.
+        var recordWrite = await RenameRecordAsync(preview.EntityId, preview.EntityType, preview.NewName, ct);
+        if (recordWrite is { Ok: false })
+            return EntityRenameResult.Failure($"record_name_not_written: {recordWrite.Error}");
+
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
             var entity = await db.Entities.FirstAsync(e => e.Id == preview.EntityId, ct);
-            // Entity is the universal authoritative identity used by graph, tags, and all
-            // non-character repositories. Character's mirrored name is handled below.
+            // Entity is the identity the graph and tags use. A repository-served record got its
+            // name above; a character's mirrored name is handled below.
             entity.Name = preview.NewName;
             entity.Slug = await UniqueSlugAsync(db, entity, preview.NewName, ct);
             entity.ModifiedAt = DateTime.UtcNow;
@@ -93,6 +99,24 @@ public sealed class EntityRenameService(
         await markdownFiles.SyncAllAsync(dryRun: false, ct: ct);
         return new EntityRenameResult(true, null, preview.EntityId, preview.OldName, preview.NewName,
             preview.BeatIds.Count, relabeled);
+    }
+
+    /// <summary>
+    /// Writes the new name into the canonical record of a type a repository serves (place, faction,
+    /// technology and the rest), through <see cref="EntityFieldWriter"/>, the one write door those
+    /// records share. Their record lives in the type's own table, and that is what get_place, the F1
+    /// packet and every later edit read, so a rename that stops at the entity row and the Records blob
+    /// leaves the record on the old name (a place renamed Atlas to Cuisine did, 2026-09-23, engine
+    /// order 01a0d164). A character's name lives in its Characters row, which
+    /// <see cref="ApplyAsync"/> sets itself. Null when the type has no typed record to write.
+    /// </summary>
+    public async Task<FieldWriteResult?> RenameRecordAsync(Guid entityId, string entityType, string newName, CancellationToken ct = default)
+    {
+        if (string.Equals(entityType, "character", StringComparison.OrdinalIgnoreCase)
+            || !EntityFieldWriter.Repositories.ContainsKey(entityType))
+            return null;
+        var fields = new JsonObject { ["name"] = newName }.ToJsonString();
+        return await fieldWriter.SetFieldsAsync(entityId.ToString("N"), fields, confirmUnread: true, ct);
     }
 
     private async Task<Guid> NodeUniverseAsync(Guid nodeId, CancellationToken ct)

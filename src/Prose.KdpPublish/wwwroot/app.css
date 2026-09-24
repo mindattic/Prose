@@ -138,9 +138,9 @@ html, body {
 }
 @keyframes ss-spin { to { transform: rotate(360deg); } }
 
-.ss-toolbar { display: flex; gap: 5px; padding: 8px 9px 0; flex-shrink: 0; }
+.ss-toolbar { display: flex; flex-wrap: wrap; gap: 5px; padding: 8px 9px 0; flex-shrink: 0; }
 .ss-toolbar button {
-    flex: 1; padding: 6px 4px; background: #FFFFFF; border: 1px solid #888C8C; color: #007185;
+    flex: 1 1 30%; padding: 6px 4px; background: #FFFFFF; border: 1px solid #888C8C; color: #007185;
     border-radius: 4px; cursor: pointer; font-size: 10px; font-weight: 600;
 }
 .ss-toolbar button:hover { background: #F0F2F2; border-color: #007185; }

@@ -18,7 +18,7 @@ namespace Prose.Core.Services.Operator.KdpTools;
 ///
 /// Self-healing across runs: every success path returns the resolved titleId, so the caller
 /// (the LLM) can pass it to mark_published, which already upserts it into
-/// tools/kdp/title-ids.json — next run on this same book can skip straight to it via strategy 1.
+/// the KDP store's title-id crosswalk — next run on this same book can skip straight to it via strategy 1.
 /// ASIN itself never needs separate storage: it's already derivable from Node.PublishUrl (see
 /// KdpManifestEntry.Asin), which every previously-published book has.
 /// </summary>

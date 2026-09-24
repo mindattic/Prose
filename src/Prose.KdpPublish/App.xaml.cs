@@ -14,6 +14,9 @@ public partial class App : Application
 {
     public static IServiceProvider Services { get; private set; } = null!;
 
+    /// <summary>Completes once the KDP store is migrated and its first-run import has run.</summary>
+    public static Task StoreReady { get; private set; } = Task.CompletedTask;
+
     protected override void OnStartup(StartupEventArgs e)
     {
         base.OnStartup(e);
@@ -41,11 +44,17 @@ public partial class App : Application
 
         Services = host.Services;
 
+        // The KDP store (machine-local SQLite): apply migrations and, on the very first run, the
+        // one-time import of the legacy JSON files. Started here, awaited by MainWindow before it
+        // builds the first manifest, so the window can open while it runs.
+        StoreReady = Services.GetRequiredService<Prose.Core.Kdp.KdpStore>().EnsureReadyAsync();
+
         // Optional: `--crawl-categories <NodeCode> <level0> [level1] [...]` — a one-off, read-only
         // documentation pass (see CategoryTreeCrawler) that walks every Subcategory branch and
         // Placement leaf under the given starting path on KDP's live Categories modal, using the
         // given (already-published) book's Details page purely as a place to open that modal.
-        // Never saves anything. Dumps the result to tools/kdp/category-tree-<slug>.json.
+        // Never saves anything on KDP. Saves the result to the KDP store and exports it to
+        // tools/kdp/category-tree-<slug>.json.
         if (e.Args.Length > 1 && e.Args[0] == "--crawl-categories")
         {
             var nodeCode = e.Args[1];
