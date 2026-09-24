@@ -92,8 +92,14 @@ public static class EntityMentionScanner
     // re-deriving the same bare token straight from Harlan Cross's own canonical Name regardless
     // of the alias fix. The full name "Director Harlan Cross" still tags normally; only the bare
     // derived token is suppressed.
+    //
+    // "war" joined 2026-09-24 (BCODA read 5): tokens[0] of the character "War Dog" derives bare
+    // "War" as a standalone tag, so the ordinary phrase "the carbon of Block War" (Ch34, "35th and
+    // Halsted") mistagged as him -- he'd been disabled and gone over the rail 28 chapters earlier,
+    // in Ch6. The full name "War Dog" still tags normally; only the bare derived token is
+    // suppressed.
     private static readonly HashSet<string> Stopwords =
-        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can", "gate", "director" };
+        new(StringComparer.OrdinalIgnoreCase) { "the", "a", "an", "of", "von", "van", "de", "der", "la", "le", "el", "al", "first", "sunday", "unit", "last", "patient", "can", "gate", "director", "war" };
 
     // Numerals are a closed class, never a name on their own, so they are excluded as a class
     // rather than one incident at a time (2026-09-23, BCODA read): "Praxis Operator Five" derived
