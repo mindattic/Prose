@@ -208,7 +208,7 @@ public static class RetireRecordsBlobsCli
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
         };
 
-        var blobIds = await db.Entities.AsNoTracking()
+        var blobIds = await db.Entities.AsNoTracking().IgnoreQueryFilters() /* the DELETE below spans every universe; so must the checks */
             .Where(e => e.EntityType == "character"
                 && db.Records.Any(r => r.EntityId == e.Id)
                 && !db.Characters.Any(c => c.Id == e.Id))
@@ -255,7 +255,7 @@ public static class RetireRecordsBlobsCli
 
         foreach (var t in Types)
         {
-            var blobEntityIds = await db.Entities.AsNoTracking()
+            var blobEntityIds = await db.Entities.AsNoTracking().IgnoreQueryFilters() /* the DELETE below spans every universe; so must the checks */
                 .Where(e => e.EntityType == t.EntityType && db.Records.Any(r => r.EntityId == e.Id))
                 .Select(e => e.Id)
                 .ToListAsync();
@@ -282,7 +282,7 @@ public static class RetireRecordsBlobsCli
 
         // character spine check
         {
-            int charOrphans = await db.Entities.AsNoTracking()
+            int charOrphans = await db.Entities.AsNoTracking().IgnoreQueryFilters() /* the DELETE below spans every universe; so must the checks */
                 .CountAsync(e => e.EntityType == "character" && db.Records.Any(r => r.EntityId == e.Id)
                     && !db.Characters.Any(c => c.Id == e.Id));
 
@@ -293,7 +293,7 @@ public static class RetireRecordsBlobsCli
             }
             else
             {
-                int charBlobCount = await db.Entities.AsNoTracking()
+                int charBlobCount = await db.Entities.AsNoTracking().IgnoreQueryFilters() /* the DELETE below spans every universe; so must the checks */
                     .CountAsync(e => e.EntityType == "character" && db.Records.Any(r => r.EntityId == e.Id));
                 Console.WriteLine($"  {"character",-20} OK ({charBlobCount} blob(s) ready to retire)");
             }

@@ -38,6 +38,14 @@ public static class ReviewNodeCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
+        // Runs inside the Hub on the singleton NodeReviewService: a --genre set here stayed set,
+        // and every later review (any node, no --genre) was reviewed by that genre's fans.
+        try { return await RunCoreAsync(args, services); }
+        finally { services.GetRequiredService<NodeReviewService>().GenreOverride = null; }
+    }
+
+    private static async Task<int> RunCoreAsync(string[] args, IServiceProvider services)
+    {
         string? id = null, slug = null, code = null, group = null, genre = null;
         var settings = services.GetRequiredService<SettingsService>();
         int readers = settings.ReviewReaders, panel = settings.ReviewPanel,
@@ -84,6 +92,10 @@ public static class ReviewNodeCli
                 case "--local-label":     if (i + 1 < args.Length) localLabel = args[++i]; break;
                 case "--allow-votes":     allowVotes = true; break;
                 case "--force":           forceReview = true; break;
+                // The forwarded CLI's cost gate already asked; inside the Hub there is no one to
+                // answer a second ReadLine (it read null and "cancelled", or blocked the Hub).
+                case "--yes":
+                case "--no-confirm":      forceReview = true; break;
                 case "--experts":         experts = true; break;
             }
         }
@@ -158,12 +170,14 @@ public static class ReviewNodeCli
         Guid nodeId; string nodeSlug, nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var query = db.Nodes.AsNoTracking();
+            // IgnoreQueryFilters: an explicit --id/--slug/--code for a book outside the Hub's
+            // current universe was "No node found".
+            var query = db.Nodes.AsNoTracking().IgnoreQueryFilters();
             Node? node;
             if (!string.IsNullOrWhiteSpace(code))
                 node = await query.FirstOrDefaultAsync(s => s.NodeCode == code.ToUpperInvariant());
             else if (!string.IsNullOrWhiteSpace(slug))
-                node = await query.FirstOrDefaultAsync(s => s.Slug == slug);
+                node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
             else if (Guid.TryParse(id, out var exact))
                 node = await query.FirstOrDefaultAsync(s => s.Id == exact);
             else
@@ -341,8 +355,8 @@ public static class ReviewNodeCli
                     var answer = Console.ReadLine()?.Trim().ToLowerInvariant();
                     if (answer is not ("y" or "yes"))
                     {
-                        Console.WriteLine("[review-node] Cancelled.");
-                        return 0;
+                        Console.WriteLine("[review-node] Cancelled (no confirmation). Pass --yes to proceed without the prompt.");
+                        return 1;
                     }
                     Console.WriteLine();
                 }
@@ -500,7 +514,7 @@ public static class ReviewNodeCli
         if (profile?.Name == "deep" || effort == "deep")
         {
             var findingsSvc = services.GetRequiredService<FindingsService>();
-            var blockingSlug = slug ?? id ?? "";
+            var blockingSlug = nodeSlug; // the resolved slug: --code/--id never matched "node:<slug>"
             var openBlocking = findingsSvc.List()
                 .Where(f => f.FilePath == $"node:{blockingSlug}"
                     && f.Summary.StartsWith("EMOTIONAL-DEPTH")

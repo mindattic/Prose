@@ -54,9 +54,11 @@ public static class MergeBeatsCli
             switch (args[i])
             {
                 case "--slug": case "--id": if (i + 1 < args.Length) slug = args[++i]; break;
-                case "--from": if (i + 1 < args.Length) int.TryParse(args[++i], out from); break;
-                case "--to": if (i + 1 < args.Length) int.TryParse(args[++i], out to); break;
-                case "--limit": if (i + 1 < args.Length) int.TryParse(args[++i], out limit); break;
+                // Parse into a temporary: TryParse writes 0 on failure, so "--limit ten" ran zero
+                // beats and exited 0.
+                case "--from": if (i + 1 < args.Length) { if (int.TryParse(args[++i], out var f)) from = f; else { Console.Error.WriteLine($"--from expects a number, got '{args[i]}'"); return 1; } } break;
+                case "--to": if (i + 1 < args.Length) { if (int.TryParse(args[++i], out var t)) to = t; else { Console.Error.WriteLine($"--to expects a number, got '{args[i]}'"); return 1; } } break;
+                case "--limit": if (i + 1 < args.Length) { if (int.TryParse(args[++i], out var l)) limit = l; else { Console.Error.WriteLine($"--limit expects a number, got '{args[i]}'"); return 1; } } break;
                 case "--merge-model": if (i + 1 < args.Length) mergeModel = args[++i]; break;
                 case "--report": if (i + 1 < args.Length) reportPath = args[++i]; break;
             }

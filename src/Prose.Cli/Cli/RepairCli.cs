@@ -124,7 +124,7 @@ public static class RepairCli
                 }
                 await db.SaveChangesAsync();
                 Console.WriteLine($"  reparented {orphans.Count} orphan(s)");
-                failures = 0; // orphan repair succeeded
+                // (Not "failures = 0": that erased the timeline failures counted above.)
             }
         }
 
@@ -184,19 +184,26 @@ public static class RepairCli
             // even when --rebuild hasn't been run since the feature landed.
             await ledger.EnsureSchemaAsync(ct);
 
-            extractor.AutoOnChapterSaved = false; // we drive the loop ourselves
+            // We drive the loop ourselves — and restore the flag after: the extractor is a Hub
+            // singleton, and leaving it off stopped state extraction on every later chapter save.
+            var priorAuto = extractor.AutoOnChapterSaved;
+            extractor.AutoOnChapterSaved = false;
             int totalEvents = 0, totalBeats = 0, totalErrors = 0;
             var allChapters = chapters.ListChapters().OrderBy(c => c.Number ?? int.MaxValue).ToList();
-            for (int i = 0; i < allChapters.Count; i++)
+            try
             {
-                var ch = allChapters[i];
-                Console.WriteLine($"  [{i + 1}/{allChapters.Count}] Ch{ch.Number} '{ch.Title}'");
-                var rs = await extractor.ExtractAsync(ch, ct);
-                totalBeats  += rs.BeatsScanned;
-                totalEvents += rs.EventsRecorded;
-                totalErrors += rs.Errors.Count;
-                Console.WriteLine($"    beats {rs.BeatsScanned,3}  events {rs.EventsRecorded,4}  errors {rs.Errors.Count,2}");
+                for (int i = 0; i < allChapters.Count; i++)
+                {
+                    var ch = allChapters[i];
+                    Console.WriteLine($"  [{i + 1}/{allChapters.Count}] Ch{ch.Number} '{ch.Title}'");
+                    var rs = await extractor.ExtractAsync(ch, ct);
+                    totalBeats  += rs.BeatsScanned;
+                    totalEvents += rs.EventsRecorded;
+                    totalErrors += rs.Errors.Count;
+                    Console.WriteLine($"    beats {rs.BeatsScanned,3}  events {rs.EventsRecorded,4}  errors {rs.Errors.Count,2}");
+                }
             }
+            finally { extractor.AutoOnChapterSaved = priorAuto; }
             Console.WriteLine();
             Console.WriteLine($"  beats scanned   : {totalBeats}");
             Console.WriteLine($"  events recorded : {totalEvents}");

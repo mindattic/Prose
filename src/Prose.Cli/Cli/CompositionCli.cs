@@ -45,11 +45,11 @@ public static class CompositionCli
     {
         var nodeRef = Flag(args, "--node");
         var beatArg = Flag(args, "--beat");
-        if (!Guid.TryParse(beatArg, out var beatId)) { Console.Error.WriteLine("--beat <guid> is required."); return; }
+        if (!Guid.TryParse(beatArg, out var beatId)) { Console.Error.WriteLine("--beat <guid> is required."); Environment.ExitCode = 1; return; }
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var nodeId = string.IsNullOrWhiteSpace(nodeRef) ? await ResolveBookRootForBeatAsync(db0, beatId) : await NodeRefResolver.ResolveAsync(db0, nodeRef);
-        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}' (or the book root for this beat)."); return; }
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}' (or the book root for this beat)."); Environment.ExitCode = 1; return; }
 
         var snapshot = await services.GetRequiredService<StoryStateQuery>().GetOnScreenFactsAsync(nodeId.Value, beatId);
         PrintSnapshot(beatId, snapshot);
@@ -61,11 +61,11 @@ public static class CompositionCli
         var beatArg = Flag(args, "--beat");
         var sizeArg = Flag(args, "--size");
         var size = int.TryParse(sizeArg, out var s) ? s : 15;
-        if (!Guid.TryParse(beatArg, out var beatId)) { Console.Error.WriteLine("--beat <guid> is required."); return; }
+        if (!Guid.TryParse(beatArg, out var beatId)) { Console.Error.WriteLine("--beat <guid> is required."); Environment.ExitCode = 1; return; }
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var nodeId = await NodeRefResolver.ResolveAsync(db0, nodeRef);
-        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); return; }
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); Environment.ExitCode = 1; return; }
 
         var window = await services.GetRequiredService<SceneWindowService>().GetWindowAsync(nodeId.Value, beatId, size);
         PrintWindow(beatId, size, window);
@@ -81,16 +81,16 @@ public static class CompositionCli
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var nodeId = await NodeRefResolver.ResolveAsync(db0, nodeRef);
-        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); return; }
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); Environment.ExitCode = 1; return; }
 
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId.Value);
-        if (ordered.Count == 0) { Console.Error.WriteLine("No beats found under this node."); return; }
+        if (ordered.Count == 0) { Console.Error.WriteLine("No beats found under this node."); Environment.ExitCode = 1; return; }
 
         var storyState = services.GetRequiredService<StoryStateQuery>();
         var windowSvc = services.GetRequiredService<SceneWindowService>();
 
-        var step = Math.Max(1, ordered.Count / count);
+        var step = Math.Max(1, ordered.Count / Math.Max(1, count)); // --count 0 divided by zero
         var sampled = ordered.Where((_, i) => i % step == 0).Take(count).ToList();
 
         Console.WriteLine($"[sample] {sampled.Count} beats sampled from {ordered.Count} total (step {step}).");
@@ -120,12 +120,12 @@ public static class CompositionCli
         var sizeArg = Flag(args, "--size");
         var size = int.TryParse(sizeArg, out var s) ? s : 15;
 
-        if (!Guid.TryParse(afterArg, out var afterBeatId)) { Console.Error.WriteLine("--after-beat <guid> is required."); return; }
-        if (string.IsNullOrWhiteSpace(goal)) { Console.Error.WriteLine("--goal \"<text>\" is required."); return; }
+        if (!Guid.TryParse(afterArg, out var afterBeatId)) { Console.Error.WriteLine("--after-beat <guid> is required."); Environment.ExitCode = 1; return; }
+        if (string.IsNullOrWhiteSpace(goal)) { Console.Error.WriteLine("--goal \"<text>\" is required."); Environment.ExitCode = 1; return; }
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var nodeId = await NodeRefResolver.ResolveAsync(db0, nodeRef);
-        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); return; }
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); Environment.ExitCode = 1; return; }
 
         var afterBeat = await db0.Beats.AsNoTracking().Where(b => b.Id == afterBeatId).Select(b => b.StoryPosition).FirstOrDefaultAsync();
         var asOf = afterBeat ?? int.MaxValue;
@@ -211,21 +211,21 @@ public static class CompositionCli
         var sizeArg = Flag(args, "--size");
         var size = int.TryParse(sizeArg, out var s) ? s : 15;
 
-        if (!Guid.TryParse(afterArg, out var afterBeatId)) { Console.Error.WriteLine("--after-beat <guid> is required."); return; }
-        if (string.IsNullOrWhiteSpace(goal)) { Console.Error.WriteLine("--goal \"<text>\" is required."); return; }
-        if (string.IsNullOrWhiteSpace(charsArg)) { Console.Error.WriteLine("--characters <guid>=<Name>[,...] is required."); return; }
+        if (!Guid.TryParse(afterArg, out var afterBeatId)) { Console.Error.WriteLine("--after-beat <guid> is required."); Environment.ExitCode = 1; return; }
+        if (string.IsNullOrWhiteSpace(goal)) { Console.Error.WriteLine("--goal \"<text>\" is required."); Environment.ExitCode = 1; return; }
+        if (string.IsNullOrWhiteSpace(charsArg)) { Console.Error.WriteLine("--characters <guid>=<Name>[,...] is required."); Environment.ExitCode = 1; return; }
 
         var characters = new Dictionary<Guid, string>();
         foreach (var pair in charsArg.Split(',', StringSplitOptions.RemoveEmptyEntries))
         {
             var kv = pair.Split('=', 2);
-            if (kv.Length != 2 || !Guid.TryParse(kv[0], out var gid)) { Console.Error.WriteLine($"Bad --characters entry '{pair}', expected <guid>=<Name>."); return; }
+            if (kv.Length != 2 || !Guid.TryParse(kv[0], out var gid)) { Console.Error.WriteLine($"Bad --characters entry '{pair}', expected <guid>=<Name>."); Environment.ExitCode = 1; return; }
             characters[gid] = kv[1];
         }
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var nodeId = await NodeRefResolver.ResolveAsync(db0, nodeRef);
-        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); return; }
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); Environment.ExitCode = 1; return; }
         var afterBeatPos = await db0.Beats.AsNoTracking().Where(b => b.Id == afterBeatId).Select(b => b.StoryPosition).FirstOrDefaultAsync();
         var asOf = afterBeatPos ?? int.MaxValue;
 
@@ -284,7 +284,7 @@ public static class CompositionCli
         var nodeRef = Flag(args, "--node");
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var nodeId = await NodeRefResolver.ResolveAsync(db0, nodeRef);
-        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); return; }
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); Environment.ExitCode = 1; return; }
 
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
         var plants = services.GetRequiredService<SelfReportedPlantService>();
@@ -323,6 +323,7 @@ public static class CompositionCli
     }
             default:
                 Console.Error.WriteLine($"Unknown composition verb '{verb}'.");
+                Environment.ExitCode = 1;
                 PrintHelp();
                 break;
         }

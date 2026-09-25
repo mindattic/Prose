@@ -64,11 +64,24 @@ public static class AddAliasCli
         // Accept either a GUID or an exact name — the same two handles every other entity-scoped
         // command takes. IgnoreQueryFilters so a row scoped to another universe still resolves
         // rather than reporting a confusing "not found".
-        var owner = Guid.TryParse(entity, out var entityId)
-            ? await db.Entities.IgnoreQueryFilters().AsNoTracking()
-                .FirstOrDefaultAsync(e => e.Id == entityId)
-            : await db.Entities.IgnoreQueryFilters().AsNoTracking()
-                .FirstOrDefaultAsync(e => e.Name == entity);
+        Prose.Core.Data.Entities.Entity? owner;
+        if (Guid.TryParse(entity, out var entityId))
+            owner = await db.Entities.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(e => e.Id == entityId);
+        else
+        {
+            // A name is not unique: an arbitrary match (any universe) silently took the alias.
+            // Prefer the current universe; refuse when that still leaves more than one.
+            var byName = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Name == entity).ToListAsync();
+            var scoped = byName.Where(e => e.UniverseId == Prose.Core.Services.UniverseScope.EffectiveId).ToList();
+            var pool = scoped.Count > 0 ? scoped : byName;
+            if (pool.Count > 1)
+            {
+                Console.Error.WriteLine($"[add-alias] \"{entity}\" matches {pool.Count} entities — pass the id:");
+                foreach (var e in pool) Console.Error.WriteLine($"  {e.Id}  {e.EntityType}  (universe {e.UniverseId})");
+                return 1;
+            }
+            owner = pool.FirstOrDefault();
+        }
 
         if (owner is null)
         {

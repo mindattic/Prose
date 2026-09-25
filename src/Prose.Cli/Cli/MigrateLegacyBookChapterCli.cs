@@ -259,7 +259,7 @@ public static class MigrateLegacyBookChapterCli
         // Ensure slug is unique (shouldn't collide but guard anyway)
         // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
         if (await db.Nodes.IgnoreQueryFilters().AnyAsync(s => s.Slug == slug))
-            slug = $"{baseSlug}-{shortId}-{Guid.NewGuid():N8}";
+            slug = $"{baseSlug}-{shortId}-{Guid.NewGuid().ToString("N")[..8]}"; // ":N8" is not a Guid format and threw
 
         var newNodeId = Guid.CreateVersion7();
         await using var beatTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable);
