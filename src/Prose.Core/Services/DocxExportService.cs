@@ -647,6 +647,9 @@ public class DocxExportService
         return runs;
     }
 
+    private static readonly System.Text.RegularExpressions.Regex XmlIllegalChars =
+        new(@"[\x00-\x08\x0B\x0C\x0E-\x1F]", System.Text.RegularExpressions.RegexOptions.Compiled);
+
     private static Run MakeRun(string text, string halfPt, bool bold = false, bool italic = false,
                                bool underline = false, bool strike = false)
     {
@@ -659,7 +662,8 @@ public class DocxExportService
         if (underline) rPr.AppendChild(new Underline { Val = UnderlineValues.Single });
         if (strike) rPr.AppendChild(new Strike());
         var run = new Run(rPr);
-        run.AppendChild(new Text(text) { Space = SpaceProcessingModeValues.Preserve });
+        // XML 1.0 forbids C0 controls other than tab/LF/CR; the package writer throws on save.
+        run.AppendChild(new Text(XmlIllegalChars.Replace(text ?? "", "")) { Space = SpaceProcessingModeValues.Preserve });
         return run;
     }
 

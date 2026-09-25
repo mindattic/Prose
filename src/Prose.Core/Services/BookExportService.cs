@@ -512,18 +512,14 @@ public class BookExportService
     {
         // The chapter content often starts with "# Chapter Title" since that's how I drafted it.
         // The EPUB wrapper renders the title separately — duplicate header looks ugly.
-        var titleEsc = Esc(chapterTitle);
-        var patterns = new[]
-        {
-            $"<h1>{titleEsc}</h1>",
-            $"<h1>{chapterTitle}</h1>",
-            "<h1>" + titleEsc + "</h1>\n",
-        };
-        foreach (var pat in patterns)
-        {
-            var idx = html.IndexOf(pat, StringComparison.Ordinal);
-            if (idx >= 0 && idx < 200) return html[..idx] + html[(idx + pat.Length)..];
-        }
+        // Markdig's auto-identifiers write <h1 id="the-title">, and it escapes differently from
+        // Esc (an apostrophe stays literal), so an exact "<h1>{title}</h1>" never matched. Match a
+        // leading h1 with any attributes and compare its decoded text to the title.
+        var m = System.Text.RegularExpressions.Regex.Match(html, @"\A\s*<h1(?:\s[^>]*)?>(.*?)</h1>\s*",
+            System.Text.RegularExpressions.RegexOptions.Singleline);
+        if (m.Success && string.Equals(System.Net.WebUtility.HtmlDecode(m.Groups[1].Value).Trim(),
+                (chapterTitle ?? "").Trim(), StringComparison.OrdinalIgnoreCase))
+            return html[(m.Index + m.Length)..];
         return html;
     }
 

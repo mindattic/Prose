@@ -137,7 +137,6 @@ public static class EntityMentionScanner
         var entities = await db.Set<Entity>().AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.UniverseId == universeId
                 && e.Status != "archived"
-                && e.Name.Length >= 3
                 && (e.OriginNodeId == null || e.OriginNodeId == bookNodeId))
             .Select(e => new { e.Id, e.Name, e.EntityType, e.OriginNodeId })
             .ToListAsync(ct);
@@ -153,7 +152,10 @@ public static class EntityMentionScanner
             if (ExcludedTypes.Contains(e.EntityType) || e.Name.StartsWith('(')) continue;
             seenIds.Add(e.Id);
             entityTypes[e.Id] = e.EntityType;
-            candidates.Add(new MentionCandidate(e.Name, e.Id, e.Name, e.EntityType, RequiresStrictCase(e.Name)));
+            // The length floor applies to the text, not the entity: filtering the entity out also
+            // dropped its longer aliases ("Jo" known as "Josephine" never tagged at all).
+            if (e.Name.Length >= 3)
+                candidates.Add(new MentionCandidate(e.Name, e.Id, e.Name, e.EntityType, RequiresStrictCase(e.Name)));
         }
 
         // Character aliases ("Pixel" for a character whose canonical name differs, etc.) — same

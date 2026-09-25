@@ -197,6 +197,26 @@ public class FactoryTests
     }
 
     [Test]
+    public async Task A_ledger_check_with_a_CLI_door_closes_on_a_CLI_call_of_the_tool()
+    {
+        var order = await orders.AddAsync(new WorkOrderDraft("engine", "use it", RootApprovedBy: "author",
+            ChecksJson: """[{"type":"ledger","handler":"FactoryTools","method":"FactoryJournalImpl","minCalls":1,"cli":"FactoryCli --factory journal"}]"""));
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            db.CommandLedgerEntries.Add(new CommandLedgerEntry { Source = "cli", HandlerClass = "FactoryCli", ArgsJson = """["--factory","next"]""", Success = true, At = DateTime.UtcNow });
+            await db.SaveChangesAsync();
+        }
+        Assert.That((await orders.CloseAsync(order.Id, new CloseInputs())).Closed, Is.False, "another verb of the same CLI is not this tool");
+
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            db.CommandLedgerEntries.Add(new CommandLedgerEntry { Source = "cli", HandlerClass = "FactoryCli", ArgsJson = """["--factory","journal","--node","bcoda"]""", Success = true, At = DateTime.UtcNow });
+            await db.SaveChangesAsync();
+        }
+        Assert.That((await orders.CloseAsync(order.Id, new CloseInputs())).Closed, Is.True);
+    }
+
+    [Test]
     public async Task A_deploy_check_needs_the_Hub_build_to_have_changed()
     {
         var order = await orders.AddAsync(new WorkOrderDraft("engine", "deploy", RootApprovedBy: "author",

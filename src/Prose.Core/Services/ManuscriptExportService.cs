@@ -489,8 +489,13 @@ public class ManuscriptExportService
         return sb.ToString();
     }
 
+    // XML 1.0 forbids C0 controls other than tab/LF/CR; one stray \f or \v pasted into a beat made
+    // the whole EPUB unparseable.
+    private static readonly System.Text.RegularExpressions.Regex XmlIllegalChars =
+        new(@"[\x00-\x08\x0B\x0C\x0E-\x1F]", System.Text.RegularExpressions.RegexOptions.Compiled);
+
     private static string EpubEsc(string s) =>
-        (s ?? "").Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;").Replace("\"", "&quot;");
+        XmlIllegalChars.Replace(s ?? "", "").Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;").Replace("\"", "&quot;");
 
     private static void EpubWriteEntry(ZipArchive zip, string entryPath, string content)
     {

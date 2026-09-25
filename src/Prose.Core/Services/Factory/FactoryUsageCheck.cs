@@ -82,19 +82,7 @@ public sealed class FactoryUsageCheck(IDbContextFactory<ProseDbContext> dbFactor
 
             // A CLI exit 2 is the factory's "ran, and reported or refused" (metrics over their ceilings,
             // capture with names left): the tool did its job. Exit 1 (bad arguments) and dispatch errors did not.
-            var real = db.CommandLedgerEntries.AsNoTracking()
-                .Where(e => e.At >= since && (e.Success || e.ExitCode == 2) && (e.Actor == null || !e.Actor.StartsWith("test")));
-            IQueryable<CommandLedgerEntry> hits;
-            if (tool.Cli is { } cli && cli.Split(' ', 2, StringSplitOptions.RemoveEmptyEntries) is { Length: >= 1 } parts)
-            {
-                var cliHandler = parts[0];
-                var needle = parts.Length > 1
-                    ? string.Join(",", parts[1].Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(p => JsonSerializer.Serialize(p)))
-                    : "";
-                hits = real.Where(e => (e.HandlerClass == handler && e.Method == method)
-                                       || (e.HandlerClass == cliHandler && e.ArgsJson.Contains(needle)));
-            }
-            else hits = real.Where(e => e.HandlerClass == handler && e.Method == method);
+            var hits = RealCalls(db.CommandLedgerEntries.AsNoTracking().Where(e => e.At >= since), handler, method, tool.Cli);
 
             var calls = await hits.CountAsync(ct);
             var last = calls > 0 ? await hits.MaxAsync(e => (DateTime?)e.At, ct) : null;
@@ -121,7 +109,9 @@ public sealed class FactoryUsageCheck(IDbContextFactory<ProseDbContext> dbFactor
                 if (root == null) verdict = $"unused past its grace; no open \"{RootTitlePrefix}\" root to file its order under — ask the author";
                 else
                 {
-                    var check = new[] { new { type = WorkOrderChecks.Ledger, handler, method, minCalls = 1 } };
+                    // The CLI door goes into the check too: the order is closed by the same calls
+                    // that count as use here, or a tool used only through its CLI twin could never close.
+                    var check = new[] { new { type = WorkOrderChecks.Ledger, handler, method, minCalls = 1, cli = tool.Cli } };
                     var row = await orders.AddAsync(new WorkOrderDraft(
                         Kind: WorkOrderKinds.Engine,
                         Title: title,
@@ -137,6 +127,29 @@ public sealed class FactoryUsageCheck(IDbContextFactory<ProseDbContext> dbFactor
             results.Add(new ToolUsage(tool.Name, handler, method, since, calls, last, inGrace, orderId, verdict));
         }
         return results;
+    }
+
+    /// <summary>
+    /// The one rule for "a real call" of a tool, shared by the usage report and the ledger check of
+    /// the order it files, so the two cannot disagree. A call through either door counts: the MCP
+    /// <c>…Impl</c> (<paramref name="handler"/>.<paramref name="method"/>) or the CLI twin
+    /// (<paramref name="cli"/>, e.g. <c>"FactoryCli --factory status"</c>). A CLI exit 2 is the
+    /// factory's "ran, and reported or refused" (metrics over their ceilings, capture with names
+    /// left): the tool did its job. Exit 1 (bad arguments) and dispatch errors did not. Test rows never count.
+    /// </summary>
+    public static IQueryable<CommandLedgerEntry> RealCalls(IQueryable<CommandLedgerEntry> rows, string handler, string? method, string? cli)
+    {
+        var real = rows.Where(e => (e.Success || e.ExitCode == 2) && (e.Actor == null || !e.Actor.StartsWith("test")));
+        if (cli is { } c && c.Split(' ', 2, StringSplitOptions.RemoveEmptyEntries) is { Length: >= 1 } parts)
+        {
+            var cliHandler = parts[0];
+            var needle = parts.Length > 1
+                ? string.Join(",", parts[1].Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(p => JsonSerializer.Serialize(p)))
+                : "";
+            return real.Where(e => (e.HandlerClass == handler && (method == null || e.Method == method))
+                                   || (e.HandlerClass == cliHandler && e.ArgsJson.Contains(needle)));
+        }
+        return real.Where(e => e.HandlerClass == handler && (method == null || e.Method == method));
     }
 
     private static IEnumerable<Type> SafeTypes(Assembly a)

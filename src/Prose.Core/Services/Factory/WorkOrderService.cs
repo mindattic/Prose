@@ -190,12 +190,11 @@ public sealed class WorkOrderService(
                 var method = check["method"]?.GetValue<string>();
                 var min = check["minCalls"]?.GetValue<int>() ?? 1;
                 if (string.IsNullOrWhiteSpace(handler)) return new(type, false, "the check names no handler.");
-                var q = db.CommandLedgerEntries.AsNoTracking()
-                    .Where(e => e.At >= order.OpenedAt && e.Success && e.HandlerClass == handler
-                                && (e.Actor == null || !e.Actor.StartsWith("test")));
-                if (!string.IsNullOrWhiteSpace(method)) q = q.Where(e => e.Method == method);
+                var cli = check["cli"]?.GetValue<string>();
+                var q = FactoryUsageCheck.RealCalls(db.CommandLedgerEntries.AsNoTracking().Where(e => e.At >= order.OpenedAt),
+                    handler, string.IsNullOrWhiteSpace(method) ? null : method, string.IsNullOrWhiteSpace(cli) ? null : cli);
                 var n = await q.CountAsync(ct);
-                return new(type, n >= min, $"{n} real call(s) of {handler}{(method is null ? "" : "." + method)} since the order opened (need {min}).");
+                return new(type, n >= min, $"{n} real call(s) of {handler}{(method is null ? "" : "." + method)}{(cli is null ? "" : $" or CLI {cli}")} since the order opened (need {min}).");
             }
             case WorkOrderChecks.Factory:
             {

@@ -122,9 +122,11 @@ public class NodeWorkbenchService
     public static async Task ClearEdgeBeatBoundsAsync(ProseDbContext db, IReadOnlyCollection<Guid> beatIds, CancellationToken ct)
     {
         if (beatIds.Count == 0) return;
-        await db.Edges.Where(e => e.ValidFromBeatId != null && beatIds.Contains(e.ValidFromBeatId.Value))
+        // IgnoreQueryFilters: explicit beat ids. A referencing row outside the ambient universe
+        // otherwise survives and the delete that follows fails on its FK.
+        await db.Edges.IgnoreQueryFilters().Where(e => e.ValidFromBeatId != null && beatIds.Contains(e.ValidFromBeatId.Value))
             .ExecuteUpdateAsync(s => s.SetProperty(e => e.ValidFromBeatId, (Guid?)null), ct);
-        await db.Edges.Where(e => e.ValidUntilBeatId != null && beatIds.Contains(e.ValidUntilBeatId.Value))
+        await db.Edges.IgnoreQueryFilters().Where(e => e.ValidUntilBeatId != null && beatIds.Contains(e.ValidUntilBeatId.Value))
             .ExecuteUpdateAsync(s => s.SetProperty(e => e.ValidUntilBeatId, (Guid?)null), ct);
         await db.PlantPayoffs.Where(p => p.PlantBeatId != null && beatIds.Contains(p.PlantBeatId.Value))
             .ExecuteUpdateAsync(s => s.SetProperty(p => p.PlantBeatId, (Guid?)null), ct);
@@ -1048,7 +1050,7 @@ public class NodeWorkbenchService
             // of covering" class of gap as the PlantPayoffs fix above, just discovered later
             // because no prior corpus-wide node delete had hit a book with a recorded sequential
             // read before.
-            await db.BookSequentialReads.Where(r => r.NodeId == id).ExecuteDeleteAsync(ct);
+            await db.BookSequentialReads.IgnoreQueryFilters().Where(r => r.NodeId == id).ExecuteDeleteAsync(ct);
 
             var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == id, ct);
             if (node != null)
