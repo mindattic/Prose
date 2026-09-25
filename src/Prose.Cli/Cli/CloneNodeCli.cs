@@ -55,7 +55,7 @@ public static class CloneNodeCli
         {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
             if (!string.IsNullOrWhiteSpace(slug))
-                source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+                source = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
             else if (Guid.TryParse(id, out var g))
                 source = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
             else

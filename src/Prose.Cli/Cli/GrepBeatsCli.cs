@@ -64,7 +64,7 @@ public static class GrepBeatsCli
         {
             var node = Guid.TryParse(nodeArg, out var parsed)
                 ? await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == parsed)
-                : await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == nodeArg);
+                : await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, nodeArg);
             if (node == null)
             {
                 Console.Error.WriteLine($"node not found: {nodeArg}");

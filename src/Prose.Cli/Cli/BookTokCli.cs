@@ -132,7 +132,8 @@ public static class BookTokCli
         var paths     = services.GetRequiredService<IPathProvider>();
         await using var db = await dbFactory.CreateDbContextAsync();
         // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-        var row = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug);
+        var rowId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug); // slug | NodeCode | GUID, like every command
+        var row = rowId == null ? null : await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == rowId.Value);
         if (row == null) return;
 
         row.BookTokVideoPath        = Path.GetRelativePath(paths.MediaDir, finalVideoPath);

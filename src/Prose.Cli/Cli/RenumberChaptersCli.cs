@@ -36,7 +36,7 @@ public static class RenumberChaptersCli
         {
             var node = Guid.TryParse(slug, out var parsed)
                 ? await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == parsed)
-                : await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug);
+                : await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
             if (node == null) { Console.Error.WriteLine($"node not found: {slug}"); return 1; }
             bookId = node.Id;
         }

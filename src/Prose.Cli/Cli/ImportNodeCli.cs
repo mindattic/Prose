@@ -134,7 +134,7 @@ public static class ImportNodeCli
         if (!string.IsNullOrWhiteSpace(parentSlug))
         {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var p = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Slug == parentSlug);
+            var p = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, parentSlug);
             if (p == null) { Console.Error.WriteLine($"[import-book] --parent slug not found: {parentSlug}"); return 1; }
             parentNodeId = p.Id;
         }

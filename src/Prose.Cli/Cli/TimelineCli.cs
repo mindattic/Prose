@@ -50,11 +50,11 @@ public static class TimelineCli
 
         Core.Data.Entities.Node? node;
         if (!string.IsNullOrWhiteSpace(code))
-            node = await db.Nodes.AsNoTracking()
+            node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .FirstOrDefaultAsync(s => s.NodeCode == code.ToUpperInvariant());
         else if (!string.IsNullOrWhiteSpace(slug))
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+            node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
         else
             node = await db.Nodes.AsNoTracking()
                 .FirstOrDefaultAsync(s => s.Id.ToString().Replace("-", "").StartsWith(id!.Replace("-", "")));

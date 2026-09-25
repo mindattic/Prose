@@ -70,7 +70,7 @@ public static class ReparentNodeCli
                 Console.Error.WriteLine("[reparent-node] --after-slug is mutually exclusive with --clear/--sort-key/--parent-id/--parent-slug — drop the others.");
                 return 1;
             }
-            var afterSibling = await db.Nodes.AsQueryable().FirstOrDefaultAsync(s => s.Slug == afterSlug);
+            var afterSibling = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, afterSlug);
             if (afterSibling == null) { Console.Error.WriteLine($"[reparent-node] --after-slug '{afterSlug}' not found."); return 1; }
             await workbench.ReparentNodeAfterSiblingAsync(child.Id, afterSibling.Id);
             Console.WriteLine($"[reparent-node] \"{child.Title}\" -> immediately after \"{afterSibling.Title}\".");

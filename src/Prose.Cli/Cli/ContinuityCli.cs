@@ -685,10 +685,11 @@ public static class ContinuityCli
             Guid nodeId;
             if (!Guid.TryParse(nodeRef, out nodeId))
             {
-                // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-                var found = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == nodeRef);
-                if (found == null) return Fail($"node not found: {nodeRef}");
-                nodeId = found.Id;
+                // Slug | NodeCode | unique GUID prefix, like every other command: a slug-only match
+                // rejected "BCODA".
+                var found = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, nodeRef);
+                if (found == null) return Fail(Prose.Core.Services.NodeRefResolver.NotFoundMessage(nodeRef));
+                nodeId = found.Value;
             }
             Console.WriteLine($"[continuity] Extracting from BookNode {nodeRef} — every leaf chapter (minutes)…");
             try
@@ -697,7 +698,7 @@ public static class ContinuityCli
                 int n = rs.Sum(r => r.NewClaims), cf = rs.Sum(r => r.ConfirmedClaims), ct = rs.Sum(r => r.ContradictedClaims);
                 var failed = rs.Count(r => r.Error != null);
                 Console.WriteLine($"[continuity] Done. {n} new, {cf} confirmed, {ct} contradicted across {rs.Count} chapters ({failed} failed).");
-                return ct > 0 ? 1 : 0;
+                return ct > 0 || failed > 0 ? 1 : 0; // a failed chapter is not a clean run
             }
             catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
         }

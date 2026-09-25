@@ -39,7 +39,7 @@ public static class SplitCollectionCli
         {
             Node? s;
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            if (!string.IsNullOrWhiteSpace(slug)) s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == slug);
+            if (!string.IsNullOrWhiteSpace(slug)) s = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
             else if (Guid.TryParse(id, out var g)) s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Id == g);
             else s = await db.Nodes.AsNoTracking().Where(x => x.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch

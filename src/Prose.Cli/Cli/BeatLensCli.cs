@@ -40,7 +40,7 @@ public static class BeatLensCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
         // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+        var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
         if (node == null) { Console.Error.WriteLine($"Node '{slug}' not found."); return 2; }
 
         if (!json) Console.WriteLine($"Running {lens} lens on '{node.Title}'…\n");

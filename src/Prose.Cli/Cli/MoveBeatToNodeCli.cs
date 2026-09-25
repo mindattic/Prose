@@ -77,11 +77,11 @@ public static class MoveBeatToNodeCli
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17 convention).
-            var fromNode = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+            var fromNode = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
             if (fromNode == null) { Console.Error.WriteLine($"[move-beat-to-node] FROM node '{slug}' not found."); return 1; }
             fromNodeId = fromNode.Id;
 
-            var toNode = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == toSlug);
+            var toNode = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, toSlug);
             if (toNode == null) { Console.Error.WriteLine($"[move-beat-to-node] TO node '{toSlug}' not found."); return 1; }
             toNodeId = toNode.Id;
         }
