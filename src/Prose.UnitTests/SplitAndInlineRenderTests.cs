@@ -108,6 +108,14 @@ public class SplitAndInlineRenderTests
     }
 
     [Test]
+    public void Reflow_may_insert_breaks_but_never_merge_the_authors_paragraphs()
+    {
+        Assert.That(ProseReflowService.WhitespaceOnlyChange("One. Two.", "One.\n\nTwo."), Is.True);
+        Assert.That(ProseReflowService.WhitespaceOnlyChange("One.\n\nTwo.", "One. Two."), Is.False);
+        Assert.That(ProseReflowService.WhitespaceOnlyChange("One. Two.", "One. Too."), Is.False);
+    }
+
+    [Test]
     public void A_seed_script_splits_into_its_GO_batches_instead_of_one_merged_batch()
     {
         var batches = SqlSeedService.SplitBatches("ALTER TABLE t ADD c INT;\r\nGO\r\nUPDATE t SET c = 1;\r\n  go ;\r\nGO\r\n");

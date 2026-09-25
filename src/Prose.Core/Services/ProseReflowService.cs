@@ -142,7 +142,18 @@ public class ProseReflowService
         // Only ASCII whitespace: \s also matches NBSP and thin spaces, so the model could turn a
         // non-breaking space into a plain one and pass this "whitespace only" guard.
         static string Collapse(string s) => Regex.Replace(s, @"[ \t\r\n]+", " ").Trim(' ', '\t', '\r', '\n');
-        return Collapse(a) == Collapse(b);
+        if (Collapse(a) != Collapse(b)) return false;
+
+        // Reflow only INSERTS breaks. Collapsing every run to a space let "Para one.\n\nPara two."
+        // -> "Para one. Para two." pass as "whitespace only" and merged the author's paragraphs:
+        // every separator that held a line break must still hold one.
+        static List<bool> Breaks(string s) => Regex.Matches(s.Trim(' ', '\t', '\r', '\n'), @"[ \t\r\n]+")
+            .Select(m => m.Value.Contains('\n')).ToList();
+        var ba = Breaks(a); var bb = Breaks(b);
+        if (ba.Count != bb.Count) return false;
+        for (var i = 0; i < ba.Count; i++)
+            if (ba[i] && !bb[i]) return false;
+        return true;
     }
 
     /// <summary>Strip a ```fence``` the model may wrap the passage in despite instructions.</summary>
