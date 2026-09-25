@@ -41,10 +41,9 @@ public class BeatGranularityService(IDbContextFactory<ProseDbContext> factory)
         string nodeCodeOrSlug, CancellationToken ct = default)
     {
         await using var db = await factory.CreateDbContextAsync(ct);
-        var node = await db.Nodes
-            .Where(n => n.Kind == "book" &&
-                        (n.NodeCode == nodeCodeOrSlug || n.Slug == nodeCodeOrSlug))
-            .FirstOrDefaultAsync(ct);
+        // The shared resolver: GUIDs, prefixes and books outside the current universe too.
+        var node = await NodeRefResolver.ResolveNodeAsync(db, nodeCodeOrSlug);
+        if (node is { Kind: not "book" }) node = null;
         return node is null ? null : await BuildReportAsync(db, node, ct);
     }
 

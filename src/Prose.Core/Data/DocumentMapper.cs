@@ -230,7 +230,7 @@ public static class DocumentMapper
             .Select(d => d.Id)
             .ToHashSet();
 
-        int written = 0;
+        int written = 0, failed = 0;
 
         foreach (var row in blobRows)
         {
@@ -239,21 +239,27 @@ public static class DocumentMapper
             catch (Exception ex)
             {
                 Serilog.Log.Warning(ex, "DocumentMapper.RebuildAllAsync: failed to deserialize blob for entity {Id}", row.EntityId);
+                failed++;
                 continue;
             }
             if (src == null) continue;
 
             try
             {
+                // PersistAsync deletes bridge rows immediately (ExecuteDelete): without a transaction a
+                // failed save below left this entity with its aliases/hooks wiped.
+                await using var tx = db.Database.CurrentTransaction == null ? await db.Database.BeginTransactionAsync(ct) : null;
                 await PersistAsync(db, row.EntityId, src, ct);
                 FactionMapper.SyncTagsForEntity(db, row.EntityId, src.Tags);
                 await db.SaveChangesAsync(ct);
+                if (tx != null) await tx.CommitAsync(ct);
                 written++;
             }
             catch (Exception ex)
             {
                 Serilog.Log.Warning(ex, "DocumentMapper.RebuildAllAsync: failed to persist entity {Id}", row.EntityId);
                 db.ChangeTracker.Clear();
+                failed++;
             }
         }
 
@@ -271,9 +277,13 @@ public static class DocumentMapper
             {
                 Serilog.Log.Warning(ex, "DocumentMapper.RebuildAllAsync: failed to create stub for entity {Id}", e.Id);
                 db.ChangeTracker.Clear();
+                failed++;
             }
         }
 
+        // Per-row failures used to be warnings only: the CLI said "Wrote N" and exited 0.
+        if (failed > 0)
+            throw new InvalidOperationException($"DocumentMapper.RebuildAllAsync: {failed} row(s) failed ({written} written) — see the log.");
         return written;
     }
 }

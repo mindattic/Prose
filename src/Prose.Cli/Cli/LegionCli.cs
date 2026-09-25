@@ -117,7 +117,7 @@ public static class LegionCli
                 }),
             };
             Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(report, jsonOpts));
-            return 0;
+            return result.IndividualVotes.Any(v => !v.IsError) ? 0 : 2; // every voter errored: no answer
         }
 
         PrintUsage();

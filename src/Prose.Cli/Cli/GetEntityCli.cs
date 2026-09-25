@@ -53,7 +53,7 @@ public static class GetEntityCli
             case "place":
             {
                 var p = Guid.TryParse(query, out var g)
-                    ? await db.Entities.AsNoTracking().FirstOrDefaultAsync(x => x.Id == g && x.EntityType == "place")
+                    ? await db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == g && x.EntityType == "place")
                     : await db.Entities.AsNoTracking().FirstOrDefaultAsync(x =>
                         x.EntityType == "place" && x.Name.ToLower().Contains(query.ToLower()));
                 if (p == null) { Console.Error.WriteLine($"[get] Place '{query}' not found."); return 1; }
@@ -67,7 +67,7 @@ public static class GetEntityCli
             case "weapon":
             {
                 var w = Guid.TryParse(query, out var g)
-                    ? await db.Entities.AsNoTracking().FirstOrDefaultAsync(x => x.Id == g && x.EntityType == "weapon")
+                    ? await db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == g && x.EntityType == "weapon")
                     : await db.Entities.AsNoTracking().FirstOrDefaultAsync(x =>
                         x.EntityType == "weapon" && x.Name.ToLower().Contains(query.ToLower()));
                 if (w == null) { Console.Error.WriteLine($"[get] Weapon '{query}' not found."); return 1; }
@@ -80,7 +80,7 @@ public static class GetEntityCli
             case "faction":
             {
                 var f = Guid.TryParse(query, out var g)
-                    ? await db.Entities.AsNoTracking().FirstOrDefaultAsync(x => x.Id == g && x.EntityType == "faction")
+                    ? await db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == g && x.EntityType == "faction")
                     : await db.Entities.AsNoTracking().FirstOrDefaultAsync(x =>
                         x.EntityType == "faction" && x.Name.ToLower().Contains(query.ToLower()));
                 if (f == null) { Console.Error.WriteLine($"[get] Faction '{query}' not found."); return 1; }
@@ -93,7 +93,7 @@ public static class GetEntityCli
             case "corponation":
             {
                 var cn = Guid.TryParse(query, out var g)
-                    ? await db.Entities.AsNoTracking().FirstOrDefaultAsync(x => x.Id == g && x.EntityType == "corponation")
+                    ? await db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(x => x.Id == g && x.EntityType == "corponation")
                     : await db.Entities.AsNoTracking().FirstOrDefaultAsync(x =>
                         x.EntityType == "corponation" && x.Name.ToLower().Contains(query.ToLower()));
                 if (cn == null) { Console.Error.WriteLine($"[get] CorpoNation '{query}' not found."); return 1; }
