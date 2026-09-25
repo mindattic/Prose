@@ -56,7 +56,7 @@ public class NodeMigrationService
         var bookRows = await db.Database
             .SqlQueryRaw<BookRow>("SELECT Id, Title, Slug, Tagline FROM Books")
             .ToListAsync(ct);
-        var existingNodeIds = (await db.Nodes.Select(s => s.Id).ToListAsync(ct)).ToHashSet();
+        var existingNodeIds = (await db.Nodes.IgnoreQueryFilters().Select(s => s.Id).ToListAsync(ct)).ToHashSet(); // every universe: a scoped read re-inserted existing nodes
 
         int added = 0;
         for (int i = 0; i < bookRows.Count; i++)
@@ -85,8 +85,8 @@ public class NodeMigrationService
         var chapterRows = await db.Database
             .SqlQueryRaw<ChapterRow>("SELECT Id, BookId, Number, Title, Synopsis, Status FROM Chapters")
             .ToListAsync(ct);
-        var existingNodeIds = (await db.Nodes.Select(s => s.Id).ToListAsync(ct)).ToHashSet();
-        var slugIndex = (await db.Nodes.Select(s => s.Slug).ToListAsync(ct)).ToHashSet(StringComparer.OrdinalIgnoreCase);
+        var existingNodeIds = (await db.Nodes.IgnoreQueryFilters().Select(s => s.Id).ToListAsync(ct)).ToHashSet(); // every universe: a scoped read re-inserted existing nodes
+        var slugIndex = (await db.Nodes.IgnoreQueryFilters().Select(s => s.Slug).ToListAsync(ct)).ToHashSet(StringComparer.OrdinalIgnoreCase);
 
         int added = 0;
         foreach (var c in chapterRows.OrderBy(c => c.BookId).ThenBy(c => c.Number))
@@ -184,13 +184,13 @@ public class NodeMigrationService
                        LastPlayedSec, ParentEpisodeId, BookId, ChapterId
                 FROM Episodes")
             .ToListAsync(ct);
-        var existingNodeIds = (await db.Nodes.Select(s => s.Id).ToListAsync(ct)).ToHashSet();
-        var slugIndex = (await db.Nodes.Select(s => s.Slug).ToListAsync(ct)).ToHashSet(StringComparer.OrdinalIgnoreCase);
+        var existingNodeIds = (await db.Nodes.IgnoreQueryFilters().Select(s => s.Id).ToListAsync(ct)).ToHashSet(); // every universe: a scoped read re-inserted existing nodes
+        var slugIndex = (await db.Nodes.IgnoreQueryFilters().Select(s => s.Slug).ToListAsync(ct)).ToHashSet(StringComparer.OrdinalIgnoreCase);
 
         // Build the chapter-id → node-id lookup for episode parent wiring.
         // Legacy code sometimes wrote Chapter.Id as the no-dashes hex form,
         // sometimes with dashes — accept both.
-        var chapterIds = await db.Nodes
+        var chapterIds = await db.Nodes.IgnoreQueryFilters()
             .Where(s => s is ChapterNode)
             .Select(s => s.Id)
             .ToListAsync(ct);
@@ -251,10 +251,13 @@ public class NodeMigrationService
                 FROM EpisodeBeats")
             .ToListAsync(ct);
         var existingBeatIds = (await db.Beats.Select(b => b.Id).ToListAsync(ct)).ToHashSet();
-        var existingJunctions = (await db.BeatNodes
-            .Select(sb => new { sb.NodeId, sb.BeatId })
-            .ToListAsync(ct))
-            .Select(x => (x.NodeId, x.BeatId)).ToHashSet();
+        var junctionRows = await db.BeatNodes
+            .Select(sb => new { sb.NodeId, sb.BeatId, sb.SortKey })
+            .ToListAsync(ct);
+        var existingJunctions = junctionRows.Select(x => (x.NodeId, x.BeatId)).ToHashSet();
+        // A standalone episode beat gets a fresh id each run, so the (episode, beat) check above
+        // never matched it and every re-run added another full copy. Its junction position is stable.
+        var occupiedSlots = junctionRows.Select(x => (x.NodeId, x.SortKey)).ToHashSet();
 
         // Same Number allocation as ChapterBeats — picks up from the highest
         // value present after that pass so the unique index doesn't fire.
@@ -283,6 +286,7 @@ public class NodeMigrationService
             }
             else
             {
+                if (occupiedSlots.Contains((eb.EpisodeId, eb.SortKey))) continue; // migrated on an earlier run
                 beatId = Guid.CreateVersion7();
                 db.Beats.Add(new Beat
                 {

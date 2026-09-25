@@ -97,12 +97,15 @@ public sealed class GripePassService(
         // Recurses past any nested Collection; returns leaves in reading order, which
         // chapterOrder below relies on (2026-08-09 fix).
         var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var beatRows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => sourceIds.Contains(bn.NodeId) && bn.Beat != null)
-            .Select(bn => new { bn.NodeId, bn.SortKey, bn.Beat!.Id, bn.Beat.Text })
-            .ToListAsync(ct);
-        var chapterOrder = sourceIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
-        var ordered = beatRows.OrderBy(b => chapterOrder[b.NodeId]).ThenBy(b => b.SortKey).ToList();
+        // Exactly the beats the numbered export shows, in its order: the reading-order walk, empty
+        // beats skipped. The leaf walk (with every empty placeholder) numbered differently, so a
+        // reader's "Beat 40" was filed against beat 41.
+        var walked = new List<NodeWorkbenchService.OrderedBeat>();
+        await NodeWorkbenchService.WalkAsync(db, nodeId, walked, [], includeDisabled: false, ct);
+        var ordered = walked
+            .Where(o => BeatMarkup.StripEntityTags(o.Beat.Text).Trim().Length > 0)
+            .Select(o => new { o.NodeId, o.SortKey, o.Beat.Id, o.Beat.Text })
+            .ToList();
         if (ordered.Count == 0)
             return new GripeRunResult(nodeId, slug, node.Title, 0, "", Array.Empty<Gripe>(), Array.Empty<Gripe>(), 0, 0, 0);
 
@@ -207,12 +210,15 @@ public sealed class GripePassService(
         var slug = node.Slug ?? nodeId.ToString("N");
 
         var sourceIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var beatRows = await db.BeatNodes.AsNoTracking()
-            .Where(bn => sourceIds.Contains(bn.NodeId) && bn.Beat != null)
-            .Select(bn => new { bn.NodeId, bn.SortKey, bn.Beat!.Id, bn.Beat.Text })
-            .ToListAsync(ct);
-        var chapterOrder = sourceIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
-        var ordered = beatRows.OrderBy(b => chapterOrder[b.NodeId]).ThenBy(b => b.SortKey).ToList();
+        // Exactly the beats the numbered export shows, in its order: the reading-order walk, empty
+        // beats skipped. The leaf walk (with every empty placeholder) numbered differently, so a
+        // reader's "Beat 40" was filed against beat 41.
+        var walked = new List<NodeWorkbenchService.OrderedBeat>();
+        await NodeWorkbenchService.WalkAsync(db, nodeId, walked, [], includeDisabled: false, ct);
+        var ordered = walked
+            .Where(o => BeatMarkup.StripEntityTags(o.Beat.Text).Trim().Length > 0)
+            .Select(o => new { o.NodeId, o.SortKey, o.Beat.Id, o.Beat.Text })
+            .ToList();
         if (ordered.Count == 0)
             return new EngagementRunResult(nodeId, slug, node.Title, 0, "", Array.Empty<EngagementSpan>(), Array.Empty<EngagementSpan>(), 0, 0, 0);
 

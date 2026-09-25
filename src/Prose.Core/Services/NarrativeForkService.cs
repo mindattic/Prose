@@ -117,12 +117,15 @@ public class NarrativeForkService(
                 .Where(sb => forkSearchIds.Contains(sb.NodeId))
                 .Join(db.Beats.AsNoTracking().Where(b => b.Text == null || b.Text == ""),
                       sb => sb.BeatId, b => b.Id,
-                      (sb, b) => new { b.Id, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
+                      (sb, b) => new { b.Id, sb.NodeId, SortKey = sb.SortKey, Goal = b.Description ?? b.Title ?? "" })
                 .Where(x => x.Goal != "")
-                .OrderBy(x => x.SortKey)
-                .Take(nextBeatWindow)
                 .ToListAsync(ct);
-            nextBeats = rows.Select(x => (x.Id, x.Goal)).ToList();
+            // Chapter first (the leaf list is in reading order), then SortKey within it: SortKey
+            // restarts in every chapter, so ordering by it alone took the first unwritten beat of
+            // several different chapters, and the winning arc overwrote their descriptions.
+            var chapterOrder = forkSearchIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+            nextBeats = rows.OrderBy(x => chapterOrder.GetValueOrDefault(x.NodeId, int.MaxValue)).ThenBy(x => x.SortKey)
+                .Take(nextBeatWindow).Select(x => (x.Id, x.Goal)).ToList();
         }
 
         if (nextBeats.Count == 0)

@@ -115,8 +115,11 @@ public class ObligationReconciliationService(
         var referents = ordered.Sum(b => UnnamedReferentScanner.Scan(BeatMarkup.StripEntityTags(b!.Text)).Count(r => r.Mentions >= 2));
 
         var prefix = $"node:{slug}";
+        // Delimited: "node:bcoda" also matched bcoda5's findings and inflated this book's density.
+        var slash = prefix + "/";
+        var hash = prefix + "#";
         var openBad = await db.Findings.AsNoTracking()
-            .Where(f => f.FilePath.StartsWith(prefix) && (f.Status == "New" || f.Status == "Triaged") && (f.Severity == "High" || f.Severity == "Medium"))
+            .Where(f => (f.FilePath == prefix || f.FilePath.StartsWith(slash) || f.FilePath.StartsWith(hash)) && (f.Status == "New" || f.Status == "Triaged") && (f.Severity == "High" || f.Severity == "Medium"))
             .Select(f => f.Summary).ToListAsync(ct);
         var consistency = openBad.Count(s => s.StartsWith("LOGICSWEEP ", StringComparison.Ordinal) || s.StartsWith("FACT-LEDGER ", StringComparison.Ordinal)
                                           || s.StartsWith("TUNEDREAD ", StringComparison.Ordinal) || s.StartsWith("OBLIGATION ", StringComparison.Ordinal));

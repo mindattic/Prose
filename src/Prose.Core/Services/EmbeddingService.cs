@@ -1043,7 +1043,9 @@ public class EmbeddingService
         var payload = await resp.Content.ReadFromJsonAsync<EmbeddingResponse>(cancellationToken: ct);
         await RecordCallAsync(LocalProviderId, model, inputChars, payload?.Usage?.PromptTokens, (int)sw.ElapsedMilliseconds, success: true, null, ct);
         if (payload?.Data == null) return Array.Empty<float[]>();
-        return payload.Data.OrderBy(d => d.Index).Select(d => d.Embedding).ToArray();
+        // Normalized to the column's width, as the single-text path does: a 768/3072-dim local
+        // model otherwise failed CAST(... AS VECTOR(1536)) and aborted the whole reindex.
+        return payload.Data.OrderBy(d => d.Index).Select(d => NormalizeVector(d.Embedding)).ToArray();
     }
 
     private async Task<float[][]> EmbedBatchAsync(IReadOnlyList<string> texts, CancellationToken ct)
@@ -1085,7 +1087,7 @@ public class EmbeddingService
         // on order — sorting is defensive).
         return payload.Data
             .OrderBy(d => d.Index)
-            .Select(d => d.Embedding)
+            .Select(d => NormalizeVector(d.Embedding))
             .ToArray();
     }
 
