@@ -37,7 +37,7 @@ public static class EntityTreeCli
                     i++;
                     break;
                 case "--as-of":
-                    if (DateTime.TryParse(args[i + 1], out var dt)) { asOf = dt; i++; }
+                    asOf = CliDates.ParseAsGiven(args[i + 1], "--as-of"); i++;
                     break;
             }
         }
@@ -46,10 +46,17 @@ public static class EntityTreeCli
         {
             var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
             await using var db = await dbFactory.CreateDbContextAsync();
-            entityId = await db.Entities.AsNoTracking()
+            // Slugs are unique per (universe, type) only: refuse a slug two entities share.
+            var hits = await db.Entities.AsNoTracking()
                 .Where(e => e.Slug == slug)
-                .Select(e => (Guid?)e.Id)
-                .FirstOrDefaultAsync();
+                .Select(e => new { e.Id, e.EntityType })
+                .Take(5).ToListAsync();
+            if (hits.Count > 1)
+            {
+                Console.Error.WriteLine($"Slug '{slug}' matches {hits.Count} entities ({string.Join(", ", hits.Select(h => $"{h.EntityType} {h.Id}"))}) — pass --id.");
+                return 1;
+            }
+            entityId = hits.Count == 1 ? hits[0].Id : null;
         }
 
         if (entityId == null)

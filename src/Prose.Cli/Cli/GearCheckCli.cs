@@ -30,7 +30,7 @@ public static class GearCheckCli
                     i++;
                     break;
                 case "--story-time":
-                    if (DateTime.TryParse(args[i + 1], out var dt)) storyTime = dt;
+                    storyTime = CliDates.ParseAsGiven(args[i + 1], "--story-time");
                     i++;
                     break;
             }

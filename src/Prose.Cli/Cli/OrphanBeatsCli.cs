@@ -102,7 +102,13 @@ public static class OrphanBeatsCli
                 // Guid.Empty is DeleteBeatAsync's documented "no BeatNodes row anywhere" branch —
                 // the same path `prose --beat delete --id <orphan>` takes. Never raw SQL
                 // (CLAUDE.md: Beats is system-versioned; deletes go through the CLI/service).
-                await workbench.DeleteBeatAsync(Guid.Empty, o.Id);
+                // False = the beat gained a BeatNodes row since the scan (another session): not deleted.
+                if (!await workbench.DeleteBeatAsync(Guid.Empty, o.Id))
+                {
+                    failed++;
+                    Console.Error.WriteLine($"  ! beat #{o.Number} ({o.Id}): now linked to a node — skipped.");
+                    continue;
+                }
                 deleted++;
                 if (deleted % 100 == 0) Console.WriteLine($"  … {deleted}/{orphans.Count}");
             }

@@ -31,6 +31,12 @@ public static class ReconcileObligationsCli
         var json = args.Contains("--json");
         var noFindings = args.Contains("--no-findings");
         var statusFilter = Flag("--status");
+        // A typo ("publshed") used to fall to "_ => true" and reconcile every book.
+        if (statusFilter is not (null or "published" or "complete" or "draft"))
+        {
+            Console.Error.WriteLine($"[reconcile-obligations] --status must be published, complete or draft (got '{statusFilter}').");
+            return 2;
+        }
 
         if (string.IsNullOrWhiteSpace(slug) && !all)
         {
@@ -47,7 +53,7 @@ public static class ReconcileObligationsCli
             if (all)
             {
                 var books = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-                    .Where(n => n.ParentNodeId == null && n.Kind == "book" && n.Status != "archived")
+                    .Where(n => n.Kind == "book" && n.Status != "archived") // books under a Series have a parent
                     .Select(n => new { n.Id, n.Slug, n.Title, n.Status, n.KdpPublishedAt })
                     .ToListAsync();
                 foreach (var b in books)
@@ -123,6 +129,8 @@ public static class ReconcileObligationsCli
 
     static async Task<Guid> BookRootAsync(ProseDbContext db, Guid nodeId)
     {
+        // The BOOK, not the top of the tree: a book under a Series used to reconcile the series.
+        if (await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, nodeId) is { } book) return book;
         var walk = nodeId;
         for (var depth = 0; depth < 10; depth++)
         {

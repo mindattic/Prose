@@ -19,6 +19,11 @@ public static class ProseHealthCli
             : "Prose health: analysing all non-WIP stories…");
 
         var report = await health.RunAsync(slug);
+        if (slug != null && report.BooksAnalyzed == 0)
+        {
+            Console.Error.WriteLine($"Prose health: no book matches '{slug}'.");
+            return 1;
+        }
 
         // ── Console summary ───────────────────────────────────────────────
         if (!json)

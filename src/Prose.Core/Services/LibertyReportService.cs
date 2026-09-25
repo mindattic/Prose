@@ -142,10 +142,7 @@ public class LibertyReportService(
         try
         {
             await using var db = await dbFactory.CreateDbContextAsync(ct);
-            var nodeId = await db.Nodes.AsNoTracking()
-                .Where(n => n.Slug == slug)
-                .Select(n => (Guid?)n.Id)
-                .FirstOrDefaultAsync(ct);
+            var nodeId = await NodeRefResolver.ResolveAsync(db, slug); // NodeCode, GUID, other universes
             if (nodeId == null) return [];
 
             // SS-A43: beats live on chapter nodes (children), not directly on the book node.

@@ -19,11 +19,22 @@ public static class BackfillMeaningCli
         for (int i = 0; i < args.Length - 1; i++)
         {
             if (args[i] == "--slug") { slug = args[i + 1]; i++; }
-            if (args[i] == "--limit" && int.TryParse(args[i + 1], out var l)) { limit = l; i++; }
+            if (args[i] == "--limit")
+            {
+                // "1O" used to mean "no limit" — every missing beat went to the LLM.
+                if (!int.TryParse(args[i + 1], out var l)) { Console.Error.WriteLine($"--limit must be a number, got '{args[i + 1]}'."); return 2; }
+                limit = l; i++;
+            }
             if (args[i] == "--beats")
             {
-                beats = args[i + 1].Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-                    .Select(s => int.TryParse(s, out var n) ? n : -1).Where(n => n >= 0).ToHashSet();
+                // A bad token used to be dropped; all bad → empty set → the service refreshed EVERY beat.
+                beats = [];
+                foreach (var tok in args[i + 1].Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+                {
+                    if (!int.TryParse(tok, out var n) || n < 0) { Console.Error.WriteLine($"--beats: '{tok}' is not a beat number."); return 2; }
+                    beats.Add(n);
+                }
+                if (beats.Count == 0) { Console.Error.WriteLine("--beats: no beat numbers given."); return 2; }
                 i++;
             }
         }
@@ -43,6 +54,6 @@ public static class BackfillMeaningCli
         Console.WriteLine($"Missing: {r.Missing}");
         Console.WriteLine($"Filled : {r.Filled}{(dryRun ? " (dry run — not saved)" : "")}");
         Console.WriteLine($"Failed : {r.Failed}");
-        return 0;
+        return r.Failed > 0 ? 1 : 0;
     }
 }

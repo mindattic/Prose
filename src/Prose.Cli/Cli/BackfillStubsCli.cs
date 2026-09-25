@@ -16,10 +16,16 @@ public static class BackfillStubsCli
     {
         var db2 = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var ctx2 = await db2.CreateDbContextAsync();
-        var promoted = await ctx2.Database.ExecuteSqlRawAsync(
-            "UPDATE Entities SET Status = 'canon', ModifiedAt = SYSUTCDATETIME() WHERE Status != 'canon' AND Status != 'archived' AND Id IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
-        var demoted = await ctx2.Database.ExecuteSqlRawAsync(
-            "UPDATE Entities SET Status = 'stub', ModifiedAt = SYSUTCDATETIME() WHERE Status != 'stub' AND Status != 'archived' AND Id NOT IN (SELECT DISTINCT EntityId FROM BeatEntityMentions)");
+        // Only the stub <-> canon flip. The raw SQL excluded just 'archived', so a merged or retired
+        // entity with stale mentions came back as canon and one without became a stub; it also
+        // spanned every universe. EF's universe filter scopes these to the current one.
+        var now = DateTime.UtcNow;
+        var promoted = await ctx2.Entities
+            .Where(e => e.Status == "stub" && ctx2.BeatEntityMentions.Any(m => m.EntityId == e.Id))
+            .ExecuteUpdateAsync(u => u.SetProperty(e => e.Status, "canon").SetProperty(e => e.ModifiedAt, now));
+        var demoted = await ctx2.Entities
+            .Where(e => e.Status == "canon" && !ctx2.BeatEntityMentions.Any(m => m.EntityId == e.Id))
+            .ExecuteUpdateAsync(u => u.SetProperty(e => e.Status, "stub").SetProperty(e => e.ModifiedAt, now));
         Console.WriteLine($"[backfill-stubs] promoted={promoted} canon, demoted={demoted} stub.");
         return 0;
     }

@@ -300,7 +300,7 @@ public class NightlyHealthService
         // non-ambient-universe book would silently resolve to zero books).
         var query = db.Nodes.OfType<BookNode>().AsNoTracking().IgnoreQueryFilters();
         if (slug != null)
-            query = query.Where(n => n.Slug == slug);
+            query = query.Where(n => n.Slug == slug || n.NodeCode == slug); // --slug BCODA
         return await query
             .OrderBy(n => n.SortKey)
             .Select(n => new BookMeta(n.Id, n.Slug, n.NodeCode))

@@ -46,9 +46,7 @@ public static class DcmBackfillCli
         List<(Guid BeatId, int Number, string Text)> beats;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var node = await db.Nodes.AsNoTracking()
-                .Where(n => n.Slug == slug)
-                .Select(n => new { n.Id, n.Title }).FirstOrDefaultAsync();
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug); // NodeCode, GUID, other universes
             if (node == null) { Console.Error.WriteLine("[dcm-backfill] No matching node."); return 2; }
             nodeId = node.Id; title = node.Title;
 

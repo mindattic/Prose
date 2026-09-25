@@ -59,11 +59,12 @@ public class CanonExportService
         if (token.Length == 32 && Guid.TryParseExact(token, "N", out g)) return g;
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var hit = await db.Entities.AsNoTracking()
+        // Slugs are unique per (universe, type) only: two matches → unresolved, not an arbitrary pick.
+        var hits = await db.Entities.AsNoTracking()
             .Where(e => e.Slug == token)
-            .Select(e => (Guid?)e.Id)
-            .FirstOrDefaultAsync(ct);
-        return hit;
+            .Select(e => e.Id)
+            .Take(2).ToListAsync(ct);
+        return hits.Count == 1 ? hits[0] : null;
     }
 
     /// <summary>Resolved publish directory for canon exports — created if missing.

@@ -40,6 +40,6 @@ public static class ExtractBeatLocationsCli
         Console.WriteLine($"Resolved to canon  : {r.Resolved}");
         Console.WriteLine($"Failed             : {r.Failed}");
         Console.WriteLine($"Skipped (cached)   : {r.SkippedFromCache}");
-        return 0;
+        return r.Failed > 0 ? 1 : 0;
     }
 }

@@ -28,7 +28,15 @@ public static class GetPlaceCli
         }
 
         var repo = sp.GetRequiredService<DistrictRepository>();
-        var place = repo.GetByName(name);
+        // Its output feeds --add-place --file: with two same-named places, printing an arbitrary
+        // one and round-tripping it overwrote the wrong row.
+        var same = repo.GetAll().Where(p => string.Equals(p.Name, name, StringComparison.OrdinalIgnoreCase)).ToList();
+        if (same.Count > 1)
+        {
+            Console.Error.WriteLine($"[get-place] {same.Count} places are named \"{name}\": {string.Join(", ", same.Select(p => p.Id))}.");
+            return Task.FromResult(1);
+        }
+        var place = same.Count == 1 ? same[0] : repo.GetByName(name);
         if (place == null)
         {
             Console.Error.WriteLine($"[get-place] not found: \"{name}\"");

@@ -256,8 +256,14 @@ public static class BookCli
         if (direct != null) return direct;
 
         var all = repo.ListBooks();
-        var prefix = all.FirstOrDefault(b => b.Id.StartsWith(ident, StringComparison.OrdinalIgnoreCase));
-        if (prefix != null) return prefix;
+        // An ambiguous prefix ("01") used to pick an arbitrary book — and absorb/delete wrote to it.
+        var prefixes = all.Where(b => b.Id.StartsWith(ident, StringComparison.OrdinalIgnoreCase)).Take(2).ToList();
+        if (prefixes.Count == 1) return prefixes[0];
+        if (prefixes.Count > 1)
+        {
+            Console.Error.WriteLine($"[book] id prefix '{ident}' matches more than one book — use more characters");
+            return null;
+        }
 
         var titleMatches = all.Where(b => string.Equals(b.Title, ident, StringComparison.OrdinalIgnoreCase)).ToList();
         if (titleMatches.Count == 1) return titleMatches[0];

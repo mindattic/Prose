@@ -135,8 +135,13 @@ public static class ExclusionRulesCli
         Console.WriteLine($"  {row.Rationale}");
         Console.WriteLine();
         Console.WriteLine("It is INERT until approved. Check it first against a real pair:");
+        // Carry the proposed patterns: without --pattern-a/-b the test ran a pattern-less rule,
+        // which matches every object, and printed MATCH for a pattern that was never checked.
         Console.WriteLine($"  prose --exclusion-rules --test --predicate-a {row.PredicateA} --object-a \"...\" " +
-                          $"--predicate-b {row.PredicateB} --object-b \"...\"");
+                          $"--predicate-b {row.PredicateB} --object-b \"...\"" +
+                          (row.ObjectPatternA is { } pA ? $" --pattern-a \"{pA}\"" : "") +
+                          (row.ObjectPatternB is { } pB ? $" --pattern-b \"{pB}\"" : "") +
+                          (row.Symmetric ? "" : " --directional"));
         Console.WriteLine($"  prose --exclusion-rules --approve --id {row.Id}");
         return 0;
     }

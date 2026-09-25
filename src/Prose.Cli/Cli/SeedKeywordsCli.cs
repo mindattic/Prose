@@ -48,10 +48,7 @@ public static class SeedKeywordsCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var node = await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slug)
-            .Select(s => new { s.Id, s.Slug })
-            .FirstOrDefaultAsync();
+        var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug); // NodeCode, GUID, other universes
         if (node == null)
         {
             Console.Error.WriteLine($"[seed-keywords] Node not found: {slug}");

@@ -29,7 +29,9 @@ public static class LintProseCli
 
         var svc = services.GetRequiredService<RepetitionLintService>();
         Console.WriteLine($"Prose lint for {slug}{(dryRun ? " (dry run — nothing filed)" : "")}...");
-        var r = await svc.LintAsync(slug, dryRun);
+        RepetitionLintReport r;
+        try { r = await svc.LintAsync(slug, dryRun); }
+        catch (InvalidOperationException ex) when (ex.Message.StartsWith("Node not found")) { Console.Error.WriteLine(ex.Message); return 1; }
 
         Console.WriteLine();
         Console.WriteLine($"Node            : {r.NodeCode}");

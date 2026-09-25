@@ -45,8 +45,7 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
     public async Task<NounConsistencyReport> ValidateSlugAsync(string slug, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking()
-            .FirstOrDefaultAsync(n => n.Slug == slug, ct)
+        var node = await NodeRefResolver.ResolveNodeAsync(db, slug) // NodeCode, GUID, other universes
             ?? throw new InvalidOperationException($"Node slug '{slug}' not found.");
         return await ScanAsync(db, node, auditRunner, ct);
     }

@@ -41,9 +41,14 @@ public static class DeleteEntityClusterCli
             return 2;
         }
 
-        var walls = (excludeArg ?? "").Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-            .Select(s => Guid.TryParse(s, out var g) ? g : (Guid?)null)
-            .Where(g => g != null).Select(g => g!.Value).ToHashSet();
+        // A token that is not a GUID used to be dropped silently: the wall vanished, the walk ran
+        // past the live entity it was meant to stop at, and the delete's --confirm count matched.
+        var walls = new HashSet<Guid>();
+        foreach (var tok in (excludeArg ?? "").Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+        {
+            if (!Guid.TryParse(tok, out var g)) { Console.Error.WriteLine($"--exclude: '{tok}' is not a GUID."); return 2; }
+            walls.Add(g);
+        }
 
         var canonDocs = services.GetRequiredService<CanonDocumentService>();
         var universeId = await canonDocs.ResolveUniverseIdAsync(universeSlug);

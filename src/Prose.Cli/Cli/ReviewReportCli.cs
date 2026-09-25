@@ -37,17 +37,17 @@ public static class ReviewReportCli
             Console.Error.WriteLine("Usage: prose --review-report (--slug <slug> | --id <guid|prefix> | --code <CODE>) [--provider local|cloud|all]");
             return 1;
         }
+        // A typo ("locl") matched neither filter and reported every ballot under that label.
+        if (provider is not ("local" or "cloud" or "all"))
+        { Console.Error.WriteLine($"[review-report] --provider must be local, cloud or all (got '{provider}')."); return 1; }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var exporter  = services.GetRequiredService<ReviewReportExporter>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var q = db.Nodes.AsNoTracking();
-        Node? node;
-        if (!string.IsNullOrWhiteSpace(code)) node = await q.FirstOrDefaultAsync(s => s.NodeCode == code!.ToUpperInvariant());
-        else if (!string.IsNullOrWhiteSpace(slug)) node = await q.FirstOrDefaultAsync(s => s.Slug == slug);
-        else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
-        else { var p = id!.ToLowerInvariant(); node = await q.FirstOrDefaultAsync(s => s.Id.ToString().StartsWith(p)); }
+        // The shared resolver: --slug accepts a NodeCode, other universes resolve, and an
+        // ambiguous id prefix is refused instead of exporting an arbitrary node.
+        var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, code ?? slug ?? id);
         if (node == null) { Console.Error.WriteLine("[review-report] Node not found."); return 1; }
 
         // Latest batch = reviews carrying the most-recent content fingerprint.

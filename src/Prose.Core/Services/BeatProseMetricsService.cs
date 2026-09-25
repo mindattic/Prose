@@ -38,12 +38,8 @@ public class BeatProseMetricsService
     public async Task<BeatProseMetricsReport> ComputeSlugAsync(string slug, CancellationToken ct = default)
     {
         using var db = dbFactory.CreateDbContext();
-        var nodeId = await db.Nodes
-            .Where(n => n.Slug == slug)
-            .Select(n => n.Id)
-            .FirstOrDefaultAsync(ct);
-        if (nodeId == Guid.Empty)
-            throw new ArgumentException($"Node not found: {slug}");
+        var nodeId = await NodeRefResolver.ResolveAsync(db, slug) // NodeCode, GUID, other universes
+            ?? throw new ArgumentException($"Node not found: {slug}");
         return await ComputeNodeAsync(nodeId, ct);
     }
 

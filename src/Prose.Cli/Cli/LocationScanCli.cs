@@ -18,6 +18,8 @@ public static class LocationScanCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         var svc = services.GetRequiredService<LocationContradictionService>();
+        // Singleton in the Hub: reset the knob, or one --min-travel-minutes run sticks for every later scan.
+        svc.MinTravelMinutes = 5;
         for (int i = 0; i < args.Length - 1; i++)
         {
             if (args[i] == "--min-travel-minutes" && int.TryParse(args[i + 1], out var m))

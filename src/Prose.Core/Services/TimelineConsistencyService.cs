@@ -286,7 +286,9 @@ public class TimelineConsistencyService
         }
         catch (Exception ex)
         {
-            log.LogError(ex, "TimelineConsistencyService: unexpected error for node {NodeId} — returning empty findings", nodeId);
+            // Rethrow: an empty list here was reported by the CLI/MCP as "No timeline violations found".
+            log.LogError(ex, "TimelineConsistencyService: unexpected error for node {NodeId}", nodeId);
+            throw;
         }
 
         return findings;

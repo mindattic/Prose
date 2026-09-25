@@ -40,28 +40,14 @@ public static class TimelineCheckCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        Guid nodeId;
-
-        if (!string.IsNullOrEmpty(idArg))
+        // Resolve AND verify: a well-formed but unknown --id used to scan nothing and print "clean".
+        var resolved = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, idArg ?? slug);
+        if (resolved == null)
         {
-            if (!Guid.TryParse(idArg, out nodeId)
-                && !Guid.TryParseExact(idArg, "N", out nodeId))
-            {
-                Console.Error.WriteLine($"[timeline-check] Invalid node GUID: '{idArg}'");
-                return 1;
-            }
+            Console.Error.WriteLine($"[timeline-check] Node '{idArg ?? slug}' not found.");
+            return 1;
         }
-        else
-        {
-            var node = await db.Nodes.AsNoTracking()
-                .FirstOrDefaultAsync(s => s.Slug == slug);
-            if (node == null)
-            {
-                Console.Error.WriteLine($"[timeline-check] Node '{slug}' not found.");
-                return 1;
-            }
-            nodeId = node.Id;
-        }
+        var nodeId = resolved.Id;
 
         Console.WriteLine($"[timeline-check] Scanning node {nodeId:N}…");
 

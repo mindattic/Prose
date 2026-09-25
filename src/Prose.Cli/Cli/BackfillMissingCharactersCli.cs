@@ -40,7 +40,7 @@ public static class BackfillMissingCharactersCli
         if (missing.Count == 0) return 0;
 
         var sw = Stopwatch.StartNew();
-        int written = 0, skipped = 0;
+        int written = 0, skipped = 0, failed = 0;
         foreach (var id in missing)
         {
             var json = await db.Records.AsNoTracking()
@@ -57,7 +57,7 @@ public static class BackfillMissingCharactersCli
             catch (Exception ex)
             {
                 Console.Error.WriteLine($"[backfill-missing-characters] {id}: deserialize failed — {ex.Message}");
-                skipped++;
+                failed++;
                 continue;
             }
             if (src == null) { skipped++; continue; }
@@ -75,12 +75,12 @@ public static class BackfillMissingCharactersCli
             {
                 Console.Error.WriteLine($"[backfill-missing-characters] {id}: persist failed — {ex.Message}");
                 db.ChangeTracker.Clear();
-                skipped++;
+                failed++;
             }
         }
 
         sw.Stop();
-        Console.WriteLine($"[backfill-missing-characters] Wrote {written}, skipped {skipped}, in {sw.Elapsed.TotalSeconds:0.#}s.");
-        return 0;
+        Console.WriteLine($"[backfill-missing-characters] Wrote {written}, skipped {skipped}, failed {failed}, in {sw.Elapsed.TotalSeconds:0.#}s.");
+        return failed > 0 ? 1 : 0;
     }
 }

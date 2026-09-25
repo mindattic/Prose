@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Prose.Core.Data;
 using Prose.Core.Services;
 
 namespace Prose.Cli;
@@ -29,6 +31,21 @@ public static class FamilyCli
 
         async Task<Guid?> Resolve(string token) => await export.ResolveEntityIdAsync(token);
 
+        // A well-formed GUID was accepted unchecked: a typo threw an FK error, a place got a
+        // parent_of edge, and a cross-universe pair was stamped with one side's universe.
+        async Task<string?> CheckPair(Guid x, Guid y)
+        {
+            await using var db = await sp.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
+            var rows = await db.Entities.AsNoTracking().IgnoreQueryFilters()
+                .Where(e => e.Id == x || e.Id == y)
+                .Select(e => new { e.Id, e.EntityType, e.UniverseId }).ToListAsync();
+            if (x == y) return "an entity cannot be tied to itself";
+            if (rows.Count != 2) return "one or both entities do not exist";
+            if (rows.Any(r => r.EntityType != "character")) return "family ties link characters only";
+            if (rows[0].UniverseId != rows[1].UniverseId) return "the two characters are in different universes";
+            return null;
+        }
+
         switch (sub)
         {
             case "parent":
@@ -38,6 +55,7 @@ public static class FamilyCli
                 if (parent == null || child == null) { Console.Error.WriteLine("--parent and --child required"); return 2; }
                 var pid = await Resolve(parent); var cid = await Resolve(child);
                 if (pid == null || cid == null) { Console.Error.WriteLine("could not resolve one or both ids"); return 1; }
+                if (await CheckPair(pid.Value, cid.Value) is { } bad) { Console.Error.WriteLine(bad); return 1; }
                 await fam.AddParentAsync(pid.Value, cid.Value);
                 Console.WriteLine($"linked: parent {pid} -> child {cid}");
                 return 0;
@@ -48,6 +66,7 @@ public static class FamilyCli
                 if (a == null || b == null) { Console.Error.WriteLine("--a and --b required"); return 2; }
                 var ida = await Resolve(a); var idb = await Resolve(b);
                 if (ida == null || idb == null) { Console.Error.WriteLine("could not resolve one or both ids"); return 1; }
+                if (await CheckPair(ida.Value, idb.Value) is { } bad) { Console.Error.WriteLine(bad); return 1; }
                 await fam.AddSiblingAsync(ida.Value, idb.Value);
                 Console.WriteLine($"linked: siblings {ida} <-> {idb}");
                 return 0;
@@ -58,6 +77,7 @@ public static class FamilyCli
                 if (a == null || b == null) { Console.Error.WriteLine("--a and --b required"); return 2; }
                 var ida = await Resolve(a); var idb = await Resolve(b);
                 if (ida == null || idb == null) { Console.Error.WriteLine("could not resolve one or both ids"); return 1; }
+                if (await CheckPair(ida.Value, idb.Value) is { } bad) { Console.Error.WriteLine(bad); return 1; }
                 await fam.AddSpouseAsync(ida.Value, idb.Value);
                 Console.WriteLine($"linked: spouses {ida} <-> {idb}");
                 return 0;

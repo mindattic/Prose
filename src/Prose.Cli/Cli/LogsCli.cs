@@ -214,7 +214,7 @@ public static class LogsCli
                 _   => DateTime.Now.AddDays(-qty),
             };
 
-        return DateTime.TryParse(trimmed, out var abs) ? abs : null;
+        return DateTime.TryParse(trimmed, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.AssumeLocal, out var abs) ? abs : null;
     }
 
     private static string StateLabel(IssueState s) => s switch

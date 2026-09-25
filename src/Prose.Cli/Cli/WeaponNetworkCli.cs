@@ -28,7 +28,7 @@ public static class WeaponNetworkCli
                     i++;
                     break;
                 case "--as-of":
-                    if (DateTime.TryParse(args[i + 1], out var dt)) asOf = dt;
+                    asOf = CliDates.ParseAsGiven(args[i + 1], "--as-of");
                     i++;
                     break;
             }
@@ -39,6 +39,7 @@ public static class WeaponNetworkCli
         if (characterId.HasValue)
         {
             var loadout = await svc.GetCharacterLoadoutAsync(characterId.Value, asOf);
+            if (string.IsNullOrEmpty(loadout.CharacterName)) { Console.Error.WriteLine($"Character not found: {characterId}"); return 1; }
             Console.WriteLine($"Loadout: {loadout.CharacterName}");
             if (loadout.Weapons.Count == 0) { Console.WriteLine("  (no signature gear found)"); return 0; }
 

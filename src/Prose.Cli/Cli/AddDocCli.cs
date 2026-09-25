@@ -70,6 +70,7 @@ public static class AddDocCli
         };
 
         var repo = sp.GetRequiredService<WorldbuildingDocRepository>();
+        if (!AdoptExistingId(repo, doc)) return 1;
         repo.Save(doc);
 
         Console.WriteLine($"[add-doc] saved id={doc.Id} title=\"{doc.Title}\" file={doc.FileName} category={doc.Category} lines={doc.LineCount} tags=[{string.Join(", ", tags)}]");
@@ -119,6 +120,7 @@ public static class AddDocCli
                     Headings  = headings,
                     Tags      = tags,
                 };
+                if (!AdoptExistingId(repo, doc)) { failed++; continue; }
                 repo.Save(doc);
                 Console.WriteLine($"  ok    {Path.GetFileName(file)} — id={doc.Id} title=\"{doc.Title}\"");
                 ok++;
@@ -174,4 +176,24 @@ public static class AddDocCli
         while (raw.Contains("--")) raw = raw.Replace("--", "-");
         return raw.Trim('-');
     }
+
+    /// <summary>
+    /// WorldbuildingDocument.Id defaults to a fresh UUIDv7 and Save upserts by Id, so every
+    /// re-import inserted another document with the same FileName. Reuse the existing row's id
+    /// (the same contract SeedIdentity gives the other add-* commands); refuse when two already share it.
+    /// </summary>
+    private static bool AdoptExistingId(WorldbuildingDocRepository repo, WorldbuildingDocument doc)
+    {
+        var matches = repo.GetAll()
+            .Where(d => string.Equals(d.FileName, doc.FileName, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+        if (matches.Count > 1)
+        {
+            Console.Error.WriteLine($"[add-doc] {matches.Count} documents already named '{doc.FileName}' ({string.Join(", ", matches.Select(m => m.Id))}) — resolve the duplicate first.");
+            return false;
+        }
+        if (matches.Count == 1) doc.Id = matches[0].Id;
+        return true;
+    }
+
 }

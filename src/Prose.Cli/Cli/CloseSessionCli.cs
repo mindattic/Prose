@@ -29,13 +29,18 @@ public static class CloseSessionCli
         if (slug != null)
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            var node = await db.Nodes.FirstOrDefaultAsync(
-                n => n.Slug == slug || (n.NodeCode != null && n.NodeCode.ToUpper() == slug.ToUpper()));
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug); // GUID, other universes
             if (node == null) { Console.Error.WriteLine($"Node not found: {slug}"); return 1; }
             nodeId = node.Id;
         }
 
-        Guid? sid = sessionIdStr != null && Guid.TryParse(sessionIdStr, out var g) ? g : null;
+        // A mistyped --session-id used to fall back to closing the node's open session instead.
+        Guid? sid = null;
+        if (sessionIdStr != null)
+        {
+            if (!Guid.TryParse(sessionIdStr, out var g)) { Console.Error.WriteLine($"--session-id is not a GUID: {sessionIdStr}"); return 2; }
+            sid = g;
+        }
         var session = await svc.CloseSessionAsync(nodeId, sid);
 
         var duration = session.ClosedAt.HasValue

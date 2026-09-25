@@ -69,6 +69,6 @@ public static class HarvestEntitiesCli
                           $"{result.Entities.Count - created} resolved; {result.EdgesCreated} edge(s){(dryRun ? " (dry-run, nothing written)" : "")}.");
         if (!dryRun && created > 0)
             Console.WriteLine("[harvest] Next: prose --reembed  (adds the new stubs to the semantic index); promote stubs to canon via the entity queue.");
-        return 0;
+        return result.Entities.Count == 0 ? 1 : 0; // documented: exit 1 when extraction is empty
     }
 }

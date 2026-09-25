@@ -61,7 +61,7 @@ public static class UnnamedReferentsCli
             })
             .OrderByDescending(r => r.flagged).ThenByDescending(r => r.mentions).ToList();
 
-        if (json) { Console.WriteLine(JsonSerializer.Serialize(new { node_id = resolved, examined_beats = beats.Count, referents = rows }, new JsonSerializerOptions { WriteIndented = true })); return 0; }
+        if (json) { Console.WriteLine(JsonSerializer.Serialize(new { node_id = resolved, examined_beats = beats.Count, referents = rows }, new JsonSerializerOptions { WriteIndented = true })); return beats.Count == 0 ? 1 : 0; }
 
         Console.WriteLine($"[unnamed-referents] examined {beats.Count} of {clock.BeatCount} beat(s) — {rows.Count} referent(s), {rows.Count(r => r.flagged)} flagged (≥2 mentions in one beat, acts, never seen again)");
         if (beats.Count == 0) { Console.WriteLine("  COULD NOT LOOK — no beats."); return 1; }

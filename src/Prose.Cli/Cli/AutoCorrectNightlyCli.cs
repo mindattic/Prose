@@ -74,7 +74,8 @@ public static class AutoCorrectNightlyCli
         if (!dryRun && (report.EntitiesMerged + report.ConsistencyFixesApplied + report.ContinuityResolutions) > 0)
             Console.WriteLine($"\n  To undo this run: prose --auto-correct-undo --run-id {report.RunId}");
 
-        return 0;
+        // A failed stage is only a note ("archive failed: …"); the scheduled task must see it.
+        return report.Notes.Any(n => n.Contains(" failed: ", StringComparison.Ordinal)) ? 1 : 0;
     }
 
     private static string? Flag(string[] args, string name)

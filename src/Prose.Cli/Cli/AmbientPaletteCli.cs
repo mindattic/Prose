@@ -24,7 +24,7 @@ public static class AmbientPaletteCli
                     i++;
                     break;
                 case "--as-of":
-                    if (DateTime.TryParse(args[i + 1], out var dt)) asOf = dt;
+                    asOf = CliDates.ParseAsGiven(args[i + 1], "--as-of");
                     i++;
                     break;
             }

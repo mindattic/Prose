@@ -29,14 +29,11 @@ public static class BackfillCoverageCli
         var dbFactory = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();
 
         var slug = GetArg(args, "--slug");
-        if (slug == null) { Console.Error.WriteLine("Missing --slug <book-or-chapter-slug>"); return; }
+        if (slug == null) { Console.Error.WriteLine("Missing --slug <book-or-chapter-slug>"); Environment.ExitCode = 2; return; }
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var root = await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slug)
-            .Select(s => new { s.Id, s.Title, s.Slug, s.UniverseId })
-            .FirstOrDefaultAsync();
-        if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return; }
+        var root = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug); // NodeCode, GUID, other universes
+        if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); Environment.ExitCode = 1; return; }
 
         // A book fans out into its live chapters; a lone chapter backfills itself.
         // Descend to LEAF nodes (not just direct children) — a split-collection book
@@ -61,7 +58,7 @@ public static class BackfillCoverageCli
         var children = leafIds.Where(byId.ContainsKey).Select(id => byId[id]).ToList();
         var chapters = children.Count > 0
             ? children
-            : [root];
+            : [new { root.Id, root.Title, root.Slug, root.UniverseId }];
 
         Console.WriteLine($"\n=== Backfilling coverage: {root.Title} ({root.Slug}) ===");
         var totalBeatsLogged = 0;

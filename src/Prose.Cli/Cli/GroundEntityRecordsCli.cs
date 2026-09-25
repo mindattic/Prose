@@ -35,7 +35,9 @@ public static class GroundEntityRecordsCli
         {
             var resolved = await NodeRefResolver.ResolveAsync(db, slug);
             if (resolved == null) { Console.Error.WriteLine($"[ground-entity-records] {NodeRefResolver.NotFoundMessage(slug)}"); return 1; }
-            root = resolved.Value;
+            // Stop at the BOOK: walking to the top reached the Series and audited every book in it.
+            root = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, resolved.Value) ?? resolved.Value;
+            if (root == resolved.Value)
             for (var depth = 0; depth < 10; depth++)
             {
                 var parent = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == root).Select(n => n.ParentNodeId).FirstOrDefaultAsync();

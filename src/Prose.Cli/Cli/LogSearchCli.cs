@@ -22,7 +22,7 @@ public static class LogSearchCli
         {
             switch (args[i])
             {
-                case "--since":    if (i + 1 < args.Length && DateTime.TryParse(args[++i], out var s)) since = s; break;
+                case "--since":    if (i + 1 < args.Length) since = CliDates.ParseAsGiven(args[++i], "--since"); break;
                 case "--severity": if (i + 1 < args.Length) severity = args[++i]; break;
                 case "--text":     if (i + 1 < args.Length) text = args[++i]; break;
                 case "--take":     if (i + 1 < args.Length && int.TryParse(args[++i], out var t)) take = t; break;

@@ -42,10 +42,7 @@ public static class BackfillEntityDocsCli
         string nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var node = await db.Nodes.AsNoTracking()
-                .Where(n => n.Slug == slug)
-                .Select(n => new { n.Id, n.Title })
-                .FirstOrDefaultAsync();
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug); // NodeCode, GUID, other universes
             if (node == null)
             {
                 Console.Error.WriteLine($"[backfill-entity-docs] node not found: {slug}");

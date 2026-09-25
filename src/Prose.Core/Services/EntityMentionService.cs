@@ -76,10 +76,12 @@ public class EntityMentionService(IDbContextFactory<ProseDbContext> dbFactory)
             if (byId != null) return (byId.Id, byId.Name);
         }
 
+        // Slugs are unique per (universe, type) only: a character and a place can both be
+        // "raven". Two matches → no answer, not whichever row SQL returned first.
         var bySlug = await db.Entities.AsNoTracking()
             .Where(e => e.Slug == idOrSlug)
             .Select(e => new { e.Id, e.Name })
-            .FirstOrDefaultAsync(ct);
-        return bySlug == null ? null : (bySlug.Id, bySlug.Name);
+            .Take(2).ToListAsync(ct);
+        return bySlug.Count == 1 ? (bySlug[0].Id, bySlug[0].Name) : null;
     }
 }

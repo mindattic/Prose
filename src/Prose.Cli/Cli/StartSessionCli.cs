@@ -27,8 +27,7 @@ public static class StartSessionCli
         var svc       = services.GetRequiredService<EditSessionService>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var node = await db.Nodes.FirstOrDefaultAsync(
-            n => n.Slug == slug || (n.NodeCode != null && n.NodeCode.ToUpper() == slug.ToUpper()));
+        var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug); // GUID, other universes; no Slug-vs-NodeCode OR tie
         if (node == null) { Console.Error.WriteLine($"Node not found: {slug}"); return 1; }
 
         var session = await svc.StartSessionAsync(node.Id, label, type);

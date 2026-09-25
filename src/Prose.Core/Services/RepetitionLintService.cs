@@ -101,8 +101,8 @@ public class RepetitionLintService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(
-            n => n.Slug == slugOrCode || (n.NodeCode != null && n.NodeCode.ToUpper() == slugOrCode.ToUpper()), ct)
+        // The shared resolver: GUIDs, other universes, and no Slug-vs-NodeCode OR tie.
+        var node = await NodeRefResolver.ResolveNodeAsync(db, slugOrCode)
             ?? throw new InvalidOperationException($"Node not found: {slugOrCode}");
         var nodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
         var fp = $"node:{node.Slug}";

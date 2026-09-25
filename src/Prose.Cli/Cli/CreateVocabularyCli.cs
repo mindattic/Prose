@@ -54,8 +54,15 @@ public static class CreateVocabularyCli
 
         var repo = services.GetRequiredService<VocabularyRepository>();
 
-        var existing = repo.GetAll().FirstOrDefault(v =>
-            string.Equals(v.Term, term, StringComparison.OrdinalIgnoreCase));
+        // Two rows already sharing the term: refuse rather than update whichever comes first.
+        var matches = repo.GetAll().Where(v =>
+            string.Equals(v.Term, term, StringComparison.OrdinalIgnoreCase)).ToList();
+        if (matches.Count > 1)
+        {
+            Console.Error.WriteLine($"[create-vocabulary] {matches.Count} entries already have the term \"{term}\" ({string.Join(", ", matches.Select(m => m.Id))}) — resolve the duplicate first.");
+            return Task.FromResult(1);
+        }
+        var existing = matches.FirstOrDefault();
         var isNew = existing is null;
         var v2 = existing ?? new VocabularyData { Term = term };
 
@@ -81,8 +88,9 @@ public static class CreateVocabularyCli
         repo.Save(v2);
 
         // Read back rather than trusting the write.
-        var after = repo.GetAll().FirstOrDefault(x =>
-            string.Equals(x.Term, term, StringComparison.OrdinalIgnoreCase));
+        // By id: re-searching by term could "verify" a different row.
+        var savedId = Guid.Parse(v2.Id);
+        var after = repo.GetAll().FirstOrDefault(x => Guid.TryParse(x.Id, out var g) && g == savedId);
         if (after is null)
         {
             Console.Error.WriteLine($"[create-vocabulary] Save reported success but \"{term}\" could not be read back. Nothing was written.");

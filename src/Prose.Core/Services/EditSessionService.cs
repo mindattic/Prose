@@ -66,6 +66,8 @@ public class EditSessionService
         if (session == null)
             throw new InvalidOperationException("No open session found.");
 
+        // Closing an already-closed session (by id) used to overwrite its historical ClosedAt/duration.
+        if (session.ClosedAt != null) return session;
         session.ClosedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
         return session;

@@ -134,7 +134,7 @@ public static class ImportMarkdownCli
         }
 
         Console.WriteLine($"[import-md] Done. Updated={updated} Unchanged={skipped} NotFound={notFound}");
-        return notFound > 0 && updated == 0 ? 1 : 0;
+        return notFound > 0 ? 1 : 0; // a partial import (some markers NOT FOUND) is not a success
     }
 
     /// <summary>

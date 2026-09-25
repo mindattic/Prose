@@ -23,7 +23,7 @@ public static class CommandLogCli
         {
             switch (args[i])
             {
-                case "--since":   if (i + 1 < args.Length && DateTime.TryParse(args[++i], out var s)) since = s.ToUniversalTime(); break;
+                case "--since":   if (i + 1 < args.Length) since = CliDates.ParseInstant(args[++i], "--since"); break;
                 case "--handler": if (i + 1 < args.Length) handler = args[++i]; break;
                 case "--take":    if (i + 1 < args.Length && int.TryParse(args[++i], out var t)) take = t; break;
             }

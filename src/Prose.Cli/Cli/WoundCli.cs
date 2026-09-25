@@ -56,7 +56,7 @@ public static class WoundCli
         var characterId = await ResolveCharacterIdAsync(character, services);
         if (characterId == null) { Console.Error.WriteLine($"[wound list] Character '{character}' not found."); return 1; }
 
-        DateTime? atDate = asOf != null && DateTime.TryParse(asOf, out var d) ? d : null;
+        DateTime? atDate = asOf != null ? CliDates.ParseAsGiven(asOf, "--as-of") : null;
 
         var ledger = services.GetRequiredService<WoundLedgerService>();
         var wounds = await ledger.GetActiveAsync(characterId.Value, atDate);
@@ -94,7 +94,7 @@ public static class WoundCli
 
         Guid? beatId = null;
         if (!string.IsNullOrWhiteSpace(beatIdStr) && Guid.TryParse(beatIdStr, out var bg)) beatId = bg;
-        DateTime? inWorldDt = inWorldDate != null && DateTime.TryParse(inWorldDate, out var dt) ? dt : null;
+        DateTime? inWorldDt = inWorldDate != null ? CliDates.ParseAsGiven(inWorldDate, "--in-world-date") : null;
 
         var ledger = services.GetRequiredService<WoundLedgerService>();
         var id = await ledger.AddAsync(characterId.Value, location ?? "unspecified", description,

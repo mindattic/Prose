@@ -79,7 +79,7 @@ public static class WorkerModeCli
         Console.WriteLine($"[worker] coordinator={queueUrl}");
         Console.WriteLine($"[worker] llm={localUrl} model={localModel}");
 
-        int totalDone = 0;
+        int totalDone = 0, failures = 0;
         do
         {
             // 1. Claim a batch.
@@ -129,8 +129,12 @@ public static class WorkerModeCli
                 var submitBody = JsonSerializer.Serialize(result, Json);
                 var submitResp = await http.PostAsync($"{queueUrl}/submit",
                     new StringContent(submitBody, Encoding.UTF8, "application/json"));
+                if (result.Failed) failures++;
                 if (!submitResp.IsSuccessStatusCode)
+                {
+                    failures++; // the finished result was dropped
                     Console.Error.WriteLine($"[worker] submit failed for {item.QueueId}: {submitResp.StatusCode}");
+                }
                 else
                     Console.WriteLine($"[worker] submitted {item.TargetName}");
 
@@ -139,8 +143,8 @@ public static class WorkerModeCli
         }
         while (loop);
 
-        Console.WriteLine($"[worker] total processed: {totalDone}");
-        return 0;
+        Console.WriteLine($"[worker] total processed: {totalDone}, failures: {failures}");
+        return failures > 0 ? 1 : 0;
     }
 
     /// <summary>

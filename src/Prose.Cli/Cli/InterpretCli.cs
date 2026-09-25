@@ -76,8 +76,10 @@ public static class InterpretCli
         Console.WriteLine($"  edges written    : {result.EdgesWritten}");
         Console.WriteLine($"  ledger events    : {result.LedgerEvents}");
         if (dryRun)
+        {
             Console.WriteLine();
             Console.WriteLine("  (dry-run — re-run with --commit to apply)");
+        }
         return 0;
     }
 

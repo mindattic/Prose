@@ -31,6 +31,7 @@ public static class AutoRunCli
     {
         public int Written        { get; set; }
         public int Skipped        { get; set; }
+        public int Failed         { get; set; }
         public int BlockersRemaining { get; set; }
         public int ModeratesRemaining { get; set; }
     }
@@ -46,7 +47,11 @@ public static class AutoRunCli
         {
             switch (args[i])
             {
-                case "--obligation-gate": if (i + 1 < args.Length) obligationGate = args[++i].ToLowerInvariant(); break;
+                case "--obligation-gate":
+                    if (i + 1 < args.Length) obligationGate = args[++i].ToLowerInvariant();
+                    // A typo ("hrad") used to act as "soft": overdue obligations printed and the run went on.
+                    if (obligationGate is not ("hard" or "soft" or "off")) { Console.Error.WriteLine($"--obligation-gate must be hard, soft or off (got '{obligationGate}')."); return 1; }
+                    break;
                 case "--slug":   if (i + 1 < args.Length) slug   = args[++i]; break;
                 case "--id":     if (i + 1 < args.Length) id     = args[++i]; break;
                 case "--effort": if (i + 1 < args.Length) effort = args[++i]; break;
@@ -206,7 +211,9 @@ public static class AutoRunCli
         }
 
         PrintSessionReport(nodeTitle, nodeSlug, stats, started, costScope.Id, ledger);
-        return 0;
+        // Beats that failed or came back empty used to leave the run at exit 0.
+        if (stats.Failed > 0) Console.Error.WriteLine($"[auto-run] {stats.Failed} beat(s) failed or came back empty.");
+        return stats.Failed > 0 ? 4 : 0;
     }
 
     private static async Task ExpandAndRepairAsync(
@@ -219,9 +226,10 @@ public static class AutoRunCli
         int forks, bool allowVotes, bool noRepair,
         int chapterIndex, int totalChapters)
     {
-        var (written, skipped) = await ExpandBeatNodesAsync(chapterId, nodeId, bookBible, router, workbench, force, dryRun, targetWords);
+        var (written, skipped, failed) = await ExpandBeatNodesAsync(chapterId, nodeId, bookBible, router, workbench, force, dryRun, targetWords);
         stats.Written  += written;
         stats.Skipped  += skipped;
+        stats.Failed   += failed;
 
         if (dryRun || written == 0) return;
 
@@ -262,7 +270,7 @@ public static class AutoRunCli
         }
     }
 
-    private static async Task<(int Written, int Skipped)> ExpandBeatNodesAsync(
+    private static async Task<(int Written, int Skipped, int Failed)> ExpandBeatNodesAsync(
         Guid nodeId,
         Guid bookNodeId,
         string bookBible,
@@ -274,7 +282,7 @@ public static class AutoRunCli
     {
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId);
         var sceneSoFar = "";
-        int expanded = 0, skipped = 0;
+        int expanded = 0, skipped = 0, failed = 0;
         int beatIndex = 0;
 
         foreach (var ob in ordered)
@@ -317,6 +325,7 @@ public static class AutoRunCli
                 if (string.IsNullOrWhiteSpace(prose))
                 {
                     Console.WriteLine("empty — skipped.");
+                    failed++;
                     beatIndex++;
                     continue;
                 }
@@ -329,13 +338,14 @@ public static class AutoRunCli
             catch (Exception ex)
             {
                 Console.WriteLine($"failed: {ex.Message}");
+                failed++;
             }
             beatIndex++;
         }
 
         if (!dryRun)
             Console.WriteLine($"[auto-run]   {expanded}/{ordered.Count} beats expanded.");
-        return (expanded, skipped);
+        return (expanded, skipped, failed);
     }
 
     private static void PrintSessionReport(

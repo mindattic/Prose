@@ -49,13 +49,8 @@ public static class SetPreviousNodeCli
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var childQ = db.Nodes.AsQueryable();
-        var child = !string.IsNullOrWhiteSpace(slug)
-            ? await childQ.FirstOrDefaultAsync(s => s.Slug == slug)
-            : Guid.TryParse(id, out var cg)
-                ? await childQ.FirstOrDefaultAsync(s => s.Id == cg)
-                : await childQ.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync()
-                    is { Count: 1 } cm ? cm[0] : null;
+        // The shared resolver: NodeCode, other universes (a sequel may live in another one).
+        var child = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug ?? id);
 
         if (child == null) { Console.Error.WriteLine("[set-previous-node] Node not found."); return 1; }
 
@@ -66,13 +61,7 @@ public static class SetPreviousNodeCli
             return 0;
         }
 
-        var prevQ = db.Nodes.AsQueryable();
-        var previous = !string.IsNullOrWhiteSpace(previousSlug)
-            ? await prevQ.FirstOrDefaultAsync(s => s.Slug == previousSlug)
-            : Guid.TryParse(previousId, out var pg)
-                ? await prevQ.FirstOrDefaultAsync(s => s.Id == pg)
-                : await prevQ.Where(s => s.Id.ToString().StartsWith(previousId!.ToLower())).Take(2).ToListAsync()
-                    is { Count: 1 } pm ? pm[0] : null;
+        var previous = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, previousSlug ?? previousId);
 
         if (previous == null) { Console.Error.WriteLine("[set-previous-node] Previous node not found."); return 1; }
 
