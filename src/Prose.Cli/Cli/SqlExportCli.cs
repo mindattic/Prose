@@ -431,11 +431,11 @@ public static class SqlExportCli
             "decimal" or "numeric" or "money" or "smallmoney"
                              => rdr.GetDecimal(i).ToString(CultureInfo.InvariantCulture),
             "uniqueidentifier" => $"'{rdr.GetGuid(i)}'",
-            "date"           => $"'{rdr.GetDateTime(i):yyyy-MM-dd}'",
+            "date"           => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) + "'", // invariant: th-TH "yyyy" is the Buddhist year
             "time"           => $"'{((TimeSpan)rdr.GetValue(i)):c}'",
             "datetime" or "datetime2" or "smalldatetime"
-                             => $"'{rdr.GetDateTime(i):yyyy-MM-ddTHH:mm:ss.fffffff}'",
-            "datetimeoffset" => $"'{((DateTimeOffset)rdr.GetValue(i)):yyyy-MM-ddTHH:mm:ss.fffffffzzz}'",
+                             => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss.fffffff", CultureInfo.InvariantCulture) + "'",
+            "datetimeoffset" => "'" + ((DateTimeOffset)rdr.GetValue(i)).ToString("yyyy-MM-ddTHH:mm:ss.fffffffzzz", CultureInfo.InvariantCulture) + "'",
             "varbinary" or "binary" or "image"
                              => "0x" + Convert.ToHexString((byte[])rdr.GetValue(i)),
             _                => $"N'{rdr.GetValue(i)?.ToString()?.Replace("'", "''") ?? ""}'",
