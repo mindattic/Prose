@@ -32,8 +32,10 @@ public static class EntityStubFactory
     {
         var id = Guid.CreateVersion7();
         var slug = UniverseGraphService.Slugify(name);
-        // Disambiguate against any stale matching slug
-        if (await db.Entities.IgnoreQueryFilters().AnyAsync(e => e.EntityType == entityType && e.Slug == slug, ct))
+        // Disambiguate against a matching slug IN THIS UNIVERSE — the unique index is per
+        // (universe, type, slug). Checking every universe suffixed a SCRY "kyle" because GLMZ has
+        // one, and slug-based lookups then never found it.
+        if (await db.Entities.IgnoreQueryFilters().AnyAsync(e => e.UniverseId == universeId && e.EntityType == entityType && e.Slug == slug, ct))
             slug = $"{slug}-{id:N}";
 
         db.Entities.Add(new Entity

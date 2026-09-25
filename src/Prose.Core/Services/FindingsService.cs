@@ -211,8 +211,18 @@ public class FindingsService
             .Select(id => id.ToString("N"))
             .ToHashSet(StringComparer.OrdinalIgnoreCase);
 
+        // The id runs to the next ':' — blast findings are filed as "beat:{id}:blast", and reading
+        // "{id}:blast" as the id matched no live beat, so every audit run dismissed every open blast
+        // finding (and Upsert never reopened them). A path that does not parse is left alone.
+        static string? BeatKey(string filePath)
+        {
+            var rest = filePath[BeatFilePathPrefix.Length..];
+            var colon = rest.IndexOf(':');
+            var id = (colon >= 0 ? rest[..colon] : rest).Trim();
+            return Guid.TryParse(id, out var g) ? g.ToString("N") : null;
+        }
         var stale = open
-            .Where(f => !liveKeys.Contains(f.FilePath[BeatFilePathPrefix.Length..].Trim()))
+            .Where(f => BeatKey(f.FilePath) is { } key && !liveKeys.Contains(key))
             .ToList();
 
         foreach (var f in stale)
@@ -521,8 +531,17 @@ public class FindingsService
     public int DeleteBySummaryPrefix(string filePathPrefix, string summaryPrefix)
     {
         using var db = dbFactory.CreateDbContext();
+        // A complete path ("node:bcoda") matches itself and its sub-paths ("/…", "#…", ":…") only:
+        // a bare StartsWith also deleted "node:bcoda5"'s open findings when BCODA was re-linted.
+        // A prefix that already ends in a separator (or is empty) keeps plain prefix semantics.
+        var delimited = filePathPrefix.Length > 0 && char.IsLetterOrDigit(filePathPrefix[^1]);
+        var slash = filePathPrefix + "/";
+        var hash = filePathPrefix + "#";
+        var colon = filePathPrefix + ":";
         var rows = db.Findings
-            .Where(f => f.FilePath.StartsWith(filePathPrefix)
+            .Where(f => (delimited
+                        ? f.FilePath == filePathPrefix || f.FilePath.StartsWith(slash) || f.FilePath.StartsWith(hash) || f.FilePath.StartsWith(colon)
+                        : f.FilePath.StartsWith(filePathPrefix))
                      && f.Summary.StartsWith(summaryPrefix)
                      && (f.Status == "New" || f.Status == "Triaged"))
             .ToList();

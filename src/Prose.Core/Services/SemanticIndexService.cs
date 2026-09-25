@@ -20,6 +20,11 @@ public class SemanticIndexService
     private int docCount;
     private bool built;
     private int builtEpoch = -1;
+    // One index, rebuilt per universe: keyed on the universe too (a per-call flow universe in the
+    // Hub does not bump the epoch), and every rebuild/search holds the gate, since concurrent
+    // calls rebuilt these dictionaries under each other and could throw or cross universes.
+    private Guid builtUniverse;
+    private readonly object gate = new();
 
     private static readonly HashSet<string> StopWords = new(StringComparer.OrdinalIgnoreCase)
     {
@@ -47,6 +52,11 @@ public class SemanticIndexService
     /// Build or rebuild the full TF-IDF index from all graph nodes.
     /// </summary>
     public void RebuildIndex()
+    {
+        lock (gate) RebuildIndexCore();
+    }
+
+    private void RebuildIndexCore()
     {
         _vectors.Clear();
         _idf.Clear();
@@ -121,6 +131,7 @@ public class SemanticIndexService
 
         built = true;
         builtEpoch = UniverseScope.Epoch;
+        builtUniverse = UniverseScope.EffectiveId;
     }
 
     /// <summary>
@@ -128,7 +139,12 @@ public class SemanticIndexService
     /// </summary>
     public void UpdateNode(string nodeId)
     {
-        if (!built || builtEpoch != UniverseScope.Epoch) { RebuildIndex(); return; }
+        lock (gate) UpdateNodeCore(nodeId);
+    }
+
+    private void UpdateNodeCore(string nodeId)
+    {
+        if (!built || builtEpoch != UniverseScope.Epoch || builtUniverse != UniverseScope.EffectiveId) { RebuildIndexCore(); return; }
 
         var node = graph.GetNode(nodeId);
         if (node == null) { _vectors.Remove(nodeId); return; }
@@ -165,7 +181,12 @@ public class SemanticIndexService
     /// </summary>
     public List<(string nodeId, double score)> Search(string query, int topK = 10)
     {
-        if (!built || builtEpoch != UniverseScope.Epoch) RebuildIndex();
+        lock (gate) return SearchCore(query, topK);
+    }
+
+    private List<(string nodeId, double score)> SearchCore(string query, int topK)
+    {
+        if (!built || builtEpoch != UniverseScope.Epoch || builtUniverse != UniverseScope.EffectiveId) RebuildIndexCore();
 
         var queryTokens = Tokenize(query);
         if (queryTokens.Count == 0) return [];

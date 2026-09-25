@@ -364,6 +364,9 @@ public class MojibakeRepairService
         var current = s;
         for (; passes < maxPasses; )
         {
+            // Only text the detector calls mojibake is reversed: TryReverseMojibake has no gate of
+            // its own, so a real "2×—3" (valid UTF-8 bytes D7 97 when re-encoded) became "2ח3".
+            if (!ContainsMojibake(current)) break;
             var next = TryReverseMojibake(current) ?? RepairMixed(current);
             if (next == null || next == current) break;
             current = next;

@@ -156,7 +156,7 @@ public class FamilyTieService
     {
         if (parentId == childId) throw new ArgumentException("A character cannot be their own parent.");
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var exists = await db.Edges
+        var exists = await db.Edges.IgnoreQueryFilters()
             .AnyAsync(e => e.SourceId == parentId
                         && e.TargetId == childId
                         && e.RelationType == ParentOf
@@ -165,6 +165,7 @@ public class FamilyTieService
 
         db.Edges.Add(new Edge
         {
+            UniverseId   = await UniverseOfAsync(db, parentId, ct),
             SourceId     = parentId,
             TargetId     = childId,
             RelationType = ParentOf,
@@ -196,20 +197,27 @@ public class FamilyTieService
         await AddSymmetricEdgeAsync(aId, bId, SpouseOf, source, ct);
     }
 
+    /// <summary>The characters' own universe. Left unset, an edge took the process default, so a
+    /// SCRY family tie written while the Hub defaulted to GLMZ was invisible under SCRY (and the
+    /// universe-filtered "exists" check let a retry add it again).</summary>
+    private static async Task<Guid> UniverseOfAsync(ProseDbContext db, Guid entityId, CancellationToken ct) =>
+        await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == entityId).Select(e => e.UniverseId).FirstOrDefaultAsync(ct);
+
     private async Task AddSymmetricEdgeAsync(Guid aId, Guid bId, string relation,
         string source, CancellationToken ct)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var existingAB = await db.Edges.AnyAsync(e =>
+        var universe = await UniverseOfAsync(db, aId, ct);
+        var existingAB = await db.Edges.IgnoreQueryFilters().AnyAsync(e =>
             e.SourceId == aId && e.TargetId == bId
             && e.RelationType == relation && e.StoryValidUntil == null, ct);
-        var existingBA = await db.Edges.AnyAsync(e =>
+        var existingBA = await db.Edges.IgnoreQueryFilters().AnyAsync(e =>
             e.SourceId == bId && e.TargetId == aId
             && e.RelationType == relation && e.StoryValidUntil == null, ct);
         if (!existingAB)
-            db.Edges.Add(new Edge { SourceId = aId, TargetId = bId, RelationType = relation, Source = source, Sentiment = "neutral" });
+            db.Edges.Add(new Edge { UniverseId = universe, SourceId = aId, TargetId = bId, RelationType = relation, Source = source, Sentiment = "neutral" });
         if (!existingBA)
-            db.Edges.Add(new Edge { SourceId = bId, TargetId = aId, RelationType = relation, Source = source, Sentiment = "neutral" });
+            db.Edges.Add(new Edge { UniverseId = universe, SourceId = bId, TargetId = aId, RelationType = relation, Source = source, Sentiment = "neutral" });
         if (!existingAB || !existingBA)
         {
             await db.SaveChangesAsync(ct);

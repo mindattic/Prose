@@ -80,10 +80,15 @@ public class SlugRepairService(
         return sb.ToString();
     }
 
+    // Folder renames planned during a repair, run only once the database save has succeeded.
+    private static readonly AsyncLocal<List<(string From, string To, List<string> Effects)>?> PendingMoves = new();
+
     public async Task<SlugRepairReport> RepairAsync(bool apply, string family = "all", CancellationToken ct = default)
     {
         var changes = new List<SlugChange>();
         var warnings = new List<string>();
+        var moves = new List<(string From, string To, List<string> Effects)>();
+        PendingMoves.Value = moves;
         var all = family is "all" or "";
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -96,6 +101,24 @@ public class SlugRepairService(
 
         if (apply && changes.Count > 0)
             await db.SaveChangesAsync(ct);
+
+        // The audio folders move only AFTER the save: renamed first, a save that then threw (a
+        // unique clash, the write gate) left every AudioPath pointing at a folder that was gone.
+        PendingMoves.Value = null;
+        if (apply)
+            foreach (var (from, to, effects) in moves)
+            {
+                try
+                {
+                    Directory.Move(from, to);
+                    effects.Add($"dir {from} → {Path.GetFileName(to)}/");
+                }
+                catch (Exception ex)
+                {
+                    warnings.Add($"dir rename failed for {from}: {ex.Message}");
+                    log.LogWarning(ex, "Slug repair: directory rename failed for {Dir}", from);
+                }
+            }
 
         log.LogInformation("Slug repair ({Mode}): {Count} change(s), {Warn} warning(s)",
             apply ? "APPLY" : "dry-run", changes.Count, warnings.Count);
@@ -449,7 +472,11 @@ public class SlugRepairService(
             warnings.Add($"dir rename skipped — target already exists: {newDir}");
             return;
         }
-        if (apply)
+        if (apply && PendingMoves.Value is { } pending)
+        {
+            pending.Add((oldDir, newDir, effects));
+        }
+        else if (apply)
         {
             try
             {

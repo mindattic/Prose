@@ -297,7 +297,9 @@ public class ContextTools
         // restart (the cache is a file, not process memory). EnsureFresh() rebuilds when canon
         // has moved since the snapshot. Found 2026-09-21: kyle-s-apartment-2f ranked #1 here
         // while get_place/find_entities both correctly reported it gone.
-        graph.EnsureFresh();
+        // The index is built FROM the graph: when the graph rebuilt, the index must too, or it kept
+        // ranking the retired entity the comment above describes.
+        if (graph.EnsureFresh()) semanticIndex.RebuildIndex();
         var hits = semanticIndex.Search(query, topK);
         var enriched = hits.Select(h =>
         {

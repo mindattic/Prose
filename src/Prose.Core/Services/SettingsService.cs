@@ -938,9 +938,10 @@ public class SettingsService : IDisposable
             saveTimer?.Dispose();
             saveTimer = new Timer(_ =>
             {
+                // Anything, not just I/O: this runs on a timer thread, where an uncaught exception (a
+                // collection modified mid-serialize by a concurrent setter) ends the whole process.
                 try { Flush(); }
-                catch (IOException) { }
-                catch (UnauthorizedAccessException) { }
+                catch (Exception ex) { Serilog.Log.Warning(ex, "SettingsService: deferred save failed; the next save retries"); }
             }, null, 500, Timeout.Infinite);
         }
     }

@@ -121,6 +121,10 @@ public class ProseDbContext : DbContext
 
             var expected = Beat.ComputeHash(entry.Entity.Text);
             if (entry.Entity.TextHash != expected) entry.Entity.TextHash = expected;
+            // Sent even when unchanged: the hash trims, so a leading/trailing-whitespace edit keeps
+            // it equal, EF skipped the column, and the drift-guard trigger (Text changed, TextHash
+            // not) nulled a correct hash.
+            if (entry.State == EntityState.Modified) entry.Property(nameof(Beat.TextHash)).IsModified = true;
         }
     }
 

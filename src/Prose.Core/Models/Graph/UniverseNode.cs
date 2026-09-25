@@ -22,12 +22,21 @@ public record UniverseNode
     /// <summary>Get the value of a property at a specific story point, falling back to current value.</summary>
     public string GetPropertyAt(string key, string storyPoint)
     {
-        // Find the most recent change to this property that is <= storyPoint
-        var change = History
-            .Where(h => h.Property == key && string.Compare(h.StoryPoint, storyPoint, StringComparison.Ordinal) <= 0)
-            .OrderByDescending(h => h.StoryPoint)
+        // Story points compare by number ("chapter:9" before "chapter:12"), not as text, which put
+        // chapter 12 before chapter 9.
+        static int Cmp(string a, string b) => Prose.Core.Services.UniverseGraphService.CompareStoryPoints(a, b);
+        var changes = History.Where(h => h.Property == key).ToList();
+
+        // The most recent change at or before the point.
+        var change = changes.Where(h => Cmp(h.StoryPoint, storyPoint) <= 0)
+            .OrderByDescending(h => h.StoryPoint, Comparer<string>.Create(Cmp))
             .FirstOrDefault();
-        return change?.NewValue ?? Properties.GetValueOrDefault(key, "");
+        if (change != null) return change.NewValue;
+
+        // None yet: the value BEFORE the earliest later change, not the current value, which
+        // showed a character "dead" at chapter 5 for a death at chapter 12.
+        var firstLater = changes.OrderBy(h => h.StoryPoint, Comparer<string>.Create(Cmp)).FirstOrDefault();
+        return firstLater != null ? firstLater.OldValue : Properties.GetValueOrDefault(key, "");
     }
 }
 

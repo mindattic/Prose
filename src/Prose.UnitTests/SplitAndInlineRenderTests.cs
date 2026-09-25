@@ -50,6 +50,29 @@ public class SplitAndInlineRenderTests
     }
 
     [Test]
+    public void Curly_quoted_evidence_and_contractions_are_extracted_for_checking()
+    {
+        var spans = Prose.Core.Services.Audit.QuoteGrounding.ExtractQuotedSpans(
+            "He says “the carousel never stopped turning” and then ‘I can’t go back there’.");
+        Assert.That(spans, Has.Count.EqualTo(2));
+        Assert.That(spans.Any(s => s.Contains("carousel")) && spans.Any(s => s.Contains("go back")), Is.True);
+    }
+
+    [Test]
+    public void A_property_as_of_a_story_point_orders_chapters_numerically()
+    {
+        var node = new Prose.Core.Models.Graph.UniverseNode
+        {
+            Id = "sable", Name = "Sable",
+            Properties = { ["status"] = "dead" },
+            History = [new Prose.Core.Models.Graph.PropertyChange { Property = "status", OldValue = "alive", NewValue = "dead", StoryPoint = "chapter:12" }],
+        };
+        Assert.That(node.GetPropertyAt("status", "chapter:5"), Is.EqualTo("alive"), "before the change: its old value, not the current one");
+        Assert.That(node.GetPropertyAt("status", "chapter:9"), Is.EqualTo("alive"), "chapter 12 is after chapter 9");
+        Assert.That(node.GetPropertyAt("status", "chapter:12"), Is.EqualTo("dead"));
+    }
+
+    [Test]
     public void Raw_html_in_a_chapter_body_becomes_well_formed_xhtml()
     {
         var xhtml = BookExportService.ToWellFormedXhtml("<p>one<br>two&nbsp;three</p><hr/><img src=\"a/b.png\" alt=\"x\">");

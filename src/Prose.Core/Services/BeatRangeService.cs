@@ -74,6 +74,12 @@ public class BeatRangeService(IDbContextFactory<ProseDbContext> dbFactory)
             untilOrdinal = ordered.FindIndex(ob => ob.Beat.Id == untilBeatId);
         }
 
+        // A bound beat missing from the reading order (disabled/unlinked) is -1 from FindIndex, which
+        // read as a real position: every beat "after" a missing from-bound, none "before" a missing
+        // until-bound. The answer is unknown, not definite.
+        if (fromOrdinal < 0 || untilOrdinal < 0)
+            return new BeatRangeResult(null, "a ValidFrom/ValidUntil bound beat is not in the book's reading order");
+
         var inRange = (fromOrdinal == null || beatOrdinal >= fromOrdinal)
                     && (untilOrdinal == null || beatOrdinal < untilOrdinal);
         return new BeatRangeResult(inRange);

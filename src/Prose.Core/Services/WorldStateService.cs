@@ -95,7 +95,17 @@ public class WorldStateService
         graph.EnsureLoaded();
         var idStr = graph.ResolveId(entityIdOrName) ?? entityIdOrName;
         if (!Guid.TryParse(idStr, out var id) && !Guid.TryParseExact(idStr, "N", out id))
-            return null;
+        {
+            // ResolveId returns a SLUG for a name or alias, which never parses as a Guid, so every
+            // by-name call answered null. Look the entity up by that slug or the name (unique only).
+            using var ldb = DbCtxFactory?.CreateDbContext();
+            if (ldb == null) return null;
+            var hits = ldb.Entities.AsNoTracking()
+                .Where(e => e.Slug == idStr || e.Name == entityIdOrName)
+                .Select(e => e.Id).Distinct().Take(2).ToList();
+            if (hits.Count != 1) return null;
+            id = hits[0];
+        }
 
         // Reach the Prose context. Cache holds dossiers, not raw history;
         // we resolve a fresh context here for the temporal query.
@@ -137,7 +147,8 @@ public class WorldStateService
         var node = graph.GetNode(id);
         if (node == null) return null;
 
-        var cacheKey = $"{id}|{asOf.ToStoryPoint()}|{asOf.ChapterId}|{asOf.BeatIndex}";
+        // The universe is part of the key: two universes sharing a slug served each other's dossiers.
+        var cacheKey = $"{id}|{UniverseScope.EffectiveId:N}|{asOf.ToStoryPoint()}|{asOf.ChapterId}|{asOf.BeatIndex}";
         if (cache.TryGetValue(cacheKey, out var cached)) return cached;
 
         var storyPoint = asOf.ToStoryPoint();

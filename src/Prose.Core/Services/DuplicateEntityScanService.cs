@@ -82,7 +82,9 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var entities = await db.Entities.AsNoTracking()
+        // IgnoreQueryFilters: the universe is named explicitly; an ambient scope that differed made
+        // the scan silently find nothing.
+        var entities = await db.Entities.IgnoreQueryFilters().AsNoTracking()
             .Where(e => e.UniverseId == universeId && e.EntityType == entityType)
             .Select(e => new EntityRow(e.Id, e.Name, e.OriginNodeId, e.Description))
             .ToListAsync(ct);
@@ -111,13 +113,17 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
 
         foreach (var g in byNormalized)
         {
-            var members = g.ToList();
-            if (!SharesDisambiguationScope(members.Select(m => (Guid?)m.OriginNodeId))) continue;
-
-            groups.Add(new DuplicateEntityGroup(
-                $"exact match: \"{g.Key}\"",
-                members.Select(m => ToCandidate(m)).ToList()));
-            foreach (var m in members) alreadyGrouped.Add(m.Id);
+            // Per scope, not all-or-nothing: two universe-wide "Boris" rows plus a book-scoped one
+            // failed the scope test as a group, were skipped, and pass 2 then ignores equal names —
+            // so the two real duplicates were never reported.
+            foreach (var scope in g.GroupBy(m => m.OriginNodeId).Where(s => s.Count() > 1))
+            {
+                var members = scope.ToList();
+                groups.Add(new DuplicateEntityGroup(
+                    $"exact match: \"{g.Key}\"",
+                    members.Select(m => ToCandidate(m)).ToList()));
+                foreach (var m in members) alreadyGrouped.Add(m.Id);
+            }
         }
 
         // Pass 2: near-duplicate, sliding window over sorted normalized names.
@@ -460,9 +466,9 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        if (!await db.Entities.AsNoTracking().AnyAsync(e => e.Id == loserId, ct))
+        if (!await db.Entities.IgnoreQueryFilters().AsNoTracking().AnyAsync(e => e.Id == loserId, ct))
             throw new InvalidOperationException($"Loser entity {loserId} not found.");
-        if (!await db.Entities.AsNoTracking().AnyAsync(e => e.Id == winnerId, ct))
+        if (!await db.Entities.IgnoreQueryFilters().AsNoTracking().AnyAsync(e => e.Id == winnerId, ct))
             throw new InvalidOperationException($"Winner entity {winnerId} not found.");
 
         var fkColumns = await EntityForeignKeyCatalog.DiscoverAsync(db, ct);

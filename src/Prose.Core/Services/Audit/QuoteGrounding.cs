@@ -232,8 +232,12 @@ public static class QuoteGrounding
     /// enough to count; the logic sweep's original extraction rule.</summary>
     public static IReadOnlyList<string> ExtractQuotedSpans(string evidence, int minLength = MinQuoteLength)
     {
+        // Curly quotes are folded to straight first: evidence written with “…” or ‘…’ yielded no
+        // spans at all, and no spans reads as "nothing to check", so a fabricated quote passed.
+        // A single-quoted span may hold word-internal apostrophes ('I can't go back').
+        evidence = FoldTypography(evidence);
         var doubleQuoted = Regex.Matches(evidence, "\"([^\"]{" + minLength + ",})\"").Select(m => m.Groups[1].Value);
-        var singleQuoted = Regex.Matches(evidence, @"(?<!\w)'([^']{" + minLength + @",})'(?!\w)").Select(m => m.Groups[1].Value);
+        var singleQuoted = Regex.Matches(evidence, @"(?<!\w)'((?:[^']|(?<=\w)'(?=\w)){" + minLength + @",})'(?!\w)").Select(m => m.Groups[1].Value);
         return doubleQuoted.Concat(singleQuoted)
             .Select(Normalize)
             .Where(q => q.Length > 0)
