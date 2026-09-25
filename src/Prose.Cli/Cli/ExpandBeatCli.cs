@@ -42,6 +42,21 @@ public static class ExpandBeatCli
 {
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
+        // The --local / --model overrides are "for this run", but this command is forwarded into
+        // the long-lived Hub, whose services are singletons: left set, every later LLM call in
+        // the Hub went to the local endpoint (or the overridden model) until a restart.
+        try { return await RunCoreAsync(args, services); }
+        finally
+        {
+            services.GetService<LocalLlmService>()?.ConfigureForRun(null, null, null);
+            var router = services.GetService<LlmRouter>();
+            router?.SetRunProvider(null);
+            router?.SetRunModel(null);
+        }
+    }
+
+    private static async Task<int> RunCoreAsync(string[] args, IServiceProvider services)
+    {
         string? slug = null, id = null, beatId = null, modelOverride = null, protagonistArg = null;
         string? localUrl = null, localKey = null, localModel = null;
         bool force = args.Contains("--force");

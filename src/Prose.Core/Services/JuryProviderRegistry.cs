@@ -84,8 +84,16 @@ public sealed class JuryProviderRegistry
         {
             using var doc = JsonDocument.Parse(json);
             var list = new List<JuryProvider>();
+            // Valid JSON of the wrong shape ("{}", ["kimi"]) threw InvalidOperationException past
+            // the JsonException catch, and the registry singleton failed to construct.
+            if (doc.RootElement.ValueKind != JsonValueKind.Array)
+            {
+                log.LogWarning("ExtraJuryProvidersJson is not a JSON array — registry providers disabled until fixed.");
+                return Array.Empty<JuryProvider>();
+            }
             foreach (var el in doc.RootElement.EnumerateArray())
             {
+                if (el.ValueKind != JsonValueKind.Object) { log.LogWarning("ExtraJuryProvidersJson entry is not an object — skipped: {Entry}", el.GetRawText()); continue; }
                 var id = Str(el, "id");
                 var baseUrl = Str(el, "baseUrl");
                 var cheap = Str(el, "cheapModel");

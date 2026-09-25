@@ -95,6 +95,9 @@ public sealed class PiperTtsService : ILocalTtsEngine
             psi.ArgumentList.Add("0.35");
 
             using (var p = Process.Start(psi)!)
+            // Disposing a Process does not end it: a cancelled export left piper.exe running with
+            // the temp WAV open. Kill the tree on cancellation.
+            using (ct.Register(() => { try { p.Kill(entireProcessTree: true); } catch { } }))
             {
                 // Drain stdout+stderr before waiting or the process deadlocks on full pipes.
                 var outTask = p.StandardOutput.ReadToEndAsync(ct);
@@ -116,10 +119,12 @@ public sealed class PiperTtsService : ILocalTtsEngine
                 UseShellExecute = false,
                 CreateNoWindow = true,
             };
-            foreach (var a in new[] { "-v", "error", "-i", tmpWav, "-f", "s16le", "-acodec", "pcm_s16le", "-ar", "44100", "-ac", "1", "-" })
+            // -nostdin: ffmpeg otherwise inherits the Hub's stdin.
+            foreach (var a in new[] { "-nostdin", "-v", "error", "-i", tmpWav, "-f", "s16le", "-acodec", "pcm_s16le", "-ar", "44100", "-ac", "1", "-" })
                 psf.ArgumentList.Add(a);
 
             using var f = Process.Start(psf)!;
+            using var killF = ct.Register(() => { try { f.Kill(entireProcessTree: true); } catch { } });
             using var ms = new MemoryStream();
             var errF = f.StandardError.ReadToEndAsync(ct);
             await f.StandardOutput.BaseStream.CopyToAsync(ms, ct);

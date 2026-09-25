@@ -43,9 +43,11 @@ public static class ProseStatsService
 
     private static readonly string[] TellingPhrases =
     [
+        // No "felt like ": "felt " already counts it, and listing both scored "She felt like
+        // crying" as two telling words.
         "felt ", "noticed ", "realized ", "realised ", "thought about ", "knew that ",
         "wondered if ", "saw that ", "understood that ", "decided that ", "seemed to ",
-        "appeared to ", "looked like ", "sounded like ", "felt like ", "knew it ",
+        "appeared to ", "looked like ", "sounded like ", "knew it ",
         "began to ", "started to "
     ];
 

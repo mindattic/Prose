@@ -74,9 +74,9 @@ public partial class ExportService
         md = Regex.Replace(md, @"<[^>]+>", "");
 
         // Decode HTML entities
-        md = md.Replace("&amp;", "&").Replace("&lt;", "<").Replace("&gt;", ">")
-               .Replace("&quot;", "\"").Replace("&#39;", "'").Replace("&nbsp;", " ")
-               .Replace("&#9835;", "");
+        // One decode pass: replacing "&amp;" FIRST decoded escaped text a second time
+        // ("&amp;lt;b&amp;gt;" came out as "<b>").
+        md = System.Net.WebUtility.HtmlDecode(md.Replace("&#9835;", "")).Replace('\u00A0', ' ');
 
         // Clean up excessive newlines
         md = Regex.Replace(md, @"\n{3,}", "\n\n").Trim();
@@ -89,7 +89,7 @@ public partial class ExportService
     {
         var safeTitle = System.Web.HttpUtility.HtmlEncode(title);
         var charLine = characters?.Count > 0
-            ? $"<p style=\"color:#888;font-size:0.9rem;margin-bottom:2rem;\">Characters: {string.Join(", ", characters)}</p>"
+            ? $"<p style=\"color:#888;font-size:0.9rem;margin-bottom:2rem;\">Characters: {string.Join(", ", characters.Select(c => System.Web.HttpUtility.HtmlEncode(c)))}</p>"
             : "";
 
         var sb = new StringBuilder();
@@ -124,8 +124,7 @@ public partial class ExportService
         var text = Regex.Replace(html, @"<br\s*/?>", "\n");
         text = Regex.Replace(text, @"</p>|</div>|</h[1-6]>", "\n");
         text = Regex.Replace(text, @"<[^>]+>", "");
-        text = text.Replace("&amp;", "&").Replace("&lt;", "<").Replace("&gt;", ">")
-                   .Replace("&quot;", "\"").Replace("&#39;", "'").Replace("&nbsp;", " ");
+        text = System.Net.WebUtility.HtmlDecode(text).Replace('\u00A0', ' '); // one pass, not a double decode
         return Regex.Replace(text, @"\n{3,}", "\n\n").Trim();
     }
 

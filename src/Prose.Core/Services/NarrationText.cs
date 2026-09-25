@@ -27,7 +27,9 @@ public static class NarrationText
     // Canon text and DB are never modified.
     // ──────────────────────────────────────────────────────────────────────────
     private static readonly Regex quantaWithNumber =
-        new(@"Φ\s*(\d[\d,\.]*)", RegexOptions.Compiled);
+        // The number must END on a digit: "[\d,.]*" swallowed sentence punctuation, so
+        // "cost Φ20." became "cost 20. QUANTA" and "Φ1,000, and" became "1,000, QUANTA and".
+        new(@"Φ\s*(\d(?:[\d,.]*\d)?)", RegexOptions.Compiled);
     private static readonly Regex quantaStandalone =
         new(@"Φ(?!\s*\d)", RegexOptions.Compiled);
 

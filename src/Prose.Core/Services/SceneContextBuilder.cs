@@ -19,15 +19,27 @@ public class SceneContextBuilder
     private readonly WorldbuildingDocRepository docRepo;
     private readonly DistrictRepository districtRepo;
 
-    // Thread-safe lazy cache — populated once on first access from any circuit thread.
-    private readonly Lazy<List<(string title, string snippet, List<string> tags)>> anomalyCache;
+    // Cached per (universe, epoch). A Lazy built once served the FIRST universe's anomaly docs to
+    // every later universe (GLMZ strangeness in a Fantasy prompt, the RFC 0006 leak), never saw
+    // docs added later, and cached a first-use failure forever.
+    private sealed record AnomalyCache(Guid Universe, int Epoch, List<(string title, string snippet, List<string> tags)> Items);
+    private volatile AnomalyCache? anomalyCache;
 
     public SceneContextBuilder(WorldbuildingDocRepository docRepo, DistrictRepository districtRepo)
     {
         this.docRepo = docRepo;
         this.districtRepo = districtRepo;
-        this.anomalyCache = new Lazy<List<(string, string, List<string>)>>(
-            BuildAnomalyCache, LazyThreadSafetyMode.ExecutionAndPublication);
+    }
+
+    private List<(string title, string snippet, List<string> tags)> Anomalies()
+    {
+        var universe = UniverseScope.EffectiveId;
+        var epoch = UniverseScope.Epoch;
+        var c = anomalyCache;
+        if (c != null && c.Universe == universe && c.Epoch == epoch) return c.Items;
+        var items = BuildAnomalyCache();
+        anomalyCache = new AnomalyCache(universe, epoch, items);
+        return items;
     }
 
     /// <summary>Build a sensory/ambient context packet for a scene location.</summary>
@@ -77,7 +89,7 @@ public class SceneContextBuilder
     /// <summary>Get 0-2 ambient anomaly hints for a scene location (ex-AmbientAnomalyService).</summary>
     internal List<string> GetAmbientAnomalyHints(string? location, int maxHints = 2)
     {
-        var cache = anomalyCache.Value;
+        var cache = Anomalies();
         if (cache.Count == 0) return [];
 
         if (!RandomGatePasses()) return [];
@@ -115,7 +127,7 @@ public class SceneContextBuilder
                 // Extract a 1-2 sentence snippet for the prompt
                 var sentences = body.Split(new[] { ". ", ".\n" }, StringSplitOptions.RemoveEmptyEntries);
                 var snippet = sentences.Length > 1
-                    ? sentences[0] + ". " + sentences[1] + "."
+                    ? sentences[0] + ". " + sentences[1].TrimEnd('.') + "."
                     : sentences.FirstOrDefault() ?? d.Title;
                 if (snippet.Length > 200) snippet = snippet[..200] + "...";
 
