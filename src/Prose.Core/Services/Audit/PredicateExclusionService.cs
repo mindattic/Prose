@@ -346,10 +346,15 @@ public sealed class PredicateExclusionService(
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
+        // Either orientation, in this universe or as a universal rule: learned rules are symmetric,
+        // so (B, A) after the author rejected (A, B) — or a duplicate of a universal builtin — was
+        // filed as a fresh proposal.
         var exists = await db.PredicateExclusions.AsNoTracking().AnyAsync(
-            r => r.UniverseId == universeId
-              && r.PredicateA == predicateA && r.ObjectPatternA == objectPatternA
-              && r.PredicateB == predicateB && r.ObjectPatternB == objectPatternB, ct);
+            r => (r.UniverseId == universeId || r.UniverseId == Guid.Empty)
+              && ((r.PredicateA == predicateA && r.ObjectPatternA == objectPatternA
+                   && r.PredicateB == predicateB && r.ObjectPatternB == objectPatternB)
+               || (r.PredicateA == predicateB && r.ObjectPatternA == objectPatternB
+                   && r.PredicateB == predicateA && r.ObjectPatternB == objectPatternA)), ct);
         if (exists) return null;
 
         var row = new PredicateExclusion

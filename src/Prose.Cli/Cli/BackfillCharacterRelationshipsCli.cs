@@ -80,7 +80,7 @@ public static class BackfillCharacterRelationshipsCli
         Console.WriteLine($"[backfill-character-relationships] {unresolved.Count} unresolved row(s) found in {scopeLabel}.");
         if (unresolved.Count == 0) return 0;
 
-        int resolved = 0, resolvedByAlias = 0, ambiguous = 0, notFound = 0;
+        int resolved = 0, resolvedByAlias = 0, ambiguous = 0, notFound = 0, rejected = 0;
         foreach (var row in unresolved)
         {
             if (string.IsNullOrWhiteSpace(row.TargetName)) { notFound++; continue; }
@@ -100,15 +100,25 @@ public static class BackfillCharacterRelationshipsCli
 
             if (candidates.Count == 1)
             {
-                resolved++;
-                if (viaAlias) resolvedByAlias++;
                 if (!dryRun)
                 {
-                    var target = candidates[0];
-                    await db.CharacterRelationships
-                        .Where(x => x.Id == row.Id)
-                        .ExecuteUpdateAsync(s => s.SetProperty(x => x.TargetEntityId, target));
+                    // A tracked save, not ExecuteUpdate: ExecuteUpdate skips the write gate, and
+                    // CharacterRelationshipTargetCheck is exactly what stops a same-named character
+                    // from another book becoming the target (the Seo Jisun contamination).
+                    var rel = await db.CharacterRelationships.IgnoreQueryFilters().FirstAsync(x => x.Id == row.Id);
+                    rel.TargetEntityId = candidates[0];
+                    try { await db.SaveChangesAsync(); }
+                    catch (Prose.Core.Services.WriteGate.WriteGateRejectedException ex)
+                    {
+                        db.Entry(rel).State = EntityState.Unchanged;
+                        rel.TargetEntityId = null;
+                        rejected++;
+                        Console.WriteLine($"  REJECTED: \"{row.TargetName}\" — {ex.Message}");
+                        continue;
+                    }
                 }
+                resolved++;
+                if (viaAlias) resolvedByAlias++;
             }
             else if (candidates.Count > 1)
             {
@@ -121,7 +131,7 @@ public static class BackfillCharacterRelationshipsCli
             }
         }
 
-        Console.WriteLine($"[backfill-character-relationships] resolved={resolved} (of which {resolvedByAlias} via alias) ambiguous={ambiguous} not-found={notFound}" +
+        Console.WriteLine($"[backfill-character-relationships] resolved={resolved} (of which {resolvedByAlias} via alias) ambiguous={ambiguous} not-found={notFound} rejected-by-gate={rejected}" +
             (dryRun ? " (DRY RUN — no changes written)" : ""));
         return 0;
     }

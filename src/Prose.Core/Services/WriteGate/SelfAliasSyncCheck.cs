@@ -21,21 +21,34 @@ namespace Prose.Core.Services.WriteGate;
 /// </summary>
 public sealed class SelfAliasSyncCheck : IWriteGateSyncCheck
 {
+    // Every alias bridge, as BannedNameSyncCheck covers — the first four alone let set_entity_fields
+    // store a self-alias on an automaton, equipment, cyberware item and the rest.
     public bool AppliesTo(EntityEntry entry) =>
         (entry.State == EntityState.Added || entry.State == EntityState.Modified)
-        && entry.Entity is CharacterAlias or PlaceAlias or FactionAlias or WeaponAlias;
+        && entry.Entity is CharacterAlias or PlaceAlias or FactionAlias or WeaponAlias
+            or AutomatonAlias or EquipmentAlias or CyberwareItemAlias or ApparelAlias or AmmunitionAlias
+            or PharmAlias or GenemodAlias or MaterialAlias or TransportationAlias or ConsumerGoodAlias
+            or LabSpecimenAlias or PsionicAlias or TechnologyAlias or EntertainmentAlias
+            or FlyoverEntityAlias or SyntheticLifeAlias;
 
     public async Task CheckAsync(EntityEntry entry, CancellationToken ct)
     {
-        var (ownerId, value) = entry.Entity switch
-        {
-            CharacterAlias ca => (ca.CharacterId, ca.Value),
-            PlaceAlias pa => (pa.PlaceId, pa.Value),
-            FactionAlias fa => (fa.FactionId, fa.Value),
-            WeaponAlias wa => (wa.WeaponId, wa.Value),
-            _ => (Guid.Empty, (string?)null),
-        };
+        // Owner = the alias row's foreign key to its owning record (whose Id is the Entity id);
+        // value = its Value column. Read through EF metadata so one rule covers every bridge.
+        var value = entry.Metadata.FindProperty("Value") is { } vp ? entry.Property(vp.Name).CurrentValue as string : null;
+        var fk = entry.Metadata.GetForeignKeys().FirstOrDefault(f => f.Properties.Count == 1 && f.Properties[0].ClrType == typeof(Guid));
+        var ownerId = fk != null && entry.Property(fk.Properties[0].Name).CurrentValue is Guid g ? g : Guid.Empty;
         if (ownerId == Guid.Empty || string.IsNullOrWhiteSpace(value)) return;
+
+        // Forward-only, as BannedNameSyncCheck: the mappers delete and re-insert every alias row on
+        // each save, and a row coming back with the same value is not a new alias — without this,
+        // an existing self-alias in a newly covered table would block every edit of its entity.
+        if (entry.State == EntityState.Added
+            && entry.Context.ChangeTracker.Entries().Any(e => e.State == EntityState.Deleted
+                && e.Entity.GetType() == entry.Entity.GetType()
+                && e.Metadata.FindProperty("Value") is { } dvp
+                && string.Equals(e.Property(dvp.Name).OriginalValue as string, value, StringComparison.OrdinalIgnoreCase)))
+            return;
 
         var db = (ProseDbContext)entry.Context;
 
