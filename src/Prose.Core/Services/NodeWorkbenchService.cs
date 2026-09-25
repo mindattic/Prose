@@ -434,7 +434,7 @@ public class NodeWorkbenchService
         beat.ScoredAt      = null;
         beat.Version++;
         beat.LastWriteReason = reason.ToString();   // RFC 0009: every write names its authority
-        InvalidateAudioOnBeat(beat);
+        InvalidateAudioOnBeat(db, beat);
         beat.UpdatedAt = DateTime.UtcNow;
         try
         {
@@ -647,7 +647,7 @@ public class NodeWorkbenchService
             beat.ScoredAt     = null;
             beat.Version++;
             beat.LastWriteReason = reason.ToString();   // RFC 0009
-            InvalidateAudioOnBeat(beat);
+            InvalidateAudioOnBeat(db, beat);
             beat.UpdatedAt = DateTime.UtcNow;
             await db.SaveChangesAsync(ct);
             touchedBeatIds.Add(beatId);
@@ -1947,7 +1947,7 @@ public class NodeWorkbenchService
         target.TextHash     = ComputeTextHash(firstHalf);
         target.WasCorrected = true;
         target.Stale        = true;
-        InvalidateAudioOnBeat(target);
+        InvalidateAudioOnBeat(db, target);
         target.UpdatedAt    = DateTime.UtcNow;
 
         await using var splitPosTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
@@ -2017,7 +2017,7 @@ public class NodeWorkbenchService
         target.TextHash      = ComputeTextHash(firstHalf);
         target.WasCorrected  = true;
         target.Stale         = true;
-        InvalidateAudioOnBeat(target);
+        InvalidateAudioOnBeat(db, target);
         target.UpdatedAt     = DateTime.UtcNow;
 
         // Add second-half beat.
@@ -2086,7 +2086,7 @@ public class NodeWorkbenchService
         target.TextHash     = ComputeTextHash(paragraphs[0]);
         target.WasCorrected = true;
         target.Stale        = true;
-        InvalidateAudioOnBeat(target);
+        InvalidateAudioOnBeat(db, target);
         target.UpdatedAt    = DateTime.UtcNow;
 
         // Paragraphs 2..N → new beats. Evenly stride between prevSk and nextSk
@@ -2393,7 +2393,7 @@ public class NodeWorkbenchService
         prev.TextHash     = ComputeTextHash(prev.Text);
         prev.WasCorrected = true;
         prev.Stale        = true;
-        InvalidateAudioOnBeat(prev);
+        InvalidateAudioOnBeat(db, prev);
         prev.UpdatedAt    = DateTime.UtcNow;
 
         // Drop the merged junction.
@@ -2405,7 +2405,7 @@ public class NodeWorkbenchService
             .AnyAsync(ct);
         if (!otherMemberships)
         {
-            InvalidateAudioOnBeat(target);
+            InvalidateAudioOnBeat(db, target);
             await ClearEdgeBeatBoundsAsync(db, [beatId], ct);
             db.Beats.Remove(target);
         }
@@ -3736,7 +3736,7 @@ public class NodeWorkbenchService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
         if (beat == null) return;
-        InvalidateAudioOnBeat(beat);
+        InvalidateAudioOnBeat(db, beat);
         beat.Stale = true;
         beat.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
@@ -4021,20 +4021,26 @@ public class NodeWorkbenchService
         }
     }
 
-    private void InvalidateAudioOnBeat(Beat beat)
+    private void InvalidateAudioOnBeat(ProseDbContext db, Beat beat)
     {
         if (!string.IsNullOrEmpty(beat.AudioPath))
         {
-            // Fire-and-forget the delete via the store. Sync caller, so we
-            // can't await — the store's own try/catch keeps a transient
-            // blob/disk failure from cascading into a beat-edit failure.
-            // The DB row update below is the authoritative "audio is gone"
-            // signal regardless of whether the bytes actually deleted.
+            // The file is deleted only once the row saying "no audio" is SAVED. Deleted up front, a
+            // save that then failed (a concurrency conflict on the edit) left the row pointing at a
+            // file that was gone: the beat looked voiced, played nothing, and was never re-recorded.
+            // SavedChanges fires only on success. Still fire-and-forget: the store's own try/catch
+            // keeps a transient blob/disk failure from cascading into a beat-edit failure.
             var path = beat.AudioPath;
-            _ = audioStore.DeleteAsync(path).ContinueWith(t =>
+            EventHandler<SavedChangesEventArgs>? onSaved = null;
+            onSaved = (_, _) =>
             {
-                if (t.Exception != null) log.LogWarning(t.Exception.Flatten(), "Audio delete failed for {Path}", path);
-            }, TaskScheduler.Default);
+                db.SavedChanges -= onSaved;
+                _ = audioStore.DeleteAsync(path).ContinueWith(t =>
+                {
+                    if (t.Exception != null) log.LogWarning(t.Exception.Flatten(), "Audio delete failed for {Path}", path);
+                }, TaskScheduler.Default);
+            };
+            db.SavedChanges += onSaved;
         }
         beat.AudioPath    = null;
         beat.NarratedAt   = null;

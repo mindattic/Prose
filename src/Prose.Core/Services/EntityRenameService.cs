@@ -125,7 +125,9 @@ public sealed class EntityRenameService(
         return await fieldWriter.SetFieldsAsync(entityId.ToString("N"), fields, confirmUnread: true, ct);
     }
 
-    private static readonly string[] RecordNameKeys = ["name", "term", "headline", "codename", "title"];
+    // "file_name" before "title": a document's Entity.Name mirrors its FileName (DocumentMapper), so a
+    // rename written to "title" alone was reverted by the next save of the document.
+    private static readonly string[] RecordNameKeys = ["name", "term", "headline", "codename", "file_name", "title"];
 
     private async Task<Guid> NodeUniverseAsync(Guid nodeId, CancellationToken ct)
     {

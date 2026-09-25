@@ -57,8 +57,11 @@ public static class CanonRecordLoader
     /// nothing is stored for the id.</summary>
     public static JsonNode? Load(ProseDbContext db, string entityType, Guid id)
     {
-        if (Loaders.TryGetValue(entityType, out var load))
-            return load(db, id) is { } record ? Prune(JsonSerializer.SerializeToNode(record, record.GetType(), Opts)) : null;
+        // A mapped type with no typed row falls through to the stored JSON record: universe
+        // interchange stores imported places, factions and characters on Entity + Records.Json
+        // only, and those read as "nothing stored" for an entity with a full record.
+        if (Loaders.TryGetValue(entityType, out var load) && load(db, id) is { } record)
+            return Prune(JsonSerializer.SerializeToNode(record, record.GetType(), Opts));
         var json = db.Records.IgnoreQueryFilters().AsNoTracking().Where(r => r.EntityId == id).Select(r => r.Json).FirstOrDefault();
         return json == null ? null : Prune(JsonNode.Parse(json));
     }

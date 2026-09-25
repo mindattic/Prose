@@ -41,6 +41,12 @@ public static class SaveGuard
             || JsonSerializer.SerializeToNode(stored, Opts) is not JsonObject current) return false;
         incoming.Remove("id");
         current.Remove("id");
+        // Only the type's declared keys: [JsonExtensionData] keys serialize flat beside the real
+        // fields but no mapper stores them, so a record carrying one never compared equal and every
+        // idle re-save rewrote its child rows and bumped ModifiedAt (un-reading its beats).
+        var declared = Prose.Core.Services.FieldPatch.Properties(typeof(T));
+        foreach (var key in incoming.Select(p => p.Key).Where(k => !declared.ContainsKey(k)).ToList())
+            incoming.Remove(key);
         return JsonNode.DeepEquals(incoming, current);
     }
 }

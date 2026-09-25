@@ -221,12 +221,19 @@ public class CharacterRepository : EfRepository<CharacterData>
 
         // Persist column + bridge state via the mapper (sync wrapper around the
         // async API â€” Save is a synchronous repository contract).
+        // One transaction around the mapper and the save: the mapper clears the child tables with
+        // ExecuteDelete, which runs immediately, and the re-inserts land at SaveChanges. A save that
+        // then threw (a column over its max length, the write gate) left the record with no aliases,
+        // members, hooks or lists at all. A caller's own transaction, if any, is reused.
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         CharacterMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
 
         // Refresh tags via the universal layer.
         SyncTagsForEntity(db, id, item.Tags);
 
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         // Enforced single-writer sync: regenerate this character's materialized
         // read-model from the just-persisted relational record so GetAll/GetById
@@ -448,9 +455,12 @@ public class CorponationRepository : EfRepository<CorponationData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         CorponationMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -621,9 +631,12 @@ public class DistrictRepository : EfRepository<DistrictData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         PlaceMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -795,9 +808,12 @@ public class FactionRepository : EfRepository<FactionData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         FactionMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -961,9 +977,12 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         DocumentMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -1127,8 +1146,11 @@ public class MotifRepository : EfRepository<MotifData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         MotifMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -1294,9 +1316,12 @@ public class WeaponryRepository : EfRepository<WeaponryData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         WeaponMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -1460,9 +1485,12 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         AmmunitionMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -1627,9 +1655,12 @@ public class EquipmentRepository : EfRepository<EquipmentData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         EquipmentMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -1794,9 +1825,12 @@ public class TechnologyRepository : EfRepository<TechnologyData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         TechnologyMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -1959,9 +1993,12 @@ public class CyberwareRepository : EfRepository<CyberwareData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         CyberwareMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -2124,9 +2161,12 @@ public class VocabularyRepository : EfRepository<VocabularyData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         VocabularyMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -2291,9 +2331,12 @@ public class GenemodRepository : EfRepository<GenemodData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         GenemodMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -2457,9 +2500,12 @@ public class TransportationRepository : EfRepository<TransportationData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         TransportationMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -2625,9 +2671,12 @@ public class ContractRepository : EfRepository<ContractData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         ContractMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -2792,9 +2841,12 @@ public class AutomatonRepository : EfRepository<AutomatonData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         AutomatonMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -2957,9 +3009,12 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         SubsidiaryMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -3123,9 +3178,12 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         EntertainmentMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -3289,9 +3347,12 @@ public class ApparelRepository : EfRepository<ApparelData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         ApparelMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -3454,9 +3515,12 @@ public class NewsRepository : EfRepository<NewsData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         NewsMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -3621,9 +3685,12 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         ArchetypeMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -3787,9 +3854,12 @@ public class MaterialRepository : EfRepository<MaterialData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         MaterialMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -3952,9 +4022,12 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         PharmaceuticalMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -4117,9 +4190,12 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         ConsumerGoodMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -4277,9 +4353,12 @@ public class QuoteRepository : EfRepository<QuoteData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         QuoteMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -4477,9 +4556,12 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         LabSpecimenMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -4641,9 +4723,12 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         FlyoverEntityMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -4805,9 +4890,12 @@ public class PsionicRepository : EfRepository<PsionicData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         PsionicMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();
@@ -5011,9 +5099,12 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
             existingEntity.ModifiedAt = DateTime.UtcNow;
         }
 
+        var persistTx = db.Database.CurrentTransaction == null ? db.Database.BeginTransaction() : null;
         SyntheticMapper.PersistAsync(db, id, item).GetAwaiter().GetResult();
         FactionMapper.SyncTagsForEntity(db, id, item.Tags);
         db.SaveChanges();
+        persistTx?.Commit();
+        persistTx?.Dispose();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();

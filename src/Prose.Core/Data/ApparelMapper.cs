@@ -148,6 +148,7 @@ public static class ApparelMapper
             Tags             = tags ?? new List<string>(),
         };
 
+        data.Aliases    = a.Aliases.OrderBy(x => x.Position).Select(x => x.Value).ToList();
         data.Materials  = a.Materials.OrderBy(x => x.Position).Select(x => x.Value).ToList();
         data.WornBy     = a.WornBy.OrderBy(x => x.Position).Select(x => x.Alias).ToList();
         data.StoryHooks = a.StoryHooks.OrderBy(x => x.Position).Select(x => x.Hook).ToList();
@@ -208,6 +209,9 @@ public static class ApparelMapper
     /// <summary>Insert all bridge rows (assumes bridges have already been wiped).</summary>
     public static void FillBridges(ProseDbContext db, Guid id, ApparelData src)
     {
+        for (int i = 0; i < src.Aliases.Count; i++)
+            db.ApparelAliases.Add(new ApparelAlias { ApparelId = id, Position = i, Value = src.Aliases[i] ?? "" });
+
         for (int i = 0; i < src.Materials.Count; i++)
             db.ApparelMaterials.Add(new ApparelMaterial { ApparelId = id, Position = i, Value = src.Materials[i] ?? "" });
 

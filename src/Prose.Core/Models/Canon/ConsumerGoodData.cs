@@ -28,6 +28,9 @@ public class ConsumerGoodData : ICanonEntity
     [JsonPropertyName("popularity_rank")] public int PopularityRank { get; set; }
     [JsonPropertyName("slogan")] public string Slogan { get; set; } = "";
     [JsonPropertyName("cultural_context")] public string CulturalContext { get; set; } = "";
+    // Aliases: the mapper cleared the alias bridge on every save but the model had no field for it,
+    // so any alias row was wiped by the first save and none could ever be written back.
+    [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
     [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";

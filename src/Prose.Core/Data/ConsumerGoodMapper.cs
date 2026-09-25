@@ -150,6 +150,7 @@ public static class ConsumerGoodMapper
             Tags             = tags ?? new List<string>(),
         };
 
+        data.Aliases    = cg.Aliases.OrderBy(x => x.Position).Select(x => x.Value).ToList();
         data.StoryHooks = cg.StoryHooks.OrderBy(x => x.Position).Select(x => x.Hook).ToList();
 
         return data;
@@ -209,6 +210,8 @@ public static class ConsumerGoodMapper
     /// <summary>Insert all bridge rows (assumes parent bridges have already been wiped).</summary>
     public static void FillBridges(ProseDbContext db, Guid id, ConsumerGoodData src)
     {
+        for (int i = 0; i < src.Aliases.Count; i++)
+            db.ConsumerGoodAliases.Add(new ConsumerGoodAlias { ConsumerGoodId = id, Position = i, Value = src.Aliases[i] ?? "" });
         for (int i = 0; i < src.StoryHooks.Count; i++)
             db.ConsumerGoodStoryHooks.Add(new ConsumerGoodStoryHook { ConsumerGoodId = id, Position = i, Hook = src.StoryHooks[i] ?? "" });
     }

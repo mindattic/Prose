@@ -28,6 +28,9 @@ public class ApparelData : ICanonEntity
     [JsonPropertyName("price_range")] public string PriceRange { get; set; } = "";
     [JsonPropertyName("aug_compatible")] public bool AugCompatible { get; set; }
     [JsonPropertyName("gene_compatible")] public bool GeneCompatible { get; set; }
+    // Aliases: the mapper cleared the alias bridge on every save but the model had no field for it,
+    // so any alias row was wiped by the first save and none could ever be written back.
+    [JsonPropertyName("aliases")] public List<string> Aliases { get; set; } = [];
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
     [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";

@@ -99,7 +99,7 @@ public class EpisodeAudioService
         // Update the target with the first paragraph.
         target.Text = paragraphs[0];
         target.WasCorrected = true;
-        InvalidateAudioOnBeat(target);
+        InvalidateAudioOnBeat(db, target);
         // Hash now reflects what *will be* narrated next — keeps the
         // chapter-save desync sweep idempotent: ChapterBeat.Text will be
         // propagated to match, the hashes will line up, no false Stale flap.
@@ -180,7 +180,7 @@ public class EpisodeAudioService
         var newSortKey = (target.SortKey + nextSortKey) / 2.0;
 
         target.Text = firstHalf;
-        InvalidateAudioOnBeat(target);
+        InvalidateAudioOnBeat(db, target);
         target.WasCorrected = true;
 
         // Stable Index for the new beat: max(Index) + 1 within this episode.
@@ -299,12 +299,12 @@ public class EpisodeAudioService
         var previous = beats[pos - 1];
 
         previous.Text = $"{previous.Text.TrimEnd()}\n\n{target.Text.TrimStart()}";
-        InvalidateAudioOnBeat(previous);
+        InvalidateAudioOnBeat(db, previous);
         previous.WasCorrected = true;
 
         // Delete the target row outright — no shifting needed because SortKey
         // ordering doesn't depend on contiguous values. Its audio goes too, or the file is orphaned.
-        InvalidateAudioOnBeat(target);
+        InvalidateAudioOnBeat(db, target);
         db.EpisodeBeats.Remove(target);
 
         await db.SaveChangesAsync(ct);
@@ -313,16 +313,25 @@ public class EpisodeAudioService
     }
 
     /// <summary>Clear audio fields on a beat in memory and delete the file on disk.</summary>
-    private void InvalidateAudioOnBeat(EpisodeBeat beat)
+    private void InvalidateAudioOnBeat(Microsoft.EntityFrameworkCore.DbContext db, EpisodeBeat beat)
     {
         if (!string.IsNullOrEmpty(beat.AudioPath))
         {
-            try
+            // Deleted once the row saying "no audio" is saved, never before: a save that failed
+            // left the row pointing at a file already gone.
+            var path = beat.AudioPath;
+            EventHandler<Microsoft.EntityFrameworkCore.SavedChangesEventArgs>? onSaved = null;
+            onSaved = (_, _) =>
             {
-                var full = ResolveAudioFile(beat.AudioPath);
-                if (File.Exists(full)) File.Delete(full);
-            }
-            catch (Exception ex) { log.LogWarning(ex, "Could not delete audio at {Path}", beat.AudioPath); }
+                db.SavedChanges -= onSaved;
+                try
+                {
+                    var full = ResolveAudioFile(path);
+                    if (File.Exists(full)) File.Delete(full);
+                }
+                catch (Exception ex) { log.LogWarning(ex, "Could not delete audio at {Path}", path); }
+            };
+            db.SavedChanges += onSaved;
         }
         beat.AudioPath  = null;
         beat.NarratedAt = null;
