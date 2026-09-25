@@ -111,7 +111,10 @@ public class TagNormalizerService(IDbContextFactory<ProseDbContext> dbFactory) :
             var valid = tags.Where(tag =>
             {
                 if (!TagKeywords.TryGetValue(tag, out var required)) return true;
-                return required.Any(kw => entityText.Contains(kw));
+                // Whole words: "ai" was found in "said"/"again", "war" in "toward", "bar" in
+                // "barely", so short tags were almost never removed.
+                return required.Any(kw => System.Text.RegularExpressions.Regex.IsMatch(
+                    entityText, @"(?<!\w)" + System.Text.RegularExpressions.Regex.Escape(kw) + @"(?:s|es|ed|er|ers|ing)?(?!\w)"));
             }).ToList();
 
             if (valid.Count < tags.Count)

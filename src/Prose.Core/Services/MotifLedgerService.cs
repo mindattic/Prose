@@ -56,12 +56,9 @@ public class MotifLedgerService
             if (display.Length > 200) display = display[..200];
             var key = display.ToLowerInvariant();
 
-            if (addedThisCall.TryGetValue(key, out var justAdded))
-            {
-                justAdded.Occurrences++;
-                justAdded.LastBeatId = beatId == Guid.Empty ? null : beatId;
-                continue;
-            }
+            // Already added from THIS beat: the counter means "seen in N beats", so a repeat
+            // within one call ("the red scarf" / "The red scarf") must not count twice.
+            if (addedThisCall.ContainsKey(key)) continue;
 
             var existing = await db.BookMotifs
                 .FirstOrDefaultAsync(m => m.NodeId == nodeId && m.MotifKey == key, ct);

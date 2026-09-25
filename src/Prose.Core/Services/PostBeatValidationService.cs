@@ -53,10 +53,12 @@ public class PostBeatValidationService(
 
             var nodeSlug = await db.BeatNodes.AsNoTracking()
                 .Where(sb => sb.BeatId == beatId)
-                .Join(db.Nodes, sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
+                .Join(db.Nodes.IgnoreQueryFilters(), sb => sb.NodeId, s => s.Id, (_, s) => s.Slug)
                 .FirstOrDefaultAsync(ct) ?? beatId.ToString();
 
-            var text = beat.Text;
+            // The reader's text: the enforcer's usage patterns need a letter right after the verb,
+            // so "drew <entity guid=…>Silence</entity>" never matched and tagged gear went unchecked.
+            var text = ProseInline.StripFormatting(BeatMarkup.StripEntityTags(beat.Text));
 
             var chars = characterIds ?? await CharactersFromMentionsAsync(db, beatId, ct);
             foreach (var charId in chars)

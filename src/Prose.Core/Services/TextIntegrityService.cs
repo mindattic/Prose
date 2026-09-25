@@ -141,7 +141,10 @@ public class TextIntegrityService(IDbContextFactory<ProseDbContext> dbFactory)
         var repl = replacement.ToString();
         if (finding.Table != "Beats")
             throw new InvalidOperationException($"Text integrity repairs only Beats.Text (got {finding.Table}).");
+        // Only if the suspect character is still THERE: an edit between scan and --fix shifts the
+        // offset, and an unconditional STUFF replaced a real prose character.
+        var cp = finding.FoundCodepoint;
         await db.Database.ExecuteSqlInterpolatedAsync(
-            $"UPDATE Beats SET Text = STUFF(Text, {pos}, 1, {repl}) WHERE Id = {finding.RowId}", ct);
+            $"UPDATE Beats SET Text = STUFF(Text, {pos}, 1, {repl}) WHERE Id = {finding.RowId} AND UNICODE(SUBSTRING(Text, {pos}, 1)) = {cp}", ct);
     }
 }

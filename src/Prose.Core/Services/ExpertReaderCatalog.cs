@@ -49,7 +49,11 @@ public static class ExpertReaderCatalog
     /// Returns an empty list for an unrecognized slug.</summary>
     public static IReadOnlyList<Persona> ForUniverse(string universeSlug)
     {
-        var prefix = $"xreader-{(universeSlug ?? "").Trim().ToLowerInvariant()}-";
+        var slug = (universeSlug ?? "").Trim().ToLowerInvariant();
+        // The nonfiction universe's live slug is "nonfiction" (its seed file is still named
+        // gspl); the panel ids use "gspl", so --universe nonfiction found no panel at all.
+        if (slug is "nonfiction") slug = "gspl";
+        var prefix = $"xreader-{slug}-";
         return byId.Value.Values.Where(p => p.Id.StartsWith(prefix, StringComparison.Ordinal)).ToList();
     }
 

@@ -154,6 +154,7 @@ public class FactInterpreterService
         var resolvedRelations = new List<ExtractedRelation>();
         var atStory = opts.AtStoryTime ?? clock.GetNow();
 
+        var addedEdges = new HashSet<(Guid, string, Guid)>();
         foreach (var r in relations)
         {
             if (!resolvedIdByName.TryGetValue(r.FromName, out var fromId))
@@ -171,9 +172,11 @@ public class FactInterpreterService
                 resolvedRelations.Add(new(r.FromName, r.RelationType, r.ToName, r.Description, r.Sentiment, true, "dry-run"));
                 continue;
             }
-            // Idempotent edge insert
-            var existing = await db.Edges.AnyAsync(x =>
-                x.SourceId == fromId && x.TargetId == toId && x.RelationType == r.RelationType, ct);
+            // Idempotent edge insert. Edges added earlier in this run are unsaved until the end,
+            // so the database check cannot see them: the same triple twice made two rows.
+            var existing = !addedEdges.Add((fromId, r.RelationType, toId))
+                || await db.Edges.AnyAsync(x =>
+                    x.SourceId == fromId && x.TargetId == toId && x.RelationType == r.RelationType, ct);
             if (!existing)
             {
                 db.Edges.Add(new Edge
@@ -189,7 +192,9 @@ public class FactInterpreterService
                 });
                 edgesWritten++;
             }
-            if (opts.RecordLedger)
+            // Only a NEW fact enters the ledger: re-running the same text wrote another "set"
+            // event for every relation that already existed.
+            if (opts.RecordLedger && !existing)
             {
                 db.EntityStateEvents.Add(new EntityStateEvent
                 {
