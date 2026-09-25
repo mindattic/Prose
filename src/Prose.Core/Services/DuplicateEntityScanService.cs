@@ -585,6 +585,29 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
         if (taggedBeats.Count > 0) await db.SaveChangesAsync(ct);
         var beatsRetagged = taggedBeats.Count;
 
+        // Soft references — columns that point at an entity with NO foreign key, so the catalog
+        // walk above never saw them: the roster tables and a beat's place. Left alone they kept
+        // pointing at the deleted loser (rosters silently dropped it; place links dangled).
+        // The roster tables are derived caches keyed (BeatId, EntityId): drop the loser rows the
+        // winner already has for the same beat, then reassign the rest.
+        foreach (var soft in new[] { "BeatEntities", "BeatEntityPresence" })
+        {
+            await db.Database.ExecuteSqlRawAsync($$"""
+                IF OBJECT_ID('dbo.{{soft}}') IS NOT NULL
+                BEGIN
+                    DELETE l FROM [dbo].[{{soft}}] l
+                     WHERE l.EntityId = {1}
+                       AND EXISTS (SELECT 1 FROM [dbo].[{{soft}}] w WHERE w.BeatId = l.BeatId AND w.EntityId = {0});
+                    UPDATE [dbo].[{{soft}}] SET EntityId = {0} WHERE EntityId = {1};
+                END
+                """, [winnerId, loserId], ct);
+        }
+        var placeRelinked = await RelinkAndCaptureAsync(db, "Beats", "PlaceEntityId", "Id", winnerId, loserId, ct);
+        foreach (var pk in placeRelinked)
+            undoLog.Add(new RowMutationUndo("update", "Beats", "Id", pk,
+                new Dictionary<string, string?> { ["PlaceEntityId"] = loserId.ToString() }));
+        relinked += placeRelinked.Count;
+
         // Delete the loser's own Entities row last — every real FK pointing at it was relinked
         // above, so this is now safe. Reuses DeleteAndCaptureAsync exactly as-is (same
         // capture-as-JSON-then-delete shape already used for the 1:1-collision case) rather than
