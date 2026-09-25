@@ -314,7 +314,9 @@ public class MojibakeRepairService
         {
             var c = s[i];
             if (c == 'â' && s[i + 1] == '€') return i;
-            if (c >= 'Â' && c <= 'ß')
+            // '×' (U+00D7) is skipped as a lead: real text writes it before a dash ("0.5×–1.6×"),
+            // and the pair it would be a mis-decoding of is a Hebrew letter this corpus never holds.
+            if (c >= 'Â' && c <= 'ß' && c != '×')
             {
                 if (IsContinuation(s[i + 1])) return i;
             }

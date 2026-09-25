@@ -61,6 +61,10 @@ public sealed class EntityVerificationService(
 
     public async Task<VerificationPacket> BeginAsync(Guid entityId, Guid bookId, int textBudgetChars = 40_000, CancellationToken ct = default)
     {
+        // A verification is of the BOOK: given a chapter, walk up to it, or the row was keyed on the
+        // chapter (never found by the book's F1 check) after reading only that chapter.
+        await using (var db0 = await dbFactory.CreateDbContextAsync(ct))
+            bookId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db0, bookId, ct) ?? bookId;
         var (entity, beats, book) = await LoadAsync(entityId, bookId, ct);
         var mentions = beats.Where(b => BeatMarkup.ExtractEntityGuids(b.Text).Contains(entityId)).ToList();
         var unread = (await gate.GetStatusAsync(bookId, ct)).Unread.Select(u => u.BeatId).ToHashSet();

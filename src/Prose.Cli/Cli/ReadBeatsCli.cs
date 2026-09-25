@@ -31,19 +31,27 @@ public static class ReadBeatsCli
             {
                 case "--slug":   if (i + 1 < args.Length) idOrSlug = args[++i]; break;
                 case "--id":     if (i + 1 < args.Length) idOrSlug = args[++i]; break;
-                case "--from":   if (i + 1 < args.Length && int.TryParse(args[++i], out var f)) from = f; break;
-                case "--to":     if (i + 1 < args.Length && int.TryParse(args[++i], out var t)) to = t; break;
+                // A value that does not parse is an error, never "no bound": silently dropping it
+                // widened the read (and a --mark-read) to the whole book.
+                case "--from":
+                    if (i + 1 >= args.Length || !int.TryParse(args[++i], out var f)) { Console.Error.WriteLine("[read-beats] --from needs a position number."); return 1; }
+                    from = f; break;
+                case "--to":
+                    if (i + 1 >= args.Length || !int.TryParse(args[++i], out var t)) { Console.Error.WriteLine("[read-beats] --to needs a position number."); return 1; }
+                    to = t; break;
                 case "--numbers":
-                    if (i + 1 < args.Length)
+                {
+                    var tokens = i + 1 < args.Length
+                        ? args[++i].Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                        : [];
+                    if (tokens.Length == 0 || tokens.Any(s => !int.TryParse(s, out _)))
                     {
-                        numbers = args[++i]
-                            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-                            .Select(s => int.TryParse(s, out var n) ? n : (int?)null)
-                            .Where(n => n.HasValue)
-                            .Select(n => n!.Value)
-                            .ToHashSet();
+                        Console.Error.WriteLine("[read-beats] --numbers needs a comma-separated list of Beat.Number values.");
+                        return 1;
                     }
+                    numbers = tokens.Select(int.Parse).ToHashSet();
                     break;
+                }
                 case "--format": if (i + 1 < args.Length) format = args[++i]; break;
                 case "--read-by": if (i + 1 < args.Length) readBy = args[++i]; break;
             }
@@ -70,8 +78,9 @@ public static class ReadBeatsCli
         // reported "Node not found" — indistinguishable from a typo. Found 2026-09-21: BCODA2 reads
         // fine through --beat-positions and --archive-book (which resolve explicitly) but was
         // unreadable here, which blocked a corpus-wide prose fix mid-pass.
-        nodeId ??= (await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .FirstOrDefaultAsync(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug))?.Id;
+        // NodeRefResolver: a slug or NodeCode in two universes resolves in the ambient one or not
+        // at all, never to whichever row came back first.
+        nodeId ??= await NodeRefResolver.ResolveAsync(db, idOrSlug);
         if (nodeId == null)
         {
             Console.Error.WriteLine($"[read-beats] Node '{idOrSlug}' not found.");

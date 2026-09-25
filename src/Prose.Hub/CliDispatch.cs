@@ -160,7 +160,7 @@ public static class CliDispatch
         {
             // Best-effort, same posture as LlmCallHistory - a logging failure must never
             // break the command it's logging.
-            Console.Error.WriteLine($"[command-ledger] failed to record entry: {ex.Message}");
+            HubConsoleEcho.Error.WriteLine($"[command-ledger] failed to record entry: {ex.Message}");
         }
     }
 

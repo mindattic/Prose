@@ -55,9 +55,12 @@ public class VerificationTools
             severity    = r.Severity,
             evidence    = r.Evidence,
             verified_by = r.VerifiedBy,
-            verdict     = r.Result == "Fail"
-                ? "REJECTED — quote not found in this beat; do not act on this finding"
-                : "grounded",
+            // Only a Pass is grounded: a blank quote comes back "Skipped", which used to read as grounded.
+            verdict     = r.Result == "Pass"
+                ? "grounded"
+                : r.Result == "Fail"
+                    ? "REJECTED — quote not found in this beat; do not act on this finding"
+                    : $"NOT GROUNDED ({r.Result}) — nothing was verified; do not act on this finding",
         }, CanonTools.JsonOpts);
     }
 
@@ -95,8 +98,11 @@ public class VerificationTools
             else badGuids.Add(c.BeatId);
         }
 
+        if (claims.Count == 0)
+            return JsonSerializer.Serialize(new { error = "no claims to verify: an empty batch proves nothing" }, CanonTools.JsonOpts);
         var results = await verification.VerifyQuoteGroundingBatchAsync(parsed, claimedBy);
-        var failed  = results.Where(r => r.Result == "Fail").ToList();
+        // Anything but a Pass blocks: a "Skipped" (blank) quote verified nothing.
+        var failed  = results.Where(r => r.Result != "Pass").ToList();
 
         return JsonSerializer.Serialize(new
         {

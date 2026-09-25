@@ -521,12 +521,12 @@ app.MapGet("/api/universes/{slug}/entities/{id}", (string slug, string id, Unive
     return result;
 });
 
-app.MapGet("/api/universes/{slug}/neighbors/{id}", (string slug, string id, int depth, UniverseGraphService graph) =>
+app.MapGet("/api/universes/{slug}/neighbors/{id}", (string slug, string id, int? depth, UniverseGraphService graph) =>
 {
     var uid = ResolveUniverseId(slug);
     if (uid == null) return Results.NotFound(new { error = "unknown_universe", slug });
     uc.SetFlowUniverse(uid);
-    var d = depth <= 0 ? 1 : depth;
+    var d = depth is > 0 ? depth.Value : 1;
     var nodes = graph.GetNeighbors(id, d);
     var ids = new HashSet<string>(nodes.Select(n => n.Id)) { id };
     var edges = ids.SelectMany(graph.GetAllEdges)
@@ -535,14 +535,16 @@ app.MapGet("/api/universes/{slug}/neighbors/{id}", (string slug, string id, int 
         .ToList();
     var result = Results.Ok(new
     {
-        nodes = nodes.Select(n => NodeDto(n, graph.GetAllEdges(n.Id).Count)),
+        // Materialised now: serialisation runs after SetFlowUniverse(null), so a lazy count read
+        // the default universe's graph.
+        nodes = nodes.Select(n => NodeDto(n, graph.GetAllEdges(n.Id).Count)).ToList(),
         edges = edges.Select(EdgeDto),
     });
     uc.SetFlowUniverse(null);
     return result;
 });
 
-app.MapGet("/api/universes/{slug}/search", (string slug, string q, UniverseGraphService graph) =>
+app.MapGet("/api/universes/{slug}/search", (string slug, string? q, UniverseGraphService graph) =>
 {
     var uid = ResolveUniverseId(slug);
     if (uid == null) return Results.NotFound(new { error = "unknown_universe", slug });
@@ -550,7 +552,8 @@ app.MapGet("/api/universes/{slug}/search", (string slug, string q, UniverseGraph
     var matches = graph.AllNodes()
         .Where(n => n.Name.Contains(q ?? "", StringComparison.OrdinalIgnoreCase))
         .Take(50)
-        .Select(n => NodeDto(n, graph.GetAllEdges(n.Id).Count));
+        .Select(n => NodeDto(n, graph.GetAllEdges(n.Id).Count))
+        .ToList(); // before SetFlowUniverse(null): the whole query was lazy
     var result = Results.Ok(matches);
     uc.SetFlowUniverse(null);
     return result;
@@ -606,7 +609,9 @@ app.MapGet("/api/universes/{slug}/snapshot", async (
 
     var result = Results.Ok(new
     {
-        nodes = nodes.Select(n => NodeDto(n, graph.GetAllEdges(n.Id).Count)),
+        // Materialised now: serialisation runs after SetFlowUniverse(null), so a lazy count read
+        // the default universe's graph.
+        nodes = nodes.Select(n => NodeDto(n, graph.GetAllEdges(n.Id).Count)).ToList(),
         edges = edges.Select(EdgeDto),
     });
     uc.SetFlowUniverse(null);
@@ -772,8 +777,11 @@ app.MapPost("/api/change-proposals", async (
         return Results.NotFound(new { error = "unknown_universe", universe = request.Universe });
 
     await using var db = await dbFactory.CreateDbContextAsync();
+    // Compare the trimmed id: that is what the row stores, so an untrimmed lookup let a
+    // resubmission with a stray space slip past the duplicate check.
+    var requestId = request.RequestId.Trim();
     var existing = await db.ChangeProposals.AsNoTracking()
-        .FirstOrDefaultAsync(x => x.RequestId == request.RequestId);
+        .FirstOrDefaultAsync(x => x.RequestId == requestId);
     if (existing != null)
         return Results.Conflict(new { error = "duplicate_request_id", requestId = request.RequestId, proposalId = existing.Id });
 

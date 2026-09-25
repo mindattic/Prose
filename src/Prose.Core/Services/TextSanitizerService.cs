@@ -35,6 +35,7 @@ public static class TextSanitizerService
         (0x0100, 0x017F), // Latin Extended-A: ğ ı ş ć č š ž œ Œ
         (0x0386, 0x03CE), // Greek: Φ and friends
         (0x2010, 0x203A), // General Punctuation: – — ' ' " " † ‡ • … ‹ ›
+        (0x2190, 0x21FF), // Arrows: → ← ↔ (docs/ARCHITECTURE.md and FRANCHISE.md carried an unrepairable "â†’")
         (0x20AC, 0x20AC), // €
         (0x2122, 0x2122), // ™
     ];

@@ -332,9 +332,21 @@ public class MarkdownFileService
         }
 
         // Resolve raw `related:` relative paths → MarkdownFile.Id GUIDs now that all files are in the DB.
-        if (!dryRun && rawRelatedMap.Count > 0)
+        if (!dryRun)
         {
-            try { errors.AddRange(await ResolveRelatedIdsAsync(db, rawRelatedMap, ct)); }
+            try
+            {
+                errors.AddRange(await ResolveRelatedIdsAsync(db, rawRelatedMap, ct));
+                // A doc that DROPPED its related: line kept its old RelatedIds forever (only
+                // declaring files were visited), so the unlinked docs kept loading with it.
+                var synced = files.Select(f => (f.FileRoot, f.RelativePath)).ToHashSet();
+                var stale = (await db.MarkdownFiles.IgnoreQueryFilters()
+                        .Where(m => m.RelatedIds != null && m.RelatedIds != "").ToListAsync(ct))
+                    .Where(m => synced.Contains((m.FileRoot, m.RelativePath)) && !rawRelatedMap.ContainsKey((m.FileRoot, m.RelativePath)))
+                    .ToList();
+                foreach (var m in stale) m.RelatedIds = null;
+                if (stale.Count > 0) await db.SaveChangesAsync(ct);
+            }
             catch (Exception ex) { errors.Add($"related-resolution: {ex.Message}"); }
         }
 
@@ -790,6 +802,15 @@ public class MarkdownFileService
 
         foreach (var row in rows)
         {
+            // Rows that are not files: entity docs live only in the DB (EntityDocService: "never
+            // written to disk"), and db-canon rows are the DB-assembled canon sections whose file
+            // is generated with frontmatter. Restoring either wrote hundreds of stray entity files
+            // or overwrote a generated canon doc without its header.
+            if (row.Category == "entity-doc" || row.SyncedBy == "db-canon")
+            {
+                skipped++;
+                continue;
+            }
             try
             {
                 var destPath = ResolveAbsolutePath(row.FileRoot, row.RelativePath);

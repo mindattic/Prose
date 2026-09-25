@@ -432,8 +432,13 @@ public class UniverseInterchangeService
         ProseDbContext db, Guid universeId, string entityType, InterchangeEntity src, string rawJson, CancellationToken ct)
     {
         var slug = Slugify(src.Id);
+        // Same slug AND type first; a slug alone may only claim a stub (whose placeholder type is
+        // promoted below). Matching on slug alone overwrote the type, name and status of a
+        // different entity that happened to share it — a place and a character both "silence".
         var existing = await db.Entities.IgnoreQueryFilters()
-            .FirstOrDefaultAsync(e => e.UniverseId == universeId && e.Slug == slug, ct);
+                           .FirstOrDefaultAsync(e => e.UniverseId == universeId && e.Slug == slug && e.EntityType == entityType, ct)
+                       ?? await db.Entities.IgnoreQueryFilters()
+                           .FirstOrDefaultAsync(e => e.UniverseId == universeId && e.Slug == slug && e.Status == "stub", ct);
 
         var created = existing == null;
         var wasStub = existing?.Status == "stub";

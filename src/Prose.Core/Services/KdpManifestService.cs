@@ -181,7 +181,11 @@ public class KdpManifestService
             {
                 var best = Directory.GetFiles(nodeDir)
                     .Select(f => VersionFileRx.Match(Path.GetFileName(f)))
-                    .Where(m => m.Success)
+                    // Only this book's own files: a stray "Other V99.epub" in the folder set the
+                    // version while the epub path (built from fileBaseName) stayed null, so the
+                    // book showed as work in progress.
+                    .Where(m => m.Success && string.Equals(m.Groups["code"].Value, fileBaseName, StringComparison.OrdinalIgnoreCase)
+                                && int.TryParse(m.Groups["ver"].Value, out _))
                     .Select(m => int.Parse(m.Groups["ver"].Value))
                     .DefaultIfEmpty(-1)
                     .Max();

@@ -614,7 +614,9 @@ public class NodeTools
         var node = await ResolveNodeAsync(nodeIdOrSlug);
         if (node == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
         if (!Guid.TryParse(beatId, out var bid)) return JsonSerializer.Serialize(new { error = "bad_beat_id", beatId }, CanonTools.JsonOpts);
-        await workbench.DeleteBeatAsync(node.Id, bid);
+        if (!await workbench.DeleteBeatAsync(node.Id, bid))
+            return JsonSerializer.Serialize(new { ok = false, error = "beat_not_in_node", id = bid, nodeId = node.Id,
+                hint = "Nothing was deleted: the beat hangs on another node. Pass the node that holds it (its chapter, not the book)." }, CanonTools.JsonOpts);
         return JsonSerializer.Serialize(new { ok = true, id = bid }, CanonTools.JsonOpts);
     }
 
@@ -1128,11 +1130,17 @@ public class NodeTools
         // nodes GetOrderedBeatsAsync already walked — no second tree walk, and the grouped and
         // flat views can never disagree about order or position.
         List<(int position, Guid NodeId, Beat Beat)> slice;
-        var numbers = string.IsNullOrWhiteSpace(numbersCsv)
-            ? null
-            : numbersCsv.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-                .Select(s => int.TryParse(s, out var n) ? n : (int?)null)
-                .Where(n => n.HasValue).Select(n => n!.Value).ToHashSet();
+        HashSet<int>? numbers = null;
+        if (!string.IsNullOrWhiteSpace(numbersCsv))
+        {
+            // Every token must be a beat number. Dropping the bad ones fell through to the range,
+            // and with no range that was the WHOLE book — read and, with markRead, marked read.
+            var tokens = numbersCsv.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+            var bad = tokens.Where(t => !int.TryParse(t, out _)).ToList();
+            if (tokens.Length == 0 || bad.Count > 0)
+                return JsonSerializer.Serialize(new { error = "bad_numbers", numbersCsv, bad, hint = "numbersCsv is Beat.Number values, e.g. \"14664,14665\"." }, CanonTools.JsonOpts);
+            numbers = tokens.Select(int.Parse).ToHashSet();
+        }
         if (numbers is { Count: > 0 })
         {
             slice = ordered.Select((ob, i) => (position: i + 1, ob.NodeId, ob.Beat))
@@ -1214,13 +1222,12 @@ public class NodeTools
     {
         if (string.IsNullOrWhiteSpace(idOrSlug)) return null;
         await using var db = await dbFactory.CreateDbContextAsync();
-        if (Guid.TryParse(idOrSlug, out var guid))
-        {
-            // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var byId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == guid);
-            if (byId != null) return byId;
-        }
-        // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-        return await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == idOrSlug || s.NodeCode == idOrSlug);
+        // The one resolver: a slug or NodeCode shared across universes resolves in the ambient
+        // universe or not at all, instead of whichever row came back first (which let read_beats,
+        // delete_beat and the rest act on another universe's book).
+        var id = await NodeRefResolver.ResolveAsync(db, idOrSlug);
+        if (id == null) return null;
+        // IgnoreQueryFilters(): explicit id, not ambient scope (2026-08-17).
+        return await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == id.Value);
     }
 }

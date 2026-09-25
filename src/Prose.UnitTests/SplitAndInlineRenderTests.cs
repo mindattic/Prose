@@ -41,6 +41,23 @@ public class SplitAndInlineRenderTests
     }
 
     [Test]
+    public void A_mangled_arrow_is_repaired_and_a_real_times_sign_is_not_mojibake()
+    {
+        var arrow = "→";
+        var mangled = TextSanitizerService.DecodeAsCp1252(System.Text.Encoding.UTF8.GetBytes("a " + arrow + " b"));
+        Assert.That(TextSanitizerService.Sanitize(mangled), Is.EqualTo("a " + arrow + " b"));
+        Assert.That(MojibakeRepairService.ContainsMojibake("0.5×–1.6×"), Is.False);
+    }
+
+    [Test]
+    public void Raw_html_in_a_chapter_body_becomes_well_formed_xhtml()
+    {
+        var xhtml = BookExportService.ToWellFormedXhtml("<p>one<br>two&nbsp;three</p><hr/><img src=\"a/b.png\" alt=\"x\">");
+        Assert.That(xhtml, Is.EqualTo("<p>one<br />two&#160;three</p><hr /><img src=\"a/b.png\" alt=\"x\" />"));
+        Assert.DoesNotThrow(() => System.Xml.Linq.XElement.Parse("<div>" + xhtml + "</div>"));
+    }
+
+    [Test]
     public void The_epub_renders_bold_italic_underline_and_strike_and_keeps_a_stray_asterisk()
     {
         Assert.That(ManuscriptExportService.EpubRenderInline("**SCREEN** and *soft*"),

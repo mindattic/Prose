@@ -505,8 +505,20 @@ public class BookExportService
     {
         var rendered = markdown.RenderToPrintHtml(c.Html ?? "");
         rendered = StripLeadingChapterHeading(rendered, c.Title);
-        return rendered;
+        return ToWellFormedXhtml(rendered);
     }
+
+    private static readonly System.Text.RegularExpressions.Regex VoidElement = new(
+        @"<(br|hr|img|meta|link|input|col|area|base|wbr|source)\b([^>]*?)\s*/?>",
+        System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Compiled);
+
+    /// <summary>EPUB 3 content documents must be well-formed XML, but Markdig passes raw HTML in
+    /// the body through as written: a <c>&lt;br&gt;</c> or <c>&amp;nbsp;</c> made the chapter file one
+    /// that readers and epubcheck reject. Void elements are self-closed and the one HTML-only
+    /// entity prose uses is written numerically.</summary>
+    internal static string ToWellFormedXhtml(string html) =>
+        VoidElement.Replace(html, m => $"<{m.Groups[1].Value}{m.Groups[2].Value} />")
+            .Replace("&nbsp;", "&#160;");
 
     private static string StripLeadingChapterHeading(string html, string chapterTitle)
     {

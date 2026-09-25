@@ -214,10 +214,11 @@ public class CanonExportService
         using (var fs = File.Create(path))
         using (var zip = new ZipArchive(fs, ZipArchiveMode.Create))
         {
+            var used = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             foreach (var (name, json) in entries)
             {
                 ct.ThrowIfCancellationRequested();
-                AddJsonEntry(zip, $"{Slugify(name)}.json", json);
+                AddJsonEntry(zip, UniqueEntryName(used, Slugify(name)), json);
             }
         }
 
@@ -240,13 +241,14 @@ public class CanonExportService
         using (var fs = File.Create(path))
         using (var zip = new ZipArchive(fs, ZipArchiveMode.Create))
         {
+            var used = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             foreach (var (repoName, entries) in repos.OrderBy(kv => kv.Key, StringComparer.OrdinalIgnoreCase))
             {
                 var folder = Slugify(repoName);
                 foreach (var (name, json) in entries)
                 {
                     ct.ThrowIfCancellationRequested();
-                    AddJsonEntry(zip, $"{folder}/{Slugify(name)}.json", json);
+                    AddJsonEntry(zip, UniqueEntryName(used, $"{folder}/{Slugify(name)}"), json);
                     total++;
                 }
             }
@@ -255,6 +257,16 @@ public class CanonExportService
         log.LogInformation("Exported global archive ({Repos} repos, {N} entries) → {Path}",
             repos.Count, total, path);
         return Task.FromResult(new ExportResult(path, total, new FileInfo(path).Length));
+    }
+
+    /// <summary>"{stem}.json", or "{stem}-2.json" and so on when that name is taken. Different names
+    /// can slug alike ("Ñu" and "Nu"; every all-non-Latin name becomes "unnamed"), and a zip keeps
+    /// duplicate entries that extract as one file, silently losing the others.</summary>
+    private static string UniqueEntryName(HashSet<string> used, string stem)
+    {
+        var name = $"{stem}.json";
+        for (var n = 2; !used.Add(name); n++) name = $"{stem}-{n}.json";
+        return name;
     }
 
     private static void AddJsonEntry(ZipArchive zip, string entryName, string json)

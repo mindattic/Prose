@@ -88,7 +88,7 @@ public static class ToolDispatch
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"[command-ledger] failed to record entry: {ex.Message}");
+            HubConsoleEcho.Error.WriteLine($"[command-ledger] failed to record entry: {ex.Message}");
         }
     }
 

@@ -2420,7 +2420,9 @@ public class NodeWorkbenchService
     /// its last remaining membership anywhere. Not reversible via <see cref="RestoreBeatAsync"/>
     /// (that method is now a no-op) — the ArchivedBooks snapshot from the last export is the
     /// only place a deleted beat's text can still be recovered from.</summary>
-    public async Task DeleteBeatAsync(Guid nodeId, Guid beatId, CancellationToken ct = default)
+    /// <returns>True when something was removed; false when the beat is linked only to OTHER
+    /// nodes (the caller named the wrong node — usually the book instead of the chapter).</returns>
+    public async Task<bool> DeleteBeatAsync(Guid nodeId, Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var junction = await db.BeatNodes
@@ -2442,9 +2444,10 @@ public class NodeWorkbenchService
                     await ClearEdgeBeatBoundsAsync(db, [beatId], ct);
                     db.Beats.Remove(orphan);
                     await db.SaveChangesAsync(ct);
+                    return true;
                 }
             }
-            return;
+            return false;
         }
 
         db.BeatNodes.Remove(junction);
@@ -2460,6 +2463,7 @@ public class NodeWorkbenchService
         }
 
         await db.SaveChangesAsync(ct);
+        return true;
     }
 
     /// <summary>Retired — there is no soft-deleted state to restore from anymore

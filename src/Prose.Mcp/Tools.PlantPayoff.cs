@@ -85,6 +85,20 @@ public class PlantPayoffTools(
         if (nodeId == null)
             return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
 
+        // A beat id that does not parse is an error: it used to register the pair unlinked and
+        // still answer "registered".
+        Guid? plantBeat = null, payoffBeat = null;
+        if (!string.IsNullOrWhiteSpace(plantBeatId))
+        {
+            if (!Guid.TryParse(plantBeatId, out var pb)) return JsonSerializer.Serialize(new { error = "invalid_guid", plantBeatId }, JsonOpts);
+            plantBeat = pb;
+        }
+        if (!string.IsNullOrWhiteSpace(payoffBeatId))
+        {
+            if (!Guid.TryParse(payoffBeatId, out var pob)) return JsonSerializer.Serialize(new { error = "invalid_guid", payoffBeatId }, JsonOpts);
+            payoffBeat = pob;
+        }
+
         try
         {
             var pp = await plantPayoffs.RegisterAsync(
@@ -92,8 +106,8 @@ public class PlantPayoffTools(
                 plantDescription,
                 payoffDescription,
                 category,
-                plantBeatId  != null && Guid.TryParse(plantBeatId,  out var pb)  ? pb  : null,
-                payoffBeatId != null && Guid.TryParse(payoffBeatId, out var pob) ? pob : null);
+                plantBeat,
+                payoffBeat);
 
             return JsonSerializer.Serialize(new { id = pp.Id, status = "registered", category = pp.Category }, JsonOpts);
         }
