@@ -54,9 +54,15 @@ public class UniverseTools
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
     public string SwitchUniverseImpl(string slug)
     {
-        if (!universe.UseUniverseBySlug(slug))
+        // Validate only. The Hub serves every client from one process, so switching its universe
+        // here changed the scope of every other session's unscoped calls (and marked the Hub
+        // explicitly scoped forever). The MCP session remembers the choice itself (HubInvoker) and
+        // sends it on each later call. Report the matched slug: CurrentSlug still reads this
+        // call's forwarded (previous) scope.
+        var match = universe.ListUniverses().FirstOrDefault(u => string.Equals(u.Slug, slug, StringComparison.OrdinalIgnoreCase));
+        if (match == null)
             return JsonSerializer.Serialize(new { error = "unknown_universe", slug, hint = "call list_universes for valid slugs" }, JsonOpts);
-        return JsonSerializer.Serialize(new { ok = true, current = universe.CurrentSlug }, JsonOpts);
+        return JsonSerializer.Serialize(new { ok = true, current = match.Slug }, JsonOpts);
     }
 
     [McpServerTool, Description("Return the universe currently active for this session (slug + name).")]

@@ -346,8 +346,9 @@ public class ManuscriptExportService
         return path;
     }
 
-    /// <summary>Strip the simple <c>*italic*</c> markdown markers for clean narration text.</summary>
-    private static string StripInlineMarkup(string text) => text.Replace("*", "");
+    /// <summary>Strip every inline marker (see <see cref="ProseInline"/>) for clean narration text.
+    /// Unmatched asterisks stay: they are real characters in the prose.</summary>
+    private static string StripInlineMarkup(string text) => ProseInline.StripFormatting(text);
 
     // ── EPUB builders ────────────────────────────────────────────────────────
 
@@ -470,20 +471,20 @@ public class ManuscriptExportService
         return sb.ToString();
     }
 
-    /// <summary>Render *italic* spans as XHTML em elements; HTML-escape everything else.</summary>
-    private static string EpubRenderInline(string text)
+    /// <summary>Render the inline markers (<see cref="ProseInline"/>: bold, italic, underline,
+    /// strikethrough) as XHTML elements; HTML-escape everything else. Mirrors the .docx export.</summary>
+    internal static string EpubRenderInline(string text)
     {
-        var segments = text.Split('*');
         var sb = new StringBuilder();
-        bool italic = false;
-        foreach (var seg in segments)
+        foreach (var span in ProseInline.Parse(text))
         {
-            if (seg.Length > 0)
-            {
-                var esc = EpubEsc(seg);
-                sb.Append(italic ? $"<em>{esc}</em>" : esc);
-            }
-            italic = !italic;
+            var open = new StringBuilder();
+            var close = new StringBuilder();
+            if (span.Style.HasFlag(ProseInline.Style.Bold)) { open.Append("<strong>"); close.Insert(0, "</strong>"); }
+            if (span.Style.HasFlag(ProseInline.Style.Italic)) { open.Append("<em>"); close.Insert(0, "</em>"); }
+            if (span.Style.HasFlag(ProseInline.Style.Underline)) { open.Append("<u>"); close.Insert(0, "</u>"); }
+            if (span.Style.HasFlag(ProseInline.Style.Strikethrough)) { open.Append("<s>"); close.Insert(0, "</s>"); }
+            sb.Append(open).Append(EpubEsc(span.Text)).Append(close);
         }
         return sb.ToString();
     }
@@ -605,20 +606,17 @@ public class ManuscriptExportService
     private static IEnumerable<string> SplitParagraphs(string text) =>
         text.Replace("\r\n", "\n").Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
 
-    /// <summary>Emit a paragraph into a QuestPDF text block, rendering simple
-    /// <c>*italic*</c> markdown spans as italic runs (mirrors the .docx export).</summary>
+    /// <summary>Emit a paragraph into a QuestPDF text block, rendering the inline markers
+    /// (<see cref="ProseInline"/>) as styled runs (mirrors the .docx export).</summary>
     private static void AppendInline(TextDescriptor t, string text)
     {
-        var segments = text.Split('*');
-        bool italic = false;
-        foreach (var seg in segments)
+        foreach (var span in ProseInline.Parse(text))
         {
-            if (seg.Length > 0)
-            {
-                if (italic) t.Span(seg).Italic();
-                else t.Span(seg);
-            }
-            italic = !italic;
+            var run = t.Span(span.Text);
+            if (span.Style.HasFlag(ProseInline.Style.Bold)) run = run.Bold();
+            if (span.Style.HasFlag(ProseInline.Style.Italic)) run = run.Italic();
+            if (span.Style.HasFlag(ProseInline.Style.Underline)) run = run.Underline();
+            if (span.Style.HasFlag(ProseInline.Style.Strikethrough)) run = run.Strikethrough();
         }
     }
 

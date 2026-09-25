@@ -211,9 +211,11 @@ public sealed class WorkOrderService(
             {
                 var now = HubBuildInfo.Build;
                 if (string.IsNullOrWhiteSpace(now)) return new(type, false, "the Hub build id is unknown.");
+                if (string.IsNullOrWhiteSpace(order.OpenedHubBuild))
+                    return new(type, false, "the build the Hub had when the order opened is unknown, so a redeploy cannot be proven.");
                 return string.Equals(now, order.OpenedHubBuild, StringComparison.Ordinal)
                     ? new(type, false, $"the Hub is still build {now}, the build it had when the order opened.")
-                    : new(type, true, $"the Hub moved from {order.OpenedHubBuild ?? "?"} to {now}.");
+                    : new(type, true, $"the Hub moved from {order.OpenedHubBuild} to {now}.");
             }
             case WorkOrderChecks.Author:
                 return string.IsNullOrWhiteSpace(inputs.AuthorConfirmation)

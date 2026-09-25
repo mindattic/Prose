@@ -352,7 +352,10 @@ public class NodeWorkbenchService
     /// analysis once, when the author leaves the beat. Defaults to <c>false</c>, so every existing
     /// caller keeps the behaviour it was written against.</para>
     /// </summary>
-    public async Task UpdateBeatTextAsync(Guid beatId, string newText, BeatWriteReason reason, DateTime? expectedUpdatedAt = null, bool deferAnalysis = false, CancellationToken ct = default)
+    /// <param name="logEditSession">False when the caller logs the edit session itself, synchronously
+    /// (the splice does, so a CLI exit cannot drop it). Logging twice at once raced: with no session
+    /// open, both calls auto-created one and the book was left with two open sessions.</param>
+    public async Task UpdateBeatTextAsync(Guid beatId, string newText, BeatWriteReason reason, DateTime? expectedUpdatedAt = null, bool deferAnalysis = false, CancellationToken ct = default, bool logEditSession = true)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct)
@@ -449,7 +452,7 @@ public class NodeWorkbenchService
         }
 
         // Fire-and-forget: log this prose edit to the active edit session.
-        if (editSession != null)
+        if (editSession != null && logEditSession)
             _ = Task.Run(() => editSession.TryLogBeatAsync(beatId, priorVersion, priorHash), CancellationToken.None)
                 .ContinueWith(t => log.LogError(t.Exception, "EditSession.TryLogBeatAsync background task failed"),
                     TaskContinuationOptions.OnlyOnFaulted);
@@ -1919,6 +1922,9 @@ public class NodeWorkbenchService
             // Pick whichever is closer to the original cursor.
             snapped = (snapped - bwd) <= (fwd - snapped) ? bwd : fwd;
         }
+        // A space inside a tagged multi-word name, or inside the tag's own attributes, is a word
+        // boundary but not a place to cut: both halves would carry broken markup.
+        snapped = OutsideEntityTag(text, snapped);
 
         var firstHalf  = text[..snapped].TrimEnd();
         var secondHalf = text[snapped..].TrimStart();
@@ -4018,8 +4024,11 @@ public class NodeWorkbenchService
         beat.LastRequestId = null;
     }
 
-    private static int FindSentenceSplit(string text)
+    internal static int FindSentenceSplit(string text)
     {
+        var tags = BeatMarkup.TagSpans(text);
+        bool InsideTag(int pos) => tags.Any(t => t.Start < pos && pos < t.Start + t.Length);
+
         int mid = text.Length / 2;
         int radius = Math.Max(80, text.Length / 3);
         for (int offset = 0; offset <= radius; offset++)
@@ -4029,11 +4038,28 @@ public class NodeWorkbenchService
                 int i = mid + offset * dir;
                 if (i < 1 || i >= text.Length - 1) continue;
                 char c = text[i];
-                if ((c == '.' || c == '!' || c == '?') && (i + 1 < text.Length && char.IsWhiteSpace(text[i + 1])))
+                // "Dr. Nadia Park" inside a tag is not a sentence end.
+                if ((c == '.' || c == '!' || c == '?') && (i + 1 < text.Length && char.IsWhiteSpace(text[i + 1]))
+                    && !InsideTag(i + 1))
                     return i + 1;
             }
         }
-        return mid;
+        // No sentence end: the nearest whitespace outside any tag, so the fallback splits neither a
+        // word nor a tag.
+        for (int offset = 0; offset < text.Length; offset++)
+            foreach (var i in new[] { mid - offset, mid + offset })
+                if (i > 0 && i < text.Length && char.IsWhiteSpace(text[i]) && !InsideTag(i))
+                    return i;
+        return OutsideEntityTag(text, mid);
+    }
+
+    /// <summary><paramref name="pos"/>, or the nearer edge of the entity tag that strictly contains it.</summary>
+    internal static int OutsideEntityTag(string text, int pos)
+    {
+        foreach (var t in BeatMarkup.TagSpans(text))
+            if (t.Start < pos && pos < t.Start + t.Length)
+                return pos - t.Start <= t.Start + t.Length - pos ? t.Start : t.Start + t.Length;
+        return pos;
     }
 
     private static (string? prev, string? next) BuildTextWindow(List<OrderedBeat> ordered, int targetIndex, int contextChars)

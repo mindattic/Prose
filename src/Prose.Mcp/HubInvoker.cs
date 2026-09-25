@@ -63,5 +63,16 @@ public sealed class HubInvoker(IHttpClientFactory httpFactory, IUniverseContext 
                 hint = "Is Prose.Hub running on port 5900?",
             });
         }
+        catch (TaskCanceledException ex)
+        {
+            // HttpClient.Timeout surfaces as TaskCanceledException, not HttpRequestException. The
+            // Hub may still be running the call, so say so instead of failing the tool opaquely.
+            return System.Text.Json.JsonSerializer.Serialize(new
+            {
+                error = "hub_timeout",
+                detail = ex.Message,
+                hint = $"The Hub did not answer within {http.Timeout}. It may still be running {toolClass}.{method}; check its log before retrying a write.",
+            });
+        }
     }
 }

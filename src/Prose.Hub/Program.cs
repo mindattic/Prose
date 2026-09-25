@@ -421,6 +421,8 @@ app.MapGet("/api/factory/next", async (string? format, string? node,
     Prose.Core.Services.Factory.FactoryService factory, IDbContextFactory<ProseDbContext> dbf) =>
 {
     var bookId = string.IsNullOrWhiteSpace(node) ? null : await NodeRefResolver.ResolveAsync(dbf, node);
+    if (!string.IsNullOrWhiteSpace(node) && bookId == null)
+        return Results.NotFound($"node_not_found: '{node}'");
     var next = await factory.NextAsync(bookId);
     if (format == "line") return Results.Text(Prose.Core.Services.Factory.FactoryService.RenderLine(next));
     if (format == "json") return Results.Ok(next);

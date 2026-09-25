@@ -1132,7 +1132,9 @@ if (args.Contains("--booktok"))
 //   prose --order add|list|close|abandon|seed …
 //   prose --session end --file summary.json
 //   prose --ruling add|list|supersede|violations|metrics|seed …
-static string? LeadingFlagIgnoringUniverse(string[] a) => a.Where((x, i) => x != "--universe" && (i == 0 || a[i - 1] != "--universe")).FirstOrDefault();
+// Skips both spellings the universe parser accepts: "--universe <slug>" and "--universe=<slug>".
+static string? LeadingFlagIgnoringUniverse(string[] a) => a.Where((x, i) => x != "--universe"
+    && !x.StartsWith("--universe=", StringComparison.Ordinal) && (i == 0 || a[i - 1] != "--universe")).FirstOrDefault();
 if (LeadingFlagIgnoringUniverse(args) is "--factory" or "--order" or "--session" or "--ruling")
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("FactoryCli", args);

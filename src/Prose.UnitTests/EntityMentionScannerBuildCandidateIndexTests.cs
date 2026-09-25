@@ -306,4 +306,39 @@ public class EntityMentionScannerBuildCandidateIndexTests
 
         Assert.That(candidates.Any(c => c.Text == "Sp"), Is.False);
     }
+
+    [Test]
+    public void Scan_ANameEdgedWithPunctuation_StillTags_AndStillRespectsWordEdges()
+    {
+        var weapon = Guid.NewGuid();
+        var corp = Guid.NewGuid();
+        var candidates = new List<EntityMentionScanner.MentionCandidate>
+        {
+            new("Howl FB-7 'Wolfpack'", weapon, "Howl FB-7 'Wolfpack'", "weapon", false),
+            new("Acme, Inc.", corp, "Acme, Inc.", "corponation", false),
+        };
+
+        var hits = EntityMentionScanner.Scan("She racked the Howl FB-7 'Wolfpack' and billed Acme, Inc. for it.", candidates);
+        Assert.That(hits.Select(h => h.EntityId), Is.EquivalentTo(new[] { weapon, corp }));
+        Assert.That(EntityMentionScanner.Scan("Acme, Incorporated", candidates), Is.Empty, "a name still has to end at a word edge");
+    }
+
+    [Test]
+    public async Task BuildCandidateIndexAsync_ALeadingTitle_IsNeverDerivedAsABareName()
+    {
+        await using var db = await dbFactory.CreateDbContextAsync();
+        var reyes = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = reyes, UniverseId = universeId, EntityType = "character", Name = "Captain Reyes", Slug = "captain-reyes", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = reyes, Name = "Captain Reyes" });
+        var park = Guid.NewGuid();
+        db.Entities.Add(new Entity { Id = park, UniverseId = universeId, EntityType = "character", Name = "Dr. Nadia Park", Slug = "dr-nadia-park", Status = "canon", CreatedAt = DateTime.UtcNow, ModifiedAt = DateTime.UtcNow });
+        db.Characters.Add(new Character { Id = park, Name = "Dr. Nadia Park" });
+        await db.SaveChangesAsync();
+
+        var candidates = await EntityMentionScanner.BuildCandidateIndexAsync(db, universeId, bookNodeId: null);
+
+        Assert.That(candidates.Any(c => c.Text is "Captain" or "Dr."), Is.False, "an honorific is never a name on its own");
+        Assert.That(candidates.Any(c => c.Text == "Reyes" && c.EntityId == reyes), Is.True);
+        Assert.That(EntityMentionScanner.Scan("The Captain said Dr. Smith was late.", candidates), Is.Empty);
+    }
 }

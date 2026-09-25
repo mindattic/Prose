@@ -103,7 +103,8 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FindAsync(new object[] { nodeId }, ct)
+        // IgnoreQueryFilters: an explicit id, not an ambient scope (FindAsync applies the universe filter).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var pp = new PlantPayoff
@@ -137,6 +138,13 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
             db.NarrativeObligations.Add(ob);
             db.NarrativeObligationEvents.Add(new NarrativeObligationEvent { ObligationId = ob.Id, Action = ObligationEventAction.Open, BeatId = plantBeatId, Actor = ObligationActor.AuthorMcp, Note = "registered plant/payoff pair" });
             pp.ObligationId = ob.Id;
+        }
+        else
+        {
+            // The same pair registered again still links to its obligation, or paying it off
+            // (LinkPayoffBeatAsync) could never close that obligation.
+            pp.ObligationId = await db.NarrativeObligations.Where(o => o.NodeId == bookNodeId && o.DedupKey == ob.DedupKey)
+                .Select(o => (Guid?)o.Id).FirstOrDefaultAsync(ct);
         }
         await db.SaveChangesAsync(ct);
         return pp;
@@ -232,7 +240,7 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
     public async Task<PlantPayoffAudit> AuditAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking()
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 

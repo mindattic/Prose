@@ -427,11 +427,11 @@ Create or update a character in canon. Pass empty id to create new; pass an exis
 - `name` (string, required) — Character's full name. Required.
 - `role` (string, optional) — Role or function in the world (e.g. 'street samurai', 'fixer', 'cleanup contractor').
 - `description` (string, optional) — Prose description of who this character is.
-- `species` (string, optional) — Species: human, ai, android, robot, cyborg, synthetic, hybrid, unknown.
+- `species` (string, optional) — Species: human, ai, android, robot, cyborg, synthetic, hybrid, unknown. Omit to keep the current value (a new character defaults to human).
 - `gender` (string, optional) — Gender identity.
 - `pronouns` (string, optional) — Pronouns (e.g. 'he/him', 'she/her', 'they/them').
 - `age` (int, optional) — Age in years.
-- `status` (string, optional) — Status: alive, deceased, unknown, missing.
+- `status` (string, optional) — Status: alive, deceased, unknown, missing. Omit to keep the current value (a new character defaults to alive).
 - `location` (string, optional) — Refused if given: location is not stored on the character (see set_character_fields).
 - `affiliation` (string, optional) — Faction, corp, or freelancer network affiliation.
 - `augmentations` (string, optional) — Augmentation summary — cyberware, genemods, neural enhancements.
@@ -484,7 +484,7 @@ Create or update a faction (street gang, syndicate, cell, advocacy group, etc.) 
 Create or update a place / district in canon. Pass empty id to create new; pass an existing id to update. List fields are comma-delimited strings.
 
 - `name` (string, required) — Place name. Required.
-- `type` (string, optional) — Type of place (e.g. 'district', 'building', 'landmark', 'corridor', 'station').
+- `type` (string, optional) — Type of place (e.g. 'district', 'building', 'landmark', 'corridor', 'station'). Omit to keep the current value (a new place defaults to 'place').
 - `description` (string, optional) — Prose description of the place.
 - `demographics` (string, optional) — Demographic makeup.
 - `economy` (string, optional) — Economic profile.

@@ -207,6 +207,30 @@ public class FactoryTests
     }
 
     [Test]
+    public async Task A_deploy_check_fails_when_the_opening_build_is_unknown()
+    {
+        HubBuildInfo.Build = null;
+        var order = await orders.AddAsync(new WorkOrderDraft("engine", "deploy", RootApprovedBy: "author",
+            ChecksJson: """[{"type":"deploy"}]"""));
+        HubBuildInfo.Build = "build-b";
+        var result = await orders.CloseAsync(order.Id, new CloseInputs());
+        Assert.That(result.Closed, Is.False);
+        Assert.That(result.Checks.Single().Detail, Does.Contain("unknown"));
+    }
+
+    [Test]
+    public void A_tests_check_names_a_method_exactly_not_by_prefix()
+    {
+        var run = new TrxReader.TrxRun(DateTimeOffset.UtcNow, [
+            new TrxReader.TrxResult("AlphaTests", "CloseAsync_refuses", "Passed"),
+            new TrxReader.TrxResult("AlphaTests", "Parses(\"x\")", "Passed"),
+        ]);
+        Assert.That(TrxReader.Check(run, ["AlphaTests.Close"]).Ok, Is.False, "a prefix of another test's name is not that test");
+        Assert.That(TrxReader.Check(run, ["AlphaTests.CloseAsync_refuses"]).Ok, Is.True);
+        Assert.That(TrxReader.Check(run, ["AlphaTests.Parses"]).Ok, Is.True, "parameterised cases still match");
+    }
+
+    [Test]
     public async Task A_parent_closes_itself_when_its_last_child_closes_and_not_before()
     {
         var root = await orders.AddAsync(new WorkOrderDraft("engine", "root", RootApprovedBy: "author"));
@@ -270,6 +294,19 @@ public class FactoryTests
         (ok, _, ended) = await sessions.EndAsync(null, summary, null);
         Assert.That(ok, Is.True, "with one session left open, no id is unambiguous");
         Assert.That(ended, Is.EqualTo(theirs.SessionId));
+    }
+
+    [Test]
+    public async Task An_ended_session_cannot_be_ended_again_by_id()
+    {
+        var s = await sessions.StartAsync("claude-1", null, null);
+        var (ok, _, _) = await sessions.EndAsync(s.SessionId, """{"done":["first"],"decisions":[],"next":"read"}""", null);
+        Assert.That(ok, Is.True);
+        (ok, var problems, _) = await sessions.EndAsync(s.SessionId, """{"done":["second"],"decisions":[],"next":"x"}""", null);
+        Assert.That(ok, Is.False);
+        Assert.That(problems.Single(), Does.Contain("already ended"));
+        var next = await sessions.StartAsync("claude-2", null, null);
+        Assert.That(next.LastSummaryJson, Does.Contain("first").And.Not.Contain("second"));
     }
 
     [Test]

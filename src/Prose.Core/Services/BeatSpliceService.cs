@@ -61,7 +61,9 @@ public sealed class BeatSpliceService(
         // Membership comes from the node's reading order (so a beat from another book can never be
         // hit by a typo'd number); the prose itself is read only for the beats the docket names.
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
+        // DistinctBy: a beat shared by two nodes of the tree appears twice in the reading order.
         var inNode = ordered.Where(o => numbers.Contains(o.Beat.Number))
+                            .DistinctBy(o => o.Beat.Id)
                             .ToDictionary(o => o.Beat.Number, o => o.Beat.Id);
 
         var failures = new List<string>();
@@ -98,8 +100,8 @@ public sealed class BeatSpliceService(
             try
             {
                 await workbench.UpdateBeatTextAsync(p.Id, p.Outcome.Text, BeatWriteReason.AuthorEdit,
-                    expectedUpdatedAt: row.UpdatedAt, deferAnalysis: deferAnalysis, ct: ct);
-                // Synchronous session log — the workbench's own is fire-and-forget and a CLI exit drops it.
+                    expectedUpdatedAt: row.UpdatedAt, deferAnalysis: deferAnalysis, ct: ct, logEditSession: false);
+                // Synchronous session log (in place of the workbench's fire-and-forget one, which a CLI exit drops).
                 await sessions.TryLogBeatAsync(p.Id, row.Version, row.Hash, ct);
                 results.Add(new SpliceBeatResult(p.Number, p.Id, p.Splices, p.Outcome.UnwrappedTags, "written"));
             }

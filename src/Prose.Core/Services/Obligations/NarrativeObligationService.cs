@@ -817,7 +817,7 @@ public class NarrativeObligationService(
     private static async Task<List<string>> StopListExamplesAsync(ProseDbContext db, Guid bookNodeId, CancellationToken ct)
     {
         var universeId = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == bookNodeId).Select(n => n.UniverseId).FirstOrDefaultAsync(ct);
-        var nodeIds = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.UniverseId == universeId && n.ParentNodeId == null).Select(n => n.Id).ToListAsync(ct);
+        var nodeIds = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.UniverseId == universeId && (n.ParentNodeId == null || n is BookNode)).Select(n => n.Id).ToListAsync(ct);
         return await db.NarrativeObligations.AsNoTracking()
             .Where(o => nodeIds.Contains(o.NodeId) && o.State == ObligationState.Dropped
                         && (o.DroppedReason == ObligationDroppedReason.BackgroundTexture || o.DroppedReason == ObligationDroppedReason.FalseExtraction))

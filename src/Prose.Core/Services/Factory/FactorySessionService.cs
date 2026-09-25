@@ -75,6 +75,9 @@ public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFa
             session = open.FirstOrDefault();
         }
         if (session == null) return (false, ["no open session to end."], sessionId);
+        // An explicit id must still name an OPEN session: re-ending one would overwrite the
+        // summary the next start hook shows as LAST SESSION.
+        if (session.EndedAt != null) return (false, [$"session {session.Id} already ended at {session.EndedAt:u}."], session.Id);
 
         var problems = new List<string>();
         if (summary["next"] is null) problems.Add("the summary has no 'next'.");

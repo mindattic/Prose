@@ -113,11 +113,19 @@ public sealed class EntityRenameService(
     public async Task<FieldWriteResult?> RenameRecordAsync(Guid entityId, string entityType, string newName, CancellationToken ct = default)
     {
         if (string.Equals(entityType, "character", StringComparison.OrdinalIgnoreCase)
-            || !EntityFieldWriter.Repositories.ContainsKey(entityType))
+            || !EntityFieldWriter.Repositories.TryGetValue(entityType, out var repoType))
             return null;
-        var fields = new JsonObject { ["name"] = newName }.ToJsonString();
+        // Not every record calls its name "name": vocabulary keeps it in "term", news in
+        // "headline", a contract in "codename", a document in "title". Sending "name" to those
+        // was refused as an unknown field, so their renames always failed.
+        var props = FieldPatch.Properties(repoType.BaseType!.GetGenericArguments()[0]);
+        var nameKey = RecordNameKeys.FirstOrDefault(props.ContainsKey);
+        if (nameKey == null) return null;
+        var fields = new JsonObject { [nameKey] = newName }.ToJsonString();
         return await fieldWriter.SetFieldsAsync(entityId.ToString("N"), fields, confirmUnread: true, ct);
     }
+
+    private static readonly string[] RecordNameKeys = ["name", "term", "headline", "codename", "title"];
 
     private async Task<Guid> NodeUniverseAsync(Guid nodeId, CancellationToken ct)
     {

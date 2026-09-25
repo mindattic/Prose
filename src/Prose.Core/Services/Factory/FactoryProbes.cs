@@ -49,7 +49,9 @@ public static class GitProbe
         Run(repo, "merge-base", "--is-ancestor", hash, "HEAD").Exit == 0;
 
     public static IReadOnlyList<string> ChangedFiles(string repo, string hash) =>
-        Run(repo, "show", "--name-only", "--format=", hash).Out
+        // quotePath=false: otherwise git wraps non-ASCII paths in "…" with octal escapes and no
+        // declared glob can match them.
+        Run(repo, "-c", "core.quotePath=false", "show", "--name-only", "--format=", hash).Out
             .Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
             .Select(f => f.Replace('\\', '/'))
             .ToList();
@@ -114,7 +116,7 @@ public static class TrxReader
     }
 
     /// <summary>A required name is "ClassName" (every result in that class) or "ClassName.Method"
-    /// (every result whose test name starts with Method — parameterised cases included). It passes
+    /// (every result whose test name is Method, or Method(args) for parameterised cases). It passes
     /// when at least one result matches and every match Passed.</summary>
     public static (bool Ok, string Detail) Check(TrxRun run, IEnumerable<string> required)
     {
@@ -126,7 +128,7 @@ public static class TrxReader
             var cls = dot < 0 ? name : name[..dot];
             var method = dot < 0 ? null : name[(dot + 1)..];
             var hits = run.Results.Where(r => string.Equals(r.ClassName, cls, StringComparison.Ordinal)
-                && (method == null || r.TestName.StartsWith(method, StringComparison.Ordinal))).ToList();
+                && (method == null || r.TestName == method || r.TestName.StartsWith(method + "(", StringComparison.Ordinal))).ToList();
             total += hits.Count;
             if (hits.Count == 0) problems.Add($"{name}: no results in the TRX");
             else if (hits.Any(h => h.Outcome != "Passed"))

@@ -1281,7 +1281,7 @@ public static class CharacterMapper
     // ─────────────────────────────────────────────────────────────────────
 
     /// <summary>Honorifics we strip when picking the first name. Stored separately in TitlePrefix.</summary>
-    private static readonly HashSet<string> NameTitles = new(StringComparer.OrdinalIgnoreCase)
+    internal static readonly HashSet<string> NameTitles = new(StringComparer.OrdinalIgnoreCase)
     {
         "Dr.", "Dr", "Mr.", "Mr", "Ms.", "Ms", "Mrs.", "Mrs", "Mx.", "Mx",
         "Prof.", "Prof", "Sir", "Dame", "Lord", "Lady",

@@ -346,6 +346,9 @@ public class ConfigTools
         if (err != null) return JsonSerializer.Serialize(new { error = err }, JsonOpts);
 
         var nodeId = nodeSlug != null ? await ResolveNodeIdAsync(nodeSlug) : null;
+        // Without this guard an unknown slug became nodeId = null, which removed the GLOBAL pin.
+        if (nodeSlug != null && nodeId == null)
+            return JsonSerializer.Serialize(new { error = $"node_not_found: '{nodeSlug}'" }, JsonOpts);
         await userContext.RemoveAsync(docId, nodeId);
         return JsonSerializer.Serialize(new { action = "removed", doc = docPath, nodeSlug = nodeSlug ?? "(global)" }, JsonOpts);
     }

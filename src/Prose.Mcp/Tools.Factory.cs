@@ -70,7 +70,12 @@ public class FactoryTools(
     [FactoryTool("factory_next", "2026-09-23", Cli = "FactoryCli --factory next")]
     public async Task<string> FactoryNextImpl(string? nodeIdOrSlug = null)
     {
-        var next = await factory.NextAsync(await Resolve(nodeIdOrSlug));
+        var bookId = await Resolve(nodeIdOrSlug);
+        // A mistyped book used to fall through to the whole factory's next action, answered as if
+        // it were that book's.
+        if (!string.IsNullOrWhiteSpace(nodeIdOrSlug) && bookId == null)
+            return JsonSerializer.Serialize(new { ok = false, error = "node_not_found", nodeIdOrSlug }, JsonOpts);
+        var next = await factory.NextAsync(bookId);
         return JsonSerializer.Serialize(next, JsonOpts);
     }
 
@@ -235,7 +240,15 @@ public class FactoryTools(
     [FactoryTool("session_end", "2026-09-23", Cli = "FactoryCli --session end")]
     public async Task<string> SessionEndImpl(string summaryJson, string? sessionId = null)
     {
-        var (ok, problems, id) = await sessions.EndAsync(Guid.TryParse(sessionId, out var s) ? s : null, summaryJson, GitProbe.Head(GitProbe.RepoPath));
+        // A malformed id must not fall back to "the one open session": that ends someone else's.
+        Guid? sid = null;
+        if (!string.IsNullOrWhiteSpace(sessionId))
+        {
+            if (!Guid.TryParse(sessionId, out var s))
+                return JsonSerializer.Serialize(new { ok = false, error = "invalid_session_id", sessionId }, JsonOpts);
+            sid = s;
+        }
+        var (ok, problems, id) = await sessions.EndAsync(sid, summaryJson, GitProbe.Head(GitProbe.RepoPath));
         return JsonSerializer.Serialize(new { ok, sessionId = id, problems }, JsonOpts);
     }
 }

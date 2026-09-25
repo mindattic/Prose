@@ -56,11 +56,11 @@ public class CoreEntityCrudTools
         [Description("Character's full name. Required.")] string name,
         [Description("Role or function in the world (e.g. 'street samurai', 'fixer', 'cleanup contractor').")] string role = "",
         [Description("Prose description of who this character is.")] string description = "",
-        [Description("Species: human, ai, android, robot, cyborg, synthetic, hybrid, unknown.")] string species = "human",
+        [Description("Species: human, ai, android, robot, cyborg, synthetic, hybrid, unknown. Omit to keep the current value (a new character defaults to human).")] string species = "",
         [Description("Gender identity.")] string gender = "",
         [Description("Pronouns (e.g. 'he/him', 'she/her', 'they/them').")] string pronouns = "",
         [Description("Age in years.")] int age = 0,
-        [Description("Status: alive, deceased, unknown, missing.")] string status = "alive",
+        [Description("Status: alive, deceased, unknown, missing. Omit to keep the current value (a new character defaults to alive).")] string status = "",
         [Description("Refused if given: location is not stored on the character (see set_character_fields).")] string location = "",
         [Description("Faction, corp, or freelancer network affiliation.")] string affiliation = "",
         [Description("Augmentation summary — cyberware, genemods, neural enhancements.")] string augmentations = "",
@@ -86,11 +86,11 @@ public class CoreEntityCrudTools
         string name,
         string role = "",
         string description = "",
-        string species = "human",
+        string species = "",
         string gender = "",
         string pronouns = "",
         int age = 0,
-        string status = "alive",
+        string status = "",
         string location = "",
         string affiliation = "",
         string augmentations = "",
@@ -125,6 +125,9 @@ public class CoreEntityCrudTools
                 .Where(n => n.Slug == originNodeSlug || n.NodeCode == originNodeSlug)
                 .Select(n => (Guid?)n.Id)
                 .FirstOrDefault();
+            // A typo here used to create the character universe-wide and answer ok:true.
+            if (resolvedOrigin == null)
+                return JsonSerializer.Serialize(new { ok = false, error = "node_not_found", originNodeSlug }, CanonTools.JsonOpts);
         }
 
         if (string.IsNullOrEmpty(id))
@@ -281,7 +284,7 @@ public class CoreEntityCrudTools
         if (!string.IsNullOrWhiteSpace(physicalDescriptionJson))
         {
             try { c.PhysicalDescription = JsonSerializer.Deserialize<PhysicalDescription>(physicalDescriptionJson, CanonTools.JsonOpts) ?? c.PhysicalDescription; }
-            catch { /* keep existing */ }
+            catch (Exception ex) { warnings.Add($"physicalDescriptionJson ignored — parse error: {ex.Message}"); }
         }
 
         var isNewCharacter = string.IsNullOrEmpty(id);
@@ -339,7 +342,7 @@ public class CoreEntityCrudTools
     [McpServerTool, Description("Create or update a place / district in canon. Pass empty id to create new; pass an existing id to update. List fields are comma-delimited strings.")]
     public Task<string> CreatePlace(
         [Description("Place name. Required.")] string name,
-        [Description("Type of place (e.g. 'district', 'building', 'landmark', 'corridor', 'station').")] string type = "place",
+        [Description("Type of place (e.g. 'district', 'building', 'landmark', 'corridor', 'station'). Omit to keep the current value (a new place defaults to 'place').")] string type = "",
         [Description("Prose description of the place.")] string description = "",
         [Description("Demographic makeup.")] string demographics = "",
         [Description("Economic profile.")] string economy = "",
@@ -356,7 +359,7 @@ public class CoreEntityCrudTools
     /// <summary>The real logic — runs inside the Hub's process via ToolDispatch reflection, never called directly by this process.</summary>
     public string CreatePlaceImpl(
         string name,
-        string type = "place",
+        string type = "",
         string description = "",
         string demographics = "",
         string economy = "",

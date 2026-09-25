@@ -80,7 +80,7 @@ public class NodeFullExportService
             // reading speed). Recomputed from the CURRENT live prose on every export so both track
             // edits automatically -- never trust a stale value left over from a prior export.
             var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
-            var wordCount = ordered.Sum(ob => CountWords(ob.Beat.Text ?? ""));
+            var wordCount = ordered.Sum(ob => CountWords(BeatMarkup.StripEntityTags(ob.Beat.Text ?? "")));
             var kindlePages = Math.Max(1, (int)Math.Round(wordCount / 250.0));
             var readingMinutes = Math.Max(1, (int)Math.Round(wordCount / 200.0));
             node.KindlePages = kindlePages;
@@ -139,7 +139,7 @@ public class NodeFullExportService
         // same bundle again; that is intentional and preserves every export event.
         await using (var dbArchive = await dbFactory.CreateDbContextAsync(ct))
         {
-            var version = await dbArchive.Nodes.AsNoTracking().Where(n => n.Id == nodeId)
+            var version = await dbArchive.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == nodeId)
                 .Select(n => n.Version).FirstOrDefaultAsync(ct);
             cleanup.ArchiveCurrent(outDir, version);
         }

@@ -103,8 +103,14 @@ public class ObligationTools(
     {
         var nodeId = await ResolveBookAsync(nodeIdOrSlug);
         if (nodeId == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
-        Guid? origin = Guid.TryParse(beatId, out var b) ? b : null;
+        Guid? origin = null;
+        if (!string.IsNullOrWhiteSpace(beatId))
+        {
+            if (!Guid.TryParse(beatId, out var b)) return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, JsonOpts);
+            origin = b;
+        }
         var (dueKind, dueValue) = ParseDue(due);
+        if (dueKind == null) return BadDue(due);
         return Result(await obligations.OpenAsync(nodeId.Value, kind, description, Actor, origin, quote, null, trigger, dueKind, dueValue));
     }
 
@@ -146,6 +152,7 @@ public class ObligationTools(
     {
         if (!Guid.TryParse(obligationId, out var id)) return JsonSerializer.Serialize(new { error = "invalid_guid" }, JsonOpts);
         var (dueKind, dueValue) = ParseDue(due);
+        if (dueKind == null) return BadDue(due);
         return Result(await obligations.DeferAsync(id, note, dueKind, dueValue, Actor));
     }
 
@@ -167,6 +174,7 @@ public class ObligationTools(
     {
         if (!Guid.TryParse(obligationId, out var id)) return JsonSerializer.Serialize(new { error = "invalid_guid" }, JsonOpts);
         var (dueKind, dueValue) = ParseDue(due);
+        if (dueKind == null) return BadDue(due);
         return Result(await obligations.SetDueAsync(id, dueKind, dueValue, Actor));
     }
 
@@ -234,7 +242,12 @@ public class ObligationTools(
             ? new { ok = true, error = (string?)null, obligation = res.Row }
             : new { ok = false, error = res.Error, obligation = (NarrativeObligation?)null }, JsonOpts);
 
-    static (string Kind, int? Value) ParseDue(string? due)
+    static string BadDue(string? due) =>
+        JsonSerializer.Serialize(new { error = "bad_due", due, hint = "chapter:N | beats:N | book-end" }, JsonOpts);
+
+    /// <summary>Kind is null when <paramref name="due"/> is none of the accepted forms: a typo used
+    /// to become book-end silently and answer ok:true.</summary>
+    static (string? Kind, int? Value) ParseDue(string? due)
     {
         if (string.IsNullOrWhiteSpace(due) || due.Equals("book-end", StringComparison.OrdinalIgnoreCase)) return (ObligationDueKind.BookEnd, null);
         var parts = due.Split(':', 2);
@@ -243,7 +256,7 @@ public class ObligationTools(
             if (parts[0].Equals("chapter", StringComparison.OrdinalIgnoreCase)) return (ObligationDueKind.Chapter, n);
             if (parts[0].Equals("beats",   StringComparison.OrdinalIgnoreCase)) return (ObligationDueKind.Beats, n);
         }
-        return (ObligationDueKind.BookEnd, null);
+        return (null, null);
     }
 
     async Task<Guid?> ResolveBookAsync(string idOrSlug)
@@ -251,13 +264,9 @@ public class ObligationTools(
         var nodeId = await NodeRefResolver.ResolveAsync(dbFactory, idOrSlug);
         if (nodeId == null) return null;
         await using var db = await dbFactory.CreateDbContextAsync();
-        var walk = nodeId.Value;
-        for (var depth = 0; depth < 10; depth++)
-        {
-            var parent = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == walk).Select(n => n.ParentNodeId).FirstOrDefaultAsync();
-            if (parent == null) return walk;
-            walk = parent.Value;
-        }
-        return walk;
+        // The nearest book ancestor, as the plant/payoff path files it: a book's parent can be a
+        // series, and walking to the root filed and listed a series-member book's obligations
+        // against the series.
+        return await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, nodeId.Value) ?? nodeId.Value;
     }
 }

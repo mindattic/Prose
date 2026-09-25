@@ -250,10 +250,18 @@ public static class EntityMentionScanner
         {
             if (!seenIds.Contains(e.Id) || !string.Equals(e.EntityType, "character", StringComparison.OrdinalIgnoreCase))
                 continue;
-            var tokens = e.Name.Split(' ', StringSplitOptions.RemoveEmptyEntries)
-                .Where(t => t.Length >= 3 && !Stopwords.Contains(t))
+            var words = e.Name.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToList();
+            // A leading honorific is not a name: "Captain Reyes" derived bare "Captain", so every
+            // capitalised "Captain" tagged him. "Captain Reyes" offers "Reyes" alone.
+            var titled = words.Count >= 2 && CharacterMapper.NameTitles.Contains(words[0]);
+            if (titled) words.RemoveAt(0);
+            // Letter- or digit-edged only: a derived "Dr." or "Jr." would match every "Dr." in the
+            // book once the scan stopped depending on \b (which never matched after the period).
+            var tokens = words
+                .Where(t => t.Length >= 3 && !Stopwords.Contains(t)
+                            && char.IsLetterOrDigit(t[0]) && char.IsLetterOrDigit(t[^1]))
                 .ToList();
-            if (tokens.Count < 2) continue;
+            if (tokens.Count < (titled ? 1 : 2)) continue;
 
             // The numeral is dropped from the first/last pair, not from the name: "Praxis Operator
             // Five" offers "Praxis", never "Five" — and never "Operator" by promotion.
@@ -427,7 +435,10 @@ public static class EntityMentionScanner
             var cmp = c.RequiresStrictCase ? StringComparison.Ordinal : StringComparison.OrdinalIgnoreCase;
             if (text.IndexOf(c.Text, cmp) < 0) continue; // cheap containment pre-filter
 
-            var pattern = $@"\b{Regex.Escape(c.Text)}\b";
+            // Lookarounds, not \b: \b beside a name's own leading/trailing punctuation ("…'Wolfpack'",
+            // "Acme, Inc.") only matches when the neighbouring text is a word character, so those
+            // names never tagged even written out in full. For word-edged names this is identical.
+            var pattern = $@"(?<!\w){Regex.Escape(c.Text)}(?!\w)";
             var opts = c.RequiresStrictCase ? RegexOptions.None : RegexOptions.IgnoreCase;
             foreach (Match m in Regex.Matches(text, pattern, opts))
                 raw.Add(new MentionMatch(m.Index, m.Length, c.EntityId, c.Name, c.EntityType));

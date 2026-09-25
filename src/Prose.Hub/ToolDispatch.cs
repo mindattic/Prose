@@ -170,9 +170,19 @@ public static class ToolDispatch
             if (argsObj.ValueKind == JsonValueKind.Object &&
                 TryGetPropertyCaseInsensitive(argsObj, p.Name!, out var prop))
             {
-                args[i] = prop.ValueKind == JsonValueKind.Null
-                    ? null
-                    : JsonSerializer.Deserialize(prop.GetRawText(), p.ParameterType, JsonOpts);
+                // A value of the wrong shape ("unit":"3x" for an int) threw out of the dispatcher as
+                // an unhandled 500, with no ledger row. Answer it as a named bad argument instead.
+                try
+                {
+                    args[i] = prop.ValueKind == JsonValueKind.Null
+                        ? null
+                        : JsonSerializer.Deserialize(prop.GetRawText(), p.ParameterType, JsonOpts);
+                }
+                catch (Exception ex) when (ex is JsonException or NotSupportedException or FormatException)
+                {
+                    return (Results.Json(new { error = "bad_argument", argument = p.Name, detail = ex.Message }, statusCode: 400),
+                        false, null, $"bad_argument: {p.Name}: {ex.Message}");
+                }
             }
             else if (p.HasDefaultValue)
             {

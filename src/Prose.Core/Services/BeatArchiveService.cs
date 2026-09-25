@@ -80,7 +80,9 @@ public class BeatArchiveService(
 
         // The one timestamp guaranteed to exist for every beat, trace or no trace — the
         // moment BeatContextTrace was (or would have been) written, right before the LLM call.
-        var asOf = trace?.CreatedAt ?? beat.UpdatedAt;
+        // Both are written as UtcNow but come back from the DB with Kind Unspecified, which every
+        // later ToUniversalTime() would read as LOCAL time and shift by the machine's offset.
+        var asOf = DateTime.SpecifyKind(trace?.CreatedAt ?? beat.UpdatedAt, DateTimeKind.Utc);
 
         var roster = await db.Database.SqlQueryRaw<BeatEntityRosterRow>(
             "SELECT [EntityId], [Name], [EntityType], [MatchSource], [Score] FROM [dbo].[BeatEntities] WHERE [BeatId] = {0}",
@@ -109,7 +111,8 @@ public class BeatArchiveService(
                 $"FROM [dbo].[Edges] FOR SYSTEM_TIME AS OF '{ts}' " +
                 $"WHERE [SourceId] IN ({placeholders}) OR [TargetId] IN ({placeholders})",
                 args).ToListAsync(ct);
-            var nameById = roster.ToDictionary(r => r.EntityId, r => r.Name);
+            // One entity can hold several roster rows (one per match source).
+            var nameById = roster.GroupBy(r => r.EntityId).ToDictionary(g => g.Key, g => g.First().Name);
             edges = rawEdges.Select(e => new EdgeRow(
                 e.SourceId, nameById.GetValueOrDefault(e.SourceId),
                 e.TargetId, nameById.GetValueOrDefault(e.TargetId),

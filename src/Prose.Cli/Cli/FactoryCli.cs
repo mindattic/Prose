@@ -43,7 +43,10 @@ public static class FactoryCli
         string Verb(string group) { var i = Array.IndexOf(args, group); return i >= 0 && i + 1 < args.Length ? args[i + 1] : ""; }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
-        async Task<Guid?> Node(string? r) => string.IsNullOrWhiteSpace(r) ? null : await NodeRefResolver.ResolveAsync(dbFactory, r);
+        // A node that was given but does not resolve is an error, never "no node": a typo used to
+        // answer for the whole factory (next) or file an order against no book.
+        async Task<Guid?> Node(string? r) => string.IsNullOrWhiteSpace(r) ? null
+            : await NodeRefResolver.ResolveAsync(dbFactory, r) ?? throw new ArgumentException($"node_not_found: '{r}'.");
 
         try
         {
@@ -483,6 +486,11 @@ public static class FactoryCli
                 if (Verb("--session") != "end") { Console.Error.WriteLine("Usage: prose --session end --file summary.json [--id <session>]"); return 1; }
                 var file = Flag("--file");
                 if (file == null || !File.Exists(file)) { Console.Error.WriteLine("[session] --file summary.json is required."); return 1; }
+                if (Flag("--id") is { Length: > 0 } rawId && !Guid.TryParse(rawId, out _))
+                {
+                    Console.Error.WriteLine($"[session] --id '{rawId}' is not a session id.");
+                    return 1;
+                }
                 var (ok, problems, id) = await sessions.EndAsync(Guid.TryParse(Flag("--id"), out var s) ? s : null,
                     await File.ReadAllTextAsync(file), GitProbe.Head(GitProbe.RepoPath));
                 if (!ok)
