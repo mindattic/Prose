@@ -60,7 +60,8 @@ public partial class MainWindow : Window
     private async void OpenKdp(object sender, RoutedEventArgs e)
     {
         if (!await EnsureHubAsync()) return;
-        if (!Launch("KdpPublish.exe")) return;
+        // KdpPublish is deployed into its own subfolder (deploy-apps.ps1), with its own wwwroot.
+        if (!Launch(Path.Combine("KdpPublish", "Prose.KdpPublish.exe"))) return;
         Close();
     }
 
@@ -79,7 +80,7 @@ public partial class MainWindow : Window
             return false;
         }
 
-        Process.Start(new ProcessStartInfo(path) { WorkingDirectory = Here, UseShellExecute = true });
+        Process.Start(new ProcessStartInfo(path) { WorkingDirectory = Path.GetDirectoryName(path)!, UseShellExecute = true });
         return true;
     }
 }

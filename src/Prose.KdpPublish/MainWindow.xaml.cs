@@ -375,7 +375,40 @@ public partial class MainWindow : Window
             return;
         }
 
+        // One run at a time: the button only disables after a script round-trip, so a second
+        // click could start a second run driving the same browser pane.
+        if (runCts != null)
+        {
+            await PostLogAsync("⚠ A run is already in progress.");
+            return;
+        }
         runCts = new CancellationTokenSource();
+        try
+        {
+            await RunSelectedCoreAsync(codes, runCts.Token);
+        }
+        catch (Exception ex)
+        {
+            // Fired and forgotten by its callers, so an exception here was swallowed silently.
+            await PostLogAsync($"⚠ The run stopped: {ex.Message}");
+        }
+        finally
+        {
+            // Always leave the panel usable: a manifest or run-log failure used to leave it on
+            // "Running…" with Start disabled until the app was restarted.
+            if (currentRunId is Guid finishedRun && runLog != null)
+            {
+                try { await runLog.FinishRunAsync(finishedRun); } catch { /* the run log is advisory */ }
+            }
+            currentRunId = null;
+            await SetRunningAsync(false);
+            runCts.Dispose();
+            runCts = null;
+        }
+    }
+
+    private async Task RunSelectedCoreAsync(HashSet<string> codes, CancellationToken ct)
+    {
         await SetRunningAsync(true);
 
         runLog = App.Services.GetRequiredService<KdpRunLogService>();
@@ -388,7 +421,7 @@ public partial class MainWindow : Window
 
         foreach (var book in toRun)
         {
-            if (runCts.IsCancellationRequested) break;
+            if (ct.IsCancellationRequested) break;
 
             // Human-controlled gate: the book's sign-off in the KDP store (was: a .publish marker
             // file in its export folder). Authoritative — refuse to process a book lacking it even
@@ -431,7 +464,7 @@ public partial class MainWindow : Window
             await PostLogAsync($"— {book.Code} — {book.Title} —");
             try
             {
-                await foreach (var evt in operatorService.ProcessBookAsync(book, ctx, runCts.Token))
+                await foreach (var evt in operatorService.ProcessBookAsync(book, ctx, ct))
                     await PostLogAsync(FormatEvent(book.Code, evt));
             }
             catch (OperationCanceledException)
@@ -451,10 +484,6 @@ public partial class MainWindow : Window
         }
 
         await PostLogAsync(KdpRunLogFormat.FinishedMessage);
-        if (currentRunId is Guid finishedRun && runLog != null)
-            await runLog.FinishRunAsync(finishedRun);
-        await SetRunningAsync(false);
-        currentRunId = null;
     }
 
     /// <summary>

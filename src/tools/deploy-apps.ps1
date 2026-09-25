@@ -258,6 +258,13 @@ if ($Start) {
         # started one, and the desktop icon's "DEPLOY FAILED" branch is what should fire.
         if (Test-HubHealthy) {
             Write-Host "  Prose Hub is already running and healthy at $HubBaseUrl - connecting to it, not starting a second." -ForegroundColor Green
+            if ($Apps -contains 'Hub') {
+                # The Hub at this install path was stopped before its files were replaced, so the
+                # one answering may be another install's (or one that outlived the lock wait) and
+                # NOT the build just published. Say so instead of reporting a plain success.
+                Write-Host "  WARNING: the Hub was just redeployed, but a Hub was already answering before this one started." -ForegroundColor Yellow
+                Write-Host "  It may be the OLD build. Compare the 'build' field of $HubHealthUrl with the previous value." -ForegroundColor Yellow
+            }
         }
         else {
             Write-Host "  Starting Hub..." -ForegroundColor Cyan

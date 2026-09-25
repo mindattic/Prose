@@ -31,27 +31,44 @@ internal static class Program
             return args.Length == 0 ? 1 : 0;
         }
 
+        // Prompts are prose (em dashes, curly quotes); the console code page would garble them
+        // on the way in through a pipe and on the way out.
+        var utf8 = new System.Text.UTF8Encoding(false);
+        try { Console.InputEncoding = utf8; Console.OutputEncoding = utf8; }
+        catch (IOException) { /* no console attached: nothing to set */ }
+
         string? provider = null, model = null, promptArg = null, systemArg = null;
         var temperature = 0.7;
         var maxTokens = 2048;
         var asJson = false;
 
-        for (var i = 0; i < args.Length; i++)
+        try
         {
-            switch (args[i])
+            for (var i = 0; i < args.Length; i++)
             {
-                case "--provider": provider = ArgAt(args, ++i, "--provider"); break;
-                case "--model": model = ArgAt(args, ++i, "--model"); break;
-                case "--prompt": promptArg = ArgAt(args, ++i, "--prompt"); break;
-                case "--system": systemArg = ArgAt(args, ++i, "--system"); break;
-                case "--temperature": temperature = double.Parse(ArgAt(args, ++i, "--temperature")); break;
-                case "--max-tokens": maxTokens = int.Parse(ArgAt(args, ++i, "--max-tokens")); break;
-                case "--json": asJson = true; break;
-                default:
-                    Console.Error.WriteLine($"Unknown argument: {args[i]}");
-                    PrintUsage();
-                    return 1;
+                switch (args[i])
+                {
+                    case "--provider": provider = ArgAt(args, ++i, "--provider"); break;
+                    case "--model": model = ArgAt(args, ++i, "--model"); break;
+                    case "--prompt": promptArg = ArgAt(args, ++i, "--prompt"); break;
+                    case "--system": systemArg = ArgAt(args, ++i, "--system"); break;
+                    // Invariant: on a comma-decimal locale "0.7" parsed as 7, or threw.
+                    case "--temperature": temperature = double.Parse(ArgAt(args, ++i, "--temperature"), System.Globalization.CultureInfo.InvariantCulture); break;
+                    case "--max-tokens": maxTokens = int.Parse(ArgAt(args, ++i, "--max-tokens"), System.Globalization.CultureInfo.InvariantCulture); break;
+                    case "--json": asJson = true; break;
+                    default:
+                        Console.Error.WriteLine($"Unknown argument: {args[i]}");
+                        PrintUsage();
+                        return 1;
+                }
             }
+        }
+        catch (Exception ex) when (ex is ArgumentException or FormatException or OverflowException)
+        {
+            // A missing or malformed value used to end in a stack trace instead of the usage text.
+            Console.Error.WriteLine(ex.Message);
+            PrintUsage();
+            return 1;
         }
 
         if (string.IsNullOrWhiteSpace(provider))

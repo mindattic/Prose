@@ -84,6 +84,21 @@ public partial class MainWindow : Window
         }
     }
 
+    /// <summary>Replace a WebView2 whose browser process has exited with a new, uninitialised one
+    /// in the same place, and mark the view as needing setup again.</summary>
+    private void ReplaceWebView()
+    {
+        var old = Web;
+        if (old.Parent is not System.Windows.Controls.Panel host) return;
+        var index = host.Children.IndexOf(old);
+        var fresh = new Microsoft.Web.WebView2.Wpf.WebView2 { Name = "Web", Visibility = Visibility.Collapsed };
+        host.Children.RemoveAt(index);
+        host.Children.Insert(index, fresh);
+        Web = fresh;
+        webViewReady = false;
+        try { old.Dispose(); } catch { /* already dead */ }
+    }
+
     /// <summary>One-time WebView2 setup. Returns false having already shown the failure.</summary>
     private async Task<bool> InitialiseWebViewAsync()
     {
@@ -140,8 +155,16 @@ public partial class MainWindow : Window
             // The renderer itself dying leaves a blank window that looks like a frozen editor.
             // Say so, and offer the same way back.
             Web.CoreWebView2.ProcessFailed += (_, args) =>
+            {
+                // When the BROWSER process itself exits, this CoreWebView2 is dead for good: a
+                // Connect that navigated it threw, every time. Swap in a fresh control so the next
+                // Connect initialises a new one. A renderer crash leaves the browser alive, and
+                // navigating again is enough.
+                if (args.ProcessFailedKind == CoreWebView2ProcessFailedKind.BrowserProcessExited)
+                    ReplaceWebView();
                 ShowSplash($"The editor's browser process stopped ({args.ProcessFailedKind}).",
                            offerConnect: true);
+            };
 
             webViewReady = true;
             return true;
