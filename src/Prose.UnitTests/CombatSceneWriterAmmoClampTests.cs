@@ -26,6 +26,21 @@ public class CombatSceneWriterAmmoClampTests
         $"Some prose describing the exchange.\n[RESOURCE LEDGER]\n{name}: AMMO {ammoField}\n[/RESOURCE LEDGER]\nMore prose after.";
 
     [Test]
+    public void EveryWeaponInTheAmmoSection_IsUpdated_IncludingSpacedNames()
+    {
+        var current = new Dictionary<string, CombatantResources>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["Kyle"] = new CombatantResources { AmmoByWeapon = new Dictionary<string, int> { ["Chorus"] = 6, ["M-7 Carbine"] = 20 } },
+        };
+        var beatText = Ledger("Kyle", "Chorus=4 | M-7 Carbine=12 | NEURAL=80%");
+
+        var (_, updated) = CombatSceneWriter.ParseResourceLedger(beatText, current);
+
+        Assert.That(updated["Kyle"].AmmoByWeapon["Chorus"], Is.EqualTo(4));
+        Assert.That(updated["Kyle"].AmmoByWeapon["M-7 Carbine"], Is.EqualTo(12), "the second weapon was never updated");
+    }
+
+    [Test]
     public void NormalDepletion_IsAccepted()
     {
         var current = OneCombatant("Kyle", ammo: 6);

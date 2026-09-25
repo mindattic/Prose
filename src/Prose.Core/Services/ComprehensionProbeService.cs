@@ -234,7 +234,9 @@ public sealed class ComprehensionProbeService(
                 Confusions: root.TryGetProperty("confusions", out var c) ? StringList(c) : new List<string>(),
                 Prediction: root.TryGetProperty("prediction", out var p) ? p.GetString() ?? "" : "");
         }
-        catch (JsonException)
+        // InvalidOperationException too: a non-string "summary"/"prediction" threw from GetString(),
+        // which the JsonException catch did not cover, and the whole probe run aborted.
+        catch (Exception ex) when (ex is JsonException or InvalidOperationException)
         {
             log.LogWarning("Comprehension probe returned non-JSON for '{Title}' — treating raw text as summary.", ch.Title);
             return new ProbeReading(raw, null, new List<string>(), new List<string>(), new List<string>(), "");

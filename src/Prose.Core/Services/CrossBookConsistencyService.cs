@@ -37,8 +37,13 @@ public class CrossBookConsistencyService
 
         if (since.HasValue)
         {
+            // The (entity, predicate) keys touched since the cutoff — then EVERY live claim for those
+            // keys: filtering the claims themselves removed the older side of each conflict, so
+            // --since found only conflicts whose both claims were new.
             var sinceStr = since.Value.ToString("o");
-            claims = claims.Where(c => string.Compare(c.FirstAssertedAt, sinceStr, StringComparison.Ordinal) >= 0).ToList();
+            var touched = claims.Where(c => string.Compare(c.FirstAssertedAt, sinceStr, StringComparison.Ordinal) >= 0)
+                .Select(c => (c.EntityId, c.Predicate)).ToHashSet();
+            claims = claims.Where(c => touched.Contains((c.EntityId, c.Predicate))).ToList();
         }
 
         var conflicts = claims

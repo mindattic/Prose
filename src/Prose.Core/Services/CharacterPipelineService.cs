@@ -288,8 +288,8 @@ public class CharacterPipelineService : PipelineServiceBase
             foreach (var item in doc.RootElement.EnumerateArray())
             {
                 if (!item.TryGetProperty("name", out var nameProp)) continue;
-                var name = nameProp.GetString() ?? "";
-                var imagePrompt = item.TryGetProperty("image_prompt", out var ip) ? ip.GetString() ?? "" : "";
+                var name = GetStr(item, "name");
+                var imagePrompt = GetStr(item, "image_prompt");
 
                 // Build description object from remaining fields
                 var descObj = new
@@ -301,7 +301,7 @@ public class CharacterPipelineService : PipelineServiceBase
                     skin                = GetStr(item, "skin"),
                     distinguishing_marks = GetStr(item, "distinguishing_marks"),
                     augmentations       = item.TryGetProperty("augmentations", out var aug)
-                                          ? aug.EnumerateArray().Select(a => a.GetString() ?? "").ToArray()
+                                          ? (aug.ValueKind == JsonValueKind.Array ? aug.EnumerateArray().Select(a => a.ValueKind == JsonValueKind.String ? a.GetString() ?? "" : a.GetRawText()).ToArray() : Array.Empty<string>())
                                           : Array.Empty<string>()
                 };
                 result[name] = new(descObj, imagePrompt);
@@ -368,7 +368,9 @@ public class CharacterPipelineService : PipelineServiceBase
 
                 response = StripFences(response);
                 using var doc = JsonDocument.Parse(response);
-                var byName = candidates.ToDictionary(x => x.Node["name"]?.GetValue<string>() ?? "", StringComparer.OrdinalIgnoreCase);
+                // First per name: a duplicate or missing name threw here and skipped the whole batch.
+                var byName = candidates.GroupBy(x => x.Node["name"]?.GetValue<string>() ?? "", StringComparer.OrdinalIgnoreCase)
+                    .ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
 
                 foreach (var item in doc.RootElement.EnumerateArray())
                 {
@@ -506,6 +508,11 @@ public class CharacterPipelineService : PipelineServiceBase
         return json.Trim();
     }
 
+    // Any scalar, not just a string: "height": 180 threw from GetString(), and the catch dropped
+    // that item and every item after it.
     private static string GetStr(JsonElement el, string key) =>
-        el.TryGetProperty(key, out var p) ? p.GetString() ?? "" : "";
+        !el.TryGetProperty(key, out var p) ? ""
+        : p.ValueKind == JsonValueKind.String ? p.GetString() ?? ""
+        : p.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined ? ""
+        : p.GetRawText();
 }

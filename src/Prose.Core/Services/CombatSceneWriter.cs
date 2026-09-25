@@ -459,10 +459,15 @@ public class CombatSceneWriter
             // deplete across a ledger update, never increase without an explicit reload elsewhere
             // in scene logic) and to the declared /max when the model does report one.
             var ammo = new Dictionary<string, int>(res.AmmoByWeapon, StringComparer.OrdinalIgnoreCase);
-            var ammoSection = Regex.Match(data, @"AMMO\s+(.+?)(?:\s*\||\s*$)", RegexOptions.IgnoreCase);
+            // The AMMO section runs to the next ledger keyword, not the first "|": weapons are
+            // themselves separated by " | " (the resources block writes them that way), so every
+            // weapon after the first was never updated. Names may contain spaces ("M-7 Carbine").
+            // Cap as before: a declared "/max" bounds it (a reload may refill up to it), otherwise
+            // the prior count (ammo only depletes without one).
+            var ammoSection = Regex.Match(data, @"AMMO\s+(.+?)(?=\s*\|\s*(?:GRENADES|NEURAL)\b|$)", RegexOptions.IgnoreCase);
             if (ammoSection.Success)
             {
-                foreach (Match m in Regex.Matches(ammoSection.Groups[1].Value, @"(\w[\w\-']*?)=(\d+)(?:/(\d+))?"))
+                foreach (Match m in Regex.Matches(ammoSection.Groups[1].Value, @"([^=|]+?)=(\d+)(?:/(\d+))?"))
                 {
                     var weapon   = m.Groups[1].Value.Trim();
                     var reported = int.Parse(m.Groups[2].Value);

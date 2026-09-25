@@ -62,8 +62,19 @@ public class BlastRadiusService(IDbContextFactory<ProseDbContext> dbFactory)
             "WHERE bep1.BeatId = {0}",
             beatId).ToListAsync(ct);
 
+        // "In the book", as documented: the presence self-join spans every book, so a shared
+        // entity pulled in beats from unrelated books. Keep only this book's beats.
+        // No book above the beat (loose chapters): nothing to scope to, keep every shared beat.
+        HashSet<Guid>? inBook = null;
+        if (await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, home.NodeId, ct) is { } bookId)
+        {
+            var bookLeaves = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, bookId, ct);
+            inBook = (await db.BeatNodes.AsNoTracking().Where(bn => bookLeaves.Contains(bn.NodeId) || bn.NodeId == bookId)
+                .Select(bn => bn.BeatId).ToListAsync(ct)).ToHashSet();
+        }
+
         var result = new HashSet<Guid>(windowed);
-        foreach (var id in shared) result.Add(id);
+        foreach (var id in shared.Where(id => inBook == null || inBook.Contains(id))) result.Add(id);
         result.Add(beatId); // "the touched beats" per docs/LOGIC.md — the edit itself is always in scope
         return result.ToList();
     }
