@@ -172,9 +172,10 @@ NO is a correct and common answer. Most of what you are shown will be complement
 
         var ordered = await workbench.GetOrderedBeatsAsync(bookNodeId, ct);
         var beatOrder = ordered.Select(o => o.Beat).ToList();
-        var beatById = beatOrder.ToDictionary(b => b.Id, b => b);
+        var beatById = beatOrder.DistinctBy(b => b.Id).ToDictionary(b => b.Id, b => b); // a beat linked to two nodes walks twice
 
-        if (groups.Count > opts.MaxGroups)
+        var capped = groups.Count > opts.MaxGroups;
+        if (capped)
         {
             notes.Add($"{groups.Count} group(s) found; adjudicating the first {opts.MaxGroups}. " +
                       "Re-run to continue — verdicts are cached, so nothing already judged is re-billed.");
@@ -215,6 +216,13 @@ NO is a correct and common answer. Most of what you are shown will be complement
             var cached = await db.TunedReadAdjudications.AsNoTracking()
                 .FirstOrDefaultAsync(a => a.CacheKey == cacheKey, ct);
 
+            // "We could not ask" is not an answer: a cached one is re-asked, not reused.
+            if (cached != null && TunedReadService.IsTransientFailure(cached))
+            {
+                await db.TunedReadAdjudications.Where(a => a.CacheKey == cacheKey).ExecuteDeleteAsync(ct);
+                cached = null;
+            }
+
             TunedReadAdjudication verdict;
             if (cached != null) { verdict = cached; cacheHits++; }
             else
@@ -252,7 +260,8 @@ NO is a correct and common answer. Most of what you are shown will be complement
 
         if (opts.Apply)
         {
-            if (opts.IsFiltered)
+            // A capped run, like a filtered one, has only looked at some of the book.
+            if (opts.IsFiltered || capped)
             {
                 // A filtered run has only looked at some of the book, so the usual wipe-and-refile
                 // would silently delete every finding outside the filter. Clear each ADJUDICATED

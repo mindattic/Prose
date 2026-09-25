@@ -59,6 +59,15 @@ public class SplitAndInlineRenderTests
     }
 
     [Test]
+    public void A_short_quote_does_not_shift_the_pairing_of_the_next_one()
+    {
+        var spans = Prose.Core.Services.Audit.QuoteGrounding.ExtractQuotedSpans(
+            "Kyle says \"no\" but later \"I will go with you\" to her.");
+        Assert.That(spans, Has.Count.EqualTo(1));
+        Assert.That(spans[0], Does.Contain("I will go with you"));
+    }
+
+    [Test]
     public void A_property_as_of_a_story_point_orders_chapters_numerically()
     {
         var node = new Prose.Core.Models.Graph.UniverseNode

@@ -193,7 +193,8 @@ public sealed class TunedReadService(
             .ThenBy(c => c.B.ClaimUid, StringComparer.Ordinal)
             .ToList();
 
-        if (ontologyCandidates.Count > opts.MaxCandidates)
+        var capped = ontologyCandidates.Count > opts.MaxCandidates;
+        if (capped)
         {
             notes.Add($"{ontologyCandidates.Count} ontology candidates found; adjudicating the first " +
                       $"{opts.MaxCandidates}. A candidate count this high usually means an axiom is too " +
@@ -213,7 +214,7 @@ public sealed class TunedReadService(
         }
 
         // ── 3-5. ADJUDICATE -> GROUND -> FILE ───────────────────────────────
-        var beatById = ordered.ToDictionary(o => o.Beat.Id, o => o.Beat);
+        var beatById = ordered.DistinctBy(o => o.Beat.Id).ToDictionary(o => o.Beat.Id, o => o.Beat); // a beat linked to two nodes walks twice
         var beatOrder = ordered.Select(o => o.Beat).ToList();
         var chapterOfBeat = BuildChapterIndex(ordered, chapters);
 
@@ -233,6 +234,14 @@ public sealed class TunedReadService(
             var cachedVerdict = await db.TunedReadAdjudications.AsNoTracking()
                 .FirstOrDefaultAsync(a => a.CacheKey == cacheKey, ct);
 
+            // A cached "we could not ask" row is not an answer: drop it and ask again. These used
+            // to be cached like verdicts, so one outage cleared a candidate until its beat changed.
+            if (cachedVerdict != null && IsTransientFailure(cachedVerdict))
+            {
+                await db.TunedReadAdjudications.Where(a => a.CacheKey == cacheKey).ExecuteDeleteAsync(ct);
+                cachedVerdict = null;
+            }
+
             TunedReadAdjudication verdict;
             if (cachedVerdict != null)
             {
@@ -246,7 +255,8 @@ public sealed class TunedReadService(
 
                 // Cache the verdict either way. A candidate the adjudicator CLEARED must not be
                 // re-billed on every future run — that would make a clean book cost the same as a
-                // broken one, forever.
+                // broken one, forever. A failed call is stored WITH its reason (the record of what
+                // happened) and re-asked on the next run — see the cache-hit check above.
                 db.TunedReadAdjudications.Add(verdict);
                 try { await db.SaveChangesAsync(ct); }
                 catch (DbUpdateException ex)
@@ -259,6 +269,7 @@ public sealed class TunedReadService(
             }
 
             if (!string.IsNullOrEmpty(verdict.RejectedReason)) rejected++;
+            if (IsTransientFailure(verdict)) continue; // undecided, not cleared
 
             if (!verdict.IsContradiction) { cleared++; continue; }
 
@@ -284,8 +295,15 @@ public sealed class TunedReadService(
         }
 
         // Delete-then-recreate at book scope: a contradiction that has since been fixed must lose
-        // its finding even though nothing re-emits for it this run.
-        findings.DeleteBySummaryPrefix($"node:{book.Slug}", SummaryPrefix);
+        // its finding even though nothing re-emits for it this run. A CAPPED run only looked at
+        // the first MaxCandidates, so it clears just those candidates' own findings — a book-wide
+        // wipe deleted findings for candidates past the cap that it never re-checked.
+        if (capped)
+            foreach (var cand in ontologyCandidates)
+                findings.DeleteBySummaryPrefix($"node:{book.Slug}", CandidateSummaryPrefix(
+                    cand.A.EntityName, cand.A.Predicate, cand.A.Object, cand.B.Predicate, cand.B.Object));
+        else
+            findings.DeleteBySummaryPrefix($"node:{book.Slug}", SummaryPrefix);
         foreach (var f in results) FileFinding(book.Slug, f);
 
         return report with
@@ -587,12 +605,21 @@ false is a correct, common answer.
     /// is passed through; here an unquotable contradiction is exactly what must be rejected, so
     /// an empty or too-short quote fails closed.</para>
     /// </summary>
+    /// <summary>A row that records "we could not ask" (the call failed, or the reply did not
+    /// parse) rather than an answer. Stored for the record, but a cached one is re-asked.</summary>
+    internal static bool IsTransientFailure(TunedReadAdjudication v) =>
+        v.RejectedReason is { } r
+        && (r.StartsWith("adjudication call failed", StringComparison.Ordinal)
+            || r.StartsWith("adjudicator response was not parseable", StringComparison.Ordinal));
+
     internal static bool QuoteAppearsIn(string? quote, string? prose)
     {
         if (string.IsNullOrWhiteSpace(quote) || string.IsNullOrWhiteSpace(prose)) return false;
-        var q = System.Text.RegularExpressions.Regex.Replace(quote, @"\s+", " ").Trim().Trim('"', '\'');
+        // Typography folded on both sides (curly quotes, dashes, ellipsis): a model retyping
+        // "he’d" as "he'd" is quoting correctly, and was rejected as ungrounded.
+        var q = QuoteGrounding.NormalizeForMatch(quote).Trim('"', '\'');
         if (q.Length < 8) return false; // too short to be evidence of anything
-        var p = System.Text.RegularExpressions.Regex.Replace(prose, @"\s+", " ");
+        var p = QuoteGrounding.NormalizeForMatch(prose);
         return p.Contains(q, StringComparison.OrdinalIgnoreCase);
     }
 
@@ -706,6 +733,10 @@ false is a correct, common answer.
         await db.SaveChangesAsync(ct);
     }
 
+    /// <summary>The part of a finding's summary that identifies its candidate pair.</summary>
+    private static string CandidateSummaryPrefix(string entity, string predA, string objA, string predB, string objB) =>
+        $"{SummaryPrefix}[{entity}] {predA}=\"{Clip(objA, 80)}\" vs {predB}=\"{Clip(objB, 80)}\"";
+
     private void FileFinding(string bookSlug, TunedReadFinding f)
     {
         var severity = f.Severity switch
@@ -728,8 +759,8 @@ false is a correct, common answer.
             chapterId: null,
             category: FindingCategory.Contradiction,
             severity: severity,
-            summary: $"{SummaryPrefix}[{f.EntityName}] {f.PredicateA}=\"{Clip(f.ObjectA, 80)}\" vs " +
-                     $"{f.PredicateB}=\"{Clip(f.ObjectB, 80)}\"{where}: {Clip(f.Note, 400)}",
+            summary: CandidateSummaryPrefix(f.EntityName, f.PredicateA, f.ObjectA, f.PredicateB, f.ObjectB) +
+                     $"{where}: {Clip(f.Note, 400)}",
             // No Snippet, deliberately. docs/LOGIC.md §4 and memory
             // feedback_no_bulk_fix_tools_hand_edit_prose_2026_08_31: without a
             // Snippet/SuggestedFix pair no apply path can splice a machine "fix" over prose. The

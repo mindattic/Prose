@@ -236,7 +236,11 @@ public static class QuoteGrounding
         // spans at all, and no spans reads as "nothing to check", so a fabricated quote passed.
         // A single-quoted span may hold word-internal apostrophes ('I can't go back').
         evidence = FoldTypography(evidence);
-        var doubleQuoted = Regex.Matches(evidence, "\"([^\"]{" + minLength + ",})\"").Select(m => m.Groups[1].Value);
+        // Pair every double quote in order and filter by length AFTER: requiring the length inside
+        // the pattern let a too-short quote's closing mark open the next match, so
+        // `says "no" but later "I will go"` yielded the text BETWEEN the quotes.
+        var doubleQuoted = Regex.Matches(evidence, "\"([^\"]*)\"").Select(m => m.Groups[1].Value)
+            .Where(q => q.Length >= minLength);
         var singleQuoted = Regex.Matches(evidence, @"(?<!\w)'((?:[^']|(?<=\w)'(?=\w)){" + minLength + @",})'(?!\w)").Select(m => m.Groups[1].Value);
         return doubleQuoted.Concat(singleQuoted)
             .Select(Normalize)

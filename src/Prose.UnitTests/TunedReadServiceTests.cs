@@ -275,6 +275,20 @@ public class TunedReadServiceTests
         await using var db = await dbFactory.CreateDbContextAsync();
         var cached = await db.TunedReadAdjudications.AsNoTracking().SingleAsync();
         Assert.That(cached.RejectedReason, Does.Contain("adjudication call failed"));
+
+        // The stored outage row is a record, not an answer: the next run must ask again rather
+        // than serve "could not ask" from the cache until the beat text changes.
+        var recovered = await Build(new FixedLlm("""
+            {"contradiction": true, "severity": "BLOCKER",
+             "quote": "there was no before — no childhood, no city, no father",
+             "note": "A named father cannot coexist with an origin that asserts no prior life."}
+            """)).RunAsync(bookId, NoExtract);
+        Assert.Multiple(() =>
+        {
+            Assert.That(recovered.CacheHits, Is.Zero);
+            Assert.That(recovered.Adjudicated, Is.EqualTo(1));
+            Assert.That(recovered.Confirmed, Is.EqualTo(1));
+        });
     }
 
     [Test]

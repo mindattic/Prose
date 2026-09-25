@@ -209,10 +209,11 @@ public sealed class ClaimBeatAnchorService(
             claims.Count, anchored, noSnippet, tooShort, notFound, ambiguous, noScope, notes);
     }
 
-    /// <summary>Whitespace-normalized for containment testing — byte-identical in behaviour to
-    /// <c>TunedReadService.QuoteAppearsIn</c>'s normalization, so a snippet that anchors here is a
-    /// snippet that will ground there.</summary>
-    private static string NormalizeForMatch(string s) => Regex.Replace(s, @"\s+", " ").Trim();
+    /// <summary>Whitespace-normalized and typography-folded for containment testing — the same
+    /// form as <c>TunedReadService.QuoteAppearsIn</c>, so a snippet that anchors here is a snippet
+    /// that will ground there. Without the folding, prose's "he’d" never matched a snippet's
+    /// "he'd": the claim was reported stale and superseded while its text was still in the book.</summary>
+    private static string NormalizeForMatch(string s) => QuoteGrounding.NormalizeForMatch(s);
 
     // ── stale-snippet report ─────────────────────────────────────────────────
 

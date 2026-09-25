@@ -77,6 +77,23 @@ public class LogicSweepServiceTests
     }
 
     [Test]
+    public void ParseFindingsArray_Strict_ThrowsOnATruncatedOrMissingArray_SoTheDimensionIsNotReadAsClean()
+    {
+        Assert.Throws<FormatException>(() => LogicSweepService.ParseFindingsArray("timeline", "Timeline",
+            "[{\"beat_number\":1,\"severity\":\"minor\",\"evidence\":\"cut off", Beats, strict: true));
+        Assert.Throws<FormatException>(() => LogicSweepService.ParseFindingsArray("timeline", "Timeline",
+            "The timeline holds.", Beats, strict: true));
+        Assert.That(LogicSweepService.ParseFindingsArray("timeline", "Timeline", "[]", Beats, strict: true), Is.Empty);
+    }
+
+    [Test]
+    public void ParseFindingsArray_AnEchoedBeatHeaderBeforeTheArray_IsNotTakenForTheArray()
+    {
+        var raw = "Looking at [Beat #1] closely:\n[{\"beat_number\":1,\"severity\":\"minor\",\"evidence\":\"small nit\",\"fix\":null}]";
+        Assert.That(LogicSweepService.ParseFindingsArray("timeline", "Timeline", raw, Beats, strict: true), Has.Count.EqualTo(1));
+    }
+
+    [Test]
     public void ParseFindingsArray_EmptyEvidence_EntryIsDropped()
     {
         var raw = """[{"beat_number":1,"severity":"blocker","evidence":"","fix":"x"}]""";

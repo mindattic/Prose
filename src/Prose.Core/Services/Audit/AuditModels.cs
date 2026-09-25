@@ -36,7 +36,9 @@ public static class AuditProseUtils
 /// (e.g. beat #3033 is really in Ch30, matching the very Ch30 passage the finding claimed it
 /// contradicted) and recommended for fix in both reports; this field is that fix. Defaults to ""
 /// so test fixtures and rules that don't care about chapter attribution keep working.</summary>
-public record AuditBeat(Guid Id, int Number, string Text, double SortKey = 0, string ChapterTitle = "");
+/// <remarks><see cref="ChapterIndex"/> is the beat's chapter position in reading order. SortKey
+/// restarts in every chapter, so it only orders beats that share a ChapterIndex.</remarks>
+public record AuditBeat(Guid Id, int Number, string Text, double SortKey = 0, string ChapterTitle = "", int ChapterIndex = 0);
 
 /// <summary>
 /// Everything a rule needs to evaluate one node. <see cref="Prose"/> is the whole node's

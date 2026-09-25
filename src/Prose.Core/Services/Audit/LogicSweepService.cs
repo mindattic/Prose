@@ -98,7 +98,8 @@ public class LogicSweepService(
         // true, correctly-cited finding into a false negative.
         var beats = beatRows.Select(b => new AuditBeat(
             b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), b.SortKey,
-            chapterTitles.TryGetValue(b.NodeId, out var chTitle) ? chTitle : "")).ToList();
+            chapterTitles.TryGetValue(b.NodeId, out var chTitle) ? chTitle : "",
+            chapterOrder.TryGetValue(b.NodeId, out var chIdx) ? chIdx : int.MaxValue)).ToList();
 
         // A few distinctive disabled-beat snippets so OrphanReferencesRule can spot a live beat
         // still referencing something a cut beat established — an approximation of the skill's
@@ -213,10 +214,25 @@ public class LogicSweepService(
             .GroupBy(x => x.BeatId)
             .ToDictionary(g => g.Key, g => g.First().Title ?? "");
 
-        // Ordered by Number (a stable, book-wide reading-order proxy) — SortKey isn't meaningful
-        // across a cross-chapter blast-radius set the way it is within a single chapter.
+        // Reading order: each beat's chapter position in this node's leaf walk, then its SortKey
+        // in that chapter (first link wins). Number was used here, but it does not track chapter
+        // order on a restructured book, and a causality/timeline rule reading beats out of order
+        // reports false breaks. Beats outside the node fall back to Number, after the rest.
+        var leafOrder = new Dictionary<Guid, int>();
+        foreach (var leaf in await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct))
+            leafOrder.TryAdd(leaf, leafOrder.Count);
+        var links = await db.BeatNodes.AsNoTracking()
+            .Where(bn => beatIds.Contains(bn.BeatId))
+            .Select(bn => new { bn.BeatId, bn.NodeId, bn.SortKey })
+            .ToListAsync(ct);
+        var readingPos = links.Where(l => leafOrder.ContainsKey(l.NodeId))
+            .GroupBy(l => l.BeatId)
+            .ToDictionary(g => g.Key, g => g.Min(l => (leafOrder[l.NodeId], l.SortKey)));
+
         // Strip inline entity-GUID tags — same reason as the sibling query above.
-        var beats = beatRows.OrderBy(b => b.Number)
+        var beats = beatRows
+            .OrderBy(b => readingPos.TryGetValue(b.Id, out var p) ? p : (int.MaxValue, 0d))
+            .ThenBy(b => b.Number)
             .Select((b, i) => new AuditBeat(
                 b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), i,
                 chapterTitleByBeat.TryGetValue(b.Id, out var chTitle) ? chTitle : "")).ToList();
@@ -495,15 +511,34 @@ public class LogicSweepService(
             ? $"[Beat #{b.Number}]"
             : $"[Beat #{b.Number} | {b.ChapterTitle}]";
 
+    /// <param name="strict">The rules pass true: a reply with no array, or one that does not
+    /// parse (cut off at the token limit, chatter around it), THROWS so the runner marks the
+    /// dimension Failed and keeps its existing findings. Returning [] for it read as "this
+    /// dimension is clean" — the runner wiped the dimension's findings and the convergence loop
+    /// counted a dry round.</param>
     internal static IReadOnlyList<AuditVerdict> ParseFindingsArray(
-        string ruleKey, string title, string raw, IReadOnlyList<AuditBeat> beats)
+        string ruleKey, string title, string raw, IReadOnlyList<AuditBeat> beats, bool strict = false)
     {
+        // The array opens at a "[" followed by "{" or "]" — not at the first "[", which in
+        // "Looking at [Beat #12]…" is a header the model echoed.
+        var open = Regex.Match(raw, @"\[\s*[\{\]]");
+        var start = open.Success ? open.Index : -1;
+        var end   = raw.LastIndexOf(']');
+        if (start < 0 || end < start)
+        {
+            if (strict) throw new FormatException($"{ruleKey}: the reply contains no JSON findings array.");
+            return [];
+        }
+        JsonDocument doc;
+        try { doc = JsonDocument.Parse(raw[start..(end + 1)]); }
+        catch (JsonException ex)
+        {
+            if (strict) throw new FormatException($"{ruleKey}: the findings array does not parse ({ex.Message}).", ex);
+            return [];
+        }
+        using (doc)
         try
         {
-            var start = raw.IndexOf('[');
-            var end   = raw.LastIndexOf(']');
-            if (start < 0 || end < start) return [];
-            using var doc = JsonDocument.Parse(raw[start..(end + 1)]);
             var results = new List<AuditVerdict>();
             foreach (var f in doc.RootElement.EnumerateArray())
             {
@@ -560,7 +595,7 @@ public class LogicSweepService(
             }
             return results;
         }
-        catch { return []; }
+        catch (Exception) when (!strict) { return []; } // e.g. a root that is not an array
     }
 
     /// <summary>True if the evidence contains no quoted text (nothing to verify — a paraphrased
@@ -627,7 +662,7 @@ public class LogicSweepService(
             book. If you would write one, return [] instead — [] is a correct, common answer.
             """,
             $"Beats:\n{ctx.Prose}");
-        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
+        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats, strict: true);
     }
 
     sealed class KnowledgeStatesRule : ILlmAuditRule
@@ -666,7 +701,7 @@ public class LogicSweepService(
             book. If you would write one, return [] instead — [] is a correct, common answer.
             """,
             $"Beats:\n{ctx.Prose}");
-        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
+        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats, strict: true);
     }
 
     sealed class TimelineRule : ILlmAuditRule
@@ -696,7 +731,7 @@ public class LogicSweepService(
             book. If you would write one, return [] instead — [] is a correct, common answer.
             """,
             $"Beats:\n{ctx.Prose}");
-        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
+        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats, strict: true);
     }
 
     sealed class PlantPayoffRule : ILlmAuditRule
@@ -736,7 +771,7 @@ public class LogicSweepService(
                 """,
                 $"Beats:\n{ctx.Prose}");
         }
-        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
+        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats, strict: true);
     }
 
     sealed class OrphanReferencesRule : ILlmAuditRule
@@ -774,7 +809,7 @@ public class LogicSweepService(
                 """,
                 $"Beats:\n{ctx.Prose}");
         }
-        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
+        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats, strict: true);
     }
 
     /// <summary>
@@ -832,10 +867,14 @@ public class LogicSweepService(
         internal static IReadOnlyList<AuditBeat> FindInserted(IReadOnlyList<AuditBeat> beats)
         {
             if (beats.Count < 4) return [];
-            var ordered = beats.OrderBy(b => b.SortKey).ToList();
+            // Per chapter: SortKey restarts in every chapter, so sorting a whole book by it made
+            // every chapter's 50 tie with every other's, and the middle beats of each tie group
+            // (gaps of 0 on both sides) were all flagged "inserted" — most of a long book.
+            var chapters = ByChapter(beats);
 
             var gaps = new List<double>();
-            for (var i = 1; i < ordered.Count; i++) gaps.Add(ordered[i].SortKey - ordered[i - 1].SortKey);
+            foreach (var ordered in chapters)
+                for (var i = 1; i < ordered.Count; i++) gaps.Add(ordered[i].SortKey - ordered[i - 1].SortKey);
             var positive = gaps.Where(g => g > 0).OrderBy(g => g).ToList();
             if (positive.Count == 0) return [];
 
@@ -845,14 +884,20 @@ public class LogicSweepService(
 
             var threshold = grid / 2.0;
             var hits = new List<AuditBeat>();
-            for (var i = 1; i < ordered.Count - 1; i++)
-            {
-                var before = ordered[i].SortKey - ordered[i - 1].SortKey;
-                var after  = ordered[i + 1].SortKey - ordered[i].SortKey;
-                if (before <= threshold && after <= threshold) hits.Add(ordered[i]);
-            }
+            foreach (var ordered in chapters)
+                for (var i = 1; i < ordered.Count - 1; i++)
+                {
+                    var before = ordered[i].SortKey - ordered[i - 1].SortKey;
+                    var after  = ordered[i + 1].SortKey - ordered[i].SortKey;
+                    if (before <= threshold && after <= threshold) hits.Add(ordered[i]);
+                }
             return hits;
         }
+
+        /// <summary>Beats grouped by chapter in reading order, each chapter sorted by SortKey.</summary>
+        private static List<List<AuditBeat>> ByChapter(IReadOnlyList<AuditBeat> beats) =>
+            beats.GroupBy(b => b.ChapterIndex).OrderBy(g => g.Key)
+                 .Select(g => g.OrderBy(b => b.SortKey).ToList()).ToList();
 
         /// <summary>The fixed beats immediately before and after each inserted run — the state a
         /// late beat must not contradict.</summary>
@@ -860,15 +905,15 @@ public class LogicSweepService(
             IReadOnlyList<AuditBeat> beats, IReadOnlyList<AuditBeat> inserted)
         {
             var insertedIds = inserted.Select(b => b.Id).ToHashSet();
-            var ordered = beats.OrderBy(b => b.SortKey).ToList();
             var anchors = new List<AuditBeat>();
-            for (var i = 0; i < ordered.Count; i++)
-            {
-                if (insertedIds.Contains(ordered[i].Id)) continue;
-                var touchesRun = (i > 0 && insertedIds.Contains(ordered[i - 1].Id))
-                              || (i < ordered.Count - 1 && insertedIds.Contains(ordered[i + 1].Id));
-                if (touchesRun) anchors.Add(ordered[i]);
-            }
+            foreach (var ordered in ByChapter(beats))
+                for (var i = 0; i < ordered.Count; i++)
+                {
+                    if (insertedIds.Contains(ordered[i].Id)) continue;
+                    var touchesRun = (i > 0 && insertedIds.Contains(ordered[i - 1].Id))
+                                  || (i < ordered.Count - 1 && insertedIds.Contains(ordered[i + 1].Id));
+                    if (touchesRun) anchors.Add(ordered[i]);
+                }
             return anchors;
         }
 
@@ -880,7 +925,7 @@ public class LogicSweepService(
 
             var anchors = FindAnchors(ctx.Beats, inserted);
             var insertedIds = inserted.Select(b => b.Id).ToHashSet();
-            var window = inserted.Concat(anchors).OrderBy(b => b.SortKey)
+            var window = inserted.Concat(anchors).OrderBy(b => b.ChapterIndex).ThenBy(b => b.SortKey)
                 .Select(b => $"[Beat #{b.Number}] ({(insertedIds.Contains(b.Id) ? "INSERTED LATER" : "pre-existing anchor")})\n{b.Text}");
 
             return (
@@ -913,7 +958,7 @@ public class LogicSweepService(
                 $"Beats:\n{string.Join("\n\n", window)}");
         }
 
-        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats);
+        public IReadOnlyList<AuditVerdict> ParseResponse(string raw, AuditContext ctx) => ParseFindingsArray(Key, Title, raw, ctx.Beats, strict: true);
     }
 }
 

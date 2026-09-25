@@ -281,7 +281,7 @@ public class ObligationCalibrationService(
             // Outstanding at the end is the correct answer whether or not a rule fired: the book may
             // not be at its end yet with due=book-end, so the flag is sufficient, not necessary.
             return outstanding || flaggedByRule
-                ? (InjectionOutcome.TruePositive,  $"TP  abandoned @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → {match!.State}{(flaggedByRule ? " (flagged)" : "")}")
+                ? (InjectionOutcome.TruePositive,  $"TP  abandoned @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → {(match == null ? "no row" : match.State)}{(flaggedByRule ? " (flagged)" : "")}")
                 : (InjectionOutcome.FalseNegative, $"FN  abandoned @ {inj.BeatId:N} — \"{Trunc(inj.Sentence, 60)}\" → {(match == null ? "no row" : match.State)}");
         }
 

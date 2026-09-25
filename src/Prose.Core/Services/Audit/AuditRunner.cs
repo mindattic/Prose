@@ -176,7 +176,7 @@ public class AuditRunner(ILlmService llm, FindingsService findings, ILogger<Audi
     public static IReadOnlyList<AuditVerdict> ParseSingleVerdict(ILlmAuditRule rule, string raw)
     {
         var parsed = ParseVerdictEnvelope(raw);
-        var severity = parsed?.Status switch
+        var severity = parsed?.Status?.Trim().ToLowerInvariant() switch // "PASS" filed a Medium finding
         {
             "pass" => "PASS",
             "warn" => "MODERATE",

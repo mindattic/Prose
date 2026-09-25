@@ -44,6 +44,18 @@ public class AuditDeterministicRuleTests
     }
 
     [Test]
+    public void FindInserted_SeveralChaptersOnTheSameGrid_FlagsNothing()
+    {
+        // SortKey restarts per chapter: three even chapters must not read as tie groups.
+        var beats = Enumerable.Range(0, 3).SelectMany(ch => new[] { 50.0, 100, 150, 200 }
+            .Select((k, i) => Beat(ch * 10 + i + 1, k) with { ChapterIndex = ch })).ToList();
+        Assert.That(LogicSweepService.InsertedBeatDriftRule.FindInserted(beats), Is.Empty);
+
+        var withInsert = beats.Append(Beat(99, 125) with { ChapterIndex = 1 }).ToList();
+        Assert.That(LogicSweepService.InsertedBeatDriftRule.FindInserted(withInsert).Select(b => b.Number), Is.EqualTo(new[] { 99 }));
+    }
+
+    [Test]
     public void FindInserted_EvenGrid_FlagsNothing()
     {
         var beats = new[] { Beat(1, 50), Beat(2, 100), Beat(3, 150), Beat(4, 200), Beat(5, 250) };
