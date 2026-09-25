@@ -144,7 +144,8 @@ public sealed class StoryStateQuery
             .ToList();
 
         // ContinuityClaims.EntityId is stored as a string (see ContinuityService/ContinuityClaim).
-        var entityIdStrings = entityIds.Select(id => id.ToString()).ToList();
+        // Both forms: extraction writes the "N" form (no hyphens); "D" alone matched no claim.
+        var entityIdStrings = entityIds.SelectMany(id => new[] { id.ToString(), id.ToString("N") }).ToList();
         var claims = await db.ContinuityClaims.AsNoTracking()
             .Where(c => entityIdStrings.Contains(c.EntityId)
                      && (c.Status == "CANONICAL" || c.Status == "CONFIRMED"))

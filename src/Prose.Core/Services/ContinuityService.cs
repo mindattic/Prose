@@ -647,16 +647,41 @@ public class ContinuityService
             return new ClaimUpsertResult { Outcome = "CONFIRMED", Claim = existing };
         }
 
-        // Existing but inactive (REJECTED/SUPERSEDED) — reactivate rather than re-insert (PK collision).
+        // Existing but inactive (REJECTED/SUPERSEDED) — reactivate rather than re-insert (PK
+        // collision), but through the SAME conflict check a fresh claim gets. Every re-extraction
+        // supersedes the chapter's old claims first, so nearly every re-extracted claim lands
+        // here: resetting them to plain NEW cleared both sides of a CONTRADICTED pair and the
+        // publish gate ("zero CONTRADICTED") passed. A rejected claim the prose still asserts is
+        // exactly a contradiction of the canon that rejected it.
         if (existing != null)
         {
-            existing.Status          = "NEW";
+            var reConflict = FindConflict(db, incoming);
+            existing.Status          = reConflict != null ? "CONTRADICTED" : "NEW";
             existing.LastConfirmedAt = now;
             existing.ExtractedBy     = MergeExtractors(existing.ExtractedBy, incoming.ExtractedBy);
+            // Where it is asserted NOW, not where it was first seen.
+            existing.SourceChapterId     = incoming.SourceChapterId ?? existing.SourceChapterId;
+            existing.SourceChapterNumber = incoming.SourceChapterNumber ?? existing.SourceChapterNumber;
+            existing.SourceChapterTitle  = incoming.SourceChapterTitle ?? existing.SourceChapterTitle;
+            existing.SourcePath          = incoming.SourcePath ?? existing.SourcePath;
+            existing.Snippet             = incoming.Snippet ?? existing.Snippet;
+            existing.SourceBeatId        = incoming.SourceBeatId ?? existing.SourceBeatId;
+            existing.BookSlug            = incoming.BookSlug ?? existing.BookSlug;
             db.SaveChanges();
 
             RecordConfirmation(db, incoming.ClaimUid, incoming.SourceChapterId, incoming.SourcePath, now);
             db.SaveChanges();
+
+            if (reConflict != null)
+            {
+                if (reConflict.Status != "CANONICAL") reConflict.Status = "CONTRADICTED";
+                db.SaveChanges();
+                RecordContradiction(db, reConflict.ClaimUid, existing.ClaimUid, now);
+                db.SaveChanges();
+                tx.Commit();
+                return new ClaimUpsertResult { Outcome = "CONTRADICTED", Claim = existing, Conflict = reConflict };
+            }
+
             tx.Commit();
             return new ClaimUpsertResult { Outcome = "NEW", Claim = existing };
         }
@@ -682,16 +707,7 @@ public class ContinuityService
         // Set-valued predicates join volatile ones in skipping conflict detection entirely
         // (2026-09-04): a second `ability` or `action` is another member of a set, and marking it
         // CONTRADICTED asserts a disagreement that was never claimed.
-        var conflict = IsVolatilePredicate(incoming.Predicate) || IsSetValuedPredicate(incoming.Predicate)
-            ? null
-            : db.ContinuityClaims
-            .Where(c => c.EntityId == incoming.EntityId
-                     && c.Predicate == incoming.Predicate
-                     && c.Status != "REJECTED" && c.Status != "SUPERSEDED")
-            .OrderByDescending(c => c.Status == "CANONICAL" ? 1 : 0).ThenByDescending(c => c.LastConfirmedAt)
-            .ToList()
-            .FirstOrDefault(c => !ObjectsMatch(incoming.Predicate, c.Object, incoming.Object)
-                              && !IsSameAssertion(c, incoming));
+        var conflict = FindConflict(db, incoming);
 
         incoming.Status          = conflict != null ? "CONTRADICTED" : "NEW";
         incoming.FirstAssertedAt = now;
@@ -720,6 +736,22 @@ public class ContinuityService
         tx.Commit();
         return new ClaimUpsertResult { Outcome = "NEW", Claim = incoming };
     }
+
+    /// <summary>A live claim on the same (entity, predicate) whose object disagrees with
+    /// <paramref name="incoming"/> — canon first, then the most recently confirmed. Null for
+    /// volatile and set-valued predicates, which never conflict (see the Upsert comments).</summary>
+    private ContinuityClaim? FindConflict(ProseDbContext db, ContinuityClaim incoming)
+        => IsVolatilePredicate(incoming.Predicate) || IsSetValuedPredicate(incoming.Predicate)
+            ? null
+            : db.ContinuityClaims
+            .Where(c => c.EntityId == incoming.EntityId
+                     && c.Predicate == incoming.Predicate
+                     && c.ClaimUid != incoming.ClaimUid
+                     && c.Status != "REJECTED" && c.Status != "SUPERSEDED")
+            .OrderByDescending(c => c.Status == "CANONICAL" ? 1 : 0).ThenByDescending(c => c.LastConfirmedAt)
+            .ToList()
+            .FirstOrDefault(c => !ObjectsMatch(incoming.Predicate, c.Object, incoming.Object)
+                              && !IsSameAssertion(c, incoming));
 
     private static bool IsActive(string status)
         => status != "REJECTED" && status != "SUPERSEDED";
@@ -1207,8 +1239,9 @@ public class ContinuityService
             .Select(c => new { c.EntityId, c.Predicate })
             .Distinct()
             .ToList()
-            // 2026-09-01: same exclusion as GetContradictionGroups — see its remarks.
-            .Where(k => !IsVolatilePredicate(k.Predicate))
+            // 2026-09-01: same exclusion as GetContradictionGroups — see its remarks. Set-valued
+            // predicates too: the full sweep drops them, and this one filed them.
+            .Where(k => !IsVolatilePredicate(k.Predicate) && !IsSetValuedPredicate(k.Predicate))
             .ToList();
 
         if (touchedKeys.Count == 0) return new List<ContradictionGroup>();
@@ -1223,7 +1256,14 @@ public class ContinuityService
                 .Where(c => c.EntityId == k.EntityId && c.Predicate == k.Predicate && live.Contains(c.Status))
                 .OrderBy(c => c.FirstAssertedAt)
                 .ToList();
-            if (claims.Count >= 2 && claims.Select(c => c.Object).Distinct().Count() > 1)
+            // The same paraphrase/numeric collapse the full sweep uses: exact-string variants
+            // reported "fifty" vs "50" and rewordings the full sweep deliberately suppresses.
+            var distinct = new List<ContinuityClaim>();
+            foreach (var c in claims)
+                if (!distinct.Any(d => ObjectsMatch(k.Predicate, d.Object, c.Object)
+                                    || ObjectsSayTheSameThing(d.Object, c.Object)))
+                    distinct.Add(c);
+            if (claims.Count >= 2 && distinct.Count >= 2)
                 groups.Add(new ContradictionGroup
                 {
                     EntityId   = k.EntityId,
@@ -1324,6 +1364,21 @@ public class ContinuityService
 
         ApplyStatus(a, "REJECTED", now, note);
         ApplyStatus(b, "REJECTED", now, note);
+
+        // The custom value may already exist as some OTHER row (an older superseded claim, or a
+        // previous custom resolution). Inserting a second row under its uid threw on the primary
+        // key and the resolution failed; promote the existing row instead.
+        var already = db.ContinuityClaims.FirstOrDefault(c => c.ClaimUid == customUid);
+        if (already != null)
+        {
+            ApplyStatus(already, "CANONICAL", now, note);
+            already.BookSlug ??= a.BookSlug ?? b.BookSlug;
+            a.SupersededBy = already.ClaimUid;
+            b.SupersededBy = already.ClaimUid;
+            db.SaveChanges();
+            tx.Commit();
+            return new ResolveResult { Winner = already, Loser = a, Loser2 = b };
+        }
 
         var custom = new ContinuityClaim
         {
@@ -1461,6 +1516,26 @@ public class ContinuityService
         var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED" };
         var claims = db.ContinuityClaims
             .Where(c => c.SourceChapterId == sourceChapterId
+                     && c.SourceType == sourceType
+                     && live.Contains(c.Status)
+                     && c.AppliedAt == null)
+            .ToList();
+        if (claims.Count == 0) return 0;
+        var now = DateTime.UtcNow.ToString("o");
+        foreach (var c in claims) ApplyStatus(c, "SUPERSEDED", now, note);
+        db.SaveChanges();
+        return claims.Count;
+    }
+
+    /// <summary>As <see cref="SupersedeLiveClaimsForSource"/>, for sources with no chapter id —
+    /// an entity record's claims are keyed by their SourcePath (<c>db:Records[{id}]</c>).</summary>
+    public int SupersedeLiveClaimsForSourcePath(string sourcePath, string sourceType, string note)
+    {
+        if (string.IsNullOrWhiteSpace(sourcePath)) return 0;
+        using var db = dbFactory.CreateDbContext();
+        var live = new[] { "NEW", "CONFIRMED", "CONTRADICTED" };
+        var claims = db.ContinuityClaims
+            .Where(c => c.SourcePath == sourcePath
                      && c.SourceType == sourceType
                      && live.Contains(c.Status)
                      && c.AppliedAt == null)

@@ -332,7 +332,7 @@ public class EntityReviewService
             .ToListAsync(ct);
 
         if (skipRated && reviewed != null)
-            rows = rows.Where(e => !reviewed.Contains(e.Id.ToString())).ToList();
+            rows = rows.Where(e => !reviewed.Contains(e.Id.ToString("N"))).ToList(); // the set is "N"-normalised above
 
         if (rows.Count == 0) return;
 

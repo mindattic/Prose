@@ -160,11 +160,15 @@ public class ContinuityExtractionService
         // though GetLeafDescendantIdsAsync (which already IgnoreQueryFilters) found real leaf ids —
         // found live 2026-08-19 running Trinity Reconciliation Phase 1 across GLMZ+SCRY+FICTION at
         // once, where SCRY books executed under an ambient glmz scope.
-        var chapterNodes = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+        // In leafIds' order — already reading order. Re-sorting by SortKey (which restarts under
+        // every parent) interleaved chapters from different collections and misnumbered them,
+        // disagreeing with the IndexOf numbering the re-extract path uses for the same chapter.
+        var chapterNodes = (await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => leafIds.Contains(n.Id))
-            .OrderBy(n => n.SortKey)
             .Select(n => new { n.Id, n.Title })
-            .ToListAsync(ct);
+            .ToListAsync(ct))
+            .OrderBy(n => leafIds.IndexOf(n.Id))
+            .ToList();
 
         var results = new List<ContinuityExtractionResult>();
         var chapterNumber = 0;
@@ -267,10 +271,14 @@ public class ContinuityExtractionService
             chapter.Title, chapterNumber, bookSlug);
         var contextHeader = "=== CHAPTER PROSE (extract facts from this) ===\n" +
             $"Chapter {chapterNumber}: {chapter.Title}\n";
-        await ExtractClaimsFromProseAsync(prose, contextHeader, chapterNodeId.ToString(), chapterNumber, chapter.Title, bookSlug, maxTokens, ct,
+        var extracted = await ExtractClaimsFromProseAsync(prose, contextHeader, chapterNodeId.ToString(), chapterNumber, chapter.Title, bookSlug, maxTokens, ct,
             beatIndex: beatIndex);
 
-        await UpsertCursorAsync(db, bookSlug, "chapter", sourceKey, hash, ct);
+        // Only a clean, complete parse moves the cursor. A reply with no parseable array, or one
+        // salvaged from a truncated array, advanced it anyway: the chapter then read as extracted
+        // and unchanged, and its claims were never refreshed until someone edited it again.
+        if (extracted.Parsed && !extracted.Truncated)
+            await UpsertCursorAsync(db, bookSlug, "chapter", sourceKey, hash, ct);
         return true;
     }
 
@@ -384,7 +392,7 @@ public class ContinuityExtractionService
         var raw = await llm.GenerateAsync(ExtractionQuestion, context, temperature: 0.1, maxTokens: maxTokens, ct: ct);
 
         var allCandidates = new List<RawCandidate>();
-        var arr = ExtractJsonArrayFromText(raw);
+        var arr = ExtractJsonArrayFromText(raw, out var truncated);
         if (arr == null || arr.Value.GetArrayLength() == 0)
             // Warning, not Information: a non-trivial response that yields no claims means the
             // fact ledger silently got nothing from this source, and the ledger is point 2 of the
@@ -425,6 +433,8 @@ public class ContinuityExtractionService
             VotersTotal         = 1,
             CandidatesProposed  = allCandidates.Count,
             CandidatesValidated = grouped.Count,
+            Parsed              = arr != null,
+            Truncated           = truncated,
         };
 
         // Replace, don't accumulate (2026-09-06). Re-extracting a source used to leave the prior
@@ -435,7 +445,9 @@ public class ContinuityExtractionService
         // truncated array) must never wipe a source's existing ledger and leave nothing behind,
         // which is the same fail-open trap already fixed in BehavioralInvariantEnforcer and
         // SwainAuditService.
-        if (grouped.Count > 0)
+        // Not from a SALVAGED reply either: four complete objects rescued from a response cut off
+        // at the token limit superseded a chapter's forty live claims and wrote back four.
+        if (grouped.Count > 0 && !truncated)
         {
             var superseded = store.SupersedeLiveClaimsForSource(
                 sourceChapterId, sourceType,
@@ -538,6 +550,30 @@ public class ContinuityExtractionService
             return result;
         }
 
+        // Replace, don't accumulate — the record's own earlier claims are superseded before this
+        // pass's claims go in, as prose re-extraction already does. They were never superseded
+        // (SupersedeLiveClaimsForSource keys on a chapter id these claims don't have), so changing
+        // hair_color from "black" to "red" filed "red" as CONTRADICTED against the record's own
+        // stale "black". Only after a pass that actually parsed: an outage must not empty it.
+        var sourcePath = $"db:Records[{entityId}]";
+        var pending = new List<ContinuityClaim>();
+        void Commit(bool supersede)
+        {
+            if (supersede)
+                store.SupersedeLiveClaimsForSourcePath(sourcePath, "entity_record",
+                    $"superseded by re-extraction {DateTime.UtcNow:yyyy-MM-dd HH:mm}Z");
+            foreach (var claim in pending)
+            {
+                var r = store.Upsert(claim);
+                switch (r.Outcome)
+                {
+                    case "NEW":          result.NewClaims++;          break;
+                    case "CONFIRMED":    result.ConfirmedClaims++;    break;
+                    case "CONTRADICTED": result.ContradictedClaims++; break;
+                }
+            }
+        }
+
         // 1) Direct scalar claims for top-level string fields.
         foreach (var prop in root.EnumerateObject())
         {
@@ -571,13 +607,7 @@ public class ContinuityExtractionService
                 // themselves; that is what will make this answerable.
                 Provenance  = ClaimProvenance.Inferred,
             };
-            var r = store.Upsert(claim);
-            switch (r.Outcome)
-            {
-                case "NEW":          result.NewClaims++;          break;
-                case "CONFIRMED":    result.ConfirmedClaims++;    break;
-                case "CONTRADICTED": result.ContradictedClaims++; break;
-            }
+            pending.Add(claim);
         }
 
         // 2) Prose fields (description, personality, ideology, narrative_function …) get the LLM pass.
@@ -589,7 +619,7 @@ public class ContinuityExtractionService
             if (IsProseField(prop.Name) && v.Length >= 80)
                 proseSections.Add((prop.Name, v));
         }
-        if (proseSections.Count == 0) return result;
+        if (proseSections.Count == 0) { Commit(supersede: true); return result; }
 
         var ctxBuilder = new System.Text.StringBuilder();
         ctxBuilder.AppendLine($"=== ENTITY RECORD: {entityName} ({entityKind}) ===");
@@ -607,7 +637,7 @@ public class ContinuityExtractionService
         // section text as the substrate.
         var prose = string.Join("\n", proseSections.Select(s => s.text));
 
-        var arr = ExtractJsonArrayFromText(raw);
+        var arr = ExtractJsonArrayFromText(raw, out var truncated);
         if (arr != null)
         {
             foreach (var el in arr.Value.EnumerateArray())
@@ -634,15 +664,10 @@ public class ContinuityExtractionService
                     // trustworthiness is not yet knowable, so this cannot be graded "authored".
                     Provenance  = ClaimProvenance.Inferred,
                 };
-                var r = store.Upsert(claim);
-                switch (r.Outcome)
-                {
-                    case "NEW":          result.NewClaims++;          break;
-                    case "CONFIRMED":    result.ConfirmedClaims++;    break;
-                    case "CONTRADICTED": result.ContradictedClaims++; break;
-                }
+                pending.Add(claim);
             }
         }
+        Commit(supersede: arr != null && !truncated);
         result.VotersSuccessful = 1;
         result.VotersTotal      = 1;
         return result;
@@ -719,8 +744,13 @@ public class ContinuityExtractionService
         return null;
     }
 
-    private static JsonElement? ExtractJsonArrayFromText(string text)
+    private static JsonElement? ExtractJsonArrayFromText(string text) => ExtractJsonArrayFromText(text, out _);
+
+    /// <param name="salvaged">True when the array came from <see cref="SalvageCompleteObjects"/>:
+    /// the reply was truncated, so what came back is a PART of the answer, not all of it.</param>
+    private static JsonElement? ExtractJsonArrayFromText(string text, out bool salvaged)
     {
+        salvaged = false;
         if (string.IsNullOrEmpty(text)) return null;
 
         // Greedy: from first '[' to last ']'.
@@ -761,14 +791,17 @@ public class ContinuityExtractionService
         // four complete, well-formed claims. Since the fact ledger is point 2 of the docs/LOGIC.md
         // §9 publish gate, a silent zero there is worse than a loud partial. Salvaging the complete
         // objects and dropping only the half-written tail is strictly better than losing the batch.
-        var salvaged = SalvageCompleteObjects(text);
-        if (salvaged != null)
+        var partial = SalvageCompleteObjects(text);
+        if (partial != null)
         {
             try
             {
-                using var d = JsonDocument.Parse(salvaged);
+                using var d = JsonDocument.Parse(partial);
                 if (d.RootElement.ValueKind == JsonValueKind.Array && d.RootElement.GetArrayLength() > 0)
+                {
+                    salvaged = true;
                     return d.RootElement.Clone();
+                }
             }
             catch { }
         }
@@ -893,4 +926,8 @@ public class ContinuityExtractionResult
     public int    ContradictedClaims  { get; set; }
     public List<string> UnknownEntities { get; set; } = new();
     public string? Error              { get; set; }
+    /// <summary>The reply held a parseable claims array (possibly empty).</summary>
+    public bool   Parsed              { get; set; }
+    /// <summary>The array was salvaged from a truncated reply — a part, not the whole answer.</summary>
+    public bool   Truncated           { get; set; }
 }

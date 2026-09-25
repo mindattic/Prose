@@ -29,11 +29,14 @@ public sealed class ReviewReportExporter
 {
     private readonly SettingsService settings;
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
+    private readonly NodeMarkdownExporter? numbering;
 
-    public ReviewReportExporter(SettingsService settings, IDbContextFactory<ProseDbContext> dbFactory)
+    public ReviewReportExporter(SettingsService settings, IDbContextFactory<ProseDbContext> dbFactory,
+                                NodeMarkdownExporter? numbering = null)
     {
         this.settings = settings;
         this.dbFactory = dbFactory;
+        this.numbering = numbering;
     }
 
     /// <summary>The node's own publish folder: publish-root + its series/book ancestry
@@ -107,6 +110,17 @@ public sealed class ReviewReportExporter
     {
         try
         {
+            // The export's own [Beat N] list: the node's direct beats by SortKey found nothing on
+            // a book node and shifted every label past an empty beat.
+            if (numbering is not null)
+            {
+                var numbered = await numbering.GetNumberedBeatsAsync(nodeId, ct);
+                var byPos = new Dictionary<int, BeatMeta>();
+                for (int i = 0; i < numbered.Count && i < beatCount; i++)
+                    byPos[i + 1] = new BeatMeta(numbered[i].Number, numbered[i].Title);
+                return byPos;
+            }
+
             await using var db = await dbFactory.CreateDbContextAsync(ct);
             var rows = await (
                 from bn in db.BeatNodes

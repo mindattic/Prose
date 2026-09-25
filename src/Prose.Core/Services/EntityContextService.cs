@@ -228,7 +228,11 @@ public sealed class EntityContextService(
     {
         var active = stack.GetActive(nodeId).Take(MaxInjectedEntities).ToList();
         if (active.Count == 0) return "";
-        var entityIds = active.Select(e => e.EntityId.ToString()).ToHashSet(StringComparer.OrdinalIgnoreCase);
+        // Both forms: extraction stores ContinuityClaim.EntityId as "N" (no hyphens), and the
+        // filter below runs as a SQL IN, so the hyphenated form alone matched nothing and the
+        // relational-facts block was always empty.
+        var entityIds = active.SelectMany(e => new[] { e.EntityId.ToString(), e.EntityId.ToString("N") })
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
         var cueText = $"{beatGoal}\n{sceneSoFar}".ToLowerInvariant();
         var cueWords = cueText.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries)
             .Select(w => new string(w.Where(char.IsLetterOrDigit).ToArray()))

@@ -116,11 +116,17 @@ public class DistributedWorkerCoordinator
             // Load beat texts via junction; SS-A43: expand to chapter children for book nodes.
             // Recurses past any nested Collection (2026-08-09 fix).
             var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
-            var beatTexts = await db.BeatNodes
+            // Leaf-walk order, then SortKey: SortKey alone put beat 1 of every chapter first,
+            // then beat 2 of every chapter — reviewers scored scrambled text.
+            var leafOrder = new Dictionary<Guid, int>();
+            foreach (var leaf in searchIds) leafOrder.TryAdd(leaf, leafOrder.Count);
+            var beatTexts = (await db.BeatNodes
                 .Where(sb => searchIds.Contains(sb.NodeId))
-                .OrderBy(sb => sb.SortKey)
-                .Select(sb => sb.Beat!.Text ?? "")
-                .ToListAsync(ct);
+                .Select(sb => new { sb.NodeId, sb.SortKey, Text = sb.Beat!.Text ?? "" })
+                .ToListAsync(ct))
+                .OrderBy(x => leafOrder.GetValueOrDefault(x.NodeId, int.MaxValue)).ThenBy(x => x.SortKey)
+                .Select(x => x.Text)
+                .ToList();
 
             var fullText = string.Join("\n\n---\n\n", beatTexts.Where(t => !string.IsNullOrWhiteSpace(t)));
             if (string.IsNullOrWhiteSpace(fullText)) continue;

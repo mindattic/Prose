@@ -433,9 +433,10 @@ public class BookReviewService : IBookReviewService
 
             result.Add(new ReviewFinding
             {
-                Layer            = ParseLayer(raw1.Layer),
-                Kind             = ParseKind(raw1.Kind),
-                Severity         = ParseSeverity(raw1.Severity),
+                // Normalised like the grouping above: "Critical" parsed as Suggestion.
+                Layer            = ParseLayer(raw1.Layer?.Trim().ToLowerInvariant()),
+                Kind             = ParseKind(raw1.Kind?.Trim().ToLowerInvariant()),
+                Severity         = ParseSeverity(raw1.Severity?.Trim().ToLowerInvariant()),
                 ChapterId        = chapterId,
                 NextChapterId    = nextChapterId,
                 Title            = raw1.Title,

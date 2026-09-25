@@ -41,6 +41,11 @@ public class BeatRebuildService
     /// rebuilt prose for the result to be auto-applied. Below this = refuse + flag.</summary>
     public const double MinWordRetention = 0.90;
 
+    /// <summary>The other direction: how much of the OUTPUT is words from the source. Retention
+    /// alone cannot see additions — the source plus an invented paragraph, or the chapter twice,
+    /// retains 100% and was applied.</summary>
+    public const double MinWordPrecision = 0.90;
+
     /// <summary>Sentence-aligned window size fed to the LLM per call.
     /// Each source beat is processed as a unit first. This limit only applies
     /// when a single source beat exceeds it — most chapter beats are under 50k
@@ -88,7 +93,7 @@ public class BeatRebuildService
         [JsonPropertyName("sceneEnd")] public bool SceneEnd { get; set; }
     }
 
-    private record RebeatCheckpoint(Guid NodeId, int SourceBeatsProcessed, List<LlmBeat> Beats);
+    private record RebeatCheckpoint(Guid NodeId, int SourceBeatsProcessed, List<LlmBeat> Beats, string? SourceHash = null);
 
     /// <summary>
     /// Re-segment one node. With <paramref name="apply"/>=false this is a dry run:
@@ -120,13 +125,19 @@ public class BeatRebuildService
         var ckptPath = Path.Combine(Path.GetTempPath(), $"rebeat-chk-{nodeId:N}.json");
         var rebuilt = new List<RebuiltBeat>();
         int ckptSourcesDone = 0;
+        // The checkpoint resumes by POSITION, so it is only valid for the beats it was made from.
+        // Keyed on the node alone, a checkpoint from a dry run survived an insert or an edit:
+        // the new beat was skipped as "already done" and the author's text vanished on --apply.
+        var sourceHash = Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(
+            System.Text.Encoding.UTF8.GetBytes(string.Join("\u0001",
+                ordered.Select(o => o.Beat.Id.ToString("N") + ":" + (o.Beat.Text ?? ""))))));
         if (File.Exists(ckptPath))
         {
             try
             {
                 var ckptRaw = await File.ReadAllTextAsync(ckptPath, ct);
                 var ckpt = JsonSerializer.Deserialize<RebeatCheckpoint>(ckptRaw, JsonDefaults.LlmParsing);
-                if (ckpt?.NodeId == nodeId && ckpt.SourceBeatsProcessed > 0)
+                if (ckpt?.NodeId == nodeId && ckpt.SourceBeatsProcessed > 0 && ckpt.SourceHash == sourceHash)
                 {
                     rebuilt.AddRange(ckpt.Beats.Select(b => new RebuiltBeat(b.Text, b.SceneEnd)));
                     ckptSourcesDone = ckpt.SourceBeatsProcessed;
@@ -170,7 +181,7 @@ public class BeatRebuildService
 
             // Persist checkpoint after each source beat so a kill can resume here.
             var ckptData = new RebeatCheckpoint(nodeId, sourceIdx,
-                rebuilt.Select(b => new LlmBeat { Text = b.Text, SceneEnd = b.SceneEnd }).ToList());
+                rebuilt.Select(b => new LlmBeat { Text = b.Text, SceneEnd = b.SceneEnd }).ToList(), sourceHash);
             await File.WriteAllTextAsync(ckptPath, JsonSerializer.Serialize(ckptData), ct);
         }
         rebuilt = rebuilt.Where(b => !string.IsNullOrWhiteSpace(b.Text)).ToList();
@@ -178,16 +189,23 @@ public class BeatRebuildService
             return new(nodeId, slug, title, false, ordered.Count, 0, 0, false, null, "LLM returned no beats — left untouched.");
 
         // ── Word-retention guard ──
-        var retention = WordRetention(sourceText, string.Join(" ", rebuilt.Select(b => b.Text)));
-        var guardPassed = retention >= MinWordRetention;
+        var rebuiltText = string.Join(" ", rebuilt.Select(b => b.Text));
+        var retention = WordRetention(sourceText, rebuiltText);
+        var precision = WordRetention(rebuiltText, sourceText);
+        var guardPassed = retention >= MinWordRetention && precision >= MinWordPrecision;
+        var guardDetail = $"retention {retention:P0} (min {MinWordRetention:P0}), precision {precision:P0} (min {MinWordPrecision:P0})";
+
+        // A blocked result is not progress to resume from: the next run must ask the model again.
+        if (!guardPassed)
+            try { File.Delete(ckptPath); } catch { /* best effort */ }
 
         if (!apply)
             return new(nodeId, slug, title, false, ordered.Count, rebuilt.Count, retention, guardPassed, null,
-                guardPassed ? "Dry run — re-run with --apply to commit." : $"Dry run — GUARD WOULD BLOCK (retention {retention:P0} < {MinWordRetention:P0}).");
+                guardPassed ? "Dry run — re-run with --apply to commit." : $"Dry run — GUARD WOULD BLOCK ({guardDetail}).");
 
         if (!guardPassed)
             return new(nodeId, slug, title, false, ordered.Count, rebuilt.Count, retention, false, null,
-                $"BLOCKED: word retention {retention:P0} < {MinWordRetention:P0} — likely truncation/hallucination. Left untouched; review manually.");
+                $"BLOCKED: {guardDetail} — likely truncation, invention or duplication. Left untouched; review manually.");
 
         // ── Backup, then replace ──
         string? backupPath = null;

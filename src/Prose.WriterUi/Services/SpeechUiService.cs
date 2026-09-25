@@ -50,13 +50,20 @@ public sealed class SpeechUiService(
 
     /// <summary>Mirrors <see cref="DiscussionUiService"/>'s own scoping step — see that class for
     /// why this is not optional.</summary>
-    private async Task ScopeToBookAsync(Guid bookNodeId, CancellationToken ct)
+    // NOT async, deliberately. The flow universe is an AsyncLocal, and a value set inside an async
+    // method is discarded when that method returns to its caller — so the old async version pinned
+    // nothing, and every read after "await ScopeToBookAsync(...)" ran in the Hub's default
+    // universe (empty or wrong rows for any book outside it). A synchronous method shares its
+    // caller's execution context, so the assignment survives. One single-row lookup.
+    private Task ScopeToBookAsync(Guid bookNodeId, CancellationToken ct)
     {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var universeId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+        ct.ThrowIfCancellationRequested();
+        using var db = dbFactory.CreateDbContext();
+        var universeId = db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.Id == bookNodeId)
             .Select(n => (Guid?)n.UniverseId)
-            .FirstOrDefaultAsync(ct);
+            .FirstOrDefault();
         if (universeId is { } id && id != Guid.Empty) universe.SetFlowUniverse(id);
+        return Task.CompletedTask;
     }
 }

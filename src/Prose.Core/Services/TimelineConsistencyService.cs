@@ -104,7 +104,9 @@ public class TimelineConsistencyService
             }
 
             var beatIds = BeatNodeQuery.Select(x => x.BeatId).ToHashSet();
-            var beatNumberById = BeatNodeQuery.ToDictionary(x => x.BeatId, x => x.Number);
+            // DistinctBy: a beat linked to two nodes threw here, and the catch below turned the
+            // whole book's dead-character and wound checks into "no findings".
+            var beatNumberById = BeatNodeQuery.DistinctBy(x => x.BeatId).ToDictionary(x => x.BeatId, x => x.Number);
 
             // Entity mentions per beat in this node.
             var mentionRows = await db.BeatEntityMentions.AsNoTracking()

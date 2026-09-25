@@ -182,6 +182,7 @@ public sealed class UniverseContext : IUniverseContext
     private List<UniverseInfo> catalog = new();
     private Guid defaultId = Guid.Empty;
     private bool loaded;
+    private DateTime retryLoadAfterUtc = DateTime.MinValue;
 
     public UniverseContext(
         IDbContextFactory<ProseDbContext> dbFactory,
@@ -291,6 +292,10 @@ public sealed class UniverseContext : IUniverseContext
         lock (gate)
         {
             if (loaded) return;
+            // A failed load retries after a short backoff instead of never: marking it loaded
+            // for good meant one failure at startup (the Hub up before SQL Server) switched
+            // universe scoping off for the whole process — every filter a no-op until restart.
+            if (DateTime.UtcNow < retryLoadAfterUtc) return;
             loaded = true; // mark first so a failed load doesn't spin every call
             try
             {
@@ -303,9 +308,11 @@ public sealed class UniverseContext : IUniverseContext
             catch (Exception ex)
             {
                 // Table missing (pre-migration / fresh test DB) ⇒ no universes ⇒ scoping no-op.
-                log.LogDebug(ex, "Universe catalog unavailable; universe scoping disabled this session");
+                log.LogDebug(ex, "Universe catalog unavailable; universe scoping off until the next retry");
                 catalog = new();
                 defaultId = Guid.Empty;
+                loaded = false;
+                retryLoadAfterUtc = DateTime.UtcNow.AddSeconds(15);
                 return;
             }
 

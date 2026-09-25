@@ -68,6 +68,36 @@ public class ContinuityServiceCanonicalConflictTests
     }
 
     [Test]
+    public void A_rejected_claim_the_prose_asserts_again_comes_back_contradicted_not_new()
+    {
+        var entityId = Guid.NewGuid().ToString("N");
+        var a = svc.Upsert(Claim(entityId, "Rook", "eye_color", "green")).Claim!;
+        var b = svc.Upsert(Claim(entityId, "Rook", "eye_color", "blue")).Claim!;
+        svc.Resolve(a.ClaimUid, b.ClaimUid, "a");
+
+        // Re-extraction of B's chapter: the prose still says blue.
+        var again = svc.Upsert(Claim(entityId, "Rook", "eye_color", "blue"));
+
+        Assert.That(again.Outcome, Is.EqualTo("CONTRADICTED"),
+            "reactivating a rejected claim as plain NEW hid a live contradiction from the publish gate");
+        Assert.That(svc.GetByEntity(entityId).Single(c => c.ClaimUid == a.ClaimUid).Status, Is.EqualTo("CANONICAL"));
+    }
+
+    [Test]
+    public void A_custom_resolution_matching_an_older_claim_promotes_it_instead_of_throwing()
+    {
+        var entityId = Guid.NewGuid().ToString("N");
+        var old = svc.Upsert(Claim(entityId, "Rook", "hair_color", "dark brown")).Claim!;
+        var a = svc.Upsert(Claim(entityId, "Rook", "hair_color", "black")).Claim!;
+        var b = svc.Upsert(Claim(entityId, "Rook", "hair_color", "brown")).Claim!;
+
+        var r = svc.Resolve(a.ClaimUid, b.ClaimUid, "custom", "dark brown");
+
+        Assert.That(r.Winner!.ClaimUid, Is.EqualTo(old.ClaimUid));
+        Assert.That(svc.GetByEntity(entityId).Single(c => c.ClaimUid == old.ClaimUid).Status, Is.EqualTo("CANONICAL"));
+    }
+
+    [Test]
     public void GetContradictionGroups_SurfacesPostCanonicalConflict()
     {
         var entityId = Guid.NewGuid().ToString("N");

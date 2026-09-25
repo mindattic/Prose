@@ -88,15 +88,21 @@ public sealed class FindingsUiService(
                        f.Summary, f.Snippet, f.DetectedAt, beatId, number);
     }
 
-    private async Task<string?> SlugAsync(Guid bookNodeId, CancellationToken ct)
+    // NOT async, deliberately. The flow universe is an AsyncLocal, and a value set inside an async
+    // method is discarded when that method returns to its caller — so the old async version pinned
+    // nothing, and every read after "await ScopeToBookAsync(...)" ran in the Hub's default
+    // universe (empty or wrong rows for any book outside it). A synchronous method shares its
+    // caller's execution context, so the assignment survives. One single-row lookup.
+    private Task<string?> SlugAsync(Guid bookNodeId, CancellationToken ct)
     {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var row = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+        ct.ThrowIfCancellationRequested();
+        using var db = dbFactory.CreateDbContext();
+        var row = db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.Id == bookNodeId)
             .Select(n => new { n.Slug, n.UniverseId })
-            .FirstOrDefaultAsync(ct);
-        if (row is null) return null;
+            .FirstOrDefault();
+        if (row is null) return Task.FromResult<string?>(null);
         if (row.UniverseId != Guid.Empty) universe.SetFlowUniverse(row.UniverseId);
-        return row.Slug;
+        return Task.FromResult<string?>(row.Slug);
     }
 }

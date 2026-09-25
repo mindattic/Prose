@@ -124,14 +124,15 @@ public class NodeReviewService
     public async Task<List<string>> GetLatestPersonaIdsAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // Delta rows (Score 0, changed beats only) are not a panel run.
         var latestHash = await db.NodeReviews
-            .Where(r => r.NodeId == nodeId)
+            .Where(r => r.NodeId == nodeId && (r.FocusGroupName == null || r.FocusGroupName != "Delta"))
             .OrderByDescending(r => r.ReviewedAt)
             .Select(r => r.ContentHash)
             .FirstOrDefaultAsync(ct);
         if (string.IsNullOrEmpty(latestHash)) return new List<string>();
         return await db.NodeReviews
-            .Where(r => r.NodeId == nodeId && r.ContentHash == latestHash)
+            .Where(r => r.NodeId == nodeId && r.ContentHash == latestHash && (r.FocusGroupName == null || r.FocusGroupName != "Delta"))
             .Select(r => r.PersonaId)
             .Distinct()
             .ToListAsync(ct);
@@ -410,7 +411,7 @@ public class NodeReviewService
         if (proseLessons != null)
         {
             await using var slugDb = await dbFactory.CreateDbContextAsync(ct);
-            nodeSlug = await slugDb.Nodes.AsNoTracking()
+            nodeSlug = await slugDb.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(s => s.Id == nodeId)
                 .Select(s => s.Slug)
                 .FirstOrDefaultAsync(ct);
@@ -607,7 +608,7 @@ public class NodeReviewService
         if (proseLessons != null)
         {
             await using var slugDb = await dbFactory.CreateDbContextAsync(ct);
-            nodeSlug = await slugDb.Nodes.AsNoTracking().Where(s => s.Id == nodeId)
+            nodeSlug = await slugDb.Nodes.AsNoTracking().IgnoreQueryFilters().Where(s => s.Id == nodeId)
                 .Select(s => s.Slug).FirstOrDefaultAsync(ct);
         }
         var lessonsBlock = proseLessons?.FormatBlockForReview(nodeSlug);
@@ -867,7 +868,7 @@ Return ONLY a JSON object, nothing else:
   - ""chapter"": does it advance the chapter's purpose and build momentum?
   - ""arc"": does it serve the story arc — right escalation, plants/pays off correctly?
   - ""story"": does it contribute to the whole — theme, character arc, reader journey?
-  Format: {{""{segment.FirstBeat}"":{{""beat"":4,""chapter"":3,""arc"":4,""story"":3}},{{""{segment.FirstBeat + 1}"":{{""beat"":2,""chapter"":3,""arc"":2,""story"":2}}}}"
+  Format: {{""{segment.FirstBeat}"":{{""beat"":4,""chapter"":3,""arc"":4,""story"":3}},""{segment.FirstBeat + 1}"":{{""beat"":2,""chapter"":3,""arc"":2,""story"":2}}}}"
     : "")}
 Be honest and use the whole scale.";
     }
@@ -966,12 +967,13 @@ Be honest and use the whole scale.";
         var export = await exporter.ExportAsync(nodeId, numberBeats: true, ct);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var latestHash = await db.NodeReviews.Where(r => r.NodeId == nodeId)
+        // Not a delta batch: it holds only the changed beats, so proposals saw a sliver of the book.
+        var latestHash = await db.NodeReviews.Where(r => r.NodeId == nodeId && (r.FocusGroupName == null || r.FocusGroupName != "Delta"))
             .OrderByDescending(r => r.ReviewedAt).Select(r => r.ContentHash).FirstOrDefaultAsync(ct);
         if (string.IsNullOrEmpty(latestHash)) return new List<EditProposal>();
 
         var all = await db.NodeReviews
-            .Where(r => r.NodeId == nodeId && r.ContentHash == latestHash)
+            .Where(r => r.NodeId == nodeId && r.ContentHash == latestHash && (r.FocusGroupName == null || r.FocusGroupName != "Delta"))
             .Include(r => r.BeatScores).ToListAsync(ct);
         var reviews = all.GroupBy(r => r.PersonaId)
             .Select(g => g.OrderByDescending(r => r.ReviewedAt).First()).ToList();
@@ -988,16 +990,11 @@ Be honest and use the whole scale.";
         // day in LogicSweepService.RunAsync). reviewSearchIds is already in true reading order
         // (GetLeafDescendantIdsAsync is depth-first, SortKey-ordered per level) — order by each
         // beat's chapter position first, then its own SortKey.
-        var reviewSearchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var reviewChapterOrder = reviewSearchIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
-        var ordered = (await db.BeatNodes.Where(sb => reviewSearchIds.Contains(sb.NodeId))
-                .Include(sb => sb.Beat)
-                .Select(sb => new { sb.NodeId, sb.SortKey, Beat = sb.Beat! })
-                .ToListAsync(ct))
-            .OrderBy(x => reviewChapterOrder.TryGetValue(x.NodeId, out var idx) ? idx : int.MaxValue)
-            .ThenBy(x => x.SortKey)
-            .Select(x => x.Beat)
-            .ToList();
+        //
+        // Now the export's own numbered list: the leaf walk above still counted empty/tag-only
+        // beats the export skips (every proposal past one landed on the next beat) and missed
+        // beats hung directly on a non-leaf node.
+        var ordered = await exporter.GetNumberedBeatsAsync(nodeId, ct);
         int n = ordered.Count;
         if (n == 0) return new List<EditProposal>();
 
@@ -1569,14 +1566,15 @@ Return ONLY a JSON object and nothing else:
         bool useLocal = false, string? localModelOverride = null)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        // Use the newest content fingerprint's reviews (the latest run).
+        // Use the newest content fingerprint's reviews (the latest PANEL run). Delta rows carry
+        // Score 0: summarising them reported "Average score 0.0/100" with every reader at 1-20.
         var latestHash = await db.NodeReviews
-            .Where(r => r.NodeId == nodeId)
+            .Where(r => r.NodeId == nodeId && (r.FocusGroupName == null || r.FocusGroupName != "Delta"))
             .OrderByDescending(r => r.ReviewedAt)
             .Select(r => r.ContentHash)
             .FirstOrDefaultAsync(ct);
         var reviews = await db.NodeReviews
-            .Where(r => r.NodeId == nodeId && r.ContentHash == latestHash)
+            .Where(r => r.NodeId == nodeId && r.ContentHash == latestHash && (r.FocusGroupName == null || r.FocusGroupName != "Delta"))
             .AsNoTracking()
             .ToListAsync(ct);
         if (reviews.Count == 0)
@@ -1664,7 +1662,9 @@ Return ONLY a JSON object and nothing else:
                 "A unique gripe with only one reader still gets its own entry. " +
                 "Do NOT invent or rephrase problems that are not in the input.";
 
-            var raw = await cloudLlm.CallAsync(judge, key!, "claude-haiku-4-5-20251001",
+            // The judge's own cheap model: a hard-coded Claude id failed on every other provider,
+            // and the swallowed exception fell back to the flat list every time.
+            var raw = await cloudLlm.CallAsync(judge, key!, transport.ResolveModel(judge, cheap: true),
                 system, $"Gripes from {reviews.Count} readers:\n\n{inputSb}",
                 maxTokens: 8000, temperature: 0.3, ct);
 
@@ -1934,15 +1934,14 @@ Be specific; do not invent praise the reviews don't support.";
             // perBeat is keyed by POSITIONAL beat index (1..N, the order the study saw the
             // beats), NOT the global Beat.Number. Map positional → the node's beats in
             // reading (SortKey) order.
-            var ordered = await db.BeatNodes
-                .Where(sb => sb.NodeId == nodeId)
-                .OrderBy(sb => sb.SortKey)
-                .Include(sb => sb.Beat)
-                .Select(sb => sb.Beat!)
-                .ToListAsync(ct);
+            var numbered = await exporter.GetNumberedBeatsAsync(nodeId, ct);
+            var scoreById = new Dictionary<Guid, double>();
+            for (int pos = 1; pos <= numbered.Count; pos++)
+                if (perBeat.TryGetValue(pos, out var pct)) scoreById[numbered[pos - 1].Id] = pct;
+            var ids = scoreById.Keys.ToList();
+            var tracked = await db.Beats.Where(b => ids.Contains(b.Id)).ToListAsync(ct);
             var now = DateTime.UtcNow;
-            for (int pos = 1; pos <= ordered.Count; pos++)
-                if (perBeat.TryGetValue(pos, out var pct)) { ordered[pos - 1].Score = pct; ordered[pos - 1].ScoredAt = now; }
+            foreach (var b in tracked) { b.Score = scoreById[b.Id]; b.ScoredAt = now; }
         }
 
         // Append score history and fire post-score triggers only on genuine panel runs.
@@ -2425,12 +2424,7 @@ Be specific; do not invent praise the reviews don't support.";
     /// Returns a 1-based positional dict (position → TextHash), omitting beats with null hashes.</summary>
     private async Task<IReadOnlyDictionary<int, string>> LoadBeatHashesAsync(Guid nodeId, CancellationToken ct)
     {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var hashes = await db.BeatNodes
-            .Where(nb => nb.NodeId == nodeId)
-            .OrderBy(nb => nb.SortKey)
-            .Select(nb => nb.Beat!.TextHash)
-            .ToListAsync(ct);
+        var hashes = (await exporter.GetNumberedBeatsAsync(nodeId, ct)).Select(b => b.TextHash).ToList();
         return hashes
             .Select((h, i) => (pos: i + 1, hash: h))
             .Where(x => x.hash != null)
@@ -2466,12 +2460,7 @@ Be specific; do not invent praise the reviews don't support.";
             if (node == null) return new DeltaRunResult(0, 0, 0, 0, 0, "Node not found.");
             nodeTitle = node.Title;
 
-            orderedBeats = await db.BeatNodes
-                .Where(nb => nb.NodeId == nodeId)
-                .OrderBy(nb => nb.SortKey)
-                .Include(nb => nb.Beat)
-                .Select(nb => nb.Beat!)
-                .ToListAsync(ct);
+            orderedBeats = await exporter.GetNumberedBeatsAsync(nodeId, ct);
 
             latestScoredHashByPos = await db.NodeReviewBeatScores
                 .Where(bs => bs.Review!.NodeId == nodeId && bs.BeatTextHash != null)
@@ -2661,7 +2650,7 @@ Changed beats to score: {changedList}. Do not output scores for beats marked [CO
                 sb.AppendLine($"[... {pos - lastShown - 1} unchanged beat(s) omitted ...]");
             var tag = changedPositions.Contains(pos) ? "[SCORE THIS" : "[CONTEXT";
             sb.AppendLine($"{tag} — Beat {pos}]");
-            sb.AppendLine(orderedBeats[i].Text);
+            sb.AppendLine(BeatMarkup.StripEntityTags(orderedBeats[i].Text)); // the reader's text, not markup
             sb.AppendLine();
             lastShown = pos;
         }

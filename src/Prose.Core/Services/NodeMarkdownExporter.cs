@@ -93,6 +93,21 @@ public class NodeMarkdownExporter
         return new NodeExport(markdown, contentHash, n, node.Title, path);
     }
 
+    /// <summary>
+    /// The beats the <c>[Beat N]</c> numbering counts, in order: element i is [Beat i+1]. The same
+    /// walk and the same empty-text skip as the export, so a ballot's per-beat position maps back
+    /// onto the beat the reader actually saw. Anything that maps positions to beats must use this —
+    /// the direct-children-by-SortKey reads it replaces found nothing on a book node and shifted
+    /// every later beat by one past an empty or tag-only beat.
+    /// </summary>
+    public async Task<List<Data.Entities.Beat>> GetNumberedBeatsAsync(Guid nodeId, CancellationToken ct = default)
+    {
+        var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
+        return ordered.Select(o => o.Beat)
+            .Where(b => BeatMarkup.StripEntityTags(b.Text).Trim().Length > 0)
+            .ToList();
+    }
+
     /// <summary>One contiguous review segment ("act"): a run of beats small enough
     /// to review in a single reliable pass, with GLOBAL beat numbers preserved so
     /// per-beat scores still join to the node's positional index.</summary>

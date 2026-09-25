@@ -69,7 +69,15 @@ public class CanonContradictionService
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId, ct);
-        var prose = string.Join("\n\n", ordered.Select(o => (o.Beat.Text ?? "").Trim()).Where(t => t.Length > 0));
+        // The reader's text: raw <entity …> markup went to the model, and snippets quoted from it
+        // could not be matched against stripped text downstream.
+        var prose = string.Join("\n\n", ordered.DistinctBy(o => o.Beat.Id)
+            .Select(o => BeatMarkup.StripEntityTags(o.Beat.Text ?? "").Trim()).Where(t => t.Length > 0));
+
+        // Book-scoped entities carry OriginNodeId = the BOOK. The chapter-close check passes a
+        // chapter id, and using it as the scope dropped every one of the book's own characters
+        // from retrieval and from the embedding refresh — zero contradictions, by construction.
+        var scopeNodeId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, nodeId, ct) ?? nodeId;
         if (prose.Length == 0) return new CheckResult(node.Slug, 0, []);
 
         // 2026-08-14 fix: EmbeddingService.EnsureFreshAsync had zero call sites anywhere in the
@@ -80,8 +88,8 @@ public class CanonContradictionService
         // text actually changed) and scoped to just this book's own entities (OriginNodeId ==
         // nodeId) — cheap and bounded, not a corpus-wide sweep — so check-canon never audits a
         // book against its own stale vectors again.
-        var bookEntities = await db.Entities.AsNoTracking()
-            .Where(e => e.OriginNodeId == nodeId)
+        var bookEntities = await db.Entities.AsNoTracking().IgnoreQueryFilters()
+            .Where(e => e.OriginNodeId == scopeNodeId)
             .Select(e => new { e.Id, e.Name, e.EntityType, e.Description })
             .ToListAsync(ct);
         foreach (var e in bookEntities)
@@ -98,6 +106,7 @@ public class CanonContradictionService
         var all = new List<Contradiction>();
         int chunks = 0;
         int failedChunks = 0;
+        int noCanonChunks = 0;
         foreach (var chunk in Chunk(prose, ChunkChars))
         {
             ct.ThrowIfCancellationRequested();
@@ -109,8 +118,8 @@ public class CanonContradictionService
             // gloss can cut off the exact fact (e.g. a checkpoint-officer backstory two sentences
             // in) that would prove the prose does NOT contradict canon, producing a false finding.
             var canon = await retrieval.RetrieveContextBlockAsync(
-                chunk, k: 24, charBudget: 4000, currentNodeId: nodeId, descriptionChars: 400, ct: ct);
-            if (canon.Length == 0) continue;
+                chunk, k: 24, charBudget: 4000, currentNodeId: scopeNodeId, descriptionChars: 400, ct: ct);
+            if (canon.Length == 0) { noCanonChunks++; continue; }
 
             List<Contradiction> found;
             try
@@ -186,6 +195,15 @@ public class CanonContradictionService
         // so it needs its own narrow, unconditional clear — otherwise a stale "N chunks could not
         // be evaluated" finding survives forever once the API recovers and a run fully succeeds.
         findings.DeleteBySummaryPrefix($"node:{node.Slug}", "CANON-CONTRADICTION [incomplete]");
+
+        // No canon for ANY chunk is a cold or empty embedding index, not a clean book: purging on
+        // it deleted every CANON-CONTRADICTION finding and filed nothing in their place.
+        if (chunks > 0 && noCanonChunks == chunks)
+        {
+            log.LogWarning("Canon check {Slug}: canon retrieval returned nothing for all {Chunks} chunks — " +
+                "embedding index cold or empty; Findings left untouched.", node.Slug, chunks);
+            return new CheckResult(node.Slug, chunks, all);
+        }
 
         if (failedChunks > 0)
         {

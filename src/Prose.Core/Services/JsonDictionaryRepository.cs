@@ -14,8 +14,11 @@ public class JsonSingletonRepository<T> where T : class, new()
     private readonly Microsoft.EntityFrameworkCore.IDbContextFactory<Data.ProseDbContext> dbFactory;
     private readonly string key;
     private readonly JsonSerializerOptions jsonOptions;
-    private T? cache;
-    private int cacheEpoch = -1;
+    // One immutable entry, swapped whole: value, the epoch it was read at, and WHICH universe's
+    // row it is. The epoch alone is process-wide and any flow bumps it, so a SCRY request could
+    // cache SCRY's literary_rules and a concurrent GLMZ request at the same epoch was served them.
+    private sealed record Entry(T Value, int Epoch, Guid Target);
+    private volatile Entry? entry;
 
     public JsonSingletonRepository(Microsoft.EntityFrameworkCore.IDbContextFactory<Data.ProseDbContext> dbFactory, string key)
     {
@@ -44,30 +47,36 @@ public class JsonSingletonRepository<T> where T : class, new()
     {
         // Cache is per-universe: a SwitchUniverse bumps the epoch so the voice/lore document is
         // re-read for the new universe instead of serving the previous one's (RFC 0006).
-        if (cache != null && cacheEpoch == UniverseScope.Epoch) return cache;
-        cacheEpoch = UniverseScope.Epoch;
+        var epoch = UniverseScope.Epoch;
+        var target = UniverseScope.SharedConfigKeys.Contains(key) ? Data.Entities.Universe.SharedId : TargetUniverse();
+        var e = entry;
+        if (e != null && e.Epoch == epoch && e.Target == target) return e.Value;
+        T value;
         try
         {
             using var db = dbFactory.CreateDbContext();
-            var target = UniverseScope.SharedConfigKeys.Contains(key) ? Data.Entities.Universe.SharedId : TargetUniverse();
             var rows = db.Settings.AsNoTracking().Where(s => s.Key == key).ToList();
             var row = rows.FirstOrDefault(s => s.UniverseId == target)
                    ?? rows.FirstOrDefault(s => s.UniverseId == Data.Entities.Universe.SharedId);
-            if (row == null || string.IsNullOrEmpty(row.Json)) return cache = new T();
-            cache = JsonSerializer.Deserialize<T>(row.Json, jsonOptions) ?? new T();
+            value = row == null || string.IsNullOrEmpty(row.Json)
+                ? new T()
+                : JsonSerializer.Deserialize<T>(row.Json, jsonOptions) ?? new T();
         }
         catch
         {
             // No DB context available — return defaults. Test fixtures hit this path.
-            cache = new T();
+            value = new T();
         }
-        return cache;
+        // Stamped after the load, with the epoch read BEFORE it: a switch mid-load then
+        // mismatches next time instead of being masked.
+        entry = new Entry(value, epoch, target);
+        return value;
     }
 
     public void Save(T item)
     {
-        cache = item;
-        cacheEpoch = UniverseScope.Epoch;
+        entry = new Entry(item, UniverseScope.Epoch,
+            UniverseScope.SharedConfigKeys.Contains(key) ? Data.Entities.Universe.SharedId : TargetUniverse());
         var json = JsonSerializer.Serialize(item, jsonOptions);
         try
         {
@@ -84,6 +93,6 @@ public class JsonSingletonRepository<T> where T : class, new()
         }
     }
 
-    public void Reload() => cache = null;
+    public void Reload() => entry = null;
 
 }

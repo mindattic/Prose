@@ -85,13 +85,19 @@ public sealed class WriterService(
 
     /// <summary>Pins the ambient universe to the one this book lives in, for the rest of this
     /// async flow. Returns the book node id.</summary>
-    private async Task<Guid> ScopeToBookAsync(Guid bookNodeId, CancellationToken ct)
+    // NOT async, deliberately. The flow universe is an AsyncLocal, and a value set inside an async
+    // method is discarded when that method returns to its caller — so the old async version pinned
+    // nothing, and every read after "await ScopeToBookAsync(...)" ran in the Hub's default
+    // universe (empty or wrong rows for any book outside it). A synchronous method shares its
+    // caller's execution context, so the assignment survives. One single-row lookup.
+    private Task<Guid> ScopeToBookAsync(Guid bookNodeId, CancellationToken ct)
     {
-        await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var universeId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.Id == bookNodeId).Select(n => n.UniverseId).FirstOrDefaultAsync(ct);
+        ct.ThrowIfCancellationRequested();
+        using var db = dbFactory.CreateDbContext();
+        var universeId = db.Nodes.AsNoTracking().IgnoreQueryFilters()
+            .Where(n => n.Id == bookNodeId).Select(n => n.UniverseId).FirstOrDefault();
         if (universeId != Guid.Empty) universe.SetFlowUniverse(universeId);
-        return bookNodeId;
+        return Task.FromResult(bookNodeId);
     }
 
     public async Task<List<SpineItem>> GetSpineAsync(Guid bookNodeId, CancellationToken ct = default)

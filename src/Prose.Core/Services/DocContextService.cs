@@ -439,7 +439,7 @@ public sealed class DocContextService(
     {
         var keys = new List<string>();
 
-        var self = await db.Nodes.AsNoTracking()
+        var self = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.Id == nodeId)
             .Select(n => new { n.UniverseId, n.ParentNodeId })
             .FirstOrDefaultAsync(ct);
@@ -454,7 +454,7 @@ public sealed class DocContextService(
         var parentId = self.ParentNodeId;
         for (var depth = 0; depth < 3 && parentId is { } pid; depth++)
         {
-            var parent = await db.Nodes.AsNoTracking()
+            var parent = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(n => n.Id == pid)
                 .Select(n => new { n.Kind, n.Title, n.ParentNodeId })
                 .FirstOrDefaultAsync(ct);
@@ -480,7 +480,7 @@ public sealed class DocContextService(
     private static async Task<string> ResolveEffectiveNodeCodeAsync(
         ProseDbContext db, Guid nodeId, CancellationToken ct)
     {
-        var current = await db.Nodes.AsNoTracking()
+        var current = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.Id == nodeId)
             .Select(n => new { n.NodeCode, n.ParentNodeId })
             .FirstOrDefaultAsync(ct);
@@ -490,7 +490,7 @@ public sealed class DocContextService(
         var parentId = current.ParentNodeId;
         for (var depth = 0; depth < 5 && parentId is { } pid; depth++)
         {
-            var parent = await db.Nodes.AsNoTracking()
+            var parent = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(n => n.Id == pid)
                 .Select(n => new { n.NodeCode, n.ParentNodeId })
                 .FirstOrDefaultAsync(ct);

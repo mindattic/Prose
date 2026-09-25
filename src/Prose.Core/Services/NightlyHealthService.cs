@@ -137,6 +137,8 @@ public class NightlyHealthService
         if (orderedBeats.Count == 0) return [];
 
         // Run surface stats on every beat — pure text, zero cost
+        // DistinctBy: a beat linked twice made ToDictionary throw and the whole book was skipped.
+        orderedBeats = orderedBeats.DistinctBy(b => b.BeatId).ToList();
         var statsById = orderedBeats
             .ToDictionary(b => b.BeatId, b => ProseStatsService.Analyze(b.BeatId, b.Text));
 
@@ -338,8 +340,10 @@ public class NightlyHealthService
         // fixed in NodeWorkbenchService.WalkAsync (its own independent copy of this exact
         // tree-walk idiom), 2026-08-17: without this, every chapter of a non-ambient-universe book
         // is silently invisible to this health-check walk.
+        // Not into a Drafts bucket (a book-kind child), as WalkAsync does: draft text was scanned
+        // and paired with published beats as if adjacent.
         var children = await db.Nodes.IgnoreQueryFilters()
-            .Where(n => n.ParentNodeId == nodeId)
+            .Where(n => n.ParentNodeId == nodeId && n.Kind != "book")
             .OrderBy(n => n.SortKey)
             .Select(n => n.Id)
             .ToListAsync(ct);
