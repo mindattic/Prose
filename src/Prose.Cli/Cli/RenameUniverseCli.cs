@@ -66,6 +66,13 @@ public static class RenameUniverseCli
 
         await db.SaveChangesAsync();
 
+        // The persisted default universe is stored BY SLUG: renaming the default without updating
+        // it made Refresh() fall back to another universe, and unscoped commands then read and
+        // stamped a different universe.
+        var kv = services.GetRequiredService<Prose.Core.Services.SettingsKvStore>();
+        if (string.Equals(kv.Get<string>("current_universe"), prevSlug, StringComparison.OrdinalIgnoreCase))
+            kv.Set("current_universe", newSlug);
+
         // IUniverseContext caches the universe catalog in memory (ambient singleton, read on every
         // --universe <slug> resolution) — without this, the Hub keeps resolving the OLD slug until
         // its next restart, even though the DB row is already renamed.

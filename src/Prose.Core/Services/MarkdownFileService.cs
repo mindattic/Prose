@@ -754,7 +754,7 @@ public class MarkdownFileService
 
         if (asOf.HasValue && db.Database.IsSqlServer())
         {
-            var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+            var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
             return await db.MarkdownFiles
                 .FromSqlRaw(
                     $"SELECT {TemporalColumns} " +
@@ -788,7 +788,7 @@ public class MarkdownFileService
         }
         else if (asOf.HasValue && db.Database.IsSqlServer())
         {
-            var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+            var ts = asOf.Value.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
             rows = await db.MarkdownFiles
                 .FromSqlRaw(
                     $"SELECT {TemporalColumns} " +

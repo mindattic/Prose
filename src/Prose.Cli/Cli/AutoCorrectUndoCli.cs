@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Prose.Core.Data;
 using Prose.Core.Services;
 
 namespace Prose.Cli;
@@ -36,6 +38,13 @@ public static class AutoCorrectUndoCli
             }
             var n = await ledger.UndoRunAsync(runId);
             Console.WriteLine($"[auto-correct-undo] Reversed {n} action(s) from run {runId}.");
+            // The undo stops at the first failure; say so in the exit code, not just the count.
+            await using (var db = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync())
+            {
+                var left = await db.SelfHealActions.CountAsync(a => a.RunId == runId && a.UndoneAt == null);
+                if (left > 0) { Console.Error.WriteLine($"[auto-correct-undo] {left} action(s) of that run could NOT be reversed — see the Hub log."); return 1; }
+                if (n == 0) { Console.Error.WriteLine("[auto-correct-undo] Nothing to reverse for that run id."); return 1; }
+            }
             return 0;
         }
 
@@ -44,8 +53,11 @@ public static class AutoCorrectUndoCli
             Console.Error.WriteLine($"[auto-correct-undo] --last-n must be a positive integer, got '{lastNStr}'.");
             return 2;
         }
+        await using var db2 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
+        var pending = Math.Min(count, await db2.SelfHealActions.CountAsync(a => a.UndoneAt == null));
         var undone = await ledger.UndoLastNActionsAsync(count);
         Console.WriteLine($"[auto-correct-undo] Reversed {undone} of the {count} most recently applied action(s).");
+        if (undone < pending) { Console.Error.WriteLine($"[auto-correct-undo] Stopped after {undone} of {pending} — see the Hub log."); return 1; }
         return 0;
     }
 

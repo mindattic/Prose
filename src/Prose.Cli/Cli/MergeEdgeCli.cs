@@ -43,8 +43,9 @@ public static class MergeEdgeCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var keep = await db.Edges.FirstOrDefaultAsync(e => e.Id == keepId);
-        var dedupe = await db.Edges.FirstOrDefaultAsync(e => e.Id == dedupeId);
+        // Explicit ids: an edge in another universe was "No edge with id".
+        var keep = await db.Edges.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == keepId);
+        var dedupe = await db.Edges.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == dedupeId);
 
         if (keep == null)
         {
@@ -54,6 +55,12 @@ public static class MergeEdgeCli
         if (dedupe == null)
         {
             Console.Error.WriteLine($"[merge-edge] No edge with id {dedupeId} (--dedupe).");
+            return 1;
+        }
+        // Merging a live edge into a dead one invalidated the only live edge: the relationship vanished.
+        if (keep.InvalidatedAt != null)
+        {
+            Console.Error.WriteLine($"[merge-edge] Edge {keepId} (--keep) is invalidated; keep the live one.");
             return 1;
         }
         if (dedupe.InvalidatedAt != null)

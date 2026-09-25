@@ -20,9 +20,10 @@ namespace Prose.Cli;
 /// </summary>
 public static class StripBeatArtifactsCli
 {
-    private static readonly Regex LeadingHeading = new(@"\A#[^\n]*\n\n?", RegexOptions.Compiled);
+    // CRLF-aware: "-{3,}\n+" could not match "---\r\n", so the rule was left in the manuscript.
+    private static readonly Regex LeadingHeading = new(@"\A#[^\r\n]*\r?\n(?:\r?\n)?", RegexOptions.Compiled);
     private static readonly Regex TrailingMarker = new(
-        @"\n+(?:-{3,}\n+)?\*{0,2}sceneEnd=(?:true|false)\*{0,2}\s*\z",
+        @"(?:\r?\n)+(?:-{3,}(?:\r?\n)+)?\*{0,2}sceneEnd=(?:true|false)\*{0,2}\s*\z",
         RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)

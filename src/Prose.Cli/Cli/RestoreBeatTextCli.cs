@@ -35,7 +35,7 @@ public static class RestoreBeatTextCli
             Console.Error.WriteLine("[restore-beat-text] --id <guid> is required and must be a valid GUID.");
             return 2;
         }
-        if (!DateTime.TryParse(asOfArg, null, System.Globalization.DateTimeStyles.AdjustToUniversal
+        if (!DateTime.TryParse(asOfArg, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.AdjustToUniversal
                 | System.Globalization.DateTimeStyles.AssumeUniversal, out var asOf))
         {
             Console.Error.WriteLine("[restore-beat-text] --as-of <datetime-utc> is required, e.g. 2026-08-27T03:00:00Z.");
@@ -58,7 +58,7 @@ public static class RestoreBeatTextCli
             return 1;
         }
 
-        var ts = asOf.ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+        var ts = asOf.ToString("yyyy-MM-ddTHH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
         var historical = await db.Database.SqlQueryRaw<HistoricalBeatText>(
             $"SELECT [Id], [Text] FROM [dbo].[Beats] FOR SYSTEM_TIME AS OF '{ts}' WHERE [Id] = {{0}}", id)
             .FirstOrDefaultAsync();

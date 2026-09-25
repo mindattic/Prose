@@ -63,8 +63,12 @@ public static class TextSanitizerService
     private static readonly (string Bad, string Good)[] LegacyMap =
     [
         ("\u00E2\u20AC", "\u201D"), // a-circumflex+euro -> right double quote (dropped 0x9D tail)
-        ("\u00C2", ""),             // stray C2 lead byte -> removed
     ];
+
+    // A stray C2 lead byte is "Â" FOLLOWED by a Latin-1 symbol (U+00A0-U+00BF: NBSP, ©, °, ½…).
+    // A bare "Â" rule stripped every legitimate one: "Ângela said" became "ngela said".
+    private static readonly System.Text.RegularExpressions.Regex StrayC2 =
+        new("\u00C2(?=[\u00A0-\u00BF])", System.Text.RegularExpressions.RegexOptions.Compiled);
 
     // Cheap prefilter: every generated Bad pattern starts with one of these
     // (the CP1252 decodings of UTF-8 lead bytes C2-C5 / CE-CF / E2), or is the BOM.
@@ -116,7 +120,7 @@ public static class TextSanitizerService
             if (text.Contains(bad, StringComparison.Ordinal)) return true;
         foreach (var (bad, _) in LegacyMap)
             if (text.Contains(bad, StringComparison.Ordinal)) return true;
-        return false;
+        return StrayC2.IsMatch(text);
     }
 
     private static bool ContainsAny(string text, (string Bad, string Good)[] map)
@@ -150,6 +154,7 @@ public static class TextSanitizerService
         if (ContainsAny(result, LegacyMap))
             foreach (var (bad, good) in LegacyMap)
                 result = result.Replace(bad, good, StringComparison.Ordinal);
+        result = StrayC2.Replace(result, "");
         return result;
     }
 }

@@ -46,13 +46,10 @@ public static class SetNodeVersionCli
         await using var db = await dbFactory.CreateDbContextAsync();
 
         // IgnoreQueryFilters(): explicit id/slug lookup, not ambient scope.
-        var q = db.Nodes.IgnoreQueryFilters().AsQueryable();
-        var node = !string.IsNullOrWhiteSpace(slug)
-            ? await q.FirstOrDefaultAsync(s => s.Slug == slug)
-            : Guid.TryParse(id, out var g)
-                ? await q.FirstOrDefaultAsync(s => s.Id == g)
-                : await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync()
-                    is { Count: 1 } m ? m[0] : null;
+        // The shared resolver (NodeCode, universe tie-break): a slug existing in two universes
+        // set the version on whichever book came first, which then exported under the wrong V.
+        var nodeId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug ?? id);
+        var node = nodeId == null ? null : await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId.Value);
 
         if (node == null) { Console.Error.WriteLine("[set-node-version] Node not found."); return 1; }
 

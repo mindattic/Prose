@@ -122,7 +122,10 @@ public class SelfHealLedgerService(IDbContextFactory<ProseDbContext> dbFactory, 
             try
             {
                 await using var tx = await db.Database.BeginTransactionAsync(ct);
-                foreach (var m in mutations)
+                // In REVERSE: a merge logs "relink children, drop self-aliases, delete loser" — undoing
+                // in applied order pointed children at a loser row not yet re-inserted, the FK check
+                // failed, and a merge could never be undone.
+                foreach (var m in Enumerable.Reverse(mutations))
                     await ReverseOneAsync(db, m, ct);
                 await MarkUndoneAsync(db, action.Id, ct);
                 await tx.CommitAsync(ct);

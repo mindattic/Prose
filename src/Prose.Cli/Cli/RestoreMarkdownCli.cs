@@ -30,7 +30,8 @@ public static class RestoreMarkdownCli
         DateTime? asOf = null;
         if (asOfStr != null)
         {
-            if (!DateTime.TryParse(asOfStr, null, System.Globalization.DateTimeStyles.RoundtripKind, out var parsed))
+            // UTC unless the value says otherwise: RoundtripKind read "2026-06-01T00:00:00" as LOCAL.
+            if (!DateTime.TryParse(asOfStr, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.AssumeUniversal | System.Globalization.DateTimeStyles.AdjustToUniversal, out var parsed))
             {
                 Console.Error.WriteLine($"[restore-markdown] cannot parse --as-of value '{asOfStr}' (use ISO 8601, e.g. 2026-06-01T00:00:00Z)");
                 return 1;

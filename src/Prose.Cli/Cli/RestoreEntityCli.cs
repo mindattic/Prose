@@ -28,7 +28,7 @@ public static class RestoreEntityCli
 {
     private const string EntityColumns =
         "Id, UniverseId, EntityType, Name, Slug, Status, Description, CreatedAt, ModifiedAt, " +
-        "InWorldCreatedDate, GrammarNote, OriginNodeId";
+        "InWorldCreatedDate, GrammarNote, OriginNodeId, Provenance"; // every mapped column, or FromSqlRaw throws
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
@@ -48,7 +48,7 @@ public static class RestoreEntityCli
             Console.Error.WriteLine("[restore-entity] --id <guid> is required and must be a valid GUID.");
             return 2;
         }
-        if (!DateTime.TryParse(asOfArg, null, System.Globalization.DateTimeStyles.AdjustToUniversal
+        if (!DateTime.TryParse(asOfArg, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.AdjustToUniversal
                 | System.Globalization.DateTimeStyles.AssumeUniversal, out var asOf))
         {
             Console.Error.WriteLine("[restore-entity] --as-of <datetime-utc> is required. " +
@@ -72,7 +72,7 @@ public static class RestoreEntityCli
             return 1;
         }
 
-        var ts = asOf.ToString("yyyy-MM-ddTHH:mm:ss.fffffff");
+        var ts = asOf.ToString("yyyy-MM-ddTHH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
         var historical = await db.Entities
             .FromSqlRaw($"SELECT {EntityColumns} FROM Entities FOR SYSTEM_TIME AS OF '{ts}' WHERE Id = {{0}}", id)
             .IgnoreQueryFilters()
@@ -104,6 +104,7 @@ public static class RestoreEntityCli
             InWorldCreatedDate = historical.InWorldCreatedDate,
             GrammarNote        = historical.GrammarNote,
             OriginNodeId       = historical.OriginNodeId,
+            Provenance         = historical.Provenance,
         });
         await db.SaveChangesAsync();
 

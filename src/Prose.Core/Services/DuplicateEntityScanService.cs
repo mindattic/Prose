@@ -550,7 +550,7 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
         // "Aliases" is assumed to follow this codebase's uniform alias-bridge shape (Id,
         // {Type}Id, Position, Value — confirmed for Character/Place/Faction/Weapon); the cleanup
         // is skipped, not thrown, for any table that doesn't actually have a Value column.
-        var winnerName = await db.Entities.AsNoTracking()
+        var winnerName = await db.Entities.AsNoTracking().IgnoreQueryFilters() // explicit id: another universe read "" and skipped the cleanup
             .Where(e => e.Id == winnerId).Select(e => e.Name).FirstOrDefaultAsync(ct) ?? "";
         if (winnerName.Length > 0)
         {
