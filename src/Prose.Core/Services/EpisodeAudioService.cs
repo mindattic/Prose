@@ -303,7 +303,8 @@ public class EpisodeAudioService
         previous.WasCorrected = true;
 
         // Delete the target row outright — no shifting needed because SortKey
-        // ordering doesn't depend on contiguous values.
+        // ordering doesn't depend on contiguous values. Its audio goes too, or the file is orphaned.
+        InvalidateAudioOnBeat(target);
         db.EpisodeBeats.Remove(target);
 
         await db.SaveChangesAsync(ct);
@@ -458,7 +459,9 @@ public class EpisodeAudioService
                 // after, taken from neighbouring beats. ElevenLabs uses these
                 // to keep intonation / sentence-continuation coherent across
                 // paragraph boundaries.
-                var (prevText, nextText) = BuildTextWindow(ordered, beat.Index, contextChars: 1500);
+                // The beat's POSITION in reading order, not its stable Index: after a join or an
+                // insert the two differ, and Index could run past the list and throw on every retry.
+                var (prevText, nextText) = BuildTextWindow(ordered, ordered.IndexOf(beat), contextChars: 1500);
 
                 string? newRequestId;
                 if (useLossless)

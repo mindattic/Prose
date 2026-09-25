@@ -48,7 +48,10 @@ public class KdpMarkPublishedService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug, ct);
+        // NodeRefResolver (slug or code, refused when ambiguous), then a tracked load: slugs are
+        // unique per universe only, and the first match could stamp another universe's book.
+        var nodeId = await NodeRefResolver.ResolveAsync(db, slug, ct);
+        var node = nodeId == null ? null : await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId.Value, ct);
         if (node == null)
             return new KdpMarkPublishedResult(false, $"No node with slug '{slug}'.", null, null, null, null, null, null);
 
@@ -88,7 +91,10 @@ public class KdpMarkPublishedService
             {
                 var best = Directory.GetFiles(nodeDir)
                     .Select(f => KdpManifestService.VersionFileRx.Match(Path.GetFileName(f)))
-                    .Where(m => m.Success && string.Equals(m.Groups["ext"].Value, "epub", StringComparison.OrdinalIgnoreCase))
+                    // This book's own files only (as the manifest filters): a stray "Other V99.epub"
+                    // was recorded as this book's publish and froze it as "current" until V100.
+                    .Where(m => m.Success && string.Equals(m.Groups["ext"].Value, "epub", StringComparison.OrdinalIgnoreCase)
+                                && string.Equals(m.Groups["code"].Value, fileBaseName, StringComparison.OrdinalIgnoreCase))
                     .Select(m => (Ver: int.Parse(m.Groups["ver"].Value), File: m.Value))
                     .OrderByDescending(x => x.Ver)
                     .FirstOrDefault();
@@ -138,7 +144,7 @@ public class KdpMarkPublishedService
     public async Task<bool> MarkPublishingDetectedAsync(string slug, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == slug, ct);
+        var node = await NodeRefResolver.ResolveNodeAsync(db, slug, ct);
         if (node == null) return false;
 
         await kdpStore.MarkPublishingDetectedAsync(node.NodeCode ?? node.Slug, ct);

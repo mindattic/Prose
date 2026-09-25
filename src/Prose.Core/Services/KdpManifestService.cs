@@ -286,8 +286,12 @@ public class KdpManifestService
                           $"A legacy .publish file is in {nodeDir}, but the KDP store has no sign-off for {code} — the file no longer counts. Sign it off with `prose --kdp-signoff --code {code}`.";
             var currentManuscriptFilename = epubPath != null ? Path.GetFileName(epubPath)
                 : docxPath != null ? Path.GetFileName(docxPath) : null;
+            // A CONFIRMED publish only (PublishedAtUtc), the same proof the version check below
+            // demands: an imported marker naming the file without a publish time (a draft left
+            // sitting) skipped the book as already live, and it never went up.
             var upToDateViaLocalMarker = readyToPublish
                 && currentManuscriptFilename != null
+                && publishMarker?.PublishedAtUtc != null
                 && publishMarker?.File != null
                 && string.Equals(publishMarker.File, currentManuscriptFilename, StringComparison.OrdinalIgnoreCase);
 

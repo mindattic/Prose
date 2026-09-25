@@ -306,11 +306,14 @@ public class AudiblePackageService
             if (entries == null)
                 return new Dictionary<string, (string SayAs, string Note)>();
 
+            // First entry per term: the model can return a term twice, and ToDictionary threw,
+            // which the catch below turned into an empty pronunciation table.
             return entries
                 .Where(e => !string.IsNullOrWhiteSpace(e.Term))
+                .GroupBy(e => e.Term!, StringComparer.OrdinalIgnoreCase)
                 .ToDictionary(
-                    e => e.Term!,
-                    e => (SayAs: e.SayAs ?? "", Note: e.Note ?? ""),
+                    g => g.Key,
+                    g => (SayAs: g.First().SayAs ?? "", Note: g.First().Note ?? ""),
                     StringComparer.OrdinalIgnoreCase);
         }
         catch (Exception ex)
@@ -329,6 +332,8 @@ public class AudiblePackageService
         invalid.Add('\''); invalid.Add('’');
         var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
         kept = Regex.Replace(kept, @"\s+", " ").Trim();
+        // Trailing dots/spaces are not valid on Windows, and "." or ".." would escape the folder.
+        kept = kept.TrimEnd('.', ' ');
         return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
     }
 
