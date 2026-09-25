@@ -36,7 +36,10 @@ public static class WorldCli
                 Console.Error.WriteLine("[world] usage: --set-character-fields | --set-entity-fields --id <entity id> --file fields.json [--confirm-unread]");
                 return 1;
             }
-            var json = await File.ReadAllTextAsync(file);
+            // Strict UTF-8 (a BOM is still honoured): the default decoder turned an ANSI file's dashes and curly quotes into U+FFFD, silently.
+            string json;
+            try { json = await File.ReadAllTextAsync(file, new System.Text.UTF8Encoding(false, throwOnInvalidBytes: true)); }
+            catch (System.Text.DecoderFallbackException) { Console.Error.WriteLine($"[world] {file} is not valid UTF-8 — save it as UTF-8."); return 1; }
             var r = args.Contains("--set-entity-fields")
                 ? await services.GetRequiredService<EntityFieldWriter>().SetFieldsAsync(id, json, args.Contains("--confirm-unread"))
                 : await services.GetRequiredService<CharacterFieldWriter>().SetFieldsAsync(id, json, args.Contains("--confirm-unread"));

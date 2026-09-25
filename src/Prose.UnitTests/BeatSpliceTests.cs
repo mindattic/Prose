@@ -227,4 +227,13 @@ public class BeatSpliceTests
         var d = BeatSpliceService.ParseDocket("""[{"beat":5,"old":"a","new":"b"},{"Beat":6,"old":"c","new":null,"count":3}]""");
         Assert.That(d, Is.EqualTo(new[] { new SpliceEdit(5, "a", "b", 1), new SpliceEdit(6, "c", "", 3) }));
     }
+
+    [Test]
+    public void A_misspelt_or_missing_new_is_refused_never_read_as_a_deletion()
+    {
+        Assert.Throws<FormatException>(() => BeatSpliceService.ParseDocket("""[{"beat":5,"old":"Grey-blue","replace":"Gray-blue"}]"""));
+        Assert.Throws<FormatException>(() => BeatSpliceService.ParseDocket("""[{"beat":5,"old":"Grey-blue"}]"""));
+        Assert.That(BeatSpliceService.ParseDocket("""[{"beat":5,"old":"x","new":""}]""").Single().New, Is.EqualTo(""),
+            "an explicit empty new is still a deliberate deletion");
+    }
 }

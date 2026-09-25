@@ -100,7 +100,9 @@ public static class ArchiveBookCli
                     $"ArchivedBooks.Id={result.ArchivedBookId}");
                 ok++;
             }
-            catch (InvalidOperationException ex)
+            // Any failure is this book's, not the run's: a database error used to end an --all run
+            // partway through.
+            catch (Exception ex)
             {
                 Console.Error.WriteLine($"[archive-book] '{title}' ({nodeSlug}) — {ex.Message}");
                 fail++;
@@ -108,6 +110,8 @@ public static class ArchiveBookCli
         }
 
         Console.WriteLine($"[archive-book] Done: {ok} archived, {fail} failed, out of {targets.Count} target(s).");
-        return fail > 0 && ok == 0 ? 1 : 0;
+        // Non-zero whenever a book was NOT archived: "archive before prose edits" must not read a
+        // partial run as a success.
+        return fail > 0 ? 1 : 0;
     }
 }

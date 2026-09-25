@@ -70,10 +70,8 @@ public class EntityContextTools(
         string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slug || s.NodeCode == slug)
-            .Select(s => new { s.Id, s.Title })
-            .FirstOrDefaultAsync();
+        // NodeRefResolver: an explicit slug/code, resolved across universes and refused when ambiguous.
+        var node = await NodeRefResolver.ResolveNodeAsync(db, slug) is { } n ? new { n.Id, n.Title } : null;
         if (node == null) return $"Node not found: {slug}";
 
         var entries = entityContext.GetActiveEntities(node.Id);
@@ -113,10 +111,8 @@ public class EntityContextTools(
         string text)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slug || s.NodeCode == slug)
-            .Select(s => new { s.Id })
-            .FirstOrDefaultAsync();
+        // NodeRefResolver: an explicit slug/code, resolved across universes and refused when ambiguous.
+        var node = await NodeRefResolver.ResolveNodeAsync(db, slug) is { } n ? new { n.Id } : null;
         if (node == null) return $"Node not found: {slug}";
 
         var block = await entityContext.PrepareContextAsync(
@@ -169,10 +165,8 @@ public class EntityContextTools(
         string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slug || s.NodeCode == slug)
-            .Select(s => new { s.Id })
-            .FirstOrDefaultAsync();
+        // NodeRefResolver: an explicit slug/code, resolved across universes and refused when ambiguous.
+        var node = await NodeRefResolver.ResolveNodeAsync(db, slug) is { } n ? new { n.Id } : null;
         if (node == null) return $"Node not found: {slug}";
 
         entityContext.ClearContext(node.Id);

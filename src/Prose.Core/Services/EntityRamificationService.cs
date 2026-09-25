@@ -284,10 +284,11 @@ public class EntityRamificationService(
     }
 
     /// <summary>Clears <see cref="Beat.EntityStale"/> on a beat after author review.</summary>
-    public async Task ClearEntityStaleAsync(Guid beatId, CancellationToken ct = default)
+    /// <returns>Rows updated: 0 when no beat has that id.</returns>
+    public async Task<int> ClearEntityStaleAsync(Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        await db.Beats
+        return await db.Beats
             .Where(b => b.Id == beatId)
             .ExecuteUpdateAsync(s => s.SetProperty(b => b.EntityStale, false), ct);
     }

@@ -28,7 +28,7 @@ public static class BeatPositionsCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         var svc = services.GetRequiredService<BeatStoryPositionService>();
-        var dry = args.Contains("--dry");
+        var dry = args.Contains("--dry") || args.Contains("--dry-run"); // --dry-run used to be ignored, and it wrote
         var all = args.Contains("--all");
         var slug = Flag(args, "--slug") ?? Flag(args, "--code") ?? Flag(args, "--id");
 

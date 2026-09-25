@@ -153,7 +153,9 @@ public class CanonDocTools
 
         return JsonSerializer.Serialize(new
         {
-            ok            = true,
+            // Not ok until the .md and the sync both landed (the description's own contract);
+            // it said ok:true even when the regeneration or the sync failed.
+            ok            = genResult.Ok && syncResult.Errors.Count == 0,
             action        = result.Action,
             section_key   = result.SectionKey,
             document_type = documentType,

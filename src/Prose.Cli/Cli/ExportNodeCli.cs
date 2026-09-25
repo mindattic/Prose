@@ -50,12 +50,9 @@ public static class ExportNodeCli
         Guid nodeId; string nodeTitle; string nodeSlug; string? universeSlug; int nodeVersion;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var q = db.Nodes.AsNoTracking();
-            Node? node;
-            if (!string.IsNullOrWhiteSpace(slug)) node = await q.FirstOrDefaultAsync(s => s.Slug == slug);
-            else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
-            else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
-            { { Count: 1 } m => m[0], _ => null };
+            // NodeRefResolver: slug, NodeCode ("--slug BCODA" failed before), GUID or unique prefix,
+            // across universes — the old lookup was exact-slug only and universe-filtered.
+            Node? node = await NodeRefResolver.ResolveNodeAsync(db, !string.IsNullOrWhiteSpace(slug) ? slug : id);
             if (node == null) { Console.Error.WriteLine("[export-node] Node not found."); return 1; }
             nodeId = node.Id; nodeTitle = node.Title; nodeSlug = node.Slug; nodeVersion = node.Version;
             universeSlug = await db.Universes.AsNoTracking()
@@ -71,6 +68,9 @@ public static class ExportNodeCli
         // the universe slug can't be resolved.
         if (!string.IsNullOrWhiteSpace(exportDir))
         {
+            // Absolute, against the caller's folder (active during the command): a relative value
+            // was stored as typed and later read as a subfolder of the shared export root.
+            exportDir = Path.GetFullPath(exportDir);
             var settings = services.GetRequiredService<SettingsService>();
             if (!string.IsNullOrWhiteSpace(universeSlug))
             {

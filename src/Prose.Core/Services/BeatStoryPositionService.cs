@@ -43,6 +43,9 @@ public sealed class BeatStoryPositionService(
     public async Task<BookResult> StampBookAsync(Guid bookNodeId, bool apply, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // Positions are book-wide: stamping a chapter numbered its beats from 1 and corrupted the
+        // book's story clock. Given a chapter, stamp the book it belongs to.
+        bookNodeId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, bookNodeId, ct) ?? bookNodeId;
         var book = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => n.Id == bookNodeId)
             .Select(n => new { n.Id, n.Slug, n.Title })

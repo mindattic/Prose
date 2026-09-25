@@ -120,7 +120,9 @@ public class GlossaryTools
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
             ? await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == gid)
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            : await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Slug == idOrSlug || n.NodeCode == idOrSlug);
+            : await NodeRefResolver.ResolveAsync(db, idOrSlug) is { } rid
+                ? await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == rid)
+                : null;
         if (node == null)
             return JsonSerializer.Serialize(new { error = "node_not_found", idOrSlug }, CanonTools.JsonOpts);
 

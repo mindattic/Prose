@@ -44,6 +44,9 @@ public class SurveyService(IDbContextFactory<ProseDbContext> dbFactory)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
+        // Checked on the trimmed slug, which is what is stored: " x" passed the check and then
+        // hit the unique index as an unhandled DbUpdateException.
+        slug = slug.Trim();
         if (await db.Surveys.AnyAsync(s => s.Slug == slug, ct))
             throw new InvalidOperationException($"Survey with slug '{slug}' already exists.");
 
@@ -119,7 +122,12 @@ public class SurveyService(IDbContextFactory<ProseDbContext> dbFactory)
                 q.QuestionKey == questionKey, ct);
         if (question is null) return false;
 
-        question.SelectedOption = selectedOption.Trim().ToLowerInvariant();
+        // Only one of the question's own options: "e" or "yes" used to be stored as the answer.
+        var answer = selectedOption.Trim().ToLowerInvariant();
+        var keys = ParseOptions(question.OptionsJson).Select(o => (o.Key ?? "").Trim().ToLowerInvariant()).Where(k => k.Length > 0).ToList();
+        if (keys.Count > 0 && !keys.Contains(answer))
+            throw new ArgumentException($"'{selectedOption}' is not an option of {questionKey}; options: {string.Join(", ", keys)}.");
+        question.SelectedOption = answer;
         question.AnsweredAt     = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
         return true;
@@ -142,7 +150,14 @@ public class SurveyService(IDbContextFactory<ProseDbContext> dbFactory)
                 q.QuestionKey == questionKey, ct);
         if (question is null) return false;
 
-        question.ApplyStatus = applyStatus;
+        // Normalised: list_surveys counts == "Applied", so a lowercase "applied" was never counted.
+        var status = (applyStatus ?? "").Trim().ToLowerInvariant() switch
+        {
+            "applied" => "Applied",
+            "skipped" => "Skipped",
+            _ => throw new ArgumentException($"applyStatus must be Applied or Skipped, not '{applyStatus}'."),
+        };
+        question.ApplyStatus = status;
         question.ApplyNotes  = applyNotes.Trim();
         question.AppliedAt   = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);

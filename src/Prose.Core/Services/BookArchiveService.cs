@@ -44,16 +44,25 @@ public class BookArchiveService(IDbContextFactory<ProseDbContext> dbFactory)
         int beatCount = 0;
         int wordCount = 0;
 
+        // The reading order first — it includes beats on a node that also has children (a book's
+        // unfiled or inserted-at-top beats), which the leaf walk alone never captured, so the
+        // backup silently lacked them. Then every remaining leaf beat (Drafts buckets), as before.
+        var readingOrder = new List<NodeWorkbenchService.OrderedBeat>();
+        await NodeWorkbenchService.WalkAsync(db, node.Id, readingOrder, [], includeDisabled: true, ct);
+        var archivedIds = new HashSet<Guid>();
+        var groups = new List<List<Beat>> { readingOrder.Select(o => o.Beat).ToList() };
         foreach (var leafId in leafIds)
-        {
-            var beats = await db.BeatNodes
+            groups.Add(await db.BeatNodes
                 .Where(bn => bn.NodeId == leafId)
-                .OrderBy(bn => bn.SortKey)
+                .OrderBy(bn => bn.SortKey).ThenBy(bn => bn.BeatId)
                 .Join(db.Beats, bn => bn.BeatId, b => b.Id, (bn, b) => b)
-                .ToListAsync(ct);
+                .ToListAsync(ct));
 
+        foreach (var beats in groups)
+        {
             foreach (var beat in beats)
             {
+                if (!archivedIds.Add(beat.Id)) continue;
                 if (string.IsNullOrWhiteSpace(beat.Text)) continue;
                 snapshotMd.AppendLine(beat.Text.Trim());
                 snapshotMd.AppendLine();

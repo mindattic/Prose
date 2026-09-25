@@ -47,6 +47,23 @@ public sealed class BeatSpliceService(
     /// <summary>Parse <c>[{beat, old, new, count?}]</c>. <c>new</c> may be empty or null (deletion).</summary>
     public static List<SpliceEdit> ParseDocket(string json)
     {
+        // Every row must SAY "new", and carry no other keys. A misspelt key ("replace", "neew")
+        // was ignored, the missing "new" became "", and the edit silently became a deletion that
+        // passed its count check and was then "verified". An explicit "" or null still deletes.
+        using (var doc = JsonDocument.Parse(json))
+        {
+            if (doc.RootElement.ValueKind != JsonValueKind.Array) throw new FormatException("The docket must be a JSON array.");
+            var i = 0;
+            foreach (var row in doc.RootElement.EnumerateArray())
+            {
+                i++;
+                if (row.ValueKind != JsonValueKind.Object) throw new FormatException($"Docket row {i} is not an object.");
+                var keys = row.EnumerateObject().Select(p => p.Name.ToLowerInvariant()).ToList();
+                var unknown = keys.Where(k => k is not ("beat" or "old" or "new" or "count")).ToList();
+                if (unknown.Count > 0) throw new FormatException($"Docket row {i} has unknown key(s): {string.Join(", ", unknown)} (allowed: beat, old, new, count).");
+                if (!keys.Contains("new")) throw new FormatException($"Docket row {i} has no \"new\" (use \"new\": \"\" to delete on purpose).");
+            }
+        }
         var rows = JsonSerializer.Deserialize<List<DocketRow>>(json, DocketJson)
                    ?? throw new FormatException("Docket is empty.");
         return rows.Select(r => new SpliceEdit(r.Beat, r.Old ?? "", r.New ?? "", r.Count ?? 1)).ToList();

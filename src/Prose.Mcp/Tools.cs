@@ -405,7 +405,8 @@ public class ContextTools
 
     public string GetNeighborsImpl(string nodeId, int hops = 1)
     {
-        graph.EnsureLoaded();
+        // EnsureFresh, as SearchSemanticImpl: EnsureLoaded kept serving retired and merged entities.
+        graph.EnsureFresh();
         var neighbors = graph.GetNeighbors(nodeId, hops);
         var list = neighbors.Select(n => new { id = n.Id, name = n.Name, nodeType = n.NodeType }).ToList();
         return JsonSerializer.Serialize(list, CanonTools.JsonOpts);

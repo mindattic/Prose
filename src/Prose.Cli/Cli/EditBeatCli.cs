@@ -45,8 +45,16 @@ public static class EditBeatCli
             {
                 case "--slug":         if (i + 1 < args.Length) slug        = args[++i]; break;
                 case "--id":           if (i + 1 < args.Length) idStr       = args[++i]; break;
-                case "--beat-number":  if (i + 1 < args.Length) int.TryParse(args[++i], out beatNumber); break;
-                case "--insert-after": if (i + 1 < args.Length) { insertMode = true; int.TryParse(args[++i], out insertAfter); } break;
+                // Strict: a value that does not parse used to become 0, and --insert-after 0 means
+                // "top of the book" — "12a" or "-3" silently inserted prose at the very start.
+                case "--beat-number":
+                    if (i + 1 >= args.Length || !int.TryParse(args[++i], out beatNumber)) { Console.Error.WriteLine("[edit-beat] --beat-number needs a number."); return 1; }
+                    break;
+                case "--insert-after":
+                    insertMode = true;
+                    if (i + 1 >= args.Length || !int.TryParse(args[++i], out insertAfter) || insertAfter < 0)
+                    { Console.Error.WriteLine("[edit-beat] --insert-after needs a position ≥ 0."); return 1; }
+                    break;
                 case "--file":         if (i + 1 < args.Length) filePath    = args[++i]; break;
             }
         }
@@ -65,7 +73,10 @@ public static class EditBeatCli
                 Console.Error.WriteLine("[edit-beat] --file is required and must exist.");
                 return 1;
             }
-            var proseById = (await File.ReadAllTextAsync(filePath)).Trim();
+            // Strict UTF-8 (a BOM is still honoured): the default decoder turned an ANSI file's dashes and curly quotes into U+FFFD, silently.
+            string proseById;
+            try { proseById = (await File.ReadAllTextAsync(filePath, new System.Text.UTF8Encoding(false, throwOnInvalidBytes: true))).Trim(); }
+            catch (System.Text.DecoderFallbackException) { Console.Error.WriteLine($"[edit-beat] {filePath} is not valid UTF-8 — save it as UTF-8."); return 1; }
             if (string.IsNullOrWhiteSpace(proseById))
             {
                 Console.Error.WriteLine("[edit-beat] Prose file is empty.");
@@ -114,7 +125,10 @@ public static class EditBeatCli
             return 1;
         }
 
-        var prose = (await File.ReadAllTextAsync(filePath)).Trim();
+        // Strict UTF-8 (a BOM is still honoured): the default decoder turned an ANSI file's dashes and curly quotes into U+FFFD, silently.
+        string prose;
+        try { prose = (await File.ReadAllTextAsync(filePath, new System.Text.UTF8Encoding(false, throwOnInvalidBytes: true))).Trim(); }
+        catch (System.Text.DecoderFallbackException) { Console.Error.WriteLine($"[edit-beat] {filePath} is not valid UTF-8 — save it as UTF-8."); return 1; }
         if (string.IsNullOrWhiteSpace(prose))
         {
             Console.Error.WriteLine("[edit-beat] Prose file is empty.");
@@ -129,7 +143,8 @@ public static class EditBeatCli
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug);
+            // NodeRefResolver: a book code (BCODA) works as well as its slug.
+            var node = await NodeRefResolver.ResolveNodeAsync(db, slug);
             if (node == null) { Console.Error.WriteLine($"[edit-beat] Node '{slug}' not found."); return 1; }
             nodeId = node.Id;
         }
@@ -144,7 +159,9 @@ public static class EditBeatCli
             // bug class fixed in SetBeatEnabledCli 2026-08-31: VIGL's beats live on its chapter
             // node, not the book node --slug resolves to).
             Guid? afterId = null;
-            Guid insertNodeId = nodeId; // top-of-book fallback when --insert-after 0
+            // Position 0 goes at the top of the FIRST chapter, not onto the book node itself, where a
+            // beat sits outside every chapter (and outside the chapter-leaf walks).
+            Guid insertNodeId = ordered.Count > 0 ? ordered[0].NodeId : nodeId;
             if (insertAfter > 0)
             {
                 if (insertAfter > ordered.Count)

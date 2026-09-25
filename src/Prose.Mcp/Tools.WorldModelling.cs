@@ -58,8 +58,9 @@ public class WorldModellingTools(
         if (!Guid.TryParse(beatId, out var bid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
 
-        DateTime? st = null;
-        if (storyTime != null && DateTime.TryParse(storyTime, out var dt)) st = dt;
+        // A date that does not parse is an error, not "all time".
+        if (!TryParseDate(storyTime, out var st))
+            return JsonSerializer.Serialize(new { error = "invalid_date", storyTime }, CanonTools.JsonOpts);
 
         var snapshot = await worldStateSvc.SnapshotAsync(bid, st);
         return snapshot.FormatAsContextBlock();
@@ -79,8 +80,9 @@ public class WorldModellingTools(
         if (!Guid.TryParse(characterId, out var cid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", characterId }, CanonTools.JsonOpts);
 
-        DateTime? asOf = null;
-        if (asOfDate != null && DateTime.TryParse(asOfDate, out var dt)) asOf = dt;
+        // A date that does not parse is an error, not "all time".
+        if (!TryParseDate(asOfDate, out var asOf))
+            return JsonSerializer.Serialize(new { error = "invalid_date", asOfDate }, CanonTools.JsonOpts);
 
         var palette = await ambientSvc.GetPaletteAsync(cid, asOf);
         return ambientSvc.FormatPaletteAsPromptBlock(palette)
@@ -107,11 +109,17 @@ public class WorldModellingTools(
         if (!Guid.TryParse(characterId, out var cid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", characterId }, CanonTools.JsonOpts);
 
-        DateTime? st = null;
-        if (storyTime != null && DateTime.TryParse(storyTime, out var dt)) st = dt;
+        // A date that does not parse is an error, not "all time".
+        if (!TryParseDate(storyTime, out var st))
+            return JsonSerializer.Serialize(new { error = "invalid_date", storyTime }, CanonTools.JsonOpts);
 
         Guid? asOfBeatId = null;
-        if (beatId != null && Guid.TryParse(beatId, out var bid)) asOfBeatId = bid;
+        if (!string.IsNullOrWhiteSpace(beatId))
+        {
+            if (!Guid.TryParse(beatId, out var bid))
+                return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
+            asOfBeatId = bid;
+        }
 
         var violations = await gearEnforcer.EnforceAsync(beatText, cid, st, asOfBeatId);
         return JsonSerializer.Serialize(violations.Select(v => new
@@ -164,8 +172,9 @@ public class WorldModellingTools(
         if (!Guid.TryParse(characterId, out var cid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", characterId }, CanonTools.JsonOpts);
 
-        DateTime? asOf = null;
-        if (asOfDate != null && DateTime.TryParse(asOfDate, out var dt)) asOf = dt;
+        // A date that does not parse is an error, not "all time".
+        if (!TryParseDate(asOfDate, out var asOf))
+            return JsonSerializer.Serialize(new { error = "invalid_date", asOfDate }, CanonTools.JsonOpts);
 
         var loadout = await weaponAmmoSvc.GetCharacterLoadoutAsync(cid, asOf);
         return JsonSerializer.Serialize(new
@@ -272,7 +281,8 @@ public class WorldModellingTools(
         if (!Guid.TryParse(beatId, out var bid))
             return JsonSerializer.Serialize(new { error = "invalid_guid", beatId }, CanonTools.JsonOpts);
 
-        await ramificationSvc.ClearEntityStaleAsync(bid);
+        if (await ramificationSvc.ClearEntityStaleAsync(bid) == 0)
+            return JsonSerializer.Serialize(new { ok = false, error = "beat_not_found", beatId }, CanonTools.JsonOpts);
         return JsonSerializer.Serialize(new { ok = true, beatId }, CanonTools.JsonOpts);
     }
 
@@ -298,15 +308,18 @@ public class WorldModellingTools(
         List<Guid>? charIds = null;
         if (!string.IsNullOrWhiteSpace(characterIds))
         {
-            charIds = characterIds
-                .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-                .Where(s => Guid.TryParse(s, out _))
-                .Select(Guid.Parse)
-                .ToList();
+            var parts = characterIds.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+            // Dropping the bad ones left an EMPTY list, which skips auto-detection and every gear
+            // check, and the tool reported "no violations".
+            var bad = parts.Where(x => !Guid.TryParse(x, out _)).ToList();
+            if (bad.Count > 0)
+                return JsonSerializer.Serialize(new { error = "invalid_guid", characterIds = bad }, CanonTools.JsonOpts);
+            charIds = parts.Select(Guid.Parse).ToList();
         }
 
-        DateTime? st = null;
-        if (storyTime != null && DateTime.TryParse(storyTime, out var dt)) st = dt;
+        // A date that does not parse is an error, not "all time".
+        if (!TryParseDate(storyTime, out var st))
+            return JsonSerializer.Serialize(new { error = "invalid_date", storyTime }, CanonTools.JsonOpts);
 
         var result = await postBeatValidator.FullValidateAsync(bid, charIds, st);
         return JsonSerializer.Serialize(new
@@ -426,5 +439,16 @@ public class WorldModellingTools(
                 severity    = f.Severity,
             }),
         }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>False only when <paramref name="text"/> is present and does not parse; blank is
+    /// "no date" (all time).</summary>
+    private static bool TryParseDate(string? text, out DateTime? value)
+    {
+        value = null;
+        if (string.IsNullOrWhiteSpace(text)) return true;
+        if (!DateTime.TryParse(text, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out var d)) return false;
+        value = d;
+        return true;
     }
 }
