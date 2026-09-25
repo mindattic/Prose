@@ -39,9 +39,13 @@ public class WriterGateTests
     [Test]
     public void Brief_LastBeatOfBook_SaysEndTheBook_ChapterClose_SaysLandTheChapter()
     {
-        var last = Brief(stop: null);
+        var last = Brief(stop: null) with { EndsBook = true, ClosesChapter = true };
         Assert.That(last.ToPromptBlock(), Does.Contain("last beat of the book"));
-        var close = last with { ClosesChapter = true };
+        Assert.That(last.ToClosingLine(), Does.Contain("End the book here."));
+        var unknown = Brief(stop: null);
+        Assert.That(unknown.ToPromptBlock(), Does.Not.Contain("last beat of the book"), "an unknown next beat is not the end of the book");
+        Assert.That(unknown.ToClosingLine(), Does.Not.Contain("End the book"));
+        var close = Brief(stop: null) with { ClosesChapter = true };
         Assert.That(close.ToPromptBlock(), Does.Contain("closes its chapter"));
         Assert.That(close.ToClosingLine(), Does.Contain("Land the chapter"));
     }
@@ -203,5 +207,45 @@ public class WriterGateTests
         Assert.Throws<InvalidOperationException>(() => BriefVerifier.Parse("I could not evaluate this."));
         Assert.Throws<InvalidOperationException>(() => BriefVerifier.Parse("{not even closed"));
         Assert.Catch<System.Text.Json.JsonException>(() => BriefVerifier.Parse("""{"reasoning": , "crosses_stop": }"""));
+    }
+
+    [Test]
+    public void PostProcessor_KeepsProseThatOpensWithALabelKeyword_AndAnItalicOrFirstPersonFinalScene()
+    {
+        var beatCops = "Beat cops lined Kestrel Street.\nNobody looked up.";
+        Assert.That(DraftPostProcessor.Clean(beatCops).Text, Is.EqualTo(beatCops));
+
+        var italic = "He left.\n\n---\n\n*Three days later.* She woke.";
+        Assert.That(DraftPostProcessor.Clean(italic).Text, Is.EqualTo(italic));
+
+        var firstPerson = "He left.\n\n---\n\nI kept the gun. It was all I had left of him.";
+        Assert.That(DraftPostProcessor.Clean(firstPerson).Text, Is.EqualTo(firstPerson));
+
+        Assert.That(DraftPostProcessor.Clean("Chapter Seven — The Dock\nShe stepped aboard.").Text, Is.EqualTo("She stepped aboard."));
+    }
+
+    [Test]
+    public void PostProcessor_StripsTheNoteAfterTheLastRule_NotTheSceneBreakBeforeIt()
+    {
+        var draft = "She stepped aboard.\n\n---\n\nThree miles of black water.\n\n---\n\nNote: kept it short.";
+        var r = DraftPostProcessor.Clean(draft);
+        Assert.That(r.Text, Is.EqualTo("She stepped aboard.\n\n---\n\nThree miles of black water."));
+    }
+
+    // ── SpineCheck ───────────────────────────────────────────────────────────
+
+    [Test]
+    public void SpineCheck_AChangedNumberIsLost_EvenWhenItsDigitsSurviveInsideAnother()
+    {
+        Assert.That(SpineCheck.Compare("Room 8 was dark.", "Room 18 was dark.").LostNumbers, Is.EqualTo(new[] { "8" }));
+        Assert.That(SpineCheck.Compare("She lived in apartment 2D.", "She lived in apartment 2E.").LostNumbers, Is.EqualTo(new[] { "2D" }));
+        Assert.That(SpineCheck.Compare("It read 68.", "It read 68, then held.").Passed, Is.True);
+    }
+
+    [Test]
+    public void SpineCheck_TitleDotIsNotDemanded_AndShortWordNamesMustSurviveWhole()
+    {
+        Assert.That(SpineCheck.Compare("Then Mrs. Chen spoke.", "Then Chen spoke.").LostNames, Is.Empty);
+        Assert.That(SpineCheck.Compare("Hua saw War Dog.", "Hua saw the dog.").LostNames, Is.EqualTo(new[] { "War Dog" }));
     }
 }

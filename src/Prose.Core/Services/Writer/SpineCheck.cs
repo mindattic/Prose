@@ -40,8 +40,12 @@ public static partial class SpineCheck
     [GeneratedRegex(@"<entity[^>]*>|</entity>")]
     private static partial Regex EntityTag();
 
-    [GeneratedRegex(@"\b\d[\d,.:]*\b")]
+    // A numeral token, letter suffix included ("2D", "9mm"), so a changed suffix is a changed number.
+    [GeneratedRegex(@"(?<!\w)\d[\w,.:]*")]
     private static partial Regex Numeral();
+
+    private static IEnumerable<string> Numerals(string s) =>
+        Numeral().Matches(s).Select(m => m.Value.TrimEnd(',', '.', ':')).Where(v => v.Length > 0);
 
     [GeneratedRegex(@"\b(zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand)(?:-\w+)?\b", RegexOptions.IgnoreCase)]
     private static partial Regex NumberWord();
@@ -64,8 +68,10 @@ public static partial class SpineCheck
         var orig = Strip(original);
         var cand = Strip(candidate);
 
-        var lostNums = Numeral().Matches(orig).Select(m => m.Value).Distinct(StringComparer.Ordinal)
-            .Where(n => !cand.Contains(n, StringComparison.Ordinal)).ToList();
+        // Exact tokens, not a substring search: "8" was "found" inside "18" or "68".
+        var candNums = Numerals(cand).ToHashSet(StringComparer.Ordinal);
+        var lostNums = Numerals(orig).Distinct(StringComparer.Ordinal)
+            .Where(n => !candNums.Contains(n)).ToList();
 
         var lostWords = NumberWord().Matches(orig).Select(m => m.Value.ToLowerInvariant()).Distinct(StringComparer.Ordinal)
             .Where(w => !Regex.IsMatch(cand, $@"\b{Regex.Escape(w)}\b", RegexOptions.IgnoreCase)).ToList();
@@ -75,9 +81,15 @@ public static partial class SpineCheck
             .Where(n => !cand.Contains(n, StringComparison.Ordinal))
             // A name survives if every word of it is still present somewhere (the candidate may
             // say "Chen" where the original said "Mrs. Chen").
-            .Where(n => !n.Split(' ', StringSplitOptions.RemoveEmptyEntries)
-                          .Where(w => w.Length > 3)
-                          .All(w => Regex.IsMatch(cand, $@"\b{Regex.Escape(w.TrimEnd('.'))}\b")))
+            // Trim the dot BEFORE the length test ("Mrs." is a title, not a word to demand). A name
+            // made only of short words ("War Dog") has nothing left to check word by word, so it
+            // must appear whole — an empty list made All() true and the name was never reported.
+            .Where(n =>
+            {
+                var words = n.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                    .Select(w => w.TrimEnd('.')).Where(w => w.Length > 3).ToList();
+                return words.Count == 0 || !words.All(w => Regex.IsMatch(cand, $@"\b{Regex.Escape(w)}\b"));
+            })
             .ToList();
 
         return new Report(lostNums, lostWords, lostNames, WordCount(orig), WordCount(cand));

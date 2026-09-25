@@ -41,6 +41,7 @@ public class BeatBriefBuilder
     {
         string? stopBefore = null;
         var closesChapter = false;
+        var endsBook = false;
         string? pov = null;
 
         try
@@ -86,6 +87,10 @@ public class BeatBriefBuilder
                                 orderby bn.SortKey
                                 select new { b.Description, b.Title }).FirstOrDefaultAsync(ct);
                         }
+                        // The book's last chapter — only when its parent IS the book: under a
+                        // part, the next chapter lives in the next part and this walk can't see it.
+                        else if (await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, membership.NodeId, ct) == chapter.ParentNodeId)
+                            endsBook = true;
                     }
                 }
 
@@ -113,6 +118,7 @@ public class BeatBriefBuilder
             Goal = goal,
             StopBefore = stopBefore,
             ClosesChapter = closesChapter,
+            EndsBook = endsBook && stopBefore == null,
             MustInclude = NamesIn(goal),
             Pov = pov,
             Subtext = string.IsNullOrWhiteSpace(subtext) ? null : subtext,

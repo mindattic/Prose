@@ -18,16 +18,21 @@ public static partial class DraftPostProcessor
     [GeneratedRegex(@"^\s*#{1,6}\s+.*$", RegexOptions.Multiline)]
     private static partial Regex MarkdownHeading();
 
-    // "Beat: …", "Title: …", "**Beat 12 — …**", "Scene: …", "[Beat …]" as a whole first line.
-    [GeneratedRegex(@"^\s*(\*\*|\[)?\s*(beat|title|scene|chapter|heading)\b[^\n]*$", RegexOptions.IgnoreCase | RegexOptions.Multiline)]
+    // "Beat: …", "Title: …", "**Beat 12 — …**", "Scene: …", "Chapter Seven — …", "[Beat …]" as a
+    // whole first line. The keyword must be followed by a label marker (a number, a colon, a dash)
+    // within a few words: a bare keyword match deleted opening prose like "Beat cops lined the street."
+    [GeneratedRegex(@"^\s*(?:\[\s*(?:beat|title|scene|chapter|heading)\b[^\n]*|(?:\*\*)?\s*(?:beat|title|scene|chapter|heading)(?:\s*[\d#:—–-]|(?:\s+[\w']+){1,3}\s*[:—–])[^\n]*)$", RegexOptions.IgnoreCase | RegexOptions.Multiline)]
     private static partial Regex LabelLine();
 
-    // A trailing rule followed by commentary: "---\nWord count: …" / "***\n(Note: …)".
-    [GeneratedRegex(@"\n\s*(-{3,}|\*{3,}|_{3,})\s*\n(?s:.*)$")]
-    private static partial Regex TrailingRuleBlock();
+    // A rule line: "---" / "***" / "___". The LAST one is the candidate for trailing commentary —
+    // "---\nWord count: …" / "***\n(Note: …)".
+    [GeneratedRegex(@"\n\s*(-{3,}|\*{3,}|_{3,})\s*\n")]
+    private static partial Regex RuleLine();
 
-    // What commentary after a rule opens with: a bracket, a label, a count, a sign-off.
-    [GeneratedRegex(@"^(\(|\[|\*|note\b|notes\b|word count|words?:|approx|author|end of|beat\b|summary|this beat|i (kept|have|used|chose)|the beat\b)", RegexOptions.IgnoreCase)]
+    // What commentary after a rule opens with: a bracket, a label, a count, a sign-off. Not a bare
+    // "*" or "I kept …": a final scene that opens in italics ("*Three days later.*") or in first
+    // person ("I kept the gun.") is prose and was being deleted.
+    [GeneratedRegex(@"^(\(|\[|\*+\s*(note|word|approx|author|end|summary)\b|note\b|notes\b|word count|words?:|approx|author|end of|beat\b|summary|this beat|i (kept|used|chose|wrote) (this|the) (beat|brief|scene|draft)\b|the beat\b)", RegexOptions.IgnoreCase)]
     private static partial Regex MetaOpener();
 
     // Trailing bracketed/parenthesised note on its own final line.
@@ -58,14 +63,21 @@ public static partial class DraftPostProcessor
         // Trailing meta after a horizontal rule. A rule followed by more PROSE is a scene break
         // and must stay; only strip when what follows the rule reads as commentary — it opens
         // with a meta marker (a note, a word count, a label, a bracket) and is short.
-        var m = TrailingRuleBlock().Match(text);
-        if (m.Success && m.Length < 600)
+        // The LAST rule: the first one is usually a real scene break, and taking it hid a genuine
+        // trailing note behind the prose between them.
+        var rules = RuleLine().Matches(text);
+        if (rules.Count > 0)
         {
-            var after = m.Value.Trim().TrimStart('-', '*', '_').Trim();
-            if (MetaOpener().IsMatch(after))
+            var m = rules[^1];
+            var block = text[m.Index..];
+            if (block.Length < 600)
             {
-                removed.Add($"trailing block after rule: {Truncate(after, 80)}");
-                text = text[..m.Index].TrimEnd();
+                var after = block.Trim().TrimStart('-', '*', '_').Trim();
+                if (MetaOpener().IsMatch(after))
+                {
+                    removed.Add($"trailing block after rule: {Truncate(after, 80)}");
+                    text = text[..m.Index].TrimEnd();
+                }
             }
         }
 

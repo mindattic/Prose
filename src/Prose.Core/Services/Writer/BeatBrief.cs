@@ -19,9 +19,14 @@ public sealed record BeatBrief
     /// <summary>What happens in this beat — the beat's Description (else Title).</summary>
     public required string Goal { get; init; }
 
-    /// <summary>What the NEXT beat does. The draft must stop before this begins. Null = this is
-    /// the last beat of the book (or nothing follows in the same book).</summary>
+    /// <summary>What the NEXT beat does. The draft must stop before this begins. Null = unknown,
+    /// or nothing follows (see <see cref="EndsBook"/>).</summary>
     public string? StopBefore { get; init; }
+
+    /// <summary>True only when the builder positively found no beat after this one in the book.
+    /// A null <see cref="StopBefore"/> alone used to mean "end of book", so a swallowed lookup
+    /// failure or a goal-only brief told the writer "End the book here" in mid-book.</summary>
+    public bool EndsBook { get; init; }
 
     /// <summary>True when this is the last beat of its chapter — the draft should land the
     /// chapter, not open the next one.</summary>
@@ -57,10 +62,10 @@ public sealed record BeatBrief
         sb.Append("  WHAT HAPPENS: ").AppendLine(Goal.Trim());
         if (!string.IsNullOrWhiteSpace(StopBefore))
             sb.Append("  STOP BEFORE: ").Append(StopBefore.Trim()).AppendLine("  ← the next beat does this. Do not write it. Do not set it up with a new event.");
+        else if (EndsBook)
+            sb.AppendLine("  STOP: this is the last beat of the book. End the book here.");
         else if (ClosesChapter)
             sb.AppendLine("  STOP: this beat closes its chapter. Land it. Do not open a new thread.");
-        else
-            sb.AppendLine("  STOP: this is the last beat of the book. End the book here.");
         if (ClosesChapter && !string.IsNullOrWhiteSpace(StopBefore))
             sb.AppendLine("  NOTE: this beat also closes its chapter.");
         if (MustInclude.Count > 0)
@@ -86,8 +91,11 @@ public sealed record BeatBrief
     {
         var stop = !string.IsNullOrWhiteSpace(StopBefore)
             ? $"Stop before: {StopBefore.Trim()}"
-            : ClosesChapter ? "Land the chapter here." : "End the book here.";
+            : EndsBook ? "End the book here."
+            : ClosesChapter ? "Land the chapter here." : "";
         var what = Goal.Trim();
-        return $"Write exactly the beat in THE BRIEF: {what} {stop} Prose only — no heading, no label.";
+        return stop.Length > 0
+            ? $"Write exactly the beat in THE BRIEF: {what} {stop} Prose only — no heading, no label."
+            : $"Write exactly the beat in THE BRIEF: {what} Prose only — no heading, no label.";
     }
 }
