@@ -99,7 +99,7 @@ public class BeatGeneratorService
             try
             {
                 await using var db = await dbFactory.CreateDbContextAsync(ct);
-                var s = await db.Nodes.AsNoTracking()
+                var s = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                     .Where(x => x.Id == context.NodeId)
                     .Select(x => new { x.PreviousNodeId, x.UniverseId })
                     .FirstOrDefaultAsync(ct);
@@ -613,6 +613,7 @@ public class BeatGeneratorService
             // Plurality: we don't want consensus — we want every persona's score for aggregation.
             result = await voting.VoteWithProfilesAsync(request, Quorum.Plurality, panel, ct);
         }
+        catch (OperationCanceledException) { throw; }
         catch
         {
             return new List<BeatRankResult>();
@@ -881,7 +882,10 @@ public class BeatGeneratorService
         {
             if (string.IsNullOrWhiteSpace(beat.Text)) continue;
             // Cap each anchor to ~600 chars so the system prompt stays bounded.
-            var excerpt = beat.Text.Length > 600 ? beat.Text[..600].TrimEnd() + "…" : beat.Text;
+            // Tags stripped BEFORE the cut: raw markup went to the model, and a cut at 600 could
+            // leave half a tag ("<entity guid="3f2a…") in the prompt.
+            var plain = BeatMarkup.StripEntityTags(beat.Text);
+            var excerpt = plain.Length > 600 ? plain[..600].TrimEnd() + "…" : plain;
             if (!string.IsNullOrWhiteSpace(beat.Title)) sb.Append("[").Append(beat.Title).AppendLine("]");
             sb.AppendLine(excerpt).AppendLine();
         }

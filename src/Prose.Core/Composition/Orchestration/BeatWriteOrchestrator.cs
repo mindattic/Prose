@@ -156,7 +156,7 @@ public sealed class BeatWriteOrchestrator
         CancellationToken ct = default,
         Guid? briefBeatId = null)
     {
-        var win = await this.window.GetWindowAsync(bookNodeId, afterBeatId, windowSizeBeats, ct);
+        var win = await this.window.GetWindowAsync(bookNodeId, afterBeatId, windowSizeBeats, ct, includeAnchor: true);
         var facts = await storyState.GetOnScreenFactsForEntitiesAsync(bookNodeId, charactersInScene, asOfStoryPosition, ct);
 
         var targetWords = await ResolveTargetWordsAsync(bookNodeId, ct);
@@ -269,6 +269,24 @@ public sealed class BeatWriteOrchestrator
             preview = retryPreview;
         }
 
+        // The free half of the gate was computed and then never consulted: a draft that failed it
+        // (far too short, a leftover heading, a name nobody knows) was inserted anyway. One retry
+        // with the failures as constraints, then stop — nothing is saved.
+        if (preview.Gate is { Passed: false } failedGate)
+        {
+            var fixGoal = $"{beatGoal}\n\nIMPORTANT — a prior attempt failed the draft gate: {string.Join("; ", failedGate.Failures)}. Fix exactly that.";
+            var again = await PreviewGenerateAsync(
+                bookNodeId, afterBeatId, charIds, asOfStoryPosition,
+                povCharacter, location, fixGoal, universeLine, windowSizeBeats, ct);
+            if (again.Gate is { Passed: false } stillFailing)
+                throw new InvalidOperationException(
+                    "The draft failed the gate twice; nothing was saved: " + string.Join("; ", stillFailing.Failures));
+            var againVerdict = await gate.CheckAsync(facts.EntityStateFacts.Concat(facts.ContinuityFacts).ToList(), again.GeneratedText, ct);
+            if (againVerdict.Contradicts)
+                throw new NarrativeContradictionRejectedException(verdict, preview.GeneratedText, againVerdict, again.GeneratedText);
+            preview = again;
+        }
+
         // InsertBeatAsync's nodeId is the BEAT'S OWN chapter (the BeatNode.NodeId it's actually a
         // member of), not the book root — a book-level node holds no BeatNodes rows of its own once
         // beats live under chapters. bookNodeId above is only ever used for the window/facts/
@@ -287,9 +305,15 @@ public sealed class BeatWriteOrchestrator
         // new beat visible to StoryStateQuery's asOf join immediately, without waiting on that pass.
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var b = await db.Beats.FirstAsync(x => x.Id == newBeat.Id, ct);
-            b.StoryPosition = asOfStoryPosition;
-            await db.SaveChangesAsync(ct);
+            // int.MaxValue is the caller's "no position known" sentinel for the as-of reads, not a
+            // position: stamping it put the beat after everything, so every later "as of P" query
+            // filtered out its declared deltas. Leave it null instead, like its predecessor.
+            if (asOfStoryPosition != int.MaxValue)
+            {
+                var b = await db.Beats.FirstAsync(x => x.Id == newBeat.Id, ct);
+                b.StoryPosition = asOfStoryPosition;
+                await db.SaveChangesAsync(ct);
+            }
         }
 
         var deltas = await ExtractDeclaredDeltasAsync(preview.GeneratedText, charactersInScene, ct);
@@ -335,7 +359,13 @@ public sealed class BeatWriteOrchestrator
             """;
 
         var raw = await llm.GenerateAsync(system, user, temperature: 0.0, maxTokens: 300, ct: ct);
-        var nameToId = charactersInScene.ToDictionary(kv => kv.Value, kv => kv.Key, StringComparer.OrdinalIgnoreCase);
+        // Names are not unique ("Kyle" and "kyle", two entities sharing a display name). A throw
+        // here came AFTER the beat was inserted, so the write happened and was reported as failed.
+        // An ambiguous name cannot be attributed, so it is skipped.
+        var nameToId = charactersInScene
+            .GroupBy(kv => kv.Value, StringComparer.OrdinalIgnoreCase)
+            .Where(g => g.Count() == 1)
+            .ToDictionary(g => g.Key, g => g.First().Key, StringComparer.OrdinalIgnoreCase);
 
         var results = new List<DeclaredDelta>();
         foreach (var line in raw.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))

@@ -93,7 +93,7 @@ public class EventLogService
             {
                 events.Add(new StoryEvent
                 {
-                    Id = Guid.CreateVersion7().ToString("N")[..8],
+                    Id = Guid.CreateVersion7().ToString("N")[^8..], // the random tail: [..8] is the v7 timestamp, shared by every event within ~65 s
                     BeatIndex = beatIndex,
                     Type = raw.Type ?? "action",
                     Summary = raw.Summary ?? "",

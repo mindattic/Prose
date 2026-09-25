@@ -182,14 +182,20 @@ Rules:
         var nodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
 
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
-        var all = await (
+        // Reading order is the leaf walk's order, then SortKey within a leaf. "c.SortKey" only
+        // orders siblings: split chapters (2a, 2b) interleaved with their parents' siblings, and
+        // the model carried each location forward through beats in the wrong order.
+        var leafOrder = new Dictionary<Guid, int>();
+        foreach (var leaf in searchIds) leafOrder.TryAdd(leaf, leafOrder.Count);
+        var all = (await (
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
-            join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
+            join c in db.Nodes.AsNoTracking().IgnoreQueryFilters() on bn.NodeId equals c.Id
             where searchIds.Contains(bn.NodeId) && b.Text != null && b.Text != ""
-            orderby c.SortKey, bn.SortKey
-            select new { b.Id, b.Text, b.TextHash, b.PlaceName, b.PlaceExtractedFromHash, Chapter = c.Title }
-        ).ToListAsync(ct);
+            select new { b.Id, b.Text, b.TextHash, b.PlaceName, b.PlaceExtractedFromHash, Chapter = c.Title, bn.NodeId, bn.SortKey }
+        ).ToListAsync(ct))
+            .OrderBy(x => leafOrder.GetValueOrDefault(x.NodeId, int.MaxValue)).ThenBy(x => x.SortKey)
+            .ToList();
 
         var candidates = all;
         var skippedFromCache = 0;

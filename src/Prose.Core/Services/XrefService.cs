@@ -77,6 +77,7 @@ public class XrefService
     private Dictionary<string, XrefEntry> index = new(StringComparer.OrdinalIgnoreCase);
     private Dictionary<string, XrefEntry> indexById = new(StringComparer.OrdinalIgnoreCase);
     private bool indexBuilt;
+    private Guid builtUniverse;
     private readonly object syncLock = new();
     private readonly ILogger<XrefService> logger;
     private readonly SettingsService settings;
@@ -174,7 +175,9 @@ public class XrefService
     {
         lock (syncLock)
         {
-            if (indexBuilt) return;
+            // The repositories are universe-scoped: an index built in one universe went on
+            // resolving [[Kyle]] to that universe's Kyle after a switch.
+            if (indexBuilt && builtUniverse == UniverseScope.EffectiveId) return;
             RebuildIndex();
         }
     }
@@ -376,6 +379,7 @@ public class XrefService
         indexById = newIndexById;
         conflicts = newConflicts;
         indexBuilt = true;
+        builtUniverse = UniverseScope.EffectiveId;
     }
 
     public XrefEntry? Resolve(string name)
@@ -473,6 +477,8 @@ public class XrefService
                     if (char.IsLetter(name[0]) && span[0] != name[0]) continue;
 
                     if (!span.Equals(name, StringComparison.OrdinalIgnoreCase)) continue;
+                    // A save during a render swaps in an empty index; index[name] then threw.
+                    if (!index.TryGetValue(name, out var entry)) continue;
 
                     // Verify word boundary on the right side.
                     int end = pos + name.Length;
@@ -481,7 +487,7 @@ public class XrefService
                     if (pos > plainStart)
                         yield return new PlainSegment(text[plainStart..pos]);
 
-                    yield return new XrefSegment(text.Substring(pos, name.Length), index[name]);
+                    yield return new XrefSegment(text.Substring(pos, name.Length), entry);
                     pos = end;
                     plainStart = pos;
                     matched = true;

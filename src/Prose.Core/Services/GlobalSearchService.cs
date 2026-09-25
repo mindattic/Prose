@@ -39,6 +39,7 @@ public class GlobalSearchService
 
     private List<SearchIndexEntry> index = [];
     private int builtEpoch = -1;
+    private Guid builtUniverse;
     private readonly object syncLock = new();
 
     public GlobalSearchService(
@@ -209,7 +210,9 @@ public class GlobalSearchService
     {
         lock (syncLock)
         {
-            if (index.Count > 0 && builtEpoch == UniverseScope.Epoch) return;
+            // The epoch is process-wide and any flow bumps it; it does not say WHICH universe the
+            // index holds, so a flow could be served another universe's entities. Check both.
+            if (index.Count > 0 && builtEpoch == UniverseScope.Epoch && builtUniverse == UniverseScope.EffectiveId) return;
             RebuildIndex();
         }
     }
@@ -265,6 +268,7 @@ public class GlobalSearchService
 
         index = entries;
         builtEpoch = UniverseScope.Epoch;
+        builtUniverse = UniverseScope.EffectiveId;
     }
 
     // ── Per-type projections (shared between RebuildIndex and OnItemSaved) ────

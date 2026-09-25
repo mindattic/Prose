@@ -45,7 +45,7 @@ public class HtmlExportService
         var sb = new StringBuilder();
 
         sb.AppendLine("<div class=\"toc\" id=\"tocPanel\">");
-        sb.AppendLine($"<h2>{RepoIcon(repoName)}{repoName} — {sorted.Count} Entries</h2>");
+        sb.AppendLine($"<h2>{RepoIcon(repoName)}{Esc(repoName)} — {sorted.Count} Entries</h2>");
         sb.AppendLine("<ul>");
         foreach (var (name, _) in sorted)
             sb.AppendLine($"<li><a href=\"#{Slugify(name)}\">{Esc(name)}</a></li>");
@@ -55,7 +55,7 @@ public class HtmlExportService
         {
             var (name, json) = sorted[i];
             sb.AppendLine($"<a class=\"entry-anchor\" id=\"{Slugify(name)}\"></a>");
-            sb.AppendLine($"<div class=\"entry\" data-tags=\"{ExtractTags(json)}\" data-name=\"{Esc(name)}\">");
+            sb.AppendLine($"<div class=\"entry\" data-tags=\"{Esc(ExtractTags(json))}\" data-name=\"{Esc(name)}\">");
             sb.Append(BuildEntryHtml(name, json));
             sb.AppendLine("</div>");
             onProgress?.Invoke(i + 1, sorted.Count);
@@ -126,7 +126,7 @@ public class HtmlExportService
             var sb = new StringBuilder();
 
             sb.AppendLine("<div class=\"toc\" id=\"tocPanel\">");
-            sb.AppendLine($"<h2>{RepoIcon(repoName)}{repoName} — {sorted.Count} Entries</h2>");
+            sb.AppendLine($"<h2>{RepoIcon(repoName)}{Esc(repoName)} — {sorted.Count} Entries</h2>");
             sb.AppendLine("<ul>");
             foreach (var (name, _) in sorted)
                 sb.AppendLine($"<li><a href=\"#{Slugify(name)}\">{Esc(name)}</a></li>");
@@ -136,7 +136,7 @@ public class HtmlExportService
             {
                 var (name, json) = sorted[i];
                 sb.AppendLine($"<a class=\"entry-anchor\" id=\"{Slugify(name)}\"></a>");
-            sb.AppendLine($"<div class=\"entry\" data-tags=\"{ExtractTags(json)}\" data-name=\"{Esc(name)}\">");
+            sb.AppendLine($"<div class=\"entry\" data-tags=\"{Esc(ExtractTags(json))}\" data-name=\"{Esc(name)}\">");
                 sb.Append(BuildEntryHtml(name, json));
                 sb.AppendLine("</div>");
                 processed++;
@@ -160,7 +160,7 @@ public class HtmlExportService
             var sb = new StringBuilder();
 
             sb.AppendLine("<div class=\"toc\" id=\"tocPanel\">");
-            sb.AppendLine($"<h2>{RepoIcon(repoName)}{repoName} — {sorted.Count} Entries</h2>");
+            sb.AppendLine($"<h2>{RepoIcon(repoName)}{Esc(repoName)} — {sorted.Count} Entries</h2>");
             sb.AppendLine("<ul>");
             foreach (var (name, _) in sorted)
                 sb.AppendLine($"<li><a href=\"#{Slugify(name)}\">{Esc(name)}</a></li>");
@@ -170,7 +170,7 @@ public class HtmlExportService
             {
                 var (name, json) = sorted[i];
                 sb.AppendLine($"<a class=\"entry-anchor\" id=\"{Slugify(name)}\"></a>");
-            sb.AppendLine($"<div class=\"entry\" data-tags=\"{ExtractTags(json)}\" data-name=\"{Esc(name)}\">");
+            sb.AppendLine($"<div class=\"entry\" data-tags=\"{Esc(ExtractTags(json))}\" data-name=\"{Esc(name)}\">");
                 sb.Append(BuildEntryHtml(name, json));
                 sb.AppendLine("</div>");
             }
@@ -259,12 +259,16 @@ public class HtmlExportService
 
                     var desc = "";
                     if (doc.RootElement.TryGetProperty("description", out var descEl))
-                        desc = (descEl.GetString() ?? "").Replace("\"", "'").Replace("\n", " ");
+                        desc = (descEl.GetString() ?? "").Replace("\n", " ");
                     if (desc.Length > 150) desc = desc[..150] + "...";
 
+                    // Serialized, not hand-built: the numbers were written in the current culture
+                    // ("41,88" under de-DE broke the whole script) and a description ending in "\"
+                    // or holding "</script>" escaped its string. The page HTML-escapes both text
+                    // fields before setContent; the JSON itself carries the raw text.
                     if (!first) markers.AppendLine(",");
                     first = false;
-                    markers.Append($"{{\"name\":\"{Esc(name).Replace("\"", "\\\"")}\",\"lat\":{latVal},\"lng\":{lngVal},\"desc\":\"{desc.Replace("\"", "\\\"")}\"}}" );
+                    markers.Append(JsonSerializer.Serialize(new { name, lat = latVal, lng = lngVal, desc }));
                 }
                 catch { /* skip malformed */ }
             }
@@ -275,6 +279,7 @@ public class HtmlExportService
 <div id=""map-container"" style=""width:100%;height:calc(100vh - 120px);min-height:500px;border-radius:8px;border:1px solid #30363d;""></div>
 <script>
 var mapMarkers = {markers};
+function escHtml(s) {{ return String(s).replace(/[&<>""']/g, function(c) {{ return {{'&':'&amp;','<':'&lt;','>':'&gt;','""':'&quot;',""'"":'&#39;'}}[c]; }}); }}
 function initMap() {{
     var map = new google.maps.Map(document.getElementById('map-container'), {{
         center: {{lat: 41.88, lng: -87.63}},
@@ -297,7 +302,7 @@ function initMap() {{
         }});
         bounds.extend(marker.getPosition());
         marker.addListener('click', function() {{
-            infoWindow.setContent('<div style=""max-width:300px;font-family:Outfit,sans-serif;""><strong>' + m.name + '</strong><br><span style=""font-size:12px;color:#8b949e;"">' + m.desc + '</span></div>');
+            infoWindow.setContent('<div style=""max-width:300px;font-family:Outfit,sans-serif;""><strong>' + escHtml(m.name) + '</strong><br><span style=""font-size:12px;color:#8b949e;"">' + escHtml(m.desc) + '</span></div>');
             infoWindow.open(map, marker);
         }});
     }});
@@ -383,10 +388,10 @@ function initMap() {{
             if (!firstRegion) hierarchyJson.AppendLine(",");
             firstRegion = false;
 
-            var regionPct = totalWeight > 0 ? (value * 100.0 / totalWeight).ToString("F1") : "0";
+            var regionPct = totalWeight > 0 ? (value * 100.0 / totalWeight).ToString("F1", System.Globalization.CultureInfo.InvariantCulture) : "0";
             var subs = subRegionData.GetValueOrDefault(region);
 
-            hierarchyJson.Append($"{{\"name\":\"{Esc(region)}\",\"value\":{(int)Math.Round(value)},\"pct\":\"{regionPct}\",\"subGroups\":");
+            hierarchyJson.Append($"{{\"name\":{Js(region)},\"value\":{(int)Math.Round(value)},\"pct\":\"{regionPct}\",\"subGroups\":");
             if (subs != null && subs.Count > 1)
             {
                 hierarchyJson.Append("[");
@@ -396,9 +401,9 @@ function initMap() {{
                     if (!firstSub) hierarchyJson.Append(",");
                     firstSub = false;
                     var subVal = nats.Values.Sum();
-                    var subPct = totalWeight > 0 ? (subVal * 100.0 / totalWeight).ToString("F1") : "0";
+                    var subPct = totalWeight > 0 ? (subVal * 100.0 / totalWeight).ToString("F1", System.Globalization.CultureInfo.InvariantCulture) : "0";
 
-                    hierarchyJson.Append($"{{\"name\":\"{Esc(sub)}\",\"value\":{(int)Math.Round(subVal)},\"pct\":\"{subPct}\",\"subGroups\":");
+                    hierarchyJson.Append($"{{\"name\":{Js(sub)},\"value\":{(int)Math.Round(subVal)},\"pct\":\"{subPct}\",\"subGroups\":");
                     if (nats.Count > 1)
                     {
                         hierarchyJson.Append("[");
@@ -407,8 +412,8 @@ function initMap() {{
                         {
                             if (!firstNat) hierarchyJson.Append(",");
                             firstNat = false;
-                            var natPct = totalWeight > 0 ? (natVal * 100.0 / totalWeight).ToString("F1") : "0";
-                            hierarchyJson.Append($"{{\"name\":\"{Esc(nat)}\",\"value\":{(int)Math.Round(natVal)},\"pct\":\"{natPct}\"}}");
+                            var natPct = totalWeight > 0 ? (natVal * 100.0 / totalWeight).ToString("F1", System.Globalization.CultureInfo.InvariantCulture) : "0";
+                            hierarchyJson.Append($"{{\"name\":{Js(nat)},\"value\":{(int)Math.Round(natVal)},\"pct\":\"{natPct}\"}}");
                         }
                         hierarchyJson.Append("]");
                     }
@@ -462,12 +467,14 @@ window.heritageTreemap = {
             .style('font-size','12px').style('color','#e6edf3').style('pointer-events','none')
             .style('z-index','10000').style('font-family','Outfit,sans-serif');
 
+        // Names arrive as raw text (JSON data); escape them where they meet HTML.
+        function escT(s) { return String(s).replace(/[&<>""']/g, function(c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','""':'&quot;',""'"":'&#39;'}[c]; }); }
         function renderLevel(items, breadcrumb) {
             container.innerHTML = '';
             if (breadcrumb) {
                 var bar = document.createElement('div');
                 bar.style.cssText = 'padding:8px 12px;background:#1c2128;border-bottom:1px solid #30363d;display:flex;align-items:center;gap:8px;cursor:pointer;';
-                bar.innerHTML = '<span style=""color:#58a6ff;font-size:14px;"">&#8592; Back</span><span style=""color:#8b949e;""> | </span><span style=""color:#e6edf3;font-weight:600;"">' + breadcrumb + '</span>';
+                bar.innerHTML = '<span style=""color:#58a6ff;font-size:14px;"">&#8592; Back</span><span style=""color:#8b949e;""> | </span><span style=""color:#e6edf3;font-weight:600;"">' + escT(breadcrumb) + '</span>';
                 bar.onclick = function() { renderLevel(data, null); };
                 container.appendChild(bar);
             }
@@ -482,7 +489,7 @@ window.heritageTreemap = {
                 .on('mouseover',function(event,d){
                     d3.select(this).attr('fill-opacity',1).attr('stroke','#e6edf3').attr('stroke-width',2);
                     var has=d.data.subGroups&&d.data.subGroups.length>0;
-                    var html='<strong>'+d.data.name+'</strong><br>'+d.data.value+' refs ('+d.data.pct+'%)';
+                    var html='<strong>'+escT(d.data.name)+'</strong><br>'+d.data.value+' refs ('+d.data.pct+'%)';
                     if(has)html+='<br><span style=""color:#58a6ff;font-size:11px;"">Click to drill down</span>';
                     tooltip.style('display','block').html(html).style('left',(event.pageX+12)+'px').style('top',(event.pageY-28)+'px');
                 })
@@ -555,7 +562,7 @@ window.heritageTreemap = {
                 {
                     sb.Append("<div class=\"entry-tags\">");
                     foreach (var tag in tags)
-                        sb.Append($"<span class=\"entry-tag\" onclick=\"toggleTag('{Esc(tag.ToLowerInvariant())}', null)\">{Esc(tag)}</span>");
+                        sb.Append($"<span class=\"entry-tag\" onclick=\"toggleTag({Esc(Js(tag.ToLowerInvariant()))}, null)\">{Esc(tag)}</span>");
                     sb.AppendLine("</div>");
                 }
             }
@@ -921,25 +928,48 @@ function applyXrefs() {
     // Longest first so multi-word names match before their components
     var names = Object.keys(xrefData).sort((a, b) => b.length - a.length).filter(n => n.length >= 4);
     if (names.length === 0) return;
+    var lookup = {};
+    names.forEach(n => { if (!(n.toLowerCase() in lookup)) lookup[n.toLowerCase()] = xrefData[n]; });
+    // One alternation, one pass, TEXT NODES only. Rewriting innerHTML once per name matched
+    // inside the links and title attributes earlier passes had inserted: 'Arasaka' nested an
+    // <a> inside the 'Arasaka Tower' link, and a description naming another entity broke its
+    // title attribute.
+    var pattern = new RegExp('(?<![\\w-])(' + names.map(escapeRegex).join('|') + ')(?![\\w-])', 'gi');
 
     document.querySelectorAll('[data-xref]').forEach(el => {
-        var html = el.innerHTML;
-        if (html.indexOf('class=""xref""') !== -1) return;
-
-        for (var i = 0; i < names.length; i++) {
-            var name = names[i];
-            var entry = xrefData[name];
-            // Word-boundary pattern: not preceded/followed by word chars or hyphens
-            var pattern = new RegExp('(?<![\\w-])(' + escapeRegex(name) + ')(?![\\w-])', 'gi');
-            if (!pattern.test(html)) continue;
+        if (el.querySelector('a.xref')) return;
+        var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+        var textNodes = [];
+        while (walker.nextNode()) textNodes.push(walker.currentNode);
+        textNodes.forEach(node => {
+            var text = node.nodeValue;
             pattern.lastIndex = 0;
-            var url = entry.r + '.htm#' + entry.e;
-            var replacement = entry.d
-                ? '<abbr title=""' + entry.d.replace(/""/g, '&quot;') + '"" class=""xref-tip""><a class=""xref"" href=""' + url + '"">$1</a></abbr>'
-                : '<a class=""xref"" href=""' + url + '"">$1</a>';
-            html = html.replace(pattern, replacement);
-        }
-        el.innerHTML = html;
+            if (!pattern.test(text)) return;
+            pattern.lastIndex = 0;
+            var frag = document.createDocumentFragment();
+            var last = 0, m;
+            while ((m = pattern.exec(text)) !== null) {
+                var entry = lookup[m[1].toLowerCase()];
+                if (!entry) continue;
+                frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+                var a = document.createElement('a');
+                a.className = 'xref';
+                a.href = entry.r + '.htm#' + entry.e;
+                a.textContent = m[1];
+                if (entry.d) {
+                    var abbr = document.createElement('abbr');
+                    abbr.className = 'xref-tip';
+                    abbr.title = entry.d;
+                    abbr.appendChild(a);
+                    frag.appendChild(abbr);
+                } else {
+                    frag.appendChild(a);
+                }
+                last = m.index + m[1].length;
+            }
+            frag.appendChild(document.createTextNode(text.slice(last)));
+            node.parentNode.replaceChild(frag, node);
+        });
     });
 }
 
@@ -1183,6 +1213,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     private static string PrettyKey(string key) =>
         key.Replace("_", " ").Replace("-", " ");
+
+    /// <summary>A JavaScript/JSON string literal, quotes included. For data, never Esc(): HTML
+    /// entities inside JSON are shown literally ("C&#244;te d&#39;Ivoire") by .text() and titles,
+    /// and an HTML-decoded apostrophe ended a hand-quoted JS string in an onclick.</summary>
+    private static string Js(string s) => JsonSerializer.Serialize(s);
 
     private static string Esc(string s) =>
         System.Net.WebUtility.HtmlEncode(s);

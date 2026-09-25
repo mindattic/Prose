@@ -286,20 +286,29 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         var childIds = leafIds.Count == 1 && leafIds[0] == nodeId ? [] : leafIds;
         if (childIds.Count > 0)
         {
-            var childBeats = await (
+            // Leaf-walk order, then SortKey: SortKey alone restarts per chapter, so the "first
+            // beat" a finding reported was effectively arbitrary.
+            var leafOrder = new Dictionary<Guid, int>();
+            foreach (var leaf in childIds) leafOrder.TryAdd(leaf, leafOrder.Count);
+            var childBeats = (await (
                 from sb in db.BeatNodes.AsNoTracking()
                 join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
                 where childIds.Contains(sb.NodeId)
-                orderby sb.SortKey
-                select b
-            ).ToListAsync(ct);
+                select new { Beat = b, sb.NodeId, sb.SortKey }
+            ).ToListAsync(ct))
+                .OrderBy(x => leafOrder.GetValueOrDefault(x.NodeId, int.MaxValue)).ThenBy(x => x.SortKey)
+                .Select(x => x.Beat)
+                .ToList();
             orderedBeats = orderedBeats.Concat(childBeats).ToList();
         }
 
         // ── Load all node codes from DB ─────────────────────────────────────
+        // This node's universe, not the ambient scope: the background sweep runs unscoped, so
+        // which codes counted as leaks depended on whatever scope the process happened to hold.
         var dbCodes = await db.Nodes
             .AsNoTracking()
-            .Where(s => s.NodeCode != null)
+            .IgnoreQueryFilters()
+            .Where(s => s.NodeCode != null && s.UniverseId == node.UniverseId)
             .Select(s => s.NodeCode!)
             .ToListAsync(ct);
 
@@ -327,8 +336,12 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
 
         // ── Load entity names for check B ─────────────────────────────────────
         // A token is "known" if any entity Name equals or contains it as a standalone word.
+        // The node's universe (the glossary query below already does this): the ambient scope
+        // made this book's own entity acronyms "unknown" and filed false findings every sweep.
         var entityNames = await db.Entities
             .AsNoTracking()
+            .IgnoreQueryFilters()
+            .Where(e => e.UniverseId == node.UniverseId)
             .Select(e => e.Name)
             .ToListAsync(ct);
 
@@ -399,7 +412,9 @@ public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
         foreach (var beat in orderedBeats)
         {
             beatIndex++;
-            var text = beat.Text ?? "";
+            // The reader's text: each <entity …> tag counted as two extra words (inflating the
+            // length and page estimate) and leaked markup into the check snippets.
+            var text = BeatMarkup.StripEntityTags(beat.Text ?? "");
 
             // Word count
             totalWords += text.Split((char[])null!, StringSplitOptions.RemoveEmptyEntries).Length;

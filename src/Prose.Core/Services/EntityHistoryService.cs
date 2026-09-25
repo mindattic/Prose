@@ -164,7 +164,9 @@ public class EntityHistoryService(
             await using var reader = await cmd.ExecuteReaderAsync(ct);
             while (await reader.ReadAsync(ct))
                 if (!reader.IsDBNull(0))
-                    result.Add(reader.GetDateTime(0));
+                    // SysStart is UTC but comes back Kind=Unspecified; passed back in as an as-of,
+                    // ToUniversalTime() then treated it as local and shifted it by the UTC offset.
+                    result.Add(DateTime.SpecifyKind(reader.GetDateTime(0), DateTimeKind.Utc));
             return result;
         }
         finally
@@ -236,9 +238,12 @@ public class EntityHistoryService(
     {
         // FOR SYSTEM_TIME AS OF takes a literal — SQL Server will not accept a parameter there.
         // The timestamp is formatted from a DateTime, never from caller text.
-        var clause = asOf == null
+        // Unspecified is UTC here (temporal columns are UTC); the invariant culture keeps ":" as
+        // the time separator — a culture using "." produced an invalid literal, swallowed below.
+        var utc = asOf is { Kind: DateTimeKind.Unspecified } u ? DateTime.SpecifyKind(u, DateTimeKind.Utc) : asOf?.ToUniversalTime();
+        var clause = utc == null
             ? ""
-            : $" FOR SYSTEM_TIME AS OF '{asOf.Value.ToUniversalTime():yyyy-MM-dd HH:mm:ss.fffffff}'";
+            : " FOR SYSTEM_TIME AS OF '" + utc.Value.ToString("yyyy-MM-dd HH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture) + "'";
         var sql = $"SELECT * FROM [dbo].[{table}]{clause} WHERE {where}";
 
         var conn = db.Database.GetDbConnection();

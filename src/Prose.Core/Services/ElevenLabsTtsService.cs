@@ -190,7 +190,7 @@ public class ElevenLabsTtsService : ITtsService
             if (body.Length > 1000) body = body[..1000] + "…";
             throw new HttpRequestException(
                 $"ElevenLabs TTS {(int)response.StatusCode} {response.StatusCode} " +
-                $"(model={settings.TtsModel}, voice={voice}, format={format}): {body}",
+                $"(model={model}, voice={voice}, format={format}): {body}", // the model actually sent
                 inner: null,
                 statusCode: response.StatusCode);
         }

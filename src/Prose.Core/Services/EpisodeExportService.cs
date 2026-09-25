@@ -131,6 +131,13 @@ public class EpisodeExportService
                 if (bytes.Length <= 44) continue;
                 pcmParts.Add(bytes[44..]);
             }
+            // Every beat file missing (a moved data root) used to produce a 44-byte header-only
+            // episode.wav, recorded as the episode's audio with a success log.
+            if (pcmParts.Count == 0)
+            {
+                log.LogWarning("Episode #{Ep}: none of its narrated beats' audio files exist — no combined audio written", episodeId);
+                return;
+            }
             var totalLen = pcmParts.Sum(p => p.Length);
             var allPcm = new byte[totalLen];
             var offset = 0;
@@ -153,14 +160,23 @@ public class EpisodeExportService
             // observable artifact is a slightly imprecise duration estimate in
             // some players, which is acceptable for bedtime listening.
             combinedPath = Path.Combine(dir, "episode.mp3");
-            await using var output = File.Create(combinedPath);
+            var parts = new List<string>();
             foreach (var beat in ordered)
             {
-                ct.ThrowIfCancellationRequested();
                 var fullPath = audio.ResolveAudioFile(beat.AudioPath!);
-                if (!File.Exists(fullPath)) continue;
+                if (File.Exists(fullPath) && new FileInfo(fullPath).Length > 0) parts.Add(fullPath);
+            }
+            // Same as the WAV path: no surviving files is no audio, not an empty episode.mp3.
+            if (parts.Count == 0)
+            {
+                log.LogWarning("Episode #{Ep}: none of its narrated beats' audio files exist — no combined audio written", episodeId);
+                return;
+            }
+            await using var output = File.Create(combinedPath);
+            foreach (var fullPath in parts)
+            {
+                ct.ThrowIfCancellationRequested();
                 var bytes = await File.ReadAllBytesAsync(fullPath, ct);
-                if (bytes.Length == 0) continue;
                 await output.WriteAsync(bytes, ct);
             }
             combinedLen = output.Length;

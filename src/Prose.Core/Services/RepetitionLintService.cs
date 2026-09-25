@@ -108,18 +108,23 @@ public class RepetitionLintService
         var fp = $"node:{node.Slug}";
 
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
-        var beats = await (
+        // Leaf-walk order, then SortKey: "c.SortKey" only orders siblings, so chapters under
+        // different parents interleaved and the same-chapter checks stopped early.
+        var leafOrder = new Dictionary<Guid, int>();
+        foreach (var leaf in searchIds) leafOrder.TryAdd(leaf, leafOrder.Count);
+        var beats = (await (
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
-            join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
+            join c in db.Nodes.AsNoTracking().IgnoreQueryFilters() on bn.NodeId equals c.Id
             where searchIds.Contains(bn.NodeId) && b.Text != null && b.Text != ""
-            orderby c.SortKey, bn.SortKey
-            select new { b.Id, b.Number, Text = b.Text!, Chapter = c.Title, ChapterId = c.Id, b.StoryPosition }
-        ).ToListAsync(ct);
+            select new { b.Id, b.Number, Text = b.Text!, Chapter = c.Title, ChapterId = c.Id, b.StoryPosition, bn.SortKey }
+        ).ToListAsync(ct))
+            .OrderBy(x => leafOrder.GetValueOrDefault(x.ChapterId, int.MaxValue)).ThenBy(x => x.SortKey)
+            .ToList();
 
         // Entity-name exemption: a character/place name repeating is normal prose, not an echo.
         var entityNameTokens = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-        var entityRows = await db.Set<Data.Entities.Entity>().AsNoTracking()
+        var entityRows = await db.Set<Data.Entities.Entity>().AsNoTracking().IgnoreQueryFilters()
             .Where(e => e.UniverseId == node.UniverseId)
             .Select(e => new { e.Id, e.Name, e.EntityType }).ToListAsync(ct);
         foreach (var e in entityRows)

@@ -33,12 +33,17 @@ public sealed class SceneWindowService
     /// not found (e.g. a brand-new beat not yet inserted), the window is the book's last
     /// <paramref name="windowSizeBeats"/> beats.
     /// </summary>
+    /// <param name="includeAnchor">True when <paramref name="beforeBeatId"/> is the beat a new one is
+    /// being inserted AFTER: the window then ends with it. Without this the insert path's window
+    /// stopped one beat early, and the model never saw the beat it was continuing.</param>
     public async Task<IReadOnlyList<WindowedBeat>> GetWindowAsync(
-        Guid bookNodeId, Guid beforeBeatId, int windowSizeBeats, CancellationToken ct = default)
+        Guid bookNodeId, Guid beforeBeatId, int windowSizeBeats, CancellationToken ct = default,
+        bool includeAnchor = false)
     {
-        var ordered = await workbench.GetOrderedBeatsAsync(bookNodeId, ct);
+        // DistinctBy: a beat linked to two nodes is walked twice.
+        var ordered = (await workbench.GetOrderedBeatsAsync(bookNodeId, ct)).DistinctBy(o => o.Beat.Id).ToList();
         var idx = ordered.FindIndex(o => o.Beat.Id == beforeBeatId);
-        var end = idx < 0 ? ordered.Count : idx;
+        var end = idx < 0 ? ordered.Count : includeAnchor ? idx + 1 : idx;
         var start = Math.Max(0, end - windowSizeBeats);
         var slice = ordered.Skip(start).Take(end - start).ToList();
         if (slice.Count == 0) return [];
@@ -53,7 +58,10 @@ public sealed class SceneWindowService
             .ToDictionaryAsync(n => n.Id, n => n.Title ?? "", ct);
 
         return slice
-            .Select(o => new WindowedBeat(o.Beat.Id, o.NodeId, titles.GetValueOrDefault(o.NodeId, ""), o.Beat.Text, o.Beat.StoryPosition))
+            // The reader's text: this goes into "SCENE SO FAR" verbatim, and raw <entity guid=…>
+            // markup there spent the window's budget on GUIDs and invited the model to echo tags.
+            .Select(o => new WindowedBeat(o.Beat.Id, o.NodeId, titles.GetValueOrDefault(o.NodeId, ""),
+                BeatMarkup.StripEntityTags(o.Beat.Text), o.Beat.StoryPosition))
             .ToList();
     }
 }

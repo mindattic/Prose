@@ -104,6 +104,13 @@ public class WorldStateAtBeatService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
+        // An EMPTY scope is no scope: the router passes [] when none of the scene's names matched
+        // an entity exactly, and the Count > 0 guards below then read the whole universe (the
+        // 1M-character fail-open this class already fixed once). Fall back to the chapter's tags.
+        var entityList = entityIds?.ToList();
+        if (entityList is { Count: 0 }) entityList = null;
+        entityIds = entityList;
+
         // Infer story time from beat events when not provided
         var effectiveTime = storyTime;
         if (effectiveTime == null)
@@ -146,7 +153,21 @@ public class WorldStateAtBeatService
                 var priorQ = from e in db.EntityStateEvents.AsNoTracking()
                              join b in db.Beats.AsNoTracking() on e.BeatGuid equals b.Id
                              where b.StoryPosition != null && b.StoryPosition <= position
-                             select new { e.AtStoryTime, e.EntityId };
+                             select new { e.AtStoryTime, e.EntityId, BeatId = b.Id };
+
+                // StoryPosition numbers 1..N within EACH book, so "at or before position 50" has
+                // to mean in this book: book 3's positions 1..50 carry later story times, and a
+                // shared character pulled the clock (and the snapshot) forward into book 3.
+                var homeNode = await db.BeatNodes.AsNoTracking()
+                    .Where(bn => bn.BeatId == beatId).Select(bn => (Guid?)bn.NodeId).FirstOrDefaultAsync(ct);
+                if (homeNode is { } hn && await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, hn, ct) is { } bookId)
+                {
+                    var bookNodes = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, bookId, ct);
+                    bookNodes.Add(bookId);
+                    var inBook = db.BeatNodes.AsNoTracking()
+                        .Where(bn => bookNodes.Contains(bn.NodeId)).Select(bn => bn.BeatId);
+                    priorQ = priorQ.Where(x => inBook.Contains(x.BeatId));
+                }
                 if (scopeIdsForFallback is { Count: > 0 })
                     priorQ = priorQ.Where(x => scopeIdsForFallback.Contains(x.EntityId));
                 effectiveTime = await priorQ

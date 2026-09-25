@@ -103,7 +103,9 @@ public sealed class StoryStateQuery
     {
         var entityIds = rawEntityIds.Distinct().ToList();
 
-        var names = await db.Entities.AsNoTracking()
+        // IgnoreQueryFilters: explicit ids. Composing a book outside the active universe showed
+        // every name as "(unknown entity)" and silently dropped every ledger fact.
+        var names = await db.Entities.AsNoTracking().IgnoreQueryFilters()
             .Where(e => entityIds.Contains(e.Id))
             .ToDictionaryAsync(e => e.Id, e => e.Name, ct);
 
@@ -112,7 +114,7 @@ public sealed class StoryStateQuery
         // documented authoritative clock). An event with no BeatGuid (a manual/system row) has no
         // position to compare and is always treated as visible.
         var rawEvents = await (
-            from ev in db.EntityStateEvents.AsNoTracking()
+            from ev in db.EntityStateEvents.AsNoTracking().IgnoreQueryFilters()
             where entityIds.Contains(ev.EntityId)
             join b in db.Beats.AsNoTracking() on ev.BeatGuid equals b.Id into beatJoin
             from b in beatJoin.DefaultIfEmpty()
@@ -121,12 +123,15 @@ public sealed class StoryStateQuery
 
         var visible = rawEvents
             .Where(x => x.BeatPos == null || x.BeatPos <= asOf)
-            .Select(x => x.Ev)
             .ToList();
 
+        // Latest by STORY position first. AtStoryTime is filled with the wall clock when unset, so
+        // ordering by it alone meant "most recently written": a backfill for an early beat beat a
+        // later beat's fact.
         var latestPerAspect = visible
-            .GroupBy(e => (e.EntityId, e.AspectKey))
-            .Select(g => g.OrderByDescending(e => e.AtStoryTime).ThenByDescending(e => e.Id).First())
+            .GroupBy(x => (x.Ev.EntityId, x.Ev.AspectKey))
+            .Select(g => g.OrderByDescending(x => x.BeatPos ?? int.MinValue)
+                          .ThenByDescending(x => x.Ev.AtStoryTime).ThenByDescending(x => x.Ev.Id).First().Ev)
             .ToList();
 
         var entityFacts = latestPerAspect
