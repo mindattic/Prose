@@ -66,8 +66,10 @@ public sealed class ClaimBeatAnchorService(
 
         // IgnoreQueryFilters: BookSlug names a node that may sit in another universe than the
         // ambient scope, and an explicit identifier must not be filtered into "not found".
+        // NodeRefResolver: across universes, refused when ambiguous (was: first matching row).
+        var bookSlugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, bookSlug) ?? Guid.Empty;
         var bookNodeId = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
-            .Where(n => n.Slug == bookSlug || n.NodeCode == bookSlug)
+            .Where(n => n.Id == bookSlugId)
             .Select(n => (Guid?)n.Id).FirstOrDefaultAsync(ct);
         if (bookNodeId is null) { cache[bookSlug] = null; return null; }
 

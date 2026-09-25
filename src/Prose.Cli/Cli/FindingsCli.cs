@@ -80,8 +80,7 @@ public static class FindingsCli
         // then branch, same pattern ContinuityCli's --node handling already uses.
         var node = Guid.TryParse(nodeRef, out var nodeId)
             ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId)
-            : await db.Nodes.IgnoreQueryFilters().AsNoTracking()
-                .FirstOrDefaultAsync(n => n.Slug == nodeRef || n.NodeCode == nodeRef);
+            : await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, nodeRef);
         if (node is null) return null;
         return $"node:{(string.IsNullOrEmpty(node.Slug) ? node.Id.ToString("N") : node.Slug)}";
     }

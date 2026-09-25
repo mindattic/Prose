@@ -32,8 +32,10 @@ public static class PublishReadinessCli
         var bookHealth = services.GetRequiredService<BookHealthService>();
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.AsNoTracking()
-            .Where(n => n.Slug == slug || n.NodeCode == slug)
+        // NodeRefResolver: across universes, refused when ambiguous (was: first matching row).
+        var slugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug) ?? Guid.Empty;
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(n => n.Id == slugId)
             .Select(n => new { n.Id, n.Title })
             .FirstOrDefaultAsync();
         if (node == null)

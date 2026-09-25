@@ -202,10 +202,15 @@ public class WorldModellingTools(
     {
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var entity = await db.Entities.AsNoTracking()
+        // A slug is unique per universe only: unscoped, it can name characters in several
+        // universes, and the first row used to be taken. Refuse the ambiguity instead.
+        var matches = await db.Entities.AsNoTracking()
             .Where(e => e.EntityType == "character" && e.Slug == characterSlug)
             .Select(e => new { e.Id, e.Name })
-            .FirstOrDefaultAsync();
+            .Take(2).ToListAsync();
+        if (matches.Count > 1)
+            return JsonSerializer.Serialize(new { error = "ambiguous_slug", characterSlug, hint = "select a universe first" }, CanonTools.JsonOpts);
+        var entity = matches.FirstOrDefault();
 
         if (entity == null)
             return JsonSerializer.Serialize(new { error = "not_found", characterSlug }, CanonTools.JsonOpts);
@@ -416,8 +421,7 @@ public class WorldModellingTools(
         }
         else
         {
-            var node = await db.Nodes.AsNoTracking()
-                .FirstOrDefaultAsync(s => s.Slug == slugOrId || s.NodeCode == slugOrId);
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slugOrId);
             if (node == null)
                 return JsonSerializer.Serialize(new { error = "node_not_found", slugOrId }, CanonTools.JsonOpts);
             nodeId = node.Id;

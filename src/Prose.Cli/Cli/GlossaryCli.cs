@@ -70,14 +70,16 @@ public static class GlossaryCli
         // No IgnoreQueryFilters here — --all must stay scoped to the active --universe (the
         // ambient ScopedUniverseId filter), matching every other node query in this codebase.
         // Bypassing it would process every book across every universe in one call.
+        // A named book resolves through NodeRefResolver: across universes, refused when ambiguous.
+        var slugId = all ? Guid.Empty : await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug) ?? Guid.Empty;
         var nodes = all
             ? await db.Nodes
                 .Where(n => n.NodeCode != null && n is BookNode)
                 .OrderBy(n => n.NodeCode)
                 .Select(n => new { n.Id, n.NodeCode, n.Title })
                 .ToListAsync()
-            : await db.Nodes
-                .Where(n => n.Slug == slug || n.NodeCode == slug)
+            : await db.Nodes.IgnoreQueryFilters()
+                .Where(n => n.Id == slugId)
                 .Select(n => new { n.Id, n.NodeCode, n.Title })
                 .ToListAsync();
 

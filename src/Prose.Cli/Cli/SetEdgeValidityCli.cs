@@ -79,8 +79,7 @@ public static class SetEdgeValidityCli
         {
             var workbench = services.GetRequiredService<NodeWorkbenchService>();
             // Slug OR NodeCode, same as ReadBeatsCli — see GearCheckCli's 2026-09-02 fix note.
-            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
-                .FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
             if (node == null)
             {
                 Console.Error.WriteLine($"[set-edge-validity] Node '{slug}' not found.");

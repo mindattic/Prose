@@ -121,8 +121,10 @@ public class CoreEntityCrudTools
         if (!string.IsNullOrWhiteSpace(originNodeSlug))
         {
             using var odb = dbFactory.CreateDbContext();
-            resolvedOrigin = odb.Nodes.AsNoTracking()
-                .Where(n => n.Slug == originNodeSlug || n.NodeCode == originNodeSlug)
+            // NodeRefResolver: across universes, refused when ambiguous (was: first matching row).
+            var originNodeSlugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(odb, originNodeSlug) ?? Guid.Empty;
+            resolvedOrigin = odb.Nodes.IgnoreQueryFilters().AsNoTracking()
+                .Where(n => n.Id == originNodeSlugId)
                 .Select(n => (Guid?)n.Id)
                 .FirstOrDefault();
             // A typo here used to create the character universe-wide and answer ok:true.
@@ -326,8 +328,10 @@ public class CoreEntityCrudTools
         Guid? resolved = null;
         if (!string.IsNullOrWhiteSpace(originNodeSlug))
         {
-            resolved = await db.Nodes.AsNoTracking()
-                .Where(n => n.Slug == originNodeSlug || n.NodeCode == originNodeSlug)
+            // NodeRefResolver: across universes, refused when ambiguous (was: first matching row).
+            var originNodeSlugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, originNodeSlug) ?? Guid.Empty;
+            resolved = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+                .Where(n => n.Id == originNodeSlugId)
                 .Select(n => (Guid?)n.Id).FirstOrDefaultAsync();
             if (resolved == null)
                 return JsonSerializer.Serialize(new { ok = false, error = "node_not_found", originNodeSlug }, CanonTools.JsonOpts);

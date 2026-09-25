@@ -50,8 +50,7 @@ public static class GearCheckCli
         // NodeCode, same as ReadBeatsCli/other node-resolving CLIs — found live 2026-09-02:
         // this only matched Slug, so the book's short code (e.g. "BCODA", what --list-books
         // shows) never resolved here even though it works everywhere else.
-        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == nodeSlug || s.NodeCode == nodeSlug);
+        var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, nodeSlug);
         if (node == null) { Console.Error.WriteLine($"Node '{nodeSlug}' not found."); return 1; }
 
         // Recurses past any nested Collection (2026-08-09 fix); searchIds is already in

@@ -49,8 +49,7 @@ public static class EnsureChapterCli
         }
         else
         {
-            var node = await db.Nodes.AsNoTracking()
-                .FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
             if (node == null) { Console.Error.WriteLine($"Node '{slug}' not found."); return 2; }
             targets.Add((node.Id, node.Slug, node.Title));
         }

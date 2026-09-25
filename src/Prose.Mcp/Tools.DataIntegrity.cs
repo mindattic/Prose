@@ -122,8 +122,7 @@ public class DataIntegrityTools(
         if (!Guid.TryParse(nodeIdOrSlug, out nodeId))
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            var found = await db.Nodes.AsNoTracking()
-                .FirstOrDefaultAsync(n => n.Slug == nodeIdOrSlug || n.NodeCode == nodeIdOrSlug);
+            var found = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, nodeIdOrSlug);
             if (found == null)
                 return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
             nodeId = found.Id;

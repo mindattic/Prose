@@ -48,8 +48,7 @@ public static class SanityScanCli
 
         // ── Single node ──────────────────────────────────────────────────────
 
-        var node = await db.Nodes.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
+        var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
 
         if (node == null)
         {

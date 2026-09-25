@@ -54,7 +54,11 @@ public static class EditDistributionCli
             .OfType<BookNode>()
             .Where(n => n.Status != "archived");
         if (slug != null)
-            booksQ = booksQ.Where(n => n.Slug == slug || n.NodeCode == slug);
+        {
+            // NodeRefResolver: across universes, refused when ambiguous.
+            var slugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug) ?? Guid.Empty;
+            booksQ = booksQ.Where(n => n.Id == slugId);
+        }
 
         var books = await booksQ
             .Select(n => new { n.Id, n.NodeCode, n.Title, n.Slug, n.UniverseId })

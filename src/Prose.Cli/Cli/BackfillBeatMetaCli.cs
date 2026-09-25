@@ -39,8 +39,10 @@ public static class BackfillBeatMetaCli
         var dbFactory  = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var root = await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slug || s.NodeCode == slug)
+        // NodeRefResolver: across universes, refused when ambiguous (was: first matching row).
+        var slugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug) ?? Guid.Empty;
+        var root = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(s => s.Id == slugId)
             .Select(s => new { s.Id, s.SortKey })
             .FirstOrDefaultAsync();
         if (root == null) { Console.Error.WriteLine($"Node not found: {slug}"); return 2; }

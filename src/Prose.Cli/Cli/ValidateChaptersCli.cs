@@ -49,7 +49,9 @@ public static class ValidateChaptersCli
 
         if (!string.IsNullOrWhiteSpace(slug))
         {
-            booksQuery = booksQuery.Where(b => b.Slug == slug || b.NodeCode == slug);
+            // NodeRefResolver: across universes, refused when ambiguous.
+            var slugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug) ?? Guid.Empty;
+            booksQuery = booksQuery.Where(b => b.Id == slugId);
         }
         else if (!string.IsNullOrWhiteSpace(universeSlug))
         {

@@ -92,7 +92,11 @@ public class TrinityReconciliationService(
             .Where(n => universeIds.Contains(n.UniverseId) && n.NarrativeMode == "original");
 
         if (!string.IsNullOrEmpty(slug))
-            query = query.Where(n => n.Slug == slug || n.NodeCode == slug);
+        {
+            // NodeRefResolver: across universes, refused when ambiguous.
+            var slugId = await NodeRefResolver.ResolveAsync(db, slug) ?? Guid.Empty;
+            query = query.Where(n => n.Id == slugId);
+        }
 
         return await query
             .Select(n => new BookScopeEntry(n.Id, n.Slug, n.Title, n.UniverseId))

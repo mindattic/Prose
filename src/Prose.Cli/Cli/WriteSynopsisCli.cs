@@ -36,8 +36,7 @@ public static class WriteSynopsisCli
         var dbFactory   = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var node = await db.Nodes.AsNoTracking()
-            .FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
+        var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug);
         if (node == null)
         {
             Console.Error.WriteLine($"Node '{slug}' not found.");

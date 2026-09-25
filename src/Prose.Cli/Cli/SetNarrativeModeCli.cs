@@ -43,7 +43,9 @@ public static class SetNarrativeModeCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var node = await db.Nodes.FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
+        // NodeRefResolver, then a TRACKED load by id (this command writes the node).
+        var slugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug) ?? Guid.Empty;
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == slugId);
         if (node == null)
         {
             Console.Error.WriteLine($"[set-narrative-mode] No node found with slug or code '{slug}'.");

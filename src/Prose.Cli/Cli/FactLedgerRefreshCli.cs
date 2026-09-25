@@ -30,8 +30,7 @@ public static class FactLedgerRefreshCli
         await using var db = await dbFactory.CreateDbContextAsync();
         var node = Guid.TryParse(slugArg, out var nodeId)
             ? await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == nodeId)
-            : await db.Nodes.IgnoreQueryFilters().AsNoTracking()
-                .FirstOrDefaultAsync(n => n.Slug == slugArg || n.NodeCode == slugArg);
+            : await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slugArg);
         if (node is null) { Console.Error.WriteLine($"Node not found: {slugArg}"); return 2; }
         var slug = string.IsNullOrEmpty(node.Slug) ? node.Id.ToString("N") : node.Slug;
 

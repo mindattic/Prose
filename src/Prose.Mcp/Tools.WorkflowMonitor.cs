@@ -25,8 +25,10 @@ public class WorkflowMonitorTools(
     public async Task<string> workflow_statusImpl(string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slug || s.NodeCode == slug)
+        // NodeRefResolver: across universes, refused when ambiguous (was: first matching row).
+        var slugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug) ?? Guid.Empty;
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(s => s.Id == slugId)
             .Select(s => new { s.Id, s.Title })
             .FirstOrDefaultAsync();
         if (node == null) return $"Node not found: {slug}";
@@ -55,8 +57,10 @@ public class WorkflowMonitorTools(
     public async Task<string> workflow_beat_modesImpl(string slug)
     {
         await using var db = await dbFactory.CreateDbContextAsync();
-        var node = await db.Nodes.AsNoTracking()
-            .Where(s => s.Slug == slug || s.NodeCode == slug)
+        // NodeRefResolver: across universes, refused when ambiguous (was: first matching row).
+        var slugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug) ?? Guid.Empty;
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+            .Where(s => s.Id == slugId)
             .Select(s => new { s.Id })
             .FirstOrDefaultAsync();
         if (node == null) return $"Node not found: {slug}";
