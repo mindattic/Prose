@@ -206,6 +206,35 @@ public class SpanWriteTests
     }
 
     [Test]
+    public void A_span_with_one_edge_on_a_tagged_name_takes_the_whole_link()
+    {
+        const string tagged =
+            "Then <entity guid=\"11111111-1111-1111-1111-111111111111\">Kyle</entity> stepped into the dock.";
+
+        var starts = SpanWrite.Apply(tagged, AnchorTo(tagged, "Kyle stepped"), "Pixel walked");
+        Assert.That(starts.Applied, Is.True, starts.Reason);
+        Assert.That(starts.NewText, Is.EqualTo("Then Pixel walked into the dock."));
+
+        var ends = SpanWrite.Apply(tagged, AnchorTo(tagged, "Then Kyle"), "Later Pixel");
+        Assert.That(ends.Applied, Is.True, ends.Reason);
+        Assert.That(ends.NewText, Is.EqualTo("Later Pixel stepped into the dock."));
+    }
+
+    [Test]
+    public void Refuses_a_span_that_cuts_an_emphasis_pair_and_would_restyle_text_outside_it()
+    {
+        const string styled = "Kyle stepped into the *loading dock*. Later she was *tired*.";
+
+        var result = SpanWrite.Apply(styled, AnchorTo(styled, "into the loading"), "toward the");
+
+        Assert.That(result.Applied, Is.False, "the orphaned * would italicise '. Later she was '");
+        Assert.That(result.Refusal, Is.EqualTo(SpanWriteRefusal.SplitsMarkup));
+
+        var whole = SpanWrite.Apply(styled, AnchorTo(styled, "into the loading dock"), "toward the *gate*");
+        Assert.That(whole.Applied, Is.True, whole.Reason);
+    }
+
+    [Test]
     public void Replaces_a_whole_tagged_name_cleanly()
     {
         const string tagged =

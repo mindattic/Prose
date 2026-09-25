@@ -50,7 +50,7 @@ public static class DiscussionExport
 
             sb.AppendLine($"### {who}{how}{what}");
             sb.AppendLine($"<sub>{turn.At.ToLocalTime():yyyy-MM-dd HH:mm}" +
-                          (turn.Cost > 0 ? $" · {turn.Cost:C4}" : "") + "</sub>");
+                          (turn.Cost > 0 ? $" · {Usd(turn.Cost)}" : "") + "</sub>");
             sb.AppendLine();
 
             foreach (var block in DiscussionContent.Deserialize(turn.ContentJson))
@@ -60,7 +60,7 @@ public static class DiscussionExport
         }
 
         var total = turns.Sum(t => t.Cost);
-        if (total > 0) sb.AppendLine("---").AppendLine().AppendLine($"Total cost: {total:C4}");
+        if (total > 0) sb.AppendLine("---").AppendLine().AppendLine($"Total cost: {Usd(total)}");
 
         return sb.ToString();
     }
@@ -117,6 +117,11 @@ public static class DiscussionExport
                 break;
         }
     }
+
+    /// <summary>US dollars, whatever the machine's locale: costs are billed in USD, and "C4"
+    /// printed them as euros (or yen) on a non-US machine.</summary>
+    private static string Usd(double amount) =>
+        "$" + amount.ToString("0.0000", System.Globalization.CultureInfo.InvariantCulture);
 
     private static string Title(DiscussionThread thread)
         => string.IsNullOrWhiteSpace(thread.Title)

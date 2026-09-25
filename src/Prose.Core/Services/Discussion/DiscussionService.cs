@@ -205,7 +205,10 @@ public sealed class DiscussionService(
                 ? new AnchorResult(AnchorOutcome.Detached, 0, 0)
                 : TextAnchoring.Resolve(subject.Text, anchor);
 
-            if (resolved.Found && (thread.AnchorStart != resolved.Start || thread.AnchorEnd != resolved.End))
+            // Never persist an Ambiguous guess: once stored, the fast path re-reads it as Exact and
+            // every later write goes to the guessed copy without the Ambiguous refusal.
+            if (resolved.Found && resolved.Outcome != AnchorOutcome.Ambiguous
+                && (thread.AnchorStart != resolved.Start || thread.AnchorEnd != resolved.End))
             {
                 thread.AnchorStart = resolved.Start;
                 thread.AnchorEnd = resolved.End;

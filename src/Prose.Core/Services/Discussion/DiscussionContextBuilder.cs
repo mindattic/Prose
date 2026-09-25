@@ -118,38 +118,40 @@ public sealed class DiscussionContextBuilder(
         var terms = SalientTerms.Extract(selection);
         var hits = new List<EchoHit>();
 
+        // The reader's text, once per beat. Searching the stored markup counted tag attributes as
+        // echoes: a selection containing "character" or "weapon" matched every beat carrying an
+        // <entity repo="character" …> link, and the model was told the word was everywhere.
+        var readable = ordered
+            .Where(o => o.Beat.Id != beatId && !string.IsNullOrEmpty(o.Beat.Text))
+            .DistinctBy(o => o.Beat.Id)
+            .Select(o => (o.Beat, Plain: BeatDiscussTarget.PlainText(o.Beat.Text)))
+            .ToList();
+
         foreach (var term in terms)
         {
             ct.ThrowIfCancellationRequested();
 
             var samples = new List<(Guid, int, string?)>();
             var places = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            var count = 0;
 
-            foreach (var o in ordered)
+            foreach (var (beat, plain) in readable)
             {
-                if (o.Beat.Id == beatId) continue;
-                var text = o.Beat.Text;
-                if (string.IsNullOrEmpty(text)) continue;
-                if (text.IndexOf(term, StringComparison.OrdinalIgnoreCase) < 0) continue;
+                if (plain.IndexOf(term, StringComparison.OrdinalIgnoreCase) < 0) continue;
 
-                places.Add(o.Beat.PlaceName ?? "(unplaced)");
-                if (samples.Count < 6) samples.Add((o.Beat.Id, o.Beat.Number, o.Beat.PlaceName));
+                count++;
+                places.Add(beat.PlaceName ?? "(unplaced)");
+                if (samples.Count < 6) samples.Add((beat.Id, beat.Number, beat.PlaceName));
             }
 
             if (samples.Count > 0)
-                hits.Add(new EchoHit(term, CountContaining(ordered, beatId, term), places.Count, samples));
+                hits.Add(new EchoHit(term, count, places.Count, samples));
         }
 
         // Loudest first: the many-places case is the one worth the author's attention.
         return Task.FromResult<IReadOnlyList<EchoHit>>(
             hits.OrderByDescending(h => h.PlaceCount).ThenByDescending(h => h.BeatCount).ToList());
     }
-
-    private static int CountContaining(
-        List<NodeWorkbenchService.OrderedBeat> ordered, Guid exclude, string term)
-        => ordered.Count(o => o.Beat.Id != exclude
-                              && !string.IsNullOrEmpty(o.Beat.Text)
-                              && o.Beat.Text!.IndexOf(term, StringComparison.OrdinalIgnoreCase) >= 0);
 
     private static string Shorten(string s, int max)
         => s.Length <= max ? s : s[..max].TrimEnd() + "…";

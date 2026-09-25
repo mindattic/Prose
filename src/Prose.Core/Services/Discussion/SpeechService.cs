@@ -152,7 +152,7 @@ public sealed class SpeechService(
         using var request = new HttpRequestMessage(HttpMethod.Post, endpoint) { Content = form };
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
 
-        var response = await http.SendAsync(request, ct);
+        using var response = await http.SendAsync(request, ct);
         if (!response.IsSuccessStatusCode)
         {
             // The body says which of the several possible things went wrong — unsupported
@@ -209,7 +209,10 @@ public sealed class SpeechService(
         var full = Path.GetFullPath(Path.Combine(RecordingsRoot, relativePath));
         // A stored path is data, and data that escapes its root is how a read turns into an
         // arbitrary-file read.
-        if (!full.StartsWith(RecordingsRoot, StringComparison.OrdinalIgnoreCase)) return null;
+        // With the separator: a bare prefix test let "..\voice-notes-x\…" through, since a
+        // sibling folder named "voice-notes-x" starts with "voice-notes".
+        var root = Path.TrimEndingDirectorySeparator(Path.GetFullPath(RecordingsRoot)) + Path.DirectorySeparatorChar;
+        if (!full.StartsWith(root, StringComparison.OrdinalIgnoreCase)) return null;
         return File.Exists(full) ? full : null;
     }
 

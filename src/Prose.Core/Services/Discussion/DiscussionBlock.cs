@@ -136,7 +136,9 @@ public static class DiscussionContent
         {
             return JsonSerializer.Deserialize<List<DiscussionBlock>>(json, Options) ?? [];
         }
-        catch (JsonException)
+        // NotSupportedException: a block with no "type" discriminator makes the serializer try to
+        // build the abstract base, which is not a JsonException and escaped this catch.
+        catch (Exception ex) when (ex is JsonException or NotSupportedException)
         {
             return [new DiscussionBlock.Text("*(This turn could not be read.)*")];
         }

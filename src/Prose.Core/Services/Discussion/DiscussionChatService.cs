@@ -339,6 +339,18 @@ public sealed class DiscussionChatService(
                         $"\"{echo.Term}\" also appears here",
                         $"#{number}{(place is null ? "" : $" · {place}")}"));
 
+            // The previous assistant turn asked for confirmation, so this turn IS the confirmed
+            // request. On Auto, the draft that follows it carries no trailer (it has nothing left
+            // to confirm), which resolved to Clarify — or it repeats the trailer, which withheld
+            // the draft as unconfirmed. Either way no proposal was ever raised on the default mode.
+            var lastAssistant = priorTurns.LastOrDefault(t => t.Role != DiscussionRole.Author);
+            // Only a YES confirms: the panel's Confirm sends "Yes — that is what I want. Go ahead.",
+            // while Adjust sends "Not quite. …", which must be restated and confirmed again.
+            var alreadyConfirmed = lastAssistant is not null
+                && question.TrimStart().StartsWith("yes", StringComparison.OrdinalIgnoreCase)
+                && DiscussionContent.Deserialize(lastAssistant.ContentJson).OfType<DiscussionBlock.Confirm>().Any();
+            if (alreadyConfirmed) confirm = null; // do not ask the same question twice
+
             // Last, so the thing waiting on the author is the last thing they read — and after the
             // echoes, which are part of what they are being asked to judge.
             if (confirm is not null) blocks.Add(confirm);
@@ -347,7 +359,7 @@ public sealed class DiscussionChatService(
             // is the only evidence of the inference there is. Without one, whatever it did was an
             // answer. An explicit toggle always wins: the author has already decided.
             var resolved = intent == DiscussionIntent.Auto
-                ? (confirm is not null ? DiscussionIntent.Edit : DiscussionIntent.Clarify)
+                ? (confirm is not null || alreadyConfirmed ? DiscussionIntent.Edit : DiscussionIntent.Clarify)
                 : intent;
 
             // A fenced block in an edit reply is the replacement prose — the system prompt asks for

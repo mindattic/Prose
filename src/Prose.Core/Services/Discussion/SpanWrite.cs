@@ -102,6 +102,18 @@ public static class SpanWrite
                 + "them. Select it again so the edit lands where you mean it. Nothing was written.");
 
         var (start, end) = map.ToSourceRange(resolved.Start, resolved.End);
+
+        // A span whose edge sits exactly on a linked name's first or last character ("Kyle
+        // stepped", "met Kyle") maps to the INSIDE of the tag, so the range cut the link and was
+        // refused as SplitsMarkup — for the commonest selection there is. Take the whole link at
+        // that edge instead; its name is inside the span either way.
+        if (end > start && BeatMarkup.TagAround(stored, start, end) is null)
+            foreach (var t in BeatMarkup.TagSpans(stored))
+            {
+                var innerEnd = t.InnerStart + t.InnerLength;
+                if (start == t.InnerStart && end > innerEnd) start = t.Start;
+                if (end == innerEnd && start < t.InnerStart) end = t.Start + t.Length;
+            }
         var removed = stored[start..end];
 
         // 2. The replacement's own markup. An unclosed tag is the dangerous case: it does not fail,
@@ -155,6 +167,32 @@ public static class SpanWrite
 
         var updated = stored[..start] + incoming + stored[end..];
 
+        // 5b. Emphasis outside the span. A span that cuts a *…*, **…**, ~~…~~ or <u>…</u> pair
+        //     leaves half of it behind, and the orphan pairs with the next marker down the beat:
+        //     prose nobody selected turns italic, or loses its italics. The bytes outside are
+        //     identical, so the tripwire below cannot see it — the STYLE of every character
+        //     outside the span must be unchanged too.
+        //     A selection of the whole emphasised phrase ends at its last letter, one short of the
+        //     closing marker, so first try taking the marker characters touching either edge.
+        if (!OutsideStylesIdentical(stored, updated, start, end, incoming.Length))
+        {
+            var styles = StyleMap(stored);
+            var ws = start;
+            while (ws > 0 && styles[ws - 1] is null) ws--;
+            var we = end;
+            while (we < stored.Length && styles[we] is null) we++;
+            var widened = stored[..ws] + incoming + stored[we..];
+            if ((ws == start && we == end) || !OutsideStylesIdentical(stored, widened, ws, we, incoming.Length))
+                return SpanWriteOutcome.Refuse(SpanWriteRefusal.SplitsMarkup,
+                    "That passage starts or ends inside emphasis (italic, bold, strikethrough or "
+                    + "underline), so replacing it would change the formatting of text outside it. "
+                    + "Select the whole emphasised phrase. Nothing was written.");
+            start = ws;
+            end = we;
+            removed = stored[start..end];
+            updated = widened;
+        }
+
         // 6. The tripwire. True by construction above — which is exactly why it is worth asserting:
         //    the construction is one line that a later change could get wrong, and the cost of
         //    being wrong is prose the author never discussed, silently rewritten.
@@ -164,6 +202,30 @@ public static class SpanWrite
                 + "This is a bug — please report it.");
 
         return new SpanWriteOutcome(true, updated, report, RemovedText: removed);
+    }
+
+    /// <summary>The inline style of every character before and after the span, unchanged.</summary>
+    private static bool OutsideStylesIdentical(
+        string before, string after, int start, int end, int replacementLength)
+    {
+        var a = StyleMap(before);
+        var b = StyleMap(after);
+        for (var k = 0; k < start; k++)
+            if (a[k] != b[k]) return false;
+        var tailLength = before.Length - end;
+        var afterTailStart = start + replacementLength;
+        for (var j = 0; j < tailLength; j++)
+            if (a[end + j] != b[afterTailStart + j]) return false;
+        return true;
+    }
+
+    /// <summary>Per source character: its style, or null for a marker character.</summary>
+    private static ProseInline.Style?[] StyleMap(string text)
+    {
+        var map = new ProseInline.Style?[text.Length];
+        foreach (var run in ProseInline.ParseRuns(text))
+            for (var k = 0; k < run.Text.Length; k++) map[run.Start + k] = run.Style;
+        return map;
     }
 
     /// <summary>

@@ -81,6 +81,9 @@ public class FencedBlockTests
         // A half-written answer. Proposing the rest of the reply as prose would be considerably
         // worse than proposing nothing at all.
         Assert.That(FencedBlock.Last("Here it is:\n```\nThe pallets were"), Is.Null);
+        // After a complete quoted block, too: pairing backwards took the explanation between the
+        // two blocks as the replacement.
+        Assert.That(FencedBlock.Last("```\nThe pallets were empty.\n```\nI would make it:\n```\nThe pallets"), Is.Null);
     }
 
     [Test]

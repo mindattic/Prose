@@ -111,7 +111,7 @@ public sealed class ProposalService(
 
             // Dry-run the real guard rather than a cheaper approximation. An Approve button the
             // author presses and that then refuses is worse than one that was never offered.
-            var check = await DryRunAsync(proposal, beatId, ct);
+            var (check, _) = await DryRunAsync(proposal, beatId, ct);
             rows.Add(new PendingProposal(
                 proposal, beatId, proposal.OldValue,
                 check.Applied, check.Applied ? null : check.Reason));
@@ -143,7 +143,7 @@ public sealed class ProposalService(
             return SpanWriteOutcome.Refuse(SpanWriteRefusal.PassageGone,
                 "This proposal does not name a beat span. Nothing was written.");
 
-        var outcome = await DryRunAsync(proposal, beatId, ct);
+        var (outcome, beatUpdatedAt) = await DryRunAsync(proposal, beatId, ct);
         if (!outcome.Applied)
         {
             // Recorded rather than left pending. A proposal that can no longer be applied should
@@ -155,13 +155,37 @@ public sealed class ProposalService(
             return outcome;
         }
 
-        // The workbench, not a direct row update: it re-derives entity tags, bumps the version and
-        // stamps the write reason. FindingApplyService used to bypass all three.
-        await workbench.UpdateBeatTextAsync(
-            beatId, outcome.NewText!, BeatWriteReason.AuthorApprovedProposal, ct: ct);
+        // Claim the proposal before writing: a plain status read then write let two quick Approve
+        // clicks both see "proposed" and both write.
+        var claimed = await db.ChangeProposals
+            .Where(p => p.Id == proposalId && p.Status == StatusProposed)
+            .ExecuteUpdateAsync(s => s.SetProperty(p => p.Status, StatusApplied), ct);
+        if (claimed == 0)
+            return SpanWriteOutcome.Refuse(SpanWriteRefusal.NoChange,
+                "This proposal has already been handled. Nothing was written.");
 
-        proposal.Status = StatusApplied;
-        await db.SaveChangesAsync(ct);
+        // The workbench, not a direct row update: it re-derives entity tags, bumps the version and
+        // stamps the write reason. FindingApplyService used to bypass all three. The dry run's
+        // UpdatedAt goes with it: NewText is the WHOLE beat as it stood at the dry run, so a write
+        // that landed since (autosave, the CLI) would otherwise be silently reverted.
+        try
+        {
+            await workbench.UpdateBeatTextAsync(
+                beatId, outcome.NewText!, BeatWriteReason.AuthorApprovedProposal,
+                expectedUpdatedAt: beatUpdatedAt, ct: ct);
+        }
+        catch (Exception ex)
+        {
+            await db.ChangeProposals.Where(p => p.Id == proposalId)
+                .ExecuteUpdateAsync(s => s.SetProperty(p => p.Status, StatusProposed), CancellationToken.None);
+            if (ex is BeatConflictException)
+                return SpanWriteOutcome.Refuse(SpanWriteRefusal.PassageGone,
+                    "The beat changed while this was being applied. Nothing was written — review the "
+                    + "proposal again against the current text.");
+            throw;
+        }
+
+        await ReanchorThreadAsync(proposal, beatId, ct);
         return outcome;
     }
 
@@ -183,30 +207,70 @@ public sealed class ProposalService(
     /// "ready" and an apply that refuses would be two different implementations of the same
     /// question.</para>
     /// </summary>
-    private async Task<SpanWriteOutcome> DryRunAsync(
+    /// <summary>
+    /// Point the proposal's own thread at the passage it now reads. Nothing did: the thread still
+    /// quoted the OLD words, so it showed as Detached from then on, and the ramification review
+    /// reported the author's own thread as "another discussion that no longer points at anything".
+    /// Best effort — the write has already happened, and a thread left unmoved is only stale.
+    /// </summary>
+    private async Task ReanchorThreadAsync(ChangeProposal proposal, Guid beatId, CancellationToken ct)
+    {
+        var replacement = BeatDiscussTarget.PlainText(proposal.NewValue);
+        if (replacement.Length == 0 || !Guid.TryParse(proposal.RequestId, out var threadId)) return;
+        try
+        {
+            await using var db = await dbFactory.CreateDbContextAsync(ct);
+            var thread = await db.DiscussionThreads.FirstOrDefaultAsync(t => t.Id == threadId, ct);
+            var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
+            if (thread is null || beat is null) return;
+
+            // The text before and after the span is unchanged, so the old prefix/suffix and start
+            // still locate it; only the quote is new.
+            var plain = BeatDiscussTarget.PlainText(beat.Text);
+            var probe = new TextAnchor(replacement, thread.AnchorPrefix, thread.AnchorSuffix,
+                                       thread.AnchorStart, thread.AnchorStart + replacement.Length);
+            var resolved = TextAnchoring.Resolve(plain, probe);
+            if (!resolved.Found || resolved.Outcome == AnchorOutcome.Ambiguous) return;
+
+            var captured = TextAnchoring.Capture(plain, resolved.Start, resolved.End);
+            thread.AnchorQuote = captured.Quote;
+            thread.AnchorPrefix = captured.Prefix;
+            thread.AnchorSuffix = captured.Suffix;
+            thread.AnchorStart = captured.Start;
+            thread.AnchorEnd = captured.End;
+            thread.AnchoredTextHash = beat.TextHash;
+            await db.SaveChangesAsync(ct);
+        }
+        catch (Exception ex) when (ex is not OperationCanceledException)
+        {
+            log.LogWarning(ex, "Could not re-anchor thread {Thread} after applying its proposal", threadId);
+        }
+    }
+
+    private async Task<(SpanWriteOutcome Outcome, DateTime? BeatUpdatedAt)> DryRunAsync(
         ChangeProposal proposal, Guid beatId, CancellationToken ct)
     {
         if (!Guid.TryParse(proposal.RequestId, out var threadId))
-            return SpanWriteOutcome.Refuse(SpanWriteRefusal.PassageGone,
-                "This proposal is not linked to a discussion, so its anchor cannot be resolved.");
+            return (SpanWriteOutcome.Refuse(SpanWriteRefusal.PassageGone,
+                "This proposal is not linked to a discussion, so its anchor cannot be resolved."), null);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var thread = await db.DiscussionThreads.AsNoTracking()
             .FirstOrDefaultAsync(t => t.Id == threadId, ct);
         if (thread is null)
-            return SpanWriteOutcome.Refuse(SpanWriteRefusal.PassageGone,
-                "The discussion this came from is gone, so its anchor cannot be resolved.");
+            return (SpanWriteOutcome.Refuse(SpanWriteRefusal.PassageGone,
+                "The discussion this came from is gone, so its anchor cannot be resolved."), null);
 
         var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == beatId, ct);
         if (beat is null)
-            return SpanWriteOutcome.Refuse(SpanWriteRefusal.PassageGone,
-                "That beat no longer exists.");
+            return (SpanWriteOutcome.Refuse(SpanWriteRefusal.PassageGone,
+                "That beat no longer exists."), null);
 
         var anchor = new TextAnchor(
             thread.AnchorQuote, thread.AnchorPrefix, thread.AnchorSuffix,
             thread.AnchorStart, thread.AnchorEnd);
 
-        return SpanWrite.Apply(beat.Text, anchor, proposal.NewValue);
+        return (SpanWrite.Apply(beat.Text, anchor, proposal.NewValue), beat.UpdatedAt);
     }
 
     /// <summary>The beat id out of <c>beat-span:{guid}</c>, or null when the target is something

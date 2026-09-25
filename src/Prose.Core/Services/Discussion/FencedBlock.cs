@@ -21,20 +21,21 @@ public static class FencedBlock
 
         var lines = markdown.Replace("\r\n", "\n").Split('\n');
 
-        // Walked backwards: find a closing fence, then the opening one above it.
-        var close = -1;
-        for (var i = lines.Length - 1; i >= 0; i--)
-        {
-            if (!IsFence(lines[i])) continue;
-            if (close < 0) { close = i; continue; }
+        // Fences pair FORWARDS (open, close, open, close…). Walking backwards paired an unclosed
+        // final fence with the previous block's closing fence, and proposed the explanation text
+        // between them as the replacement prose.
+        var fences = new List<int>();
+        for (var i = 0; i < lines.Length; i++)
+            if (IsFence(lines[i])) fences.Add(i);
 
-            var body = string.Join("\n", lines[(i + 1)..close]).Trim('\n');
-            return body.Length == 0 ? null : body;
-        }
-
-        // A single unmatched fence is a half-written answer, not a replacement. Proposing the rest
+        // An unmatched final fence is a half-written answer, not a replacement. Proposing the rest
         // of the reply as prose would be considerably worse than proposing nothing.
-        return null;
+        if (fences.Count < 2 || fences.Count % 2 != 0) return null;
+
+        var open = fences[^2];
+        var close = fences[^1];
+        var body = string.Join("\n", lines[(open + 1)..close]).Trim('\n');
+        return body.Length == 0 ? null : body;
     }
 
     /// <summary>A fence line: three or more backticks, optionally with a language tag.</summary>
