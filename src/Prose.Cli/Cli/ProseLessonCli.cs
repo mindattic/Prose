@@ -37,9 +37,10 @@ public static class ProseLessonCli
         if (string.IsNullOrWhiteSpace(text))
         {
             // Last bare arg that isn't a flag or the add/list verb itself.
+            // Not a flag's VALUE: the last bare token was usually "glmz" or "voice", saved as the lesson.
             for (int i = args.Length - 1; i >= 0; i--)
             {
-                if (!args[i].StartsWith('-'))
+                if (!args[i].StartsWith('-') && !(i > 0 && args[i - 1] is "--scope" or "--kind" or "--text"))
                 {
                     text = args[i];
                     break;

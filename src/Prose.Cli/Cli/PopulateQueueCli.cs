@@ -49,6 +49,10 @@ public static class PopulateQueueCli
             catch (VotingDisabledException ex) { Console.Error.WriteLine($"[populate-queue] {ex.Message}"); return 1; }
         }
 
+        // Validate --node-id before any queue is written (entity-review runs first).
+        try { ParseGuids(ArgValue(args, "--node-id")); }
+        catch (ArgumentException ex) { Console.Error.WriteLine($"[populate-queue] {ex.Message}"); return 2; }
+
         if (doStatus)
         {
             var rows = await coordinator.GetStatusAsync();
@@ -102,9 +106,15 @@ public static class PopulateQueueCli
     private static List<Guid>? ParseGuids(string? raw)
     {
         if (string.IsNullOrWhiteSpace(raw)) return null;
-        return raw.Split(',', StringSplitOptions.RemoveEmptyEntries)
-            .Select(s => Guid.TryParse(s.Trim(), out var g) ? g : Guid.Empty)
-            .Where(g => g != Guid.Empty)
-            .ToList();
+        // An entry that is not a GUID is an error, not "skip it": dropping every entry left an
+        // empty list, which the coordinator reads as "all nodes" — a typo queued the whole corpus.
+        var list = new List<Guid>();
+        foreach (var s in raw.Split(',', StringSplitOptions.RemoveEmptyEntries))
+        {
+            if (!Guid.TryParse(s.Trim(), out var g))
+                throw new ArgumentException($"--node-id expects GUIDs; '{s.Trim()}' is not one.");
+            list.Add(g);
+        }
+        return list;
     }
 }

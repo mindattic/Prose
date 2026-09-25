@@ -159,6 +159,8 @@ public static class LegionCli
         for (int i = subIdx + 1; i < args.Length; i++)
         {
             if (!args[i].StartsWith("--")) return args[i];
+            // Boolean flags take no value: skipping one swallowed the question after --allow-votes.
+            if (args[i] is "--allow-votes" or "--pretty" or "--json" or "--no-confirm" or "--yes") continue;
             i++; // skip flag's value
         }
         return null;

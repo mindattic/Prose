@@ -85,9 +85,15 @@ public static class EntityTagsCli
                 .Where(e => e.Id == parsed).Select(e => new { e.Id, e.Name }).FirstOrDefaultAsync();
             if (byId != null) return (byId.Id, byId.Name);
         }
+        // Two same-named entities: refuse (return null) rather than edit whichever SQL returns first.
         var byName = await db.Entities.AsNoTracking()
-            .Where(e => e.Name == who).Select(e => new { e.Id, e.Name }).FirstOrDefaultAsync();
-        return byName == null ? null : (byName.Id, byName.Name);
+            .Where(e => e.Name == who).Select(e => new { e.Id, e.Name }).Take(2).ToListAsync();
+        if (byName.Count > 1)
+        {
+            Console.Error.WriteLine($"[entity-tags] '{who}' matches more than one entity — pass its id.");
+            return null;
+        }
+        return byName.Count == 0 ? null : (byName[0].Id, byName[0].Name);
     }
 
     private static List<string> Split(string csv) =>

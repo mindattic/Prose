@@ -39,6 +39,7 @@ public static class KdpStatusCli
             .ThenBy(n => n.NodeCode)
             .Select(n => new
             {
+                n.Id,
                 n.NodeCode,
                 n.Title,
                 n.PublicationStatus,
@@ -90,11 +91,6 @@ public static class KdpStatusCli
             .ToDictionary(g => g.Key, g => (DateTime?)g.Max(x => x.UpdatedAt));
 
         // Resolve node IDs for the status nodes
-        var nodeIdMap = await db.Nodes
-            .AsNoTracking().IgnoreQueryFilters()
-            .Where(n => n.PublicationStatus != null)
-            .Select(n => new { n.Id, n.NodeCode })
-            .ToDictionaryAsync(n => n.NodeCode ?? "", n => n.Id);
 
         Console.WriteLine($"\n{"CODE",-8}  {"UNIVERSE",-8}  {"STATUS",-16}  {"KDP PUBLISHED",-22}  {"LAST EDIT",-22}  NOTE");
         Console.WriteLine(new string('-', 108));
@@ -102,7 +98,7 @@ public static class KdpStatusCli
         var effectiveStatuses = new List<string>(nodes.Count);
         foreach (var n in nodes)
         {
-            var id = nodeIdMap.TryGetValue(n.NodeCode ?? "", out var nid) ? nid : Guid.Empty;
+            var id = n.Id; // NodeCode is neither unique nor required: a code->id map threw on duplicates
             lastEdits.TryGetValue(id, out var lastEdit);
 
             bool stale = n.PublicationStatus == "Published"

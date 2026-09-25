@@ -29,11 +29,8 @@ public static class WorkflowMonitorCli
         if (slug != null && !all)
         {
             await using var db = await dbFactory.CreateDbContextAsync();
-            var node = await db.Nodes.AsNoTracking()
-                .Where(s => s.Slug == slug)
-                .Select(s => new { s.Id, s.Title })
-                .FirstOrDefaultAsync();
-            if (node == null) { Console.Error.WriteLine($"Node not found: {slug}"); return; }
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug); // NodeCode, other universes
+            if (node == null) { Console.Error.WriteLine($"Node not found: {slug}"); Environment.ExitCode = 1; return; }
 
             var report = await monitor.GetNodeCoverageAsync(node.Id);
 

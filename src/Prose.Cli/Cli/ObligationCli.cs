@@ -49,9 +49,18 @@ public static class ObligationCli
 
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
-        var mode = args.SkipWhile(a => a != "--obligations").Skip(1).FirstOrDefault(a => !a.StartsWith("--")) ?? "list";
+        // The mode is the token RIGHT AFTER --obligations, if any: taking the first non-flag token
+        // anywhere made "--obligations --slug bcoda" run mode "bcoda".
+        var oi = Array.IndexOf(args, "--obligations");
+        var mode = oi >= 0 && oi + 1 < args.Length && !args[oi + 1].StartsWith("--") ? args[oi + 1] : "list";
         var json = args.Contains("--json");
         string? Flag(string name) { for (int i = 0; i < args.Length - 1; i++) if (args[i] == name) return args[i + 1]; return null; }
+        // A --due that does not parse used to become "book end" silently ("chapter7", "chaper:7").
+        if (Flag("--due") is { } dueArg && !IsValidDue(dueArg))
+        {
+            Console.Error.WriteLine($"[obligations] --due expects book-end | chapter:N | beats:N, got '{dueArg}'.");
+            return 2;
+        }
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         var svc = services.GetRequiredService<NarrativeObligationService>();
@@ -120,7 +129,14 @@ public static class ObligationCli
             case "rescan":
             {
                 var force = args.Contains("--force");
-                Guid? only = Guid.TryParse(Flag("--beat-id"), out var b) ? b : null;
+                // A --beat-id that does not parse meant "every beat" — a typo rescanned the whole book.
+                var beatArg = Flag("--beat-id");
+                Guid? only = null;
+                if (beatArg != null)
+                {
+                    if (!Guid.TryParse(beatArg, out var b)) { Console.Error.WriteLine($"[obligations] --beat-id must be a GUID, got '{beatArg}'."); return 2; }
+                    only = b;
+                }
                 var scanned = 0; var opened = 0; var advanced = 0; var closed = 0; var skipped = 0; var ungrounded = 0; var notEvaluated = 0;
                 await using var db = await dbFactory.CreateDbContextAsync();
                 var clock = await NarrativeObligationService.LoadClockAsync(db, nodeId, CancellationToken.None);
@@ -483,6 +499,14 @@ public static class ObligationCli
             case "accept": return Report(await svc.LockAsync(id, actor), json);
         }
         return 2;
+    }
+
+    internal static bool IsValidDue(string due)
+    {
+        if (due.Equals("book-end", StringComparison.OrdinalIgnoreCase)) return true;
+        var parts = due.Split(':', 2);
+        return parts.Length == 2 && int.TryParse(parts[1], out _)
+            && (parts[0].Equals("chapter", StringComparison.OrdinalIgnoreCase) || parts[0].Equals("beats", StringComparison.OrdinalIgnoreCase));
     }
 
     internal static (string Kind, int? Value) ParseDue(string? due)

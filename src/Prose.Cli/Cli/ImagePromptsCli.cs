@@ -73,7 +73,7 @@ public static class ImagePromptsCli
             Console.WriteLine($"  skipped:      {report.Skipped}  (hash already current)");
             Console.WriteLine($"  regenerated:  {report.Regenerated}");
             Console.WriteLine($"  failed:       {report.Failed}");
-            return 0;
+            return report.Failed > 0 ? 1 : 0;
         }
 
         var idArg = GetArg(args, "--id");

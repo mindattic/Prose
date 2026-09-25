@@ -49,10 +49,7 @@ public static class AskCli
         {
             var dbFactory = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>();
             await using var db = await dbFactory.CreateDbContextAsync();
-            var sid = await db.Nodes
-                .Where(s => s.Slug == scopeSlug)
-                .Select(s => (Guid?)s.Id)
-                .FirstOrDefaultAsync();
+            var sid = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, scopeSlug); // NodeCode, other universes
             if (sid is null)
             {
                 Console.Error.WriteLine($"no node found with slug '{scopeSlug}'");

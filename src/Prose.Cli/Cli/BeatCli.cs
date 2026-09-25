@@ -95,8 +95,7 @@ public static class BeatCli
         int n = 0;
         foreach (var (ownerNodeId, beatId) in pairs)
         {
-            await workbench.DeleteBeatAsync(ownerNodeId, beatId);
-            n++;
+            if (await workbench.DeleteBeatAsync(ownerNodeId, beatId)) n++; // count only real deletes
         }
         Console.WriteLine($"[beat clear] Done. {n} beat(s) disabled.");
         return 0;
@@ -132,8 +131,10 @@ public static class BeatCli
         }
 
         if (text == "-") text = await Console.In.ReadToEndAsync();
+        // Nothing piped in reads "" from the Hub's own stdin: refuse rather than insert an empty beat.
+        if (string.IsNullOrWhiteSpace(text)) { Console.Error.WriteLine("[beat insert] no text (did you pipe it in for '-'?)."); return 1; }
 
-        var beat = await workbench.InsertBeatAsync(nodeId.Value, afterId, text ?? "");
+        var beat = await workbench.InsertBeatAsync(nodeId.Value, afterId, text);
         if (!string.IsNullOrWhiteSpace(title) || !string.IsNullOrWhiteSpace(description))
             await workbench.UpdateBeatMetadataAsync(beat.Id, new NodeWorkbenchService.BeatMetadataUpdate(
                 Title: string.IsNullOrWhiteSpace(title) ? null : title,
@@ -190,7 +191,13 @@ public static class BeatCli
             }
         }
 
-        await workbench.DeleteBeatAsync(nodeId, beatId);
+        // DeleteBeatAsync returns false when the beat is not linked to that node: that was
+        // reported as "Deleted" with nothing removed.
+        if (!await workbench.DeleteBeatAsync(nodeId, beatId))
+        {
+            Console.Error.WriteLine($"[beat delete] Beat {beatId} is not linked to node {nodeId}; nothing deleted.");
+            return 1;
+        }
         Console.WriteLine($"[beat delete] Deleted beat {beatId}.");
         return 0;
     }
@@ -213,6 +220,9 @@ public static class BeatCli
         if (string.IsNullOrWhiteSpace(text)) { Console.Error.WriteLine("[beat update] --text is required (or '-' for stdin)."); return 1; }
 
         if (text == "-") text = await Console.In.ReadToEndAsync();
+        // Checked AFTER the stdin read: with nothing piped in, "-" read "" from the Hub's stdin
+        // and the beat's prose was replaced with nothing.
+        if (string.IsNullOrWhiteSpace(text)) { Console.Error.WriteLine("[beat update] no text (did you pipe it in for '-'?); beat left unchanged."); return 1; }
 
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
         await workbench.UpdateBeatTextAsync(beatId, text, BeatWriteReason.AuthorEdit);

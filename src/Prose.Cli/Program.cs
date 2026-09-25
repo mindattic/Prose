@@ -351,7 +351,7 @@ if (args.Contains("--reset-password"))
 
 // CLI mode: book operations — list / new / show / chapters / absorb / review / apply / export / delete.
 // Run `dotnet run --project Prose.Blazor -- --book` (no subcommand) to see full usage.
-if (args.Contains("--book"))
+if (args.Contains("--book") && !args.Contains("--ask")) // --ask documents --book as its --node alias
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("BookCli", args);
     return;

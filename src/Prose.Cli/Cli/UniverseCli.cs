@@ -33,7 +33,7 @@ public static class UniverseCli
             return Task.FromResult(1);
         }
 
-        var sub = args[0];
+        var sub = args[0].ToLowerInvariant(); // IsSubcommand ignores case; so must the switch
         var rest = args[1..];
         return sub switch
         {
@@ -101,6 +101,8 @@ public static class UniverseCli
         else
         {
             if (!Guid.TryParse(idStr, out var g)) { Console.Error.WriteLine("[universe use] --id must be a GUID."); return 1; }
+            // An unknown id was accepted and made ambient: every filtered query then returned nothing.
+            if (!ctx.ListUniverses().Any(u => u.Id == g)) { Console.Error.WriteLine($"[universe use] No universe with id {g}. Run 'prose --universe list'."); return 1; }
             ctx.UseUniverse(g);
         }
 

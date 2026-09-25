@@ -35,6 +35,12 @@ public static class GateCheckCli
             if (args[i] == "--file" && i + 1 < args.Length) file = args[++i];
             if (args[i] == "--spine" && i + 1 < args.Length) spine = args[++i];
         }
+        // A mistyped --spine path used to skip the merge test silently and print PASS.
+        if (spine != null && !File.Exists(spine))
+        {
+            Console.Error.WriteLine($"[gate-check] --spine file not found: {spine}");
+            return 1;
+        }
         if (beatId == null || file == null || !File.Exists(file))
         {
             Console.Error.WriteLine("Usage: prose --gate-check --beat-id <guid> --file <candidate.txt> [--spine <original.txt>] [--json]");

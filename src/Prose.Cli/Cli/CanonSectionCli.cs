@@ -19,7 +19,7 @@ public static class ListCanonSectionsCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         var type = args.SkipWhile(a => a != "--type").Skip(1).FirstOrDefault();
-        var universeSlug = args.SkipWhile(a => a != "--universe").Skip(1).FirstOrDefault() ?? "glmz";
+        var universeSlug = args.SkipWhile(a => a != "--universe").Skip(1).FirstOrDefault() ?? services.GetRequiredService<IUniverseContext>().CurrentUniverse?.Slug ?? "glmz"; // the forwarded universe, not always glmz
         if (string.IsNullOrWhiteSpace(type))
         {
             Console.Error.WriteLine("Usage: prose --list-canon-sections --type <DocumentType> [--universe <slug>]");
@@ -63,7 +63,7 @@ public static class GetCanonSectionCli
         var type = args.SkipWhile(a => a != "--type").Skip(1).FirstOrDefault();
         var key = args.SkipWhile(a => a != "--key").Skip(1).FirstOrDefault();
         var outPath = args.SkipWhile(a => a != "--out").Skip(1).FirstOrDefault();
-        var universeSlug = args.SkipWhile(a => a != "--universe").Skip(1).FirstOrDefault() ?? "glmz";
+        var universeSlug = args.SkipWhile(a => a != "--universe").Skip(1).FirstOrDefault() ?? services.GetRequiredService<IUniverseContext>().CurrentUniverse?.Slug ?? "glmz"; // the forwarded universe, not always glmz
 
         if (string.IsNullOrWhiteSpace(type) || string.IsNullOrWhiteSpace(key))
         {
@@ -113,7 +113,7 @@ public static class SetCanonSectionCli
         var key = args.SkipWhile(a => a != "--key").Skip(1).FirstOrDefault();
         var file = args.SkipWhile(a => a != "--file").Skip(1).FirstOrDefault();
         var title = args.SkipWhile(a => a != "--title").Skip(1).FirstOrDefault();
-        var universeSlug = args.SkipWhile(a => a != "--universe").Skip(1).FirstOrDefault() ?? "glmz";
+        var universeSlug = args.SkipWhile(a => a != "--universe").Skip(1).FirstOrDefault() ?? services.GetRequiredService<IUniverseContext>().CurrentUniverse?.Slug ?? "glmz"; // the forwarded universe, not always glmz
 
         if (string.IsNullOrWhiteSpace(type) || string.IsNullOrWhiteSpace(key) || string.IsNullOrWhiteSpace(file))
         {
@@ -138,6 +138,7 @@ public static class SetCanonSectionCli
         Console.WriteLine($"[set-canon-section] {result.Action} section '{result.SectionKey}' in {type} ({universeSlug}).");
         Console.WriteLine($"  Regenerated: {genResult.FilePath} ({genResult.SectionCount} sections, ok={genResult.Ok})");
         Console.WriteLine($"  Synced: inserted={syncResult.Inserted} updated={syncResult.Updated} unchanged={syncResult.Unchanged} errors={syncResult.Errors.Count}");
-        return 0;
+        // The edit is not done until the .md mirror and the sync both succeed.
+        return !genResult.Ok || syncResult.Errors.Count > 0 ? 1 : 0;
     }
 }

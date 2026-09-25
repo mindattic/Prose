@@ -101,6 +101,10 @@ public static class EntityHistoryCli
             return 1;
         }
 
+        // A given but unparseable date used to fall through to the timeline as if absent.
+        if (asOfArg != null && !TryParseUtc(asOfArg, out _)) { Console.Error.WriteLine($"[entity-history] --as-of is not a date: '{asOfArg}' (use ISO, e.g. 2026-09-20T14:00Z)."); return 2; }
+        if (diffArg != null && !TryParseUtc(diffArg, out _)) { Console.Error.WriteLine($"[entity-history] --diff is not a date: '{diffArg}' (use ISO)."); return 2; }
+
         // ── --as-of: the record at one instant ──────────────────────────────
         if (TryParseUtc(asOfArg, out var asOf))
         {
@@ -162,7 +166,7 @@ public static class EntityHistoryCli
     }
 
     private static bool TryParseUtc(string? s, out DateTime value) =>
-        DateTime.TryParse(s, null,
+        DateTime.TryParse(s, System.Globalization.CultureInfo.InvariantCulture,
             System.Globalization.DateTimeStyles.AdjustToUniversal
             | System.Globalization.DateTimeStyles.AssumeUniversal, out value)
         && !string.IsNullOrWhiteSpace(s);

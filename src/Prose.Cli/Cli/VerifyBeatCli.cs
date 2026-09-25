@@ -82,7 +82,7 @@ public static class VerifyBeatCli
             if (isJson)
             {
                 Console.WriteLine(JsonSerializer.Serialize(qr, JsonOpts));
-                return qr.Result == "Fail" ? 1 : 0;
+                return qr.Result != "Pass" ? 1 : 0;
             }
 
             var qIcon = qr.Result switch { "Pass" => "✓", "Fail" => "✗", _ => "-" };
@@ -115,13 +115,16 @@ public static class VerifyBeatCli
             {
                 if (!Guid.TryParse(claim.BeatId, out var cbid))
                 {
-                    Console.Error.WriteLine($"  Skipping claim with invalid beatId: {claim.BeatId}");
+                    // A claim that cannot be checked is not grounded: skipping it let a batch of
+                    // "#5501"-style ids report "0 FAILED, all confirmed".
+                    Console.Error.WriteLine($"  Invalid beatId (counted as a failure): {claim.BeatId}");
+                    batchResults.Add(new BeatVerificationResult(Guid.Empty, "quote_grounding", "Fail", "BLOCKER", $"invalid beatId '{claim.BeatId}'"));
                     continue;
                 }
                 batchResults.Add(await svc.VerifyQuoteGroundingAsync(cbid, claim.Quote, claim.ClaimedBy));
             }
 
-            var failed = batchResults.Where(r => r.Result == "Fail").ToList();
+            var failed = batchResults.Where(r => r.Result != "Pass").ToList(); // "Skipped" (empty quote) is not grounded either
 
             if (isJson)
             {

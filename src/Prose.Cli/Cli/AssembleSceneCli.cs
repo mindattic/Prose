@@ -74,8 +74,7 @@ public static class AssembleSceneCli
         Guid nodeId;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var node = await Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions
-                .FirstOrDefaultAsync(db.Nodes, s => s.Slug == slug);
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug); // NodeCode, other universes
             if (node == null) { Console.Error.WriteLine($"node not found: {slug}"); return 1; }
             nodeId = node.Id;
         }

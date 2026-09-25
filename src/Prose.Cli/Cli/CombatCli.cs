@@ -89,8 +89,11 @@ public static class CombatCli
         }
 
         var writer = sp.GetRequiredService<CombatSceneWriter>();
-        writer.OnBeatProgress += p =>
+        // The writer is a Hub singleton: a handler added per run and never removed printed each line
+        // N times on the Nth run, and old handlers wrote into later calls' console.
+        void Progress(CombatBeatProgress p) =>
             Console.Error.WriteLine($"   …beat {p.BeatIndex}/{p.TotalBeats} [{p.ActingSide}] {p.Status}");
+        writer.OnBeatProgress += Progress;
 
         Console.WriteLine($"[combat] {Math.Max(1, request.NumExchanges)} exchanges · tone {request.Tone} · location \"{request.BattlefieldLocation}\"");
         if (request.InitialResources.Count > 0)
@@ -107,6 +110,7 @@ public static class CombatCli
             Console.Error.WriteLine($"[combat] generation failed: {ex.Message}");
             return 1;
         }
+        finally { writer.OnBeatProgress -= Progress; }
 
         Console.WriteLine();
         Console.WriteLine(scene.FullText);

@@ -67,13 +67,14 @@ public static class BeatDuelCli
                 Console.Error.WriteLine($"Beat {beatId} not found or has no prose.");
                 return 2;
             }
-            originalText = beat.Text;
+            // Stripped: a tagged original beside a plain candidate told the voters which was which.
+            originalText = BeatMarkup.StripEntityTags(beat.Text);
 
             // Resolve owning story (walking up from the beat's owner chapter) for
             // title + register notes; pull the preceding beat for continuity context.
             var owner = await db.BeatNodes.AsNoTracking()
                 .Where(bn => bn.BeatId == beatId)
-                .Join(db.Nodes.AsNoTracking(), bn => bn.NodeId, n => n.Id, (bn, n) => new { bn.SortKey, Node = n })
+                .Join(db.Nodes.AsNoTracking().IgnoreQueryFilters(), bn => bn.NodeId, n => n.Id, (bn, n) => new { bn.SortKey, Node = n })
                 .FirstOrDefaultAsync();
             storyTitle = owner?.Node.Title ?? "(unknown story)";
             if (owner != null)
@@ -90,6 +91,7 @@ public static class BeatDuelCli
                     .OrderByDescending(bn => bn.SortKey)
                     .Join(db.Beats.AsNoTracking(), bn => bn.BeatId, b => b.Id, (bn, b) => b.Text)
                     .FirstOrDefaultAsync();
+                if (prev is { Length: > 0 }) prev = BeatMarkup.StripEntityTags(prev);
                 if (prev is { Length: > 0 })
                     precedingText = prev.Length <= 1500 ? prev : prev[^1500..];
             }
