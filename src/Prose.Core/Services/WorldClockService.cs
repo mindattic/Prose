@@ -21,6 +21,7 @@ public class WorldClockService
     private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly object cacheLock = new();
     private DateTime? cached;
+    private Guid cachedUniverse;
 
     /// <summary>
     /// Default story-time when no row exists yet — opening of the canon timeline.
@@ -39,12 +40,16 @@ public class WorldClockService
     /// <summary>Read the current story-time. Cached after first read.</summary>
     public DateTime GetNow()
     {
-        lock (cacheLock) { if (cached.HasValue) return cached.Value; }
+        // The clock is stored per universe (story_now is not a shared key), so the cache is too:
+        // a single cached value served GLMZ's time after switching to another universe, and the
+        // world tick then advanced that universe from GLMZ's clock.
+        var universe = UniverseScope.EffectiveId;
+        lock (cacheLock) { if (cached.HasValue && cachedUniverse == universe) return cached.Value; }
 
         using var db = dbFactory.CreateDbContext();
         var row = db.Settings.AsNoTracking().FirstOrDefault(s => s.Key == SettingKey);
         var now = ParseOrDefault(row?.Json);
-        lock (cacheLock) cached = now;
+        lock (cacheLock) { cached = now; cachedUniverse = universe; }
         return now;
     }
 
@@ -71,7 +76,7 @@ public class WorldClockService
         }
         db.SaveChanges();
 
-        lock (cacheLock) cached = utc;
+        lock (cacheLock) { cached = utc; cachedUniverse = UniverseScope.EffectiveId; }
         try { OnNowChanged?.Invoke(utc); } catch { /* never fail SetNow on subscriber error */ }
     }
 

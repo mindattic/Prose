@@ -66,6 +66,7 @@ public class BeatFactExtractionService
 
         string raw;
         try { raw = await llm.GenerateAsync(system, sb.ToString(), 0.1, 1500, ct: ct); }
+        catch (OperationCanceledException) { throw; } // a stopped run is not "no facts found"
         catch (Exception ex) { log.LogWarning(ex, "Beat fact extraction LLM call failed"); return result; }
 
         var json = StripFences(raw);

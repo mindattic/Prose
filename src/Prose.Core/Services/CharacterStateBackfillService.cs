@@ -92,6 +92,7 @@ public class CharacterStateBackfillService
 
         var perAspect = new Dictionary<string, int>(StringComparer.Ordinal);
         int eventsWritten = 0;
+        var savedAt = 0;
         foreach (var row in characters)
         {
             if (ct.IsCancellationRequested) break;
@@ -120,9 +121,13 @@ public class CharacterStateBackfillService
                 perAspect[aspect] = n + 1;
             }
 
-            // Save in batches to keep the change-tracker bounded.
-            if (eventsWritten > 0 && eventsWritten % 1000 == 0)
+            // Save in batches to keep the change-tracker bounded. By pending count: up to four
+            // events land per character, so "% 1000 == 0" was stepped over and never saved.
+            if (eventsWritten - savedAt >= 1000)
+            {
                 await db.SaveChangesAsync(ct);
+                savedAt = eventsWritten;
+            }
         }
         await db.SaveChangesAsync(ct);
         log.LogInformation(

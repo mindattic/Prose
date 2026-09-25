@@ -46,14 +46,18 @@ public class PacingService
         // Override based on beat goal keywords
         if (beatGoal != null)
         {
+            // Word starts, not substrings: "data center" matched "enter" and "costume" matched
+            // "cost", overriding the position-based mode with the wrong one.
             var goal = beatGoal.ToLowerInvariant();
-            if (goal.Contains("fight") || goal.Contains("chase") || goal.Contains("escape") || goal.Contains("attack"))
+            static bool Has(string g, string words) =>
+                System.Text.RegularExpressions.Regex.IsMatch(g, $@"\b({words})");
+            if (Has(goal, "fight|chase|escape|attack"))
                 mode = PaceMode.Strike;
-            else if (goal.Contains("discover") || goal.Contains("arrive") || goal.Contains("enter") || goal.Contains("explore"))
+            else if (Has(goal, "discover|arriv|enter|explor"))
                 mode = PaceMode.Breathe;
-            else if (goal.Contains("confront") || goal.Contains("tension") || goal.Contains("threaten"))
+            else if (Has(goal, "confront|tension|threaten"))
                 mode = PaceMode.Tighten;
-            else if (goal.Contains("aftermath") || goal.Contains("grief") || goal.Contains("reflect") || goal.Contains("cost"))
+            else if (Has(goal, "aftermath|grief|griev|reflect|cost\\b|costs\\b"))
                 mode = PaceMode.Settle;
         }
 

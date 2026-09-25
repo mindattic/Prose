@@ -68,8 +68,12 @@ public class ImagePromptRegenService
             ct.ThrowIfCancellationRequested();
             scanned++;
             var rec = await db.Records.FirstOrDefaultAsync(r => r.EntityId == id, ct);
-            if (rec == null) continue;
-            using var doc = JsonDocument.Parse(rec.Json);
+            if (rec == null || string.IsNullOrWhiteSpace(rec.Json)) continue;
+            // One unparseable blob threw and killed the whole backfill, losing the work done so far.
+            JsonDocument doc;
+            try { doc = JsonDocument.Parse(rec.Json); }
+            catch (JsonException) { continue; }
+            using var _doc = doc;
             var root = doc.RootElement;
             if (!root.TryGetProperty("genetic_ancestry", out var ga) || ga.ValueKind != JsonValueKind.Object)
             {
@@ -137,8 +141,12 @@ public class ImagePromptRegenService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var rec = await db.Records.FirstOrDefaultAsync(r => r.EntityId == characterId, ct);
         if (rec == null) return new RegenResult(false, "no Records row");
+        if (string.IsNullOrWhiteSpace(rec.Json)) return new RegenResult(false, "no Records row");
 
-        using var doc = JsonDocument.Parse(rec.Json);
+        JsonDocument doc;
+        try { doc = JsonDocument.Parse(rec.Json); }
+        catch (JsonException) { return new RegenResult(false, "unparseable Records row"); }
+        using var _doc = doc;
         var root = doc.RootElement;
 
         if (!root.TryGetProperty("genetic_ancestry", out var ga) || ga.ValueKind != JsonValueKind.Object)
@@ -243,7 +251,8 @@ public class ImagePromptRegenService
             if (result.Updated) regen++;
             else if (result.Reason == "hash matches — already current"
                   || result.Reason == "no existing prompts to rewrite"
-                  || result.Reason == "no genetic_ancestry") skipped++;
+                  || result.Reason == "no genetic_ancestry"
+                  || result.Reason == "no Records row") skipped++; // Records is retired: most characters have none
             else failed++;
             progress?.Report((scanned, ids.Count));
         }

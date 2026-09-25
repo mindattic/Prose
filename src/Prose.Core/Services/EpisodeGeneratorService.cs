@@ -173,7 +173,7 @@ public class EpisodeGeneratorService
             log.LogError(ex, "Episode #{Id} generation failed", episode.Id);
             episode.Status = "failed";
             episode.Error = ex.Message;
-            await db.SaveChangesAsync(ct);
+            await db.SaveChangesAsync(CancellationToken.None); // ct may be the one that cancelled: the episode stayed "generating" forever
             throw;
         }
     }

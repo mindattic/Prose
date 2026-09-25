@@ -290,6 +290,11 @@ public class FamilyGeneratorService
             foreach (var parent in proposal.Parents)
                 await family.AddParentAsync(parent.Id, sibling.Id, "generator", ct: ct);
         }
+        // Generated siblings are siblings of EACH OTHER too: sibling lookups follow direct edges
+        // only, so linking each one to the subject alone left A and B strangers.
+        for (int i = 0; i < proposal.Siblings.Count; i++)
+            for (int j = i + 1; j < proposal.Siblings.Count; j++)
+                await family.AddSiblingAsync(proposal.Siblings[i].Id, proposal.Siblings[j].Id, "generator", ct);
         foreach (var spouse in proposal.Spouses)
             await family.AddSpouseAsync(proposal.SubjectId, spouse.Id, "generator", ct);
         foreach (var child in proposal.Children)
@@ -302,6 +307,13 @@ public class FamilyGeneratorService
         // Aunts/uncles are siblings of one of subject's parents
         foreach (var au in proposal.AuntsUncles)
             await family.AddSiblingAsync(au.ParentId, au.Person.Id, "generator", ct);
+        foreach (var grp in proposal.AuntsUncles.GroupBy(a => a.ParentId))
+        {
+            var sibs = grp.ToList();
+            for (int i = 0; i < sibs.Count; i++)
+                for (int j = i + 1; j < sibs.Count; j++)
+                    await family.AddSiblingAsync(sibs[i].Person.Id, sibs[j].Person.Id, "generator", ct);
+        }
         // Aunt/uncle spouses — wired as spouse_of to the matching aunt/uncle
         foreach (var aus in proposal.AuntUncleSpouses)
             await family.AddSpouseAsync(aus.AuntUncleId, aus.Person.Id, "generator", ct);
