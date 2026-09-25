@@ -182,14 +182,16 @@ public class LoggingService
         _ => abbrev,
     };
 
-    private static int GetSeverityRank(string? level) => level switch
+    // Case-insensitive, and the short forms too: "--level warning" ranked 0 and the minimum
+    // severity filter stopped filtering anything.
+    private static int GetSeverityRank(string? level) => level?.Trim().ToLowerInvariant() switch
     {
-        "Verbose" => 0,
-        "Debug" => 1,
-        "Information" => 2,
-        "Warning" => 3,
-        "Error" => 4,
-        "Fatal" => 5,
+        "verbose" or "vrb" => 0,
+        "debug" or "dbg" => 1,
+        "information" or "info" or "inf" => 2,
+        "warning" or "warn" or "wrn" => 3,
+        "error" or "err" => 4,
+        "fatal" or "ftl" => 5,
         _ => 0,
     };
 }

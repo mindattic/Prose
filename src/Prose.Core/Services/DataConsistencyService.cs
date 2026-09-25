@@ -126,9 +126,11 @@ public class DataConsistencyService
     /// </summary>
     private async Task<Finding> SlugCollisionsAsync(ProseDbContext db, CancellationToken ct)
     {
+        // Per universe, like the unique index (UniverseId, EntityType, Slug): the same slug in
+        // two universes is valid (SS-LAW-15) and was reported as an "error" collision.
         var groups = await db.Entities.AsNoTracking()
             .Where(e => e.Slug != "")
-            .GroupBy(e => new { e.EntityType, e.Slug })
+            .GroupBy(e => new { e.UniverseId, e.EntityType, e.Slug })
             .Where(g => g.Count() > 1)
             .Select(g => new { g.Key.EntityType, g.Key.Slug, Count = g.Count() })
             .Take(SampleLimit + 1)
@@ -142,7 +144,7 @@ public class DataConsistencyService
 
         long count = await db.Entities.AsNoTracking()
             .Where(e => e.Slug != "")
-            .GroupBy(e => new { e.EntityType, e.Slug })
+            .GroupBy(e => new { e.UniverseId, e.EntityType, e.Slug })
             .Where(g => g.Count() > 1)
             .CountAsync(ct);
 

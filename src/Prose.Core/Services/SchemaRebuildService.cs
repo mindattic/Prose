@@ -79,6 +79,10 @@ public class SchemaRebuildService
         await using var _ = conn;
 
         var snapshot = await ReadTableMetadataAsync(conn, tableName, ct);
+        // No columns means no such table: the snapshot wrote "CREATE TABLE X ()" and a failing
+        // SELECT, leaving a broken file that looked like a recovery artifact.
+        if (snapshot.Columns.Count == 0)
+            throw new InvalidOperationException($"Table [dbo].[{tableName}] not found (no columns).");
         // Path.GetDirectoryName returns "" (not null) for a bare filename with no directory
         // component (e.g. --out foo.sql) - Directory.CreateDirectory("") throws, so that case
         // must resolve to the current directory instead.
@@ -115,8 +119,21 @@ public class SchemaRebuildService
         await using var _ = conn;
 
         var snapshot = await ReadTableMetadataAsync(conn, tableName, ct);
+        // No columns means no such table: the snapshot wrote "CREATE TABLE X ()" and a failing
+        // SELECT, leaving a broken file that looked like a recovery artifact.
+        if (snapshot.Columns.Count == 0)
+            throw new InvalidOperationException($"Table [dbo].[{tableName}] not found (no columns).");
         if (snapshot.PkCols.Count == 0)
             throw new InvalidOperationException($"Table {tableName} has no PK — refuse to rebuild without one.");
+
+        // The rebuilt table is created from what this service knows how to re-emit. DEFAULT
+        // constraints (other than the period columns'), CHECK constraints and INCLUDE columns on
+        // indexes are not among them, and a rebuild dropped them silently — the row counts and
+        // checksums still matched, so it reported success. Refuse rather than lose schema.
+        var unsupported = await UnsupportedSchemaAsync(conn, tableName, ct);
+        if (unsupported.Count > 0)
+            throw new InvalidOperationException(
+                $"Table {tableName} has schema this rebuild would silently drop: {string.Join("; ", unsupported)}. Rebuild it by migration instead.");
 
         // Step 1 — snapshot to disk first. Manual-recovery artifact.
         var dir = Path.Combine(paths.EngineDataDir, "schema-snapshots");
@@ -400,6 +417,30 @@ public class SchemaRebuildService
         return s;
     }
 
+    private static async Task<List<string>> UnsupportedSchemaAsync(SqlConnection conn, string tableName, CancellationToken ct)
+    {
+        const string sql = """
+            SELECT 'DEFAULT on ' + c.name
+              FROM sys.default_constraints d
+              JOIN sys.columns c ON c.object_id = d.parent_object_id AND c.column_id = d.parent_column_id
+             WHERE d.parent_object_id = OBJECT_ID('dbo.' + QUOTENAME(@t)) AND c.generated_always_type = 0
+            UNION ALL
+            SELECT 'CHECK ' + k.name FROM sys.check_constraints k
+             WHERE k.parent_object_id = OBJECT_ID('dbo.' + QUOTENAME(@t))
+            UNION ALL
+            SELECT DISTINCT 'INCLUDE columns on index ' + i.name
+              FROM sys.indexes i
+              JOIN sys.index_columns ic ON ic.object_id = i.object_id AND ic.index_id = i.index_id
+             WHERE i.object_id = OBJECT_ID('dbo.' + QUOTENAME(@t)) AND ic.is_included_column = 1
+            """;
+        var list = new List<string>();
+        await using var cmd = new SqlCommand(sql, conn);
+        cmd.Parameters.AddWithValue("@t", tableName);
+        await using var rdr = await cmd.ExecuteReaderAsync(ct);
+        while (await rdr.ReadAsync(ct)) list.Add(rdr.GetString(0));
+        return list;
+    }
+
     private static async Task<List<FkInfo>> LoadFksAsync(SqlConnection conn, string parentTable, bool asInbound, CancellationToken ct)
     {
         // asInbound = true: every FK whose REFERENCED table is parentTable (others point IN to us)
@@ -417,6 +458,10 @@ public class SchemaRebuildService
             "JOIN sys.columns cc ON cc.object_id = fkc.parent_object_id     AND cc.column_id = fkc.parent_column_id " +
             "JOIN sys.columns pc ON pc.object_id = fkc.referenced_object_id AND pc.column_id = fkc.referenced_column_id " +
             $"WHERE OBJECT_NAME({matchExpr}) = @t " +
+            // A self-referencing FK (Nodes.ParentNodeId) matched BOTH lists, so it was dropped
+            // twice (the second DROP failed and rolled the rebuild back) and re-added twice.
+            // It belongs to the inbound list only.
+            (asInbound ? "" : "AND fk.parent_object_id <> fk.referenced_object_id ") +
             "GROUP BY fk.name, fk.parent_object_id, fk.referenced_object_id, fk.delete_referential_action_desc";
         var list = new List<FkInfo>();
         await using var cmd = new SqlCommand(sql, conn);
@@ -531,6 +576,11 @@ public class SchemaRebuildService
         var byName = original.ToDictionary(c => c.Name, StringComparer.OrdinalIgnoreCase);
         var emitted = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         var result = new List<ColumnInfo>(original.Count);
+        // A misspelled --order column was skipped silently and the rebuild "succeeded" without
+        // the reorder that was the whole point.
+        var unknown = desiredOrder.Where(n => !byName.ContainsKey(n)).ToList();
+        if (unknown.Count > 0)
+            throw new InvalidOperationException($"--order names column(s) the table does not have: {string.Join(", ", unknown)}");
         foreach (var name in desiredOrder)
         {
             if (!byName.TryGetValue(name, out var col)) continue;
@@ -623,11 +673,13 @@ public class SchemaRebuildService
             "decimal" or "numeric" or "money" or "smallmoney"
                              => rdr.GetDecimal(i).ToString(CultureInfo.InvariantCulture),
             "uniqueidentifier" => $"'{rdr.GetGuid(i)}'",
-            "date"           => $"'{rdr.GetDateTime(i):yyyy-MM-dd}'",
+            // Invariant: under th-TH "yyyy" is the Buddhist year (2569), and a replayed recovery
+            // script inserted dates 543 years in the future.
+            "date"           => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) + "'",
             "time"           => $"'{((TimeSpan)rdr.GetValue(i)):c}'",
             "datetime" or "datetime2" or "smalldatetime"
-                             => $"'{rdr.GetDateTime(i):yyyy-MM-ddTHH:mm:ss.fffffff}'",
-            "datetimeoffset" => $"'{((DateTimeOffset)rdr.GetValue(i)):yyyy-MM-ddTHH:mm:ss.fffffffzzz}'",
+                             => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss.fffffff", CultureInfo.InvariantCulture) + "'",
+            "datetimeoffset" => "'" + ((DateTimeOffset)rdr.GetValue(i)).ToString("yyyy-MM-ddTHH:mm:ss.fffffffzzz", CultureInfo.InvariantCulture) + "'",
             "varbinary" or "binary" or "image"
                              => "0x" + Convert.ToHexString((byte[])rdr.GetValue(i)),
             _                => $"N'{rdr.GetValue(i)?.ToString()?.Replace("'", "''") ?? ""}'",

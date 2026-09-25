@@ -117,10 +117,13 @@ public class SqlSeedService
         }
 
         var script = await File.ReadAllTextAsync(sqlPath, ct);
-        // Strip GO batch separators — ExecuteSqlRawAsync runs everything as one
-        // batch. Existing seeds use GO at end-of-file for sqlcmd; safe to remove.
-        script = StripGo(script);
-        var prelude = "SET QUOTED_IDENTIFIER ON; SET ANSI_NULLS ON; SET XACT_ABORT ON;\n";
+        // GO separates BATCHES, and they must run as batches: most seeds use GO mid-file ("add
+        // the column, GO, then use it"), and SQL Server resolves column names when it compiles a
+        // batch, so stripping GO turned those into one batch that failed with "Invalid column
+        // name". Each batch runs in order, all inside one transaction, and the run is recorded
+        // only once they have all committed.
+        var batches = SplitBatches(script);
+        var prelude = "SET QUOTED_IDENTIFIER ON; SET ANSI_NULLS ON; SET XACT_ABORT ON;";
 
         try
         {
@@ -131,8 +134,12 @@ public class SqlSeedService
             // actually runs. This meant --seed (and every registered seed) has never worked —
             // found while wiring up the universe_nonfiction/horror/erotica seeds live. Must
             // pass an explicit empty parameter array to disambiguate.
-            await db.Database.ExecuteSqlRawAsync(prelude + script, Array.Empty<object>(), ct);
+            await using var tx = await db.Database.BeginTransactionAsync(ct);
+            await db.Database.ExecuteSqlRawAsync(prelude, Array.Empty<object>(), ct);
+            foreach (var batch in batches)
+                await db.Database.ExecuteSqlRawAsync(batch, Array.Empty<object>(), ct);
             await RecordRunAsync(db, name, ct);
+            await tx.CommitAsync(ct);
             result.Success = true;
             result.Message = $"Seed '{name}' applied.";
 
@@ -198,11 +205,25 @@ public class SqlSeedService
         return Path.GetFullPath(Path.Combine(candidateRoots[0], "Data", "Sql", fileName));
     }
 
-    private static string StripGo(string sql)
+    /// <summary>The script's batches: text between lines consisting of GO alone (sqlcmd's
+    /// separator, case-insensitive, optional trailing semicolon). Blank batches are dropped.</summary>
+    internal static List<string> SplitBatches(string sql)
     {
-        var lines = sql.Split('\n');
-        var keep = lines.Where(l => !l.Trim().Equals("GO", StringComparison.OrdinalIgnoreCase));
-        return string.Join('\n', keep);
+        var batches = new List<string>();
+        var current = new System.Text.StringBuilder();
+        foreach (var line in sql.Replace("\r\n", "\n").Split('\n'))
+        {
+            var t = line.Trim().TrimEnd(';').Trim();
+            if (t.Equals("GO", StringComparison.OrdinalIgnoreCase))
+            {
+                if (current.ToString().Trim().Length > 0) batches.Add(current.ToString());
+                current.Clear();
+                continue;
+            }
+            current.Append(line).Append('\n');
+        }
+        if (current.ToString().Trim().Length > 0) batches.Add(current.ToString());
+        return batches;
     }
 
     // ── SeedRuns audit table ────────────────────────────────────────────────

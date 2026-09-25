@@ -232,7 +232,10 @@ public class AutoCorrectOrchestratorService(
 
     // ── Corpus-wide fix: DataConsistencyService's already-implemented, never-called fixer ───────
 
-    private static readonly string[] ConsistencyFixCodes = ["ESE-DANGLING", "CHAR-AFFIL-ALIAS-DRIFT", "CHAR-HOMETURF-ALIAS-DRIFT"];
+    // Not the two ALIAS-DRIFT codes: CharacterAffiliation/HomeTurf.Alias is the ORIGINAL source
+    // string by design ("the Loop" for "The Loop District"), so Alias != Name is not drift, and
+    // the unattended fix overwrote authored text with the canonical name. They stay findings.
+    private static readonly string[] ConsistencyFixCodes = ["ESE-DANGLING"];
 
     private async Task<int> RunConsistencyFixesAsync(Guid runId, Func<int> nextSeq, AutoCorrectOptions opts, List<string> notes, CancellationToken ct)
     {

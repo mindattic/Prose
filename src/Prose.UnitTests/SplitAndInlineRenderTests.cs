@@ -106,4 +106,14 @@ public class SplitAndInlineRenderTests
         Assert.That(ManuscriptExportService.EpubRenderInline("f***ing hell"), Does.Not.Contain("<em>ing hell"));
         Assert.That(ManuscriptExportService.EpubRenderInline("a < b & c"), Is.EqualTo("a &lt; b &amp; c"));
     }
+
+    [Test]
+    public void A_seed_script_splits_into_its_GO_batches_instead_of_one_merged_batch()
+    {
+        var batches = SqlSeedService.SplitBatches("ALTER TABLE t ADD c INT;\r\nGO\r\nUPDATE t SET c = 1;\r\n  go ;\r\nGO\r\n");
+        Assert.That(batches, Has.Count.EqualTo(2));
+        Assert.That(batches[0], Does.Contain("ALTER TABLE"));
+        Assert.That(batches[1], Does.Contain("UPDATE t"));
+        Assert.That(SqlSeedService.SplitBatches("SELECT 1 -- GOAL: not a separator\n"), Has.Count.EqualTo(1));
+    }
 }

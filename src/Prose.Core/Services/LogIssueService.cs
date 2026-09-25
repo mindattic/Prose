@@ -78,10 +78,14 @@ public class LogIssueService(LoggingService logs, IDbContextFactory<ProseDbConte
         var exceptionType = "";
         if (!string.IsNullOrWhiteSpace(entry.Exception))
         {
-            // Serilog writes the exception block starting with "Namespace.TypeName: message".
+            // Serilog writes the exception block starting with "Namespace.TypeName: message". The
+            // same field also holds the continuation lines of a multi-line MESSAGE ("tokens=81234"),
+            // and hashing those raw gave every occurrence its own signature — so only a line that
+            // actually names an exception type counts.
             var firstLine = entry.Exception.Split('\n')[0].Trim();
             var colon = firstLine.IndexOf(':');
-            exceptionType = colon > 0 ? firstLine[..colon] : firstLine;
+            var candidate = colon > 0 ? firstLine[..colon] : firstLine;
+            exceptionType = Regex.IsMatch(candidate, @"^[\w.`]+(Exception|Error)$") ? candidate : "";
         }
 
         var payload = $"{entry.Level}|{Normalise(entry.Message)}|{exceptionType}";
@@ -194,7 +198,9 @@ public class LogIssueService(LoggingService logs, IDbContextFactory<ProseDbConte
 
         // One pass over the whole retention window, then look each issue up - rather than
         // re-reading the log files once per issue.
-        var faults = GroupFaults(since: DateTime.Now.AddDays(-RetentionDays), minLevel: "Warning")
+        // Every level: an issue tracked from "--level Information" never matched a Warning-only
+        // grouping, so it read as "stopped happening" and could never regress.
+        var faults = GroupFaults(since: DateTime.Now.AddDays(-RetentionDays), minLevel: "Verbose")
             .ToDictionary(f => f.Signature);
 
         var views = new List<LogIssueView>();
@@ -223,7 +229,7 @@ public class LogIssueService(LoggingService logs, IDbContextFactory<ProseDbConte
         // Regressions first: a fix that did not hold is the most urgent thing in the list.
         return views
             .OrderBy(v => v.State switch { IssueState.Regressed => 0, IssueState.Open => 1, _ => 2 })
-            .ThenByDescending(v => v.Fault?.LastSeen ?? v.Issue.TrackedAt)
+            .ThenByDescending(v => v.Fault?.LastSeen ?? v.Issue.TrackedAt.ToLocalTime()) // LastSeen is local time
             .ToList();
     }
 
