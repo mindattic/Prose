@@ -32,12 +32,14 @@ public static class DeleteAliasCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         string? value = null, typeFilter = null;
+        Guid? ownerFilter = null;
         for (int i = 0; i < args.Length; i++)
         {
             switch (args[i])
             {
                 case "--value": if (i + 1 < args.Length) value = args[++i]; break;
                 case "--type":  if (i + 1 < args.Length) typeFilter = args[++i]; break;
+                case "--owner": if (i + 1 < args.Length && Guid.TryParse(args[++i], out var ow)) ownerFilter = ow; break;
             }
         }
         var apply = args.Contains("--apply");
@@ -77,7 +79,13 @@ public static class DeleteAliasCli
 
         foreach (var clr in aliasTypes)
         {
-            var rows = await QueryAsync(db, clr, value!);
+            // Exact, case-sensitive match in memory, optionally one owner: the SQL comparison is
+            // case- and trailing-space-insensitive, so "the Read" also deleted "The Read" and
+            // "THE READ" on unrelated entities in every universe.
+            var rows = (await QueryAsync(db, clr, value!))
+                .Where(r => string.Equals(ValueOf(r), value, StringComparison.Ordinal))
+                .Where(r => ownerFilter == null || OwnerIdOf(r) as Guid? == ownerFilter)
+                .ToList();
             if (rows.Count == 0) continue;
 
             foreach (var row in rows)
@@ -86,7 +94,7 @@ public static class DeleteAliasCli
                 var ownerId = OwnerIdOf(row);
                 var ownerName = ownerId is Guid g ? await ResolveOwnerNameAsync(db, g) : null;
                 Console.WriteLine(
-                    $"  {clr.Name,-28} value=\"{value}\"  owner={ownerId}  {ownerName ?? "(name not resolved)"}");
+                    $"  {clr.Name,-28} value=\"{ValueOf(row)}\"  owner={ownerId}  {ownerName ?? "(name not resolved)"}");
                 if (apply)
                 {
                     db.Remove(row);
@@ -130,6 +138,8 @@ public static class DeleteAliasCli
             .ToListAsync();
         return rows.Cast<object>().ToList();
     }
+
+    private static string? ValueOf(object row) => row.GetType().GetProperty("Value")?.GetValue(row) as string;
 
     private static object? OwnerIdOf(object row) =>
         row.GetType().GetProperties()

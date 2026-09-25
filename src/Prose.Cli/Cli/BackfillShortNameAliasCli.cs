@@ -79,14 +79,28 @@ public static class BackfillShortNameAliasCli
                 .ToListAsync())
             .ToDictionary(x => x.CharacterId, x => x.MaxPos);
 
-        int candidates = 0, inserted = 0, skippedTitle = 0, skippedExisting = 0;
+        // A short name that IS another entity's name, or that two characters share, is not a safe
+        // alias: "Kyle" on "Kyle Nakamura" hijacks every mention of the character named Kyle.
+        var takenNames = new HashSet<string>(
+            await charactersQuery.Select(e => e.Name).ToListAsync(), StringComparer.OrdinalIgnoreCase);
+        var sharedFirst = characters
+            .Where(c => c.Name.IndexOf(' ') > 0)
+            .GroupBy(c => c.Name[..c.Name.IndexOf(' ')].Trim(), StringComparer.OrdinalIgnoreCase)
+            .Where(g => g.Count() > 1).Select(g => g.Key)
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+        var touched = new HashSet<Guid>();
+
+        int candidates = 0, inserted = 0, skippedTitle = 0, skippedExisting = 0, skippedCollision = 0;
         foreach (var c in characters)
         {
             var firstSpace = c.Name.IndexOf(' ');
             if (firstSpace <= 0) continue; // single-word name — nothing to shorten
             var firstToken = c.Name[..firstSpace].Trim();
             if (firstToken.Length < 2) continue;
-            if (TitleStopWords.Contains(firstToken)) { skippedTitle++; continue; }
+            // "Mrs." / "Dr." carry a period the stop list does not: they became aliases that
+            // matched every other Mrs./Dr. in the prose.
+            if (TitleStopWords.Contains(firstToken.TrimEnd('.')) || firstToken.EndsWith('.')) { skippedTitle++; continue; }
+            if (takenNames.Contains(firstToken) || sharedFirst.Contains(firstToken)) { skippedCollision++; continue; }
 
             candidates++;
             var already = existingAliasesByChar.TryGetValue(c.Id, out var set) && set.Contains(firstToken);
@@ -98,13 +112,20 @@ public static class BackfillShortNameAliasCli
             var nextPos = maxPositionByChar.TryGetValue(c.Id, out var mp) ? mp + 1 : 0;
             maxPositionByChar[c.Id] = nextPos;
             db.CharacterAliases.Add(new CharacterAlias { CharacterId = c.Id, Position = nextPos, Value = firstToken });
+            touched.Add(c.Id);
         }
 
         if (!dryRun && inserted > 0)
+        {
             await db.SaveChangesAsync();
+            // get_character and every reader serve from the read model; a direct alias insert
+            // stayed invisible there until something else saved the character.
+            foreach (var id in touched)
+                await Prose.Core.Data.CharacterMapper.RefreshReadModelAsync(db, id, afterIntentionalWrite: true);
+        }
 
         Console.WriteLine($"[backfill-short-name-alias] multi-word candidates={candidates}  " +
-                           $"already-aliased={skippedExisting}  title-skipped={skippedTitle}  " +
+                           $"already-aliased={skippedExisting}  title-skipped={skippedTitle}  collision-skipped={skippedCollision}  " +
                            $"{(dryRun ? "would insert" : "inserted")}={inserted}");
         if (dryRun) Console.WriteLine("(DRY RUN — no changes written)");
         return 0;

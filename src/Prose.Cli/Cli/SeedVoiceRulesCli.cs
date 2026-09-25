@@ -144,6 +144,13 @@ public static class SeedVoiceRulesCli
 
     public static Task<int> RunAsync(string[] args, IServiceProvider services)
     {
+        // These are GLMZ voice rules (Kyle, the currency, ArcSec): the repositories save to the
+        // current universe, so "--universe scry" seeded GLMZ's voice into SCRY.
+        if (Prose.Core.Services.UniverseScope.EffectiveId != Prose.Core.Data.Entities.Universe.GlmzId)
+        {
+            Console.Error.WriteLine("[seed-voice-rules] These rules are GLMZ canon; run with --universe glmz.");
+            return Task.FromResult(1);
+        }
         var literary = services.GetRequiredService<LiteraryRulesRepository>();
         var tone = services.GetRequiredService<ToneBibleRepository>();
 

@@ -39,12 +39,8 @@ public static class ReflowNodeCli
         Guid nodeId; string nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var q = db.Nodes.AsNoTracking();
-            Node? node;
-            if (!string.IsNullOrWhiteSpace(slug)) node = await q.FirstOrDefaultAsync(s => s.Slug == slug);
-            else if (Guid.TryParse(id, out var g)) node = await q.FirstOrDefaultAsync(s => s.Id == g);
-            else node = await q.Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch
-            { { Count: 1 } m => m[0], _ => null };
+            // The shared resolver: NodeCode, books outside the current universe, unique prefixes.
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug ?? id);
             if (node == null) { Console.Error.WriteLine("[reflow-book] Node not found."); return 1; }
             nodeId = node.Id; nodeTitle = node.Title;
         }

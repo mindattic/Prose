@@ -49,9 +49,13 @@ public static class FixLocationAspectCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var entity = await db.Entities.IgnoreQueryFilters()
+        // The current (--universe) universe, and never an arbitrary one of several: "Kyle" exists
+        // in more than one universe, and FirstOrDefault could rewrite the other universe's Kyle.
+        var matches = await db.Entities
             .Where(e => e.EntityType == "character" && e.Name == character)
-            .FirstOrDefaultAsync();
+            .ToListAsync();
+        if (matches.Count > 1) { Console.Error.WriteLine($"[fix-location-aspect] '{character}' matches {matches.Count} characters in this universe — refusing."); return 1; }
+        var entity = matches.FirstOrDefault();
         if (entity == null) { Console.Error.WriteLine($"[fix-location-aspect] Character '{character}' not found."); return 1; }
 
         var ev = await db.EntityStateEvents.IgnoreQueryFilters()

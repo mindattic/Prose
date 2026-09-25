@@ -48,19 +48,8 @@ public static class EditNodeCli
         Guid nodeId; string nodeSlug, nodeTitle;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var query = db.Nodes.AsNoTracking();
-            Node? node;
-            if (!string.IsNullOrWhiteSpace(slug))
-                node = await query.FirstOrDefaultAsync(s => s.Slug == slug);
-            else if (Guid.TryParse(id, out var exact))
-                node = await query.FirstOrDefaultAsync(s => s.Id == exact);
-            else
-            {
-                var prefix = id!.ToLowerInvariant();
-                var matches = await query.Where(s => s.Id.ToString().StartsWith(prefix)).Take(2).ToListAsync();
-                if (matches.Count > 1) { Console.Error.WriteLine($"[edit-book] Id prefix '{id}' is ambiguous."); return 1; }
-                node = matches.FirstOrDefault();
-            }
+            // The shared resolver: NodeCode, books outside the current universe, unique prefixes.
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug ?? id);
             if (node == null)
             {
                 Console.Error.WriteLine($"[edit-book] No node found for {(slug != null ? $"slug '{slug}'" : $"id '{id}'")}.");

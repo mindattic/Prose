@@ -56,7 +56,7 @@ public static class RepairEntityDocsCli
 
         Console.WriteLine($"[repair-entity-docs] {docs.Count} entity-doc row(s); {bySlug.Count} distinct active entity slug(s).");
         if (ambiguous.Count > 0)
-            Console.WriteLine($"[repair-entity-docs] {ambiguous.Count} slug(s) exist in more than one universe — first wins, listed below.");
+            Console.WriteLine($"[repair-entity-docs] {ambiguous.Count} slug(s) exist in more than one universe — left untouched, listed below.");
 
         int changed = 0, unmatched = 0;
         var unmatchedSamples = new List<string>();
@@ -74,6 +74,9 @@ public static class RepairEntityDocsCli
                 continue;
             }
 
+            // An ambiguous slug has no single right universe: "first wins" re-stamped docs that
+            // were already correctly stamped to the OTHER universe. Leave those alone.
+            if (ambiguous.Contains(slug)) continue;
             if (doc.UniverseId == universeId) continue;
             if (!dryRun) doc.UniverseId = universeId;
             changed++;

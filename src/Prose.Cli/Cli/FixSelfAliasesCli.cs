@@ -32,23 +32,23 @@ public static class FixSelfAliasesCli
         var characterHits = await (from a in db.CharacterAliases
                                     join c in db.Characters on a.CharacterId equals c.Id
                                     where a.Value.ToLower() == c.Name.ToLower()
-                                    select new { Table = "CharacterAliases", a.Id, c.Name, Value = a.Value })
+                                    select new { Table = "CharacterAliases", a.Id, c.Name, Value = a.Value, Owner = c.Id })
             .ToListAsync();
 
         var placeHits = await (from a in db.PlaceAliases
-                                join e in db.Entities on a.PlaceId equals e.Id
+                                join e in db.Entities.IgnoreQueryFilters() on a.PlaceId equals e.Id
                                 where a.Value.ToLower() == e.Name.ToLower()
                                 select new { Table = "PlaceAliases", a.Id, e.Name, Value = a.Value })
             .ToListAsync();
 
         var factionHits = await (from a in db.FactionAliases
-                                  join e in db.Entities on a.FactionId equals e.Id
+                                  join e in db.Entities.IgnoreQueryFilters() on a.FactionId equals e.Id
                                   where a.Value.ToLower() == e.Name.ToLower()
                                   select new { Table = "FactionAliases", a.Id, e.Name, Value = a.Value })
             .ToListAsync();
 
         var weaponHits = await (from a in db.WeaponAliases
-                                 join e in db.Entities on a.WeaponId equals e.Id
+                                 join e in db.Entities.IgnoreQueryFilters() on a.WeaponId equals e.Id
                                  where a.Value.ToLower() == e.Name.ToLower()
                                  select new { Table = "WeaponAliases", a.Id, e.Name, Value = a.Value })
             .ToListAsync();
@@ -83,6 +83,11 @@ public static class FixSelfAliasesCli
         await db.PlaceAliases.Where(a => placeIds.Contains(a.Id)).ExecuteDeleteAsync();
         await db.FactionAliases.Where(a => factionIds.Contains(a.Id)).ExecuteDeleteAsync();
         await db.WeaponAliases.Where(a => weaponIds.Contains(a.Id)).ExecuteDeleteAsync();
+
+        // Characters are served from the read model: a deleted self-alias kept showing there
+        // until something else saved the character.
+        foreach (var owner in characterHits.Select(h => h.Owner).Distinct())
+            await Prose.Core.Data.CharacterMapper.RefreshReadModelAsync(db, owner, afterIntentionalWrite: true);
 
         Console.WriteLine($"[fix-self-aliases] Removed {all.Count} self-alias violation(s).");
         return 0;

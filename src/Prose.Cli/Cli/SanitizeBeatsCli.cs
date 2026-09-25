@@ -32,8 +32,7 @@ public static class SanitizeBeatsCli
 
         if (slug is not null)
         {
-            var node = await db.Nodes.AsNoTracking()
-                                         .FirstOrDefaultAsync(s => s.Slug == slug);
+            var node = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, slug); // NodeCode, other universes
             if (node is null)
             {
                 Console.Error.WriteLine($"Node not found: {slug}");
