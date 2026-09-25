@@ -40,6 +40,11 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
     /// </summary>
     protected void RaiseOnItemSaved(string name) => OnItemSaved?.Invoke(name);
 
+    /// <summary>The id-carrying save event. Every typed repository overrides Save and raised only
+    /// <see cref="OnItemSaved"/>, so the entity-update → beat EntityStale propagation subscribed
+    /// to <see cref="OnEntitySaved"/> never fired for a single typed entity save.</summary>
+    protected void RaiseOnEntitySaved(Guid id, string name) => OnEntitySaved?.Invoke(id, name);
+
     public EfRepository(
         IDbContextFactory<ProseDbContext> dbFactory,
         string entityType,

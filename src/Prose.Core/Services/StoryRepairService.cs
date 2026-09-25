@@ -146,6 +146,9 @@ public class StoryRepairService
     {
         var result = new RepairBeatFactsResult();
         var allCharacters = characters.GetAll();
+        // The mutated records themselves, by reference: names are not unique (two "Boris"es in
+        // different books), so a name-keyed dictionary threw after every LLM call was paid for.
+        var touched = new HashSet<CharacterData>(ReferenceEqualityComparer.Instance);
         var allChapters = chapters.ListChapters()
             .OrderBy(c => c.Number ?? int.MaxValue)
             .ThenBy(c => c.Created)
@@ -180,7 +183,7 @@ public class StoryRepairService
                                                   && (existing.LearnedChapter ?? -1) == (k.LearnedChapter ?? -1))) continue;
                     c.Knowledge.Add(k);
                     result.KnowledgeAdded++;
-                    result.TouchedCharacters.Add(c.Name);
+                    result.TouchedCharacters.Add(c.Name); touched.Add(c);
                 }
 
                 foreach (var (name, cnd) in facts.Conditions)
@@ -192,21 +195,20 @@ public class StoryRepairService
                          && string.Equals(existing.Name, cnd.Name, StringComparison.OrdinalIgnoreCase))) continue;
                     c.Conditions.Add(cnd);
                     result.ConditionsAdded++;
-                    result.TouchedCharacters.Add(c.Name);
+                    result.TouchedCharacters.Add(c.Name); touched.Add(c);
                 }
             }
         }
 
         // Persist every character we touched — use the in-memory (mutated) copy from
         // allCharacters, not a fresh fetch which would discard the accumulated mutations.
-        var byName = allCharacters.ToDictionary(c => c.Name, StringComparer.OrdinalIgnoreCase);
-        foreach (var name in result.TouchedCharacters)
+        foreach (var c in touched)
         {
             try
             {
-                if (byName.TryGetValue(name, out var c)) characters.Save(c);
+                characters.Save(c);
             }
-            catch (Exception ex) { log.LogWarning(ex, "Failed to save character '{Name}' after beat-fact merge", name); result.Errors.Add($"{name}: {ex.Message}"); }
+            catch (Exception ex) { log.LogWarning(ex, "Failed to save character '{Name}' after beat-fact merge", c.Name); result.Errors.Add($"{c.Name}: {ex.Message}"); }
         }
 
         return result;

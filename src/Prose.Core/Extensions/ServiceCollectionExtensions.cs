@@ -578,12 +578,13 @@ public static class ServiceCollectionExtensions
                 sp.GetRequiredService<EmbeddingService>());
 
             // Wire repository save events to auto-discover relationships
-            sp.GetRequiredService<CharacterRepository>().OnItemSaved += name =>
+            sp.GetRequiredService<CharacterRepository>().OnItemSaved += name => discovery.DiscoverFromEntity(name, "character");
+            // Archetypes and belongings come from the record that was SAVED, looked up by id:
+            // GetByName returned the first character of that name, so saving book B's "Boris"
+            // graphed book A's Boris's archetypes and gear.
+            sp.GetRequiredService<CharacterRepository>().OnEntitySaved += (id, name) =>
             {
-                discovery.DiscoverFromEntity(name, "character");
-                // Also graph archetypes and belongings
-                var charRepo = sp.GetRequiredService<CharacterRepository>();
-                var character = charRepo.GetByName(name);
+                var character = sp.GetRequiredService<CharacterRepository>().GetById(id.ToString("N"));
                 if (character != null)
                     discovery.DiscoverFromCharacter(name, character.Archetypes, character.Belongings);
             };

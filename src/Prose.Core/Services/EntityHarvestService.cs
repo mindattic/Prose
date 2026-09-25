@@ -67,10 +67,16 @@ public class EntityHarvestService(
             // ("NSB framework" → "NSB"). Variants keep design notes from stubbing
             // duplicates of entities that exist under a slightly different form.
             var variants = NameVariants(name).ToList();
-            var existing = await db.Set<Entity>().AsNoTracking()
+            // Best match first — the exact name, then the variants in order, same type preferred.
+            // An unordered FirstOrDefault could hand back a looser variant ("Kyle" for
+            // "Kyle Reyes") even when the exact entity existed.
+            var existing = (await db.Set<Entity>().AsNoTracking()
                 .Where(e => e.Status != "archived" && variants.Contains(e.Name))
-                .Select(e => new { e.Id, e.Name })
-                .FirstOrDefaultAsync(ct);
+                .Select(e => new { e.Id, e.Name, e.EntityType })
+                .ToListAsync(ct))
+                .OrderBy(e => variants.FindIndex(v => string.Equals(v, e.Name, StringComparison.OrdinalIgnoreCase)) is var vi && vi >= 0 ? vi : int.MaxValue)
+                .ThenBy(e => string.Equals(e.EntityType, c.EntityType, StringComparison.OrdinalIgnoreCase) ? 0 : 1)
+                .FirstOrDefault();
             if (existing != null)
             {
                 resolutions[name] = new(name, c.EntityType, existing.Id, "existing", existing.Name);
@@ -130,13 +136,18 @@ public class EntityHarvestService(
         // Wire edges for every asserted relation where both ends resolved.
         int edgesCreated = 0;
         var sourceTag = $"harvest:{DateTime.UtcNow:yyyyMMdd}";
+        // Edges added this run are not saved until the end, so the database check below cannot
+        // see them: A related:[B] plus B related:[A] (or related:[B,B]) made duplicate edges.
+        var addedPairs = new HashSet<(Guid, Guid)>();
         foreach (var c in candidates)
         {
             if (!resolutions.TryGetValue(c.Name.Trim(), out var from) || from.EntityId == Guid.Empty) continue;
-            foreach (var relName in c.Related.Select(r => r.Trim()).Where(r => r.Length >= 3))
+            foreach (var relName in c.Related.Where(r => r != null).Select(r => r.Trim()).Where(r => r.Length >= 3))
             {
                 if (!resolutions.TryGetValue(relName, out var to) || to.EntityId == Guid.Empty) continue;
                 if (to.EntityId == from.EntityId) continue;
+                var pair = from.EntityId.CompareTo(to.EntityId) < 0 ? (from.EntityId, to.EntityId) : (to.EntityId, from.EntityId);
+                if (!addedPairs.Add(pair)) continue;
 
                 var exists = await db.Set<Edge>().AsNoTracking().AnyAsync(e =>
                     ((e.SourceId == from.EntityId && e.TargetId == to.EntityId)
@@ -226,7 +237,10 @@ public class EntityHarvestService(
         if (name.StartsWith("The ", StringComparison.OrdinalIgnoreCase) && name.Length > 6)
             yield return name[4..];
         var lastSpace = name.LastIndexOf(' ');                                     // "NSB framework" → "NSB"
-        if (lastSpace > 2) yield return name[..lastSpace];
+        // Only a generic lowercase tail: dropping a capitalised word turned "Red Queen" into "Red"
+        // and wired every edge to an unrelated entity.
+        if (lastSpace > 2 && lastSpace < name.Length - 1 && char.IsLower(name[lastSpace + 1]))
+            yield return name[..lastSpace];
     }
 
     static string Slugify(string name)

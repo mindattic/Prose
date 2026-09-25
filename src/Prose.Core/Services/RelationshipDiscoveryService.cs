@@ -136,10 +136,16 @@ public class RelationshipDiscoveryService
             if (!node.Properties.TryGetValue(prop, out var text) || string.IsNullOrWhiteSpace(text))
                 continue;
 
-            var textLower = text.ToLowerInvariant();
+            // Whole words, longest first, each match consumed: a bare Contains linked "Ash" to
+            // "She crashed the van", and "Kyle Reyes" in the text also linked a separate "Kyle".
+            var remaining = text;
             foreach (var other in allNodeNames)
             {
-                if (!textLower.Contains(other.Name.ToLowerInvariant())) continue;
+                var rx = new System.Text.RegularExpressions.Regex(
+                    @"(?<!\w)" + System.Text.RegularExpressions.Regex.Escape(other.Name) + @"(?!\w)",
+                    System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+                if (!rx.IsMatch(remaining)) continue;
+                remaining = rx.Replace(remaining, m => new string(' ', m.Length));
 
                 // Check if edge already exists
                 var existingEdges = graph.GetRelationshipsBetween(nodeId, other.Id);

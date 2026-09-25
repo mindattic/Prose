@@ -183,14 +183,22 @@ public class AutoCorrectOrchestratorService(
             {
                 if (merged >= MaxEntityMergesPerUniversePerRun) break;
 
-                var suggested = group.Candidates.Count == 2
-                    ? "Auto-mergeable — AutoCorrect merges the lower-mention-count row into the higher-mention-count one."
-                    : "3+ candidates — which pair is the real duplicate is ambiguous; needs a human to pick.";
+                // Only an EXACT normalized-name match is safe to merge unattended. A near match
+                // (edit distance 1) is also how real, distinct people are named — Kyle/Kyla,
+                // Mara/Sara, Dan/Dana — and a merge deletes one entity and moves its prose tags
+                // onto the other. The scan itself says edit distance alone matches distinct
+                // characters; those stay findings for a human.
+                var exact = group.MatchedOn.StartsWith("exact match", StringComparison.Ordinal);
+                var suggested = group.Candidates.Count != 2
+                    ? "3+ candidates — which pair is the real duplicate is ambiguous; needs a human to pick."
+                    : exact
+                        ? "Auto-mergeable — AutoCorrect merges the lower-mention-count row into the higher-mention-count one."
+                        : "Near match — may be two different entities; needs a human to confirm before merging.";
                 var findingId = findingsSvc.Upsert($"universe:{universe.Slug}", chapterId: null, FindingCategory.NearDuplicate, FindingSeverity.Medium,
                     $"DUPLICATE-ENTITY [{entityType}] {group.MatchedOn} — {string.Join(" / ", group.Candidates.Select(c => c.Name))}",
                     snippet: null, suggestedFix: suggested);
 
-                if (group.Candidates.Count != 2) continue; // ambiguous — stays flag-only
+                if (group.Candidates.Count != 2 || !exact) continue; // ambiguous or near — stays flag-only
 
                 var winner = group.Candidates.OrderByDescending(c => c.MentionCount).ThenBy(c => c.Id).First();
                 var loser = group.Candidates.First(c => c.Id != winner.Id);
@@ -299,6 +307,7 @@ public class AutoCorrectOrchestratorService(
             }
 
             var winnerUid = conflict.MajorityClaimUids[0];
+            var resolvedHere = 0;
             foreach (var loserUid in conflict.MinorityClaimUids)
             {
                 try
@@ -320,6 +329,7 @@ public class AutoCorrectOrchestratorService(
                         $"Resolved {conflict.EntityName}/{conflict.Predicate}: '{conflict.MajorityObject}' wins over '{conflict.MinorityObject}' (majority {conflict.MajorityCount} vs {conflict.MinorityCount}).",
                         findingId, ct);
                     resolved++;
+                    resolvedHere++;
                 }
                 catch (Exception ex)
                 {
@@ -327,7 +337,9 @@ public class AutoCorrectOrchestratorService(
                     notes.Add($"Continuity resolve FAILED for {conflict.EntityName}/{conflict.Predicate}: {ex.Message}");
                 }
             }
-            if (resolved > 0) findingsSvc.SetStatus(findingId, FindingStatus.Applied);
+            // This conflict's own count: the run-wide counter marked a conflict Applied when
+            // every one of ITS resolves had failed, as long as an earlier conflict succeeded.
+            if (resolvedHere > 0) findingsSvc.SetStatus(findingId, FindingStatus.Applied);
         }
         return resolved;
     }

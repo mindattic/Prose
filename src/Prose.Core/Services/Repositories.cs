@@ -244,6 +244,7 @@ public class CharacterRepository : EfRepository<CharacterData>
         InvalidateMappedCache();
         // Tell index services (XrefService, GlobalSearchService) the canon moved.
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     /// <summary>Override of <see cref="EfRepository{T}.Reload"/> so callers
@@ -465,6 +466,7 @@ public class CorponationRepository : EfRepository<CorponationData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -641,6 +643,7 @@ public class DistrictRepository : EfRepository<DistrictData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -818,6 +821,7 @@ public class FactionRepository : EfRepository<FactionData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -987,6 +991,7 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -1155,6 +1160,7 @@ public class MotifRepository : EfRepository<MotifData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -1326,6 +1332,7 @@ public class WeaponryRepository : EfRepository<WeaponryData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -1495,6 +1502,7 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -1665,6 +1673,7 @@ public class EquipmentRepository : EfRepository<EquipmentData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -1835,6 +1844,7 @@ public class TechnologyRepository : EfRepository<TechnologyData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -2003,6 +2013,7 @@ public class CyberwareRepository : EfRepository<CyberwareData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -2171,6 +2182,7 @@ public class VocabularyRepository : EfRepository<VocabularyData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -2341,6 +2353,7 @@ public class GenemodRepository : EfRepository<GenemodData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -2510,6 +2523,7 @@ public class TransportationRepository : EfRepository<TransportationData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -2681,6 +2695,7 @@ public class ContractRepository : EfRepository<ContractData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -2851,6 +2866,7 @@ public class AutomatonRepository : EfRepository<AutomatonData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -3019,6 +3035,7 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -3188,6 +3205,7 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -3357,6 +3375,7 @@ public class ApparelRepository : EfRepository<ApparelData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -3525,6 +3544,7 @@ public class NewsRepository : EfRepository<NewsData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -3695,6 +3715,7 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -3864,6 +3885,7 @@ public class MaterialRepository : EfRepository<MaterialData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -4032,6 +4054,7 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -4200,6 +4223,7 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -4363,6 +4387,7 @@ public class QuoteRepository : EfRepository<QuoteData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -4566,6 +4591,7 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -4733,6 +4759,7 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -4900,6 +4927,7 @@ public class PsionicRepository : EfRepository<PsionicData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()
@@ -5109,6 +5137,7 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
         InvalidateCacheExternal();
         InvalidateMappedCache();
         RaiseOnItemSaved(name);
+        RaiseOnEntitySaved(id, name);
     }
 
     public new void Reload()

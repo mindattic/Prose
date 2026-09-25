@@ -266,9 +266,11 @@ public class EntityExtractionService
         {
             return JsonSerializer.Deserialize<ExtractionResult>(json, JsonDefaults.LlmParsing) ?? new ExtractionResult();
         }
-        catch (JsonException)
+        catch (JsonException ex)
         {
-            Serilog.Log.Debug("Entity extraction skipped — LLM returned truncated JSON (expected during regeneration)");
+            // Warning, not Debug: an unparseable reply means this text contributed no entities,
+            // and at Debug that looked the same as a text with none.
+            Serilog.Log.Warning(ex, "Entity extraction returned no usable JSON ({Len} chars) — nothing extracted", json.Length);
             return new ExtractionResult();
         }
     }
