@@ -931,8 +931,12 @@ public class SettingsService : IDisposable
         if (changed) Flush();
     }
 
+    // Bumped by every setter (through ScheduleSave), read by Flush: see the adopt step there.
+    private int changeVersion;
+
     private void ScheduleSave()
     {
+        Interlocked.Increment(ref changeVersion);
         lock (saveLock)
         {
             saveTimer?.Dispose();
@@ -969,6 +973,7 @@ public class SettingsService : IDisposable
             using var guard = new CrossProcessLock(settingsPath);
             guard.Acquire(TimeSpan.FromSeconds(5));
 
+            var versionAtSnapshot = Volatile.Read(ref changeVersion);
             // This process's full current state, as JSON nodes (same options as the file, so nulls are
             // omitted identically and the diff compares like-for-like).
             var current = JsonSerializer.SerializeToNode(data, JsonDefaults.Indented)?.AsObject()
@@ -1002,7 +1007,11 @@ public class SettingsService : IDisposable
 
             // Adopt the merged result: pick up fields other writers contributed, and re-baseline so the
             // next diff is taken against what is actually persisted now.
-            data = disk.Deserialize<SettingsData>() ?? data;
+            // Setters change `data` without this lock. If one ran after the snapshot, swapping in the
+            // merged object would discard its change; keep ours instead — its own ScheduleSave has
+            // already queued the next flush, which diffs it against this baseline and writes it.
+            if (Volatile.Read(ref changeVersion) == versionAtSnapshot)
+                data = disk.Deserialize<SettingsData>() ?? data;
             baseline = disk;
         }
     }
