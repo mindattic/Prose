@@ -303,7 +303,11 @@ public class ChapterRecordingService
             .ToListAsync(ct);
 
         // Sort by the book's canonical chapter order.
-        var byChapterId = recordings.ToDictionary(r => r.ChapterId ?? "", r => r);
+        // GroupBy, not ToDictionary: the one-recording-per-chapter guard is check-then-insert, so
+        // two ready episodes for a chapter threw and blocked the whole book export. Newest wins.
+        var byChapterId = recordings.Where(r => r.ChapterId != null)
+            .GroupBy(r => r.ChapterId!)
+            .ToDictionary(g => g.Key, g => g.OrderByDescending(r => r.AudioCompletedAt ?? r.StartedAt).First());
         var ordered = orderedChapterIds
             .Select(cid => byChapterId.TryGetValue(cid, out var ep) ? ep : null)
             .Where(ep => ep != null)

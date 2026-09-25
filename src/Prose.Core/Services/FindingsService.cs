@@ -245,9 +245,15 @@ public class FindingsService
         string? sourceRuleVersion = null)
     {
         var dedup = $"{filePath}|{category}|{summary}".ToLowerInvariant();
-        // 450 NVARCHAR cap on the column — truncate quietly on the rare
-        // pathological summary so the unique index never rejects.
-        if (dedup.Length > 450) dedup = dedup[..450];
+        // 450 NVARCHAR cap on the column. A bare truncation made two different long findings
+        // share one key, so the second overwrote the first; keep a prefix plus a hash of the
+        // whole key instead. Keys that fit are unchanged, so existing rows still match.
+        if (dedup.Length > 450)
+        {
+            var hash = Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(
+                System.Text.Encoding.UTF8.GetBytes(dedup)))[..16];
+            dedup = dedup[..(450 - 17)] + "#" + hash;
+        }
 
         using var db = dbFactory.CreateDbContext();
         var existing = db.Findings.FirstOrDefault(f => f.DedupKey == dedup);
