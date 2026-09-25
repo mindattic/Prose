@@ -703,6 +703,31 @@ public class EpisodeAudioService
     /// Caller is responsible for writing the PCM bytes that follow. Used by
     /// the streaming concat path so we don't have to materialize the whole
     /// node's PCM in memory before stamping the header.</summary>
+    /// <summary>For a long audiobook: WAV sizes are unsigned 32-bit (4 GB), and the int overload's
+    /// callers cast with checked((int)…), which threw past 2 GB — about 6.8 hours of 44.1 kHz mono —
+    /// after every segment had been paid for.</summary>
+    public static void WriteWavHeader(Stream dst, long dataChunkSize, int sampleRate, short channels, short bitsPerSample)
+    {
+        if (dataChunkSize < 0 || dataChunkSize > uint.MaxValue - 36)
+            throw new InvalidOperationException($"Audio data of {dataChunkSize} bytes is beyond the WAV format's 4 GB limit.");
+        int byteRate = sampleRate * channels * bitsPerSample / 8;
+        short blockAlign = (short)(channels * bitsPerSample / 8);
+        using var w = new BinaryWriter(dst, System.Text.Encoding.ASCII, leaveOpen: true);
+        w.Write(System.Text.Encoding.ASCII.GetBytes("RIFF"));
+        w.Write((uint)(36 + dataChunkSize));
+        w.Write(System.Text.Encoding.ASCII.GetBytes("WAVE"));
+        w.Write(System.Text.Encoding.ASCII.GetBytes("fmt "));
+        w.Write(16);
+        w.Write((short)1);
+        w.Write(channels);
+        w.Write(sampleRate);
+        w.Write(byteRate);
+        w.Write(blockAlign);
+        w.Write(bitsPerSample);
+        w.Write(System.Text.Encoding.ASCII.GetBytes("data"));
+        w.Write((uint)dataChunkSize);
+    }
+
     public static void WriteWavHeader(Stream dst, int dataChunkSize, int sampleRate, short channels, short bitsPerSample)
     {
         int byteRate = sampleRate * channels * bitsPerSample / 8;

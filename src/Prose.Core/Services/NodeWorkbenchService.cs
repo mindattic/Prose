@@ -1009,6 +1009,19 @@ public class NodeWorkbenchService
                     $"{string.Join(", ", referencedBy)}. Pass force to delete anyway.");
         }
 
+        // Every node being deleted, up front: a beat is "shared" only if a node OUTSIDE this set
+        // still links it. Checking against the database alone, a beat linked to two nodes of the
+        // same subtree saw the other's not-yet-saved link each time, was kept by both, and was
+        // left behind with no links at all.
+        var subtree = new HashSet<Guid> { nodeId };
+        var frontier = new List<Guid> { nodeId };
+        while (frontier.Count > 0)
+        {
+            var next = await db.Nodes.IgnoreQueryFilters().Where(n => n.ParentNodeId != null && frontier.Contains(n.ParentNodeId.Value))
+                .Select(n => n.Id).ToListAsync(ct);
+            frontier = next.Where(subtree.Add).ToList();
+        }
+
         async Task DeleteNodeSubtreeAsync(Guid id, int depth)
         {
             var childIds = await db.Nodes.IgnoreQueryFilters().Where(n => n.ParentNodeId == id).Select(n => n.Id).ToListAsync(ct);
@@ -1016,7 +1029,7 @@ public class NodeWorkbenchService
                 await DeleteNodeSubtreeAsync(childId, depth + 1);
 
             var beatIds = await db.BeatNodes.Where(bn => bn.NodeId == id).Select(bn => bn.BeatId).ToListAsync(ct);
-            var sharedIds = await db.BeatNodes.Where(bn => beatIds.Contains(bn.BeatId) && bn.NodeId != id).Select(bn => bn.BeatId).Distinct().ToListAsync(ct);
+            var sharedIds = await db.BeatNodes.Where(bn => beatIds.Contains(bn.BeatId) && !subtree.Contains(bn.NodeId)).Select(bn => bn.BeatId).Distinct().ToListAsync(ct);
             var exclusiveIds = beatIds.Except(sharedIds).ToList();
 
             // PENDING DROP (author ruling 2026-09-22): nothing reads or writes blueprints any more;
@@ -1175,6 +1188,7 @@ public class NodeWorkbenchService
         clone.TtsEngine       = src.TtsEngine;
         clone.ParentNodeId    = newParentId;
         clone.SortKey         = sortKey;
+        clone.UniverseId      = src.UniverseId; // the source's universe, never the ambient stamp's
         // Without the narrative mode and default location the writer's gates evaluate differently
         // from the source, which made any duplicate useless as a like-for-like testbed.
         clone.NarrativeMode          = src.NarrativeMode;
@@ -1362,9 +1376,15 @@ public class NodeWorkbenchService
                     $"NodeCode '{code}' is already in use by '{clash.Title}' ({clash.Slug}).");
         }
 
-        if (parentNodeId is { } pid && !await db.Nodes.AnyAsync(s => s.Id == pid, ct))
-            throw new InvalidOperationException($"Parent node {pid} not found.");
-        if (previousNodeId is { } prev && !await db.Nodes.AnyAsync(s => s.Id == prev, ct))
+        // IgnoreQueryFilters: explicit ids. A parent in another universe than the ambient one read
+        // as "not found"; and the child takes the PARENT's universe, not the ambient stamp's.
+        Guid? parentUniverse = null;
+        if (parentNodeId is { } pid)
+        {
+            parentUniverse = await db.Nodes.IgnoreQueryFilters().Where(s => s.Id == pid).Select(s => (Guid?)s.UniverseId).FirstOrDefaultAsync(ct)
+                ?? throw new InvalidOperationException($"Parent node {pid} not found.");
+        }
+        if (previousNodeId is { } prev && !await db.Nodes.IgnoreQueryFilters().AnyAsync(s => s.Id == prev, ct))
             throw new InvalidOperationException($"Previous node {prev} not found.");
 
         var nodeId = Guid.CreateVersion7();
@@ -1372,7 +1392,7 @@ public class NodeWorkbenchService
 
         await using var sortTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable, ct);
         var siblingMaxSort = parentNodeId is { } p
-            ? await db.Nodes.Where(s => s.ParentNodeId == p).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0
+            ? await db.Nodes.IgnoreQueryFilters().Where(s => s.ParentNodeId == p).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0
             : await db.Nodes.Where(s => s.ParentNodeId == null).Select(s => (double?)s.SortKey).MaxAsync(ct) ?? 0;
 
         var now = DateTime.UtcNow;
@@ -1386,6 +1406,7 @@ public class NodeWorkbenchService
         node.Seed           = seed;
         node.ParentNodeId   = parentNodeId;
         node.PreviousNodeId = previousNodeId;
+        if (parentUniverse is { } pu) node.UniverseId = pu;
         node.SortKey        = siblingMaxSort + 100.0;
         node.CreatedAt      = now;
         node.UpdatedAt      = now;
@@ -1472,6 +1493,9 @@ public class NodeWorkbenchService
             db.Nodes.Add(new ChapterNode
             {
                 Id = childId, Slug = slug, Title = title, Status = "draft",
+                // The parent's universe, as WrapInSingleChapterAsync sets it: left to the ambient
+                // stamp, splitting a SCRY book under --universe glmz made GLMZ chapters.
+                UniverseId = parent.UniverseId,
                 ParentNodeId = nodeId, SortKey = parentSort,
             });
             parentSort += 100.0;
@@ -2651,7 +2675,9 @@ public class NodeWorkbenchService
             // denominator from this snapshot so it stays stable even if
             // beats are added/removed mid-run.
             node.NarratedBeatCount = 0;
-            node.TotalBeatsToNarrate = ordered.Count;
+            // Only the beats this run will voice: beats that already have audio are skipped below,
+            // so counting them left a re-run of 3 stale beats "finished" at 3/200.
+            node.TotalBeatsToNarrate = ordered.Count(o => string.IsNullOrEmpty(o.Beat.AudioPath));
             await db.SaveChangesAsync(ct);
             // Audio bytes are written through IAudioStore — the synth helpers
             // hand the bytes to audioStore.WriteBeatAsync which knows where
@@ -2779,8 +2805,11 @@ public class NodeWorkbenchService
         catch (OperationCanceledException)
         {
             log.LogInformation("Node {S} narration cancelled", nodeId);
+            // Superseded by a newer run (which cancelled this one): that run owns the status now,
+            // and writing "stopped" here overwrote its "narrating".
+            if (cancelTokens.TryGetValue(nodeId, out var owner) && !ReferenceEquals(owner, cancelCts)) return;
             await using var db2 = await dbFactory.CreateDbContextAsync(CancellationToken.None);
-            var st = await db2.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, CancellationToken.None);
+            var st = await db2.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, CancellationToken.None);
             if (st != null) { st.Status = "stopped"; await db2.SaveChangesAsync(CancellationToken.None); }
         }
         catch (Exception ex)
@@ -2796,7 +2825,7 @@ public class NodeWorkbenchService
             try
             {
                 await using var db2 = await dbFactory.CreateDbContextAsync(CancellationToken.None);
-                var st = await db2.Nodes.FirstOrDefaultAsync(s => s.Id == nodeId, CancellationToken.None);
+                var st = await db2.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(s => s.Id == nodeId, CancellationToken.None);
                 if (st != null)
                 {
                     st.Status = "failed";
@@ -2809,7 +2838,9 @@ public class NodeWorkbenchService
         }
         finally
         {
-            cancelTokens.TryRemove(nodeId, out _);
+            // Only this run's own handle: a newer run for the node registered its own, and removing
+            // that left the newer run impossible to cancel.
+            cancelTokens.TryRemove(new KeyValuePair<Guid, CancellationTokenSource>(nodeId, cancelCts));
         }
     }
 
@@ -3080,6 +3111,14 @@ public class NodeWorkbenchService
         int limit = local != null ? local.CharBudget : isV3 ? 4800 : 9000;
         var segments = BuildAudiobookSegments(ordered, limit);
 
+        // ffmpeg first: checked after the publication row was saved as "running", its absence left
+        // that row (and the progress entry) "running" forever.
+        var ffmpeg = ResolveFfmpegPath();
+        if (string.IsNullOrEmpty(ffmpeg))
+            throw new InvalidOperationException(
+                "Audiobook publishing needs ffmpeg on PATH: segments are assembled as PCM and the combined " +
+                "track is encoded to MP3 with ffmpeg, and any non-PCM fetch format is decoded back to PCM with it.");
+
         var pub = new NodePublication
         {
             Id = Guid.CreateVersion7(), NodeId = nodeId, StartedAt = DateTime.UtcNow,
@@ -3091,11 +3130,6 @@ public class NodeWorkbenchService
         await db.SaveChangesAsync(ct);
 
         exportProgress[nodeId] = new ExportProgress(0, segments.Count, "narrating");
-        var ffmpeg = ResolveFfmpegPath();
-        if (string.IsNullOrEmpty(ffmpeg))
-            throw new InvalidOperationException(
-                "Audiobook publishing needs ffmpeg on PATH: segments are assembled as PCM and the combined " +
-                "track is encoded to MP3 with ffmpeg, and any non-PCM fetch format is decoded back to PCM with it.");
         var tmpWav = Path.Combine(Path.GetTempPath(), $"ss-audiobook-{Guid.CreateVersion7():N}.wav");
         long pcmTotal = 0, chars = 0;
         var prevReqIds = new List<string>();
@@ -3208,7 +3242,7 @@ public class NodeWorkbenchService
                     }
                 }
                 fs.Position = 0;
-                EpisodeAudioService.WriteWavHeader(fs, checked((int)pcmTotal), 44100, 1, 16);
+                EpisodeAudioService.WriteWavHeader(fs, pcmTotal, 44100, 1, 16);
             }
 
             // Encode the assembled lossless WAV to the user's configured delivery
@@ -3446,7 +3480,7 @@ public class NodeWorkbenchService
                             }
                         }
                         fs.Position = 0;
-                        EpisodeAudioService.WriteWavHeader(fs, checked((int)pcmTotal), 44100, 1, 16);
+                        EpisodeAudioService.WriteWavHeader(fs, pcmTotal, 44100, 1, 16);
                     }
                     db.NodeAudioEvents.Add(NewAudioEvent(nodeId, null, pub.Id, "wav-exported",
                         $"intermediate combined WAV, {new FileInfo(tmp).Length} bytes"));
@@ -3577,7 +3611,9 @@ public class NodeWorkbenchService
             try
             {
                 db.NodeAudioEvents.Add(NewAudioEvent(nodeId, null, pub.Id, "publish-failed", ex.Message));
-                await db.SaveChangesAsync(ct);
+                // CancellationToken.None: after a cancel, saving with the cancelled token failed too,
+                // and the publication stayed "running".
+                await db.SaveChangesAsync(CancellationToken.None);
             }
             catch { /* best-effort audit write */ }
             throw;
