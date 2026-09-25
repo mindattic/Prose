@@ -20,7 +20,7 @@ public static class MorningReportCli
     {
         double hours = 24;
         var hoursArg = args.SkipWhile(a => a != "--since").Skip(1).FirstOrDefault();
-        if (hoursArg != null && double.TryParse(hoursArg, out var h)) hours = h;
+        if (hoursArg != null && double.TryParse(hoursArg, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var h)) hours = h;
 
         var since = DateTime.UtcNow.AddHours(-hours);
         var db    = sp.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContext();

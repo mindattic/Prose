@@ -53,15 +53,21 @@ public class MeaningBackfillService
         // onlyNumbers: restrict to these beat numbers (targeted refresh).
         // Recurses past any nested Collection (2026-08-09 fix).
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
-        var missing = await (
+        // Leaf-walk order, then SortKey: sibling SortKeys interleaved chapters under different
+        // parents, so --limit N took an arbitrary N rather than the first N in reading order.
+        var leafOrder = new Dictionary<Guid, int>();
+        foreach (var leaf in searchIds) leafOrder.TryAdd(leaf, leafOrder.Count);
+        var missing = (await (
             from bn in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on bn.BeatId equals b.Id
-            join c in db.Nodes.AsNoTracking() on bn.NodeId equals c.Id
+            join c in db.Nodes.AsNoTracking().IgnoreQueryFilters() on bn.NodeId equals c.Id
             where true && searchIds.Contains(bn.NodeId)
                   && (overwrite || b.Description == null || b.Description == "")
                   && b.Text != null && b.Text != ""
-            orderby c.SortKey, bn.SortKey
-            select new { b.Id, b.Number, b.Text, Chapter = c.Title }).ToListAsync(ct);
+            select new { b.Id, b.Number, b.Text, Chapter = c.Title, bn.NodeId, bn.SortKey }).ToListAsync(ct))
+            .OrderBy(x => leafOrder.GetValueOrDefault(x.NodeId, int.MaxValue)).ThenBy(x => x.SortKey)
+            .DistinctBy(x => x.Id)
+            .ToList();
 
         if (onlyNumbers is { Count: > 0 })
             missing = missing.Where(m => onlyNumbers.Contains(m.Number)).ToList();

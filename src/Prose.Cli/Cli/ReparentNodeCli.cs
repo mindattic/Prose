@@ -33,7 +33,7 @@ public static class ReparentNodeCli
                 case "--parent-id":   if (i + 1 < args.Length) parentId = args[++i]; break;
                 case "--parent-slug": if (i + 1 < args.Length) parentSlug = args[++i]; break;
                 case "--clear":       clear = true; break;
-                case "--sort-key":    if (i + 1 < args.Length && double.TryParse(args[++i], out var sk)) sortKey = sk; break;
+                case "--sort-key":    if (i + 1 < args.Length && double.TryParse(args[++i], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var sk)) sortKey = sk; break;
                 case "--after-slug":  if (i + 1 < args.Length) afterSlug = args[++i]; break;
             }
         }

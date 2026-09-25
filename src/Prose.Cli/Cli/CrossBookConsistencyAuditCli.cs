@@ -23,7 +23,7 @@ public static class CrossBookConsistencyAuditCli
 
         DateTime? since = null;
         var sinceArg = args.SkipWhile(a => a != "--since").Skip(1).FirstOrDefault();
-        if (sinceArg != null && double.TryParse(sinceArg, out var hours))
+        if (sinceArg != null && double.TryParse(sinceArg, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var hours))
             since = DateTime.UtcNow.AddHours(-hours);
 
         Console.WriteLine(since.HasValue

@@ -206,7 +206,7 @@ public static class LogsCli
 
         var trimmed = s.Trim();
         var unit = char.ToLowerInvariant(trimmed[^1]);
-        if (unit is 'm' or 'h' or 'd' && double.TryParse(trimmed[..^1], out var qty))
+        if (unit is 'm' or 'h' or 'd' && double.TryParse(trimmed[..^1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var qty))
             return unit switch
             {
                 'm' => DateTime.Now.AddMinutes(-qty),

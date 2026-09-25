@@ -552,7 +552,7 @@ public class ManuscriptExportService
         // the one that survived the reconciliation, so epub/pdf/txt output is unchanged by the move;
         // what changed is that the other three agree with it instead of each deciding for itself.
         var spine = await spineService.GetAsync(nodeId, ct);
-        var beatsById = ordered.ToDictionary(o => o.Beat.Id, o => o.Beat);
+        var beatsById = ordered.DistinctBy(o => o.Beat.Id).ToDictionary(o => o.Beat.Id, o => o.Beat); // a beat linked to two nodes walks twice
 
         var chapters = new List<Chapter>();
         foreach (var unit in spine.Chapters)

@@ -35,7 +35,7 @@ public static class CheckDuplicateBeatsCli
         for (int i = 0; i < args.Length - 1; i++)
         {
             if (args[i] == "--slug") { slug = args[i + 1]; i++; }
-            else if (args[i] == "--threshold" && double.TryParse(args[i + 1], out var t)) { threshold = t; i++; }
+            else if (args[i] == "--threshold" && double.TryParse(args[i + 1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var t)) { threshold = t; i++; }
         }
 
         if (slug == null)
