@@ -685,14 +685,9 @@ public class NodeReviewService
             await Task.WhenAll(ptasks);
         }
 
-        await using (var db = await dbFactory.CreateDbContextAsync(ct))
-        {
-            db.NodeReviews.AddRange(saved);
-            await db.SaveChangesAsync(ct);
-        }
-        await RecomputeScoresAsync(nodeId, ct);
-
-        // Per-beat clustered report on the merged matrix (global beat numbering).
+        // Per-beat clustered report on the merged matrix (global beat numbering). Clustered BEFORE
+        // saving and stamped onto the ballots, as the sampled path does: this path reported
+        // K clusters while every saved ballot carried none (empty clusters list, nothing contested).
         string clusterReport = "_(per-beat report unavailable — too few ballots carried beat scores.)_";
         int clusters = 0;
         var withBeats = saved.Where(r => r.BeatScores.Count > 0).ToList();
@@ -709,10 +704,23 @@ public class NodeReviewService
                     rows.Add(new SegmentAggregator.Reviewer(clustering.Assignments[i], withBeats[i].Score, withBeats[i].FlowScore, bs));
                 }
                 var agg = SegmentAggregator.Build(rows, totalBeatCount, clustering.K);
+                var labelById = agg.Clusters.ToDictionary(c => c.Id, c => c.Label);
+                for (int i = 0; i < withBeats.Count; i++)
+                {
+                    withBeats[i].ClusterId = clustering.Assignments[i];
+                    withBeats[i].ClusterLabel = labelById.TryGetValue(clustering.Assignments[i], out var lbl) ? Trunc(lbl, 60) : null;
+                }
                 clusterReport = agg.Markdown; clusters = clustering.K;
             }
             catch (Exception ex) { log.LogWarning(ex, "Segmented clustering failed"); }
         }
+
+        await using (var db = await dbFactory.CreateDbContextAsync(ct))
+        {
+            db.NodeReviews.AddRange(saved);
+            await db.SaveChangesAsync(ct);
+        }
+        await RecomputeScoresAsync(nodeId, ct);
 
         var scores = saved.Select(r => (double)r.Score).ToList();
         var mean = scores.Average();
@@ -2032,21 +2040,22 @@ Be specific; do not invent praise the reviews don't support.";
             .OrderBy(h => h.RecordedAt)
             .ToListAsync(ct);
 
-        return rows
-            .GroupBy(h => h.RecordedAt.Date)
-            .Select(g =>
-            {
-                var perChild = g.GroupBy(h => h.NodeId)
-                                .Select(sg => sg.OrderByDescending(h => h.RecordedAt).First())
-                                .ToList();
-                return new ScoreHistoryPoint(
-                    RecordedAt:  g.Key,
-                    Score:       perChild.Average(h => h.MeanScore),
-                    Sd:          null,
-                    ReviewCount: (int)perChild.Average(h => h.ReviewCount));
-            })
-            .OrderBy(p => p.RecordedAt)
-            .ToList();
+        // Each day's point is every child's LATEST score on or before that day, carried forward —
+        // not just the children that happened to be reviewed that day. Chapter 1 at 90 on day 1
+        // and chapter 2 at 40 on day 2 used to plot 90 then 40, where the book stood at 65.
+        var points = new List<ScoreHistoryPoint>();
+        var latestByChild = new Dictionary<Guid, NodeScoreHistory>();
+        foreach (var day in rows.GroupBy(h => h.RecordedAt.Date).OrderBy(g => g.Key))
+        {
+            foreach (var h in day.OrderBy(h => h.RecordedAt)) latestByChild[h.NodeId] = h;
+            var current = latestByChild.Values.ToList();
+            points.Add(new ScoreHistoryPoint(
+                RecordedAt:  day.Key,
+                Score:       current.Average(h => h.MeanScore),
+                Sd:          null,
+                ReviewCount: (int)current.Average(h => h.ReviewCount)));
+        }
+        return points;
     }
 
     // ── helpers ──────────────────────────────────────────────────────────
