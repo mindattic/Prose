@@ -33,13 +33,31 @@ public static class FixBadNameMatchesCli
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
 
-        var bad = await db.Database.SqlQuery<BadRow>($"""
+        // CHARINDEX, not LIKE: doubling quotes inside a COLUMN value (not a literal) searched for
+        // "O''Brien", and a "[" in a name became a character class - valid rows were deleted.
+        var candidates = await db.Database.SqlQuery<BadRow>($"""
             SELECT be.BeatId AS BeatId, be.EntityId AS EntityId, be.Name AS Name
             FROM BeatEntities be
             JOIN Beats b ON b.Id = be.BeatId
             WHERE be.MatchSource = 'name'
-              AND b.Text NOT LIKE '%' + REPLACE(be.Name, '''', '''''') + '%'
+              AND CHARINDEX(be.Name, b.Text) = 0
             """).ToListAsync();
+
+        // A name match can come from an ALIAS ("Wes" for "Wes Idris"): the roster stores the full
+        // name, so "full name absent" alone deleted every alias-based link. Keep a row when any of
+        // the entity's aliases appears in the beat.
+        var ids = candidates.Select(c => c.EntityId).Distinct().ToList();
+        var aliases = (await db.CharacterAliases.AsNoTracking().Where(a => ids.Contains(a.CharacterId)).Select(a => new { Id = a.CharacterId, a.Value }).ToListAsync())
+            .Concat(await db.PlaceAliases.AsNoTracking().Where(a => ids.Contains(a.PlaceId)).Select(a => new { Id = a.PlaceId, a.Value }).ToListAsync())
+            .Concat(await db.FactionAliases.AsNoTracking().Where(a => ids.Contains(a.FactionId)).Select(a => new { Id = a.FactionId, a.Value }).ToListAsync())
+            .Concat(await db.WeaponAliases.AsNoTracking().Where(a => ids.Contains(a.WeaponId)).Select(a => new { Id = a.WeaponId, a.Value }).ToListAsync())
+            .Where(a => !string.IsNullOrWhiteSpace(a.Value))
+            .ToLookup(a => a.Id, a => a.Value);
+        var beatIds = candidates.Select(c => c.BeatId).Distinct().ToList();
+        var texts = await db.Beats.AsNoTracking().Where(b => beatIds.Contains(b.Id)).ToDictionaryAsync(b => b.Id, b => b.Text ?? "");
+        var bad = candidates
+            .Where(c => !aliases[c.EntityId].Any(v => texts.TryGetValue(c.BeatId, out var t) && t.Contains(v, StringComparison.OrdinalIgnoreCase)))
+            .ToList();
 
         Console.WriteLine($"[fix-bad-name-matches] {bad.Count} stale/wrong name-match row(s) found (entity Name absent from the beat's current text).");
         if (bad.Count == 0 || dryRun)

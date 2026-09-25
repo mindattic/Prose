@@ -112,7 +112,8 @@ public static class ReembedCli
                 var db = scope.ServiceProvider
                     .GetRequiredService<Microsoft.EntityFrameworkCore.IDbContextFactory<Prose.Core.Data.ProseDbContext>>();
                 await using var ctx = await db.CreateDbContextAsync();
-                var n = await ctx.Database.ExecuteSqlRawAsync("DELETE FROM dbo.ProseEmbeddings;");
+                // Only what this pass rebuilds: an unscoped DELETE also wiped the markdown (Doc Context) rows.
+                var n = await ctx.Database.ExecuteSqlRawAsync("DELETE FROM dbo.ProseEmbeddings WHERE ScopeKind IN ('chapter','beat');");
                 Console.WriteLine($"[reembed] cleared {n} existing prose rows");
             }
             int last = -1;
@@ -149,7 +150,11 @@ public static class ReembedCli
             var db = scope.ServiceProvider
                 .GetRequiredService<Microsoft.EntityFrameworkCore.IDbContextFactory<Prose.Core.Data.ProseDbContext>>();
             await using var ctx = await db.CreateDbContextAsync();
-            var n = await ctx.Database.ExecuteSqlRawAsync("DELETE FROM dbo.EntityEmbeddings;");
+            // Only the current universe: the rebuild reads the scoped entity set, so deleting every
+            // universe's embeddings left all the others with none.
+            var n = await ctx.Database.ExecuteSqlRawAsync(
+                "DELETE ee FROM dbo.EntityEmbeddings ee JOIN dbo.Entities e ON e.Id = ee.EntityId WHERE e.UniverseId = {0};",
+                Prose.Core.Services.UniverseScope.EffectiveId);
             Console.WriteLine($"[reembed] cleared {n} existing rows");
         }
 
