@@ -22,6 +22,17 @@ public class DecisionLedgerEntry
     [MaxLength(256)]
     public string Summary { get; set; } = "";
 
+    public const int SummaryMax = 256;
+
+    /// <summary>
+    /// Fits a summary to the column: a longer one threw "String or binary data would be truncated"
+    /// and the decision was lost. The head stays the summary; the full text leads the rationale.
+    /// </summary>
+    public static (string Summary, string? Rationale) FitSummary(string summary, string? rationale) =>
+        summary.Length <= SummaryMax
+            ? (summary, rationale)
+            : (summary[..(SummaryMax - 1)] + "…", summary + (string.IsNullOrWhiteSpace(rationale) ? "" : "\n\n" + rationale));
+
     public string? Rationale { get; set; }
 
     [MaxLength(64)]

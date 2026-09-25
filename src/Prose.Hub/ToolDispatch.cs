@@ -51,7 +51,7 @@ public static class ToolDispatch
     public static async Task<IResult> InvokeAsync(InvokeRequest req, IServiceProvider sp)
     {
         var label = req.ToolClass + "." + req.Method;
-        HubConsoleEcho.LogIn("mcp", label, req.Args?.GetRawText() ?? "{}");
+        HubConsoleEcho.LogIn("mcp", label, SecretRedactor.RedactJson(req.Args)); // never echo raw keys
 
         var sw = Stopwatch.StartNew();
         var (result, success, output, error) = await InvokeCoreAsync(req, sp);
@@ -78,7 +78,7 @@ public static class ToolDispatch
                 Source = "mcp",
                 HandlerClass = req.ToolClass,
                 Method = req.Method,
-                ArgsJson = req.Args?.GetRawText() ?? "{}",
+                ArgsJson = SecretRedactor.RedactJson(req.Args), // the ledger is readable by any session
                 Success = success,
                 DurationMs = durationMs,
                 OutputSummary = output is { Length: > 500 } o ? o[..500] : output,

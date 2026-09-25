@@ -37,7 +37,10 @@ public sealed class ReviewLlmTransport
 
     // Liveness verdicts cached per process: providerId → alive. A dead account does
     // not resurrect mid-session; a live one doesn't need re-pinging per verdict.
-    private static readonly ConcurrentDictionary<string, bool> livenessCache = new(StringComparer.OrdinalIgnoreCase);
+    private static readonly ConcurrentDictionary<string, (bool Alive, DateTime CheckedAt)> livenessCache = new(StringComparer.OrdinalIgnoreCase);
+    // A dead verdict is re-checked after this long: one 429/timeout used to exclude a provider
+    // for the life of the Hub (it never restarts on its own).
+    private static readonly TimeSpan DeadRecheckAfter = TimeSpan.FromMinutes(15);
 
     public ReviewLlmTransport(
         CloudReviewLlm cloudLlm,
@@ -169,9 +172,10 @@ public sealed class ReviewLlmTransport
         var candidates = JuryProviderIds();
         var results = await Task.WhenAll(candidates.Select(async id =>
         {
-            if (livenessCache.TryGetValue(id, out var known)) return (id, alive: known);
+            if (livenessCache.TryGetValue(id, out var known)
+                && (known.Alive || DateTime.UtcNow - known.CheckedAt < DeadRecheckAfter)) return (id, alive: known.Alive);
             var alive = await PingAsync(id, ct);
-            livenessCache[id] = alive;
+            livenessCache[id] = (alive, DateTime.UtcNow);
             if (!alive) log.LogWarning("Jury provider {Provider} failed its liveness ping — excluded from juries this session.", id);
             return (id, alive);
         }));

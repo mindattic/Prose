@@ -54,6 +54,7 @@ public class LedgerTools
             var ids = relatedCommandIds.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries);
             relatedJson = JsonSerializer.Serialize(ids);
         }
+        (summary, rationale) = DecisionLedgerEntry.FitSummary(summary, rationale);
         var entry = new DecisionLedgerEntry
         {
             SessionId = sessionId,

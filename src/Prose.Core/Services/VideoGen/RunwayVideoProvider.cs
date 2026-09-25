@@ -101,7 +101,9 @@ public class RunwayVideoProvider : IVideoGenerationProvider
             throw new InvalidOperationException("Runway task has no output yet — poll until Done before downloading.");
 
         var url = output[0].GetString() ?? throw new InvalidOperationException("Runway output entry was empty.");
-        var bytes = await http.GetByteArrayAsync(url, ct);
+        // The output URL is a pre-signed CDN link: fetch it WITHOUT the vendor credential (the
+        // shared client sent it to the CDN host, and S3/CloudFront reject signature + Authorization).
+        var bytes = await httpFactory.CreateClient().GetByteArrayAsync(url, ct);
         return new VideoGenerationResult(bytes, "mp4");
     }
 

@@ -98,7 +98,7 @@ public static class CliDispatch
     public static async Task<ExecuteOutcome> ExecuteCoreAsync(InvokeRequest req, IServiceProvider sp, string source = "cli")
     {
         var label = req.HandlerClass + (string.IsNullOrWhiteSpace(req.Method) ? "" : $".{req.Method}");
-        var argLine = string.Join(' ', req.Args);
+        var argLine = string.Join(' ', SecretRedactor.RedactArgs(req.Args)); // --password/--key values never logged
         HubConsoleEcho.LogIn(source, label, argLine);
 
         // The Command Ledger row below is written only on COMPLETION, and HubConsoleEcho goes to
@@ -145,7 +145,7 @@ public static class CliDispatch
                 Source = source,
                 HandlerClass = req.HandlerClass,
                 Method = req.Method,
-                ArgsJson = JsonSerializer.Serialize(req.Args),
+                ArgsJson = JsonSerializer.Serialize(SecretRedactor.RedactArgs(req.Args)),
                 Universe = req.Universe,
                 ExitCode = outcome.Response?.ExitCode,
                 Success = outcome.ErrorCode == null && outcome.Response?.ExitCode == 0,

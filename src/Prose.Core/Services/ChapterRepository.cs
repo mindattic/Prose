@@ -98,7 +98,7 @@ public class ChapterRepository : IChapterRepository
 
         using var db = dbFactory.CreateDbContext();
 
-        var entity = db.Entities.FirstOrDefault(e => e.Id == id);
+        var entity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id); // explicit id: any universe (the filter made a non-ambient book look absent)
         if (entity == null)
         {
             entity = new EntityRow
@@ -123,7 +123,7 @@ public class ChapterRepository : IChapterRepository
             entity.Status      = string.IsNullOrEmpty(chapter.Status) ? entity.Status : chapter.Status;
         }
 
-        var sub = db.Chapters.Include(c => c.Beats).FirstOrDefault(c => c.Id == id);
+        var sub = db.Chapters.IgnoreQueryFilters().Include(c => c.Beats).FirstOrDefault(c => c.Id == id);
         if (sub == null)
         {
             sub = new ChapterEntity { Id = id };
@@ -149,11 +149,15 @@ public class ChapterRepository : IChapterRepository
             });
         }
 
-        if (chapter.Beats.Count > 0) sub.Beats.Clear();
+        // Always clear: the old "Count > 0" guard left every ChapterBeats row behind when the
+        // last beat was removed. Keep each surviving beat's SortKey (new rows reset it to 0).
+        var oldSortKeys = sub.Beats.GroupBy(b => b.BeatGuid).ToDictionary(g => g.Key, g => g.First().SortKey);
+        sub.Beats.Clear();
         foreach (var beat in chapter.Beats.OrderBy(b => b.Index))
             sub.Beats.Add(new ChapterBeatEntity
             {
                 BeatGuid       = ParseGuid(beat.Id),
+                SortKey        = oldSortKeys.TryGetValue(ParseGuid(beat.Id), out var sk) ? sk : beat.Index,
                 ChapterId      = id,
                 Index          = beat.Index,
                 Title          = beat.Title ?? "",
@@ -190,10 +194,10 @@ public class ChapterRepository : IChapterRepository
         using var db = dbFactory.CreateDbContext();
         using var tx = db.Database.BeginTransaction();
 
-        var entity = db.Entities.FirstOrDefault(e => e.Id == guid && e.EntityType == "chapter");
+        var entity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == guid && e.EntityType == "chapter");
         if (entity == null) return;
 
-        var chapter = db.Chapters.FirstOrDefault(c => c.Id == guid);
+        var chapter = db.Chapters.IgnoreQueryFilters().FirstOrDefault(c => c.Id == guid);
         if (chapter != null) db.Chapters.Remove(chapter);
         db.Entities.Remove(entity);
 

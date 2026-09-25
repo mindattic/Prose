@@ -24,7 +24,7 @@ public static class ReviewCostEstimator
     private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, ModelPricing> KnownPricing =
         new(StringComparer.OrdinalIgnoreCase)
         {
-            ["claude-haiku-4-5-20251001"] = new("Haiku 4.5",   0.80,  1.00, 0.08,  4.00),
+            ["claude-haiku-4-5-20251001"] = new("Haiku 4.5",   1.00,  1.25, 0.10,  5.00), // list price $1 in / $5 out
             ["claude-sonnet-4-6"]         = new("Sonnet 4.6",  3.00,  3.75, 0.30, 15.00),
             ["claude-sonnet-5"]           = new("Sonnet 5",    3.00,  3.75, 0.30, 15.00),
             ["claude-opus-4-8"]           = new("Opus 4.8",   15.00, 18.75, 1.50, 75.00),

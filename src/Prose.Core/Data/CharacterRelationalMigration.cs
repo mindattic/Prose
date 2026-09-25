@@ -192,8 +192,10 @@ public class CharacterRelationalMigration
     {
         var rep = new Report();
 
+        // IgnoreQueryFilters: through the Entity navigation the universe filter dropped every
+        // other universe's records — never backfilled, never counted, and Phase D then ran.
         var rows = await db.Records
-            .AsNoTracking()
+            .AsNoTracking().IgnoreQueryFilters()
             .Where(r => r.Entity!.EntityType == "character")
             .Select(r => new { r.EntityId, r.Json })
             .ToListAsync(ct);
@@ -202,6 +204,10 @@ public class CharacterRelationalMigration
         var done = 0;
         foreach (var row in rows)
         {
+            // Records.Json is frozen; the typed tables are the source of truth. A character that
+            // already has its Characters row is not re-derived from the stale blob (that wiped
+            // every bridge table and rewrote scalars, losing all edits since the migration).
+            if (await db.Characters.AsNoTracking().AnyAsync(c => c.Id == row.EntityId, ct)) { done++; continue; }
             try
             {
                 var data = JsonSerializer.Deserialize<CharacterData>(row.Json, opts);
@@ -211,12 +217,14 @@ public class CharacterRelationalMigration
                     rep.Errors.Add($"{row.EntityId:N}: deserialize returned null");
                     continue;
                 }
+                await using var tx = db.Database.CurrentTransaction == null ? await db.Database.BeginTransactionAsync(ct) : null;
                 await CharacterMapper.PersistAsync(db, row.EntityId, data, ct);
 
                 // Make sure the parent Characters row exists and its scalars are
                 // populated. PersistAsync handles bridge tables; this writes
-                // FullName / FirstName / LastName / etc.
-                var ch = await db.Characters.FirstOrDefaultAsync(c => c.Id == row.EntityId, ct);
+                // FullName / FirstName / LastName / etc. FindAsync sees the row PersistAsync
+                // just Added (a DB query did not, and the second Add threw on the key).
+                var ch = await db.Characters.FindAsync([row.EntityId], ct);
                 if (ch == null)
                 {
                     ch = new Character { Id = row.EntityId };
@@ -225,6 +233,7 @@ public class CharacterRelationalMigration
                 CharacterMapper.FillScalars(ch, data);
 
                 await db.SaveChangesAsync(ct);
+                if (tx != null) await tx.CommitAsync(ct);
                 rep.CharactersBackfilled++;
             }
             catch (Exception ex)

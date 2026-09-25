@@ -55,9 +55,14 @@ public class CharacterGearService
             if (byId != null) return (byId.Id, byId.Name);
         }
 
+        // Characters has no universe filter: scope through the (filtered) entity spine, and refuse
+        // a name two characters share instead of listing/removing an arbitrary one's gear.
         var byName = await db.Characters.AsNoTracking()
-            .Where(c => c.Name == who).Select(c => new { c.Id, c.Name }).FirstOrDefaultAsync(ct);
-        return byName == null ? null : (byName.Id, byName.Name);
+            .Where(c => c.Name == who && db.Entities.Any(e => e.Id == c.Id))
+            .Select(c => new { c.Id, c.Name }).Take(2).ToListAsync(ct);
+        if (byName.Count > 1)
+            throw new InvalidOperationException($"ambiguous_name: more than one character is named '{who}' — pass the id.");
+        return byName.Count == 0 ? null : (byName[0].Id, byName[0].Name);
     }
 
     /// <summary>One character's gear entries, optionally filtered to a single bucket.</summary>

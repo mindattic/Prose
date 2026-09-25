@@ -33,6 +33,11 @@ public sealed class ObservabilityBridge(
     IDbContextFactory<ProseDbContext> dbFactory,
     ILogger<ObservabilityBridge> logger)
 {
+    // Each run's start insert, so the beat and end writes (independent fire-and-forget tasks on
+    // their own DbContexts) wait for it: the end write usually ran first, found no row, and
+    // returned — most DcmRun rows never got EndedAt/FinalScore.
+    private readonly System.Collections.Concurrent.ConcurrentDictionary<Guid, Task> runStarts = new();
+
     public void Wire()
     {
         loggerProvider.OnLine = dto => Fire(hubContext.Clients.All.SendAsync("LogLine", dto));
@@ -40,7 +45,9 @@ public sealed class ObservabilityBridge(
         telemetry.RunStarted += run =>
         {
             Fire(hubContext.Clients.All.SendAsync("DcmRunStarted", ToDto(run)));
-            Fire(PersistRunStartAsync(run));
+            var start = PersistRunStartAsync(run);
+            runStarts[run.RunId] = start;
+            Fire(start);
         };
         telemetry.BeatRecorded += (run, beat) =>
         {
@@ -121,6 +128,7 @@ public sealed class ObservabilityBridge(
     {
         try
         {
+            if (runStarts.TryGetValue(runId, out var start)) await start;
             await using var db = await dbFactory.CreateDbContextAsync();
             db.DcmBeatSnapshots.Add(new DcmBeatSnapshot
             {
@@ -147,6 +155,7 @@ public sealed class ObservabilityBridge(
     {
         try
         {
+            if (runStarts.TryRemove(run.RunId, out var start)) await start;
             await using var db = await dbFactory.CreateDbContextAsync();
             var existing = await db.DcmRuns.FirstOrDefaultAsync(r => r.Id == run.RunId);
             if (existing == null) return; // best-effort: RunStarted's own write may itself have failed

@@ -48,9 +48,13 @@ public class FindingsTools
         int limit = 100)
     {
         FindingStatus? filter = null;
-        if (!string.IsNullOrWhiteSpace(status)
-            && Enum.TryParse<FindingStatus>(status, ignoreCase: true, out var parsed))
+        if (!string.IsNullOrWhiteSpace(status))
+        {
+            // A typo ("Dismised") used to drop the filter and list every finding.
+            if (!Enum.TryParse<FindingStatus>(status, ignoreCase: true, out var parsed))
+                return JsonSerializer.Serialize(new { error = $"unknown status: {status}" });
             filter = parsed;
+        }
 
         var items = store.List(filter, limit);
         return JsonSerializer.Serialize(new
@@ -131,7 +135,8 @@ public class FindingsTools
     {
         if (!Enum.TryParse<FindingStatus>(status, ignoreCase: true, out var s))
             return JsonSerializer.Serialize(new { error = $"unknown status: {status}" });
-        store.SetStatus(id, s);
+        if (!store.SetStatus(id, s)) // an unknown id used to answer ok:true
+            return JsonSerializer.Serialize(new { error = "finding_not_found", id });
         return JsonSerializer.Serialize(new { ok = true, id, status = s.ToString() });
     }
 

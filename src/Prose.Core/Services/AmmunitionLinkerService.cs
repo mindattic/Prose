@@ -189,10 +189,14 @@ public class AmmunitionLinkerService
             .FirstOrDefaultAsync(ct);
         if (!string.IsNullOrWhiteSpace(kylePrimary))
         {
-            var silenceId = await db.Entities.AsNoTracking()
+            // Several weapons share the name: an unordered FirstOrDefault could link the jammer.
+            // Use a unique name match, else the katana's known id.
+            var matches = await db.Entities.AsNoTracking()
                 .Where(e => e.EntityType == "weapon" && e.Name == kylePrimary)
-                .Select(e => (Guid?)e.Id)
-                .FirstOrDefaultAsync(ct);
+                .Select(e => e.Id)
+                .Take(2).ToListAsync(ct);
+            Guid? silenceId = matches.Count == 1 ? matches[0]
+                : await db.Entities.AsNoTracking().IgnoreQueryFilters().AnyAsync(e => e.Id == SilenceWeaponId, ct) ? SilenceWeaponId : null;
             if (silenceId.HasValue)
                 await LinkCharacterToWeaponAsync(db, KyleCharacterId, silenceId.Value, "Silence", ct);
         }
@@ -311,10 +315,12 @@ public class AmmunitionLinkerService
 
         string raw;
         try { raw = await llm.GenerateAsync(system, sb.ToString(), temperature: 0.1, maxTokens: 200, ct: ct); }
-        catch (Exception ex)
+        catch (Exception ex) when (ex is not OperationCanceledException)
         {
-            log.LogDebug(ex, "LLM ammo-extraction call failed for {Name}", w.Name);
-            return new();
+            // Rethrow: an empty list read as "chambers nothing" — a full outage reported a clean
+            // run. The caller's per-weapon catch records it in result.Errors.
+            log.LogWarning(ex, "LLM ammo-extraction call failed for {Name}", w.Name);
+            throw;
         }
         return ParseStringArray(raw);
     }

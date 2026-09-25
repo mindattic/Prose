@@ -61,7 +61,16 @@ public class ChapterCloseProcessorService(
         }
         else
         {
-            var chapterScore = await QuickScoreAsync(chapterProse, ct);
+            var (quick, scoreError) = await QuickScoreAsync(chapterProse, ct);
+            if (quick is not int chapterScore)
+            {
+                // A failed/unparseable call used to be scored 75 — logged as measured, and below
+                // MinChapterScore it started a paid Draft panel on a number nobody produced.
+                result.ReviewTier = 0;
+                result.Warnings.Add($"Quick score failed: {scoreError}");
+            }
+            else
+            {
             result.ChapterScore = chapterScore;
 
             if (chapterScore < HardFloor)
@@ -80,6 +89,7 @@ public class ChapterCloseProcessorService(
             {
                 // Tier 1: single call passed, no panel needed
                 result.ReviewTier = 1;
+            }
             }
         }
 
@@ -107,9 +117,9 @@ public class ChapterCloseProcessorService(
         return result;
     }
 
-    private async Task<int> QuickScoreAsync(string prose, CancellationToken ct)
+    private async Task<(int? Score, string? Error)> QuickScoreAsync(string prose, CancellationToken ct)
     {
-        if (string.IsNullOrWhiteSpace(prose)) return 75;
+        if (string.IsNullOrWhiteSpace(prose)) return (null, "no chapter prose to score");
         try
         {
             var raw = await llm.GenerateAsync(
@@ -124,10 +134,12 @@ public class ChapterCloseProcessorService(
                 ct: ct);
 
             var m = System.Text.RegularExpressions.Regex.Match(raw, @"SCORE:\s*(\d+)");
-            return m.Success && int.TryParse(m.Groups[1].Value, out var s) ? Math.Clamp(s, 0, 100) : 75;
+            return m.Success && int.TryParse(m.Groups[1].Value, out var s)
+                ? (Math.Clamp(s, 0, 100), null)
+                : (null, "reply had no SCORE: line");
         }
         catch (OperationCanceledException) { throw; }
-        catch { return 75; }
+        catch (Exception ex) { return (null, ex.Message); }
     }
 
     private async Task RunPanelReviewAsync(

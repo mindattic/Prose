@@ -146,7 +146,11 @@ public class FindingApplyService
                 return new(ApplyOutcome.SnippetNotFound,
                     "The exact snippet wasn't found in the beat's current text. Edit manually.");
 
-            var updated = beat.Text.Replace(f.Snippet!, f.SuggestedFix!);
+            // Replace() rewrote EVERY copy of the snippet — a short line like "No," he said.
+            // appearing twice got the fix in both places. Only an unambiguous snippet is applied.
+            var updated = ReplaceSingle(beat.Text, f.Snippet!, f.SuggestedFix!);
+            if (updated == null)
+                return new(ApplyOutcome.SnippetNotFound, "The snippet appears more than once in the beat. Edit manually.");
             if (updated == beat.Text) return new(ApplyOutcome.SnippetNotFound, "Replacement made no change.");
 
             // RFC 0009 Phase 3b (2026-09-06): through the workbench, not a direct beat.Text write.
@@ -182,7 +186,10 @@ public class FindingApplyService
             }
             else if (original.Contains(f.Snippet!))
             {
-                updated = original.Replace(f.Snippet!, f.SuggestedFix!);
+                var single = ReplaceSingle(original, f.Snippet!, f.SuggestedFix!);
+                if (single == null)
+                    return new(ApplyOutcome.SnippetNotFound, "The snippet appears more than once in the file. Edit manually.");
+                updated = single;
             }
             else
             {
@@ -223,6 +230,16 @@ public class FindingApplyService
             return true;
         }
         catch { return false; }
+    }
+
+    /// <summary>The text with its one occurrence of <paramref name="snippet"/> replaced, or null
+    /// when it occurs more than once (ambiguous). Unchanged text when it does not occur.</summary>
+    internal static string? ReplaceSingle(string text, string snippet, string fix)
+    {
+        var at = text.IndexOf(snippet, StringComparison.Ordinal);
+        if (at < 0) return text;
+        if (text.IndexOf(snippet, at + 1, StringComparison.Ordinal) >= 0) return null;
+        return string.Concat(text.AsSpan(0, at), fix, text.AsSpan(at + snippet.Length));
     }
 
     private async Task BackupAsync(string filePath, string content, CancellationToken ct)

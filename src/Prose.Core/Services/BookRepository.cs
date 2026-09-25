@@ -100,7 +100,7 @@ public class BookRepository : IBookRepository
 
         using var db = dbFactory.CreateDbContext();
 
-        var entity = db.Entities.FirstOrDefault(e => e.Id == id);
+        var entity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id); // explicit id: any universe (the filter made a non-ambient book look absent)
         if (entity == null)
         {
             entity = new EntityRow
@@ -124,7 +124,7 @@ public class BookRepository : IBookRepository
             entity.ModifiedAt  = DateTime.UtcNow;
         }
 
-        var sub = db.Books.FirstOrDefault(b => b.Id == id);
+        var sub = db.Books.IgnoreQueryFilters().FirstOrDefault(b => b.Id == id);
         if (sub == null)
         {
             sub = new BookEntity { Id = id };
@@ -187,10 +187,11 @@ public class BookRepository : IBookRepository
         using var db = dbFactory.CreateDbContext();
         using var tx = db.Database.BeginTransaction();
 
-        var entity = db.Entities.FirstOrDefault(e => e.Id == guid && e.EntityType == "book");
-        if (entity == null) return;
+        var entity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == guid && e.EntityType == "book");
+        // Throw, not return: callers reported "permanently deleted" for a book that was never removed.
+        if (entity == null) throw new InvalidOperationException($"Book {id} not found — nothing deleted.");
 
-        var book = db.Books.FirstOrDefault(b => b.Id == guid);
+        var book = db.Books.IgnoreQueryFilters().FirstOrDefault(b => b.Id == guid);
         if (book != null) db.Books.Remove(book);
         db.Entities.Remove(entity);
 

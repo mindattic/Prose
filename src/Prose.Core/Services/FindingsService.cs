@@ -451,15 +451,17 @@ public class FindingsService
         return rows.Select(ToFinding).ToList();
     }
 
-    public void SetStatus(long id, FindingStatus status)
+    /// <returns>False when no finding has that id.</returns>
+    public bool SetStatus(long id, FindingStatus status)
     {
         using var db = dbFactory.CreateDbContext();
         var row = db.Findings.FirstOrDefault(f => f.Id == id);
-        if (row == null) return;
+        if (row == null) return false;
         row.Status = status.ToString();
         row.ResolvedAt = (status == FindingStatus.Applied || status == FindingStatus.Dismissed)
             ? DateTime.UtcNow : null;
         db.SaveChanges();
+        return true;
     }
 
     /// <summary>

@@ -101,8 +101,12 @@ public class EntityTagTools(EntityTagService tags, IDbContextFactory<ProseDbCont
                 .Where(e => e.Id == parsed).Select(e => new { e.Id, e.Name }).FirstOrDefaultAsync();
             if (byId != null) return (byId.Id, byId.Name);
         }
+        // Names are not unique (two "The Narrows" places; a weapon and a character can share one):
+        // refuse rather than tag or untag whichever row SQL returned first.
         var byName = await db.Entities.AsNoTracking()
-            .Where(e => e.Name == who).Select(e => new { e.Id, e.Name }).FirstOrDefaultAsync();
-        return byName == null ? null : (byName.Id, byName.Name);
+            .Where(e => e.Name == who).Select(e => new { e.Id, e.Name, e.EntityType }).Take(5).ToListAsync();
+        if (byName.Count > 1)
+            throw new InvalidOperationException($"ambiguous_name: '{who}' matches {byName.Count} entities ({string.Join(", ", byName.Select(b => $"{b.EntityType} {b.Id}"))}) — pass the id.");
+        return byName.Count == 0 ? null : (byName[0].Id, byName[0].Name);
     }
 }

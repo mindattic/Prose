@@ -49,6 +49,7 @@ public static class LogDecisionCli
 
         var dbFactory = services.GetRequiredService<IDbContextFactory<ProseDbContext>>();
         await using var db = await dbFactory.CreateDbContextAsync();
+        (summary, rationale) = DecisionLedgerEntry.FitSummary(summary, rationale);
         var entry = new DecisionLedgerEntry
         {
             SessionId = sessionId,

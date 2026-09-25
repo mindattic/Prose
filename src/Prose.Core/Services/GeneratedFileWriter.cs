@@ -37,7 +37,7 @@ public static class GeneratedFileWriter
         var dir = Path.GetDirectoryName(destPath)!;
         Directory.CreateDirectory(dir);
 
-        var tempPath = Path.Combine(dir, $".{SessionContext.Id}-{Path.GetFileName(destPath)}.tmp");
+        var tempPath = Path.Combine(dir, $".{SessionContext.Id}-{Guid.NewGuid():N}-{Path.GetFileName(destPath)}.tmp"); // unique per write: CLI + MCP share one Hub process
         await File.WriteAllTextAsync(tempPath, content, new UTF8Encoding(false), ct);
 
         try

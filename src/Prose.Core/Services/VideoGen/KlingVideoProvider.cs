@@ -103,7 +103,9 @@ public class KlingVideoProvider : IVideoGenerationProvider
             throw new InvalidOperationException("Kling task has no video yet — poll until Done before downloading.");
 
         var url = videos[0].GetProperty("url").GetString() ?? throw new InvalidOperationException("Kling video entry was empty.");
-        var bytes = await http.GetByteArrayAsync(url, ct);
+        // The output URL is a pre-signed CDN link: fetch it WITHOUT the vendor credential (the
+        // shared client sent it to the CDN host, and S3/CloudFront reject signature + Authorization).
+        var bytes = await httpFactory.CreateClient().GetByteArrayAsync(url, ct);
         return new VideoGenerationResult(bytes, "mp4");
     }
 

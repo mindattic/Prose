@@ -62,7 +62,9 @@ public class UserContextService(
         }
         catch (Exception ex)
         {
+            // Rethrow: a swallowed write let the CLI/MCP report "pinned" with nothing stored.
             log.LogWarning(ex, "[UserContextService] RemoveAsync failed for doc {DocId}", markdownFileId);
+            throw;
         }
     }
 
@@ -87,7 +89,9 @@ public class UserContextService(
         }
         catch (Exception ex)
         {
+            // Rethrow: a swallowed write let the CLI/MCP report "pinned" with nothing stored.
             log.LogWarning(ex, "[UserContextService] ClearAsync failed");
+            throw;
         }
     }
 
@@ -193,7 +197,9 @@ public class UserContextService(
         }
         catch (Exception ex)
         {
+            // Rethrow: a swallowed write let the CLI/MCP report "pinned" with nothing stored.
             log.LogWarning(ex, "[UserContextService] UpsertAsync failed for doc {DocId} action={Action}", markdownFileId, action);
+            throw;
         }
     }
 }

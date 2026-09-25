@@ -81,8 +81,12 @@ public class UniverseInterchangeTools
             return JsonSerializer.Serialize(new { error = "unknown_universe", slug }, JsonOpts);
 
         var norm = UniverseGraphService.Slugify(entitySlug);
-        var entity = await db.Entities.IgnoreQueryFilters()
-            .FirstOrDefaultAsync(e => e.UniverseId == universe.Id && e.Slug == norm);
+        // Slugs are unique per (universe, type) only: a place and a faction can both be "the-roost".
+        var hits = await db.Entities.IgnoreQueryFilters()
+            .Where(e => e.UniverseId == universe.Id && e.Slug == norm).Take(5).ToListAsync();
+        if (hits.Count > 1)
+            return JsonSerializer.Serialize(new { error = "ambiguous_slug", entitySlug, candidates = hits.Select(h => new { h.Id, type = h.EntityType }) }, JsonOpts);
+        var entity = hits.FirstOrDefault();
         if (entity == null)
             return JsonSerializer.Serialize(new { error = "not_found", entitySlug }, JsonOpts);
 
