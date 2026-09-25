@@ -116,6 +116,12 @@ public sealed class EntityFieldWriter(
         var updated = after.Deserialize(dataType, Opts)!;
         dataType.GetProperty("Id")?.SetValue(updated, dataType.GetProperty("Id")?.GetValue(current));
         var intended = (JsonObject)JsonSerializer.SerializeToNode(updated, dataType, Opts)!;
+        // The record's name — whatever its key: "name", or "term"/"headline"/"codename"/"file_name"/
+        // "title" — may not end up blank. Only a null "name" was refused, so {"name":""} or
+        // {"term":null} emptied the Entity's name and slug.
+        var nameKey = new[] { "name", "term", "headline", "codename", "file_name", "title" }.FirstOrDefault(props.ContainsKey);
+        if (nameKey != null && fields.ContainsKey(nameKey) && string.IsNullOrWhiteSpace(intended[nameKey]?.ToString()))
+            return FieldWriteResult.Fail($"'{nameKey}' is the record's name and cannot be blank.");
         var changed = fields.Select(f => f.Key).Where(k => !FieldPatch.Same(k, before[k], intended[k])).ToList();
         if (changed.Count == 0)
             return new FieldWriteResult(true, null, [], [], ["nothing changed; nothing was written."], 0, null, CanonRecordLoader.Prune(before));

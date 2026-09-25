@@ -181,9 +181,12 @@ public class CoreEntityCrudTools
             }
         }
 
+        // An unknown id is refused, never fabricated into a new record (here and in every create_*
+        // below): the typed Save finds the Entity row by id WITHOUT checking its type, so another
+        // entity's id renamed and re-described it.
         var c = string.IsNullOrEmpty(id)
             ? new CharacterData()
-            : (characters.GetById(id) ?? new CharacterData { Id = id });
+            : (characters.GetById(id) ?? throw new InvalidOperationException($"No CharacterData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         c.Name = name;
         if (!string.IsNullOrEmpty(role)) c.Role = role;
@@ -291,6 +294,10 @@ public class CoreEntityCrudTools
 
         var isNewCharacter = string.IsNullOrEmpty(id);
         characters.Save(c);
+        // Tags REPLACE: the repository save only ever adds tags, so tags passed here could
+        // never remove one (and "[]" cleared nothing) while the tool answered ok. Same
+        // sanctioned path as set_entity_fields, in every create_* below.
+        if (!string.IsNullOrEmpty(tags)) { await FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(c.Id), c.Tags); characters.Reload(); }
 
         if (isNewCharacter && resolvedOrigin.HasValue && Guid.TryParse(c.Id, out var newId))
         {
@@ -375,7 +382,7 @@ public class CoreEntityCrudTools
     {
         var p = string.IsNullOrEmpty(id)
             ? new DistrictData()
-            : (places.GetById(id) ?? new DistrictData { Id = id });
+            : (places.GetById(id) ?? throw new InvalidOperationException($"No DistrictData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         p.Name = name;
         if (!string.IsNullOrEmpty(type)) p.Type = type;
@@ -391,6 +398,7 @@ public class CoreEntityCrudTools
             p.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         places.Save(p);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(p.Id), p.Tags).GetAwaiter().GetResult(); places.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = p.Id, name = p.Name }, CanonTools.JsonOpts);
     }
 
@@ -432,7 +440,7 @@ public class CoreEntityCrudTools
     {
         var f = string.IsNullOrEmpty(id)
             ? new FactionData()
-            : (factions.GetById(id) ?? new FactionData { Id = id });
+            : (factions.GetById(id) ?? throw new InvalidOperationException($"No FactionData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         f.Name = name;
         if (!string.IsNullOrEmpty(motto)) f.Motto = motto;
@@ -451,6 +459,7 @@ public class CoreEntityCrudTools
             f.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         factions.Save(f);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(f.Id), f.Tags).GetAwaiter().GetResult(); factions.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = f.Id, name = f.Name }, CanonTools.JsonOpts);
     }
 
@@ -490,7 +499,7 @@ public class CoreEntityCrudTools
     {
         var corp = string.IsNullOrEmpty(id)
             ? new CorponationData()
-            : (corponations.GetById(id) ?? new CorponationData { Id = id });
+            : (corponations.GetById(id) ?? throw new InvalidOperationException($"No CorponationData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         corp.Name = name;
         if (!string.IsNullOrEmpty(fullLegalName)) corp.FullLegalName = fullLegalName;
@@ -505,6 +514,7 @@ public class CoreEntityCrudTools
             corp.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         corponations.Save(corp);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(corp.Id), corp.Tags).GetAwaiter().GetResult(); corponations.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = corp.Id, name = corp.Name }, CanonTools.JsonOpts);
     }
 }
@@ -524,6 +534,7 @@ public class GearEntityCrudTools
     private readonly PharmaceuticalRepository pharmaceuticals;
     private readonly AmmunitionRepository ammunition;
     private readonly MaterialRepository materials;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly HubInvoker hub;
 
     public GearEntityCrudTools(
@@ -535,8 +546,10 @@ public class GearEntityCrudTools
         PharmaceuticalRepository pharmaceuticals,
         AmmunitionRepository ammunition,
         MaterialRepository materials,
+        IDbContextFactory<ProseDbContext> dbFactory,
         HubInvoker hub)
     {
+        this.dbFactory = dbFactory;
         this.weapons = weapons;
         this.cyberware = cyberware;
         this.equipment = equipment;
@@ -590,7 +603,7 @@ public class GearEntityCrudTools
     {
         var w = string.IsNullOrEmpty(id)
             ? new WeaponryData()
-            : (weapons.GetById(id) ?? new WeaponryData { Id = id });
+            : (weapons.GetById(id) ?? throw new InvalidOperationException($"No WeaponryData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         w.Name = name;
         if (!string.IsNullOrEmpty(category)) w.Category = category;
@@ -616,6 +629,7 @@ public class GearEntityCrudTools
             w.KnownUsers = [.. knownUsers.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         weapons.Save(w);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(w.Id), w.Tags).GetAwaiter().GetResult(); weapons.Reload(); }
         return JsonSerializer.Serialize(
             new { ok = true, id = w.Id, name = w.Name, known_users = w.KnownUsers }, CanonTools.JsonOpts);
     }
@@ -782,7 +796,7 @@ public class GearEntityCrudTools
     {
         var cw = string.IsNullOrEmpty(id)
             ? new CyberwareData()
-            : (cyberware.GetById(id) ?? new CyberwareData { Id = id });
+            : (cyberware.GetById(id) ?? throw new InvalidOperationException($"No CyberwareData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         cw.Name = name;
         if (!string.IsNullOrEmpty(brandName)) cw.BrandName = brandName;
@@ -805,6 +819,7 @@ public class GearEntityCrudTools
             cw.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         cyberware.Save(cw);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(cw.Id), cw.Tags).GetAwaiter().GetResult(); cyberware.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = cw.Id, name = cw.Name }, CanonTools.JsonOpts);
     }
 
@@ -839,7 +854,7 @@ public class GearEntityCrudTools
     {
         var eq = string.IsNullOrEmpty(id)
             ? new EquipmentData()
-            : (equipment.GetById(id) ?? new EquipmentData { Id = id });
+            : (equipment.GetById(id) ?? throw new InvalidOperationException($"No EquipmentData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         eq.Name = name;
         if (!string.IsNullOrEmpty(brandName)) eq.BrandName = brandName;
@@ -852,6 +867,7 @@ public class GearEntityCrudTools
             eq.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         equipment.Save(eq);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(eq.Id), eq.Tags).GetAwaiter().GetResult(); equipment.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = eq.Id, name = eq.Name }, CanonTools.JsonOpts);
     }
 
@@ -889,7 +905,7 @@ public class GearEntityCrudTools
     {
         var tech = string.IsNullOrEmpty(id)
             ? new TechnologyData()
-            : (technology.GetById(id) ?? new TechnologyData { Id = id });
+            : (technology.GetById(id) ?? throw new InvalidOperationException($"No TechnologyData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         tech.Name = name;
         if (!string.IsNullOrEmpty(brandName)) tech.BrandName = brandName;
@@ -905,6 +921,7 @@ public class GearEntityCrudTools
             tech.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         technology.Save(tech);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(tech.Id), tech.Tags).GetAwaiter().GetResult(); technology.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = tech.Id, name = tech.Name }, CanonTools.JsonOpts);
     }
 
@@ -933,7 +950,7 @@ public class GearEntityCrudTools
     {
         var ap = string.IsNullOrEmpty(id)
             ? new ApparelData()
-            : (apparel.GetById(id) ?? new ApparelData { Id = id });
+            : (apparel.GetById(id) ?? throw new InvalidOperationException($"No ApparelData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         ap.Name = name;
         if (!string.IsNullOrEmpty(category)) ap.Category = category;
@@ -943,6 +960,7 @@ public class GearEntityCrudTools
             ap.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         apparel.Save(ap);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(ap.Id), ap.Tags).GetAwaiter().GetResult(); apparel.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = ap.Id, name = ap.Name }, CanonTools.JsonOpts);
     }
 
@@ -971,7 +989,7 @@ public class GearEntityCrudTools
     {
         var ph = string.IsNullOrEmpty(id)
             ? new PharmaceuticalData()
-            : (pharmaceuticals.GetById(id) ?? new PharmaceuticalData { Id = id });
+            : (pharmaceuticals.GetById(id) ?? throw new InvalidOperationException($"No PharmaceuticalData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         ph.Name = name;
         if (!string.IsNullOrEmpty(category)) ph.Category = category;
@@ -981,6 +999,7 @@ public class GearEntityCrudTools
             ph.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         pharmaceuticals.Save(ph);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(ph.Id), ph.Tags).GetAwaiter().GetResult(); pharmaceuticals.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = ph.Id, name = ph.Name }, CanonTools.JsonOpts);
     }
 
@@ -1009,7 +1028,7 @@ public class GearEntityCrudTools
     {
         var am = string.IsNullOrEmpty(id)
             ? new AmmunitionData()
-            : (ammunition.GetById(id) ?? new AmmunitionData { Id = id });
+            : (ammunition.GetById(id) ?? throw new InvalidOperationException($"No AmmunitionData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         am.Name = name;
         if (!string.IsNullOrEmpty(category)) am.Category = category;
@@ -1019,6 +1038,7 @@ public class GearEntityCrudTools
             am.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         ammunition.Save(am);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(am.Id), am.Tags).GetAwaiter().GetResult(); ammunition.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = am.Id, name = am.Name }, CanonTools.JsonOpts);
     }
 }
@@ -1036,6 +1056,7 @@ public class WorldEntityCrudTools
     private readonly WorldbuildingDocRepository documents;
     private readonly SubsidiaryRepository subsidiaries;
     private readonly VocabularyRepository vocabulary;
+    private readonly IDbContextFactory<ProseDbContext> dbFactory;
     private readonly HubInvoker hub;
 
     public WorldEntityCrudTools(
@@ -1045,8 +1066,10 @@ public class WorldEntityCrudTools
         WorldbuildingDocRepository documents,
         SubsidiaryRepository subsidiaries,
         VocabularyRepository vocabulary,
+        IDbContextFactory<ProseDbContext> dbFactory,
         HubInvoker hub)
     {
+        this.dbFactory = dbFactory;
         this.automata = automata;
         this.transportation = transportation;
         this.consumerGoods = consumerGoods;
@@ -1164,7 +1187,7 @@ public class WorldEntityCrudTools
     {
         var a = string.IsNullOrEmpty(id)
             ? new AutomatonData()
-            : (automata.GetById(id) ?? new AutomatonData { Id = id });
+            : (automata.GetById(id) ?? throw new InvalidOperationException($"No AutomatonData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         a.Name = name;
         if (!string.IsNullOrEmpty(description)) a.Description = description;
@@ -1173,6 +1196,7 @@ public class WorldEntityCrudTools
             a.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         automata.Save(a);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(a.Id), a.Tags).GetAwaiter().GetResult(); automata.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = a.Id, name = a.Name }, CanonTools.JsonOpts);
     }
 
@@ -1201,7 +1225,7 @@ public class WorldEntityCrudTools
     {
         var t = string.IsNullOrEmpty(id)
             ? new TransportationData()
-            : (transportation.GetById(id) ?? new TransportationData { Id = id });
+            : (transportation.GetById(id) ?? throw new InvalidOperationException($"No TransportationData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         t.Name = name;
         if (!string.IsNullOrEmpty(category)) t.Category = category;
@@ -1211,6 +1235,7 @@ public class WorldEntityCrudTools
             t.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         transportation.Save(t);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(t.Id), t.Tags).GetAwaiter().GetResult(); transportation.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = t.Id, name = t.Name }, CanonTools.JsonOpts);
     }
 
@@ -1241,7 +1266,7 @@ public class WorldEntityCrudTools
     {
         var g = string.IsNullOrEmpty(id)
             ? new ConsumerGoodData()
-            : (consumerGoods.GetById(id) ?? new ConsumerGoodData { Id = id });
+            : (consumerGoods.GetById(id) ?? throw new InvalidOperationException($"No ConsumerGoodData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         g.Name = name;
         if (!string.IsNullOrEmpty(productName)) g.ProductName = productName;
@@ -1252,6 +1277,7 @@ public class WorldEntityCrudTools
             g.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         consumerGoods.Save(g);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(g.Id), g.Tags).GetAwaiter().GetResult(); consumerGoods.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = g.Id, name = g.Name }, CanonTools.JsonOpts);
     }
 
@@ -1280,7 +1306,7 @@ public class WorldEntityCrudTools
     {
         var d = string.IsNullOrEmpty(id)
             ? new WorldbuildingDocument()
-            : (documents.GetById(id) ?? new WorldbuildingDocument { Id = id });
+            : (documents.GetById(id) ?? throw new InvalidOperationException($"No WorldbuildingDocument with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         d.FileName = fileName;
         d.Title = title;
@@ -1290,6 +1316,7 @@ public class WorldEntityCrudTools
             d.Tags = [.. tags.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0)];
 
         documents.Save(d);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(d.Id), d.Tags).GetAwaiter().GetResult(); documents.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = d.Id, file_name = d.FileName, title = d.Title }, CanonTools.JsonOpts);
     }
 
@@ -1316,7 +1343,7 @@ public class WorldEntityCrudTools
     {
         var s = string.IsNullOrEmpty(id)
             ? new SubsidiaryData()
-            : (subsidiaries.GetById(id) ?? new SubsidiaryData { Id = id });
+            : (subsidiaries.GetById(id) ?? throw new InvalidOperationException($"No SubsidiaryData with id {id} in this universe. Pass an empty id to create one; an id that is not this type's (another entity's, or a name) is refused, not re-typed."));
 
         s.Name = name;
         if (!string.IsNullOrEmpty(parentCorponation)) s.ParentCorponation = parentCorponation;
@@ -1325,6 +1352,7 @@ public class WorldEntityCrudTools
             s.Tags = [.. tags.Split(',').Select(s2 => s2.Trim()).Where(s2 => s2.Length > 0)];
 
         subsidiaries.Save(s);
+        if (!string.IsNullOrEmpty(tags)) { FieldPatch.ReplaceTagsAsync(dbFactory, Guid.Parse(s.Id), s.Tags).GetAwaiter().GetResult(); subsidiaries.Reload(); }
         return JsonSerializer.Serialize(new { ok = true, id = s.Id, name = s.Name }, CanonTools.JsonOpts);
     }
 }

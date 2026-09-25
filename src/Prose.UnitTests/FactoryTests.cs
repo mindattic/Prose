@@ -400,6 +400,22 @@ public class FactoryTests
     }
 
     [Test]
+    public async Task A_book_with_no_beats_passes_no_station()
+    {
+        Guid bookId;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var book = new BookNode { Id = Guid.CreateVersion7(), Slug = "empty-" + Guid.NewGuid().ToString("N")[..8], Title = "Empty", Kind = "book", Status = "draft", SortKey = 100 };
+            db.Nodes.Add(book);
+            await db.SaveChangesAsync();
+            bookId = book.Id;
+        }
+        var (ok, detail) = await factory.StationPassesAsync(bookId, "F5");
+        Assert.That(ok, Is.False, detail);
+        Assert.That(detail, Does.Contain("no units"));
+    }
+
+    [Test]
     public async Task A_beat_whose_stored_hash_is_null_can_still_be_read()
     {
         var (book, beats) = await BookWithTwoChaptersAsync();

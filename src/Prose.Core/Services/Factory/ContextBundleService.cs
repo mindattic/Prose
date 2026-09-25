@@ -113,7 +113,9 @@ public sealed class ContextBundleService(IDbContextFactory<ProseDbContext> dbFac
 
         var tagged = unit.Beats.SelectMany(b => beats.TryGetValue(b.BeatId, out var r) ? BeatMarkup.ExtractEntityGuids(r.Text) : Enumerable.Empty<Guid>())
             .Distinct().ToList();
-        var rows = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => tagged.Contains(e.Id))
+        // Not archived: a merged-away entity's stale tags handed the writer a dead record as one
+        // that "stands" (the mention scanner and read gate already treat archived as gone).
+        var rows = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => tagged.Contains(e.Id) && e.Status != "archived")
             .Select(e => new { e.Id, e.Name, e.EntityType, e.ModifiedAt }).ToListAsync(ct);
         var entities = tagged.Select(t => rows.FirstOrDefault(r => r.Id == t)).Where(r => r != null)
             .Select(r => new BundleEntity(r!.Id, r.Name, r.EntityType, r.ModifiedAt)).ToList();

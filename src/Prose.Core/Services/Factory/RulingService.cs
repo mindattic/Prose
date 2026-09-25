@@ -130,8 +130,18 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
             var rx = Compile(law.Pattern!);
             foreach (var (beatId, number, position, plain) in text)
             {
-                foreach (Match m in rx.Matches(plain))
-                    hits.Add(new LawHit(law.Id, law.Text, beatId, number, position, m.Value, Context(plain, m.Index, m.Length)));
+                // One pathological pattern must not take down status, next and every factory check:
+                // a timeout is reported as a failing hit on that beat, naming the pattern.
+                try
+                {
+                    foreach (Match m in rx.Matches(plain))
+                        hits.Add(new LawHit(law.Id, law.Text, beatId, number, position, m.Value, Context(plain, m.Index, m.Length)));
+                }
+                catch (RegexMatchTimeoutException)
+                {
+                    hits.Add(new LawHit(law.Id, law.Text, beatId, number, position,
+                        $"(pattern /{law.Pattern}/ timed out on this beat — tighten it)", ""));
+                }
             }
         }
         return hits.OrderBy(h => h.Position).ToList();
@@ -239,8 +249,12 @@ public sealed class MetricsReport(RulingService rulings)
         var words = text.Sum(WordCount);
         var results = metrics.Select(m =>
         {
-            var count = Count(m.Pattern!, text);
             var max = (int)Math.Floor(m.MaxPer1kWords!.Value * words / 1000m);
+            // A timed-out pattern fails its own metric (count reported as -1) instead of throwing
+            // out of the whole report.
+            int count;
+            try { count = Count(m.Pattern!, text); }
+            catch (RegexMatchTimeoutException) { return new MetricResult(m.Id, $"{m.Text} (pattern timed out — tighten it)", m.Pattern!, -1, max, m.MaxPer1kWords.Value, false, m.Source == "author"); }
             return new MetricResult(m.Id, m.Text, m.Pattern!, count, max, m.MaxPer1kWords.Value, count <= max, m.Source == "author");
         }).ToList();
         return new MetricsResult(words, results);

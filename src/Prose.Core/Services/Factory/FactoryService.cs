@@ -104,6 +104,9 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
             var r = s.BookStations[station];
             return (r.Pass, $"{station} {r.State}: {r.Detail}");
         }
+        // No units is not "every unit passes": an empty book (no beats yet) closed factory checks
+        // and was sent to the press instead of to planning.
+        if (s.Units.Count == 0) return (false, $"{station}: {s.Code ?? s.Slug} has no units (no beats) yet.");
         var failing = s.Units.Where(u => !u.Stations[station].Pass).ToList();
         return failing.Count == 0
             ? (true, $"{station} passes for all {s.Units.Count} units of {s.Code ?? s.Slug}.")
@@ -310,7 +313,8 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
 
             ctx.Tags = ctx.Beats.Values.ToDictionary(b => b.Id, b => BeatMarkup.ExtractEntityGuids(b.Text).ToList());
             var tagged = ctx.Tags.Values.SelectMany(t => t).Distinct().ToList();
-            ctx.Entities = (await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => tagged.Contains(e.Id))
+            // Not archived: F1 demanded verification of a merged-away record whose old tag was stale.
+            ctx.Entities = (await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => tagged.Contains(e.Id) && e.Status != "archived")
                     .Select(e => new { e.Id, e.Name, e.ModifiedAt }).ToListAsync(ct))
                 .ToDictionary(e => e.Id, e => (e.Name, e.ModifiedAt));
             ctx.Fingerprints = EntityVerificationService.Fingerprints(ctx.Beats.Values.Select(b => (b.Id, b.Text, b.TextHash)));
@@ -435,6 +439,7 @@ public sealed class FactoryService(IDbContextFactory<ProseDbContext> dbFactory, 
         {
             case "F7":
             {
+                if (units.Count == 0) return new(code, "waiting", "the book has no units (no beats) yet; plan it first.");
                 var red = units.Where(u => UnitStationOrder.Any(s => !u.Stations[s].Pass)).ToList();
                 if (red.Count > 0)
                 {

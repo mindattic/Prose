@@ -68,7 +68,9 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
         var universeEntities = db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.UniverseId == universe);
         var latest = await universeEntities.MaxAsync(e => (DateTime?)e.ModifiedAt, ct);
         var count = await universeEntities.CountAsync(ct);
-        var key = Fingerprint(beats.Select(b => $"{b.Id:N}:{b.TextHash}")
+        // The text's own hash, not the stored TextHash: a write that bypassed SaveChanges (or the
+        // drift trigger's NULL) changed the text without changing the key, and F4 served the old report.
+        var key = Fingerprint(beats.Select(b => $"{b.Id:N}:{Prose.Core.Data.Entities.Beat.ComputeHash(b.Text)}")
             .Append($"entities:{latest?.Ticks}:{count}")
             .Concat(incidental.Select(r => $"incidental:{r.Id:N}")));
         if (Memo.TryGetValue(bookId, out var memo) && memo.Key == key) return memo.Report;

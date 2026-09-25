@@ -76,7 +76,9 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
         // RFC 0015 §3.2 [RT#3]: what a beat mentions is read from its own tags, now. The
         // BeatEntityMentions table is written by a background task after each save, so a gate that
         // read it could judge a just-saved beat against mentions that were not there yet.
-        var tagged = bookOrder.ToDictionary(o => o.Beat.Id, o => BeatMarkup.ExtractEntityGuids(o.Beat.Text).ToList());
+        // DistinctBy: a beat linked under two nodes appears twice in the walk, and a duplicate key
+        // made the gate — and with it factory status and next — throw.
+        var tagged = bookOrder.DistinctBy(o => o.Beat.Id).ToDictionary(o => o.Beat.Id, o => BeatMarkup.ExtractEntityGuids(o.Beat.Text).ToList());
         var entityIds = tagged.Values.SelectMany(g => g).Distinct().ToList();
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
@@ -165,7 +167,7 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
         await using (var db0 = await dbFactory.CreateDbContextAsync(ct))
             bookId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db0, nodeId, ct) ?? nodeId;
         var order = await workbench.GetOrderedBeatsAsync(bookId, ct);
-        var index = order.Select((o, i) => (o.Beat, i)).ToDictionary(x => x.Beat.Id, x => x.i);
+        var index = order.Select((o, i) => (o.Beat, i)).DistinctBy(x => x.Beat.Id).ToDictionary(x => x.Beat.Id, x => x.i);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var marked = 0;
@@ -228,7 +230,7 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
         if (kind.Length > 0 && !NoteKinds.Contains(kind))
             throw new ArgumentException($"kind must be one of {string.Join(", ", NoteKinds)}.");
         var order = await workbench.GetOrderedBeatsAsync(nodeId, ct);
-        var pos = order.Select((o, i) => (o.Beat, i)).ToDictionary(x => x.Beat.Id, x => (Position: x.i + 1, x.Beat));
+        var pos = order.Select((o, i) => (o.Beat, i)).DistinctBy(x => x.Beat.Id).ToDictionary(x => x.Beat.Id, x => (Position: x.i + 1, x.Beat));
         var ids = pos.Keys.ToList();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var q = db.BeatReadNotes.AsNoTracking().Where(n => ids.Contains(n.BeatId));
