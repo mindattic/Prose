@@ -77,8 +77,12 @@ public class SceneTools
         long woundId,
         string status)
     {
-        var n = await wounds.SetStatusAsync(woundId, status);
-        return JsonSerializer.Serialize(new { ok = n > 0, woundId, status });
+        try
+        {
+            var n = await wounds.SetStatusAsync(woundId, status);
+            return JsonSerializer.Serialize(new { ok = n > 0, woundId, status });
+        }
+        catch (ArgumentException ex) { return JsonSerializer.Serialize(new { ok = false, error = ex.Message }); }
     }
 
     [McpServerTool, Description("X-Ray scene assembly (RFC 0002): given a Beat guid OR raw prose text, detect which entities are on screen (name/alias scan + embedding similarity + one-hop graph expansion) and return the roster plus a budgeted context block carrying each character's voice fields (vocabulary, cadence, subtext, under-pressure, intimacy register, example lines) and each place/object's gloss — the live memory block prose prompts should receive.")]

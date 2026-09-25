@@ -145,6 +145,7 @@ public class EntityRamificationService(
 
     private static List<NameEntry>? nameIndexCache;
     private static DateTime nameIndexBuiltAt = DateTime.MinValue;
+    private static Guid nameIndexUniverse;
 
     /// <summary>
     /// Match texts for every active entity: the entity Name plus, for characters,
@@ -154,8 +155,12 @@ public class EntityRamificationService(
     /// </summary>
     private async Task<List<NameEntry>> GetNameIndexAsync(CancellationToken ct)
     {
-        if (nameIndexCache is { } cached && (DateTime.UtcNow - nameIndexBuiltAt) < TimeSpan.FromSeconds(60))
+        // Keyed on the universe too: the index is built from the ambient universe's entities, and a
+        // cached one from another universe matched this universe's prose against the wrong names.
+        if (nameIndexCache is { } cached && (DateTime.UtcNow - nameIndexBuiltAt) < TimeSpan.FromSeconds(60)
+            && nameIndexUniverse == UniverseScope.EffectiveId)
             return cached;
+        var builtFor = UniverseScope.EffectiveId;
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
@@ -198,6 +203,7 @@ public class EntityRamificationService(
         var built = index.OrderByDescending(e => e.MatchText.Length).ToList();
         nameIndexCache = built;
         nameIndexBuiltAt = DateTime.UtcNow;
+        nameIndexUniverse = builtFor;
         return built;
     }
 
@@ -226,15 +232,27 @@ public class EntityRamificationService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var beatIds = await db.Beats
-            .Select(b => new { b.Id, b.Text })
-            .ToListAsync(ct);
+        // Only the ambient universe's beats: the name index holds only its entities, and Beats has
+        // no universe filter, so the old walk re-indexed every universe's beats against these names
+        // and wiped their real mentions.
+        var scoped = UniverseScope.EffectiveId;
+        var beatIds = await (
+            from b in db.Beats
+            join bn in db.BeatNodes on b.Id equals bn.BeatId
+            join n in db.Nodes.IgnoreQueryFilters() on bn.NodeId equals n.Id
+            where scoped == Guid.Empty || n.UniverseId == scoped
+            select new { b.Id, b.Text }).Distinct().ToListAsync(ct);
 
         int done = 0;
         foreach (var beat in beatIds)
         {
             if (ct.IsCancellationRequested) break;
-            await IndexBeatMentionsAsync(beat.Id, beat.Text, ct);
+            // A tagged beat's mentions come from its tags, exactly, as every save derives them; a
+            // name scan over it replaced those with guesses. The scan is for untagged beats only.
+            if (BeatMarkup.ExtractEntityGuids(beat.Text).Any())
+                await EntityMentionScanner.DeriveAndSaveMentionsAsync(dbFactory, beat.Id, beat.Text ?? "", ct);
+            else
+                await IndexBeatMentionsAsync(beat.Id, beat.Text, ct);
             progress?.Report((++done, beatIds.Count));
         }
     }

@@ -86,6 +86,9 @@ public class ClaudeCliService
             yield break;
         }
 
+        // Drain stderr from the start. Read only after exit, a CLI that wrote more than the pipe
+        // buffer to stderr blocked on the write, stdout never closed, and the read below hung.
+        var errTask = proc.StandardError.ReadToEndAsync(CancellationToken.None);
         try
         {
             // Pipe the prompt in via stdin so we don't fight Windows command-line escaping.
@@ -104,7 +107,7 @@ public class ClaudeCliService
 
             if (proc.ExitCode != 0)
             {
-                var err = await proc.StandardError.ReadToEndAsync(ct);
+                var err = await errTask;
                 log.LogWarning("claude CLI exited {Code}: {Err}", proc.ExitCode, err);
                 yield return $"\n[claude CLI exit {proc.ExitCode}] {err}";
             }

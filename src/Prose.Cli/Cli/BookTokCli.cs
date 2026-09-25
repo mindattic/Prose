@@ -75,7 +75,7 @@ public static class BookTokCli
             var paths     = services.GetRequiredService<IPathProvider>();
             await using var db = await dbFactory.CreateDbContextAsync();
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
+            var node = await NodeRefResolver.ResolveNodeAsync(db, slug);
             if (node == null)
             {
                 Console.Error.WriteLine($"[booktok] Node '{slug}' not found.");

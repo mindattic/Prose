@@ -89,7 +89,8 @@ public class MultiLlmService
     public async Task<Dictionary<string, string>> CallMultipleAsync(
         List<string> providerIds, string system, string user, CancellationToken ct = default)
     {
-        var tasks = providerIds.Select(async id =>
+        // Distinct: a repeated id produced two results under one name and ToDictionary threw.
+        var tasks = providerIds.Distinct(StringComparer.OrdinalIgnoreCase).Select(async id =>
         {
             try
             {
@@ -105,7 +106,8 @@ public class MultiLlmService
         });
 
         var results = await Task.WhenAll(tasks);
-        return results.Where(r => r.success).ToDictionary(r => r.name, r => r.result);
+        // Two ids can share a display name; keep the first rather than throw.
+        return results.Where(r => r.success).GroupBy(r => r.name).ToDictionary(g => g.Key, g => g.First().result);
     }
 
     /// <summary>

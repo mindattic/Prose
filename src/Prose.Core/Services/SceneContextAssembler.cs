@@ -274,9 +274,12 @@ public class SceneContextAssembler(
     private const int GraphNeighborCap = 8;
     private const int CharsPerToken = 4;
 
-    // Structural/registry entity types that are never "on screen" in a scene.
+    // Structural/registry entity types that are never "on screen" in a scene. quote and archetype
+    // match EntityMentionScanner's list: a character's quote rows share her name (46 of them for
+    // one character) and could win the name as the scene's "character"; "War Dog" resolved to the
+    // archetype.
     private static readonly HashSet<string> ExcludedTypes =
-        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat" };
+        new(StringComparer.OrdinalIgnoreCase) { "chapter", "book", "node", "series", "beat", "quote", "archetype" };
 
     // name → all entities sharing that Name (usually exactly one). Built once, refreshed lazily,
     // universe-wide (not per-book) — same-name collisions across different books' entities (see
@@ -457,8 +460,11 @@ public class SceneContextAssembler(
         var ranked = matched.Values.OrderByDescending(r => r.Score).ToList();
         var (roster, block) = await FormatWithinBudgetAsync(ranked, tokenBudget, ct, edgesByEntity, namesById);
 
+        // DistinctBy: a name and an alias of the same entity both hit, and the entity was formatted
+        // into the block twice.
         var extra = ScanNames(block, index)
             .Where(h => roster.All(r => r.EntityId != h.EntityId))
+            .DistinctBy(h => h.EntityId)
             .ToList();
         if (extra.Count > 0)
         {

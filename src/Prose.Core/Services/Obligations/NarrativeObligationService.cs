@@ -191,10 +191,15 @@ public class NarrativeObligationService(
                 var universeId = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
                     .Where(n => n.Id == bookNodeId).Select(n => n.UniverseId).FirstOrDefaultAsync(ct);
                 var originChapter = clock.ChapterOf(beatId);
+                // Keys added in THIS scan: the DB lookup below cannot see unsaved rows, so two
+                // items with the same key (the same promise, or text differing only in spacing)
+                // both inserted, hit the unique (NodeId, DedupKey) index, and the whole scan was lost.
+                var openedThisScan = new HashSet<string>(StringComparer.Ordinal);
 
                 foreach (var item in result.Opened)
                 {
                     var dedup = DedupKey(bookNodeId, item.Kind, item.Description);
+                    if (!openedThisScan.Add(dedup)) continue;
                     var existing = await db.NarrativeObligations.FirstOrDefaultAsync(o => o.NodeId == bookNodeId && o.DedupKey == dedup, ct)
                         ?? await db.NarrativeObligations.FirstOrDefaultAsync(o => o.NodeId == bookNodeId && o.OriginQuote == item.Quote, ct);
                     if (existing != null)
@@ -636,13 +641,20 @@ public class NarrativeObligationService(
         return new(true, null, row);
     }
 
+    private static bool IsLive(string state) =>
+        state is ObligationState.Open or ObligationState.Advanced or ObligationState.Deferred;
+
     public async Task<AuthorResult> CloseAsync(Guid id, Guid closingBeatId, string quote, string? note, string actor, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var row = await db.NarrativeObligations.FirstOrDefaultAsync(o => o.Id == id, ct);
         if (row == null) return new(false, "not_found", null);
+        // Only a live obligation can be paid; a dropped, withdrawn or already-closed one is reopened first.
+        if (!IsLive(row.State)) return new(false, $"obligation is {row.State}; reopen it before closing", null);
         var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == closingBeatId, ct);
         if (beat == null) return new(false, "closing beat not found", null);
+        var beatBook = await NodeWorkbenchService.ResolveBookAncestorForBeatAsync(db, closingBeatId, ct);
+        if (beatBook != null && beatBook != row.NodeId) return new(false, "the closing beat belongs to another book", null);
         if (!QuoteGrounding.Contains(BeatMarkup.StripEntityTags(beat.Text), quote, QuoteGrounding.MinObligationQuoteLength))
             return new(false, "quote_not_found: the quote is not in that beat's text", null);
 
@@ -660,6 +672,8 @@ public class NarrativeObligationService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var row = await db.NarrativeObligations.FirstOrDefaultAsync(o => o.Id == id, ct);
         if (row == null) return new(false, "not_found", null);
+        if (row.State is ObligationState.Dropped or ObligationState.Closed)
+            return new(false, $"obligation is already {row.State}; reopen it first", null);
         row.State = ObligationState.Dropped; row.DroppedReason = reason; row.AuthorNote = note.Trim(); row.AuthorLocked = true; row.UpdatedAt = DateTime.UtcNow;
         db.NarrativeObligationEvents.Add(Event(row.Id, ObligationEventAction.Drop, null, null, null, actor, $"{reason}: {note.Trim()}"));
         await db.SaveChangesAsync(ct);
@@ -674,6 +688,8 @@ public class NarrativeObligationService(
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var row = await db.NarrativeObligations.FirstOrDefaultAsync(o => o.Id == id, ct);
         if (row == null) return new(false, "not_found", null);
+        // Deferring a closed row kept its closing beat and quote on a row now marked Deferred.
+        if (!IsLive(row.State)) return new(false, $"obligation is {row.State}; reopen it before deferring", null);
         row.State = ObligationState.Deferred; row.DueByKind = dueKind; row.DueByValue = dueValue; row.AuthorNote = note.Trim(); row.AuthorLocked = true; row.UpdatedAt = DateTime.UtcNow;
         db.NarrativeObligationEvents.Add(Event(row.Id, ObligationEventAction.Defer, null, null, null, actor, note.Trim()));
         await db.SaveChangesAsync(ct);

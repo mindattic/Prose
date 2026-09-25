@@ -40,7 +40,7 @@ public static class BackfillEntityPresenceCli
             if (slug != null)
             {
                 // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-                var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Slug == slug || n.NodeCode == slug);
+                var node = await NodeRefResolver.ResolveNodeAsync(db, slug);
                 if (node == null)
                 {
                     Console.Error.WriteLine($"[backfill-entity-presence] No node found with slug or code '{slug}'.");

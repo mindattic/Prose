@@ -52,7 +52,7 @@ public static class RebeatNodeCli
             {
                 Node? node;
                 // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-                if (!string.IsNullOrWhiteSpace(slug)) node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
+                if (!string.IsNullOrWhiteSpace(slug)) node = await NodeRefResolver.ResolveNodeAsync(db, slug);
                 // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
                 else if (Guid.TryParse(id, out var g)) node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Id == g);
                 else node = await db.Nodes.AsNoTracking().Where(s => s.Id.ToString().StartsWith(id!.ToLower())).Take(2).ToListAsync() switch

@@ -104,8 +104,16 @@ public class WoundLedgerService(
             + string.Join("\n", lines);
     }
 
+    /// <summary>Every status either door documents (MCP: fresh|healing|healed|scarred; CLI:
+    /// active|healed|noted). Anything else was stored as written — and, being neither 'healed' nor
+    /// 'scarred', kept the wound in every prompt as ACTIVE while the call reported success.</summary>
+    public static readonly string[] KnownStatuses = ["fresh", "healing", "healed", "scarred", "active", "noted"];
+
     public async Task<int> SetStatusAsync(long woundId, string status, CancellationToken ct = default)
     {
+        status = (status ?? "").Trim().ToLowerInvariant();
+        if (!KnownStatuses.Contains(status))
+            throw new ArgumentException($"status must be one of {string.Join(", ", KnownStatuses)}.");
         await EnsureSchemaAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         return await db.Database.ExecuteSqlRawAsync(

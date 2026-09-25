@@ -49,7 +49,7 @@ public static class CheckDuplicateBeatsCli
         await using var db = await dbFactory.CreateDbContextAsync();
 
         // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(s => s.Slug == slug || s.NodeCode == slug);
+        var node = await NodeRefResolver.ResolveNodeAsync(db, slug);
         if (node == null)
         {
             Console.Error.WriteLine($"Node '{slug}' not found.");

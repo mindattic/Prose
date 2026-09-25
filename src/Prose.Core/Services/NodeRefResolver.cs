@@ -90,6 +90,19 @@ public static class NodeRefResolver
     }
 
     /// <summary>
+    /// <see cref="ResolveAsync(ProseDbContext, string?, CancellationToken)"/>, returning the node
+    /// itself (untracked). The replacement for the private
+    /// <c>FirstOrDefaultAsync(n =&gt; n.Slug == x || n.NodeCode == x)</c> copies, which took whichever
+    /// of several same-slug nodes across universes came back first.
+    /// </summary>
+    public static async Task<Data.Entities.Node?> ResolveNodeAsync(ProseDbContext db, string? reference, CancellationToken ct = default)
+    {
+        var id = await ResolveAsync(db, reference, ct);
+        return id == null ? null
+            : await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(n => n.Id == id.Value, ct);
+    }
+
+    /// <summary>
     /// Convenience overload for callers holding a factory rather than a live context.
     /// </summary>
     public static async Task<Guid?> ResolveAsync(

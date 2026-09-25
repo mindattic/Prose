@@ -296,7 +296,9 @@ public class LlmRouter : ILlmService
                 sw.Stop();
                 prompts.Capture(id, modelLabel, temperature, maxTokens, capturedInput, user, response, (int)sw.ElapsedMilliseconds);
                 ledger?.Record(id, modelLabel, capturedInput + user, response);
-                var historyId = await RecordCallHistoryAsync(id, modelLabel, success: true, hopIndex, capturedInput, response, errorMessage: null, (int)sw.ElapsedMilliseconds);
+                // The whole input, as the ledger records it: the history left out the user prompt,
+                // usually the bulk of the tokens, so the DB and the in-memory ledger disagreed.
+                var historyId = await RecordCallHistoryAsync(id, modelLabel, success: true, hopIndex, capturedInput + user, response, errorMessage: null, (int)sw.ElapsedMilliseconds);
                 await RecordPromptCaptureAsync(historyId, id, modelLabel, capturedInput, user, response, (int)sw.ElapsedMilliseconds);
                 if (attempted.Count > 0)
                     log.LogWarning(
@@ -304,12 +306,19 @@ public class LlmRouter : ILlmService
                         id, attempted.Count, string.Join(" -> ", attempted.Select(a => a.Id)));
                 return response;
             }
+            catch (OperationCanceledException) when (ct.IsCancellationRequested)
+            {
+                // The caller cancelled: that is not this provider failing. Walking on tried every
+                // remaining provider with the dead token and ended in an AggregateException no
+                // caller recognised as a cancellation.
+                throw;
+            }
             catch (Exception ex)
             {
                 sw.Stop();
                 attempted.Add((id, ex));
                 prompts.Capture(id, modelLabel, temperature, maxTokens, capturedInput, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
-                var failedHistoryId = await RecordCallHistoryAsync(id, modelLabel, success: false, hopIndex, capturedInput, outputText: "", errorMessage: ex.Message, (int)sw.ElapsedMilliseconds);
+                var failedHistoryId = await RecordCallHistoryAsync(id, modelLabel, success: false, hopIndex, capturedInput + user, outputText: "", errorMessage: ex.Message, (int)sw.ElapsedMilliseconds);
                 await RecordPromptCaptureAsync(failedHistoryId, id, modelLabel, capturedInput, user, $"(ERROR: {ex.Message})", (int)sw.ElapsedMilliseconds);
                 log.LogWarning(ex, "LlmRouter: provider={Provider} failed, trying next in fallback chain", id);
             }

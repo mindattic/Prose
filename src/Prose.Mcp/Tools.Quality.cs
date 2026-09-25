@@ -171,7 +171,7 @@ public class QualityTools
         else
         {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            var s = await NodeRefResolver.ResolveNodeAsync(db, nodeIdOrSlug);
             if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
             nodeId = s.Id;
         }
@@ -267,7 +267,7 @@ public class QualityTools
         else
         {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            var s = await NodeRefResolver.ResolveNodeAsync(db, nodeIdOrSlug);
             if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
             nodeId = s.Id;
         }
@@ -326,7 +326,7 @@ public class QualityTools
         else
         {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            var s = await NodeRefResolver.ResolveNodeAsync(db, nodeIdOrSlug);
             if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
             nodeId = s.Id;
         }
@@ -371,7 +371,7 @@ public class QualityTools
         else
         {
             // IgnoreQueryFilters(): explicit id/slug, not ambient scope (2026-08-17).
-            var s = await db.Nodes.IgnoreQueryFilters().AsNoTracking().FirstOrDefaultAsync(x => x.Slug == nodeIdOrSlug || x.NodeCode == nodeIdOrSlug);
+            var s = await NodeRefResolver.ResolveNodeAsync(db, nodeIdOrSlug);
             if (s == null) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
             nodeId = s.Id;
         }

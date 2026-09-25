@@ -123,8 +123,10 @@ public sealed class DocContextStack
     public IReadOnlyList<StackEntry> GetActive(Guid contextId)
     {
         if (!contexts.TryGetValue(contextId, out var state)) return [];
+        // A force-pin (score >= 999) keeps its original tier, usually topic, so tier order put the
+        // POV register LAST — after a large node doc had already used up the budget.
         return [.. state.Entries.Values
-            .OrderBy(e => TierRank(e.Tier))
+            .OrderBy(e => e.Score >= 999 ? -1 : TierRank(e.Tier))
             .ThenByDescending(e => e.LastTouchedAction)
             .ThenByDescending(e => e.Score)
             .ThenBy(e => e.RelativePath, StringComparer.Ordinal)];

@@ -51,6 +51,11 @@ public class GeminiCliService : ILlmService
         var prompt = string.IsNullOrWhiteSpace(system) ? user : $"{system}\n\n{user}";
         var (exitCode, stdout, stderr) = await RunAsync(prompt, model, ct);
 
+        // A failed run's stdout ("quota exceeded", a stack trace) is not prose: it used to come
+        // back as the model's answer, and the router's fallback never ran.
+        if (exitCode != 0)
+            throw new InvalidOperationException($"Gemini CLI exited {exitCode}. {stderr} {stdout}".Trim());
+
         var text = ParseResponse(stdout);
         if (!string.IsNullOrEmpty(text))
             return text;
@@ -82,9 +87,11 @@ public class GeminiCliService : ILlmService
         }
         catch (JsonException)
         {
-            return trimmed;
+            return trimmed; // plain-text mode (older CLI versions)
         }
-        return trimmed;
+        // JSON with neither "response" nor "error" is not an answer; returning the raw JSON wrote
+        // it into prose as if the model had said it.
+        throw new InvalidOperationException($"Gemini CLI returned JSON with no response: {(trimmed.Length > 300 ? trimmed[..300] : trimmed)}");
     }
 
     // Same rationale as CodexCliService.ProcessTimeout: a hung `gemini` process previously
@@ -141,11 +148,14 @@ public class GeminiCliService : ILlmService
             // argument) sidesteps Windows argv-length limits for long prose-generation
             // prompts. Non-TTY stdin alone is documented to trigger Gemini CLI's headless
             // mode without needing -p.
+            // Reads start BEFORE the prompt is written: a prompt larger than the pipe buffer, with
+            // the CLI printing to stdout/stderr before it has read all of stdin, deadlocked both
+            // sides until the 10-minute timeout.
+            var stdoutTask = proc.StandardOutput.ReadToEndAsync(ct);
+            var stderrTask = proc.StandardError.ReadToEndAsync(ct);
             await proc.StandardInput.WriteAsync(prompt.AsMemory(), ct);
             proc.StandardInput.Close();
 
-            var stdoutTask = proc.StandardOutput.ReadToEndAsync(ct);
-            var stderrTask = proc.StandardError.ReadToEndAsync(ct);
             await Task.WhenAll(stdoutTask, stderrTask);
             await proc.WaitForExitAsync(ct);
 

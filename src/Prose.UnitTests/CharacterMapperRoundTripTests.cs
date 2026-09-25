@@ -68,6 +68,26 @@ public class CharacterMapperRoundTripTests
     }
 
     [Test]
+    public void Disambiguation_picks_the_right_candidate_when_candidates_are_value_tuples()
+    {
+        var svc = new EntityDisambiguationService(null!, Microsoft.Extensions.Logging.Abstractions.NullLogger<EntityDisambiguationService>.Instance);
+        var book = Guid.NewGuid();
+        var other = Guid.NewGuid();
+        var candidates = new List<(Guid Id, Guid? Origin)>
+        {
+            (Guid.NewGuid(), other),   // another book's namesake
+            (Guid.NewGuid(), null),    // universe-wide
+            (Guid.NewGuid(), book),    // this book's own
+        };
+
+        var mine = svc.ResolveBestMatch(candidates, c => c.Origin, book, "Narrows");
+        Assert.That(mine, Is.EqualTo(candidates[2]), "the book's own entity wins");
+
+        var shared = svc.ResolveBestMatch(candidates, c => c.Origin, Guid.NewGuid(), "Narrows");
+        Assert.That(shared, Is.EqualTo(candidates[1]), "a book with no namesake of its own gets the universe-wide one, not an empty default");
+    }
+
+    [Test]
     public void An_apostrophe_inside_a_name_is_not_a_quoted_alias()
     {
         var p = CharacterMapper.ParseName("D'Angelo O'Neil");

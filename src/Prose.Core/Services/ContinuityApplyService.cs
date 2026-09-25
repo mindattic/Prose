@@ -86,6 +86,9 @@ public class ContinuityApplyService
         var claim = all.FirstOrDefault(c => c.ClaimUid == claimUid);
         if (claim == null)
             return new ApplyResult { Ok = false, Error = $"Claim not found or not in an applyable state: {claimUid}" };
+        // Applying twice appended the fact a second time (continuity_facts is never deduped).
+        if (!string.IsNullOrEmpty(claim.AppliedAt))
+            return new ApplyResult { Ok = false, Error = $"Claim {claimUid} was already applied at {claim.AppliedAt} (to {claim.AppliedToField})." };
 
         // Locate the entity's Records.Json blob in SQL.
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -347,15 +350,16 @@ public class ContinuityApplyService
             if (rec != null) return rec;
         }
 
-        // Name fallback — required when the claim was extracted from prose
-        // and only stored the display name.
-        if (!string.IsNullOrWhiteSpace(claim.EntityName))
+        // Name fallback — required when the claim was extracted from prose and only stored the
+        // display name. Only then: a claim that carries a real id must not land on a namesake. And
+        // only when the name is unambiguous: the lookup spans universes (claims carry none), so a
+        // same-named entity elsewhere could receive the fact.
+        if (!TryParseGuid(claim.EntityId, out _) && !string.IsNullOrWhiteSpace(claim.EntityName))
         {
-            var rec = await db.Records.IgnoreQueryFilters().Include(r => r.Entity)
-                .FirstOrDefaultAsync(r =>
-                    r.Entity!.EntityType == entityType
-                    && r.Entity.Name == claim.EntityName, ct);
-            if (rec != null) return rec;
+            var recs = await db.Records.IgnoreQueryFilters().Include(r => r.Entity)
+                .Where(r => r.Entity!.EntityType == entityType && r.Entity.Name == claim.EntityName)
+                .Take(2).ToListAsync(ct);
+            if (recs.Count == 1) return recs[0];
         }
         return null;
     }

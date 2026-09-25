@@ -62,7 +62,9 @@ public class CodexCliService : ILlmService
         var (exitCode, stdout, stderr) = await RunAsync(args, prompt, ct);
 
         var text = ParseAgentMessages(stdout);
-        if (!string.IsNullOrEmpty(text))
+        // Only a clean exit's text is an answer: a turn that printed an early agent message and
+        // then failed returned the partial text as a success, and fallback was skipped.
+        if (!string.IsNullOrEmpty(text) && exitCode == 0)
             return text;
 
         log.LogWarning("Codex CLI produced no agent_message (exit {ExitCode}): {Stderr}", exitCode, stderr);
@@ -162,14 +164,16 @@ public class CodexCliService : ILlmService
 
         try
         {
+            // Reads start BEFORE the prompt is written, or a prompt bigger than the pipe buffer
+            // plus early CLI output deadlocked both sides until the timeout.
+            var stdoutTask = proc.StandardOutput.ReadToEndAsync(ct);
+            var stderrTask = proc.StandardError.ReadToEndAsync(ct);
             if (stdinPayload is not null)
             {
                 await proc.StandardInput.WriteAsync(stdinPayload.AsMemory(), ct);
             }
             proc.StandardInput.Close();
 
-            var stdoutTask = proc.StandardOutput.ReadToEndAsync(ct);
-            var stderrTask = proc.StandardError.ReadToEndAsync(ct);
             await Task.WhenAll(stdoutTask, stderrTask);
             await proc.WaitForExitAsync(ct);
 

@@ -119,7 +119,9 @@ public static class WoundCli
         if (string.IsNullOrWhiteSpace(status)) { Console.Error.WriteLine("[wound status] --status is required (active|healed|noted)."); return 1; }
 
         var ledger = services.GetRequiredService<WoundLedgerService>();
-        var updated = await ledger.SetStatusAsync(woundId, status);
+        int updated;
+        try { updated = await ledger.SetStatusAsync(woundId, status); }
+        catch (ArgumentException ex) { Console.Error.WriteLine($"[wound status] {ex.Message}"); return 1; }
         Console.WriteLine(updated > 0
             ? $"[wound status] Wound {woundId} → {status}."
             : $"[wound status] Wound {woundId} not found.");

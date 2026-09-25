@@ -73,14 +73,23 @@ public sealed class EntityDisambiguationService(
     {
         if (candidates.Count == 1) return candidates[0];
 
-        if (contextBookOrSeriesId is { } ctxId)
+        // Indexes, not FirstOrDefault + "is not null": for a value-tuple T (SceneContextAssembler
+        // passes one) a miss is default(T), which is never null, so the first rule always "won"
+        // with an empty entity and the right candidate was never reached.
+        int IndexOf(Func<T, bool> match)
         {
-            var exact = candidates.FirstOrDefault(c => originNodeIdSelector(c) == ctxId);
-            if (exact is not null) return exact;
+            for (var i = 0; i < candidates.Count; i++) if (match(candidates[i])) return i;
+            return -1;
         }
 
-        var shared = candidates.FirstOrDefault(c => originNodeIdSelector(c) is null);
-        if (shared is not null) return shared;
+        if (contextBookOrSeriesId is { } ctxId)
+        {
+            var exact = IndexOf(c => originNodeIdSelector(c) == ctxId);
+            if (exact >= 0) return candidates[exact];
+        }
+
+        var shared = IndexOf(c => originNodeIdSelector(c) is null);
+        if (shared >= 0) return candidates[shared];
 
         log.LogWarning(
             "EntityDisambiguationService: {Count} entities named '{Name}' collide with no OriginNodeId " +

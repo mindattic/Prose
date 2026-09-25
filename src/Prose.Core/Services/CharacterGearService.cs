@@ -92,7 +92,7 @@ public class CharacterGearService
 
         var rows = await db.CharacterBelongingsGear.AsNoTracking()
             .Where(g => EF.Functions.Like(g.GearName, pattern))
-            .Join(db.Entities.AsNoTracking(), g => g.CharacterId, e => e.Id,
+            .Join(db.Entities.IgnoreQueryFilters().AsNoTracking(), g => g.CharacterId, e => e.Id,
                 (g, e) => new { g.Id, g.CharacterId, Owner = e.Name, g.Bucket, g.Position, g.GearName, g.GearEntityId })
             .OrderBy(x => x.Owner).ThenBy(x => x.Id)
             .ToListAsync(ct);
