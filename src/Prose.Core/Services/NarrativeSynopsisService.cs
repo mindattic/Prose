@@ -25,7 +25,7 @@ public class NarrativeSynopsisService(ILlmService llm, IDbContextFactory<ProseDb
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.AsNoTracking()
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
@@ -38,7 +38,7 @@ public class NarrativeSynopsisService(ILlmService llm, IDbContextFactory<ProseDb
         List<Beat> indexedBeats;
         if (isFlatNode)
         {
-            var nodeWithBeats = await db.Nodes.AsNoTracking()
+            var nodeWithBeats = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Include(s => s.BeatNodes).ThenInclude(sb => sb.Beat)
                 .FirstOrDefaultAsync(s => s.Id == nodeId, ct);
             indexedBeats = nodeWithBeats?.BeatNodes

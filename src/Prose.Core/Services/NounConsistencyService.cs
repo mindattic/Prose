@@ -36,7 +36,7 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
     public async Task<NounConsistencyReport> ValidateAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking()
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .FirstOrDefaultAsync(n => n.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         return await ScanAsync(db, node, auditRunner, ct);

@@ -174,9 +174,19 @@ public class WorldStatePrecheckService
         var index = GetGearIndex();
         var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-        foreach (var (name, _, kind) in index)
+        // Whole words only, longest name first, and a matched span is blanked before shorter
+        // names are tried: a bare substring test flagged the gear node "Van" in "vanished", and
+        // "Knife" inside a carried "Combat Knife".
+        var remaining = synopsis;
+        foreach (var (name, _, kind) in index.OrderByDescending(g => g.Name.Length))
         {
-            if (synopsis.IndexOf(name, StringComparison.OrdinalIgnoreCase) < 0) continue;
+            if (string.IsNullOrWhiteSpace(name)) continue;
+            var rx = new System.Text.RegularExpressions.Regex(
+                @"(?<!\w)" + System.Text.RegularExpressions.Regex.Escape(name) + @"(?!\w)",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+            var m = rx.Match(remaining);
+            if (!m.Success) continue;
+            remaining = rx.Replace(remaining, mm => new string(' ', mm.Length));
             if (available.Contains(name)) continue;
             if (!seen.Add(name)) continue;
 

@@ -15,7 +15,7 @@ public class ExportCleanupService
     public async Task<string> CleanAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking().Where(s => s.Id == nodeId)
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters().Where(s => s.Id == nodeId)
             .FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var universeSlug = await db.Universes.AsNoTracking().Where(u => u.Id == node.UniverseId)

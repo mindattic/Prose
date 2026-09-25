@@ -66,7 +66,7 @@ public static class PublishManuscriptCli
                 _               => await export.ExportPdfAsync(nodeId, author),
             };
             await using var dbVersion = await dbFactory.CreateDbContextAsync();
-            var version = await dbVersion.Nodes.AsNoTracking().Where(n => n.Id == nodeId)
+            var version = await dbVersion.Nodes.AsNoTracking().IgnoreQueryFilters().Where(n => n.Id == nodeId)
                 .Select(n => n.Version).FirstOrDefaultAsync();
             cleanup.ArchiveCurrent(nodeDir, version);
             Console.WriteLine($"[{tag}] Wrote: {path}");

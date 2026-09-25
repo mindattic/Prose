@@ -109,7 +109,7 @@ public static class ReimportNodeCli
         var nodeRef = slug ?? id;
         var resolvedId = await NodeRefResolver.ResolveAsync(db, nodeRef);
         var node = resolvedId == null ? null
-            : await db.Nodes.FirstOrDefaultAsync(n => n.Id == resolvedId.Value);
+            : await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == resolvedId.Value);
 
         if (node == null)
         {

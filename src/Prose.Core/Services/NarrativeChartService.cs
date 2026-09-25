@@ -87,7 +87,7 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes
+        var node = await db.Nodes.IgnoreQueryFilters()
             .AsNoTracking()
             .Where(n => n.Id == nodeId)
             .Select(n => new { n.Id, n.Title, n.DefaultLocation })
@@ -175,7 +175,7 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
         // whose name (or first name) appears in any beat goal.
         if (allCharacters.Count < 3)
         {
-            var universeId = await db.Nodes.AsNoTracking()
+            var universeId = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(n => n.Id == nodeId)
                 .Select(n => n.UniverseId)
                 .FirstOrDefaultAsync(ct);
@@ -292,7 +292,8 @@ public class NarrativeChartService(IDbContextFactory<ProseDbContext> dbFactory)
             .ToListAsync(ct);
         if (entities.Count == 0) return library;
 
-        var idsByName = entities.ToDictionary(e => e.Name, e => e.Id, StringComparer.OrdinalIgnoreCase);
+        var idsByName = entities.GroupBy(e => e.Name, StringComparer.OrdinalIgnoreCase) // names are not unique: two "Kyle"s threw
+            .ToDictionary(g => g.Key, g => g.First().Id, StringComparer.OrdinalIgnoreCase);
         var entityIds = entities.Select(e => e.Id).ToList();
 
         var traits = await db.Set<CharacterPsychologyTrait>().AsNoTracking()

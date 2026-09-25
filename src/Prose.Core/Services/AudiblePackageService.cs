@@ -55,7 +55,7 @@ public class AudiblePackageService
         CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking()
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 

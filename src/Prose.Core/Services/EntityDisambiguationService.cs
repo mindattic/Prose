@@ -38,7 +38,7 @@ public sealed class EntityDisambiguationService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var current = await db.Nodes.AsNoTracking()
+        var current = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.Id == nodeId)
             .Select(n => new { n.Id, n.Kind, n.ParentNodeId })
             .FirstOrDefaultAsync(ct);
@@ -48,7 +48,7 @@ public sealed class EntityDisambiguationService(
         var parentId = current.ParentNodeId;
         for (var depth = 0; depth < 5 && parentId is { } pid; depth++)
         {
-            var parent = await db.Nodes.AsNoTracking()
+            var parent = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(n => n.Id == pid)
                 .Select(n => new { n.Id, n.Kind, n.ParentNodeId })
                 .FirstOrDefaultAsync(ct);

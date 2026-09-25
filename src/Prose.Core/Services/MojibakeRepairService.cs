@@ -253,7 +253,7 @@ public class MojibakeRepairService
         }
 
         string nodeTitle = nodeId.HasValue
-            ? (await db.Nodes.AsNoTracking()
+            ? (await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(s => s.Id == nodeId.Value)
                 .Select(s => s.Title)
                 .FirstOrDefaultAsync(ct) ?? nodeId.Value.ToString())

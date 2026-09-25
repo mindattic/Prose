@@ -81,7 +81,7 @@ public class AskService
             // Scoped to one node: pull every enabled beat in order. A novella
             // fits in context, so the answer is drawn from the whole book rather
             // than a sample. Cap total chars defensively for very long nodes.
-            var node = await db.Nodes.AsNoTracking()
+            var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(s => s.Id == sid)
                 .Select(s => new { s.Slug, s.Title })
                 .FirstOrDefaultAsync(ct);

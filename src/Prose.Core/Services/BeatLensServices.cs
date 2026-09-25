@@ -65,7 +65,7 @@ public abstract class BeatLensService
     {
         await using var db = await DbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.AsNoTracking()
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
@@ -96,7 +96,7 @@ public abstract class BeatLensService
 
         var sb2 = new StringBuilder();
         foreach (var (num, text) in beats)
-            sb2.Append("### Beat ").Append(num).Append('\n').Append(text).Append("\n\n");
+            sb2.Append("### Beat ").Append(num).Append('\n').Append(BeatMarkup.StripEntityTags(text)).Append("\n\n"); // tags ate the char budget
         var numbered = Truncate(sb2.ToString(), maxChars);
 
         const string system =

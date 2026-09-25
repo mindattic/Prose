@@ -126,7 +126,7 @@ public class SemanticFidelityService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.AsNoTracking()
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(s => s.Id == nodeId)
             .Select(s => new { s.Id, s.Slug, s.Title, s.Seed, s.Description, s.Score })
             .FirstOrDefaultAsync(ct);
@@ -179,6 +179,11 @@ public class SemanticFidelityService
             {
                 var hits = await embeddings.FindSimilarBeatNodesAsync(
                     bibleAnchor!, k: beats.Count + 10, nodeScope: nodeId, ct: ct);
+                // No hits for a node that has beats is a failed query (the embedding call failed
+                // softly, or the scope filter hid the book), not "nothing aligns": purging on it
+                // deleted every [bible] finding and filed none.
+                if (hits.Count == 0 && beats.Any(b => !string.IsNullOrWhiteSpace(b.Text)))
+                    bibleQuerySucceeded = false;
                 foreach (var hit in hits)
                     bibleAlignmentById[hit.ScopeId] = hit.Similarity;
             }
@@ -205,12 +210,20 @@ public class SemanticFidelityService
         {
             try
             {
+                // Stripped, like the stored beat embeddings: GUID tokens from <entity> tags pulled
+                // every tagged beat's synopsis-to-prose similarity down.
                 var pairs = intentCandidates
-                    .Select(b => (b.Description!, b.Text!))
+                    .Select(b => (b.Description!, BeatMarkup.StripEntityTags(b.Text!)))
                     .ToList();
                 var sims = await embeddings.ComputeSimilaritiesBatchAsync(pairs, ct);
-                for (int i = 0; i < intentCandidates.Count; i++)
-                    intentAlignmentById[intentCandidates[i].Id] = sims[i];
+                // A failed embedding call does not throw: it comes back as 0.0 for every pair.
+                // Read as scores, that purged the real [intent] findings and filed every beat as
+                // aligning 0%. Exact zeros across the board are the failure signature.
+                if (sims.Count != intentCandidates.Count || sims.All(x => x == 0.0))
+                    intentQuerySucceeded = false;
+                else
+                    for (int i = 0; i < intentCandidates.Count; i++)
+                        intentAlignmentById[intentCandidates[i].Id] = sims[i];
             }
             catch (Exception ex)
             {
@@ -373,7 +386,10 @@ public class SemanticFidelityService
             // fail-open bug class as SwainAuditService/CanonContradictionService this session,
             // just at beat-hook scope. Compute first; only clear the prior finding once there's
             // a fresh verdict ready to take its place.
-            var similarity = await embeddings.ComputeSimilarityAsync(synopsis, beatText, ct);
+            var similarity = await embeddings.ComputeSimilarityAsync(synopsis, BeatMarkup.StripEntityTags(beatText), ct);
+            // Exactly 0.0 is the embedding call failing softly, not a verdict: keep the prior
+            // finding and file nothing, rather than a false 0% High.
+            if (similarity == 0.0) return;
 
             // Beat-scoped so a since-fixed beat's stale finding is cleared even when this
             // save no longer triggers a re-emit below (Upsert alone never removes a row whose

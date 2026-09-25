@@ -58,7 +58,7 @@ public sealed class DiscussionContextBuilder(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var bookTitle = await db.Nodes.AsNoTracking()
+        var bookTitle = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.Id == bookNodeId).Select(n => n.Title).FirstOrDefaultAsync(ct) ?? "(untitled)";
 
         var ordered = await workbench.GetOrderedBeatsAsync(bookNodeId, ct);

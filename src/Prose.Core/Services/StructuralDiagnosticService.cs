@@ -84,19 +84,25 @@ public class StructuralDiagnosticService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.AsNoTracking()
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .FirstOrDefaultAsync(s => s.Id == nodeId, ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
 
         var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
 
-        var beats = await (
+        // Leaf-walk order then SortKey (SortKey alone interleaved every chapter's beat 1, then
+        // every beat 2), and the reader's text — tags used up the 40k window.
+        var leafOrder = new Dictionary<Guid, int>();
+        foreach (var leaf in searchIds) leafOrder.TryAdd(leaf, leafOrder.Count);
+        var beats = (await (
             from sb in db.BeatNodes.AsNoTracking()
             join b in db.Beats.AsNoTracking() on sb.BeatId equals b.Id
             where searchIds.Contains(sb.NodeId)
-            orderby sb.SortKey
-            select b.Text
-        ).ToListAsync(ct);
+            select new { sb.NodeId, sb.SortKey, b.Text }
+        ).ToListAsync(ct))
+            .OrderBy(x => leafOrder.GetValueOrDefault(x.NodeId, int.MaxValue)).ThenBy(x => x.SortKey)
+            .Select(x => BeatMarkup.StripEntityTags(x.Text))
+            .ToList();
 
         var text = string.Join("\n\n---\n\n", beats.Where(t => !string.IsNullOrWhiteSpace(t)));
 
@@ -497,7 +503,7 @@ Set jargon_count to an integer. pass = 0-2 jargon terms before first physical be
             var root = doc.RootElement;
 
             var resultStr = root.TryGetProperty("result", out var rp) ? rp.GetString() ?? "warn" : "warn";
-            var result = resultStr.ToLower() switch
+            var result = resultStr.ToLowerInvariant() switch
             {
                 "pass" => StructuralCheckResult.Pass,
                 "fail" => StructuralCheckResult.Fail,

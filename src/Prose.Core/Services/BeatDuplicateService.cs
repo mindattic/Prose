@@ -75,7 +75,7 @@ public class BeatDuplicateService(
         Guid nodeId, double threshold = DefaultThreshold, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking()
+        var node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.Id == nodeId)
             .Select(n => new { n.Id, n.Slug })
             .FirstOrDefaultAsync(ct)

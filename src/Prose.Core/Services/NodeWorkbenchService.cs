@@ -610,7 +610,7 @@ public class NodeWorkbenchService
                 var walkId = directNodeId;
                 for (var depth = 0; depth < 10; depth++)
                 {
-                    var parent = await db.Nodes.AsNoTracking()
+                    var parent = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                         .Where(n => n.Id == walkId)
                         .Select(n => n.ParentNodeId)
                         .FirstOrDefaultAsync(ct);
@@ -779,7 +779,7 @@ public class NodeWorkbenchService
                 var walkId = directNodeId;
                 for (var depth = 0; depth < 10; depth++)
                 {
-                    var parent = await db.Nodes.AsNoTracking()
+                    var parent = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                         .Where(n => n.Id == walkId)
                         .Select(n => n.ParentNodeId)
                         .FirstOrDefaultAsync(ct);

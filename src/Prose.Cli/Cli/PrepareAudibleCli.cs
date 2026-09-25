@@ -59,7 +59,7 @@ public static class PrepareAudibleCli
             }
             else if (Guid.TryParse(id, out var exact))
             {
-                node = await db.Nodes.AsNoTracking()
+                node = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                     .FirstOrDefaultAsync(s => s.Id == exact);
             }
             else

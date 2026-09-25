@@ -174,33 +174,42 @@ public class EmbeddingHealthService
             await using var db = await dbFactory.CreateDbContextAsync(ct);
 
             var pairs    = orderedBeatIds.Zip(orderedBeatIds.Skip(1)).ToList();
-            var pParams  = new List<SqlParameter>();
-            var valueRows = new List<string>();
 
-            for (int i = 0; i < pairs.Count; i++)
+            // Chunked: two parameters per pair hit SQL Server's 2,100-parameter cap on a book of
+            // ~1,050 beats, the query threw, and the catch below reported no repetitive or
+            // jarring pairs for the whole book.
+            const int PairsPerQuery = 900;
+            var rows = new List<AdjacentRow>(pairs.Count);
+            for (int start = 0; start < pairs.Count; start += PairsPerQuery)
             {
-                var (a, b) = pairs[i];
-                pParams.Add(new SqlParameter($"@a{i}", a));
-                pParams.Add(new SqlParameter($"@b{i}", b));
-                valueRows.Add($"(@a{i}, @b{i}, {i})");
+                var pParams  = new List<SqlParameter>();
+                var valueRows = new List<string>();
+
+                for (int i = start; i < Math.Min(pairs.Count, start + PairsPerQuery); i++)
+                {
+                    var (a, b) = pairs[i];
+                    pParams.Add(new SqlParameter($"@a{i}", a));
+                    pParams.Add(new SqlParameter($"@b{i}", b));
+                    valueRows.Add($"(@a{i}, @b{i}, {i})");
+                }
+
+                pParams.Add(new SqlParameter("@p_scope", ScopeBeatNode));
+
+                var sql = $"""
+                    SELECT
+                        pairs.PairIndex,
+                        pairs.A AS BeatIdA,
+                        pairs.B AS BeatIdB,
+                        1.0 - VECTOR_DISTANCE('cosine', p1.Vector, p2.Vector) AS Similarity
+                    FROM (VALUES {string.Join(", ", valueRows)}) AS pairs(A, B, PairIndex)
+                    JOIN dbo.ProseEmbeddings p1 ON p1.ScopeId = pairs.A AND p1.ScopeKind = @p_scope
+                    JOIN dbo.ProseEmbeddings p2 ON p2.ScopeId = pairs.B AND p2.ScopeKind = @p_scope
+                    ORDER BY pairs.PairIndex
+                    """;
+
+                rows.AddRange(await db.Database.SqlQueryRaw<AdjacentRow>(sql, pParams.ToArray<object>())
+                    .ToListAsync(ct));
             }
-
-            pParams.Add(new SqlParameter("@p_scope", ScopeBeatNode));
-
-            var sql = $"""
-                SELECT
-                    pairs.PairIndex,
-                    pairs.A AS BeatIdA,
-                    pairs.B AS BeatIdB,
-                    1.0 - VECTOR_DISTANCE('cosine', p1.Vector, p2.Vector) AS Similarity
-                FROM (VALUES {string.Join(", ", valueRows)}) AS pairs(A, B, PairIndex)
-                JOIN dbo.ProseEmbeddings p1 ON p1.ScopeId = pairs.A AND p1.ScopeKind = @p_scope
-                JOIN dbo.ProseEmbeddings p2 ON p2.ScopeId = pairs.B AND p2.ScopeKind = @p_scope
-                ORDER BY pairs.PairIndex
-                """;
-
-            var rows = await db.Database.SqlQueryRaw<AdjacentRow>(sql, pParams.ToArray<object>())
-                .ToListAsync(ct);
 
             return rows
                 .Select(r => new AdjacentBeatPair(
