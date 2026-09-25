@@ -244,11 +244,15 @@ public static class CharacterMapper
     /// after its SaveChanges — the enforced single-writer sync. Self-contained
     /// (commits its own change). No-op if the character no longer exists.
     /// </summary>
-    public static async Task RefreshReadModelAsync(ProseDbContext db, Guid id, CancellationToken ct = default)
+    /// <param name="afterIntentionalWrite">True right after a deliberate edit (Save, a child-row
+    /// write): the depth guard exists to stop a lossy REBUILD downgrading the cache, but after an
+    /// edit that emptied a field on purpose it kept the old content and stamped it fresh, so every
+    /// by-name read served the cleared data indefinitely.</param>
+    public static async Task RefreshReadModelAsync(ProseDbContext db, Guid id, CancellationToken ct = default, bool afterIntentionalWrite = false)
     {
         var data = LoadOne(db, id);
         if (data == null) return;
-        await UpsertReadModelAsync(db, id, data, ct);
+        await UpsertReadModelAsync(db, id, data, ct, force: afterIntentionalWrite);
         try
         {
             await db.SaveChangesAsync(ct);
@@ -1069,6 +1073,11 @@ public static class CharacterMapper
         AddPrimary(db, id, b.FavoriteFood,    "favorite_food");
         AddPrimary(db, id, b.Stimulant,       "stimulant");
         AddPrimary(db, id, b.CommDevice,      "comm_device");
+        // Read back by Materialize but never written, so every save of the character (the gear
+        // table is cleared first) deleted them — a continuity-applied ranged weapon included.
+        AddPrimary(db, id, b.RangedWeapon,    "ranged_weapon");
+        AddPrimary(db, id, b.ToolSlot,        "tool_slot");
+        AddGear(db, id, b.CarriedLoot,        "carried_loot");
         foreach (var kv in b.Other)
             db.CharacterBelongingsExtras.Add(new CharacterBelongingsExtra { CharacterId = id, KeyName = kv.Key, Value = kv.Value ?? "" });
 
@@ -1304,8 +1313,10 @@ public static class CharacterMapper
         if (string.IsNullOrWhiteSpace(fullName)) return new("", "", "", "");
 
         // Drop anything between paired single or double quotes — those are aliases,
-        // not part of the structured name.
-        var stripped = System.Text.RegularExpressions.Regex.Replace(fullName, "(['\"])([^'\"]*)\\1", "");
+        // not part of the structured name. The quotes must stand at word edges: an apostrophe
+        // inside a name is not a quote, and pairing any two of them turned "D'Angelo O'Neil"
+        // into "DNeil".
+        var stripped = System.Text.RegularExpressions.Regex.Replace(fullName, "(?<=^|\\s)(['\"])([^'\"]+)\\1(?=\\s|$)", "");
         var tokens = stripped.Split(' ', '\t', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
         if (tokens.Length == 0) return new("", "", "", "");
 

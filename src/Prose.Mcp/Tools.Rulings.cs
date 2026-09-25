@@ -37,9 +37,13 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     [FactoryTool("record_ruling", "2026-09-23", Cli = "FactoryCli --ruling add")]
     public async Task<string> RecordRulingImpl(string kind, string text, string? nodeIdOrSlug = null, string? pattern = null, decimal? maxPer1kWords = null, string source = "author")
     {
+        var bookId = await Resolve(nodeIdOrSlug);
+        // A mistyped book is not a universe-wide ruling.
+        if (!string.IsNullOrWhiteSpace(nodeIdOrSlug) && bookId == null)
+            return JsonSerializer.Serialize(new { ok = false, error = "node_not_found", nodeIdOrSlug }, JsonOpts);
         try
         {
-            var row = await rulings.RecordAsync(new RulingDraft(kind, text, await Resolve(nodeIdOrSlug), null, pattern, maxPer1kWords, source));
+            var row = await rulings.RecordAsync(new RulingDraft(kind, text, bookId, null, pattern, maxPer1kWords, source));
             return JsonSerializer.Serialize(new { ok = true, row.Id, row.Kind, row.Text, row.Pattern, row.MaxPer1kWords, row.Source, row.At }, JsonOpts);
         }
         catch (ArgumentException ex) { return JsonSerializer.Serialize(new { ok = false, error = ex.Message }, JsonOpts); }
@@ -102,7 +106,14 @@ public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContex
     public async Task<string> RecordLawViolationsImpl(string nodeIdOrSlug, string? entityId = null, string? searchPattern = null)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
-        var hits = await rulings.FindRecordViolationsAsync(id, Guid.TryParse(entityId, out var e) ? e : null, searchPattern);
+        Guid? entity = null;
+        if (!string.IsNullOrWhiteSpace(entityId))
+        {
+            // A malformed id used to widen the search to every record silently.
+            if (!Guid.TryParse(entityId, out var e)) return JsonSerializer.Serialize(new { error = "bad_entity_id", entityId }, JsonOpts);
+            entity = e;
+        }
+        var hits = await rulings.FindRecordViolationsAsync(id, entity, searchPattern);
         return JsonSerializer.Serialize(new { count = hits.Count, records = hits.Select(h => h.EntityId).Distinct().Count(), hits }, JsonOpts);
     }
 

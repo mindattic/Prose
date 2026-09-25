@@ -80,8 +80,12 @@ public class ReadingTools(ReadGateService gate, IDbContextFactory<ProseDbContext
     public async Task<string> ListReadNotesImpl(string nodeIdOrSlug, string status = "open", string? kind = null)
     {
         if (await Resolve(nodeIdOrSlug) is not { } id) return JsonSerializer.Serialize(new { error = "node_not_found", nodeIdOrSlug }, JsonOpts);
-        var rows = await gate.ListNotesAsync(id, status, kind);
-        return JsonSerializer.Serialize(new { count = rows.Count, notes = rows }, JsonOpts);
+        try
+        {
+            var rows = await gate.ListNotesAsync(id, status, kind);
+            return JsonSerializer.Serialize(new { count = rows.Count, notes = rows }, JsonOpts);
+        }
+        catch (ArgumentException ex) { return JsonSerializer.Serialize(new { error = "bad_request", message = ex.Message }, JsonOpts); }
     }
 
     [McpServerTool, Description("Resolve a read note: a question answered or a defect fixed. Optionally name the beat (global Beat.Number) that answered it.")]

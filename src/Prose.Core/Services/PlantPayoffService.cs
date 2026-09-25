@@ -28,8 +28,7 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
         // RegisterAsync takes an arbitrary nodeId, so a plant CAN legitimately be registered
         // directly on the book itself even when it has chapters. Always include nodeId plus
         // every leaf descendant, recursing past any nested Collection (2026-08-09 fix).
-        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        if (!searchIds.Contains(nodeId)) searchIds.Add(nodeId);
+        var searchIds = await SearchIdsAsync(db, nodeId, ct);
         var rows = await db.PlantPayoffs
             .AsNoTracking()
             .Where(p => searchIds.Contains(p.NodeId))
@@ -46,6 +45,29 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
     // LogicSweepService.RunAsync. searchIds is already in true reading order (leaf ids from
     // GetLeafDescendantIdsAsync, depth-first/SortKey-per-level, plus the book node itself
     // appended last) — order by each pair's node position in it first, then its own SortKey.
+    /// <summary>Every node under <paramref name="rootId"/> in reading order (each node before its
+    /// children, siblings by SortKey), then the root itself. RegisterAsync takes any node, so the
+    /// leaves alone missed a plant registered on a chapter that has scene children.</summary>
+    private static async Task<List<Guid>> SearchIdsAsync(ProseDbContext db, Guid rootId, CancellationToken ct)
+    {
+        var result = new List<Guid>();
+        var visited = new HashSet<Guid> { rootId };
+        async Task Walk(Guid id)
+        {
+            var children = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
+                .Where(n => n.ParentNodeId == id).OrderBy(n => n.SortKey).Select(n => n.Id).ToListAsync(ct);
+            foreach (var child in children)
+            {
+                if (!visited.Add(child)) continue; // cycle guard
+                result.Add(child);
+                await Walk(child);
+            }
+        }
+        await Walk(rootId);
+        result.Add(rootId);
+        return result;
+    }
+
     private static List<PlantPayoff> OrderByChapterThenSortKey(List<PlantPayoff> rows, List<Guid> searchIds)
     {
         var chapterOrder = searchIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
@@ -247,8 +269,7 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
         // SS-A43: for book-mode nodes, plants are registered on chapter children — but
         // RegisterAsync takes an arbitrary nodeId, so always include nodeId itself too.
         // Recurses past any nested Collection (2026-08-09 fix).
-        var searchIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        if (!searchIds.Contains(nodeId)) searchIds.Add(nodeId);
+        var searchIds = await SearchIdsAsync(db, nodeId, ct);
         var allRows = await db.PlantPayoffs
             .AsNoTracking()
             .Where(p => searchIds.Contains(p.NodeId))

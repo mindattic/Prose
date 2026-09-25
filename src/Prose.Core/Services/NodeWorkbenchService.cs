@@ -172,7 +172,7 @@ public class NodeWorkbenchService
         // now a no-op kept only so existing call sites don't need editing.
         var direct = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
             .ToListAsync(ct);
         foreach (var d in direct)
@@ -189,7 +189,7 @@ public class NodeWorkbenchService
         // BookArchiveService.ArchiveAsync, fixed earlier the same day).
         var children = await db.Nodes.IgnoreQueryFilters()
             .Where(s => s.ParentNodeId == nodeId && s.Kind != "book")
-            .OrderBy(s => s.SortKey)
+            .OrderBy(s => s.SortKey).ThenBy(s => s.Id)
             .Select(s => s.Id)
             .ToListAsync(ct);
         foreach (var c in children)
@@ -249,7 +249,7 @@ public class NodeWorkbenchService
         // explicitly needs cross-universe traversal.
         var children = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
             .Where(n => n.ParentNodeId == nodeId)
-            .OrderBy(n => n.SortKey)
+            .OrderBy(n => n.SortKey).ThenBy(n => n.Id)
             .Select(n => n.Id)
             .ToListAsync(ct);
 
@@ -855,7 +855,7 @@ public class NodeWorkbenchService
 
         var siblings = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => n.ParentNodeId == afterSibling.ParentNodeId && n.Id != nodeId)
-            .OrderBy(n => n.SortKey)
+            .OrderBy(n => n.SortKey).ThenBy(n => n.Id)
             .Select(n => new { n.Id, n.SortKey })
             .ToListAsync(ct);
         var pos = siblings.FindIndex(s => s.Id == afterSiblingId);
@@ -1188,7 +1188,7 @@ public class NodeWorkbenchService
         // at defaults — a duplicate has no recordings, no reviews, nothing stale.
         var srcBeats = await db.BeatNodes
             .Where(sb => sb.NodeId == srcNodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id, (sb, b) => new { sb.SortKey, Beat = b })
             .ToListAsync(ct);
         var now = DateTime.UtcNow;
@@ -1236,7 +1236,7 @@ public class NodeWorkbenchService
         // and fixed in BookArchiveService.ArchiveAsync/WalkAsync, 2026-08-17).
         var children = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(s => s.ParentNodeId == srcNodeId)
-            .OrderBy(s => s.SortKey)
+            .OrderBy(s => s.SortKey).ThenBy(s => s.Id)
             .Select(s => new { s.Id, s.SortKey })
             .ToListAsync(ct);
         foreach (var child in children)
@@ -1428,7 +1428,7 @@ public class NodeWorkbenchService
                 "Splitting its direct beats would duplicate chapters. Reconcile the existing children first.");
 
         var rows = await db.BeatNodes.Where(sb => sb.NodeId == nodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .Join(db.Beats, sb => sb.BeatId, b => b.Id,
                   (sb, b) => new { sb.BeatId, sb.SortKey, b.IsChapterStart, b.Title })
             .ToListAsync(ct);
@@ -1532,7 +1532,7 @@ public class NodeWorkbenchService
         if (existingChildren > 0) return null; // already chaptered — nothing to do
 
         var enabled = await db.BeatNodes.Where(sb => sb.NodeId == storyId)
-            .OrderBy(sb => sb.SortKey).ToListAsync(ct);
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId).ToListAsync(ct);
         if (enabled.Count == 0) throw new InvalidOperationException($"'{story.Title}' has no direct beats to wrap.");
 
         var childId = Guid.CreateVersion7();
@@ -1587,7 +1587,7 @@ public class NodeWorkbenchService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var ordered = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .ToListAsync(ct);
 
         double prevSk, nextSk;
@@ -1620,7 +1620,7 @@ public class NodeWorkbenchService
             db.ChangeTracker.Clear();
             ordered = await db.BeatNodes
                 .Where(sb => sb.NodeId == nodeId)
-                .OrderBy(sb => sb.SortKey)
+                .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
                 .ToListAsync(ct);
             if (afterBeatId == null)
             {
@@ -1685,7 +1685,7 @@ public class NodeWorkbenchService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .ToListAsync(ct);
         if (siblings.Count == 0) return 0;
         double sk = 100.0;
@@ -1716,7 +1716,7 @@ public class NodeWorkbenchService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .ToListAsync(ct);
         var subject = siblings.FirstOrDefault(sb => sb.BeatId == beatId)
             ?? throw new InvalidOperationException($"Beat {beatId} not in node {nodeId}.");
@@ -1748,7 +1748,7 @@ public class NodeWorkbenchService
             db.ChangeTracker.Clear();
             siblings = await db.BeatNodes
                 .Where(sb => sb.NodeId == nodeId)
-                .OrderBy(sb => sb.SortKey)
+                .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
                 .ToListAsync(ct);
             subject = siblings.First(sb => sb.BeatId == beatId);
             others = siblings.Where(sb => sb.BeatId != beatId).ToList();
@@ -1810,7 +1810,7 @@ public class NodeWorkbenchService
 
         var targetSiblings = await db.BeatNodes
             .Where(sb => sb.NodeId == toNodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .ToListAsync(ct);
 
         double prevSk, nextSk;
@@ -1835,7 +1835,7 @@ public class NodeWorkbenchService
             db.ChangeTracker.Clear();
             targetSiblings = await db.BeatNodes
                 .Where(sb => sb.NodeId == toNodeId)
-                .OrderBy(sb => sb.SortKey)
+                .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
                 .ToListAsync(ct);
             if (afterBeatId == null)
             {
@@ -1935,7 +1935,7 @@ public class NodeWorkbenchService
 
         var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
         if (pos < 0) throw new InvalidOperationException($"Beat {beatId} not in node {nodeId}.");
@@ -1973,6 +1973,9 @@ public class NodeWorkbenchService
         });
         await db.SaveChangesAsync(ct);
         await splitPosTx.CommitAsync(ct);
+        // The mention index follows the text, as it does for every other save.
+        await DeriveMentionsLoggedAsync(target.Id, firstHalf);
+        await DeriveMentionsLoggedAsync(second.Id, secondHalf);
         log.LogInformation("Split beat {BeatId} at position {Pos} (snapped to {Snap}) → ({First}|{Second}) in node {NodeId}",
             beatId, splitPosition, snapped, firstHalf.Length, secondHalf.Length, nodeId);
         return second;
@@ -2001,7 +2004,7 @@ public class NodeWorkbenchService
         // Find the target's SortKey in this node to slot the new beat.
         var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
         if (pos < 0) throw new InvalidOperationException($"Beat {beatId} not in node {nodeId}.");
@@ -2039,6 +2042,9 @@ public class NodeWorkbenchService
             SortKey  = (prevSk + nextSk) / 2.0,
         });
         await db.SaveChangesAsync(ct);
+        // The mention index follows the text, as it does for every other save.
+        await DeriveMentionsLoggedAsync(target.Id, firstHalf);
+        await DeriveMentionsLoggedAsync(second.Id, secondHalf);
         log.LogInformation("Split beat {BeatId} → ({First}|{Second}) in node {NodeId}", beatId, firstHalf.Length, secondHalf.Length, nodeId);
         return second;
     }
@@ -2067,7 +2073,7 @@ public class NodeWorkbenchService
 
         var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
         if (pos < 0) throw new InvalidOperationException($"Beat {beatId} not in node {nodeId}.");
@@ -2120,6 +2126,10 @@ public class NodeWorkbenchService
         }
 
         await db.SaveChangesAsync(ct);
+        // The mention index follows the text, as it does for every other save.
+        await DeriveMentionsLoggedAsync(target.Id, paragraphs[0]);
+        for (int i = 1; i < paragraphs.Count; i++)
+            await DeriveMentionsLoggedAsync(newIds[i - 1], paragraphs[i]);
         log.LogInformation("Burst beat {Beat} into {N} paragraphs in node {Node}", beatId, paragraphs.Count, nodeId);
         return newIds;
     }
@@ -2368,7 +2378,7 @@ public class NodeWorkbenchService
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var siblings = await db.BeatNodes
             .Where(sb => sb.NodeId == nodeId)
-            .OrderBy(sb => sb.SortKey)
+            .OrderBy(sb => sb.SortKey).ThenBy(sb => sb.BeatId)
             .ToListAsync(ct);
         var pos = siblings.FindIndex(sb => sb.BeatId == beatId);
         if (pos < 0) throw new InvalidOperationException($"Beat {beatId} not in node {nodeId}.");
@@ -2400,6 +2410,8 @@ public class NodeWorkbenchService
             db.Beats.Remove(target);
         }
         await db.SaveChangesAsync(ct);
+        // The surviving beat now carries the absorbed beat's mentions too.
+        await DeriveMentionsLoggedAsync(prev.Id, prev.Text);
         log.LogInformation("Joined beat {Beat} into {Prev} in node {Node}", beatId, prevId, nodeId);
     }
 

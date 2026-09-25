@@ -22,15 +22,6 @@ public class ChapterRenumberService(
     IDbContextFactory<ProseDbContext> dbFactory,
     ILogger<ChapterRenumberService> log)
 {
-    /// <summary>
-    /// <c>Chapter 12 — The Interview</c>. Accepts an em dash, en dash, hyphen or colon as the
-    /// separator so a title that drifted from the house style is still recognised as numbered
-    /// rather than silently skipped.
-    /// </summary>
-    private static readonly Regex NumberedChapter =
-        new(@"^\s*Chapter\s+(?<num>\d+)\s*(?<sep>[—–\-:])\s*(?<title>.+?)\s*$",
-            RegexOptions.Compiled | RegexOptions.IgnoreCase);
-
     public sealed record Rename(Guid NodeId, int Position, string OldTitle, string NewTitle)
     {
         public bool IsChange => !string.Equals(OldTitle, NewTitle, StringComparison.Ordinal);
@@ -54,9 +45,11 @@ public class ChapterRenumberService(
 
         // The book's own children in reading order — the units a reader meets. Not a leaf walk: a
         // chapter that has been given scenes is still one chapter to the reader.
+        // A Drafts bucket (Kind "book") is skipped exactly as the reading-order walk skips it: no
+        // reader meets it, so it must not take a number in the sequence.
         var children = await db.Nodes.IgnoreQueryFilters()
-            .Where(n => n.ParentNodeId == bookId)
-            .OrderBy(n => n.SortKey)
+            .Where(n => n.ParentNodeId == bookId && n.Kind != "book")
+            .OrderBy(n => n.SortKey).ThenBy(n => n.Id)
             .ToListAsync(ct);
 
         var renames = new List<Rename>();
@@ -66,15 +59,18 @@ public class ChapterRenumberService(
         for (var i = 0; i < children.Count; i++)
         {
             var node = children[i];
-            var m = NumberedChapter.Match(node.Title ?? "");
-            if (!m.Success)
+            // ChapterTitle.Parse, not a local regex: the local one required a subtitle, so a bare
+            // "Chapter 2" (what ChapterTitle.Format emits with no subtitle) was left alone while the
+            // chapter after it was renumbered onto the same number.
+            var parsed = ChapterTitle.Parse(node.Title);
+            if (parsed.Kind != ChapterTitleKind.Chapter || parsed.Number is null)
             {
                 unnumbered.Add(node.Title ?? "(untitled)");
                 continue;
             }
 
             // House style is an em dash, whatever the original separator was.
-            var newTitle = $"Chapter {next} — {m.Groups["title"].Value}";
+            var newTitle = ChapterTitle.Format(next, parsed.Subtitle);
             renames.Add(new Rename(node.Id, i + 1, node.Title ?? "", newTitle));
             next++;
         }

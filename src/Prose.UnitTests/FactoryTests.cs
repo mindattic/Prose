@@ -400,6 +400,46 @@ public class FactoryTests
     }
 
     [Test]
+    public async Task A_beat_whose_stored_hash_is_null_can_still_be_read()
+    {
+        var (book, beats) = await BookWithTwoChaptersAsync();
+        await using (var db = await dbFactory.CreateDbContextAsync())
+            await db.Beats.Where(b => b.Id == beats[0]).ExecuteUpdateAsync(s => s.SetProperty(b => b.TextHash, (string?)null));
+
+        var ordered = await workbench.GetOrderedBeatsAsync(book);
+        var first = ordered.Single(o => o.Beat.Id == beats[0]).Beat;
+        Assert.That(first.TextHash, Is.Null);
+        var marked = await gate.MarkReadAsync(book, [(first.Id, ReadGateService.HashOf(first))], "test");
+        Assert.That(marked, Is.EqualTo(1));
+        var status = await gate.GetStatusAsync(book);
+        Assert.That(status.Unread.Any(u => u.BeatId == beats[0]), Is.False);
+    }
+
+    [Test]
+    public async Task A_ruling_recorded_on_a_chapter_applies_to_its_book()
+    {
+        var (book, _) = await BookWithTwoChaptersAsync();
+        Guid chapter;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+            chapter = await db.Nodes.Where(n => n.ParentNodeId == book).OrderBy(n => n.SortKey).Select(n => n.Id).FirstAsync();
+
+        var row = await rulings.RecordAsync(new RulingDraft(RulingKinds.Incidental, "Morrison is an invented street", chapter, null, "Morrison"));
+        Assert.That(row.BookId, Is.EqualTo(book));
+        Assert.That((await rulings.ListAsync(book)).Select(r => r.Id), Does.Contain(row.Id));
+    }
+
+    [Test]
+    public async Task A_ruling_superseded_twice_leaves_one_active_replacement()
+    {
+        var (book, _) = await BookWithTwoChaptersAsync();
+        var old = await rulings.RecordAsync(new RulingDraft(RulingKinds.Law, "no guns", book, null, null));
+        await rulings.SupersedeAsync(old.Id, new RulingDraft(RulingKinds.Law, "no guns, ever", null, null, null));
+        Assert.ThrowsAsync<ArgumentException>(() => rulings.SupersedeAsync(old.Id, new RulingDraft(RulingKinds.Law, "guns are fine", null, null, null)));
+        var active = (await rulings.ListAsync(book)).Where(r => r.Kind == RulingKinds.Law).Select(r => r.Text).ToList();
+        Assert.That(active, Is.EqualTo(new[] { "no guns, ever" }));
+    }
+
+    [Test]
     public async Task Next_is_the_first_blocking_leaf_then_the_first_failing_station_of_a_book_on_the_line()
     {
         var (book, _) = await BookWithTwoChaptersAsync();

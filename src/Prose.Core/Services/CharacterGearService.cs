@@ -123,7 +123,7 @@ public class CharacterGearService
         db.CharacterBelongingsGear.Remove(row);
         await db.SaveChangesAsync(ct);
 
-        try { await CharacterMapper.RefreshReadModelAsync(db, characterId, ct); }
+        try { await CharacterMapper.RefreshReadModelAsync(db, characterId, ct, afterIntentionalWrite: true); }
         catch (Exception ex)
         {
             log.LogWarning(ex,

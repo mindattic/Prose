@@ -1149,7 +1149,7 @@ public class NodeTools
 
         // Receipts for exactly what is being returned, at the hash of the text being returned.
         int? marked = markRead == true
-            ? await readGate.MarkReadAsync(node.Id, slice.Select(x => (x.Beat.Id, x.Beat.TextHash ?? "")), readBy!)
+            ? await readGate.MarkReadAsync(node.Id, slice.Select(x => (x.Beat.Id, ReadGateService.HashOf(x.Beat))), readBy!)
             : null;
 
         object BeatRow((int position, Guid NodeId, Beat Beat) x) => new

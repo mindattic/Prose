@@ -231,7 +231,7 @@ public class CharacterRepository : EfRepository<CharacterData>
         // Enforced single-writer sync: regenerate this character's materialized
         // read-model from the just-persisted relational record so GetAll/GetById
         // (which read off the projection) never serve stale data after an edit.
-        CharacterMapper.RefreshReadModelAsync(db, id).GetAwaiter().GetResult();
+        CharacterMapper.RefreshReadModelAsync(db, id, afterIntentionalWrite: true).GetAwaiter().GetResult();
 
         InvalidateCacheExternal();
         InvalidateMappedCache();

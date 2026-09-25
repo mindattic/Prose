@@ -190,7 +190,7 @@ public class ProvenanceService
         row.Provenance = grade;
         await db.SaveChangesAsync(ct);
 
-        try { await CharacterMapper.RefreshReadModelAsync(db, row.CharacterId); }
+        try { await CharacterMapper.RefreshReadModelAsync(db, row.CharacterId, afterIntentionalWrite: true); }
         catch (Exception ex)
         {
             log.LogWarning(ex,

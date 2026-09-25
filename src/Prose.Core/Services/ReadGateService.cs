@@ -104,13 +104,18 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
         return new ReadStatus(bookId, scope?.Count ?? bookOrder.Count, unread);
     }
 
+    /// <summary>The hash the read gate compares: the stored one, or — when a raw write left it NULL
+    /// (the drift-guard trigger does) — the same hash computed from the text. Comparing NULL against
+    /// the "" a caller delivered meant such a beat could never be marked read, and blocked export.</summary>
+    public static string HashOf(Beat beat) => beat.TextHash ?? Beat.ComputeHash(beat.Text);
+
     /// <summary>The rule, pure. Null = read as it stands.</summary>
     public static (UnreadReason Reason, string? Detail)? Judge(
         Beat beat, Guid? prev, Guid? next, BeatReadReceipt? receipt,
         IEnumerable<(Guid BeatId, string Name, DateTime ModifiedAt)> mentions)
     {
         if (receipt == null) return (UnreadReason.NeverRead, null);
-        if (!string.Equals(receipt.TextHash, beat.TextHash, StringComparison.Ordinal)) return (UnreadReason.TextChanged, null);
+        if (!string.Equals(receipt.TextHash, HashOf(beat), StringComparison.Ordinal)) return (UnreadReason.TextChanged, null);
         if (receipt.PrevBeatId != prev || receipt.NextBeatId != next)
             return (UnreadReason.Moved, receipt.PrevBeatId != prev ? "the beat before it changed" : "the beat after it changed");
         var changed = mentions.Where(m => m.ModifiedAt > receipt.ReadAt).Select(m => m.Name).Distinct().ToList();
@@ -168,7 +173,7 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
         foreach (var (beatId, hash) in delivered)
         {
             if (!index.TryGetValue(beatId, out var i)) continue;
-            if (!string.Equals(order[i].Beat.TextHash, hash, StringComparison.Ordinal)) continue;
+            if (!string.Equals(HashOf(order[i].Beat), hash, StringComparison.Ordinal)) continue;
             var row = await db.BeatReadReceipts.FirstOrDefaultAsync(r => r.BeatId == beatId, ct);
             if (row == null) { row = new BeatReadReceipt { BeatId = beatId }; db.BeatReadReceipts.Add(row); }
             row.TextHash = hash;
@@ -197,7 +202,7 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
                    ?? throw new ArgumentException($"#{beatNumber} is not a beat of this node.");
         var note = new BeatReadNote
         {
-            BeatId = beat.Id, TextHash = beat.TextHash ?? "", Kind = kind, Text = text.Trim(),
+            BeatId = beat.Id, TextHash = HashOf(beat), Kind = kind, Text = text.Trim(),
             ReadBy = string.IsNullOrWhiteSpace(readBy) ? "unknown" : readBy.Trim(),
         };
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -214,17 +219,25 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
     public async Task<List<NoteRow>> ListNotesAsync(Guid nodeId, string? status = "open", string? kind = null,
         CancellationToken ct = default)
     {
+        // Normalised and checked like AddNoteAsync: "Open" or "Defect" used to match nothing and
+        // report zero notes, which reads exactly like "no open defects".
+        status = (status ?? "").Trim().ToLowerInvariant();
+        kind = (kind ?? "").Trim().ToLowerInvariant();
+        if (status.Length > 0 && status is not ("open" or "resolved" or "all"))
+            throw new ArgumentException("status must be open, resolved or all.");
+        if (kind.Length > 0 && !NoteKinds.Contains(kind))
+            throw new ArgumentException($"kind must be one of {string.Join(", ", NoteKinds)}.");
         var order = await workbench.GetOrderedBeatsAsync(nodeId, ct);
         var pos = order.Select((o, i) => (o.Beat, i)).ToDictionary(x => x.Beat.Id, x => (Position: x.i + 1, x.Beat));
         var ids = pos.Keys.ToList();
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var q = db.BeatReadNotes.AsNoTracking().Where(n => ids.Contains(n.BeatId));
-        if (!string.IsNullOrWhiteSpace(status) && status != "all") q = q.Where(n => n.Status == status);
-        if (!string.IsNullOrWhiteSpace(kind)) q = q.Where(n => n.Kind == kind);
+        if (status.Length > 0 && status != "all") q = q.Where(n => n.Status == status);
+        if (kind.Length > 0) q = q.Where(n => n.Kind == kind);
         var numberById = pos.ToDictionary(p => p.Key, p => p.Value.Beat.Number);
         return (await q.ToListAsync(ct))
             .Select(n => new NoteRow(n.Id, pos[n.BeatId].Position, pos[n.BeatId].Beat.Number, n.Kind, n.Status, n.Text,
-                !string.Equals(pos[n.BeatId].Beat.TextHash, n.TextHash, StringComparison.Ordinal),
+                !string.Equals(HashOf(pos[n.BeatId].Beat), n.TextHash, StringComparison.Ordinal),
                 n.ResolvedByBeatId is { } r && numberById.TryGetValue(r, out var rn) ? rn : null, n.At, n.ReadBy))
             .OrderBy(n => n.Position).ThenBy(n => n.At).ToList();
     }
@@ -233,15 +246,18 @@ public sealed class ReadGateService(IDbContextFactory<ProseDbContext> dbFactory,
     /// (global Beat.Number) that answered it.</summary>
     public async Task<bool> ResolveNoteAsync(Guid noteId, Guid nodeId, int? byBeatNumber = null, CancellationToken ct = default)
     {
+        var beats = (await workbench.GetOrderedBeatsAsync(nodeId, ct)).Select(o => o.Beat).ToList();
         Guid? byBeat = null;
         if (byBeatNumber is { } n)
-            byBeat = (await workbench.GetOrderedBeatsAsync(nodeId, ct)).Select(o => o.Beat).FirstOrDefault(b => b.Number == n)?.Id
+            byBeat = beats.FirstOrDefault(b => b.Number == n)?.Id
                      ?? throw new ArgumentException($"#{n} is not a beat of this node.");
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var note = await db.BeatReadNotes.FirstOrDefaultAsync(x => x.Id == noteId, ct);
-        if (note == null) return false;
+        // A note on another book's beat is not this node's to resolve.
+        if (note == null || !beats.Any(b => b.Id == note.BeatId)) return false;
         note.Status = "resolved";
-        note.ResolvedByBeatId = byBeat;
+        // Resolving again without naming a beat keeps the beat already recorded.
+        if (byBeat != null || note.ResolvedByBeatId == null) note.ResolvedByBeatId = byBeat;
         await db.SaveChangesAsync(ct);
         return true;
     }

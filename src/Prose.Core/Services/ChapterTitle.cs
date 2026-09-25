@@ -56,7 +56,7 @@ public static class ChapterTitle
     /// quietly blessing a second house style.</para>
     /// </summary>
     private static readonly Regex Pattern = new(
-        @"^\s*(?<kind>Chapter|Interlude|Prologue|Epilogue)\b\s*(?<num>\d+)?\s*(?:(?<sep>—|–|-|:)\s*(?<sub>\S.*?))?\s*$",
+        @"^\s*(?<kind>Chapter|Interlude|Prologue|Epilogue)\b\s*(?<num>\d+)?\s*(?:(?<sep>—|–|--|-|:)\s*(?<sub>\S.*?))?\s*$",
         RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
     /// <summary>Leading markdown hashes, so a heading written as <c>## Chapter 7</c> in prose is

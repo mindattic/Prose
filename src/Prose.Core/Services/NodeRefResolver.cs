@@ -52,12 +52,23 @@ public static class NodeRefResolver
 
         var lowered = trimmed.ToLowerInvariant();
 
+        // Slugs are unique only per universe and NodeCode not at all, so the same text can name
+        // nodes in two universes. The first row SQL Server happened to return used to win — a
+        // splice or read could land on another universe's book. The ambient universe breaks the
+        // tie; if it still does not name exactly one node, refuse, as an ambiguous prefix does.
         var bySlugOrCode = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => n.Slug.ToLower() == lowered
                      || (n.NodeCode != null && n.NodeCode.ToLower() == lowered))
-            .Select(n => (Guid?)n.Id)
-            .FirstOrDefaultAsync(ct);
-        if (bySlugOrCode != null) return bySlugOrCode;
+            .Select(n => new { n.Id, n.UniverseId })
+            .Take(10)
+            .ToListAsync(ct);
+        if (bySlugOrCode.Count == 1) return bySlugOrCode[0].Id;
+        if (bySlugOrCode.Count > 1)
+        {
+            var scoped = db.ScopedUniverseId;
+            var inScope = scoped == Guid.Empty ? [] : bySlugOrCode.Where(n => n.UniverseId == scoped).ToList();
+            return inScope.Count == 1 ? inScope[0].Id : null;
+        }
 
         // GUID-prefix fallback last: only reached when the reference isn't a real slug/code, and
         // only honoured when it identifies exactly one node.

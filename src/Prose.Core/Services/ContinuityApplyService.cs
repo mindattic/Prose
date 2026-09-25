@@ -411,7 +411,7 @@ public class ContinuityApplyService
         // Not optional: every read surface (get_character included) serves from
         // CharacterReadModels, not this bridge table directly — see
         // feedback_character_readmodel_refresh_required.
-        try { await CharacterMapper.RefreshReadModelAsync(db, characterId, ct); }
+        try { await CharacterMapper.RefreshReadModelAsync(db, characterId, ct, afterIntentionalWrite: true); }
         catch (Exception ex)
         {
             log.LogWarning(ex,

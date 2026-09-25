@@ -52,16 +52,23 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         }
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var universe = d.UniverseId;
+        // A universe-wide ruling with no universe named takes the caller's scope.
+        var universe = d.UniverseId ?? (UniverseScope.EffectiveId == Guid.Empty ? null : UniverseScope.EffectiveId);
+        var bookId = d.BookId;
         if (d.BookId is { } book)
+        {
             universe = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == book).Select(n => (Guid?)n.UniverseId).FirstOrDefaultAsync(ct)
                        ?? throw new ArgumentException($"book {book} not found.");
+            // Rulings are read per book (ListAsync matches BookId exactly), so a chapter id stored
+            // here was recorded, answered ok, and never applied anywhere.
+            bookId = await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, book, ct) ?? book;
+        }
         if (universe is not { } u || u == Guid.Empty) throw new ArgumentException("a universe-wide ruling needs a universe.");
 
         var row = new Ruling
         {
             UniverseId = u,
-            BookId = d.BookId,
+            BookId = bookId,
             Kind = d.Kind,
             Text = d.Text.Trim(),
             Pattern = string.IsNullOrWhiteSpace(d.Pattern) ? null : d.Pattern.Trim(),
@@ -95,9 +102,15 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         }
         var row = await RecordAsync(replacement, ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var o = await db.Rulings.FirstAsync(r => r.Id == id, ct);
-        o.SupersededById = row.Id;
-        await db.SaveChangesAsync(ct);
+        // Claim the old ruling in one conditional statement: two sessions superseding it at once
+        // otherwise both succeeded and left two active replacements.
+        var claimed = await db.Rulings.Where(r => r.Id == id && r.SupersededById == null)
+            .ExecuteUpdateAsync(s => s.SetProperty(r => r.SupersededById, (Guid?)row.Id), ct);
+        if (claimed == 0)
+        {
+            await db.Rulings.Where(r => r.Id == row.Id).ExecuteDeleteAsync(ct);
+            throw new ArgumentException("that ruling was superseded by someone else meanwhile; nothing was recorded.");
+        }
         return row;
     }
 

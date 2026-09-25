@@ -100,6 +100,26 @@ public class NodeRefResolverTests
     }
 
     [Test]
+    public async Task ASlugInTwoUniverses_ResolvesInTheAmbientOne_AndIsRefusedWhenUnscoped()
+    {
+        var glmz = AddBook(UniverseGlmz, "chapter-one", null);
+        var scry = AddBook(UniverseScry, "chapter-one", null);
+
+        universe.CurrentId = UniverseScry;
+        await using (var db = factory.CreateDbContext())
+            Assert.That(await NodeRefResolver.ResolveAsync(db, "chapter-one"), Is.EqualTo(scry));
+
+        universe.CurrentId = UniverseGlmz;
+        await using (var db = factory.CreateDbContext())
+            Assert.That(await NodeRefResolver.ResolveAsync(db, "chapter-one"), Is.EqualTo(glmz));
+
+        universe.CurrentId = Guid.Empty;
+        await using (var db = factory.CreateDbContext())
+            Assert.That(await NodeRefResolver.ResolveAsync(db, "chapter-one"), Is.Null,
+                "with no scope to break the tie, an ambiguous slug is refused, never guessed");
+    }
+
+    [Test]
     public async Task SlugAndCodeMatching_AreCaseInsensitive()
     {
         var bcoda = AddBook(UniverseGlmz, "bushido_coda", "BCODA");

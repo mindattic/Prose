@@ -71,6 +71,26 @@ public class ChapterRenumberTests
     }
 
     [Test]
+    public async Task RenumbersABareChapterTitle_SoNoTwoChaptersShareANumber()
+    {
+        using var _ = CanonFixture.ScopeTo(CanonFixture.UniverseA);
+        await using (var db = fixture.Factory.CreateDbContext())
+        {
+            (await db.Nodes.IgnoreQueryFilters().FirstAsync(n => n.Id == fixture.DeepChapter)).Title = "Chapter 3";
+            (await db.Nodes.IgnoreQueryFilters().FirstAsync(n => n.Id == fixture.FlatChapter)).Title = "Chapter 5 -- The Carousel";
+            await db.SaveChangesAsync();
+        }
+
+        await svc.RenumberAsync(fixture.BookA, apply: true);
+
+        await using var read = fixture.Factory.CreateDbContext();
+        var titles = await read.Nodes.IgnoreQueryFilters()
+            .Where(n => n.ParentNodeId == fixture.BookA).OrderBy(n => n.SortKey)
+            .Select(n => n.Title).ToListAsync();
+        Assert.That(titles, Is.EqualTo(new[] { "Chapter 1", "Chapter 2 — The Carousel" }));
+    }
+
+    [Test]
     public async Task IsIdempotent()
     {
         using var _ = CanonFixture.ScopeTo(CanonFixture.UniverseA);

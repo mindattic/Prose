@@ -136,7 +136,7 @@ public static class ReadBeatsCli
             return 1;
         }
         var marked = await services.GetRequiredService<ReadGateService>()
-            .MarkReadAsync(nodeId, slice.Select(x => (x.Beat.Id, x.Beat.TextHash ?? "")), readBy);
+            .MarkReadAsync(nodeId, slice.Select(x => (x.Beat.Id, ReadGateService.HashOf(x.Beat))), readBy);
         report.WriteLine($"[read-beats] marked {marked} of {slice.Count} beat(s) read by {readBy}.");
         return 0;
     }

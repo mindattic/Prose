@@ -113,6 +113,8 @@ public static class FactoryCli
                     {
                         // The records of the entities the book tags, against its laws (not its page-laws).
                         if (await Node(Flag("--node")) is not { } book) { Console.Error.WriteLine("[ruling] --node is required."); return 1; }
+                        if (Flag("--entity") is { Length: > 0 } rawEntity && !Guid.TryParse(rawEntity, out _))
+                            throw new ArgumentException($"--entity '{rawEntity}' is not an entity id.");
                         var hits = await rulings.FindRecordViolationsAsync(book, Guid.TryParse(Flag("--entity"), out var only) ? only : null, Flag("--pattern"));
                         foreach (var g in hits.GroupBy(h => (h.EntityName, h.EntityId)))
                         {

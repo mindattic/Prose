@@ -73,4 +73,22 @@ public class PlantPayoffUpdateTests
         var pp = await svc.RegisterAsync(nodeId, "plant", "payoff");
         Assert.ThrowsAsync<ArgumentException>(() => svc.UpdateDescriptionsAsync(pp.Id, null, "  "));
     }
+
+    [Test]
+    public async Task A_plant_registered_on_a_chapter_with_scene_children_is_found_from_the_book()
+    {
+        Guid bookId, chapterId;
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var book = new BookNode { Id = Guid.NewGuid(), Slug = "pp-book-" + Guid.NewGuid().ToString("N")[..8], Title = "Book" };
+            var chapter = new ChapterNode { Id = Guid.NewGuid(), Slug = "pp-ch-" + Guid.NewGuid().ToString("N")[..8], Title = "Chapter", ParentNodeId = book.Id, SortKey = 100 };
+            var scene = new SceneNode { Id = Guid.NewGuid(), Slug = "pp-sc-" + Guid.NewGuid().ToString("N")[..8], Title = "Scene", ParentNodeId = chapter.Id, SortKey = 100 };
+            db.Nodes.AddRange(book, chapter, scene);
+            await db.SaveChangesAsync();
+            (bookId, chapterId) = (book.Id, chapter.Id);
+        }
+        var pp = await svc.RegisterAsync(chapterId, "The key under the mat", "The door opens");
+
+        Assert.That((await svc.GetByNodeAsync(bookId)).Select(p => p.Id), Does.Contain(pp.Id));
+    }
 }

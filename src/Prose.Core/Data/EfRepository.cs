@@ -23,6 +23,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
 
     private List<T>? cache;
     private int cacheEpoch = -1;
+    private Guid cacheUniverseId;
     private readonly object cacheLock = new();
 
     /// <summary>
@@ -115,9 +116,15 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
         {
             // Invalidate the cache when the current universe changes (SwitchUniverse), so a list
             // built under GLMZ is never served while Fantasy is active (RFC 0006).
-            if (cache != null && cacheEpoch == UniverseScope.Epoch) return cache;
+            // The epoch alone is not enough: a per-call (flow) universe in the Hub changes the
+            // effective scope without bumping it, so the universe the list was built for is checked
+            // too — as CharacterRepository's own caches already do.
+            if (cache != null && cacheEpoch == UniverseScope.Epoch && cacheUniverseId == UniverseScope.EffectiveId) return cache;
         }
 
+        // Stamped with the scope it was queried under, captured before the query runs.
+        var builtEpoch = UniverseScope.Epoch;
+        var builtUniverse = UniverseScope.EffectiveId;
         using var db = dbFactory.CreateDbContext();
         var rows = db.Records
             .AsNoTracking()
@@ -140,7 +147,7 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
             }
         }
 
-        lock (cacheLock) { cache = list; cacheEpoch = UniverseScope.Epoch; }
+        lock (cacheLock) { cache = list; cacheEpoch = builtEpoch; cacheUniverseId = builtUniverse; }
         return list;
     }
 

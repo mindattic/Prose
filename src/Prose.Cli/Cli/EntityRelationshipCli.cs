@@ -246,7 +246,7 @@ public static class EntityRelationshipCli
     {
         try
         {
-            await CharacterMapper.RefreshReadModelAsync(db, characterId);
+            await CharacterMapper.RefreshReadModelAsync(db, characterId, afterIntentionalWrite: true);
         }
         catch (Exception ex)
         {
