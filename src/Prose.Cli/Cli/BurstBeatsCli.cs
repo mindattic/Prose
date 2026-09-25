@@ -72,11 +72,13 @@ public static class BurstBeatsCli
             var allNodes = await db.Nodes
                 .Select(s => new { s.Id, s.Slug, s.ParentNodeId })
                 .ToListAsync();
-            var bySlug = allNodes.Where(s => bookFilters.Contains(s.Slug)).Select(s => s.Id).ToList();
-            if (bySlug.Count == 0)
+            // Each filter through the shared resolver (NodeCode, GUID); any miss is an error, not a skip.
+            var bySlug = new List<Guid>();
+            foreach (var f in bookFilters)
             {
-                Console.Error.WriteLine($"[burst-beats] No node matched --book filters: {string.Join(", ", bookFilters)}");
-                return 2;
+                var id = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, f);
+                if (id == null) { Console.Error.WriteLine($"[burst-beats] No node matched --book {f}"); return 2; }
+                bySlug.Add(id.Value);
             }
             var byParent = allNodes.GroupBy(s => s.ParentNodeId ?? Guid.Empty).ToDictionary(g => g.Key, g => g.Select(x => x.Id).ToList());
             var stack = new Stack<Guid>(bySlug);
@@ -91,7 +93,18 @@ public static class BurstBeatsCli
         }
 
         var nodesQuery = db.Nodes.AsQueryable();
-        if (nodeFilters.Count > 0) nodesQuery = nodesQuery.Where(s => nodeFilters.Contains(s.Slug));
+        if (nodeFilters.Count > 0)
+        {
+            // Resolved, not raw-slug-matched: "--node <NodeCode>" matched nothing and exited 0.
+            var nodeIds = new List<Guid>();
+            foreach (var f in nodeFilters)
+            {
+                var id = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, f);
+                if (id == null) { Console.Error.WriteLine($"[burst-beats] No node matched --node {f}"); return 2; }
+                nodeIds.Add(id.Value);
+            }
+            nodesQuery = nodesQuery.IgnoreQueryFilters().Where(s => nodeIds.Contains(s.Id));
+        }
         if (bookDescendantIds.Count > 0) nodesQuery = nodesQuery.Where(s => bookDescendantIds.Contains(s.Id));
         if (!string.IsNullOrEmpty(kindFilter)) nodesQuery = nodesQuery.Where(s => s.Kind == kindFilter);
         var nodes = await nodesQuery.OrderBy(s => s.CreatedAt).ToListAsync();

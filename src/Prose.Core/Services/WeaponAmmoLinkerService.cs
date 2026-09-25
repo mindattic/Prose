@@ -34,10 +34,16 @@ public class WeaponAmmoLinkerService
         this.log       = log;
     }
 
-    public async Task LinkAllAsync(
+    /// <returns>The number of weapons that failed (call or parse).</returns>
+    public async Task<int> LinkAllAsync(
         string? localUrl, string? localKey, string? localModel,
         bool dryRun = false, CancellationToken ct = default)
     {
+        // The "cloud" branch sent the local placeholder key ("local") and the qwen model name to
+        // Claude: every call failed and the run still printed "Done." Refuse it up front.
+        if (string.IsNullOrWhiteSpace(localUrl))
+            throw new InvalidOperationException("link-weapon-ammo needs LocalReviewBaseUrl set: there is no cloud key wired for this path.");
+
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         // Load all ammunition entities: id + name + short description.
@@ -49,7 +55,7 @@ public class WeaponAmmoLinkerService
         if (ammoList.Count == 0)
         {
             log.LogWarning("No ammunition entities found — nothing to link.");
-            return;
+            return 0;
         }
 
         // Build ammo menu: "Name — first 60 chars of description"
@@ -175,6 +181,7 @@ public class WeaponAmmoLinkerService
         Console.WriteLine($"  linked  : {linked}");
         Console.WriteLine($"  skipped : {skipped}  (melee / no ammo)");
         Console.WriteLine($"  failed  : {failed}");
+        return failed;
     }
 
     private static string BuildPrompt(string ammoMenu)

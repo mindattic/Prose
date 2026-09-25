@@ -44,11 +44,11 @@ public static class LinkWeaponAmmoCli
         Console.WriteLine($"  dry-run  : {dryRun}");
         Console.WriteLine();
 
-        await linker.LinkAllAsync(resolvedUrl, resolvedKey, resolvedModel, dryRun, CancellationToken.None);
+        var failed = await linker.LinkAllAsync(resolvedUrl, resolvedKey, resolvedModel, dryRun, CancellationToken.None);
 
         Console.WriteLine();
-        Console.WriteLine("Done.");
-        return 0;
+        Console.WriteLine(failed > 0 ? $"Done with {failed} failure(s)." : "Done.");
+        return failed > 0 ? 1 : 0;
     }
 
     private static string? Flag(string[] args, string name)

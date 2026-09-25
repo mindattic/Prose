@@ -197,7 +197,7 @@ public static class SeedSensoryHintsCli
         {
             // Prefer known GUID; fall back to slug lookup.
             var weaponEntity = cw.KnownId != Guid.Empty
-                ? await db.Entities.AsNoTracking().FirstOrDefaultAsync(e => e.Id == cw.KnownId)
+                ? await db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == cw.KnownId) // explicit GLMZ id
                 : await db.Entities.AsNoTracking().FirstOrDefaultAsync(e => e.Slug == cw.Slug && e.EntityType == "weapon");
 
             if (weaponEntity == null) continue;
@@ -248,7 +248,9 @@ public static class SeedSensoryHintsCli
             }
 
             // Entity exists but no Weapons row yet
-            var entityById = await db.Entities.FindAsync(cw.KnownId);
+            // Unfiltered: FindAsync honours the universe filter, missed the GLMZ entity from another
+            // ambient universe, and "create from scratch" then hit a primary-key violation.
+            var entityById = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == cw.KnownId);
             if (entityById != null)
             {
                 db.Weapons.Add(new Weapon { Id = entityById.Id, Name = entityById.Name, Category = cw.Category, Description = cw.Description });
@@ -300,8 +302,13 @@ public static class SeedSensoryHintsCli
 
     private static async Task<Guid?> ResolveWeaponIdByName(ProseDbContext db, string name)
     {
-        var weapon = await db.Weapons.AsNoTracking().FirstOrDefaultAsync(w => w.Name == name);
-        if (weapon != null) return weapon.Id;
+        // Weapons has no universe filter: scope through the entity spine, and refuse a name two
+        // weapons share rather than overwrite whichever row came back first.
+        var ids = await db.Weapons.AsNoTracking().Where(w => w.Name == name)
+            .Select(w => w.Id).Where(id => db.Entities.Any(e => e.Id == id))
+            .Take(2).ToListAsync();
+        if (ids.Count > 1) { Console.Error.WriteLine($"  '{name}' names more than one weapon — pass its id."); return null; }
+        if (ids.Count == 1) return ids[0];
         var entity = await db.Entities.AsNoTracking()
             .FirstOrDefaultAsync(e => e.Name == name && e.EntityType == "weapon");
         return entity?.Id;

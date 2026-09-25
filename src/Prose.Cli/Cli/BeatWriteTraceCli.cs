@@ -142,7 +142,8 @@ public static class BeatWriteTraceCli
             // apart, and a 120 s slack double-counted the other arm's calls (2026-09-07).
             writeStart = latestBatchAt.Value.AddMilliseconds(-(totalStageMs + 15_000));
         }
-        var calls = writeStart == null ? callsAll : callsAll.Where(c => c.At >= writeStart.Value && (latestBatchAt == null || c.At <= latestBatchAt.Value.AddSeconds(5))).ToList();
+        // --batch N past the last write: "showing none" must mean none, not every call ever made.
+        var calls = batchBack > 0 && latestBatchAt == null ? [] : writeStart == null ? callsAll : callsAll.Where(c => c.At >= writeStart.Value && (latestBatchAt == null || c.At <= latestBatchAt.Value.AddSeconds(5))).ToList();
 
         var callRows = calls.Select(c => new CallRow(
             c.Stage ?? Unattributed, c.At, c.ProviderId, c.Model, c.Success,

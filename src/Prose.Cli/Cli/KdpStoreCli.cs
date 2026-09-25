@@ -129,9 +129,14 @@ public static class KdpSignOffCli
         {
             var known = await db.Nodes.AsNoTracking().IgnoreQueryFilters()
                 .Where(n => (n.NodeCode != null && codes.Contains(n.NodeCode)) || codes.Contains(n.Slug))
-                .Select(n => n.NodeCode ?? n.Slug)
+                .Select(n => new { n.NodeCode, n.Slug })
                 .ToListAsync();
-            var unknown = codes.Where(c => !known.Contains(c, StringComparer.Ordinal)).ToList();
+            // A slug input used to be checked against NodeCode ?? Slug — "bcoda-slug" never matched
+            // "BCODA" and was refused. Map every input to the book's store key instead.
+            string? KeyFor(string c) => known.FirstOrDefault(k => k.NodeCode == c)?.NodeCode
+                ?? known.Where(k => k.Slug == c).Select(k => k.NodeCode ?? k.Slug).FirstOrDefault();
+            var unknown = codes.Where(c => KeyFor(c) == null).ToList();
+            codes = codes.Select(c => KeyFor(c) ?? c).Distinct().ToList();
             if (unknown.Count > 0)
             {
                 Console.Error.WriteLine($"[kdp-signoff] No book with NodeCode (or slug) {string.Join(", ", unknown)} — nothing changed. Codes are case-sensitive.");
