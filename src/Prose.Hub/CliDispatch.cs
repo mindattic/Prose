@@ -213,6 +213,11 @@ public static class CliDispatch
         var originalErr = Console.Error;
         var originalIn = Console.In;
         var originalCwd = Environment.CurrentDirectory;
+        // A handler written for its own process signals failure through Environment.ExitCode
+        // (e.g. CompositionCli). In the Hub that set the HUB's exit code and the caller still
+        // got 0; capture it per call (calls are serialized by ConsoleGate) and restore it.
+        var originalExitCode = Environment.ExitCode;
+        Environment.ExitCode = 0;
         var outWriter = new StringWriter();
         var errWriter = new StringWriter();
         int exitCode;
@@ -232,6 +237,7 @@ public static class CliDispatch
                 Task t => await AwaitVoidTask(t),
                 _ => 0,
             };
+            if (exitCode == 0 && Environment.ExitCode != 0) exitCode = Environment.ExitCode;
         }
         catch (TargetInvocationException tie)
         {
@@ -256,6 +262,7 @@ public static class CliDispatch
             Console.SetError(originalErr);
             Console.SetIn(originalIn);
             Environment.CurrentDirectory = originalCwd;
+            Environment.ExitCode = originalExitCode;
             if (universeId != null) universeContext.SetFlowUniverse(null);
             ConsoleGate.Release();
         }
