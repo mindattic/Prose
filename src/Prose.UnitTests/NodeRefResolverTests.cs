@@ -120,6 +120,17 @@ public class NodeRefResolverTests
     }
 
     [Test]
+    public async Task AnExactNodeCode_BeatsASlugThatSpellsTheSame()
+    {
+        var book = AddBook(UniverseGlmz, "bushido-coda", "BCODA");
+        AddBook(UniverseGlmz, "bcoda", null);
+        universe.CurrentId = UniverseGlmz;
+
+        await using var db = factory.CreateDbContext();
+        Assert.That(await NodeRefResolver.ResolveAsync(db, "BCODA"), Is.EqualTo(book));
+    }
+
+    [Test]
     public async Task SlugAndCodeMatching_AreCaseInsensitive()
     {
         var bcoda = AddBook(UniverseGlmz, "bushido_coda", "BCODA");

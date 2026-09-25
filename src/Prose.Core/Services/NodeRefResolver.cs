@@ -59,15 +59,23 @@ public static class NodeRefResolver
         var bySlugOrCode = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => n.Slug.ToLower() == lowered
                      || (n.NodeCode != null && n.NodeCode.ToLower() == lowered))
-            .Select(n => new { n.Id, n.UniverseId })
+            .Select(n => new { n.Id, n.UniverseId, IsCode = n.NodeCode != null && n.NodeCode.ToLower() == lowered })
             .Take(10)
             .ToListAsync(ct);
         if (bySlugOrCode.Count == 1) return bySlugOrCode[0].Id;
         if (bySlugOrCode.Count > 1)
         {
+            // 1. The caller's universe, but only one the caller NAMED: an inherited default would
+            //    resolve a real ambiguity silently to it instead of refusing.
+            var pool = bySlugOrCode;
             var scoped = db.ScopedUniverseId;
-            var inScope = scoped == Guid.Empty ? [] : bySlugOrCode.Where(n => n.UniverseId == scoped).ToList();
-            return inScope.Count == 1 ? inScope[0].Id : null;
+            if (UniverseScope.IsExplicitlyScoped && scoped != Guid.Empty && pool.Any(n => n.UniverseId == scoped))
+                pool = pool.Where(n => n.UniverseId == scoped).ToList();
+            if (pool.Count == 1) return pool[0].Id;
+            // 2. An exact NodeCode over a slug that merely spells the same ("BCODA" the book vs a
+            //    node slugged "bcoda").
+            var codes = pool.Where(n => n.IsCode).ToList();
+            return codes.Count == 1 ? codes[0].Id : null;
         }
 
         // GUID-prefix fallback last: only reached when the reference isn't a real slug/code, and

@@ -52,8 +52,11 @@ public sealed class RulingService(IDbContextFactory<ProseDbContext> dbFactory, B
         }
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        // A universe-wide ruling with no universe named takes the caller's scope.
-        var universe = d.UniverseId ?? (UniverseScope.EffectiveId == Guid.Empty ? null : UniverseScope.EffectiveId);
+        // A universe-wide ruling with no universe named takes the caller's scope — only when the
+        // caller NAMED that scope. The inherited default (GLMZ) would otherwise receive a live law
+        // every time a --node was forgotten.
+        var universe = d.UniverseId
+            ?? (UniverseScope.IsExplicitlyScoped && UniverseScope.EffectiveId != Guid.Empty ? UniverseScope.EffectiveId : null);
         var bookId = d.BookId;
         if (d.BookId is { } book)
         {

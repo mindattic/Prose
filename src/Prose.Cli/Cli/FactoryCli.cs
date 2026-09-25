@@ -453,6 +453,15 @@ public static class FactoryCli
                         if (file == null || !File.Exists(file)) { Console.Error.WriteLine("[order] --file tree.json is required."); return 1; }
                         var tree = JsonNode.Parse(await File.ReadAllTextAsync(file)) as JsonObject
                                    ?? throw new ArgumentException("the seed file must be one JSON object (the root).");
+                        // Every node the tree names is resolved BEFORE the first order is added:
+                        // Node() throws on an unresolved one, and throwing mid-recursion left the
+                        // orders already added behind as a half-seeded tree.
+                        async Task CheckNodes(JsonObject n)
+                        {
+                            await Node(n["node"]?.GetValue<string>());
+                            foreach (var child in (n["children"] as JsonArray) ?? []) await CheckNodes(child!.AsObject());
+                        }
+                        await CheckNodes(tree);
                         var sid = await sessions.CurrentSessionIdAsync();
                         var count = 0;
                         async Task Seed(JsonObject n, Guid? parent)

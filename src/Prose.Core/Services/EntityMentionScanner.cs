@@ -255,7 +255,9 @@ public static class EntityMentionScanner
             var words = e.Name.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToList();
             // A leading honorific is not a name: "Captain Reyes" derived bare "Captain", so every
             // capitalised "Captain" tagged him. "Captain Reyes" offers "Reyes" alone.
-            var titled = words.Count >= 2 && CharacterMapper.NameTitles.Contains(words[0]);
+            // Only a title the length floor below would NOT already have dropped ("Captain", "Dr.",
+            // not "Dr"): short titles behave exactly as before.
+            var titled = words.Count >= 2 && words[0].Length >= 3 && CharacterMapper.NameTitles.Contains(words[0]);
             if (titled) words.RemoveAt(0);
             // Letter- or digit-edged only: a derived "Dr." or "Jr." would match every "Dr." in the
             // book once the scan stopped depending on \b (which never matched after the period).
@@ -264,6 +266,10 @@ public static class EntityMentionScanner
                             && char.IsLetterOrDigit(t[0]) && char.IsLetterOrDigit(t[^1]))
                 .ToList();
             if (tokens.Count < (titled ? 1 : 2)) continue;
+            // A titled name derived the title plus the surname before; it now derives the surname
+            // alone. Not the given name too: that is a NEW claim ("Elena" for "Captain Elena Reyes")
+            // that could collide with another character's and silently drop both.
+            if (titled) tokens = [tokens[^1]];
 
             // The numeral is dropped from the first/last pair, not from the name: "Praxis Operator
             // Five" offers "Praxis", never "Five" — and never "Operator" by promotion.

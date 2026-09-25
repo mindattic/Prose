@@ -180,6 +180,9 @@ public class MarkdownFileService
         // Accumulate raw `related:` frontmatter paths keyed by (FileRoot, RelativePath)
         // for resolution to GUIDs after all files are upserted.
         var rawRelatedMap = new Dictionary<(string, string), string>();
+        // Files whose processing threw: their frontmatter was never read, so an absent related:
+        // entry says nothing about them.
+        var failedFiles = new HashSet<(string, string)>();
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
@@ -328,6 +331,7 @@ public class MarkdownFileService
             catch (Exception ex)
             {
                 errors.Add($"{f.RelativePath}: {ex.Message}");
+                failedFiles.Add((f.FileRoot, f.RelativePath));
             }
         }
 
@@ -339,7 +343,7 @@ public class MarkdownFileService
                 errors.AddRange(await ResolveRelatedIdsAsync(db, rawRelatedMap, ct));
                 // A doc that DROPPED its related: line kept its old RelatedIds forever (only
                 // declaring files were visited), so the unlinked docs kept loading with it.
-                var synced = files.Select(f => (f.FileRoot, f.RelativePath)).ToHashSet();
+                var synced = files.Select(f => (f.FileRoot, f.RelativePath)).Where(k => !failedFiles.Contains(k)).ToHashSet();
                 var stale = (await db.MarkdownFiles.IgnoreQueryFilters()
                         .Where(m => m.RelatedIds != null && m.RelatedIds != "").ToListAsync(ct))
                     .Where(m => synced.Contains((m.FileRoot, m.RelativePath)) && !rawRelatedMap.ContainsKey((m.FileRoot, m.RelativePath)))

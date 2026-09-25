@@ -66,14 +66,20 @@ public class BookHealthService(
     public async Task<PublishReadinessReport> PublishReadinessAsync(Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.AsNoTracking()
+        // IgnoreQueryFilters: an explicit id; a book outside the ambient universe read as "not found".
+        var node = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
             .Where(n => n.Id == nodeId).Select(n => new { n.Slug }).FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException($"Node {nodeId} not found.");
         var slug = node.Slug ?? nodeId.ToString("N");
         var prefix = $"node:{slug}";
+        // Delimited: a bare StartsWith also took "node:foo-2…" findings, so another book's open
+        // findings blocked this one. Paths are "node:{slug}", "node:{slug}/…" or "node:{slug}#…".
+        var slash = prefix + "/";
+        var hash = prefix + "#";
 
         var openFindings = await db.Findings.AsNoTracking()
-            .Where(f => f.FilePath.StartsWith(prefix) && (f.Status == "New" || f.Status == "Triaged"))
+            .Where(f => (f.FilePath == prefix || f.FilePath.StartsWith(slash) || f.FilePath.StartsWith(hash))
+                        && (f.Status == "New" || f.Status == "Triaged"))
             .Select(f => new { f.Category, f.Severity, f.Summary })
             .ToListAsync(ct);
 

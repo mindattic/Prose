@@ -429,6 +429,13 @@ public class FactoryTests
     }
 
     [Test]
+    public void A_universe_wide_ruling_with_no_named_universe_is_refused_not_filed_in_the_default()
+    {
+        var ex = Assert.ThrowsAsync<ArgumentException>(() => rulings.RecordAsync(new RulingDraft(RulingKinds.Law, "no guns", null, null, null)));
+        Assert.That(ex!.Message, Does.Contain("needs a universe"));
+    }
+
+    [Test]
     public async Task A_ruling_superseded_twice_leaves_one_active_replacement()
     {
         var (book, _) = await BookWithTwoChaptersAsync();

@@ -179,6 +179,10 @@ public class GlossaryService(
     static bool AppearsInText(string term, string text)
     {
         var head = term.EndsWith(", The", StringComparison.OrdinalIgnoreCase) ? term[..^5].TrimEnd() : term;
+        // An all-caps acronym is matched exactly: stemmed and case-folded, "ISS" became "IS" and
+        // matched every "is", "SOS" every "so", "US" every "us" — into every book's glossary.
+        if (head.Any(char.IsLetter) && head.Where(char.IsLetter).All(char.IsUpper))
+            return Regex.IsMatch(text, $@"(?<![A-Za-z0-9]){Regex.Escape(head)}(?![A-Za-z0-9])");
         var stem = head.Length > 2 && head.EndsWith("s", StringComparison.OrdinalIgnoreCase) ? head[..^1] : head;
         return Regex.IsMatch(text, $@"(?<![A-Za-z0-9]){Regex.Escape(stem)}s?(?![A-Za-z0-9])", RegexOptions.IgnoreCase);
     }
@@ -189,11 +193,12 @@ public class GlossaryService(
         // direct-children query missed a split chapter's grandchildren (their BeatNodes
         // navigation is empty; the beats moved to the new sub-chapters during the split).
         // Term detection is order-independent (just a presence scan), so no ordering concern.
-        var leafIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
-        var beatNodes = await db.BeatNodes.AsNoTracking().IgnoreQueryFilters()
-            .Where(bn => leafIds.Contains(bn.NodeId))
-            .Include(bn => bn.Beat)
-            .ToListAsync(ct);
+        // The reading-order walk, not the leaf walk: the book's glossary is back matter for what a
+        // reader gets, and the leaf walk also read Drafts buckets (a term only a draft used landed
+        // in the printed glossary) while missing unfiled beats on the book root.
+        var ordered = new List<NodeWorkbenchService.OrderedBeat>();
+        await NodeWorkbenchService.WalkAsync(db, nodeId, ordered, [], includeDisabled: false, ct);
+        var beatNodes = ordered.Select(o => new { o.Beat }).ToList();
 
         // Strip inline entity-GUID tags (corpus-trust-recovery Phase 1a) — mandatory, not
         // optional polish: AppearsInText's regex could otherwise match inside a tag's own

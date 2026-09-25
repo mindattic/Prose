@@ -641,6 +641,17 @@ public class NarrativeObligationService(
         return new(true, null, row);
     }
 
+    private static async Task<bool> IsAncestorAsync(ProseDbContext db, Guid ancestorId, Guid nodeId, CancellationToken ct)
+    {
+        var current = (Guid?)nodeId;
+        for (var hop = 0; current is Guid c && hop < 16; hop++)
+        {
+            current = await db.Nodes.IgnoreQueryFilters().AsNoTracking().Where(n => n.Id == c).Select(n => n.ParentNodeId).FirstOrDefaultAsync(ct);
+            if (current == ancestorId) return true;
+        }
+        return false;
+    }
+
     private static bool IsLive(string state) =>
         state is ObligationState.Open or ObligationState.Advanced or ObligationState.Deferred;
 
@@ -654,7 +665,10 @@ public class NarrativeObligationService(
         var beat = await db.Beats.AsNoTracking().FirstOrDefaultAsync(b => b.Id == closingBeatId, ct);
         if (beat == null) return new(false, "closing beat not found", null);
         var beatBook = await NodeWorkbenchService.ResolveBookAncestorForBeatAsync(db, closingBeatId, ct);
-        if (beatBook != null && beatBook != row.NodeId) return new(false, "the closing beat belongs to another book", null);
+        // The beat's book, or a node above it: rows opened before 2026-09-25 by a book inside a
+        // series were filed against the SERIES, and must stay closable by that book's beats.
+        if (beatBook != null && beatBook != row.NodeId && !await IsAncestorAsync(db, row.NodeId, beatBook.Value, ct))
+            return new(false, "the closing beat belongs to another book", null);
         if (!QuoteGrounding.Contains(BeatMarkup.StripEntityTags(beat.Text), quote, QuoteGrounding.MinObligationQuoteLength))
             return new(false, "quote_not_found: the quote is not in that beat's text", null);
 
