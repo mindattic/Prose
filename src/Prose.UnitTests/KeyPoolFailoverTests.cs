@@ -110,6 +110,41 @@ public class KeyPoolFailoverTests
         Assert.That(secondKeyCalls, Is.EqualTo(0));
     }
 
+    [Test]
+    public async Task ExecuteAsync_WithCursor_StartsTheNextCallAtTheLastGoodKey()
+    {
+        var cursor = new KeyPoolFailover.Cursor();
+        var calls = new List<string>();
+        Task<string> Call(string key)
+        {
+            calls.Add(key);
+            if (key == "key-a") throw new HttpRequestException("rate limited", null, HttpStatusCode.TooManyRequests);
+            return Task.FromResult(key);
+        }
+
+        Assert.That(await KeyPoolFailover.ExecuteAsync(new[] { "key-a", "key-b" }, default, Call, cursor), Is.EqualTo("key-b"));
+        Assert.That(await KeyPoolFailover.ExecuteAsync(new[] { "key-a", "key-b" }, default, Call, cursor), Is.EqualTo("key-b"));
+        Assert.That(calls, Is.EqualTo(new[] { "key-a", "key-b", "key-b" }), "the second call must not spend key-a's retry budget again");
+    }
+
+    [Test]
+    public void ExecuteAsync_AFailureAfterTextWasSpoken_IsNotReplayedOnTheNextKey()
+    {
+        // The streaming adapter's guard: once a delta went out, a key-level failure is rethrown as
+        // a non-key-level one so the pool stops instead of speaking the opening twice.
+        var secondKeyCalls = 0;
+        var spoke = false;
+        Assert.ThrowsAsync<InvalidOperationException>(() => KeyPoolFailover.ExecuteAsync<string>(
+            new[] { "key-a", "key-b" }, default, key =>
+            {
+                if (key == "key-b") { secondKeyCalls++; return Task.FromResult("again"); }
+                try { spoke = true; throw new HttpRequestException("stream error"); }
+                catch (Exception ex) when (spoke && KeyPoolFailover.IsKeyLevelFailure(ex))
+                { throw new InvalidOperationException("after text", ex); }
+            }));
+        Assert.That(secondKeyCalls, Is.EqualTo(0));
+    }
+
     /// <summary>Routes responses by the incoming auth header value (named header, or the Bearer
     /// token when <paramref name="headerName"/> is null); counts calls per key.</summary>
     private sealed class KeyAwareHandler : HttpMessageHandler

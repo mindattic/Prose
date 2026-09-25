@@ -35,6 +35,8 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
     /// <see cref="AnthropicToolClient"/>'s own 429/529 retry budget before being considered
     /// "failed" — see <see cref="KeyPoolFailover"/>.
     /// </summary>
+    private readonly KeyPoolFailover.Cursor cursor = new();
+
     public AnthropicToolCallingLlm(AnthropicToolClient client, Func<IReadOnlyList<string>> resolveApiKeys, string model = "claude-opus-4-7")
     {
         this.client = client;
@@ -68,7 +70,7 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
         {
             var turn = await client.CreateAsync(key, model, systemPrompt, messages, toolsArray, maxTokens, ct);
             return new ToolTurnResult(FromAnthropicContent(turn.Content), turn.Usage);
-        });
+        }, cursor);
     }
 
     /// <inheritdoc />
@@ -92,12 +94,25 @@ public class AnthropicToolCallingLlm : IToolCallingLlm
         // Key-pool failover still applies, and still works: a key that fails does so on the
         // response status, before any delta has been dispatched, so falling through to the next
         // key cannot replay text the caller has already spoken.
+        // Failover is only safe while nothing has been spoken: a mid-stream "error" event or a
+        // timeout arrives AFTER deltas went out, and running the turn again on the next key made
+        // the caller hear the opening twice. Once text is out, the failure is final.
+        var spoke = false;
         return await KeyPoolFailover.ExecuteAsync(keys, ct, async key =>
         {
-            var turn = await client.CreateStreamingAsync(
-                key, model, systemPrompt, messages, toolsArray, maxTokens, onTextDelta, ct);
-            return new ToolTurnResult(FromAnthropicContent(turn.Content), turn.Usage);
-        });
+            try
+            {
+                var turn = await client.CreateStreamingAsync(
+                    key, model, systemPrompt, messages, toolsArray, maxTokens,
+                    async delta => { spoke = true; await onTextDelta(delta); }, ct);
+                return new ToolTurnResult(FromAnthropicContent(turn.Content), turn.Usage);
+            }
+            catch (Exception ex) when (spoke && !ct.IsCancellationRequested && KeyPoolFailover.IsKeyLevelFailure(ex))
+            {
+                throw new InvalidOperationException(
+                    "The stream failed after text was already delivered; not replaying it on another key. " + ex.Message, ex);
+            }
+        }, cursor);
     }
 
     private static InvalidOperationException NoKey() => new(

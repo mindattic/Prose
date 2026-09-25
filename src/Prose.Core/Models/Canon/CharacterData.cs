@@ -146,7 +146,10 @@ public class BioBatteryDefinition
 /// condition, and when it was installed. If a character loses a flesh arm in
 /// story 3 and gets a cybernetic replacement, the timeline reflects this and
 /// future stories know they have a chrome arm, not flesh.
+/// Read leniently: generators historically wrote <c>cyberware_inventory</c> as a string array,
+/// and without the converter attached a record in that shape failed to deserialize at all.
 /// </summary>
+[JsonConverter(typeof(Prose.Core.Converters.CyberwareEntryConverter))]
 public class CyberwareEntry
 {
     [JsonPropertyName("name")] public string Name { get; set; } = "";

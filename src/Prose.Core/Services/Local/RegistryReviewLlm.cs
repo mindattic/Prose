@@ -79,9 +79,9 @@ public sealed class RegistryReviewLlm : IReviewLlm
                 return "";
             }
             catch (OperationCanceledException) when (ct.IsCancellationRequested) { throw; }
-            catch (HttpRequestException ex) when (ex.StatusCode.HasValue && (int)ex.StatusCode.Value is >= 400 and < 500)
+            catch (HttpRequestException ex) when (ex.StatusCode.HasValue && (int)ex.StatusCode.Value is >= 400 and < 500 and not 408 and not 429)
             {
-                throw; // 4xx (bad key, dead account, bad model id) = permanent; retrying won't help
+                throw; // 4xx (bad key, dead account, bad model id) = permanent; retrying won't help. 408/429 are transient and retried
             }
             catch (Exception ex)
             {

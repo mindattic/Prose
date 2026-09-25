@@ -21,6 +21,7 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
     private readonly ILogger<OpenAiToolCallingLlm> log;
     private readonly string model;
     private readonly Func<IReadOnlyList<string>> resolveApiKeys;
+    private readonly KeyPoolFailover.Cursor cursor = new();
     private const string Endpoint = "https://api.openai.com/v1/chat/completions";
     private const int MaxRetries = 5;
     private static readonly TimeSpan BaseDelay = TimeSpan.FromSeconds(5);
@@ -88,7 +89,7 @@ public class OpenAiToolCallingLlm : IToolCallingLlm
         };
         if (toolsArray.Count > 0) body["tools"] = toolsArray;
 
-        return await KeyPoolFailover.ExecuteAsync(keys, ct, apiKey => CallOnceAsync(apiKey, body, ct));
+        return await KeyPoolFailover.ExecuteAsync(keys, ct, apiKey => CallOnceAsync(apiKey, body, ct), cursor);
     }
 
     private async Task<ToolTurnResult> CallOnceAsync(string apiKey, JsonObject body, CancellationToken ct)

@@ -27,7 +27,7 @@ public class CyberwareEntryConverter : JsonConverter<CyberwareEntry>
         while (reader.Read() && reader.TokenType != JsonTokenType.EndObject)
         {
             if (reader.TokenType != JsonTokenType.PropertyName) throw new JsonException();
-            var prop = reader.GetString()!;
+            var prop = reader.GetString()!.ToLowerInvariant();
             reader.Read();
             switch (prop)
             {

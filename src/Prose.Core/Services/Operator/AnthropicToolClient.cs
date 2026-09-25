@@ -222,6 +222,7 @@ public class AnthropicToolClient
         var stopReason = "";
         var inputTokens = 0;
         var outputTokens = 0;
+        var sawStop = false;
 
         string? line;
         while ((line = await reader.ReadLineAsync(ct)) is not null)
@@ -302,9 +303,15 @@ public class AnthropicToolClient
                         Truncate(evt["error"]?.ToJsonString() ?? payload, 500));
 
                 case "message_stop":
+                    sawStop = true;
                     break;
             }
         }
+
+        // A connection that closed cleanly mid-turn is not a finished turn: a tool call cut off
+        // inside its arguments reassembled as "{}" and the tool ran with empty arguments.
+        if (!sawStop && blocks.Values.Any(b => b.Type == "tool_use"))
+            throw new HttpRequestException("Anthropic stream ended before message_stop, inside a tool call.");
 
         var content = new JsonArray();
         foreach (var (_, block) in blocks)
@@ -366,7 +373,8 @@ public class AnthropicToolClient
     {
         if (resp.Headers.RetryAfter?.Delta is { } delta) return delta;
         if (resp.Headers.TryGetValues("retry-after", out var values)
-            && double.TryParse(values.FirstOrDefault(), out var secs))
+            && double.TryParse(values.FirstOrDefault(), System.Globalization.NumberStyles.Float,
+                               System.Globalization.CultureInfo.InvariantCulture, out var secs))
             return TimeSpan.FromSeconds(secs);
 
         var backoff = TimeSpan.FromSeconds(BaseDelay.TotalSeconds * Math.Pow(2, attempt));
