@@ -91,7 +91,15 @@ public class AudiblePackageService
         Directory.CreateDirectory(audibleDir);
 
         // ── (a) narration manuscript ───────────────────────────────────────────
-        var (manuscriptText, wordCount) = BuildManuscript(node.Title, node.Slug, ordered);
+        // Chapter headings from BookSpineService, the one place boundaries are computed (as the
+        // docx export uses): the raw IsChapterStart flag also marks mid-chapter sub-headings, so
+        // the narration manuscript numbered itself past the real chapters, or had none at all for
+        // a book built from chapter nodes. One chapter: no heading, as before.
+        var spine = await new BookSpineService(dbFactory).GetAsync(nodeId, ct);
+        var headings = spine.ChapterCount > 1
+            ? spine.Chapters.Where(c => c.Beats.Count > 0).ToDictionary(c => c.Beats[0].BeatId, c => c.Heading)
+            : new Dictionary<Guid, string>();
+        var (manuscriptText, wordCount) = BuildManuscript(node.Title, node.Slug, ordered, headings);
         var manuscriptPath = Path.Combine(audibleDir, $"{node.Slug}.audible.txt");
         await File.WriteAllTextAsync(manuscriptPath, manuscriptText, new UTF8Encoding(false), ct);
 
@@ -132,28 +140,23 @@ public class AudiblePackageService
     private static (string Text, int WordCount) BuildManuscript(
         string title,
         string slug,
-        IReadOnlyList<NodeWorkbenchService.OrderedBeat> ordered)
+        IReadOnlyList<NodeWorkbenchService.OrderedBeat> ordered,
+        IReadOnlyDictionary<Guid, string> chapterHeadings)
     {
         var sb = new StringBuilder();
         sb.AppendLine(title);
         sb.AppendLine();
 
-        // A single-chapter story is narrated with no chapter heading — we never
-        // speak "Chapter 1". Headings only appear when there are 2+ chapter starts.
-        int totalChapterMarks = ordered.Count(o => o.Beat.IsChapterStart);
-        int chapterNo    = 0;
+        // A single-chapter story is narrated with no chapter heading — we never speak
+        // "Chapter 1"; the caller passes no headings then.
         bool hadContent  = false;
 
         foreach (var ob in ordered)
         {
             var beat = ob.Beat;
-            if (beat.IsChapterStart && totalChapterMarks > 1)
+            if (chapterHeadings.TryGetValue(beat.Id, out var heading))
             {
                 if (hadContent) sb.AppendLine();   // blank line before new chapter
-                chapterNo++;
-                var heading = !string.IsNullOrWhiteSpace(beat.Title)
-                    ? beat.Title!.Trim()
-                    : $"Chapter {chapterNo}";
                 sb.AppendLine(heading);
                 sb.AppendLine();
             }

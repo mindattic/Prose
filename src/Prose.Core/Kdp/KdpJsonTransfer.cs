@@ -345,7 +345,12 @@ public sealed class KdpJsonTransfer
             Asin = marker?.Asin,
             PublishedAt = ParseUtc(marker?.PublishedAtUtc),
         };
-        book.LastPublish = snapshot;
+        // Never roll a newer confirmed publish back: importing an older bundle (or a presence-only
+        // legacy marker) replaced LastPublish, and a live book then read as needing a republish.
+        var existing = book.LastPublish;
+        var keepExisting = existing?.PublishedAt is { } had
+            && (snapshot.PublishedAt is null || snapshot.PublishedAt < had);
+        if (!keepExisting) book.LastPublish = snapshot;
         book.PublishingDetectedAt = ParseUtc(marker?.PublishingDetectedAtUtc);
         book.UpdatedAt = now;
         counts.Books++;
@@ -429,6 +434,10 @@ public sealed class KdpJsonTransfer
                 var dir = book.SignOff.Ready ? markersDir : heldDir;
                 Directory.CreateDirectory(dir);
                 await File.WriteAllTextAsync(Path.Combine(dir, book.Code + MarkerFileName), RenderMarker(book), ct);
+                // Remove the book's marker from the OTHER folder: import reads held/ last, so a stale
+                // held marker left from an earlier export silently undid a later sign-off.
+                var stale = Path.Combine(book.SignOff.Ready ? heldDir : markersDir, book.Code + MarkerFileName);
+                if (File.Exists(stale)) File.Delete(stale);
                 counts.Books++;
             }
 

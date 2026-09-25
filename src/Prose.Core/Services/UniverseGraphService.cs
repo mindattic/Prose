@@ -108,6 +108,12 @@ public class UniverseGraphService : IUniverseGraphService
     private void EnsureLoaded(GraphState state)
     {
         if (state.Loaded) return;
+        // The same lock Rebuild takes: a second request during the first load used to see
+        // Loading == true, skip, and read an empty or half-built graph. Monitor locks are
+        // re-entrant, so the same-thread guard below still works.
+        lock (state.RebuildLock)
+        {
+        if (state.Loaded) return;
         // Reentrance guard: Rebuild() invokes builders that read back through query
         // methods (e.g. GetRelationshipsBetween → EnsureLoaded). Without this, those
         // calls re-enter Rebuild and recurse until the stack overflows.
@@ -130,6 +136,7 @@ public class UniverseGraphService : IUniverseGraphService
         finally
         {
             state.Loading = false;
+        }
         }
     }
 
