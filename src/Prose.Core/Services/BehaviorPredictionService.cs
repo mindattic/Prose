@@ -114,7 +114,8 @@ public class BehaviorPredictionService
         // Threshold can be a plain number OR an object {score:N, response:"..."}
         if (el.ValueKind == System.Text.Json.JsonValueKind.Number && el.TryGetInt32(out var v)) return v;
         if (el.ValueKind == System.Text.Json.JsonValueKind.Object &&
-            el.TryGetProperty("score", out var scoreEl) && scoreEl.TryGetInt32(out var sv)) return sv;
+            el.TryGetProperty("score", out var scoreEl) && scoreEl.ValueKind == System.Text.Json.JsonValueKind.Number
+            && scoreEl.TryGetInt32(out var sv)) return sv; // a "7" string threw out of TryGetInt32
         return 5;
     }
 

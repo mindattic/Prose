@@ -53,7 +53,8 @@ public class BeatGranularityService(IDbContextFactory<ProseDbContext> factory)
         Guid nodeId, CancellationToken ct = default)
     {
         await using var db = await factory.CreateDbContextAsync(ct);
-        var node = await db.Nodes.FindAsync([nodeId], ct);
+        // IgnoreQueryFilters: an explicit id (FindAsync applies the universe filter).
+        var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct);
         return node is null ? null : await BuildReportAsync(db, node, ct);
     }
 
@@ -124,12 +125,17 @@ public class BeatGranularityService(IDbContextFactory<ProseDbContext> factory)
         var chapterIds = leafIds;
 
         // 2. Enabled beats ordered by position — char count from Text.Length → LEN()
-        var beatRows = await db.BeatNodes
+        // Chapter order first, then SortKey: SortKey restarts in every chapter, so ordering by it
+        // alone interleaved beats from different chapters and every Position was wrong.
+        var chapterOrder = chapterIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var beatRows = (await db.BeatNodes
             .Where(bn => chapterIds.Contains(bn.NodeId))
-            .OrderBy(bn => bn.SortKey)
             .Join(db.Beats, bn => bn.BeatId, b => b.Id,
-                (bn, b) => new { b.Id, b.Title, CharCount = b.Text.Length })
-            .ToListAsync(ct);
+                (bn, b) => new { bn.NodeId, bn.SortKey, b.Id, b.Title, CharCount = b.Text.Length })
+            .ToListAsync(ct))
+            .OrderBy(x => chapterOrder[x.NodeId]).ThenBy(x => x.SortKey)
+            .Select(x => new { x.Id, x.Title, x.CharCount })
+            .ToList();
 
         if (beatRows.Count == 0)
             return EmptyReport(book);

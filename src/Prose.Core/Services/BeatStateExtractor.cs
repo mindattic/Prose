@@ -128,6 +128,9 @@ public class BeatStateExtractor
                         Snippet     = TruncateNullable(p.Snippet, 500),
                     });
                 }
+                // Replace this beat's earlier extraction, even with nothing: every chapter save
+                // re-extracts, and appending duplicated the ledger each time.
+                if (beatGuid is Guid bg) await ledger.ClearExtractedForBeatAsync(bg, ct);
                 if (rows.Count > 0)
                 {
                     await ledger.RecordManyAsync(rows, ct);
@@ -258,9 +261,12 @@ public class BeatStateExtractor
         _        => null,
     };
 
+    // Numbers and booleans too: "new": 4 (an ammo count) came back null and recorded the aspect empty.
     private static string? StringOrNull(JsonElement obj, string key) =>
-        obj.TryGetProperty(key, out var el) && el.ValueKind == JsonValueKind.String
-            ? el.GetString() : null;
+        !obj.TryGetProperty(key, out var el) ? null
+        : el.ValueKind == JsonValueKind.String ? el.GetString()
+        : el.ValueKind is JsonValueKind.Number or JsonValueKind.True or JsonValueKind.False ? el.GetRawText()
+        : null;
 
     private static string Truncate(string s, int n) => s.Length <= n ? s : s[..n];
     private static string? TruncateNullable(string? s, int n) =>

@@ -73,6 +73,14 @@ public class SplitAndInlineRenderTests
     }
 
     [Test]
+    public void A_mode_keyword_inside_another_word_is_not_a_hit()
+    {
+        var detector = new BeatModeDetector(null!);
+        Assert.That(detector.Detect("she lists her skills, having begun a purchase").Mode, Is.Not.EqualTo(BeatMode.Combat));
+        Assert.That(detector.Detect("he kills the courier").Mode, Is.EqualTo(BeatMode.Combat));
+    }
+
+    [Test]
     public void Raw_html_in_a_chapter_body_becomes_well_formed_xhtml()
     {
         var xhtml = BookExportService.ToWellFormedXhtml("<p>one<br>two&nbsp;three</p><hr/><img src=\"a/b.png\" alt=\"x\">");

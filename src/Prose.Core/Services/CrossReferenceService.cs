@@ -83,10 +83,17 @@ public class CrossReferenceService(XrefService xref, IDbContextFactory<ProseDbCo
 
         if (!clearFirst && merged.SetEquals(existing)) return 0;
 
+        var before = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        if (obj["related_entities"] is JsonArray priorArr)
+            foreach (var n in priorArr)
+                if (n?.GetValue<string>() is { Length: > 0 } id) before.Add(id);
+
         var arr = new JsonArray();
         foreach (var id in merged.OrderBy(x => x)) arr.Add(JsonValue.Create(id));
         obj["related_entities"] = arr;
-        return found.Count;
+        // Callers save only on a positive count: clearing a list to empty returned 0 (nothing
+        // found), so stale links were never removed. Report any change as at least 1.
+        return merged.SetEquals(before) ? found.Count : Math.Max(found.Count, 1);
     }
 
     private static Regex? BuildRegex(IReadOnlyDictionary<string, XrefEntry> nameIndex)

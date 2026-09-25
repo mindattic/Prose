@@ -1396,6 +1396,9 @@ public class ProseWriterRouter(
     /// </summary>
     private static async Task<Guid?> ResolveBookAncestorAsync(ProseDbContext db, Guid nodeId, CancellationToken ct)
     {
+        // The book by its TYPE, through the shared resolver: Kind is a free-form display label, so a
+        // book labelled otherwise lost its DefaultLocation fallback. The walk below stays for a series.
+        if (await NodeWorkbenchService.ResolveBookAncestorIdAsync(db, nodeId, ct) is { } book) return book;
         var currentId = (Guid?)nodeId;
         for (var depth = 0; depth < 5 && currentId is { } cid; depth++)
         {

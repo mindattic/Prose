@@ -70,6 +70,9 @@ public class WorkflowMonitorService(IDbContextFactory<ProseDbContext> dbFactory)
         // the universe filter is redundant here and would otherwise wrongly drop non-default-
         // universe nodes when this runs with no ambient universe selected.
         var scopeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, nodeId, ct);
+        // The node itself too: auto-run and one-shot generation log beats against a BOOK node
+        // (which has children, so is never a leaf), and its report showed "never logged".
+        if (!scopeIds.Contains(nodeId)) scopeIds.Add(nodeId);
 
         var logs = await db.BeatServiceLogs.AsNoTracking()
             .Where(x => scopeIds.Contains(x.NodeId)).ToListAsync(ct);

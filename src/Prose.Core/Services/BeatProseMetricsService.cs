@@ -115,6 +115,9 @@ public class BeatProseMetricsService
         }
 
         // Bulk upsert — load existing PKs first to decide add vs update
+        // One row per beat: a beat linked under two chapters appeared twice, EF refused the second
+        // tracked instance of the same key, and nothing was saved at all.
+        all = all.DistinctBy(m => m.BeatId).ToList();
         var existingIds = await db.BeatProseMetrics.Select(m => m.BeatId).ToHashSetAsync(ct);
         foreach (var m in all)
         {

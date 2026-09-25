@@ -139,7 +139,9 @@ public class ProseReflowService
     /// the entire acceptance test: not even a punctuation mark may change.</summary>
     internal static bool WhitespaceOnlyChange(string a, string b)
     {
-        static string Collapse(string s) => Regex.Replace(s, @"\s+", " ").Trim();
+        // Only ASCII whitespace: \s also matches NBSP and thin spaces, so the model could turn a
+        // non-breaking space into a plain one and pass this "whitespace only" guard.
+        static string Collapse(string s) => Regex.Replace(s, @"[ \t\r\n]+", " ").Trim(' ', '\t', '\r', '\n');
         return Collapse(a) == Collapse(b);
     }
 

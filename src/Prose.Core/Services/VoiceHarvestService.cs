@@ -345,7 +345,8 @@ public class VoiceHarvestService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var entry = await db.VoiceChangeLog.FirstOrDefaultAsync(e => e.Id == entryId, ct);
-        if (entry == null || entry.Status == "applied") return false;
+        // A rejected entry is not applied: the rule went live after the author had rejected it.
+        if (entry == null || entry.Status is "applied" or "rejected") return false;
 
         var rule = entry.Description.Trim();
 
@@ -358,6 +359,15 @@ public class VoiceHarvestService
         {
             log.LogWarning("Unknown rule target {Target} on entry {Id}", entry.RuleTarget, entryId);
             return false;
+        }
+
+        // A narration-voice rule's character is resolved BEFORE the status is committed: a missing
+        // character used to leave the entry "applied" with nothing written, and the call said ok.
+        Models.Canon.CharacterData? voiceTarget = null;
+        if (entry.RuleTarget.EndsWith(".narration_voice"))
+        {
+            voiceTarget = ResolveNarrationCharacter(entry.RuleTarget[..^".narration_voice".Length]);
+            if (voiceTarget == null) return false;
         }
 
         // Commit DB status BEFORE mutating the live rule store so a SaveChanges failure
@@ -377,7 +387,7 @@ public class VoiceHarvestService
             case "tone_bible.dialogue_rules":
                 MutateToneBible(tb => AddDistinct(tb.DialogueRules, rule)); break;
             case string t when t.EndsWith(".narration_voice"):
-                ApplyToCharacterNarrationVoice(t[..^".narration_voice".Length], rule); break;
+                ApplyToCharacterNarrationVoice(voiceTarget!, rule); break;
         }
 
         log.LogInformation("Applied voice rule → {Target}: {Rule}", entry.RuleTarget, Clip(rule));
@@ -389,7 +399,8 @@ public class VoiceHarvestService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var entry = await db.VoiceChangeLog.FirstOrDefaultAsync(e => e.Id == entryId, ct);
-        if (entry == null) return false;
+        // An applied rule is already live in the store; marking it rejected would misreport it.
+        if (entry == null || entry.Status == "applied") return false;
         entry.Status = "rejected";
         entry.UpdatedAt = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
@@ -421,20 +432,23 @@ public class VoiceHarvestService
         toneBible.Save(tb);
     }
 
-    private void ApplyToCharacterNarrationVoice(string nameHint, string rule)
+    /// <summary>nameHint is the alias prefix from the rule target (e.g. "kyle", "bear", "sparrow").
+    /// Aliases first (exact, case-insensitive), then a name prefix — only when exactly one character
+    /// has it: the first of several "Kyle…" characters could receive another's voice rule.</summary>
+    private Models.Canon.CharacterData? ResolveNarrationCharacter(string nameHint)
     {
-        // nameHint is the alias prefix from the rule target (e.g. "kyle", "bear", "sparrow").
-        // Match aliases first (exact, case-insensitive), then name prefix as fallback.
         var all = characters.GetAll();
-        var ch = all.FirstOrDefault(c =>
-                c.Aliases.Any(a => string.Equals(a, nameHint, StringComparison.OrdinalIgnoreCase)))
-            ?? all.FirstOrDefault(c =>
-                c.Name != null && c.Name.StartsWith(nameHint, StringComparison.OrdinalIgnoreCase));
-        if (ch == null)
-        {
-            log.LogWarning("Character '{NameHint}' not found — narration_voice rule not applied", nameHint);
-            return;
-        }
+        var byAlias = all.Where(c => c.Aliases.Any(a => string.Equals(a, nameHint, StringComparison.OrdinalIgnoreCase))).ToList();
+        if (byAlias.Count == 1) return byAlias[0];
+        if (byAlias.Count > 1) { log.LogWarning("'{NameHint}' is an alias of {N} characters — narration_voice rule not applied", nameHint, byAlias.Count); return null; }
+        var byPrefix = all.Where(c => c.Name != null && c.Name.StartsWith(nameHint, StringComparison.OrdinalIgnoreCase)).ToList();
+        if (byPrefix.Count == 1) return byPrefix[0];
+        log.LogWarning("Character '{NameHint}' matched {N} characters — narration_voice rule not applied", nameHint, byPrefix.Count);
+        return null;
+    }
+
+    private void ApplyToCharacterNarrationVoice(Models.Canon.CharacterData ch, string rule)
+    {
         var nv = (ch.NarrationVoice ?? "").TrimEnd();
         if (nv.Contains(rule, StringComparison.OrdinalIgnoreCase)) return;
         ch.NarrationVoice = string.IsNullOrEmpty(nv) ? rule : $"{nv}\n{rule}";

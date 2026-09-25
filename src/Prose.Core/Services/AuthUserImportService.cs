@@ -25,17 +25,26 @@ public sealed class AuthUserImportService(UserRepository legacyUsers, ProseAuthD
         if (legacy.Count == 0) return 0;
 
         var imported = 0;
+        // Names and ids already queued in THIS batch: the database check can't see them, so two
+        // legacy accounts differing only by case (or sharing an id) broke the unique index and
+        // the whole import failed, on every run.
+        var queuedNames = new HashSet<string>(StringComparer.Ordinal);
+        var queuedIds = new HashSet<Guid>();
         foreach (var u in legacy)
         {
             if (string.IsNullOrWhiteSpace(u.Email)) continue;
             var normalized = Normalize(u.Email);
+            if (!queuedNames.Add(normalized)) continue;
             if (await authDb.AuthUsers.AnyAsync(a => a.NormalizedUserName == normalized, ct)) continue;
+            var id = Guid.TryParse(u.Id, out var parsed) && queuedIds.Add(parsed)
+                     && !await authDb.AuthUsers.AnyAsync(a => a.Id == parsed, ct)
+                ? parsed : Guid.NewGuid();
 
             var isWellKnownAdmin = string.Equals(u.Email, WellKnownAdminEmail, StringComparison.OrdinalIgnoreCase);
 
             authDb.AuthUsers.Add(new AuthUser
             {
-                Id = Guid.TryParse(u.Id, out var g) ? g : Guid.NewGuid(),
+                Id = id,
                 UserName = u.Email,
                 NormalizedUserName = normalized,
                 Email = u.Email,

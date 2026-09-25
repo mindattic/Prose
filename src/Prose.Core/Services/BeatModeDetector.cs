@@ -18,6 +18,12 @@ public class BeatModeDetector(IDbContextFactory<ProseDbContext> dbFactory)
     static readonly string[] TransitionKw = ["travels", "commutes", "arrives", "departs", "moves through", "en route", "journey"];
     static readonly string[] RevelationKw = ["discovers", "realizes", "learns", "uncovers", "decodes", "solves", "pieces together"];
 
+    /// <summary>A keyword must START a word (its stems still match: "confess" in "confesses"):
+    /// plain substring search scored "skills" (kill), "begun" (gun) and "purchase" (chase) as
+    /// combat beats.</summary>
+    static bool Has(string text, string[] keywords) =>
+        keywords.Any(k => System.Text.RegularExpressions.Regex.IsMatch(text, $@"(?<![\p{{L}}\p{{N}}]){System.Text.RegularExpressions.Regex.Escape(k)}"));
+
     /// <summary>
     /// Detect the dominant BeatMode from beat goal text and an optional prose hint (SceneSoFar tail).
     /// Returns (mode, confidence 0..1, detection method label).
@@ -31,11 +37,11 @@ public class BeatModeDetector(IDbContextFactory<ProseDbContext> dbFactory)
         if (proseHint != null)
             text = text + " " + (proseHint.Length > 500 ? proseHint[..500] : proseHint).ToLowerInvariant();
 
-        if (CombatKw.Any(k => text.Contains(k)))     return (BeatMode.Combat,          0.85f, "keyword");
-        if (EmotionalKw.Any(k => text.Contains(k)))  return (BeatMode.EmotionalClimax,  0.80f, "keyword");
-        if (DialogueKw.Any(k => text.Contains(k)))   return (BeatMode.Dialogue,         0.75f, "keyword");
-        if (TransitionKw.Any(k => text.Contains(k))) return (BeatMode.Transition,       0.70f, "keyword");
-        if (RevelationKw.Any(k => text.Contains(k))) return (BeatMode.Revelation,       0.70f, "keyword");
+        if (Has(text, CombatKw))     return (BeatMode.Combat,          0.85f, "keyword");
+        if (Has(text, EmotionalKw))  return (BeatMode.EmotionalClimax,  0.80f, "keyword");
+        if (Has(text, DialogueKw))   return (BeatMode.Dialogue,         0.75f, "keyword");
+        if (Has(text, TransitionKw)) return (BeatMode.Transition,       0.70f, "keyword");
+        if (Has(text, RevelationKw)) return (BeatMode.Revelation,       0.70f, "keyword");
 
         return (BeatMode.Narrative, 0.5f, "default");
     }

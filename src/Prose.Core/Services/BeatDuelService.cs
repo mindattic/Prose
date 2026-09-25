@@ -327,7 +327,12 @@ public class BeatDuelService(
                 ? await transport!.CallSeatAsync(seat, system, user, maxTokens: 350, temperature: 0.3, ct)
                 : await llm.GenerateAsync(system, user, temperature: 0.3, maxTokens: 350, ct: ct);
             var parsed = ParseJson<BallotRaw>(raw);
-            var verdict = parsed?.Verdict?.ToLowerInvariant() ?? "same";
+            // An answer that did not parse is a failed ballot, exactly like an exception: read as
+            // "same", two of them decided "keep" and that verdict was cached for good.
+            if (parsed == null)
+                return new DuelBallot(lensKey, "same", 0, "(ballot unreadable: the reply did not parse)",
+                    seat?.Provider ?? "default", seat?.Model ?? "", IsError: true);
+            var verdict = parsed.Verdict?.ToLowerInvariant() ?? "same";
 
             // Map version1/version2 back to better/worse relative to the REVISION.
             var vote = verdict switch

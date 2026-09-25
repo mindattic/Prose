@@ -48,6 +48,16 @@ public class WorldStateLedger
         return ev.Id;
     }
 
+    /// <summary>Remove a beat's previously EXTRACTED events (hand-recorded ones stay), so a
+    /// re-extraction replaces them instead of appending a second copy on every save.</summary>
+    public async Task<int> ClearExtractedForBeatAsync(Guid beatGuid, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        return await db.EntityStateEvents
+            .Where(e => e.BeatGuid == beatGuid && e.Source == "extracted:beat")
+            .ExecuteDeleteAsync(ct);
+    }
+
     public async Task<int> RecordManyAsync(IReadOnlyList<EntityStateEvent> events, CancellationToken ct = default)
     {
         if (events.Count == 0) return 0;
@@ -212,7 +222,9 @@ public class WorldStateLedger
         var lastReload = all.LastOrDefault(e => e.Verb == "set" || e.Verb == "inc");
         var sinceReload = lastReload == null
             ? all.Where(e => e.Verb == "dec").ToList()
-            : all.Where(e => e.AtStoryTime > lastReload.AtStoryTime && e.Verb == "dec").ToList();
+            // Everything AFTER the reload in (time, id) order: "later story time" alone dropped
+            // shots recorded at the reload's own timestamp (one scene, one time).
+            : all.Skip(all.IndexOf(lastReload) + 1).Where(e => e.Verb == "dec").ToList();
         var current = double.TryParse(all[^1].NewValue, System.Globalization.NumberStyles.Any,
             System.Globalization.CultureInfo.InvariantCulture, out var n) ? n : (double?)null;
         return (current, sinceReload, lastReload);
