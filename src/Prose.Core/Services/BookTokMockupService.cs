@@ -133,6 +133,8 @@ public class BookTokMockupService
         foreach (var a in args) psi.ArgumentList.Add(a);
 
         using var p = Process.Start(psi)!;
+        // Disposing does not end the process: a cancel left magick running with the temp files open.
+        using var kill = ct.Register(() => { try { p.Kill(entireProcessTree: true); } catch { } });
         var errTask = p.StandardError.ReadToEndAsync(ct);
         await p.StandardOutput.ReadToEndAsync(ct);
         await p.WaitForExitAsync(ct);

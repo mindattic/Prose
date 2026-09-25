@@ -31,7 +31,10 @@ public static class SegmentAggregator
     public static Report Build(IReadOnlyList<Reviewer> reviewers, int beatCount, int k)
     {
         var clusterIds = Enumerable.Range(0, k).ToArray();
-        double Mean(IEnumerable<double> xs) { var l = xs.ToList(); return l.Count == 0 ? 0 : l.Average(); }
+        // A beat nobody (in a cluster) scored has NO mean, not a mean of 0: ballots are sparse, and
+        // a 0 made the beat "weak for everyone", a seam, and "Cluster X doesn't (0.0)".
+        double Mean(IEnumerable<double> xs) { var l = xs.ToList(); return l.Count == 0 ? double.NaN : l.Average(); }
+        double MeanOr0(IEnumerable<double> xs) { var m = Mean(xs); return double.IsNaN(m) ? 0 : m; }
 
         // Per-beat global + per-cluster means.
         var global = new double[beatCount + 1];
@@ -57,8 +60,8 @@ public static class SegmentAggregator
             var hates = div.OrderBy(x => x.delta).Take(3).Where(x => x.delta < -0.2).Select(x => x.b).ToArray();
             var label = BuildLabel(loves, hates);
             profiles.Add(new ClusterProfile(c, label, members.Count,
-                Math.Round(Mean(members.Select(r => (double)r.Score)), 1),
-                Math.Round(Mean(members.Where(r => r.Flow.HasValue).Select(r => (double)r.Flow!.Value)), 1)));
+                Math.Round(MeanOr0(members.Select(r => (double)r.Score)), 1),
+                Math.Round(MeanOr0(members.Where(r => r.Flow.HasValue).Select(r => (double)r.Flow!.Value)), 1)));
         }
 
         // Classify each beat.
@@ -67,7 +70,8 @@ public static class SegmentAggregator
         var seams = new List<int>();
         for (int b = 1; b <= beatCount; b++)
         {
-            var cms = clusterIds.Where(c => profiles.Any(p => p.Id == c)).Select(c => perCluster[b][c]).ToList();
+            var cms = clusterIds.Where(c => profiles.Any(p => p.Id == c)).Select(c => perCluster[b][c])
+                .Where(v => !double.IsNaN(v)).ToList();
             if (cms.Count == 0) continue;
             double lo = cms.Min(), hi = cms.Max();
             if (hi - lo >= ContestedDelta) contested.Add(b);
@@ -78,9 +82,9 @@ public static class SegmentAggregator
                 seams.Add(b);
         }
 
-        var meanFlow = Math.Round(Mean(reviewers.Where(r => r.Flow.HasValue).Select(r => (double)r.Flow!.Value)), 1);
-        var meanScore = Math.Round(Mean(reviewers.Select(r => (double)r.Score)), 1);
-        var meanBeat5 = Mean(Enumerable.Range(1, beatCount).Select(b => global[b]));
+        var meanFlow = Math.Round(MeanOr0(reviewers.Where(r => r.Flow.HasValue).Select(r => (double)r.Flow!.Value)), 1);
+        var meanScore = Math.Round(MeanOr0(reviewers.Select(r => (double)r.Score)), 1);
+        var meanBeat5 = MeanOr0(Enumerable.Range(1, beatCount).Select(b => global[b]).Where(v => !double.IsNaN(v)));
 
         // ── Render ──
         var md = new StringBuilder();
@@ -106,7 +110,7 @@ public static class SegmentAggregator
         if (contested.Count == 0) md.AppendLine("- _None: clusters broadly agree beat-to-beat._");
         else foreach (var b in contested.OrderByDescending(b => Spread(b, perCluster, profiles)))
         {
-            var ranked = profiles.OrderByDescending(p => perCluster[b][p.Id]).ToList();
+            var ranked = profiles.Where(p => !double.IsNaN(perCluster[b][p.Id])).OrderByDescending(p => perCluster[b][p.Id]).ToList();
             var lover = ranked.First(); var hater = ranked.Last();
             md.AppendLine($"- **Beat {b}** — Cluster {lover.Id} likes it ({perCluster[b][lover.Id]:0.0}), Cluster {hater.Id} doesn't ({perCluster[b][hater.Id]:0.0}). "
                 + $"Default call: improve it for Cluster {hater.Id} only if the change keeps Cluster {lover.Id} above {WeakFloor:0.0} — otherwise it's a genuine please-{lover.Id}/alienate-{hater.Id} fork for you to call.");
@@ -140,11 +144,11 @@ public static class SegmentAggregator
     }
 
     private static string ClusterSpread(int b, double[][] perCluster, IReadOnlyList<ClusterProfile> profiles)
-        => string.Join(" ", profiles.Select(p => $"C{p.Id}:{perCluster[b][p.Id]:0.0}"));
+        => string.Join(" ", profiles.Select(p => double.IsNaN(perCluster[b][p.Id]) ? $"C{p.Id}:—" : $"C{p.Id}:{perCluster[b][p.Id]:0.0}"));
 
     private static double Spread(int b, double[][] perCluster, IReadOnlyList<ClusterProfile> profiles)
     {
-        var v = profiles.Select(p => perCluster[b][p.Id]).ToList();
-        return v.Max() - v.Min();
+        var v = profiles.Select(p => perCluster[b][p.Id]).Where(x => !double.IsNaN(x)).ToList();
+        return v.Count == 0 ? 0 : v.Max() - v.Min();
     }
 }

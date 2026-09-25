@@ -104,7 +104,10 @@ public static class ReviewClusterer
                 var dd = Math.Sqrt(Dist2(x[i], x[j]));
                 intra[assign[j]] += dd; cnt[assign[j]]++;
             }
-            double a = cnt[assign[i]] > 0 ? intra[assign[i]] / cnt[assign[i]] : 0;
+            // A reader alone in a cluster contributes 0, per the standard definition: with a = 0
+            // they scored a perfect 1, so k = n (everyone alone) always "won".
+            if (cnt[assign[i]] == 0) continue;
+            double a = intra[assign[i]] / cnt[assign[i]];
             double b = double.MaxValue;
             for (int c = 0; c < k; c++) { if (c == assign[i] || cnt[c] == 0) continue; b = Math.Min(b, intra[c] / cnt[c]); }
             if (b == double.MaxValue) continue;

@@ -100,7 +100,8 @@ public class DriftAuditService
             {
                 var columnValue = getter(ch);
                 var hasLedger = latest.TryGetValue((ch.Id, aspect), out var lv);
-                var ledgerValue = hasLedger ? lv.NewValue : null;
+                // Normalised like the column side: "Deceased " vs "Deceased" was reported as drift.
+                var ledgerValue = hasLedger ? Nz(lv.NewValue ?? "") : null;
 
                 // No drift when both sides are absent or both equal (after Nz).
                 if (string.IsNullOrEmpty(columnValue) && string.IsNullOrEmpty(ledgerValue)) continue;

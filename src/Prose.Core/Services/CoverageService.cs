@@ -57,7 +57,7 @@ public class CoverageService
             GROUP BY e.EntityType
             """).ToListAsync(ct);
 
-        var nodeMap = nodeRows.ToDictionary(r => r.EntityType ?? "", r => r.InNodeCount);
+        var nodeMap = nodeRows.ToDictionary(r => r.EntityType ?? "(none)", r => r.InNodeCount); // same key as the lookup below
 
         return rows.Select(r =>
         {

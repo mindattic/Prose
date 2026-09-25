@@ -78,8 +78,10 @@ public abstract class PipelineServiceBase
 
     protected async Task CheckPauseAsync(CancellationToken ct)
     {
-        if (pauseTcs != null)
-            await pauseTcs.Task.WaitAsync(ct);
+        // Read once: Resume/Cancel can null it between the check and .Task.
+        var tcs = pauseTcs;
+        if (tcs != null)
+            await tcs.Task.WaitAsync(ct);
     }
 
     protected void Notify(string phase, int processed = 0, int total = 0, string current = "")

@@ -32,7 +32,10 @@ public class EntityMentionService(IDbContextFactory<ProseDbContext> dbFactory)
                 x => x.m.BeatId,
                 b => b.Id,
                 (x, b) => new { x.Node, x.sb, Beat = b })
-            .OrderBy(x => x.Node.Title)
+            // Chapter position, then the beat's own SortKey — not the chapter TITLE, which sorted
+            // "Chapter 10" before "Chapter 2" and interleaved two same-titled chapters' beats.
+            .OrderBy(x => x.Node.SortKey)
+            .ThenBy(x => x.Node.Id)
             .ThenBy(x => x.sb.SortKey)
             .Select(x => new
             {
@@ -46,15 +49,18 @@ public class EntityMentionService(IDbContextFactory<ProseDbContext> dbFactory)
             .Take(limit)
             .ToListAsync(ct);
 
-        return rows.Select(r => new EntityBeatMention(
+        return rows.DistinctBy(r => r.BeatId).Select(r => new EntityBeatMention(
             NodeTitle: r.NodeTitle,
             NodeSlug:  r.NodeSlug,
             NodeId:    r.NodeId,
             BeatNumber:  r.BeatNumber,
             Handle:      $"{r.NodeId}.{r.BeatId}",
-            Excerpt:     (r.Text?.Length ?? 0) > 120 ? r.Text![..120] + "…" : r.Text ?? ""
+            // The reader's text: raw <entity guid=…> markup showed in the wiki and ate the excerpt.
+            Excerpt:     Excerpt(BeatMarkup.StripEntityTags(r.Text ?? ""))
         )).ToList();
     }
+
+    private static string Excerpt(string plain) => plain.Length > 120 ? plain[..120] + "…" : plain;
 
     public async Task<(Guid Id, string Name)?> ResolveEntityAsync(
         string idOrSlug, CancellationToken ct = default)
@@ -63,7 +69,7 @@ public class EntityMentionService(IDbContextFactory<ProseDbContext> dbFactory)
 
         if (Guid.TryParse(idOrSlug, out var guid))
         {
-            var byId = await db.Entities.AsNoTracking()
+            var byId = await db.Entities.AsNoTracking().IgnoreQueryFilters()
                 .Where(e => e.Id == guid)
                 .Select(e => new { e.Id, e.Name })
                 .FirstOrDefaultAsync(ct);

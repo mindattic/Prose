@@ -67,11 +67,14 @@ public class TagWeaponLethalityService(IDbContextFactory<ProseDbContext> dbFacto
         string lethality;
 
         // Keyword overrides take priority
-        if (NonLethalKeywords.Any(kw => text.Contains(kw)))
+        // Whole words: "smokeless rounds" was non-lethal via "smoke", "shockwave cannon" less-lethal.
+        static bool Has(string t, string kw) => System.Text.RegularExpressions.Regex.IsMatch(
+            t, @"(?<!\w)" + System.Text.RegularExpressions.Regex.Escape(kw) + @"(?!\w)");
+        if (NonLethalKeywords.Any(kw => Has(text, kw)))
             lethality = "non_lethal";
-        else if (LessLethalKeywords.Any(kw => text.Contains(kw)))
+        else if (LessLethalKeywords.Any(kw => Has(text, kw)))
             lethality = "less_lethal";
-        else if (LethalKeywords.Any(kw => text.Contains(kw)))
+        else if (LethalKeywords.Any(kw => Has(text, kw)))
             lethality = "lethal";
         // Category defaults
         else if (NonLethalCategories.Contains(category))

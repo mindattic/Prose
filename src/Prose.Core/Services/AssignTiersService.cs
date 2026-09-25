@@ -60,7 +60,9 @@ public class AssignTiersService(IDbContextFactory<ProseDbContext> dbFactory) : D
         int tier = 2; // default
         foreach (var (t, keywords) in TierRules)
         {
-            if (keywords.Any(kw => text.Contains(kw))) { tier = t; break; }
+            // Whole words: "mischief" contained "chief", "doctored" "doctor", "cookies" "cook".
+            if (keywords.Any(kw => System.Text.RegularExpressions.Regex.IsMatch(
+                    text, @"(?<!\w)" + System.Text.RegularExpressions.Regex.Escape(kw) + @"(?!\w)"))) { tier = t; break; }
         }
 
         obj["tier"] = JsonValue.Create(tier);

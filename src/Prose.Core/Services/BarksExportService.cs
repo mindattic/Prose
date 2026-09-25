@@ -74,7 +74,9 @@ public class BarksExportService(
             foreach (var (ordered, rootSlug) in targets)
             {
                 var beat = ordered.Beat;
-                if (string.IsNullOrWhiteSpace(beat.Text)) continue; // not authored yet — not a "skip", just nothing to export
+                // The reader's text: barks shipped raw <entity guid=…> markup to game/VO consumers.
+                var barkText = BeatMarkup.StripEntityTags(beat.Text ?? "").Trim();
+                if (barkText.Length == 0) continue; // not authored yet — not a "skip", just nothing to export
 
                 var povId = await verificationContext.GetPovEntityIdAsync(beat.Id, ct);
                 if (povId == null) { skipped++; continue; }
@@ -90,7 +92,7 @@ public class BarksExportService(
                 var context = !string.IsNullOrWhiteSpace(beat.Description) ? beat.Description
                     : !string.IsNullOrWhiteSpace(beat.Title) ? beat.Title
                     : "";
-                barks.Add(new Bark(barkId, speakerSlug, beat.Text.Trim(), context ?? ""));
+                barks.Add(new Bark(barkId, speakerSlug, barkText, context ?? ""));
             }
 
             return new ExportResult(barks, skipped, match.Slug);
