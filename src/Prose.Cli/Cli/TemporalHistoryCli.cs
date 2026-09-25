@@ -42,7 +42,7 @@ public static class TemporalHistoryCli
     case "beat-history":
     {
         var beatArg = Flag(args, "--beat");
-        if (!Guid.TryParse(beatArg, out var beatId)) { Console.Error.WriteLine("--beat <guid> is required."); return; }
+        if (!Guid.TryParse(beatArg, out var beatId)) { Console.Error.WriteLine("--beat <guid> is required."); Environment.ExitCode = 1; return; }
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
@@ -92,7 +92,7 @@ public static class TemporalHistoryCli
         var nodeRef = Flag(args, "--node");
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var nodeId = await NodeRefResolver.ResolveAsync(db0, nodeRef);
-        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); return; }
+        if (nodeId is null) { Console.Error.WriteLine($"Could not resolve --node '{nodeRef}'."); Environment.ExitCode = 1; return; }
 
         var workbench = services.GetRequiredService<NodeWorkbenchService>();
         var ordered = await workbench.GetOrderedBeatsAsync(nodeId.Value);
@@ -137,9 +137,12 @@ public static class TemporalHistoryCli
         var newTitle = Flag(args, "--new-title");
         var code = Flag(args, "--code");
         var dryRun = args.Contains("--dry-run");
-        if (!Guid.TryParse(sourceArg, out var sourceId)) { Console.Error.WriteLine("--source-node-id <guid> is required."); return; }
-        if (!DateTime.TryParse(asOfArg, out var asOf)) { Console.Error.WriteLine("--as-of <date> is required (e.g. 2026-08-29)."); return; }
-        if (string.IsNullOrWhiteSpace(newTitle)) { Console.Error.WriteLine("--new-title \"<title>\" is required."); return; }
+        if (!Guid.TryParse(sourceArg, out var sourceId)) { Console.Error.WriteLine("--source-node-id <guid> is required."); Environment.ExitCode = 1; return; }
+        // Invariant and UTC: FOR SYSTEM_TIME compares against UTC, and a culture parse read
+        // "03/04/2026" as March or April and shifted an offset time by the machine's zone.
+        if (!DateTime.TryParse(asOfArg, System.Globalization.CultureInfo.InvariantCulture,
+                System.Globalization.DateTimeStyles.AdjustToUniversal | System.Globalization.DateTimeStyles.AssumeUniversal, out var asOf)) { Console.Error.WriteLine("--as-of <date> is required (e.g. 2026-08-29)."); Environment.ExitCode = 1; return; }
+        if (string.IsNullOrWhiteSpace(newTitle)) { Console.Error.WriteLine("--new-title \"<title>\" is required."); Environment.ExitCode = 1; return; }
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
@@ -247,7 +250,7 @@ public static class TemporalHistoryCli
     case "node-edit-timeline":
     {
         var nodeArg = Flag(args, "--node-id");
-        if (!Guid.TryParse(nodeArg, out var rootId)) { Console.Error.WriteLine("--node-id <guid> is required (a historical node id, may be deleted)."); return; }
+        if (!Guid.TryParse(nodeArg, out var rootId)) { Console.Error.WriteLine("--node-id <guid> is required (a historical node id, may be deleted)."); Environment.ExitCode = 1; return; }
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
@@ -311,6 +314,8 @@ public static class TemporalHistoryCli
     case "find-node-history":
     {
         var slugLike = Flag(args, "--slug-like");
+        // Empty meant LIKE '%%' — every node that ever existed.
+        if (string.IsNullOrWhiteSpace(slugLike)) { Console.Error.WriteLine("--slug-like <text> is required."); Environment.ExitCode = 1; return; }
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
         await conn.OpenAsync();
@@ -348,7 +353,7 @@ public static class TemporalHistoryCli
     case "search-history":
     {
         var pattern = Flag(args, "--text");
-        if (string.IsNullOrWhiteSpace(pattern)) { Console.Error.WriteLine("--text \"<substring>\" is required."); return; }
+        if (string.IsNullOrWhiteSpace(pattern)) { Console.Error.WriteLine("--text \"<substring>\" is required."); Environment.ExitCode = 1; return; }
 
         await using var db0 = await services.GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
         var conn = db0.Database.GetDbConnection();
@@ -383,6 +388,7 @@ public static class TemporalHistoryCli
     }
             default:
                 Console.Error.WriteLine($"Unknown history verb '{verb}'.");
+                Environment.ExitCode = 1;
                 PrintHelp();
                 break;
         }
@@ -402,9 +408,9 @@ public static class TemporalHistoryCli
 
           beat-history       --beat <guid>
           edit-timeline      --node <slug|guid>
-          reconstruct-book   --node <slug|guid> --as-of <yyyy-MM-dd[ HH:mm]>
-          node-edit-timeline --node <slug|guid>
-          find-node-history  --slug <text>
+          reconstruct-book   --source-node-id <guid> --as-of <yyyy-MM-dd[THH:mm]> (UTC) --new-title "<t>" [--code X] [--dry-run]
+          node-edit-timeline --node-id <guid>   (a historical id; the node may be deleted)
+          find-node-history  --slug-like <text>
           check-temporal
           search-history     --text "<phrase>"
         """);

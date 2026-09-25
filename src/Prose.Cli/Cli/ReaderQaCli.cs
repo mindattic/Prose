@@ -36,7 +36,8 @@ public static class ReaderQaCli
         for (int i = 0; i < args.Length; i++)
         {
             if (args[i] == "--slug" && i + 1 < args.Length) slug = args[i + 1];
-            if (args[i] == "--readers" && i + 1 < args.Length) int.TryParse(args[i + 1], out readers);
+            // Into a temporary: a failed TryParse wrote 0 readers.
+            if (args[i] == "--readers" && i + 1 < args.Length && int.TryParse(args[i + 1], out var r) && r > 0) readers = r;
         }
 
         if (!all && string.IsNullOrWhiteSpace(slug))
@@ -61,8 +62,13 @@ public static class ReaderQaCli
         List<(Guid Id, string Title)> targets;
         await using (var db = await dbFactory.CreateDbContextAsync())
         {
-            var q = db.Nodes.AsNoTracking().OfType<BookNode>().AsQueryable();
-            if (!all) q = q.Where(n => n.Slug == slug);
+            var q = db.Nodes.AsNoTracking().IgnoreQueryFilters().OfType<BookNode>().AsQueryable();
+            if (!all)
+            {
+                // slug | NodeCode | GUID via the shared resolver (an exact slug alone rejected "BCODA").
+                var id = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, slug);
+                q = q.Where(n => n.Id == (id ?? Guid.Empty));
+            }
             targets = (await q.Select(n => new { n.Id, n.Title }).ToListAsync())
                 .Select(n => (n.Id, n.Title)).ToList();
         }

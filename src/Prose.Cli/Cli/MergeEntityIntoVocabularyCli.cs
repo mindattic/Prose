@@ -171,17 +171,21 @@ public static class MergeEntityIntoVocabularyCli
         else db.Records.Add(new Record { EntityId = intoId, Json = newJson, UpdatedAt = DateTime.UtcNow });
         await db.SaveChangesAsync();
 
-        var blocking = await EntityDeleteGuard.CheckBlockingReferencesAsync(db, fromId);
-        if (blocking.Count > 0)
+        await tx.CommitAsync();
+
+        // The rest of --from goes through the real merge: it relinks EVERY table that points at the
+        // entity (mentions, tags, properties, embeddings, state events), rewrites the beat tags, and
+        // deletes the loser. Deleting it here moved only Edges — the cascading rows were destroyed
+        // and the prose kept <entity guid=…> tags pointing at an entity that no longer existed.
+        try
         {
-            await tx.RollbackAsync();
-            Console.Error.WriteLine(EntityDeleteGuard.DescribeBlockers($"{fromEntity.Name} [{fromEntity.EntityType}]", fromId, blocking));
-            Console.Error.WriteLine("[merge-entity-into-vocabulary] Aborted — --from is still referenced by something this tool doesn't know how to redirect.");
+            await services.GetRequiredService<DuplicateEntityScanService>().MergeAsync(intoId, fromId);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"[merge-entity-into-vocabulary] Vocabulary fields and edges moved, but merging '{fromEntity.Name}' ({fromId}) failed: {ex.Message}. It still exists; re-run the merge after fixing the cause.");
             return 1;
         }
-
-        await db.Entities.IgnoreQueryFilters().Where(e => e.Id == fromId).ExecuteDeleteAsync();
-        await tx.CommitAsync();
 
         Console.WriteLine($"[merge-entity-into-vocabulary] Done. '{fromEntity.Name}' ({fromId}) deleted; content and relationships now live on '{intoEntity.Name}' ({intoId}), EntityType 'vocabulary'.");
         Console.WriteLine("Recoverable via the Entities_History/Edges_History/VocabularyEntries_History temporal tables if this was a mistake.");

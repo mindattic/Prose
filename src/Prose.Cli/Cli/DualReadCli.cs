@@ -178,11 +178,9 @@ public static class DualReadCli
 
     private static async Task<(Guid id, string title)> ResolveAsync(ProseDbContext db, string key)
     {
-        var q = db.Nodes.AsNoTracking();
-        Node? s;
-        if (Guid.TryParse(key, out var g)) s = await q.FirstOrDefaultAsync(x => x.Id == g);
-        else s = await q.FirstOrDefaultAsync(x => x.Slug == key)
-              ?? await q.Where(x => x.Id.ToString().StartsWith(key.ToLower())).Take(2).ToListAsync() switch { { Count: 1 } m => m[0], _ => null };
+        // The shared resolver (slug | NodeCode | GUID | unique prefix), across universes: the
+        // private copy took no NodeCode and missed a book outside the ambient universe.
+        var s = await Prose.Core.Services.NodeRefResolver.ResolveNodeAsync(db, key);
         return s == null ? (Guid.Empty, "") : (s.Id, s.Title);
     }
 

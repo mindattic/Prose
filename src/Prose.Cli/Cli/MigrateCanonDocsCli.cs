@@ -142,16 +142,21 @@ public static class MigrateCanonDocsCli
                     CreatedAt    = DateTime.UtcNow,
                     UpdatedAt    = DateTime.UtcNow,
                 };
+                // One save for the document AND its sections: saving the document first meant a
+                // failed section (a key over 120 chars, a duplicate anchor) left an empty document
+                // that every re-run then skipped as "already migrated".
                 db.CanonDocuments.Add(doc);
-                await db.SaveChangesAsync();
                 docsCreated++;
 
                 int sortKey = 0;
-                foreach (var (key, title, sectionContent) in sections)
+                var usedKeys = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                foreach (var (rawKey, title, sectionContent) in sections)
                 {
+                    var key = rawKey.Length > 110 ? rawKey[..110] : rawKey;
+                    for (var n = 2; !usedKeys.Add(key); n++) key = $"{(rawKey.Length > 105 ? rawKey[..105] : rawKey)}-{n}";
                     db.CanonDocumentSections.Add(new CanonDocumentSection
                     {
-                        DocumentId   = doc.Id,
+                        Document     = doc,
                         SectionKey   = key,
                         SectionTitle = title,
                         Content      = sectionContent,

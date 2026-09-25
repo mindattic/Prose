@@ -55,7 +55,7 @@ public static class ReconcileTrinityCli
         if (books.Count == 0) return Fail("no in-scope (GLMZ/SCRY/FICTION, NarrativeMode=original) book matched.");
 
         Console.WriteLine($"[trinity] Phase 1 — extraction sweep across {books.Count} book(s):");
-        int extracted = 0, skipped = 0;
+        int extracted = 0, skipped = 0, failed = 0;
         foreach (var b in books)
         {
             try
@@ -68,10 +68,10 @@ public static class ReconcileTrinityCli
                     extracted++;
                 }
             }
-            catch (Exception ex) { Console.WriteLine($"[trinity]   {b.Slug,-16} ! {ex.Message}"); }
+            catch (Exception ex) { Console.Error.WriteLine($"[trinity]   {b.Slug,-16} ! {ex.Message}"); failed++; }
         }
-        Console.WriteLine($"[trinity] Done. {extracted} extracted, {skipped} already had claims.");
-        return 0;
+        Console.WriteLine($"[trinity] Done. {extracted} extracted, {skipped} already had claims{(failed > 0 ? $", {failed} FAILED" : "")}.");
+        return failed > 0 ? 1 : 0; // a failed book is not a clean run
     }
 
     static async Task<int> CmdSurvey(string[] args, TrinityReconciliationService svc)
@@ -131,7 +131,7 @@ public static class ReconcileTrinityCli
         if (books.Count == 0) return Fail("no in-scope (GLMZ/SCRY/FICTION, NarrativeMode=original) book matched.");
 
         Console.WriteLine($"[trinity] {(dryRun ? "DRY RUN — " : "")}Reconciling {books.Count} book(s):");
-        int totalDecisions = 0;
+        int totalDecisions = 0, failedBooks = 0;
         foreach (var b in books)
         {
             try
@@ -145,10 +145,10 @@ public static class ReconcileTrinityCli
                 }
                 totalDecisions += result.Decisions.Count;
             }
-            catch (Exception ex) { Console.WriteLine($"[trinity]   {b.Slug,-16} ! {ex.Message}"); }
+            catch (Exception ex) { Console.Error.WriteLine($"[trinity]   {b.Slug,-16} ! {ex.Message}"); failedBooks++; }
         }
-        Console.WriteLine($"[trinity] Done. {totalDecisions} decision(s) across {books.Count} book(s).");
-        return 0;
+        Console.WriteLine($"[trinity] Done. {totalDecisions} decision(s) across {books.Count} book(s){(failedBooks > 0 ? $", {failedBooks} FAILED" : "")}.");
+        return failedBooks > 0 ? 1 : 0;
     }
 
     static async Task<int> CmdUndo(string[] args, TrinityReconciliationService svc)

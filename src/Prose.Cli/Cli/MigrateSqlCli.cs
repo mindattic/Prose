@@ -188,6 +188,13 @@ public static class MigrateSqlCli
             Console.WriteLine();
             Console.WriteLine("[character relational migration — Phase D: drop legacy *Json columns]");
             Console.WriteLine("  (verify the column-based read path before running this — drops are irreversible)");
+            // Irreversible: never after an earlier phase failed in this run — the characters whose
+            // backfill errored have their data ONLY in the columns this would drop.
+            if (failures > 0)
+            {
+                Console.Error.WriteLine("  ✘ skipped: an earlier phase reported errors. Fix them and re-run before dropping the legacy columns.");
+                return 1;
+            }
             var rD = await migration.ApplyPhaseDAsync();
             foreach (var s in rD.SchemaActions) Console.WriteLine($"  {s}");
             foreach (var e in rD.Errors) Console.WriteLine($"  ✘ {e}");
@@ -210,12 +217,16 @@ public static class MigrateSqlCli
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
                                    WHERE object_id = OBJECT_ID('BeatNodes') AND name = 'IsEnabled')
                     BEGIN
+                        -- One transaction with XACT_ABORT: a failed ADD (e.g. the history table already
+                        -- has the column from a partial run) used to leave versioning OFF for good.
+                        SET XACT_ABORT ON; BEGIN TRAN;
                         ALTER TABLE [dbo].[BeatNodes] SET (SYSTEM_VERSIONING = OFF);
                         ALTER TABLE [dbo].[BeatNodes]         ADD [IsEnabled] bit NOT NULL DEFAULT 1;
                         ALTER TABLE [dbo].[BeatNodes_History] ADD [IsEnabled] bit NOT NULL DEFAULT 1;
                         ALTER TABLE [dbo].[BeatNodes]
                             SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[BeatNodes_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
+                        COMMIT;
                     END;
                     """);
                 Console.WriteLine("  ✔ IsEnabled column added to BeatNodes (+ history table).");
@@ -243,12 +254,16 @@ public static class MigrateSqlCli
                         IF NOT EXISTS (SELECT 1 FROM sys.columns
                                        WHERE object_id = OBJECT_ID('{table}') AND name = 'Version')
                         BEGIN
+                            -- One transaction with XACT_ABORT: a failed ADD (e.g. the history table already
+                            -- has the column from a partial run) used to leave versioning OFF for good.
+                            SET XACT_ABORT ON; BEGIN TRAN;
                             ALTER TABLE [dbo].[{table}] SET (SYSTEM_VERSIONING = OFF);
                             ALTER TABLE [dbo].[{table}]         ADD [Version] INT NOT NULL DEFAULT 0;
                             ALTER TABLE [dbo].[{hist}] ADD [Version] INT NOT NULL DEFAULT 0;
                             ALTER TABLE [dbo].[{table}]
                                 SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[{hist}],
                                                              DATA_CONSISTENCY_CHECK = OFF));
+                            COMMIT;
                         END;
                         """);
 #pragma warning restore EF1002
@@ -275,12 +290,16 @@ public static class MigrateSqlCli
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
                                    WHERE object_id = OBJECT_ID('Entities') AND name = 'GrammarNote')
                     BEGIN
+                        -- One transaction with XACT_ABORT: a failed ADD (e.g. the history table already
+                        -- has the column from a partial run) used to leave versioning OFF for good.
+                        SET XACT_ABORT ON; BEGIN TRAN;
                         ALTER TABLE [dbo].[Entities] SET (SYSTEM_VERSIONING = OFF);
                         ALTER TABLE [dbo].[Entities]         ADD [GrammarNote] NVARCHAR(MAX) NULL;
                         ALTER TABLE [dbo].[Entities_History] ADD [GrammarNote] NVARCHAR(MAX) NULL;
                         ALTER TABLE [dbo].[Entities]
                             SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Entities_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
+                        COMMIT;
                     END;
                     """);
                 Console.WriteLine("  ✔ GrammarNote column added to Entities (+ Entities_History).");
@@ -306,12 +325,16 @@ public static class MigrateSqlCli
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
                                    WHERE object_id = OBJECT_ID('Nodes') AND name = 'NodeCode')
                     BEGIN
+                        -- One transaction with XACT_ABORT: a failed ADD (e.g. the history table already
+                        -- has the column from a partial run) used to leave versioning OFF for good.
+                        SET XACT_ABORT ON; BEGIN TRAN;
                         ALTER TABLE [dbo].[Nodes] SET (SYSTEM_VERSIONING = OFF);
                         ALTER TABLE [dbo].[Nodes]         ADD [NodeCode] NVARCHAR(20) NULL;
                         ALTER TABLE [dbo].[Nodes_History] ADD [NodeCode] NVARCHAR(20) NULL;
                         ALTER TABLE [dbo].[Nodes]
                             SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Nodes_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
+                        COMMIT;
                     END;
                     """);
                 Console.WriteLine("  ✔ NodeCode column added to Nodes (+ Nodes_History).");
@@ -487,12 +510,16 @@ public static class MigrateSqlCli
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
                                    WHERE object_id = OBJECT_ID('Beats') AND name = 'EmotionalScore')
                     BEGIN
+                        -- One transaction with XACT_ABORT: a failed ADD (e.g. the history table already
+                        -- has the column from a partial run) used to leave versioning OFF for good.
+                        SET XACT_ABORT ON; BEGIN TRAN;
                         ALTER TABLE [dbo].[Beats] SET (SYSTEM_VERSIONING = OFF);
                         ALTER TABLE [dbo].[Beats]         ADD [EmotionalScore] FLOAT NULL;
                         ALTER TABLE [dbo].[Beats_History] ADD [EmotionalScore] FLOAT NULL;
                         ALTER TABLE [dbo].[Beats]
                             SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Beats_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
+                        COMMIT;
                     END;
                     """);
                 Console.WriteLine("  ✔ Beat.EmotionalScore column added (+ Beats_History).");
@@ -608,12 +635,16 @@ public static class MigrateSqlCli
                     IF NOT EXISTS (SELECT 1 FROM sys.columns
                                    WHERE object_id = OBJECT_ID('Nodes') AND name = 'IsDraft')
                     BEGIN
+                        -- One transaction with XACT_ABORT: a failed ADD (e.g. the history table already
+                        -- has the column from a partial run) used to leave versioning OFF for good.
+                        SET XACT_ABORT ON; BEGIN TRAN;
                         ALTER TABLE [dbo].[Nodes] SET (SYSTEM_VERSIONING = OFF);
                         ALTER TABLE [dbo].[Nodes]         ADD [IsDraft] bit NOT NULL DEFAULT 0;
                         ALTER TABLE [dbo].[Nodes_History] ADD [IsDraft] bit NOT NULL DEFAULT 0;
                         ALTER TABLE [dbo].[Nodes]
                             SET (SYSTEM_VERSIONING = ON (HISTORY_TABLE = [dbo].[Nodes_History],
                                                          DATA_CONSISTENCY_CHECK = OFF));
+                        COMMIT;
                     END;
                     """);
                 Console.WriteLine("  ✔ IsDraft column added to Nodes (+ Nodes_History).");

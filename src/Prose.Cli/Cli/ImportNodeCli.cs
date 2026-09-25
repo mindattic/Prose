@@ -291,9 +291,12 @@ public static class NodeFileParser
             if (trimmed.StartsWith(GapMarker, StringComparison.OrdinalIgnoreCase))
             {
                 var rest = trimmed[GapMarker.Length..].Trim();
-                if (int.TryParse(rest.TrimEnd('m', 's', 'M', 'S'), out var ms) && result.Beats.Count > 0)
+                // The beat being read is `current` — it only joins result.Beats when the next beat
+                // starts, so targeting Beats[^1] dropped the gap (or gave it to the beat before).
+                var target = current ?? (result.Beats.Count > 0 ? result.Beats[^1] : null);
+                if (int.TryParse(rest.TrimEnd('m', 's', 'M', 'S'), out var ms) && target != null)
                 {
-                    result.Beats[^1].GapAfterMs = Math.Clamp(ms, 0, 6000);
+                    target.GapAfterMs = Math.Clamp(ms, 0, 6000);
                 }
                 continue;
             }
