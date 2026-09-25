@@ -77,6 +77,18 @@ public class CanonGroundingRelationshipParserTests
     }
 
     [Test]
+    public void TheEarliestConnectorWins_AndTheTargetEndsAtTheNextOne()
+    {
+        var parsed = CanonGroundingService.TryParseRelationshipClaim("works for Arcturus with Kyle");
+        Assert.That(parsed, Is.Not.Null);
+        Assert.That(parsed!.Type, Is.EqualTo("works"));
+        Assert.That(parsed.Name, Is.EqualTo("Arcturus"));
+
+        Assert.That(CanonGroundingService.TryParseRelationshipClaim("fought alongside Kyle at the Docks"), Is.Null,
+            "a type that names someone is not a relationship type");
+    }
+
+    [Test]
     public void DefiniteDescriptionTarget_IsAccepted()
     {
         var parsed = CanonGroundingService.TryParseRelationshipClaim("allied with the Lotus Syndicate");

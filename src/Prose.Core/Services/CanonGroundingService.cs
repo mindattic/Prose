@@ -223,18 +223,32 @@ public class CanonGroundingService
         if (string.IsNullOrWhiteSpace(claim)) return null;
         claim = claim.Trim();
 
-        foreach (var connector in RelationshipConnectors)
+        // Connectors in the order they APPEAR in the claim, not list order: "works for Arcturus
+        // with Kyle" split on " with " first and typed the relation "works for Arcturus".
+        var connectors = RelationshipConnectors
+            .Select(c => (Connector: c, Index: claim.IndexOf(c, StringComparison.OrdinalIgnoreCase)))
+            .Where(x => x.Index > 0)
+            .OrderBy(x => x.Index)
+            .ToList();
+        foreach (var (connector, idx) in connectors)
         {
-            var idx = claim.IndexOf(connector, StringComparison.OrdinalIgnoreCase);
-            if (idx <= 0) continue;
-
             var type = claim[..idx].Trim();
             var target = claim[(idx + connector.Length)..].Trim();
+            // The target ends where the next connector begins ("Arcturus", not "Arcturus with Kyle").
+            var cut = RelationshipConnectors
+                .Select(c => target.IndexOf(c, StringComparison.OrdinalIgnoreCase))
+                .Where(i => i > 0)
+                .DefaultIfEmpty(-1)
+                .Min();
+            if (cut > 0) target = target[..cut].Trim();
             if (type.Length == 0 || target.Length == 0) continue;
 
             // A relationship TYPE is a word or two ("nephew", "works", "allied"), never a
             // clause. "Kyle was not informed" is a sentence fragment, not a relation.
             if (type.Length > 30 || type.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length > 3) continue;
+            // Nor does it name anyone: "fought alongside Kyle" (then "at the Docks") is a
+            // relation TO Kyle, and taking it as a type pointed the row at the Docks.
+            if (type.Split(' ', StringSplitOptions.RemoveEmptyEntries).Skip(1).Any(w => char.IsUpper(w[0]))) continue;
 
             // A TARGET is a named thing: a proper noun, or a definite description.
             // This rejects dates ("2189 through 2193") and possessives ("his funeral").

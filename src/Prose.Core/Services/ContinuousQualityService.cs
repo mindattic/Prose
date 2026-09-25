@@ -64,23 +64,38 @@ public class ContinuousQualityService
         chapters.OnChapterSaved += OnChapterSaved;
     }
 
+    /// <summary>The newest saved version of each chapter still waiting to be scanned.</summary>
+    private readonly System.Collections.Concurrent.ConcurrentDictionary<string, Chapter> pending = new();
+
     private void OnChapterSaved(Chapter chapter)
     {
         if (!Enabled) return;
         if (chapter == null || string.IsNullOrEmpty(chapter.Id)) return;
         var key = "chapter:" + chapter.Id;
+        // Queue the NEWEST version, then let the running worker (if any) pick it up. A save that
+        // arrived mid-analysis used to be dropped outright, so its text was never scanned — only
+        // the stale version the running task held.
+        pending[key] = chapter;
         if (!inFlight.TryAdd(key, 0)) return;
 
         _ = Task.Run(async () =>
         {
-            try
+            while (true)
             {
-                await gate.WaitAsync();
-                try { await AnalyzeChapterAsync(chapter); }
-                finally { gate.Release(); }
+                while (pending.TryRemove(key, out var next))
+                {
+                    try
+                    {
+                        await gate.WaitAsync();
+                        try { await AnalyzeChapterAsync(next); }
+                        finally { gate.Release(); }
+                    }
+                    catch (Exception ex) { log.LogWarning(ex, "Quality analysis failed for chapter {Id}", next.Id); }
+                }
+                inFlight.TryRemove(key, out _);
+                // A save that landed between the last drain and clearing the flag has no worker.
+                if (!pending.ContainsKey(key) || !inFlight.TryAdd(key, 0)) break;
             }
-            catch (Exception ex) { log.LogWarning(ex, "Quality analysis failed for chapter {Id}", chapter.Id); }
-            finally { inFlight.TryRemove(key, out _); }
         });
     }
 
