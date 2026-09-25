@@ -56,7 +56,16 @@ public class ExpertPersonaService
     }
 
     /// <summary>Add or update a persona; persists immediately.</summary>
+    // Singleton read-modify-write of one KV document: two concurrent saves each read the old list
+    // and the second write dropped the first's persona.
+    private readonly object docLock = new();
+
     public void Save(ExpertPersona persona)
+    {
+        lock (docLock) SaveLocked(persona);
+    }
+
+    private void SaveLocked(ExpertPersona persona)
     {
         var doc = kv.Get<ExpertPersonaCollection>(KvKey) ?? new ExpertPersonaCollection();
         if (doc.Personas.Count == 0)
@@ -173,10 +182,13 @@ public class ExpertPersonaService
 
     public void Delete(string id)
     {
-        var doc = kv.Get<ExpertPersonaCollection>(KvKey);
-        if (doc == null) return;
-        doc.Personas.RemoveAll(p => p.Id == id);
-        kv.Set(KvKey, doc);
+        lock (docLock)
+        {
+            var doc = kv.Get<ExpertPersonaCollection>(KvKey);
+            if (doc == null) return;
+            doc.Personas.RemoveAll(p => p.Id == id);
+            kv.Set(KvKey, doc);
+        }
     }
 
     /// <summary>

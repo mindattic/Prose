@@ -182,7 +182,10 @@ public class NarrativeSessionContext
 
             // Partial name match — first name or surname (3+ chars)
             var nameParts = nameLower.Split([' ', '-'], StringSplitOptions.RemoveEmptyEntries);
-            if (nameParts.Any(part => part.Length >= 3 && (textLower.Contains(part) || textNorm.Contains(StripDiacritics(part)))))
+            // Whole words only, and no filler words: "the" (from "The Narrows") appears in all
+            // prose and "ray" inside "array", so every such entity became primary in every scene.
+            if (nameParts.Any(part => part.Length >= 4 && !PartFillers.Contains(part)
+                    && (ContainsWord(textLower, part) || ContainsWord(textNorm, StripDiacritics(part)))))
             {
                 primaryIds.Add(node.Id);
                 Resolve(node.Id);
@@ -435,6 +438,14 @@ public class NarrativeSessionContext
             return new AsOfCursor(null, n, null);
         return AsOfCursor.Current;
     }
+
+    private static readonly HashSet<string> PartFillers = new(StringComparer.Ordinal)
+    {
+        "the", "and", "for", "from", "with", "that", "this", "into", "over", "under", "last", "first", "black", "white", "old", "new",
+    };
+
+    private static bool ContainsWord(string text, string word) =>
+        System.Text.RegularExpressions.Regex.IsMatch(text, $@"\b{System.Text.RegularExpressions.Regex.Escape(word)}\b");
 }
 
 public record SessionEntity
@@ -449,4 +460,5 @@ public record SessionSnapshot
     public List<SessionEntity> PrimaryEntities { get; init; } = [];
     public List<SessionEntity> SecondaryEntities { get; init; } = [];
     public int EstimatedTokens { get; init; }
+
 }

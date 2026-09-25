@@ -127,13 +127,20 @@ public static class BookCli
         var chapter = chapterRepo.LoadChapter(chapterId);
         if (chapter == null) return Fail($"chapter not found: {chapterId}");
 
-        chapter.BookId = book.Id;
-        chapter.Number = book.ChapterIds.Count + 1;
-        chapterRepo.SaveChapter(chapter);
+        // Leave the previous book's order (it used to list the chapter too), and keep the number
+        // of a chapter already in this book at its position instead of Count + 1.
+        var previousBookId = chapter.BookId;
+        if (!string.IsNullOrEmpty(previousBookId) && !string.Equals(previousBookId, book.Id, StringComparison.OrdinalIgnoreCase)
+            && bookRepo.LoadBook(previousBookId) is { } previous && previous.ChapterIds.RemoveAll(c => c == chapter.Id) > 0)
+            bookRepo.SaveBook(previous);
 
         if (!book.ChapterIds.Contains(chapter.Id))
             book.ChapterIds.Add(chapter.Id);
         bookRepo.SaveBook(book);
+
+        chapter.BookId = book.Id;
+        chapter.Number = book.ChapterIds.IndexOf(chapter.Id) + 1;
+        chapterRepo.SaveChapter(chapter);
 
         Console.Error.WriteLine($"[book] absorbed chapter '{chapter.Title}' as #{chapter.Number}");
         return 0;

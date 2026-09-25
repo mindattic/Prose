@@ -97,6 +97,7 @@ public class WritingTools
         if (!string.IsNullOrEmpty(id) && chapters.LoadChapter(id) == null)
             return $"Chapter not found: {id}";
         var chapter = string.IsNullOrEmpty(id) ? new Chapter() : chapters.LoadChapter(id)!;
+        var previousBookId = chapter.BookId;
         chapter.Title      = title;
         chapter.Synopsis   = synopsis ?? "";
         chapter.Html       = NormalizeHtml(html ?? "");
@@ -108,6 +109,7 @@ public class WritingTools
         chapter.Number     = number > 0 ? number : null;
 
         chapters.SaveChapter(chapter);
+        DetachFromPreviousBook(chapter.Id, previousBookId, chapter.BookId);
 
         // If a book id was supplied, splice the chapter id into the book's
         // ChapterIds at the (number - 1) position. Idempotent — re-saving with
@@ -154,11 +156,23 @@ public class WritingTools
         book.ChapterIds.Insert(pos, chapterId);
         books.SaveBook(book);
 
+        var previousBookId = chapter.BookId;
         chapter.BookId = bookId;
         chapter.Number = number > 0 ? number : pos + 1;
         chapters.SaveChapter(chapter);
+        DetachFromPreviousBook(chapterId, previousBookId, bookId);
 
         return JsonSerializer.Serialize(new { ok = true, book_id = bookId, chapter_id = chapterId, number = chapter.Number }, CanonTools.JsonOpts);
+    }
+
+    /// <summary>A chapter moved to another book (or detached) used to stay in the old book's
+    /// ChapterIds too, so it was listed, exported and reviewed in both.</summary>
+    private void DetachFromPreviousBook(string chapterId, string? previousBookId, string? newBookId)
+    {
+        if (string.IsNullOrEmpty(previousBookId) || string.Equals(previousBookId, newBookId, StringComparison.OrdinalIgnoreCase)) return;
+        var old = books.LoadBook(previousBookId);
+        if (old == null || old.ChapterIds.RemoveAll(cid => cid == chapterId) == 0) return;
+        books.SaveBook(old);
     }
 
     // Wraps bare prose paragraphs in <p> tags so chapter renderers don't end up

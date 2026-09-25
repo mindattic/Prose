@@ -172,6 +172,7 @@ public static class ApparelMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.ApparelAliases.EntityType.ClrType, await db.ApparelAliases.Where(x => x.ApparelId == id).Select(x => x.Value).ToListAsync(ct));
             await db.ApparelAliases.Where(x => x.ApparelId == id).ExecuteDeleteAsync(ct);
             await db.ApparelMaterials.Where(x => x.ApparelId == id).ExecuteDeleteAsync(ct);
             await db.ApparelWornByRows.Where(x => x.ApparelId == id).ExecuteDeleteAsync(ct);

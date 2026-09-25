@@ -179,6 +179,7 @@ public static class EquipmentMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.EquipmentAliases.EntityType.ClrType, await db.EquipmentAliases.Where(x => x.EquipmentId == id).Select(x => x.Value).ToListAsync(ct));
             await db.EquipmentAliases.Where(x => x.EquipmentId == id).ExecuteDeleteAsync(ct);
             await db.EquipmentBaseTechnologies.Where(x => x.EquipmentId == id).ExecuteDeleteAsync(ct);
             await db.EquipmentKnownUsers.Where(x => x.EquipmentId == id).ExecuteDeleteAsync(ct);

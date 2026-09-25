@@ -18,16 +18,16 @@ public static class LocationScanCli
     public static async Task<int> RunAsync(string[] args, IServiceProvider services)
     {
         var svc = services.GetRequiredService<LocationContradictionService>();
-        // Singleton in the Hub: reset the knob, or one --min-travel-minutes run sticks for every later scan.
-        svc.MinTravelMinutes = 5;
+        // Per call, never on the Hub singleton (a set knob stuck for, and raced with, other scans).
+        int? minTravel = null;
         for (int i = 0; i < args.Length - 1; i++)
         {
             if (args[i] == "--min-travel-minutes" && int.TryParse(args[i + 1], out var m))
-            { svc.MinTravelMinutes = m; i++; }
+            { minTravel = m; i++; }
         }
 
         Console.WriteLine("Location-contradiction scan (corpus-wide)...");
-        var r = await svc.ScanAsync();
+        var r = await svc.ScanAsync(minTravelMinutes: minTravel);
 
         Console.WriteLine();
         Console.WriteLine($"Characters examined : {r.CharactersExamined}");

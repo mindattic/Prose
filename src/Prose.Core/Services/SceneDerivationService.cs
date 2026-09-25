@@ -174,6 +174,11 @@ public class SceneDerivationService(
 
             var chapter = await db.Nodes.IgnoreQueryFilters().FirstAsync(n => n.Id == plan.ChapterNodeId, ct);
 
+            // One transaction per chapter: an interruption after the first scene left the chapter
+            // with a child node AND beats of its own, and the leaf walk stops at a node with
+            // children — those beats dropped out of reading order and export.
+            await using var tx = db.Database.CurrentTransaction == null ? await db.Database.BeginTransactionAsync(ct) : null;
+
             for (var i = 0; i < plan.Scenes.Count; i++)
             {
                 var proposed = plan.Scenes[i];
@@ -210,6 +215,7 @@ public class SceneDerivationService(
                 log.LogInformation("[derive-scenes] {Chapter}: scene '{Scene}' took {Count} beat(s) ({Reason})",
                     chapter.Title, scene.Title, rows.Count, proposed.Reason);
             }
+            if (tx != null) await tx.CommitAsync(ct);
         }
     }
 

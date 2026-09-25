@@ -182,6 +182,7 @@ public static class AutomatonMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.AutomatonAliases.EntityType.ClrType, await db.AutomatonAliases.Where(x => x.AutomatonId == id).Select(x => x.Value).ToListAsync(ct));
             await db.AutomatonAliases.Where(x => x.AutomatonId == id).ExecuteDeleteAsync(ct);
             await db.AutomatonArmament.Where(x => x.AutomatonId == id).ExecuteDeleteAsync(ct);
             await db.AutomatonSensors.Where(x => x.AutomatonId == id).ExecuteDeleteAsync(ct);

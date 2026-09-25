@@ -85,7 +85,7 @@ public abstract class DataScanUtility
         CancellationToken ct = default,
         bool dryRun = false)
     {
-        int scanned = 0, modified = 0, changes = 0;
+        int scanned = 0, modified = 0, changes = 0, reserved = 0;
         var warnings = new ConcurrentBag<string>();
         using var limitCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
 
@@ -114,6 +114,13 @@ public abstract class DataScanUtility
                         int done = Interlocked.Increment(ref scanned);
                         if (fileChanges > 0)
                         {
+                            // Reserve a slot BEFORE writing: checking the count after the save let
+                            // every parallel worker write before any of them cancelled.
+                            if (limit.HasValue && Interlocked.Increment(ref reserved) > limit.Value)
+                            {
+                                limitCts.Cancel();
+                                return;
+                            }
                             // dryRun: processFile already mutated the in-memory `obj` as a side
                             // effect (that's how every subclass reports its change count), but
                             // skip writing it back — this is a mass-mutation utility with no

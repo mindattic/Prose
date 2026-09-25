@@ -172,6 +172,7 @@ public static class TechnologyMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.TechnologyAliases.EntityType.ClrType, await db.TechnologyAliases.Where(x => x.TechnologyId == id).Select(x => x.Value).ToListAsync(ct));
             await db.TechnologyAliases.Where(x => x.TechnologyId == id).ExecuteDeleteAsync(ct);
             await db.TechnologyDevelopers.Where(x => x.TechnologyId == id).ExecuteDeleteAsync(ct);
             await db.TechnologyBaseTechnologies.Where(x => x.TechnologyId == id).ExecuteDeleteAsync(ct);

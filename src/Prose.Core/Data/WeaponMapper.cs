@@ -174,6 +174,7 @@ public static class WeaponMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.WeaponAliases.EntityType.ClrType, await db.WeaponAliases.Where(x => x.WeaponId == id).Select(x => x.Value).ToListAsync(ct));
             await db.WeaponAliases.Where(x => x.WeaponId == id).ExecuteDeleteAsync(ct);
             await db.WeaponBaseTechnologies.Where(x => x.WeaponId == id).ExecuteDeleteAsync(ct);
             await db.WeaponKnownUsers.Where(x => x.WeaponId == id).ExecuteDeleteAsync(ct);

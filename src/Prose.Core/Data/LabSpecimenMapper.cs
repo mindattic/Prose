@@ -175,6 +175,7 @@ public static class LabSpecimenMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.LabSpecimenAliases.EntityType.ClrType, await db.LabSpecimenAliases.Where(x => x.LabSpecimenId == id).Select(x => x.Value).ToListAsync(ct));
             await db.LabSpecimenAliases.Where(x => x.LabSpecimenId == id).ExecuteDeleteAsync(ct);
             await db.LabSpecimenKnownLocations.Where(x => x.LabSpecimenId == id).ExecuteDeleteAsync(ct);
             await db.LabSpecimenStoryHooks.Where(x => x.LabSpecimenId == id).ExecuteDeleteAsync(ct);

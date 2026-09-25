@@ -204,6 +204,7 @@ public static class FactionMapper
         {
             // Wipe all bridges — cascade deletes handle grandchildren (e.g.
             // FactionRelationshipTags cascade via FactionRelationships FK).
+            db.NoteReplacedBridgeValues(db.FactionAliases.EntityType.ClrType, await db.FactionAliases.Where(x => x.FactionId == id).Select(x => x.Value).ToListAsync(ct));
             await db.FactionAliases.Where(x => x.FactionId == id).ExecuteDeleteAsync(ct);
             await db.FactionMethods.Where(x => x.FactionId == id).ExecuteDeleteAsync(ct);
             await db.FactionResources.Where(x => x.FactionId == id).ExecuteDeleteAsync(ct);

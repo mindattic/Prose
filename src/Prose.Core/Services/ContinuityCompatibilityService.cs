@@ -169,8 +169,27 @@ public class ContinuityCompatibilityService(
     /// <summary>Case-insensitive substring containment either direction — one value being a
     /// superset/rephrasing of the other (e.g. "ex-Arcturus" ⊂ "ex-Arcturus Defense Solutions")
     /// is never itself a genuine conflict.</summary>
+    /// <summary>
+    /// True when one value is a plain elaboration of the other ("Chicago" / "downtown Chicago").
+    /// Not for negations: "alive"/"not alive", "married"/"unmarried", "armed"/"unarmed" all
+    /// contain each other as substrings, were cached "compatible" and hid real contradictions.
+    /// The shorter value must sit on word boundaries and the extra text must carry no negation.
+    /// </summary>
     internal static bool IsSubstringContainment(string a, string b)
-        => a.Contains(b, StringComparison.OrdinalIgnoreCase) || b.Contains(a, StringComparison.OrdinalIgnoreCase);
+    {
+        var (shortV, longV) = a.Length <= b.Length ? (a.Trim(), b.Trim()) : (b.Trim(), a.Trim());
+        if (shortV.Length == 0) return false;
+        var m = System.Text.RegularExpressions.Regex.Match(longV,
+            $@"(?<![\p{{L}}\p{{N}}]){System.Text.RegularExpressions.Regex.Escape(shortV)}(?![\p{{L}}\p{{N}}])",
+            System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        if (!m.Success) return false;
+        var extra = longV.Remove(m.Index, m.Length);
+        return !NegationWords.IsMatch(extra);
+    }
+
+    private static readonly System.Text.RegularExpressions.Regex NegationWords = new(
+        @"\b(not|no|never|non|un|ex|former|formerly|longer|without|isn't|wasn't|aren't|weren't|n't)\b|-$|^-",
+        System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Compiled);
 
     /// <summary>SHA-256 hex of the sorted, normalized, distinct Object-string set — order- and
     /// case-independent, so re-hashing the same variant set always produces the same cache key.</summary>

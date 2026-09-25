@@ -178,6 +178,7 @@ public static class SyntheticMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.SyntheticLifeAliases.EntityType.ClrType, await db.SyntheticLifeAliases.Where(x => x.SyntheticLifeId == id).Select(x => x.Value).ToListAsync(ct));
             await db.SyntheticLifeAliases.Where(x => x.SyntheticLifeId == id).ExecuteDeleteAsync(ct);
             await db.SyntheticLifeKnownAssociations.Where(x => x.SyntheticLifeId == id).ExecuteDeleteAsync(ct);
             await db.SyntheticLifeStoryHooks.Where(x => x.SyntheticLifeId == id).ExecuteDeleteAsync(ct);

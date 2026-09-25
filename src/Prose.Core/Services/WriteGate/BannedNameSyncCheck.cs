@@ -51,6 +51,11 @@ public sealed class BannedNameSyncCheck : IWriteGateSyncCheck
                 && e.Entity.GetType() == entry.Entity.GetType()
                 && string.Equals(ValueOf(e.Entity), value, StringComparison.OrdinalIgnoreCase)))
             return;
+        // Mappers delete aliases with ExecuteDelete (invisible to the tracker) and re-add them:
+        // they note the old values on the context so an unchanged alias is not "new".
+        if (entry.State == EntityState.Added && entry.Entity is not Entity
+            && entry.Context is ProseDbContext pdb && pdb.WasReplacedInPendingSave(entry.Entity.GetType(), value))
+            return;
 
         var db = (ProseDbContext)entry.Context;
 

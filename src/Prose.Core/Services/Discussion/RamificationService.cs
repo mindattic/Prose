@@ -339,7 +339,7 @@ public sealed class RamificationService(
         var lost = goneGuids.Where(g => !stillThere.Contains(g)).ToList();
         if (lost.Count == 0) return;
 
-        var names = await db.Entities.AsNoTracking()
+        var names = await db.Entities.AsNoTracking().IgnoreQueryFilters() // explicit ids from the text
             .Where(e => lost.Contains(e.Id))
             .Select(e => e.Name)
             .ToListAsync(ct);

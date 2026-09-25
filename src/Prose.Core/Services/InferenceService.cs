@@ -115,6 +115,9 @@ public class InferenceService
                 var hubNode = graph.GetNode(neighborId);
                 if (otherNode == null || hubNode == null) continue;
 
+                // One row per target: a target sharing several hubs was added once per hub, and
+                // the duplicates pushed other results out of Take(maxResults).
+                if (results.Any(r => r.TargetId == otherId)) continue;
                 results.Add(new InferredEdge
                 {
                     SourceId = nodeId,
@@ -138,8 +141,13 @@ public class InferenceService
                 if (!node.Properties.TryGetValue(key, out var value) || string.IsNullOrWhiteSpace(value))
                     continue;
 
-                var vLower = value.Trim().ToLowerInvariant();
-                var indexKey = (key, vLower);
+                // Split exactly as RebuildPropertyIndex does: the whole "arcturus, lotus" was looked
+                // up as one key and never matched, so multi-valued properties inferred nothing.
+                var parts = value.Contains(',') ? value.Split(',', StringSplitOptions.TrimEntries) : [value.Trim()];
+                foreach (var part in parts)
+                {
+                if (part.Length < 2) continue;
+                var indexKey = (key, part.ToLowerInvariant());
                 if (!index.TryGetValue(indexKey, out var siblings)) continue;
 
                 foreach (var siblingId in siblings)
@@ -157,10 +165,11 @@ public class InferenceService
                         TargetId = siblingId,
                         TargetName = siblingNode.Name,
                         InferenceType = "shared_property",
-                        Explanation = $"Same {key}: {value}",
+                        Explanation = $"Same {key}: {part}",
                         Confidence = 0.7,
                         ViaNodes = [],
                     });
+                }
                 }
             }
         }

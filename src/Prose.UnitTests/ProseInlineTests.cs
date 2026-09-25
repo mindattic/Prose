@@ -32,6 +32,13 @@ public class ProseInlineTests
     }
 
     [Test]
+    public void LoneAsterisk_BeforeLaterBold_StaysLiteral()
+    {
+        // The first half of a later "**" is not a closing italic marker.
+        Assert.That(Render("5 * 3 = 15. **NOTE**"), Is.EqualTo("5 * 3 = 15. [Bold:NOTE]"));
+    }
+
+    [Test]
     public void Strikethrough_AndUnderline_AreParsed()
     {
         Assert.That(Render("~~redacted~~"), Is.EqualTo("[Strikethrough:redacted]"));

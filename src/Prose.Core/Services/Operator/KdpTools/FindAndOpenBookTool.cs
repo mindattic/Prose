@@ -114,7 +114,15 @@ public class FindAndOpenBookTool : IKdpTool
         catch { /* navigation tears down the script context; a thrown eval is expected here */ }
         await Task.Delay(2000, ct);
 
-        await ctx.Browser.EvalAsync(TypeIntoSearchBoxScript(JsonSerializer.Serialize(searchText)), ct);
+        var typedResult = await ctx.Browser.EvalAsync(TypeIntoSearchBoxScript(JsonSerializer.Serialize(searchText)), ct);
+        // No search box = an UNFILTERED shelf: the ASIN branch below would then click the first
+        // book on it and report found:true. Treat it as not found.
+        try
+        {
+            using var td = JsonDocument.Parse(typedResult);
+            if (td.RootElement.TryGetProperty("typed", out var typed) && !typed.GetBoolean()) return null;
+        }
+        catch (JsonException) { return null; }
         await Task.Delay(2500, ct);
 
         var searchResult = await ctx.Browser.EvalAsync(SearchAndClickScript(queryJs, isAsin), ct);

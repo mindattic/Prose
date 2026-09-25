@@ -156,7 +156,12 @@ public class ObligationResurfacingJudge(
             var toJudge = candidates.Where(c => !cached.Any(k => k.CandidateBeatId == c.Id && k.CandidateTextHash == (c.TextHash ?? ""))).ToList();
             cacheHits += candidates.Count - toJudge.Count;
 
-            var verdicts = cached.Select(k => (BeatId: k.CandidateBeatId, k.Relation, k.Quote)).ToList();
+            // Only cache rows for a CURRENT candidate at its current text: matching on the hash alone
+            // replayed another beat's verdict (null hashes all shared ""), and closing on a beat
+            // that is no longer a candidate then threw in candidates.First(...).
+            var verdicts = cached
+                .Where(k => candidates.Any(c => c.Id == k.CandidateBeatId && (c.TextHash ?? "") == k.CandidateTextHash))
+                .Select(k => (BeatId: k.CandidateBeatId, k.Relation, k.Quote)).ToList();
 
             if (toJudge.Count > 0)
             {
@@ -235,12 +240,16 @@ public class ObligationResurfacingJudge(
             if (closing.Quote != null)
             {
                 var hash = candidates.First(c => c.Id == closing.BeatId).TextHash;
-                db.NarrativeObligationEvents.Add(new NarrativeObligationEvent { ObligationId = o.Id, Action = ObligationEventAction.Close, BeatId = closing.BeatId, Quote = closing.Quote, BeatTextHash = hash, Actor = ObligationActor.SystemDeep, Note = "resurfacing judge" });
+                // An author-locked row stays Open, so every deep run re-selected it and added
+                // another identical Close event (and counted it closed again).
+                var alreadyClosedHere = await db.NarrativeObligationEvents.AnyAsync(e => e.ObligationId == o.Id && e.BeatId == closing.BeatId && e.Action == ObligationEventAction.Close, ct);
+                if (!alreadyClosedHere)
+                    db.NarrativeObligationEvents.Add(new NarrativeObligationEvent { ObligationId = o.Id, Action = ObligationEventAction.Close, BeatId = closing.BeatId, Quote = closing.Quote, BeatTextHash = hash, Actor = ObligationActor.SystemDeep, Note = "resurfacing judge" });
                 if (!o.AuthorLocked)
                 {
                     o.State = ObligationState.Closed; o.ClosingBeatId = closing.BeatId; o.ClosingQuote = closing.Quote; o.ClosingTextHash = hash; o.UpdatedAt = DateTime.UtcNow;
+                    closed++;
                 }
-                closed++;
             }
             else
             {

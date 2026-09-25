@@ -313,6 +313,14 @@ public class SelectCategoriesTool : IKdpTool
             saveClicked = saveResult;
         }
 
-        return JsonSerializer.Serialize(new { allOk, results = perPathResults, saved = saveClicked != null });
+        // saveClicked holds the raw {"clicked":…} JSON either way — non-null said "saved" even
+        // when no Save button was found.
+        var saved = false;
+        if (saveClicked != null)
+        {
+            try { using var sd = JsonDocument.Parse(saveClicked); saved = sd.RootElement.TryGetProperty("clicked", out var c) && c.GetBoolean(); }
+            catch (JsonException) { saved = false; }
+        }
+        return JsonSerializer.Serialize(new { allOk, results = perPathResults, saved });
     }
 }

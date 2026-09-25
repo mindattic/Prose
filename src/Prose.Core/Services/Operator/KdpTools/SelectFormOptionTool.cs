@@ -118,6 +118,25 @@ public class SelectFormOptionTool : IKdpTool
             return texts.filter(Boolean);
         }
 
+        // Tier 0: the intended option is ALREADY selected — done. Without this, checked controls
+        // were filtered out and tier 2's substring match on a short "No" clicked a different
+        // question's option ("No, do not apply DRM", "I don't know…") and reported success.
+        var checkedNative = Array.from(document.querySelectorAll('input[type=radio], input[type=checkbox]'))
+            .filter(function (el) { return el.checked; });
+        for (var i = 0; i < checkedNative.length; i++) {
+            var ct0 = tightTexts(checkedNative[i]);
+            for (var t = 0; t < ct0.length; t++)
+                if (candidates.indexOf(ct0[t]) !== -1) return JSON.stringify({ found: true, kind: 'native', clicked: true, alreadySelected: true, text: ct0[t].slice(0, 200) });
+        }
+        var checkedWidgets = Array.from(document.querySelectorAll('[role=radio], [role=checkbox]'))
+            .filter(function (el) { return el.getAttribute('aria-checked') === 'true'; });
+        for (var i = 0; i < checkedWidgets.length; i++) {
+            var wt0 = (checkedWidgets[i].textContent || '').trim().toLowerCase();
+            if (candidates.indexOf(wt0) !== -1) return JSON.stringify({ found: true, kind: 'native', clicked: true, alreadySelected: true, text: wt0.slice(0, 200) });
+        }
+        // Substring tiers only use candidates long enough not to hit inside unrelated words.
+        var subCandidates = candidates.filter(function (c) { return c.length >= 4; });
+
         var nativeInputs = Array.from(document.querySelectorAll('input[type=radio], input[type=checkbox]'))
             .filter(function (el) { return !el.checked; });
         var widgets = Array.from(document.querySelectorAll('[role=radio], [role=checkbox]'))
@@ -148,21 +167,21 @@ public class SelectFormOptionTool : IKdpTool
         for (var i = 0; i < nativeInputs.length; i++) {
             var texts = tightTexts(nativeInputs[i]);
             for (var t = 0; t < texts.length; t++)
-                for (var c = 0; c < candidates.length; c++)
-                    if (texts[t].indexOf(candidates[c]) !== -1) return JSON.stringify(nativeResult(nativeInputs[i], texts[t]));
+                for (var c = 0; c < subCandidates.length; c++)
+                    if (texts[t].indexOf(subCandidates[c]) !== -1) return JSON.stringify(nativeResult(nativeInputs[i], texts[t]));
         }
         for (var i = 0; i < widgets.length; i++) {
             var text = (widgets[i].textContent || '').trim().toLowerCase();
-            for (var c = 0; c < candidates.length; c++)
-                if (text.indexOf(candidates[c]) !== -1) return JSON.stringify(widgetResult(widgets[i], text));
+            for (var c = 0; c < subCandidates.length; c++)
+                if (text.indexOf(subCandidates[c]) !== -1) return JSON.stringify(widgetResult(widgets[i], text));
         }
 
         // Tier 3: substring match, wide ancestor walk — native only, last resort.
         for (var i = 0; i < nativeInputs.length; i++) {
             var texts = wideTexts(nativeInputs[i]);
             for (var t = 0; t < texts.length; t++)
-                for (var c = 0; c < candidates.length; c++)
-                    if (texts[t].indexOf(candidates[c]) !== -1) return JSON.stringify(nativeResult(nativeInputs[i], texts[t]));
+                for (var c = 0; c < subCandidates.length; c++)
+                    if (texts[t].indexOf(subCandidates[c]) !== -1) return JSON.stringify(nativeResult(nativeInputs[i], texts[t]));
         }
 
         return JSON.stringify({ found: false });

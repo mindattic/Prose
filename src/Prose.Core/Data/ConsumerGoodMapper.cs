@@ -172,6 +172,7 @@ public static class ConsumerGoodMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.ConsumerGoodAliases.EntityType.ClrType, await db.ConsumerGoodAliases.Where(x => x.ConsumerGoodId == id).Select(x => x.Value).ToListAsync(ct));
             await db.ConsumerGoodAliases.Where(x => x.ConsumerGoodId == id).ExecuteDeleteAsync(ct);
             await db.ConsumerGoodStoryHooks.Where(x => x.ConsumerGoodId == id).ExecuteDeleteAsync(ct);
         }

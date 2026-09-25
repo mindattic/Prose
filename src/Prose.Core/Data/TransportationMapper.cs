@@ -179,6 +179,7 @@ public static class TransportationMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.TransportationAliases.EntityType.ClrType, await db.TransportationAliases.Where(x => x.TransportationId == id).Select(x => x.Value).ToListAsync(ct));
             await db.TransportationAliases.Where(x => x.TransportationId == id).ExecuteDeleteAsync(ct);
             await db.TransportationStoryHooks.Where(x => x.TransportationId == id).ExecuteDeleteAsync(ct);
         }

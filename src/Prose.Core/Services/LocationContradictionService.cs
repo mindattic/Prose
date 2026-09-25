@@ -69,8 +69,11 @@ public class LocationContradictionService
         IReadOnlyList<LocationConflict> Conflicts,
         string StatusNote);
 
-    public async Task<ScanResult> ScanAsync(CancellationToken ct = default)
+    /// <param name="minTravelMinutes">Per-call threshold; the service is a Hub singleton, so a
+    /// property set by one caller was read by a concurrent scan. Null = <see cref="MinTravelMinutes"/>.</param>
+    public async Task<ScanResult> ScanAsync(CancellationToken ct = default, int? minTravelMinutes = null)
     {
+        var minTravel = minTravelMinutes ?? MinTravelMinutes;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
         // 1) Edge-derived presence facts: character --located_at--> place, with
@@ -124,28 +127,26 @@ public class LocationContradictionService
         foreach (var grp in all.GroupBy(f => f.CharacterId))
         {
             charsExamined++;
-            var ordered = grp.ToList();
-            for (int i = 0; i < ordered.Count - 1; i++)
+            // Compare each located fact with the previous LOCATED fact. Beat facts carry no place
+            // and come from the chapter cast (every cast member × every beat, day-granular dates),
+            // so beat-vs-beat pairs were a flood of false High "contradictions"; and comparing only
+            // adjacent facts let a beat fact sorted between two located_at edges hide a real conflict.
+            PresenceFact? a = null;
+            foreach (var b in grp)
             {
-                var a = ordered[i];
-                var b = ordered[i + 1];
-                if (string.IsNullOrEmpty(a.PlaceName) || string.IsNullOrEmpty(b.PlaceName)) continue;
-                if (a.PlaceId != null && b.PlaceId != null)
-                {
-                    if (a.PlaceId == b.PlaceId) continue;                   // same place — no conflict
-                }
-                else if (a.PlaceId != b.PlaceId) continue;                  // one edge, one beat — can't compare locations
-                // both PlaceId == null: beat-vs-beat temporal collision — fall through to delta check
-
-                var delta = b.At - a.At;
-                if (delta < TimeSpan.FromMinutes(MinTravelMinutes))
+                if (b.PlaceId == null || string.IsNullOrEmpty(b.PlaceName)) continue;
+                var prev = a;
+                a = b;
+                if (prev == null || prev.PlaceId == b.PlaceId) continue;   // first fact, or same place
+                var delta = b.At - prev.At;
+                if (delta < TimeSpan.FromMinutes(minTravel))
                 {
                     conflicts.Add(new LocationConflict(
-                        a.CharacterId, a.CharacterName,
-                        a.At, a.PlaceName,
+                        prev.CharacterId, prev.CharacterName,
+                        prev.At, prev.PlaceName,
                         b.At, b.PlaceName,
                         delta,
-                        a.Source, b.Source));
+                        prev.Source, b.Source));
                 }
             }
         }
@@ -157,8 +158,8 @@ public class LocationContradictionService
         foreach (var c in conflicts)
         {
             var sev = c.Delta.TotalMinutes < 1 ? FindingSeverity.High
-                    : c.Delta.TotalMinutes < MinTravelMinutes ? FindingSeverity.High
-                    : c.Delta.TotalMinutes < MinTravelMinutes * 4 ? FindingSeverity.Medium
+                    : c.Delta.TotalMinutes < minTravel ? FindingSeverity.High
+                    : c.Delta.TotalMinutes < minTravel * 4 ? FindingSeverity.Medium
                     : FindingSeverity.Low;
 
             var summary =

@@ -97,6 +97,17 @@ public class ContinuityCompatibilityServiceTests
         Assert.That(ContinuityCompatibilityService.IsSubstringContainment("bead in ear", "Fade capsule"), Is.False);
     }
 
+    [TestCase("alive", "not alive")]
+    [TestCase("married", "unmarried")]
+    [TestCase("armed", "unarmed")]
+    [TestCase("member of the Lotus", "former member of the Lotus")]
+    [TestCase("in the city", "no longer in the city")]
+    public void IsSubstringContainment_NegatedVariant_ReturnsFalse(string a, string b)
+    {
+        // A negation is a contradiction candidate, not an elaboration.
+        Assert.That(ContinuityCompatibilityService.IsSubstringContainment(a, b), Is.False);
+    }
+
     // ── ComputeObjectSetHash ─────────────────────────────────────────────────
 
     [Test]

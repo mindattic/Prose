@@ -128,26 +128,51 @@ public class ProseDbContext : DbContext
         }
     }
 
+    // Alias values a mapper removed with ExecuteDeleteAsync ahead of the pending save. Those
+    // deletes bypass the ChangeTracker, so the write gate saw every re-inserted alias as NEW and
+    // BannedNameSyncCheck rejected any save of an entity already carrying a banned alias.
+    // Scoped to one save: cleared after every SaveChanges.
+    private readonly HashSet<(Type Type, string Value)> replacedBridgeValues = new();
+
+    /// <summary>Records alias values about to be deleted by ExecuteDelete and re-inserted.</summary>
+    public void NoteReplacedBridgeValues(Type aliasType, IEnumerable<string?> values)
+    {
+        foreach (var v in values)
+            if (!string.IsNullOrWhiteSpace(v)) replacedBridgeValues.Add((aliasType, v.ToLowerInvariant()));
+    }
+
+    /// <summary>True when this alias value was already on the row before the pending save.</summary>
+    public bool WasReplacedInPendingSave(Type aliasType, string value) =>
+        replacedBridgeValues.Contains((aliasType, value.ToLowerInvariant()));
+
     public override int SaveChanges(bool acceptAllChangesOnSuccess)
     {
-        StampUniverseOnAdded();
-        StampBeatTextHash();
-        RunWriteGateSyncChecks();
-        var events = ClassifyPendingWriteEvents();
-        var result = base.SaveChanges(acceptAllChangesOnSuccess);
-        DispatchWriteEvents(events);
-        return result;
+        try
+        {
+            StampUniverseOnAdded();
+            StampBeatTextHash();
+            RunWriteGateSyncChecks();
+            var events = ClassifyPendingWriteEvents();
+            var result = base.SaveChanges(acceptAllChangesOnSuccess);
+            DispatchWriteEvents(events);
+            return result;
+        }
+        finally { replacedBridgeValues.Clear(); }
     }
 
     public override async Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
     {
-        StampUniverseOnAdded();
-        StampBeatTextHash();
-        await RunWriteGateSyncChecksAsync(cancellationToken).ConfigureAwait(false);
-        var events = ClassifyPendingWriteEvents();
-        var result = await base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken).ConfigureAwait(false);
-        DispatchWriteEvents(events);
-        return result;
+        try
+        {
+            StampUniverseOnAdded();
+            StampBeatTextHash();
+            await RunWriteGateSyncChecksAsync(cancellationToken).ConfigureAwait(false);
+            var events = ClassifyPendingWriteEvents();
+            var result = await base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken).ConfigureAwait(false);
+            DispatchWriteEvents(events);
+            return result;
+        }
+        finally { replacedBridgeValues.Clear(); }
     }
 
     /// <summary>

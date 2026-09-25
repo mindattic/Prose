@@ -124,7 +124,9 @@ public class DualWriteAudioStore : IAudioStore
             using var ms = new MemoryStream();
             await fromSecondary.CopyToAsync(ms, ct);
             var bytes = ms.ToArray();
-            FireAndForgetSecondary(() => CacheToPrimaryAsync(relativePath, bytes), $"CacheBack {relativePath}");
+            // Tracked like a secondary write so DeleteAsync drains it: untracked, a delete right
+            // after the read removed nothing, then the cache-back put the deleted audio back.
+            TrackSecondaryWrite(relativePath, () => CacheToPrimaryAsync(relativePath, bytes), $"CacheBack {relativePath}");
             return new MemoryStream(bytes);
         }
     }
@@ -186,9 +188,13 @@ public class DualWriteAudioStore : IAudioStore
     /// belongs to that newer task.</summary>
     private void TrackSecondaryWrite(string relativePath, Func<Task> op, string opName)
     {
+        // Registered BEFORE the work starts: a fast task's finally ran its Remove before the
+        // insert below, and the finished entry then sat in the dictionary forever.
+        var gate = new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
         Task task = null!;
         task = Task.Run(async () =>
         {
+            await gate.Task;
             try { await op(); }
             catch (Exception ex) { log.LogWarning(ex, "Secondary {Op} failed", opName); }
             finally
@@ -198,6 +204,7 @@ public class DualWriteAudioStore : IAudioStore
             }
         });
         pendingSecondaryWrites[relativePath] = task;
+        gate.SetResult();
     }
 
     /// <summary>Push bytes back to primary at the canonical relative path. The

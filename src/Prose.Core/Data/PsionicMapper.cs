@@ -172,6 +172,7 @@ public static class PsionicMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.PsionicAliases.EntityType.ClrType, await db.PsionicAliases.Where(x => x.PsionicId == id).Select(x => x.Value).ToListAsync(ct));
             await db.PsionicAliases.Where(x => x.PsionicId == id).ExecuteDeleteAsync(ct);
             await db.PsionicKnownPractitioners.Where(x => x.PsionicId == id).ExecuteDeleteAsync(ct);
             await db.PsionicStoryHooks.Where(x => x.PsionicId == id).ExecuteDeleteAsync(ct);

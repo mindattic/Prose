@@ -887,6 +887,7 @@ public static class CharacterMapper
             // Only run on update. New characters have no rows to wipe; skipping the
             // 27 round-trips makes seeds and bulk imports drastically faster
             // (especially on SQLite where each ExecuteDelete is its own transaction).
+            db.NoteReplacedBridgeValues(db.CharacterAliases.EntityType.ClrType, await db.CharacterAliases.Where(x => x.CharacterId == id).Select(x => x.Value).ToListAsync(ct));
             await db.CharacterAliases.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
             await db.CharacterStoryHooks.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);
             await db.CharacterArchetypeScores.Where(x => x.CharacterId == id).ExecuteDeleteAsync(ct);

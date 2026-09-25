@@ -210,6 +210,7 @@ public static class PlaceMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.PlaceAliases.EntityType.ClrType, await db.PlaceAliases.Where(x => x.PlaceId == id).Select(x => x.Value).ToListAsync(ct));
             await db.PlaceAliases.Where(x => x.PlaceId == id).ExecuteDeleteAsync(ct);
             await db.PlaceDangers.Where(x => x.PlaceId == id).ExecuteDeleteAsync(ct);
             await db.PlaceOpportunities.Where(x => x.PlaceId == id).ExecuteDeleteAsync(ct);

@@ -103,6 +103,8 @@ public class EntityRecordGroundingService(
         var reports = new List<EntityReport>();
         var verdictsForFindings = new List<AuditVerdict>();
         var calls = 0; var downgradedTotal = 0;
+        // Any entity or batch that could not be judged makes this a PARTIAL run.
+        var incomplete = false;
 
         foreach (var e in entities)
         {
@@ -113,12 +115,12 @@ public class EntityRecordGroundingService(
             // 1. Decompose.
             string raw;
             try { raw = await llm.GenerateAsync(DecomposeSystem, $"ENTITY: {e.Name} ({e.EntityType})\n\nRECORD JSON:\n{Clamp(recordJson, 12000)}", temperature: 0.1, maxTokens: 2500, model: LlmModels.Haiku, ct: ct); calls++; }
-            catch (Exception ex) when (ex is not OperationCanceledException) { log.LogWarning(ex, "Record decomposition failed for {Entity}", e.Name); continue; }
+            catch (Exception ex) when (ex is not OperationCanceledException) { log.LogWarning(ex, "Record decomposition failed for {Entity}", e.Name); incomplete = true; continue; }
             var claims = ParseClaims(raw).Take(MaxClaimsPerEntity).ToList();
             if (claims.Count == 0) { reports.Add(new EntityReport(e.Id, e.Name, e.EntityType, 0, 0, 0, 0, 0, [])); continue; }
 
             // 2. Retrieve candidates: tagged beats (most recent first) ∪ embedding neighbours.
-            var tagged = mentioned.First(m => m.EntityId == e.Id).Beats.OrderBy(id => clock.PositionOf(id)).ToList();
+            var tagged = mentioned.First(m => m.EntityId == e.Id).Beats.OrderByDescending(id => clock.PositionOf(id)).ToList(); // most recent first, as documented
             var candidateIds = new List<Guid>(tagged.Take(12));
             if (embeddings != null)
             {
@@ -144,10 +146,18 @@ public class EntityRecordGroundingService(
                 var batch = claims.Skip(start).Take(ClaimsPerJudgeCall).ToList();
                 var claimBlock = string.Join("\n", batch.Select((c, i) => $"{i + 1}. {c.Text}"));
                 string jraw;
-                try { jraw = await llm.GenerateAsync(EntailSystem, $"CLAIMS about {e.Name}:\n{claimBlock}\n\nPASSAGES:\n{passageBlock}", temperature: 0.1, maxTokens: 900, model: LlmModels.Haiku, ct: ct); calls++; }
-                catch (Exception ex) when (ex is not OperationCanceledException) { log.LogWarning(ex, "Entailment call failed for {Entity}", e.Name); break; }
+                try { jraw = await llm.GenerateAsync(EntailSystem, $"CLAIMS about {e.Name}:\n{claimBlock}\n\nPASSAGES:\n{passageBlock}", temperature: 0.1, maxTokens: 2000, model: LlmModels.Haiku, ct: ct); calls++; }
+                catch (Exception ex) when (ex is not OperationCanceledException) { log.LogWarning(ex, "Entailment call failed for {Entity}", e.Name); incomplete = true; break; }
 
                 var parsed = ParseVerdicts(jraw);
+                // An unreadable (e.g. truncated) reply is NOT "none entails any claim": defaulting
+                // every claim to not_found filed findings and quarantined ledger rows on no evidence.
+                if (parsed.Count == 0)
+                {
+                    log.LogWarning("Entailment reply for {Entity} could not be parsed — batch skipped", e.Name);
+                    incomplete = true;
+                    break;
+                }
                 for (var i = 0; i < batch.Count; i++)
                 {
                     var p = parsed.FirstOrDefault(v => v.ClaimId == i + 1);
@@ -180,14 +190,19 @@ public class EntityRecordGroundingService(
                 verdicts.Count(v => v.Verdict == "entailed"), verdicts.Count(v => v.Verdict == "contradicted"), verdicts.Count(v => v.Verdict == "not_found"), downgraded, verdicts));
         }
 
-        if (writeFindings)
+        // WriteFindingsForRules replaces EVERY finding under the book scope: a single-entity or
+        // partial run used to delete all other entities' RECORDGROUND findings.
+        var complete = entityName == null && !incomplete;
+        if (writeFindings && !complete)
+            log.LogWarning("Record grounding for {Slug} was partial (entity filter or failed calls) — findings and snapshot not written", slug);
+        if (writeFindings && complete)
             auditRunner.WriteFindingsForRules(AuditName, $"node:{slug}#recordground", FindingCategory.EntityDrift, ["unentailed", "contradicted"], verdictsForFindings);
 
         var report = new Report(bookNodeId, slug, reports.Count,
             reports.Sum(r => r.Claims), reports.Sum(r => r.Entailed), reports.Sum(r => r.Contradicted), reports.Sum(r => r.NotFound), downgradedTotal,
             reports, CouldNotLook: reports.Count == 0, calls);
 
-        if (writeFindings && report.Claims > 0)
+        if (writeFindings && complete && report.Claims > 0)
         {
             // Record the ratio where the health snapshot picks it up.
             db.NarrativeHealthSnapshots.Add(new NarrativeHealthSnapshot

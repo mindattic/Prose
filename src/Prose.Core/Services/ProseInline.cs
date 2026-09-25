@@ -127,6 +127,18 @@ public static class ProseInline
     private static bool StartsWith(string text, int i, string s) =>
         i + s.Length <= text.Length && string.CompareOrdinal(text, i, s, 0, s.Length) == 0;
 
-    private static bool Closes(string text, int from, string marker) =>
-        from <= text.Length && text.IndexOf(marker, from, StringComparison.Ordinal) >= 0;
+    private static bool Closes(string text, int from, string marker)
+    {
+        if (from > text.Length) return false;
+        if (marker != "*") return text.IndexOf(marker, from, StringComparison.Ordinal) >= 0;
+        // A single "*" is closed only by a single "*": the first half of a later "**bold**" used
+        // to count, so "5 * 3 = 15. **NOTE**" opened italic that never closed (and dropped the *).
+        for (var k = from; k < text.Length; k++)
+        {
+            if (text[k] != '*') continue;
+            if (k + 1 < text.Length && text[k + 1] == '*') { k++; continue; }
+            return true;
+        }
+        return false;
+    }
 }

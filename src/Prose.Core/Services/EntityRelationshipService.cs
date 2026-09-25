@@ -115,8 +115,13 @@ public class EntityRelationshipService
                 Depth = node.Depth + 1,
             };
             node.Children.Add(child);
-            await ExpandAsync(db, child, relTypes, asOfDate, maxDepth, visited, ct);
         }
+
+        // Claim every direct neighbour BEFORE descending: recursing inside the loop let the first
+        // child's subtree mark a sibling visited at a deeper level, so that sibling was skipped
+        // here and whatever lay beyond it (within maxDepth) was never reached.
+        foreach (var child in node.Children)
+            await ExpandAsync(db, child, relTypes, asOfDate, maxDepth, visited, ct);
     }
 
     /// Formats a tree as a prompt-injectable context block.

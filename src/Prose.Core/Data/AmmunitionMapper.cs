@@ -175,6 +175,7 @@ public static class AmmunitionMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.AmmunitionAliases.EntityType.ClrType, await db.AmmunitionAliases.Where(x => x.AmmunitionId == id).Select(x => x.Value).ToListAsync(ct));
             await db.AmmunitionAliases.Where(x => x.AmmunitionId == id).ExecuteDeleteAsync(ct);
             await db.AmmunitionCompatibleWeapons.Where(x => x.AmmunitionId == id).ExecuteDeleteAsync(ct);
             await db.AmmunitionVariants.Where(x => x.AmmunitionId == id).ExecuteDeleteAsync(ct);

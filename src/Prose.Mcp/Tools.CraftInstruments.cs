@@ -95,8 +95,7 @@ public class CraftInstrumentTools(
 
     public async Task<string> location_scanImpl(int minTravelMinutes = 5)
     {
-        locationContradiction.MinTravelMinutes = minTravelMinutes;
-        var r = await locationContradiction.ScanAsync();
+        var r = await locationContradiction.ScanAsync(minTravelMinutes: minTravelMinutes); // per call, not on the singleton
         return JsonSerializer.Serialize(new
         {
             characters_examined = r.CharactersExamined, presence_facts = r.PresenceFacts,

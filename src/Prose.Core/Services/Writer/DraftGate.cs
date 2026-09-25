@@ -55,7 +55,10 @@ public static partial class DraftGate
         {
             if (string.IsNullOrWhiteSpace(name)) continue;
             if (draft.Contains(name, StringComparison.Ordinal)) continue;
-            var tokens = name.Split(' ', StringSplitOptions.RemoveEmptyEntries).Where(t => t.Length >= 3);
+            // Function words don't count: "The" satisfied "The Narrows" in any draft with a
+            // sentence starting "The". A name made only of them needs the full name.
+            var tokens = name.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                .Where(t => t.Length >= 3 && !Stop.Contains(t) && !NameFillers.Contains(t.TrimEnd('.')));
             if (tokens.Any(t => Regex.IsMatch(draft, $@"\b{Regex.Escape(t)}\b"))) continue;
             failures.Add($"\"{name}\" is named in the brief but does not appear in the draft.");
         }
@@ -81,6 +84,8 @@ public static partial class DraftGate
     // sentence start. Conservative on purpose.
     [GeneratedRegex(@"(?<=[a-z,;:—–\-]\s)\b([A-Z][a-z]{2,}(?:\s[A-Z][a-z]{2,})?)\b")]
     private static partial Regex MidSentenceCapitalised();
+
+    private static readonly HashSet<string> NameFillers = new(StringComparer.Ordinal) { "Of", "For", "And", "Dr", "Mr", "Mrs", "Ms", "Old", "New", "Big" };
 
     private static readonly HashSet<string> Stop = new(StringComparer.Ordinal)
     {

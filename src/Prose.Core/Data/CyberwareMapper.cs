@@ -181,6 +181,7 @@ public static class CyberwareMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.CyberwareItemAliases.EntityType.ClrType, await db.CyberwareItemAliases.Where(x => x.CyberwareId == id).Select(x => x.Value).ToListAsync(ct));
             await db.CyberwareItemAliases.Where(x => x.CyberwareId == id).ExecuteDeleteAsync(ct);
             await db.CyberwareItemSideEffects.Where(x => x.CyberwareId == id).ExecuteDeleteAsync(ct);
             await db.CyberwareItemKnownUsers.Where(x => x.CyberwareId == id).ExecuteDeleteAsync(ct);

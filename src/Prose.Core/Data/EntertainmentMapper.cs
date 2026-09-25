@@ -172,6 +172,7 @@ public static class EntertainmentMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.EntertainmentAliases.EntityType.ClrType, await db.EntertainmentAliases.Where(x => x.EntertainmentId == id).Select(x => x.Value).ToListAsync(ct));
             await db.EntertainmentAliases.Where(x => x.EntertainmentId == id).ExecuteDeleteAsync(ct);
             await db.EntertainmentKnownFans.Where(x => x.EntertainmentId == id).ExecuteDeleteAsync(ct);
             await db.EntertainmentStoryHooks.Where(x => x.EntertainmentId == id).ExecuteDeleteAsync(ct);

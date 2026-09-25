@@ -84,7 +84,7 @@ public class BeatVerificationService
         }
         else
         {
-            var normalizedQuote = NormalizeForComparison(claimedQuote);
+            var normalizedQuote = NormalizeForComparison(ProseInline.StripFormatting(claimedQuote)); // markers never count
             // Strip inline <entity guid="...">Name</entity> tags before comparing — same fix
             // LogicSweepService.QuotedEvidenceAppearsInBeat already applies (2026-08-14): a tag
             // wrapping a proper noun inside a genuinely-quoted span breaks literal Contains()
@@ -92,7 +92,9 @@ public class BeatVerificationService
             // Confirmed live 2026-08-22 (BCODA sweep): "Moss, from an earlier job" and "the catalog
             // value of the Atlas hardware..." both failed this check purely because "Moss"/"Atlas"
             // were entity-tagged in the stored text, not because the quotes were fabricated.
-            var normalizedText = NormalizeForComparison(BeatMarkup.StripEntityTags(beat.Text ?? string.Empty));
+            var normalizedText = NormalizeForComparison(ProseInline.StripFormatting(BeatMarkup.StripEntityTags(beat.Text ?? string.Empty)));
+            // StripFormatting too: "*Run.* She ran." quoted as the reader sees it ("Run. She ran.")
+            // failed Contains() on the emphasis markers and was stored as a fabricated BLOCKER.
             // Case-insensitive: a re-typed or paraphrase-adjacent quote (e.g. mid-sentence lowercase
             // vs. the beat's actual sentence-initial capital) is not fabrication — same "don't reject
             // over incidental transcription differences" principle as the dash/quote normalization

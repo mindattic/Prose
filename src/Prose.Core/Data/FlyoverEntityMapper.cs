@@ -173,6 +173,7 @@ public static class FlyoverEntityMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.FlyoverEntityAliases.EntityType.ClrType, await db.FlyoverEntityAliases.Where(x => x.FlyoverEntityId == id).Select(x => x.Value).ToListAsync(ct));
             await db.FlyoverEntityAliases.Where(x => x.FlyoverEntityId == id).ExecuteDeleteAsync(ct);
             await db.FlyoverEntityKnownLocations.Where(x => x.FlyoverEntityId == id).ExecuteDeleteAsync(ct);
             await db.FlyoverEntityStoryHooks.Where(x => x.FlyoverEntityId == id).ExecuteDeleteAsync(ct);

@@ -179,6 +179,7 @@ public static class MaterialMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.MaterialAliases.EntityType.ClrType, await db.MaterialAliases.Where(x => x.MaterialId == id).Select(x => x.Value).ToListAsync(ct));
             await db.MaterialAliases.Where(x => x.MaterialId == id).ExecuteDeleteAsync(ct);
             await db.MaterialProperties.Where(x => x.MaterialId == id).ExecuteDeleteAsync(ct);
             await db.MaterialDevelopers.Where(x => x.MaterialId == id).ExecuteDeleteAsync(ct);

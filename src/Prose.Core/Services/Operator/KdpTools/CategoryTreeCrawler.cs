@@ -97,7 +97,7 @@ public static class CategoryTreeCrawler
         IKdpBrowser browser, string detailsUrl, string[] startPath, Action<string> log, CancellationToken ct, int? maxDepth = null)
     {
         var visits = new int[] { 0 };
-        var root = await CrawlPathAsync(browser, detailsUrl, startPath, visits, log, ct, startPath.Length + (maxDepth ?? int.MaxValue));
+        var root = await CrawlPathAsync(browser, detailsUrl, startPath, visits, log, ct, maxDepth is int d ? startPath.Length + d : int.MaxValue /* int.MaxValue + length wrapped negative: "unbounded" crawled nothing */);
         // Leave the page in a clean, unmodified state — one final reload, no modal left open.
         await NavigateAsync(browser, detailsUrl, ct);
         return root;

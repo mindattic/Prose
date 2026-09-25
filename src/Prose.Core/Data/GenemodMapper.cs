@@ -181,6 +181,7 @@ public static class GenemodMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.GenemodAliases.EntityType.ClrType, await db.GenemodAliases.Where(x => x.GenemodId == id).Select(x => x.Value).ToListAsync(ct));
             await db.GenemodAliases.Where(x => x.GenemodId == id).ExecuteDeleteAsync(ct);
             await db.GenemodSideEffects.Where(x => x.GenemodId == id).ExecuteDeleteAsync(ct);
             await db.GenemodStoryHooks.Where(x => x.GenemodId == id).ExecuteDeleteAsync(ct);

@@ -177,6 +177,7 @@ public static class PharmaceuticalMapper
 
         if (!isNew)
         {
+            db.NoteReplacedBridgeValues(db.PharmaceuticalAliases.EntityType.ClrType, await db.PharmaceuticalAliases.Where(x => x.PharmaceuticalId == id).Select(x => x.Value).ToListAsync(ct));
             await db.PharmaceuticalAliases.Where(x => x.PharmaceuticalId == id).ExecuteDeleteAsync(ct);
             await db.PharmaceuticalEffects.Where(x => x.PharmaceuticalId == id).ExecuteDeleteAsync(ct);
             await db.PharmaceuticalSideEffects.Where(x => x.PharmaceuticalId == id).ExecuteDeleteAsync(ct);
