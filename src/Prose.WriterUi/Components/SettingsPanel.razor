@@ -6,6 +6,7 @@
 @inject SettingsUiService Settings
 @inject ReadAloudUiService ReadAloud
 @inject SpeechUiService Speech
+@inject Prose.Core.Services.Spelling.SpellingService Spelling
 @inject IJSRuntime JS
 @implements IAsyncDisposable
 
@@ -162,6 +163,51 @@
         </p>
     </section>
 
+    <section class="set-block">
+        <h3>Dictionary</h3>
+        <p class="set-note">
+            Words the spellcheck accepts beyond English. The world's entity names are already known.
+            One entry covers its plural and possessive: <em>CorpoNation</em> also accepts
+            CorpoNations and CorpoNation's. A word with capitals must be written with them. The same
+            list as <span class="mono">prose --dictionary</span> and "Add to dictionary".
+        </p>
+
+        @if (dictionary is null)
+        {
+            <div class="menu-note">Loading…</div>
+        }
+        else if (dictionary.Count == 0)
+        {
+            <div class="menu-note">No words yet.</div>
+        }
+        else
+        {
+            <ul class="set-keys set-words">
+                @foreach (var row in dictionary)
+                {
+                    <li>
+                        <span>@row.Word</span>
+                        <span class="muted">@row.AddedBy</span>
+                        <div class="spacer"></div>
+                        <button class="mini danger-btn"
+                                aria-label="Remove @row.Word from the dictionary"
+                                @onclick="() => RemoveWordAsync(row.Word)">Remove</button>
+                    </li>
+                }
+            </ul>
+        }
+
+        <div class="set-add">
+            <label class="visually-hidden" for="dict-word">Word to add to the dictionary</label>
+            <input type="text" id="dict-word" placeholder="Add a word…" autocomplete="off" spellcheck="false"
+                   value="@wordDraft"
+                   @oninput="e => wordDraft = e.Value?.ToString() ?? string.Empty"
+                   @onkeydown="OnWordKeyDown" />
+            <button class="mini" disabled="@(string.IsNullOrWhiteSpace(wordDraft))"
+                    @onclick="AddWordAsync">Add</button>
+        </div>
+    </section>
+
     @* Adding or removing a key destroys the button that was just pressed, so focus drops to the
        body — the confirmation was silent AND the focus was gone. *@
     <div class="banner info" role="status" style="@(note is null ? "display:none" : null)">@note</div>
@@ -174,6 +220,43 @@
 
 @code {
     [Parameter] public EventCallback OnClose { get; set; }
+
+    /// <summary>A word was added or removed, so the open beat's squiggles are out of date.</summary>
+    [Parameter] public EventCallback DictionaryChanged { get; set; }
+
+    private IReadOnlyList<Prose.Core.Data.Entities.SpellingWord>? dictionary;
+    private string wordDraft = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        try { dictionary = await Spelling.ListAsync(); }
+        catch (Exception ex) { dictionary = []; note = $"The dictionary could not be read: {ex.Message}"; }
+    }
+
+    private async Task AddWordAsync()
+    {
+        try
+        {
+            var r = await Spelling.AddAsync(wordDraft, "writer");
+            note = r.Added ? $"Added “{r.Row.Word}” to the dictionary." : $"“{wordDraft.Trim()}” is {r.Note}.";
+            wordDraft = "";
+            dictionary = await Spelling.ListAsync();
+            await DictionaryChanged.InvokeAsync();
+        }
+        catch (ArgumentException ex) { note = $"Not added: {ex.Message}"; }
+    }
+
+    private async Task RemoveWordAsync(string word)
+    {
+        note = await Spelling.RemoveAsync(word)
+            ? $"Removed “{word}” from the dictionary."
+            : $"“{word}” was not in the dictionary.";
+        dictionary = await Spelling.ListAsync();
+        await DictionaryChanged.InvokeAsync();
+    }
+
+    private Task OnWordKeyDown(KeyboardEventArgs e) =>
+        e.Key == "Enter" && !string.IsNullOrWhiteSpace(wordDraft) ? AddWordAsync() : Task.CompletedTask;
 
     private readonly Dictionary<string, string> drafts = new();
     private string elevenDraft = "";
