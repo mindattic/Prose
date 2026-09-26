@@ -139,6 +139,60 @@ public sealed class WikiService(
         return row == null ? null : (row.EntityType, row.Slug);
     }
 
+    /// <summary>What the editor's hover card shows for one entity link.</summary>
+    /// <param name="TypeName">The repository's display name ("Character"), not its slug.</param>
+    /// <param name="Mentions">How many beats mention it, across the whole corpus.</param>
+    public sealed record EntityPreview(
+        Guid Id, string Name, string Type, string TypeName, string Status,
+        string? Description, IReadOnlyList<string> Aliases, int Mentions);
+
+    /// <summary>
+    /// The hover card for an entity chip: small, and cheap enough to ask for on every hover.
+    ///
+    /// <para>Deliberately not <see cref="GetPageAsync"/>, which assembles relationships, version
+    /// history and fifty appearances for a full page. A card needs the identity, one paragraph and
+    /// a count. Explicit ids, so query filters are ignored — a chip can point into another
+    /// universe, and the universe filter would make that entity look deleted.</para>
+    /// </summary>
+    /// <returns>Null when the guid points at nothing — the chip outlived its entity.</returns>
+    public async Task<EntityPreview?> GetPreviewAsync(Guid entityId, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+
+        var e = await db.Entities.AsNoTracking().IgnoreQueryFilters()
+            .Where(x => x.Id == entityId)
+            .Select(x => new { x.Id, x.EntityType, x.Name, x.Status, x.Description })
+            .FirstOrDefaultAsync(ct);
+        if (e == null) return null;
+
+        // Characters are the only type with aliases today (see EntityLookupService).
+        var aliases = await db.CharacterAliases.AsNoTracking().IgnoreQueryFilters()
+            .Where(a => a.CharacterId == entityId)
+            .OrderBy(a => a.Position)
+            .Select(a => a.Value)
+            .Take(6)
+            .ToListAsync(ct);
+
+        var mentions = await db.BeatEntityMentions.AsNoTracking().IgnoreQueryFilters()
+            .CountAsync(m => m.EntityId == entityId, ct);
+
+        var typeName = repoDefs.List()
+            .FirstOrDefault(d => string.Equals(d.Slug, e.EntityType, StringComparison.OrdinalIgnoreCase))?.Name
+            ?? Humanise(e.EntityType);
+
+        return new EntityPreview(e.Id, e.Name, e.EntityType, typeName, e.Status,
+                                 Shorten(e.Description, 420), aliases, mentions);
+    }
+
+    private static string? Shorten(string? s, int max)
+    {
+        if (string.IsNullOrWhiteSpace(s)) return null;
+        s = s.Trim();
+        if (s.Length <= max) return s;
+        var cut = s.LastIndexOf(' ', max);
+        return s[..(cut > max / 2 ? cut : max)].TrimEnd(',', ';', ':') + "…";
+    }
+
     /// <summary>
     /// Assembles one wiki page. <paramref name="asOf"/> renders the record as the database held it
     /// at that instant instead of now; relationships, appearances and the version list always

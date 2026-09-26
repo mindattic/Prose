@@ -3,20 +3,44 @@
    Everything here is about one beat's text. The shell owns which beat that is, what saving means
    and what a chip click should do; this component owns the DOM, the caret, and the interop. That
    seam is deliberate: the Discuss panel attaches to a *selection*, which is this component's
-   business, while what a discussion then does is not. *@
+   business, while what a discussion then does is not.
+
+   The shell keys this component on the beat id, so moving to another beat builds a new editor
+   rather than reusing the old one. That is what keeps the browser's undo history from reaching
+   across beats: a fresh element has none, where a reused one would let Ctrl+Z pull the last beat's
+   edits into this one. *@
 
 @inject IJSRuntime JS
+@inject WikiService Wiki
 @implements IAsyncDisposable
+
+@* The shortcuts, where a screen reader will find them: announced as the editor's description when
+   focus arrives, instead of existing only in button tooltips a keyboard user never hovers. *@
+<p id="prose-editor-keys" class="visually-hidden">
+    @if (Mode == EditorMode.Display)
+    {
+        @:Control B bold, Control I italic, Control U underline, Control Shift X strikethrough,
+        @:Control K insert an entity, or link the selected words to one, Control S save. With the
+        @:caret beside an entity link its details are read out; Shift F10 opens more actions,
+        @:including editing or removing that link.
+    }
+    else
+    {
+        @:The raw markup of the beat. Control B, I and U and Control Shift X insert the markers for
+        @:bold, italic, underline and strikethrough. Control S saves.
+    }
+</p>
 
 @if (Mode == EditorMode.Display)
 {
     <article class="prose" contenteditable="true" spellcheck="true"
-             role="textbox" aria-multiline="true" aria-label="Beat text"
-             @ref="editorRef" @oncontextmenu:preventDefault="false"></article>
+             role="textbox" aria-multiline="true" aria-label="@Label"
+             aria-describedby="prose-editor-keys" @ref="editorRef"></article>
 }
 else
 {
-    <textarea class="raw-editor" spellcheck="false" aria-label="Beat markup source"
+    <textarea class="raw-editor" spellcheck="false" aria-label="@($"{Label}, markup")"
+              aria-describedby="prose-editor-keys"
               @ref="rawRef" value="@Text" @oninput="OnRawInput"></textarea>
 }
 
@@ -28,24 +52,17 @@ else
     /// <summary>What <c>proseEditor.selection</c> hands back.</summary>
     public sealed record Selection(string Text, bool Ok);
 
+    /// <summary>What <c>proseEditor.caret</c> hands back: whether the author is in the prose, what
+    /// they have selected (empty for a bare caret), and where on screen the caret is: X and Y are
+    /// just below it, Top is the top of its line.</summary>
+    public sealed record Caret(bool Ok, string Text, int X, int Y, int Top);
+
     /// <summary>
     /// A passage the author right-clicked, with what surrounds it. All three are beat markup, as
     /// the editor's own serializer produces it — the server strips them and works out the position,
     /// so no character offsets cross this boundary.
     /// </summary>
     public sealed record SelectedSpan(string Quote, string Prefix, string Suffix);
-
-    [Parameter] public string Text { get; set; } = "";
-    [Parameter] public EventCallback<string> TextChanged { get; set; }
-    [Parameter] public EditorMode Mode { get; set; }
-
-    // Named without the On- prefix because the [JSInvokable] handlers below must keep the exact
-    // names writer.js already calls, and a property cannot share a name with a method.
-    [Parameter] public EventCallback<EntityChip> EntityContextMenu { get; set; }
-    [Parameter] public EventCallback<EntityChip> EntityClick { get; set; }
-
-    /// <summary>The author right-clicked a selection: they want to talk about that passage.</summary>
-    [Parameter] public EventCallback<SelectedSpan> DiscussRequested { get; set; }
 
     /// <summary>
     /// Everything the context menu needs, gathered at the moment of the click.
@@ -71,8 +88,31 @@ else
             : new SelectedSpan(Quote, Prefix ?? "", Suffix ?? "");
     }
 
-    /// <summary>The author asked for the context menu, by right-click or by Shift+F10.</summary>
+    [Parameter] public string Text { get; set; } = "";
+    [Parameter] public EventCallback<string> TextChanged { get; set; }
+    [Parameter] public EditorMode Mode { get; set; }
+
+    /// <summary>The editor's accessible name. Which beat it is, so a screen reader user moving
+    /// between beats hears that they arrived somewhere new.</summary>
+    [Parameter] public string Label { get; set; } = "Beat text";
+
+    /// <summary>The author asked for the context menu: right-click, Shift+F10, or a click on an
+    /// entity chip.</summary>
     [Parameter] public EventCallback<ContextTarget> ContextMenuRequested { get; set; }
+
+    /// <summary>Ctrl+K: insert an entity, or link the selected words to one.</summary>
+    [Parameter] public EventCallback LinkRequested { get; set; }
+
+    /// <summary>"Edit link" on an entity's hover card.</summary>
+    [Parameter] public EventCallback<EntityChip> EditEntityRequested { get; set; }
+
+    /// <summary>"Open in the wiki" on an entity's hover card.</summary>
+    [Parameter] public EventCallback<EntityChip> OpenEntityRequested { get; set; }
+
+    /// <summary>The author pasted something the sanitizer had to trim — an image, a table, a
+    /// heading, list formatting, or a hyperlink's target. The words are kept; this says what
+    /// wasn't.</summary>
+    [Parameter] public EventCallback<string> PasteNote { get; set; }
 
     /// <summary>The circuit lost its browser. The shell greys the status dot.</summary>
     [Parameter] public EventCallback OnDisconnected { get; set; }
@@ -85,38 +125,42 @@ else
     private ElementReference rawRef;
     private DotNetObjectReference<ProseEditor>? selfRef;
 
-    private bool editorWired;
+    private bool wired;
     private string renderedFor = "";
     private EditorMode lastMode;
 
     protected override void OnParametersSet()
     {
-        // Switching modes destroys the contenteditable and builds a fresh one, so the listeners
-        // attached to the old element are gone with it and init has to run again.
-        //
-        // Deliberately NOT reset when Text changes. init() adds listeners to whatever element it
-        // is handed, and the <article> survives a move from one beat to the next — re-initialising
-        // there would stack a second set of listeners on the same element every time the author
-        // opened a beat. setHtml already covers a content change on its own.
+        // Switching modes destroys one element and builds the other, so the listeners attached
+        // to the old one are gone with it and wiring has to run again. A new beat needs nothing
+        // here: the shell's @key makes that a new component.
         if (lastMode != Mode)
         {
             lastMode = Mode;
-            editorWired = false;
+            wired = false;
             renderedFor = "";
         }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (Mode != EditorMode.Display) return;
-
         try
         {
-            if (!editorWired)
+            if (Mode != EditorMode.Display)
+            {
+                if (!wired)
+                {
+                    await JS.InvokeVoidAsync("proseEditor.initRaw", rawRef);
+                    wired = true;
+                }
+                return;
+            }
+
+            if (!wired)
             {
                 selfRef ??= DotNetObjectReference.Create(this);
                 await JS.InvokeVoidAsync("proseEditor.init", editorRef, selfRef);
-                editorWired = true;
+                wired = true;
                 renderedFor = "";
             }
 
@@ -137,7 +181,7 @@ else
             // An interop failure escaping OnAfterRenderAsync tears down the whole circuit: the page
             // stops responding entirely, with nothing on screen to say why. A broken editor surface
             // is bad; a dead application is worse.
-            editorWired = false;
+            wired = false;
             await OnJsError.InvokeAsync(ex.Message);
         }
     }
@@ -155,60 +199,65 @@ else
     }
 
     [JSInvokable]
-    public Task OnEntityContextMenu(string guid, string repo, string text)
-        => EntityContextMenu.InvokeAsync(new EntityChip(guid, repo, text));
-
-    [JSInvokable]
-    public Task OnEntityClick(string guid, string repo)
-        => EntityClick.InvokeAsync(new EntityChip(guid, repo, ""));
-
-    [JSInvokable]
-    public Task OnDiscussRequested(string quote, string prefix, string suffix)
-        => DiscussRequested.InvokeAsync(new SelectedSpan(quote, prefix, suffix));
-
-    [JSInvokable]
     public Task OnContextMenu(ContextTarget target) => ContextMenuRequested.InvokeAsync(target);
+
+    [JSInvokable]
+    public Task OnLinkRequested() => LinkRequested.InvokeAsync();
+
+    [JSInvokable]
+    public Task OnPasteNote(string message) => PasteNote.InvokeAsync(message);
+
+    /// <summary>The hover card's content. Null when the chip points at nothing.</summary>
+    [JSInvokable]
+    public async Task<WikiService.EntityPreview?> GetEntityPreview(string guid)
+        => Guid.TryParse(guid, out var id) ? await Wiki.GetPreviewAsync(id) : null;
+
+    /// <summary>A button on the hover card. "remove" never gets here — writer.js unwraps the chip
+    /// itself, the same as the menu's Remove link.</summary>
+    [JSInvokable]
+    public Task OnEntityCardAction(string action, string guid, string repo, string text) => action switch
+    {
+        "edit" => EditEntityRequested.InvokeAsync(new EntityChip(guid, repo, text)),
+        "open" => OpenEntityRequested.InvokeAsync(new EntityChip(guid, repo, text)),
+        _ => Task.CompletedTask,
+    };
 
     // ── Called by the shell (toolbar, entity dialog) ───────────────────────
 
-    public async Task FormatAsync(string command)
-    {
-        if (Mode != EditorMode.Display)
-        {
-            var (before, after) = command switch
-            {
-                "bold"          => ("**", "**"),
-                "italic"        => ("*", "*"),
-                "underline"     => ("<u>", "</u>"),
-                "strikeThrough" => ("~~", "~~"),
-                _               => ("", "")
-            };
-            if (before == "") return;
-            await JsVoidAsync("proseEditor.wrapTextarea", rawRef, before, after);
-            return;
-        }
-        await JsVoidAsync("proseEditor.format", command);
-    }
+    /// <param name="command">bold, italic, underline or strikeThrough. Markdown mode inserts the
+    /// matching markers; writer.js owns that mapping so the shortcuts and the toolbar share it.</param>
+    public Task FormatAsync(string command) => Mode == EditorMode.Display
+        ? JsVoidAsync("proseEditor.format", command)
+        : JsVoidAsync("proseEditor.formatRaw", rawRef, command);
 
-    public async Task InsertEmDashAsync()
-    {
-        if (Mode == EditorMode.Display) await JsVoidAsync("proseEditor.insert", "—");
-        else await JsVoidAsync("proseEditor.wrapTextarea", rawRef, "—", "");
-    }
+    public Task InsertEmDashAsync() => Mode == EditorMode.Display
+        ? JsVoidAsync("proseEditor.insert", "—")
+        : JsVoidAsync("proseEditor.wrapTextarea", rawRef, "—", "");
 
     public Task<Selection?> GetSelectionAsync() => JsAsync<Selection>("proseEditor.selection");
+
+    /// <summary>Remember the caret (or selection) for the entity picker, and say where it is.</summary>
+    public Task<Caret?> GetCaretAsync() => JsAsync<Caret>("proseEditor.caret");
 
     /// <summary>Reader-visible characters before the caret, or -1 when the caret is elsewhere.
     /// Mapped to a stored offset by the caller — see <c>PlainTextMap</c>.</summary>
     public async Task<int> GetCaretOffsetAsync() => await JsAsync<int>("proseEditor.caretOffset");
 
-    public Task WrapSelectionAsync(string guid, string repo)
-        => JsAsync<bool>("proseEditor.wrapSelection", guid, repo);
+    // The three link operations return null when they worked and a sentence when they did not.
+    // They used to return a bool nobody read, so a refused link closed the dialog and changed
+    // nothing, with nothing on screen to say so.
 
-    public Task ApplyEntityAsync(string guid, string repo, string text)
-        => JsAsync<bool>("proseEditor.applyEntity", guid, repo, text);
+    public Task<string?> WrapSelectionAsync(string guid, string repo)
+        => JsAsync<string?>("proseEditor.wrapSelection", guid, repo);
 
-    public Task RemoveEntityAsync() => JsAsync<bool>("proseEditor.removeEntity");
+    public Task<string?> ApplyEntityAsync(string guid, string repo, string text)
+        => JsAsync<string?>("proseEditor.applyEntity", guid, repo, text);
+
+    public Task<string?> RemoveEntityAsync() => JsAsync<string?>("proseEditor.removeEntity");
+
+    /// <summary>Insert the entity's name, linked, at the caret <see cref="GetCaretAsync"/> saw.</summary>
+    public Task<string?> InsertEntityAsync(string guid, string repo, string name)
+        => JsAsync<string?>("proseEditor.insertEntity", guid, repo, name);
 
     // ── Interop plumbing ───────────────────────────────────────────────────
 

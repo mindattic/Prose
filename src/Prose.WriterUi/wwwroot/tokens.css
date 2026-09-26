@@ -124,9 +124,14 @@
   /* Long-form prose is read, not scanned: a serif face, a comfortable measure, and generous
      leading. Deliberately NOT --font-ui, which is tuned for dense chrome. */
   --font-prose: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-  --prose-size: 17px;
+  /* Scaled with the rest of the UI. It was a bare 17px, so the text-size control enlarged every
+     label and button and left the one thing the author reads — the prose — exactly where it was. */
+  --prose-size: calc(17px * var(--ui-scale));
   --prose-leading: 1.65;
-  --prose-measure: 34rem;         /* ~68 characters — the readable line length */
+  /* ~68 characters — the readable line length — in terms of the prose's own size. It was 34rem,
+     but the root font here is 13px, so that came to ~52 characters and did not follow the prose
+     when the text size changed. */
+  --prose-measure: calc(var(--prose-size) * 34);
   --color-entity: #9db8e0;        /* entity tag glyph on bg-1 */
   --color-entity-underline: #4a6a9e;
   --color-entity-bg: rgba(60, 130, 255, 0.13);

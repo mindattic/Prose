@@ -39,7 +39,7 @@
         }
         <a class="mini" href="/writer" title="Back to the editor">Writer</a>
         <button class="mini" @onclick="ToggleThemeAsync" title="Light / dark"
-                aria-label="Dark theme" aria-pressed="@(theme == "dark")">@(theme == "light" ? "☾" : "☀")</button>
+                aria-label="Dark theme" aria-pressed="@((theme == "dark") ? "true" : "false")">@(theme == "light" ? "☾" : "☀")</button>
     </header>
 
     @if (error is not null)

@@ -1,0 +1,58 @@
+@* Asks before deleting a beat, by SHOWING the prose that would go.
+
+   A confirmation that asks "are you sure" without showing what is about to be lost is one the
+   author learns to click through, which is exactly when it stops protecting them.
+
+   Its own component so it gets what the other dialogs have: focus moves in when it opens and stays
+   in (proseModal), Escape answers "keep it", and focus goes back where it came from on close. It
+   used to be markup inline in the shell with none of that — the first Tab after opening it walked
+   out into the prose behind the scrim. *@
+
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<div class="scrim" aria-hidden="true" @onclick="() => OnKeep.InvokeAsync()"></div>
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-title"
+     aria-describedby="delete-lede" tabindex="-1" @ref="dialog" @onkeydown="OnKeyDown">
+    <h2 id="delete-title">Delete beat @BeatNumber?</h2>
+    <p id="delete-lede" class="muted">This removes the beat and its prose from the book. It cannot be undone here.</p>
+    <pre class="delete-preview" aria-label="The prose that would be deleted">@Preview</pre>
+    <div class="modal-actions">
+        @* Focus opens on "Keep it": the safe answer is the one a stray Enter gives. *@
+        <button class="mini" data-autofocus @onclick="() => OnKeep.InvokeAsync()">Keep it</button>
+        <div class="spacer"></div>
+        <button class="mini danger-btn" @onclick="() => OnDelete.InvokeAsync()">Delete the beat</button>
+    </div>
+</div>
+
+@code {
+    [Parameter] public int BeatNumber { get; set; }
+
+    /// <summary>What the reader would lose: the beat's words, entity tags stripped.</summary>
+    [Parameter] public string Preview { get; set; } = "";
+
+    [Parameter] public EventCallback OnKeep { get; set; }
+    [Parameter] public EventCallback OnDelete { get; set; }
+
+    private ElementReference dialog;
+    private bool opened;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (opened) return;
+        opened = true;
+        try { await JS.InvokeVoidAsync("proseModal.open", dialog); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { /* still works; only the focus handling is lost */ }
+    }
+
+    private Task OnKeyDown(KeyboardEventArgs e)
+        => e.Key == "Escape" ? OnKeep.InvokeAsync() : Task.CompletedTask;
+
+    public async ValueTask DisposeAsync()
+    {
+        try { await JS.InvokeVoidAsync("proseModal.close"); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+    }
+}

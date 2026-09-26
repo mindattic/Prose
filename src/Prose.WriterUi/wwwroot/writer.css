@@ -57,8 +57,12 @@ html, body {
 
 /* ── menu bar ─────────────────────────────────────────────────────────── */
 
+/* Both bars wrap at every width, not only on narrow windows. The text-size control reaches 200%,
+   and at that size a dozen buttons no longer fit one row of an ordinary window — without wrapping
+   the last of them scrolled off the edge (WCAG 1.4.10). */
 .menubar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: var(--space-3);
     padding: var(--space-2) var(--space-3);
@@ -208,8 +212,13 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 .spine-chapter-name { flex: 1; overflow-wrap: anywhere; }
 .spine-caret { width: 1em; }
 
+/* At most 100px at the default text size: the number, then two clamped lines of the beat's
+   opening. The cap is in scaled px so it grows with the text-size control instead of clipping
+   enlarged text (WCAG 1.4.4). */
 .spine-row {
     display: block;
+    max-height: calc(100px * var(--ui-scale));
+    overflow: hidden;
     width: 100%;
     text-align: left;
     padding: var(--space-2) var(--space-3);
@@ -304,7 +313,11 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
     resize: vertical;
 }
 
-.prose[contenteditable="true"] { outline: none; }
+/* min-height so the whole area below a short beat is still the editor: a click there puts the
+   caret in the prose instead of landing on the empty pane behind it. On the EDITOR only — .prose is
+   also the beat list's summary line, and on plain .prose this stretched every row of that list to
+   60% of the window. */
+.prose[contenteditable="true"] { min-height: 60vh; outline: none; }
 .prose[contenteditable="true"]:focus-visible { outline: var(--focus-ring); outline-offset: 6px; }
 
 .prose strong { font-weight: 700; }
@@ -316,6 +329,7 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 
 .toolbar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: var(--space-1);
     padding: var(--space-2) var(--space-3);
@@ -336,6 +350,21 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 .toolbar .ital { font-style: italic; font-family: var(--font-prose); }
 .toolbar .undl { text-decoration: underline; }
 .toolbar .strk { text-decoration: line-through; }
+
+/* A toggle that is on — Bold with the caret in bold text, or an open panel. The fill alone is only
+   ~2.4:1 against an off button, under the 3:1 a state change needs (1.4.11), so a bar along the
+   bottom carries it too: a shape, not just a colour. */
+.toolbar .mini[aria-pressed="true"] {
+    background: var(--color-accent-bg);
+    border-color: var(--color-accent-bg);
+    color: #fff;
+    box-shadow: inset 0 -3px 0 var(--color-fg-strong);
+}
+
+/* Forced colours drops backgrounds and box-shadows, which were both of the cues above. */
+@media (forced-colors: active) {
+    .toolbar .mini[aria-pressed="true"] { border: 2px solid Highlight; }
+}
 
 /* ── status bar ───────────────────────────────────────────────────────── */
 
@@ -482,8 +511,12 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
     background: var(--color-bg-3);
     border: 1px solid var(--color-border-modal);
     border-radius: var(--radius);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--shadow-overlay);
     font-size: var(--text-sm);
+    /* A long menu in a short window scrolls rather than running past the bottom edge, where its
+       last items — Delete among them — could not be reached. */
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
 }
 
 .ctx-item {
@@ -622,6 +655,7 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 /* ── banners ──────────────────────────────────────────────────────────── */
 
 .banner {
+    box-sizing: border-box;   /* so its edges line up with the prose column, padding included */
     max-width: var(--prose-measure);
     margin: 0 auto var(--space-4);
     padding: var(--space-3);
@@ -796,9 +830,9 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 
     .pane { flex: 1 1 auto; padding: var(--space-3); }
 
-    /* The menu bar and toolbar wrap rather than overflowing — at this width they are two rows of
-       controls, and a control pushed off the edge is a control that does not exist. */
-    .menubar, .toolbar, .statusbar { flex-wrap: wrap; }
+    /* The status bar wraps too at this width (the menu bar and toolbar always do). A control
+       pushed off the edge is a control that does not exist. */
+    .statusbar { flex-wrap: wrap; }
 
     .conflict { flex-direction: column; }
 }
@@ -882,8 +916,12 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 
 /* ── what this beat is for ────────────────────────────────────────────── */
 
+/* On the prose measure, like the banners, so the strip sits over the column it describes rather
+   than running the full width of the pane past it. */
 .intent {
-    margin-bottom: var(--space-3);
+    box-sizing: border-box;
+    max-width: var(--prose-measure);
+    margin: 0 auto var(--space-3);
     padding: var(--space-2);
     background: var(--color-bg-1);
     border: 1px solid var(--color-border);
@@ -1023,3 +1061,161 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
 
 .findings-check { display: flex; gap: var(--space-2); padding: var(--space-2) var(--space-3); }
 .findings-checked { padding: 0 var(--space-3) var(--space-2); line-height: 1.5; }
+
+/* ── the pane head ────────────────────────────────────────────────────── */
+
+/* Beat-level actions, top left of the editing pane, above everything about the beat. */
+.pane-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+}
+
+/* ── the entity picker ("Insert entity…") ─────────────────────────────── */
+
+/* Opens at the caret, over the prose, like the context menu it is usually reached from — and on the
+   same layer, since it replaces that menu on screen. */
+.ent-picker {
+    position: fixed;
+    z-index: 16;
+    box-sizing: border-box;
+    width: min(24rem, calc(100vw - 16px));
+    max-height: calc(100vh - 16px);
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-2);
+    background: var(--color-bg-3);
+    border: 1px solid var(--color-border-modal);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-overlay);
+    font-size: var(--text-sm);
+}
+
+.ent-picker-input {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: var(--target-min);
+    padding: 0 var(--space-2);
+    background: var(--color-bg-4);
+    color: var(--color-fg);
+    border: 1px solid var(--color-border-input);
+    border-radius: var(--radius);
+    font: inherit;
+}
+
+.ent-picker-status { padding: var(--space-1) 2px; color: var(--color-fg-muted); font-size: var(--text-xs); }
+
+.ent-picker-list {
+    /* min-height 0 so the list, not the box, is what shrinks when the box is capped to the window. */
+    min-height: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    border-top: 1px solid var(--color-border);
+}
+
+.ent-opt {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    min-height: var(--target-min);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+/* The active option is marked by a bar as well as the fill — the fill alone is a colour change
+   (1.4.1), and it is also the focus indicator for this list, since focus stays in the input (2.4.7). */
+.ent-opt.active {
+    background: var(--color-bg-sel);
+    color: var(--color-fg-strong);
+    box-shadow: inset 3px 0 0 var(--focus-ring-color);
+}
+
+.ent-opt-name { flex: 1; overflow-wrap: anywhere; }
+
+.ent-opt-type,
+.ent-card-type {
+    padding: 0 6px;
+    border-radius: var(--radius);
+    background: var(--color-mini-bg);
+    color: var(--color-mini-fg);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.ent-opt-alias { color: var(--color-fg-muted); font-size: var(--text-xs); }
+
+@media (forced-colors: active) {
+    .ent-opt.active { outline: 2px solid Highlight; outline-offset: -2px; }
+}
+
+/* ── entity hover cards ───────────────────────────────────────────────── */
+
+/* Below the context menu and picker (15/16): opening either hides the card anyway, but a card must
+   never cover a menu the author is choosing from. */
+.ent-card {
+    position: fixed;
+    z-index: 14;
+    box-sizing: border-box;
+    width: min(22rem, calc(100vw - 16px));
+    padding: var(--space-3);
+    background: var(--color-bg-3);
+    border: 1px solid var(--color-border-modal);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-overlay);
+    color: var(--color-fg);
+    font-family: var(--font-ui);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+}
+
+.ent-card[hidden] { display: none; }
+
+.ent-card-head { display: flex; align-items: baseline; gap: var(--space-2); }
+
+.ent-card-name {
+    flex: 1;
+    color: var(--color-fg-strong);
+    font-size: var(--text-md);
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.ent-card-status {
+    margin-top: 2px;
+    color: var(--color-warning);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* Five lines at most: a card is a glance, and the whole record is one click away in the wiki. */
+.ent-card-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: var(--space-2) 0 0;
+    color: var(--color-fg-soft);
+    overflow-wrap: anywhere;
+}
+
+.ent-card-desc.absent { color: var(--color-fg-subtle); font-style: italic; }
+
+.ent-card-meta { margin-top: var(--space-1); color: var(--color-fg-muted); font-size: var(--text-xs); }
+
+.ent-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-top: var(--space-2);
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--color-border);
+}

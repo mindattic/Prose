@@ -93,7 +93,7 @@
             @* The whole instrument. No note, no severity, no category: asking why turns a
                measurement into an opinion, and the opinion is available from every other screen. *@
             <button class="read-mark @(markedHere ? "on" : "")" @onclick="MarkAsync"
-                    aria-pressed="@markedHere"
+                    aria-pressed="@(markedHere ? "true" : "false")"
                     title="I stopped caring here">
                 @(markedHere ? "Marked" : "I stopped here")
             </button>

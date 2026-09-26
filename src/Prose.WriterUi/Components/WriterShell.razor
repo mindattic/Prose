@@ -27,7 +27,7 @@
              Dirty="Dirty"
              Saving="saving"
              Exporting="exporting"
-             Theme="theme"
+             Theme="@theme"
              OnToggleBookMenu="ToggleBookMenu"
              OnOpenBook="OpenBookAsync"
              OnSetMode="SetMode"
@@ -63,6 +63,14 @@
             }
             else
             {
+                @* Beat-level actions, at the top left of the pane. Delete lived in the context menu,
+                   one right-click away from every sentence — too easy to reach by accident and too
+                   hard to find on purpose. *@
+                <div class="pane-head">
+                    <button class="mini danger-btn" @onclick="BeginDeleteAsync"
+                            title="Delete this beat — shows its prose and asks first">Delete this beat…</button>
+                </div>
+
                 @if (conflict is not null)
                 {
                     @* Both texts, side by side. This banner used to offer "discard mine" and
@@ -83,7 +91,7 @@
                         </section>
 
                         <section class="conflict-side">
-                            <h3>Theirs <span class="muted">@WordsIn(conflict.Text) words, saved · v@conflict.Version</span></h3>
+                            <h3>Theirs <span class="muted">@WordsIn(conflict.Text) words, saved · v@(conflict.Version)</span></h3>
                             <pre class="conflict-text">@Plain(conflict.Text)</pre>
                             <button class="mini" @onclick="ReloadFromConflictAsync">Take theirs — discard mine</button>
                         </section>
@@ -133,20 +141,27 @@
                 <IntentStrip BookNodeId="@(book?.Id ?? Guid.Empty)"
                              BeatId="beat.Id"
                              BeatNumber="beat.Number"
-                             Description="beat.Description"
-                             DescriptionState="beat.DescriptionState"
+                             Description="@beat.Description"
+                             DescriptionState="@beat.DescriptionState"
                              OnChanged="ReloadBeatMetadataAsync" />
 
+                @* Every string parameter here takes @. Without it Razor passes the attribute as a
+                   LITERAL: Text="draft" handed the editor the word "draft" for every beat, and the
+                   intent strip, theme button, link search and save gate all showed their own
+                   variable names. Non-string parameters compile either way, which hid it. *@
                 <ProseEditor @ref="editor"
-                             Text="draft"
+                             @key="beat.Id"
+                             Text="@draft"
                              TextChanged="OnDraftChanged"
                              Mode="mode"
-                             EntityContextMenu="OnEntityChipContextMenu"
-                             EntityClick="OnEntityChipClick"
-                             DiscussRequested="OnDiscussRequested"
+                             Label="@($"Beat {beat.Number} text")"
                              ContextMenuRequested="OnContextMenuAsync"
+                             LinkRequested="AddEntityAsync"
+                             PasteNote="msg => tagNote = msg"
                              OnDisconnected="OnEditorDisconnected"
-                             OnJsError="OnEditorJsError" />
+                             OnJsError="OnEditorJsError"
+                             EditEntityRequested="EditEntityLinkAsync"
+                             OpenEntityRequested="OpenEntityInWikiAsync" />
             }
         </main>
 
@@ -213,7 +228,7 @@
             <div class="spacer"></div>
             <span class="muted">@WordCount words</span>
             <span class="sep">·</span>
-            <span class="muted">v@beat.Version</span>
+            <span class="muted">v@(beat.Version)</span>
             @if (Dirty)
             {
                 <span class="sep">·</span>
@@ -230,7 +245,7 @@
 
 @if (gate is not null)
 {
-    <RamificationsModal Findings="gate.Blocking" Checked="gate.Checked" Cost="gate.Cost"
+    <RamificationsModal Findings="gate.Blocking" Checked="@gate.Checked" Cost="gate.Cost"
                         OnDismiss="DismissGateFindingAsync"
                         OnGoToBeat="() => gate = null"
                         OnRevert="RevertFromGateAsync"
@@ -242,26 +257,24 @@
 
 @if (pendingDelete is not null)
 {
-    @* Shows the prose. A confirmation that asks "are you sure" without showing what is about to
-       be lost is one the author learns to click through — which is exactly when it stops
-       protecting them. Same reason the conflict banner now shows both texts. *@
-    <div class="scrim" aria-hidden="true" @onclick="() => pendingDelete = null"></div>
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-title">
-        <h2 id="delete-title">Delete this beat?</h2>
-        <p class="muted">This removes the beat and its prose from the book. It cannot be undone here.</p>
-        <pre class="delete-preview">@Shorten(Prose.Core.Services.BeatMarkup.StripEntityTags(pendingDelete.Text), 1200)</pre>
-        <div class="modal-actions">
-            <button class="mini" @onclick="() => pendingDelete = null">Keep it</button>
-            <div class="spacer"></div>
-            <button class="danger-btn" @onclick="ConfirmDeleteAsync">Delete the beat</button>
-        </div>
-    </div>
+    <DeleteBeatDialog BeatNumber="pendingDelete.Number"
+                      Preview="@Shorten(Prose.Core.Services.BeatMarkup.StripEntityTags(draft), 1200)"
+                      OnKeep="() => pendingDelete = null"
+                      OnDelete="ConfirmDeleteAsync" />
+}
+
+@if (picker is not null && book is not null)
+{
+    <EntityPicker BookNodeId="book.Id" X="picker.X" Y="picker.Y" AnchorTop="picker.Top"
+                  InitialQuery="@picker.Query" Linking="picker.Linking"
+                  OnChoose="ChoosePickedEntityAsync"
+                  OnCancel="() => picker = null" />
 }
 
 @if (entityModal is not null)
 {
     <EntityLinkModal Model="entityModal"
-                     Search="entitySearch"
+                     Search="@entitySearch"
                      SearchChanged="v => entitySearch = v"
                      Searching="searching"
                      Matches="matches"
@@ -339,6 +352,9 @@
     private async Task AutosaveTickAsync()
     {
         if (!Dirty || saving || book is null || beat is null) return;
+        // A save can rewrite the beat's tags, which redraws the editor and takes the remembered
+        // caret with it — the picker or link dialog would then have nowhere to put its link.
+        if (picker is not null || entityModal is not null) return;
         await SaveAsync(finishing: false, quiet: true);
         StateHasChanged();
     }
@@ -384,6 +400,35 @@
 
     private bool findOpen;
 
+    /// <summary>
+    /// Ctrl+S. The browser's own save dialog was taken away with nothing to replace it, so this is
+    /// the keyboard's only route to the same save-gate path the Save button uses.
+    ///
+    /// <para>Held to exactly what the button allows. The button is disabled when nothing has
+    /// changed, and a finishing save runs the paid sweep — a habitual Ctrl+S on an unchanged beat
+    /// must not spend money checking text that did not move. Nor does it run again under an open
+    /// gate, whose findings are still waiting on the author.</para>
+    ///
+    /// <para>StateHasChanged at the end because a call from JavaScript is not a UI event: Blazor
+    /// re-renders after its own event handlers, not after a [JSInvokable].</para>
+    /// </summary>
+    [JSInvokable]
+    public async Task RequestSave()
+    {
+        // Not under another dialog either: the save gate would open on top of it and take over the
+        // one focus trap, and closing the gate would hand focus back to a dialog with no trap.
+        if (saving || gate is not null || picker is not null || entityModal is not null || pendingDelete is not null) return;
+        if (!Dirty)
+        {
+            // Said, so a Ctrl+S that does nothing is not mistaken for one that did not register.
+            activity = "Nothing to save — this beat is already saved.";
+            StateHasChanged();
+            return;
+        }
+        await ManualSaveAsync();
+        StateHasChanged();
+    }
+
     /// <summary>The findings inbox. Closed by default — it is a thing the author goes and looks
     /// at, not a thing that should sit beside the prose demanding attention while they write.</summary>
     private bool findingsOpen;
@@ -418,18 +463,18 @@
     private void OnDiscussRequested(ProseEditor.SelectedSpan span)
         => discussPanel?.BeginFor(span);
 
-    private async Task OnEntityChipContextMenu(ProseEditor.EntityChip chip)
+    private async Task EditEntityLinkAsync(ProseEditor.EntityChip chip)
     {
         entityModal = new EntityLinkModal.State
         {
-            IsNew = false, Guid = chip.Guid, Repo = chip.Repo, Text = chip.Text,
+            Guid = chip.Guid, Repo = chip.Repo, Text = chip.Text,
         };
         entitySearch = chip.Text;
         await SearchEntitiesAsync();
     }
 
     /// <summary>
-    /// Left-click on an entity chip: open that entity's wiki page in the default browser.
+    /// "Open in the wiki", from the chip's menu: that entity's page in the default browser.
     ///
     /// <para>Launched from the Hub rather than with <c>window.open</c> because this page is
     /// normally displayed inside Writer.exe's WebView2 host, which may swallow a popup or divert
@@ -439,7 +484,7 @@
     /// <para>Phase 6 replaces this with an entity pane in this same window — losing your place in
     /// the manuscript is the worst possible answer to "tell me about this character".</para>
     /// </summary>
-    private async Task OnEntityChipClick(ProseEditor.EntityChip chip)
+    private async Task OpenEntityInWikiAsync(ProseEditor.EntityChip chip)
     {
         if (!Guid.TryParse(chip.Guid, out var id)) return;
 
@@ -593,9 +638,12 @@
         activity = quiet ? "Autosaving…" : "Saving…";
         ClearBeatState();
 
+        // What is being saved, captured now: the author keeps typing while the save is in flight.
+        var sent = draft;
+
         try
         {
-            var result = await Writer.SaveBeatAsync(book.Id, beat.Id, draft, beat.UpdatedAt,
+            var result = await Writer.SaveBeatAsync(book.Id, beat.Id, sent, beat.UpdatedAt,
                                                     deferAnalysis: !finishing);
             problems = result.Problems;
             if (problems.Count > 0) return;
@@ -603,8 +651,13 @@
             // The scanner may have rewritten tags. Assigning the stored text back into the draft
             // is what re-renders the editor — ProseEditor pushes HTML whenever the text it is
             // handed differs from what it last drew.
+            //
+            // Only when nothing was typed during the save. Adopting the stored text over a draft
+            // that moved on threw away every word typed while it was in flight, and replaced the
+            // DOM under the caret (to the top of the beat, undo history gone). The newer draft is
+            // simply still unsaved; beat.UpdatedAt is current, so the next save does not conflict.
             beat = result.Beat;
-            draft = result.Beat.Text;
+            if (draft == sent) draft = result.Beat.Text;
             analysisPending = !finishing && result.Changed;
             if (!quiet) tagNote = DescribeTagDiff(result);
         }
@@ -920,20 +973,27 @@
         if (target.OnEntity)
         {
             if (items.Count > 0) items.Add(ContextMenu.Item.Separator());
+            // The linked words go in the hint, not the label: a long name truncated inside the
+            // label came out as "Edit link — Kyle Ashford-Ve……", two ellipses and no sense.
             items.Add(new ContextMenu.Item(
-                $"Edit link — {Shorten(target.EntityText, 28)}…",
-                () => EditEntityAsync(target)));
-            items.Add(new ContextMenu.Item("Remove link", RemoveEntityAsync));
+                "Edit link…", () => EditEntityAsync(target),
+                Hint: Shorten(target.EntityText, 24)));
+            items.Add(new ContextMenu.Item("Remove link", RemoveEntityAsync,
+                Hint: "keeps the words"));
             items.Add(new ContextMenu.Item(
                 "Open in the wiki", () => OpenEntityAsync(target),
-                Hint: "also: click the chip"));
+                Hint: "in the browser"));
         }
-        else if (target.HasSelection)
+        else
         {
+            // One item, caret or selection: with words selected it links them, otherwise it
+            // inserts the entity's name at the caret. The picker's own label says which.
+            if (items.Count > 0) items.Add(ContextMenu.Item.Separator());
             items.Add(new ContextMenu.Item(
-                "Link to an entity…", AddEntityAsync,
+                "Insert entity…", AddEntityAsync,
                 Disabled: mode != EditorMode.Display,
-                Hint: mode == EditorMode.Display ? null : "Display mode only"));
+                Hint: mode != EditorMode.Display ? "Display mode only"
+                    : target.HasSelection ? "links the selection · Ctrl+K" : "Ctrl+K"));
         }
 
         if (items.Count > 0) items.Add(ContextMenu.Item.Separator());
@@ -954,13 +1014,23 @@
         items.Add(new ContextMenu.Item(
             "Merge into the beat before", JoinPreviousAsync,
             Disabled: beat is null || IsFirstBeat));
-        items.Add(new ContextMenu.Item(
-            "Delete this beat…", BeginDeleteAsync, Disabled: beat is null));
+        // Delete is the pane's "Delete this beat…" button, not a menu item — see the pane head.
 
-        contextItems = items;
+        // Each action re-renders the shell when it finishes. A menu item is a plain delegate, not an
+        // EventCallback, so nothing else would: "Insert entity…" set the picker and it stayed
+        // invisible until the next keystroke, and Split, Insert and Merge were the same.
+        contextItems = items
+            .Select(i => i.IsSeparator ? i : i with { Invoke = Rendering(i.Invoke) })
+            .ToList();
         StateHasChanged();
         return Task.CompletedTask;
     }
+
+    private Func<Task> Rendering(Func<Task> act) => async () =>
+    {
+        await act();
+        StateHasChanged();
+    };
 
     private Task TalkAboutAsync(ProseEditor.ContextTarget target)
     {
@@ -969,11 +1039,11 @@
     }
 
     private Task EditEntityAsync(ProseEditor.ContextTarget target)
-        => OnEntityChipContextMenu(
+        => EditEntityLinkAsync(
             new ProseEditor.EntityChip(target.EntityGuid!, target.EntityRepo ?? "", target.EntityText ?? ""));
 
     private Task OpenEntityAsync(ProseEditor.ContextTarget target)
-        => OnEntityChipClick(
+        => OpenEntityInWikiAsync(
             new ProseEditor.EntityChip(target.EntityGuid!, target.EntityRepo ?? "", ""));
 
     /// <summary>Speak an explicit passage — the menu already knows what was selected, so unlike
@@ -1141,44 +1211,76 @@
         finally { activity = "Idle"; }
     }
 
+    /// <summary>Where the entity picker is open, and for what. Null when it is closed.</summary>
+    private sealed record PickerState(string Query, bool Linking, int X, int Y, int Top);
+    private PickerState? picker;
+
+    /// <summary>
+    /// "Insert entity…" — the context menu, Ctrl+K and the toolbar's Entity button all land here.
+    /// Opens the picker at the caret; with words selected it links them, otherwise the chosen
+    /// entity's name is inserted at the caret.
+    /// </summary>
     private async Task AddEntityAsync()
     {
-        if (editor is null) return;
+        if (editor is null || book is null) return;
 
         if (mode != EditorMode.Display)
         {
-            tagNote = "Switch to Display mode to link an entity — Markdown mode edits the raw tags directly.";
+            tagNote = "Switch to Display mode to insert an entity — Markdown mode edits the raw tags directly.";
             return;
         }
 
-        var sel = await editor.GetSelectionAsync();
-        if (sel is null || !sel.Ok || string.IsNullOrWhiteSpace(sel.Text))
+        var at = await editor.GetCaretAsync();
+        if (at is null || !at.Ok)
         {
-            tagNote = "Select the words you want to link first.";
+            tagNote = "Click in the prose where the entity should go, or select the words to link, first.";
             return;
         }
 
-        entityModal = new EntityLinkModal.State { IsNew = true, Text = sel.Text.Trim() };
-        entitySearch = sel.Text.Trim();
-        await SearchEntitiesAsync();
+        var words = at.Text.Trim();
+        picker = new PickerState(words, Linking: words.Length > 0, at.X, at.Y, at.Top);
+        StateHasChanged();
+    }
+
+    private async Task ChoosePickedEntityAsync(Prose.Core.Services.EntityLookupMatch m)
+    {
+        var linking = picker?.Linking == true;
+        picker = null;
+        if (editor is null) return;
+
+        var problem = linking
+            ? await editor.WrapSelectionAsync(m.Id.ToString(), m.EntityType)
+            : await editor.InsertEntityAsync(m.Id.ToString(), m.EntityType, m.Name);
+        if (problem is not null) tagNote = problem;
     }
 
     // ── Entity modal ───────────────────────────────────────────────────────
 
+    /// <summary>Which search is the newest. The dialog searches as the author types, so several
+    /// can be in flight at once and finish in any order; only the last one asked for may write the
+    /// results, or "Kyl" could land after "Kyle" and show the wrong list.</summary>
+    private int searchTicket;
+
     private async Task SearchEntitiesAsync()
     {
-        if (book is null || string.IsNullOrWhiteSpace(entitySearch)) { matches = null; return; }
+        var ticket = ++searchTicket;
+        if (book is null || string.IsNullOrWhiteSpace(entitySearch)) { matches = null; searching = false; return; }
         searching = true;
         activity = "Searching entities…";
         StateHasChanged();
         try
         {
-            matches = (await Writer.SearchEntitiesAsync(book.Id, entitySearch)).ToList();
+            var found = (await Writer.SearchEntitiesAsync(book.Id, entitySearch)).ToList();
+            if (ticket == searchTicket) matches = found;
+        }
+        catch (Exception ex)
+        {
+            // A lookup that throws out of an event handler takes the whole window down with it.
+            if (ticket == searchTicket) { matches = []; tagNote = $"The entity search failed: {ex.Message}"; }
         }
         finally
         {
-            searching = false;
-            activity = "Idle";
+            if (ticket == searchTicket) { searching = false; activity = "Idle"; }
         }
     }
 
@@ -1193,18 +1295,17 @@
     {
         if (entityModal is null || !entityModal.CanApply || editor is null) return;
 
-        if (entityModal.IsNew)
-            await editor.WrapSelectionAsync(entityModal.Guid, entityModal.Repo);
-        else
-            await editor.ApplyEntityAsync(entityModal.Guid, entityModal.Repo, entityModal.Text);
+        var problem = await editor.ApplyEntityAsync(entityModal.Guid, entityModal.Repo, entityModal.Text);
 
         CloseEntityModal();
+        if (problem is not null) tagNote = problem;
     }
 
     private async Task RemoveEntityAsync()
     {
-        if (editor is not null) await editor.RemoveEntityAsync();
+        var problem = editor is null ? null : await editor.RemoveEntityAsync();
         CloseEntityModal();
+        if (problem is not null) tagNote = problem;
     }
 
     private void CloseEntityModal()

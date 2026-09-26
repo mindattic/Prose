@@ -57,7 +57,7 @@
             @foreach (var option in Filters)
             {
                 <button class="@(filter == option ? "d-intent-btn on" : "d-intent-btn")"
-                        aria-pressed="@(filter == option)"
+                        aria-pressed="@((filter == option) ? "true" : "false")"
                         @onclick="() => SetFilter(option)">@option</button>
             }
         </div>

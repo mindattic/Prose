@@ -1,0 +1,233 @@
+@* "Insert entity": a search box at the caret, filtering once there are three characters to go on.
+
+   Reached from the context menu, from Ctrl+K and from the toolbar's Entity button. With words
+   selected, the chosen entity links those words; with only a caret, it inserts the entity's name
+   there as a link.
+
+   Combobox pattern (WAI-ARIA 1.2): focus stays in the input, the arrow keys move the active option,
+   and aria-activedescendant tells a screen reader which one that is — the list itself never takes
+   focus, so typing never stops working. Enter picks, Escape closes, a click outside closes.
+
+   Three characters, not one: one or two letters match a large share of a universe's entities, and
+   the list that comes back is noise that costs a query per keystroke. Below three, the box says
+   how many more it needs instead of showing nothing. *@
+
+@inject WriterService Writer
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<div class="ctx-scrim" aria-hidden="true" @onclick="CancelAsync"></div>
+
+<div class="ent-picker" role="dialog" aria-label="@(Linking ? "Link the selected words to an entity" : "Insert an entity")"
+     style="left:@(X)px; top:@(Y)px;" @ref="box" @onkeydown="OnKeyDownAsync">
+    <label class="visually-hidden" for="ent-picker-input">
+        @(Linking ? "Search for the entity to link these words to" : "Search for the entity to insert")
+    </label>
+    <input id="ent-picker-input" class="ent-picker-input" type="text" autocomplete="off" spellcheck="false"
+           role="combobox" aria-autocomplete="list"
+           aria-controls="@(matches.Count > 0 ? "ent-picker-list" : null)"
+           aria-expanded="@(matches.Count > 0 ? "true" : "false")"
+           aria-activedescendant="@(matches.Count > 0 ? $"ent-opt-{active}" : null)"
+           aria-describedby="ent-picker-status"
+           placeholder="Search entities…" value="@query" data-autofocus
+           @oninput="OnInputAsync" />
+
+    <div id="ent-picker-status" class="ent-picker-status" role="status">@Status</div>
+
+    @if (matches.Count > 0)
+    {
+        <ul id="ent-picker-list" class="ent-picker-list" role="listbox"
+            aria-label="Matching entities">
+            @for (var i = 0; i < matches.Count; i++)
+            {
+                var index = i;
+                var m = matches[i];
+                @* mousedown is cancelled so a click never takes focus from the input: the list is
+                   driven from there, and focus leaving it would end the combobox. *@
+                <li id="ent-opt-@index" role="option" aria-selected="@(index == active ? "true" : "false")"
+                    class="@(index == active ? "ent-opt active" : "ent-opt")"
+                    @onmousedown:preventDefault @onmouseenter="() => active = index"
+                    @onclick="() => ChooseAsync(m)">
+                    <span class="ent-opt-name">@m.Name</span>
+                    <span class="ent-opt-type">@m.EntityType</span>
+                    @if (m.MatchedAlias is not null)
+                    {
+                        <span class="ent-opt-alias">alias: @m.MatchedAlias</span>
+                    }
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+@code {
+    public const int MinQueryLength = 3;
+
+    [Parameter, EditorRequired] public Guid BookNodeId { get; set; }
+
+    /// <summary>Where to open: just below the caret.</summary>
+    [Parameter] public int X { get; set; }
+    [Parameter] public int Y { get; set; }
+
+    /// <summary>The top of the caret's line. When there is no room below, the picker opens above
+    /// this rather than over the line the author is writing.</summary>
+    [Parameter] public int AnchorTop { get; set; }
+
+    /// <summary>The selected words, when there are any — the search starts from them.</summary>
+    [Parameter] public string InitialQuery { get; set; } = "";
+
+    /// <summary>True when words are selected, so the choice links them rather than inserting.</summary>
+    [Parameter] public bool Linking { get; set; }
+
+    [Parameter] public EventCallback<Prose.Core.Services.EntityLookupMatch> OnChoose { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+
+    private ElementReference box;
+    private string query = "";
+    private IReadOnlyList<Prose.Core.Services.EntityLookupMatch> matches = [];
+    private int active;
+    private bool searching;
+    private string? failure;
+    private bool opened;
+    private bool revealActive;
+
+    /// <summary>Only the newest search may write the list; see WriterShell's searchTicket.</summary>
+    private int ticket;
+
+    protected override async Task OnInitializedAsync()
+    {
+        query = InitialQuery.Trim();
+        await SearchAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // Fitted after EVERY render, not only the first: the box opens empty and grows when the
+        // results arrive, and fitted once it ran off the bottom of the window with the options
+        // past the edge still reachable by the arrow keys.
+        await JsAsync("proseModal.fit", box, X, Y, AnchorTop);
+
+        if (!opened)
+        {
+            opened = true;
+            await JsAsync("proseModal.open", box);
+        }
+
+        // Focus stays in the input, so nothing scrolls the list for the author: the active option
+        // is brought into view here, or ArrowDown walks off into options nobody can see (2.4.11).
+        if (revealActive && matches.Count > 0)
+        {
+            revealActive = false;
+            await JsAsync("proseModal.reveal", $"ent-opt-{active}");
+        }
+    }
+
+    private string Status
+    {
+        get
+        {
+            var length = query.Trim().Length;
+            if (failure is not null) return failure;
+            if (length < MinQueryLength)
+            {
+                var more = MinQueryLength - length;
+                return length == 0
+                    ? $"Type at least {MinQueryLength} characters of a name or alias."
+                    : $"{more} more character{(more == 1 ? "" : "s")} to search.";
+            }
+            if (searching) return "Searching…";
+            return matches.Count switch
+            {
+                0 => "No entity matches that.",
+                1 => "1 match. Enter to choose it.",
+                var n => $"{n} matches. Up and down to move, Enter to choose.",
+            };
+        }
+    }
+
+    private async Task OnInputAsync(ChangeEventArgs e)
+    {
+        query = e.Value?.ToString() ?? "";
+        await SearchAsync();
+    }
+
+    private async Task SearchAsync()
+    {
+        var mine = ++ticket;
+        failure = null;
+
+        if (query.Trim().Length < MinQueryLength)
+        {
+            matches = [];
+            searching = false;
+            return;
+        }
+
+        searching = true;
+        StateHasChanged();
+        try
+        {
+            var found = await Writer.SearchEntitiesAsync(BookNodeId, query.Trim());
+            if (mine != ticket) return;
+            matches = found;
+            active = 0;
+        }
+        catch (Exception ex)
+        {
+            // A lookup that throws out of an event handler would take the window down with it.
+            if (mine == ticket) { matches = []; failure = $"The search failed: {ex.Message}"; }
+        }
+        finally
+        {
+            if (mine == ticket) searching = false;
+        }
+    }
+
+    private async Task OnKeyDownAsync(KeyboardEventArgs e)
+    {
+        switch (e.Key)
+        {
+            case "ArrowDown" when matches.Count > 0:
+                active = (active + 1) % matches.Count;
+                revealActive = true;
+                break;
+            case "ArrowUp" when matches.Count > 0:
+                active = (active - 1 + matches.Count) % matches.Count;
+                revealActive = true;
+                break;
+            case "Home" when matches.Count > 0 && e.CtrlKey:
+                active = 0;
+                revealActive = true;
+                break;
+            case "End" when matches.Count > 0 && e.CtrlKey:
+                active = matches.Count - 1;
+                revealActive = true;
+                break;
+            // Not while a search is in flight: the list on screen is the previous query's, and
+            // Enter would insert a match for words the author has since typed past.
+            case "Enter" when matches.Count > 0 && !searching:
+                await ChooseAsync(matches[Math.Clamp(active, 0, matches.Count - 1)]);
+                break;
+            case "Escape":
+                await CancelAsync();
+                break;
+            // Tab leaves, and leaving is an answer — the same rule as the context menu.
+            case "Tab":
+                await CancelAsync();
+                break;
+        }
+    }
+
+    private Task ChooseAsync(Prose.Core.Services.EntityLookupMatch m) => OnChoose.InvokeAsync(m);
+
+    private Task CancelAsync() => OnCancel.InvokeAsync();
+
+    private async Task JsAsync(string identifier, params object?[] args)
+    {
+        try { await JS.InvokeVoidAsync(identifier, args); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { /* the picker still works; only placement or focus is lost */ }
+    }
+
+    public async ValueTask DisposeAsync() => await JsAsync("proseModal.close");
+}

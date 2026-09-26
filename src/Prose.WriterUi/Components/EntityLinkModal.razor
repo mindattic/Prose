@@ -1,4 +1,5 @@
-@* Linking selected prose to an entity, or repointing an existing chip.
+@* Editing an existing entity link: repoint it, change its words, or remove it. New links come
+   from EntityPicker ("Insert entity…").
 
    Presentational by design: searching reaches EntityLookupService and applying reaches the
    editor's JavaScript, and neither belongs in a dialog. The shell owns both and hands this
@@ -13,11 +14,11 @@
 <div class="scrim" aria-hidden="true" @onclick="() => OnCancel.InvokeAsync()"></div>
 <div class="modal" role="dialog" aria-modal="true" aria-labelledby="entity-modal-title"
      tabindex="-1" @ref="dialog" @onkeydown="OnKeyDown">
-    <h2 id="entity-modal-title">@(Model.IsNew ? "Link text to an entity" : "Entity link")</h2>
+    <h2 id="entity-modal-title">Edit entity link</h2>
 
     <label class="field">
         <span>Text</span>
-        <input type="text" value="@Model.Text" readonly="@Model.IsNew"
+        <input type="text" value="@Model.Text"
                @oninput="e => Model.Text = e.Value?.ToString() ?? string.Empty" />
     </label>
 
@@ -33,9 +34,10 @@
 
     <label class="field">
         <span>Search</span>
-        <input type="text" placeholder="Name or alias…" value="@Search"
-               @oninput="e => SearchChanged.InvokeAsync(e.Value?.ToString() ?? string.Empty)"
-               @onkeyup="() => OnSearch.InvokeAsync()" />
+        @* data-autofocus: the dialog opens here, on the one field the author came to type in,
+           rather than on the read-only Text above it. *@
+        <input type="search" placeholder="Name or alias…" value="@Search" data-autofocus
+               autocomplete="off" @oninput="OnSearchInput" />
     </label>
 
     @* The outcome of a search arrives without focus moving, so it has to be announced. *@
@@ -64,7 +66,7 @@
                     <li>
                         @* Which match is chosen was a background colour and nothing else. *@
                         <button class="@(m.Id.ToString() == Model.Guid ? "match current" : "match")"
-                                aria-pressed="@(m.Id.ToString() == Model.Guid)"
+                                aria-pressed="@((m.Id.ToString() == Model.Guid) ? "true" : "false")"
                                 @onclick="() => OnChoose.InvokeAsync(m)">
                             <span class="match-name">@m.Name</span>
                             <span class="muted">@m.EntityType</span>
@@ -80,14 +82,11 @@
     }
 
     <div class="modal-actions">
-        @if (!Model.IsNew)
-        {
-            <button class="mini danger-btn" @onclick="() => OnRemove.InvokeAsync()">Remove link</button>
-        }
+        <button class="mini danger-btn" @onclick="() => OnRemove.InvokeAsync()">Remove link</button>
         <div class="spacer"></div>
         <button class="mini" @onclick="() => OnCancel.InvokeAsync()">Cancel</button>
         <button class="primary" disabled="@(!Model.CanApply)" @onclick="() => OnApply.InvokeAsync()">
-            @(Model.IsNew ? "Link" : "Apply")
+            Apply
         </button>
     </div>
 </div>
@@ -99,8 +98,6 @@
     /// </summary>
     public sealed class State
     {
-        /// <summary>True when wrapping a fresh selection; false when a chip was right-clicked.</summary>
-        public bool IsNew { get; init; }
         public string Guid { get; set; } = "";
         public string Repo { get; set; } = "";
         public string Text { get; set; } = "";
@@ -135,6 +132,14 @@
         try { await JS.InvokeVoidAsync("proseModal.open", dialog); }
         catch (JSDisconnectedException) { }
         catch (JSException) { /* the dialog still works; only the focus niceties are lost */ }
+    }
+
+    /// <summary>Searching on input rather than on keyup: keyup fired for arrow keys, Tab and
+    /// Shift, so moving through the field ran the same search again each time.</summary>
+    private async Task OnSearchInput(ChangeEventArgs e)
+    {
+        await SearchChanged.InvokeAsync(e.Value?.ToString() ?? string.Empty);
+        await OnSearch.InvokeAsync();
     }
 
     private Task OnKeyDown(KeyboardEventArgs e)

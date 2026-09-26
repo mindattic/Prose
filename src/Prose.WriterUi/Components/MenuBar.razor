@@ -3,7 +3,7 @@
 
 <header class="menubar">
     <div class="menu">
-        <button class="menu-title" aria-haspopup="true" aria-expanded="@BookMenuOpen"
+        <button class="menu-title" aria-haspopup="true" aria-expanded="@(BookMenuOpen ? "true" : "false")"
                 @onclick="() => OnToggleBookMenu.InvokeAsync()">Book</button>
         @if (BookMenuOpen)
         {
@@ -36,12 +36,13 @@
     @if (HasBeat)
     {
         <div class="modes" role="group" aria-label="View mode">
-            <button class="@ModeClass(EditorMode.Display)" aria-pressed="@(Mode == EditorMode.Display)"
+            <button class="@ModeClass(EditorMode.Display)" aria-pressed="@((Mode == EditorMode.Display) ? "true" : "false")"
                     @onclick="() => OnSetMode.InvokeAsync(EditorMode.Display)">Display</button>
-            <button class="@ModeClass(EditorMode.Markdown)" aria-pressed="@(Mode == EditorMode.Markdown)"
+            <button class="@ModeClass(EditorMode.Markdown)" aria-pressed="@((Mode == EditorMode.Markdown) ? "true" : "false")"
                     @onclick="() => OnSetMode.InvokeAsync(EditorMode.Markdown)">Markdown</button>
         </div>
-        <button class="primary" disabled="@(!Dirty || Saving)" @onclick="() => OnSave.InvokeAsync()">
+        <button class="primary" disabled="@(!Dirty || Saving)" @onclick="() => OnSave.InvokeAsync()"
+                title="Save this beat and check what the change affects (Ctrl+S)" aria-keyshortcuts="Control+S">
             @(Saving ? "Saving…" : Dirty ? "Save" : "Saved")
         </button>
     }
@@ -66,7 +67,7 @@
     </div>
 
     <button class="mini" @onclick="() => OnToggleTheme.InvokeAsync()" title="Light / dark"
-            aria-label="Dark theme" aria-pressed="@(Theme == "dark")">
+            aria-label="Dark theme" aria-pressed="@((Theme == "dark") ? "true" : "false")">
         @(Theme == "light" ? "☾" : "☀")
     </button>
 
@@ -76,27 +77,41 @@
 
 @if (HasBeat)
 {
+    @* One tab stop, arrow keys inside it — writer.js implements the toolbar keyboard model.
+
+       The editing buttons cancel mousedown so a click never takes focus from the prose. Focus
+       leaving the contenteditable is what could drop the author's selection before the command
+       reached it, and it put a focus ring on a button the author only meant to press.
+
+       Bold/Italic/Underline/Strikethrough are toggles: aria-pressed is kept current by writer.js
+       from the caret's position, and styled, so the author can see whether a word is already bold. *@
     <div class="toolbar" role="toolbar" aria-label="Formatting">
-        <button class="mini" @onclick="() => OnAddEntity.InvokeAsync()"
-                title="Link the selected text to an entity" aria-label="Link to an entity">
+        <button class="mini" @onclick="() => OnAddEntity.InvokeAsync()" @onmousedown:preventDefault
+                title="Link the selected text to an entity (Ctrl+K)" aria-label="Link to an entity"
+                aria-keyshortcuts="Control+K">
             <span aria-hidden="true">＠</span> Entity
         </button>
-        <span class="tb-sep"></span>
-        <button class="mini bold" @onclick='() => OnFormat.InvokeAsync("bold")'
-                title="Bold (Ctrl+B)" aria-label="Bold">B</button>
-        <button class="mini ital" @onclick='() => OnFormat.InvokeAsync("italic")'
-                title="Italic (Ctrl+I)" aria-label="Italic">I</button>
-        <button class="mini undl" @onclick='() => OnFormat.InvokeAsync("underline")'
-                title="Underline (Ctrl+U)" aria-label="Underline">U</button>
-        <button class="mini strk" @onclick='() => OnFormat.InvokeAsync("strikeThrough")'
-                title="Strikethrough" aria-label="Strikethrough">S</button>
-        <span class="tb-sep"></span>
-        <button class="mini" @onclick="() => OnInsertEmDash.InvokeAsync()"
+        <span class="tb-sep" role="separator" aria-orientation="vertical"></span>
+        <button class="mini bold" data-format="bold" aria-pressed="false" @onmousedown:preventDefault
+                @onclick='() => OnFormat.InvokeAsync("bold")'
+                title="Bold (Ctrl+B)" aria-label="Bold" aria-keyshortcuts="Control+B">B</button>
+        <button class="mini ital" data-format="italic" aria-pressed="false" @onmousedown:preventDefault
+                @onclick='() => OnFormat.InvokeAsync("italic")'
+                title="Italic (Ctrl+I)" aria-label="Italic" aria-keyshortcuts="Control+I">I</button>
+        <button class="mini undl" data-format="underline" aria-pressed="false" @onmousedown:preventDefault
+                @onclick='() => OnFormat.InvokeAsync("underline")'
+                title="Underline (Ctrl+U)" aria-label="Underline" aria-keyshortcuts="Control+U">U</button>
+        <button class="mini strk" data-format="strikeThrough" aria-pressed="false" @onmousedown:preventDefault
+                @onclick='() => OnFormat.InvokeAsync("strikeThrough")'
+                title="Strikethrough (Ctrl+Shift+X)" aria-label="Strikethrough"
+                aria-keyshortcuts="Control+Shift+X">S</button>
+        <span class="tb-sep" role="separator" aria-orientation="vertical"></span>
+        <button class="mini" @onclick="() => OnInsertEmDash.InvokeAsync()" @onmousedown:preventDefault
                 title="Insert an em dash" aria-label="Insert an em dash">—</button>
-        <span class="tb-sep"></span>
+        <span class="tb-sep" role="separator" aria-orientation="vertical"></span>
         @* Reading a line back is how you hear that it does not scan. Free with the local voice,
            which is why it sits in the toolbar rather than behind a confirmation. *@
-        <button class="mini" @onclick="() => OnReadAloud.InvokeAsync()"
+        <button class="mini" @onclick="() => OnReadAloud.InvokeAsync()" @onmousedown:preventDefault
                 title="Read the selection aloud" aria-label="Read the selection aloud">
             <span aria-hidden="true">▶</span> Read
         </button>
@@ -107,20 +122,21 @@
                 <span aria-hidden="true">■</span> Stop
             </button>
         }
-        <span class="tb-sep"></span>
+        <span class="tb-sep" role="separator" aria-orientation="vertical"></span>
         @* Ctrl+F works too, but a keystroke nobody is told about is not a feature. *@
-        <button class="mini @(FindOpen ? "on" : "")" aria-pressed="@FindOpen"
+        <button class="mini @(FindOpen ? "on" : "")" aria-pressed="@(FindOpen ? "true" : "false")"
                 @onclick="() => OnToggleFind.InvokeAsync()"
-                title="Find in this book (Ctrl+F)" aria-label="Find in this book">Find</button>
-        <button class="mini @(FindingsOpen ? "on" : "")" aria-pressed="@FindingsOpen"
+                title="Find in this book (Ctrl+F)" aria-label="Find in this book"
+                aria-keyshortcuts="Control+F">Find</button>
+        <button class="mini @(FindingsOpen ? "on" : "")" aria-pressed="@(FindingsOpen ? "true" : "false")"
                 @onclick="() => OnToggleFindings.InvokeAsync()"
                 title="What the instruments have found in this book"
                 aria-label="Findings">Findings</button>
         @* The ledger has had a service, a schema, a CLI and MCP tools for months and no window. *@
-        <button class="mini @(LedgerOpen ? "on" : "")" aria-pressed="@LedgerOpen"
+        <button class="mini @(LedgerOpen ? "on" : "")" aria-pressed="@(LedgerOpen ? "true" : "false")"
                 @onclick="() => OnToggleLedger.InvokeAsync()"
                 title="What this book has promised and what it has paid off"
-                aria-label="Obligations">Owed</button>
+                aria-label="Owed: obligations">Owed</button>
     </div>
 }
 

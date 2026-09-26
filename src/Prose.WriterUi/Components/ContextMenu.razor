@@ -99,6 +99,7 @@
 
         // proseModal does the remembering and restoring; reusing it means the context menu and
         // the dialogs cannot drift apart on what "give focus back" means.
+        await JsAsync("proseModal.fit", menuRef);
         await JsAsync("proseModal.open", menuRef);
         focusTrapped = true;
         await FocusAsync(focused);

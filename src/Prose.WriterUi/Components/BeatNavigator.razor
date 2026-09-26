@@ -44,7 +44,7 @@
                 var open = IsOpen(group.Chapter);
                 <li>
                     <button class="spine-chapter" @onclick="() => Toggle(group.Chapter)"
-                            aria-expanded="@open">
+                            aria-expanded="@(open ? "true" : "false")">
                         <span class="spine-caret" aria-hidden="true">@(open ? "▾" : "▸")</span>
                         <span class="spine-chapter-name">@group.Chapter</span>
                         <span class="muted">@group.Items.Count</span>

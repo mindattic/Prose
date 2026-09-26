@@ -20,18 +20,18 @@
         {
             <textarea class="intent-edit" rows="2" value="@intentDraft" aria-label="The beat's stated intent"
                       @oninput="e => intentDraft = e.Value?.ToString() ?? string.Empty"></textarea>
-            <button class="mini" @onclick="SaveIntentAsync" disabled="@busy">Save</button>
-            <button class="mini" @onclick="() => editingIntent = false">Cancel</button>
+            <button class="mini" @onclick="SaveIntentAsync" disabled="@busy" aria-label="Save intent">Save</button>
+            <button class="mini" @onclick="() => editingIntent = false" aria-label="Cancel editing intent">Cancel</button>
         }
         else
         {
             <span class="intent-value @(string.IsNullOrWhiteSpace(Description) ? "absent" : "")">
                 @(string.IsNullOrWhiteSpace(Description) ? "Not stated." : Description)
             </span>
-            <TrustBadge State="DescriptionState" />
+            <TrustBadge State="@DescriptionState" />
             @* Edit, never "regenerate". There is deliberately no button here that would write
                the author's intent from the prose. *@
-            <button class="mini" @onclick="BeginEditIntent" disabled="@busy">Edit</button>
+            <button class="mini" @onclick="BeginEditIntent" disabled="@busy" aria-label="Edit intent">Edit</button>
         }
     </div>
 

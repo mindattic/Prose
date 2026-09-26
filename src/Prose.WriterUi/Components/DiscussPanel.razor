@@ -44,15 +44,15 @@
                other two are an override for when the inference got it wrong. *@
             <div class="d-intent" role="group" aria-label="What are you asking for">
                 <button class="@IntentClass(DiscussionIntent.Auto)"
-                        aria-pressed="@(intent == DiscussionIntent.Auto)"
+                        aria-pressed="@((intent == DiscussionIntent.Auto) ? "true" : "false")"
                         @onclick="() => intent = DiscussionIntent.Auto"
                         title="Work out from what you say whether this is a question or a request.">Auto</button>
                 <button class="@IntentClass(DiscussionIntent.Clarify)"
-                        aria-pressed="@(intent == DiscussionIntent.Clarify)"
+                        aria-pressed="@((intent == DiscussionIntent.Clarify) ? "true" : "false")"
                         @onclick="() => intent = DiscussionIntent.Clarify"
                         title="Explain, defend or check this passage. Nothing changes.">Clarify</button>
                 <button class="@IntentClass(DiscussionIntent.Edit)"
-                        aria-pressed="@(intent == DiscussionIntent.Edit)"
+                        aria-pressed="@((intent == DiscussionIntent.Edit) ? "true" : "false")"
                         @onclick="() => intent = DiscussionIntent.Edit"
                         title="Ask for a change. You approve it before anything is written — and it may argue back.">Edit</button>
             </div>
@@ -68,7 +68,7 @@
                 {
                     <button class="@MicClass(AskBox)" @onclick="() => ToggleMicAsync(AskBox)"
                             disabled="@(transcribing || (recordingIn is not null && recordingIn != AskBox))"
-                            aria-pressed="@(recordingIn == AskBox)"
+                            aria-pressed="@((recordingIn == AskBox) ? "true" : "false")"
                             title="@MicTitle(AskBox)">@MicLabel(AskBox)</button>
                 }
                 <div class="spacer"></div>
@@ -147,7 +147,7 @@
     }
     else
     {
-        <div class="d-thread" aria-live="polite" aria-busy="@busy">
+        <div class="d-thread" aria-live="polite" aria-busy="@(busy ? "true" : "false")">
             <div class="d-anchor">“@Shorten(openThread.AnchorQuote, 300)”</div>
 
             @for (var i = 0; i < turns.Count; i++)
@@ -207,7 +207,7 @@
                 {
                     <button class="@MicClass(FollowUpBox)" @onclick="() => ToggleMicAsync(FollowUpBox)"
                             disabled="@(transcribing || (recordingIn is not null && recordingIn != FollowUpBox))"
-                            aria-pressed="@(recordingIn == FollowUpBox)"
+                            aria-pressed="@((recordingIn == FollowUpBox) ? "true" : "false")"
                             title="@MicTitle(FollowUpBox)">@MicLabel(FollowUpBox)</button>
                 }
                 <div class="spacer"></div>
