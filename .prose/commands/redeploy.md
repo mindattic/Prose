@@ -65,15 +65,22 @@ what they start rather than all being `launch.bat`:
 
 | File | Rebuilds | Starts |
 |---|---|---|
-| `Writer.bat` | Hub **and** Writer | `Writer.exe` |
-| `Hub.bat` | Hub | `Hub.exe` |
-| `launch.bat` | all four | `Launcher.exe` |
-| `KdpPublish\launch.bat` | KdpPublish | `Prose.KdpPublish.exe` |
+| `Writer.bat` (repo: `deploy-writer.bat`) | Writer **only** | `Writer.exe`, which connects to the running Hub or starts the deployed one |
+| `Hub.bat` (repo: `deploy-hub.bat`) | Hub **only** | `Hub.exe`, or connects to a Hub already healthy on 5900 |
+| `launch.bat` (repo: `deploy-prose.bat`) | all four | `Launcher.exe` |
+| `KdpPublish\launch.bat` (repo: `deploy-kdp.bat`) | KdpPublish | `Prose.KdpPublish.exe` |
 
-`Writer.bat` rebuilding the Hub is not redundant. The entire editor — every Razor component, the
-save path, the entity modal — is `Prose.WriterUi`, compiled **into Hub.exe**. `Writer.exe` is only a
-WebView2 window pointed at it. Republishing just `Writer.exe` would leave you editing in yesterday's
-UI while believing you had redeployed it.
+Each app deploys alone. A Writer deploy never stops or replaces the Hub, and a Hub deploy never
+touches an open Writer: the Writer shows "Lost the connection" while the Hub is down and reopens the
+editor by itself when the new Hub answers. It only polls — it never starts a Hub mid-deploy, which
+would lock the Hub.exe being replaced.
+
+**Which one a change needs.** The editor — every Razor component, the save path, the entity modal —
+is `Prose.WriterUi`, compiled **into Hub.exe**. `Writer.exe` is only the window: WebView2, the splash,
+Connect, the microphone permission. So a change under `Prose.WriterUi`, `Prose.Hub` or `Prose.Core`
+needs **the Hub** deployed; a change under `Prose.Writer` needs the Writer. After a Writer-only
+deploy, `deploy-apps.ps1` says which Hub the Writer will use and warns when that Hub was built before
+the latest change to what it serves.
 
 ## Gotchas
 
