@@ -1,7 +1,7 @@
 <Window x:Class="Prose.Launcher.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Prose" Height="420" Width="520"
+        Title="Prose" Height="500" Width="520"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         Background="#1e1e1e">
@@ -91,6 +91,13 @@
             <StackPanel>
                 <TextBlock Text="KDP Publish" FontSize="15" />
                 <TextBlock Text="Publish and update books on Amazon" Style="{StaticResource TileSub}" />
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="CliButton" Style="{StaticResource Tile}" Click="OpenCli">
+            <StackPanel>
+                <TextBlock Text="CLI" FontSize="15" />
+                <TextBlock Text="Claude Code in D:\Projects\MindAttic\Prose" Style="{StaticResource TileSub}" />
             </StackPanel>
         </Button>
 

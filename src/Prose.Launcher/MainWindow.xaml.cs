@@ -65,6 +65,33 @@ public partial class MainWindow : Window
         Close();
     }
 
+    private const string RepoDir = @"D:\Projects\MindAttic\Prose";
+
+    private async void OpenCli(object sender, RoutedEventArgs e)
+    {
+        // The session's MCP tools talk to the Hub, so it has to be up before Claude Code starts.
+        if (!await EnsureHubAsync()) return;
+        if (!Directory.Exists(RepoDir))
+        {
+            HubStatus.Text = $"{RepoDir} does not exist.";
+            return;
+        }
+
+        // Windows Terminal when it is installed; a plain PowerShell window otherwise.
+        try
+        {
+            Process.Start(new ProcessStartInfo("wt.exe", $"-d \"{RepoDir}\" claude") { UseShellExecute = true });
+        }
+        catch (System.ComponentModel.Win32Exception)
+        {
+            Process.Start(new ProcessStartInfo("powershell.exe", "-NoExit -Command claude")
+            {
+                WorkingDirectory = RepoDir,
+                UseShellExecute = true,
+            });
+        }
+    }
+
     private async void OpenHubDashboard(object sender, RoutedEventArgs e)
     {
         if (!await EnsureHubAsync()) return;
