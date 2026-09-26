@@ -113,16 +113,26 @@ public sealed class EntityRenameService(
     public async Task<FieldWriteResult?> RenameRecordAsync(Guid entityId, string entityType, string newName, CancellationToken ct = default)
     {
         if (string.Equals(entityType, "character", StringComparison.OrdinalIgnoreCase)
-            || !EntityFieldWriter.Repositories.TryGetValue(entityType, out var repoType))
+            || !EntityFieldWriter.Repositories.ContainsKey(entityType))
             return null;
-        // Not every record calls its name "name": vocabulary keeps it in "term", news in
-        // "headline", a contract in "codename", a document in "title". Sending "name" to those
-        // was refused as an unknown field, so their renames always failed.
-        var props = FieldPatch.Properties(repoType.BaseType!.GetGenericArguments()[0]);
-        var nameKey = RecordNameKeys.FirstOrDefault(props.ContainsKey);
-        if (nameKey == null) return null;
+        // A typed record with no field this rename knows as its name used to return null here,
+        // which ApplyAsync read as "no typed record" and went on — the typed row kept the old
+        // name while the entity row moved. Refuse instead, before anything is written.
+        if (RecordNameKey(entityType) is not { } nameKey)
+            return FieldWriteResult.Fail($"the {entityType} record has no name field ({string.Join(", ", RecordNameKeys)}) to write");
         var fields = new JsonObject { [nameKey] = newName }.ToJsonString();
         return await fieldWriter.SetFieldsAsync(entityId.ToString("N"), fields, confirmUnread: true, ct);
+    }
+
+    /// <summary>The field that holds a repository-served type's name. Not every record calls it
+    /// "name": vocabulary keeps it in "term", news in "headline", a contract in "codename", a
+    /// document in "file_name". Sending "name" to those was refused as an unknown field, so their
+    /// renames always failed. Null for a type no repository serves, or one with none of the keys.</summary>
+    public static string? RecordNameKey(string entityType)
+    {
+        if (!EntityFieldWriter.Repositories.TryGetValue(entityType, out var repoType)) return null;
+        var props = FieldPatch.Properties(repoType.BaseType!.GetGenericArguments()[0]);
+        return RecordNameKeys.FirstOrDefault(props.ContainsKey);
     }
 
     // "file_name" before "title": a document's Entity.Name mirrors its FileName (DocumentMapper), so a

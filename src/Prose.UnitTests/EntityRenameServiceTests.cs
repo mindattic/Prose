@@ -3,6 +3,7 @@ using Prose.Core.Data;
 using Prose.Core.Data.Entities;
 using Prose.Core.Models.Canon;
 using Prose.Core.Services;
+using Prose.Core.Services.Audit;
 
 namespace Prose.UnitTests;
 
@@ -57,6 +58,67 @@ public class EntityRenameServiceTests : WorldFixture
 
         Assert.That(r!.Ok, Is.True, r.Error);
         Assert.That(factions.GetById(f.Id)!.Name, Is.EqualTo("Halvorsen Civic Recovery"));
+    }
+
+    [Test]
+    public async Task Applying_a_place_rename_moves_the_typed_row_the_entity_row_and_the_prose()
+    {
+        var (book, _) = await BookAsync("They ate at Harbor Grill that night.", "Harbor Grill was closed by morning.");
+        var p = new DistrictData { Id = Guid.NewGuid().ToString("N"), Name = "Harbor Grill", Description = "A restaurant in the Loop." };
+        places.Save(p);
+        var placeId = Guid.Parse(p.Id);
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            var universe = await db.Nodes.IgnoreQueryFilters().Where(n => n.Id == book).Select(n => n.UniverseId).SingleAsync();
+            (await db.Entities.IgnoreQueryFilters().SingleAsync(e => e.Id == placeId)).UniverseId = universe;
+            await db.SaveChangesAsync();
+        }
+        var full = new EntityRenameService(dbFactory, workbench,
+            new MarkdownFileService(dbFactory, paths, new CanonDocumentTypeRegistry(dbFactory)),
+            new ContinuityService(dbFactory),
+            new NounConsistencyService(dbFactory, new AuditRunner(new FakeLlmService(), new FindingsService(dbFactory, paths))),
+            new EntityFieldWriter(BuildServices(), gate, dbFactory, writer));
+
+        var r = await full.ApplyAsync(p.Id, book.ToString(), "Cuisine");
+
+        Assert.That(r.Ok, Is.True, r.Error);
+        Assert.That(r.BeatsChanged, Is.EqualTo(2));
+        await using var check = await dbFactory.CreateDbContextAsync();
+        Assert.That(CanonRecordLoader.Load(check, "place", placeId)?["name"]?.ToString(), Is.EqualTo("Cuisine"),
+            "get_place reads the typed row, and the typed row carries the new name");
+        Assert.That(CanonRecordLoader.Load(check, "place", placeId)?["description"]?.ToString(), Is.EqualTo("A restaurant in the Loop."));
+        Assert.That(places.GetById(p.Id)!.Name, Is.EqualTo("Cuisine"));
+        Assert.That(await check.Entities.IgnoreQueryFilters().Where(e => e.Id == placeId).Select(e => e.Name).SingleAsync(), Is.EqualTo("Cuisine"));
+        var texts = await check.Beats.AsNoTracking().Select(b => b.Text).ToListAsync();
+        Assert.That(texts, Has.None.Contains("Harbor Grill"));
+        Assert.That(texts, Has.Some.Contains("Cuisine"));
+    }
+
+    [Test]
+    public async Task Every_typed_record_type_has_a_name_field_the_rename_writes_or_is_refused()
+    {
+        // A quote's name is derived from its text (QuoteMapper: the first 40 characters), so
+        // there is no name to write; every other typed record has one.
+        foreach (var type in EntityFieldWriter.Repositories.Keys.Where(t => t != "quote"))
+            Assert.That(EntityRenameService.RecordNameKey(type), Is.Not.Null, type);
+        Assert.That(EntityRenameService.RecordNameKey("place"), Is.EqualTo("name"));
+        Assert.That(EntityRenameService.RecordNameKey("vocabulary"), Is.EqualTo("term"));
+
+        // It used to answer null — "no typed record" — and the rename went on, leaving the typed
+        // row on the old name. Now it is refused before anything is written.
+        Assert.That(EntityRenameService.RecordNameKey("quote"), Is.Null);
+        var r = await rename.RenameRecordAsync(Guid.NewGuid(), "quote", "Anything");
+        Assert.That(r, Is.Not.Null);
+        Assert.That(r!.Ok, Is.False);
+        Assert.That(r.Error, Does.Contain("no name field"));
+    }
+
+    private IServiceProvider BuildServices()
+    {
+        var services = new Microsoft.Extensions.DependencyInjection.ServiceCollection();
+        Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, places);
+        Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services, factions);
+        return Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(services);
     }
 
     [Test]
