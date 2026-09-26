@@ -38,6 +38,24 @@ public partial class MainWindow : Window
     private int consecutiveHealthFailures;
     private bool healthCheckInFlight;
 
+    /// <summary>
+    /// After the Hub is lost, watches for it to come back and reopens the editor on its own.
+    ///
+    /// <para>A Hub-only deploy stops the Hub, replaces Hub.exe and starts the new one, and the
+    /// Writer used to sit on "Lost the connection" until the author thought to press Connect.
+    /// This only polls /api/health — it never STARTS a Hub. Starting one mid-deploy would launch
+    /// the old Hub.exe while the deploy is waiting to overwrite it, and lock the file it needs.
+    /// Starting is left to Connect, which the author presses on purpose.</para>
+    /// </summary>
+    private DispatcherTimer? reconnectTimer;
+    private bool reconnectCheckInFlight;
+
+    /// <summary>The Hub process(es) still running when the connection was lost. When the health
+    /// check recovers with one of THOSE still alive, the Hub never went away — it stalled (SQL, a
+    /// heavy command) — and the editor is shown again as it was, not reloaded: a reload would drop
+    /// the author's session and whatever they had typed since the last autosave.</summary>
+    private HashSet<int> lostHubPids = [];
+
     public MainWindow()
     {
         InitializeComponent();
@@ -56,6 +74,7 @@ public partial class MainWindow : Window
         connecting = true;
         ConnectButton.IsEnabled = false;
         StopHealthWatch();
+        StopReconnectWatch();
 
         try
         {
@@ -69,13 +88,16 @@ public partial class MainWindow : Window
             catch (Exception ex)
             {
                 ShowSplash(ex.Message, offerConnect: true);
+                // Keep watching: a failed attempt during a Hub redeploy used to end the automatic
+                // reconnect for good, and the editor never reopened when the new Hub came up.
+                StartReconnectWatch();
                 return;
             }
 
             if (!webViewReady && !await InitialiseWebViewAsync()) return;
 
             SplashStatus.Text = "Opening the editor…";
-            Web.CoreWebView2.Navigate($"{HubProcess.BaseUrl}/writer");
+            NavigateToEditor();
         }
         finally
         {
@@ -141,6 +163,7 @@ public partial class MainWindow : Window
             {
                 if (args.IsSuccess)
                 {
+                    StopReconnectWatch();
                     Splash.Visibility = Visibility.Collapsed;
                     Web.Visibility = Visibility.Visible;
                     StartHealthWatch();
@@ -149,6 +172,7 @@ public partial class MainWindow : Window
                 {
                     ShowSplash($"Could not open {HubProcess.BaseUrl}/writer — {args.WebErrorStatus}.",
                                offerConnect: true);
+                    StartReconnectWatch();
                 }
             };
 
@@ -164,6 +188,7 @@ public partial class MainWindow : Window
                     ReplaceWebView();
                 ShowSplash($"The editor's browser process stopped ({args.ProcessFailedKind}).",
                            offerConnect: true);
+                StartReconnectWatch();
             };
 
             webViewReady = true;
@@ -234,6 +259,71 @@ public partial class MainWindow : Window
         consecutiveHealthFailures = 0;
     }
 
+    /// <summary>
+    /// Point the editor at the Hub. Guarded because this runs from async-void handlers: if the
+    /// browser process died a moment ago and ProcessFailed has not swapped the control yet,
+    /// Navigate throws, and an exception escaping an async-void dispatcher callback closes the app.
+    /// </summary>
+    private void NavigateToEditor()
+    {
+        try
+        {
+            Web.CoreWebView2.Navigate($"{HubProcess.BaseUrl}/writer");
+        }
+        catch (Exception ex)
+        {
+            ShowSplash($"Could not open the editor: {ex.Message}", offerConnect: true);
+            StartReconnectWatch();
+        }
+    }
+
+    private void StartReconnectWatch()
+    {
+        if (reconnectTimer is not null) { reconnectTimer.Start(); return; }
+
+        reconnectTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(2) };
+        reconnectTimer.Tick += OnReconnectTick;
+        reconnectTimer.Start();
+    }
+
+    private void StopReconnectWatch() => reconnectTimer?.Stop();
+
+    private async void OnReconnectTick(object? sender, EventArgs e)
+    {
+        if (reconnectCheckInFlight || connecting) return;
+        reconnectCheckInFlight = true;
+
+        try
+        {
+            if (!await HubProcess.IsHealthyAsync()) return;
+            StopReconnectWatch();
+
+            if (!webViewReady) { await ConnectAsync(); return; }
+
+            // The same Hub came back: it stalled, it did not restart. Show the page as it was —
+            // Blazor reconnects its own circuit — rather than reloading it.
+            var same = lostHubPids.Count > 0 && HubProcess.RunningHubs().Any(h => lostHubPids.Contains(h.Pid));
+            lostHubPids = [];
+            if (same)
+            {
+                Splash.Visibility = Visibility.Collapsed;
+                Web.Visibility = Visibility.Visible;
+                StartHealthWatch();
+                return;
+            }
+
+            // Navigate straight to the editor rather than through ConnectAsync: that path starts a
+            // Hub when it finds none, and the one we just saw could go away again in between.
+            SplashStatus.Text = "Prose Hub is back — reopening the editor…";
+            ConnectButton.Visibility = Visibility.Collapsed;
+            NavigateToEditor();
+        }
+        finally
+        {
+            reconnectCheckInFlight = false;
+        }
+    }
+
     private async void OnHealthTick(object? sender, EventArgs e)
     {
         // The probe has a 3s timeout and the tick is 5s, but a machine coming back from sleep can
@@ -252,13 +342,17 @@ public partial class MainWindow : Window
             if (++consecutiveHealthFailures < 2) return;
 
             var hubs = HubProcess.RunningHubs();
+            lostHubPids = hubs.Select(h => h.Pid).ToHashSet();
             ShowSplash(
-                hubs.Count > 0
+                (hubs.Count > 0
                     ? $"Lost the connection to Prose Hub. It is still running " +
                       $"({string.Join(", ", hubs.Select(h => $"PID: {h.Pid}"))}) but is not answering " +
                       $"{HubProcess.BaseUrl} — most often SQL Server."
-                    : "Lost the connection to Prose Hub — the process is no longer running.",
+                    : "Lost the connection to Prose Hub — the process is no longer running.")
+                + "\n\nThe editor reopens by itself as soon as a Hub answers again (after a Hub " +
+                  "redeploy, for instance). Connect starts one now.",
                 offerConnect: true);
+            StartReconnectWatch();
         }
         finally
         {

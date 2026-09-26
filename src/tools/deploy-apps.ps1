@@ -35,9 +35,13 @@
     deploy-*.bat entry points use: one desktop icon per app, each of which republishes from source
     and then opens that app, so you can never be looking at a stale build.
 
+    Only the apps in -Apps are stopped and replaced. Starting Writer or the Launcher never touches
+    the Hub: they connect to the running one, or start the deployed Hub.exe when none is up.
+
 .EXAMPLE
     powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1
-    powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Writer,Hub -Start Writer
+    powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Hub -Start Hub
+    powershell -ExecutionPolicy Bypass -File src\tools\deploy-apps.ps1 -Apps Writer -Start Writer
 #>
 param(
     # Deliberately NOT [ValidateSet]: `powershell -File script.ps1 -Apps Hub,Writer` hands this
@@ -195,11 +199,14 @@ function Write-Launcher {
 Write-Host ''
 Write-Host '  Launchers' -ForegroundColor Cyan
 
-# Writer rebuilds the HUB as well as itself, and that is not belt-and-braces: the entire editor -
-# every Razor component, the save path, the entity modal - is Prose.WriterUi compiled INTO Hub.exe.
-# Writer.exe is just a WebView2 window pointed at it. Republishing only Writer.exe would leave the
-# author editing in yesterday's UI while believing they had just redeployed it.
-Write-Launcher -File 'Writer.bat'  -Title 'Prose Writer' -AppList 'Hub,Writer' -StartApp 'Writer'
+# Each app's launcher publishes that app and nothing else. Writer never stops or replaces the Hub:
+# it connects to the one already running, or starts the deployed Hub.exe when none is.
+#
+# The editor itself - every Razor component, the save path, the entity modal - is Prose.WriterUi
+# compiled INTO Hub.exe; Writer.exe is the window around it. So an editor change needs the Hub
+# deployed, and Show-HubState below says so whenever the Hub is older than that source, instead of
+# letting the author edit in yesterday's UI believing they had just redeployed it.
+Write-Launcher -File 'Writer.bat'  -Title 'Prose Writer' -AppList 'Writer'     -StartApp 'Writer'
 Write-Launcher -File 'Hub.bat'     -Title 'Prose Hub'    -AppList 'Hub'        -StartApp 'Hub'
 Write-Launcher -File 'launch.bat'  -Title 'Prose'        -AppList 'Hub,Writer,Launcher,KdpPublish' -StartApp 'Launcher'
 
@@ -238,6 +245,66 @@ function Wait-HubHealthy {
         if ($tick % 6 -eq 0) { Write-Host "    waiting for $HubHealthUrl ... ($([int]($tick / 2))s)" -ForegroundColor DarkYellow }
     }
     return $false
+}
+
+# Which Hub an app that depends on one (Writer, Launcher) is about to use, and whether it serves
+# the current editor. Both apps find a running Hub or start the deployed one themselves
+# (Prose.WriterHubProcess.cs); this only reports, so the deploy output is not silent about it.
+function Show-HubState {
+    param([string]$AppName)
+
+    $health = $null
+    try { $health = Invoke-RestMethod -Uri $HubHealthUrl -TimeoutSec 3 } catch { }
+
+    # Read through PSObject: under Set-StrictMode -Version Latest a missing property THROWS, and an
+    # older Hub's health reply has no builtUtc — which failed the whole deploy after Writer had
+    # already been published, printing "DEPLOY FAILED - Nothing was launched".
+    function Get-HealthField([string]$Name) {
+        if ($null -eq $health -or $health -is [string]) { return $null }
+        $prop = $health.PSObject.Properties[$Name]
+        if ($prop) { return $prop.Value } else { return $null }
+    }
+
+    $hubExe = Join-Path $catalog.Hub.Out $catalog.Hub.Exe
+    $built = $null
+    if ($health) {
+        Write-Host "  Prose Hub is running (PID $(Get-HealthField 'pid'), build $(Get-HealthField 'build')) - $AppName will connect to it." -ForegroundColor Green
+        # PowerShell 5.1's JSON reader leaves dates as strings; 7 converts them.
+        $builtField = Get-HealthField 'builtUtc'
+        if ($builtField -is [datetime]) { $built = $builtField.ToUniversalTime() }
+        elseif ($builtField) { $built = [datetime]::Parse($builtField, $null, 'RoundtripKind').ToUniversalTime() }
+    }
+    elseif ($running = @(Get-Process Hub -ErrorAction SilentlyContinue | Where-Object { $_.Path -and $_.Path -eq $hubExe })) {
+        # Running but not healthy (a 503 throws in Invoke-RestMethod): it is NOT absent, and the
+        # Writer will wait for it rather than start a second one.
+        Write-Host "  Prose Hub is running (PID $($running[0].Id)) but not answering $HubHealthUrl yet - $AppName will wait for it." -ForegroundColor Yellow
+        Write-Host "  /api/health is fail-closed: this is usually SQL Server, or migrations still applying." -ForegroundColor DarkYellow
+        $built = (Get-Item $hubExe).LastWriteTimeUtc
+    }
+    else {
+        if (-not (Test-Path $hubExe)) {
+            Write-Host "  No Hub is running and none is deployed at $hubExe." -ForegroundColor Red
+            Write-Host "  $AppName will open but cannot reach one - run deploy-hub.bat." -ForegroundColor Red
+            return
+        }
+        Write-Host "  No Hub is answering - $AppName will start $hubExe." -ForegroundColor Cyan
+        $built = (Get-Item $hubExe).LastWriteTimeUtc
+    }
+
+    # What the Hub serves: the editor (Prose.WriterUi), its own endpoints, and the services under
+    # both. Not Prose.Writer - that is the window, and it was just published.
+    $served = @('Prose.WriterUi', 'Prose.Hub', 'Prose.Core') | ForEach-Object { Join-Path $srcRoot $_ }
+    $newest = Get-ChildItem $served -Recurse -File -Include *.cs, *.razor, *.css, *.js, *.csproj -ErrorAction SilentlyContinue |
+              Where-Object { $_.FullName -notmatch '\\(bin|obj)\\' } |
+              Sort-Object LastWriteTimeUtc -Descending |
+              Select-Object -First 1
+
+    if ($built -and $newest -and $newest.LastWriteTimeUtc -gt $built) {
+        Write-Host "  ! That Hub was built $($built.ToLocalTime()), before the latest change to what it serves:" -ForegroundColor Yellow
+        Write-Host "      $($newest.FullName.Substring($srcRoot.Length + 1)) ($($newest.LastWriteTime))" -ForegroundColor DarkYellow
+        Write-Host "    The editor inside $AppName comes from the Hub, so that change is not in it yet." -ForegroundColor DarkYellow
+        Write-Host "    Run deploy-hub.bat to pick it up." -ForegroundColor DarkYellow
+    }
 }
 
 if ($Start) {
@@ -281,6 +348,9 @@ if ($Start) {
         Write-Host "  Prose Hub is up and reachable at $HubBaseUrl." -ForegroundColor Green
     }
     else {
+        # Writer and Launcher attach to the Hub. Skipped when the Hub was published in this same
+        # run: it was stopped for that, and the app starting it is exactly what comes next.
+        if (($Start -eq 'Writer' -or $Start -eq 'Launcher') -and $Apps -notcontains 'Hub') { Show-HubState $Start }
         Write-Host "  Starting $Start..." -ForegroundColor Cyan
         Start-Process $startExe -WorkingDirectory $startApp.Out
     }

@@ -139,14 +139,28 @@ public static class HubProcess
             ?? throw new InvalidOperationException(
                 "Prose Hub is not running and Hub.exe could not be found. Looked in:\n  " +
                 string.Join("\n  ", CandidateHubPaths) +
-                "\n\nDeploy it with src\\Prose.Hub\\tools\\deploy.ps1.");
+                "\n\nDeploy it with deploy-hub.bat in the Prose repository.");
 
         progress?.Report("Starting Prose Hub…");
+        // The Hub binds 127.0.0.1 only and is never the Azure deployment. With no environment set
+        // it defaults to Production, and AddMindAtticAuthentication fails closed. The deploy
+        // scripts set this before launching; a Writer opened from a shortcut or Explorer did not,
+        // so a Hub it started came up in Production.
+        //
+        // Set on THIS process, which the Hub inherits, and only when nobody chose otherwise. Not
+        // through ProcessStartInfo.Environment: that needs UseShellExecute=false, and then the
+        // long-lived Hub inherits this process's handles — a script that started the Writer with
+        // its output captured would wait on the Hub for an end-of-file that never comes.
+        if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")))
+            Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Development");
+
         Process.Start(new ProcessStartInfo(exe)
         {
             // The Hub pins its own ContentRoot to the executable's folder, but set the working
             // directory anyway: anything else it resolves relatively should also land beside it.
             WorkingDirectory = Path.GetDirectoryName(exe)!,
+            // Shell-executed: the Hub gets its own console window, which is deliberate — it is a
+            // server the author started, and that window is where it reports what it is doing.
             UseShellExecute = true
         });
 
