@@ -316,6 +316,8 @@ if (UniverseBootstrap.RequestedSlug == null
         // The Novel Factory (RFC 0015): work orders and sessions are engine-wide rows with no
         // universe; --factory status/next resolve an explicit --node via NodeRefResolver.
         "--factory", "--order", "--session", "--ruling",
+        // The spelling dictionary (SpellingWords) is one engine-wide list, not a universe's.
+        "--dictionary",
     ];
     var isAgnostic = args.Length == 0 || UniverseAgnosticCommands.Any(args.Contains);
     if (!isAgnostic)
@@ -334,6 +336,14 @@ if (UniverseBootstrap.RequestedSlug == null
 if (args.Contains("--rebuild-graph"))
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("RebuildGraphCli", args);
+    return;
+}
+
+// CLI mode: prose --dictionary list|add <word>|remove <word>|check <word> …
+// The author's spelling dictionary, the same rows as the Writer's "Add to dictionary" and Settings.
+if (args.Contains("--dictionary"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("SpellingCli", args);
     return;
 }
 

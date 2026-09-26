@@ -518,6 +518,7 @@ public static class ServiceCollectionExtensions
         // The Novel Factory (RFC 0015): the computed line, work orders, sessions.
         services.AddSingleton<Prose.Core.Services.Factory.FactorySessionService>();
         services.AddSingleton<Prose.Core.Services.Factory.RulingService>();
+        services.AddSingleton<Prose.Core.Services.Spelling.SpellingService>();
         services.AddSingleton<Prose.Core.Services.Factory.MetricsReport>();
         services.AddSingleton<Prose.Core.Services.Factory.CaptureScanner>();   // F4 Captured
         services.AddSingleton<Prose.Core.Services.Factory.FactoryService>();

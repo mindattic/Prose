@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**281 tools** across **49 tool families.**
+**284 tools** across **50 tool families.**
 
 ## Families
 
@@ -55,6 +55,7 @@
 | [Ruling](#ruling) | 6 |
 | [Scene](#scene) | 4 |
 | [Species](#species) | 2 |
+| [Spelling](#spelling) | 3 |
 | [Story](#story) | 4 |
 | [Survey](#survey) | 7 |
 | [Universe](#universe) | 5 |
@@ -1965,6 +1966,29 @@ Get the full record for one species by canonical name (e.g. 'ai', 'elf', 'synthe
 List all species in the current universe. Returns canonical name (key used on Character.Species), label, and sentient flag. The five GLMZ values are: human, ai, elf, synthetic, unknown.
 
 - _(no parameters)_
+
+## Spelling
+
+<sub>`SpellingTools`</sub>
+
+### `add_dictionary_word`
+
+Add a word to the author's spelling dictionary. One entry covers its inflections: adding 'CorpoNation' also accepts CorpoNations, CorpoNation's and CorpoNations'. A word with capitals must be written with them; an all-lowercase word matches any capitalisation. A possessive is stored as its bare word. Returns the stored row.
+
+- `word` (string, required) — One word (letters and apostrophes; a hyphenated word is two words).
+- `addedBy` (string, optional) — Who added it: author (default), or session:<id>.
+
+### `list_dictionary_words`
+
+List the author's spelling dictionary: every word the Writer's spellcheck accepts beyond English and the universe's entity names. One entry covers its plural and possessive forms.
+
+- _(no parameters)_
+
+### `remove_dictionary_word`
+
+Remove a word from the author's spelling dictionary (matched without regard to case).
+
+- `word` (string, required) — The word.
 
 ## Story
 

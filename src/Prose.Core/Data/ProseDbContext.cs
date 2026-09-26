@@ -687,6 +687,7 @@ public class ProseDbContext : DbContext
 
     // The Novel Factory (RFC 0015): law, verifications, work orders, sessions, exports.
     public DbSet<Ruling>                 Rulings                 => Set<Ruling>();
+    public DbSet<SpellingWord>           SpellingWords           => Set<SpellingWord>();
     public DbSet<EntityVerification>     EntityVerifications     => Set<EntityVerification>();
     public DbSet<WorkOrder>              WorkOrders              => Set<WorkOrder>();
     public DbSet<FactorySession>         FactorySessions         => Set<FactorySession>();
@@ -1252,6 +1253,16 @@ public class ProseDbContext : DbContext
             e.HasOne<Beat>().WithOne().HasForeignKey<BeatReadReceipt>(x => x.BeatId).OnDelete(DeleteBehavior.Cascade);
         });
         // ── The Novel Factory (RFC 0015) ─────────────────────────────────────
+        // The author's spelling dictionary. One row per word; uniqueness is case-insensitive under
+        // SQL Server's collation, so "CorpoNation" and "corponation" are the same entry.
+        b.Entity<SpellingWord>(e =>
+        {
+            e.ToTable("SpellingWords");
+            e.HasKey(x => x.Id);
+            e.HasIndex(x => x.Word).IsUnique();
+            e.Property(x => x.Word).HasMaxLength(SpellingWord.MaxLength).IsRequired();
+            e.Property(x => x.AddedBy).HasMaxLength(64).IsRequired();
+        });
         b.Entity<Ruling>(e =>
         {
             e.ToTable("Rulings");

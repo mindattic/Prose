@@ -43,6 +43,13 @@
     <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="System.Speech" Version="10.0.9" />
+    <PackageReference Include="WeCantSpell.Hunspell" Version="7.0.1" />
+  </ItemGroup>
+
+  <!-- The Writer's spelling check: SCOWL en_US for Hunspell (MIT AND BSD, see the LICENSE beside it). -->
+  <ItemGroup>
+    <EmbeddedResource Include="Services\Spelling\Dictionaries\en_US.dic" LogicalName="Prose.Spelling.en_US.dic" />
+    <EmbeddedResource Include="Services\Spelling\Dictionaries\en_US.aff" LogicalName="Prose.Spelling.en_US.aff" />
   </ItemGroup>
 
 </Project>
