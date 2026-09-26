@@ -36,6 +36,42 @@ public sealed record CheckResult(string Type, bool Ok, string Detail);
 
 public sealed record CloseResult(bool Closed, IReadOnlyList<CheckResult> Checks, IReadOnlyList<Guid> AutoClosedParents, string? Refusal = null);
 
+/// <summary>A work order as a reader needs it: the paths and checks parsed out of their JSON.</summary>
+public sealed record WorkOrderView(
+    Guid Id, Guid? ParentId, string Kind, string Status, bool Blocking, string Title, string? Detail,
+    Guid? NodeId, IReadOnlyList<string> Paths, JsonArray Checks, int SortOrder,
+    DateTime OpenedAt, DateTime? ClosedAt, string? CommitHash, string? RootApprovedBy, string? EvidenceJson)
+{
+    public static WorkOrderView From(WorkOrder o)
+    {
+        List<string> paths;
+        try { paths = JsonSerializer.Deserialize<List<string>>(string.IsNullOrWhiteSpace(o.PathsJson) ? "[]" : o.PathsJson) ?? []; }
+        catch (JsonException) { paths = []; }
+        JsonArray checks;
+        try { checks = JsonNode.Parse(string.IsNullOrWhiteSpace(o.ChecksJson) ? "[]" : o.ChecksJson) as JsonArray ?? []; }
+        catch (JsonException) { checks = []; }
+        return new WorkOrderView(o.Id, o.ParentId, o.Kind, o.Status, o.Blocking, o.Title, o.Detail, o.NodeId, paths, checks,
+            o.SortOrder, o.OpenedAt, o.ClosedAt, o.CommitHash, o.RootApprovedBy, o.EvidenceJson);
+    }
+
+    /// <summary>The CLI's plain-text rendering.</summary>
+    public string Render()
+    {
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine($"{Id} [{Status}{(Blocking ? ",blocking" : "")}] {Kind}: {Title}");
+        sb.AppendLine($"  parent:   {(ParentId?.ToString() ?? "(root" + (RootApprovedBy is { } a ? $", approved by {a}" : "") + ")")}");
+        if (NodeId is { } n) sb.AppendLine($"  node:     {n}");
+        sb.AppendLine($"  opened:   {OpenedAt:u}{(ClosedAt is { } c ? $"  closed: {c:u}" : "")}{(CommitHash is { } h ? $"  commit: {h}" : "")}");
+        sb.AppendLine($"  paths:    {(Paths.Count == 0 ? "(none)" : string.Join("; ", Paths))}");
+        sb.AppendLine($"  checks:   {(Checks.Count == 0 ? "(none)" : Checks.ToJsonString())}");
+        sb.AppendLine("  detail:");
+        sb.AppendLine(string.IsNullOrWhiteSpace(Detail) ? "    (none)"
+            : string.Join(Environment.NewLine, Detail.Replace("\r\n", "\n").Split('\n').Select(l => "    " + l)));
+        if (!string.IsNullOrWhiteSpace(EvidenceJson)) sb.AppendLine($"  evidence: {EvidenceJson}");
+        return sb.ToString().TrimEnd();
+    }
+}
+
 /// <summary>
 /// Engine and author work orders — the factory's durable build tree.
 ///
@@ -106,6 +142,15 @@ public sealed class WorkOrderService(
         if (!string.IsNullOrWhiteSpace(status) && status != "all") q = q.Where(o => o.Status == status);
         if (!string.IsNullOrWhiteSpace(kind)) q = q.Where(o => o.Kind == kind);
         return TreeOrder(await q.ToListAsync(ct));
+    }
+
+    /// <summary>One order in full — title, kind, status, blocking, parent, paths, checks and detail —
+    /// whatever its status. Null when no order has that id.</summary>
+    public async Task<WorkOrderView?> GetAsync(Guid id, CancellationToken ct = default)
+    {
+        await using var db = await dbFactory.CreateDbContextAsync(ct);
+        var row = await db.WorkOrders.AsNoTracking().FirstOrDefaultAsync(o => o.Id == id, ct);
+        return row == null ? null : WorkOrderView.From(row);
     }
 
     public async Task<CloseResult> CloseAsync(Guid id, CloseInputs inputs, CancellationToken ct = default)

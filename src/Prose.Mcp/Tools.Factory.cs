@@ -19,7 +19,7 @@ namespace Prose.Mcp;
 //   factory_journal     — what happened in a window, from the ledger, the factory rows and temporal history
 //   factory_capture     — station F4's worklist: names the world does not hold, known names left untagged
 //   factory_usage       — the use-or-delete check over every [FactoryTool]
-//   work_order_add/list/close/abandon — engine and author work, closed only by Hub-validated checks
+//   work_order_add/list/get/close/abandon — engine and author work, closed only by Hub-validated checks
 //   session_end         — end the session; every decision must reference a ruling or work order
 // CLI twin: prose --factory / --order / --session (works before an MCP restart).
 // Every …Impl carries [FactoryTool]: the usage check files "Use or delete" for one no one calls.
@@ -202,6 +202,20 @@ public class FactoryTools(
     {
         var rows = await orders.ListAsync(status, kind);
         return JsonSerializer.Serialize(rows.Select(r => new { r.Id, r.ParentId, r.Kind, r.Status, r.Blocking, r.Title, r.NodeId, r.ClosedAt }), JsonOpts);
+    }
+
+    [McpServerTool, Description("One work order in full, whatever its status: title, kind, status, blocking, parent, node, paths, checks, the full detail text, and (once closed) the commit and evidence.")]
+    public Task<string> work_order_get([Description("Order id.")] string id) =>
+        hub.InvokeAsync(nameof(FactoryTools), nameof(WorkOrderGetImpl), new { id });
+
+    [FactoryTool("work_order_get", "2026-09-26", Cli = "FactoryCli --order show")]
+    public async Task<string> WorkOrderGetImpl(string id)
+    {
+        if (!Guid.TryParse(id, out var gid)) return JsonSerializer.Serialize(new { ok = false, error = "bad_id" }, JsonOpts);
+        var view = await orders.GetAsync(gid);
+        return view == null
+            ? JsonSerializer.Serialize(new { ok = false, error = "order_not_found", id }, JsonOpts)
+            : JsonSerializer.Serialize(new { ok = true, order = view }, JsonOpts);
     }
 
     [McpServerTool, Description("Close a work order. The Hub validates every check itself (commit on HEAD within declared paths, TRX tests passed, real ledger use, station passes, Hub redeployed, author confirmation relayed). Refused — and the order stays open — if any check fails.")]

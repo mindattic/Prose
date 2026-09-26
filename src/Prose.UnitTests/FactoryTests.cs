@@ -74,6 +74,34 @@ public class FactoryTests
     }
 
     [Test]
+    public async Task An_orders_full_detail_can_be_read_back_whatever_its_status()
+    {
+        var root = await orders.AddAsync(new WorkOrderDraft("engine", "Root", RootApprovedBy: "author"));
+        var detail = "Line one of the detail.\nLine two, " + new string('x', 600) + ".";
+        var child = await orders.AddAsync(new WorkOrderDraft("engine", "Child", detail, ParentId: root.Id,
+            Paths: ["src\\Prose.Core/**", "docs/CLI_COMMANDS.md"], ChecksJson: """[{"type":"commit"}]""", Blocking: true));
+
+        var view = await orders.GetAsync(child.Id);
+        Assert.That(view, Is.Not.Null);
+        Assert.That(view!.Title, Is.EqualTo("Child"));
+        Assert.That(view.Kind, Is.EqualTo("engine"));
+        Assert.That(view.Status, Is.EqualTo(WorkOrderStatus.Open));
+        Assert.That(view.Blocking, Is.True);
+        Assert.That(view.ParentId, Is.EqualTo(root.Id));
+        Assert.That(view.Detail, Is.EqualTo(detail), "the whole detail, not a summary");
+        Assert.That(view.Paths, Is.EqualTo(new[] { "src/Prose.Core/**", "docs/CLI_COMMANDS.md" }));
+        Assert.That(view.Checks.Single()!["type"]!.GetValue<string>(), Is.EqualTo("commit"));
+
+        var text = view.Render();
+        Assert.That(text, Does.Contain("Child").And.Contain(root.Id.ToString()).And.Contain("src/Prose.Core/**")
+            .And.Contain("\"commit\"").And.Contain("Line two").And.Contain("blocking"));
+
+        await orders.AbandonAsync(child.Id, "done with it");
+        Assert.That((await orders.GetAsync(child.Id))!.Status, Is.EqualTo(WorkOrderStatus.Abandoned), "a closed order is still readable");
+        Assert.That(await orders.GetAsync(Guid.NewGuid()), Is.Null);
+    }
+
+    [Test]
     public void An_engine_order_with_a_commit_check_must_declare_paths()
     {
         Assert.ThrowsAsync<ArgumentException>(() => orders.AddAsync(new WorkOrderDraft("engine", "no paths",

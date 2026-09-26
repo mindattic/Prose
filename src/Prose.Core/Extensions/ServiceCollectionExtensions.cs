@@ -438,6 +438,9 @@ public static class ServiceCollectionExtensions
         // paths, on-disk dirs, entity alt_slug). Slugs are loose keys; the
         // UUIDv7 id is the real key. CLI: prose --repair-slugs [--apply].
         services.AddSingleton<SlugRepairService>();
+        // Rename a node's Title (and optionally its Slug, through SlugRepairService).
+        // MCP rename_node; CLI prose --rename-node.
+        services.AddSingleton<NodeRenameService>();
         // JsonArchivalService and JsonPruneService retired 2026-05-08 —
         // engine/data/*.json no longer exists, so file-vs-DB verification
         // and pruning have no work to do. Files deleted, CLI verbs removed.

@@ -19,7 +19,7 @@
 > deliberate: RFC 0014 §2.4 is about a gate documented as seven checks, coded as six
 > and advertised as five, and this reference is not going to repeat that.
 
-**277 commands.** 30 deactivated. 10 cost-gated. 20 have no description in their dispatch comment (14 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
+**277 commands.** 30 deactivated. 10 cost-gated. 19 have no description in their dispatch comment (13 have neither a description nor a usage line); they are listed anyway with whatever could be recovered, because a reference that silently omits what it could not parse is worse than one that admits the hole.
 
 ### `--add-alias`
 
@@ -370,12 +370,6 @@ stamp Beat.StoryPosition — a book's reading order as a number, which is the en
 prose --beat-write-trace (--beat-id <guid> | --last) [--json] Single-source-writer RFC, step one: every LLM + embedding call one beat write made, by stage, with tokens/cost/wall time, plus the per-stage execution log and gate-skipped stages. Read-only, free.
 
 <sub>handler `BeatWriteTraceCli`</sub>
-
-### `--book`
-
-book operations — list / new / show / chapters / absorb / review / apply / export / delete. Run `dotnet run --project Prose.Blazor -- --book` (no subcommand) to see full usage.
-
-<sub>handler `BookCli`</sub>
 
 ### `--booktok`
 
@@ -938,7 +932,7 @@ prose --fact-ledger-refresh --slug <slug-or-code> — zero-LLM-cost re-run of ju
 
 ### `--factory` / `--order` / `--session` / `--ruling`
 
-_(no description in the dispatch comment — add one above the guard in `Program.cs`)_
+The Novel Factory (RFC 0015): prose --factory status|next|capture|context|journal|usage · prose --order add|list|show|close|abandon|seed (show --id <id> prints one order in full: paths, checks, detail) · prose --session end · prose --ruling add|list|supersede|violations|metrics|seed. See FactoryCli's class doc.
 
 <sub>handler `FactoryCli`</sub>
 
@@ -1378,9 +1372,9 @@ read/edit CanonDocumentSections directly — the CLI equivalent of the MCP tools
 
 <sub>handler `ListCanonSectionsCli`</sub>
 
-### `--list-plants` / `--add-plant`
+### `--list-plants` / `--add-plant` / `--update-plant`
 
-prose --plant-audit   --slug <node> [--json]   audit plant/payoff pairs prose --list-plants   --slug <node> [--json]   list all pairs prose --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail]
+prose --plant-audit   --slug <node> [--json]   audit plant/payoff pairs prose --list-plants   --slug <node> [--json]   list all pairs prose --add-plant     --slug <node> --plant "..." --payoff "..." [--cat detail] prose --update-plant  --id <guid> [--plant "..."] [--payoff "..."]   correct a registered pair
 
 <sub>handler `PlantPayoffCli`</sub>
 
@@ -1821,6 +1815,12 @@ CRUD for RelationTypeAliases — normalizes link_entities free-text RelationType
 prose --rename-entity --entity <guid|slug> --node <book-guid|slug|code> --new-name "..." [--apply --yes] Preview is the default; the apply form replaces exact full-name references in this book's descendant beats, then relabels linked ledger claims.
 
 <sub>handler `RenameEntityCli`</sub>
+
+### `--rename-node`
+
+prose --rename-node --node <id|slug|code> --title "…" [--slug <new-slug>] Set a node's Title (and optionally its Slug, pinned, references moved). Twin of MCP rename_node.
+
+<sub>handler `RenameNodeCli`</sub>
 
 ### `--rename-universe`
 

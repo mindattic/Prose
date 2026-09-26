@@ -34,6 +34,7 @@ public class NodeTools
     private readonly BookHealthService bookHealth;
     private readonly BeatSpliceService splicer;
     private readonly ReadGateService readGate;
+    private readonly NodeRenameService renamer;
 
     public NodeTools(
         NodeWorkbenchService workbench,
@@ -49,8 +50,10 @@ public class NodeTools
         HubInvoker hub,
         BookHealthService bookHealth,
         BeatSpliceService splicer,
-        ReadGateService readGate)
+        ReadGateService readGate,
+        NodeRenameService renamer)
     {
+        this.renamer = renamer;
         this.workbench = workbench;
         this.dbFactory = dbFactory;
         this.tts = tts;
@@ -166,6 +169,34 @@ public class NodeTools
         }
 
         return JsonSerializer.Serialize(new { ok = true, node_id = nodeId.Value, previous_node_id = previousId.Value }, CanonTools.JsonOpts);
+    }
+
+    [McpServerTool, Description("Rename a node (series, book, chapter or scene): set its Title and, optionally, its Slug. A new slug goes through the same path as `prose --set-node-slug --apply`: it must be slug-shaped and free in the universe, it is pinned, and every slug-carrying reference (beat audio paths, publication paths, on-disk directories) moves with it. Both are validated before anything is written; a refusal changes nothing. Does not touch beats. CLI twin: prose --rename-node --node <id|slug> --title \"…\" [--slug …].")]
+    public Task<string> RenameNode(
+        [Description("Node Guid id, slug or NodeCode.")] string nodeIdOrSlug,
+        [Description("The new title. Required.")] string title,
+        [Description("Optional new slug (lowercase words joined by hyphens). Omit to keep the current slug.")] string? newSlug = null)
+        => hub.InvokeAsync(nameof(NodeTools), nameof(RenameNodeImpl), new { nodeIdOrSlug, title, newSlug });
+
+    public async Task<string> RenameNodeImpl(string nodeIdOrSlug, string title, string? newSlug = null)
+    {
+        var nodeId = await ResolveNodeIdAsync(nodeIdOrSlug);
+        if (nodeId == null) return JsonSerializer.Serialize(new { ok = false, error = "node_not_found", nodeIdOrSlug }, CanonTools.JsonOpts);
+        try
+        {
+            var r = await renamer.RenameAsync(nodeId.Value, title, newSlug);
+            return JsonSerializer.Serialize(new
+            {
+                ok = true, id = r.Id, kind = r.Kind,
+                old_title = r.OldTitle, title = r.NewTitle,
+                old_slug = r.OldSlug, slug = r.NewSlug,
+                slug_side_effects = r.SlugSideEffects,
+            }, CanonTools.JsonOpts);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return JsonSerializer.Serialize(new { ok = false, error = "rename_refused", message = ex.Message }, CanonTools.JsonOpts);
+        }
     }
 
     /// <summary>Resolve a node reference (GUID or slug) to its id. Empty input → null.</summary>

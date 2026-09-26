@@ -23,6 +23,7 @@ namespace Prose.Cli;
 ///                     [--node X] [--paths "a/**;b.cs"] [--checks '&lt;json&gt;' | --checks-file f.json]
 ///                     [--blocking] [--sort N] [--detail "…"]
 ///   prose --order list [--status open|closed|abandoned|all] [--kind engine|author]
+///   prose --order show --id &lt;id&gt;             (title, kind, status, blocking, parent, paths, checks, full detail)
 ///   prose --order close --id &lt;id&gt; [--commit &lt;hash&gt;] [--trx &lt;path&gt;] [--author-confirmation "…"] [--note "…"]
 ///   prose --order abandon --id &lt;id&gt; --reason "…"
 ///   prose --order seed --file tree.json        (a root plus nested children, one call)
@@ -431,6 +432,14 @@ public static class FactoryCli
                         Console.WriteLine($"[order] {rows.Count} order(s).");
                         return 0;
                     }
+                    case "show":
+                    {
+                        if (!Guid.TryParse(Flag("--id"), out var id)) { Console.Error.WriteLine("[order] --id is required."); return 1; }
+                        var view = await orders.GetAsync(id);
+                        if (view == null) { Console.Error.WriteLine($"[order] no order {id}."); return 1; }
+                        Console.WriteLine(view.Render());
+                        return 0;
+                    }
                     case "close":
                     {
                         if (!Guid.TryParse(Flag("--id"), out var id)) { Console.Error.WriteLine("[order] --id is required."); return 1; }
@@ -486,7 +495,7 @@ public static class FactoryCli
                         return 0;
                     }
                     default:
-                        Console.Error.WriteLine("Usage: prose --order add|list|close|abandon|seed …");
+                        Console.Error.WriteLine("Usage: prose --order add|list|show|close|abandon|seed …");
                         return 1;
                 }
             }

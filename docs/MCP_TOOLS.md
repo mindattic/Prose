@@ -11,7 +11,7 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**279 tools** across **49 tool families.**
+**281 tools** across **49 tool families.**
 
 ## Families
 
@@ -35,14 +35,14 @@
 | [Encyclopedia](#encyclopedia) | 35 |
 | [Entity Context](#entity-context) | 7 |
 | [Entity Tag](#entity-tag) | 3 |
-| [Factory](#factory) | 11 |
+| [Factory](#factory) | 12 |
 | [Findings](#findings) | 5 |
 | [Gear Entity Crud](#gear-entity-crud) | 8 |
 | [Glossary](#glossary) | 4 |
 | [Hub](#hub) | 3 |
 | [Ledger](#ledger) | 4 |
 | [Lore Triple](#lore-triple) | 4 |
-| [Node](#node) | 30 |
+| [Node](#node) | 31 |
 | [Noun Consistency](#noun-consistency) | 2 |
 | [Obligation](#obligation) | 11 |
 | [One Shot Generation](#one-shot-generation) | 1 |
@@ -955,6 +955,12 @@ Close a work order. The Hub validates every check itself (commit on HEAD within 
 - `authorConfirmation` (string, optional) — The author's words, for an author check (trust point: relayed).
 - `note` (string, optional) — Optional note.
 
+### `work_order_get`
+
+One work order in full, whatever its status: title, kind, status, blocking, parent, node, paths, checks, the full detail text, and (once closed) the commit and evidence.
+
+- `id` (string, required) — Order id.
+
 ### `work_order_list`
 
 List work orders as a tree (depth-first, in the order the factory works them).
@@ -1437,6 +1443,14 @@ Copy-edit a node's prose in-place: adds missing '?' on questions, swaps 'says/sa
 
 - `nodeIdOrSlug` (string, required) — Node id (GUID) or slug.
 - `apply` (bool, optional) — Set to true to write the edits to the DB. Default false = dry run.
+
+### `rename_node`
+
+Rename a node (series, book, chapter or scene): set its Title and, optionally, its Slug. A new slug goes through the same path as `prose --set-node-slug --apply`: it must be slug-shaped and free in the universe, it is pinned, and every slug-carrying reference (beat audio paths, publication paths, on-disk directories) moves with it. Both are validated before anything is written; a refusal changes nothing. Does not touch beats. CLI twin: prose --rename-node --node <id|slug> --title "…" [--slug …].
+
+- `nodeIdOrSlug` (string, required) — Node Guid id, slug or NodeCode.
+- `title` (string, required) — The new title. Required.
+- `newSlug` (string, optional) — Optional new slug (lowercase words joined by hyphens). Omit to keep the current slug.
 
 ### `set_beat_gap_after`
 

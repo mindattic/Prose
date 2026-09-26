@@ -438,7 +438,7 @@ app.MapGet("/api/factory/status", async (string node, Prose.Core.Services.Factor
 });
 app.MapGet("/api/factory/orders", async (string? status, string? kind, Prose.Core.Services.Factory.WorkOrderService orders) =>
     Results.Ok((await orders.ListAsync(status ?? "open", kind))
-        .Select(o => new { o.Id, o.ParentId, o.Kind, o.Status, o.Blocking, o.Title, o.PathsJson })));
+        .Select(o => new { o.Id, o.ParentId, o.Kind, o.Status, o.Blocking, o.Title, o.PathsJson, o.ChecksJson, o.Detail })));
 app.MapPost("/api/factory/session/start", async (FactorySessionStartBody body,
     Prose.Core.Services.Factory.FactoryService factory, Prose.Core.Services.Factory.FactorySessionService sessions,
     Prose.Core.Services.Factory.FactoryUsageCheck usage) =>

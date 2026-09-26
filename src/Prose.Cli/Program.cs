@@ -886,6 +886,14 @@ if (args.Contains("--set-node-slug"))
     return;
 }
 
+// prose --rename-node --node <id|slug|code> --title "…" [--slug <new-slug>]
+// Set a node's Title (and optionally its Slug, pinned, references moved). Twin of MCP rename_node.
+if (args.Contains("--rename-node"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("RenameNodeCli", args);
+    return;
+}
+
 // prose --fix-location-aspect --character <name> --find <text> --replace <text> [--apply]
 // Corrects a character's current 'location' EntityStateEvent.NewValue via an exact,
 // single-occurrence substring replace. Dry-run by default. See FixLocationAspectCli's doc
@@ -1129,12 +1137,15 @@ if (args.Contains("--booktok"))
 //   prose --factory context --node X --unit N [--prior all] [--budget N]   (the writer's working memory, one derived file)
 //   prose --factory journal --since <ISO|6h|2d> [--until …] [--node X] [--out f]   (what happened, from the records)
 //   prose --factory usage [--report-only]   (use or delete: every factory tool against the ledger)
-//   prose --order add|list|close|abandon|seed …
+//   prose --order add|list|show|close|abandon|seed …
 //   prose --session end --file summary.json
 //   prose --ruling add|list|supersede|violations|metrics|seed …
 // Skips both spellings the universe parser accepts: "--universe <slug>" and "--universe=<slug>".
 static string? LeadingFlagIgnoringUniverse(string[] a) => a.Where((x, i) => x != "--universe"
     && !x.StartsWith("--universe=", StringComparison.Ordinal) && (i == 0 || a[i - 1] != "--universe")).FirstOrDefault();
+// The Novel Factory (RFC 0015): prose --factory status|next|capture|context|journal|usage ·
+// prose --order add|list|show|close|abandon|seed (show --id <id> prints one order in full: paths, checks, detail) ·
+// prose --session end · prose --ruling add|list|supersede|violations|metrics|seed. See FactoryCli's class doc.
 if (LeadingFlagIgnoringUniverse(args) is "--factory" or "--order" or "--session" or "--ruling")
 {
     Environment.ExitCode = await HubCliClient.ForwardAsync("FactoryCli", args);
