@@ -629,11 +629,16 @@ public class DuplicateEntityScanService(IDbContextFactory<ProseDbContext> dbFact
     private static async Task<List<string>> RelinkAndCaptureAsync(
         ProseDbContext db, string table, string column, string pkColumn, Guid winnerId, Guid loserId, CancellationToken ct)
     {
+        // OUTPUT … INTO a table variable, never a bare OUTPUT: SQL Server refuses a bare OUTPUT
+        // clause on a table with an enabled trigger, and Beats has one (TR_Beats_TextHashDriftGuard).
+        // Every merge whose loser was a beat's PlaceEntityId failed on it (found live 2026-09-26).
         var sql = $"""
+            DECLARE @changed TABLE ([Value] nvarchar(64));
             UPDATE [dbo].[{table}]
             SET [{column}] = @winner
-            OUTPUT CONVERT(nvarchar(64), inserted.[{pkColumn}])
-            WHERE [{column}] = @loser
+            OUTPUT CONVERT(nvarchar(64), inserted.[{pkColumn}]) INTO @changed([Value])
+            WHERE [{column}] = @loser;
+            SELECT [Value] FROM @changed;
             """;
         var pars = new object[] { new SqlParameter("@winner", winnerId), new SqlParameter("@loser", loserId) };
         return await db.Database.SqlQueryRaw<string>(sql, pars).ToListAsync(ct);
