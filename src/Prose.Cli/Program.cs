@@ -1598,6 +1598,16 @@ if (args.Contains("--create-vocabulary"))
     return;
 }
 
+//   prose --create-archetype --name "<name>" [--category …] [--description …] [--behavioral-signature …]
+//     [--under-stress …] [--at-rest …] [--will-always a;b] [--will-never a;b] [--unless a;b] [--tags a,b]
+// Create or update an archetype — the CLI twin of MCP create_archetype. Same gap again:
+// ArchetypeRepository.Save existed with nothing exposing it.
+if (args.Contains("--create-archetype"))
+{
+    Environment.ExitCode = await HubCliClient.ForwardAsync("CreateArchetypeCli", args);
+    return;
+}
+
 //   prose --set-node-version (--slug <slug> | --id <id>) --version <N>
 // Directly sets Node.Version — the counter DocxExportService reads as nextVersion = Version + 1.
 // For continuing a book's real version lineage after its local export folder was reset (e.g. a

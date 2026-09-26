@@ -11,12 +11,13 @@
 > All tools are MCP-prefixed `mcp__prose__<name>` by the client. Most return a
 > JSON string; the canon is the SQL database, scoped to the active Universe.
 
-**284 tools** across **50 tool families.**
+**285 tools** across **51 tool families.**
 
 ## Families
 
 | Family | Tools |
 | --- | --- |
+| [Archetype](#archetype) | 1 |
 | [Barks Export](#barks-export) | 1 |
 | [Beat Archive](#beat-archive) | 1 |
 | [Bible](#bible) | 3 |
@@ -67,6 +68,25 @@
 | [World Entity Crud](#world-entity-crud) | 6 |
 | [World Modelling](#world-modelling) | 11 |
 | [Writing](#writing) | 3 |
+
+## Archetype
+
+<sub>`ArchetypeTools`</sub>
+
+### `create_archetype`
+
+Create or update an archetype: an occupational or social role in the world (street roles such as Stitcher, Channeler, Read, Psyker, Ghost, Street Samurai and Splicer; or a behavioural type). An existing name updates that record. Omitted scalar fields are LEFT UNCHANGED. willAlways, willNever and unless split on ';' (their items contain commas); tags split on ','. A list given replaces the old one; '[]' clears it. Returns the record as read back.
+
+- `name` (string, required) — Archetype name. Required.
+- `category` (string, optional) — Category, e.g. 'street role', 'combat', 'social'.
+- `description` (string, optional) — What the role is.
+- `behavioralSignature` (string, optional) — How it shows in behaviour.
+- `underStress` (string, optional) — Under stress.
+- `atRest` (string, optional) — At rest.
+- `willAlways` (string, optional) — ';'-separated things it will always do.
+- `willNever` (string, optional) — ';'-separated things it will never do.
+- `unless` (string, optional) — ';'-separated exceptions.
+- `tags` (string, optional) — ','-separated tags.
 
 ## Barks Export
 
