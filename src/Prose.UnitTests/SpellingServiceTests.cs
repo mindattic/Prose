@@ -136,4 +136,16 @@ public class SpellingServiceTests
         var english = await svc.SuggestAsync("recieve");
         Assert.That(english, Does.Contain("receive"));
     }
+
+    [Test]
+    public async Task Suggestions_IncludeTheWorldsNames()
+    {
+        var universe = Guid.NewGuid();
+        await using (var db = await dbFactory.CreateDbContextAsync())
+        {
+            db.Entities.Add(new Entity { UniverseId = universe, EntityType = "technology", Name = "Credstick", Slug = "credstick" });
+            await db.SaveChangesAsync();
+        }
+        Assert.That((await svc.SuggestAsync("credstik", universe))[0], Is.EqualTo("credstick"));
+    }
 }

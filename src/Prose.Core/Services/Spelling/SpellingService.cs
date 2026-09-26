@@ -68,15 +68,18 @@ public sealed class SpellingService(IDbContextFactory<ProseDbContext> dbFactory)
     public async Task<bool> IsKnownAsync(string word, Guid? bookOrUniverseId = null, CancellationToken ct = default) =>
         IsKnown(word, await AuthorWordsAsync(ct), await WorldWordsAsync(bookOrUniverseId, ct));
 
-    /// <summary>Corrections for a misspelled word, best first: the author's own words that are a
-    /// letter or two away, then Hunspell's suggestions. Empty when nothing is close.</summary>
-    public async Task<IReadOnlyList<string>> SuggestAsync(string word, int max = 6, CancellationToken ct = default)
+    /// <summary>Corrections for a misspelled word, best first: the author's own words and the
+    /// world's names that are a letter or two away, then Hunspell's suggestions. Empty when nothing
+    /// is close.</summary>
+    public async Task<IReadOnlyList<string>> SuggestAsync(
+        string word, Guid? bookOrUniverseId = null, int max = 6, CancellationToken ct = default)
     {
         var w = Normalize(word);
         if (w.Length == 0) return [];
         var author = await AuthorWordsAsync(ct);
+        var world = await WorldWordsAsync(bookOrUniverseId, ct);
 
-        var own = author.Entries
+        var own = author.Entries.Concat(world)
             .Select(e => (e, d: Distance(e.ToLowerInvariant(), w.ToLowerInvariant())))
             .Where(x => x.d > 0 && x.d <= (w.Length <= 4 ? 1 : 2))
             .OrderBy(x => x.d).ThenBy(x => x.e, StringComparer.Ordinal)
