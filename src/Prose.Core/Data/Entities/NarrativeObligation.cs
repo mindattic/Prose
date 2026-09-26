@@ -22,6 +22,9 @@ namespace Prose.Core.Data.Entities;
 /// </summary>
 public class NarrativeObligation
 {
+    /// <summary>Column limit for Description — room for a plant pair's "plant → payoff".</summary>
+    public const int MaxDescriptionLength = 4000;
+
     public Guid Id { get; set; } = Guid.CreateVersion7();
 
     /// <summary>The BOOK root — same scoping as <c>BeatContext.NodeId</c>, so a promise made in

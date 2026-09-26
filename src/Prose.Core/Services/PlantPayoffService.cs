@@ -124,6 +124,9 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
         Guid? payoffBeatId = null,
         CancellationToken ct = default)
     {
+        CheckLength("plantDescription", plantDesc);
+        CheckLength("payoffDescription", payoffDesc);
+
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         // IgnoreQueryFilters: an explicit id, not an ambient scope (FindAsync applies the universe filter).
         var node = await db.Nodes.IgnoreQueryFilters().FirstOrDefaultAsync(n => n.Id == nodeId, ct)
@@ -219,6 +222,7 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
 
     public async Task SetTransparencyAsync(Guid id, bool isTransparent, string? note, CancellationToken ct = default)
     {
+        if (!string.IsNullOrWhiteSpace(note)) CheckLength("note", note);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var pp = await db.PlantPayoffs.FindAsync(new object[] { id }, ct)
             ?? throw new InvalidOperationException($"PlantPayoff {id} not found.");
@@ -237,6 +241,8 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
     {
         if (string.IsNullOrWhiteSpace(plantDesc) && string.IsNullOrWhiteSpace(payoffDesc))
             throw new ArgumentException("Give a new plant description, a new payoff description, or both.");
+        if (!string.IsNullOrWhiteSpace(plantDesc)) CheckLength("plantDescription", plantDesc);
+        if (!string.IsNullOrWhiteSpace(payoffDesc)) CheckLength("payoffDescription", payoffDesc);
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var pp = await db.PlantPayoffs.FindAsync(new object[] { id }, ct)
@@ -257,6 +263,17 @@ public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
         }
         await db.SaveChangesAsync(ct);
         return pp;
+    }
+
+    /// <summary>Register and update share one limit, checked before the write, so an over-long
+    /// description is a clear error naming the field — never SQL's opaque "error occurred while
+    /// saving the entity changes". The pair's obligation ("plant → payoff") always fits:
+    /// NarrativeObligation.MaxDescriptionLength holds two full descriptions.</summary>
+    private static void CheckLength(string field, string value)
+    {
+        var n = value.Trim().Length;
+        if (n > PlantPayoff.MaxDescriptionLength)
+            throw new ArgumentException($"{field} is {n} characters; the limit is {PlantPayoff.MaxDescriptionLength}.");
     }
 
     public async Task<PlantPayoffAudit> AuditAsync(Guid nodeId, CancellationToken ct = default)

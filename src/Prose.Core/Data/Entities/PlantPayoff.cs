@@ -7,6 +7,9 @@ namespace Prose.Core.Data.Entities;
 /// </summary>
 public class PlantPayoff
 {
+    /// <summary>Column limit for PlantDescription, PayoffDescription and TransparencyNote.</summary>
+    public const int MaxDescriptionLength = 1500;
+
     public Guid   Id                { get; set; } = Guid.NewGuid();
     public Guid   UniverseId        { get; set; }
     public Guid   NodeId          { get; set; }

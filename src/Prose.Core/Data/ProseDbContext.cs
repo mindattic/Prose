@@ -953,10 +953,14 @@ public class ProseDbContext : DbContext
         b.Entity<PlantPayoff>(e =>
         {
             e.HasKey(x => x.Id);
-            e.Property(x => x.PlantDescription).HasMaxLength(500).IsRequired();
-            e.Property(x => x.PayoffDescription).HasMaxLength(500).IsRequired();
+            // 1500, not 500 (order 01a0dc5e-8798): a real description runs a few hundred characters,
+            // and the pair's plant obligation carries "plant → payoff", which overflowed its own
+            // 500-char Description and surfaced only as "An error occurred while saving the entity
+            // changes". PlantPayoffService validates against these limits before it writes.
+            e.Property(x => x.PlantDescription).HasMaxLength(PlantPayoff.MaxDescriptionLength).IsRequired();
+            e.Property(x => x.PayoffDescription).HasMaxLength(PlantPayoff.MaxDescriptionLength).IsRequired();
             e.Property(x => x.Category).HasMaxLength(50).IsRequired();
-            e.Property(x => x.TransparencyNote).HasMaxLength(500);
+            e.Property(x => x.TransparencyNote).HasMaxLength(PlantPayoff.MaxDescriptionLength);
             e.HasOne(x => x.Node).WithMany()
                 .HasForeignKey(x => x.NodeId).OnDelete(DeleteBehavior.Cascade);
             e.HasOne(x => x.PlantBeat).WithMany()
@@ -3297,7 +3301,9 @@ public class ProseDbContext : DbContext
         {
             e.HasKey(x => x.Id);
             e.Property(x => x.Kind).HasMaxLength(32).IsRequired();
-            e.Property(x => x.Description).HasMaxLength(500).IsRequired();
+            // 4000: a plant obligation's Description is "plant → payoff", two PlantPayoff
+            // descriptions of up to 1500 each (order 01a0dc5e-8798).
+            e.Property(x => x.Description).HasMaxLength(NarrativeObligation.MaxDescriptionLength).IsRequired();
             e.Property(x => x.Provenance).HasMaxLength(20).IsRequired();
             e.Property(x => x.OriginQuote).HasMaxLength(400);
             e.Property(x => x.OriginTextHash).HasMaxLength(80);
