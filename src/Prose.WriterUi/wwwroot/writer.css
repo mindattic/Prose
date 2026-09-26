@@ -1219,3 +1219,10 @@ button.primary:disabled { background: var(--color-disabled-bg); border-color: va
     padding-top: var(--space-2);
     border-top: 1px solid var(--color-border);
 }
+
+/* Prose's own spellcheck (writer.js, Spelling). A CSS Custom Highlight, not markup: nothing is
+   added to the beat, and the squiggle follows the text as it is edited. */
+::highlight(prose-misspelled) {
+    text-decoration: underline wavy #d9534f;
+    text-decoration-skip-ink: none;
+}

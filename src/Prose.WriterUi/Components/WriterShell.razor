@@ -6,6 +6,7 @@
    EntityLinkModal, so that adding a pane or a panel does not mean growing one file without end. *@
 @inject WriterService Writer
 @inject WikiService Wiki
+@inject Prose.Core.Services.Spelling.SpellingService Spelling
 @inject ReadAloudUiService ReadAloud
 @inject IJSRuntime JS
 @implements IAsyncDisposable
@@ -155,6 +156,7 @@
                              TextChanged="OnDraftChanged"
                              Mode="mode"
                              Label="@($"Beat {beat.Number} text")"
+                             BookId="book?.Id"
                              ContextMenuRequested="OnContextMenuAsync"
                              LinkRequested="AddEntityAsync"
                              PasteNote="msg => tagNote = msg"
@@ -240,7 +242,8 @@
 
 @if (settingsOpen)
 {
-    <SettingsPanel OnClose="() => settingsOpen = false" />
+    <SettingsPanel OnClose="() => settingsOpen = false"
+                   DictionaryChanged="SpellRecheckAsync" />
 }
 
 @if (gate is not null)
@@ -955,11 +958,34 @@
     /// the author clicked rather than on whatever the selection has become by the time they pick.
     /// Opening the menu moves focus, which is enough to lose a selection.</para>
     /// </summary>
-    private Task OnContextMenuAsync(ProseEditor.ContextTarget target)
+    private async Task OnContextMenuAsync(ProseEditor.ContextTarget target)
     {
         contextAt = (target.X, target.Y);
 
         var items = new List<ContextMenu.Item>();
+
+        // Spelling first: a squiggle is why the author right-clicked. Corrections, then the
+        // author's own dictionary (the SpellingWords table, also in Settings and prose --dictionary).
+        if (!string.IsNullOrEmpty(target.SpellWord))
+        {
+            var word = target.SpellWord;
+            IReadOnlyList<string> fixes;
+            try { fixes = await Spelling.SuggestAsync(word, book?.Id, max: 5); }
+            catch (Exception) { fixes = []; }
+
+            if (fixes.Count == 0)
+                items.Add(new ContextMenu.Item("No suggestions", () => Task.CompletedTask, Disabled: true,
+                    Hint: Shorten(word, 24)));
+            for (var i = 0; i < fixes.Count; i++)
+            {
+                var fix = fixes[i];
+                items.Add(new ContextMenu.Item(fix, () => JsVoidAsync("proseEditor.spellReplace", fix),
+                    Hint: i == 0 ? $"for “{Shorten(word, 18)}”" : null));
+            }
+            items.Add(new ContextMenu.Item("Add to dictionary", () => AddToDictionaryAsync(word),
+                Hint: Shorten(word, 24)));
+            items.Add(ContextMenu.Item.Separator());
+        }
 
         if (target.HasSelection)
         {
@@ -1023,7 +1049,23 @@
             .Select(i => i.IsSeparator ? i : i with { Invoke = Rendering(i.Invoke) })
             .ToList();
         StateHasChanged();
-        return Task.CompletedTask;
+    }
+
+    private Task SpellRecheckAsync() => JsVoidAsync("proseEditor.spellRecheck");
+
+    /// <summary>"Add to dictionary": into the SpellingWords table, then every beat is checked again
+    /// (one entry covers the word's plural and possessive forms too).</summary>
+    private async Task AddToDictionaryAsync(string word)
+    {
+        try
+        {
+            var r = await Spelling.AddAsync(word, "writer");
+            tagNote = r.Added
+                ? $"Added “{r.Row.Word}” to the dictionary."
+                : $"“{word}” is {r.Note}.";
+        }
+        catch (ArgumentException ex) { tagNote = $"Not added: {ex.Message}"; }
+        await JsVoidAsync("proseEditor.spellRecheck");
     }
 
     private Func<Task> Rendering(Func<Task> act) => async () =>

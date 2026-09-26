@@ -146,6 +146,91 @@ window.proseEditor = (() => {
         if (host) call('OnEditorInput', serialize(host));
     }
 
+    // ── Spelling ───────────────────────────────────────────────────────────
+    //
+    // Prose's own spellcheck (SpellingService in the Hub: Hunspell, the author's dictionary, the
+    // world's entity names). Chromium's is off on the editor, so there is one dictionary: the one
+    // the author edits from the menu, Settings, the CLI and MCP. The squiggles are a CSS Custom
+    // Highlight, ranges over the text, so nothing is ever added to the beat's markup.
+
+    const SPELL_HIGHLIGHT = 'prose-misspelled';
+    const WORD_RE = /[\p{L}\p{M}]+(?:['’][\p{L}\p{M}]+)*/gu;
+    let spellVerdicts = new Map();   // word → true when misspelled, false when known
+    let spellTimer = 0;
+    let spellTarget = null;          // { range, word } the menu was opened on
+
+    function spellSupported() {
+        return typeof CSS !== 'undefined' && CSS.highlights && typeof Highlight !== 'undefined';
+    }
+
+    /** The editor's text nodes, less entity chips: a linked name is a name, not a typo. */
+    function spellTextNodes(root) {
+        const out = [];
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+            acceptNode: n => n.parentElement && n.parentElement.closest('.ent')
+                ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+        });
+        for (let n = walker.nextNode(); n; n = walker.nextNode()) out.push(n);
+        return out;
+    }
+
+    function scheduleSpell() {
+        clearTimeout(spellTimer);
+        spellTimer = setTimeout(runSpell, 450);
+    }
+
+    /** Ask the Hub about words not seen before, then paint every misspelled one. */
+    async function runSpell() {
+        const el = host;
+        if (!el || !dotnet || !spellSupported()) return;
+        const unknown = new Set();
+        for (const n of spellTextNodes(el))
+            for (const m of (n.textContent || '').matchAll(WORD_RE))
+                if (!spellVerdicts.has(m[0])) unknown.add(m[0]);
+        if (unknown.size) {
+            let bad;
+            try { bad = await dotnet.invokeMethodAsync('CheckSpelling', [...unknown]); }
+            catch { return; }   // disposed or disconnected: leave the squiggles as they were
+            if (el !== host) return;
+            const badSet = new Set(bad || []);
+            for (const w of unknown) spellVerdicts.set(w, badSet.has(w));
+        }
+        paintSpell(el);
+    }
+
+    function paintSpell(el) {
+        const ranges = [];
+        for (const n of spellTextNodes(el)) {
+            for (const m of (n.textContent || '').matchAll(WORD_RE)) {
+                if (spellVerdicts.get(m[0]) !== true) continue;
+                const r = document.createRange();
+                r.setStart(n, m.index);
+                r.setEnd(n, m.index + m[0].length);
+                ranges.push(r);
+            }
+        }
+        CSS.highlights.set(SPELL_HIGHLIGHT, new Highlight(...ranges));
+    }
+
+    /** The misspelled word a range starts in, with a range over exactly that word; else null. */
+    function misspelledAt(range) {
+        const node = range && range.startContainer;
+        if (!node || node.nodeType !== Node.TEXT_NODE || !host || !host.contains(node)) return null;
+        if (node.parentElement && node.parentElement.closest('.ent')) return null;
+        const text = node.textContent || '';
+        const at = range.startOffset;
+        for (const m of text.matchAll(WORD_RE)) {
+            if (m.index > at) break;
+            if (at > m.index + m[0].length) continue;
+            if (spellVerdicts.get(m[0]) !== true) return null;
+            const r = document.createRange();
+            r.setStart(node, m.index);
+            r.setEnd(node, m.index + m[0].length);
+            return { range: r, word: m[0] };
+        }
+        return null;
+    }
+
     // ── Selection ──────────────────────────────────────────────────────────
 
     /** The live selection's range when it is inside the editor, else null. */
@@ -304,6 +389,10 @@ window.proseEditor = (() => {
 
         const span = selectionSpan();
 
+        // The word under the pointer, or failing that the one the caret is in (Shift+F10).
+        const atPoint = document.caretRangeFromPoint ? document.caretRangeFromPoint(x, y) : null;
+        spellTarget = misspelledAt(atPoint) || misspelledAt(liveRange());
+
         call('OnContextMenu', {
             x: Math.round(x),
             y: Math.round(y),
@@ -314,6 +403,7 @@ window.proseEditor = (() => {
             prefix: span ? span.prefix : null,
             suffix: span ? span.suffix : null,
             selectedText: span ? window.getSelection().toString() : null,
+            spellWord: spellTarget ? spellTarget.word : null,
         });
     }
 
@@ -969,6 +1059,9 @@ window.proseEditor = (() => {
             trackSelection();
             watchCards();
 
+            spellTarget = null;
+            scheduleSpell();
+
             // init() can be asked twice for the same element (a JS error resets the component's
             // wiring flag). Listeners are per element, so a second set would fire every handler
             // twice — including the paste handler, which would paste twice.
@@ -980,6 +1073,7 @@ window.proseEditor = (() => {
             try { document.execCommand('styleWithCSS', false, false); } catch { /* older engines */ }
 
             element.addEventListener('input', notifyChanged);
+            element.addEventListener('input', scheduleSpell);
             element.addEventListener('paste', onPaste);
 
             // The context menu. AreDefaultContextMenusEnabled is false in the Writer host, so this
@@ -1059,6 +1153,34 @@ window.proseEditor = (() => {
             contextTarget = null;
             lastRange = null;
             savedRange = null;
+            spellTarget = null;
+            scheduleSpell();
+        },
+
+        /**
+         * Replace the misspelled word the menu was opened on. Through insertText, so Ctrl+Z
+         * undoes it like typing would. Refused if the text under the word has changed since.
+         */
+        spellReplace(replacement) {
+            const t = spellTarget;
+            spellTarget = null;
+            if (!t || !host || !host.contains(t.range.startContainer)) return false;
+            if (t.range.toString() !== t.word) return false;
+            focusEditor();
+            select(t.range);
+            if (!document.execCommand('insertText', false, replacement)) {
+                t.range.deleteContents();
+                t.range.insertNode(document.createTextNode(replacement));
+            }
+            notifyChanged();
+            scheduleSpell();
+            return true;
+        },
+
+        /** The dictionary changed: forget every verdict and check the beat again. */
+        spellRecheck() {
+            spellVerdicts = new Map();
+            scheduleSpell();
         },
 
         /**

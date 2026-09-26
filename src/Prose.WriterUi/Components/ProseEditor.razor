@@ -12,6 +12,7 @@
 
 @inject IJSRuntime JS
 @inject WikiService Wiki
+@inject Prose.Core.Services.Spelling.SpellingService Spelling
 @implements IAsyncDisposable
 
 @* The shortcuts, where a screen reader will find them: announced as the editor's description when
@@ -33,7 +34,10 @@
 
 @if (Mode == EditorMode.Display)
 {
-    <article class="prose" contenteditable="true" spellcheck="true"
+    @* spellcheck="false": the squiggles are Prose's own (SpellingService, over the author's
+       dictionary), drawn by writer.js. Chromium's checker has its own dictionary, and two
+       checkers that disagree are worse than one. *@
+    <article class="prose" contenteditable="true" spellcheck="false"
              role="textbox" aria-multiline="true" aria-label="@Label"
              aria-describedby="prose-editor-keys" @ref="editorRef"></article>
 }
@@ -74,11 +78,14 @@ else
     /// <param name="EntityGuid">Null unless the click landed on an entity chip.</param>
     /// <param name="Quote">Null unless something was selected. Beat markup, like
     /// <see cref="SelectedSpan"/>.</param>
+    /// <param name="SpellWord">The misspelled word the click landed on (or the caret is in), else
+    /// null.</param>
     public sealed record ContextTarget(
         int X, int Y,
         string? EntityGuid, string? EntityRepo, string? EntityText,
         string? Quote, string? Prefix, string? Suffix,
-        string? SelectedText)
+        string? SelectedText,
+        string? SpellWord = null)
     {
         public bool HasSelection => !string.IsNullOrWhiteSpace(SelectedText);
         public bool OnEntity => !string.IsNullOrEmpty(EntityGuid);
@@ -206,6 +213,18 @@ else
 
     [JSInvokable]
     public Task OnPasteNote(string message) => PasteNote.InvokeAsync(message);
+
+    /// <summary>The book, so its universe's entity names count as spelled right.</summary>
+    [Parameter] public Guid? BookId { get; set; }
+
+    /// <summary>The misspelled words among <paramref name="words"/>; writer.js draws the squiggles.
+    /// A checker fault flags nothing rather than everything.</summary>
+    [JSInvokable]
+    public async Task<IReadOnlyList<string>> CheckSpelling(string[] words)
+    {
+        try { return await Spelling.MisspelledAsync(words, BookId); }
+        catch (Exception) { return []; }
+    }
 
     /// <summary>The hover card's content. Null when the chip points at nothing.</summary>
     [JSInvokable]
