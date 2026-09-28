@@ -45,6 +45,42 @@ A Audio for the book. `prose --factory status --node <book>` shows the matrix.
 - **Write a new book:** create the book and chapters; plan beats (title + description); write each
   chapter in-session with the full prior prose and the cast's records in view; capture new names and
   facts into the world; then heal it as above.
+- **Rebuild a written book** (structure, not polish: cut, expand, re-slot, deepen, change the
+  ending). The story itself is never stored anywhere but the beats; the rebuild adds no outline,
+  spine or registry. Apply the whole-book checklist (CraftGuide §12, `SS-CRAFT-NOVEL`) on every
+  read.
+  0. **Clone and fence.** `--archive-book` the original, then `--clone-book --slug <orig> --title
+     "<same title>" --book-code <CODE>2 --draft`. Assert that beats and words match. Rulings are not
+     copied: re-seed the original's book rulings (`--ruling seed --node <CODE>2 --file …`) and
+     confirm F4 and the metrics match the original. Create a `<CODE>2CUTS` book with one chapter to
+     hold cuts. Open an author order on the clone (`work_order_add kind:author nodeIdOrSlug:<CODE>2`)
+     so it is on the line. The original stays frozen.
+  1. **Diagnosis read.** Read the clone front to back with `markRead`. File structural failures
+     against the checklist as read notes on the beat where they show. Run `get_entity_beat_mentions`
+     for every named character.
+  2. **Gate G1 (author).** Propose the restructure: cuts with word counts, new scenes, merged or
+     deepened characters, re-slotted chapters, the ending. Only the decisions the author approves
+     persist, each as a `record_ruling` on the clone.
+  3. **Restructure.** Create and re-slot chapters (`create_chapter`, `--reparent-node --after-slug`).
+     Move each cut beat to the cuts book with `--move-beat-to-node`, which moves the same row so the
+     text is kept byte for byte. Insert new scenes as planned beats: a title and a description of
+     what the scene does, including what it plants or pays off. Check the counts: book beats plus
+     cuts beats equal the original beats plus the planned beats inserted.
+  4. **Write and revise.** Work in reading order, in session, with `factory_context(priorUnits: all)`.
+     Write planned beats. Splice revisions with a dry run first, against the raw tagged text, by
+     hand. Capture new names and facts into entities and read each one back.
+  5. **Heal** as above, until F1–F6 pass on every unit, metrics hold and `law_violations` is 0.
+  6. **Gate G2 (author).** The author reads and decides whether to press. No audio unless the author
+     asks for it.
+
+  **Every later change** to prose, entities or facts in any book follows the same rules:
+  - archive before editing prose;
+  - splice with a dry run first;
+  - record every decision (`record_ruling` or the entity record) and read it back;
+  - never press over an unread beat.
+
+  The read gate marks a beat unread when its text changes, when it moves, or when an entity it
+  mentions changes. Re-read the flagged beats before pressing.
 
 ## Transport-neutral operation envelope
 
