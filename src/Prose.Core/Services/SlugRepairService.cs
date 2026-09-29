@@ -284,13 +284,13 @@ public class SlugRepairService(
                 {
                     if (apply)
                     {
-                        if (b.AudioPath?.StartsWith(oldPrefix) == true) b.AudioPath = newPrefix + b.AudioPath[oldPrefix.Length..];
-                        if (b.GapAfterAudioPath?.StartsWith(oldPrefix) == true) b.GapAfterAudioPath = newPrefix + b.GapAfterAudioPath[oldPrefix.Length..];
+                        if (b.AudioPath?.StartsWith(oldPrefix, StringComparison.Ordinal) == true) b.AudioPath = newPrefix + b.AudioPath[oldPrefix.Length..];
+                        if (b.GapAfterAudioPath?.StartsWith(oldPrefix, StringComparison.Ordinal) == true) b.GapAfterAudioPath = newPrefix + b.GapAfterAudioPath[oldPrefix.Length..];
                     }
                 }
                 if (beats.Count > 0) effects.Add($"{beats.Count} beat audio path(s)");
 
-                if (n.CombinedAudioPath?.StartsWith(oldPrefix) == true)
+                if (n.CombinedAudioPath?.StartsWith(oldPrefix, StringComparison.Ordinal) == true)
                 {
                     if (apply) n.CombinedAudioPath = newPrefix + n.CombinedAudioPath[oldPrefix.Length..];
                     effects.Add("CombinedAudioPath");

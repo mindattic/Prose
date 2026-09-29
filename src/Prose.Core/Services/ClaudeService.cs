@@ -23,8 +23,13 @@ public class ClaudeService : ILlmService
         this.log      = log;
     }
 
+    /// <summary>True only when a generate call can proceed: every Generate* method refuses on an
+    /// empty <see cref="SettingsService.ApiKey"/> (and the document call sends that key itself),
+    /// and the text calls go out on Legion's own "claude" key (seeded from the same setting in
+    /// VotingConfiguration). Asking Legion alone reported "configured" for a provider whose
+    /// every call then threw "API key not configured", so the router never fell back.</summary>
     public Task<bool> IsConfiguredAsync()
-        => Task.FromResult(legion.IsProviderConfigured("claude"));
+        => Task.FromResult(!string.IsNullOrWhiteSpace(settings.ApiKey) && legion.IsProviderConfigured("claude"));
 
     public async Task<string> GenerateAsync(
         string system,

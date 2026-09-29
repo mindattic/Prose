@@ -265,7 +265,7 @@ var app = builder.Build();
 // than refusing to start, and this must stay loud, not silently logged and ignored.
 await using (var migrationScope = app.Services.CreateAsyncScope())
 {
-    var migrationDb = await migrationScope.ServiceProvider
+    await using var migrationDb = await migrationScope.ServiceProvider
         .GetRequiredService<IDbContextFactory<ProseDbContext>>().CreateDbContextAsync();
     var pending = (await migrationDb.Database.GetPendingMigrationsAsync()).ToList();
     if (pending.Count > 0)

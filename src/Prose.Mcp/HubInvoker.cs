@@ -26,7 +26,7 @@ public sealed class HubInvoker(IHttpClientFactory httpFactory, IUniverseContext 
             // resident services; a process-local switch otherwise leaves the Hub on its default
             // universe and can make a valid MCP call mutate the wrong corpus.
             var universe = universeContext.IsExplicitlyScoped ? universeContext.CurrentSlug : null;
-            var resp = await http.PostAsJsonAsync("api/mcp-invoke", new
+            using var resp = await http.PostAsJsonAsync("api/mcp-invoke", new
             {
                 toolClass,
                 method,
@@ -38,14 +38,20 @@ public sealed class HubInvoker(IHttpClientFactory httpFactory, IUniverseContext 
 
             // `switch_universe` executes in the Hub process, but the MCP session also needs to
             // remember the selection so every later forward carries the same explicit scope.
+            // Only when the Hub accepted the slug: an unknown slug (or a Hub error) answered with an
+            // error but still switched this session locally, scoping every later call to it.
             if (string.Equals(method, "SwitchUniverseImpl", StringComparison.Ordinal)
-                && args is not null)
+                && args is not null && resp.IsSuccessStatusCode)
             {
                 try
                 {
+                    using var reply = System.Text.Json.JsonDocument.Parse(body);
+                    var accepted = reply.RootElement.ValueKind == System.Text.Json.JsonValueKind.Object
+                        && reply.RootElement.TryGetProperty("ok", out var okProp)
+                        && okProp.ValueKind == System.Text.Json.JsonValueKind.True;
                     using var doc = System.Text.Json.JsonDocument.Parse(
                         System.Text.Json.JsonSerializer.Serialize(args));
-                    if (doc.RootElement.TryGetProperty("slug", out var slug)
+                    if (accepted && doc.RootElement.TryGetProperty("slug", out var slug)
                         && slug.ValueKind == System.Text.Json.JsonValueKind.String)
                         universeContext.UseUniverseBySlug(slug.GetString()!);
                 }

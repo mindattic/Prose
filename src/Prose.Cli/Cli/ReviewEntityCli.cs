@@ -30,6 +30,12 @@ public static class ReviewEntityCli
 
         int ballots = int.TryParse(ballotStr, out var b) && b > 0 ? b : 30;
         int prose   = int.TryParse(proseStr,  out var p) && p >= 0 ? p : 5;
+        // A bad count used to fall back to the default (30 billed ballots per entity) without a word.
+        if ((ballotStr != null && !(int.TryParse(ballotStr, out var bc) && bc > 0)) || (proseStr != null && !(int.TryParse(proseStr, out var pc) && pc >= 0)))
+        {
+            Console.Error.WriteLine($"[review-entity] --ballots expects a whole number > 0 and --prose a whole number >= 0 (got '{ballotStr}', '{proseStr}').");
+            return 1;
+        }
 
         // SS-A44: entity ballot panels are disabled by default.
         var votingGate = sp.GetRequiredService<VotingGate>();

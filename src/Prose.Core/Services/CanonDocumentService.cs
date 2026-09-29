@@ -188,7 +188,7 @@ public class CanonDocumentService
         var assembled = AssembleDocument(doc.Title ?? documentType, doc.Sections);
         var checksum  = ComputeChecksum(assembled);
 
-        var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
+        var today = DateTime.UtcNow.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
         var fmBase = await typeRegistry.GetFrontMatterAsync(documentType, universeId, ct);
         var fm     = $"---\n{fmBase}updated: {today}\n---\n\n";
         var withHeader = $"{fm}<!-- GENERATED — do not hand-edit. Regenerate with: prose --generate-canon-md --type {documentType} -->\n\n{assembled}";

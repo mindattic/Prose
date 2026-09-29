@@ -297,17 +297,21 @@
     {
         if (wired) return;
         wired = true;
-        try { await JS.InvokeVoidAsync("proseModal.open", dialog); }
+        try { trap = await JS.InvokeAsync<int>("proseModal.open", dialog); }
         catch (JSDisconnectedException) { }
         catch (JSException) { }
     }
+
+    /// <summary>This panel's own focus trap, so closing it can never release another's.</summary>
+    private int trap;
 
     private Task OnKeyDown(KeyboardEventArgs e)
         => e.Key == "Escape" ? OnClose.InvokeAsync() : Task.CompletedTask;
 
     public async ValueTask DisposeAsync()
     {
-        try { await JS.InvokeVoidAsync("proseModal.close"); }
+        if (trap == 0) return;
+        try { await JS.InvokeVoidAsync("proseModal.close", trap); }
         catch (JSDisconnectedException) { }
         catch (JSException) { }
     }

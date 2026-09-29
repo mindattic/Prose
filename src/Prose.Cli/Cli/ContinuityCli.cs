@@ -657,6 +657,7 @@ public static class ContinuityCli
             try
             {
                 var r = await ext.ExtractFromChapterAsync(chapterId);
+                if (r.Error != null) return Fail("extract failed: " + r.Error); // errors come back on the result, not as a throw
                 Console.WriteLine($"[continuity] ch.{r.ChapterNumber} {r.ChapterTitle} — candidates {r.CandidatesProposed}, validated {r.CandidatesValidated}");
                 Console.WriteLine($"[continuity] {r.NewClaims} new, {r.ConfirmedClaims} confirmed, {r.ContradictedClaims} contradicted, {r.UnknownEntities.Count} unknown entity references");
                 if (r.UnknownEntities.Count > 0) Console.WriteLine("[continuity] unknown: " + string.Join(", ", r.UnknownEntities));
@@ -673,8 +674,10 @@ public static class ContinuityCli
             {
                 var rs = await ext.ExtractFromBookAsync(book);
                 int n = rs.Sum(r => r.NewClaims), cf = rs.Sum(r => r.ConfirmedClaims), ct = rs.Sum(r => r.ContradictedClaims);
-                Console.WriteLine($"[continuity] Done. {n} new, {cf} confirmed, {ct} contradicted across {rs.Count} chapters.");
-                return ct > 0 ? 1 : 0;
+                // Per-chapter failures come back as r.Error, not a throw — same accounting as --node.
+                var failed = rs.Count(r => r.Error != null);
+                Console.WriteLine($"[continuity] Done. {n} new, {cf} confirmed, {ct} contradicted across {rs.Count} chapters ({failed} failed).");
+                return ct > 0 || failed > 0 ? 1 : 0;
             }
             catch (Exception ex) { return Fail("extract failed: " + ex.Message); }
         }
@@ -820,6 +823,10 @@ public static class ContinuityCli
         Console.WriteLine($"[sweep]   4) Apply CANONICAL → entity   : {(skipApply || dryRun ? "skipped" : "Legion DecideAsync per claim")}");
         Console.WriteLine();
 
+        // Every per-item failure below is printed and the sweep moves on; this counts them so a
+        // sweep that failed on some items does not exit 0 as if it had all gone through.
+        int errors = 0;
+
         // ── Step 1: entity records ─────────────────────────────────────────
         if (!skipRecords)
         {
@@ -831,10 +838,10 @@ public static class ContinuityCli
                 try
                 {
                     var r = await extraction.ExtractFromEntityRecordAsync(ent.Id);
-                    if (r.Error != null) Console.WriteLine($"[sweep]     ! {r.Error}");
+                    if (r.Error != null) { Console.WriteLine($"[sweep]     ! {r.Error}"); errors++; }
                     else Console.WriteLine($"[sweep]     {r.NewClaims} new, {r.ConfirmedClaims} confirmed, {r.ContradictedClaims} contradicted");
                 }
-                catch (Exception ex) { Console.WriteLine($"[sweep]     ! {ex.Message}"); }
+                catch (Exception ex) { Console.WriteLine($"[sweep]     ! {ex.Message}"); errors++; }
             }
         }
 
@@ -849,9 +856,10 @@ public static class ContinuityCli
                 try
                 {
                     var r = await extraction.ExtractFromChapterAsync(cid);
+                    if (r.Error != null) { Console.WriteLine($"[sweep]     ! {r.Error}"); errors++; continue; }
                     Console.WriteLine($"[sweep]     ch.{r.ChapterNumber} {r.ChapterTitle} — {r.NewClaims} new, {r.ConfirmedClaims} confirmed, {r.ContradictedClaims} contradicted ({r.UnknownEntities.Count} unknown entities)");
                 }
-                catch (Exception ex) { Console.WriteLine($"[sweep]     ! {ex.Message}"); }
+                catch (Exception ex) { Console.WriteLine($"[sweep]     ! {ex.Message}"); errors++; }
             }
         }
 
@@ -860,7 +868,7 @@ public static class ContinuityCli
             Console.WriteLine();
             Console.WriteLine("[sweep] Dry run — skipping resolve and apply phases.");
             PrintFinalStats(store);
-            return 0;
+            return errors > 0 ? 1 : 0;
         }
 
         // ── Step 3: auto-resolve contradictions ────────────────────────────
@@ -887,7 +895,7 @@ public static class ContinuityCli
                     store.Resolve(p.A.ClaimUid, p.B.ClaimUid, winner, "", $"auto-resolved by Legion DecideAsync (confidence {d.Confidence:P0})");
                     Console.WriteLine($"[sweep]     winner: {winner} → \"{d.Choice}\" (confidence {d.Confidence:P0})");
                 }
-                catch (Exception ex) { Console.WriteLine($"[sweep]     ! {ex.Message}"); }
+                catch (Exception ex) { Console.WriteLine($"[sweep]     ! {ex.Message}"); errors++; }
             }
         }
 
@@ -906,15 +914,16 @@ public static class ContinuityCli
                 {
                     var r = await apply.ApplyAsync(c.ClaimUid);
                     if (r.Ok) Console.WriteLine($"[sweep]     → {Path.GetFileName(r.EntityFile)}#{r.FieldPath}  (confidence {r.DecisionConfidence:P0})");
-                    else     Console.WriteLine($"[sweep]     ! {r.Error}");
+                    else     { Console.WriteLine($"[sweep]     ! {r.Error}"); errors++; }
                 }
-                catch (Exception ex) { Console.WriteLine($"[sweep]     ! {ex.Message}"); }
+                catch (Exception ex) { Console.WriteLine($"[sweep]     ! {ex.Message}"); errors++; }
             }
         }
 
         Console.WriteLine();
         PrintFinalStats(store);
-        return 0;
+        if (errors > 0) Console.Error.WriteLine($"[sweep] {errors} item(s) failed — see the '!' lines above.");
+        return errors > 0 ? 1 : 0;
     }
 
     static void PrintFinalStats(ContinuityService store)

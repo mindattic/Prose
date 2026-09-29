@@ -180,9 +180,20 @@ public static class WoundCli
             var byId = await db.Characters.AsNoTracking().FirstOrDefaultAsync(c => c.Id == g);
             if (byId != null) return byId.Id;
         }
-        var bySlug = await db.Characters.AsNoTracking()
-            .FirstOrDefaultAsync(c => c.Name.ToLower() == idOrSlug.ToLower());
-        return bySlug?.Id;
+        // Characters carries no universe query filter (Entities does), so a bare name resolved to
+        // whichever same-named character SQL returned first, in any universe, and the wound was
+        // logged on that one. Scope through the Entity spine (current universe), accept the
+        // entity slug the usage line promises, and refuse a tie.
+        var lowered = idOrSlug.ToLower();
+        var matches = await db.Characters.AsNoTracking()
+            .Where(c => db.Entities.Any(e => e.Id == c.Id && (e.Slug == idOrSlug || c.Name.ToLower() == lowered)))
+            .Select(c => c.Id).Take(2).ToListAsync();
+        if (matches.Count > 1)
+        {
+            Console.Error.WriteLine($"[wound] '{idOrSlug}' matches more than one character — pass its id.");
+            return null;
+        }
+        return matches.Count == 1 ? matches[0] : null;
     }
 
     private static int PrintUsage()

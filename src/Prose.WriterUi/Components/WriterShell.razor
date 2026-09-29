@@ -388,7 +388,7 @@
         var wanted = scale + (direction >= 0 ? 0.1 : -0.1);
         try { scale = await JS.InvokeAsync<double>("proseWriter.setScale", wanted); }
         catch (JSDisconnectedException) { connected = false; }
-        catch (JSException ex) { jsError = ex.Message; }
+        catch (JSException ex) { activity = WindowScriptFailed(ex); }
     }
 
     /// <summary>Ctrl+F. Toggling rather than only opening: pressing it again with Find already up
@@ -938,8 +938,7 @@
         try
         {
             var audio = await ReadAloud.SpeakAsync(text);
-            speaking = true;
-            await JsVoidAsync("proseSpeech.play", audio.Base64, audio.MimeType);
+            await PlaySpeechAsync(audio);
             activity = audio.Free ? "Idle" : $"Read aloud in the book voice ({audio.Engine}) — this one cost characters.";
         }
         catch (Exception ex)
@@ -957,6 +956,31 @@
         speaking = false;
         await JsVoidAsync("proseSpeech.stop");
     }
+
+    /// <summary>Which reading the Stop button belongs to. Bumped by every play, so an end
+    /// reported for a reading this one replaced does not take the new one's Stop away.</summary>
+    private int speakTicket;
+    private DotNetObjectReference<WriterShell>? speechRef;
+
+    private async Task PlaySpeechAsync(ReadAloudUiService.Spoken audio)
+    {
+        var mine = ++speakTicket;
+        speechRef ??= DotNetObjectReference.Create(this);
+        speaking = true;
+        // Straight to JS rather than through JsVoidAsync: a failure here throws into the
+        // caller's catch, which takes the Stop button down and says what went wrong.
+        await JS.InvokeVoidAsync("proseSpeech.play", audio.Base64, audio.MimeType, speechRef, mine);
+    }
+
+    /// <summary>proseSpeech says a reading is over — it finished, or something stopped it. Without
+    /// this the Stop button stayed up after the audio ended, until the author pressed it.</summary>
+    [JSInvokable]
+    public Task SpeechEnded(int ticket) => InvokeAsync(() =>
+    {
+        if (ticket != speakTicket || !speaking) return;
+        speaking = false;
+        StateHasChanged();
+    });
 
     // ── Context menu ───────────────────────────────────────────────────────
 
@@ -1112,8 +1136,7 @@
         try
         {
             var audio = await ReadAloud.SpeakAsync(text);
-            speaking = true;
-            await JsVoidAsync("proseSpeech.play", audio.Base64, audio.MimeType);
+            await PlaySpeechAsync(audio);
             activity = audio.Free ? "Idle" : $"Read aloud in the book voice ({audio.Engine}) — this one cost characters.";
         }
         catch (Exception ex)
@@ -1375,15 +1398,22 @@
     {
         try { await JS.InvokeVoidAsync(identifier, args); }
         catch (JSDisconnectedException) { connected = false; }
-        catch (JSException ex) { jsError = ex.Message; }
+        // Not jsError: that banner says the Display editor failed and the mode was switched to
+        // Markdown, which only OnEditorJsError actually does. A failed spell replace or playback
+        // is said as what it is.
+        catch (JSException ex) { activity = WindowScriptFailed(ex); }
     }
+
+    private static string WindowScriptFailed(JSException ex)
+        => $"A window script failed: {ex.Message} — reload the window (Ctrl+R) to pick up the current build.";
 
     private async Task ToggleThemeAsync()
     {
-        theme = theme == "light" ? "dark" : "light";
-        try { await JS.InvokeVoidAsync("proseWriter.setTheme", theme); }
+        var wanted = theme == "light" ? "dark" : "light";
+        try { await JS.InvokeVoidAsync("proseWriter.setTheme", wanted); theme = wanted; }
         catch (JSDisconnectedException) { connected = false; }
-        catch (JSException ex) { jsError = ex.Message; }
+        // The page kept its old theme, so the button keeps saying so too.
+        catch (JSException ex) { activity = WindowScriptFailed(ex); }
     }
 
     public async ValueTask DisposeAsync()
@@ -1397,6 +1427,14 @@
             await JsVoidAsync("proseHotkeys.unregisterShell");
             shellRef.Dispose();
             shellRef = null;
+        }
+
+        // Stopped first, so no SpeechEnded arrives for a reference already disposed.
+        if (speechRef is not null)
+        {
+            await JsVoidAsync("proseSpeech.stop");
+            speechRef.Dispose();
+            speechRef = null;
         }
 
         // Last chance to keep the open beat. Best-effort: circuit teardown is not guaranteed to

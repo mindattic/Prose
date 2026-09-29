@@ -308,7 +308,7 @@ public static class PlaceMapper
         // The place's own book scope, so a same-named target in another book cannot win the
         // resolution (Story Ledger Phase 3 — same reasoning as CharacterMapper's relationship
         // loop). Null means "universe-wide place, no book preference", not a missing scope.
-        var placeOriginNodeId = db.Entities.AsNoTracking()
+        var placeOriginNodeId = db.Entities.AsNoTracking().IgnoreQueryFilters()
             .Where(x => x.Id == id).Select(x => x.OriginNodeId).FirstOrDefault();
 
         // FrequentedBy — resolve to any entity FK when possible

@@ -43,8 +43,9 @@ public class MeaningBackfillService
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        var node = await db.Nodes.AsNoTracking().FirstOrDefaultAsync(
-            n => n.Slug == slugOrCode || (n.NodeCode != null && n.NodeCode.ToUpper() == slugOrCode.ToUpper()), ct)
+        // NodeRefResolver: an explicit ref, resolved across universes and refused when ambiguous (a
+        // slug and another node's code that spell alike used to return whichever row came first).
+        var node = await NodeRefResolver.ResolveNodeAsync(db, slugOrCode, ct)
             ?? throw new InvalidOperationException($"Node not found: {slugOrCode}");
         var nodeCode = node.NodeCode?.ToUpperInvariant() ?? node.Slug.ToUpperInvariant();
 

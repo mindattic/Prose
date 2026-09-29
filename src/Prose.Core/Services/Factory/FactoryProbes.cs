@@ -44,11 +44,18 @@ public static class GitProbe
         return r.Exit == 0 ? r.Out.Trim() : null;
     }
 
+    /// <summary>True when <paramref name="hash"/> is 7–40 hex digits. Every probe refuses anything
+    /// else before it reaches git: a value starting with '-' would be read as an option, and a ref
+    /// name ("HEAD", a branch) is not a commit anyone recorded.</summary>
+    public static bool IsCommitHash(string? hash) =>
+        hash is { Length: >= 7 and <= 40 } && hash.All(char.IsAsciiHexDigit);
+
     /// <summary>True when <paramref name="hash"/> is a commit reachable from HEAD.</summary>
     public static bool IsAncestorOfHead(string repo, string hash) =>
-        Run(repo, "merge-base", "--is-ancestor", hash, "HEAD").Exit == 0;
+        IsCommitHash(hash) && Run(repo, "merge-base", "--is-ancestor", hash, "HEAD").Exit == 0;
 
     public static IReadOnlyList<string> ChangedFiles(string repo, string hash) =>
+        !IsCommitHash(hash) ? [] :
         // quotePath=false: otherwise git wraps non-ASCII paths in "…" with octal escapes and no
         // declared glob can match them.
         Run(repo, "-c", "core.quotePath=false", "show", "--name-only", "--format=", hash).Out
@@ -58,8 +65,10 @@ public static class GitProbe
 
     public static DateTimeOffset? CommitTime(string repo, string hash)
     {
+        if (!IsCommitHash(hash)) return null;
         var r = Run(repo, "show", "-s", "--format=%cI", hash);
-        return r.Exit == 0 && DateTimeOffset.TryParse(r.Out.Trim(), out var t) ? t : null;
+        return r.Exit == 0 && DateTimeOffset.TryParse(r.Out.Trim(), System.Globalization.CultureInfo.InvariantCulture,
+            System.Globalization.DateTimeStyles.None, out var t) ? t : null;
     }
 }
 
@@ -98,7 +107,8 @@ public static class TrxReader
         XNamespace ns = doc.Root?.Name.Namespace ?? XNamespace.None;
         DateTimeOffset? start = null;
         var times = doc.Root?.Element(ns + "Times");
-        if (times?.Attribute("start")?.Value is { } s && DateTimeOffset.TryParse(s, out var st)) start = st;
+        if (times?.Attribute("start")?.Value is { } s && DateTimeOffset.TryParse(s, System.Globalization.CultureInfo.InvariantCulture,
+                System.Globalization.DateTimeStyles.None, out var st)) start = st;
 
         var classById = doc.Descendants(ns + "UnitTest")
             .Where(u => u.Attribute("id") != null)

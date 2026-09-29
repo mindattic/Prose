@@ -287,6 +287,7 @@ public class NodeTools
             return JsonSerializer.Serialize(new { error = "previous_node_not_found", previous }, CanonTools.JsonOpts);
 
         Guid? parentId = null;
+        var parentUniverse = Guid.Empty;
         if (!string.IsNullOrWhiteSpace(parentNodeIdOrSlug))
         {
             var parent = await ResolveNodeAsync(parentNodeIdOrSlug);
@@ -294,6 +295,7 @@ public class NodeTools
             var kindErr = KindCompatibilityError(parent.Kind, resolvedKind);
             if (kindErr != null) return JsonSerializer.Serialize(new { error = "kind_incompatible", message = kindErr }, CanonTools.JsonOpts);
             parentId = parent.Id;
+            parentUniverse = parent.UniverseId;
         }
         else if (resolvedKind == "chapter")
         {
@@ -308,12 +310,16 @@ public class NodeTools
         var slug = $"{baseSlug}-{id.ToString("N")[..8]}";
 
         await using var nodeSortTx = await db.Database.BeginTransactionAsync(System.Data.IsolationLevel.Serializable);
+        // The parent was resolved across universes (NodeRefResolver): its siblings are counted and the
+        // child stamped in the PARENT's universe. Under the ambient filter the siblings of an
+        // out-of-scope parent read as none (SortKey 100, first), and the child took the ambient universe.
         var maxSort = parentId.HasValue
-            ? await db.Nodes.Where(s => s.ParentNodeId == parentId).Select(s => (double?)s.SortKey).MaxAsync() ?? 0
+            ? await db.Nodes.IgnoreQueryFilters().Where(s => s.ParentNodeId == parentId).Select(s => (double?)s.SortKey).MaxAsync() ?? 0
             : await db.Nodes.Where(s => s.ParentNodeId == null).Select(s => (double?)s.SortKey).MaxAsync() ?? 0;
 
         var node = NodeFactory.Create(resolvedKind);
         node.Id = id;
+        if (parentUniverse != Guid.Empty) node.UniverseId = parentUniverse;
         node.Slug = slug;
         node.Title = title ?? "";
         node.Description = string.IsNullOrEmpty(description) ? null : description;
@@ -600,7 +606,8 @@ public class NodeTools
     {
         if (!BeatHandle.TryParse(beatHandle, out _, out var bid) || bid == null)
             return JsonSerializer.Serialize(new { error = "bad_beat_handle", beatHandle }, CanonTools.JsonOpts);
-        await workbench.ClearGapAfterAsync(bid.Value);
+        if (!await workbench.ClearGapAfterAsync(bid.Value))
+            return JsonSerializer.Serialize(new { error = "beat_not_found", beatHandle }, CanonTools.JsonOpts);
         return JsonSerializer.Serialize(new { ok = true, id = bid.Value }, CanonTools.JsonOpts);
     }
 
@@ -890,7 +897,7 @@ public class NodeTools
                 kind      = s.Kind,
                 status    = s.Status,
                 score     = sc?.Score.HasValue == true ? (double?)Math.Round(sc.Score.Value, 1) : null,
-                scored_on = sc?.ScoredAt.HasValue == true ? sc.ScoredAt.Value.ToString("yyyy-MM-dd") : null,
+                scored_on = sc?.ScoredAt.HasValue == true ? sc.ScoredAt.Value.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture) : null,
                 review_count = sc?.Reviews,
                 words,
                 pages     = words / 250,

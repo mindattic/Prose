@@ -24,6 +24,9 @@ public class InferenceService
     private Dictionary<(string key, string value), List<string>> propertyIndex = new();
     private volatile bool indexBuilt;
     private int builtEpoch = -1;
+    // The graph is per-universe but this index is not: without the universe check, a request in
+    // universe B was served the property index built from universe A's graph.
+    private Guid builtUniverse;
 
     // Cache of computed inferences per node.
     private readonly ConcurrentDictionary<string, List<InferredEdge>> cache = new();
@@ -78,13 +81,14 @@ public class InferenceService
             propertyIndex = index;
             indexBuilt = true;
             builtEpoch = UniverseScope.Epoch;
+            builtUniverse = UniverseScope.EffectiveId;
             cache.Clear();
         }
     }
 
     private void EnsureIndexBuilt()
     {
-        if (!indexBuilt || builtEpoch != UniverseScope.Epoch) RebuildPropertyIndex();
+        if (!indexBuilt || builtEpoch != UniverseScope.Epoch || builtUniverse != UniverseScope.EffectiveId) RebuildPropertyIndex();
     }
 
     /// <summary>

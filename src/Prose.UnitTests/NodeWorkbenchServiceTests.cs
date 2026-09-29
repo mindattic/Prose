@@ -796,6 +796,8 @@ public class NodeWorkbenchServiceTests
         // Should not throw — clearing a beat that doesn't exist (e.g.,
         // deleted between UI fetch and click) is a no-op.
         Assert.DoesNotThrowAsync(() => svc.ClearGapAfterAsync(Guid.NewGuid()));
+        // ...but it reports the miss, so clear_beat_gap_after answers beat_not_found, not ok.
+        Assert.That(await svc.ClearGapAfterAsync(Guid.NewGuid()), Is.False);
     }
 
     [Test]

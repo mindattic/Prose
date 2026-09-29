@@ -108,7 +108,7 @@
                                    eighty numbers. *@
                                 <div class="shape-bar" aria-hidden="true">
                                     <div class="shape-bar-fill @(shape.Open ? "open" : "")"
-                                         style="@($"width:{100.0 * bars / LongestSpan:0.#}%")"></div>
+                                         style="@(string.Create(System.Globalization.CultureInfo.InvariantCulture, $"width:{100.0 * bars / LongestSpan:0.#}%"))"></div>
                                 </div>
                             }
 

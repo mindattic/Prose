@@ -284,10 +284,12 @@ public class SceneContextAssembler(
     // name → all entities sharing that Name (usually exactly one). Built once, refreshed lazily,
     // universe-wide (not per-book) — same-name collisions across different books' entities (see
     // EntityDisambiguationService) are resolved per-call in ResolveIndexForContext, not here.
-    private Dictionary<string, List<(Guid Id, string Name, string Type, bool SingleToken, Guid? OriginNodeId)>>? nameIndex;
-    private DateTime nameIndexBuiltAt;
-    private int nameIndexBuiltEpoch = -1;
-    private Guid nameIndexBuiltUniverse = Guid.Empty;
+    // One reference, swapped atomically. As four fields, the lock-free fast path could pass the
+    // universe check and then re-read `nameIndex` after another universe's build had replaced it.
+    private sealed record NameIndexState(
+        Dictionary<string, List<(Guid Id, string Name, string Type, bool SingleToken, Guid? OriginNodeId)>> Index,
+        DateTime BuiltAt, int Epoch, Guid Universe);
+    private volatile NameIndexState? nameIndexState;
     private static readonly TimeSpan NameIndexTtl = TimeSpan.FromMinutes(10);
     private readonly SemaphoreSlim indexLock = new(1, 1);
 
@@ -521,15 +523,15 @@ public class SceneContextAssembler(
         // the other universe's names — see CharacterRepository.GetAll (RFC 0007 bug #3).
         var currentEpoch = UniverseScope.Epoch;
         var currentUniverse = UniverseScope.EffectiveId;
-        if (nameIndex != null && nameIndexBuiltEpoch == currentEpoch && nameIndexBuiltUniverse == currentUniverse
-            && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl)
-            return nameIndex;
+        if (nameIndexState is { } fast && fast.Epoch == currentEpoch && fast.Universe == currentUniverse
+            && DateTime.UtcNow - fast.BuiltAt < NameIndexTtl)
+            return fast.Index;
         await indexLock.WaitAsync(ct);
         try
         {
-            if (nameIndex != null && nameIndexBuiltEpoch == currentEpoch && nameIndexBuiltUniverse == currentUniverse
-                && DateTime.UtcNow - nameIndexBuiltAt < NameIndexTtl)
-                return nameIndex;
+            if (nameIndexState is { } s && s.Epoch == currentEpoch && s.Universe == currentUniverse
+                && DateTime.UtcNow - s.BuiltAt < NameIndexTtl)
+                return s.Index;
 
             // List-valued (not TryAdd-first-wins): two entities CAN legitimately share a Name
             // within one Universe — e.g. a historical/citation-grounded research entry and a
@@ -575,10 +577,7 @@ public class SceneContextAssembler(
                     list.Add((a.CharacterId, canonical, "character", RequiresStrictCase(a.Value), entityById[a.CharacterId].OriginNodeId));
                 }
 
-            nameIndex = idx;
-            nameIndexBuiltAt = DateTime.UtcNow;
-            nameIndexBuiltEpoch = currentEpoch;
-            nameIndexBuiltUniverse = currentUniverse;
+            nameIndexState = new NameIndexState(idx, DateTime.UtcNow, currentEpoch, currentUniverse);
             log.LogInformation("Scene name index built: {Count} triggers", idx.Count);
             return idx;
         }

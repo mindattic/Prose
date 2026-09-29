@@ -150,9 +150,10 @@ public class EntityRamificationService(
         "north","south","east","west","left","right",
     };
 
-    private static List<NameEntry>? nameIndexCache;
-    private static DateTime nameIndexBuiltAt = DateTime.MinValue;
-    private static Guid nameIndexUniverse;
+    // One reference, swapped atomically: three separate static fields could be read torn by
+    // concurrent requests (universe B's id paired with universe A's list).
+    private sealed record NameIndexCacheEntry(List<NameEntry> Index, DateTime BuiltAt, Guid Universe);
+    private static volatile NameIndexCacheEntry? nameIndexCache;
 
     /// <summary>
     /// Match texts for every active entity: the entity Name plus, for characters,
@@ -164,9 +165,9 @@ public class EntityRamificationService(
     {
         // Keyed on the universe too: the index is built from the ambient universe's entities, and a
         // cached one from another universe matched this universe's prose against the wrong names.
-        if (nameIndexCache is { } cached && (DateTime.UtcNow - nameIndexBuiltAt) < TimeSpan.FromSeconds(60)
-            && nameIndexUniverse == UniverseScope.EffectiveId)
-            return cached;
+        if (nameIndexCache is { } cached && (DateTime.UtcNow - cached.BuiltAt) < TimeSpan.FromSeconds(60)
+            && cached.Universe == UniverseScope.EffectiveId)
+            return cached.Index;
         var builtFor = UniverseScope.EffectiveId;
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
@@ -208,9 +209,7 @@ public class EntityRamificationService(
                 index.Add(new NameEntry(owner.Id, a.Value, owner.Name, owner.EntityType, CaseSensitive: true));
 
         var built = index.OrderByDescending(e => e.MatchText.Length).ToList();
-        nameIndexCache = built;
-        nameIndexBuiltAt = DateTime.UtcNow;
-        nameIndexUniverse = builtFor;
+        nameIndexCache = new NameIndexCacheEntry(built, DateTime.UtcNow, builtFor);
         return built;
     }
 

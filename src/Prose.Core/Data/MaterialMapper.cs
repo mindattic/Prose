@@ -113,7 +113,7 @@ public static class MaterialMapper
         var m = BuildIncludeChain(db.Materials.AsNoTracking())
             .FirstOrDefault(x => x.Id == id);
         if (m == null) return null;
-        var entity = db.Entities.AsNoTracking().FirstOrDefault(e => e.Id == id);
+        var entity = db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         var tags = db.EntityTags.AsNoTracking()
             .Where(t => t.EntityId == id)
             .Select(t => t.Tag!.Name)

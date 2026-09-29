@@ -1397,8 +1397,15 @@ window.proseModal = (() => {
         'select:not([disabled])', 'textarea:not([disabled])', '[tabindex]:not([tabindex="-1"])',
     ].join(',');
 
-    let restoreTo = null;
-    let trapped = null;
+    // One entry per open dialog, innermost last: { token, dialog, restoreTo }. A single shared
+    // trap let a component's close() — EntityPicker's dispose runs whether or not its trap is
+    // still the live one — take down a LATER dialog's trap and drop focus behind the scrim. So
+    // open() hands back a token, and close(token) removes that dialog's entry and nothing else;
+    // closing one that is already closed does nothing.
+    let stack = [];
+    let nextToken = 0;
+
+    function top() { return stack.length ? stack[stack.length - 1] : null; }
 
     function focusable(dialog) {
         return Array.from(dialog.querySelectorAll(FOCUSABLE))
@@ -1406,6 +1413,7 @@ window.proseModal = (() => {
     }
 
     function onKeyDown(e) {
+        const trapped = top() && top().dialog;
         if (e.key !== 'Tab' || !trapped) return;
         const items = focusable(trapped);
         if (items.length === 0) { e.preventDefault(); return; }
@@ -1418,27 +1426,44 @@ window.proseModal = (() => {
     }
 
     return {
+        /** Trap focus in `dialog`. Returns the token its close() takes (0 when nothing opened). */
         open(dialog) {
-            if (!dialog) return;
+            if (!dialog) return 0;
             // Remembered before focus moves, so closing returns the author to the control they
             // opened the dialog from rather than dropping them at the top of the document.
             // A hover card belongs to the prose; it has no business showing over a dialog.
             if (window.proseEditor) window.proseEditor.hideCard();
-            restoreTo = document.activeElement;
-            trapped = dialog;
-            document.addEventListener('keydown', onKeyDown, true);
+            const entry = { token: ++nextToken, dialog, restoreTo: document.activeElement };
+            stack.push(entry);
+            if (stack.length === 1) document.addEventListener('keydown', onKeyDown, true);
             // A dialog can name the control the author came to use. The link dialog's first
             // control is the read-only text being linked; the one they type into is Search.
             const preferred = dialog.querySelector('[data-autofocus]');
             const items = focusable(dialog);
             (preferred || items[0] || dialog).focus();
+            return entry.token;
         },
 
-        close() {
-            document.removeEventListener('keydown', onKeyDown, true);
-            trapped = null;
-            if (restoreTo && typeof restoreTo.focus === 'function') restoreTo.focus();
-            restoreTo = null;
+        /**
+         * Release the trap `open` returned `token` for. Idempotent: a token already closed does
+         * nothing. Without a token it closes the innermost dialog (the old single-trap behaviour).
+         */
+        close(token) {
+            if (stack.length === 0) return;
+            const at = token == null ? stack.length - 1 : stack.findIndex(e => e.token === token);
+            if (at < 0) return;
+            const [entry] = stack.splice(at, 1);
+            if (stack.length === 0) document.removeEventListener('keydown', onKeyDown, true);
+
+            if (at < stack.length) {
+                // Closed from underneath another dialog: focus stays where it is, and the dialog
+                // above inherits where this one would have sent focus back to.
+                stack[at].restoreTo = entry.restoreTo;
+                return;
+            }
+            const back = entry.restoreTo;
+            if (back && back.isConnected && typeof back.focus === 'function') back.focus();
+            else if (top()) (focusable(top().dialog)[0] || top().dialog).focus();
         },
 
         /**
@@ -1561,10 +1586,35 @@ window.proseSpeech = (() => {
     // nulled `current` under the new clip, so the next Stop could no longer silence it.
     let generation = 0;
 
+    // Who asked to hear the end of what is playing: { ref, ticket }, where ref is a
+    // DotNetObjectReference with a [JSInvokable] SpeechEnded(int ticket). Without it a Stop
+    // button shown while speaking never went away when the reading simply finished. The ticket
+    // is the component's own: it ignores an end that belongs to a reading it has since replaced,
+    // which is what makes it safe to also say "ended" when a stop() cut the reading off — the
+    // microphone's barge-in, or another panel playing over it.
+    let listener = null;
+
+    function notifyEnded() {
+        const l = listener;
+        listener = null;
+        if (l && l.ref) {
+            try { l.ref.invokeMethodAsync('SpeechEnded', l.ticket).catch(() => { }); } catch { }
+        }
+    }
+
+    function listen(ref, ticket) {
+        if (!ref) return;
+        // A different reading taking over the queue ends the one before it. Compared by ticket,
+        // not by ref: Blazor hands JS a fresh wrapper object for the same reference on every call.
+        if (listener && listener.ticket !== ticket) notifyEnded();
+        listener = { ref, ticket };
+    }
+
     function stop() {
         generation++;
         queue = [];
         draining = false;
+        notifyEnded();
         if (!current) return;
         current.pause();
         // Release the element before dropping the reference, or a long clip keeps decoding.
@@ -1601,22 +1651,31 @@ window.proseSpeech = (() => {
             if (mine === generation) {
                 draining = false;
                 current = null;
+                // Ran dry on its own. Only the clip that carried a listener says so: a caller
+                // enqueueing sentence by sentence passes one with its LAST sentence, because the
+                // queue can run dry between sentences while the next is still being synthesized.
+                notifyEnded();
             }
         }
     }
 
     return {
-        /** Play base64 audio, replacing whatever was already speaking. */
-        play(base64, mime) {
+        /**
+         * Play base64 audio, replacing whatever was already speaking. Optional ref/ticket: see
+         * `listener` — ref.SpeechEnded(ticket) is called once this reading is over.
+         */
+        play(base64, mime, ref, ticket) {
             stop();
             queue = [`data:${mime};base64,${base64}`];
+            listen(ref, ticket);
             drain();
             return true;
         },
 
-        /** Add a clip to the end of what is already being said. */
-        enqueue(base64, mime) {
+        /** Add a clip to the end of what is already being said. ref/ticket as for play(). */
+        enqueue(base64, mime, ref, ticket) {
             queue.push(`data:${mime};base64,${base64}`);
+            listen(ref, ticket);
             drain();
             return true;
         },

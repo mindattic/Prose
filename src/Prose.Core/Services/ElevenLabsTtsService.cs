@@ -238,8 +238,8 @@ public class ElevenLabsTtsService : ITtsService
                 }
                 voices.Add(new TtsVoice
                 {
-                    VoiceId = v.GetProperty("voice_id").GetString() ?? "",
-                    Name = v.GetProperty("name").GetString() ?? "",
+                    VoiceId = v.TryGetProperty("voice_id", out var vid) && vid.ValueKind == JsonValueKind.String ? vid.GetString() ?? "" : "",
+                    Name = v.TryGetProperty("name", out var nm) && nm.ValueKind == JsonValueKind.String ? nm.GetString() ?? "" : "",
                     Category = v.TryGetProperty("category", out var cat) ? cat.GetString() ?? "" : "",
                     PreviewUrl = v.TryGetProperty("preview_url", out var pu) ? pu.GetString() ?? "" : "",
                     Description = v.TryGetProperty("description", out var desc) && desc.ValueKind == JsonValueKind.String

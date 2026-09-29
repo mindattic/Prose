@@ -74,7 +74,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(2));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("2"));
     }
 
     // ── Tier 5 ───────────────────────────────────────────────────────────────
@@ -86,7 +86,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(5));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("5"));
     }
 
     [Test]
@@ -96,7 +96,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(5));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("5"));
     }
 
     [Test]
@@ -106,7 +106,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(5));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("5"));
     }
 
     // ── Tier 4 ───────────────────────────────────────────────────────────────
@@ -118,7 +118,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(4));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("4"));
     }
 
     [Test]
@@ -128,7 +128,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(4));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("4"));
     }
 
     // ── Tier 3 ───────────────────────────────────────────────────────────────
@@ -140,7 +140,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(3));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("3"));
     }
 
     [Test]
@@ -150,7 +150,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(3));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("3"));
     }
 
     [Test]
@@ -160,7 +160,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(3));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("3"));
     }
 
     // ── Tier 2 ───────────────────────────────────────────────────────────────
@@ -172,7 +172,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(2));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("2"));
     }
 
     [Test]
@@ -182,7 +182,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(2));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("2"));
     }
 
     // ── Tier 1 ───────────────────────────────────────────────────────────────
@@ -194,7 +194,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(1));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("1"));
     }
 
     [Test]
@@ -204,7 +204,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(1));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("1"));
     }
 
     // ── Overwrite behavior ────────────────────────────────────────────────────
@@ -226,7 +226,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync(overwrite: true);
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(5));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("5"));
     }
 
     // ── First-match wins (tier priority order) ────────────────────────────────
@@ -239,7 +239,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(5));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("5"));
     }
 
     // ── Synthetics dir ───────────────────────────────────────────────────────
@@ -251,7 +251,11 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(2));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("2"));
+        // The shape the synthetic model reads: a numeric tier made SyntheticLifeData (Tier is a
+        // string) fail to deserialize, so SyntheticMapper.RebuildAllAsync dropped the row.
+        var model = JsonSerializer.Deserialize<Prose.Core.Models.Canon.SyntheticLifeData>(ReadEntity(id).ToJsonString());
+        Assert.That(model?.Tier, Is.EqualTo("2"));
     }
 
     // ── Affiliation field ─────────────────────────────────────────────────────
@@ -263,7 +267,7 @@ public class AssignTiersServiceTests
 
         await svc.RunAsync();
 
-        Assert.That(ReadEntity(id)["tier"]?.GetValue<int>(), Is.EqualTo(5));
+        Assert.That(ReadEntity(id)["tier"]?.GetValue<string>(), Is.EqualTo("5"));
     }
 
     // ── Result counts ─────────────────────────────────────────────────────────

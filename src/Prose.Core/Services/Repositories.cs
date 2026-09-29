@@ -184,7 +184,9 @@ public class CharacterRepository : EfRepository<CharacterData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, CharacterMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -285,8 +287,15 @@ public class CharacterRepository : EfRepository<CharacterData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 
@@ -430,7 +439,9 @@ public class CorponationRepository : EfRepository<CorponationData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, null, CorponationMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -499,8 +510,15 @@ public class CorponationRepository : EfRepository<CorponationData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -601,7 +619,9 @@ public class DistrictRepository : EfRepository<DistrictData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, PlaceMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -676,8 +696,15 @@ public class DistrictRepository : EfRepository<DistrictData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -783,7 +810,9 @@ public class FactionRepository : EfRepository<FactionData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, FactionMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -854,8 +883,15 @@ public class FactionRepository : EfRepository<FactionData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -955,7 +991,9 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
         var name = item.FileName?.Length > 0 ? item.FileName : (item.Title ?? "");
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, null, DocumentMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -1024,8 +1062,15 @@ public class WorldbuildingDocRepository : EfRepository<WorldbuildingDocument>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -1123,7 +1168,9 @@ public class MotifRepository : EfRepository<MotifData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, MotifMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -1193,8 +1240,15 @@ public class MotifRepository : EfRepository<MotifData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -1294,7 +1348,9 @@ public class WeaponryRepository : EfRepository<WeaponryData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, WeaponMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -1365,8 +1421,15 @@ public class WeaponryRepository : EfRepository<WeaponryData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -1464,7 +1527,9 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, AmmunitionMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -1535,8 +1600,15 @@ public class AmmunitionRepository : EfRepository<AmmunitionData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -1635,7 +1707,9 @@ public class EquipmentRepository : EfRepository<EquipmentData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, EquipmentMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -1706,8 +1780,15 @@ public class EquipmentRepository : EfRepository<EquipmentData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -1806,7 +1887,9 @@ public class TechnologyRepository : EfRepository<TechnologyData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, TechnologyMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -1877,8 +1960,15 @@ public class TechnologyRepository : EfRepository<TechnologyData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -1975,7 +2065,9 @@ public class CyberwareRepository : EfRepository<CyberwareData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, CyberwareMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -2046,8 +2138,15 @@ public class CyberwareRepository : EfRepository<CyberwareData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -2146,7 +2245,9 @@ public class VocabularyRepository : EfRepository<VocabularyData>
         var name = item.Term ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, null, VocabularyMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -2215,8 +2316,15 @@ public class VocabularyRepository : EfRepository<VocabularyData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -2317,7 +2425,9 @@ public class GenemodRepository : EfRepository<GenemodData>
         // The Entities row stores item.Name, not the ProductName-preferring `name` above; comparing
         // against `name` made every re-save of a genemod with a ProductName look like a change.
         if (SaveGuard.IsUnchanged(db, id, item, item.Name ?? "", item.Description, GenemodMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -2388,8 +2498,15 @@ public class GenemodRepository : EfRepository<GenemodData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -2487,7 +2604,9 @@ public class TransportationRepository : EfRepository<TransportationData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, TransportationMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -2558,8 +2677,15 @@ public class TransportationRepository : EfRepository<TransportationData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -2659,7 +2785,9 @@ public class ContractRepository : EfRepository<ContractData>
         var name = item.Codename ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, ContractMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -2730,8 +2858,15 @@ public class ContractRepository : EfRepository<ContractData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -2830,7 +2965,9 @@ public class AutomatonRepository : EfRepository<AutomatonData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, AutomatonMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -2901,8 +3038,15 @@ public class AutomatonRepository : EfRepository<AutomatonData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -2999,7 +3143,9 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, SubsidiaryMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -3070,8 +3216,15 @@ public class SubsidiaryRepository : EfRepository<SubsidiaryData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -3169,7 +3322,9 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, EntertainmentMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -3240,8 +3395,15 @@ public class EntertainmentRepository : EfRepository<EntertainmentData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -3339,7 +3501,9 @@ public class ApparelRepository : EfRepository<ApparelData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, ApparelMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -3410,8 +3574,15 @@ public class ApparelRepository : EfRepository<ApparelData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -3510,7 +3681,9 @@ public class NewsRepository : EfRepository<NewsData>
         var name = item.Headline ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, null, NewsMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -3579,8 +3752,15 @@ public class NewsRepository : EfRepository<NewsData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -3679,7 +3859,9 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, ArchetypeMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -3750,8 +3932,15 @@ public class ArchetypeRepository : EfRepository<ArchetypeData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -3851,7 +4040,9 @@ public class MaterialRepository : EfRepository<MaterialData>
         // The Entities row stores item.Name, not the ProductName-preferring `name` above; comparing
         // against `name` made every re-save of a material with a ProductName look like a change.
         if (SaveGuard.IsUnchanged(db, id, item, item.Name ?? "", item.Description, MaterialMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -3922,8 +4113,15 @@ public class MaterialRepository : EfRepository<MaterialData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -4020,7 +4218,9 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, PharmaceuticalMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -4091,8 +4291,15 @@ public class PharmaceuticalRepository : EfRepository<PharmaceuticalData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -4189,7 +4396,9 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, ConsumerGoodMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -4260,8 +4469,15 @@ public class ConsumerGoodRepository : EfRepository<ConsumerGoodData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -4362,7 +4578,9 @@ public class QuoteRepository : EfRepository<QuoteData>
         // The Entities row stores the whole quote, not the 40-char `name`; comparing against `name`
         // made every re-save of a quote longer than 40 characters look like a change.
         if (SaveGuard.IsUnchanged(db, id, item, item.Quote, null, QuoteMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -4426,8 +4644,15 @@ public class QuoteRepository : EfRepository<QuoteData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -4561,7 +4786,9 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, null, LabSpecimenMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -4630,8 +4857,15 @@ public class LabSpecimenRepository : EfRepository<LabSpecimenData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -4729,7 +4963,9 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, null, FlyoverEntityMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -4798,8 +5034,15 @@ public class FlyoverEntityRepository : EfRepository<FlyoverEntityData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -4897,7 +5140,9 @@ public class PsionicRepository : EfRepository<PsionicData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, null, PsionicMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -4966,8 +5211,15 @@ public class PsionicRepository : EfRepository<PsionicData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }
@@ -5111,7 +5363,9 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
         var name = item.Name ?? "";
         // RFC 0015 §3.5: a save that changes nothing writes nothing (no bridge wipe, no ModifiedAt bump).
         if (SaveGuard.IsUnchanged(db, id, item, name, item.Description, SyntheticMapper.LoadOne)) return;
-        var existingEntity = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key. An id outside the ambient universe
+        // (set_entity_fields resolves ids across universes) was "not found" and re-inserted → PK violation.
+        var existingEntity = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         if (existingEntity == null)
         {
             existingEntity = new Entity
@@ -5182,8 +5436,15 @@ public class SyntheticLifeRepository : EfRepository<SyntheticLifeData>
         if (!string.IsNullOrEmpty(currentSlug)
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 }

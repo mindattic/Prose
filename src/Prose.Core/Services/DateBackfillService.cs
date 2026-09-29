@@ -152,7 +152,7 @@ public class DateBackfillService
             : $"BOOK: {book.Title}\n  premise: {book.Premise}\n  arc target: {book.ArcTarget}\n";
 
         var prevContext = previous.HasValue
-            ? $"PREVIOUS CHAPTER ENDED AT (story-time): {previous:yyyy-MM-ddTHH:mm:ssZ}\n"
+            ? $"PREVIOUS CHAPTER ENDED AT (story-time): {previous.Value.ToString("yyyy-MM-ddTHH:mm:ssZ", CultureInfo.InvariantCulture)}\n"
             : "";
 
         var prose = ch.PlainText;

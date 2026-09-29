@@ -80,7 +80,8 @@ public static class AuditDenormCli
         {
             Console.WriteLine($"Probe failed: {ex.Message}");
             Console.WriteLine("If the message is 'Invalid column name TagsJson', the column was already dropped — there is nothing to audit.");
-            return 0;
+            // Only the dropped-column case is "nothing to audit"; a connection or timeout failure is a failed probe.
+            return ex.Message.Contains("Invalid column name", StringComparison.OrdinalIgnoreCase) ? 0 : 1;
         }
     }
 

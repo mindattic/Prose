@@ -26,8 +26,13 @@ public class LlmRouter : ILlmService
     private readonly IDbContextFactory<ProseDbContext>? dbFactory;
     private readonly ILogger<LlmRouter> log;
 
-    private string? runProvider;
-    private string? runModel;
+    // Flow-scoped (AsyncLocal), not fields: the router is a Hub singleton, and a forwarded CLI
+    // run's --local / --model override otherwise rerouted every concurrent Hub request's LLM
+    // calls (Writer, other sessions) for as long as the run lasted.
+    private readonly AsyncLocal<string?> runProviderLocal = new();
+    private readonly AsyncLocal<string?> runModelLocal = new();
+    private string? runProvider => runProviderLocal.Value;
+    private string? runModel => runModelLocal.Value;
 
     private static readonly IReadOnlyDictionary<string, string> DisplayNames = new Dictionary<string, string>
     {
@@ -211,13 +216,13 @@ public class LlmRouter : ILlmService
     /// Overrides the active provider for the lifetime of the current process (not persisted to settings).
     /// Pass <c>null</c> to revert to settings-driven routing.
     /// </summary>
-    public void SetRunProvider(string? providerId) => runProvider = providerId;
+    public void SetRunProvider(string? providerId) => runProviderLocal.Value = providerId;
 
     /// <summary>
     /// Overrides the model for the lifetime of the current process (not persisted to settings).
     /// Pass <c>null</c> to revert to each provider's own settings-driven default.
     /// </summary>
-    public void SetRunModel(string? modelId) => runModel = modelId;
+    public void SetRunModel(string? modelId) => runModelLocal.Value = modelId;
 
     public async Task<bool> IsConfiguredAsync()
     {

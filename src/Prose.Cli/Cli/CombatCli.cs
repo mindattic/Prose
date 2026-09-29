@@ -75,7 +75,14 @@ public static class CombatCli
                 Console.Error.WriteLine($"[combat] unknown tone '{toneStr}'. Use: Brutal | Cinematic | Desperate | Clinical | Chaotic");
                 return 1;
             }
-            int.TryParse(ArgValue(args, "--exchanges"), out var exchanges);
+            var exchangesArg = ArgValue(args, "--exchanges");
+            var exchanges = 0;
+            // A typo here used to fall back to 4 exchanges silently — 4 billed LLM calls nobody asked for.
+            if (exchangesArg != null && !int.TryParse(exchangesArg, out exchanges))
+            {
+                Console.Error.WriteLine($"[combat] --exchanges must be a whole number, got '{exchangesArg}'.");
+                return 1;
+            }
             request = new CombatSceneRequest
             {
                 BattlefieldLocation = location,

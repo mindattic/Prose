@@ -747,9 +747,9 @@ public class DataConsistencyService
                 {
                     ["UniverseId"] = r.UniverseId.ToString(), ["EntityId"] = r.EntityId.ToString(),
                     ["AspectKey"] = r.AspectKey, ["Verb"] = r.Verb, ["OldValue"] = r.OldValue, ["NewValue"] = r.NewValue,
-                    ["Delta"] = r.Delta?.ToString(), ["AtStoryTime"] = r.AtStoryTime.ToString("o"),
+                    ["Delta"] = r.Delta?.ToString(System.Globalization.CultureInfo.InvariantCulture), ["AtStoryTime"] = r.AtStoryTime.ToString("o"),
                     ["ChapterId"] = r.ChapterId?.ToString(), ["BeatGuid"] = r.BeatGuid?.ToString(),
-                    ["Source"] = r.Source, ["Confidence"] = r.Confidence?.ToString(), ["Snippet"] = r.Snippet,
+                    ["Source"] = r.Source, ["Confidence"] = r.Confidence?.ToString(System.Globalization.CultureInfo.InvariantCulture), ["Snippet"] = r.Snippet,
                 })).ToList();
             result["ESE-DANGLING"] = new LedgeredFixResult(deleted.Count, undo);
         }

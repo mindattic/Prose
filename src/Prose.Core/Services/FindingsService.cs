@@ -174,7 +174,7 @@ public class FindingsService
     }
 
     private static DateTime? ParseDate(string s)
-        => DateTime.TryParse(s, null, System.Globalization.DateTimeStyles.RoundtripKind, out var d) ? d : null;
+        => DateTime.TryParse(s, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.RoundtripKind, out var d) ? d : null;
 
     /// <summary>Prefix every beat-anchored finding's <c>FilePath</c> carries.</summary>
     internal const string BeatFilePathPrefix = "beat:";

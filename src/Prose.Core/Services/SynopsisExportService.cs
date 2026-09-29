@@ -159,8 +159,12 @@ public sealed class SynopsisExportService(
         try
         {
             using var doc = JsonDocument.Parse(raw);
-            var synopsis = doc.RootElement.GetProperty("synopsis").GetString() ?? "";
-            var factsJson = doc.RootElement.TryGetProperty("facts", out var f) ? f.GetRawText() : "{}";
+            // Valid JSON with no "synopsis" string (a missing key, a null, an array root) threw
+            // KeyNotFound/InvalidOperation past the JsonException catch and failed the whole export.
+            var root = doc.RootElement;
+            var synopsis = root.ValueKind == JsonValueKind.Object && root.TryGetProperty("synopsis", out var sp) && sp.ValueKind == JsonValueKind.String
+                ? sp.GetString() ?? "" : "";
+            var factsJson = root.ValueKind == JsonValueKind.Object && root.TryGetProperty("facts", out var f) ? f.GetRawText() : "{}";
             if (!string.IsNullOrWhiteSpace(synopsis)) return (synopsis, factsJson);
         }
         catch (JsonException)

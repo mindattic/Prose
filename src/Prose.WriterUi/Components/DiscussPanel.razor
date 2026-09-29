@@ -497,7 +497,7 @@
             question = "";
             spokenAudio.Remove(AskBox);
             await ReloadAsync();
-            await OpenThreadAsync(thread.Id);
+            await OpenThreadAsync(thread.Id, speakReply: true);
         }
         catch (DiscussionUiService.NoCredentialsException)
         {
@@ -527,7 +527,7 @@
                 onTextDelta: OnReplyDeltaAsync);
             followUp = "";
             spokenAudio.Remove(FollowUpBox);
-            await LoadTurnsAsync(openThread.Id);
+            await LoadTurnsAsync(openThread.Id, speakReply: true);
         }
         catch (DiscussionUiService.NoCredentialsException) { needsKey = true; }
         catch (Exception ex) { error = $"Could not ask: {ex.Message}"; }
@@ -559,6 +559,9 @@
         if (chunker?.Flush() is { Length: > 0 } tail) _ = SpeakChunkAsync(tail);
         chunker = null;
         streaming.Clear();
+        // Belongs to this exchange only; left set, it told the next speak-back that prose from a
+        // reply it never streamed had already been said.
+        spokeWhileStreaming = false;
     }
 
     /// <summary>
@@ -619,7 +622,7 @@
         return AskAsync();
     }
 
-    private async Task OpenThreadAsync(Guid threadId)
+    private async Task OpenThreadAsync(Guid threadId, bool speakReply = false)
     {
         openThread = threads.FirstOrDefault(t => t.Thread.Id == threadId)?.Thread;
         if (openThread is null)
@@ -627,19 +630,22 @@
             await ReloadAsync();
             openThread = threads.FirstOrDefault(t => t.Thread.Id == threadId)?.Thread;
         }
-        if (openThread is not null) await LoadTurnsAsync(threadId);
+        if (openThread is not null) await LoadTurnsAsync(threadId, speakReply);
     }
 
     /// <summary>The proposals this thread's turns refer to. A turn carries only the id, so a
     /// stored turn can never disagree with the ticket it points at.</summary>
     private Dictionary<Guid, DiscussionUiService.ProposalRow> proposals = new();
 
-    private async Task LoadTurnsAsync(Guid threadId)
+    /// <param name="speakReply">True only where a reply has just arrived (Start, Ask). Opening an
+    /// old thread or approving a proposal also reloads the turns, and used to read the last
+    /// spoken exchange's reply aloud again.</param>
+    private async Task LoadTurnsAsync(Guid threadId, bool speakReply = false)
     {
         turns = await Discuss.TurnsAsync(threadId);
         cost = turns.Sum(t => t.Cost);
         await LoadProposalsAsync();
-        await SpeakReplyAsync();
+        if (speakReply) await SpeakReplyAsync();
     }
 
     private async Task LoadProposalsAsync()
@@ -816,7 +822,25 @@
         var availability = Speech.Probe();
         if (!availability.Ready) { error = availability.Blocker; return; }
 
-        var started = await JsAsync<MicStart>("proseMic.start");
+        if (micStarting) return;
+        var mine = ++micStartTicket;
+        micStarting = true;
+        MicStart? started;
+        try { started = await JsAsync<MicStart>("proseMic.start"); }
+        // Cleared only here, never by an abandon: proseMic.start shares one in-flight open, so a
+        // new start let through meanwhile would get the same recorder the retired one is about to
+        // cancel.
+        finally { micStarting = false; }
+
+        // Abandoned while getUserMedia was still asking — the beat changed or the panel closed.
+        // The recorder opened anyway, after the abandon had nothing to cancel; close it now, or
+        // the OS microphone light stays on with nothing listening to it.
+        if (mine != micStartTicket)
+        {
+            if (started is { Ok: true }) await JsAsync<bool>("proseMic.cancel");
+            return;
+        }
+
         if (started is null || !started.Ok)
         {
             error = started?.Error ?? "The microphone could not be opened.";
@@ -883,11 +907,20 @@
     /// light on after the author has moved to another beat is not acceptable.</summary>
     private async Task AbandonRecordingAsync()
     {
+        // A start still waiting on the microphone is retired; StartMicAsync closes what it opens.
+        if (micStarting) micStartTicket++;
         if (recordingIn is null) return;
         recordingIn = null;
         spokenAudio.Clear();
         await JsAsync<bool>("proseMic.cancel");
     }
+
+    /// <summary>A <c>proseMic.start</c> is in flight: recordingIn is set only once it resolves,
+    /// so without this an abandon in the meantime found nothing to cancel.</summary>
+    private bool micStarting;
+
+    /// <summary>Which start may still become the recording; bumped by an abandon.</summary>
+    private int micStartTicket;
 
     private static string Append(string existing, string addition)
         => string.IsNullOrWhiteSpace(existing) ? addition.Trim() : existing.TrimEnd() + " " + addition.Trim();
@@ -908,6 +941,9 @@
 
     public async ValueTask DisposeAsync()
     {
+        // A start still pending cancels its own recorder when it resolves (StartMicAsync).
+        if (micStarting) micStartTicket++;
+
         // The hotkey listeners live on the document, not on this component's markup, so they
         // outlive it unless they are taken down here — two panels' worth of listeners would open
         // the microphone twice on one keypress.

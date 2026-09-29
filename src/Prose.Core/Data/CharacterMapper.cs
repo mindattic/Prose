@@ -117,7 +117,7 @@ public static class CharacterMapper
         var c = BuildIncludeChain(db.Characters.AsNoTracking())
             .FirstOrDefault(c => c.Id == id);
         if (c == null) return null;
-        var entity = db.Entities.AsNoTracking().FirstOrDefault(e => e.Id == id);
+        var entity = db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         var tags = db.EntityTags.AsNoTracking()
             .Where(t => t.EntityId == id)
             .Select(t => t.Tag!.Name)
@@ -212,7 +212,9 @@ public static class CharacterMapper
     /// </summary>
     public static CharacterData? LoadOneFromReadModel(ProseDbContext db, Guid id)
     {
-        var row = db.CharacterReadModels.AsNoTracking()
+        // IgnoreQueryFilters(): an explicit id. Under the filter an out-of-scope character's row
+        // read as missing, so every read fell through to LoadOne and rewrote the read model.
+        var row = db.CharacterReadModels.AsNoTracking().IgnoreQueryFilters()
             .FirstOrDefault(r => r.CharacterId == id && r.Version == ReadModelVersion);
 
         CharacterData? data = null;
@@ -220,7 +222,7 @@ public static class CharacterMapper
         {
             // Modified-since check catches out-of-band writes (direct SQL) that never
             // went through CharacterRepository.Save, so RefreshReadModelAsync never fired.
-            var modifiedAt = db.Entities.AsNoTracking()
+            var modifiedAt = db.Entities.AsNoTracking().IgnoreQueryFilters()
                 .Where(e => e.Id == id).Select(e => (DateTime?)e.ModifiedAt).FirstOrDefault();
             if (modifiedAt == null || modifiedAt <= row.RefreshedAt)
                 data = DeserializeReadModel(row.Json);
@@ -1140,7 +1142,7 @@ public static class CharacterMapper
         // and this is the same value for every row. Null (a universe-wide character like GLMZ's
         // Kyle) simply means "no book preference", which is the correct behaviour for a shared
         // entity, not a missing scope.
-        var sourceOriginNodeId = db.Entities.AsNoTracking()
+        var sourceOriginNodeId = db.Entities.AsNoTracking().IgnoreQueryFilters()
             .Where(x => x.Id == id).Select(x => x.OriginNodeId).FirstOrDefault();
 
         foreach (var r in src.Relationships)

@@ -123,8 +123,11 @@ public class CoreEntityCrudTools
             using var odb = dbFactory.CreateDbContext();
             // NodeRefResolver: across universes, refused when ambiguous (was: first matching row).
             var originNodeSlugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(odb, originNodeSlug) ?? Guid.Empty;
+            // A NEW character is stamped with the ambient universe, so its origin book must be there
+            // too — a slug resolved to another universe's book scoped it to a book it can never be in.
+            var createUniverse = string.IsNullOrEmpty(id) ? odb.ScopedUniverseId : Guid.Empty;
             resolvedOrigin = odb.Nodes.IgnoreQueryFilters().AsNoTracking()
-                .Where(n => n.Id == originNodeSlugId)
+                .Where(n => n.Id == originNodeSlugId && (createUniverse == Guid.Empty || n.UniverseId == createUniverse))
                 .Select(n => (Guid?)n.Id)
                 .FirstOrDefault();
             // A typo here used to create the character universe-wide and answer ok:true.
@@ -328,7 +331,8 @@ public class CoreEntityCrudTools
             return JsonSerializer.Serialize(new { ok = false, error = "invalid_id" }, CanonTools.JsonOpts);
 
         await using var db = await dbFactory.CreateDbContextAsync();
-        var entity = await db.Entities.FirstOrDefaultAsync(e => e.Id == entityId);
+        // IgnoreQueryFilters(): an explicit id (SetEntityOriginAsync resolves it the same way), not a browse.
+        var entity = await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == entityId);
         if (entity == null)
             return JsonSerializer.Serialize(new { ok = false, error = "entity_not_found" }, CanonTools.JsonOpts);
 
@@ -337,8 +341,10 @@ public class CoreEntityCrudTools
         {
             // NodeRefResolver: across universes, refused when ambiguous (was: first matching row).
             var originNodeSlugId = await Prose.Core.Services.NodeRefResolver.ResolveAsync(db, originNodeSlug) ?? Guid.Empty;
+            // The origin book must be in the entity's own universe: a slug that resolved to another
+            // universe's node would scope this entity to a book it can never appear in.
             resolved = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
-                .Where(n => n.Id == originNodeSlugId)
+                .Where(n => n.Id == originNodeSlugId && n.UniverseId == entity.UniverseId)
                 .Select(n => (Guid?)n.Id).FirstOrDefaultAsync();
             if (resolved == null)
                 return JsonSerializer.Serialize(new { ok = false, error = "node_not_found", originNodeSlug }, CanonTools.JsonOpts);

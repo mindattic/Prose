@@ -87,7 +87,7 @@ public class LoggingService
     }
 
     private string GetLogPath(DateTime date) =>
-        Path.Combine(LogDirectory, $"log-{date:yyyyMMdd}.txt");
+        Path.Combine(LogDirectory, $"log-{date.ToString("yyyyMMdd", CultureInfo.InvariantCulture)}.txt");
 
     private static DateTime? ExtractDate(string filePath)
     {

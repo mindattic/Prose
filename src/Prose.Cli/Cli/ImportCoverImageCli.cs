@@ -79,7 +79,8 @@ public static class ImportCoverImageCli
 
         if (!string.IsNullOrWhiteSpace(nodeCode))
         {
-            var node = await db.Nodes
+            // NodeCode is globally unique (IX_Nodes_NodeCode): an explicit code, not a browse.
+            var node = await db.Nodes.IgnoreQueryFilters()
                 .Where(s => s.NodeCode == nodeCode)
                 .Select(s => new { s.Id, s.Title })
                 .FirstOrDefaultAsync();

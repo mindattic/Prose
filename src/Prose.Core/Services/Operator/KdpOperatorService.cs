@@ -402,7 +402,7 @@ public class KdpOperatorService
           {book.Description}
         - Keywords (up to 7, via enter_keywords): {keywordsJson}
         - Category paths (up to 3, via select_categories): {categoriesJson}
-        - List price: ${plan.PriceUsd} USD
+        - List price: ${plan.PriceUsd.ToString(System.Globalization.CultureInfo.InvariantCulture)} USD
         - Royalty plan: {(plan.PriceUsd >= 2.99m ? "70%" : "35% (price is below $2.99, the 70% tier's minimum)")}
         - DRM: {(plan.Drm ? "Yes, apply Digital Rights Management" : "No, do not apply Digital Rights Management")}
         - KDP Select enrollment: {(plan.KdpSelect ? "Yes, enroll" : "No, do not enroll")}

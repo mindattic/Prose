@@ -33,7 +33,7 @@ public static class HubGate
             try
             {
                 using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(3) };
-                var resp = http.GetAsync(new Uri(baseUrl).ToString().TrimEnd('/') + "/api/health").GetAwaiter().GetResult();
+                using var resp = http.GetAsync(new Uri(baseUrl).ToString().TrimEnd('/') + "/api/health").GetAwaiter().GetResult();
                 if (resp.IsSuccessStatusCode) return;
 
                 var body = resp.Content.ReadAsStringAsync().GetAwaiter().GetResult();

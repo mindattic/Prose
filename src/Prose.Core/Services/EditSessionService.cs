@@ -96,7 +96,7 @@ public class EditSessionService
 
             if (session == null)
             {
-                var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
+                var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
                 var autoLabel = $"auto-{today}";
                 session = new EditSession
                 {

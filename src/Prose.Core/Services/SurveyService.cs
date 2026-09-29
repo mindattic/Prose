@@ -232,7 +232,7 @@ public class SurveyService(IDbContextFactory<ProseDbContext> dbFactory)
         sb.Append("  const SURVEY_SLUG = '").Append(He(survey.Slug)).AppendLine("';");
         sb.AppendLine(@"  function pick(q, v, el) {
     ans['q-' + q] = v;
-    document.querySelectorAll('input[name=""' + el.name + '""]').forEach(r => r.closest('.opt').classList.remove('selected'));
+    document.querySelectorAll('input[name=""' + CSS.escape(el.name) + '""]').forEach(r => r.closest('.opt').classList.remove('selected'));
     el.closest('.opt').classList.add('selected');
     const done = Object.keys(ans).length;
     document.getElementById('pc').textContent = done;
@@ -288,11 +288,11 @@ public class SurveyService(IDbContextFactory<ProseDbContext> dbFactory)
         sb.AppendLine("    <div class=\"options\">");
         foreach (var opt in options)
         {
-            sb.Append("      <label class=\"opt\" id=\"o").Append(qKey).Append(He(opt.Key)).AppendLine("\">");
-            sb.Append("        <input type=\"radio\" name=\"").Append(qKey)
+            sb.Append("      <label class=\"opt\" id=\"o").Append(He(qKey)).Append(He(opt.Key)).AppendLine("\">");
+            sb.Append("        <input type=\"radio\" name=\"").Append(He(qKey))
               .Append("\" value=\"").Append(He(opt.Key))
-              .Append("\" onchange=\"pick('").Append(He(qNum))
-              .Append("','").Append(He(opt.Key)).AppendLine("',this)\">");
+              .Append("\" onchange=\"pick('").Append(JsAttr(qNum))
+              .Append("','").Append(JsAttr(opt.Key)).AppendLine("',this)\">");
             sb.AppendLine("        <span class=\"opt-dot\"></span>");
             sb.Append("        <span class=\"opt-key\">").Append(He(opt.Key)).AppendLine("</span>");
             sb.Append("        <span class=\"opt-text\">").Append(He(opt.Label));
@@ -315,6 +315,13 @@ public class SurveyService(IDbContextFactory<ProseDbContext> dbFactory)
         s is null ? "" : s
             .Replace("&", "&amp;").Replace("<", "&lt;")
             .Replace(">", "&gt;").Replace("\"", "&quot;");
+
+    /// <summary>A value for a single-quoted JS string inside a double-quoted HTML event attribute.
+    /// JavaScriptEncoder turns quotes, backslashes, &lt;, &gt;, &amp; and control characters into
+    /// \uXXXX escapes, which are safe in both contexts: HTML-escaping alone left a key like
+    /// <c>it's</c> closing the JS string (the attribute decodes back before the script parses).</summary>
+    static string JsAttr(string? s) =>
+        s is null ? "" : System.Text.Encodings.Web.JavaScriptEncoder.Default.Encode(s);
 
     // CSS is a plain verbatim string — no interpolation, no brace-escaping issues.
     const string SurveyCss = @"<style>

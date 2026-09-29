@@ -62,7 +62,9 @@ public class JsonSingletonRepository<T> where T : class, new()
                 ? new T()
                 : JsonSerializer.Deserialize<T>(row.Json, jsonOptions) ?? new T();
         }
-        catch
+        // Only a missing factory means "defaults". A transient SQL failure used to be cached as an
+        // empty document, and the next Get→modify→Save wrote that empty document over the real one.
+        catch when (dbFactory is null)
         {
             // No DB context available — return defaults. Test fixtures hit this path.
             value = new T();
@@ -87,9 +89,16 @@ public class JsonSingletonRepository<T> where T : class, new()
             else { row.Json = json; row.UpdatedAt = DateTime.UtcNow; }
             db.SaveChanges();
         }
-        catch
+        // Only a fixture with no DB factory is cache-only. Swallowing every failure let a real
+        // SQL error look like a save (voice-harvest "applied" a rule that was gone on restart).
+        catch when (dbFactory is null)
         {
             // Test fixtures with no DB factory: cache-only, lost on restart (matches legacy file behavior on read-only disk).
+        }
+        catch
+        {
+            entry = null; // don't keep serving a value that never reached the database
+            throw;
         }
     }
 

@@ -110,7 +110,7 @@ public class GlobalSearchService
 
     public List<CanonSearchResult> Search(string query, int page = 1, int pageSize = 20)
     {
-        EnsureBuilt();
+        var index = EnsureBuilt();
         if (string.IsNullOrWhiteSpace(query)) return [];
         var q = query.Trim();
         var words = q.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
@@ -126,7 +126,7 @@ public class GlobalSearchService
 
     public int SearchCount(string query)
     {
-        EnsureBuilt();
+        var index = EnsureBuilt();
         if (string.IsNullOrWhiteSpace(query)) return 0;
         var q = query.Trim();
         var words = q.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
@@ -135,7 +135,7 @@ public class GlobalSearchService
 
     public List<CanonSearchResult> SearchByTag(string tag, int page = 1, int pageSize = 20)
     {
-        EnsureBuilt();
+        var index = EnsureBuilt();
         if (string.IsNullOrWhiteSpace(tag)) return [];
         return index
             .Where(e => e.Tags.Any(t => t.Equals(tag, StringComparison.OrdinalIgnoreCase)))
@@ -148,7 +148,7 @@ public class GlobalSearchService
 
     public int SearchByTagCount(string tag)
     {
-        EnsureBuilt();
+        var index = EnsureBuilt();
         if (string.IsNullOrWhiteSpace(tag)) return 0;
         return index.Count(e => e.Tags.Any(t => t.Equals(tag, StringComparison.OrdinalIgnoreCase)));
     }
@@ -156,7 +156,7 @@ public class GlobalSearchService
     /// <summary>All tags across every repo, sorted by frequency.</summary>
     public List<(string tag, int count)> AllTags()
     {
-        EnsureBuilt();
+        var index = EnsureBuilt();
         return index
             .SelectMany(e => e.Tags)
             .GroupBy(t => t, StringComparer.OrdinalIgnoreCase)
@@ -173,7 +173,7 @@ public class GlobalSearchService
     /// </summary>
     public (List<CanonSearchResult> tier1, List<CanonSearchResult> tier2) SearchTiered(string query, int pageSize = 50)
     {
-        EnsureBuilt();
+        var index = EnsureBuilt();
         if (string.IsNullOrWhiteSpace(query)) return ([], []);
         var q = query.Trim();
         var words = q.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
@@ -202,16 +202,20 @@ public class GlobalSearchService
     /// first user-triggered <see cref="Search"/> doesn't pay the ~40 s cold
     /// deserialize-everything cost.
     /// </summary>
-    public void WarmUp() => EnsureBuilt();
+    public void WarmUp() => _ = EnsureBuilt();
 
-    private void EnsureBuilt()
+    /// <summary>Returns the index snapshot for the caller's universe. Callers must search the
+    /// returned list, not re-read the <c>index</c> field: another universe's request can rebuild
+    /// the field between this lock releasing and the caller's enumeration.</summary>
+    private List<SearchIndexEntry> EnsureBuilt()
     {
         lock (syncLock)
         {
             // The epoch is process-wide and any flow bumps it; it does not say WHICH universe the
             // index holds, so a flow could be served another universe's entities. Check both.
-            if (index.Count > 0 && builtEpoch == UniverseScope.Epoch && builtUniverse == UniverseScope.EffectiveId) return;
+            if (index.Count > 0 && builtEpoch == UniverseScope.Epoch && builtUniverse == UniverseScope.EffectiveId) return index;
             RebuildIndex();
+            return index;
         }
     }
 
@@ -227,6 +231,8 @@ public class GlobalSearchService
         lock (syncLock)
         {
             if (index.Count == 0) return;
+            // A save in another universe must not land in the index built for this one.
+            if (builtUniverse != UniverseScope.EffectiveId) return;
             // Copy-on-write: searches enumerate `index` outside the lock, and mutating the live
             // list under one threw "Collection was modified" whenever a save landed mid-search.
             var next = new List<SearchIndexEntry>(index);

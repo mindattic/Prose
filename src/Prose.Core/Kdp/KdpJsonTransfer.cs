@@ -301,7 +301,8 @@ public sealed class KdpJsonTransfer
             var fileName = Path.GetFileName(file);
             if (await db.Runs.AnyAsync(r => r.LogFileName == fileName, ct)) continue;
 
-            var parsed = KdpRunLogFormat.Parse(await File.ReadAllTextAsync(file, ct));
+            var parsed = KdpRunLogFormat.Parse(await File.ReadAllTextAsync(file, ct),
+                new DateTimeOffset(File.GetLastWriteTimeUtc(file), TimeSpan.Zero));
             if (parsed.Lines.Count == 0) continue;
             var runId = parsed.RunId ?? Guid.CreateVersion7(parsed.Lines[0].At);
             if (await db.Runs.AnyAsync(r => r.Id == runId, ct)) continue;
@@ -414,7 +415,7 @@ public sealed class KdpJsonTransfer
             Directory.CreateDirectory(logsDir);
             foreach (var run in runs)
             {
-                var name = run.LogFileName ?? $"kdp-run-{run.StartedAt.UtcDateTime:yyyyMMdd-HHmmss}.log";
+                var name = run.LogFileName ?? $"kdp-run-{run.StartedAt.UtcDateTime.ToString("yyyyMMdd-HHmmss", CultureInfo.InvariantCulture)}.log";
                 await File.WriteAllTextAsync(Path.Combine(logsDir, name), KdpRunLogFormat.Render(run.Lines), ct);
                 counts.Runs++;
                 counts.RunLines += run.Lines.Count;
@@ -525,29 +526,42 @@ public static class KdpRunLogFormat
     public sealed record ParsedLine(DateTimeOffset At, string Message);
     public sealed record ParsedLog(Guid? RunId, List<string> Codes, List<ParsedLine> Lines);
 
-    public static ParsedLog Parse(string text)
+    /// <summary>Parses a run log. Text before the first stamp becomes a line of its own dated at
+    /// the first stamp (it was written at the run's start); a log with no stamp at all is dated
+    /// <paramref name="unstampedAt"/> (default the Unix epoch). Never DateTimeOffset.MinValue:
+    /// that is not a storable run time, and Guid.CreateVersion7 throws on it.</summary>
+    public static ParsedLog Parse(string text, DateTimeOffset? unstampedAt = null)
     {
         if (text.EndsWith("\r\n", StringComparison.Ordinal)) text = text[..^2];
         else if (text.EndsWith('\n')) text = text[..^1];
 
         var lines = new List<ParsedLine>();
+        var preamble = new List<string>();
+        var firstStamped = -1;
         foreach (var entry in EntrySplit.Split(text))
         {
             var m = EntryStart.Match(entry);
             if (!m.Success)
             {
-                // Text before the first stamp: fold into a line of its own at the run's start.
-                if (entry.Length > 0) lines.Add(new ParsedLine(lines.Count > 0 ? lines[^1].At : DateTimeOffset.MinValue, entry));
+                // Only the first split piece can lack a stamp (the split is on stamps).
+                if (entry.Length > 0) preamble.Add(entry);
                 continue;
             }
             var at = DateTimeOffset.ParseExact(m.Groups["at"].Value, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture,
                 DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal);
+            if (firstStamped < 0) firstStamped = lines.Count;
             lines.Add(new ParsedLine(at, entry[m.Length..]));
+        }
+        if (preamble.Count > 0)
+        {
+            var at = lines.Count > 0 ? lines[0].At : unstampedAt ?? DateTimeOffset.UnixEpoch;
+            lines.InsertRange(0, preamble.Select(p => new ParsedLine(at, p)));
+            if (firstStamped >= 0) firstStamped += preamble.Count;
         }
 
         Guid? runId = null;
         var codes = new List<string>();
-        if (lines.Count > 0 && StartedLine.Match(lines[0].Message) is { Success: true } s)
+        if (firstStamped >= 0 && StartedLine.Match(lines[firstStamped].Message) is { Success: true } s)
         {
             runId = Guid.Parse(s.Groups["id"].Value);
             codes = s.Groups["codes"].Value.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToList();

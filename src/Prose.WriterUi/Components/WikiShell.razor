@@ -452,7 +452,7 @@
         }
 
         if (!string.IsNullOrWhiteSpace(At) && DateTime.TryParse(
-                At, null, System.Globalization.DateTimeStyles.AdjustToUniversal
+                At, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.AdjustToUniversal
                     | System.Globalization.DateTimeStyles.AssumeUniversal, out var parsed))
             asOf = parsed;
         else
@@ -487,6 +487,21 @@
             // theme.js missing or blocked — the dark default stands. Never let a preference
             // take the circuit down (see HubAssets for what that cost last time).
         }
+        catch (JSDisconnectedException)
+        {
+            // The window went away before the first render finished; there is no one to show.
+        }
+    }
+
+    /// <summary>
+    /// A button or key handler that reaches the database. Unguarded, a failed query thrown out of
+    /// an event handler ended the circuit and froze the window; here it is the error banner.
+    /// </summary>
+    private async Task GuardedAsync(Func<Task> act)
+    {
+        error = null;
+        try { await act(); }
+        catch (Exception ex) { error = ex.Message; }
     }
 
     private async Task LoadListAsync()
@@ -511,36 +526,39 @@
         }
     }
 
-    private async Task GoPageAsync(int n)
+    private Task GoPageAsync(int n) => GuardedAsync(async () =>
     {
         pageNo = Math.Max(1, n);
         await LoadListAsync();
-    }
+    });
 
     private void OnSearchInput(ChangeEventArgs e) => search = e.Value?.ToString() ?? "";
 
     private async Task OnSearchKey(KeyboardEventArgs e)
     {
         if (e.Key != "Enter") return;
-        pageNo = 1;
-        await LoadListAsync();
+        await GuardedAsync(async () =>
+        {
+            pageNo = 1;
+            await LoadListAsync();
+        });
     }
 
-    private async Task ToggleHistoryAsync()
+    private Task ToggleHistoryAsync() => GuardedAsync(async () =>
     {
         showHistory = !showHistory;
         if (showHistory && versions is null && entity is not null)
             versions = await Wiki.GetVersionsAsync(entity.Header.Id);
-    }
+    });
 
-    private async Task SelectVersionAsync(DateTime when)
+    private Task SelectVersionAsync(DateTime when) => GuardedAsync(async () =>
     {
         selectedVersion = when;
         diff = null;
         StateHasChanged();
         if (entity is not null)
             diff = await Wiki.DiffAgainstCurrentAsync(entity.Header.Id, when);
-    }
+    });
 
     private void ToggleEditing()
     {
@@ -616,17 +634,18 @@
         }
     }
 
-    private async Task ClearAsOfAsync()
+    private Task ClearAsOfAsync() => GuardedAsync(async () =>
     {
         asOf = null;
         await LoadEntityAsync();
-    }
+    });
 
     private async Task ToggleThemeAsync()
     {
         var next = theme == "light" ? "dark" : "light";
         try { theme = await JS.InvokeAsync<string>("proseWriter.setTheme", next); }
         catch (JSException) { theme = next; }
+        catch (JSDisconnectedException) { }
     }
 
     // Razor cannot parse a ternary containing double quotes inside an attribute value, so any

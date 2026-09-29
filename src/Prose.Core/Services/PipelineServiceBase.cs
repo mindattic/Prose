@@ -65,7 +65,8 @@ public abstract class PipelineServiceBase
     {
         pauseTcs = null;
         OnCancel();
-        cts?.Cancel();
+        // The run's finally can dispose the source between the read and Cancel.
+        try { cts?.Cancel(); } catch (ObjectDisposedException) { }
     }
 
     // ── Subclass hooks ────────────────────────────────────────

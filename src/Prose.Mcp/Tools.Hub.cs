@@ -54,7 +54,7 @@ public class HubTools(IHttpClientFactory httpFactory)
     {
         try
         {
-            var resp = await http.PostAsJsonAsync("api/edges", new
+            using var resp = await http.PostAsJsonAsync("api/edges", new
             {
                 source, target, relationType, sentiment, description, universe = universe,
                 validFromBeatId, validUntilBeatId,
@@ -82,7 +82,7 @@ public class HubTools(IHttpClientFactory httpFactory)
         {
             var url = $"api/universes/{Uri.EscapeDataString(universe)}/snapshot?scope={Uri.EscapeDataString(scope)}";
             if (!string.IsNullOrWhiteSpace(nodeCode)) url += $"&nodeCode={Uri.EscapeDataString(nodeCode)}";
-            var resp = await http.GetAsync(url);
+            using var resp = await http.GetAsync(url);
             var body = await resp.Content.ReadAsStringAsync();
             return resp.IsSuccessStatusCode ? body : JsonSerializer.Serialize(new { error = "hub_error", status = (int)resp.StatusCode, body }, JsonOpts);
         }
@@ -100,7 +100,7 @@ public class HubTools(IHttpClientFactory httpFactory)
     {
         try
         {
-            var resp = await http.GetAsync($"api/universes/{Uri.EscapeDataString(universe)}/stats");
+            using var resp = await http.GetAsync($"api/universes/{Uri.EscapeDataString(universe)}/stats");
             var body = await resp.Content.ReadAsStringAsync();
             return resp.IsSuccessStatusCode ? body : JsonSerializer.Serialize(new { error = "hub_error", status = (int)resp.StatusCode, body }, JsonOpts);
         }

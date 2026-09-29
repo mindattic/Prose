@@ -113,7 +113,7 @@ public static class TransportationMapper
         var t = BuildIncludeChain(db.Transportations.AsNoTracking())
             .FirstOrDefault(x => x.Id == id);
         if (t == null) return null;
-        var entity = db.Entities.AsNoTracking().FirstOrDefault(e => e.Id == id);
+        var entity = db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         var tags = db.EntityTags.AsNoTracking()
             .Where(x => x.EntityId == id)
             .Select(x => x.Tag!.Name)

@@ -81,6 +81,19 @@ public sealed class CharacterFieldWriter(CharacterRepository characters, ReadGat
         if (refused.Count > 0)
             return FieldWriteResult.Fail(string.Join(" ", refused.Select(k => $"'{k}' is not written here: {Refused[k]}")));
 
+        // Pin this flow to the character's own universe: the repository read/save and the mapper's
+        // name → id bridge resolution run under the ambient filter, so a character outside it read
+        // without its Entity row and its save re-inserted that row (PK violation). AsyncLocal: the
+        // pin ends when this async method returns.
+        if (Guid.TryParse(id, out var pinId))
+        {
+            await using var udb = await dbFactory.CreateDbContextAsync(ct);
+            var owner = await udb.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == pinId)
+                .Select(e => (Guid?)e.UniverseId).FirstOrDefaultAsync(ct);
+            if (owner is { } u && u != Guid.Empty && UniverseScope.EffectiveId != u)
+                UniverseScope.Current?.SetFlowUniverse(u);
+        }
+
         var current = characters.GetById(id);
         if (current == null) return FieldWriteResult.Fail($"no character with id {id} in this universe.");
         var entityId = Guid.Parse(current.Id);

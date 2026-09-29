@@ -83,11 +83,14 @@ public class CodexCliService : ILlmService
 
             using (doc)
             {
-                if (!doc.RootElement.TryGetProperty("type", out var typeEl)) continue;
-                if (typeEl.GetString() != "item.completed") continue;
-                if (!doc.RootElement.TryGetProperty("item", out var item)) continue;
-                if (!item.TryGetProperty("type", out var itemType) || itemType.GetString() != "agent_message") continue;
-                if (item.TryGetProperty("text", out var textEl))
+                // Shape checks before every accessor: TryGetProperty throws on a non-object and
+                // GetString on a non-string, and neither is a JsonException the parse catch sees.
+                var root = doc.RootElement;
+                if (root.ValueKind != JsonValueKind.Object) continue;
+                if (!IsString(root, "type", "item.completed")) continue;
+                if (!root.TryGetProperty("item", out var item) || item.ValueKind != JsonValueKind.Object) continue;
+                if (!IsString(item, "type", "agent_message")) continue;
+                if (item.TryGetProperty("text", out var textEl) && textEl.ValueKind == JsonValueKind.String)
                 {
                     if (sb.Length > 0) sb.Append('\n');
                     sb.Append(textEl.GetString());
@@ -111,10 +114,15 @@ public class CodexCliService : ILlmService
                     doc.RootElement.TryGetProperty("message", out var m))
                     return m.GetString();
             }
-            catch (JsonException) { }
+            // InvalidOperationException: a non-object root/error or a non-string message. The
+            // error path must still report stderr rather than throw a shape error of its own.
+            catch (Exception e) when (e is JsonException or InvalidOperationException) { }
         }
         return null;
     }
+
+    private static bool IsString(JsonElement obj, string name, string expected) =>
+        obj.TryGetProperty(name, out var el) && el.ValueKind == JsonValueKind.String && el.GetString() == expected;
 
     // A hung `codex` process (network stall, interactive prompt it can't answer headlessly)
     // previously blocked forever — callers typically pass CancellationToken.None, and there

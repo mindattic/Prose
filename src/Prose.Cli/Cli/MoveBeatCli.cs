@@ -32,8 +32,9 @@ public static class MoveBeatCli
             switch (args[i])
             {
                 case "--slug":        if (i + 1 < args.Length) slug = args[++i]; break;
-                case "--beat-number": if (i + 1 < args.Length) int.TryParse(args[++i], out beatNumber); break;
-                case "--after":       if (i + 1 < args.Length) int.TryParse(args[++i], out after); break;
+                // A non-number used to parse as 0, and "--after 0" means "move to the very top".
+                case "--beat-number": if (i + 1 < args.Length && !int.TryParse(args[++i], out beatNumber)) { Console.Error.WriteLine($"[move-beat] --beat-number expects a number, got '{args[i]}'."); return 1; } break;
+                case "--after":       if (i + 1 < args.Length && !int.TryParse(args[++i], out after)) { Console.Error.WriteLine($"[move-beat] --after expects a number, got '{args[i]}'."); return 1; } break;
             }
         }
 
@@ -77,11 +78,26 @@ public static class MoveBeatCli
             return 1;
         }
 
+        if (after == beatNumber)
+        {
+            // The service refuses this with an exception; answer it as the bad argument it is.
+            Console.Error.WriteLine($"[move-beat] --after {after} is the beat itself; to leave it where it is, do nothing.");
+            return 1;
+        }
+
         var subject = ordered[beatNumber - 1].Beat;
         Guid? afterId = after == 0 ? null : ordered[after - 1].Beat.Id;
 
         Console.Write($"[move-beat] Moving beat #{beatNumber} (id {subject.Id}) to after position {after}… ");
-        await workbench.MoveBeatAsync(nodeId, subject.Id, afterId);
+        try { await workbench.MoveBeatAsync(nodeId, subject.Id, afterId); }
+        catch (InvalidOperationException ex)
+        {
+            // e.g. a book slug: its reading order spans chapters, but a move re-slots within one
+            // node's own beats, so the service reports the beat or anchor as not in that node.
+            Console.WriteLine();
+            Console.Error.WriteLine($"[move-beat] {ex.Message}");
+            return 1;
+        }
         Console.WriteLine("ok.");
         return 0;
     }

@@ -100,8 +100,10 @@
         // proseModal does the remembering and restoring; reusing it means the context menu and
         // the dialogs cannot drift apart on what "give focus back" means.
         await JsAsync("proseModal.fit", menuRef);
-        await JsAsync("proseModal.open", menuRef);
-        focusTrapped = true;
+        try { trap = await JS.InvokeAsync<int>("proseModal.open", menuRef); }
+        catch (JSDisconnectedException) { }
+        catch (JSException) { }
+        focusTrapped = trap != 0;
         await FocusAsync(focused);
     }
 
@@ -185,8 +187,9 @@
     {
         if (focusTrapped)
         {
-            await JsAsync("proseModal.close");
+            await JsAsync("proseModal.close", trap);
             focusTrapped = false;
+            trap = 0;
         }
         opened = false;
         // The refs array is deliberately NOT cleared here. A render can still run against the old
@@ -206,6 +209,9 @@
 
     public async ValueTask DisposeAsync()
     {
-        if (focusTrapped) await JsAsync("proseModal.close");
+        if (focusTrapped) await JsAsync("proseModal.close", trap);
     }
+
+    /// <summary>This menu's own focus trap, so closing it can never release a dialog's.</summary>
+    private int trap;
 }

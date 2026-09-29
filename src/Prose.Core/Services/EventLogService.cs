@@ -30,7 +30,10 @@ public class EventLogService
     private readonly ILogger<EventLogService> log;
 
     // In-memory logs per project, lazy-loaded from DB (migrating from disk on first miss).
+    // The service is a Hub singleton reached from concurrent request threads, so the dictionary
+    // and every list in it are read and written only under `gate`; callers get snapshots.
     private readonly Dictionary<string, List<StoryEvent>> logs = new();
+    private readonly object gate = new();
 
     public EventLogService(
         ILlmService llm,
@@ -44,12 +47,29 @@ public class EventLogService
         this.log = log;
     }
 
-    /// <summary>Get all events for a chapter project.</summary>
+    /// <summary>Get all events for a chapter project (a snapshot; mutate through
+    /// <see cref="AddEvent"/> / <see cref="Clear"/>).</summary>
     public List<StoryEvent> GetEvents(string projectId)
     {
-        if (!logs.ContainsKey(projectId))
-            logs[projectId] = LoadFromDb(projectId);
-        return logs[projectId];
+        EnsureLoaded(projectId);
+        lock (gate) return [.. logs[projectId]];
+    }
+
+    /// <summary>Loads the project's log into the cache once. The DB read runs outside the lock;
+    /// if two threads race, the first to publish wins and the other's load is discarded.</summary>
+    private void EnsureLoaded(string projectId)
+    {
+        lock (gate) { if (logs.ContainsKey(projectId)) return; }
+        var loaded = LoadFromDb(projectId);
+        lock (gate) logs.TryAdd(projectId, loaded);
+    }
+
+    /// <summary>Appends under the lock, then persists.</summary>
+    private void Append(string projectId, IEnumerable<StoryEvent> events)
+    {
+        EnsureLoaded(projectId);
+        lock (gate) logs[projectId].AddRange(events);
+        SaveToDb(projectId);
     }
 
     /// <summary>
@@ -88,7 +108,7 @@ public class EventLogService
             var rawEvents = JsonSerializer.Deserialize<List<RawEvent>>(json.Trim(),
                 JsonDefaults.LlmParsing);
 
-            var events = GetEvents(projectId);
+            var events = new List<StoryEvent>();
             foreach (var raw in rawEvents ?? [])
             {
                 events.Add(new StoryEvent
@@ -107,17 +127,13 @@ public class EventLogService
                 });
             }
 
-            SaveToDb(projectId);
+            Append(projectId, events);
         }
         catch (Exception ex) { log.LogWarning(ex, "Event extraction failed for project={ProjectId}, beat={BeatIndex}", projectId, beatIndex); }
     }
 
     /// <summary>Add an event manually (for user-created events or system events).</summary>
-    public void AddEvent(string projectId, StoryEvent evt)
-    {
-        GetEvents(projectId).Add(evt);
-        SaveToDb(projectId);
-    }
+    public void AddEvent(string projectId, StoryEvent evt) => Append(projectId, [evt]);
 
     /// <summary>Search events by participant name.</summary>
     public List<StoryEvent> GetEventsForCharacter(string projectId, string characterName) =>
@@ -179,7 +195,7 @@ public class EventLogService
     /// <summary>Clear all events for a story.</summary>
     public void Clear(string projectId)
     {
-        logs[projectId] = [];
+        lock (gate) logs[projectId] = [];
         SaveToDb(projectId);
     }
 
@@ -274,7 +290,8 @@ public class EventLogService
                 log.LogDebug("EventLog: no Chapters row for {ProjectId}; events held in-memory only until chapter exists", projectId);
                 return;
             }
-            var events = logs.GetValueOrDefault(projectId, []);
+            List<StoryEvent> events;
+            lock (gate) events = [.. logs.GetValueOrDefault(projectId, [])];
             row.EventsJson = events.Count == 0 ? null : JsonSerializer.Serialize(events, JsonDefaults.Indented);
             row.ModifiedAt = DateTime.UtcNow;
             db.SaveChanges();

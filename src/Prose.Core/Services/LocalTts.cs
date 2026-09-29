@@ -170,7 +170,7 @@ public sealed class PythonTtsService : ILocalTtsEngine
                 FileName = ffmpegPath, RedirectStandardOutput = true, RedirectStandardError = true,
                 UseShellExecute = false, CreateNoWindow = true,
             };
-            foreach (var a in new[] { "-v", "error", "-i", tmpWav, "-f", "s16le", "-acodec", "pcm_s16le", "-ar", "44100", "-ac", "1", "-" })
+            foreach (var a in new[] { "-nostdin", "-v", "error", "-i", tmpWav, "-f", "s16le", "-acodec", "pcm_s16le", "-ar", "44100", "-ac", "1", "-" })
                 psf.ArgumentList.Add(a);
 
             using var f = Process.Start(psf)!;

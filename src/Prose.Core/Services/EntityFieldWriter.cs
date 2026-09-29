@@ -72,10 +72,22 @@ public sealed class EntityFieldWriter(
     {
         if (!Guid.TryParse(id, out var entityId)) return FieldWriteResult.Fail($"'{id}' is not an entity id.");
         string? entityType;
+        Guid entityUniverse;
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
-            entityType = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == entityId)
-                .Select(e => e.EntityType).FirstOrDefaultAsync(ct);
+        {
+            var row = await db.Entities.IgnoreQueryFilters().AsNoTracking().Where(e => e.Id == entityId)
+                .Select(e => new { e.EntityType, e.UniverseId }).FirstOrDefaultAsync(ct);
+            entityType = row?.EntityType;
+            entityUniverse = row?.UniverseId ?? Guid.Empty;
+        }
         if (entityType == null) return FieldWriteResult.Fail($"no entity with id {id}.");
+        // The id was resolved across universes, but the repository read/save (and every mapper's
+        // name → id bridge resolution) runs under the ambient filter. Pin this flow to the entity's
+        // own universe, or a record outside the ambient scope reads without its Entity row and its
+        // save re-inserts it (PK violation) with bridges resolved against the wrong world. AsyncLocal:
+        // the pin ends when this async method returns.
+        if (entityUniverse != Guid.Empty && UniverseScope.EffectiveId != entityUniverse)
+            UniverseScope.Current?.SetFlowUniverse(entityUniverse);
         if (entityType == "character") return await characterWriter.SetFieldsAsync(id, fieldsJson, confirmUnread, ct);
         if (!Repositories.TryGetValue(entityType, out var repoType))
             return FieldWriteResult.Fail($"entity type '{entityType}' has no repository-backed record, so it has no field writer.");

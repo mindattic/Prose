@@ -342,7 +342,7 @@ public class DialogueService
     private static string ShortenToSignal(string s)
     {
         if (s.Length <= 80) return s;
-        var dot = s.IndexOf(". ");
+        var dot = s.IndexOf(". ", StringComparison.Ordinal);
         if (dot > 0 && dot < 80) return s[..dot];
         return s[..80].TrimEnd() + "…";
     }

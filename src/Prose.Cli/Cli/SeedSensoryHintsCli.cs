@@ -263,7 +263,9 @@ public static class SeedSensoryHintsCli
         }
 
         // 2. Name lookup
-        var weaponByName = await db.Weapons.FirstOrDefaultAsync(w => w.Name == cw.Name);
+        // Weapons has no universe filter: scope through the entity spine (as ResolveWeaponIdByName
+        // does), or another universe's same-named weapon is returned and hinted.
+        var weaponByName = await db.Weapons.FirstOrDefaultAsync(w => w.Name == cw.Name && db.Entities.Any(e => e.Id == w.Id));
         if (weaponByName != null)
         {
             Console.WriteLine($"  {cw.Name}: found by name in Weapons");

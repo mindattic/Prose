@@ -40,7 +40,14 @@ public static class DeleteAliasCli
             {
                 case "--value": if (i + 1 < args.Length) value = args[++i]; break;
                 case "--type":  if (i + 1 < args.Length) typeFilter = args[++i]; break;
-                case "--owner": if (i + 1 < args.Length && Guid.TryParse(args[++i], out var ow)) ownerFilter = ow; break;
+                case "--owner":
+                    if (i + 1 < args.Length)
+                    {
+                        // A mistyped owner used to drop the filter, so --apply deleted the value from every owner.
+                        if (!Guid.TryParse(args[++i], out var ow)) { Console.Error.WriteLine($"[delete-alias] --owner expects an entity GUID, got '{args[i]}'."); return 2; }
+                        ownerFilter = ow;
+                    }
+                    break;
             }
         }
         var apply = args.Contains("--apply");

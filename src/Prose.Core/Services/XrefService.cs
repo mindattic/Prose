@@ -171,14 +171,19 @@ public class XrefService
         }
     }
 
-    public void EnsureBuilt()
+    public void EnsureBuilt() => _ = Snapshot();
+
+    /// <summary>Builds if needed and returns the caller's universe's index, captured under the
+    /// lock. Readers must use this snapshot, not the fields: a save (Invalidate) or another
+    /// universe's request (rebuild) can swap the fields between EnsureBuilt and the read.</summary>
+    private (Dictionary<string, XrefEntry> Index, Dictionary<string, XrefEntry> ById, List<XrefConflict> Conflicts) Snapshot()
     {
         lock (syncLock)
         {
             // The repositories are universe-scoped: an index built in one universe went on
             // resolving [[Kyle]] to that universe's Kyle after a switch.
-            if (indexBuilt && builtUniverse == UniverseScope.EffectiveId) return;
-            RebuildIndex();
+            if (!(indexBuilt && builtUniverse == UniverseScope.EffectiveId)) RebuildIndex();
+            return (index, indexById, conflicts);
         }
     }
 
@@ -384,8 +389,7 @@ public class XrefService
 
     public XrefEntry? Resolve(string name)
     {
-        EnsureBuilt();
-        return index.GetValueOrDefault(name);
+        return Snapshot().Index.GetValueOrDefault(name);
     }
 
     /// <summary>Splits text into alternating plain and xref segments for inline rendering.
@@ -394,7 +398,7 @@ public class XrefService
     public List<TextSegment> ParseSegments(string text, bool enableNer = false)
     {
         if (string.IsNullOrWhiteSpace(text)) return [new PlainSegment(text ?? "")];
-        EnsureBuilt();
+        var (index, indexById, _) = Snapshot();
 
         // Pass 1: resolve explicit [[WikiLink]] and [[display|id]] markup.
         var pass1 = new List<TextSegment>();
@@ -436,7 +440,7 @@ public class XrefService
         foreach (var seg in pass1)
         {
             if (seg is not PlainSegment plain) { result.Add(seg); continue; }
-            result.AddRange(ScanPlainText(plain.Text, autoLinkNames));
+            result.AddRange(ScanPlainText(plain.Text, autoLinkNames, index));
         }
         return result;
     }
@@ -455,7 +459,7 @@ public class XrefService
 
     private static bool IsWordChar(char c) => char.IsLetterOrDigit(c);
 
-    private IEnumerable<TextSegment> ScanPlainText(string text, List<string> sortedNames)
+    private static IEnumerable<TextSegment> ScanPlainText(string text, List<string> sortedNames, Dictionary<string, XrefEntry> index)
     {
         int pos = 0;
         int plainStart = 0;
@@ -503,20 +507,18 @@ public class XrefService
 
     /// <summary>Names claimed by more than one entity in the last index build, with the winner
     /// (the one more mentioned in prose) and the loser.</summary>
-    public IReadOnlyList<XrefConflict> GetConflicts() { EnsureBuilt(); return conflicts; }
+    public IReadOnlyList<XrefConflict> GetConflicts() => Snapshot().Conflicts;
 
     /// <summary>All indexed entries (one per entity), for typeahead / full search.</summary>
     public IEnumerable<XrefEntry> AllEntries()
     {
-        EnsureBuilt();
-        return index.Values.DistinctBy(e => e.Id);
+        return Snapshot().Index.Values.DistinctBy(e => e.Id);
     }
 
     /// <summary>Full name→entry index including aliases. Used by CrossReferenceService.</summary>
     public IReadOnlyDictionary<string, XrefEntry> GetNameIndex()
     {
-        EnsureBuilt();
-        return index;
+        return Snapshot().Index;
     }
 
     public void InvalidateIndex() => Invalidate();

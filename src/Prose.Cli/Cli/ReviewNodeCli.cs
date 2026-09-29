@@ -101,6 +101,18 @@ public static class ReviewNodeCli
             }
         }
 
+        // A count that does not parse used to be dropped silently and the billed review ran with
+        // the settings default (--ballots 5 typed as --ballots five paid for the default panel).
+        foreach (var numeric in new[] { "--readers", "--panel", "--ballots", "--prose", "--seg-chars", "--seg-ballots", "--local-ctx" })
+        {
+            var at = Array.IndexOf(args, numeric);
+            if (at >= 0 && (at + 1 >= args.Length || !int.TryParse(args[at + 1], out _)))
+            {
+                Console.Error.WriteLine($"[review-node] {numeric} expects a whole number, got '{(at + 1 < args.Length ? args[at + 1] : "")}'.");
+                return 1;
+            }
+        }
+
         // SS-A44: score panels are disabled by default. Require the explicit override.
         var votingGate = services.GetRequiredService<VotingGate>();
         try { votingGate.EnsureAllowed("review-node", allowVotes); }

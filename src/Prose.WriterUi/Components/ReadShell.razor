@@ -29,6 +29,11 @@
                 record is where you stopped caring.
             </p>
 
+            @if (problem is not null)
+            {
+                <p class="muted" role="alert">@problem</p>
+            }
+
             @if (books is null)
             {
                 <p class="muted">Loading…</p>
@@ -102,6 +107,11 @@
             {
                 <span class="muted read-prior" title="Marked on previous passes">@n prior</span>
             }
+
+            @if (problem is not null)
+            {
+                <span class="muted" role="alert">@problem</span>
+            }
         </footer>
     }
 </div>
@@ -119,20 +129,39 @@
     private bool markedHere =>
         pages.Count > 0 && markedThisPass.Contains(pages[current].BeatId);
 
-    protected override async Task OnInitializedAsync() => books = await Read.BooksAsync();
+    /// <summary>A database failure, said in one line. Unguarded, it ended the circuit and froze
+    /// the window.</summary>
+    private string? problem;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try { books = await Read.BooksAsync(); }
+        catch (Exception ex) { books = []; problem = $"The books could not be loaded: {ex.Message}"; }
+    }
 
     private async Task OpenAsync(ReadService.BookChoice choice)
     {
-        book = choice;
-        current = 0;
-        markedThisPass.Clear();
-        pages = await Read.PagesAsync(choice.Id);
-        priorMarks = await Read.MarksByBeatAsync(choice.Id);
+        problem = null;
+        try
+        {
+            var loaded = await Read.PagesAsync(choice.Id);
+            var marks = await Read.MarksByBeatAsync(choice.Id);
+            book = choice;
+            current = 0;
+            markedThisPass.Clear();
+            pages = loaded;
+            priorMarks = marks;
+        }
+        catch (Exception ex)
+        {
+            problem = $"“{choice.Title}” could not be opened: {ex.Message}";
+        }
     }
 
     private async Task CloseAsync()
     {
         await StopAsync();
+        problem = null;
         book = null;
         pages = [];
         current = 0;
@@ -225,10 +254,25 @@
         if (book is null || pages.Count == 0) return;
 
         var page = pages[current];
-        if (!markedThisPass.Add(page.BeatId)) return;   // one mark per beat per pass
+        if (marking || markedThisPass.Contains(page.BeatId)) return;   // one mark per beat per pass
 
-        await Read.MarkAsync(book.Id, page);
+        // "Marked" only once the mark is actually on record: adding it first showed a mark that a
+        // failed write had never kept. `marking` keeps a double click from writing two meanwhile.
+        problem = null;
+        marking = true;
+        try
+        {
+            await Read.MarkAsync(book.Id, page);
+            markedThisPass.Add(page.BeatId);
+        }
+        catch (Exception ex)
+        {
+            problem = $"The mark was not recorded: {ex.Message}";
+        }
+        finally { marking = false; }
     }
+
+    private bool marking;
 
     private async Task JsAsync(string identifier, params object?[] args)
     {

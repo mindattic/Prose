@@ -121,6 +121,8 @@ public static class ObligationCli
                 var kind = Flag("--kind") ?? ObligationKind.Promise;
                 var description = Flag("--description");
                 if (string.IsNullOrWhiteSpace(description)) { Console.Error.WriteLine("[obligations] --description is required."); return 2; }
+                // A mistyped --beat-id used to open the obligation with no origin beat at all.
+                if (Flag("--beat-id") is { } rawBeat && !Guid.TryParse(rawBeat, out _)) { Console.Error.WriteLine($"[obligations] --beat-id expects a beat GUID, got '{rawBeat}'."); return 2; }
                 Guid? beatId = Guid.TryParse(Flag("--beat-id"), out var b) ? b : null;
                 var (dueKind, dueValue) = ParseDue(Flag("--due"));
                 var res = await svc.OpenAsync(nodeId, kind, description, ObligationActor.AuthorCli, beatId, Flag("--quote"), null, Flag("--trigger"), dueKind, dueValue);

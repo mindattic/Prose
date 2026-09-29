@@ -206,7 +206,7 @@ public class QualityTools
                 await costEstimator.RecordActualAsync(costCommandName, costEstimate.Estimated, actualCost, "claude");
         }
 
-        string? synopsis = null;
+        string? synopsis = null, synopsisError = null;
         if (result.BallotsSaved > 0)
         {
             try
@@ -215,7 +215,8 @@ public class QualityTools
                 synopsis = summary.SummaryMarkdown;
             }
             catch (OperationCanceledException) { throw; }
-            catch { }
+            // Reported, not swallowed: a null synopsis read the same as "no ballots saved".
+            catch (Exception ex) { synopsisError = ex.Message; }
         }
 
         // EXPLICIT brain: callers must always be able to tell which transport ran.
@@ -243,6 +244,7 @@ public class QualityTools
             report_htm        = result.ReportHtmPath,   // filterable per-voter viewer (open in browser)
             report_json       = result.ReportJsonPath,  // per-voter data feed
             synopsis_markdown = synopsis,
+            synopsis_error    = synopsisError,
         }, CanonTools.JsonOpts);
     }
 

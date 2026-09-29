@@ -30,7 +30,7 @@ public static class SaveGuard
         Func<ProseDbContext, Guid, T?> loadOne)
         where T : class
     {
-        var row = db.Entities.AsNoTracking().Where(e => e.Id == id)
+        var row = db.Entities.AsNoTracking().IgnoreQueryFilters().Where(e => e.Id == id)
             .Select(e => new { e.Name, e.Description }).FirstOrDefault();
         if (row == null || !string.Equals(row.Name, name, StringComparison.Ordinal)) return false;
         if (syncedDescription != null && !string.Equals(row.Description, syncedDescription, StringComparison.Ordinal)) return false;

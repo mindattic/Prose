@@ -1183,9 +1183,10 @@ public class ContinuityService
                 .Select(c => new { c.EntityId, c.Predicate })
                 .Distinct()
                 .ToList()
-                .Select(k => (k.EntityId, k.Predicate))
+                .Select(k => (k.EntityId.ToLowerInvariant(), k.Predicate.ToLowerInvariant()))
                 .ToHashSet();
-            keys = keys.Where(k => bookKeys.Contains((k.EntityId, k.Predicate))).ToList();
+            // Case-folded for the same reason as the claim match below.
+            keys = keys.Where(k => bookKeys.Contains((k.EntityId.ToLowerInvariant(), k.Predicate.ToLowerInvariant()))).ToList();
         }
 
         // One query for every key's claims, not one query per key (2026-09-04). The N+1 shape was
@@ -1194,19 +1195,25 @@ public class ContinuityService
         // tier) and the group adjudicator, both of which call this method. Filtering by EntityId
         // and re-checking the predicate client-side keeps the parameter list small — SQL Server
         // has no composite-key IN, and a 500-clause OR is worse than the fetch.
+        // Keys folded to lower case, as in GetContradictionGroupsSince: the SQL GroupBy above runs
+        // under the database's case-insensitive collation, so "Age" and "age" are one key there,
+        // and an ordinal match here dropped the claims whose casing differed from the key's.
+        static (string, string) KeyOf(string entityId, string predicate) =>
+            (entityId.ToLowerInvariant(), predicate.ToLowerInvariant());
+        keys = keys.DistinctBy(k => KeyOf(k.EntityId, k.Predicate)).ToList();
         var wantedEntityIds = keys.Select(k => k.EntityId).Distinct().ToList();
-        var wantedKeys = keys.Select(k => (k.EntityId, k.Predicate)).ToHashSet();
+        var wantedKeys = keys.Select(k => KeyOf(k.EntityId, k.Predicate)).ToHashSet();
         var claimsByKey = db.ContinuityClaims.AsNoTracking()
             .Where(c => wantedEntityIds.Contains(c.EntityId) && live.Contains(c.Status))
             .ToList()
-            .Where(c => wantedKeys.Contains((c.EntityId, c.Predicate)))
-            .GroupBy(c => (c.EntityId, c.Predicate))
+            .Where(c => wantedKeys.Contains(KeyOf(c.EntityId, c.Predicate)))
+            .GroupBy(c => KeyOf(c.EntityId, c.Predicate))
             .ToDictionary(g => g.Key, g => g.OrderBy(c => c.FirstAssertedAt).ToList());
 
         var groups = new List<ContradictionGroup>();
         foreach (var k in keys)
         {
-            if (!claimsByKey.TryGetValue((k.EntityId, k.Predicate), out var claims)) continue;
+            if (!claimsByKey.TryGetValue(KeyOf(k.EntityId, k.Predicate), out var claims)) continue;
             // The SQL Distinct() above counts variants by exact string, so a key whose only
             // "disagreement" is rewording still reached here (2026-09-04). Collapse the members
             // into genuinely distinct assertions before deciding this is a group at all —

@@ -139,7 +139,14 @@
         failure = null;
         // Asked once per book rather than per search: it is a count over the whole book, and the
         // answer does not change between two presses of Find.
-        coverage = BookNodeId == Guid.Empty ? null : await Search.CoverageAsync(BookNodeId);
+        coverage = null;
+        if (BookNodeId == Guid.Empty) return;
+        try { coverage = await Search.CoverageAsync(BookNodeId); }
+        catch (Exception ex)
+        {
+            // Unguarded, a failed count ended the circuit the moment Find opened.
+            failure = $"The search index could not be checked: {ex.Message}";
+        }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)

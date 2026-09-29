@@ -416,13 +416,18 @@ public static class WorkerModeCli
         {
             using var doc = JsonDocument.Parse(raw[o..(c + 1)]);
             if (!doc.RootElement.TryGetProperty("relationships", out var arr)) return [];
-            return arr.EnumerateArray().Select(el =>
+            if (arr.ValueKind != JsonValueKind.Array) return [];
+            return arr.EnumerateArray().Where(el => el.ValueKind == JsonValueKind.Object).Select(el =>
             {
-                var targetName  = el.TryGetProperty("targetName", out var t) ? t.GetString() : null;
-                var relType     = el.TryGetProperty("relationType", out var rt) ? rt.GetString() ?? "related_to" : "related_to";
-                var description = el.TryGetProperty("description", out var d) ? d.GetString() : null;
-                var sentiment   = el.TryGetProperty("sentiment", out var s) ? s.GetString() : "neutral";
-                var confidence  = el.TryGetProperty("confidence", out var cf) ? cf.GetDouble() : 0.7;
+                // ValueKind-guarded: one relationship with a null confidence or a numeric name threw,
+                // and the outer catch discarded every relationship in the response.
+                static string? Str(JsonElement e, string k) =>
+                    e.TryGetProperty(k, out var v) && v.ValueKind == JsonValueKind.String ? v.GetString() : null;
+                var targetName  = Str(el, "targetName");
+                var relType     = Str(el, "relationType") ?? "related_to";
+                var description = Str(el, "description");
+                var sentiment   = Str(el, "sentiment") ?? "neutral";
+                var confidence  = el.TryGetProperty("confidence", out var cf) && cf.ValueKind == JsonValueKind.Number ? cf.GetDouble() : 0.7;
                 return new RelExtract(null, targetName, relType, description, sentiment, confidence);
             }).Where(r => r.TargetName != null && r.Confidence >= 0.6).ToList();
         }

@@ -183,7 +183,7 @@ public sealed class SpeechService(
         {
             var (_, extension) = NormalizeMime(mimeType);
             // Foldered by month so the directory stays listable after a year of dictation.
-            var folder = DateTime.UtcNow.ToString("yyyy-MM");
+            var folder = DateTime.UtcNow.ToString("yyyy-MM", System.Globalization.CultureInfo.InvariantCulture);
             var name = $"{Guid.CreateVersion7():N}.{extension}";
 
             var directory = Path.Combine(RecordingsRoot, folder);

@@ -41,6 +41,7 @@ public class WorldStateLedger
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         if (ev.AtStoryTime == default) ev.AtStoryTime = DateTime.UtcNow;
+        await StampEntityUniverseAsync(db, [ev], ct);
 
         db.EntityStateEvents.Add(ev);
         await db.SaveChangesAsync(ct);
@@ -62,6 +63,7 @@ public class WorldStateLedger
     {
         if (events.Count == 0) return 0;
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        await StampEntityUniverseAsync(db, events, ct);
 
         foreach (var ev in events)
         {
@@ -71,6 +73,25 @@ public class WorldStateLedger
         var n = await db.SaveChangesAsync(ct);
         try { OnEventsRecorded?.Invoke(events.Count); } catch { }
         return n;
+    }
+
+    /// <summary>
+    /// An event's UniverseId is denormalized from its ENTITY. Left empty, the insert stamp used the
+    /// ambient universe, so an event for an entity outside it (a Hub whose ambient universe differs
+    /// from the book being written) landed in the wrong universe and was invisible to that
+    /// entity's own world-state reads.
+    /// </summary>
+    private static async Task StampEntityUniverseAsync(ProseDbContext db, IReadOnlyList<EntityStateEvent> events, CancellationToken ct)
+    {
+        var ids = events.Where(e => e.UniverseId == Guid.Empty).Select(e => e.EntityId).Distinct().ToList();
+        if (ids.Count == 0) return;
+        var owners = await db.Entities.IgnoreQueryFilters().AsNoTracking()
+            .Where(e => ids.Contains(e.Id))
+            .Select(e => new { e.Id, e.UniverseId })
+            .ToDictionaryAsync(x => x.Id, x => x.UniverseId, ct);
+        foreach (var ev in events)
+            if (ev.UniverseId == Guid.Empty && owners.TryGetValue(ev.EntityId, out var u))
+                ev.UniverseId = u;
     }
 
     // ── query ─────────────────────────────────────────────────────────────────

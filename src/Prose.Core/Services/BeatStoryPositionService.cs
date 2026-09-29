@@ -52,8 +52,11 @@ public sealed class BeatStoryPositionService(
             .FirstOrDefaultAsync(ct)
             ?? throw new InvalidOperationException($"Node {bookNodeId} not found.");
 
-        var ordered = await workbench.GetOrderedBeatsAsync(bookNodeId, ct);
-        var ids = ordered.Select(o => o.Beat.Id).ToList();
+        // A beat linked under two chapters appears twice in reading order. It has one column, so it
+        // keeps its FIRST position and the repeat takes none (positions stay dense); otherwise the
+        // later occurrence overwrote the first and a dry run counted the beat as changed twice.
+        var ids = (await workbench.GetOrderedBeatsAsync(bookNodeId, ct))
+            .Select(o => o.Beat.Id).Distinct().ToList();
 
         // One query for the whole book rather than a lookup per beat — a 500-beat book would
         // otherwise be 500 round trips, the same N+1 shape that made --continuity groups time out.
@@ -61,9 +64,9 @@ public sealed class BeatStoryPositionService(
         var byId = rows.ToDictionary(b => b.Id);
 
         var changed = 0;
-        for (var i = 0; i < ordered.Count; i++)
+        for (var i = 0; i < ids.Count; i++)
         {
-            if (!byId.TryGetValue(ordered[i].Beat.Id, out var beat)) continue;
+            if (!byId.TryGetValue(ids[i], out var beat)) continue;
             var position = i + 1;
             if (beat.StoryPosition == position) continue;
             if (apply) beat.StoryPosition = position;
@@ -77,10 +80,10 @@ public sealed class BeatStoryPositionService(
             // dirty here would invalidate every hash-gated audit in the engine for nothing.
             await db.SaveChangesAsync(ct);
             log.LogInformation("[beat-positions] {Book}: stamped {Changed} of {Total} beat(s).",
-                book.Slug, changed, ordered.Count);
+                book.Slug, changed, ids.Count);
         }
 
-        return new BookResult(book.Id, book.Slug ?? "", book.Title, ordered.Count, changed);
+        return new BookResult(book.Id, book.Slug ?? "", book.Title, ids.Count, changed);
     }
 
     /// <summary>

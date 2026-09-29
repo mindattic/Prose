@@ -205,7 +205,9 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
 
         using var db = dbFactory.CreateDbContext();
 
-        var existing = db.Entities.FirstOrDefault(e => e.Id == id);
+        // IgnoreQueryFilters(): an upsert by primary key — an id outside the ambient universe was
+        // "not found" and re-inserted (PK violation).
+        var existing = db.Entities.IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         var json = JsonSerializer.Serialize(item, jsonOpts);
         var record = db.Records.FirstOrDefault(r => r.EntityId == id);
         // RFC 0015 §3.5: the blob IS this type's stored state, so an identical blob under the same
@@ -374,7 +376,9 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
 
         // No Entity row → genuinely missing canon, regardless of the repo's
         // storage strategy.
-        var entityExists = db.Entities.AsNoTracking().Any(e => e.Id == id);
+        // IgnoreQueryFilters(): the file's explicit id — Save upserts it by primary key wherever it
+        // lives, so an out-of-scope row is not "missing" (re-importing it would not create one).
+        var entityExists = db.Entities.AsNoTracking().IgnoreQueryFilters().Any(e => e.Id == id);
         if (!entityExists) return JsonVerifyResult.Missing;
 
         // Canonicalize the file side once, used by either DB-side path.
@@ -432,8 +436,15 @@ public class EfRepository<T> : IExportableRepository, IJsonImportable where T : 
             && string.Equals(currentSlug, disambig, StringComparison.Ordinal))
             return currentSlug;
 
-        var collision = db.Entities.Any(e =>
-            e.EntityType == entityType && e.Slug == plain && e.Id != id);
+        // Slugs are unique per (universe, type): check the universe the row lives in, which an
+        // explicit-id save may place outside the ambient scope.
+        var rowUniverse = db.Entities.IgnoreQueryFilters().Where(e => e.Id == id)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefault();
+        var collision = rowUniverse is { } ru
+            ? db.Entities.IgnoreQueryFilters().Any(e =>
+                e.UniverseId == ru && e.EntityType == entityType && e.Slug == plain && e.Id != id)
+            : db.Entities.Any(e =>
+                e.EntityType == entityType && e.Slug == plain && e.Id != id);
         return collision ? disambig : plain;
     }
 

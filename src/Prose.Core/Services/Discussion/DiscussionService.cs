@@ -42,6 +42,10 @@ public sealed class DiscussionService(
 
         var thread = new DiscussionThread
         {
+            // The thread belongs to its BOOK's universe; left empty it took the ambient stamp,
+            // which is only right when the caller happened to pin the flow to that book first.
+            UniverseId = await db.Nodes.IgnoreQueryFilters().AsNoTracking()
+                .Where(n => n.Id == bookNodeId).Select(n => n.UniverseId).FirstOrDefaultAsync(ct),
             BookNodeId = bookNodeId,
             TargetKind = targetKind,
             TargetId = targetId,

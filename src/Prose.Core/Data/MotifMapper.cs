@@ -80,7 +80,7 @@ public static class MotifMapper
         var m = BuildIncludeChain(db.Motifs.AsNoTracking())
             .FirstOrDefault(x => x.Id == id);
         if (m == null) return null;
-        var entity = db.Entities.AsNoTracking().FirstOrDefault(e => e.Id == id);
+        var entity = db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         return Materialize(m, entity);
     }
 

@@ -106,7 +106,7 @@ public static class CorponationMapper
         var c = BuildIncludeChain(db.Corponations.AsNoTracking())
             .FirstOrDefault(x => x.Id == id);
         if (c == null) return null;
-        var entity = db.Entities.AsNoTracking().FirstOrDefault(e => e.Id == id);
+        var entity = db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         var tags = db.EntityTags.AsNoTracking()
             .Where(t => t.EntityId == id)
             .Select(t => t.Tag!.Name)

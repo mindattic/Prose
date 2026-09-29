@@ -63,6 +63,14 @@ public static class PopulateQueueCli
             return 0;
         }
 
+        // A count that does not parse used to queue the default number of billed ballots/readers.
+        foreach (var numeric in new[] { "--ballots", "--prose", "--readers" })
+            if (ArgValue(args, numeric) is { } raw && !int.TryParse(raw, out _))
+            {
+                Console.Error.WriteLine($"{numeric} expects a whole number, got '{raw}'.");
+                return 1;
+            }
+
         if (doEntityReview)
         {
             var typesRaw = ArgValue(args, "--types");

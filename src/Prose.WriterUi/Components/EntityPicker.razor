@@ -110,7 +110,9 @@
         if (!opened)
         {
             opened = true;
-            await JsAsync("proseModal.open", box);
+            try { trap = await JS.InvokeAsync<int>("proseModal.open", box); }
+            catch (JSDisconnectedException) { }
+            catch (JSException) { /* the picker still works; only focus handling is lost */ }
         }
 
         // Focus stays in the input, so nothing scrolls the list for the author: the active option
@@ -229,5 +231,12 @@
         catch (JSException) { /* the picker still works; only placement or focus is lost */ }
     }
 
-    public async ValueTask DisposeAsync() => await JsAsync("proseModal.close");
+    /// <summary>This picker's own focus trap. Dispose used to close whatever trap was live, and
+    /// when a later dialog had opened by then it was that dialog's trap that went.</summary>
+    private int trap;
+
+    public async ValueTask DisposeAsync()
+    {
+        if (trap != 0) await JsAsync("proseModal.close", trap);
+    }
 }

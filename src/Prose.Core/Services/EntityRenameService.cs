@@ -53,7 +53,7 @@ public sealed class EntityRenameService(
 
         await using (var db = await dbFactory.CreateDbContextAsync(ct))
         {
-            var entity = await db.Entities.FirstAsync(e => e.Id == preview.EntityId, ct);
+            var entity = await db.Entities.IgnoreQueryFilters().FirstAsync(e => e.Id == preview.EntityId, ct);
             // Entity is the identity the graph and tags use. A repository-served record got its
             // name above; a character's mirrored name is handled below.
             entity.Name = preview.NewName;
@@ -150,8 +150,10 @@ public sealed class EntityRenameService(
     /// than renaming whichever row SQL returned first.</summary>
     private static async Task<Prose.Core.Data.Entities.Entity?> ResolveEntityAsync(ProseDbContext db, string idOrSlug, CancellationToken ct)
     {
+        // An explicit id names one row whatever universe is current (the node's universe is
+        // checked against it in PreviewAsync); the ambient filter made it "entity_not_found".
         if (Guid.TryParse(idOrSlug, out var id))
-            return await db.Entities.FirstOrDefaultAsync(e => e.Id == id, ct);
+            return await db.Entities.IgnoreQueryFilters().FirstOrDefaultAsync(e => e.Id == id, ct);
         var matches = await db.Entities.Where(e => e.Slug == idOrSlug).Take(2).ToListAsync(ct);
         return matches.Count == 1 ? matches[0] : null;
     }
@@ -161,7 +163,9 @@ public sealed class EntityRenameService(
     private static async Task<string> UniqueSlugAsync(ProseDbContext db, Prose.Core.Data.Entities.Entity entity, string name, CancellationToken ct)
     {
         var baseSlug = UniverseGraphService.Slugify(name);
-        var exists = await db.Entities.AnyAsync(e => e.Id != entity.Id && e.UniverseId == entity.UniverseId && e.Slug == baseSlug, ct);
+        // Scoped explicitly to the entity's universe, so the ambient filter must not narrow it
+        // further (under another current universe it hid every collision).
+        var exists = await db.Entities.IgnoreQueryFilters().AnyAsync(e => e.Id != entity.Id && e.UniverseId == entity.UniverseId && e.Slug == baseSlug, ct);
         return exists ? $"{baseSlug}-{entity.Id:N}" : baseSlug;
     }
 }

@@ -135,7 +135,7 @@ public class EntityHarvestService(
 
         // Wire edges for every asserted relation where both ends resolved.
         int edgesCreated = 0;
-        var sourceTag = $"harvest:{DateTime.UtcNow:yyyyMMdd}";
+        var sourceTag = "harvest:" + DateTime.UtcNow.ToString("yyyyMMdd", System.Globalization.CultureInfo.InvariantCulture);
         // Edges added this run are not saved until the end, so the database check below cannot
         // see them: A related:[B] plus B related:[A] (or related:[B,B]) made duplicate edges.
         var addedPairs = new HashSet<(Guid, Guid)>();

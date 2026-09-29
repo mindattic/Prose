@@ -67,7 +67,10 @@ public class AssignTiersService(IDbContextFactory<ProseDbContext> dbFactory) : D
                     text, @"(?<!\w)" + System.Text.RegularExpressions.Regex.Escape(kw) + @"(?!\w)"))) { tier = t; break; }
         }
 
-        obj["tier"] = JsonValue.Create(tier);
+        // Written as a string ("3"): SyntheticLifeData.Tier is a string, and a number made
+        // SyntheticMapper.RebuildAllAsync fail to deserialize every assigned synthetic. A legacy
+        // numeric tier is still honoured above as an existing assignment.
+        obj["tier"] = JsonValue.Create(tier.ToString(System.Globalization.CultureInfo.InvariantCulture));
         return 1;
     }
 

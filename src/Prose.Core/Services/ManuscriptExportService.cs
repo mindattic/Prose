@@ -452,7 +452,7 @@ public class ManuscriptExportService
         sb.AppendLine("""  <dc:language>en</dc:language>""");
         if (!string.IsNullOrWhiteSpace(m.Description))
             sb.AppendLine($"""  <dc:description>{EpubEsc(m.Description)}</dc:description>""");
-        sb.AppendLine($"""  <meta property="dcterms:modified">{DateTime.UtcNow:yyyy-MM-ddTHH:mm:ssZ}</meta>""");
+        sb.AppendLine($"""  <meta property="dcterms:modified">{DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ", System.Globalization.CultureInfo.InvariantCulture)}</meta>""");
         sb.AppendLine("</metadata>");
         sb.AppendLine("<manifest>");
         sb.AppendLine("""  <item id="css"   href="styles.css"  media-type="text/css"/>""");

@@ -102,7 +102,7 @@ public class CanonFieldParsingFixTests
 
             using var read = factory.CreateDbContext();
             var json = JsonNode.Parse(read.Records.First(r => r.EntityId == id).Json)!.AsObject();
-            Assert.That(json["tier"]?.GetValue<int>(), Is.EqualTo(5));
+            Assert.That(json["tier"]?.GetValue<string>(), Is.EqualTo("5"));
         }
         finally
         {

@@ -3665,6 +3665,8 @@ public class NodeWorkbenchService
         psi.ArgumentList.Add(outPath);
         using var proc = System.Diagnostics.Process.Start(psi)
             ?? throw new InvalidOperationException("Failed to start ffmpeg for audiobook encode.");
+        // Disposing does not end the process: a cancelled export left ffmpeg encoding.
+        using var kill = ct.Register(() => { try { proc.Kill(entireProcessTree: true); } catch { } });
         // Drain both pipes concurrently before awaiting exit to avoid a deadlock.
         var outTask = proc.StandardOutput.ReadToEndAsync(ct);
         var errTask = proc.StandardError.ReadToEndAsync(ct);
@@ -3702,6 +3704,7 @@ public class NodeWorkbenchService
             psi.ArgumentList.Add(outPcm);
             using var proc = System.Diagnostics.Process.Start(psi)
                 ?? throw new InvalidOperationException("Failed to start ffmpeg for MP3->PCM decode.");
+            using var kill = ct.Register(() => { try { proc.Kill(entireProcessTree: true); } catch { } });
             // Drain both pipes concurrently before awaiting exit to avoid a deadlock.
             var outTask = proc.StandardOutput.ReadToEndAsync(ct);
             var errTask = proc.StandardError.ReadToEndAsync(ct);
@@ -3881,16 +3884,19 @@ public class NodeWorkbenchService
     }
 
     /// <summary>Clear the explicit override, letting the silence engine fall
-    /// back to the computed default for that beat.</summary>
-    public async Task ClearGapAfterAsync(Guid beatId, CancellationToken ct = default)
+    /// back to the computed default for that beat. Returns false when no beat has
+    /// that id (a no-op, so callers can report not-found instead of ok).</summary>
+    public async Task<bool> ClearGapAfterAsync(Guid beatId, CancellationToken ct = default)
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
-        if (beat == null || beat.GapAfterMs == null) return;
+        if (beat == null) return false;
+        if (beat.GapAfterMs == null) return true;
         beat.GapAfterMs        = null;
         beat.GapAfterAudioPath = null;
         beat.UpdatedAt         = DateTime.UtcNow;
         await db.SaveChangesAsync(ct);
+        return true;
     }
 
     /// <summary>Locate the ffmpeg executable on PATH. Returns the full path on
@@ -3967,6 +3973,7 @@ public class NodeWorkbenchService
                 };
                 using var proc = System.Diagnostics.Process.Start(psi)
                     ?? throw new InvalidOperationException("Failed to spawn ffmpeg for silence render.");
+                using var kill = ct.Register(() => { try { proc.Kill(entireProcessTree: true); } catch { } });
                 // Drain BOTH pipes concurrently before awaiting exit — otherwise
                 // a full stderr/stdout buffer blocks ffmpeg and we deadlock.
                 var outTask = proc.StandardOutput.ReadToEndAsync(ct);
@@ -4018,6 +4025,7 @@ public class NodeWorkbenchService
             };
             using var concatProc = System.Diagnostics.Process.Start(concatPsi)
                 ?? throw new InvalidOperationException("Failed to spawn ffmpeg for MP3 concat.");
+            using var concatKill = ct.Register(() => { try { concatProc.Kill(entireProcessTree: true); } catch { } });
             // Drain BOTH pipes concurrently before awaiting exit — otherwise a
             // full stderr/stdout buffer blocks ffmpeg and we deadlock (which is
             // exactly what hung the first real publish).
@@ -4300,9 +4308,10 @@ public class NodeWorkbenchService
                             return Math.Round(sec, 3);
                         }
                     }
-                    catch (OperationCanceledException) when (!ct.IsCancellationRequested)
+                    catch (OperationCanceledException)
                     {
                         try { if (!proc.HasExited) proc.Kill(entireProcessTree: true); } catch { }
+                        if (ct.IsCancellationRequested) throw;
                         log.LogWarning("ffprobe timed out for {Path}; falling back to byte scan", path);
                     }
                 }

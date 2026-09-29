@@ -30,7 +30,7 @@ public sealed class ObserverHttpClient(HttpClient http)
     /// doesn't exist (404).</summary>
     public async Task<string?> GetDcmRunPayloadAsync(Guid runId)
     {
-        var resp = await http.GetAsync($"api/dcm/runs/{runId}/payload");
+        using var resp = await http.GetAsync($"api/dcm/runs/{runId}/payload");
         return resp.IsSuccessStatusCode ? await resp.Content.ReadAsStringAsync() : null;
     }
 
@@ -82,7 +82,7 @@ public sealed class ObserverHttpClient(HttpClient http)
 
     private async Task<string> InvokeMcpRawAsync(string toolClass, string method, object? args)
     {
-        var resp = await http.PostAsJsonAsync("api/mcp-invoke", new { toolClass, method, args });
+        using var resp = await http.PostAsJsonAsync("api/mcp-invoke", new { toolClass, method, args });
         var body = await resp.Content.ReadAsStringAsync();
 
         // A transport failure is not a tool result. Returning the raw body here let a 401 (no

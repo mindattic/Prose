@@ -44,8 +44,9 @@ public static class MoveBeatToNodeCli
             {
                 case "--slug":        if (i + 1 < args.Length) slug = args[++i]; break;
                 case "--to-slug":     if (i + 1 < args.Length) toSlug = args[++i]; break;
-                case "--beat-number": if (i + 1 < args.Length) int.TryParse(args[++i], out beatNumber); break;
-                case "--after":       if (i + 1 < args.Length) int.TryParse(args[++i], out after); break;
+                // A non-number used to parse as 0, and "--after 0" means "the very top of the target node".
+                case "--beat-number": if (i + 1 < args.Length && !int.TryParse(args[++i], out beatNumber)) { Console.Error.WriteLine($"[move-beat-to-node] --beat-number expects a number, got '{args[i]}'."); return 1; } break;
+                case "--after":       if (i + 1 < args.Length && !int.TryParse(args[++i], out after)) { Console.Error.WriteLine($"[move-beat-to-node] --after expects a number, got '{args[i]}'."); return 1; } break;
             }
         }
 

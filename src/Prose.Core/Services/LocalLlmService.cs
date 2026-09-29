@@ -19,9 +19,12 @@ public class LocalLlmService : ILlmService
     private readonly SettingsService settings;
     private readonly ILogger<LocalLlmService> log;
 
-    private string? runUrl;
-    private string? runKey;
-    private string? runModel;
+    // Flow-scoped (AsyncLocal), not fields: this is a Hub singleton, so a CLI run's --local-url
+    // override otherwise redirected every concurrent Hub request's local calls for the run.
+    private readonly AsyncLocal<(string? Url, string? Key, string? Model)> run = new();
+    private string? runUrl => run.Value.Url;
+    private string? runKey => run.Value.Key;
+    private string? runModel => run.Value.Model;
 
     public LocalLlmService(LegionClient legion, SettingsService settings, ILogger<LocalLlmService> log)
     {
@@ -36,9 +39,7 @@ public class LocalLlmService : ILlmService
     /// </summary>
     public void ConfigureForRun(string? baseUrl, string? apiKey, string? model)
     {
-        runUrl   = baseUrl;
-        runKey   = apiKey;
-        runModel = model;
+        run.Value = (baseUrl, apiKey, model);
     }
 
     public Task<bool> IsConfiguredAsync()

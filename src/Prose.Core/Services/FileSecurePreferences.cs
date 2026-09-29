@@ -31,19 +31,27 @@ public class FileSecurePreferences : ISecurePreferences
         Load();
     }
 
+    // Hub singleton: concurrent SetAsync calls mutated the Dictionary unguarded and raced on the
+    // shared .tmp file (File.Create threw on the second writer).
+    private readonly object gate = new();
+
     public Task<string> GetAsync(string key)
     {
-        _cache.TryGetValue(key, out var value);
+        string? value;
+        lock (gate) _cache.TryGetValue(key, out value);
         return Task.FromResult(value ?? "");
     }
 
     public Task SetAsync(string key, string value)
     {
-        if (string.IsNullOrEmpty(value))
-            _cache.Remove(key);
-        else
-            _cache[key] = value;
-        Save();
+        lock (gate)
+        {
+            if (string.IsNullOrEmpty(value))
+                _cache.Remove(key);
+            else
+                _cache[key] = value;
+            Save();
+        }
         return Task.CompletedTask;
     }
 

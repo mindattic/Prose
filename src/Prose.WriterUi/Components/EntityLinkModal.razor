@@ -129,10 +129,13 @@
         wired = true;
         // Moves focus in and holds it: aria-modal describes a dialog, it does not make Tab behave
         // like one. Without this, Tab walks out into the editor behind the scrim.
-        try { await JS.InvokeVoidAsync("proseModal.open", dialog); }
+        try { trap = await JS.InvokeAsync<int>("proseModal.open", dialog); }
         catch (JSDisconnectedException) { }
         catch (JSException) { /* the dialog still works; only the focus niceties are lost */ }
     }
+
+    /// <summary>This dialog's own focus trap, so closing it can never release another's.</summary>
+    private int trap;
 
     /// <summary>Searching on input rather than on keyup: keyup fired for arrow keys, Tab and
     /// Shift, so moving through the field ran the same search again each time.</summary>
@@ -147,7 +150,8 @@
 
     public async ValueTask DisposeAsync()
     {
-        try { await JS.InvokeVoidAsync("proseModal.close"); }
+        if (trap == 0) return;
+        try { await JS.InvokeVoidAsync("proseModal.close", trap); }
         catch (JSDisconnectedException) { }
         catch (JSException) { }
     }

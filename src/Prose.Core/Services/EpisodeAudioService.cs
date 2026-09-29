@@ -550,7 +550,9 @@ public class EpisodeAudioService
         }
         finally
         {
-            cancelTokens.TryRemove(episodeId, out _);
+            // Remove only this run's own source: a newer concurrent run for the same episode may
+            // have replaced it, and removing by key alone left that run un-cancellable.
+            cancelTokens.TryRemove(new KeyValuePair<Guid, CancellationTokenSource>(episodeId, cancelCts));
         }
     }
 

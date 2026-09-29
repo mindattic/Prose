@@ -36,7 +36,7 @@ public class KdpRunLogService
         var codeList = codes.ToList();
         // Milliseconds too: the name is a unique key, and two runs in one second lost the second
         // run's store log (its row insert failed and every line insert after it).
-        var fileName = $"kdp-run-{DateTime.UtcNow:yyyyMMdd-HHmmss-fff}.log";
+        var fileName = $"kdp-run-{DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff", System.Globalization.CultureInfo.InvariantCulture)}.log";
         try
         {
             var logsDir = Path.Combine(repoRoot, "tools", "kdp", "logs");

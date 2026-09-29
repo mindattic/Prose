@@ -97,7 +97,7 @@ public static class VocabularyMapper
     {
         var v = db.VocabularyEntries.AsNoTracking().FirstOrDefault(x => x.Id == id);
         if (v == null) return null;
-        var entity = db.Entities.AsNoTracking().FirstOrDefault(e => e.Id == id);
+        var entity = db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         var tags = db.EntityTags.AsNoTracking()
             .Where(t => t.EntityId == id)
             .Select(t => t.Tag!.Name)

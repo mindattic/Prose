@@ -39,7 +39,7 @@ public class MediaService
     public string? GetPrimaryImage(string entityId)
     {
         return GetFilesForEntity(entityId)
-            .FirstOrDefault(f => ImageExts.Contains(Path.GetExtension(f).ToLower()));
+            .FirstOrDefault(f => ImageExts.Contains(Path.GetExtension(f).ToLowerInvariant()));
     }
 
     /// <summary>Returns true if the entity has at least one media file.</summary>
@@ -55,7 +55,7 @@ public class MediaService
     }
 
     /// <summary>Returns the MIME type for a media file based on its extension.</summary>
-    public static string GetMimeType(string filename) => Path.GetExtension(filename).ToLower() switch
+    public static string GetMimeType(string filename) => Path.GetExtension(filename).ToLowerInvariant() switch
     {
         ".png"  => "image/png",
         ".jpg" or ".jpeg" => "image/jpeg",
@@ -73,7 +73,7 @@ public class MediaService
     public IReadOnlyList<string> GetEntityIdsWithImages()
     {
         return Directory.EnumerateFiles(mediaDir)
-            .Where(f => ImageExts.Contains(Path.GetExtension(f).ToLower()))
+            .Where(f => ImageExts.Contains(Path.GetExtension(f).ToLowerInvariant()))
             .Select(f => Path.GetFileNameWithoutExtension(Path.GetFileNameWithoutExtension(f))) // strip .00 then extension
             .Distinct()
             .OrderBy(id => id)
@@ -84,7 +84,7 @@ public class MediaService
     public string? GetRandomImage()
     {
         var images = Directory.EnumerateFiles(mediaDir)
-            .Where(f => ImageExts.Contains(Path.GetExtension(f).ToLower()))
+            .Where(f => ImageExts.Contains(Path.GetExtension(f).ToLowerInvariant()))
             .Select(Path.GetFileName)
             .OfType<string>()
             .ToList();
@@ -106,7 +106,7 @@ public class MediaService
 
     private static bool IsKnownExtension(string path)
     {
-        var ext = Path.GetExtension(path).ToLower();
+        var ext = Path.GetExtension(path).ToLowerInvariant();
         return ImageExts.Contains(ext) || VideoExts.Contains(ext) || ModelExts.Contains(ext);
     }
 }

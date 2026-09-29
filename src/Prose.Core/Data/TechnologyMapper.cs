@@ -106,7 +106,7 @@ public static class TechnologyMapper
         var t = BuildIncludeChain(db.Technologies.AsNoTracking())
             .FirstOrDefault(x => x.Id == id);
         if (t == null) return null;
-        var entity = db.Entities.AsNoTracking().FirstOrDefault(e => e.Id == id);
+        var entity = db.Entities.AsNoTracking().IgnoreQueryFilters().FirstOrDefault(e => e.Id == id);
         var tags = db.EntityTags.AsNoTracking()
             .Where(x => x.EntityId == id)
             .Select(x => x.Tag!.Name)
@@ -193,7 +193,8 @@ public static class TechnologyMapper
     public static void FillScalars(Technology t, TechnologyData src)
     {
         t.Name            = src.Name ?? "";
-        t.Category        = "";               // not in TechnologyData domain model; keep blank
+        // Category is not in the TechnologyData domain model, so a save leaves the column as it
+        // is (a new row starts ""). Blanking it here erased any value on every save.
         t.Subcategory     = src.Subcategory ?? "";
         t.Tier            = src.TierAvailability ?? "";
         t.BrandName       = src.BrandName ?? "";

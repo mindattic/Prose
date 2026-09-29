@@ -86,9 +86,16 @@ public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFa
         foreach (var d in decisions)
         {
             i++;
-            var text = d?["text"]?.GetValue<string>();
-            var rulingId = d?["rulingId"]?.GetValue<string>();
-            var orderId = d?["orderId"]?.GetValue<string>();
+            // A malformed decision is a validation problem, never an exception: session_end is the
+            // one write that must always answer. Non-object entries and non-string fields are reported.
+            if (d is not JsonObject decision) { problems.Add($"decision {i} is not an object {{text, rulingId|orderId}}."); continue; }
+            if (!TryStringField(decision, "text", out var text)
+                || !TryStringField(decision, "rulingId", out var rulingId)
+                || !TryStringField(decision, "orderId", out var orderId))
+            {
+                problems.Add($"decision {i}: text, rulingId and orderId must be JSON strings.");
+                continue;
+            }
             if (string.IsNullOrWhiteSpace(text)) { problems.Add($"decision {i} has no text."); continue; }
             if (Guid.TryParse(rulingId, out var rid))
             {
@@ -140,4 +147,15 @@ public sealed class FactorySessionService(IDbContextFactory<ProseDbContext> dbFa
 
     private static string? Trunc(string? s, int n) => string.IsNullOrWhiteSpace(s) ? null : (s.Trim().Length <= n ? s.Trim() : s.Trim()[..n]);
     private static string Short(string s) => s.Length <= 60 ? s : s[..60] + "…";
+
+    /// <summary>Reads an optional string field. Absent or JSON null → true with null; any
+    /// non-string value (number, bool, object, array) → false.</summary>
+    private static bool TryStringField(JsonObject obj, string name, out string? value)
+    {
+        value = null;
+        var node = obj[name];
+        if (node is null) return true;
+        if (node is JsonValue v && v.GetValueKind() == JsonValueKind.String) { value = v.GetValue<string>(); return true; }
+        return false;
+    }
 }

@@ -141,7 +141,10 @@ public static class CompositionCli
         // --beat <guid>: the beat being (re)written. With it the brief can say where to STOP,
         // which names must appear, and what the beat is actually about; without it the brief has
         // only the goal. Regenerating a beat that exists is also what makes an A/B possible.
-        Guid.TryParse(Flag(args, "--beat"), out var briefBeatId);
+        // A mistyped --beat used to be dropped silently, and the billed call ran with no brief and no gate.
+        var briefBeatArg = Flag(args, "--beat");
+        var briefBeatId = Guid.Empty;
+        if (briefBeatArg.Length > 0 && !Guid.TryParse(briefBeatArg, out briefBeatId)) { Console.Error.WriteLine($"--beat must be a beat guid, got '{briefBeatArg}'."); Environment.ExitCode = 1; return; }
         var showPrompt = args.Contains("--show-prompt");
 
         var orchestrator = services.GetRequiredService<BeatWriteOrchestrator>();

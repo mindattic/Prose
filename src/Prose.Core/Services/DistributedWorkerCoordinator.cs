@@ -457,12 +457,18 @@ public class DistributedWorkerCoordinator
     {
         if (!Guid.TryParse(edge.SourceEntityId, out var srcId)
             || !Guid.TryParse(edge.TargetEntityId, out var tgtId)) return;
-        var tgtExists = await db.Entities.AnyAsync(e => e.Id == tgtId, ct);
-        if (!tgtExists) return;
-        var exists = await db.Edges.AnyAsync(e =>
+        // Explicit ids from a worker result, not a browse: resolve both ends across universes and
+        // stamp the edge with theirs. Under the ambient filter an out-of-scope source stamped
+        // Guid.Empty (then the ambient universe), and the duplicate check missed its existing edges.
+        var srcUniverse = await db.Entities.IgnoreQueryFilters().Where(e => e.Id == srcId)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefaultAsync(ct);
+        var tgtUniverse = await db.Entities.IgnoreQueryFilters().Where(e => e.Id == tgtId)
+            .Select(e => (Guid?)e.UniverseId).FirstOrDefaultAsync(ct);
+        if (srcUniverse == null || tgtUniverse == null || srcUniverse != tgtUniverse) return;
+        var exists = await db.Edges.IgnoreQueryFilters().AnyAsync(e =>
             e.SourceId == srcId && e.TargetId == tgtId && e.RelationType == edge.RelationType, ct);
         if (exists) return;
-        var universeId = await db.Entities.Where(e => e.Id == srcId).Select(e => e.UniverseId).FirstOrDefaultAsync(ct);
+        var universeId = srcUniverse.Value;
         db.Edges.Add(new Edge
         {
             SourceId     = srcId,
