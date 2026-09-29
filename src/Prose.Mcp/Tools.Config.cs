@@ -12,6 +12,11 @@ namespace Prose.Mcp;
 // Codex docs, and memory files to the DB and restore them by timestamp.
 // ─────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// MCP tools for markdown-file backup/restore (<see cref="MarkdownFileService"/>), the doc-context
+/// working set (prepare, add/exclude/remove, status, clear) and the cost report. All forward to the
+/// Hub; sync and restore write, the rest read.
+/// </summary>
 [McpServerToolType]
 public class ConfigTools
 {

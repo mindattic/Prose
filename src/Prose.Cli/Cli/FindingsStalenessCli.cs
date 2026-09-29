@@ -62,7 +62,9 @@ public static class FindingsStalenessCli
         foreach (var g in stale)
             Console.WriteLine($"  {g.StaleCount,4}/{g.TotalCount,-4} stale — {g.Category,-20} {g.FilePath}");
         Console.WriteLine();
-        Console.WriteLine("Re-run: prose --audit-book --slug <slug> (StructuralFailure) for each.");
+        // --audit-book, which used to re-run StructuralFailure, was deleted (RFC 0010); pointing at it
+        // sent the reader to an unknown command.
+        Console.WriteLine("No live command re-runs StructuralFailure (--audit-book was removed, RFC 0010); dismiss stale rows with prose --findings bulk-dismiss --category StructuralFailure --node <slug>.");
         return 1;
     }
 }

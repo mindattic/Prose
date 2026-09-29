@@ -59,7 +59,8 @@ public static partial class DraftGate
             // sentence starting "The". A name made only of them needs the full name.
             var tokens = name.Split(' ', StringSplitOptions.RemoveEmptyEntries)
                 .Where(t => t.Length >= 3 && !Stop.Contains(t) && !NameFillers.Contains(t.TrimEnd('.')));
-            if (tokens.Any(t => Regex.IsMatch(draft, $@"\b{Regex.Escape(t)}\b"))) continue;
+            // Lookarounds, not \b: a token with its own edge punctuation ("E.L.F.") never matched \b.
+            if (tokens.Any(t => Regex.IsMatch(draft, $@"(?<!\w){Regex.Escape(t)}(?!\w)"))) continue;
             failures.Add($"\"{name}\" is named in the brief but does not appear in the draft.");
         }
 

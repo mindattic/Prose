@@ -1655,6 +1655,13 @@ public class ContinuityService
 
 // ── Models (unchanged shape — matches the old SQLite-backed service exactly) ──
 
+/// <summary>
+/// One subject–predicate–object fact in the continuity ledger ("Kyle / carries / a katana"), with
+/// where it was asserted (prose chapter/beat, entity record or bible) and its lifecycle
+/// <see cref="Status"/> (NEW, CONFIRMED, CONTRADICTED, CANONICAL, REJECTED, SUPERSEDED). The DTO
+/// <see cref="ContinuityService"/> reads and writes; <see cref="Provenance"/> says whether a human
+/// ever approved it.
+/// </summary>
 public class ContinuityClaim
 {
     public string ClaimUid             { get; set; } = "";
@@ -1785,6 +1792,11 @@ public class ContradictionPair
     public string Key => A.ClaimUid + "|" + B.ClaimUid;
 }
 
+/// <summary>
+/// Every claim that disagrees about one entity's one predicate (keyed <c>EntityId|Predicate</c>),
+/// so a contradiction with three or more competing values is reviewed and resolved as one unit
+/// rather than as a set of pairs.
+/// </summary>
 public class ContradictionGroup
 {
     public string EntityId   { get; set; } = "";

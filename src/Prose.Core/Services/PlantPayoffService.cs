@@ -19,6 +19,12 @@ namespace Prose.Core.Services;
 //   AuditAsync            — find orphaned plants, opaque payoffs, and coverage gaps
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// The plant/payoff ledger (<see cref="PlantPayoff"/> rows): registers seeded details and their
+/// payoffs, binds each end to a beat, and audits for orphaned plants and opaque payoffs. Queries on
+/// a book cover every descendant node in reading order. Register/link/transparency methods write;
+/// <c>BuildPlantContextAsync</c> feeds <see cref="BeatGeneratorService"/>.
+/// </summary>
 public class PlantPayoffService(IDbContextFactory<ProseDbContext> dbFactory)
 {
     public async Task<List<PlantPayoff>> GetByNodeAsync(Guid nodeId, CancellationToken ct = default)

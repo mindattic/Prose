@@ -10,8 +10,8 @@ namespace Prose.Core.Services;
 ///   1. CanonContradictionService.CheckNodeAsync  — flag contradictions
 ///   2. Tiered review gate:
 ///        Tier 1 (always): single Sonnet call scoring the chapter 0-100
-///        Tier 2 (score < MinChapterScore=80): escalate to draft panel review
-///        Tier 3 (score < HardFloor=75): escalate to standard panel review
+///        Tier 2 (score &lt; MinChapterScore=80): escalate to draft panel review
+///        Tier 3 (score &lt; HardFloor=75): escalate to standard panel review
 ///
 /// Returns a ChapterCloseResult with all diagnostics for the AutoRun log.
 /// </summary>

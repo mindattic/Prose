@@ -56,6 +56,10 @@ public class ArchetypeOpposite
 
 // ── Quote ──────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// A quotation entity — epigraph or in-world saying (<see cref="InWorld"/>) — with attribution and
+/// theme. Shares its <see cref="Id"/> with the parent <see cref="Entity"/> row, whose name is the quote text.
+/// </summary>
 public class Quote
 {
     public Guid Id { get; set; }
@@ -184,6 +188,11 @@ public class ContractComplication
 
 // ── Document (worldbuilding) ───────────────────────────────────────────────
 
+/// <summary>
+/// A worldbuilding document stored as a canon entity (title, category, full <see cref="Body"/>).
+/// Shares its <see cref="Id"/> with the parent <see cref="Entity"/> row. Not a project markdown file —
+/// those are <see cref="MarkdownFile"/>.
+/// </summary>
 public class Document
 {
     public Guid Id { get; set; }
@@ -224,6 +233,11 @@ public class DocumentHeading
 // Category values:  "project-rule" | "project-rule-global" | "codex"
 //                   | "register" | "rfc" | "memory" | "memory-index"
 
+/// <summary>
+/// A project, rule or agent-memory markdown file mirrored into SQL (temporal table, so any past version
+/// is recoverable), keyed by <see cref="FileRoot"/> + <see cref="RelativePath"/>. Written by
+/// <c>MarkdownFileService</c>; the tier/scope columns drive the doc-context working set.
+/// </summary>
 public class MarkdownFile
 {
     public Guid     Id            { get; set; }

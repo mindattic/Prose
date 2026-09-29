@@ -270,7 +270,7 @@ public class EntityRamificationService(
     {
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        return await db.BeatNodes
+        var rows = await db.BeatNodes
             .Where(sb => sb.Beat!.EntityStale)
             .Select(sb => new EntityStaleBeatDto
             {
@@ -279,7 +279,9 @@ public class EntityRamificationService(
                 NodeId    = sb.NodeId,
                 NodeTitle = sb.Node!.Title,
                 SortKey     = sb.SortKey,
-                TextPreview = string.IsNullOrEmpty(sb.Beat.Text) ? "" : sb.Beat.Text.Length > 120 ? sb.Beat.Text.Substring(0, 120) + "…" : sb.Beat.Text,
+                // Whole stored text here; stripped and clipped below. Clipping the markup in SQL
+                // cut tags in half and showed "<entity repo=…" guid soup as the preview.
+                TextPreview = sb.Beat.Text ?? "",
                 Entities    = db.BeatEntityMentions
                     .Where(m => m.BeatId == sb.BeatId)
                     .Select(m => m.EntityName)
@@ -287,6 +289,12 @@ public class EntityRamificationService(
             })
             .OrderBy(x => x.NodeTitle).ThenBy(x => x.SortKey)
             .ToListAsync(ct);
+        foreach (var r in rows)
+        {
+            var plain = BeatMarkup.StripEntityTags(r.TextPreview);
+            r.TextPreview = plain.Length > 120 ? plain[..120] + "…" : plain;
+        }
+        return rows;
     }
 
     /// <summary>Clears <see cref="Beat.EntityStale"/> on a beat after author review.</summary>
@@ -377,7 +385,8 @@ public class EntityRamificationService(
         {
             if (ct.IsCancellationRequested) { cancelled = true; break; }
 
-            var hit = await CheckRamificationAsync(entity.Name, desc, b.Id, b.Number, b.Text, ct);
+            // Reader-visible text: the model is judging prose, not markup.
+            var hit = await CheckRamificationAsync(entity.Name, desc, b.Id, b.Number, BeatMarkup.StripEntityTags(b.Text), ct);
             if (hit != null) hits.Add(hit);
 
             // Incremented on its own line, deliberately. `progress?.Report((++done, …))` looks

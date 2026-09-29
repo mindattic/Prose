@@ -18,6 +18,12 @@ public static class WorkOrderChecks
     public static readonly string[] All = [Commit, Tests, Ledger, Factory, Deploy, Author];
 }
 
+/// <summary>
+/// Input to <see cref="WorkOrderService.AddAsync"/>. <see cref="Kind"/> must be one of
+/// <see cref="WorkOrderKinds.All"/>; a root order (no <see cref="ParentId"/>) must carry
+/// <see cref="RootApprovedBy"/>, and a child's parent must be open and descend from an approved root.
+/// An engine order with a commit check must declare <see cref="Paths"/>.
+/// </summary>
 public sealed record WorkOrderDraft(
     string Kind,
     string Title,
@@ -30,6 +36,10 @@ public sealed record WorkOrderDraft(
     bool Blocking = false,
     int? SortOrder = null);
 
+/// <summary>
+/// Evidence offered to <see cref="WorkOrderService.CloseAsync"/>: the commit hash, a TRX test-result
+/// path and/or a relayed author confirmation, each consumed by the matching <see cref="WorkOrderChecks"/> type.
+/// </summary>
 public sealed record CloseInputs(string? CommitHash = null, string? TrxPath = null, string? AuthorConfirmation = null, string? Note = null);
 
 public sealed record CheckResult(string Type, bool Ok, string Detail);

@@ -380,7 +380,9 @@ public class ContextTools
             .Distinct()
             .ToListAsync();
 
-        var prose = string.Join("\n\n", beatTexts);
+        // Reader-visible text: raw tags put markup inside italic motif phrases ("*… <entity guid=…>
+        // …*") and hid every tagged capitalised word behind a '>' the lookbehind never accepts.
+        var prose = string.Join("\n\n", beatTexts.Select(t => BeatMarkup.StripEntityTags(t)));
         var proposals = motifs.ProposeFromText(nodeId.Value.ToString(), node.Title ?? node.Slug ?? nodeIdOrSlug, prose, knownNames);
 
         return JsonSerializer.Serialize(new { node_id = nodeId, beat_count = beatTexts.Count, proposals }, CanonTools.JsonOpts);

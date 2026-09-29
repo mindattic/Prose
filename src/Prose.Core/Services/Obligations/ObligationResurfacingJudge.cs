@@ -45,7 +45,10 @@ public class LexicalCandidateFinder(IDbContextFactory<ProseDbContext> dbFactory)
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var beats = await db.Beats.AsNoTracking().Where(b => laterIds.Contains(b.Id)).Select(b => new { b.Id, b.Text }).ToListAsync(ct);
         return beats
-            .Select(b => (b.Id, Score: words.Count(w => (b.Text ?? "").Contains(w, StringComparison.OrdinalIgnoreCase))))
+            // Reader-visible text: on markup, words like "character", "place" or "weapon" matched
+            // every tag's repo="…" attribute, so any tagged beat scored as a candidate.
+            .Select(b => (b.Id, Plain: BeatMarkup.StripEntityTags(b.Text)))
+            .Select(b => (b.Id, Score: words.Count(w => b.Plain.Contains(w, StringComparison.OrdinalIgnoreCase))))
             .Where(x => x.Score >= 2)
             .OrderByDescending(x => x.Score)
             .Take(k)

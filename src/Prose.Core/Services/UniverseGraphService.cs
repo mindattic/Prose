@@ -10,6 +10,13 @@ using Prose.Core.Models.Graph;
 
 namespace Prose.Core.Services;
 
+/// <summary>
+/// The in-memory QuikGraph of canon entities (nodes) and their relationships (edges), one graph per
+/// universe keyed by <see cref="UniverseScope.EffectiveId"/>. Built from the SQL canon by
+/// <see cref="Rebuild()"/>, cached to a JSON snapshot under <c>IPathProvider.GraphDir</c>, and
+/// refreshed by a staleness probe; the resident copy lives in the Hub, and its node/edge events feed
+/// the observability SignalR hub.
+/// </summary>
 public class UniverseGraphService : IUniverseGraphService
 {
     private readonly IPathProvider paths;
@@ -327,7 +334,7 @@ public class UniverseGraphService : IUniverseGraphService
 
     /// <summary>
     /// Get edges valid at a specific story point. An edge is valid if:
-    /// ValidFrom is empty or <= storyPoint, AND ValidUntil is empty or > storyPoint,
+    /// ValidFrom is empty or &lt;= storyPoint, AND ValidUntil is empty or &gt; storyPoint,
     /// AND not invalidated in the database.
     /// </summary>
     public List<UniverseEdge> GetEdgesAt(string nodeId, string storyPoint)

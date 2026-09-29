@@ -210,6 +210,9 @@ public static class BeatSearchText
 
         var from = Math.Max(0, matchAt - radius);
         var to = Math.Min(text.Length, matchAt + matchLength + radius);
+        // Never cut a surrogate pair (an emoji, a rare CJK ideograph): a lone half renders as '�'.
+        if (from > 0 && char.IsLowSurrogate(text[from])) from--;
+        if (to < text.Length && to > 0 && char.IsHighSurrogate(text[to - 1])) to++;
 
         // The ellipsis is part of the excerpt, so it shifts the offset. Getting this wrong puts
         // the highlight one character to the left on every truncated hit in the book.

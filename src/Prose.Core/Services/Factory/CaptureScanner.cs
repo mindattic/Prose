@@ -151,8 +151,12 @@ public sealed class CaptureScanner(IDbContextFactory<ProseDbContext> dbFactory, 
     public static string PinName(string stored, string name, Guid entityId, string entityType)
     {
         var spans = BeatMarkup.TagSpans(stored);
-        var hits = System.Text.RegularExpressions.Regex.Matches(stored, $@"\b{System.Text.RegularExpressions.Regex.Escape(name)}\b")
-            .Where(m => !spans.Any(s => m.Index >= s.Start && m.Index < s.Start + s.Length))
+        // Lookarounds, not \b — the same boundary EntityMentionScanner uses: \b beside a name's own
+        // punctuation ("E.L.F.", "'Wolfpack'") needs a word char on the far side and never matched.
+        // A hit that merely OVERLAPS a tag (starts before it, runs into it) is skipped too, or the
+        // splice would cut the tag open.
+        var hits = System.Text.RegularExpressions.Regex.Matches(stored, $@"(?<!\w){System.Text.RegularExpressions.Regex.Escape(name)}(?!\w)")
+            .Where(m => !spans.Any(s => m.Index < s.Start + s.Length && m.Index + m.Length > s.Start))
             .OrderByDescending(m => m.Index).ToList();
         var sb = new StringBuilder(stored);
         foreach (var m in hits)

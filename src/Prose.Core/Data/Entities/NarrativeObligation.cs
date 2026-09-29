@@ -124,6 +124,7 @@ public class NarrativeObligationEvent
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 }
 
+/// <summary>The allowed values of <see cref="NarrativeObligation.Kind"/>: what the prose promised the reader.</summary>
 public static class ObligationKind
 {
     public const string Promise            = "promise";
@@ -142,6 +143,8 @@ public static class ObligationKind
     public static bool IsValid(string? kind) => kind != null && All.Contains(kind);
 }
 
+/// <summary>The lifecycle values of <see cref="NarrativeObligation.State"/>. Open and Advanced are
+/// outstanding (<see cref="IsOutstanding"/>); the rest are terminal or parked.</summary>
 public static class ObligationState
 {
     public const string Open      = "Open";
@@ -159,6 +162,8 @@ public static class ObligationState
     public static bool IsOutstanding(string state) => state is Open or Advanced;
 }
 
+/// <summary>How an obligation's due point is measured (see <see cref="NarrativeObligation"/>'s due fields):
+/// by chapter ordinal, by beat count after the origin, or at the book's end.</summary>
 public static class ObligationDueKind
 {
     public const string Chapter = "chapter";
@@ -166,6 +171,7 @@ public static class ObligationDueKind
     public const string BookEnd = "book-end";
 }
 
+/// <summary>The allowed values of <see cref="NarrativeObligationEvent.Action"/>: one row per state change in an obligation's history.</summary>
 public static class ObligationEventAction
 {
     public const string Open       = "open";
@@ -180,6 +186,8 @@ public static class ObligationEventAction
     public const string Lock       = "lock";
 }
 
+/// <summary>Who made an obligation change (<see cref="NarrativeObligationEvent.Actor"/>): a <c>system:*</c>
+/// pass, the author (<c>author:*</c>, see <see cref="IsAuthor"/>), an import, or a migration.</summary>
 public static class ObligationActor
 {
     public const string SystemExtract = "system:extract";

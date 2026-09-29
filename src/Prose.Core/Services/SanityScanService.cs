@@ -23,6 +23,12 @@ namespace Prose.Core.Services;
 // No LLM calls; fast enough to run in CI / as a pre-publish gate.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// Deterministic, no-LLM pre-publish checks over one node's prose (code leaks, undefined
+/// acronyms, length floor, mojibake, relationship-duration claims). <see cref="ScanAsync"/> is
+/// read-only and returns a <see cref="SanityReport"/>; <see cref="FileFindings"/> is the separate,
+/// explicit step that records those results as findings.
+/// </summary>
 public class SanityScanService(IDbContextFactory<ProseDbContext> dbFactory)
 {
     // ── Whitelisted in-world all-caps terms ───────────────────────────────────

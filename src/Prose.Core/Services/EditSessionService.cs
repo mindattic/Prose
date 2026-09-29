@@ -5,6 +5,12 @@ using Prose.Core.Data.Entities;
 
 namespace Prose.Core.Services;
 
+/// <summary>
+/// Groups beat edits into named <see cref="EditSession"/>s per book node, so a pass (prose pass,
+/// logic sweep, gripes cleanup) can be listed and reviewed as a unit. Start/close write the
+/// session rows; <see cref="TryLogBeatAsync"/> is called on every beat save, attaches the beat to the
+/// book's open session (auto-creating an <c>auto-YYYY-MM-DD</c> one), and never throws.
+/// </summary>
 public class EditSessionService
 {
     private readonly IDbContextFactory<ProseDbContext> dbFactory;

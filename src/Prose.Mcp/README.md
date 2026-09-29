@@ -2,27 +2,23 @@
 
 Model Context Protocol server exposing the Prose world canon as MCP tools so Claude — Desktop, Code, or any MCP client — can call into the data without copy-pasting JSON.
 
-The server uses `ModelContextProtocol` (Anthropic's C# MCP SDK), targets .NET 10, and re-uses every Core service (`Prose.Core`) via `AddProseServices()`. All `[McpServerToolType]` classes are auto-discovered by `WithToolsFromAssembly()` — adding a new tool only requires building.
+The server uses `ModelContextProtocol` (Anthropic's C# MCP SDK), targets .NET 10, and registers the Core services via `AddProseServices()`. All `[McpServerToolType]` classes are auto-discovered by `WithToolsFromAssembly()` — adding a new tool only requires building.
+
+## It is a Hub client
+
+The server refuses to start unless the Prose Hub (`http://127.0.0.1:5900`) is healthy (`HubGate.EnsureReachableOrExit`, fail-closed). Migrated tools are one-line forwards: the `[McpServerTool]` method calls `HubInvoker.InvokeAsync(toolClass, "{Name}Impl", args)`, which POSTs to the Hub's `/api/mcp-invoke`; the Hub's `ToolDispatch` then runs the `{Name}Impl` body (which still lives in this project) against the Hub's resident services. The caller's explicit universe (`--universe <slug>` / `PROSE_UNIVERSE` / `switch_universe`) is carried on every forward. The Hub API key from `Settings.json` is sent as `X-Prose-Key`. See [`../README.md`](../README.md) for how the Hub, CLI and Writer fit together.
 
 ## Tool surface
 
-Tools are grouped by class. All tools are read-only except `plant_motif`.
+Tools live in `Tools*.cs`, one `[McpServerToolType]` class per area (canon, nodes/beats, findings, factory, obligations, universe, …). Many tools **write** (beat text, entity fields, rulings, work orders), not only read. Some tools are deactivated by commenting out their `McpServerTool` attribute (RFC 0014); those are not exposed.
 
-| Group | Tools |
-| --- | --- |
-| `CanonTools` | `list_characters` / `get_character` / `get_character_profile`, `list_places` / `get_place`, `list_factions` / `get_faction`, `list_CorpoNations` / `get_CorpoNation`, weapon / cyberware / equipment encyclopedia getters, `get_literary_rules`, `get_tone_bible`, `get_story_bible` |
-| `StoryTools` | `list_books`, `get_book`, `get_chapter`, `get_book_outline`, `get_director_context` |
-| `ContextTools` | `search_semantic`, `get_neighbors`, `get_neighbors_by_relation`, `get_motifs`, `plant_motif`, `extract_entities`, `validate_canon_text`, `analyze_writing_quality` |
-| `CombatTools` | `draft_combat_scene` |
-| `ContinuityTools` | `find_contradictions` (chapter), `find_contradictions_book` (full book sweep) — Legion-Quorum rubric with EPISTEMIC / TEMPORAL / CAPABILITY / CANON classifications |
-| `FactTools` | `extract_facts`, `extract_facts_book`, `get_facts`, `list_unresolved_contradictions`, `resolve_contradiction` |
-| `ConsequenceTools` | `predict_behavior`, `get_consequences_for`, `get_recent_consequences`, `get_consequence_context` |
+The authoritative list is generated from the attributes — do not hand-maintain one here:
 
-`get_director_context` builds the "WHERE WE ARE" block (prior chapters, this chapter's outline, open threads) — the highest-value starting point for prose generation.
+```powershell
+dotnet run --project src/Prose.Mcp -- --export-tools docs/MCP_TOOLS.md
+```
 
-## Why it exists
-
-The Quorum-based generation pipeline is excellent for *review* — multiple voters catch what one misses — but for *generation* it averages voice toward mediocrity. This server is the alternative: keep the disciplined data layer, drop the multi-voter generator, let one writer (Claude in conversation) call the canon as needed. Tools return data; Claude decides what to do with it. Voice, sentence rhythm, and structure stay with Claude.
+Result: [`docs/MCP_TOOLS.md`](../../docs/MCP_TOOLS.md).
 
 ## Registration (one-time)
 
@@ -60,15 +56,14 @@ Restart Claude Desktop after editing.
 ## Build
 
 ```bash
-cd v3
-dotnet build Prose.Mcp/Prose.Mcp.csproj --configuration Release
+dotnet build src/Prose.Mcp/Prose.Mcp.csproj --configuration Release
 ```
 
-The `--no-build` flag in the registration command means the client launches the pre-built binary. Rebuild manually after code changes.
+The `--no-build` flag in the registration command means the client launches the pre-built binary. Rebuild manually after code changes. Because migrated tool bodies execute inside the Hub, a change to a tool's `{Name}Impl` also needs a Hub redeploy (`src/tools/deploy-apps.ps1 -Apps Hub -Start Hub`); the MCP tool catalog (names, descriptions, parameters) only changes when an MCP client restarts the server.
 
 ## Logs
 
-The server writes to `<canon-root>/engine/data/logs/mcp-{date}.txt`. **Stdout is reserved for the MCP wire protocol** — writing anything else to stdout corrupts the transport. Never use `Console.WriteLine` in any code path reached from the MCP server.
+The server writes to `<engine-root>/data/logs/mcp-{date}.txt` (`FileSystemPathProvider.LogDir`; the `data` root moves to `PROSE_MUTABLE_DATA_ROOT` when that is set). **Stdout is reserved for the MCP wire protocol** — writing anything else to stdout corrupts the transport. Never use `Console.WriteLine` in any code path reached from the MCP server.
 
 ## Verify it is working
 
@@ -77,6 +72,7 @@ After registration, start a fresh Claude Code session and ask: *"What motifs are
 If Claude calls `mcp__prose__list_books` and `mcp__prose__get_motifs`, the server is wired.
 
 If tools do not appear:
-1. Build: `dotnet build Prose.Mcp/Prose.Mcp.csproj -c Release`
-2. Check registration: `claude mcp list` should show `prose`
-3. Tail the log: `<canon-root>/engine/data/logs/mcp-<today>.txt` should show `transport reading messages`
+1. Check the Hub: `http://127.0.0.1:5900/api/health` must answer 200 — the server exits at startup otherwise.
+2. Build: `dotnet build src/Prose.Mcp/Prose.Mcp.csproj -c Release`
+3. Check registration: `claude mcp list` should show `prose`
+4. Tail the log: `<engine-root>/data/logs/mcp-<today>.txt` should show `transport reading messages`

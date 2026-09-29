@@ -5,6 +5,13 @@ using Prose.Core.Data.Entities;
 
 namespace Prose.Core.Services.Factory;
 
+/// <summary>
+/// Input to <see cref="RulingService.RecordAsync"/>. <see cref="Kind"/> is one of
+/// <see cref="RulingKinds.All"/>; metric and incidental rulings need a <see cref="Pattern"/>, a metric
+/// also <see cref="MaxPer1kWords"/>. A <see cref="BookId"/> (a chapter id is lifted to its book) scopes the
+/// ruling to that book and its universe; otherwise it is universe-wide, in <see cref="UniverseId"/> or the
+/// caller's explicitly named universe — never the inherited default.
+/// </summary>
 public sealed record RulingDraft(
     string Kind,
     string Text,

@@ -99,7 +99,10 @@ Output STRICT JSON, no fences, no commentary:
             for (int i = 0; i < batch.Count; i++)
             {
                 refMap[i] = batch[i].Id;
-                var prose = batch[i].Text!.Length > ProseClip ? batch[i].Text![..ProseClip] : batch[i].Text!;
+                // Reader-visible text, clipped after stripping: tags ate the clip budget and a clip
+                // through stored markup handed the model half a tag.
+                var plain = BeatMarkup.StripEntityTags(batch[i].Text);
+                var prose = plain.Length > ProseClip ? plain[..ProseClip] : plain;
                 sb.AppendLine($"[ref {i} · {batch[i].Chapter}]");
                 sb.AppendLine(prose);
                 sb.AppendLine();

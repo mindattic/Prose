@@ -40,6 +40,12 @@ public sealed record DuplicateBeatReport(
     int BeatsScanned, int BeatsEmbedded,
     IReadOnlyList<DuplicateBeatCandidate> Candidates);
 
+/// <summary>
+/// Finds near-duplicate beats within one book by embedding similarity (SQL Server
+/// <c>VECTOR_DISTANCE</c>, floor 0.90), skipping adjacent same-chapter pairs.
+/// <see cref="CheckNodeAsync"/> returns candidates and replaces the node's
+/// <c>BEAT-NEAR-DUPLICATE</c> findings; candidates are signals to read, never auto-applied.
+/// </summary>
 public class BeatDuplicateService(
     IDbContextFactory<ProseDbContext> dbFactory,
     EmbeddingService embeddings,

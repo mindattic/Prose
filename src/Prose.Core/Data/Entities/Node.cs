@@ -373,6 +373,8 @@ public abstract class Node
     public List<NodeKeyword> Keywords { get; set; } = new();
 }
 
+/// <summary>Constructs unsaved <see cref="Node"/> instances of the right concrete TPH type from a kind
+/// label or an existing node. Creates objects only; the caller assigns parent, universe and SortKey and saves.</summary>
 public static class NodeFactory
 {
     /// <summary>New empty node of the concrete type implied by a free-form

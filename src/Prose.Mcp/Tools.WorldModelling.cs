@@ -7,6 +7,11 @@ using Prose.Core.Services;
 
 namespace Prose.Mcp;
 
+/// <summary>
+/// MCP tools that model the world around a beat: entity relationship trees, world state at a beat,
+/// ambient palette, gear/loadout/weapon-network queries, stale-entity beats, beat validation,
+/// timeline checks and prose lessons. All forward to the Hub.
+/// </summary>
 [McpServerToolType]
 public class WorldModellingTools(
     EntityRelationshipService entityRelSvc,

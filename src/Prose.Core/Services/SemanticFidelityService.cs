@@ -303,7 +303,7 @@ public class SemanticFidelityService
                     bibleAlign.Value, intentAlign, "outline", msg, fix));
                 EmitFinding($"node:{node.Slug}", sev,
                     $"SEMANTIC-DRIFT [bible]: {msg}",
-                    b.Text?.Length > 200 ? b.Text[..200] : b.Text, fix);
+                    Clip200(b.Text), fix);
             }
 
             // Intent drift: prose no longer serves the beat's stated purpose. Below the
@@ -325,7 +325,7 @@ public class SemanticFidelityService
                     bibleAlign ?? 0, intentAlign, "intent", msg, fix));
                 EmitFinding($"node:{node.Slug}", sev,
                     $"SEMANTIC-DRIFT [intent]: {msg}",
-                    b.Text?.Length > 200 ? b.Text[..200] : b.Text, fix);
+                    Clip200(b.Text), fix);
             }
         }
 
@@ -363,6 +363,15 @@ public class SemanticFidelityService
             MeanIntentAlignment: meanIntent,
             Violations:         violations,
             FindingsEmitted:    violations.Count);
+    }
+
+    /// <summary>A finding snippet: reader-visible text, clipped AFTER stripping — clipping stored
+    /// markup cut tags in half and the snippet showed guid soup.</summary>
+    private static string? Clip200(string? text)
+    {
+        if (text is null) return null;
+        var plain = BeatMarkup.StripEntityTags(text);
+        return plain.Length > 200 ? plain[..200] : plain;
     }
 
     /// <summary>
@@ -410,7 +419,7 @@ public class SemanticFidelityService
                         "Revise to fulfil that purpose.";
             EmitFinding(filePath, sev,
                 $"SEMANTIC-DRIFT [intent]: {msg}",
-                beatText.Length > 200 ? beatText[..200] : beatText, fix);
+                Clip200(beatText), fix);
         }
         catch (Exception ex)
         {

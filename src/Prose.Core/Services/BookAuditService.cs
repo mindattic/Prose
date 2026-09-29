@@ -20,6 +20,11 @@ namespace Prose.Core.Services;
 // GLMZ books additionally get the GLMZ-specific gateway commandment.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// Despite the name, no longer an auditor: it holds the gateway and sequel "commandments" and
+/// renders them as a writing-goal block for <see cref="BeatGeneratorService"/>'s prompt
+/// (<c>BuildCommandmentContext</c>). Pure and read-only; GLMZ books get one extra gateway commandment.
+/// </summary>
 public class BookAuditService
 {
     // GLMZ universe ID — used to append universe-specific commandments

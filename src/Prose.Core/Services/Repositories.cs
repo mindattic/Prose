@@ -4657,10 +4657,15 @@ public class QuoteRepository : EfRepository<QuoteData>
     }
 }
 
-// Singleton repositories â€” one JSON document each, persisted as a row in the
+// Singleton repositories — one JSON document each, persisted as a row in the
 // universal Settings table (keyed by name). Earlier these used the path-only
 // JsonSingletonRepository ctor which routed through NullFactory and silently
-// returned defaults on every Get â€” fixed 2026-05-06.
+// returned defaults on every Get — fixed 2026-05-06.
+
+/// <summary>
+/// The tone bible (<see cref="ToneBibleData"/>): a single JSON document stored as the
+/// <c>tone_bible</c> row of the Settings table. The <see cref="IPathProvider"/> constructor is for tests only.
+/// </summary>
 public class ToneBibleRepository : JsonSingletonRepository<ToneBibleData>
 {
     public ToneBibleRepository(IDbContextFactory<ProseDbContext> db)
@@ -4669,6 +4674,10 @@ public class ToneBibleRepository : JsonSingletonRepository<ToneBibleData>
         : base(TestDbFactory.For(paths, "tone_bible"), "tone_bible") { }
 }
 
+/// <summary>
+/// The story bible (<see cref="StoryBibleData"/>): a single JSON document stored as the
+/// <c>story_bible</c> row of the Settings table. The <see cref="IPathProvider"/> constructor is for tests only.
+/// </summary>
 public class StoryBibleRepository : JsonSingletonRepository<StoryBibleData>
 {
     public StoryBibleRepository(IDbContextFactory<ProseDbContext> db)
@@ -4677,6 +4686,11 @@ public class StoryBibleRepository : JsonSingletonRepository<StoryBibleData>
         : base(TestDbFactory.For(paths, "story_bible"), "story_bible") { }
 }
 
+/// <summary>
+/// The literary rules (<see cref="LiteraryRulesData"/>) served by <c>get_literary_rules</c>: a single
+/// JSON document stored as the <c>literary_rules</c> row of the Settings table. The
+/// <see cref="IPathProvider"/> constructor is for tests only.
+/// </summary>
 public class LiteraryRulesRepository : JsonSingletonRepository<LiteraryRulesData>
 {
     public LiteraryRulesRepository(IDbContextFactory<ProseDbContext> db)
@@ -4685,6 +4699,12 @@ public class LiteraryRulesRepository : JsonSingletonRepository<LiteraryRulesData
         : base(TestDbFactory.For(paths, "literary_rules"), "literary_rules") { }
 }
 
+/// <summary>
+/// The single protagonist core-identity profile (<see cref="CharacterProfileData"/>: name, core
+/// contradiction, arc): one JSON document stored as the <c>character_profile</c> row of the Settings
+/// table — not the per-character records, which are relational.
+/// The <see cref="IPathProvider"/> constructor is for tests only.
+/// </summary>
 public class CharacterProfileRepository : JsonSingletonRepository<CharacterProfileData>
 {
     public CharacterProfileRepository(IDbContextFactory<ProseDbContext> db)

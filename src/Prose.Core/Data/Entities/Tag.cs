@@ -13,6 +13,8 @@ public class Tag
     public ICollection<EntityTag> EntityLinks { get; set; } = new List<EntityTag>();
 }
 
+/// <summary>Many-to-many join between an <see cref="Entity"/> and a free-form <see cref="Tag"/>.
+/// Unrelated to the inline entity markup in beat text (<c>BeatMarkup</c>).</summary>
 public class EntityTag
 {
     public Guid EntityId { get; set; }

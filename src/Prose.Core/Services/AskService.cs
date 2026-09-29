@@ -107,9 +107,11 @@ public class AskService
                 if (used > CharBudget) break;
                 var heading = string.IsNullOrWhiteSpace(b.Title) ? $"Ch {pos}" : $"Ch {pos} — {b.Title}";
                 proseBlock.AppendLine($"[{heading}]");
-                proseBlock.AppendLine(b.Text);
+                // Reader-visible text: tag markup is ~60 chars of guid per name, spent from the budget.
+                var plain = BeatMarkup.StripEntityTags(b.Text);
+                proseBlock.AppendLine(plain);
                 proseBlock.AppendLine();
-                used += b.Text?.Length ?? 0;
+                used += plain.Length;
                 proseChunks++;
                 proseCitations.Add(new ProseCitation(b.Id, node?.Slug ?? "", node?.Title ?? "", pos, 1.0));
             }
@@ -136,7 +138,9 @@ public class AskService
                 {
                     if (!texts.TryGetValue(h.ScopeId, out var b)) continue;
                     memberMap.TryGetValue(h.ScopeId, out var m);
-                    var chunk = (b.Text?.Length ?? 0) > MaxPerBeat ? b.Text![..MaxPerBeat] + "…" : b.Text ?? "";
+                    // Strip before clipping: clipping stored markup could cut a tag in half.
+                    var plain = BeatMarkup.StripEntityTags(b.Text);
+                    var chunk = plain.Length > MaxPerBeat ? plain[..MaxPerBeat] + "…" : plain;
                     var label = (m?.Title ?? "story") + (string.IsNullOrWhiteSpace(b.Title) ? "" : " — " + b.Title);
                     proseBlock.AppendLine($"--- {label} (similarity {h.Similarity:F3}) ---");
                     proseBlock.AppendLine(chunk);

@@ -9,7 +9,7 @@ namespace Prose.Core.Services.Operator;
 /// <summary>
 /// Drives one book through the KDP republish flow: find it on the bookshelf, upload the new
 /// manuscript, save/continue, publish, confirm, record. Same tool-use loop shape as
-/// <see cref="WriterOperatorService"/> (same event stream), scoped to ONE book per call rather
+/// the now-deleted <c>WriterOperatorService</c> (same <see cref="OperatorEvent"/> stream), scoped to ONE book per call rather
 /// than an ongoing chat — each book gets a fresh conversation (no history carried over from the
 /// previous book) so a stumble on book N can't drag book N+1's context down with it. The caller
 /// (task #7) loops this over every checked book in sequence.

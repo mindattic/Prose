@@ -494,7 +494,8 @@ public class SceneContextAssembler(
             var cmp = e.SingleToken ? StringComparison.Ordinal : StringComparison.OrdinalIgnoreCase;
             var at = text.IndexOf(key, cmp);
             if (at < 0) continue;
-            if (!Regex.IsMatch(text, $@"\b{Regex.Escape(key)}\b",
+            // Lookarounds, not \b: \b beside a name's own punctuation ("E.L.F.") never matches.
+            if (!Regex.IsMatch(text, $@"(?<!\w){Regex.Escape(key)}(?!\w)",
                     e.SingleToken ? RegexOptions.None : RegexOptions.IgnoreCase))
                 continue;
             yield return new SceneEntityRef(e.Id, e.Name, e.Type, "name", 3.0);

@@ -17,6 +17,10 @@ namespace Prose.Mcp;
 //   book_metrics   — book-wide tic counts against the author's metric ceilings
 // CLI twin: prose --ruling add|seed|list|supersede|violations|metrics.
 
+/// <summary>
+/// MCP surface of <see cref="RulingService"/>: record, list and supersede rulings, find and record
+/// law violations, and report book metrics. Forwarded to the Hub. CLI twin: <c>prose --ruling</c>.
+/// </summary>
 [McpServerToolType]
 public class RulingTools(RulingService rulings, MetricsReport metrics, IDbContextFactory<ProseDbContext> dbFactory, HubInvoker hub)
 {

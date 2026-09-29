@@ -17,6 +17,11 @@ namespace Prose.Mcp;
 // All ids are GUID strings. Slugs are also accepted where the parameter
 // description says so — the tool resolves slug→id with a single index seek.
 
+/// <summary>
+/// MCP tools over the node tree and its beats (read, insert, split, join, splice, delete, move,
+/// rename, export, narrate). Every tool forwards to the Hub via <see cref="HubInvoker"/>; the
+/// <c>{Name}Impl</c> bodies run there and route mutations through <see cref="NodeWorkbenchService"/>.
+/// </summary>
 [McpServerToolType]
 public class NodeTools
 {

@@ -36,6 +36,19 @@ public sealed class HubInvoker(IHttpClientFactory httpFactory, IUniverseContext 
             });
             var body = await resp.Content.ReadAsStringAsync();
 
+            // A 401 (stale/missing X-Prose-Key), 415 or an unhandled 500 carries an empty body, which
+            // reached the MCP caller as a blank tool result it could read as success. Name it instead.
+            if (!resp.IsSuccessStatusCode && string.IsNullOrWhiteSpace(body))
+                return System.Text.Json.JsonSerializer.Serialize(new
+                {
+                    error = "hub_http_error",
+                    status = (int)resp.StatusCode,
+                    detail = resp.ReasonPhrase,
+                    hint = resp.StatusCode == System.Net.HttpStatusCode.Unauthorized
+                        ? "The Hub rejected the X-Prose-Key header — restart this MCP server so it re-reads Settings.json."
+                        : $"The Hub answered {(int)resp.StatusCode} with no body for {toolClass}.{method}; check its log.",
+                });
+
             // `switch_universe` executes in the Hub process, but the MCP session also needs to
             // remember the selection so every later forward carries the same explicit scope.
             // Only when the Hub accepted the slug: an unknown slug (or a Hub error) answered with an

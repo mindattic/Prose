@@ -7,6 +7,11 @@ namespace Prose.Core.Data.Entities;
 // canonical entity exists.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// The relational record of a place/district. Shares its <see cref="Id"/> with the parent
+/// <see cref="Entity"/> row, which carries the universe, slug and provenance; converted to and from
+/// <c>DistrictData</c> by <c>PlaceMapper</c>, with list fields in the bridge tables below.
+/// </summary>
 public class Place
 {
     public Guid Id { get; set; }

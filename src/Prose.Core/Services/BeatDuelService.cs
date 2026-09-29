@@ -34,6 +34,11 @@ namespace Prose.Core.Services;
 // caller holding an explicit user instruction; it defaults to refusing.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// Blind A/B LLM-panel adjudication of a beat's current text against a candidate rewrite
+/// (3 voters, escalating to 7). Refuses to run unless the caller passes <c>allowVotes: true</c>
+/// (SS-A44). Returns a verdict and ballots, caching verdicts by text-hash pair; it never edits the beat.
+/// </summary>
 public class BeatDuelService(
     ILlmService llm,
     IDbContextFactory<ProseDbContext> dbFactory,

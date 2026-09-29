@@ -14,6 +14,10 @@ namespace Prose.Mcp;
 // immediately, since both read/write the same "operator.byokeys" row.
 // ─────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// MCP tools to list, set, add, remove and clear the KDP operator's bring-your-own API-key pool
+/// (<c>operator.byokeys</c>, shared with <c>prose --set-byo-key</c>). Forwarded to the Hub.
+/// </summary>
 [McpServerToolType]
 public class OperatorKeyTools
 {

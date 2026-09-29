@@ -1,8 +1,8 @@
 namespace Prose.Core.Data.Entities;
 
 /// <summary>
-/// One fact the reader has been told, extracted from a just-written beat. Read back by
-/// <see cref="Prose.Core.Services.ReaderKnowledgeService.BuildKnowledgeBlockAsync"/> to inject
+/// One fact the reader has been told, extracted from a just-written beat. Was read back by
+/// <c>ReaderKnowledgeService.BuildKnowledgeBlockAsync</c> (that service no longer exists) to inject
 /// "what the reader currently knows" into the next beat's prompt.
 ///
 /// This is live write-time working state, not a human-triaged defect. It used to live in the

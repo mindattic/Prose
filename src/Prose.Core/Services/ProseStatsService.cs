@@ -56,6 +56,12 @@ public static class ProseStatsService
         if (string.IsNullOrWhiteSpace(text))
             return new ProseStats(beatId, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
+        // Reader-visible text. On stored markup a tag split into three "words" (<entity, repo="…",
+        // guid="…">Name</entity>) and its attribute quotes made every tagged line count as dialogue.
+        text = BeatMarkup.StripEntityTags(text);
+        if (string.IsNullOrWhiteSpace(text))
+            return new ProseStats(beatId, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
         var words = text.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries);
         var wordCount = words.Length;
 
@@ -84,7 +90,8 @@ public static class ProseStatsService
         var tellingCount = TellingPhrases.Sum(p => CountSubstring(text, p));
 
         var lines = text.Split('\n', StringSplitOptions.RemoveEmptyEntries);
-        var dialogueLines = lines.Count(l => l.Contains('"'));
+        // Curly quotes too — the prose is typeset with them, and straight-only read it as airless.
+        var dialogueLines = lines.Count(l => l.IndexOfAny(['"', '“', '”']) >= 0);
         var dialogueFraction = lines.Length > 0 ? (double)dialogueLines / lines.Length : 0;
 
         return new ProseStats(

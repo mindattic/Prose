@@ -24,6 +24,11 @@ namespace Prose.Mcp;
 //   defer_obligation          — move its due point; a deliberate mystery is a Deferred row, not silence
 //   reopen_obligation / set_obligation_due / accept_obligation / link_obligation_entity
 
+/// <summary>
+/// MCP surface of the Narrative Obligation Ledger (RFC 0013): list, inspect and trial-balance a
+/// book's obligations, and open/close/drop/defer/reopen them. Writes ledger rows only, never prose;
+/// all tools forward to the Hub.
+/// </summary>
 [McpServerToolType]
 public class ObligationTools(
     NarrativeObligationService obligations,

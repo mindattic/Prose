@@ -39,7 +39,7 @@ public sealed record NightlyHealthReport(
 /// ProseEmbeddings vectors (EmbeddingHealthService). Writes findings to
 /// FindingsService and emits a markdown report.
 ///
-/// Dropped its kNN score-prediction signal 2026-08-08: <see cref="EmbeddingHealthService.PredictScoreAsync"/>
+/// Dropped its kNN score-prediction signal 2026-08-08: <c>EmbeddingHealthService.PredictScoreAsync</c> (since removed)
 /// only draws neighbors from beats with a non-null Beat.Score, which is under 1% of the corpus
 /// since panel-voting went opt-in (SS-A44) — the neighbor pool can't grow under the current
 /// regime, so unlike other score-gated checks fixed this session, this one has no un-gating fix;

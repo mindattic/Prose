@@ -5,6 +5,11 @@ namespace Prose.Core.Data.Entities;
 // Faction FKs while preserving the alias string.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// The relational record of a faction (gang, syndicate, cell, movement). Shares its <see cref="Id"/>
+/// with the parent <see cref="Entity"/> row, which carries the universe and slug; mapped by
+/// <c>FactionMapper</c>, with members and relationships as FK-resolving bridge rows.
+/// </summary>
 public class Faction
 {
     public Guid Id { get; set; }

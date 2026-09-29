@@ -17,6 +17,10 @@ namespace Prose.Mcp;
 // or piece of reasoning, then any session (including a totally fresh one) can read either
 // ledger back via CommandLog/DecisionLog instead of relying on chat history.
 
+/// <summary>
+/// MCP tools over the Hub's durable logs: read the automatic command ledger, write and read the
+/// decision ledger (<c>log_decision</c>), and search logs. Forwarded to the Hub.
+/// </summary>
 [McpServerToolType]
 public class LedgerTools
 {

@@ -28,6 +28,11 @@ namespace Prose.Core.Services;
 // no loss of signal actually relied on. See docs/rfc/0009-cost-tiered-storytelling-engine.md.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// LLM-backed story-science analysis; only <see cref="CheckAntiheroEmpathyAsync"/> (Storr's four
+/// antihero empathy levers, scored for one character against one beat's text) remains. Read-only:
+/// it loads the character and returns a result, writing nothing.
+/// </summary>
 public class NarrativeScienceService(
     ILlmService llm,
     IDbContextFactory<ProseDbContext> dbFactory)

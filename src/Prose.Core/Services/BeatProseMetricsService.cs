@@ -158,6 +158,10 @@ public class BeatProseMetricsService
     /// repair trigger as well as this service's own nightly/CLI persistence paths.</summary>
     public static BeatProseMetrics Compute(Guid beatId, Guid nodeId, string text)
     {
+        // Reader-visible text. On stored markup every tag added "entity"/"repo"/"guid"/hex words
+        // (dragging TypeTokenRatio into the outlier band) and its attribute quotes matched
+        // DialogueRx as speech.
+        text = BeatMarkup.StripEntityTags(text);
         var words     = Tokenize(text);
         var sentences = SplitSentences(text);
         int wc        = words.Count;

@@ -66,7 +66,8 @@ public sealed class BannedNameSyncCheck : IWriteGateSyncCheck
 
         foreach (var name in banned)
         {
-            if (Regex.IsMatch(value, $@"\b{Regex.Escape(name)}\b", RegexOptions.IgnoreCase))
+            // Lookarounds, not \b: a banned name with edge punctuation ("E.L.F.") never matched \b.
+            if (Regex.IsMatch(value, $@"(?<!\w){Regex.Escape(name)}(?!\w)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
                 throw new WriteGateRejectedException(
                     $"Rejected: \"{value}\" contains the Prose-wide banned name \"{name}\" — " +
                     "banned across every universe (forward-only; pre-existing rows using it are " +

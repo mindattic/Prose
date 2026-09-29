@@ -30,6 +30,11 @@ namespace Prose.Core.Data.Entities;
 
 // ── Books / chapters / beats ────────────────────────────────────────────────
 
+/// <summary>
+/// A book in the <b>legacy</b>, pre-Nodes Book/Chapter schema (the <c>Books</c> table, reached by the
+/// <c>*_legacy_book</c> tools). Live books are <see cref="BookNode"/>s in the <see cref="Node"/> tree with
+/// their prose in <see cref="Beat"/> rows (joined through <see cref="BeatNode"/>); new work never writes here.
+/// </summary>
 public class Book
 {
     public Guid Id { get; set; }
@@ -75,6 +80,10 @@ public class BookChapterOrder
     public Chapter? Chapter { get; set; }
 }
 
+/// <summary>
+/// A series in the <b>legacy</b> Book/Chapter schema (<c>SeriesItems</c> table). Live series are
+/// <see cref="SeriesNode"/>s.
+/// </summary>
 public class Series
 {
     public Guid Id { get; set; }
@@ -84,6 +93,10 @@ public class Series
     public string Description { get; set; } = "";
 }
 
+/// <summary>
+/// A chapter in the <b>legacy</b> Book/Chapter schema (<c>Chapters</c> table), still read by some
+/// older paths (e.g. the event log). Live chapters are <see cref="ChapterNode"/>s.
+/// </summary>
 public class Chapter
 {
     public Guid Id { get; set; }
@@ -117,8 +130,8 @@ public class Chapter
     /// <summary>
     /// Serialized StoryOutline — beat sheet with act structure, character
     /// arcs, seeds and payoffs. Replaces the legacy
-    /// <c>engine/data/chapters/&lt;id&gt;/outline.json</c> file. Owned by
-    /// <see cref="Prose.Core.Services.OutlineService"/>.
+    /// <c>engine/data/chapters/&lt;id&gt;/outline.json</c> file. Was owned by
+    /// <c>OutlineService</c>, which no longer exists; the column stays mapped for historical data.
     /// </summary>
     public string? OutlineJson { get; set; }
 
@@ -141,6 +154,10 @@ public class ChapterCharacter
     public Entity? Character { get; set; }
 }
 
+/// <summary>
+/// A beat of a <b>legacy</b> <see cref="Chapter"/> (<c>ChapterBeats</c> table), with its recording state.
+/// Not the live beat: prose written and edited today lives in <see cref="Beat"/>.
+/// </summary>
 public class ChapterBeat
 {
     public long Id { get; set; }

@@ -516,7 +516,8 @@ public sealed class DocContextService(
         foreach (var kw in triggers.Split([',', ';'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
         {
             if (kw.Length < 4) continue;
-            if (Regex.IsMatch(text, $@"\b{Regex.Escape(kw)}\b", RegexOptions.IgnoreCase))
+            // Lookarounds, not \b: a trigger with edge punctuation ("E.L.F.") never matched \b.
+            if (Regex.IsMatch(text, $@"(?<!\w){Regex.Escape(kw)}(?!\w)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
                 return kw;
         }
         return null;

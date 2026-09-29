@@ -5,6 +5,11 @@ using System.Text;
 
 namespace Prose.Core.Services;
 
+/// <summary>
+/// One node of the relationship tree <see cref="EntityRelationshipService.GetTreeAsync"/> builds:
+/// the entity, the edge type and sentiment that reached it from its parent (null at the root),
+/// its BFS depth, and its children.
+/// </summary>
 public class EntityRelTree
 {
     public Guid EntityId { get; set; }

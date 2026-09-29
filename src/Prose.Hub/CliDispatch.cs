@@ -233,7 +233,11 @@ public static class CliDispatch
             if (universeId != null) universeContext.SetFlowUniverse(universeId);
             Console.SetOut(outWriter);
             Console.SetError(errWriter);
-            if (req.Stdin != null) Console.SetIn(new StringReader(req.Stdin));
+            // Always swapped, never left on the Hub's own stdin: the Hub runs in a visible console,
+            // so a handler that prompts (ReviewNodeCli's "Proceed? [y/N]" Console.ReadLine) blocked
+            // on the Hub window's keyboard while holding ConsoleGate — every later CLI call queued
+            // behind it. An empty reader answers "no input" (ReadLine → null → cancelled).
+            Console.SetIn(new StringReader(req.Stdin ?? ""));
             if (!string.IsNullOrWhiteSpace(req.Cwd) && Directory.Exists(req.Cwd)) Environment.CurrentDirectory = req.Cwd;
 
             var result = method.Invoke(null, callArgs);

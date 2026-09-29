@@ -75,7 +75,7 @@ public class NarrativeSynopsisService(ILlmService llm, IDbContextFactory<ProseDb
             var header = $"[Beat {i + 1}]";
             if (!string.IsNullOrWhiteSpace(b.Description))
                 header += $" {b.Description}";
-            return $"{header}\n{b.Text.Trim()}";
+            return $"{header}\n{BeatMarkup.StripEntityTags(b.Text).Trim()}"; // reader-visible, not markup
         }));
 
     async Task<string> GenerateSynopsisAsync(string title, string corpus, CancellationToken ct)

@@ -3,8 +3,8 @@ using System.Text.Json;
 namespace Prose.Core.Services.Operator;
 
 /// <summary>
-/// One callable surface the KDP-publish operator LLM can invoke. Mirrors <see cref="IWriterTool"/>'s
-/// shape exactly — same registry/loop pattern, different tool surface (drives a live KDP browser
+/// One callable surface the KDP-publish operator LLM can invoke. Modelled on the now-deleted
+/// <c>IWriterTool</c> — same registry/loop pattern, different tool surface (drives a live KDP browser
 /// page instead of the prose-generation services).
 /// </summary>
 public interface IKdpTool

@@ -19,6 +19,12 @@ namespace Prose.Core.Services;
 //   "claude-project-memory" → ~/.claude/projects/{projectSlug}/memory
 // ──────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// Mirrors project and agent-memory markdown files into the <see cref="MarkdownFile"/> table
+/// (<see cref="SyncAllAsync"/> writes; <c>dryRun</c> reports only), lists and searches them, and
+/// restores them to disk from the temporal history (<see cref="GetAsync"/> with <c>asOf</c>,
+/// <see cref="RestoreAsync"/>). Rows are classified into tier/scope/universe for doc-context loading.
+/// </summary>
 public class MarkdownFileService
 {
     public record DiscoveredFile(string FilePath, string FileRoot, string RelativePath, string Category);

@@ -7,6 +7,11 @@ namespace Prose.Core.Data.Entities;
 // has been used.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// The relational record of an automaton — a soulless machine construct (war machine, domestic robot,
+/// industrial platform), not alive and not AI.
+/// Shares its <see cref="Id"/> with the parent <see cref="Entity"/> row; mapped by <c>AutomatonMapper</c>.
+/// </summary>
 public class Automaton
 {
     public Guid Id { get; set; }

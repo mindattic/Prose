@@ -150,7 +150,9 @@ public class VoiceHarvestService
         {
             ct.ThrowIfCancellationRequested();
             var ordered = await workbench.GetOrderedBeatsAsync(s.Id, ct);
-            var prose = string.Join("\n\n", ordered.Select(o => (o.Beat.Text ?? "").Trim()).Where(t => t.Length > 0));
+            // Reader-visible text: the model is asked for verbatim lines, and the 16k clip below
+            // must not cut a tag in half.
+            var prose = string.Join("\n\n", ordered.Select(o => BeatMarkup.StripEntityTags(o.Beat.Text).Trim()).Where(t => t.Length > 0));
             if (prose.Length == 0) { results.Add(new HarvestResult(s.Slug, s.Title, s.Score ?? 0, 0, 0, [])); continue; }
 
             var candidates = await DistillFromProseAsync(s.Title, s.Score ?? 0, prose, canon.Count - 1, ct);
@@ -244,8 +246,10 @@ public class VoiceHarvestService
         {
             pos++;
             if (!counts.TryGetValue(ob.Beat.Id, out var n) || n < 2) continue;     // never edited
-            var generated = await workbench.GetBeatVersionTextAsync(ob.Beat.Id, n - 1, ct); // oldest = as generated
-            var final = ob.Beat.Text ?? "";
+            // Compared as reader-visible text: tags are re-derived on every save, so a beat whose
+            // only change was gaining entity markup read as an author edit of every tagged name.
+            var generated = BeatMarkup.StripEntityTags(await workbench.GetBeatVersionTextAsync(ob.Beat.Id, n - 1, ct)); // oldest = as generated
+            var final = BeatMarkup.StripEntityTags(ob.Beat.Text);
             if (string.IsNullOrWhiteSpace(generated) || generated.Trim() == final.Trim()) continue;
             edits.Add((pos, generated.Trim(), final.Trim()));
         }

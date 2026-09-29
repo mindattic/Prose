@@ -84,9 +84,15 @@ public static class GrepBeatsCli
         var beatQuery = db.Beats.AsNoTracking();
         if (scopedBeatIds != null)
             beatQuery = beatQuery.Where(b => scopedBeatIds.Contains(b.Id));
-        var beats = await beatQuery
+        // Reader-visible text, unless the pattern is itself markup (hunting a stray "<entity" or a
+        // guid="…"). On stored markup "character", "place", "weapon" matched every tag's repo="…"
+        // attribute — a thematic count that was really a count of links — and snippets were guid soup.
+        var searchMarkup = pattern.IndexOfAny(['<', '>', '=', '"']) >= 0;
+        var beats = (await beatQuery
             .Select(b => new { b.Id, b.Number, b.Text })
-            .ToListAsync();
+            .ToListAsync())
+            .Select(b => new { b.Id, b.Number, Text = searchMarkup ? b.Text : BeatMarkup.StripEntityTags(b.Text) })
+            .ToList();
 
         var matcher = BuildMatcher(pattern, wholeWord, caseSensitive, comparison);
         var hits = beats.Where(b => !string.IsNullOrEmpty(b.Text) && matcher(b.Text)).ToList();
@@ -149,8 +155,9 @@ public static class GrepBeatsCli
     }
 
     private static Regex WordRegex(string pattern, bool caseSensitive) =>
-        new(@"\b" + Regex.Escape(pattern) + @"\b",
-            caseSensitive ? RegexOptions.None : RegexOptions.IgnoreCase);
+        // Lookarounds, not \b: \b beside a pattern's own edge punctuation ("E.L.F.") never matched.
+        new(@"(?<!\w)" + Regex.Escape(pattern) + @"(?!\w)",
+            caseSensitive ? RegexOptions.None : RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
 
     private static string? ArgValue(string[] args, string flag)
     {

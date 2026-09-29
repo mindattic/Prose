@@ -4,7 +4,7 @@ namespace Prose.Core.Services.Operator;
 
 /// <summary>
 /// Collects every <see cref="IKdpTool"/> registered with DI into a single addressable surface.
-/// Exact mirror of <see cref="WriterToolRegistry"/> — see that type for the reasoning.
+/// Modelled on the now-deleted <c>WriterToolRegistry</c>: tools are looked up by their unique <see cref="IKdpTool.Name"/>.
 /// </summary>
 public class KdpToolRegistry
 {

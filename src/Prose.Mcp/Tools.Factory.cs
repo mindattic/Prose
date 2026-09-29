@@ -24,6 +24,11 @@ namespace Prose.Mcp;
 // CLI twin: prose --factory / --order / --session (works before an MCP restart).
 // Every …Impl carries [FactoryTool]: the usage check files "Use or delete" for one no one calls.
 
+/// <summary>
+/// MCP surface of the Novel Factory (RFC 0015): factory status/next/context/journal/capture/usage,
+/// work orders and session end. All tools forward to the Hub, which computes status from the
+/// database and validates work-order checks itself. CLI twin: <c>prose --factory / --order / --session</c>.
+/// </summary>
 [McpServerToolType]
 public class FactoryTools(
     FactoryService factory,

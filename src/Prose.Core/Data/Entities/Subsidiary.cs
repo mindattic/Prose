@@ -6,6 +6,11 @@ namespace Prose.Core.Data.Entities;
 // product entity (weapon/equipment/etc.) the name refers to.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// The relational record of a subsidiary of a <see cref="Corponation"/>. Shares its <see cref="Id"/>
+/// with the parent <see cref="Entity"/> row; <see cref="ParentCorponationId"/> is null when the parent
+/// name did not resolve, with the name kept in <see cref="ParentCorponationAlias"/>.
+/// </summary>
 public class Subsidiary
 {
     public Guid Id { get; set; }

@@ -12,6 +12,11 @@ namespace Prose.Core.Data.Entities;
 // missing.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// The relational record of a weapon. Shares its <see cref="Id"/> with the parent <see cref="Entity"/>
+/// row (universe, slug, provenance); mapped to <c>WeaponryData</c> by <c>WeaponMapper</c>. The other
+/// gear types in this file follow the same shape.
+/// </summary>
 public class Weapon
 {
     public Guid Id { get; set; }

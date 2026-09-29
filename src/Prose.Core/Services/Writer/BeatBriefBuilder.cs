@@ -140,7 +140,8 @@ public class BeatBriefBuilder
             var found = new List<string>();
             foreach (var name in names)
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(text, $@"\b{System.Text.RegularExpressions.Regex.Escape(name)}\b"))
+                // Lookarounds, not \b: \b beside a name's own punctuation ("E.L.F.") never matches.
+                if (System.Text.RegularExpressions.Regex.IsMatch(text, $@"(?<!\w){System.Text.RegularExpressions.Regex.Escape(name)}(?!\w)"))
                     found.Add(name);
             }
             // Drop a name that is merely a token of a longer matched name ("Kyle" when "Kyle Corbin" matched).

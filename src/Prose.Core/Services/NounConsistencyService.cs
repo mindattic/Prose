@@ -29,6 +29,12 @@ namespace Prose.Core.Services;
 // tier (validate-nouns), not part of the paid audit battery. Confirmed 2026-08-13.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// Flags beats that still use a deprecated or renamed name, per the universe-scoped
+/// <see cref="DeprecatedEntityName"/> rules. <see cref="ValidateAsync"/> / <see cref="ValidateSlugAsync"/>
+/// scan a node plus its chapter children and persist violations as findings through
+/// <see cref="AuditRunner"/>; <see cref="AddRuleAsync"/> registers a new rename rule. No LLM calls.
+/// </summary>
 public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory, AuditRunner auditRunner)
 {
     // ── Public API ────────────────────────────────────────────────────────────
@@ -121,6 +127,9 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
             .OrderBy(nb => nb.SortKey)
             .Select(nb => new { nb.Beat!.Id, nb.Beat.Number, nb.Beat.Text })
             .ToListAsync(ct);
+        // Scan the reader-visible text: on markup a deprecated name could match a tag's repo="…"
+        // attribute, and every snippet quoted guid soup around a linked name.
+        beats = beats.Select(b => new { b.Id, b.Number, Text = BeatMarkup.StripEntityTags(b.Text) }).ToList();
 
         var violations = new List<NounViolation>();
 

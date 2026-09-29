@@ -5,6 +5,11 @@ namespace Prose.Core.Data.Entities;
 // fields; the only collection is CommonNames which becomes its own bridge.
 // ─────────────────────────────────────────────────────────────────────────────
 
+/// <summary>
+/// The relational record of a CorpoNation (a corporate sovereign). Shares its <see cref="Id"/> with the
+/// parent <see cref="Entity"/> row (universe, slug); mapped by <c>CorponationMapper</c>. Its
+/// subsidiaries are separate <see cref="Subsidiary"/> entities pointing back here.
+/// </summary>
 public class Corponation
 {
     public Guid Id { get; set; }

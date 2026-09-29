@@ -16,11 +16,16 @@ public static class SecretRedactor
     private static readonly HashSet<string> SecretNames = new(StringComparer.OrdinalIgnoreCase)
     {
         "key", "keys", "apikey", "api_key", "apiKey", "secret", "password", "token", "accesstoken",
+        "localKey", "workerKey",
     };
 
     private static readonly HashSet<string> SecretFlags = new(StringComparer.OrdinalIgnoreCase)
     {
         "--key", "--keys", "--api-key", "--secret", "--password", "--token",
+        // SetByoKeyCli's incremental pool edits, WorkerModeCli's coordinator key, and the
+        // --local-key vLLM bearer (ExpandBeat/ReviewNode/ReviewEntity/LinkWeaponAmmo/WorkerMode):
+        // all raw credentials that reached the console, Serilog and the Command Ledger verbatim.
+        "--add-key", "--remove-key", "--worker-key", "--local-key",
     };
 
     /// <summary>CLI argv: the value after a secret flag (or in <c>--flag=value</c>) becomes ***.</summary>

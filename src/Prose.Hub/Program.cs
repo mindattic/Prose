@@ -144,6 +144,13 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
     ContentRootPath = AppContext.BaseDirectory
 });
 builder.WebHost.UseUrls("http://127.0.0.1:5900");
+// DNS-rebinding guard (2026-09-29): binding to loopback does not stop a web page on a hostile
+// domain that re-resolves to 127.0.0.1 — its requests arrive here with Host: evil.example, and
+// the default AllowedHosts ("*") accepted them, making every unauthenticated route (the Writer's
+// Blazor circuit included) same-origin to that page. Every real client addresses the Hub as
+// 127.0.0.1 (HubGate.DefaultBaseUrl); anything else gets a 400.
+builder.Services.Configure<Microsoft.AspNetCore.HostFiltering.HostFilteringOptions>(o =>
+    o.AllowedHosts = new List<string> { "127.0.0.1", "localhost" });
 
 // Added as ONE additional provider (deliberately no ClearProviders() - unlike Mcp, which
 // needs pure stdio hygiene) - coexists with RingBufferLoggerProvider (registered below) on
@@ -280,6 +287,12 @@ await using (var migrationScope = app.Services.CreateAsyncScope())
 // ObservabilityBridge's own doc comment. Must run after Build() so DI can resolve
 // IHubContext<ObservabilityHub> (registered by AddSignalR/MapHub).
 app.Services.GetRequiredService<Prose.Hub.ObservabilityBridge>().Wire();
+// Cross-site WebSocket guard (2026-09-29): WebSockets are exempt from CORS, so any page the author
+// visits could open ws://127.0.0.1:5900/hubs/observability (skipNegotiation) and stream the live
+// log/DCM feed. Registered ahead of MapHub's own inner UseWebSockets, so this instance owns the
+// handshake. A browser always sends Origin; the .NET SignalR clients (ObserverUi, Maui) send none
+// and are unaffected.
+app.UseWebSockets(new WebSocketOptions { AllowedOrigins = { "http://127.0.0.1:5900", "http://localhost:5900" } });
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseAntiforgery(); // required by MapRazorComponents (Phase 5) - found live via /api/logs/recent

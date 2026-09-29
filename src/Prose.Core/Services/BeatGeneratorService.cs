@@ -6,6 +6,12 @@ using Prose.Core.Models;
 
 namespace Prose.Core.Services;
 
+/// <summary>
+/// LLM prompt assembly for beat-level generation: drafts a beat from a <see cref="BeatContext"/>
+/// (grounded in the current universe's primer, graph neighbours and plants), suggests and ranks
+/// next beats, and flags out-of-character dialogue. Returns text and findings only — it never
+/// saves; callers such as <see cref="ProseWriterRouter"/> and <c>BeatWriteOrchestrator</c> own the write.
+/// </summary>
 public class BeatGeneratorService
 {
     private readonly ILlmService llm;

@@ -37,6 +37,7 @@ public class Ruling
     public Guid? SupersededById { get; set; }
 }
 
+/// <summary>The allowed values of <see cref="Ruling.Kind"/>, validated by <c>RulingService.RecordAsync</c>.</summary>
 public static class RulingKinds
 {
     /// <summary>Never true in the world: its pattern must match neither the prose nor any record the book tags.</summary>
@@ -44,7 +45,9 @@ public static class RulingKinds
     /// <summary>True in the world, never said on the page (Seo made Silence; the record holds it, the prose must not).
     /// Its pattern binds the prose only.</summary>
     public const string PageLaw = "page-law";
+    /// <summary>A book-level tic ceiling: its pattern may match at most <see cref="Ruling.MaxPer1kWords"/> times per 1,000 words.</summary>
     public const string Metric = "metric";
+    /// <summary>A proper name that intentionally has no entity record; its pattern names it.</summary>
     public const string Incidental = "incidental";
     public static readonly string[] All = [Law, PageLaw, Metric, Incidental];
     /// <summary>The kinds whose patterns the prose must never match.</summary>
@@ -111,6 +114,7 @@ public class WorkOrder
     public string? CommitHash { get; set; }
 }
 
+/// <summary>The allowed values of <see cref="WorkOrder.Kind"/>: <c>engine</c> (repo code/docs) or <c>author</c> (a request about a book).</summary>
 public static class WorkOrderKinds
 {
     public const string Engine = "engine";
@@ -118,6 +122,8 @@ public static class WorkOrderKinds
     public static readonly string[] All = [Engine, Author];
 }
 
+/// <summary>The lifecycle values of <see cref="WorkOrder.Status"/>. Closed only via the Hub's check
+/// validation; abandoned records its reason in <see cref="WorkOrder.EvidenceJson"/>.</summary>
 public static class WorkOrderStatus
 {
     public const string Open = "open";

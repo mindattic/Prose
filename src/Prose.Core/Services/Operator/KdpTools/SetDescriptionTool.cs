@@ -17,11 +17,15 @@ public class SetDescriptionTool : IKdpTool
 {
     public string Name => "set_description";
 
+    /// <summary>KDP's description limit, counted on the HTML sent to its editor.</summary>
+    internal const int MaxDescriptionLength = 4000;
+
     public string Description =>
         "Set the KDP Details page's product Description (the rich-text box under 'Description'). " +
         "Plain text only — do not include HTML tags. Returns {found:false} if no CKEditor " +
         "instance named editor1 exists on the current page (you're probably not on the Details " +
-        "step). Returns {found:true, data} with the description as KDP now sees it.";
+        "step), or {found:false, error:'description_too_long'} if it exceeds KDP's 4,000-character " +
+        "limit once formatted. Returns {found:true, data} with the description as KDP now sees it.";
 
     public string ParametersJsonSchema => """
     {
@@ -39,7 +43,12 @@ public class SetDescriptionTool : IKdpTool
         // CKEditor's setData takes HTML, not text: raw plain text lost every paragraph break (the
         // exported description.txt's blank-line paragraphs, and its appended reading-time line,
         // collapsed into one run-on block) and mis-parsed any '&' or '<' in it.
-        var textJs = JsonSerializer.Serialize(PlainTextToHtml(text));
+        var html = PlainTextToHtml(text);
+        // KDP caps the description at 4,000 characters and counts the markup, so the paragraph
+        // tags above can push a near-limit text over it. Refuse rather than let KDP truncate.
+        if (html.Length > MaxDescriptionLength)
+            return JsonSerializer.Serialize(new { found = false, error = "description_too_long", length = html.Length, limit = MaxDescriptionLength });
+        var textJs = JsonSerializer.Serialize(html);
 
         var script = $$"""
         (function() {

@@ -462,6 +462,13 @@ public class RepetitionLintService
                 phrases++;
                 var lo = Math.Max(0, m.Index - 300);
                 var hi = Math.Min(beats[i].Text.Length, m.Index + m.Length + 300);
+                // Widen the window to whole tags: a cut through a tag left an unstrippable fragment
+                // (attribute text, a half guid) in windowLower and dropped that tag's guid.
+                foreach (var t in BeatMarkup.TagSpans(beats[i].Text))
+                {
+                    if (lo > t.Start && lo < t.Start + t.Length) lo = t.Start;
+                    if (hi > t.Start && hi < t.Start + t.Length) hi = t.Start + t.Length;
+                }
                 var window = beats[i].Text[lo..hi];
                 var windowLower = Norm(BeatMarkup.StripEntityTags(window));
                 var candidates = new HashSet<Guid>();

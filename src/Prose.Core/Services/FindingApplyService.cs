@@ -142,15 +142,35 @@ public class FindingApplyService
             await using var db = await dbFactory.CreateDbContextAsync(ct);
             var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
             if (beat is null) return new(ApplyOutcome.BeatMissing);
-            if (!beat.Text.Contains(f.Snippet!, StringComparison.Ordinal))
-                return new(ApplyOutcome.SnippetNotFound,
-                    "The exact snippet wasn't found in the beat's current text. Edit manually.");
 
-            // Replace() rewrote EVERY copy of the snippet — a short line like "No," he said.
-            // appearing twice got the fix in both places. Only an unambiguous snippet is applied.
-            var updated = ReplaceSingle(beat.Text, f.Snippet!, f.SuggestedFix!);
-            if (updated == null)
+            // Snippets are quoted from the READER-VISIBLE text (every reviewer is shown stripped
+            // prose), but the beat is stored with entity tags. Matched against the markup, any
+            // snippet containing a linked name ("Kyle stepped into the rain") was never found.
+            // Match on the stripped text and write through BeatSplice, which maps the hit back
+            // onto the markup and unwraps only a tag the snippet overlaps. A snippet that is
+            // itself raw markup (an older clip of stored text) still takes the literal path.
+            string? updated;
+            var plainHits = BeatSplice.Occurrences(BeatMarkup.StripEntityTags(beat.Text), f.Snippet!).Count;
+            if (plainHits > 1)
                 return new(ApplyOutcome.SnippetNotFound, "The snippet appears more than once in the beat. Edit manually.");
+            if (plainHits == 1)
+            {
+                var spliced = BeatSplice.Apply(beat.Text, [new SpliceEdit(beat.Number, f.Snippet!, f.SuggestedFix!)]);
+                if (spliced.Failures.Count > 0) return new(ApplyOutcome.Failed, spliced.Failures[0]);
+                updated = spliced.Text;
+            }
+            else
+            {
+                if (!beat.Text.Contains(f.Snippet!, StringComparison.Ordinal))
+                    return new(ApplyOutcome.SnippetNotFound,
+                        "The exact snippet wasn't found in the beat's current text. Edit manually.");
+
+                // Replace() rewrote EVERY copy of the snippet — a short line like "No," he said.
+                // appearing twice got the fix in both places. Only an unambiguous snippet is applied.
+                updated = ReplaceSingle(beat.Text, f.Snippet!, f.SuggestedFix!);
+                if (updated == null)
+                    return new(ApplyOutcome.SnippetNotFound, "The snippet appears more than once in the beat. Edit manually.");
+            }
             if (updated == beat.Text) return new(ApplyOutcome.SnippetNotFound, "Replacement made no change.");
 
             // RFC 0009 Phase 3b (2026-09-06): through the workbench, not a direct beat.Text write.
