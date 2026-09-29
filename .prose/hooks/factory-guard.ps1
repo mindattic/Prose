@@ -35,11 +35,14 @@ $regexes = $globs | Where-Object { $_ } | ForEach-Object { Convert-GlobToRegex $
 $violations = New-Object System.Collections.Generic.List[string]
 
 # (1) repo changes outside every open engine order
-$status = & git -C $repo status --porcelain --untracked-files=all 2>$null
+# quotePath=false, as the Hub's commit check reads git: otherwise a non-ASCII path arrives as octal
+# escapes no glob matches. Split a rename before unquoting: '"a b" -> "c d"' kept a stray quote.
+$status = & git -C $repo -c core.quotePath=false status --porcelain --untracked-files=all 2>$null
 foreach ($line in @($status)) {
     if (-not $line -or $line.Length -lt 4) { continue }
-    $p = $line.Substring(3).Trim('"')
+    $p = $line.Substring(3)
     if ($p -match ' -> ') { $p = ($p -split ' -> ')[-1] }
+    $p = $p.Trim().Trim('"')
     $p = $p.Replace('\', '/')
     $covered = $false
     foreach ($rx in $regexes) { if ($p -match $rx) { $covered = $true; break } }
