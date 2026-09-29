@@ -144,6 +144,9 @@ Output STRICT JSON, no fences, no commentary:
             {
                 log.LogWarning(ex, "MeaningBackfill batch {Start} failed", start);
                 failed += batch.Count;
+                // A failed save leaves this batch's beats tracked as Modified, and every later
+                // batch's SaveChanges would re-send them and fail with it.
+                db.ChangeTracker.Clear();
             }
 
             progress?.Invoke($"  {Math.Min(start + BatchSize, missing.Count)}/{missing.Count} processed ({filled} filled, {failed} failed)");

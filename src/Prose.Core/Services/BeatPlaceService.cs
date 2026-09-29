@@ -278,6 +278,9 @@ Rules:
             {
                 log.LogWarning(ex, "BeatPlace batch failed ({Count} beats)", batch.Count);
                 failed += batch.Count;
+                // A batch whose save threw leaves its beats tracked as Modified; the next batch's
+                // SaveChanges would re-send them and fail too, sinking every batch after the first.
+                db.ChangeTracker.Clear();
             }
 
             done += batch.Count;

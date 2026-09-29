@@ -1877,6 +1877,8 @@ public class NodeWorkbenchService
         if (enabled) return; // it exists, therefore it's already "enabled" — nothing to do.
         db.BeatNodes.Remove(membership);
         var stillReferenced = await db.BeatNodes.AnyAsync(bn => bn.BeatId == beatId && bn.NodeId != nodeId, ct);
+        // See JoinBeatWithPreviousAsync: the bound-clearing UPDATEs must roll back with a failed save.
+        await using var membershipTx = await db.Database.BeginTransactionAsync(ct);
         if (!stillReferenced)
         {
             var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
@@ -1887,6 +1889,7 @@ public class NodeWorkbenchService
             }
         }
         await db.SaveChangesAsync(ct);
+        await membershipTx.CommitAsync(ct);
         log.LogInformation("Removed beat {Beat} membership in node {Node}", beatId, nodeId);
     }
 
@@ -2398,6 +2401,9 @@ public class NodeWorkbenchService
         var otherMemberships = await db.BeatNodes
             .Where(sb => sb.BeatId == beatId && sb.NodeId != nodeId)
             .AnyAsync(ct);
+        // ClearEdgeBeatBoundsAsync EXECUTES its bulk UPDATEs immediately; one transaction with the
+        // SaveChanges below, or a failed save leaves the surviving beat's plant/edge anchors nulled.
+        await using var joinTx = await db.Database.BeginTransactionAsync(ct);
         if (!otherMemberships)
         {
             InvalidateAudioOnBeat(db, target);
@@ -2405,6 +2411,7 @@ public class NodeWorkbenchService
             db.Beats.Remove(target);
         }
         await db.SaveChangesAsync(ct);
+        await joinTx.CommitAsync(ct);
         // The surviving beat now carries the absorbed beat's mentions too.
         await DeriveMentionsLoggedAsync(prev.Id, prev.Text);
         log.LogInformation("Joined beat {Beat} into {Prev} in node {Node}", beatId, prevId, nodeId);
@@ -2436,9 +2443,13 @@ public class NodeWorkbenchService
                 var orphan = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
                 if (orphan != null)
                 {
+                    // The bound-clearing UPDATEs execute immediately; share one transaction with
+                    // the delete so a failed save cannot strip anchors off a beat that survives.
+                    await using var orphanTx = await db.Database.BeginTransactionAsync(ct);
                     await ClearEdgeBeatBoundsAsync(db, [beatId], ct);
                     db.Beats.Remove(orphan);
                     await db.SaveChangesAsync(ct);
+                    await orphanTx.CommitAsync(ct);
                     return true;
                 }
             }
@@ -2447,6 +2458,8 @@ public class NodeWorkbenchService
 
         db.BeatNodes.Remove(junction);
         var stillReferenced = await db.BeatNodes.AnyAsync(bn => bn.BeatId == beatId && bn.NodeId != nodeId, ct);
+        // See JoinBeatWithPreviousAsync: the bound-clearing UPDATEs must roll back with a failed save.
+        await using var deleteTx = await db.Database.BeginTransactionAsync(ct);
         if (!stillReferenced)
         {
             var beat = await db.Beats.FirstOrDefaultAsync(b => b.Id == beatId, ct);
@@ -2458,6 +2471,7 @@ public class NodeWorkbenchService
         }
 
         await db.SaveChangesAsync(ct);
+        await deleteTx.CommitAsync(ct);
         return true;
     }
 
@@ -3725,8 +3739,12 @@ public class NodeWorkbenchService
     /// can be a download filename. Collapses to the slug if nothing survives.</summary>
     private static string SafeFileName(string name)
     {
-        var cleaned = new string(name.Select(c => Array.IndexOf(Path.GetInvalidFileNameChars(), c) >= 0 ? '_' : c).ToArray()).Trim();
-        return string.IsNullOrWhiteSpace(cleaned) ? "node" : cleaned;
+        var cleaned = new string(name.Select(c => Array.IndexOf(Path.GetInvalidFileNameChars(), c) >= 0 || "\\/:*?\"<>|".Contains(c) || char.IsControl(c) ? '_' : c).ToArray()).Trim();
+        // This is also the publish FOLDER name: a title of ".." climbed out of the publish root,
+        // and trailing dots/spaces are silently dropped by Windows.
+        cleaned = cleaned.TrimEnd('.', ' ');
+        if (string.IsNullOrWhiteSpace(cleaned)) return "node";
+        return ExportPathResolver.IsReservedDeviceName(cleaned) ? "_" + cleaned : cleaned;
     }
 
     /// <summary>Map a raw TTS provider name to a Title-cased label for the

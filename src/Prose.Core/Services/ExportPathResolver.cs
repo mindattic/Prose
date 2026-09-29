@@ -30,7 +30,10 @@ public static class ExportPathResolver
     {
         if (!string.IsNullOrWhiteSpace(node.NodeCode))
         {
-            var code = node.NodeCode.Trim();
+            // Sanitized like a title: a code is free text at the write surface, and one carrying a
+            // separator, a rooted path or ".." would otherwise land the export outside baseDir.
+            // A normal code ("BCODA", "MATTHEW") passes through unchanged.
+            var code = SanitizeTitle(node.NodeCode.Trim());
             return (Path.Combine(baseDir, code), code);
         }
 
@@ -83,9 +86,28 @@ public static class ExportPathResolver
     public static string SanitizeTitle(string title)
     {
         var invalid = Path.GetInvalidFileNameChars().ToHashSet();
+        // The Windows set explicitly: GetInvalidFileNameChars() is only '\0' and '/' off Windows,
+        // and the exported folder is synced/opened on Windows either way.
+        foreach (var c in "\\/:*?\"<>|") invalid.Add(c);
         invalid.Add('\''); invalid.Add('’');
-        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
+        var kept = new string((title ?? "").Where(c => !invalid.Contains(c) && !char.IsControl(c)).ToArray()).Trim();
         kept = Regex.Replace(kept, @"\s+", " ").Trim();
-        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
+        // Trailing dots/spaces are silently dropped by Windows (so "And Then..." and "And Then"
+        // collided), and a title of "." or ".." would climb out of the export folder.
+        kept = kept.TrimEnd('.', ' ');
+        if (string.IsNullOrWhiteSpace(kept)) return "untitled";
+        return IsReservedDeviceName(kept) ? "_" + kept : kept;
+    }
+
+    /// <summary>True for a Windows reserved device name (CON, PRN, AUX, NUL, COM0-9, LPT0-9), with
+    /// or without an extension — "Con" or "nul.txt" as a folder/file name opens the device
+    /// instead of creating the file.</summary>
+    public static bool IsReservedDeviceName(string name)
+    {
+        var stem = name.Split('.')[0].TrimEnd(' ');
+        return stem.ToUpperInvariant() is "CON" or "PRN" or "AUX" or "NUL"
+            || (stem.Length == 4 && (stem.StartsWith("COM", StringComparison.OrdinalIgnoreCase)
+                                     || stem.StartsWith("LPT", StringComparison.OrdinalIgnoreCase))
+                && (char.IsAsciiDigit(stem[3]) || stem[3] is '¹' or '²' or '³'));
     }
 }

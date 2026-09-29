@@ -213,12 +213,19 @@ public static class LogsCli
         var trimmed = s.Trim();
         var unit = char.ToLowerInvariant(trimmed[^1]);
         if (unit is 'm' or 'h' or 'd' && double.TryParse(trimmed[..^1], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var qty))
-            return unit switch
+        {
+            // "99999999d" / "Infinityd" reached before year 1 and AddDays threw; that window is "everything".
+            try
             {
-                'm' => DateTime.Now.AddMinutes(-qty),
-                'h' => DateTime.Now.AddHours(-qty),
-                _   => DateTime.Now.AddDays(-qty),
-            };
+                return unit switch
+                {
+                    'm' => DateTime.Now.AddMinutes(-qty),
+                    'h' => DateTime.Now.AddHours(-qty),
+                    _   => DateTime.Now.AddDays(-qty),
+                };
+            }
+            catch (ArgumentOutOfRangeException) { return qty > 0 ? DateTime.MinValue : DateTime.MaxValue; }
+        }
 
         return DateTime.TryParse(trimmed, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.AssumeLocal, out var abs) ? abs : null;
     }

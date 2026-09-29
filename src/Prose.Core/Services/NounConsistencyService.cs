@@ -60,6 +60,8 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
         Guid universeId, string deprecatedName, string canonicalName,
         string? notes = null, Guid? entityId = null, CancellationToken ct = default)
     {
+        if (string.IsNullOrWhiteSpace(deprecatedName))
+            throw new ArgumentException("A deprecated name is required.", nameof(deprecatedName));
         await using var db = await dbFactory.CreateDbContextAsync(ct);
         var rule = new DeprecatedEntityName
         {
@@ -112,6 +114,9 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
             .AsNoTracking()
             .Where(r => r.UniverseId == node.UniverseId)
             .ToListAsync(ct);
+        // A blank deprecated name (AddRuleAsync trimmed "  " to "") matched at every position of
+        // every beat: IndexOf("") always hits, so each beat got a bogus violation.
+        rules.RemoveAll(r => string.IsNullOrWhiteSpace(r.DeprecatedName));
 
         if (rules.Count == 0)
             return new NounConsistencyReport(node.Title, node.Slug, node.NodeCode, 0, []);
@@ -120,16 +125,21 @@ public class NounConsistencyService(IDbContextFactory<ProseDbContext> dbFactory,
         // at any depth (2026-08-09 fix).
         var nodeIds = await NodeWorkbenchService.GetLeafDescendantIdsAsync(db, node.Id, ct);
 
-        var beats = await db.BeatNodes
+        var rows = await db.BeatNodes
             .AsNoTracking()
-            .Include(nb => nb.Beat)
             .Where(nb => nodeIds.Contains(nb.NodeId) && nb.Beat != null)
-            .OrderBy(nb => nb.SortKey)
-            .Select(nb => new { nb.Beat!.Id, nb.Beat.Number, nb.Beat.Text })
+            .Select(nb => new { nb.NodeId, nb.SortKey, nb.Beat!.Id, nb.Beat.Number, nb.Beat.Text })
             .ToListAsync(ct);
+        // Reading order: SortKey restarts in every chapter, so order by the chapter's position in
+        // the leaf walk first. A beat linked into two chapters is scanned (and reported) once.
         // Scan the reader-visible text: on markup a deprecated name could match a tag's repo="…"
         // attribute, and every snippet quoted guid soup around a linked name.
-        beats = beats.Select(b => new { b.Id, b.Number, Text = BeatMarkup.StripEntityTags(b.Text) }).ToList();
+        var leafOrder = nodeIds.Select((id, i) => (id, i)).ToDictionary(x => x.id, x => x.i);
+        var beats = rows
+            .OrderBy(r => leafOrder.GetValueOrDefault(r.NodeId, int.MaxValue)).ThenBy(r => r.SortKey)
+            .DistinctBy(r => r.Id)
+            .Select(b => new { b.Id, b.Number, Text = BeatMarkup.StripEntityTags(b.Text) })
+            .ToList();
 
         var violations = new List<NounViolation>();
 

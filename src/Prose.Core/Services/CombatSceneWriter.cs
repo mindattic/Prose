@@ -467,20 +467,20 @@ public class CombatSceneWriter
             var ammoSection = Regex.Match(data, @"AMMO\s+(.+?)(?=\s*\|\s*(?:GRENADES|NEURAL)\b|$)", RegexOptions.IgnoreCase);
             if (ammoSection.Success)
             {
-                foreach (Match m in Regex.Matches(ammoSection.Groups[1].Value, @"([^=|]+?)=(\d+)(?:/(\d+))?"))
+                foreach (Match m in Regex.Matches(ammoSection.Groups[1].Value, @"([^=|]+?)=([0-9]+)(?:/([0-9]+))?"))
                 {
                     var weapon   = m.Groups[1].Value.Trim();
-                    var reported = int.Parse(m.Groups[2].Value);
-                    var cap = m.Groups[3].Success ? int.Parse(m.Groups[3].Value)
+                    var reported = LedgerCount(m.Groups[2].Value);
+                    var cap = m.Groups[3].Success ? LedgerCount(m.Groups[3].Value)
                             : ammo.TryGetValue(weapon, out var prior) ? prior : reported;
                     ammo[weapon] = Math.Clamp(reported, 0, Math.Max(cap, 0));
                 }
             }
 
             // Parse neural charge
-            var neuralMatch = Regex.Match(data, @"NEURAL=(\d+)%", RegexOptions.IgnoreCase);
+            var neuralMatch = Regex.Match(data, @"NEURAL=([0-9]+)%", RegexOptions.IgnoreCase);
             var neural = neuralMatch.Success
-                ? Math.Clamp(int.Parse(neuralMatch.Groups[1].Value), 0, 100)
+                ? Math.Clamp(LedgerCount(neuralMatch.Groups[1].Value), 0, 100)
                 : res.BioBatteryPercent;
 
             // Parse grenades — "type xN" entries after the GRENADES keyword
@@ -489,15 +489,17 @@ public class CombatSceneWriter
             if (grenadeSection.Success)
             {
                 grenades.Clear();
-                foreach (Match gm in Regex.Matches(grenadeSection.Groups[1].Value, @"([\w\-]+)\s+x(\d+)"))
+                foreach (Match gm in Regex.Matches(grenadeSection.Groups[1].Value, @"([\w\-]+)\s+x([0-9]+)"))
                 {
                     var existing = res.Grenades.FirstOrDefault(g =>
                         g.Type.Equals(gm.Groups[1].Value, StringComparison.OrdinalIgnoreCase));
+                    var count = LedgerCount(gm.Groups[2].Value);
                     grenades.Add(new GrenadeStock
                     {
                         Type = gm.Groups[1].Value,
                         Effect = existing?.Effect ?? "",
-                        Count = int.Parse(gm.Groups[2].Value),
+                        // An overflowing count is noise, not a stockpile: keep what was there.
+                        Count = count == int.MaxValue ? existing?.Count ?? 0 : count,
                     });
                 }
             }
@@ -512,6 +514,13 @@ public class CombatSceneWriter
 
         return (clean, updated);
     }
+
+    /// <summary>A model-written run of ASCII digits (the patterns use [0-9]: <c>\d</c> also matched
+    /// non-ASCII digits, which int.Parse rejects). "=99999999999" overflowed int.Parse and threw
+    /// out of the whole combat scene; this saturates to int.MaxValue and the callers clamp.</summary>
+    private static int LedgerCount(string digits) =>
+        int.TryParse(digits, System.Globalization.NumberStyles.None, System.Globalization.CultureInfo.InvariantCulture, out var n)
+            ? n : int.MaxValue;
 
     // ── Prose Rules ───────────────────────────────────────────────────
 

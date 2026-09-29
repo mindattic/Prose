@@ -329,16 +329,9 @@ public class AudiblePackageService
 
     // ── helpers ────────────────────────────────────────────────────────────────
 
-    private static string SanitizeTitle(string title)
-    {
-        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
-        invalid.Add('\''); invalid.Add('’');
-        var kept = new string((title ?? "").Where(c => !invalid.Contains(c)).ToArray()).Trim();
-        kept = Regex.Replace(kept, @"\s+", " ").Trim();
-        // Trailing dots/spaces are not valid on Windows, and "." or ".." would escape the folder.
-        kept = kept.TrimEnd('.', ' ');
-        return string.IsNullOrWhiteSpace(kept) ? "untitled" : kept;
-    }
+    // Same rule as the DOCX/manuscript exports (one sanitizer, so the Audible folder and the
+    // book's own export folder can never disagree on a title's spelling).
+    private static string SanitizeTitle(string title) => ExportPathResolver.SanitizeTitle(title);
 
     private static string EscapeTable(string s) =>
         (s ?? "").Replace("|", "\\|").Replace("\n", " ").Replace("\r", "");

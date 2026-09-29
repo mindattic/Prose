@@ -141,8 +141,14 @@ public class BookTokVideoService
                 // in the font path breaks parsing even inside single quotes, so it needs the
                 // same "\:" escape as colons inside the title text itself.
                 var escapedFont  = titleFontPath.Replace("\\", "/").Replace(":", "\\:");
-                var escapedTitle = title.Replace("\\", "\\\\").Replace(":", "\\:").Replace("'", "\\'");
-                introFilter += $",drawtext=fontfile='{escapedFont}':text='{escapedTitle}':fontcolor=white:fontsize=64:x=(w-text_w)/2:y=h-260:box=1:boxcolor=black@0.5:boxborderw=20";
+                // The title goes in through textfile= with expansion=none, never inline text=:
+                // inside a single-quoted filtergraph value a backslash does not escape, so an
+                // apostrophe ("The Devil's Hour") ended the quote and broke the whole graph, and
+                // '%' in a title was read as a drawtext expansion sequence.
+                var titleFile = Path.Combine(tmpDir, "title.txt");
+                await File.WriteAllTextAsync(titleFile, title.Trim(), new System.Text.UTF8Encoding(false), ct);
+                var escapedTitleFile = titleFile.Replace("\\", "/").Replace(":", "\\:").Replace("'", "'\\''");
+                introFilter += $",drawtext=fontfile='{escapedFont}':textfile='{escapedTitleFile}':expansion=none:fontcolor=white:fontsize=64:x=(w-text_w)/2:y=h-260:box=1:boxcolor=black@0.5:boxborderw=20";
             }
 
             await RunFfmpegAsync(ffmpeg, ct,

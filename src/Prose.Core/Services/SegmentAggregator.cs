@@ -129,7 +129,9 @@ public static class SegmentAggregator
         for (int b = 1; b <= beatCount; b++)
         {
             var cls = contested.Contains(b) ? "contested" : consensusWeak.Contains(b) ? "weak-all" : "ok";
-            md.AppendLine($"- Beat {b,2}: global {global[b]:0.0} [{ClusterSpread(b, perCluster, profiles)}] {cls}");
+            // A beat no ballot scored has a NaN mean (see Mean above); it printed as "global NaN".
+            var g = double.IsNaN(global[b]) ? "—" : global[b].ToString("0.0");
+            md.AppendLine($"- Beat {b,2}: global {g} [{ClusterSpread(b, perCluster, profiles)}] {cls}");
         }
 
         return new Report(md.ToString(), profiles);

@@ -164,11 +164,14 @@ public class CanonExportService
         using (var zip = new ZipArchive(fs, ZipArchiveMode.Create))
         {
             AddJsonEntry(zip, $"{rootSlug}.json", row.Json);
+            // Two distinct names can slugify to the same stem ("Kyle" / "Kyle!"): without the
+            // uniquifier the zip carried duplicate entry names, which extractors overwrite or reject.
+            var used = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { $"{rootSlug}.json" };
             foreach (var (_, hit) in refs)
             {
                 ct.ThrowIfCancellationRequested();
                 var folder = Slugify(hit.Repo);
-                AddJsonEntry(zip, $"references/{folder}/{hit.Slug}.json", hit.Json);
+                AddJsonEntry(zip, UniqueEntryName(used, $"references/{folder}/{hit.Slug}"), hit.Json);
             }
         }
 

@@ -46,8 +46,11 @@ public class SetDescriptionTool : IKdpTool
         var html = PlainTextToHtml(text);
         // KDP caps the description at 4,000 characters and counts the markup, so the paragraph
         // tags above can push a near-limit text over it. Refuse rather than let KDP truncate.
-        if (html.Length > MaxDescriptionLength)
-            return JsonSerializer.Serialize(new { found = false, error = "description_too_long", length = html.Length, limit = MaxDescriptionLength });
+        // Measured with WebUtility's &#39;/&quot; collapsed back: CKEditor stores ' and " in text
+        // as themselves, so counting them as 5-6 characters refused descriptions KDP accepts.
+        var kdpLength = html.Replace("&#39;", "'").Replace("&quot;", "\"").Length;
+        if (kdpLength > MaxDescriptionLength)
+            return JsonSerializer.Serialize(new { found = false, error = "description_too_long", length = kdpLength, limit = MaxDescriptionLength });
         var textJs = JsonSerializer.Serialize(html);
 
         var script = $$"""

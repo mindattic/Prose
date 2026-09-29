@@ -127,13 +127,16 @@ public class EntityRamificationService(
 
         await using var db = await dbFactory.CreateDbContextAsync(ct);
 
-        // Replace all existing mentions for this beat atomically.
+        // Replace all existing mentions for this beat atomically. The ExecuteDelete commits on its
+        // own, so without the transaction a failed insert left the beat with no mention rows at all.
+        await using var tx = await db.Database.BeginTransactionAsync(ct);
         await db.BeatEntityMentions.Where(m => m.BeatId == beatId).ExecuteDeleteAsync(ct);
         if (mentioned.Count > 0)
         {
             db.BeatEntityMentions.AddRange(mentioned);
             await db.SaveChangesAsync(ct);
         }
+        await tx.CommitAsync(ct);
     }
 
     // ── Name index (names + character aliases, whole-word matching) ─────────

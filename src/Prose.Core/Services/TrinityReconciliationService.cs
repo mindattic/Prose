@@ -466,11 +466,12 @@ public class TrinityReconciliationService(
         string winningValue;
         if (appliedWins)
         {
+            // Saved together with the decision row below, and the claim marked only after that:
+            // saved on its own first, a failed decision insert left the record edited with no
+            // decision row to revert it from.
             root![field] = claim.Object;
             record.Json = root.ToJsonString();
             record.UpdatedAt = DateTime.UtcNow;
-            await db.SaveChangesAsync(ct);
-            continuityStore.MarkApplied(claim.ClaimUid, field);
             winningValue = claim.Object;
         }
         else
@@ -508,6 +509,7 @@ public class TrinityReconciliationService(
         };
         db.ReconciliationDecisions.Add(row);
         await db.SaveChangesAsync(ct);
+        if (appliedWins) continuityStore.MarkApplied(claim.ClaimUid, field);
         return row;
     }
 

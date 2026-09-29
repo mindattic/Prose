@@ -85,6 +85,9 @@ public class NounConsistencyTools(
         string? notes = null,
         string? universeSlug = null)
     {
+        if (string.IsNullOrWhiteSpace(deprecatedName))
+            return JsonSerializer.Serialize(new { ok = false, error = "deprecatedName is required." }, JsonOpts);
+
         await using var db = await dbFactory.CreateDbContextAsync();
 
         var targetSlug = (universeSlug ?? "glmz").ToLowerInvariant();

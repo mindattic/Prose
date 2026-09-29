@@ -131,7 +131,7 @@ public static class EditDistributionCli
         var allBuckets = new int[BucketLabels.Length];
         foreach (var r in rows) for (int i = 0; i < allBuckets.Length; i++) allBuckets[i] += r.Buckets[i];
         Console.WriteLine();
-        Console.WriteLine($"  {"TOTAL",-8} {rows.Count,3} bk {allBeats,6} {allEdited,7} {allCorr,5} {allWrites,7} {(allBeats == 0 ? 0 : (double)allWrites / allBeats),6:0.00} {rows.Max(r => r.MaxVersion),4}   "
+        Console.WriteLine($"  {"TOTAL",-8} {rows.Count,3} bk {allBeats,6} {allEdited,7} {allCorr,5} {allWrites,7} {(allBeats == 0 ? 0 : (double)allWrites / allBeats),6:0.00} {rows.Select(r => r.MaxVersion).DefaultIfEmpty(0).Max(),4}   "
                           + string.Join(" ", allBuckets.Select(c => $"{c,5}")));
         Console.WriteLine();
         Console.WriteLine($"  {allEdited} of {allBeats} beats with prose ({Pct(allEdited, allBeats)}) have been rewritten at least once after creation; "

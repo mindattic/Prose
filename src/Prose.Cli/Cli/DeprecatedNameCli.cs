@@ -49,7 +49,7 @@ public static class DeprecatedNameCli
             var name         = Flag(args, "--name");
             var canonical    = Flag(args, "--canonical");
             var notes        = Flag(args, "--notes");
-            if (universeSlug == null || name == null || canonical == null)
+            if (universeSlug == null || string.IsNullOrWhiteSpace(name) || canonical == null)
             {
                 Console.Error.WriteLine("[deprecated-names] --add requires --universe, --name, --canonical.");
                 return 2;

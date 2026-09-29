@@ -923,6 +923,12 @@ function escapeRegex(s) {
     return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+// Tags come back out of data-tags attribute-DECODED, so a tag holding < or "" was live markup
+// once concatenated into innerHTML. Escape for text and attribute context alike.
+function escH(s) {
+    return String(s).replace(/[&<>""']/g, function(c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','""':'&quot;',""'"":'&#39;'}[c]; });
+}
+
 function applyXrefs() {
     if (!xrefData || Object.keys(xrefData).length === 0) return;
     // Longest first so multi-word names match before their components
@@ -1054,7 +1060,7 @@ function updateActivePills() {
     if (!area) return;
     if (activeTags.size === 0) { area.innerHTML = ''; return; }
     area.innerHTML = Array.from(activeTags).sort().map(function(t) {
-        return '<span class=""tag-pill"" onclick=""toggleTag(\'' + t.replace(/'/g, ""\\'"") + '\', null)"">' + t + ' <i class=""bi bi-x""></i></span>';
+        return '<span class=""tag-pill"" onclick=""toggleTag(' + escH(JSON.stringify(t)) + ', null)"">' + escH(t) + ' <i class=""bi bi-x""></i></span>';
     }).join('') + '<span class=""tag-pill tag-pill-clear"" onclick=""clearTags()"">Clear all</span>';
 }
 
@@ -1140,9 +1146,9 @@ document.addEventListener('DOMContentLoaded', function() {
         '<div class=""tag-dd-list"">' +
         sorted.map(function(t) {
             var checked = activeTags.has(t[0]) ? ' checked' : '';
-            return '<label class=""tag-dd-item""><input type=""checkbox"" data-tag=""' + t[0] + '""' + checked +
-                ' onchange=""toggleTag(\'' + t[0].replace(/'/g, ""\\'"") + '\', null)"" />' +
-                '<span class=""tag-dd-name"">' + t[0] + '</span><span class=""tag-dd-count"">' + t[1] + '</span></label>';
+            return '<label class=""tag-dd-item""><input type=""checkbox"" data-tag=""' + escH(t[0]) + '""' + checked +
+                ' onchange=""toggleTag(' + escH(JSON.stringify(t[0])) + ', null)"" />' +
+                '<span class=""tag-dd-name"">' + escH(t[0]) + '</span><span class=""tag-dd-count"">' + t[1] + '</span></label>';
         }).join('') +
         '</div></div>';
     tagBar.appendChild(dd);

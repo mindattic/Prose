@@ -338,6 +338,10 @@ public class MarkdownFileService
             {
                 errors.Add($"{f.RelativePath}: {ex.Message}");
                 failedFiles.Add((f.FileRoot, f.RelativePath));
+                // The row whose save failed stays tracked and would be re-sent by every later
+                // file's SaveChanges, failing the rest of the sync. Each file saves on its own, so
+                // nothing still pending belongs to another file.
+                db.ChangeTracker.Clear();
             }
         }
 
@@ -483,6 +487,8 @@ public class MarkdownFileService
             catch (Exception ex)
             {
                 errors.Add($"{relPath}: {ex.Message}");
+                // As in SyncAllAsync: a failed row left tracked poisons every later document's save.
+                db.ChangeTracker.Clear();
             }
         }
 
@@ -945,8 +951,16 @@ public class MarkdownFileService
             _                       => null,
         };
 
-        if (baseDir == null) return null;
-        return Path.Combine(baseDir, relativePath.Replace('/', Path.DirectorySeparatorChar));
+        if (baseDir == null || string.IsNullOrWhiteSpace(relativePath)) return null;
+        // The stored RelativePath is data, and restore WRITES to what this returns: a rooted value
+        // made Path.Combine discard baseDir outright, and "..\" climbed out of it. Either would
+        // turn a restore into an arbitrary-file overwrite, so anything outside baseDir resolves
+        // to nothing (the callers already report a null as unresolvable).
+        var rel = relativePath.Replace('/', Path.DirectorySeparatorChar);
+        if (Path.IsPathRooted(rel)) return null;
+        var full = Path.GetFullPath(Path.Combine(baseDir, rel));
+        var root = Path.TrimEndingDirectorySeparator(Path.GetFullPath(baseDir)) + Path.DirectorySeparatorChar;
+        return full.StartsWith(root, StringComparison.OrdinalIgnoreCase) ? full : null;
     }
 
     private static string DeriveCloudeProjectSlug(string projectRoot)

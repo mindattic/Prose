@@ -254,22 +254,14 @@ public class EpisodeAudioService
         if (beat == null) return;
         if (beat.TextHash == hash) return;
 
-        // Drift detected — invalidate.
-        if (!string.IsNullOrEmpty(beat.AudioPath))
-        {
-            try
-            {
-                var full = ResolveAudioFile(beat.AudioPath);
-                if (File.Exists(full)) File.Delete(full);
-            }
-            catch (Exception ex) { log.LogWarning(ex, "Could not delete stale audio at {Path}", beat.AudioPath); }
-        }
-        beat.AudioPath    = null;
-        beat.NarratedAt   = null;
-        beat.DurationSec  = null;
+        // Drift detected — invalidate. The file goes only once the cleared row is saved (see
+        // InvalidateAudioOnBeat); deleted up front, a failed save left the row pointing at nothing.
+        InvalidateAudioOnBeat(db, beat);
         beat.Stale        = true;
         beat.WasCorrected = true;
         beat.Text         = currentText; // adopt the writer's canonical prose
+        // …and its hash, or every later chapter save saw the same drift again and re-invalidated it.
+        beat.TextHash     = hash;
         await db.SaveChangesAsync(ct);
         log.LogInformation("Episode #{Ep} beat {SrcId} marked stale (text drifted past recording)",
             episodeId, sourceBeatGuid);
@@ -367,12 +359,8 @@ public class EpisodeAudioService
             .FirstOrDefaultAsync(b => b.EpisodeId == episodeId && b.Index == beatIndex, ct);
         if (beat == null || string.IsNullOrEmpty(beat.AudioPath)) return;
 
-        var fullPath = ResolveAudioFile(beat.AudioPath);
-        try { if (File.Exists(fullPath)) File.Delete(fullPath); }
-        catch (Exception ex) { log.LogWarning(ex, "Could not delete audio at {Path}", fullPath); }
-        beat.AudioPath  = null;
-        beat.NarratedAt = null;
-        beat.DurationSec = null;
+        // File deleted only after the cleared row is saved — see InvalidateAudioOnBeat.
+        InvalidateAudioOnBeat(db, beat);
         await db.SaveChangesAsync(ct);
     }
 

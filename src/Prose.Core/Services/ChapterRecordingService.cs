@@ -185,18 +185,19 @@ public class ChapterRecordingService
             var existing = await db.Episodes
                 .Where(e => e.ChapterId == chapterId)
                 .ToListAsync(ct);
+            foreach (var e in existing) db.Episodes.Remove(e);
+            if (existing.Count > 0) await db.SaveChangesAsync(ct);
+            // Best-effort audio cleanup, only once the rows are gone: deleted first, a save that
+            // failed left a live episode whose every AudioPath pointed at nothing.
             foreach (var e in existing)
             {
-                // Best-effort: delete audio files on disk before nuking the row.
                 try
                 {
                     var dir = audio.GetEpisodeRoot(string.IsNullOrEmpty(e.Slug) ? e.Id.ToString() : e.Slug);
                     if (Directory.Exists(dir)) Directory.Delete(dir, recursive: true);
                 }
                 catch (Exception ex) { log.LogWarning(ex, "Could not delete audio dir for episode {Id}", e.Id); }
-                db.Episodes.Remove(e);
             }
-            if (existing.Count > 0) await db.SaveChangesAsync(ct);
         }
         return await RecordChapterAsync(chapterId, voiceId, ct);
     }

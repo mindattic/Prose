@@ -123,7 +123,13 @@ public sealed class FactoryJournal(IDbContextFactory<ProseDbContext> dbFactory, 
         if (s.Length > 1 && unit is 'm' or 'h' or 'd'
             && double.TryParse(s[..^1], NumberStyles.Float, CultureInfo.InvariantCulture, out var n) && n >= 0)
         {
-            utc = DateTime.UtcNow - unit switch { 'm' => TimeSpan.FromMinutes(n), 'h' => TimeSpan.FromHours(n), _ => TimeSpan.FromDays(n) };
+            // In days first and bounded: "1000000d" (or "Infinityd") threw OverflowException from
+            // TimeSpan, or ArgumentOutOfRangeException from a subtraction before year 1, out of the
+            // journal MCP tools instead of answering bad_since.
+            var now = DateTime.UtcNow;
+            var days = unit switch { 'm' => n / 1440.0, 'h' => n / 24.0, _ => n };
+            if (!(days < (now - DateTime.MinValue).TotalDays - 1)) return false;
+            utc = now - TimeSpan.FromDays(days);
             return true;
         }
         if (!DateTimeOffset.TryParse(s, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal, out var at)) return false;

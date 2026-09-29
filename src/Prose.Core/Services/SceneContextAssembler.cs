@@ -78,9 +78,12 @@ public class SceneContextAssembler(
     {
         await EnsureSchemaAsync(ct);
         await using var db = await dbFactory.CreateDbContextAsync(ct);
+        // Replace semantics need one transaction: the DELETE commits on its own, so an INSERT that
+        // failed after it left the beat with no roster at all.
+        await using var tx = await db.Database.BeginTransactionAsync(ct);
         await db.Database.ExecuteSqlRawAsync("DELETE FROM [dbo].[BeatEntities] WHERE [BeatId] = {0}", [beatId], ct);
         var roster = await FilterToBeatUniverseAsync(db, beatId, DedupeByEntityId(ctx.Roster), ct);
-        if (roster.Count == 0) return;
+        if (roster.Count == 0) { await tx.CommitAsync(ct); return; }
         var sql = new System.Text.StringBuilder(
             "INSERT INTO [dbo].[BeatEntities] ([BeatId],[EntityId],[Name],[EntityType],[MatchSource],[Score]) VALUES ");
         var parameters = new List<object?> { beatId };
@@ -97,6 +100,7 @@ public class SceneContextAssembler(
             parameters.Add((object?)r.Score);
         }
         await db.Database.ExecuteSqlRawAsync(sql.ToString(), parameters.Cast<object>().ToArray(), ct);
+        await tx.CommitAsync(ct);
     }
 
     /// <summary>

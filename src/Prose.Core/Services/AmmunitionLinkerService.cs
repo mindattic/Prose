@@ -277,6 +277,9 @@ public class AmmunitionLinkerService
             {
                 log.LogWarning(ex, "Ammo extraction failed for {Weapon}", w.Name);
                 result.Errors.Add($"{w.Name}: {ex.Message}");
+                // The row whose save threw is still tracked; left there, every later weapon's
+                // SaveChanges re-sends it and fails too.
+                db.ChangeTracker.Clear();
             }
         }
         return result;

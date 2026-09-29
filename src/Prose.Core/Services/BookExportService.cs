@@ -703,8 +703,17 @@ public class BookExportService
         var entry = zip.CreateEntry(path, CompressionLevel.Optimal);
         using var s = entry.Open();
         using var w = new StreamWriter(s, new UTF8Encoding(false));
-        w.Write(content);
+        // Every entry but the stylesheet is XML, and the chapter body arrives as rendered Markdig
+        // output that Esc never sees: one stray \f or \v in a chapter made the whole EPUB
+        // unparseable. Same rule as ManuscriptExportService.EpubEsc.
+        w.Write(path.EndsWith(".css", StringComparison.OrdinalIgnoreCase) ? content : StripXmlIllegalChars(content));
     }
+
+    private static readonly System.Text.RegularExpressions.Regex XmlIllegalChars =
+        new(@"[\x00-\x08\x0B\x0C\x0E-\x1F]", System.Text.RegularExpressions.RegexOptions.Compiled);
+
+    /// <summary>Removes the C0 control characters XML 1.0 forbids (all but tab, LF and CR).</summary>
+    internal static string StripXmlIllegalChars(string s) => XmlIllegalChars.Replace(s ?? "", "");
 
     private static string Esc(string s) => HttpUtility.HtmlEncode(s ?? "");
 

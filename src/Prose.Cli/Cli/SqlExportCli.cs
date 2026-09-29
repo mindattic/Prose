@@ -438,8 +438,11 @@ public static class SqlExportCli
             "uniqueidentifier" => $"'{rdr.GetGuid(i)}'",
             "date"           => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) + "'", // invariant: th-TH "yyyy" is the Buddhist year
             "time"           => $"'{((TimeSpan)rdr.GetValue(i)):c}'",
-            "datetime" or "datetime2" or "smalldatetime"
-                             => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss.fffffff", CultureInfo.InvariantCulture) + "'",
+            // DATETIME rejects a literal with more than 3 fractional digits and SMALLDATETIME any
+            // fraction ("Conversion failed when converting date and/or time") — only DATETIME2 takes 7.
+            "datetime"       => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss.fff", CultureInfo.InvariantCulture) + "'",
+            "smalldatetime"  => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss", CultureInfo.InvariantCulture) + "'",
+            "datetime2"      => "'" + rdr.GetDateTime(i).ToString("yyyy-MM-ddTHH:mm:ss.fffffff", CultureInfo.InvariantCulture) + "'",
             "datetimeoffset" => "'" + ((DateTimeOffset)rdr.GetValue(i)).ToString("yyyy-MM-ddTHH:mm:ss.fffffffzzz", CultureInfo.InvariantCulture) + "'",
             "varbinary" or "binary" or "image"
                              => "0x" + Convert.ToHexString((byte[])rdr.GetValue(i)),
